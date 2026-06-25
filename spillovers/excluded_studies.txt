@@ -1,0 +1,2247 @@
+The list of studies included in the meta-analysis is available in the working-paper version. The following studies were identified by one of our searches, examined, but not included in the meta-analysis because they did not report comparable estimates of vertical productivity spillovers from FDI:
+
+Fdi, Export Spillover And Firm Heterogeneity - An Application To The Indian Manufacturing Case
+Chiara Franco & Subash Sasidharan (2009) (reason for exclusion: exports, not productivity)
+
+Downloadable! The role of Foreign Direct Investments (FDI) in the process of economic development is of particular relevance since they bring in some specific technological assets that are not immediately available in the host country. The literature related to the microeconomic impact of FDI has been mainly concentrated in explaining the final effect on productivity, caused by the fact that Multinational Enterprises (MNEs) are not completely able to protect their superior assets from spilling over. However, there is a relatively unexplored effect that has recently been at the center of some studies that is the export spillover effect. Up to now, the literature has found out only mixed results with regard to the possibility that MNEs influence both export decision and export intensity of local firms. In the present paper, we provide some empirical evidence for that specific effect examining a case of an emerging economy, namely India for the period 1994-2006 by using a firm level dataset of more than 3000 fir
+
+http://ideas.repec.org/p/mos/druwps/2009-06.html
+
+Transbordamentos de Produtividade na Indústria Brasileira: evidencias empíricas 1997-2000
+Joao Emílio Padovani Gonçalves (2004) (reason for exclusion: very similar version already included)
+
+Downloadable! According to the literature on foreign direct investment (FDI) spillovers, when a transnational company (TNC) subsidiary is installed in a hots country, it comes with a package of new technologies that can be transferred to domestic companies, helping them to improve their productivity and competitiveness. In this sense, FDI is a powerful source of technology to developing countries, justifying every sort of incentive to attract foreign investments. In this paper we use firm level data and econometric techniques to assess the existence of productivity spillovers in the Brazilian industry in the 1997-2000 period. In the horizontal spillovers' model we found evidences of technology transfer from TNCs to domestic firms, although not for all firms. Actually we show that when national companies were more exposed to the TNCs competition, negative spillovers occurred. In the vertical spillovers' model we found evidences of positive productivity spillovers taking place through backward linkages.
+
+http://ideas.repec.org/p/anp/en2004/057.html
+
+Quality of Foreign Direct Investment, Knowledge Spillovers and Host Country Productivity: A Framework of Analysis
+Pradhan, Jaya Prakash (2006) (reason for exclusion: no estimates)
+
+Downloadable! The existing research on knowledge-spillovers from foreign direct investment (FDI) has invariably treated all foreign firms as homogeneous and of equal importance for the development of host countries. However, in actual market situations foreign firms are basically non-homogeneous and of varying qualities as far as the potential for knowledge-spillover are concerned. Foreign firms differ in terms of export-orientation, intensity to undertake local R&D activities, vertical integration, generating demands for local raw materials, and entry modes. Non-inclusion of such quality dimensions of FDI into the spillover analysis is certainly an important limitation of the existing literature. This paper has explored different notion of FDI quality and argued that it should be included in the empirical studies on spillover analysis. This paper has develop an empirical framework for inclusion of quality dimensions in exploring FDI related spillovers on host country productivity and propose a
+
+http://ideas.repec.org/p/pra/mprapa/12336.html
+
+Foreign direct investment and economic performance in transition economies: evidence from China
+Xiaowen Tian & Shuanglin Lin & Vai Io Lo (2004) (reason for exclusion: not vertical spillovers)
+
+Downloadable (with restrictions)! A fundamental pitfall of the socialist planning system is the lack of opening and dynamic mechanisms that can produce economic efficiency and sustained economic growth. After several decades of socialist development in isolation, therefore, all socialist countries found themselves still less developed countries, and began to promote modernisation through active participation in the global market economy (Tian, 1996). One of the most important measures to implement new policies has been the introduction of foreign direct investment (FDI). Although FDI has moved into transition economies very rapidly, there has been striking variation in the volume of FDI inflow and the economic performance of individual transition economies. Among the 25 transition economies in Europe, for instance, the top 13 largest FDI recipients on average recorded considerably better economic performance than the rest in the 1990s (Fischer & Sahay, 2000; Garibaldi, Mora, Sahay & Zettelmeyer, 2002)
+
+http://ideas.repec.org/a/taf/pocoec/v16y2004i4p497-510.html
+
+Human Capital, Economic Growth, and Regional Inequality in China
+Belton Fleisher & Haizheng Li & Min Qiang Zhao (2007) (reason for exclusion: the effect of FDI on provincial growth, not firm productivity)
+
+Downloadable! We study the dispersion in rates of provincial economic- and TFP growth in China. Our results show that regional growth patterns can be understood as a function of several interrelated factors, which include investment in physical capital, human capital, and infrastructure capital; the infusion of new technology and its regional spread; and market reforms, with a major step forward occurring following Deng Xiaoping’s “South Trip” in 1992. We find that FDI had much larger effect on TFP growth before 1994 than after, and we attribute this to emergence of other channels of technology transfer when marketization accelerated. We find that human capital positively affects output per worker and productivity growth. In particular, in terms of its direct contribution to production, educated labor has a much higher marginal product. Moreover, we estimate a positive, direct effect of human capital on TFP growth. This direct effect is hypothesized to come from domestic innovation activities. The estim
+
+http://ideas.repec.org/p/osu/osuewp/09-01.html
+
+Vertical FDI? A Host Country Perspective
+Andreas Waldkirch (2004) (reason for exclusion: not spillovers)
+
+Downloadable! Recent empirical studies of the determinants of multinational activity across countries have found overwhelming support for a horizontal rather than a vertical model of foreign direct investment (FDI). They all use U.S. or other developed country data. This paper, in contrast, uses a previously unexploited industry-level data set on FDI in a relatively skilled-labor and capital scarce country, Mexico, to shed light on the determinants of FDI between largely dissimilar countries. The results indicate considerably more support for the vertical model. The correlation between skill differences and FDI is positive in all industries, but when differences are large, FDI flows into sectors that are intensive in total labor, regardless of skill level. The concentration of multinational activity in (unskilled) labor intensive industries suggests a limited potential for spillover effects.
+
+http://ideas.repec.org/p/wpa/wuwpit/0403008.html
+
+Foreign Ownership and Corporate Performance: The Czech Republic at EU Entry
+Stepan Jurajda & Juraj Stancik (2009) (reason for exclusion: direct effects, not spillovers)
+
+Downloadable! Does foreign ownership improve corporate performance or do foreign firms merely select more productive targets for takeover? Do workers benefit from foreign acquisitions? We answer these questions based on comparing the be- fore/after change in several performance indicators of Czech firms subject to foreign takeover after 1997, i.e., after the initial waves of privatization were completed, with the corresponding performance change of matched compa- nies that remain domestically owned until 2005. We find that the impact of foreign investors on domestic acquisitions is significantly positive only in non-exporting manufacturing industries, while it is small in both services and manufacturing industries competing on international markets.
+
+http://ideas.repec.org/p/cer/papers/wp389.html
+
+Productivity Spillovers to Domestic Plants from Foreign Direct Investment: Evidence from UK Manufacturing, 1974-1995
+Harris, Richard & Catherine Robinson (2002) (reason for exclusion: not a composite measure of vertical spillovers; individual spillover variables for each sector)
+
+Downloadable! Empirical literature on the impact of FDI has considered at length the indirect spillover benefits that accrue to domestic plants as a result of FDI presence. However, the imprecise and disparate nature of spillovers makes accurate definition and indeed measurement of them difficult to achieve. In this paper, we consider the definition of what constitutes a spillover from FDI, and setout three main channels for spillovers; within (intra)industry, between (inter)industry and agglomeration. We then go on to measure the indirect impact of FDI on the total factor productivity of domestic plants in a number of UK manufacturing industries, 1974-1995, using a standard production function-based approach. We use data made available from the UK ARD and information derived from UK input-output tables, to establish the potential for inter-industry linkages. Our results indicate that the competition and ëabsorption capacityí effect at times outweighs any potential benefits, leading to negative spillovers.
+
+http://ideas.repec.org/p/ecj/ac2002/96.html
+
+Thinking locally: Exploring the importance of a subsidiary-centered model of FDI-related spillovers in Brazil
+Marin, Anabel & Costa, Ionara (2009) (reason for exclusion: not vertical spillovers)
+
+Downloadable! This paper investigates FDI-related spillovers in Brazil for the period 1996-2005. In contrast to most previous recent studies, which have failed to identify any significant effects in emerging economies, we found that horizontal spillovers did arise in Brazil. However, they did not arise simply as a consequence of general FDI-mediated technology transfer from MNC headquarters, as the standard approach presumes. Nor were they associated with expected inter-industry differences in technological intensity, or with differences in domestic firms’ absorptive capability. Instead, spillovers were associated with the existence of particular kinds of localized knowledge-creation activities undertaken by subsidiaries. We discuss the theory and policy implications that emerge from these results.
+
+http://ideas.repec.org/p/dgr/unumer/2009008.html
+
+Do Foreign Firms Crowd Out Domestic Firms? Evidence from the Czech Republic
+Renata Kosova (2006) The Review of Economics and Statistics, forthcoming (reason for exclusion: not vertical spillovers)
+
+Downloadable! This paper analyzes the impact of foreign presence on growth and survival of domestic firms,while separating the two opposing effects of foreign presence: a negative "crowding out" and positive "technology spillovers". I focus on the question whether crowding out effect is dynamic, i.e. domestic firms cut production over time as foreign firms grow in the domestic industry, or a static effect realized upon foreign entry. Using 1994-2001 firm-level panel data for the Czech Republic my results show evidence of both technology spillovers and crowding out effects. However, crowding out appears to be a short-term or static phenomenon: initial foreign entry increases the exit rate of domestic firms. Subsequently, however, the sales growth of the foreign firms in the industry increases both the growth rate and survival of domestic firms. Dividing industries between low and high-export oriented, suggests that this positive foreign effect represents domestic demand-creation rather than exp
+
+http://ideas.repec.org/p/gwu/wpaper/0006.html
+
+Do Domestic Firms Benefit from Geographical Proximity with Foreign Investors? Evidence from the Privatization of the Czech Glass
+Elisa Galeotti (2009) (reason for exclusion: not vertical spillovers)
+
+Downloadable! This paper analyzes the effects of geographical proximity and agglomeration of foreign direct investors on domestic firms in the privatized glass sector in the Czech Republic. The motivation for this research is based on the scant evidence in Central and Eastern Europe of the effects of geographical proximity and agglomeration on the productivity of domestic firms. This study aims to explain how spillovers are transferred from foreign direct investors to domestic firms in an industrial sector. The econometrical analysis, using original panel data from 1990 to 2006, provides evidence that the geographical proximity to foreign direct investors has a negative and significant effect on the productivity of domestic firms in the glass sector. The effect of agglomeration of foreign direct investors is significant, too. The results support the importance of geographic proximity and the agglomeration of foreign direct investors as a channel of spillovers and it conforms with the evidence that shows that
+
+http://ideas.repec.org/a/fau/aucocz/au2009_026.html
+
+
+Foreign Direct Investment Spillovers in Portugal: Additional Lessons from a Country Study
+Renato G. Flôres & Maria Paula Fontoura & Rogério Guerra Santos (2007) (reason for exclusion: not FDI spillover regressions but correlations of regression residuals between sectors)
+
+Downloadable (with restrictions)! This paper investigates the impact of foreign direct investment (FDI) on the productivity of Portuguese manufacturing sectors. It improves on previous studies by considering the choice of the most appropriate interval of the technological gap for spillovers diffusion. Sectoral variation in the coefficients of the spillover effect is also allowed for. Idiosyncratic factors are identified by means of a fixed effects panel model and positive inter-sectoral spillovers are also examined. Significant spillovers require a proper technological differential between foreign and domestic producers and favourable sectoral characteristics. They may occur in modern industries in which the foreign firms have a clear, but not too sharp, edge on the domestic ones. Agglomeration effects are also a pertinent specific influence.
+
+http://ideas.repec.org/a/taf/eurjdr/v19y2007i3p372-390.html
+
+Productivity Spillovers from Foreign Direct Investment in the Cambodian Manufacturing Sector: Evidence from Establishment-Level
+Cuyvers L. & Plasmans J. & Soeng R. & Van den Bulcke D. (2008) (reason for exclusion: not vertical spillovers)
+
+Downloadable! Foreign Direct Investment (FDI) is generally regarded as an important source of finance, especially for the developing countries. Aitken and Harrison (1999) indicated that the largest source of external finance during the 1990s made available to the developing economies consisted of FDI. However, the role played by FDI in host countries through the transfer of technology, which in turn leads to an increase in labor productivity in the domestic firms via mainly indirect effects, is even more important. Since FDI is believed to be an important channel through which the international transfer of technology takes place, it has been identified as a major growth-enhancing factor in host countries. With a view to attracting inward FDI, governments in many countries (developed and developing) have liberalized their FDI regulations and adopted an investment-friendly policy. Additionally, handsome incentives such as tax holidays, the absence of import duties on intermediate inputs, low corporate tax rates
+
+http://ideas.repec.org/p/ant/wpaper/2008004.html
+
+Efficiency Spillovers from Foreign Direct Investment in the EU Periphery: A comparative study of Greece, Ireland and Spain 
+Salvador Barrios & Sophia Dimelis & Helen Louri & Eric Strobl (2004) (reason for exclusion: not vertical spillovers)
+
+Downloadable! Despite a growing number of empirical studies on efficiency spillovers arising from the presence of multinational firms for a number of countries, general conclusions on this issue have been inhibited by differences in the data sets and estimation techniques used across studies. In this paper we conduct a comparative empirical study for Greece, Ireland and Spain by creating comparable data sets and estimating identical models. Our results show evidence of spillovers in Ireland and Spain only, although these positive spillovers seem to depend on whether firms have the absorptive capacity to capture technological spillovers and the criteria used to classify them as foreign affiliates.
+
+http://ideas.repec.org/a/spr/weltar/v140y2004i4p688-705.html
+
+Foreign Direct Investment, Competitive Pressure and Spillovers. An Empirical Analysis of Spanish Firm Level Data
+Sembenelli, Alessandro & Siotis, Georges (2005) (reason for exclusion: not vertical spillovers)
+
+Downloadable (with restrictions)! A short review of the theoretical and empirical evidence indicates that foreign direct investment (FDI) has the potential to increase the intensity of competition as well as to act as a channel for technology transfers. One would expect, all else equal, an increase in average firm performance following a wave of FDI, as multinational corporations (MNCs) enjoy higher levels of efficiency and have the potential to generate positive spillovers. At the same time, the entry of foreign firms has also been associated with an increase in competitive pressure on the domestic market. Using a large firm level dataset covering all sectors of Spanish manufacturing during the period 1983-96, we disentangle these three effects by estimating a dynamic model of firm level performance, which we proxy by profitability. We find that FDI has a positive long-run effect on the profitability of target firms, but this is limited to firms belonging to R&D intensive sectors. In addition, the result
+
+http://ideas.repec.org/p/cpr/ceprdp/4903.html
+
+Keller, W. and S. Yeaple (2009), “Multinational Enterprises, International Trade, and Technology Diffusion: A Firm-level Analysis of the Productivity Effects of Foreign Competition in the United States”, Review of Economics and Statistics, forthcoming. (reason for exclusion: not vertical spillovers)
+
+www.gsm.pku.edu.cn/userfiles/0708-30(3).pdf
+
+Globalization and Innovation in Emerging Markets
+Gorodnichenko, Yuriy & Svejnar, Jan & Terrell, Katherine (2009) (reason for exclusion: innovation, not productivity)
+
+Downloadable! Globalization brings opportunities and pressures for domestic firms in emerging markets to innovate and improve their competitive position. Using data on firms in 27 transition economies, the authors test for the effects of globalization through the impact of increased competition and foreign direct investment on domestic firms's efforts to innovate (raise their capability) by upgrading their technology, improving the quality of their product or service, or acquiring certification. They find that competition has a negative effect on innovation, especially for firms further from the efficiency frontier, and we do not find support for an inverted U effect of competition on innovation. The authors show that the supply chain of multinational enterprises and international trade are important channels for domestic firms' innovation. They detect no evidence that firms in a more pro-business environment are more likely to display a positive or inverted U relationship between competition and innovation,
+
+http://ideas.repec.org/p/wbk/wbrwps/4808.html
+
+
+Home versus Host Country Effects of FDI: Searching for New Evidence of Productivity Spillovers
+Priit Vahter & Jaan Masso (2007) (reason for exclusion: not vertical spillovers)
+
+This paper investigates the effects of both inward and outward foreign direct investment (FDI) on productivity in manufacturing and services sectors. The main novelty is the analysis of the spillover effects of outward FDI that may occur outside the investing firms on the rest of the home country. Our results based on panel data from Estonia do not indicate much spillover effects of outward or inward FDI that are robust to different specifications of the estimated model, the spillover variable or the sector studied.
+
+http://ideas.repec.org/a/aeq/aeqaeq/v53_y2007_i2_q2_p165-196.html
+
+
+Does Foreign Direct Investment Have an Impact on the Growth in Labor Productivity of Vietnamese Domestic Firms?
+Le Thanh THUY (2007) (reason for exclusion: not vertical spillovers)
+
+Downloadable! Foreign direct investment has been considered a very important factor in the recent growth of Vietnam's economy and thus far has drawn a great deal of concern from economic researchers in Vietnam. However, studies on the impacts of foreign direct investment on Vietnam's economy, especially the technological spillovers, are still very scarce compared with other developing countries. This study makes an attempt to determine the main channels and estimate the degree of spillover effects in Vietnam using industry level data for the 1995-1999 and 2000-2002 periods. The linkage between foreign investors and domestic private sectors is found to play an important role for technological spillovers from foreign direct investment in Vietnam.
+
+http://ideas.repec.org/p/eti/dpaper/07021.html
+
+The Heterogeneity of MNC' Subsidiaries and Technology Spillovers: Explaining positive and negative effects in emerging economies
+Marin, Anabel & Sasidharan, Subash (2008) (reason for exclusion: not vertical spillovers)
+
+Downloadable! Conventional models of multinational corporation (MNC) related spillovers in host economies assume that they derive from the technological assets created at the headquarters. Subsidiaries' activities in the host economy are not given any role in this process. In this paper, drawing on recent advances in MNC literature, we propose an alternative model. In this alternative model the local innovative activity of subsidiaries plays a critical role in accounting for both the possibility of positive or negative effects. More specifically, we distinguish between three types of subsidiaries: "competence creating", "competence exploiting" and passive; and explore conceptually and empirically the spillover effects of each type. Our results confirm our predictions that, in less advanced contexts such as India, only creative subsidiaries have a positive effect on host country firms; that competence exploiting subsidiaries generate negative effects when domestic firms are more advanced; and p
+
+http://ideas.repec.org/p/dgr/unumer/2008066.html
+
+Reconsidering the Backward Vertical Linkages of Foreign Affiliates: Evidence from Japanese Multinationals
+Kiyota, Kozo & Matsuura, Toshiyuki & Urata, Shujiro & Wei, Yuhong (2008) (reason for exclusion: they study specifically the effect of Japanese MNCs abroad)
+
+Downloadable (with restrictions)! Summary This paper examines the determinants of the backward vertical linkages of Japanese foreign affiliates in manufacturing for the period 1994-2000, focusing on the local backward linkages, or local procurement in the host country. Our major findings are twofold. First, the unobserved affiliate-specific characteristics explain the large part of the variation of the backward linkages among foreign affiliates. Second, the experience of the affiliate has positive and sometimes nonlinear effects on local procurement for the affiliates, especially in Southeast Asia and China.
+
+http://ideas.repec.org/a/eee/wdevel/v36y2008i8p1398-1414.html
+
+
+Intra- and Inter-Industry Productivity Spillovers in OECD Manufacturing: A Spatial Econometric Perspective
+Harald Badinger & Peter Egger (2008) (reason for exclusion: not FDI spillover regressions)
+
+Downloadable! We adopt a spatial econometric approach to estimate intra- and inter-industry productivity spillovers in total factor productivity transmitted through input-output relations in a sample of 13 OECD countries and 15 manufacturing industries. Both R&D spillovers as well as remainder, input-output-related linkage effects are accounted for, the latter of which we model by a spatial regressive error process. We find that knowledge spillovers occur both horizontally and vertically, whereas remainder spillovers are primarily of intra-industry type. Notably, these intra-industry remainder spillovers turn out economically more significant than R&D spillovers.
+
+http://ideas.repec.org/p/ces/ceswps/_2181.html
+
+The productivity spillover potential of foreign-owned firms: Firm-level evidence for Hungary
+H Görg, A Hijzen, B Murakozy, 2009 (reason for exclusion: not vertical spillovers)
+
+This paper analyses the potential for productivity spillovers from inward foreign direct investment using administrative panel data on firms for Hungary. We hypothesise that the potential for spillovers is related to observable characteristics of the production process of foreign affiliates, and evaluate this empirically. We further explore the role of competition in explaining productivity spillovers within industries. Our empirical analysis yields a number of important findings. First, we show that the potential for spillovers is importantly related to the production technology of the sectors and foreign affiliates. Firms that relocate labour-intensive activities to Hungary to exploit differences in labour costs are unlikely to generate productivity spillovers, while spillovers increase in the capital intensity of foreign affiliates. Second, we find that spillovers differ markedly in the early and later stages of transition, and that there are differences between small and large firms. Furthermore, foreign presence tends to affect the productivity of domestic firms negatively whenever MNEs produce for the domestic market.
+
+http://www.google.cz/url?sa=t&source=web&ct=res&cd=3&ved=0CBYQFjAC&url=http%3A%2F%2Fwww.ifw-members.ifw-kiel.de%2Fpublications%2Fthe-role-of-production-technology-for-productivity-spillovers-from-multinationals-firm-level-evidence-for-hungary-1%2Fkwp_ghm.pdf&ei=GNIxS7CxCpiqnAPappXGBA&usg=AFQjCNH_avMrmVoqmjzTp-0boAUk9NeO8Q&sig2=PzrO5AbMy2pkyjKLKDwLXg
+
+Foreign Technology Licensing, Productivity, and Spillovers
+López, Ricardo A. (2008) (reason for exclusion: not foreign presence, but licensing of foreign technology)
+
+Downloadable (with restrictions)! Summary This paper uses plant-level data from the manufacturing sector of Chile to investigate whether foreign technology licensing generates productivity spillovers to other plants in the same industry and to other plants in vertically related industries (potential suppliers and buyers of output). The results show that licensing in upstream sectors increases productivity of plants that purchase intermediate inputs from them. However, licensing in downstream sectors has a negative effect on productivity of suppliers of intermediate inputs. Finally, there is no evidence of intra-industry spillovers from foreign technology licensing.
+
+http://ideas.repec.org/a/eee/wdevel/v36y2008i4p560-574.html
+
+Mutual productivity spillovers between foreign and local firms in China
+Yingqi Wei, Xiaming Liu and Chengang Wang, 2008 (reason for exclusion: not vertical spillovers)
+* Bradford University, UK & Hunan University, China, Birbeck College, London and Bradford University, respectively 
+
+The existing literature treats advanced technology sourcing as the only cause of reverse productivity spillovers from local to foreign firms and implies that mutual spillovers between foreign and local firms can only happen in the developed world. This paper argues that the diffusion of indigenous technology and local knowledge helps the productivity enhancement of multinationals, so that there can be mutual spillovers even in a developing country. The results from a large-sample firm-level econometric analysis and a comparative case study of seven companies in Chinese manufacturing support this new argument, as mutual spillovers are identified between local Chinese firms and overseas Chinese or OECD-invested firms.
+
+http://cje.oxfordjournals.org/cgi/content/abstract/32/4/609
+
+Manufacturing dynamics and spillovers: The case of Guangdong Province and Hong Kong, Macau, and Taiwan (HKMT)
+Huang, Can & Sharif, Naubahar (2009)
+
+Downloadable (with restrictions)! In this paper we characterize the extent of economic integration between Guangdong, Hong Kong, Macau, and Taiwan (HKMT). We do not find, for the period of 1999-2003, consistent evidence that economic activity on the part of HKMT-funded companies contributed to productivity growth in Guangdong domestic manufacturing firms. Furthermore, HKMT-funded companies were less active than Guangdong domestic companies in pursuing research and development (R&D) and innovation activities. Given that HKMT-funded companies in Guangdong are dominated by companies from Hong Kong, we end by linking our results to a discussion of recent innovation policy actions, both in Hong Kong SAR and Guangdong province.
+
+http://ideas.repec.org/a/eee/respol/v38y2009i5p813-828.html
+
+Backward Vertical Linkages of Foreign Manufacturing Affiliates: Evidence from Japanese Multinationals 
+René Belderbos, Giovanni Capannelli, Kyoji Fukao, 2001 (reason for exclusion: Japanese MNCs abroad)
+
+We examine the determinants of backward vertical linkages established by multinational firms in host economies through an analysis of the local content ratio of 272 Japanese electronics manufacturing affiliates in 24 countries. Host country factors promoting vertical linkages are the quality of infrastructure and the size of the local components supply industry, while restrictive trade policies have a detrimental effect. Local content regulations have a positive impact but do not stimulate procurement from locally owned suppliers. Experienced affiliates, joint ventures and acquired affiliates, and—in less-developed economies—affiliates of less R&D-intensive firms exhibit more extensive vertical linkages. Firms belonging to Japanese vertical industrial groups (keiretsu) show higher procurement from local clusters of affiliated Japanese suppliers.
+
+http://ideas.repec.org/a/eee/wdevel/v29y2001i1p189-208.html
+
+Lall, S. 1980. Vertical Inter-firm Linkages in LDCs: An Empirical Study, Oxford
+Bulletin of Economics and Statistics 42: 203-226. [24] (reason for exclusion: not comparable estimates)
+
+http://ideas.repec.org/a/bla/obuest/v42y1980i3p203-26.html
+
+Productivity, Multinationals and Knowledge Spillovers: Evidence from the UK Retail Sector
+Anon-Higon, Dolores & Vasilakos, Nicholas (2008) (reason for exclusion: not vertical spillovers)
+
+Downloadable! This paper discusses the impact of foreign-ownership presence on the productivity performance of domestically-owned British retailers. In specific, we investigate the existence of productivity spillovers in the form of knowledge transfer. To guide our estimations, we develop a simple Hotelling model in which we show how the transfer of operational knowledge from MNE to non-MNE retailers, may result to an increase in the productivity of the latter and increased economic activity in the regions with relatively higher concentration of foreign investment. Our empirical estimations lend support to the assumptions upon which the theoretical model is built, while confirming the positive and highly significant impact of these spillovers on the productivity performance of domestic firms. More specifically, using data from the Annual Respondent Dataset (ARD), we find that positive spillovers exist but are mostly confined to the region in which foreign subsidiaries locate. Furthermore, the productivity ben
+
+http://ideas.repec.org/p/pra/mprapa/7181.html
+
+Domestic Plant Productivity and Incremental Spillovers from Foreign Direct Investment
+Enrico Pennings , Carlo Altomonte, 2009 (reason for exclusion: not vertical spillovers)
+
+We develop a simple test to assess whether horizontal spillover effects from multinational to domestic firms are endogenous to the market structure generated by the incremental entry of the same multinationals. In particular, we analyze the performance of a panel of 10,650 firms operating in Romania in the period 1995-2001. Controlling for the simultaneity bias in productivity estimates through semi-parametric techniques, we find that changes in domestic firmsâ€™ TFP are positively related to the first foreign investment in a specific industry and region, but get significantly weaker and become negative as the number of multinationals that enter in the considered industry/region crosses a specific threshold. These changing marginal effects can explain the lack of horizontal spillovers arising in traditional model designs. We also find these effects to vary between manufacturing and service, suggesting as a possible explanation a strategic change in technology transfer decisions by multinational firms as the market structure evolves.
+
+http://ideas.repec.org/a/pal/jintbs/v40y2009i7p1131-1148.html
+
+
+Sectoral productivity and spillover effects of FDI in Latin America
+Tondl and Fornero, 2008 (reason for exclusion: separate spillover variables for each sector)
+
+http://www.google.cz/url?sa=t&source=web&ct=res&cd=47&ved=0CC8QFjAGOCg&url=http%3A%2F%2Fwww.fiw.ac.at%2Ffileadmin%2FDocuments%2FFOKO_II%2FTondlFornero.pdf&ei=mQ8yS4HSFZKImgOM5qWYCQ&usg=AFQjCNE3R8aJ5Gsg4XOG-ArG3REWUmb7cA&sig2=mTKmDfsc89zqQeDSNESjHQ
+
+
+Does FDI facilitate Domestic Entrepreneurship? Evidence from the Czech Republic (reason for exclusion: not productivity spillovers)
+Renata Kosova & Meghana Ayyagari (2010) Review of International Economics, forthcoming
+
+Downloadable! How does foreign direct investment (FDI) affect industry dynamics? In this paper, we analyze the impact of FDI on domestic firm entry in 245 industries in the Czech Republic during 1994 to 2000. We find that larger foreign presence stimulates the entry of domestic firms within the same industry indicating the existence of positive horizontal spillovers from FDI. We also find evidence of significant vertical entry spillovers – FDI in downstream (upstream) industries initiates entry in upstream (downstream) sectors via the presence of backward (forward) linkages. Our results also show that entry spillovers through forward linkages dominate both horizontal spillovers and spillovers through backward linkages. However, the spillovers vary substantially across industries: while service industries benefit from both horizontal and vertical spillovers, manufacturing industries do not experience significant positive entry spillovers of any kind. In addition, we find that while vertical spillovers prevai
+
+http://ideas.repec.org/p/gwu/wpaper/0008.html
+
+Bitzer and Görg (2009)	d	Article	Foreign Direct Investment, Competition and Industry Performance (reason for exclusion: foreign presence not in percentage; inward FDI stock in 17 OECD countries).
+
+Driffield et al. (2002)	d	Article	Foreign Direct Investment, Transactions Linkages, and the Performance of the Domestic Sector (reason for exclusion: foreign presence not in percentage).
+
+Harris and Robinson (2004)	d	Article	Productivity Impacts and Spillovers from Foreign Ownership in the United Kingdom (reason for exclusion: not a composite measure of vertical spillovers; individual spillover variables for each sector).
+
+Hubert and Pain (2001)	d	Article	Inward Investment and Technical Progress in the United Kingdom Manufacturing Sector (reason for exclusion: effect of foreign presence on labor demand, not productivity).
+
+Kugler (2006)	d	Article	Spillovers from foreign direct investment: Within or between industries? (reason for exclusion: not panel data analysis; estimates of elasticities based on partial canonical correlations).
+
+Lee (2005)	d	Article	Knowledge Spillover Effects from Multinational Corporations in the Korean Information Technology Industries (reason for exclusion: explanatory variable not comparable; foreign presence not in percentage).
+
+Ruane and Ugur (2005)	d	Article	Foreign Direct Investment and Productivity Spillovers in Irish Manufacturing Industry: Evidence from Plant Level Panel Data (reason for exclusion: not vertical spillovers).
+
+Wei and Liu (2006)	d	Article	Productivity spillovers from R&D, exports and FDI in China's manufacturing sector (reason for exclusion: no separate variable for vertical spillovers)
+
+Crespi et al. (2008)	d	WP	Productivity Growth, Knowledge Flows, and Spillovers (reason for exclusion: explanatory variable is information flows, not foreign presence)
+
+Motohashi and Yuan (2009)	d	WP	Technology Spillovers from Multinationals to Local Firms: Evidence from Automobile and Electronics Firms in China (reason for exclusion: R&D spillovers)
+
+Record: 12
+Title:
+THE ROLE OF FOREIGN DIRECT INVESTMENT IN THE FIRM SELECTION PROCESS IN A HOST COUNTRY: EVIDENCE FROM SLOVENIA (reason for exclusion: exit decisions, not productivity)
+
+Author:
+Kejzar, Katja Zajc
+
+Author Affiliation:
+Unlisted
+
+Source:
+2006, pp. pages
+
+Publisher Information:
+William Davidson Institute at the University of Michigan Stephen M. Ross Business School, William Davidson Institute Working Papers Series: wp841
+
+Publication Date:
+2006
+
+Abstract:
+This paper examines the role of inward foreign direct investment (FDI) in firm selection processes in the Slovenian manufacturing sector in the 1994-2003 period by assessing the impact of the entry and presence of foreign firms on a domestic firm's probability of exiting. The results confirm that not only do foreign entrants tend to be above-average productive but they also find it easier to exit (particularly those entering in the form of acquisitions). Further, the least efficient firms are found to experience a drop in their survival probability upon a foreign firm's entry. In addition, a foreign firm's entry seems to stimulate the selection process not only within the industry but also through backward linkages in the upstream supplying industries. Regarding the productivity spillover effects from foreign to local firms the results suggest that they mostly operate through vertical linkages rather than within the same industry.
+
+Publication Type:
+Working Paper
+
+Availability:
+http://www.wdi.umich.edu/files/Publications/WorkingPapers/wp841.pdf
+
+Availability Note:
+Information provided in collaboration with the RePEc Project: http://repec.org
+
+Update Code:
+200911
+
+Accession Number:
+1074170
+
+Database: 
+EconLit
+
+
+The role of production technology for productivity spillovers from multinationals: Firm-level evidence for Hungary
+Holger Görg & Alexander Hijzen & Balazs Muraközy (2009) (reason for exclusion: not vertical spillovers)
+
+Downloadable! This paper analyses the potential for productivity spillovers from inward foreign direct investment using 
+administrative panel data on firms for Hungary. We hypothesise that the potential for spillovers is related to observable 
+characteristics of the production process of foreign affiliates, and evaluate this empirically. We further explore the role 
+of competition in explaining productivity spillovers within industries. Our empirical analysis yields a number of important 
+findings. First, we show that the potential for spillovers is importantly related to the production technology of the 
+sectors and foreign affiliates. Firms that relocate labour-intensive activities to Hungary to exploit differences in labour 
+costs are unlikely to generate productivity spillovers, while spillovers increase in the capital intensity of foreign 
+affiliates. Second, we find that spillovers differ markedly in the early and later stages of transition, and that there are 
+differences between small and large firms. Further
+http://ideas.repec.org/p/kie/kieliw/1482.html
+
+Bitzer et al. (2008)	d	Article	Productivity spillovers through vertical linkages: Evidence from 17 OECD countries (reason for exclusion: not comparable since foreign presence not measured in percentage but as FDI stock)
+
+Thangavelu and Pattnayak (2006)	d	WP	Linkages and Spillovers from Foreign Ownership in the Indian Pharmaceutical Firms (reason for exclusion: not comparable measure of backward spillovers)
+
+Muraközy (2007)	Article	Do Vertical Spillovers from FDI Lead to Changes in Markups? Firm-level Evidence from Hungary (reason for exclusion: not productivity but price cost margin)
+
+Kohpaiboon (2009)	WP	Vertical and Horizontal FDI Technology Spillovers: Evidence from Thai Manufacturing (reason for exclusion: the measure for vertical spillovers cannot be interpreted as percentage)
+
+Merlevede and Schoors (2008)	WP	How and By How Much does Foreign Direct Investment Increase the Productivity of Domestic Firms?
+ (reason for exclusion: the same as Merlevede and Schoors 2007, only some specifications missing)
+ 
+Reganati et al. (2008)	WP	Horizontal And Vertical Spillovers From FDI In The Italian Productive System (reason for exclusion: not available for download; authors not willing to provide the manuscript)
+ 
+Resmini and Nicolini (2007a)	WP	Productivity Spillovers from Foreign Investment: The Role of Neglected Conditionalities (reason for exclusion: the measure for vertical spillovers cannot be interpreted as percentage)
+
+Productivity Spillovers from FDI in China: Regional Differences and Threshold Effects (reason for exclusion: not vertical spillovers)
+
+Jianhong Qi & Yingmei Zheng & James Laurenceson & Hong Li (2009)
+Downloadable (with restrictions)! Economic theory posits numerous channels through which FDI might create positive spillovers for domestic firms. However, the results of empirical studies that have sought to document these spillovers have been mixed. One explanation for this variation is that the capacity of domestic firms to absorb spillovers might vary. In the present paper, we explore these issues in the case of China. Aside from being one of the world's leading hosts of foreign direct investment, China makes for an interesting case study because its provinces vary greatly with respect to those factors most commonly held to influence absorptive capacity, such as the initial level of technology in domestic firms. This paper begins by empirically establishing that the spillovers from foreign direct investment do indeed vary across provinces. Threshold values for various factors that influence absorptive capacity factors are then estimated and it is found that conditions in many provinces presently fall short
+
+Esternalità e spilloveRS verticali indotti dall’ingresso di imprese estere nei settori dei servizi in Italia (reason for exclusion: the measure for vertical spillovers cannot be interpreted as percentage)
+Marcella Nicolini*, Lucia Piscitello**
+
+Iyer (2009)	Article	Foreign Firms and Inter-industry Spillovers in Indian Manufacturing: Evidence from 1989 to 2004	(reason for exclusion: the author did not send us enough data)
+
+Kaditi (2006)	Article	Foreign Direct Investments and Productivity Growth in the Agri-Food Sector of Eastern Europe and Central Asia: An Empirical Analysis (reason for exclusion: the author did not send us enough data)
+
+Hale and Long (2010)	Article	Are there productivity spillovers from foreign direct investment in China? (reason for exclusion: the authors did not send us enough data)
+
+Jorge and Dantas (2008)	WP	Investimento Estrangeiro Direto e Inovaçao: Um Estudo Sobre Ramos Selecionados da Indústria no Brasil (reason for exclusion: the authors did not send us enough data)
+
+Record: 4
+Title:
+Subsidiary Roles, Vertical Linkages and Economic Development: Lessons from Transition Economies (reason for exclusion: not FDI spillover regressions)
+
+Author:
+Jindra, Bjorn; Giroud, Axele; Scott-Kennel, Joanna
+
+Author Affiliation:
+Halle Institute for Economic Research; U Manchester; Victoria U Wellington
+
+Source:
+Journal of World Business, April 2009, v. 44, iss. 2, pp. 167-79
+
+Publication Date:
+April 2009
+
+Abstract:
+Vertical supply chain linkages between foreign subsidiaries and domestic firms are important mechanisms for knowledge spillovers, contributing to the economic development of host economies. This paper argues that subsidiary roles and technological competences affect the extent of vertical linkages as such as well as their potential for technological spillovers. Using survey evidence from 424 foreign subsidiaries based in transition economies, we tested for the effect of subsidiaries' autonomy, initiative, technological capability, internal, and external technological embeddedness on the extent and intensity of forward and backward vertical linkages. The evidence supports our main argument that the potential of technology diffusion via vertical linkages depends on the nature of subsidiary roles. We discuss the implications for transition as well as other developing countries.
+
+Publication Type:
+Journal Article
+
+Digital Object Identifier:
+http://dx.doi.org/10.1016/j.jwb.2008.05.006
+
+Availability:
+http://www.elsevier.com/wps/find/journaldescription.cws_home/620401/description#description
+
+Update Code:
+200905
+
+Accession Number:
+1039305
+
+Database: 
+EconLit
+
+
+Record: 5
+Title:
+Backward FDI Linkages as a Channel for Transferring Technology and Building Innovation Capability: The Case of Slovenia (reason for exclusion: not FDI spillover regressions)
+
+Author:
+Bucar, Maja; Rojec, Matija; Stare, Metka
+
+Author Affiliation:
+U Ljubljana; U Ljubljana and Institute of Macroeconomic Analysis and Development, Government of the Republic of Slovenia; U Ljubljana and Institute of Macroeconomic Analysis and Development, Government of the Republic of Slovenia
+
+Source:
+European Journal of Development Research, February 2009, v. 21, iss. 1, pp. 137-53
+
+Publication Date:
+February 2009
+
+Abstract:
+Backward linkages of foreign subsidiaries with their local suppliers prove to be one of the main channels of knowledge spillovers via foreign direct investment. This paper analyses the potential of backward linkages of foreign subsidiaries in Slovenia for the transfer of technology and for the innovation capability-building of their local suppliers. Based on a survey of foreign subsidiaries in Slovenia, we aim to investigate the mechanisms of knowledge spillovers via linkages of foreign subsidiaries with local suppliers in Slovenia. This enables us to trace the development of the technological and organizational capability of local suppliers in order to meet the growing demands made by foreign subsidiaries. This firm-level analysis is complemented with an analysis of the national innovation policy to see whether the measures introduced to support innovation are in fact helping local business to improve its technological capability and are thus providing additional stimuli for innovation.
+
+Publication Type:
+Journal Article
+
+Availability:
+http://www.tandf.co.uk/journals/titles/09578811.asp
+
+Update Code:
+200905
+
+Accession Number:
+1037894
+
+Database: 
+EconLit
+
+
+Record: 6
+Title:
+Liquidity Constraints and Firms' Linkages with Multinationals (reason for exclusion: not FDI spillover regressions)
+
+Author:
+Javorcik, Beata S.; Spatareanu, Mariana
+
+Author Affiliation:
+U Oxford; Rutgers U
+
+Source:
+World Bank Economic Review, 2009, v. 23, iss. 2, pp. 323-46
+
+Publication Date:
+2009
+
+Abstract:
+Using a unique data set on the Czech Republic for 1994-2003, this article examines the relationship between a firm's liquidity constraints and its supply linkages with multinational corporations (MNCs). The empirical analysis indicates that Czech firms supplying multinationals are less credit constrained than are nonsuppliers. Closer inspection of the timing of the effect, however, suggests that the result is due to self-selection of less constrained firms into supplying multinationals rather than to the benefits derived from the supplying relationship. As the recent literature finds that productivity spillovers from foreign direct investment (FDI) are most likely to take place through contacts between MNCs and their local suppliers, this finding suggests that well-developed financial markets may be needed to take full advantage of the benefits associated with FDI inflows.
+
+Publication Type:
+Journal Article
+
+Availability:
+http://wber.oxfordjournals.org/
+
+Update Code:
+200910
+
+Accession Number:
+1065249
+
+Database: 
+EconLit
+
+Record: 7
+Title:
+Tough Love: Do Czech Suppliers Learn from Their Relationships with Multinationals? (reason for exclusion: not FDI spillover regressions)
+
+Author:
+Javorcik, Beata S.; Spatareanu, Mariana
+
+Author Affiliation:
+Unlisted; Unlisted
+
+Source:
+2009, pp. 27
+
+Publisher Information:
+Department of Economics, Rutgers University, Newark, Working Papers Rutgers University, Newark
+
+Publication Date:
+2009
+
+Abstract:
+Many countries strive to attract foreign direct investment (FDI) hoping that knowledge brought by multinationals will spill over to domestic industries and increase their productivity. While the empirical studies have cast doubt on the existence of horizontal spillovers from FDI in developing countries, several recent papers have confirmed the presence of vertical spillovers, which take place through contacts between foreign affiliates and their local suppliers. However, the existing studies rely on industry-level proxies for vertical spillovers rather than information on actual relationships between local companies and multinationals. This study goes one step further by employing a unique dataset from the Czech Republic, which allows us to identify local firms supplying multinationals operating in the country. The data suggest that suppliers are different from other firms. They are larger, have a higher capital-labor ratio, pay higher wages and exhibit a higher productivity level. The evidence is suggestive of both high productivity firms having a higher probability of supplying multinationals as well as suppliers learning from their relationships with multinationals.
+
+Publication Type:
+Working Paper
+
+Availability:
+http://andromeda.rutgers.edu/~econnwk/workingpapers/2009-004.pdf
+
+Availability Note:
+Information provided in collaboration with the RePEc Project: http://repec.org
+
+Update Code:
+200911
+
+Accession Number:
+1073114
+
+Database: 
+EconLit
+
+
+Record: 9
+Title:
+The Impact of Greenfield FDI and Mergers and Acquisitions on Innovation in Chinese High-Tech Industries (reason for exclusion: not FDI spillover regressions)
+
+Author:
+Liu, Xiaohui; Zou, Huan
+
+Author Affiliation:
+Loughborough U; Loughborough U
+
+Source:
+Journal of World Business, July 2008, v. 43, iss. 3, pp. 352-64
+
+Publication Date:
+July 2008
+
+Abstract:
+Using panel data analysis, this paper investigates the impact of international technology spillovers on innovation in Chinese high-tech industries through greenfield foreign direct investment, cross-border mergers and acquisitions and trade. We report that foreign greenfield R&D activities by multinational corporations in a host country significantly affect the innovation performance of domestic firms and there exist both intra-industry and inter-industry spillovers from foreign greenfield R&D. There are only inter-industry M&A spillovers. We find that importing foreign technology and investing in domestic R&D have positive impacts on domestic innovation. The findings have important implications for theory, practitioners and policy-makers.
+
+Publication Type:
+Journal Article
+
+Digital Object Identifier:
+http://dx.doi.org/10.1016/j.jwb.2007.11.004
+
+Availability:
+http://www.elsevier.com/wps/find/journaldescription.cws_home/620401/description#description
+
+Update Code:
+200808
+
+Accession Number:
+0986924
+
+Database: 
+EconLit
+
+Record: 16
+Title:
+Efekty spillovers z posobenia zahranicnych firiem na Slovensku. (Foreign Direct Investment Spillovers in Slovakia. With English summary.) (reason for exclusion: not FDI spillover regressions)
+
+Language:
+Slovak
+
+Author:
+Ferencikova, Sona; Fifekova, Martina
+
+Author Affiliation:
+U Economics in Bratislava; U Economics in Bratislava
+
+Source:
+Ekonomicky Casopis/Journal of Economics, 2008, v. 56, iss. 9, pp. 855-72
+
+Publication Date:
+2008
+
+Abstract:
+The authors conducted the first study about FDI spillovers in Slovakia in order to find out if there is evidence of horizontal and vertical spillovers that are beneficial for the Slovak enterprises. Based on the study of the biggest investors in Slovakia they conclude that the forward and backward vertical spillovers are rather limited, even though the potential for spillovers exist, especially among the Slovak suppliers of the foreign companies. The scope of horizontal spillovers is also quite limited: they appear on a bigger scale only through the movement of human capital which contributes to their spread into local companies.
+
+Publication Type:
+Journal Article
+
+Availability:
+http://www.ec.sav.sk/
+
+Update Code:
+200904
+
+Accession Number:
+1024600
+
+Database: 
+EconLit
+
+Record: 17
+Title:
+FDI Location Choice: Agglomeration vs Institutions (reason for exclusion: not FDI spillover regressions)
+
+Author:
+Du, Julan; Lu, Yi; Tao, Zhigang
+
+Author Affiliation:
+Chinese U Hong Kong; U Hong Kong; U Hong Kong
+
+Source:
+International Journal of Finance and Economics, January 2008, v. 13, iss. 1, pp. 92-107
+
+Publication Date:
+January 2008
+
+Abstract:
+Using an extensive data set on foreign invested enterprises in China from US, EU, Japan and Korea, we explore the role of agglomeration economies (network externalities) and government institutions as well as other more traditional factors in determining the (regional) locational choice of foreign direct investment (FDI). Employing firm-level discrete choice model, we find that provinces with stronger public institutions and higher horizontal and vertical agglomerations tend to attract more foreign investments. Furthermore, we explore the interplay of institutions and agglomeration economies. We detect that foreign horizontal agglomeration can partially overcome the negative impact of weak institutions on FDI entry. However, we obtain mixed evidence regarding the interplay between institutions and domestic horizontal agglomeration or vertical agglomeration.
+
+Publication Type:
+Journal Article
+
+Availability:
+http://www3.interscience.wiley.com/cgi-bin/jhome/15416
+
+Update Code:
+200803
+
+Accession Number:
+0956386
+
+Database: 
+EconLit
+
+Full Text Database: 
+
+Record: 21
+Title:
+International and Intra-national Technology Spillovers and Technology Development Paths in Developing Countries: The Case of China (reason for exclusion: not FDI spillover regressions)
+
+Author:
+Fu, Miao; Fu, Xiaolan; Li, Tieli
+
+Author Affiliation:
+Unlisted; Unlisted; Unlisted
+
+Source:
+2008, pp. 28 pages
+
+Publisher Information:
+World Institute for Development Economic Research (UNU-WIDER), Working Papers: RP2008/96
+
+Publication Date:
+2008
+
+Abstract:
+This paper analyses the paths of technology development among regions with heterogeneous economic and technological characteristics, focusing on the case of China. It finds that intra-national technology transfer, that is, the technology transfer from technologically advanced provinces to less advanced ones, is more important than that taking place through FDI in the backward regions. In technologically advanced areas, learning by doing, indigenous R&D and technology transfer from FDI all play a significant role in technical progress. The relationship between the strength of interprovincial technology transfer and technological distance is U-shaped, with the technology threshold falling outside the upper bound of technology distance. This suggests that technology transfer takes place more effectively when technological distance is small. The paper finds that learning by doing and R&D are important internal routes to technical progress. R&D plays a key role in the assimilation of foreign technologies, whereas learning by doing is relevant for the absorption of interprovincial technology transfers.
+
+Publication Type:
+Working Paper
+
+Availability:
+http://www.wider.unu.edu/stc/repec/pdfs/rp2008/rp2008-96.pdf
+
+Availability Note:
+Information provided in collaboration with the RePEc Project: http://repec.org
+
+Update Code:
+200905
+
+Accession Number:
+1035290
+
+Database: 
+EconLit
+
+Record: 28
+Title:
+Industrial Clustering and Global Value Chains in Central and Eastern Europe: Role of Multinational Enterprises in Industrial Upgrading (reason for exclusion: not FDI spillover regressions)
+
+Author:
+Akbar, Yusaf H.; Ferencikova, Sonia
+
+Author Affiliation:
+Southern NH U; U Economics, Bratislava
+
+Source:
+Prague Economic Papers, September 2007, v. 16, iss. 3, pp. 237-51
+
+Publication Date:
+September 2007
+
+Abstract:
+The authors are attempting to draw together existing literature on the governance of GVCs; research on host country "spillovers" as a consequence of MNE activity and the broader cluster and innovation literature. While cluster research had done important work in identifying and operationalizing the necessary conditions for cluster formation, it had relatively ignored the global-local linkage brought by the presence of MNEs. The "spillover" literature has identified in theory numerous benefits of MNE presence in host countries. There was relatively little empirical work done in CEE to discover if these benefits actually exist. Neither literature had focused on how MNEs govern their GVCs. Thus bringing these sources together presents an important opportunity for international business. The authors find that in the Slovak case the industrial clusters among the firms surveyed were not much functional. On a strategic level, there appears to be little evidence of cooperation in areas of marketing, export promotion or investment. This is especially of concern in sectors such as automotive where cooperative strategies among suppliers could offer significant benefits.
+
+Publication Type:
+Journal Article
+
+Availability:
+http://www.vse.cz/pep/
+
+Update Code:
+200712
+
+Accession Number:
+0943751
+
+Database: 
+EconLit
+
+Record: 29
+Title:
+Foreign Direct Investment and Development: The MERCOSUR Experience (reason for exclusion: not FDI spillover regressions)
+
+Author:
+Chudnovsky, Daniel; Lopez, Andres
+
+Author Affiliation:
+Unlisted; CENIT and U Buenos Aires
+
+Source:
+CEPAL Review, August 2007, iss. 92, pp. 7-23
+
+Publication Date:
+August 2007
+
+Abstract:
+This article analyses the impact of foreign direct investment (FDI) on the MERCOSUR countries in the light of key variables such as productivity, foreign trade, innovation and growth. The macroeconomic impact is not found to have been significant, whereas the microeconomic effects seem to have been more noticeable, though varied. Generally speaking, the subsidiaries of transnational corporations operate at higher levels of productivity, engage in more international trade and are more innovative than local companies. The indirect effects of FDI, on the other hand, are less clear. The sign (positive or negative) and magnitude of productivity spillovers to domestic competitors vary, apparently depending on the characteristics of the local businesses and on the markets in which they operate. Finally, only in Brazil is there evidence of spillover effects--although those effects have been both positive and negative--on the export activities and innovation of local companies, as well as productivity spillovers from foreign subsidiaries to their national suppliers.
+
+Publication Type:
+Journal Article
+
+Availability:
+http://www.eclac.cl/cgi-bin/getProd.asp?xml=/revista/agrupadores_xml/aes18.xml&xsl=/agrupadores_xml/agrupa_listado-i.xsl&base=/tpl-i/top-bottom.xsl
+
+Update Code:
+200804
+
+Accession Number:
+0961460
+
+Database: 
+EconLit
+
+Record: 30
+Title:
+Imports, Productivity Growth, and Supply Chain Learning (reason for exclusion: not FDI spillover regressions)
+
+Author:
+Blalock, Garrick; Veloso, Francisco M.
+
+Author Affiliation:
+Cornell U; Carnegie Mellon U and U Catolica Portuguesa
+
+Source:
+World Development, July 2007, v. 35, iss. 7, pp. 1134-51
+
+Publication Date:
+July 2007
+
+Abstract:
+We present evidence that importing is a source of international technology transfer. Using a detailed panel of Indonesian manufacturers, our analysis shows that firms in industries supplying increasingly import-intensive sectors have higher productivity growth than other firms. This finding suggests that linkages through vertical supply relationships are the channel through which import-driven technology transfer occurs. To our knowledge, these are the first firm-level results showing that downstream imports play a role in productivity gains. Together with the literature linking FDI and exporting to technology spillovers, the results provide a third component to the argument that trade and openness promote economic growth.
+
+Publication Type:
+Journal Article
+
+Digital Object Identifier:
+http://dx.doi.org/10.1016/j.worlddev.2006.10.009
+
+Availability:
+http://www.elsevier.com/wps/find/journaldescription.cws_home/386/description#description
+
+Update Code:
+200709
+
+Accession Number:
+0931201
+
+Database: 
+EconLit
+
+Record: 31
+Title:
+Externalities from Foreign Direct Investment in the Mexican Retailing Sector (reason for exclusion: not FDI spillover regressions)
+
+Author:
+Durand, Cedric
+
+Author Affiliation:
+UFR de Sciences Economiques
+
+Source:
+Cambridge Journal of Economics, May 2007, v. 31, iss. 3, pp. 393-411
+
+Publication Date:
+May 2007
+
+Abstract:
+This contribution to the discussion on the impact of foreign direct investment in developing countries is based on an empirical study of the consequences of transnational corporations' presence in the Mexican retailing sector, particularly Wal-Mart. First, it is shown that the arrival of foreign firms accelerates the modernisation but has a negative impact on local firms' performance as well as local worker remuneration as a result of the growing competitive pressure in the sector. Second, the changes that occurred in supply chain governance and the tremendous increase of imports initiated by Wal-Mart are described, and some probable implications for local suppliers are suggested.
+
+Publication Type:
+Journal Article
+
+Availability:
+http://cje.oxfordjournals.org/
+
+Update Code:
+200707
+
+Accession Number:
+0916840
+
+Database: 
+EconLit
+
+Record: 34
+Title:
+Determinant Factors of FDI Spillovers - What Do We Really Know? (reason for exclusion: not FDI spillover regressions)
+
+Author:
+Crespo, Nuno; Fontoura, Maria Paula
+
+Author Affiliation:
+ISCTE, Lisboa; ISEG, Technical U Lisbon
+
+Source:
+World Development, March 2007, v. 35, iss. 3, pp. 410-25
+
+Publication Date:
+March 2007
+
+Abstract:
+The evaluation of aggregate FDI spillovers to domestic firms has yielded mixed results. However, analysis has recently taken a step forward with the evaluation of the factors determining the existence, dimension, and sign of FDI spillovers. We survey the arguments that support these factors and the empirical evidence already produced. FDI spillovers depend on many factors, frequently with an undetermined effect. The absorptive capacities of domestic firms and regions are preconditions for incorporating the benefits of these FDI externalities. Regarding the remaining factors, the results show contrary effects or, in some cases, are still insufficient to draw reliable conclusions.
+
+Publication Type:
+Journal Article
+
+Digital Object Identifier:
+http://dx.doi.org/10.1016/j.worlddev.2006.04.001
+
+Availability:
+http://www.elsevier.com/wps/find/journaldescription.cws_home/386/description#description
+
+Update Code:
+200708
+
+Accession Number:
+0925062
+
+Database: 
+EconLit
+
+Record: 38
+Title:
+Attraction and Deterrence in the Location of Foreign-Owned R&D Activities: The Role of Positive and Negative Spillovers (reason for exclusion: not FDI spillover regressions)
+
+Author:
+Cantwell, John; Piscitello, Lucia
+
+Author Affiliation:
+Rutgers U; Politecnico di Milano
+
+Source:
+International Journal of Technological Learning, Innovation and Development, 2007, v. 1, iss. 1, pp. 83-111
+
+Publication Date:
+2007
+
+Abstract:
+This paper examines how the characteristics of local contexts affect the location of foreign-owned R&D activities, in terms of positive (i.e. attraction) and/or negative (i.e. deterrence) spillovers. It distinguishes between activities that are Competence-Creating (CC) (that create new lines of technology for the MNC group) and Competence-Exploiting (CE) (adapt established lines of technology). The empirical investigation uses patents granted in the USA to the world's largest industrial firms for inventions achieved in their European-located operations, classified by the host region in which the research facility responsible is located, over the period 1969-1995. The results show that positive spillovers stem from a high degree of local interindustry diversity, as well as from the presence of a local variety of other actors in the same industry, at least when they are foreign-owned. In contrast, the presence of domestically-owned dominant firms in the same industry tends to act as a deterrent.
+
+Publication Type:
+Journal Article
+
+Availability:
+http://www.inderscience.com/ijtlid
+
+Update Code:
+200810
+
+Accession Number:
+0995781
+
+Database: 
+EconLit
+
+Record: 40
+Title:
+Industrial Linkages and Export Spillovers from FDI (reason for exclusion: not FDI spillover regressions)
+
+Author:
+Kneller, Richard; Pisu, Mauro
+
+Author Affiliation:
+U Nottingham; U Nottingham
+
+Source:
+World Economy, January 2007, v. 30, iss. 1, pp. 105-34
+
+Publication Date:
+January 2007
+
+Abstract:
+In this paper we investigated the hypothesis of export spillovers from foreign multinationals to domestic firms using a data set of UK manufacturing firms from 1992 to 1999. Unlike previous studies we allow not only for the possibility of horizontal (i.e., intra-industry) and regional externalities, but also for vertical ones (i.e., inter-industry: forward and backward). Deploying the Heckman selection process we modelled the two decisions of whether to export or not, and how much to export, separately. The results indicate that the decision to start exporting is positively associated with the presence of foreign firms in the same industry and region; furthermore, export-oriented foreign affiliates seem to be the source of stronger export spillovers. The decision concerning how much to export is affected positively by foreign firms in downstream industries and by those in the same industry and region that do not export.
+
+Publication Type:
+Journal Article
+
+Availability:
+http://www.blackwellpublishing.com/journal.asp?ref=0378-5920
+
+Update Code:
+200704
+
+Accession Number:
+0898732
+
+Database: 
+EconLit
+
+Full Text Database: 
+
+Record: 42
+Title:
+Human Capital, Economic Growth, and Regional Inequality in China (reason for exclusion: not FDI spillover regressions)
+
+Author:
+Fleisher, Belton; Li, Haizheng; Zhao, Min Qiang
+
+Author Affiliation:
+Unlisted; Unlisted; Unlisted
+
+Source:
+2007, pp. pages
+
+Publisher Information:
+William Davidson Institute at the University of Michigan Stephen M. Ross Business School, William Davidson Institute Working Papers Series: wp857
+
+Publication Date:
+2007
+
+Abstract:
+We study the dispersion in rates of provincial economic and TFP growth in China. Our results show that regional growth patterns can be understood as a function of several interrelated factors, which include investment in physical capital, human capital, and infrastructure capital; the infusion of new technology and its regional spread; and market reforms, with a major step forward occurring following Deng Xiaoping's "South Trip" in 1992. We find that FDI had much larger effect on TFP growth before 1994 than after, and we attribute this to emergence of other channels of technology transfer when marketization accelerated. We find that human capital positively affects output per worker and productivity growth. In particular, in terms of its direct contribution to production, educated labor has a much higher marginal product. Moreover, we estimate a positive, direct effect of human capital on TFP growth. This direct effect is hypothesized to come from domestic innovation activities. The estimated spillover effect of human capital on TFP growth is positive and statistically significant, which is very robust to model specifications and estimation methods. The spillover effect appears to be much stronger before 1994. We conduct cost-benefit analysis and a policy "experiment," in which we project the impact increases in human capital and infrastructure capital on regional inequality. We conclude that investing in human capital will be an effective policy to reduce regional gaps in China as well as an efficient means to promote economic growth.
+
+Publication Type:
+Working Paper
+
+Availability:
+http://www.wdi.umich.edu/files/Publications/WorkingPapers/wp857.pdf
+
+Availability Note:
+Information provided in collaboration with the RePEc Project: http://repec.org
+
+Update Code:
+200911
+
+Accession Number:
+1074185
+
+Database: 
+EconLit
+
+Record: 47
+Title:
+Domestic vs. International Spillovers: Evidence from Swedish Firm Level Data (reason for exclusion: not FDI spillover regressions)
+
+Author:
+Poldahl, Andreas
+
+Author Affiliation:
+Swedish Institute for Growth Policy Studies
+
+Source:
+Journal of Industry, Competition and Trade, December 2006, v. 6, iss. 3-4, pp. 277-94
+
+Publication Date:
+December 2006
+
+Abstract:
+This paper investigates the association between total factor productivity growth and the R&D expenditures of Swedish manufacturing firms in the presence of domestic- and international R&D spillovers. The paper assumes that the principal channel of transmission of new technology is through I/O relations. Econometric evidence suggests that international as well as domestic inter-industry R&D spillovers are important determinants of firms' productivity growth in the long run. The R&D spillovers generated within the industry and following I/O links seem to be of minor importance in explaining productivity growth. It seems likely that within-industry productivity spillovers follow other channels than I/O flows, such as horizontal spillovers through copying of new products and processes, or labour turnover. The use of a convergence parameter is one way to check for such within-industry technology flows. Our results indicate that a catch-up process exists by which the non-frontier firms in the Swedish manufacturing sector absorb knowledge spillovers from the leading firms in the industry. Finally, a firm's own R&D efforts are found to be more or less positively correlated with the TFP growth, maybe the contribution from R&D efforts in some sense are underestimated.
+
+Publication Type:
+Journal Article
+
+Availability:
+http://www.springerlink.com/content/1566-1679
+
+Update Code:
+200706
+
+Accession Number:
+0914567
+
+Database: 
+EconLit
+
+Full Text Database: 
+
+Record: 49
+Title:
+Growth Impact and Determinants of Foreign Direct Investment into South Africa, 1956-2003 (reason for exclusion: not FDI spillover regressions)
+
+Author:
+Fedderke, J. W.; Romm, A. T.
+
+Author Affiliation:
+U Cape Town; U Witwatersrand
+
+Source:
+Economic Modelling, September 2006, v. 23, iss. 5, pp. 738-60
+
+Publication Date:
+September 2006
+
+Abstract:
+The paper is concerned with the growth impact and the determinants of foreign direct investment in South Africa. Estimation is in terms of a standard spillover model of investment, and in terms of a new model of locational choice in FDI between domestic and foreign alternatives. We find complementarity of foreign and domestic capital in the long run, implying a positive technological spillover from foreign to domestic capital. While there is a crowd-out of domestic investment from foreign direct investment, this impact is restricted to the short run. Further we find that foreign direct investment in South Africa has tended to be capital intensive, suggesting that foreign direct investment has been horizontal rather than vertical. Determinants of foreign direct investment in South Africa lie in the net rate of return, as well as the risk profile of the foreign direct investment liabilities. Policy handles are both direct and powerful. Reducing political risk, ensuring property rights, most importantly bolstering growth in the market size, as well as wage moderation, lowering corporate tax rates, and ensuring full integration of the South African economy into the world economy all follow as policy prescriptions from our empirical findings.
+
+Publication Type:
+Journal Article
+
+Digital Object Identifier:
+http://dx.doi.org/10.1016/j.econmod.2005.10.005
+
+Availability:
+http://www.elsevier.com/wps/find/journaldescription.cws_home/30411/description#description
+
+Update Code:
+200611
+
+Accession Number:
+0869592
+
+Database: 
+EconLit
+
+
+Record: 2
+Title:
+To Innovate or to Transfer? A Study on Spillovers and Foreign Firms in Turkey (reason for exclusion: spillovers to innovation, not productivity)
+
+Author:
+Lenger, Aykut; Taymaz, Erol
+
+Author Affiliation:
+Ege U; Ege U
+
+Source:
+Journal of Evolutionary Economics, April 2006, v. 16, iss. 1-2, pp. 137-53
+
+Publication Date:
+April 2006
+
+Abstract:
+FDI has been considered by many development economists as an important channel for transfer of technology to developing countries. It is suggested that modern, advanced technologies introduced by multinational firms can diffuse to domestic firms through spillovers. In this paper, we study innovation and technology transfer activities of domestic and foreign firms in Turkish manufacturing industries, and the impact of horizontal, vertical and labor spillovers on these activities. Our analysis shows that foreign firms are more innovative than their domestic counterparts, and transfer technology from abroad (mostly from their parent companies). Horizontal spillovers from foreign firms seem to be insignificant. The effects of foreign firms on technological activities of other firms in vertically related industries are ambiguous. High-tech suppliers tend to have a high rate of innovation when the share of foreign users is high, but the opposite is true for users: high-tech users supplied mainly by foreign firms tend to have a lower rate of innovation. Labor turnover is found to be the main channel of spillovers. Our findings reiterate the importance of tacitness of knowledge, and confirm that technology cannot easily be transferred through passive mechanisms.
+
+Publication Type:
+Journal Article
+
+Availability:
+http://www.springerlink.com/link.asp?id=100519
+
+Update Code:
+200608
+
+Accession Number:
+0859116
+
+Database: 
+EconLit
+
+Full Text Database: 
+
+
+Record: 3
+Title:
+FDI Spillovers in Slovakia: Trends from the Last Decade and Recent Evidence from Automotive Industry (reason for exclusion: not FDI spillover regressions)
+
+Author:
+Ferencikova, Sona; Fifekova, Martina
+
+Author Affiliation:
+U Economics, Bratislava; U Economics, Bratislava
+
+Source:
+Ekonomicky Casopis/Journal of Economics, 2006, v. 54, iss. 7, pp. 633-51
+
+Publication Date:
+2006
+
+Abstract:
+This paper examines the indirect effects of foreign direct investment, commonly referred to as spillovers, in Slovakia. It provides a theoretical framework of this phenomenon reviewing existing literature on the topic that presents some experiences of Slovak companies over the last decade regarding spillovers and describes qualitative research of spillovers in the Slovak automotive industry. The results show that spillovers are present only through backward linkage, which is related to the technology transfer from foreign customer to domestic supplier.
+
+Publication Type:
+Journal Article
+
+Availability:
+http://www.ec.sav.sk/
+
+Update Code:
+200702
+
+Accession Number:
+0885744
+
+Database: 
+EconLit
+
+Record: 6
+Title:
+Struktura in politika nabav podjetij s tujim kapitalom v Sloveniji. (With English summary.) (reason for exclusion: not FDI spillover regressions)
+
+Language:
+Slovenian
+
+Author:
+Rojec, Matija
+
+Author Affiliation:
+U Ljubljana
+
+Source:
+IB Revija, 2006, v. 40, iss. 4, pp. 15-29
+
+Publication Date:
+2006
+
+Abstract:
+The paper addresses one of the most important channels of spillover from foreign subsidiaries to domestic companies, which is supply of inputs by domestic companies to foreign subsidiaries. By questionnaire survey of 122 foreign subsidiaries in Slovenia we analyse the structure and trends in their supplies, their level of autonomy in supply policy, factors determining the choice of suppliers, and the importance of host country policy measures for increasing the share of local suppliers to foreign subsidiaries. The main conclusion of the analysis is that the share of local inputs in total supplies of foreign subsidiaries is relatively high, as far as material inputs and even more as far as services inputs is concerned. There is, however, no trend of increase of this share during the life-time of foreign subsidiaries. The latter is mostly due to the fact that only a smaller fraction of Slovenian companies is technologically, financially and organizationally capable to undertake the role of important suppliers of multinationals, which act on the global level. The most important factors determining the choice of suppliers by foreign subsidiaries are quality, price, reliability and flexibility of suppliers. In this context, the quality has a specific role, since it is a kind of absolute precondition for foreign subsidiaries to consider potential suppliers. The surveyed foreign subsidiaries attach only a rather modest importance to explicit policy measures of the host country for increasing the share of local suppliers.
+
+Publication Type:
+Journal Article
+
+Availability:
+http://www.umar.gov.si/en/publications/ib_revija/?no_cache=1
+
+Update Code:
+200805
+
+Accession Number:
+0967647
+
+Database: 
+EconLit
+
+Record: 7
+Title:
+Prelivanje znanja iz tujih podruznic v domaca podjetja: Teoreticni in empiricni vidiki. (FDI Spillovers from Foreign Subsidiaries to Domestic Enterprises: Theoretical and Empirical Perspectives. With English summary.) (reason for exclusion: not FDI spillover regressions)
+
+Language:
+Slovenian
+
+Author:
+Rojec, Matija
+
+Author Affiliation:
+U Ljubljana
+
+Source:
+Nase Gospodarstvo/Our Economy, 2006, v. 52, iss. 3-4, pp. 83-97
+
+Publication Date:
+2006
+
+Abstract:
+In spite of a clear theoretical conceptualisation of FDI spillovers, empirical literature provides mixed results While case studies and sectoral analysis mostly speak in favour of positive spillovers, the prevailing individual panel data based analyses are more pessimistic. However, differentiation between vertical and horizontal FDI spillovers, the use of the Olley-Pakes estimation method, and other recent improvements have considerably improved the estimate of FDI spillovers based on individual panel data. One can expect that these and other improvements in empirical analysis will result in more positive estimates of FDI spillovers in future.
+
+Publication Type:
+Journal Article
+
+Availability:
+http://www.ng-epf.si
+
+Update Code:
+200612
+
+Accession Number:
+0879969
+
+Database: 
+EconLit
+
+Full Text Database: 
+
+Record: 9
+Title:
+Global Integration and Technology Transfer (reason for exclusion: relevant papers already included)
+
+Author:
+Hoekman, Bernard; Javorcik, Beata Smarzynska, eds.
+
+Source:
+2006, pp. xix, 346
+
+Publisher Information:
+Trade and Development series. Washington, D.C.: World Bank; Houndmills, U.K. and New York: Palgrave Macmillan
+
+Publication Date:
+2006
+
+Abstract:
+Thirteen papers explore how trade and foreign direct investment (FDI) can help increase economic growth by allowing firms to tap into and benefit from the global pool of knowledge. Papers discuss lessons from empirical research on international technology diffusion through trade and foreign direct investment (Bernard Hoekman and Beata Smarzynska Javorcik); econometric versus case study approaches to technology transfer (Howard Pack); foreign direct investment, linkages, and technology spillovers (Kamal Saggi); plant- and firm-level evidence on "new" trade theories (James R. Tybout); the quantity and quality of knowledge--the impact of openness and foreign R&D on north-north and north-south technology spillovers (Maurice Schiff and Yanling Wang); the knowledge content of machines--north-south trade and technology diffusion (Giorgio Barba Navaretti, Schiff, and Isidro Soloaga); exports and economic performance--evidence from a panel of Chinese enterprises (Aart Kraay); foreign investment and productivity growth in Czech enterprises (Simeon Djankov and Hoekman); technological leadership and the choice of entry mode by foreign investors (Javorcik); whether FDI increases the productivity of domestic firms--in search of spillovers through backward linkages (Javorcik); product quality, productive efficiency, and international technology diffusion--evidence from plant-level panel data (Kraay, Soloaga, and Tybout); market discipline and corporate efficiency--evidence from Bulgaria (Djankov and Hoekman); and innovation in Mexico--NAFTA is not enough (Daniel Lederman and William F. Maloney). Hoekman and Javorcik are with the World Bank and the Centre for Economic Policy Research. Index.
+
+Publication Type:
+Book
+
+Update Code:
+200611
+
+Accession Number:
+0873803
+
+Database: 
+EconLit
+
+Record: 11
+Title:
+Is Exporting a Source of Productivity Spillovers? (reason for exclusion: exporting spillovers)
+
+Author:
+Alvarez, Roberto; Lopez, Ricardo
+
+Author Affiliation:
+Central Bank of Chile; Indiana University Bloomington
+
+Source:
+2006, pp. 32 pages
+
+Publisher Information:
+Center for Applied Economics and Policy Research, Economics Department, Indiana University Bloomington, Caepr Working Papers: 2006-012
+
+Publication Date:
+2006
+
+Abstract:
+This paper investigates whether exporting generates positive productivity spillover effects on other plants operating in the same industry and whether exporting affects productivity of plants in vertically related industries. Using plant-level data from Chile we find that exporters improve productivity of their local suppliers but not of plants that purchase intermediate inputs from them. We also find evidence of horizontal spillovers from exporting. Exporting by foreign-owned plants generates positive spillovers in all directions: to their suppliers, customers, and to other plants in the same industry. Domestic exporters increase productivity of their suppliers and, to a lesser extent, that of plants in the same sector.
+
+Publication Type:
+Working Paper
+
+Availability:
+http://www.iub.edu/~caepr/RePEc/PDF/CAEPR2006-012.pdf
+
+Availability Note:
+Information provided in collaboration with the RePEc Project: http://repec.org
+
+Update Code:
+200703
+
+Accession Number:
+0890969
+
+Database: 
+EconLit
+
+Record: 13
+Title:
+How Does Foreign Direct Investment Promote Economic Growth? Exploring the Effects of Financial Markets on Linkages (reason for exclusion: not FDI spillover regressions)
+
+Author:
+Alfaro, Laura; Chanda, Areendam; Kalemli-Ozcan, Sebnem; Sayek, Selin
+
+Author Affiliation:
+Unlisted; Unlisted; Unlisted; Unlisted
+
+Source:
+2006
+
+Publisher Information:
+National Bureau of Economic Research, Inc, NBER Working Papers: 12522
+
+Publication Date:
+2006
+
+Abstract:
+The empirical literature finds mixed evidence on the existence of positive productivity externalities in the host country generated by foreign multinational companies. We propose a mechanism that emphasizes the role of local financial markets in enabling foreign direct investment (FDI) to promote growth through backward linkages, shedding light on this empirical ambiguity. In a small open economy, final goods production is carried out by foreign and domestic firms, which compete for skilled labor, unskilled labor, and intermediate products. To operate a firm in the intermediate goods sector, entrepreneurs must develop a new variety of intermediate good, a task that requires upfront capital investments. The more developed the local financial markets, the easier it is for credit constrained entrepreneurs to start their own firms. The increase in the number of varieties of intermediate goods leads to positive spillovers to the final goods sector. As a result financial markets allow the backward linkages between foreign and domestic firms to turn into FDI spillovers. Our calibration exercises indicate that a) holding the extent of foreign presence constant, financially well-developed economies experience growth rates that are almost twice those of economies with poor financial markets, b) increases in the share of FDI or the relative productivity of the foreign firm leads to higher additional growth in financially developed economies compared to those observed in financially under-developed ones, and c) other local conditions such as market structure and human capital are also important for the effect of FDI on economic growth.
+
+Publication Type:
+Working Paper
+
+Availability:
+http://www.nber.org/papers/w12522.pdf
+
+Availability Note:
+Information provided in collaboration with the RePEc Project: http://repec.org
+
+Update Code:
+200610
+
+Accession Number:
+0868735
+
+Database: 
+EconLit
+
+Record: 14
+Title:
+Ladder to Development? Foreign Direct Investment, Spillovers, and the Governance in a Global Economy (reason for exclusion: not FDI spillover regressions)
+
+Author:
+Zarsky, Lyuba
+
+Source:
+2006
+
+Publisher Information:
+University of Massachusetts
+
+Publication Date:
+2006
+
+Abstract:
+This dissertation probes the interface between foreign direct investment (FDI) and sustainable industrial development in the context of the neo-liberal institutions governing the global economy. Comprised of three essays, it defines sustainable industrial development as simultaneous evolution across three axes: (1) economic, defined as increases in local capacities for production and innovation; (2) environmental, defined as a reduction in the environmental and health impacts of industry; and (3) social, defined as increases in the job-creating and equity-enhancing capacities of industry. The dissertation focuses on the economic and environmental dimensions. The dissertation is structured around three questions. First, is the neo-liberal claim about the positive contribution of FDI to development robust, that is, supported by empirical evidence? In particular, what is the evidence that FDI generates knowledge and environmental spillovers and 'crowds in' domestic investment in developing countries? The central finding is that there is a substantial gap between theory and evidence. There is no statistical evidence that FDI generates positive and some evidence that it generates negative horizontal spillovers; and little evidence that it generates positive vertical spillovers. Case studies find evidence of both positive and negative horizontal and vertical spillovers. Second, what factors determine the environmental and economic impacts of FDI? The central findings are that host country regulation is pivotal and that neo-liberal global governance constrains nation-states in both direct and indirect ways. Global and regional trade and investment rules directly limit requirements host country governments can place on multinational corporations. In the absence of global environmental or corporate responsibility standards, competition between states for FDI puts a downward pressure on national environmental policy. While other social forces, including citizen demand, push environmental standards up, the counteracting pressure of competition for FDI keeps them 'stuck in the mud,' that is, it slows the rate of innovation in response to environmental threats. Third, how should FDI be governed, at the national and international levels, to more reliably promote sustainable industrial development? At the national level, it suggests that corporations work in a 'development partnership' with host country governments and civil society. Such a partnership would define, pursue and evaluate progress towards specific development objectives. At the international level, investment rules should provide 'policy space' for developing countries to pursue development objectives, and specify social responsibilities of foreign investors.
+
+Publication Type:
+Dissertation
+
+Update Code:
+200712
+
+Accession Number:
+0941177
+
+Database: 
+EconLit
+
+Record: 15
+Title:
+Measuring the Impacts of FDI in Central and Eastern Europe (reason for exclusion: not FDI spillover regressions)
+
+Author:
+Lipsey, Robert E.
+
+Author Affiliation:
+Unlisted
+
+Source:
+2006
+
+Publisher Information:
+National Bureau of Economic Research, Inc, NBER Working Papers: 12808
+
+Publication Date:
+2006
+
+Abstract:
+The impacts of inward FDI on host countries are frequently studied using balance-of-payments based measures of flows and stocks. These are unreliable for the purpose because, while theories of the effects of investment are based on FDI production and employment in the host country, these measures are often distorted approximations of the location of real activity. The mismeasurement is particularly important if trade openness, often associated with FDI, is treated as a control variable. The countries of Central and Eastern Europe, a very minor object of US direct investment, have, since 1990, become a major location for FDI from Europe, especially from Germany. The investments from both the US and Germany are, on average, very labor-intensive, and are heavily concentrated in Motor Vehicles. One result has been a shift in the export comparative advantage of these countries toward the machinery and transport equipment sector. Microdata studies in the CEE countries have found that foreign participation is associated with higher productivity in the affiliates themselves. Spillovers to indigenous firms are more spotty, clearer to upstream suppliers than to firms in the same industries as the affiliates.
+
+Publication Type:
+Working Paper
+
+Availability:
+http://www.nber.org/papers/w12808.pdf
+
+Availability Note:
+Information provided in collaboration with the RePEc Project: http://repec.org
+
+Update Code:
+200701
+
+Accession Number:
+0882652
+
+Database: 
+EconLit
+
+Record: 16
+Title:
+What determines technological spillovers of foreign direct investment: evidence from China (reason for exclusion: horizontal)
+
+Author:
+Hale, Galina; Long, Cheryl
+
+Author Affiliation:
+Unlisted; Unlisted
+
+Source:
+2006
+
+Publisher Information:
+Federal Reserve Bank of San Francisco, Working Paper Series: 2006-13
+
+Publication Date:
+2006
+
+Abstract:
+Using the World Bank survey of 1500 firms in five Chinese cities, we study whether the presence of foreign firms produces technology spillovers on domestic firms operating in the same city and industry. We find positive spillovers for more technologically advanced firms and no or negative spillovers for more backward firms. We analyze the channels of such spillovers and find that the transfer of technology occurs through movement of high-skilled workers from FDI firms to domestic firms as well as through network externalities among high-skilled workers. Moreover, these two channels fully account for the spillover effects we find, which demonstrate the importance of well-functioning labor market in facilitating FDI spillovers. Insofar as our results can be generalized to other countries, they reconcile conflicting evidence found in other studies.
+
+Publication Type:
+Working Paper
+
+Availability:
+http://www.frbsf.org/publications/economics/papers/2006/wp06-13bk.pdf
+
+Availability Note:
+Information provided in collaboration with the RePEc Project: http://repec.org
+
+Update Code:
+200606
+
+Accession Number:
+0844805
+
+Database: 
+EconLit
+
+Record: 17
+Title:
+Derramas de la maquila en un sector de pequenas y medianas empresas proveedoras. (Spillovers from Maquila Industry in a Small and Medium-Sized Suppliers Sector. With English summary.) (reason for exclusion: not FDI)
+
+Language:
+Spanish
+
+Author:
+Vera-Cruz, Alexandre O.; Dutrenit, Gabriela; Gil, Jose Luis
+
+Author Affiliation:
+U Autonoma Metropolitana, Xochimilco; U Autonoma Metropolitana, Xochimilco; U Autonoma Metropolitana, Xochimilco
+
+Source:
+Comercio Exterior, November 2005, v. 55, iss. 11, pp. 971-86
+
+Publication Date:
+November 2005
+
+Abstract:
+Building upon the results of a census, two types of technological spillover from the maquila export industry into Ciudad Juarez's machining industry are analyzed. The authors conclude that, against the prevailing perception that this relationship has not brought along any technological spillover, the fact is that there is a sector of local supplier enterprises created by maquila ex-workers.
+
+Publication Type:
+Journal Article
+
+Availability:
+http://revistas.bancomext.gob.mx/rce/en/index_rev.jsp
+
+Update Code:
+200603
+
+Accession Number:
+0822334
+
+Database: 
+EconLit
+
+Record: 18
+Title:
+Technology and the Generation of International Knowledge Spillovers: An Application to Spanish Manufacturing Firms (reason for exclusion: not FDI spillover regressions)
+
+Author:
+Alvarez, Isabel; Molero, Jose
+
+Author Affiliation:
+U Complutense de Madrid; U Complutense de Madrid
+
+Source:
+Research Policy, November 2005, v. 34, iss. 9, pp. 1440-52
+
+Publication Date:
+November 2005
+
+Abstract:
+In the continuing debate about the positive versus negative effects of inward investments in a host economy, a new perspective has arisen from new firms' strategy nowadays to internationalise their activity. One aspect is that knowledge that is not completely appropriable by foreign affiliates abroad may spill over into domestic firms. In the absence of conclusive evidence, two questions can be put forward: the first concerns the role played by technology in the generation of those external effects; the second, the micro-assessment of the dynamics of technological spillovers. In this paper, results show that benefits for domestic firms in Spain differ across industries by their technological content. The hypothesis of spillover dynamics is tested and supported by the availability of panel data for manufacturing firms in the 1990s.
+
+Publication Type:
+Journal Article
+
+Digital Object Identifier:
+http://dx.doi.org/10.1016/j.respol.2005.06.006
+
+Availability:
+http://www.elsevier.com/wps/find/journaldescription.cws_home/505598/description#description
+
+Update Code:
+200606
+
+Accession Number:
+0850239
+
+Database: 
+EconLit
+
+Record: 20
+Title:
+Decentralization and International Tax Competition (reason for exclusion: not FDI spillover regressions)
+
+Author:
+Wilson, John Douglas; Janeba, Eckhard
+
+Author Affiliation:
+MI State U; U Mannheim
+
+Source:
+Journal of Public Economics, July 2005, v. 89, iss. 7, pp. 1211-29
+
+Publication Date:
+July 2005
+
+Abstract:
+This paper models tax competition between two countries that are divided into regions. In the first stage of the game, the strategy variable for each country is the division of a continuum of public goods between central and regional government provision. In the second stage, the central and regional governments choose their tax rates on capital. A country's decentralization level serves as a strategic tool through its influence on the mix of horizontal and vertical externalities that exists under tax competition. In contrast to standard tax competition models, decentralizing the provision of public goods may improve welfare.
+
+Publication Type:
+Journal Article
+
+Digital Object Identifier:
+http://dx.doi.org/10.1016/j.jpubeco.2004.08.005
+
+Availability:
+http://www.elsevier.com/locate/inca/505578/
+
+Update Code:
+200508
+
+Accession Number:
+0789508
+
+Database: 
+EconLit
+
+Record: 21
+Title:
+Distribution Keiretsu, Foreign Direct Investment, and Import Penetration in Japan (reason for exclusion: not FDI spillover regressions)
+
+Author:
+Flath, David
+
+Author Affiliation:
+NC State U
+
+Source:
+Japanese Economy, Summer 2005, v. 33, iss. 2, pp. 26-53
+
+Publication Date:
+Summer 2005
+
+Abstract:
+Directed marketing channels--known in Japan as distribution keiretsu--are more likely than others to be headed by a primary wholesaler that is vertically integrated with the manufacturer, which for foreign manufacturers entails their directly investing in Japan-based wholesale subsidiaries. I support this statement with empirical evidence and theoretical reasoning. Briefly stated, vertical integration better aligns the noncontractible wholesaler effort levels with the manufacturer's profit, but necessarily forgoes the inherent advantage of an independent wholesaler at market-widening efforts. This establishes a trade-off bearing on the decision to vertically integrate. Where market-widening efforts complicate the resolution of retail externalities, it can be better to forgo market-widening efforts altogether and instead focus exclusively on resolving the externalities, vertically integrating with the wholesaler in order to better administer a distribution keiretsu.
+
+Publication Type:
+Journal Article
+
+Availability:
+http://www.mesharpe.com/mall/results1.asp?ACR=JES
+
+Update Code:
+200609
+
+Accession Number:
+0863456
+
+Database: 
+EconLit
+
+Full Text Database: 
+
+Record: 23
+Title:
+Recent Location of Foreign-Owned Research and Development Activities by Large Multinational Corporations in the European Regions: The Role of Spillovers and Externalities (reason for exclusion: location, not productivity)
+
+Author:
+Cantwell, John; Piscitello, Lucia
+
+Author Affiliation:
+Rutgers U and U Reading; Polytechnic of Milan and U Reading
+
+Source:
+Regional Studies, February 2005, v. 39, iss. 1, pp. 1-16
+
+Publication Date:
+February 2005
+
+Abstract:
+This paper examines the role of spillovers and externalities in influencing the recent siting of foreign-owned research and development activities in European regions. In accordance with the literature on knowledge creation in multinational corporations, the location of foreign-owned research tends to agglomerate depending upon the potential for the following different sources of spillovers and externalities: (1) intra-industry spillovers or specialization externalities associated with the presence of a wide-ranging collection of firms active in the same sector; (2) inter-industry spillovers or diversity externalities associated with the co-presence of firms working in different fields; and (3) science-technology spillovers and externalities stemming from the presence of a munificent scientific and educational infrastructure. Additionally, benefits from spillovers decline with distance, but this holds especially for intra- and inter-industry spillovers.
+
+Publication Type:
+Journal Article
+
+Availability:
+http://www.tandf.co.uk/journals/titles/00343404.asp
+
+Update Code:
+200505
+
+Accession Number:
+0774655
+
+Database: 
+EconLit
+
+Full Text Database: 
+
+Record: 24
+Title:
+Does Foreign Direct Investment Promote Development? (reason for exclusion: not FDI spillover regressions)
+
+Author:
+Moran, Theodore H.; Graham, Edward M.; Blomstrom, Magnus, eds.
+
+Source:
+2005, pp. xiv, 411
+
+Publisher Information:
+Washington, D.C.: Institute for International Economics; Washington, D.C.: Center for Global Development
+
+Publication Date:
+2005
+
+Abstract:
+Twelve papers, from an Institute of International Economics conference held in April 2004, explore the impact of foreign direct investment on development, presenting new measurements and results, and implications for policy. Papers discuss the impact of inward FDI on host countries; firm perceptions of FDI spillover effects; FDI, externalities, and the case for public intervention; R&D activities of foreign and national establishments in Turkish manufacturing; alternative means of assessing the impact of multinationals on local economic development; multinational firms and backward linkages; whether FDI accelerates economic growth; inappropriate pooling of wealthy and poor countries in empirical FDI studies; whether multinational corporations (MNCs) that are organized to trade intrafirm in development countries operate differently from MNCs with little or not intrafirm trade; the use of industry case studies to make reliable generalizations about how FDI affects host country development; China's policies on FDI; and whether African skepticism of foreign capital is justified. Moran is at Georgetown University. Graham is Senior Fellow at the Institute for International Economics. Blomstrom is at the Stockholm School of Economics. Index.
+
+Publication Type:
+Book
+
+Update Code:
+200511
+
+Accession Number:
+0802781
+
+Database: 
+EconLit
+
+Record: 25
+Title:
+What Determines Technological Spillovers of Foreign Direct Investment: Evidence from China (reason for exclusion: horizontal)
+
+Author:
+Hale, Galina; Long, Cheryl
+
+Author Affiliation:
+Economic Growth Center, Yale University; Colgate University
+
+Source:
+2005, pp. 31 pages
+
+Publisher Information:
+Economic Growth Center, Yale University, Working Papers
+
+Publication Date:
+2005
+
+Abstract:
+Using the World Bank survey of 1500 firms in five Chinese cities, we study whether the presence of foreign firms produces technology spillovers on domestic firms operating in the same city and industry. We find positive spillovers for more backward firms. We analyze the channels of such spillovers and find that the transfer of technology occurs through movement of high-skilled workers from FDI firms to domestic firms as well as through network externalities among high-skilled workers. Moreover, these two channels fully account for the spillover effects we find, which demonstrate the importance of well-functioning labor market in facilitating FDI spillovers. Insofar as our results can be generalized to other countries, they reconcile conflicting evidence found in other studies.
+
+Publication Type:
+Working Paper
+
+Availability:
+http://www.econ.yale.edu/growth_pdf/cdp934.pdf
+
+Availability Note:
+Information provided in collaboration with the RePEc Project: http://repec.org
+
+Update Code:
+200605
+
+Accession Number:
+0837565
+
+Database: 
+EconLit
+
+
+Record: 28
+Title:
+Foreign Direct Investment, Vertical Integration, and Local Suppliers: Evidence from the Polish Dairy Sector (reason for exclusion: not FDI spillover regressions)
+
+Author:
+Dries, Liesbeth; Swinnen, Johan F. M.
+
+Author Affiliation:
+Catholic U Leuven; World Bank and Catholic U Leuven
+
+Source:
+World Development, September 2004, v. 32, iss. 9, pp. 1525-44
+
+Publication Date:
+September 2004
+
+Abstract:
+Studies argue that foreign investment has negative implications for small local suppliers, as they cannot comply with higher standards or they are laid off to reduce transaction costs. We analyze the impact of FDI in the Polish dairy sector, a sector dominated by small suppliers and of crucial importance for poor rural households. The analysis shows that FDI does not cause a rapid consolidation of the supply base. Instead, foreign companies introduce farm assistance programs to overcome market imperfections. Through vertical and horizontal spillover effects, this leads to improved access to finance, increased investments, product quality improvements, and growth of small local suppliers.
+
+Publication Type:
+Journal Article
+
+Digital Object Identifier:
+http://dx.doi.org/10.1016/j.worlddev.2004.05.004
+
+Availability:
+http://www.elsevier.com/wps/find/journaldescription.cws_home/386/description#description
+
+Update Code:
+200411
+
+Accession Number:
+0752494
+
+Database: 
+EconLit
+
+Record: 29
+Title:
+Localized Spillovers in the Polish Food Industry: The Role of FDI in the Development Process? (reason for exclusion: horizontal)
+
+Author:
+Jensen, Camilla
+
+Author Affiliation:
+Centre for East European Studies, Copenhagen Business School
+
+Source:
+Regional Studies, July 2004, v. 38, iss. 5, pp. 535-50
+
+Publication Date:
+July 2004
+
+Abstract:
+The paper aims to investigate whether there are spillovers and agglomeration effects in the Polish food industry. This part of the research focuses on horizontal or inter-industry types of spillovers assuming that they may be multidirectional and could be based on any kind of community related to geography, industry affiliation and ownership. In the transition countries that have opened up to foreign direct investment very recently, ownership can be an important determinant of the firm's embeddedness in both local and global networks. The study confirms the relevance of all three types of "community" factors bur raises concerns that foreign investors appear to share their own "glocal" networks, while spillovers among domestic firms are confined to their own and also to highly localized producer communities. An F-test on the appropriateness of pooling confirms the idea that regional policy may have increased the likelihood of segregation.
+
+Publication Type:
+Journal Article
+
+Availability:
+http://www.tandf.co.uk/journals/titles/00343404.asp
+
+Update Code:
+200409
+
+Accession Number:
+0744068
+
+Database: 
+EconLit
+
+Full Text Database: 
+
+Record: 31
+Title:
+Multinationals and Linkages: An Empirical Investigation (reason for exclusion: linkages potential, not spillovers to productivity)
+
+Author:
+Alfaro, Laura; Rodriguez-Clare, Andres
+
+Author Affiliation:
+Harvard U; Inter-American Development Bank
+
+Source:
+Economia: Journal of the Latin American and Caribbean Economic Association, Spring 2004, v. 4, iss. 2, pp. 113-56
+
+Publication Date:
+Spring 2004
+
+Abstract:
+Several recent papers have used plant-level data and panel econometric techniques to carefully explore the existence of externalities associated with foreign direct investment (FDI). One conclusion that emerges from this literature is that it is difficult to find evidence of positive externalities from multinationals to local firms in the same sector (horizontal externalities). Many studies find evidence of negative horizontal externalities arising from multinational activity, while confirming the existence of positive externalities from multinationals to local firms in upstream industries (vertical externalities). In this paper, we explore the channels through which these positive and negative externalities may materialize, focusing on the role of backward linkages. We criticize the common usage of the domestic sourcing coefficient as an indicator of a firm's linkage potential and propose an alternative, theoretically derived indicator. We then use plant-level data from several Latin American countries to compare multinationals' linkage potential to that of domestic firms. We find that linkage potential of multinationals is higher than that of domestic firms in Brazil, Chile, and Venezuela. For Mexico, we cannot reject the hypothesis that foreign and local firms have similar linkage potential. Finally, we discuss the relationship between this finding and the conclusions that emerge from the recent empirical literature.
+
+Publication Type:
+Journal Article
+
+Availability Note:
+http://www.brookings.edu/press/journals.htm#economia
+
+Update Code:
+200505
+
+Accession Number:
+0772854
+
+Database: 
+EconLit
+
+Full Text Database: 
+
+Record: 32
+Title:
+Spillover Effects of FDI on Innovation in China: Evidence from the Provincial Data (reason for exclusion: patents, not productivity)
+
+Author:
+Cheung, Kui-yin; Lin, Ping
+
+Author Affiliation:
+Lingnan U; Lingnan U
+
+Source:
+China Economic Review, 2004, v. 15, iss. 1, pp. 25-44
+
+Publication Date:
+2004
+
+Abstract:
+Foreign direct investment (FDI) can benefit innovation activity in the host country via spillover channels such as reverse engineering, skilled labor turnovers, demonstration effects, and supplier-customer relationships. Using provincial data from 1995 to 2000, we find positive effects of FDI on the number of domestic patent applications in China. This finding is robust under both pooled time-series and cross-section data estimation and panel data analysis and for different types of patent applications (invention, utility model, and external design). The spillover effect is the strongest for minor innovation such as external design patent, highlighting a "demonstration effect" of FDI.
+
+Publication Type:
+Journal Article
+
+Digital Object Identifier:
+http://dx.doi.org/10.1016/S1043-951X(03)00027-0
+
+Availability:
+http://www.elsevier.com/wps/find/journaldescription.cws_home/620160/description#description
+
+Update Code:
+200405
+
+Accession Number:
+0727786
+
+Database: 
+EconLit
+
+Record: 36
+Title:
+Impacts of R and D, exports and FDI on productivity in Chinese manufacturing firms (reason for exclusion: similar version already included)
+
+Author:
+Wei, Yingqi; Liu, Xiaming
+
+Author Affiliation:
+Unlisted; Unlisted
+
+Source:
+2004
+
+Publisher Information:
+Lancaster University Management School, Economics Department, Working Papers: 000246
+
+Publication Date:
+2004
+
+Abstract:
+This paper assesses the impacts of R&D, export and the presence of foreign direct investment (FDI) on Chinese manufacturing productivity based on a panel data on more than 10,000 indigenous and foreign-invested firms for the period 1998-2001. Indigenous Chinese firms are found to significantly benefit from their own export activities and R&D spillovers. Given some specific characteristics of China as a transition economy, OECD invested firms produce strong negative intra-industry spillovers on indigenous Chinese firms across regions but strong positive intra- and inter-industry spillovers within the same regions. Overseas Chinese firms from Hong Kong, Macao and Taiwan exert positive intra-industry productivity spillovers only. The robustness analysis suggests that different measures of FDI could lead to different results. Our findings have important implications for both business managers and policy makers.
+
+Publication Type:
+Working Paper
+
+Availability:
+http://www.lums.lancs.ac.uk/publications/viewpdf/000246/
+
+Availability Note:
+Information provided in collaboration with the RePEc Project: http://repec.org
+
+Update Code:
+200905
+
+Accession Number:
+1033536
+
+Database: 
+EconLit
+
+Record: 37
+Title:
+Vertical Foreign Direct Investment, Knowledge Spillovers and the Global Growth: Theory and Evidence (reason for exclusion: not FDI spillover regressions)
+
+Author:
+He, Yin
+
+Source:
+2004
+
+Publisher Information:
+University of Colorado
+
+Publication Date:
+2004
+
+Publication Type:
+Dissertation
+
+Update Code:
+200511
+
+Accession Number:
+0802314
+
+Database: 
+EconLit
+
+Record: 38
+Title:
+Home Country Employment and Foreign Direct Investment: Evidence from the Italian Case (reason for exclusion: employment, not productivity)
+
+Author:
+Mariotti, Sergio; Mutinelli, Marco; Piscitello, Lucia
+
+Author Affiliation:
+Politecnico di Milano; U Brescia; Politecnico di Milano
+
+Source:
+Cambridge Journal of Economics, May 2003, v. 27, iss. 3, pp. 419-31
+
+Publication Date:
+May 2003
+
+Abstract:
+The present paper provides further insights on the relationship between home country employment and foreign direct investment (FDI) undertaken by national firms. The unit of analysis is each ensemble of firms operating in the same industrial sector and localised in the same geographical region. That allows us to capture both direct and indirect effects of foreign production on the parent's environment, which arise through the generation of linkages and externalities. Empirical evidence has been provided with reference to the Italian case in the decade 1985-95. Results suggest that the impact of outward FDI on the labour intensity of domestic production is negative in the case of vertical investment undertaken--especially by smaller firms--in less developed countries, and positive for horizontal and market-seeking investments in advanced countries.
+
+Publication Type:
+Journal Article
+
+Availability:
+http://cje.oxfordjournals.org/
+
+Update Code:
+200307
+
+Accession Number:
+0652025
+
+Database: 
+EconLit
+
+Record: 39
+Title:
+Foreign Manufacturing Investment in the United Kingdom and the Upgrading of Supplier Practices (reason for exclusion: no empirical estimates)
+
+Author:
+Potter, Jonathan; Moore, Barry; Spires, Rod
+
+Author Affiliation:
+OECD; U Cambridge; Public & Corporate Econ Consultants, Cambridge, UK
+
+Source:
+Regional Studies, February 2003, v. 37, iss. 1, pp. 41-60
+
+Publication Date:
+February 2003
+
+Abstract:
+This paper shows that the practices and competitiveness of UK suppliers have been improved by inward foreign manufacturing investment. Greenfield, large and North American or European investors were the most likely to have such impacts, particularly on their manufacturing suppliers. Benefits were transmitted through a mix of passive mechanisms, such as contractual arrangements, and active mechanisms, such as supplier visits. Regional policymakers should recognize the impacts on supplier upgrading when justifying foreign investment attraction and embedding initiatives. However, they should also recognize that there are some barriers to direct intervention in spillover processes.
+
+Publication Type:
+Journal Article
+
+Availability:
+http://www.tandf.co.uk/journals/titles/00343404.asp
+
+Update Code:
+200304
+
+Accession Number:
+0638486
+
+Database: 
+EconLit
+
+Full Text Database: 
+
+Record: 42
+Title:
+Location of R&D and High-Tech Production by Vertically-Integrated Multinationals (reason for exclusion: R&D, not productivity)
+
+Author:
+Ekholm, Karolina; Hakkala, Katarina
+
+Author Affiliation:
+Unlisted; Unlisted
+
+Source:
+2003
+
+Publisher Information:
+C.E.P.R. Discussion Papers, CEPR Discussion Papers: 4078
+
+Publication Date:
+2003
+
+Abstract:
+We develop a two-country general equilibrium model where firms make separate choices about the location of R&D and high-tech production. There are two agglomeration forces: R&D spillovers and backward linkages associated with high-tech production. The latter tends to attract production to the larger economy. We show that, for relatively weak R&D spillovers and intermediate trade costs, the smaller economy tends to specialize in R&D. For certain parameterizations, both concentration and dispersion of R&D activities are possible outcomes. Hosting an agglomeration of R&D activities does not necessarily lead to welfare gains.
+
+Publication Type:
+Working Paper
+
+Availability:
+http://www.cepr.org/pubs/dps/DP4078.asp
+
+Availability Note:
+Information provided in collaboration with the RePEc Project: http://repec.org
+
+Update Code:
+200404
+
+Accession Number:
+0695341
+
+Database: 
+EconLit
+
+Record: 44
+Title:
+Trade Liberalization, Firm Performance, and Labor Market Outcomes in the Developing World: What Can We Learn from Micro-Level Data? (reason for exclusion: no empirical estimates)
+
+Author:
+Epifani, Paolo
+
+Author Affiliation:
+Unlisted
+
+Source:
+2003
+
+Publisher Information:
+The World Bank, Policy Research Working Paper Series: 3063
+
+Publication Date:
+2003
+
+Abstract:
+Epifani reviews the micro-level evidence on the effects of trade and investment liberalization in the developing world. He focuses, in particular, on the effects of the 1991 trade reform in India since it provides an excellent controlled experiment in which the effects of a drastic trade regime change can be measured. His main findings are: There is evidence of trade-induced productivity gains (in this respect, however, India is an exception). These gains mainly stem from intra-industry reallocation of resources among firms with different productivity levels. The gains are larger in import-competing sectors. There is no evidence of significant scale efficiency gains. Unilateral trade liberalization is often associated with a reduced scale efficiency. There is evidence of a pro-competitive effect of trade liberalization. There is no evidence either of learning-by-exporting effects or of beneficial spillover effects from foreign-owned to local firms active in the same sectors. There is evidence, however, of positive vertical spillovers from foreign direct investment. There is evidence of skill upgrading induced either by technology imports or by trade-induced reallocations of market shares in favor of plants with higher skill-intensity. There is no evidence of trade-induced increases in labor demand elasticities. But direct evidence suggests that trade exposure raises wage volatility. There is no evidence of substantial employment contraction in import-competing sectors. This paper--a product of Trade, Development Research Group--is part of a larger effort in the group to assess the impact of trade and investment liberalization in developing countries.
+
+Publication Type:
+Working Paper
+
+Availability:
+http://econ.worldbank.org/files/26997_wps3063.pdf
+
+Availability Note:
+Information provided in collaboration with the RePEc Project: http://repec.org
+
+Update Code:
+200410
+
+Accession Number:
+0749064
+
+Database: 
+EconLit
+
+Record: 45
+Title:
+Role of Transnational Corporations in the Evolution of a High-Tech Industry: The Case of India's Software Industry (reason for exclusion: not spillovers)
+
+Author:
+Patibandla, Murali; Petersen, Bent
+
+Author Affiliation:
+Copenhagen Business School; Copenhagen Business School
+
+Source:
+World Development, September 2002, v. 30, iss. 9, pp. 1561-77
+
+Publication Date:
+September 2002
+
+Abstract:
+India's software industry presents the case of an internationally competitive high-tech industry from a developing economy. This paper takes the evolution of the industry in terms of human capital accumulation. The initial stock of human capital leads to entry of transnational corporations (TNC), which triggers a cumulative process of further human capital accumulation through a process of externalities (spillovers) governed by firm-level and market structure dynamics. Spillovers from TNC operations are more effective when TNCs operate at higher end of technology and build backward linkages with local firms and institutions in a developing economy. The empirical exercises, based on the analysis of qualitative information collected through field interviews and econometric analysis of firm-level panel data, provide evidence of the positive contribution of TNCs for the evolution of the industry.
+
+Publication Type:
+Journal Article
+
+Availability:
+http://www.elsevier.com/wps/find/journaldescription.cws_home/386/description#description
+
+Update Code:
+200301
+
+Accession Number:
+0632116
+
+Database: 
+EconLit
+
+Record: 46
+Title:
+The Wider Effects of Inward Foreign Direct Investment in Manufacturing on UK Industry (reason for exclusion: no econometric analysis)
+
+Author:
+Potter, Jonathan; Moore, Barry; Spires, Rod
+
+Author Affiliation:
+OECD; U Cambridge; Public & Corporate Econ Consultants, Cambridge, UK
+
+Source:
+Journal of Economic Geography, July 2002, v. 2, iss. 3, pp. 279-310
+
+Publication Date:
+July 2002
+
+Abstract:
+This paper examines the wider effects of inward foreign direct investment (FDI) to the UK on improving the practices and competitiveness of domestic industry. Surveyed domestic suppliers, competitors, and customers to foreign investors reported extensive positive impacts on their practices, focused particularly on reductions in X-inefficiencies, and on their competitiveness, although in the case of competitors benefits had to be balanced against adverse effects. Knowledge transfers through personal contacts and the demonstration effect, were important to the transmission of impacts, but a number of other channels were also important, including additional supplier sales, improved customer inputs, and the competitive spur. Regional policymakers should take these wider benefits into account in the design of policies for attracting and embedding foreign investment. However, whilst there was no evidence that foreign firms in assisted regions had fewer benefits than those in core regions, there was a lot of leakage outside of the areas attracting foreign firms, suggesting that policies to promote spillovers should not be developed entirely in a local or regional framework.
+
+Publication Type:
+Journal Article
+
+Availability:
+http://joeg.oxfordjournals.org/
+
+Update Code:
+200212
+
+Accession Number:
+0628503
+
+Database: 
+EconLit
+
+Record: 47
+Title:
+Do Multinational Enterprises Affect Domestic Firms' Productivity? (reason for exclusion: not vertical spillovers)
+
+Author:
+Imbriani, Cesare; Reganati, Filippo
+
+Author Affiliation:
+Instituto di Econ e Finanza, U Rome 'La Sapienza'; U Foggia
+
+Source:
+Studi Economici, 2002, v. 57, iss. 78, pp. 5-18
+
+Publication Date:
+2002
+
+Abstract:
+This work examines the main theoretical and empirical interpretations of the effects of FDI on the productivity of local firms and, in particular, the way in which productivity spillovers are related to inter or intra regional differences. In studying the Italian manufacturing sector, using cross-sectional data, we found that the stronger presence of multinational enterprises increased the level of domestic productivity, but productivity spillovers were concentrated only in the north-western area of Italy. This indicates not only the existence of a geographic component in the spillovers from FDI but also the peculiarity of Italian manufacturing structure, where different models of production, such as the "network enterprise model" in the Northwest, the "industrial district model" in the Northeast and the "backward model" in the South, coexist.
+
+Publication Type:
+Journal Article
+
+Availability:
+http://www.francoangeli.it/riviste/sommario.asp?anno=2004&idRivista=59
+
+Update Code:
+200309
+
+Accession Number:
+0661596
+
+Database: 
+EconLit
+
+Record: 50
+Title:
+Parental supervision: The new paradigm for foreign direct investment and development (reason for exclusion: no empirical estimates)
+
+Author:
+Moran, Theodore H.
+
+Source:
+2001, pp. xiii, 80
+
+Publisher Information:
+Washington, D.C.: Institute for International Economics
+
+Publication Date:
+2001
+
+Abstract:
+Compares the benefits of two classes of foreign direct investment (FDI) to host developing countries: operations that fit into the product-cycle model of tight control and supervision by the parent company; and investments with domestic-content, joint venture, and technology-sharing mandates imposed by the host. Studies cases of each type of FDI, exploring the operations of the local affiliates, the backward linkages to domestic suppliers, and the spillovers and externalities to the host economy. Discusses the implications of the case study findings for efforts to measure the impact of FDI on development. Presents policy implications for host countries. Moran holds the Marcus Wallenburg Chair at the Walsh School of Foreign Service, Georgetown University. Index.
+
+Publication Type:
+Book
+
+Update Code:
+200202
+
+Accession Number:
+0594122
+
+Database: 
+EconLit
+
+Record: 1
+Title:
+Economies of Scale in European Manufacturing Revisited (reason for exclusion: not FDI spillover regressions)
+
+Author:
+Henriksen, Espen; Midelfart, Karen-Helene; Steen, Frode
+
+Author Affiliation:
+Unlisted; Unlisted; Unlisted
+
+Source:
+2001
+
+Publisher Information:
+C.E.P.R. Discussion Papers, CEPR Discussion Papers: 2896
+
+Publication Date:
+2001
+
+Abstract:
+We test for internal and external economies of scale in European manufacturing, employing a more disaggregated data set than has been used in earlier analyses. We aim to separate externalities from common business cycle effects. Fifteen European manufacturing industries in Germany, France, the UK and Italy are analysed. We focus on economies of scale at three levels: the national industry, the national industrial cluster and the transnational industry. Our results suggest that external economies of scale arising from inter-industry external effects and cross-country effects are less prevalent than increasing returns at the level of the industry and firm. Our results underscore the importance of the level of disaggregation in studies of internal and external economies of scale and argue that the external effects are highly country and industry specific.
+
+Publication Type:
+Working Paper
+
+Availability:
+http://www.cepr.org/pubs/dps/DP2896.asp
+
+Availability Note:
+Information provided in collaboration with the RePEc Project: http://repec.org
+
+Update Code:
+200404
+
+Accession Number:
+0694157
+
+Database: 
+EconLit
+
+
+Record: 3
+Title:
+Transnational Corporations, Industrial Policy and the 'War of Incentives': The Case of the Argentine Automobile Industry (reason for exclusion: not FDI spillover regressions)
+
+Author:
+Miozzo, Marcela
+
+Author Affiliation:
+UMIST
+
+Source:
+Development and Change, June 2000, v. 31, iss. 3, pp. 651-80
+
+Publication Date:
+June 2000
+
+Abstract:
+In the context of intensified internationalization of production, automobile firms in Argentina face a profoundly different structure of incentives to the prior decades of import substitution industrialization. Recent policies in the Argentine auto industry have been aimed at a recovery through a reorientation towards exports. Two initiatives set the context for changes during the 1990s: an industry-government-labour agreement and the implementation of a commercial partnership with Brazil. The dramatic recovery of the sector is an apparent validation of the policies implemented. This article questions this recovery by drawing on case-study work at a number of auto plants and components suppliers. The effects of these policies on changes in the structure of production and industry and on externalities supporting domestic firms are examined. Lessons are drawn for the role of government policy in supporting the contribution of transnational corporations to domestic technological and organizational development.
+
+Publication Type:
+Journal Article
+
+Availability:
+http://www.blackwellpublishing.com/journal.asp?ref=0012-155X
+
+Update Code:
+200008
+
+Accession Number:
+0529854
+
+Database: 
+EconLit
+
+Full Text Database: 
+
+Record: 4
+Title:
+R&D, Interindustry and International Technology Spillovers and the Total Factor Productivity Growth of Manufacturing Industries in Canada, 1974-1989 (reason for exclusion: R&D, not productivity spillovers)
+
+Author:
+Hanel, Petr
+
+Author Affiliation:
+U Sherbrooke
+
+Source:
+Economic Systems Research, September 2000, v. 12, iss. 3, pp. 345-61
+
+Publication Date:
+September 2000
+
+Abstract:
+The paper presents new econometric evidence on the relationship between total factor productivity growth and the R&D expenditures of Canadian manufacturing industries in the presence of interindustry and international spillovers of technology. In contrast to studies that presume that international spillovers are incorporated in imports of intermediate and/or capital equipment goods, the present paper assumes that the principal channel of transmission of new technology is foreign direct investment. Three original proxies for international spillovers use information on patenting, the size and the origin of foreign ownership in the host country and the R&D expenditures in the country of origin. The results suggest that the nexus between industry's own R&D expenditures and the TFP growth is significant and positive, especially for the process-related R&D. Domestic interindustry spillovers of new technology have a larger effect on TFP than industry's own R&D expenditures. All three proxies for international technology spillovers are associated positively and significantly with TFP growth. However, international spillovers contribute to TFP growth less than domestic interindustry spillovers and less than own process-related R&D.
+
+Publication Type:
+Journal Article
+
+Availability:
+http://www.tandf.co.uk/journals/titles/09535314.asp
+
+Update Code:
+200011
+
+Accession Number:
+0540308
+
+Database: 
+EconLit
+
+Full Text Database: 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
