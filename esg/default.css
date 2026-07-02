@@ -380,7 +380,8 @@ html>body #footer {
 	color: #1B75A9;
 }
 
-/* esg: distribute menu links across the full width of the blue bar */
-#menu ul { display: flex; justify-content: space-between; align-items: baseline; width: 100%; box-sizing: border-box; padding: 23px 25px 0 25px; }
-#menu li { float: none; }
-#menu li:last-child a { background: none; }
+/* esg: equal-width menu fields, labels centered, divider between fields */
+#menu ul { display: flex; width: 100%; box-sizing: border-box; padding: 23px 0 0 0; }
+#menu li { flex: 1 1 0; float: none; text-align: center; }
+#menu li + li { background: url(images/img03.jpg) no-repeat left 50%; }
+#menu a { display: block; padding: 0 8px; background: none; }
