@@ -379,3 +379,8 @@ html>body #footer {
 	font-weight: normal;
 	color: #1B75A9;
 }
+
+/* esg: distribute menu links across the full width of the blue bar */
+#menu ul { display: flex; justify-content: space-between; align-items: baseline; width: 100%; box-sizing: border-box; padding: 23px 25px 0 25px; }
+#menu li { float: none; }
+#menu li:last-child a { background: none; }
