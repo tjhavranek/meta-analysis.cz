@@ -385,3 +385,23 @@ html>body #footer {
 #menu li { flex: 1 1 0; float: none; text-align: center; }
 #menu li + li { background: url(images/img03.jpg) no-repeat left 50%; }
 #menu a { display: block; padding: 0 8px; background: none; }
+
+/* esg: mobile / narrow screens -- make the fixed-width template fluid */
+@media (max-width: 820px) {
+  body { font-size: 15px; }
+  #header, #menu, #logo, #page, #footer { width: auto; float: none; }
+  #menu { height: auto; }
+  #menu ul { flex-wrap: wrap; justify-content: center; padding: 8px 6px 6px; }
+  #menu li { flex: 0 1 auto; }
+  #menu li + li { background: none; }
+  #menu a { padding: 6px 12px; font-size: 13px; }
+  #logo { height: auto; padding: 14px 12px; }
+  #logo h1, #logo h2 { float: none; padding: 0; line-height: 1.2; }
+  #logo h1 { font-size: 26px; }
+  #logo h2 { font-size: 15px; padding-top: 2px; }
+  #content { float: none; width: auto; border-right: none; }
+  #sidebar { float: none; width: auto; }
+  .post { padding: 0 14px; }
+  .post h1, .post h2, #sidebar h2 { width: auto; }
+  #content img { max-width: 100%; height: auto; }
+}
