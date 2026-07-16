@@ -3,7 +3,7 @@
   "project": "activism",
   "title": "Does Shareholder Activism Create Value? A Meta-Analysis",
   "abstract": "We conduct a meta-analysis of 1,973 estimates of stock price responses to shareholder activism reported in 67 primary studies. We document publication bias in the literature. Corrected activism effects range from 0% to 1.5%. Effects are stronger when shareholder rights are better protected and when stock markets are smaller. Markets respond more positively to activism by individual investors, confrontational activism, and activism aimed at company sale. Estimates based on longer periods, simpler risk-adjustment approaches, more recent and longer datasets, as well as those published in more reputable journals tend to be larger.",
-  "reference_line": "Bajzik Josef, Havranek Tomas, Irsova Zuzana, Jiri Novak (2025), \"Does Shareholder Activism Create Value? A Meta-Analysis.\" Corporate Governance: An International Review 33(5): 1039-1061.",
+  "reference_line": "Josef Bajzik, Tomas Havranek, Zuzana Irsova, Jiri Novak (2025), \"Does Shareholder Activism Create Value? A Meta-Analysis.\" Corporate Governance: An International Review 33(5): 1039-1061.",
   "authors": [
    "Josef Bajzik",
    "Tomas Havranek",
@@ -43,7 +43,7 @@
   "project": "alphas",
   "title": "What Matters in Explaining the Variation in Hedge Fund Performance? A Meta-Analysis",
   "abstract": "We examine the ability of 34 variables to explain the variation in reported estimates of hedge fund performance. Using 1,019 estimates collected from 74 empirical studies, we identify 9 consistently relevant variables. We also quantify the impact of management and performance fees. Synthesizing this extensive empirical evidence, we show that when considering the fees and the variation in research designs, current performance implied by the best practice methodology is close to zero for all common hedge fund strategies. Our paper helps evaluate the robustness of prior propositions on hedge fund performance and reconcile some seemingly contradictory findings.",
-  "reference_line": "Fan Yang, Havranek Tomas, Irsova Zuzana, and Jiri Novak (2026), \"What Matters in Explaining the Variation in Hedge Fund Performance?\" Charles University, Prague. Available at meta-analysis.cz/alphas.",
+  "reference_line": "Fan Yang, Tomas Havranek, Zuzana Irsova, and Jiri Novak (2026), \"What Matters in Explaining the Variation in Hedge Fund Performance?\" Charles University, Prague. Available at meta-analysis.cz/alphas.",
   "authors": [
    "Fan Yang",
    "Tomas Havranek",
@@ -248,7 +248,7 @@
   "project": "class",
   "title": "Class Size and Student Achievement: A Meta-Analysis",
   "abstract": "Class size reduction mandates are routinely justified by studies reporting positive effects on student achievement. Yet other studies report no effects, and the literature as a whole awaits correction for potential publication bias. Moreover, if identification drives results systematically, the relevance of individual studies will vary. We build a sample of 2,819 estimates collected from 66 studies and for each estimate classify 42 factors that reflect estimation context. We employ nonlinear techniques for publication bias correction and model averaging techniques to address model uncertainty. The results are consistent with little publication bias. The implied class size effect is negligible for all identification approaches except Tennessee's Student/Teacher Achievement Ratio project and for all contexts except classes of fewer than 15 students.",
-  "reference_line": "Opatrny Matej, Havranek Tomas, Irsova Zuzana, Milan Scasny (2025), \"Publication Bias and Model Uncertainty in Measuring the Effect of Class Size on Achievement.\" Journal of Labor Economics.",
+  "reference_line": "Matej Opatrny, Tomas Havranek, Zuzana Irsova, Milan Scasny (2025), \"Publication Bias and Model Uncertainty in Measuring the Effect of Class Size on Achievement.\" Journal of Labor Economics.",
   "authors": [
    "Matej Opatrny",
    "Tomas Havranek",
@@ -1012,7 +1012,7 @@
   "project": "incentives",
   "title": "Financial Incentives and Performance: A Meta-Analysis of Experiments in Economics",
   "abstract": "Economists typically model financial incentives as enhancing performance, whereas psychologists emphasize that incentives can backfire. Experimental findings are mixed. We collect 2,193 estimates from 88 economics experiments and account for 48 contextual factors. Using recent advances in correcting for publication bias and p-hacking, we find that the corrected mean effect of financial incentives on performance is close to zero across most field contexts. Laboratory settings and loss framing yield statistically significant but modest positive effects even after bias correction. Our results suggest that increasing financial rewards rarely produces large performance gains in the experimental settings most studied by economists.",
-  "reference_line": "Cala Petr, Havranek Tomas, Irsova Zuzana, Luskova Martina, Matousek Jindrich, and Jiri Novak (2026), \"Financial Incentives and Performance: A Meta-Analysis of Experiments in Economics.\" Journal of Political Economy Microeconomics, forthcoming.",
+  "reference_line": "Petr Cala, Tomas Havranek, Zuzana Irsova, Martina Luskova, Jindrich Matousek, and Jiri Novak (2026), \"Financial Incentives and Performance: A Meta-Analysis of Experiments in Economics.\" Journal of Political Economy Microeconomics, forthcoming.",
   "authors": [
    "Petr Cala",
    "Tomas Havranek",
@@ -1058,7 +1058,7 @@
   "project": "inflation",
   "title": "Optimal Inflation Rate: A Meta-Analysis",
   "abstract": "We revisit the optimal long-run inflation rate using 777 estimates from 116 primary studies published between 1989 and 2026, the largest sample assembled to date. To our knowledge, this is among the first meta-analyses in economics whose primary-data extraction is performed end-to-end through a documented and auditable large-language-model pipeline, calibrated against a hand-coded training set and released for replication. Across publication-selection and selection-on-significance diagnostics that are applicable in this calibration-dominated corpus, the literature points to an optimum of roughly 0.6 percentage points per year, well below the two-percent targets commonly used by advanced-economy central banks. Bayesian model averaging over the full structural-moderator schema shows that cross-study variation is driven by genuine modelling choices, the choice of monetary benchmark (Friedman rule vs. laissez-faire), the transactions-frictions technology, the assumed shock structure, and the class of nominal-rigidity contract, rather than by selective reporting.",
-  "reference_line": "Opatrny Matej, Opatrny Martin, Havranek Tomas, Irsova Zuzana, Hampl Mojmir (2026), \"Optimal Inflation Rate: A Meta-Analysis.\" Charles University, Prague. Available at meta-analysis.cz/inflation.",
+  "reference_line": "Matej Opatrny, Martin Opatrny, Tomas Havranek, Zuzana Irsova, Mojmir Hampl (2026), \"Optimal Inflation Rate: A Meta-Analysis.\" Charles University, Prague. Available at meta-analysis.cz/inflation.",
   "authors": [
    "Matej Opatrny",
    "Martin Opatrny",
@@ -1142,7 +1142,7 @@
   "project": "learning",
   "title": "Publication Bias and P-Hacking in the Effect of COVID-19 on Learning: A Meta-Analysis",
   "abstract": "We revisit a central estimate in the economics of education: the human-capital loss associated with COVID-19 school closures. Estimates of pandemic learning loss may be affected by publication bias, p-hacking, and the mechanical correlation between standardized effect sizes and their standard errors. We conduct a comprehensive multi-method assessment of bias by applying a wide range of correction techniques — including PET-PEESE, three-parameter selection models (3PSM), Robust Bayesian Meta-Analysis (RoBMA), Meta-Analysis Instrumental Variable Estimation (MAIVE), Right-Truncated Meta-Analysis (RTMA), and multi-bias sensitivity analysis. Our preferred specifications, RoBMA and MAIVE, rely on different assumptions yet converge on an effect size of approximately −0.12 SD, equivalent to a learning loss of about 30% of a school year. Although some methods reveal signs of publication bias and selective reporting, these findings do not explain away the central finding: the COVID-19 learning deficit is economically meaningful and statistically robust.",
-  "reference_line": "Luskova Martina, Buliskeria Nino, Elminejad Ali, Havranek Tomas, Irsova Zuzana, Jurajda Stepan, Kapicka Marek (2026), “Publication Bias and P-Hacking in the Effect of COVID-19 on Learning.” Charles University, Prague. Available at meta-analysis.cz/learning.",
+  "reference_line": "Martina Luskova, Nino Buliskeria, Ali Elminejad, Tomas Havranek, Zuzana Irsova, Stepan Jurajda, Marek Kapicka (2026), “Publication Bias and P-Hacking in the Effect of COVID-19 on Learning.” Charles University, Prague. Available at meta-analysis.cz/learning.",
   "authors": [
    "Martina Luskova",
    "Nino Buliskeria",
@@ -1189,7 +1189,7 @@
   "project": "maive",
   "title": "Meta-Analysis Instrumental Variable Estimator",
   "abstract": "Meta-analysis upweights studies reporting lower standard errors and hence more precision. But in observational settings common to much research on human behavior, precision is not given to the researcher. Precision must be estimated, and thus can be p-hacked to achieve statistical significance. Simulations and large-scale empirical applications show that spurious precision can invalidate inverse-variance weighting and bias-correction methods based on the funnel plot. Selection models fail to solve the problem, and common cures to publication bias can become worse than the disease. We introduce an approach (Meta-Analysis Instrumental Variable Estimator, MAIVE) that addresses spurious precision and limits the resulting bias in meta-analysis.",
-  "reference_line": "Irsova Z., Bom P. R. D., Havranek T., and H. Rachinger (2025): \"Spurious Precision in Meta-Analysis of Observational Research.\" Nature Commun 16, 8454. doi.org/10.1038/s41467-025-63261-0",
+  "reference_line": "Zuzana Irsova, Pedro Bom, Tomas Havranek, and Heiko Rachinger (2025): \"Spurious Precision in Meta-Analysis of Observational Research.\" Nature Commun 16, 8454. doi.org/10.1038/s41467-025-63261-0",
   "authors": [
    "Zuzana Irsova",
    "Pedro Bom",
@@ -1249,7 +1249,7 @@
   "project": "migrant",
   "title": "The Elasticity of Substitution between Native and Immigrant Labor: A Meta-Analysis",
   "abstract": "This paper presents the first comprehensive meta-analysis of the elasticity of substitution between native and immigrant labor. Drawing on 1,091 estimates from 41 studies, we examine the extent to which published estimates are shaped by methodological choices and publication selection bias. We find strong evidence of selective reporting: less precise estimates are systematically associated with lower reported elasticities. Correcting for these biases using a wide array of metaregression techniques raises the mean elasticity (sigma) from an uncorrected 13 to approximately 22. Model averaging techniques reveal that data features, specifically geographic scale, data granularity, and worker experience, explain much of the heterogeneity in reported results. While the choice between log(mean wage) and mean(log wage) remains a substantial driver of variation, its impact is moderated once publication bias and modeling scale are controlled for. Our \"best practice\" estimates, which prioritize the most granular data, suggest an elasticity of approximately 17 for regional models. While publication bias masks a higher potential elasticity, rigorous research designs that isolate pure substitution effects yield a stable benchmark that is more conservative than a simple bias correction yet higher than the uncorrected mean.",
-  "reference_line": "Kantova Klara, Havranek Tomas, Irsova Zuzana, Schwarz Jiri, (2026), \"The Elasticity of Substitution between Native and Immigrant Labor: A Meta-Analysis.\" Charles University, Prague. Available at meta-analysis.cz/migrant.",
+  "reference_line": "Klara Kantova, Tomas Havranek, Zuzana Irsova, Jiri Schwarz, (2026), \"The Elasticity of Substitution between Native and Immigrant Labor: A Meta-Analysis.\" Charles University, Prague. Available at meta-analysis.cz/migrant.",
   "authors": [
    "Klara Kantova",
    "Tomas Havranek",
@@ -1357,7 +1357,7 @@
   "project": "reforms",
   "title": "Structural Reforms and Economic Growth: A Meta-Analysis",
   "abstract": "The present fiscal difficulties of many countries amplify the call for structural reforms. To provide stylized facts on how such reforms have worked in the past, we quantitatively review 46 studies estimating the relation between reforms and growth. These studies examined structural reforms carried out in different transition countries around the world. Our results suggest that an average reform was costly in the short run, but had strong positive effects on the long-run growth. The findings hold even after correction for publication bias and misspecifications in some primary studies.",
-  "reference_line": "Babecky Jan & Tomas Havranek (2014), \"Structural Reforms and Growth in Transition: A Meta-Analysis.\" Economics of Transition 22(1), pp. 13-42.",
+  "reference_line": "Jan Babecky & Tomas Havranek (2014), \"Structural Reforms and Growth in Transition: A Meta-Analysis.\" Economics of Transition 22(1), pp. 13-42.",
   "authors": [
    "Jan Babecky",
    "Tomas Havranek"
@@ -1462,7 +1462,7 @@
   "project": "risk",
   "title": "Relative Risk Aversion: A Meta-Analysis",
   "abstract": "Estimates of relative risk aversion vary widely, but no study has attempted to quantitatively trace the sources of the variation. We collect 1,021 estimates from 92 studies that use the consumption Euler equation to measure relative risk aversion and that disentangle it from intertemporal substitution. We show that calibrations of risk aversion are systematically larger than estimates thereof. Moreover, reported estimates are systematically larger than the underlying risk aversion because of publication bias. After correction for the bias, the literature suggests a mean risk aversion of 1 in economics and 2-7 in finance contexts. The reported estimates are driven by the characteristics of data (frequency, dimension, country, stockholding) and utility (functional form, treatment of durables). To obtain these results we use recently developed nonlinear techniques to correct for publication bias and Bayesian model averaging techniques to account for model uncertainty.",
-  "reference_line": "Elminejad A., Havranek T., and Z. Irsova (2025), \"Relative Risk Aversion: A Meta-Analysis.\" Journal of Economic Surveys, 39(5): 2315-2333.",
+  "reference_line": "Ali Elminejad, Tomas Havranek, and Zuzana Irsova (2025), \"Relative Risk Aversion: A Meta-Analysis.\" Journal of Economic Surveys, 39(5): 2315-2333.",
   "authors": [
    "Ali Elminejad",
    "Tomas Havranek",
@@ -1636,7 +1636,7 @@
   "project": "skill",
   "title": "Publication and Attenuation Biases in Measuring Skill Substitution",
   "abstract": "A key parameter in the analysis of wage inequality is the elasticity of substitution between skilled and unskilled labor. We show that the empirical literature is consistent with both publication and attenuation bias in the estimated inverse elasticities. Publication bias, which exaggerates the mean reported inverse elasticity, dominates and results in corrected inverse elasticities closer to zero than the typically published estimates. The implied mean elasticity is 4, with a lower bound of 2. Elasticities are smaller for developing countries. To derive these results, we use nonlinear tests for publication bias and model averaging techniques that account for model uncertainty.",
-  "reference_line": "Havranek Tomas, Zuzana Irsova, Lubica Laslopova, and Olesia Zeynalova (2024), \"Publication and Attenuation Biases in Measuring Skill Substitution.\" Review of Economics and Statistics 106 (5), 1187-1200.",
+  "reference_line": "Tomas Havranek, Zuzana Irsova, Lubica Laslopova, and Olesia Zeynalova (2024), \"Publication and Attenuation Biases in Measuring Skill Substitution.\" Review of Economics and Statistics 106 (5), 1187-1200.",
   "authors": [
    "Tomas Havranek",
    "Zuzana Irsova",
@@ -1680,7 +1680,7 @@
   "project": "spillovers",
   "title": "A Meta-Analysis of Vertical Spillovers from FDI",
   "abstract": "In the last decade, more than 100 researchers have examined productivity spillovers from foreign affiliates to local firms in upstream or downstream sectors. Yet results vary broadly across methods and countries. To examine these vertical spillovers in a systematic way, we collected 3,626 estimates of spillovers and reviewed the literature quantitatively. Our meta-analysis indicates that model misspecifications reduce the reported estimates and journals select relatively large estimates for publication. No selection, however, was found for working papers. Taking these biases into consideration, the average spillover to suppliers is economically significant, whereas the spillover to buyers is statistically significant but small. Greater spillovers are received by countries that have underdeveloped financial systems and are open to international trade. Greater spillovers are generated by investors who come from distant countries and have only a slight technological edge over local firms.",
-  "reference_line": "Havranek Tomas & Zuzana Irsova (2011), \"Estimating Vertical Spillovers from FDI: Why Results Vary and What the True Effect Is.\" Journal of International Economics, 85(2), pp. 234-244.",
+  "reference_line": "Tomas Havranek & Zuzana Irsova (2011), \"Estimating Vertical Spillovers from FDI: Why Results Vary and What the True Effect Is.\" Journal of International Economics, 85(2), pp. 234-244.",
   "authors": [
    "Tomas Havranek",
    "Zuzana Irsova"

@@ -5,7 +5,7 @@ and the social sciences (Charles University, Prague). Maintained by Tomas Havran
 
 ## Does Shareholder Activism Create Value? A Meta-Analysis
 URL: https://meta-analysis.cz/activism/
-Citation: Bajzik Josef, Havranek Tomas, Irsova Zuzana, Jiri Novak (2025), "Does Shareholder Activism Create Value? A Meta-Analysis." Corporate Governance: An International Review 33(5): 1039-1061.
+Citation: Josef Bajzik, Tomas Havranek, Zuzana Irsova, Jiri Novak (2025), "Does Shareholder Activism Create Value? A Meta-Analysis." Corporate Governance: An International Review 33(5): 1039-1061.
 Published version: https://doi.org/10.1111/corg.12637
 Paper: https://meta-analysis.cz/activism/activism2.pdf
 Appendix: https://meta-analysis.cz/activism/appendix.pdf
@@ -16,7 +16,7 @@ Abstract: We conduct a meta-analysis of 1,973 estimates of stock price responses
 
 ## What Matters in Explaining the Variation in Hedge Fund Performance? A Meta-Analysis
 URL: https://meta-analysis.cz/alphas/
-Citation: Fan Yang, Havranek Tomas, Irsova Zuzana, and Jiri Novak (2026), "What Matters in Explaining the Variation in Hedge Fund Performance?" Charles University, Prague. Available at meta-analysis.cz/alphas.
+Citation: Fan Yang, Tomas Havranek, Zuzana Irsova, and Jiri Novak (2026), "What Matters in Explaining the Variation in Hedge Fund Performance?" Charles University, Prague. Available at meta-analysis.cz/alphas.
 Paper: https://meta-analysis.cz/alphas/alphas.pdf
 Included Studies: https://meta-analysis.cz/alphas/studies.xlsx
 Data: https://meta-analysis.cz/alphas/alphas.xlsx
@@ -38,7 +38,7 @@ Abstract: A key parameter in international economics is the elasticity of substi
 
 ## Beauty and Professional Success: A Meta-Analysis
 URL: https://meta-analysis.cz/beauty/
-Citation: Irsova Zuzana, Havranek Tomas, Bortnikova Kseniya, Bartoš František (2025), "Meta-Analysis of Field Studies on Beauty and Professional Success." Charles University, Prague. Available at meta-analysis.cz/beauty.
+Citation: Zuzana Irsova, Tomas Havranek, Kseniya Bortnikova, František Bartoš (2025), "Meta-Analysis of Field Studies on Beauty and Professional Success." Charles University, Prague. Available at meta-analysis.cz/beauty.
 Paper: https://meta-analysis.cz/beauty/beauty.pdf
 Excluded Studies: https://meta-analysis.cz/beauty/excluded.xlsx
 Classification Details: https://meta-analysis.cz/beauty/classification.xlsx
@@ -72,7 +72,7 @@ Abstract: National borders reduce trade, but most estimates of the border effect
 
 ## Class Size and Student Achievement: A Meta-Analysis
 URL: https://meta-analysis.cz/class/
-Citation: Opatrny Matej, Havranek Tomas, Irsova Zuzana, Milan Scasny (2025), "Publication Bias and Model Uncertainty in Measuring the Effect of Class Size on Achievement." Journal of Labor Economics.
+Citation: Matej Opatrny, Tomas Havranek, Zuzana Irsova, Milan Scasny (2025), "Publication Bias and Model Uncertainty in Measuring the Effect of Class Size on Achievement." Journal of Labor Economics.
 Published version: https://doi.org/10.1086/737989
 Paper: https://meta-analysis.cz/class/class.pdf
 Supplement: https://meta-analysis.cz/class/appendix.pdf
@@ -116,7 +116,7 @@ Abstract: Conventional meta-analyses (both fixed and random effects) of correlat
 
 ## Does Multi-Agent Debate Improve AI Feedback on Research Papers?
 URL: https://meta-analysis.cz/debate/
-Citation: Havranek Tomas, Irsova Zuzana (2026), “Does Multi-Agent Debate Improve AI Feedback on Research Papers?” Charles University, Prague. Available at meta-analysis.cz/debate.
+Citation: Tomas Havranek, Zuzana Irsova (2026), “Does Multi-Agent Debate Improve AI Feedback on Research Papers?” Charles University, Prague. Available at meta-analysis.cz/debate.
 Paper: https://meta-analysis.cz/debate/debate.pdf
 Pre-registration: https://doi.org/10.17605/OSF.IO/E6XGW
 Online Supplement: https://osf.io/7nfyb
@@ -173,7 +173,7 @@ Abstract: I examine 2,735 estimates of the elasticity of intertemporal substitut
 
 ## Price Elasticity of Electricity Demand: A Meta-Analysis
 URL: https://meta-analysis.cz/electricity/
-Citation: Irsova Zuzana, Havranek Tomas, Kudela Peter, Kudelova Anna, Sikl Vojtech (2026), “Electricity demand has not become more price-responsive despite ninety years of technological change.” Charles University, Prague. Available at meta-analysis.cz/electricity.
+Citation: Zuzana Irsova, Tomas Havranek, Peter Kudela, Anna Kudelova, Vojtech Sikl (2026), “Electricity demand has not become more price-responsive despite ninety years of technological change.” Charles University, Prague. Available at meta-analysis.cz/electricity.
 Paper: https://meta-analysis.cz/electricity/electricity.pdf
 Replication Package: https://meta-analysis.cz/electricity/replication.zip
 Data: https://meta-analysis.cz/electricity/electricity.xlsx
@@ -184,7 +184,7 @@ Abstract: Energy planners have long assumed that electricity demand will grow mo
 
 ## Do Female Directors Enhance ESG Performance? A Meta-Analysis
 URL: https://meta-analysis.cz/esg/
-Citation: Hozova Karolina, Havranek Tomas, Irsova Zuzana (2026), “Do Female Directors Enhance ESG Performance? A Meta-Analysis.” Charles University, Prague. Available at meta-analysis.cz/esg.
+Citation: Karolina Hozova, Tomas Havranek, Zuzana Irsova (2026), “Do Female Directors Enhance ESG Performance? A Meta-Analysis.” Charles University, Prague. Available at meta-analysis.cz/esg.
 Paper: https://meta-analysis.cz/esg/esg.pdf
 Replication Package: https://meta-analysis.cz/esg/replication.zip
 Data: https://meta-analysis.cz/esg/esg_data.xlsx
@@ -327,7 +327,7 @@ Abstract: Several central banks have leaned against the wind in the housing mark
 
 ## Financial Incentives and Performance: A Meta-Analysis of Experiments in Economics
 URL: https://meta-analysis.cz/incentives/
-Citation: Cala Petr, Havranek Tomas, Irsova Zuzana, Luskova Martina, Matousek Jindrich, and Jiri Novak (2026), "Financial Incentives and Performance: A Meta-Analysis of Experiments in Economics." Journal of Political Economy Microeconomics, forthcoming.
+Citation: Petr Cala, Tomas Havranek, Zuzana Irsova, Martina Luskova, Jindrich Matousek, and Jiri Novak (2026), "Financial Incentives and Performance: A Meta-Analysis of Experiments in Economics." Journal of Political Economy Microeconomics, forthcoming.
 Paper: https://meta-analysis.cz/incentives/incentives.pdf
 Appendix: https://meta-analysis.cz/incentives/appendix.pdf
 Included Studies: https://meta-analysis.cz/incentives/studies.xlsx
@@ -338,7 +338,7 @@ Abstract: Economists typically model financial incentives as enhancing performan
 
 ## Optimal Inflation Rate: A Meta-Analysis
 URL: https://meta-analysis.cz/inflation/
-Citation: Opatrny Matej, Opatrny Martin, Havranek Tomas, Irsova Zuzana, Hampl Mojmir (2026), "Optimal Inflation Rate: A Meta-Analysis." Charles University, Prague. Available at meta-analysis.cz/inflation.
+Citation: Matej Opatrny, Martin Opatrny, Tomas Havranek, Zuzana Irsova, Mojmir Hampl (2026), "Optimal Inflation Rate: A Meta-Analysis." Charles University, Prague. Available at meta-analysis.cz/inflation.
 Paper: https://meta-analysis.cz/inflation/inflation.pdf
 Replication Package: https://meta-analysis.cz/inflation/replication.zip
 Dataset: https://meta-analysis.cz/inflation/inflation_v34.dta
@@ -360,7 +360,7 @@ Abstract: The transmission of monetary policy to the economy is generally though
 
 ## Publication Bias and P-Hacking in the Effect of COVID-19 on Learning: A Meta-Analysis
 URL: https://meta-analysis.cz/learning/
-Citation: Luskova Martina, Buliskeria Nino, Elminejad Ali, Havranek Tomas, Irsova Zuzana, Jurajda Stepan, Kapicka Marek (2026), “Publication Bias and P-Hacking in the Effect of COVID-19 on Learning.” Charles University, Prague. Available at meta-analysis.cz/learning.
+Citation: Martina Luskova, Nino Buliskeria, Ali Elminejad, Tomas Havranek, Zuzana Irsova, Stepan Jurajda, Marek Kapicka (2026), “Publication Bias and P-Hacking in the Effect of COVID-19 on Learning.” Charles University, Prague. Available at meta-analysis.cz/learning.
 Paper: https://meta-analysis.cz/learning/learning.pdf
 Replication Package: https://meta-analysis.cz/learning/replication.zip
 Data: https://meta-analysis.cz/learning/learning_loss_data.xlsx
@@ -371,7 +371,7 @@ Abstract: We revisit a central estimate in the economics of education: the human
 
 ## Meta-Analysis Instrumental Variable Estimator
 URL: https://meta-analysis.cz/maive/
-Citation: Irsova Z., Bom P. R. D., Havranek T., and H. Rachinger (2025): "Spurious Precision in Meta-Analysis of Observational Research." Nature Commun 16, 8454.
+Citation: Zuzana Irsova, Pedro Bom, Tomas Havranek, and Heiko Rachinger (2025): "Spurious Precision in Meta-Analysis of Observational Research." Nature Commun 16, 8454.
 Published version: https://doi.org/10.1038/s41467-025-63261-0
 Paper: https://meta-analysis.cz/maive/maive.pdf
 Supplement: https://meta-analysis.cz/maive/supplement.pdf
@@ -387,7 +387,7 @@ Abstract: Meta-analysis upweights studies reporting lower standard errors and he
 
 ## The Elasticity of Substitution between Native and Immigrant Labor: A Meta-Analysis
 URL: https://meta-analysis.cz/migrant/
-Citation: Kantova Klara, Havranek Tomas, Irsova Zuzana, Schwarz Jiri (2026), “The Elasticity of Substitution between Native and Immigrant Labor: A Meta-Analysis.” Charles University, Prague. Available at meta-analysis.cz/migrant.
+Citation: Klara Kantova, Tomas Havranek, Zuzana Irsova, Jiri Schwarz (2026), “The Elasticity of Substitution between Native and Immigrant Labor: A Meta-Analysis.” Charles University, Prague. Available at meta-analysis.cz/migrant.
 Paper: https://meta-analysis.cz/migrant/migrant.pdf
 Replication Package: https://meta-analysis.cz/migrant/replication.zip
 Data: https://meta-analysis.cz/migrant/migrant.xlsx
@@ -421,7 +421,7 @@ Abstract: The short-run increase in prices following an unexpected tightening of
 
 ## Structural Reforms and Economic Growth: A Meta-Analysis
 URL: https://meta-analysis.cz/reforms/
-Citation: Babecky Jan & Tomas Havranek (2014), "Structural Reforms and Growth in Transition: A Meta-Analysis." Economics of Transition 22(1), pp. 13-42.
+Citation: Jan Babecky & Tomas Havranek (2014), "Structural Reforms and Growth in Transition: A Meta-Analysis." Economics of Transition 22(1), pp. 13-42.
 Published version: https://doi.org/10.1111/ecot.12029
 Paper: https://meta-analysis.cz/reforms/reforms2.pdf
 Data in XLS (6.8 MB): https://meta-analysis.cz/reforms/reform.xls
@@ -452,7 +452,7 @@ Abstract: An important question in development studies is how natural resources 
 
 ## Relative Risk Aversion: A Meta-Analysis
 URL: https://meta-analysis.cz/risk/
-Citation: Elminejad A., Havranek T., and Z. Irsova (2025), "Relative Risk Aversion: A Meta-Analysis." Journal of Economic Surveys, 39(5): 2315-2333.
+Citation: Ali Elminejad, Tomas Havranek, and Zuzana Irsova (2025), "Relative Risk Aversion: A Meta-Analysis." Journal of Economic Surveys, 39(5): 2315-2333.
 Published version: https://doi.org/10.1111/joes.12689
 Paper: https://meta-analysis.cz/risk/risk2.pdf
 Supplement: https://meta-analysis.cz/risk/appendix.pdf
@@ -500,7 +500,7 @@ Abstract: A prominent factor used in most models predicting stock returns is fir
 
 ## Publication and Attenuation Biases in Measuring Skill Substitution
 URL: https://meta-analysis.cz/skill/
-Citation: Havranek Tomas, Zuzana Irsova, Lubica Laslopova, and Olesia Zeynalova (2024), "Publication and Attenuation Biases in Measuring Skill Substitution." Review of Economics and Statistics 106 (5), 1187-1200.
+Citation: Tomas Havranek, Zuzana Irsova, Lubica Laslopova, and Olesia Zeynalova (2024), "Publication and Attenuation Biases in Measuring Skill Substitution." Review of Economics and Statistics 106 (5), 1187-1200.
 Published version: https://doi.org/10.1162/rest_a_01227
 Paper: https://meta-analysis.cz/skill/skill2.pdf
 Web Appendix: https://meta-analysis.cz/skill/appendix.pdf
@@ -512,7 +512,7 @@ Abstract: A key parameter in the analysis of wage inequality is the elasticity o
 
 ## A Meta-Analysis of Vertical Spillovers from FDI
 URL: https://meta-analysis.cz/spillovers/
-Citation: Havranek Tomas & Zuzana Irsova (2011), "Estimating Vertical Spillovers from FDI: Why Results Vary and What the True Effect Is." Journal of International Economics, 85(2), pp. 234-244.
+Citation: Tomas Havranek & Zuzana Irsova (2011), "Estimating Vertical Spillovers from FDI: Why Results Vary and What the True Effect Is." Journal of International Economics, 85(2), pp. 234-244.
 Published version: https://doi.org/10.1016/j.jinteco.2011.07.004
 Paper: https://meta-analysis.cz/spillovers/spillovers2.pdf
 Data in XLS (6.8 MB): https://meta-analysis.cz/spillovers/data.xls
