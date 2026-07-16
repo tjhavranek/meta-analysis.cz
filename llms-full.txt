@@ -6,6 +6,7 @@ and the social sciences (Charles University, Prague). Maintained by Tomas Havran
 ## Does Shareholder Activism Create Value? A Meta-Analysis
 URL: https://meta-analysis.cz/activism/
 Citation: Bajzik Josef, Havranek Tomas, Irsova Zuzana, Jiri Novak (2025), "Does Shareholder Activism Create Value? A Meta-Analysis." Corporate Governance: An International Review 33(5): 1039-1061.
+Published version: https://doi.org/10.1111/corg.12637
 Paper: https://meta-analysis.cz/activism/activism2.pdf
 Appendix: https://meta-analysis.cz/activism/appendix.pdf
 Data: https://meta-analysis.cz/activism/activism.xlsx
@@ -26,6 +27,7 @@ Abstract: We examine the ability of 34 variables to explain the variation in rep
 ## A Meta-Analysis of the Trade Cost Elasticity
 URL: https://meta-analysis.cz/armington/
 Citation: Josef Bajzik, Tomas Havranek, Zuzana Irsova, and Jiri Schwarz (2020), "Estimating the Armington Elasticity: The Importance of Study Design and Publication Bias." Journal of International Economics 127, 103383.
+Published version: https://doi.org/10.1016/j.jinteco.2020.103383
 Paper: https://meta-analysis.cz/armington/armington2.pdf
 Additional Results: https://meta-analysis.cz/armington/appendix.pdf
 Included Studies: https://meta-analysis.cz/armington/studies.xlsx
@@ -47,6 +49,7 @@ Abstract: Common wisdom suggests that beauty helps in the labor market. We show 
 ## A Meta-Analysis of Horizontal Spillovers from FDI
 URL: https://meta-analysis.cz/bma/
 Citation: Zuzana Irsova & Tomas Havranek (2013), "Determinants of Horizontal Spillovers from FDI: Evidence from a Large Meta-Analysis." World Development 42, 1-15.
+Published version: https://doi.org/10.1016/j.worlddev.2012.07.001
 Paper: https://meta-analysis.cz/bma/bma2.pdf
 Data in XLS (6.8 MB): https://meta-analysis.cz/bma/determinants.xls
 Stata Program: https://meta-analysis.cz/bma/determinants.do
@@ -57,6 +60,7 @@ Abstract: The voluminous empirical research on horizontal productivity spillover
 ## Do Borders Really Slash Trade? A Meta-Analysis
 URL: https://meta-analysis.cz/border/
 Citation: Tomas Havranek and Zuzana Irsova (2017), "Do Borders Really Slash Trade? A Meta-Analysis." IMF Economic Review 65(2), 365-396.
+Published version: https://doi.org/10.1057/s41308-016-0001-5
 Paper: https://meta-analysis.cz/border/border2.pdf
 Additional Material: https://meta-analysis.cz/border/appendix.pdf
 Examined Studies: https://meta-analysis.cz/border/search.htm
@@ -69,6 +73,7 @@ Abstract: National borders reduce trade, but most estimates of the border effect
 ## Classs Size and Student Achievement: A Meta-Analysis
 URL: https://meta-analysis.cz/class/
 Citation: Opatrny Matej, Havranek Tomas, Irsova Zuzana, Milan Scasny (2025), "Publication Bias and Model Uncertainty in Measuring the Effect of Class Size on Achievement." Journal of Labor Economics, forthcoming.
+Published version: https://doi.org/10.1086/737989
 Paper: https://meta-analysis.cz/class/class.pdf
 Supplement: https://meta-analysis.cz/class/appendix.pdf
 Studies: https://meta-analysis.cz/class/studies.xlsx
@@ -80,6 +85,7 @@ Abstract: Class size reduction mandates are routinely justified by studies repor
 ## Publication Bias in Measuring Anthropogenic Climate Change
 URL: https://meta-analysis.cz/climate/
 Citation: Dominika Reckova and Zuzana Irsova (2015), "Publication Bias in Measuring Anthropogenic Climate Change." Energy and Environment 26 (5), 853-862.
+Published version: https://doi.org/10.1260/0958-305x.26.5.853
 Read the paper: https://meta-analysis.cz/climate/climate2.pdf
 Additional results: https://meta-analysis.cz/climate/appendix.pdf
 Download the data: https://meta-analysis.cz/climate/climate.dta
@@ -90,6 +96,7 @@ Abstract: We present a meta-regression analysis of the relation between the conc
 ## Bank Competition and Financial Stability: Much Ado About Nothing?
 URL: https://meta-analysis.cz/competition/
 Citation: Diana Zigraiova and Tomas Havranek (2016), "Bank Competition and Financial Stability: Much Ado About Nothing?" Journal of Economic Surveys 30(5), 944-981.
+Published version: https://doi.org/10.1111/joes.12131
 Paper: https://meta-analysis.cz/competition/competition2.pdf
 Additional Results: https://meta-analysis.cz/competition/additional_results.pdf
 Included Studies: https://meta-analysis.cz/competition/included_studies.pdf
@@ -101,6 +108,7 @@ Abstract: The theoretical literature gives conflicting predictions on how bank c
 ## Reducing the biases of the conventional meta-analysis of correlations
 URL: https://meta-analysis.cz/correlations/
 Citation: T. D. Stanley, Hristos Doucouliagos, and Tomas Havranek (2025): "Reducing the biases of the conventional meta-analysis of correlations." Research Synthesis Methods 16(1): 42-59.
+Published version: https://doi.org/10.1017/rsm.2024.5
 Read the paper: https://meta-analysis.cz/correlations/correlations2.pdf
 Download the supplement (including data and code): https://osf.io/8we4b/
 
@@ -119,6 +127,7 @@ Abstract: Probably not, at least for meta-analyses in economics. In a pre-regist
 ## Individual Discount Rates: A Meta-Analysis of Experimental Evidence
 URL: https://meta-analysis.cz/discrate/
 Citation: Jindrich Matousek, Tomas Havranek, and Zuzana Irsova (2022), "Individual Discount Rates: A Meta-Analysis of Experimental Evidence." Experimental Economics 25(1), 318-358.
+Published version: https://doi.org/10.1007/s10683-021-09716-9
 Paper: https://meta-analysis.cz/discrate/discrate2.pdf
 Included Studies: https://meta-analysis.cz/discrate/studies.xlsx
 Data: https://meta-analysis.cz/discrate/discrate.dta
@@ -129,6 +138,7 @@ Abstract: A key parameter estimated by lab and field experiments in economics is
 ## Does Daylight Saving Save Electricity? A Meta-Analysis
 URL: https://meta-analysis.cz/dst/
 Citation: Tomas Havranek, Dominik Herman, and Zuzana Irsova (2018), "Does Daylight Saving Save Electricity? A Meta-Analysis." Energy Journal 39(2), 35-61.
+Published version: https://doi.org/10.5547/01956574.39.2.thav
 Paper: https://meta-analysis.cz/dst/dst2.pdf
 Examined Studies: https://meta-analysis.cz/dst/search.html
 Included Studies: https://meta-analysis.cz/dst/studies.xlsx
@@ -140,6 +150,7 @@ Abstract: The original rationale for adopting daylight saving time (DST) was ene
 ## Publication Bias in Measuring the Impact of Tuition on Enrollment
 URL: https://meta-analysis.cz/education/
 Citation: Tomas Havranek, Zuzana Irsova, and Olesia Zeynalova (2018): "Tuition Fees and University Enrolment: A Meta‐Regression Analysis". Oxford Bulletin of Economics and Statistics 80(6): 1145-1184.
+Published version: https://doi.org/10.1111/obes.12240
 Paper: https://meta-analysis.cz/education/education2.pdf
 Examined Studies: https://meta-analysis.cz/education/search.html
 Included Studies: https://meta-analysis.cz/education/studies.xlsx
@@ -151,6 +162,7 @@ Abstract: One of the most frequently examined relationships in education economi
 ## Publication Bias in Measuring Intertemporal Substitution
 URL: https://meta-analysis.cz/eis/
 Citation: Tomas Havranek (2015), "Measuring Intertemporal Substitution: The Importance of Method Choices and Selective Reporting." Journal of the European Economic Association 13(6), 1180-1204.
+Published version: https://doi.org/10.1111/jeea.12133
 Paper: https://meta-analysis.cz/eis/eis2.pdf
 Additional Results: https://meta-analysis.cz/eis/eis_appendix.pdf
 Examined Studies: https://meta-analysis.cz/eis/Scholar_search.htm
@@ -184,6 +196,7 @@ Abstract: Appointing more women to corporate boards is widely expected to also r
 ## A Meta-Analysis of the Trade Effect of the Euro
 URL: https://meta-analysis.cz/euro/
 Citation: Tomas Havranek (2010), "Rose Effect and the Euro: Is the Magic Gone?" Review of World Economics, 146(2), pp. 241-261.
+Published version: https://doi.org/10.1007/s10290-010-0050-1
 Read the paper: https://meta-analysis.cz/euro/euro2.pdf
 Download the data set: https://meta-analysis.cz/euro/data.zip
 
@@ -192,6 +205,7 @@ Abstract: This paper presents an updated meta-analysis of the effect of currency
 ## A Meta-Analysis of the Excess Sensitivity of Consumption to Anticipated Income Changes
 URL: https://meta-analysis.cz/excess_sensitivity/
 Citation: Tomas Havranek & Anna Sokolova (2020), "Do Consumers Really Follow a Rule of Thumb? Three Thousand Estimates from 144 Studies Say `Probably Not'." Review of Economic Dynamics 35(1), 97-122.
+Published version: https://doi.org/10.1016/j.red.2019.05.004
 Paper: https://meta-analysis.cz/excess_sensitivity/excess_sensitivity_2.pdf
 Additional Results: https://meta-analysis.cz/excess_sensitivity/appendix.pdf
 Examined Studies: https://meta-analysis.cz/excess_sensitivity/search.html
@@ -212,6 +226,7 @@ Abstract: Physical exercise is widely believed to enhance cognition, yet evidenc
 ## Foreign Capital and Domestic Productivity in the Czech Republic: A Meta-Regression Analysis
 URL: https://meta-analysis.cz/fdi/
 Citation: Mojmir Hampl, Tomas Havranek, and Zuzana Irsova (2020), "Foreign Capital and Domestic Productivity in the Czech Republic: A Meta-Regression Analysis." Applied Economics 52(18), 1949-1958.
+Published version: https://doi.org/10.1080/00036846.2020.1726864
 Read the paper: https://meta-analysis.cz/fdi/fdi2.pdf
 Download data and code: https://meta-analysis.cz/fdi/spillovers.zip
 
@@ -220,6 +235,7 @@ Abstract: We provide a quantitative synthesis of the literature studying the eff
 ## Financial Development and Economic Growth: A Meta-Analysis
 URL: https://meta-analysis.cz/finance_growth/
 Citation: Petra Valickova, Tomas Havranek, and Roman Horvath (2015), "Financial Development and Economic Growth: A Meta-Analysis." Journal of Economic Surveys 29(3), 506-526.
+Published version: https://doi.org/10.1111/joes.12068
 Read the paper: https://meta-analysis.cz/finance_growth/finance_growth2.pdf
 Download the appendix: https://meta-analysis.cz/finance_growth/appendix.pdf
 Download the data set: https://meta-analysis.cz/finance_growth/finance_growth.zip
@@ -229,6 +245,7 @@ Abstract: We analyze 1334 estimates from 67 studies that examine the effect of f
 ## How Puzzling Is the Forward Premium Puzzle? A Meta-Analysis
 URL: https://meta-analysis.cz/forward/
 Citation: Diana Zigraiova, Tomas Havranek, and Jiri Novak (2021), "How Puzzling Is the Forward Premium Puzzle? A Meta-Analysis." European Economic Review 134, 103714.
+Published version: https://doi.org/10.1016/j.euroecorev.2021.103714
 Paper: https://meta-analysis.cz/forward/forward2.pdf
 Additional material: https://meta-analysis.cz/forward/appendix.pdf
 Data: https://meta-analysis.cz/forward/forward.dta
@@ -239,6 +256,7 @@ Abstract: A key theoretical prediction in financial economics is that under risk
 ## Publication and Identification Biases in Measuring the Intertemporal Substitution of Labor Supply
 URL: https://meta-analysis.cz/frisch/
 Citation: Ali Elminejad, Tomas Havranek, Roman Horvath, and Zuzana Irsova (2023), "Intertemporal Substitution in Labor Supply: A Meta-Analysis." Review of Economic Dynamics 51, 1095-1113.
+Published version: https://doi.org/10.1016/j.red.2023.10.001
 Paper: https://meta-analysis.cz/frisch/frisch2.pdf
 Appendix: https://meta-analysis.cz/frisch/appendix.pdf
 Included Studies: https://meta-analysis.cz/frisch/studies.xlsx
@@ -250,6 +268,7 @@ Abstract: Publication and Identification Biases in Measuring the Intertemporal S
 ## A Meta-Analysis of the Income Elasticity of Gasoline Demand
 URL: https://meta-analysis.cz/gasoline/
 Citation: Tomas Havranek and Ondrej Kokes (2015), "Income Elasticity of Gasoline Demand: A Meta-Analysis." Energy Economics 47, pp. 77-86.
+Published version: https://doi.org/10.1016/j.eneco.2014.11.004
 Read the paper: https://meta-analysis.cz/gasoline/gasoline2.pdf
 Download the data and code: https://meta-analysis.cz/gasoline/data.zip
 
@@ -258,6 +277,7 @@ Abstract: In this paper we quantitatively synthesize empirical estimates of the 
 ## A Meta-Analysis of the Price Elasticity of Gasoline Demand
 URL: https://meta-analysis.cz/gasoline_price/
 Citation: Tomas Havranek, Zuzana Irsova, and Karel Janda (2012), "Demand for Gasoline is More Price-Inelastic than Commonly Thought," Energy Economics 34(1), pp. 201-207.
+Published version: https://doi.org/10.1016/j.eneco.2011.09.003
 Read the paper: https://meta-analysis.cz/gasoline_price/gasoline_price2.pdf
 Download the data set: https://meta-analysis.cz/gasoline_price/data.zip
 
@@ -266,7 +286,7 @@ Abstract: One of the most frequently examined statistical relationships in energ
 ## Meta-Analysis of Social Science Research: A Practitioner’s Guide
 URL: https://meta-analysis.cz/guidelines/
 Citation: Zuzana Irsova, Hristos Doucouliagos, Tomas Havranek, and T. D. Stanley (2024): "Meta-Analysis of Social Science Research: A Practitioner’s Guide." Journal of Economic Surveys 38(5): 1547-1566.
-Published version: https://onlinelibrary.wiley.com/doi/full/10.1111/joes.12595
+Published version: https://doi.org/10.1111/joes.12595
 Meta-analysis guidelines: https://onlinelibrary.wiley.com/doi/full/10.1111/joes.12595
 Blog version: https://www.maer-net.org/post/methods-guidelines-for-meta-analysis
 
@@ -275,6 +295,7 @@ Abstract: This paper provides concise, nontechnical, step-by-step guidelines on 
 ## Habit Formation in Consumption: A Meta-Analysis
 URL: https://meta-analysis.cz/habits/
 Citation: Tomas Havranek, Marek Rusnak, and Anna Sokolova (2017), "Habit Formation in Consumption: A Meta-Analysis." European Economic Review 95, 142-167.
+Published version: https://doi.org/10.1016/j.euroecorev.2017.03.009
 Read the paper: https://meta-analysis.cz/habits/habits2.pdf
 Read additional results: https://meta-analysis.cz/habits/appendix.pdf
 Download the data: https://meta-analysis.cz/habits/habit.dta
@@ -285,6 +306,7 @@ Abstract: We examine 597 estimates of habit formation reported in 81 published s
 ## Hedge Fund Performance: A Meta-Analysis
 URL: https://meta-analysis.cz/hedge/
 Citation: Fan Yang, Tomas Havranek, Zuzana Irsova, and Jiri Novak (2024), "Is research on hedge fund performance published selectively? A quantitative survey." Journal of Economic Surveys 38(4): 1085-1131.
+Published version: https://doi.org/10.1111/joes.12574
 Paper: https://meta-analysis.cz/hedge/hedge2.pdf
 Data: https://meta-analysis.cz/hedge/hedge.xlsx
 Code: https://meta-analysis.cz/hedge/hedge.do
@@ -294,6 +316,7 @@ Abstract: We provide the first quantitative survey of the empirical literature o
 ## When Does Monetary Policy Sway House Prices? A Meta-Analysis
 URL: https://meta-analysis.cz/house_prices/
 Citation: Dominika Ehrenbergerova, Josef Bajzik, Tomas Havranek (2023), "When Does Monetary Policy Sway House Prices? A Meta-Analysis." IMF Economic Review 71, 538-573.
+Published version: https://doi.org/10.1057/s41308-022-00185-5
 Paper: https://meta-analysis.cz/house_prices/house_prices2.pdf
 Included studies: https://meta-analysis.cz/house_prices/studies.xlsx
 Impulse Responses: https://meta-analysis.cz/house_prices/IRs.pdf
@@ -376,6 +399,7 @@ Abstract: This paper presents the first comprehensive meta-analysis of the elast
 ## Meta-analyses of partial correlations are biased: Detection and solutions
 URL: https://meta-analysis.cz/pcc/
 Citation: T. D. Stanley, Hristos Doucouliagos, and Tomas Havranek (2024): "Meta-analyses of partial correlations are biased: Detection and solutions." Research Synthesis Methods 15: 313-325.
+Published version: https://doi.org/10.1002/jrsm.1704
 Paper: https://meta-analysis.cz/pcc/pcc2.pdf
 Supplement (including code): https://meta-analysis.cz/pcc/appendix.pdf
 Google Scholar search: https://meta-analysis.cz/pcc/search.xlsx
@@ -385,6 +409,7 @@ Abstract: We demonstrate that all meta-analyses of partial correlations are bias
 ## How to Solve the Price Puzzle? A Meta-Analysis
 URL: https://meta-analysis.cz/price_puzzle/
 Citation: Rusnak Marek, Tomas Havranek, & Roman Horvath (2013), "How to Solve the Price Puzzle? A Meta-Analysis." Journal of Money, Credit and Banking 45(1), 37-70.
+Published version: https://doi.org/10.1111/j.1538-4616.2012.00561.x
 Paper: https://meta-analysis.cz/price_puzzle/price_puzzle2.pdf
 Impulse Responses: https://meta-analysis.cz/price_puzzle/IRs.pdf
 Data: https://meta-analysis.cz/price_puzzle/puzzle.xls
@@ -397,6 +422,7 @@ Abstract: The short-run increase in prices following an unexpected tightening of
 ## Structural Reforms and Economic Growth: A Meta-Analysis
 URL: https://meta-analysis.cz/reforms/
 Citation: Babecky Jan & Tomas Havranek (2014), "Structural Reforms and Growth in Transition: A Meta-Analysis." Economics of Transition 22(1), pp. 13-42.
+Published version: https://doi.org/10.1111/ecot.12029
 Paper: https://meta-analysis.cz/reforms/reforms2.pdf
 Data in XLS (6.8 MB): https://meta-analysis.cz/reforms/reform.xls
 Stata Program: https://meta-analysis.cz/reforms/reform.do
@@ -407,6 +433,7 @@ Abstract: The present fiscal difficulties of many countries amplify the call for
 ## Remittances and Economic Growth: A Meta-Analysis
 URL: https://meta-analysis.cz/remittances/
 Citation: Alina Cazachevici, Tomas Havranek, and Roman Horvath (2020), "Remittances and Economic Growth: A Meta-Analysis." World Development 134, 105021.
+Published version: https://doi.org/10.1016/j.worlddev.2020.105021
 Read the paper: https://meta-analysis.cz/remittances/remittances2.pdf
 Download the data: https://meta-analysis.cz/remittances/remittances.xlsx
 Download the code: https://meta-analysis.cz/remittances/remittances.do
@@ -416,6 +443,7 @@ Abstract: Expatriate workers' remittances represent an important source of finan
 ## Natural Resources and Economic Growth: A Meta-Analysis
 URL: https://meta-analysis.cz/resource_curse/
 Citation: Tomas Havranek, Roman Horvath, and Ayaz Zeylanov (2016), "Natural Resources and Economic Growth: A Meta-Analysis." World Development 88, 134-151.
+Published version: https://doi.org/10.1016/j.worlddev.2016.07.016
 Read the paper: https://meta-analysis.cz/resource_curse/resource_curse2.pdf
 Download the data: https://meta-analysis.cz/resource_curse/resource_curse.dta
 Download the code: https://meta-analysis.cz/resource_curse/resource_curse.do
@@ -425,6 +453,7 @@ Abstract: An important question in development studies is how natural resources 
 ## Relative Risk Aversion: A Meta-Analysis
 URL: https://meta-analysis.cz/risk/
 Citation: Elminejad A., Havranek T., and Z. Irsova (2025), "Relative Risk Aversion: A Meta-Analysis." Journal of Economic Surveys, 39(5): 2315-2333.
+Published version: https://doi.org/10.1111/joes.12689
 Paper: https://meta-analysis.cz/risk/risk2.pdf
 Supplement: https://meta-analysis.cz/risk/appendix.pdf
 Calibration Studies: https://meta-analysis.cz/risk/calibrations.xlsx
@@ -436,6 +465,7 @@ Abstract: Estimates of relative risk aversion vary widely, but no study has atte
 ## Selective Reporting and the Social Cost of Carbon
 URL: https://meta-analysis.cz/scc/
 Citation: Tomas Havranek, Zuzana Irsova, Karel Janda, and David Zilberman (2015), "Selective Reporting and the Social Cost of Carbon." Energy Econonomics 51, 364-406.
+Published version: https://doi.org/10.1016/j.eneco.2015.08.009
 Paper: https://meta-analysis.cz/scc/scc2.pdf
 Examined Studies: http://scholar.google.cz/scholar?as_sdt=1,5&q=%22social+costs+of+carbon%22+OR+%22social+cost+of+carbon%22+carbon+climate+change+marginal+damage+costs+emissions+greenhouse+impacts&hl=en&as_ylo=2012&as_vis=1
 Included Studies: https://meta-analysis.cz/scc/studies.xls
@@ -447,6 +477,7 @@ Abstract: We examine potential selective reporting in the literature on the soci
 ## Measuring Capital-Labor Substitution: The Importance of Method Choices and Publication Bias
 URL: https://meta-analysis.cz/sigma/
 Citation: Sebastian Gechert, Tomas Havranek, Zuzana Irsova, and Dominika Kolcunova (2022), "Measuring Capital-Labor Substitution: The Importance of Method Choices and Publication Bias." Review of Economic Dynamics 45, 55-82.
+Published version: https://doi.org/10.1016/j.red.2021.05.003
 Paper: https://meta-analysis.cz/sigma/sigma2.pdf
 Additional Results: https://meta-analysis.cz/sigma/appendix.pdf
 Examined Studies: https://meta-analysis.cz/sigma/Scholar.html
@@ -459,6 +490,7 @@ Abstract: Measuring Capital-Labor Substitution: The Importance of Method Choices
 ## A Meta-Analysis of the Relation Between Firm Size and Stock Returns
 URL: https://meta-analysis.cz/size/
 Citation: Anton Astakhov, Tomas Havranek, and Jiri Novak (2019), "Firm Size and Stock Returns: A Quantitative Survey." Journal of Economic Surveys 33(5), 1463-1492.
+Published version: https://doi.org/10.1111/joes.12335
 Paper: https://meta-analysis.cz/size/size2.pdf
 Included Studies: https://meta-analysis.cz/size/studies.pdf
 Data: https://meta-analysis.cz/size/size.dta
@@ -469,6 +501,7 @@ Abstract: A prominent factor used in most models predicting stock returns is fir
 ## Publication and Attenuation Biases in Measuring Skill Substitution
 URL: https://meta-analysis.cz/skill/
 Citation: Havranek Tomas, Zuzana Irsova, Lubica Laslopova, and Olesia Zeynalova (2024), "Publication and Attenuation Biases in Measuring Skill Substitution." Review of Economics and Statistics 106 (5), 1187-1200.
+Published version: https://doi.org/10.1162/rest_a_01227
 Paper: https://meta-analysis.cz/skill/skill2.pdf
 Web Appendix: https://meta-analysis.cz/skill/appendix.pdf
 Included Studies: https://meta-analysis.cz/skill/studies.xlsx
@@ -480,6 +513,7 @@ Abstract: A key parameter in the analysis of wage inequality is the elasticity o
 ## A Meta-Analysis of Vertical Spillovers from FDI
 URL: https://meta-analysis.cz/spillovers/
 Citation: Havranek Tomas & Zuzana Irsova (2011), "Estimating Vertical Spillovers from FDI: Why Results Vary and What the True Effect Is." Journal of International Economics, 85(2), pp. 234-244.
+Published version: https://doi.org/10.1016/j.jinteco.2011.07.004
 Paper: https://meta-analysis.cz/spillovers/spillovers2.pdf
 Data in XLS (6.8 MB): https://meta-analysis.cz/spillovers/data.xls
 Stata Program: https://meta-analysis.cz/spillovers/Stata_program.do
@@ -490,6 +524,7 @@ Abstract: In the last decade, more than 100 researchers have examined productivi
 ## Student Employment and Education: A Meta-Analysis
 URL: https://meta-analysis.cz/students/
 Citation: Katerina Kroupova, Tomas Havranek, Zuzana Irsova (2024), "Student Employment and Education: A Meta-Analysis." Economics of Education Review 100, 102539.
+Published version: https://doi.org/10.1016/j.econedurev.2024.102539
 Paper: https://meta-analysis.cz/students/students2.pdf
 Web appendix: https://meta-analysis.cz/students/appendix.pdf
 Included studies: https://meta-analysis.cz/students/studies.xlsx
@@ -501,6 +536,7 @@ Abstract: Educational outcomes have many determinants, but one that most young p
 ## Why Does Intertemporal Substitution Vary Across Countries? A Meta-Analysis
 URL: https://meta-analysis.cz/substitution/
 Citation: Tomas Havranek, Roman Horvath, Zuzana Irsova, and Marek Rusnak (2015), "Cross-Country Heterogeneity in Intertemporal Substitution." Journal of International Economics 96(1), 100-118.
+Published version: https://doi.org/10.1016/j.jinteco.2015.01.012
 Paper: https://meta-analysis.cz/substitution/substitution2.pdf
 Examined Studies: https://meta-analysis.cz/substitution/Scholar_search.htm
 Included Studies: https://meta-analysis.cz/substitution/studies.xls
@@ -512,6 +548,7 @@ Abstract: We collect 2,735 estimates of the elasticity of intertemporal substitu
 ## Publication Bias in Measuring the Income Elasticity of Water Demand
 URL: https://meta-analysis.cz/water/
 Citation: Tomas Havranek, Zuzana Irsova, and Tomas Vlach (2018), "Measuring the Income Elasticity of Water Demand: The Importance of Publication and Endogeneity Biases." Land Economics 94(2): 259-283.
+Published version: https://doi.org/10.3368/le.94.2.259
 Paper: https://meta-analysis.cz/water/water2.pdf
 Additional Results: https://meta-analysis.cz/water/appendix.pdf
 Examined Studies: https://meta-analysis.cz/water/search.html
