@@ -76,10 +76,15 @@ def fallback_parse(proj, raw):
     entry = rx1(r'<div class="entry">(.*?)</div>')
     abstract = ""
     if entry:
-        first_p = re.search(r"<p>(.*?)</p>", entry, re.S)
-        if first_p:
-            abstract = html.unescape(re.sub(r"<[^>]+>", " ", first_p.group(1)))
-            abstract = re.sub(r"\s+", " ", abstract).strip()
+        paras = []
+        for ptxt in re.findall(r"<p>(.*?)</p>", entry, re.S):
+            t = re.sub(r"\s+", " ", html.unescape(re.sub(r"<[^>]+>", " ", ptxt))).strip()
+            if not t or t.lower().startswith(("fig", "reference")):
+                continue
+            if "Reference:" in ptxt or "<img" in ptxt:
+                continue
+            paras.append(t)
+        abstract = " ".join(paras).strip()
     menu = []
     menu_html = rx1(r'<div id="menu">(.*?)</div>')
     if menu_html:
@@ -107,6 +112,11 @@ def fallback_parse(proj, raw):
     }
 
 # ---------- builders ---------------------------------------------------------
+def local_exists(proj, href):
+    p = href.split("?")[0].split("#")[0].lstrip("/")
+    path = os.path.join(SITE, p) if href.startswith("/") else os.path.join(SITE, proj, p)
+    return os.path.isfile(path)
+
 def classify_links(m):
     main_pdf, other_pdfs, dc_local, dc_ext = None, [], [], []
     for link in m["menu_links"]:
@@ -115,6 +125,12 @@ def classify_links(m):
         if href.startswith(("http://", "https://")):
             if DATAISH.search(label):
                 dc_ext.append(link)
+            continue
+        if not ext:          # page/anchor link, not a file
+            continue
+        if not local_exists(m["project"], href):
+            WARNINGS.append(f"{m['project']}: menu links missing file {href} — "
+                            f"excluded from metadata; add the file or fix the link")
             continue
         if ext == ".pdf":
             if label.lower() == "paper" and main_pdf is None:
@@ -283,10 +299,28 @@ def main():
     merged = {}
     for proj in projects:
         raw = open(os.path.join(SITE, proj, "index.html"), "rb").read().decode("utf-8")
+        # the live page is the source of truth for mechanical facts
+        base = fallback_parse(proj, raw)
         if proj in metas:
-            merged[proj] = metas[proj]
+            s = metas[proj]
+            m = dict(base)   # title/abstract/menu/figure/keywords from CURRENT page
+            for k in ("authors", "journal", "one_line", "doi_or_publisher_url",
+                      "dataset_doi", "dataset_license", "license"):
+                if s.get(k):
+                    m[k] = s[k]
+            if not m["abstract"] or len(m["abstract"]) < 80:
+                m["abstract"] = s["abstract"]
+            if not m["reference_line"]:
+                m["reference_line"] = s["reference_line"]
+            if base["year"] and s.get("year") and base["year"] != s["year"]:
+                WARNINGS.append(f"{proj}: page year {base['year']} != papers.json "
+                                f"{s['year']} — using page; review papers.json")
+                m["year"] = base["year"]
+            else:
+                m["year"] = s.get("year") or base["year"]
+            merged[proj] = m
         else:
-            merged[proj] = fallback_parse(proj, raw)
+            merged[proj] = base
             WARNINGS.append(f"{proj}: not in tools/papers.json — covered mechanically "
                             f"(no Scholar tags); ask your AI assistant to enrich papers.json")
     stale = sorted(set(metas) - set(projects))
@@ -380,7 +414,8 @@ def main():
             lf.append(f"Authors: {', '.join(m['authors'])}")
         if m["doi_or_publisher_url"]:
             lf.append(f"Published version: {m['doi_or_publisher_url']}")
-        lf += [f"{l['label']}: {absurl(p, l['href'])}" for l in m["menu_links"]]
+        lf += [f"{l['label']}: {absurl(p, l['href'])}" for l in m["menu_links"]
+               if l["href"].startswith(("http://", "https://")) or local_exists(p, l["href"])]
         lf += ["", f"Abstract: {m['abstract']}", ""]
     open(os.path.join(SITE, "llms-full.txt"), "w", encoding="utf-8", newline="\n").write("\n".join(lf))
     print("wrote robots.txt, sitemap.xml, llms.txt, llms-full.txt")

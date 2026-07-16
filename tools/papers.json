@@ -50,7 +50,7 @@
    "Zuzana Irsova",
    "Jiri Novak"
   ],
-  "year": 2024,
+  "year": 2026,
   "journal": null,
   "doi_or_publisher_url": null,
   "menu_links": [
@@ -1844,5 +1844,64 @@
   "has_meta_description": true,
   "meta_keywords": "water demand, income elasticity, Bayesian model averaging, meta-analysis, publication bias",
   "one_line": "A meta-analysis finds publication and endogeneity biases inflate reported income elasticities of water demand, with a true elasticity near 0.15."
+ },
+ {
+  "project": "esg",
+  "title": "Do Female Directors Enhance ESG Performance? A Meta-Analysis",
+  "abstract": "",
+  "reference_line": null,
+  "authors": [
+   "Karolina Hozova",
+   "Tomas Havranek",
+   "Zuzana Irsova"
+  ],
+  "year": 2026,
+  "journal": null,
+  "doi_or_publisher_url": null,
+  "menu_links": [],
+  "figure": null,
+  "has_meta_description": false,
+  "meta_keywords": null,
+  "one_line": "Meta-analysis of 533 estimates from 106 studies on whether female board directors improve corporate ESG performance."
+ },
+ {
+  "project": "electricity",
+  "title": "Price Elasticity of Electricity Demand: A Meta-Analysis",
+  "abstract": "",
+  "reference_line": null,
+  "authors": [
+   "Zuzana Irsova",
+   "Tomas Havranek",
+   "Peter Kudela",
+   "Anna Kudelova",
+   "Vojtech Sikl"
+  ],
+  "year": 2026,
+  "journal": null,
+  "doi_or_publisher_url": null,
+  "menu_links": [],
+  "figure": null,
+  "has_meta_description": false,
+  "meta_keywords": null,
+  "one_line": "Meta-analysis of the price elasticity of electricity demand: no increase in price responsiveness despite ninety years of technological change."
+ },
+ {
+  "project": "debate",
+  "title": "Does Multi-Agent Debate Improve AI Feedback on Research Papers?",
+  "abstract": "",
+  "reference_line": null,
+  "authors": [
+   "Tomas Havranek",
+   "Zuzana Irsova"
+  ],
+  "year": 2026,
+  "journal": null,
+  "doi_or_publisher_url": null,
+  "menu_links": [],
+  "figure": null,
+  "has_meta_description": false,
+  "meta_keywords": null,
+  "one_line": "Preregistered evaluation of whether multi-agent AI debate improves the quality of AI-generated feedback on research papers.",
+  "dataset_doi": "10.5281/zenodo.21273528"
  }
 ]

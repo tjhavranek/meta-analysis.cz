@@ -11,10 +11,13 @@
   <url><loc>https://meta-analysis.cz/climate/</loc><lastmod>2026-07-16</lastmod></url>
   <url><loc>https://meta-analysis.cz/competition/</loc><lastmod>2026-07-16</lastmod></url>
   <url><loc>https://meta-analysis.cz/correlations/</loc><lastmod>2026-07-16</lastmod></url>
+  <url><loc>https://meta-analysis.cz/debate/</loc><lastmod>2026-07-16</lastmod></url>
   <url><loc>https://meta-analysis.cz/discrate/</loc><lastmod>2026-07-16</lastmod></url>
   <url><loc>https://meta-analysis.cz/dst/</loc><lastmod>2026-07-16</lastmod></url>
   <url><loc>https://meta-analysis.cz/education/</loc><lastmod>2026-07-16</lastmod></url>
   <url><loc>https://meta-analysis.cz/eis/</loc><lastmod>2026-07-16</lastmod></url>
+  <url><loc>https://meta-analysis.cz/electricity/</loc><lastmod>2026-07-16</lastmod></url>
+  <url><loc>https://meta-analysis.cz/esg/</loc><lastmod>2026-07-16</lastmod></url>
   <url><loc>https://meta-analysis.cz/euro/</loc><lastmod>2026-07-16</lastmod></url>
   <url><loc>https://meta-analysis.cz/excess_sensitivity/</loc><lastmod>2026-07-16</lastmod></url>
   <url><loc>https://meta-analysis.cz/exercise/</loc><lastmod>2026-07-16</lastmod></url>
@@ -67,7 +70,7 @@
   <url><loc>https://meta-analysis.cz/activism/activism.pdf</loc><lastmod>2026-06-25</lastmod></url>
   <url><loc>https://meta-analysis.cz/activism/activism2.pdf</loc><lastmod>2026-06-25</lastmod></url>
   <url><loc>https://meta-analysis.cz/activism/appendix.pdf</loc><lastmod>2026-06-25</lastmod></url>
-  <url><loc>https://meta-analysis.cz/alphas/alphas.pdf</loc><lastmod>2026-06-25</lastmod></url>
+  <url><loc>https://meta-analysis.cz/alphas/alphas.pdf</loc><lastmod>2026-07-03</lastmod></url>
   <url><loc>https://meta-analysis.cz/armington/appendix.pdf</loc><lastmod>2026-06-25</lastmod></url>
   <url><loc>https://meta-analysis.cz/armington/armington.pdf</loc><lastmod>2026-06-25</lastmod></url>
   <url><loc>https://meta-analysis.cz/armington/armington2.pdf</loc><lastmod>2026-06-25</lastmod></url>
@@ -88,6 +91,7 @@
   <url><loc>https://meta-analysis.cz/competition/included_studies.pdf</loc><lastmod>2026-06-25</lastmod></url>
   <url><loc>https://meta-analysis.cz/correlations/correlations.pdf</loc><lastmod>2026-06-25</lastmod></url>
   <url><loc>https://meta-analysis.cz/correlations/correlations2.pdf</loc><lastmod>2026-06-25</lastmod></url>
+  <url><loc>https://meta-analysis.cz/debate/debate.pdf</loc><lastmod>2026-07-16</lastmod></url>
   <url><loc>https://meta-analysis.cz/discrate/discrate.pdf</loc><lastmod>2026-06-25</lastmod></url>
   <url><loc>https://meta-analysis.cz/discrate/discrate2.pdf</loc><lastmod>2026-06-25</lastmod></url>
   <url><loc>https://meta-analysis.cz/dst/dst.pdf</loc><lastmod>2026-06-25</lastmod></url>
@@ -96,6 +100,8 @@
   <url><loc>https://meta-analysis.cz/eis/eis.pdf</loc><lastmod>2026-06-25</lastmod></url>
   <url><loc>https://meta-analysis.cz/eis/eis2.pdf</loc><lastmod>2026-06-25</lastmod></url>
   <url><loc>https://meta-analysis.cz/eis/eis_appendix.pdf</loc><lastmod>2026-06-25</lastmod></url>
+  <url><loc>https://meta-analysis.cz/electricity/electricity.pdf</loc><lastmod>2026-07-15</lastmod></url>
+  <url><loc>https://meta-analysis.cz/esg/esg.pdf</loc><lastmod>2026-07-02</lastmod></url>
   <url><loc>https://meta-analysis.cz/euro/euro.pdf</loc><lastmod>2026-06-25</lastmod></url>
   <url><loc>https://meta-analysis.cz/euro/euro2.pdf</loc><lastmod>2026-06-25</lastmod></url>
   <url><loc>https://meta-analysis.cz/excess_sensitivity/appendix.pdf</loc><lastmod>2026-06-25</lastmod></url>
@@ -138,7 +144,7 @@
   <url><loc>https://meta-analysis.cz/maive/sigma2.pdf</loc><lastmod>2026-06-25</lastmod></url>
   <url><loc>https://meta-analysis.cz/maive/skill2.pdf</loc><lastmod>2026-06-25</lastmod></url>
   <url><loc>https://meta-analysis.cz/maive/supplement.pdf</loc><lastmod>2026-06-25</lastmod></url>
-  <url><loc>https://meta-analysis.cz/migrant/migrant.pdf</loc><lastmod>2026-06-25</lastmod></url>
+  <url><loc>https://meta-analysis.cz/migrant/migrant.pdf</loc><lastmod>2026-07-02</lastmod></url>
   <url><loc>https://meta-analysis.cz/pcc/appendix.pdf</loc><lastmod>2026-06-25</lastmod></url>
   <url><loc>https://meta-analysis.cz/pcc/pcc.pdf</loc><lastmod>2026-06-25</lastmod></url>
   <url><loc>https://meta-analysis.cz/pcc/pcc2.pdf</loc><lastmod>2026-06-25</lastmod></url>
