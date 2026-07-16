@@ -192,7 +192,7 @@ def build_jsonld(m):
                 for f in dc_local + dc_ext]
         ds = {"@type": "Dataset", "@id": page + "#dataset",
               "name": f"Data and code for: {m['title']}",
-              "description": ("Dataset and replication files for the meta-analysis. " + m["abstract"])[:4900],
+              "description": ("Dataset and replication files for the study. " + m["abstract"])[:4900],
               "url": page, "isAccessibleForFree": True, "inLanguage": "en",
               "distribution": dist, "subjectOf": {"@id": page + "#paper"}}
         if authors:
