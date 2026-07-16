@@ -38,7 +38,7 @@ Abstract: A key parameter in international economics is the elasticity of substi
 
 ## Beauty and Professional Success: A Meta-Analysis
 URL: https://meta-analysis.cz/beauty/
-Citation: Irsova Zuzana, Havranek Tomas, Borntikova Kseniya, Bartoš František (2025), "Meta-Analysis of Field Studies on Beauty and Professional Success." Charles University, Prague. Available at meta-analysis.cz/beauty.
+Citation: Irsova Zuzana, Havranek Tomas, Bortnikova Kseniya, Bartoš František (2025), "Meta-Analysis of Field Studies on Beauty and Professional Success." Charles University, Prague. Available at meta-analysis.cz/beauty.
 Paper: https://meta-analysis.cz/beauty/beauty.pdf
 Excluded Studies: https://meta-analysis.cz/beauty/excluded.xlsx
 Classification Details: https://meta-analysis.cz/beauty/classification.xlsx
