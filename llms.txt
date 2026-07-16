@@ -5,12 +5,12 @@
 ## Papers
 
 - [Does Shareholder Activism Create Value? A Meta-Analysis](https://meta-analysis.cz/activism/): Meta-analysis of 1,973 estimates from 67 studies finds shareholder activism raises stock prices by 0% to 1.5% after correcting for publication bias.
-- [Where Have All the Alphas Gone? A Meta-Analysis of Hedge Fund Performance](https://meta-analysis.cz/alphas/): Meta-analysis of 1,019 estimates from 74 studies finds hedge fund alpha is near zero after accounting for fees and research design.
+- [What Matters in Explaining the Variation in Hedge Fund Performance? A Meta-Analysis](https://meta-analysis.cz/alphas/): Meta-analysis of 1,019 estimates from 74 studies identifies which factors explain the variation in hedge fund performance; net performance is near zero.
 - [A Meta-Analysis of the Trade Cost Elasticity](https://meta-analysis.cz/armington/): Meta-analysis of 3,524 estimates finds the Armington trade elasticity is 2.5-5.1 after correcting for publication bias.
 - [Beauty and Professional Success: A Meta-Analysis](https://meta-analysis.cz/beauty/): A meta-analysis of 1,159 estimates: the beauty premium in earnings and productivity is small once publication bias and cognitive ability are addressed.
 - [A Meta-Analysis of Horizontal Spillovers from FDI](https://meta-analysis.cz/bma/): Meta-analysis of 1205 estimates finds horizontal FDI spillovers average zero, shaped by technology gap and ownership structure.
 - [Do Borders Really Slash Trade? A Meta-Analysis](https://meta-analysis.cz/border/): Meta-analysis of 1,271 estimates from 61 studies finds methodological choices shrink the true border effect on trade.
-- [Classs Size and Student Achievement: A Meta-Analysis](https://meta-analysis.cz/class/): A meta-analysis of 2,819 estimates from 66 studies finds little publication bias and a negligible class size effect on student achievement.
+- [Class Size and Student Achievement: A Meta-Analysis](https://meta-analysis.cz/class/): A meta-analysis of 2,819 estimates from 66 studies finds little publication bias and a negligible class size effect on student achievement.
 - [Publication Bias in Measuring Anthropogenic Climate Change](https://meta-analysis.cz/climate/): Meta-analysis of 48 estimates finds publication bias inflates climate sensitivity; corrected range is 1.4-2.3°C.
 - [Bank Competition and Financial Stability: Much Ado About Nothing?](https://meta-analysis.cz/competition/): A meta-analysis of 598 estimates from 31 studies finding little relationship between bank competition and financial stability.
 - [Reducing the biases of the conventional meta-analysis of correlations](https://meta-analysis.cz/correlations/): Simulations show UWLS+3 and PET-PEESE reduce small-sample and publication-selection bias in meta-analyses of correlations.

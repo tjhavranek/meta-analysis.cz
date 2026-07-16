@@ -14,7 +14,7 @@ Code: https://meta-analysis.cz/activism/activism.R
 
 Abstract: We conduct a meta-analysis of 1,973 estimates of stock price responses to shareholder activism reported in 67 primary studies. We document publication bias in the literature. Corrected activism effects range from 0% to 1.5%. Effects are stronger when shareholder rights are better protected and when stock markets are smaller. Markets respond more positively to activism by individual investors, confrontational activism, and activism aimed at company sale. Estimates based on longer periods, simpler risk-adjustment approaches, more recent and longer datasets, as well as those published in more reputable journals tend to be larger.
 
-## Where Have All the Alphas Gone? A Meta-Analysis of Hedge Fund Performance
+## What Matters in Explaining the Variation in Hedge Fund Performance? A Meta-Analysis
 URL: https://meta-analysis.cz/alphas/
 Citation: Fan Yang, Havranek Tomas, Irsova Zuzana, and Jiri Novak (2026), "What Matters in Explaining the Variation in Hedge Fund Performance?" Charles University, Prague. Available at meta-analysis.cz/alphas.
 Paper: https://meta-analysis.cz/alphas/alphas.pdf
@@ -70,9 +70,9 @@ Code: https://meta-analysis.cz/border/border.do
 
 Abstract: National borders reduce trade, but most estimates of the border effect seem puzzlingly large. We show that major methodological innovations of the last decade combine to shrink the border effect to a one-third reduction in international trade flows worldwide. For the computation we collect 1,271 estimates of the border effect reported in 61 studies, codify 32 aspects of study design that may influence the estimates, and use Bayesian model averaging to take into account model uncertainty in meta-analysis. Our results suggest that methods systematically affect the estimated border effects. Especially important is the level of aggregation, measurement of internal and external distance, control for multilateral resistance, and treatment of zero trade flows. We also find that the magnitude of the border effect is associated with country characteristics, such as size and income.
 
-## Classs Size and Student Achievement: A Meta-Analysis
+## Class Size and Student Achievement: A Meta-Analysis
 URL: https://meta-analysis.cz/class/
-Citation: Opatrny Matej, Havranek Tomas, Irsova Zuzana, Milan Scasny (2025), "Publication Bias and Model Uncertainty in Measuring the Effect of Class Size on Achievement." Journal of Labor Economics, forthcoming.
+Citation: Opatrny Matej, Havranek Tomas, Irsova Zuzana, Milan Scasny (2025), "Publication Bias and Model Uncertainty in Measuring the Effect of Class Size on Achievement." Journal of Labor Economics.
 Published version: https://doi.org/10.1086/737989
 Paper: https://meta-analysis.cz/class/class.pdf
 Supplement: https://meta-analysis.cz/class/appendix.pdf

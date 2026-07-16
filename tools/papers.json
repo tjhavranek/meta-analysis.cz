@@ -41,7 +41,7 @@
  },
  {
   "project": "alphas",
-  "title": "Where Have All the Alphas Gone? A Meta-Analysis of Hedge Fund Performance",
+  "title": "What Matters in Explaining the Variation in Hedge Fund Performance? A Meta-Analysis",
   "abstract": "We examine the ability of 34 variables to explain the variation in reported estimates of hedge fund performance. Using 1,019 estimates collected from 74 empirical studies, we identify 9 consistently relevant variables. We also quantify the impact of management and performance fees. Synthesizing this extensive empirical evidence, we show that when considering the fees and the variation in research designs, current performance implied by the best practice methodology is close to zero for all common hedge fund strategies. Our paper helps evaluate the robustness of prior propositions on hedge fund performance and reconcile some seemingly contradictory findings.",
   "reference_line": "Fan Yang, Havranek Tomas, Irsova Zuzana, and Jiri Novak (2026), \"What Matters in Explaining the Variation in Hedge Fund Performance?\" Charles University, Prague. Available at meta-analysis.cz/alphas.",
   "authors": [
@@ -77,7 +77,7 @@
   },
   "has_meta_description": true,
   "meta_keywords": "Hedge funds, alpha, fees, meta-analysis, model uncertainty",
-  "one_line": "Meta-analysis of 1,019 estimates from 74 studies finds hedge fund alpha is near zero after accounting for fees and research design."
+  "one_line": "Meta-analysis of 1,019 estimates from 74 studies identifies which factors explain the variation in hedge fund performance; net performance is near zero."
  },
  {
   "project": "armington",
@@ -248,7 +248,7 @@
   "project": "class",
   "title": "Class Size and Student Achievement: A Meta-Analysis",
   "abstract": "Class size reduction mandates are routinely justified by studies reporting positive effects on student achievement. Yet other studies report no effects, and the literature as a whole awaits correction for potential publication bias. Moreover, if identification drives results systematically, the relevance of individual studies will vary. We build a sample of 2,819 estimates collected from 66 studies and for each estimate classify 42 factors that reflect estimation context. We employ nonlinear techniques for publication bias correction and model averaging techniques to address model uncertainty. The results are consistent with little publication bias. The implied class size effect is negligible for all identification approaches except Tennessee's Student/Teacher Achievement Ratio project and for all contexts except classes of fewer than 15 students.",
-  "reference_line": "Opatrny Matej, Havranek Tomas, Irsova Zuzana, Milan Scasny (2025), \"Publication Bias and Model Uncertainty in Measuring the Effect of Class Size on Achievement.\" Journal of Labor Economics, forthcoming.",
+  "reference_line": "Opatrny Matej, Havranek Tomas, Irsova Zuzana, Milan Scasny (2025), \"Publication Bias and Model Uncertainty in Measuring the Effect of Class Size on Achievement.\" Journal of Labor Economics.",
   "authors": [
    "Matej Opatrny",
    "Tomas Havranek",
