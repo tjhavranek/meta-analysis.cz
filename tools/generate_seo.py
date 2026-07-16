@@ -299,8 +299,21 @@ def main():
     merged = {}
     for proj in projects:
         raw = open(os.path.join(SITE, proj, "index.html"), "rb").read().decode("utf-8")
+        # parse the page WITHOUT our own previous injection (else we'd mistake
+        # our injected meta description for the page's own and then drop it),
+        raw_clean = re.sub(re.escape(S_OPEN) + r".*?" + re.escape(S_CLOSE) + r"\n?",
+                           "", raw, flags=re.S)
+        # and flag hand-written metadata that would collide with our block
+        # (this is what happened on /debate before it was cleaned up)
+        for fam, pat in (("citation_*", r'name="citation_'),
+                         ("og:", r'property="og:'),
+                         ("JSON-LD", r'application/ld\+json')):
+            if re.search(pat, raw_clean):
+                WARNINGS.append(f"{proj}: page contains hand-written {fam} metadata "
+                                f"outside the seo-meta block — remove it or Scholar/"
+                                f"crawlers will see conflicting duplicates")
         # the live page is the source of truth for mechanical facts
-        base = fallback_parse(proj, raw)
+        base = fallback_parse(proj, raw_clean)
         if proj in metas:
             s = metas[proj]
             m = dict(base)   # title/abstract/menu/figure/keywords from CURRENT page

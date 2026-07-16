@@ -57,6 +57,10 @@ for rel in pages:
         fails.append(f"{rel}: VISIBLE TEXT CHANGED")
     if new.count('rel="canonical"') != 1:
         fails.append(f"{rel}: canonical count != 1")
+    # duplicate metadata families confuse Google Scholar (the /debate incident)
+    for tag in ('name="citation_title"', 'property="og:title"'):
+        if new.count(tag) > 1:
+            fails.append(f"{rel}: DUPLICATE {tag} ({new.count(tag)}x) - conflicting metadata blocks")
     blocks = re.findall(r'<script type="application/ld\+json">(.*?)</script>', new, re.S)
     if len(blocks) != 1:
         fails.append(f"{rel}: expected 1 JSON-LD block, found {len(blocks)}")
