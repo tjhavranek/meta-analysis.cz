@@ -1,0 +1,1848 @@
+[
+ {
+  "project": "activism",
+  "title": "Does Shareholder Activism Create Value? A Meta-Analysis",
+  "abstract": "We conduct a meta-analysis of 1,973 estimates of stock price responses to shareholder activism reported in 67 primary studies. We document publication bias in the literature. Corrected activism effects range from 0% to 1.5%. Effects are stronger when shareholder rights are better protected and when stock markets are smaller. Markets respond more positively to activism by individual investors, confrontational activism, and activism aimed at company sale. Estimates based on longer periods, simpler risk-adjustment approaches, more recent and longer datasets, as well as those published in more reputable journals tend to be larger.",
+  "reference_line": "Bajzik Josef, Havranek Tomas, Irsova Zuzana, Jiri Novak (2025), \"Does Shareholder Activism Create Value? A Meta-Analysis.\" Corporate Governance: An International Review 33(5): 1039-1061.",
+  "authors": [
+   "Josef Bajzik",
+   "Tomas Havranek",
+   "Zuzana Irsova",
+   "Jiri Novak"
+  ],
+  "year": 2025,
+  "journal": "Corporate Governance: An International Review",
+  "doi_or_publisher_url": null,
+  "menu_links": [
+   {
+    "label": "Paper",
+    "href": "activism2.pdf"
+   },
+   {
+    "label": "Appendix",
+    "href": "appendix.pdf"
+   },
+   {
+    "label": "Data",
+    "href": "activism.xlsx"
+   },
+   {
+    "label": "Code",
+    "href": "activism.R"
+   }
+  ],
+  "figure": {
+   "src": "funnel.png",
+   "caption": "Fig: Selective reporting against negative estimates (indicated by funnel asymmetry)"
+  },
+  "has_meta_description": true,
+  "meta_keywords": "shareholder activism, price response, value created, meta-analysis, publication bias, model averaging",
+  "one_line": "Meta-analysis of 1,973 estimates from 67 studies finds shareholder activism raises stock prices by 0% to 1.5% after correcting for publication bias."
+ },
+ {
+  "project": "alphas",
+  "title": "Where Have All the Alphas Gone? A Meta-Analysis of Hedge Fund Performance",
+  "abstract": "We examine the ability of 34 variables to explain the variation in reported estimates of hedge fund performance. Using 1,019 estimates collected from 74 empirical studies, we identify 9 consistently relevant variables. We also quantify the impact of management and performance fees. Synthesizing this extensive empirical evidence, we show that when considering the fees and the variation in research designs, current performance implied by the best practice methodology is close to zero for all common hedge fund strategies. Our paper helps evaluate the robustness of prior propositions on hedge fund performance and reconcile some seemingly contradictory findings.",
+  "reference_line": "Fan Yang, Havranek Tomas, Irsova Zuzana, and Jiri Novak (2024), \"Where Have All the Alphas Gone? A Meta-Analysis of Hedge Fund Performance.\" Charles University, Prague. Available at meta-analysis.cz/alphas.",
+  "authors": [
+   "Fan Yang",
+   "Tomas Havranek",
+   "Zuzana Irsova",
+   "Jiri Novak"
+  ],
+  "year": 2024,
+  "journal": null,
+  "doi_or_publisher_url": null,
+  "menu_links": [
+   {
+    "label": "Paper",
+    "href": "alphas.pdf"
+   },
+   {
+    "label": "Included Studies",
+    "href": "studies.xlsx"
+   },
+   {
+    "label": "Data",
+    "href": "alphas.xlsx"
+   },
+   {
+    "label": "Code",
+    "href": "alphas.do"
+   }
+  ],
+  "figure": {
+   "src": "trend.png",
+   "caption": "Fig: Reported hedge fund alphas decrease"
+  },
+  "has_meta_description": true,
+  "meta_keywords": "Hedge funds, alpha, fees, meta-analysis, model uncertainty",
+  "one_line": "Meta-analysis of 1,019 estimates from 74 studies finds hedge fund alpha is near zero after accounting for fees and research design."
+ },
+ {
+  "project": "armington",
+  "title": "A Meta-Analysis of the Trade Cost Elasticity",
+  "abstract": "A key parameter in international economics is the elasticity of substitution between domestic and foreign goods, also called the Armington elasticity. Yet estimates vary widely. We collect 3,524 reported estimates of the elasticity, construct 32 variables that reflect the context in which researchers obtain their estimates, and examine what drives the heterogeneity in the results. To account for model uncertainty, we employ Bayesian and frequentist model averaging. To correct for publication bias, we use newly developed non-linear techniques. Our main results are threefold. First, there is publication bias against small and statistically insignificant elasticities. Second, differences in results are best explained by differences in data: aggregation, frequency, size, and dimension. Third, the elasticity implied by the literature after accounting for both publication bias and study quality lies in the range 2.5--5.1 with a median of 3.8.",
+  "reference_line": "Josef Bajzik, Tomas Havranek, Zuzana Irsova, and Jiri Schwarz (2020), \"Estimating the Armington Elasticity: The Importance of Study Design and Publication Bias.\" Journal of International Economics 127, 103383.",
+  "authors": [
+   "Josef Bajzik",
+   "Tomas Havranek",
+   "Zuzana Irsova",
+   "Jiri Schwarz"
+  ],
+  "year": 2020,
+  "journal": "Journal of International Economics",
+  "doi_or_publisher_url": null,
+  "menu_links": [
+   {
+    "label": "Paper",
+    "href": "armington2.pdf"
+   },
+   {
+    "label": "Additional Results",
+    "href": "appendix.pdf"
+   },
+   {
+    "label": "Included Studies",
+    "href": "studies.xlsx"
+   },
+   {
+    "label": "Data",
+    "href": "armington.xlsx"
+   },
+   {
+    "label": "Code",
+    "href": "armington.do"
+   }
+  ],
+  "figure": {
+   "src": "trend.png",
+   "caption": "Fig: The mean and variance of reported elasticities increase over time"
+  },
+  "has_meta_description": true,
+  "meta_keywords": "Armington, trade elasticity, elasticity of substitution, Bayesian model averaging, meta-analysis, publication bias",
+  "one_line": "Meta-analysis of 3,524 estimates finds the Armington trade elasticity is 2.5-5.1 after correcting for publication bias."
+ },
+ {
+  "project": "beauty",
+  "title": "Beauty and Professional Success: A Meta-Analysis",
+  "abstract": "Common wisdom suggests that beauty helps in the labor market. We show that two factors combine to explain away most of the mean beauty premium reported in the literature. First, correcting for publication bias reduces the premium by at least a third. Second, controlling for cognitive ability renders the premium small (mean = 1.1%; 95% CrI = -0.8%, 3.0%) for all occupations except sex workers, where appearance is a direct input. The beauty premium is similar for earnings and productivity, a fact inconsistent with discrimination based on employer tastes for beauty. We find little evidence of attenuation bias that could offset publication and omitted-variable biases. To obtain these results we collect 1,159 estimates of the beauty premium in 67 studies and codify 35 aspects that reflect estimation context. We employ recently developed techniques to account for publication bias and model uncertainty.",
+  "reference_line": "Irsova Zuzana, Havranek Tomas, Borntikova Kseniya, Bartoš František (2025), \"Meta-Analysis of Field Studies on Beauty and Professional Success.\" Charles University, Prague. Available at meta-analysis.cz/beauty.",
+  "authors": [
+   "Zuzana Irsova",
+   "Tomas Havranek",
+   "Kseniya Bortnikova",
+   "František Bartoš"
+  ],
+  "year": 2025,
+  "journal": null,
+  "doi_or_publisher_url": null,
+  "menu_links": [
+   {
+    "label": "Paper",
+    "href": "beauty.pdf"
+   },
+   {
+    "label": "Excluded Studies",
+    "href": "excluded.xlsx"
+   },
+   {
+    "label": "Classification Details",
+    "href": "classification.xlsx"
+   },
+   {
+    "label": "Replication Package",
+    "href": "replication.zip"
+   }
+  ],
+  "figure": {
+   "src": "trend.png",
+   "caption": "Fig: Reported beauty premiums diverge"
+  },
+  "has_meta_description": true,
+  "meta_keywords": "Beauty premium, productivity, meta-analysis, model uncertainty, publication bias",
+  "one_line": "A meta-analysis of 1,159 estimates: the beauty premium in earnings and productivity is small once publication bias and cognitive ability are addressed."
+ },
+ {
+  "project": "bma",
+  "title": "A Meta-Analysis of Horizontal Spillovers from FDI",
+  "abstract": "The voluminous empirical research on horizontal productivity spillovers from foreign investors to domestic firms has yielded mixed results. In this paper, we collect 1205 estimates of horizontal spillovers from the literature and examine which factors influence spillover magnitude. To identify the most important determinants of spillovers among 43 collected variables, we employ Bayesian model averaging. Our results suggest that horizontal spillovers are on average zero, but that their sign and magnitude depend systematically on the characteristics of the domestic economy and foreign investors. The most important determinants are the technology gap between domestic and foreign firms and the ownership structure in investment projects. Foreign investors who form joint ventures with domestic firms and who come from countries with a modest technology edge create the largest benefits for the domestic economy.",
+  "reference_line": "Zuzana Irsova & Tomas Havranek (2013), \"Determinants of Horizontal Spillovers from FDI: Evidence from a Large Meta-Analysis.\" World Development 42, 1-15.",
+  "authors": [
+   "Zuzana Irsova",
+   "Tomas Havranek"
+  ],
+  "year": 2013,
+  "journal": "World Development",
+  "doi_or_publisher_url": null,
+  "menu_links": [
+   {
+    "label": "Paper",
+    "href": "bma2.pdf"
+   },
+   {
+    "label": "Data in XLS (6.8 MB)",
+    "href": "determinants.xls"
+   },
+   {
+    "label": "Stata Program",
+    "href": "determinants.do"
+   },
+   {
+    "label": "Excluded Studies",
+    "href": "excluded_studies.txt"
+   }
+  ],
+  "figure": null,
+  "has_meta_description": true,
+  "meta_keywords": "foreign direct investment, productivity, spillovers, meta-analysis, determinants",
+  "one_line": "Meta-analysis of 1205 estimates finds horizontal FDI spillovers average zero, shaped by technology gap and ownership structure."
+ },
+ {
+  "project": "border",
+  "title": "Do Borders Really Slash Trade? A Meta-Analysis",
+  "abstract": "National borders reduce trade, but most estimates of the border effect seem puzzlingly large. We show that major methodological innovations of the last decade combine to shrink the border effect to a one-third reduction in international trade flows worldwide. For the computation we collect 1,271 estimates of the border effect reported in 61 studies, codify 32 aspects of study design that may influence the estimates, and use Bayesian model averaging to take into account model uncertainty in meta-analysis. Our results suggest that methods systematically affect the estimated border effects. Especially important is the level of aggregation, measurement of internal and external distance, control for multilateral resistance, and treatment of zero trade flows. We also find that the magnitude of the border effect is associated with country characteristics, such as size and income.",
+  "reference_line": "Tomas Havranek and Zuzana Irsova (2017), \"Do Borders Really Slash Trade? A Meta-Analysis.\" IMF Economic Review 65(2), 365-396.",
+  "authors": [
+   "Tomas Havranek",
+   "Zuzana Irsova"
+  ],
+  "year": 2017,
+  "journal": "IMF Economic Review",
+  "doi_or_publisher_url": null,
+  "menu_links": [
+   {
+    "label": "Paper",
+    "href": "border2.pdf"
+   },
+   {
+    "label": "Additional Material",
+    "href": "appendix.pdf"
+   },
+   {
+    "label": "Examined Studies",
+    "href": "search.htm"
+   },
+   {
+    "label": "Included Studies",
+    "href": "studies.xls"
+   },
+   {
+    "label": "Data",
+    "href": "border.dta"
+   },
+   {
+    "label": "Code",
+    "href": "border.do"
+   }
+  ],
+  "figure": {
+   "src": "bma.png",
+   "caption": "Fig: Determinants of the reported border effects"
+  },
+  "has_meta_description": true,
+  "meta_keywords": "border effect, international trade, gravity model, Bayesian model averaging, meta-analysis",
+  "one_line": "Meta-analysis of 1,271 estimates from 61 studies finds methodological choices shrink the true border effect on trade."
+ },
+ {
+  "project": "class",
+  "title": "Class Size and Student Achievement: A Meta-Analysis",
+  "abstract": "Class size reduction mandates are routinely justified by studies reporting positive effects on student achievement. Yet other studies report no effects, and the literature as a whole awaits correction for potential publication bias. Moreover, if identification drives results systematically, the relevance of individual studies will vary. We build a sample of 2,819 estimates collected from 66 studies and for each estimate classify 42 factors that reflect estimation context. We employ nonlinear techniques for publication bias correction and model averaging techniques to address model uncertainty. The results are consistent with little publication bias. The implied class size effect is negligible for all identification approaches except Tennessee's Student/Teacher Achievement Ratio project and for all contexts except classes of fewer than 15 students.",
+  "reference_line": "Opatrny Matej, Havranek Tomas, Irsova Zuzana, Milan Scasny (2025), \"Publication Bias and Model Uncertainty in Measuring the Effect of Class Size on Achievement.\" Journal of Labor Economics, forthcoming.",
+  "authors": [
+   "Matej Opatrny",
+   "Tomas Havranek",
+   "Zuzana Irsova",
+   "Milan Scasny"
+  ],
+  "year": 2025,
+  "journal": "Journal of Labor Economics",
+  "doi_or_publisher_url": null,
+  "menu_links": [
+   {
+    "label": "Paper",
+    "href": "class.pdf"
+   },
+   {
+    "label": "Supplement",
+    "href": "appendix.pdf"
+   },
+   {
+    "label": "Studies",
+    "href": "studies.xlsx"
+   },
+   {
+    "label": "Data",
+    "href": "class.xlsx"
+   },
+   {
+    "label": "Code",
+    "href": "class.do"
+   }
+  ],
+  "figure": {
+   "src": "funnel.png",
+   "caption": "Fig: Little publication bias, most precise estimates around zero"
+  },
+  "has_meta_description": true,
+  "meta_keywords": "Class size, student learning, meta-analysis, publication bias, Bayesian model averaging",
+  "one_line": "A meta-analysis of 2,819 estimates from 66 studies finds little publication bias and a negligible class size effect on student achievement."
+ },
+ {
+  "project": "climate",
+  "title": "Publication Bias in Measuring Anthropogenic Climate Change",
+  "abstract": "We present a meta-regression analysis of the relation between the concentration of carbon dioxide in the atmosphere and changes in global temperature. The relation is captured by \"climate sensitivity,\" which measures the response to a doubling of carbon dioxide concentrations compared to pre-industrial levels. Estimates of climate sensitivity play a crucial role in evaluating the impacts of climate change and constitute one of the most important inputs into the computation of the social cost of carbon, which reflects the socially optimal value of a carbon tax. Climate sensitivity has been estimated by many researchers, but their results vary significantly. We collect 48 estimates from 16 studies and analyze the literature quantitatively. We find evidence for publication selection bias: researchers tend to report preferentially large estimates of climate sensitivity. Corrected for publication bias, the bulk of the literature is consistent with climate sensitivity lying between 1.4 and 2.3 degrees Celsius.",
+  "reference_line": "Dominika Reckova and Zuzana Irsova (2015), \"Publication Bias in Measuring Anthropogenic Climate Change.\" Energy and Environment 26 (5), 853-862.",
+  "authors": [
+   "Dominika Reckova",
+   "Zuzana Irsova"
+  ],
+  "year": 2015,
+  "journal": "Energy and Environment",
+  "doi_or_publisher_url": null,
+  "menu_links": [
+   {
+    "label": "Read the paper",
+    "href": "climate2.pdf"
+   },
+   {
+    "label": "Additional results",
+    "href": "appendix.pdf"
+   },
+   {
+    "label": "Download the data",
+    "href": "climate.dta"
+   },
+   {
+    "label": "Download the code",
+    "href": "climate.do"
+   }
+  ],
+  "figure": null,
+  "has_meta_description": true,
+  "meta_keywords": "Climate sensitivity, publication selection bias, meta-analysis",
+  "one_line": "Meta-analysis of 48 estimates finds publication bias inflates climate sensitivity; corrected range is 1.4-2.3°C."
+ },
+ {
+  "project": "competition",
+  "title": "Bank Competition and Financial Stability: Much Ado About Nothing?",
+  "abstract": "The theoretical literature gives conflicting predictions on how bank competition should affect financial stability, and dozens of researchers have attempted to evaluate the relationship empirically. We collect 598 estimates of the competition-stability nexus reported in 31 studies and analyze the literature using meta-analysis methods. We control for 35 aspects of study design and employ Bayesian model averaging to tackle the resulting model uncertainty. Our findings suggest that the definition of financial stability and bank competition used by researchers influences their results in a systematic way. The choice of data, estimation methodology, and control variables also affects the reported coefficient. We find evidence for moderate publication bias. Taken together, the estimates reported in the literature suggest little interplay between competition and stability, even when corrected for publication bias and potential misspecifications.",
+  "reference_line": "Diana Zigraiova and Tomas Havranek (2016), \"Bank Competition and Financial Stability: Much Ado About Nothing?\" Journal of Economic Surveys 30(5), 944-981.",
+  "authors": [
+   "Diana Zigraiova",
+   "Tomas Havranek"
+  ],
+  "year": 2016,
+  "journal": "Journal of Economic Surveys",
+  "doi_or_publisher_url": null,
+  "menu_links": [
+   {
+    "label": "Paper",
+    "href": "competition2.pdf"
+   },
+   {
+    "label": "Additional Results",
+    "href": "additional_results.pdf"
+   },
+   {
+    "label": "Included Studies",
+    "href": "included_studies.pdf"
+   },
+   {
+    "label": "Data",
+    "href": "competition.xlsx"
+   },
+   {
+    "label": "Code",
+    "href": "competition.do"
+   }
+  ],
+  "figure": {
+   "src": "competition.png",
+   "caption": "Fig: The most precise estimates of the competition-stability nexus are close to zero"
+  },
+  "has_meta_description": true,
+  "meta_keywords": "Bayesian model averaging, bank competition, financial stability, publication selection bias, meta-analysis",
+  "one_line": "A meta-analysis of 598 estimates from 31 studies finding little relationship between bank competition and financial stability."
+ },
+ {
+  "project": "correlations",
+  "title": "Reducing the biases of the conventional meta-analysis of correlations",
+  "abstract": "Conventional meta-analyses (both fixed and random effects) of correlations are biased due to the correlation between the estimated correlation and its standard error. Simulations that are closely calibrated to match actual research conditions widely seen across correlational studies in psychology corroborate these biases and suggest two solutions: UWLS+3 and HS. UWLS+3 is a simple inverse-variance weighted average (the unrestricted weighted least squares) that adjusts the degrees of freedom and thereby reduces small-sample bias to scientific negligibility. UWLS+3 as well as the Hunter and Schmidt approach (HS) are less biased than conventional random-effects estimates of correlations and Fisher's z, whether or not there is publication selection bias. However, publication selection bias remains a ubiquitous source of bias and false positive findings. Despite the correlation between the estimated correlation and its standard error even in the absence of any selective reporting, the precision-effect test/precision-effect estimate with standard error (PET-PEESE) nearly eradicates publication selection bias. Surprisingly, PET-PEESE keeps the rate of false positives (i.e., type I errors) within their nominal levels under the typical conditions widely seen across psychological research whether there is publication selection bias, or not.",
+  "reference_line": "T. D. Stanley, Hristos Doucouliagos, and Tomas Havranek (2025): \"Reducing the biases of the conventional meta-analysis of correlations.\" Research Synthesis Methods 16(1): 42-59.",
+  "authors": [
+   "T. D. Stanley",
+   "Hristos Doucouliagos",
+   "Tomas Havranek"
+  ],
+  "year": 2025,
+  "journal": "Research Synthesis Methods",
+  "doi_or_publisher_url": null,
+  "menu_links": [
+   {
+    "label": "Read the paper",
+    "href": "correlations2.pdf"
+   },
+   {
+    "label": "Download the supplement (including data and code)",
+    "href": "https://osf.io/8we4b/"
+   }
+  ],
+  "figure": null,
+  "has_meta_description": true,
+  "meta_keywords": "correlation coefficients, meta-analysis, bias, small sample",
+  "one_line": "Simulations show UWLS+3 and PET-PEESE reduce small-sample and publication-selection bias in meta-analyses of correlations."
+ },
+ {
+  "project": "discrate",
+  "title": "Individual Discount Rates: A Meta-Analysis of Experimental Evidence",
+  "abstract": "A key parameter estimated by lab and field experiments in economics is the individual discount rate---and the results vary widely. We examine the extent to which this variance can be attributed to observable differences in methods, subject pools, and potential publication bias. To address the model uncertainty inherent to such an exercise, we employ Bayesian and frequentist model averaging. We obtain evidence consistent with publication bias against unintuitive results. The corrected mean annual discount rate is 0.33. Our findings also suggest that discount rates are independent across domains: people tend to be less patient when health is at stake compared to money. Negative framing is associated with more patience. Finally, the results of lab and field experiments differ systematically, and it also matters whether the experiment relies on students or uses broader samples of the population.",
+  "reference_line": "Jindrich Matousek, Tomas Havranek, and Zuzana Irsova (2022), \"Individual Discount Rates: A Meta-Analysis of Experimental Evidence.\" Experimental Economics 25(1), 318-358.",
+  "authors": [
+   "Jindrich Matousek",
+   "Tomas Havranek",
+   "Zuzana Irsova"
+  ],
+  "year": 2022,
+  "journal": "Experimental Economics",
+  "doi_or_publisher_url": null,
+  "menu_links": [
+   {
+    "label": "Paper",
+    "href": "discrate2.pdf"
+   },
+   {
+    "label": "Included Studies",
+    "href": "studies.xlsx"
+   },
+   {
+    "label": "Data",
+    "href": "discrate.dta"
+   },
+   {
+    "label": "Code",
+    "href": "discrate.do"
+   }
+  ],
+  "figure": {
+   "src": "funnel.png",
+   "caption": "Fig: The funnel plot suggests publication bias in the literature"
+  },
+  "has_meta_description": true,
+  "meta_keywords": "discount rate, experiments, Bayesian model averaging, meta-analysis, publication bias",
+  "one_line": "Meta-analysis of experimental discount-rate estimates finds publication bias and a corrected mean annual rate of 0.33."
+ },
+ {
+  "project": "dst",
+  "title": "Does Daylight Saving Save Electricity? A Meta-Analysis",
+  "abstract": "The original rationale for adopting daylight saving time (DST) was energy savings. Modern research studies, however, question the magnitude and even direction of the effect of DST on electricity consumption. Representing the first meta-analysis in this literature, we collect 162 estimates from 44 studies and find that the mean reported estimate indicates slight electricity savings: 0.34% during the days when DST applies. The literature is not affected by publication bias, but the results vary systematically depending on the exact data and methodology applied. Using Bayesian model averaging we identify the most important factors driving the heterogeneity of the reported effects: data frequency, estimation technique (simulation vs. regression), and, importantly, the latitude of the country considered. Electricity savings are larger for countries farther away from the equator, while subtropical regions consume more energy because of DST.",
+  "reference_line": "Tomas Havranek, Dominik Herman, and Zuzana Irsova (2018), \"Does Daylight Saving Save Electricity? A Meta-Analysis.\" Energy Journal 39(2), 35-61.",
+  "authors": [
+   "Tomas Havranek",
+   "Dominik Herman",
+   "Zuzana Irsova"
+  ],
+  "year": 2018,
+  "journal": "Energy Journal",
+  "doi_or_publisher_url": null,
+  "menu_links": [
+   {
+    "label": "Paper",
+    "href": "dst2.pdf"
+   },
+   {
+    "label": "Examined Studies",
+    "href": "search.html"
+   },
+   {
+    "label": "Included Studies",
+    "href": "studies.xlsx"
+   },
+   {
+    "label": "Data",
+    "href": "dst.xlsx"
+   },
+   {
+    "label": "Code",
+    "href": "dst.do"
+   }
+  ],
+  "figure": {
+   "src": "bma.png",
+   "caption": "Fig: Determinants of the reported DST effects (blue color denotes a negative effect on savings)"
+  },
+  "has_meta_description": true,
+  "meta_keywords": "Daylight saving time, energy savings, Bayesian model averaging, meta-analysis, publication bias",
+  "one_line": "A meta-analysis of 162 estimates from 44 studies finds daylight saving time yields slight electricity savings of about 0.34%."
+ },
+ {
+  "project": "education",
+  "title": "Publication Bias in Measuring the Impact of Tuition on Enrollment",
+  "abstract": "One of the most frequently examined relationships in education economics is the impact of tuition increases on the demand for higher education. We provide a quantitative synthesis of 443 estimates of this effect reported in 43 studies. While large negative estimates dominate the literature, we show that researchers report positive and insignificant estimates less often than they should. After correcting for this publication bias, we find that the literature is consistent with the mean tuition-enrollment elasticity being close to zero. Nevertheless, we identify substantial heterogeneity among the reported effects: for example, male students and students at private schools react strongly to changes in tuition. The results are robust to controlling for model uncertainty using both Bayesian and frequentist methods of model averaging.",
+  "reference_line": "Tomas Havranek, Zuzana Irsova, and Olesia Zeynalova (2018): \"Tuition Fees and University Enrolment: A Meta‐Regression Analysis\". Oxford Bulletin of Economics and Statistics 80(6): 1145-1184.",
+  "authors": [
+   "Tomas Havranek",
+   "Zuzana Irsova",
+   "Olesia Zeynalova"
+  ],
+  "year": 2018,
+  "journal": "Oxford Bulletin of Economics and Statistics",
+  "doi_or_publisher_url": null,
+  "menu_links": [
+   {
+    "label": "Paper",
+    "href": "education2.pdf"
+   },
+   {
+    "label": "Examined Studies",
+    "href": "search.html"
+   },
+   {
+    "label": "Included Studies",
+    "href": "studies.xlsx"
+   },
+   {
+    "label": "Data",
+    "href": "education.xlsx"
+   },
+   {
+    "label": "Code",
+    "href": "education.do"
+   }
+  ],
+  "figure": {
+   "src": "funnel.png",
+   "caption": "Fig: Publication Selection Creates a Downward Bias in the Literature"
+  },
+  "has_meta_description": true,
+  "meta_keywords": "demand for higher education, tuition, enrollment, model averaging, Bayesian model averaging, meta-analysis, publication bias",
+  "one_line": "Meta-analysis of 443 estimates finds the tuition-enrollment elasticity is near zero once publication bias is corrected."
+ },
+ {
+  "project": "eis",
+  "title": "Publication Bias in Measuring Intertemporal Substitution",
+  "abstract": "I examine 2,735 estimates of the elasticity of intertemporal substitution in consumption (EIS) reported in 169 published studies. The literature shows strong selective reporting: researchers discard negative and insignificant estimates too often, which pulls the mean estimate up by about 0.5. The reporting bias dwarfs the effects of methods, with the exception of the choice between micro and macro data. When I correct the mean for the bias, for macro estimates I get zero, even though the reported t-statistics are on average two. The corrected mean of micro estimates of the EIS for asset holders is around 0.3-0.4. Calibrations greater than 0.8 are inconsistent with the bulk of the empirical evidence.",
+  "reference_line": "Tomas Havranek (2015), \"Measuring Intertemporal Substitution: The Importance of Method Choices and Selective Reporting.\" Journal of the European Economic Association 13(6), 1180-1204.",
+  "authors": [
+   "Tomas Havranek"
+  ],
+  "year": 2015,
+  "journal": "Journal of the European Economic Association",
+  "doi_or_publisher_url": null,
+  "menu_links": [
+   {
+    "label": "Paper",
+    "href": "eis2.pdf"
+   },
+   {
+    "label": "Additional Results",
+    "href": "eis_appendix.pdf"
+   },
+   {
+    "label": "Examined Studies",
+    "href": "Scholar_search.htm"
+   },
+   {
+    "label": "Included Studies",
+    "href": "studies.xls"
+   },
+   {
+    "label": "Data and Code",
+    "href": "eis.zip"
+   }
+  ],
+  "figure": {
+   "src": "funnel_perstudy.png",
+   "caption": "Negative estimates of the elasticity are underreported ..."
+  },
+  "has_meta_description": true,
+  "meta_keywords": "Elasticity of intertemporal substitution, coefficient of relative risk aversion, consumption, meta-analysis, publication bias",
+  "one_line": "Meta-analysis of 2,735 EIS estimates finds strong selective reporting inflates the elasticity of intertemporal substitution."
+ },
+ {
+  "project": "euro",
+  "title": "A Meta-Analysis of the Trade Effect of the Euro",
+  "abstract": "This paper presents an updated meta-analysis of the effect of currency unions on trade, focusing on the euro area. Using meta-regression methods such as funnel asymmetry test, evidence for strong publication bias is found. The estimated underlying effect for currency unions other than eurozone reaches more than 60%. However, according to the meta-regression analysis, the euro's trade promoting effect corrected for publication bias is insignificant. The Rose effect literature shows signs of the economics research cycle: reported t-statistic is a quadratic concave function of publication year. Explanatory meta-regression (robust fixed effects and random effects), that can explain about 70% of the heterogeneity in the literature, suggests that results published by some authors might consistently differ from the mainstream output and that study outcomes are systematically dependent on study design (usage of panel data, short- or long-run nature, number of countries in the data set).",
+  "reference_line": "Tomas Havranek (2010), \"Rose Effect and the Euro: Is the Magic Gone?\" Review of World Economics, 146(2), pp. 241-261.",
+  "authors": [
+   "Tomas Havranek"
+  ],
+  "year": 2010,
+  "journal": "Review of World Economics",
+  "doi_or_publisher_url": null,
+  "menu_links": [
+   {
+    "label": "Read the paper",
+    "href": "euro2.pdf"
+   },
+   {
+    "label": "Download the data set",
+    "href": "data.zip"
+   }
+  ],
+  "figure": null,
+  "has_meta_description": true,
+  "meta_keywords": "Euro, trade, meta-analysis, publication bias",
+  "one_line": "Meta-analysis finds the euro's trade-promoting effect is insignificant once publication bias is corrected for."
+ },
+ {
+  "project": "excess_sensitivity",
+  "title": "A Meta-Analysis of the Excess Sensitivity of Consumption to Anticipated Income Changes",
+  "abstract": "We show that three factors combine to explain the mean magnitude of excess sensitivity reported in studies estimating the consumption response to income changes: the use of macro data, publication bias, and liquidity constraints. When micro data are used, publication bias is corrected for, and  households under examination have substantial liquidity, the literature implies little evidence of deviations from consumption smoothing. The result holds when we control for 45 additional variables reflecting the methods employed by researchers and use Bayesian model averaging to account for model uncertainty. The estimates produced by this literature are also systematically affected by the size of the change in income and the chosen measure of consumption.",
+  "reference_line": "Tomas Havranek & Anna Sokolova (2020), \"Do Consumers Really Follow a Rule of Thumb? Three Thousand Estimates from 144 Studies Say `Probably Not'.\" Review of Economic Dynamics 35(1), 97-122.",
+  "authors": [
+   "Tomas Havranek",
+   "Anna Sokolova"
+  ],
+  "year": 2020,
+  "journal": "Review of Economic Dynamics",
+  "doi_or_publisher_url": null,
+  "menu_links": [
+   {
+    "label": "Paper",
+    "href": "excess_sensitivity_2.pdf"
+   },
+   {
+    "label": "Additional Results",
+    "href": "appendix.pdf"
+   },
+   {
+    "label": "Examined Studies",
+    "href": "search.html"
+   },
+   {
+    "label": "Included Studies",
+    "href": "studies.xlsx"
+   },
+   {
+    "label": "Data and Code",
+    "href": "data_code.zip"
+   }
+  ],
+  "figure": null,
+  "has_meta_description": true,
+  "meta_keywords": "Excess sensitivity, consumption, income, Euler equation, meta-analysis, publication bias",
+  "one_line": "Meta-analysis of 144 studies finds little excess sensitivity of consumption once micro data, publication bias, and liquidity constraints are addressed."
+ },
+ {
+  "project": "exercise",
+  "title": "Effect of Exercise on Cognition, Memory, and Executive Function: A Study-Level Meta-Meta-Analysis Across Populations and Exercise Categories",
+  "abstract": "Physical exercise is widely believed to enhance cognition, yet evidence from meta-analyses remains mixed. Here we compile a study-level dataset of 2,239 effect-size estimates from 215 meta-analyses of randomized controlled trials examining the effect of exercise on general cognition, memory, and executive functions. We find strong evidence of selective reporting and large between-study heterogeneity. Analyses adjusted for publication bias reveal average effects much smaller than commonly reported (general cognition: standardized mean difference, SMD = 0.227, 95% credible interval 0.116 to 0.330; memory: SMD = 0.027, 95% credible interval 0.000 to 0.227; executive functions: SMD = 0.012, 95% credible interval 0.000 to 0.147), along with wide prediction intervals spanning both negative and positive effects. Subgroup analyses identify specific population-intervention combinations with more consistent benefits. Overall, broad claims of generalized cognitive enhancement resulting from physical exercise appear premature; the evidence supports targeted, population- and intervention-specific recommendations.",
+  "reference_line": "František Bartoš, Martina Lušková, Kseniya Bortnikova, Karolína Hozová, Klara Kantova, Zuzana Irsova, Tomas Havranek (2025), \"Effect of Exercise on Cognition, Memory, and Executive Function: A Study-Level Meta-Meta-Analysis Across Populations and Exercise Categories,\" available at osf.io/preprints/psyarxiv/qr8e2_v1.",
+  "authors": [
+   "František Bartoš",
+   "Martina Lušková",
+   "Kseniya Bortnikova",
+   "Karolína Hozová",
+   "Klara Kantova",
+   "Zuzana Irsova",
+   "Tomas Havranek"
+  ],
+  "year": 2025,
+  "journal": null,
+  "doi_or_publisher_url": "https://osf.io/preprints/psyarxiv/qr8e2_v1",
+  "menu_links": [
+   {
+    "label": "Read the paper",
+    "href": "https://osf.io/preprints/psyarxiv/qr8e2_v1"
+   },
+   {
+    "label": "Replication package",
+    "href": "https://osf.io/egfzt/overview"
+   }
+  ],
+  "figure": {
+   "src": "exercise.png",
+   "caption": "Fig: Heterogeneity in the effects of exercise"
+  },
+  "has_meta_description": true,
+  "meta_keywords": "Cognition, exercise, meta-analysis, model uncertainty, publication bias",
+  "one_line": "Meta-meta-analysis of 2,239 estimates finds publication-bias-adjusted exercise effects on cognition are smaller than commonly reported."
+ },
+ {
+  "project": "fdi",
+  "title": "Foreign Capital and Domestic Productivity in the Czech Republic: A Meta-Regression Analysis",
+  "abstract": "We provide a quantitative synthesis of the literature studying the effect of foreign direct investment (FDI) on the productivity of locally owned firms in the Czech Republic. To this end, we collect 332 previously reported estimates and use Bayesian model averaging to address model uncertainty. We find no evidence of publication bias, i.e., no sign of selective reporting of estimates that are statistically significant and show an intuitive sign. Our results suggest that more advanced techniques yield substantially larger positive effects (FDI spillovers). When placing more weight on estimates that solve important identification problems in the literature (such as using data on existing linkages between firms instead of approximations based on input-output tables), we find that, as of 2018, a 10-percentage-point increase in foreign presence is likely to lift the productivity of domestic firms by 11%. The effect is even larger for joint ventures, reaching 19%.",
+  "reference_line": "Mojmir Hampl, Tomas Havranek, and Zuzana Irsova (2020), \"Foreign Capital and Domestic Productivity in the Czech Republic: A Meta-Regression Analysis.\" Applied Economics 52(18), 1949-1958.",
+  "authors": [
+   "Mojmir Hampl",
+   "Tomas Havranek",
+   "Zuzana Irsova"
+  ],
+  "year": 2020,
+  "journal": "Applied Economics",
+  "doi_or_publisher_url": null,
+  "menu_links": [
+   {
+    "label": "Read the paper",
+    "href": "fdi2.pdf"
+   },
+   {
+    "label": "Download data and code",
+    "href": "spillovers.zip"
+   }
+  ],
+  "figure": null,
+  "has_meta_description": true,
+  "meta_keywords": "FDI, productivity spillovers, Czech Republic, Bayesian model averaging, meta-analysis, publication bias",
+  "one_line": "Meta-analysis of 332 estimates finds FDI spillovers raise Czech domestic firm productivity, larger for joint ventures."
+ },
+ {
+  "project": "finance_growth",
+  "title": "Financial Development and Economic Growth: A Meta-Analysis",
+  "abstract": "We analyze 1334 estimates from 67 studies that examine the effect of financial development on economic growth. Taken together, the studies imply a positive and statistically significant effect, but the individual estimates vary widely. We find that both research design and heterogeneity in the underlying effect play a role in explaining the differences in results. Studies that do not address endogeneity tend to overstate the effect of finance on growth. While the effect seems to be weaker in poor countries, the effect decreases worldwide after the 1980s. Our results also suggest that stock markets support faster economic growth than other financial intermediaries. We find little evidence of publication bias in the literature.",
+  "reference_line": "Petra Valickova, Tomas Havranek, and Roman Horvath (2015), \"Financial Development and Economic Growth: A Meta-Analysis.\" Journal of Economic Surveys 29(3), 506-526.",
+  "authors": [
+   "Petra Valickova",
+   "Tomas Havranek",
+   "Roman Horvath"
+  ],
+  "year": 2015,
+  "journal": "Journal of Economic Surveys",
+  "doi_or_publisher_url": null,
+  "menu_links": [
+   {
+    "label": "Read the paper",
+    "href": "finance_growth2.pdf"
+   },
+   {
+    "label": "Download the appendix",
+    "href": "appendix.pdf"
+   },
+   {
+    "label": "Download the data set",
+    "href": "finance_growth.zip"
+   }
+  ],
+  "figure": null,
+  "has_meta_description": true,
+  "meta_keywords": "finance, development, growth, meta-analysis",
+  "one_line": "A meta-analysis of 1334 estimates from 67 studies finds financial development has a positive, heterogeneous effect on economic growth."
+ },
+ {
+  "project": "forward",
+  "title": "How Puzzling Is the Forward Premium Puzzle? A Meta-Analysis",
+  "abstract": "A key theoretical prediction in financial economics is that under risk neutrality and rational expectations a currency's forward rates should form unbiased predictors of future spot rates. Yet scores of empirical studies report negative slope coefficients from regressions of spot rates on forward rates, which is inconsistent with the forward rate unbiasedness hypothesis. We collect 3,643 estimates from 91 research articles and using recently developed techniques investigate the effect of publication and misspecification biases on the reported results. Correcting for these biases we estimate the slope coefficients of 0.31 and 0.98 for developed and emerging currencies respectively, which implies that empirical evidence is in line with the theoretical prediction for emerging economies and less puzzling than commonly thought for developed economies. Our results also suggest that the coefficients are systematically influenced by the choice of data, numeraire currencies, and estimation methods.",
+  "reference_line": "Diana Zigraiova, Tomas Havranek, and Jiri Novak (2021), \"How Puzzling Is the Forward Premium Puzzle? A Meta-Analysis.\" European Economic Review 134, 103714.",
+  "authors": [
+   "Diana Zigraiova",
+   "Tomas Havranek",
+   "Jiri Novak"
+  ],
+  "year": 2021,
+  "journal": "European Economic Review",
+  "doi_or_publisher_url": null,
+  "menu_links": [
+   {
+    "label": "Paper",
+    "href": "forward2.pdf"
+   },
+   {
+    "label": "Additional material",
+    "href": "appendix.pdf"
+   },
+   {
+    "label": "Data",
+    "href": "forward.dta"
+   },
+   {
+    "label": "Code",
+    "href": "forward.do"
+   }
+  ],
+  "figure": {
+   "src": "forward.png",
+   "caption": "Fig: Positive estimates are underreported"
+  },
+  "has_meta_description": true,
+  "meta_keywords": "forward premium, forward rate unbiasedness, forward discount, Bayesian model averaging, meta-analysis, publication bias",
+  "one_line": "Meta-analysis of 3,643 estimates from 91 studies finds forward rate unbiasedness holds better than commonly thought once biases are corrected."
+ },
+ {
+  "project": "frisch",
+  "title": "Publication and Identification Biases in Measuring the Intertemporal Substitution of Labor Supply",
+  "abstract": "The intertemporal substitution (Frisch) elasticity of labor supply governs how structural models predict changes in people's willingness to work in response to changes in economic conditions or government fiscal policy. We show that the mean reported estimates of the elasticity are exaggerated due to publication bias. For both the intensive and extensive margins the literature provides over 700 estimates, with a mean of 0.5 in both cases. Correcting for publication bias and emphasizing quasi-experimental evidence reduces the mean intensive margin elasticity to 0.2 and renders the extensive margin elasticity tiny. A total hours elasticity of about 0.25 is the most consistent with empirical evidence. To trace the differences in reported elasticities to differences in estimation context, we collect 23 variables reflecting study design and employ Bayesian and frequentist model averaging to address model uncertainty. On both margins the elasticity is systematically larger for women and workers near retirement, but not enough to support a total hours elasticity above 0.5.",
+  "reference_line": "Ali Elminejad, Tomas Havranek, Roman Horvath, and Zuzana Irsova (2023), \"Intertemporal Substitution in Labor Supply: A Meta-Analysis.\" Review of Economic Dynamics 51, 1095-1113.",
+  "authors": [
+   "Ali Elminejad",
+   "Tomas Havranek",
+   "Roman Horvath",
+   "Zuzana Irsova"
+  ],
+  "year": 2023,
+  "journal": "Review of Economic Dynamics",
+  "doi_or_publisher_url": null,
+  "menu_links": [
+   {
+    "label": "Paper",
+    "href": "frisch2.pdf"
+   },
+   {
+    "label": "Appendix",
+    "href": "appendix.pdf"
+   },
+   {
+    "label": "Included Studies",
+    "href": "studies.xlsx"
+   },
+   {
+    "label": "Data",
+    "href": "frisch_data.zip"
+   },
+   {
+    "label": "Code",
+    "href": "frisch_code.zip"
+   }
+  ],
+  "figure": {
+   "src": "frisch.png",
+   "caption": "Fig: Publication and identification biases drive the results"
+  },
+  "has_meta_description": true,
+  "meta_keywords": "Frisch elasticity, labor supply, extensive margin, meta-analysis, publication bias, Bayesian model averaging",
+  "one_line": "Meta-analysis of over 700 estimates finds publication bias inflates the Frisch labor supply elasticity, with a corrected total hours elasticity near 0.25."
+ },
+ {
+  "project": "gasoline",
+  "title": "A Meta-Analysis of the Income Elasticity of Gasoline Demand",
+  "abstract": "In this paper we quantitatively synthesize empirical estimates of the income elasticity of gasoline demand reported in previous studies. The studies cover many countries and report a mean elasticity of 0.28 for the short run and 0.66 for the long run. We show, however, that these mean estimates are biased upwards because of publication bias---the tendency to suppress negative and insignificant estimates of the elasticity. We employ mixed-effects multilevel meta-regression to filter out publication bias from the literature. Our results suggest that the income elasticity of gasoline demand is on average much smaller than reported in previous surveys: the mean corrected for publication bias is 0.1 for the short run and 0.23 for the long run.",
+  "reference_line": "Tomas Havranek and Ondrej Kokes (2015), \"Income Elasticity of Gasoline Demand: A Meta-Analysis.\" Energy Economics 47, pp. 77-86.",
+  "authors": [
+   "Tomas Havranek",
+   "Ondrej Kokes"
+  ],
+  "year": 2015,
+  "journal": "Energy Economics",
+  "doi_or_publisher_url": null,
+  "menu_links": [
+   {
+    "label": "Read the paper",
+    "href": "gasoline2.pdf"
+   },
+   {
+    "label": "Download the data and code",
+    "href": "data.zip"
+   }
+  ],
+  "figure": null,
+  "has_meta_description": true,
+  "meta_keywords": "Gasoline demand, income elasticity, meta-analysis, publication bias",
+  "one_line": "Meta-regression corrects for publication bias, finding gasoline demand income elasticity of 0.1 short run and 0.23 long run."
+ },
+ {
+  "project": "gasoline_price",
+  "title": "A Meta-Analysis of the Price Elasticity of Gasoline Demand",
+  "abstract": "One of the most frequently examined statistical relationships in energy economics has been the price elasticity of gasoline demand. We conduct a quantitative survey of the estimates of elasticity reported for various countries around the world. Our meta-analysis indicates that the literature suffers from publication selection bias: insignificant or positive estimates of the price elasticity are rarely reported, although implausibly large negative estimates are reported regularly. In consequence, the average published estimates of both short- and long-run elasticities are exaggerated twofold. Using mixed-effects multilevel meta-regression, we show that after correction for publication bias the average long-run elasticity reaches -0.31 and the average short-run elasticity only -0.09.",
+  "reference_line": "Tomas Havranek, Zuzana Irsova, and Karel Janda (2012), \"Demand for Gasoline is More Price-Inelastic than Commonly Thought,\" Energy Economics 34(1), pp. 201-207.",
+  "authors": [
+   "Tomas Havranek",
+   "Zuzana Irsova",
+   "Karel Janda"
+  ],
+  "year": 2012,
+  "journal": "Energy Economics",
+  "doi_or_publisher_url": null,
+  "menu_links": [
+   {
+    "label": "Read the paper",
+    "href": "gasoline_price2.pdf"
+   },
+   {
+    "label": "Download the data set",
+    "href": "data.zip"
+   }
+  ],
+  "figure": null,
+  "has_meta_description": true,
+  "meta_keywords": "Gasoline demand, price elasticity, meta-analysis, publication bias",
+  "one_line": "Meta-analysis shows published gasoline demand elasticities are exaggerated twofold due to publication selection bias."
+ },
+ {
+  "project": "guidelines",
+  "title": "Meta-Analysis of Social Science Research: A Practitioner’s Guide",
+  "abstract": "This paper provides concise, nontechnical, step-by-step guidelines on how to conduct a modern meta-analysis, especially in social sciences. We treat publication bias, p-hacking, and systematic heterogeneity as phenomena meta-analysts must always confront. To this end, we provide concrete methodological recommendations. Meta-analysis methods have advanced notably over the last few years. Yet many meta-analyses still rely on outdated approaches, some ignoring publication bias and systematic heterogeneity. While limitations persist, recently developed techniques allow robust inference even in the face of formidable problems in the underlying empirical literature. The purpose of this paper is to summarize the state of the art in a way accessible to aspiring meta-analysts in any field. We also discuss how meta-analysts can use advances in artificial intelligence to work more efficiently.",
+  "reference_line": "Zuzana Irsova, Hristos Doucouliagos, Tomas Havranek, and T. D. Stanley (2024): \"Meta-Analysis of Social Science Research: A Practitioner’s Guide.\" Journal of Economic Surveys 38(5): 1547-1566.",
+  "authors": [
+   "Zuzana Irsova",
+   "Hristos Doucouliagos",
+   "Tomas Havranek",
+   "T. D. Stanley"
+  ],
+  "year": 2024,
+  "journal": "Journal of Economic Surveys",
+  "doi_or_publisher_url": "https://onlinelibrary.wiley.com/doi/full/10.1111/joes.12595",
+  "menu_links": [
+   {
+    "label": "Meta-analysis guidelines",
+    "href": "https://onlinelibrary.wiley.com/doi/full/10.1111/joes.12595"
+   },
+   {
+    "label": "Blog version",
+    "href": "https://www.maer-net.org/post/methods-guidelines-for-meta-analysis"
+   },
+   {
+    "label": "Recent applied meta-analyses",
+    "href": "/"
+   }
+  ],
+  "figure": null,
+  "has_meta_description": true,
+  "meta_keywords": "meta-analysis, publication bias, p-hacking, artificial intelligence, model uncertainty",
+  "one_line": "Step-by-step guidelines for modern meta-analysis in social sciences, covering publication bias, p-hacking, heterogeneity, and AI-assisted workflows."
+ },
+ {
+  "project": "habits",
+  "title": "Habit Formation in Consumption: A Meta-Analysis",
+  "abstract": "We examine 597 estimates of habit formation reported in 81 published studies. The mean reported strength of habit formation equals 0.4, but the estimates vary widely both within and across studies. We use Bayesian and frequentist model averaging to assign a pattern to this variance while taking into account model uncertainty. Studies employing macro data report consistently larger estimates than micro studies: 0.6 vs. 0.1 on average. The difference remains 0.5 when we control for 30 factors that reflect the context in which researchers obtain their estimates, such as data frequency, geographical coverage, variable definition, estimation approach, and publication characteristics. We also find that evidence for habits strengthens when researchers use lower data frequencies, employ log-linear approximation of the Euler equation, and utilize open-economy DSGE models. Moreover, estimates of habits differ systematically across countries.",
+  "reference_line": "Tomas Havranek, Marek Rusnak, and Anna Sokolova (2017), \"Habit Formation in Consumption: A Meta-Analysis.\" European Economic Review 95, 142-167.",
+  "authors": [
+   "Tomas Havranek",
+   "Marek Rusnak",
+   "Anna Sokolova"
+  ],
+  "year": 2017,
+  "journal": "European Economic Review",
+  "doi_or_publisher_url": null,
+  "menu_links": [
+   {
+    "label": "Read the paper",
+    "href": "habits2.pdf"
+   },
+   {
+    "label": "Read additional results",
+    "href": "appendix.pdf"
+   },
+   {
+    "label": "Download the data",
+    "href": "habit.dta"
+   },
+   {
+    "label": "Download the code",
+    "href": "habit.zip"
+   }
+  ],
+  "figure": {
+   "src": "BMA_nw.png",
+   "caption": "Fig: Difference in data characteristics are the most important factors behind the heterogeneity in the reported estimates of habit formation."
+  },
+  "has_meta_description": true,
+  "meta_keywords": "Bayesian model averaging, habit formation, habit persistence, consumption, publication selection bias, meta-analysis",
+  "one_line": "Meta-analysis of 597 estimates finds habit formation averages 0.4, with macro data yielding larger estimates than micro data."
+ },
+ {
+  "project": "hedge",
+  "title": "Hedge Fund Performance: A Meta-Analysis",
+  "abstract": "We provide the first quantitative survey of the empirical literature on hedge fund performance. We examine the impact of potential biases on the reported results. Analyses in individual studies have been plagued by fragmentation of underlying data and by limited consensus on how hedge fund performance should be measured. Using a sample of 1,019 intercept terms from regressions of hedge fund returns on risk factors (the \"alphas\") collected from 74 studies published between 2001 and 2021 we show that inferences about hedge fund returns are not significantly contaminated by publication selection bias. Most of our monthly alpha estimates adjusted for the (small) bias fall within a relatively narrow range of 30 to 40 basis points. Studies that explicitly control for the potential biases in the underlying data (e.g. the backfilling bias and the survivorship bias) report lower alphas. Our results demonstrate that despite the prevalence of the publication selection bias in numerous other research settings, publication may not be selective when there is no strong a priori theoretical prediction about the sign of estimated coefficients, which may induce greater readiness to publish statistically insignificant results.",
+  "reference_line": "Fan Yang, Tomas Havranek, Zuzana Irsova, and Jiri Novak (2024), \"Is research on hedge fund performance published selectively? A quantitative survey.\" Journal of Economic Surveys 38(4): 1085-1131.",
+  "authors": [
+   "Fan Yang",
+   "Tomas Havranek",
+   "Zuzana Irsova",
+   "Jiri Novak"
+  ],
+  "year": 2024,
+  "journal": "Journal of Economic Surveys",
+  "doi_or_publisher_url": null,
+  "menu_links": [
+   {
+    "label": "Paper",
+    "href": "hedge2.pdf"
+   },
+   {
+    "label": "Data",
+    "href": "hedge.xlsx"
+   },
+   {
+    "label": "Code",
+    "href": "hedge.do"
+   }
+  ],
+  "figure": {
+   "src": "funnel.png",
+   "caption": "Fig: No publication bias, mean alpha 0.36"
+  },
+  "has_meta_description": true,
+  "meta_keywords": "hedge funds, meta-analysis, publication bias",
+  "one_line": "Quantitative survey of 1,019 hedge fund alpha estimates from 74 studies finds little evidence of publication selection bias."
+ },
+ {
+  "project": "house_prices",
+  "title": "When Does Monetary Policy Sway House Prices? A Meta-Analysis",
+  "abstract": "Several central banks have leaned against the wind in the housing market by increasing the policy rate preemptively to prevent a bubble. Yet the empirical literature provides mixed results on the impact of short-term interest rates on house prices: the estimated semi-elasticities range from -12 to positive values. To assign a pattern to these differences, we collect 1,555 estimates from 37 individual studies that cover 45 countries and 72 years. We then relate the estimates to 39 characteristics of the financial system, business cycle, and estimation approach. Our main results are threefold. First, the mean reported estimate is exaggerated by publication bias, because insignificant results are underreported. Second, inclusion of controls correlated with policy rates (credit or money supply) decreases the estimated effects of policy rates on house prices. Third, the effects are stronger in countries with more developed mortgage markets and generally later in the cycle when the yield curve is flat and house prices enter an upward spiral.",
+  "reference_line": "Dominika Ehrenbergerova, Josef Bajzik, Tomas Havranek (2023), \"When Does Monetary Policy Sway House Prices? A Meta-Analysis.\" IMF Economic Review 71, 538-573.",
+  "authors": [
+   "Dominika Ehrenbergerova",
+   "Josef Bajzik",
+   "Tomas Havranek"
+  ],
+  "year": 2023,
+  "journal": "IMF Economic Review",
+  "doi_or_publisher_url": null,
+  "menu_links": [
+   {
+    "label": "Paper",
+    "href": "house_prices2.pdf"
+   },
+   {
+    "label": "Included studies",
+    "href": "studies.xlsx"
+   },
+   {
+    "label": "Impulse Responses",
+    "href": "IRs.pdf"
+   },
+   {
+    "label": "Data",
+    "href": "house.dta"
+   },
+   {
+    "label": "Code",
+    "href": "house.do"
+   }
+  ],
+  "figure": {
+   "src": "house.png",
+   "caption": "Fig: Publication bias and country heterogeneity drive the results"
+  },
+  "has_meta_description": true,
+  "meta_keywords": "Interest rates, house prices, monetary policy transmission, meta-analysis, publication bias, Bayesian model averaging",
+  "one_line": "A meta-analysis of 1,555 estimates from 37 studies across 45 countries finds publication bias exaggerates the effect of interest rates on house prices."
+ },
+ {
+  "project": "incentives",
+  "title": "Financial Incentives and Performance: A Meta-Analysis of Experiments in Economics",
+  "abstract": "Economists typically model financial incentives as enhancing performance, whereas psychologists emphasize that incentives can backfire. Experimental findings are mixed. We collect 2,193 estimates from 88 economics experiments and account for 48 contextual factors. Using recent advances in correcting for publication bias and p-hacking, we find that the corrected mean effect of financial incentives on performance is close to zero across most field contexts. Laboratory settings and loss framing yield statistically significant but modest positive effects even after bias correction. Our results suggest that increasing financial rewards rarely produces large performance gains in the experimental settings most studied by economists.",
+  "reference_line": "Cala Petr, Havranek Tomas, Irsova Zuzana, Luskova Martina, Matousek Jindrich, and Jiri Novak (2026), \"Financial Incentives and Performance: A Meta-Analysis of Experiments in Economics.\" Journal of Political Economy Microeconomics, forthcoming.",
+  "authors": [
+   "Petr Cala",
+   "Tomas Havranek",
+   "Zuzana Irsova",
+   "Martina Luskova",
+   "Jindrich Matousek",
+   "Jiri Novak"
+  ],
+  "year": 2026,
+  "journal": "Journal of Political Economy Microeconomics",
+  "doi_or_publisher_url": null,
+  "menu_links": [
+   {
+    "label": "Paper",
+    "href": "incentives.pdf"
+   },
+   {
+    "label": "Appendix",
+    "href": "appendix.pdf"
+   },
+   {
+    "label": "Included Studies",
+    "href": "studies.xlsx"
+   },
+   {
+    "label": "Excluded Studies",
+    "href": "excluded.xlsx"
+   },
+   {
+    "label": "Replication Package",
+    "href": "replication.zip"
+   }
+  ],
+  "figure": {
+   "src": "bma.png",
+   "caption": "Fig: Heterogeneity in the effects of incentives"
+  },
+  "has_meta_description": true,
+  "meta_keywords": "Incentives, experiments, meta-analysis, model uncertainty, publication bias",
+  "one_line": "Meta-analysis of 2,193 estimates finds financial incentives have near-zero corrected effect on performance in most field settings."
+ },
+ {
+  "project": "inflation",
+  "title": "Optimal Inflation Rate: A Meta-Analysis",
+  "abstract": "We revisit the optimal long-run inflation rate using 777 estimates from 116 primary studies published between 1989 and 2026, the largest sample assembled to date. To our knowledge, this is among the first meta-analyses in economics whose primary-data extraction is performed end-to-end through a documented and auditable large-language-model pipeline, calibrated against a hand-coded training set and released for replication. Across publication-selection and selection-on-significance diagnostics that are applicable in this calibration-dominated corpus, the literature points to an optimum of roughly 0.6 percentage points per year, well below the two-percent targets commonly used by advanced-economy central banks. Bayesian model averaging over the full structural-moderator schema shows that cross-study variation is driven by genuine modelling choices, the choice of monetary benchmark (Friedman rule vs. laissez-faire), the transactions-frictions technology, the assumed shock structure, and the class of nominal-rigidity contract, rather than by selective reporting.",
+  "reference_line": "Opatrny Matej, Opatrny Martin, Havranek Tomas, Irsova Zuzana, Hampl Mojmir (2026), \"Optimal Inflation Rate: A Meta-Analysis.\" Charles University, Prague. Available at meta-analysis.cz/inflation.",
+  "authors": [
+   "Matej Opatrny",
+   "Martin Opatrny",
+   "Tomas Havranek",
+   "Zuzana Irsova",
+   "Mojmir Hampl"
+  ],
+  "year": 2026,
+  "journal": null,
+  "doi_or_publisher_url": null,
+  "menu_links": [
+   {
+    "label": "Paper",
+    "href": "inflation.pdf"
+   },
+   {
+    "label": "Replication Package",
+    "href": "replication.zip"
+   },
+   {
+    "label": "Dataset",
+    "href": "inflation_v34.dta"
+   },
+   {
+    "label": "mad-research",
+    "href": "https://github.com/tjhavranek/mad-research"
+   },
+   {
+    "label": "paper-workshop",
+    "href": "https://github.com/tjhavranek/paper-workshop"
+   }
+  ],
+  "figure": {
+   "src": "distribution.png",
+   "caption": "Fig: The literature is bimodal — one mode near price stability, one near the two-percent target"
+  },
+  "has_meta_description": true,
+  "meta_keywords": "Optimal inflation, meta-analysis, New Keynesian models, publication bias, Bayesian model averaging, measurement error, large language models",
+  "one_line": "Meta-analysis of 777 estimates from 116 studies finds an optimal long-run inflation rate near 0.6% per year, below common two-percent central-bank targets."
+ },
+ {
+  "project": "lags",
+  "title": "Transmission Lags of Monetary Policy: A Meta-Analysis",
+  "abstract": "The transmission of monetary policy to the economy is generally thought to have long and variable lags. In this paper we quantitatively review the modern literature on monetary transmission to provide stylized facts on the average lag length and the sources of variability. We collect 67 published studies and examine when prices bottom out after monetary contraction. The average transmission lag is 29 months, and the maximum decrease in prices reaches 1.2% on average after a one-percentage-point hike in the policy rate. Transmission lags are longer in developed economies (25-50 months) than in transition economies (10-20 months). We find that the factor most effective in explaining this heterogeneity is financial development: greater financial development is associated with slower transmission. Our results also suggest that researchers who use monthly data instead of quarterly data report systematically faster transmission.",
+  "reference_line": "Tomas Havranek & Marek Rusnak (2013), \"Transmission Lags of Monetary Policy: A Meta-Analysis.\" International Journal of Central Banking 9(4), pp. 39-76.",
+  "authors": [
+   "Tomas Havranek",
+   "Marek Rusnak"
+  ],
+  "year": 2013,
+  "journal": "International Journal of Central Banking",
+  "doi_or_publisher_url": null,
+  "menu_links": [
+   {
+    "label": "Paper",
+    "href": "lags2.pdf"
+   },
+   {
+    "label": "Impulse Responses",
+    "href": "IRs.pdf"
+   },
+   {
+    "label": "Data",
+    "href": "lags.zip"
+   },
+   {
+    "label": "Code",
+    "href": "lags.do"
+   },
+   {
+    "label": "Excluded Studies",
+    "href": "excluded.xls"
+   }
+  ],
+  "figure": null,
+  "has_meta_description": true,
+  "meta_keywords": "Monetary policy transmission, Meta-analysis, Vector autoregressions",
+  "one_line": "A meta-analysis of 67 studies finds monetary policy transmission lags average 29 months, longer in developed than transition economies."
+ },
+ {
+  "project": "learning",
+  "title": "Publication Bias and P-Hacking in the Effect of COVID-19 on Learning: A Meta-Analysis",
+  "abstract": "We revisit a central estimate in the economics of education: the human-capital loss associated with COVID-19 school closures. Estimates of pandemic learning loss may be affected by publication bias, p-hacking, and the mechanical correlation between standardized effect sizes and their standard errors. We conduct a comprehensive multi-method assessment of bias by applying a wide range of correction techniques — including PET-PEESE, three-parameter selection models (3PSM), Robust Bayesian Meta-Analysis (RoBMA), Meta-Analysis Instrumental Variable Estimation (MAIVE), Right-Truncated Meta-Analysis (RTMA), and multi-bias sensitivity analysis. Our preferred specifications, RoBMA and MAIVE, rely on different assumptions yet converge on an effect size of approximately −0.12 SD, equivalent to a learning loss of about 30% of a school year. Although some methods reveal signs of publication bias and selective reporting, these findings do not explain away the central finding: the COVID-19 learning deficit is economically meaningful and statistically robust.",
+  "reference_line": "Luskova Martina, Buliskeria Nino, Elminejad Ali, Havranek Tomas, Irsova Zuzana, Jurajda Stepan, Kapicka Marek (2026), “Publication Bias and P-Hacking in the Effect of COVID-19 on Learning.” Charles University, Prague. Available at meta-analysis.cz/learning.",
+  "authors": [
+   "Martina Luskova",
+   "Nino Buliskeria",
+   "Ali Elminejad",
+   "Tomas Havranek",
+   "Zuzana Irsova",
+   "Stepan Jurajda",
+   "Marek Kapicka"
+  ],
+  "year": 2026,
+  "journal": null,
+  "doi_or_publisher_url": null,
+  "menu_links": [
+   {
+    "label": "Paper",
+    "href": "learning.pdf"
+   },
+   {
+    "label": "Replication Package",
+    "href": "replication.zip"
+   },
+   {
+    "label": "Data",
+    "href": "learning_loss_data.xlsx"
+   },
+   {
+    "label": "mad-research",
+    "href": "https://github.com/tjhavranek/mad-research"
+   },
+   {
+    "label": "paper-workshop",
+    "href": "https://github.com/tjhavranek/paper-workshop"
+   }
+  ],
+  "figure": {
+   "src": "funnelplot.png",
+   "caption": "Fig: A learning deficit that survives correction for publication bias"
+  },
+  "has_meta_description": true,
+  "meta_keywords": "COVID-19, learning loss, pandemic, meta-analysis, publication bias, p-hacking, RoBMA, MAIVE, education",
+  "one_line": "Meta-analysis of COVID-19 learning loss: bias-corrected RoBMA and MAIVE estimates converge on about -0.12 SD, roughly 30% of a school year."
+ },
+ {
+  "project": "maive",
+  "title": "Meta-Analysis Instrumental Variable Estimator",
+  "abstract": "Meta-analysis upweights studies reporting lower standard errors and hence more precision. But in observational settings common to much research on human behavior, precision is not given to the researcher. Precision must be estimated, and thus can be p-hacked to achieve statistical significance. Simulations and large-scale empirical applications show that spurious precision can invalidate inverse-variance weighting and bias-correction methods based on the funnel plot. Selection models fail to solve the problem, and common cures to publication bias can become worse than the disease. We introduce an approach (Meta-Analysis Instrumental Variable Estimator, MAIVE) that addresses spurious precision and limits the resulting bias in meta-analysis.",
+  "reference_line": "Irsova Z., Bom P. R. D., Havranek T., and H. Rachinger (2025): \"Spurious Precision in Meta-Analysis of Observational Research.\" Nature Commun 16, 8454. doi.org/10.1038/s41467-025-63261-0",
+  "authors": [
+   "Zuzana Irsova",
+   "Pedro Bom",
+   "Tomas Havranek",
+   "Heiko Rachinger"
+  ],
+  "year": 2025,
+  "journal": "Nature Communications",
+  "doi_or_publisher_url": "https://doi.org/10.1038/s41467-025-63261-0",
+  "menu_links": [
+   {
+    "label": "Paper",
+    "href": "maive.pdf"
+   },
+   {
+    "label": "Supplement",
+    "href": "supplement.pdf"
+   },
+   {
+    "label": "Extension",
+    "href": "/waive_ottawa.pdf"
+   },
+   {
+    "label": "Blog",
+    "href": "https://communities.springernature.com/posts/spurious-precision-in-meta-analysis"
+   },
+   {
+    "label": "Talk",
+    "href": "https://youtu.be/VZNDiICI08A"
+   },
+   {
+    "label": "Slides",
+    "href": "maive_slides.pdf"
+   },
+   {
+    "label": "Replication",
+    "href": "maive_replication.zip"
+   },
+   {
+    "label": "MAIVE in R",
+    "href": "https://cran.r-project.org/package=MAIVE"
+   },
+   {
+    "label": "MAIVE app",
+    "href": "https://spuriousprecision.com/"
+   }
+  ],
+  "figure": {
+   "src": "spurious.png",
+   "caption": "Fig: Spurious precision (right pannel) renders common meta-analysis techniques biased"
+  },
+  "has_meta_description": true,
+  "meta_keywords": "Publication bias, p-hacking, selection models, meta-regression, funnel plot, inverse-variance weighting",
+  "one_line": "MAIVE, an instrumental-variable estimator that corrects meta-analysis for spurious precision when standard errors are estimated and can be p-hacked."
+ },
+ {
+  "project": "migrant",
+  "title": "The Elasticity of Substitution between Native and Immigrant Labor: A Meta-Analysis",
+  "abstract": "This paper presents the first comprehensive meta-analysis of the elasticity of substitution between native and immigrant labor. Drawing on 1,091 estimates from 41 studies, we examine the extent to which published estimates are shaped by methodological choices and publication selection bias. We find strong evidence of selective reporting: less precise estimates are systematically associated with lower reported elasticities. Correcting for these biases using a wide array of metaregression techniques raises the mean elasticity (sigma) from an uncorrected 13 to approximately 22. Model averaging techniques reveal that data features, specifically geographic scale, data granularity, and worker experience, explain much of the heterogeneity in reported results. While the choice between log(mean wage) and mean(log wage) remains a substantial driver of variation, its impact is moderated once publication bias and modeling scale are controlled for. Our \"best practice\" estimates, which prioritize the most granular data, suggest an elasticity of approximately 17 for regional models. While publication bias masks a higher potential elasticity, rigorous research designs that isolate pure substitution effects yield a stable benchmark that is more conservative than a simple bias correction yet higher than the uncorrected mean.",
+  "reference_line": "Kantova Klara, Havranek Tomas, Irsova Zuzana, Schwarz Jiri, (2026), \"The Elasticity of Substitution between Native and Immigrant Labor: A Meta-Analysis.\" Charles University, Prague. Available at meta-analysis.cz/migrant.",
+  "authors": [
+   "Klara Kantova",
+   "Tomas Havranek",
+   "Zuzana Irsova",
+   "Jiri Schwarz"
+  ],
+  "year": 2026,
+  "journal": null,
+  "doi_or_publisher_url": null,
+  "menu_links": [
+   {
+    "label": "Read the paper",
+    "href": "migrant.pdf"
+   },
+   {
+    "label": "Download the replication package",
+    "href": "replication_package.zip"
+   }
+  ],
+  "figure": {
+   "src": "funnel.png",
+   "caption": "Fig: Publication bias in reported negative inverse elasticities"
+  },
+  "has_meta_description": true,
+  "meta_keywords": "labor, wages, migrants, meta-analysis, model uncertainty, publication bias",
+  "one_line": "Meta-analysis of 1,091 estimates finds native-immigrant labor substitution elasticity rises from 13 to about 22 after bias correction."
+ },
+ {
+  "project": "pcc",
+  "title": "Meta-analyses of partial correlations are biased: Detection and solutions",
+  "abstract": "We demonstrate that all meta-analyses of partial correlations are biased, and yet hundreds of meta-analyses of partial correlation coefficients (PCC) are conducted each year widely across economics, business, education, psychology, and medical research. To address these biases, we offer a new weighted average, UWLS+3. UWLS+3 is the unrestricted weighted least squares weighted average that makes an adjustment to the degrees of freedom that are used to calculate partial correlations and, by doing so, renders trivial any remaining meta-analysis bias. Our simulations also reveal that these meta-analysis biases are small-sample biases (n < 200), and a simple correction factor of (n-2)/(n-1) greatly reduces these small-sample biases. In many applications where primary studies typically have hundreds or more observations, partial correlations can be meta-analyzed in standard ways with only negligible bias. However, in other fields in the social and the medical sciences that are dominated by small samples, these meta-analysis biases are easily avoidable by our proposed methods.",
+  "reference_line": "T. D. Stanley, Hristos Doucouliagos, and Tomas Havranek (2024): \"Meta-analyses of partial correlations are biased: Detection and solutions.\" Research Synthesis Methods 15: 313-325.",
+  "authors": [
+   "T. D. Stanley",
+   "Hristos Doucouliagos",
+   "Tomas Havranek"
+  ],
+  "year": 2024,
+  "journal": "Research Synthesis Methods",
+  "doi_or_publisher_url": null,
+  "menu_links": [
+   {
+    "label": "Paper",
+    "href": "pcc2.pdf"
+   },
+   {
+    "label": "Supplement (including code)",
+    "href": "appendix.pdf"
+   },
+   {
+    "label": "Google Scholar search",
+    "href": "search.xlsx"
+   }
+  ],
+  "figure": null,
+  "has_meta_description": true,
+  "meta_keywords": "partial correlation coefficients, meta-analysis, bias, small sample",
+  "one_line": "Shows all partial-correlation meta-analyses are biased and proposes UWLS+3 to correct small-sample bias."
+ },
+ {
+  "project": "price_puzzle",
+  "title": "How to Solve the Price Puzzle? A Meta-Analysis",
+  "abstract": "The short-run increase in prices following an unexpected tightening of monetary policy constitutes a puzzle frequently reported in empirical studies. Yet the puzzle is easy to explain away when all published models are quantitatively reviewed. We collect and examine about 1,000 point estimates of impulse responses from 70 articles that use vector autoregressions to study monetary transmission in various countries. We find that the puzzle is created by model misspecifications: especially by the omission of commodity prices, neglect of potential output, and reliance on recursive identification. Our results also suggest that the strength of monetary policy depends on the country's openness, phase of the economic cycle, and degree of central bank independence.",
+  "reference_line": "Rusnak Marek, Tomas Havranek, & Roman Horvath (2013), \"How to Solve the Price Puzzle? A Meta-Analysis.\" Journal of Money, Credit and Banking 45(1), 37-70.",
+  "authors": [
+   "Marek Rusnak",
+   "Tomas Havranek",
+   "Roman Horvath"
+  ],
+  "year": 2013,
+  "journal": "Journal of Money, Credit and Banking",
+  "doi_or_publisher_url": null,
+  "menu_links": [
+   {
+    "label": "Paper",
+    "href": "price_puzzle2.pdf"
+   },
+   {
+    "label": "Impulse Responses",
+    "href": "IRs.pdf"
+   },
+   {
+    "label": "Data",
+    "href": "puzzle.xls"
+   },
+   {
+    "label": "Robustness Checks",
+    "href": "sensitivity.pdf"
+   },
+   {
+    "label": "Code",
+    "href": "puzzle.do"
+   },
+   {
+    "label": "Excluded Studies",
+    "href": "excluded.xls"
+   }
+  ],
+  "figure": null,
+  "has_meta_description": true,
+  "meta_keywords": "Monetary policy transmission, Price puzzle, Meta-analysis, Publication selection bias",
+  "one_line": "Meta-analysis of 1,000 VAR estimates shows the price puzzle stems from model misspecification, not a true price effect."
+ },
+ {
+  "project": "reforms",
+  "title": "Structural Reforms and Economic Growth: A Meta-Analysis",
+  "abstract": "The present fiscal difficulties of many countries amplify the call for structural reforms. To provide stylized facts on how such reforms have worked in the past, we quantitatively review 46 studies estimating the relation between reforms and growth. These studies examined structural reforms carried out in different transition countries around the world. Our results suggest that an average reform was costly in the short run, but had strong positive effects on the long-run growth. The findings hold even after correction for publication bias and misspecifications in some primary studies.",
+  "reference_line": "Babecky Jan & Tomas Havranek (2014), \"Structural Reforms and Growth in Transition: A Meta-Analysis.\" Economics of Transition 22(1), pp. 13-42.",
+  "authors": [
+   "Jan Babecky",
+   "Tomas Havranek"
+  ],
+  "year": 2014,
+  "journal": "Economics of Transition",
+  "doi_or_publisher_url": null,
+  "menu_links": [
+   {
+    "label": "Paper",
+    "href": "reforms2.pdf"
+   },
+   {
+    "label": "Data in XLS (6.8 MB)",
+    "href": "reform.xls"
+   },
+   {
+    "label": "Stata Program",
+    "href": "reform.do"
+   },
+   {
+    "label": "Excluded Studies",
+    "href": "new.doc"
+   }
+  ],
+  "figure": null,
+  "has_meta_description": true,
+  "meta_keywords": "structural reforms, economic growth, transition economies, meta-analysis, publication bias",
+  "one_line": "Meta-analysis of 46 studies finds structural reforms in transition countries carry short-run costs but strong long-run growth benefits."
+ },
+ {
+  "project": "remittances",
+  "title": "Remittances and Economic Growth: A Meta-Analysis",
+  "abstract": "Expatriate workers' remittances represent an important source of financing for low- and middle-income countries. No consensus, however, has yet emerged regarding the effect of remittances on economic growth. In a quantitative survey of 538 estimates reported in 95 studies, we find that approximately 40% of the studies report a positive effect, 40% report no effect, and 20% report a negative effect. Our results indicate publication bias in favor of positive effects. Correcting for the bias using recently developed techniques, we find that the mean effect of remittances on growth is still positive but economically small. Nevertheless, our results uncover noticeable regional differences: remittances are growth-enhancing in Asia but not in Africa. Studies that do not control for alternative sources of external finance, such as foreign aid and foreign direct investment, mismeasure the effect of remittances. Finally, time-series studies and studies ignoring endogeneity issues find systematically larger effects of remittances on growth.",
+  "reference_line": "Alina Cazachevici, Tomas Havranek, and Roman Horvath (2020), \"Remittances and Economic Growth: A Meta-Analysis.\" World Development 134, 105021.",
+  "authors": [
+   "Alina Cazachevici",
+   "Tomas Havranek",
+   "Roman Horvath"
+  ],
+  "year": 2020,
+  "journal": "World Development",
+  "doi_or_publisher_url": null,
+  "menu_links": [
+   {
+    "label": "Read the paper",
+    "href": "remittances2.pdf"
+   },
+   {
+    "label": "Download the data",
+    "href": "remittances.xlsx"
+   },
+   {
+    "label": "Download the code",
+    "href": "remittances.do"
+   }
+  ],
+  "figure": {
+   "src": "remittances.png",
+   "caption": "Fig: Study design systematically affects the reported nexus between remittances and growth"
+  },
+  "has_meta_description": true,
+  "meta_keywords": "remittances, economic growth, Bayesian model averaging, meta-analysis, publication bias",
+  "one_line": "Meta-analysis of 538 estimates finds remittances have a small positive, publication-bias-corrected effect on growth, stronger in Asia than Africa."
+ },
+ {
+  "project": "resource_curse",
+  "title": "Natural Resources and Economic Growth: A Meta-Analysis",
+  "abstract": "An important question in development studies is how natural resources richness affects long-term economic growth. No consensus answer, however, has yet emerged, with approximately 40% of empirical papers finding a negative effect, 40% finding no effect, and 20% finding a positive effect. Does the literature taken together imply the existence of the so-called natural resource curse? In a quantitative survey of 605 estimates reported in 43 studies, we find that overall support for the resource curse hypothesis is weak when potential publication bias and method heterogeneity are taken into account. Our results also suggest that four aspects of study design are especially effective in explaining the differences in results across studies: 1) controlling for institutional quality, 2) controlling for the level of investment activity, 3) distinguishing between different types of natural resources, and 4) differentiating between resource dependence and abundance.",
+  "reference_line": "Tomas Havranek, Roman Horvath, and Ayaz Zeylanov (2016), \"Natural Resources and Economic Growth: A Meta-Analysis.\" World Development 88, 134-151.",
+  "authors": [
+   "Tomas Havranek",
+   "Roman Horvath",
+   "Ayaz Zeylanov"
+  ],
+  "year": 2016,
+  "journal": "World Development",
+  "doi_or_publisher_url": null,
+  "menu_links": [
+   {
+    "label": "Read the paper",
+    "href": "resource_curse2.pdf"
+   },
+   {
+    "label": "Download the data",
+    "href": "resource_curse.dta"
+   },
+   {
+    "label": "Download the code",
+    "href": "resource_curse.do"
+   }
+  ],
+  "figure": {
+   "src": "fig2.png",
+   "caption": "After correcting for publication bias, there is little evidence for the so-called natural resource curse."
+  },
+  "has_meta_description": true,
+  "meta_keywords": "Natural resources, economic growth, institutions, meta-analysis",
+  "one_line": "Meta-analysis of 605 estimates finds weak support for the resource curse once publication bias and methods are addressed."
+ },
+ {
+  "project": "risk",
+  "title": "Relative Risk Aversion: A Meta-Analysis",
+  "abstract": "Estimates of relative risk aversion vary widely, but no study has attempted to quantitatively trace the sources of the variation. We collect 1,021 estimates from 92 studies that use the consumption Euler equation to measure relative risk aversion and that disentangle it from intertemporal substitution. We show that calibrations of risk aversion are systematically larger than estimates thereof. Moreover, reported estimates are systematically larger than the underlying risk aversion because of publication bias. After correction for the bias, the literature suggests a mean risk aversion of 1 in economics and 2-7 in finance contexts. The reported estimates are driven by the characteristics of data (frequency, dimension, country, stockholding) and utility (functional form, treatment of durables). To obtain these results we use recently developed nonlinear techniques to correct for publication bias and Bayesian model averaging techniques to account for model uncertainty.",
+  "reference_line": "Elminejad A., Havranek T., and Z. Irsova (2025), \"Relative Risk Aversion: A Meta-Analysis.\" Journal of Economic Surveys, 39(5): 2315-2333.",
+  "authors": [
+   "Ali Elminejad",
+   "Tomas Havranek",
+   "Zuzana Irsova"
+  ],
+  "year": 2025,
+  "journal": "Journal of Economic Surveys",
+  "doi_or_publisher_url": null,
+  "menu_links": [
+   {
+    "label": "Paper",
+    "href": "risk2.pdf"
+   },
+   {
+    "label": "Supplement",
+    "href": "appendix.pdf"
+   },
+   {
+    "label": "Calibration Studies",
+    "href": "calibrations.xlsx"
+   },
+   {
+    "label": "Data",
+    "href": "risk.dta"
+   },
+   {
+    "label": "Code",
+    "href": "risk.zip"
+   }
+  ],
+  "figure": {
+   "src": "funnel.png",
+   "caption": "Fig: The funnel plot suggests publication bias in the literature"
+  },
+  "has_meta_description": true,
+  "meta_keywords": "Euler equation, risk aversion, Epstein-Zin preferences, meta-analysis, publication bias, model uncertainty",
+  "one_line": "A meta-analysis of 1,021 estimates from 92 studies finds publication-bias-corrected relative risk aversion near 1 in economics and 2-7 in finance."
+ },
+ {
+  "project": "scc",
+  "title": "Selective Reporting and the Social Cost of Carbon",
+  "abstract": "We examine potential selective reporting in the literature on the social cost of carbon (SCC) by conducting a meta-analysis of 809 estimates of the SCC reported in 101 studies. Our results indicate that estimates for which the 95% confidence interval includes zero are less likely to be reported than estimates excluding negative values of the SCC, which might create an upward bias in the literature. The evidence for selective reporting is stronger for studies published in peer-reviewed journals than for unpublished studies. We show that the findings are not driven by the asymmetry of confidence intervals surrounding the SCC and are robust to controlling for various characteristics of study design and to alternative definitions of confidence intervals. Our estimates of the mean reported SCC corrected for the selective reporting bias range between 0 and 134 USD per ton of carbon in 2010 prices for emission year 2015.",
+  "reference_line": "Tomas Havranek, Zuzana Irsova, Karel Janda, and David Zilberman (2015), \"Selective Reporting and the Social Cost of Carbon.\" Energy Econonomics 51, 364-406.",
+  "authors": [
+   "Tomas Havranek",
+   "Zuzana Irsova",
+   "Karel Janda",
+   "David Zilberman"
+  ],
+  "year": 2015,
+  "journal": "Energy Economics",
+  "doi_or_publisher_url": null,
+  "menu_links": [
+   {
+    "label": "Paper",
+    "href": "scc2.pdf"
+   },
+   {
+    "label": "Examined Studies",
+    "href": "http://scholar.google.cz/scholar?as_sdt=1,5&q=%22social+costs+of+carbon%22+OR+%22social+cost+of+carbon%22+carbon+climate+change+marginal+damage+costs+emissions+greenhouse+impacts&hl=en&as_ylo=2012&as_vis=1"
+   },
+   {
+    "label": "Included Studies",
+    "href": "studies.xls"
+   },
+   {
+    "label": "Data",
+    "href": "scc.xlsx"
+   },
+   {
+    "label": "Code",
+    "href": "scc.do"
+   }
+  ],
+  "figure": {
+   "src": "funnel1.png",
+   "caption": "Fig: Negative estimates are underreported."
+  },
+  "has_meta_description": true,
+  "meta_keywords": "Social cost of carbon, climate policy, global warming, integrated assessment models, meta-analysis, publication bias",
+  "one_line": "Meta-analysis of 809 SCC estimates from 101 studies finds selective reporting creates an upward bias, especially in peer-reviewed journals."
+ },
+ {
+  "project": "sigma",
+  "title": "Measuring Capital-Labor Substitution: The Importance of Method Choices and Publication Bias",
+  "abstract": "We show that the large elasticity of substitution between capital and labor estimated in the literature on average, 0.9, can be explained by three factors: publication bias, use of aggregated data, and omission of the first-order condition for capital. The mean elasticity conditional on the absence of publication bias, disaggregated data, and inclusion of information from the first-order condition for capital is 0.3. To obtain this result, we collect 3,186 estimates of the elasticity reported in 121 studies, codify 71 variables that reflect the context in which researchers produce their estimates, and address model uncertainty by Bayesian and frequentist model averaging. We employ nonlinear techniques to correct for publication bias, which is responsible for at least half of the overall reduction in the mean elasticity from 0.9 to 0.3. Our findings also suggest that a failure to normalize the production function leads to a substantial upward bias in the estimated elasticity. The weight of evidence accumulated in the empirical literature emphatically rejects the Cobb-Douglas specification.",
+  "reference_line": "Sebastian Gechert, Tomas Havranek, Zuzana Irsova, and Dominika Kolcunova (2022), \"Measuring Capital-Labor Substitution: The Importance of Method Choices and Publication Bias.\" Review of Economic Dynamics 45, 55-82.",
+  "authors": [
+   "Sebastian Gechert",
+   "Tomas Havranek",
+   "Zuzana Irsova",
+   "Dominika Kolcunova"
+  ],
+  "year": 2022,
+  "journal": "Review of Economic Dynamics",
+  "doi_or_publisher_url": null,
+  "menu_links": [
+   {
+    "label": "Paper",
+    "href": "sigma2.pdf"
+   },
+   {
+    "label": "Additional Results",
+    "href": "appendix.pdf"
+   },
+   {
+    "label": "Examined Studies",
+    "href": "Scholar.html"
+   },
+   {
+    "label": "Included Studies",
+    "href": "studies.xlsx"
+   },
+   {
+    "label": "Data",
+    "href": "sigma.dta"
+   },
+   {
+    "label": "Code",
+    "href": "sigma.zip"
+   }
+  ],
+  "figure": {
+   "src": "hist.png",
+   "caption": "Fig: Identification strategy drives the reported elasticities"
+  },
+  "has_meta_description": true,
+  "meta_keywords": "capital, labor, elasticity of substitution, Bayesian model averaging, meta-analysis, publication bias",
+  "one_line": "Meta-analysis of 3,186 estimates from 121 studies finds the capital-labor elasticity of substitution is 0.3, far below the literature's average of 0.9."
+ },
+ {
+  "project": "size",
+  "title": "A Meta-Analysis of the Relation Between Firm Size and Stock Returns",
+  "abstract": "A prominent factor used in most models predicting stock returns is firm size. Yet no consensus has emerged on the magnitude and stability of the size premium, with some researchers even questioning the usefulness of the factor. To take stock of the voluminous academic literature on the size premium, we collect 1,746 estimates of the effect of size on returns reported in 102 published studies and conduct the first meta-analysis on this topic. We find evidence of strong publication bias: researchers prefer to report estimates that are statistically significant and show a negative relation between size and returns, exaggerating the mean reported coefficient threefold. After correcting for the bias, we find that the literature suggests a size premium (the difference in annual stock returns on the smallest and largest capitalization quintile) of 1.72%. We also find that the premium was much larger prior to the publication of the first study on the topic. Moreover, we show that the intensity of publication bias has been decreasing over time.",
+  "reference_line": "Anton Astakhov, Tomas Havranek, and Jiri Novak (2019), \"Firm Size and Stock Returns: A Quantitative Survey.\" Journal of Economic Surveys 33(5), 1463-1492.",
+  "authors": [
+   "Anton Astakhov",
+   "Tomas Havranek",
+   "Jiri Novak"
+  ],
+  "year": 2019,
+  "journal": "Journal of Economic Surveys",
+  "doi_or_publisher_url": null,
+  "menu_links": [
+   {
+    "label": "Paper",
+    "href": "size2.pdf"
+   },
+   {
+    "label": "Included Studies",
+    "href": "studies.pdf"
+   },
+   {
+    "label": "Data",
+    "href": "size.dta"
+   },
+   {
+    "label": "Code",
+    "href": "size.do"
+   }
+  ],
+  "figure": {
+   "src": "funnel.png",
+   "caption": "Fig: Positive and insignificant estimates of the effect of size on returns are underreported"
+  },
+  "has_meta_description": true,
+  "meta_keywords": "size, stock, asset pricing, meta-analysis, publication bias",
+  "one_line": "First meta-analysis of the size premium finds strong publication bias and a corrected effect of 1.72% in annual returns."
+ },
+ {
+  "project": "skill",
+  "title": "Publication and Attenuation Biases in Measuring Skill Substitution",
+  "abstract": "A key parameter in the analysis of wage inequality is the elasticity of substitution between skilled and unskilled labor. We show that the empirical literature is consistent with both publication and attenuation bias in the estimated inverse elasticities. Publication bias, which exaggerates the mean reported inverse elasticity, dominates and results in corrected inverse elasticities closer to zero than the typically published estimates. The implied mean elasticity is 4, with a lower bound of 2. Elasticities are smaller for developing countries. To derive these results, we use nonlinear tests for publication bias and model averaging techniques that account for model uncertainty.",
+  "reference_line": "Havranek Tomas, Zuzana Irsova, Lubica Laslopova, and Olesia Zeynalova (2024), \"Publication and Attenuation Biases in Measuring Skill Substitution.\" Review of Economics and Statistics 106 (5), 1187-1200.",
+  "authors": [
+   "Tomas Havranek",
+   "Zuzana Irsova",
+   "Lubica Laslopova",
+   "Olesia Zeynalova"
+  ],
+  "year": 2024,
+  "journal": "Review of Economics and Statistics",
+  "doi_or_publisher_url": null,
+  "menu_links": [
+   {
+    "label": "Paper",
+    "href": "skill2.pdf"
+   },
+   {
+    "label": "Web Appendix",
+    "href": "appendix.pdf"
+   },
+   {
+    "label": "Included Studies",
+    "href": "studies.xlsx"
+   },
+   {
+    "label": "Data",
+    "href": "skill.dta"
+   },
+   {
+    "label": "Code",
+    "href": "skill.do"
+   }
+  ],
+  "figure": {
+   "src": "funnel.png",
+   "caption": "Fig: The funnel plot suggests publication bias in the literature"
+  },
+  "has_meta_description": true,
+  "meta_keywords": "elasticity of substitution, skilled labor, skill premium, Bayesian model averaging, meta-analysis, publication bias",
+  "one_line": "Meta-analysis finds publication bias dominates in skill substitution estimates, implying a mean elasticity of 4."
+ },
+ {
+  "project": "spillovers",
+  "title": "A Meta-Analysis of Vertical Spillovers from FDI",
+  "abstract": "In the last decade, more than 100 researchers have examined productivity spillovers from foreign affiliates to local firms in upstream or downstream sectors. Yet results vary broadly across methods and countries. To examine these vertical spillovers in a systematic way, we collected 3,626 estimates of spillovers and reviewed the literature quantitatively. Our meta-analysis indicates that model misspecifications reduce the reported estimates and journals select relatively large estimates for publication. No selection, however, was found for working papers. Taking these biases into consideration, the average spillover to suppliers is economically significant, whereas the spillover to buyers is statistically significant but small. Greater spillovers are received by countries that have underdeveloped financial systems and are open to international trade. Greater spillovers are generated by investors who come from distant countries and have only a slight technological edge over local firms.",
+  "reference_line": "Havranek Tomas & Zuzana Irsova (2011), \"Estimating Vertical Spillovers from FDI: Why Results Vary and What the True Effect Is.\" Journal of International Economics, 85(2), pp. 234-244.",
+  "authors": [
+   "Tomas Havranek",
+   "Zuzana Irsova"
+  ],
+  "year": 2011,
+  "journal": "Journal of International Economics",
+  "doi_or_publisher_url": null,
+  "menu_links": [
+   {
+    "label": "Paper",
+    "href": "spillovers2.pdf"
+   },
+   {
+    "label": "Data in XLS (6.8 MB)",
+    "href": "data.xls"
+   },
+   {
+    "label": "Stata Program",
+    "href": "Stata_program.do"
+   },
+   {
+    "label": "Excluded Studies",
+    "href": "excluded_studies.txt"
+   }
+  ],
+  "figure": null,
+  "has_meta_description": true,
+  "meta_keywords": "foreign direct investment, productivity, spillovers, meta-analysis, publication selection bias",
+  "one_line": "A meta-analysis of 3,626 estimates finds vertical FDI spillovers to suppliers are economically significant but spillovers to buyers small."
+ },
+ {
+  "project": "students",
+  "title": "Student Employment and Education: A Meta-Analysis",
+  "abstract": "Educational outcomes have many determinants, but one that most young people can readily control is choosing whether to work while in school. Sixty-nine studies have estimated the effect, but results vary from large negative to positive estimates. We show that the results are systematically driven by context, publication bias, and treatment of endogeneity. Studies neglecting endogeneity suffer from an upward bias, which is almost fully compensated by publication selection in favor of negative estimates. Overall the literature suggests a negative but economically inconsequential mean effect. The effect is more substantive for decisions to drop out. To derive these results we collect 861 previously reported estimates together with 32 variables reflecting estimation context, use recently developed techniques to correct for publication bias, and employ Bayesian model averaging to assign a pattern to the heterogeneity in the literature.",
+  "reference_line": "Katerina Kroupova, Tomas Havranek, Zuzana Irsova (2024), \"Student Employment and Education: A Meta-Analysis.\" Economics of Education Review 100, 102539.",
+  "authors": [
+   "Katerina Kroupova",
+   "Tomas Havranek",
+   "Zuzana Irsova"
+  ],
+  "year": 2024,
+  "journal": "Economics of Education Review",
+  "doi_or_publisher_url": null,
+  "menu_links": [
+   {
+    "label": "Paper",
+    "href": "students2.pdf"
+   },
+   {
+    "label": "Web appendix",
+    "href": "appendix.pdf"
+   },
+   {
+    "label": "Included studies",
+    "href": "studies.xlsx"
+   },
+   {
+    "label": "Data",
+    "href": "students.xlsx"
+   },
+   {
+    "label": "Code",
+    "href": "students.do"
+   }
+  ],
+  "figure": {
+   "src": "bma.png",
+   "caption": "Fig: Publication bias, country heterogeneity, and method choices drive the results"
+  },
+  "has_meta_description": true,
+  "meta_keywords": "Student employment, educational outcomes, meta-analysis, publication bias, Bayesian model averaging",
+  "one_line": "Meta-analysis of 861 estimates finds student employment has a negative but economically small effect on educational outcomes."
+ },
+ {
+  "project": "substitution",
+  "title": "Why Does Intertemporal Substitution Vary Across Countries? A Meta-Analysis",
+  "abstract": "We collect 2,735 estimates of the elasticity of intertemporal substitution in consumption from 169 published studies that cover 104 countries during different time periods. The estimates vary substantially from country to country, even after controlling for 30 aspects of study design. Our results suggest that income and asset market participation are the most effective factors in explaining the heterogeneity: households in rich countries and countries with high stock market participation substitute a larger fraction of consumption intertemporally in response to changes in expected asset returns. Micro-level studies that focus on sub-samples of rich households or asset holders also find systematically larger values of the elasticity.",
+  "reference_line": "Tomas Havranek, Roman Horvath, Zuzana Irsova, and Marek Rusnak (2015), \"Cross-Country Heterogeneity in Intertemporal Substitution.\" Journal of International Economics 96(1), 100-118.",
+  "authors": [
+   "Tomas Havranek",
+   "Roman Horvath",
+   "Zuzana Irsova",
+   "Marek Rusnak"
+  ],
+  "year": 2015,
+  "journal": "Journal of International Economics",
+  "doi_or_publisher_url": null,
+  "menu_links": [
+   {
+    "label": "Paper",
+    "href": "substitution2.pdf"
+   },
+   {
+    "label": "Examined Studies",
+    "href": "Scholar_search.htm"
+   },
+   {
+    "label": "Included Studies",
+    "href": "studies.xls"
+   },
+   {
+    "label": "Data",
+    "href": "eis_det.dta"
+   },
+   {
+    "label": "Code",
+    "href": "eis_det.do"
+   }
+  ],
+  "figure": {
+   "src": "map.png",
+   "caption": "Fig: Estimates of the elasticity of intertemporal substitution in consumption vary."
+  },
+  "has_meta_description": true,
+  "meta_keywords": "Elasticity of intertemporal substitution, coefficient of relative risk aversion, consumption, meta-analysis, Bayesian model averaging",
+  "one_line": "Meta-analysis of 2,735 estimates across 104 countries links intertemporal substitution to income and stock market participation."
+ },
+ {
+  "project": "water",
+  "title": "Publication Bias in Measuring the Income Elasticity of Water Demand",
+  "abstract": "We present the first study that examines the effects of publication selection in the literature estimating the income elasticity of water demand. Paradoxically, more affected by publication selection are the otherwise preferable estimates that control for the endogeneity. Because such estimates tend to be smaller and less precise, they are often statistically insignificant, which leads to more intense specification searching and bias. Attempting to correct simultaneously for publication and endogeneity biases, we find that the mean underlying elasticity is approximately 0.15 or less. The result is robust to controlling for 30 other characteristics of the estimates and using Bayesian model averaging to account for model uncertainty. The differences in the reported estimates are systematically driven by differences in the tariff structure, regional coverage, data granularity, and control for temperature in the demand equation.",
+  "reference_line": "Tomas Havranek, Zuzana Irsova, and Tomas Vlach (2018), \"Measuring the Income Elasticity of Water Demand: The Importance of Publication and Endogeneity Biases.\" Land Economics 94(2): 259-283.",
+  "authors": [
+   "Tomas Havranek",
+   "Zuzana Irsova",
+   "Tomas Vlach"
+  ],
+  "year": 2018,
+  "journal": "Land Economics",
+  "doi_or_publisher_url": null,
+  "menu_links": [
+   {
+    "label": "Paper",
+    "href": "water2.pdf"
+   },
+   {
+    "label": "Additional Results",
+    "href": "appendix.pdf"
+   },
+   {
+    "label": "Examined Studies",
+    "href": "search.html"
+   },
+   {
+    "label": "Included Studies",
+    "href": "studies.xlsx"
+   },
+   {
+    "label": "Data",
+    "href": "water.xlsx"
+   },
+   {
+    "label": "Code",
+    "href": "water.do"
+   }
+  ],
+  "figure": {
+   "src": "funnel.png",
+   "caption": "Fig: Publication Selection Creates and Upward Bias in the Literature"
+  },
+  "has_meta_description": true,
+  "meta_keywords": "water demand, income elasticity, Bayesian model averaging, meta-analysis, publication bias",
+  "one_line": "A meta-analysis finds publication and endogeneity biases inflate reported income elasticities of water demand, with a true elasticity near 0.15."
+ }
+]

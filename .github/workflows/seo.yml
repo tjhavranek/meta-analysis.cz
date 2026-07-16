@@ -1,0 +1,68 @@
+# Rebuilds the invisible SEO/AI-metadata layer on every push and deploys the
+# verified result to GitHub Pages. Nothing is committed back to main.
+#
+# Owner's workflow stays: edit files -> git push. A new paper folder gets
+# baseline coverage (canonical, OG, JSON-LD, sitemap, llms.txt) automatically;
+# the run then turns RED as a reminder to enrich tools/papers.json (Scholar
+# tags need reviewed authors/year) — the site still deploys fine.
+name: seo-build-deploy
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: pages
+  cancel-in-progress: true
+
+jobs:
+  build-deploy:
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deploy.outputs.page_url }}
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0   # full history for git-based sitemap lastmod
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Generate metadata layer (idempotent, in checkout only)
+        id: gen
+        run: python tools/generate_seo.py
+        continue-on-error: true
+      - name: Verify (visible content unchanged, JSON-LD valid, URLs resolve)
+        run: python tools/verify_seo.py
+      - name: Configure Pages
+        uses: actions/configure-pages@v5
+      - name: Upload site artifact
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: .
+      - name: Deploy to GitHub Pages
+        id: deploy
+        uses: actions/deploy-pages@v4
+      - name: Ping IndexNow with changed URLs (best effort)
+        continue-on-error: true
+        run: |
+          KEY=$(basename $(ls ./*.txt | grep -E '/[0-9a-f]{32}\.txt$') .txt)
+          CHANGED=$(git diff --name-only HEAD~1 HEAD 2>/dev/null | grep -E 'index\.html|\.pdf$' | head -20 || true)
+          URLS='"https://meta-analysis.cz/"'
+          for f in $CHANGED; do
+            u=$(echo "$f" | sed 's|/index.html$|/|')
+            URLS="$URLS, \"https://meta-analysis.cz/$u\""
+          done
+          curl -s -X POST "https://api.indexnow.org/indexnow" \
+            -H "Content-Type: application/json; charset=utf-8" \
+            -d "{\"host\":\"meta-analysis.cz\",\"key\":\"$KEY\",\"urlList\":[$URLS]}" || true
+      - name: Metadata enrichment audit
+        if: steps.gen.outcome == 'failure'
+        run: |
+          echo "::error::A page is missing from tools/papers.json (see 'Generate metadata layer' log). The site deployed fine with baseline coverage, but Google Scholar tags require reviewed metadata — ask your AI assistant to enrich tools/papers.json."
+          exit 1

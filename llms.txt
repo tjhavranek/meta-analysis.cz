@@ -1,0 +1,64 @@
+# meta-analysis.cz
+
+> Data, code, and papers for meta-analyses in economics and the social sciences, by researchers at Charles University, Prague. Each paper page links the full-text PDF and, for most papers, the dataset and estimation code.
+
+## Papers
+
+- [Does Shareholder Activism Create Value? A Meta-Analysis](https://meta-analysis.cz/activism/): Meta-analysis of 1,973 estimates from 67 studies finds shareholder activism raises stock prices by 0% to 1.5% after correcting for publication bias.
+- [Where Have All the Alphas Gone? A Meta-Analysis of Hedge Fund Performance](https://meta-analysis.cz/alphas/): Meta-analysis of 1,019 estimates from 74 studies finds hedge fund alpha is near zero after accounting for fees and research design.
+- [A Meta-Analysis of the Trade Cost Elasticity](https://meta-analysis.cz/armington/): Meta-analysis of 3,524 estimates finds the Armington trade elasticity is 2.5-5.1 after correcting for publication bias.
+- [Beauty and Professional Success: A Meta-Analysis](https://meta-analysis.cz/beauty/): A meta-analysis of 1,159 estimates: the beauty premium in earnings and productivity is small once publication bias and cognitive ability are addressed.
+- [A Meta-Analysis of Horizontal Spillovers from FDI](https://meta-analysis.cz/bma/): Meta-analysis of 1205 estimates finds horizontal FDI spillovers average zero, shaped by technology gap and ownership structure.
+- [Do Borders Really Slash Trade? A Meta-Analysis](https://meta-analysis.cz/border/): Meta-analysis of 1,271 estimates from 61 studies finds methodological choices shrink the true border effect on trade.
+- [Class Size and Student Achievement: A Meta-Analysis](https://meta-analysis.cz/class/): A meta-analysis of 2,819 estimates from 66 studies finds little publication bias and a negligible class size effect on student achievement.
+- [Publication Bias in Measuring Anthropogenic Climate Change](https://meta-analysis.cz/climate/): Meta-analysis of 48 estimates finds publication bias inflates climate sensitivity; corrected range is 1.4-2.3°C.
+- [Bank Competition and Financial Stability: Much Ado About Nothing?](https://meta-analysis.cz/competition/): A meta-analysis of 598 estimates from 31 studies finding little relationship between bank competition and financial stability.
+- [Reducing the biases of the conventional meta-analysis of correlations](https://meta-analysis.cz/correlations/): Simulations show UWLS+3 and PET-PEESE reduce small-sample and publication-selection bias in meta-analyses of correlations.
+- [Individual Discount Rates: A Meta-Analysis of Experimental Evidence](https://meta-analysis.cz/discrate/): Meta-analysis of experimental discount-rate estimates finds publication bias and a corrected mean annual rate of 0.33.
+- [Does Daylight Saving Save Electricity? A Meta-Analysis](https://meta-analysis.cz/dst/): A meta-analysis of 162 estimates from 44 studies finds daylight saving time yields slight electricity savings of about 0.34%.
+- [Publication Bias in Measuring the Impact of Tuition on Enrollment](https://meta-analysis.cz/education/): Meta-analysis of 443 estimates finds the tuition-enrollment elasticity is near zero once publication bias is corrected.
+- [Publication Bias in Measuring Intertemporal Substitution](https://meta-analysis.cz/eis/): Meta-analysis of 2,735 EIS estimates finds strong selective reporting inflates the elasticity of intertemporal substitution.
+- [A Meta-Analysis of the Trade Effect of the Euro](https://meta-analysis.cz/euro/): Meta-analysis finds the euro's trade-promoting effect is insignificant once publication bias is corrected for.
+- [A Meta-Analysis of the Excess Sensitivity of Consumption to Anticipated Income Changes](https://meta-analysis.cz/excess_sensitivity/): Meta-analysis of 144 studies finds little excess sensitivity of consumption once micro data, publication bias, and liquidity constraints are addressed.
+- [Effect of Exercise on Cognition, Memory, and Executive Function: A Study-Level Meta-Meta-Analysis Across Populations and Exercise Categories](https://meta-analysis.cz/exercise/): Meta-meta-analysis of 2,239 estimates finds publication-bias-adjusted exercise effects on cognition are smaller than commonly reported.
+- [Foreign Capital and Domestic Productivity in the Czech Republic: A Meta-Regression Analysis](https://meta-analysis.cz/fdi/): Meta-analysis of 332 estimates finds FDI spillovers raise Czech domestic firm productivity, larger for joint ventures.
+- [Financial Development and Economic Growth: A Meta-Analysis](https://meta-analysis.cz/finance_growth/): A meta-analysis of 1334 estimates from 67 studies finds financial development has a positive, heterogeneous effect on economic growth.
+- [How Puzzling Is the Forward Premium Puzzle? A Meta-Analysis](https://meta-analysis.cz/forward/): Meta-analysis of 3,643 estimates from 91 studies finds forward rate unbiasedness holds better than commonly thought once biases are corrected.
+- [Publication and Identification Biases in Measuring the Intertemporal Substitution of Labor Supply](https://meta-analysis.cz/frisch/): Meta-analysis of over 700 estimates finds publication bias inflates the Frisch labor supply elasticity, with a corrected total hours elasticity near 0.25.
+- [A Meta-Analysis of the Income Elasticity of Gasoline Demand](https://meta-analysis.cz/gasoline/): Meta-regression corrects for publication bias, finding gasoline demand income elasticity of 0.1 short run and 0.23 long run.
+- [A Meta-Analysis of the Price Elasticity of Gasoline Demand](https://meta-analysis.cz/gasoline_price/): Meta-analysis shows published gasoline demand elasticities are exaggerated twofold due to publication selection bias.
+- [Meta-Analysis of Social Science Research: A Practitioner’s Guide](https://meta-analysis.cz/guidelines/): Step-by-step guidelines for modern meta-analysis in social sciences, covering publication bias, p-hacking, heterogeneity, and AI-assisted workflows.
+- [Habit Formation in Consumption: A Meta-Analysis](https://meta-analysis.cz/habits/): Meta-analysis of 597 estimates finds habit formation averages 0.4, with macro data yielding larger estimates than micro data.
+- [Hedge Fund Performance: A Meta-Analysis](https://meta-analysis.cz/hedge/): Quantitative survey of 1,019 hedge fund alpha estimates from 74 studies finds little evidence of publication selection bias.
+- [When Does Monetary Policy Sway House Prices? A Meta-Analysis](https://meta-analysis.cz/house_prices/): A meta-analysis of 1,555 estimates from 37 studies across 45 countries finds publication bias exaggerates the effect of interest rates on house prices.
+- [Financial Incentives and Performance: A Meta-Analysis of Experiments in Economics](https://meta-analysis.cz/incentives/): Meta-analysis of 2,193 estimates finds financial incentives have near-zero corrected effect on performance in most field settings.
+- [Optimal Inflation Rate: A Meta-Analysis](https://meta-analysis.cz/inflation/): Meta-analysis of 777 estimates from 116 studies finds an optimal long-run inflation rate near 0.6% per year, below common two-percent central-bank targets.
+- [Transmission Lags of Monetary Policy: A Meta-Analysis](https://meta-analysis.cz/lags/): A meta-analysis of 67 studies finds monetary policy transmission lags average 29 months, longer in developed than transition economies.
+- [Publication Bias and P-Hacking in the Effect of COVID-19 on Learning: A Meta-Analysis](https://meta-analysis.cz/learning/): Meta-analysis of COVID-19 learning loss: bias-corrected RoBMA and MAIVE estimates converge on about -0.12 SD, roughly 30% of a school year.
+- [Meta-Analysis Instrumental Variable Estimator](https://meta-analysis.cz/maive/): MAIVE, an instrumental-variable estimator that corrects meta-analysis for spurious precision when standard errors are estimated and can be p-hacked.
+- [The Elasticity of Substitution between Native and Immigrant Labor: A Meta-Analysis](https://meta-analysis.cz/migrant/): Meta-analysis of 1,091 estimates finds native-immigrant labor substitution elasticity rises from 13 to about 22 after bias correction.
+- [Meta-analyses of partial correlations are biased: Detection and solutions](https://meta-analysis.cz/pcc/): Shows all partial-correlation meta-analyses are biased and proposes UWLS+3 to correct small-sample bias.
+- [How to Solve the Price Puzzle? A Meta-Analysis](https://meta-analysis.cz/price_puzzle/): Meta-analysis of 1,000 VAR estimates shows the price puzzle stems from model misspecification, not a true price effect.
+- [Structural Reforms and Economic Growth: A Meta-Analysis](https://meta-analysis.cz/reforms/): Meta-analysis of 46 studies finds structural reforms in transition countries carry short-run costs but strong long-run growth benefits.
+- [Remittances and Economic Growth: A Meta-Analysis](https://meta-analysis.cz/remittances/): Meta-analysis of 538 estimates finds remittances have a small positive, publication-bias-corrected effect on growth, stronger in Asia than Africa.
+- [Natural Resources and Economic Growth: A Meta-Analysis](https://meta-analysis.cz/resource_curse/): Meta-analysis of 605 estimates finds weak support for the resource curse once publication bias and methods are addressed.
+- [Relative Risk Aversion: A Meta-Analysis](https://meta-analysis.cz/risk/): A meta-analysis of 1,021 estimates from 92 studies finds publication-bias-corrected relative risk aversion near 1 in economics and 2-7 in finance.
+- [Selective Reporting and the Social Cost of Carbon](https://meta-analysis.cz/scc/): Meta-analysis of 809 SCC estimates from 101 studies finds selective reporting creates an upward bias, especially in peer-reviewed journals.
+- [Measuring Capital-Labor Substitution: The Importance of Method Choices and Publication Bias](https://meta-analysis.cz/sigma/): Meta-analysis of 3,186 estimates from 121 studies finds the capital-labor elasticity of substitution is 0.3, far below the literature's average of 0.9.
+- [A Meta-Analysis of the Relation Between Firm Size and Stock Returns](https://meta-analysis.cz/size/): First meta-analysis of the size premium finds strong publication bias and a corrected effect of 1.72% in annual returns.
+- [Publication and Attenuation Biases in Measuring Skill Substitution](https://meta-analysis.cz/skill/): Meta-analysis finds publication bias dominates in skill substitution estimates, implying a mean elasticity of 4.
+- [A Meta-Analysis of Vertical Spillovers from FDI](https://meta-analysis.cz/spillovers/): A meta-analysis of 3,626 estimates finds vertical FDI spillovers to suppliers are economically significant but spillovers to buyers small.
+- [Student Employment and Education: A Meta-Analysis](https://meta-analysis.cz/students/): Meta-analysis of 861 estimates finds student employment has a negative but economically small effect on educational outcomes.
+- [Why Does Intertemporal Substitution Vary Across Countries? A Meta-Analysis](https://meta-analysis.cz/substitution/): Meta-analysis of 2,735 estimates across 104 countries links intertemporal substitution to income and stock market participation.
+- [Publication Bias in Measuring the Income Elasticity of Water Demand](https://meta-analysis.cz/water/): A meta-analysis finds publication and endogeneity biases inflate reported income elasticities of water demand, with a true elasticity near 0.15.
+
+## Resources
+
+- [Full paper index with abstracts and file links](https://meta-analysis.cz/llms-full.txt): one entry per paper, for LLM ingestion
+- [Sitemap](https://meta-analysis.cz/sitemap.xml): all pages and PDF full texts
+- [EasyMeta](https://www.easymeta.org/): one-click meta-analysis web app (MAIVE, PET-PEESE, clustering)
+- [MAER-Net](https://www.maer-net.org/): Meta-Analysis of Economics Research Network
+
+## Optional
+
+- [MAER-Net 2015 Prague Colloquium program](https://meta-analysis.cz/conference/MAER-Net2015_program.pdf): conference archive under /conference/

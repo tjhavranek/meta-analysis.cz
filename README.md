@@ -7,8 +7,10 @@ code. It is served by **GitHub Pages** at the custom domain **meta-analysis.cz**
 ## How it's published (one-time setup)
 
 1. Create a GitHub repo and push this folder's contents to the default branch.
-2. Repo **Settings → Pages**: Source = "Deploy from a branch", branch = `main`,
-   folder = `/ (root)`. Save.
+2. Repo **Settings → Pages**: Source = "GitHub Actions". Every push to `main`
+   runs `.github/workflows/seo.yml`, which regenerates the invisible
+   metadata layer (see below), verifies it, and deploys the site. If a check
+   fails, the previous site stays live.
 3. The `CNAME` file (already here) sets the custom domain to `meta-analysis.cz`.
    In Settings → Pages, confirm the domain shows and **Enforce HTTPS** is ticked
    (the certificate can take ~15 min to an hour the first time).
@@ -45,6 +47,35 @@ as-is. Do **not** move files into Git LFS — Pages cannot serve LFS files.
 - **Keep filenames URL-safe** (letters, digits, `-`, `_`, `.`). Avoid spaces,
   `%`, parentheses. Filenames are **case-sensitive** on the live site, so a link
   to `Funnel.png` will not find `funnel.png`.
+
+## Machine-readable metadata (SEO / AI indexing)
+
+The site carries an invisible metadata layer so search engines, Google Scholar,
+Google Dataset Search, and AI/LLM crawlers can index everything:
+
+- each paper page: canonical URL, Highwire `citation_*` tags (what Google
+  Scholar reads, incl. `citation_pdf_url` to the full text), Open Graph tags,
+  and JSON-LD (`ScholarlyArticle` + `Dataset` with data/code download links) —
+  injected between `<!-- seo-meta:start/end -->` comments in `<head>`;
+- site root: `robots.txt` (all crawlers incl. AI bots welcome), `sitemap.xml`
+  (all pages + own paper/supplement PDFs), `llms.txt` and `llms-full.txt`
+  (plain-text indexes with abstracts for LLM ingestion).
+
+**This regenerates automatically on every push** (`tools/generate_seo.py`,
+driven by the filesystem). Metadata (authors, year, journal) comes from
+`tools/papers.json`. **Adding a new paper**: just push the new folder — it
+gets baseline coverage immediately; the workflow then turns red as a reminder
+to add the paper's entry to `tools/papers.json` (easiest: ask Claude/your AI
+assistant — "add the new paper to papers.json"), after which the red goes away
+and Scholar tags appear. Never edit inside the sentinel comments by hand.
+
+**Owner TODO for maximum reach (one-time, outside this repo):**
+1. Verify the domain in Google Search Console + Bing Webmaster Tools and
+   submit `https://meta-analysis.cz/sitemap.xml`.
+2. Backfill publisher DOIs for published papers into `tools/papers.json`
+   (field `doi_or_publisher_url`) — enables `citation_doi` and richer JSON-LD.
+3. Consider Zenodo/OSF deposits with DOIs + explicit licenses for datasets,
+   and make sure RePEc/IDEAS records link to these landing pages.
 
 ## After any deploy — quick check
 
