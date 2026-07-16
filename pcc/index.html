@@ -34,6 +34,9 @@ Released for free under a Creative Commons Attribution 2.5 License
 <meta name="citation_author" content="Tomas Havranek" />
 <meta name="citation_publication_date" content="2024" />
 <meta name="citation_journal_title" content="Research Synthesis Methods" />
+<meta name="citation_volume" content="15" />
+<meta name="citation_firstpage" content="313" />
+<meta name="citation_lastpage" content="325" />
 <meta name="citation_doi" content="10.1002/jrsm.1704" />
 <meta name="citation_pdf_url" content="https://meta-analysis.cz/pcc/pcc2.pdf" />
 <meta property="og:site_name" content="meta-analysis.cz" />
@@ -67,14 +70,21 @@ Released for free under a Creative Commons Attribution 2.5 License
     },
     {
      "@type": "Person",
-     "name": "Tomas Havranek"
+     "name": "Tomas Havranek",
+     "sameAs": "https://orcid.org/0000-0002-3158-2539"
     }
    ],
    "datePublished": "2024",
    "isPartOf": {
-    "@type": "Periodical",
-    "name": "Research Synthesis Methods"
+    "@type": "PublicationVolume",
+    "volumeNumber": "15",
+    "isPartOf": {
+     "@type": "Periodical",
+     "name": "Research Synthesis Methods"
+    }
    },
+   "pageStart": "313",
+   "pageEnd": "325",
    "sameAs": "https://doi.org/10.1002/jrsm.1704",
    "identifier": {
     "@type": "PropertyValue",
@@ -102,10 +112,13 @@ Released for free under a Creative Commons Attribution 2.5 License
    "@type": "Dataset",
    "@id": "https://meta-analysis.cz/pcc/#dataset",
    "name": "Data and code for: Meta-analyses of partial correlations are biased: Detection and solutions",
-   "description": "Dataset and replication files for the meta-analysis. We demonstrate that all meta-analyses of partial correlations are biased, and yet hundreds of meta-analyses of partial correlation coefficients (PCC) are conducted each year widely across economics, business, education, psychology, and medical research. To address these biases, we offer a new weighted average, UWLS+3. UWLS+3 is the unrestricted weighted least squares weighted average that makes an adjustment to the degrees of freedom that are used to calculate partial correlations and, by doing so, renders trivial any remaining meta-analysis bias. Our simulations also reveal that these meta-analysis biases are small-sample biases (n < 200), and a simple correction factor of (n-2)/(n-1) greatly reduces these small-sample biases. In many applications where primary studies typically have hundreds or more observations, partial correlations can be meta-analyzed in standard ways with only negligible bias. However, in other fields in the social and the medical sciences that are dominated by small samples, these meta-analysis biases are easily avoidable by our proposed methods.",
+   "description": "Dataset and replication files for the study. We demonstrate that all meta-analyses of partial correlations are biased, and yet hundreds of meta-analyses of partial correlation coefficients (PCC) are conducted each year widely across economics, business, education, psychology, and medical research. To address these biases, we offer a new weighted average, UWLS+3. UWLS+3 is the unrestricted weighted least squares weighted average that makes an adjustment to the degrees of freedom that are used to calculate partial correlations and, by doing so, renders trivial any remaining meta-analysis bias. Our simulations also reveal that these meta-analysis biases are small-sample biases (n < 200), and a simple correction factor of (n-2)/(n-1) greatly reduces these small-sample biases. In many applications where primary studies typically have hundreds or more observations, partial correlations can be meta-analyzed in standard ways with only negligible bias. However, in other fields in the social and the medical sciences that are dominated by small samples, these meta-analysis biases are easily avoidable by our proposed methods.",
    "url": "https://meta-analysis.cz/pcc/",
    "isAccessibleForFree": true,
    "inLanguage": "en",
+   "subjectOf": {
+    "@id": "https://meta-analysis.cz/pcc/#paper"
+   },
    "distribution": [
     {
      "@type": "DataDownload",
@@ -114,9 +127,6 @@ Released for free under a Creative Commons Attribution 2.5 License
      "encodingFormat": "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet"
     }
    ],
-   "subjectOf": {
-    "@id": "https://meta-analysis.cz/pcc/#paper"
-   },
    "creator": [
     {
      "@type": "Person",
@@ -128,7 +138,8 @@ Released for free under a Creative Commons Attribution 2.5 License
     },
     {
      "@type": "Person",
-     "name": "Tomas Havranek"
+     "name": "Tomas Havranek",
+     "sameAs": "https://orcid.org/0000-0002-3158-2539"
     }
    ],
    "citation": "T. D. Stanley, Hristos Doucouliagos, and Tomas Havranek (2024): \"Meta-analyses of partial correlations are biased: Detection and solutions.\" Research Synthesis Methods 15: 313-325.",

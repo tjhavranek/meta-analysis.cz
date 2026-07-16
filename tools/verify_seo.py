@@ -57,10 +57,37 @@ for rel in pages:
         fails.append(f"{rel}: VISIBLE TEXT CHANGED")
     if new.count('rel="canonical"') != 1:
         fails.append(f"{rel}: canonical count != 1")
-    # duplicate metadata families confuse Google Scholar (the /debate incident)
-    for tag in ('name="citation_title"', 'property="og:title"'):
+    # duplicate metadata families confuse Google Scholar (the /debate incident):
+    # no single-instance metadata tag may appear more than once anywhere
+    for tag in ('name="citation_title"', 'property="og:title"',
+                'property="og:url"', 'name="citation_doi"',
+                'name="citation_pdf_url"', 'rel="canonical"'):
         if new.count(tag) > 1:
-            fails.append(f"{rel}: DUPLICATE {tag} ({new.count(tag)}x) - conflicting metadata blocks")
+            fails.append(f"{rel}: DUPLICATE {tag} ({new.count(tag)}x) - conflicting metadata")
+    # every citation_*/og: tag must live INSIDE the sentinel block (no
+    # hand-written metadata outside it, which is what collided on /debate)
+    m_in = re.search(r'<!-- seo-meta:start -->(.*?)<!-- seo-meta:end -->', new, re.S)
+    outside = new.replace(m_in.group(0), "") if m_in else new
+    if re.search(r'name="citation_|property="og:|application/ld\+json', outside):
+        fails.append(f"{rel}: metadata found OUTSIDE the seo-meta sentinel block "
+                     f"(hand-written duplicate?) - move it inside or remove it")
+    # COVERAGE: a page whose menu links a same-folder, non-supplement PDF must
+    # expose citation_pdf_url (the bug that silently dropped 11 pages' full text)
+    proj = rel.split("/")[0]
+    if proj != "index.html":
+        menu = re.search(r'<div id="menu">(.*?)</div>', new, re.S)
+        if menu:
+            supp = re.compile(r"appendix|supplement|online|additional|results|studies|"
+                              r"calibrat|classif|excluded|replication|dataset|figure|slides", re.I)
+            for href, lbl in re.findall(r'<a href="([^"]+\.pdf)"[^>]*>(.*?)</a>', menu.group(1), re.S):
+                if href.startswith(("http", "/")):
+                    continue
+                lbl = re.sub(r"<[^>]+>", "", lbl)
+                if supp.search(lbl):
+                    continue
+                if os.path.isfile(os.path.join(SITE, proj, href)) and 'citation_pdf_url' not in new:
+                    fails.append(f"{rel}: has local paper PDF '{href}' but NO citation_pdf_url")
+                break
     blocks = re.findall(r'<script type="application/ld\+json">(.*?)</script>', new, re.S)
     if len(blocks) != 1:
         fails.append(f"{rel}: expected 1 JSON-LD block, found {len(blocks)}")

@@ -44,13 +44,28 @@ def absurl(proj, href):
 def jdump(obj):
     return json.dumps(obj, ensure_ascii=False, indent=1).replace("</", "<\\/")
 
-def person(name):
-    return {"@type": "Person", "name": name}
+# verified ORCID iDs for frequent authors (exact-name map; confirmed via
+# pub.orcid.org). Only these two are asserted — never inferred for others.
+AUTHOR_IDS = {
+    "tomas havranek": "https://orcid.org/0000-0002-3158-2539",
+    "zuzana irsova": "https://orcid.org/0000-0002-0753-8124",
+    "zuzana havrankova": "https://orcid.org/0000-0002-0753-8124",
+}
 
+def person(name):
+    p = {"@type": "Person", "name": name}
+    key = re.sub(r"[^a-z ]", "", (name or "").lower()).strip()
+    if key in AUTHOR_IDS:
+        p["sameAs"] = AUTHOR_IDS[key]
+    return p
+
+# volume/issue/first-last-page from a citation line. Ordered most→least
+# specific; tolerant of "pp.", ":", "," separators and en/em dashes.
 REF_VIP = [
-    re.compile(r"(?P<vol>\d+)\s*\(\s*(?P<iss>[\dA-Za-z\-]+)\s*\)\s*[:,]\s*(?P<fp>\d+)\s*[-–—]\s*(?P<lp>\d+)"),
-    re.compile(r"(?P<vol>\d+)\s*\(\s*(?P<iss>[\dA-Za-z\-]+)\s*\)\s*[:,]\s*(?P<fp>\d+)"),
-    re.compile(r"\b(?P<vol>\d{1,3}),\s*(?P<fp>\d{4,7})\b"),
+    re.compile(r"(?P<vol>\d+)\s*\(\s*(?P<iss>[\dA-Za-z\-]+)\s*\)\s*[:,]?\s*(?:pp?\.?\s*)?(?P<fp>\d+)\s*[-–—]\s*(?P<lp>\d+)"),
+    re.compile(r"(?P<vol>\d+)\s*\(\s*(?P<iss>[\dA-Za-z\-]+)\s*\)\s*[:,]?\s*(?:pp?\.?\s*)?(?P<fp>\d+)"),
+    re.compile(r"(?<![.\d])(?P<vol>\d{1,3})\s*[:,]\s*(?:pp?\.?\s*)?(?P<fp>\d+)\s*[-–—]\s*(?P<lp>\d+)"),
+    re.compile(r"(?<![.\d])(?P<vol>\d{1,3}),\s*(?P<fp>\d{4,7})\b"),  # article-number journals
 ]
 
 def parse_ref(ref):
@@ -117,34 +132,47 @@ def local_exists(proj, href):
     path = os.path.join(SITE, p) if href.startswith("/") else os.path.join(SITE, proj, p)
     return os.path.isfile(path)
 
+SUPP = re.compile(r"appendix|supplement|online|additional|results|studies|"
+                  r"calibrat|classif|excluded|replication|do.?file|stata|"
+                  r"matlab|dataset|figure|slides|presentation", re.I)
+FILE_URL = re.compile(r"\.(zip|xlsx?|csv|dta|do|r|pdf|txt|tsv|json)$", re.I)
+NOT_DATA = re.compile(r"scholar\.google|/scholar\?|/citations\?|/search\b", re.I)
+
 def classify_links(m):
-    main_pdf, other_pdfs, dc_local, dc_ext = None, [], [], []
+    """main paper PDF, other local PDFs, local data/code downloads,
+    external DIRECT-FILE downloads, and external LANDING pages (-> sameAs)."""
+    main_pdf, other_pdfs, dc_local, dc_ext_file, ext_landing = None, [], [], [], []
     for link in m["menu_links"]:
         href, label = link["href"], link["label"].strip()
         ext = os.path.splitext(href.split("?")[0].split("#")[0])[1].lower()
         if href.startswith(("http://", "https://")):
-            if DATAISH.search(label):
-                dc_ext.append(link)
+            if not DATAISH.search(label) or NOT_DATA.search(href):
+                continue  # a Google Scholar search etc. is not dataset data
+            if FILE_URL.search(href.split("?")[0]):
+                dc_ext_file.append(link)          # direct downloadable file
+            else:
+                ext_landing.append(link)          # OSF/Zenodo landing page
             continue
-        if not ext:          # page/anchor link, not a file
+        if not ext or href.startswith("/"):  # anchor, or cross-project abs link
             continue
         if not local_exists(m["project"], href):
             WARNINGS.append(f"{m['project']}: menu links missing file {href} — "
                             f"excluded from metadata; add the file or fix the link")
             continue
         if ext == ".pdf":
-            if label.lower() == "paper" and main_pdf is None:
+            # main paper = first same-folder PDF that isn't a supplement
+            if main_pdf is None and not SUPP.search(label):
                 main_pdf = link
             else:
                 other_pdfs.append(link)
         elif ext in DATA_EXT or ext in CODE_EXT:
             dc_local.append(link)
-    return main_pdf, other_pdfs, dc_local, dc_ext
+    return main_pdf, other_pdfs, dc_local, dc_ext_file, ext_landing
 
 def build_jsonld(m):
     proj, page = m["project"], f"{BASE}/{m['project']}/"
     authors = [person(a) for a in (m["authors"] or [])]
-    main_pdf, other_pdfs, dc_local, dc_ext = classify_links(m)
+    main_pdf, other_pdfs, dc_local, dc_ext_file, ext_landing = classify_links(m)
     vip = parse_ref(m["reference_line"])
     art = {"@type": "ScholarlyArticle", "@id": page + "#paper",
            "mainEntityOfPage": page, "url": page,
@@ -184,17 +212,23 @@ def build_jsonld(m):
         art["hasPart"] = [{"@type": "CreativeWork", "name": p["label"],
                             "url": absurl(proj, p["href"])} for p in other_pdfs]
     graph = [art]
-    if dc_local or dc_ext:
+    if dc_local or dc_ext_file or ext_landing:
+        # distribution = actual downloadable files only; repository landing
+        # pages (OSF/Zenodo) go to sameAs, not distribution
         dist = [{"@type": "DataDownload", "name": f["label"],
                  "contentUrl": absurl(proj, f["href"]),
                  "encodingFormat": FMT.get(os.path.splitext(f["href"].split("?")[0])[1].lower(),
                                             "application/octet-stream")}
-                for f in dc_local + dc_ext]
+                for f in dc_local + dc_ext_file]
         ds = {"@type": "Dataset", "@id": page + "#dataset",
               "name": f"Data and code for: {m['title']}",
               "description": ("Dataset and replication files for the study. " + m["abstract"])[:4900],
               "url": page, "isAccessibleForFree": True, "inLanguage": "en",
-              "distribution": dist, "subjectOf": {"@id": page + "#paper"}}
+              "subjectOf": {"@id": page + "#paper"}}
+        if dist:
+            ds["distribution"] = dist
+        if ext_landing:
+            ds["sameAs"] = [l["href"] for l in ext_landing]
         if authors:
             ds["creator"] = authors
         if m["reference_line"]:
@@ -230,7 +264,7 @@ def highwire_tags(m):
     doi = extract_doi(m["doi_or_publisher_url"])
     if doi:
         tags.append(f'<meta name="citation_doi" content="{doi}" />')
-    main_pdf, _, _, _ = classify_links(m)
+    main_pdf = classify_links(m)[0]
     if main_pdf:
         tags.append(f'<meta name="citation_pdf_url" content="{absurl(m["project"], main_pdf["href"])}" />')
     return tags
@@ -261,8 +295,15 @@ S_OPEN, S_CLOSE = "<!-- seo-meta:start -->", "<!-- seo-meta:end -->"
 
 def inject(path, block):
     raw = open(path, "rb").read().decode("utf-8")
-    if S_OPEN in raw:
-        raw = re.sub(re.escape(S_OPEN) + r".*?" + re.escape(S_CLOSE) + r"\n?", "", raw, flags=re.S)
+    no = raw.count(S_OPEN)
+    nc = raw.count(S_CLOSE)
+    if no != nc:
+        WARNINGS.append(f"{path}: unbalanced seo-meta sentinels ({no} start / {nc} "
+                        f"end) — fix by hand; page skipped to avoid double injection")
+        return False
+    if no:  # strip existing block(s); tolerate CRLF and repeated blocks
+        raw = re.sub(re.escape(S_OPEN) + r".*?" + re.escape(S_CLOSE) + r"\r?\n?",
+                     "", raw, flags=re.S)
     if raw.count("</head>") != 1:
         WARNINGS.append(f"{path}: no unique </head>, page skipped")
         return False
@@ -301,7 +342,7 @@ def main():
         raw = open(os.path.join(SITE, proj, "index.html"), "rb").read().decode("utf-8")
         # parse the page WITHOUT our own previous injection (else we'd mistake
         # our injected meta description for the page's own and then drop it),
-        raw_clean = re.sub(re.escape(S_OPEN) + r".*?" + re.escape(S_CLOSE) + r"\n?",
+        raw_clean = re.sub(re.escape(S_OPEN) + r".*?" + re.escape(S_CLOSE) + r"\r?\n?",
                            "", raw, flags=re.S)
         # and flag hand-written metadata that would collide with our block
         # (this is what happened on /debate before it was cleaned up)
