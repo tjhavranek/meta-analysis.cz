@@ -88,18 +88,27 @@ def fallback_parse(proj, raw):
         m = re.search(p, raw, flags)
         return m.group(1).strip() if m else None
     title = html.unescape(rx1(r"<title>(.*?)</title>") or proj)
-    entry = rx1(r'<div class="entry">(.*?)</div>')
+    # some pages wrap the abstract in a custom <abstract> tag rather than <p>;
+    # prefer that, else fall back to the entry-div paragraphs
     abstract = ""
-    if entry:
-        paras = []
-        for ptxt in re.findall(r"<p>(.*?)</p>", entry, re.S):
-            t = re.sub(r"\s+", " ", html.unescape(re.sub(r"<[^>]+>", " ", ptxt))).strip()
-            if not t or t.lower().startswith(("fig", "reference")):
-                continue
-            if "Reference:" in ptxt or "<img" in ptxt:
-                continue
-            paras.append(t)
-        abstract = " ".join(paras).strip()
+    am = re.search(r"<abstract>(.*?)</abstract>", raw, re.S | re.I)
+    if am:
+        abstract = re.sub(r"\s+", " ", html.unescape(re.sub(r"<[^>]+>", " ", am.group(1)))).strip()
+    else:
+        entry = rx1(r'<div class="entry">(.*?)</div>')
+        if entry:
+            paras = []
+            for ptxt in re.findall(r"<p>(.*?)</p>", entry, re.S):
+                t = re.sub(r"\s+", " ", html.unescape(re.sub(r"<[^>]+>", " ", ptxt))).strip()
+                if not t or t.lower().startswith(("fig", "reference")):
+                    continue
+                if "Reference:" in ptxt or "<img" in ptxt:
+                    continue
+                paras.append(t)
+            abstract = " ".join(paras).strip()
+    # guard: a scrape that just echoes the title is not a real abstract
+    if abstract and abstract.strip() == title.strip():
+        abstract = ""
     menu = []
     menu_html = rx1(r'<div id="menu">(.*?)</div>')
     if menu_html:

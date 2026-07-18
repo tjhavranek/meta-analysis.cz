@@ -117,6 +117,7 @@ Abstract: Conventional meta-analyses (both fixed and random effects) of correlat
 ## Does Multi-Agent Debate Improve AI Feedback on Research Papers?
 URL: https://meta-analysis.cz/debate/
 Citation: Tomas Havranek, Zuzana Irsova (2026), “Does Multi-Agent Debate Improve AI Feedback on Research Papers?” Charles University, Prague. Available at meta-analysis.cz/debate.
+Published version: https://arxiv.org/abs/2607.14713
 Paper: https://meta-analysis.cz/debate/debate.pdf
 Pre-registration: https://doi.org/10.17605/OSF.IO/E6XGW
 Online Supplement: https://osf.io/7nfyb
@@ -149,7 +150,7 @@ Abstract: The original rationale for adopting daylight saving time (DST) was ene
 
 ## Publication Bias in Measuring the Impact of Tuition on Enrollment
 URL: https://meta-analysis.cz/education/
-Citation: Tomas Havranek, Zuzana Irsova, and Olesia Zeynalova (2018): "Tuition Fees and University Enrolment: A Meta‐Regression Analysis". Oxford Bulletin of Economics and Statistics 80(6): 1145-1184.
+Citation: Tomas Havranek, Zuzana Irsova, and Olesia Zeynalova (2018): "Tuition Fees and University Enrolment: A Meta-Regression Analysis". Oxford Bulletin of Economics and Statistics 80(6): 1145-1184.
 Published version: https://doi.org/10.1111/obes.12240
 Paper: https://meta-analysis.cz/education/education2.pdf
 Examined Studies: https://meta-analysis.cz/education/search.html
@@ -263,7 +264,7 @@ Included Studies: https://meta-analysis.cz/frisch/studies.xlsx
 Data: https://meta-analysis.cz/frisch/frisch_data.zip
 Code: https://meta-analysis.cz/frisch/frisch_code.zip
 
-Abstract: Publication and Identification Biases in Measuring the Intertemporal Substitution of Labor Supply
+Abstract: The intertemporal substitution (Frisch) elasticity of labor supply governs how structural models predict changes in people's willingness to work in response to changes in economic conditions or government fiscal policy. We show that the mean reported estimates of the elasticity are exaggerated due to publication bias. For both the intensive and extensive margins the literature provides over 700 estimates, with a mean of 0.5 in both cases. Correcting for publication bias and emphasizing quasi-experimental evidence reduces the mean intensive margin elasticity to 0.2 and renders the extensive margin elasticity tiny. A total hours elasticity of about 0.25 is the most consistent with empirical evidence. To trace the differences in reported elasticities to differences in estimation context, we collect 23 variables reflecting study design and employ Bayesian and frequentist model averaging to address model uncertainty. On both margins the elasticity is systematically larger for women and workers near retirement, but not enough to support a total hours elasticity above 0.5.
 
 ## A Meta-Analysis of the Income Elasticity of Gasoline Demand
 URL: https://meta-analysis.cz/gasoline/
@@ -464,7 +465,7 @@ Abstract: Estimates of relative risk aversion vary widely, but no study has atte
 
 ## Selective Reporting and the Social Cost of Carbon
 URL: https://meta-analysis.cz/scc/
-Citation: Tomas Havranek, Zuzana Irsova, Karel Janda, and David Zilberman (2015), "Selective Reporting and the Social Cost of Carbon." Energy Econonomics 51, 364-406.
+Citation: Tomas Havranek, Zuzana Irsova, Karel Janda, and David Zilberman (2015), "Selective Reporting and the Social Cost of Carbon." Energy Economics 51, 364-406.
 Published version: https://doi.org/10.1016/j.eneco.2015.08.009
 Paper: https://meta-analysis.cz/scc/scc2.pdf
 Examined Studies: http://scholar.google.cz/scholar?as_sdt=1,5&q=%22social+costs+of+carbon%22+OR+%22social+cost+of+carbon%22+carbon+climate+change+marginal+damage+costs+emissions+greenhouse+impacts&hl=en&as_ylo=2012&as_vis=1
@@ -485,7 +486,7 @@ Included Studies: https://meta-analysis.cz/sigma/studies.xlsx
 Data: https://meta-analysis.cz/sigma/sigma.dta
 Code: https://meta-analysis.cz/sigma/sigma.zip
 
-Abstract: Measuring Capital-Labor Substitution: The Importance of Method Choices and Publication Bias
+Abstract: We show that the large elasticity of substitution between capital and labor estimated in the literature on average, 0.9, can be explained by three factors: publication bias, use of aggregated data, and omission of the first-order condition for capital. The mean elasticity conditional on the absence of publication bias, disaggregated data, and inclusion of information from the first-order condition for capital is 0.3. To obtain this result, we collect 3,186 estimates of the elasticity reported in 121 studies, codify 71 variables that reflect the context in which researchers produce their estimates, and address model uncertainty by Bayesian and frequentist model averaging. We employ nonlinear techniques to correct for publication bias, which is responsible for at least half of the overall reduction in the mean elasticity from 0.9 to 0.3. Our findings also suggest that a failure to normalize the production function leads to a substantial upward bias in the estimated elasticity. The weight of evidence accumulated in the empirical literature emphatically rejects the Cobb-Douglas specification.
 
 ## A Meta-Analysis of the Relation Between Firm Size and Stock Returns
 URL: https://meta-analysis.cz/size/

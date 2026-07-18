@@ -88,6 +88,12 @@ for rel in pages:
                 if os.path.isfile(os.path.join(SITE, proj, href)) and 'citation_pdf_url' not in new:
                     fails.append(f"{rel}: has local paper PDF '{href}' but NO citation_pdf_url")
                 break
+    # the citation_pdf_url value must point to a real file (not just be present)
+    for pu in re.findall(r'name="citation_pdf_url" content="([^"]+)"', new):
+        lp = url_to_path(pu)
+        n_urls += 1
+        if lp and not os.path.isfile(lp):
+            fails.append(f"{rel}: citation_pdf_url target missing on disk: {pu}")
     blocks = re.findall(r'<script type="application/ld\+json">(.*?)</script>', new, re.S)
     if len(blocks) != 1:
         fails.append(f"{rel}: expected 1 JSON-LD block, found {len(blocks)}")
