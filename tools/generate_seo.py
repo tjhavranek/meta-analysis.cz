@@ -185,7 +185,8 @@ def build_jsonld(m):
     vip = parse_ref(m["reference_line"])
     art = {"@type": "ScholarlyArticle", "@id": page + "#paper",
            "mainEntityOfPage": page, "url": page,
-           "headline": m["title"], "name": m["title"],
+           "headline": m.get("citation_title") or m["title"],
+           "name": m.get("citation_title") or m["title"],
            "abstract": m["abstract"], "inLanguage": "en"}
     if authors:
         art["author"] = authors
@@ -257,7 +258,10 @@ def highwire_tags(m):
     if not (m["authors"] and m["year"]):
         return []
     esc = lambda s: html.escape(s, quote=True)
-    tags = [f'<meta name="citation_title" content="{esc(m["title"])}" />']
+    # citation_title: the PAPER's actual title (papers.json override, e.g. when the page uses a
+    # short display title) so Scholar indexes under the real title and merges with the journal
+    # version; falls back to the page title when they coincide
+    tags = [f'<meta name="citation_title" content="{esc(m.get("citation_title") or m["title"])}" />']
     for a in m["authors"]:
         tags.append(f'<meta name="citation_author" content="{esc(a)}" />')
     tags.append(f'<meta name="citation_publication_date" content="{m["year"]}" />')
@@ -368,7 +372,7 @@ def main():
             s = metas[proj]
             m = dict(base)   # title/abstract/menu/figure/keywords from CURRENT page
             for k in ("authors", "journal", "one_line", "doi_or_publisher_url",
-                      "dataset_doi", "dataset_license", "license"):
+                      "dataset_doi", "dataset_license", "license", "citation_title"):
                 if s.get(k):
                     m[k] = s[k]
             if not m["abstract"] or len(m["abstract"]) < 80:
