@@ -20,6 +20,7 @@ META = os.path.join(HERE, "papers.json")
 BASE = "https://meta-analysis.cz"
 TODAY = datetime.date.today().isoformat()
 WARNINGS = []
+NOTES = []   # informational only -- never fail the build
 
 FMT = {
     ".pdf": "application/pdf", ".dta": "application/x-stata-dta",
@@ -165,8 +166,14 @@ def classify_links(m):
         if not ext or href.startswith("/"):  # anchor, or cross-project abs link
             continue
         if not local_exists(m["project"], href):
-            WARNINGS.append(f"{m['project']}: menu links missing file {href} — "
-                            f"excluded from metadata; add the file or fix the link")
+            if href in (m.get("pending_files") or []):
+                # intentionally absent (e.g. a manuscript awaiting co-author sign-off):
+                # keep the visible link, keep it out of the metadata, do not fail the build
+                NOTES.append(f"{m['project']}: {href} is pending (papers.json pending_files) — "
+                             f"excluded from metadata until the file lands")
+            else:
+                WARNINGS.append(f"{m['project']}: menu links missing file {href} — "
+                                f"excluded from metadata; add the file or fix the link")
             continue
         if ext == ".pdf":
             # main paper = first same-folder PDF that isn't a supplement
@@ -372,7 +379,8 @@ def main():
             s = metas[proj]
             m = dict(base)   # title/abstract/menu/figure/keywords from CURRENT page
             for k in ("authors", "journal", "one_line", "doi_or_publisher_url",
-                      "dataset_doi", "dataset_license", "license", "citation_title"):
+                      "dataset_doi", "dataset_license", "license", "citation_title",
+                      "pending_files"):
                 if s.get(k):
                     m[k] = s[k]
             if not m["abstract"] or len(m["abstract"]) < 80:
@@ -487,6 +495,10 @@ def main():
     open(os.path.join(SITE, "llms-full.txt"), "w", encoding="utf-8", newline="\n").write("\n".join(lf))
     print("wrote robots.txt, sitemap.xml, llms.txt, llms-full.txt")
 
+    if NOTES:
+        print("\nNOTES (informational):")
+        for n in NOTES:
+            print("  - " + n)
     if WARNINGS:
         print("\nWARNINGS:")
         for w in WARNINGS:
