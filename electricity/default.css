@@ -110,20 +110,23 @@ input, textarea, select {
 }
 
 #menu ul {
+	display: table;
+	table-layout: fixed;
+	width: 100%;
 	margin: 0;
-	padding: 23px 0 0 20px;
+	padding: 23px 0 0 0;
 	list-style: none;
 	line-height: normal;
 }
 
 #menu li {
-	float: left;
+	display: table-cell;
 	text-align: center;
 }
 
 #menu a {
 	display: block;
-	padding: 0 44px;
+	padding: 0 10px;
 	background: url(images/img03.jpg) no-repeat right 50%;
 	text-decoration: none;
 	text-transform: uppercase;

@@ -5,6 +5,15 @@ Design by Free CSS Templates
 http://www.freecsstemplates.org
 Released for free under a Creative Commons Attribution 2.5 License
 
+Note for co-authors (Zuzana): edit this page freely and push to main; the site
+redeploys automatically. Two things to know:
+ 1. Do NOT edit between the seo-meta:start and seo-meta:end markers below -- that
+    block is regenerated on every deploy (tools/generate_seo.py + tools/papers.json).
+    To change citation metadata, edit tools/papers.json instead.
+ 2. The Paper links point to electricity.pdf, which is intentionally absent until
+    we agree on the final manuscript; drop the agreed PDF into this folder and the
+    links start working.
+
 -->
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
 <head>
@@ -132,13 +141,14 @@ Released for free under a Creative Commons Attribution 2.5 License
 <div id="wrapper">
 <!-- start header -->
 <div id="logo">
-	<h1><a href="./">Price Elasticity of Electricity Demand</a></h1>
+	<h1><a href="electricity.pdf">Price Elasticity of Electricity Demand</a></h1>
 	<h2> &raquo;&nbsp;&nbsp;&nbsp; a meta-analysis</h2>
 </div>
 <div id="header">
 	<div id="menu">
 		<ul>
-			<li class="current_page_item"><a href="replication.zip">Replication Package</a></li>
+			<li class="current_page_item"><a href="electricity.pdf">Paper</a></li>
+			<li><a href="replication.zip">Replication Package</a></li>
 			<li><a href="electricity.xlsx">Data</a></li>
 			<li><a href="/">More Meta-Analyses</a></li>
 		</ul>
