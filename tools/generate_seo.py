@@ -22,6 +22,14 @@ TODAY = datetime.date.today().isoformat()
 WARNINGS = []
 NOTES = []   # informational only -- never fail the build
 
+# Sections that build their own metadata layer and must NOT be injected into.
+# /komentare/ (published commentary, columns, interviews) and /notes/ are generated
+# by their own scripts, which already emit canonical, OG, per-item JSON-LD and a
+# feed. Injecting the paper-oriented ScholarlyArticle block here would duplicate
+# every one of those tags and fail verify_seo. Their pages are still listed in
+# sitemap.xml below.
+SELF_MANAGED = {"komentare", "notes"}
+
 FMT = {
     ".pdf": "application/pdf", ".dta": "application/x-stata-dta",
     ".xlsx": "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet",
@@ -356,7 +364,8 @@ def main():
     metas = {m["project"]: m for m in json.load(open(META, encoding="utf-8"))}
     # filesystem is the source of truth for WHICH pages exist
     projects = sorted(d for d in os.listdir(SITE)
-                      if os.path.isfile(os.path.join(SITE, d, "index.html")))
+                      if os.path.isfile(os.path.join(SITE, d, "index.html"))
+                      and d not in SELF_MANAGED)
     merged = {}
     for proj in projects:
         raw = open(os.path.join(SITE, proj, "index.html"), "rb").read().decode("utf-8")
@@ -456,6 +465,20 @@ def main():
             if fn.lower().endswith(".pdf"):
                 rel = fn if rel_dir == "." else f"{rel_dir}/{fn}"
                 urls.append((BASE + urllib.parse.quote("/" + rel), lastmod(rel)))
+    # self-managed sections: list every page they generate, so the sitemap stays
+    # the single authoritative index even though their metadata is written elsewhere
+    for sec in sorted(SELF_MANAGED):
+        sec_dir = os.path.join(SITE, sec)
+        if not os.path.isfile(os.path.join(sec_dir, "index.html")):
+            continue
+        urls.append((f"{BASE}/{sec}/", lastmod(f"{sec}/index.html")))
+        for dp, dns, fns in os.walk(sec_dir):
+            dns[:] = [d for d in dns if d not in ("src", "__pycache__")]
+            if dp == sec_dir or "index.html" not in fns:
+                continue
+            rel = os.path.relpath(dp, SITE).replace(os.sep, "/")
+            urls.append((f"{BASE}/{rel}/", lastmod(f"{rel}/index.html")))
+
     sm = ['<?xml version="1.0" encoding="UTF-8"?>',
           '<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">']
     sm += [f"  <url><loc>{loc}</loc><lastmod>{lm}</lastmod></url>" for loc, lm in urls]

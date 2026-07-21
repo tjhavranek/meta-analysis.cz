@@ -666,6 +666,16 @@ def write_machine_readable(items):
 
 
 def update_sitemap(items):
+    """No longer writes sitemap.xml.
+
+    tools/generate_seo.py owns sitemap.xml for the whole site and runs on every
+    push; it lists this section's pages via its SELF_MANAGED handling. Two writers
+    for one file meant whichever ran last silently dropped the other's URLs.
+    """
+    return sum(1 for a in items if a["media"] == "text") + 1 + len(SECTIONS)
+
+
+def _retired_update_sitemap(items):
     sm = ROOT / "sitemap.xml"
     t = sm.read_text(encoding="utf-8")
     t = re.sub(r"\s*<url><loc>https://meta-analysis\.cz/komentare/[^<]*</loc>[^\n]*</url>", "", t)

@@ -40,10 +40,18 @@ def url_to_path(u):
         p += "index.html"
     return os.path.join(SITE, p.replace("/", os.sep))
 
+# Sections that build their own metadata layer (see SELF_MANAGED in
+# generate_seo.py). They are not injected into, so they legitimately carry
+# canonical/OG/JSON-LD outside the sentinel block — checking them here would
+# report the absence of an injection we deliberately skipped. They are still
+# listed in sitemap.xml, and their own build script validates their markup.
+SELF_MANAGED = {"komentare", "notes"}
+
 fails = []
 pages = ["index.html"] + sorted(
     f"{d}/index.html" for d in os.listdir(SITE)
-    if os.path.isfile(os.path.join(SITE, d, "index.html")))
+    if os.path.isfile(os.path.join(SITE, d, "index.html"))
+    and d not in SELF_MANAGED)
 
 n_ld = n_urls = 0
 for rel in pages:

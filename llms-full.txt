@@ -175,24 +175,19 @@ Abstract: I examine 2,735 estimates of the elasticity of intertemporal substitut
 ## Price Elasticity of Electricity Demand: A Meta-Analysis
 URL: https://meta-analysis.cz/electricity/
 Citation: Zuzana Irsova, Tomas Havranek, Peter Kudela, Anna Kudelova, Vojtech Sikl (2026), “Electricity demand has not become more price-responsive despite ninety years of technological change.” Charles University, Prague. Available at meta-analysis.cz/electricity.
-Paper: https://meta-analysis.cz/electricity/electricity.pdf
 Replication Package: https://meta-analysis.cz/electricity/replication.zip
 Data: https://meta-analysis.cz/electricity/electricity.xlsx
-mad-research: https://github.com/tjhavranek/mad-research
-paper-workshop: https://github.com/tjhavranek/paper-workshop
 
 Abstract: Energy planners have long assumed that electricity demand will grow more price-responsive as metering, automation, and storage spread, an assumption now embedded in decarbonization plans. We test it against the entire empirical record: 4,898 own-price elasticity estimates from 482 studies, with data spanning 1934–2024, ranked on a single ladder of identification quality from naive regressions to randomized experiments. Three findings emerge. First, better-identified studies find smaller responses: the corrected short-run elasticity is about −0.16, and only −0.09 among the best-identified, design-based studies, whose adjusted value is statistically indistinguishable from zero. Second, responsiveness grows with time to adjust, roughly doubling from −0.16 in the short run to −0.38 in the long run as the capital stock turns over, but this pattern has itself been stable for decades. Third, responsiveness shows no upward trend across nine decades of data; if anything, the most technology-rich settings, including time-of-use pricing, are the least price-responsive in total consumption. Demand flexibility must be engineered and paid for; the historical record gives no reason to expect prices alone to deliver it.
 
-## Do Female Directors Enhance ESG Performance? A Meta-Analysis
+## Do Female Directors Raise ESG Ratings? A Meta-Analysis
 URL: https://meta-analysis.cz/esg/
-Citation: Karolina Hozova, Tomas Havranek, Zuzana Irsova (2026), “Do Female Directors Enhance ESG Performance? A Meta-Analysis.” Charles University, Prague. Available at meta-analysis.cz/esg.
+Citation: Karolina Hozova, Tomas Havranek, Zuzana Irsova (2026), “Do Female Directors Raise ESG Ratings? A Meta-Analysis.” Charles University, Prague. Available at meta-analysis.cz/esg.
 Paper: https://meta-analysis.cz/esg/esg.pdf
 Replication Package: https://meta-analysis.cz/esg/replication.zip
 Data: https://meta-analysis.cz/esg/esg_data.xlsx
-mad-research: https://github.com/tjhavranek/mad-research
-paper-workshop: https://github.com/tjhavranek/paper-workshop
 
-Abstract: Appointing more women to corporate boards is widely expected to also raise firms' environmental, social, and governance (ESG) performance, letting one decision serve two goals. We provide the first meta-analysis of this relationship, drawing on 533 estimates from 106 studies that measure ESG performance with Bloomberg or LSEG ratings. The average reported effect of a one-percentage-point increase in board gender diversity is about 0.28 ESG points, but much of it does not survive scrutiny. Correcting for publication bias with a battery of linear and non-linear methods lowers the effect to between roughly 0.08 and 0.17 points; a best-practice estimate that also imposes sound study design puts it near 0.12 for most of the world, markedly higher for the Middle East, and essentially zero, if anything slightly negative, for the Southeast Asian markets that dominate the Asian evidence. The differences that remain across studies are systematic, driven mainly by geography and by the choice of estimation method rather than by the ESG-rating provider or the controls a study includes. Board gender diversity may be well worth pursuing on its own merits, but the evidence that it reliably raises ESG scores is weaker than the published record suggests.
+Abstract: Appointing more women to corporate boards is widely expected to also raise firms' environmental, social, and governance (ESG) performance. We provide the first meta-analysis of this relationship, drawing on 533 estimates from 106 studies that measure ESG performance with Bloomberg or LSEG ratings. The average reported effect of a one-percentage-point increase in board gender diversity is about 0.28 ESG points, but much of it does not survive scrutiny. Correcting for publication bias with a battery of linear and non-linear methods lowers the effect to between roughly 0.08 and 0.17 points. A best-practice estimate that also imposes sound study design puts it near 0.12 for most of the world, markedly higher for the Middle East, and essentially zero, if anything slightly negative, for the Southeast Asian markets that dominate the Asian evidence. The differences that remain across studies are systematic, driven mainly by geography and by the choice of estimation method rather than by the ESG-rating provider or the controls a study includes. Board gender diversity may be well worth pursuing on its own merits, but the evidence that it reliably raises ESG scores is weaker than the published record suggests.
 
 ## A Meta-Analysis of the Trade Effect of the Euro
 URL: https://meta-analysis.cz/euro/
