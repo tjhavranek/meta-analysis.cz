@@ -6,6 +6,7 @@ headline: "Zrušení EET přetřelo ekonomiku z bílé do šeda a pokazilo Česk
 status: full
 byline: "Tomáš Havránek"
 word_count: "525"
+perex: "Konec EET a méně agresivní výběr daní posunuly část lidí a firem do šedé ekonomiky. Oficiální čísla měří hlavně ekonomiku bílou. Reálný růst Česka v Evropě nepatří k nejhorším, píše v komentáři ekonom a profesor UK Tomáš Havránek."
 ---
 
 # Zrušení EET přetřelo ekonomiku z bílé do šeda a pokazilo Česku čísla

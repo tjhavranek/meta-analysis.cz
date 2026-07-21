@@ -6,6 +6,7 @@ headline: "Japonský vládní dluh: katastrofa, nebo vlastně chytrý byznys?"
 status: full
 byline: "Tomáš Havránek"
 word_count: "487"
+perex: "Japonsko za vypůjčené peníze nakupuje majetek doma i v zahraničí. Skutečný čistý dluh země je tak násobně nižší, než se píše. Země navíc vydělává ročně 6 % HDP, píše v komentáři ekonom a profesor Univerzity Karlovy Tomáš Havránek."
 ---
 
 # Japonský vládní dluh: katastrofa, nebo vlastně chytrý byznys?

@@ -9,6 +9,7 @@ byline: "Tomáš Havránek"
 word_count: "1978"
 interviewer: "Martin Petříček"
 body_note: "Text převzat z republikace na zrusme-inflaci.cz; originál je v týdeníku Ekonom."
+perex: "Kdo může za vysokou inflaci a kdo by ji měl krotit? Zatímco guvernér České národní banky Aleš Michl opakuje, že s inflací má nyní bojovat hlavně vláda, ekonom Tomáš Havránek tvrdí, že situaci má ve svých rukách právě ČNB. Vedle zvýšení úrokových sazeb by ve větší míře měla využít devizové rezervy,..."
 ---
 
 # Recept na zkrocení inflace: Sazby deset procent a euro za dvacku

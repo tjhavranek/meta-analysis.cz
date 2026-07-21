@@ -9,6 +9,7 @@ byline: "Tomáš Havránek"
 word_count: "1904"
 interviewer: "Marek Hudema"
 body_note: "Tiskové vydání 8. 4. 2023 (příloha Orientace); webová verze 16. 4. 2023."
+perex: "Pět tisíciletí byla hodnota peněz dlouhodobě stálá. Změnilo se to až ve 30. letech minulého století kvůli touze vlád zadlužovat se i v době míru, říká profesor Tomáš Havránek z Institutu ekonomických studií FSV UK. Dnes používáme systém převzatý z Nového Zélandu, kdy centrální banka záměrně vytváří každoroční mírnou inflaci. Ve skutečnosti je ale inflace škodlivá, jak tvrdí."
 ---
 
 # Inflace bývala podvod, nebo náhoda

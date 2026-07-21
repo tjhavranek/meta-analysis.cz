@@ -457,8 +457,10 @@ def write_item(a):
 
     body_html = fix_quotes(md_to_html(a["body"]))
     plain = re.sub(r"\s+", " ", re.sub(r"<[^>]+>", " ", body_html)).strip()
-    desc = (plain[:190].rsplit(" ", 1)[0] + "…") if len(plain) > 190 else plain
+    desc = a.get("perex") or ((plain[:190].rsplit(" ", 1)[0] + "…") if len(plain) > 190 else plain)
     node["description"] = desc
+    if a.get("perex"):
+        node["abstract"] = a["perex"]
 
     meta = [f'<span>{esc(cs_date(a["date"], a.get("date_precision"), lang))}</span>',
             f'<span>{esc(a["outlet"])}</span>']
@@ -480,13 +482,17 @@ def write_item(a):
         prov += (" Text byl přepsán z tištěného vydání.")
 
     note = f'<div class="provenance"><p>{esc(a["body_note"])}</p></div>\n' if a.get("body_note") else ""
+    # the outlet's standfirst: part of the published piece, but the editor's words,
+    # not the author's — so it is set apart rather than folded into the prose
+    perex = (f'      <p class="perex">{esc(fix_quotes(a["perex"]))}</p>\n'
+             if a.get("perex") else "")
 
     body = f"""    <article>
       <div class="article-head">
         <h1>{esc(a["headline"])}</h1>
         <div class="byline">{"".join(meta)}</div>
       </div>
-{note}      <div class="prose reading">
+{note}{perex}      <div class="prose reading">
 {body_html}
       </div>
       <div class="provenance"><p>{prov}</p></div>
@@ -662,6 +668,9 @@ def write_machine_readable(items):
              "language": a.get("lang") or SECTIONS[a["category"]]["lang"],
              "outlet": a["outlet"], "authors": people(a.get("byline")),
              "media": a["media"], "original_url": a.get("url", "")}
+        if a.get("perex"):
+            d["standfirst"] = a["perex"]
+            d["standfirst_note"] = "Written by the original outlet, not by the author."
         if a.get("interviewer"):
             d["interviewer"] = a["interviewer"]
         if a.get("issue"):

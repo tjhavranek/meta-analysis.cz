@@ -7,6 +7,7 @@ date: "2022-01-29"
 headline: "ČNB mohla inflaci srazit už v září posílením koruny"
 byline: "Tomáš Havránek"
 word_count: "1205"
+perex: "Debata o způsobu snižování současné inflace a využití bohatých devizových rezerv České národní banky pokračuje. Ekonom Tomáš Havránek ve svém komentáři pro E15.cz tvrdí, že centrální banka investuje do akcií málo a už v září mohla téměř okamžitě snížit inflační tlaky okamžitým posílením koruny."
 ---
 
 # ČNB mohla inflaci srazit už v září posílením koruny

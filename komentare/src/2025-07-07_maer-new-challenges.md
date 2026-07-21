@@ -7,6 +7,7 @@ date: "2025-07-07"
 headline: "New Challenges for Meta-Analysis: Attenuation Bias, P-Hacking, Preferred Estimates"
 byline: "Tomáš Havránek"
 word_count: "456"
+perex: "Our recent meta-analyses highlight three issues for the field: attenuation bias can rival publication bias in distorting results; new methods like MAIVE address p-hacking more effectively; and author “preferred” estimates may systematically differ from others. Each has implications for best practices in meta-analysis."
 ---
 
 # New Challenges for Meta-Analysis: Attenuation Bias, P-Hacking, Preferred Estimates

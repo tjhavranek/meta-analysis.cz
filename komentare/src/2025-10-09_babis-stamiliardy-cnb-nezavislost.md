@@ -6,6 +6,7 @@ headline: "Babiš si vezme stamiliardy z ČNB. Zůstane národní banka nezávis
 status: full
 byline: "Tomáš Havránek"
 word_count: "941"
+perex: "ČNB v příštích čtyřech letech umaže ztrátu z minulosti a začne posílat stamiliardy korun do státního rozpočtu. Ve vyspělých zemích je to běžné, ale je potřeba připravit pravidla předem, píše ekonom a profesor UK Tomáš Havránek."
 ---
 
 # Babiš si vezme stamiliardy z ČNB. Zůstane národní banka nezávislá?

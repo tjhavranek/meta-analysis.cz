@@ -6,6 +6,7 @@ headline: "Rychlovlaky v Česku? Skončí to hůř než kanál Dunaj–Odra–La
 status: full
 byline: "Tomáš Havránek"
 word_count: "709"
+perex: "Vysokorychlostní železnice bude stát biliony, na které se složíme všichni. Stát má vůči daňovým poplatníkům povinnost dokázat, a tím myslím skutečně dokázat, že se nám tento megaprojekt vyplatí."
 ---
 
 # Rychlovlaky v Česku? Skončí to hůř než kanál Dunaj–Odra–Labe

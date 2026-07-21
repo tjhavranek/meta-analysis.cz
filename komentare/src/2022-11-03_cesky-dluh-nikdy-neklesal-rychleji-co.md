@@ -6,6 +6,7 @@ headline: "Český dluh nikdy neklesal rychleji. Co tratí lidé kvůli inflaci,
 status: full
 byline: "Tomáš Havránek"
 word_count: "524"
+perex: "Inflace umazává současný státní dluh rychleji, než vláda stačí vytvářet dluh nový. Tak rychle zadlužení státu neklesalo ani letech 2016–2019, kdy veřejné instituce hospodařily s přebytkem, píše v komentáři ekonom Tomáš Havránek."
 ---
 
 # Český dluh nikdy neklesal rychleji. Co tratí lidé kvůli inflaci, to vydělá stát

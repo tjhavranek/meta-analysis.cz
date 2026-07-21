@@ -7,6 +7,7 @@ date: "2022-09-16"
 headline: "Zrušme inflaci. Je to jen naše volba"
 byline: "Tomáš Havránek"
 word_count: "755"
+perex: "Inflace není přírodní katastrofa, kterou musíme pasivně trpět podobně jako záplavy nebo zemětřesení. Je to naše volba, inflací můžeme letos trpět naposledy. Jak dosáhnout změny? Nad tím se v komentáři zamýšlí profesor ekonomie Tomáš Havránek."
 ---
 
 # Zrušme inflaci. Je to jen naše volba

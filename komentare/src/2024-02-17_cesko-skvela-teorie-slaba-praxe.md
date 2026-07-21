@@ -6,6 +6,7 @@ headline: "Česko má skvělou ekonomickou teorii, ale bohužel slabou praxi"
 status: full
 byline: "Tomáš Havránek"
 word_count: "494"
+perex: "Světová prestiž české ekonomické vědy sílí. Přitom naše národohospodářské rozhodování pokulhává na všech frontách. Řešením je zapojení českých ekonomů působících v zahraničí, píše v komentáři ekonom a profesor UK Tomáš Havránek."
 ---
 
 # Česko má skvělou ekonomickou teorii, ale bohužel slabou praxi

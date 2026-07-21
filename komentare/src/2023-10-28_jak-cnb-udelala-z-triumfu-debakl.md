@@ -6,6 +6,7 @@ headline: "Jak ČNB udělala z triumfu debakl. 10 let od oslabení koruny"
 status: full
 byline: "Tomáš Havránek"
 word_count: "897"
+perex: "Intervence proti koruně sice pomohly po roce 2013 oživit ekonomiku, ale to, jak ČNB nakládala s eury získanými během intervencí, přineslo obří ztrátu a přispělo k rekordní inflaci, píše ekonom a profesor Tomáš Havránek."
 ---
 
 # Jak ČNB udělala z triumfu debakl. 10 let od oslabení koruny

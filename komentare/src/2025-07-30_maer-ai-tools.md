@@ -7,6 +7,7 @@ date: "2025-07-30"
 headline: "AI Tools for Meta-Analysis"
 byline: "Tomáš Havránek"
 word_count: "967"
+perex: "AI tools now significantly reduce the workload in meta-analysis, especially for literature search and data collection. ChatGPT’s deep research and Agent functions streamline screening and extraction, while tools like ASReview and NotebookLM offer robust validation. Human oversight remains essential, but fewer co-authors are needed than before. Claude also shows promise in reasoning, though I haven’t tested it systematically yet."
 ---
 
 # AI Tools for Meta-Analysis

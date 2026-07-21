@@ -6,6 +6,7 @@ headline: "Naděje na cenovou stabilitu? Do ČNB se vrací nezávislý výzkum"
 status: full
 byline: "Tomáš Havránek"
 word_count: "695"
+perex: "Analytickou práci ČNB čekají největší změny za 20 let. Je to důsledek auditu měnové politiky, který si banka zadala u nezávislých odborníků z ČR i zahraničí, píše ekonom a profesor Univerzity Karlovy Tomáš Havránek."
 ---
 
 # Naděje na cenovou stabilitu? Do ČNB se vrací nezávislý výzkum

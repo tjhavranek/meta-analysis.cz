@@ -6,6 +6,7 @@ headline: "„Pátek pro planetu“ ve školních jídelnách Zemi nepomůže a 
 status: full
 byline: "Tomáš Havránek, Zuzana Havránková"
 word_count: "846"
+perex: "Propagace vegetariánské a veganské stravy ve školních jídelnách není dostatečně vědecky vyvážená. Vliv spotřeby masa u dětí na životní prostředí je navíc sporný, píšou výzkumníci Univerzity Karlovy Zuzana a Tomáš Havránkovi."
 ---
 
 # „Pátek pro planetu" ve školních jídelnách Zemi nepomůže a dětem uškodí

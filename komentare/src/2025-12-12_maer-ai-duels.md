@@ -7,6 +7,7 @@ date: "2025-12-12"
 headline: "Stress-Testing Meta-Research with AI Duels"
 byline: "Zuzana Irsová, Tomáš Havránek"
 word_count: "291"
+perex: "A practical protocol that makes ChatGPT and Gemini challenge each other to surface edge cases, boundary conditions, and hidden assumptions in meta-analysis. Includes a WAIVE vs MAIVE worked example plus GitHub and DOI links."
 ---
 
 # Stress-Testing Meta-Research with AI Duels
