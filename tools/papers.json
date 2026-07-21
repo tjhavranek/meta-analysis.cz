@@ -1862,7 +1862,10 @@
   "figure": null,
   "has_meta_description": false,
   "meta_keywords": null,
-  "one_line": "Meta-analysis of 533 estimates from 106 studies on whether female board directors improve corporate ESG performance."
+  "one_line": "Meta-analysis of 533 estimates from 106 studies on whether female board directors improve corporate ESG performance.",
+  "pending_files": [
+   "esg.pdf"
+  ]
  },
  {
   "project": "electricity",
