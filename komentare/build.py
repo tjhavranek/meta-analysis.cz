@@ -218,6 +218,7 @@ def parse(path):
     body = re.sub(r"^\s*#\s+.*?\n", "", m.group(2), count=1).strip()
     a["body"] = body
     a["slug"] = re.sub(r"^[0-9]{4}-[0-9]{2}(-[0-9]{2})?[_-]", "", path.stem)
+    a["file"] = path.name
     a.setdefault("category", "celostatni")
     a.setdefault("media", "text")
     a["headline"] = fix_quotes(a.get("headline", ""))
@@ -286,6 +287,11 @@ def shell(title, desc, canonical, jsonld, body, active, extra_head="", lang="cs"
       <li><a href="https://metrics.stanford.edu/people/tomas-havranek">Stanford METRICS</a></li>
       <li><a href="{PATH}/feed.xml">RSS</a></li>
     </ul>
+    <p class="about-machine">Pro stroje: <a href="{PATH}/llms.txt">llms.txt</a> ·
+      <a href="{PATH}/index.json">index.json</a> (metadata a plné texty) ·
+      <a href="{PATH}/all.md">all.md</a> (vše v jednom souboru) ·
+      <a href="{PATH}/feed.xml">RSS</a>. Zdrojový Markdown každého textu je
+      v <a href="{PATH}/src/">/komentare/src/</a>.</p>
   </div>
 </footer>
 </body>
@@ -431,6 +437,12 @@ def write_item(a):
     prov = (f'Poprvé vyšlo {where} {cs_date(a["date"], a.get("date_precision"))}.'
             + (f' <a href="{esc(a["url"])}" rel="external">Původní vydání</a>.'
                if a.get("url") else ""))
+    # be honest about which text this is: an author manuscript can differ from what
+    # the magazine printed, and for at least one Lilie column it demonstrably does
+    if a.get("source") == "draft":
+        prov += (" Text vychází z autorova rukopisu; tištěná verze se může v detailech lišit.")
+    elif a.get("source") == "image":
+        prov += (" Text byl přepsán z tištěného vydání.")
 
     note = f'<div class="provenance"><p>{esc(a["body_note"])}</p></div>\n' if a.get("body_note") else ""
 
@@ -451,7 +463,10 @@ def write_item(a):
 
     head = (f'<meta property="og:type" content="article" />\n'
             + "".join(f'<meta name="author" content="{esc(n)}" />\n' for n in names)
-            + f'<meta property="article:published_time" content="{a["date"]}" />\n')
+            + f'<meta property="article:published_time" content="{a["date"]}" />\n'
+            # plain-text source of this page, for anything that would rather not parse HTML
+            + f'<link rel="alternate" type="text/markdown" '
+              f'href="{PATH}/src/{esc(a["file"])}" title="Zdrojový text (Markdown)" />\n')
 
     # some pieces share a printed headline — two letters under one title, or an item
     # inside a shared rubric. Disambiguate the <title> so search results are distinct.
@@ -473,6 +488,29 @@ def write_index(items, key=None):
     canonical = f"{BASE}/{key}/" if key else f"{BASE}/"
     sel = [a for a in items if not key or a["category"] == key]
 
+    person = {
+        "@type": "Person",
+        "@id": f"{BASE}/#author",
+        "name": AUTHOR,
+        "givenName": "Tomáš", "familyName": "Havránek",
+        "jobTitle": "profesor ekonomie",
+        "description": ("Profesor ekonomie na Institutu ekonomických studií FSV Univerzity "
+                        "Karlovy. Měnová politika, metaanalýza a metavýzkum. Bývalý poradce "
+                        "viceguvernéra a bankovní rady ČNB."),
+        "affiliation": {"@type": "Organization",
+                        "name": "Institut ekonomických studií, FSV Univerzita Karlova",
+                        "url": "https://ies.fsv.cuni.cz/"},
+        "url": "https://www.tomashavranek.cz/",
+        "sameAs": [
+            "https://orcid.org/0000-0002-3158-2539",
+            "https://scholar.google.com/citations?user=BF0BvBkAAAAJ",
+            "https://ideas.repec.org/f/pha418.html",
+            "https://cepr.org/about/people/tomas-havranek",
+            "https://metrics.stanford.edu/people/tomas-havranek",
+            "https://www.tomashavranek.cz/",
+            "https://meta-analysis.cz/",
+        ],
+    }
     node = {
         "@type": "CollectionPage",
         "@id": canonical + "#collection",
@@ -480,7 +518,7 @@ def write_index(items, key=None):
         "name": f"{title} — {AUTHOR}",
         "description": desc,
         "inLanguage": sec["lang"] if sec else "cs",
-        "about": {"@type": "Person", "name": AUTHOR, "sameAs": ORCIDS[AUTHOR]},
+        "about": {"@id": f"{BASE}/#author"},
         "hasPart": [{
             "@type": "Article",
             "@id": (f"{BASE}/{a['slug']}/#article" if a["media"] == "text" else a.get("url", "")),
@@ -500,7 +538,7 @@ def write_index(items, key=None):
             + (FILTER if not key else "")
             + listing(sel, show_cat=not key))
     page = shell(f"{title} — {AUTHOR}", desc, canonical,
-                 {"@context": "https://schema.org", "@graph": [node]},
+                 {"@context": "https://schema.org", "@graph": [node, person]},
                  body, key or "", lang=(sec["lang"] if sec else "cs"))
     if not key:
         page = page.replace("</body>", SCRIPT + "</body>")
@@ -540,6 +578,91 @@ def write_feed(items):
   </channel>
 </rss>
 """, encoding="utf-8")
+
+
+def write_machine_readable(items):
+    """Three bulk formats, so a crawler or a training pipeline never has to parse HTML.
+
+    llms.txt   a plain index in the llms.txt convention
+    index.json full metadata for every item, one JSON document
+    all.md     every text in one Markdown file, in reverse-chronological order
+    """
+    # --- llms.txt -------------------------------------------------------------
+    L = [f"# Komentáře — {AUTHOR}", "",
+         "> " + HUB_DESC, "",
+         f"Publicistika: {len(items)} položek, "
+         f"{items[-1]['date'][:4]}–{items[0]['date'][:4]}. "
+         "Plné znění každého textu je na uvedené adrese; "
+         "zdrojový Markdown je v /komentare/src/.", ""]
+    for k, sec in SECTIONS.items():
+        sel = [a for a in items if a["category"] == k]
+        if not sel:
+            continue
+        L += [f"## {sec['title']}", "", sec["desc"], ""]
+        for a in sel:
+            d = cs_date(a["date"], a.get("date_precision"))
+            if a["media"] == "text":
+                L.append(f"- [{a['headline']}]({BASE}/{a['slug']}/) — {a['outlet']}, {d}")
+            else:
+                L.append(f"- [{a['headline']}]({a.get('url','')}) — {a['outlet']}, {d} "
+                         f"({MEDIA_LABEL.get(a['media'], '')}, pouze odkaz)")
+        L.append("")
+    L += ["## Další zdroje", "",
+          "- [Osobní stránka](https://www.tomashavranek.cz/)",
+          "- [meta-analysis.cz](https://meta-analysis.cz/)",
+          "- [ORCID](https://orcid.org/0000-0002-3158-2539)",
+          "- [Google Scholar](https://scholar.google.com/citations?user=BF0BvBkAAAAJ)",
+          "- [RePEc](https://ideas.repec.org/f/pha418.html)",
+          f"- [RSS]({BASE}/feed.xml)",
+          f"- [Strojově čitelný index (JSON)]({BASE}/index.json)",
+          f"- [Všechny texty v jednom souboru]({BASE}/all.md)", ""]
+    (KDIR / "llms.txt").write_text(chr(10).join(L), encoding="utf-8")
+
+    # --- index.json -----------------------------------------------------------
+    docs = []
+    for a in items:
+        d = {"id": a["slug"], "title": a["headline"], "date": a["date"],
+             "date_precision": a.get("date_precision", "day"),
+             "section": SECTIONS[a["category"]]["title"], "category": a["category"],
+             "language": a.get("lang") or SECTIONS[a["category"]]["lang"],
+             "outlet": a["outlet"], "authors": people(a.get("byline")),
+             "media": a["media"], "original_url": a.get("url", "")}
+        if a.get("interviewer"):
+            d["interviewer"] = a["interviewer"]
+        if a.get("issue"):
+            d["issue"] = a["issue"]
+        if a["media"] == "text":
+            d["url"] = f"{BASE}/{a['slug']}/"
+            d["source_markdown"] = f"{BASE}/src/{a['file']}"
+            d["word_count"] = len(a["body"].split())
+            d["text"] = a["body"]
+        docs.append(d)
+    (KDIR / "index.json").write_text(json.dumps({
+        "name": f"Komentáře — {AUTHOR}",
+        "description": HUB_DESC,
+        "url": f"{BASE}/",
+        "author": {"name": AUTHOR, "orcid": ORCIDS[AUTHOR],
+                   "affiliation": "Institut ekonomických studií, FSV Univerzita Karlova"},
+        "license": "Texty jsou majetkem autora a původních vydavatelů; "
+                   "archiv slouží ke čtení a citaci s uvedením původního zdroje.",
+        "count": len(docs), "generated_from": "komentare/src/*.md",
+        "items": docs,
+    }, ensure_ascii=False, indent=1), encoding="utf-8")
+
+    # --- all.md ---------------------------------------------------------------
+    A = [f"# Komentáře — {AUTHOR}", "", HUB_DESC, "",
+         f"{len(items)} položek. Audio a video jsou uvedeny pouze odkazem.", "", "---", ""]
+    for a in items:
+        if a["media"] != "text":
+            continue
+        A += [f"## {a['headline']}", "",
+              f"*{a['outlet']}, {cs_date(a['date'], a.get('date_precision'))}"
+              + (f", ptal se {a['interviewer']}" if a.get("interviewer") else "")
+              + f". {', '.join(people(a.get('byline')))}.*", "",
+              f"Zdroj: {a.get('url') or BASE + '/' + a['slug'] + '/'}", "",
+              a["body"], "", "---", ""]
+    (KDIR / "all.md").write_text(chr(10).join(A), encoding="utf-8")
+    return len([a for a in items if a["media"] == "text"])
 
 
 def update_sitemap(items):
@@ -586,6 +709,7 @@ def main():
     for k in SECTIONS:
         write_index(items, k)
     write_feed(items)
+    n_txt = write_machine_readable(items)
     n = update_sitemap(items)
 
     by = {}

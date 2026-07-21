@@ -196,3 +196,5 @@ main { padding: 2.75rem 0 4rem; }
 .about-links a { color: var(--muted); text-decoration: none;
                  border-bottom: 1px solid var(--rule); padding-bottom: 1px; }
 .about-links a:hover { color: var(--accent); border-bottom-color: currentColor; }
+.about-machine { margin: 1rem 0 0; font-size: 0.82rem; color: var(--faint); max-width: 46rem; }
+.about-machine a { color: var(--muted); }

@@ -1,0 +1,178 @@
+# Komentáře — Tomáš Havránek
+
+> Publicistika Tomáše Havránka: komentáře pro celostátní média, sloupky pro litomyšlskou Lilii a rozhovory. Texty jsou zde archivovány v plném znění s odkazem na původní vydání.
+
+Publicistika: 142 položek, 2016–2026. Plné znění každého textu je na uvedené adrese; zdrojový Markdown je v /komentare/src/.
+
+## Celostátní komentáře
+
+Komentáře a sloupky pro celostátní média — měnová politika, inflace, veřejné finance, důchody a ceny energií.
+
+- [Očima byznysu: Nemovitosti jsou pro většinu Čechů špatná investice](https://meta-analysis.cz/komentare/sz-nemovitosti/) — Seznam Zprávy, 1. června 2026
+- [Japonský vládní dluh: katastrofa, nebo vlastně chytrý byznys?](https://meta-analysis.cz/komentare/japonsky-vladni-dluh/) — Seznam Zprávy, 9. dubna 2026
+- [Jedna AI nestačí, nechte modely spolu bojovat](https://meta-analysis.cz/komentare/jedna-ai-nestaci/) — Hospodářské noviny, 31. prosince 2025
+- [Babiš si vezme stamiliardy z ČNB. Zůstane národní banka nezávislá?](https://meta-analysis.cz/komentare/babis-stamiliardy-cnb-nezavislost/) — Seznam Zprávy, 9. října 2025
+- [Návod pro dlužníky a střadatele, jak přežít dluh větší než ekonomika](https://meta-analysis.cz/komentare/navod-pro-dluzniky-a-stradatele/) — Seznam Zprávy, 12. července 2025
+- [„Pátek pro planetu“ ve školních jídelnách Zemi nepomůže a dětem uškodí](https://meta-analysis.cz/komentare/patek-pro-planetu-skolni-jidelny/) — Seznam Zprávy, 14. března 2025
+- [Osobní pohled na Mojmíra Hampla](https://meta-analysis.cz/komentare/e15-hampl/) — E15, 13. března 2025
+- [Naděje na cenovou stabilitu? Do ČNB se vrací nezávislý výzkum](https://meta-analysis.cz/komentare/nadeje-na-cenovou-stabilitu-cnb-vyzkum/) — Seznam Zprávy, 6. prosince 2024
+- [V čem Češi poráží Ameriku](https://meta-analysis.cz/komentare/ln-cesi-amerika/) — Lidové noviny, 9. září 2024
+- [Odkud se bere ekonomický růst? Investice prosperitu nezajistí](https://meta-analysis.cz/komentare/odkud-se-bere-ekonomicky-rust/) — Seznam Zprávy, 12. června 2024
+- [Rychlovlaky v Česku? Skončí to hůř než kanál Dunaj–Odra–Labe](https://meta-analysis.cz/komentare/rychlovlaky-v-cesku/) — Seznam Zprávy, 15. dubna 2024
+- [Česko má skvělou ekonomickou teorii, ale bohužel slabou praxi](https://meta-analysis.cz/komentare/cesko-skvela-teorie-slaba-praxe/) — Seznam Zprávy, 17. února 2024
+- [Jak naučit děti perfektně anglicky bez námahy a zadarmo](https://meta-analysis.cz/komentare/jak-naucit-deti-anglicky/) — Seznam Zprávy, 18. ledna 2024
+- [Správa rezerv ČNB: Jak jsme za čtyři roky přišli o bilion](https://meta-analysis.cz/komentare/e15-sprava-rezerv/) — E15, 7. listopadu 2023
+- [Snížení sazeb by dávalo smysl, kdyby předtím ČNB netolerovala pádivou inflaci](https://meta-analysis.cz/komentare/snizeni-sazeb-cnb-padiva-inflace/) — Hospodářské noviny, 31. října 2023
+- [Jak ČNB udělala z triumfu debakl. 10 let od oslabení koruny](https://meta-analysis.cz/komentare/jak-cnb-udelala-z-triumfu-debakl/) — Seznam Zprávy, 28. října 2023
+- [ČNB může dělat pro finanční gramotnost víc. Ve správě aktiv má jít příkladem](https://meta-analysis.cz/komentare/cnb-financni-gramotnost-sprava-aktiv/) — Hospodářské noviny, 11. září 2023
+- [S trochou štěstí přijde zlevnění a deflace. ČNB by se toho neměla bát](https://meta-analysis.cz/komentare/s-trochou-stesti-zlevneni-deflace/) — Seznam Zprávy, 9. září 2023
+- [Lidé nejsou racionální. Proč se přesto ekonomické modely bez racionality neobejdou?](https://meta-analysis.cz/komentare/lide-nejsou-racionalni-modely/) — Hospodářské noviny, 1. srpna 2023
+- [Zrušení EET přetřelo ekonomiku z bílé do šeda a pokazilo Česku čísla](https://meta-analysis.cz/komentare/zruseni-eet-pretrelo-ekonomiku/) — Seznam Zprávy, 27. července 2023
+- [Méně než 20 dětí ve třídě je drahý luxus. V malých třídách se víc nenaučí](https://meta-analysis.cz/komentare/mene-nez-20-deti-ve-tride/) — Hospodářské noviny, 28. června 2023
+- [Kurz koruny je taktický nástroj měnové politiky](https://meta-analysis.cz/komentare/e15-kurz-takticky/) — E15, 28. května 2023
+- [Co bude s důchody, až začne fungovat klimatická antikoncepce](https://meta-analysis.cz/komentare/co-bude-s-duchody-az-zacne/) — Seznam Zprávy, 27. května 2023
+- [Stabilita sazeb znamená nestabilitu ekonomiky](https://meta-analysis.cz/komentare/stabilita-sazeb-nestabilita-ekonomiky/) — Hospodářské noviny, 26. května 2023
+- [Inflační cíl ČNB potřebuje po 13 letech facelift](https://meta-analysis.cz/komentare/inflacni-cil-cnb-facelift/) — Hospodářské noviny, 3. května 2023
+- [Máme infrastrukturu rozvojové země. Vyšší deficit může nakonec snížit dluh](https://meta-analysis.cz/komentare/mame-infrastrukturu-rozvojove-zeme-vyssi-deficit/) — Seznam Zprávy, 4. března 2023
+- [Kdo nakonec zaplatí státní dluh? Čeští střadatelé](https://meta-analysis.cz/komentare/kdo-zaplati-statni-dluh-stradatele/) — Hospodářské noviny, 3. března 2023
+- [Dva radní centrální banky odcházejí. ČNB by si měla dát pozor, aby se z ní nestal názorový monolit](https://meta-analysis.cz/komentare/dva-radni-cnb-nazorovy-monolit/) — Hospodářské noviny, 2. února 2023
+- [Místo každoroční inflace cenovou stabilitu. České koruně pomůže reálné krytí](https://meta-analysis.cz/komentare/ln-realne-kryti/) — Lidové noviny, 21. ledna 2023
+- [Zvyšme odpovědnost ČNB za inflaci. Platy bankéřů ať jsou vázány na stabilitu cen](https://meta-analysis.cz/komentare/pristi-prezident-inflacni-fiasko/) — Hospodářské noviny, 11. ledna 2023
+- [Vyšší sazby opravdu mohou zvýšit inflaci](https://meta-analysis.cz/komentare/e15-vyssi-sazby/) — E15, 11. ledna 2023
+- [Co nás čeká? Rovnice mluví jasně, buď hyperinflace, nebo rozpočet s přebytkem](https://meta-analysis.cz/komentare/co-nas-ceka-rovnice-mluvi-jasne/) — Seznam Zprávy, 9. ledna 2023
+- [Racionálně vysvětlit chování ČNB může jen jedna teorie](https://meta-analysis.cz/komentare/racionalne-vysvetlit-chovani-cnb/) — Hospodářské noviny, 21. prosince 2022
+- [O inflaci nakonec rozhoduje prezident. Favoritům ale chybí plán](https://meta-analysis.cz/komentare/o-inflaci-nakonec-rozhoduje-prezident-jeho/) — Seznam Zprávy, 14. prosince 2022
+- [Zmizí inflace sama od sebe? Těžko, pokud se ČNB neodhodlá k činu](https://meta-analysis.cz/komentare/zmizi-inflace-sama-od-sebe/) — Hospodářské noviny, 28. listopadu 2022
+- [Český dluh nikdy neklesal rychleji. Co tratí lidé kvůli inflaci, to vydělá stát](https://meta-analysis.cz/komentare/cesky-dluh-nikdy-neklesal-rychleji-co/) — Seznam Zprávy, 3. listopadu 2022
+- [Zrušme inflaci. Je to jen naše volba](https://meta-analysis.cz/komentare/zi-zrusme-inflaci-je-to-jen-nase-volba-rika-tom/) — Forbes, 16. září 2022
+- [Jak úrokové sazby ovlivňují inflaci? Ekonomové nevědí](https://meta-analysis.cz/komentare/jak-urokove-sazby-ovlivnuji-inflaci/) — Hospodářské noviny, 12. července 2022
+- [Vzkaz Aloise Rašína guvernérovi ČNB: Dokud nesnížíš inflaci, sniž si plat](https://meta-analysis.cz/komentare/vzkaz-rasina-guvernerovi-cnb/) — Hospodářské noviny, 2. června 2022
+- [ČNB přes dotační eura skrytě oslabuje korunu, navzdory pádivé inflaci](https://meta-analysis.cz/komentare/cnb-pres-dotacni-eura-skryte-oslabuje/) — Seznam Zprávy, 13. dubna 2022
+- [ČNB zkrotí inflaci jedině posílením koruny](https://meta-analysis.cz/komentare/cnb-zkroti-inflaci-jedine-posilenim-koruny/) — Seznam Zprávy, 29. března 2022
+- [Zvyšování úroků už nemá smysl. ČNB musí víc posílit korunu](https://meta-analysis.cz/komentare/e15-zvysovani-uroku/) — E15, 11. března 2022
+- [ČNB potřebuje audit. Je čas změnit inflační cíl i správu rezerv](https://meta-analysis.cz/komentare/zi-cnb-potrebuje-audit-je-cas-zmenit-inflacni-c/) — E15, 17. února 2022
+- [Lockdowny přinesly obrovské náklady, ale malý užitek. Zkraťme tedy prázdniny na polovinu, ať to napravíme](https://meta-analysis.cz/komentare/lockdowny-zkratme-prazdniny/) — Hospodářské noviny, 7. února 2022
+- [ČNB mohla inflaci srazit už v září posílením koruny](https://meta-analysis.cz/komentare/zi-cnb-mohla-inflaci-srazit-uz-v-zari-posilenim/) — E15, 29. ledna 2022
+- [Jak zkrotit inflaci? Přišel čas odčinit intervence proti koruně](https://meta-analysis.cz/komentare/zkrotit-inflaci-odcinit-intervence/) — Hospodářské noviny, 4. ledna 2022
+- [Éru levných peněz vystřídají roky šetření. Z inflační krize se ale neprošetříme, když zároveň neporosteme](https://meta-analysis.cz/komentare/era-levnych-penez-roky-setreni/) — Hospodářské noviny, 7. prosince 2021
+- [Klimatický extremismus škodí víc než globální oteplování](https://meta-analysis.cz/komentare/klimaticky-extremismus/) — Hospodářské noviny, 10. listopadu 2021
+- [Když nenajdeme nového Rašína, ochutnáme dvojcifernou inflaci](https://meta-analysis.cz/komentare/kdyz-nenajdeme-rasina-dvojciferna-inflace/) — Hospodářské noviny, 19. října 2021
+- [ČNB vyrazila správným směrem, ale pomalu. Úroky musí růst rychleji, aktuální inflační skok to podtrhuje](https://meta-analysis.cz/komentare/cnb-spravnym-smerem-ale-pomalu/) — Hospodářské noviny, 10. září 2021
+- [Výzkum centrální banky dělá Česku dobrou reklamu](https://meta-analysis.cz/komentare/vyzkum-centralni-banky-dela-cesku-dobrou/) — Hospodářské noviny, 4. srpna 2021
+- [Zvýšení úroků cenovou stabilitu nezajistí](https://meta-analysis.cz/komentare/zvyseni-uroku-cenovou-stabilitu-nezajisti/) — Hospodářské noviny, 21. června 2021
+- [Ženy v radě ČNB by Česku jen prospěly, jsou citlivější na inflační tlaky u praktického zboží](https://meta-analysis.cz/komentare/zeny-v-rade-cnb-by-cesku/) — Hospodářské noviny, 29. května 2021
+- [ČNB konečně ukázala odvahu. Pomůže to českému rozpočtu?](https://meta-analysis.cz/komentare/cnb-konecne-ukazala-odvahu-muze-pomoci/) — Hospodářské noviny, 23. dubna 2021
+- [Přežijí papírové peníze pandemii?](https://meta-analysis.cz/komentare/preziji-papirove-penize-pandemii/) — Hospodářské noviny, 6. dubna 2021
+- [Je inflace neústavní? Aneb budoucnost měnové politiky](https://meta-analysis.cz/komentare/je-inflace-neustavni-aneb-budoucnost-menove/) — Hospodářské noviny, 4. února 2021
+- [Poslední šance na Česko bez bankrotu](https://meta-analysis.cz/komentare/posledni-sance-na-cesko-bez-bankrotu/) — Hospodářské noviny, 11. listopadu 2020
+- [Zlato do trezorů ČNB patří](https://meta-analysis.cz/komentare/zlato-do-trezoru-cnb-patri/) — Hospodářské noviny, 7. října 2020
+- [Proč cenová stabilita neznamená stabilitu průměrných cen? Inflace je historický přežitek](https://meta-analysis.cz/komentare/proc-cenova-stabilita-neznamena-stabilitu-prumernych/) — Hospodářské noviny, 8. září 2020
+- [Pokud chce vláda bránit životy všemi prostředky, měla by zavést povinné očkování proti chřipce](https://meta-analysis.cz/komentare/pokud-chce-vlada-branit-zivoty-vsemi/) — Hospodářské noviny, 8. června 2020
+- [Konec Cobbovy-Douglasovy produkční funkce?](https://meta-analysis.cz/komentare/cnb-cobb-douglas/) — ČNB cnBlog, 30. dubna 2020
+- [Nerovnost neroste](https://meta-analysis.cz/komentare/cnb-nerovnost-neroste/) — ČNB cnBlog, 15. května 2017
+- [Kurzový závazek a past středního příjmu](https://meta-analysis.cz/komentare/cnb-kurzovy-zavazek/) — ČNB cnBlog, 12. prosince 2016
+- [Proč nízké úrokové míry nevedou nutně k přehřívání ekonomiky](https://meta-analysis.cz/komentare/cnb-rovnovazna-sazba/) — ČNB cnBlog, 30. listopadu 2016
+
+## Litomyšlské sloupky
+
+Sloupky pro Lilii, měsíčník města Litomyšle — doprava, zeleň, školství, sport a další místní témata.
+
+- [Poděkování za péči o růže u fary](https://meta-analysis.cz/komentare/litomysl-ruze-u-fary/) — Lilie, červenec 2026
+- [Miroslav Brýdl na vrcholu sil](https://meta-analysis.cz/komentare/litomysl-miroslav-brydl/) — Lilie, červen 2026
+- [Budou mít naše vnoučata co pít?](https://meta-analysis.cz/komentare/litomysl-voda/) — Lilie, červen 2026
+- [Nepořádek u autobusového nádraží](https://meta-analysis.cz/komentare/litomysl-neporadek-u-autobusoveho-nadrazi/) — Lilie, květen 2026
+- [Mladí florbalisté zlatí na největším evropském turnaji!](https://meta-analysis.cz/komentare/litomysl-florbaliste-zlati-na-turnaji/) — Lilie, únor 2026
+- [Podpořme mladé florbalisty v neděli 12. října](https://meta-analysis.cz/komentare/litomysl-podporme-mlade-florbalisty/) — Lilie, říjen 2025
+- [Srovnání základních škol v Litomyšli a na Novém Zélandu](https://meta-analysis.cz/komentare/litomysl-srovnani-skol-litomysl-novy-zeland/) — Lilie, červenec 2025
+- [Pátek pro planetu ve školní jídelně (pokračování)](https://meta-analysis.cz/komentare/litomysl-skolni-jidelny/) — Lilie, červen 2025
+- [Mladí florbalisté úspěšní na mezinárodních i školních soutěžích](https://meta-analysis.cz/komentare/litomysl-florbaliste-mezinarodni-i-skolni/) — Lilie, červen 2025
+- [Litomyšlský florbal na jaře](https://meta-analysis.cz/komentare/litomysl-florbal-2025/) — Lilie, květen 2025
+- [„Pátek pro planetu“ ve školní jídelně planetě nepomůže a dětem uškodí](https://meta-analysis.cz/komentare/litomysl-patek-pro-planetu-tomas/) — Lilie, duben 2025
+- [„Pátek pro planetu“ ve školní jídelně planetě nepomůže a dětem uškodí](https://meta-analysis.cz/komentare/litomysl-patek-pro-planetu-zuzana/) — Lilie, duben 2025
+- [Mladí florbalisté Litomyšle úspěšní na největším středoevropském turnaji](https://meta-analysis.cz/komentare/litomysl-prague-floorball-cup/) — Lilie, únor 2025
+- [Ohlédnutí za nejúspěšnějším rokem florbalu v Litomyšli](https://meta-analysis.cz/komentare/litomysl-ohlednuti-za-rokem-florbalu/) — Lilie, leden 2025
+- [Florbalová sezóna nabírá na obrátkách](https://meta-analysis.cz/komentare/litomysl-florbalova-sezona/) — Lilie, prosinec 2024
+- [Florbalisté mladší žáci poprvé na velkém hřišti](https://meta-analysis.cz/komentare/litomysl-mladsi-zaci-velke-hriste/) — Lilie, listopad 2024
+- [Poděkování za obnovu židovského hřbitova: symbol naděje a úcty k minulosti](https://meta-analysis.cz/komentare/litomysl-zidovsky-hrbitov/) — Lilie, září 2024
+- [Mladí florbalisté mezi nejlepšími v republice](https://meta-analysis.cz/komentare/litomysl-mladi-florbaliste/) — Lilie, červen 2024
+- [Litomyšl postupuje do Národní ligy!](https://meta-analysis.cz/komentare/litomysl-narodni-liga/) — Lilie, květen 2024
+- [Co můžeme zlepšit, aby se v Litomyšli žilo nejlépe na světě](https://meta-analysis.cz/komentare/litomysl-co-muzeme-zlepsit/) — Lilie, únor 2024
+- [Poděkování řediteli a učitelům žluté školy](https://meta-analysis.cz/komentare/litomysl-reditel-skoly/) — Lilie, listopad 2023
+- [Florbal v Litomyšli je skvělý. Děti mohou začít kdykoli během roku](https://meta-analysis.cz/komentare/litomysl-florbal-je-skvely/) — Lilie, říjen 2023
+- [O urychlení dálnice se zasloužili starosta a nový šéf ŘSD](https://meta-analysis.cz/komentare/litomysl-urychleni-dalnice/) — Lilie, červenec 2023
+- [Poděkování, blahopřání, vzpomínky](https://meta-analysis.cz/komentare/litomysl-zeleny-pas-podekovani/) — Lilie, únor 2023
+- [Můžeme něco dělat s psími exkrementy v Litomyšli?](https://meta-analysis.cz/komentare/litomysl-psi-exkrementy/) — Lilie, únor 2023
+- [Nový domov důchodců na zelené louce si nemůžeme dovolit](https://meta-analysis.cz/komentare/litomysl-domov-duchodcu/) — Lilie, prosinec 2022
+- [Nové kruháky ublíží tranzitu, pomohou Litomyšli](https://meta-analysis.cz/komentare/litomysl-kruhovy-objezd/) — Lilie, červen 2022
+- [Těšme se na víc stromů v Litomyšli](https://meta-analysis.cz/komentare/litomysl-stromy/) — Lilie, březen 2022
+- [Okolí zámku může být zase krásné](https://meta-analysis.cz/komentare/litomysl-okoli-zamku/) — Lilie, leden 2022
+- [Florbal v Litomyšli je kroužek snů](https://meta-analysis.cz/komentare/litomysl-florbal-je-krouzek-snu/) — Lilie, říjen 2021
+- [Ceny pozemků v Litomyšli jsou nekonečné. Je to špatně?](https://meta-analysis.cz/komentare/litomysl-ceny-pozemku-jsou-nekonecne/) — Lilie, červen 2021
+- [Jak to bylo s opravou zámecké zdi](https://meta-analysis.cz/komentare/litomysl-zamecka-zed/) — Lilie, květen 2021
+- [Poděkování za Primátorku](https://meta-analysis.cz/komentare/litomysl-podekovani-za-primatorku/) — Lilie, duben 2021
+- [Poděkování, blahopřání, vzpomínky](https://meta-analysis.cz/komentare/litomysl-novy-projekt-dalnice-d35/) — Lilie, únor 2021
+- [Na dálnici bude u Litomyšle mezera. Jak jsme se k tomu dopracovali?](https://meta-analysis.cz/komentare/litomysl-dalnice-mezera-1/) — Lilie, leden 2021
+- [Stýskání po knihovně a muzeu](https://meta-analysis.cz/komentare/litomysl-styskani-po-knihovne-a-muzeu/) — Lilie, prosinec 2020
+- [Tomáš Janecký v nejlepší formě](https://meta-analysis.cz/komentare/litomysl-tomas-janecky/) — Lilie, říjen 2020
+- [Krajské volby a milion aut v Litomyšli](https://meta-analysis.cz/komentare/litomysl-milion/) — Lilie, září 2020
+- [Zařiďme si trvalý pobyt v Litomyšli, pomůžeme městu i sobě](https://meta-analysis.cz/komentare/litomysl-trvaly-pobyt/) — Lilie, červenec 2020
+- [Poděkování MŠ Lidická](https://meta-analysis.cz/komentare/litomysl-podekovani-ms-lidicka/) — Lilie, červenec 2020
+- [Mapa dálničních přivaděčů: porovnejme Litomyšl a Mýto](https://meta-analysis.cz/komentare/litomysl-mapa-dalnicnich-privadecu/) — Lilie, prosinec 2019
+- [Dálniční přivaděč kolem zámku a školy](https://meta-analysis.cz/komentare/litomysl-privadec/) — Lilie, listopad 2019
+- [Poděkování za aplikaci Marushka](https://meta-analysis.cz/komentare/litomysl-podekovani-za-aplikaci-marushka/) — Lilie, říjen 2019
+- [Dálnice D35: zpoždění zabíjí](https://meta-analysis.cz/komentare/litomysl-emise/) — Lilie, květen 2019
+- [Litomyšl potřebuje obchvat](https://meta-analysis.cz/komentare/litomysl-exit-dalnice/) — Lilie, březen 2019
+- [Schovejme auta pod zemí](https://meta-analysis.cz/komentare/litomysl-schovejme-auta-pod-zemi/) — Lilie, březen 2018
+- [Poděkování, blahopřání, vzpomínky](https://meta-analysis.cz/komentare/litomysl-podekovani-vanocni-dilny/) — Lilie, leden 2018
+- [A co děti, mají si kde hrát?](https://meta-analysis.cz/komentare/litomysl-a-co-deti-maji-si-kde-hrat/) — Lilie, červenec 2017
+- [Dálnici uslyšíme všichni](https://meta-analysis.cz/komentare/litomysl-dalnici-uslysime-vsichni/) — Lilie, duben 2017
+
+## Rozhovory
+
+Rozhovory pro česká média. U audio a video rozhovorů uvádíme pouze odkaz na původní zdroj.
+
+- [„Za inflaci může prezident.“ Vlivný profesor popsal, odkud Babiš získá 200 miliard](https://meta-analysis.cz/komentare/iv-aktualne-spotlight/) — Aktuálně.cz, 18. června 2026
+- [Co ukazují stovky studií o investování: akcie vycházejí nejlépe](https://meta-analysis.cz/komentare/gacr-akcie-vychazeji-nejlepe/) — Grantová agentura ČR, 9. ledna 2026
+- [Hodnota peněz by měla být stabilní podobně jako délka metru](https://meta-analysis.cz/komentare/zi-hodnota-penez-by-mela-byt-stabilni-podobne-j/) — Hospodářské noviny, 28. června 2024
+- [ČNB je rozbitá. Nezvládla inflaci a bojí se správně investovat](https://meta-analysis.cz/komentare/iv-sz-rozbita/) — Seznam Zprávy, 26. prosince 2023
+- [Kdyby ČNB začala pořádně kupovat akcie, zaplatí nám reformu důchodů](https://meta-analysis.cz/komentare/iv-czechcrunch/) — CzechCrunch, 19. září 2023
+- [Inovace ověřené trhem jsou základ naší prosperity](https://meta-analysis.cz/komentare/iv-enews/) — Ekonomický magazín, 26. srpna 2023
+- [Otázky Václava Moravce](https://www.ceskatelevize.cz/porady/1126672097-otazky-vaclava-moravce/223411030501105/) — Česká televize, 20. srpna 2023 (video, pouze odkaz)
+- [Havránkovi: Ekonomii se ve veřejném rozhodování vyhnout nedá](https://meta-analysis.cz/komentare/iv-syri/) — SYRI, 2. srpna 2023
+- [Inflace bývala podvod, nebo náhoda](https://meta-analysis.cz/komentare/zi-inflace-byvala-podvod-nebo-nahoda/) — Lidové noviny, 8. dubna 2023
+- [Recept na zkrocení inflace: Sazby deset procent a euro za dvacku](https://meta-analysis.cz/komentare/zi-recept-na-zkroceni-inflace-sazby-deset-proce/) — Ekonom, 23. února 2023
+- [Otázky Václava Moravce](https://www.ceskatelevize.cz/porady/1126672097-otazky-vaclava-moravce/222411030501106/) — Česká televize, 21. srpna 2022 (video, pouze odkaz)
+- [Za vysokou inflaci může špatná politika centrální banky](https://plus.rozhlas.cz/za-vysokou-inflaci-muze-spatna-politika-centralni-banky-mini-ekonom-havranek-8807137) — Český rozhlas Plus, 15. srpna 2022 (audio, pouze odkaz)
+- [Extrémní opatrnost ČNB](https://www.e15.cz/podcasty/e15-cast/extremni-opatrnost-cnb-1387936) — E15, 1. února 2022 (audio, pouze odkaz)
+- [ČNB by měla prodat miliardy eur a více investovat do akcií](https://meta-analysis.cz/komentare/iv-e15-prodat-eura/) — E15, 23. ledna 2022
+- [Inflaci můžeme kdykoliv zrušit, centrální banky včetně ČNB si vybraly jinak](https://video.aktualne.cz/dvtv/havranek-inflaci-muzeme-kdykoliv-zrusit-centralni-banky-vcet/r~d074e14ad23211eca89f0cc47ab5f122/) — DVTV, 20. prosince 2021 (video, pouze odkaz)
+- [Inflaci můžeme úplně zrušit, je neústavní](https://meta-analysis.cz/komentare/zi-inflaci-muzeme-uplne-zrusit-je-neustavni-rik/) — iDNES.cz, 19. prosince 2021
+- [Hodnocení ERC je velmi poctivé, nápady vynikající](https://meta-analysis.cz/komentare/iv-vedavyzkum-erc/) — Vědavýzkum.cz, 30. června 2021
+- [Havránek: Hodnocení ERC je velmi poctivé, nápady vynikající](https://meta-analysis.cz/komentare/iv-ukforum-erc/) — UK Forum, 22. června 2021
+- [Vršící se státní dluh má pět řešení. Ale jen jedno je dobré](https://meta-analysis.cz/komentare/iv-sz-dluh/) — Seznam Zprávy, 19. června 2021
+- [Nejcitovanější český ekonom: Další krize určitě nevznikne u nás](https://meta-analysis.cz/komentare/iv-roklen24/) — Roklen24, 22. května 2018
+- [Nejcitovanější český ekonom: Dům je pro mě spotřeba](https://www.cnb.cz/cs/o_cnb/vlog-cnb/Nejcitovanejsi-cesky-ekonom-Dum-je-pro-me-spotreba/) — Česká národní banka, 30. dubna 2018 (video, pouze odkaz)
+
+## In English
+
+Columns and commentary written in English — policy pieces for VoxEU/CEPR and posts on meta-analysis methods for MAER-Net.
+
+- [Stress-testing research with AI, now super easy and fully automated](https://meta-analysis.cz/komentare/maer-stress-testing/) — MAER-Net, 31. května 2026
+- [Stress-Testing Meta-Research with AI Duels](https://meta-analysis.cz/komentare/maer-ai-duels/) — MAER-Net, 12. prosince 2025
+- [AI Tools for Meta-Analysis](https://meta-analysis.cz/komentare/maer-ai-tools/) — MAER-Net, 30. července 2025
+- [New Challenges for Meta-Analysis](https://meta-analysis.cz/komentare/maer-new-challenges/) — MAER-Net, 7. července 2025
+- [How financial incentives affect performance](https://meta-analysis.cz/komentare/voxeu-incentives/) — VoxEU / CEPR, 13. února 2023
+- [Armington elasticity and international trade models: Fifty years on](https://meta-analysis.cz/komentare/voxeu-armington/) — VoxEU / CEPR, 23. září 2020
+- [Daylight saving saves no energy](https://meta-analysis.cz/komentare/voxeu-daylight-saving/) — VoxEU / CEPR, 2. prosince 2017
+- [Headline inflation measures shouldn't ignore costs of home ownership](https://meta-analysis.cz/komentare/voxeu-home-ownership/) — VoxEU / CEPR, 12. září 2017
+
+## Další zdroje
+
+- [Osobní stránka](https://www.tomashavranek.cz/)
+- [meta-analysis.cz](https://meta-analysis.cz/)
+- [ORCID](https://orcid.org/0000-0002-3158-2539)
+- [Google Scholar](https://scholar.google.com/citations?user=BF0BvBkAAAAJ)
+- [RePEc](https://ideas.repec.org/f/pha418.html)
+- [RSS](https://meta-analysis.cz/komentare/feed.xml)
+- [Strojově čitelný index (JSON)](https://meta-analysis.cz/komentare/index.json)
+- [Všechny texty v jednom souboru](https://meta-analysis.cz/komentare/all.md)
