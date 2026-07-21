@@ -304,6 +304,7 @@ def shell(title, desc, canonical, jsonld, body, active, extra_head="", lang="cs"
       <li><a href="https://www.tomashavranek.cz/">Osobní stránka</a></li>
       <li><a href="{SITE}/">meta-analysis.cz</a></li>
       <li><a href="https://ies.fsv.cuni.cz/">IES FSV UK</a></li>
+      <li><a href="https://zrusme-inflaci.cz/">Zrušme inflaci</a></li>
       <li><a href="https://orcid.org/0000-0002-3158-2539">ORCID</a></li>
       <li><a href="https://scholar.google.com/citations?user=BF0BvBkAAAAJ">Google Scholar</a></li>
       <li><a href="https://ideas.repec.org/f/pha418.html">RePEc / IDEAS</a></li>
@@ -550,6 +551,7 @@ def write_index(items, key=None):
             "https://metrics.stanford.edu/people/tomas-havranek",
             "https://www.tomashavranek.cz/",
             "https://meta-analysis.cz/",
+            "https://zrusme-inflaci.cz/",
         ],
     }
     node = {
@@ -651,6 +653,7 @@ def write_machine_readable(items):
     L += ["## Další zdroje", "",
           "- [Osobní stránka](https://www.tomashavranek.cz/)",
           "- [meta-analysis.cz](https://meta-analysis.cz/)",
+          "- [Zrušme inflaci](https://zrusme-inflaci.cz/) — autorova iniciativa k cenové stabilitě",
           "- [ORCID](https://orcid.org/0000-0002-3158-2539)",
           "- [Google Scholar](https://scholar.google.com/citations?user=BF0BvBkAAAAJ)",
           "- [RePEc](https://ideas.repec.org/f/pha418.html)",
