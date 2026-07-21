@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Research notes</title>
+    <link>https://meta-analysis.cz/notes/</link>
+    <atom:link href="https://meta-analysis.cz/notes/feed.xml" rel="self" type="application/rss+xml" />
+    <description>Short, self-contained notes on economics research: methods, tools, findings, and how the work gets done.</description>
+    <language>en</language>
+    <lastBuildDate>Thu, 16 Jul 2026 00:00:00 +0000</lastBuildDate>
+    <item>
+      <title>Does multi-agent AI debate improve feedback on research papers?</title>
+      <link>https://meta-analysis.cz/notes/multi-agent-debate-ai-feedback/</link>
+      <guid isPermaLink="true">https://meta-analysis.cz/notes/multi-agent-debate-ai-feedback/</guid>
+      <pubDate>Thu, 16 Jul 2026 00:00:00 +0000</pubDate>
+      <description>No, at least not for economics meta-analyses. Authors of 44 meta-analyses ranked three blinded AI reports on their own paper; a single prompt beat two multi-agent debate tools, one of which spent thirty times the tokens.</description>
+      <content:encoded><![CDATA[<p>
+Probably not. We built two multi-agent debate tools, expected them to win, and they lost to a single prompt. This note summarises what we did and what we found; the full paper, the pre-registration, and the replication package are linked in the sidebar.
+</p>
+
+<h2>The question</h2>
+
+<p>
+Feedback from large language models is now cheap enough that many researchers use it on their own drafts. A natural conjecture is that spending more computation at inference time should produce better feedback: let several agents argue, critique each other, and converge. We wanted to know whether that conjecture survives contact with the people best placed to judge, namely the authors of the papers being reviewed.
+</p>
+
+<h2>What we did</h2>
+
+<p>
+We ran a pre-registered, identity-masked, within-paper experiment. For each of 44 meta-analyses in economics, we generated three AI reports on that paper: one from a single pass by a frontier model, and one from each of two multi-agent debate tools we had written ourselves, <a href="https://github.com/tjhavranek/mad-research">mad-research</a> and <a href="https://github.com/tjhavranek/paper-workshop">paper-workshop</a>. All three were held to a common length and template, so authors could not tell them apart by format. We then asked the authors to rank the three reports by how useful each would be for improving their own paper. The study was registered before any report was generated.
+</p>
+
+<h2>What we found</h2>
+
+<p>
+Authors preferred the single pass. It beat <i>mad-research</i> by 0.66 rank points (95% CI 0.32 to 1.00) and <i>paper-workshop</i> by 0.57 (0.16 to 0.95). This is despite <i>paper-workshop</i> spending roughly thirty times the tokens: about 800,000 per paper against about 27,000 for the single pass.
+</p>
+
+<p>
+Two further results struck us as more interesting than the headline.
+</p>
+
+<p>
+First, authors who could recall the referee report they had received from a journal usually ranked it above every AI report, and never ranked it last. When we asked AI judges to rank the same material, they almost always put the human referee report last. Author and AI rankings agree only weakly, with a correlation of 0.14.
+</p>
+
+<p>
+Second, the choice of AI judge can reverse the finding. Gemini, the only judge whose model family had written none of the reports, would have ranked <i>paper-workshop</i> first in the authors' place. That is the opposite of what the authors themselves said. The warning here is narrow but sharp: an AI judge is not a substitute for the author, and a judge drawn from the same family as one of the systems under test is not a neutral instrument.
+</p>
+
+<h2>What this does not show</h2>
+
+<p>
+We measured perceived usefulness, judged by authors, on finished papers. That is not the same as measuring whether a report would improve a paper if acted on, and it is not the same as asking whether AI should referee papers at all. Both are separate questions and we do not answer them here. Our papers are meta-analyses in economics, so the result may not carry to other designs or fields.
+</p>
+
+<h2>Why we are publishing the negative result</h2>
+
+<p>
+We built these tools, we expected them to win, and we pre-registered the comparison before finding out. Reporting the outcome either way was the point of registering it. Both tools remain open source and are linked above; the finding is about test-time compute in this setting, not about whether the tools are useful for anything.
+</p>]]></content:encoded>
+    </item>
+  </channel>
+</rss>

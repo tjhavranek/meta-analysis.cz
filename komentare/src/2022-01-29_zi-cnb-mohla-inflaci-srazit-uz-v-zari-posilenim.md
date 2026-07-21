@@ -1,0 +1,40 @@
+---
+category: "celostatni"
+media: "text"
+outlet: "E15"
+url: "https://www.e15.cz/nazory/tomas-havranek-cnb-mohla-inflaci-srazit-uz-v-zari-posilenim-koruny-1387273"
+date: "2022-01-29"
+headline: "ČNB mohla inflaci srazit už v září posílením koruny"
+byline: "Tomáš Havránek"
+word_count: "1205"
+---
+
+# ČNB mohla inflaci srazit už v září posílením koruny
+
+Doporučuji všem, kteří četli rozhovor se mnou v deníku E15, aby si přečetli také odpověď ČNB. Odpověď brilantně připravili šéfové klíčových sekcí, které mají na starosti úrokové sazby (Petr Král) a devizové rezervy (Jan Schmidt). Jedná se o vůbec nejlepší ekonomické odborníky ve státních službách s mnohaletými zkušenostmi práce v ČNB. Jejich obhajoba inflačního cíle a konzervativního přístupu k alokaci rezerv je klíčovým, a ze strany ČNB oficiálně prvním příspěvkem do této debaty.
+
+Práce obou kolegů si hluboce vážím. Trochu mě mrzí, že odpověď připomíná styl komunikace Sergeje Lavrova: my děláme všechno správně, vy lžete. Přitom je toho mnoho, za co můžeme ČNB pochválit. Dlouhá léta se dařilo držet inflaci kolem dvou procent. To sice není cenová stabilita, ale nám to zas tak nevadilo. Inflační bouři ČNB zpozorovala dříve než ostatní banky a mocně s ní bojuje. A devizové rezervy aspoň trochu investuje do akcií. Suma sumárum, ČNB funguje lépe než Fed a Evropská centrální banka a je s náskokem naší nejlepší veřejnou institucí.
+
+Na druhou stranu pokud má ČNB pravdu (a já s ní souhlasím), že dnešní inflace je nejméně z poloviny domácího původu, není možné, aby loni dělala všechno správně. Dvouciferné inflaci nezabránila. Četl jsem spoustu vyjádření, jak všechno bude brzy fajn, ale jedna věc chybí – omluva. Není nutné, aby guvernér psal omluvné dopisy ministru financí, jak je zvykem v Anglii, ale sebereflexe pomůže věrohodnosti banky.
+
+Namísto toho se dozvídáme, že oproti zbytku státní správy a většině ekonomiky budou platy v ČNB plně kompenzované o inflaci. Abych nebyl obviněn z používání interních informací (jež jsou mezi analytiky známé), cituji jen guvernéra z rozhovoru pro Respekt: „[Kolektivní] smlouva má určité inflační pojistky a de facto zaručuje úroveň reálných mezd. V tomto ohledu nemusíme korigovat nic. Naši zaměstnanci jsou spokojení, jak to jejich vyjednávači dobře odhadli.“
+
+Zaměstnanci ČNB jsou spokojeni, nicméně inflace odráží jejich práci, plnění ústavního mandátu cenové stability. Není vhodné, aby ČNB byla od dvouciferné inflace odstíněna, zatímco reálné platy třeba učitelů strmě klesnou. Pozor: ano, v ČNB si lidé zaslouží vyšší platy, všem se nám to vyplatí, ale ne tímto způsobem. Mzdová indexace je něco, před čím ČNB správně varuje a co nám může inflaci zabetonovat. Neznám jinou centrální banku, která by měla mzdy indexované.
+
+V rozhovoru pro deník E15 jsme rozebírali dva hlavní body. Zaprvé cenová stabilita není inflace. Zadruhé devizové rezervy jsou k ničemu, pokud je nepoužíváme ani pro snížení inflace, ani pro výnos. Co se týče inflačního cíle, Petr Král ho obhajuje trojmo: měřená inflace je nadhodnocená, mzdy jsou rigidní, deflace katastrofa. O. k., ale od roku 1990 bylo publikováno přes dvě stě vědeckých studií, které porovnávají náklady a výnosy inflace. A těch nákladů a výnosů (vedle těch tří výnosů výše) je přes dvacet. Nevejde se nám sem rozbor literatury, ale průměrný odhad ideální inflace je skoro přesně nula.
+
+Ohledně devizových rezerv Petr Král argumentuje, že je lze použít jen proti deflaci, ne proti inflaci, protože tehdy můžeme vždy zvedat sazby. Musím se přiznat, že nerozumím. V září byla ČNB v situaci, kdy mohla inflaci rychle srazit posílením koruny. Místo toho měnovou politiku utahovala výlučně pomocí úroků s účinkem, na který si počkáme roky. Kurz posílil až v lednu, už nezabrání dvouciferné inflaci. Nechápu, proč pro plnění ústavního cíle nepoužít všechny nástroje. Zvlášť kdyby se de facto jednalo o neutralizaci intervencí minulých. Je to jako snižování bilance Fedu po předchozím kvantitativním uvolňování.
+
+Jan Schmidt argumentuje, že takové použití rezerv je v rozporu s jejich investicí do akcií. To je pravda, prodej eur vytvoří ČNB (a tedy nám všem) gigantickou ztrátu. Jenže cenová stabilita je ústavní úkol, ČNB ho plnit musí bez ohledu na výsledovku. Až potom přichází na řadu výnos. Jan Schmidt říká, že ČNB už má akcií zhruba tolik jako Švýcarská centrální banka. Nerozumím porovnání poměru v celých rezervách (Švýcaři) a „investiční tranši“ (ČNB). Že přístup Švýcarů je velmi odlišný, nejlépe ukazuje porovnání výnosu za poslední dva roky, pro něž máme data: kdyby ČNB investovala jako Švýcaři, vydělala by 300 miliard korun navíc.
+
+K čemu tedy rezervy máme? Nepoužili jsme je na podporu koruny ve finanční krizi ani na začátku pandemie, kdy měna strmě padala. To byly největší šoky, jaké si můžeme s ohledem na desítky let historie finančních trhů představit. Nepoužili jsme rezervy proti inflaci, která je podle některých měřítek (třeba jádrová inflace) nejvyšší v historii měření. A nepoužíváme rezervy ani k tomu, aby nám vydělávaly. Investice rezerv do akcií samozřejmě nevylučuje jejich použití v nouzi, která nastane jednou za desítky let – akcie jsou dnes stejně likvidní jako dluhopisy. Termín „likviditní tranše“ nedává smysl.
+
+Přístup ČNB je příliš opatrný, což může mít větší náklady než zbrklost. Dokládá to i výklad kolegy Schmidta: kdyby měla ČNB povinnost starat se o rezervy s péčí řádného hospodáře, musela by se prý vyvarovat ztrát v každém jednotlivém roce. Taková interpretace odráží myšlení instituce, jež se ze všeho nejvíc bojí odpovědnosti za ztráty. Útvar spravující rezervy se jmenuje „sekce řízení rizik“, což mluví za vše. Řízení rizika je nutné, ale musí mu oponovat důraz na výnos. ČNB má luxus, kterým nedisponuje nikdo z nás: nekonečný investiční horizont. Krátkodobá rizika může ignorovat.
+
+ČNB musí rezervy investovat hlavně proto, že jí to umožní plnit ústavní mandát cenové stability. Proč? Náš stát zatím sice není extrémně zadlužený, ale ještě za našich životů bude. Už teď nelze, aby ČNB zvýšila sazby v boji proti extrémní inflaci na 20 procent jako Fed v roce 1980 – stát by nedokázal obsluhovat dluh. Státní bankrot je horší než inflace, takže ho ČNB nedopustí. Pokud tedy rezervy nezainvestuje do akcií a v ročních dividendách státu nespustí autopilot (třeba pět procent průměrné hodnoty rezerv za posledních pět let), bude se nejen každý rok řešit, kolik peněz odvede. Hlavně ČNB nebude moci v nouzi proti inflaci bojovat. V této situaci je dnes Evropská centrální banka.
+
+Odpověď ČNB také obsahuje řadu údajů a tvrzení, které zde není prostor rozebírat. Namátkou třeba: singapurský fond GIC prý investuje do akcií jen 32 procent aktiv. Jsou si tím kolegové jistí? Podle aktuální výroční zprávy dosahuje alokace do akcií dlouhodobě 45 až 65 procent. Norský fond má v akciích dokonce 70 procent. Odvážné je tvrzení „návrh investovat do akcií 50 procent devizových rezerv [v ČNB] nikdy nepadl“. No, uvidíme příští rok po zveřejnění materiálů z roku 2017. Rád také přijmu nabízené pozvání a proberu osobně, co je možné změnit.
+
+Konečně o obou klíčových otázkách, tedy inflačním cíli a správě devizových rezerv, vedeme debatu. Hluboce věřím, že naší zemi prospěje, když se nadobro zbavíme inflace a postupně investujeme polovinu rezerv do posílení koruny, zbytek do akcií. Můj postoj se bude většině kolegů zdát radikální, navíc se mohu mýlit. Na druhou stranu je jasné, že status quo selhal. Třeba se alespoň podaří prosadit garanci dvouprocentní inflace v průměru, tedy abychom odstranili nejistotu ohledně budoucí hodnoty peněz. Třeba ČNB nakonec prodá alespoň 30 miliard eur a postupně dosáhne na alespoň třicetiprocentní podíl akcií ve zbývajícím portfoliu.
+
+Profesor ekonomie na Univerzitě Karlově, výzkumník v Centru analýz hospodářské politiky (Londýn) a Centru inovací meta-výzkumu (Stanford). Exporadce bankovní rady, tehdejšího viceguvernéra i nynějšího guvernéra České národní banky, kde pracoval 10 let. Zahraniční vědci a mezinárodní instituce jeho výzkum používají nejčastěji z českých ekonomů. V roce 2020 působil jako historicky první zástupce ČR za ekonomii a finance v hodnocení Evropské výzkumné rady.

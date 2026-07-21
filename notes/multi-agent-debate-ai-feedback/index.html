@@ -1,0 +1,209 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+<title>Does multi-agent AI debate improve feedback on research papers?</title>
+<meta name="keywords" content="AI feedback, multi-agent debate, LLM-as-a-judge, peer review, meta-analysis, pre-registration, test-time compute" />
+<meta name="description" content="No, at least not for economics meta-analyses. Authors of 44 meta-analyses ranked three blinded AI reports on their own paper; a single prompt beat two multi-agent debate tools, one of which spent thirty times the tokens." />
+<link href="/default.css" rel="stylesheet" type="text/css" />
+<link rel="alternate" type="application/rss+xml" title="Research notes" href="https://meta-analysis.cz/notes/feed.xml" />
+
+<!-- seo-meta:start -->
+<link rel="canonical" href="https://meta-analysis.cz/notes/multi-agent-debate-ai-feedback/" />
+<meta name="author" content="Tomas Havranek" />
+<meta property="article:published_time" content="2026-07-16" />
+<meta property="article:modified_time" content="2026-07-21" />
+<meta property="og:site_name" content="meta-analysis.cz" />
+<meta property="og:type" content="article" />
+<meta property="og:title" content="Does multi-agent AI debate improve feedback on research papers?" />
+<meta property="og:description" content="No, at least not for economics meta-analyses. Authors of 44 meta-analyses ranked three blinded AI reports on their own paper; a single prompt beat two multi-agent debate tools, one of which spent thirty times the tokens." />
+<meta property="og:url" content="https://meta-analysis.cz/notes/multi-agent-debate-ai-feedback/" />
+<script type="application/ld+json">
+{
+ "@context": "https://schema.org",
+ "@graph": [
+  {
+   "@type": "BlogPosting",
+   "@id": "https://meta-analysis.cz/notes/multi-agent-debate-ai-feedback/#note",
+   "mainEntityOfPage": "https://meta-analysis.cz/notes/multi-agent-debate-ai-feedback/",
+   "url": "https://meta-analysis.cz/notes/multi-agent-debate-ai-feedback/",
+   "headline": "Does multi-agent AI debate improve feedback on research papers?",
+   "name": "Does multi-agent AI debate improve feedback on research papers?",
+   "abstract": "No, at least not for economics meta-analyses. Authors of 44 meta-analyses ranked three blinded AI reports on their own paper; a single prompt beat two multi-agent debate tools, one of which spent thirty times the tokens.",
+   "description": "No, at least not for economics meta-analyses. Authors of 44 meta-analyses ranked three blinded AI reports on their own paper; a single prompt beat two multi-agent debate tools, one of which spent thirty times the tokens.",
+   "inLanguage": "en",
+   "datePublished": "2026-07-16",
+   "dateModified": "2026-07-21",
+   "keywords": "AI feedback, multi-agent debate, LLM-as-a-judge, peer review, meta-analysis, pre-registration, test-time compute",
+   "author": [
+    {
+     "@type": "Person",
+     "name": "Tomas Havranek",
+     "sameAs": "https://orcid.org/0000-0002-3158-2539"
+    },
+    {
+     "@type": "Person",
+     "name": "Zuzana Irsova",
+     "sameAs": "https://orcid.org/0000-0002-0753-8124"
+    }
+   ],
+   "publisher": {
+    "@type": "Organization",
+    "name": "meta-analysis.cz",
+    "url": "https://meta-analysis.cz"
+   },
+   "isPartOf": {
+    "@type": "Blog",
+    "@id": "https://meta-analysis.cz/notes/#blog",
+    "name": "Research notes"
+   },
+   "license": "https://creativecommons.org/licenses/by/4.0/",
+   "isAccessibleForFree": true,
+   "about": [
+    {
+     "@type": "Thing",
+     "name": "AI and research"
+    },
+    {
+     "@type": "Thing",
+     "name": "peer review"
+    }
+   ],
+   "citation": [
+    "https://meta-analysis.cz/debate/debate.pdf",
+    "https://meta-analysis.cz/debate/",
+    "https://arxiv.org/abs/2607.14713",
+    "https://doi.org/10.17605/OSF.IO/E6XGW",
+    "https://osf.io/7nfyb",
+    "https://doi.org/10.5281/zenodo.21273528"
+   ],
+   "sameAs": [
+    "https://bsky.app/profile/irsova.bsky.social"
+   ]
+  }
+ ]
+}
+</script>
+<!-- seo-meta:end -->
+</head>
+<body>
+<div id="wrapper">
+<div id="logo">
+	<h1><a href="/notes/">Research notes</a></h1>
+	<h2> &raquo;&nbsp;&nbsp;&nbsp; methods, tools, and findings</h2>
+</div>
+<div id="header">
+	<div id="menu">
+		<ul>
+			<li class="current_page_item"><a href="/notes/">Notes</a></li>
+			<li><a href="/">Data &amp; code</a></li>
+			<li><a href="/guidelines">Guidelines</a></li>
+			<li><a href="https://meta-analysis.cz/notes/feed.xml">RSS</a></li>
+		</ul>
+	</div>
+</div>
+</div>
+<div id="page">
+	<div id="content">
+		<div class="post">
+			<h1 class="title">Does multi-agent AI debate improve feedback on research papers?</h1>
+			<p class="byline">16 July 2026 &nbsp;&middot;&nbsp; Tomas Havranek, Zuzana Irsova &nbsp;&middot;&nbsp; updated 21 July 2026 &nbsp;&middot;&nbsp; AI and research / peer review</p>
+			<div class="entry">
+<p>
+Probably not. We built two multi-agent debate tools, expected them to win, and they lost to a single prompt. This note summarises what we did and what we found; the full paper, the pre-registration, and the replication package are linked in the sidebar.
+</p>
+
+<h2>The question</h2>
+
+<p>
+Feedback from large language models is now cheap enough that many researchers use it on their own drafts. A natural conjecture is that spending more computation at inference time should produce better feedback: let several agents argue, critique each other, and converge. We wanted to know whether that conjecture survives contact with the people best placed to judge, namely the authors of the papers being reviewed.
+</p>
+
+<h2>What we did</h2>
+
+<p>
+We ran a pre-registered, identity-masked, within-paper experiment. For each of 44 meta-analyses in economics, we generated three AI reports on that paper: one from a single pass by a frontier model, and one from each of two multi-agent debate tools we had written ourselves, <a href="https://github.com/tjhavranek/mad-research">mad-research</a> and <a href="https://github.com/tjhavranek/paper-workshop">paper-workshop</a>. All three were held to a common length and template, so authors could not tell them apart by format. We then asked the authors to rank the three reports by how useful each would be for improving their own paper. The study was registered before any report was generated.
+</p>
+
+<h2>What we found</h2>
+
+<p>
+Authors preferred the single pass. It beat <i>mad-research</i> by 0.66 rank points (95% CI 0.32 to 1.00) and <i>paper-workshop</i> by 0.57 (0.16 to 0.95). This is despite <i>paper-workshop</i> spending roughly thirty times the tokens: about 800,000 per paper against about 27,000 for the single pass.
+</p>
+
+<p>
+Two further results struck us as more interesting than the headline.
+</p>
+
+<p>
+First, authors who could recall the referee report they had received from a journal usually ranked it above every AI report, and never ranked it last. When we asked AI judges to rank the same material, they almost always put the human referee report last. Author and AI rankings agree only weakly, with a correlation of 0.14.
+</p>
+
+<p>
+Second, the choice of AI judge can reverse the finding. Gemini, the only judge whose model family had written none of the reports, would have ranked <i>paper-workshop</i> first in the authors' place. That is the opposite of what the authors themselves said. The warning here is narrow but sharp: an AI judge is not a substitute for the author, and a judge drawn from the same family as one of the systems under test is not a neutral instrument.
+</p>
+
+<h2>What this does not show</h2>
+
+<p>
+We measured perceived usefulness, judged by authors, on finished papers. That is not the same as measuring whether a report would improve a paper if acted on, and it is not the same as asking whether AI should referee papers at all. Both are separate questions and we do not answer them here. Our papers are meta-analyses in economics, so the result may not carry to other designs or fields.
+</p>
+
+<h2>Why we are publishing the negative result</h2>
+
+<p>
+We built these tools, we expected them to win, and we pre-registered the comparison before finding out. Reporting the outcome either way was the point of registering it. Both tools remain open source and are linked above; the finding is about test-time compute in this setting, not about whether the tools are useful for anything.
+</p>
+			</div>
+			<div class="meta">
+				<p class="links"><a href="/notes/" class="more">All notes</a> &nbsp;&middot;&nbsp; <a href="/" class="more">More meta from Prague</a></p>
+			</div>
+		</div>
+	</div>
+<div id="sidebar">
+<ul>
+  <li id="search">
+    <h2>Search</h2>
+    <form method="get" action="https://www.google.com/search">
+      <fieldset>
+        <input type="text" id="s" name="q" value="" title="Search meta-analysis.cz" />
+        <input type="hidden" name="as_sitesearch" value="meta-analysis.cz" />
+        <input type="submit" id="x" value="Search" />
+      </fieldset>
+    </form>
+  </li>
+<li>
+<h2>Materials</h2>
+<ul>
+<li><a href="https://meta-analysis.cz/debate/debate.pdf">Paper (PDF)</a></li>
+<li><a href="https://meta-analysis.cz/debate/">Project page</a></li>
+<li><a href="https://arxiv.org/abs/2607.14713">arXiv: 2607.14713</a></li>
+<li><a href="https://doi.org/10.17605/OSF.IO/E6XGW">Pre-registration (OSF)</a></li>
+<li><a href="https://osf.io/7nfyb">Online supplement (OSF)</a></li>
+<li><a href="https://doi.org/10.5281/zenodo.21273528">Replication package (Zenodo)</a></li>
+</ul>
+</li>
+<li>
+<h2>Also posted on</h2>
+<ul>
+<li><a href="https://bsky.app/profile/irsova.bsky.social" rel="syndication">Bluesky</a></li>
+</ul>
+</li>
+<li>
+<h2>Links</h2>
+<ul>
+<li><a href="/">Data &amp; code by topic</a></li>
+<li><a href="/guidelines">A practitioner&#x27;s guide</a></li>
+<li><a href="/maive">MAIVE</a></li>
+<li><a href="https://www.irsova.com/">Zuzana Irsova</a></li>
+<li><a href="https://ideas.repec.org/k/metaana.html">Meta-Analysis on RePEc</a></li>
+<li><a href="https://www.maer-net.org/">MAER-Net</a></li>
+<li><a href="/notes/feed.xml">RSS feed</a></li>
+</ul>
+</li>
+</ul>
+</div>
+	<div style="clear: both;">&nbsp;</div>
+</div>
+</body>
+</html>

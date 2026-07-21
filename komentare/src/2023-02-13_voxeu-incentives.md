@@ -1,0 +1,56 @@
+---
+category: "english"
+media: "text"
+outlet: "VoxEU / CEPR"
+url: "https://cepr.org/voxeu/columns/how-financial-incentives-affect-performance"
+date: "2023-02-13"
+headline: "How financial incentives affect performance"
+byline: "Tomáš Havránek, Zuzana Irsová"
+word_count: "1346"
+---
+
+# How financial incentives affect performance
+
+Economists tend to assume that monetary rewards make people try harder, but many psychologists argue that the opposite can be true. This column takes stock of 44 experimental studies in economics to test the relationship between financial incentives and performance. After correcting publication bias and differences in experimental contexts, the analysis suggests a negligible effect of financial incentives on performance across all contexts of field experiments. Incentives or nudges that rely mainly on financial motives, such as offering money to people for getting their Covid-19 shots, may be less effective than commonly thought.
+
+Since at least the 1970s, psychologists have been pointing out that financial incentives can harm performance by crowding out the enjoyment we would otherwise earn while working on a task (Deci 1971). An enjoyable task morphs into one that we do for the money, which crowds out intrinsic motivation. If extrinsic motivation provided by the financial incentive is not strong enough, money rewards result in reduced performance. While not universally accepted, the motivation crowding theory is the default incentive model in psychology and related fields (Engström and Bengtsson 2014, Deserranno 2015, Bowles 2016, Pope and DellaVigna 2016).
+
+A widely cited meta-analysis by Weibel et al. (2010) reports that financial incentives indeed hurt performance in the case of interesting tasks. While economists have long been aware of the psychology theory and evidence (Camerer and Hogarth 1999, Gneezy and Rustichini 2000, Frey and Jegen 2001, Gneezy et al. 2011, Esteves-Sorenson and Broce 2022), few models used in economics allow for motivation crowding. The following statement recently expressed prominently on the website of a leading management consultancy reflects the prior of many economists:
+
+"Generous and specific financial incentives can help drive and sustain a rapid performance improvement" (McKinsey 2022)
+
+In this column, based on a synthesis of empirical studies on the topic (Cala et al. 2022), we argue that empirical evidence, even in economics, does not support the prior. The finding has far-reaching policy consequences: incentives or nudges that rely mainly on financial motives, such as offering money to people for getting their Covid-19 shots, may be less effective than commonly thought.
+
+The purpose of our meta-analysis is threefold (Cala et al. 2022). First, we correct the literature for publication bias, which can exaggerate the underlying effect multiplicatively (Ioannidis et al. 2017). Second, we allow for model uncertainty (Steel 2020), which is important given how individual experiments differ. Third, we focus on economics. Existing meta-analyses have focused exclusively or to a large extent on psychology. The economics literature is thus largely unexplored, although researchers have pointed out the vast differences in priors and methodological approaches between economics and psychology experiments when it comes to the effect of money on behaviour (Camerer and Hogarth 1999, Hertwig and Ortmann 2001, Esteves-Sorenson and Broce 2022).
+
+Figure 1 presents a bird’s-eye view of the experimental economics literature on the topic. The median estimates from each study, recomputed to partial correlations for comparability, range commonly between 0 and 0.2, though some studies report correlations of −0.3 or 0.5. The estimates do not converge to a consensus value. Figure 2 shows that results vary across countries. Surprisingly to an economist, estimates are far from being robustly and consistently positive.
+
+Figure 1 Estimated effects of incentives vary across studies, and do not converge to a consensus value
+
+Figure 2 Effects of incentives vary across and within countries, and centre around small positive values
+
+None of the previous meta-analyses in psychology (Jenkins et al. 1998, Condly et al. 2003, Weibel et al. 2010, Garbers and Konradt 2014, Kim et al. 2022) corrected the literature for publication bias. Publication bias arises when some results – typically those that are intuitive and statistically significant – are preferentially selected for publication. Selective reporting can work at the level of entire studies – for example, studies may end up unpublished, forever hidden in a file drawer, because of their insignificant results.
+
+More plausibly, however, selective reporting works as self-censorship practised by the authors themselves (Brodeur et al. 2022). In the context of the incentive performance literature, researchers can, for example, alter the measure of performance they report (Esteves-Sorenson and Broce 2022) or choose a subset of the data until they get a desired outcome.
+
+Selective reporting does not equal cheating and can be unintentional. McCloskey and Ziliak (2019) draw a useful analogy to the Lombard effect in psychoacoustics: speakers involuntarily increase their vocal effort in the presence of noise. In a similar way, researchers may increase their effort to find a plausible estimate when there is noise in their data.
+
+Figure 3 shows two graphs used to detect publication bias. The left-hand panel plots estimates on the horizontal axis against their precision on the vertical axis. In the absence of bias, this ‘funnel plot’ should be symmetrical. But we can see that many negative estimates are missing – perhaps not reported because they are not intuitive. In a similar vein, the right-hand panel shows that estimates are just statistically insignificant at the 5% level, and thus with t-statistics just below 1.96 in absolute value, are under-reported.
+
+We use a battery of statistical methods that formalise the ideas of both panels of Figure 3. All methods find evidence of publication bias, which pushes the mean reported estimate upwards. After correction for the bias, the mean experimental result suggests a negligible effect of financial incentives on performance – a striking result to an economist.
+
+The experiments on this topic vary so much that a reader may ask how a mean estimate is informative. Indeed, researchers focus on different definitions of performance: work outcomes, school grades, games, blood donations, among others. The task itself can be appealing or unappealing, cognitive or manual. Outputs can be measured quantitatively or qualitatively.
+
+Reward size and framing also differ across experiments – sometimes only individual people are paid, sometimes the rewards are group-specific. Some experiments are conducted in a lab, most are field studies. Subjects differ in terms of gender, occupation, age, and culture. Various statistical techniques are used to produce the results.
+
+To account for the differences in estimation context, we employ Bayesian model averaging, the natural solution to model uncertainty in the Bayesian framework (Steel 2020). The results suggest that some method choices drive the results systematically, as depicted in Figure 4. The most important drivers of heterogeneity are shown on the top. Blue denotes a positive effect on the estimated incentive-performance nexus, red denotes a negative effect. Columns denote different models, and the horizontal axis measures each model’s importance.
+
+The composition of the subject pool matters, as does the framing of rewards, individual versus group rewards, and qualitative versus quantitative measurement of output. Financial incentives are even less efficient in improving grades and pro-social behaviour than they are in improving performance at games and work. But, importantly, the differences are small.
+
+The implied correlations for various experimental contexts after correction for bias and accounting for model uncertainty are always statistically insignificant and negligible according to the Doucouliagos (2011) guidelines for the interpretation of partial correlations. The only exception is laboratory experiments, but even here the implied effect is tiny. In Cala et al. (2022) we show the numerical results for different scenarios.
+
+We conclude that, regarding the effect of financial incentives on performance, the experimental economics literature is inconsistent with most models commonly employed in economics.
+
+The results do not fit neatly in the mainstream psychology framework either. The motivation crowding theory assumes that the crowding out of intrinsic motivation happens only in the case of interesting tasks, exactly as reported by Weibel et al. (2010). The problem is that the definition of an interesting task is subjective, and some people will enjoy tasks that others find unappealing.
+
+Another potential explanation is that reward cues distract people from the task itself; a recent meta-analysis shows that this effect can be important (Rusz et al. 2020). The distraction effect can exist for both interesting and uninteresting tasks and is more likely in field settings, where the experimenter does not always have full control over the connection between reward cues and the task itself.

@@ -1,0 +1,35 @@
+---
+outlet: "Hospodářské noviny"
+url: "https://archiv.hn.cz/c1-66902410-preziji-papirove-penize-pandemii"
+date: "2021-04-06"
+headline: "Přežijí papírové peníze pandemii?"
+status: full
+byline: "Tomáš Havránek"
+word_count: 544
+---
+
+# Přežijí papírové peníze pandemii?
+
+Do zimní olympiády v Pekingu příští rok Čína naplno spustí svou digitální měnu. Zároveň se tamní vláda netají tím, že digitálními penězi brzy úplně nahradí hotovost. Říše středu tak ukončí svůj tisíciletý experiment s papírovými penězi, který tolik fascinoval středověké návštěvníky z Evropy v čele s Marcem Polem. Hotovost ale bude mít na kahánku i v Evropě – a tisíc let to trvat nebude.
+
+## Prokletí hotovosti
+
+Bankovky a mince mají pro stát hromadu nevýhod. Pomáhají šířit koronavirus (možná) a další patogeny a toxiny (určitě). Umožňují lidem vyhýbat se daním. Ulehčují fungování organizovaného zločinu. Znemožňují centrální bance srazit úrokové sazby hlouběji pod nulu. To jsou problémy často zmiňované a podrobně rozebrané třeba v knize profesora Rogoffa Prokletí hotovosti.
+
+Na hotovost se ale brzy upře zrak pokrokových sil i z jiného důvodu. Běžná papírová bankovka má totiž na svědomí dva až tři kilogramy emisí oxidu uhličitého. Bankovek obíhá v Česku 523 milionů. Už si rozumíme? Naše centrální banka (a nejvýrazněji současný viceguvernér a zřejmě příští guvernér Marek Mora) zatím tlaku na „zezelenání“ odolává, což někteří považují za zpátečnické, jiní za prozíravé, ale všichni se asi shodneme, že je to statečné.
+
+Ovšem nikdo nemůže čekat, že ČNB bude čelit stupňujícímu se tlaku veřejnosti a zahraniční praxe dlouho. Statečnost komplikuje centrálnímu bankéři život. Daleko jednodušší je přístup „nepouštějme se do žádných větších akcí“, tedy pokojná konformita s tím, jak to dělají ostatní. Proto třeba pořád cílujeme inflaci ve výši dvě procenta, ačkoliv moderní výzkum naznačuje, že prospěšnější by nám byla skutečná cenová stabilita.
+
+## Hotovost jako únikový ventil
+
+Osobně hotovost nepoužívám, pokud mě k tomu obchodník vyloženě nedonutí. Proti Google Pay je placení bankovkami a mincemi pomalé, trapné a nepohodlné. Nesnáším vybírání z bankomatu. A není nad to zjistit v pondělí při přebíraní dovezeného oběda, že doma nemáte dost hotovosti na zaplacení. Stejně ale utřu slzu, až i naše vláda hotovost zakáže.
+
+Hotovost nám totiž dovoluje utéct ze státního systému regulací a sledování. Většině z nás systém vyhovuje a utíkat z něj nepotřebujeme, ale i tak jsme rádi, že ta možnost existuje. Když chcete, můžete zatím pořád zajít na kafe nebo pivo bez toho, aby to bylo u vašeho jména zapsané ve státním registru. (Vlastně nemůžete, ale v létě snad budete moct.)
+
+Kvůli neefektivitě našich úřadů nemám obavy, že by stát takto získané osobní informace zneužil nebo, a to je ještě mnohem nepravděpodobnější, využil. Přístup úředníků k datům nejlépe ilustruje ubohá blamáž Českého statistického úřadu, který není schopen bez smutné ostudy zvládnout svůj nejdůležitější úkol, který provádí jednou za 10 let: sčítání lidu. On-line. Raz dva.
+
+## Lákadlo digitální měny
+
+Naopak v Číně je sledování a získání osobních dat hlavním motivem pro rušení hotovosti. Ještě vylepší první opravdu totalitní systém v dějinách a bude dávat občanům záporné body za nákup cigaret nebo alkoholu. Před laskavým dohledem Strany nebude úkrytu.
+
+Český stát nikdy nebude velký bratr a těžko se bude bít za zelenou budoucnost. Jenže účty z let 2020 a 2021 musí někdo zaplatit na daních. A účinným řešením je zablokovat únikovou cestu v podobě hotovosti. Nejprve ČNB spustí (neanonymní) digitální měnu a stáhne bankovky vyšší hodnoty, pěti- a dvoutisícové. Následovat bude novela zákona, která digitální měnu povýší nad hotovost. Poté ČNB stáhne zbytek bankovek a přechod dovrší zákonný zákaz hotovosti. Divil bych se, kdyby na tom ministerstvo financí už nepracovalo.

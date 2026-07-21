@@ -1,0 +1,66 @@
+{
+  "notes_title": "Research notes",
+  "notes_tagline": "methods, tools, and findings",
+  "notes_description": "Short, self-contained notes on economics research: methods, tools, findings, and how the work gets done.",
+  "notes_keywords": [
+    "economics",
+    "research methods",
+    "meta-analysis",
+    "evidence synthesis",
+    "labor economics",
+    "international economics",
+    "publication bias",
+    "AI for research",
+    "academic practice"
+  ],
+  "license_url": "https://creativecommons.org/licenses/by/4.0/",
+
+  "default_authors": [
+    { "name": "Zuzana Irsova", "orcid": "https://orcid.org/0000-0002-0753-8124" }
+  ],
+
+  "sidebar_links": [
+    { "label": "Data & code by topic", "url": "/" },
+    { "label": "A practitioner's guide", "url": "/guidelines" },
+    { "label": "MAIVE", "url": "/maive" },
+    { "label": "Zuzana Irsova", "url": "https://www.irsova.com/" },
+    { "label": "Meta-Analysis on RePEc", "url": "https://ideas.repec.org/k/metaana.html" },
+    { "label": "MAER-Net", "url": "https://www.maer-net.org/" },
+    { "label": "RSS feed", "url": "/notes/feed.xml" }
+  ],
+
+  "notes": [
+    {
+      "slug": "multi-agent-debate-ai-feedback",
+      "title": "Does multi-agent AI debate improve feedback on research papers?",
+      "date": "2026-07-16",
+      "updated": "2026-07-21",
+      "summary": "No, at least not for economics meta-analyses. Authors of 44 meta-analyses ranked three blinded AI reports on their own paper; a single prompt beat two multi-agent debate tools, one of which spent thirty times the tokens.",
+      "topics": ["AI and research", "peer review"],
+      "keywords": [
+        "AI feedback",
+        "multi-agent debate",
+        "LLM-as-a-judge",
+        "peer review",
+        "meta-analysis",
+        "pre-registration",
+        "test-time compute"
+      ],
+      "authors": [
+        { "name": "Tomas Havranek", "orcid": "https://orcid.org/0000-0002-3158-2539" },
+        { "name": "Zuzana Irsova", "orcid": "https://orcid.org/0000-0002-0753-8124" }
+      ],
+      "links": [
+        { "label": "Paper (PDF)", "url": "https://meta-analysis.cz/debate/debate.pdf" },
+        { "label": "Project page", "url": "https://meta-analysis.cz/debate/" },
+        { "label": "arXiv: 2607.14713", "url": "https://arxiv.org/abs/2607.14713" },
+        { "label": "Pre-registration (OSF)", "url": "https://doi.org/10.17605/OSF.IO/E6XGW" },
+        { "label": "Online supplement (OSF)", "url": "https://osf.io/7nfyb" },
+        { "label": "Replication package (Zenodo)", "url": "https://doi.org/10.5281/zenodo.21273528" }
+      ],
+      "syndicated": [
+        { "label": "Bluesky", "url": "https://bsky.app/profile/irsova.bsky.social" }
+      ]
+    }
+  ]
+}
