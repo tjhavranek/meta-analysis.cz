@@ -6,14 +6,12 @@ url: "https://www.e15.cz/nazory-a-analyzy/sprava-rezerv-cnb-jak-jsme-za-ctyri-ro
 date: "2023-11-07"
 headline: "Správa rezerv ČNB: Jak jsme za čtyři roky přišli o bilion"
 byline: "Tomáš Havránek"
-word_count: "854"
+word_count: "829"
 ---
 
 # Správa rezerv ČNB: Jak jsme za čtyři roky přišli o bilion
 
-Předplatné e15.czNázory a analýzy Správa rezerv ČNB: Jak jsme za čtyři roky přišli o bilion Česká národní banka, ČNB • Zdroj: E15 Jan Juhaniak
-
-Diskuze (4)Nedávno uplynuly čtyři roky od prvního veřejného návrhu investovat devizové rezervy ČNB po vzoru Singapuru, Norska nebo fondů bohatství velkých soukromých univerzit. Stejné interní návrhy padaly v ČNB již na začátku roku 2017; detaily poskytnou v lednu odtajněné materiály. Kdyby se k tomu ČNB tehdy odhodlala, vydělala by od té doby více než bilion korun navíc do státního rozpočtu.
+Nedávno uplynuly čtyři roky od prvního veřejného návrhu investovat devizové rezervy ČNB po vzoru Singapuru, Norska nebo fondů bohatství velkých soukromých univerzit. Stejné interní návrhy padaly v ČNB již na začátku roku 2017; detaily poskytnou v lednu odtajněné materiály. Kdyby se k tomu ČNB tehdy odhodlala, vydělala by od té doby více než bilion korun navíc do státního rozpočtu.
 
 Návrh na modernizaci správy rezerv byl v minulosti detailně probírán i na stránkách e15, například zde, zde nebo zde. Při příležitosti výročí návrhu stojí za to připomenout si jeho základní kontury a nejčastější námitky k němu vznášené.
 

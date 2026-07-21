@@ -6,7 +6,7 @@ url: "https://www.maer-net.org/post/stress-testing-research-with-ai-now-super-ea
 date: "2026-05-31"
 headline: "Stress-testing research with AI, now super easy and fully automated"
 byline: "Tomáš Havránek"
-word_count: "236"
+word_count: "182"
 ---
 
 # Stress-testing research with AI, now super easy and fully automated
@@ -22,7 +22,3 @@ The manual protocol (including a four-model version with Gemini and Grok in addi
 https://github.com/tjhavranek/research-audit-duel-protocol
 
 Try it on something you are working on and tell us how we could improve it!
-
-The Impact of the Journal of Economics Surveys has Notably Increased! Thanks to the support of MAER-Net members and their outstanding research, the Journal of Economics Surveys’ impact factor is now
-
-Introduction to the MAER-Net Blog Content overview How to create a new account for the MAER-Net Blog. Access your profile . Subscribe to...

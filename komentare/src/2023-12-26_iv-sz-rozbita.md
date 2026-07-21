@@ -6,7 +6,7 @@ url: "https://www.seznamzpravy.cz/clanek/ekonomika-finance-cnb-je-rozbita-nezvla
 date: "2023-12-26"
 headline: "ČNB je rozbitá. Nezvládla inflaci a bojí se správně investovat"
 byline: "Tomáš Havránek"
-word_count: "2902"
+word_count: "2885"
 interviewer: "Jiří Nádoba"
 ---
 
@@ -22,15 +22,9 @@ Věříte České národní bance, že příští rok inflace opravdu odezní?
 
 Věřím, že inflace klesne někam k třem procentům. Přes všechna selhání, jichž se naše národní banka dopustila za poslední roky, tu není nikdo, kdo by uměl inflaci předpovídat lépe. Tedy v krátkém období, na čtvrt až půl roku dopředu. V ČNB se tomu věnují desítky expertů a nebudu si hrát na to, že vím víc než oni. Inflace kolem tří procent ale není úspěch. Je to pořád strašně slabý výsledek.
 
-Povinný audit pro některé firmy končí. Proč by se ho ale neměly vzdávat?
-
 Proč slabý? Inflace začínající dvojkou tu nebyla od léta 2021. A jde o hodnotu v souladu s cílem ČNB.
 
 Podívejte, ČNB vždycky bude slibovat inflaci kolem dvou procent. Ve své prognóze bude vždycky mít, že inflace bude dvě procenta – když počkáme dost dlouho. Jinak by ČNB musela říct, že svůj cíl nedokáže doručit. V odhadování inflace na rok a více dopředu má ale ČNB historicky stejně mizernou výkonnost jako všichni ostatní. Proto dvouprocentní inflace na konci prognózy nic neznamená.
-
-Následuje obsah vložený z jiného webu. Zde jej můžete přeskočit.
-
-Přejít před obsah vložený z jiného webu.
 
 Proč vám vrácení inflace mezi dvě až tři procenta nepřijde jako úspěch?
 

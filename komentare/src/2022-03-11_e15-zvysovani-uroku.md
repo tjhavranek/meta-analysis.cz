@@ -6,14 +6,12 @@ url: "https://www.e15.cz/nazory/tomas-havranek-zvysovani-uroku-uz-nema-smysl-cnb
 date: "2022-03-11"
 headline: "Zvyšování úroků už nemá smysl. ČNB musí víc posílit korunu"
 byline: "Tomáš Havránek"
-word_count: "546"
+word_count: "512"
 ---
 
 # Zvyšování úroků už nemá smysl. ČNB musí víc posílit korunu
 
-Předplatné e15.czNázory a analýzy Tomáš Havránek: Zvyšování úroků už nemá smysl. ČNB musí víc posílit korunu Ekonom Tomáš Havránek • Zdroj: E15 Dominik Kučera
-
-2 Fotogalerie Tomáš Havránek 11. března 2022 · 06:00 Diskuze (1)Zásah České národní banky na podporu koruny, který minulý týden ohlásila, byl nevyhnutelný. Jediný způsob, jak může ČNB letošní inflaci snížit, je nechat výrazně posílit měnu. Tím rychle zlevní energie a další dovážené zboží. Naopak další zvyšování sazeb nemá valný smysl, a to ze dvou důvodů.
+Zásah České národní banky na podporu koruny, který minulý týden ohlásila, byl nevyhnutelný. Jediný způsob, jak může ČNB letošní inflaci snížit, je nechat výrazně posílit měnu. Tím rychle zlevní energie a další dovážené zboží. Naopak další zvyšování sazeb nemá valný smysl, a to ze dvou důvodů.
 
 Zaprvé takové opatření se v cenách plně projeví až po dvou letech. S letošní pádivou inflací neudělá nic. Zadruhé inflace brzy dosáhne až 15 procent a úrokové sazby po jejím odečtení budou rekordně záporné. Pokud reálné sazby očištěné o inflaci stoupnou z minus 10 procent na minus 8 procent, spořit začne málokdo.
 

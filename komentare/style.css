@@ -203,3 +203,5 @@ main { padding: 2.75rem 0 4rem; }
 .src-list li { padding: 0.3rem 0; border-bottom: 1px solid var(--rule); font-size: 0.9rem; }
 .src-list a { font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace; font-size: 0.85rem; }
 .src-meta { color: var(--faint); }
+.search-note { margin-top: 0.35rem; }
+.search-note a { color: var(--muted); }

@@ -328,7 +328,7 @@ def shell(title, desc, canonical, jsonld, body, active, extra_head="", lang="cs"
 
 FILTER = """    <div class="filter">
       <div class="filter-row js-only">
-        <input type="search" id="q" placeholder="Hledat v titulcích a textu…" aria-label="Hledat" />
+        <input type="search" id="q" placeholder="Hledat v titulcích, médiích a autorech…" aria-label="Hledat" />
         <button class="chip" data-cat="all" aria-pressed="true">Vše</button>
         <button class="chip" data-cat="celostatni" aria-pressed="false">Celostátní</button>
         <button class="chip" data-cat="litomysl" aria-pressed="false">Litomyšl</button>
@@ -336,6 +336,10 @@ FILTER = """    <div class="filter">
         <button class="chip" data-cat="english" aria-pressed="false">English</button>
       </div>
       <p class="count js-only" id="count"></p>
+      <p class="count js-only search-note">Hledá se v titulcích, názvech médií a jménech autorů.
+        Fulltext ve všech textech nabízí
+        <a href="https://www.google.com/search?q=site%3Ameta-analysis.cz%2Fkomentare+">Google</a>
+        nebo <a href="/komentare/index.json">index.json</a>.</p>
     </div>
 """
 

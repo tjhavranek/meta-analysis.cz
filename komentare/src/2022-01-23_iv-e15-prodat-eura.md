@@ -6,15 +6,13 @@ url: "https://www.e15.cz/rozhovory/cnb-by-mela-prodat-miliardy-eur-a-vice-invest
 date: "2022-01-23"
 headline: "ČNB by měla prodat miliardy eur a více investovat do akcií"
 byline: "Tomáš Havránek"
-word_count: "1728"
+word_count: "1691"
 interviewer: "Jan Novotný"
 ---
 
 # ČNB by měla prodat miliardy eur a více investovat do akcií
 
-Předplatné e15.czRozhovory ČNB by měla prodat miliardy eur a více investovat do akcií, říká nejcitovanější český ekonom Tomáš Havránek Ekonom Tomáš Havránek • Zdroj: E15 Dominik Kučera
-
-9 Fotogalerie Jan Novotný 23. ledna 2022 · 10:00 Diskuze (1)Česká národní banka je v krocení inflace málo odvážná. S růstem úrokových sazeb by měla postupně vyprodávat eura nakoupená během devizových intervencí a mnohem aktivněji investovat rezervy do akcií podobně jako švýcarská centrální banka. Tvrdí to nejcitovanější český ekonom současnosti Tomáš Havránek. „Pokud by ČNB investovala jako Švýcaři, jen za dva roky by vydělala 300 miliard korun navíc,” říká profesor Institutu ekonomických studií FSV UK. Vzhledem k tomu, že zisk ČNB je ze zákona součástí státního rozpočtu, stát by mohl díky tomu snižovat svůj dluh.
+Česká národní banka je v krocení inflace málo odvážná. S růstem úrokových sazeb by měla postupně vyprodávat eura nakoupená během devizových intervencí a mnohem aktivněji investovat rezervy do akcií podobně jako švýcarská centrální banka. Tvrdí to nejcitovanější český ekonom současnosti Tomáš Havránek. „Pokud by ČNB investovala jako Švýcaři, jen za dva roky by vydělala 300 miliard korun navíc,” říká profesor Institutu ekonomických studií FSV UK. Vzhledem k tomu, že zisk ČNB je ze zákona součástí státního rozpočtu, stát by mohl díky tomu snižovat svůj dluh.
 
 To je dobrá otázka. Já Vám dám taky jednu: Pokud by inflace byla převážně dovezená, proč ji mají Švýcaři pořád kolem jednoho procenta, zatímco my šplháme k deseti?
 

@@ -6,14 +6,12 @@ url: "https://www.e15.cz/nazory-a-analyzy/tomas-havranek-vyssi-sazby-opravdu-moh
 date: "2023-01-11"
 headline: "Vyšší sazby opravdu mohou zvýšit inflaci"
 byline: "Tomáš Havránek"
-word_count: "496"
+word_count: "475"
 ---
 
 # Vyšší sazby opravdu mohou zvýšit inflaci
 
-Předplatné e15.czNázory a analýzy Tomáš Havránek: Vyšší sazby opravdu mohou zvýšit inflaci Česká národní banka • Zdroj: E15 Dominik Kučera
-
-Diskuze (0)Studenty ekonomie od prvního ročníku učíme, že vyšší úrokové sazby tlumí inflaci. Proto je matoucí, když možnost opaku zdůrazňuje nejen prezident, ale i vedení České národní banky a experti kalibru profesora Jana Švejnara. Je to absurdní popření základního principu, jako když jablko padá ze stromu vzhůru?
+Studenty ekonomie od prvního ročníku učíme, že vyšší úrokové sazby tlumí inflaci. Proto je matoucí, když možnost opaku zdůrazňuje nejen prezident, ale i vedení České národní banky a experti kalibru profesora Jana Švejnara. Je to absurdní popření základního principu, jako když jablko padá ze stromu vzhůru?
 
 Čtenáře to překvapí, ale vyšší inflace po zvýšení úroků je robustní výsledek měnové ekonomie v posledních třiceti letech. Předpokládáme-li, že se lidé chovají racionálně, bude měnová politika vždy nakonec neutrální. To znamená, že dlouhodobě neovlivní reálné veličiny včetně reálných sazeb. Princip jde načrtnout Fisherovou rovnicí: nominální úroková sazba rovná se reálná úroková sazba plus očekáváná inflace. Národní banka kontroluje nominální sazbu, ale dlouhodobě ne reálnou. Když drží nominální sazbu vysoko, nakonec se musí zvýšit očekávaná inflace, a tedy i inflace skutečná.
 

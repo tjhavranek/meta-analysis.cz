@@ -6,7 +6,7 @@ url: "https://www.maer-net.org/post/ai-tools-for-meta-analysis"
 date: "2025-07-30"
 headline: "AI Tools for Meta-Analysis"
 byline: "Tomáš Havránek"
-word_count: "1021"
+word_count: "967"
 ---
 
 # AI Tools for Meta-Analysis
@@ -40,7 +40,3 @@ Let me know if you’ve found better ways to do this. I’m especially curious a
 Update (July 31, 2025): Several MAER-Net colleagues wrote to me about a promising new platform called otto-SR. It offers an end-to-end AI pipeline for systematic reviews, using tools like GPT-4.1 and o3 for screening and data extraction: essentially a polished, integrated version of the workflow I described above. It’s currently in preview only and not publicly available. While the early results sound more than impressive, otto-SR has been designed and benchmarked mainly for Cochrane-style reviews, which differ quite a bit from meta-analyses in economics. Still, it’s worth watching closely.
 
 Update (August 19, 2025): ChatGPT now runs on GPT‑5. In the UI you pick Auto, Fast, or Thinking; I use GPT‑5 Thinking for screening and PDF extraction because it reasons longer and stays more consistent. Agent mode also feels steadier, but careful human checks are still essential. (If you work via API, OpenAI still documents separate “reasoning” models like o3, but that label isn’t shown in the ChatGPT menu.)
-
-The Impact of the Journal of Economics Surveys has Notably Increased! Thanks to the support of MAER-Net members and their outstanding research, the Journal of Economics Surveys’ impact factor is now
-
-Introduction to the MAER-Net Blog Content overview How to create a new account for the MAER-Net Blog. Access your profile . Subscribe to...
