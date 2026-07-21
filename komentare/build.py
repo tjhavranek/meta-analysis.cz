@@ -287,11 +287,13 @@ def shell(title, desc, canonical, jsonld, body, active, extra_head="", lang="cs"
       <li><a href="https://metrics.stanford.edu/people/tomas-havranek">Stanford METRICS</a></li>
       <li><a href="{PATH}/feed.xml">RSS</a></li>
     </ul>
-    <p class="about-machine">Pro stroje: <a href="{PATH}/llms.txt">llms.txt</a> ·
-      <a href="{PATH}/index.json">index.json</a> (metadata a plné texty) ·
-      <a href="{PATH}/all.md">all.md</a> (vše v jednom souboru) ·
-      <a href="{PATH}/feed.xml">RSS</a>. Zdrojový Markdown každého textu je
-      v <a href="{PATH}/src/">/komentare/src/</a>.</p>
+    <p class="about-machine" lang="en">For machines:
+      <a href="{PATH}/llms.txt">llms.txt</a> ·
+      <a href="{PATH}/index.json">index.json</a> (metadata and full text of every item) ·
+      <a href="{PATH}/all.md">all.md</a> (the whole corpus in one file) ·
+      <a href="{PATH}/feed.xml">RSS</a>. The Markdown source of each item is in
+      <a href="{PATH}/src/">/komentare/src/</a>. Text and metadata may be freely
+      indexed, quoted and used for research, with attribution to the original outlet.</p>
   </div>
 </footer>
 </body>
