@@ -2,7 +2,7 @@
 
 > Publicistika Tomáše Havránka: komentáře pro celostátní média, sloupky pro litomyšlskou Lilii a rozhovory. Texty jsou zde archivovány v plném znění s odkazem na původní vydání.
 
-Publicistika: 149 položek, 2016–2026. Plné znění každého textu je na uvedené adrese; zdrojový Markdown je v /komentare/src/.
+Publicistika: 150 položek, 2016–2026. Plné znění každého textu je na uvedené adrese; zdrojový Markdown je v /komentare/src/.
 
 ## Celostátní komentáře
 
@@ -149,6 +149,7 @@ Rozhovory pro česká média. U audio a video rozhovorů uvádíme pouze odkaz n
 - [Za vysokou inflaci může špatná politika centrální banky](https://plus.rozhlas.cz/za-vysokou-inflaci-muze-spatna-politika-centralni-banky-mini-ekonom-havranek-8807137) — Český rozhlas Plus, 15. srpna 2022 (audio, pouze odkaz)
 - [Zrušme inflaci, říká exporadce guvernéra Michla](https://meta-analysis.cz/komentare/iv-sz-zrusme-inflaci/) — Seznam Zprávy, 10. srpna 2022
 - [Kontext: ČNB selhává a šlape na plyn. Ať rozprodá devizové rezervy](https://www.idnes.cz/ekonomika/domaci/podcast-kontext-tomas-havranek-inflace-ceska-narodni-banka-ales-michl.A220610_141645_ekonomika_imzv) — iDNES.cz, 11. června 2022 (audio, pouze odkaz)
+- [Zemětřesení v ČNB bude bezprecedentní](https://video.aktualne.cz/dvtv/zive-zemetreseni-v-cnb-bude-bezprecedentni-byvaly-michluv-po/r~ed187658d21a11eca0d8ac1f6b220ee8/) — DVTV, 12. května 2022 (video, pouze odkaz)
 - [90' ČT24: O krocích centrální banky a vysoké inflaci](https://ct24.ceskatelevize.cz/clanek/ekonomika/zadny-strop-pro-zvedani-urokove-sazby-nemame-tvrdi-viceguverner-cnb-22082) — Česká televize, 1. dubna 2022 (video, pouze odkaz)
 - [Extrémní opatrnost ČNB](https://www.e15.cz/podcasty/e15-cast/extremni-opatrnost-cnb-1387936) — E15, 1. února 2022 (audio, pouze odkaz)
 - [ČNB by měla prodat miliardy eur a více investovat do akcií](https://meta-analysis.cz/komentare/iv-e15-prodat-eura/) — E15, 23. ledna 2022

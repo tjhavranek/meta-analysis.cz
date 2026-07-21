@@ -2,7 +2,7 @@
 
 Publicistika Tomáše Havránka: komentáře pro celostátní média, sloupky pro litomyšlskou Lilii a rozhovory. Texty jsou zde archivovány v plném znění s odkazem na původní vydání.
 
-149 položek. Audio a video jsou uvedeny pouze odkazem.
+150 položek. Audio a video jsou uvedeny pouze odkazem.
 
 ---
 

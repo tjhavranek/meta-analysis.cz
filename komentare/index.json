@@ -8,7 +8,7 @@
   "affiliation": "Institut ekonomických studií, FSV Univerzita Karlova"
  },
  "license": "Texty jsou majetkem autora a původních vydavatelů; archiv slouží ke čtení a citaci s uvedením původního zdroje.",
- "count": 149,
+ "count": 150,
  "generated_from": "komentare/src/*.md",
  "items": [
   {
@@ -1786,6 +1786,22 @@
    "source_markdown": "https://meta-analysis.cz/komentare/src/2022-06-01_litomysl-kruhovy-objezd.md",
    "word_count": 418,
    "text": "Městu se povedlo prosadit dva nové kruháky na hlavní silnici. Jeden u výjezdu z průmyslové zóny (směr Svitavy), druhý u Terozu (směr Mýto). Lidi už si stěžují, kruháky oblíbené nejsou. Jasné je, že výstavba způsobí otravné omezení na hlavní. A kruháky zpomalují provoz a přispívají k tvorbě kolon.\n\nKolony ale budou tak jako tak, protože provoz v Litomyšli před zprovozněním dálnice trhne rekordy. Teď jsou hlavními špunty světelná křižovatka a kruhák u Daliboru. Výsledkem bude přes den úplně ucpaná celá hlavní silnice ve městě.\n\nKdyž se postaví nové kruháky na obou koncích města, bude se doprava štosovat za nimi (z pohledu z Litomyšle). Kolony tedy budou delší než nyní, ale uvnitř Litomyšle bude snazší po hlavní silnici projet. Výsledek je špatný pro tranzit, ale je to lepší ze dvou blbých řešení pro nás, co v Litomyšli bydlíme a potřebujeme po hlavní někdy projet a dostat se jinam ve městě.\n\nNavíc i po dostavění dálnice se občas stane, že náš dálniční úsek se zavře kvůli nehodě, takže všechen provoz pojede přes město. Tady zase kruháky pomohou, aby uvnitř města nenastal dopravní kolaps. Je to tedy rozumné řešení, které se podařilo vyjednat i přes předchozí odpor ŘSD. Pomohl ale pan ředitel Mátl, no a žádné kruháky by nebyly bez aktivity pana starosty.\n\nŠkoda, že se zatím nepovedlo vymyslet „odšpuntování“ obou konců náměstí. Už teď se ve špičce stává, že na výjezdu z náměstí směrem na světelnou stojí kolona až za morový sloup. K tomu je podobně ucpaná silnice na Třebovou od školy Zámecká až ke světelné.\n\nTo je malá ochutnávka kalamity, která nastane, až třebovská silnice bude sloužit jako přivaděč k nové dálnici. Pro připomenutí: ano, oficiální dálniční přivaděč ze Třebové povede kolem zámku a školy na světelnou, poté dále po hlavní (Moravská nebo Kpt. Jaroše + Sokolovská, podle směru jízdy).\n\nDalší oficiální dálniční přivaděč se staví ve směru z Ústí a povede po Zahájské. Oba prochází vedle konců náměstí, a až po zprovoznění dálnice na přivaděčích provoz zesílí, nebude skoro možné ve špičce na náměstí vjet. Takhle jsme to v Litomyšli chtěli a odmítli jsme západní obchvat, který by z obou silnic odvedl většinu nové, ale i současné dopravy. Pořád nevím proč, třeba to víte Vy.\n\nProblém rychlé řešení nemá. Aspoň úplný zákaz kamionů na Zámecké kromě obsluhy? Věc k zamyšlení před komunálními volbami, neb nám chybí dlouhodobá dopravní strategie. Buďme však rádi za nové kruhové objezdy a konečně i rychlou přípravu dálnice díky starostovi a novému řediteli ŘSD. Bez těch dvou by dálnice nebyla ani za 10 let."
+  },
+  {
+   "id": "dvtv-zemetreseni-v-cnb",
+   "title": "Zemětřesení v ČNB bude bezprecedentní",
+   "date": "2022-05-12",
+   "date_precision": "day",
+   "section": "Rozhovory",
+   "category": "rozhovory",
+   "language": "cs",
+   "outlet": "DVTV",
+   "authors": [
+    "Tomáš Havránek"
+   ],
+   "media": "video",
+   "original_url": "https://video.aktualne.cz/dvtv/zive-zemetreseni-v-cnb-bude-bezprecedentni-byvaly-michluv-po/r~ed187658d21a11eca0d8ac1f6b220ee8/",
+   "interviewer": "Martin Veselovský"
   },
   {
    "id": "cnb-pres-dotacni-eura-skryte-oslabuje",
