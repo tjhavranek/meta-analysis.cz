@@ -114,6 +114,10 @@ OUTLET_IN = {
 
 MEDIA_LABEL = {"video": "video", "audio": "audio"}
 
+# headlines carried by more than one item; filled in main(). Such items always show
+# their byline so that two rows never render as the same link text.
+DUP_HEADLINES = set()
+
 
 # ----------------------------------------------------------------- helpers ---
 
@@ -265,8 +269,13 @@ def parse(path):
 # --------------------------------------------------------------- templates ---
 
 def shell(title, desc, canonical, jsonld, body, active, extra_head="", lang="cs"):
+    # The chrome is Czech on every page, including the English ones. WCAG 3.1.2 wants
+    # those runs marked, or a screen reader reads them with English phonetics.
+    cs = ' lang="cs"' if lang == "en" else ""
     nav = "".join(
-        f'<a href="{PATH}/{k}/"{" aria-current=\"page\"" if active == k else ""}>{esc(v["short"])}</a>'
+        f'<a href="{PATH}/{k}/"'
+        f'{"" if k == "english" else cs}'
+        f'{" aria-current=\"page\"" if active == k else ""}>{esc(v["short"])}</a>'
         for k, v in SECTIONS.items())
     rss_title = "Komentáře — Tomáš Havránek"
     ies = ("https://ies.fsv.cuni.cz/en/contacts/institute-members/78067720" if lang == "en"
@@ -314,7 +323,7 @@ def shell(title, desc, canonical, jsonld, body, active, extra_head="", lang="cs"
 <header class="masthead">
   <div class="wrap">
     <p class="site-name"><a href="{PATH}/">Komentáře<small>Tomáš Havránek</small></a></p>
-    <nav class="nav">{nav}<a href="{PATH}/">Vše</a></nav>
+    <nav class="nav">{nav}<a href="{PATH}/"{cs}>Vše</a></nav>
   </div>
 </header>
 <main>
@@ -326,7 +335,7 @@ def shell(title, desc, canonical, jsonld, body, active, extra_head="", lang="cs"
   <div class="wrap about">
     <p class="about-bio">{bio}</p>
     <ul class="about-links">
-      <li><a href="https://www.tomashavranek.cz/">Osobní stránka</a></li>
+      <li><a href="https://www.tomashavranek.cz/"{cs}>Osobní stránka</a></li>
       <li><a href="{SITE}/">meta-analysis.cz</a></li>
       <li><a href="{ies}">IES FSV UK</a></li>
       <li><a href="https://zrusme-inflaci.cz/">Zrušme inflaci</a></li>
@@ -362,7 +371,7 @@ FILTER = """    <div class="filter">
         <button class="chip" data-cat="rozhovory" aria-pressed="false">Rozhovory</button>
         <button class="chip" data-cat="english" aria-pressed="false">English</button>
       </div>
-      <p class="count js-only" id="count"></p>
+      <p class="count js-only" id="count" role="status" aria-live="polite"></p>
       <p class="count js-only search-note">Hledá se v titulcích, názvech médií a jménech autorů.
         Fulltext ve všech textech nabízí
         <a href="https://www.google.com/search?q=site%3Ameta-analysis.cz%2Fkomentare+">Google</a>
@@ -418,7 +427,10 @@ def item_row(a, show_cat):
     bits = [f'<span>{esc(cs_date(a["date"], a.get("date_precision"), lang))}</span>',
             f'<span class="outlet">{esc(a["outlet"])}</span>']
     names_row = people(a.get("byline"))
-    if len(names_row) > 1 or names_row[0] != AUTHOR:
+    # The byline is normally suppressed when it is just the site's own author. Keep it
+    # when two items share a headline, otherwise a screen reader's link list shows two
+    # identical entries pointing at different pages.
+    if len(names_row) > 1 or names_row[0] != AUTHOR or a["headline"] in DUP_HEADLINES:
         bits.append(f'<span class="authors">{esc(", ".join(names_row))}</span>')
     if a.get("issue"):
         bits.append(f'<span>č.&nbsp;{esc(a["issue"])}</span>')
@@ -827,6 +839,9 @@ def main():
     dup = {s for s in slugs if slugs.count(s) > 1}
     if dup:
         sys.exit(f"error: duplicate slugs: {', '.join(sorted(dup))}")
+
+    heads = [a["headline"] for a in items]
+    DUP_HEADLINES.update(h for h in heads if heads.count(h) > 1)
 
     items.sort(key=lambda a: (a["date"], a["headline"]), reverse=True)
 

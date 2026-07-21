@@ -19,6 +19,6 @@ We built it with meta-analysis in mind, but it works on any paper, proposal, or 
 
 The manual protocol (including a four-model version with Gemini and Grok in addition to Claude and GPT) is still here if you prefer copy-paste:
 
-https://github.com/tjhavranek/research-audit-duel-protocol
+[github.com/tjhavranek/research-audit-duel-protocol](https://github.com/tjhavranek/research-audit-duel-protocol)
 
 Try it on something you are working on and tell us how we could improve it!
