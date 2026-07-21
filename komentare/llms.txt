@@ -2,7 +2,7 @@
 
 > Publicistika Tomáše Havránka: komentáře pro celostátní média, sloupky pro litomyšlskou Lilii a rozhovory. Texty jsou zde archivovány v plném znění s odkazem na původní vydání.
 
-Publicistika: 150 položek, 2016–2026. Plné znění každého textu je na uvedené adrese; zdrojový Markdown je v /komentare/src/.
+Publicistika: 151 položek, 2016–2026. Plné znění každého textu je na uvedené adrese; zdrojový Markdown je v /komentare/src/.
 
 ## Celostátní komentáře
 
@@ -171,6 +171,7 @@ Columns and commentary written in English — policy pieces for VoxEU/CEPR and p
 - [New Challenges for Meta-Analysis: Attenuation Bias, P-Hacking, Preferred Estimates](https://meta-analysis.cz/komentare/maer-new-challenges/) — MAER-Net, 7. července 2025
 - [How financial incentives affect performance](https://meta-analysis.cz/komentare/voxeu-incentives/) — VoxEU / CEPR, 13. února 2023
 - [Armington elasticity and international trade models: Fifty years on](https://meta-analysis.cz/komentare/voxeu-armington/) — VoxEU / CEPR, 23. září 2020
+- [Natural resources and economic growth: the research evidence](https://meta-analysis.cz/komentare/globaldev-natural-resources/) — GlobalDev Blog, 13. února 2018
 - [Daylight saving saves no energy](https://meta-analysis.cz/komentare/voxeu-daylight-saving/) — VoxEU / CEPR, 2. prosince 2017
 - [Headline inflation measures shouldn't ignore costs of home ownership](https://meta-analysis.cz/komentare/voxeu-home-ownership/) — VoxEU / CEPR, 12. září 2017
 
