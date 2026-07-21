@@ -13,9 +13,9 @@ word_count: "436"
 
 # Miroslav Brýdl na vrcholu sil
 
-K 85. narozeninám otce zakladatele moderní Litomyšle
+*K 85. narozeninám otce zakladatele moderní Litomyšle*
 
-Jako kluk jsem měl dva vzory: Neila Armstronga a Mirka Brýdla. Zatímco s panem Armstrongem jsem se žel setkat nezvládl, mám tu velkou čest si s otcem zakladatelem moderní Litomyšle nejen tykat, ale i zajít s ním občas na pivo do Veselky. 
+Jako kluk jsem měl dva vzory: Neila Armstronga a Mirka Brýdla. Zatímco s panem Armstrongem jsem se žel setkat nezvládl, mám tu velkou čest si s otcem zakladatelem moderní Litomyšle nejen tykat, ale i zajít s ním občas na pivo do Veselky.
 
 Proč si nejenom my vyrůstavší v devadesátých letech Mirka tolik vážíme? Protože díky němu jsme na Litomyšl tak strašně hrdí. Pyšní bychom asi byli tak jako tak: předkové řady z nás v Litomyšli žili od počátku záznamů a statisticky pravděpodobně mnozí patříme mezi potomky těch, kdo město před tisíciletím zakládali. Ale díky Mirkovi je Litomyšl výjimečná a ve své kráse mimořádně živá.
 

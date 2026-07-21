@@ -5,7 +5,7 @@ date: "2023-10-28"
 headline: "Jak ČNB udělala z triumfu debakl. 10 let od oslabení koruny"
 status: full
 byline: "Tomáš Havránek"
-word_count: 893
+word_count: "897"
 ---
 
 # Jak ČNB udělala z triumfu debakl. 10 let od oslabení koruny

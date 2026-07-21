@@ -5,7 +5,7 @@ date: "2021-04-23"
 headline: "ČNB konečně ukázala odvahu. Pomůže to českému rozpočtu?"
 status: full
 byline: "Tomáš Havránek"
-word_count: 579
+word_count: "579"
 ---
 
 # ČNB konečně ukázala odvahu. Pomůže to českému rozpočtu?
@@ -24,7 +24,7 @@ Dlouhodobě totiž není rozdíl mezi rozpočtem centrální banky a státu: prv
 
 Ztrátovost ČNB nebyla dána utrácením nebo mizernou správou rezerv, ale posilováním koruny. Tím pádem klesala korunová hodnota rezerv, které jsou převážně v eurech a dolarech. Trend posilování koruny se ale zastavil se začátkem intervencí ČNB a není jisté, zda se obnoví. Vedlejším účinkem intervencí tedy je, že ČNB vydělává. Navíc má teď rezerv gigantické množství a nemusí se bát uložit část do výdělečnějších, ale rizikovějších aktiv.
 
-Švýcarský příklad
+## Švýcarský příklad
 
 Devizové rezervy vynesly ČNB vloni 97,5 miliardy Kč, o rok dříve dokonce 115 miliard (bez kurzových rozdílů). To jsou velké částky, ale vzhledem k obřímu portfoliu se jedná o zisk jen 2,7 %, resp. 3,2 %. Chvála bohu za něj, ale poslední dva roky byly pro výnosy centrálních bank výjimečně dobré. Například švýcarská centrální banka vydělala vloni 6 %, předloni dokonce 8,1 %. Kdyby měla ČNB portfolio postavené jako Švýcaři, vydělala by za dva poslední roky o 300 miliard Kč víc. V čem se portfolio Švýcarů liší od ČNB? Právě ve vyšším podílu akcií (20 % oproti 13,5 %), vyšším podílu zlata, menším podílu eur a též větším důrazem na dlouhodobý výnos u dluhopisů. Asi těžko můžeme obvinit Švýcarskou národní banku z hazardování. Naopak, Švýcaři jsou konzervativní do té míry, že jednu dobu tam ani penzijní fondy nemohly držet akcie.
 

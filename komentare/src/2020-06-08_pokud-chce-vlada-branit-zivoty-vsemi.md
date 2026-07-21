@@ -5,7 +5,7 @@ date: "2020-06-08"
 headline: "Pokud chce vláda bránit životy všemi prostředky, měla by zavést povinné očkování proti chřipce"
 status: full
 byline: "Tomáš Havránek"
-word_count: 419
+word_count: "419"
 ---
 
 # Pokud chce vláda bránit životy všemi prostředky, měla by zavést povinné očkování proti chřipce

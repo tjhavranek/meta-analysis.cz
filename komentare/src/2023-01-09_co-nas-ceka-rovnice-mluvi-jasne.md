@@ -5,7 +5,7 @@ date: "2023-01-09"
 headline: "Co nás čeká? Rovnice mluví jasně, buď hyperinflace, nebo rozpočet s přebytkem"
 status: full
 byline: "Tomáš Havránek"
-word_count: 590
+word_count: "592"
 ---
 
 # Co nás čeká? Rovnice mluví jasně, buď hyperinflace, nebo rozpočet s přebytkem

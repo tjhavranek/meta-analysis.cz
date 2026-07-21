@@ -5,7 +5,7 @@ date: "2023-05-03"
 headline: "Inflační cíl ČNB potřebuje po 13 letech facelift"
 status: full
 byline: "Tomáš Havránek"
-word_count: 313
+word_count: "313"
 ---
 
 # Inflační cíl ČNB potřebuje po 13 letech facelift

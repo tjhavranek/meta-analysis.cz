@@ -5,7 +5,7 @@ date: "2026-04-09"
 headline: "Japonský vládní dluh: katastrofa, nebo vlastně chytrý byznys?"
 status: full
 byline: "Tomáš Havránek"
-word_count: 486
+word_count: "487"
 ---
 
 # Japonský vládní dluh: katastrofa, nebo vlastně chytrý byznys?

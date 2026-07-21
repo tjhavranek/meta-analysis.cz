@@ -5,7 +5,7 @@ date: "2023-03-03"
 headline: "Kdo nakonec zaplatí státní dluh? Čeští střadatelé"
 status: full
 byline: "Tomáš Havránek"
-word_count: 424
+word_count: "424"
 ---
 
 # Kdo nakonec zaplatí státní dluh? Čeští střadatelé

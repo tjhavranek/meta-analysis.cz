@@ -7,7 +7,7 @@ date: "2026-06-18"
 headline: "„Za inflaci může prezident.“ Vlivný profesor popsal, odkud Babiš získá 200 miliard"
 byline: "Tomáš Havránek"
 interviewer: "Spotlight Aktuálně.cz"
-word_count: "1180"
+word_count: "1078"
 body_note: "Textová verze rozhovoru pro pořad Spotlight Aktuálně.cz. Video a podcast jsou dostupné na stránce původního vydání."
 ---
 

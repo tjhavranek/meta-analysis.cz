@@ -5,7 +5,7 @@ date: "2025-10-09"
 headline: "Babiš si vezme stamiliardy z ČNB. Zůstane národní banka nezávislá?"
 status: full
 byline: "Tomáš Havránek"
-word_count: 939
+word_count: "941"
 ---
 
 # Babiš si vezme stamiliardy z ČNB. Zůstane národní banka nezávislá?

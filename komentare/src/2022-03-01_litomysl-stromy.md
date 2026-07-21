@@ -25,11 +25,11 @@ Jsem tedy rád, že žije naděje na kompromis. Místo zalesnění celého prste
 
 Rozumím, že některým zemědělcům se nelíbí ani tohle a chodí starostu zpracovávat. Nicméně stromy jsou u Litomyšle vzácné a mají pro nás všechny velké výhody. Jen prostě tolik nevydělávají, nejsou na ně velké dotace a mají slabší lobby. Možná se mýlím. Ať to vidíte jakkoli, nebojte se napsat podnět na komisi pro životní prostředí, stačí na email městského úřadu.
 
-Zelený pás kolem Litomyšle
+## Zelený pás kolem Litomyšle
 
 Co mi v Litomyšli chybí, jsou lesy. Před 117 lety naši zastupitelé založili les Černá hora, ale od té doby spíš nahrazujeme pokácené stromy. Navrhuji vysázet tolik nových stromů, kolik za 300 000 korun zvládneme pořídit (včetně souvisejících nákladů) na pozemcích v majetku města kolem Litomyšle. Podobné příměstské lesoparky jsou běžné třeba v Německu. Pokud návrh projde, přidám na stromy dalších 15 000 korun ze svého a udělám maximum, abychom dostali dotaci od Nadace ČEZ ve výši dalších stovek tisíc. Budu je otravovat osobně, budu je otravovat telefony, budu je otravovat peticemi.
 
-S návrhem na zelený pás jsem šel za vedením města, kde jsem se setkal s obecným pochopením. Koneckonců město chystá nové parky u ulice Zdeňka Kopala a Na Prokopu. Nicméně bylo mi řečeno, že není jasný zájem lidí o další stromy. Ať prý podám návrh do participativního rozpočtu, abychom zjistili, jestli víc zeleně chtějí i ostatní. Někteří naši spoluobčané cíleně poškozují nově vysazené stromy, těm se zelený pás líbit nebude a budou hlasovat proti. Co na něj říkáte vy? 
+S návrhem na zelený pás jsem šel za vedením města, kde jsem se setkal s obecným pochopením. Koneckonců město chystá nové parky u ulice Zdeňka Kopala a Na Prokopu. Nicméně bylo mi řečeno, že není jasný zájem lidí o další stromy. Ať prý podám návrh do participativního rozpočtu, abychom zjistili, jestli víc zeleně chtějí i ostatní. Někteří naši spoluobčané cíleně poškozují nově vysazené stromy, těm se zelený pás líbit nebude a budou hlasovat proti. Co na něj říkáte vy?
 
 Věc nepoložím, i když nebudeme mezi prvními dvěma projekty. V případě nutnosti uspořádáme referendum při příležitosti prezidentských voleb, ale zájem tady by pomohl věc urychlit. Stromy mají tyhle výhody:
 
@@ -44,7 +44,7 @@ Výsadba nových stromů účinně zmírňuje klimatickou změnu tím, že strom
 
 To poslední pro mě osobně sice hlavní důvod není, ale smysl v tom také vidím. My si teď na zelenou spíš hrajeme, nezačínáme s řešením, které je levné, přímočaré, pochopitelné a má kromě ochrany klimatu hromadu dalších výhod (jenom na něm nikdo moc nevydělá). Místo toho dotujeme průšvihy jako biopaliva, které nás už stály stamiliardy a ničí nám krajinu řepnými pouštěmi. Mimochodem podobně jako u nás řepka funguje v rozvojových zemích palma olejná, oboje způsobují odlesňování a brání zalesňování.
 
-Aby bylo jasno, nechceme nijak poškozovat zemědělce, kteří nás živí a k jejichž práci mám velký respekt. Nenavrhuji žádný záběr půdy nad rámec toho, co už zastupitelé odhlasovali v územním plánu – tedy městské pozemky vyčleněné na rekreační zeleň. Tam v souladu s územním plánem musí být nakonec buď louka, nebo park, nikoli řepka na biopaliva nebo kukuřice na bioplyn. 
+Aby bylo jasno, nechceme nijak poškozovat zemědělce, kteří nás živí a k jejichž práci mám velký respekt. Nenavrhuji žádný záběr půdy nad rámec toho, co už zastupitelé odhlasovali v územním plánu – tedy městské pozemky vyčleněné na rekreační zeleň. Tam v souladu s územním plánem musí být nakonec buď louka, nebo park, nikoli řepka na biopaliva nebo kukuřice na bioplyn.
 
 Jde tudíž o urychlení záměru města, k jehož realizaci zatím nedošlo z důvodu nedostatku vyčleněných prostředků a nejasného zájmu veřejnosti. Poznámka na okraj: kvůli současné legislativě přímo lesy lesovaté u Litomyšle zakládat nejde (divné, co?), ale jde vytvořit parky s roztroušenými stromy, kde se můžeme cítit skoro jako v lese.
 

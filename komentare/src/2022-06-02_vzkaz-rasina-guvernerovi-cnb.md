@@ -5,7 +5,7 @@ date: "2022-06-02"
 headline: "Vzkaz Aloise Rašína guvernérovi ČNB: Dokud nesnížíš inflaci, sniž si plat"
 status: full
 byline: "Tomáš Havránek"
-word_count: 382
+word_count: "382"
 ---
 
 # Vzkaz Aloise Rašína guvernérovi ČNB: Dokud nesnížíš inflaci, sniž si plat

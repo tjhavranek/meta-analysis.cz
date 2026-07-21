@@ -5,7 +5,7 @@ date: "2022-04-13"
 headline: "ČNB přes dotační eura skrytě oslabuje korunu, navzdory pádivé inflaci"
 status: full
 byline: "Tomáš Havránek"
-word_count: 601
+word_count: "603"
 ---
 
 # ČNB přes dotační eura skrytě oslabuje korunu, navzdory pádivé inflaci

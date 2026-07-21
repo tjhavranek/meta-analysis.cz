@@ -5,7 +5,7 @@ date: "2022-03-29"
 headline: "ČNB zkrotí inflaci jedině posílením koruny"
 status: full
 byline: "Tomáš Havránek"
-word_count: 679
+word_count: "681"
 ---
 
 # ČNB zkrotí inflaci jedině posílením koruny

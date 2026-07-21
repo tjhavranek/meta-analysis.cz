@@ -5,7 +5,7 @@ date: "2022-12-14"
 headline: "O inflaci nakonec rozhoduje prezident. Favoritům ale chybí plán"
 status: full
 byline: "Tomáš Havránek"
-word_count: 493
+word_count: "495"
 ---
 
 # O inflaci nakonec rozhoduje prezident. Favoritům ale chybí plán

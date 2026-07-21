@@ -6,7 +6,7 @@ url: "https://www.seznamzpravy.cz/clanek/ekonomika-finance-cnb-je-rozbita-nezvla
 date: "2023-12-26"
 headline: "ČNB je rozbitá. Nezvládla inflaci a bojí se správně investovat"
 byline: "Tomáš Havránek"
-word_count: "2912"
+word_count: "2902"
 interviewer: "Jiří Nádoba"
 ---
 

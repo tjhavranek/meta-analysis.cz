@@ -5,7 +5,7 @@ date: "2023-07-27"
 headline: "Zrušení EET přetřelo ekonomiku z bílé do šeda a pokazilo Česku čísla"
 status: full
 byline: "Tomáš Havránek"
-word_count: 523
+word_count: "525"
 ---
 
 # Zrušení EET přetřelo ekonomiku z bílé do šeda a pokazilo Česku čísla

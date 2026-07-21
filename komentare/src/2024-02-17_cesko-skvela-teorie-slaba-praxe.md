@@ -5,7 +5,7 @@ date: "2024-02-17"
 headline: "Česko má skvělou ekonomickou teorii, ale bohužel slabou praxi"
 status: full
 byline: "Tomáš Havránek"
-word_count: 491
+word_count: "494"
 ---
 
 # Česko má skvělou ekonomickou teorii, ale bohužel slabou praxi

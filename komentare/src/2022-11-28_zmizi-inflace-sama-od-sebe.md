@@ -5,7 +5,7 @@ date: "2022-11-28"
 headline: "Zmizí inflace sama od sebe? Těžko, pokud se ČNB neodhodlá k činu"
 status: full
 byline: "Tomáš Havránek"
-word_count: 461
+word_count: "461"
 ---
 
 # Zmizí inflace sama od sebe? Těžko, pokud se ČNB neodhodlá k činu

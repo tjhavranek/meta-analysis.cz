@@ -13,7 +13,7 @@ word_count: "317"
 
 # Zařiďme si trvalý pobyt v Litomyšli, pomůžeme městu i sobě
 
-V důsledku pandemie a následné ekonomické krize přijde Litomyšl o desítky milionů. Rozhodující část příjmů města totiž tvoří podíl na výběru daní (hlavně daň z přidané hodnoty a daň z příjmů fyzických a právnických osob), které jsou v podstatě jedna ku jedné navázány na výkon českého hospodářství. 
+V důsledku pandemie a následné ekonomické krize přijde Litomyšl o desítky milionů. Rozhodující část příjmů města totiž tvoří podíl na výběru daní (hlavně daň z přidané hodnoty a daň z příjmů fyzických a právnických osob), které jsou v podstatě jedna ku jedné navázány na výkon českého hospodářství.
 
 Město si tedy může vybrat: dramaticky škrtat výdaje, a to i v investičních položkách, nebo si dočasně více půjčit. Ekonomové obvykle v krizi doporučují druhou možnost i za cenu zvýšení zadlužení, protože škrty by krizi dále prohlubovaly. Druhou cestou jdou nyní i Němci, kteří jsou jinak v půjčování si velmi opatrní. Navíc česká města mohou využít extrémně nízkých sazeb -- v podstatě žádné úroky z úvěrů teď neplatí. Není to ovšem jednoduché rozhodování.
 

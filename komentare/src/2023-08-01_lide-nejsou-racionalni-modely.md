@@ -5,7 +5,7 @@ date: "2023-08-01"
 headline: "Lidé nejsou racionální. Proč se přesto ekonomické modely bez racionality neobejdou?"
 status: full
 byline: "Tomáš Havránek"
-word_count: 306
+word_count: "306"
 ---
 
 # Lidé nejsou racionální. Proč se přesto ekonomické modely bez racionality neobejdou?

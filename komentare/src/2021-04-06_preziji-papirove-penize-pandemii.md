@@ -5,7 +5,7 @@ date: "2021-04-06"
 headline: "Přežijí papírové peníze pandemii?"
 status: full
 byline: "Tomáš Havránek"
-word_count: 544
+word_count: "547"
 ---
 
 # Přežijí papírové peníze pandemii?

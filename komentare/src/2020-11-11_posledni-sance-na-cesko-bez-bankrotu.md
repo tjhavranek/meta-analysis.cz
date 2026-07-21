@@ -5,7 +5,7 @@ date: "2020-11-11"
 headline: "Poslední šance na Česko bez bankrotu"
 status: full
 byline: "Tomáš Havránek"
-word_count: 575
+word_count: "578"
 ---
 
 # Poslední šance na Česko bez bankrotu

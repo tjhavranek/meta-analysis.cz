@@ -5,7 +5,7 @@ date: "2021-08-04"
 headline: "Výzkum centrální banky dělá Česku dobrou reklamu"
 status: full
 byline: "Tomáš Havránek"
-word_count: 573
+word_count: "573"
 ---
 
 # Výzkum centrální banky dělá Česku dobrou reklamu

@@ -5,7 +5,7 @@ date: "2022-02-07"
 headline: "Lockdowny přinesly obrovské náklady, ale malý užitek. Zkraťme tedy prázdniny na polovinu, ať to napravíme"
 status: full
 byline: "Tomáš Havránek"
-word_count: 440
+word_count: "440"
 ---
 
 # Lockdowny přinesly obrovské náklady, ale malý užitek. Zkraťme tedy prázdniny na polovinu, ať to napravíme

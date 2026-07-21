@@ -21,12 +21,12 @@ Navíc i po výstavbě dálnice bude doprava z Ústecka a Třebovska na Prahu je
 
 Ten zmíněný milion aut nejede jen po Zámecké a Zahájské k 1.ZŠ nebo Mountfieldu. Je to tranzit, tedy pokračuje dál po Kpt. Jaroše, Havlíčkově, Sokolovské. Bez obchvatu se toho nikdy nezbavíme, budeme mít ucpané oba konce náměstí a každou dekádu 10 milionů zbytečných průjezdů. Dýcháte zhluboka?
 
-Vedení dálničních přivaděčů centrem Litomyšle je urbanistická katastrofa, kterou město zažilo jen při normalizační stavbě průtahu, destrukci synagogy a okolí. Protože se blíží krajské volby, oslovil jsem kandidující strany ohledně obchvatu (samozřejmě nesmí dojít ke zpoždění D35; stavěl by se poté). 
+Vedení dálničních přivaděčů centrem Litomyšle je urbanistická katastrofa, kterou město zažilo jen při normalizační stavbě průtahu, destrukci synagogy a okolí. Protože se blíží krajské volby, oslovil jsem kandidující strany ohledně obchvatu (samozřejmě nesmí dojít ke zpoždění D35; stavěl by se poté).
 
 Krajští lídři dvou největších stran byli ochotni sejít se se mnou osobně a děkuji jim za vstřícnost, ač se v hlavní věci neshodneme. Oba dopravě rozumí a navrhují jiná řešení, ale ta buď nejsou realizovatelná do 20 let, nebo by odklonila jen část toho milionu.
 
 Výsledky? Západní obchvat Litomyšle, včetně obchvatu Němčic, podporují Piráti a ČSSD (koalice 3PK). ODS s TOP 09 a KDU-ČSL (Koalice pro Pardubický kraj) ho teď stavět nechtějí, mluví o územní rezervě. Odmítají ho ANO a SPD; postoj ostatních je nejasný.
 
-Jak se zbavit toho milionu aut bez obchvatu? Jsou 2 varianty. První je nová silnice přes Černou horu, druhou spojka Němčic a Kornic. Nevýhoda obou je, že by ten milion aut pořád jezdil přes Němčice, neměly by obchvat. Navíc v prvním případě by došlo ke znehodnocení lesoparku, ve druhém by ten milion jezdil i přes Kornice. Blbá řešení, ale asi lepší, než aby ten zbytečný milion aut ročně inhalovalo 10 000 lidí. 
+Jak se zbavit toho milionu aut bez obchvatu? Jsou 2 varianty. První je nová silnice přes Černou horu, druhou spojka Němčic a Kornic. Nevýhoda obou je, že by ten milion aut pořád jezdil přes Němčice, neměly by obchvat. Navíc v prvním případě by došlo ke znehodnocení lesoparku, ve druhém by ten milion jezdil i přes Kornice. Blbá řešení, ale asi lepší, než aby ten zbytečný milion aut ročně inhalovalo 10 000 lidí.
 
 Nebyl by obchvat výhodnější pro všechny? Těším se na programy stran pro obecní volby.

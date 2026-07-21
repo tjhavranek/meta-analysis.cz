@@ -5,7 +5,7 @@ date: "2023-06-28"
 headline: "Méně než 20 dětí ve třídě je drahý luxus. V malých třídách se víc nenaučí"
 status: full
 byline: "Tomáš Havránek"
-word_count: 615
+word_count: "615"
 ---
 
 # Méně než 20 dětí ve třídě je drahý luxus. V malých třídách se víc nenaučí

@@ -5,7 +5,7 @@ date: "2022-01-04"
 headline: "Jak zkrotit inflaci? Přišel čas odčinit intervence proti koruně"
 status: full
 byline: "Tomáš Havránek"
-word_count: 412
+word_count: "412"
 ---
 
 # Jak zkrotit inflaci? Přišel čas odčinit intervence proti koruně

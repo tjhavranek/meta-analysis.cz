@@ -5,7 +5,7 @@ date: "2022-11-03"
 headline: "Český dluh nikdy neklesal rychleji. Co tratí lidé kvůli inflaci, to vydělá stát"
 status: full
 byline: "Tomáš Havránek"
-word_count: 522
+word_count: "524"
 ---
 
 # Český dluh nikdy neklesal rychleji. Co tratí lidé kvůli inflaci, to vydělá stát

@@ -5,7 +5,7 @@ date: "2024-06-12"
 headline: "Odkud se bere ekonomický růst? Investice prosperitu nezajistí"
 status: full
 byline: "Tomáš Havránek"
-word_count: 618
+word_count: "619"
 ---
 
 # Odkud se bere ekonomický růst? Investice prosperitu nezajistí

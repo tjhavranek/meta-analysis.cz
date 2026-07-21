@@ -5,7 +5,7 @@ date: "2024-12-06"
 headline: "Naděje na cenovou stabilitu? Do ČNB se vrací nezávislý výzkum"
 status: full
 byline: "Tomáš Havránek"
-word_count: 693
+word_count: "695"
 ---
 
 # Naděje na cenovou stabilitu? Do ČNB se vrací nezávislý výzkum

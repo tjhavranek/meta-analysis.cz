@@ -4,14 +4,12 @@ media: "text"
 outlet: "MAER-Net"
 url: "https://www.maer-net.org/post/new-challenges-for-meta-analysis-attenuation-bias-p-hacking-preferred-estimates"
 date: "2025-07-07"
-headline: "New Challenges for Meta-Analysis"
+headline: "New Challenges for Meta-Analysis: Attenuation Bias, P-Hacking, Preferred Estimates"
 byline: "Tomáš Havránek"
-word_count: "473"
+word_count: "456"
 ---
 
-# New Challenges for Meta-Analysis
-
-SearchNew Challenges for Meta-Analysis: Attenuation Bias, P-Hacking, Preferred EstimatesTomas HavranekJul 7, 20252 min readUpdated: Jul 31, 2025
+# New Challenges for Meta-Analysis: Attenuation Bias, P-Hacking, Preferred Estimates
 
 My colleagues and I have recently published or revised three meta-analyses, each raising issues that may matter for how we do meta-analysis in economics. I’d be grateful for thoughts or feedback -- here, by e-mail, or in person at our colloquium in Ottawa.
 

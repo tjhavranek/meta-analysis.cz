@@ -15,15 +15,15 @@ word_count: "423"
 
 Podle projekce dopravních expertů bude brzy Litomyšlí projíždět 26 000 aut denně. Až se postaví dálnice, provoz klesne na 6 500. To bude znamenat o 75 % méně škodlivin: hlavně polétavého prachu (PM2.5 a PM10), přízemního ozónu a oxidů dusíku.
 
-Nemusíme být odborníky na atmosférický aerosol, abychom uhodli, že tohle zlepší zdraví spoustě lidí v Litomyšli. Některým doslova zachrání život. 
+Nemusíme být odborníky na atmosférický aerosol, abychom uhodli, že tohle zlepší zdraví spoustě lidí v Litomyšli. Některým doslova zachrání život.
 
-Probral jsem věc s panem doktorem Hovorkou, který na UK vede Laboratoř pro studium kvality ovzduší. Podle něj třeba pokles koncentrace PM2.5 o 10 mikrogramů na m3 sníží riziko předčasného úmrtí (infarkt, mrtvice, rakovina atd.) o 6 %. A to nebereme v úvahu pokles NOX a ozónu. 
+Probral jsem věc s panem doktorem Hovorkou, který na UK vede Laboratoř pro studium kvality ovzduší. Podle něj třeba pokles koncentrace PM2.5 o 10 mikrogramů na m3 sníží riziko předčasného úmrtí (infarkt, mrtvice, rakovina atd.) o 6 %. A to nebereme v úvahu pokles NOX a ozónu.
 
 Doktor Hovorka mě také odkázal na data Evropské agentury pro životní prostředí a Světové zdravotnické organizace, ze kterých lze tyto efekty spočítat pro Litomyšl.
 
 Zajímalo mě, jak ovlivní zdraví lidí, když se stavba dálnice (třeba kvůli soudním průtahům) zpozdí o 5 let. Vychází mi, že kvůli tomu člověk žijící poblíž stávající I35 přijde v průměru o měsíc života. To si musíme vynásobit počtem lidí, kteří žijí v pásmu maximálního znečištění I35, což je tisíc. A dostaneme 83 ztracených let, víc než naděje na dožití pro novorozence (79).
 
-Jde to vyjádřit i jinak. Riziko předčasného úmrtí se bez dálnice nesníží, takže kvůli tomu téměř jistě (p &gt; 90 %) za těch 5 let umře někdo, kdo by jinak mohl žít dál – třeba i desítky let. Nejohroženější jsou děti a senioři.
+Jde to vyjádřit i jinak. Riziko předčasného úmrtí se bez dálnice nesníží, takže kvůli tomu téměř jistě (p > 90 %) za těch 5 let umře někdo, kdo by jinak mohl žít dál – třeba i desítky let. Nejohroženější jsou děti a senioři.
 
 Ale nepřesune se zdravotní zátěž na lidi v okolí nové dálnice? Ne, protože nejvíc škodlivin způsobuje městský styl jízdy brzda-plyn. Domy budou navíc od dálnice tak daleko, že zatížení emisemi bude zanedbatelné. Jiné je to ovšem s estetikou, hlukem a záborem půdy.
 

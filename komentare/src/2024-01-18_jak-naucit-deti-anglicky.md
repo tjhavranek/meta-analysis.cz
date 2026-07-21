@@ -5,7 +5,7 @@ date: "2024-01-18"
 headline: "Jak naučit děti perfektně anglicky bez námahy a zadarmo"
 status: full
 byline: "Tomáš Havránek"
-word_count: 617
+word_count: "619"
 ---
 
 # Jak naučit děti perfektně anglicky bez námahy a zadarmo

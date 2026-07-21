@@ -5,7 +5,7 @@ date: "2022-07-12"
 headline: "Jak úrokové sazby ovlivňují inflaci? Ekonomové nevědí"
 status: full
 byline: "Tomáš Havránek"
-word_count: 433
+word_count: "433"
 ---
 
 # Jak úrokové sazby ovlivňují inflaci? Ekonomové nevědí

@@ -6,7 +6,7 @@ url: "https://www.seznamzpravy.cz/clanek/ekonomika-ocima-byznysu-ocima-byznysu-n
 date: "2026-06-01"
 headline: "Očima byznysu: Nemovitosti jsou pro většinu Čechů špatná investice"
 byline: "Tomáš Havránek"
-word_count: "1047"
+word_count: "830"
 ---
 
 # Očima byznysu: Nemovitosti jsou pro většinu Čechů špatná investice

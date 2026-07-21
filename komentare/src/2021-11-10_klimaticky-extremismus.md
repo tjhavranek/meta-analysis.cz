@@ -5,7 +5,7 @@ date: "2021-11-10"
 headline: "Klimatický extremismus škodí víc než globální oteplování"
 status: full
 byline: "Tomáš Havránek"
-word_count: 600
+word_count: "600"
 ---
 
 # Klimatický extremismus škodí víc než globální oteplování
@@ -16,7 +16,7 @@ Aby bylo jasno, změna klimatu je reálná, lidstvu škodí a způsobili jsme ji
 
 Tyhle katastrofické scénáře lze srovnávat, protože jejich pravděpodobnost je nevyčíslitelná (vyjma dopadu asteroidu). Klimatické modely Venuši na Zemi nepředpovídají, jak plyne ze zpráv Mezivládního panelu pro změnu klimatu a stovek článků ve vědeckých časopisech. Klimatický armagedon nemůžeme vyloučit, ale není důvod se ho bát víc než asteroidů.
 
-Obchodníci s dětským zoufalstvím
+## Obchodníci s dětským zoufalstvím
 
 Proč tedy děti a mladí lidé nemohou kvůli klimatu spát? Odmalička jim vtloukáme do hlavy, že za oteplování mohou vlastní existencí. Nejsou uhlíkově neutrální, dýchají. Uctívaný komentátor Martin Wolf z Financial Times píše, že „lidstvo je kukačka v hnízdě Země“. Prý jsme rakovina planety. Co uděláte s rakovinou? Vyříznete ji.
 
@@ -24,7 +24,7 @@ Představte si, že vám je 20 a od školky posloucháte takové řeči. Jak se 
 
 Proč si chytří lidé jako Martin Wolf neuvědomují dopady, které mají jejich texty na životy mladých? Neviňme Gretu, ale cyniky, kteří jí zničili dětství. Ubližují víc než covid, už i v češtině. Bojím se, že řada proroků klimatické zkázy se nad tím ani nezamyslí, protože děti nemají. Nebo už žádnou budoucnost pro nás, rakovinu, neplánují. Nebo utrpení dětí považují za snesitelnou oběť spravedlivého tlaku na politiky, aby s klimatem proboha už něco dělali.
 
-Daňme emise a sázejme stromy
+## Daňme emise a sázejme stromy
 
 Jenže politici už s klimatem něco dělají jednu generaci a platíme za to biliony. Pamatujete podporu biopaliv? Kde by jinak rostly nové lesy, rozlézají se řepné pouště. V tom se ostatně řepka neliší od olejných palem. Jenže palmy pěstují zlí domorodci v zaostalých zemích, zato řepku náš nejmilejší dotačník. Bioplynky? Povolenky? Solární boom? Všechno drahý průšvih, ale napoosmé to bude cajk.
 

@@ -5,7 +5,7 @@ date: "2025-03-14"
 headline: "„Pátek pro planetu“ ve školních jídelnách Zemi nepomůže a dětem uškodí"
 status: full
 byline: "Tomáš Havránek, Zuzana Havránková"
-word_count: 844
+word_count: "846"
 ---
 
 # „Pátek pro planetu" ve školních jídelnách Zemi nepomůže a dětem uškodí

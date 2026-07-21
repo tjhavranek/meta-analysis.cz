@@ -5,7 +5,7 @@ date: "2025-12-31"
 headline: "Jedna AI nestačí, nechte modely spolu bojovat"
 status: full
 byline: "Tomáš Havránek, Zuzana Havránková"
-word_count: 520
+word_count: "521"
 ---
 
 # Jedna AI nestačí, nechte modely spolu bojovat

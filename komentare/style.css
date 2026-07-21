@@ -198,3 +198,8 @@ main { padding: 2.75rem 0 4rem; }
 .about-links a:hover { color: var(--accent); border-bottom-color: currentColor; }
 .about-machine { margin: 1rem 0 0; font-size: 0.82rem; color: var(--faint); max-width: 46rem; }
 .about-machine a { color: var(--muted); }
+.about-rights { margin: 0.7rem 0 0; font-size: 0.82rem; color: var(--faint); max-width: 46rem; }
+.meta .authors { color: var(--muted); }
+.src-list li { padding: 0.3rem 0; border-bottom: 1px solid var(--rule); font-size: 0.9rem; }
+.src-list a { font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace; font-size: 0.85rem; }
+.src-meta { color: var(--faint); }

@@ -160,7 +160,7 @@ Columns and commentary written in English — policy pieces for VoxEU/CEPR and p
 - [Stress-testing research with AI, now super easy and fully automated](https://meta-analysis.cz/komentare/maer-stress-testing/) — MAER-Net, 31. května 2026
 - [Stress-Testing Meta-Research with AI Duels](https://meta-analysis.cz/komentare/maer-ai-duels/) — MAER-Net, 12. prosince 2025
 - [AI Tools for Meta-Analysis](https://meta-analysis.cz/komentare/maer-ai-tools/) — MAER-Net, 30. července 2025
-- [New Challenges for Meta-Analysis](https://meta-analysis.cz/komentare/maer-new-challenges/) — MAER-Net, 7. července 2025
+- [New Challenges for Meta-Analysis: Attenuation Bias, P-Hacking, Preferred Estimates](https://meta-analysis.cz/komentare/maer-new-challenges/) — MAER-Net, 7. července 2025
 - [How financial incentives affect performance](https://meta-analysis.cz/komentare/voxeu-incentives/) — VoxEU / CEPR, 13. února 2023
 - [Armington elasticity and international trade models: Fifty years on](https://meta-analysis.cz/komentare/voxeu-armington/) — VoxEU / CEPR, 23. září 2020
 - [Daylight saving saves no energy](https://meta-analysis.cz/komentare/voxeu-daylight-saving/) — VoxEU / CEPR, 2. prosince 2017

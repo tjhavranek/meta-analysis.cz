@@ -126,8 +126,17 @@ def fix_quotes(s):
     return re.sub(r'„([^„“"]{0,400}?)"', r"„\1“", s or "")
 
 
-def cs_date(iso, precision=None):
+MONTHS_EN = ["January", "February", "March", "April", "May", "June",
+             "July", "August", "September", "October", "November", "December"]
+
+
+def cs_date(iso, precision=None, lang="cs"):
+    """Czech months are inflected: genitive with a day, nominative alone. English
+    items get English dates — a Czech genitive month is unreadable to that audience."""
     d = datetime.strptime(iso, "%Y-%m-%d")
+    if lang == "en":
+        return (f"{MONTHS_EN[d.month - 1]} {d.year}" if precision == "month"
+                else f"{d.day} {MONTHS_EN[d.month - 1]} {d.year}")
     if precision == "month":
         return f"{MONTHS_NOM[d.month - 1]} {d.year}"
     return f"{d.day}. {MONTHS[d.month - 1]} {d.year}"
@@ -237,6 +246,25 @@ def shell(title, desc, canonical, jsonld, body, active, extra_head="", lang="cs"
         f'<a href="{PATH}/{k}/"{" aria-current=\"page\"" if active == k else ""}>{esc(v["short"])}</a>'
         for k, v in SECTIONS.items())
     rss_title = "Komentáře — Tomáš Havránek"
+    bio = ("<strong>Tomáš Havránek</strong> is Professor of Economics at the Institute of "
+           "Economic Studies, Charles University, Prague. He works on monetary policy, "
+           "meta-analysis and meta-research, and was an adviser to the Vice-Governor and "
+           "the Board of the Czech National Bank. He is a CEPR research fellow (London) and "
+           "a Stanford METRICS affiliate. This section archives his published commentary, "
+           "columns and interviews."
+           if lang == "en" else
+           "<strong>Tomáš Havránek</strong> je profesor ekonomie na Institutu ekonomických "
+           "studií FSV Univerzity Karlovy v Praze. Zabývá se měnovou politikou, metaanalýzou "
+           "a metavýzkumem; byl poradcem viceguvernéra a bankovní rady ČNB. Je výzkumným "
+           "pracovníkem CEPR v Londýně a affiliate Stanford METRICS. Tato stránka archivuje "
+           "jeho publicistiku — komentáře, sloupky a rozhovory.")
+    rights = ("Every item states where it first appeared and links to the original. "
+              "Copyright in each text rests with the author and the original publisher; "
+              "this archive exists for reading, citation and research."
+              if lang == "en" else
+              "U každého textu uvádíme, kde poprvé vyšel, a odkazujeme na původní vydání. "
+              "Práva k textům náleží autorovi a původním vydavatelům; tento archiv slouží "
+              "ke čtení, citaci a výzkumu.")
     return f"""<!DOCTYPE html>
 <html lang="{lang}">
 <head>
@@ -271,11 +299,7 @@ def shell(title, desc, canonical, jsonld, body, active, extra_head="", lang="cs"
 </main>
 <footer class="foot">
   <div class="wrap about">
-    <p class="about-bio"><strong>Tomáš Havránek</strong> je profesor ekonomie na Institutu
-      ekonomických studií FSV Univerzity Karlovy v Praze. Zabývá se měnovou politikou,
-      metaanalýzou a metavýzkumem; byl poradcem viceguvernéra a bankovní rady ČNB.
-      Je výzkumným pracovníkem CEPR v Londýně a affiliate Stanford METRICS.
-      Tato stránka archivuje jeho publicistiku — komentáře, sloupky a rozhovory.</p>
+    <p class="about-bio">{bio}</p>
     <ul class="about-links">
       <li><a href="https://www.tomashavranek.cz/">Osobní stránka</a></li>
       <li><a href="{SITE}/">meta-analysis.cz</a></li>
@@ -294,6 +318,7 @@ def shell(title, desc, canonical, jsonld, body, active, extra_head="", lang="cs"
       <a href="{PATH}/feed.xml">RSS</a>. The Markdown source of each item is in
       <a href="{PATH}/src/">/komentare/src/</a>. Text and metadata may be freely
       indexed, quoted and used for research, with attribution to the original outlet.</p>
+    <p class="about-rights">{rights}</p>
   </div>
 </footer>
 </body>
@@ -351,6 +376,7 @@ SCRIPT = """<script>
 
 
 def item_row(a, show_cat):
+    lang = a.get("lang") or SECTIONS[a["category"]]["lang"]
     url = f"{PATH}/{a['slug']}/" if a["media"] == "text" else (a.get("url") or "#")
     ext = "" if a["media"] == "text" else ' rel="external"'
     tag = ""
@@ -358,8 +384,11 @@ def item_row(a, show_cat):
         tag = f'<span class="tag tag-av">{MEDIA_LABEL[a["media"]]}</span>'
     elif show_cat:
         tag = f'<span class="tag">{esc(SECTIONS[a["category"]]["short"])}</span>'
-    bits = [f'<span>{esc(cs_date(a["date"], a.get("date_precision")))}</span>',
+    bits = [f'<span>{esc(cs_date(a["date"], a.get("date_precision"), lang))}</span>',
             f'<span class="outlet">{esc(a["outlet"])}</span>']
+    names_row = people(a.get("byline"))
+    if len(names_row) > 1 or names_row[0] != AUTHOR:
+        bits.append(f'<span class="authors">{esc(", ".join(names_row))}</span>')
     if a.get("issue"):
         bits.append(f'<span>č.&nbsp;{esc(a["issue"])}</span>')
     if a.get("interviewer"):
@@ -427,7 +456,7 @@ def write_item(a):
     desc = (plain[:190].rsplit(" ", 1)[0] + "…") if len(plain) > 190 else plain
     node["description"] = desc
 
-    meta = [f'<span>{esc(cs_date(a["date"], a.get("date_precision")))}</span>',
+    meta = [f'<span>{esc(cs_date(a["date"], a.get("date_precision"), lang))}</span>',
             f'<span>{esc(a["outlet"])}</span>']
     if a.get("issue"):
         meta.append(f'<span>č.&nbsp;{esc(a["issue"])}</span>')
@@ -436,7 +465,7 @@ def write_item(a):
         meta.append(f'<span>ptal se: {esc(a["interviewer"])}</span>')
 
     where = OUTLET_IN.get(a["outlet"], f'v médiu {a["outlet"]}')
-    prov = (f'Poprvé vyšlo {where} {cs_date(a["date"], a.get("date_precision"))}.'
+    prov = (f'Poprvé vyšlo {where} {cs_date(a["date"], a.get("date_precision"), "cs")}.'
             + (f' <a href="{esc(a["url"])}" rel="external">Původní vydání</a>.'
                if a.get("url") else ""))
     # be honest about which text this is: an author manuscript can differ from what
@@ -667,6 +696,56 @@ def write_machine_readable(items):
     return len([a for a in items if a["media"] == "text"])
 
 
+def write_src_index(items):
+    """GitHub Pages serves no directory listing, so /komentare/src/ 404s even though
+    every file under it is fetchable. The footer advertises that path, so give it a
+    real index — it is also the most convenient entry point for a scraper."""
+    rows = []
+    for a in items:
+        if a["media"] != "text":
+            continue
+        rows.append(f'<li><a href="{PATH}/src/{esc(a["file"])}">{esc(a["file"])}</a> '
+                    f'— {esc(a["headline"])} <span class="src-meta">({esc(a["outlet"])}, '
+                    f'{a["date"]})</span></li>')
+    page = f"""<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Markdown sources — Komentáře</title>
+<meta name="description" content="Plain Markdown source of every item in the Komentare archive." />
+<link rel="stylesheet" href="{PATH}/style.css" />
+<link rel="canonical" href="{BASE}/src/" />
+<meta name="robots" content="noindex, follow" />
+</head>
+<body>
+<header class="masthead"><div class="wrap">
+  <p class="site-name"><a href="{PATH}/">Komentáře<small>Tomáš Havránek</small></a></p>
+  <nav class="nav"><a href="{PATH}/">Back to the archive</a></nav>
+</div></header>
+<main><div class="wrap">
+  <div class="lede">
+    <h1>Markdown sources</h1>
+    <p>The plain-text source of every item, one file each, with YAML front matter.
+       {len(rows)} files. For bulk use prefer
+       <a href="{PATH}/index.json">index.json</a> (metadata and full text in one document)
+       or <a href="{PATH}/all.md">all.md</a>.</p>
+  </div>
+  <ul class="items src-list">
+{chr(10).join(rows)}
+  </ul>
+</div></main>
+<footer class="foot"><div class="wrap">
+  <p class="about-rights">Copyright in each text rests with the author and the original
+    publisher; this archive exists for reading, citation and research.</p>
+</div></footer>
+</body>
+</html>
+"""
+    (KDIR / "src" / "index.html").write_text(page, encoding="utf-8")
+    return len(rows)
+
+
 def update_sitemap(items):
     """No longer writes sitemap.xml.
 
@@ -722,6 +801,7 @@ def main():
         write_index(items, k)
     write_feed(items)
     n_txt = write_machine_readable(items)
+    n_src = write_src_index(items)
     n = update_sitemap(items)
 
     by = {}

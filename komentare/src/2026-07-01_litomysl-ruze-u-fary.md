@@ -9,7 +9,7 @@ date_precision: "month"
 headline: "Poděkování za péči o růže u fary"
 byline: "Tomáš Havránek"
 source: "image"
-word_count: "446"
+word_count: "391"
 body_note: "Rubrika Dopisy čtenářů. Delší citovaná pasáž je text babičky autora, Marie Lorencové, rozené Kudrnové."
 ---
 

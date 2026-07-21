@@ -5,7 +5,7 @@ date: "2023-10-31"
 headline: "Snížení sazeb by dávalo smysl, kdyby předtím ČNB netolerovala pádivou inflaci"
 status: full
 byline: "Tomáš Havránek"
-word_count: 333
+word_count: "333"
 ---
 
 # Snížení sazeb by dávalo smysl, kdyby předtím ČNB netolerovala pádivou inflaci

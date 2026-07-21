@@ -5,7 +5,7 @@ date: "2023-09-09"
 headline: "S trochou štěstí přijde zlevnění a deflace. ČNB by se toho neměla bát"
 status: full
 byline: "Tomáš Havránek"
-word_count: 982
+word_count: "986"
 ---
 
 # S trochou štěstí přijde zlevnění a deflace. ČNB by se toho neměla bát

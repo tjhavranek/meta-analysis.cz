@@ -5,7 +5,7 @@ date: "2024-04-15"
 headline: "Rychlovlaky v Česku? Skončí to hůř než kanál Dunaj–Odra–Labe"
 status: full
 byline: "Tomáš Havránek"
-word_count: 709
+word_count: "709"
 ---
 
 # Rychlovlaky v Česku? Skončí to hůř než kanál Dunaj–Odra–Labe

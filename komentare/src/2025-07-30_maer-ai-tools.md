@@ -6,12 +6,10 @@ url: "https://www.maer-net.org/post/ai-tools-for-meta-analysis"
 date: "2025-07-30"
 headline: "AI Tools for Meta-Analysis"
 byline: "Tomáš Havránek"
-word_count: "1033"
+word_count: "1021"
 ---
 
 # AI Tools for Meta-Analysis
-
-SearchAI Tools for Meta-AnalysisTomas HavranekJul 30, 20254 min readUpdated: Aug 19, 2025
 
 I believe we’ve finally reached the point where AI tools can genuinely save a lot of time in meta-analysis during literature search and data collection. Below is a summary of what works well as of late July 2025. My experience is mostly with ChatGPT, so I’d be interested to hear what has worked for others. There must be better ways of doing this.
 

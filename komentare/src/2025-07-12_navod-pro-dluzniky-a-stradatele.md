@@ -5,7 +5,7 @@ date: "2025-07-12"
 headline: "Návod pro dlužníky a střadatele, jak přežít dluh větší než ekonomika"
 status: full
 byline: "Tomáš Havránek, Zuzana Havránková"
-word_count: 669
+word_count: "671"
 ---
 
 # Návod pro dlužníky a střadatele, jak přežít dluh větší než ekonomika

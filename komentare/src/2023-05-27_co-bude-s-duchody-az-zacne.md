@@ -5,7 +5,7 @@ date: "2023-05-27"
 headline: "Co bude s důchody, až začne fungovat klimatická antikoncepce"
 status: full
 byline: "Tomáš Havránek"
-word_count: 572
+word_count: "574"
 ---
 
 # Co bude s důchody, až začne fungovat klimatická antikoncepce

@@ -13,9 +13,9 @@ word_count: "418"
 
 # Nové kruháky ublíží tranzitu, pomohou Litomyšli
 
-Městu se povedlo prosadit dva nové kruháky na hlavní silnici. Jeden u výjezdu z průmyslové zóny (směr Svitavy), druhý u Terozu (směr Mýto). Lidi už si stěžují, kruháky oblíbené nejsou. Jasné je, že výstavba způsobí otravné omezení na hlavní. A kruháky zpomalují provoz a přispívají k tvorbě kolon. 
+Městu se povedlo prosadit dva nové kruháky na hlavní silnici. Jeden u výjezdu z průmyslové zóny (směr Svitavy), druhý u Terozu (směr Mýto). Lidi už si stěžují, kruháky oblíbené nejsou. Jasné je, že výstavba způsobí otravné omezení na hlavní. A kruháky zpomalují provoz a přispívají k tvorbě kolon.
 
-Kolony ale budou tak jako tak, protože provoz v Litomyšli před zprovozněním dálnice trhne rekordy. Teď jsou hlavními špunty světelná křižovatka a kruhák u Daliboru. Výsledkem bude přes den úplně ucpaná celá hlavní silnice ve městě. 
+Kolony ale budou tak jako tak, protože provoz v Litomyšli před zprovozněním dálnice trhne rekordy. Teď jsou hlavními špunty světelná křižovatka a kruhák u Daliboru. Výsledkem bude přes den úplně ucpaná celá hlavní silnice ve městě.
 
 Když se postaví nové kruháky na obou koncích města, bude se doprava štosovat za nimi (z pohledu z Litomyšle). Kolony tedy budou delší než nyní, ale uvnitř Litomyšle bude snazší po hlavní silnici projet. Výsledek je špatný pro tranzit, ale je to lepší ze dvou blbých řešení pro nás, co v Litomyšli bydlíme a potřebujeme po hlavní někdy projet a dostat se jinam ve městě.
 

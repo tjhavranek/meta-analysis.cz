@@ -5,7 +5,7 @@ date: "2020-10-07"
 headline: "Zlato do trezorů ČNB patří"
 status: full
 byline: "Tomáš Havránek"
-word_count: 310
+word_count: "310"
 ---
 
 # Zlato do trezorů ČNB patří

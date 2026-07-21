@@ -5,13 +5,11 @@ outlet: "MAER-Net"
 url: "https://www.maer-net.org/post/ai_duel"
 date: "2025-12-12"
 headline: "Stress-Testing Meta-Research with AI Duels"
-byline: "Tomáš Havránek"
-word_count: "353"
+byline: "Zuzana Irsová, Tomáš Havránek"
+word_count: "352"
 ---
 
 # Stress-Testing Meta-Research with AI Duels
-
-Search By Zuzana Irsova and Tomas Havranek (meta-analysis.cz)
 
 Many of us now use large language models for meta-analysis tasks like coding, short summaries, or quick checks. Where they become genuinely valuable for research, though, is not in producing a single clean answer. It is in creating structured disagreement: two models pushing on each other’s reasoning, with a researcher steering the process.
 

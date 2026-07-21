@@ -5,7 +5,7 @@ date: "2023-01-11"
 headline: "Zvyšme odpovědnost ČNB za inflaci. Platy bankéřů ať jsou vázány na stabilitu cen"
 status: full
 byline: "Tomáš Havránek"
-word_count: 561
+word_count: "561"
 ---
 
 # Zvyšme odpovědnost ČNB za inflaci. Platy bankéřů ať jsou vázány na stabilitu cen

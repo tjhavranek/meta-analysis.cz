@@ -5,7 +5,7 @@ date: "2023-02-02"
 headline: "Dva radní centrální banky odcházejí. ČNB by si měla dát pozor, aby se z ní nestal názorový monolit"
 status: full
 byline: "Tomáš Havránek"
-word_count: 426
+word_count: "426"
 ---
 
 # Dva radní centrální banky odcházejí. ČNB by si měla dát pozor, aby se z ní nestal názorový monolit

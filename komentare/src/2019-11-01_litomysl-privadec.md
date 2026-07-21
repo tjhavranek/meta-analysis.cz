@@ -29,6 +29,6 @@ Tu silnici jsme ale spolu se sjezdem z dálnice odmítli. Oficiálním důvodem,
 
 Rozumím, že plán se nelíbil Kornicím, ale vedení města zastupuje 10 429 lidí, ne jen 150. Jde ke cti starosty, že se postavil aspoň za sjezd z dálnice ve tvaru T a aktivně se ho snažil prosadit, žel byl v té snaze osamocen.
 
-Paradoxně se nyní ukazuje, že lepší pro všechny by byla námi odmítnutá původní varianta D35 kolem Třebové. Stejně nemáme vlastní sjezd, navíc dálnici uvidíme a uslyšíme, pohádali jsme se kvůli ní, což přispělo ke zdržení. 
+Paradoxně se nyní ukazuje, že lepší pro všechny by byla námi odmítnutá původní varianta D35 kolem Třebové. Stejně nemáme vlastní sjezd, navíc dálnici uvidíme a uslyšíme, pohádali jsme se kvůli ní, což přispělo ke zdržení.
 
 V Litomyšli se věci domlouvají u piva, což je milé a většinou funguje dobře, hlavně když jde o kulturu. Vedení města doprava příliš nezajímá, což chápu. Je ale škoda, že nemáme dlouhodobou odbornou dopravní strategii. Platíme za to totiž všichni.

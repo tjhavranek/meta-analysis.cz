@@ -5,7 +5,7 @@ date: "2023-09-11"
 headline: "ČNB může dělat pro finanční gramotnost víc. Ve správě aktiv má jít příkladem"
 status: full
 byline: "Tomáš Havránek"
-word_count: 646
+word_count: "646"
 ---
 
 # ČNB může dělat pro finanční gramotnost víc. Ve správě aktiv má jít příkladem
