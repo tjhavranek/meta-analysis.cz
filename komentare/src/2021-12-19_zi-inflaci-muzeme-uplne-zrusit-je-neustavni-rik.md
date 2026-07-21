@@ -6,7 +6,7 @@ url: "https://www.idnes.cz/ekonomika/domaci/ekonom-tomas-havranek-rozhovor-infla
 date: "2021-12-19"
 headline: "Inflaci můžeme úplně zrušit, je neústavní"
 byline: "Tomáš Havránek"
-word_count: "3597"
+word_count: "3599"
 interviewer: "Martina Riemlová"
 body_note: "Text převzat z republikace na zrusme-inflaci.cz; originál je na iDNES.cz."
 perex: "Stále zrychlující se inflace trápí momentálně všechny. Podle ekonoma Tomáše Havránka selhal systém cílování inflace, podle kterého postupuje mimo jiné i Česká národní banka. Podle něj nastává ideální čas na změnu a je možné se inflace úplně zbavit. „Příležitosti můžeme využít, nebo můžeme nechat inflaci vystoupat v příštím roce až na dvojciferné hodnoty,“ míní Havránek v rozhovoru pro iDNES.cz"
@@ -20,7 +20,9 @@ Platíme stamiliony v platech nejlepším ekonomům v zemi, aby nám tu kladnou 
 
 Vysoká inflace je jedním z hlavních současných ekonomických problémů. To ovšem neznamená, že deflace je něco pozitivního. Můžete v úvodu vysvětlit, proč?
 
-Deflace, tedy pokles průměrných cen, je spojena se dvěma hlavními problémy. Pokud je recese, deflace nás motivuje k tomu, abychom nekupovali zboží a služby teď, ale počkali si, až zlevní. Krizi tedy ještě prohlubuje. To však platí pouze v případě, pokud očekáváme, že deflace bude setrvalá. Pokud by měla být dočasná, naše chování zase příliš neovlivní. Problémem je tedy setrvalá deflace.Deflace také ztěžuje splácení dluhů. Pokud má člověk hypotéku pět milionů a deflace bude 50 procent, znamenalo by to, že průměrné ceny budou z roku na rok poloviční a hodnota koruny se zdvojnásobí. Takže z dluhu ve výši pěti milionů by se najednou stal dluh ve výši deseti milionů, který se reálně bude daleko hůře splácet.
+Deflace, tedy pokles průměrných cen, je spojena se dvěma hlavními problémy. Pokud je recese, deflace nás motivuje k tomu, abychom nekupovali zboží a služby teď, ale počkali si, až zlevní. Krizi tedy ještě prohlubuje. To však platí pouze v případě, pokud očekáváme, že deflace bude setrvalá. Pokud by měla být dočasná, naše chování zase příliš neovlivní. Problémem je tedy setrvalá deflace.
+
+Deflace také ztěžuje splácení dluhů. Pokud má člověk hypotéku pět milionů a deflace bude 50 procent, znamenalo by to, že průměrné ceny budou z roku na rok poloviční a hodnota koruny se zdvojnásobí. Takže z dluhu ve výši pěti milionů by se najednou stal dluh ve výši deseti milionů, který se reálně bude daleko hůře splácet.
 
 Pokud deflace trvá pár měsíců nebo rok, tak to prakticky žádný problém nepředstavuje. Bankéři však s hrůzou vzpomínají na Velkou depresi ve třicátých letech. Důsledkem Velké deprese byla mimo jiné setrvalá deflace a ceny klesaly několik let v řadě, dohromady o desítky procentních bodů, což prohlubovalo krizi. Po takové zkušenosti se centrální bankéři deflace bojí. Ale kromě této jedné epizody, kterou však centrální banky způsobily samy svou neschopností smysluplně reagovat, jsme nikdy problém s deflací neměli.
 
@@ -44,7 +46,9 @@ Ano, máte pravdu, stěžovali, ale inflace nikdy v historii nebyla programovým
 
 Existují dva základní režimy moderní měnové politiky. První z nich je právě cílování inflace, kdy se centrální banka stále snaží o plus dvě procenta a neohlíží se na minulost. Druhý režim je cílování cenové hladiny, kdy opravujete předchozí chyby. Tedy když máte inflaci jednou plus dva, další rok se snažíte o minus dva. A já jsem pro tu druhou možnost. Můžeme hodnotu peněz přivázat nikoliv ke zlatu, ale k ceně průměrného zboží v ekonomice.
 
-Průměrný sobotní nákup v supermarketu nás tak bude stát za třicet let stejně jako tuto sobotu. Takový krok centrální banka udělat může .Nepůjde to samozřejmě z roku na rok, ale možné to je. Takový režim je intuitivní, stoprocentně v souladu s ústavou, v ekonomických modelech vychází lépe. Pokud přijdou obavy z deflace nebo inflace, nutí to centrální banku reagovat daleko silněji, aby spirálu zastavila a vrátila ceny v průměru zase zpátky na původní hladinu.
+Průměrný sobotní nákup v supermarketu nás tak bude stát za třicet let stejně jako tuto sobotu. Takový krok centrální banka udělat může .
+
+Nepůjde to samozřejmě z roku na rok, ale možné to je. Takový režim je intuitivní, stoprocentně v souladu s ústavou, v ekonomických modelech vychází lépe. Pokud přijdou obavy z deflace nebo inflace, nutí to centrální banku reagovat daleko silněji, aby spirálu zastavila a vrátila ceny v průměru zase zpátky na původní hladinu.
 
 Funguje tento režim momentálně někde jinde na světě?
 

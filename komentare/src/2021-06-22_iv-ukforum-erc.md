@@ -6,7 +6,7 @@ url: "https://ukforum.cz/rubriky/veda/7994-havranek-hodnoceni-erc-je-velmi-pocti
 date: "2021-06-22"
 headline: "Havránek: Hodnocení ERC je velmi poctivé, nápady vynikající"
 byline: "Tomáš Havránek"
-word_count: "1679"
+word_count: "1657"
 interviewer: "Pavla Hubálková"
 ---
 
@@ -53,5 +53,3 @@ Většina lidí si myslí, že my ekonomové počítáme peníze. Možnosti výz
 Výzkumných projektů mám více, ale témata, která mě aktuálně nejvíc baví a která se snažím popularizovat, jsou optimální inflace a správa devizových rezerv. Podle centrálních bank je ideální roční inflace dvě procenta, ale kde se tato hodnota vzala? Proč nemáme v České republice dlouhodobě nulovou inflaci, která je intuitivní a přesně odpovídá Ústavě – abychom si za tisíc korun koupili stejně hodnotný nákup tuto sobotu i za třicet let? Celkově existuje 230 odborných studií odhadujících optimální inflaci a průměrný odhad je 0,03 procenta, tedy de facto skutečná cenová stabilita. Hluboce věřím, že skutečná cenová stabilita by nám všem pomohla. Byli bychom jednou z prvních zemí, jejíž měna bude stabilním uchovatelem hodnoty. Pak bychom mohli snáze plánovat úspory na důchod a spoření pro děti.
 
 A druhé téma jsou devizové rezervy, kde máme jako stát „nasysleno“ 3,5 bilionu korun. Tato obrovská suma teď v podstatě leží na běžném účtu, přitom kdybychom část po vzoru Norů, Švýcarů nebo Singapurců investovali, vydělávali bychom v průměru 200 miliard ročně navíc. Mohu se mýlit, možná je v tom nějaký problém, který nevidím, ale za pět let diskuzí mě nikdo o opaku nepřesvědčil. Takže vedle výzkumu a výuky mě teď profesně naplňuje i takový, řekněme, měnový aktivismus: prosazovat v centrální bance věci, o nichž hluboce věřím, že jsou správné.
-
-ISSN 1214-5726 (tištěná verze ISSN 1211-1724) Publikování nebo šíření obsahu je zakázáno bez předchozího souhlasu. ©2012–2026 Univerzita Karlova / webdesign Agionet s.r.o.

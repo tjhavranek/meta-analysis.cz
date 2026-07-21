@@ -37,6 +37,10 @@ jobs:
         id: gen
         run: python tools/generate_seo.py
         continue-on-error: true
+      - name: Verify the self-managed commentary section
+        # verify_seo.py deliberately skips /komentare/ (it manages its own metadata),
+        # which left that section unvalidated. This closes the hole.
+        run: python komentare/build.py --check
       - name: Verify (visible content unchanged, JSON-LD valid, URLs resolve)
         run: python tools/verify_seo.py
       - name: Configure Pages

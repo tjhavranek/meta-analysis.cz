@@ -7,11 +7,12 @@
   --surface:   #ffffff;
   --text:      #1b1a18;
   --muted:     #6a6660;
-  --faint:     #918c85;
-  --rule:      #e5e1db;
+  --faint:     #6e6960;
+  --rule:      #d8d3cb;
   --accent:    #8c2f27;
   --accent-bg: #f6efee;
   --focus:     #2f6fb0;
+  --control:   #8a847a;   /* borders of real controls: >=3:1 */
   --measure:   34rem;
 }
 
@@ -21,11 +22,12 @@
     --surface:   #1e1d1a;
     --text:      #e9e6e1;
     --muted:     #a29d95;
-    --faint:     #7d7871;
-    --rule:      #302e2a;
+    --faint:     #a09a91;
+    --rule:      #423f3a;
     --accent:    #e2837a;
     --accent-bg: #2a1f1d;
     --focus:     #7fb3e8;
+    --control:   #6f6a63;
   }
 }
 
@@ -88,14 +90,14 @@ main { padding: 2.75rem 0 4rem; }
   font: inherit; font-size: 0.95rem;
   padding: 0.5rem 0.75rem;
   color: var(--text); background: var(--surface);
-  border: 1px solid var(--rule); border-radius: 4px;
+  border: 1px solid var(--control); border-radius: 4px;
 }
 .filter input[type="search"]::placeholder { color: var(--faint); }
 .chip {
   font: inherit; font-size: 0.85rem; cursor: pointer;
   padding: 0.4rem 0.8rem; border-radius: 999px;
   color: var(--muted); background: transparent;
-  border: 1px solid var(--rule);
+  border: 1px solid var(--control);
 }
 .chip:hover { color: var(--text); }
 .chip[aria-pressed="true"] { color: var(--accent); background: var(--accent-bg); border-color: currentColor; }

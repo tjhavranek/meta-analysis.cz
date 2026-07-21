@@ -6,7 +6,7 @@ url: "https://ekonom.cz/c1-67175540-recept-na-zkroceni-inflace-sazby-deset-proce
 date: "2023-02-23"
 headline: "Recept na zkrocení inflace: Sazby deset procent a euro za dvacku"
 byline: "Tomáš Havránek"
-word_count: "1978"
+word_count: "1984"
 interviewer: "Martin Petříček"
 body_note: "Text převzat z republikace na zrusme-inflaci.cz; originál je v týdeníku Ekonom."
 perex: "Kdo může za vysokou inflaci a kdo by ji měl krotit? Zatímco guvernér České národní banky Aleš Michl opakuje, že s inflací má nyní bojovat hlavně vláda, ekonom Tomáš Havránek tvrdí, že situaci má ve svých rukách právě ČNB. Vedle zvýšení úrokových sazeb by ve větší míře měla využít devizové rezervy,..."
@@ -17,6 +17,8 @@ perex: "Kdo může za vysokou inflaci a kdo by ji měl krotit? Zatímco guverné
 Kdo může za vysokou inflaci a kdo by ji měl krotit? Jedni tvrdí, že se s ní moc nenadělá, protože jsme si ji dovezli ze zahraničí. Hlavně s vysokými cenami energií a jiných komodit. Guvernér ČNB Aleš Michl zase opakuje, že s inflací má nyní bojovat hlavně vláda. Především srazit deficit veřejných financí.
 
 Ekonom Tomáš Havránek, profesor Univerzity Karlovy, bývalý poradce viceguvernéra ČNB a zakladatel iniciativy Zrušme inflaci, tvrdí, že ČNB s inflací bojuje nedůsledně. Vedle zvýšení sazeb by ve větší míře měla využít devizové rezervy, které nastřádala v době intervencí proti koruně. Česko by podle něj navíc mělo usilovat o úplnou cenovou stabilitu, nepřipustit v průměru žádnou inflaci. “V krizi je ideální doba na změnu. Je jasné, že současný systém selhal a potřebuje reformu,” míní Havránek.
+
+Má ČNB šanci srazit dnešní inflaci?
 
 Nepochybně. Samozřejmě neovlivní šoky ze zahraničí. Ale ovlivní kurz koruny, který se přímo odráží v dovážených cenách. Zahraniční šoky navíc táhnou inflaci jen krátkodobě. V delším horizontu je inflace vždy domácího původu a máme nad ní v Česku úplnou moc. Kdyby byla inflace byla převážně dovážená z mezinárodních komoditních trhů, viděli bychom ve vlnách střídání inflace a deflace, protože ceny komodit kolísají oběma směry. Jenže to se neděje. Navíc by dynamika inflace byla podobná napříč zeměmi. To také nevidíme.
 

@@ -6,7 +6,7 @@ url: "https://www.e15.cz/rozhovory/cnb-by-mela-prodat-miliardy-eur-a-vice-invest
 date: "2022-01-23"
 headline: "ČNB by měla prodat miliardy eur a více investovat do akcií"
 byline: "Tomáš Havránek"
-word_count: "1691"
+word_count: "1688"
 interviewer: "Jan Novotný"
 ---
 
@@ -14,7 +14,11 @@ interviewer: "Jan Novotný"
 
 Česká národní banka je v krocení inflace málo odvážná. S růstem úrokových sazeb by měla postupně vyprodávat eura nakoupená během devizových intervencí a mnohem aktivněji investovat rezervy do akcií podobně jako švýcarská centrální banka. Tvrdí to nejcitovanější český ekonom současnosti Tomáš Havránek. „Pokud by ČNB investovala jako Švýcaři, jen za dva roky by vydělala 300 miliard korun navíc,” říká profesor Institutu ekonomických studií FSV UK. Vzhledem k tomu, že zisk ČNB je ze zákona součástí státního rozpočtu, stát by mohl díky tomu snižovat svůj dluh.
 
+Nakolik je současná inflace způsobená domácími vlivy?
+
 To je dobrá otázka. Já Vám dám taky jednu: Pokud by inflace byla převážně dovezená, proč ji mají Švýcaři pořád kolem jednoho procenta, zatímco my šplháme k deseti?
+
+Není to tím, že jsme víc otevřená ekonomika?
 
 Švýcarsko je také otevřená ekonomika. Dnešní inflace se často zdůvodňuje dodavatelskými problémy, ucpanými přístavy. Ucpané přístavy zdraží třeba dovážené televize, ale pokud si koupíte dražší televizi, máte méně peněz mimo jiné na obědy v restauraci. Poptávka po meníčkách by tedy měla klesat, i jejich ceny by měly klesat. Ale my vidíme zdražování všeho. I můj masér zdražil, přitom jeho hlavním vstupem je jeho čas. Takže inflace má převážně domácí zdroje, které jsou dva. Zaprvé levné peníze, tedy nízké úrokové sazby. A zadruhé vrtulníkové peníze. Během pandemie dostávali lidé a firmy peníze za to, že nic nedělali. A tak dnes mnohem víc peněz než dřív honí stejné nebo menší množství zboží a služeb.
 
@@ -62,4 +66,4 @@ Hýříte nápady, jak současnou situaci změnit. Nechcete se vrátit do ČNB? 
 
 No nevím, bydlím v Litomyšli a mám čtyři malé děti. Kdyby byla poptávka po někom v mém věku, tak lepší akademické publikace mají Filip Matějka a Jaroslav Borovička. Finančním trhům zase lépe rozumí Jakub Seidler. Letos máme štěstí v neštěstí, že budeme mít nového guvernéra a většinu bankovní rady. Dělat změny je nejsnazší, když začínáte a je krize. Vladimír Dlouhý, o kterém se mluví, je výborný kandidát. Pamatuji si na něj jako na brilantního přednášecího na Univerzitě Karlově. Věřím, že máme šanci na skutečnou cenovou stabilitu, nebo aspoň garanci dvouprocentní inflace v dlouhodobém průměru.
 
-Exportéři varují před zvyšováním úrokových sazeb ČNB. Bojí se ztráty stovek miliard ročně Obchod a služby Tomáš Havránek (37)Narodil se v Litomyšli, kde dodnes žije. Vystudoval ekonomii na Institutu ekonomických studií Univerzity Karlovy, přičemž rok strávil také studiem na Helsinské univerzitě. V roce 2014 krátce pracoval na Kalifornské Univerzitě v Berkeley, kde se podílel na studii odhadující společenské náklady emisí oxidu uhličitého. Mezi lety 2009 a 2019 pracoval v České národní bance. V období 2016 až 2018 působil jako poradce viceguvernéra Mojmíra Hampla. Dohromady je spoluautorem více než 50 publikací v mezinárodních impaktovaných časopisech, a to zejména v oblastech měnové ekonomie, mezinárodního obchodu a ekonomiky energetiky. Podle mezinárodní databáze RePEc je v současné době nejcitovanějším a nejlépe publikujícím českým ekonomem těsně před Janem Švejnarem. V roce 2021 byl prezidentem republiky jmenován profesorem.
+Narodil se v Litomyšli, kde dodnes žije. Vystudoval ekonomii na Institutu ekonomických studií Univerzity Karlovy, přičemž rok strávil také studiem na Helsinské univerzitě. V roce 2014 krátce pracoval na Kalifornské Univerzitě v Berkeley, kde se podílel na studii odhadující společenské náklady emisí oxidu uhličitého. Mezi lety 2009 a 2019 pracoval v České národní bance. V období 2016 až 2018 působil jako poradce viceguvernéra Mojmíra Hampla. Dohromady je spoluautorem více než 50 publikací v mezinárodních impaktovaných časopisech, a to zejména v oblastech měnové ekonomie, mezinárodního obchodu a ekonomiky energetiky. Podle mezinárodní databáze RePEc je v současné době nejcitovanějším a nejlépe publikujícím českým ekonomem těsně před Janem Švejnarem. V roce 2021 byl prezidentem republiky jmenován profesorem.

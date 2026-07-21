@@ -6,13 +6,15 @@ url: "https://www.lidovky.cz/orientace/rozhovor-havranek-ekonom-inflace.A230416_
 date: "2023-04-08"
 headline: "Inflace bývala podvod, nebo náhoda"
 byline: "Tomáš Havránek"
-word_count: "1904"
+word_count: "1909"
 interviewer: "Marek Hudema"
 body_note: "Tiskové vydání 8. 4. 2023 (příloha Orientace); webová verze 16. 4. 2023."
 perex: "Pět tisíciletí byla hodnota peněz dlouhodobě stálá. Změnilo se to až ve 30. letech minulého století kvůli touze vlád zadlužovat se i v době míru, říká profesor Tomáš Havránek z Institutu ekonomických studií FSV UK. Dnes používáme systém převzatý z Nového Zélandu, kdy centrální banka záměrně vytváří každoroční mírnou inflaci. Ve skutečnosti je ale inflace škodlivá, jak tvrdí."
 ---
 
 # Inflace bývala podvod, nebo náhoda
+
+Kde se vlastně vzala inflace?
 
 Inflace historicky neexistovala, je to záležitost ryze moderní. Je tu s námi ani ne 100 let. Přitom peníze používáme zhruba pět tisíc let. Takže když to zjednoduším, civilizace fungovala 4900 let bez inflace, a to i v období kapitalismu a rychlého růstu ekonomiky Před první světovou válkou byly ceny zhruba stejné jako o století dříve po napoleonských válkách.
 

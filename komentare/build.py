@@ -147,9 +147,32 @@ def rfc822(iso):
         .strftime("%a, %d %b %Y %H:%M:%S +0000")
 
 
+# a trailing  cannot match after "z. s." because "." is not a word character
+ORG_SUFFIX = re.compile(r"(?i)^(z\.\s?s\.|s\.\s?r\.\s?o\.|a\.\s?s\.|o\.\s?p\.\s?s\.|"
+                        r"z\.\s?ú\.|spol\.\s?s\s?r\.\s?o\.)$")
+ORG_WORD = re.compile(r"(?i)(spolek|institut|agentura|univerzita|redakce|fakulta|"
+                      r"nakladatelstv[ií]|vydavatelstv[ií]|Pro\s+\w+)")
+
+
 def people(raw):
-    names = [n.strip() for n in re.split(r",| a ", raw or AUTHOR) if n.strip()]
-    return names or [AUTHOR]
+    """Split a byline into names.
+
+    Semicolons are authoritative. Commas are ambiguous: "Tomáš Havránek, Pro
+    Litomyšl, z. s." is one person and one organisation, not three people. So a
+    comma-separated fragment is joined back on when it is a legal-form suffix, or
+    when the preceding fragment already looks like an organisation.
+    """
+    raw = (raw or AUTHOR).strip()
+    if ";" in raw:
+        return [n.strip() for n in raw.split(";") if n.strip()]
+    parts = [p.strip() for p in re.split(r",| a ", raw) if p.strip()]
+    out = []
+    for p in parts:
+        if out and (ORG_SUFFIX.match(p) or ORG_WORD.search(out[-1])):
+            out[-1] = out[-1] + ", " + p
+        else:
+            out.append(p)
+    return out or [AUTHOR]
 
 
 # ---------------------------------------------------------------- markdown ---
@@ -310,6 +333,7 @@ def shell(title, desc, canonical, jsonld, body, active, extra_head="", lang="cs"
       <li><a href="https://orcid.org/0000-0002-3158-2539">ORCID</a></li>
       <li><a href="https://scholar.google.com/citations?user=BF0BvBkAAAAJ">Google Scholar</a></li>
       <li><a href="https://ideas.repec.org/f/pha418.html">RePEc / IDEAS</a></li>
+      <li><a href="https://www.scopus.com/authid/detail.uri?authorId=24453189000">Scopus</a></li>
       <li><a href="https://cepr.org/about/people/tomas-havranek">CEPR</a></li>
       <li><a href="https://metrics.stanford.edu/people/tomas-havranek">Stanford METRICS</a></li>
       <li><a href="{PATH}/feed.xml">RSS</a></li>
@@ -448,9 +472,12 @@ def write_item(a):
                                   ("sameAs", ORCIDS.get(n))) if v} for n in names]
     if is_iv:
         node["about"] = persons
-        node["author"] = ([{"@type": "Person", "name": a["interviewer"]}]
-                          if a.get("interviewer") else
-                          [{"@type": "Organization", "name": a["outlet"]}])
+        if a.get("written_by"):
+            node["author"] = [{"@type": "Organization", "name": a["written_by"]}]
+        elif a.get("interviewer"):
+            node["author"] = [{"@type": "Person", "name": a["interviewer"]}]
+        else:
+            node["author"] = [{"@type": "Organization", "name": a["outlet"]}]
     else:
         node["author"] = persons
     if a.get("url"):
@@ -470,6 +497,8 @@ def write_item(a):
     if a.get("issue"):
         meta.append(f'<span>č.&nbsp;{esc(a["issue"])}</span>')
     meta.append("<span>" + esc(", ".join(names)) + "</span>")
+    if a.get("written_by"):
+        meta.append(f'<span>text: {esc(a["written_by"])}</span>')
     if a.get("interviewer"):
         meta.append(f'<span>ptal se: {esc(a["interviewer"])}</span>')
 
@@ -549,6 +578,7 @@ def write_index(items, key=None):
             "https://orcid.org/0000-0002-3158-2539",
             "https://scholar.google.com/citations?user=BF0BvBkAAAAJ",
             "https://ideas.repec.org/f/pha418.html",
+            "https://www.scopus.com/authid/detail.uri?authorId=24453189000",
             "https://ies.fsv.cuni.cz/contacts/institute-members/78067720",
             "https://cepr.org/about/people/tomas-havranek",
             "https://metrics.stanford.edu/people/tomas-havranek",
@@ -595,7 +625,7 @@ def write_index(items, key=None):
 
 def write_feed(items):
     it = []
-    for a in items[:60]:
+    for a in items:
         url = f"{BASE}/{a['slug']}/" if a["media"] == "text" else (a.get("url") or BASE)
         content = (f"<![CDATA[{fix_quotes(md_to_html(a['body']))}]]>"
                    if a["media"] == "text" else
@@ -835,5 +865,57 @@ def main():
     print(f"  sitemap  {n} URLs")
 
 
+def check():
+    """Validate the generated output. Run by CI so a broken page in this
+    self-managed section cannot pass silently (the site-wide verifier skips it)."""
+    import xml.etree.ElementTree as ET
+    fails = []
+    pages = [p for p in KDIR.rglob("index.html") if "src" not in p.parts]
+    for p in pages:
+        t = p.read_text(encoding="utf-8")
+        m = re.search(r'<script type="application/ld\+json">' + chr(92) + 'n(.*?)' + chr(92) + 'n</script>', t, re.S)
+        if not m:
+            fails.append(f"{p.name}: no JSON-LD")
+            continue
+        try:
+            d = json.loads(m.group(1))
+        except Exception as e:
+            fails.append(f"{p}: JSON-LD does not parse ({e})")
+            continue
+        if "ScholarlyArticle" in m.group(1):
+            fails.append(f"{p}: ScholarlyArticle leaked into commentary")
+        if t.count('rel="canonical"') != 1:
+            fails.append(f"{p}: {t.count('rel=canonical')} canonical tags, expected 1")
+        for tag in ('property="og:title"', 'property="og:url"'):
+            if t.count(tag) > 1:
+                fails.append(f"{p}: duplicate {tag}")
+        ml = re.search(r'<html lang="([a-z]+)"', t)
+        if not ml:
+            fails.append(f"{p}: no lang")
+        else:
+            want = "en_GB" if ml.group(1) == "en" else "cs_CZ"
+            loc = re.search(r'og:locale" content="([^"]+)"', t)
+            if loc and loc.group(1) != want:
+                fails.append(f"{p}: lang {ml.group(1)} but og:locale {loc.group(1)}")
+    for f in ("feed.xml",):
+        try:
+            ET.parse(KDIR / f)
+        except Exception as e:
+            fails.append(f"{f}: not well-formed ({e})")
+    try:
+        j = json.loads((KDIR / "index.json").read_text(encoding="utf-8"))
+        if j["count"] != len(list((KDIR / "src").glob("*.md"))):
+            fails.append("index.json count does not match the sources")
+    except Exception as e:
+        fails.append(f"index.json: {e}")
+    print(f"checked {len(pages)} pages")
+    for f in fails:
+        print("  FAIL", f)
+    print("OK" if not fails else f"{len(fails)} FAILURES")
+    return 1 if fails else 0
+
+
 if __name__ == "__main__":
+    if "--check" in sys.argv:
+        sys.exit(check())
     main()
