@@ -246,6 +246,8 @@ def shell(title, desc, canonical, jsonld, body, active, extra_head="", lang="cs"
         f'<a href="{PATH}/{k}/"{" aria-current=\"page\"" if active == k else ""}>{esc(v["short"])}</a>'
         for k, v in SECTIONS.items())
     rss_title = "Komentáře — Tomáš Havránek"
+    ies = ("https://ies.fsv.cuni.cz/en/contacts/institute-members/78067720" if lang == "en"
+           else "https://ies.fsv.cuni.cz/contacts/institute-members/78067720")
     bio = ("<strong>Tomáš Havránek</strong> is Professor of Economics at the Institute of "
            "Economic Studies, Charles University, Prague. He works on monetary policy, "
            "meta-analysis and meta-research, and was an adviser to the Vice-Governor and "
@@ -303,7 +305,7 @@ def shell(title, desc, canonical, jsonld, body, active, extra_head="", lang="cs"
     <ul class="about-links">
       <li><a href="https://www.tomashavranek.cz/">Osobní stránka</a></li>
       <li><a href="{SITE}/">meta-analysis.cz</a></li>
-      <li><a href="https://ies.fsv.cuni.cz/">IES FSV UK</a></li>
+      <li><a href="{ies}">IES FSV UK</a></li>
       <li><a href="https://zrusme-inflaci.cz/">Zrušme inflaci</a></li>
       <li><a href="https://orcid.org/0000-0002-3158-2539">ORCID</a></li>
       <li><a href="https://scholar.google.com/citations?user=BF0BvBkAAAAJ">Google Scholar</a></li>
@@ -547,6 +549,7 @@ def write_index(items, key=None):
             "https://orcid.org/0000-0002-3158-2539",
             "https://scholar.google.com/citations?user=BF0BvBkAAAAJ",
             "https://ideas.repec.org/f/pha418.html",
+            "https://ies.fsv.cuni.cz/contacts/institute-members/78067720",
             "https://cepr.org/about/people/tomas-havranek",
             "https://metrics.stanford.edu/people/tomas-havranek",
             "https://www.tomashavranek.cz/",
