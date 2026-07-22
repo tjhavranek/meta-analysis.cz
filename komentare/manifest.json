@@ -6,10 +6,10 @@
  "records": {
   "total": 162,
   "by_text_status": {
-   "published_full_text": 127,
+   "published_full_text": 129,
    "author_manuscript": 17,
    "link_only": 15,
-   "publisher_excerpt": 3
+   "publisher_excerpt": 1
   },
   "by_section": {
    "Celostátní komentáře": 66,
@@ -27,18 +27,18 @@
  "files": {
   "corpus.jsonl": {
    "url": "https://meta-analysis.cz/komentare/corpus.jsonl",
-   "bytes": 880533,
-   "sha256": "ab6dd379622b93fa006fb03d957c929fd3edd0f946a9f5466016052cfac0655b"
+   "bytes": 938548,
+   "sha256": "ba938af6af8e4869a950a308f86e3826fc27f3b4e8c0eff84019c1b14caed51b"
   },
   "index.json": {
    "url": "https://meta-analysis.cz/komentare/index.json",
-   "bytes": 895083,
-   "sha256": "908289ba5f147624f9ae1075343f42b28bab0e71a0354a63b175c9b5ba3d973a"
+   "bytes": 953130,
+   "sha256": "e8906c353ba2e1f52656ca13855637986aac06da4df7ce82f336734cdc444b58"
   },
   "all.md": {
    "url": "https://meta-analysis.cz/komentare/all.md",
-   "bytes": 796788,
-   "sha256": "3d9a29d4bb770de4b220d9d364dcdf0c5a3bc9e6f30aa2aa60d968d09c3da410"
+   "bytes": 853171,
+   "sha256": "f1b3753394081666be8ef527bee222c2541f7caa6159768d717c542bc3306c0f"
   },
   "llms.txt": {
    "url": "https://meta-analysis.cz/komentare/llms.txt",
@@ -47,8 +47,8 @@
   },
   "feed.xml": {
    "url": "https://meta-analysis.cz/komentare/feed.xml",
-   "bytes": 882704,
-   "sha256": "1d64b1622788764c4ec8d8781448e10b214a0a2a82827200cfc6d122b28b29de"
+   "bytes": 939821,
+   "sha256": "80ae2162ba9d2a176756e69ec58724a2bed273994549dea3c0aeb5ab8a8c63b1"
   }
  },
  "generated_from": "komentare/src/*.md"
