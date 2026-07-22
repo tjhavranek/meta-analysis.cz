@@ -8,7 +8,7 @@
   "affiliation": "Institut ekonomických studií, FSV Univerzita Karlova"
  },
  "license": "Texty jsou majetkem autora a původních vydavatelů; archiv slouží ke čtení a citaci s uvedením původního zdroje.",
- "count": 201,
+ "count": 199,
  "generated_from": "komentare/src/*.md",
  "items": [
   {
@@ -4346,51 +4346,6 @@
    "image": [
     "https://meta-analysis.cz/komentare/social-img/2025-11-20_p27_1.png"
    ]
-  },
-  {
-   "id": "ze-siti-2023-04-12",
-   "title": "Přátelé,",
-   "date": "2023-04-12",
-   "date_precision": "day",
-   "section": "Ze sítí",
-   "category": "ze-siti",
-   "language": "cs",
-   "outlet": "LinkedIn",
-   "authors": [
-    "Zuzana Havránková"
-   ],
-   "media": "text",
-   "original_url": "https://www.linkedin.com/feed/update/urn%3Ali%3Ashare%3A7051975319590690816",
-   "url": "https://meta-analysis.cz/komentare/ze-siti/#2023-04-12",
-   "text_status": "published_full_text",
-   "genre": "social_post",
-   "provenance": "self_published",
-   "word_count": 63,
-   "text": "Přátelé,\nkaždoročně věnuje skupina českých lékařů měsíce svého života budování nemocnice a pomoci nemocným v keňském Itibu. Možná je znáte z filmu Daleko za sluncem. Některé dobrovolníky osobně znám; zrovna se snaží o sbírku na přístroj, který by zlepšil či zachránil život mnohým. Sbírka měsíce stagnuje, cíl je daleko.\n\nProsím pomozte jim pomáhat na\nhttps://lnkd.in/eR_cCtDx\n\nJako každá legit donation i tahle je tax-deductible.",
-   "image": [
-    "https://meta-analysis.cz/komentare/social-img/2023-04-12_kenya.jpeg"
-   ]
-  },
-  {
-   "id": "ze-siti-2022-07-20",
-   "title": "No, ten chlápek na videu by potřeboval lepší sestřih a lekce herectví, ale celkově je na tom webu hodně inform",
-   "date": "2022-07-20",
-   "date_precision": "day",
-   "section": "Ze sítí",
-   "category": "ze-siti",
-   "language": "cs",
-   "outlet": "LinkedIn",
-   "authors": [
-    "Zuzana Havránková"
-   ],
-   "media": "text",
-   "original_url": "https://www.linkedin.com/feed/update/urn%3Ali%3Ashare%3A6955415110903341057",
-   "url": "https://meta-analysis.cz/komentare/ze-siti/#2022-07-20",
-   "text_status": "published_full_text",
-   "genre": "social_post",
-   "provenance": "self_published",
-   "word_count": 22,
-   "text": "No, ten chlápek na videu by potřeboval lepší sestřih a lekce herectví, ale celkově je na tom webu hodně informací. Zrusme-inflaci.cz!\nhttps://lnkd.in/eT5pwTaM"
   }
  ]
 }

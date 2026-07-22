@@ -2,7 +2,7 @@
 
 Publicistika Tomáše Havránka a Zuzany Havránkové: komentáře pro celostátní média, sloupky pro litomyšlskou Lilii a rozhovory. Texty jsou zde archivovány v plném znění s odkazem na původní vydání.
 
-Tento soubor obsahuje plné znění všech textových položek (160 z celkem 176). Zbývající položky jsou audio a video, které archiv vede pouze odkazem, a v tomto souboru nejsou; jejich metadata najdete v index.json a corpus.jsonl. Samostatně jsou vedeny příspěvky ze sociálních sítí (25), které mají vlastní stránku https://meta-analysis.cz/komentare/ze-siti/ a v index.json i corpus.jsonl jsou označeny jako genre=social_post.
+Tento soubor obsahuje plné znění všech textových položek (160 z celkem 176). Zbývající položky jsou audio a video, které archiv vede pouze odkazem, a v tomto souboru nejsou; jejich metadata najdete v index.json a corpus.jsonl. Samostatně jsou vedeny příspěvky ze sociálních sítí (23), které mají vlastní stránku https://meta-analysis.cz/komentare/ze-siti/ a v index.json i corpus.jsonl jsou označeny jako genre=social_post.
 
 ---
 
