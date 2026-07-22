@@ -232,3 +232,5 @@ main { padding: 2.75rem 0 4rem; }
 .post img { display: block; max-width: 100%; height: auto; margin: 1rem 0 0;
             border: 1px solid var(--rule); border-radius: 4px; }
 .post-note { font-size: 0.9rem; color: var(--faint); max-width: var(--measure); }
+.post-src { margin-left: 0.75rem; }
+.post-src::before { content: "· "; color: var(--rule); }

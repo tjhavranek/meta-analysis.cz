@@ -895,29 +895,35 @@ def write_socials_page():
 
     blocks, parts = [], []
     for p in posts:
-        approx = " (přibližné datum)" if p.get("approx") else ""
+        lang = p.get("lang", "en")
         imgs = "".join(
             f'\n        <img src="{PATH}/social-img/{esc(f)}" alt="" loading="lazy" '
             f'decoding="async" width="800">'
             for f in p.get("images", []))
+        orig = (f' <a class="post-src" href="{esc(p["url"])}" rel="nofollow">'
+                f'{"originál" if lang == "cs" else "original"}</a>') if p.get("url") else ""
         blocks.append(
-            f'      <article class="post" id="{esc(p["anchor"])}" lang="{p.get("lang", "en")}">\n'
+            f'      <article class="post" id="{esc(p["anchor"])}" lang="{lang}">\n'
             f'        <p class="post-date"><a href="#{esc(p["anchor"])}">'
-            f'<time datetime="{p["date"]}">{esc(cs_date(p["date"]))}</time></a>'
-            f'<span class="post-approx">{esc(approx)}</span></p>\n'
+            f'<time datetime="{p["date"]}">{esc(cs_date(p["date"], lang=lang))}</time></a>'
+            f'{orig}</p>\n'
             f'        {_social_html(p["text"])}{imgs}\n'
             f'      </article>')
-        parts.append({
+        node = {
             "@type": "SocialMediaPosting",
             "@id": f"{BASE}/ze-siti/#{p['anchor']}",
             "headline": p["text"].split("\n")[0][:110],
-            "datePublished": p["date"],
-            "inLanguage": p.get("lang", "en"),
+            "datePublished": p.get("datetime", p["date"]).replace(" ", "T"),
+            "inLanguage": lang,
             "author": {"@type": "Person", "name": "Zuzana Havránková",
                        "identifier": ORCIDS["Zuzana Havránková"]},
-            "isBasedOn": "https://www.linkedin.com/in/zuzanairsova/recent-activity/all/",
             "text": p["text"],
-        })
+        }
+        if p.get("url"):
+            node["sameAs"] = p["url"]
+        if p.get("images"):
+            node["image"] = [f"{SITE}{PATH}/social-img/{f}" for f in p["images"]]
+        parts.append(node)
 
     jsonld = {"@context": "https://schema.org", "@graph": [
         {"@type": "CollectionPage", "@id": f"{BASE}/ze-siti/", "url": f"{BASE}/ze-siti/",
