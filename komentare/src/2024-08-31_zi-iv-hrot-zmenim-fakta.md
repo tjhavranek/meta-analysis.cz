@@ -63,7 +63,7 @@ To se asi týká práce v korporátu, ale na univerzitě byli velmi milí. Obec
 
 Nechtěla jste tam zůstat? Univerzitní prostředí, výzkum je v USA na špičkové úrovni
 
-Ano, ale jsou tam dva zásadní problémy. Zaprvé je to za zločinnost, která velmi znepříjemňuje normální život, třeba s dětmi. Z toho důvodu se spousta lidí z Kalifornie stěhuje pryč. Za druhé je to cenzura na univerzitě, kdy se velmi hlídá to, co kdo řekne do médií nebo napíše na Twitter. Zejména se to týká palestinské otázky, genderových otázek, a právě i změny klimatu. Přes všechny problémy buďme rádi za svobodu projevu, jakou máme v Česku a konkrétně v univerzitním prostředí. Podle některých žebříčků jsme v tom první na světě. Já to mohu potvrdit a měli bychom na to být hrdí.
+Ano, ale jsou tam dva zásadní problémy. Zaprvé je to ta zločinnost, která velmi znepříjemňuje normální život, třeba s dětmi. Z toho důvodu se spousta lidí z Kalifornie stěhuje pryč. Za druhé je to cenzura na univerzitě, kdy se velmi hlídá to, co kdo řekne do médií nebo napíše na Twitter. Zejména se to týká palestinské otázky, genderových otázek, a právě i změny klimatu. Přes všechny problémy buďme rádi za svobodu projevu, jakou máme v Česku a konkrétně v univerzitním prostředí. Podle některých žebříčků jsme v tom první na světě. Já to mohu potvrdit a měli bychom na to být hrdí.
 
 Pomohla vám tam nějaká česko-slovenská vlastnost/skill?
 
@@ -147,7 +147,7 @@ Jak jsme nakousli výše, v řadě oborů státní správy už funguje nejen č
 
 Nepodmíněný příjem: výzkumy probíhají, myslím, že v Nizozemsku, ve Finsku mimo jiné - ale k praxi se zatím nepřistoupilo. Je to do budoucna cesta? S vyšším zapojením robotizace a AI do pracovních procesů.
 
-Pokud chceme zombifikovat velkou část naší populaci a umožnit někomu jen ležet s mobilem v ruce, aniž by cokoli dělal, pak je nepodmíněný příjem výborný prostředek. Máme určitá data z pandemie, kdy některé země přistoupily k něčemu podobnému. Trvalo pak velmi dlouho dostat lidi zpátky do práce. K nepodmíněnému příjmu není důvod: chceme lidi motivovat, aby pracovali. Nejen kvůli vyššímu HDP, ale kvůli disciplíně a kvalitě života, kterou práce přináší, kvůli prevenci kriminality a duševních poruch. Robotizace a umělá inteligence nakonec zvýší produktivitu nás všech, zvýší naše platy a vytvoří nová pracování místa – tak ti bylo se všemi trhem ověřenými inovacemi v historii.
+Pokud chceme zombifikovat velkou část naší populaci a umožnit někomu jen ležet s mobilem v ruce, aniž by cokoli dělal, pak je nepodmíněný příjem výborný prostředek. Máme určitá data z pandemie, kdy některé země přistoupily k něčemu podobnému. Trvalo pak velmi dlouho dostat lidi zpátky do práce. K nepodmíněnému příjmu není důvod: chceme lidi motivovat, aby pracovali. Nejen kvůli vyššímu HDP, ale kvůli disciplíně a kvalitě života, kterou práce přináší, kvůli prevenci kriminality a duševních poruch. Robotizace a umělá inteligence nakonec zvýší produktivitu nás všech, zvýší naše platy a vytvoří nová pracovní místa – tak to bylo se všemi trhem ověřenými inovacemi v historii.
 
 Velmi diskutovaným tématem je práce z domova (během covidu), má to obecně přínos?
 
