@@ -53,6 +53,9 @@
   ],
   "image_alt": [
    "Two photographs from the Nitoboxing gym in Palo Alto: Zuzana Havránková standing with a trainer beside the ring, and the gym's chalkboard sign reading “Boxing — it's cheaper than therapy”."
+  ],
+  "comment_links": [
+   "https://www.instagram.com/nito_boxing_paloalto/"
   ]
  },
  {
@@ -173,6 +176,9 @@
   ],
   "image_alt": [
    "Figure from the updated Reporting Guidelines for Meta-Analysis in Economics announced in the post."
+  ],
+  "comment_links": [
+   "https://github.com/tjhavranek/research-audit-duel-protocol"
   ]
  },
  {
@@ -193,6 +199,9 @@
   ],
   "image_alt": [
    "Figure from the pre-registered revision of the meta-analysis on beauty and professional success described in the post."
+  ],
+  "comment_links": [
+   "https://doi.org/10.17605/OSF.IO/B3D7W"
   ]
  },
  {
@@ -276,6 +285,13 @@
   ],
   "image_alt": [
    "Funnel plot of estimates of the beauty effect on earnings. The bulk of estimates cluster near zero; a red line marks the mean of 4.3 per cent, and estimates for sex workers, shown separately in red, sit well to the right of it."
+  ],
+  "comment_links": [
+   "https://www.easymeta.org/",
+   "https://www.nature.com/articles/s41467-025-63261-0",
+   "https://meta-analysis.cz/beauty",
+   "https://fbartos.github.io/RoBMA/",
+   "https://onlinelibrary.wiley.com/doi/full/10.1002/jrsm.1701"
   ]
  },
  {
@@ -393,6 +409,9 @@
   ],
   "image_alt": [
    "Two funnel plots from the Nature Communications paper, contrasting selection on estimates with selection on standard errors."
+  ],
+  "comment_links": [
+   "https://www.easymeta.org"
   ]
  }
 ]
