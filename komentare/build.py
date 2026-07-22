@@ -385,10 +385,6 @@ FILTER = """    <div class="filter">
         <button class="chip" data-cat="english" aria-pressed="false">English</button>
       </div>
       <p class="count js-only" id="count" role="status" aria-live="polite"></p>
-      <p class="count js-only search-note">Hledá se v titulcích, názvech médií a jménech autorů.
-        Fulltext ve všech textech nabízí
-        <a href="https://www.google.com/search?q=site%3Ameta-analysis.cz%2Fkomentare+">Google</a>
-        nebo <a href="/komentare/index.json">index.json</a>.</p>
     </div>
 """
 
