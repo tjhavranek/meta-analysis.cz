@@ -457,14 +457,22 @@ SCRIPT = """<script>
     count.textContent = n + (n === 1 ? ' položka' : (n < 5 ? ' položky' : ' položek'));
   }
   q.addEventListener('input', apply);
+  function select(c) {
+    cat = c.dataset.cat;
+    chips.forEach(function (o) { o.setAttribute('aria-pressed', o === c ? 'true' : 'false'); });
+    apply();
+  }
   chips.forEach(function (c) {
-    c.addEventListener('click', function () {
-      cat = c.dataset.cat;
-      chips.forEach(function (o) { o.setAttribute('aria-pressed', o === c ? 'true' : 'false'); });
-      apply();
-    });
+    c.addEventListener('click', function () { select(c); });
   });
-  apply();
+  // A filter can be linked to: /komentare/?filtr=zuzana. Zuzana points at that from
+  // her own site, so the link has to survive being shared. Without JS every item is
+  // still in the HTML, so the link degrades to the full list rather than to nothing.
+  var want = new URLSearchParams(location.search).get('filtr');
+  var pre = want && Array.prototype.find.call(chips, function (c) {
+    return c.dataset.cat === want;
+  });
+  if (pre) { select(pre); } else { apply(); }
 })();
 </script>
 """
