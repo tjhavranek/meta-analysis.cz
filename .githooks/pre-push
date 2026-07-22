@@ -19,14 +19,22 @@ PY=$(command -v python || command -v python3) || { echo "pre-push: python not fo
 
 fail() { echo ""; echo "PUSH BLOCKED: $1"; echo ""; exit 1; }
 
+# The generator both writes the page blocks and enriches tools/papers.json from
+# the pages, so a first run can leave input for a second. Iterate to a fixed
+# point (it is idempotent) so the author has one set of files to commit, not two.
 echo "pre-push: regenerating the metadata layer (same as CI)..."
-if ! "$PY" tools/generate_seo.py > /tmp/_seo_gen.log 2>&1; then
-  sed -n '1,40p' /tmp/_seo_gen.log
-  fail "tools/generate_seo.py failed.
+for i in 1 2 3; do
+  if ! "$PY" tools/generate_seo.py > /tmp/_seo_gen.log 2>&1; then
+    sed -n '1,40p' /tmp/_seo_gen.log
+    fail "tools/generate_seo.py failed.
   Usually this means a project folder has no entry in tools/papers.json.
   Every folder with an index.html needs one (project, title, abstract,
   authors, year) or Google Scholar tags cannot be generated and CI goes red."
-fi
+  fi
+  snapshot=$(git status --porcelain -- . | sha1sum)
+  [ "${prev_snapshot:-}" = "$snapshot" ] && break
+  prev_snapshot="$snapshot"
+done
 sed -n '1,12p' /tmp/_seo_gen.log
 
 if [ -f komentare/build.py ]; then
