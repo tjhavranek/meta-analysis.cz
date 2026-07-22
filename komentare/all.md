@@ -2,7 +2,7 @@
 
 Publicistika Tomáše Havránka a Zuzany Havránkové: komentáře pro celostátní média, sloupky pro litomyšlskou Lilii a rozhovory. Texty jsou zde archivovány v plném znění s odkazem na původní vydání.
 
-Tento soubor obsahuje plné znění všech textových položek (149 z celkem 164). Zbývající položky jsou audio a video, které archiv vede pouze odkazem, a v tomto souboru nejsou; jejich metadata najdete v index.json a corpus.jsonl.
+Tento soubor obsahuje plné znění všech textových položek (151 z celkem 166). Zbývající položky jsou audio a video, které archiv vede pouze odkazem, a v tomto souboru nejsou; jejich metadata najdete v index.json a corpus.jsonl.
 
 ---
 
@@ -1056,6 +1056,34 @@ Nefunguje tedy nová mantra českých politiků: Nalijme peníze do vzdělání 
 Důraz na investice je užitečný v tom, že boří českou opatrnost a haléřový management. V životě je potřeba i zariskovat, zadlužit se, investovat. Jen pozor, abychom se nezadlužili kvůli projektům, kde přínosy nemohou převážit náklady. I když jsou to sexy nápady typu rychlovlaků a i když je občas mají v zahraničí. Megaprojekty vyžadují pečlivou cost-benefit analýzu. Buď jak buď, veřejné investice o životní úrovni našich dětí a vnoučat nerozhodnou.
 
 Co potáhne kvalitu života, je ochota spoluobčanů pracovat a podnikat. O růstu nakonec rozhodne i ta opravna obuvi na nádraží, ta pralinkárna na náměstí, ten startup u kostela. Podnikání je rizikové, odpovědnost pro řadu z nás nepředstavitelná. Užitečné inovace nejsou jen velké vynálezy, ale i drobné zlepšováky ve všech oblastech života. Chce-li vláda prosperitu, bude se inspirovat vedle investic i liberálním přístupem zemí jako Singapur k regulaci podnikání a motivaci k práci.
+
+---
+
+## Hezčí lidé vydělávají víc. Kvůli kráse to ale není
+
+*Seznam Zprávy, 7. června 2024. Zuzana Havránková.*
+
+Zdroj: https://www.seznamzpravy.cz/clanek/tech-technologie-veda-komentar-hezci-lide-vydelavaji-vic-kvuli-krase-to-ale-neni-253079
+
+Podle vědeckých studií vydělávají přitažliví lidé v průměru o 5 % víc než ti průměrného vzhledu. A u pracovníků v sexuálních službách a politiků je rozdíl dokonce větší. Možná překvapivě zkoumá vliv krásy mnoho ekonomů, a to ze dvou důvodů: zaprvé, je to zábavnější než národní účetnictví. Zadruhé, výsledek je užitečný pro výpočet odškodného za autonehody. Na základě tohoto výzkumu též některé americké státy zvažují ochranu „ošklivých“ lidí před diskriminací.
+
+Jak se to vlastně počítá? Nejlepší by byl kontrolovaný experiment. Ale i ekonom nakonec uzná, že není OK znetvořit třicet náhodných lidí kvůli článku v Nature. Obcházíme to třeba tak, že porovnáváme lidi před plastickou operací a po ní. Pandemie koronaviru byla také přirozeným experimentem, protože zaměstnavatelé neměli se zaměstnanci osobní kontakt. Podobně to bylo na univerzitách mezi profesory a studenty.
+
+Možná překvapivě se většina lidí shodne na tom, co znamená krása. Krása je hlavně symetrie obličeje. Hodnotí-li různí lidé atraktivitu tváře, málokdy se významně odchýlí od symetrie měřené umělou inteligencí nebo jednoduchým algoritmem. To mimochodem platí pro různé kultury a rasy. Jakmile tedy máme k fotografiím přiřazeno skóre (většinou od 1 do 5), můžeme se dívat na vztah mezi krásou a platem, potažmo výkonem.
+
+Vědeckých studií na tohle téma existuje 67. [Dáme-li je dohromady](https://www.econstor.eu/bitstream/10419/289435/1/Bortnikova-Beauty-and-professional-success.pdf), zjistíme, že posun od hodnoty 3 (průměr) na 4 (hezký) nebo 5 (krásný) zvýší plat o 5 %. Jedná se tak o diskriminaci na základě vzhledu, a měli bychom tedy chránit „ošklivé“ zaměstnance? Logika by v tom byla totožná jako u platové diskriminace žen. Jenže pak bychom se nejspíš nezastavili nikdy, protože další výzkum ukazuje, že na plat má vliv i výška (u mužů) a křivky (u žen).
+
+Nová analýza ukazuje, že o svévolnou diskriminaci se pravděpodobně nejedná, což nám napovídají tři zjištění. Zaprvé, vliv krásy na výkon je v průměru zhruba stejný jako vliv na plat – kdyby zaměstnavatelé diskriminovali na základě vlastního vkusu, byl by vliv na plat větší než vliv na výkon. Takhle to vypadá, že si jen rádi připlatí za produktivnější zaměstnance.
+
+Zadruhé, v oborech, kde vzhled není pro práci důležitý (třeba analytici, výzkumníci, učitelé), nové studie ukazují minimální vliv krásy na plat. Nikoli překvapivě je vzhled nejdůležitější pro pracovníky v sexuálních službách a pro politiky. Zatřetí, u průměrné populace většinou platí, že efekt krásy zmizí, když výzkumník zároveň bere v úvahu schopnosti zaměstnanců; a to jak intelektuální, tak společenské.
+
+Hezčí lidé ovšem bývají schopnější. Jen o pár procent, ale stejně – jak to? Je dobře možné, že lepší vzhled pomáhá k vyššímu sebevědomí, což se pak může překlopit v lepší výkonnost v kolektivu, vyšší asertivitu a vyšší plat.
+
+Výzkum také naznačuje, že vzhled je důležitý už v dětství. Hezčí děti získávají trochu více pozornosti rodičů a učitelů, což jim také v životě pomáhá.
+
+Méně přijatelnou možností je, že krásnější lidé jsou v průměru trošičku inteligentnější. Biologové se na tom neshodnou, ale pomohlo by to vysvětlit rozdíly mezi ekonomickými studiemi. Inteligence možná souvisí s celkovým „vyladěním“ organismu, které se projevuje i větší symetrií obličeje. Tento mechanismus mohl způsobit genetický vztah mezi inteligencí a symetrií obličeje, kterou lidé vnímají jako krásu.
+
+Buď jak buď, ti méně krásní z nás si nemusí zoufat: pět procent je málo, plastická operace se nevyplatí. Vliv krásy můžeme snadno přebít trochou vzdělání navíc nebo zapracováním na sebevědomí. A pokud pořád nejste klidní, pak vězte, že vlastní atraktivitu můžete podle výzkumu dramaticky zvýšit tím, že se často smějete a chováte se energicky.
 
 ---
 
@@ -4212,6 +4240,28 @@ Změna klimatu lidstvu škodí. Umíme solidně spočítat, jak moc: vědci, vč
 Dvě poznámky na závěr. Zaprvé, z dosud nejpodrobnější studie o změně klimatu do roku 2200 plyne, že důsledky pro ČR budou neutrální. To jste věděli? Ani špatné, ani dobré. Prima, nejsme sobečtí a tlumením emisí pomáháme jiným. Ale je fér si přiznat, že je to totéž, jako bychom posílali peníze na jih – bohatým i chudým. Zadruhé, v angličtině bych se tenhle text už zveřejnit neodvážil, protože živím čtyři děti. V zemích, které mi jsou stále ještě v mnohém vzorem, dnes za zpochybnění dogmat hrozí lynč na Twitteru a ztráta práce na univerzitě.
 
 Autor působí v Institutu ekonomických studií FSV UK
+
+---
+
+## Porazit Babiše může generál Pavel i rektorka Nerudová
+
+*Hospodářské noviny, 3. listopadu 2021. Zuzana Havránková.*
+
+Zdroj: https://archiv.hn.cz/c1-66993840-porazit-babise-muze-general-pavel-i-rektorka-nerudova
+
+Ať už prezidentské volby proběhnou v lednu 2023 či mnohem dříve, do druhého kola postoupí Andrej Babiš, rozhodne-li se kandidovat. Pole možných vyzyvatelů je široké, ale z dosud dostupných informací vyplývá, že největší šanci Babiše porazit mají generál Pavel a rektorka Nerudová.
+
+V okamžiku psaní tohoto komentáře nemáme standardní průzkumy pro prezidentské volby. Několik kandidátů v čele s Andrejem Babišem si ale nechalo vypracovat průzkumy interní. Jejich výsledky postupně probublávají a odrážejí se v sázkových kurzech. V nich je Andrej Babiš s kurzem 3:1 mnohem slabším koněm, než se zdá z mediálního pokrytí budoucích voleb.
+
+Důvodem nevysokých šancí Andreje Babiše je, že dva kandidáti mají ve druhém kole šanci zaujmout slušnou část voličů, kteří minule podpořili Miloše Zemana. Prvním je generál Petr Pavel, jehož autorita a životní příběh si může získat vedle liberálních i řadu národoveckých voličů. Druhou je rektorka Danuše Nerudová, která je coby předsedkyně Komise pro spravedlivé důchody nejvíce nalevo z dosud známých liberálních kandidátů – ale zároveň ne tolik, aby to ve druhém kole odradilo voliče pravice.
+
+To je naopak případ charismatického odborářského šéfa Josefa Středuly, který má šance v prvním kole, ale v případě postupu do kola druhého by řada pravicových voličů zřejmě zůstala doma či dokonce preferovala Andreje Babiše. Středulovy akcie by vystřelily v případě, kdyby se Andrej Babiš s vidinou pravděpodobné porážky ve druhém kole nakonec rozhodl nekandidovat.
+
+Kurzy sázkových kanceláří zatím dávají největší naděje vedle Babiše generálu Pavlovi s kurzem 3,3:1. Kurz pod 10:1 má kromě Babiše, Pavla a Nerudové také výborně kvalifikovaný Pavel Fischer, který však s sebou nese závaží v podobě porážky ve volbě minulé. Další kandidáty lze v současné době zařadit do kategorie outsiderů, ač na překvapení je času dost.
+
+Sázkaři se často mýlí, ale na rozdíl od průzkumů jsou kurzy podloženy reálnými penězi. Kurzy reagují na průzkumy, zároveň ale vstřebávají i všechny další informace, z nichž ne všechny jsou jinak veřejně dostupné. Koho zajímají výsledky budoucích voleb, měl by tedy sledovat průzkumy i kurzy. Například výsledek nedávných voleb do sněmovny byl den dopředu sázkovými kurzy předpovězen velmi dobře, jen s výjimkou finálního přesunu voličů od PirSTAN ke SPOLU.
+
+Dnes není zřejmé, kdy prezidentské volby proběhnou, natož jak dopadnou. Klíčovou roli v kampani bude hrát vysoká inflace, protože složení rady ČNB je pod výlučnou kontrolou prezidenta. Každopádně postoupí-li do druhého kola protikandidát, jenž bude schopen kromě liberálů oslovit i část národoveckých nebo levicových voličů, Andrej Babiš může snadno prohrát.
 
 ---
 

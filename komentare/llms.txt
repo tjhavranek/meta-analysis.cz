@@ -2,7 +2,7 @@
 
 > Publicistika Tomáše Havránka a Zuzany Havránkové: komentáře pro celostátní média, sloupky pro litomyšlskou Lilii a rozhovory. Texty jsou zde archivovány v plném znění s odkazem na původní vydání.
 
-Publicistika: 164 položek, 2016–2026. Plné znění každého textu je na uvedené adrese; zdrojový Markdown je v /komentare/src/.
+Publicistika: 166 položek, 2016–2026. Plné znění každého textu je na uvedené adrese; zdrojový Markdown je v /komentare/src/.
 
 ## Celostátní komentáře
 
@@ -18,6 +18,7 @@ Komentáře a sloupky pro celostátní média — měnová politika, inflace, ve
 - [Naděje na cenovou stabilitu? Do ČNB se vrací nezávislý výzkum](https://meta-analysis.cz/komentare/nadeje-na-cenovou-stabilitu-cnb-vyzkum/) — Seznam Zprávy, 6. prosince 2024
 - [V čem Češi poráží Ameriku](https://meta-analysis.cz/komentare/ln-cesi-amerika/) — Lidové noviny, 9. září 2024
 - [Odkud se bere ekonomický růst? Investice prosperitu nezajistí](https://meta-analysis.cz/komentare/odkud-se-bere-ekonomicky-rust/) — Seznam Zprávy, 12. června 2024
+- [Hezčí lidé vydělávají víc. Kvůli kráse to ale není](https://meta-analysis.cz/komentare/zi-sz-hezci-lide/) — Seznam Zprávy, 7. června 2024
 - [Rychlovlaky v Česku? Skončí to hůř než kanál Dunaj–Odra–Labe](https://meta-analysis.cz/komentare/rychlovlaky-v-cesku/) — Seznam Zprávy, 15. dubna 2024
 - [Česko má skvělou ekonomickou teorii, ale bohužel slabou praxi](https://meta-analysis.cz/komentare/cesko-skvela-teorie-slaba-praxe/) — Seznam Zprávy, 17. února 2024
 - [Jak naučit děti perfektně anglicky bez námahy a zadarmo](https://meta-analysis.cz/komentare/jak-naucit-deti-anglicky/) — Seznam Zprávy, 18. ledna 2024
@@ -58,6 +59,7 @@ Komentáře a sloupky pro celostátní média — měnová politika, inflace, ve
 - [Jak zkrotit inflaci? Přišel čas odčinit intervence proti koruně](https://meta-analysis.cz/komentare/zkrotit-inflaci-odcinit-intervence/) — Hospodářské noviny, 4. ledna 2022
 - [Éru levných peněz vystřídají roky šetření. Z inflační krize se ale neprošetříme, když zároveň neporosteme](https://meta-analysis.cz/komentare/era-levnych-penez-roky-setreni/) — Hospodářské noviny, 7. prosince 2021
 - [Klimatický extremismus škodí víc než globální oteplování](https://meta-analysis.cz/komentare/klimaticky-extremismus/) — Hospodářské noviny, 10. listopadu 2021
+- [Porazit Babiše může generál Pavel i rektorka Nerudová](https://meta-analysis.cz/komentare/zi-hn-porazit-babise/) — Hospodářské noviny, 3. listopadu 2021
 - [Když nenajdeme nového Rašína, ochutnáme dvojcifernou inflaci](https://meta-analysis.cz/komentare/kdyz-nenajdeme-rasina-dvojciferna-inflace/) — Hospodářské noviny, 19. října 2021
 - [ČNB vyrazila správným směrem, ale pomalu. Úroky musí růst rychleji, aktuální inflační skok to podtrhuje](https://meta-analysis.cz/komentare/cnb-spravnym-smerem-ale-pomalu/) — Hospodářské noviny, 10. září 2021
 - [Výzkum centrální banky dělá Česku dobrou reklamu](https://meta-analysis.cz/komentare/vyzkum-centralni-banky-dela-cesku-dobrou/) — Hospodářské noviny, 4. srpna 2021
