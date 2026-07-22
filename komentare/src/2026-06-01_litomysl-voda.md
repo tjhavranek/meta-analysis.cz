@@ -6,7 +6,7 @@ url: "https://www.litomysl.cz/soubor/17804022086173665_lilie_2026_6.pdf"
 date: "2026-06-01"
 date_precision: "month"
 headline: "Budou mít naše vnoučata co pít?"
-byline: "Zuzana Iršová Havránková"
+byline: "Zuzana Havránková"
 source: "draft"
 word_count: "417"
 ---

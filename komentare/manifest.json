@@ -1,5 +1,5 @@
 {
- "name": "Komentáře — Tomáš Havránek, Zuzana Iršová Havránková",
+ "name": "Komentáře — Tomáš Havránek, Zuzana Havránková",
  "url": "https://meta-analysis.cz/komentare/data/",
  "corpus_updated": "2026-07-01",
  "temporal_coverage": "2016-11-30/2026-07-01",
@@ -26,28 +26,28 @@
  "files": {
   "corpus.jsonl": {
    "url": "https://meta-analysis.cz/komentare/corpus.jsonl",
-   "bytes": 1010797,
-   "sha256": "b300ceccad614a2974ebc3ed9c78a35d8873f081e2094323e2aa073ba052d77f"
+   "bytes": 1010626,
+   "sha256": "dc93e776808cf7963bc296ed7bc5cdca286b147436fb697db6ee382064c28026"
   },
   "index.json": {
    "url": "https://meta-analysis.cz/komentare/index.json",
-   "bytes": 1025601,
-   "sha256": "bfd78c44b2e6f32bb3b99198bf32119cf3ae96325811d6cf57f4c9af684268fe"
+   "bytes": 1025421,
+   "sha256": "13d5d2f1202f7e47bd8e80d7a834e20ce1873ca5f1ec045ef28261d787eb7508"
   },
   "all.md": {
    "url": "https://meta-analysis.cz/komentare/all.md",
-   "bytes": 924668,
-   "sha256": "02768349a8ec0d7a0fc3f652015c0fcba27b2f5c12cefa18a41cf5381cf1131e"
+   "bytes": 924488,
+   "sha256": "96e762de8ed762b01cfec2b833274d1a3204173c154098f44e870f822ab4f6d4"
   },
   "llms.txt": {
    "url": "https://meta-analysis.cz/komentare/llms.txt",
-   "bytes": 29403,
-   "sha256": "da899f11b9476ebdc520d4b495be57e412659f04aa8f428077dc6a63b67f8a35"
+   "bytes": 29394,
+   "sha256": "6a0fa169439c000936e59df8dc5857d8cbe73fbb32adeb2e81c5e6956735b8d5"
   },
   "feed.xml": {
    "url": "https://meta-analysis.cz/komentare/feed.xml",
-   "bytes": 1013297,
-   "sha256": "47cdc82a6184cb151f7373832bfeead58965d1a0e6219005e2a44e82be579294"
+   "bytes": 1013288,
+   "sha256": "49c8ff3898d1fbb2952ce2301e8c9352657b1b261cd292e9fd26a8e2c5d5247e"
   }
  },
  "generated_from": "komentare/src/*.md"

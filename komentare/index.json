@@ -1,5 +1,5 @@
 {
- "name": "Komentáře — Tomáš Havránek, Zuzana Iršová Havránková",
+ "name": "Komentáře — Tomáš Havránek, Zuzana Havránková",
  "description": "Publicistika Tomáše Havránka a Zuzany Havránkové: komentáře pro celostátní média, sloupky pro litomyšlskou Lilii a rozhovory. Texty jsou zde archivovány v plném znění s odkazem na původní vydání.",
  "url": "https://meta-analysis.cz/komentare/",
  "author": {
@@ -106,7 +106,7 @@
    "language": "cs",
    "outlet": "Lilie",
    "authors": [
-    "Zuzana Iršová Havránková"
+    "Zuzana Havránková"
    ],
    "media": "text",
    "original_url": "https://www.litomysl.cz/soubor/17804022086173665_lilie_2026_6.pdf",
@@ -249,7 +249,7 @@
    "outlet": "Hospodářské noviny",
    "authors": [
     "Tomáš Havránek",
-    "Zuzana Iršová Havránková"
+    "Zuzana Havránková"
    ],
    "media": "text",
    "original_url": "https://archiv.hn.cz/c1-67828260-jedna-ai-nestaci-nechte-modely-spolu-bojovat",
@@ -271,7 +271,7 @@
    "language": "en",
    "outlet": "MAER-Net",
    "authors": [
-    "Zuzana Iršová Havránková",
+    "Zuzana Irsova",
     "Tomáš Havránek"
    ],
    "media": "text",
@@ -379,7 +379,7 @@
    "outlet": "Seznam Zprávy",
    "authors": [
     "Tomáš Havránek",
-    "Zuzana Iršová Havránková"
+    "Zuzana Havránková"
    ],
    "media": "text",
    "original_url": "https://www.seznamzpravy.cz/clanek/ekonomika-komentar-navod-pro-dluzniky-a-stradatele-jak-prezit-dluh-vetsi-nez-ekonomika-281287",
@@ -444,7 +444,7 @@
    "language": "cs",
    "outlet": "Lilie",
    "authors": [
-    "Zuzana Iršová Havránková"
+    "Zuzana Havránková"
    ],
    "media": "text",
    "original_url": "https://www.litomysl.cz/soubor/17488424982675570_lilie_2025_6.pdf",
@@ -528,7 +528,7 @@
    "language": "cs",
    "outlet": "Lilie",
    "authors": [
-    "Zuzana Iršová Havránková"
+    "Zuzana Havránková"
    ],
    "media": "text",
    "original_url": "https://www.litomysl.cz/soubor/17437666198041909_lilie_2025_4.pdf",
@@ -550,7 +550,7 @@
    "outlet": "Seznam Zprávy",
    "authors": [
     "Tomáš Havránek",
-    "Zuzana Iršová Havránková"
+    "Zuzana Havránková"
    ],
    "media": "text",
    "original_url": "https://www.seznamzpravy.cz/clanek/domaci-zivot-v-cesku-komentar-patek-pro-planetu-ve-skolnich-jidelnach-zemi-nepomuze-a-detem-uskodi-271750",
@@ -699,7 +699,7 @@
    "outlet": "Lidové noviny",
    "authors": [
     "Tomáš Havránek",
-    "Zuzana Iršová Havránková"
+    "Zuzana Havránková"
    ],
    "media": "text",
    "original_url": "https://www.lidovky.cz/nazory/amerika-cesko-historicke-srovnani-revoluce.A240909_133225_ln_nazory_halu",
@@ -1192,7 +1192,7 @@
    "outlet": "SYRI",
    "authors": [
     "Tomáš Havránek",
-    "Zuzana Iršová Havránková"
+    "Zuzana Havránková"
    ],
    "media": "text",
    "original_url": "https://www.syri.cz/predstavujeme/havrankovi-ekonomii-se-ve-verejnem-rozhodovani-vyhnout-neda",
@@ -1465,7 +1465,7 @@
    "language": "en",
    "outlet": "MAER-Net",
    "authors": [
-    "Zuzana Iršová Havránková",
+    "Zuzana Irsova",
     "Pedro R. D. Bom",
     "Tomáš Havránek",
     "Heiko Rachinger"
@@ -1489,7 +1489,7 @@
    "outlet": "VoxEU / CEPR",
    "authors": [
     "Tomáš Havránek",
-    "Zuzana Iršová Havránková"
+    "Zuzana Irsova"
    ],
    "media": "text",
    "original_url": "https://cepr.org/voxeu/columns/how-financial-incentives-affect-performance",
@@ -1550,7 +1550,7 @@
    "language": "cs",
    "outlet": "Lilie",
    "authors": [
-    "Zuzana Iršová Havránková"
+    "Zuzana Havránková"
    ],
    "media": "text",
    "original_url": "https://www.litomysl.cz/soubor/1675429568941_lilie_2023_2.pdf",
@@ -2830,7 +2830,7 @@
    "outlet": "VoxEU / CEPR",
    "authors": [
     "Tomáš Havránek",
-    "Zuzana Iršová Havránková"
+    "Zuzana Irsova"
    ],
    "media": "text",
    "original_url": "https://cepr.org/voxeu/columns/armington-elasticity-and-international-trade-models-fifty-years",
@@ -3078,7 +3078,7 @@
    "authors": [
     "Sebastian Gechert",
     "Tomáš Havránek",
-    "Zuzana Iršová Havránková",
+    "Zuzana Irsova",
     "Dominika Kolcunová"
    ],
    "media": "text",
@@ -3282,7 +3282,7 @@
    "outlet": "VoxEU / CEPR",
    "authors": [
     "Dominik Herman",
-    "Zuzana Iršová Havránková",
+    "Zuzana Irsova",
     "Tomáš Havránek"
    ],
    "media": "text",

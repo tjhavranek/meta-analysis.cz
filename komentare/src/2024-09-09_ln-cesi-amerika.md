@@ -5,7 +5,7 @@ outlet: "Lidové noviny"
 url: "https://www.lidovky.cz/nazory/amerika-cesko-historicke-srovnani-revoluce.A240909_133225_ln_nazory_halu"
 date: "2024-09-09"
 headline: "V čem Češi poráží Ameriku"
-byline: "Tomáš Havránek, Zuzana Iršová Havránková"
+byline: "Tomáš Havránek, Zuzana Havránková"
 word_count: "883"
 ---
 

@@ -54,7 +54,10 @@ PATH = "/komentare"             # root-relative: every internal link and asset
 AUTHOR = "Tomáš Havránek"
 # Whose archive this is. AUTHOR stays single: it is the default byline for items that
 # name no author, so widening it would silently reassign every unattributed piece.
-SITE_AUTHORS = "Tomáš Havránek, Zuzana Iršová Havránková"
+# The masthead carries her full form once, so readers who know her international
+# byline "Irsova" can connect the two. Everywhere else she is as Czech media print her.
+SITE_AUTHORS_TOP = "Tomáš Havránek, Zuzana Iršová Havránková"
+SITE_AUTHORS = "Tomáš Havránek, Zuzana Havránková"
 # One person can appear under several name forms: the married name in Czech outlets,
 # the maiden name in English ones, with or without diacritics. Every form must map to
 # the same ORCID or the author silently loses attribution on some items.
@@ -365,7 +368,7 @@ def shell(title, desc, canonical, jsonld, body, active, extra_head="", lang="cs"
 <body>
 <header class="masthead">
   <div class="wrap">
-    <p class="site-name"><a href="{PATH}/">Komentáře<small>{SITE_AUTHORS}</small></a></p>
+    <p class="site-name"><a href="{PATH}/">Komentáře<small>{SITE_AUTHORS_TOP}</small></a></p>
     <nav class="nav">{nav}</nav>
   </div>
 </header>
@@ -414,7 +417,7 @@ FILTER = """    <div class="filter">
         <button class="chip" data-cat="litomysl" aria-pressed="false">Litomyšl</button>
         <button class="chip" data-cat="rozhovory" aria-pressed="false">Rozhovory</button>
         <button class="chip" data-cat="english" aria-pressed="false">English</button>
-        <button class="chip" data-cat="zuzana" aria-pressed="false">Zuzana Havránková</button>
+        <button class="chip" data-cat="zuzana" aria-pressed="false">Zuzana</button>
       </div>
       <p class="count js-only" id="count" role="status" aria-live="polite"></p>
     </div>
@@ -952,7 +955,7 @@ def write_src_index(items):
 </head>
 <body>
 <header class="masthead"><div class="wrap">
-  <p class="site-name"><a href="{PATH}/">Komentáře<small>{SITE_AUTHORS}</small></a></p>
+  <p class="site-name"><a href="{PATH}/">Komentáře<small>{SITE_AUTHORS_TOP}</small></a></p>
   <nav class="nav"><a href="{PATH}/">Back to the archive</a></nav>
 </div></header>
 <main><div class="wrap">

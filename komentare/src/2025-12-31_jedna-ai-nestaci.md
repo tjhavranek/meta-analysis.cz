@@ -4,7 +4,7 @@ url: "https://archiv.hn.cz/c1-67828260-jedna-ai-nestaci-nechte-modely-spolu-bojo
 date: "2025-12-31"
 headline: "Jedna AI nestačí, nechte modely spolu bojovat"
 status: full
-byline: "Tomáš Havránek, Zuzana Iršová Havránková"
+byline: "Tomáš Havránek, Zuzana Havránková"
 word_count: "521"
 perex: "Umělá inteligence často raději přikývne nebo si vymyslí, než aby přiznala, že neví. Spoléhat na jeden model se proto nevyplácí. Způsob, jak vytěžit z AI maximum, je nechat modely bojovat mezi sebou, píší ekonomové Zuzana Havránková a Tomáš Havránek."
 ---
