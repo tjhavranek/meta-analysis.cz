@@ -75,7 +75,7 @@
    ]
   ],
   "image_alt": [
-   "Image from the post about the author's affiliation with Stanford METRICS."
+   "Group selfie of six people around an outdoor table on a sunny campus terrace, lunch containers and drinks on the table, trees and a lawn behind them."
   ]
  },
  {
@@ -95,7 +95,7 @@
    ]
   ],
   "image_alt": [
-   "Screenshot of the tool described in the post, which checks an ERC proposal against the call requirements."
+   "Screenshot of a repository page headed “erc-ai-feedback”, describing a small package that gives ERC Starting and Consolidator Grant applicants a rubric-based pre-review of a draft proposal in one chat session with a frontier model, to clear routine structural problems before workshop time is spent on them. It notes that it does not replace human review."
   ]
  },
  {
@@ -115,7 +115,7 @@
    ]
   ],
   "image_alt": [
-   "Screenshot from the post about assembling a panel of AI models to argue over a research paper."
+   "Screenshot of a page headed “CRUCIBLE — the paper-workshop skill”: a panel of leading experts assembled for one specific paper, arguing it out from rival schools and then rebuilding it themselves, re-running the author's code. It promises a tracked redline, a clean draft and a replication package."
   ]
  },
  {
@@ -145,7 +145,7 @@
   "reshare_with_comment": false,
   "lang": "en",
   "images": [
-   "2026-06-22_p8_1.jpeg"
+   "2026-05-30_p8_1.jpeg"
   ],
   "text": "Do you know that Claude Code can use Codex to stress test its work?\n\nI had both installed and used them interchangeably: for some tasks, one seems to be better, and vice versa. Also, sometimes I hit usage limit in one, so I continue in the other.\n\nThis can be automated easily: work from Claude Code and call Codex when needed. Here is the Claude skill, applied to stress-testing research:\n\nhttps://lnkd.in/dtGSi8zP\n\nThis builds on our previous manual protocols for using different AI models to test research ideas or papers:\n\nhttps://lnkd.in/dRwKz63g\n\nDoes the skill work for you? What should we change? Should we add Gemini?",
   "image_size": [
@@ -165,7 +165,7 @@
   "reshare_with_comment": false,
   "lang": "en",
   "images": [
-   "2026-05-22_p9_1.jpeg"
+   "2026-05-13_p9_1.jpeg"
   ],
   "text": "Reporting Guidelines for Meta-Analysis in Economics, updated for AI, just published in the Journal of Economic Surveys:\nhttps://lnkd.in/d_BciGAd\n\nTwo practical points I would emphasize (my personal opinion), beyond the reporting checklist itself:\n\n1️⃣ If you use AI for searching, screening, or coding, don't rely on a single model. Use meta-analysis thinking: each model is trained differently and on different data (think Claude vs. Grok). Even if one model strictly dominates, there will be useful information in the others, and you need to stress-test your favorite model brutally regardless. We have developed a simple Research Audit Protocol based on Multi-Agent Debate (MAD) for exactly this:\nhttps://lnkd.in/d63DFbPz\n\n2️⃣ These guidelines intentionally do not recommend any particular methodology. We do so in our 2024 method guidelines (https://lnkd.in/dPcDR7Gr). Brief update: I think the baseline meta-analysis technique is now Robust Bayesian Meta-Analysis (RoBMA) by František Bartoš, Maximilian Maier, and Eric-Jan Wagenmakers -- a principled way to average over various bias-correction methods. But these methods don't address p-hacking, so RoBMA should be complemented with MAIVE (easy to apply via https://easymeta.org) and RTMA (Maya Mathur).\n\nThe updated reporting guidelines were led by Nikolai Cook and co-authored with František Bartoš, Pedro Bom, Sebastian Gechert, Klára Kantová, Jerome Geyer-Klingeberg, Dr.-Ing., Tomas Havranek, Martina Lušková, Matej Opatrny, Franz Prante, Heiko Rachinger, and Tom Stanley.",
   "image_size": [
@@ -175,7 +175,7 @@
    ]
   ],
   "image_alt": [
-   "Figure from the updated Reporting Guidelines for Meta-Analysis in Economics announced in the post."
+   "Journal of Economic Surveys article header, open access: “Reporting Guidelines for Meta-Analysis in Economics — Updated for AI”, by Nikolai Cook, František Bartoš, Pedro R. D. Bom, Sebastian Gechert, Klára Kantová, Jerome Geyer-Klingeberg, Tomáš Havránek, Zuzana Irsova, Martina Luskova and others. First published 12 May 2026."
   ],
   "comment_links": [
    "https://github.com/tjhavranek/research-audit-duel-protocol"
@@ -188,7 +188,7 @@
   "reshare_with_comment": false,
   "lang": "en",
   "images": [
-   "2026-05-01_p10_1.jpeg"
+   "2026-04-28_p10_1.jpeg"
   ],
   "text": "Will our results change if we redo the meta-analysis from scratch?\n\nWe just pre-registered a big revision of our meta-analysis on beauty and professional success:\n\nhttps://lnkd.in/dBSAB5N2\n\nThe current paper follows standards commonly used in economics meta-analysis. For the revision we decided to do the search and data collection differently, following multidisciplinary systematic-review practice: a librarian-designed multi-database search, dual screening, coding reliability checks, PRISMA documentation, and a full audit trail.\n\nA nice side effect is that this becomes a natural experiment on our own work. Honestly, I'm curious how much it will move the results.\n\nThe amazing Martina Lušková joined the team to help lead study selection and coding, and we are working with a librarian at the University of Amsterdam on the search strategy.\n\nIn the current version we find that the effect of beauty on earnings is smaller than commonly thought once you correct for publication bias and p-hacking, and smaller still when more weight is given to studies that control for cognitive ability. The one clear exception is sex workers. For politicians, the beauty premium mostly goes away after correction.\n\nTo make the comparison fully transparent, we also uploaded the current paper, data, and code to the registration.\n\nWe should do much more pre-registration in observational research. It doesn't fully prevent p-hacking, but it helps a lot and the cost is low.\n\nCo-authored with Tomas Havranek, František Bartoš, Xenia Bortnikova, and Martina Lušková",
   "image_size": [
@@ -198,7 +198,7 @@
    ]
   ],
   "image_alt": [
-   "Figure from the pre-registered revision of the meta-analysis on beauty and professional success described in the post."
+   "First page of a pre-registered protocol headed “Systematic review — update protocol: Meta-Analysis of Field Studies on Beauty and Professional Success”. A table gives the protocol type, describing substantial revisions to the literature search, screening, coding, analysis and reporting of the previous version, and records the registration on the Open Science Framework."
   ],
   "comment_links": [
    "https://doi.org/10.17605/OSF.IO/B3D7W"
@@ -221,7 +221,7 @@
    ]
   ],
   "image_alt": [
-   "Figure from the note in the Journal of Economic Surveys described in the post."
+   "Journal of Economic Surveys article header, open access: “Guidance for the Use of AI in the Meta-Analysis of Economics Research”, by Nikolai Cook, František Bartoš, Pedro R. D. Bom, Sebastian Gechert, Klára Kantová, Jerome Geyer-Klingeberg, Tomáš Havránek, Zuzana Irsova, Martina Luskova, Matěj Opatrný, Franz Prante, Heiko J. Rachinger and T. D. Stanley. First published 21 April 2026."
   ]
  },
  {
@@ -247,7 +247,8 @@
   "reshare_with_comment": false,
   "lang": "en",
   "images": [],
-  "text": "Top 7 non-fiction books I recommend. 📚\n\nNot an endorsement of everything in these books, but I learned a great deal about economics, history, and politics.\n\n1️⃣ Bourgeois Equality (McCloskey): How the West got rich.\n2️⃣ In the Garden of Beasts (Larson): An American family in 1930s Berlin, watching a society die.\n3️⃣ Recession (Tyler Goodspeed): Why economies shrink. Excellent new book.\n4️⃣ Cicero (Everitt): The life of arguably the greatest statesman the West ever produced.\n5️⃣ Red Dawn Over China (Dikötter): How China became communist.\n6️⃣ The Lives of the Caesars (Suetonius): The most readable classical text I know. Reads like a novel.\n7️⃣ The Fiscal Theory of the Price Level (John H. Cochrane): A bold, rigorous book on modern macroeconomics.\n\nWhat's the best non-fiction book you've read this year?"
+  "text": "Top 7 non-fiction books I recommend. 📚\n\nNot an endorsement of everything in these books, but I learned a great deal about economics, history, and politics.\n\n1️⃣ Bourgeois Equality (McCloskey): How the West got rich.\n2️⃣ In the Garden of Beasts (Larson): An American family in 1930s Berlin, watching a society die.\n3️⃣ Recession (Tyler Goodspeed): Why economies shrink. Excellent new book.\n4️⃣ Cicero (Everitt): The life of arguably the greatest statesman the West ever produced.\n5️⃣ Red Dawn Over China (Dikötter): How China became communist.\n6️⃣ The Lives of the Caesars (Suetonius): The most readable classical text I know. Reads like a novel.\n7️⃣ The Fiscal Theory of the Price Level (John H. Cochrane): A bold, rigorous book on modern macroeconomics.\n\nWhat's the best non-fiction book you've read this year?",
+  "image_alt": []
  },
  {
   "date": "2026-03-19",
@@ -256,7 +257,8 @@
   "reshare_with_comment": false,
   "lang": "en",
   "images": [],
-  "text": "Two AI models dueling worked. Four models debating works better.\n\nWe updated our research audit protocol. The new version (MAD v2.0) uses ChatGPT, Claude, Gemini, and Grok in structured adversarial rounds:\n\n1️⃣ Independent critique — no model sees the others, every claim grounded in the document.\n2️⃣ Cross-examination — each model attacks the weakest peer arguments.\n3️⃣ Final arbiter synthesizes what survived.\n\nNo code needed. Copy-paste prompts. Free model versions work (just register for each model).\n\nAdvanced users: the entire workflow can be automated via the models' APIs using frameworks like AutoGen, LangGraph, or CrewAI.\n\nUse it for high-stakes documents: stress-testing your papers, grant proposals, referee reports.\n\nProtocol (GitHub): 👉 https://lnkd.in/dRwKz63g"
+  "text": "Two AI models dueling worked. Four models debating works better.\n\nWe updated our research audit protocol. The new version (MAD v2.0) uses ChatGPT, Claude, Gemini, and Grok in structured adversarial rounds:\n\n1️⃣ Independent critique — no model sees the others, every claim grounded in the document.\n2️⃣ Cross-examination — each model attacks the weakest peer arguments.\n3️⃣ Final arbiter synthesizes what survived.\n\nNo code needed. Copy-paste prompts. Free model versions work (just register for each model).\n\nAdvanced users: the entire workflow can be automated via the models' APIs using frameworks like AutoGen, LangGraph, or CrewAI.\n\nUse it for high-stakes documents: stress-testing your papers, grant proposals, referee reports.\n\nProtocol (GitHub): 👉 https://lnkd.in/dRwKz63g",
+  "image_alt": []
  },
  {
   "date": "2026-03-11",
@@ -265,7 +267,8 @@
   "reshare_with_comment": false,
   "lang": "cs",
   "images": [],
-  "text": "Doporučuji všem rodičům včas testovat děti na cukrovku. Nám to bohužel vyšlo jednou pozitivní, ale díky tomu testu + moderní medicíně můžete nástup nemoci oddálit o několik let.\n\nVčasný test = šance na roky navíc bez inzulinu.\n\nDíky Barbora Berka a Natálie Chrástecká za skvělý přístup v Motole.\n\nDíky Jan Hrušovský za hezký rozhovor s mým manželem, který poprvé na kameru mluvil o něčem jiném než o ekonomii (což je většinou velmi ... poutavé 😉 ).\n\nhttps://lnkd.in/duWtcSbA"
+  "text": "Doporučuji všem rodičům včas testovat děti na cukrovku. Nám to bohužel vyšlo jednou pozitivní, ale díky tomu testu + moderní medicíně můžete nástup nemoci oddálit o několik let.\n\nVčasný test = šance na roky navíc bez inzulinu.\n\nDíky Barbora Berka a Natálie Chrástecká za skvělý přístup v Motole.\n\nDíky Jan Hrušovský za hezký rozhovor s mým manželem, který poprvé na kameru mluvil o něčem jiném než o ekonomii (což je většinou velmi ... poutavé 😉 ).\n\nhttps://lnkd.in/duWtcSbA",
+  "image_alt": []
  },
  {
   "date": "2026-03-09",
@@ -274,7 +277,7 @@
   "reshare_with_comment": false,
   "lang": "en",
   "images": [
-   "2026-03-22_p16_1.jpeg"
+   "2026-03-09_p16_1.jpeg"
   ],
   "text": "Meta-analyses should try to correct not just for publication bias, but also for p-hacking.\n\nSome estimates are more likely to be reported than others, so every good summary of research should correct for this publication bias. In case you're wondering — yes, this can be done, there are dozens of methods and decades of research on this. There is even a great way to put these different correction techniques together: see RoBMA by František Bartoš and colleagues.\n\nThe problem is that these techniques assume that the reported estimates are individually unbiased. This is a strong assumption, as researchers can tweak models (consciously or unconsciously) to get more \"sensible\" results. This is called p-hacking. Most of us do it.\n\nIn our recent Nature Communications paper we show that under some forms of p-hacking, classical models correcting for publication bias can actually be more biased than a simple average of published estimates.\n\nAs far as I know, there are only two meta-analysis corrections for (some forms of) p-hacking: our MAIVE (from the Nature Comms paper) and RTMA by Maya Mathur. If you know of more, please let me know in the comments!\n\nIf you want to see MAIVE and RTMA applied, take a look at our meta-analysis of the beauty premium. Spoiler: apart from the sex industry, beauty doesn't matter much in the labor market.",
   "image_size": [
@@ -344,7 +347,7 @@
   "reshare_with_comment": false,
   "lang": "cs",
   "images": [
-   "2025-12-31_p22_1.jpeg"
+   "2025-12-29_p22_1.jpeg"
   ],
   "text": "Jak vytěžit z AI maximum?\nNechte modely bojovat mezi sebou. 🧠🤖\n\nV dnešních Hospodářské noviny ukazujeme jednoduchý, ale účinný postup, jak pracovat efektivněji s umělou inteligencí.\n\nMísto jedné odpovědi: duel AI modelů.\n\nChatGPT vs. Gemini (nebo jiná kombinace).\n🔹 Jeden model dostane roli kreativního vizionáře, který nápad rozvíjí.\n🔹 Druhý je ďáblův advokát – systematicky hledá faktické i logické chyby.\n🔹 Modely si navzájem napadají výstupy a opravují se.\n\nVýsledek?\n👉 Méně halucinací.\n👉 Tvrdší „stress test“ nápadů.\n👉 Kvalitnější výstup než od jednoho modelu.\n\nNemáte předplatné ChatGPT?\nŽádný problém. Duel zvládnete i manuálně – stačí otevřít vedle sebe dva zdarma dostupné AI modely, dát jim stejná data a protichůdné role a jejich odpovědi mezi sebou křížit. Po několika kolech už dává smysl výstupy číst.\n\n🔗 Odemčený článek v HN:\nhttps://lnkd.in/dBbUetrP\n🔗 Duelový protokol (prompt + návod):\nhttps://lnkd.in/dRwKz63g",
   "image_size": [
@@ -354,7 +357,7 @@
    ]
   ],
   "image_alt": [
-   "Obrázek k příspěvku o článku v Hospodářských novinách o souboji dvou modelů umělé inteligence."
+   "Ilustrace: dva roboti, jeden se znakem ChatGPT a druhý s logem Gemini, proti sobě zaráží pěsti a mezi nimi šlehají jiskry. Pod nimi sedí u notebooků dva lidé obklopení hromadami papírů, v pozadí grafy a binární kód."
   ]
  },
  {
@@ -380,7 +383,8 @@
   "reshare_with_comment": false,
   "lang": "en",
   "images": [],
-  "text": "For deep analytical work, I don’t use one AI model. I make them duel.\n\nFor thinking-intensive tasks (research, strategy, due diligence) a single AI model often converges too fast. It sounds convincing but skips edge cases and hidden assumptions.\n\nSo Tomas Havranek and I formalized a workflow to create structured disagreement:\n\n🔹 Anchor (ChatGPT): Writes a first-pass assessment grounded in the files. 🔹 Audit (Gemini): Actively tries to break it (logic gaps, counterexamples, failure modes). ChatGPT defends. The duel iterates. 🔹 Synthesis (You): You analyze the conflict to see what survives.\n\nThe output is not “AI approval.” It is a clearer map of risks, boundary conditions, and what you must verify.\n\nAdvanced users: You can swap the auditor for Claude or automate this via API (MAD).\n\nFor everyone else: no code needed. You can copy-paste the protocol and try it via ChatGPT Agent.\n\nProtocol (GitHub): 👉 https://lnkd.in/dRwKz63g\nResearch example: 👉 https://lnkd.in/dw98RKuW\n\n#AI #DecisionMaking #CriticalThinking #Productivity #Research"
+  "text": "For deep analytical work, I don’t use one AI model. I make them duel.\n\nFor thinking-intensive tasks (research, strategy, due diligence) a single AI model often converges too fast. It sounds convincing but skips edge cases and hidden assumptions.\n\nSo Tomas Havranek and I formalized a workflow to create structured disagreement:\n\n🔹 Anchor (ChatGPT): Writes a first-pass assessment grounded in the files. 🔹 Audit (Gemini): Actively tries to break it (logic gaps, counterexamples, failure modes). ChatGPT defends. The duel iterates. 🔹 Synthesis (You): You analyze the conflict to see what survives.\n\nThe output is not “AI approval.” It is a clearer map of risks, boundary conditions, and what you must verify.\n\nAdvanced users: You can swap the auditor for Claude or automate this via API (MAD).\n\nFor everyone else: no code needed. You can copy-paste the protocol and try it via ChatGPT Agent.\n\nProtocol (GitHub): 👉 https://lnkd.in/dRwKz63g\nResearch example: 👉 https://lnkd.in/dw98RKuW\n\n#AI #DecisionMaking #CriticalThinking #Productivity #Research",
+  "image_alt": []
  },
  {
   "date": "2025-12-10",
@@ -389,7 +393,8 @@
   "reshare_with_comment": true,
   "lang": "en",
   "images": [],
-  "text": "🔎 MAIVE is now on CRAN: Better tools for trustworthy meta-analysis\n\nMeta-analysis is one of the key pillars of evidence-based research. It combines results from many studies to give us a clearer, more reliable answer.\n\nBut in observational research, studies can sometimes appear too precise --not because the evidence is strong, but because of method choices, selective reporting, or p-hacking. This can distort the final meta-analytic conclusion.\nMAIVE helps address this.\n\nYou can now install MAIVE directly in R:\n\ninstall.packages(\"MAIVE\")\n\nOr try it instantly in your browser (no coding needed):\n 🖥️ https://www.easymeta.org\nMore details:\n 📦 CRAN package: https://lnkd.in/dQ7XjiAq\n\n 📄 Nature Communications article: https://lnkd.in/eFfrP6H2\n\n 📰 Blog overview: https://lnkd.in/ejkgbU6X\n\nA big thank-you to Petr Čala, who built the MAIVE web app and prepared the CRAN release. His work makes high-quality meta-analysis methods accessible.\n\n#metaanalysis #OpenScience #researchmethods #RStats"
+  "text": "🔎 MAIVE is now on CRAN: Better tools for trustworthy meta-analysis\n\nMeta-analysis is one of the key pillars of evidence-based research. It combines results from many studies to give us a clearer, more reliable answer.\n\nBut in observational research, studies can sometimes appear too precise --not because the evidence is strong, but because of method choices, selective reporting, or p-hacking. This can distort the final meta-analytic conclusion.\nMAIVE helps address this.\n\nYou can now install MAIVE directly in R:\n\ninstall.packages(\"MAIVE\")\n\nOr try it instantly in your browser (no coding needed):\n 🖥️ https://www.easymeta.org\nMore details:\n 📦 CRAN package: https://lnkd.in/dQ7XjiAq\n\n 📄 Nature Communications article: https://lnkd.in/eFfrP6H2\n\n 📰 Blog overview: https://lnkd.in/ejkgbU6X\n\nA big thank-you to Petr Čala, who built the MAIVE web app and prepared the CRAN release. His work makes high-quality meta-analysis methods accessible.\n\n#metaanalysis #OpenScience #researchmethods #RStats",
+  "image_alt": []
  },
  {
   "date": "2025-10-26",
@@ -398,7 +403,7 @@
   "reshare_with_comment": false,
   "lang": "en",
   "images": [
-   "2025-11-20_p27_1.png"
+   "2025-10-26_p27_1.png"
   ],
   "text": "🔎 New in Nature Communications: “Spurious precision in meta-analysis of observational research.”\n\nSometimes studies appear too precise because their reported uncertainty reflects method choices rather than real evidence strength. This can mislead meta-analyses.\n\nWe introduce MAIVE, a simple way to detect and correct such bias, including publication bias and p-hacking.\n\n🖥️ Try it in your browser (free, no coding): https://www.easymeta.org\n\n 📄 Paper: https://lnkd.in/eFfrP6H2\n\n 📰 Blog: https://lnkd.in/ejkgbU6X\n\n— Kudos to my great co-authors Pedro Bom, Tomas Havranek, and Heiko Rachinger\n\n #metaanalysis #researchmethods #OpenScience #NatureCommunications",
   "image_size": [

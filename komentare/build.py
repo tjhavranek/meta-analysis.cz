@@ -1024,7 +1024,7 @@ def write_socials_page():
 
     jsonld = {"@context": "https://schema.org", "@graph": [
         {"@type": "CollectionPage", "@id": f"{BASE}/posts/", "url": f"{BASE}/posts/",
-         "name": "Posts — Zuzana Havránková", "description": SOCIAL_DESC,
+         "name": "Posts — Zuzana Irsova Havrankova", "description": SOCIAL_DESC,
          # This page is English, unlike the rest of the archive: the posts are mostly
          # English and the readership is international. Each post still declares its own
          # language, so the handful of Czech ones are marked.
@@ -1046,7 +1046,7 @@ def write_socials_page():
     out = KDIR / "posts"
     out.mkdir(exist_ok=True)
     (out / "index.html").write_text(
-        shell("Posts — Zuzana Havránková", SOCIAL_DESC, f"{BASE}/posts/", jsonld, body,
+        shell("Posts — Zuzana Irsova Havrankova", SOCIAL_DESC, f"{BASE}/posts/", jsonld, body,
               "posts", lang="en"),
         encoding="utf-8")
     # The section was briefly live at /ze-siti/. Leave a redirect so that address, and

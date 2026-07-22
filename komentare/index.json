@@ -3993,7 +3993,7 @@
    "word_count": 104,
    "text": "Do you know that Claude Code can use Codex to stress test its work?\n\nI had both installed and used them interchangeably: for some tasks, one seems to be better, and vice versa. Also, sometimes I hit usage limit in one, so I continue in the other.\n\nThis can be automated easily: work from Claude Code and call Codex when needed. Here is the Claude skill, applied to stress-testing research:\n\nhttps://lnkd.in/dtGSi8zP\n\nThis builds on our previous manual protocols for using different AI models to test research ideas or papers:\n\nhttps://lnkd.in/dRwKz63g\n\nDoes the skill work for you? What should we change? Should we add Gemini?",
    "image": [
-    "https://meta-analysis.cz/komentare/social-img/2026-06-22_p8_1.jpeg"
+    "https://meta-analysis.cz/komentare/social-img/2026-05-30_p8_1.jpeg"
    ]
   },
   {
@@ -4017,7 +4017,7 @@
    "word_count": 214,
    "text": "Reporting Guidelines for Meta-Analysis in Economics, updated for AI, just published in the Journal of Economic Surveys:\nhttps://lnkd.in/d_BciGAd\n\nTwo practical points I would emphasize (my personal opinion), beyond the reporting checklist itself:\n\n1️⃣ If you use AI for searching, screening, or coding, don't rely on a single model. Use meta-analysis thinking: each model is trained differently and on different data (think Claude vs. Grok). Even if one model strictly dominates, there will be useful information in the others, and you need to stress-test your favorite model brutally regardless. We have developed a simple Research Audit Protocol based on Multi-Agent Debate (MAD) for exactly this:\nhttps://lnkd.in/d63DFbPz\n\n2️⃣ These guidelines intentionally do not recommend any particular methodology. We do so in our 2024 method guidelines (https://lnkd.in/dPcDR7Gr). Brief update: I think the baseline meta-analysis technique is now Robust Bayesian Meta-Analysis (RoBMA) by František Bartoš, Maximilian Maier, and Eric-Jan Wagenmakers -- a principled way to average over various bias-correction methods. But these methods don't address p-hacking, so RoBMA should be complemented with MAIVE (easy to apply via https://easymeta.org) and RTMA (Maya Mathur).\n\nThe updated reporting guidelines were led by Nikolai Cook and co-authored with František Bartoš, Pedro Bom, Sebastian Gechert, Klára Kantová, Jerome Geyer-Klingeberg, Dr.-Ing., Tomas Havranek, Martina Lušková, Matej Opatrny, Franz Prante, Heiko Rachinger, and Tom Stanley.",
    "image": [
-    "https://meta-analysis.cz/komentare/social-img/2026-05-22_p9_1.jpeg"
+    "https://meta-analysis.cz/komentare/social-img/2026-05-13_p9_1.jpeg"
    ]
   },
   {
@@ -4041,7 +4041,7 @@
    "word_count": 235,
    "text": "Will our results change if we redo the meta-analysis from scratch?\n\nWe just pre-registered a big revision of our meta-analysis on beauty and professional success:\n\nhttps://lnkd.in/dBSAB5N2\n\nThe current paper follows standards commonly used in economics meta-analysis. For the revision we decided to do the search and data collection differently, following multidisciplinary systematic-review practice: a librarian-designed multi-database search, dual screening, coding reliability checks, PRISMA documentation, and a full audit trail.\n\nA nice side effect is that this becomes a natural experiment on our own work. Honestly, I'm curious how much it will move the results.\n\nThe amazing Martina Lušková joined the team to help lead study selection and coding, and we are working with a librarian at the University of Amsterdam on the search strategy.\n\nIn the current version we find that the effect of beauty on earnings is smaller than commonly thought once you correct for publication bias and p-hacking, and smaller still when more weight is given to studies that control for cognitive ability. The one clear exception is sex workers. For politicians, the beauty premium mostly goes away after correction.\n\nTo make the comparison fully transparent, we also uploaded the current paper, data, and code to the registration.\n\nWe should do much more pre-registration in observational research. It doesn't fully prevent p-hacking, but it helps a lot and the cost is low.\n\nCo-authored with Tomas Havranek, František Bartoš, Xenia Bortnikova, and Martina Lušková",
    "image": [
-    "https://meta-analysis.cz/komentare/social-img/2026-05-01_p10_1.jpeg"
+    "https://meta-analysis.cz/komentare/social-img/2026-04-28_p10_1.jpeg"
    ]
   },
   {
@@ -4173,7 +4173,7 @@
    "word_count": 223,
    "text": "Meta-analyses should try to correct not just for publication bias, but also for p-hacking.\n\nSome estimates are more likely to be reported than others, so every good summary of research should correct for this publication bias. In case you're wondering — yes, this can be done, there are dozens of methods and decades of research on this. There is even a great way to put these different correction techniques together: see RoBMA by František Bartoš and colleagues.\n\nThe problem is that these techniques assume that the reported estimates are individually unbiased. This is a strong assumption, as researchers can tweak models (consciously or unconsciously) to get more \"sensible\" results. This is called p-hacking. Most of us do it.\n\nIn our recent Nature Communications paper we show that under some forms of p-hacking, classical models correcting for publication bias can actually be more biased than a simple average of published estimates.\n\nAs far as I know, there are only two meta-analysis corrections for (some forms of) p-hacking: our MAIVE (from the Nature Comms paper) and RTMA by Maya Mathur. If you know of more, please let me know in the comments!\n\nIf you want to see MAIVE and RTMA applied, take a look at our meta-analysis of the beauty premium. Spoiler: apart from the sex industry, beauty doesn't matter much in the labor market.",
    "image": [
-    "https://meta-analysis.cz/komentare/social-img/2026-03-22_p16_1.jpeg"
+    "https://meta-analysis.cz/komentare/social-img/2026-03-09_p16_1.jpeg"
    ]
   },
   {
@@ -4245,7 +4245,7 @@
    "word_count": 138,
    "text": "Jak vytěžit z AI maximum?\nNechte modely bojovat mezi sebou. 🧠🤖\n\nV dnešních Hospodářské noviny ukazujeme jednoduchý, ale účinný postup, jak pracovat efektivněji s umělou inteligencí.\n\nMísto jedné odpovědi: duel AI modelů.\n\nChatGPT vs. Gemini (nebo jiná kombinace).\n🔹 Jeden model dostane roli kreativního vizionáře, který nápad rozvíjí.\n🔹 Druhý je ďáblův advokát – systematicky hledá faktické i logické chyby.\n🔹 Modely si navzájem napadají výstupy a opravují se.\n\nVýsledek?\n👉 Méně halucinací.\n👉 Tvrdší „stress test“ nápadů.\n👉 Kvalitnější výstup než od jednoho modelu.\n\nNemáte předplatné ChatGPT?\nŽádný problém. Duel zvládnete i manuálně – stačí otevřít vedle sebe dva zdarma dostupné AI modely, dát jim stejná data a protichůdné role a jejich odpovědi mezi sebou křížit. Po několika kolech už dává smysl výstupy číst.\n\n🔗 Odemčený článek v HN:\nhttps://lnkd.in/dBbUetrP\n🔗 Duelový protokol (prompt + návod):\nhttps://lnkd.in/dRwKz63g",
    "image": [
-    "https://meta-analysis.cz/komentare/social-img/2025-12-31_p22_1.jpeg"
+    "https://meta-analysis.cz/komentare/social-img/2025-12-29_p22_1.jpeg"
    ]
   },
   {
@@ -4332,7 +4332,7 @@
    "word_count": 83,
    "text": "🔎 New in Nature Communications: “Spurious precision in meta-analysis of observational research.”\n\nSometimes studies appear too precise because their reported uncertainty reflects method choices rather than real evidence strength. This can mislead meta-analyses.\n\nWe introduce MAIVE, a simple way to detect and correct such bias, including publication bias and p-hacking.\n\n🖥️ Try it in your browser (free, no coding): https://www.easymeta.org\n\n 📄 Paper: https://lnkd.in/eFfrP6H2\n\n 📰 Blog: https://lnkd.in/ejkgbU6X\n\n— Kudos to my great co-authors Pedro Bom, Tomas Havranek, and Heiko Rachinger\n\n #metaanalysis #researchmethods #OpenScience #NatureCommunications",
    "image": [
-    "https://meta-analysis.cz/komentare/social-img/2025-11-20_p27_1.png"
+    "https://meta-analysis.cz/komentare/social-img/2025-10-26_p27_1.png"
    ]
   }
  ]
