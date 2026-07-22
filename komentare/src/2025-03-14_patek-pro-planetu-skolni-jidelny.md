@@ -4,7 +4,7 @@ url: "https://www.seznamzpravy.cz/clanek/domaci-zivot-v-cesku-komentar-patek-pro
 date: "2025-03-14"
 headline: "„Pátek pro planetu“ ve školních jídelnách Zemi nepomůže a dětem uškodí"
 status: full
-byline: "Tomáš Havránek, Zuzana Havránková"
+byline: "Tomáš Havránek, Zuzana Iršová Havránková"
 word_count: "846"
 perex: "Propagace vegetariánské a veganské stravy ve školních jídelnách není dostatečně vědecky vyvážená. Vliv spotřeby masa u dětí na životní prostředí je navíc sporný, píšou výzkumníci Univerzity Karlovy Zuzana a Tomáš Havránkovi."
 ---

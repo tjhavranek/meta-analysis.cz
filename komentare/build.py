@@ -52,12 +52,16 @@ BASE = f"{SITE}/komentare"      # absolute: canonical, og:url, JSON-LD
 PATH = "/komentare"             # root-relative: every internal link and asset
 
 AUTHOR = "Tomáš Havránek"
+# Whose archive this is. AUTHOR stays single: it is the default byline for items that
+# name no author, so widening it would silently reassign every unattributed piece.
+SITE_AUTHORS = "Tomáš Havránek a Zuzana Iršová Havránková"
 # One person can appear under several name forms: the married name in Czech outlets,
 # the maiden name in English ones, with or without diacritics. Every form must map to
 # the same ORCID or the author silently loses attribution on some items.
 ORCIDS = {
     "Tomáš Havránek": "https://orcid.org/0000-0002-3158-2539",
     "Tomas Havranek": "https://orcid.org/0000-0002-3158-2539",
+    "Zuzana Iršová Havránková": "https://orcid.org/0000-0002-0753-8124",
     "Zuzana Havránková": "https://orcid.org/0000-0002-0753-8124",
     "Zuzana Iršová": "https://orcid.org/0000-0002-0753-8124",
     "Zuzana Irsová": "https://orcid.org/0000-0002-0753-8124",
@@ -95,7 +99,7 @@ SECTIONS = {
 for _k, _v in SECTIONS.items():
     _v.setdefault("lang", "cs")
 
-HUB_DESC = ("Publicistika Tomáše Havránka: komentáře pro celostátní média, sloupky pro "
+HUB_DESC = ("Publicistika Tomáše Havránka a Zuzany Iršové Havránkové: komentáře pro celostátní média, sloupky pro "
             "litomyšlskou Lilii a rozhovory. Texty jsou zde archivovány v plném znění "
             "s odkazem na původní vydání.")
 
@@ -303,7 +307,7 @@ def shell(title, desc, canonical, jsonld, body, active, extra_head="", lang="cs"
         f'{"" if k == "english" else cs}'
         f'{" aria-current=\"page\"" if active == k else ""}>{esc(v["short"])}</a>'
         for k, v in SECTIONS.items())
-    rss_title = "Komentáře — Tomáš Havránek"
+    rss_title = f"Komentáře — {SITE_AUTHORS}"
     ies = ("https://ies.fsv.cuni.cz/en/contacts/institute-members/78067720" if lang == "en"
            else "https://ies.fsv.cuni.cz/contacts/institute-members/78067720")
     bio = ("<strong>Tomáš Havránek</strong> is Professor of Economics at the Institute of "
@@ -341,7 +345,7 @@ def shell(title, desc, canonical, jsonld, body, active, extra_head="", lang="cs"
 <body>
 <header class="masthead">
   <div class="wrap">
-    <p class="site-name"><a href="{PATH}/">Komentáře<small>Tomáš Havránek</small></a></p>
+    <p class="site-name"><a href="{PATH}/">Komentáře<small>{SITE_AUTHORS}</small></a></p>
     <nav class="nav">{nav}</nav>
   </div>
 </header>
@@ -640,7 +644,7 @@ def write_index(items, key=None):
             f'      <p>{esc(desc)}</p>\n{counts}    </div>\n'
             + (FILTER if not key else "")
             + listing(sel, show_cat=not key))
-    page = shell(f"{title} — {AUTHOR}", desc, canonical,
+    page = shell(f"{title} — {SITE_AUTHORS}", desc, canonical,
                  {"@context": "https://schema.org", "@graph": [node, person]},
                  body, key or "", lang=(sec["lang"] if sec else "cs"))
     if not key:
@@ -671,7 +675,7 @@ def write_feed(items):
     (KDIR / "feed.xml").write_text(f"""<?xml version="1.0" encoding="UTF-8"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:dc="http://purl.org/dc/elements/1.1/">
   <channel>
-    <title>Komentáře — {esc(AUTHOR)}</title>
+    <title>Komentáře — {esc(SITE_AUTHORS)}</title>
     <link>{BASE}/</link>
     <atom:link href="{BASE}/feed.xml" rel="self" type="application/rss+xml" />
     <description>{esc(HUB_DESC)}</description>
@@ -691,7 +695,7 @@ def write_machine_readable(items):
     all.md     every text in one Markdown file, in reverse-chronological order
     """
     # --- llms.txt -------------------------------------------------------------
-    L = [f"# Komentáře — {AUTHOR}", "",
+    L = [f"# Komentáře — {SITE_AUTHORS}", "",
          "> " + HUB_DESC, "",
          f"Publicistika: {len(items)} položek, "
          f"{items[-1]['date'][:4]}–{items[0]['date'][:4]}. "
@@ -746,7 +750,7 @@ def write_machine_readable(items):
             d["text"] = a["body"]
         docs.append(d)
     (KDIR / "index.json").write_text(json.dumps({
-        "name": f"Komentáře — {AUTHOR}",
+        "name": f"Komentáře — {SITE_AUTHORS}",
         "description": HUB_DESC,
         "url": f"{BASE}/",
         "author": {"name": AUTHOR, "orcid": ORCIDS[AUTHOR],
@@ -766,7 +770,7 @@ def write_machine_readable(items):
         encoding="utf-8")
 
     # --- all.md ---------------------------------------------------------------
-    A = [f"# Komentáře — {AUTHOR}", "", HUB_DESC, "",
+    A = [f"# Komentáře — {SITE_AUTHORS}", "", HUB_DESC, "",
          f"Tento soubor obsahuje plné znění všech textových položek "
          f"({sum(1 for a in items if a['media'] == 'text')} z celkem {len(items)}). "
          f"Zbývající položky jsou audio a video, které archiv vede pouze odkazem, "
@@ -799,7 +803,7 @@ def write_machine_readable(items):
             files[name] = {"url": f"{BASE}/{name}", "bytes": len(blob),
                            "sha256": hashlib.sha256(blob).hexdigest()}
     (KDIR / "manifest.json").write_text(json.dumps({
-        "name": f"Komentáře — {AUTHOR}",
+        "name": f"Komentáře — {SITE_AUTHORS}",
         "url": f"{BASE}/data/",
         "corpus_updated": items[0]["date"],
         "temporal_coverage": f"{items[-1]['date']}/{items[0]['date']}",
@@ -845,7 +849,7 @@ def write_data_page(items):
              "isPartOf": {"@id": f"{BASE}/"},
              "about": {"@id": f"{BASE}/data/#dataset"}},
             {"@type": "Dataset", "@id": f"{BASE}/data/#dataset",
-             "name": f"Komentáře — {AUTHOR}",
+             "name": f"Komentáře — {SITE_AUTHORS}",
              "description": HUB_DESC,
              "url": f"{BASE}/data/",
              "inLanguage": ["cs", "en"],
@@ -892,7 +896,7 @@ def write_data_page(items):
       <p class="about-machine" lang="en">Every record carries a <code>text_status</code>
         field, so a consumer can tell a published text from the author's own version,
         from a publisher's teaser, from an audio/video record that stores no text.</p>"""
-    page = shell(f"Korpus ke stažení — Komentáře — {AUTHOR}",
+    page = shell(f"Korpus ke stažení — Komentáře — {SITE_AUTHORS}",
                  f"Strojově čitelný korpus: {docs_total} záznamů, "
                  "corpus.jsonl, index.json, all.md a manifest s kontrolními součty.",
                  f"{BASE}/data/", jsonld, body, "", lang="cs")
@@ -924,7 +928,7 @@ def write_src_index(items):
 </head>
 <body>
 <header class="masthead"><div class="wrap">
-  <p class="site-name"><a href="{PATH}/">Komentáře<small>Tomáš Havránek</small></a></p>
+  <p class="site-name"><a href="{PATH}/">Komentáře<small>{SITE_AUTHORS}</small></a></p>
   <nav class="nav"><a href="{PATH}/">Back to the archive</a></nav>
 </div></header>
 <main><div class="wrap">

@@ -6,7 +6,7 @@ url: "https://www.litomysl.cz/soubor/17488424982675570_lilie_2025_6.pdf"
 date: "2025-06-01"
 date_precision: "month"
 headline: "Pátek pro planetu ve školní jídelně (pokračování)"
-byline: "Zuzana Havránková"
+byline: "Zuzana Iršová Havránková"
 source: "draft"
 word_count: "395"
 ---
