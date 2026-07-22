@@ -314,6 +314,10 @@ def shell(title, desc, canonical, jsonld, body, active, extra_head="", lang="cs"
         f'{"" if k == "english" else cs}'
         f'{" aria-current=\"page\"" if active == k else ""}>{esc(v["short"])}</a>'
         for k, v in SECTIONS.items())
+    # Not a SECTION: the social posts are not src items, so a section entry would put an
+    # empty chip on the hub filter. It gets a nav link and nothing else.
+    nav += (f'<a href="{PATH}/ze-siti/"{cs}'
+            f'{" aria-current=\"page\"" if active == "ze-siti" else ""}>Ze sítí</a>')
     rss_title = f"Komentáře — {SITE_AUTHORS}"
     _en = lang == "en"
     ies = ("https://ies.fsv.cuni.cz/en/contacts/institute-members/78067720" if _en
@@ -855,6 +859,94 @@ def write_machine_readable(items):
     return len([a for a in items if a["media"] == "text"])
 
 
+SOCIAL_JSON = KDIR / "social-posts.json"
+SOCIAL_DESC = ("Příspěvky Zuzany Havránkové ze sítí — kratší poznámky k vlastnímu výzkumu, "
+               "k metaanalýze a k dění kolem vědy. Publikováno původně na LinkedIn, "
+               "zde archivováno v plném znění.")
+
+_LINK = re.compile(r"https?://[^\s<>]+")
+
+
+def _social_html(text):
+    """Post text is plain: escape it, then make the bare URLs clickable."""
+    out = []
+    for para in text.split("\n\n"):
+        lines = [esc(l) for l in para.split("\n") if l.strip()]
+        if not lines:
+            continue
+        body = "<br>".join(lines)
+        body = _LINK.sub(lambda m: f'<a href="{m.group(0)}" rel="nofollow">{m.group(0)}</a>', body)
+        out.append(f"<p>{body}</p>")
+    return "\n        ".join(out)
+
+
+def write_socials_page():
+    """One page for all the social posts, each with a stable anchor — not a page each.
+
+    Same reasoning as the audio/video rule above: a page whose only content is three
+    sentences is thin. The full text of every post is still here, still in corpus.jsonl
+    and still in llms.txt; only the per-post URL is pooled."""
+    if not SOCIAL_JSON.exists():
+        return []
+    posts = json.loads(SOCIAL_JSON.read_text(encoding="utf-8"))
+    posts.sort(key=lambda p: p["date"], reverse=True)
+    for i, p in enumerate(posts):
+        p["anchor"] = f"{p['date']}-{i + 1}"
+
+    blocks, parts = [], []
+    for p in posts:
+        approx = " (přibližné datum)" if p.get("approx") else ""
+        imgs = "".join(
+            f'\n        <img src="{PATH}/social-img/{esc(f)}" alt="" loading="lazy" '
+            f'decoding="async" width="800">'
+            for f in p.get("images", []))
+        blocks.append(
+            f'      <article class="post" id="{esc(p["anchor"])}" lang="{p.get("lang", "en")}">\n'
+            f'        <p class="post-date"><a href="#{esc(p["anchor"])}">'
+            f'<time datetime="{p["date"]}">{esc(cs_date(p["date"]))}</time></a>'
+            f'<span class="post-approx">{esc(approx)}</span></p>\n'
+            f'        {_social_html(p["text"])}{imgs}\n'
+            f'      </article>')
+        parts.append({
+            "@type": "SocialMediaPosting",
+            "@id": f"{BASE}/ze-siti/#{p['anchor']}",
+            "headline": p["text"].split("\n")[0][:110],
+            "datePublished": p["date"],
+            "inLanguage": p.get("lang", "en"),
+            "author": {"@type": "Person", "name": "Zuzana Havránková",
+                       "identifier": ORCIDS["Zuzana Havránková"]},
+            "isBasedOn": "https://www.linkedin.com/in/zuzanairsova/recent-activity/all/",
+            "text": p["text"],
+        })
+
+    jsonld = {"@context": "https://schema.org", "@graph": [
+        {"@type": "CollectionPage", "@id": f"{BASE}/ze-siti/", "url": f"{BASE}/ze-siti/",
+         "name": "Ze sítí", "description": SOCIAL_DESC, "inLanguage": "cs",
+         "isPartOf": {"@id": f"{BASE}/"}, "hasPart": parts}]}
+
+    body = (
+        '  <div class="wrap">\n'
+        '    <div class="lede reading">\n'
+        '      <h1>Ze sítí</h1>\n'
+        f'      <p>{esc(SOCIAL_DESC)}</p>\n'
+        '      <p class="post-note">Příspěvky jsou zde v plném znění tak, jak je autorka '
+        'zveřejnila; převzaté cizí příspěvky nezařazujeme. U části příspěvků zná '
+        'LinkedIn jen přibližné stáří, proto je datum orientační — takové případy jsou '
+        'označeny.</p>\n'
+        '    </div>\n'
+        '    <div class="posts reading">\n' + "\n".join(blocks) + "\n    </div>\n"
+        '  </div>\n')
+
+    out = KDIR / "ze-siti"
+    out.mkdir(exist_ok=True)
+    (out / "index.html").write_text(
+        shell("Ze sítí", SOCIAL_DESC, f"{BASE}/ze-siti/", jsonld, body, "ze-siti"),
+        encoding="utf-8")
+    print(f"  ze-siti  {len(posts)} posts, "
+          f"{sum(len(p.get('images', [])) for p in posts)} images")
+    return posts
+
+
 def write_data_page(items):
     """A landing page for the corpus itself, carrying schema.org Dataset markup.
     Without it the bulk files are only discoverable from a footer line; with it a
@@ -1023,7 +1115,10 @@ def main():
     # serving, stays in search results, and can leak text we deliberately withdrew
     # "data" is the corpus landing page: generated, not slug-backed, so it must be
     # named here or the orphan sweep below would delete it on every rebuild.
-    live = {a["slug"] for a in items if a["media"] == "text"} | set(SECTIONS) | {"data"}
+    # "ze-siti" and "social-img" are generated the same way "data" is — not backed by a
+    # slug — so they must be named here or the sweep below deletes them every rebuild.
+    live = ({a["slug"] for a in items if a["media"] == "text"} | set(SECTIONS)
+            | {"data", "ze-siti", "social-img"})
     orphans = [d for d in KDIR.iterdir()
                if d.is_dir() and d.name not in live and d.name not in ("src", "__pycache__")]
     for d in orphans:
@@ -1041,6 +1136,7 @@ def main():
         write_index(items, k)
     write_feed(items)
     n_txt = write_machine_readable(items)
+    write_socials_page()
     write_data_page(items)
     n_src = write_src_index(items)
     n = update_sitemap(items)

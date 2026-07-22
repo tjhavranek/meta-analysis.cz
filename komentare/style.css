@@ -216,3 +216,19 @@ main { padding: 2.75rem 0 4rem; }
   font-size: 1.05rem; line-height: 1.55; color: var(--muted);
   max-width: var(--measure);
 }
+
+/* ------------------------------------------------------------------ ze sítí */
+/* One page holds every post, so each needs its own visible boundary and a
+   linkable anchor — the anchor is the citable address, since these get no page. */
+.posts { margin-top: 2rem; }
+.post { padding: 1.4rem 0; border-bottom: 1px solid var(--rule); }
+.post:first-child { padding-top: 0; }
+.post-date { margin: 0 0 0.6rem; font-size: 0.83rem; color: var(--faint);
+             letter-spacing: 0.02em; }
+.post-date a { color: var(--faint); text-decoration: none; }
+.post-date a:hover { color: var(--accent); text-decoration: underline; }
+.post-approx { color: var(--faint); }
+.post p { margin: 0 0 0.9em; }
+.post img { display: block; max-width: 100%; height: auto; margin: 1rem 0 0;
+            border: 1px solid var(--rule); border-radius: 4px; }
+.post-note { font-size: 0.9rem; color: var(--faint); max-width: var(--measure); }

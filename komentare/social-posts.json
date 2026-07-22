@@ -1,0 +1,309 @@
+[
+ {
+  "n": 2,
+  "age": "5d",
+  "date": "2026-07-16",
+  "precision": "day",
+  "date_note": "exact, decoded from the LinkedIn activity id",
+  "truncated_reshare": false,
+  "text": "Does multi-agent debate improve AI feedback on research papers? Not in our experiment.\n\nWe just posted a pre-registered study in which authors ranked three AI reports on their own paper. The reports were blinded and came from three setups: a single prompt and two multi-agent tools. We expected the multi-agent tools to win.\n\nWe find:\n1) Multi-agent debate does not help here. The single prompt beat both multi-agent tools, even though one of them spent about 30x the tokens.\n2) If an independent AI model ranked the reports in the authors' place, it would put the most expensive multi-agent tool first.\n3) Authors who recalled their real journal referee feedback usually ranked it above all the AI reports. In contrast, the AI judges almost always ranked the human feedback last.I was also surprised by how little the author and AI rankings agree (correlation 0.14). Authors seem to have actually read the AI reports (!) and thought about them, not just used a chatbot to rank them.\n\nThanks to all 47 authors who participated!\n\nPaper: https://lnkd.in/d7YsNxWc\n\nBoth multi-agent tools are open source:https://lnkd.in/dtGSi8zP\n\nhttps://lnkd.in/dk5NQpcE",
+  "lang": "en",
+  "images": [
+   "2026-07-16_p2_1.jpeg",
+   "2026-07-16_p2_2.jpeg"
+  ]
+ },
+ {
+  "n": 3,
+  "age": "2w",
+  "date": "2026-07-08",
+  "precision": "day",
+  "date_note": "exact, decoded from the LinkedIn activity id",
+  "truncated_reshare": false,
+  "text": "This week I have been at Stanford, spending my days working and my evenings at Nitoboxing in Palo Alto. Honestly, it was exactly what I needed!\n\nResearch is intense, travel tiring, and sometimes the best way to get your head straight is not another coffee, but gloves and sweat.\n\nHuge thanks to Mark and the whole team for the warm welcome, great energy, and for helping me reset after long days.",
+  "lang": "en",
+  "images": [
+   "2026-07-08_p3_1.jpeg"
+  ]
+ },
+ {
+  "n": 4,
+  "age": "2w",
+  "date": "2026-07-04",
+  "precision": "day",
+  "date_note": "exact, decoded from the LinkedIn activity id",
+  "truncated_reshare": false,
+  "text": "Proud to be affiliated with Stanford METRICS. Few groups have done more for reproducibility and research integrity than John Ioannidis and his team, and it's a pleasure to meet in person some of the postdocs behind so much of the work: Alejandro Sandoval Lentisco, Quentin Loisel, and Sarah Tanveer.\n\nHappy Fourth of July, and happy 250th, America!!",
+  "lang": "en",
+  "images": [
+   "2026-07-04_p4_1.jpeg"
+  ]
+ },
+ {
+  "n": 5,
+  "age": "4w",
+  "date": "2026-06-23",
+  "precision": "day",
+  "date_note": "exact, decoded from the LinkedIn activity id",
+  "truncated_reshare": false,
+  "text": "If you plan to work on your ERC proposal this summer, the following tool might help you:https://lnkd.in/gAN6S747\n\nIt checks your draft at various stages against the official ERC evaluation criteria and rules, flags the routine weak spots, gives you tips, etc. The idea is to clear the easy problems before you ask humans, not to replace them.\n\nJust read the privacy note first: use a paid model with training turned off, or don't paste anything sensitive.\n\nWe built this with Tomas Havranek, who was on the ERC Advanced economics panel in 2020 and is involved in the expert group supporting ERC applicants in Czechia.\n\nYou might also check our related tools: mad-research (https://lnkd.in/dtGSi8zP), which stress-tests your paper or proposal with a Claude/Codex debate, and paper-workshop (https://lnkd.in/dk5NQpcE), which simulates an expert workshop on your stuff.\n\nIf you have any comments or feedback, we'll be happy to incorporate them into the tools.",
+  "lang": "en",
+  "images": [
+   "2026-06-23_p5_1.jpeg"
+  ]
+ },
+ {
+  "n": 6,
+  "age": "1mo",
+  "date": "2026-06-10",
+  "precision": "day",
+  "date_note": "exact, decoded from the LinkedIn activity id",
+  "truncated_reshare": false,
+  "text": "Imagine a panel of the world's leading experts, assembled for your research paper, arguing it out from rival schools and then revising it themselves.\n\nWell, that's not possible. But we built an approximation with Claude Code, and it now uses the full power of Anthropic's Mythos-class model, Claude Fable 5.Below is the skill, open and free. You give it your paper, ideally with the data and draft code. You get a stress test of your paper + a revision in track changes + a replication package. We ran it end to end on colleagues' papers and our own paper accepted at JPE Micro, Stata and R re-runs included. Enjoy:https://lnkd.in/dk5NQpcE",
+  "lang": "en",
+  "images": [
+   "2026-06-10_p6_1.jpeg"
+  ]
+ },
+ {
+  "n": 7,
+  "age": "1mo",
+  "date": "2026-06-22",
+  "precision": "day",
+  "date_note": "approximate; LinkedIn showed only \"1mo\"",
+  "truncated_reshare": false,
+  "text": "Nesehnali jste už lístky na Smetanova Litomyšl, ale přesto chcete zakusit genius loci perly východních Čech? Snadná pomoc!\n\nDěti připravily festivalové vydání své závodní hry z Litomyšle:https://lnkd.in/gvEF-zD7\n\nZávodíte v litomyšlských ulicích s dalším hráčem na počítači, nebo na mobilu s botem. Můžete střílet, sbírat lepší zbraně, ničit budovy (např. školu).\n\nPozor na bomby a zombie Bedřichy!\n\nHru postavily děti samy v zimě s Claude Code za několik hodin (ač pak trvaly na mnoha hodinách testování 😉). Jasně, vypadá jako z 80. let. Ale je to jen malá ukázka toho, co současné agentní AI systémy dokážou, a není to zdaleka jen o kódování.\n\nPokud jste Claude Code nebo Codex ještě nezkoušeli, určitě stojí za to nainstalovat, ať už se živíte čímkoli. Nejtěžší je překonat počáteční strach. Ono je to nakonec jednoduché.\n\nDetaily hry tady:https://lnkd.in/gVmACuyi",
+  "approx": true,
+  "lang": "cs",
+  "images": []
+ },
+ {
+  "n": 8,
+  "age": "1mo",
+  "date": "2026-06-22",
+  "precision": "day",
+  "date_note": "approximate; LinkedIn showed only \"1mo\"",
+  "truncated_reshare": false,
+  "text": "Do you know that Claude Code can use Codex to stress test its work?I had both installed and used them interchangeably: for some tasks, one seems to be better, and vice versa. Also, sometimes I hit usage limit in one, so I continue in the other.\n\nThis can be automated easily: work from Claude Code and call Codex when needed. Here is the Claude skill, applied to stress-testing research:https://lnkd.in/dtGSi8zP\n\nThis builds on our previous manual protocols for using different AI models to test research ideas or papers:https://lnkd.in/dRwKz63g\n\nDoes the skill work for you? What should we change? Should we add Gemini?",
+  "approx": true,
+  "lang": "en",
+  "images": [
+   "2026-06-22_p8_1.jpeg"
+  ]
+ },
+ {
+  "n": 9,
+  "age": "2mo",
+  "date": "2026-05-22",
+  "precision": "day",
+  "date_note": "approximate; LinkedIn showed only \"2mo\"",
+  "truncated_reshare": false,
+  "text": "Reporting Guidelines for Meta-Analysis in Economics, updated for AI, just published in the Journal of Economic Surveys:https://lnkd.in/d_BciGAd\n\nTwo practical points I would emphasize (my personal opinion), beyond the reporting checklist itself:1️⃣ If you use AI for searching, screening, or coding, don't rely on a single model. Use meta-analysis thinking: each model is trained differently and on different data (think Claude vs. Grok). Even if one model strictly dominates, there will be useful information in the others, and you need to stress-test your favorite model brutally regardless. We have developed a simple Research Audit Protocol based on Multi-Agent Debate (MAD) for exactly this:https://lnkd.in/d63DFbPz\n\n2️⃣ These guidelines intentionally do not recommend any particular methodology. We do so in our 2024 method guidelines (https://lnkd.in/dPcDR7Gr). Brief update: I think the baseline meta-analysis technique is now Robust Bayesian Meta-Analysis (RoBMA) by František Bartoš, Maximilian Maier, and Eric-Jan Wagenmakers -- a principled way to average over various bias-correction methods. But these methods don't address p-hacking, so RoBMA should be complemented with MAIVE (easy to apply via https://easymeta.org) and RTMA (Maya Mathur).\n\nThe updated reporting guidelines were led by Nikolai Cook and co-authored with František Bartoš, Pedro Bom, Sebastian Gechert, Klára Kantová, Jerome Geyer-Klingeberg, Dr.-Ing., Tomas Havranek, Martina Lušková, Matej Opatrny, Franz Prante, Heiko Rachinger, and Tom Stanley.",
+  "approx": true,
+  "lang": "en",
+  "images": [
+   "2026-05-22_p9_1.jpeg"
+  ]
+ },
+ {
+  "n": 10,
+  "age": null,
+  "date": "2026-05-01",
+  "precision": "day",
+  "date_note": "no timestamp; boxed between the 2mo and 3mo posts",
+  "truncated_reshare": false,
+  "text": "Will our results change if we redo the meta-analysis from scratch?\n\nWe just pre-registered a big revision of our meta-analysis on beauty and professional success:https://lnkd.in/dBSAB5N2\n\nThe current paper follows standards commonly used in economics meta-analysis. For the revision we decided to do the search and data collection differently, following multidisciplinary systematic-review practice: a librarian-designed multi-database search, dual screening, coding reliability checks, PRISMA documentation, and a full audit trail.A nice side effect is that this becomes a natural experiment on our own work. Honestly, I'm curious how much it will move the results.\n\nThe amazing Martina Lušková joined the team to help lead study selection and coding, and we are working with a librarian at the University of Amsterdam on the search strategy.\n\nIn the current version we find that the effect of beauty on earnings is smaller than commonly thought once you correct for publication bias and p-hacking, and smaller still when more weight is given to studies that control for cognitive ability. The one clear exception is sex workers. For politicians, the beauty premium mostly goes away after correction.\n\nTo make the comparison fully transparent, we also uploaded the current paper, data, and code to the registration.\n\nWe should do much more pre-registration in observational research. It doesn't fully prevent p-hacking, but it helps a lot and the cost is low.\n\nCo-authored with Tomas Havranek, František Bartoš, Xenia Bortnikova, and Martina Lušková",
+  "lang": "en",
+  "images": [
+   "2026-05-01_p10_1.jpeg"
+  ]
+ },
+ {
+  "n": 11,
+  "age": "3mo",
+  "date": "2026-04-22",
+  "precision": "day",
+  "date_note": "approximate; LinkedIn showed only \"3mo\"",
+  "truncated_reshare": false,
+  "text": "Not an easy task, but in a new note just out in the Journal of Economic Surveys we try to set a basic floor on the use of AI in meta-analysis.https://lnkd.in/dZNGRfJb\n\nShort version:\n🔹 Human leadership. Humans direct the search, coding, and analysis, and record where they override the AI.\n🔹 Human accountability. AI cannot be a co-author. If your name is on the paper, the errors are yours.\n🔹 Human auditing. AI can serve as one of the coders, as long as humans audit at least 10% of screening records and 10% of coded studies (or 100 and 20, whichever is larger), and report a measure of agreement.\n🔹 Human disclosure. Anything that shapes search, screening, coding, analysis, or conclusions should be disclosed, with prompts and model versions saved.\n\nThe effort was led by the amazing Nikolai Cook. It will be periodically updated at maer-net.org.\n\nFor the full discussion of how we agreed on these guidelines (scroll down to comments):https://lnkd.in/dME6se-W",
+  "approx": true,
+  "lang": "en",
+  "images": [
+   "2026-04-22_p11_1.jpeg"
+  ]
+ },
+ {
+  "n": 12,
+  "age": "3mo",
+  "date": "2026-04-22",
+  "precision": "day",
+  "date_note": "approximate; LinkedIn showed only \"3mo\"",
+  "truncated_reshare": true,
+  "text": "It was fun to be (a very small) part of the amazing team led by Abel Brodeur. The numbers look great, but note that we replicate papers in journals that have mandatory data and code sharing. So: share your data and code! And while you're at it, pre-register your papers and upload pre-analysis plans. This is the way!",
+  "approx": true,
+  "lang": "en",
+  "images": []
+ },
+ {
+  "n": 13,
+  "age": "3mo",
+  "date": "2026-04-22",
+  "precision": "day",
+  "date_note": "approximate; LinkedIn showed only \"3mo\"",
+  "truncated_reshare": false,
+  "text": "Top 7 non-fiction books I recommend.\n\n📚Not an endorsement of everything in these books, but I learned a great deal about economics, history, and politics.1️⃣ Bourgeois Equality (McCloskey): How the West got rich.2️⃣ In the Garden of Beasts (Larson): An American family in 1930s Berlin, watching a society die.3️⃣ Recession (Tyler Goodspeed): Why economies shrink. Excellent new book.4️⃣ Cicero (Everitt): The life of arguably the greatest statesman the West ever produced.5️⃣ Red Dawn Over China (Dikötter): How China became communist.6️⃣ The Lives of the Caesars (Suetonius): The most readable classical text I know. Reads like a novel.7️⃣ The Fiscal Theory of the Price Level (John H. Cochrane): A bold, rigorous book on modern macroeconomics.\n\nWhat's the best non-fiction book you've read this year?",
+  "approx": true,
+  "lang": "en",
+  "images": []
+ },
+ {
+  "n": 14,
+  "age": "4mo",
+  "date": "2026-03-22",
+  "precision": "day",
+  "date_note": "approximate; LinkedIn showed only \"4mo\"",
+  "truncated_reshare": false,
+  "text": "Two AI models dueling worked. Four models debating works better.\n\nWe updated our research audit protocol. The new version (MAD v2.0) uses ChatGPT, Claude, Gemini, and Grok in structured adversarial rounds:1️⃣ Independent critique — no model sees the others, every claim grounded in the document.2️⃣ Cross-examination — each model attacks the weakest peer arguments.3️⃣ Final arbiter synthesizes what survived.\n\nNo code needed. Copy-paste prompts. Free model versions work (just register for each model).\n\nAdvanced users: the entire workflow can be automated via the models' APIs using frameworks like AutoGen, LangGraph, or CrewAI.\n\nUse it for high-stakes documents: stress-testing your papers, grant proposals, referee reports.\n\nProtocol (GitHub): 👉 https://lnkd.in/dRwKz63g GitHub - tjhavranek/research-audit-duel-protocol: Human-in-the-loop adversarial workflows for high-stakes research audit: from ChatGPT-Gemini duels to 4-model MAD.",
+  "approx": true,
+  "lang": "en",
+  "images": []
+ },
+ {
+  "n": 15,
+  "age": "4mo",
+  "date": "2026-03-22",
+  "precision": "day",
+  "date_note": "approximate; LinkedIn showed only \"4mo\"",
+  "truncated_reshare": false,
+  "text": "Doporučuji všem rodičům včas testovat děti na cukrovku. Nám to bohužel vyšlo jednou pozitivní, ale díky tomu testu + moderní medicíně můžete nástup nemoci oddálit o několik let.\n\nVčasný test = šance na roky navíc bez inzulinu.\n\nDíky Barbora Berka a Natálie Chrástecká za skvělý přístup v Motole.\n\nDíky Jan Hrušovský za hezký rozhovor s mým manželem, který poprvé na kameru mluvil o něčem jiném než o ekonomii (což je většinou velmi ... poutavé 😉 ).https://lnkd.in/duWtcSbA",
+  "approx": true,
+  "lang": "cs",
+  "images": []
+ },
+ {
+  "n": 16,
+  "age": "4mo",
+  "date": "2026-03-22",
+  "precision": "day",
+  "date_note": "approximate; LinkedIn showed only \"4mo\"",
+  "truncated_reshare": false,
+  "text": "Meta-analyses should try to correct not just for publication bias, but also for p-hacking.\n\nSome estimates are more likely to be reported than others, so every good summary of research should correct for this publication bias. In case you're wondering — yes, this can be done, there are dozens of methods and decades of research on this. There is even a great way to put these different correction techniques together: see RoBMA by František Bartoš and colleagues.\n\nThe problem is that these techniques assume that the reported estimates are individually unbiased. This is a strong assumption, as researchers can tweak models (consciously or unconsciously) to get more \"sensible\" results. This is called p-hacking. Most of us do it.\n\nIn our recent Nature Communications paper we show that under some forms of p-hacking, classical models correcting for publication bias can actually be more biased than a simple average of published estimates.\n\nAs far as I know, there are only two meta-analysis corrections for (some forms of) p-hacking: our MAIVE (from the Nature Comms paper) and RTMA by Maya Mathur. If you know of more, please let me know in the comments!\n\nIf you want to see MAIVE and RTMA applied, take a look at our meta-analysis of the beauty premium. Spoiler: apart from the sex industry, beauty doesn't matter much in the labor market.",
+  "approx": true,
+  "lang": "en",
+  "images": [
+   "2026-03-22_p16_1.jpeg"
+  ]
+ },
+ {
+  "n": 17,
+  "age": "5mo",
+  "date": "2026-02-12",
+  "precision": "day",
+  "date_note": "exact, decoded from the LinkedIn activity id",
+  "truncated_reshare": true,
+  "text": "Congratulations to Martin! I am very sorry I couldn't be there. I love my hometown Rožňava.",
+  "lang": "en",
+  "images": []
+ },
+ {
+  "n": 19,
+  "age": "5mo",
+  "date": "2026-01-31",
+  "precision": "day",
+  "date_note": "exact, decoded from the LinkedIn activity id",
+  "truncated_reshare": false,
+  "text": "A small experiment at home: our kids (8-12) were sick and bored, so we introduced them to Claude Code.\n\nTwo hours later, they had a working browser racing game set in our hometown. They did almost everything themselves; we helped with publishing it on GitHub.\n\nThe graphics are… charmingly 1980s. But it runs smoothly and it’s fun.\n\nTakeaway for me: if you’re a researcher, it’s worth setting aside an hour to play with these tools -- you might be surprised what you can do now.(Link to the game in the first comment!)",
+  "lang": "en",
+  "images": []
+ },
+ {
+  "n": 20,
+  "age": "5mo",
+  "date": "2026-01-27",
+  "precision": "day",
+  "date_note": "exact, decoded from the LinkedIn activity id",
+  "truncated_reshare": false,
+  "text": "A browser-based tool for correcting publication bias and p-hacking.\n\nWe built EasyMeta.org to make bias-corrected meta-analysis easier to run. Upload your dataset and benchmark your conclusions against modern corrections -- directly in your browser.\n\nWhy: Selective reporting can distort what enters the literature and how results are reported, but applying corrections often requires specialized software or a complex workflow.\n\nWhat it offers:\n• Bias corrections: MAIVE (our Nature Communications method) plus benchmarks like PET-PEESE.\n• Robust inference: options for clustering and different data structures.\n• Minimal setup: free, open, no installation, no coding.\n• Reproducibility: export R code for the results you generate.\n\nSwipe through the four slides to see the workflow.\n\nTry it with your own data: 👉 easymeta.org (https://www.easymeta.org/)With Pedro Bom, Tomas Havranek, Heiko Rachinger, and Petr Čala",
+  "lang": "en",
+  "images": []
+ },
+ {
+  "n": 22,
+  "age": null,
+  "date": "2025-12-31",
+  "precision": "day",
+  "date_note": "says \"v dnešních HN\"; that op-ed is archived at this date",
+  "truncated_reshare": false,
+  "text": "Jak vytěžit z AI maximum?\n\nNechte modely bojovat mezi sebou. 🧠\n\n🤖V dnešních Hospodářské noviny ukazujeme jednoduchý, ale účinný postup, jak pracovat efektivněji s umělou inteligencí.\n\nMísto jedné odpovědi: duel AI modelů.\n\nChatGPT vs. Gemini (nebo jiná kombinace).\n🔹 Jeden model dostane roli kreativního vizionáře, který nápad rozvíjí.\n🔹 Druhý je ďáblův advokát – systematicky hledá faktické i logické chyby.\n🔹 Modely si navzájem napadají výstupy a opravují se.\n\nVýsledek?\n\n👉 Méně halucinací.\n\n👉 Tvrdší „stress test“ nápadů.\n\n👉 Kvalitnější výstup než od jednoho modelu.\n\nNemáte předplatné ChatGPT?\n\nŽádný problém. Duel zvládnete i manuálně – stačí otevřít vedle sebe dva zdarma dostupné AI modely, dát jim stejná data a protichůdné role a jejich odpovědi mezi sebou křížit. Po několika kolech už dává smysl výstupy číst.🔗 Odemčený článek v HN:https://lnkd.in/dBbUetrP\n\n🔗 Duelový protokol (prompt + návod):https://lnkd.in/dRwKz63g",
+  "lang": "cs",
+  "images": [
+   "2025-12-31_p22_1.jpeg"
+  ]
+ },
+ {
+  "n": 23,
+  "age": "6mo",
+  "date": "2026-01-20",
+  "precision": "day",
+  "date_note": "approximate; LinkedIn showed only \"6mo\"",
+  "truncated_reshare": true,
+  "text": "I still love Slovakia and Gemer. When our kids were born, one of the first things my husband did was go to the Slovak embassy in Prague and arrange Slovak citizenship for them. I hope I’m wrong in this interview.",
+  "approx": true,
+  "lang": "en",
+  "images": []
+ },
+ {
+  "n": 24,
+  "age": "7mo",
+  "date": "2025-12-21",
+  "precision": "day",
+  "date_note": "approximate; LinkedIn showed only \"7mo\"",
+  "truncated_reshare": false,
+  "text": "For deep analytical work, I don’t use one AI model. I make them duel.\n\nFor thinking-intensive tasks (research, strategy, due diligence) a single AI model often converges too fast. It sounds convincing but skips edge cases and hidden assumptions.\n\nSo Tomas Havranek and I formalized a workflow to create structured disagreement:\n🔹 Anchor (ChatGPT): Writes a first-pass assessment grounded in the files.\n🔹 Audit (Gemini): Actively tries to break it (logic gaps, counterexamples, failure modes). ChatGPT defends. The duel iterates.\n🔹 Synthesis (You): You analyze the conflict to see what survives.\n\nThe output is not “AI approval.” It is a clearer map of risks, boundary conditions, and what you must verify.\n\nAdvanced users: You can swap the auditor for Claude or automate this via API (MAD).\n\nFor everyone else: no code needed. You can copy-paste the protocol and try it via ChatGPT Agent.\n\nProtocol (GitHub): 👉 https://lnkd.in/dRwKz63g",
+  "approx": true,
+  "lang": "en",
+  "images": []
+ },
+ {
+  "n": 26,
+  "age": "7mo",
+  "date": "2025-12-21",
+  "precision": "day",
+  "date_note": "approximate; LinkedIn showed only \"7mo\"",
+  "truncated_reshare": false,
+  "text": "🔎 MAIVE is now on CRAN: Better tools for trustworthy meta-analysisMeta-analysis is one of the key pillars of evidence-based research. It combines results from many studies to give us a clearer, more reliable answer.\n\nBut in observational research, studies can sometimes appear too precise --not because the evidence is strong, but because of method choices, selective reporting, or p-hacking. This can distort the final meta-analytic conclusion.MAIVE helps address this.\n\nYou can now install MAIVE directly in R:install.packages(\"MAIVE\")Or try it instantly in your browser (no coding needed): 🖥️ https://www.easymeta.org More details: 📦 CRAN package: https://lnkd.in/dQ7XjiAq 📄 Nature Communications article: https://lnkd.in/eFfrP6H2 📰 Blog overview: https://lnkd.in/ejkgbU6X\n\nA big thank-you to Petr Čala, who built the MAIVE web app and prepared the CRAN release. His work makes high-quality meta-analysis methods accessible. Spurious Precision in Meta-Analysis",
+  "approx": true,
+  "lang": "en",
+  "images": [
+   "2025-12-21_p26_1.png"
+  ]
+ },
+ {
+  "n": 27,
+  "age": "8mo",
+  "date": "2025-11-20",
+  "precision": "day",
+  "date_note": "approximate; LinkedIn showed only \"8mo\"",
+  "truncated_reshare": false,
+  "text": "🔎 New in Nature Communications: “Spurious precision in meta-analysis of observational research.”\n\nSometimes studies appear too precise because their reported uncertainty reflects method choices rather than real evidence strength. This can mislead meta-analyses.\n\nWe introduce MAIVE, a simple way to detect and correct such bias, including publication bias and p-hacking.🖥️ Try it in your browser (free, no coding): https://www.easymeta.org 📄 Paper: https://lnkd.in/eFfrP6H2",
+  "approx": true,
+  "lang": "en",
+  "images": [
+   "2025-11-20_p27_1.png"
+  ]
+ },
+ {
+  "n": 30,
+  "age": "3yr",
+  "date": "2023-07-23",
+  "precision": "day",
+  "date_note": "approximate; LinkedIn showed only \"3yr\"",
+  "truncated_reshare": false,
+  "text": "Přátelé,každoročně věnuje skupina českých lékařů měsíce svého života budování nemocnice a pomoci nemocným v keňském Itibu. Možná je znáte z filmu Daleko za sluncem. Některé dobrovolníky osobně znám; zrovna se snaží o sbírku na přístroj, který by zlepšil či zachránil život mnohým. Sbírka měsíce stagnuje, cíl je daleko. Prosím pomozte jim pomáhat na https://lnkd.in/eR_cCtDx\n\nJako každá legit donation i tahle je tax-deductible.",
+  "approx": true,
+  "lang": "cs",
+  "images": [
+   "2023-07-23_p30_1.jpeg"
+  ]
+ }
+]
