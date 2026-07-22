@@ -663,14 +663,39 @@ def write_index(items, key=None):
             "https://zrusme-inflaci.cz/",
         ],
     }
+    # This is a joint archive, so the structured data has to name both people or an
+    # entity resolver reads every item as his. Her node carries every name form she
+    # publishes under, which is how a crawler connects "Irsova" to "Havránková".
+    person_zi = {
+        "@type": "Person",
+        "@id": f"{BASE}/#author-zi",
+        "name": "Zuzana Iršová Havránková",
+        "givenName": "Zuzana", "familyName": "Havránková",
+        "alternateName": ["Zuzana Havránková", "Zuzana Iršová", "Zuzana Irsová",
+                          "Zuzana Irsova", "Zuzana Irsova Havrankova"],
+        "jobTitle": "profesorka ekonomie",
+        "description": ("Profesorka ekonomie na Institutu ekonomických studií FSV "
+                        "Univerzity Karlovy. Metaanalýza a metavýzkum, trh práce a "
+                        "mezinárodní ekonomie. V angličtině publikuje jako Zuzana Irsova."),
+        "affiliation": {"@type": "Organization",
+                        "name": "Institut ekonomických studií, FSV Univerzita Karlova",
+                        "url": "https://ies.fsv.cuni.cz/"},
+        "url": "https://www.irsova.com/",
+        "sameAs": [
+            "https://orcid.org/0000-0002-0753-8124",
+            "https://ies.fsv.cuni.cz/contacts/institute-members/73504033",
+            "https://www.irsova.com/",
+            "https://meta-analysis.cz/",
+        ],
+    }
     node = {
         "@type": "CollectionPage",
         "@id": canonical + "#collection",
         "url": canonical,
-        "name": f"{title} — {AUTHOR}",
+        "name": f"{title} — {SITE_AUTHORS}",
         "description": desc,
         "inLanguage": sec["lang"] if sec else "cs",
-        "about": {"@id": f"{BASE}/#author"},
+        "about": [{"@id": f"{BASE}/#author"}, {"@id": f"{BASE}/#author-zi"}],
         "hasPart": [{
             "@type": "Article",
             "@id": (f"{BASE}/{a['slug']}/#article" if a["media"] == "text" else a.get("url", "")),
@@ -696,7 +721,7 @@ def write_index(items, key=None):
             + (FILTER if not key else "")
             + listing(sel, show_cat=not key))
     page = shell(f"{title} — {SITE_AUTHORS}", desc, canonical,
-                 {"@context": "https://schema.org", "@graph": [node, person]},
+                 {"@context": "https://schema.org", "@graph": [node, person, person_zi]},
                  body, key or "", lang=(sec["lang"] if sec else "cs"))
     if not key:
         page = page.replace("</body>", SCRIPT + "</body>")
@@ -749,7 +774,8 @@ def write_machine_readable(items, social=()):
     # --- llms.txt -------------------------------------------------------------
     L = [f"# Komentáře — {SITE_AUTHORS}", "",
          "> " + HUB_DESC, "",
-         f"Publicistika: {len(items)} položek, "
+         f"Publicistika: {len(items)} položek a {n_social} kratších příspěvků ze sítí "
+         f"({len(items) + n_social} záznamů celkem), "
          f"{items[-1]['date'][:4]}–{items[0]['date'][:4]}. "
          "Plné znění každého textu je na uvedené adrese; "
          "zdrojový Markdown je v /komentare/src/.", ""]
@@ -766,6 +792,14 @@ def write_machine_readable(items, social=()):
                 L.append(f"- [{a['headline']}]({a.get('url','')}) — {a['outlet']}, {d} "
                          f"({MEDIA_LABEL.get(a['media'], '')}, pouze odkaz)")
         L.append("")
+    if social:
+        L += ["## Posts (ze sítí)", "",
+              f"Kratší příspěvky Zuzany Iršové Havránkové, publikované původně na "
+              f"LinkedIn, zde v plném znění na jedné stránce. Každý má vlastní kotvu.", ""]
+        for p in social:
+            L.append(f"- [{_headline(p['text'])}]({BASE}/posts/#{p['anchor']}) — "
+                     f"{p['date']}")
+        L.append("")
     L += ["## Další zdroje", "",
           "- [Osobní stránka](https://www.tomashavranek.cz/)",
           "- [meta-analysis.cz](https://meta-analysis.cz/)",
@@ -773,8 +807,8 @@ def write_machine_readable(items, social=()):
           "- [ORCID](https://orcid.org/0000-0002-3158-2539)",
           "- [Google Scholar](https://scholar.google.com/citations?user=BF0BvBkAAAAJ)",
           "- [RePEc](https://ideas.repec.org/f/pha418.html)",
-          f"- [Posts]({BASE}/posts/) — short posts by Zuzana Havránková, in full "
-          f"(English)",
+          f"- [Posts]({BASE}/posts/) — {n_social} short posts by Zuzana Irsova "
+          f"Havrankova, mostly English, in full",
           f"- [RSS]({BASE}/feed.xml)",
           f"- [Strojově čitelný index (JSON)]({BASE}/index.json)",
           f"- [Všechny texty v jednom souboru]({BASE}/all.md)", ""]
@@ -827,11 +861,17 @@ def write_machine_readable(items, social=()):
         "name": f"Komentáře — {SITE_AUTHORS}",
         "description": HUB_DESC,
         "url": f"{BASE}/",
-        "author": {"name": AUTHOR, "orcid": ORCIDS[AUTHOR],
-                   "affiliation": "Institut ekonomických studií, FSV Univerzita Karlova"},
+        "authors": [
+            {"name": AUTHOR, "orcid": ORCIDS[AUTHOR],
+             "affiliation": "Institut ekonomických studií, FSV Univerzita Karlova"},
+            {"name": "Zuzana Iršová Havránková", "orcid": ORCIDS["Zuzana Havránková"],
+             "also_published_as": ["Zuzana Havránková", "Zuzana Iršová", "Zuzana Irsova"],
+             "affiliation": "Institut ekonomických studií, FSV Univerzita Karlova"},
+        ],
         "license": "Texty jsou majetkem autora a původních vydavatelů; "
                    "archiv slouží ke čtení a citaci s uvedením původního zdroje.",
-        "count": len(docs), "generated_from": "komentare/src/*.md",
+        "count": len(docs),
+        "generated_from": ["komentare/src/*.md", "komentare/social-posts.json"],
         "items": docs,
     }, ensure_ascii=False, indent=1), encoding="utf-8")
 
@@ -882,14 +922,15 @@ def write_machine_readable(items, social=()):
     (KDIR / "manifest.json").write_text(json.dumps({
         "name": f"Komentáře — {SITE_AUTHORS}",
         "url": f"{BASE}/data/",
-        "corpus_updated": items[0]["date"],
-        "temporal_coverage": f"{items[-1]['date']}/{items[0]['date']}",
+        "corpus_updated": _span(items, social).split("/")[1],
+        "temporal_coverage": _span(items, social),
         "records": {
             "total": len(docs),
             "by_text_status": counts,
-            "by_section": {SECTIONS[k]["title"]: len([a for a in items
-                                                      if a["category"] == k])
-                           for k in SECTIONS},
+            "by_section": {**{SECTIONS[k]["title"]: len([a for a in items
+                                                         if a["category"] == k])
+                              for k in SECTIONS},
+                           "Posts (ze sítí)": len(social)},
         },
         "text_status_meanings": {
             "published_full_text": "the text as published",
@@ -898,7 +939,7 @@ def write_machine_readable(items, social=()):
             "link_only": "audio or video; no text is stored, the record links to the source",
         },
         "files": files,
-        "generated_from": "komentare/src/*.md",
+        "generated_from": ["komentare/src/*.md", "komentare/social-posts.json"],
     }, ensure_ascii=False, indent=1), encoding="utf-8")
 
     return len([a for a in items if a["media"] == "text"])
@@ -913,6 +954,18 @@ SOCIAL_DESC = ("Short posts by Zuzana Irsova Havrankova on her own research, on 
                "archived here in full.")
 
 _LINK = re.compile(r"https?://[^\s<>]+")
+
+# Their own properties and stable scholarly identifiers. nofollowing these from their
+# own archive is an own goal: they are author-chosen links, not user-generated content.
+_OWN = re.compile(r"^https?://(www\.)?("
+                  r"meta-analysis\.cz|tomashavranek\.cz|irsova\.com|zrusme-inflaci\.cz|"
+                  r"easymeta\.org|spuriousprecision\.com|doi\.org|github\.com/tjhavranek|"
+                  r"osf\.io|arxiv\.org|cepr\.org|ies\.fsv\.cuni\.cz)")
+
+
+def _rel(u):
+    return "" if _OWN.match(u) else ' rel="nofollow"'
+
 
 
 def _trim_url(u):
@@ -935,7 +988,7 @@ def _social_html(text):
         body = "<br>".join(lines)
         def _a(m):
             u = _trim_url(m.group(0))
-            return f'<a href="{u}" rel="nofollow">{u}</a>{m.group(0)[len(u):]}'
+            return f'<a href="{u}"{_rel(u)}>{u}</a>{m.group(0)[len(u):]}'
         body = _LINK.sub(_a, body)
         out.append(f"<p>{body}</p>")
     return "\n        ".join(out)
@@ -995,7 +1048,7 @@ def write_socials_page():
         if p.get("comment_links"):
             lab = ("Odkazy, které autorka doplnila v komentářích:" if lang == "cs"
                    else "Links the author added in the comments:")
-            items = "".join(f'<li><a href="{esc(u)}" rel="nofollow">{esc(u)}</a></li>'
+            items = "".join(f'<li><a href="{esc(u)}"{_rel(u)}>{esc(u)}</a></li>'
                             for u in p["comment_links"])
             cl = f'\n        <div class="post-links"><p>{lab}</p><ul>{items}</ul></div>'
         blocks.append(
@@ -1066,13 +1119,19 @@ def write_socials_page():
     return posts
 
 
-def write_data_page(items):
+def _span(items, social):
+    """Coverage of the whole download: the file-backed items and the social posts."""
+    ds = [a["date"] for a in items] + [p["date"] for p in social]
+    return f"{min(ds)}/{max(ds)}"
+
+
+def write_data_page(items, social=()):
     """A landing page for the corpus itself, carrying schema.org Dataset markup.
     Without it the bulk files are only discoverable from a footer line; with it a
     crawler (and Google Dataset Search) gets one entry point that names the
     distributions, the licence and the coverage."""
-    docs_total = len(items)
-    n_text = len([a for a in items if a["media"] == "text"])
+    docs_total = len(items) + len(social)
+    n_text = len([a for a in items if a["media"] == "text"]) + len(social)
     counts = {}
     for a in items:
         counts[text_status(a)] = counts.get(text_status(a), 0) + 1
@@ -1095,9 +1154,15 @@ def write_data_page(items):
          # its own inLanguage, which is where the English/Czech mix is declared.
          "inLanguage": "cs",
              "isAccessibleForFree": True,
-             "creator": {"@type": "Person", "name": AUTHOR,
-                         "identifier": ORCIDS[AUTHOR]},
-             "temporalCoverage": f"{items[-1]['date']}/{items[0]['date']}",
+             "creator": [
+                 {"@type": "Person", "name": AUTHOR, "identifier": ORCIDS[AUTHOR]},
+                 {"@type": "Person", "name": "Zuzana Iršová Havránková",
+                  "identifier": ORCIDS["Zuzana Havránková"]},
+             ],
+             "temporalCoverage": f"{_span(items, social)}",
+             "conditionsOfAccess": ("Texty jsou majetkem autorů a původních vydavatelů; "
+                                    "archiv slouží ke čtení a citaci s uvedením původního "
+                                    "zdroje."),
              "distribution": [
                  {"@type": "DataDownload", "name": "corpus.jsonl",
                   "encodingFormat": "application/x-ndjson",
@@ -1258,7 +1323,7 @@ def main():
     write_feed(items)
     social = write_socials_page()
     n_txt = write_machine_readable(items, social)
-    write_data_page(items)
+    write_data_page(items, social)
     n_src = write_src_index(items)
     n = update_sitemap(items)
 
@@ -1326,6 +1391,20 @@ def check():
                          f"(sources + {n_social} social posts)")
         if sum(1 for d in j["items"] if d.get("genre") == "social_post") != n_social:
             fails.append("index.json is missing the social posts")
+        # The manifest and the data page each drifted to describing 176 records while
+        # shipping 198, and nothing caught it. These four assertions close that class.
+        mf = json.loads((KDIR / "manifest.json").read_text(encoding="utf-8"))
+        if mf["records"]["total"] != expected:
+            fails.append(f"manifest total {mf['records']['total']} != {expected}")
+        for _k in ("by_section", "by_text_status"):
+            if sum(mf["records"][_k].values()) != expected:
+                fails.append(f"manifest {_k} sums to "
+                             f"{sum(mf['records'][_k].values())}, not {expected}")
+        if mf["corpus_updated"] != mf["temporal_coverage"].split("/")[1]:
+            fails.append("manifest corpus_updated is not the newest record")
+        if f"{expected} záznamů" not in (KDIR / "data" / "index.html").read_text(
+                encoding="utf-8"):
+            fails.append(f"data page does not report {expected} záznamů")
         # the social data path has no src/*.md behind it, so nothing else checks it
         if SOCIAL_JSON.exists():
             sp = json.loads(SOCIAL_JSON.read_text(encoding="utf-8"))

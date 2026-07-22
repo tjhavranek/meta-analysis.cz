@@ -1,8 +1,8 @@
 {
  "name": "Komentáře — Tomáš Havránek, Zuzana Havránková",
  "url": "https://meta-analysis.cz/komentare/data/",
- "corpus_updated": "2026-07-01",
- "temporal_coverage": "2016-11-30/2026-07-01",
+ "corpus_updated": "2026-07-16",
+ "temporal_coverage": "2016-11-30/2026-07-16",
  "records": {
   "total": 198,
   "by_text_status": {
@@ -14,7 +14,8 @@
    "Celostátní komentáře": 70,
    "Litomyšlské sloupky": 48,
    "Rozhovory": 44,
-   "In English": 14
+   "In English": 14,
+   "Posts (ze sítí)": 22
   }
  },
  "text_status_meanings": {
@@ -31,8 +32,8 @@
   },
   "index.json": {
    "url": "https://meta-analysis.cz/komentare/index.json",
-   "bytes": 1232918,
-   "sha256": "1e02d00f19c81cd83e592c2f2e43b62a66386267af11e69c5459fed910794f70"
+   "bytes": 1233267,
+   "sha256": "10a2fceca13c578a361de878591f4e58160cad24c57c35697fd6eaa3e710b0b0"
   },
   "all.md": {
    "url": "https://meta-analysis.cz/komentare/all.md",
@@ -41,8 +42,8 @@
   },
   "llms.txt": {
    "url": "https://meta-analysis.cz/komentare/llms.txt",
-   "bytes": 31996,
-   "sha256": "c5103395abbdddfe5394195888aa8210f1ad4fe2ddc7c4b5b7eea72542dceadf"
+   "bytes": 35822,
+   "sha256": "879993064af92619980126bccecf5ef2efd7f202eccb4c07578fa7e2d15409c6"
   },
   "feed.xml": {
    "url": "https://meta-analysis.cz/komentare/feed.xml",
@@ -50,5 +51,8 @@
    "sha256": "5cce0c1c73df99a873303585e52795db2854c5ca4c8aa97f48731a0da291a604"
   }
  },
- "generated_from": "komentare/src/*.md"
+ "generated_from": [
+  "komentare/src/*.md",
+  "komentare/social-posts.json"
+ ]
 }

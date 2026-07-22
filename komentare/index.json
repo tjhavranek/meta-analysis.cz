@@ -2,14 +2,29 @@
  "name": "Komentáře — Tomáš Havránek, Zuzana Havránková",
  "description": "Publicistika Tomáše Havránka a Zuzany Havránkové: komentáře pro celostátní média, sloupky pro litomyšlskou Lilii a rozhovory. Texty jsou zde archivovány v plném znění s odkazem na původní vydání.",
  "url": "https://meta-analysis.cz/komentare/",
- "author": {
-  "name": "Tomáš Havránek",
-  "orcid": "https://orcid.org/0000-0002-3158-2539",
-  "affiliation": "Institut ekonomických studií, FSV Univerzita Karlova"
- },
+ "authors": [
+  {
+   "name": "Tomáš Havránek",
+   "orcid": "https://orcid.org/0000-0002-3158-2539",
+   "affiliation": "Institut ekonomických studií, FSV Univerzita Karlova"
+  },
+  {
+   "name": "Zuzana Iršová Havránková",
+   "orcid": "https://orcid.org/0000-0002-0753-8124",
+   "also_published_as": [
+    "Zuzana Havránková",
+    "Zuzana Iršová",
+    "Zuzana Irsova"
+   ],
+   "affiliation": "Institut ekonomických studií, FSV Univerzita Karlova"
+  }
+ ],
  "license": "Texty jsou majetkem autora a původních vydavatelů; archiv slouží ke čtení a citaci s uvedením původního zdroje.",
  "count": 198,
- "generated_from": "komentare/src/*.md",
+ "generated_from": [
+  "komentare/src/*.md",
+  "komentare/social-posts.json"
+ ],
  "items": [
   {
    "id": "litomysl-ruze-u-fary",
