@@ -254,3 +254,5 @@ main { padding: 2.75rem 0 4rem; }
 .about-links .who { color: var(--text); font-weight: 600; font-size: 0.85rem;
                     letter-spacing: 0.01em; margin-right: 0.15rem; }
 .about-links .who::after { content: ""; }
+.latest-post { margin: 0.5rem 0 0; font-size: 0.92rem; color: var(--muted);
+               max-width: var(--measure); }

@@ -106,8 +106,8 @@ for _k, _v in SECTIONS.items():
     _v.setdefault("lang", "cs")
 
 HUB_DESC = ("Publicistika Tomáše Havránka a Zuzany Havránkové: komentáře pro celostátní média, sloupky pro "
-            "litomyšlskou Lilii a rozhovory. Texty jsou zde archivovány v plném znění "
-            "s odkazem na původní vydání.")
+            "litomyšlskou Lilii, rozhovory a kratší příspěvky ze sítí. Texty jsou zde "
+            "archivovány v plném znění s odkazem na původní vydání.")
 
 # genitive, for a full date: "5. října 2019"
 MONTHS = ["ledna", "února", "března", "dubna", "května", "června",
@@ -392,7 +392,7 @@ def shell(title, desc, canonical, jsonld, body, active, extra_head="", lang="cs"
     <p class="about-bio">{bio}</p>
     <ul class="about-links">
       <li class="who">Tomáš Havránek</li>
-      <li><a href="https://www.tomashavranek.cz/"{cs}>{"osobní stránka" if lang == "cs" else "personal site"}</a></li>
+      <li><a href="https://www.tomashavranek.cz/">tomashavranek.cz</a></li>
       <li><a href="{ies}">IES FSV UK</a></li>
       <li><a href="https://orcid.org/0000-0002-3158-2539">ORCID</a></li>
       <li><a href="https://scholar.google.com/citations?user=BF0BvBkAAAAJ">Google Scholar</a></li>
@@ -407,6 +407,8 @@ def shell(title, desc, canonical, jsonld, body, active, extra_head="", lang="cs"
       <li><a href="{ies_zi}">IES FSV UK</a></li>
       <li><a href="https://orcid.org/0000-0002-0753-8124">ORCID</a></li>
       <li><a href="https://scholar.google.com/citations?user=LaHrICUAAAAJ">Google Scholar</a></li>
+      <li><a href="https://ideas.repec.org/e/pir23.html">RePEc</a></li>
+      <li><a href="https://cepr.org/about/people/zuzana-irsova">CEPR</a></li>
     </ul>
     <ul class="about-links">
       <li class="who">{"Projekty" if lang == "cs" else "Projects"}</li>
@@ -725,6 +727,25 @@ def write_index(items, key=None):
         if n_soc:
             links.append(f'<a href="{PATH}/posts/">Posts ({n_soc})</a>')
         counts = "      <p>" + " · ".join(links) + "</p>\n"
+        # The hub read as staler than the site is: its newest row predates the newest
+        # post. Interleaving 22 short posts among 179 press items would need invented
+        # titles, and per Google's URL guidance 22 rows pointing at #anchors still yield
+        # ONE indexable destination, not 22 — so the cost is real and the gain is not.
+        # Surface the newest one instead, QUOTING its opening line rather than turning
+        # it into a headline the author never wrote.
+        if SOCIAL_JSON.exists():
+            _sp = json.loads(SOCIAL_JSON.read_text(encoding="utf-8"))
+            _seen = {}
+            for _p in sorted(_sp, key=lambda p: p.get("datetime", p["date"])):
+                _c = _seen[_p["date"]] = _seen.get(_p["date"], 0) + 1
+                _p["anchor"] = _p["date"] if _c == 1 else f"{_p['date']}-{_c}"
+            _sp.sort(key=lambda p: p.get("datetime", p["date"]), reverse=True)
+            if _sp:
+                _n = _sp[0]
+                counts += (f'      <p class="latest-post">Nejnovější příspěvek ze sítí, '
+                           f'{esc(cs_date(_n["date"]))}: „{esc(_headline(_n["text"]))}“ — '
+                           f'<a href="{PATH}/posts/#{esc(_n["anchor"])}">celý příspěvek</a>'
+                           f'</p>\n')
 
     body = (f'    <div class="lede">\n      <h1>{esc(title)}</h1>\n'
             f'      <p>{esc(desc)}</p>\n{counts}    </div>\n'
