@@ -4415,7 +4415,7 @@
    "word_count": 83,
    "text": "🔎 New in Nature Communications: “Spurious precision in meta-analysis of observational research.”\n\nSometimes studies appear too precise because their reported uncertainty reflects method choices rather than real evidence strength. This can mislead meta-analyses.\n\nWe introduce MAIVE, a simple way to detect and correct such bias, including publication bias and p-hacking.\n\n🖥️ Try it in your browser (free, no coding): https://www.easymeta.org\n\n 📄 Paper: https://lnkd.in/eFfrP6H2\n\n 📰 Blog: https://lnkd.in/ejkgbU6X\n\n— Kudos to my great co-authors Pedro Bom, Tomas Havranek, and Heiko Rachinger\n\n #metaanalysis #researchmethods #OpenScience #NatureCommunications",
    "image": [
-    "https://meta-analysis.cz/komentare/social-img/2025-10-26_p27_1.png"
+    "https://meta-analysis.cz/komentare/social-img/2025-10-26_spurious.png"
    ]
   }
  ]
