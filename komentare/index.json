@@ -8,7 +8,7 @@
   "affiliation": "Institut ekonomických studií, FSV Univerzita Karlova"
  },
  "license": "Texty jsou majetkem autora a původních vydavatelů; archiv slouží ke čtení a citaci s uvedením původního zdroje.",
- "count": 196,
+ "count": 198,
  "generated_from": "komentare/src/*.md",
  "items": [
   {
@@ -4069,6 +4069,27 @@
    ]
   },
   {
+   "id": "posts-2026-04-02",
+   "title": "It was fun to be (a very small) part of the amazing team led by Abel Brodeur. The numbers look great, but note",
+   "date": "2026-04-02",
+   "date_precision": "day",
+   "section": "Posts",
+   "category": "posts",
+   "language": "en",
+   "outlet": "LinkedIn",
+   "authors": [
+    "Zuzana Havránková"
+   ],
+   "media": "text",
+   "original_url": "https://www.linkedin.com/feed/update/urn%3Ali%3Ashare%3A7445392769788968960",
+   "url": "https://meta-analysis.cz/komentare/posts/#2026-04-02",
+   "text_status": "published_full_text",
+   "genre": "social_post",
+   "provenance": "self_published",
+   "word_count": 58,
+   "text": "It was fun to be (a very small) part of the amazing team led by Abel Brodeur. The numbers look great, but note that we replicate papers in journals that have mandatory data and code sharing. So: share your data and code! And while you're at it, pre-register your papers and upload pre-analysis plans. This is the way!"
+  },
+  {
    "id": "posts-2026-03-28",
    "title": "Top 7 non-fiction books I recommend. 📚",
    "date": "2026-03-28",
@@ -4226,6 +4247,27 @@
    "image": [
     "https://meta-analysis.cz/komentare/social-img/2025-12-31_p22_1.jpeg"
    ]
+  },
+  {
+   "id": "posts-2025-12-23",
+   "title": "I still love Slovakia and Gemer. When our kids were born, one of the first things my husband did was go to the",
+   "date": "2025-12-23",
+   "date_precision": "day",
+   "section": "Posts",
+   "category": "posts",
+   "language": "en",
+   "outlet": "LinkedIn",
+   "authors": [
+    "Zuzana Havránková"
+   ],
+   "media": "text",
+   "original_url": "https://www.linkedin.com/feed/update/urn%3Ali%3Ashare%3A7409201113406603264",
+   "url": "https://meta-analysis.cz/komentare/posts/#2025-12-23",
+   "text_status": "published_full_text",
+   "genre": "social_post",
+   "provenance": "self_published",
+   "word_count": 40,
+   "text": "I still love Slovakia and Gemer. When our kids were born, one of the first things my husband did was go to the Slovak embassy in Prague and arrange Slovak citizenship for them. I hope I’m wrong in this interview."
   },
   {
    "id": "posts-2025-12-12",

@@ -900,7 +900,7 @@ SOCIAL_JSON = KDIR / "social-posts.json"
 # This section is written in English on purpose: the posts are mostly English and the
 # page is meant for an international readership, who reach it directly rather than
 # through the Czech archive around it.
-SOCIAL_DESC = ("Short posts by Zuzana Havránková on her own research, on meta-analysis "
+SOCIAL_DESC = ("Short posts by Zuzana Irsova Havrankova on her own research, on meta-analysis "
                "and on how research gets done. Originally published on LinkedIn, "
                "archived here in full.")
 
@@ -978,6 +978,11 @@ def write_socials_page():
                 f'{"originál" if lang == "cs" else "original"}</a>') if p.get("url") else ""
         # Several posts say "link in the comments". Those links are in the export's
         # Comments file, so the post need not point at something unreachable.
+        ro = ""
+        if p.get("reshare_of"):
+            r = p["reshare_of"]
+            ro = ('\n        <p class="post-context">' + esc(r["label"]) + ': '
+                  + f'<a href="{esc(r["url"])}">{esc(r["url_label"])}</a></p>')
         cl = ""
         if p.get("comment_links"):
             lab = ("Odkazy, které autorka doplnila v komentářích:" if lang == "cs"
@@ -990,7 +995,7 @@ def write_socials_page():
             f'        <p class="post-date"><a href="#{esc(p["anchor"])}">'
             f'<time datetime="{p["date"]}">{esc(cs_date(p["date"], lang="en"))}</time></a>'
             f'{orig}</p>\n'
-            f'        {_social_html(p["text"])}{cl}{imgs}\n'
+            f'        {_social_html(p["text"])}{ro}{cl}{imgs}\n'
             f'      </article>')
         node = {
             "@type": "SocialMediaPosting",
