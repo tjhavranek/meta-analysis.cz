@@ -8,7 +8,7 @@ date_precision: "month"
 headline: "Dálnice D35: zpoždění zabíjí"
 byline: "Tomáš Havránek"
 source: "draft"
-word_count: "423"
+word_count: "419"
 ---
 
 # Dálnice D35: zpoždění zabíjí

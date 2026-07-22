@@ -5,7 +5,7 @@ date: "2022-12-14"
 headline: "O inflaci nakonec rozhoduje prezident. Favoritům ale chybí plán"
 status: full
 byline: "Tomáš Havránek"
-word_count: "495"
+word_count: "487"
 perex: "Boj s inflací má v rukou ČNB, jejíž vedení vybírá prezident. Je to jeho nejdůležitější pravomoc. Přesto nemá žádný z prezidentských favoritů strategii na zastavení inflace, píše v komentáři ekonom a profesor UK Tomáš Havránek."
 ---
 

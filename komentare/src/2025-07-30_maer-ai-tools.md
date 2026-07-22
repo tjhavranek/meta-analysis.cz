@@ -6,7 +6,7 @@ url: "https://www.maer-net.org/post/ai-tools-for-meta-analysis"
 date: "2025-07-30"
 headline: "AI Tools for Meta-Analysis"
 byline: "Tomáš Havránek"
-word_count: "985"
+word_count: "977"
 ---
 
 # AI Tools for Meta-Analysis

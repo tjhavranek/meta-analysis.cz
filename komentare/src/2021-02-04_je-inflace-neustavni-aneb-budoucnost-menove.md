@@ -5,7 +5,7 @@ date: "2021-02-04"
 headline: "Je inflace neústavní? Aneb budoucnost měnové politiky"
 status: full
 byline: "Tomáš Havránek"
-word_count: "635"
+word_count: "626"
 ---
 
 # Je inflace neústavní? Aneb budoucnost měnové politiky

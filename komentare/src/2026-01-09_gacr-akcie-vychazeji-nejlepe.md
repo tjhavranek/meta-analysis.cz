@@ -6,7 +6,7 @@ url: "https://gacr.cz/co-ukazuji-stovky-studii-o-investovani-akcie-vychazeji-nej
 date: "2026-01-09"
 headline: "Co ukazují stovky studií o investování: akcie vycházejí nejlépe"
 byline: "Tomáš Havránek"
-word_count: "1292"
+word_count: "1252"
 body_note: "Profilový článek Grantové agentury ČR o projektu „Metaanalýzy výnosů strategií správy finančních investic“, nominovaném na Cenu předsedy GA ČR. Text je psán redakcí GA ČR a staví na rozsáhlých citacích autora."
 written_by: "Grantová agentura ČR"
 ---

@@ -5,7 +5,7 @@ date: "2023-05-26"
 headline: "Stabilita sazeb znamená nestabilitu ekonomiky"
 status: full
 byline: "Tomáš Havránek"
-word_count: "576"
+word_count: "565"
 ---
 
 # Stabilita sazeb znamená nestabilitu ekonomiky

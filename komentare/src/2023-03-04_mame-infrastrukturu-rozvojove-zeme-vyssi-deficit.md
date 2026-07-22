@@ -5,7 +5,7 @@ date: "2023-03-04"
 headline: "Máme infrastrukturu rozvojové země. Vyšší deficit může nakonec snížit dluh"
 status: full
 byline: "Tomáš Havránek"
-word_count: "392"
+word_count: "382"
 perex: "Úroveň českých silnic a železnic je oproti Západu žalostná. Zlepšení, které si nyní vyžádá vyšší schodek rozpočtu, nám ale v budoucnu vydělá stamiliardy, píše v komentáři ekonom a profesor UK Tomáš Havránek."
 ---
 

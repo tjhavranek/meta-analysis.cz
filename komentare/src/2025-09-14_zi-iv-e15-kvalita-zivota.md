@@ -7,7 +7,7 @@ date: "2025-09-14"
 headline: "Proč podle Zuzany Havránkové Česko kvalitou života překoná Kalifornii?"
 byline: "Zuzana Havránková"
 interviewer: "Jan Vávra"
-word_count: "1966"
+word_count: "1952"
 perex: "Úroveň života v Česku často nejvíce oceňují lidé, kteří strávili aspoň část svého života v zahraničí. Mezi takové patrioty patří i nejcitovanější česká ekonomka v zahraniční vědecké literatuře Zuzana Havránková."
 body_note: "Portrét psaný na základě rozhovoru, nikoli ve formátu otázka-odpověď."
 ---

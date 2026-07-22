@@ -6,7 +6,7 @@ url: "https://www.maer-net.org/post/model-averaging"
 date: "2019-02-27"
 headline: "Why Model Averaging Is Useful in Meta-Analysis"
 byline: "Tomáš Havránek"
-word_count: "1391"
+word_count: "1367"
 ---
 
 # Why Model Averaging Is Useful in Meta-Analysis

@@ -5,7 +5,7 @@ date: "2022-03-29"
 headline: "ČNB zkrotí inflaci jedině posílením koruny"
 status: full
 byline: "Tomáš Havránek"
-word_count: "681"
+word_count: "671"
 perex: "Pokud chce ČNB opravdu bojovat proti inflaci, měla by místo zvedání úroků spíše svými devizovými rezervami posílit korunu. To by totiž neomezilo tahouna hospodářství – spotřebu, tvrdí ve svém komentáři ekonom Tomáš Havránek."
 ---
 

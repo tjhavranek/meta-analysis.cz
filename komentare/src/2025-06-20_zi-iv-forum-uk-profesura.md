@@ -7,7 +7,7 @@ date: "2025-06-20"
 headline: "Zuzana Havránková: Profesura a čtyři děti před čtyřicítkou? Jde to!"
 byline: "Zuzana Havránková"
 interviewer: "Helena Zdráhalová"
-word_count: "1818"
+word_count: "1813"
 body_note: "Rozhovor vyšel v časopise Forum Univerzity Karlovy. Server VědaVýzkum.cz jej 27. 6. 2025 převzal: https://vedavyzkum.cz/rozhovory-a-osobnosti/rozhovory/zuzana-havrankova-profesura-a-ctyri-deti-pred-ctyricitkou-jde-to"
 ---
 # Zuzana Havránková: Profesura a čtyři děti před čtyřicítkou? Jde to!

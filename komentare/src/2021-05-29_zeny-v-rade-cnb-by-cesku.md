@@ -5,7 +5,7 @@ date: "2021-05-29"
 headline: "Ženy v radě ČNB by Česku jen prospěly, jsou citlivější na inflační tlaky u praktického zboží"
 status: full
 byline: "Tomáš Havránek"
-word_count: "525"
+word_count: "519"
 ---
 
 # Ženy v radě ČNB by Česku jen prospěly, jsou citlivější na inflační tlaky u praktického zboží

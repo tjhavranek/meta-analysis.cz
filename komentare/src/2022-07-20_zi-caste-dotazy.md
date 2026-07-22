@@ -6,7 +6,7 @@ url: "https://zrusme-inflaci.cz/"
 date: "2022-07-20"
 headline: "Zrušme inflaci: časté dotazy"
 byline: "Tomáš Havránek"
-word_count: "6403"
+word_count: "6049"
 body_note: "Sekce Časté dotazy z webu autorovy iniciativy zrusme-inflaci.cz. Otázky a odpovědi jsou převzaty v pořadí, v jakém na webu stojí."
 ---
 

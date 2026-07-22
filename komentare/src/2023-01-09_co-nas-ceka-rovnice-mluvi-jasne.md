@@ -5,7 +5,7 @@ date: "2023-01-09"
 headline: "Co nás čeká? Rovnice mluví jasně, buď hyperinflace, nebo rozpočet s přebytkem"
 status: full
 byline: "Tomáš Havránek"
-word_count: "592"
+word_count: "586"
 perex: "Podle moderního ekonomického výzkumu není možné, abychom měli nízkou inflaci a zároveň trvalé schodky státního rozpočtu. Nutným důsledkem schodků je nakonec hyperinflace, píše v komentáři ekonom a profesor UK Tomáš Havránek."
 ---
 

@@ -5,7 +5,7 @@ date: "2021-10-19"
 headline: "Když nenajdeme nového Rašína, ochutnáme dvojcifernou inflaci"
 status: full
 byline: "Tomáš Havránek"
-word_count: "605"
+word_count: "593"
 ---
 
 # Když nenajdeme nového Rašína, ochutnáme dvojcifernou inflaci

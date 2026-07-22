@@ -6,7 +6,7 @@ url: "https://zrusme-inflaci.cz/"
 date: "2022-07-20"
 headline: "Zrušme inflaci: cenová stabilita je zdravá, přirozená a ústavní"
 byline: "Tomáš Havránek"
-word_count: "628"
+word_count: "603"
 body_note: "Text z webu autorovy iniciativy zrusme-inflaci.cz, spuštěné v červenci 2022. Citace ekonomů jsou uvedeny tak, jak je web přebírá. Přehled článků a rozhovorů, který web rovněž obsahuje, zde neuvádíme — ty jsou v archivu samostatně."
 ---
 

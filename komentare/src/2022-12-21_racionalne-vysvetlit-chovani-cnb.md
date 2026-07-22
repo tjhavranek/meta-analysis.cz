@@ -5,7 +5,7 @@ date: "2022-12-21"
 headline: "Racionálně vysvětlit chování ČNB může jen jedna teorie"
 status: full
 byline: "Tomáš Havránek"
-word_count: "613"
+word_count: "603"
 ---
 
 # Racionálně vysvětlit chování ČNB může jen jedna teorie

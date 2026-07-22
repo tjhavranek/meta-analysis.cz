@@ -5,7 +5,7 @@ date: "2021-09-10"
 headline: "ČNB vyrazila správným směrem, ale pomalu. Úroky musí růst rychleji, aktuální inflační skok to podtrhuje"
 status: full
 byline: "Tomáš Havránek"
-word_count: "606"
+word_count: "596"
 ---
 
 # ČNB vyrazila správným směrem, ale pomalu. Úroky musí růst rychleji, aktuální inflační skok to podtrhuje

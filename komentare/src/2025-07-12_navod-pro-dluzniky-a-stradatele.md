@@ -5,7 +5,7 @@ date: "2025-07-12"
 headline: "Návod pro dlužníky a střadatele, jak přežít dluh větší než ekonomika"
 status: full
 byline: "Tomáš Havránek, Zuzana Havránková"
-word_count: "671"
+word_count: "659"
 perex: "Dnešní padesátníci se dožijí státního dluhu přes 100 procent HDP. Šancí státu je inflace. Střadatelé by se měli vyhnout dluhopisům a dlužníci by měli fixovat úroky na dlouho, píší ekonomové Zuzana Havránková a Tomáš Havránek."
 ---
 

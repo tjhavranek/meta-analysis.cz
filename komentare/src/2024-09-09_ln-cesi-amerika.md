@@ -6,7 +6,7 @@ url: "https://www.lidovky.cz/nazory/amerika-cesko-historicke-srovnani-revoluce.A
 date: "2024-09-09"
 headline: "V čem Češi poráží Ameriku"
 byline: "Tomáš Havránek, Zuzana Havránková"
-word_count: "883"
+word_count: "853"
 ---
 
 # V čem Češi poráží Ameriku

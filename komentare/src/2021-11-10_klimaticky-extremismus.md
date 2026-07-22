@@ -5,7 +5,7 @@ date: "2021-11-10"
 headline: "Klimatický extremismus škodí víc než globální oteplování"
 status: full
 byline: "Tomáš Havránek"
-word_count: "600"
+word_count: "591"
 ---
 
 # Klimatický extremismus škodí víc než globální oteplování

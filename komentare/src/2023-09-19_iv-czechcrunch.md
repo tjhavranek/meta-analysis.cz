@@ -6,7 +6,7 @@ url: "https://cc.cz/kdyby-cnb-zacala-poradne-kupovat-akcie-zaplati-nam-reformu-d
 date: "2023-09-19"
 headline: "Kdyby ČNB začala pořádně kupovat akcie, zaplatí nám reformu důchodů"
 byline: "Tomáš Havránek"
-word_count: "3810"
+word_count: "3779"
 interviewer: "Luboš Kreč"
 ---
 

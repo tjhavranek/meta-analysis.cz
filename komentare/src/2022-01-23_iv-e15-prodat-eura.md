@@ -6,7 +6,7 @@ url: "https://www.e15.cz/rozhovory/cnb-by-mela-prodat-miliardy-eur-a-vice-invest
 date: "2022-01-23"
 headline: "ČNB by měla prodat miliardy eur a více investovat do akcií"
 byline: "Tomáš Havránek"
-word_count: "1688"
+word_count: "1658"
 interviewer: "Jan Novotný"
 ---
 

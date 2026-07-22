@@ -7,7 +7,7 @@ date: "2025-08-20"
 headline: "Nejmladší profesorka v historii Univerzity Karlovy vychovává s manželem čtyři děti. Důležitá je disciplína a lidé, na které je spoleh, říká"
 byline: "Zuzana Havránková"
 interviewer: "Patrik Salát, Luděk Vainert"
-word_count: "2112"
+word_count: "2113"
 body_note: "Autorizovaná verze rozhovoru, kterou Zuzana Havránková schválila pro redakci. Vydaná verze je za paywallem a může se v detailech lišit. Vyšlo v příloze HN Víkend. Redakce po vydání změnila titulek; adresa článku nese starší znění „Milujeme pokrok, když se neodehrává na našem dvorku, říká nejmladší profesorka. Plyne z toho i proč je Trump u moci“."
 ---
 

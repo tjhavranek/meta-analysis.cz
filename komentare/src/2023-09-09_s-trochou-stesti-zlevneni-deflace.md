@@ -5,7 +5,7 @@ date: "2023-09-09"
 headline: "S trochou štěstí přijde zlevnění a deflace. ČNB by se toho neměla bát"
 status: full
 byline: "Tomáš Havránek"
-word_count: "986"
+word_count: "968"
 perex: "Ekonomická praxe, teorie i data ukazují, že mírná deflace ekonomice neuškodí. Pomalý pokles cen v příštích letech pomůže obnovit důvěru v ČNB a dlouhodobou cenovou stabilitu, píše v komentáři ekonom a profesor UK Tomáš Havránek."
 ---
 

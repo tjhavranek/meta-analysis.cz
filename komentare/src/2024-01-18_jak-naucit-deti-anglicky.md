@@ -5,7 +5,7 @@ date: "2024-01-18"
 headline: "Jak naučit děti perfektně anglicky bez námahy a zadarmo"
 status: full
 byline: "Tomáš Havránek"
-word_count: "619"
+word_count: "610"
 perex: "Pro dokonalou angličtinu nemusíme dětem platit rodilé mluvčí ani školy v zahraničí. Nemusíme ani doma mluvit anglicky. Stačí odmalička pouštět televizi jen v angličtině, píše profesor UK a otec čtyř dětí Tomáš Havránek."
 ---
 

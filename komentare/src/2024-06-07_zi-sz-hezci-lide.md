@@ -6,7 +6,7 @@ url: "https://www.seznamzpravy.cz/clanek/tech-technologie-veda-komentar-hezci-li
 date: "2024-06-07"
 headline: "Hezčí lidé vydělávají víc. Kvůli kráse to ale není"
 byline: "Zuzana Havránková"
-word_count: "529"
+word_count: "564"
 perex: "Výzkum se shoduje, že atraktivnější lidé jsou úspěšnější. Nejnovější studie ale ukazují, že krása sama vyšší plat nepřinese. Důležitější je sebevědomí, jež je často se vzhledem spojeno, píše ekonomka Zuzana Havránková."
 ---
 

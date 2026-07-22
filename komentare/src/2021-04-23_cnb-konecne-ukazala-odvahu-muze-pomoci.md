@@ -5,7 +5,7 @@ date: "2021-04-23"
 headline: "ČNB konečně ukázala odvahu. Pomůže to českému rozpočtu?"
 status: full
 byline: "Tomáš Havránek"
-word_count: "579"
+word_count: "577"
 ---
 
 # ČNB konečně ukázala odvahu. Pomůže to českému rozpočtu?

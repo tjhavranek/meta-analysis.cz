@@ -7,7 +7,7 @@ date: "2025-08-11"
 headline: "Ekonomka Havránková: „Nepodmíněný příjem je cesta k zombifikaci společnosti“"
 byline: "Zuzana Havránková"
 interviewer: "Pavel Štrunc"
-word_count: "2701"
+word_count: "2647"
 body_note: "Zkrácená verze téhož rozhovoru vyšla už 31. 8. 2024 v tištěném měsíčníku Hrot pod titulkem „Ekonomka Zuzana Havránková: Změním fakta, změním názor“ (https://www.hrot24.cz/clanek/ekonomka-zuzana-havrankova-zmenim-fakta-zmenim-nazor)."
 ---
 # Ekonomka Havránková: „Nepodmíněný příjem je cesta k zombifikaci společnosti“

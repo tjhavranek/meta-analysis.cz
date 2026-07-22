@@ -6,7 +6,7 @@ url: "https://www.idnes.cz/ekonomika/domaci/ekonom-tomas-havranek-rozhovor-infla
 date: "2021-12-19"
 headline: "Inflaci můžeme úplně zrušit, je neústavní"
 byline: "Tomáš Havránek"
-word_count: "3599"
+word_count: "3580"
 interviewer: "Martina Riemlová"
 body_note: "Text převzat z republikace na zrusme-inflaci.cz; originál je na iDNES.cz."
 perex: "Stále zrychlující se inflace trápí momentálně všechny. Podle ekonoma Tomáše Havránka selhal systém cílování inflace, podle kterého postupuje mimo jiné i Česká národní banka. Podle něj nastává ideální čas na změnu a je možné se inflace úplně zbavit. „Příležitosti můžeme využít, nebo můžeme nechat inflaci vystoupat v příštím roce až na dvojciferné hodnoty,“ míní Havránek v rozhovoru pro iDNES.cz"

@@ -5,7 +5,7 @@ date: "2020-09-08"
 headline: "Proč cenová stabilita neznamená stabilitu průměrných cen? Inflace je historický přežitek"
 status: full
 byline: "Tomáš Havránek"
-word_count: "598"
+word_count: "586"
 ---
 
 # Proč cenová stabilita neznamená stabilitu průměrných cen? Inflace je historický přežitek

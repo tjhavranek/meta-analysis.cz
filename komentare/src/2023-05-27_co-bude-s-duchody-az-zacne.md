@@ -5,7 +5,7 @@ date: "2023-05-27"
 headline: "Co bude s důchody, až začne fungovat klimatická antikoncepce"
 status: full
 byline: "Tomáš Havránek"
-word_count: "574"
+word_count: "566"
 perex: "Klimatický žal může vést ke kolapsu porodnosti. Hrozí, že důchodový systém skončí mnohem hůře, než čekáme. Dnešní třicátníci nemohou se státním důchodem počítat, píše v komentáři ekonom a profesor UK Tomáš Havránek."
 ---
 

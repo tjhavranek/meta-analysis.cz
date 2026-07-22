@@ -8,7 +8,7 @@ date_precision: "month"
 headline: "Pátek pro planetu ve školní jídelně (pokračování)"
 byline: "Zuzana Havránková"
 source: "draft"
-word_count: "395"
+word_count: "393"
 ---
 
 # Pátek pro planetu ve školní jídelně (pokračování)

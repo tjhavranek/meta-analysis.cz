@@ -6,7 +6,7 @@ url: "https://www.cnb.cz/cs/o_cnb/cnblog/Konec-Cobbovy-Douglasovy-produkcni-funk
 date: "2020-04-30"
 headline: "Konec Cobbovy-Douglasovy produkční funkce?"
 byline: "Tomáš Havránek"
-word_count: "1220"
+word_count: "1215"
 ---
 
 # Konec Cobbovy-Douglasovy produkční funkce?

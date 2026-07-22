@@ -5,7 +5,7 @@ date: "2022-04-13"
 headline: "ČNB přes dotační eura skrytě oslabuje korunu, navzdory pádivé inflaci"
 status: full
 byline: "Tomáš Havránek"
-word_count: "603"
+word_count: "593"
 perex: "ČNB koruně nepomáhá, ale cíleně brání jejímu posílení. Eura z Bruselu určená na dotace totiž nepouští na trh, abychom je vyměnili za existující koruny. Vytváří za ně miliardy korun nových, píše v komentáři ekonom Tomáš Havránek."
 ---
 

@@ -5,7 +5,7 @@ date: "2021-06-21"
 headline: "Zvýšení úroků cenovou stabilitu nezajistí"
 status: full
 byline: "Tomáš Havránek"
-word_count: "639"
+word_count: "622"
 ---
 
 # Zvýšení úroků cenovou stabilitu nezajistí

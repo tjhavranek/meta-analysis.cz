@@ -6,7 +6,7 @@ url: "https://www.e15.cz/nazory/tomas-havranek-zvysovani-uroku-uz-nema-smysl-cnb
 date: "2022-03-11"
 headline: "Zvyšování úroků už nemá smysl. ČNB musí víc posílit korunu"
 byline: "Tomáš Havránek"
-word_count: "512"
+word_count: "496"
 ---
 
 # Zvyšování úroků už nemá smysl. ČNB musí víc posílit korunu

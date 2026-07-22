@@ -7,7 +7,7 @@ date: "2021-11-03"
 headline: "Porazit Babiše může generál Pavel i rektorka Nerudová"
 byline: "Zuzana Havránková"
 source: "draft"
-word_count: "515"
+word_count: "399"
 body_note: "Rukopis, jak jej autorka nabídla Hospodářským novinám. Vydaná verze je za paywallem a může se v detailech lišit."
 ---
 
