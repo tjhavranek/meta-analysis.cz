@@ -2,7 +2,7 @@
 
 > Publicistika Tomáše Havránka: komentáře pro celostátní média, sloupky pro litomyšlskou Lilii a rozhovory. Texty jsou zde archivovány v plném znění s odkazem na původní vydání.
 
-Publicistika: 162 položek, 2016–2026. Plné znění každého textu je na uvedené adrese; zdrojový Markdown je v /komentare/src/.
+Publicistika: 164 položek, 2016–2026. Plné znění každého textu je na uvedené adrese; zdrojový Markdown je v /komentare/src/.
 
 ## Celostátní komentáře
 
@@ -45,6 +45,8 @@ Komentáře a sloupky pro celostátní média — měnová politika, inflace, ve
 - [Zmizí inflace sama od sebe? Těžko, pokud se ČNB neodhodlá k činu](https://meta-analysis.cz/komentare/zmizi-inflace-sama-od-sebe/) — Hospodářské noviny, 28. listopadu 2022
 - [Český dluh nikdy neklesal rychleji. Co tratí lidé kvůli inflaci, to vydělá stát](https://meta-analysis.cz/komentare/cesky-dluh-nikdy-neklesal-rychleji-co/) — Seznam Zprávy, 3. listopadu 2022
 - [Zrušme inflaci. Je to jen naše volba](https://meta-analysis.cz/komentare/zi-zrusme-inflaci-je-to-jen-nase-volba-rika-tom/) — Forbes, 16. září 2022
+- [Zrušme inflaci: časté dotazy](https://meta-analysis.cz/komentare/zi-caste-dotazy/) — Zrušme inflaci, 20. července 2022
+- [Zrušme inflaci: cenová stabilita je zdravá, přirozená a ústavní](https://meta-analysis.cz/komentare/zi-manifest/) — Zrušme inflaci, 20. července 2022
 - [Jak úrokové sazby ovlivňují inflaci? Ekonomové nevědí](https://meta-analysis.cz/komentare/jak-urokove-sazby-ovlivnuji-inflaci/) — Hospodářské noviny, 12. července 2022
 - [Vzkaz Aloise Rašína guvernérovi ČNB: Dokud nesnížíš inflaci, sniž si plat](https://meta-analysis.cz/komentare/vzkaz-rasina-guvernerovi-cnb/) — Hospodářské noviny, 2. června 2022
 - [ČNB přes dotační eura skrytě oslabuje korunu, navzdory pádivé inflaci](https://meta-analysis.cz/komentare/cnb-pres-dotacni-eura-skryte-oslabuje/) — Seznam Zprávy, 13. dubna 2022
