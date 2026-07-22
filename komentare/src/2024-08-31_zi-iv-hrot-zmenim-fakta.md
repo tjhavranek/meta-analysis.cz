@@ -1,0 +1,174 @@
+---
+category: "rozhovory"
+media: "text"
+outlet: "Hrot"
+url: "https://www.hrot24.cz/clanek/ekonomka-zuzana-havrankova-zmenim-fakta-zmenim-nazor"
+date: "2024-08-31"
+headline: "Ekonomka Zuzana Havránková: Změním fakta, změním názor"
+byline: "Zuzana Havránková"
+interviewer: "Pavel Štrunc"
+word_count: "5084"
+body_note: "Autorizovaná verze rozhovoru, kterou Zuzana Havránková schválila pro redakci. Rozhovor vyšel v tištěném měsíčníku Hrot, online je k dispozici pouze ukázka. Ze stejného rozhovoru čerpá i text vydaný na Hrot24.cz 11. 8. 2025."
+---
+
+# Ekonomka Zuzana Havránková: Změním fakta, změním názor
+
+## ŽIVOT
+
+Když se člověk narodí v malé vesnici na Slovensku, jak přemýšlí nad svým místem na světě?
+
+Pozor, na východním Slovensku, v Gemeru. To je důležité dodat, protože v řadě míst na Slovensku je život dost podobný jako v Česku. Slovenský východ je ale z českého pohledu exotický. Mísí se tady přírodní krása se sociálními problémy, přičemž oboje v Česku nemá srovnání. Podobně se ve mně vždy mísila hrdost na Gemer s touhou odejít pryč. Cítíte závazek k místu Vašeho původu; babička měla náš rodinný rodokmen dovedený až do středověku k veliteli stráže hradu Krásna Hôrka. Zároveň ale od malička vidíte, jak je tam život těžký. Že nejlepší lidé zkrátka odcházejí pryč.
+
+Říká se, že prostředí člověka dotváří, jaké bylo to vaše, bylo vaše zázemí spojené s ekonomií? Případně jak vytvořilo prostředí k tomu, že jste se rozhodla pro takovou kariéru?
+
+Maminka mě a bratra vychovávala sama. Hodně času jsem také trávila s prababičkou a babičkou. Maminka nám s bratrem vždycky opakovala, abychom si vážili toho, co máme a že není nic, co nezvládneme. Nebyli jsme bohatí, ale nikdy bych nemohla říct, že mi cokoliv chybělo. Od malička jsem ale rozuměla, že i když Gemer milujeme, budeme ho muset opustit. Na dětství vzpomínám ráda, ale nejde dost zdůraznit, jaké problémy tam lidi mají – počínaje základní bezpečností, základními vlastnickými právy. V Praze si málokdo dokáže uvědomit, že podmínky podobným těm v Ugandě můžeme i dnes najít v místech, které byly ještě nedávno z Prahy spravované. Chcete dělat dobrovolnickou práci a být maximálně užitečný? Místo Afriky nebo Indie jeďte do Spiše nebo Gemeru. Abyste se tam narodili a dostali se odtud, musíte se opravdu snažit. A tady je možná kousek té ekonomie: máte opravdu velkou motivaci, protože pokud budete jen pasivně sedět, dobrý život vás tam nečeká.
+
+Potkala jste se někdy s něčím jako "ekonomie není pro holky?"
+
+Nikdy. Podle mě ta otázka spíše zní, co holky chtějí a nechtějí dělat. Pamatuji si na studii z Izraele od výzkumníků z Duke University. Experiment měl za úkol zjistit, jestli může izraelská vláda namotivovat více holek do IT tím, že jim poskytne několik týdenní programátorský kurz ještě předtím, než se rozhodnou, co chtějí studovat na vysoké škole. Tyhle kurzy mimochodem běžně dělá i Google nebo Microsoft. Výsledkem experimentu bylo, že u kluků to nemělo žádný efekt, zatímco po experimentu chtělo mnohem méně holek studovat IT. Což byl nechtěný výsledek, a jelikož výzkumníci měli tak silnou intuici o tom, že výsledky musí být špatně, experiment zopakovali. Stejný výsledek. Proč? Dle výzkumníků holky věděly, že to umějí, ale bylo to pro ně neskutečně nudné. Tedy ano, uměla bych to, ale dělat to celý život? Ne, děkuji. Je to poučné pro nás všechny; neměli bychom si zaměňovat nedostatek zájmu žen s nedostatkem příležitostí pro ženy. U ekonomie, zejména té teoretické a matematizované, jako je třeba ta vyučovaná na Institutu ekonomických studií, se zájem projevuje v poměrech studentů a studentek.
+
+Osobně jsem se setkala s opačným problémem. Protože jsou v ekonomii ženy vzácnější než v jiných sociálních vědách, kolegové z týmu se mě vždy snaží vystrčit dopředu. Abych prezentovala já, abych byla tváří projektu já. Není to vždy příjemné. Není také úplně příjemné, že když se mi něco podaří, nevím vždy jistě, jestli v tom nehrála nějakou roli pozitivní diskriminace. Navíc se mě vždy snaží nominovat do všech možných komisí, aby tam byla nějaká žena, což je často velmi časově zatěžující. Oni to myslí dobře, ale tohle si neuvědomují. Přišlo by mi mnohem důstojnější pro nás ženy, kdybychom se nesnažili o žádné kvóty, explicitní či implicitní, a nechali profesionální hodnocení striktně jen na tom, co a jak kdo dělá. Ne čím kdo je, jak se narodil. A je úplně jedno, když jsou v nějaké radě jen muži. Ženy aspoň mají víc času na užitečnější věci.
+
+Co byl první moment, kdy jste si řekla, že ekonomie je to, co chcete dělat. Nějaký článek, komentář, či jev?
+
+To Vám řeknu naprosto přesně, byly to Dzurindovy reformy. Do té doby to tak trochu vypadalo, že hranice mezi globálním Západem a Východem bude procházet Bílými Karpaty. Dzurinda všechno změnil, no a začal se měnit i ten slovenský východ. Není obor, který by měl tak široký a všeobecný dopad na život lidí, jako je právě ekonomie.
+
+Proč jste přijela studovat do Prahy? v Podcastu IES říkáte, že jste "vždy chtěla do prahy".
+
+Co si budeme povídat, žádná úroveň ekonomické prosperity na Slovensku nevytvoří světové alfa město jako je Praha. Navíc pojem Univerzita Karlova byl u nás doma vždy obklopen puncem vážnosti, jak je tomu dosud v celém bývalém Československu. V zahraničí je to tedy komplikovanější a určitě by pomohlo přejmenovat univerzitu zpátky na Pražskou univerzitu, což byl její historický název. Buď jak buď, univerzita a Praha celkově velmi těží z toho, jakým je magnetem pro aktivní Slováky. Tak trochu jako dřív bývala Vídeň magnetem pro aktivní Čechy.
+
+Platí, že aby byl člověk úspěšný, musí se obklopit úspěšnými? Nebo je - podle Vás - to prostředí důležité?
+
+Důležité je to, čemu se v angličtině říká peer pressure. Tedy vidíte kolegu, jak je úspěšný na mezinárodním poli, že to jde i z Prahy. Konkrétně pro moji profesní dráhu to byl Roman Horváth, Michal Bauer a Julie Chytilová, moji současní kolegové na Institutu ekonomických studií. Prostředí jako takové hraje podle mě menší roli než jasné příklady konkrétních lidí, které znáte osobně.
+
+O ekonomii mluvíte jako krásné a zajímavé vědě - až se u toho téměř roněžníte (tak jsem to vyrozuměl v tom podcastu) . Co vám dala?
+
+Nemůžete od vědce čekat, že nebude vášnivý pro svoji práci. Což koneckonců musí být každý, kdo chce svoji práci dělat pořádně. Podobně by o svém oboru mluvil fyzik nebo biolog. Ekonomie má tu velkou výhodu, že je nutná pro skoro každé praktické rozhodnutí. Dám příklad: jak nejlépe reagovat na klimatickou změnu? Klimatolog vám řekne, že je potřeba zabránit, ideálně zastavit oteplování. Jenže snižování emisí může být tak drahé, že odčerpá peníze odjinud, třeba ze zdravotnictví, což jako balíček může životy lidí ovlivnit negativně. Je potřeba najít rovnováhu mezi náklady a výnosy klimatických opatření. Tedy ekonomie má co říct k řešením důležitých problémů.
+
+Také myslím, že mi ekonomie dala více pokory v myšlení ohledně toho, jak dobře se máme. Rádi se porovnáváme s druhými a zkresluje nám to představu o tom, jak na tom jsme. Posledních pár let nebylo snadných pro mnohé; všichni měli pocit, že přichází apokalypsa. Pro povzbuzení nám ale stačí porovnat dnešní svět s dobami minulými. A jako statistik tyhle fakta zdůrazňuji všem svým studentům a začínám jimi také svůj úvodní kurz do ekonomie:
+
+Třeba, že žijeme déle a zdravěji než kdykoli v historii. Po většinu lidských dějin byla střední délka života kolem 30 let. Díky pokrokům medicíny je to dnes celosvětově přes 70 let a ve vyspělých zemích přes 80 let. Dále jsme mnohem bohatší než kdykoli v historii. Od průmyslové revoluce vzrostla běžná životní úroveň v Čechách více než třicetinásobně. Žijeme bezpečněji než kdykoli v historii. Například za posledních 100 let je dvacetkrát méně pravděpodobné, že se při práci vážně zraníme. Jsme mnohem vzdělanější než kdykoli v historii. Před 17. stoletím neumělo číst a psát více než 85 % Evropanů. Dnes to umí více než 90 % světové populace. Máme více volného času než kdykoli v historii. V 19. století v nejbohatších zemích na světě lidé pracovali v průměru 60 hodin týdně, dnes je to méně než 40. Čas, který v průměru musíme věnovat domácím pracím, klesl díky rozšíření elektřiny a vodovodu z 60 hodin týdně na 15. Dokonce jsme i šťastnější než kdykoli v historii! Ve více než 80 % zemí světa se v posledních letech spokojenost lidí zvýšila, a to i navzdory covidu. Samozřejmě, že bídu a neštěstí takové statistiky nesmažou, každý z nás má své osobní tragédie. Ale vědět, že za posledních 35 let se v průměru každý den dostane nad hranici chudoby kolem 130 tisíc lidí? To jsou úžasné zprávy. Tedy máme dobrý důvod věřit, že každý další rok bude lepší než ten minulý. A to proto, že skoro vždycky v historii to tak bylo.
+
+Vy jste se podívala i na mezinárodně prestižní školy, jako například Berkeley v Kalifornii. Jaké to bylo? Jaká očekávání jste měla? V čem to člověka posune?
+
+Na Berkeley jsem jela právě kvůli projektu modelování nákladů a výnosů omezování emisí skleníkových plynů. Tohle osobně považuji za velmi důležité. Dnes je převažující narativ takový, že oteplování musíme zastavit nebo přibrzdit za každou cenu, že jinak hrozí apokalypsa. Jenže tohle nám věda neříká. V modelech klimatologům nevychází, že se ze země stane Venuše, když nebudeme nic dělat. Když nebudeme nic dělat, bude o dost tepleji, čemuž bude drahé se přizpůsobit. Ale omezování emisí je také velmi drahé. Je navíc potřeba zohlednit věci, které se těžko finančně ohodnocují, jako je třeba biodiverzita. Ekonomie není všelék, ale pomůže najít rovnováhu. Bohužel jsme ekonomická řešení u změny klimatu z větší části opustili, za což nás naše vnoučata nepochválí.
+
+Lapidární otázka – proč zrovna Amerika?
+
+Na tom projektu s námi byl ochoten pracovat David Zilberman, profesor na Berkeley, proto jsme jeli tam. A také jsme si chtěli zkusit život na campusu prestižní univerzity. Plus samozřejmě okolí San Francisca je krásné pro víkendové výlety.
+
+Je tam něco jako kulturní šok? Vy jste říkala v podcastu, že jste se rozhodovala mezi právy a ekonomií a že na práva jste cítila, že nemáte lokty? Není to v Americe hodně o loktech? :-)
+
+To se asi týká práce v korporátu, ale na univerzitě byli velmi milí. Obecně, kdo nemá rád Američany, většinou jich moc nepoznal – bývají hodnější než Češi a Slováci. Kulturní šok pro nás samozřejmě byl, jak velká je míry kriminality v okolí San Francisca, že už drobné krádeže nebo vloupání do auta nikdo netrestá a nevyšetřuje.
+
+Nechtěla jste tam zůstat? Univerzitní prostředí, výzkum je v USA na špičkové úrovni
+
+Ano, ale jsou tam dva zásadní problémy. Zaprvé je to za zločinnost, která velmi znepříjemňuje normální život, třeba s dětmi. Z toho důvodu se spousta lidí z Kalifornie stěhuje pryč. Za druhé je to cenzura na univerzitě, kdy se velmi hlídá to, co kdo řekne do médií nebo napíše na Twitter. Zejména se to týká palestinské otázky, genderových otázek, a právě i změny klimatu. Přes všechny problémy buďme rádi za svobodu projevu, jakou máme v Česku a konkrétně v univerzitním prostředí. Podle některých žebříčků jsme v tom první na světě. Já to mohu potvrdit a měli bychom na to být hrdí.
+
+Pomohla vám tam nějaká česko-slovenská vlastnost/skill?
+
+Asi právě to, že mě ani nenapadlo řešit, jaké výzkumné otázky jsou politicky průchozí. Čili to byla taková naivita pramenící z prostředí, ve kterém jsem vyrůstala, a kde si nikdo na politickou korektnost nehrál, protože to nešlo a dlouho by nevydržel.
+
+Jste ekonomkou roku 2018, patříte mezi nejcitovanější ekonomky na světě, na vaši práci odkazuje Bank of England nebo EP. Když restaurace dostane Michelinskou hvězdičku, snaží se jí udržet, i za cenu mnohdy podmínek vyčerpávajících. Jak "se člověk udržuje ve formě"?
+
+No, jedna věc je, že pořád vidíte kolegy, kteří jsou úspěšnější než Vy. Takže u nás třeba Ladislav Krištoufek, můj spolužák a nyní prorektor pro vědu na UK, jeden z nejcitovanějších vědců na světě. Nebo Jozef Baruník, jeden z největších současných odborníků na ekonometrii časových řad. Takže pořád vidíte, kam se můžete posouvat a zlepšovat. Obecně po nějaké době se člověk přestane honit za publikacemi, odměnami a citacemi a spíše se zaměří na obecné téma, ve kterém chce vědecky přispět. Je celkem jedno, jestli má člověk 30 nebo 100 publikovaných článků, jestli má 3000 nebo 10 000 citací. Na čem mi záleží, je, když se mohu na nějaké solidní úrovni o svém výzkumu bavit třeba s někým, kdo má Nobelovu cenu, a jestli on pak ten výzkum bude používat. Myslím, že o to by se výzkumník měl snažit, aby opravdu smysluplně přispěl do mezinárodní debaty. Potom ty publikace, citace a granty přijdou skoro samy. Je také potřeba často cestovat za kolegy do zahraničí; například příští rok pojedeme na 3 měsíce na Nový Zéland.
+
+## META-ANALÝZA
+
+Řada oborů se rozvíjí. V čem se rozvíjí ekonomie? Kam? Pomůže jí nějak uměla inteligence? Kam se díváte vy?
+
+Ekonomický výzkum je často hlavně o tom, jak věc X ovlivní věc Y. Často vidíme, že X a Y se spolu hýbou, ale nevíme, jestli opravdu X kauzálně způsobuje Y. Stejně tak je tomu v biologii, psychologii nebo medicíně. Tyhle vědy pracují s pravděpodobnostmi, a to je klíčové. Když řekneme, že něco je prokázáno, znamená to, že data jsou tak dobře podložená, že pravděpodobnost omylu je velmi malá, takže je rozumné se výsledkem řídit. To znamená, že máme hodně dobře nadizajnovaných studií, které říkají o tom zkoumaném efektu stejnou věc. Nicméně, závěry ze studií o stejném efektu můžou být jenom slibné, nejasné, nebo čistý šum. Za posledních 30 let jsme se v tomhle zjišťování hodně zlepšili, nedávno za to byla i Nobelova cena. Pořád máme ale před sebou dlouhou cestu. Vždyť stále pořádně nevíme ani tak důležitou věc, jak vlastně změny úrokových sazeb centrální bankou změní inflaci. Ono je to strašně těžké, modelovat ekonomiku, kde máte miliony lidí, co mají vlastní hlavu. Já se snažím přispět tím, že za pomoci statistických metod zjišťuji, co vlastně v kterém podoboru ekonomie víme o konkrétním vlivu nějakého X (jako úroky) na nějaké to Y (jako inflace). Umělá inteligence nám v tom zatím moc nepomůže kromě toho, že nám skoro zadarmo opraví gramatiku.
+
+Ve vaší práci ekonomické výzkumnice hodně používáte takzvanou metaanalýzu. Co tato technika přesně znamená? A co vás k ní přivedlo?
+
+Vemte si jedno téma, třeba vliv úroků na inflaci. Máte stovky studií, které berou různá data a snaží se odhadnout, jaký ten vliv je. No ale jejich výsledky se dramaticky liší. Navíc výzkumníci z centrálních bank asi budou mít motivaci publikovat výsledky určitého typu. A akademici zase mají často rádi statisticky významné efekty. A některé studie jsou metodologicky správnější než jiné. Takže jak to je? Meta-analýza je soubor statistických metod, který pomůže literaturu nejen shrnout, ale hlavně ji očistit o ty různé problémy, které jsem zmínila výše.
+
+Komentáře říkají, že významně přispíváte k věrohodnosti ekonomie jako vědy. Takže jste takový facts-checker vědy? :-)
+
+To je příliš lichotivé. Můžeme nad tím ale uvažovat takhle: když chceme vzít výzkum a k něčemu ho použít, vždycky potřebujeme nějakou reprezentaci celé literatury na dané téma. Ta je velmi často neformální – člověk si vybere jednu studii, která se mu nejvíc líbí, nebo tři, a podle toho postaví svůj model nebo navrhne politiku. Ale proč to neudělat statisticky lépe? Nebo dokonce pořádně, což je to, o co se snažíme.
+
+Není to společensky náročné? Jednak vědci jsou dost ješitní, přiženil jsem se do rodiny dvou doktorů přírodních věd, tak o tom něco vím. Zároveň někomu můžete rozbít jeho léta práce? Přece jen čerpají granty, je to pro ně živobytí.
+
+Společensky náročné pro mě spíš je to, když vidím vědu na jedné straně a potom politickou praxi na straně druhé. To je velmi smutné, viz třeba ten příklad s klimatickými opatřeními, o kterých jsme se bavili. To musí frustrovat skoro každého vědce ve svém konkrétním oboru. Ale mezi vědci mám osobně spíš zkušenost, že mají meta-analýzy rádi. Protože i oni potřebují nějaký benchmark, nějaké rozumné shrnutí. Kdyby se všichni na všem shodli, tak bychom se nikam neposunuli. Někdy zase nějaká nová studie „rozbije“ spoustu mé práce. To se stává a jinak by to ostatně byla nuda. Znáte ten proslulý citát JM Keynese: „Když se změní fakta, změním názor. Co uděláte Vy?“
+
+Jaké to je osobně - už vám to někdo vytknul meta-analýzu?
+
+Vlastně ne. Ekonomové se asi i díky svému vzdělání chovají diplomaticky. K čemu je si stěžovat nebo někomu něco vytýkat? Pokud je něco v práci kolegy špatně a je to důležité opravit, slušně to zmíním v příští studii, nebo napíšu komentář. Není ale důvod, aby to mělo být nějak emotivní, aby to mělo být nějaké drama.
+
+Některá společenská témata a jejich prosazování do reálného života postavená na "vědecké obecné shodě", jež je nezpochybnitelná. S jakým vědomím pak k meta-analýze přistupujete? Připomenu dělící témata, která jsou ale schopna postihnout negativně mezilidské vztahy: Covid, změny klimatu, nebo z vašich prací - prospěšnost velikosti tříd, nebo střídání letního / zimního času. Otázka je: jaká výzva to pro výzkumníka je? Vždyť jde vlastně o velké peníze
+
+Dobrá otázka. V první řadě nechcete začít s výzkumem, který nikoho nezajímá. Takže právě na takových tématech, co jste zmínil, je dobré pracovat. Mimochodem, dvě z nich jsou opravdu celkem uzavřené: Zaprvé, méně žáků ve třídě nepomůže zlepšit výsledky žáků tak, aby to ospravedlnilo náklady na malé třídy. Měli bychom mít ve třídách 25 dětí, klidně i trochu více. Zadruhé, střídání letního času nešetří energii; jarní změna naopak každoročně zabije několik lidí v souvislosti s tím, jak jsou unavení a pak třeba nedávají pozor při řízení. Ale třeba u lockdownů a klimatu je ještě potřeba hodně práce. O klimatu už jsme mluvili. Co se týče covidu, opravdu bylo to extrémně nákladné zavírání škol vědecky podloženo? Budeme se při příští epidemii chovat stejně? Chybí mi klidné vyhodnocení různých opatření. Trochu mám pocit, že jsme tady v dobré víře vytvořili atmosféru cenzury, ve které vlastně nikdo už nechce moc zpochybňovat lockdowny nebo roušky. I když je klidně možné, že oboje vlastně bylo pro konkrétní epidemii covidu kontraproduktivní – ač to může pomoct hodně při epidemii zmutované eboly. To už se ale obávám, že roušky nikdo nosit nebude a nikdo nebude věřit epidemiologům.
+
+V podcastu IES říkáte: máme vnitřně a priori preferenci, která by nám měla vyjít. ta vaše analýza to dokáže potlačit?
+
+Potlačit ne, ale máme statistické metody, jak vědeckou literaturu o tyhle věci zhruba opravit. Příklad: i když jasně víte, že lidé budou chtít kupovat méně benzínu v reakci na zvýšení ceny benzínu, občas by se měl v literatuře objevit odhad, který jde opačným směrem, nebo je v podstatě nula. To je proto, že občas máte smůlu na malý dataset, nebo je to prostě náhoda. Když v literatuře podezřele chybí zrovna ty odhady, které by bylo těžké publikovat – protože nejsou intuitivní --, tak něco není v pořádku. Tyhle statistické metody očišťování nejsou jednoduché, vede se o tom velká debata. Je to právě ta oblast, kde se nyní snažíme nejvíc přispět vývojem nových metod. Většina existujících metod totiž byla převzata z medicíny, ale ve společenských vědách máme trochu jinou situaci a potřebujeme vzít v úvahu specifika toho výzkumu. Teď nám snad konečně vyjde po několika letech článek na toto téma v Nature Human Behaviour.
+
+Obecně, životní zkušenost, přesvědčení, nebo předsudky - je to problém pro autory? Skoro bych si řekl, že exaktní věda (možná na to nahlížím naivně) dokáže "osobní preference" eliminovat.
+
+K tomu existuje celý jeden vědecko-statistický přístup, filozofie; říká se tomu bayesiánctví. Bayesiánec začíná s tím, že má nějaký „prior“, tedy řekněme předsudek (třeba: poptávka po benzínu klesne se zvýšením ceny benzínu). Pak se podívá na data a podle dat svůj předsudek upraví – někdy málo, když evidence z dat není silná, jindy hodně. A ono to možná ani v životě jinak nejde, akorát ti bayesiánci to přiznávají a dělají explicitně. Eliminovat priory nedokážeme. Musíme pak k vědecké literatuře přistupovat tak, že ji píšou živí lidé, a podle toho se zařídit. K tomu je právě dobrá meta-analýza.
+
+## TRH PRÁCE
+
+Podtitul zářijového čísla je "Fresh start": týká se práce a nástupu do práce. začnu ale něčím odlehčenějším. Pro Seznam zprávy jste napsala článek o tom, že vzhled rozhoduje o tom, kolik peněz člověk vydělá? čím to je? :-)
+
+Jen to moje zjištění trochu upravím – vzhled o platu nerozhoduje, ale může vám ho o pár procent pohnout nahoru nebo dolů. V politice nebo sexuálních službách je to spíš víc procent, a může to pak opravdu o výsledku skoro rozhodovat. Jindy je to málo. My jsme v meta-analýze zjistili, že je to skoro nula, když vezmete v úvahu inteligenci. Chytřejší lidi vydělávají víc a jsou v průměru maličko hezčí. Nevíme proč. Možnosti jsou dvě. Buď krása a inteligence oboje souvisí s celkovým vyladěním organismu, a jsou tedy přirozeně geneticky na sobě závislé. Nebo je to tím, že historicky si úspěšní muži často brali a berou hezké ženy. Tím se také mohla inteligence dostat do vztahu se symetrií obličeje.
+
+Opravdu to platí? Mám teď – odlehčím to - běžet na plastiku?
+
+To záleží na tom, jestli chcete změnit povolání na některé z těch, o kterých jsme se bavili před chvílí :). Pak by se to možná finančně vyplatilo. Jinak moc ne, protože to nezmění Vaše schopnosti, které o platu skutečně rozhodují.
+
+Nebo jde o sebevědomí? Zajímavé je, že bych neřekl nakolik se to dá datově zkoumat :-)
+
+Přesně tak. Třeba i ta plastika mohla vylepšit sebevědomí, ale na to opravdu moc výzkumu není. Na to jsem zapomněla, když jsem říkala, proč krása může souviset s platem. Další hypotéza říká, že hezčí lidé jsou sebevědomější. A sebevědomí je užitečné pro většinu profesí a člověk intuitivně chápe, proč může dopomoci vyššímu platu. Číselně se to ale vyjadřuje velmi těžko, jak dobře naznačujete.
+
+V souvislosti s USA je zajímavé, jak známosti z univerzit pokládají základ pro úspěšnou pracovní kariéru. Jsou data, která by potvrzovala, jak je networking důležitý pro úspěch v práci?
+
+Ano, na to je řada článků a vidíte to i v praxi – koneckonců Facebook původně vznikl jako prostředek pro networking na Harvardu. Ale samozřejmě se dopady networkingu hodně liší mezi profesemi. Jsou profese, které se bez toho prakticky neobejdou a je to vlastně součást práce – jako třeba moje profese, výzkum. Když nebudu jezdit dávat semináře na univerzitách a prezentovat na konferencích, nebude můj výzkum pořádně brát nikdo vážně. A samozřejmě je důležitá i ta neformální rovina, kdy jdete se zahraničními kolegy na večeři a spřátelíte se.
+
+Práce a živobytí. Jak klíčové pro pracovní trh je, že historicky vznikly tyto "dvě větve"? Vnímání práce a volného času. Nejde přece o příliš starý koncept - navíc třeba v Asii dál "živobytí" přetrvává. Myslím tím to "neuvědomění si toho, že pracuji" :-) Co toto udělalo s pracovním trhem? S našimi návyky?
+
+To je možná spíš otázka na kolegy psychology. V ekonomii vidím dvě paralely. První je specializace, a s tím spojené formální povolání – viz dílo Adama Smithe a jeho důraz na specializaci. Zadruhé je to posun od práce na poli. Ještě před cca 150 lety prakticky všichni pracovali v zemědělství, buď na vlastním poli, nebo pronajatém. Díky masivnímu zvýšení produktivity dnes stačí zlomek populace a zbytek může dělat něco jiného – pracovat v zaměstnání a pak mít volno. Náš systém je mnohem zdravější než ten východoasijský, což je vidět z toho, jak jejich kultury kolabují a tyto země rapidně vymírají. Nedávno jsem se vrátila z Taiwanu, což je krásná země, jejíž kultura ale umírá.
+
+V září se naskočí do pracovního procesu. Je "dovolená" něco, co patří k práci? Zlepšuje produktivitu, nebo to data vůbec neukazují?
+
+Záleží na konkrétní profesi, samozřejmě, ale určitá míra odpočinku vždy produktivitu zvyšuje. Měli bychom se například zamyslet nad tím, jak je pro nás jako společnost užitečné, když nutíme lékaře trávit téměř celodenní služby v nemocnicích. Nebyl byste radši, kdyby Vás na pohotovosti vyšetřoval někdo, kdo je dobře odpočatý? Třeba i za cenu toho, že do té nemocnice jedete o 20 minut déle? Ale to je na delší povídání. Pro mě osobně je maximálně možné denně trávit těžkou intelektuální prací 4 hodiny. Další 4 hodiny, v nejhorším 6, pak může člověk věnovat různým drobnějším věcem, které nevyžadují 100% soustředění. Mezitím si stejně potřebuji pročistit hlavu, skočím si zaběhat nebo si zaboxuji. Ale prostě nejde za den pracovat hlavou 12 hodin ve špičkové kvalitě, nebo alespoň já to nezvládnu.
+
+Mimochodem, je něco, co funguje dobře k vyšší produktivitě? Pobídky, nebo vyšší mzda, pochvala?
+
+Na to máme novou meta-analýzu, kde ukazujeme, že finanční motivace jako taková není tak důležitá. Ano, často víc pomůže pochvala. A hlavně skutečnost, že práce člověka opravdu baví, že ji dělá ideálně na svoje jméno, že v ní vidí smysl. To penězi nenahradíme. Když s někým přijdete do kontaktu, vždy velmi rychle poznáte, jestli ho práce baví. Extrémně je to poznat zejména u úředníků. Trochu by asi pomohlo nejlepší úředníky platit víc, ale jednoduché řešení to nemá. Jen se vždycky strašně divím těm lidem, kteří zůstávají v práci, která je vyloženě nebaví a dělají jen to, co absolutně musí. Možná pak mají relativně pohodlný zbytek života, ale otázka je, proč tedy vůbec žijí, když polovinu dne dobrovolně vyhodí do koše. Jestli by nebylo pro ty lidi nakonec lepší za menší plat dělat něco, co má smysl, jestli by si sami sebe nevážili více.
+
+Jak se mění trh práce? Jakým trendům podléhá?
+
+Největší aspekt změny za poslední roky je home office. To jsme si vyzkoušeli za covidu a ukázalo se, že v řadě oborů to jde, v řadě ne. Když je silný manažer a silná vůle, funguje to, ale nikdy to není 100%. Teď sledujeme spíš stále ještě postupné odbourávání home office tam, kde nefunguje.
+
+K trendům: mluví se o čtyřdenní pracovním týdnu - jakou to má šanci na zavedení. I premiér Fico v Davosu mluvil o jeho zavedení :-)
+
+Jak jsme nakousli výše, v řadě oborů státní správy už funguje nejen čtyřdenní, ale dvoudenní pracovní týden. Takže jsme zase napřed před Slovenskem. Jinak ekonomicky je to jednoduché: plat nakonec zhruba odpovídá produktivitě práce. Když budeme pracovat o 20 % méně, budou platy o 20 % v průměru nižší. Každý dle svého gusta.
+
+Nepodmíněný příjem: výzkumy probíhají, myslím, že v Nizozemsku, ve Finsku mimo jiné - ale k praxi se zatím nepřistoupilo. Je to do budoucna cesta? S vyšším zapojením robotizace a AI do pracovních procesů.
+
+Pokud chceme zombifikovat velkou část naší populaci a umožnit někomu jen ležet s mobilem v ruce, aniž by cokoli dělal, pak je nepodmíněný příjem výborný prostředek. Máme určitá data z pandemie, kdy některé země přistoupily k něčemu podobnému. Trvalo pak velmi dlouho dostat lidi zpátky do práce. K nepodmíněnému příjmu není důvod: chceme lidi motivovat, aby pracovali. Nejen kvůli vyššímu HDP, ale kvůli disciplíně a kvalitě života, kterou práce přináší, kvůli prevenci kriminality a duševních poruch. Robotizace a umělá inteligence nakonec zvýší produktivitu nás všech, zvýší naše platy a vytvoří nová pracování místa – tak ti bylo se všemi trhem ověřenými inovacemi v historii.
+
+Velmi diskutovaným tématem je práce z domova (během covidu), má to obecně přínos?
+
+Ano, ale mimo výjimky jen jako nouzové řešení. Sama pracuji převážně z domu, ale kdybychom bydleli v Praze, ráda bych chodila do kanceláře na univerzitě. Člověk tak lépe oddělí práci a volný čas, což už je něco, o čem jsme se bavili.
+
+Otázka v souvislosti s mladší generací. Podle řady odborníků roste společnost, která pracovat nechce. Jsou data, která by říkala, že "mladší generace je línější", jak zní obecný povzdech.
+
+To říká ale každá generace, že ti mladí jsou hrozní a líní, ne? Mám v mysli písničku Borisa Filana od Elánu „Nie sme zlí“:) V datech takový trend skutečně příliš nevidíte. Co v datech bohužel vidíte, a co mě osobně velmi trápí, je prudký nárůst mentálních poruch a sebevražd mezi dětmi a dospívajícími. A tady jsme myslím na vině my, třicátníci a čtyřicátníci. Od malička vtloukáme dětem do hlavy depresivní globální problémy lidstva a planety, aniž bychom nabízeli konstruktivní řešení. My si to často neuvědomujeme, ale dospívající si to opravdu berou osobně a jsou volatilnější než dospělí. I mezi studenty ekonomie potkávám ty, kteří mi vážně říkají, že se bojí konce světa kvůli klimatu, že kvůli tomu umřou! Ale věda nic takového neukazuje, stačí se podívat do vědeckých zpráv IPCC (mezinárodní panel pro změny klimatu), nikoli tedy do shrnutí, které píšou politici. Je to zkreslený apokalyptický obraz vědy, kterému bohužel vědci nebrání dost, nebo ho někteří ještě podporují. Beznaděj je to, co u mladých často pozoruji a co mě osobně trápí. Přitom je to naprosto zbytečné. Lidské bídy nikdy nebylo tak málo a životní prostředí (ve vyspělých zemích) je na tom dnes lépe než ve středověku, což lze zdokumentovat třeba mírou zalesnění.
+
+Už před 20 a více lety byla na trhu kniha "Lenosti buď pozdravena", kterou napsala vysoká manažerka EdF. Říká: Pokud možno co nejméně pracovat, říká Corinne Maierová. Nedávno se na sociálních sítích šířila výzva s hashtagem "pracuji jen do výše svého platu"
+
+Co říkáte na takové výzvy?
+
+Paní Maierové lze blahopřát k tomu, že na knize dobře vydělala. Kdyby byla opravdu tak líná, jak doporučuje, tak by knihu nikdy nenapsala – ono to není úplně jednoduché. Takže z definice sama nevěří tomu, co hlásá. Ale ve svobodné společnosti může každý dělat, co chce, a zaměstnavatel ho podle toho odmění.
+
+Na druhou stranu - je řada lidí, kteří pracovat chtějí. Vy se zabýváte detekováním možných překážek žen v pracovních kariérách.
+
+Jaké podle vás ty překážky jsou? A jak je odbourat? V profesním životě jsem byl svědkem, kdy zaměstnavatel z nějakých důvodů odmítal částečné úvazky, což se mi zdálo nepochopitelné.
+
+Jsem členkou Rady pro rovné příležitosti Univerzity Karlovy. Ano, tam probíráme i ty překážky, které zmiňujete. Z toho, co se ke mně dostává, se mi zdá, že tento problém se v čase zmenšuje. Je těžké sehnat dobrého zaměstnance. Jako firma si dvakrát zrovna vybírat nemůžete. Opravdu někoho odmítnete jen proto, že je to žena a má děti? Jaký smysl by Vám to dávalo? Jasně, někdy je částečný úvazek komplikace. Když se ale podíváte na data, vidíte velký nárůst částečných úvazků a zaměstnanosti žen. Je ale opravdu faktem, že některé akademické obory jsou historicky dominovány muži a pro ženy je těžké tam výrazněji proniknout. Na tom se snažíme na univerzitě ještě zapracovat. Dokonalí zdaleka nejsme, ale zlepšuje se to. Pro mě osobně je strašně důležité, abychom problém nepřeklopili na opačnou stranu a nevyzdvihovali někoho jen kvůli jeho pohlaví. To by bylo nespravedlivé a nedůstojné pro všechny. Dřív jsme diskriminovali ženy, ano, ale dvojité zlo neudělá dobro. Neměli bychom teď diskriminovat muže, to je přeci špatně.
+
+Vy jste založila rodinu během doktorandského studia. Máte 4 děti, jak to s prací lze skloubit dohromady?
+
+Protože se živím převážně výzkumem, mohu si práci rozkládat během dne tak, jak potřebuji. Teď už jsou navíc děti velké, mladší dceři je 7, takže si mohu dovolit mnohem intenzivnější pracovní vytížení a více závazků. Bylo pro mě ale vždycky těžké odmítat příležitosti a musela jsem se naučit říkat ne. A dříve bych to těžko zvládala bez velkého zapojení manžela, rodiny, ale i přátel u nás v Litomyšli. Tady je vše po ruce, děti chodí samy do školy i na kroužky, nebo pomůže babička. V Praze bych si 4 děti nemohla dovolit, nebo minimálně nevím, jak by to bylo logisticky a finančně proveditelné. A musím říct, že konkrétně Litomyšl má velmi dobrou životní úroveň i ve srovnání s top destinacemi v nejvyspělejších zemích. A do Prahy se dá vždy příjemně dostat vlakem; brzy to půjde rychle i po dálnici.
