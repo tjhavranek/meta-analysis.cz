@@ -2,7 +2,7 @@
 
 > Publicistika Tomáše Havránka: komentáře pro celostátní média, sloupky pro litomyšlskou Lilii a rozhovory. Texty jsou zde archivovány v plném znění s odkazem na původní vydání.
 
-Publicistika: 151 položek, 2016–2026. Plné znění každého textu je na uvedené adrese; zdrojový Markdown je v /komentare/src/.
+Publicistika: 162 položek, 2016–2026. Plné znění každého textu je na uvedené adrese; zdrojový Markdown je v /komentare/src/.
 
 ## Celostátní komentáře
 
@@ -68,7 +68,9 @@ Komentáře a sloupky pro celostátní média — měnová politika, inflace, ve
 - [Zlato do trezorů ČNB patří](https://meta-analysis.cz/komentare/zlato-do-trezoru-cnb-patri/) — Hospodářské noviny, 7. října 2020
 - [Proč cenová stabilita neznamená stabilitu průměrných cen? Inflace je historický přežitek](https://meta-analysis.cz/komentare/proc-cenova-stabilita-neznamena-stabilitu-prumernych/) — Hospodářské noviny, 8. září 2020
 - [Pokud chce vláda bránit životy všemi prostředky, měla by zavést povinné očkování proti chřipce](https://meta-analysis.cz/komentare/pokud-chce-vlada-branit-zivoty-vsemi/) — Hospodářské noviny, 8. června 2020
+- [Stromy, to je ekonomická odpověď na sucho](https://meta-analysis.cz/komentare/hn-stromy-sucho/) — Hospodářské noviny, 5. května 2020
 - [Konec Cobbovy-Douglasovy produkční funkce?](https://meta-analysis.cz/komentare/cnb-cobb-douglas/) — ČNB cnBlog, 30. dubna 2020
+- [Jak přicházíme o sto miliard korun ročně](https://meta-analysis.cz/komentare/hn-sto-miliard-rocne/) — Hospodářské noviny, 11. září 2019
 - [Nerovnost neroste](https://meta-analysis.cz/komentare/cnb-nerovnost-neroste/) — ČNB cnBlog, 15. května 2017
 - [Kurzový závazek a past středního příjmu](https://meta-analysis.cz/komentare/cnb-kurzovy-zavazek/) — ČNB cnBlog, 12. prosince 2016
 - [Proč nízké úrokové míry nevedou nutně k přehřívání ekonomiky](https://meta-analysis.cz/komentare/cnb-rovnovazna-sazba/) — ČNB cnBlog, 30. listopadu 2016
@@ -146,18 +148,22 @@ Rozhovory pro česká média. U audio a video rozhovorů uvádíme pouze odkaz n
 - [Recept na zkrocení inflace: Sazby deset procent a euro za dvacku](https://meta-analysis.cz/komentare/zi-recept-na-zkroceni-inflace-sazby-deset-proce/) — Ekonom, 23. února 2023
 - [ČNB musí dělat víc. Vysoká inflace tu jinak bude dalších 10 let](https://plus.rozhlas.cz/cnb-musi-delat-vic-vysoka-inflace-tu-jinak-bude-dalsich-10-let-varuje-ekonom-8911524) — Český rozhlas Plus, 17. ledna 2023 (audio, pouze odkaz)
 - [Otázky Václava Moravce: Jak zachránit státní rozpočet?](https://www.ceskatelevize.cz/porady/1126672097-otazky-vaclava-moravce/222411030501106/) — Česká televize, 6. listopadu 2022 (video, pouze odkaz)
+- [Evropa odchází od rozumu k ideologii. Kvůli sociálním sítím, říká ekonom](https://meta-analysis.cz/komentare/iv-idnes-evropa-ideologie/) — iDNES.cz, 28. října 2022
+- [Banky si speciální daň zaslouží, rýžují peníze a nemusí se ani snažit](https://meta-analysis.cz/komentare/iv-hn-banky-specialni-dan/) — Hospodářské noviny, 31. srpna 2022
 - [Za vysokou inflaci může špatná politika centrální banky](https://plus.rozhlas.cz/za-vysokou-inflaci-muze-spatna-politika-centralni-banky-mini-ekonom-havranek-8807137) — Český rozhlas Plus, 15. srpna 2022 (audio, pouze odkaz)
 - [Zrušme inflaci, říká exporadce guvernéra Michla](https://meta-analysis.cz/komentare/iv-sz-zrusme-inflaci/) — Seznam Zprávy, 10. srpna 2022
+- [Události, komentáře: ČNB zvýšila základní úrokovou sazbu na 7 %](https://www.ceskatelevize.cz/porady/1096898594-udalosti-komentare/222411000370622/cast/920375/) — Česká televize, 22. června 2022 (video, pouze odkaz)
 - [Kontext: ČNB selhává a šlape na plyn. Ať rozprodá devizové rezervy](https://www.idnes.cz/ekonomika/domaci/podcast-kontext-tomas-havranek-inflace-ceska-narodni-banka-ales-michl.A220610_141645_ekonomika_imzv) — iDNES.cz, 11. června 2022 (audio, pouze odkaz)
 - [Inflaci můžeme kdykoliv zrušit, centrální banky včetně té české selhaly](https://video.aktualne.cz/dvtv/havranek-inflaci-muzeme-kdykoliv-zrusit-centralni-banky-vcet/r~d074e14ad23211eca89f0cc47ab5f122/) — DVTV, 13. května 2022 (video, pouze odkaz)
 - [Zemětřesení v ČNB bude bezprecedentní](https://video.aktualne.cz/dvtv/zive-zemetreseni-v-cnb-bude-bezprecedentni-byvaly-michluv-po/r~ed187658d21a11eca0d8ac1f6b220ee8/) — DVTV, 12. května 2022 (video, pouze odkaz)
 - [90' ČT24: O krocích centrální banky a vysoké inflaci](https://ct24.ceskatelevize.cz/clanek/ekonomika/zadny-strop-pro-zvedani-urokove-sazby-nemame-tvrdi-viceguverner-cnb-22082) — Česká televize, 1. dubna 2022 (video, pouze odkaz)
-- [Extrémní opatrnost ČNB](https://www.e15.cz/podcasty/e15-cast/extremni-opatrnost-cnb-1387936) — E15, 1. února 2022 (audio, pouze odkaz)
+- [Extrémní opatrnost ČNB je ve výsledku dražší než agresivita](https://www.e15.cz/podcasty/e15-cast/extremni-opatrnost-cnb-je-ve-vysledku-drazsi-nez-agresivita-rika-ekonom-tomas-havranek-1387936) — E15, 24. února 2022 (audio, pouze odkaz)
 - [ČNB by měla prodat miliardy eur a více investovat do akcií](https://meta-analysis.cz/komentare/iv-e15-prodat-eura/) — E15, 23. ledna 2022
 - [Inflaci můžeme úplně zrušit, je neústavní](https://meta-analysis.cz/komentare/zi-inflaci-muzeme-uplne-zrusit-je-neustavni-rik/) — iDNES.cz, 19. prosince 2021
 - [Havránek: Hodnocení ERC je velmi poctivé, nápady vynikající](https://meta-analysis.cz/komentare/iv-ukforum-erc/) — UK Forum, 22. června 2021
 - [Vršící se státní dluh má pět řešení. Ale jen jedno je dobré](https://meta-analysis.cz/komentare/iv-sz-dluh/) — Seznam Zprávy, 19. června 2021
 - [Ať se ČNB inspiruje ve Švýcarsku. Může vydělávat stamiliardy](https://meta-analysis.cz/komentare/iv-sz-cnb-svycarsko/) — Seznam Zprávy, 15. června 2021
+- [Bojím se, že papírové peníze v Česku skončí do pěti let, říká ekonom](https://meta-analysis.cz/komentare/iv-idnes-papirove-penize/) — iDNES.cz, 18. dubna 2021
 - [Nejcitovanější český ekonom: Další krize určitě nevznikne u nás](https://meta-analysis.cz/komentare/iv-roklen24/) — Roklen24, 22. května 2018
 - [Nejcitovanější český ekonom: Dům je pro mě spotřeba](https://www.cnb.cz/cs/o_cnb/vlog-cnb/Nejcitovanejsi-cesky-ekonom-Dum-je-pro-me-spotreba/) — Česká národní banka, 26. dubna 2018 (video, pouze odkaz)
 
@@ -167,10 +173,15 @@ Columns and commentary written in English — policy pieces for VoxEU/CEPR and p
 
 - [Stress-testing research with AI, now super easy and fully automated](https://meta-analysis.cz/komentare/maer-stress-testing/) — MAER-Net, 31. května 2026
 - [Stress-Testing Meta-Research with AI Duels](https://meta-analysis.cz/komentare/maer-ai-duels/) — MAER-Net, 12. prosince 2025
+- [Highlights from the 2025 MAER-Net Colloquium in Ottawa](https://meta-analysis.cz/komentare/maer-ottawa-colloquium/) — MAER-Net, 31. října 2025
 - [AI Tools for Meta-Analysis](https://meta-analysis.cz/komentare/maer-ai-tools/) — MAER-Net, 30. července 2025
 - [New Challenges for Meta-Analysis: Attenuation Bias, P-Hacking, Preferred Estimates](https://meta-analysis.cz/komentare/maer-new-challenges/) — MAER-Net, 7. července 2025
+- [Spurious Precision in Meta-Analysis](https://meta-analysis.cz/komentare/maer-spurious-precision/) — MAER-Net, 16. února 2023
 - [How financial incentives affect performance](https://meta-analysis.cz/komentare/voxeu-incentives/) — VoxEU / CEPR, 13. února 2023
 - [Armington elasticity and international trade models: Fifty years on](https://meta-analysis.cz/komentare/voxeu-armington/) — VoxEU / CEPR, 23. září 2020
+- [Revision of Reporting Guidelines](https://meta-analysis.cz/komentare/maer-reporting-guidelines/) — MAER-Net, 11. listopadu 2019
+- [Death to the Cobb-Douglas Production Function!](https://meta-analysis.cz/komentare/maer-cobb-douglas/) — MAER-Net, 25. září 2019
+- [Why Model Averaging Is Useful in Meta-Analysis](https://meta-analysis.cz/komentare/maer-model-averaging/) — MAER-Net, 27. února 2019
 - [Natural resources and economic growth: the research evidence](https://meta-analysis.cz/komentare/globaldev-natural-resources/) — GlobalDev Blog, 13. února 2018
 - [Daylight saving saves no energy](https://meta-analysis.cz/komentare/voxeu-daylight-saving/) — VoxEU / CEPR, 2. prosince 2017
 - [Headline inflation measures shouldn't ignore costs of home ownership](https://meta-analysis.cz/komentare/voxeu-home-ownership/) — VoxEU / CEPR, 12. září 2017

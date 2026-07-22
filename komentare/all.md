@@ -2,7 +2,7 @@
 
 Publicistika Tomáše Havránka: komentáře pro celostátní média, sloupky pro litomyšlskou Lilii a rozhovory. Texty jsou zde archivovány v plném znění s odkazem na původní vydání.
 
-151 položek. Audio a video jsou uvedeny pouze odkazem.
+162 položek. Audio a video jsou uvedeny pouze odkazem.
 
 ---
 
@@ -369,25 +369,48 @@ Autoři jsou ekonomové
 
 ## Stress-Testing Meta-Research with AI Duels
 
-*MAER-Net, 12. prosince 2025. Zuzana Irsová, Tomáš Havránek.*
+*MAER-Net, 12. prosince 2025. Zuzana Iršová, Tomáš Havránek.*
 
 Zdroj: https://www.maer-net.org/post/ai_duel
 
-Many of us now use large language models for meta-analysis tasks like coding, short summaries, or quick checks. Where they become genuinely valuable for research, though, is not in producing a single clean answer. It is in creating structured disagreement: two models pushing on each other’s reasoning, with a researcher steering the process.
+Many of us now use large language models for meta-analysis tasks like coding, short summaries, or quick checks. Where they become genuinely valuable for research, though, is not in producing a single clean answer. It is in creating **structured disagreement**: two models pushing on each other’s reasoning, with a researcher steering the process.
 
-That is the idea behind the Research Audit Protocol (v1.7). It is a structured, human-in-the-loop workflow that coordinates ChatGPT and Gemini in a deliberate “duel.” The goal is not AI approval. The goal is to generate the kinds of counterexamples, boundary conditions, and missing assumptions that a single model (and often a single human pass) would not surface. (Of course, advanced users can substitute Claude for the auditor role, or run the same workflow via an API-based multi-agent setup.)
+That is the idea behind the [**Research Audit Protocol (v1.7)**](https://github.com/tjhavranek/research-audit-duel-protocol). It is a structured, human-in-the-loop workflow that coordinates ChatGPT and Gemini in a deliberate “duel.” The goal is not AI approval. The goal is to generate the kinds of counterexamples, boundary conditions, and missing assumptions that a single model (and often a single human pass) would not surface. (Of course, advanced users can substitute Claude for the auditor role, or run the same workflow via an API-based multi-agent setup.)
 
-Why duels work A normal chat is optimized for flow. A duel is optimized for scrutiny:
+**Why duels work** A normal chat is optimized for flow. A duel is optimized for scrutiny:
 
-Anchor (ChatGPT): Start with a full, file-grounded assessment before seeing any critique.
+- **Anchor (ChatGPT):** Start with a full, file-grounded assessment before seeing any critique.
+- **Duel (Gemini):** Probe hard for identification problems, hidden assumptions, and failure modes—and force specificity.
+- **Synthesis (You + ChatGPT):** Map the disagreement (or convergence) and record what changed and why, so the final view is auditable.
 
-Duel (Gemini): Probe hard for identification problems, hidden assumptions, and failure modes—and force specificity.
-
-Synthesis (You + ChatGPT): Map the disagreement (or convergence) and record what changed and why, so the final view is auditable.
-
-A MAER-Net Case Study: WAIVE vs. MAIVE As a proof of concept for meta-method work, we applied the protocol to an audit of the proposed WAIVE idea against the MAIVE framework. The duel did not just restate the two approaches. It forced us to pin down the key tension that matters for applied meta-analysis: when does downweighting “suspiciously precise” results reduce spurious precision, and when might it also penalize genuinely informative studies?
+**A MAER-Net Case Study: **[**WAIVE vs. MAIVE**](https://github.com/tjhavranek/research-audit-duel-protocol/tree/main/examples) As a proof of concept for meta-method work, we applied the protocol to an audit of the proposed **WAIVE** idea against the **MAIVE** framework. The duel did not just restate the two approaches. It forced us to pin down the key tension that matters for applied meta-analysis: when does downweighting “suspiciously precise” results reduce spurious precision, and when might it also penalize genuinely informative studies?
 
 In other words, it pushed us to state the boundary conditions clearly—the kind of slow thinking that improves methods before they hit peer review.
+
+**Resources**
+
+- **Protocol (v1.7):** [GitHub Repository](https://github.com/tjhavranek/research-audit-duel-protocol)
+- **Worked Example (WAIVE/MAIVE):** [Examples Folder](https://github.com/tjhavranek/research-audit-duel-protocol/tree/main/examples)
+- **Permanent DOI:** [Zenodo](https://doi.org/10.5281/zenodo.17898869)
+- **MAIVE Code:** [CRAN](https://cran.r-project.org/package=MAIVE) | [EasyMeta.org](https://easymeta.org/)
+
+---
+
+## Highlights from the 2025 MAER-Net Colloquium in Ottawa
+
+*MAER-Net, 31. října 2025. Tom Stanley, Sebastian Gechert, Jerome Geyer-Klingeberg, Tomáš Havránek.*
+
+Zdroj: https://www.maer-net.org/post/highlights-from-the-2025-maer-net-colloquium-in-ottawa
+
+The Ottawa Colloquium was a wonderful experience and a great success. The quality of presentations and the richness of discussions have never been better. AI featured prominently this year, sparking lively debates that continue on [MAER-Net’s blog](https://www.maer-net.org/post/developing-guidelines-for-the-use-of-ai-in-meta-analysis-of-economics-research-guai-maer-and). We also had many methodological contributions, each offering new ways to understand economics research or to avoid misinterpretation.
+
+Of particular note were the excellent keynotes and the awarding of our Founder’s Medal. Shinichi Nakagawa adeptly presented five fascinating meta-meta studies from ecology and environmental science, and Andrew Gelman’s entertaining talk-and-chalk reminded us that “all of our default models are wrong.” Abel Brodeur received the [MAER-Net’s Founders’ Medal](https://www.maer-net.org/award) for his outstanding contributions to economic science, including his Herculean efforts to make economics research reproducible and replicable.
+
+Our sincere thanks go to Abel and the University of Ottawa for their gracious and generous hospitality. Abel and his team offered a master class in hosting research conferences: from meticulous planning and catering to expert tour guiding and insightful commentary on others’ research.
+
+We also thank our core members for their continued support and willingness to share their work, and our brilliant young researchers for their eagerness to learn and to further develop meta-analytic methods. See the Ottawa Colloquium website for more details.
+
+Lastly, we are pleased to announce that the 2026 MAER-Net Colloquium will be held at Chemnitz University of Technology, Germany, hosted by Sebastian Gechert and his team. Chemnitz is the 2025 European Capital of Culture, known for its heritage as a powerhouse of early industrialisation in Central Europe, Art Nouveau architecture, its changeful history before, during and after the German partition, and its recent reinvention as a city of subculture and indie-rock-music. The region around Chemnitz, including the Ore Mountains is characterized by a high density of medieval, Renaissance and Baroque castles as well as picturesque hiking and cycling routes. We are very much looking forward to seeing you in Chemnitz, September 23-25, 2026. See the [Chemnitz Colloquium website](https://www.maer-net.org/2026-chemnitz) for more details and updates.
 
 ---
 
@@ -465,33 +488,29 @@ Zdroj: https://www.maer-net.org/post/ai-tools-for-meta-analysis
 
 I believe we’ve finally reached the point where AI tools can genuinely save a lot of time in meta-analysis during literature search and data collection. Below is a summary of what works well as of late July 2025. My experience is mostly with ChatGPT, so I’d be interested to hear what has worked for others. There must be better ways of doing this.
 
-Start with deep research. The deep research function in ChatGPT helps you explore the literature before you begin the actual meta-analysis. It improves your understanding of the topic and also improves how useful ChatGPT replies become in later stages.
+## A) Literature search
 
-Refine search strategy using o3. Upload a few key papers and ask the o3 reasoning model to help you create a good Google Scholar query, also based on the deep research results. Go back and forth with it until the first page of results gives you mostly relevant studies.
+- **Start with deep research. **The deep research function in ChatGPT helps you explore the literature before you begin the actual meta-analysis. It improves your understanding of the topic and also improves how useful ChatGPT replies become in later stages.
+- **Refine search strategy using o3. **Upload a few key papers and ask the o3 reasoning model to help you create a good Google Scholar query, also based on the deep research results. Go back and forth with it until the first page of results gives you mostly relevant studies.
+- **Use ChatGPT Agent to scan results. **The Agent can go through the first few hundred hits on Google Scholar and look at the abstracts. Ask it to flag papers that have at least a small chance of including the type of estimates you want. *Example prompt: You are an expert in meta-analysis. For each abstract and based on all information you can find about the paper, say whether the paper reports, with more than 20 percent probability, quantitative estimates on the effect of beauty on labor market outcomes. Justify briefly.*
+- **Download flagged papers and filter again. **The Agent can download some PDFs but usually not those behind paywalls, so you’ll have to do that part. Upload them to ChatGPT in batches of five. Ask whether the papers include effect size estimates and where in the paper they are located (table numbers or page references). *Example prompt: For each of these papers, does it contain new empirical estimates of the effect of beauty on wages that I can use in a meta-analysis? Point to specific tables or pages.*
+- **Cross-check with other tools. **Use ASReview or Semantic Scholar to double-check or supplement your results. ASReview is good if you want to train an active learning model on what counts as relevant in your case.
+- **Use snowballing to expand the dataset. **Ask the Agent to identify studies that are closely connected to those already in your list. For example, you can request the 100 most frequently cited papers *by* the studies in your dataset, or the 100 most recent papers that *cite* at least five of them. (The latter helps surface newer work that may be underrepresented in standard Google Scholar results due to low citation counts.) Then return to step 4 and screen these new candidates for relevance.
 
-Use ChatGPT Agent to scan results. The Agent can go through the first few hundred hits on Google Scholar and look at the abstracts. Ask it to flag papers that have at least a small chance of including the type of estimates you want. Example prompt: You are an expert in meta-analysis. For each abstract and based on all information you can find about the paper, say whether the paper reports, with more than 20 percent probability, quantitative estimates on the effect of beauty on labor market outcomes. Justify briefly.
+## B) Data collection
 
-Download flagged papers and filter again. The Agent can download some PDFs but usually not those behind paywalls, so you’ll have to do that part. Upload them to ChatGPT in batches of five. Ask whether the papers include effect size estimates and where in the paper they are located (table numbers or page references). Example prompt: For each of these papers, does it contain new empirical estimates of the effect of beauty on wages that I can use in a meta-analysis? Point to specific tables or pages.
-
-Cross-check with other tools. Use ASReview or Semantic Scholar to double-check or supplement your results. ASReview is good if you want to train an active learning model on what counts as relevant in your case.
-
-Use snowballing to expand the dataset. Ask the Agent to identify studies that are closely connected to those already in your list. For example, you can request the 100 most frequently cited papers by the studies in your dataset, or the 100 most recent papers that cite at least five of them. (The latter helps surface newer work that may be underrepresented in standard Google Scholar results due to low citation counts.) Then return to step 4 and screen these new candidates for relevance.
-
-Upload papers and identify coding dimensions. Upload your included papers in small batches. Ask ChatGPT to identify the main ways in which the studies differ, both in terms of methodology and data. These differences typically become your coding dimensions (e.g. IV vs. RDD vs. DID, different professions examined, different time periods).
-
-Use o3 to review the coding structure. Before you finalize the structure of your dataset, ask the o3 reasoning model to help you think through whether the coding dimensions you’ve selected make sense. Adjust if needed. Then fix the structure yourself. Keep all related chats in one project folder in ChatGPT.
-
-Train the Agent on a few coded papers. Code five papers manually. Upload the PDFs and your data entries for three of them. Then ask ChatGPT Agent to extract the same information from the other two using GPT-4.1. Iterate your prompt until it works well, then continue in batches. Example prompt: Here are three PDFs and the corresponding rows from my Excel sheet. Learn the structure. These data are collected well and I want you to collect data from other papers. I will now send two new PDFs. Extract estimates of the beauty premium and the corresponding standard error. Collect information on the estimation method used, the definition of the beauty variable, definition of the earnings variable.
-
-Use NotebookLM as a separate check. Upload the same batch to NotebookLM. Let it try the same extraction task independently. Compare the two outputs. Manually resolve discrepancies and randomly spot-check the rest.
+- **Upload papers and identify coding dimensions. **Upload your included papers in small batches. Ask ChatGPT to identify the main ways in which the studies differ, both in terms of methodology and data. These differences typically become your coding dimensions (e.g. IV vs. RDD vs. DID, different professions examined, different time periods).
+- **Use o3 to review the coding structure. **Before you finalize the structure of your dataset, ask the o3 reasoning model to help you think through whether the coding dimensions you’ve selected make sense. Adjust if needed. Then fix the structure yourself. Keep all related chats in one project folder in ChatGPT.
+- **Train the Agent on a few coded papers. **Code five papers manually. Upload the PDFs and your data entries for three of them. Then ask ChatGPT Agent to extract the same information from the other two using GPT-4.1. Iterate your prompt until it works well, then continue in batches. *Example prompt: Here are three PDFs and the corresponding rows from my Excel sheet. Learn the structure. These data are collected well and I want you to collect data from other papers. I will now send two new PDFs. Extract estimates of the beauty premium and the corresponding standard error. Collect information on the estimation method used, the definition of the beauty variable, definition of the earnings variable.*
+- **Use NotebookLM as a separate check. **Upload the same batch to NotebookLM. Let it try the same extraction task independently. Compare the two outputs. Manually resolve discrepancies and randomly spot-check the rest.
 
 As of July 2025, you still need competent humans to collect data for meta-analysis. All of the above should be complemented with your usual expertise. You have to check carefully what the AI returns. There’s still a risk of hallucinations, although with good prompting the risk is quite small. But where you needed four co-authors a year ago, now you probably need just two. And they can focus on more intellectually demanding tasks.
 
 Let me know if you’ve found better ways to do this. I’m especially curious about tools outside the OpenAI ecosystem. Some colleagues report success with Claude, which seems strong in reasoning, but I haven’t tested it systematically yet.
 
-Update (July 31, 2025): Several MAER-Net colleagues wrote to me about a promising new platform called otto-SR. It offers an end-to-end AI pipeline for systematic reviews, using tools like GPT-4.1 and o3 for screening and data extraction: essentially a polished, integrated version of the workflow I described above. It’s currently in preview only and not publicly available. While the early results sound more than impressive, otto-SR has been designed and benchmarked mainly for Cochrane-style reviews, which differ quite a bit from meta-analyses in economics. Still, it’s worth watching closely.
+**Update (July 31, 2025):** Several MAER-Net colleagues wrote to me about a promising new platform called [*otto-SR*](https://ottosr.com/). It offers an end-to-end AI pipeline for systematic reviews, using tools like GPT-4.1 and o3 for screening and data extraction: essentially a polished, integrated version of the workflow I described above. It’s currently in preview only and not publicly available. While the [early results](https://www.medrxiv.org/content/10.1101/2025.06.13.25329541v2) sound more than impressive, otto-SR has been designed and benchmarked mainly for Cochrane-style reviews, which differ quite a bit from meta-analyses in economics. Still, it’s worth watching closely.
 
-Update (August 19, 2025): ChatGPT now runs on GPT‑5. In the UI you pick Auto, Fast, or Thinking; I use GPT‑5 Thinking for screening and PDF extraction because it reasons longer and stays more consistent. Agent mode also feels steadier, but careful human checks are still essential. (If you work via API, OpenAI still documents separate “reasoning” models like o3, but that label isn’t shown in the ChatGPT menu.)
+**Update (August 19, 2025):** ChatGPT now runs on GPT‑5. In the UI you pick Auto, Fast, or Thinking; I use GPT‑5 Thinking for screening and PDF extraction because it reasons longer and stays more consistent. Agent mode also feels steadier, but careful human checks are still essential. (If you work via API, OpenAI still documents separate “reasoning” models like o3, but that label isn’t shown in the ChatGPT menu.)
 
 ---
 
@@ -2252,6 +2271,179 @@ Profesor ekonomie na Univerzitě Karlově, výzkumník v Centru analýz hospodá
 
 ---
 
+## Spurious Precision in Meta-Analysis
+
+*MAER-Net, 16. února 2023. Zuzana Iršová, Pedro R. D. Bom, Tomáš Havránek, Heiko Rachinger.*
+
+Zdroj: https://www.maer-net.org/post/maive
+
+*Meta-analysis upweights studies reporting lower standard errors and hence more precision. But in empirical practice, notably in observational research, precision is not given to the researcher. Precision must be estimated, and thus can be p-hacked to achieve statistical significance. Simulations show that a modest dose of spurious precision creates a formidable problem for inverse-variance weighting and bias-correction methods based on the funnel plot. Selection models fail to solve the problem, and the simple mean can dominate sophisticated estimators. Cures to publication bias may become worse than the disease. We introduce an approach that surmounts spuriousness: the Meta-Analysis Instrumental Variable Estimator (MAIVE). *
+
+**The paper is available at **[**meta-analysis.cz/maive**](http://meta-analysis.cz/maive)**. We provide a package for R (*****maive*****), which makes it easy to use the new method.**
+
+### What is already known
+
+- In meta-analysis it's optimal to give more weight to more precise studies.
+- Inverse-variance weighting maximizes efficiency and may attenuate publication bias.
+- Inverse-variance weighting is used by all common estimators.
+
+### What is new
+
+- If reported precision exaggerates real one, inverse-variance weighting creates a bias.
+- Bias in current methods due to spurious precision can exceed publication bias.
+- Spurious precision arises naturally in observational research via *p*-hacking.
+- Meta-Analysis Instrumental Variable Estimator (MAIVE) corrects for spuriousness.
+
+### Potential impact
+
+- Meta-analysts should use MAIVE if they suspect *p*-hacking.
+- The difference between MAIVE and unadjusted estimators can measure spuriousness.
+- MAIVE substantially improves the robustness of the current meta-analysis toolkit.
+
+Inverse-variance weighting reigns in meta-analysis. [[1](https://www.maer-net.org/post/maive#viewer-2137l)] More precise studies, or rather those seemingly more precise based on lower reported standard errors, get a greater weight explicitly or implicitly. The weight is explicit in traditional summaries, such as the fixed-effect model (assuming a common effect) and the random-effects model (allowing for heterogeneity). [[2,3](https://www.maer-net.org/post/maive#viewer-2137l)] These models work as weighted averages, the weight diluted in random effects by a heterogeneity term. The weight is also explicit in publication bias correction models based on the funnel plot. [[4–12](https://www.maer-net.org/post/maive#viewer-2137l)] **In funnel-based models, reported precision is particularly important** because the weighted average gets reinforced by assigning more importance to supposedly less biased (nominally more precise) studies. The weight is implicit in selection models estimated using the maximum likelihood approach, [[13–18](https://www.maer-net.org/post/maive#viewer-2137l)] which often reduce to the random-effects model in the absence of publication bias.
+
+### Reported precision turned spurious
+
+The tacit assumption behind all these techniques is that the reported, nominal precision represents the true, underlying precision. The standard error, inverse of precision, is given to the researcher by her data and methods. It's fixed and can't be manipulated, consciously or unconsciously. The assumption is plausible in experimental research, for which most meta-analysis methods were developed. But in observational research, where thousands of meta-analyses are produced each year, **the derivation of the standard error is often a key part of the empirical exercise**. Consider a regression analysis with longitudinal data: explaining the health outcomes of patients treated by different physicians and observed over several years. Individual observations aren't independent, and standard errors need to be clustered. [[19](https://www.maer-net.org/post/maive#viewer-2137l)] But how? At the level of physicians, patients, or years? Should one use double clustering [[20](https://www.maer-net.org/post/maive#viewer-2137l)] or perhaps wild bootstrap [[21](https://www.maer-net.org/post/maive#viewer-2137l)]? It's complicated, and with a different computation of confidence intervals the researcher will report different precision for the same estimated effect size.
+
+Spurious precision can arise in many contexts other than longitudinal data analysis. Ordinary least squares, the workhorse of observational research, assume homoskedasticity of residuals. The assumption is often violated, and in these cases researchers should use heteroskedasticity-robust standard errors, [[22](https://www.maer-net.org/post/maive#viewer-2137l)] typically larger than plain vanilla standard errors. **If researchers ignore heteroskedasticity, they report precise estimates, but the precision is spurious**. Similar problems may arise due to nonstationarity in time series [[23](https://www.maer-net.org/post/maive#viewer-2137l)] and a myriad of other issues. When a study with exaggerated precision enters meta-analysis, it gets too much impact because of inverse-variance weighting. If a meta-analyst spots the methodological problem, she can exclude the study or add a corresponding control. Either way, the weighting problem isn't properly addressed. And spotting misspecification is hard, because the tweak lifting reported precision can be hidden within a complex model.
+
+### Various sources of spuriousness
+
+Spurious precision can also arise due to cheating. For economics journals, quasi-experimental evidence shows that the introduction of obligatory data sharing substantially reduced the reported *t*-statistics. [[24](https://www.maer-net.org/post/maive#viewer-2137l)] Prior to the introduction of data sharing some authors had probably cheated by manipulating data or results. Pütz and Bruns find hundreds of reporting errors in top economics journals; when they ask authors to explain the errors, the authors are four times more likely to admit a mistake in the standard error than in the estimated effect size. [67] But cheating, mistakes, and other issues that can affect the standard error independently of the estimated effect size aren't necessary to produce spurious precision. **A realistic mechanism is *****p*****-hacking, in which the researcher adjusts the entire model to produce statistically significant results.** After adjusting the model, both the effect size and standard error change, and both can jointly contribute to statistical significance. We examine, by employing Monte Carlo simulations, the consequences of cheating and the more realistic *p*-hacking behavior, of which spurious precision is a natural result.
+
+Figure 1 gives intuition on the cheating/clustering/heteroskedasticity/nonstationarity simulation. For brevity we call it a cheating scenario. Researchers crave statistically significant estimates and to that effect manipulate effect sizes or standard errors at will, but not both at the same time. The scenario is simplistic, and we start with it because it allows for a clean separation of selection on estimates (conventional in the literature) and selection on standard errors (our focus). The separation isn't so clean in the *p*-hacking scenario but can be mapped back to the cheating scenario. The mechanism of the left-hand panel of Figure 1 is analogous to the Lombard effect in psychoacoustic: [[25,26](https://www.maer-net.org/post/maive#viewer-2137l)] speakers increase their vocal effort in response to noise. Here **researchers increase their selection effort in response to noise in data or methods**, noise that produces imprecision and insignificance. When researchers so cheat with effect sizes, the results are consistent with funnel-based models of publication bias: funnel asymmetry arises, the most precise estimates remain close to the true effect, and inverse-variance weighting helps mitigate the bias—aside from improving the efficiency of the aggregate estimate, the original rationale for using the weights. [[27,28](https://www.maer-net.org/post/maive#viewer-2137l)]
+
+### Bias in inverse-variance weighting
+
+The right-hand panel of Figure 1 paints a different picture. Here the mechanism is analogous to Taylor’s law in ecology: [[29](https://www.maer-net.org/post/maive#viewer-2137l)] the variance can decrease with a smaller mean (originally describing population density for various species). **When researchers achieve significance by lowering the standard error, we again observe funnel asymmetry. But this time no bias arises **in the reported effect sizes: the black-filled circles and the hollow circles denote the same effect size, only precision changes. The simple unweighted mean of reported estimates is unbiased, and inverse-variance weighting paradoxically creates a downward bias. The bias increases when we use a correction based on the funnel plot: effectively, when we estimate the size of a hypothetical infinitely precise study, the intercept of a regression curve.
+
+In practice, as noted, selection on estimates and standard errors arises simultaneously. We generate this quality in simulations by allowing researchers to replace control variables in a regression context, a mechanism that also gives rise to sizable heterogeneity. Control variables are correlated with the main regressor or of interest (for example, a treatment variable), and their **replacement affects both the estimated treatment effect and the corresponding precision**. Then *p*-hacked estimates move not strictly north or west, as in the figure, but northwest. Even spuriously large estimates can now be spuriously precise. The resulting bias direction due to inverse-variance weighting is unclear. Our simulations suggest that an upwards bias is plausible.
+
+### Current methods fail with spurious precision
+
+Does any technique yield little bias and good coverage rates in the case of panel B of Figure 1, or at least with a small ratio of selection on standard errors relative to selection on estimates? **We examine 7 current estimators**: simple unweighted mean, fixed effects (weighted least squares, FE/WLS), [[30](https://www.maer-net.org/post/maive#viewer-2137l)] precision-effect test and precision-effect estimate with standard errors (PET-PEESE), [[9](https://www.maer-net.org/post/maive#viewer-2137l)] endogenous kink (EK), [[11](https://www.maer-net.org/post/maive#viewer-2137l)] weighted average of adequately powered estimates (WAAP), [[10](https://www.maer-net.org/post/maive#viewer-2137l)] the selection model by Andrews and Kasy, [[17](https://www.maer-net.org/post/maive#viewer-2137l)] and *p*-uniform∗ [[18](https://www.maer-net.org/post/maive#viewer-2137l)]. The first two are basic summary statistics, the next three are correction methods based on the funnel plot, and the last two are selection models. The choice of estimators is subjective, but the three funnel-based techniques are commonly used in observational research. [[31–38](https://www.maer-net.org/post/maive#viewer-2137l)] The two selection models are also used often [[39–46](https://www.maer-net.org/post/maive#viewer-2137l)] and represent the latest incarnations of models in the tradition of Hedges [[13–16](https://www.maer-net.org/post/maive#viewer-2137l)] and their simplifications [[47–52](https://www.maer-net.org/post/maive#viewer-2137l)].
+
+The importance of reported precision for these estimators is summarized in Table 1. In most of them precision has two roles: **weight and identification**. Identification can be achieved through meta-regression (where the standard error or a function thereof is included as a regressor), selection model, or a combination of both—such as the EK model.
+
+**None of these 7 estimators work well with even a sprinkle of spurious precision**. The simple unweighted mean plagued by publication bias can be the best, but still no good. The reader might expect selection models to beat funnel-based models, because of the latter’s heavier reliance on precision. Alas, this is generally not the case, and even selection models are often defeated by the simple mean when selection on standard errors is modest (about 1:5 and more compared to selection on estimates). We propose a straightforward adjustment of funnel-based techniques, the meta-analysis instrumental variable estimator (MAIVE), which corrects most of the bias and restores valid coverage rates. **MAIVE replaces, in all meta-analysis contexts, reported variance with the portion of reported variance that can be explained by the inverse sample size** used in the primary study. We justify the idea by starting with a version of the Egger regression: [[4](https://www.maer-net.org/post/maive#viewer-2137l)]
+
+where *αi_hat* on the left-hand side denotes effects estimated in primary studies and *SE *their standard errors. This is the PEESE model due to Stanley and Doucouliagos, but for simplicity without additional inverse-variance weights—since the model searches for the effect conditional on maximum precision, it already features an implicit, built-in weight. In panel A of Figure 1, the quadratic regression would fit the data quite well, [[9](https://www.maer-net.org/post/maive#viewer-2137l)] and estimated *α*0 would lie close to the mean underlying effect. **In panel B, however, the regression fails to recover the underlying coefficients.** The regression fails because it assumes a causal effect of the standard error on the estimate: a good description of panel A (Lombard effect), but not panel B (Taylor’s law). In panel B, the standard error sometimes depends on the estimated effect size and is thus correlated with the error term, *vi*. The resulting estimates of *α*0 (true effect) and *β *(intensity of selection) are biased.
+
+### Endogeneity problem in meta-regression
+
+The problem is the correlation between *SE *and *vi*, which can arise for three reasons: First, selective reporting based on standard errors, which we simulate. Second, measurement error in *SE*. This issue was mentioned in 2005 by Tom Stanley, [[53](https://www.maer-net.org/post/maive#viewer-2137l)] **who was the first to instrument the standard error in a meta-analysis context**. Nevertheless, Stanley didn't discuss the adjustment of weights nor did he pursue the idea further as a bias-correction estimator. We don't consider this source of correlation in simulations. Third, the correlation can be caused by unobserved heterogeneity: some method choices affect both estimates and standard errors, and some standardized meta-analysis effects feature a mechanical correlation between both quantities. [36] (A careless meta-analyst may also mix estimates measured in different units. [[54](https://www.maer-net.org/post/maive#viewer-2137l)]) Our *p*-hacking simulation only partly addresses this mechanism by allowing researchers to change control variables, which can affect both estimates and standard errors at the same time—a combination of panel A and panel B of Figure 1. In other words, we model only some of the mechanisms which give rise to spurious precision.
+
+The statistical solution to the problem, often called endogeneity, is to find an instrument for the standard error. A valid instrument is correlated with the standard error, but not with the error term (and thus unrelated to the three sources of endogeneity mentioned above). While finding good instruments is often challenging, here the answer beckons. By definition, reported variance (*SE*2) is a linear function of the inverse of the sample size used in the primary study. **The sample size is plausibly robust to selection,** or at least it's more difficult to collect more data than to *p*-hack the standard error to achieve significance. The sample size isn't estimated, and so it doesn't suffer from measurement error. The sample size is typically not affected by changing methodology, certainly not by changing control variables. Some endogeneity may remain if researchers correctly expecting smaller effects design larger experiments. [[41](https://www.maer-net.org/post/maive#viewer-2137l)] But, at least in observational research, authors often use as much data as available from the start. Indeed, the sample size, unlike the standard error, is often given to the researcher: the very word *data *means things given.
+
+### Meta-Analysis Instrumental Variable Estimator (MAIVE)
+
+**We regress the squared reported standard errors on the inverse sample size and plug the fitted values instead of the variance** to the right-hand side of the aforementioned equation. Thence we obtain the baseline MAIVE estimator. For the baseline MAIVE we choose the instrumented version of PEESE without additional inverse-variance weights because it works well in simulations. The version with additional adjusted weights (again, using fitted values instead of reported precision) often performs similarly but is more complex, so we prefer the former, parsimonious solution. In principle, any funnel-based technique (and the funnel plot itself) can be adjusted by the procedure described above: just replace the standard error with the square root of the fitted values. The adjustment helps the fixed-effect, WAAP, and endogenous kink model to typically defeat both the simple unweighted mean and selection models in the presence of spurious precision. MAIVE can be easily applied using our *maive *package in R.
+
+Table 2 shows the variants of individual estimators we consider in simulations. We always start with the unadjusted, plain-vanilla variant. Where easily possible, we consider the adjustment of weights and identification devices separately. So, for PET-PEESE and EK we have 5 different flavors. Note that the **separation is not straightforward for selection models**, and we do not pursue it here. This is one of many low-hanging fruits (thesis topics?) that grow from the spurious precision project and await reaping in future research; we discuss more at the end of this column.
+
+In Figure 2 below we report one set of simulation results: the case of the *p*-hacking scenario with a positive underlying effect size. In this scenario the authors of primary studies run regressions with two variables on the right-hand side and are interested in the slope coefficient on the first variable. Both variables belong to the correctly specified regression model. A meta-analyst collects the slope coefficients estimated for the first variable (e.g., treatment); no one is interested in the second variable (control). The vertical axis in Figure 2 measures the bias of meta-analysis estimators relative to the true value of the slope coefficient, the true treatment effect (*α1* = 1). The horizontal axis measures the correlation between the regression variable of interest and a control variable that should be included—but can be replaced by some researchers with another, less relevant control, **a practice that affects both reported estimates and their standard errors**.
+
+The higher the correlation, the more potential for *p*-hacking via the replacement of the control variable. If there is no correlation, removing or replacing the control won't systematically affect the main estimated parameter. With a positive correlation and a positive underlying value of the second slope coefficient, replacing the control variable with a less relevant proxy creates an upwards omitted-variable bias. Importantly for our purposes, a **higher correlation increases selection on standard errors more than proportionally compared to selection on estimates.** With a higher correlation and thus more *p*-hacking and also more relative selection on standard errors, the bias of standard meta-analysis estimators increases. Note that even a large correlation still corresponds to a relatively small ratio of selection on standard errors (spurious precision, Taylor's law) relative to selection on estimates (Lombard effect). In [the paper](http://meta-analysis.cz/maive/maive.pdf) we compute and tabulate this correspondence for different values of the true effect.
+
+### Simple mean beats complex models
+
+Eventually, the bias of the classical, unadjusted techniques gets even larger than the bias of the simple unweighted mean. That is, when there is enough spuriousness, corrections for publication bias do more harm than good. MAIVE corrects most of the spuriousness bias (see panels B-G in Figure 2 and compare panel A, classical estimators, to panel H, MAIVE versions of these estimators), and the MAIVE versions with adjusted or omitted weights work similarly well. MAIVE performs comparably to conventional estimators if spurious precision is negligible, and dominates unadjusted estimators if spuriousness is non-negligible (as we show in the paper, about 1:10 of selection on standard errors to selection on estimates). In [the paper](http://meta-analysis.cz/maive/maive.pdf) we report the results of many more simulation scenarios, both cheating and *p*-hacking, for bias, MSE, and coverage rates—with comparable results in qualitative terms. **Even a modest dose of spurious precision makes inverse-variance weighting (explicit or implicit) unreliable and warrants a MAIVE treatment.**
+
+Why, instead of instrumenting, don't we simply** replace variance with inverse sample size**? [[36,55–57](https://www.maer-net.org/post/maive#viewer-2137l)] While the replacement would also address spurious precision, the instrumental approach has many advantages, as discussed in Section 3 of [the paper.](http://meta-analysis.cz/maive/maive.pdf) One advantage is flexibility: the instrumental approach can incorporate other aspects of study design, besides sample size, that affect standard errors. Sample size rarely forms a perfect proxy for precision, and MAIVE can be extended by adding instruments to improve the fit. Moreover, the instrumental approach remains statistically valid even if, for some reason, the correlation between the reported variance and the inverse sample size is small.
+
+### Current methods adjusted to spuriousness
+
+We don't argue that spurious precision is common. We argue that it can plausibly arise in observational research. Even in experimental settings, randomization can fail, [[58](https://www.maer-net.org/post/maive#viewer-2137l)] and authors often use regressions to control for pre-treatment covariates or make other adjustments [[59](https://www.maer-net.org/post/maive#viewer-2137l)] that can yield spurious precision. When it arises, a small dose can render the simple mean more reliable than sophisticated correction techniques. The Meta-Analysis Instrumental Variable Estimator (MAIVE) solves the problem by using inverse sample size as an instrument for reported variance. That is, we regress the reported squared standard errors on the inverse of the number of observations used in the primary study. The fitted values from this regression are then used instead of reported variance in the PEESE meta-regression. Standard weighted means, funnel plots, and funnel-based methods can be adjusted similarly to make them robust to spurious precision. **The entire meta-analysis toolkit can be salvaged with this modification.**
+
+The instrumental approach has seven benefits over using sample size as a proxy for precision, as noted, and we explain them in [the paper](http://meta-analysis.cz/maive/maive.pdf)[.](https://www.maer-net.org/post/63db74a33637bc74bd7ab5dd/edit#_bookmark4) There are at least two costs as well, both compared to the proxy approach and the classical one that relies on reported precision. First, MAIVE is more complex since it involves an additional regression and computation of fitted values and valid confidence intervals. But the instrumental approach is readily available in most statistical programs. **We create the *****maive *****package for R, which makes estimation easy for meta-analysts unfamiliar with instrumental variables.** Second, the additional regression makes MAIVE noisier compared to conventional techniques. When a meta-analyst is sure there can be absolutely no spurious precision in her data, using reported precision without instruments will yield unbiased and more efficient estimates. The lack of spurious precision can be tested approximately by employing the Hausman specification test: [[60](https://www.maer-net.org/post/maive#viewer-2137l)] if the coefficients estimated in MAIVE are far from those of an unadjusted PEESE, spurious precision is likely an issue.
+
+### Using MAIVE in practice
+
+A discussion is in order regarding the application of MAIVE—pronounced, by the way, as the Irish name Maeve. The instrument is the overall sample size, not degrees of freedom, because the latter depends on clustering units. **We prefer the MAIVE version of PEESE without weights** (after testing with unweighted MAIVE-PET whether the true effect is nonzero). This parsimonious specification intuitively fits both panels of Figure 1. The *maive *package allows for optional adjusted weights. Researchers may choose a MAIVE version of another estimator, such as endogenous kink. The package also runs the Hausman test, a rough indicator of spuriousness. Because PEESE is heteroskedastic by definition and we prefer not to use inverse-variance weights, the package produces heteroskedasticity-robust standard errors by default. When some studies report multiple estimates, standard errors in MAIVE—and any meta-analysis estimator—**should be clustered at the study level,** again a default option. With fewer than 30 studies we recommend wild bootstrap. [[21](https://www.maer-net.org/post/maive#viewer-2137l)] It's a good idea to include study-level dummies (econometric fixed effects) to filter out study-specific idiosyncrasies related to unobserved heterogeneity. The package also reports a robust F-statistic of the first-stage regression. If the F-statistic is below 10, the instrument is weak and MAIVE results should be treated with caution. Researchers may want to use confidence intervals robust to weak instruments.
+
+The reader will object that our simulation is unfair to correction methods. **The methods were designed to counter publication bias; we simulate *****p*****-hacking**. Individual estimates and standard errors get biased, which is why selection models don't work well here—though they don't assume, as funnel methods assume, that selection works only on estimates (the Lombard effect discussed earlier). The distinction between publication bias and *p*-hacking is clear in theory, but in practice both are often observationally equivalent to the meta-analyst. (But *p*-hacking likely predominates. [[61](https://www.maer-net.org/post/maive#viewer-2137l)]) As long as we believe our *p*-hacking environment is broadly realistic, we need a technique that corrects the resulting bias. MAIVE is the only such technique. One can design *p*-hacking scenarios in which misspecifications make it almost impossible for meta-analysis methods to uncover the true mean. [[58,62](https://www.maer-net.org/post/maive#viewer-2137l)] If that is a realistic description of observational research, unconditional meta-analysis means are meaningless. [[63](https://www.maer-net.org/post/maive#viewer-2137l)] **MAIVE can be extended to allow for observed heterogeneity** and deliver context-specific means via incorporation into [Bayesian model averaging meta-regression](https://www.maer-net.org/post/model-averaging) approaches addressing model uncertainty. [[42–46](https://www.maer-net.org/post/maive#viewer-2137l)]
+
+### Low-hanging fruit for future research
+
+We leave many questions open regarding spurious precision. How common is it in practice? How does measurement error influence the relative performance of MAIVE? What happens when method heterogeneity explicitly affects both estimates and their precision? Does spurious precision help explain why meta-analyses often exaggerate the true effect compared to multi-lab pre-registered replications? [[64–66](https://www.maer-net.org/post/maive#viewer-2137l)] **How to correctly adjust selection models for spuriousness?** The last is perhaps the most important question for future research because many meta-analysts prefer selection models over funnel-based techniques. The adjustment of selection models isn't straightforward since here precision has two intertwined roles: identification and weighting. For identification, we need the reported, nominal precision, which determines statistical significance. But for weights we need the underlying, true precision. The maximum likelihood approach has to be modified to allow a different measure of precision for each role.
+
+### Bottom line
+
+Spurious precision, while plausibly destructive, is surmounted by adjusting funnel-based methods.
+
+### References
+
+- Gurevitch J, Koricheva J, Nakagawa S, Stewart G. Meta-analysis and the science of research synthesis. *Nature *2018; 555: 175–182.
+- Borenstein M, Hedges L, Higgins J, Rothstein H. A basic introduction to fixed-effect and random-effects models for meta-analysis. *Research Synthesis Methods *2010; 1(2): 97–111.
+- Stanley TD, Doucouliagos H. Neither fixed nor random: weighted least squares meta-analysis. *Statistics in Medicine *2015; 34(13): 2116-2127.
+- Egger M, Smith GD, Schneider M, Minder C. Bias in meta-analysis detected by a simple, graphical test. *British Medical Journal *1997; 315(7109): 629–634.
+- Duval S, Tweedie R. Trim and fill: A simple funnel-plot–based method of testing and adjusting for publication bias in meta-analysis. *Biometrics *2000; 56(2): 455–463.
+- Stanley TD. Meta-Regression Methods for Detecting and Estimating Empirical Effects in the Presence of Publication Selection. *Oxford Bulletin of Economics and Statistics *2008; 70(1): 103–127.
+- Stanley TD, Jarrell SB, Doucouliagos H. Could It Be Better to Discard 90% of the Data? A Statistical Paradox. *The American Statistician *2010; 64(1): 70–77.
+- Stanley TD, Doucouliagos H. *Meta-regression analysis in economics and business*. New York: Routledge. 2012.
+- Stanley TD, Doucouliagos H. Meta-regression approximations to reduce publication selection bias. *Research Synthesis Methods *2014; 5(1): 60–78.
+- Ioannidis JP, Stanley TD, Doucouliagos H. The Power of Bias in Economics Research. *The Economic Journal *2017; 127(605): F236–F265.
+- Bom PRD, Rachinger H. A kinked meta-regression model for publication bias correction. *Research Synthesis Methods *2019; 10(4): 497–514.
+- Furukawa C. Publication Bias under Aggregation Frictions: Theory, Evidence, and a New Correction Method. *MIT *2019; working paper.
+- Hedges L. Estimation of effect size under nonrandom sampling: The effect of censoring studies yielding statistically insignificant mean differences. *Journal of Educational Statistics *1984; 9: 61–85.
+- Iyengar S, Greenhouse JB. Selection Models and the File Drawer Problem. *Statistical Science *1988; 3(1): 109–117.
+- Hedges LV. Modeling Publication Selection Effects in Meta-Analysis. *Statistical Science*1992; 72(2): 246–255.
+- Vevea J, Hedges LV. A general linear model for estimating effect size in the presence of publication bias. *Psychometrika *1995; 60(3): 419–435.
+- Andrews I, Kasy M. Identification of and correction for publication bias. *American Economic Review *2019; 109(8): 2766–2794.
+- Aert vRC, Assen vM. Correcting for publication bias in a meta-analysis with the p-uniform* method. *Tilburg University & Utrecht University *2021; working paper.
+- Abadie A, Athey S, Imbens GW, Wooldridge JM. When Should You Adjust Standard Errors for Clustering? *The Quarterly Journal of Economics *2022; 138(1): 1–35.
+- Cameron AC, Miller DL. A practitioner’s guide to cluster-robust inference. *Journal of Human Resources *2015; 50(2): 317–372.
+- Roodman D, Nielsen MØ, MacKinnon JG, Webb MD. Fast and Wild: Bootstrap Inference in Stata Using Boottest. *The Stata Journal *2019; 19(1): 4–60.
+- White H. A Heteroskedasticity-Consistent Covariance Matrix Estimator and a Direct Test for Heteroskedasticity. *Econometrica *1980; 48(4): 817–838.
+- Bom PRD, Ligthart JE. What Have We Learned from Three Decades of Research on the Productivity of Public Capital? *Journal of Economic Surveys *2014; 28(5): 889–916.
+- Askarov Z, Doucouliagos A, Doucouliagos H, Stanley TD. The Significance of Data-Sharing Policy. *Journal of the European Economic Association *2023; forthcoming.
+- Lane H, Tranel B. The Lombard Sign and the Role of Hearing in Speech. *Journal of Speech and Hearing Research *1971; 14(4): 677–709.
+- McCloskey DN, Ziliak ST. What quantitative methods should we teach to graduate students? A comment on Swann’s 'Is precise econometrics an illusion'? *The Journal of Economic Education *2019; 50(4): 356–361.
+- Hedges LV. A random effects model for effect sizes. *Psychological Bulletin *1983; 93(2): 388–395.
+- Hedges LV, Olkin I. Statistical methods* for meta-analysis*. Orlando, FL: Academic Press. 1985.
+- Taylor LR. Aggregation, variance and the mean. *Nature *1961;189(4766): 732–735.
+- Stanley TD, Doucouliagos H. Neither fixed nor random: weighted least squares meta-regression. *Research Synthesis Methods *2017; 8(1): 19–42.
+- Havranek T, Stanley TD, Doucouliagos H, et al. Reporting Guidelines for Meta-Analysis in Economics. *Journal of Economic Surveys *2020; 34(3): 469–475.
+- Ugur M, Awaworyi Churchill S, Luong H. What do we know about R&D spillovers and productivity? Meta-analysis evidence on heterogeneity and statistical power. *Research Policy *2020; 49(1): 103866.
+- Xue X, Reed WR, Menclova A. Social capital and health: A meta-analysis. *Journal of Health Economics *2020; 72(C): 102317.
+- Neisser C. The Elasticity of Taxable Income: A Meta-Regression Analysis. *Economic Journal *2021; 131(640): 3365–3391.
+- Zigraiova D, Havranek T, Irsova Z, Novak J. How puzzling is the forward premium puzzle? A meta-analysis. *European Economic Review *2021; 134(C): 103714.
+- Nakagawa S, Lagisz M, Jennions MD, et al. Methods for testing publication bias in ecological and evolutionary meta-analyses. *Methods in Ecology and Evolution *2022; 13(1): 4–21.
+- Brown AL, Imai T, Vieider F, Camerer C. Meta-Analysis of Empirical Estimates of Loss-Aversion. *Journal of Economic Literature *2023; forthcoming.
+- Heimberger P. Do Higher Public Debt Levels Reduce Economic Growth? *Journal of Economic Surveys *2023; forthcoming.
+- Carter EC, Schonbrodt FD, Gervais WM, Hilgard J. Correcting for Bias in Psychology: A Comparison of Meta-Analytic Methods. *Advances in Methods and Practices in Psychological Science *2019; 2(2): 115-144.
+- Brodeur A, Cook N, Heyes A. Methods Matter: P-Hacking and Causal Inference in Economics. *American Economic Review *2020; 110(11): 3634–3660.
+- DellaVigna S, Linos E. RCTs to Scale: Comprehensive Evidence From Two Nudge Units. *Econometrica *2022; 90(1): 81–116.
+- Gechert S, Havranek T, Irsova Z, Kolcunova D. Measuring Capital-Labor Substitution: The Importance of Method Choices and Publication Bias. *Review of Economic Dynamics *2022; 45(C): 55–82.
+- Imai T, Rutter TA, Camerer CF. Meta-Analysis of Present-Bias Estimation Using Convex Time Budgets. *The Economic Journal *2021; 131(636): 1788–1814.
+- Gechert S, Heimberger P. Do corporate tax cuts boost economic growth? *European Economic Review *2022; 147(C): 104157.
+- Havranek T, Irsova Z, Laslopova L, Zeynalova O. Publication and Attenuation Biases in Measuring Skill Substitution. *The Review of Economics and Statistics *2023; forthcoming.
+- Matousek J, Havranek T, Irsova Z. Individual discount rates: A meta-analysis of experimental evidence. *Experimental Economics *2022; 25(1): 318–358.
+- Simonsohn U, Nelson LD, Simmons JP. P-curve: A key to the file-Drawer. *Journal of Experimental Psychology: General *2014; 143(2): 534–547.
+- Simonsohn U, Nelson LD, Simmons JP. p-Curve and Effect Size: Correcting for Publication Bias Using Only Significant Results. *Perspectives on Psychological Science *2014; 9(6): 666-681. PMID: 26186117.
+- Assen vM, Aert vRC, Wicherts JM. Meta-analysis using effect size distributions of only statistically significant studies. *Psychological Methods *2015; 20(3): 293–309.
+- Simonsohn U, Simmons JP, Nelson LD. Better p-curves: Making p-curve analysis more robust to errors, fraud, and ambitious p-hacking, a Reply to Ulrich and Miller (2015). *Journal of Experimental Psychology: General *2015; 144(6): 1146–1152.
+- Aert vRC, Assen vM. Bayesian evaluation of effect size after replicating an original study. *Plos ONE *2017; 12(4): e0175302.
+- Aert vRC, Assen vM. Examining reproducibility in psychology: A hybrid method for combining a statistically significant original study and a replication. *Behavior Research Methods *2018; 50: 1515–1539.
+- Stanley TD. Beyond Publication Bias. *Journal of Economic Surveys *2005; 19(3):309–345.
+- Kranz S, Putz P. Methods Matter: p-Hacking and Publication Bias in Causal Analysis in Economics: Comment. *American Economic Review *2022; 112(9): 3124–3136.
+- Sanchez-Meca J, Marın-Martınez F. Weighting by Inverse Variance or by Sample Size in Meta-Analysis: A Simulation Study. *Educational and Psychological Measurement *1998; 58(2): 211-220.
+- Deeks JJ, Macaskill P, Irwig L. The performance of tests of publication bias and other sample size effects in systematic reviews. *Journal of Clinical Epidemiology *2005; 58(9): 882–893.
+- Peters JL, Sutton AJ, Jones DR, Abrams KR, Rushton L. Comparison of Two Methods to Detect Publication Bias in Meta-analysis. *JAMA *2006; 295(6): 676-680.
+- Bruns SB, Ioannidis JP. p-Curve and p-Hacking in Observational Research. *PloS ONE *2016; 11(2): e0149144.
+- Freedman DA. On regression adjustments to experimental data. *Advances in Applied Mathematics *2008; 40(2): 180–193.
+- Hausman JA. Specification Tests in Econometrics. *Econometrica *1978;46(6): 1251–1271.
+- Brodeur A, Carrell S, Figlio D, Lusher L. Unpacking p-hacking and publication bias. *American Economic Review *2023; forthcoming.
+- Bruns SB. Meta-Regression Models and Observational Research. *Oxford Bulletin of Economics and Statistics *2017; 79(5): 637–653.
+- Simonsohn U, Simmons J, Nelson LD. Above averaging in literature reviews. *Nature Reviews Psychology *2022; 1: 551–552.
+- Kvarven A, Stromland E, Johannesson M. Comparing meta-analyses and preregistered multiple-laboratory replication projects. *Nature Human Behavior *2020; 4: 423–434.
+- Lewis M, Mathur MB, VanderWeele TJ, Frank MC. The puzzling relationship between multi-laboratory replications and meta-analyses of the published literature. *Royal Society Open Science *2022; 9(2): 211499.
+- Stanley TD, Doucouliagos H, Ioannidis JPA. Retrospective median power, false positive meta-analysis and large-scale replication. *Research Synthesis Methods *2022; 13(1): 88-108.
+- Putz P, Bruns SB. The (Non-)Signi cance of Reporting Errors in Economics: Evidence from Three Top Journals. *Journal of Economic Surveys* 2021; 35(1): 348-373.
+
+---
+
 ## How financial incentives affect performance
 
 *VoxEU / CEPR, 13. února 2023. Tomáš Havránek, Zuzana Irsová.*
@@ -2612,6 +2804,18 @@ Buďme nároční. Chtějme po našich poslancích a senátorech novelu Zákona 
 
 ---
 
+## Evropa odchází od rozumu k ideologii. Kvůli sociálním sítím, říká ekonom
+
+*iDNES.cz, 28. října 2022. Tomáš Havránek.*
+
+Zdroj: https://www.idnes.cz/ekonomika/domaci/tomas-havranek-ekonomika-green-deal-energetika-plyn-eu-inflace-krize.A221013_162405_eko-zahranicni_mejt
+
+**V jakém stavu se dnes nachází česká ekonomika?**
+
+Jsme v nejhorší situaci, v jaké jsme se kdy jako samostatná Česká republika ocitli. Zároveň to není klasická ekonomická krize, jež by měla trvat delší dobu. Útlum je vyvolán převážně vysokými cenami energií. Globálně se ale nabídka energií nesnížila a jednou se ceny elektřiny i plynu vrátí na původní čísla. Může to ovšem trvat několik let. Problém je dočasně danou situací na Východě. Ta se ani vyřešit nemusí, stačí mít hotové terminály pro dovoz zkapalněného plynu odjinud.
+
+---
+
 ## Zrušme inflaci. Je to jen naše volba
 
 *Forbes, 16. září 2022. Tomáš Havránek.*
@@ -2645,6 +2849,18 @@ Trvalé zdražení je horší než krátká recese, díky které bychom se infla
 Inflace není přírodní katastrofa, kterou musíme pasivně trpět podobně jako záplavy nebo zemětřesení. Je to naše volba, inflací můžeme letos trpět naposledy. Stačí přesvědčit většinu poslanců nebo guvernéra národní banky.
 
 Profesor ekonomie na Univerzitě Karlově, výzkumník v Centru analýz hospodářské politiky (Londýn) a Centru inovací meta-výzkumu (Stanford). Exporadce bankovní rady, tehdejšího viceguvernéra i nynějšího guvernéra České národní banky, kde pracoval 10 let. Zahraniční vědci a mezinárodní instituce jeho výzkum používají nejčastěji z českých ekonomů. V roce 2020 působil jako historicky první zástupce ČR za ekonomii a finance v hodnocení Evropské výzkumné rady.
+
+---
+
+## Banky si speciální daň zaslouží, rýžují peníze a nemusí se ani snažit
+
+*Hospodářské noviny, 31. srpna 2022. Tomáš Havránek.*
+
+Zdroj: https://archiv.hn.cz/c1-67107890-banky-si-specialni-dan-zaslouzi-ryzuji-penize-a-nemusi-se-ani-snazit-rika-ekonom-havranek
+
+Poslední týdny se v českých finančních a ekonomických kruzích vedou nejméně dvě ostré diskuse. První se týká zásadních změn, které provedla Česká národní banka ve svém modelu, jímž předvídá ekonomický vývoj. Mezi českými ekonomy proto panuje znepokojení nad tím, jak vážně bankovní rada boj s inflací ve skutečnosti myslí.
+
+„Představená predikce až moc okatě působí, že je nakreslená tak, jak si to nová bankovní rada přála. Bankovní rada si evidentně myslí, že model nefunguje, tak by mi přišlo férovější to na rovinu přiznat a dočasně ho odložit stranou," říká v rozhovoru pro HN ekonom Tomáš Havránek, jenž v ČNB působil deset let. Rozhodnutí nezvýšit sazby ale přesto obhajuje.
 
 ---
 
@@ -3839,6 +4055,20 @@ Každopádně doufejme, že ČNB bude pokračovat směrem k současné švýcars
 
 ---
 
+## Bojím se, že papírové peníze v Česku skončí do pěti let, říká ekonom
+
+*iDNES.cz, 18. dubna 2021. Tomáš Havránek.*
+
+Zdroj: https://www.idnes.cz/ekonomika/domaci/rozhovor-tomas-havranek-ekonom-cnb-univerzita-karlova.A210415_125459_ekonomika_rie
+
+**Jak často používáte papírové bankovky?**
+
+Osobně papírové bankovky a mince nepoužívám, pokud obchodník přijímá karty. Platím bezkontaktně mobilem přes Google Pay. Je to pro mě jednodušší a rychlejší, nemusím navíc vybírat hotovost z bankomatu. V době covidové jsem se ale paradoxně k bankovkám vrátil, protože dovezené obědy většinou nejde zaplatit kartou. A tomu rozumím a respektuji, že pro menší restaurace je platba v hotovosti snazší. Bankovky a mince taky používáme s našimi čtyřmi dětmi, aby se naučily základy finanční gramotnosti a znaly hodnotu peněz. To nejde dělat s kartou nebo mobilem, děti musí mít možnost si na ty peníze sáhnout.
+
+> Pokud bychom v době katastrofy spoléhali jen na elektronické peníze, mohlo by se stát, že si nic nekoupíme. Společnost bez peněz by se zhroutila.
+
+---
+
 ## Přežijí papírové peníze pandemii?
 
 *Hospodářské noviny, 6. dubna 2021. Tomáš Havránek.*
@@ -4185,6 +4415,20 @@ Dočkáme se tedy povinného očkování proti chřipce a zákazu kouření? Sp�
 
 ---
 
+## Stromy, to je ekonomická odpověď na sucho
+
+*Hospodářské noviny, 5. května 2020. Tomáš Havránek.*
+
+Zdroj: https://archiv.ihned.cz/c1-66758770-stromy-ekonomicka-odpoved-na-sucho
+
+Ekonomové bývají často kritizováni, že se málo zapojují do snahy o zmírnění klimatické změny, která zřejmě stojí i za současným extrémním suchem. A trochu právem: například nejcitovanější vědecký časopis v ekonomii, Quarterly Journal of Economics, nikdy nepublikoval článek na toto téma.
+
+Nicméně za ekonomické modely klimatické změny už byla dokonce udělena Nobelova cena, a to v roce 2018 Williamu Nordhausovi. A právě nobelovská přednáška prof. Nordhause vystihuje klasické dilema ekonomů: na jednu stranu vnímají urgenci změn klimatu, na druhou stranu musí poměřovat výnosy a náklady, takže nehledají řešení „za každou cenu".
+
+Existuje ale nástroj, kterému zatleská i ekonom, protože je účinný, levný a má řadu vedlejších pozitivních účinků: stromy.
+
+---
+
 ## Konec Cobbovy-Douglasovy produkční funkce?
 
 *ČNB cnBlog, 30. dubna 2020. Tomáš Havránek.*
@@ -4261,6 +4505,37 @@ Z dětství si pamatuji smrtelnou nehodu kluka na kole u Prokopa. Když tam jdu 
 
 ---
 
+## Revision of Reporting Guidelines
+
+*MAER-Net, 11. listopadu 2019. Tomáš Havránek.*
+
+Zdroj: https://www.maer-net.org/post/revision-of-reporting-guidelines
+
+Dear fellow meta-analysts:
+
+It has been 7 years since we drafted the current [reporting guidelines](https://onlinelibrary.wiley.com/doi/full/10.1111/joes.12008). I believe the time is ripe for updating them – and based on our debate at the MAER-Net Open Forum in Greenwich, I think at least some of you share that belief. Let me kick off a discussion on the shape of the possible revision.
+
+The intention is not to create a list of rules and then cast them in stone. Rather, the guidelines should, apart from defining the minimum standard for conducting a meta-analysis in economics (well covered by the current guidelines), offer a set of practical recommendations. These recommendations may change again in a couple of year as our tools evolve.
+
+My motivation for proposing the update is that since I started to serve as an associate editor at the Journal of Economic Surveys, I’ve handled quite a few meta-analyses with basic econometric and interpretation errors, studies that do not enhance the reputation of meta-analysis in economics. I find myself providing similar feedback all over again (and the same, I assume, goes for Tom and Chris at the JoES and many of you who write referee reports), so I believe a concrete set of recommendations published in the JoES will help.
+
+Below I offer 12 subjective recommendations that I miss in the current guidelines. You may disagree about some points or may want to add others. We will prepare the revision of the guidelines (if any) based on the discussion that will follow. Thank you for contributing!
+
+- **Weights**. If the meta-analyst doesn't use inverse-variance weights, she or he should explain why. The requirement is in line with the recent [review paper on meta-analysis in Nature](https://www.nature.com/articles/nature25753?sf184289833=1): *“Meta-analyses that are not weighted by inverse variances are common and often poorly justified.”*
+- **Outliers**. The meta-analyst is encouraged to specify how outliers, both in the estimated effects and standard errors, are treated: whether all observations are included, or which rule was used to omit outlying observations (for example, Hadi or winsorizing and the respective thresholds).
+- **Reconstructed standard errors.** If standard errors are not directly reported in some primary studies, the meta-analyst should state how the standard errors were obtained (for example, using the delta method with the assumption of zero covariance). A robustness check is encouraged that excludes observations with reconstructed standard errors.
+- **Study-level dummies**. When using meta-regression analysis to investigate the extent of publication bias, the meta-analyst is encouraged to include a robustness check with study-level dummies (fixed effects in the econometric sense) and thus control for unobserved characteristics of individual studies. Note that such specification only captures within-study bias (p-hacking).
+- **Random effects**. Study-level random effects in economics meta-analyses can be correlated with publication bias or other aspects of studies. The meta-analyst should exercise caution when adding random effects to multiple MRA, because doing so likely violates the exogeneity condition.
+- **Clustering or bootstrapping**. Standard errors in meta-regression analysis should be clustered or bootstrapped. [Bootstrapping ](https://ideas.repec.org/c/boc/bocode/s458121.html)is the only viable option when the number of studies is small.
+- **General-to-specific**. Instead of sequential t-tests, in multiple MRA it is recommended to use the more holistic general-to-specific approach due to [Hendry and colleagues](https://ideas.repec.org/p/fip/fedgif/838.html). Alternatively, the meta-analyst may want to employ Bayesian or frequentist model averaging to address [model uncertainty](https://www.maer-net.org/post/model-averaging).
+- **Sensitivity of model averaging**. If the meta-analyst uses Bayesian or frequentist model averaging, she or he should report robustness checks that show how the results depend on the selected priors (in the Bayesian case) or the selected weights (Mallows or other; in the frequentist case). The procedure employed to simplify model space (Markov Chain Monte Carlo or orthogonalization) should be mentioned.
+- **Collinearity**. The meta-analyst is encouraged to report collinearity statistics for multiple MRA, for example the correlation matrix or variance-inflation factors. Note that collinearity increases when inverse-variance weights are used.
+- **Robustness checks**. The meta-analyst should report robustness checks to the baseline test of publication bias and the underlying effect. Note that different estimators have different performance in different environments (as shown by [Carter et al.](https://journals.sagepub.com/doi/abs/10.1177/2515245919847196?journalCode=ampa)). Choose several robustness checks, for example: [PET-PEESE](https://onlinelibrary.wiley.com/doi/abs/10.1002/jrsm.1095), [WAAP](https://onlinelibrary.wiley.com/doi/abs/10.1111/ecoj.12461), [Bom & Rachinger](https://onlinelibrary.wiley.com/doi/abs/10.1002/jrsm.1352), [Furukawa](https://economics.mit.edu/files/12424), [Hedges ](https://projecteuclid.org/euclid.ss/1177011364)(and variants thereof), [Andrews & Kasy](https://www.aeaweb.org/articles?id=10.1257/aer.20180310), [p-curve](https://papers.ssrn.com/sol3/papers.cfm?abstract_id=2377290), [p-uniform](https://osf.io/preprints/metaarxiv/zqjr9/).
+- **Data**. The meta-analyst is encouraged to provide the data to the editor and referees so that they can check their structure. This can be done either through the journal's submission system or (preferably) publicly through the author's website.
+- **Economic significance**. The meta-analyst should discuss the economic significance of results. For example, publication bias or the underlying effect can be significant statistically, but not material in practice. If partial correlation coefficients are used, [Doucouliagos's guidelines](https://ideas.repec.org/p/dkn/econwp/eco_2011_5.html) for the practical strength of the effect should be consulted.
+
+---
+
 ## Dálniční přivaděč kolem zámku a školy
 
 *Lilie, listopad 2019. Tomáš Havránek.*
@@ -4296,6 +4571,78 @@ V Litomyšli se věci domlouvají u piva, což je milé a většinou funguje dob
 Zdroj: https://www.litomysl.cz/soubor/1570011182445_lilie_2019_10.pdf
 
 Děkuji za to, jak skvěle funguje litomyšlská mobilní aplikace pro podávání námětů. Stačí vyfotit dané místo, napsat krátký podnět a vše je za minutu odesláno i se zaznamenanou lokací. Podobnou aplikaci má i Praha, kde však podněty z mé zkušenosti ve většině případů nikdo nečte. V Litomyšli jsem dával dva podněty na snížení obrubníků u chodníku, aby na něj bylo možné vjet s kočárkem, a jeden podnět na zřízení přechodu pro chodce u školky. Ve všech případech došlo k realizaci během několika týdnů, což jsem vůbec nečekal. Děkuji všem, kteří se na této aplikaci a vyřizování podnětů podílí. Moc děkuji.
+
+---
+
+## Death to the Cobb-Douglas Production Function!
+
+*MAER-Net, 25. září 2019. Sebastian Gechert, Tomáš Havránek, Zuzana Iršová, Dominika Kolcunová.*
+
+Zdroj: https://www.maer-net.org/post/death-to-the-cobb-douglas-production-function
+
+*A key parameter in economics is the elasticity of substitution between capital and labor, but empirical estimates vary. This column takes stock of the literature. Among 3,186 estimates produced by 121 studies, the mean elasticity is 0.9, not far from the Cobb-Douglas assumption of 1. But the mean is biased by 3 factors: publication selection, use of aggregated data, and omission of the first-order condition for capital. The mean corrected for these biases is 0.3. The weight of evidence accumulated in the empirical literature thus emphatically rejects the Cobb-Douglas specification.*
+
+The elasticity of substitution between capital and labor is central to a host of economic problems. Our understanding of long-run growth depends on the value of the elasticity (Solow, 1956). Klump and de La Grandeville (2000) suggest that a larger elasticity in a country results in higher per capita income at any stage of development. Turnovsky (2002) argues that a smaller elasticity leads to faster convergence. The explanation for the decline of the labor share in income during the recent decades that was put forward by Piketty (2014) and Karabarbounis and Neiman (2013) holds only when the elasticity surpasses one. Cantore et al. (2014) show how the effect of technology shocks on hours worked is sensitive to the elasticity. Nekarda and Ramey (2013) argue that the countercyclicality of the price markup over marginal cost also depends on the elasticity of substitution. In addition, the elasticity represents an important parameter in analyzing the effects of fiscal policies, including the effect of corporate taxation on capital formation, and in determining optimal taxation of capital (Chirinko, 2002).
+
+**Figure 1**: The elasticity of substitution matters for monetary policy
+
+*Note: The figure shows simulated impulse responses of inflation to a monetary policy shock. We use the SIGMA model of Erceg et al. (2008) developed for the Federal Reserve Board and vary the value of the capital-labor substitution elasticity while leaving other parameters at their original values. The model does not have a stable solution for the elasticity larger than one.*
+
+The size of the elasticity has practical consequences for monetary policy, as Figure 1 illustrates. For example, in the SIGMA model used by the Federal Reserve Board (Erceg et al., 2008), the effectiveness of interest rate changes in steering inflation doubles when one assumes the elasticity to equal 0.9 instead of 0.5, yielding wildly different policy implications. We choose the SIGMA model for the illustration because, as one of very few models employed by central banks, it actually allows for different values of the elasticity of substitution. Almost all models use the convenient simplification of the Cobb-Douglas production function, which implicitly assumes that the elasticity equals one. If the true elasticity is smaller, these models overstate the strength of monetary policy and should imply a more aggressive campaign of interest rate cuts in response to a recession.
+
+Empirical estimates of the elasticity vary widely both within and between studies (Figure 2). Solid references can be found for calibrating the elasticity anywhere between 0 and 1.5, which effectively means that the empirical literature does not discipline calibrations at all – despite decades of research on the value of the elasticity and the work of dozens of prominent economists.
+
+**Figure 2**: No consensus on the value of the elasticity
+
+**Publication bias**
+
+To take stock of the voluminous literature and provide concrete guidelines for the calibration of the elasticity, we conduct a meta-analysis (Gechert et al., 2019).[1] We collect 3,186 coefficients from 121 studies, which produce a mean estimate of 0.9. But we show that the picture is seriously distorted by publication bias. After correcting for the bias, the mean reported elasticity shrinks to 0.5. This correction alone implies halving the effectiveness of monetary policy in a structural model, as shown by Figure 1. Moreover, some data and method choices bias the estimated elasticity systematically. If one agrees that sector-level data dominate more aggregated country- or state-level data and that including information from the first-order condition for capital dominates ignoring it, the implied mean estimate further decreases to 0.3. Thus we recommend 0.3 for the calibration of the elasticity, consistent with burying the Cobb-Douglas production function.
+
+The finding of strong publication bias predominates in our results and is responsible for most of the reduction from 0.9 (the simple mean) to 0.3 (our recommended calibration). The bias arises when different estimates have a different probability of being reported depending on sign and statistical significance. The identification we use builds on the fact that almost all econometric techniques used to estimate the elasticity assume that the ratio of the estimate to its standard error has a symmetrical distribution, typically a *t*-distribution. So the estimates and standard errors should represent independent quantities. But if statistically significant positive estimates are preferentially selected for publication, large standard errors (given by noise in data or imprecision in estimation) become associated with large estimates.
+
+Because empirical economists command plenty of degrees of freedom, a large estimate of the elasticity can always emerge if the researcher looks for it long enough, and an upward bias in the literature arises. A useful analogy appears in McCloskey and Ziliak (2019), who liken publication bias to the Lombard effect in biology: speakers increase their effort in the presence of noise. Apart from linear techniques based on the Lombard effect, we employ recently developed methods by Ioannidis et al. (2017), Andrews and Kasy (2019), Bom and Rachinger (2019), and Furukawa (2019), which account for the potential nonlinearity between the standard error and selection effort.
+
+**Figure 3**: Publication bias in the literature
+
+Figure 3 provides a graphical illustration of the mechanism outlined in the previous paragraph. In the scatter plot the horizontal axis measures the magnitude of the estimated elasticities, and the vertical axis measures their precision. In the absence of publication bias, the scatter plot will form an inverted funnel: the most precise estimates will lie close to the true mean elasticity, imprecise estimates will be more dispersed, and both small and large imprecise estimates will appear with the same frequency. The figure shows the predicted funnel shape, still with plenty of heterogeneity at the top (see the paper for a detailed analysis of heterogeneity using both Bayesian and frequentist model averaging) – but also shows asymmetry. For the funnel to be symmetrical, and hence consistent with the absence of publication bias, we should observe many more reported negative and zero estimates. The finding of strong publication selection and the corrected mean effect around 0.5 is confirmed by all techniques we apply.
+
+**Concluding remarks**
+
+We are not the first to highlight the disconnect between the Cobb-Douglas specification commonly used in macroeconomic models and the empirical literature estimating the elasticity of substitution. Chirinko (2008) and Knoblach et al. (2019) provide useful surveys of portions of the literature, and both studies suggest that the Cobb-Douglas production function is not backed by the available evidence. We argue that after controlling for publication bias the case against Cobb-Douglas strengthens to the point where one must warn against the continued use of this convenient simplification. As we show in Figure 1, a structural model built to aid monetary policy is biased from the beginning if it uses an elasticity of one for capital-labor substitution. Computational convenience should yield to the stylized fact established by half a century of meticulous research: capital and labor are gross complements.
+
+**References**
+
+- Andrews, I. & M. Kasy (2019): “Identification of and Correction for Publication Bias.” Americal Economic Review 109(8): pp. 2766-2794.
+- Bom, P. R. D. & H. Rachinger (2019): “A Kinked Meta-Regression Model for Publication Bias Correction.” Research Synthesis Methods, forthcoming.
+- Cantore, C., M. Leon-Ledesma, P. McAdam, & A. Willman (2014): “Shocking Stuff: Technology, Hours, and Factor Substitution.” Journal of the European Economic Association 12(1): pp. 108-128.
+- Chirinko, R. S. (2002): “Corporate Taxation, Capital Formation, and the Substitution Elasticity between Labor and Capital.” National Tax Journal 55(2): pp. 339-355.
+- Chirinko, R. S. (2008): “σ: The Long and Short of it.” Journal of Macroeconomics 30(2): pp. 671 686.
+- Erceg, C. J., L. Guerrieri, & C. Gust (2008): “Trade Adjustment and the Composition of Trade.” Journal of Economic Dynamics and Control 32(8): pp. 2622-2650.
+- Furukawa, C. (2019): “Publication Bias under Aggregation Frictions: Theory, Evidence, and a New Correction Method.” [Unpublished paper](https://economics.mit.edu/files/12424), MIT.
+- Gechert, S., T. Havranek, Z. Irsova, & D. Kolcunova (2019): “Death to the Cobb-Douglas Production Function.” [FMM working paper 51](https://www.boeckler.de/pdf/p_fmm_wp_imk_51_2019.pdf), Hans-Böckler-Stiftung.
+- Ioannidis, J., T. Stanley, & H. Doucouliagos (2017): “The Power of Bias in Economics Research.” Economic Journal 127(605): F236-F265.
+- Karabarbounis, L. & B. Neiman (2013): “The Global Decline of the Labor Share.” Quarterly Journal of Economics 129(1): pp. 61-103.
+- Klump, R. & O. de La Grandville (2000): “Economic Growth and the Elasticity of Substitution: Two Theorems and Some Suggestions.” American Economic Review 90(1): pp. 282-291.
+- Knoblach, M., M. Rossler, & P. Zwerschke (2019): “The Elasticity of Substitution Between Capital and Labour in the US Economy: A Meta-Regression Analysis.” Oxford Bulletin of Economic and Statistics, forthcoming.
+- McCloskey, D. N. & S. T. Ziliak (2019): “What Quantitative Methods Should We Teach to Graduate Students? A Comment on Swann's ‘Is Precise Econometrics an Illusion?’” Journal of Economic Education, forthcoming.
+- Nekarda, C. J. & V. A. Ramey (2013): “The Cyclical Behavior of the Price-Cost Markup.” [NBER Working Paper](https://www.nber.org/papers/w19099) 19099.
+- Piketty, T. (2014): “Capital in the 21st Century.” Cambridge, MA: Harvard University Press.
+- Solow, R. M. (1956): “A Contribution to the Theory of Economic Growth.” Quarterly Journal of Economics 70(1): pp. 65-94.
+- Turnovsky, S. J. (2002): “Intertemporal and Intratemporal Substitution, and the Speed of Convergence in the Neoclassical Growth Model.” Journal of Economic Dynamics and Control 26(9-10): pp. 1765-1785.
+
+**Endnotes**
+
+[1] The full paper, together with data and codes, is available at [http://meta-analysis.cz/sigma](http://meta-analysis.cz/sigma).
+
+---
+
+## Jak přicházíme o sto miliard korun ročně
+
+*Hospodářské noviny, 11. září 2019. Tomáš Havránek.*
+
+Zdroj: https://archiv.ihned.cz/c1-66639220-jak-prichazime-o-sto-miliard-korun-rocne
+
+Za 100 miliard korun můžete pořídit 50 tisíc transplantací kostní dřeně, 208 tisíc ročních platů učitelů nebo 657 kilometrů nových dálnic. Anebo můžete říct, že ty peníze nechcete, což je případ České republiky.
 
 ---
 
@@ -4352,6 +4699,62 @@ Shrnuto: další silnici přes Lány nechceme, ale sjezd u Němčic potřebujeme
 Pozor, když nepostavíme sjezd u Němčic, budeme v Litomyšli muset stavět nové silnice. A to proto, abychom propojili sjezd z dálnice u Janova se silnicemi na Třebovou i Ústí a doprava přes centrum nerostla do neúnosných rozměrů. Koneckonců právě z toho důvodu máme v územním plánu novou asfaltku, která protne park na Černé hoře.
 
 Je to vážně lepší, než postavit rovnou sjezd, který nám teď všichni nabízí?
+
+---
+
+## Why Model Averaging Is Useful in Meta-Analysis
+
+*MAER-Net, 27. února 2019. Tomáš Havránek.*
+
+Zdroj: https://www.maer-net.org/post/model-averaging
+
+If you’ve ever run a regression with more than a handful of variables, you know the problem. It’s called **model uncertainty**: which variables should go into the baseline? One solution is to simply put all in one model, but doing so attenuates precision. Another approach is to get rid of the variables that are more difficult to interpret, but that’s not kosher either:
+
+> It is important to realize that this uncertainty is an inherent part of economic modelling, whether we acknowledge it or not. Putting on blinkers and narrowly focusing on a limited set of possible models implies that we may fail to capture important aspects of economic reality. ([Steel, 2019](https://warwick.ac.uk/fac/sci/statistics/staff/academic-research/steel/steel_homepage/techrep/modelaveraging_jel_final.pdf))
+
+A formal response to model uncertainty is **model averaging**. The idea is to run regression models with different combinations of variables, and then give these models weights based on how they fit the data and how parsimonious, and possibly well-specified, they are. I’ll write from an economist’s perspective (model averaging has its [roots ](https://link.springer.com/article/10.1057/jors.1969.103)in economics), but I hope this post will appeal to anyone who uses regression analysis: social scientists, medical scientists, ecologists, biologists, meta-analysts.
+
+## How it Works
+
+Suppose we have 5 explanatory variables. To do model averaging, we first estimate 2^5 = 32 regressions. Then we assign each model a weight and compute a **weighted average** over the 32 regressions. The weight increases with data fit, but decreases with model complexity (given the same fit, a regression with 4 variables will get more weight than a regression with 5 variables). So, think of adjusted R-squared as an intuitive weight for model averaging. It’s not an optimal weight, but you get the idea.
+
+Many methods of model averaging exist, and the technicalities may look intimidating. Luckily for us, the statistician Mark Steel has crafted a [**superb survey**](https://warwick.ac.uk/fac/sci/statistics/staff/academic-research/steel/steel_homepage/techrep/modelaveraging_jel_final.pdf)**,** which is now forthcoming in the Journal of Economic Literature. Mark’s paper has it all: it’s easily accessible to scientists from various fields, but also contains useful technical details. In this post I quote Mark’s paper liberally – I couldn’t put it better.
+
+## Key for Meta-Analysis
+
+Mark makes a strong case that model averaging should form an essential part of an empirical economist’s toolkit. If that holds for economics, it must hold double for **meta-regression **analysis (in any field), where model uncertainty [runs rampant](https://journals.sagepub.com/doi/10.1177/1740774508101279). In most meta-analysis contexts we can think of [dozens](http://meta-analysis.cz/excess_sensitivity/) of factors that may influence (or just be correlated with) the reported outcomes. Sometimes there’s the theory to guide us, but more often than not we are on our own.
+
+Our traditional response to model uncertainty is **model selection**: let’s choose the best model, either via sequential t-tests or sophisticated [general-to-specific](https://onlinelibrary.wiley.com/doi/full/10.1002/jae.615) modelling. But with 20 variables (a common number in economics meta-analyses), we already have more than a million, 2^20, models to choose from – so we’re virtually guaranteed to choose the wrong one. One can’t possibly run thorough specification checks for a million models. In addition, as Mark explains:
+
+> The most important common characteristic of model selection methods is that they choose a model and then conduct inference conditionally upon the assumption that this model actually generated the data. So these methods only deal with the uncertainty in a limited sense: they try to select the ‘best’ model, and their inference can only be relied upon if that model happens to be (a really good approximation to) the data generating process. In the much more likely case where the best model captures some aspects of reality, but there are other models that capture other aspects, model selection implies that our inference is almost always misleading, either in the sense of being systematically wrong or overly precise. ([Steel, 2019](https://warwick.ac.uk/fac/sci/statistics/staff/academic-research/steel/steel_homepage/techrep/modelaveraging_jel_final.pdf))
+
+Sure, that’s not to say we should bury the theory for good and just go all in for data mining. We always have some idea about the **structure of the underlying model**. We know that certain variables must play a role – so we can pin these to all regressions and only use model averaging to work over the ‘control’ variables (for which we have no theory, but still don’t want to ignore them). Roman Horvath, Zuzana Irsova, Marek Rusnak, and myself use this strategy in our 2015 [Journal of International Economics](http://meta-analysis.cz/substitution/) paper, among other applications.
+
+## But It’s All Bayesian, Right?
+
+The most common model averaging technique is **Bayesian model averaging** (BMA). Model averaging arises naturally as a response to model uncertainty in the Bayesian setting, but I suspect that most of us BMA-users are not convinced Bayesians. We are Bayesian opportunists. True, frequentist methods of model averaging [do exist](https://arxiv.org/abs/1802.03511) (Mark discusses them thoroughly), but BMA is more flexible and easier to compute.
+
+Why? With more than 30 variables, one would have to compute over a billion, 2^30, models. That would take you months, so you need to simplify the model space. Such simplification methods (and I won’t go to details here; read Mark’s paper if you’re interested) are readily available for BMA, but not for the frequentist alternatives – well, with some recent [exceptions](https://onlinelibrary.wiley.com/doi/abs/10.1002/jae.2288). Mark quotes a line by [Jonathan Wright](https://www.sciencedirect.com/science/article/pii/S0304407608001115), who is spot on:
+
+> One does not have to be a subjectivist Bayesian to believe in the usefulness of BMA, or of Bayesian shrinkage techniques more generally. A frequentist econometrician can interpret these methods as pragmatic devices that may be useful for out-of-sample forecasting in the face of model and parameter uncertainty. ([Wright, 2008](https://www.sciencedirect.com/science/article/pii/S0304407608001115))
+
+## Priors Matter
+
+A disclaimer is in order. If you decide to use BMA, note that different priors will give you different results. The natural baseline is to use **agnostic priors**: for example, that all coefficients are zero and that the weight of this prior is the same as the weight of one observation of data (so, [pretty small](https://cran.r-project.org/web/packages/BMS/vignettes/bms.pdf)). You must also specify the prior on model space. Again, the natural starting point is a prior in which all models have the same probability. In any case, robustness checks are crucial, and doing frequentist together with Bayesian model averaging in the same paper often yields the ultimate robustness check.
+
+Yes, [frequentist techniques](https://link.springer.com/article/10.1007/s11424-009-9198-y) do not require priors (not explicitly, anyway) – but you have to choose your assumptions concerning optimal weights. In my eyes, the challenge is essentially the same, but concealed. Mark stresses the importance of priors, but the same goes for assumptions in the frequentist setting:
+
+> For BMA, it is important to understand that the weights (based on posterior model probabilities) are typically quite sensitive to the prior assumptions, in contrast to the usually much more robust results for the model parameters given a specific model. In addition, this sensitivity does not vanish as the sample size grows. Thus, a good understanding of the effect of (seemingly arbitrary) prior choices is critical. ([Steel, 2019](https://warwick.ac.uk/fac/sci/statistics/staff/academic-research/steel/steel_homepage/techrep/modelaveraging_jel_final.pdf))
+
+## Model Averaging Is User-Friendly
+
+How difficult is to do model averaging in **your next meta-analysis**? Not difficult at all. You can use the packages described by Mark or the R code from [our website](http://meta-analysis.cz/) (you don’t have to know R syntax to apply these estimators; the code is self-contained). We have three recent papers in which we use both Bayesian and frequentist model averaging and for which we provide data and code: one in the [European Economic Review](http://meta-analysis.cz/habits/) (as far as we know, the first application of frequentist model averaging in meta-analysis), another in the [Energy Journal](http://meta-analysis.cz/dst/), and the third in the [Oxford Bulletin of Economics and Statistics](http://meta-analysis.cz/education/).
+
+## Anything Else?
+
+Not related to model averaging, but important news for the meta-analysis community: the **American Economic Review** has accepted the first regular [paper](https://maxkasy.github.io/home/files/papers/PublicationBias.pdf) ever that focuses on meta-analysis and publication bias. Congratulations to Isaiah Andrews and Maximilian Kasy! They also have an [app](https://maxkasy.github.io/home/metastudy/)[ ](https://maxkasy.github.io/home/metastudy/)for their method, so now you can do meta-analysis using your iPhone (or Xiaomi Mi, if you prefer). Another [superb new technique](https://github.com/Chishio318/stem-based_method) was developed by **Chishio Furukawa** from the MIT. It’s a clever, intuitive non-parametric estimator that in my experience works great, and I recommend you give it a try. In our new paper conditionally accepted by the [Review of Economic Dynamics](http://meta-analysis.cz/excess_sensitivity/) we employ these two techniques along with more traditional ones (including the ingenious and already classical [WAAP](https://onlinelibrary.wiley.com/doi/full/10.1111/ecoj.12461) by John Ioannidis, Tom Stanley, and Chris Doucouliagos), and all point to the same direction.
+
+By now it won’t surprise you that we do model averaging in that paper, too.
 
 ---
 
