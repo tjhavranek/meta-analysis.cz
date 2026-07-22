@@ -169,6 +169,13 @@ def fix_quotes(s):
 MONTHS_EN = ["January", "February", "March", "April", "May", "June",
              "July", "August", "September", "October", "November", "December"]
 
+# Slovak inflects like Czech, but the words differ: a Slovak page dated "18. prosince"
+# reads as an error to a Slovak reader.
+MONTHS_SK = ["januára", "februára", "marca", "apríla", "mája", "júna",
+             "júla", "augusta", "septembra", "októbra", "novembra", "decembra"]
+MONTHS_SK_NOM = ["január", "február", "marec", "apríl", "máj", "jún",
+                 "júl", "august", "september", "október", "november", "december"]
+
 
 def cs_date(iso, precision=None, lang="cs"):
     """Czech months are inflected: genitive with a day, nominative alone. English
@@ -177,6 +184,9 @@ def cs_date(iso, precision=None, lang="cs"):
     if lang == "en":
         return (f"{MONTHS_EN[d.month - 1]} {d.year}" if precision == "month"
                 else f"{d.day} {MONTHS_EN[d.month - 1]} {d.year}")
+    if lang == "sk":
+        return (f"{MONTHS_SK_NOM[d.month - 1]} {d.year}" if precision == "month"
+                else f"{d.day}. {MONTHS_SK[d.month - 1]} {d.year}")
     if precision == "month":
         return f"{MONTHS_NOM[d.month - 1]} {d.year}"
     return f"{d.day}. {MONTHS[d.month - 1]} {d.year}"
@@ -305,9 +315,10 @@ def parse(path):
 # --------------------------------------------------------------- templates ---
 
 def shell(title, desc, canonical, jsonld, body, active, extra_head="", lang="cs"):
-    # The chrome is Czech on every page, including the English ones. WCAG 3.1.2 wants
-    # those runs marked, or a screen reader reads them with English phonetics.
-    cs = ' lang="cs"' if lang == "en" else ""
+    # The chrome is Czech on every page, including the English and Slovak ones. WCAG
+    # 3.1.2 wants those runs marked, or a screen reader reads them with the wrong
+    # phonetics. Any non-Czech page needs the marking, not just the English ones.
+    cs = ' lang="cs"' if lang != "cs" else ""
     nav = "".join(
         f'<a href="{PATH}/{k}/"'
         f'{"" if k == "english" else cs}'

@@ -2,7 +2,7 @@
 
 > Publicistika Tomáše Havránka a Zuzany Havránkové: komentáře pro celostátní média, sloupky pro litomyšlskou Lilii a rozhovory. Texty jsou zde archivovány v plném znění s odkazem na původní vydání.
 
-Publicistika: 173 položek, 2016–2026. Plné znění každého textu je na uvedené adrese; zdrojový Markdown je v /komentare/src/.
+Publicistika: 175 položek, 2016–2026. Plné znění každého textu je na uvedené adrese; zdrojový Markdown je v /komentare/src/.
 
 ## Celostátní komentáře
 
@@ -139,6 +139,8 @@ Rozhovory pro česká média. U audio a video rozhovorů uvádíme pouze odkaz n
 - [„Za inflaci může prezident.“ Vlivný profesor popsal, odkud Babiš získá 200 miliard](https://meta-analysis.cz/komentare/iv-aktualne-spotlight/) — Aktuálně.cz, 18. června 2026
 - [Když screening odhalí cukrovku u dítěte](https://www.spreaker.com/episode/kdyz-screening-odhali-cukrovku-u-ditete-nema-smysl-se-vztekat-rika-tatinek-maleho-diabetika--70577203) — Diabetes Podcast, 11. března 2026 (audio, pouze odkaz)
 - [Co ukazují stovky studií o investování: akcie vycházejí nejlépe](https://meta-analysis.cz/komentare/gacr-akcie-vychazeji-nejlepe/) — Grantová agentura ČR, 9. ledna 2026
+- [„Slovensko zostane len liahňou talentov a vidiekom Prahy,“ hovorí najmladšia profesorka na Karlovej univerzite](https://meta-analysis.cz/komentare/zi-iv-startitup-liahen-talentov/) — Startitup.sk, 18. prosince 2025
+- [Je na čase přestat protežovat ženy, říká nejmladší profesorka Univerzity Karlovy](https://meta-analysis.cz/komentare/zi-iv-forbes-protezovat-zeny/) — Forbes, 4. října 2025
 - [Proč podle Zuzany Havránkové Česko kvalitou života překoná Kalifornii?](https://meta-analysis.cz/komentare/zi-iv-e15-kvalita-zivota/) — E15, 14. září 2025
 - [Nejmladší profesorka v historii Univerzity Karlovy vychovává s manželem čtyři děti. Důležitá je disciplína a lidé, na které je spoleh, říká](https://meta-analysis.cz/komentare/zi-iv-hn-vikend-nejmladsi-profesorka/) — Hospodářské noviny, 20. srpna 2025
 - [Ekonomka Havránková: „Nepodmíněný příjem je cesta k zombifikaci společnosti“](https://meta-analysis.cz/komentare/zi-iv-hrot-zombifikace/) — Hrot, 11. srpna 2025
