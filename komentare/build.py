@@ -243,18 +243,35 @@ def md_to_html(md):
             out.append(f"<h{lvl}>{_inline(m.group(2))}</h{lvl}>")
             i += 1
             continue
+        # Authors separate list items with a blank line ("loose list"), which every
+        # Markdown implementation treats as ONE list. Ending the list at the first blank
+        # line split them into a list per item — visibly wrong for numbered lists, which
+        # restarted at 1 on every item, and wrong for a screen reader on bullet lists too.
+        def _gather(is_item, strip_item):
+            items, j = [], i
+            while j < len(lines):
+                if is_item(lines[j]):
+                    items.append(f"<li>{_inline(strip_item(lines[j]))}</li>")
+                    j += 1
+                    continue
+                if lines[j].strip() == "":
+                    k = j
+                    while k < len(lines) and lines[k].strip() == "":
+                        k += 1
+                    if k < len(lines) and is_item(lines[k]):
+                        j = k
+                        continue
+                break
+            return items, j
+
         if line.lstrip().startswith(("- ", "* ")):
-            it = []
-            while i < len(lines) and lines[i].lstrip().startswith(("- ", "* ")):
-                it.append(f"<li>{_inline(lines[i].lstrip()[2:].strip())}</li>")
-                i += 1
+            it, i = _gather(lambda l: l.lstrip().startswith(("- ", "* ")),
+                            lambda l: l.lstrip()[2:].strip())
             out.append("<ul>\n" + "\n".join(it) + "\n</ul>")
             continue
         if re.match(r"^\s*\d+[.)]\s+", line):
-            it = []
-            while i < len(lines) and re.match(r"^\s*\d+[.)]\s+", lines[i]):
-                it.append(f'<li>{_inline(re.sub(r"^\s*\d+[.)]\s+", "", lines[i]).strip())}</li>')
-                i += 1
+            it, i = _gather(lambda l: bool(re.match(r"^\s*\d+[.)]\s+", l)),
+                            lambda l: re.sub(r"^\s*\d+[.)]\s+", "", l).strip())
             out.append("<ol>\n" + "\n".join(it) + "\n</ol>")
             continue
         if line.lstrip().startswith("> "):

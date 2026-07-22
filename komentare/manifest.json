@@ -47,8 +47,8 @@
   },
   "feed.xml": {
    "url": "https://meta-analysis.cz/komentare/feed.xml",
-   "bytes": 1190993,
-   "sha256": "32392ff43ac1a26d8972d04fd9f487dfb1c06040c03046f68d791b59a97ea59b"
+   "bytes": 1190356,
+   "sha256": "9e7459c5133a08dd74387b52e2f93221fa3ebead92a404d6e86eb9ffd0b16c3e"
   }
  },
  "generated_from": [
