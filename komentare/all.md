@@ -1631,8 +1631,6 @@ Máte na mysli individuální akcie, nebo spíš indexy?
 
 Určitě index. A nejlépe index na akcie co nejširšího zastoupení firem na světě, protože tím si de facto kupujeme podíl na technologickém pokroku. Tohle vám dlouhodobě vydělá opravdu hodně peněz, v průměru, když to očistíte o inflaci, určitě pět procent ročně. A to může mít zásadní vliv na naši fiskální politiku, aniž by to jakkoli ublížilo plnění cíle cenové stability. Zaplatilo by to důchodovou reformu. Jak je to napsané dnes, ČNB musí ze zákona nakonec převádět své výnosy do státního rozpočtu. Banka by měla do akcií investovat alespoň polovinu z devizových rezerv, nyní to je jen asi 20 procent. Ale chtěl bych je pochválit, že se konečně zbavili čínských dluhopisů. Takže nějaký posun tam je.
 
-Kupovat si podíly na zlatu, které přitom v budově není, je nesmysl. Zlato má pro centrální banky marketingovou hodnotu.
-
 Takže pokud by banka investovala 1,7 bilionu korun, ročně by mohla mít výnos kolem 100 miliard a stal by se z ní takový ten mohutný fond, jaké známé z Asie nebo z Norska.
 
 Ano. Vezměte si, jak Aleš Michl poslední rok zdůrazňuje, že důležité pro inflaci jsou finance státu a jejich kondice. Přitom ČNB má na státní finance zásadní vliv. Tím, že dlouhodobě odmítá rezervy pořádně investovat, připravuje státní rozpočet nejméně o těch 100, možná i 200 miliard ročně, aniž by tím cokoli získala. Z dlouhodobého pohledu veřejných financí je politika centrální banky ohledně rezerv minimálně stejně důležitá jako reformní balíčky vlády. Zase mě mrzí, jak málo diskuze se na tohle téma odehrává v ČNB, ale i mezi odbornou veřejností.
@@ -1726,8 +1724,6 @@ Zdroj: https://e-news.cz/rozhovory/tomas-havranek-inovace-overene-trhem-jsou-zak
 Rozhovor s Tomášem Havránkem, českým ekonomem, profesorem Univerzity Karlovy a bývalým poradcem viceguvernéra a bankovní rady České národní banky.
 
 Tomáš Havránek je ekonom, profesor Univerzity Karlovy a bývalý poradce viceguvernéra a bankovní rady České národní banky. Zakladatel iniciativy Zrušme inflaci. Působí rovněž jako výzkumník v londýnském Centre for Economic Policy Research a ve stanfordském Meta-Research Innovation Center. Zabývá se také rozvojem a aplikací metody meta-analýzy v ekonomii.
-
-„Dlouhodobě ceny nemovitostí rostou rychleji než ostatní ceny. Takže když je přidáte do indexu CPI ve větší váze, bude inflace dlouhodobě vyšší. Nemovitosti do inflace patří, protože indexy CPI mají správně měřit současné náklady očekávané celoživotní spotřeby, nikoli jen současné spotřeby. O tom psali Alchian a Klein, Goodhart a další profesoři,“ říká Tomáš Havránek
 
 Ekonomický růst je do velké míry podmíněn postojem společnosti k inovacím, nikoli jen mírou investic či kvalitou institucí. Co tedy konkrétně navrhujete?
 
@@ -3791,17 +3787,11 @@ Inflace strašlivě komplikuje dlouhodobé finanční plánování nám všem. J
 
 Zdroj: https://www.seznamzpravy.cz/clanek/vrsici-se-statni-dluh-ma-pet-reseni-ale-jen-jedno-je-dobre-rika-ekonom-167564
 
-Ekonom přednášející na Karlově univerzitě Tomáš Havránek rozebírá, jak by se mělo Ministerstvo financí v čele s Alenou Schilllerovou zachovat vůči rostoucímu státnímu dluhu..
-
-Za tři roky kabinet Andreje Babiše navýší státní dluh o bilion korun. Ekonom Tomáš Havránek z Karlovy univerzity navrhuje pět řešení, jak z krize ven. Jen jedno je dobré, asi však dojde na kombinaci těch čtyř špatných, tvrdí.
-
 Vláda Andreje Babiše během tří let zadluží Česko o bezprecedentní bilion korun. Pokud se na dynamice zadlužování nic nezmění, bude podle odhadů Národní rozpočtové rady do 50 let státní dluh na úrovni 300 procent HDP místo nynějších zhruba 35 procent. A tolik Česku nikdo nepůjčí.
 
 „My to do té doby musíme nějak vyřešit. My, nebo naše děti a vnoučata. Ale to už bude asi pozdě. Těch možných řešení je pět a jenom to poslední je dobré. Na to ale bude chybět odvaha,“ říká v rozhovoru pro SZ Byznys v zahraničí nejcitovanější český ekonom Tomáš Havránek, který přednáší na Karlově univerzitě.
 
 Řada zemí začíná experimentovat s digitálními měnami a vydávat peníze v digitální podobě. Je to podle vás dobrá cesta?
-
-Ověřené zprávy, e-maily i výhodné nabídky máte v aplikaci od Seznamu pod jednou střechou
 
 My jsme to řešili už v ČNB s Mojmírem Hamplem před mnoha lety, tehdy to bylo nové a sexy téma. Teď už je to malinko, řekněme, okoralé.
 
@@ -3818,8 +3808,6 @@ Takže vlastně jediný důvod, proč zavádět digitální měnu státní nebo 
 Čína s digitální měnou výrazně experimentuje. Ale experimentují s tím i ostatní státy, myslím, že některý ze severských států, které jsou v uvozovkách vyspělé ekonomiky?
 
 Ano, Švédsko. Už ale vidíte sám, že o té digitální měně třeba Švédové mluví možná už osm let, ale pořád se s tím nikam nepokročilo. Spíš je to ve fázi toho, že to bylo hrozně „cool“ kvůli bitcoinu, ale vlastně se mi zdá – nechci tady podsouvat něco kolegům ze Švédska – že opravdu praktická užitnost pro normální lidi u digitální měny není.
-
-bývalý poradce viceguvernéra ČNB Mojmíra Hampla a bývalý poradce člena bankovní rady Aleše Michla
 
 Jak vlastně vy hodnotíte fenomén kryptoměn, což je něco trochu jiného. To jsou decentralizované měny, kdy se fakticky obchází centrální banky a stát. Myslíte si, že mají kryptoměny šanci stát se digitálním zlatem, jak by její zastánci rádi viděli? Protože zlato je vždycky útočiště v dobách nejistých.
 

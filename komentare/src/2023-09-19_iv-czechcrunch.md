@@ -146,8 +146,6 @@ Máte na mysli individuální akcie, nebo spíš indexy?
 
 Určitě index. A nejlépe index na akcie co nejširšího zastoupení firem na světě, protože tím si de facto kupujeme podíl na technologickém pokroku. Tohle vám dlouhodobě vydělá opravdu hodně peněz, v průměru, když to očistíte o inflaci, určitě pět procent ročně. A to může mít zásadní vliv na naši fiskální politiku, aniž by to jakkoli ublížilo plnění cíle cenové stability. Zaplatilo by to důchodovou reformu. Jak je to napsané dnes, ČNB musí ze zákona nakonec převádět své výnosy do státního rozpočtu. Banka by měla do akcií investovat alespoň polovinu z devizových rezerv, nyní to je jen asi 20 procent. Ale chtěl bych je pochválit, že se konečně zbavili čínských dluhopisů. Takže nějaký posun tam je.
 
-Kupovat si podíly na zlatu, které přitom v budově není, je nesmysl. Zlato má pro centrální banky marketingovou hodnotu.
-
 Takže pokud by banka investovala 1,7 bilionu korun, ročně by mohla mít výnos kolem 100 miliard a stal by se z ní takový ten mohutný fond, jaké známé z Asie nebo z Norska.
 
 Ano. Vezměte si, jak Aleš Michl poslední rok zdůrazňuje, že důležité pro inflaci jsou finance státu a jejich kondice. Přitom ČNB má na státní finance zásadní vliv. Tím, že dlouhodobě odmítá rezervy pořádně investovat, připravuje státní rozpočet nejméně o těch 100, možná i 200 miliard ročně, aniž by tím cokoli získala. Z dlouhodobého pohledu veřejných financí je politika centrální banky ohledně rezerv minimálně stejně důležitá jako reformní balíčky vlády. Zase mě mrzí, jak málo diskuze se na tohle téma odehrává v ČNB, ale i mezi odbornou veřejností.

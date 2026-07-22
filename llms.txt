@@ -53,6 +53,7 @@
 - [A Meta-Analysis of Vertical Spillovers from FDI](https://meta-analysis.cz/spillovers/): A meta-analysis of 3,626 estimates finds vertical FDI spillovers to suppliers are economically significant but spillovers to buyers small.
 - [Student Employment and Education: A Meta-Analysis](https://meta-analysis.cz/students/): Meta-analysis of 861 estimates finds student employment has a negative but economically small effect on educational outcomes.
 - [Why Does Intertemporal Substitution Vary Across Countries? A Meta-Analysis](https://meta-analysis.cz/substitution/): Meta-analysis of 2,735 estimates across 104 countries links intertemporal substitution to income and stock market participation.
+- [Trust, Rule of Law, and the Size Premium: Evidence from a Meta-Analysis](https://meta-analysis.cz/trust/): Key finding: stronger rule of law goes with a larger conventional size premium, the opposite of the intuitive guess that better institutions should shri...
 - [Publication Bias in Measuring the Income Elasticity of Water Demand](https://meta-analysis.cz/water/): A meta-analysis finds publication and endogeneity biases inflate reported income elasticities of water demand, with a true elasticity near 0.15.
 
 ## Resources
