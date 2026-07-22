@@ -111,6 +111,13 @@ HUB_DESC = ("Publicistika Tomáše Havránka a Zuzany Havránkové: komentáře 
 # What the reader sees first. The sentence about full text and original sources is true
 # and worth saying to a crawler, but it delays the actual list, so it stays in HUB_DESC
 # (the meta description) and off the page.
+# The feed deliberately carries the published journalism only: back-filling 22 social
+# posts would surface as 22 "new" entries in every subscriber's reader. It therefore
+# needs its own description rather than the hub's, which now mentions those posts.
+FEED_DESC = ("Publicistika Tomáše Havránka a Zuzany Havránkové: komentáře pro celostátní "
+             "média, sloupky pro litomyšlskou Lilii a rozhovory, v plném znění. Kratší "
+             "příspěvky ze sítí jsou mimo tento kanál, na "
+             "https://meta-analysis.cz/komentare/posts/.")
 HUB_LEDE = ("Publicistika Tomáše Havránka a Zuzany Havránkové: komentáře pro celostátní "
             "média, sloupky pro litomyšlskou Lilii, rozhovory a kratší příspěvky ze sítí.")
 
@@ -785,7 +792,8 @@ def write_index(items, key=None):
     (d / "index.html").write_text(page, encoding="utf-8")
 
 
-def write_feed(items):
+def write_feed(items, social=()):
+    _newest = max([a["date"] for a in items] + [p["date"] for p in social])
     it = []
     for a in items:
         url = f"{BASE}/{a['slug']}/" if a["media"] == "text" else (a.get("url") or BASE)
@@ -809,9 +817,9 @@ def write_feed(items):
     <title>Komentáře — {esc(SITE_AUTHORS)}</title>
     <link>{BASE}/</link>
     <atom:link href="{BASE}/feed.xml" rel="self" type="application/rss+xml" />
-    <description>{esc(HUB_DESC)}</description>
+    <description>{esc(FEED_DESC)}</description>
     <language>cs</language>
-    <lastBuildDate>{rfc822(items[0]["date"])}</lastBuildDate>
+    <lastBuildDate>{rfc822(_newest)}</lastBuildDate>
 {chr(10).join(it)}
   </channel>
 </rss>
@@ -1190,6 +1198,10 @@ def write_data_page(items, social=()):
     counts = {}
     for a in items:
         counts[text_status(a)] = counts.get(text_status(a), 0) + 1
+    # the social posts are part of the download this page describes, so they belong in
+    # its breakdown too; each stores its full text
+    for _ in social:
+        counts["published_full_text"] = counts.get("published_full_text", 0) + 1
     # The page itself is Czech; the corpus it describes is Czech and English. Those
     # are two different nodes — the site's convention puts the page node first.
     jsonld = {
@@ -1372,11 +1384,14 @@ def main():
     for a in items:
         if a["media"] == "text":
             write_item(a)
+    # The posts page runs FIRST: it computes the anchors, and every writer below needs
+    # the post list — the hub for its newest-post line, the feed for lastBuildDate, and
+    # the corpus and data page for their counts.
+    social = write_socials_page()
     write_index(items)
     for k in SECTIONS:
         write_index(items, k)
-    write_feed(items)
-    social = write_socials_page()
+    write_feed(items, social)
     n_txt = write_machine_readable(items, social)
     write_data_page(items, social)
     n_src = write_src_index(items)
@@ -1457,9 +1472,20 @@ def check():
                              f"{sum(mf['records'][_k].values())}, not {expected}")
         if mf["corpus_updated"] != mf["temporal_coverage"].split("/")[1]:
             fails.append("manifest corpus_updated is not the newest record")
-        if f"{expected} záznamů" not in (KDIR / "data" / "index.html").read_text(
-                encoding="utf-8"):
+        _dp = (KDIR / "data" / "index.html").read_text(encoding="utf-8")
+        if f"{expected} záznamů" not in _dp:
             fails.append(f"data page does not report {expected} záznamů")
+        _br = [int(x) for x in re.findall(r"—\s*(\d+)", re.sub(r"<[^>]+>", " ", _dp))][:3]
+        if sum(_br) != expected:
+            fails.append(f"data page text_status breakdown sums to {sum(_br)}, "
+                         f"not {expected}")
+        _fx = (KDIR / "feed.xml").read_text(encoding="utf-8")
+        _lb = re.search(r"<lastBuildDate>(.*?)</lastBuildDate>", _fx)
+        # check() reads from disk; there is no `items` in this scope
+        _new = max(d["date"] for d in j["items"])
+        if _lb and rfc822(_new) != _lb.group(1):
+            fails.append(f"feed lastBuildDate {_lb.group(1)} is not the newest content "
+                         f"({_new})")
         # the social data path has no src/*.md behind it, so nothing else checks it
         if SOCIAL_JSON.exists():
             sp = json.loads(SOCIAL_JSON.read_text(encoding="utf-8"))
