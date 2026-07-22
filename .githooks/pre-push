@@ -1,0 +1,60 @@
+#!/usr/bin/env bash
+# Pre-push guardrail for meta-analysis.cz
+#
+# Why this exists: the seo-build-deploy workflow regenerates the invisible
+# metadata layer and then VERIFIES it. The verify step runs BEFORE the deploy
+# step, so when verify fails the site does not deploy at all -- the push looks
+# fine locally, the run goes red, and the new page silently 404s.
+#
+# This hook runs exactly what CI runs, before the push leaves the machine.
+#
+# Activate once per clone:   git config core.hooksPath .githooks
+# Bypass in an emergency:    git push --no-verify
+
+set -uo pipefail
+cd "$(git rev-parse --show-toplevel)" || exit 1
+
+PY=$(command -v python || command -v python3) || { echo "pre-push: python not found; skipping checks"; exit 0; }
+[ -f tools/generate_seo.py ] || exit 0   # not the site repo layout; nothing to check
+
+fail() { echo ""; echo "PUSH BLOCKED: $1"; echo ""; exit 1; }
+
+echo "pre-push: regenerating the metadata layer (same as CI)..."
+if ! "$PY" tools/generate_seo.py > /tmp/_seo_gen.log 2>&1; then
+  sed -n '1,40p' /tmp/_seo_gen.log
+  fail "tools/generate_seo.py failed.
+  Usually this means a project folder has no entry in tools/papers.json.
+  Every folder with an index.html needs one (project, title, abstract,
+  authors, year) or Google Scholar tags cannot be generated and CI goes red."
+fi
+sed -n '1,12p' /tmp/_seo_gen.log
+
+if [ -f komentare/build.py ]; then
+  echo "pre-push: checking the self-managed commentary section..."
+  "$PY" komentare/build.py --check > /tmp/_seo_kom.log 2>&1 || { sed -n '1,30p' /tmp/_seo_kom.log; fail "komentare/build.py --check failed."; }
+fi
+
+echo "pre-push: verifying..."
+if ! "$PY" tools/verify_seo.py > /tmp/_seo_ver.log 2>&1; then
+  sed -n '1,40p' /tmp/_seo_ver.log
+  fail "tools/verify_seo.py failed -- CI would go red and THE SITE WOULD NOT DEPLOY.
+  Most common causes when adding a page:
+    * hand-written <meta property=\"og:...\"> / citation_* / ld+json in the page.
+      Those belong ONLY inside the <!-- seo-meta:start --> block, which the
+      generator writes. Delete them from your page and let the generator emit them.
+    * a linked local PDF with no citation_pdf_url -> add the paper to tools/papers.json.
+    * hand-edited JSON-LD on the homepage -- that block is generator-owned too."
+fi
+tail -2 /tmp/_seo_ver.log
+
+# The pushed state must match what CI will verify, so generated output must be committed.
+if ! git diff --quiet -- . ; then
+  echo ""
+  echo "Files the generator rewrote but which are not committed:"
+  git diff --name-only -- . | sed 's/^/    /' | head -20
+  fail "the metadata layer changed. Commit these files, then push again,
+  so the pushed tree matches what CI regenerates and verifies."
+fi
+
+echo "pre-push: OK (metadata generated, verified, and committed)"
+exit 0
