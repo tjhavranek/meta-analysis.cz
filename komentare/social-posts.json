@@ -23,6 +23,16 @@
   "image_alt": [
    "Title page of the working paper “Does Multi-Agent Debate Improve AI Feedback on Research Papers?” by Tomas Havranek and Zuzana Irsova, dated 16 July 2026.",
    "Chart: author mean rank plotted against tokens per paper on a log scale. The single pass ranks best at roughly 25k tokens, while mad-research and paper-workshop rank worse despite spending about 200k and 800k tokens."
+  ],
+  "comment_links": [
+   "https://meta-analysis.cz/debate",
+   "https://cepr.org/publications/dp21752",
+   "https://github.com/tjhavranek/mad-research",
+   "https://github.com/tjhavranek/paper-workshop",
+   "https://doi.org/10.17605/OSF.IO/E6XGW",
+   "https://osf.io/7nfyb",
+   "https://doi.org/10.5281/zenodo.21273528",
+   "https://arxiv.org/abs/2607.14713"
   ]
  },
  {
@@ -111,8 +121,19 @@
   "url": "https://www.linkedin.com/feed/update/urn%3Ali%3AugcPost%3A7468202463888609280",
   "reshare_with_comment": false,
   "lang": "cs",
-  "images": [],
-  "text": "Nesehnali jste už lístky na Smetanova Litomyšl, ale přesto chcete zakusit genius loci perly východních Čech? Snadná pomoc!\n\nDěti připravily festivalové vydání své závodní hry z Litomyšle:\n\nhttps://lnkd.in/gvEF-zD7\n\nZávodíte v litomyšlských ulicích s dalším hráčem na počítači, nebo na mobilu s botem. Můžete střílet, sbírat lepší zbraně, ničit budovy (např. školu).\n\nPozor na bomby a zombie Bedřichy!\n\nHru postavily děti samy v zimě s Claude Code za několik hodin (ač pak trvaly na mnoha hodinách testování 😉). Jasně, vypadá jako z 80. let. Ale je to jen malá ukázka toho, co současné agentní AI systémy dokážou, a není to zdaleka jen o kódování.\n\nPokud jste Claude Code nebo Codex ještě nezkoušeli, určitě stojí za to nainstalovat, ať už se živíte čímkoli. Nejtěžší je překonat počáteční strach. Ono je to nakonec jednoduché.\n\nDetaily hry tady:\n\nhttps://lnkd.in/gVmACuyi"
+  "images": [
+   "2026-06-04_game.png"
+  ],
+  "text": "Nesehnali jste už lístky na Smetanova Litomyšl, ale přesto chcete zakusit genius loci perly východních Čech? Snadná pomoc!\n\nDěti připravily festivalové vydání své závodní hry z Litomyšle:\n\nhttps://lnkd.in/gvEF-zD7\n\nZávodíte v litomyšlských ulicích s dalším hráčem na počítači, nebo na mobilu s botem. Můžete střílet, sbírat lepší zbraně, ničit budovy (např. školu).\n\nPozor na bomby a zombie Bedřichy!\n\nHru postavily děti samy v zimě s Claude Code za několik hodin (ač pak trvaly na mnoha hodinách testování 😉). Jasně, vypadá jako z 80. let. Ale je to jen malá ukázka toho, co současné agentní AI systémy dokážou, a není to zdaleka jen o kódování.\n\nPokud jste Claude Code nebo Codex ještě nezkoušeli, určitě stojí za to nainstalovat, ať už se živíte čímkoli. Nejtěžší je překonat počáteční strach. Ono je to nakonec jednoduché.\n\nDetaily hry tady:\n\nhttps://lnkd.in/gVmACuyi",
+  "image_size": [
+   [
+    1280,
+    715
+   ]
+  ],
+  "image_alt": [
+   "Snímek závodní hry: mapa Litomyšle se zámkem, Smetanovým náměstím a gymnáziem, dva závodící hráči a hořící budovy v apokalyptickém režimu hry."
+  ]
  },
  {
   "date": "2026-05-30",
@@ -247,8 +268,22 @@
   "url": "https://www.linkedin.com/feed/update/urn%3Ali%3AugcPost%3A7423363383665508352",
   "reshare_with_comment": false,
   "lang": "en",
-  "images": [],
-  "text": "A small experiment at home: our kids (8-12) were sick and bored, so we introduced them to Claude Code.\n\nTwo hours later, they had a working browser racing game set in our hometown. They did almost everything themselves; we helped with publishing it on GitHub.\n\nThe graphics are… charmingly 1980s. But it runs smoothly and it’s fun.\n\nTakeaway for me: if you’re a researcher, it’s worth setting aside an hour to play with these tools -- you might be surprised what you can do now.\n\n(Link to the game in the first comment!)\n\n#ResearchTools #ClaudeCode #Litomysl"
+  "images": [
+   "2026-01-31_game.png"
+  ],
+  "text": "A small experiment at home: our kids (8-12) were sick and bored, so we introduced them to Claude Code.\n\nTwo hours later, they had a working browser racing game set in our hometown. They did almost everything themselves; we helped with publishing it on GitHub.\n\nThe graphics are… charmingly 1980s. But it runs smoothly and it’s fun.\n\nTakeaway for me: if you’re a researcher, it’s worth setting aside an hour to play with these tools -- you might be surprised what you can do now.\n\n(Link to the game in the first comment!)\n\n#ResearchTools #ClaudeCode #Litomysl",
+  "image_size": [
+   [
+    1280,
+    715
+   ]
+  ],
+  "image_alt": [
+   "Screenshot of the racing game the children built: a top-down map of Litomysl with the chateau, Smetana square and the grammar school as landmarks, two players racing, and several buildings on fire in the game's apocalyptic mode."
+  ],
+  "comment_links": [
+   "https://tjhavranek.github.io/race/"
+  ]
  },
  {
   "date": "2026-01-27",
@@ -256,8 +291,19 @@
   "url": "https://www.linkedin.com/feed/update/urn%3Ali%3AugcPost%3A7421813900372918272",
   "reshare_with_comment": false,
   "lang": "en",
-  "images": [],
-  "text": "A browser-based tool for correcting publication bias and p-hacking.\n\nWe built EasyMeta.org to make bias-corrected meta-analysis easier to run. Upload your dataset and benchmark your conclusions against modern corrections -- directly in your browser.\n\nWhy: Selective reporting can distort what enters the literature and how results are reported, but applying corrections often requires specialized software or a complex workflow.\n\nWhat it offers:\n• Bias corrections: MAIVE (our Nature Communications method) plus benchmarks like PET-PEESE.\n• Robust inference: options for clustering and different data structures.\n• Minimal setup: free, open, no installation, no coding.\n• Reproducibility: export R code for the results you generate.\n\nSwipe through the four slides to see the workflow.\n\nTry it with your own data: 👉 easymeta.org (https://www.easymeta.org/)\n\nWith Pedro Bom, Tomas Havranek, Heiko Rachinger, and Petr Čala\n\n#MetaAnalysis #OpenScience #ResearchMethods #Econometrics #Statistics"
+  "images": [
+   "2026-01-27_easymeta.png"
+  ],
+  "text": "A browser-based tool for correcting publication bias and p-hacking.\n\nWe built EasyMeta.org to make bias-corrected meta-analysis easier to run. Upload your dataset and benchmark your conclusions against modern corrections -- directly in your browser.\n\nWhy: Selective reporting can distort what enters the literature and how results are reported, but applying corrections often requires specialized software or a complex workflow.\n\nWhat it offers:\n• Bias corrections: MAIVE (our Nature Communications method) plus benchmarks like PET-PEESE.\n• Robust inference: options for clustering and different data structures.\n• Minimal setup: free, open, no installation, no coding.\n• Reproducibility: export R code for the results you generate.\n\nSwipe through the four slides to see the workflow.\n\nTry it with your own data: 👉 easymeta.org (https://www.easymeta.org/)\n\nWith Pedro Bom, Tomas Havranek, Heiko Rachinger, and Petr Čala\n\n#MetaAnalysis #OpenScience #ResearchMethods #Econometrics #Statistics",
+  "image_size": [
+   [
+    1200,
+    1500
+   ]
+  ],
+  "image_alt": [
+   "First slide of the EasyMeta walkthrough: “Seamless Meta-Analysis with MAIVE — adjust your data for publication bias, p-hacking, and spurious precision”, with buttons to upload data or run a demo."
+  ]
  },
  {
   "date": "2025-12-29",

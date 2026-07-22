@@ -3967,7 +3967,10 @@
    "genre": "social_post",
    "provenance": "self_published",
    "word_count": 135,
-   "text": "Nesehnali jste už lístky na Smetanova Litomyšl, ale přesto chcete zakusit genius loci perly východních Čech? Snadná pomoc!\n\nDěti připravily festivalové vydání své závodní hry z Litomyšle:\n\nhttps://lnkd.in/gvEF-zD7\n\nZávodíte v litomyšlských ulicích s dalším hráčem na počítači, nebo na mobilu s botem. Můžete střílet, sbírat lepší zbraně, ničit budovy (např. školu).\n\nPozor na bomby a zombie Bedřichy!\n\nHru postavily děti samy v zimě s Claude Code za několik hodin (ač pak trvaly na mnoha hodinách testování 😉). Jasně, vypadá jako z 80. let. Ale je to jen malá ukázka toho, co současné agentní AI systémy dokážou, a není to zdaleka jen o kódování.\n\nPokud jste Claude Code nebo Codex ještě nezkoušeli, určitě stojí za to nainstalovat, ať už se živíte čímkoli. Nejtěžší je překonat počáteční strach. Ono je to nakonec jednoduché.\n\nDetaily hry tady:\n\nhttps://lnkd.in/gVmACuyi"
+   "text": "Nesehnali jste už lístky na Smetanova Litomyšl, ale přesto chcete zakusit genius loci perly východních Čech? Snadná pomoc!\n\nDěti připravily festivalové vydání své závodní hry z Litomyšle:\n\nhttps://lnkd.in/gvEF-zD7\n\nZávodíte v litomyšlských ulicích s dalším hráčem na počítači, nebo na mobilu s botem. Můžete střílet, sbírat lepší zbraně, ničit budovy (např. školu).\n\nPozor na bomby a zombie Bedřichy!\n\nHru postavily děti samy v zimě s Claude Code za několik hodin (ač pak trvaly na mnoha hodinách testování 😉). Jasně, vypadá jako z 80. let. Ale je to jen malá ukázka toho, co současné agentní AI systémy dokážou, a není to zdaleka jen o kódování.\n\nPokud jste Claude Code nebo Codex ještě nezkoušeli, určitě stojí za to nainstalovat, ať už se živíte čímkoli. Nejtěžší je překonat počáteční strach. Ono je to nakonec jednoduché.\n\nDetaily hry tady:\n\nhttps://lnkd.in/gVmACuyi",
+   "image": [
+    "https://meta-analysis.cz/komentare/social-img/2026-06-04_game.png"
+   ]
   },
   {
    "id": "posts-2026-05-30",
@@ -4171,7 +4174,10 @@
    "genre": "social_post",
    "provenance": "self_published",
    "word_count": 96,
-   "text": "A small experiment at home: our kids (8-12) were sick and bored, so we introduced them to Claude Code.\n\nTwo hours later, they had a working browser racing game set in our hometown. They did almost everything themselves; we helped with publishing it on GitHub.\n\nThe graphics are… charmingly 1980s. But it runs smoothly and it’s fun.\n\nTakeaway for me: if you’re a researcher, it’s worth setting aside an hour to play with these tools -- you might be surprised what you can do now.\n\n(Link to the game in the first comment!)\n\n#ResearchTools #ClaudeCode #Litomysl"
+   "text": "A small experiment at home: our kids (8-12) were sick and bored, so we introduced them to Claude Code.\n\nTwo hours later, they had a working browser racing game set in our hometown. They did almost everything themselves; we helped with publishing it on GitHub.\n\nThe graphics are… charmingly 1980s. But it runs smoothly and it’s fun.\n\nTakeaway for me: if you’re a researcher, it’s worth setting aside an hour to play with these tools -- you might be surprised what you can do now.\n\n(Link to the game in the first comment!)\n\n#ResearchTools #ClaudeCode #Litomysl",
+   "image": [
+    "https://meta-analysis.cz/komentare/social-img/2026-01-31_game.png"
+   ]
   },
   {
    "id": "posts-2026-01-27",
@@ -4192,7 +4198,10 @@
    "genre": "social_post",
    "provenance": "self_published",
    "word_count": 136,
-   "text": "A browser-based tool for correcting publication bias and p-hacking.\n\nWe built EasyMeta.org to make bias-corrected meta-analysis easier to run. Upload your dataset and benchmark your conclusions against modern corrections -- directly in your browser.\n\nWhy: Selective reporting can distort what enters the literature and how results are reported, but applying corrections often requires specialized software or a complex workflow.\n\nWhat it offers:\n• Bias corrections: MAIVE (our Nature Communications method) plus benchmarks like PET-PEESE.\n• Robust inference: options for clustering and different data structures.\n• Minimal setup: free, open, no installation, no coding.\n• Reproducibility: export R code for the results you generate.\n\nSwipe through the four slides to see the workflow.\n\nTry it with your own data: 👉 easymeta.org (https://www.easymeta.org/)\n\nWith Pedro Bom, Tomas Havranek, Heiko Rachinger, and Petr Čala\n\n#MetaAnalysis #OpenScience #ResearchMethods #Econometrics #Statistics"
+   "text": "A browser-based tool for correcting publication bias and p-hacking.\n\nWe built EasyMeta.org to make bias-corrected meta-analysis easier to run. Upload your dataset and benchmark your conclusions against modern corrections -- directly in your browser.\n\nWhy: Selective reporting can distort what enters the literature and how results are reported, but applying corrections often requires specialized software or a complex workflow.\n\nWhat it offers:\n• Bias corrections: MAIVE (our Nature Communications method) plus benchmarks like PET-PEESE.\n• Robust inference: options for clustering and different data structures.\n• Minimal setup: free, open, no installation, no coding.\n• Reproducibility: export R code for the results you generate.\n\nSwipe through the four slides to see the workflow.\n\nTry it with your own data: 👉 easymeta.org (https://www.easymeta.org/)\n\nWith Pedro Bom, Tomas Havranek, Heiko Rachinger, and Petr Čala\n\n#MetaAnalysis #OpenScience #ResearchMethods #Econometrics #Statistics",
+   "image": [
+    "https://meta-analysis.cz/komentare/social-img/2026-01-27_easymeta.png"
+   ]
   },
   {
    "id": "posts-2025-12-29",

@@ -976,12 +976,21 @@ def write_socials_page():
                      f' loading="lazy" decoding="async"{wh}>')
         orig = (f' <a class="post-src" href="{esc(p["url"])}" rel="nofollow">'
                 f'{"originál" if lang == "cs" else "original"}</a>') if p.get("url") else ""
+        # Several posts say "link in the comments". Those links are in the export's
+        # Comments file, so the post need not point at something unreachable.
+        cl = ""
+        if p.get("comment_links"):
+            lab = ("Odkazy, které autorka doplnila v komentářích:" if lang == "cs"
+                   else "Links the author added in the comments:")
+            items = "".join(f'<li><a href="{esc(u)}" rel="nofollow">{esc(u)}</a></li>'
+                            for u in p["comment_links"])
+            cl = f'\n        <div class="post-links"><p>{lab}</p><ul>{items}</ul></div>'
         blocks.append(
             f'      <article class="post" id="{esc(p["anchor"])}" lang="{lang}">\n'
             f'        <p class="post-date"><a href="#{esc(p["anchor"])}">'
             f'<time datetime="{p["date"]}">{esc(cs_date(p["date"], lang="en"))}</time></a>'
             f'{orig}</p>\n'
-            f'        {_social_html(p["text"])}{imgs}\n'
+            f'        {_social_html(p["text"])}{cl}{imgs}\n'
             f'      </article>')
         node = {
             "@type": "SocialMediaPosting",
@@ -1017,10 +1026,6 @@ def write_socials_page():
         '    <div class="lede reading">\n'
         '      <h1>Posts</h1>\n'
         f'      <p>{esc(SOCIAL_DESC)}</p>\n'
-        '      <p class="post-note">Each post appears in full, exactly as published, '
-        'including its original paragraphing; posts shared from other people are not '
-        'included. The source is the official LinkedIn data export, so the dates and the '
-        'links to the originals are exact. A few posts are in Czech.</p>\n'
         f'      <p class="post-jump">{jump}</p>\n'
         '    </div>\n'
         '    <div class="posts reading">\n' + "\n".join(blocks) + "\n    </div>\n")

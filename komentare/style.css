@@ -237,3 +237,10 @@ main { padding: 2.75rem 0 4rem; }
 .post-jump a { margin-right: 0.15rem; }
 .posts .year { margin: 2.5rem 0 0.5rem; }
 .posts .year:first-child { margin-top: 0; }
+/* Links the author put in her own comments — several posts say "link in the comments",
+   and without these the post points at something the reader cannot reach. */
+.post-links { margin: 1rem 0 0; padding: 0.7rem 0.9rem; border-left: 2px solid var(--rule);
+              font-size: 0.9rem; color: var(--muted); }
+.post-links p { margin: 0 0 0.35rem; font-size: 0.85rem; color: var(--faint); }
+.post-links ul { margin: 0; padding-left: 1.1em; }
+.post-links li { margin: 0.15rem 0; word-break: break-word; }
