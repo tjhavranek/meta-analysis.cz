@@ -772,7 +772,7 @@ def write_index(items, key=None):
                            f'</p>\n')
 
     body = (f'    <div class="lede">\n      <h1>{esc(title)}</h1>\n'
-            f'      <p>{esc(desc)}</p>\n{counts}    </div>\n'
+            f'      <p>{esc(HUB_LEDE if not key else desc)}</p>\n{counts}    </div>\n'
             + (FILTER if not key else "")
             + listing(sel, show_cat=not key))
     page = shell(f"{title} — {SITE_AUTHORS}", desc, canonical,
