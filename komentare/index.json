@@ -1188,19 +1188,20 @@
   },
   {
    "id": "zi-iv-defacto-mensi-tridy",
-   "title": "De Facto: Menší třídy nenapomáhají lepším výsledkům žáků ve školách",
+   "title": "Zuzana Havránková: Menší třídy nenapomáhají lepším výsledkům žáků ve školách",
    "date": "2023-12-19",
    "date_precision": "day",
    "section": "Rozhovory",
    "category": "rozhovory",
    "language": "cs",
-   "outlet": "VědaVýzkum.cz",
+   "outlet": "De Facto (FSV UK)",
    "authors": [
     "Zuzana Havránková"
    ],
    "media": "audio",
-   "original_url": "https://vedavyzkum.cz/podcasty/de-facto/de-facto-zuzana-havrankova-mensi-tridy-nenapomahaji-lepsim-vysledkum-zaku-ve-skolach",
+   "original_url": "https://www.buzzsprout.com/1784031/episodes/14165937-zuzana-havrankova-mensi-tridy-nenapomahaji-lepsim-vysledkum-zaku-ve-skolach",
    "text_status": "link_only",
+   "interviewer": "Alice Němcová Tejkalová",
    "provenance": "editorial"
   },
   {
@@ -3827,7 +3828,7 @@
    "provenance": "editorial"
   },
   {
-   "id": "ze-siti-2026-07-16-1",
+   "id": "ze-siti-2026-07-16",
    "title": "Does multi-agent debate improve AI feedback on research papers?",
    "date": "2026-07-16",
    "date_precision": "day",
@@ -3840,7 +3841,7 @@
    ],
    "media": "text",
    "original_url": "https://www.linkedin.com/feed/update/urn%3Ali%3AugcPost%3A7483554931325542401",
-   "url": "https://meta-analysis.cz/komentare/ze-siti/#2026-07-16-1",
+   "url": "https://meta-analysis.cz/komentare/ze-siti/#2026-07-16",
    "text_status": "published_full_text",
    "genre": "social_post",
    "provenance": "self_published",
@@ -3852,7 +3853,7 @@
    ]
   },
   {
-   "id": "ze-siti-2026-07-08-2",
+   "id": "ze-siti-2026-07-08",
    "title": "This week I have been at Stanford, spending my days working and my evenings at Nitoboxing in Palo Alto. Honest",
    "date": "2026-07-08",
    "date_precision": "day",
@@ -3865,7 +3866,7 @@
    ],
    "media": "text",
    "original_url": "https://www.linkedin.com/feed/update/urn%3Ali%3Ashare%3A7480586444739375104",
-   "url": "https://meta-analysis.cz/komentare/ze-siti/#2026-07-08-2",
+   "url": "https://meta-analysis.cz/komentare/ze-siti/#2026-07-08",
    "text_status": "published_full_text",
    "genre": "social_post",
    "provenance": "self_published",
@@ -3876,7 +3877,7 @@
    ]
   },
   {
-   "id": "ze-siti-2026-07-04-3",
+   "id": "ze-siti-2026-07-04",
    "title": "Proud to be affiliated with Stanford METRICS. Few groups have done more for reproducibility and research integ",
    "date": "2026-07-04",
    "date_precision": "day",
@@ -3889,7 +3890,7 @@
    ],
    "media": "text",
    "original_url": "https://www.linkedin.com/feed/update/urn%3Ali%3Ashare%3A7479216000241033216",
-   "url": "https://meta-analysis.cz/komentare/ze-siti/#2026-07-04-3",
+   "url": "https://meta-analysis.cz/komentare/ze-siti/#2026-07-04",
    "text_status": "published_full_text",
    "genre": "social_post",
    "provenance": "self_published",
@@ -3900,7 +3901,7 @@
    ]
   },
   {
-   "id": "ze-siti-2026-06-23-4",
+   "id": "ze-siti-2026-06-23",
    "title": "If you plan to work on your ERC proposal this summer, the following tool might help you:",
    "date": "2026-06-23",
    "date_precision": "day",
@@ -3913,7 +3914,7 @@
    ],
    "media": "text",
    "original_url": "https://www.linkedin.com/feed/update/urn%3Ali%3Ashare%3A7475160943409135616",
-   "url": "https://meta-analysis.cz/komentare/ze-siti/#2026-06-23-4",
+   "url": "https://meta-analysis.cz/komentare/ze-siti/#2026-06-23",
    "text_status": "published_full_text",
    "genre": "social_post",
    "provenance": "self_published",
@@ -3924,7 +3925,7 @@
    ]
   },
   {
-   "id": "ze-siti-2026-06-10-5",
+   "id": "ze-siti-2026-06-10",
    "title": "Imagine a panel of the world's leading experts, assembled for your research paper, arguing it out from rival s",
    "date": "2026-06-10",
    "date_precision": "day",
@@ -3937,7 +3938,7 @@
    ],
    "media": "text",
    "original_url": "https://www.linkedin.com/feed/update/urn%3Ali%3Ashare%3A7470445147063803904",
-   "url": "https://meta-analysis.cz/komentare/ze-siti/#2026-06-10-5",
+   "url": "https://meta-analysis.cz/komentare/ze-siti/#2026-06-10",
    "text_status": "published_full_text",
    "genre": "social_post",
    "provenance": "self_published",
@@ -3948,7 +3949,7 @@
    ]
   },
   {
-   "id": "ze-siti-2026-06-04-6",
+   "id": "ze-siti-2026-06-04",
    "title": "Nesehnali jste už lístky na Smetanova Litomyšl, ale přesto chcete zakusit genius loci perly východních Čech? S",
    "date": "2026-06-04",
    "date_precision": "day",
@@ -3961,7 +3962,7 @@
    ],
    "media": "text",
    "original_url": "https://www.linkedin.com/feed/update/urn%3Ali%3AugcPost%3A7468202463888609280",
-   "url": "https://meta-analysis.cz/komentare/ze-siti/#2026-06-04-6",
+   "url": "https://meta-analysis.cz/komentare/ze-siti/#2026-06-04",
    "text_status": "published_full_text",
    "genre": "social_post",
    "provenance": "self_published",
@@ -3969,7 +3970,7 @@
    "text": "Nesehnali jste už lístky na Smetanova Litomyšl, ale přesto chcete zakusit genius loci perly východních Čech? Snadná pomoc!\n\nDěti připravily festivalové vydání své závodní hry z Litomyšle:\n\nhttps://lnkd.in/gvEF-zD7\n\nZávodíte v litomyšlských ulicích s dalším hráčem na počítači, nebo na mobilu s botem. Můžete střílet, sbírat lepší zbraně, ničit budovy (např. školu).\n\nPozor na bomby a zombie Bedřichy!\n\nHru postavily děti samy v zimě s Claude Code za několik hodin (ač pak trvaly na mnoha hodinách testování 😉). Jasně, vypadá jako z 80. let. Ale je to jen malá ukázka toho, co současné agentní AI systémy dokážou, a není to zdaleka jen o kódování.\n\nPokud jste Claude Code nebo Codex ještě nezkoušeli, určitě stojí za to nainstalovat, ať už se živíte čímkoli. Nejtěžší je překonat počáteční strach. Ono je to nakonec jednoduché.\n\nDetaily hry tady:\n\nhttps://lnkd.in/gVmACuyi"
   },
   {
-   "id": "ze-siti-2026-05-30-7",
+   "id": "ze-siti-2026-05-30",
    "title": "Do you know that Claude Code can use Codex to stress test its work?",
    "date": "2026-05-30",
    "date_precision": "day",
@@ -3982,7 +3983,7 @@
    ],
    "media": "text",
    "original_url": "https://www.linkedin.com/feed/update/urn%3Ali%3Ashare%3A7466382253208645634",
-   "url": "https://meta-analysis.cz/komentare/ze-siti/#2026-05-30-7",
+   "url": "https://meta-analysis.cz/komentare/ze-siti/#2026-05-30",
    "text_status": "published_full_text",
    "genre": "social_post",
    "provenance": "self_published",
@@ -3993,7 +3994,7 @@
    ]
   },
   {
-   "id": "ze-siti-2026-05-13-8",
+   "id": "ze-siti-2026-05-13",
    "title": "Reporting Guidelines for Meta-Analysis in Economics, updated for AI, just published in the Journal of Economic",
    "date": "2026-05-13",
    "date_precision": "day",
@@ -4006,7 +4007,7 @@
    ],
    "media": "text",
    "original_url": "https://www.linkedin.com/feed/update/urn%3Ali%3Ashare%3A7460202147213791232",
-   "url": "https://meta-analysis.cz/komentare/ze-siti/#2026-05-13-8",
+   "url": "https://meta-analysis.cz/komentare/ze-siti/#2026-05-13",
    "text_status": "published_full_text",
    "genre": "social_post",
    "provenance": "self_published",
@@ -4017,7 +4018,7 @@
    ]
   },
   {
-   "id": "ze-siti-2026-04-28-9",
+   "id": "ze-siti-2026-04-28",
    "title": "Will our results change if we redo the meta-analysis from scratch?",
    "date": "2026-04-28",
    "date_precision": "day",
@@ -4030,7 +4031,7 @@
    ],
    "media": "text",
    "original_url": "https://www.linkedin.com/feed/update/urn%3Ali%3Ashare%3A7454914753266692097",
-   "url": "https://meta-analysis.cz/komentare/ze-siti/#2026-04-28-9",
+   "url": "https://meta-analysis.cz/komentare/ze-siti/#2026-04-28",
    "text_status": "published_full_text",
    "genre": "social_post",
    "provenance": "self_published",
@@ -4041,7 +4042,7 @@
    ]
   },
   {
-   "id": "ze-siti-2026-04-22-10",
+   "id": "ze-siti-2026-04-22",
    "title": "Not an easy task, but in a new note just out in the Journal of Economic Surveys we try to set a basic floor on",
    "date": "2026-04-22",
    "date_precision": "day",
@@ -4054,7 +4055,7 @@
    ],
    "media": "text",
    "original_url": "https://www.linkedin.com/feed/update/urn%3Ali%3Ashare%3A7452590050799853568",
-   "url": "https://meta-analysis.cz/komentare/ze-siti/#2026-04-22-10",
+   "url": "https://meta-analysis.cz/komentare/ze-siti/#2026-04-22",
    "text_status": "published_full_text",
    "genre": "social_post",
    "provenance": "self_published",
@@ -4065,7 +4066,7 @@
    ]
   },
   {
-   "id": "ze-siti-2026-04-02-11",
+   "id": "ze-siti-2026-04-02",
    "title": "It was fun to be (a very small) part of the amazing team led by Abel Brodeur. The numbers look great, but note",
    "date": "2026-04-02",
    "date_precision": "day",
@@ -4078,7 +4079,7 @@
    ],
    "media": "text",
    "original_url": "https://www.linkedin.com/feed/update/urn%3Ali%3Ashare%3A7445392769788968960",
-   "url": "https://meta-analysis.cz/komentare/ze-siti/#2026-04-02-11",
+   "url": "https://meta-analysis.cz/komentare/ze-siti/#2026-04-02",
    "text_status": "published_full_text",
    "genre": "social_post",
    "provenance": "self_published",
@@ -4086,7 +4087,7 @@
    "text": "It was fun to be (a very small) part of the amazing team led by Abel Brodeur. The numbers look great, but note that we replicate papers in journals that have mandatory data and code sharing. So: share your data and code! And while you're at it, pre-register your papers and upload pre-analysis plans. This is the way!"
   },
   {
-   "id": "ze-siti-2026-03-28-12",
+   "id": "ze-siti-2026-03-28",
    "title": "Top 7 non-fiction books I recommend. 📚",
    "date": "2026-03-28",
    "date_precision": "day",
@@ -4099,7 +4100,7 @@
    ],
    "media": "text",
    "original_url": "https://www.linkedin.com/feed/update/urn%3Ali%3Ashare%3A7443641057592033280",
-   "url": "https://meta-analysis.cz/komentare/ze-siti/#2026-03-28-12",
+   "url": "https://meta-analysis.cz/komentare/ze-siti/#2026-03-28",
    "text_status": "published_full_text",
    "genre": "social_post",
    "provenance": "self_published",
@@ -4107,7 +4108,7 @@
    "text": "Top 7 non-fiction books I recommend. 📚\n\nNot an endorsement of everything in these books, but I learned a great deal about economics, history, and politics.\n\n1️⃣ Bourgeois Equality (McCloskey): How the West got rich.\n2️⃣ In the Garden of Beasts (Larson): An American family in 1930s Berlin, watching a society die.\n3️⃣ Recession (Tyler Goodspeed): Why economies shrink. Excellent new book.\n4️⃣ Cicero (Everitt): The life of arguably the greatest statesman the West ever produced.\n5️⃣ Red Dawn Over China (Dikötter): How China became communist.\n6️⃣ The Lives of the Caesars (Suetonius): The most readable classical text I know. Reads like a novel.\n7️⃣ The Fiscal Theory of the Price Level (John H. Cochrane): A bold, rigorous book on modern macroeconomics.\n\nWhat's the best non-fiction book you've read this year?"
   },
   {
-   "id": "ze-siti-2026-03-19-13",
+   "id": "ze-siti-2026-03-19",
    "title": "Two AI models dueling worked. Four models debating works better.",
    "date": "2026-03-19",
    "date_precision": "day",
@@ -4120,7 +4121,7 @@
    ],
    "media": "text",
    "original_url": "https://www.linkedin.com/feed/update/urn%3Ali%3Ashare%3A7440296636783960064",
-   "url": "https://meta-analysis.cz/komentare/ze-siti/#2026-03-19-13",
+   "url": "https://meta-analysis.cz/komentare/ze-siti/#2026-03-19",
    "text_status": "published_full_text",
    "genre": "social_post",
    "provenance": "self_published",
@@ -4128,7 +4129,7 @@
    "text": "Two AI models dueling worked. Four models debating works better.\n\nWe updated our research audit protocol. The new version (MAD v2.0) uses ChatGPT, Claude, Gemini, and Grok in structured adversarial rounds:\n\n1️⃣ Independent critique — no model sees the others, every claim grounded in the document.\n2️⃣ Cross-examination — each model attacks the weakest peer arguments.\n3️⃣ Final arbiter synthesizes what survived.\n\nNo code needed. Copy-paste prompts. Free model versions work (just register for each model).\n\nAdvanced users: the entire workflow can be automated via the models' APIs using frameworks like AutoGen, LangGraph, or CrewAI.\n\nUse it for high-stakes documents: stress-testing your papers, grant proposals, referee reports.\n\nProtocol (GitHub): 👉 https://lnkd.in/dRwKz63g"
   },
   {
-   "id": "ze-siti-2026-03-11-14",
+   "id": "ze-siti-2026-03-11",
    "title": "Doporučuji všem rodičům včas testovat děti na cukrovku. Nám to bohužel vyšlo jednou pozitivní, ale díky tomu t",
    "date": "2026-03-11",
    "date_precision": "day",
@@ -4141,7 +4142,7 @@
    ],
    "media": "text",
    "original_url": "https://www.linkedin.com/feed/update/urn%3Ali%3Ashare%3A7437416155155177472",
-   "url": "https://meta-analysis.cz/komentare/ze-siti/#2026-03-11-14",
+   "url": "https://meta-analysis.cz/komentare/ze-siti/#2026-03-11",
    "text_status": "published_full_text",
    "genre": "social_post",
    "provenance": "self_published",
@@ -4149,7 +4150,7 @@
    "text": "Doporučuji všem rodičům včas testovat děti na cukrovku. Nám to bohužel vyšlo jednou pozitivní, ale díky tomu testu + moderní medicíně můžete nástup nemoci oddálit o několik let.\n\nVčasný test = šance na roky navíc bez inzulinu.\n\nDíky Barbora Berka a Natálie Chrástecká za skvělý přístup v Motole.\n\nDíky Jan Hrušovský za hezký rozhovor s mým manželem, který poprvé na kameru mluvil o něčem jiném než o ekonomii (což je většinou velmi ... poutavé 😉 ).\n\nhttps://lnkd.in/duWtcSbA"
   },
   {
-   "id": "ze-siti-2026-03-09-15",
+   "id": "ze-siti-2026-03-09",
    "title": "Meta-analyses should try to correct not just for publication bias, but also for p-hacking.",
    "date": "2026-03-09",
    "date_precision": "day",
@@ -4162,7 +4163,7 @@
    ],
    "media": "text",
    "original_url": "https://www.linkedin.com/feed/update/urn%3Ali%3Ashare%3A7436800791929151488",
-   "url": "https://meta-analysis.cz/komentare/ze-siti/#2026-03-09-15",
+   "url": "https://meta-analysis.cz/komentare/ze-siti/#2026-03-09",
    "text_status": "published_full_text",
    "genre": "social_post",
    "provenance": "self_published",
@@ -4173,7 +4174,7 @@
    ]
   },
   {
-   "id": "ze-siti-2026-02-12-16",
+   "id": "ze-siti-2026-02-12",
    "title": "Congratulations to Martin! I am very sorry I couldn't be there. I love my hometown Rožňava.",
    "date": "2026-02-12",
    "date_precision": "day",
@@ -4186,7 +4187,7 @@
    ],
    "media": "text",
    "original_url": "https://www.linkedin.com/feed/update/urn%3Ali%3Ashare%3A7427827501642436608",
-   "url": "https://meta-analysis.cz/komentare/ze-siti/#2026-02-12-16",
+   "url": "https://meta-analysis.cz/komentare/ze-siti/#2026-02-12",
    "text_status": "published_full_text",
    "genre": "social_post",
    "provenance": "self_published",
@@ -4194,7 +4195,7 @@
    "text": "Congratulations to Martin! I am very sorry I couldn't be there. I love my hometown Rožňava."
   },
   {
-   "id": "ze-siti-2026-01-31-17",
+   "id": "ze-siti-2026-01-31",
    "title": "A small experiment at home: our kids (8-12) were sick and bored, so we introduced them to Claude Code.",
    "date": "2026-01-31",
    "date_precision": "day",
@@ -4207,7 +4208,7 @@
    ],
    "media": "text",
    "original_url": "https://www.linkedin.com/feed/update/urn%3Ali%3AugcPost%3A7423363383665508352",
-   "url": "https://meta-analysis.cz/komentare/ze-siti/#2026-01-31-17",
+   "url": "https://meta-analysis.cz/komentare/ze-siti/#2026-01-31",
    "text_status": "published_full_text",
    "genre": "social_post",
    "provenance": "self_published",
@@ -4215,7 +4216,7 @@
    "text": "A small experiment at home: our kids (8-12) were sick and bored, so we introduced them to Claude Code.\n\nTwo hours later, they had a working browser racing game set in our hometown. They did almost everything themselves; we helped with publishing it on GitHub.\n\nThe graphics are… charmingly 1980s. But it runs smoothly and it’s fun.\n\nTakeaway for me: if you’re a researcher, it’s worth setting aside an hour to play with these tools -- you might be surprised what you can do now.\n\n(Link to the game in the first comment!)\n\n#ResearchTools #ClaudeCode #Litomysl"
   },
   {
-   "id": "ze-siti-2026-01-27-18",
+   "id": "ze-siti-2026-01-27",
    "title": "A browser-based tool for correcting publication bias and p-hacking.",
    "date": "2026-01-27",
    "date_precision": "day",
@@ -4228,7 +4229,7 @@
    ],
    "media": "text",
    "original_url": "https://www.linkedin.com/feed/update/urn%3Ali%3AugcPost%3A7421813900372918272",
-   "url": "https://meta-analysis.cz/komentare/ze-siti/#2026-01-27-18",
+   "url": "https://meta-analysis.cz/komentare/ze-siti/#2026-01-27",
    "text_status": "published_full_text",
    "genre": "social_post",
    "provenance": "self_published",
@@ -4236,7 +4237,7 @@
    "text": "A browser-based tool for correcting publication bias and p-hacking.\n\nWe built EasyMeta.org to make bias-corrected meta-analysis easier to run. Upload your dataset and benchmark your conclusions against modern corrections -- directly in your browser.\n\nWhy: Selective reporting can distort what enters the literature and how results are reported, but applying corrections often requires specialized software or a complex workflow.\n\nWhat it offers:\n• Bias corrections: MAIVE (our Nature Communications method) plus benchmarks like PET-PEESE.\n• Robust inference: options for clustering and different data structures.\n• Minimal setup: free, open, no installation, no coding.\n• Reproducibility: export R code for the results you generate.\n\nSwipe through the four slides to see the workflow.\n\nTry it with your own data: 👉 easymeta.org (https://www.easymeta.org/)\n\nWith Pedro Bom, Tomas Havranek, Heiko Rachinger, and Petr Čala\n\n#MetaAnalysis #OpenScience #ResearchMethods #Econometrics #Statistics"
   },
   {
-   "id": "ze-siti-2025-12-29-19",
+   "id": "ze-siti-2025-12-29",
    "title": "Jak vytěžit z AI maximum?",
    "date": "2025-12-29",
    "date_precision": "day",
@@ -4249,7 +4250,7 @@
    ],
    "media": "text",
    "original_url": "https://www.linkedin.com/feed/update/urn%3Ali%3Ashare%3A7411382256684060672",
-   "url": "https://meta-analysis.cz/komentare/ze-siti/#2025-12-29-19",
+   "url": "https://meta-analysis.cz/komentare/ze-siti/#2025-12-29",
    "text_status": "published_full_text",
    "genre": "social_post",
    "provenance": "self_published",
@@ -4260,7 +4261,7 @@
    ]
   },
   {
-   "id": "ze-siti-2025-12-23-20",
+   "id": "ze-siti-2025-12-23",
    "title": "I still love Slovakia and Gemer. When our kids were born, one of the first things my husband did was go to the",
    "date": "2025-12-23",
    "date_precision": "day",
@@ -4273,7 +4274,7 @@
    ],
    "media": "text",
    "original_url": "https://www.linkedin.com/feed/update/urn%3Ali%3Ashare%3A7409201113406603264",
-   "url": "https://meta-analysis.cz/komentare/ze-siti/#2025-12-23-20",
+   "url": "https://meta-analysis.cz/komentare/ze-siti/#2025-12-23",
    "text_status": "published_full_text",
    "genre": "social_post",
    "provenance": "self_published",
@@ -4281,7 +4282,7 @@
    "text": "I still love Slovakia and Gemer. When our kids were born, one of the first things my husband did was go to the Slovak embassy in Prague and arrange Slovak citizenship for them. I hope I’m wrong in this interview."
   },
   {
-   "id": "ze-siti-2025-12-12-21",
+   "id": "ze-siti-2025-12-12",
    "title": "For deep analytical work, I don’t use one AI model. I make them duel.",
    "date": "2025-12-12",
    "date_precision": "day",
@@ -4294,7 +4295,7 @@
    ],
    "media": "text",
    "original_url": "https://www.linkedin.com/feed/update/urn%3Ali%3Ashare%3A7405164270306504704",
-   "url": "https://meta-analysis.cz/komentare/ze-siti/#2025-12-12-21",
+   "url": "https://meta-analysis.cz/komentare/ze-siti/#2025-12-12",
    "text_status": "published_full_text",
    "genre": "social_post",
    "provenance": "self_published",
@@ -4302,7 +4303,7 @@
    "text": "For deep analytical work, I don’t use one AI model. I make them duel.\n\nFor thinking-intensive tasks (research, strategy, due diligence) a single AI model often converges too fast. It sounds convincing but skips edge cases and hidden assumptions.\n\nSo Tomas Havranek and I formalized a workflow to create structured disagreement:\n\n🔹 Anchor (ChatGPT): Writes a first-pass assessment grounded in the files. 🔹 Audit (Gemini): Actively tries to break it (logic gaps, counterexamples, failure modes). ChatGPT defends. The duel iterates. 🔹 Synthesis (You): You analyze the conflict to see what survives.\n\nThe output is not “AI approval.” It is a clearer map of risks, boundary conditions, and what you must verify.\n\nAdvanced users: You can swap the auditor for Claude or automate this via API (MAD).\n\nFor everyone else: no code needed. You can copy-paste the protocol and try it via ChatGPT Agent.\n\nProtocol (GitHub): 👉 https://lnkd.in/dRwKz63g\nResearch example: 👉 https://lnkd.in/dw98RKuW\n\n#AI #DecisionMaking #CriticalThinking #Productivity #Research"
   },
   {
-   "id": "ze-siti-2025-12-10-22",
+   "id": "ze-siti-2025-12-10",
    "title": "🔎 MAIVE is now on CRAN: Better tools for trustworthy meta-analysis",
    "date": "2025-12-10",
    "date_precision": "day",
@@ -4315,18 +4316,15 @@
    ],
    "media": "text",
    "original_url": "https://www.linkedin.com/feed/update/urn%3Ali%3Ashare%3A7404420382004539392",
-   "url": "https://meta-analysis.cz/komentare/ze-siti/#2025-12-10-22",
+   "url": "https://meta-analysis.cz/komentare/ze-siti/#2025-12-10",
    "text_status": "published_full_text",
    "genre": "social_post",
    "provenance": "self_published",
    "word_count": 135,
-   "text": "🔎 MAIVE is now on CRAN: Better tools for trustworthy meta-analysis\n\nMeta-analysis is one of the key pillars of evidence-based research. It combines results from many studies to give us a clearer, more reliable answer.\n\nBut in observational research, studies can sometimes appear too precise --not because the evidence is strong, but because of method choices, selective reporting, or p-hacking. This can distort the final meta-analytic conclusion.\nMAIVE helps address this.\n\nYou can now install MAIVE directly in R:\n\ninstall.packages(\"MAIVE\")\n\nOr try it instantly in your browser (no coding needed):\n 🖥️ https://www.easymeta.org\nMore details:\n 📦 CRAN package: https://lnkd.in/dQ7XjiAq\n\n 📄 Nature Communications article: https://lnkd.in/eFfrP6H2\n\n 📰 Blog overview: https://lnkd.in/ejkgbU6X\n\nA big thank-you to Petr Čala, who built the MAIVE web app and prepared the CRAN release. His work makes high-quality meta-analysis methods accessible.\n\n#metaanalysis #OpenScience #researchmethods #RStats",
-   "image": [
-    "https://meta-analysis.cz/komentare/social-img/2025-12-21_p26_1.png"
-   ]
+   "text": "🔎 MAIVE is now on CRAN: Better tools for trustworthy meta-analysis\n\nMeta-analysis is one of the key pillars of evidence-based research. It combines results from many studies to give us a clearer, more reliable answer.\n\nBut in observational research, studies can sometimes appear too precise --not because the evidence is strong, but because of method choices, selective reporting, or p-hacking. This can distort the final meta-analytic conclusion.\nMAIVE helps address this.\n\nYou can now install MAIVE directly in R:\n\ninstall.packages(\"MAIVE\")\n\nOr try it instantly in your browser (no coding needed):\n 🖥️ https://www.easymeta.org\nMore details:\n 📦 CRAN package: https://lnkd.in/dQ7XjiAq\n\n 📄 Nature Communications article: https://lnkd.in/eFfrP6H2\n\n 📰 Blog overview: https://lnkd.in/ejkgbU6X\n\nA big thank-you to Petr Čala, who built the MAIVE web app and prepared the CRAN release. His work makes high-quality meta-analysis methods accessible.\n\n#metaanalysis #OpenScience #researchmethods #RStats"
   },
   {
-   "id": "ze-siti-2025-10-26-23",
+   "id": "ze-siti-2025-10-26",
    "title": "🔎 New in Nature Communications: “Spurious precision in meta-analysis of observational research.”",
    "date": "2025-10-26",
    "date_precision": "day",
@@ -4339,7 +4337,7 @@
    ],
    "media": "text",
    "original_url": "https://www.linkedin.com/feed/update/urn%3Ali%3Ashare%3A7388172095639265282",
-   "url": "https://meta-analysis.cz/komentare/ze-siti/#2025-10-26-23",
+   "url": "https://meta-analysis.cz/komentare/ze-siti/#2025-10-26",
    "text_status": "published_full_text",
    "genre": "social_post",
    "provenance": "self_published",
@@ -4350,7 +4348,7 @@
    ]
   },
   {
-   "id": "ze-siti-2023-04-12-24",
+   "id": "ze-siti-2023-04-12",
    "title": "Přátelé,",
    "date": "2023-04-12",
    "date_precision": "day",
@@ -4363,7 +4361,7 @@
    ],
    "media": "text",
    "original_url": "https://www.linkedin.com/feed/update/urn%3Ali%3Ashare%3A7051975319590690816",
-   "url": "https://meta-analysis.cz/komentare/ze-siti/#2023-04-12-24",
+   "url": "https://meta-analysis.cz/komentare/ze-siti/#2023-04-12",
    "text_status": "published_full_text",
    "genre": "social_post",
    "provenance": "self_published",
@@ -4374,7 +4372,7 @@
    ]
   },
   {
-   "id": "ze-siti-2022-07-20-25",
+   "id": "ze-siti-2022-07-20",
    "title": "No, ten chlápek na videu by potřeboval lepší sestřih a lekce herectví, ale celkově je na tom webu hodně inform",
    "date": "2022-07-20",
    "date_precision": "day",
@@ -4387,7 +4385,7 @@
    ],
    "media": "text",
    "original_url": "https://www.linkedin.com/feed/update/urn%3Ali%3Ashare%3A6955415110903341057",
-   "url": "https://meta-analysis.cz/komentare/ze-siti/#2022-07-20-25",
+   "url": "https://meta-analysis.cz/komentare/ze-siti/#2022-07-20",
    "text_status": "published_full_text",
    "genre": "social_post",
    "provenance": "self_published",

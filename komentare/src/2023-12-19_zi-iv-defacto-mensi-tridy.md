@@ -1,11 +1,11 @@
 ---
 category: "rozhovory"
 media: "audio"
-outlet: "VědaVýzkum.cz"
-url: "https://vedavyzkum.cz/podcasty/de-facto/de-facto-zuzana-havrankova-mensi-tridy-nenapomahaji-lepsim-vysledkum-zaku-ve-skolach"
+outlet: "De Facto (FSV UK)"
+url: "https://www.buzzsprout.com/1784031/episodes/14165937-zuzana-havrankova-mensi-tridy-nenapomahaji-lepsim-vysledkum-zaku-ve-skolach"
 date: "2023-12-19"
-headline: "De Facto: Menší třídy nenapomáhají lepším výsledkům žáků ve školách"
+headline: "Zuzana Havránková: Menší třídy nenapomáhají lepším výsledkům žáků ve školách"
 byline: "Zuzana Havránková"
-body_note: "Podcast De Facto. Zvukový záznam je dostupný pouze u vydavatele."
+interviewer: "Alice Němcová Tejkalová"
+body_note: "Podcast De Facto Fakulty sociálních věd UK, 3. řada, díl 19. Zvukový záznam, přepis neexistuje. Ke slyšení také na Spotify (https://open.spotify.com/episode/6QYypFdFj5AaPQrmiMYaVD). Server VědaVýzkum.cz epizodu převzal."
 ---
-

@@ -9,7 +9,21 @@
    "2026-07-16_p2_1.jpeg",
    "2026-07-16_p2_2.jpeg"
   ],
-  "text": "Does multi-agent debate improve AI feedback on research papers?\n\nNot in our experiment.\n\nWe just posted a pre-registered study in which authors ranked three AI reports on their own paper. The reports were blinded and came from three setups: a single prompt and two multi-agent tools. We expected the multi-agent tools to win.\n\nWe find:\n\n1) Multi-agent debate does not help here. The single prompt beat both multi-agent tools, even though one of them spent about 30x the tokens.\n\n2) If an independent AI model ranked the reports in the authors' place, it would put the most expensive multi-agent tool first.\n\n3) Authors who recalled their real journal referee feedback usually ranked it above all the AI reports. In contrast, the AI judges almost always ranked the human feedback last.\n\nI was also surprised by how little the author and AI rankings agree (correlation 0.14). Authors seem to have actually read the AI reports (!) and thought about them, not just used a chatbot to rank them.\n\nThanks to all 47 authors who participated!\n\nPaper: https://lnkd.in/d7YsNxWc\n\nBoth multi-agent tools are open source:\nhttps://lnkd.in/dtGSi8zP\nhttps://lnkd.in/dk5NQpcE"
+  "text": "Does multi-agent debate improve AI feedback on research papers?\n\nNot in our experiment.\n\nWe just posted a pre-registered study in which authors ranked three AI reports on their own paper. The reports were blinded and came from three setups: a single prompt and two multi-agent tools. We expected the multi-agent tools to win.\n\nWe find:\n\n1) Multi-agent debate does not help here. The single prompt beat both multi-agent tools, even though one of them spent about 30x the tokens.\n\n2) If an independent AI model ranked the reports in the authors' place, it would put the most expensive multi-agent tool first.\n\n3) Authors who recalled their real journal referee feedback usually ranked it above all the AI reports. In contrast, the AI judges almost always ranked the human feedback last.\n\nI was also surprised by how little the author and AI rankings agree (correlation 0.14). Authors seem to have actually read the AI reports (!) and thought about them, not just used a chatbot to rank them.\n\nThanks to all 47 authors who participated!\n\nPaper: https://lnkd.in/d7YsNxWc\n\nBoth multi-agent tools are open source:\nhttps://lnkd.in/dtGSi8zP\nhttps://lnkd.in/dk5NQpcE",
+  "image_size": [
+   [
+    800,
+    1035
+   ],
+   [
+    800,
+    678
+   ]
+  ],
+  "image_alt": [
+   "Title page of the working paper “Does Multi-Agent Debate Improve AI Feedback on Research Papers?” by Tomas Havranek and Zuzana Irsova, dated 16 July 2026.",
+   "Chart: author mean rank plotted against tokens per paper on a log scale. The single pass ranks best at roughly 25k tokens, while mad-research and paper-workshop rank worse despite spending about 200k and 800k tokens."
+  ]
  },
  {
   "date": "2026-07-08",
@@ -20,7 +34,16 @@
   "images": [
    "2026-07-08_p3_1.jpeg"
   ],
-  "text": "This week I have been at Stanford, spending my days working and my evenings at Nitoboxing in Palo Alto. Honestly, it was exactly what I needed!\n\nResearch is intense, travel tiring, and sometimes the best way to get your head straight is not another coffee, but gloves and sweat.\n\nHuge thanks to Mark and the whole team for the warm welcome, great energy, and for helping me reset after long days."
+  "text": "This week I have been at Stanford, spending my days working and my evenings at Nitoboxing in Palo Alto. Honestly, it was exactly what I needed!\n\nResearch is intense, travel tiring, and sometimes the best way to get your head straight is not another coffee, but gloves and sweat.\n\nHuge thanks to Mark and the whole team for the warm welcome, great energy, and for helping me reset after long days.",
+  "image_size": [
+   [
+    800,
+    481
+   ]
+  ],
+  "image_alt": [
+   "Two photographs from the Nitoboxing gym in Palo Alto: Zuzana Havránková standing with a trainer beside the ring, and the gym's chalkboard sign reading “Boxing — it's cheaper than therapy”."
+  ]
  },
  {
   "date": "2026-07-04",
@@ -31,7 +54,16 @@
   "images": [
    "2026-07-04_p4_1.jpeg"
   ],
-  "text": "Proud to be affiliated with Stanford METRICS. Few groups have done more for reproducibility and research integrity than John Ioannidis and his team, and it's a pleasure to meet in person some of the postdocs behind so much of the work: Alejandro Sandoval Lentisco, Quentin Loisel, and Sarah Tanveer.\n\nHappy Fourth of July, and happy 250th, America!!"
+  "text": "Proud to be affiliated with Stanford METRICS. Few groups have done more for reproducibility and research integrity than John Ioannidis and his team, and it's a pleasure to meet in person some of the postdocs behind so much of the work: Alejandro Sandoval Lentisco, Quentin Loisel, and Sarah Tanveer.\n\nHappy Fourth of July, and happy 250th, America!!",
+  "image_size": [
+   [
+    800,
+    450
+   ]
+  ],
+  "image_alt": [
+   "Image from the post about the author's affiliation with Stanford METRICS."
+  ]
  },
  {
   "date": "2026-06-23",
@@ -42,7 +74,16 @@
   "images": [
    "2026-06-23_p5_1.jpeg"
   ],
-  "text": "If you plan to work on your ERC proposal this summer, the following tool might help you:\n\nhttps://lnkd.in/gAN6S747\n\nIt checks your draft at various stages against the official ERC evaluation criteria and rules, flags the routine weak spots, gives you tips, etc. The idea is to clear the easy problems before you ask humans, not to replace them.\n\nJust read the privacy note first: use a paid model with training turned off, or don't paste anything sensitive.\n\nWe built this with Tomas Havranek, who was on the ERC Advanced economics panel in 2020 and is involved in the expert group supporting ERC applicants in Czechia.\n\nYou might also check our related tools: mad-research (https://lnkd.in/dtGSi8zP), which stress-tests your paper or proposal with a Claude/Codex debate, and paper-workshop (https://lnkd.in/dk5NQpcE), which simulates an expert workshop on your stuff.\n\nIf you have any comments or feedback, we'll be happy to incorporate them into the tools."
+  "text": "If you plan to work on your ERC proposal this summer, the following tool might help you:\n\nhttps://lnkd.in/gAN6S747\n\nIt checks your draft at various stages against the official ERC evaluation criteria and rules, flags the routine weak spots, gives you tips, etc. The idea is to clear the easy problems before you ask humans, not to replace them.\n\nJust read the privacy note first: use a paid model with training turned off, or don't paste anything sensitive.\n\nWe built this with Tomas Havranek, who was on the ERC Advanced economics panel in 2020 and is involved in the expert group supporting ERC applicants in Czechia.\n\nYou might also check our related tools: mad-research (https://lnkd.in/dtGSi8zP), which stress-tests your paper or proposal with a Claude/Codex debate, and paper-workshop (https://lnkd.in/dk5NQpcE), which simulates an expert workshop on your stuff.\n\nIf you have any comments or feedback, we'll be happy to incorporate them into the tools.",
+  "image_size": [
+   [
+    800,
+    161
+   ]
+  ],
+  "image_alt": [
+   "Screenshot of the tool described in the post, which checks an ERC proposal against the call requirements."
+  ]
  },
  {
   "date": "2026-06-10",
@@ -53,7 +94,16 @@
   "images": [
    "2026-06-10_p6_1.jpeg"
   ],
-  "text": "Imagine a panel of the world's leading experts, assembled for your research paper, arguing it out from rival schools and then revising it themselves.\n\nWell, that's not possible. But we built an approximation with Claude Code, and it now uses the full power of Anthropic's Mythos-class model, Claude Fable 5.\n\nBelow is the skill, open and free. You give it your paper, ideally with the data and draft code. You get a stress test of your paper + a revision in track changes + a replication package. We ran it end to end on colleagues' papers and our own paper accepted at JPE Micro, Stata and R re-runs included. Enjoy:\n\nhttps://lnkd.in/dk5NQpcE"
+  "text": "Imagine a panel of the world's leading experts, assembled for your research paper, arguing it out from rival schools and then revising it themselves.\n\nWell, that's not possible. But we built an approximation with Claude Code, and it now uses the full power of Anthropic's Mythos-class model, Claude Fable 5.\n\nBelow is the skill, open and free. You give it your paper, ideally with the data and draft code. You get a stress test of your paper + a revision in track changes + a replication package. We ran it end to end on colleagues' papers and our own paper accepted at JPE Micro, Stata and R re-runs included. Enjoy:\n\nhttps://lnkd.in/dk5NQpcE",
+  "image_size": [
+   [
+    800,
+    189
+   ]
+  ],
+  "image_alt": [
+   "Screenshot from the post about assembling a panel of AI models to argue over a research paper."
+  ]
  },
  {
   "date": "2026-06-04",
@@ -73,7 +123,16 @@
   "images": [
    "2026-06-22_p8_1.jpeg"
   ],
-  "text": "Do you know that Claude Code can use Codex to stress test its work?\n\nI had both installed and used them interchangeably: for some tasks, one seems to be better, and vice versa. Also, sometimes I hit usage limit in one, so I continue in the other.\n\nThis can be automated easily: work from Claude Code and call Codex when needed. Here is the Claude skill, applied to stress-testing research:\n\nhttps://lnkd.in/dtGSi8zP\n\nThis builds on our previous manual protocols for using different AI models to test research ideas or papers:\n\nhttps://lnkd.in/dRwKz63g\n\nDoes the skill work for you? What should we change? Should we add Gemini?"
+  "text": "Do you know that Claude Code can use Codex to stress test its work?\n\nI had both installed and used them interchangeably: for some tasks, one seems to be better, and vice versa. Also, sometimes I hit usage limit in one, so I continue in the other.\n\nThis can be automated easily: work from Claude Code and call Codex when needed. Here is the Claude skill, applied to stress-testing research:\n\nhttps://lnkd.in/dtGSi8zP\n\nThis builds on our previous manual protocols for using different AI models to test research ideas or papers:\n\nhttps://lnkd.in/dRwKz63g\n\nDoes the skill work for you? What should we change? Should we add Gemini?",
+  "image_size": [
+   [
+    800,
+    602
+   ]
+  ],
+  "image_alt": [
+   "Screenshot showing Claude Code invoking Codex to stress-test its own work, as described in the post."
+  ]
  },
  {
   "date": "2026-05-13",
@@ -84,7 +143,16 @@
   "images": [
    "2026-05-22_p9_1.jpeg"
   ],
-  "text": "Reporting Guidelines for Meta-Analysis in Economics, updated for AI, just published in the Journal of Economic Surveys:\nhttps://lnkd.in/d_BciGAd\n\nTwo practical points I would emphasize (my personal opinion), beyond the reporting checklist itself:\n\n1️⃣ If you use AI for searching, screening, or coding, don't rely on a single model. Use meta-analysis thinking: each model is trained differently and on different data (think Claude vs. Grok). Even if one model strictly dominates, there will be useful information in the others, and you need to stress-test your favorite model brutally regardless. We have developed a simple Research Audit Protocol based on Multi-Agent Debate (MAD) for exactly this:\nhttps://lnkd.in/d63DFbPz\n\n2️⃣ These guidelines intentionally do not recommend any particular methodology. We do so in our 2024 method guidelines (https://lnkd.in/dPcDR7Gr). Brief update: I think the baseline meta-analysis technique is now Robust Bayesian Meta-Analysis (RoBMA) by František Bartoš, Maximilian Maier, and Eric-Jan Wagenmakers -- a principled way to average over various bias-correction methods. But these methods don't address p-hacking, so RoBMA should be complemented with MAIVE (easy to apply via https://easymeta.org) and RTMA (Maya Mathur).\n\nThe updated reporting guidelines were led by Nikolai Cook and co-authored with František Bartoš, Pedro Bom, Sebastian Gechert, Klára Kantová, Jerome Geyer-Klingeberg, Dr.-Ing., Tomas Havranek, Martina Lušková, Matej Opatrny, Franz Prante, Heiko Rachinger, and Tom Stanley."
+  "text": "Reporting Guidelines for Meta-Analysis in Economics, updated for AI, just published in the Journal of Economic Surveys:\nhttps://lnkd.in/d_BciGAd\n\nTwo practical points I would emphasize (my personal opinion), beyond the reporting checklist itself:\n\n1️⃣ If you use AI for searching, screening, or coding, don't rely on a single model. Use meta-analysis thinking: each model is trained differently and on different data (think Claude vs. Grok). Even if one model strictly dominates, there will be useful information in the others, and you need to stress-test your favorite model brutally regardless. We have developed a simple Research Audit Protocol based on Multi-Agent Debate (MAD) for exactly this:\nhttps://lnkd.in/d63DFbPz\n\n2️⃣ These guidelines intentionally do not recommend any particular methodology. We do so in our 2024 method guidelines (https://lnkd.in/dPcDR7Gr). Brief update: I think the baseline meta-analysis technique is now Robust Bayesian Meta-Analysis (RoBMA) by František Bartoš, Maximilian Maier, and Eric-Jan Wagenmakers -- a principled way to average over various bias-correction methods. But these methods don't address p-hacking, so RoBMA should be complemented with MAIVE (easy to apply via https://easymeta.org) and RTMA (Maya Mathur).\n\nThe updated reporting guidelines were led by Nikolai Cook and co-authored with František Bartoš, Pedro Bom, Sebastian Gechert, Klára Kantová, Jerome Geyer-Klingeberg, Dr.-Ing., Tomas Havranek, Martina Lušková, Matej Opatrny, Franz Prante, Heiko Rachinger, and Tom Stanley.",
+  "image_size": [
+   [
+    800,
+    344
+   ]
+  ],
+  "image_alt": [
+   "Figure from the updated Reporting Guidelines for Meta-Analysis in Economics announced in the post."
+  ]
  },
  {
   "date": "2026-04-28",
@@ -95,7 +163,16 @@
   "images": [
    "2026-05-01_p10_1.jpeg"
   ],
-  "text": "Will our results change if we redo the meta-analysis from scratch?\n\nWe just pre-registered a big revision of our meta-analysis on beauty and professional success:\n\nhttps://lnkd.in/dBSAB5N2\n\nThe current paper follows standards commonly used in economics meta-analysis. For the revision we decided to do the search and data collection differently, following multidisciplinary systematic-review practice: a librarian-designed multi-database search, dual screening, coding reliability checks, PRISMA documentation, and a full audit trail.\n\nA nice side effect is that this becomes a natural experiment on our own work. Honestly, I'm curious how much it will move the results.\n\nThe amazing Martina Lušková joined the team to help lead study selection and coding, and we are working with a librarian at the University of Amsterdam on the search strategy.\n\nIn the current version we find that the effect of beauty on earnings is smaller than commonly thought once you correct for publication bias and p-hacking, and smaller still when more weight is given to studies that control for cognitive ability. The one clear exception is sex workers. For politicians, the beauty premium mostly goes away after correction.\n\nTo make the comparison fully transparent, we also uploaded the current paper, data, and code to the registration.\n\nWe should do much more pre-registration in observational research. It doesn't fully prevent p-hacking, but it helps a lot and the cost is low.\n\nCo-authored with Tomas Havranek, František Bartoš, Xenia Bortnikova, and Martina Lušková"
+  "text": "Will our results change if we redo the meta-analysis from scratch?\n\nWe just pre-registered a big revision of our meta-analysis on beauty and professional success:\n\nhttps://lnkd.in/dBSAB5N2\n\nThe current paper follows standards commonly used in economics meta-analysis. For the revision we decided to do the search and data collection differently, following multidisciplinary systematic-review practice: a librarian-designed multi-database search, dual screening, coding reliability checks, PRISMA documentation, and a full audit trail.\n\nA nice side effect is that this becomes a natural experiment on our own work. Honestly, I'm curious how much it will move the results.\n\nThe amazing Martina Lušková joined the team to help lead study selection and coding, and we are working with a librarian at the University of Amsterdam on the search strategy.\n\nIn the current version we find that the effect of beauty on earnings is smaller than commonly thought once you correct for publication bias and p-hacking, and smaller still when more weight is given to studies that control for cognitive ability. The one clear exception is sex workers. For politicians, the beauty premium mostly goes away after correction.\n\nTo make the comparison fully transparent, we also uploaded the current paper, data, and code to the registration.\n\nWe should do much more pre-registration in observational research. It doesn't fully prevent p-hacking, but it helps a lot and the cost is low.\n\nCo-authored with Tomas Havranek, František Bartoš, Xenia Bortnikova, and Martina Lušková",
+  "image_size": [
+   [
+    800,
+    520
+   ]
+  ],
+  "image_alt": [
+   "Figure from the pre-registered revision of the meta-analysis on beauty and professional success described in the post."
+  ]
  },
  {
   "date": "2026-04-22",
@@ -106,7 +183,16 @@
   "images": [
    "2026-04-22_p11_1.jpeg"
   ],
-  "text": "Not an easy task, but in a new note just out in the Journal of Economic Surveys we try to set a basic floor on the use of AI in meta-analysis.\n\nhttps://lnkd.in/dZNGRfJb\n\nShort version:\n\n🔹 Human leadership. Humans direct the search, coding, and analysis, and record where they override the AI.\n\n🔹 Human accountability. AI cannot be a co-author. If your name is on the paper, the errors are yours.\n\n🔹 Human auditing. AI can serve as one of the coders, as long as humans audit at least 10% of screening records and 10% of coded studies (or 100 and 20, whichever is larger), and report a measure of agreement.\n\n🔹 Human disclosure. Anything that shapes search, screening, coding, analysis, or conclusions should be disclosed, with prompts and model versions saved.\n\nThe effort was led by the amazing Nikolai Cook. It will be periodically updated at maer-net.org.\n\nFor the full discussion of how we agreed on these guidelines (scroll down to comments):\nhttps://lnkd.in/dME6se-W"
+  "text": "Not an easy task, but in a new note just out in the Journal of Economic Surveys we try to set a basic floor on the use of AI in meta-analysis.\n\nhttps://lnkd.in/dZNGRfJb\n\nShort version:\n\n🔹 Human leadership. Humans direct the search, coding, and analysis, and record where they override the AI.\n\n🔹 Human accountability. AI cannot be a co-author. If your name is on the paper, the errors are yours.\n\n🔹 Human auditing. AI can serve as one of the coders, as long as humans audit at least 10% of screening records and 10% of coded studies (or 100 and 20, whichever is larger), and report a measure of agreement.\n\n🔹 Human disclosure. Anything that shapes search, screening, coding, analysis, or conclusions should be disclosed, with prompts and model versions saved.\n\nThe effort was led by the amazing Nikolai Cook. It will be periodically updated at maer-net.org.\n\nFor the full discussion of how we agreed on these guidelines (scroll down to comments):\nhttps://lnkd.in/dME6se-W",
+  "image_size": [
+   [
+    759,
+    334
+   ]
+  ],
+  "image_alt": [
+   "Figure from the note in the Journal of Economic Surveys described in the post."
+  ]
  },
  {
   "date": "2026-04-02",
@@ -153,7 +239,16 @@
   "images": [
    "2026-03-22_p16_1.jpeg"
   ],
-  "text": "Meta-analyses should try to correct not just for publication bias, but also for p-hacking.\n\nSome estimates are more likely to be reported than others, so every good summary of research should correct for this publication bias. In case you're wondering — yes, this can be done, there are dozens of methods and decades of research on this. There is even a great way to put these different correction techniques together: see RoBMA by František Bartoš and colleagues.\n\nThe problem is that these techniques assume that the reported estimates are individually unbiased. This is a strong assumption, as researchers can tweak models (consciously or unconsciously) to get more \"sensible\" results. This is called p-hacking. Most of us do it.\n\nIn our recent Nature Communications paper we show that under some forms of p-hacking, classical models correcting for publication bias can actually be more biased than a simple average of published estimates.\n\nAs far as I know, there are only two meta-analysis corrections for (some forms of) p-hacking: our MAIVE (from the Nature Comms paper) and RTMA by Maya Mathur. If you know of more, please let me know in the comments!\n\nIf you want to see MAIVE and RTMA applied, take a look at our meta-analysis of the beauty premium. Spoiler: apart from the sex industry, beauty doesn't matter much in the labor market."
+  "text": "Meta-analyses should try to correct not just for publication bias, but also for p-hacking.\n\nSome estimates are more likely to be reported than others, so every good summary of research should correct for this publication bias. In case you're wondering — yes, this can be done, there are dozens of methods and decades of research on this. There is even a great way to put these different correction techniques together: see RoBMA by František Bartoš and colleagues.\n\nThe problem is that these techniques assume that the reported estimates are individually unbiased. This is a strong assumption, as researchers can tweak models (consciously or unconsciously) to get more \"sensible\" results. This is called p-hacking. Most of us do it.\n\nIn our recent Nature Communications paper we show that under some forms of p-hacking, classical models correcting for publication bias can actually be more biased than a simple average of published estimates.\n\nAs far as I know, there are only two meta-analysis corrections for (some forms of) p-hacking: our MAIVE (from the Nature Comms paper) and RTMA by Maya Mathur. If you know of more, please let me know in the comments!\n\nIf you want to see MAIVE and RTMA applied, take a look at our meta-analysis of the beauty premium. Spoiler: apart from the sex industry, beauty doesn't matter much in the labor market.",
+  "image_size": [
+   [
+    800,
+    572
+   ]
+  ],
+  "image_alt": [
+   "Funnel plot of estimates of the beauty effect on earnings. The bulk of estimates cluster near zero; a red line marks the mean of 4.3 per cent, and estimates for sex workers, shown separately in red, sit well to the right of it."
+  ]
  },
  {
   "date": "2026-02-12",
@@ -191,7 +286,16 @@
   "images": [
    "2025-12-31_p22_1.jpeg"
   ],
-  "text": "Jak vytěžit z AI maximum?\nNechte modely bojovat mezi sebou. 🧠🤖\n\nV dnešních Hospodářské noviny ukazujeme jednoduchý, ale účinný postup, jak pracovat efektivněji s umělou inteligencí.\n\nMísto jedné odpovědi: duel AI modelů.\n\nChatGPT vs. Gemini (nebo jiná kombinace).\n🔹 Jeden model dostane roli kreativního vizionáře, který nápad rozvíjí.\n🔹 Druhý je ďáblův advokát – systematicky hledá faktické i logické chyby.\n🔹 Modely si navzájem napadají výstupy a opravují se.\n\nVýsledek?\n👉 Méně halucinací.\n👉 Tvrdší „stress test“ nápadů.\n👉 Kvalitnější výstup než od jednoho modelu.\n\nNemáte předplatné ChatGPT?\nŽádný problém. Duel zvládnete i manuálně – stačí otevřít vedle sebe dva zdarma dostupné AI modely, dát jim stejná data a protichůdné role a jejich odpovědi mezi sebou křížit. Po několika kolech už dává smysl výstupy číst.\n\n🔗 Odemčený článek v HN:\nhttps://lnkd.in/dBbUetrP\n🔗 Duelový protokol (prompt + návod):\nhttps://lnkd.in/dRwKz63g"
+  "text": "Jak vytěžit z AI maximum?\nNechte modely bojovat mezi sebou. 🧠🤖\n\nV dnešních Hospodářské noviny ukazujeme jednoduchý, ale účinný postup, jak pracovat efektivněji s umělou inteligencí.\n\nMísto jedné odpovědi: duel AI modelů.\n\nChatGPT vs. Gemini (nebo jiná kombinace).\n🔹 Jeden model dostane roli kreativního vizionáře, který nápad rozvíjí.\n🔹 Druhý je ďáblův advokát – systematicky hledá faktické i logické chyby.\n🔹 Modely si navzájem napadají výstupy a opravují se.\n\nVýsledek?\n👉 Méně halucinací.\n👉 Tvrdší „stress test“ nápadů.\n👉 Kvalitnější výstup než od jednoho modelu.\n\nNemáte předplatné ChatGPT?\nŽádný problém. Duel zvládnete i manuálně – stačí otevřít vedle sebe dva zdarma dostupné AI modely, dát jim stejná data a protichůdné role a jejich odpovědi mezi sebou křížit. Po několika kolech už dává smysl výstupy číst.\n\n🔗 Odemčený článek v HN:\nhttps://lnkd.in/dBbUetrP\n🔗 Duelový protokol (prompt + návod):\nhttps://lnkd.in/dRwKz63g",
+  "image_size": [
+   [
+    800,
+    533
+   ]
+  ],
+  "image_alt": [
+   "Obrázek k příspěvku o článku v Hospodářských novinách o souboji dvou modelů umělé inteligence."
+  ]
  },
  {
   "date": "2025-12-23",
@@ -217,9 +321,7 @@
   "url": "https://www.linkedin.com/feed/update/urn%3Ali%3Ashare%3A7404420382004539392",
   "reshare_with_comment": true,
   "lang": "en",
-  "images": [
-   "2025-12-21_p26_1.png"
-  ],
+  "images": [],
   "text": "🔎 MAIVE is now on CRAN: Better tools for trustworthy meta-analysis\n\nMeta-analysis is one of the key pillars of evidence-based research. It combines results from many studies to give us a clearer, more reliable answer.\n\nBut in observational research, studies can sometimes appear too precise --not because the evidence is strong, but because of method choices, selective reporting, or p-hacking. This can distort the final meta-analytic conclusion.\nMAIVE helps address this.\n\nYou can now install MAIVE directly in R:\n\ninstall.packages(\"MAIVE\")\n\nOr try it instantly in your browser (no coding needed):\n 🖥️ https://www.easymeta.org\nMore details:\n 📦 CRAN package: https://lnkd.in/dQ7XjiAq\n\n 📄 Nature Communications article: https://lnkd.in/eFfrP6H2\n\n 📰 Blog overview: https://lnkd.in/ejkgbU6X\n\nA big thank-you to Petr Čala, who built the MAIVE web app and prepared the CRAN release. His work makes high-quality meta-analysis methods accessible.\n\n#metaanalysis #OpenScience #researchmethods #RStats"
  },
  {
@@ -231,7 +333,16 @@
   "images": [
    "2025-11-20_p27_1.png"
   ],
-  "text": "🔎 New in Nature Communications: “Spurious precision in meta-analysis of observational research.”\n\nSometimes studies appear too precise because their reported uncertainty reflects method choices rather than real evidence strength. This can mislead meta-analyses.\n\nWe introduce MAIVE, a simple way to detect and correct such bias, including publication bias and p-hacking.\n\n🖥️ Try it in your browser (free, no coding): https://www.easymeta.org\n\n 📄 Paper: https://lnkd.in/eFfrP6H2\n\n 📰 Blog: https://lnkd.in/ejkgbU6X\n\n— Kudos to my great co-authors Pedro Bom, Tomas Havranek, and Heiko Rachinger\n\n #metaanalysis #researchmethods #OpenScience #NatureCommunications"
+  "text": "🔎 New in Nature Communications: “Spurious precision in meta-analysis of observational research.”\n\nSometimes studies appear too precise because their reported uncertainty reflects method choices rather than real evidence strength. This can mislead meta-analyses.\n\nWe introduce MAIVE, a simple way to detect and correct such bias, including publication bias and p-hacking.\n\n🖥️ Try it in your browser (free, no coding): https://www.easymeta.org\n\n 📄 Paper: https://lnkd.in/eFfrP6H2\n\n 📰 Blog: https://lnkd.in/ejkgbU6X\n\n— Kudos to my great co-authors Pedro Bom, Tomas Havranek, and Heiko Rachinger\n\n #metaanalysis #researchmethods #OpenScience #NatureCommunications",
+  "image_size": [
+   [
+    293,
+    165
+   ]
+  ],
+  "image_alt": [
+   "Two funnel plots from the Nature Communications paper, contrasting selection on estimates with selection on standard errors."
+  ]
  },
  {
   "date": "2023-04-12",
@@ -242,7 +353,16 @@
   "images": [
    "2023-04-12_kenya.jpeg"
   ],
-  "text": "Přátelé,\nkaždoročně věnuje skupina českých lékařů měsíce svého života budování nemocnice a pomoci nemocným v keňském Itibu. Možná je znáte z filmu Daleko za sluncem. Některé dobrovolníky osobně znám; zrovna se snaží o sbírku na přístroj, který by zlepšil či zachránil život mnohým. Sbírka měsíce stagnuje, cíl je daleko.\n\nProsím pomozte jim pomáhat na\nhttps://lnkd.in/eR_cCtDx\n\nJako každá legit donation i tahle je tax-deductible."
+  "text": "Přátelé,\nkaždoročně věnuje skupina českých lékařů měsíce svého života budování nemocnice a pomoci nemocným v keňském Itibu. Možná je znáte z filmu Daleko za sluncem. Některé dobrovolníky osobně znám; zrovna se snaží o sbírku na přístroj, který by zlepšil či zachránil život mnohým. Sbírka měsíce stagnuje, cíl je daleko.\n\nProsím pomozte jim pomáhat na\nhttps://lnkd.in/eR_cCtDx\n\nJako každá legit donation i tahle je tax-deductible.",
+  "image_size": [
+   [
+    480,
+    252
+   ]
+  ],
+  "image_alt": [
+   "Obrázek ke sbírce na biochemický analyzátor pro nemocnici v keňském Itibu."
+  ]
  },
  {
   "date": "2022-07-20",

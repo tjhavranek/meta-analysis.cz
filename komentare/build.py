@@ -673,9 +673,15 @@ def write_index(items, key=None):
     counts = ""
     if not key:
         c = {k: sum(1 for a in items if a["category"] == k) for k in SECTIONS}
-        counts = ("      <p>" + " · ".join(
-            f'<a href="{PATH}/{k}/">{esc(SECTIONS[k]["short"])} ({c[k]})</a>'
-            for k in SECTIONS if c[k]) + "</p>\n")
+        links = [f'<a href="{PATH}/{k}/">{esc(SECTIONS[k]["short"])} ({c[k]})</a>'
+                 for k in SECTIONS if c[k]]
+        # Ze sítí is not a SECTION (its posts are not src items), so it has to be added
+        # here by hand or the hub gives no route to it but the nav.
+        n_soc = (len(json.loads(SOCIAL_JSON.read_text(encoding="utf-8")))
+                 if SOCIAL_JSON.exists() else 0)
+        if n_soc:
+            links.append(f'<a href="{PATH}/ze-siti/">Ze sítí ({n_soc})</a>')
+        counts = "      <p>" + " · ".join(links) + "</p>\n"
 
     body = (f'    <div class="lede">\n      <h1>{esc(title)}</h1>\n'
             f'      <p>{esc(desc)}</p>\n{counts}    </div>\n'
@@ -898,6 +904,16 @@ SOCIAL_DESC = ("Příspěvky Zuzany Havránkové ze sítí — kratší poznámk
 _LINK = re.compile(r"https?://[^\s<>]+")
 
 
+def _trim_url(u):
+    """A URL written inside a sentence ends before the sentence's punctuation.
+    Keep a closing bracket only when the URL itself opened one."""
+    while u and u[-1] in ".,;:!?“”’'":
+        u = u[:-1]
+    while u.endswith(")") and u.count("(") < u.count(")"):
+        u = u[:-1]
+    return u
+
+
 def _social_html(text):
     """Post text is plain: escape it, then make the bare URLs clickable."""
     out = []
@@ -906,9 +922,20 @@ def _social_html(text):
         if not lines:
             continue
         body = "<br>".join(lines)
-        body = _LINK.sub(lambda m: f'<a href="{m.group(0)}" rel="nofollow">{m.group(0)}</a>', body)
+        def _a(m):
+            u = _trim_url(m.group(0))
+            return f'<a href="{u}" rel="nofollow">{u}</a>{m.group(0)[len(u):]}'
+        body = _LINK.sub(_a, body)
         out.append(f"<p>{body}</p>")
     return "\n        ".join(out)
+
+
+def _headline(text):
+    """First line, cut at a word boundary — a headline sliced mid-word reads as broken."""
+    h = text.split(chr(10))[0].strip()
+    if len(h) <= 110:
+        return h
+    return h[:110].rsplit(" ", 1)[0].rstrip(" ,;:") + "…"
 
 
 def write_socials_page():
@@ -921,16 +948,29 @@ def write_socials_page():
         return []
     posts = json.loads(SOCIAL_JSON.read_text(encoding="utf-8"))
     posts.sort(key=lambda p: p["date"], reverse=True)
-    for i, p in enumerate(posts):
-        p["anchor"] = f"{p['date']}-{i + 1}"
+    # Per-DAY counter, not per-list-position: a new post must never renumber the
+    # anchors of older ones, or every deep link and every stored @id breaks.
+    seen_day = {}
+    for p in sorted(posts, key=lambda x: x.get("datetime", x["date"])):
+        n = seen_day[p["date"]] = seen_day.get(p["date"], 0) + 1
+        p["anchor"] = p["date"] if n == 1 else f"{p['date']}-{n}"
 
-    blocks, parts = [], []
+    blocks, parts, cur_year = [], [], None
     for p in posts:
+        if p["date"][:4] != cur_year:
+            cur_year = p["date"][:4]
+            blocks.append(f'      <h2 class="year" id="rok-{cur_year}">{cur_year}</h2>')
         lang = p.get("lang", "en")
-        imgs = "".join(
-            f'\n        <img src="{PATH}/social-img/{esc(f)}" alt="" loading="lazy" '
-            f'decoding="async" width="800">'
-            for f in p.get("images", []))
+        # Real width/height, so a lazy image cannot shift the layout as it loads, and a
+        # real alt: these are result figures and screenshots, not decoration. alt=""
+        # tells a screen reader to skip the image entirely.
+        sizes, alts, imgs = p.get("image_size") or [], p.get("image_alt") or [], ""
+        for i, f in enumerate(p.get("images", [])):
+            wh = (f' width="{sizes[i][0]}" height="{sizes[i][1]}"'
+                  if i < len(sizes) and sizes[i][0] else "")
+            imgs += (f'\n        <img src="{PATH}/social-img/{esc(f)}"'
+                     f' alt="{esc(alts[i] if i < len(alts) else "")}"'
+                     f' loading="lazy" decoding="async"{wh}>')
         orig = (f' <a class="post-src" href="{esc(p["url"])}" rel="nofollow">'
                 f'{"originál" if lang == "cs" else "original"}</a>') if p.get("url") else ""
         blocks.append(
@@ -944,10 +984,11 @@ def write_socials_page():
             "@type": "SocialMediaPosting",
             "@id": f"{BASE}/ze-siti/#{p['anchor']}",
             "headline": p["text"].split("\n")[0][:110],
-            "datePublished": p.get("datetime", p["date"]).replace(" ", "T"),
+            "datePublished": p.get("datetime", p["date"]).replace(" ", "T") + "+00:00",
             "inLanguage": lang,
+            "url": f"{BASE}/ze-siti/#{p['anchor']}",
             "author": {"@type": "Person", "name": "Zuzana Havránková",
-                       "identifier": ORCIDS["Zuzana Havránková"]},
+                       "sameAs": ORCIDS["Zuzana Havránková"]},
             "text": p["text"],
         }
         if p.get("url"):
@@ -958,26 +999,32 @@ def write_socials_page():
 
     jsonld = {"@context": "https://schema.org", "@graph": [
         {"@type": "CollectionPage", "@id": f"{BASE}/ze-siti/", "url": f"{BASE}/ze-siti/",
-         "name": "Ze sítí", "description": SOCIAL_DESC, "inLanguage": "cs",
-         "isPartOf": {"@id": f"{BASE}/"}, "hasPart": parts}]}
+         "name": "Ze sítí", "description": SOCIAL_DESC, # the page itself is Czech — its chrome, heading and lede. Each post carries
+         # its own inLanguage, which is where the English/Czech mix is declared.
+         "inLanguage": "cs",
+         "hasPart": parts}]}
 
+    # shell() already opens <main><div class="wrap">; a second one here doubled the
+    # padding and made this the narrowest page on the site.
+    years = sorted({p["date"][:4] for p in posts}, reverse=True)
+    jump = " · ".join(f'<a href="#rok-{y}">{y}</a>' for y in years)
     body = (
-        '  <div class="wrap">\n'
         '    <div class="lede reading">\n'
         '      <h1>Ze sítí</h1>\n'
         f'      <p>{esc(SOCIAL_DESC)}</p>\n'
         '      <p class="post-note">Příspěvky jsou zde v plném znění tak, jak je autorka '
-        'zveřejnila; převzaté cizí příspěvky nezařazujeme. U části příspěvků zná '
-        'LinkedIn jen přibližné stáří, proto je datum orientační — takové případy jsou '
-        'označeny.</p>\n'
+        'zveřejnila, včetně původního členění na odstavce; převzaté cizí příspěvky '
+        'nezařazujeme. Zdrojem je oficiální export dat z LinkedIn, data i odkazy na '
+        'originály jsou proto přesné. <strong>Většina příspěvků je psána anglicky.</strong>'
+        '</p>\n'
+        f'      <p class="post-jump">{jump}</p>\n'
         '    </div>\n'
-        '    <div class="posts reading">\n' + "\n".join(blocks) + "\n    </div>\n"
-        '  </div>\n')
+        '    <div class="posts reading">\n' + "\n".join(blocks) + "\n    </div>\n")
 
     out = KDIR / "ze-siti"
     out.mkdir(exist_ok=True)
     (out / "index.html").write_text(
-        shell("Ze sítí", SOCIAL_DESC, f"{BASE}/ze-siti/", jsonld, body, "ze-siti"),
+        shell("Ze sítí — Zuzana Havránková", SOCIAL_DESC, f"{BASE}/ze-siti/", jsonld, body, "ze-siti"),
         encoding="utf-8")
     print(f"  ze-siti  {len(posts)} posts, "
           f"{sum(len(p.get('images', [])) for p in posts)} images")
@@ -1009,7 +1056,9 @@ def write_data_page(items):
              "name": f"Komentáře — {SITE_AUTHORS}",
              "description": HUB_DESC,
              "url": f"{BASE}/data/",
-             "inLanguage": ["cs", "en"],
+             # the page itself is Czech — its chrome, heading and lede. Each post carries
+         # its own inLanguage, which is where the English/Czech mix is declared.
+         "inLanguage": "cs",
              "isAccessibleForFree": True,
              "creator": {"@type": "Person", "name": AUTHOR,
                          "identifier": f"https://orcid.org/{ORCIDS[AUTHOR]}"},
@@ -1239,6 +1288,25 @@ def check():
                          f"(sources + {n_social} social posts)")
         if sum(1 for d in j["items"] if d.get("genre") == "social_post") != n_social:
             fails.append("index.json is missing the social posts")
+        # the social data path has no src/*.md behind it, so nothing else checks it
+        if SOCIAL_JSON.exists():
+            sp = json.loads(SOCIAL_JSON.read_text(encoding="utf-8"))
+            seen = {}
+            for p in sp:
+                for f in p.get("images", []):
+                    if not (KDIR / "social-img" / f).exists():
+                        fails.append(f"social image missing on disk: {f}")
+                    if f in seen:
+                        fails.append(f"social image used by two posts: {f}")
+                    seen[f] = 1
+                if len(p.get("image_alt") or []) != len(p.get("images") or []):
+                    fails.append(f"social post {p['date']} has images without alt text")
+            html_ze = (KDIR / "ze-siti" / "index.html").read_text(encoding="utf-8")
+            anch = re.findall(r'<article class="post" id="([^"]+)"', html_ze)
+            if len(anch) != len(set(anch)):
+                fails.append("ze-siti has duplicate anchors")
+            if len(anch) != len(sp):
+                fails.append(f"ze-siti renders {len(anch)} posts, data has {len(sp)}")
     except Exception as e:
         fails.append(f"index.json: {e}")
     print(f"checked {len(pages)} pages")
