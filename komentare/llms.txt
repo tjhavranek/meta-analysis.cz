@@ -2,7 +2,7 @@
 
 > Publicistika Tomáše Havránka a Zuzany Havránkové: komentáře pro celostátní média, sloupky pro litomyšlskou Lilii a rozhovory. Texty jsou zde archivovány v plném znění s odkazem na původní vydání.
 
-Publicistika: 175 položek, 2016–2026. Plné znění každého textu je na uvedené adrese; zdrojový Markdown je v /komentare/src/.
+Publicistika: 176 položek, 2016–2026. Plné znění každého textu je na uvedené adrese; zdrojový Markdown je v /komentare/src/.
 
 ## Celostátní komentáře
 
@@ -179,6 +179,7 @@ Rozhovory pro česká média. U audio a video rozhovorů uvádíme pouze odkaz n
 - [Krize je typický náhodný jev. Mýlíme se častěji než jiní vědci, říká ekonomka roku Zuzana Havránková](https://meta-analysis.cz/komentare/zi-iv-hn-krize-nahodny-jev/) — Hospodářské noviny, 21. prosince 2018
 - [Nejcitovanější český ekonom: Další krize určitě nevznikne u nás](https://meta-analysis.cz/komentare/iv-roklen24/) — Roklen24, 22. května 2018
 - [Nejcitovanější český ekonom: Dům je pro mě spotřeba](https://www.cnb.cz/cs/o_cnb/vlog-cnb/Nejcitovanejsi-cesky-ekonom-Dum-je-pro-me-spotreba/) — Česká národní banka, 26. dubna 2018 (video, pouze odkaz)
+- [Sázkaři jsou k vítězství Babiše skeptičtější než sociologové, říká mladá ekonomka, která kombinuje předvolební průzkumy a kurzy](https://meta-analysis.cz/komentare/zi-iv-hn-sazkari-babis/) — Hospodářské noviny, 16. října 2017
 
 ## In English
 

@@ -1,0 +1,911 @@
+0 notifications total
+
+Skip to searchSkip to main content
+
+Keyboard shortcutsClose jump menu
+
+Home
+
+My Network
+
+Jobs
+
+Messaging
+
+11 new notification
+
+Notifications
+
+Me
+
+For Business
+
+Reactivate Premium: 50% Off
+
+Zuzana Irsova Havrankova
+
+Professor of Economics, Charles University | Stanford METRICS Affiliate | Meta-Research, Labor, International Economics
+
+Followers
+
+1,676
+
+All activity
+
+PostsCommentsVideosImagesMore
+
+Loaded 30 Posts posts
+
+Feed post number 1
+
+Zuzana Irsova Havrankova   • YouProfessor of Economics, Charles University | Stanford METRICS Affiliate | Meta-Research, Labor, International Economics5d •
+
+Does multi-agent debate improve AI feedback on research papers? Not in our experiment.We just posted a pre-registered study in which authors ranked three AI reports on their own paper. The reports were blinded and came from three setups: a single prompt and two multi-agent tools. We expected the multi-agent tools to win.We find:1) Multi-agent debate does not help here. The single prompt beat both multi-agent tools, even though one of them spent about 30x the tokens.2) If an independent AI model ranked the reports in the authors' place, it would put the most expensive multi-agent tool first.3) Authors who recalled their real journal referee feedback usually ranked it above all the AI reports. In contrast, the AI judges almost always ranked the human feedback last.I was also surprised by how little the author and AI rankings agree (correlation 0.14). Authors seem to have actually read the AI reports (!) and thought about them, not just used a chatbot to rank them.Thanks to all 47 authors who participated!Paper: https://lnkd.in/d7YsNxWcBoth multi-agent tools are open source:https://lnkd.in/dtGSi8zPhttps://lnkd.in/dk5NQpcE
+
+Activate to view larger image,
+
+32Jiri Schwarz and 31 others
+
+4 comments
+
+1 repost
+
+Like
+
+Comment
+
+Repost
+
+Send
+
+1,389 impressions
+
+View analytics
+
+Feed post number 2
+
+Zuzana Irsova Havrankova   • YouProfessor of Economics, Charles University | Stanford METRICS Affiliate | Meta-Research, Labor, International Economics2w •
+
+This week I have been at Stanford, spending my days working and my evenings at Nitoboxing in Palo Alto. Honestly, it was exactly what I needed!Research is intense, travel tiring, and sometimes the best way to get your head straight is not another coffee, but gloves and sweat.Huge thanks to Mark and the whole team for the warm welcome, great energy, and for helping me reset after long days.
+
+Activate to view larger image,
+
+Activate to view larger image,
+
+40Simona Malovana 🇪🇺🇨🇿 and 39 others
+
+2 comments
+
+Like
+
+Comment
+
+Repost
+
+Send
+
+3,622 impressions
+
+View analytics
+
+Feed post number 3
+
+Zuzana Irsova Havrankova   • YouProfessor of Economics, Charles University | Stanford METRICS Affiliate | Meta-Research, Labor, International Economics2w •
+
+Proud to be affiliated with Stanford METRICS. Few groups have done more for reproducibility and research integrity than John Ioannidis and his team, and it's a pleasure to meet in person some of the postdocs behind so much of the work: Alejandro Sandoval Lentisco, Quentin Loisel, and Sarah Tanveer.Happy Fourth of July, and happy 250th, America!!
+
+Activate to view larger image,
+
+Activate to view larger image,
+
+47Jiri Schwarz and 46 others
+
+Like
+
+Comment
+
+Repost
+
+Send
+
+3,084 impressions
+
+View analytics
+
+Feed post number 4
+
+Zuzana Irsova Havrankova   • YouProfessor of Economics, Charles University | Stanford METRICS Affiliate | Meta-Research, Labor, International Economics4w •
+
+If you plan to work on your ERC proposal this summer, the following tool might help you:https://lnkd.in/gAN6S747It checks your draft at various stages against the official ERC evaluation criteria and rules, flags the routine weak spots, gives you tips, etc. The idea is to clear the easy problems before you ask humans, not to replace them.Just read the privacy note first: use a paid model with training turned off, or don't paste anything sensitive.We built this with Tomas Havranek, who was on the ERC Advanced economics panel in 2020 and is involved in the expert group supporting ERC applicants in Czechia.You might also check our related tools: mad-research (https://lnkd.in/dtGSi8zP), which stress-tests your paper or proposal with a Claude/Codex debate, and paper-workshop (https://lnkd.in/dk5NQpcE), which simulates an expert workshop on your stuff.If you have any comments or feedback, we'll be happy to incorporate them into the tools.
+
+Activate to view larger image,
+
+Activate to view larger image,
+
+97Petr Teply and 96 others
+
+5 comments
+
+4 reposts
+
+Like
+
+Comment
+
+Repost
+
+Send
+
+28,660 impressions
+
+View analytics
+
+Feed post number 5
+
+Zuzana Irsova Havrankova   • YouProfessor of Economics, Charles University | Stanford METRICS Affiliate | Meta-Research, Labor, International Economics1mo •
+
+Imagine a panel of the world's leading experts, assembled for your research paper, arguing it out from rival schools and then revising it themselves.Well, that's not possible. But we built an approximation with Claude Code, and it now uses the full power of Anthropic's Mythos-class model, Claude Fable 5.Below is the skill, open and free. You give it your paper, ideally with the data and draft code. You get a stress test of your paper + a revision in track changes + a replication package. We ran it end to end on colleagues' papers and our own paper accepted at JPE Micro, Stata and R re-runs included. Enjoy:https://lnkd.in/dk5NQpcE
+
+Activate to view larger image,
+
+Activate to view larger image,
+
+36Bart De Jong and 35 others
+
+4 comments
+
+3 reposts
+
+Like
+
+Comment
+
+Repost
+
+Send
+
+7,911 impressions
+
+View analytics
+
+Feed post number 6
+
+Zuzana Irsova Havrankova   • YouProfessor of Economics, Charles University | Stanford METRICS Affiliate | Meta-Research, Labor, International Economics1mo •
+
+Nesehnali jste už lístky na Smetanova Litomyšl, ale přesto chcete zakusit genius loci perly východních Čech? Snadná pomoc!Děti připravily festivalové vydání své závodní hry z Litomyšle:https://lnkd.in/gvEF-zD7Závodíte v litomyšlských ulicích s dalším hráčem na počítači, nebo na mobilu s botem. Můžete střílet, sbírat lepší zbraně, ničit budovy (např. školu).Pozor na bomby a zombie Bedřichy!Hru postavily děti samy v zimě s Claude Code za několik hodin (ač pak trvaly na mnoha hodinách testování 😉). Jasně, vypadá jako z 80. let. Ale je to jen malá ukázka toho, co současné agentní AI systémy dokážou, a není to zdaleka jen o kódování.Pokud jste Claude Code nebo Codex ještě nezkoušeli, určitě stojí za to nainstalovat, ať už se živíte čímkoli. Nejtěžší je překonat počáteční strach. Ono je to nakonec jednoduché.Detaily hry tady:https://lnkd.in/gVmACuyi
+
+Play
+
+Remaining time 0:01
+
+1x
+
+Playback speed
+
+Unmute
+
+Turn fullscreen on
+
+20Petr Teply and 19 others
+
+Like
+
+Comment
+
+Repost
+
+Send
+
+1,223 impressions
+
+View analytics
+
+Feed post number 7
+
+Zuzana Irsova Havrankova   • YouProfessor of Economics, Charles University | Stanford METRICS Affiliate | Meta-Research, Labor, International Economics1mo •
+
+Do you know that Claude Code can use Codex to stress test its work?I had both installed and used them interchangeably: for some tasks, one seems to be better, and vice versa. Also, sometimes I hit usage limit in one, so I continue in the other.This can be automated easily: work from Claude Code and call Codex when needed. Here is the Claude skill, applied to stress-testing research:https://lnkd.in/dtGSi8zPThis builds on our previous manual protocols for using different AI models to test research ideas or papers:https://lnkd.in/dRwKz63gDoes the skill work for you? What should we change? Should we add Gemini?
+
+Activate to view larger image,
+
+Activate to view larger image,
+
+38Vojtěch Kotrba and 37 others
+
+3 comments
+
+2 reposts
+
+Like
+
+Comment
+
+Repost
+
+Send
+
+4,295 impressions
+
+View analytics
+
+Feed post number 8
+
+Zuzana Irsova Havrankova   • YouProfessor of Economics, Charles University | Stanford METRICS Affiliate | Meta-Research, Labor, International Economics2mo •
+
+Reporting Guidelines for Meta-Analysis in Economics, updated for AI, just published in the Journal of Economic Surveys:https://lnkd.in/d_BciGAdTwo practical points I would emphasize (my personal opinion), beyond the reporting checklist itself:1️⃣ If you use AI for searching, screening, or coding, don't rely on a single model. Use meta-analysis thinking: each model is trained differently and on different data (think Claude vs. Grok). Even if one model strictly dominates, there will be useful information in the others, and you need to stress-test your favorite model brutally regardless. We have developed a simple Research Audit Protocol based on Multi-Agent Debate (MAD) for exactly this:https://lnkd.in/d63DFbPz2️⃣ These guidelines intentionally do not recommend any particular methodology. We do so in our 2024 method guidelines (https://lnkd.in/dPcDR7Gr). Brief update: I think the baseline meta-analysis technique is now Robust Bayesian Meta-Analysis (RoBMA) by František Bartoš, Maximilian Maier, and Eric-Jan Wagenmakers -- a principled way to average over various bias-correction methods. But these methods don't address p-hacking, so RoBMA should be complemented with MAIVE (easy to apply via https://easymeta.org) and RTMA (Maya Mathur).The updated reporting guidelines were led by Nikolai Cook and co-authored with František Bartoš, Pedro Bom, Sebastian Gechert, Klára Kantová, Jerome Geyer-Klingeberg, Dr.-Ing., Tomas Havranek, Martina Lušková, Matej Opatrny, Franz Prante, Heiko Rachinger, and Tom Stanley.
+
+Activate to view larger image,
+
+Activate to view larger image,
+
+94Vojtěch Kotrba and 93 others
+
+4 comments
+
+19 reposts
+
+Like
+
+Comment
+
+Repost
+
+Send
+
+10,883 impressions
+
+View analytics
+
+Feed post number 9
+
+Zuzana Irsova Havrankova   • YouProfessor of Economics, Charles University | Stanford METRICS Affiliate | Meta-Research, Labor, International Economics2mo • Edited •
+
+Will our results change if we redo the meta-analysis from scratch?We just pre-registered a big revision of our meta-analysis on beauty and professional success:https://lnkd.in/dBSAB5N2The current paper follows standards commonly used in economics meta-analysis. For the revision we decided to do the search and data collection differently, following multidisciplinary systematic-review practice: a librarian-designed multi-database search, dual screening, coding reliability checks, PRISMA documentation, and a full audit trail.A nice side effect is that this becomes a natural experiment on our own work. Honestly, I'm curious how much it will move the results.The amazing Martina Lušková joined the team to help lead study selection and coding, and we are working with a librarian at the University of Amsterdam on the search strategy.In the current version we find that the effect of beauty on earnings is smaller than commonly thought once you correct for publication bias and p-hacking, and smaller still when more weight is given to studies that control for cognitive ability. The one clear exception is sex workers. For politicians, the beauty premium mostly goes away after correction.To make the comparison fully transparent, we also uploaded the current paper, data, and code to the registration.We should do much more pre-registration in observational research. It doesn't fully prevent p-hacking, but it helps a lot and the cost is low.Co-authored with Tomas Havranek, František Bartoš, Xenia Bortnikova, and Martina Lušková
+
+Activate to view larger image,
+
+Activate to view larger image,
+
+49Vojtěch Kotrba and 48 others
+
+2 comments
+
+5 reposts
+
+Like
+
+Comment
+
+Repost
+
+Send
+
+4,199 impressions
+
+View analytics
+
+Feed post number 10
+
+Zuzana Irsova Havrankova   • YouProfessor of Economics, Charles University | Stanford METRICS Affiliate | Meta-Research, Labor, International Economics3mo •
+
+Not an easy task, but in a new note just out in the Journal of Economic Surveys we try to set a basic floor on the use of AI in meta-analysis.https://lnkd.in/dZNGRfJbShort version:🔹 Human leadership. Humans direct the search, coding, and analysis, and record where they override the AI.🔹 Human accountability. AI cannot be a co-author. If your name is on the paper, the errors are yours.🔹 Human auditing. AI can serve as one of the coders, as long as humans audit at least 10% of screening records and 10% of coded studies (or 100 and 20, whichever is larger), and report a measure of agreement.🔹 Human disclosure. Anything that shapes search, screening, coding, analysis, or conclusions should be disclosed, with prompts and model versions saved.The effort was led by the amazing Nikolai Cook. It will be periodically updated at maer-net.org.For the full discussion of how we agreed on these guidelines (scroll down to comments):https://lnkd.in/dME6se-W
+
+Activate to view larger image,
+
+Activate to view larger image,
+
+80Vojtěch Kotrba and 79 others
+
+3 comments
+
+8 reposts
+
+Like
+
+Comment
+
+Repost
+
+Send
+
+6,261 impressions
+
+View analytics
+
+Feed post number 11
+
+Zuzana Irsova Havrankova   • YouProfessor of Economics, Charles University | Stanford METRICS Affiliate | Meta-Research, Labor, International Economics3mo •
+
+It was fun to be (a very small) part of the amazing team led by Abel Brodeur. The numbers look great, but note that we replicate papers in journals that have mandatory data and code sharing. So: share your data and code! And while you're at it, pre-register your papers and upload pre-analysis plans. This is the way!
+
+Institute of Economic Studies, Faculty of Social Sciences, Charles University2,465 followers3mo • Edited •
+
+📢 IES Researchers Publish in NatureWe are proud to share that our colleagues Zuzana Irsova Havrankova , Tomas Havranek, and Jaromir Baxa have contributed to a study published in the prestigious journal Nature. This marks only the second social science publication in Nature involving Czech researchers and in both cases, researchers from IES FSV UK and CERGE-EI.The study analyzes 110 articles from leading economics and political science journals and addresses a key question: how reliable are published scientific results? It finds that around 85% of results are reproducible using the original data and code, although conclusions may vary under alternative, yet valid, analytical approaches.Conducted by more than 100 research teams worldwide, the study highlights the importance of transparency, data sharing, and rigorous methodology in strengthening trust in science.👏 Congratulations to our colleagues on this outstanding achievement.hashtag#IES hashtag#Research hashtag#Economics hashtag#OpenScience hashtag#Nature
+
+…more
+
+Activate to view larger image,
+
+Activate to view larger image,
+
+54Vědunka Kopečná and 53 others
+
+Like
+
+Comment
+
+Repost
+
+Send
+
+2,600 impressions
+
+View analytics
+
+Feed post number 12
+
+Zuzana Irsova Havrankova   • YouProfessor of Economics, Charles University | Stanford METRICS Affiliate | Meta-Research, Labor, International Economics3mo •
+
+Top 7 non-fiction books I recommend. 📚Not an endorsement of everything in these books, but I learned a great deal about economics, history, and politics.1️⃣ Bourgeois Equality (McCloskey): How the West got rich.2️⃣ In the Garden of Beasts (Larson): An American family in 1930s Berlin, watching a society die.3️⃣ Recession (Tyler Goodspeed): Why economies shrink. Excellent new book.4️⃣ Cicero (Everitt): The life of arguably the greatest statesman the West ever produced.5️⃣ Red Dawn Over China (Dikötter): How China became communist.6️⃣ The Lives of the Caesars (Suetonius): The most readable classical text I know. Reads like a novel.7️⃣ The Fiscal Theory of the Price Level (John H. Cochrane): A bold, rigorous book on modern macroeconomics.What's the best non-fiction book you've read this year?
+
+31Ondřej Vild and 30 others
+
+4 comments
+
+Like
+
+Comment
+
+Repost
+
+Send
+
+3,349 impressions
+
+View analytics
+
+Feed post number 13
+
+Zuzana Irsova Havrankova   • YouProfessor of Economics, Charles University | Stanford METRICS Affiliate | Meta-Research, Labor, International Economics4mo •
+
+Two AI models dueling worked. Four models debating works better.We updated our research audit protocol. The new version (MAD v2.0) uses ChatGPT, Claude, Gemini, and Grok in structured adversarial rounds:1️⃣ Independent critique — no model sees the others, every claim grounded in the document.2️⃣ Cross-examination — each model attacks the weakest peer arguments.3️⃣ Final arbiter synthesizes what survived.No code needed. Copy-paste prompts. Free model versions work (just register for each model).Advanced users: the entire workflow can be automated via the models' APIs using frameworks like AutoGen, LangGraph, or CrewAI.Use it for high-stakes documents: stress-testing your papers, grant proposals, referee reports.Protocol (GitHub): 👉 https://lnkd.in/dRwKz63g
+
+GitHub - tjhavranek/research-audit-duel-protocol: Human-in-the-loop adversarial workflows for high-stakes research audit: from ChatGPT-Gemini duels to 4-model MAD.
+
+github.com
+
+36Alexandros Karakostas and 35 others
+
+4 comments
+
+1 repost
+
+Like
+
+Comment
+
+Repost
+
+Send
+
+3,414 impressions
+
+View analytics
+
+Feed post number 14
+
+Zuzana Irsova Havrankova   • YouProfessor of Economics, Charles University | Stanford METRICS Affiliate | Meta-Research, Labor, International Economics4mo •
+
+Doporučuji všem rodičům včas testovat děti na cukrovku. Nám to bohužel vyšlo jednou pozitivní, ale díky tomu testu + moderní medicíně můžete nástup nemoci oddálit o několik let.Včasný test = šance na roky navíc bez inzulinu.Díky Barbora Berka a Natálie Chrástecká za skvělý přístup v Motole.Díky Jan Hrušovský za hezký rozhovor s mým manželem, který poprvé na kameru mluvil o něčem jiném než o ekonomii (což je většinou velmi ... poutavé 😉 ).https://lnkd.in/duWtcSbA
+
+Když screening odhalí cukrovku u dítěte: Nemá smysl se vztekat, říká tatínek malého diabetika
+
+youtube.com
+
+18
+
+5 comments
+
+2 reposts
+
+Like
+
+Comment
+
+Repost
+
+Send
+
+3,029 impressions
+
+View analytics
+
+Feed post number 15
+
+Zuzana Irsova Havrankova   • YouProfessor of Economics, Charles University | Stanford METRICS Affiliate | Meta-Research, Labor, International Economics4mo •
+
+Meta-analyses should try to correct not just for publication bias, but also for p-hacking.Some estimates are more likely to be reported than others, so every good summary of research should correct for this publication bias. In case you're wondering — yes, this can be done, there are dozens of methods and decades of research on this. There is even a great way to put these different correction techniques together: see RoBMA by František Bartoš and colleagues.The problem is that these techniques assume that the reported estimates are individually unbiased. This is a strong assumption, as researchers can tweak models (consciously or unconsciously) to get more "sensible" results. This is called p-hacking. Most of us do it.In our recent Nature Communications paper we show that under some forms of p-hacking, classical models correcting for publication bias can actually be more biased than a simple average of published estimates.As far as I know, there are only two meta-analysis corrections for (some forms of) p-hacking: our MAIVE (from the Nature Comms paper) and RTMA by Maya Mathur. If you know of more, please let me know in the comments!If you want to see MAIVE and RTMA applied, take a look at our meta-analysis of the beauty premium. Spoiler: apart from the sex industry, beauty doesn't matter much in the labor market.
+
+Activate to view larger image,
+
+Activate to view larger image,
+
+84Maya Mathur and 83 others
+
+3 comments
+
+Like
+
+Comment
+
+Repost
+
+Send
+
+74,557 impressions
+
+View analytics
+
+Feed post number 16
+
+Zuzana Irsova Havrankova   • YouProfessor of Economics, Charles University | Stanford METRICS Affiliate | Meta-Research, Labor, International Economics5mo •
+
+Congratulations to Martin! I am very sorry I couldn't be there. I love my hometown Rožňava.
+
+Central European Labour Studies Institute (CELSI)1,859 followers5mo •
+
+Follow
+
+Martin Kahanec awarded the City of Rožňava Prize 2026On February 5, the ceremonial session of the Rožňava City Council took place, during which municipal awards were presented. Each year, the council recognizes the city’s most successful athletes, teams, distinguished individuals, and citizens contributing in various fields.This year, the City of Rožňava Prize was awarded to CELSI Scientific Director Martin Kahanec, for his long-standing and outstanding contributions to research, promoting the good name of the Slovak Republic, and his native city of Rožňava at home and abroad.Other awardees included - Prof. Zuzana Irsova Havrankova, economist at Charles University in Prague, for her exceptional contributions to scientific research, and Erika Fábiánová, headmistress of the Elementary School Pionierov in Rožňava, for her outstanding contributions to education.The city also awarded honorary citizenship in memoriam to Marta Chaviva Reiková for her extraordinary engagement and selflessness in the resistance during World War II.Congratulations to all awardees.🎥 Recording of the award ceremony (in Slovak and Hungarian) in the comments.hashtag#MartinKahanec hashtag#SlovakScience hashtag#CELSI hashtag#LivingWage hashtag#Rožňava
+
+…more
+
+Activate to view larger image,
+
+Activate to view larger image,with Martin Kahanec and 5 others
+
+12
+
+Like
+
+Comment
+
+Repost
+
+Send
+
+1,095 impressions
+
+View analytics
+
+Feed post number 17
+
+Zuzana Irsova Havrankova reposted this
+
+Institute of Economic Studies, Faculty of Social Sciences, Charles University2,465 followers5mo •
+
+🎙️ Professor Zuzana Irsova Havrankova receives the 2025 Media Representation AwardOn February 10, 2026, the Faculty of Social Sciences, Charles University, honored academics for their media contributions in 2025. On behalf of IES FSV UK, the award was presented to Professor Zuzana Havránková for her long-term and expert communication of labour economics, energy, and international economic issues.In the past year, she became the youngest professor in the history of Charles University, and Forbes ranked her among the most cited Czech economists in its Top Women in Science selection.The award was also presented to colleagues from other FSV institutes: Kateřina Fuksová (IMS), Michal Malý (IPS), Jaroslava Hasmanova Marhankova (ISS), Marcela Konrádová (IKSŽ), for their significant contributions to public debate in their respective fields.We warmly congratulate all awardees and thank them for strengthening the public presence of FSV UK.
+
+Activate to view larger image,
+
+Activate to view larger image,
+
+52
+
+1 repost
+
+Like
+
+Comment
+
+Repost
+
+Send
+
+Feed post number 18
+
+Zuzana Irsova Havrankova   • YouProfessor of Economics, Charles University | Stanford METRICS Affiliate | Meta-Research, Labor, International Economics5mo •
+
+A small experiment at home: our kids (8-12) were sick and bored, so we introduced them to Claude Code.Two hours later, they had a working browser racing game set in our hometown. They did almost everything themselves; we helped with publishing it on GitHub.The graphics are… charmingly 1980s. But it runs smoothly and it’s fun.Takeaway for me: if you’re a researcher, it’s worth setting aside an hour to play with these tools -- you might be surprised what you can do now.(Link to the game in the first comment!)hashtag#ResearchTools hashtag#ClaudeCode hashtag#Litomysl
+
+Play
+
+Remaining time 0:14
+
+1x
+
+Playback speed
+
+Unmute
+
+Turn fullscreen on
+
+60
+
+3 comments
+
+Like
+
+Comment
+
+Repost
+
+Send
+
+4,613 impressions
+
+View analytics
+
+Feed post number 19
+
+Zuzana Irsova Havrankova   • YouProfessor of Economics, Charles University | Stanford METRICS Affiliate | Meta-Research, Labor, International Economics5mo •
+
+A browser-based tool for correcting publication bias and p-hacking.We built EasyMeta.org to make bias-corrected meta-analysis easier to run. Upload your dataset and benchmark your conclusions against modern corrections -- directly in your browser.Why: Selective reporting can distort what enters the literature and how results are reported, but applying corrections often requires specialized software or a complex workflow.What it offers:• Bias corrections: MAIVE (our Nature Communications method) plus benchmarks like PET-PEESE.• Robust inference: options for clustering and different data structures.• Minimal setup: free, open, no installation, no coding.• Reproducibility: export R code for the results you generate.Swipe through the four slides to see the workflow.Try it with your own data: 👉 easymeta.org (https://www.easymeta.org/)With Pedro Bom, Tomas Havranek, Heiko Rachinger, and Petr Čalahashtag#MetaAnalysis hashtag#OpenScience hashtag#ResearchMethods hashtag#Econometrics hashtag#Statistics
+
+Your document has finished loading
+
+41
+
+2 comments
+
+4 reposts
+
+Like
+
+Comment
+
+Repost
+
+Send
+
+3,044 impressions
+
+View analytics
+
+Feed post number 20
+
+Zuzana Irsova Havrankova reposted this
+
+Institute of Economic Studies, Faculty of Social Sciences, Charles University2,465 followers6mo •
+
+🤖 How to get the most out of AI? Try a “model duel”Have you ever been frustrated by AI tools “hallucinating” or unsure when you can trust their outputs? Verifying information across multiple sources is a core principle of meta-analysis and the inspiration behind an approach recently tested by our colleagues Professor Zuzana Irsova Havrankova and Professor Tomas Havránek .Their experiment explores how AI outputs improve when two different models are set against each other: • one model acts as a creative ideator, • the other plays the devil’s advocate, systematically checking facts and logic, • both models challenge and correct each other’s responses.👉 The result? Fewer hallucinations, a tougher stress test of ideas, and higher-quality outputs than relying on a single model.You can read more about what motivated this approach here: https://lnkd.in/eSwYVqft📄 The full procedure and prompt used are also available here: https://lnkd.in/en5Db766
+
+…more
+
+Activate to view larger image,
+
+Activate to view larger image,
+
+14
+
+1 repost
+
+Like
+
+Comment
+
+Repost
+
+Send
+
+Feed post number 21
+
+Zuzana Irsova Havrankova   • YouProfessor of Economics, Charles University | Stanford METRICS Affiliate | Meta-Research, Labor, International Economics6mo • Edited •
+
+Jak vytěžit z AI maximum?Nechte modely bojovat mezi sebou. 🧠🤖V dnešních Hospodářské noviny ukazujeme jednoduchý, ale účinný postup, jak pracovat efektivněji s umělou inteligencí.Místo jedné odpovědi: duel AI modelů.ChatGPT vs. Gemini (nebo jiná kombinace).🔹 Jeden model dostane roli kreativního vizionáře, který nápad rozvíjí.🔹 Druhý je ďáblův advokát – systematicky hledá faktické i logické chyby.🔹 Modely si navzájem napadají výstupy a opravují se.Výsledek?👉 Méně halucinací.👉 Tvrdší „stress test“ nápadů.👉 Kvalitnější výstup než od jednoho modelu.Nemáte předplatné ChatGPT?Žádný problém. Duel zvládnete i manuálně – stačí otevřít vedle sebe dva zdarma dostupné AI modely, dát jim stejná data a protichůdné role a jejich odpovědi mezi sebou křížit. Po několika kolech už dává smysl výstupy číst.🔗 Odemčený článek v HN:https://lnkd.in/dBbUetrP🔗 Duelový protokol (prompt + návod):https://lnkd.in/dRwKz63g
+
+Activate to view larger image,
+
+Activate to view larger image,
+
+34
+
+Like
+
+Comment
+
+Repost
+
+Send
+
+3,014 impressions
+
+View analytics
+
+Feed post number 22
+
+Zuzana Irsova Havrankova   • YouProfessor of Economics, Charles University | Stanford METRICS Affiliate | Meta-Research, Labor, International Economics6mo •
+
+I still love Slovakia and Gemer. When our kids were born, one of the first things my husband did was go to the Slovak embassy in Prague and arrange Slovak citizenship for them. I hope I’m wrong in this interview.
+
+Startitup37,911 followers7mo •
+
+Follow
+
+Zuzana Havránková sa stala najmladšou profesorkou na prestížnej Karlovej univerzite v Prahe vďaka svojej výnimočnej práci v oblasti ekonomického výskumu a publikáciám v najprestížnejších svetových časopisoch.V rozhovore pre Startitup otvorene hovorí o výzvach vedeckej práce, odlive mozgov zo Slovenska a o tom, prečo je kritické myslenie dôležitejšie než kedykoľvek predtým. Viac si prečítaš TU👉🏻 https://lnkd.in/dsytnSsc
+
+…more
+
+Show translation
+
+Activate to view larger image,
+
+Activate to view larger image,
+
+108
+
+3 comments
+
+3 reposts
+
+Like
+
+Comment
+
+Repost
+
+Send
+
+14,338 impressions
+
+View analytics
+
+Feed post number 23
+
+Zuzana Irsova Havrankova   • YouProfessor of Economics, Charles University | Stanford METRICS Affiliate | Meta-Research, Labor, International Economics7mo •
+
+For deep analytical work, I don’t use one AI model. I make them duel.For thinking-intensive tasks (research, strategy, due diligence) a single AI model often converges too fast. It sounds convincing but skips edge cases and hidden assumptions.So Tomas Havranek and I formalized a workflow to create structured disagreement:🔹 Anchor (ChatGPT): Writes a first-pass assessment grounded in the files. 🔹 Audit (Gemini): Actively tries to break it (logic gaps, counterexamples, failure modes). ChatGPT defends. The duel iterates. 🔹 Synthesis (You): You analyze the conflict to see what survives.The output is not “AI approval.” It is a clearer map of risks, boundary conditions, and what you must verify.Advanced users: You can swap the auditor for Claude or automate this via API (MAD).For everyone else: no code needed. You can copy-paste the protocol and try it via ChatGPT Agent.Protocol (GitHub): 👉 https://lnkd.in/dRwKz63g Research example: 👉 https://lnkd.in/dw98RKuWhashtag#AI hashtag#DecisionMaking hashtag#CriticalThinking hashtag#Productivity hashtag#Research
+
+The Adversarial Advantage: AI Duels for Meta-Analysis
+
+maer-net.org
+
+69
+
+2 comments
+
+5 reposts
+
+Like
+
+Comment
+
+Repost
+
+Send
+
+6,072 impressions
+
+View analytics
+
+Feed post number 24
+
+Zuzana Irsova Havrankova reposted this
+
+František Bartoš   • 1stPostdoctoral researcher at the University of Amsterdam, Cofounder & CFO at JASP Services7mo •
+
+We just preprinted a huge meta-meta-analysis examining the effects of exercise on cognition, memory, and executive function.In short:- 2,239 effect sizes- extreme between-study heterogeneity- extensive publication bias- some subgroup/exercise-specific effects- large collaboration with Martina Lušková, Kseniya Bortnikova, Karolína Hozová, Klára Kantová, Zuzana Iršová, and Tomáš Havránek- read in full at https://lnkd.in/eHWVtN2APrevious meta-meta-analysis (https://lnkd.in/eyjMHrXp) indicated consistent benefits of exercise for cognitive benefits across all domains and populations. However, it synthesized meta-analytic estimates and, as such, it could not adjust for publication nor evaluate heterogeneity (also see Matthew B. Jané commenting about it on Twitter). We manually extracted the study-level data from the included meta-analyses and re-evaluated the evidence. First, we found notable publication bias, especially in studies on general cognition and executive function. Importantly, there was extreme between-study heterogeneity (tau ~ 0.3-0.6!). This means that the results were consistent with both large benefit but also large harm.We run subgroup analyses for each outcome/population/intervention. We found that most results are too heterogeneous to tell (see wide prediction intervals), but some interventions seem to be promising, and some have substantive evidence against them. See the attached figures for each outcome.We also re-analyzed all of the original meta-analyses individually. Many of them are consistent with publication bias: the evidence for and the degree of the pooled effects decrease once publication bias is adjusted for. I think that the field needs to clean up the published literature a bit. Additional small studies are not going to move the needle at this point; maybe a couple of large-scale, pre-registered studies might provide more insight? Also, this should not be a reason to stop exercising. 1) There are other benefits of exercise2) Some populations/exercises show benefits3) There might be wider effects on cognition; however, the literature is too heterogeneous and contaminated with publication bias to be certain
+
+…more
+
++1
+
+Activate to view larger image,
+
+275
+
+9 comments
+
+36 reposts
+
+Like
+
+Comment
+
+Repost
+
+Send
+
+Feed post number 25
+
+Zuzana Irsova Havrankova   • YouProfessor of Economics, Charles University | Stanford METRICS Affiliate | Meta-Research, Labor, International Economics7mo •
+
+🔎 MAIVE is now on CRAN: Better tools for trustworthy meta-analysisMeta-analysis is one of the key pillars of evidence-based research. It combines results from many studies to give us a clearer, more reliable answer.But in observational research, studies can sometimes appear too precise --not because the evidence is strong, but because of method choices, selective reporting, or p-hacking. This can distort the final meta-analytic conclusion.MAIVE helps address this.You can now install MAIVE directly in R:install.packages("MAIVE")Or try it instantly in your browser (no coding needed): 🖥️ https://www.easymeta.orgMore details: 📦 CRAN package: https://lnkd.in/dQ7XjiAq 📄 Nature Communications article: https://lnkd.in/eFfrP6H2 📰 Blog overview: https://lnkd.in/ejkgbU6XA big thank-you to Petr Čala, who built the MAIVE web app and prepared the CRAN release. His work makes high-quality meta-analysis methods accessible.hashtag#metaanalysis hashtag#OpenScience hashtag#researchmethods hashtag#RStats
+
+Spurious Precision in Meta-Analysis
+
+communities.springernature.com
+
+34
+
+2 comments
+
+2 reposts
+
+Like
+
+Comment
+
+Repost
+
+Send
+
+2,837 impressions
+
+View analytics
+
+Feed post number 26
+
+Zuzana Irsova Havrankova   • YouProfessor of Economics, Charles University | Stanford METRICS Affiliate | Meta-Research, Labor, International Economics8mo •
+
+🔎 New in Nature Communications: “Spurious precision in meta-analysis of observational research.”Sometimes studies appear too precise because their reported uncertainty reflects method choices rather than real evidence strength. This can mislead meta-analyses.We introduce MAIVE, a simple way to detect and correct such bias, including publication bias and p-hacking.🖥️ Try it in your browser (free, no coding): https://www.easymeta.org 📄 Paper: https://lnkd.in/eFfrP6H2 📰 Blog: https://lnkd.in/ejkgbU6X— Kudos to my great co-authors Pedro Bom, Tomas Havranek, and Heiko Rachinger hashtag#metaanalysis hashtag#researchmethods hashtag#OpenScience hashtag#NatureCommunications
+
+Spurious Precision in Meta-Analysis
+
+communities.springernature.com
+
+38
+
+2 comments
+
+Like
+
+Comment
+
+Repost
+
+Send
+
+2,815 impressions
+
+View analytics
+
+Feed post number 27
+
+Zuzana Irsova Havrankova reposted this
+
+Faculty of Social Sciences, Charles University4,649 followers1yr •
+
+Follow
+
+🔴 Na listopadovém jednání Vědecké rady Charles University přednesla naše kolegyně docentka Zuzana Havrankova z Institute of Economic Studies, Faculty of Social Sciences, Charles University přednášku "Meta-analýza ve společenských vědách" v rámci svého řízení ke jmenování profesorkou UK. 🎓 Stala se tak historicky nejmladší ženou, která kdy na Vědecké radě UK profesorskou přednášku úspěšně absolvovala. 👏Srdečně blahopřejeme!hashtag#facultyofsocialsciences hashtag#FSVUK hashtag#IES hashtag#úspěch hashtag#UK hashtag#metaanalýza
+
+…more
+
+Activate to view larger image,
+
+Activate to view larger image,
+
+116
+
+2 comments
+
+1 repost
+
+Like
+
+Comment
+
+Repost
+
+Send
+
+Feed post number 28
+
+Zuzana Irsova Havrankova   • YouProfessor of Economics, Charles University | Stanford METRICS Affiliate | Meta-Research, Labor, International Economics1yr •
+
+Proč se všichni ptají, k čemu je ta hadice?🙈 Pražáci..😂
+
+Pavel Strunc   • 1stKlid je síla, řek’ tatínek1yr •
+
+Vážená paní docentko …. toto oslovení jsem snad psal naposledy na VŠ a to je …. dlouho. A nějaký čas trvalo, než jsme si nad rozhovorem plácli. A víte co? Jsem moc rád, že to vyšlo. Takhle vypadá popularizace vědy :) Tento rozhovor pro třetí číslo Magazínu HROT24 ze stáje SPM MEDIA je “absolutní banger”. Fakt. Za mě zlomový. Zamířili jsme do vod, které nemají často tolik publicity (a mnohdy o ni ani nestojí) - do akademické sféry. “I mezi studenty ekonomie potkávám ty, kteří mi vážně říkají, že se bojí konce světa kvůli klimatu, že kvůli tomu umřou! Ale věda nic takového neukazuje”, říká ekonomka Zuzana Havrankova z Institutu ekonomických studií na Charles University. Tohle je rozhovor o naději. Postavený na datech, žádné vzdušné zámky. Dotýkáme se nejdůležitějších témat dneška. Žena, která se dostala daleko. Ze slovenského Gemeru až na Berkley. Nyní na UK. Nesmírně zajímavá životní cesta (spolu s manželem a čtyřmi dětmi). Fotil marek musil . Krásný! Plus čekají vás další skvělé články: náš gentleman a člověk s neskutečným přehledem a přesahem - Mirek Zámečník píše o Číně, super hvězda přes ekonomiku a energetiku Markéta Malá o Dukovanech, Sára Goldbergerová tradičně přidá návod, kde si dát gastro zážitek, ale ještě než k tomu dojdete, nalistujte si jejích deset nejkreativnějších lidi v Česku. Filip Magalhães se opět vydal mezi úspěšně české start upy, tentokrát Lakmoos AI a tradiční limitku přidal Michael Skřivan. A taky jsem si ještě otestoval krásné nové Moto Guzzi Official Stelvio. Protože můj věk je přesně takový na dělání kravin a plnění si dětských snů. Nový Hrot MAG poskládaný Tomas Otta je tady.
+
+…more
+
+Activate to view larger image,
+
+Activate to view larger image,
+
+70
+
+3 comments
+
+Like
+
+Comment
+
+Repost
+
+Send
+
+3,790 impressions
+
+View analytics
+
+Feed post number 29
+
+Zuzana Irsova Havrankova   • YouProfessor of Economics, Charles University | Stanford METRICS Affiliate | Meta-Research, Labor, International Economics3yr •
+
+Přátelé,každoročně věnuje skupina českých lékařů měsíce svého života budování nemocnice a pomoci nemocným v keňském Itibu. Možná je znáte z filmu Daleko za sluncem. Některé dobrovolníky osobně znám; zrovna se snaží o sbírku na přístroj, který by zlepšil či zachránil život mnohým. Sbírka měsíce stagnuje, cíl je daleko. Prosím pomozte jim pomáhat nahttps://lnkd.in/eR_cCtDxJako každá legit donation i tahle je tax-deductible.
+
+…more
+
+Biochemický analyzátor pro nemocnici v keňském Itibu
+
+donio.cz
+
+10
+
+Like
+
+Comment
+
+Repost
+
+Send
+
+Show more results
+
+People you may know
+
+From your company
+
+Barbara Pertold-Gebicka
+
+Assistant Professor at Charles University in Prague
+
+Pending
+
+Daniel Jesensky
+
+Managing director at Spectrasol, s.r.o.
+
+Connect
+
+Jirka Hana
+
+Co-founder of Geneea | Helping news media publish better articles cheaper and faster | Multilingual AI solutions for news | Robotic journalism | NLP | NLG | Text analytics
+
+Connect
+
+Katerina Klapilova, PhD.
+
+Katerina Klapilova, PhD.
+
+assistant prof. and researcher at Faculty of Humanities, Charles University
+
+Connect
+
+Lenka Rovná
+
+Vice Rector for European Affairs at Charles University in Prague
+
+Pending
+
+Show more
+
+About
+
+Accessibility
+
+Help Center
+
+Privacy & Terms
+
+Ad Choices
+
+Advertising
+
+Business Services
+
+Get the LinkedIn app
+
+More
+
+LinkedIn Corporation © 2026
+
+MessagingYou are on the messaging overlay. Press enter to open the list of conversations.
+
+Compose message
+
+You are on the messaging overlay. Press enter to open the list of conversations.
