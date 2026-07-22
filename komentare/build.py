@@ -54,7 +54,7 @@ PATH = "/komentare"             # root-relative: every internal link and asset
 AUTHOR = "Tomáš Havránek"
 # Whose archive this is. AUTHOR stays single: it is the default byline for items that
 # name no author, so widening it would silently reassign every unattributed piece.
-SITE_AUTHORS = "Tomáš Havránek a Zuzana Iršová Havránková"
+SITE_AUTHORS = "Tomáš Havránek, Zuzana Iršová Havránková"
 # One person can appear under several name forms: the married name in Czech outlets,
 # the maiden name in English ones, with or without diacritics. Every form must map to
 # the same ORCID or the author silently loses attribution on some items.
@@ -67,6 +67,9 @@ ORCIDS = {
     "Zuzana Irsová": "https://orcid.org/0000-0002-0753-8124",
     "Zuzana Irsova": "https://orcid.org/0000-0002-0753-8124",
 }
+
+ZI_NAMES = {"Zuzana Iršová Havránková", "Zuzana Havránková", "Zuzana Iršová",
+            "Zuzana Irsová", "Zuzana Irsova"}
 
 SECTIONS = {
     "celostatni": dict(
@@ -99,7 +102,7 @@ SECTIONS = {
 for _k, _v in SECTIONS.items():
     _v.setdefault("lang", "cs")
 
-HUB_DESC = ("Publicistika Tomáše Havránka a Zuzany Iršové Havránkové: komentáře pro celostátní média, sloupky pro "
+HUB_DESC = ("Publicistika Tomáše Havránka a Zuzany Havránkové: komentáře pro celostátní média, sloupky pro "
             "litomyšlskou Lilii a rozhovory. Texty jsou zde archivovány v plném znění "
             "s odkazem na původní vydání.")
 
@@ -308,20 +311,37 @@ def shell(title, desc, canonical, jsonld, body, active, extra_head="", lang="cs"
         f'{" aria-current=\"page\"" if active == k else ""}>{esc(v["short"])}</a>'
         for k, v in SECTIONS.items())
     rss_title = f"Komentáře — {SITE_AUTHORS}"
-    ies = ("https://ies.fsv.cuni.cz/en/contacts/institute-members/78067720" if lang == "en"
+    _en = lang == "en"
+    ies = ("https://ies.fsv.cuni.cz/en/contacts/institute-members/78067720" if _en
            else "https://ies.fsv.cuni.cz/contacts/institute-members/78067720")
-    bio = ("<strong>Tomáš Havránek</strong> is Professor of Economics at the Institute of "
-           "Economic Studies, Charles University, Prague. He works on monetary policy, "
-           "meta-analysis and meta-research, and was an adviser to the Vice-Governor and "
-           "the Board of the Czech National Bank. He is a Research Affiliate at CEPR (London) "
-           "and at Stanford METRICS. This section archives his published commentary, "
-           "columns and interviews."
-           if lang == "en" else
-           "<strong>Tomáš Havránek</strong> je profesor ekonomie na Institutu ekonomických "
-           "studií FSV Univerzity Karlovy v Praze. Zabývá se měnovou politikou, metaanalýzou "
-           "a metavýzkumem; byl poradcem viceguvernéra a bankovní rady ČNB. Je Research "
-           "Affiliate v CEPR (Londýn) a ve Stanford METRICS. Tato stránka archivuje "
-           "jeho publicistiku — komentáře, sloupky a rozhovory.")
+    ies_zi = ("https://ies.fsv.cuni.cz/en/contacts/institute-members/73504033" if _en
+              else "https://ies.fsv.cuni.cz/contacts/institute-members/73504033")
+    # one paragraph each, so neither author is a footnote to the other
+    bio = (
+        "<strong>Tomáš Havránek</strong> is Professor of Economics at the Institute of "
+        "Economic Studies, Charles University, Prague. He works on monetary policy, "
+        "meta-analysis and meta-research, and was an adviser to the Vice-Governor and "
+        "the Board of the Czech National Bank. He is a Research Affiliate at CEPR (London) "
+        "and at Stanford METRICS."
+        "</p><p class=\"about-bio\">"
+        "<strong>Zuzana Havránková</strong> is Professor of Economics at the same institute. "
+        "She works on meta-analysis and meta-research, labour economics and international "
+        "economics, and is an affiliate researcher at Stanford METRICS. She publishes in "
+        "English as Zuzana Irsova."
+        "</p><p class=\"about-bio\">"
+        "This section archives their published commentary, columns and interviews."
+        if _en else
+        "<strong>Tomáš Havránek</strong> je profesor ekonomie na Institutu ekonomických "
+        "studií FSV Univerzity Karlovy v Praze. Zabývá se měnovou politikou, metaanalýzou "
+        "a metavýzkumem; byl poradcem viceguvernéra a bankovní rady ČNB. Je Research "
+        "Affiliate v CEPR (Londýn) a ve Stanford METRICS."
+        "</p><p class=\"about-bio\">"
+        "<strong>Zuzana Havránková</strong> je profesorka ekonomie na témže institutu. "
+        "Zabývá se metaanalýzou a metavýzkumem, ekonomií práce a mezinárodní ekonomií; "
+        "je affiliate researcher ve Stanford METRICS. V angličtině publikuje jako "
+        "Zuzana Irsova."
+        "</p><p class=\"about-bio\">"
+        "Tato stránka archivuje jejich publicistiku — komentáře, sloupky a rozhovory.")
     return f"""<!DOCTYPE html>
 <html lang="{lang}">
 <head>
@@ -360,7 +380,8 @@ def shell(title, desc, canonical, jsonld, body, active, extra_head="", lang="cs"
     <ul class="about-links">
       <li><a href="https://www.tomashavranek.cz/"{cs}>Osobní stránka</a></li>
       <li><a href="{SITE}/">meta-analysis.cz</a></li>
-      <li><a href="{ies}">IES FSV UK</a></li>
+      <li><a href="{ies}">IES FSV UK — TH</a></li>
+      <li><a href="{ies_zi}">IES FSV UK — ZH</a></li>
       <li><a href="https://zrusme-inflaci.cz/">Zrušme inflaci</a></li>
       <li><a href="https://orcid.org/0000-0002-3158-2539">ORCID</a></li>
       <li><a href="https://scholar.google.com/citations?user=BF0BvBkAAAAJ">Google Scholar</a></li>
@@ -393,6 +414,7 @@ FILTER = """    <div class="filter">
         <button class="chip" data-cat="litomysl" aria-pressed="false">Litomyšl</button>
         <button class="chip" data-cat="rozhovory" aria-pressed="false">Rozhovory</button>
         <button class="chip" data-cat="english" aria-pressed="false">English</button>
+        <button class="chip" data-cat="zuzana" aria-pressed="false">Zuzana Havránková</button>
       </div>
       <p class="count js-only" id="count" role="status" aria-live="polite"></p>
     </div>
@@ -409,7 +431,8 @@ SCRIPT = """<script>
   function apply() {
     var term = norm(q.value.trim()), n = 0;
     items.forEach(function (el) {
-      var ok = (cat === 'all' || el.dataset.cat === cat) &&
+      var ok = (cat === 'all' ||
+                (cat === 'zuzana' ? el.dataset.zi === '1' : el.dataset.cat === cat)) &&
                (!term || el.dataset.hay.indexOf(term) > -1);
       el.hidden = !ok; if (ok) n++;
     });
@@ -457,7 +480,8 @@ def item_row(a, show_cat):
         bits.append(f'<span>ptal se: {esc(a["interviewer"])}</span>')
     if tag:
         bits.append(tag)
-    return (f'  <li class="item" data-cat="{a["category"]}">\n'
+    zi = ' data-zi="1"' if any(n in ZI_NAMES for n in names_row) else ""
+    return (f'  <li class="item" data-cat="{a["category"]}"{zi}>\n'
             f'    <h3><a href="{url}"{ext}>{esc(a["headline"])}</a></h3>\n'
             f'    <div class="meta">{"".join(bits)}</div>\n'
             f'  </li>')
