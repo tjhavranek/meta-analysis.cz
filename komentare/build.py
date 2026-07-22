@@ -108,6 +108,11 @@ for _k, _v in SECTIONS.items():
 HUB_DESC = ("Publicistika Tomáše Havránka a Zuzany Havránkové: komentáře pro celostátní média, sloupky pro "
             "litomyšlskou Lilii, rozhovory a kratší příspěvky ze sítí. Texty jsou zde "
             "archivovány v plném znění s odkazem na původní vydání.")
+# What the reader sees first. The sentence about full text and original sources is true
+# and worth saying to a crawler, but it delays the actual list, so it stays in HUB_DESC
+# (the meta description) and off the page.
+HUB_LEDE = ("Publicistika Tomáše Havránka a Zuzany Havránkové: komentáře pro celostátní "
+            "média, sloupky pro litomyšlskou Lilii, rozhovory a kratší příspěvky ze sítí.")
 
 # genitive, for a full date: "5. října 2019"
 MONTHS = ["ledna", "února", "března", "dubna", "května", "června",
@@ -425,7 +430,9 @@ def shell(title, desc, canonical, jsonld, body, active, extra_head="", lang="cs"
       <li><a href="https://orcid.org/0000-0002-0753-8124">ORCID</a></li>
       <li><a href="https://scholar.google.com/citations?user=LaHrICUAAAAJ">Google Scholar</a></li>
       <li><a href="https://ideas.repec.org/e/pir23.html">RePEc</a></li>
+      <li><a href="https://www.scopus.com/authid/detail.uri?authorId=37080793200">Scopus</a></li>
       <li><a href="https://cepr.org/about/people/zuzana-irsova">CEPR</a></li>
+      <li><a href="https://metrics.stanford.edu/people/zuzana-irsova">Stanford METRICS</a></li>
     </ul>
     <ul class="about-links">
       <li class="who">{"Projekty" if lang == "cs" else "Projects"}</li>
