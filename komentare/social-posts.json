@@ -234,7 +234,7 @@
   "image_size": [],
   "image_alt": [],
   "reshare_of": {
-   "label": "Commenting on the IES announcement of the Nature study she co-authored",
+   "label": "She reshared the IES announcement of this Nature study, which she co-authored",
    "url": "https://doi.org/10.1038/s41586-026-10251-x",
    "url_label": "Brodeur, A., Mikola, D., Cook, N. et al., “Reproducibility and robustness of economics and political science research”, Nature 652, 151–156 (2026)"
   },
@@ -409,9 +409,6 @@
   ],
   "image_alt": [
    "Two funnel plots from the Nature Communications paper, contrasting selection on estimates with selection on standard errors."
-  ],
-  "comment_links": [
-   "https://www.easymeta.org"
   ]
  }
 ]

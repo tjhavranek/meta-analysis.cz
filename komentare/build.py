@@ -321,7 +321,7 @@ def shell(title, desc, canonical, jsonld, body, active, extra_head="", lang="cs"
         for k, v in SECTIONS.items())
     # Not a SECTION: the social posts are not src items, so a section entry would put an
     # empty chip on the hub filter. It gets a nav link and nothing else.
-    nav += (f'<a href="{PATH}/posts/"{cs}'
+    nav += (f'<a href="{PATH}/posts/"'
             f'{" aria-current=\"page\"" if active == "posts" else ""}>Posts</a>')
     rss_title = f"Komentáře — {SITE_AUTHORS}"
     _en = lang == "en"
@@ -365,7 +365,7 @@ def shell(title, desc, canonical, jsonld, body, active, extra_head="", lang="cs"
 <link rel="stylesheet" href="{PATH}/style.css" />
 <link rel="canonical" href="{canonical}" />
 <link rel="alternate" type="application/rss+xml" title="{rss_title}" href="{PATH}/feed.xml" />
-<meta property="og:site_name" content="Komentáře — Tomáš Havránek" />
+<meta property="og:site_name" content="Komentáře — {SITE_AUTHORS}" />
 <meta property="og:locale" content="{"en_GB" if lang == "en" else "cs_CZ"}" />
 <meta property="og:title" content="{esc(title)}" />
 <meta property="og:description" content="{esc(desc)}" />
@@ -810,7 +810,7 @@ def write_machine_readable(items, social=()):
     # only machine-readable trace of 25 texts is one page's JSON-LD.
     for p in social:
         docs.append({
-            "id": f"posts-{p['anchor']}", "title": p["text"].split(chr(10))[0][:110],
+            "id": f"posts-{p['anchor']}", "title": _headline(p["text"]),
             "date": p["date"], "date_precision": "day",
             "section": "Posts", "category": "posts",
             "language": p.get("lang", "en"), "outlet": "LinkedIn",
@@ -958,7 +958,7 @@ def write_socials_page():
     if not SOCIAL_JSON.exists():
         return []
     posts = json.loads(SOCIAL_JSON.read_text(encoding="utf-8"))
-    posts.sort(key=lambda p: p["date"], reverse=True)
+    posts.sort(key=lambda p: p.get("datetime", p["date"]), reverse=True)
     # Per-DAY counter, not per-list-position: a new post must never renumber the
     # anchors of older ones, or every deep link and every stored @id breaks.
     seen_day = {}
@@ -1001,14 +1001,14 @@ def write_socials_page():
         blocks.append(
             f'      <article class="post" id="{esc(p["anchor"])}" lang="{lang}">\n'
             f'        <p class="post-date"><a href="#{esc(p["anchor"])}">'
-            f'<time datetime="{p["date"]}">{esc(cs_date(p["date"], lang="en"))}</time></a>'
+            f'<time datetime="{p["date"]}">{esc(cs_date(p["date"], lang=lang))}</time></a>'
             f'{orig}</p>\n'
             f'        {_social_html(p["text"])}{ro}{cl}{imgs}\n'
             f'      </article>')
         node = {
             "@type": "SocialMediaPosting",
             "@id": f"{BASE}/posts/#{p['anchor']}",
-            "headline": p["text"].split("\n")[0][:110],
+            "headline": _headline(p["text"]),
             "datePublished": p.get("datetime", p["date"]).replace(" ", "T") + "+00:00",
             "inLanguage": lang,
             "url": f"{BASE}/posts/#{p['anchor']}",
@@ -1096,7 +1096,7 @@ def write_data_page(items):
          "inLanguage": "cs",
              "isAccessibleForFree": True,
              "creator": {"@type": "Person", "name": AUTHOR,
-                         "identifier": f"https://orcid.org/{ORCIDS[AUTHOR]}"},
+                         "identifier": ORCIDS[AUTHOR]},
              "temporalCoverage": f"{items[-1]['date']}/{items[0]['date']}",
              "distribution": [
                  {"@type": "DataDownload", "name": "corpus.jsonl",
