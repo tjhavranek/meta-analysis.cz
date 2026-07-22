@@ -336,7 +336,7 @@ def shell(title, desc, canonical, jsonld, body, active, extra_head="", lang="cs"
 <header class="masthead">
   <div class="wrap">
     <p class="site-name"><a href="{PATH}/">Komentáře<small>Tomáš Havránek</small></a></p>
-    <nav class="nav">{nav}<a href="{PATH}/"{cs}>Vše</a></nav>
+    <nav class="nav">{nav}</nav>
   </div>
 </header>
 <main>
