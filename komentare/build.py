@@ -131,6 +131,11 @@ OUTLET_IN = {
 
 MEDIA_LABEL = {"video": "video", "audio": "audio"}
 
+# Where a text was self-published rather than edited by an outlet. The archive mixes
+# both, and a retrieval corpus should be able to tell them apart: an HN op-ed passed an
+# editor, a manifesto on the author's own site did not.
+SELF_PUBLISHED = re.compile(r"(?i)^(LinkedIn|MAER-Net|Zrušme inflaci|zrusme-inflaci|SYRI)$")
+
 # headlines carried by more than one item; filled in main(). Such items always show
 # their byline so that two rows never render as the same link text.
 DUP_HEADLINES = set()
@@ -719,7 +724,8 @@ def write_feed(items):
 """, encoding="utf-8")
 
 
-def write_machine_readable(items):
+def write_machine_readable(items, social=()):
+    n_social = len(social)
     """Three bulk formats, so a crawler or a training pipeline never has to parse HTML.
 
     llms.txt   a plain index in the llms.txt convention
@@ -753,6 +759,8 @@ def write_machine_readable(items):
           "- [ORCID](https://orcid.org/0000-0002-3158-2539)",
           "- [Google Scholar](https://scholar.google.com/citations?user=BF0BvBkAAAAJ)",
           "- [RePEc](https://ideas.repec.org/f/pha418.html)",
+          f"- [Ze sítí]({BASE}/ze-siti/) — kratší příspěvky Zuzany Havránkové ze "
+          f"sociálních sítí, v plném znění",
           f"- [RSS]({BASE}/feed.xml)",
           f"- [Strojově čitelný index (JSON)]({BASE}/index.json)",
           f"- [Všechny texty v jednom souboru]({BASE}/all.md)", ""]
@@ -780,7 +788,27 @@ def write_machine_readable(items):
             d["source_markdown"] = f"{BASE}/src/{a['file']}"
             d["word_count"] = len(a["body"].split())
             d["text"] = a["body"]
+        d["provenance"] = "self_published" if SELF_PUBLISHED.search(a["outlet"]) else "editorial"
         docs.append(d)
+
+    # The social posts are on one shared page rather than a page each, but they are
+    # separate documents and a retrieval corpus must see them that way — otherwise the
+    # only machine-readable trace of 25 texts is one page's JSON-LD.
+    for p in social:
+        docs.append({
+            "id": f"ze-siti-{p['anchor']}", "title": p["text"].split(chr(10))[0][:110],
+            "date": p["date"], "date_precision": "day",
+            "section": "Ze sítí", "category": "ze-siti",
+            "language": p.get("lang", "en"), "outlet": "LinkedIn",
+            "authors": ["Zuzana Havránková"], "media": "text",
+            "original_url": p.get("url", ""),
+            "url": f"{BASE}/ze-siti/#{p['anchor']}",
+            "text_status": "published_full_text",
+            "genre": "social_post", "provenance": "self_published",
+            "word_count": len(p["text"].split()), "text": p["text"],
+            **({"image": [f"{SITE}{PATH}/social-img/{f}" for f in p["images"]]}
+               if p.get("images") else {}),
+        })
     (KDIR / "index.json").write_text(json.dumps({
         "name": f"Komentáře — {SITE_AUTHORS}",
         "description": HUB_DESC,
@@ -806,7 +834,10 @@ def write_machine_readable(items):
          f"Tento soubor obsahuje plné znění všech textových položek "
          f"({sum(1 for a in items if a['media'] == 'text')} z celkem {len(items)}). "
          f"Zbývající položky jsou audio a video, které archiv vede pouze odkazem, "
-         f"a v tomto souboru nejsou; jejich metadata najdete v index.json a corpus.jsonl.",
+         f"a v tomto souboru nejsou; jejich metadata najdete v index.json a corpus.jsonl. "
+         f"Samostatně jsou vedeny příspěvky ze sociálních sítí ({n_social}), které mají "
+         f"vlastní stránku {BASE}/ze-siti/ a v index.json i corpus.jsonl jsou označeny "
+         f"jako genre=social_post.",
          "", "---", ""]
     for a in items:
         if a["media"] != "text":
@@ -1141,8 +1172,8 @@ def main():
     for k in SECTIONS:
         write_index(items, k)
     write_feed(items)
-    n_txt = write_machine_readable(items)
-    write_socials_page()
+    social = write_socials_page()
+    n_txt = write_machine_readable(items, social)
     write_data_page(items)
     n_src = write_src_index(items)
     n = update_sitemap(items)
@@ -1198,8 +1229,16 @@ def check():
             fails.append(f"{f}: not well-formed ({e})")
     try:
         j = json.loads((KDIR / "index.json").read_text(encoding="utf-8"))
-        if j["count"] != len(list((KDIR / "src").glob("*.md"))):
-            fails.append("index.json count does not match the sources")
+        # One record per source file, plus the social posts — they have no source file
+        # of their own, coming from social-posts.json and sharing a single page.
+        n_social = (len(json.loads(SOCIAL_JSON.read_text(encoding="utf-8")))
+                    if SOCIAL_JSON.exists() else 0)
+        expected = len(list((KDIR / "src").glob("*.md"))) + n_social
+        if j["count"] != expected:
+            fails.append(f"index.json count {j['count']} != {expected} "
+                         f"(sources + {n_social} social posts)")
+        if sum(1 for d in j["items"] if d.get("genre") == "social_post") != n_social:
+            fails.append("index.json is missing the social posts")
     except Exception as e:
         fails.append(f"index.json: {e}")
     print(f"checked {len(pages)} pages")

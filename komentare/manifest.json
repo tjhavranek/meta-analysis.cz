@@ -4,9 +4,9 @@
  "corpus_updated": "2026-07-01",
  "temporal_coverage": "2016-11-30/2026-07-01",
  "records": {
-  "total": 176,
+  "total": 201,
   "by_text_status": {
-   "published_full_text": 142,
+   "published_full_text": 167,
    "author_manuscript": 18,
    "link_only": 16
   },
@@ -26,23 +26,23 @@
  "files": {
   "corpus.jsonl": {
    "url": "https://meta-analysis.cz/komentare/corpus.jsonl",
-   "bytes": 1176155,
-   "sha256": "a847fba36754def735a15ba371efa516432b64cdd14de25615a79ccb172ae0c8"
+   "bytes": 1216947,
+   "sha256": "c2286b07997bdf01e3a3a88116cb5cee1e359817c764f1621f663796cb63d96c"
   },
   "index.json": {
    "url": "https://meta-analysis.cz/komentare/index.json",
-   "bytes": 1192006,
-   "sha256": "6a348da360cca1b2aa4bd63fe2f4d3a8b2092bb12adab89944877cfb56f24893"
+   "bytes": 1235892,
+   "sha256": "215dae0d1b517a89fc94cbb5eee6ea96948caf3961fdef70b337691f4c7c96cf"
   },
   "all.md": {
    "url": "https://meta-analysis.cz/komentare/all.md",
-   "bytes": 1083239,
-   "sha256": "34fc35996eee76cac0b82afc7981f92662d8c3671b1bf64e7e39a68024cab87d"
+   "bytes": 1083449,
+   "sha256": "3364c9cfc5a3fd0d0f4ebecc496a5a8b6dce1f348e96c545ba352e30e99b26e2"
   },
   "llms.txt": {
    "url": "https://meta-analysis.cz/komentare/llms.txt",
-   "bytes": 31867,
-   "sha256": "3dbe511e886add06ee923ba63973116d224554cb9147509f28f7bc8514661c75"
+   "bytes": 32014,
+   "sha256": "c5d552980cf64823f2237ea831edc1b3caf93a55d426e8d2d75553f2475b9ce0"
   },
   "feed.xml": {
    "url": "https://meta-analysis.cz/komentare/feed.xml",
