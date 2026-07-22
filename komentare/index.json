@@ -20,7 +20,7 @@
   }
  ],
  "license": "Texty jsou majetkem autora a původních vydavatelů; archiv slouží ke čtení a citaci s uvedením původního zdroje.",
- "count": 198,
+ "count": 201,
  "generated_from": [
   "komentare/src/*.md",
   "komentare/social-posts.json"
@@ -335,6 +335,27 @@
    "provenance": "self_published"
   },
   {
+   "id": "maer-maive-cran",
+   "title": "MAIVE Is Now on CRAN",
+   "date": "2025-12-10",
+   "date_precision": "day",
+   "section": "In English",
+   "category": "english",
+   "language": "en",
+   "outlet": "MAER-Net",
+   "authors": [
+    "Zuzana Irsova"
+   ],
+   "media": "text",
+   "original_url": "https://www.maer-net.org/post/maive-is-now-on-cran",
+   "text_status": "published_full_text",
+   "url": "https://meta-analysis.cz/komentare/maer-maive-cran/",
+   "source_markdown": "https://meta-analysis.cz/komentare/src/2025-12-10_maer-maive-cran.md",
+   "word_count": 103,
+   "text": "We are happy to share that **MAIVE** (Meta-Analysis Instrumental Variable Estimator) is now available on **CRAN**:\n\n`install.packages(\"MAIVE\")`\n\nMAIVE is a simple tool that helps detect when study results look *too precise* because of method choices or selective reporting, and it provides an IV-based correction. The method was published recently in *Nature Communications*.\n\nMAIVE is also available in the [EasyMeta.org](https://www.easymeta.org) web app, where you can run MAIVE, PET-PEESE, and the EK model with one click, no coding needed:\n\n👉 [https://www.easymeta.org](https://www.easymeta.org)\n\n👉 CRAN package: [https://CRAN.R-project.org/package=MAIVE](https://CRAN.R-project.org/package=MAIVE)\n\n👉 Nature Communications article: [https://www.nature.com/articles/s41467-025-63261-0](https://www.nature.com/articles/s41467-025-63261-0)\n\nMany thanks to **Petr Čala** for preparing the CRAN release and building the EasyMeta interface.",
+   "provenance": "self_published"
+  },
+  {
    "id": "maer-ottawa-colloquium",
    "title": "Highlights from the 2025 MAER-Net Colloquium in Ottawa",
    "date": "2025-10-31",
@@ -426,6 +447,29 @@
    "word_count": 414,
    "text": "Zmeškaly vaše děti nebo vnoučata zářijové náborové tréninky? Nebo chcete spolu jen prožít příjemné nedělní odpoledne a zafandit si doma v Litomyšli? 12. října po obědě hrají mladší žáci florbal na domácím turnaji v Litomyšli. Vstup je zdarma a v hale bude dost míst k sezení. Přijít má smysl, protože:\n\n1) Uvidíte zblízka spoustu gólů a hezkou kombinační hru v podání nejlepších hráčů východních Čech ve věku 10-12 let.\n\n2) Můžete kdykoli přijít nebo odejít. Turnaj začne kolem 12.30 a skončí kolem 17.00 hod.\n\n3) Hraje se v krásné sportovní hale nad 3. ZŠ, kde vždycky najdete parkovací místo. Uvnitř bude příjemně bez ohledu na počasí venku.\n\n4) Atmosféra na našich domácích turnajích je nejlepší v kraji, bude se fandit nahlas (ale je možné najít si tiché místo, pokud to tak máte radši).\n\n5) Kiosek nabídne dobré pivo, limo, párky v rohlíku a další pochutiny.\n\n6) Skvělá příležitost se podívat, co florbal je, jestli by mohl bavit vás, vaše děti nebo vnoučata. Díky domácímu turnaji jsme se k florbalu náhodou dostali my - a ten naše děti už 7 let baví a dává jim disciplínu, dobrý kolektiv a zdravý životní styl.\n\n7) A kdyby nic jiného, kluci a holky ze všech týmů budou rádi, když přijdete a podpoříte je.\n\nFlorbal si můžete kdykoli nezávazně vyzkoušet na trénincích. Ty se konají vždy ve stejné sportovní hale a jsou společné pro holky a kluky. Pro děti do 10 let je to úterý 15.00 a pátek 13.30 hod.; pro starší děti pondělí 15.30, středa 15.30, pátek 15.00 hod. Není nutné chodit na všechny. S sebou stačí sálové boty, pití, tričko a kraťasy; florbalku trenéři půjčí. Po pár trénincích a při snaze lze už hrát turnaj za Litomyšl. Další info na Facebooku Florbal Litomyšl, ale klidně mi napište na t.havranek @gmail.com.\n\nAť už se děti rozhodnou pro jakýkoli sport a vydrží u něj, bude to nenahraditelná investice do jejich dalšího života. Obzvláště to platí u sportů kolektivních, kde se učí pracovat v týmu. Sportovní kolektiv má na děti dobrý vliv: konkrétně u florbalové party mohu garantovat, že třeba s návykovými látkami nebudou problémy ani ve starších kategoriích.\n\nV Litomyšli je nabídka kvalitních sportovních kroužků veliká – kromě florbalu mám dobré zkušenosti a mohu doporučit plavání, volejbal, basket, hokej, fotbal. Povede-li se motivovat k pravidelnému sportování alespoň třetinu dětí v Litomyšli, které dosud volný čas tráví hlavně s mobilem v ruce, budeme mít silné týmy ve všech sportech a hlavně zdravější novou generaci s pevným vztahem k našemu městu.",
    "provenance": "editorial"
+  },
+  {
+   "id": "maer-easymeta",
+   "title": "Bias Correction Made Easy: A Web App for Meta-Analysis at EasyMeta.org",
+   "date": "2025-09-27",
+   "date_precision": "day",
+   "section": "In English",
+   "category": "english",
+   "language": "en",
+   "outlet": "MAER-Net",
+   "authors": [
+    "Zuzana Irsova"
+   ],
+   "media": "text",
+   "original_url": "https://www.maer-net.org/post/bias-correction-made-easy-a-web-app-for-meta-analysis-at-easymeta-org",
+   "text_status": "published_full_text",
+   "standfirst": "Run MAIVE, PET-PEESE, and EK with one click — no coding, no installation.",
+   "standfirst_note": "Written by the original outlet, not by the author.",
+   "url": "https://meta-analysis.cz/komentare/maer-easymeta/",
+   "source_markdown": "https://meta-analysis.cz/komentare/src/2025-09-27_maer-easymeta.md",
+   "word_count": 257,
+   "text": "We are happy to share a new tool now available at [EasyMeta.org](https://www.easymeta.org/). The app makes the new MAIVE method (Meta-Analysis Instrumental Variable Estimator, published yesterday in [*Nature Communications*](https://www.nature.com/articles/s41467-025-63261-0)) easy to apply with a few clicks. The site offers a [demo dataset](https://www.easymeta.org/demo) you can run instantly.\n\nAt the same time, the app allows for seamless use of methods well known in the MAER-Net community: PET-PEESE and the Endogenous Kink model. Until now, these approaches were available only in R or Stata. Now they can be run with a single click, no software installation needed.\n\nThe app supports options that applied researchers often need, including different types of clustering (classical, CR2, wild bootstrap), weighting schemes (including one that accounts for extreme heterogeneity), weak-instrument-robust confidence intervals, and fixed-intercept multilevel specifications to account for between-study differences in methods and quality.\n\nWe hope this tool will lower entry barriers to modern meta-analysis for students, collaborators, and applied researchers, and make it easier for MAER-Net members to demonstrate, compare, and teach bias-correction methods.\n\nWe'd be very grateful if you could use your favorite social network to share this tool with colleagues, students, or collaborators who might find it useful. And please let us know about any errors, missing features, or ideas for improvement — we'll keep refining the app based on your feedback. Together we can make bias correction in meta-analysis more accessible.\n\nSpecial thanks to **Petr Čala** for creating the app, and to **Heiko Rachinger** and **Pedro Bom** for developing the R package that powers it.\n\n👉 Try a demo at [EasyMeta.org/demo](https://www.easymeta.org/demo)",
+   "provenance": "self_published"
   },
   {
    "id": "zi-iv-e15-kvalita-zivota",
@@ -1218,6 +1262,27 @@
    "text_status": "link_only",
    "interviewer": "Alice Němcová Tejkalová",
    "provenance": "editorial"
+  },
+  {
+   "id": "maer-methods-guidelines",
+   "title": "Methods Guidelines for Meta-Analysis",
+   "date": "2023-11-27",
+   "date_precision": "day",
+   "section": "In English",
+   "category": "english",
+   "language": "en",
+   "outlet": "MAER-Net",
+   "authors": [
+    "Zuzana Irsova"
+   ],
+   "media": "text",
+   "original_url": "https://www.maer-net.org/post/methods-guidelines-for-meta-analysis",
+   "text_status": "published_full_text",
+   "url": "https://meta-analysis.cz/komentare/maer-methods-guidelines/",
+   "source_markdown": "https://meta-analysis.cz/komentare/src/2023-11-27_maer-methods-guidelines.md",
+   "word_count": 925,
+   "text": "As discussed at the Palma colloquium, together with Tom, Chris, and Tomas we prepared a brief practical guide on how to do modern meta-analysis – especially in social sciences but hopefully useful to aspiring meta-analysts in any field. The paper has just been published by the *Journal of Economic Surveys* and is available [here](https://onlinelibrary.wiley.com/doi/full/10.1111/joes.12595). The purpose of this column is to provide context to the guidelines from my own personal perspective.\n\nFollowing these guidelines is not obligatory for publication in *JoES* or elsewhere. Nevertheless, we believe there is value in summarizing in one place the comments that we often provide, as editors or referees, on meta-analysis manuscripts in economics, management, psychology, education, environmental sciences, and medical research. We try to be as specific as possible, but the tone of the guidelines is tempered by referees' comments and interactions among the four co-authors. The paper is mostly intended for researchers new to meta-analysis. In this role, the methods guidelines complement the [reporting guidelines](https://onlinelibrary.wiley.com/doi/full/10.1111/joes.12363) published in 2020.\n\nWe provide a step-by-step guide on how to do a meta-analysis from scratch. We cover the following issues: topic selection, literature search, data collection, correction for publication bias and p-hacking, heterogeneity, implied (best practice) estimate, and use of artificial intelligence. The guidelines draw, first, on the vast experience of Tom and Chris with both methods and applications, and second, on the data and codes for dozens of meta-analyses available at [meta-analysis.cz](http://meta-analysis.cz/). Each discussed step and method characteristic is accompanied by a practical example.\n\nThe guidelines are brief and non-technical, so please read them if you are interested in the content. Here I highlight seven issues that I personally find particularly important:\n\n**Topic**. If possible, choose a topic that you or your co-authors understand well from your own primary research. It's often risky to write a meta-analysis on a topic you are not intimate with, even if you have a lot of previous experience with meta-analysis. Seek co-authors who have written primary studies in this field.\n\n**Comparability**. Make sure it makes sense to quantitatively compare the estimates reported in different studies. While some systematic heterogeneity is inevitable and can be explored in meta-analysis (indeed, it can be the main reason why to do the meta-analysis in the first place), one should not mix estimates that cover scientifically different concepts. If you are unsure, divide the dataset and conduct separate meta-analyses.\n\n**Quality**. Do not exclude any primary studies ex ante. If you can include a paper, include it. You can always show what happens when you give more weight to \"good\" studies or if you remove the \"bad\" studies entirely. Importantly, doing so forces you to specify carefully what it is exactly that makes bad studies bad. Any such differentiation of \"good\" and \"bad\" need to be determined by an explicitly coded variable (e.g., quasi-experimental or observational) or some objective measure (e.g., retrospective power). If \"bad\" studies yield results similar to those of \"good\" studies, that's also a useful finding as it makes your main findings more robust.\n\n**Multiple estimates per study**. Collect all available estimates and use clustering/bootstrapping. Beware [sample overlap](https://onlinelibrary.wiley.com/doi/abs/10.1002/jrsm.1441). You can base a robustness check on the estimates that researchers prefer. You can also introduce a robustness check that focuses on one (random or median) estimate per study.\n\n**Correction techniques**. Always correct for potential publication bias or p-hacking. Use at least one model based on the funnel plot (such as PET-PEESE) and one selection model (such as 3PSM). Both families of correction techniques have quite different assumptions. Recently, Bartoš et al. (2023) have offered a model average across both families of publication selection bias corrections and models without any selection bias. Bartoš et al. offer easy to use software, JASP: ([https://fbartos.github.io/RoBMA/](https://fbartos.github.io/RoBMA/)) to calculate RoBMA-PSMA. Also, there are a number of video and [published tutorials](https://journals.sagepub.com/doi/full/10.1177/25152459221109259) that provide step-by-step guidance. Additionally, you can also use our new [MAIVE technique](http://meta-analysis.cz/maive/), which allows for spurious precision.\n\n**Bayesian approaches**. You don't have to be a convinced Bayesian to recognize the advantages of Bayesian model averaging techniques, both when it comes to [correcting for publication bias](https://fbartos.github.io/RoBMA/) (as described above) and explaining [heterogeneity](https://www.maer-net.org/post/model-averaging). When using Bayesian model averaging to explain heterogeneity, it is useful to add a dilution prior to address collinearity.\n\n**Implied estimates**. Report implied (best-practice) meta-analysis means for different contexts (for example, different demographic characteristics) conditional on correction for publication bias and potential misspecifications in primary studies.\n\nWe hope you will find the guidelines useful. Sometimes they might sound too demanding: do not despair if you cannot accommodate all of these issues. You can find good reasons to disagree with us for specific applications. A well-executed meta-analysis, even if it does not follow all of our recommendations, is immensely helpful to the scientific community and likely to attract a healthy number of citations. Doing a meta-analysis is worth the effort!\n\nThe guidelines provide many specific examples, but if I were to choose one general example from the meta-analyses that I co-authored, it would be the [one on skill substitution](https://direct.mit.edu/rest/article/doi/10.1162/rest_a_01227/112420/Publication-and-Attenuation-Biases-in-Measuring) forthcoming in the *Review of Economics and Statistics* and available open-access. The paper incorporates almost all the principles discussed here and in the guidelines.\n\nTo be clear, we do not claim that our guidelines must always be followed nor are they the definitive steps in conducting a rigorous meta-analysis in economics or the social sciences. It is impossible to provide a definitive guide on methodology: methods change rapidly, and opinions on best practices sometimes differ even among the co-authors of our guidelines paper. It's OK, and on some issues expected, if you disagree with us.",
+   "provenance": "self_published"
   },
   {
    "id": "e15-sprava-rezerv",
