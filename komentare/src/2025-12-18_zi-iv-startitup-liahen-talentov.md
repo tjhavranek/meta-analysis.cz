@@ -8,7 +8,6 @@ headline: "„Slovensko zostane len liahňou talentov a vidiekom Prahy,“ hovor
 byline: "Zuzana Havránková"
 interviewer: "Ema Dzurjovčinová"
 word_count: "2030"
-lang: "sk"
 perex: "Zuzana sa stala najmladšou profesorkou na Karlovej univerzite. Jej výskum sa dostal do materiálov amerického Kongresu, Európskeho parlamentu aj Svetovej banky."
 body_note: "Autorizovaná verzia rozhovoru, ktorú Zuzana Havránková schválila pre redakciu; rozhovor prebiehal e-mailom. Vydaná verzia je sčasti za paywallom a môže sa v detailoch líšiť."
 ---

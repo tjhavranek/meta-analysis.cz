@@ -27,12 +27,12 @@
   "corpus.jsonl": {
    "url": "https://meta-analysis.cz/komentare/corpus.jsonl",
    "bytes": 1163352,
-   "sha256": "d677ed622b26215a4fa95c5b3d2533d47546e9fc1de5567f325c1e064d1933a1"
+   "sha256": "30bc2eb3d06d1099b6ec33e94999199c2d31cb617c7dfa6edb84d3fcfc2fbe7c"
   },
   "index.json": {
    "url": "https://meta-analysis.cz/komentare/index.json",
    "bytes": 1179116,
-   "sha256": "4e717c80c8716c791769745fe16fafa8898e00050a795d25616a4c793a13a7d6"
+   "sha256": "3586559e281661562447b80ecab01a0d7a507a06f5e673f2b31edf5029512a70"
   },
   "all.md": {
    "url": "https://meta-analysis.cz/komentare/all.md",
@@ -47,7 +47,7 @@
   "feed.xml": {
    "url": "https://meta-analysis.cz/komentare/feed.xml",
    "bytes": 1166238,
-   "sha256": "21e2cf6d70eb17b7806a1062e385f2218ad2876d712f6f2eb80eda9598fd4e2f"
+   "sha256": "2dc06fcfad0c675f3d7515f8fe36a501f4a734b703d69fa25b27b51a6e00a23b"
   }
  },
  "generated_from": "komentare/src/*.md"
