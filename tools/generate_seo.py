@@ -476,6 +476,11 @@ def main():
             dns[:] = [d for d in dns if d not in ("src", "__pycache__")]
             if dp == sec_dir or "index.html" not in fns:
                 continue
+            # A page that tells robots not to index it does not belong in the sitemap:
+            # Search Console reports "submitted URL marked noindex" as an error.
+            with open(os.path.join(dp, "index.html"), encoding="utf-8") as _f:
+                if 'name="robots" content="noindex' in _f.read(2000):
+                    continue
             rel = os.path.relpath(dp, SITE).replace(os.sep, "/")
             urls.append((f"{BASE}/{rel}/", lastmod(f"{rel}/index.html")))
 

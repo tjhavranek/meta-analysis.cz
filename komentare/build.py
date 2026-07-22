@@ -321,8 +321,8 @@ def shell(title, desc, canonical, jsonld, body, active, extra_head="", lang="cs"
         for k, v in SECTIONS.items())
     # Not a SECTION: the social posts are not src items, so a section entry would put an
     # empty chip on the hub filter. It gets a nav link and nothing else.
-    nav += (f'<a href="{PATH}/ze-siti/"{cs}'
-            f'{" aria-current=\"page\"" if active == "ze-siti" else ""}>Ze sítí</a>')
+    nav += (f'<a href="{PATH}/posts/"{cs}'
+            f'{" aria-current=\"page\"" if active == "posts" else ""}>Posts</a>')
     rss_title = f"Komentáře — {SITE_AUTHORS}"
     _en = lang == "en"
     ies = ("https://ies.fsv.cuni.cz/en/contacts/institute-members/78067720" if _en
@@ -680,7 +680,7 @@ def write_index(items, key=None):
         n_soc = (len(json.loads(SOCIAL_JSON.read_text(encoding="utf-8")))
                  if SOCIAL_JSON.exists() else 0)
         if n_soc:
-            links.append(f'<a href="{PATH}/ze-siti/">Ze sítí ({n_soc})</a>')
+            links.append(f'<a href="{PATH}/posts/">Posts ({n_soc})</a>')
         counts = "      <p>" + " · ".join(links) + "</p>\n"
 
     body = (f'    <div class="lede">\n      <h1>{esc(title)}</h1>\n'
@@ -765,8 +765,8 @@ def write_machine_readable(items, social=()):
           "- [ORCID](https://orcid.org/0000-0002-3158-2539)",
           "- [Google Scholar](https://scholar.google.com/citations?user=BF0BvBkAAAAJ)",
           "- [RePEc](https://ideas.repec.org/f/pha418.html)",
-          f"- [Ze sítí]({BASE}/ze-siti/) — kratší příspěvky Zuzany Havránkové ze "
-          f"sociálních sítí, v plném znění",
+          f"- [Posts]({BASE}/posts/) — short posts by Zuzana Havránková, in full "
+          f"(English)",
           f"- [RSS]({BASE}/feed.xml)",
           f"- [Strojově čitelný index (JSON)]({BASE}/index.json)",
           f"- [Všechny texty v jednom souboru]({BASE}/all.md)", ""]
@@ -802,13 +802,13 @@ def write_machine_readable(items, social=()):
     # only machine-readable trace of 25 texts is one page's JSON-LD.
     for p in social:
         docs.append({
-            "id": f"ze-siti-{p['anchor']}", "title": p["text"].split(chr(10))[0][:110],
+            "id": f"posts-{p['anchor']}", "title": p["text"].split(chr(10))[0][:110],
             "date": p["date"], "date_precision": "day",
-            "section": "Ze sítí", "category": "ze-siti",
+            "section": "Posts", "category": "posts",
             "language": p.get("lang", "en"), "outlet": "LinkedIn",
             "authors": ["Zuzana Havránková"], "media": "text",
             "original_url": p.get("url", ""),
-            "url": f"{BASE}/ze-siti/#{p['anchor']}",
+            "url": f"{BASE}/posts/#{p['anchor']}",
             "text_status": "published_full_text",
             "genre": "social_post", "provenance": "self_published",
             "word_count": len(p["text"].split()), "text": p["text"],
@@ -841,9 +841,9 @@ def write_machine_readable(items, social=()):
          f"({sum(1 for a in items if a['media'] == 'text')} z celkem {len(items)}). "
          f"Zbývající položky jsou audio a video, které archiv vede pouze odkazem, "
          f"a v tomto souboru nejsou; jejich metadata najdete v index.json a corpus.jsonl. "
-         f"Samostatně jsou vedeny příspěvky ze sociálních sítí ({n_social}), které mají "
-         f"vlastní stránku {BASE}/ze-siti/ a v index.json i corpus.jsonl jsou označeny "
-         f"jako genre=social_post.",
+         f"Samostatně jsou vedeny kratší příspěvky ze sociálních sítí ({n_social}), "
+         f"psané převážně anglicky. Mají vlastní stránku {BASE}/posts/ a v index.json "
+         f"i corpus.jsonl jsou označeny jako genre=social_post.",
          "", "---", ""]
     for a in items:
         if a["media"] != "text":
@@ -897,9 +897,12 @@ def write_machine_readable(items, social=()):
 
 
 SOCIAL_JSON = KDIR / "social-posts.json"
-SOCIAL_DESC = ("Příspěvky Zuzany Havránkové ze sítí — kratší poznámky k vlastnímu výzkumu, "
-               "k metaanalýze a k dění kolem vědy. Publikováno původně na LinkedIn, "
-               "zde archivováno v plném znění.")
+# This section is written in English on purpose: the posts are mostly English and the
+# page is meant for an international readership, who reach it directly rather than
+# through the Czech archive around it.
+SOCIAL_DESC = ("Short posts by Zuzana Havránková on her own research, on meta-analysis "
+               "and on how research gets done. Originally published on LinkedIn, "
+               "archived here in full.")
 
 _LINK = re.compile(r"https?://[^\s<>]+")
 
@@ -976,17 +979,17 @@ def write_socials_page():
         blocks.append(
             f'      <article class="post" id="{esc(p["anchor"])}" lang="{lang}">\n'
             f'        <p class="post-date"><a href="#{esc(p["anchor"])}">'
-            f'<time datetime="{p["date"]}">{esc(cs_date(p["date"], lang=lang))}</time></a>'
+            f'<time datetime="{p["date"]}">{esc(cs_date(p["date"], lang="en"))}</time></a>'
             f'{orig}</p>\n'
             f'        {_social_html(p["text"])}{imgs}\n'
             f'      </article>')
         node = {
             "@type": "SocialMediaPosting",
-            "@id": f"{BASE}/ze-siti/#{p['anchor']}",
+            "@id": f"{BASE}/posts/#{p['anchor']}",
             "headline": p["text"].split("\n")[0][:110],
             "datePublished": p.get("datetime", p["date"]).replace(" ", "T") + "+00:00",
             "inLanguage": lang,
-            "url": f"{BASE}/ze-siti/#{p['anchor']}",
+            "url": f"{BASE}/posts/#{p['anchor']}",
             "author": {"@type": "Person", "name": "Zuzana Havránková",
                        "sameAs": ORCIDS["Zuzana Havránková"]},
             "text": p["text"],
@@ -998,10 +1001,12 @@ def write_socials_page():
         parts.append(node)
 
     jsonld = {"@context": "https://schema.org", "@graph": [
-        {"@type": "CollectionPage", "@id": f"{BASE}/ze-siti/", "url": f"{BASE}/ze-siti/",
-         "name": "Ze sítí", "description": SOCIAL_DESC, # the page itself is Czech — its chrome, heading and lede. Each post carries
-         # its own inLanguage, which is where the English/Czech mix is declared.
-         "inLanguage": "cs",
+        {"@type": "CollectionPage", "@id": f"{BASE}/posts/", "url": f"{BASE}/posts/",
+         "name": "Posts — Zuzana Havránková", "description": SOCIAL_DESC,
+         # This page is English, unlike the rest of the archive: the posts are mostly
+         # English and the readership is international. Each post still declares its own
+         # language, so the handful of Czech ones are marked.
+         "inLanguage": "en",
          "hasPart": parts}]}
 
     # shell() already opens <main><div class="wrap">; a second one here doubled the
@@ -1010,23 +1015,35 @@ def write_socials_page():
     jump = " · ".join(f'<a href="#rok-{y}">{y}</a>' for y in years)
     body = (
         '    <div class="lede reading">\n'
-        '      <h1>Ze sítí</h1>\n'
+        '      <h1>Posts</h1>\n'
         f'      <p>{esc(SOCIAL_DESC)}</p>\n'
-        '      <p class="post-note">Příspěvky jsou zde v plném znění tak, jak je autorka '
-        'zveřejnila, včetně původního členění na odstavce; převzaté cizí příspěvky '
-        'nezařazujeme. Zdrojem je oficiální export dat z LinkedIn, data i odkazy na '
-        'originály jsou proto přesné. <strong>Většina příspěvků je psána anglicky.</strong>'
-        '</p>\n'
+        '      <p class="post-note">Each post appears in full, exactly as published, '
+        'including its original paragraphing; posts shared from other people are not '
+        'included. The source is the official LinkedIn data export, so the dates and the '
+        'links to the originals are exact. A few posts are in Czech.</p>\n'
         f'      <p class="post-jump">{jump}</p>\n'
         '    </div>\n'
         '    <div class="posts reading">\n' + "\n".join(blocks) + "\n    </div>\n")
 
-    out = KDIR / "ze-siti"
+    out = KDIR / "posts"
     out.mkdir(exist_ok=True)
     (out / "index.html").write_text(
-        shell("Ze sítí — Zuzana Havránková", SOCIAL_DESC, f"{BASE}/ze-siti/", jsonld, body, "ze-siti"),
+        shell("Posts — Zuzana Havránková", SOCIAL_DESC, f"{BASE}/posts/", jsonld, body,
+              "posts", lang="en"),
         encoding="utf-8")
-    print(f"  ze-siti  {len(posts)} posts, "
+    # The section was briefly live at /ze-siti/. Leave a redirect so that address, and
+    # anything that captured it, still lands in the right place.
+    old = KDIR / "ze-siti"
+    old.mkdir(exist_ok=True)
+    (old / "index.html").write_text(
+        '<!doctype html>\n<html lang="en">\n<meta charset="utf-8">\n'
+        f'<title>Moved to {BASE}/posts/</title>\n'
+        f'<link rel="canonical" href="{BASE}/posts/">\n'
+        '<meta name="robots" content="noindex,follow">\n'
+        f'<meta http-equiv="refresh" content="0; url={BASE}/posts/">\n'
+        f'<p>This page has moved to <a href="{BASE}/posts/">{BASE}/posts/</a>.</p>\n',
+        encoding="utf-8")
+    print(f"  posts    {len(posts)} posts, "
           f"{sum(len(p.get('images', [])) for p in posts)} images")
     return posts
 
@@ -1201,10 +1218,10 @@ def main():
     # serving, stays in search results, and can leak text we deliberately withdrew
     # "data" is the corpus landing page: generated, not slug-backed, so it must be
     # named here or the orphan sweep below would delete it on every rebuild.
-    # "ze-siti" and "social-img" are generated the same way "data" is — not backed by a
+    # "posts" and "social-img" are generated the same way "data" is — not backed by a
     # slug — so they must be named here or the sweep below deletes them every rebuild.
     live = ({a["slug"] for a in items if a["media"] == "text"} | set(SECTIONS)
-            | {"data", "ze-siti", "social-img"})
+            | {"data", "posts", "ze-siti", "social-img"})
     orphans = [d for d in KDIR.iterdir()
                if d.is_dir() and d.name not in live and d.name not in ("src", "__pycache__")]
     for d in orphans:
@@ -1244,7 +1261,10 @@ def check():
     self-managed section cannot pass silently (the site-wide verifier skips it)."""
     import xml.etree.ElementTree as ET
     fails = []
-    pages = [p for p in KDIR.rglob("index.html") if "src" not in p.parts]
+    # ze-siti/ is a redirect stub left behind when the section moved to /posts/: no
+    # JSON-LD, no chrome, deliberately noindex. Not a page to validate.
+    pages = [p for p in KDIR.rglob("index.html")
+             if "src" not in p.parts and "ze-siti" not in p.parts]
     for p in pages:
         t = p.read_text(encoding="utf-8")
         m = re.search(r'<script type="application/ld\+json">' + chr(92) + 'n(.*?)' + chr(92) + 'n</script>', t, re.S)
@@ -1301,12 +1321,12 @@ def check():
                     seen[f] = 1
                 if len(p.get("image_alt") or []) != len(p.get("images") or []):
                     fails.append(f"social post {p['date']} has images without alt text")
-            html_ze = (KDIR / "ze-siti" / "index.html").read_text(encoding="utf-8")
+            html_ze = (KDIR / "posts" / "index.html").read_text(encoding="utf-8")
             anch = re.findall(r'<article class="post" id="([^"]+)"', html_ze)
             if len(anch) != len(set(anch)):
-                fails.append("ze-siti has duplicate anchors")
+                fails.append("posts page has duplicate anchors")
             if len(anch) != len(sp):
-                fails.append(f"ze-siti renders {len(anch)} posts, data has {len(sp)}")
+                fails.append(f"posts page renders {len(anch)} posts, data has {len(sp)}")
     except Exception as e:
         fails.append(f"index.json: {e}")
     print(f"checked {len(pages)} pages")
