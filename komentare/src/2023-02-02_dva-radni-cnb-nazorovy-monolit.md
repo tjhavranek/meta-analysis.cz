@@ -24,4 +24,4 @@ V takovém scénáři by dnes byl Marek Mora pravděpodobně guvernérem. Připo
 
 O to více je třeba Marka Moru ocenit, že nezměnil názor ani v době, kdy bylo jasné, že za vyšší sazby guvernérské body nedostane. Což platí i o Tomáši Nidetzkém a Vojtěchu Bendovi, kteří na jaře též mohli oportunisticky změnit názor s příslibem druhého mandátu, ale neudělali to. Nemusíme s nimi ve všem souhlasit, abychom tuto konzistenci ocenili.
 
-Suma sumárum, národní banka nesmí být názorový monolit. Musí mít jak členy, kteří do úmoru prosazují doporučení odborného aparátu (Morek Mora), tak členy, kteří tvrdohlavě poukazují na možné problémy v modelových předpokladech (Oldřich Dědek). Klíčové je, aby jejich názory byly odborně vyargumentované, nikoli jdoucí na ruku politické či podnikatelské reprezentaci.
+Suma sumárum, národní banka nesmí být názorový monolit. Musí mít jak členy, kteří do úmoru prosazují doporučení odborného aparátu (Marek Mora), tak členy, kteří tvrdohlavě poukazují na možné problémy v modelových předpokladech (Oldřich Dědek). Klíčové je, aby jejich názory byly odborně vyargumentované, nikoli jdoucí na ruku politické či podnikatelské reprezentaci.

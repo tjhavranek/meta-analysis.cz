@@ -35,7 +35,7 @@ Figure 1 shows Eurozone quarterly year-on-year changes in the HICP, an index of 
 
 Figure 1 Giving non-zero weight to house prices would make monetary policy in the Eurozone more countercyclical
 
-Notes: Aggregate index of owner-occupied housing for the Eurozone computed using the weights for each country in Eurostat’s construction of the harmonized index of consumer prices.Source: Eurostat.
+Notes: Aggregate index of owner-occupied housing for the Eurozone computed using the weights for each country in Eurostat’s construction of the harmonized index of consumer prices. Source: Eurostat.
 
 The delay in data availability is a frequent argument against the inclusion of house prices. This is a problem, but one that has been overcome by several statistical offices (Hampl and Havranek 2017). For example, Czech headline monthly inflation includes house prices with a 1.4% weight for most regions, and with a 2.3% weight for Prague, the capital city. The Czech National Bank, unusually for a central bank, computes its own supplementary inflation index (the CPIH) in which house prices get a 15% weight, based on the share in consumers’ expenditure. The Bank makes this index available in its inflation report. In some countries, it is possible to take the data directly from the land registry, where all price information is available within a few days after property changes hands.
 

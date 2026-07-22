@@ -13,7 +13,7 @@ perex: "Kdybychom naše devizové rezervy investovali jako Švýcaři, tak jen z
 
 # Ať se ČNB inspiruje ve Švýcarsku. Může vydělávat stamiliardy
 
-Do vedení České národní banky v příštích letech nastoupí ženy. Je to tom alespoň přesvědčen Tomáš Havránek, nejcitovanější český akademický ekonom v zahraničí, dlouholetý pracovník národní banky, který dnes působí na Karlově univerzitě.
+Do vedení České národní banky v příštích letech nastoupí ženy. Je o tom alespoň přesvědčen Tomáš Havránek, nejcitovanější český akademický ekonom v zahraničí, dlouholetý pracovník národní banky, který dnes působí na Karlově univerzitě.
 
 „Jsem přesvědčen, že v příštích letech minimálně dvě z příštích čtyř nominací budou ženy, ať už s tímto prezidentem nebo tím dalším, protože nerovnováha v pohlaví je tam nepochybně mnohem větší, než by měla být,“ říká v rozhovoru pro SZ Byznys.
 
@@ -27,7 +27,7 @@ Skutečně gigantické.
 
 Enormní balík. A pak je evidentní, že nemusíme všechny ty peníze nechávat ležet de facto na běžném účtu, ale že můžeme část investovat tak, aby nám vydělávaly peníze.
 
-Teď to děláme trochu, investujeme maličko, ale je to hrozně málo, což se odráží potom i ve výnosu, který je za posledních pět let dosáhl tuším 1,7 procenta v průměru ročně.
+Teď to děláme trochu, investujeme maličko, ale je to hrozně málo, což se odráží potom i ve výnosu, který za posledních pět let dosáhl tuším 1,7 procenta v průměru ročně.
 
 V současnosti investuje Česká národní banka do akcií, respektive akciových indexů asi desetinu svých rezerv a tento podíl na jaře zvýšila na 13 procent.
 
@@ -83,4 +83,4 @@ Teď už víme, že nám škodí i malá inflace a že by bylo lepší opravdu 
 
 Mimochodem, kdybychom to udělali, tak nám bude posilovat koruna rychleji, protože koruna bude najednou stabilní uchovatel hodnoty a bude posilovat o dvě procenta rychleji oproti ostatním okolním inflačním měnám.
 
-A na tom ještě hezké, že tohle by nepoškodilo exportéry, protože by jim zároveň pomaleji rostly náklady na vstupech díky smazání inflace. Čili, je to vlastně jediný způsob, jak korunu posílit, aniž byste poškodili exportéry.
+A na tom je ještě hezké, že tohle by nepoškodilo exportéry, protože by jim zároveň pomaleji rostly náklady na vstupech díky smazání inflace. Čili, je to vlastně jediný způsob, jak korunu posílit, aniž byste poškodili exportéry.

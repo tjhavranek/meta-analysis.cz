@@ -23,7 +23,7 @@ Inflace ve výši 15 procent, kterou brzy okusíme, půjde z větší části pr
 
 Tím nástrojem je právě kurz. ČNB je v Evropě vedle Švýcarské národní banky jediná, která má dostatek devizových rezerv, aby s inflací výrazně pohnula. Švýcaři to dělat nemusejí, inflace u nich je stále nizoučká. Ale neochota ČNB plnit svůj ústavní úkol je nepochopitelná. Tím úkolem není stabilita kurzu, ale cenová stabilita. Nejpozději v září loňského roku tak měla začít postupně rozprodávat devizové rezervy, přičemž k tomu byla opakovaně vyzývána ze strany odborné veřejnosti.
 
-Dražší ropa a plyn vyženou letos inflaci nad deset procent, tvrdí Petr Král z ČNB Rozhovory Proč to ČNB nedělá? Zkušenost s intervencemi z let 2013–2017 pro bankovní radu nebyla příjemná. Na druhou stranu teď by jen prodávali eura, která tehdy nakoupili. Tedy jednalo by se vlastně o neutralizaci dřívějších intervencí a přiblížení koruny trajektorii, na níž by se nacházela bez nich.
+Proč to ČNB nedělá? Zkušenost s intervencemi z let 2013–2017 pro bankovní radu nebyla příjemná. Na druhou stranu teď by jen prodávali eura, která tehdy nakoupili. Tedy jednalo by se vlastně o neutralizaci dřívějších intervencí a přiblížení koruny trajektorii, na níž by se nacházela bez nich.
 
 Aby se zabránilo spekulacím, je nejlepší nastavit jasné pravidlo odprodeje rezerv, například jedno procento objemu každý měsíc po dobu čtyř let. Už při oznámení tohoto opatření by koruna výrazně posílila, což je právě to, co teď potřebujeme. Dnes máme větší problémy než inflaci. Přesto by ČNB neměla rezignovat na cenovou stabilitu, i když to obnáší jinou než učebnicovou taktiku.
 

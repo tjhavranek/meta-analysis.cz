@@ -18,7 +18,7 @@ Za více než čtvrtstoletí své existence nezažila naše krásná sportovní 
 
 Na zápas dorazilo zhruba 500 fanoušků. Tento rekord bude stěží kdy překonán, neb víc už hala nepojme: tribuna je navržena pro 200 lidí. Taková atmosféra jako v pondělí nebývá k vidění ani na zápasech florbalové superligy v Praze. Je to zážitek i pro rozhodčí; všichni chtějí pískat v Litomyšli a mají na nás dlouhatánský pořadník. Brzy bude zážitek ještě větší, protože budeme hostit špičkové týmy z celé země.
 
-Ale popořadě, co všechno museli florbalisté k postupu vybojovat. Nestačilo vyhrát divizi. Nestačilo vyhrát ji o 9 bodů. Přitom naš divize byla větší než východní Čechy: jezdili jsme i do Třebíče a Brna. Po ovládnutí naší ligy jsme museli ještě třikrát porazit jeden z nejlepších divizních týmů severní Moravy: Bílovec. Sérii jsme opanovali 3:1 a rozhodující vítězství získali venku v Bílovci.
+Ale popořadě, co všechno museli florbalisté k postupu vybojovat. Nestačilo vyhrát divizi. Nestačilo vyhrát ji o 9 bodů. Přitom naše divize byla větší než východní Čechy: jezdili jsme i do Třebíče a Brna. Po ovládnutí naší ligy jsme museli ještě třikrát porazit jeden z nejlepších divizních týmů severní Moravy: Bílovec. Sérii jsme opanovali 3:1 a rozhodující vítězství získali venku v Bílovci.
 
 Avšak pravidla postupu ve florbalových soutěžích jsou přísná. Florbal rychle expanduje – týmů je mnoho, jejich počet a úroveň stále stoupá. Bylo potřeba vyhrát další sérii, tentokrát proti druhému nejlepšímu týmu severních Čech, Kadani. Protože Kadaň svoji divizi nevyhrála, musela předtím ovládnout dokonce 2 série a porazit postupně Jablonec a Jihlavu.
 

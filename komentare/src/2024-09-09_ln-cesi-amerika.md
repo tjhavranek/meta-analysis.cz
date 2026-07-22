@@ -23,8 +23,6 @@ Američané jsou Litomyšlí fascinováni, neb takhle malá města daleko od fin
 
 Někteří naši přátelé v Kalifornii to řeší tak, že děti učí sami doma, což si ale může dovolit málokdo. Přes všechny problémy našich škol jsme rádi, že se svými čtyřmi dětmi můžeme žít v Česku.
 
-Jak vyrovnat české veřejné rozpočty? Vládě by stačily pouhé dva kroky, přiznání porážky ale bolí
-
 Čecha zarazí, nakolik si Američané potrpí na rasu, pohlaví a sexuální orientaci. Čekáte, že vás budou hodnotit podle toho, jací jste, jak se chováte? Ano, ale častou podmínkou pro pracovní postup je „identita“, tedy co jste, čím jste se narodili. Podobně jako v 50. letech, ale naruby: bílí heterosexuální muži nejsou nahoře, ale úplně dole, hned vedle židů.
 
 Můžeme v tom vidět trochu škodolibé spravedlnosti. Jenže dvě zla nedělají dobro. V Česku jsme na tom lépe, snad proto, že nemusíme kompenzovat otroctví, což nikdy nejde dost.
@@ -44,8 +42,6 @@ Když už pachatele chytí, mnohdy ho hned pustí. Na počátku byl dobrý úmys
 Americké rodiny si po přestěhování do Prahy pochvalují síť tramvají a metra. Jejich děti se najednou mohou svobodně pohybovat po velkém městě. V Americe, automobilové civilizaci, se musí spoléhat na to, že je rodiče všude odvezou. V některých městech MHD funguje, ale s dětmi se do ní odvážíte málokdy.
 
 Pražské metro je na globální poměry extrémně bezpečné. Síť vlaků a autobusů v naší zemi je slušná a spolehlivější než v Německu. I americký hardcore republikán v Česku uzná, že některé vládní výdaje mají smysl.
-
-Stanice Depo Zličín nebude, metro by vozilo jen vzduch. Hřib zastavil projekt, který dříve hájil
 
 Jasně, ne ve všem drtíme Ameriku. V kráse přírody nám dává k. o. Rádi vyzdvihujeme naše skvělé zdravotnictví, ale kvůli cenovým stropům často neseženeme základní léky. Dbá-li člověk na pojištění, nemá se zdravotnictvím v Americe problém. Američané jsou též finančně bohatší.
 

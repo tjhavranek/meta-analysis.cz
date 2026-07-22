@@ -112,7 +112,7 @@ Extremisté mají rezervy pod kontrolou teď: extremisté nulového rizika. Jasn
 
 O svojí vizi, jak udělat z ČNB cosi jako fond bohatství, mluvil ještě jako řadový člen bankovní rady často právě Aleš Michl. Tehdy jste si v této věci rozuměli? A pokud ano, bude ji podle vás propagovat i nyní jako guvernér?
 
-Ano, v tomhle rozuměli, ale není potřeba fond bohatství. Stačí, aby Aleš sebral odvahu udělat správnou věc. Mně se zdá, že nechce nic riskovat. K čemu je guvernérem? Nerozumím třeba tomu, proč se bojí chodit do diskuzních pořadů, kde nejsou předem připravené otázky. I nepříjemná komunikace je součást práce guvernéra, za kterou je dobře placen. Pokud je jeho ambicí zapsat se do historie, ve správě rezerv má příležitost.
+Ano, v tomhle jsme si rozuměli, ale není potřeba fond bohatství. Stačí, aby Aleš sebral odvahu udělat správnou věc. Mně se zdá, že nechce nic riskovat. K čemu je guvernérem? Nerozumím třeba tomu, proč se bojí chodit do diskuzních pořadů, kde nejsou předem připravené otázky. I nepříjemná komunikace je součást práce guvernéra, za kterou je dobře placen. Pokud je jeho ambicí zapsat se do historie, ve správě rezerv má příležitost.
 
 Vaše stížnosti na špatné fungování ČNB bychom nemuseli řešit, kdyby Česko mělo euro. Jste příznivcem jeho přijetí?
 

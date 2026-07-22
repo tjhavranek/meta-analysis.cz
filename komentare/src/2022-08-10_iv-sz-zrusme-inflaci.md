@@ -98,7 +98,7 @@ Dobře, ale ta banka dělá účetnictví každý rok. To by musely požadovat i
 
 Takto to rozhodně není. Během krize v roce 2008 až 2009 ty ceny klesaly a nic takového se nedělo. Ten můj návrh není žádná deflační spirála, naopak stabilita. Když máte deflaci, o to silnější má být reakce měnové politiky na srovnání té situace. Tedy pokud to bude kredibilní a pokud tomu budeme všichni věřit, pokud ne, tak to nemá smysl.
 
-Centrální banka musí být kredibilní, to složení bankovní rady musí být kredibilní. Vy jste se ptal, kdo by tam měl být, klidně by tam mohli být zahraniční experti. Nejlepší ekonom v Česku je na nějakém místě 1500 globálně. Není důvod, proč bychom si neměli najímat na tu důležitou práci nejlepší zahraničí experty.
+Centrální banka musí být kredibilní, to složení bankovní rady musí být kredibilní. Vy jste se ptal, kdo by tam měl být, klidně by tam mohli být zahraniční experti. Nejlepší ekonom v Česku je na nějakém místě 1500 globálně. Není důvod, proč bychom si neměli najímat na tu důležitou práci nejlepší zahraniční experty.
 
 Třeba John Cochrane, bývalý prezident Americké finanční asociace nebo kdokoliv, kdo je v první stovce top ekonomů. Ani já, ani nikdo jiný, ale tito špičkoví lidé. My je můžeme zaplatit, ta banka má takové rezervy, že jen trochu lepší správa těch rezerv, což se Aleš Michl chystá konečně dělat, vám zaplatí 100 takových špičkových lidí. Nevidím důvod, proč vybírat jen z toho českého rybníčku.
 
@@ -116,7 +116,7 @@ Protože je to silná ekonomika.
 
 Protože ten frank neztrácí svoji hodnotu, je to dlouhodobě silná měna, která posiluje oproti těm ostatním inflačním měnám. Koruna by mohla tím směrem vykročit a jenom díky tomu by posílila taky, kdyby byl ten režim cenové stability kredibilní, ne dvou procentní inflace. I když, co bychom dneska za ní dali.
 
-Kdy si myslíte, že se by ta současná, rapidní inflace 20 procent mohla dostat zase na nějakou přijatelnou hranici?
+Kdy si myslíte, že by se ta současná, rapidní inflace 20 procent mohla dostat zase na nějakou přijatelnou hranici?
 
 Doufám, že příští rok, ale k tomu je nutná podmínka opravdu aktivně využít ten kurz. Posílit korunu tím, že zrušíme ty intervence proti koruně, těch 75 miliard euro, ty prodáme a tím skartujeme dva biliony korun, které tehdy byly ne vytištěné, ale vymačkané na klávesnici. To je ta nutná podmínka toho, abychom viděli nějakou fundamentální změnu v té pádivé inflaci, kterou dnes vidíme.
 

@@ -36,7 +36,9 @@ Obě rady udělaly řadu dobrých věcí. Ale mezinárodní srovnání u inflace
 
 Když se tvrdí, že současná rada je ta špatná, zapomíná se, že současnou inflaci úplně nezpůsobila. Tu máme zvýšenou už několik let, česká inflace patří mezi nejvyšší v Evropě minimálně čtyři roky. Takže to do velké míry jde za minulou bankovní radou. Tu musím pochválit za odvahu k rychlému zvyšování sazeb v letech 2021 a 2022, v tom byli svým způsobem průkopníci. Jiří Rusnok mě překvapil ochotou to udělat i přes odpor vlády a značné části veřejnosti. Za to bychom mu všichni měli poděkovat.
 
-Teď asi přijde kritika…Ano. Co už bych nechválil, je zatvrzelost v soustředění se jen na jeden nástroj, a to úrokové sazby. Ty totiž fungují s velkým zpožděním, projeví se v ekonomice plně až za rok a půl či později. S inflací tedy bezprostředně nic neudělají a rapidní inflační šok, jaký jsme zažili, jimi moc neovlivníte. Přitom rychlé řešení bylo na stole. V ČNB měli obrovský balík devizových rezerv, u kterých dlouhodobě chybí vůle je výnosně investovat. Mohli tedy udělat s opačným znaménkem to, co rada udělala v roce 2013, kdy začala intervenovat a cíleně oslabovat korunu.
+Teď asi přijde kritika…
+
+Ano. Co už bych nechválil, je zatvrzelost v soustředění se jen na jeden nástroj, a to úrokové sazby. Ty totiž fungují s velkým zpožděním, projeví se v ekonomice plně až za rok a půl či později. S inflací tedy bezprostředně nic neudělají a rapidní inflační šok, jaký jsme zažili, jimi moc neovlivníte. Přitom rychlé řešení bylo na stole. V ČNB měli obrovský balík devizových rezerv, u kterých dlouhodobě chybí vůle je výnosně investovat. Mohli tedy udělat s opačným znaménkem to, co rada udělala v roce 2013, kdy začala intervenovat a cíleně oslabovat korunu.
 
 Samozřejmě posilovat korunu nelze donekonečna, protože balík rezerv je omezený. Ale mohli například v září 2021, kdy poprvé výrazněji zvedli sazby, říct, že každý měsíc po následující dva roky budou prodávat miliardu eur nebo dvě. To by skokově posílilo korunu a okamžitě pomohlo snížit inflaci. Intervence mají složité dopady a není to tak jednoduché, ale nikdo nevysvětlil, proč tohle Rusnokova rada na podzim 2021 neudělala. Nejhorší je, že uvnitř banky se o tomto kroku tehdy ani nediskutovalo. Rozhodnutí spustit intervence v roce 2013 se někomu nemusí líbit, ale předcházely tomu měsíce hluboké diskuze, kde vyhrála argumentačně silnější strana. V roce 2021 bylo ticho. Tohle je selhání celé ČNB jako instituce.
 
@@ -79,8 +81,6 @@ Co byste vy teď na jeho místě dělal?
 Kdybych byl znovu poradce, poradil bych okamžitě zvýšit sazby. Rok ignorovali vysokou inflaci, ačkoli jim vlastní analytici radili, že mají sazby zvednout. Proto by nyní bylo logické, aby ignorovali, že si dovážíme deflaci v podobě meziročně nižších cen energií. Sazby tedy aspoň půl roku nemohou jít dolů, ale jak vám to budou trhy věřit? Vhodná cesta, jak přesvědčit trhy, je nejenom mluvit, ale něco udělat.
 
 Konkrétně zvednout sazby o čtvrtinu procentního bodu na 7,25 procenta. To nijak nezbrzdí ekonomiku, ale signalizační vliv takového kroku bude fenomenální. Koruna by přestala oslabovat. Všichni pochopí, že dalšího minimálně půl roku se nebudou snižovat sazby, jinak by rada byla za klauny. Teď sice tvrdí, že sazby dlouho nesníží, ale ničím konkrétním to nepodkládají.
-
-I dvě procenta inflace ročně znamenají během jedné generace znehodnocení peněz o polovinu.
 
 Upřímně, to se nestane a vy to víte.
 

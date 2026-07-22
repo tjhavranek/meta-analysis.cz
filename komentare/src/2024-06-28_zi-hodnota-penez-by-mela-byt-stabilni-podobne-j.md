@@ -8,7 +8,7 @@ headline: "Hodnota peněz by měla být stabilní podobně jako délka metru"
 byline: "Tomáš Havránek"
 word_count: "1639"
 interviewer: "Štěpán Drábek"
-perex: "Kdyby centrální banka využila své rezervy k posílení koruny v roce 2021, nemuselo si Česko projít tak vysokou inflací. Profesor Tomáš Havránek je zároveň přesvědčen o tom, že kořeny nedávných potíží sahají až do období let 2013–2017, kdy banka uměle oslabovala českou měnu. Jinak řečeno,..."
+perex: "Kdyby centrální banka využila své rezervy k posílení koruny v roce 2021, nemuselo si Česko projít tak vysokou inflací. Profesor Tomáš Havránek je zároveň přesvědčen o tom, že kořeny nedávných potíží sahají až do období let 2013–2017, kdy banka uměle oslabovala českou měnu."
 ---
 
 # Hodnota peněz by měla být stabilní podobně jako délka metru

@@ -11,7 +11,7 @@ perex: "ČNB v příštích čtyřech letech umaže ztrátu z minulosti a začne
 
 # Babiš si vezme stamiliardy z ČNB. Zůstane národní banka nezávislá?
 
-Současný guvernér ČNB byl poradcem budoucího premiéra. Zároveň ještě jako řadový člen vedení prosazoval, aby banka poslala vládě část svého zisku. Tehdy by také premiérem Babiš. Teď bude navíc potenciál pro převody do státní kasy mnohem větší, protože ČNB během úřadování nové vlády dost možná vydělá stamiliardy. Máme se bát, že národní banka ztratí nezávislost?
+Současný guvernér ČNB byl poradcem budoucího premiéra. Zároveň ještě jako řadový člen vedení prosazoval, aby banka poslala vládě část svého zisku. Tehdy byl také premiérem Babiš. Teď bude navíc potenciál pro převody do státní kasy mnohem větší, protože ČNB během úřadování nové vlády dost možná vydělá stamiliardy. Máme se bát, že národní banka ztratí nezávislost?
 
 Stručně: ne, bude-li to automatický transfer podle předem daného pravidla. Ve vyspělých zemích je běžné, že národní banka posílá vládě svůj zisk. U nás to podle zákona má dělat stejně, jen za celou historii neměla zisk dostatečný, aby mohla něco poslat. Když se bavíte s ekonomy v zahraničí, málokdo vám věří, že by něco takového vůbec bylo možné. Národní banky jsou v moderní ekonomice strojem na peníze, často doslova.
 

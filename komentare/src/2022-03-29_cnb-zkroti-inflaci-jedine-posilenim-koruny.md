@@ -6,7 +6,7 @@ headline: "ČNB zkrotí inflaci jedině posílením koruny"
 status: full
 byline: "Tomáš Havránek"
 word_count: "681"
-perex: "Pokud chce ČNB opravdu bojovat proti inflaci, měla by místo zvedání úroků spíše svými devizovými rezervami posílit korun. To by totiž neomezilo tahouna hospodářství – spotřebu, tvrdí ve svém komentáři ekonom Tomáš Havránek."
+perex: "Pokud chce ČNB opravdu bojovat proti inflaci, měla by místo zvedání úroků spíše svými devizovými rezervami posílit korunu. To by totiž neomezilo tahouna hospodářství – spotřebu, tvrdí ve svém komentáři ekonom Tomáš Havránek."
 ---
 
 # ČNB zkrotí inflaci jedině posílením koruny
@@ -17,7 +17,7 @@ Během intervencí proti koruně vytvořili obchodníci v suterénu národní ba
 
 Jistě, bankovní rada nemůže určit, kam až chce korunu posílit. Spekulanti by na tom vždy vydělali a mohli by ČNB i přetlačit. ČNB ale může postupně prodat eura, která nakoupila za 2 biliony nových korun. Tak ty nové koruny „odmaže“.
 
-Když ČNB slíbí, že budete prodávat 2 miliardy eur měsíčně, dokud inflace nespadne na nulu, už při takovém oznámení koruna skokově posílí, snadno na 22 korun za euro, a dál bude posilovat postupně. Tím rychle zlevní vše z dovozu, mimo jiné plyn a benzín. Zatím ČNB podpořila korunu jen symbolicky na začátku března.
+Když ČNB slíbí, že bude prodávat 2 miliardy eur měsíčně, dokud inflace nespadne na nulu, už při takovém oznámení koruna skokově posílí, snadno na 22 korun za euro, a dál bude posilovat postupně. Tím rychle zlevní vše z dovozu, mimo jiné plyn a benzín. Zatím ČNB podpořila korunu jen symbolicky na začátku března.
 
 Vývozci samozřejmě rádi nebudou, protože se jim sníží tržby přepočtené na koruny. Nicméně úkolem ČNB není podporovat vývozce, ale doručit cenovou stabilitu. Oslabováním koruny jsme pomáhali vývozcům, teď bychom to jen vynulovali a stejnou měrou pomohli dovozcům.
 

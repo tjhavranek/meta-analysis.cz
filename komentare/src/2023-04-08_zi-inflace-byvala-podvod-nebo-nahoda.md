@@ -24,7 +24,7 @@ Neexistovala v systematické podobě. Inflace, čili snížení hodnoty peněz, 
 
 Hodnota peněz často klesala ve válkách.. Panovník pozastavil směnu peněz za zlato, nebo zmenšil podíl zlata či stříbra v mincích. To lidé vnímali jako podvod, který ale obvykle skončil s koncem války. Pak se země vrátila k cenové stabilitě, viz například politika císaře Vespasiána, který zvýšil podíl stříbra v mincích.
 
-Hodnota peněz mohla také klesnout kvůli náhodě. Zvýšila se nabídka drahých chovů, třeba stříbra po objevu Ameriky a otevření dolů v Potosí. Ale ani tehdy nebyla inflace tak silná jako v našem inflačním cílování. 2% inflace zní neškodně, ale za generaci sníží hodnotu peněz na polovinu. Je to oficiální program pro znehodnocení peněz, což je historicky unikátní.
+Hodnota peněz mohla také klesnout kvůli náhodě. Zvýšila se nabídka drahých kovů, třeba stříbra po objevu Ameriky a otevření dolů v Potosí. Ale ani tehdy nebyla inflace tak silná jako v našem inflačním cílování. 2% inflace zní neškodně, ale za generaci sníží hodnotu peněz na polovinu. Je to oficiální program pro znehodnocení peněz, což je historicky unikátní.
 
 Kde se tedy naše dlouhodobá moderní inflace vzala? Stojí za ní centrální banky, který mají většinou právě onen dvou procentní inflační cíl?
 
@@ -40,7 +40,7 @@ Znamená to tedy nepřímo, že bychom se měli vrátit ke zlatému standardu?
 
 Zklamu vyznavače zlata: ne, to v moderní ekonomice není vhodné. Zlato je jenom jedna komodita. Zvláštní status má jen historicky, tím, že svého času většina světa zlatem platila. Dnes by podobný smysl dával pšeničný nebo bitcoinový standard. Zlato navíc způsobuje deflační periody, tedy období klesajících cen v době, kdy je dočasně menší nabídka zlata. S takovou deflací nelze nic dělat, jen čekat. Ceny jsou při zlatém standardu dlouhodobě stabilní, ale krátkodobé kolísání je příliš veliké. V případě ekonomické krize pak dočasná deflace může být problém. A tím se dostáváme k tomu, proč někteří tvrdí, že inflace je dobrá.
 
-Ano, v současnosti většina ekonomů tvrdí, že inflace je dobrá právě proto, že neprohlubuje ekonomické krize. Lidé tolik nešetří, protože zboží nominálně levnější nebude a svým utrácením roztáčení kola ekonomiky a umožňují nám vybřednout z krize. Zároveň inflace snižuje potichu mzdy a firmám umožňuje takto snížit platy.
+Ano, v současnosti většina ekonomů tvrdí, že inflace je dobrá právě proto, že neprohlubuje ekonomické krize. Lidé tolik nešetří, protože zboží nominálně levnější nebude a svým utrácením roztáčejí kola ekonomiky a umožňují nám vybřednout z krize. Zároveň inflace snižuje potichu mzdy a firmám umožňuje takto snížit platy.
 
 Problém má dvě roviny. Zaprvé obava z deflace. Ta pramení čistě ze zkušenosti velké deprese. My už ale víme, že to tehdy nebyla deflace, která způsobila krizi. Problém byl v neflexibilitě zlatého standardu a ve špatné politice centrálních bank. Jak říká Ben Bernanke, bývalý šéf americké centrální banky a nositel Nobelovy ceny za ekonomii, centrální banky tím, že nechaly padnout bankovní sektor, krizi samy zavinily. Banky padaly jako domino, zamrzlo úvěrování ve Spojených státech a globálně, ekonomika se začala hroutit.
 

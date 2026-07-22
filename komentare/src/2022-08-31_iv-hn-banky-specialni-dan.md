@@ -24,7 +24,7 @@ Nerozumím úplně jejich neochotě aktivněji využívat devizové rezervy. Ale
 
 **Bylo by to vůbec k něčemu, nedošlo by jen ke zbytečnému vyčerpání rezerv? Současné intervence za posílení koruny rezervy snížily už o deset procent…**
 
-V nejhorším případě se jen zbavíme těch dvou bilionů korun, které ČNB vytvořila během intervencí proti koruně. Tyhle koruny mají banky uložené v ČNB a musíme za ne platit 7 % ročně. Když tyhle koruny skartujete, měna posílí a inflace klesne. Je samozřejmě otázka, jak výrazné by to posílení bylo a zdali by přineslo recesi. Podle mě je ale větší problém inflace než recese. Recese za rok přejde, ale inflace vám ničí celoživotní práci, za tři roky lidem vymaže třetinu jejich úspor. Česká národní banka se má proto snažit dosáhnout cenové stability všemi prostředky.
+V nejhorším případě se jen zbavíme těch dvou bilionů korun, které ČNB vytvořila během intervencí proti koruně. Tyhle koruny mají banky uložené v ČNB a musíme za ně platit 7 % ročně. Když tyhle koruny skartujete, měna posílí a inflace klesne. Je samozřejmě otázka, jak výrazné by to posílení bylo a zdali by přineslo recesi. Podle mě je ale větší problém inflace než recese. Recese za rok přejde, ale inflace vám ničí celoživotní práci, za tři roky lidem vymaže třetinu jejich úspor. Česká národní banka se má proto snažit dosáhnout cenové stability všemi prostředky.
 
 **Říkám si, jestli to z Vaší strany není poměrně radikální odklon od toho, co jste říkal dříve. Horoval jste za to, aby se devizové rezervy ve velkém investovaly…**
 
@@ -76,7 +76,7 @@ Určitě jsme na banky až moc hodní a naší netečností je necháváme pří
 
 **Podle Vás mají nyní banky nezasloužené zisky v důsledku repo operací, ty tu ale přece nemusí být dlouho. Až půjdou sazby dolů, bankám vzrostou náklady kvůli regulacím a refixacím hypoték na nižší sazby. Není proto správné, že si teď podrží vyšší zisky?**
 
-Líbí se mi, jak jste optimistický. Bohužel si nemyslím, že vývoj inflace v dalších letech umožní pokles sazeb. Ale i kdyby ano, nanky to mohou vyrovnat lusknutím prstů snížením úroků na spořicích účtech. .
+Líbí se mi, jak jste optimistický. Bohužel si nemyslím, že vývoj inflace v dalších letech umožní pokles sazeb. Ale i kdyby ano, banky to mohou vyrovnat lusknutím prstů snížením úroků na spořicích účtech. .
 
 **Pokud se zavedou daně z abnormálních zisků, měly by se také zavést dotace v době nízkých zisků?**
 
@@ -134,11 +134,11 @@ Máte pravdu, reakce fiskální politiky je důležitá. Při recesi a deflaci c
 
 **Řekněme, že jste v pozici země, která má vlastní měnu, extrémně vysoký dluh a je de facto před bankrotem, tudíž těžko se můžete dál zadlužovat. A nemluvím ani o tom, že ono tištění peněz zavání narušením nezávislosti centrální banky…**
 
-Země, která je před bankrotem a má vlastní měnu, není v deflaci. Vládní dluh je jenom jiná forma peněz. Když má vládní dluh malou hodnotu, mají malou hodnotu i peníze, jak se lidé zbavují měny té země. Zvyšování vládního dluhu je tištění peněz, a to i bez přispění centrání banky.
+Země, která je před bankrotem a má vlastní měnu, není v deflaci. Vládní dluh je jenom jiná forma peněz. Když má vládní dluh malou hodnotu, mají malou hodnotu i peníze, jak se lidé zbavují měny té země. Zvyšování vládního dluhu je tištění peněz, a to i bez přispění centrální banky.
 
 **Kdybychom něco takového zavedli, tak co by to znamenalo vůči vnějšímu světu?**
 
-Kdybychom zrušili inflaci, například ujasněním v Zákoně o ČNB, že cenová stabilita je stabilita průměrých cen, posilovala by nám postupně koruna.
+Kdybychom zrušili inflaci, například ujasněním v Zákoně o ČNB, že cenová stabilita je stabilita průměrných cen, posilovala by nám postupně koruna.
 
 **Z toho by exportéři moc nadšení nebyli.**
 
@@ -154,4 +154,4 @@ Nevím, o čem jiném by měla být kampaň, než o inflaci. Prezident rozhoduje
 
 **Máte ambici stát se členem bankovní rady? Přijal byste takovou nabídku od prezidenta?**
 
-Nevím o nikom, kdo by takovou nabídku odmítl. Nicméně bydlím v Litomyši a mám 4 malé děti, takže pro mě by to bylo složité. V bankovní radě by se mi spíš líbil někdo s dlouhodobou zkušeností ze zahraničí. Třeba Jaroslav Borovička nebo Filip Matějka, nejlepší čeští makroekonomové. Nebo i špičkoví experti, kteří nemají české občanství, ale k tomu by se musel změnit Zákon o ČNB. To bychom mohli udělat ideálně najednou s upřesněním, co znamená cenová stabilita.
+Nevím o nikom, kdo by takovou nabídku odmítl. Nicméně bydlím v Litomyšli a mám 4 malé děti, takže pro mě by to bylo složité. V bankovní radě by se mi spíš líbil někdo s dlouhodobou zkušeností ze zahraničí. Třeba Jaroslav Borovička nebo Filip Matějka, nejlepší čeští makroekonomové. Nebo i špičkoví experti, kteří nemají české občanství, ale k tomu by se musel změnit Zákon o ČNB. To bychom mohli udělat ideálně najednou s upřesněním, co znamená cenová stabilita.
