@@ -391,17 +391,27 @@ def shell(title, desc, canonical, jsonld, body, active, extra_head="", lang="cs"
   <div class="wrap about">
     <p class="about-bio">{bio}</p>
     <ul class="about-links">
-      <li><a href="https://www.tomashavranek.cz/"{cs}>Osobní stránka</a></li>
-      <li><a href="{SITE}/">meta-analysis.cz</a></li>
-      <li><a href="{ies}">IES FSV UK — TH</a></li>
-      <li><a href="{ies_zi}">IES FSV UK — ZH</a></li>
-      <li><a href="https://zrusme-inflaci.cz/">Zrušme inflaci</a></li>
+      <li class="who">Tomáš Havránek</li>
+      <li><a href="https://www.tomashavranek.cz/"{cs}>{"osobní stránka" if lang == "cs" else "personal site"}</a></li>
+      <li><a href="{ies}">IES FSV UK</a></li>
       <li><a href="https://orcid.org/0000-0002-3158-2539">ORCID</a></li>
       <li><a href="https://scholar.google.com/citations?user=BF0BvBkAAAAJ">Google Scholar</a></li>
-      <li><a href="https://ideas.repec.org/f/pha418.html">RePEc / IDEAS</a></li>
+      <li><a href="https://ideas.repec.org/f/pha418.html">RePEc</a></li>
       <li><a href="https://www.scopus.com/authid/detail.uri?authorId=24453189000">Scopus</a></li>
       <li><a href="https://cepr.org/about/people/tomas-havranek">CEPR</a></li>
       <li><a href="https://metrics.stanford.edu/people/tomas-havranek">Stanford METRICS</a></li>
+    </ul>
+    <ul class="about-links">
+      <li class="who">Zuzana Iršová Havránková</li>
+      <li><a href="https://www.irsova.com/">irsova.com</a></li>
+      <li><a href="{ies_zi}">IES FSV UK</a></li>
+      <li><a href="https://orcid.org/0000-0002-0753-8124">ORCID</a></li>
+      <li><a href="https://scholar.google.com/citations?user=LaHrICUAAAAJ">Google Scholar</a></li>
+    </ul>
+    <ul class="about-links">
+      <li class="who">{"Projekty" if lang == "cs" else "Projects"}</li>
+      <li><a href="{SITE}/">meta-analysis.cz</a></li>
+      <li><a href="https://zrusme-inflaci.cz/">Zrušme inflaci</a></li>
       <li><a href="{PATH}/feed.xml">RSS</a></li>
     </ul>
     <p class="about-machine" lang="en">For machines:

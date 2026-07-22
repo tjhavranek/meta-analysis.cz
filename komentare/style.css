@@ -248,3 +248,9 @@ main { padding: 2.75rem 0 4rem; }
    thing they respond to, which is what made them read as fragments. */
 .post-context { margin: 0.9rem 0 0; font-size: 0.9rem; color: var(--muted);
                 padding-left: 0.9rem; border-left: 2px solid var(--accent-bg); }
+/* Identity links grouped per person. One flat list of ~16 made the archive look like
+   it belonged to whoever happened to be listed first. */
+.about-links { margin-bottom: 0.55rem; align-items: baseline; }
+.about-links .who { color: var(--text); font-weight: 600; font-size: 0.85rem;
+                    letter-spacing: 0.01em; margin-right: 0.15rem; }
+.about-links .who::after { content: ""; }

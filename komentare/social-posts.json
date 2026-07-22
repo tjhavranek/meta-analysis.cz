@@ -266,9 +266,24 @@
   "url": "https://www.linkedin.com/feed/update/urn%3Ali%3Ashare%3A7437416155155177472",
   "reshare_with_comment": false,
   "lang": "cs",
-  "images": [],
+  "images": [
+   "2026-03-11_screening.jpg"
+  ],
   "text": "Doporučuji všem rodičům včas testovat děti na cukrovku. Nám to bohužel vyšlo jednou pozitivní, ale díky tomu testu + moderní medicíně můžete nástup nemoci oddálit o několik let.\n\nVčasný test = šance na roky navíc bez inzulinu.\n\nDíky Barbora Berka a Natálie Chrástecká za skvělý přístup v Motole.\n\nDíky Jan Hrušovský za hezký rozhovor s mým manželem, který poprvé na kameru mluvil o něčem jiném než o ekonomii (což je většinou velmi ... poutavé 😉 ).\n\nhttps://lnkd.in/duWtcSbA",
-  "image_alt": []
+  "image_alt": [
+   "Úvodní záběr z videa: Tomáš Havránek a moderátor Jan Hrušovský stojí v nahrávacím studiu podcastu, přes obrázek je nápis „Screening cukrovky — je lepší, když o nemoci víte“."
+  ],
+  "image_size": [
+   [
+    1280,
+    720
+   ]
+  ],
+  "reshare_of": {
+   "label": "Odkaz z příspěvku vede na rozhovor",
+   "url": "https://www.youtube.com/watch?v=FQMmJGOw_Ik",
+   "url_label": "Screening cukrovky — je lepší, když o nemoci víte (YouTube)"
+  }
  },
  {
   "date": "2026-03-09",
