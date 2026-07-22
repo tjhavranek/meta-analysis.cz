@@ -52,10 +52,16 @@ BASE = f"{SITE}/komentare"      # absolute: canonical, og:url, JSON-LD
 PATH = "/komentare"             # root-relative: every internal link and asset
 
 AUTHOR = "Tomáš Havránek"
+# One person can appear under several name forms: the married name in Czech outlets,
+# the maiden name in English ones, with or without diacritics. Every form must map to
+# the same ORCID or the author silently loses attribution on some items.
 ORCIDS = {
     "Tomáš Havránek": "https://orcid.org/0000-0002-3158-2539",
+    "Tomas Havranek": "https://orcid.org/0000-0002-3158-2539",
     "Zuzana Havránková": "https://orcid.org/0000-0002-0753-8124",
+    "Zuzana Iršová": "https://orcid.org/0000-0002-0753-8124",
     "Zuzana Irsová": "https://orcid.org/0000-0002-0753-8124",
+    "Zuzana Irsova": "https://orcid.org/0000-0002-0753-8124",
 }
 
 SECTIONS = {
