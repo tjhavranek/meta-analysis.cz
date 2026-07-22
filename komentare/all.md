@@ -2,7 +2,7 @@
 
 Publicistika Tomáše Havránka a Zuzany Havránkové: komentáře pro celostátní média, sloupky pro litomyšlskou Lilii a rozhovory. Texty jsou zde archivovány v plném znění s odkazem na původní vydání.
 
-Tento soubor obsahuje plné znění všech textových položek (151 z celkem 166). Zbývající položky jsou audio a video, které archiv vede pouze odkazem, a v tomto souboru nejsou; jejich metadata najdete v index.json a corpus.jsonl.
+Tento soubor obsahuje plné znění všech textových položek (154 z celkem 170). Zbývající položky jsou audio a video, které archiv vede pouze odkazem, a v tomto souboru nejsou; jejich metadata najdete v index.json a corpus.jsonl.
 
 ---
 
@@ -482,6 +482,178 @@ V Litomyšli je nabídka kvalitních sportovních kroužků veliká – kromě f
 
 ---
 
+## Proč podle Zuzany Havránkové Česko kvalitou života překoná Kalifornii?
+
+*E15, 14. září 2025, ptal se Jan Vávra. Zuzana Havránková.*
+
+Zdroj: https://www.e15.cz/ekonomika/proc-podle-zuzany-havrankove-cesko-kvalitou-zivota-prekona-kalifornii-1427094
+
+Dokáže vyčíslit, co se málokomu jinému podaří. I proto se nedávno stala nejmladší ženou v historii Univerzity Karlovy, která získala profesorský titul. A ačkoli si z něj česká zvyklost v očích většiny populace udělala pouhé oslovení středoškolského učitelského sboru, ve vědeckém provozu je profesura tou nejvyšší možnou hodností. Ekonomce Zuzaně Havránkové se jí podařilo dosáhnout ještě před čtyřicátinami. Příslušný jmenovací dekret převzala z rukou prezidenta Petra Pavla v červnu.
+
+„Když jsem viděla, co dokázali čerství profesoři z jiných oborů – třeba v medicíně, kde si přitom museli na jmenování počkat mnohem déle než já –, uvědomila jsem si, že ekonomie je k rodinnému životu výrazně přívětivější. Jasně, jsou tam otázky, které musíte zkoumat v terénu. Ale náš výzkum probíhá z velké části u počítače, s daty, statistikou,“ zamýšlí se pracovnice Institutu ekonomických studií Fakulty sociálních věd Univerzity Karlovy a matka čtyř dětí Havránková.
+
+„Měla jsem možnost přizpůsobit svůj pracovní život rodině. Naproti tomu lékařka musí být denně s pacienty nebo v laboratoři, nemůže zůstat doma, když ji děti potřebují. Takže chovám obdiv ke kolegům z jiných oborů. To věkové prvenství je třeba brát v tomto kontextu s pokorou,“ uvědomuje si Havránková.
+
+Země, které mohou Česku závidět
+
+Škarohlíd by v jejích slovech o vysedávání u počítače mohl zahlédnout vzdálené obrysy stereotypních představ o akademicích zavrtaných v pracovnách a odtržených od takzvaného reálného života. Taková myšlenková zkratka by ale vedla do slepé uličky. Havránkové umožňuje její profesní dráha poznat současný svět do hloubky z mnoha různých směrů.
+
+S akademičkou spolupracuje věhlasná Stanfordova univerzita v Kalifornii, nedávno se vrátila z několikaměsíčního pracovního pobytu na Novém Zélandu. Celkem za posledních patnáct let navštívila pracovně všechny kontinenty a kolem dvaceti různých států USA. To znamená nejen doslovnou rozlítanost po celém světě, ale také příležitost vnímat jej o to komplexněji.
+
+„Po usazení na Novém Zélandu jsem byla v šoku z toho, že při zohlednění cenové hladiny je tam materiální životní úroveň ve výsledku nižší než v Česku. Přitom Nový Zéland zde vnímáme jako zemi zaslíbenou, ale finanční realita je jiná,“ vzpomíná profesorka, podle níž kvalita života v Česku při zohlednění faktorů typu všeobecné bezpečnosti, dobrého školství nebo zdravotnictví překonává i ještě více mytizovanou Kalifornii. Přitom nemluví o kvalitě života pouze v Praze, ale i v menších městech. Například v Litomyšli, kde Havránková žije s manželem Tomášem, rovněž profesorem ekonomie.
+
+Nic na profesorčině nadšení ze života v tuzemsku nemění ani skutečnost, že si Česko kvůli neduživému růstu hrubého domácího produktu v minulých letech vysloužilo nálepku nemocného muže Evropy. Kontinentu, který pohledem základní makroekonomické veličiny sám nevyniká vitalitou v porovnání se Spojenými státy.
+
+„Já ale s tím označením, že Česko je nemocným mužem Evropy, absolutně nesouhlasím. Podle mě to není s hodnocením domácího růstu HDP od covidu tak jednoduché. Konkrétně zrušením elektronické evidence tržeb se část ekonomiky přesunula do šedé zóny. To je prostě účetní fakt. Když přestanete sledovat určitou část produkce, přestane se i vykazovat ve statistice, ale reálně nezmizí,“ polemizuje s pesimistickým pohledem na stav českého hospodářství Zuzana Havránková.
+
+Co je a co není vidět
+
+Mimoděk tím nastiňuje, v čem tkví podstata jejího výzkumu: tedy porovnávání a vyvozování závěrů z toho, co vzájemně porovnávat vůbec lze. Havránková se zabývá možnostmi využití takzvané metaanalýzy, tedy postupu, který z řady jednotlivých studií na stejné téma vyvozuje obecnější závěry. Aktuálně se zabývá hlavně zlepšením statistických nástrojů tohoto přístupu, o čemž jí právě vyšel článek v prestižním časopise Nature Communications. „Původně tato metoda vznikla v medicíně pro zkoumání účinnosti nových léků. Ve společenských vědách ale potřebujeme jiné nástroje.
+
+Metaanalýza je užitečná z toho důvodu, že jednotlivé studie si často protiřečí. Ne proto, že by byly špatně, ale protože pracují s různými metodami, v různých kontextech, na různých populacích. A některé neatraktivní výsledky se do vědeckých časopisů vůbec nedostanou, což se musí statisticky zohlednit a vzniklá zkreslení opravit,“ vysvětluje Havránková, která v dřívějším rozhovoru pro Hospodářské noviny popsala krásu ekonomie v tom, jak hledá způsoby, aby se lidé mohli mít lépe.
+
+Co se vyplatí
+
+K tomu může přispět také způsob, jakým Havránková i díky své vědecké metodě uvažuje. Na pocit zavedených jistot v posledních pěti letech dopadlo hned několik jevů, které se obvykle vyskytují maximálně jednou za několik desítek let. Rovněž Česko pocítilo koronavirovou pandemii, nástup pádivé inflace nebo energetickou krizi. A státy Evropské unie čeká ještě intenzivnější a dražší etapa boje s emisemi uhlíku.
+
+Všechny tyto události jsou mimořádné i z pohledu dopadu na veřejné rozpočty, ale nejen na ně. „Všude nám chybí cost-benefit analýza. Lockdown omezí šíření viru. Povolenky zpomalí oteplování. Ale ta opatření mají také obrovské náklady a my jsme rezignovali na porovnání společenských nákladů a výnosů. Právě tohle porovnání je podstata ekonomie – varovat před řešeními ‚za každou cenu‘. Vede mě to k zamyšlení, jak my ekonomové a vědci obecně předáváme a překládáme výzkum veřejnosti,“ uvažuje Havránková, která ještě před koronavirovou pandemií například v jedné studii shrnutím dostupné literatury došla k závěru, že přepínání času mezi letním a zimním z důvodu úspory energie nedává v 21. století smysl.
+
+V kontextu ostatních výzev, jimž společnost čelila a nadále čelí, se však nyní střídání času jeví jako ten nejmenší problém. „Například pandemie. Tam mi strašně chybí katarze. Uzavření a reflexe toho, co se vlastně stalo a proč. Hypotézu o úniku viru z laboratoře jsme brali jako konspirační teorii, přitom dnes je téměř jisté, že to tak bylo. Pokud se skutečně ukáže, že šlo o laboratorní únik riskantního výzkumu financovaného částečně z amerických grantových peněz, jak se z toho poučíme do budoucna?“ ptá se akademička.
+
+[Infobox "Nejcitovanější": Zuzana Havránková působí kromě jiného jako profesorka ekonomie v Institutu ekonomických studií Fakulty sociálních věd Univerzity Karlovy a výzkumná spolupracovnice v Centru inovací metavýzkumu na Stanfordově univerzitě. Práce Zuzany Havránkové citují ve svých materiálech MMF, OECD, Světová banka i Evropská komise. Její výzkum použili například nositelé Nobelovy ceny Tom Sargent a Joseph Stiglitz. Je nejcitovanější českou ekonomkou v zahraniční vědecké literatuře.]
+
+„Zásadní pak bylo zavírání škol. Víme už, že to mělo obrovsky negativní důsledky pro děti, přitom dopad na šíření viru byl malý. Samozřejmě, teď po bitvě se mi to říká lehce. Jenže když šlo do tuhého, přijali jsme jedinou linii argumentace jako vědecké dogma, ačkoli silný vědecký základ neměla, a kritiky jsme umlčovali. Sama jsem se toho účastnila a je mi to líto. Mám pocit, že se to příliš rychle uzavřelo ve stylu, máme to za sebou, pojďme radši dál. Nedostatek reflexe má za následek kolaps důvěry nejen v epidemiologii, ale ve vědu obecně,“ varuje ekonomka, která nešetří podobnými výhradami ani ke způsobu řešení další aktuální závažné krize v podobě změny klimatu.
+
+Proti emisím jako s větrnými mlýny
+
+„Změnu klimatu nemůžeme ignorovat. Ale chybí mi cost-benefit analýza klimatických opatření. Když lijeme peníze do Green Dealu, daňový poplatník by měl vidět, co přesně tím získá. Podle některých studií to bude mít v globálním měřítku zanedbatelný dopad na klima. Možná by se vyplatilo volit levnější, ale efektivní řešení, třeba sázení stromů namísto biopaliv. Studie publikovaná před pěti lety v časopise Science ukázala, že tímto způsobem můžeme stáhnout z atmosféry čtvrtinu všeho oxidu uhličitého. Je to jednoduché, levné a realistické řešení,“ popisuje výzkumnice, která už před deseti lety publikovala ve spolupráci s ekonomem Davidem Zilbermanem z Kalifornské univerzity v Berkeley také studii o společenských nákladech uhlíku.
+
+Došli v ní k závěru, že v literatuře o nákladech emisí CO₂ dochází ke zkreslení průměrné hodnoty společenských nákladů uhlíku směrem nahoru, protože vědecké články častěji publikují extrémnější výsledky, zatímco nižší odhady zůstávají v šuplíku.
+
+Žádná idyla v USA
+
+Kritici Green Dealu jej mnohdy rádi vykreslují jako nůž, který si Evropská unie dobrovolně zabodne do ruky, což dále výrazně podkope její hospodářskou výkonnost. Zejména v porovnání s růstem HDP Spojených států je zaostávání Evropy zjevné. Lakonicky to nedávno v Irsku komentoval generální ředitel americké banky JPMorgan Jamie Dimon: „Prohráváte. Evropský hrubý domácí produkt byl ještě před deseti patnácti lety na úrovni devadesáti procent toho amerického. Nyní ten poměr dosahuje zhruba 65 procent. To není dobré.“ Tato čísla ovšem nezohledňují oslabování eura vůči dolaru nebo demografický vývoj, který je i díky masivní imigraci příznivější v USA.
+
+„Myslím, že my v Evropě už nepředstíráme, že chceme růst HDP. Dobrovolně jsme se rozhodli obětovat životní úroveň ve prospěch toho, že budeme klimatickým příkladem pro zbytek světa. Ten nízký růst není žádné prohrávání, je to nedílná součást záměru. Nechám na čtenáři, aby si vyhodnotil, jestli je to dobře. Určitě má ale Evropa globálně nejvíce laskavou a altruistickou populaci, která se obětuje ve prospěch ostatních. To je hezká věc, kterou můžete upřímně o Evropě říci: Žijí tady v průměru nejhodnější lidé na světě. To o USA říci nejde a já bych tam dlouhodobě asi žít nechtěla, i když bychom tam určitě vydělávali násobně víc,“ uvažuje ekonomka.
+
+Podřadný statek?
+
+Až dosud mluvila o Česku a Evropě pozitivně. To se mění při zmínce některých projevů stárnutí populace. „Nedávno jsem třeba narazila na šokující statistiku z Velké Británie: Poprvé v historii je tam mezi ženami ve věku třiceti let víc těch, které nemají děti, než těch, které je mají. A to je opravdu alarmující. Problém se netýká jen Evropy, ale celého světa. Dopadá na ekonomiku, zdravotnictví nebo na sociální systémy. Společnost bez dětí je smutná společnost bez budoucnosti a naděje. A tím dojde i na konec zelené politiky, která jako první půjde ze stolu v situaci, kdy nebude na základní důchody,“ upozorňuje Havránková a dodává, že Česko se trendu dlouho vymykalo.
+
+„To je svým způsobem výjimečné. Od konce devadesátých let bylo příkladem toho, že ne vždy platí teorie, podle níž bohatší země mají méně dětí. Ekonomové s nadsázkou říkají, že děti jsou takzvaný podřadný statek, tedy takový, kterého s růstem vašeho bohatství spotřebováváte méně. Ještě v roce 2021 jsme přitom měli druhou nejvyšší porodnost v Evropě, říkalo se tomu český demografický zázrak. Teď se ale trend otočil,“ naráží ekonomka na skutečnost, že se nyní na českém území rodí nejméně dětí za celou dobu historie měření s počátkem v 18. století. Havránkovi se nicméně trendu vymykají: Vychovávají čtyři děti. Profesorka v této souvislosti připomíná, jak zásadní je pro sladění její profesní dráhy a rodinného života pomoc manžela a vstřícnost zaměstnavatele.
+
+Jak pomoci rodičům
+
+„V tomhle mám štěstí. Spolupracuju s manželem, který ví, co doma řešíme, jaké máme časové termíny a limity. Když něco nestíhám, on mě zastoupí. Tohle zázemí je naprosto klíčové,“ pochvaluje si Havránková. „Pro nás oba je to výzva, ale zároveň máme mimořádnou výhodu, že pracujeme v akademické sféře. Nemusíme denně dojíždět, nemusíme být neustále fyzicky na univerzitě. V soukromém sektoru tohle jde málokdy. A i v rámci akademie jsou obory, kde to funguje jinak, kde je pořád nutná každodenní fyzická přítomnost v laboratoři. Takže tohle je opravdu výhoda výzkumu v ekonomii,“ ví Havránková, jež má zkušenost s působením nejen v akademické, ale také v privátní sféře.
+
+„Já jsem původně začínala v byznysu, avšak čekali jsme první miminko a zároveň jsem si dělala doktorát. Bylo to náročné, ale postupně jsem zjistila, že ta akademická cesta mi dává větší smysl. Člověk se musí rozhodnout, co zvládne, a někdy prostě improvizuje,“ vzpomíná na období, kdy pro tehdejší RWE ve spolupráci s tradery na energetických trzích rozvíjela matematické modely pomáhající firmě zajistit co nejvýhodnější nákupy energií. Šlo o práci s jasně viditelným, až téměř hmatatelným ekonomickým dopadem, vyzdvihuje Havránková.
+
+Dobře si je nicméně vědoma toho, že propad porodnosti v rozvinutém světě souvisí nejen s materiálními podmínkami, ale také se společenským posunem vnímání rodičovství. „Nedávno jsem se potkala s kamarádkou a zeptala se jí, co teď dělá. A ona odpověděla: ‚Já jsem jen matka.‘ Mně to pak přišlo strašně smutné. Že už se i do našeho vlastního vnímání začíná dostávat představa, že být matkou je jen tak něco. Jako by to nebyla práce. Ona to samozřejmě práce ve svých důsledcích je a často mnohem náročnější než osmihodinová směna. A nikdy se nepotřebujete ptát, jestli má hmatatelné výsledky. Nic většího v životě není.“
+
+---
+
+## Ekonomka Havránková: „Nepodmíněný příjem je cesta k zombifikaci společnosti“
+
+*Hrot, 11. srpna 2025, ptal se Pavel Štrunc. Zuzana Havránková.*
+
+Zdroj: https://www.hrot24.cz/clanek/zuzana-havrankova-z-gemeru-pres-karlovu-univerzitu-na-berkeley-o-klimatu-ekonomii-a-svobode-ve-vede-HBGts
+
+Vědeckými postupy konfrontuje nejzásadnější vědecké práce, včetně těch o klimatických změnách. To je v dnešní době třaskavé téma, kvůli kterému padají ve veřejném prostoru hodně silná prohlášení a fatální soudy o budoucnosti planety.
+
+Říkám si, že když se člověk narodí v malé vesnici na Slovensku, jak asi přemýšlí nad svým místem na světě? „Pozor, na východním Slovensku, v Gemeru,“ upozorňuje Zuzana Havránková.
+
+„To je důležité dodat, protože na řadě míst na Slovensku je život dost podobný jako v Česku. Slovenský východ je ale z českého pohledu exotický. Mísí se tady přírodní krása se sociálními problémy, přičemž oboje v Česku nemá srovnání. Podobně se ve mně vždy mísila hrdost na Gemer s touhou odejít pryč. K místu svého původu cítíte závazek. Babička měla náš rodinný rodokmen zmapovaný až do středověku k veliteli stráže hradu Krásna Hôrka. Zároveň ale odmalička vidíte, jak je tam život těžký. Že nejlepší lidé zkrátka odcházejí pryč.“
+
+Popisuje čas strávený s babičkou a prababičkou, ale také to, ji a bratra maminka vychovávala sama. Říkala jim, aby si vážili všeho, co mají, a že neexistuje nic, co by nezvládli.
+
+Z jejích slov je cítit, že opustit rodnou hroudu nebylo jednoduché. Jít a hledat své místo na slunci. Napadá mě, jak takové prostředí člověka formuje. „Odmalička jsem chápala, že i když Gemer milujeme, budeme ho muset opustit,“ vrací se do minulosti Zuzana Havránková.
+
+„Na dětství vzpomínám ráda, ale nejde dost zdůraznit, jaké problémy tam lidé mají – počínaje základní bezpečností, základními vlastnickými právy. V Praze si málokdo dokáže uvědomit, že podmínky podobné těm v Ugandě můžeme i dnes najít v místech, která byla ještě nedávno z Prahy spravovaná – právě na východě Slovenska. Chcete dělat dobrovolnickou práci a být maximálně užiteční? Místo Afriky nebo Indie jeďte dobrovolničit do Spiše či Gemeru. Abyste se tam narodili a dostali se odtud, musíte se opravdu snažit. A tady je možná kousek ekonomie: máte opravdu velkou motivaci, protože pokud budete jen pasivně sedět, dobrý život vás tam nečeká.“
+
+Do ekonomie se vrhla v okamžiku, kdy už zmíněný premiér Mikuláš Dzurinda začal na přelomu 20. a 21. století provádět reformy a posunul Slovensko na Západ. Pochopila, že není jiný obor, který by měl tak široký a všeobecný dopad na život lidí, jako právě ekonomie.
+
+Zamířila do Prahy, cíle mnohých z nás. Mluví o ní jako o „alfa městu“, Univerzita Karlova je pro ni pojmem s puncem vážnosti. Věděla, že musí být mezi nejlepšími a srovnávat se s nimi. „Důležité je to, čemu se v angličtině říká peer pressure,“ vzpomíná.
+
+„Tedy že vidíte kolegu, jak je úspěšný na mezinárodním poli – že to jde dokázat i z Prahy. Konkrétně pro moji profesní dráhu to byli Roman Horváth, Michal Bauer a Julie Chytilová, moji současní kolegové v Institutu ekonomických studií. Prostředí jako takové hraje podle mě menší roli než jasné příklady konkrétních lidí, které znáte osobně.“
+
+Když Zuzanu Havránkovou zaslechnete v podcastu, který vysílá Institut ekonomických studií, mluví o ekonomii s velkou vášní.
+
+„Ekonomie má tu velkou výhodu, že je nutná pro skoro každé praktické rozhodnutí. Dám příklad: Jak nejlépe reagovat na klimatickou změnu? Klimatolog vám řekne, že je potřeba zpomalit, ideálně zastavit oteplování. Jenže snižování emisí může být tak drahé, že odčerpá peníze odjinud, třeba ze zdravotnictví, což v součtu může životy lidí ovlivnit negativně. Je potřeba najít rovnováhu mezi náklady a výnosy klimatických opatření. Tedy ekonomie má co říct k řešením důležitých problémů,“ říká.
+
+„Také si myslím, že mi ekonomie dala více optimismu v uvažování nad tím, jak dobře se máme. Rádi se porovnáváme s druhými a zkresluje nám to představu o tom, jak na tom jsme sami. Posledních pár let nebylo snadných pro mnohé. Měli jsme pocit, že přichází apokalypsa. Pro povzbuzení nám ale stačí porovnat dnešní svět s dobami minulými. A coby statistik tahle fakta zdůrazňuji všem studentům a začínám jimi také svůj úvodní kurz do ekonomie.“
+
+Chcete dělat dobrovolnickou práci a být maximálně užiteční? Místo Afriky nebo Indie jeďte dobrovolničit do Spiše či Gemeru.
+
+Zuzana Havránková má za sebou pobyty na prestižních světových univerzitách, daleko tak přesáhla to, co si kdysi na východě Slovenska předsevzala: odjet do Prahy. Zamířila do kalifornské Berkeley a zkoumala téma, které se dnes dotýká každého z nás skrz transformaci ekonomiky, která vychází z nároků na ochranu klimatu.
+
+„Na Berkeley jsem jela právě kvůli projektu modelování nákladů a výnosů omezování emisí skleníkových plynů. Tohle osobně považuji za velmi důležité. Dnes je převažující narativ takový, že oteplování musíme zastavit nebo přibrzdit za každou cenu, jinak hrozí apokalypsa. Jenže tohle nám věda neříká. V modelech klimatologům nevychází, že se ze Země stane Venuše, když nebudeme nic dělat. Když nebudeme nic dělat, bude o dost tepleji, čemuž bude drahé se přizpůsobit. Ale omezování emisí je také velmi drahé. Je určitě potřeba zohlednit věci, které se těžko finančně ohodnocují, jako je třeba biodiverzita. Ekonomie není všelék, ale pomůže najít rovnováhu. Bohužel jsme ekonomická řešení u změny klimatu z větší části opustili, za což nás naše vnoučata nepochválí.“
+
+Do Ameriky ji dostala možnost spolupracovat s uznávaným americko-izraelským ekonomem Davidem Zilbermanem, profesorem na Berkeley. A také chtěla zkusit život v kampusu prestižní univerzity a v okolí San Franciska. Mentalita a přátelskost Američanů jí sedly.
+
+Zklamáním ale byla míra kriminality v okolí San Franciska. Drobné krádeže nebo vloupání do aut tam už nikdo netrestá a nevyšetřuje, vypráví Havránková. Právě kriminalita byl tak jeden z důvodů, proč se rozhodla, že nezůstane.
+
+„Zadruhé je to cenzura na amerických univerzitách, kdy se velmi hlídá to, co kdo řekne do médií nebo napíše na twitter. Zejména se to týká palestinské otázky, genderových otázek – a právě změn klimatu. Přes všechny problémy buďme rádi za svobodu projevu, jakou máme v Česku. A konkrétně v univerzitním prostředí. Mě nikdy nenapadlo řešit, jaké výzkumné otázky jsou politicky průchozí,“ popisuje otevřeně tamní poměry.
+
+Česká společnost ekonomická ji jmenovala ekonomkou roku 2018. Patří mezi nejcitovanější odborníky na světě, na její práce odkazuje třeba Bank of England nebo Evropský parlament. Napadá mne srovnání: kdykoliv slavný kuchař dostane michelinskou hvězdu, s vypětím sil se ji snaží obhájit. To musí být někdy vyčerpávající, ne?
+
+„Jedna věc je, že pořád vidíte kolegy, kteří jsou úspěšnější než vy. Takže u nás třeba Ladislav Krištoufek, můj spolužák a nyní prorektor pro vědu na UK, jeden z nejcitovanějších vědců na světě. Nebo Jozef Baruník, jeden z největších současných odborníků na ekonometrii časových řad. Takže pořád vidíte, kam se můžete posouvat a zlepšovat.“
+
+Výzkumník se podle ní musí přestat honit za publikacemi, odměnami a citacemi a spíše se zaměřit na téma, k němuž chce vědecky přispět. „Myslím, že o to by se vědec měl snažit, aby opravdu smysluplně přispěl do mezinárodní debaty. Potom ty publikace, citace a granty přijdou skoro samy. Je také potřeba často cestovat za kolegy do zahraničí. Například příští rok pojedeme na tři měsíce na Nový Zéland.“
+
+Ekonomie mi dala více optimismu v uvažování nad tím, jak dobře se máme.
+
+Ke smysluplnosti vědy, jak říká Havránková, přispěla. Využívá metaanalýzu, kde se – když to zjednodušíme (a spisovatel Michel Houellebecq říká, že bez zjednodušování bychom se nikam nedostali) – vezmou existující studie, porovnají se a vyhodnotí se jejich výsledky. Komentáře tvrdí, že to pomáhá k věrohodnosti ekonomie coby vědy.
+
+Dalo by se tedy říct, že Havránková je takovým fact-checkerem vědy (byť to slovo osobně nemám moc rád, dnes se totiž fact-checkují i vtipy od táboráku). Zároveň mě ale zajímá, zda to někdy není společensky náročné. Vědci dokážou být ješitní a taková meta-analýza někomu může rozbít léta práce, na niž získal granty, což pro něj představuje živobytí.
+
+„Společensky náročné je pro mě spíš to, když vidím vědu na jedné straně – a potom politickou praxi na straně druhé. To je velmi smutné, viz třeba ten příklad s klimatickými opatřeními. To musí frustrovat skoro každého vědce v jeho konkrétním oboru. Ale s vědci mám osobně spíš tu zkušenost, že mají meta-analýzy rádi. Protože i oni potřebují nějaký benchmark, nějaké rozumné shrnutí. Kdyby se všichni na všem shodli, tak bychom se nikam neposunuli. Někdy zase nějaká nová studie ‚rozbije‘ spoustu mé práce. To se stává a jinak by to ostatně byla nuda. Znáte ten proslulý citát J. M. Keynese, když se změní fakta, změním názor? Co uděláte vy?“
+
+To já nevím, ale co vím, je, že některá společenská témata a jejich prosazování do reálného života jsou postavená jen na „obecné vědecké shodě“, jež se tváří jako nezpochybnitelná. Připomínám Zuzaně Havránkové témata, která jsou ale schopna dělit společnost a postihnout negativně mezilidské vztahy: covid, změny klimatu anebo z dalších jejích prací – prospěšnost zmenšování velikosti tříd či střídání letního a zimního času.
+
+Jak velká je to výzva, zajímá mě, protože ve finále jde zároveň o ohromné peníze. „Dobrá otázka. V první řadě nechcete začít s výzkumem, který nikoho nezajímá. Takže právě na tématech, která jste zmínil, je dobré pracovat. O klimatu už jsme mluvili. Co se týče covidu, opravdu bylo to extrémně nákladné zavírání škol vědecky podloženo? Chybí mi klidné vyhodnocení různých opatření. Trochu mám pocit, že jsme tady v dobré víře vytvořili atmosféru cenzury, ve které se vědci bojí zpochybňovat lockdowny nebo roušky. Měli bychom vědět, jestli to doopravdy fungovalo. Kdo bude jinak při příští pandemii poslouchat epidemiology?“
+
+Napadá mě, nakolik – obecně – jsou vědecké práce ovlivněné osobním přesvědčením nebo předsudky. Skoro bych totiž řekl, že exaktní věda – a tady lze spatřit moji naivitu – dokáže osobní preference eliminovat. Podle Havránkové ale eliminovat předsudky nedokážeme.
+
+„Musíme k vědecké literatuře přistupovat tak, že ji píšou živí lidé, a podle toho se zařídit. K tomu je právě dobrá meta-analýza. Teď nám snad po několika letech konečně vyjde článek na toto téma v prestižním časopise Nature Human Behaviour,“ pochlubí se.
+
+Mluvíme spolu v době, kdy končí prázdniny, doba dovolených. Zlepšuje dovolená produktivitu, nebo je to barbarský přežitek, což s oblibou tvrdil bývalý prezident Václav Klaus? „Záleží na konkrétní profesi, samozřejmě,“ odpovídá Havránková, která se zabývá i ekonomií trhu práce.
+
+Přes všechny problémy buďme rádi za svobodu projevu, jakou máme v Česku.
+
+„Ale určitá míra odpočinku vždy produktivitu zvyšuje. Měli bychom se například zamyslet nad tím, jak je pro nás jako společnost užitečné, když nutíme lékaře trávit téměř celodenní služby v nemocnici. Nebyl byste radši, kdyby vás na pohotovosti vyšetřoval někdo, kdo je dobře odpočatý? Třeba i za cenu toho, že do té nemocnice jedete o dvacet minut déle?“ ptá se řečnicky Havránková.
+
+Přemýšlím o jiném způsobu motivace, se kterým často (mnohdy jen pod nátlakem) zaměstnavatel přijde. Peníze, pochvala, jiné druhy pobídek přece musejí fungovat nejlépe, opakuji Zuzaně Havránkové.
+
+„Na to máme novou meta-analýzu, kde ukazujeme, že finanční motivace jako taková není tak důležitá. Ano, často víc pomůže pochvala. A hlavně skutečnost, že práce člověka opravdu baví, že ji dělá ideálně na svoje jméno, že v ní vidí smysl. To penězi nenahradíme. Když s někým přijdete do kontaktu, vždycky velmi rychle poznáte, jestli ho práce baví. Extrémně je to poznat zejména u úředníků. Trochu by asi pomohlo nejlepší úředníky platit víc, ale jednoduché řešení to nemá.“ Člověka podvědomě napadne, že se počet zaměstnanců státu stále zvyšuje.
+
+Coby revoluční změnu na pracovním trhu vidí Zuzana Havránková home office, v řadě oborů je to podle ní možná cesta, a pokud je silný manažer a silná vůle, funguje, byť nikdy není stoprocentní. Naopak jiný trend, se kterým se začíná experimentovat – nepodmíněný příjem – vidí negativně a mluví o něm tak, jako by citovala z dystopických románů.
+
+„Pokud chceme zombifikovat velkou část naší populace a umožnit někomu jen ležet s mobilem v ruce, aniž by cokoli dělal, pak je nepodmíněný příjem výborný prostředek. Máme data z pandemie, kdy některé země přistoupily k něčemu podobnému. Trvalo pak velmi dlouho dostat lidi zpátky do práce. K nepodmíněnému příjmu není důvod: chceme lidi motivovat, aby pracovali. Nejen kvůli vyššímu HDP, ale kvůli disciplíně a kvalitě života, kterou práce přináší, kvůli prevenci kriminality a duševních poruch. Robotizace a umělá inteligence nakonec zvýší produktivitu nás všech, zvýší naše platy a vytvoří nová pracovní místa – tak to bylo se všemi trhem ověřenými inovacemi v historii.“
+
+Jeden článek Zuzany Havránkové mě nedávno zaujal už svým titulkem. Vzhled rozhoduje o tom, kolik peněz člověk vydělá: „Jen to své zjištění trochu upřesním – vzhled o platu nerozhoduje, ale může jím o pár procent pohnout nahoru nebo dolů. V politice nebo sexuálních službách je to spíš více procent, a může to pak o výsledku opravdu skoro rozhodovat. Jindy je to málo. My jsme v meta-analýze zjistili, že je to skoro nula, když vezmete v úvahu inteligenci. Chytřejší lidé vydělávají víc a jsou v průměru maličko hezčí. Nevíme proč. Možnosti jsou dvě. Buď krása i inteligence souvisejí s celkovým vyladěním organismu, a jsou tedy na sobě přirozeně geneticky závislé. Nebo je to tím, že historicky si úspěšní muži často brali a berou hezké ženy. Tím se také mohla inteligence dostat do vztahu se symetrií obličeje.“
+
+Takže jde o sebevědomí, ujišťuji se. Zároveň připouštím, že jsem netušil, že se něco takového dá datově zkoumat. „Další hypotéza opravdu říká, že hezčí lidé jsou sebevědomější. A sebevědomí je užitečné pro většinu profesí. Člověk intuitivně chápe, proč může dopomoci vyššímu platu. Číselně se tohle ale vyjadřuje těžko, jak dobře naznačujete.“
+
+Mluvíme také o překážkách, jimž ženy čelí během svých pracovních kariér. V profesním životě jsem byl svědkem, kterak zaměstnavatel z různých důvodů odmítal částečné úvazky, což se mi zdálo nepochopitelné.
+
+Pokud chceme zombifikovat velkou část naší populace a umožnit někomu jen ležet s mobilem v ruce, aniž by cokoli dělal, pak je nepodmíněný příjem výborný prostředek.
+
+„Z toho, co se ke mně dostává, se mi zdá, že tenhle problém se v čase zmenšuje. Dnes je těžké sehnat dobrého zaměstnance. Jako firma si zrovna dvakrát vybírat nemůžete. Opravdu někoho odmítnete jen proto, že je to žena a má děti? Jaký smysl by to dávalo? Jasně, někdy je částečný úvazek komplikace. Když se ale podíváte na data, vidíte velký nárůst částečných úvazků a zaměstnanosti žen,“ říká.
+
+„Je ale opravdu faktem, že třeba některým akademickým oborům historicky dominují muži a pro ženy je těžké do nich výrazněji proniknout. Na tom se snažíme na univerzitě ještě zapracovat. Dokonalí zdaleka nejsme, ale zlepšuje se to. Pro mě osobně je strašně důležité, abychom problém nepřeklopili na opačnou stranu a nevyzdvihovali někoho jen kvůli jeho pohlaví. To by bylo nespravedlivé a nedůstojné pro všechny. Dřív jsme diskriminovali ženy, ano, ale dvojité zlo neudělá dobro. Neměli bychom teď diskriminovat muže – to je přeci špatně.“
+
+Zuzana Havránková během doktorandského studia založila rodinu, má čtyři děti. „Protože se živím převážně výzkumem, mohu si práci rozkládat během dne tak, jak potřebuji. Teď už jsou navíc děti velké, nejmladší dceři je sedm, takže si mohu dovolit mnohem intenzivnější pracovní vytížení a více závazků. Bylo pro mě ale vždycky těžké odmítat příležitosti a musela jsem se naučit říkat ne. A dřív bych to těžko zvládala bez velkého zapojení manžela, zbytku rodiny, ale i přátel u nás v Litomyšli. Tady je vše po ruce, děti chodí samy do školy i na kroužky anebo pomůže babička.“
+
+Coby pedagožka je blízko mladé generaci. O ní a jejích pracovních návycích padají tu zasloužené, tu nezasloužené soudy. Přemýšlím nahlas, zda jsou nějaká data, která by tezi o línější mladší generaci potvrzovala.
+
+„To říká každá generace, že ti mladí jsou hrozní a líní, ne? V datech takový trend skutečně příliš nevidíte. Co v datech bohužel vidíte, a co mě osobně velmi trápí, je prudký nárůst mentálních poruch a sebevražd mezi dětmi a dospívajícími. A tady jsme myslím na vině my, třicátníci a čtyřicátníci. Odmalička vtloukáme dětem do hlavy depresivní globální problémy lidstva a planety, aniž bychom nabízeli konstruktivní řešení,“ zdůrazňuje.
+
+„My si to často neuvědomujeme, ale dospívající si to opravdu berou osobně a jsou volatilnější než dospělí. I mezi studenty ekonomie potkávám ty, kteří mi vážně říkají, že se bojí konce světa kvůli klimatu, že kvůli tomu umřou! Ale věda nic takového neukazuje, stačí se podívat do vědeckých zpráv IPCC (Mezivládní panel pro změnu klimatu), nikoli tedy do shrnutí, která píšou politici,“ vysvětluje Havránková.
+
+Ekonomka, která je zvyklá pracovat s fakty, a která díky tomu urazila dlouhou cestu. Z východoslovenské vesnice až na výsluní světové vědy.
+
+---
+
 ## AI Tools for Meta-Analysis
 
 *MAER-Net, 30. července 2025. Tomáš Havránek.*
@@ -603,6 +775,82 @@ To neznamená, že bychom u nás nemohli nic zlepšit. Řešíme málo argumenta
 Novozélandský systém není tak přehnaně progresivistický jako v Americe. Školy nefungují jako prostředek ideologické indoktrinace. Třeba ekologické problémy jsou probírány, ale ne jako středobod života – důraz je na osobní rozvoj dětí a hledání řešení, nikoli odčiňování vrozené viny. Tvoření, budování, spravování, ne omezování se za každou cenu. Škola ukazuje dětem, jak skvělé věci mohou v životě dokázat, ne jak minimalizovat důsledky vlastní existence.
 
 Děkuji paním učitelkám a pánům učitelům ze Zámecké (a hlavně třídním: paní Lipavské, Pokorné, Motlové, Bořkové), že nám pobyt umožnili, zasílali nám učivo během naší nepřítomnosti a měli s dětmi po návratu trpělivost. Teď mohu s čistým svědomím říct, že práce našich učitelů je skvělá i v mezinárodním srovnání.
+
+---
+
+## Zuzana Havránková: Profesura a čtyři děti před čtyřicítkou? Jde to!
+
+*VědaVýzkum.cz, 27. června 2025, ptal se Helena Zdráhalová. Zuzana Havránková.*
+
+Zdroj: https://vedavyzkum.cz/rozhovory-a-osobnosti/rozhovory/zuzana-havrankova-profesura-a-ctyri-deti-pred-ctyricitkou-jde-to
+
+Když si z rukou prezidenta Petra Pavla převzala v červnu jmenovací dekret, stala se v devětatřiceti letech historicky nejmladší profesorkou Univerzity Karlovy. Jedna z nejcitovanějších českých ekonomek Zuzana Havránková dosáhla vrcholné vědecké mety jako matka čtyř dětí.
+
+Vědecké zkušenosti přitom sbírala v Berkeley, na Stanfordu nebo na Novém Zélandu. Dnes působí na Institutu ekonomických studií Fakulty sociálních věd UK a věnuje se metaanalýze – statistické metodě, která dokáže odpovědět na mnoho (nejen) ekonomických otázek, které se pojí s fungováním naší společnosti.
+
+Uplynulo právě deset let od obhajoby vaší dizertační práce. Během té doby jste získal docenturu a nyní i profesoru. Jak náročná dekáda to pro vás byla?
+
+Byla to dlouhá cesta, a to už k dizertaci, kdy jsem u obhajoby každým dnem čekala narození třetího miminka. Stavět rodinný život a s malými dětmi udržovat ten profesní nebylo snadné. Velkou zásluhu na tom ale mají moji kolegové, a to i ti seniorní, ti totiž za mnou přišli s tím, jestli neuvažuji o docentuře. A samozřejmě díky zaslouží i můj manžel, který je zároveň kolegou a dlouholetým spoluautorem.
+
+Takže to nebyl tak docela váš prvotní záměr zůstávat ve vědě?
+
+Po magisterském studiu jsem nastoupila do soukromého sektoru, do energetiky. Od toho se později odvíjela moje další práce i ve vědě, zaměřila jsem se na ekonomii energetiky a energetických zdrojů. Úplně jsem si nemyslela, že by mě věda uživila. Ale díky podpoře lidí, jako byli Karel Janda, Michal Mejstřík nebo Jan Ámos Víšek, jsem se rozhodla u výzkumu setrvat a plně se na něj zaměřit.
+
+Během doktorského studia jsem už měla dvě malé děti. Zjistila jsem při tom, že mi práce ve vědě dává časovou flexibilitu, kterou bych v soukromém sektoru jen těžko získala. Když mám nějaký projekt, je na mě, kdy na něm budu pracovat, jestli v noci nebo odpoledne, musím si jen ohlídat deadline. Když mi onemocní děti, můžu si program přeskládat, jak je potřeba. Je jedno, jestli u počítače sedím v Praze, v Litomyšli, kde žijeme, nebo v Berkeley či na Novém Zélandu. To je výhoda výzkumu v ekonomii.
+
+Podle aktuálních dat v roce 2024 na Univerzitě Karlově působili pouze dva profesoři ve věkovém rozmezí 30–39 let, docentek bylo v této věkové kategorii jen 5 oproti 30 mužům. Ukazuje to, že dosáhnout na profesoru i docenturu v takto nízkém věku, a navíc jako žena, je opravdu něco výjimečného. Čím si to vysvětlujete?
+
+Je to odraz toho, že kariéra ženy v akademii se vytváří zejména po doktorském studiu, které ale často končí ke konci biologicky nejlepšího produktivního věku. Většina žen chce mít děti do pětatřiceti let, proto profesní kariéru v té době opustí nebo přeruší, což je pochopitelné. Není úplně fér vůči jiným oborům kritizovat, že ženy něčeho dosáhly později, protože každá profese vyžaduje jiné nároky. Když musíte být fyzicky v laboratoři nebo mezi pacienty, je to něco jiného než v ekonomii, kdy potřebuji hlavně přemýšlet a čas si můžu rozvrhovat podle potřeb svých, své rodiny i práce.
+
+Už jsme zmínily vašeho manžela Tomáše Havránka, který je vaším životním i profesním partnerem. Jaké výhody nebo naopak nevýhody se pojí s tím, když se s manželem potkáváte doma i v práci?
+
+Myslím si, že právě naše vzájemná spolupráce je to, co nás oba posouvalo rychleji dopředu (Tomáš Havránek patří k nejcitovanějším tuzemským ekonomům. Profesury dosáhl už v 36 letech. Jako první český ekonom se stal hodnotitelem žádostí o ERC granty, pozn. red.). Máme zavedenou efektivní dělbu práce. Navíc když něco nestíhám, manžel mi pomůže, zaskočí nebo něco zařídí. Je to ale zároveň dvojnásobný tlak, peer pressure, který na mě působí z pracovny vedle, a který vnímám mnohem silněji, než od jiných kolegů (smích).
+
+Tematicky se ale věnujeme trošku jiným oblastem. Manžel se zabývá především makroekonomií a centrálním bankovnictvím. Já se zaměřuji spíše na ekonomii práce, mezinárodní ekonomii a energetiku.
+
+Oba působíte na UK a máte pracovní závazky v Praze, proč tedy žijete v Litomyšli?
+
+To je jednoduché: manžel z Litomyšle pochází, jeho rodina tam žije od středověku a pořád tam žijí i jeho rodiče. Žít dlouhodobě jinde pro něj nepřipadá v úvahu. Mně se zprvu nechtělo, ale nakonec si mě získal genius loci. Z Prahy jsme se stěhovali už v době, kdy jsme měli čtyři děti. Péče o ně, vodění na kroužky, celá ta organizace kolem nich, to v Praze vydá na poloviční úvazek jednoho z nás. Na menším městě je to násobně jednodušší. Nebojíte se děti vypustit ven, mohou jít samy už do školky. Se sousedy si vzájemně vypomůžete.
+
+Navíc, kdo někdy byl v Litomyšli, ví, že je to příjemné a bezpečné město, kde se neustále konají nějaké zajímavé akce pro dospělé i děti. Zkrátka má všechny ty plusy, které člověk hledá pro pokojný rodinný život. Díky tomu, že žijeme v Litomyšli, jsme si také mohli pořídit rodinný dům s velkou zahradou, to by v Praze příliš nešlo. Navíc cestou do Prahy se dá ve vlaku dobře pracovat, takže při dojíždění se neztrácí čas.
+
+Cesta mezi Prahou a Litomyšlí ale nebyla jediná, kterou jste s manželem podnikli. Spolu jste vyjeli i na Erasmus do Helsinek a po doktorském studiu do Kalifornie na univerzitu v Berkeley, nedávno jste se vrátili z Nového Zélandu. Jaké zkušenosti jste si přivezli z těchto cest pro svůj další profesní život?
+
+Do Helsinek jsme jeli ještě jako studenti, a právě tam jsme se seznámili s metaanalýzou, která se stala základním kamenem našeho pozdějšího výzkumu.
+
+Do Berkeley jsme jeli už v době, kdy jsme měli dvě děti, starší dceři bylo dva a půl roku, syn byl roční. Spolupracovali jsme tam s profesorem Zilbermanem. Podařilo se nám tam společně publikovat výzkumný článek, který se zabýval společenskými náklady emisí skleníkových plynů.
+
+Díky tomu, že tam má univerzita jeden velký kampus, kde se všechny obory potkávají, člověk se tam více dostává k různým myšlenkovým pochodům a názorům i z jiných oborů, což je pro metaanalýzu, statistickou metodu, se kterou pracujeme a kterou používají různé obory, zejména medicína, psychologie, sociální vědy nebo biologie, klíčové.
+
+Také jsme zažili odlišný způsob financování. U nás věda často stojí na vysoutěžených grantových penězích, v USA funguje víc institucionální podpora, výzkumníci pak mají větší jistotu toho, co bude za rok. To je důležité hlavně pro mladé výzkumníky.
+
+A ještě taková osobní zkušenost z Berkeley, Stanfordu nebo teď z University of Canterbury na Novém Zélandu, odkud jsme se nedávno vrátili, je ta, že navzdory tomu, jaké hvězdy svého oboru tam působí, tak jsou neskutečně milí a nápomocní. Navíc vidíte, jak tvrdě pracují. Třeba teď máme společný projekt s profesorem Ioannidisem ze Stanfordu, což je jeden z nejcitovanějších vědců na světě, přitom jeho časové zapojení je velmi intenzivní. Dokonce věnuje hodně času našim doktorandům, kteří za ním na Stanford pravidelně jezdí.
+
+Zabýváte se především metaanalýzou. Můžete vysvětlit přednosti této výzkumné metody?
+
+Metaanalýza je zjednodušeně řečeno kvantitativní souhrn literatury, který vědecké výsledky opravuje o různá zkreslení. Pro příklad si můžeme představit, že máme nový lék. Máme několik klinických studií, které zkoumají účinnost toho léku. Často to jsou ale malé studie, to znamená, že pracovaly s malým vzorkem, a z toho důvodu z nich nedokážeme vyvodit jednoznačné závěry. Medicína proto vytvořila metodu metaanalýzy, která dokáže agregovat výsledky z různých studií s větší statistickou jistotou. Tuto metodu pak můžeme využít i pro jiné obory, biologii, psychologii nebo i jiné sociální vědy, i když samozřejmě často musíte použít jiné techniky. My se snažíme vyvinout takové, které jsou vhodné pro observační výzkum, nikoli experimenty, jak je zvykem v medicíně. Na tohle téma jsme například teď publikovali článek v Nature Communications.
+
+V potaz musíme brát i tzv. publikační selektivitu. Ne všechny výsledky studií se nakonec reportují v odborných časopisech; je snazší publikovat ty, které jsou takzvaně statisticky významné, což dohromady literaturu zkresluje. To pak může mít velký vliv třeba na to, jak se daný lék zdá efektivní, nebo jakou hospodářskou politiku budete implementovat na základě výzkumu. Kvalitní syntéza výzkumu, která bere v úvahu kontext studií a publikační selektivitu, je klíčová pro kvalitní rozhodování založené na vědecké evidenci.
+
+Jaké oblasti ekonomie vás v současnosti přednostně zajímají?
+
+Vzhledem k tomu, že jsem začínala v energetice, nejprve jsem pracovala na metaanalýzách, které se zabývaly citlivostí poptávky po různých energetických produktech na jejich cenu.
+
+V Berkeley jsme poprvé řešili environmentální témata, společenské náklady emisí uhlíku. Emise je negativní produkt lidské činnosti, který ale není na trhu ohodnocen, je to takzvaná externalita. Aby tomu firmy přizpůsobily svou činnost, první ekonomickou volbou je uvalit na ně uhlíkovou daň. Abychom věděli, jak velkou daň máme stanovit, potřebujeme vědět, jaký náklad vypouštění emisí má, jak moc poškozuje přírodu a lidskou společnost – a tomu se říká společenské náklady uhlíku. Na to jsme dělali metaanalýzu právě v Berkeley. Profesor Nordhaus dostal před lety za tento typ výzkumu Nobelovu cenu. V současnosti se nejvíc zaměřuji právě na vývoj nových a lepších technik pro metaanalýzu.
+
+Jakého vědeckého výsledku si nejvíc ceníte?
+
+Největší radost mi vždy udělá to, když naši práci, kterou publikujeme, pak někdo používá v praxi. Náš výzkum používaly Organizace pro hospodářskou spolupráci a rozvoj (OECD), Světová banka nebo Mezinárodní měnový fond. S výsledky našeho výzkumu pracovaly Evropský parlament, Evropská komise i americký Kongres. Člověka potěší, když vidí, že to, co dělá k něčemu skutečně je, když vaši práci používá třeba nositel Nobelovy ceny, v našem případě takový Sargent a Stiglitz.
+
+To je hezká pozvánka ke studiu ekonomie…
+
+O ekonomii se dříve říkalo, že je to pochmurná věda. Ale já mám ze svých kolegů a studentů přesně opačný pocit. Studují ekonomickou historii a na ní vidí, jak úžasně se zlepšila životní úroveň lidí, i když z médií možná můžete nabýt opačného dojmu. O katastrofách a problémech si v novinách něco přečtete každý den, ale o tom, kolik stamilionů lidí se za posledních třicet let vymanilo ze spárů chudoby, se z denních zpráv nedozvíte.
+
+Od průmyslové revoluce se životní úroveň v Čechách zvedla třicetinásobně. Jsme bohatší, zdravější, žijeme v bezpečnějším světě, máme více volného času, méně pracujeme, máme více lesů. To jsou měřitelná fakta, která jsou pravdivá a díky kterým můžeme říct, že k pokroku skutečně dochází. A z toho plyne optimismus, který ekonomové sdílí. Výzvy v oblasti životního prostředí a změny klimatu mají jasná technická řešení. Je důležité si uvědomit, že přes dílčí problémy celkově žijeme v krásném světě plném příležitostí, což bychom měli zdůrazňovat našim dětem.
+
+Autorka: Helena Zdráhalová Foto: Michal Novotný Článek vyšel v on-line magazínu Univerzity Karlovy Forum
+
+Zuzana Havránková se věnuje tématům spojeným s mezinárodním obchodem, trhem práce, energetickou ekonomií a metaanalýzou. V roce 2018 získala docenturu, letos profesuru. V roce 2010 ji Světová banka ocenila medailí za výzkum a vývoj, v roce 2018 získala Cenu Kateřiny Šmídkové udělovanou Českou společností nejlepším českým ženám ekonomkám. Vyznamenaly ji také ministerstvo školství nebo Česká i Slovenská národní banka. Působí jako editorka Journal of Economic Surveys odpovědná za metaanalýzu. Podle databáze RePEc patří mezi 100 nejvlivnějších ekonomek na světě. Letos se stala affiliate výzkumnicí centra METRICS při Stanford University (USA); tři měsíce strávila na University of Canterbury na Novém Zélandu. Je členkou Rady pro rovné příležitosti UK.
 
 ---
 
