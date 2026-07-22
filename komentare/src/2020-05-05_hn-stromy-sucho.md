@@ -6,6 +6,7 @@ url: "https://archiv.ihned.cz/c1-66758770-stromy-ekonomicka-odpoved-na-sucho"
 date: "2020-05-05"
 headline: "Stromy, to je ekonomická odpověď na sucho"
 byline: "Tomáš Havránek"
+source: "draft"
 body_note: "Autorská verze textu, jak ji autor poslal redakci (pod názvem „Ekonomická odpověď na sucho? Stromy“). Vydaná verze v Hospodářských novinách se může v detailech lišit a je za placenou zdí."
 ---
 

@@ -1,0 +1,55 @@
+{
+ "name": "Komentáře — Tomáš Havránek",
+ "url": "https://meta-analysis.cz/komentare/data/",
+ "corpus_updated": "2026-07-01",
+ "temporal_coverage": "2016-11-30/2026-07-01",
+ "records": {
+  "total": 162,
+  "by_text_status": {
+   "published_full_text": 127,
+   "author_manuscript": 17,
+   "link_only": 15,
+   "publisher_excerpt": 3
+  },
+  "by_section": {
+   "Celostátní komentáře": 66,
+   "Litomyšlské sloupky": 48,
+   "Rozhovory": 34,
+   "In English": 14
+  }
+ },
+ "text_status_meanings": {
+  "published_full_text": "the text as published",
+  "author_manuscript": "the author's own version, as sent to the outlet",
+  "publisher_excerpt": "only the outlet's free teaser; the original is paywalled",
+  "link_only": "audio or video; no text is stored, the record links to the source"
+ },
+ "files": {
+  "corpus.jsonl": {
+   "url": "https://meta-analysis.cz/komentare/corpus.jsonl",
+   "bytes": 881747,
+   "sha256": "08f925c81639018f828e46b6b4d9d5ccbfbd9567a4759d2d9d3cc434bb4a02f4"
+  },
+  "index.json": {
+   "url": "https://meta-analysis.cz/komentare/index.json",
+   "bytes": 896297,
+   "sha256": "a444269a591b336f24e680d14ebf6dc5a06b9dd65f94a04bc38d345cd1c376cf"
+  },
+  "all.md": {
+   "url": "https://meta-analysis.cz/komentare/all.md",
+   "bytes": 797820,
+   "sha256": "7a162c816e296b978ada695f802581b6586f6bcac186a555bc97ec079c751014"
+  },
+  "llms.txt": {
+   "url": "https://meta-analysis.cz/komentare/llms.txt",
+   "bytes": 29056,
+   "sha256": "92df6220ae4fc516278062d776d6097c9b7325c11b84a768389c8ad76d65e589"
+  },
+  "feed.xml": {
+   "url": "https://meta-analysis.cz/komentare/feed.xml",
+   "bytes": 883948,
+   "sha256": "d0febdcb47e7917c2ec011433fd1da36ac1df62a71ae43364262dc5bfdb75014"
+  }
+ },
+ "generated_from": "komentare/src/*.md"
+}

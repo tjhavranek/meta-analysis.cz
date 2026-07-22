@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Korpus ke stažení — Komentáře — Tomáš Havránek</title>
+<meta name="description" content="Strojově čitelný korpus: 162 záznamů, corpus.jsonl, index.json, all.md a manifest s kontrolními součty." />
+<link rel="stylesheet" href="/komentare/style.css" />
+<link rel="canonical" href="https://meta-analysis.cz/komentare/data/" />
+<link rel="alternate" type="application/rss+xml" title="Komentáře — Tomáš Havránek" href="/komentare/feed.xml" />
+<meta property="og:site_name" content="Komentáře — Tomáš Havránek" />
+<meta property="og:locale" content="cs_CZ" />
+<meta property="og:title" content="Korpus ke stažení — Komentáře — Tomáš Havránek" />
+<meta property="og:description" content="Strojově čitelný korpus: 162 záznamů, corpus.jsonl, index.json, all.md a manifest s kontrolními součty." />
+<meta property="og:url" content="https://meta-analysis.cz/komentare/data/" />
+<script type="application/ld+json">
+{
+ "@context": "https://schema.org",
+ "@graph": [
+  {
+   "@type": "WebPage",
+   "@id": "https://meta-analysis.cz/komentare/data/",
+   "url": "https://meta-analysis.cz/komentare/data/",
+   "name": "Korpus ke stažení — Komentáře — Tomáš Havránek",
+   "inLanguage": "cs",
+   "isPartOf": {
+    "@id": "https://meta-analysis.cz/komentare/"
+   },
+   "about": {
+    "@id": "https://meta-analysis.cz/komentare/data/#dataset"
+   }
+  },
+  {
+   "@type": "Dataset",
+   "@id": "https://meta-analysis.cz/komentare/data/#dataset",
+   "name": "Komentáře — Tomáš Havránek",
+   "description": "Publicistika Tomáše Havránka: komentáře pro celostátní média, sloupky pro litomyšlskou Lilii a rozhovory. Texty jsou zde archivovány v plném znění s odkazem na původní vydání.",
+   "url": "https://meta-analysis.cz/komentare/data/",
+   "inLanguage": [
+    "cs",
+    "en"
+   ],
+   "isAccessibleForFree": true,
+   "creator": {
+    "@type": "Person",
+    "name": "Tomáš Havránek",
+    "identifier": "https://orcid.org/https://orcid.org/0000-0002-3158-2539"
+   },
+   "temporalCoverage": "2016-11-30/2026-07-01",
+   "distribution": [
+    {
+     "@type": "DataDownload",
+     "name": "corpus.jsonl",
+     "encodingFormat": "application/x-ndjson",
+     "contentUrl": "https://meta-analysis.cz/komentare/corpus.jsonl"
+    },
+    {
+     "@type": "DataDownload",
+     "name": "index.json",
+     "encodingFormat": "application/json",
+     "contentUrl": "https://meta-analysis.cz/komentare/index.json"
+    },
+    {
+     "@type": "DataDownload",
+     "name": "all.md",
+     "encodingFormat": "text/markdown",
+     "contentUrl": "https://meta-analysis.cz/komentare/all.md"
+    },
+    {
+     "@type": "DataDownload",
+     "name": "feed.xml",
+     "encodingFormat": "application/rss+xml",
+     "contentUrl": "https://meta-analysis.cz/komentare/feed.xml"
+    }
+   ]
+  }
+ ]
+}
+</script>
+<script>document.documentElement.className+=" has-js";</script>
+</head>
+<body>
+<header class="masthead">
+  <div class="wrap">
+    <p class="site-name"><a href="/komentare/">Komentáře<small>Tomáš Havránek</small></a></p>
+    <nav class="nav"><a href="/komentare/celostatni/">Celostátní</a><a href="/komentare/litomysl/">Litomyšl</a><a href="/komentare/rozhovory/">Rozhovory</a><a href="/komentare/english/">English</a><a href="/komentare/">Vše</a></nav>
+  </div>
+</header>
+<main>
+  <div class="wrap">
+<h1>Korpus ke stažení</h1>
+      <p class="lede">Celý archiv strojově čitelně: 162 záznamů,
+        z toho 147 s textem. Soubory se generují při každém sestavení webu.</p>
+      <h2>Soubory</h2>
+      <ul class="items">
+        <li><a href="/komentare/corpus.jsonl">corpus.jsonl</a> — jeden záznam na řádek
+          (NDJSON), včetně plného textu. Formát, který čtou datové nástroje přímo.</li>
+        <li><a href="/komentare/index.json">index.json</a> — totéž jako jeden dokument JSON.</li>
+        <li><a href="/komentare/all.md">all.md</a> — všechny texty v jednom Markdownu.</li>
+        <li><a href="/komentare/manifest.json">manifest.json</a> — počty, rozsah a kontrolní
+          součty SHA-256 každého souboru.</li>
+        <li><a href="/komentare/feed.xml">feed.xml</a> — RSS s plným textem.</li>
+        <li><a href="/komentare/src/">/komentare/src/</a> — zdrojový Markdown každé položky.</li>
+      </ul>
+      <h2>Úplnost textu</h2>
+      <p>Každý záznam nese pole <code>text_status</code>, aby bylo zřejmé, co archiv
+        skutečně obsahuje:</p>
+      <ul class="items"><li><strong>published_full_text</strong> — 127</li><li><strong>author_manuscript</strong> — 17</li><li><strong>link_only</strong> — 15</li><li><strong>publisher_excerpt</strong> — 3</li></ul>
+      <p class="about-machine" lang="en">Every record carries a <code>text_status</code>
+        field, so a consumer can tell a published text from the author's own version,
+        from a publisher's teaser, from an audio/video record that stores no text.</p>
+  </div>
+</main>
+<footer class="foot">
+  <div class="wrap about">
+    <p class="about-bio"><strong>Tomáš Havránek</strong> je profesor ekonomie na Institutu ekonomických studií FSV Univerzity Karlovy v Praze. Zabývá se měnovou politikou, metaanalýzou a metavýzkumem; byl poradcem viceguvernéra a bankovní rady ČNB. Je Research Affiliate v CEPR (Londýn) a ve Stanford METRICS. Tato stránka archivuje jeho publicistiku — komentáře, sloupky a rozhovory.</p>
+    <ul class="about-links">
+      <li><a href="https://www.tomashavranek.cz/">Osobní stránka</a></li>
+      <li><a href="https://meta-analysis.cz/">meta-analysis.cz</a></li>
+      <li><a href="https://ies.fsv.cuni.cz/contacts/institute-members/78067720">IES FSV UK</a></li>
+      <li><a href="https://zrusme-inflaci.cz/">Zrušme inflaci</a></li>
+      <li><a href="https://orcid.org/0000-0002-3158-2539">ORCID</a></li>
+      <li><a href="https://scholar.google.com/citations?user=BF0BvBkAAAAJ">Google Scholar</a></li>
+      <li><a href="https://ideas.repec.org/f/pha418.html">RePEc / IDEAS</a></li>
+      <li><a href="https://www.scopus.com/authid/detail.uri?authorId=24453189000">Scopus</a></li>
+      <li><a href="https://cepr.org/about/people/tomas-havranek">CEPR</a></li>
+      <li><a href="https://metrics.stanford.edu/people/tomas-havranek">Stanford METRICS</a></li>
+      <li><a href="/komentare/feed.xml">RSS</a></li>
+    </ul>
+    <p class="about-machine" lang="en">For machines:
+      <a href="/komentare/data/">the corpus</a> (JSONL, JSON, Markdown, checksums) ·
+      <a href="/komentare/llms.txt">llms.txt</a> ·
+      <a href="/komentare/index.json">index.json</a> (metadata and full text of every item) ·
+      <a href="/komentare/all.md">all.md</a> (the whole corpus in one file) ·
+      <a href="/komentare/feed.xml">RSS</a>. The Markdown source of each item is in
+      <a href="/komentare/src/">/komentare/src/</a>. Text and metadata may be freely
+      indexed, quoted and used for research, with attribution to the original outlet.</p>
+  </div>
+</footer>
+</body>
+</html>

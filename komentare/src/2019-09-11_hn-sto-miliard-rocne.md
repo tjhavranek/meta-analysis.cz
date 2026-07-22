@@ -6,6 +6,7 @@ url: "https://archiv.ihned.cz/c1-66639220-jak-prichazime-o-sto-miliard-korun-roc
 date: "2019-09-11"
 headline: "Jak přicházíme o sto miliard korun ročně"
 byline: "Tomáš Havránek"
+source: "draft"
 body_note: "Autorská verze textu, jak ji autor rozeslal po vydání. Originál v Hospodářských novinách je za placenou zdí."
 ---
 

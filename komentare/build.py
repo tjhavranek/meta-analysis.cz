@@ -36,6 +36,7 @@ Design notes
 No third-party dependencies.  python komentare/build.py
 """
 
+import hashlib
 import html
 import io
 import json
@@ -117,6 +118,25 @@ MEDIA_LABEL = {"video": "video", "audio": "audio"}
 # headlines carried by more than one item; filled in main(). Such items always show
 # their byline so that two rows never render as the same link text.
 DUP_HEADLINES = set()
+
+# How complete the stored text is. Derived from the item's own provenance note so
+# that no source file has to repeat it, and so the machine-readable corpus never
+# implies it holds a published text when it holds a draft or a teaser.
+# Note: source == "image" means the text was read off a scanned page — still the
+# published text, so it stays published_full_text. Only source == "draft" means the
+# stored words are the author's version rather than what the outlet printed.
+_EXCERPT_RE = re.compile(r"(?i)ukázka zveřejněná|úvodní ukázka")
+
+
+def text_status(a):
+    """published_full_text | author_manuscript | publisher_excerpt | link_only"""
+    if a["media"] != "text":
+        return "link_only"
+    if _EXCERPT_RE.search(a.get("body_note") or ""):
+        return "publisher_excerpt"
+    if a.get("source") == "draft":
+        return "author_manuscript"
+    return "published_full_text"
 
 
 # ----------------------------------------------------------------- helpers ---
@@ -292,13 +312,6 @@ def shell(title, desc, canonical, jsonld, body, active, extra_head="", lang="cs"
            "a metavýzkumem; byl poradcem viceguvernéra a bankovní rady ČNB. Je Research "
            "Affiliate v CEPR (Londýn) a ve Stanford METRICS. Tato stránka archivuje "
            "jeho publicistiku — komentáře, sloupky a rozhovory.")
-    rights = ("Every item states where it first appeared and links to the original. "
-              "Copyright in each text rests with the author and the original publisher; "
-              "this archive exists for reading, citation and research."
-              if lang == "en" else
-              "U každého textu uvádíme, kde poprvé vyšel, a odkazujeme na původní vydání. "
-              "Práva k textům náleží autorovi a původním vydavatelům; tento archiv slouží "
-              "ke čtení, citaci a výzkumu.")
     return f"""<!DOCTYPE html>
 <html lang="{lang}">
 <head>
@@ -348,13 +361,13 @@ def shell(title, desc, canonical, jsonld, body, active, extra_head="", lang="cs"
       <li><a href="{PATH}/feed.xml">RSS</a></li>
     </ul>
     <p class="about-machine" lang="en">For machines:
+      <a href="{PATH}/data/">the corpus</a> (JSONL, JSON, Markdown, checksums) ·
       <a href="{PATH}/llms.txt">llms.txt</a> ·
       <a href="{PATH}/index.json">index.json</a> (metadata and full text of every item) ·
       <a href="{PATH}/all.md">all.md</a> (the whole corpus in one file) ·
       <a href="{PATH}/feed.xml">RSS</a>. The Markdown source of each item is in
       <a href="{PATH}/src/">/komentare/src/</a>. Text and metadata may be freely
       indexed, quoted and used for research, with attribution to the original outlet.</p>
-    <p class="about-rights">{rights}</p>
   </div>
 </footer>
 </body>
@@ -715,7 +728,8 @@ def write_machine_readable(items):
              "section": SECTIONS[a["category"]]["title"], "category": a["category"],
              "language": a.get("lang") or SECTIONS[a["category"]]["lang"],
              "outlet": a["outlet"], "authors": people(a.get("byline")),
-             "media": a["media"], "original_url": a.get("url", "")}
+             "media": a["media"], "original_url": a.get("url", ""),
+             "text_status": text_status(a)}
         if a.get("perex"):
             d["standfirst"] = a["perex"]
             d["standfirst_note"] = "Written by the original outlet, not by the author."
@@ -741,6 +755,14 @@ def write_machine_readable(items):
         "items": docs,
     }, ensure_ascii=False, indent=1), encoding="utf-8")
 
+    # --- corpus.jsonl ---------------------------------------------------------
+    # The same records, one self-contained JSON object per line. This is what data
+    # pipelines read natively: it streams, so a loader never has to hold the whole
+    # corpus in memory, and one malformed line cannot spoil the rest of the file.
+    (KDIR / "corpus.jsonl").write_text(
+        "".join(json.dumps(d, ensure_ascii=False) + chr(10) for d in docs),
+        encoding="utf-8")
+
     # --- all.md ---------------------------------------------------------------
     A = [f"# Komentáře — {AUTHOR}", "", HUB_DESC, "",
          f"{len(items)} položek. Audio a video jsou uvedeny pouze odkazem.", "", "---", ""]
@@ -754,7 +776,122 @@ def write_machine_readable(items):
               f"Zdroj: {a.get('url') or BASE + '/' + a['slug'] + '/'}", "",
               a["body"], "", "---", ""]
     (KDIR / "all.md").write_text(chr(10).join(A), encoding="utf-8")
+
+    # --- manifest.json --------------------------------------------------------
+    # An inventory a consumer can verify against: how many records of each kind,
+    # what each distribution weighs, and a checksum per file. Deliberately carries
+    # no build timestamp — it is keyed to the newest item instead, so rebuilding an
+    # unchanged corpus produces a byte-identical manifest and no git churn.
+    counts = {}
+    for d in docs:
+        counts[d["text_status"]] = counts.get(d["text_status"], 0) + 1
+    files = {}
+    for name in ("corpus.jsonl", "index.json", "all.md", "llms.txt", "feed.xml"):
+        p = KDIR / name
+        if p.exists():
+            blob = p.read_bytes()
+            files[name] = {"url": f"{BASE}/{name}", "bytes": len(blob),
+                           "sha256": hashlib.sha256(blob).hexdigest()}
+    (KDIR / "manifest.json").write_text(json.dumps({
+        "name": f"Komentáře — {AUTHOR}",
+        "url": f"{BASE}/data/",
+        "corpus_updated": items[0]["date"],
+        "temporal_coverage": f"{items[-1]['date']}/{items[0]['date']}",
+        "records": {
+            "total": len(docs),
+            "by_text_status": counts,
+            "by_section": {SECTIONS[k]["title"]: len([a for a in items
+                                                      if a["category"] == k])
+                           for k in SECTIONS},
+        },
+        "text_status_meanings": {
+            "published_full_text": "the text as published",
+            "author_manuscript": "the author's own version, as sent to the outlet",
+            "publisher_excerpt": "only the outlet's free teaser; the original is paywalled",
+            "link_only": "audio or video; no text is stored, the record links to the source",
+        },
+        "files": files,
+        "generated_from": "komentare/src/*.md",
+    }, ensure_ascii=False, indent=1), encoding="utf-8")
+
     return len([a for a in items if a["media"] == "text"])
+
+
+def write_data_page(items):
+    """A landing page for the corpus itself, carrying schema.org Dataset markup.
+    Without it the bulk files are only discoverable from a footer line; with it a
+    crawler (and Google Dataset Search) gets one entry point that names the
+    distributions, the licence and the coverage."""
+    docs_total = len(items)
+    n_text = len([a for a in items if a["media"] == "text"])
+    counts = {}
+    for a in items:
+        counts[text_status(a)] = counts.get(text_status(a), 0) + 1
+    # The page itself is Czech; the corpus it describes is Czech and English. Those
+    # are two different nodes — the site's convention puts the page node first.
+    jsonld = {
+        "@context": "https://schema.org",
+        "@graph": [
+            {"@type": "WebPage", "@id": f"{BASE}/data/",
+             "url": f"{BASE}/data/",
+             "name": f"Korpus ke stažení — Komentáře — {AUTHOR}",
+             "inLanguage": "cs",
+             "isPartOf": {"@id": f"{BASE}/"},
+             "about": {"@id": f"{BASE}/data/#dataset"}},
+            {"@type": "Dataset", "@id": f"{BASE}/data/#dataset",
+             "name": f"Komentáře — {AUTHOR}",
+             "description": HUB_DESC,
+             "url": f"{BASE}/data/",
+             "inLanguage": ["cs", "en"],
+             "isAccessibleForFree": True,
+             "creator": {"@type": "Person", "name": AUTHOR,
+                         "identifier": f"https://orcid.org/{ORCIDS[AUTHOR]}"},
+             "temporalCoverage": f"{items[-1]['date']}/{items[0]['date']}",
+             "distribution": [
+                 {"@type": "DataDownload", "name": "corpus.jsonl",
+                  "encodingFormat": "application/x-ndjson",
+                  "contentUrl": f"{BASE}/corpus.jsonl"},
+                 {"@type": "DataDownload", "name": "index.json",
+                  "encodingFormat": "application/json",
+                  "contentUrl": f"{BASE}/index.json"},
+                 {"@type": "DataDownload", "name": "all.md",
+                  "encodingFormat": "text/markdown", "contentUrl": f"{BASE}/all.md"},
+                 {"@type": "DataDownload", "name": "feed.xml",
+                  "encodingFormat": "application/rss+xml",
+                  "contentUrl": f"{BASE}/feed.xml"},
+             ]},
+        ],
+    }
+    rows = "".join(
+        f"<li><strong>{esc(k)}</strong> — {v}</li>"
+        for k, v in sorted(counts.items(), key=lambda kv: -kv[1]))
+    body = f"""<h1>Korpus ke stažení</h1>
+      <p class="lede">Celý archiv strojově čitelně: {docs_total} záznamů,
+        z toho {n_text} s textem. Soubory se generují při každém sestavení webu.</p>
+      <h2>Soubory</h2>
+      <ul class="items">
+        <li><a href="{PATH}/corpus.jsonl">corpus.jsonl</a> — jeden záznam na řádek
+          (NDJSON), včetně plného textu. Formát, který čtou datové nástroje přímo.</li>
+        <li><a href="{PATH}/index.json">index.json</a> — totéž jako jeden dokument JSON.</li>
+        <li><a href="{PATH}/all.md">all.md</a> — všechny texty v jednom Markdownu.</li>
+        <li><a href="{PATH}/manifest.json">manifest.json</a> — počty, rozsah a kontrolní
+          součty SHA-256 každého souboru.</li>
+        <li><a href="{PATH}/feed.xml">feed.xml</a> — RSS s plným textem.</li>
+        <li><a href="{PATH}/src/">/komentare/src/</a> — zdrojový Markdown každé položky.</li>
+      </ul>
+      <h2>Úplnost textu</h2>
+      <p>Každý záznam nese pole <code>text_status</code>, aby bylo zřejmé, co archiv
+        skutečně obsahuje:</p>
+      <ul class="items">{rows}</ul>
+      <p class="about-machine" lang="en">Every record carries a <code>text_status</code>
+        field, so a consumer can tell a published text from the author's own version,
+        from a publisher's teaser, from an audio/video record that stores no text.</p>"""
+    page = shell(f"Korpus ke stažení — Komentáře — {AUTHOR}",
+                 f"Strojově čitelný korpus: {docs_total} záznamů, "
+                 "corpus.jsonl, index.json, all.md a manifest s kontrolními součty.",
+                 f"{BASE}/data/", jsonld, body, "", lang="cs")
+    (KDIR / "data").mkdir(exist_ok=True)
+    (KDIR / "data" / "index.html").write_text(page, encoding="utf-8")
 
 
 def write_src_index(items):
@@ -796,10 +933,7 @@ def write_src_index(items):
 {chr(10).join(rows)}
   </ul>
 </div></main>
-<footer class="foot"><div class="wrap">
-  <p class="about-rights">Copyright in each text rests with the author and the original
-    publisher; this archive exists for reading, citation and research.</p>
-</div></footer>
+<footer class="foot"><div class="wrap"></div></footer>
 </body>
 </html>
 """
@@ -847,7 +981,9 @@ def main():
 
     # remove pages whose source is gone — otherwise a deleted or renamed item keeps
     # serving, stays in search results, and can leak text we deliberately withdrew
-    live = {a["slug"] for a in items if a["media"] == "text"} | set(SECTIONS)
+    # "data" is the corpus landing page: generated, not slug-backed, so it must be
+    # named here or the orphan sweep below would delete it on every rebuild.
+    live = {a["slug"] for a in items if a["media"] == "text"} | set(SECTIONS) | {"data"}
     orphans = [d for d in KDIR.iterdir()
                if d.is_dir() and d.name not in live and d.name not in ("src", "__pycache__")]
     for d in orphans:
@@ -865,6 +1001,7 @@ def main():
         write_index(items, k)
     write_feed(items)
     n_txt = write_machine_readable(items)
+    write_data_page(items)
     n_src = write_src_index(items)
     n = update_sitemap(items)
 
