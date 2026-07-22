@@ -363,9 +363,9 @@ def shell(title, desc, canonical, jsonld, body, active, extra_head="", lang="cs"
     <p class="about-machine" lang="en">For machines:
       <a href="{PATH}/data/">the corpus</a> (JSONL, JSON, Markdown, checksums) ·
       <a href="{PATH}/llms.txt">llms.txt</a> ·
-      <a href="{PATH}/index.json">index.json</a> (metadata and full text of every item) ·
-      <a href="{PATH}/all.md">all.md</a> (the whole corpus in one file) ·
-      <a href="{PATH}/feed.xml">RSS</a>. The Markdown source of each item is in
+      <a href="{PATH}/index.json">index.json</a> (metadata for every item, full text where available) ·
+      <a href="{PATH}/all.md">all.md</a> (every text in one file) ·
+      <a href="{PATH}/feed.xml">RSS</a>. The Markdown source of each textual item is in
       <a href="{PATH}/src/">/komentare/src/</a>. Text and metadata may be freely
       indexed, quoted and used for research, with attribution to the original outlet.</p>
   </div>
@@ -765,7 +765,11 @@ def write_machine_readable(items):
 
     # --- all.md ---------------------------------------------------------------
     A = [f"# Komentáře — {AUTHOR}", "", HUB_DESC, "",
-         f"{len(items)} položek. Audio a video jsou uvedeny pouze odkazem.", "", "---", ""]
+         f"Tento soubor obsahuje plné znění všech textových položek "
+         f"({sum(1 for a in items if a['media'] == 'text')} z celkem {len(items)}). "
+         f"Zbývající položky jsou audio a video, které archiv vede pouze odkazem, "
+         f"a v tomto souboru nejsou; jejich metadata najdete v index.json a corpus.jsonl.",
+         "", "---", ""]
     for a in items:
         if a["media"] != "text":
             continue
@@ -924,10 +928,12 @@ def write_src_index(items):
 <main><div class="wrap">
   <div class="lede">
     <h1>Markdown sources</h1>
-    <p>The plain-text source of every item, one file each, with YAML front matter.
-       {len(rows)} files. For bulk use prefer
-       <a href="{PATH}/index.json">index.json</a> (metadata and full text in one document)
-       or <a href="{PATH}/all.md">all.md</a>.</p>
+    <p>The plain-text source of every <em>textual</em> item, one file each, with YAML
+       front matter. {len(rows)} files; the archive holds {len(items)} items in total —
+       the other {len(items) - len(rows)} are audio or video, kept as links only, so they
+       have no source file. For bulk use prefer
+       <a href="{PATH}/index.json">index.json</a> (metadata for every item, full text
+       where available) or <a href="{PATH}/all.md">all.md</a>.</p>
   </div>
   <ul class="items src-list">
 {chr(10).join(rows)}
