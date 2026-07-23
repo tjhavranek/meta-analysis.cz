@@ -4,9 +4,41 @@
     <title>Komentáře — Tomáš Havránek, Zuzana Havránková</title>
     <link>https://meta-analysis.cz/komentare/</link>
     <atom:link href="https://meta-analysis.cz/komentare/feed.xml" rel="self" type="application/rss+xml" />
-    <description>Publicistika Tomáše Havránka a Zuzany Havránkové: komentáře pro celostátní média, sloupky pro litomyšlskou Lilii a rozhovory, v plném znění. Kratší příspěvky ze sítí jsou mimo tento kanál, na https://meta-analysis.cz/komentare/posts/.</description>
+    <description>Publicistika Tomáše Havránka a Zuzany Havránkové: komentáře pro celostátní média, sloupky pro litomyšlskou Lilii, rozhovory a kratší příspěvky ze sítí, v plném znění.</description>
     <language>cs</language>
     <lastBuildDate>Thu, 16 Jul 2026 00:00:00 +0000</lastBuildDate>
+    <item>
+      <title>Does multi-agent debate improve AI feedback on research papers?</title>
+      <link>https://meta-analysis.cz/komentare/posts/2026-07-16-does-multi-agent-debate-improve-ai-feedback/</link>
+      <guid isPermaLink="true">https://meta-analysis.cz/komentare/posts/2026-07-16-does-multi-agent-debate-improve-ai-feedback/</guid>
+      <pubDate>Thu, 16 Jul 2026 00:00:00 +0000</pubDate>
+      <category>Posts (ze sítí)</category>
+      <dc:language>en</dc:language>
+      <source url="https://www.linkedin.com/feed/update/urn%3Ali%3AugcPost%3A7483554931325542401">LinkedIn</source>
+      <content:encoded><![CDATA[<p>Does multi-agent debate improve AI feedback on research papers?</p><p>Not in our experiment.</p><p>We just posted a pre-registered study in which authors ranked three AI reports on their own paper. The reports were blinded and came from three setups: a single prompt and two multi-agent tools. We expected the multi-agent tools to win.</p><p>We find:</p><p>1) Multi-agent debate does not help here. The single prompt beat both multi-agent tools, even though one of them spent about 30x the tokens.</p><p>2) If an independent AI model ranked the reports in the authors&#x27; place, it would put the most expensive multi-agent tool first.</p><p>3) Authors who recalled their real journal referee feedback usually ranked it above all the AI reports. In contrast, the AI judges almost always ranked the human feedback last.</p><p>I was also surprised by how little the author and AI rankings agree (correlation 0.14). Authors seem to have actually read the AI reports (!) and thought about them, not just used a chatbot to rank them.</p><p>Thanks to all 47 authors who participated!</p><p>Paper: https://lnkd.in/d7YsNxWc</p><p>Both multi-agent tools are open source:
+https://lnkd.in/dtGSi8zP
+https://lnkd.in/dk5NQpcE</p>]]></content:encoded>
+    </item>
+    <item>
+      <title>This week I have been at Stanford, spending my days working and my evenings at Nitoboxing in Palo Alto.…</title>
+      <link>https://meta-analysis.cz/komentare/posts/2026-07-08-stanford-and-nitoboxing/</link>
+      <guid isPermaLink="true">https://meta-analysis.cz/komentare/posts/2026-07-08-stanford-and-nitoboxing/</guid>
+      <pubDate>Wed, 08 Jul 2026 00:00:00 +0000</pubDate>
+      <category>Posts (ze sítí)</category>
+      <dc:language>en</dc:language>
+      <source url="https://www.linkedin.com/feed/update/urn%3Ali%3Ashare%3A7480586444739375104">LinkedIn</source>
+      <content:encoded><![CDATA[<p>This week I have been at Stanford, spending my days working and my evenings at Nitoboxing in Palo Alto. Honestly, it was exactly what I needed!</p><p>Research is intense, travel tiring, and sometimes the best way to get your head straight is not another coffee, but gloves and sweat.</p><p>Huge thanks to Mark and the whole team for the warm welcome, great energy, and for helping me reset after long days.</p>]]></content:encoded>
+    </item>
+    <item>
+      <title>Proud to be affiliated with Stanford METRICS. Few groups have done more for reproducibility and research…</title>
+      <link>https://meta-analysis.cz/komentare/posts/2026-07-04-affiliated-with-stanford-metrics/</link>
+      <guid isPermaLink="true">https://meta-analysis.cz/komentare/posts/2026-07-04-affiliated-with-stanford-metrics/</guid>
+      <pubDate>Sat, 04 Jul 2026 00:00:00 +0000</pubDate>
+      <category>Posts (ze sítí)</category>
+      <dc:language>en</dc:language>
+      <source url="https://www.linkedin.com/feed/update/urn%3Ali%3Ashare%3A7479216000241033216">LinkedIn</source>
+      <content:encoded><![CDATA[<p>Proud to be affiliated with Stanford METRICS. Few groups have done more for reproducibility and research integrity than John Ioannidis and his team, and it&#x27;s a pleasure to meet in person some of the postdocs behind so much of the work: Alejandro Sandoval Lentisco, Quentin Loisel, and Sarah Tanveer.</p><p>Happy Fourth of July, and happy 250th, America!!</p>]]></content:encoded>
+    </item>
     <item>
       <title>Poděkování za péči o růže u fary</title>
       <link>https://meta-analysis.cz/komentare/litomysl-ruze-u-fary/</link>
@@ -17,6 +49,16 @@
       <source url="https://www.litomysl.cz/lilie/download/2026">Lilie</source>
       <content:encoded><![CDATA[<p>Chtěl bych tímto poděkovat všem, kteří se starají o žluté růže pod farou. Tomu záhonu věnovala hodně úsilí moje babička Marie Lorencová. Děkuji též kolegům z městského úřadu, že nám umožnili jako vzpomínku na ni umístit u růží lavičku (kterou vymysleli a nechali vyrobit Iva a Leoš Tupcovi). Je to už více než 3 roky, co babička zemřela. Místo je ale pořád stejně krásné. Sluší se připomenout, co o něm psala babička před lety:</p>
 <blockquote><p>Před 26 lety byli vysláni, aby spravovali naši farnost, dva kněží – otec František Beneš a otec Jiří Štorek. Převzali zpustlý, více než 70 let neopravovaný kostel a podobně zpustlou farní zahradu. Byli ještě mladí a zdraví; nezalekli se toho, co je čeká. Otec František začal hned shánět vše, co bylo třeba zařídit. K tomu vždy jako první nabídl své vlastní pracovité ruce. Přidali se další ochotní a obětaví farníci a opravy kostela i fary se rozběhly.</p><p>Také farní zahrada se proměnila z džungle v užitnou. Otec František vlastnoručně za pomoci pana Mikysky vykopal nehezká křoviska pod zdí farní zahrady, na pozemku města Litomyšle. Po odklizení těchto křovisek se objevil kdysi označený široký záhon. Ten přímo vyzýval k tomu, aby do záhonu byly vysázeny rostliny pro krásu i radost kolemjdoucích. Přidalo se několik dalších pracovitých rukou, staraly se o zahradu, vypěstovaly na ní mimo jiné sadové žluté růže jménem lichtkönigin lucia a vysázely jich dlouhou řadu do záhonu pod zdí farní zahrady; také řadu narcisů, tulipánů i kosatců.</p><p>Tak, jak rozkvétal při opravách kostel, farní budova i zahrada, rozkvetl i záhon pod zdí farní zahrady. Jako první po konci zimy a pro radost kolemjdoucím vykvetl záhon krásných jarních květin a v čase, kdy probíhá festival Smetanova Litomyšl, vykvetla pokaždé v plné kráse dlouhá řada žlutých růží. Je to pastva pro oči každého, kdo kolem prochází, a návštěvníci si záhon s farou často fotí.</p><p>Za těch 26 roků jsme zestárli i my, kteří jsme se s radostí a láskou o záhon starali, a naše síly jsou po 85 letech života téměř u konce. Předáváme tento záhon, který je nyní okopán a ošetřen tak, jak to rostliny vyžadují, do péče majitele pozemku, města Litomyšle. Věříme, že ti, kteří se v našem krásném městě starají o zeleň, budou o tento záhon pečovat dále.</p><p>Za všechny, kteří přiložili ruku k tomuto dílu, Marie Lorencová, rozená Kudrnová.</p></blockquote>]]></content:encoded>
+    </item>
+    <item>
+      <title>If you plan to work on your ERC proposal this summer, the following tool might help you:</title>
+      <link>https://meta-analysis.cz/komentare/posts/2026-06-23-a-tool-for-your-erc-proposal/</link>
+      <guid isPermaLink="true">https://meta-analysis.cz/komentare/posts/2026-06-23-a-tool-for-your-erc-proposal/</guid>
+      <pubDate>Tue, 23 Jun 2026 00:00:00 +0000</pubDate>
+      <category>Posts (ze sítí)</category>
+      <dc:language>en</dc:language>
+      <source url="https://www.linkedin.com/feed/update/urn%3Ali%3Ashare%3A7475160943409135616">LinkedIn</source>
+      <content:encoded><![CDATA[<p>If you plan to work on your ERC proposal this summer, the following tool might help you:</p><p>https://lnkd.in/gAN6S747</p><p>It checks your draft at various stages against the official ERC evaluation criteria and rules, flags the routine weak spots, gives you tips, etc. The idea is to clear the easy problems before you ask humans, not to replace them.</p><p>Just read the privacy note first: use a paid model with training turned off, or don&#x27;t paste anything sensitive.</p><p>We built this with Tomas Havranek, who was on the ERC Advanced economics panel in 2020 and is involved in the expert group supporting ERC applicants in Czechia.</p><p>You might also check our related tools: mad-research (https://lnkd.in/dtGSi8zP), which stress-tests your paper or proposal with a Claude/Codex debate, and paper-workshop (https://lnkd.in/dk5NQpcE), which simulates an expert workshop on your stuff.</p><p>If you have any comments or feedback, we&#x27;ll be happy to incorporate them into the tools.</p>]]></content:encoded>
     </item>
     <item>
       <title>„Za inflaci může prezident.“ Vlivný profesor popsal, odkud Babiš získá 200 miliard</title>
@@ -58,6 +100,26 @@
 <li>12:01–20:00 Jak by mohly zlevnit hypotéky? Měla by ČNB zvyšovat základní úrokové sazby? A jak se ekonom Tomáš Havránek dívá na slovní přestřelku mezi guvernérem České národní banky a premiérem Andrejem Babišem kvůli ceně úvěrů v ekonomice?</li>
 <li>20:01–40:11 Proč podle něj za inflaci může prezident? Jak je na tom česká ekonomika, které skupiny obyvatel jsou nejohroženější a jak nebezpečné je zvyšování státního dluhu?</li>
 </ul>]]></content:encoded>
+    </item>
+    <item>
+      <title>Imagine a panel of the world&#x27;s leading experts, assembled for your research paper, arguing it out from rival…</title>
+      <link>https://meta-analysis.cz/komentare/posts/2026-06-10-a-panel-of-experts-for-your-paper/</link>
+      <guid isPermaLink="true">https://meta-analysis.cz/komentare/posts/2026-06-10-a-panel-of-experts-for-your-paper/</guid>
+      <pubDate>Wed, 10 Jun 2026 00:00:00 +0000</pubDate>
+      <category>Posts (ze sítí)</category>
+      <dc:language>en</dc:language>
+      <source url="https://www.linkedin.com/feed/update/urn%3Ali%3Ashare%3A7470445147063803904">LinkedIn</source>
+      <content:encoded><![CDATA[<p>Imagine a panel of the world&#x27;s leading experts, assembled for your research paper, arguing it out from rival schools and then revising it themselves.</p><p>Well, that&#x27;s not possible. But we built an approximation with Claude Code, and it now uses the full power of Anthropic&#x27;s Mythos-class model, Claude Fable 5.</p><p>Below is the skill, open and free. You give it your paper, ideally with the data and draft code. You get a stress test of your paper + a revision in track changes + a replication package. We ran it end to end on colleagues&#x27; papers and our own paper accepted at JPE Micro, Stata and R re-runs included. Enjoy:</p><p>https://lnkd.in/dk5NQpcE</p>]]></content:encoded>
+    </item>
+    <item>
+      <title>Nesehnali jste už lístky na Smetanova Litomyšl, ale přesto chcete zakusit genius loci perly východních Čech?…</title>
+      <link>https://meta-analysis.cz/komentare/posts/2026-06-04-smetanova-litomysl-genius-loci/</link>
+      <guid isPermaLink="true">https://meta-analysis.cz/komentare/posts/2026-06-04-smetanova-litomysl-genius-loci/</guid>
+      <pubDate>Thu, 04 Jun 2026 00:00:00 +0000</pubDate>
+      <category>Posts (ze sítí)</category>
+      <dc:language>cs</dc:language>
+      <source url="https://www.linkedin.com/feed/update/urn%3Ali%3AugcPost%3A7468202463888609280">LinkedIn</source>
+      <content:encoded><![CDATA[<p>Nesehnali jste už lístky na Smetanova Litomyšl, ale přesto chcete zakusit genius loci perly východních Čech? Snadná pomoc!</p><p>Děti připravily festivalové vydání své závodní hry z Litomyšle:</p><p>https://lnkd.in/gvEF-zD7</p><p>Závodíte v litomyšlských ulicích s dalším hráčem na počítači, nebo na mobilu s botem. Můžete střílet, sbírat lepší zbraně, ničit budovy (např. školu).</p><p>Pozor na bomby a zombie Bedřichy!</p><p>Hru postavily děti samy v zimě s Claude Code za několik hodin (ač pak trvaly na mnoha hodinách testování 😉). Jasně, vypadá jako z 80. let. Ale je to jen malá ukázka toho, co současné agentní AI systémy dokážou, a není to zdaleka jen o kódování.</p><p>Pokud jste Claude Code nebo Codex ještě nezkoušeli, určitě stojí za to nainstalovat, ať už se živíte čímkoli. Nejtěžší je překonat počáteční strach. Ono je to nakonec jednoduché.</p><p>Detaily hry tady:</p><p>https://lnkd.in/gVmACuyi</p>]]></content:encoded>
     </item>
     <item>
       <title>Očima byznysu: Nemovitosti jsou pro většinu Čechů špatná investice</title>
@@ -133,6 +195,28 @@
 <p>Try it on something you are working on and tell us how we could improve it!</p>]]></content:encoded>
     </item>
     <item>
+      <title>Do you know that Claude Code can use Codex to stress test its work?</title>
+      <link>https://meta-analysis.cz/komentare/posts/2026-05-30-claude-code-with-codex-stress-test/</link>
+      <guid isPermaLink="true">https://meta-analysis.cz/komentare/posts/2026-05-30-claude-code-with-codex-stress-test/</guid>
+      <pubDate>Sat, 30 May 2026 00:00:00 +0000</pubDate>
+      <category>Posts (ze sítí)</category>
+      <dc:language>en</dc:language>
+      <source url="https://www.linkedin.com/feed/update/urn%3Ali%3Ashare%3A7466382253208645634">LinkedIn</source>
+      <content:encoded><![CDATA[<p>Do you know that Claude Code can use Codex to stress test its work?</p><p>I had both installed and used them interchangeably: for some tasks, one seems to be better, and vice versa. Also, sometimes I hit usage limit in one, so I continue in the other.</p><p>This can be automated easily: work from Claude Code and call Codex when needed. Here is the Claude skill, applied to stress-testing research:</p><p>https://lnkd.in/dtGSi8zP</p><p>This builds on our previous manual protocols for using different AI models to test research ideas or papers:</p><p>https://lnkd.in/dRwKz63g</p><p>Does the skill work for you? What should we change? Should we add Gemini?</p>]]></content:encoded>
+    </item>
+    <item>
+      <title>Reporting Guidelines for Meta-Analysis in Economics, updated for AI, just published in the Journal of…</title>
+      <link>https://meta-analysis.cz/komentare/posts/2026-05-13-reporting-guidelines-updated-for-ai/</link>
+      <guid isPermaLink="true">https://meta-analysis.cz/komentare/posts/2026-05-13-reporting-guidelines-updated-for-ai/</guid>
+      <pubDate>Wed, 13 May 2026 00:00:00 +0000</pubDate>
+      <category>Posts (ze sítí)</category>
+      <dc:language>en</dc:language>
+      <source url="https://www.linkedin.com/feed/update/urn%3Ali%3Ashare%3A7460202147213791232">LinkedIn</source>
+      <content:encoded><![CDATA[<p>Reporting Guidelines for Meta-Analysis in Economics, updated for AI, just published in the Journal of Economic Surveys:
+https://lnkd.in/d_BciGAd</p><p>Two practical points I would emphasize (my personal opinion), beyond the reporting checklist itself:</p><p>1️⃣ If you use AI for searching, screening, or coding, don&#x27;t rely on a single model. Use meta-analysis thinking: each model is trained differently and on different data (think Claude vs. Grok). Even if one model strictly dominates, there will be useful information in the others, and you need to stress-test your favorite model brutally regardless. We have developed a simple Research Audit Protocol based on Multi-Agent Debate (MAD) for exactly this:
+https://lnkd.in/d63DFbPz</p><p>2️⃣ These guidelines intentionally do not recommend any particular methodology. We do so in our 2024 method guidelines (https://lnkd.in/dPcDR7Gr). Brief update: I think the baseline meta-analysis technique is now Robust Bayesian Meta-Analysis (RoBMA) by František Bartoš, Maximilian Maier, and Eric-Jan Wagenmakers -- a principled way to average over various bias-correction methods. But these methods don&#x27;t address p-hacking, so RoBMA should be complemented with MAIVE (easy to apply via https://easymeta.org) and RTMA (Maya Mathur).</p><p>The updated reporting guidelines were led by Nikolai Cook and co-authored with František Bartoš, Pedro Bom, Sebastian Gechert, Klára Kantová, Jerome Geyer-Klingeberg, Dr.-Ing., Tomas Havranek, Martina Lušková, Matej Opatrny, Franz Prante, Heiko Rachinger, and Tom Stanley.</p>]]></content:encoded>
+    </item>
+    <item>
       <title>Nepořádek u autobusového nádraží</title>
       <link>https://meta-analysis.cz/komentare/litomysl-neporadek-u-autobusoveho-nadrazi/</link>
       <guid isPermaLink="true">https://meta-analysis.cz/komentare/litomysl-neporadek-u-autobusoveho-nadrazi/</guid>
@@ -146,6 +230,27 @@
 <p>Typická námitka je, že ti lidé vlastně nic protiprávního nedělají. Ale sprosté nadávání je přestupek, stejně jako porušování pořádku jiným způsobem. Uvítal bych, kdyby v tomto městská policie (a znovu, i vedení města, které ji jediné může úkolovat) byla výrazně důraznější, aktivnější, kreativnější, kdyby více upřednostnila přítomnost v této lokalitě (znovu, od nádraží k novým bytovkám) a s těmito lidmi mluvila, uplatňovala svou autoritu, pokutovala, legitimovala, kdykoli to je možné, využívala všech možností, které ze zákona má.</p>
 <p>Jiná města v takových situacích zavádí bezdoplatkové zóny, což by všechno vyřešilo, ale na což asi apetit mít nebudeme. Státní dávky na bydlení jsou samozřejmě jediný důvod, proč tento problém máme v Litomyšli, kde jinak bydlení není levné. Můj kamarád vlastní několik domů v Mostě a velmi si ten byznys pochvaluje. To je také důvod, proč dávky na bydlení zvyšují pravicové i levicové vlády – dotační/dávkový byznys je nejlepší byznys, daňový poplatník to zaplatí rád a výsledek je skvělý.</p>
 <p>Mně do toho vlastně nic není. Moje děti na nádraží nechodí, já tam taky skoro nechodím. Ale je mi docela líto, že něco takového je k vidění v Litomyšli, a zajímalo by mě, jak se k tomu před volbami postaví jednotlivé strany. Hezké jaro všem!</p>]]></content:encoded>
+    </item>
+    <item>
+      <title>Will our results change if we redo the meta-analysis from scratch?</title>
+      <link>https://meta-analysis.cz/komentare/posts/2026-04-28-redoing-a-meta-analysis-from-scratch/</link>
+      <guid isPermaLink="true">https://meta-analysis.cz/komentare/posts/2026-04-28-redoing-a-meta-analysis-from-scratch/</guid>
+      <pubDate>Tue, 28 Apr 2026 00:00:00 +0000</pubDate>
+      <category>Posts (ze sítí)</category>
+      <dc:language>en</dc:language>
+      <source url="https://www.linkedin.com/feed/update/urn%3Ali%3Ashare%3A7454914753266692097">LinkedIn</source>
+      <content:encoded><![CDATA[<p>Will our results change if we redo the meta-analysis from scratch?</p><p>We just pre-registered a big revision of our meta-analysis on beauty and professional success:</p><p>https://lnkd.in/dBSAB5N2</p><p>The current paper follows standards commonly used in economics meta-analysis. For the revision we decided to do the search and data collection differently, following multidisciplinary systematic-review practice: a librarian-designed multi-database search, dual screening, coding reliability checks, PRISMA documentation, and a full audit trail.</p><p>A nice side effect is that this becomes a natural experiment on our own work. Honestly, I&#x27;m curious how much it will move the results.</p><p>The amazing Martina Lušková joined the team to help lead study selection and coding, and we are working with a librarian at the University of Amsterdam on the search strategy.</p><p>In the current version we find that the effect of beauty on earnings is smaller than commonly thought once you correct for publication bias and p-hacking, and smaller still when more weight is given to studies that control for cognitive ability. The one clear exception is sex workers. For politicians, the beauty premium mostly goes away after correction.</p><p>To make the comparison fully transparent, we also uploaded the current paper, data, and code to the registration.</p><p>We should do much more pre-registration in observational research. It doesn&#x27;t fully prevent p-hacking, but it helps a lot and the cost is low.</p><p>Co-authored with Tomas Havranek, František Bartoš, Xenia Bortnikova, and Martina Lušková</p>]]></content:encoded>
+    </item>
+    <item>
+      <title>Not an easy task, but in a new note just out in the Journal of Economic Surveys we try to set a basic floor…</title>
+      <link>https://meta-analysis.cz/komentare/posts/2026-04-22-note-in-journal-of-economic-surveys/</link>
+      <guid isPermaLink="true">https://meta-analysis.cz/komentare/posts/2026-04-22-note-in-journal-of-economic-surveys/</guid>
+      <pubDate>Wed, 22 Apr 2026 00:00:00 +0000</pubDate>
+      <category>Posts (ze sítí)</category>
+      <dc:language>en</dc:language>
+      <source url="https://www.linkedin.com/feed/update/urn%3Ali%3Ashare%3A7452590050799853568">LinkedIn</source>
+      <content:encoded><![CDATA[<p>Not an easy task, but in a new note just out in the Journal of Economic Surveys we try to set a basic floor on the use of AI in meta-analysis.</p><p>https://lnkd.in/dZNGRfJb</p><p>Short version:</p><p>🔹 Human leadership. Humans direct the search, coding, and analysis, and record where they override the AI.</p><p>🔹 Human accountability. AI cannot be a co-author. If your name is on the paper, the errors are yours.</p><p>🔹 Human auditing. AI can serve as one of the coders, as long as humans audit at least 10% of screening records and 10% of coded studies (or 100 and 20, whichever is larger), and report a measure of agreement.</p><p>🔹 Human disclosure. Anything that shapes search, screening, coding, analysis, or conclusions should be disclosed, with prompts and model versions saved.</p><p>The effort was led by the amazing Nikolai Cook. It will be periodically updated at maer-net.org.</p><p>For the full discussion of how we agreed on these guidelines (scroll down to comments):
+https://lnkd.in/dME6se-W</p>]]></content:encoded>
     </item>
     <item>
       <title>Japonský vládní dluh: katastrofa, nebo vlastně chytrý byznys?</title>
@@ -166,6 +271,44 @@
 <p>Osobně obdivuji odvahu, s jakou Japonci v roce 2012 nabrali kalkulované riziko, aby oddálili rozpad cenové a finanční stability. Přesně tohle naše ČNB odmítla udělat v roce 2017. Ale japonské zapákování je moc i na mě: už nejde, aby Bank of Japan v budoucnu výrazněji zvýšila úroky. Vypadá to jako sashimi zdarma, ale i Japonci budou muset nakonec zaplatit účty: inflací a finanční represí.</p>]]></content:encoded>
     </item>
     <item>
+      <title>It was fun to be (a very small) part of the amazing team led by Abel Brodeur. The numbers look great, but…</title>
+      <link>https://meta-analysis.cz/komentare/posts/2026-04-02-brodeur-team-reproducibility-numbers/</link>
+      <guid isPermaLink="true">https://meta-analysis.cz/komentare/posts/2026-04-02-brodeur-team-reproducibility-numbers/</guid>
+      <pubDate>Thu, 02 Apr 2026 00:00:00 +0000</pubDate>
+      <category>Posts (ze sítí)</category>
+      <dc:language>en</dc:language>
+      <source url="https://www.linkedin.com/feed/update/urn%3Ali%3Ashare%3A7445392769788968960">LinkedIn</source>
+      <content:encoded><![CDATA[<p>It was fun to be (a very small) part of the amazing team led by Abel Brodeur. The numbers look great, but note that we replicate papers in journals that have mandatory data and code sharing. So: share your data and code! And while you&#x27;re at it, pre-register your papers and upload pre-analysis plans. This is the way!</p>]]></content:encoded>
+    </item>
+    <item>
+      <title>Top 7 non-fiction books I recommend. 📚</title>
+      <link>https://meta-analysis.cz/komentare/posts/2026-03-28-top-7-non-fiction-books/</link>
+      <guid isPermaLink="true">https://meta-analysis.cz/komentare/posts/2026-03-28-top-7-non-fiction-books/</guid>
+      <pubDate>Sat, 28 Mar 2026 00:00:00 +0000</pubDate>
+      <category>Posts (ze sítí)</category>
+      <dc:language>en</dc:language>
+      <source url="https://www.linkedin.com/feed/update/urn%3Ali%3Ashare%3A7443641057592033280">LinkedIn</source>
+      <content:encoded><![CDATA[<p>Top 7 non-fiction books I recommend. 📚</p><p>Not an endorsement of everything in these books, but I learned a great deal about economics, history, and politics.</p><p>1️⃣ Bourgeois Equality (McCloskey): How the West got rich.
+2️⃣ In the Garden of Beasts (Larson): An American family in 1930s Berlin, watching a society die.
+3️⃣ Recession (Tyler Goodspeed): Why economies shrink. Excellent new book.
+4️⃣ Cicero (Everitt): The life of arguably the greatest statesman the West ever produced.
+5️⃣ Red Dawn Over China (Dikötter): How China became communist.
+6️⃣ The Lives of the Caesars (Suetonius): The most readable classical text I know. Reads like a novel.
+7️⃣ The Fiscal Theory of the Price Level (John H. Cochrane): A bold, rigorous book on modern macroeconomics.</p><p>What&#x27;s the best non-fiction book you&#x27;ve read this year?</p>]]></content:encoded>
+    </item>
+    <item>
+      <title>Two AI models dueling worked. Four models debating works better.</title>
+      <link>https://meta-analysis.cz/komentare/posts/2026-03-19-four-models-debating-works-better/</link>
+      <guid isPermaLink="true">https://meta-analysis.cz/komentare/posts/2026-03-19-four-models-debating-works-better/</guid>
+      <pubDate>Thu, 19 Mar 2026 00:00:00 +0000</pubDate>
+      <category>Posts (ze sítí)</category>
+      <dc:language>en</dc:language>
+      <source url="https://www.linkedin.com/feed/update/urn%3Ali%3Ashare%3A7440296636783960064">LinkedIn</source>
+      <content:encoded><![CDATA[<p>Two AI models dueling worked. Four models debating works better.</p><p>We updated our research audit protocol. The new version (MAD v2.0) uses ChatGPT, Claude, Gemini, and Grok in structured adversarial rounds:</p><p>1️⃣ Independent critique — no model sees the others, every claim grounded in the document.
+2️⃣ Cross-examination — each model attacks the weakest peer arguments.
+3️⃣ Final arbiter synthesizes what survived.</p><p>No code needed. Copy-paste prompts. Free model versions work (just register for each model).</p><p>Advanced users: the entire workflow can be automated via the models&#x27; APIs using frameworks like AutoGen, LangGraph, or CrewAI.</p><p>Use it for high-stakes documents: stress-testing your papers, grant proposals, referee reports.</p><p>Protocol (GitHub): 👉 https://lnkd.in/dRwKz63g</p>]]></content:encoded>
+    </item>
+    <item>
       <title>Když screening odhalí cukrovku u dítěte</title>
       <link>https://www.spreaker.com/episode/kdyz-screening-odhali-cukrovku-u-ditete-nema-smysl-se-vztekat-rika-tatinek-maleho-diabetika--70577203</link>
       <guid isPermaLink="true">https://www.spreaker.com/episode/kdyz-screening-odhali-cukrovku-u-ditete-nema-smysl-se-vztekat-rika-tatinek-maleho-diabetika--70577203</guid>
@@ -174,6 +317,26 @@
       <dc:language>cs</dc:language>
       <source url="https://www.spreaker.com/episode/kdyz-screening-odhali-cukrovku-u-ditete-nema-smysl-se-vztekat-rika-tatinek-maleho-diabetika--70577203">Diabetes Podcast</source>
       <content:encoded><![CDATA[<p>audio — <a href="https://www.spreaker.com/episode/kdyz-screening-odhali-cukrovku-u-ditete-nema-smysl-se-vztekat-rika-tatinek-maleho-diabetika--70577203">Diabetes Podcast</a></p>]]></content:encoded>
+    </item>
+    <item>
+      <title>Doporučuji všem rodičům včas testovat děti na cukrovku. Nám to bohužel vyšlo jednou pozitivní, ale díky tomu…</title>
+      <link>https://meta-analysis.cz/komentare/posts/2026-03-11-testujte-deti-na-cukrovku/</link>
+      <guid isPermaLink="true">https://meta-analysis.cz/komentare/posts/2026-03-11-testujte-deti-na-cukrovku/</guid>
+      <pubDate>Wed, 11 Mar 2026 00:00:00 +0000</pubDate>
+      <category>Posts (ze sítí)</category>
+      <dc:language>cs</dc:language>
+      <source url="https://www.linkedin.com/feed/update/urn%3Ali%3Ashare%3A7437416155155177472">LinkedIn</source>
+      <content:encoded><![CDATA[<p>Doporučuji všem rodičům včas testovat děti na cukrovku. Nám to bohužel vyšlo jednou pozitivní, ale díky tomu testu + moderní medicíně můžete nástup nemoci oddálit o několik let.</p><p>Včasný test = šance na roky navíc bez inzulinu.</p><p>Díky Barbora Berka a Natálie Chrástecká za skvělý přístup v Motole.</p><p>Díky Jan Hrušovský za hezký rozhovor s mým manželem, který poprvé na kameru mluvil o něčem jiném než o ekonomii (což je většinou velmi ... poutavé 😉 ).</p><p>https://lnkd.in/duWtcSbA</p>]]></content:encoded>
+    </item>
+    <item>
+      <title>Meta-analyses should try to correct not just for publication bias, but also for p-hacking.</title>
+      <link>https://meta-analysis.cz/komentare/posts/2026-03-09-correcting-for-p-hacking-too/</link>
+      <guid isPermaLink="true">https://meta-analysis.cz/komentare/posts/2026-03-09-correcting-for-p-hacking-too/</guid>
+      <pubDate>Mon, 09 Mar 2026 00:00:00 +0000</pubDate>
+      <category>Posts (ze sítí)</category>
+      <dc:language>en</dc:language>
+      <source url="https://www.linkedin.com/feed/update/urn%3Ali%3Ashare%3A7436800791929151488">LinkedIn</source>
+      <content:encoded><![CDATA[<p>Meta-analyses should try to correct not just for publication bias, but also for p-hacking.</p><p>Some estimates are more likely to be reported than others, so every good summary of research should correct for this publication bias. In case you&#x27;re wondering — yes, this can be done, there are dozens of methods and decades of research on this. There is even a great way to put these different correction techniques together: see RoBMA by František Bartoš and colleagues.</p><p>The problem is that these techniques assume that the reported estimates are individually unbiased. This is a strong assumption, as researchers can tweak models (consciously or unconsciously) to get more &quot;sensible&quot; results. This is called p-hacking. Most of us do it.</p><p>In our recent Nature Communications paper we show that under some forms of p-hacking, classical models correcting for publication bias can actually be more biased than a simple average of published estimates.</p><p>As far as I know, there are only two meta-analysis corrections for (some forms of) p-hacking: our MAIVE (from the Nature Comms paper) and RTMA by Maya Mathur. If you know of more, please let me know in the comments!</p><p>If you want to see MAIVE and RTMA applied, take a look at our meta-analysis of the beauty premium. Spoiler: apart from the sex industry, beauty doesn&#x27;t matter much in the labor market.</p>]]></content:encoded>
     </item>
     <item>
       <title>Mladí florbalisté zlatí na největším evropském turnaji!</title>
@@ -190,6 +353,30 @@
 <p>V základní skupině jsme si poradili s Libercem (7:2), Vyškovem (3:0) i Otrokovicemi (7:2). Velký respekt jsme měli z Mladé Boleslavi, která nás v minulých letech často porážela výrazným rozdílem. Tentokrát jsme však díky koncentrované hře a skvělému výkonu gólmana zvítězili 4:1. Skupinu jsme zakončili suverénní výhrou 5:0 nad tradičním soupeřem z Chodova. Postoupili jsme tak jako loni do finálové skupiny, kde jsme však dosud žádný zápas nevyhráli. Prokletí jsme zlomili hned na úvod proti brandýskému Falconu, který jsme zdolali 3:1 a zajistili si medaile.</p>
 <p>Následovali hlavní favorité: Plzeň a Bohemians. Oba týmy jsme znali z minulých let a zatím se nám je nepodařilo porazit. Plzeň hrála tvrdě a krásně vyhrocený zápas jsme zlomili až v posledních minutách. Ani Bohemka nám ve finále nic nedarovala. Ve skvělé atmosféře plné haly jsme si ale vypracovali dvougólový náskok, udrželi ho až do konce a mohli zvednout nad hlavu trofej pro vítěze turnaje.</p>
 <p>Florbal v Litomyšli si můžete kdykoli nezávazně vyzkoušet. Tréninky pro kluky i holky do 10 let jsou v úterý v 15:00 a v pátek ve 13:30 hodin; pro starší děti v pondělí 15:30, středu 15:30, pátek 15:00 hodin. Vždy v městské sportovní hale (za modrou školou). Stačí si přinést sálové boty, pití, kraťasy, tričko. Florbalku trenéři půjčí a též moje děti vás tam rády uvidí.</p>]]></content:encoded>
+    </item>
+    <item>
+      <title>A small experiment at home: our kids (8-12) were sick and bored, so we introduced them to Claude Code.</title>
+      <link>https://meta-analysis.cz/komentare/posts/2026-01-31-kids-and-claude-at-home/</link>
+      <guid isPermaLink="true">https://meta-analysis.cz/komentare/posts/2026-01-31-kids-and-claude-at-home/</guid>
+      <pubDate>Sat, 31 Jan 2026 00:00:00 +0000</pubDate>
+      <category>Posts (ze sítí)</category>
+      <dc:language>en</dc:language>
+      <source url="https://www.linkedin.com/feed/update/urn%3Ali%3AugcPost%3A7423363383665508352">LinkedIn</source>
+      <content:encoded><![CDATA[<p>A small experiment at home: our kids (8-12) were sick and bored, so we introduced them to Claude Code.</p><p>Two hours later, they had a working browser racing game set in our hometown. They did almost everything themselves; we helped with publishing it on GitHub.</p><p>The graphics are… charmingly 1980s. But it runs smoothly and it’s fun.</p><p>Takeaway for me: if you’re a researcher, it’s worth setting aside an hour to play with these tools -- you might be surprised what you can do now.</p><p>(Link to the game in the first comment!)</p><p>#ResearchTools #ClaudeCode #Litomysl</p>]]></content:encoded>
+    </item>
+    <item>
+      <title>A browser-based tool for correcting publication bias and p-hacking.</title>
+      <link>https://meta-analysis.cz/komentare/posts/2026-01-27-browser-tool-for-publication-bias/</link>
+      <guid isPermaLink="true">https://meta-analysis.cz/komentare/posts/2026-01-27-browser-tool-for-publication-bias/</guid>
+      <pubDate>Tue, 27 Jan 2026 00:00:00 +0000</pubDate>
+      <category>Posts (ze sítí)</category>
+      <dc:language>en</dc:language>
+      <source url="https://www.linkedin.com/feed/update/urn%3Ali%3AugcPost%3A7421813900372918272">LinkedIn</source>
+      <content:encoded><![CDATA[<p>A browser-based tool for correcting publication bias and p-hacking.</p><p>We built EasyMeta.org to make bias-corrected meta-analysis easier to run. Upload your dataset and benchmark your conclusions against modern corrections -- directly in your browser.</p><p>Why: Selective reporting can distort what enters the literature and how results are reported, but applying corrections often requires specialized software or a complex workflow.</p><p>What it offers:
+• Bias corrections: MAIVE (our Nature Communications method) plus benchmarks like PET-PEESE.
+• Robust inference: options for clustering and different data structures.
+• Minimal setup: free, open, no installation, no coding.
+• Reproducibility: export R code for the results you generate.</p><p>Swipe through the four slides to see the workflow.</p><p>Try it with your own data: 👉 easymeta.org (https://www.easymeta.org/)</p><p>With Pedro Bom, Tomas Havranek, Heiko Rachinger, and Petr Čala</p><p>#MetaAnalysis #OpenScience #ResearchMethods #Econometrics #Statistics</p>]]></content:encoded>
     </item>
     <item>
       <title>Co ukazují stovky studií o investování: akcie vycházejí nejlépe</title>
@@ -252,6 +439,37 @@
 <p>Nemáte-li předplatné, duel snadno provedete manuálně. Otevřete si vedle sebe dva či více zdarma dostupných AI modelů. Všem dáte stejné informace (soubory, fotky), ale protichůdnou roli. Prvnímu řeknete, aby byl kreativní vizionář a nápad rozvíjel, druhému přikážete být ďáblovým advokátem, který má za úkol najít každou logickou díru. Pak jednotlivé odpovědi kopírujete mezi modely s tím, že se jedná o výstup jiného AI s danou rolí. Po několika kolech už má smysl začít číst výstupy.</p>
 <p>Takový duel, kdy jeden model bojuje s druhým, ověřuje, útočí, opakuje, znovu a znovu, se nehodí pro všechny každodenní otázky. Ale z naší zkušenosti je nepostradatelný pro důležité profesionální úkoly. Ani tak za vás AI vaši práci neudělá. Ale pracujete-li u počítače a naučíte-li se využívat duelový přístup (byť třeba jen k hledání chyb ve vlastních výstupech), budete produktivnější a přesnější než drtivá většina vašich kolegů.</p>
 <p>Autoři jsou ekonomové</p>]]></content:encoded>
+    </item>
+    <item>
+      <title>Jak vytěžit z AI maximum?</title>
+      <link>https://meta-analysis.cz/komentare/posts/2025-12-29-jak-vytezit-z-ai-maximum/</link>
+      <guid isPermaLink="true">https://meta-analysis.cz/komentare/posts/2025-12-29-jak-vytezit-z-ai-maximum/</guid>
+      <pubDate>Mon, 29 Dec 2025 00:00:00 +0000</pubDate>
+      <category>Posts (ze sítí)</category>
+      <dc:language>cs</dc:language>
+      <source url="https://www.linkedin.com/feed/update/urn%3Ali%3Ashare%3A7411382256684060672">LinkedIn</source>
+      <content:encoded><![CDATA[<p>Jak vytěžit z AI maximum?
+Nechte modely bojovat mezi sebou. 🧠🤖</p><p>V dnešních Hospodářské noviny ukazujeme jednoduchý, ale účinný postup, jak pracovat efektivněji s umělou inteligencí.</p><p>Místo jedné odpovědi: duel AI modelů.</p><p>ChatGPT vs. Gemini (nebo jiná kombinace).
+🔹 Jeden model dostane roli kreativního vizionáře, který nápad rozvíjí.
+🔹 Druhý je ďáblův advokát – systematicky hledá faktické i logické chyby.
+🔹 Modely si navzájem napadají výstupy a opravují se.</p><p>Výsledek?
+👉 Méně halucinací.
+👉 Tvrdší „stress test“ nápadů.
+👉 Kvalitnější výstup než od jednoho modelu.</p><p>Nemáte předplatné ChatGPT?
+Žádný problém. Duel zvládnete i manuálně – stačí otevřít vedle sebe dva zdarma dostupné AI modely, dát jim stejná data a protichůdné role a jejich odpovědi mezi sebou křížit. Po několika kolech už dává smysl výstupy číst.</p><p>🔗 Odemčený článek v HN:
+https://lnkd.in/dBbUetrP
+🔗 Duelový protokol (prompt + návod):
+https://lnkd.in/dRwKz63g</p>]]></content:encoded>
+    </item>
+    <item>
+      <title>I still love Slovakia and Gemer. When our kids were born, one of the first things my husband did was go to…</title>
+      <link>https://meta-analysis.cz/komentare/posts/2025-12-23-slovakia-and-gemer/</link>
+      <guid isPermaLink="true">https://meta-analysis.cz/komentare/posts/2025-12-23-slovakia-and-gemer/</guid>
+      <pubDate>Tue, 23 Dec 2025 00:00:00 +0000</pubDate>
+      <category>Posts (ze sítí)</category>
+      <dc:language>en</dc:language>
+      <source url="https://www.linkedin.com/feed/update/urn%3Ali%3Ashare%3A7409201113406603264">LinkedIn</source>
+      <content:encoded><![CDATA[<p>I still love Slovakia and Gemer. When our kids were born, one of the first things my husband did was go to the Slovak embassy in Prague and arrange Slovak citizenship for them. I hope I’m wrong in this interview.</p>]]></content:encoded>
     </item>
     <item>
       <title>„Slovensko zostane len liahňou talentov a vidiekom Prahy,“ hovorí najmladšia profesorka na Karlovej univerzite</title>
@@ -326,6 +544,17 @@
 </ul>]]></content:encoded>
     </item>
     <item>
+      <title>For deep analytical work, I don’t use one AI model. I make them duel.</title>
+      <link>https://meta-analysis.cz/komentare/posts/2025-12-12-i-make-ai-models-duel/</link>
+      <guid isPermaLink="true">https://meta-analysis.cz/komentare/posts/2025-12-12-i-make-ai-models-duel/</guid>
+      <pubDate>Fri, 12 Dec 2025 00:00:00 +0000</pubDate>
+      <category>Posts (ze sítí)</category>
+      <dc:language>en</dc:language>
+      <source url="https://www.linkedin.com/feed/update/urn%3Ali%3Ashare%3A7405164270306504704">LinkedIn</source>
+      <content:encoded><![CDATA[<p>For deep analytical work, I don’t use one AI model. I make them duel.</p><p>For thinking-intensive tasks (research, strategy, due diligence) a single AI model often converges too fast. It sounds convincing but skips edge cases and hidden assumptions.</p><p>So Tomas Havranek and I formalized a workflow to create structured disagreement:</p><p>🔹 Anchor (ChatGPT): Writes a first-pass assessment grounded in the files. 🔹 Audit (Gemini): Actively tries to break it (logic gaps, counterexamples, failure modes). ChatGPT defends. The duel iterates. 🔹 Synthesis (You): You analyze the conflict to see what survives.</p><p>The output is not “AI approval.” It is a clearer map of risks, boundary conditions, and what you must verify.</p><p>Advanced users: You can swap the auditor for Claude or automate this via API (MAD).</p><p>For everyone else: no code needed. You can copy-paste the protocol and try it via ChatGPT Agent.</p><p>Protocol (GitHub): 👉 https://lnkd.in/dRwKz63g
+Research example: 👉 https://lnkd.in/dw98RKuW</p><p>#AI #DecisionMaking #CriticalThinking #Productivity #Research</p>]]></content:encoded>
+    </item>
+    <item>
       <title>MAIVE Is Now on CRAN</title>
       <link>https://meta-analysis.cz/komentare/maer-maive-cran/</link>
       <guid isPermaLink="true">https://meta-analysis.cz/komentare/maer-maive-cran/</guid>
@@ -343,6 +572,20 @@
 <p>Many thanks to <strong>Petr Čala</strong> for preparing the CRAN release and building the EasyMeta interface.</p>]]></content:encoded>
     </item>
     <item>
+      <title>🔎 MAIVE is now on CRAN: Better tools for trustworthy meta-analysis</title>
+      <link>https://meta-analysis.cz/komentare/posts/2025-12-10-maive-is-now-on-cran/</link>
+      <guid isPermaLink="true">https://meta-analysis.cz/komentare/posts/2025-12-10-maive-is-now-on-cran/</guid>
+      <pubDate>Wed, 10 Dec 2025 00:00:00 +0000</pubDate>
+      <category>Posts (ze sítí)</category>
+      <dc:language>en</dc:language>
+      <source url="https://www.linkedin.com/feed/update/urn%3Ali%3Ashare%3A7404420382004539392">LinkedIn</source>
+      <content:encoded><![CDATA[<p>🔎 MAIVE is now on CRAN: Better tools for trustworthy meta-analysis</p><p>Meta-analysis is one of the key pillars of evidence-based research. It combines results from many studies to give us a clearer, more reliable answer.</p><p>But in observational research, studies can sometimes appear too precise --not because the evidence is strong, but because of method choices, selective reporting, or p-hacking. This can distort the final meta-analytic conclusion.
+MAIVE helps address this.</p><p>You can now install MAIVE directly in R:</p><p>install.packages(&quot;MAIVE&quot;)</p><p>Or try it instantly in your browser (no coding needed):
+ 🖥️ https://www.easymeta.org
+More details:
+ 📦 CRAN package: https://lnkd.in/dQ7XjiAq</p><p> 📄 Nature Communications article: https://lnkd.in/eFfrP6H2</p><p> 📰 Blog overview: https://lnkd.in/ejkgbU6X</p><p>A big thank-you to Petr Čala, who built the MAIVE web app and prepared the CRAN release. His work makes high-quality meta-analysis methods accessible.</p><p>#metaanalysis #OpenScience #researchmethods #RStats</p>]]></content:encoded>
+    </item>
+    <item>
       <title>Highlights from the 2025 MAER-Net Colloquium in Ottawa</title>
       <link>https://meta-analysis.cz/komentare/maer-ottawa-colloquium/</link>
       <guid isPermaLink="true">https://meta-analysis.cz/komentare/maer-ottawa-colloquium/</guid>
@@ -355,6 +598,16 @@
 <p>Our sincere thanks go to Abel and the University of Ottawa for their gracious and generous hospitality. Abel and his team offered a master class in hosting research conferences: from meticulous planning and catering to expert tour guiding and insightful commentary on others’ research.</p>
 <p>We also thank our core members for their continued support and willingness to share their work, and our brilliant young researchers for their eagerness to learn and to further develop meta-analytic methods. See the Ottawa Colloquium website for more details.</p>
 <p>Lastly, we are pleased to announce that the 2026 MAER-Net Colloquium will be held at Chemnitz University of Technology, Germany, hosted by Sebastian Gechert and his team. Chemnitz is the 2025 European Capital of Culture, known for its heritage as a powerhouse of early industrialisation in Central Europe, Art Nouveau architecture, its changeful history before, during and after the German partition, and its recent reinvention as a city of subculture and indie-rock-music. The region around Chemnitz, including the Ore Mountains is characterized by a high density of medieval, Renaissance and Baroque castles as well as picturesque hiking and cycling routes. We are very much looking forward to seeing you in Chemnitz, September 23-25, 2026. See the <a href="https://www.maer-net.org/2026-chemnitz">Chemnitz Colloquium website</a> for more details and updates.</p>]]></content:encoded>
+    </item>
+    <item>
+      <title>🔎 New in Nature Communications: “Spurious precision in meta-analysis of observational research.”</title>
+      <link>https://meta-analysis.cz/komentare/posts/2025-10-26-spurious-precision-nature-communications/</link>
+      <guid isPermaLink="true">https://meta-analysis.cz/komentare/posts/2025-10-26-spurious-precision-nature-communications/</guid>
+      <pubDate>Sun, 26 Oct 2025 00:00:00 +0000</pubDate>
+      <category>Posts (ze sítí)</category>
+      <dc:language>en</dc:language>
+      <source url="https://www.linkedin.com/feed/update/urn%3Ali%3Ashare%3A7388172095639265282">LinkedIn</source>
+      <content:encoded><![CDATA[<p>🔎 New in Nature Communications: “Spurious precision in meta-analysis of observational research.”</p><p>Sometimes studies appear too precise because their reported uncertainty reflects method choices rather than real evidence strength. This can mislead meta-analyses.</p><p>We introduce MAIVE, a simple way to detect and correct such bias, including publication bias and p-hacking.</p><p>🖥️ Try it in your browser (free, no coding): https://www.easymeta.org</p><p> 📄 Paper: https://lnkd.in/eFfrP6H2</p><p> 📰 Blog: https://lnkd.in/ejkgbU6X</p><p>— Kudos to my great co-authors Pedro Bom, Tomas Havranek, and Heiko Rachinger</p><p> #metaanalysis #researchmethods #OpenScience #NatureCommunications</p>]]></content:encoded>
     </item>
     <item>
       <title>Babiš si vezme stamiliardy z ČNB. Zůstane národní banka nezávislá?</title>
@@ -4642,6 +4895,42 @@
 <p>Křivku úspor posouvají doprava následující faktory: i) demografické změny, konkrétně dočasně vyšší podíl obyvatel v produktivním věku, kteří vydělávají více, než utrácejí, ii) zvyšování příjmové nerovnosti, neboť bohatší lidé spoří větší část svého příjmu a iii) příliv úspor ze zemí zejména z východní Asie, které se v posledních dekádách integrovaly do světové ekonomiky (byť tento faktor způsobuje v našem jednoduchém modelu změny, jejichž vysvětlení jde za rámec tohoto textu).</p>
 <p>Křivku investic posouvají doleva tyto vlivy: i) nižší relativní ceny kapitálových statků, které způsobují, že stejný projekt lze pořídit levněji, což snižuje absolutní výdaje na investice, ii) komplikování investic do infrastruktury a bydlení díky místním limitům na výstavbu a iii) vlivem velké recese náhle výrazně pesimističtější očekávání budoucího hospodářského růstu, a tedy i výnosnosti investic. Za povšimnutí stojí, že žádný z těchto faktorů nemají centrální banky pod kontrolou, a musejí tedy rovnovážnou sazbu brát jako zvnějšku daný parametr – jakkoli by si přály, aby toto číslo bylo co nejvyšší a ony tak nemusely řešit nestandardní měnovou politiku poblíž nulové hranice sazeb! Rovnovážná reálná sazba je přirozeně významným parametrem zároveň i významným zdrojem nejistoty také pro měnovou politiku ČNB.</p>
 <p>Česká národní banka přitom ve svých prognózách předpokládá, že ve velmi dlouhém období, tedy po odeznění všech dočasných ekonomických šoků, se rovnovážné reálné sazby vracejí k úrovni 1 %. Nicméně řada odhadů naznačuje, že například mezi roky 2012 a 2013 domácí rovnovážná reálná sazba zřetelně poklesla dokonce i pod tuto úroveň. Otázkou je, zda se s obnoveným růstem české ekonomiky a zlepšeným sentimentem firem i domácností začala rovnovážná reálná sazba již opět zvyšovat a zda se výhledově bude nacházet na předpokládané úrovni 1 %. O této zásadní otázce probíhá v současnosti uvnitř ČNB debata a pracuje se na hlubším empirickém odhadu dynamiky tohoto parametru v posledních letech. Výsledky těchto analýz samozřejmě ČNB veřejnosti včas představí, nicméně na základních závěrech tohoto textu toho ani přesnější odhady příliš nezmění.</p>]]></content:encoded>
+    </item>
+    <item>
+      <title>Z mateřské zamíří rovnou do Berkeley</title>
+      <link>https://meta-analysis.cz/komentare/zi-iv-hn-berkeley/</link>
+      <guid isPermaLink="true">https://meta-analysis.cz/komentare/zi-iv-hn-berkeley/</guid>
+      <pubDate>Mon, 27 Jan 2014 00:00:00 +0000</pubDate>
+      <category>Rozhovory</category>
+      <dc:language>cs</dc:language>
+      <source url="https://archiv.hn.cz/c1-61619400-z-materske-zamiri-rovnou-do-berkeley">Hospodářské noviny</source>
+      <content:encoded><![CDATA[<p>Docečetla jsem se, že v letošním roce máte v plánu stáž v Berkley – platí to, když se doma staráte o malé děti? Berete je s sebou?</p>
+<p>Do Berkeley jsme pozvaní společně s manželem, který se také věnuje ekonomickému výzkumu, takže jsme se rozhodli vzít děti s sebou a hlídat je střídavě na směnný provoz. Samozřejmě je to takhle komplikovanější, ale dceři jsou dva roky a synovi teprve 6 měsíců, takže jiné řešení není, pokud takovou příležitost chceme využít.</p>
+<p>Jak jste se k této stáži dostala a čemu se tam budete věnovat – budete přednášet, pracovat na nějakém výzkumu? Potřebovala bych rozklíčovat „s cílem rozšířit probíhající spolupráci FSV s univerzitou v Berkley.“</p>
+<p>Náš institut se společně s univerzitou v Berkeley a dalšími zahraničními univerzitami účastí projektu ekonomického modelování dopadů klimatických změn. U nás tento projekt vede profesor Janda, se kterým dlouhodobě spolupracuji; on sám působil v Berkeley delší dobu a díky jeho doporučení se nám podařilo pozvání získat. Sama se budu zejména věnovat výzkumu, a to práci na výpočtu společenských nákladů emisí skleníkových plynů (např. jakou škodu nebo přínos společnosti způsobí emise jedné tuny oxidu uhličitého). To je důležité pro určení optimálního zdanění emisí, se kterým už několik států začalo (například Austrálie).</p>
+<p>Jak často jste jezdila přednášet na konference do zahraničí (před mateřskou dovolenou)? O jaké téma vašeho výzkumu je v zahraničí největší zájem?</p>
+<p>Obvykle jezdím na 3-4 mezinárodní konference za rok. V zahraničí je obvykle největší zájem o meta-analýzu, což znamená kvantitativní souhrn literatury na určité téma (a meta-analýza je také hlavní důvod, proč jedeme do Berkeley). Například společenské náklady emisí skleníkových plynů, které jsem zmínila, jsou v literatuře často odhadovány, ale jednotlivé výsledky se velmi liší. Není potom jasné, který odhad je vhodné využít v praxi ke stanovení tzv. uhlíkové daně. Statistické nástroje meta-analýzy nám pomáhají tyto rozdílné odhady shrnout, odfiltrovat různá zkreslení (třeba i ideologická), a poskytnout tvůrcům hospodářské politiky robustní výsledky. Meta-analýza pochází původně z lékařského výzkumu, odkud se poměrně nedávno rozšířila také do ekonomie.</p>
+<p>Můžete mi prosím víc laicky vysvětlit, čemu se ve svém výzkumu věnujete? („studentka se zaměřuje na aplikace metod výpočtu hraniční efektivity a meta-analýzy zejména v oblastech bankovnictví, energetiky a přímých zahraničních investic.) Nejlépe na nějakém konkrétním a polopatickém příkladu.</p>
+<p>Můj nejcitovanější článek je meta-analýza vlivu zahraničních investic na produktivitu domácích firem. Obvykle se předpokládá, že tyto dopady jsou kladné, například proto, že domácí firmy se od investorů učí novým technologiím a postupům (třeba i tak, že kopírují jejich praktiky). I z toho důvodu mnoho států poskytuje pobídky pro zahraniční investice. Když ale chcete vliv zahraničních investic na domácí produktivitu odhadnout na reálných datech z ekonomiky, dostanete rozdílné výsledky v závislosti na použité metodologii. V našem článku jsme posbírali tisíce odhadů tohoto efektu a po ošetření o různá zkreslení se ukázalo, že zahraniční investice v průměru skutečně významně přispívají ke zvyšování domácí produktivity. Některé typy investic jsou navíc prospěšnější než jiné; velmi přínosné jsou například společné projekty zahraničních a domácích firem, kde spíše dochází k difúzi znalostí.</p>
+<p>Můžete mi rozklíčovat, na čem spolupracujete s týmem ČNB? („V současnosti také spolupracuje s výzkumníky České národní banky na projektu zabývajícím se empirickou analýzou parametrů pro kalibraci DSGE modelů.“)</p>
+<p>ČNB používá pro svoje prognózy velmi sofistikovaný model celé ekonomiky (takzvaný DSGE model), který je založen na nejlepší zahraniční praxi. Model vyžaduje řadu předpokladů o chování lidí; tyto předpoklady jsou často přejaty ze zahraniční literatury, protože neexistuje relevantní výzkum na českých datech. V rámci projektu, na kterém se podílím s kolegy z ČNB, se snažíme mimo jiné zjistit, jestli by nebylo vhodné některé tyto předpoklady pro české prostředí upravit. Konkrétním příkladem může být předpoklad o reakci spotřeby lidí na změny úrokových měr, o kterém neexistuje shoda ani v zahraničí.</p>
+<h2>O IES</h2>
+<p>Pro jaké studenty je IES – jakou motivaci ke studiu musí mít, aby byli na této škole spokojení? Může způsob výuky vyhovovat někomu, kdo chce být managerem či ředitelem v privátní sféře?</p>
+<p>Spokojený nebude ten, kdo je zvyklý vybírat si v životě vždy tu nejsnazší cestu. Ale myslím, že takoví studenti si k nám přihlášku ani nedávají, protože dobře vědí, že naše studium je náročné. Uchazeč o přijetí musí být především připraven tvrdě pracovat. Absolventi IES nacházejí uplatnění v celé řadě oborů, od akademického výzkumu (což je ale spíše výjimka) přes analytické pozice až ke konzultantským a manažerským funkcím. Studium ekonomie, které je u nás koncipováno podle západního vzoru, má studenta zejména naučit myslet a rychle se orientovat ve složité problematice. To jsou také schopnosti, které zaměstnavatelé všude na světě od špičkových zaměstnanců vyžadují.</p>
+<p>IES je velmi internacionální škola – v čem je to nejvíc poznat?</p>
+<p>Velká většina kurzů je v angličtině a na magisterském stupni je velké procento studentů ze zahraničí. Prakticky každý student také vyjede alespoň na půl roku na nějakou kvalitní školu v Evropě, ale třeba i do USA nebo Austrálie, případně na stáž do nějaké nadnárodní instituce, jako je třeba Světová banka. Velké množství absolventů bakalářského studia pokračuje v dalším studiu v zahraničí; někdy se vrátí zpět pro doktorské studium. Třeba jeden můj současný spolužák má magisterský titul z Oxfordu, další z Cambridge.</p>
+<p>Kdo pro vás na IES byli klíčoví přednášející, kteří vás nasměrovali?</p>
+<p>Už jsem zmínila Karla Jandu, díky kterému jsem se dostala ke svému současnému výzkumu. Velmi inspirující přednášející je také například Michal Mejstřík, člen NERV odpovědný za strategii konkurenceschopnosti ČR, Kateřina Šmídková, ředitelka ekonomického výzkumu v ČNB, nebo Oldřich Dědek, národní koordinátor pro zavedení eura. Řada dalších přednášejících má zkušenosti ze zahraničí, například z Mezinárodního měnového fondu nebo Evropské centrální banky.</p>
+<p>Sama vedete na IES diplomový seminář – jací jsou tamní studenti, vidíte mezi nimi talenty, kteří se se svým tématem a způsobem vědecké práce mohou dostat na stránky takových časopisů jako Journal of International Economics? Můžete uvést příklady jmen a témat?</p>
+<p>Na výuce v diplomovém semináři se podílím velmi ráda, protože mi to umožňuje každý rok sledovat od píky vznik prací, které jsou ve své většině velmi dobré a často jsou následně publikované. Jejich úroveň také v čase rychle roste; co bylo před 7 lety standardní diplomovou prací, by dnes nemuselo být obhájeno. Kvalitních prací máme velmi mnoho, a je tak těžké vybrat nějaké jméno. Ale například Marek Rusnák, který se věnuje prognózování a kterého jsme měli na semináři před časem, už je jedním z nejlépe publikujících českých ekonomů a před rokem získal titul Mladý ekonom České společnosti ekonomické.</p>
+<p>Snažím se postihnout a zjistit, v čem je IES tak specifický – mám zprávy, že je to spíš komorní škola, dělá se tam věda... pokud by vás napadlo, jak a čím by se dala vystihnout originalita této školy, určitě napište.</p>
+<p>Vedení IES se snaží co nejvíce se přiblížit stylu, jak je ekonomie vyučována na dobrých školách v Americe nebo západní Evropě. Kromě CERGE, což je ale čistě doktorský program, si nemyslím, že by se o toto některá česká škola reálně snažila. Můžete se například podívat, jaké procento výuky na jiných školách probíhá v anglickém jazyce a jestli vyučující mají nějaké zahraniční zkušenosti. Velmi se také liší výzkumné výstupy. Na většině škol v ČR se publikuje obvykle ve sbornících nebo lokálních časopisech, zatímco pedagogové IES publikují převážně v zahraničních časopisech, a tím pomáhají udávat tempo profese. Například podle mezinárodního hodnocení ekonomického výzkumu RePEc jsou mezi 10 nejlepšími českými ekonomy 3 vyučující IES (ostatní jsou z CERGE nebo ČNB, http://ideas.repec.org/top/top.czech.html).</p>
+<p>Jaký předmět nebo fáze studia je pro studenty nejnáročnější?</p>
+<p>Zcela určitě matematická analýza vyučovaná profesory z Matfyzu, jejímiž čtyřmi semestry si musí projít každý bakalář. Dosud vzpomínám na dlouhé probdělé noci po přednáškách, kdy jsem se snažila pochopit důkaz nějaké věty. Potom si ale řeknete, že když jste zvládla toto, zvládnete v životě už všechno.</p>
+<p>Jak je to na IES s kontakty na budoucí zaměstnavatele a praxi? Je to tak, že například ČNB si na škole vyhlíží své budoucí analytiky a že většina studentů je „rozebraná“ ještě před promocí? Nebo se studenti spíše věnují studiu a do firem jdou až po promoci?</p>
+<p>Existuje mýtus, že absolvent bez praxe nemá na pracovním trhu šanci. To možná platí pro některé profese, ale pokud chcete pracovat v kreativním zaměstnání, na které Vás IES připravuje, vyplatí se věnovat škole naplno do posledního ročníku. Nevím, že by někdo ze spolužáků měl problém najít si odpovídající zaměstnání – a to jsem promovala v roce 2009, kdy vrcholila ekonomická krize. Je ale pravda, že spousta studentů se už při studiu podílí na různých projektech, například práci pro NERV nebo různé poradenské firmy, a obvykle mají o svém zaměstnání jasno už dlouho před ukončením studia.</p>
+<p>Jak vidíte svoji budoucnost – na IES, na CERGE-EI, ve světě?</p>
+<p>To ukáže čas a příležitosti, které se naskytnou jak mě, tak manželovi. Příštích pár let se ale zřejmě stěhovat nebudeme, kvůli dětem.</p>]]></content:encoded>
     </item>
   </channel>
 </rss>

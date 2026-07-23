@@ -117,13 +117,12 @@ HUB_DESC = ("Publicistika Tomáše Havránka a Zuzany Havránkové: komentáře 
 # What the reader sees first. The sentence about full text and original sources is true
 # and worth saying to a crawler, but it delays the actual list, so it stays in HUB_DESC
 # (the meta description) and off the page.
-# The feed deliberately carries the published journalism only: back-filling 22 social
-# posts would surface as 22 "new" entries in every subscriber's reader. It therefore
-# needs its own description rather than the hub's, which now mentions those posts.
-FEED_DESC = ("Publicistika Tomáše Havránka a Zuzany Havránkové: komentáře pro celostátní "
-             "média, sloupky pro litomyšlskou Lilii a rozhovory, v plném znění. Kratší "
-             "příspěvky ze sítí jsou mimo tento kanál, na "
-             "https://meta-analysis.cz/komentare/posts/.")
+# The feed carries the posts too, now that each has a page of its own rather than an
+# anchor. It keeps its own wording only because the hub description says more about how
+# the archive stores its texts than a channel blurb needs to.
+FEED_DESC =("Publicistika Tomáše Havránka a Zuzany Havránkové: komentáře pro celostátní "
+             "média, sloupky pro litomyšlskou Lilii, rozhovory a kratší příspěvky ze "
+             "sítí, v plném znění.")
 HUB_LEDE = ("Publicistika Tomáše Havránka a Zuzany Havránkové: komentáře pro celostátní "
             "média, sloupky pro litomyšlskou Lilii, rozhovory a kratší příspěvky ze sítí.")
 
@@ -481,7 +480,7 @@ def shell(title, desc, canonical, jsonld, body, active, extra_head="", lang="cs"
       <a href="{PATH}/llms.txt">llms.txt</a> ·
       <a href="{PATH}/index.json">index.json</a> (metadata for every item, full text where available) ·
       <a href="{PATH}/all.md">all.md</a> (every text in one file) ·
-      <a href="{PATH}/feed.xml">RSS</a>. The Markdown source of each textual item is in
+      <a href="{PATH}/feed.xml">RSS</a>. The Markdown source of each item is in
       <a href="{PATH}/src/">/komentare/src/</a>. Text and metadata may be freely
       indexed, quoted and used for research, with attribution to the original outlet.</p>
   </div>
@@ -814,16 +813,12 @@ def write_index(items, key=None):
         # it into a headline the author never wrote.
         if SOCIAL_JSON.exists():
             _sp = json.loads(SOCIAL_JSON.read_text(encoding="utf-8"))
-            _seen = {}
-            for _p in sorted(_sp, key=lambda p: p.get("datetime", p["date"])):
-                _c = _seen[_p["date"]] = _seen.get(_p["date"], 0) + 1
-                _p["anchor"] = _p["date"] if _c == 1 else f"{_p['date']}-{_c}"
             _sp.sort(key=lambda p: p.get("datetime", p["date"]), reverse=True)
             if _sp:
                 _n = _sp[0]
                 counts += (f'      <p class="latest-post">Nejnovější příspěvek ze sítí, '
                            f'{esc(cs_date(_n["date"]))}: „{esc(_headline(_n["text"]))}“ — '
-                           f'<a href="{PATH}/posts/#{esc(_n["anchor"])}">celý příspěvek</a>'
+                           f'<a href="{PATH}/posts/{esc(_n["slug"])}/">celý příspěvek</a>'
                            f'</p>\n')
 
     body = (f'    <div class="lede">\n      <h1>{esc(title)}</h1>\n'
@@ -849,7 +844,7 @@ def write_feed(items, social=()):
                    if a["media"] == "text" else
                    f"<![CDATA[<p>{MEDIA_LABEL.get(a['media'], '')} — "
                    f'<a href="{a.get("url", "")}">{esc(a["outlet"])}</a></p>]]>')
-        it.append(f"""    <item>
+        it.append((a["date"], f"""    <item>
       <title>{esc(a["headline"])}</title>
       <link>{url}</link>
       <guid isPermaLink="true">{url}</guid>
@@ -858,7 +853,26 @@ def write_feed(items, social=()):
       <dc:language>{a.get("lang") or SECTIONS[a["category"]]["lang"]}</dc:language>
       <source url="{esc(a.get("url", ""))}">{esc(a["outlet"])}</source>
       <content:encoded>{content}</content:encoded>
-    </item>""")
+    </item>"""))
+    # The posts used to be kept out of the feed, on the reasoning that back-filling
+    # them would land as unread items in every subscriber's reader. Now that each has
+    # its own page, they are ordinary entries and belong in the channel; the one-time
+    # burst is the price of having left them out until now.
+    for p in social:
+        url = f"{BASE}/posts/{p['slug']}/"
+        body = "".join(f"<p>{esc(x)}</p>" for x in p["text"].split("\n\n") if x.strip())
+        it.append((p["date"], f"""    <item>
+      <title>{esc(_headline(p["text"]))}</title>
+      <link>{url}</link>
+      <guid isPermaLink="true">{url}</guid>
+      <pubDate>{rfc822(p["date"])}</pubDate>
+      <category>Posts (ze sítí)</category>
+      <dc:language>{p.get("lang", "en")}</dc:language>
+      <source url="{esc(p.get("url", ""))}">LinkedIn</source>
+      <content:encoded><![CDATA[{body}]]></content:encoded>
+    </item>"""))
+    it.sort(key=lambda t: t[0], reverse=True)
+    it = [x[1] for x in it]
     (KDIR / "feed.xml").write_text(f"""<?xml version="1.0" encoding="UTF-8"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:dc="http://purl.org/dc/elements/1.1/">
   <channel>
@@ -888,8 +902,8 @@ def write_machine_readable(items, social=()):
          f"Publicistika: {len(items)} položek a {n_social} kratších příspěvků ze sítí "
          f"({len(items) + n_social} záznamů celkem), "
          f"{items[-1]['date'][:4]}–{items[0]['date'][:4]}. "
-         "Plné znění každého textu je na uvedené adrese; "
-         "zdrojový Markdown je v /komentare/src/.", ""]
+         "Plné znění každého textu je na uvedené adrese; zdrojový Markdown položek "
+         "je v /komentare/src/ (příspěvky ze sítí zdrojový soubor nemají).", ""]
     for k, sec in SECTIONS.items():
         sel = [a for a in items if a["category"] == k]
         if not sel:
@@ -906,9 +920,10 @@ def write_machine_readable(items, social=()):
     if social:
         L += ["## Posts (ze sítí)", "",
               f"Kratší příspěvky Zuzany Iršové Havránkové, publikované původně na "
-              f"LinkedIn, zde v plném znění na jedné stránce. Každý má vlastní kotvu.", ""]
+              f"LinkedIn, zde v plném znění. Každý má vlastní stránku a všechny jsou "
+              f"navíc pohromadě na {BASE}/posts/.", ""]
         for p in social:
-            L.append(f"- [{_headline(p['text'])}]({BASE}/posts/#{p['anchor']}) — "
+            L.append(f"- [{_headline(p['text'])}]({BASE}/posts/{p['slug']}/) — "
                      f"{p['date']}")
         L.append("")
     L += ["## Další zdroje", "",
@@ -959,13 +974,17 @@ def write_machine_readable(items, social=()):
     # only machine-readable trace of 25 texts is one page's JSON-LD.
     for p in social:
         docs.append({
+            # The id is a compatibility contract with anything that stored it, so it
+            # keeps the anchor form even though the URL below no longer does.
             "id": f"posts-{p['anchor']}", "title": _headline(p["text"]),
             "date": p["date"], "date_precision": "day",
-            "section": "Posts", "category": "posts",
+            # same label the manifest and llms.txt use, so a consumer can join on it
+            "section": "Posts (ze sítí)", "category": "posts",
             "language": p.get("lang", "en"), "outlet": "LinkedIn",
             "authors": ["Zuzana Havránková"], "media": "text",
             "original_url": p.get("url", ""),
-            "url": f"{BASE}/posts/#{p['anchor']}",
+            "url": f"{BASE}/posts/{p['slug']}/",
+            "collection_url": f"{BASE}/posts/#{p['anchor']}",
             "text_status": "published_full_text",
             "genre": "social_post", "provenance": "self_published",
             "word_count": len(p["text"].split()), "text": p["text"],
@@ -1117,12 +1136,27 @@ def _headline(text):
     return h[:110].rsplit(" ", 1)[0].rstrip(" ,;:") + "…"
 
 
-def write_socials_page():
-    """One page for all the social posts, each with a stable anchor — not a page each.
+SLUG_RE = re.compile(r"^\d{4}-\d{2}-\d{2}-[a-z0-9-]+$")
 
-    Same reasoning as the audio/video rule above: a page whose only content is three
-    sentences is thin. The full text of every post is still here, still in corpus.jsonl
-    and still in llms.txt; only the per-post URL is pooled."""
+
+def _post_desc(text):
+    """Meta description for a post's own page: the opening, whole words, no markup."""
+    t = re.sub(r"\s+", " ", text).strip()
+    return t if len(t) <= 180 else t[:180].rsplit(" ", 1)[0].rstrip(" ,;:") + "…"
+
+
+def write_socials_page():
+    """The collection page for the social posts, plus one page per post.
+
+    Every post also lives on its own URL. A fragment is not a document: search engines
+    index /posts/ and nothing under it, so 22 texts had no title, no description, no
+    sitemap entry and no citable address of their own. The collection page still carries
+    every post in full — that is what it is for — and keeps the old #YYYY-MM-DD anchors,
+    so every deep link ever taken still lands.
+
+    The slug is stored in social-posts.json, never derived from the text here. A slug
+    computed from the first line would move the page the day a typo in that line is
+    fixed, orphaning the old directory and leaving a stale sitemap entry behind."""
     if not SOCIAL_JSON.exists():
         return []
     posts = json.loads(SOCIAL_JSON.read_text(encoding="utf-8"))
@@ -1133,6 +1167,13 @@ def write_socials_page():
     for p in sorted(posts, key=lambda x: x.get("datetime", x["date"])):
         n = seen_day[p["date"]] = seen_day.get(p["date"], 0) + 1
         p["anchor"] = p["date"] if n == 1 else f"{p['date']}-{n}"
+    slugs = [p.get("slug", "") for p in posts]
+    for p in posts:
+        if not SLUG_RE.match(p.get("slug") or ""):
+            sys.exit(f"error: post {p['date']} has no valid slug: {p.get('slug')!r}")
+    if len(set(slugs)) != len(slugs):
+        dup = [s for s in set(slugs) if slugs.count(s) > 1]
+        sys.exit(f"error: duplicate post slug(s): {dup}")
 
     blocks, parts, cur_year = [], [], None
     for p in posts:
@@ -1166,20 +1207,27 @@ def write_socials_page():
             items = "".join(f'<li><a href="{esc(u)}"{_rel(u)}>{esc(u)}</a></li>'
                             for u in p["comment_links"])
             cl = f'\n        <div class="post-links"><p>{lab}</p><ul>{items}</ul></div>'
+        perma = f"{PATH}/posts/{p['slug']}/"
+        content = f'        {_social_html(p["text"])}{ro}{cl}{imgs}'
+        # The collection keeps the anchor id so old #YYYY-MM-DD links still scroll, and
+        # its date is now the ordinary <a href> a crawler follows to reach the post's
+        # own page. JSON-LD is not a discovery mechanism; a link is.
         blocks.append(
             f'      <article class="post" id="{esc(p["anchor"])}" lang="{lang}">\n'
-            f'        <p class="post-date"><a href="#{esc(p["anchor"])}">'
+            f'        <p class="post-date"><a href="{perma}">'
             f'<time datetime="{p["date"]}">{esc(cs_date(p["date"], lang=lang))}</time></a>'
-            f'{orig}</p>\n'
-            f'        {_social_html(p["text"])}{ro}{cl}{imgs}\n'
+            f'{orig}</p>\n{content}\n'
             f'      </article>')
+        canon = f"{BASE}/posts/{p['slug']}/"
+        head = _headline(p["text"])
         node = {
             "@type": "SocialMediaPosting",
-            "@id": f"{BASE}/posts/#{p['anchor']}",
-            "headline": _headline(p["text"]),
+            "@id": canon + "#post",
+            "mainEntityOfPage": canon,
+            "headline": head,
             "datePublished": p.get("datetime", p["date"]).replace(" ", "T") + "+00:00",
             "inLanguage": lang,
-            "url": f"{BASE}/posts/#{p['anchor']}",
+            "url": canon,
             "author": {"@type": "Person", "name": "Zuzana Havránková",
                        "sameAs": ORCIDS["Zuzana Havránková"]},
             "text": p["text"],
@@ -1188,10 +1236,44 @@ def write_socials_page():
             node["sameAs"] = p["url"]
         if p.get("images"):
             node["image"] = [f"{SITE}{PATH}/social-img/{f}" for f in p["images"]]
-        parts.append(node)
+        # One entity, one @id. The collection references the post; it does not restate
+        # it. Two full nodes with identical text and different @ids would assert two
+        # different things exist.
+        parts.append({"@type": "SocialMediaPosting", "@id": canon + "#post",
+                      "url": canon, "headline": head,
+                      "datePublished": node["datePublished"], "inLanguage": lang})
+        pbody = (
+            '    <article class="post post-single reading" '
+            f'lang="{lang}">\n'
+            f'      <div class="article-head">\n        <h1>{esc(head)}</h1>\n'
+            f'        <div class="byline"><span>'
+            f'<time datetime="{p["date"]}">{esc(cs_date(p["date"], lang=lang))}</time>'
+            f'</span><span>Zuzana Havránková</span><span>LinkedIn</span></div>\n'
+            f'      </div>\n{content}\n'
+            f'      <div class="provenance"><p>'
+            + (((f'Původně zveřejněno na <a href="{esc(p["url"])}" rel="nofollow">'
+                 'LinkedInu</a>. ') if lang == "cs" else
+                (f'Originally posted on <a href="{esc(p["url"])}" rel="nofollow">'
+                 'LinkedIn</a>. ')) if p.get("url") else "")
+            + (f'V plném znění mezi <a href="{PATH}/posts/">všemi příspěvky</a>.'
+               if lang == "cs" else
+               f'Archived in full among <a href="{PATH}/posts/">all posts</a>.')
+            + '</p></div>\n'
+            '    </article>\n')
+        pjson = {"@context": "https://schema.org", "@graph": [
+            {"@type": "WebPage", "@id": canon, "url": canon, "name": head,
+             "inLanguage": lang, "isPartOf": {"@id": f"{BASE}/posts/#collection"},
+             "about": {"@id": canon + "#post"}},
+            node]}
+        d = KDIR / "posts" / p["slug"]
+        d.mkdir(parents=True, exist_ok=True)
+        (d / "index.html").write_text(
+            shell(head, _post_desc(p["text"]), canon, pjson, pbody, "posts", lang=lang),
+            encoding="utf-8")
 
     jsonld = {"@context": "https://schema.org", "@graph": [
-        {"@type": "CollectionPage", "@id": f"{BASE}/posts/", "url": f"{BASE}/posts/",
+        {"@type": "CollectionPage", "@id": f"{BASE}/posts/#collection",
+         "url": f"{BASE}/posts/",
          "name": "Posts — Zuzana Irsova Havrankova", "description": SOCIAL_DESC,
          # This page is English, unlike the rest of the archive: the posts are mostly
          # English and the readership is international. Each post still declares its own
@@ -1225,11 +1307,23 @@ def write_socials_page():
         '<!doctype html>\n<html lang="en">\n<meta charset="utf-8">\n'
         f'<title>Moved to {BASE}/posts/</title>\n'
         f'<link rel="canonical" href="{BASE}/posts/">\n'
+        f'<meta property="og:url" content="{BASE}/posts/">\n'
         '<meta name="robots" content="noindex,follow">\n'
         f'<meta http-equiv="refresh" content="0; url={BASE}/posts/">\n'
         f'<p>This page has moved to <a href="{BASE}/posts/">{BASE}/posts/</a>.</p>\n',
         encoding="utf-8")
-    print(f"  posts    {len(posts)} posts, "
+    # main()'s orphan sweep only looks at top-level directories, and posts/ is on its
+    # keep-list, so nothing would ever remove a stale posts/<slug>/. generate_seo.py
+    # builds the sitemap from the filesystem, so a renamed slug would otherwise be
+    # sitemapped forever.
+    live = {p["slug"] for p in posts}
+    for d in (KDIR / "posts").iterdir():
+        if d.is_dir() and d.name not in live:
+            for f in sorted(d.rglob("*"), reverse=True):
+                f.unlink() if f.is_file() else f.rmdir()
+            d.rmdir()
+            print(f"  removed stale post page: posts/{d.name}/")
+    print(f"  posts    {len(posts)} posts, {len(posts)} pages, "
           f"{sum(len(p.get('images', [])) for p in posts)} images")
     return posts
 
@@ -1263,7 +1357,9 @@ def write_data_page(items, social=()):
              "url": f"{BASE}/data/",
              "name": f"Korpus ke stažení — Komentáře — {AUTHOR}",
              "inLanguage": "cs",
-             "isPartOf": {"@id": f"{BASE}/"},
+             # the hub's collection node, which is what this page is part of. Pointing
+             # at BASE/ named nothing: no node with that @id exists in any graph.
+             "isPartOf": {"@id": f"{BASE}/#collection"},
              "about": {"@id": f"{BASE}/data/#dataset"}},
             {"@type": "Dataset", "@id": f"{BASE}/data/#dataset",
              "name": f"Komentáře — {SITE_AUTHORS}",
@@ -1312,7 +1408,9 @@ def write_data_page(items, social=()):
         <li><a href="{PATH}/manifest.json">manifest.json</a> — počty, rozsah a kontrolní
           součty SHA-256 každého souboru.</li>
         <li><a href="{PATH}/feed.xml">feed.xml</a> — RSS s plným textem.</li>
-        <li><a href="{PATH}/src/">/komentare/src/</a> — zdrojový Markdown každé položky.</li>
+        <li><a href="{PATH}/src/">/komentare/src/</a> — zdrojový Markdown každé položky.
+          Kratší příspěvky ze sítí zdrojový soubor nemají; jejich data jsou v
+          <a href="{PATH}/social-posts.json">social-posts.json</a>.</li>
       </ul>
       <h2>Úplnost textu</h2>
       <p>Každý záznam nese pole <code>text_status</code>, aby bylo zřejmé, co archiv
@@ -1333,22 +1431,26 @@ def write_src_index(items):
     """GitHub Pages serves no directory listing, so /komentare/src/ 404s even though
     every file under it is fetchable. The footer advertises that path, so give it a
     real index — it is also the most convenient entry point for a scraper."""
-    rows = []
+    # List every source file, including the link-only stubs. They are real files with
+    # real front matter; the page used to omit them and then explain that they did not
+    # exist, which was both a broken listing and a false statement.
+    rows, n_text = [], 0
     for a in items:
-        if a["media"] != "text":
-            continue
+        note = "" if a["media"] == "text" else f', {MEDIA_LABEL[a["media"]]}, odkaz'
+        n_text += a["media"] == "text"
         rows.append(f'<li><a href="{PATH}/src/{esc(a["file"])}">{esc(a["file"])}</a> '
                     f'— {esc(a["headline"])} <span class="src-meta">({esc(a["outlet"])}, '
-                    f'{a["date"]})</span></li>')
+                    f'{a["date"]}{note})</span></li>')
     page = f"""<!DOCTYPE html>
 <html lang="en">
 <head>
 <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>Markdown sources — Komentáře</title>
-<meta name="description" content="Plain Markdown source of every item in the Komentare archive." />
+<meta name="description" content="Plain Markdown source of every file-backed item in the Komentare archive." />
 <link rel="stylesheet" href="{PATH}/style.css" />
 <link rel="canonical" href="{BASE}/src/" />
+<meta property="og:url" content="{BASE}/src/" />
 <meta name="robots" content="noindex, follow" />
 </head>
 <body>
@@ -1359,11 +1461,12 @@ def write_src_index(items):
 <main><div class="wrap">
   <div class="lede">
     <h1>Markdown sources</h1>
-    <p>The plain-text source of every <em>textual</em> item, one file each, with YAML
-       front matter. {len(rows)} files; the archive holds {len(items)} items in total —
-       the other {len(items) - len(rows)} are audio or video, kept as links only, so they
-       have no source file. For bulk use prefer
-       <a href="{PATH}/index.json">index.json</a> (metadata for every item, full text
+    <p>One file per item, with YAML front matter. {len(rows)} files: {n_text} carry the
+       article text, the other {len(rows) - n_text} are audio or video and hold metadata
+       only, since the archive links to those rather than transcribing them. The short
+       posts are not here — they have no Markdown source and come from
+       <a href="{PATH}/social-posts.json">social-posts.json</a>. For bulk use prefer
+       <a href="{PATH}/index.json">index.json</a> (metadata for every record, full text
        where available) or <a href="{PATH}/all.md">all.md</a>.</p>
   </div>
   <ul class="items src-list">
@@ -1563,6 +1666,21 @@ def check():
                 fails.append("posts page has duplicate anchors")
             if len(anch) != len(sp):
                 fails.append(f"posts page renders {len(anch)} posts, data has {len(sp)}")
+            # The only guard against editing social-posts.json and committing without a
+            # rebuild: generate_seo.py sitemaps posts/ from the filesystem, so a missing
+            # page is silently absent and a stale one is sitemapped forever.
+            slugs = {p.get("slug") for p in sp}
+            if len(slugs) != len(sp) or None in slugs:
+                fails.append("post slugs are missing or not unique")
+            on_disk = {d.name for d in (KDIR / "posts").iterdir() if d.is_dir()}
+            for miss in sorted(slugs - on_disk):
+                fails.append(f"post page not built: posts/{miss}/")
+            for extra in sorted(on_disk - slugs):
+                fails.append(f"stale post page on disk: posts/{extra}/")
+            for p in sp:
+                u = f"{BASE}/posts/{p['slug']}/"
+                if u not in {d.get("url") for d in j["items"]}:
+                    fails.append(f"post url absent from index.json: {u}")
     except Exception as e:
         fails.append(f"index.json: {e}")
     print(f"checked {len(pages)} pages")

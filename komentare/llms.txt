@@ -2,7 +2,7 @@
 
 > Publicistika Tomáše Havránka a Zuzany Havránkové: komentáře pro celostátní média, sloupky pro litomyšlskou Lilii, rozhovory a kratší příspěvky ze sítí. Texty jsou zde archivovány v plném znění s odkazem na původní vydání.
 
-Publicistika: 187 položek a 22 kratších příspěvků ze sítí (209 záznamů celkem), 2016–2026. Plné znění každého textu je na uvedené adrese; zdrojový Markdown je v /komentare/src/.
+Publicistika: 188 položek a 22 kratších příspěvků ze sítí (210 záznamů celkem), 2014–2026. Plné znění každého textu je na uvedené adrese; zdrojový Markdown položek je v /komentare/src/ (příspěvky ze sítí zdrojový soubor nemají).
 
 ## Celostátní komentáře
 
@@ -187,6 +187,7 @@ Rozhovory pro česká média. U audio a video rozhovorů uvádíme pouze odkaz n
 - [Sázkaři jsou k vítězství Babiše skeptičtější než sociologové, říká mladá ekonomka, která kombinuje předvolební průzkumy a kurzy](https://meta-analysis.cz/komentare/zi-iv-hn-sazkari-babis/) — Hospodářské noviny, 16. října 2017
 - [Spojuje průzkumy a sázkařské kurzy. ČSSD slábne, stoupá SPD a piráti. Babiš asi nesestaví vládu sám, říká](https://meta-analysis.cz/komentare/zi-hn-cssd-slabne/) — Hospodářské noviny, 16. října 2017
 - [Česká ekonomka předvídá volby podle úspěšných Američanů. Její systém stojí i na kurzech sázkařů](https://meta-analysis.cz/komentare/zi-hn-predvida-volby/) — Hospodářské noviny, 29. srpna 2017
+- [Z mateřské zamíří rovnou do Berkeley](https://meta-analysis.cz/komentare/zi-iv-hn-berkeley/) — Hospodářské noviny, 27. ledna 2014
 
 ## In English
 
@@ -213,30 +214,30 @@ Columns and commentary written in English — policy pieces for VoxEU/CEPR and p
 
 ## Posts (ze sítí)
 
-Kratší příspěvky Zuzany Iršové Havránkové, publikované původně na LinkedIn, zde v plném znění na jedné stránce. Každý má vlastní kotvu.
+Kratší příspěvky Zuzany Iršové Havránkové, publikované původně na LinkedIn, zde v plném znění. Každý má vlastní stránku a všechny jsou navíc pohromadě na https://meta-analysis.cz/komentare/posts/.
 
-- [Does multi-agent debate improve AI feedback on research papers?](https://meta-analysis.cz/komentare/posts/#2026-07-16) — 2026-07-16
-- [This week I have been at Stanford, spending my days working and my evenings at Nitoboxing in Palo Alto.…](https://meta-analysis.cz/komentare/posts/#2026-07-08) — 2026-07-08
-- [Proud to be affiliated with Stanford METRICS. Few groups have done more for reproducibility and research…](https://meta-analysis.cz/komentare/posts/#2026-07-04) — 2026-07-04
-- [If you plan to work on your ERC proposal this summer, the following tool might help you:](https://meta-analysis.cz/komentare/posts/#2026-06-23) — 2026-06-23
-- [Imagine a panel of the world's leading experts, assembled for your research paper, arguing it out from rival…](https://meta-analysis.cz/komentare/posts/#2026-06-10) — 2026-06-10
-- [Nesehnali jste už lístky na Smetanova Litomyšl, ale přesto chcete zakusit genius loci perly východních Čech?…](https://meta-analysis.cz/komentare/posts/#2026-06-04) — 2026-06-04
-- [Do you know that Claude Code can use Codex to stress test its work?](https://meta-analysis.cz/komentare/posts/#2026-05-30) — 2026-05-30
-- [Reporting Guidelines for Meta-Analysis in Economics, updated for AI, just published in the Journal of…](https://meta-analysis.cz/komentare/posts/#2026-05-13) — 2026-05-13
-- [Will our results change if we redo the meta-analysis from scratch?](https://meta-analysis.cz/komentare/posts/#2026-04-28) — 2026-04-28
-- [Not an easy task, but in a new note just out in the Journal of Economic Surveys we try to set a basic floor…](https://meta-analysis.cz/komentare/posts/#2026-04-22) — 2026-04-22
-- [It was fun to be (a very small) part of the amazing team led by Abel Brodeur. The numbers look great, but…](https://meta-analysis.cz/komentare/posts/#2026-04-02) — 2026-04-02
-- [Top 7 non-fiction books I recommend. 📚](https://meta-analysis.cz/komentare/posts/#2026-03-28) — 2026-03-28
-- [Two AI models dueling worked. Four models debating works better.](https://meta-analysis.cz/komentare/posts/#2026-03-19) — 2026-03-19
-- [Doporučuji všem rodičům včas testovat děti na cukrovku. Nám to bohužel vyšlo jednou pozitivní, ale díky tomu…](https://meta-analysis.cz/komentare/posts/#2026-03-11) — 2026-03-11
-- [Meta-analyses should try to correct not just for publication bias, but also for p-hacking.](https://meta-analysis.cz/komentare/posts/#2026-03-09) — 2026-03-09
-- [A small experiment at home: our kids (8-12) were sick and bored, so we introduced them to Claude Code.](https://meta-analysis.cz/komentare/posts/#2026-01-31) — 2026-01-31
-- [A browser-based tool for correcting publication bias and p-hacking.](https://meta-analysis.cz/komentare/posts/#2026-01-27) — 2026-01-27
-- [Jak vytěžit z AI maximum?](https://meta-analysis.cz/komentare/posts/#2025-12-29) — 2025-12-29
-- [I still love Slovakia and Gemer. When our kids were born, one of the first things my husband did was go to…](https://meta-analysis.cz/komentare/posts/#2025-12-23) — 2025-12-23
-- [For deep analytical work, I don’t use one AI model. I make them duel.](https://meta-analysis.cz/komentare/posts/#2025-12-12) — 2025-12-12
-- [🔎 MAIVE is now on CRAN: Better tools for trustworthy meta-analysis](https://meta-analysis.cz/komentare/posts/#2025-12-10) — 2025-12-10
-- [🔎 New in Nature Communications: “Spurious precision in meta-analysis of observational research.”](https://meta-analysis.cz/komentare/posts/#2025-10-26) — 2025-10-26
+- [Does multi-agent debate improve AI feedback on research papers?](https://meta-analysis.cz/komentare/posts/2026-07-16-does-multi-agent-debate-improve-ai-feedback/) — 2026-07-16
+- [This week I have been at Stanford, spending my days working and my evenings at Nitoboxing in Palo Alto.…](https://meta-analysis.cz/komentare/posts/2026-07-08-stanford-and-nitoboxing/) — 2026-07-08
+- [Proud to be affiliated with Stanford METRICS. Few groups have done more for reproducibility and research…](https://meta-analysis.cz/komentare/posts/2026-07-04-affiliated-with-stanford-metrics/) — 2026-07-04
+- [If you plan to work on your ERC proposal this summer, the following tool might help you:](https://meta-analysis.cz/komentare/posts/2026-06-23-a-tool-for-your-erc-proposal/) — 2026-06-23
+- [Imagine a panel of the world's leading experts, assembled for your research paper, arguing it out from rival…](https://meta-analysis.cz/komentare/posts/2026-06-10-a-panel-of-experts-for-your-paper/) — 2026-06-10
+- [Nesehnali jste už lístky na Smetanova Litomyšl, ale přesto chcete zakusit genius loci perly východních Čech?…](https://meta-analysis.cz/komentare/posts/2026-06-04-smetanova-litomysl-genius-loci/) — 2026-06-04
+- [Do you know that Claude Code can use Codex to stress test its work?](https://meta-analysis.cz/komentare/posts/2026-05-30-claude-code-with-codex-stress-test/) — 2026-05-30
+- [Reporting Guidelines for Meta-Analysis in Economics, updated for AI, just published in the Journal of…](https://meta-analysis.cz/komentare/posts/2026-05-13-reporting-guidelines-updated-for-ai/) — 2026-05-13
+- [Will our results change if we redo the meta-analysis from scratch?](https://meta-analysis.cz/komentare/posts/2026-04-28-redoing-a-meta-analysis-from-scratch/) — 2026-04-28
+- [Not an easy task, but in a new note just out in the Journal of Economic Surveys we try to set a basic floor…](https://meta-analysis.cz/komentare/posts/2026-04-22-note-in-journal-of-economic-surveys/) — 2026-04-22
+- [It was fun to be (a very small) part of the amazing team led by Abel Brodeur. The numbers look great, but…](https://meta-analysis.cz/komentare/posts/2026-04-02-brodeur-team-reproducibility-numbers/) — 2026-04-02
+- [Top 7 non-fiction books I recommend. 📚](https://meta-analysis.cz/komentare/posts/2026-03-28-top-7-non-fiction-books/) — 2026-03-28
+- [Two AI models dueling worked. Four models debating works better.](https://meta-analysis.cz/komentare/posts/2026-03-19-four-models-debating-works-better/) — 2026-03-19
+- [Doporučuji všem rodičům včas testovat děti na cukrovku. Nám to bohužel vyšlo jednou pozitivní, ale díky tomu…](https://meta-analysis.cz/komentare/posts/2026-03-11-testujte-deti-na-cukrovku/) — 2026-03-11
+- [Meta-analyses should try to correct not just for publication bias, but also for p-hacking.](https://meta-analysis.cz/komentare/posts/2026-03-09-correcting-for-p-hacking-too/) — 2026-03-09
+- [A small experiment at home: our kids (8-12) were sick and bored, so we introduced them to Claude Code.](https://meta-analysis.cz/komentare/posts/2026-01-31-kids-and-claude-at-home/) — 2026-01-31
+- [A browser-based tool for correcting publication bias and p-hacking.](https://meta-analysis.cz/komentare/posts/2026-01-27-browser-tool-for-publication-bias/) — 2026-01-27
+- [Jak vytěžit z AI maximum?](https://meta-analysis.cz/komentare/posts/2025-12-29-jak-vytezit-z-ai-maximum/) — 2025-12-29
+- [I still love Slovakia and Gemer. When our kids were born, one of the first things my husband did was go to…](https://meta-analysis.cz/komentare/posts/2025-12-23-slovakia-and-gemer/) — 2025-12-23
+- [For deep analytical work, I don’t use one AI model. I make them duel.](https://meta-analysis.cz/komentare/posts/2025-12-12-i-make-ai-models-duel/) — 2025-12-12
+- [🔎 MAIVE is now on CRAN: Better tools for trustworthy meta-analysis](https://meta-analysis.cz/komentare/posts/2025-12-10-maive-is-now-on-cran/) — 2025-12-10
+- [🔎 New in Nature Communications: “Spurious precision in meta-analysis of observational research.”](https://meta-analysis.cz/komentare/posts/2025-10-26-spurious-precision-nature-communications/) — 2025-10-26
 
 ## Další zdroje
 

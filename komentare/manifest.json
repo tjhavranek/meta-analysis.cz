@@ -2,19 +2,19 @@
  "name": "Komentáře — Tomáš Havránek, Zuzana Havránková",
  "url": "https://meta-analysis.cz/komentare/data/",
  "corpus_updated": "2026-07-16",
- "temporal_coverage": "2016-11-30/2026-07-16",
+ "temporal_coverage": "2014-01-27/2026-07-16",
  "records": {
-  "total": 209,
+  "total": 210,
   "by_text_status": {
    "published_full_text": 173,
-   "author_manuscript": 18,
+   "author_manuscript": 19,
    "link_only": 16,
    "publisher_excerpt": 2
   },
   "by_section": {
    "Celostátní komentáře": 73,
    "Litomyšlské sloupky": 48,
-   "Rozhovory": 48,
+   "Rozhovory": 49,
    "In English": 18,
    "Posts (ze sítí)": 22
   }
@@ -28,28 +28,28 @@
  "files": {
   "corpus.jsonl": {
    "url": "https://meta-analysis.cz/komentare/corpus.jsonl",
-   "bytes": 1256176,
-   "sha256": "cff3a247c16681c7260c730a4d03ab63a153c8d5374a01c25238195ce5807d9c"
+   "bytes": 1270076,
+   "sha256": "412b963df8226152ea6a54c56df4b5d64153b4b0bc9032e88cc98b7e3f6b4d9a"
   },
   "index.json": {
    "url": "https://meta-analysis.cz/komentare/index.json",
-   "bytes": 1276293,
-   "sha256": "624f64d83c1832591ae03981405764f4bfed07f24402b79e2ff55deddee54128"
+   "bytes": 1290372,
+   "sha256": "c49cd4f76ebb0a11e4a02b61394c5577c11e5eae73c35563c6b457b979e69393"
   },
   "all.md": {
    "url": "https://meta-analysis.cz/komentare/all.md",
-   "bytes": 1118835,
-   "sha256": "2bfa0df8fb62717a36602a1ca8d2de842c61345b37f831e3935604d48127799c"
+   "bytes": 1129737,
+   "sha256": "7e28faaf6780e308cf8e7c399a119bb6cc19f13e86df97359eae971b9c819403"
   },
   "llms.txt": {
    "url": "https://meta-analysis.cz/komentare/llms.txt",
-   "bytes": 37729,
-   "sha256": "24e0d01beb0f3de7ebc44bbdda817f5dcd935afdc6592653cc3e6a17ee73f730"
+   "bytes": 38670,
+   "sha256": "f3351f522698de6d8cf5ae4bdef3d9c6cd14f15fb00ff3fb20533afde7ec264d"
   },
   "feed.xml": {
    "url": "https://meta-analysis.cz/komentare/feed.xml",
-   "bytes": 1218979,
-   "sha256": "4624e49725da694b0f8aeb33d9fc22f2374e988e45a38fddb117ab82609f2eca"
+   "bytes": 1264572,
+   "sha256": "41681b8e04980cd438677d7a057b7fe4647e45832a8bb4b652f65694319f5fed"
   }
  },
  "generated_from": [

@@ -4,14 +4,14 @@
 <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>Korpus ke stažení — Komentáře — Tomáš Havránek, Zuzana Havránková</title>
-<meta name="description" content="Strojově čitelný korpus: 209 záznamů, corpus.jsonl, index.json, all.md a manifest s kontrolními součty." />
+<meta name="description" content="Strojově čitelný korpus: 210 záznamů, corpus.jsonl, index.json, all.md a manifest s kontrolními součty." />
 <link rel="stylesheet" href="/komentare/style.css" />
 <link rel="canonical" href="https://meta-analysis.cz/komentare/data/" />
 <link rel="alternate" type="application/rss+xml" title="Komentáře — Tomáš Havránek, Zuzana Havránková" href="/komentare/feed.xml" />
 <meta property="og:site_name" content="Komentáře — Tomáš Havránek, Zuzana Havránková" />
 <meta property="og:locale" content="cs_CZ" />
 <meta property="og:title" content="Korpus ke stažení — Komentáře — Tomáš Havránek, Zuzana Havránková" />
-<meta property="og:description" content="Strojově čitelný korpus: 209 záznamů, corpus.jsonl, index.json, all.md a manifest s kontrolními součty." />
+<meta property="og:description" content="Strojově čitelný korpus: 210 záznamů, corpus.jsonl, index.json, all.md a manifest s kontrolními součty." />
 <meta property="og:url" content="https://meta-analysis.cz/komentare/data/" />
 <script type="application/ld+json">
 {
@@ -24,7 +24,7 @@
    "name": "Korpus ke stažení — Komentáře — Tomáš Havránek",
    "inLanguage": "cs",
    "isPartOf": {
-    "@id": "https://meta-analysis.cz/komentare/"
+    "@id": "https://meta-analysis.cz/komentare/#collection"
    },
    "about": {
     "@id": "https://meta-analysis.cz/komentare/data/#dataset"
@@ -50,7 +50,7 @@
      "identifier": "https://orcid.org/0000-0002-0753-8124"
     }
    ],
-   "temporalCoverage": "2016-11-30/2026-07-16",
+   "temporalCoverage": "2014-01-27/2026-07-16",
    "conditionsOfAccess": "Texty jsou majetkem autorů a původních vydavatelů; archiv slouží ke čtení a citaci s uvedením původního zdroje.",
    "distribution": [
     {
@@ -94,8 +94,8 @@
 <main>
   <div class="wrap">
 <h1>Korpus ke stažení</h1>
-      <p class="lede">Celý archiv strojově čitelně: 209 záznamů,
-        z toho 193 s textem. Soubory se generují při každém sestavení webu.</p>
+      <p class="lede">Celý archiv strojově čitelně: 210 záznamů,
+        z toho 194 s textem. Soubory se generují při každém sestavení webu.</p>
       <h2>Soubory</h2>
       <ul class="items">
         <li><a href="/komentare/corpus.jsonl">corpus.jsonl</a> — jeden záznam na řádek
@@ -105,12 +105,14 @@
         <li><a href="/komentare/manifest.json">manifest.json</a> — počty, rozsah a kontrolní
           součty SHA-256 každého souboru.</li>
         <li><a href="/komentare/feed.xml">feed.xml</a> — RSS s plným textem.</li>
-        <li><a href="/komentare/src/">/komentare/src/</a> — zdrojový Markdown každé položky.</li>
+        <li><a href="/komentare/src/">/komentare/src/</a> — zdrojový Markdown každé položky.
+          Kratší příspěvky ze sítí zdrojový soubor nemají; jejich data jsou v
+          <a href="/komentare/social-posts.json">social-posts.json</a>.</li>
       </ul>
       <h2>Úplnost textu</h2>
       <p>Každý záznam nese pole <code>text_status</code>, aby bylo zřejmé, co archiv
         skutečně obsahuje:</p>
-      <ul class="items"><li><strong>published_full_text</strong> — 173</li><li><strong>author_manuscript</strong> — 18</li><li><strong>link_only</strong> — 16</li><li><strong>publisher_excerpt</strong> — 2</li></ul>
+      <ul class="items"><li><strong>published_full_text</strong> — 173</li><li><strong>author_manuscript</strong> — 19</li><li><strong>link_only</strong> — 16</li><li><strong>publisher_excerpt</strong> — 2</li></ul>
       <p class="about-machine" lang="en">Every record carries a <code>text_status</code>
         field, so a consumer can tell a published text from the author's own version,
         from a publisher's teaser, from an audio/video record that stores no text.</p>
@@ -152,7 +154,7 @@
       <a href="/komentare/llms.txt">llms.txt</a> ·
       <a href="/komentare/index.json">index.json</a> (metadata for every item, full text where available) ·
       <a href="/komentare/all.md">all.md</a> (every text in one file) ·
-      <a href="/komentare/feed.xml">RSS</a>. The Markdown source of each textual item is in
+      <a href="/komentare/feed.xml">RSS</a>. The Markdown source of each item is in
       <a href="/komentare/src/">/komentare/src/</a>. Text and metadata may be freely
       indexed, quoted and used for research, with attribution to the original outlet.</p>
   </div>
