@@ -174,7 +174,7 @@ Abstract: I examine 2,735 estimates of the elasticity of intertemporal substitut
 
 ## Price Elasticity of Electricity Demand: A Meta-Analysis
 URL: https://meta-analysis.cz/electricity/
-Citation: Zuzana Irsova, Tomas Havranek, Peter Kudela, Anna Kudelova, Vojtech Sikl (2026), “Electricity demand has not become more price-responsive despite ninety years of technological change.” Charles University, Prague. Available at meta-analysis.cz/electricity.
+Citation: Peter Kudela, Tomas Havranek, Zuzana Irsova, Anna Kudelova, Vojtech Sikl (2026), “Electricity demand has not become more price-responsive despite ninety years of technological change.” Charles University, Prague. Available at meta-analysis.cz/electricity.
 Paper: https://meta-analysis.cz/electricity/electricity.pdf
 Online Appendix: https://meta-analysis.cz/electricity/electricity_SI.pdf
 Replication Package: https://meta-analysis.cz/electricity/replication.zip
