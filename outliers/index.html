@@ -144,10 +144,64 @@ Meta-analysts routinely face estimates that look too large or extreme. Yet, how 
 </p>
 
 <p></p>
+
+<table style="border-collapse:collapse; width:100%; margin:6px 0 4px 0; font-size:12px;">
+<caption style="caption-side:top; text-align:left; padding-bottom:6px; font-style:italic;">
+How much each treatment moves the result, against doing nothing
+</caption>
+<thead>
+<tr>
+<th style="text-align:left;  border-top:1px solid #444; border-bottom:1px solid #444; padding:5px 6px;">Treatment</th>
+<th style="text-align:right; border-top:1px solid #444; border-bottom:1px solid #444; padding:5px 6px;">Median change in <i>d</i></th>
+<th style="text-align:right; border-top:1px solid #444; border-bottom:1px solid #444; padding:5px 6px;">Significance changes</th>
+<th style="text-align:right; border-top:1px solid #444; border-bottom:1px solid #444; padding:5px 6px;">SESOI changes</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="padding:4px 6px;">Drop the most extreme estimate</td>
+<td style="padding:4px 6px; text-align:right;">0.024</td>
+<td style="padding:4px 6px; text-align:right;">3.35%</td>
+<td style="padding:4px 6px; text-align:right;">5.87%</td>
+</tr>
+<tr>
+<td style="padding:4px 6px;">Studentized residual &gt; 3</td>
+<td style="padding:4px 6px; text-align:right;">0.006</td>
+<td style="padding:4px 6px; text-align:right;">2.80%</td>
+<td style="padding:4px 6px; text-align:right;">5.73%</td>
+</tr>
+<tr>
+<td style="padding:4px 6px;">Winsorize at 5/95</td>
+<td style="padding:4px 6px; text-align:right;">0.006</td>
+<td style="padding:4px 6px; text-align:right;">2.38%</td>
+<td style="padding:4px 6px; text-align:right;">1.82%</td>
+</tr>
+<tr>
+<td style="padding:4px 6px;">DFBETAS &gt; 2/&radic;<span style="text-decoration:overline;">k</span></td>
+<td style="padding:4px 6px; text-align:right;">0.045</td>
+<td style="padding:4px 6px; text-align:right;">5.45%</td>
+<td style="padding:4px 6px; text-align:right;">7.12%</td>
+</tr>
+<tr>
+<td style="padding:5px 6px; border-top:1px solid #444;"><b>At least one of the four</b></td>
+<td style="padding:5px 6px; border-top:1px solid #444; text-align:right;">&mdash;</td>
+<td style="padding:5px 6px; border-top:1px solid #444; text-align:right;"><b>7.7%</b></td>
+<td style="padding:5px 6px; border-top:1px solid #444; text-align:right;"><b>10.3%</b></td>
+</tr>
+</tbody>
+</table>
+<p style="font-size:11px; font-style:italic; margin:0 0 10px 0; border-bottom:1px solid #444; padding-bottom:8px;">
+The unit is a meta-analysis estimated by one estimator (715 of them). Counting a
+meta-analysis as changed if either estimator changes, the rates in the last row rise
+to 11.5% for statistical significance and 15.9% for SESOI. Median change in <i>d</i> is
+pooled over both estimators. SESOI is the smallest effect size of interest,
+|<i>d</i>|&nbsp;&ge;&nbsp;0.20.
+</p>
+
 <b>Materials:</b> the study was <a href="https://doi.org/10.17605/OSF.IO/97CMV">pre-registered</a> before
-the treatments were applied to the frozen corpus; the <a href="https://osf.io/6terj">online appendix</a>
-is on OSF; and the <a href="https://doi.org/10.5281/zenodo.21216506">replication package</a> (data, R
-code, and outputs) is archived on Zenodo.
+the treatments were applied to the frozen corpus, and the
+<a href="https://doi.org/10.5281/zenodo.21216506">replication package</a> (data, R code, and
+outputs) is archived on Zenodo.
 <br>
 <br>
 <br>
@@ -187,8 +241,8 @@ code, and outputs) is archived on Zenodo.
 			<li>
 								<h2>Related papers</h2>
 				<ul>
-<li><a href="/pcc/">Bias in meta-analyses of partial correlations</a></li>
-<li><a href="/correlations/">Bias in meta-analyses of correlations</a></li>
+<li><a href="/pcc/">Bias in partial correlations</a></li>
+<li><a href="/correlations/">Bias in correlations</a></li>
 <li><a href="/guidelines/">A practitioner's guide</a></li>
 				</ul>
 			</li>
