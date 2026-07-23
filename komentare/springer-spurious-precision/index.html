@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Spurious Precision in Meta-Analysis — Zuzana Irsova</title>
+<meta name="description" content="Meta-analyses give more weight to precise studies. But what if the reported precision is spurious? We introduce MAIVE, a new estimator that tackles this problem." />
+<link rel="stylesheet" href="/komentare/style.css" />
+<link rel="canonical" href="https://meta-analysis.cz/komentare/springer-spurious-precision/" />
+<link rel="alternate" type="application/rss+xml" title="Komentáře — Tomáš Havránek, Zuzana Havránková" href="/komentare/feed.xml" />
+<meta property="og:site_name" content="Komentáře — Tomáš Havránek, Zuzana Havránková" />
+<meta property="og:locale" content="en_GB" />
+<meta property="og:title" content="Spurious Precision in Meta-Analysis — Zuzana Irsova" />
+<meta property="og:description" content="Meta-analyses give more weight to precise studies. But what if the reported precision is spurious? We introduce MAIVE, a new estimator that tackles this problem." />
+<meta property="og:url" content="https://meta-analysis.cz/komentare/springer-spurious-precision/" />
+<meta property="og:type" content="article" />
+<meta name="author" content="Zuzana Irsova" />
+<meta property="article:published_time" content="2025-09-27" />
+<link rel="alternate" type="text/markdown" href="/komentare/src/2025-09-27_springer-spurious-precision.md" title="Zdrojový text (Markdown)" />
+<script type="application/ld+json">
+{
+ "@context": "https://schema.org",
+ "@graph": [
+  {
+   "@type": "OpinionNewsArticle",
+   "@id": "https://meta-analysis.cz/komentare/springer-spurious-precision/#article",
+   "mainEntityOfPage": "https://meta-analysis.cz/komentare/springer-spurious-precision/",
+   "url": "https://meta-analysis.cz/komentare/springer-spurious-precision/",
+   "headline": "Spurious Precision in Meta-Analysis",
+   "inLanguage": "en",
+   "datePublished": "2025-09-27",
+   "isAccessibleForFree": true,
+   "publisher": {
+    "@type": "Organization",
+    "name": "Springer Nature Research Communities"
+   },
+   "articleSection": "In English",
+   "author": [
+    {
+     "@type": "Person",
+     "name": "Zuzana Irsova",
+     "sameAs": "https://orcid.org/0000-0002-0753-8124"
+    }
+   ],
+   "isBasedOn": "https://communities.springernature.com/posts/spurious-precision-in-meta-analysis",
+   "description": "Meta-analyses give more weight to precise studies. But what if the reported precision is spurious? We introduce MAIVE, a new estimator that tackles this problem.",
+   "abstract": "Meta-analyses give more weight to precise studies. But what if the reported precision is spurious? We introduce MAIVE, a new estimator that tackles this problem."
+  }
+ ]
+}
+</script>
+<script>document.documentElement.className+=" has-js";</script>
+</head>
+<body>
+<header class="masthead">
+  <div class="wrap">
+    <p class="site-name"><a href="/komentare/">Komentáře<small>Tomáš Havránek, Zuzana Iršová Havránková</small></a></p>
+    <nav class="nav"><a href="/komentare/celostatni/" lang="cs">Celostátní</a><a href="/komentare/litomysl/" lang="cs">Litomyšl</a><a href="/komentare/rozhovory/" lang="cs">Rozhovory</a><a href="/komentare/english/" aria-current="page">English</a><a href="/komentare/posts/">Posts</a></nav>
+  </div>
+</header>
+<main>
+  <div class="wrap">
+    <article>
+      <div class="article-head">
+        <h1>Spurious Precision in Meta-Analysis</h1>
+        <div class="byline"><span>27 September 2025</span><span>Springer Nature Research Communities</span><span>Zuzana Irsova</span></div>
+      </div>
+<div class="provenance"><p>Behind-the-paper post k článku v Nature Communications. Přepsáno doslovně včetně překlepu „ratonale“ v druhém odstavci.</p></div>
+      <p class="perex">Meta-analyses give more weight to precise studies. But what if the reported precision is spurious? We introduce MAIVE, a new estimator that tackles this problem.</p>
+      <div class="prose reading">
+<p>When I began working on meta-analyses two decades ago, I assumed the standard tools, developed mainly with experiments in mind, were safe to apply to observational research. Meta-analysis sounds straightforward: gather comparable estimates from many studies, give more weight to the precise ones, apply rigorous bias-correction techniques, and arrive at reliable averages across different contexts.</p>
+<p>After dozens of meta-analyses in the social sciences, we kept noticing something odd. Reported effects were often too strongly correlated with their standard errors. And the correlation persisted even after we applied bias corrections using selection models. That worried us. If the link between estimated effects and precision arises beyond standard publication bias, the ratonale of inverse-variance weighting, the backbone of meta-analysis, starts to crumble.</p>
+<h2>Spurious precision</h2>
+<p>One mechanism that can cause this problem is <em>spurious precision</em>. In theory, standard errors should measure study uncertainty. They are given to the researcher, and meta-analysts can use them as one indicator of study reliability. That is the clean textbook story.</p>
+<p>In practice, reported precision is rarely that clean. Researchers make many choices: which controls to include, how to cluster standard errors, how to treat outliers, which estimation method to use. Ignoring heteroskedasticity often leads to artificially low standard errors, and commonly used cluster-robust standard errors are downward biased in small- and medium-sized samples.</p>
+<p>Standard errors may also be underestimated in experiments due to violations of randomization assumptions, finite sample issues, or model misspecifications. And because significant results are easier to publish, there are incentives to favor smaller standard errors. A small effect with an even smaller standard error often looks better than a large but insignificant one.</p>
+<h2>When existing methods fail</h2>
+<p>The funnel plot below illustrates what happens with spurious precision. Each dot represents a study's estimate against its standard error. Ideally, the funnel narrows symmetrically toward the true effect. Standard corrections account for asymmetry from publication bias or p-hacking on the effect size. But when precision is p-hacked as well, some estimates appear both larger and more precise than they really are: the hollow dots become solid black ones.</p>
+<p><em>Figure: Spurious precision makes some studies look more precise than reality, distorting meta-analysis results.</em></p>
+<p>These overly precise estimates (e.g. those that omit an important control variable) receive too much weight in meta-analysis. That is how spurious precision creeps in and distorts the overall result. In such cases, all standard inverse-variance weighting methods begin to break down.</p>
+<p>Publication bias has been studied for decades, and correction methods like PET-PEESE or selection models are widely used. The catch is that they still rely heavily on reported precision and assume that the most precise estimates are unbiased. But if precision itself is p-hacked, these corrections do not necessarily solve the problem.</p>
+<p>Consider the funnel plot above. Standard inverse-variance-weighted averages are biased upward. Funnel-plot corrections fail because they assume any p-hacking targets effect sizes rather than standard errors. And selection models break down as well, since they rely on the assumption that individual reported estimates are unbiased, an assumption violated under p-hacking.</p>
+<p>Indeed, in some of our simulations with moderate spurious precision, simple unweighted averages ended up less biased than sophisticated bias-correction estimators.</p>
+<h2>The idea behind MAIVE</h2>
+<p>This led us to MAIVE, the <strong>Meta-Analysis Instrumental Variable Estimator</strong>. The idea is simple. Reported standard errors may be biased, but sample size is much harder to p-hack. It is strongly (if imperfectly) linked to true precision and, in much of empirical research, authors typically use the largest feasible sample from the start. You can easily change controls, clustering, or estimation techniques; you usually cannot easily increase <em>N</em>.</p>
+<p>MAIVE uses sample size as an instrument for precision. We keep the familiar funnel-based framework but rebuild it on a more robust foundation: predicted precision based on <em>N</em>, not reported precision alone, with confidence intervals considering prediction uncertainty. In simulations, MAIVE substantially reduced the overall bias (publication and p-hacking) compared to existing estimators. And in datasets with replication benchmarks, MAIVE moved meta-analytic results closer to the replications.</p>
+<h2>Making it easy to use</h2>
+<p>To make MAIVE easy to apply, we built a simple web tool: <a href="https://spuriousprecision.com/">spuriousprecision.com</a>. Upload your dataset, click a button, and MAIVE runs in seconds, correcting your meta-analysis for publication bias, p-hacking, and spurious precision. If you just want to see MAIVE in action, the site offers a <a href="https://spuriousprecision.com/demo">demo dataset</a> you can run instantly.</p>
+<p>The tool supports study-level clustering (CR1, CR2, wild bootstrap), allows for extreme heterogeneity and weak instruments, and enables fixed-intercept multilevel specifications that account for within-study dependence and between-study differences in methods and quality. No coding, no setup, no R or Stata needed.</p>
+<p>In the web tool we also included existing funnel-based methods — <strong>PET-PEESE</strong> and the <strong>Endogenous Kink</strong> model. Users can compare approaches side by side. This fills a gap: there are web tools for producing forest plots and basic meta-analysis models, but none that let you run advanced funnel-based corrections straight from the browser.</p>
+<h2>What we learned</h2>
+<p>The biggest takeaway was how damaging spurious precision can be. Publication bias is well known, but the meta-analysis bias working through distorted standard errors can be just as harmful. Because almost every meta-analytic method relies on inverse-variance weights, the problem is potentially widespread.</p>
+<p>We do not claim MAIVE is a cure-all. But it is a practical safeguard against a form of bias that existing methods largely ignore. With the web tool at <a href="https://spuriousprecision.com/">spuriousprecision.com</a> (also available at <a href="http://easymeta.org/">easymeta.org</a>), we hope MAIVE becomes a useful part of the toolbox for meta-analysis, whether in medicine, psychology, economics, or beyond.</p>
+      </div>
+      <div class="provenance"><p>Poprvé vyšlo v médiu Springer Nature Research Communities 27. září 2025. <a href="https://communities.springernature.com/posts/spurious-precision-in-meta-analysis" rel="external">Původní vydání</a>.</p></div>
+      <nav class="pager">
+        <a href="/komentare/english/">← In English</a>
+        <a href="/komentare/">Všechny texty</a>
+      </nav>
+    </article>
+  </div>
+</main>
+<footer class="foot">
+  <div class="wrap about">
+    <p class="about-bio"><strong>Tomáš Havránek</strong> is Professor of Economics at the Institute of Economic Studies, Charles University, Prague. He works on monetary policy, meta-analysis and meta-research, and was an adviser to the Vice-Governor and the Board of the Czech National Bank. He is a Research Affiliate at CEPR (London) and at Stanford METRICS.</p><p class="about-bio"><strong>Zuzana Havránková</strong> is Professor of Economics at the same institute. She works on meta-analysis and meta-research, labour economics and international economics, and is an affiliate researcher at Stanford METRICS. She publishes in English as Zuzana Irsova.</p><p class="about-bio">This section archives their published commentary, columns and interviews.</p>
+    <ul class="about-links">
+      <li class="who">Tomáš Havránek</li>
+      <li><a href="https://www.tomashavranek.cz/">tomashavranek.cz</a></li>
+      <li><a href="https://ies.fsv.cuni.cz/en/contacts/institute-members/78067720">IES FSV UK</a></li>
+      <li><a href="https://orcid.org/0000-0002-3158-2539">ORCID</a></li>
+      <li><a href="https://scholar.google.com/citations?user=BF0BvBkAAAAJ">Google Scholar</a></li>
+      <li><a href="https://ideas.repec.org/f/pha418.html">RePEc</a></li>
+      <li><a href="https://www.scopus.com/authid/detail.uri?authorId=24453189000">Scopus</a></li>
+      <li><a href="https://cepr.org/about/people/tomas-havranek">CEPR</a></li>
+      <li><a href="https://metrics.stanford.edu/people/tomas-havranek">Stanford METRICS</a></li>
+    </ul>
+    <ul class="about-links">
+      <li class="who">Zuzana Iršová Havránková</li>
+      <li><a href="https://www.irsova.com/">irsova.com</a></li>
+      <li><a href="https://ies.fsv.cuni.cz/en/contacts/institute-members/73504033">IES FSV UK</a></li>
+      <li><a href="https://orcid.org/0000-0002-0753-8124">ORCID</a></li>
+      <li><a href="https://scholar.google.com/citations?user=LaHrICUAAAAJ">Google Scholar</a></li>
+      <li><a href="https://ideas.repec.org/e/pir23.html">RePEc</a></li>
+      <li><a href="https://www.scopus.com/authid/detail.uri?authorId=37080793200">Scopus</a></li>
+      <li><a href="https://cepr.org/about/people/zuzana-irsova">CEPR</a></li>
+      <li><a href="https://metrics.stanford.edu/people/zuzana-irsova">Stanford METRICS</a></li>
+    </ul>
+    <ul class="about-links">
+      <li class="who">Projects</li>
+      <li><a href="https://meta-analysis.cz/">meta-analysis.cz</a></li>
+      <li><a href="https://zrusme-inflaci.cz/">Zrušme inflaci</a></li>
+      <li><a href="/komentare/feed.xml">RSS</a></li>
+    </ul>
+    <p class="about-machine" lang="en">For machines:
+      <a href="/komentare/data/">the corpus</a> (JSONL, JSON, Markdown, checksums) ·
+      <a href="/komentare/llms.txt">llms.txt</a> ·
+      <a href="/komentare/index.json">index.json</a> (metadata for every item, full text where available) ·
+      <a href="/komentare/all.md">all.md</a> (every text in one file) ·
+      <a href="/komentare/feed.xml">RSS</a>. The Markdown source of each textual item is in
+      <a href="/komentare/src/">/komentare/src/</a>. Text and metadata may be freely
+      indexed, quoted and used for research, with attribution to the original outlet.</p>
+  </div>
+</footer>
+</body>
+</html>

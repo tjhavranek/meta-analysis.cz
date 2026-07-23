@@ -2,7 +2,7 @@
 
 > Publicistika Tomáše Havránka a Zuzany Havránkové: komentáře pro celostátní média, sloupky pro litomyšlskou Lilii, rozhovory a kratší příspěvky ze sítí. Texty jsou zde archivovány v plném znění s odkazem na původní vydání.
 
-Publicistika: 179 položek a 22 kratších příspěvků ze sítí (201 záznamů celkem), 2016–2026. Plné znění každého textu je na uvedené adrese; zdrojový Markdown je v /komentare/src/.
+Publicistika: 180 položek a 22 kratších příspěvků ze sítí (202 záznamů celkem), 2016–2026. Plné znění každého textu je na uvedené adrese; zdrojový Markdown je v /komentare/src/.
 
 ## Celostátní komentáře
 
@@ -189,6 +189,7 @@ Columns and commentary written in English — policy pieces for VoxEU/CEPR and p
 - [Stress-Testing Meta-Research with AI Duels](https://meta-analysis.cz/komentare/maer-ai-duels/) — MAER-Net, 12. prosince 2025
 - [MAIVE Is Now on CRAN](https://meta-analysis.cz/komentare/maer-maive-cran/) — MAER-Net, 10. prosince 2025
 - [Highlights from the 2025 MAER-Net Colloquium in Ottawa](https://meta-analysis.cz/komentare/maer-ottawa-colloquium/) — MAER-Net, 31. října 2025
+- [Spurious Precision in Meta-Analysis](https://meta-analysis.cz/komentare/springer-spurious-precision/) — Springer Nature Research Communities, 27. září 2025
 - [Bias Correction Made Easy: A Web App for Meta-Analysis at EasyMeta.org](https://meta-analysis.cz/komentare/maer-easymeta/) — MAER-Net, 27. září 2025
 - [AI Tools for Meta-Analysis](https://meta-analysis.cz/komentare/maer-ai-tools/) — MAER-Net, 30. července 2025
 - [New Challenges for Meta-Analysis: Attenuation Bias, P-Hacking, Preferred Estimates](https://meta-analysis.cz/komentare/maer-new-challenges/) — MAER-Net, 7. července 2025
