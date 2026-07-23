@@ -1,8 +1,8 @@
 # Komentáře — Tomáš Havránek, Zuzana Havránková
 
-> Publicistika Tomáše Havránka a Zuzany Havránkové: komentáře pro celostátní média, sloupky pro litomyšlskou Lilii, rozhovory a kratší příspěvky ze sítí. Texty jsou zde archivovány v plném znění s odkazem na původní vydání.
+> Publicistika Tomáše Havránka a Zuzany Havránkové: komentáře pro celostátní média, sloupky pro litomyšlskou Lilii, rozhovory, tiskové zprávy a kratší příspěvky ze sítí. Texty jsou zde archivovány v plném znění s odkazem na původní vydání.
 
-Publicistika: 180 položek a 22 kratších příspěvků ze sítí (202 záznamů celkem), 2016–2026. Plné znění každého textu je na uvedené adrese; zdrojový Markdown je v /komentare/src/.
+Publicistika: 187 položek a 22 kratších příspěvků ze sítí (209 záznamů celkem), 2016–2026. Plné znění každého textu je na uvedené adrese; zdrojový Markdown je v /komentare/src/.
 
 ## Celostátní komentáře
 
@@ -148,6 +148,7 @@ Rozhovory pro česká média. U audio a video rozhovorů uvádíme pouze odkaz n
 - [Otázky Václava Moravce: Chudí zaměstnanci státu](https://www.ceskatelevize.cz/porady/1126672097-otazky-vaclava-moravce/224411030500901/) — Česká televize, 1. září 2024 (video, pouze odkaz)
 - [Ekonomka Zuzana Havránková: Změním fakta, změním názor](https://meta-analysis.cz/komentare/zi-iv-hrot-zmenim-fakta/) — Hrot, 31. srpna 2024
 - [Hodnota peněz by měla být stabilní podobně jako délka metru](https://meta-analysis.cz/komentare/zi-hodnota-penez-by-mela-byt-stabilni-podobne-j/) — Hospodářské noviny, 28. června 2024
+- [Práce při studiu? Ani 20 hodin týdně známky nezhorší, říká vědkyně](https://meta-analysis.cz/komentare/zi-iv-sz-prace-pri-studiu/) — Seznam Zprávy, 16. června 2024
 - [Ideální inflace je nulová. ČNB může v budoucnu nakupovat bitcoin do rezerv](https://www.youtube.com/watch?v=dVgcnhFbSc8) — Kryptoplebs, 18. března 2024 (video, pouze odkaz)
 - [ČNB je rozbitá. Nezvládla inflaci a bojí se správně investovat](https://meta-analysis.cz/komentare/iv-sz-rozbita/) — Seznam Zprávy, 26. prosince 2023
 - [Zuzana Havránková: Menší třídy nenapomáhají lepším výsledkům žáků ve školách](https://www.buzzsprout.com/1784031/episodes/14165937-zuzana-havrankova-mensi-tridy-nenapomahaji-lepsim-vysledkum-zaku-ve-skolach) — De Facto (FSV UK), 19. prosince 2023 (audio, pouze odkaz)
@@ -177,9 +178,12 @@ Rozhovory pro česká média. U audio a video rozhovorů uvádíme pouze odkaz n
 - [Ať se ČNB inspiruje ve Švýcarsku. Může vydělávat stamiliardy](https://meta-analysis.cz/komentare/iv-sz-cnb-svycarsko/) — Seznam Zprávy, 15. června 2021
 - [Bojím se, že papírové peníze v Česku skončí do pěti let, říká ekonom](https://meta-analysis.cz/komentare/iv-idnes-papirove-penize/) — iDNES.cz, 18. dubna 2021
 - [Krize je typický náhodný jev. Mýlíme se častěji než jiní vědci, říká ekonomka roku Zuzana Havránková](https://meta-analysis.cz/komentare/zi-iv-hn-krize-nahodny-jev/) — Hospodářské noviny, 21. prosince 2018
+- [Proč se stěhovat právě do Litomyšle?](https://meta-analysis.cz/komentare/iv-lilie-proc-se-stehovat/) — Lilie, červen 2018
 - [Nejcitovanější český ekonom: Další krize určitě nevznikne u nás](https://meta-analysis.cz/komentare/iv-roklen24/) — Roklen24, 22. května 2018
 - [Nejcitovanější český ekonom: Dům je pro mě spotřeba](https://www.cnb.cz/cs/o_cnb/vlog-cnb/Nejcitovanejsi-cesky-ekonom-Dum-je-pro-me-spotreba/) — Česká národní banka, 26. dubna 2018 (video, pouze odkaz)
 - [Sázkaři jsou k vítězství Babiše skeptičtější než sociologové, říká mladá ekonomka, která kombinuje předvolební průzkumy a kurzy](https://meta-analysis.cz/komentare/zi-iv-hn-sazkari-babis/) — Hospodářské noviny, 16. října 2017
+- [Spojuje průzkumy a sázkařské kurzy. ČSSD slábne, stoupá SPD a piráti. Babiš asi nesestaví vládu sám, říká](https://meta-analysis.cz/komentare/zi-hn-cssd-slabne/) — Hospodářské noviny, 16. října 2017
+- [Česká ekonomka předvídá volby podle úspěšných Američanů. Její systém stojí i na kurzech sázkařů](https://meta-analysis.cz/komentare/zi-hn-predvida-volby/) — Hospodářské noviny, 29. srpna 2017
 
 ## In English
 
@@ -203,6 +207,14 @@ Columns and commentary written in English — policy pieces for VoxEU/CEPR and p
 - [Natural resources and economic growth: the research evidence](https://meta-analysis.cz/komentare/globaldev-natural-resources/) — GlobalDev Blog, 13. února 2018
 - [Daylight saving saves no energy](https://meta-analysis.cz/komentare/voxeu-daylight-saving/) — VoxEU / CEPR, 2. prosince 2017
 - [Headline inflation measures shouldn't ignore costs of home ownership](https://meta-analysis.cz/komentare/voxeu-home-ownership/) — VoxEU / CEPR, 12. září 2017
+
+## Tiskové zprávy
+
+Tiskové zprávy k výzkumným projektům — rozesílané redakcím, zde v původním znění.
+
+- [Drahoš a Zeman mají stejnou šanci na zvolení](https://meta-analysis.cz/komentare/zi-tz-prezidentske-volby/) — KdoVyhrajeVolby.cz, 8. listopadu 2017
+- [KdoVyhrajeVolby.cz: Do sněmovny se může dostat rekordní počet stran](https://meta-analysis.cz/komentare/zi-tz-projekce-mandatu/) — KdoVyhrajeVolby.cz, 6. září 2017
+- [Vědci z Univerzity Karlovy vyvinuli volební model, který denně počítá aktuální preference](https://meta-analysis.cz/komentare/zi-tz-agregator-preferenci/) — KdoVyhrajeVolby.cz, 25. srpna 2017
 
 ## Posts (ze sítí)
 

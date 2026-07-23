@@ -6,6 +6,7 @@ Build meta-analysis.cz/komentare/ — Czech-language publicistika in three secti
     /komentare/celostatni/   national op-eds
     /komentare/litomysl/     Lilie columns (Litomyšl municipal monthly)
     /komentare/rozhovory/    interviews
+    /komentare/tiskove/      press releases
     /komentare/<slug>/       one page per text item
     /komentare/feed.xml      RSS, full text
 
@@ -15,7 +16,8 @@ Frontmatter
     outlet      required   "Hospodářské noviny", "Lilie", "CzechCrunch", …
     date        required   YYYY-MM-DD  (Lilie: first of the issue month)
     headline    required
-    category               celostatni | litomysl | rozhovory   (default celostatni)
+    category               celostatni | litomysl | rozhovory | english | tiskove
+                           (default celostatni)
     media                  text | video | audio                (default text)
     url                    link to the original
     byline                 comma-separated; every name is credited
@@ -23,6 +25,8 @@ Frontmatter
     issue                  for Lilie, e.g. "2025/10"
     date_precision         "month" when only the issue month is known
     body_note              rendered as an editorial note above the text
+    written_by             who wrote a reported piece the author only speaks in
+    written_by_type        "Person" when written_by names a journalist, not a newsroom
 
 Design notes
   * The complete item list is in the HTML. JavaScript only filters what is already
@@ -101,13 +105,22 @@ SECTIONS = {
              "and posts on meta-analysis methods for MAER-Net.",
         lang="en",
     ),
+    # Kept apart from the commentary on purpose. A press release is written to be
+    # quoted by a newsroom, not published as it stands, so filing it under
+    # "Celostátní komentáře" would misdescribe both it and the section.
+    "tiskove": dict(
+        title="Tiskové zprávy",
+        short="Tiskové",
+        desc="Tiskové zprávy k výzkumným projektům — rozesílané redakcím, "
+             "zde v původním znění.",
+    ),
 }
 for _k, _v in SECTIONS.items():
     _v.setdefault("lang", "cs")
 
 HUB_DESC = ("Publicistika Tomáše Havránka a Zuzany Havránkové: komentáře pro celostátní média, sloupky pro "
-            "litomyšlskou Lilii, rozhovory a kratší příspěvky ze sítí. Texty jsou zde "
-            "archivovány v plném znění s odkazem na původní vydání.")
+            "litomyšlskou Lilii, rozhovory, tiskové zprávy a kratší příspěvky ze sítí. "
+            "Texty jsou zde archivovány v plném znění s odkazem na původní vydání.")
 # What the reader sees first. The sentence about full text and original sources is true
 # and worth saying to a crawler, but it delays the actual list, so it stays in HUB_DESC
 # (the meta description) and off the page.
@@ -115,11 +128,12 @@ HUB_DESC = ("Publicistika Tomáše Havránka a Zuzany Havránkové: komentáře 
 # posts would surface as 22 "new" entries in every subscriber's reader. It therefore
 # needs its own description rather than the hub's, which now mentions those posts.
 FEED_DESC = ("Publicistika Tomáše Havránka a Zuzany Havránkové: komentáře pro celostátní "
-             "média, sloupky pro litomyšlskou Lilii a rozhovory, v plném znění. Kratší "
-             "příspěvky ze sítí jsou mimo tento kanál, na "
+             "média, sloupky pro litomyšlskou Lilii, rozhovory a tiskové zprávy, "
+             "v plném znění. Kratší příspěvky ze sítí jsou mimo tento kanál, na "
              "https://meta-analysis.cz/komentare/posts/.")
 HUB_LEDE = ("Publicistika Tomáše Havránka a Zuzany Havránkové: komentáře pro celostátní "
-            "média, sloupky pro litomyšlskou Lilii, rozhovory a kratší příspěvky ze sítí.")
+            "média, sloupky pro litomyšlskou Lilii, rozhovory, tiskové zprávy a kratší "
+            "příspěvky ze sítí.")
 
 # genitive, for a full date: "5. října 2019"
 MONTHS = ["ledna", "února", "března", "dubna", "května", "června",
@@ -394,7 +408,8 @@ def shell(title, desc, canonical, jsonld, body, active, extra_head="", lang="cs"
         "economics, and is an affiliate researcher at Stanford METRICS. She publishes in "
         "English as Zuzana Irsova."
         "</p><p class=\"about-bio\">"
-        "This section archives their published commentary, columns and interviews."
+        "This section archives their published commentary, columns, interviews and "
+        "press releases."
         if _en else
         "<strong>Tomáš Havránek</strong> je profesor ekonomie na Institutu ekonomických "
         "studií FSV Univerzity Karlovy v Praze. Zabývá se měnovou politikou, metaanalýzou "
@@ -406,7 +421,8 @@ def shell(title, desc, canonical, jsonld, body, active, extra_head="", lang="cs"
         "je affiliate researcher ve Stanford METRICS. V angličtině publikuje jako "
         "Zuzana Irsova."
         "</p><p class=\"about-bio\">"
-        "Tato stránka archivuje jejich publicistiku — komentáře, sloupky a rozhovory.")
+        "Tato stránka archivuje jejich publicistiku — komentáře, sloupky, rozhovory "
+        "a tiskové zprávy.")
     return f"""<!DOCTYPE html>
 <html lang="{lang}">
 <head>
@@ -493,6 +509,7 @@ FILTER = """    <div class="filter">
         <button class="chip" data-cat="litomysl" aria-pressed="false">Litomyšl</button>
         <button class="chip" data-cat="rozhovory" aria-pressed="false">Rozhovory</button>
         <button class="chip" data-cat="english" aria-pressed="false">English</button>
+        <button class="chip" data-cat="tiskove" aria-pressed="false">Tiskové</button>
         <button class="chip" data-cat="zuzana" aria-pressed="false">Zuzana</button>
       </div>
       <p class="count js-only" id="count" role="status" aria-live="polite"></p>
@@ -597,9 +614,13 @@ def write_item(a):
     lang = a.get("lang") or SECTIONS[a["category"]]["lang"]
     names = people(a.get("byline"))
     is_iv = a["category"] == "rozhovory"
+    # schema.org has no PressRelease type, so a press release is an Article carrying
+    # genre — never OpinionNewsArticle, which would claim it is the author's opinion
+    # column when it is material written for newsrooms to quote.
+    is_pr = a["category"] == "tiskove"
 
     node = {
-        "@type": "Article" if is_iv else "OpinionNewsArticle",
+        "@type": "Article" if (is_iv or is_pr) else "OpinionNewsArticle",
         "@id": canonical + "#article",
         "mainEntityOfPage": canonical,
         "url": canonical,
@@ -615,13 +636,19 @@ def write_item(a):
     if is_iv:
         node["about"] = persons
         if a.get("written_by"):
-            node["author"] = [{"@type": "Organization", "name": a["written_by"]}]
+            # written_by is usually a newsroom or an institute, but a reported piece
+            # built on an interview is signed by a person, and typing that person as
+            # an Organization would be a plain factual error in the markup.
+            node["author"] = [{"@type": a.get("written_by_type", "Organization"),
+                               "name": a["written_by"]}]
         elif a.get("interviewer"):
             node["author"] = [{"@type": "Person", "name": a["interviewer"]}]
         else:
             node["author"] = [{"@type": "Organization", "name": a["outlet"]}]
     else:
         node["author"] = persons
+    if is_pr:
+        node["genre"] = "press release"
     if a.get("url"):
         node["isBasedOn"] = a["url"]
     if a.get("date_precision") == "month":
@@ -644,10 +671,19 @@ def write_item(a):
     if a.get("interviewer"):
         meta.append(f'<span>ptal se: {esc(a["interviewer"])}</span>')
 
-    where = OUTLET_IN.get(a["outlet"], f'v médiu {a["outlet"]}')
-    prov = (f'Poprvé vyšlo {where} {cs_date(a["date"], a.get("date_precision"), "cs")}.'
-            + (f' <a href="{esc(a["url"])}" rel="external">Původní vydání</a>.'
-               if a.get("url") else ""))
+    if is_pr:
+        # "Poprvé vyšlo" would be false: a release is sent, and whether anyone printed
+        # it is a separate question the archive does not answer.
+        prov = (f'Tisková zpráva rozeslaná redakcím '
+                f'{cs_date(a["date"], a.get("date_precision"), "cs")}.'
+                + (f' <a href="{esc(a["url"])}" rel="external">'
+                   f'{esc(a.get("url_label", "Web projektu"))}</a>.'
+                   if a.get("url") else ""))
+    else:
+        where = OUTLET_IN.get(a["outlet"], f'v médiu {a["outlet"]}')
+        prov = (f'Poprvé vyšlo {where} {cs_date(a["date"], a.get("date_precision"), "cs")}.'
+                + (f' <a href="{esc(a["url"])}" rel="external">Původní vydání</a>.'
+                   if a.get("url") else ""))
     # be honest about which text this is: an author manuscript can differ from what
     # the magazine printed, and for at least one Lilie column it demonstrably does
     if a.get("source") == "draft":
@@ -922,7 +958,11 @@ def write_machine_readable(items, social=()):
             d["source_markdown"] = f"{BASE}/src/{a['file']}"
             d["word_count"] = len(a["body"].split())
             d["text"] = a["body"]
-        d["provenance"] = "self_published" if SELF_PUBLISHED.search(a["outlet"]) else "editorial"
+        d["provenance"] = ("self_published"
+                           if (SELF_PUBLISHED.search(a["outlet"])
+                               or a["category"] == "tiskove") else "editorial")
+        if a["category"] == "tiskove":
+            d["genre"] = "press_release"
         docs.append(d)
 
     # The social posts are on one shared page rather than a page each, but they are
@@ -1498,7 +1538,13 @@ def check():
         _dp = (KDIR / "data" / "index.html").read_text(encoding="utf-8")
         if f"{expected} záznamů" not in _dp:
             fails.append(f"data page does not report {expected} záznamů")
-        _br = [int(x) for x in re.findall(r"—\s*(\d+)", re.sub(r"<[^>]+>", " ", _dp))][:3]
+        # match the breakdown rows themselves. An earlier version took the first three
+        # "— N" runs in the stripped page, which silently broke the day a fourth
+        # text_status appeared: the sum then covered part of the list and failed.
+        _br = [int(x) for x in
+               re.findall(r"<li><strong>[a-z_]+</strong> — (\d+)</li>", _dp)]
+        if not _br:
+            fails.append("data page has no text_status breakdown rows")
         if sum(_br) != expected:
             fails.append(f"data page text_status breakdown sums to {sum(_br)}, "
                          f"not {expected}")
