@@ -8,11 +8,12 @@ headline: "Bias Correction Made Easy: A Web App for Meta-Analysis at EasyMeta.or
 byline: "Zuzana Irsova"
 word_count: "268"
 perex: "Run MAIVE, PET-PEESE, and EK with one click — no coding, no installation."
+body_note: "Text je ponechán v původním znění. Aplikace se mezitím přestěhovala na spuriousprecision.com — easymeta.org sice přesměrovává, ale odkaz na demo se rozpadl, takže míří rovnou na novou adresu."
 ---
 
 # Bias Correction Made Easy: A Web App for Meta-Analysis at EasyMeta.org
 
-We are happy to share a new tool now available at [EasyMeta.org](https://www.easymeta.org/). The app makes the new MAIVE method (Meta-Analysis Instrumental Variable Estimator, published yesterday in [*Nature Communications*](https://www.nature.com/articles/s41467-025-63261-0)) easy to apply with a few clicks. The site offers a [demo dataset](https://www.easymeta.org/demo) you can run instantly.
+We are happy to share a new tool now available at [EasyMeta.org](https://www.easymeta.org/). The app makes the new MAIVE method (Meta-Analysis Instrumental Variable Estimator, published yesterday in [*Nature Communications*](https://www.nature.com/articles/s41467-025-63261-0)) easy to apply with a few clicks. The site offers a [demo dataset](https://www.spuriousprecision.com/demo) you can run instantly.
 
 At the same time, the app allows for seamless use of methods well known in the MAER-Net community: PET-PEESE and the Endogenous Kink model. Until now, these approaches were available only in R or Stata. Now they can be run with a single click, no software installation needed.
 
@@ -24,4 +25,4 @@ We'd be very grateful if you could use your favorite social network to share thi
 
 Special thanks to **Petr Čala** for creating the app, and to **Heiko Rachinger** and **Pedro Bom** for developing the R package that powers it.
 
-👉 Try a demo at [EasyMeta.org/demo](https://www.easymeta.org/demo)
+👉 Try a demo at [EasyMeta.org/demo](https://www.spuriousprecision.com/demo)

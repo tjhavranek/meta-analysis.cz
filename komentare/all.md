@@ -1,6 +1,6 @@
 # Komentáře — Tomáš Havránek, Zuzana Havránková
 
-Publicistika Tomáše Havránka a Zuzany Havránkové: komentáře pro celostátní média, sloupky pro litomyšlskou Lilii, rozhovory, tiskové zprávy a kratší příspěvky ze sítí. Texty jsou zde archivovány v plném znění s odkazem na původní vydání.
+Publicistika Tomáše Havránka a Zuzany Havránkové: komentáře pro celostátní média, sloupky pro litomyšlskou Lilii, rozhovory a kratší příspěvky ze sítí. Texty jsou zde archivovány v plném znění s odkazem na původní vydání.
 
 Tento soubor obsahuje plné znění všech textových položek (171 z celkem 187). Zbývající položky jsou audio a video, které archiv vede pouze odkazem, a v tomto souboru nejsou; jejich metadata najdete v index.json a corpus.jsonl. Samostatně jsou vedeny kratší příspěvky ze sociálních sítí (22), psané převážně anglicky. Mají vlastní stránku https://meta-analysis.cz/komentare/posts/ a v index.json i corpus.jsonl jsou označeny jako genre=social_post.
 
@@ -740,7 +740,7 @@ We do not claim MAIVE is a cure-all. But it is a practical safeguard against a f
 
 Zdroj: https://www.maer-net.org/post/bias-correction-made-easy-a-web-app-for-meta-analysis-at-easymeta-org
 
-We are happy to share a new tool now available at [EasyMeta.org](https://www.easymeta.org/). The app makes the new MAIVE method (Meta-Analysis Instrumental Variable Estimator, published yesterday in [*Nature Communications*](https://www.nature.com/articles/s41467-025-63261-0)) easy to apply with a few clicks. The site offers a [demo dataset](https://www.easymeta.org/demo) you can run instantly.
+We are happy to share a new tool now available at [EasyMeta.org](https://www.easymeta.org/). The app makes the new MAIVE method (Meta-Analysis Instrumental Variable Estimator, published yesterday in [*Nature Communications*](https://www.nature.com/articles/s41467-025-63261-0)) easy to apply with a few clicks. The site offers a [demo dataset](https://www.spuriousprecision.com/demo) you can run instantly.
 
 At the same time, the app allows for seamless use of methods well known in the MAER-Net community: PET-PEESE and the Endogenous Kink model. Until now, these approaches were available only in R or Stata. Now they can be run with a single click, no software installation needed.
 
@@ -752,7 +752,7 @@ We'd be very grateful if you could use your favorite social network to share thi
 
 Special thanks to **Petr Čala** for creating the app, and to **Heiko Rachinger** and **Pedro Bom** for developing the R package that powers it.
 
-👉 Try a demo at [EasyMeta.org/demo](https://www.easymeta.org/demo)
+👉 Try a demo at [EasyMeta.org/demo](https://www.spuriousprecision.com/demo)
 
 ---
 
@@ -6182,7 +6182,7 @@ Below I offer 12 subjective recommendations that I miss in the current guideline
 - **General-to-specific**. Instead of sequential t-tests, in multiple MRA it is recommended to use the more holistic general-to-specific approach due to [Hendry and colleagues](https://ideas.repec.org/p/fip/fedgif/838.html). Alternatively, the meta-analyst may want to employ Bayesian or frequentist model averaging to address [model uncertainty](https://www.maer-net.org/post/model-averaging).
 - **Sensitivity of model averaging**. If the meta-analyst uses Bayesian or frequentist model averaging, she or he should report robustness checks that show how the results depend on the selected priors (in the Bayesian case) or the selected weights (Mallows or other; in the frequentist case). The procedure employed to simplify model space (Markov Chain Monte Carlo or orthogonalization) should be mentioned.
 - **Collinearity**. The meta-analyst is encouraged to report collinearity statistics for multiple MRA, for example the correlation matrix or variance-inflation factors. Note that collinearity increases when inverse-variance weights are used.
-- **Robustness checks**. The meta-analyst should report robustness checks to the baseline test of publication bias and the underlying effect. Note that different estimators have different performance in different environments (as shown by [Carter et al.](https://journals.sagepub.com/doi/abs/10.1177/2515245919847196?journalCode=ampa)). Choose several robustness checks, for example: [PET-PEESE](https://onlinelibrary.wiley.com/doi/abs/10.1002/jrsm.1095), [WAAP](https://onlinelibrary.wiley.com/doi/abs/10.1111/ecoj.12461), [Bom & Rachinger](https://onlinelibrary.wiley.com/doi/abs/10.1002/jrsm.1352), [Furukawa](https://economics.mit.edu/files/12424), [Hedges ](https://projecteuclid.org/euclid.ss/1177011364)(and variants thereof), [Andrews & Kasy](https://www.aeaweb.org/articles?id=10.1257/aer.20180310), [p-curve](https://papers.ssrn.com/sol3/papers.cfm?abstract_id=2377290), [p-uniform](https://osf.io/preprints/metaarxiv/zqjr9/).
+- **Robustness checks**. The meta-analyst should report robustness checks to the baseline test of publication bias and the underlying effect. Note that different estimators have different performance in different environments (as shown by [Carter et al.](https://journals.sagepub.com/doi/abs/10.1177/2515245919847196?journalCode=ampa)). Choose several robustness checks, for example: [PET-PEESE](https://onlinelibrary.wiley.com/doi/abs/10.1002/jrsm.1095), [WAAP](https://onlinelibrary.wiley.com/doi/abs/10.1111/ecoj.12461), [Bom & Rachinger](https://onlinelibrary.wiley.com/doi/abs/10.1002/jrsm.1352), [Furukawa](https://ideas.repec.org/p/zbw/esprep/194798.html), [Hedges ](https://projecteuclid.org/euclid.ss/1177011364)(and variants thereof), [Andrews & Kasy](https://www.aeaweb.org/articles?id=10.1257/aer.20180310), [p-curve](https://papers.ssrn.com/sol3/papers.cfm?abstract_id=2377290), [p-uniform](https://osf.io/preprints/metaarxiv/zqjr9/).
 - **Data**. The meta-analyst is encouraged to provide the data to the editor and referees so that they can check their structure. This can be done either through the journal's submission system or (preferably) publicly through the author's website.
 - **Economic significance**. The meta-analyst should discuss the economic significance of results. For example, publication bias or the underlying effect can be significant statistically, but not material in practice. If partial correlation coefficients are used, [Doucouliagos's guidelines](https://ideas.repec.org/p/dkn/econwp/eco_2011_5.html) for the practical strength of the effect should be consulted.
 
@@ -6270,7 +6270,7 @@ We are not the first to highlight the disconnect between the Cobb-Douglas specif
 - Chirinko, R. S. (2002): “Corporate Taxation, Capital Formation, and the Substitution Elasticity between Labor and Capital.” National Tax Journal 55(2): pp. 339-355.
 - Chirinko, R. S. (2008): “σ: The Long and Short of it.” Journal of Macroeconomics 30(2): pp. 671 686.
 - Erceg, C. J., L. Guerrieri, & C. Gust (2008): “Trade Adjustment and the Composition of Trade.” Journal of Economic Dynamics and Control 32(8): pp. 2622-2650.
-- Furukawa, C. (2019): “Publication Bias under Aggregation Frictions: Theory, Evidence, and a New Correction Method.” [Unpublished paper](https://economics.mit.edu/files/12424), MIT.
+- Furukawa, C. (2019): “Publication Bias under Aggregation Frictions: Theory, Evidence, and a New Correction Method.” [Unpublished paper](https://ideas.repec.org/p/zbw/esprep/194798.html), MIT.
 - Gechert, S., T. Havranek, Z. Irsova, & D. Kolcunova (2019): “Death to the Cobb-Douglas Production Function.” [FMM working paper 51](https://www.boeckler.de/pdf/p_fmm_wp_imk_51_2019.pdf), Hans-Böckler-Stiftung.
 - Ioannidis, J., T. Stanley, & H. Doucouliagos (2017): “The Power of Bias in Economics Research.” Economic Journal 127(605): F236-F265.
 - Karabarbounis, L. & B. Neiman (2013): “The Global Decline of the Labor Share.” Quarterly Journal of Economics 129(1): pp. 61-103.
@@ -6414,7 +6414,7 @@ Why? With more than 30 variables, one would have to compute over a billion, 2^30
 
 ## Priors Matter
 
-A disclaimer is in order. If you decide to use BMA, note that different priors will give you different results. The natural baseline is to use **agnostic priors**: for example, that all coefficients are zero and that the weight of this prior is the same as the weight of one observation of data (so, [pretty small](https://cran.r-project.org/web/packages/BMS/vignettes/bms.pdf)). You must also specify the prior on model space. Again, the natural starting point is a prior in which all models have the same probability. In any case, robustness checks are crucial, and doing frequentist together with Bayesian model averaging in the same paper often yields the ultimate robustness check.
+A disclaimer is in order. If you decide to use BMA, note that different priors will give you different results. The natural baseline is to use **agnostic priors**: for example, that all coefficients are zero and that the weight of this prior is the same as the weight of one observation of data (so, [pretty small](https://cran.r-project.org/web/packages/BMS/vignettes/bmsmanual.pdf)). You must also specify the prior on model space. Again, the natural starting point is a prior in which all models have the same probability. In any case, robustness checks are crucial, and doing frequentist together with Bayesian model averaging in the same paper often yields the ultimate robustness check.
 
 Yes, [frequentist techniques](https://link.springer.com/article/10.1007/s11424-009-9198-y) do not require priors (not explicitly, anyway) – but you have to choose your assumptions concerning optimal weights. In my eyes, the challenge is essentially the same, but concealed. Mark stresses the importance of priors, but the same goes for assumptions in the frequentist setting:
 

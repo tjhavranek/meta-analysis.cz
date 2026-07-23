@@ -49,7 +49,7 @@ We are not the first to highlight the disconnect between the Cobb-Douglas specif
 - Chirinko, R. S. (2002): “Corporate Taxation, Capital Formation, and the Substitution Elasticity between Labor and Capital.” National Tax Journal 55(2): pp. 339-355.
 - Chirinko, R. S. (2008): “σ: The Long and Short of it.” Journal of Macroeconomics 30(2): pp. 671 686.
 - Erceg, C. J., L. Guerrieri, & C. Gust (2008): “Trade Adjustment and the Composition of Trade.” Journal of Economic Dynamics and Control 32(8): pp. 2622-2650.
-- Furukawa, C. (2019): “Publication Bias under Aggregation Frictions: Theory, Evidence, and a New Correction Method.” [Unpublished paper](https://economics.mit.edu/files/12424), MIT.
+- Furukawa, C. (2019): “Publication Bias under Aggregation Frictions: Theory, Evidence, and a New Correction Method.” [Unpublished paper](https://ideas.repec.org/p/zbw/esprep/194798.html), MIT.
 - Gechert, S., T. Havranek, Z. Irsova, & D. Kolcunova (2019): “Death to the Cobb-Douglas Production Function.” [FMM working paper 51](https://www.boeckler.de/pdf/p_fmm_wp_imk_51_2019.pdf), Hans-Böckler-Stiftung.
 - Ioannidis, J., T. Stanley, & H. Doucouliagos (2017): “The Power of Bias in Economics Research.” Economic Journal 127(605): F236-F265.
 - Karabarbounis, L. & B. Neiman (2013): “The Global Decline of the Labor Share.” Quarterly Journal of Economics 129(1): pp. 61-103.

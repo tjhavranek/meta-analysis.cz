@@ -84,8 +84,8 @@ SECTIONS = {
     "celostatni": dict(
         title="Celostátní komentáře",
         short="Celostátní",
-        desc="Komentáře, sloupky a tiskové zprávy pro celostátní média — měnová "
-             "politika, inflace, veřejné finance, důchody a ceny energií.",
+        desc="Komentáře a sloupky pro celostátní média — měnová politika, inflace, "
+             "veřejné finance, důchody a ceny energií.",
     ),
     "litomysl": dict(
         title="Litomyšlské sloupky",
@@ -112,8 +112,8 @@ for _k, _v in SECTIONS.items():
     _v.setdefault("lang", "cs")
 
 HUB_DESC = ("Publicistika Tomáše Havránka a Zuzany Havránkové: komentáře pro celostátní média, sloupky pro "
-            "litomyšlskou Lilii, rozhovory, tiskové zprávy a kratší příspěvky ze sítí. "
-            "Texty jsou zde archivovány v plném znění s odkazem na původní vydání.")
+            "litomyšlskou Lilii, rozhovory a kratší příspěvky ze sítí. Texty jsou zde "
+            "archivovány v plném znění s odkazem na původní vydání.")
 # What the reader sees first. The sentence about full text and original sources is true
 # and worth saying to a crawler, but it delays the actual list, so it stays in HUB_DESC
 # (the meta description) and off the page.
@@ -121,12 +121,11 @@ HUB_DESC = ("Publicistika Tomáše Havránka a Zuzany Havránkové: komentáře 
 # posts would surface as 22 "new" entries in every subscriber's reader. It therefore
 # needs its own description rather than the hub's, which now mentions those posts.
 FEED_DESC = ("Publicistika Tomáše Havránka a Zuzany Havránkové: komentáře pro celostátní "
-             "média, sloupky pro litomyšlskou Lilii, rozhovory a tiskové zprávy, "
-             "v plném znění. Kratší příspěvky ze sítí jsou mimo tento kanál, na "
+             "média, sloupky pro litomyšlskou Lilii a rozhovory, v plném znění. Kratší "
+             "příspěvky ze sítí jsou mimo tento kanál, na "
              "https://meta-analysis.cz/komentare/posts/.")
 HUB_LEDE = ("Publicistika Tomáše Havránka a Zuzany Havránkové: komentáře pro celostátní "
-            "média, sloupky pro litomyšlskou Lilii, rozhovory, tiskové zprávy a kratší "
-            "příspěvky ze sítí.")
+            "média, sloupky pro litomyšlskou Lilii, rozhovory a kratší příspěvky ze sítí.")
 
 # genitive, for a full date: "5. října 2019"
 MONTHS = ["ledna", "února", "března", "dubna", "května", "června",
@@ -401,8 +400,7 @@ def shell(title, desc, canonical, jsonld, body, active, extra_head="", lang="cs"
         "economics, and is an affiliate researcher at Stanford METRICS. She publishes in "
         "English as Zuzana Irsova."
         "</p><p class=\"about-bio\">"
-        "This section archives their published commentary, columns, interviews and "
-        "press releases."
+        "This section archives their published commentary, columns and interviews."
         if _en else
         "<strong>Tomáš Havránek</strong> je profesor ekonomie na Institutu ekonomických "
         "studií FSV Univerzity Karlovy v Praze. Zabývá se měnovou politikou, metaanalýzou "
@@ -414,8 +412,7 @@ def shell(title, desc, canonical, jsonld, body, active, extra_head="", lang="cs"
         "je affiliate researcher ve Stanford METRICS. V angličtině publikuje jako "
         "Zuzana Irsova."
         "</p><p class=\"about-bio\">"
-        "Tato stránka archivuje jejich publicistiku — komentáře, sloupky, rozhovory "
-        "a tiskové zprávy.")
+        "Tato stránka archivuje jejich publicistiku — komentáře, sloupky a rozhovory.")
     return f"""<!DOCTYPE html>
 <html lang="{lang}">
 <head>
