@@ -6,7 +6,6 @@ Build meta-analysis.cz/komentare/ — Czech-language publicistika in three secti
     /komentare/celostatni/   national op-eds
     /komentare/litomysl/     Lilie columns (Litomyšl municipal monthly)
     /komentare/rozhovory/    interviews
-    /komentare/tiskove/      press releases
     /komentare/<slug>/       one page per text item
     /komentare/feed.xml      RSS, full text
 
@@ -16,8 +15,11 @@ Frontmatter
     outlet      required   "Hospodářské noviny", "Lilie", "CzechCrunch", …
     date        required   YYYY-MM-DD  (Lilie: first of the issue month)
     headline    required
-    category               celostatni | litomysl | rozhovory | english | tiskove
+    category               celostatni | litomysl | rozhovory | english
                            (default celostatni)
+    genre                  "press_release" — files under celostatni but is not an
+                           op-ed: Article rather than OpinionNewsArticle, and its
+                           provenance line reads "rozeslaná redakcím"
     media                  text | video | audio                (default text)
     url                    link to the original
     byline                 comma-separated; every name is credited
@@ -82,8 +84,8 @@ SECTIONS = {
     "celostatni": dict(
         title="Celostátní komentáře",
         short="Celostátní",
-        desc="Komentáře a sloupky pro celostátní média — měnová politika, inflace, "
-             "veřejné finance, důchody a ceny energií.",
+        desc="Komentáře, sloupky a tiskové zprávy pro celostátní média — měnová "
+             "politika, inflace, veřejné finance, důchody a ceny energií.",
     ),
     "litomysl": dict(
         title="Litomyšlské sloupky",
@@ -104,15 +106,6 @@ SECTIONS = {
         desc="Columns and commentary written in English — policy pieces for VoxEU/CEPR "
              "and posts on meta-analysis methods for MAER-Net.",
         lang="en",
-    ),
-    # Kept apart from the commentary on purpose. A press release is written to be
-    # quoted by a newsroom, not published as it stands, so filing it under
-    # "Celostátní komentáře" would misdescribe both it and the section.
-    "tiskove": dict(
-        title="Tiskové zprávy",
-        short="Tiskové",
-        desc="Tiskové zprávy k výzkumným projektům — rozesílané redakcím, "
-             "zde v původním znění.",
     ),
 }
 for _k, _v in SECTIONS.items():
@@ -509,7 +502,6 @@ FILTER = """    <div class="filter">
         <button class="chip" data-cat="litomysl" aria-pressed="false">Litomyšl</button>
         <button class="chip" data-cat="rozhovory" aria-pressed="false">Rozhovory</button>
         <button class="chip" data-cat="english" aria-pressed="false">English</button>
-        <button class="chip" data-cat="tiskove" aria-pressed="false">Tiskové</button>
         <button class="chip" data-cat="zuzana" aria-pressed="false">Zuzana</button>
       </div>
       <p class="count js-only" id="count" role="status" aria-live="polite"></p>
@@ -617,7 +609,7 @@ def write_item(a):
     # schema.org has no PressRelease type, so a press release is an Article carrying
     # genre — never OpinionNewsArticle, which would claim it is the author's opinion
     # column when it is material written for newsrooms to quote.
-    is_pr = a["category"] == "tiskove"
+    is_pr = a.get("genre") == "press_release"
 
     node = {
         "@type": "Article" if (is_iv or is_pr) else "OpinionNewsArticle",
@@ -960,9 +952,9 @@ def write_machine_readable(items, social=()):
             d["text"] = a["body"]
         d["provenance"] = ("self_published"
                            if (SELF_PUBLISHED.search(a["outlet"])
-                               or a["category"] == "tiskove") else "editorial")
-        if a["category"] == "tiskove":
-            d["genre"] = "press_release"
+                               or a.get("genre") == "press_release") else "editorial")
+        if a.get("genre"):
+            d["genre"] = a["genre"]
         docs.append(d)
 
     # The social posts are on one shared page rather than a page each, but they are

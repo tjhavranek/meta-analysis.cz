@@ -12,11 +12,10 @@
    "publisher_excerpt": 2
   },
   "by_section": {
-   "Celostátní komentáře": 70,
+   "Celostátní komentáře": 73,
    "Litomyšlské sloupky": 48,
    "Rozhovory": 48,
    "In English": 18,
-   "Tiskové zprávy": 3,
    "Posts (ze sítí)": 22
   }
  },
@@ -29,13 +28,13 @@
  "files": {
   "corpus.jsonl": {
    "url": "https://meta-analysis.cz/komentare/corpus.jsonl",
-   "bytes": 1256097,
-   "sha256": "fab7d4faa01f8b41bbed9a2eb484d9a547a9e79789b04ff6b9b20c3b5c3d802d"
+   "bytes": 1256130,
+   "sha256": "cbe645d219845bc5151a8464d02cdf876d46bec5a952001e015d41dd43c49ec2"
   },
   "index.json": {
    "url": "https://meta-analysis.cz/komentare/index.json",
-   "bytes": 1276232,
-   "sha256": "535a74ea261058cadfb01ba24aeb73568e8e7b0a5cbc5b2f6b14c7f9442fc3f8"
+   "bytes": 1276265,
+   "sha256": "cd4c81f6bfe0e752a8207392069367015c6b1d00af6329b9c2dde6673db5271d"
   },
   "all.md": {
    "url": "https://meta-analysis.cz/komentare/all.md",
@@ -44,13 +43,13 @@
   },
   "llms.txt": {
    "url": "https://meta-analysis.cz/komentare/llms.txt",
-   "bytes": 37871,
-   "sha256": "1d5ab74ddaa71036e797c04990e73e775541466a611775fb95e3dae30bddfb90"
+   "bytes": 37765,
+   "sha256": "38345231c733bb6e8ee72c961ab56801db4a4005696f4dcaff0d281ccbde04e1"
   },
   "feed.xml": {
    "url": "https://meta-analysis.cz/komentare/feed.xml",
-   "bytes": 1218927,
-   "sha256": "23e86b6904dc6ddb2b7bc489a6be79d7fb60bca4c6849f989dcdd81770e7edaf"
+   "bytes": 1218951,
+   "sha256": "182e79d6d928aea48e66978d609b424dcd6c0e44bb84b7e3c523e7496bf00f3f"
   }
  },
  "generated_from": [

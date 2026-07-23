@@ -8,10 +8,10 @@ date: "2018-06-01"
 date_precision: "month"
 headline: "Proč se stěhovat právě do Litomyšle?"
 byline: "Tomáš Havránek"
-written_by: "redakce Lilie"
-word_count: "398"
+written_by: "Michele Vojáček"
+written_by_type: "Person"
 source: "image"
-body_note: "Redakční text založený na rozhovoru; v Lilii vyšel podepsaný značkou „-mv-“. Přepsáno ze str. 11 vydání 2018/6."
+body_note: "Redakční text založený na rozhovoru; v Lilii vyšel podepsaný značkou „-mv-“, tedy odpovědným redaktorem Michele Vojáčkem (podle tiráže vydání). Přepsáno ze str. 11 vydání 2018/6."
 ---
 
 # Proč se stěhovat právě do Litomyšle?

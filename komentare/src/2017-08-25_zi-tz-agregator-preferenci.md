@@ -1,5 +1,6 @@
 ---
-category: "tiskove"
+category: "celostatni"
+genre: "press_release"
 media: "text"
 outlet: "KdoVyhrajeVolby.cz"
 url: "https://web.archive.org/web/20170829204019/http://kdovyhrajevolby.cz/"
