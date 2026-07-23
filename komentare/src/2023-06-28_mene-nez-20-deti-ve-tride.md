@@ -22,7 +22,7 @@ Jak posoudíme, které z 62 studií jsou kvalitní? Příliš soudit nemusíme. 
 
 Jenže v Tennessee to nebyl pořádný experiment, jaké Julie Chytilová a Michal Bauer z Univerzity Karlovy publikují v Nature. Experiment v Tennessee nebyl randomizovaný. Tedy nelze ověřit, zda byli děti a učitelé do tříd rozděleni náhodně. Aktivnější rodiče mohli své děti protlačit do menších tříd. Ředitelé mohli přidělovat menší třídy za odměnu lepším učitelům.
 
-Kontrolovaný experiment je zde nereálný. Řada studií tedy používá chytrý trik, za který byla mimo jiné udělena Nobelova cena v ekonomii: mnohde platí, že zapíše-li se prvňáčků 60, vypíše škola dvě třídy. Když se jich ale zapíše 61, vypsány jsou třídy tři . Za ideálních podmínek máme přirozený experiment, při kterém rozdělení do dvou tříd (60 žáků) a tří tříd (61 žáků) nezáleží na schopnostech dětí a učitelů.
+Kontrolovaný experiment je zde nereálný. Řada studií tedy používá chytrý trik, za který byla mimo jiné udělena Nobelova cena v ekonomii: mnohde platí, že zapíše-li se prvňáčků 60, vypíše škola dvě třídy. Když se jich ale zapíše 61, vypsány jsou třídy tři. Za ideálních podmínek máme přirozený experiment, při kterém rozdělení do dvou tříd (60 žáků) a tří tříd (61 žáků) nezáleží na schopnostech dětí a učitelů.
 
 Této metodě se říká regresní diskontinuita a nové studie nobelisty Angrista ukazují totéž co metaanalýza. I ostatní metody snažící se řešit problém „korelace není kauzalita“, instrumentální proměnné a regresní analýza s kontrolními proměnnými, dávají stejné výsledky: na velikosti třídy záleží vzdělání dětí pramálo. Proč? Studie se neshodnou, ale zřejmě není snadné efektivně uzpůsobit výuku zmenšení třídy.
 

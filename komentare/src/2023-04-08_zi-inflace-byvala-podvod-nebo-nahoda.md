@@ -22,7 +22,7 @@ Neřekl bych, že tu inflace nikdy nebyla. Co třeba v Římské říši ve tře
 
 Neexistovala v systematické podobě. Inflace, čili snížení hodnoty peněz, byla v historii vždy něco krátkodobého a nepřirozeného. Buď to byl podvod, nebo náhoda, ale vždy něco, co společnost považovala za špatné a snažila se opravit. Ne podporovat jako vládní program.
 
-Hodnota peněz často klesala ve válkách.. Panovník pozastavil směnu peněz za zlato, nebo zmenšil podíl zlata či stříbra v mincích. To lidé vnímali jako podvod, který ale obvykle skončil s koncem války. Pak se země vrátila k cenové stabilitě, viz například politika císaře Vespasiána, který zvýšil podíl stříbra v mincích.
+Hodnota peněz často klesala ve válkách. Panovník pozastavil směnu peněz za zlato, nebo zmenšil podíl zlata či stříbra v mincích. To lidé vnímali jako podvod, který ale obvykle skončil s koncem války. Pak se země vrátila k cenové stabilitě, viz například politika císaře Vespasiána, který zvýšil podíl stříbra v mincích.
 
 Hodnota peněz mohla také klesnout kvůli náhodě. Zvýšila se nabídka drahých kovů, třeba stříbra po objevu Ameriky a otevření dolů v Potosí. Ale ani tehdy nebyla inflace tak silná jako v našem inflačním cílování. 2% inflace zní neškodně, ale za generaci sníží hodnotu peněz na polovinu. Je to oficiální program pro znehodnocení peněz, což je historicky unikátní.
 

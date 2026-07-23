@@ -41,7 +41,7 @@ Platí, že aby byl člověk úspěšný, musí se obklopit úspěšnými? Nebo 
 
 Důležité je to, čemu se v angličtině říká peer pressure. Tedy vidíte kolegu, jak je úspěšný na mezinárodním poli, že to jde i z Prahy. Konkrétně pro moji profesní dráhu to byl Roman Horváth, Michal Bauer a Julie Chytilová, moji současní kolegové na Institutu ekonomických studií. Prostředí jako takové hraje podle mě menší roli než jasné příklady konkrétních lidí, které znáte osobně.
 
-O ekonomii mluvíte jako krásné a zajímavé vědě - až se u toho téměř roněžníte (tak jsem to vyrozuměl v tom podcastu) . Co vám dala?
+O ekonomii mluvíte jako krásné a zajímavé vědě - až se u toho téměř roněžníte (tak jsem to vyrozuměl v tom podcastu). Co vám dala?
 
 Nemůžete od vědce čekat, že nebude vášnivý pro svoji práci. Což koneckonců musí být každý, kdo chce svoji práci dělat pořádně. Podobně by o svém oboru mluvil fyzik nebo biolog. Ekonomie má tu velkou výhodu, že je nutná pro skoro každé praktické rozhodnutí. Dám příklad: jak nejlépe reagovat na klimatickou změnu? Klimatolog vám řekne, že je potřeba zabránit, ideálně zastavit oteplování. Jenže snižování emisí může být tak drahé, že odčerpá peníze odjinud, třeba ze zdravotnictví, což jako balíček může životy lidí ovlivnit negativně. Je potřeba najít rovnováhu mezi náklady a výnosy klimatických opatření. Tedy ekonomie má co říct k řešením důležitých problémů.
 

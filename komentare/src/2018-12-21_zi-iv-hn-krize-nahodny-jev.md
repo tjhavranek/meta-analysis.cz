@@ -44,7 +44,7 @@ Ne, naopak jsem objevovala to, co je na ekonomii krásné a zajímavé. Hodně i
 
 Co je podle vás na ekonomii krásného?
 
-Obecně to, že se snaží zlepšovat životy lidí. Hledá způsoby, jak bychom se mohli mít lépe . Zvláštnost ekonomie je v tom, že je na pomezí společenských a exaktních věd. My ekonomové se někdy tváříme, že dokážeme všechno spočítat. A používáme k tomu matematiku a další nástroje, podobně jako třeba přírodní vědy. Problém je v tom, že předmětem našeho zkoumání je chování člověka. A to je mnohdy neracionální a nepředvídatelné. Proto se ekonomové mýlí častěji než ostatní vědci používající matematiku, a někdy si to nechtějí připustit, protože k tomu omylu došli velmi sofistikovanými a přesnými metodami. Ale to na lidské chování neplatí. V tom je úskalí, ale i krása ekonomie.
+Obecně to, že se snaží zlepšovat životy lidí. Hledá způsoby, jak bychom se mohli mít lépe. Zvláštnost ekonomie je v tom, že je na pomezí společenských a exaktních věd. My ekonomové se někdy tváříme, že dokážeme všechno spočítat. A používáme k tomu matematiku a další nástroje, podobně jako třeba přírodní vědy. Problém je v tom, že předmětem našeho zkoumání je chování člověka. A to je mnohdy neracionální a nepředvídatelné. Proto se ekonomové mýlí častěji než ostatní vědci používající matematiku, a někdy si to nechtějí připustit, protože k tomu omylu došli velmi sofistikovanými a přesnými metodami. Ale to na lidské chování neplatí. V tom je úskalí, ale i krása ekonomie.
 
 Chválila jste úroveň IES na Karlově univerzitě. Vy jste se podívala i na mezinárodně prestižní školy, jako například Berkley v Kalifornii. Co vás tam překvapilo?
 
@@ -56,7 +56,7 @@ Odpovím trochu oklikou. Velkým problémem hlavně ve společenských vědách 
 
 Proč jste si tuto statistickou metodu tak oblíbila?
 
-Ona to byla vlastně náhoda. A jako prvního to napadlo manžela, s kterým jsme pak na řadě publikací spolupracovali. Na studijním pobytu v Helsinkách nás napadlo aplikovat meta-analýzu na to , jaký dopad mají zahraniční investice na produktivitu domácích firem. To je přesně jeden z těch problémů, kde je k dispozici řada dat, ale nedávají na první pohled jednoznačnou odpověď. Takže manžel přišel s tím, že četl něco o metaanalýze a že bychom to mohli zkusit.
+Ona to byla vlastně náhoda. A jako prvního to napadlo manžela, s kterým jsme pak na řadě publikací spolupracovali. Na studijním pobytu v Helsinkách nás napadlo aplikovat meta-analýzu na to, jaký dopad mají zahraniční investice na produktivitu domácích firem. To je přesně jeden z těch problémů, kde je k dispozici řada dat, ale nedávají na první pohled jednoznačnou odpověď. Takže manžel přišel s tím, že četl něco o metaanalýze a že bychom to mohli zkusit.
 
 Což pak může být důležitý podklad pro rozhodování politiků nebo institucí. Tak jako vaše metaanalýza vlivu letního času na úspory elektrické energie?
 
@@ -88,7 +88,7 @@ Spolupracujete často s manželem? A jaké to je, sdílet nejen rodinu, ale i pr
 
 Čtyři děti? Je to ekonomicky uvážlivé rozhodnutí?
 
-My jsme vždycky chtěli hodně dětí. A čtyři děti jsou hodně, ale spíš z pražského pohledu . My bydlíme v Litomyšli a tam to není nic zas tak neobvyklého. Jen v naší ulici o deseti domech je pět rodin, které mají tři a více malých dětí.
+My jsme vždycky chtěli hodně dětí. A čtyři děti jsou hodně, ale spíš z pražského pohledu. My bydlíme v Litomyšli a tam to není nic zas tak neobvyklého. Jen v naší ulici o deseti domech je pět rodin, které mají tři a více malých dětí.
 
 Proč jste se odstěhovali do Litomyšle, když oba pracujete v Praze?
 

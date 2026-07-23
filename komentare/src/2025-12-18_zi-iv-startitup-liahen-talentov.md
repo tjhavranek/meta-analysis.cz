@@ -20,7 +20,7 @@ Určite áno, prostredie vás vždy formuje. Gemer je nádherný kraj, na ktorý
 
 Prečo ste sa rozhodli pre Prahu?
 
-Bola to prirodzená voľba. Keď má človek sedemnásť a je dostatočne ambiciózny, prečo by zostával niekde, kde má obmedzené možnosti.. Praha je dnes pre nás tou prirodzenou destináciou. Ponúka násobne vyššie zárobky, viac kariérnych možností a kvalitné školy. Zároveň je to moderná, veľmi tolerantná metropola. Obrovskou výhodou pre nás, a zároveň nevýhodou pre Slovensko, je absencia akejkoľvek bariéry. Jazyk je prakticky rovnaký, kultúra veľmi podobná, Slovák tu nie je cudzinec, aj keď používa rodnú reč. Slovensko na tomto masívne stráca a Česko z toho prirodzene profituje. Pokiaľ sa toto nezmení, Slovensko zostane naďalej len liahňou talentov a vidiekom Prahy.
+Bola to prirodzená voľba. Keď má človek sedemnásť a je dostatočne ambiciózny, prečo by zostával niekde, kde má obmedzené možnosti. Praha je dnes pre nás tou prirodzenou destináciou. Ponúka násobne vyššie zárobky, viac kariérnych možností a kvalitné školy. Zároveň je to moderná, veľmi tolerantná metropola. Obrovskou výhodou pre nás, a zároveň nevýhodou pre Slovensko, je absencia akejkoľvek bariéry. Jazyk je prakticky rovnaký, kultúra veľmi podobná, Slovák tu nie je cudzinec, aj keď používa rodnú reč. Slovensko na tomto masívne stráca a Česko z toho prirodzene profituje. Pokiaľ sa toto nezmení, Slovensko zostane naďalej len liahňou talentov a vidiekom Prahy.
 
 Ako spomínate na svoje začiatky v akademickom svete? Čo bolo najväčšou výzvou?
 

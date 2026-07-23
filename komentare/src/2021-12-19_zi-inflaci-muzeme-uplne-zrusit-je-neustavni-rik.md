@@ -44,7 +44,7 @@ Ano, máte pravdu, stěžovali, ale inflace nikdy v historii nebyla programovým
 
 Existují dva základní režimy moderní měnové politiky. První z nich je právě cílování inflace, kdy se centrální banka stále snaží o plus dvě procenta a neohlíží se na minulost. Druhý režim je cílování cenové hladiny, kdy opravujete předchozí chyby. Tedy když máte inflaci jednou plus dva, další rok se snažíte o minus dva. A já jsem pro tu druhou možnost. Můžeme hodnotu peněz přivázat nikoliv ke zlatu, ale k ceně průměrného zboží v ekonomice.
 
-Průměrný sobotní nákup v supermarketu nás tak bude stát za třicet let stejně jako tuto sobotu. Takový krok centrální banka udělat může .
+Průměrný sobotní nákup v supermarketu nás tak bude stát za třicet let stejně jako tuto sobotu. Takový krok centrální banka udělat může.
 
 Nepůjde to samozřejmě z roku na rok, ale možné to je. Takový režim je intuitivní, stoprocentně v souladu s ústavou, v ekonomických modelech vychází lépe. Pokud přijdou obavy z deflace nebo inflace, nutí to centrální banku reagovat daleko silněji, aby spirálu zastavila a vrátila ceny v průměru zase zpátky na původní hladinu.
 

@@ -239,6 +239,9 @@ def _inline(t):
     t = re.sub(r"\[([^\]]+)\]\(([^)]+)\)", r'<a href="\2">\1</a>', t)
     t = re.sub(r"\*\*([^*]+)\*\*", r"<strong>\1</strong>", t)
     t = re.sub(r"(?<!\*)\*([^*]+)\*(?!\*)", r"<em>\1</em>", t)
+    # Inline code was never handled, so a source written with backticks showed them to
+    # the reader: `install.packages("MAIVE")` appeared literally, backticks and all.
+    t = re.sub(r"`([^`]+)`", r"<code>\1</code>", t)
     return t
 
 
@@ -287,11 +290,31 @@ def md_to_html(md):
             out.append("<ol>\n" + "\n".join(it) + "\n</ol>")
             continue
         if line.lstrip().startswith("> "):
-            q = []
-            while i < len(lines) and lines[i].lstrip().startswith("> "):
-                q.append(lines[i].lstrip()[2:].strip())
-                i += 1
-            out.append(f"<blockquote><p>{_inline(' '.join(q))}</p></blockquote>")
+            # Same blank-line rule as the lists above: a quotation whose paragraphs are
+            # separated by a blank line is ONE quotation. Ending at the first blank line
+            # produced five adjacent <blockquote>s for one five-paragraph quote.
+            paras, cur, j = [], [], i
+            while j < len(lines):
+                if lines[j].lstrip().startswith("> "):
+                    cur.append(lines[j].lstrip()[2:].strip())
+                    j += 1
+                    continue
+                if lines[j].strip() == "":
+                    k = j
+                    while k < len(lines) and lines[k].strip() == "":
+                        k += 1
+                    if k < len(lines) and lines[k].lstrip().startswith("> "):
+                        if cur:
+                            paras.append(" ".join(cur))
+                            cur = []
+                        j = k
+                        continue
+                break
+            if cur:
+                paras.append(" ".join(cur))
+            i = j
+            inner = "".join(f"<p>{_inline(p)}</p>" for p in paras)
+            out.append(f"<blockquote>{inner}</blockquote>")
             continue
         para = []
         while (i < len(lines) and lines[i].strip()
