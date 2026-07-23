@@ -432,7 +432,12 @@ def main():
          "contributor": [
              {"@id": BASE + "/#th"},
              {"@type": "Person", "@id": BASE + "/#zi", "name": "Zuzana Irsova",
-              "alternateName": ["Zuzana Iršová", "Zuzana Havránková"],
+              # every form this site prints her name in. /komentare/ alone uses the
+              # accented double-barrelled form on 200-odd pages and the unaccented one
+              # in the Posts titles; without them the graph offers no way to tell that
+              # those are the same person as the "Zuzana Irsova" on the papers.
+              "alternateName": ["Zuzana Iršová", "Zuzana Havránková",
+                                "Zuzana Iršová Havránková", "Zuzana Irsova Havrankova"],
               "affiliation": {"@type": "Organization", "name": "Charles University, Prague"},
               "url": "https://www.irsova.com",
               "sameAs": ["https://orcid.org/0000-0002-0753-8124"]}]},

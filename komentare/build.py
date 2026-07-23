@@ -75,10 +75,13 @@ ORCIDS = {
     "Zuzana Iršová": "https://orcid.org/0000-0002-0753-8124",
     "Zuzana Irsová": "https://orcid.org/0000-0002-0753-8124",
     "Zuzana Irsova": "https://orcid.org/0000-0002-0753-8124",
+    # no byline uses this form today; the Posts pages print it, so a future byline
+    # copied from there would otherwise land here with no ORCID and no Zuzana tag
+    "Zuzana Irsova Havrankova": "https://orcid.org/0000-0002-0753-8124",
 }
 
 ZI_NAMES = {"Zuzana Iršová Havránková", "Zuzana Havránková", "Zuzana Iršová",
-            "Zuzana Irsová", "Zuzana Irsova"}
+            "Zuzana Irsová", "Zuzana Irsova", "Zuzana Irsova Havrankova"}
 
 SECTIONS = {
     "celostatni": dict(
