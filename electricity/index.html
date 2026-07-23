@@ -10,9 +10,10 @@ redeploys automatically. Two things to know:
  1. Do NOT edit between the seo-meta:start and seo-meta:end markers below -- that
     block is regenerated on every deploy (tools/generate_seo.py + tools/papers.json).
     To change citation metadata, edit tools/papers.json instead.
- 2. The Paper links point to electricity.pdf, which is intentionally absent until
-    we agree on the final manuscript; drop the agreed PDF into this folder and the
-    links start working.
+ 2. Files here mirror github.com/irsovaz/electricity-price (branch main):
+    electricity.pdf = electricity_main.pdf, electricity_SI.pdf = the online appendix,
+    studies.xlsx and electricity.xlsx = replication_package/, replication.zip is built
+    from the replication_package/ folder. Update them there first, then copy across.
 
 -->
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
@@ -32,6 +33,7 @@ redeploys automatically. Two things to know:
 <meta name="citation_author" content="Vojtech Sikl" />
 <meta name="citation_publication_date" content="2026" />
 <meta name="citation_technical_report_institution" content="Charles University, Prague" />
+<meta name="citation_pdf_url" content="https://meta-analysis.cz/electricity/electricity.pdf" />
 <meta property="og:site_name" content="meta-analysis.cz" />
 <meta property="og:type" content="article" />
 <meta property="og:title" content="Price Elasticity of Electricity Demand: A Meta-Analysis" />
@@ -50,7 +52,7 @@ redeploys automatically. Two things to know:
    "url": "https://meta-analysis.cz/electricity/",
    "headline": "Electricity demand has not become more price-responsive despite ninety years of technological change",
    "name": "Electricity demand has not become more price-responsive despite ninety years of technological change",
-   "abstract": "Energy planners have long assumed that electricity demand will grow more price-responsive as metering, automation, and storage spread, an assumption now embedded in decarbonization plans. We test it against the entire empirical record: 4,898 own-price elasticity estimates from 482 studies, with data spanning 1934–2024, ranked on a single ladder of identification quality from naive regressions to randomized experiments. Three findings emerge. First, better-identified studies find smaller responses: the corrected short-run elasticity is about −0.16, and only −0.09 among the best-identified, design-based studies, whose adjusted value is statistically indistinguishable from zero. Second, responsiveness grows with time to adjust, roughly doubling from −0.16 in the short run to −0.38 in the long run as the capital stock turns over, but this pattern has itself been stable for decades. Third, responsiveness shows no upward trend across nine decades of data; if anything, the most technology-rich settings, including time-of-use pricing, are the least price-responsive in total consumption. Demand flexibility must be engineered and paid for; the historical record gives no reason to expect prices alone to deliver it.",
+   "abstract": "Energy planners have long assumed that electricity demand will grow more price-responsive as metering, automation, and storage spread, an assumption now embedded in decarbonization plans. We test it against the empirical record: 4,720 own-price elasticity estimates from 462 studies, with data spanning 1934–2024, ranked on a single ladder of identification quality from naive regressions to randomized experiments. Three findings emerge. First, better-identified studies find smaller responses: the publication-bias-corrected short-run elasticity is about −0.16 (a 10% rise in the electricity price cuts consumption by under 2%), and only −0.09 among the best-identified studies, whose adjusted value is statistically indistinguishable from zero. Second, responsiveness grows with time to adjust, roughly doubling from −0.16 in the short run to −0.38 in the long run as the capital stock turns over, but this pattern has itself been stable for decades. Third, and most important, responsiveness shows no upward trend across nine decades of data; if anything, the most technology-rich settings, including time-of-use pricing, are the least price-responsive in total consumption. Demand flexibility will have to be engineered and paid for; nothing in the historical record suggests that prices alone will deliver it.",
    "inLanguage": "en",
    "author": [
     {
@@ -78,13 +80,28 @@ redeploys automatically. Two things to know:
    ],
    "datePublished": "2026",
    "keywords": "electricity demand, price elasticity, meta-analysis, identification, publication bias, demand flexibility, time-of-use pricing, energy policy, Bayesian model averaging",
-   "image": "https://meta-analysis.cz/electricity/corpus.png"
+   "image": "https://meta-analysis.cz/electricity/corpus.png",
+   "encoding": [
+    {
+     "@type": "MediaObject",
+     "name": "Paper",
+     "contentUrl": "https://meta-analysis.cz/electricity/electricity.pdf",
+     "encodingFormat": "application/pdf"
+    }
+   ],
+   "hasPart": [
+    {
+     "@type": "CreativeWork",
+     "name": "Online Appendix",
+     "url": "https://meta-analysis.cz/electricity/electricity_SI.pdf"
+    }
+   ]
   },
   {
    "@type": "Dataset",
    "@id": "https://meta-analysis.cz/electricity/#dataset",
    "name": "Data and code for: Price Elasticity of Electricity Demand: A Meta-Analysis",
-   "description": "Dataset and replication files for the study. Energy planners have long assumed that electricity demand will grow more price-responsive as metering, automation, and storage spread, an assumption now embedded in decarbonization plans. We test it against the entire empirical record: 4,898 own-price elasticity estimates from 482 studies, with data spanning 1934–2024, ranked on a single ladder of identification quality from naive regressions to randomized experiments. Three findings emerge. First, better-identified studies find smaller responses: the corrected short-run elasticity is about −0.16, and only −0.09 among the best-identified, design-based studies, whose adjusted value is statistically indistinguishable from zero. Second, responsiveness grows with time to adjust, roughly doubling from −0.16 in the short run to −0.38 in the long run as the capital stock turns over, but this pattern has itself been stable for decades. Third, responsiveness shows no upward trend across nine decades of data; if anything, the most technology-rich settings, including time-of-use pricing, are the least price-responsive in total consumption. Demand flexibility must be engineered and paid for; the historical record gives no reason to expect prices alone to deliver it.",
+   "description": "Dataset and replication files for the study. Energy planners have long assumed that electricity demand will grow more price-responsive as metering, automation, and storage spread, an assumption now embedded in decarbonization plans. We test it against the empirical record: 4,720 own-price elasticity estimates from 462 studies, with data spanning 1934–2024, ranked on a single ladder of identification quality from naive regressions to randomized experiments. Three findings emerge. First, better-identified studies find smaller responses: the publication-bias-corrected short-run elasticity is about −0.16 (a 10% rise in the electricity price cuts consumption by under 2%), and only −0.09 among the best-identified studies, whose adjusted value is statistically indistinguishable from zero. Second, responsiveness grows with time to adjust, roughly doubling from −0.16 in the short run to −0.38 in the long run as the capital stock turns over, but this pattern has itself been stable for decades. Third, and most important, responsiveness shows no upward trend across nine decades of data; if anything, the most technology-rich settings, including time-of-use pricing, are the least price-responsive in total consumption. Demand flexibility will have to be engineered and paid for; nothing in the historical record suggests that prices alone will deliver it.",
    "url": "https://meta-analysis.cz/electricity/",
    "isAccessibleForFree": true,
    "inLanguage": "en",
@@ -148,6 +165,7 @@ redeploys automatically. Two things to know:
 	<div id="menu">
 		<ul>
 			<li class="current_page_item"><a href="electricity.pdf">Paper</a></li>
+			<li><a href="electricity_SI.pdf">Online Appendix</a></li>
 			<li><a href="replication.zip">Replication Package</a></li>
 			<li><a href="electricity.xlsx">Data</a></li>
 			<li><a href="/">More Meta-Analyses</a></li>
@@ -164,15 +182,18 @@ redeploys automatically. Two things to know:
 			<h1 class="title">Abstract</h1>
 			<div class="entry">
 <p>
-Energy planners have long assumed that electricity demand will grow more price-responsive as metering, automation, and storage spread, an assumption now embedded in decarbonization plans. We test it against the entire empirical record: 4,898 own-price elasticity estimates from 482 studies, with data spanning 1934&ndash;2024, ranked on a single ladder of identification quality from naive regressions to randomized experiments. Three findings emerge. First, better-identified studies find <i>smaller</i> responses: the corrected short-run elasticity is about &minus;0.16, and only &minus;0.09 among the best-identified, design-based studies, whose adjusted value is statistically indistinguishable from zero. Second, responsiveness grows with time to adjust, roughly doubling from &minus;0.16 in the short run to &minus;0.38 in the long run as the capital stock turns over, but this pattern has itself been stable for decades. Third, responsiveness shows no upward trend across nine decades of data; if anything, the most technology-rich settings, including time-of-use pricing, are the <i>least</i> price-responsive in total consumption. Demand flexibility must be engineered and paid for; the historical record gives no reason to expect prices alone to deliver it.
+Energy planners have long assumed that electricity demand will grow more price-responsive as metering, automation, and storage spread, an assumption now embedded in decarbonization plans. We test it against the empirical record: 4,720 own-price elasticity estimates from 462 studies, with data spanning 1934&ndash;2024, ranked on a single ladder of identification quality from naive regressions to randomized experiments. Three findings emerge. First, better-identified studies find <i>smaller</i> responses: the publication-bias-corrected short-run elasticity is about &minus;0.16 (a 10% rise in the electricity price cuts consumption by under 2%), and only &minus;0.09 among the best-identified studies, whose adjusted value is statistically indistinguishable from zero. Second, responsiveness grows with time to adjust, roughly doubling from &minus;0.16 in the short run to &minus;0.38 in the long run as the capital stock turns over, but this pattern has itself been stable for decades. Third, and most important, responsiveness shows no upward trend across nine decades of data; if anything, the most technology-rich settings, including time-of-use pricing, are the <i>least</i> price-responsive in total consumption. Demand flexibility will have to be engineered and paid for; nothing in the historical record suggests that prices alone will deliver it.
 </p>
 
 <b>Fig: Nine decades of estimates, and no visible drift</b> <br /> <br />
-   <img src="corpus.png" alt="Reported own-price elasticities of electricity demand plotted against the mid-year of the underlying data, 1934 to 2024, coloured by identification quality. The points form a flat band mostly between minus one and zero across all decades, with no trend toward stronger price responsiveness over time; the best-identified design-based estimates cluster near zero. The plot shows the 3,843 tier-classified estimates that carry a usable standard error." width="580"/>
+   <img src="corpus.png" alt="Reported own-price elasticities of electricity demand plotted against the mid-year of the underlying data, 1934 to 2024, coloured by identification tier. The points form a flat band across all decades, with no trend toward stronger price responsiveness over time; the best-identified design-based estimates, in dark blue, arrive late and cluster near zero. The plot shows the 3,843 tier-classified estimates that carry a usable standard error." width="580"/>
 <br />
 <br />
-<i>Each point is a reported own-price elasticity of electricity demand (winsorised at 1%), plotted against the mid-year of the underlying data and coloured by identification quality, from naive regressions (light) to design-based studies (dark blue); the 3,843 tier-classified estimates with usable standard errors are shown, with unclassified estimates omitted from the plot but retained in non-ladder analyses. Across ninety years the raw record shows no drift toward greater price responsiveness, and the best-identified, design-based studies &mdash; which arrive late and thin &mdash; point toward smaller, not larger, responses.</i>
+<i>Reported own-price elasticities against the mid-year of the underlying data, coloured by identification tier; the 3,843 tier-classified estimates with usable standard errors are shown, the vertical axis truncated so that 44 outlying estimates fall outside the frame. Those outliers are omitted from the figure only and kept in every analysis, as are the unclassified estimates in the non-ladder analyses. Two features organize the paper: the raw record shows no visible drift over nine decades, and the design-based literature (dark blue) arrives late and thin, so composition must be held fixed before any trend is read as behaviour.</i>
 <br />
+<br />
+<br />
+<b>Materials:</b> <a href="electricity.pdf">paper</a>, <a href="electricity_SI.pdf">online appendix</a>, <a href="replication.zip">replication package</a>, <a href="electricity.xlsx">dataset</a>, and the <a href="studies.xlsx">list of the 462 studies</a>.
 <br />
 <br />
 <b>Reference:</b> Zuzana Irsova, Tomas Havranek, Peter Kudela, Anna Kudelova, Vojtech Sikl (2026), &ldquo;Electricity demand has not become more price-responsive despite ninety years of technological change.&rdquo; Charles University, Prague. Available at meta-analysis.cz/electricity.
