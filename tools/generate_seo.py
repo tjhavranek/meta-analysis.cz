@@ -421,9 +421,21 @@ def main():
          "name": "meta-analysis.cz",
          "alternateName": "Meta-Analysis in Economics and Social Sciences",
          "description": "Data, code, and papers for meta-analyses in economics and the social sciences, by researchers at Charles University, Prague.",
-         "publisher": {"@type": "Person", "name": "Tomas Havranek",
-                        "affiliation": {"@type": "Organization", "name": "Charles University, Prague"},
-                        "url": "https://www.tomashavranek.cz"}},
+         # publisher stays singular: one person runs the domain. But 35 of the 52 papers
+         # collected here are hers, and a graph that never names her leaves a search
+         # engine or a model no way to connect this body of work to her at all. She is a
+         # contributor to the site, which is what is true — not its publisher.
+         "publisher": {"@type": "Person", "@id": BASE + "/#th", "name": "Tomas Havranek",
+                       "affiliation": {"@type": "Organization", "name": "Charles University, Prague"},
+                       "url": "https://www.tomashavranek.cz",
+                       "sameAs": ["https://orcid.org/0000-0002-3158-2539"]},
+         "contributor": [
+             {"@id": BASE + "/#th"},
+             {"@type": "Person", "@id": BASE + "/#zi", "name": "Zuzana Irsova",
+              "alternateName": ["Zuzana Iršová", "Zuzana Havránková"],
+              "affiliation": {"@type": "Organization", "name": "Charles University, Prague"},
+              "url": "https://www.irsova.com",
+              "sameAs": ["https://orcid.org/0000-0002-0753-8124"]}]},
         {"@type": "ItemList", "@id": BASE + "/#papers", "name": "Meta-analyses on this site",
          "numberOfItems": len(items), "itemListElement": items}]}
     home_block = "\n".join([
