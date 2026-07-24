@@ -20,7 +20,7 @@
   }
  ],
  "license": "Texty jsou majetkem autora a původních vydavatelů; archiv slouží ke čtení a citaci s uvedením původního zdroje.",
- "count": 210,
+ "count": 212,
  "generated_from": [
   "komentare/src/*.md",
   "komentare/social-posts.json"
@@ -493,6 +493,29 @@
    "word_count": 257,
    "text": "We are happy to share a new tool now available at [EasyMeta.org](https://www.easymeta.org/). The app makes the new MAIVE method (Meta-Analysis Instrumental Variable Estimator, published yesterday in [*Nature Communications*](https://www.nature.com/articles/s41467-025-63261-0)) easy to apply with a few clicks. The site offers a [demo dataset](https://www.spuriousprecision.com/demo) you can run instantly.\n\nAt the same time, the app allows for seamless use of methods well known in the MAER-Net community: PET-PEESE and the Endogenous Kink model. Until now, these approaches were available only in R or Stata. Now they can be run with a single click, no software installation needed.\n\nThe app supports options that applied researchers often need, including different types of clustering (classical, CR2, wild bootstrap), weighting schemes (including one that accounts for extreme heterogeneity), weak-instrument-robust confidence intervals, and fixed-intercept multilevel specifications to account for between-study differences in methods and quality.\n\nWe hope this tool will lower entry barriers to modern meta-analysis for students, collaborators, and applied researchers, and make it easier for MAER-Net members to demonstrate, compare, and teach bias-correction methods.\n\nWe'd be very grateful if you could use your favorite social network to share this tool with colleagues, students, or collaborators who might find it useful. And please let us know about any errors, missing features, or ideas for improvement — we'll keep refining the app based on your feedback. Together we can make bias correction in meta-analysis more accessible.\n\nSpecial thanks to **Petr Čala** for creating the app, and to **Heiko Rachinger** and **Pedro Bom** for developing the R package that powers it.\n\n👉 Try a demo at [EasyMeta.org/demo](https://www.spuriousprecision.com/demo)",
    "provenance": "self_published"
+  },
+  {
+   "id": "zi-iv-forbes-top-vedkyne-dotaznik",
+   "title": "Top vědkyně Česka 2025: dotazník Zuzany Havránkové",
+   "date": "2025-09-23",
+   "date_precision": "day",
+   "section": "Rozhovory",
+   "category": "rozhovory",
+   "language": "cs",
+   "outlet": "Forbes",
+   "authors": [
+    "Zuzana Havránková"
+   ],
+   "media": "text",
+   "original_url": "https://forbes.cz/lists/top-vedkyne-ceska-2025/zuzana-havrankova/",
+   "text_status": "published_full_text",
+   "standfirst": "Nedávno se stala historicky nejmladší profesorkou Univerzity Karlovy a je jednou z nejcitovanějších českých ekonomek. Věnuje se metaanalýze.",
+   "standfirst_note": "Written by the original outlet, not by the author.",
+   "url": "https://meta-analysis.cz/komentare/zi-iv-forbes-top-vedkyne-dotaznik/",
+   "source_markdown": "https://meta-analysis.cz/komentare/src/2025-09-23_zi-iv-forbes-top-vedkyne-dotaznik.md",
+   "word_count": 441,
+   "text": "Nedávno se stala historicky nejmladší profesorkou Univerzity Karlovy, zároveň je jednou z nejcitovanějších českých ekonomek. Věnuje se metaanalýze, a jak sama říká, překládá stovky akademických publikací do výstupu, který je použitelný v praxi. Zabývá se tématy souvisejícími s mezinárodním obchodem, trhem práce či energetickou ekonomií. S výsledky jejích výzkumů pracují mezinárodní organizace jako OECD, Mezinárodní měnový fond, Evropský parlament, Evropská komise a další. Vědecké zkušenosti sbírala například v Berkeley, na Stanfordu a na Novém Zélandu.\n\nCo děláte? Jak byste laikovi vysvětlila svou práci?\n\nPřekládám stovky akademických publikací do výstupu, který je použitelný v praxi. Tomu se říká metaanalýza: statistické shrnutí výzkumu na dané téma.\n\nCo je na vědě nejlepší? A nejhorší?\n\nNejlepší jsou ty „heuréka“ momenty, kdy najdete řešení problému, s nímž jste zápasili rok či déle. Hned vedle toho je to kontakt s geniálními lidmi z celého světa. Nejhorší je peer-review proces při publikování, který je často zcela náhodný. A také, když se věda uzavře do bubliny, přijme jediný výklad jako dogma a přestane tolerovat pochybnosti.\n\nProč jste se dala na vědeckou dráhu? Jak jste se k vědě dostala?\n\nZačínala jsem v soukromém sektoru a současně si dělala doktorát. Zjistila jsem, že s dětmi mi vědecká kariéra poskytuje více flexibility, takže jsem u ní zůstala.\n\nKým byste byla, pokud ne vědkyní?\n\nMyslím, že bych působila zcela mimo mou profesi. Můj pradědeček byl truhlář a práce se dřevem mě baví. Dokázala bych si představit takovou řemeslnou profesi, jejíž výsledky dělají lidem radost na dlouhé roky. Také miluji malé děti, takže být učitelkou v mateřské škole by mě naplňovalo.\n\nJaká je vaše nejoblíbenější (odborná) kniha, případně váš nejoblíbenější vzorec?\n\nOslovují mě autoři Robert Sapolsky a David Quammen, kteří dokážou poutavě psát o biologii a chování lidí. Právě čtu Sapolského knihu Determined: The Science of Life Without Free Will, která je ale trochu depresivní – pokud bych její hlavní myšlenku měla přijmout doslova, pak byly veškeré mé dlouholeté snažení a dřina předurčeny a za svůj úspěch vděčím tomu, do čeho jsem se narodila, jak jsem byla vychována, s kým jsem se potkala, čemukoli, co mě mohlo ovlivnit, a náhodě. Minimálně to člověka přivede k pokoře. A místo jednoho vzorce mám ráda myšlenku, že život není hra s nulovým součtem a že spolupráce vede k lepším výsledkům pro celou společnost.\n\nPosloucháte při práci hudbu? Jakou?\n\nKdyž pracuji, potřebuji ticho, nekompromisně. Při běhu volím hudbu s tempem alespoň 180 bpm. Při tréninku boxu slyším hlavně na „zaber“ od svého instruktora pana Hanzlíka.\n\nMáte nějakou profesní deformaci? Ovlivňuje vaše práce váš každodenní život?\n\nMusím se přiznat, že jako ekonomka se pořád ptám na porovnání nákladů a výnosů. Čili: Zní to dobře, ale udělal někdo cost-benefit analýzu?",
+   "provenance": "editorial"
   },
   {
    "id": "zi-iv-e15-kvalita-zivota",
@@ -1998,6 +2021,24 @@
    ],
    "media": "audio",
    "original_url": "https://plus.rozhlas.cz/cnb-musi-delat-vic-vysoka-inflace-tu-jinak-bude-dalsich-10-let-varuje-ekonom-8911524",
+   "text_status": "link_only",
+   "interviewer": "Jana Klímová",
+   "provenance": "editorial"
+  },
+  {
+   "id": "penize-a-vliv-narodni-banka-stabilita",
+   "title": "Národní banka má udržovat stabilitu, ale ona si to vykládá jako dvouprocentní inflaci",
+   "date": "2023-01-17",
+   "date_precision": "day",
+   "section": "Rozhovory",
+   "category": "rozhovory",
+   "language": "cs",
+   "outlet": "iROZHLAS / Český rozhlas Plus",
+   "authors": [
+    "Tomáš Havránek"
+   ],
+   "media": "audio",
+   "original_url": "https://www.irozhlas.cz/ekonomika/inflace-cnb-penize-a-vliv-podcast_2301171630_mst",
    "text_status": "link_only",
    "interviewer": "Jana Klímová",
    "provenance": "editorial"

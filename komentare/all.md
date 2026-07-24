@@ -2,7 +2,7 @@
 
 Publicistika Tomáše Havránka a Zuzany Havránkové: komentáře pro celostátní média, sloupky pro litomyšlskou Lilii, rozhovory a kratší příspěvky ze sítí. Texty jsou zde archivovány v plném znění s odkazem na původní vydání.
 
-Tento soubor obsahuje plné znění všech textových položek (172 z celkem 188). Zbývající položky jsou audio a video, které archiv vede pouze odkazem, a v tomto souboru nejsou; jejich metadata najdete v index.json a corpus.jsonl. Samostatně jsou vedeny kratší příspěvky ze sociálních sítí (22), psané převážně anglicky. Mají vlastní stránku https://meta-analysis.cz/komentare/posts/ a v index.json i corpus.jsonl jsou označeny jako genre=social_post.
+Tento soubor obsahuje plné znění všech textových položek (173 z celkem 190). Zbývající položky jsou audio a video, které archiv vede pouze odkazem, a v tomto souboru nejsou; jejich metadata najdete v index.json a corpus.jsonl. Samostatně jsou vedeny kratší příspěvky ze sociálních sítí (22), psané převážně anglicky. Mají vlastní stránku https://meta-analysis.cz/komentare/posts/ a v index.json i corpus.jsonl jsou označeny jako genre=social_post.
 
 ---
 
@@ -753,6 +753,44 @@ We'd be very grateful if you could use your favorite social network to share thi
 Special thanks to **Petr Čala** for creating the app, and to **Heiko Rachinger** and **Pedro Bom** for developing the R package that powers it.
 
 👉 Try a demo at [EasyMeta.org/demo](https://www.spuriousprecision.com/demo)
+
+---
+
+## Top vědkyně Česka 2025: dotazník Zuzany Havránkové
+
+*Forbes, 23. září 2025. Zuzana Havránková.*
+
+Zdroj: https://forbes.cz/lists/top-vedkyne-ceska-2025/zuzana-havrankova/
+
+Nedávno se stala historicky nejmladší profesorkou Univerzity Karlovy, zároveň je jednou z nejcitovanějších českých ekonomek. Věnuje se metaanalýze, a jak sama říká, překládá stovky akademických publikací do výstupu, který je použitelný v praxi. Zabývá se tématy souvisejícími s mezinárodním obchodem, trhem práce či energetickou ekonomií. S výsledky jejích výzkumů pracují mezinárodní organizace jako OECD, Mezinárodní měnový fond, Evropský parlament, Evropská komise a další. Vědecké zkušenosti sbírala například v Berkeley, na Stanfordu a na Novém Zélandu.
+
+Co děláte? Jak byste laikovi vysvětlila svou práci?
+
+Překládám stovky akademických publikací do výstupu, který je použitelný v praxi. Tomu se říká metaanalýza: statistické shrnutí výzkumu na dané téma.
+
+Co je na vědě nejlepší? A nejhorší?
+
+Nejlepší jsou ty „heuréka“ momenty, kdy najdete řešení problému, s nímž jste zápasili rok či déle. Hned vedle toho je to kontakt s geniálními lidmi z celého světa. Nejhorší je peer-review proces při publikování, který je často zcela náhodný. A také, když se věda uzavře do bubliny, přijme jediný výklad jako dogma a přestane tolerovat pochybnosti.
+
+Proč jste se dala na vědeckou dráhu? Jak jste se k vědě dostala?
+
+Začínala jsem v soukromém sektoru a současně si dělala doktorát. Zjistila jsem, že s dětmi mi vědecká kariéra poskytuje více flexibility, takže jsem u ní zůstala.
+
+Kým byste byla, pokud ne vědkyní?
+
+Myslím, že bych působila zcela mimo mou profesi. Můj pradědeček byl truhlář a práce se dřevem mě baví. Dokázala bych si představit takovou řemeslnou profesi, jejíž výsledky dělají lidem radost na dlouhé roky. Také miluji malé děti, takže být učitelkou v mateřské škole by mě naplňovalo.
+
+Jaká je vaše nejoblíbenější (odborná) kniha, případně váš nejoblíbenější vzorec?
+
+Oslovují mě autoři Robert Sapolsky a David Quammen, kteří dokážou poutavě psát o biologii a chování lidí. Právě čtu Sapolského knihu Determined: The Science of Life Without Free Will, která je ale trochu depresivní – pokud bych její hlavní myšlenku měla přijmout doslova, pak byly veškeré mé dlouholeté snažení a dřina předurčeny a za svůj úspěch vděčím tomu, do čeho jsem se narodila, jak jsem byla vychována, s kým jsem se potkala, čemukoli, co mě mohlo ovlivnit, a náhodě. Minimálně to člověka přivede k pokoře. A místo jednoho vzorce mám ráda myšlenku, že život není hra s nulovým součtem a že spolupráce vede k lepším výsledkům pro celou společnost.
+
+Posloucháte při práci hudbu? Jakou?
+
+Když pracuji, potřebuji ticho, nekompromisně. Při běhu volím hudbu s tempem alespoň 180 bpm. Při tréninku boxu slyším hlavně na „zaber“ od svého instruktora pana Hanzlíka.
+
+Máte nějakou profesní deformaci? Ovlivňuje vaše práce váš každodenní život?
+
+Musím se přiznat, že jako ekonomka se pořád ptám na porovnání nákladů a výnosů. Čili: Zní to dobře, ale udělal někdo cost-benefit analýzu?
 
 ---
 

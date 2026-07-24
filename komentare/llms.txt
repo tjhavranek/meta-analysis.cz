@@ -2,7 +2,7 @@
 
 > Publicistika Tomáše Havránka a Zuzany Havránkové: komentáře pro celostátní média, sloupky pro litomyšlskou Lilii, rozhovory a kratší příspěvky ze sítí. Texty jsou zde archivovány v plném znění s odkazem na původní vydání.
 
-Publicistika: 188 položek a 22 kratších příspěvků ze sítí (210 záznamů celkem), 2014–2026. Plné znění každého textu je na uvedené adrese; zdrojový Markdown položek je v /komentare/src/ (příspěvky ze sítí zdrojový soubor nemají).
+Publicistika: 190 položek a 22 kratších příspěvků ze sítí (212 záznamů celkem), 2014–2026. Plné znění každého textu je na uvedené adrese; zdrojový Markdown položek je v /komentare/src/ (příspěvky ze sítí zdrojový soubor nemají).
 
 ## Celostátní komentáře
 
@@ -144,6 +144,7 @@ Rozhovory pro česká média. U audio a video rozhovorů uvádíme pouze odkaz n
 - [Co ukazují stovky studií o investování: akcie vycházejí nejlépe](https://meta-analysis.cz/komentare/gacr-akcie-vychazeji-nejlepe/) — Grantová agentura ČR, 9. ledna 2026
 - [„Slovensko zostane len liahňou talentov a vidiekom Prahy,“ hovorí najmladšia profesorka na Karlovej univerzite](https://meta-analysis.cz/komentare/zi-iv-startitup-liahen-talentov/) — Startitup.sk, 18. prosince 2025
 - [Je na čase přestat protežovat ženy, říká nejmladší profesorka Univerzity Karlovy](https://meta-analysis.cz/komentare/zi-iv-forbes-protezovat-zeny/) — Forbes, 4. října 2025
+- [Top vědkyně Česka 2025: dotazník Zuzany Havránkové](https://meta-analysis.cz/komentare/zi-iv-forbes-top-vedkyne-dotaznik/) — Forbes, 23. září 2025
 - [Proč podle Zuzany Havránkové Česko kvalitou života překoná Kalifornii?](https://meta-analysis.cz/komentare/zi-iv-e15-kvalita-zivota/) — E15, 14. září 2025
 - [Nejmladší profesorka v historii Univerzity Karlovy vychovává s manželem čtyři děti. Důležitá je disciplína a lidé, na které je spoleh, říká](https://meta-analysis.cz/komentare/zi-iv-hn-vikend-nejmladsi-profesorka/) — Hospodářské noviny, 20. srpna 2025
 - [Ekonomka Havránková: „Nepodmíněný příjem je cesta k zombifikaci společnosti“](https://meta-analysis.cz/komentare/zi-iv-hrot-zombifikace/) — Hrot, 11. srpna 2025
@@ -163,6 +164,7 @@ Rozhovory pro česká média. U audio a video rozhovorů uvádíme pouze odkaz n
 - [Inflace bývala podvod, nebo náhoda](https://meta-analysis.cz/komentare/zi-inflace-byvala-podvod-nebo-nahoda/) — Lidové noviny, 8. dubna 2023
 - [Recept na zkrocení inflace: Sazby deset procent a euro za dvacku](https://meta-analysis.cz/komentare/zi-recept-na-zkroceni-inflace-sazby-deset-proce/) — Ekonom, 23. února 2023
 - [ČNB musí dělat víc. Vysoká inflace tu jinak bude dalších 10 let](https://plus.rozhlas.cz/cnb-musi-delat-vic-vysoka-inflace-tu-jinak-bude-dalsich-10-let-varuje-ekonom-8911524) — Český rozhlas Plus, 17. ledna 2023 (audio, pouze odkaz)
+- [Národní banka má udržovat stabilitu, ale ona si to vykládá jako dvouprocentní inflaci](https://www.irozhlas.cz/ekonomika/inflace-cnb-penize-a-vliv-podcast_2301171630_mst) — iROZHLAS / Český rozhlas Plus, 17. ledna 2023 (audio, pouze odkaz)
 - [Otázky Václava Moravce: Jak zachránit státní rozpočet?](https://www.ceskatelevize.cz/porady/1126672097-otazky-vaclava-moravce/222411030501106/) — Česká televize, 6. listopadu 2022 (video, pouze odkaz)
 - [Evropa odchází od rozumu k ideologii. Kvůli sociálním sítím, říká ekonom](https://meta-analysis.cz/komentare/iv-idnes-evropa-ideologie/) — iDNES.cz, 28. října 2022
 - [Banky si speciální daň zaslouží, rýžují peníze a nemusí se ani snažit](https://meta-analysis.cz/komentare/iv-hn-banky-specialni-dan/) — Hospodářské noviny, 31. srpna 2022
