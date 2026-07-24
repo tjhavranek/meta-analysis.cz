@@ -29,6 +29,8 @@ Frontmatter
     body_note              rendered as an editorial note above the text
     written_by             who wrote a reported piece the author only speaks in
     written_by_type        "Person" when written_by names a journalist, not a newsroom
+    audio_url              a broadcast/podcast version of a text interview; linked
+    audio_label            visible text for that link (default "podcast")
 
 Design notes
   * The complete item list is in the HTML. JavaScript only filters what is already
@@ -147,6 +149,7 @@ OUTLET_IN = {
     "Roklen24": "na Roklen24",
     "Ekonomický magazín": "v Ekonomickém magazínu",
     "Ekonom": "v týdeníku Ekonom",
+    "Věda na FSV UK (podcast De Facto)": "na webu Věda na FSV UK",
 }
 
 MEDIA_LABEL = {"video": "video", "audio": "audio"}
@@ -644,6 +647,11 @@ def write_item(a):
         node["isBasedOn"] = a["url"]
     if a.get("date_precision") == "month":
         node["datePublished"] = a["date"][:7]
+    if a.get("audio_url"):
+        # the same interview as an audio recording — a distinct media object, not a
+        # duplicate work, so schema.org's `audio` says exactly that
+        node["audio"] = {"@type": "AudioObject", "contentUrl": a["audio_url"],
+                         "name": a["headline"]}
 
     body_html = fix_quotes(md_to_html(a["body"]))
     plain = re.sub(r"\s+", " ", re.sub(r"<[^>]+>", " ", body_html)).strip()
@@ -681,6 +689,12 @@ def write_item(a):
         prov += (" Text vychází z autorova rukopisu; tištěná verze se může v detailech lišit.")
     elif a.get("source") == "image":
         prov += (" Text byl přepsán z tištěného vydání.")
+    # Same interview, second format: a text item may also exist as a broadcast the
+    # reader can listen to. The transcript is the archived text; the audio is a link.
+    if a.get("audio_url"):
+        prov += (f' Rozhovor je k poslechu také jako audio: '
+                 f'<a href="{esc(a["audio_url"])}" rel="external">'
+                 f'{esc(a.get("audio_label", "podcast"))}</a>.')
 
     note = f'<div class="provenance"><p>{esc(a["body_note"])}</p></div>\n' if a.get("body_note") else ""
     # the outlet's standfirst: part of the published piece, but the editor's words,
@@ -958,6 +972,8 @@ def write_machine_readable(items, social=()):
             d["standfirst_note"] = "Written by the original outlet, not by the author."
         if a.get("interviewer"):
             d["interviewer"] = a["interviewer"]
+        if a.get("audio_url"):
+            d["audio_url"] = a["audio_url"]
         if a.get("issue"):
             d["issue"] = a["issue"]
         if a["media"] == "text":
