@@ -397,7 +397,7 @@ Abstract: This paper presents the first comprehensive meta-analysis of the elast
 ## Do decisions about outliers and influential effects matter? Evidence from 358 behavioral science meta-analyses
 URL: https://meta-analysis.cz/outliers/
 Citation: Tomas Havranek, Zuzana Irsova, Martina Luskova, T. D. Stanley (2026), “Do decisions about outliers and influential effects matter? Evidence from 358 behavioral science meta-analyses.” Charles University, Prague. Available at meta-analysis.cz/outliers.
-Paper: https://meta-analysis.cz/outliers/outliers2.pdf
+Paper: https://meta-analysis.cz/outliers/outliers.pdf
 Pre-registration: https://doi.org/10.17605/OSF.IO/97CMV
 Appendix: https://meta-analysis.cz/outliers/appendix.pdf
 Replication Package: https://doi.org/10.5281/zenodo.21216506
