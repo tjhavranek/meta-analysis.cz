@@ -14,6 +14,8 @@ body_note: "Redakční dotazník z výběru Forbes „Top vědkyně Česka 2025�
 
 Nedávno se stala historicky nejmladší profesorkou Univerzity Karlovy, zároveň je jednou z nejcitovanějších českých ekonomek. Věnuje se metaanalýze, a jak sama říká, překládá stovky akademických publikací do výstupu, který je použitelný v praxi. Zabývá se tématy souvisejícími s mezinárodním obchodem, trhem práce či energetickou ekonomií. S výsledky jejích výzkumů pracují mezinárodní organizace jako OECD, Mezinárodní měnový fond, Evropský parlament, Evropská komise a další. Vědecké zkušenosti sbírala například v Berkeley, na Stanfordu a na Novém Zélandu.
 
+## Dotazník Zuzany Havránkové
+
 Co děláte? Jak byste laikovi vysvětlila svou práci?
 
 Překládám stovky akademických publikací do výstupu, který je použitelný v praxi. Tomu se říká metaanalýza: statistické shrnutí výzkumu na dané téma.

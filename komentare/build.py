@@ -1009,6 +1009,10 @@ def write_machine_readable(items, social=()):
             "word_count": len(p["text"].split()), "text": p["text"],
             **({"image": [f"{SITE}{PATH}/social-img/{f}" for f in p["images"]]}
                if p.get("images") else {}),
+            # so a consumer of the corpus can follow the post's links without having to
+            # resolve a shortener that may no longer exist
+            **({"link_map": p["link_map"]} if p.get("link_map") else {}),
+            **({"comment_links": p["comment_links"]} if p.get("comment_links") else {}),
         })
     (KDIR / "index.json").write_text(json.dumps({
         "name": f"Komentáře — {SITE_AUTHORS}",
@@ -1180,12 +1184,22 @@ def write_socials_page():
         return []
     posts = json.loads(SOCIAL_JSON.read_text(encoding="utf-8"))
     posts.sort(key=lambda p: p.get("datetime", p["date"]), reverse=True)
-    # Per-DAY counter, not per-list-position: a new post must never renumber the
-    # anchors of older ones, or every deep link and every stored @id breaks.
-    seen_day = {}
+    # Anchors are STORED in social-posts.json, not derived. The old per-day counter was
+    # assigned in datetime order, so back-filling a post earlier in a day that already
+    # had one would have renumbered the existing post from "2026-07-25" to
+    # "2026-07-25-2" — moving both its #fragment and its corpus id "posts-<anchor>",
+    # the one identifier this archive promises not to move. Only a post with no stored
+    # anchor gets one, and it takes the first free suffix, touching nothing else.
+    used = {p["anchor"] for p in posts if p.get("anchor")}
     for p in sorted(posts, key=lambda x: x.get("datetime", x["date"])):
-        n = seen_day[p["date"]] = seen_day.get(p["date"], 0) + 1
-        p["anchor"] = p["date"] if n == 1 else f"{p['date']}-{n}"
+        if p.get("anchor"):
+            continue
+        a, n = p["date"], 1
+        while a in used:
+            n += 1
+            a = f"{p['date']}-{n}"
+        p["anchor"] = a
+        used.add(a)
     slugs = [p.get("slug", "") for p in posts]
     for p in posts:
         if not SLUG_RE.match(p.get("slug") or ""):
@@ -1226,8 +1240,21 @@ def write_socials_page():
             items = "".join(f'<li><a href="{esc(u)}"{_rel(u)}>{esc(u)}</a></li>'
                             for u in p["comment_links"])
             cl = f'\n        <div class="post-links"><p>{lab}</p><ul>{items}</ul></div>'
+        # lnkd.in shorteners resolved to where they actually point. The post text keeps
+        # the shortener the author published — that is what she wrote, and rewriting a
+        # link's visible text to differ from its href is how phishing looks. The
+        # destination is disclosed instead, so the record survives lnkd.in going away.
+        lm = ""
+        if p.get("link_map"):
+            lab = ("Kam zkrácené odkazy vedou:" if lang == "cs"
+                   else "Where the short links go:")
+            items = "".join(
+                f'<li><code>{esc(s.replace("https://", ""))}</code> → '
+                f'<a href="{esc(d)}"{_rel(d)}>{esc(d)}</a></li>'
+                for s, d in p["link_map"].items())
+            lm = f'\n        <div class="post-links"><p>{lab}</p><ul>{items}</ul></div>'
         perma = f"{PATH}/posts/{p['slug']}/"
-        content = f'        {_social_html(p["text"])}{ro}{cl}{imgs}'
+        content = f'        {_social_html(p["text"])}{ro}{cl}{lm}{imgs}'
         # The collection keeps the anchor id so old #YYYY-MM-DD links still scroll, and
         # its date is now the ordinary <a href> a crawler follows to reach the post's
         # own page. JSON-LD is not a discovery mechanism; a link is.
@@ -1696,6 +1723,12 @@ def check():
             slugs = {p.get("slug") for p in sp}
             if len(slugs) != len(sp) or None in slugs:
                 fails.append("post slugs are missing or not unique")
+            # anchors must be stored, not recomputed, or a same-day post can move one
+            anchors = [p.get("anchor") for p in sp]
+            if None in anchors:
+                fails.append("some posts have no stored anchor in social-posts.json")
+            if len(set(anchors)) != len(anchors):
+                fails.append("post anchors are not unique")
             on_disk = {d.name for d in (KDIR / "posts").iterdir() if d.is_dir()}
             for miss in sorted(slugs - on_disk):
                 fails.append(f"post page not built: posts/{miss}/")
