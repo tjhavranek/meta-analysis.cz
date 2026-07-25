@@ -457,24 +457,26 @@
     "date": "2026-07-25",
     "lang": "en",
     "images": [
-      "2026-07-25_outliers_table.png",
-      "2026-07-25_outliers_title.png"
+      "2026-07-25_outliers_title.png",
+      "2026-07-25_outliers_table.png"
     ],
     "text": "So, how much do different outlier treatments matter for meta-analysis results?\n\nWe have just preprinted a study that recomputes 358 behavioral science meta-analyses under five different outlier treatments.\n\nThe mean effect barely moves: the median absolute change in Cohen’s d is at most 0.047 and usually much smaller. But the interpretation moves more. In 11.5% of the meta-analyses, at least one treatment changes statistical significance; in 15.9%, it changes whether the effect reaches a smallest effect size of interest.\n\nWinsorizing changes conclusions least often; DFBETAS changes them most often.\n\nPaper, online appendix, and data:\nhttps://lnkd.in/dhtNgTMx\nPre-registration:\nhttps://lnkd.in/du4_6YDT\nReplication package:\nhttps://lnkd.in/dQrKGiw2\n\nJoint work with Tomas Havranek, Martina Lušková, and T. D. Stanley",
     "image_size": [
       [
-        1730,
-        915
-      ],
-      [
         1670,
         1570
+      ],
+      [
+        1730,
+        915
       ]
     ],
     "image_alt": [
-      "Table 3 of the paper, “Changes in statistical significance and smallest effect size of interest”. Two panels compare four outlier treatments — drop-extreme, studentized residual above 3, Winsorize 5/95, and DFBETAS above 2/√k — against the do-nothing baseline, each under random-effects and unrestricted weighted least squares estimators. Winsorizing changes the fewest conclusions and DFBETAS the most.",
-      "Title page of the working paper “Do decisions about outliers and influential effects matter? Evidence from 358 behavioral science meta-analyses” by Tomas Havranek, Zuzana Irsova, Martina Luskova and T. D. Stanley, dated July 2026, with the full abstract below the title."
+      "Title page of the working paper “Do decisions about outliers and influential effects matter? Evidence from 358 behavioral science meta-analyses” by Tomas Havranek, Zuzana Irsova, Martina Luskova and T. D. Stanley, dated July 2026, with the full abstract below the title.",
+      "Table 3 of the paper, “Changes in statistical significance and smallest effect size of interest”. Two panels compare four outlier treatments — drop-extreme, studentized residual above 3, Winsorize 5/95, and DFBETAS above 2/√k — against the do-nothing baseline, each under random-effects and unrestricted weighted least squares estimators. Winsorizing changes the fewest conclusions and DFBETAS the most."
     ],
-    "slug": "2026-07-25-do-outlier-decisions-matter"
+    "slug": "2026-07-25-do-outlier-decisions-matter",
+    "url": "https://www.linkedin.com/posts/zuzanairsova_so-how-much-do-different-outlier-treatments-activity-7486767472440827905-HD5D",
+    "datetime": "2026-07-25 13:01:02"
   }
 ]
