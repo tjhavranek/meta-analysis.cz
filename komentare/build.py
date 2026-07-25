@@ -1244,7 +1244,12 @@ def write_socials_page():
             "@id": canon + "#post",
             "mainEntityOfPage": canon,
             "headline": head,
-            "datePublished": p.get("datetime", p["date"]).replace(" ", "T") + "+00:00",
+            # A post exported from LinkedIn carries a timestamp; one transcribed by
+            # hand may only have its date. Appending a UTC offset to a bare date would
+            # emit "2026-07-25+00:00", which is not a valid datetime — and inventing a
+            # time to avoid that would be worse.
+            "datePublished": (p["datetime"].replace(" ", "T") + "+00:00"
+                              if p.get("datetime") else p["date"]),
             "inLanguage": lang,
             "url": canon,
             "author": {"@type": "Person", "name": "Zuzana Havránková",

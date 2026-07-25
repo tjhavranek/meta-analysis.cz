@@ -6,7 +6,22 @@
     <atom:link href="https://meta-analysis.cz/komentare/feed.xml" rel="self" type="application/rss+xml" />
     <description>Publicistika Tomáše Havránka a Zuzany Havránkové: komentáře pro celostátní média, sloupky pro litomyšlskou Lilii, rozhovory a kratší příspěvky ze sítí, v plném znění.</description>
     <language>cs</language>
-    <lastBuildDate>Thu, 16 Jul 2026 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Sat, 25 Jul 2026 00:00:00 +0000</lastBuildDate>
+    <item>
+      <title>So, how much do different outlier treatments matter for meta-analysis results?</title>
+      <link>https://meta-analysis.cz/komentare/posts/2026-07-25-do-outlier-decisions-matter/</link>
+      <guid isPermaLink="true">https://meta-analysis.cz/komentare/posts/2026-07-25-do-outlier-decisions-matter/</guid>
+      <pubDate>Sat, 25 Jul 2026 00:00:00 +0000</pubDate>
+      <category>Posts (ze sítí)</category>
+      <dc:language>en</dc:language>
+      <source url="">LinkedIn</source>
+      <content:encoded><![CDATA[<p>So, how much do different outlier treatments matter for meta-analysis results?</p><p>We have just preprinted a study that recomputes 358 behavioral science meta-analyses under five different outlier treatments.</p><p>The mean effect barely moves: the median absolute change in Cohen’s d is at most 0.047 and usually much smaller. But the interpretation moves more. In 11.5% of the meta-analyses, at least one treatment changes statistical significance; in 15.9%, it changes whether the effect reaches a smallest effect size of interest.</p><p>Winsorizing changes conclusions least often; DFBETAS changes them most often.</p><p>Paper, online appendix, and data:
+https://lnkd.in/dhtNgTMx
+Pre-registration:
+https://lnkd.in/du4_6YDT
+Replication package:
+https://lnkd.in/dQrKGiw2</p><p>Joint work with Tomas Havranek, Martina Lušková, and T. D. Stanley</p>]]></content:encoded>
+    </item>
     <item>
       <title>Does multi-agent debate improve AI feedback on research papers?</title>
       <link>https://meta-analysis.cz/komentare/posts/2026-07-16-does-multi-agent-debate-improve-ai-feedback/</link>
