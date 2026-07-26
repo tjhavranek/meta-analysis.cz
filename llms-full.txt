@@ -369,7 +369,7 @@ Abstract: We revisit a central estimate in the economics of education: the human
 
 ## Meta-Analysis Instrumental Variable Estimator
 URL: https://meta-analysis.cz/maive/
-Citation: Zuzana Irsova, Pedro Bom, Tomas Havranek, and Heiko Rachinger (2025): "Spurious Precision in Meta-Analysis of Observational Research." Nature Commun 16, 8454.
+Citation: Zuzana Irsova, Pedro Bom, Tomas Havranek, and Heiko Rachinger (2025): "Spurious Precision in Meta-Analysis of Observational Research." Nature Communications 16, 8454.
 Published version: https://doi.org/10.1038/s41467-025-63261-0
 Paper: https://meta-analysis.cz/maive/maive.pdf
 Supplement: https://meta-analysis.cz/maive/supplement.pdf
@@ -432,7 +432,7 @@ URL: https://meta-analysis.cz/reforms/
 Citation: Jan Babecky & Tomas Havranek (2014), "Structural Reforms and Growth in Transition: A Meta-Analysis." Economics of Transition 22(1), pp. 13-42.
 Published version: https://doi.org/10.1111/ecot.12029
 Paper: https://meta-analysis.cz/reforms/reforms2.pdf
-Data in XLS (6.8 MB): https://meta-analysis.cz/reforms/reform.xls
+Data in XLS (169 KB): https://meta-analysis.cz/reforms/reform.xls
 Stata Program: https://meta-analysis.cz/reforms/reform.do
 Excluded Studies: https://meta-analysis.cz/reforms/new.doc
 
@@ -555,7 +555,7 @@ Abstract: We collect 2,735 estimates of the elasticity of intertemporal substitu
 
 ## Trust, Rule of Law, and the Size Premium: Evidence from a Meta-Analysis
 URL: https://meta-analysis.cz/trust/
-Citation: Schwarz Jiri, Havranek Tomas, Irsova Zuzana, Novak Jiri (2026), “Trust, Rule of Law, and the Size Premium: Evidence from a Meta-Analysis.” Anglo-American University and Charles University, Prague. Available at meta-analysis.cz/trust.
+Citation: Jiri Schwarz, Tomas Havranek, Zuzana Irsova, Jiri Novak (2026), “Trust, Rule of Law, and the Size Premium: Evidence from a Meta-Analysis.” Anglo-American University and Charles University, Prague. Available at meta-analysis.cz/trust.
 Paper: https://meta-analysis.cz/trust/trust.pdf
 Replication Package: https://meta-analysis.cz/trust/replication.zip
 Data: https://meta-analysis.cz/trust/trust_data.csv
