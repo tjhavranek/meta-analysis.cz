@@ -335,6 +335,10 @@ def inject(path, block):
     if raw.count("</head>") != 1:
         WARNINGS.append(f"{path}: no unique </head>, page skipped")
         return False
+    # these pages are English (Czech sections are SELF_MANAGED and never injected);
+    # declare it for screen readers, translation tools, and search engines
+    if re.search(r"<html(?![^>]*lang=)", raw):
+        raw = re.sub(r"<html(?![^>]*lang=)", '<html lang="en"', raw, count=1)
     out = raw.replace("</head>", f"{S_OPEN}\n{block}{S_CLOSE}\n</head>")
     open(path, "wb").write(out.encode("utf-8"))
     return True
@@ -516,6 +520,9 @@ def main():
     lt += ["", "## Resources", "",
            f"- [Full paper index with abstracts and file links]({BASE}/llms-full.txt): one entry per paper, for LLM ingestion",
            f"- [Sitemap]({BASE}/sitemap.xml): all pages and PDF full texts",
+           f"- [Commentary and interviews]({BASE}/komentare/): op-eds, columns and interviews "
+           f"(mostly Czech); machine index at {BASE}/komentare/llms.txt",
+           f"- [Research notes]({BASE}/notes/): short notes on methods and papers",
            "- [EasyMeta](https://www.easymeta.org/): one-click meta-analysis web app (MAIVE, PET-PEESE, clustering)",
            "- [MAER-Net](https://www.maer-net.org/): Meta-Analysis of Economics Research Network",
            "", "## Optional", "",

@@ -77,7 +77,8 @@
   },
   "has_meta_description": true,
   "meta_keywords": "Hedge funds, alpha, fees, meta-analysis, model uncertainty",
-  "one_line": "Meta-analysis of 1,019 estimates from 74 studies identifies which factors explain the variation in hedge fund performance; net performance is near zero."
+  "one_line": "Meta-analysis of 1,019 estimates from 74 studies identifies which factors explain the variation in hedge fund performance; net performance is near zero.",
+  "citation_title": "What Matters in Explaining the Variation in Hedge Fund Performance?"
  },
  {
   "project": "armington",
@@ -121,7 +122,8 @@
   },
   "has_meta_description": true,
   "meta_keywords": "Armington, trade elasticity, elasticity of substitution, Bayesian model averaging, meta-analysis, publication bias",
-  "one_line": "Meta-analysis of 3,524 estimates finds the Armington trade elasticity is 2.5-5.1 after correcting for publication bias."
+  "one_line": "Meta-analysis of 3,524 estimates finds the Armington trade elasticity is 2.5-5.1 after correcting for publication bias.",
+  "citation_title": "Estimating the Armington Elasticity: The Importance of Study Design and Publication Bias"
  },
  {
   "project": "beauty",
@@ -161,7 +163,8 @@
   },
   "has_meta_description": true,
   "meta_keywords": "Beauty premium, productivity, meta-analysis, model uncertainty, publication bias",
-  "one_line": "A meta-analysis of 1,159 estimates: the beauty premium in earnings and productivity is small once publication bias and cognitive ability are addressed."
+  "one_line": "A meta-analysis of 1,159 estimates: the beauty premium in earnings and productivity is small once publication bias and cognitive ability are addressed.",
+  "citation_title": "Meta-Analysis of Field Studies on Beauty and Professional Success"
  },
  {
   "project": "bma",
@@ -196,7 +199,8 @@
   "figure": null,
   "has_meta_description": true,
   "meta_keywords": "foreign direct investment, productivity, spillovers, meta-analysis, determinants",
-  "one_line": "Meta-analysis of 1205 estimates finds horizontal FDI spillovers average zero, shaped by technology gap and ownership structure."
+  "one_line": "Meta-analysis of 1205 estimates finds horizontal FDI spillovers average zero, shaped by technology gap and ownership structure.",
+  "citation_title": "Determinants of Horizontal Spillovers from FDI: Evidence from a Large Meta-Analysis"
  },
  {
   "project": "border",
@@ -286,7 +290,8 @@
   },
   "has_meta_description": true,
   "meta_keywords": "Class size, student learning, meta-analysis, publication bias, Bayesian model averaging",
-  "one_line": "A meta-analysis of 2,819 estimates from 66 studies finds little publication bias and a negligible class size effect on student achievement."
+  "one_line": "A meta-analysis of 2,819 estimates from 66 studies finds little publication bias and a negligible class size effect on student achievement.",
+  "citation_title": "Publication Bias and Model Uncertainty in Measuring the Effect of Class Size on Achievement"
  },
  {
   "project": "climate",
@@ -516,7 +521,8 @@
   },
   "has_meta_description": true,
   "meta_keywords": "demand for higher education, tuition, enrollment, model averaging, Bayesian model averaging, meta-analysis, publication bias",
-  "one_line": "Meta-analysis of 443 estimates finds the tuition-enrollment elasticity is near zero once publication bias is corrected."
+  "one_line": "Meta-analysis of 443 estimates finds the tuition-enrollment elasticity is near zero once publication bias is corrected.",
+  "citation_title": "Tuition Fees and University Enrolment: A Meta-Regression Analysis"
  },
  {
   "project": "eis",
@@ -557,7 +563,8 @@
   },
   "has_meta_description": true,
   "meta_keywords": "Elasticity of intertemporal substitution, coefficient of relative risk aversion, consumption, meta-analysis, publication bias",
-  "one_line": "Meta-analysis of 2,735 EIS estimates finds strong selective reporting inflates the elasticity of intertemporal substitution."
+  "one_line": "Meta-analysis of 2,735 EIS estimates finds strong selective reporting inflates the elasticity of intertemporal substitution.",
+  "citation_title": "Measuring Intertemporal Substitution: The Importance of Method Choices and Selective Reporting"
  },
  {
   "project": "euro",
@@ -583,7 +590,8 @@
   "figure": null,
   "has_meta_description": true,
   "meta_keywords": "Euro, trade, meta-analysis, publication bias",
-  "one_line": "Meta-analysis finds the euro's trade-promoting effect is insignificant once publication bias is corrected for."
+  "one_line": "Meta-analysis finds the euro's trade-promoting effect is insignificant once publication bias is corrected for.",
+  "citation_title": "Rose Effect and the Euro: Is the Magic Gone?"
  },
  {
   "project": "excess_sensitivity",
@@ -622,7 +630,8 @@
   "figure": null,
   "has_meta_description": true,
   "meta_keywords": "Excess sensitivity, consumption, income, Euler equation, meta-analysis, publication bias",
-  "one_line": "Meta-analysis of 144 studies finds little excess sensitivity of consumption once micro data, publication bias, and liquidity constraints are addressed."
+  "one_line": "Meta-analysis of 144 studies finds little excess sensitivity of consumption once micro data, publication bias, and liquidity constraints are addressed.",
+  "citation_title": "Do Consumers Really Follow a Rule of Thumb? Three Thousand Estimates from 144 Studies Say 'Probably Not'"
  },
  {
   "project": "exercise",
@@ -800,7 +809,8 @@
   },
   "has_meta_description": true,
   "meta_keywords": "Frisch elasticity, labor supply, extensive margin, meta-analysis, publication bias, Bayesian model averaging",
-  "one_line": "Meta-analysis of over 700 estimates finds publication bias inflates the Frisch labor supply elasticity, with a corrected total hours elasticity near 0.25."
+  "one_line": "Meta-analysis of over 700 estimates finds publication bias inflates the Frisch labor supply elasticity, with a corrected total hours elasticity near 0.25.",
+  "citation_title": "Intertemporal Substitution in Labor Supply: A Meta-Analysis"
  },
  {
   "project": "gasoline",
@@ -827,7 +837,8 @@
   "figure": null,
   "has_meta_description": true,
   "meta_keywords": "Gasoline demand, income elasticity, meta-analysis, publication bias",
-  "one_line": "Meta-regression corrects for publication bias, finding gasoline demand income elasticity of 0.1 short run and 0.23 long run."
+  "one_line": "Meta-regression corrects for publication bias, finding gasoline demand income elasticity of 0.1 short run and 0.23 long run.",
+  "citation_title": "Income Elasticity of Gasoline Demand: A Meta-Analysis"
  },
  {
   "project": "gasoline_price",
@@ -855,7 +866,8 @@
   "figure": null,
   "has_meta_description": true,
   "meta_keywords": "Gasoline demand, price elasticity, meta-analysis, publication bias",
-  "one_line": "Meta-analysis shows published gasoline demand elasticities are exaggerated twofold due to publication selection bias."
+  "one_line": "Meta-analysis shows published gasoline demand elasticities are exaggerated twofold due to publication selection bias.",
+  "citation_title": "Demand for Gasoline is More Price-Inelastic than Commonly Thought"
  },
  {
   "project": "guidelines",
@@ -963,7 +975,8 @@
   },
   "has_meta_description": true,
   "meta_keywords": "hedge funds, meta-analysis, publication bias",
-  "one_line": "Quantitative survey of 1,019 hedge fund alpha estimates from 74 studies finds little evidence of publication selection bias."
+  "one_line": "Quantitative survey of 1,019 hedge fund alpha estimates from 74 studies finds little evidence of publication selection bias.",
+  "citation_title": "Is research on hedge fund performance published selectively? A quantitative survey"
  },
  {
   "project": "house_prices",
@@ -1183,7 +1196,8 @@
   },
   "has_meta_description": true,
   "meta_keywords": "COVID-19, learning loss, pandemic, meta-analysis, publication bias, p-hacking, RoBMA, MAIVE, education",
-  "one_line": "Meta-analysis of COVID-19 learning loss: bias-corrected RoBMA and MAIVE estimates converge on about -0.12 SD, roughly 30% of a school year."
+  "one_line": "Meta-analysis of COVID-19 learning loss: bias-corrected RoBMA and MAIVE estimates converge on about -0.12 SD, roughly 30% of a school year.",
+  "citation_title": "Publication Bias and P-Hacking in the Effect of COVID-19 on Learning"
  },
  {
   "project": "maive",
@@ -1243,7 +1257,8 @@
   },
   "has_meta_description": true,
   "meta_keywords": "Publication bias, p-hacking, selection models, meta-regression, funnel plot, inverse-variance weighting",
-  "one_line": "MAIVE, an instrumental-variable estimator that corrects meta-analysis for spurious precision when standard errors are estimated and can be p-hacked."
+  "one_line": "MAIVE, an instrumental-variable estimator that corrects meta-analysis for spurious precision when standard errors are estimated and can be p-hacked.",
+  "citation_title": "Spurious Precision in Meta-Analysis of Observational Research"
  },
  {
   "project": "migrant",
@@ -1386,7 +1401,8 @@
   "figure": null,
   "has_meta_description": true,
   "meta_keywords": "structural reforms, economic growth, transition economies, meta-analysis, publication bias",
-  "one_line": "Meta-analysis of 46 studies finds structural reforms in transition countries carry short-run costs but strong long-run growth benefits."
+  "one_line": "Meta-analysis of 46 studies finds structural reforms in transition countries carry short-run costs but strong long-run growth benefits.",
+  "citation_title": "Structural Reforms and Growth in Transition: A Meta-Analysis"
  },
  {
   "project": "remittances",
@@ -1630,7 +1646,8 @@
   },
   "has_meta_description": true,
   "meta_keywords": "size, stock, asset pricing, meta-analysis, publication bias",
-  "one_line": "First meta-analysis of the size premium finds strong publication bias and a corrected effect of 1.72% in annual returns."
+  "one_line": "First meta-analysis of the size premium finds strong publication bias and a corrected effect of 1.72% in annual returns.",
+  "citation_title": "Firm Size and Stock Returns: A Quantitative Survey"
  },
  {
   "project": "skill",
@@ -1709,7 +1726,8 @@
   "figure": null,
   "has_meta_description": true,
   "meta_keywords": "foreign direct investment, productivity, spillovers, meta-analysis, publication selection bias",
-  "one_line": "A meta-analysis of 3,626 estimates finds vertical FDI spillovers to suppliers are economically significant but spillovers to buyers small."
+  "one_line": "A meta-analysis of 3,626 estimates finds vertical FDI spillovers to suppliers are economically significant but spillovers to buyers small.",
+  "citation_title": "Estimating Vertical Spillovers from FDI: Why Results Vary and What the True Effect Is"
  },
  {
   "project": "students",
@@ -1796,7 +1814,8 @@
   },
   "has_meta_description": true,
   "meta_keywords": "Elasticity of intertemporal substitution, coefficient of relative risk aversion, consumption, meta-analysis, Bayesian model averaging",
-  "one_line": "Meta-analysis of 2,735 estimates across 104 countries links intertemporal substitution to income and stock market participation."
+  "one_line": "Meta-analysis of 2,735 estimates across 104 countries links intertemporal substitution to income and stock market participation.",
+  "citation_title": "Cross-Country Heterogeneity in Intertemporal Substitution"
  },
  {
   "project": "water",
@@ -1843,7 +1862,8 @@
   },
   "has_meta_description": true,
   "meta_keywords": "water demand, income elasticity, Bayesian model averaging, meta-analysis, publication bias",
-  "one_line": "A meta-analysis finds publication and endogeneity biases inflate reported income elasticities of water demand, with a true elasticity near 0.15."
+  "one_line": "A meta-analysis finds publication and endogeneity biases inflate reported income elasticities of water demand, with a true elasticity near 0.15.",
+  "citation_title": "Measuring the Income Elasticity of Water Demand: The Importance of Publication and Endogeneity Biases"
  },
  {
   "project": "esg",

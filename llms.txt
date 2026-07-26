@@ -61,6 +61,8 @@
 
 - [Full paper index with abstracts and file links](https://meta-analysis.cz/llms-full.txt): one entry per paper, for LLM ingestion
 - [Sitemap](https://meta-analysis.cz/sitemap.xml): all pages and PDF full texts
+- [Commentary and interviews](https://meta-analysis.cz/komentare/): op-eds, columns and interviews (mostly Czech); machine index at https://meta-analysis.cz/komentare/llms.txt
+- [Research notes](https://meta-analysis.cz/notes/): short notes on methods and papers
 - [EasyMeta](https://www.easymeta.org/): one-click meta-analysis web app (MAIVE, PET-PEESE, clustering)
 - [MAER-Net](https://www.maer-net.org/): Meta-Analysis of Economics Research Network
 
