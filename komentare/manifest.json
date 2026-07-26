@@ -1,7 +1,7 @@
 {
  "name": "Komentáře — Tomáš Havránek, Zuzana Havránková",
  "url": "https://meta-analysis.cz/komentare/data/",
- "corpus_updated": "2026-07-25",
+ "newest_record": "2026-07-25",
  "temporal_coverage": "2014-01-27/2026-07-25",
  "records": {
   "total": 215,
@@ -24,7 +24,8 @@
   "published_full_text": "the text as published",
   "author_manuscript": "the author's own version, as sent to the outlet",
   "publisher_excerpt": "only the outlet's free teaser; the original is paywalled",
-  "link_only": "audio or video; no text is stored, the record links to the source"
+  "link_only": "audio or video; no text is stored, the record links to the source",
+  "unpublished_manuscript": "written for the outlet and submitted, but never printed; the date is the issue it was written for, not a publication date"
  },
  "files": {
   "corpus.jsonl": {

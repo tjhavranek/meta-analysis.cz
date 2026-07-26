@@ -1101,7 +1101,12 @@ def write_machine_readable(items, social=()):
     (KDIR / "manifest.json").write_text(json.dumps({
         "name": f"Komentáře — {SITE_AUTHORS}",
         "url": f"{BASE}/data/",
-        "corpus_updated": _span(items, social).split("/")[1],
+        # Renamed from "corpus_updated", which promised something it never delivered:
+        # it was always the newest record's date, so adding the two 2021/2025 pieces on
+        # 26 July left it reading 25 July and anyone polling it for changes saw none.
+        # It is the newest record, so it now says so. To detect that the corpus changed,
+        # compare the per-file sha256 checksums below — that is what they are for.
+        "newest_record": _span(items, social).split("/")[1],
         "temporal_coverage": _span(items, social),
         "records": {
             "total": len(docs),
@@ -1116,6 +1121,9 @@ def write_machine_readable(items, social=()):
             "author_manuscript": "the author's own version, as sent to the outlet",
             "publisher_excerpt": "only the outlet's free teaser; the original is paywalled",
             "link_only": "audio or video; no text is stored, the record links to the source",
+            "unpublished_manuscript": "written for the outlet and submitted, but never "
+                                      "printed; the date is the issue it was written for, "
+                                      "not a publication date",
         },
         "files": files,
         "generated_from": ["komentare/src/*.md", "komentare/social-posts.json"],
@@ -1760,8 +1768,13 @@ def check():
             if sum(mf["records"][_k].values()) != expected:
                 fails.append(f"manifest {_k} sums to "
                              f"{sum(mf['records'][_k].values())}, not {expected}")
-        if mf["corpus_updated"] != mf["temporal_coverage"].split("/")[1]:
-            fails.append("manifest corpus_updated is not the newest record")
+        if mf["newest_record"] != mf["temporal_coverage"].split("/")[1]:
+            fails.append("manifest newest_record disagrees with temporal_coverage")
+        # every status that occurs must also be explained, or the corpus ships a value
+        # a consumer cannot interpret
+        _un = set(mf["records"]["by_text_status"]) - set(mf["text_status_meanings"])
+        if _un:
+            fails.append(f"text_status values with no meaning given: {sorted(_un)}")
         _dp = (KDIR / "data" / "index.html").read_text(encoding="utf-8")
         if f"{expected} záznamů" not in _dp:
             fails.append(f"data page does not report {expected} záznamů")
