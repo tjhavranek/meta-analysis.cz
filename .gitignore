@@ -1,2 +1,4 @@
 tools/__pycache__/
 *.pyc
+codex_out_*.md
+sol_*.md
