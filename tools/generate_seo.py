@@ -337,8 +337,9 @@ def inject(path, block):
         return False
     # these pages are English (Czech sections are SELF_MANAGED and never injected);
     # declare it for screen readers, translation tools, and search engines
-    if re.search(r"<html(?![^>]*lang=)", raw):
-        raw = re.sub(r"<html(?![^>]*lang=)", '<html lang="en"', raw, count=1)
+    mh = re.search("<html[^>]*>", raw)
+    if mh and "lang=" not in mh.group(0):
+        raw = raw[:mh.start()] + mh.group(0).replace("<html", chr(60) + 'html lang="en"', 1) + raw[mh.end():]
     out = raw.replace("</head>", f"{S_OPEN}\n{block}{S_CLOSE}\n</head>")
     open(path, "wb").write(out.encode("utf-8"))
     return True

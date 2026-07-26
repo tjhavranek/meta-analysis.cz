@@ -416,7 +416,7 @@ Abstract: We demonstrate that all meta-analyses of partial correlations are bias
 
 ## How to Solve the Price Puzzle? A Meta-Analysis
 URL: https://meta-analysis.cz/price_puzzle/
-Citation: Rusnak Marek, Tomas Havranek, & Roman Horvath (2013), "How to Solve the Price Puzzle? A Meta-Analysis." Journal of Money, Credit and Banking 45(1), 37-70.
+Citation: Marek Rusnak, Tomas Havranek, & Roman Horvath (2013), "How to Solve the Price Puzzle? A Meta-Analysis." Journal of Money, Credit and Banking 45(1), 37-70.
 Published version: https://doi.org/10.1111/j.1538-4616.2012.00561.x
 Paper: https://meta-analysis.cz/price_puzzle/price_puzzle2.pdf
 Impulse Responses: https://meta-analysis.cz/price_puzzle/IRs.pdf
@@ -450,7 +450,7 @@ Abstract: Expatriate workers' remittances represent an important source of finan
 
 ## Natural Resources and Economic Growth: A Meta-Analysis
 URL: https://meta-analysis.cz/resource_curse/
-Citation: Tomas Havranek, Roman Horvath, and Ayaz Zeylanov (2016), "Natural Resources and Economic Growth: A Meta-Analysis." World Development 88, 134-151.
+Citation: Tomas Havranek, Roman Horvath, and Ayaz Zeynalov (2016), "Natural Resources and Economic Growth: A Meta-Analysis." World Development 88, 134-151.
 Published version: https://doi.org/10.1016/j.worlddev.2016.07.016
 Read the paper: https://meta-analysis.cz/resource_curse/resource_curse2.pdf
 Download the data: https://meta-analysis.cz/resource_curse/resource_curse.dta

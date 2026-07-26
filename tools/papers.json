@@ -1328,7 +1328,7 @@
   "project": "price_puzzle",
   "title": "How to Solve the Price Puzzle? A Meta-Analysis",
   "abstract": "The short-run increase in prices following an unexpected tightening of monetary policy constitutes a puzzle frequently reported in empirical studies. Yet the puzzle is easy to explain away when all published models are quantitatively reviewed. We collect and examine about 1,000 point estimates of impulse responses from 70 articles that use vector autoregressions to study monetary transmission in various countries. We find that the puzzle is created by model misspecifications: especially by the omission of commodity prices, neglect of potential output, and reliance on recursive identification. Our results also suggest that the strength of monetary policy depends on the country's openness, phase of the economic cycle, and degree of central bank independence.",
-  "reference_line": "Rusnak Marek, Tomas Havranek, & Roman Horvath (2013), \"How to Solve the Price Puzzle? A Meta-Analysis.\" Journal of Money, Credit and Banking 45(1), 37-70.",
+  "reference_line": "Marek Rusnak, Tomas Havranek, & Roman Horvath (2013), \"How to Solve the Price Puzzle? A Meta-Analysis.\" Journal of Money, Credit and Banking 45(1), 37-70.",
   "authors": [
    "Marek Rusnak",
    "Tomas Havranek",
@@ -1443,11 +1443,11 @@
   "project": "resource_curse",
   "title": "Natural Resources and Economic Growth: A Meta-Analysis",
   "abstract": "An important question in development studies is how natural resources richness affects long-term economic growth. No consensus answer, however, has yet emerged, with approximately 40% of empirical papers finding a negative effect, 40% finding no effect, and 20% finding a positive effect. Does the literature taken together imply the existence of the so-called natural resource curse? In a quantitative survey of 605 estimates reported in 43 studies, we find that overall support for the resource curse hypothesis is weak when potential publication bias and method heterogeneity are taken into account. Our results also suggest that four aspects of study design are especially effective in explaining the differences in results across studies: 1) controlling for institutional quality, 2) controlling for the level of investment activity, 3) distinguishing between different types of natural resources, and 4) differentiating between resource dependence and abundance.",
-  "reference_line": "Tomas Havranek, Roman Horvath, and Ayaz Zeylanov (2016), \"Natural Resources and Economic Growth: A Meta-Analysis.\" World Development 88, 134-151.",
+  "reference_line": "Tomas Havranek, Roman Horvath, and Ayaz Zeynalov (2016), \"Natural Resources and Economic Growth: A Meta-Analysis.\" World Development 88, 134-151.",
   "authors": [
    "Tomas Havranek",
    "Roman Horvath",
-   "Ayaz Zeylanov"
+   "Ayaz Zeynalov"
   ],
   "year": 2016,
   "journal": "World Development",
