@@ -132,6 +132,14 @@ main { padding: 2.75rem 0 4rem; }
        padding: 0.1rem 0.45rem; border-radius: 3px; border: 1px solid var(--rule);
        color: var(--faint); white-space: nowrap; }
 .tag-av { color: var(--accent); border-color: currentColor; }
+/* A piece that was written and submitted but never printed. It has to read as a
+   different kind of thing from the rows around it, at a glance. */
+.tag-unpub { color: var(--muted); border-style: dashed; }
+
+/* Figures that ran with the text: the D35 maps, the match photographs. */
+.item-fig { margin: 1.6rem 0; }
+.item-fig img { width: 100%; height: auto; border-radius: 3px; display: block; }
+.item-fig figcaption { font-size: 0.8rem; color: var(--muted); margin-top: 0.4rem; }
 
 /* ------------------------------------------------------------------ single */
 

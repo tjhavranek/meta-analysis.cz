@@ -2,7 +2,7 @@
 
 Publicistika Tomáše Havránka a Zuzany Havránkové: komentáře pro celostátní média, sloupky pro litomyšlskou Lilii, rozhovory a kratší příspěvky ze sítí. Texty jsou zde archivovány v plném znění s odkazem na původní vydání.
 
-Tento soubor obsahuje plné znění všech textových položek (174 z celkem 190). Zbývající položky jsou audio a video, které archiv vede pouze odkazem, a v tomto souboru nejsou; jejich metadata najdete v index.json a corpus.jsonl. Samostatně jsou vedeny kratší příspěvky ze sociálních sítí (23), psané převážně anglicky. Mají vlastní stránku https://meta-analysis.cz/komentare/posts/ a v index.json i corpus.jsonl jsou označeny jako genre=social_post.
+Tento soubor obsahuje plné znění všech textových položek (176 z celkem 192). Zbývající položky jsou audio a video, které archiv vede pouze odkazem, a v tomto souboru nejsou; jejich metadata najdete v index.json a corpus.jsonl. Samostatně jsou vedeny kratší příspěvky ze sociálních sítí (23), psané převážně anglicky. Mají vlastní stránku https://meta-analysis.cz/komentare/posts/ a v index.json i corpus.jsonl jsou označeny jako genre=social_post.
 
 ---
 
@@ -863,6 +863,26 @@ Jak pomoci rodičům
 „Já jsem původně začínala v byznysu, avšak čekali jsme první miminko a zároveň jsem si dělala doktorát. Bylo to náročné, ale postupně jsem zjistila, že ta akademická cesta mi dává větší smysl. Člověk se musí rozhodnout, co zvládne, a někdy prostě improvizuje,“ vzpomíná na období, kdy pro tehdejší RWE ve spolupráci s tradery na energetických trzích rozvíjela matematické modely pomáhající firmě zajistit co nejvýhodnější nákupy energií. Šlo o práci s jasně viditelným, až téměř hmatatelným ekonomickým dopadem, vyzdvihuje Havránková.
 
 Dobře si je nicméně vědoma toho, že propad porodnosti v rozvinutém světě souvisí nejen s materiálními podmínkami, ale také se společenským posunem vnímání rodičovství. „Nedávno jsem se potkala s kamarádkou a zeptala se jí, co teď dělá. A ona odpověděla: ‚Já jsem jen matka.‘ Mně to pak přišlo strašně smutné. Že už se i do našeho vlastního vnímání začíná dostávat představa, že být matkou je jen tak něco. Jako by to nebyla práce. Ona to samozřejmě práce ve svých důsledcích je a často mnohem náročnější než osmihodinová směna. A nikdy se nepotřebujete ptát, jestli má hmatatelné výsledky. Nic většího v životě není.“
+
+---
+
+## Dálnice začne sloužit podle plánu, obchvat přivaděčů v nedohlednu
+
+*Lilie, září 2025. Tomáš Havránek.*
+
+Zdroj: https://meta-analysis.cz/komentare/litomysl-privadece-obchvat/
+
+Dopravní peklo lidem u hlavní silnice skončí za dva roky. Skončí naše litomyšlská ostuda, kdy jsme si pasivitou mezi lety 2010-2018 způsobili zpoždění na úseku, který měl původně být stavěn jako první. I nadále bude ale provoz na hlavní velmi silný, protože silnice bude fungovat jako dálniční přivaděč pro Českou Třebovou a Ústí nad Orlicí.
+
+Podívejte se na mapku – oficiální krajský plán dálničních přivaděčů. Vysoké Mýto bude mít přivaděč, který slouží zároveň jako obchvat. Město dokonce nabídlo, že ho zaplatí samo, protože rozumí, jak důležité je dostat tranzitní dopravu z centra.
+
+V Litomyšli nám takový obchvat taky chtěli postavit, dokonce i zaplatit, ale kolem roku 2015 to naše vedení odmítlo. Peníze, které nám stát na obchvat dal, jsme spolu s krajským vedením použili na opravení stávajících silnic a jejich označení jako dálniční přivaděče, což podle mého názoru hraničilo s dotačním podvodem a měli bychom se za to stydět.
+
+Výsledkem je, že veškerá tranzitní doprava (včetně kamionové dopravy nerespektující zákaz) bude z České Třebové proudit kolem zámku a školy na světelnou křižovatku, a odtud dále po Kpt. Jaroše a Sokolovské a až pak u Řídkého na dálnici. Dohromady podle studie ŘSD přes milion aut ročně.
+
+A Vám se to jako líbí, kolegové v Litomyšli odpovědní za dopravu? Potřebujeme skutečný obchvat ve stylu Vysokého Mýta. K tomu by stačilo oba přivaděče napojit na dálnici podle územního plánu kraje, tedy už před Litomyšlí, nenechat auta projíždět celým městem. Jinak budeme mít navěky ucpané oba konce náměstí, ze kterého nebude možné vyjet.
+
+Dosud byla prioritou samotná dostavba dálnice. Ta už v ohrožení není. Současnému vedení města hrozí u přivaděčů opakování historické ostudy, kterou jsme si zažili se samotnou dálnicí. Je nutné každý týden v této klíčové věci neustále tlačit na hejtmana, ředitele ŘSD, starosty Třebové a Ústí, vymýšlet spolu, jak obchvatem zlepšit život i v Kornicích a Němčicích. Osobně budu příště volit toho, kdo s tím udělá do voleb nejvíc.
 
 ---
 
@@ -5890,6 +5910,28 @@ Centrální banky tato vylepšení přijmou samy, ale potrvá to roky. Pokud chc
 Zdroj: https://www.litomysl.cz/soubor/1612264409411_lilie_2021_02.pdf
 
 Dostal jsem k nahlédnutí nově upravený projekt dálnice. Musím uznat, že nová podoba D35 je pro Litomyšl skutečně výrazně lepší než ta původní. Je blízko varianty 1, o které jsme se před lety bavili, takže nakonec nebude tolik vidět a slyšet; možná je ještě lepší než varianta 1. Za lepší dálnici pro Litomyšl je na místě poděkovat i Živým Kornicím, konkrétně panu Chaloupkovi, kterému jsem v minulosti spíše nadával a kterému se omlouvám, a pak panu starostu Brýdlovi a panu řediteli ŘSD Mátlovi. Bez úsilí dvou posledně jmenovaných by dálnice nestála ani v roce 2030. Věřím, že teď všechny strany své sliby v memorandu dodrží a už tak značné zpoždění našeho úseku nebude narůstat. Nyní tedy nemá smysl psát o tom, kdo zpoždění zavinil, ale upnout všechny síly k brzkému dokončení dálnice.
+
+---
+
+## Na dálnici bude u Litomyšle mezera. Jak jsme se k tomu dopracovali? (díl druhý)
+
+*Lilie, únor 2021. Tomáš Havránek.*
+
+Zdroj: https://meta-analysis.cz/komentare/litomysl-dalnice-mezera-2/
+
+Nejčastější otázka, kterou k dálnici dostávám, je: kdo ten debakl zavinil? O tom lze dlouho spekulovat, ale odpověď nám nepomůže. Nebudu tedy uvádět jména, budu se snažit nikoho neodsuzovat. V minulosti jsem to dělal a je mi to líto.
+
+Ostatně za katastrofu s dálnicí můžeme my všichni a konkrétně já sám. Málo jsem se o ni zajímal, málo jsem se na ni ptal našich představitelů. Když už jsem byl aktivní, bylo to ve věcech pro Litomyšl relativně podružných: posouvání za Kornice a řešení výškového profilu. Důležitější je ale včasné dokončení dálnice a řešení tranzitu ze severu. Navíc posun za Kornice přispěl k současnému debaklu.
+
+Jedno rýpnutí si ale neodpustím. Divím se, že vedení města veřejně neprohlásí následující: Ano, s dálnicí jsme to strašlivě zmršili. Je nám to líto a teď uděláme 100 %, abychom zajistili nejvýhodnější řešení pro Litomyšl. Pro celé město, nejen pár lidí. Možná trochu přehnané, ale pravdy je na tom dost, všem by se to líbilo a pomohlo by to vyčistit vzduch. Více bychom věřili dalším krokům města.
+
+Na druhou stranu vedení města není co závidět. Vyhrát komunální volby v Litomyšli není jako vyhrát v loterii: reálně Vám hrozí, že se stanete starostou. Každý den budete řešit průšvihy ostatních. Za odměnu dostanete nižší mzdu, než jakou byste si vydělali v soukromé sféře, a ještě Vám lidi budou pravidelně nadávat.
+
+Komunální politika tedy na zbohatnutí není. Kdybyste se pokoušeli o korupci, bude Vám to nějakou dobu fungovat, ale v malých částkách – a navíc téměř jistě se na to jednou přijde. Ani nejvyšší funkce v místní politice není něco, před čím by si člověk sedl na zadek: většina lidí, co znám, starostovi tyká. Z toho mi vyplývá, že komunální politici v Litomyšli musí být srdcaři. Dělají tuhle práci proto, že mají město rádi. Má osobní zkušenost s nimi to potvrzuje. Buďme tedy vděční, že ve vedení nemáme zkorumpované zmetky.
+
+Za 30 let se povedlo se hrozně moc dobrého. Co mě ale mrzí, je absence dlouhodobé dopravní strategie. Taktiku máme dobrou: o dálnici vyhrála Litomyšl každou bitvu. Vždy dostala, co chtěla: posunutí dálnice od Třebové k nám, posunutí trochu zpátky za Kornice, zrušení západního obchvatu, vedení dálnice s výhledem na město. Výsledkem je prohraná válka a urbanistická katastrofa v podobě zpožděné dálnice na vysokých náspech a dvou přivaděčů přes centrum.
+
+Přitom dálnice měla původně vést úplně jinudy, kolem Třebové a Ústí. Najížděli bychom na ni docela pohodlně po prázdné silnici I/35 u nového obchvatu Mýta. Proč to dopadlo jinak, si řekneme příště.
 
 ---
 

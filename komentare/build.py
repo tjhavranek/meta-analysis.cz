@@ -173,7 +173,12 @@ _EXCERPT_RE = re.compile(r"(?i)ukázka zveřejněná|úvodní ukázka")
 
 
 def text_status(a):
-    """published_full_text | author_manuscript | publisher_excerpt | link_only"""
+    """published_full_text | author_manuscript | publisher_excerpt | link_only
+    | unpublished_manuscript"""
+    # Written and sent to the outlet, but never printed. Not the same as
+    # author_manuscript, which is the author's version of something that DID run.
+    if a.get("unpublished"):
+        return "unpublished_manuscript"
     if a["media"] != "text":
         return "link_only"
     if _EXCERPT_RE.search(a.get("body_note") or ""):
@@ -576,6 +581,9 @@ def item_row(a, show_cat):
         bits.append(f'<span>č.&nbsp;{esc(a["issue"])}</span>')
     if a.get("interviewer"):
         bits.append(f'<span>ptal se: {esc(a["interviewer"])}</span>')
+    # A row that looks exactly like the published ones would imply this ran. It did not.
+    if a.get("unpublished"):
+        bits.append('<span class="tag tag-unpub">nevyšlo</span>')
     if tag:
         bits.append(tag)
     zi = ' data-zi="1"' if any(n in ZI_NAMES for n in names_row) else ""
@@ -678,14 +686,23 @@ def write_item(a):
                 + (f' <a href="{esc(a["url"])}" rel="external">'
                    f'{esc(a.get("url_label", "Web projektu"))}</a>.'
                    if a.get("url") else ""))
+    elif a.get("unpublished"):
+        # "Poprvé vyšlo" would be a plain lie. Say what actually happened, and give the
+        # issue it was written for as an intention rather than a publication date.
+        where = OUTLET_IN.get(a["outlet"], f'v médiu {a["outlet"]}')
+        prov = (f'Nevyšlo. Text byl napsán pro vydání '
+                f'{cs_date(a["date"], a.get("date_precision"), "cs")} '
+                f'{where}; datum je tedy zamýšlené, nikoli datum otištění. '
+                f'{esc(a["unpublished"])}')
     else:
         where = OUTLET_IN.get(a["outlet"], f'v médiu {a["outlet"]}')
         prov = (f'Poprvé vyšlo {where} {cs_date(a["date"], a.get("date_precision"), "cs")}.'
                 + (f' <a href="{esc(a["url"])}" rel="external">Původní vydání</a>.'
                    if a.get("url") else ""))
     # be honest about which text this is: an author manuscript can differ from what
-    # the magazine printed, and for at least one Lilie column it demonstrably does
-    if a.get("source") == "draft":
+    # the magazine printed, and for at least one Lilie column it demonstrably does.
+    # Meaningless when nothing was printed, so unpublished items skip it.
+    if a.get("source") == "draft" and not a.get("unpublished"):
         prov += (" Text vychází z autorova rukopisu; tištěná verze se může v detailech lišit.")
     elif a.get("source") == "image":
         prov += (" Text byl přepsán z tištěného vydání.")
@@ -695,6 +712,11 @@ def write_item(a):
         prov += (f' Rozhovor je k poslechu také jako audio: '
                  f'<a href="{esc(a["audio_url"])}" rel="external">'
                  f'{esc(a.get("audio_label", "podcast"))}</a>.')
+
+    _figs, _figfiles = item_images(a)
+    figs = (_figs + "\n") if _figs else ""
+    if _figfiles:
+        node["image"] = [f"{SITE}{PATH}/item-img/{f}" for f in _figfiles]
 
     note = f'<div class="provenance"><p>{esc(a["body_note"])}</p></div>\n' if a.get("body_note") else ""
     # the outlet's standfirst: part of the published piece, but the editor's words,
@@ -709,7 +731,7 @@ def write_item(a):
       </div>
 {note}{perex}      <div class="prose reading">
 {body_html}
-      </div>
+{figs}      </div>
       <div class="provenance"><p>{prov}</p></div>
       <nav class="pager">
         <a href="{PATH}/{a["category"]}/">← {esc(SECTIONS[a["category"]]["title"])}</a>
@@ -1162,6 +1184,68 @@ def _headline(text):
 SLUG_RE = re.compile(r"^\d{4}-\d{2}-\d{2}-[a-z0-9-]+$")
 
 
+def _img_size(path):
+    """(width, height) from the file's own header, so no hand-kept numbers can drift.
+    PNG and JPEG only; anything else renders without width/height, which is valid but
+    gives the browser no way to reserve the space."""
+    try:
+        b = path.read_bytes()
+    except OSError:
+        return None
+    if b[:8] == b"\x89PNG\r\n\x1a\n" and b[12:16] == b"IHDR":
+        return int.from_bytes(b[16:20], "big"), int.from_bytes(b[20:24], "big")
+    if b[:2] == b"\xff\xd8":
+        i = 2
+        while i + 9 < len(b):
+            if b[i] != 0xFF:
+                i += 1
+                continue
+            m = b[i + 1]
+            if m in (0xD8, 0x01) or 0xD0 <= m <= 0xD7:
+                i += 2
+                continue
+            ln = int.from_bytes(b[i + 2:i + 4], "big")
+            if m in (0xC0, 0xC1, 0xC2, 0xC3, 0xC5, 0xC6, 0xC7,
+                     0xC9, 0xCA, 0xCB, 0xCD, 0xCE, 0xCF):
+                return (int.from_bytes(b[i + 7:i + 9], "big"),
+                        int.from_bytes(b[i + 5:i + 7], "big"))
+            i += 2 + ln
+    return None
+
+
+def _split(v):
+    """Front matter has no lists, so a few keys carry a pipe-separated one."""
+    return [x.strip() for x in (v or "").split("|") if x.strip()]
+
+
+def item_images(a):
+    """Figures published alongside the text — the map, the photograph. Returns HTML.
+
+    Every figure needs alt text: these are maps and match photographs that carry
+    information, not decoration. The build refuses to run if one is missing, because a
+    silent empty alt is exactly the failure a screen-reader user cannot detect."""
+    files, alts = _split(a.get("images")), _split(a.get("image_alt"))
+    if not files:
+        return "", []
+    if len(files) != len(alts):
+        sys.exit(f"error: {a['file']} has {len(files)} images but {len(alts)} alt texts")
+    creds = _split(a.get("image_credit"))
+    out = []
+    for i, f in enumerate(files):
+        p = KDIR / "item-img" / f
+        if not p.exists():
+            sys.exit(f"error: {a['file']} references a missing image: {f}")
+        wh = _img_size(p)
+        dim = f' width="{wh[0]}" height="{wh[1]}"' if wh else ""
+        cap = (f'\n          <figcaption>{esc(creds[i])}</figcaption>'
+               if i < len(creds) else "")
+        out.append(f'        <figure class="item-fig">\n'
+                   f'          <img src="{PATH}/item-img/{esc(f)}" alt="{esc(alts[i])}"'
+                   f' loading="lazy" decoding="async"{dim}>{cap}\n'
+                   f'        </figure>')
+    return "\n".join(out), files
+
+
 def _post_desc(text):
     """Meta description for a post's own page: the opening, whole words, no markup."""
     t = re.sub(r"\s+", " ", text).strip()
@@ -1577,7 +1661,7 @@ def main():
     # "posts" and "social-img" are generated the same way "data" is — not backed by a
     # slug — so they must be named here or the sweep below deletes them every rebuild.
     live = ({a["slug"] for a in items if a["media"] == "text"} | set(SECTIONS)
-            | {"data", "posts", "ze-siti", "social-img"})
+            | {"data", "posts", "ze-siti", "social-img", "item-img"})
     orphans = [d for d in KDIR.iterdir()
                if d.is_dir() and d.name not in live and d.name not in ("src", "__pycache__")]
     for d in orphans:
