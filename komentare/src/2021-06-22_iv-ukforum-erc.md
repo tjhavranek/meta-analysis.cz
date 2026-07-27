@@ -1,7 +1,7 @@
 ---
 category: "rozhovory"
 media: "text"
-outlet: "UK Forum"
+outlet: "Forum Univerzity Karlovy"
 url: "https://ukforum.cz/rubriky/veda/7994-havranek-hodnoceni-erc-je-velmi-poctive-napady-vynikajici"
 date: "2021-06-22"
 headline: "Havránek: Hodnocení ERC je velmi poctivé, nápady vynikající"

@@ -1,7 +1,7 @@
 ---
 category: "rozhovory"
 media: "audio"
-outlet: "iROZHLAS / Český rozhlas Plus"
+outlet: "Český rozhlas Plus"
 url: "https://www.irozhlas.cz/ekonomika/inflace-cnb-penize-a-vliv-podcast_2301171630_mst"
 date: "2023-01-17"
 headline: "Národní banka má udržovat stabilitu, ale ona si to vykládá jako dvouprocentní inflaci"

@@ -5461,7 +5461,7 @@ Výzkum v České národní bance je tedy důležitý a i po radikální změně
 
 ## Havránek: Hodnocení ERC je velmi poctivé, nápady vynikající
 
-*UK Forum, 22. června 2021, ptal se Pavla Hubálková. Tomáš Havránek.*
+*Forum Univerzity Karlovy, 22. června 2021, ptal se Pavla Hubálková. Tomáš Havránek.*
 
 Zdroj: https://ukforum.cz/rubriky/veda/7994-havranek-hodnoceni-erc-je-velmi-poctive-napady-vynikajici
 
