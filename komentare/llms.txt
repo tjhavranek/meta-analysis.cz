@@ -2,7 +2,7 @@
 
 > Publicistika Tomáše Havránka a Zuzany Havránkové: komentáře pro celostátní média, sloupky pro litomyšlskou Lilii, rozhovory a kratší příspěvky ze sítí. Texty jsou zde archivovány v plném znění s odkazem na původní vydání.
 
-Publicistika: 202 položek a 23 kratších příspěvků ze sítí (225 záznamů celkem), 2010–2026. Plné znění každého textu je na uvedené adrese; zdrojový Markdown položek je v /komentare/src/ (příspěvky ze sítí zdrojový soubor nemají).
+Publicistika: 203 položek a 23 kratších příspěvků ze sítí (226 záznamů celkem), 2010–2026. Plné znění každého textu je na uvedené adrese; zdrojový Markdown položek je v /komentare/src/ (příspěvky ze sítí zdrojový soubor nemají).
 
 ## Celostátní komentáře
 
@@ -200,6 +200,7 @@ Rozhovory pro česká média. U audio a video rozhovorů uvádíme pouze odkaz n
 - [Nejcitovanější český ekonom: Dům je pro mě spotřeba](https://www.cnb.cz/cs/o_cnb/vlog-cnb/Nejcitovanejsi-cesky-ekonom-Dum-je-pro-me-spotreba/) — Česká národní banka, 26. dubna 2018 (video, pouze odkaz)
 - [Sázkaři jsou k vítězství Babiše skeptičtější než sociologové, říká mladá ekonomka, která kombinuje předvolební průzkumy a kurzy](https://meta-analysis.cz/komentare/zi-iv-hn-sazkari-babis/) — Hospodářské noviny, 16. října 2017
 - [Spojuje průzkumy a sázkařské kurzy. ČSSD slábne, stoupá SPD a piráti. Babiš asi nesestaví vládu sám, říká](https://meta-analysis.cz/komentare/zi-hn-cssd-slabne/) — Hospodářské noviny, 16. října 2017
+- [Dvanáct otázek Hospodářských novin k modelu KdoVyhrajeVolby.cz](https://meta-analysis.cz/komentare/zi-kdovyhrajevolby-otazky-hn/) — KdoVyhrajeVolby.cz, září 2017
 - [Česká ekonomka předvídá volby podle úspěšných Američanů. Její systém stojí i na kurzech sázkařů](https://meta-analysis.cz/komentare/zi-hn-predvida-volby/) — Hospodářské noviny, 29. srpna 2017
 - [Z mateřské zamíří rovnou do Berkeley](https://meta-analysis.cz/komentare/zi-iv-hn-berkeley/) — Hospodářské noviny, 27. ledna 2014
 
