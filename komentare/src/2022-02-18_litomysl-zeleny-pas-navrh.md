@@ -4,12 +4,12 @@ media: "text"
 outlet: "Participativní rozpočet města Litomyšle"
 url: "https://www.litomysl.cz/participativni_rozpocet/projekt/2022_zeleny_pas_kolem_litomysle"
 url_label: "Projekt v participativním rozpočtu"
-date: "2022-01-01"
-date_precision: "month"
+date: "2022-02-18"
 headline: "Zelený pás kolem Litomyšle"
 byline: "Tomáš Havránek"
 word_count: "492"
-body_note: "Návrh podaný do participativního rozpočtu města Litomyšle v roce 2022, doprovozený autorovým textem pro hlasující. Město u projektů neuvádí den podání, proto je uveden pouze rok. Projekt uspěl a autor za něj v Lilii 2023/2 poděkoval."
+perex: "Co mi v Litomyšli chybí, jsou lesy a stromy. Společně můžeme podpořit vznik zeleného pásu kolem města a smíšených parků. Máme příležitost vybudovat něco, co po nás zůstane pro naše děti a vnoučata. Zelený pás přiblíží Litomyšl nejpříjemnějším místům pro život v Evropě. Přidáte se?"
+body_note: "Návrh podaný do participativního rozpočtu města Litomyšle, doprovozený autorovým textem pro hlasující. Datum podání (18. 2. 2022) potvrdila e-mailem kancelář vedení městského úřadu; stránka projektu je neuvádí. Text je na stránce města otištěn v uvozovkách jako vyjádření autora, zde je uveden bez nich. Projekt uspěl; autor za něj poděkoval v Lilii 2022/8 a znovu v Lilii 2023/2."
 ---
 
 # Zelený pás kolem Litomyšle

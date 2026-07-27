@@ -2,7 +2,7 @@
 category: "litomysl"
 media: "text"
 outlet: "ZŠ Litomyšl, Zámecká"
-url: "https://www.1zslitomysl.cz/skolni-uspechy/"
+url: "https://www.1zslitomysl.cz/skolni-uspechy/#uspechy_283"
 url_label: "Rubrika Školní úspěchy"
 date: "2024-11-12"
 headline: "Zámecká bere bronz z okresního kola mladších florbalistů"
@@ -10,6 +10,7 @@ byline: "Tomáš Havránek"
 word_count: "252"
 body_note: "Krátká zpráva o turnaji, kterou autor napsal jako trenér a poslal vedení školy; škola ji zveřejnila v rubrice Školní úspěchy, kde se příspěvky neuvádějí s podpisem. Autorství doloženo e-mailem řediteli školy z 12. 11. 2024. Přepsáno ze stránky školy, jména hráčů ponechána tak, jak je škola zveřejnila."
 ---
+
 
 # Zámecká bere bronz z okresního kola mladších florbalistů
 

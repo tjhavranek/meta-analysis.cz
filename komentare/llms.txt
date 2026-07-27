@@ -2,7 +2,7 @@
 
 > Publicistika Tomáše Havránka a Zuzany Havránkové: komentáře pro celostátní média, sloupky pro litomyšlskou Lilii, rozhovory a kratší příspěvky ze sítí. Texty jsou zde archivovány v plném znění s odkazem na původní vydání.
 
-Publicistika: 205 položek a 23 kratších příspěvků ze sítí (228 záznamů celkem), 2014–2026. Plné znění každého textu je na uvedené adrese; zdrojový Markdown položek je v /komentare/src/ (příspěvky ze sítí zdrojový soubor nemají).
+Publicistika: 206 položek a 23 kratších příspěvků ze sítí (229 záznamů celkem), 2014–2026. Plné znění každého textu je na uvedené adrese; zdrojový Markdown položek je v /komentare/src/ (příspěvky ze sítí zdrojový soubor nemají).
 
 ## Celostátní komentáře
 
@@ -124,9 +124,10 @@ Sloupky pro Lilii, měsíčník města Litomyšle — doprava, zeleň, školstv�
 - [Zelený pás kolem Litomyšle](https://meta-analysis.cz/komentare/litomysl-zeleny-pas-podekovani/) — Lilie, únor 2023
 - [Můžeme něco dělat s psími exkrementy v Litomyšli?](https://meta-analysis.cz/komentare/litomysl-psi-exkrementy/) — Lilie, únor 2023
 - [Nový domov důchodců na zelené louce si nemůžeme dovolit](https://meta-analysis.cz/komentare/litomysl-domov-duchodcu/) — Lilie, prosinec 2022
+- [Zelený pás kolem Litomyšle](https://meta-analysis.cz/komentare/litomysl-zeleny-pas-diky-za-hlasy/) — Lilie, srpen 2022
 - [Nové kruháky ublíží tranzitu, pomohou Litomyšli](https://meta-analysis.cz/komentare/litomysl-kruhovy-objezd/) — Lilie, červen 2022
 - [Těšme se na víc stromů v Litomyšli](https://meta-analysis.cz/komentare/litomysl-stromy/) — Lilie, březen 2022
-- [Zelený pás kolem Litomyšle](https://meta-analysis.cz/komentare/litomysl-zeleny-pas-navrh/) — Participativní rozpočet města Litomyšle, leden 2022
+- [Zelený pás kolem Litomyšle](https://meta-analysis.cz/komentare/litomysl-zeleny-pas-navrh/) — Participativní rozpočet města Litomyšle, 18. února 2022
 - [Okolí zámku může být zase krásné](https://meta-analysis.cz/komentare/litomysl-okoli-zamku/) — Lilie, leden 2022
 - [Florbal v Litomyšli je kroužek snů](https://meta-analysis.cz/komentare/litomysl-florbal-je-krouzek-snu/) — Lilie, říjen 2021
 - [Ceny pozemků v Litomyšli jsou nekonečné. Je to špatně?](https://meta-analysis.cz/komentare/litomysl-ceny-pozemku-jsou-nekonecne/) — Lilie, červen 2021

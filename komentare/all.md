@@ -2,7 +2,7 @@
 
 Publicistika Tomáše Havránka a Zuzany Havránkové: komentáře pro celostátní média, sloupky pro litomyšlskou Lilii, rozhovory a kratší příspěvky ze sítí. Texty jsou zde archivovány v plném znění s odkazem na původní vydání.
 
-Tento soubor obsahuje plné znění všech textových položek (187 z celkem 205). Zbývající položky jsou audio a video, které archiv vede pouze odkazem, a v tomto souboru nejsou; jejich metadata najdete v index.json a corpus.jsonl. Samostatně jsou vedeny kratší příspěvky ze sociálních sítí (23), psané převážně anglicky. Mají vlastní stránku https://meta-analysis.cz/komentare/posts/ a v index.json i corpus.jsonl jsou označeny jako genre=social_post.
+Tento soubor obsahuje plné znění všech textových položek (188 z celkem 206). Zbývající položky jsou audio a video, které archiv vede pouze odkazem, a v tomto souboru nejsou; jejich metadata najdete v index.json a corpus.jsonl. Samostatně jsou vedeny kratší příspěvky ze sociálních sítí (23), psané převážně anglicky. Mají vlastní stránku https://meta-analysis.cz/komentare/posts/ a v index.json i corpus.jsonl jsou označeny jako genre=social_post.
 
 ---
 
@@ -201,9 +201,13 @@ Try it on something you are working on and tell us how we could improve it!
 
 *ZŠ Litomyšl, Zámecká, 11. května 2026. Tomáš Havránek.*
 
-Zdroj: https://www.1zslitomysl.cz/skolni-uspechy/
+Zdroj: https://www.1zslitomysl.cz/skolni-uspechy/#uspechy_377
 
-Na turnaj v rámci Dní florbalu 11. května se přihlásilo celkem 20 špičkových týmů z celého Pardubického kraje. V naší skupině jsme skončili druzí, když jsme porazili Ústí nad Orlicí 4:0, Opatov 8:0 a Žamberk 3:0. Nad naše síly byla pouze ZŠ Litomyšl, T. G. Masaryka, které jsme podlehli 0:2. Postoupili jsme tedy do osmifinále, ve kterém jsme přemohli Jablonné 3:0. S našimi medailovými nadějemi to vypadalo velmi dobře až do poslední minuty čtvrtfinále: Proti Chocni jsme otočili z 0:1 na 2:1. V poslední minutě jsme ale dostali dva smolné góly a na mety vyšší už nedosáhli. O kvalitě turnaje svědčí i fakt, že ve čtvrtfinále vypadl i nedávný vítěz krajského kola a 8. nejlepší tým celého republikového finále, ZŠ Litomyšl, TGM. Celkově byla letošního florbalová sezóna prvního stupně úspěšná, neboť tým ve složení Adam Ferko, Daniel Drábek, Adam Dospiva, Matouš Halamka, Filip Havránek, Kryštof Klejch, Matěj Kopecký a Anna Vanžurová přinesl ze 3 turnajů hned dvakrát stříbrné medaile.
+Na turnaj v rámci Dní florbalu 11. května se přihlásilo celkem 20 špičkových týmů z celého Pardubického kraje. V naší skupině jsme skončili druzí, když jsme porazili Ústí nad Orlicí 4:0, Opatov 8:0 a Žamberk 3:0. Nad naše síly byla pouze ZŠ Litomyšl, T. G. Masaryka, které jsme podlehli 0:2.
+
+Postoupili jsme tedy do osmifinále, ve kterém jsme přemohli Jablonné 3:0. S našimi medailovými nadějemi to vypadalo velmi dobře až do poslední minuty čtvrtfinále: Proti Chocni jsme otočili z 0:1 na 2:1. V poslední minutě jsme ale dostali dva smolné góly a na mety vyšší už nedosáhli.
+
+O kvalitě turnaje svědčí i fakt, že ve čtvrtfinále vypadl i nedávný vítěz krajského kola a 8. nejlepší tým celého republikového finále, ZŠ Litomyšl, TGM. Celkově byla letošního florbalová sezóna prvního stupně úspěšná, neboť tým ve složení Adam Ferko, Daniel Drábek, Adam Dospiva, Matouš Halamka, Filip Havránek, Kryštof Klejch, Matěj Kopecký a Anna Vanžurová přinesl ze 3 turnajů hned dvakrát stříbrné medaile.
 
 ---
 
@@ -257,9 +261,11 @@ Osobně obdivuji odvahu, s jakou Japonci v roce 2012 nabrali kalkulované riziko
 
 *ZŠ Litomyšl, Zámecká, 26. února 2026. Tomáš Havránek.*
 
-Zdroj: https://www.1zslitomysl.cz/skolni-uspechy/
+Zdroj: https://www.1zslitomysl.cz/skolni-uspechy/#uspechy_361
 
-Ve čtvrtek 26. února se školní florbalové týmy z Litomyšle a okolí utkaly na turnaji v Dolním Újezdě. Turnaj jsme zahájili soubojem proti pozdějším bronzovým medailistům z Cerekvice, které jsme porazili 3:0 i díky skvělému výkonu Adama Dospivy v bráně. S dalším adeptem na medaili, Dolním Újezdem, jsme ve strhujícím zápase při skvělé atmosféře remizovali 4:4 díky našemu vyrovnání v posledních vteřinách. Následně jsme si bez větších potíží poradili se Sebranicemi 5:0 a čekalo nás finále proti ZŠ Litomyšl, U Školek. V něm se od nás odvrátilo štěstí, projevila se únava z dlouhého turnaje a bezchybně hrajícímu soupeři jsme podlehli, což pro nás i tak znamenalo krásné druhé místo. Tým ZŠ Zámecká skvěle reprezentovali Adam Ferko, Daniel Drábek, Adam Dospiva, Matouš Halamka, Filip Havránek, Kryštof Klejch, Matěj Kopecký a Anna Vanžurová, jež obdržela cenu pro nejlepšího hráče turnaje.
+Ve čtvrtek 26. února se školní florbalové týmy z Litomyšle a okolí utkaly na turnaji v Dolním Újezdě. Turnaj jsme zahájili soubojem proti pozdějším bronzovým medailistům z Cerekvice, které jsme porazili 3:0 i díky skvělému výkonu Adama Dospivy v bráně. S dalším adeptem na medaili, Dolním Újezdem, jsme ve strhujícím zápase při skvělé atmosféře remizovali 4:4 díky našemu vyrovnání v posledních vteřinách.
+
+Následně jsme si bez větších potíží poradili se Sebranicemi 5:0 a čekalo nás finále proti ZŠ Litomyšl, U Školek. V něm se od nás odvrátilo štěstí, projevila se únava z dlouhého turnaje a bezchybně hrajícímu soupeři jsme podlehli, což pro nás i tak znamenalo krásné druhé místo. Tým ZŠ Zámecká skvěle reprezentovali Adam Ferko, Daniel Drábek, Adam Dospiva, Matouš Halamka, Filip Havránek, Kryštof Klejch, Matěj Kopecký a Anna Vanžurová, jež obdržela cenu pro nejlepšího hráče turnaje.
 
 ---
 
@@ -528,9 +534,11 @@ Many thanks to **Petr Čala** for preparing the CRAN release and building the Ea
 
 *ZŠ Litomyšl, Zámecká, 25. listopadu 2025. Tomáš Havránek.*
 
-Zdroj: https://www.1zslitomysl.cz/skolni-uspechy/
+Zdroj: https://www.1zslitomysl.cz/skolni-uspechy/#uspechy_346
 
-V úterý 25. listopadu se nejlepší školní florbalové týmy okresu utkaly na turnaji ve Svitavách. Začali jsme přátelským duelem s modrou litomyšlskou školou, který jsme vyhráli 4:1. Následoval zápas ve skupině proti Poličce, v němž jsme po velkém boji zvítězili 3:2. Následně jsme porazili Svitavy 3:0 a zajistili jsme si tak první místo ve skupině. Ve čtvrtfinále jsme další svitavskou školu přehráli přesvědčivě 5:1. Zvládli jsme též semifinálovou odvetu proti Poličce, a to poměrem 7:4. Naše jízda turnajem skončila až ve finále, kde jsme napodruhé už nevyzráli na modrou školu a v dramatickém zápase podlehli 2:4. Vezeme tak domů cenné stříbrné medaile. Tým ZŠ Zámecká skvěle reprezentovali Adam Ferko, Daniel Drábek, Anna Vanžurová, Filip Havránek, Matouš Halamka, Matěj Kopecký a Kryštof Klejch, jenž obdržel cenu za nejlepšího hráče turnaje.
+V úterý 25. listopadu se nejlepší školní florbalové týmy okresu utkaly na turnaji ve Svitavách. Začali jsme přátelským duelem s modrou litomyšlskou školou, který jsme vyhráli 4:1. Následoval zápas ve skupině proti Poličce, v němž jsme po velkém boji zvítězili 3:2. Následně jsme porazili Svitavy 3:0 a zajistili jsme si tak první místo ve skupině. Ve čtvrtfinále jsme další svitavskou školu přehráli přesvědčivě 5:1. Zvládli jsme též semifinálovou odvetu proti Poličce, a to poměrem 7:4.
+
+Naše jízda turnajem skončila až ve finále, kde jsme napodruhé už nevyzráli na modrou školu a v dramatickém zápase podlehli 2:4. Vezeme tak domů cenné stříbrné medaile. Tým ZŠ Zámecká skvěle reprezentovali Adam Ferko, Daniel Drábek, Anna Vanžurová, Filip Havránek, Matouš Halamka, Matěj Kopecký a Kryštof Klejch, jenž obdržel cenu za nejlepšího hráče turnaje.
 
 ---
 
@@ -1414,7 +1422,7 @@ Výsledné stříbro a bronz přesto ukazují na dominanci litomyšlského florb
 
 *ZŠ Litomyšl, Zámecká, 19. května 2025. Tomáš Havránek.*
 
-Zdroj: https://www.1zslitomysl.cz/skolni-uspechy/
+Zdroj: https://www.1zslitomysl.cz/skolni-uspechy/#uspechy_329
 
 Tým ve složení David Šlégr, Jáchym Štarman, Vendelín Vaňásek, Jáchym Vanžura, Jan Abramovič, Ondřej Nešpor, Daniel Havránek a Filip Havránek vybojoval skvělé 3. místo v konkurenci 18 týmů Pardubického kraje. Turnaj v České Třebové proběhl v pondělí 19. května v rámci Dnů florbalu. Základní skupinu jsme ovládli jednoznačně s celkovým skóre 33:2, když jsme porazili postupně Ústí, Brandýs, Choceň, Dolní Čermnou a Jablonné. Ve čtvrtfinále jsme si poradili s Opatovem také bez potíží 6:0. Ve finálové skupině se od nás však odvrátilo štěstí, kvůli smolnému rozlosování jsme museli hrát 3 zápasy bez přestávky a přes značnou střeleckou a územní převahu naši unavení hráči podlehli Moravské Třebové 1:3 a ZŠ Litomyšl, T. G. Masaryka 1:2. Výsledkem byly cenné bronzové medaile. Po celý turnaj náš tým zdobila útočná kombinační hra a naše zápasy probíhaly ve skvělé atmosféře, kterou zajistily vzájemně si fandící litomyšlské týmy.
 
@@ -1667,7 +1675,7 @@ S florbalem lze začít kdykoli během roku, nezávazně a v libovolném věku. 
 
 *ZŠ Litomyšl, Zámecká, 12. listopadu 2024. Tomáš Havránek.*
 
-Zdroj: https://www.1zslitomysl.cz/skolni-uspechy/
+Zdroj: https://www.1zslitomysl.cz/skolni-uspechy/#uspechy_283
 
 Tým florbalistů prvního stupně ve složení Matěj Pohorský, Ondřej Nešpor, Daniel Havránek, Filip Havránek, Jáchym Vanžura, Vendelín Vaňásek a Jáchym Štarman vybojoval v úterý 12. listopadu ve Svitavách parádní třetí místo v konkurenci 12 nejlepších týmů okresu. Začátek byl přitom krušný, když jsme první zápas s Moravskou Třebovou ztratili 1:4 a v polovině dalšího utkání s Jevíčkem prohrávali 0:2. Pak ale kluci přidali na důrazu, zápas s Jevíčkem otočili na 4:2 a po vítězstvích nad dvěma svitavskými školami v poměru 10:0 a 2:1 postoupili do semifinále. V něm jsme měli celý zápas velikou převahu nad týmem ze Starého Města, ale florbal se hraje na góly -- my vstřelili jen dva a rozhodlo přísně odpískané trestné střílení proti nám v poslední minutě. V boji o bronz nás znovu čekala silná a agresivně hrající Moravská Třebová. Naši zklamaní a unavení hráči od začátku nestíhali, brzy jsme jsme prohrávali 0:3 a vypadalo to bledě. Pak ale kluci ze Zámecké ukázali bojovnost a týmového ducha. Postupně snižovali a zápas vyrovnal Dan z trestného střílení milimetrovou střelou v posledních vteřinách, ačkoli přitom kulhal po předchozím faulu na něj. Zápas tím dospěl do nájezdů, které rozhodl opět Dan hned třemi góly v bouřlivé atmosféře zaplněné svitavské arény. Nevídaný obrat nad možná nejsilnějším týmem turnaje zajistil našim hráčům zasloužené medaile a pohár. Výborně hráli všichni kluci, v bráně tradičně jistý Matěj, spolehlivý univerzál Ondra, produktivní útočník Fíla. Pro Vendelína a oba Jáchymy to byl první florbalový turnaj, který zvládli parádně a neztratili by se ani v reprezentačním týmu Litomyšle.
 
@@ -2113,9 +2121,11 @@ Florbalisté vyhlíží novou sezonu, v níž budou muži poprvé hrát národn�
 
 *ZŠ Litomyšl, Zámecká, 3. května 2024. Tomáš Havránek.*
 
-Zdroj: https://www.1zslitomysl.cz/skolni-uspechy/
+Zdroj: https://www.1zslitomysl.cz/skolni-uspechy/#uspechy_262
 
-V konkurenci 19 špičkových týmů kraje slaví florbalisté z prvního stupně zlato! Tým ve složení Ondřej Čáp, Luboš Fryc, Daniel Havránek, Filip Havránek, Ondřej Nešpor, Matěj Pohorský a Jan Rožek navázal v pátek 3. 5. na vítězství v oblastním kole a ovládl Dny florbalu v České Třebové. Cesta k vítězství začala v těžké skupině. Nejvíc nás potrápilo Ústí, jež jsme s obtížemi přemohli 3:2. Díky triumfu ve skupině jsme postoupili rovnou do čtvrtfinále, kde nás čekala Choceň. Postup do semifinále nás hodně bolel, trpěly obzvláště kolena a nosy útočníků. V semifinále jsme soupeři z Ústí nedali šanci a koncentrovaným výkonem zvítězili 4:0. Ve finále jsme v poločase prohrávali s Králíky 0:2 a vypadalo to bledě. K obratu zavelel Luba Fryc přesnou ranou do šibenice. Vyrovnával Dan Havránek a zlatou trefu zařídil 20 vteřin před koncem Fíla Havránek, nejmladší hráč turnaje. Náš tým zdobila odpovědná obranná hra: za 7 zápasů jsme dostali pouze 6 gólů. Všichni hráči v poli navíc vstřelili alespoň 5 branek. I přes tvrdší hru, než je ve florbale zvykem, se na celém turnaji nikdo nezranil.
+V konkurenci 19 špičkových týmů kraje slaví florbalisté z prvního stupně zlato! Tým ve složení Ondřej Čáp, Luboš Fryc, Daniel Havránek, Filip Havránek, Ondřej Nešpor, Matěj Pohorský a Jan Rožek navázal v pátek 3. 5. na vítězství v oblastním kole a ovládl Dny florbalu v České Třebové.
+
+Cesta k vítězství začala v těžké skupině. Nejvíc nás potrápilo Ústí, jež jsme s obtížemi přemohli 3:2. Díky triumfu ve skupině jsme postoupili rovnou do čtvrtfinále, kde nás čekala Choceň. Postup do semifinále nás hodně bolel, trpěly obzvláště kolena a nosy útočníků. V semifinále jsme soupeři z Ústí nedali šanci a koncentrovaným výkonem zvítězili 4:0. Ve finále jsme v poločase prohrávali s Králíky 0:2 a vypadalo to bledě. K obratu zavelel Luba Fryc přesnou ranou do šibenice. Vyrovnával Dan Havránek a zlatou trefu zařídil 20 vteřin před koncem Fíla Havránek, nejmladší hráč turnaje. Náš tým zdobila odpovědná obranná hra: za 7 zápasů jsme dostali pouze 6 gólů. Všichni hráči v poli navíc vstřelili alespoň 5 branek. I přes tvrdší hru, než je ve florbale zvykem, se na celém turnaji nikdo nezranil.
 
 ---
 
@@ -2179,9 +2189,11 @@ A některé nové železnice pořád smysl budou mít. Dnešní úsek Praha-Kol�
 
 *ZŠ Litomyšl, Zámecká, 23. února 2024. Tomáš Havránek.*
 
-Zdroj: https://www.1zslitomysl.cz/skolni-uspechy/
+Zdroj: https://www.1zslitomysl.cz/skolni-uspechy/#uspechy_247
 
-V pátek 23. února se konala oblastní soutěž ve florbalu mladších žáků v Dolním Újezdě. Naši školu úspěšně reprezentovali Ondřej Čáp, Jan Rožek, Lubomír Fryc, Daniel Havránek , Filip Havránek, Matěj Pohorský, Jakub Jehlička a Ondřej Nešpor. Už před odjezdem bylo jasné, že uspět nebude snadné. Na nádraží kluci potkali kamarády z reprezentačního týmu Litomyšle, kteří se tentokrát chystali nastoupit proti nim v dresu modré či červené školy. V prvním zápase nás čekali houževnatě hrající kluci a holky ze Sebranice-Lubné. Přes územní převahu se nám podařilo vstřelit jediný platný gól, který stačil k vítězství 1:0. Pak už jsme si zvykli na veliké hřiště a krásnou kombinační souhrou přemohli postupně Cerekvici 9:0, červenou školu 4:0 a modrou školu 5:1. Nakonec nás čekalo velké finále v bouřlivé atmosféře proti skvěle hrajícímu domácímu Dolnímu Újezdu. Utkání bylo vyrovnané, plné těžkých osobních soubojů. Díky maximálnímu nasazení se nám podařilo vyhrát 2:0, a získat tak zlaté medaile a pohár pro vítěze turnaje. Cenu pro nejlepší hráče získali brankář Máťa Pohorský, který v 5 zápasech inkasoval jediný gól (i když brána byla větší než v krajských soutěžích), a útočník Ondra Čáp, kapitán a nejzkušenější hráč týmu. Nejproduktivnějším střelcem turnaje byl Dan Havránek, nejmladším Filip Havránek. Všichni kluci vstřelili alespoň jeden gól. Speciální poděkování zaslouží Petr Janda ze Střediska volného času, který turnaj organizoval, Vojtěch Kozák, který kluky ze Zámecké na turnaj připravoval, a Vítězslav Vích, který se o ně na turnaji staral.
+V pátek 23. února se konala oblastní soutěž ve florbalu mladších žáků v Dolním Újezdě. Naši školu úspěšně reprezentovali Ondřej Čáp, Jan Rožek, Lubomír Fryc, Daniel Havránek, Filip Havránek, Matěj Pohorský, Jakub Jehlička a Ondřej Nešpor.
+
+Už před odjezdem bylo jasné, že uspět nebude snadné. Na nádraží kluci potkali kamarády z reprezentačního týmu Litomyšle, kteří se tentokrát chystali nastoupit proti nim v dresu modré či červené školy. V prvním zápase nás čekali houževnatě hrající kluci a holky ze Sebranice-Lubné. Přes územní převahu se nám podařilo vstřelit jediný platný gól, který stačil k vítězství 1:0. Pak už jsme si zvykli na veliké hřiště a krásnou kombinační souhrou přemohli postupně Cerekvici 9:0, červenou školu 4:0 a modrou školu 5:1. Nakonec nás čekalo velké finále v bouřlivé atmosféře proti skvěle hrajícímu domácímu Dolnímu Újezdu. Utkání bylo vyrovnané, plné těžkých osobních soubojů. Díky maximálnímu nasazení se nám podařilo vyhrát 2:0, a získat tak zlaté medaile a pohár pro vítěze turnaje. Cenu pro nejlepší hráče získali brankář Máťa Pohorský, který v 5 zápasech inkasoval jediný gól (i když brána byla větší než v krajských soutěžích), a útočník Ondra Čáp, kapitán a nejzkušenější hráč týmu. Nejproduktivnějším střelcem turnaje byl Dan Havránek, nejmladším Filip Havránek. Všichni kluci vstřelili alespoň jeden gól. Speciální poděkování zaslouží Petr Janda ze Střediska volného času, který turnaj organizoval, Vojtěch Kozák, který kluky ze Zámecké na turnaj připravoval, a Vítězslav Vích, který se o ně na turnaji staral.
 
 ---
 
@@ -4506,6 +4518,25 @@ Tak to bude, jinak nemůžete mít věčně dvoucifernou inflaci, aby vám neros
 
 ---
 
+## Zelený pás kolem Litomyšle
+
+*Lilie, srpen 2022. Tomáš Havránek.*
+
+Zdroj: https://www.litomysl.cz/soubor/1659423658991_lilie_2022_8.pdf
+
+Děkuji všem, kteří chtějí v Litomyšli a okolí více zeleně. Jak jsem slíbil, na projekt posílám 15 tisíc z vlastních prostředků. Pokusím se také sehnat mnohem víc peněz z různých nadací. Jsem rád, že ČEZ slíbil na Černé hoře zakopat vedení vysokého napětí, takže i tam se bude moci sázet hodně nových stromů. Doufám, že budeme v příštích letech pokračovat a podaří se zkultivovat všechny pozemky, které jsou teď v územním plánu vedeny jako rekreační zeleň. Tohle je ale jenom začátek. Můj sen je prstenec lesa kolem celé Litomyšle, samozřejmě s ohledem na zájmy zemědělců a vlastníků pozemků. Výhody jsou následující:
+
+1) Budeme mít víc cílů na procházky.
+2) Okolí města bude hezčí.
+3) Omezíme zápach z polí.
+4) Stromy udrží víc vody v krajině než kukuřice a řepka.
+5) Stromy zlepší životní podmínky pro zvěř a ptactvo.
+6) Stromy sníží prašnost v okolí.
+7) Stromy ochladí mikroklima, takže u nich bude v létě příjemněji.
+8) Výsadba nových stromů účinně zmírňuje klimatickou změnu tím, že stromy v sobě vážou uhlík.
+
+---
+
 ## Zrušme inflaci: časté dotazy
 
 *Zrušme inflaci, 20. července 2022. Tomáš Havránek.*
@@ -5005,6 +5036,16 @@ Teď máme příležitost vybudovat něco, co po nás zůstane pro naše děti a
 
 ---
 
+## Zelený pás kolem Litomyšle
+
+*Participativní rozpočet města Litomyšle, 18. února 2022. Tomáš Havránek.*
+
+Zdroj: https://www.litomysl.cz/participativni_rozpocet/projekt/2022_zeleny_pas_kolem_litomysle
+
+Co mi v Litomyšli chybí, jsou lesy. Před 117 lety naši zastupitelé založili les Černá hora, ale od té doby spíš jen nahrazujeme pokácené stromy. Navrhuji vysázet tolik nových stromů, kolik za 300 000 korun zvládneme pořídit (včetně souvisejících nákladů) na pozemcích v majetku města kolem Litomyšle. Podobné příměstské lesoparky jsou běžné třeba v Německu. Pokud návrh projde, přidám na stromy dalších 15 000 korun ze svého a udělám maximum, abychom dostali dotaci od Nadace ČEZ ve výši dalších stovek tisíc. Budu je otravovat osobně, budu je otravovat telefony, budu je otravovat peticemi. S návrhem na zelený pás jsem šel za vedením města, kde jsem se setkal s obecným pochopením. Koneckonců město chystá nové parky u ulice Zdeňka Kopala a u Prokopa. Ale bylo mi řečeno, že není jasný zájem lidí o další stromy. Ať dám návrh do participativního rozpočtu, abychom zjistili, jestli víc zeleně chtějí i ostatní. Někteří spoluobčané schválně ničí nově vysazené stromy, těm se zelený pás líbit nebude a budou hlasovat proti. Co říkáte vy? Věc neskončí, i když nebudeme mezi prvními dvěma projekty. Můžeme uspořádat referendum při příležitosti prezidentských voleb, ale zájem tady by pomohl věc urychlit. Stromy mají třeba tyhle výhody: 1) Budeme mít víc cílů na procházky. 2) Okolí města bude hezčí. 3) Omezíme zápach z polí. 4) Stromy udrží víc vody v krajině než kukuřice a řepka. 5) Stromy zlepší životní podmínky pro zvěř a ptactvo. 6) Stromy sníží prašnost v okolí. 7) Stromy ochladí mikroklima, takže u nich bude v létě příjemněji. 8) Výsadba nových stromů účinně zmírňuje klimatickou změnu tím, že stromy v sobě vážou uhlík. (To pro mě osobně sice hlavní důvod není, ale smysl v tom také vidím; přikládám vědecký článek na toto téma.) Aby bylo jasno, nechceme nijak poškozovat zemědělce, kteří nás živí a k jejichž práci mám velký respekt. Nenavrhuji žádný záběr půdy nad rámec toho, co už zastupitelé odhlasovali v územním plánu – tedy městské pozemky vyčleněné na rekreační zeleň. Tam v souladu s územním plánem musí být nakonec buď louka, nebo park, nikoli řepka nebo kukuřice. Jedná se vždy o drobné zlomky rozlohy, na které jednotliví zemědělci hospodaří. Jde tudíž o urychlení záměru města, k jehož realizaci zatím nedošlo z důvodu nedostatku vyčleněných prostředků a nejasného zájmu veřejnosti. Poznámka na okraj: kvůli současné legislativě přímo lesy lesovaté u Litomyšle zakládat nejde (divné, co?), ale jde založit parky s roztroušenými stromy, kde se můžeme cítit skoro jako v lese. Nejraději bych viděl smíšenou výsadbu listnáčů i jehličnanů, aby porost byl veselý a zelený celý rok, nejen od dubna do října. Byl bych rád za krásné mohutné stromy, koneckonců je to dost daleko od jakékoli výstavby. Stejné by to mělo být i na Černé hoře. Ale velikost a smíšená skladba stromů nejsou podmínkou, důležitý je zelený pás. O výběru stromů nechť rozhodnou odborníci. Teď máme příležitost vybudovat něco, co po nás zůstane pro naše děti a vnoučata. Zelený pás přiblíží Litomyšl nejpříjemnějším místům pro život v Evropě. Přidáte se?
+
+---
+
 ## ČNB potřebuje audit. Je čas změnit inflační cíl i správu rezerv
 
 *E15, 17. února 2022. Tomáš Havránek.*
@@ -5168,16 +5209,6 @@ Kdy byla cenová stabilita porušena víc než teď? Jistě ne v roce 2013, kdy 
 Jenže dokud jsou reálné sazby takhle záporné, ČNB nás těžko přiměje spořit. Těžko zlomí naše očekávání, že inflace přetrvá. Může ale začít prodávat eura a nakupovat koruny, čímž rychle zlevní dovážené zboží včetně energií. Času není nazbyt a psychologický efekt šokového růstu sazeb se vyčerpal. Nehledě na to, že v cenách se „hiky“ plně projeví až za dva roky. Odčinění intervencí se nabízí, tak proč o něm ČNB ani nemluví? Roli zřejmě hraje dopad do výsledovky.
 
 ČNB nakupovala eura za 27 korun, dnes by je prodala pod 25. I částečným (třeba polovičním a postupným) vynulováním intervencí tak realizuje gigantickou ztrátu, kterou nakonec zaplatíme my, daňoví poplatníci. Je to škoda, tyhle rezervy mohly živit i naše vnoučata skrze dividendy ze zahraničí. Ale když ČNB do akcií investuje málo a blížíme se pádivé inflaci, nelze než ztrátu skousnout a plnit ústavní povinnost všemi nástroji. Rezervy jsou k ničemu, pokud je nikdy nepoužijeme.
-
----
-
-## Zelený pás kolem Litomyšle
-
-*Participativní rozpočet města Litomyšle, leden 2022. Tomáš Havránek.*
-
-Zdroj: https://www.litomysl.cz/participativni_rozpocet/projekt/2022_zeleny_pas_kolem_litomysle
-
-Co mi v Litomyšli chybí, jsou lesy. Před 117 lety naši zastupitelé založili les Černá hora, ale od té doby spíš jen nahrazujeme pokácené stromy. Navrhuji vysázet tolik nových stromů, kolik za 300 000 korun zvládneme pořídit (včetně souvisejících nákladů) na pozemcích v majetku města kolem Litomyšle. Podobné příměstské lesoparky jsou běžné třeba v Německu. Pokud návrh projde, přidám na stromy dalších 15 000 korun ze svého a udělám maximum, abychom dostali dotaci od Nadace ČEZ ve výši dalších stovek tisíc. Budu je otravovat osobně, budu je otravovat telefony, budu je otravovat peticemi. S návrhem na zelený pás jsem šel za vedením města, kde jsem se setkal s obecným pochopením. Koneckonců město chystá nové parky u ulice Zdeňka Kopala a u Prokopa. Ale bylo mi řečeno, že není jasný zájem lidí o další stromy. Ať dám návrh do participativního rozpočtu, abychom zjistili, jestli víc zeleně chtějí i ostatní. Někteří spoluobčané schválně ničí nově vysazené stromy, těm se zelený pás líbit nebude a budou hlasovat proti. Co říkáte vy? Věc neskončí, i když nebudeme mezi prvními dvěma projekty. Můžeme uspořádat referendum při příležitosti prezidentských voleb, ale zájem tady by pomohl věc urychlit. Stromy mají třeba tyhle výhody: 1) Budeme mít víc cílů na procházky. 2) Okolí města bude hezčí. 3) Omezíme zápach z polí. 4) Stromy udrží víc vody v krajině než kukuřice a řepka. 5) Stromy zlepší životní podmínky pro zvěř a ptactvo. 6) Stromy sníží prašnost v okolí. 7) Stromy ochladí mikroklima, takže u nich bude v létě příjemněji. 8) Výsadba nových stromů účinně zmírňuje klimatickou změnu tím, že stromy v sobě vážou uhlík. (To pro mě osobně sice hlavní důvod není, ale smysl v tom také vidím; přikládám vědecký článek na toto téma.) Aby bylo jasno, nechceme nijak poškozovat zemědělce, kteří nás živí a k jejichž práci mám velký respekt. Nenavrhuji žádný záběr půdy nad rámec toho, co už zastupitelé odhlasovali v územním plánu – tedy městské pozemky vyčleněné na rekreační zeleň. Tam v souladu s územním plánem musí být nakonec buď louka, nebo park, nikoli řepka nebo kukuřice. Jedná se vždy o drobné zlomky rozlohy, na které jednotliví zemědělci hospodaří. Jde tudíž o urychlení záměru města, k jehož realizaci zatím nedošlo z důvodu nedostatku vyčleněných prostředků a nejasného zájmu veřejnosti. Poznámka na okraj: kvůli současné legislativě přímo lesy lesovaté u Litomyšle zakládat nejde (divné, co?), ale jde založit parky s roztroušenými stromy, kde se můžeme cítit skoro jako v lese. Nejraději bych viděl smíšenou výsadbu listnáčů i jehličnanů, aby porost byl veselý a zelený celý rok, nejen od dubna do října. Byl bych rád za krásné mohutné stromy, koneckonců je to dost daleko od jakékoli výstavby. Stejné by to mělo být i na Černé hoře. Ale velikost a smíšená skladba stromů nejsou podmínkou, důležitý je zelený pás. O výběru stromů nechť rozhodnou odborníci. Teď máme příležitost vybudovat něco, co po nás zůstane pro naše děti a vnoučata. Zelený pás přiblíží Litomyšl nejpříjemnějším místům pro život v Evropě. Přidáte se?
 
 ---
 
