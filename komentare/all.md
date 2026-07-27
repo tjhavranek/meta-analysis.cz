@@ -2,7 +2,7 @@
 
 Publicistika Tomáše Havránka a Zuzany Havránkové: komentáře pro celostátní média, sloupky pro litomyšlskou Lilii, rozhovory a kratší příspěvky ze sítí. Texty jsou zde archivovány v plném znění s odkazem na původní vydání.
 
-Tento soubor obsahuje plné znění všech textových položek (188 z celkem 206). Zbývající položky jsou audio a video, které archiv vede pouze odkazem, a v tomto souboru nejsou; jejich metadata najdete v index.json a corpus.jsonl. Samostatně jsou vedeny kratší příspěvky ze sociálních sítí (23), psané převážně anglicky. Mají vlastní stránku https://meta-analysis.cz/komentare/posts/ a v index.json i corpus.jsonl jsou označeny jako genre=social_post.
+Tento soubor obsahuje plné znění všech textových položek (187 z celkem 205). Zbývající položky jsou audio a video, které archiv vede pouze odkazem, a v tomto souboru nejsou; jejich metadata najdete v index.json a corpus.jsonl. Samostatně jsou vedeny kratší příspěvky ze sociálních sítí (23), psané převážně anglicky. Mají vlastní stránku https://meta-analysis.cz/komentare/posts/ a v index.json i corpus.jsonl jsou označeny jako genre=social_post.
 
 ---
 
@@ -7419,17 +7419,5 @@ Existuje mýtus, že absolvent bez praxe nemá na pracovním trhu šanci. To mo�
 Jak vidíte svoji budoucnost – na IES, na CERGE-EI, ve světě?
 
 To ukáže čas a příležitosti, které se naskytnou jak mě, tak manželovi. Příštích pár let se ale zřejmě stěhovat nebudeme, kvůli dětem.
-
----
-
-## Nositelé ceny rektora prozrazují své budoucí kroky
-
-*iForum (Univerzita Karlova), 11. ledna 2010. Tomáš Havránek.*
-
-Zdroj: https://iforum.cuni.cz/IFORUM-8454.html
-
-Jaké budou Vaše další kroky do budoucna (budete dále studovat, budete se oboru, za nějž jste cenu získali, dále věnovat)?
-
-Nyní jsem studentem doktorského programu ekonomie na Institutu ekonomických studií Fakulty sociálních věd a zároveň pracuji v Odboru ekonomického výzkumu a finanční stability ČNB, takže se vystudovanému oboru věnuji naplno a ve svém současném výzkumu na oceněnou diplomovou práci navazuji. Zabývám se zejména meta-analýzou a publikační selektivitou, což jsou koncepty, které si ekonomie vypůjčila z medicíny. Ekonomové (a výzkumníci obecně) často zveřejňují především výsledky, jež jsou v souladu s převažující teorií a/nebo vycházejí „pěkně“ (tedy statisticky signifikantně), neboť takové závěry se snáze publikují. Ukazuje se, že tento výběr silně zkresluje odhad skutečnosti a může mít závažný dopad například na politické rozhodování. V posledních několika letech byly představeny metody, jak je možno toto zkreslení odfiltrovat, a těmto metodám a jejich aplikaci se věnuji.
 
 ---

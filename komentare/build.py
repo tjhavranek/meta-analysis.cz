@@ -152,7 +152,6 @@ OUTLET_IN = {
     "Věda na FSV UK (podcast De Facto)": "na webu Věda na FSV UK",
     "ZŠ Litomyšl, Zámecká": "na webu ZŠ Litomyšl, Zámecká",
     "Forbes NEXT": "ve Forbes NEXT",
-    "iForum (Univerzita Karlova)": "v iForu Univerzity Karlovy",
     "Participativní rozpočet města Litomyšle": "v participativním rozpočtu města Litomyšle",
 }
 
