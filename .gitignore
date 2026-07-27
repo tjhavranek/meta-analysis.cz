@@ -6,3 +6,13 @@ sol_*.md
 # private working notes (never publish)
 PROGRESS.md
 review_baseline/
+
+# scratch text dumps left by PDF-extraction subagents (repo root only — real
+# content such as spillovers/excluded_studies.txt lives in subfolders)
+/*_intro.txt
+/*_concl.txt
+/*_head.txt
+/*_tail.txt
+/*_out.txt
+/*_full.txt
+/*_ctx*.txt
