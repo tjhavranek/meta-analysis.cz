@@ -1162,7 +1162,12 @@ def write_machine_readable(items, social=()):
     for name in ("corpus.jsonl", "index.json", "all.md", "llms.txt", "feed.xml"):
         p = KDIR / name
         if p.exists():
-            blob = p.read_bytes()
+            # Hash what the SERVER will send, not what sits on this disk. Python's
+            # write_text translates "\n" to "\r\n" on Windows, git commits LF, and Pages
+            # therefore serves LF — so hashing the local bytes published a checksum that
+            # never once matched the live file. Normalising here makes the manifest
+            # verifiable, and makes it verifiable from any machine's checkout.
+            blob = p.read_bytes().replace(b"\r\n", b"\n")
             files[name] = {"url": f"{BASE}/{name}", "bytes": len(blob),
                            "sha256": hashlib.sha256(blob).hexdigest()}
     (KDIR / "manifest.json").write_text(json.dumps({
@@ -1259,6 +1264,20 @@ def _headline(text):
     if len(h) <= 110:
         return h
     return h[:110].rsplit(" ", 1)[0].rstrip(" ,;:") + "…"
+
+
+def _social_body_after_headline(text):
+    """The post's own text with its opening line removed.
+
+    A post's headline IS its first line, so the single-post page showed that sentence
+    twice running: once as the <h1>, then again as the first thing in the body. Drop it
+    from the body there — the reader still sees it, as the heading. Only when the line
+    was short enough to be used whole; a truncated headline ends in "…" and dropping the
+    full line would lose words the heading never showed. The collection page and every
+    machine surface keep the complete text.
+    """
+    first, _, rest = text.partition("\n")
+    return rest.lstrip("\n") if _headline(text) == first.strip() and rest.strip() else text
 
 
 SLUG_RE = re.compile(r"^\d{4}-\d{2}-\d{2}-[a-z0-9-]+$")
@@ -1464,7 +1483,9 @@ def write_socials_page():
             f'        <div class="byline"><span>'
             f'<time datetime="{p["date"]}">{esc(cs_date(p["date"], lang=lang))}</time>'
             f'</span><span>Zuzana Havránková</span><span>LinkedIn</span></div>\n'
-            f'      </div>\n{content}\n'
+            f'      </div>\n'
+            f'        {_social_html(_social_body_after_headline(p["text"]))}'
+            f'{ro}{cl}{lm}{imgs}\n'
             f'      <div class="provenance"><p>'
             + (((f'Původně zveřejněno na <a href="{esc(p["url"])}" rel="nofollow">'
                  'LinkedInu</a>. ') if lang == "cs" else
