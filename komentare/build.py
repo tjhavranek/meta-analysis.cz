@@ -860,11 +860,15 @@ def write_index(items, key=None):
         "description": desc,
         "inLanguage": sec["lang"] if sec else "cs",
         "about": [{"@id": f"{BASE}/#author"}, {"@id": f"{BASE}/#author-zi"}],
+        # These share the per-page node's @id, so anything merging the graph would end up
+        # with dateCreated from the page AND datePublished from here on one entity. An
+        # unpublished draft must carry the same date field in both places.
         "hasPart": [{
             "@type": "Article",
             "@id": (f"{BASE}/{a['slug']}/#article" if a["media"] == "text" else a.get("url", "")),
             "url": (f"{BASE}/{a['slug']}/" if a["media"] == "text" else a.get("url", "")),
-            "headline": a["headline"], "datePublished": a["date"],
+            "headline": a["headline"],
+            ("dateCreated" if a.get("unpublished") else "datePublished"): a["date"],
         } for a in sel],
     }
     counts = ""
@@ -1851,14 +1855,23 @@ def check():
         # The src/*.md files are served publicly and linked from every page as the
         # plain-text source, so a word_count in their front matter that disagrees with
         # the one in the corpus is a visible contradiction. It had drifted in 55 files.
-        _wc = {Path(r["source_markdown"]).name: r["word_count"]
-               for r in _idx["items"] if r.get("source_markdown") and r.get("word_count")}
-        for _f, _want in sorted(_wc.items()):
-            _m = re.search(r'^word_count:\s*"(\d+)"',
-                           (KDIR / "src" / _f).read_text(encoding="utf-8"), re.M)
-            if _m and int(_m.group(1)) != _want:
-                fails.append(f"{_f}: front-matter word_count {_m.group(1)} "
-                             f"!= computed {_want}")
+        # Count from the source file itself, not from index.json. Reading the generated
+        # file would let an edited source pass whenever the generated output happens to
+        # be stale, which is exactly when the check is worth having.
+        for _p in sorted((KDIR / "src").glob("*.md")):
+            _t = _p.read_text(encoding="utf-8")
+            _m = re.search(r'^word_count:\s*"(\d+)"', _t, re.M)
+            if not _m:
+                continue
+            # strip front matter, then the H1, exactly as parse() does above — splitting
+            # on the first blank line instead would swallow the opening paragraph of
+            # every record whose heading is not followed by one
+            _parts = _t.split("---\n", 2)
+            _body = _parts[2] if len(_parts) > 2 else ""
+            _want = len(re.sub(r"^\s*#\s+.*?\n", "", _body, count=1).strip().split())
+            if int(_m.group(1)) != _want:
+                fails.append(f"{_p.name}: front-matter word_count {_m.group(1)} "
+                             f"!= body {_want}")
         _dp = (KDIR / "data" / "index.html").read_text(encoding="utf-8")
         if f"{expected} záznamů" not in _dp:
             fails.append(f"data page does not report {expected} záznamů")

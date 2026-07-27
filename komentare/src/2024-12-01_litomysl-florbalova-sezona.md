@@ -9,7 +9,7 @@ headline: "Florbalová sezóna nabírá na obrátkách"
 byline: "Tomáš Havránek"
 source: "image"
 word_count: "404"
-body_note: "Ověřeně samostatný podepsaný text v rubrice „SPORT“. Past v sazbě: text začíná v horní části levého sloupce a pokračuje v PRAVÉM sloupci (v horní části třetího), druhý sloupec přeskakuje. Prostřední sloupec a spodní část levého patří jinému článku, „Atletické okénko“, podepsanému Petrem Jonášem."
+body_note: "Samostatný podepsaný text (ověřeno) v rubrice „SPORT“. Pozor na sazbu: text začíná v horní části levého sloupce a pokračuje v PRAVÉM sloupci (v horní části třetího), druhý sloupec přeskakuje. Prostřední sloupec a spodní část levého patří jinému článku, „Atletické okénko“, podepsanému Petrem Jonášem."
 images: "2024-12_florbal-sezona.jpg"
 image_alt: "Tým mladších žáků v modrých dresech stojí před brankou v hale, v pozadí visí červená vlajka s litomyšlskou lilií. Vpředu klečí brankář v plné výstroji a sedí plyšová hračka v týmovém dresu."
 ---

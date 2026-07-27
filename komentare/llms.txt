@@ -17,8 +17,6 @@ Komentáře a sloupky pro celostátní média — měnová politika, inflace, ve
 - [Osobní pohled na Mojmíra Hampla](https://meta-analysis.cz/komentare/e15-hampl/) — E15, 13. března 2025
 - [Naděje na cenovou stabilitu? Do ČNB se vrací nezávislý výzkum](https://meta-analysis.cz/komentare/nadeje-na-cenovou-stabilitu-cnb-vyzkum/) — Seznam Zprávy, 6. prosince 2024
 - [V čem Češi poráží Ameriku](https://meta-analysis.cz/komentare/ln-cesi-amerika/) — Lidové noviny, 9. září 2024
-- [Zrušme inflaci](https://www.youtube.com/watch?v=0fNj1BrsD7w) — Zrušme inflaci, 17. června 2024 (video, pouze odkaz)
-- [Zrušme inflaci – úvod](https://www.youtube.com/watch?v=oz57P2PJr0Y) — Zrušme inflaci, 14. června 2024 (video, pouze odkaz)
 - [Odkud se bere ekonomický růst? Investice prosperitu nezajistí](https://meta-analysis.cz/komentare/odkud-se-bere-ekonomicky-rust/) — Seznam Zprávy, 12. června 2024
 - [Hezčí lidé vydělávají víc. Kvůli kráse to ale není](https://meta-analysis.cz/komentare/zi-sz-hezci-lide/) — Seznam Zprávy, 7. června 2024
 - [Rychlovlaky v Česku? Skončí to hůř než kanál Dunaj–Odra–Labe](https://meta-analysis.cz/komentare/rychlovlaky-v-cesku/) — Seznam Zprávy, 15. dubna 2024
@@ -52,6 +50,8 @@ Komentáře a sloupky pro celostátní média — měnová politika, inflace, ve
 - [Zrušme inflaci: časté dotazy](https://meta-analysis.cz/komentare/zi-caste-dotazy/) — Zrušme inflaci, 20. července 2022
 - [Zrušme inflaci: cenová stabilita je zdravá, přirozená a ústavní](https://meta-analysis.cz/komentare/zi-manifest/) — Zrušme inflaci, 20. července 2022
 - [Jak úrokové sazby ovlivňují inflaci? Ekonomové nevědí](https://meta-analysis.cz/komentare/jak-urokove-sazby-ovlivnuji-inflaci/) — Hospodářské noviny, 12. července 2022
+- [Zrušme inflaci – úvod](https://www.youtube.com/watch?v=oz57P2PJr0Y) — Zrušme inflaci, červenec 2022 (video, pouze odkaz)
+- [Zrušme inflaci](https://www.youtube.com/watch?v=0fNj1BrsD7w) — Zrušme inflaci, červenec 2022 (video, pouze odkaz)
 - [Vzkaz Aloise Rašína guvernérovi ČNB: Dokud nesnížíš inflaci, sniž si plat](https://meta-analysis.cz/komentare/vzkaz-rasina-guvernerovi-cnb/) — Hospodářské noviny, 2. června 2022
 - [ČNB přes dotační eura skrytě oslabuje korunu, navzdory pádivé inflaci](https://meta-analysis.cz/komentare/cnb-pres-dotacni-eura-skryte-oslabuje/) — Seznam Zprávy, 13. dubna 2022
 - [ČNB zkrotí inflaci jedině posílením koruny](https://meta-analysis.cz/komentare/cnb-zkroti-inflaci-jedine-posilenim-koruny/) — Seznam Zprávy, 29. března 2022

@@ -9,7 +9,7 @@ headline: "Dálnici uslyšíme všichni"
 byline: "Tomáš Havránek"
 source: "image"
 word_count: "428"
-body_note: "Otištěno v rubrice „Z DOPISŮ ČTENÁŘŮ“ na straně 17, v levém sloupci. Nejstarší dosud nalezený autorův text v Lilii. Napsáno v době připomínkového řízení k trase D35; jednání zastupitelstva, na které text zve, se konalo 18. dubna 2017."
+body_note: "Otištěno v rubrice „Z DOPISŮ ČTENÁŘŮ“ na straně 17; text začíná v levém sloupci a pokračuje celým druhým. Nejstarší dosud nalezený autorův text v Lilii. Napsáno v době připomínkového řízení k trase D35; jednání zastupitelstva, na které text zve, se konalo 18. dubna 2017."
 ---
 
 # Dálnici uslyšíme všichni
