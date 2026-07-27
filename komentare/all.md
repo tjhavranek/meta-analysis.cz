@@ -2,7 +2,7 @@
 
 Publicistika Tomáše Havránka a Zuzany Havránkové: komentáře pro celostátní média, sloupky pro litomyšlskou Lilii, rozhovory a kratší příspěvky ze sítí. Texty jsou zde archivovány v plném znění s odkazem na původní vydání.
 
-Tento soubor obsahuje plné znění všech textových položek (185 z celkem 203). Zbývající položky jsou audio a video, které archiv vede pouze odkazem, a v tomto souboru nejsou; jejich metadata najdete v index.json a corpus.jsonl. Samostatně jsou vedeny kratší příspěvky ze sociálních sítí (23), psané převážně anglicky. Mají vlastní stránku https://meta-analysis.cz/komentare/posts/ a v index.json i corpus.jsonl jsou označeny jako genre=social_post.
+Tento soubor obsahuje plné znění všech textových položek (187 z celkem 205). Zbývající položky jsou audio a video, které archiv vede pouze odkazem, a v tomto souboru nejsou; jejich metadata najdete v index.json a corpus.jsonl. Samostatně jsou vedeny kratší příspěvky ze sociálních sítí (23), psané převážně anglicky. Mají vlastní stránku https://meta-analysis.cz/komentare/posts/ a v index.json i corpus.jsonl jsou označeny jako genre=social_post.
 
 ---
 
@@ -2109,6 +2109,16 @@ Florbalisté vyhlíží novou sezonu, v níž budou muži poprvé hrát národn�
 
 ---
 
+## Zámecká vítězí na Dnech florbalu 2024
+
+*ZŠ Litomyšl, Zámecká, 3. května 2024. Tomáš Havránek.*
+
+Zdroj: https://www.1zslitomysl.cz/skolni-uspechy/
+
+V konkurenci 19 špičkových týmů kraje slaví florbalisté z prvního stupně zlato! Tým ve složení Ondřej Čáp, Luboš Fryc, Daniel Havránek, Filip Havránek, Ondřej Nešpor, Matěj Pohorský a Jan Rožek navázal v pátek 3. 5. na vítězství v oblastním kole a ovládl Dny florbalu v České Třebové. Cesta k vítězství začala v těžké skupině. Nejvíc nás potrápilo Ústí, jež jsme s obtížemi přemohli 3:2. Díky triumfu ve skupině jsme postoupili rovnou do čtvrtfinále, kde nás čekala Choceň. Postup do semifinále nás hodně bolel, trpěly obzvláště kolena a nosy útočníků. V semifinále jsme soupeři z Ústí nedali šanci a koncentrovaným výkonem zvítězili 4:0. Ve finále jsme v poločase prohrávali s Králíky 0:2 a vypadalo to bledě. K obratu zavelel Luba Fryc přesnou ranou do šibenice. Vyrovnával Dan Havránek a zlatou trefu zařídil 20 vteřin před koncem Fíla Havránek, nejmladší hráč turnaje. Náš tým zdobila odpovědná obranná hra: za 7 zápasů jsme dostali pouze 6 gólů. Všichni hráči v poli navíc vstřelili alespoň 5 branek. I přes tvrdší hru, než je ve florbale zvykem, se na celém turnaji nikdo nezranil.
+
+---
+
 ## Litomyšl postupuje do Národní ligy!
 
 *Lilie, květen 2024. Tomáš Havránek.*
@@ -2162,6 +2172,16 @@ Možná nám ale nejde o peníze, bezpečí ani čas. Možná nám jde více o p
 Do rychlovlaků, respektive do papírů kolem, už jsme nasypali stamiliony, příprava běží. Není škoda je teď zabít? Ne, není. Utopené náklady musí racionální člověk ignorovat. Kanál Dunaj–Odra–Labe jsme také zabili a tohle je řádově dražší průšvih. Zabitím projektu dnes ušetříme biliony v budoucnu.
 
 A některé nové železnice pořád smysl budou mít. Dnešní úsek Praha-Kolín je na hranici kapacity a možná zaslouží posílení či obchvat. Nejdřív ale opět: Pořádně si spočítejme, které projekty se nám skutečně vyplatí.
+
+---
+
+## Jednička vítězí!
+
+*ZŠ Litomyšl, Zámecká, 23. února 2024. Tomáš Havránek.*
+
+Zdroj: https://www.1zslitomysl.cz/skolni-uspechy/
+
+V pátek 23. února se konala oblastní soutěž ve florbalu mladších žáků v Dolním Újezdě. Naši školu úspěšně reprezentovali Ondřej Čáp, Jan Rožek, Lubomír Fryc, Daniel Havránek , Filip Havránek, Matěj Pohorský, Jakub Jehlička a Ondřej Nešpor. Už před odjezdem bylo jasné, že uspět nebude snadné. Na nádraží kluci potkali kamarády z reprezentačního týmu Litomyšle, kteří se tentokrát chystali nastoupit proti nim v dresu modré či červené školy. V prvním zápase nás čekali houževnatě hrající kluci a holky ze Sebranice-Lubné. Přes územní převahu se nám podařilo vstřelit jediný platný gól, který stačil k vítězství 1:0. Pak už jsme si zvykli na veliké hřiště a krásnou kombinační souhrou přemohli postupně Cerekvici 9:0, červenou školu 4:0 a modrou školu 5:1. Nakonec nás čekalo velké finále v bouřlivé atmosféře proti skvěle hrajícímu domácímu Dolnímu Újezdu. Utkání bylo vyrovnané, plné těžkých osobních soubojů. Díky maximálnímu nasazení se nám podařilo vyhrát 2:0, a získat tak zlaté medaile a pohár pro vítěze turnaje. Cenu pro nejlepší hráče získali brankář Máťa Pohorský, který v 5 zápasech inkasoval jediný gól (i když brána byla větší než v krajských soutěžích), a útočník Ondra Čáp, kapitán a nejzkušenější hráč týmu. Nejproduktivnějším střelcem turnaje byl Dan Havránek, nejmladším Filip Havránek. Všichni kluci vstřelili alespoň jeden gól. Speciální poděkování zaslouží Petr Janda ze Střediska volného času, který turnaj organizoval, Vojtěch Kozák, který kluky ze Zámecké na turnaj připravoval, a Vítězslav Vích, který se o ně na turnaji staral.
 
 ---
 
