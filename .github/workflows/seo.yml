@@ -33,6 +33,12 @@ jobs:
       - uses: actions/setup-python@v5
         with:
           python-version: '3.12'
+      - name: Syntax-check the tools before running them
+        # generate_seo.py runs with continue-on-error so that a page still awaiting
+        # papers.json metadata (a deliberate exit 1) does not block a deploy. That
+        # also swallowed a real SyntaxError once. Compiling first separates the two:
+        # a broken tool fails the run outright, missing metadata still deploys.
+        run: python -m py_compile tools/generate_seo.py tools/verify_seo.py komentare/build.py
       - name: Generate metadata layer (idempotent, in checkout only)
         id: gen
         run: python tools/generate_seo.py

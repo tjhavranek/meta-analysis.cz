@@ -123,6 +123,25 @@ def fallback_parse(proj, raw):
     if menu_html:
         for href, label in re.findall(r'<a href="([^"]+)"[^>]*>(.*?)</a>', menu_html, re.S):
             menu.append({"href": href, "label": re.sub(r"\s+", " ", html.unescape(re.sub(r"<[^>]+>", "", label))).strip()})
+    # Most pages link the paper PDF in the menu. A few link it only in the body
+    # (/guidelines/ links the published JOES article there), which left the page
+    # with no citation_pdf_url at all -- Google Scholar then has no full text to
+    # index. Fall back to the first same-folder, non-supplement PDF in the body,
+    # and only when the menu offers none.
+    if not any(not l["href"].startswith(("http", "/")) and l["href"].lower().endswith(".pdf")
+               and not SUPP.search(l["label"]) for l in menu):
+        body = raw.replace(menu_html, "") if menu_html else raw
+        for href, label in re.findall(r'<a href="([^"]+\.pdf)"[^>]*>(.*?)</a>', body, re.S):
+            if href.startswith(("http", "/")):
+                continue
+            label = re.sub(r"\s+", " ", html.unescape(re.sub(r"<[^>]+>", "", label))).strip()
+            if SUPP.search(label) or SUPP.search(href):
+                continue
+            if os.path.isfile(os.path.join(SITE, proj, href.split("?")[0])):
+                menu.append({"href": href, "label": label})
+                NOTES.append(f"{proj}: paper PDF {href} found in the page body, not the "
+                             f"menu — used for citation_pdf_url")
+                break
     ref = rx1(r"<b>\s*Reference\s*:\s*</b>(.*?)(?:<|$)")
     if ref:
         ref = re.sub(r"\s+", " ", html.unescape(ref)).strip()
