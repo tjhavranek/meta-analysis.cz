@@ -335,11 +335,14 @@ def inject(path, block):
     if raw.count("</head>") != 1:
         WARNINGS.append(f"{path}: no unique </head>, page skipped")
         return False
+    # without this the project pages render at desktop width on a phone
+    if 'name="viewport"' not in raw:
+        raw = raw.replace(
+            "</head>",
+            '<meta name="viewport" content="width=device-width, initial-scale=1" />\n</head>',
+            1)
     # these pages are English (Czech sections are SELF_MANAGED and never injected);
     # declare it for screen readers, translation tools, and search engines
-    if "name=\"viewport\"" not in raw:
-        raw = raw.replace("</head>", '<meta name="viewport" content="width=device-width, initial-scale=1" />
-</head>', 1)
     mh = re.search("<html[^>]*>", raw)
     if mh and "lang=" not in mh.group(0):
         raw = raw[:mh.start()] + mh.group(0).replace("<html", chr(60) + 'html lang="en"', 1) + raw[mh.end():]
