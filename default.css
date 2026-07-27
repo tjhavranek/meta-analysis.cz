@@ -414,9 +414,10 @@ html>body #footer {
   #header { height: auto; margin: 0; }
   /* img02.jpg is an 880x58 strip with a VERTICAL gradient, set to repeat-x. On a
      phone the menu wraps to three rows, so rows past the first fell off the image
-     onto bare grey. Stretch the one gradient over the whole menu instead. */
-  #menu { height: auto; margin: 0;
-          background-size: 100% 100%; background-repeat: no-repeat; }
+     onto bare grey. Stretching the gradient over the taller menu fixes the grey
+     but drops the last row's white text to 2.3:1 contrast, so use a flat fill:
+     #176DA0 is the strip's colour where the desktop text sits (5.6:1). */
+  #menu { height: auto; margin: 0; background: #176DA0; }
   #menu ul { padding: 5px 8px; text-align: center; }
   #menu li { display: inline-block; float: none; margin: 0; padding: 0;
              background: none !important; border: 0; }

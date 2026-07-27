@@ -25,3 +25,5 @@ review_baseline/
 !/llms.txt
 !/llms-full.txt
 !/robots.txt
+# the IndexNow key file (its name IS the key); tracked, but be explicit
+!/6c841b23e12756bf2f1491dbd661cd2d.txt
