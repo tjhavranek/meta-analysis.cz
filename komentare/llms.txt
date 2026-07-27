@@ -2,7 +2,7 @@
 
 > Publicistika Tomáše Havránka a Zuzany Havránkové: komentáře pro celostátní média, sloupky pro litomyšlskou Lilii, rozhovory a kratší příspěvky ze sítí. Texty jsou zde archivovány v plném znění s odkazem na původní vydání.
 
-Publicistika: 206 položek a 23 kratších příspěvků ze sítí (229 záznamů celkem), 2014–2026. Plné znění každého textu je na uvedené adrese; zdrojový Markdown položek je v /komentare/src/ (příspěvky ze sítí zdrojový soubor nemají).
+Publicistika: 207 položek a 23 kratších příspěvků ze sítí (230 záznamů celkem), 2014–2026. Plné znění každého textu je na uvedené adrese; zdrojový Markdown položek je v /komentare/src/ (příspěvky ze sítí zdrojový soubor nemají).
 
 ## Celostátní komentáře
 
@@ -149,6 +149,7 @@ Především sloupky pro Lilii, měsíčník města Litomyšle — doprava, zele
 - [Schovejme auta pod zemí](https://meta-analysis.cz/komentare/litomysl-schovejme-auta-pod-zemi/) — Lilie, březen 2018
 - [Poděkování za vánoční dílny](https://meta-analysis.cz/komentare/litomysl-podekovani-vanocni-dilny/) — Lilie, leden 2018
 - [A co děti, mají si kde hrát?](https://meta-analysis.cz/komentare/litomysl-a-co-deti-maji-si-kde-hrat/) — Lilie, červenec 2017
+- [Dálnici uslyšíme všichni](https://meta-analysis.cz/komentare/litomysl-dalnici-uslysime-vsichni/) — Lilie, duben 2017
 
 ## Rozhovory
 

@@ -9,7 +9,7 @@ headline: "Ceny pozemků v Litomyšli jsou nekonečné. Je to špatně?"
 byline: "Tomáš Havránek"
 source: "image"
 word_count: "424"
-body_note: "Rubrika DOPISY ČTENÁŘŮ. The piece runs columns 1–2 and finishes at the top of column 3."
+body_note: "Rubrika DOPISY ČTENÁŘŮ. Text zabírá první dva sloupce a končí v horní části třetího."
 ---
 
 # Ceny pozemků v Litomyšli jsou nekonečné. Je to špatně?

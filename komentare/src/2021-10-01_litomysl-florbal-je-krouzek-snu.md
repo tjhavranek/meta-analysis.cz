@@ -9,7 +9,7 @@ headline: "Florbal v Litomyšli je kroužek snů"
 byline: "Tomáš Havránek"
 source: "image"
 word_count: "348"
-body_note: "Rubrika DOPISY ČTENÁŘŮ. The piece runs columns 1–2 and finishes at the top of column 3."
+body_note: "Rubrika DOPISY ČTENÁŘŮ. Text zabírá první dva sloupce a končí v horní části třetího."
 ---
 
 # Florbal v Litomyšli je kroužek snů

@@ -9,7 +9,7 @@ headline: "Co můžeme zlepšit, aby se v Litomyšli žilo nejlépe na světě"
 byline: "Tomáš Havránek"
 source: "image"
 word_count: "401"
-body_note: "Printed in the section „Z DOPISŮ ČTENÁŘŮ“, bottom third of the page; body runs across all three columns."
+body_note: "Otištěno v rubrice „Z DOPISŮ ČTENÁŘŮ“, ve spodní třetině strany; sazba přes všechny tři sloupce."
 ---
 
 # Co můžeme zlepšit, aby se v Litomyšli žilo nejlépe na světě

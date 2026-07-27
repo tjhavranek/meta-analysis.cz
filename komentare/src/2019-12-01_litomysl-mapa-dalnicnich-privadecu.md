@@ -9,7 +9,7 @@ headline: "Mapa dálničních přivaděčů: porovnejme Litomyšl a Mýto"
 byline: "Tomáš Havránek"
 source: "image"
 word_count: "415"
-body_note: "Rubrika DOPISY ČTENÁŘŮ. The piece runs columns 1–2 and finishes at the top of column 3. A map graphic sits between the headline and the body. The item immediately below in column 3, „Reakce vedení města“ signed Daniel Brýdl (starosta), is a reply by the mayor and is NOT included here."
+body_note: "Rubrika DOPISY ČTENÁŘŮ. Text zabírá první dva sloupce a končí v horní části třetího. Mezi titulkem a textem je otištěna mapka. Příspěvek bezprostředně pod ním ve třetím sloupci, „Reakce vedení města“ podepsaná Danielem Brýdlem (starosta), je odpovědí starosty a zde uvedena NENÍ."
 ---
 
 # Mapa dálničních přivaděčů: porovnejme Litomyšl a Mýto

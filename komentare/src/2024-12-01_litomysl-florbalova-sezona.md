@@ -9,7 +9,7 @@ headline: "Florbalová sezóna nabírá na obrátkách"
 byline: "Tomáš Havránek"
 source: "image"
 word_count: "404"
-body_note: "Confirmed standalone signed piece in the section „SPORT“. Layout trap: the body starts at the top of the left column and continues in the RIGHT-hand column (top of column 3), skipping column 2. The middle column and the lower left column belong to a separate article, „Atletické okénko“, signed Petr Jonáš."
+body_note: "Ověřeně samostatný podepsaný text v rubrice „SPORT“. Past v sazbě: text začíná v horní části levého sloupce a pokračuje v PRAVÉM sloupci (v horní části třetího), druhý sloupec přeskakuje. Prostřední sloupec a spodní část levého patří jinému článku, „Atletické okénko“, podepsanému Petrem Jonášem."
 images: "2024-12_florbal-sezona.jpg"
 image_alt: "Tým mladších žáků v modrých dresech stojí před brankou v hale, v pozadí visí červená vlajka s litomyšlskou lilií. Vpředu klečí brankář v plné výstroji a sedí plyšová hračka v týmovém dresu."
 ---

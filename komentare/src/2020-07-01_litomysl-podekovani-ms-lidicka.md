@@ -9,7 +9,7 @@ headline: "Poděkování MŠ Lidická"
 byline: "Tomáš Havránek"
 source: "image"
 word_count: "93"
-body_note: "Not a standalone column: a bulleted item inside the roundup rubric „Poděkování, blahopřání, vzpomínky“. The bold lead line „Poděkování MŠ Lidická“ serves as its heading; the signature is set in italics at the end of the item."
+body_note: "Nejde o samostatný sloupek: odrážkový příspěvek ve společné rubrice „Poděkování, blahopřání, vzpomínky“. Jako nadpis slouží tučný úvodní řádek „Poděkování MŠ Lidická“; podpis je vysazen kurzivou na konci příspěvku."
 ---
 
 # Poděkování MŠ Lidická

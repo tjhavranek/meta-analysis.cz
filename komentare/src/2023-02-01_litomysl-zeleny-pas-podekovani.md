@@ -9,7 +9,7 @@ headline: "Zelený pás kolem Litomyšle"
 byline: "Tomáš Havránek"
 source: "image"
 word_count: "159"
-body_note: "Not a standalone column: a short signed item inside the shared section „Poděkování, blahopřání, vzpomínky“, marked by a red square bullet. It has no headline of its own; the section heading is used above. Text starts at the bottom of the middle column and finishes in the right column."
+body_note: "Nejde o samostatný sloupek: krátký podepsaný příspěvek ve společné rubrice „Poděkování, blahopřání, vzpomínky“, označený červenou čtvercovou odrážkou. Nemá vlastní titulek, proto je nad textem použit název rubriky. Text začíná ve spodní části prostředního sloupce a končí v pravém sloupci."
 title_suffix: "2023-02"
 ---
 

@@ -716,7 +716,12 @@ def write_item(a):
                 f'{esc(a["unpublished"])}')
     else:
         where = OUTLET_IN.get(a["outlet"], f'v médiu {a["outlet"]}')
-        prov = (f'Poprvé vyšlo {where} {cs_date(a["date"], a.get("date_precision"), "cs")}.'
+        # An outlet named with an apposition ("v Lilii, měsíčníku města Litomyšle")
+        # has to close it before the date, or the sentence runs "…města Litomyšle
+        # červenec 2017", which is not Czech. Outlets without a comma read fine as is.
+        sep = ", " if "," in where else " "
+        prov = (f'Poprvé vyšlo {where}{sep}'
+                f'{cs_date(a["date"], a.get("date_precision"), "cs")}.'
                 # url_label matters when the link is not a permalink: the school's
                 # "Školní úspěchy" is a rolling feed, so "Původní vydání" would promise
                 # a page that is only about this item.
@@ -743,6 +748,10 @@ def write_item(a):
         node["image"] = [f"{SITE}{PATH}/item-img/{f}" for f in _figfiles]
 
     note = f'<div class="provenance"><p>{esc(a["body_note"])}</p></div>\n' if a.get("body_note") else ""
+    # The reader has to know this was never printed BEFORE reading it as a column, not
+    # in the provenance line under the last paragraph. The full story stays down there.
+    flag = ('      <p class="unpublished-flag">Nevyšlo — tento text nebyl otištěn.</p>\n'
+            if unpub else "")
     # the outlet's standfirst: part of the published piece, but the editor's words,
     # not the author's — so it is set apart rather than folded into the prose
     perex = (f'      <p class="perex">{esc(fix_quotes(a["perex"]))}</p>\n'
@@ -753,7 +762,7 @@ def write_item(a):
         <h1>{esc(a["headline"])}</h1>
         <div class="byline">{"".join(meta)}</div>
       </div>
-{note}{perex}      <div class="prose reading">
+{flag}{note}{perex}      <div class="prose reading">
 {body_html}
 {figs}      </div>
       <div class="provenance"><p>{prov}</p></div>
@@ -1041,6 +1050,14 @@ def write_machine_readable(items, social=()):
             d["source_markdown"] = f"{BASE}/src/{a['file']}"
             d["word_count"] = len(a["body"].split())
             d["text"] = a["body"]
+        # figures reached the per-page JSON-LD but not the corpus, so a consumer working
+        # from index.json/corpus.jsonl could not tell a text had a map or a photo with it
+        _imgs, _alts = _split(a.get("images")), _split(a.get("image_alt"))
+        _creds = _split(a.get("image_credit"))
+        if _imgs:
+            d["images"] = [{"url": f"{BASE}/item-img/{f}", "alt": _alts[i],
+                            **({"credit": _creds[i]} if i < len(_creds) else {})}
+                           for i, f in enumerate(_imgs)]
         # "editorial" claims an editor stood between the author and the reader. For a
         # piece that was written, submitted and then never printed, no editor ever did.
         d["provenance"] = ("unpublished" if a.get("unpublished") else

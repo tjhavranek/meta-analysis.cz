@@ -169,6 +169,16 @@ main { padding: 2.75rem 0 4rem; }
 }
 .provenance p { margin: 0; }
 
+/* Written for an issue, then withdrawn or never printed. Says so above the text:
+   reading a column through and learning at the foot that it never ran is the wrong
+   order. The full explanation still follows the text, in .provenance. */
+.unpublished-flag {
+  margin: 1.75rem 0 0; padding: 0.55rem 0.95rem;
+  border-left: 3px solid var(--muted); background: var(--surface);
+  font-size: 0.9rem; font-weight: 600; color: var(--muted);
+  max-width: var(--measure);
+}
+
 .pager { margin-top: 3rem; padding-top: 1.25rem; border-top: 1px solid var(--rule);
          font-size: 0.9rem; display: flex; flex-wrap: wrap; gap: 1.25rem; }
 

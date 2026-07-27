@@ -9,7 +9,7 @@ headline: "Okolí zámku může být zase krásné"
 byline: "Tomáš Havránek"
 source: "image"
 word_count: "410"
-body_note: "Printed in the section „Z DOPISŮ ČTENÁŘŮ“. Body runs across the two left columns of the page; the piece ends mid-way down the right column, above the unrelated letter „Osecké údolí“."
+body_note: "Otištěno v rubrice „Z DOPISŮ ČTENÁŘŮ“. Text je vysazen přes dva levé sloupce strany a končí v polovině pravého sloupce, nad nesouvisejícím dopisem „Osecké údolí“."
 ---
 
 # Okolí zámku může být zase krásné

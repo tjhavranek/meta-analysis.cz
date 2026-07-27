@@ -9,7 +9,7 @@ headline: "Litomyšl postupuje do Národní ligy!"
 byline: "Tomáš Havránek"
 source: "image"
 word_count: "508"
-body_note: "Standalone signed piece at the top of the page; body runs across all three columns around a photograph."
+body_note: "Samostatný podepsaný text v horní části strany; sazba přes všechny tři sloupce kolem fotografie."
 images: "2024-05_narodni-liga.jpg"
 image_alt: "Litomyšlští florbalisté slaví na palubovce postup; za nimi je plná tribuna fanoušků a na zábradlí visí červená vlajka s litomyšlskou lilií."
 ---

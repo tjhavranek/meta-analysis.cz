@@ -9,7 +9,7 @@ headline: "Můžeme něco dělat s psími exkrementy v Litomyšli?"
 byline: "Zuzana Havránková"
 source: "image"
 word_count: "397"
-body_note: "Printed in the section „DOPISY ČTENÁŘŮ“, lower half of the page, two left columns."
+body_note: "Otištěno v rubrice „DOPISY ČTENÁŘŮ“, ve spodní polovině strany, ve dvou levých sloupcích."
 ---
 
 # Můžeme něco dělat s psími exkrementy v Litomyšli?

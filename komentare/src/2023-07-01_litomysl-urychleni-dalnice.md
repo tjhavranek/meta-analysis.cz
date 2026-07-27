@@ -9,7 +9,7 @@ headline: "O urychlení dálnice se zasloužili starosta a nový šéf ŘSD"
 byline: "Tomáš Havránek"
 source: "image"
 word_count: "401"
-body_note: "Printed in the section „DOPISY ČTENÁŘŮ“, top of the page, two left columns."
+body_note: "Otištěno v rubrice „DOPISY ČTENÁŘŮ“, v horní části strany, ve dvou levých sloupcích."
 ---
 
 # O urychlení dálnice se zasloužili starosta a nový šéf ŘSD

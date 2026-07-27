@@ -10,7 +10,7 @@ byline: "Tomáš Havránek"
 source: "image"
 word_count: "170"
 perex: "Co mi v Litomyšli chybí, jsou lesy a stromy. Máme příležitost vybudovat něco, co po nás zůstane pro naše děti a vnoučata. Zelený pás přiblíží Litomyšl nejpříjemnějším místům pro život v Evropě."
-body_note: "Not a standalone column: a signed statement inside the city's round-up „Představujeme vítěze participativního rozpočtu“ on page 9, after the green-belt proposal won the 2022 participatory budget. It has no headline of its own; the project name is used above. The author sent the text to the city on 24 June 2022 at its request; the printed wording matches what he sent. Later thanks on the same project ran in Lilie 2023/2."
+body_note: "Nejde o samostatný sloupek: podepsané vyjádření v přehledu města „Představujeme vítěze participativního rozpočtu“ na straně 9, poté co návrh zeleného pásu zvítězil v participativním rozpočtu 2022. Nemá vlastní titulek, proto je nad textem použit název projektu. Autor text poslal městu 24. 6. 2022 na jeho žádost; otištěné znění odpovídá tomu, co poslal. Další poděkování k témuž projektu vyšlo v Lilii 2023/2."
 title_suffix: "2022-08"
 ---
 

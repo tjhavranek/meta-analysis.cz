@@ -9,7 +9,7 @@ headline: "Florbal v Litomyšli je skvělý. Děti mohou začít kdykoli během 
 byline: "Tomáš Havránek"
 source: "image"
 word_count: "433"
-body_note: "Standalone signed piece at the bottom of the sports page; body runs across all three columns."
+body_note: "Samostatný podepsaný text ve spodní části sportovní strany; sazba přes všechny tři sloupce."
 ---
 
 # Florbal v Litomyšli je skvělý. Děti mohou začít kdykoli během roku

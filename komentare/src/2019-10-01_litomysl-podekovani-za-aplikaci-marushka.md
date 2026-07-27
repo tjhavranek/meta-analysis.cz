@@ -9,7 +9,7 @@ headline: "Poděkování za aplikaci Marushka"
 byline: "Tomáš Havránek"
 source: "image"
 word_count: "100"
-body_note: "Not a standalone column: a bulleted item inside the roundup rubric „Poděkování, blahopřání, vzpomínky“. The bold lead line „Poděkování za aplikaci Marushka“ serves as its heading; the signature is set in italics at the end of the item."
+body_note: "Nejde o samostatný sloupek: odrážkový příspěvek ve společné rubrice „Poděkování, blahopřání, vzpomínky“. Jako nadpis slouží tučný úvodní řádek „Poděkování za aplikaci Marushka“; podpis je vysazen kurzivou na konci příspěvku."
 ---
 
 # Poděkování za aplikaci Marushka

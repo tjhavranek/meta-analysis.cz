@@ -9,7 +9,7 @@ headline: "Nově upravený projekt dálnice D35"
 byline: "Tomáš Havránek"
 source: "image"
 word_count: "132"
-body_note: "Not a standalone column: a bulleted item inside the roundup rubric „Poděkování, blahopřání, vzpomínky“ (right-hand column of the page). The item carries no headline of its own; the headline field holds the rubric title. Signature is set in italics at the end of the item."
+body_note: "Nejde o samostatný sloupek: odrážkový příspěvek ve společné rubrice „Poděkování, blahopřání, vzpomínky“ (pravý sloupec strany). Příspěvek nemá vlastní titulek, proto je nad textem použit název rubriky. Podpis je vysazen kurzivou na konci příspěvku."
 title_suffix: "2021-02"
 ---
 

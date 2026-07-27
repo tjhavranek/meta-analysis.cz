@@ -9,7 +9,7 @@ headline: "Schovejme auta pod zemí"
 byline: "Tomáš Havránek"
 source: "image"
 word_count: "411"
-body_note: "Rubrika Z DOPISŮ ČTENÁŘŮ. The piece runs across three columns: it starts in column 1, continues in column 2, and finishes at the top of column 3 (above the unrelated article „Bude v Litomyšli další náměstí?“)."
+body_note: "Rubrika Z DOPISŮ ČTENÁŘŮ. Text je vysazen přes tři sloupce: začíná v prvním, pokračuje ve druhém a končí v horní části třetího (nad nesouvisejícím článkem „Bude v Litomyšli další náměstí?“)."
 ---
 
 # Schovejme auta pod zemí

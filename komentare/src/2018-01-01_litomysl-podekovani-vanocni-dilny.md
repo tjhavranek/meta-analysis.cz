@@ -9,7 +9,7 @@ headline: "Poděkování za vánoční dílny"
 byline: "Tomáš Havránek"
 source: "image"
 word_count: "31"
-body_note: "Not a standalone column: a short thank-you item (one bulleted entry) inside the roundup rubric „Poděkování, blahopřání, vzpomínky“. The item itself carries no headline of its own; the headline field holds the rubric title. Signature is set in italics at the end of the item."
+body_note: "Nejde o samostatný sloupek: krátké poděkování (jedna odrážka) ve společné rubrice „Poděkování, blahopřání, vzpomínky“. Příspěvek nemá vlastní titulek, proto je nad textem použit název rubriky. Podpis je vysazen kurzivou na konci příspěvku."
 title_suffix: "2018-01"
 ---
 
