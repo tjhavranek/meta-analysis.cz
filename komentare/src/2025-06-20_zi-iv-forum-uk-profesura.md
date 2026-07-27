@@ -7,8 +7,8 @@ date: "2025-06-20"
 headline: "Zuzana Havránková: Profesura a čtyři děti před čtyřicítkou? Jde to!"
 byline: "Zuzana Havránková"
 interviewer: "Helena Zdráhalová"
-word_count: "1813"
-body_note: "Rozhovor vyšel v časopise Forum Univerzity Karlovy. Server VědaVýzkum.cz jej 27. 6. 2025 převzal: https://vedavyzkum.cz/rozhovory-a-osobnosti/rozhovory/zuzana-havrankova-profesura-a-ctyri-deti-pred-ctyricitkou-jde-to"
+word_count: "1799"
+body_note: "Rozhovor vyšel v časopise Forum Univerzity Karlovy. Fotografie k rozhovoru pořídil Michal Novotný. Řádek s autorstvím, fotografem a poznámkou o převzetí, který se v převzaté verzi tiskne pod textem, zde neuvádíme — autorka rozhovoru je vedena v metadatech. Server VědaVýzkum.cz jej 27. 6. 2025 převzal: https://vedavyzkum.cz/rozhovory-a-osobnosti/rozhovory/zuzana-havrankova-profesura-a-ctyri-deti-pred-ctyricitkou-jde-to"
 ---
 # Zuzana Havránková: Profesura a čtyři děti před čtyřicítkou? Jde to!
 
@@ -75,7 +75,5 @@ To je hezká pozvánka ke studiu ekonomie…
 O ekonomii se dříve říkalo, že je to pochmurná věda. Ale já mám ze svých kolegů a studentů přesně opačný pocit. Studují ekonomickou historii a na ní vidí, jak úžasně se zlepšila životní úroveň lidí, i když z médií možná můžete nabýt opačného dojmu. O katastrofách a problémech si v novinách něco přečtete každý den, ale o tom, kolik stamilionů lidí se za posledních třicet let vymanilo ze spárů chudoby, se z denních zpráv nedozvíte.
 
 Od průmyslové revoluce se životní úroveň v Čechách zvedla třicetinásobně. Jsme bohatší, zdravější, žijeme v bezpečnějším světě, máme více volného času, méně pracujeme, máme více lesů. To jsou měřitelná fakta, která jsou pravdivá a díky kterým můžeme říct, že k pokroku skutečně dochází. A z toho plyne optimismus, který ekonomové sdílí. Výzvy v oblasti životního prostředí a změny klimatu mají jasná technická řešení. Je důležité si uvědomit, že přes dílčí problémy celkově žijeme v krásném světě plném příležitostí, což bychom měli zdůrazňovat našim dětem.
-
-Autorka: Helena Zdráhalová Foto: Michal Novotný Článek vyšel v on-line magazínu Univerzity Karlovy Forum
 
 Zuzana Havránková se věnuje tématům spojeným s mezinárodním obchodem, trhem práce, energetickou ekonomií a metaanalýzou. V roce 2018 získala docenturu, letos profesuru. V roce 2010 ji Světová banka ocenila medailí za výzkum a vývoj, v roce 2018 získala Cenu Kateřiny Šmídkové udělovanou Českou společností nejlepším českým ženám ekonomkám. Vyznamenaly ji také ministerstvo školství nebo Česká i Slovenská národní banka. Působí jako editorka Journal of Economic Surveys odpovědná za metaanalýzu. Podle databáze RePEc patří mezi 100 nejvlivnějších ekonomek na světě. Letos se stala affiliate výzkumnicí centra METRICS při Stanford University (USA); tři měsíce strávila na University of Canterbury na Novém Zélandu. Je členkou Rady pro rovné příležitosti UK.
