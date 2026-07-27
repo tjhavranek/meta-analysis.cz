@@ -16,3 +16,12 @@ review_baseline/
 /*_out.txt
 /*_full.txt
 /*_ctx*.txt
+
+# Subagents reading PDFs keep writing scratch dumps into the repo root under
+# ad-hoc names (foo_intro.txt, cl_p0.txt, ...). Ignore root-level .txt wholesale
+# and re-admit the three that belong to the site. Tracked files are unaffected
+# by .gitignore, so this cannot drop llms.txt / robots.txt from the deploy.
+/*.txt
+!/llms.txt
+!/llms-full.txt
+!/robots.txt
