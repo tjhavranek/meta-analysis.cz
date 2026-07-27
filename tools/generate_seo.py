@@ -313,9 +313,10 @@ def head_block(m):
         lines.append(f'<meta property="og:image" content="{absurl(proj, m["figure"]["src"])}" />')
         cap = (m["figure"].get("caption") or m["title"])
         lines.append(f'<meta property="og:image:alt" content="{html.escape(cap, quote=True)}" />')
-    else:
-        lines.append(f'<meta property="og:image" content="{BASE}/images/img02.jpg" />')
-        lines.append('<meta property="og:image:alt" content="meta-analysis.cz" />')
+    # No og:image when the page has no real figure. It used to fall back to
+    # images/img02.jpg, the 880x58 navigation-bar gradient: below the 200x200
+    # minimum most platforms accept, so every share rendered a blue smear.
+    # A text-only card is better than a misleading one.
     lines.append('<script type="application/ld+json">\n' + jdump(build_jsonld(m)) + "\n</script>")
     return "\n".join(lines) + "\n"
 
@@ -458,8 +459,7 @@ def main():
         '<meta property="og:title" content="Meta-Analysis in Economics and Social Sciences" />',
         '<meta property="og:description" content="Data and codes for papers on meta-analysis and research synthesis in economics and the social sciences" />',
         f'<meta property="og:url" content="{BASE}/" />',
-        f'<meta property="og:image" content="{BASE}/images/img02.jpg" />',
-        '<meta property="og:image:alt" content="meta-analysis.cz" />',
+
         '<script type="application/ld+json">\n' + jdump(home_graph) + "\n</script>"]) + "\n"
     inject(os.path.join(SITE, "index.html"), home_block)
     print("injected homepage block")
@@ -522,6 +522,9 @@ def main():
           "and, for most papers, the dataset and estimation code.", "", "## Papers", ""]
     lt += [f"- [{merged[p]['title']}]({BASE}/{p}/): {merged[p]['one_line']}" for p in projects]
     lt += ["", "## Resources", "",
+           f"- [Headline results for every paper]({BASE}/estimates.csv): one row per paper — the "
+           f"parameter, the value the paper headlines, the sample it rests on, and the verbatim "
+           f"sentence from the paper that each figure came from (CSV)",
            f"- [Full paper index with abstracts and file links]({BASE}/llms-full.txt): one entry per paper, for LLM ingestion",
            f"- [Sitemap]({BASE}/sitemap.xml): all pages and PDF full texts",
            f"- [Commentary and interviews]({BASE}/komentare/): op-eds, columns and interviews "
