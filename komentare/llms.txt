@@ -2,7 +2,7 @@
 
 > Publicistika Tomáše Havránka a Zuzany Havránkové: komentáře pro celostátní média, sloupky pro litomyšlskou Lilii, rozhovory a kratší příspěvky ze sítí. Texty jsou zde archivovány v plném znění s odkazem na původní vydání.
 
-Publicistika: 197 položek a 23 kratších příspěvků ze sítí (220 záznamů celkem), 2014–2026. Plné znění každého textu je na uvedené adrese; zdrojový Markdown položek je v /komentare/src/ (příspěvky ze sítí zdrojový soubor nemají).
+Publicistika: 202 položek a 23 kratších příspěvků ze sítí (225 záznamů celkem), 2010–2026. Plné znění každého textu je na uvedené adrese; zdrojový Markdown položek je v /komentare/src/ (příspěvky ze sítí zdrojový soubor nemají).
 
 ## Celostátní komentáře
 
@@ -17,6 +17,8 @@ Komentáře a sloupky pro celostátní média — měnová politika, inflace, ve
 - [Osobní pohled na Mojmíra Hampla](https://meta-analysis.cz/komentare/e15-hampl/) — E15, 13. března 2025
 - [Naděje na cenovou stabilitu? Do ČNB se vrací nezávislý výzkum](https://meta-analysis.cz/komentare/nadeje-na-cenovou-stabilitu-cnb-vyzkum/) — Seznam Zprávy, 6. prosince 2024
 - [V čem Češi poráží Ameriku](https://meta-analysis.cz/komentare/ln-cesi-amerika/) — Lidové noviny, 9. září 2024
+- [Zrušme inflaci](https://www.youtube.com/watch?v=0fNj1BrsD7w) — Zrušme inflaci, 17. června 2024 (video, pouze odkaz)
+- [Zrušme inflaci – úvod](https://www.youtube.com/watch?v=oz57P2PJr0Y) — Zrušme inflaci, 14. června 2024 (video, pouze odkaz)
 - [Odkud se bere ekonomický růst? Investice prosperitu nezajistí](https://meta-analysis.cz/komentare/odkud-se-bere-ekonomicky-rust/) — Seznam Zprávy, 12. června 2024
 - [Hezčí lidé vydělávají víc. Kvůli kráse to ale není](https://meta-analysis.cz/komentare/zi-sz-hezci-lide/) — Seznam Zprávy, 7. června 2024
 - [Rychlovlaky v Česku? Skončí to hůř než kanál Dunaj–Odra–Labe](https://meta-analysis.cz/komentare/rychlovlaky-v-cesku/) — Seznam Zprávy, 15. dubna 2024
@@ -75,12 +77,14 @@ Komentáře a sloupky pro celostátní média — měnová politika, inflace, ve
 - [Stromy, to je ekonomická odpověď na sucho](https://meta-analysis.cz/komentare/hn-stromy-sucho/) — Hospodářské noviny, 5. května 2020
 - [Konec Cobbovy-Douglasovy produkční funkce?](https://meta-analysis.cz/komentare/cnb-cobb-douglas/) — ČNB cnBlog, 30. dubna 2020
 - [Jak přicházíme o sto miliard korun ročně](https://meta-analysis.cz/komentare/hn-sto-miliard-rocne/) — Hospodářské noviny, 11. září 2019
+- [Nejlepší využití kryptoměn – baterie?](https://meta-analysis.cz/komentare/forbes-next-kryptomeny-baterie/) — Forbes NEXT, 22. března 2018
 - [Drahoš a Zeman mají stejnou šanci na zvolení](https://meta-analysis.cz/komentare/zi-tz-prezidentske-volby/) — KdoVyhrajeVolby.cz, 8. listopadu 2017
 - [KdoVyhrajeVolby.cz: Do sněmovny se může dostat rekordní počet stran](https://meta-analysis.cz/komentare/zi-tz-projekce-mandatu/) — KdoVyhrajeVolby.cz, 6. září 2017
 - [Vědci z Univerzity Karlovy vyvinuli volební model, který denně počítá aktuální preference](https://meta-analysis.cz/komentare/zi-tz-agregator-preferenci/) — KdoVyhrajeVolby.cz, 25. srpna 2017
 - [Nerovnost neroste](https://meta-analysis.cz/komentare/cnb-nerovnost-neroste/) — ČNB cnBlog, 15. května 2017
 - [Kurzový závazek a past středního příjmu](https://meta-analysis.cz/komentare/cnb-kurzovy-zavazek/) — ČNB cnBlog, 12. prosince 2016
 - [Proč nízké úrokové míry nevedou nutně k přehřívání ekonomiky](https://meta-analysis.cz/komentare/cnb-rovnovazna-sazba/) — ČNB cnBlog, 30. listopadu 2016
+- [Nositelé ceny rektora prozrazují své budoucí kroky](https://meta-analysis.cz/komentare/iforum-cena-rektora/) — iForum (Univerzita Karlova), 11. ledna 2010
 
 ## Litomyšlské sloupky
 
@@ -120,6 +124,7 @@ Sloupky pro Lilii, měsíčník města Litomyšle — doprava, zeleň, školstv�
 - [Nový domov důchodců na zelené louce si nemůžeme dovolit](https://meta-analysis.cz/komentare/litomysl-domov-duchodcu/) — Lilie, prosinec 2022
 - [Nové kruháky ublíží tranzitu, pomohou Litomyšli](https://meta-analysis.cz/komentare/litomysl-kruhovy-objezd/) — Lilie, červen 2022
 - [Těšme se na víc stromů v Litomyšli](https://meta-analysis.cz/komentare/litomysl-stromy/) — Lilie, březen 2022
+- [Zelený pás kolem Litomyšle](https://meta-analysis.cz/komentare/litomysl-zeleny-pas-navrh/) — Participativní rozpočet města Litomyšle, leden 2022
 - [Okolí zámku může být zase krásné](https://meta-analysis.cz/komentare/litomysl-okoli-zamku/) — Lilie, leden 2022
 - [Florbal v Litomyšli je kroužek snů](https://meta-analysis.cz/komentare/litomysl-florbal-je-krouzek-snu/) — Lilie, říjen 2021
 - [Ceny pozemků v Litomyšli jsou nekonečné. Je to špatně?](https://meta-analysis.cz/komentare/litomysl-ceny-pozemku-jsou-nekonecne/) — Lilie, červen 2021

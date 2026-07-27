@@ -2,7 +2,7 @@
 
 Publicistika Tomáše Havránka a Zuzany Havránkové: komentáře pro celostátní média, sloupky pro litomyšlskou Lilii, rozhovory a kratší příspěvky ze sítí. Texty jsou zde archivovány v plném znění s odkazem na původní vydání.
 
-Tento soubor obsahuje plné znění všech textových položek (181 z celkem 197). Zbývající položky jsou audio a video, které archiv vede pouze odkazem, a v tomto souboru nejsou; jejich metadata najdete v index.json a corpus.jsonl. Samostatně jsou vedeny kratší příspěvky ze sociálních sítí (23), psané převážně anglicky. Mají vlastní stránku https://meta-analysis.cz/komentare/posts/ a v index.json i corpus.jsonl jsou označeny jako genre=social_post.
+Tento soubor obsahuje plné znění všech textových položek (184 z celkem 202). Zbývající položky jsou audio a video, které archiv vede pouze odkazem, a v tomto souboru nejsou; jejich metadata najdete v index.json a corpus.jsonl. Samostatně jsou vedeny kratší příspěvky ze sociálních sítí (23), psané převážně anglicky. Mají vlastní stránku https://meta-analysis.cz/komentare/posts/ a v index.json i corpus.jsonl jsou označeny jako genre=social_post.
 
 ---
 
@@ -5129,6 +5129,16 @@ Jenže dokud jsou reálné sazby takhle záporné, ČNB nás těžko přiměje s
 
 ---
 
+## Zelený pás kolem Litomyšle
+
+*Participativní rozpočet města Litomyšle, leden 2022. Tomáš Havránek.*
+
+Zdroj: https://www.litomysl.cz/participativni_rozpocet/projekt/2022_zeleny_pas_kolem_litomysle
+
+Co mi v Litomyšli chybí, jsou lesy. Před 117 lety naši zastupitelé založili les Černá hora, ale od té doby spíš jen nahrazujeme pokácené stromy. Navrhuji vysázet tolik nových stromů, kolik za 300 000 korun zvládneme pořídit (včetně souvisejících nákladů) na pozemcích v majetku města kolem Litomyšle. Podobné příměstské lesoparky jsou běžné třeba v Německu. Pokud návrh projde, přidám na stromy dalších 15 000 korun ze svého a udělám maximum, abychom dostali dotaci od Nadace ČEZ ve výši dalších stovek tisíc. Budu je otravovat osobně, budu je otravovat telefony, budu je otravovat peticemi. S návrhem na zelený pás jsem šel za vedením města, kde jsem se setkal s obecným pochopením. Koneckonců město chystá nové parky u ulice Zdeňka Kopala a u Prokopa. Ale bylo mi řečeno, že není jasný zájem lidí o další stromy. Ať dám návrh do participativního rozpočtu, abychom zjistili, jestli víc zeleně chtějí i ostatní. Někteří spoluobčané schválně ničí nově vysazené stromy, těm se zelený pás líbit nebude a budou hlasovat proti. Co říkáte vy? Věc neskončí, i když nebudeme mezi prvními dvěma projekty. Můžeme uspořádat referendum při příležitosti prezidentských voleb, ale zájem tady by pomohl věc urychlit. Stromy mají třeba tyhle výhody: 1) Budeme mít víc cílů na procházky. 2) Okolí města bude hezčí. 3) Omezíme zápach z polí. 4) Stromy udrží víc vody v krajině než kukuřice a řepka. 5) Stromy zlepší životní podmínky pro zvěř a ptactvo. 6) Stromy sníží prašnost v okolí. 7) Stromy ochladí mikroklima, takže u nich bude v létě příjemněji. 8) Výsadba nových stromů účinně zmírňuje klimatickou změnu tím, že stromy v sobě vážou uhlík. (To pro mě osobně sice hlavní důvod není, ale smysl v tom také vidím; přikládám vědecký článek na toto téma.) Aby bylo jasno, nechceme nijak poškozovat zemědělce, kteří nás živí a k jejichž práci mám velký respekt. Nenavrhuji žádný záběr půdy nad rámec toho, co už zastupitelé odhlasovali v územním plánu – tedy městské pozemky vyčleněné na rekreační zeleň. Tam v souladu s územním plánem musí být nakonec buď louka, nebo park, nikoli řepka nebo kukuřice. Jedná se vždy o drobné zlomky rozlohy, na které jednotliví zemědělci hospodaří. Jde tudíž o urychlení záměru města, k jehož realizaci zatím nedošlo z důvodu nedostatku vyčleněných prostředků a nejasného zájmu veřejnosti. Poznámka na okraj: kvůli současné legislativě přímo lesy lesovaté u Litomyšle zakládat nejde (divné, co?), ale jde založit parky s roztroušenými stromy, kde se můžeme cítit skoro jako v lese. Nejraději bych viděl smíšenou výsadbu listnáčů i jehličnanů, aby porost byl veselý a zelený celý rok, nejen od dubna do října. Byl bych rád za krásné mohutné stromy, koneckonců je to dost daleko od jakékoli výstavby. Stejné by to mělo být i na Černé hoře. Ale velikost a smíšená skladba stromů nejsou podmínkou, důležitý je zelený pás. O výběru stromů nechť rozhodnou odborníci. Teď máme příležitost vybudovat něco, co po nás zůstane pro naše děti a vnoučata. Zelený pás přiblíží Litomyšl nejpříjemnějším místům pro život v Evropě. Přidáte se?
+
+---
+
 ## Okolí zámku může být zase krásné
 
 *Lilie, leden 2022. Tomáš Havránek.*
@@ -6842,6 +6852,32 @@ Centrální banka většinu z těchto aktivit reguluje. Je pravda, že s rozvoje
 
 ---
 
+## Nejlepší využití kryptoměn – baterie?
+
+*Forbes NEXT, 22. března 2018. Mojmír Hampl, Tomáš Havránek.*
+
+Zdroj: https://www.cnb.cz/cs/verejnost/servis-pro-media/autorske-clanky-rozhovory-s-predstaviteli-cnb/Nejlepsi-vyuziti-kryptomen-baterie
+
+Řešil to už každý, kdo má na střeše solární panely. Co s elektřinou, kterou soláry vyrobí, ale dům nespotřebuje? První možnost je předat ji do distribuční sítě. Ale výkupní ceny elektřiny jsou dnes několikanásobně nižší než ceny odběru. Takže by se vyplatilo si vyrobenou elektřinu někde schovat pro budoucí spotřebu. To nás přivádí k druhé možnosti: akumulace pomocí bojleru nebo baterií.
+
+Jenže baterie jsou drahé a mají omezenou životnost a kapacitu. Pomocí bojleru pak můžeme skladovat energii jen ve formě teplé vody. Existuje ale i třetí možnost: využít přebytečnou energii za slunečných dnů na těžbu bitcoinu nebo jiných kryptoměn. A za potenciálně utržené kryptoměny převedené do korun můžeme nakupovat elektřinu v noci či za špatného počasí. Z bitcoinu je baterie s neomezenou kapacitou!
+
+Opravdu to funguje? V mezním vyjádření určitě. Jedna kilowatthodina nám při těžbě kryptoměn vydělá řádově více peněz, než kolik bychom dostali při prodeji elektřiny do sítě. I kdyby hodnota hlavních kryptoměn klesla třeba pětinásobně, bude tato strategie pořád zisková. Otázkou jsou samozřejmě fixní náklady – ceny skutečně efektivních těžebních počítačů jsou srovnatelné s velkokapacitními bateriemi.
+
+Podobný problém jako drobní solárníci řeší i celé státy. Například Island má díky geotermálním zdrojům a malé populaci přebytek levné a čisté energie. Tu by rád vyvážel za evropské či americké ceny, což mu ale komplikuje existence Atlantiku. Takže doposud ji musel Island vyvážet v podobě zpracovaného hliníku, ale třeba i zeleniny vypěstované ve vytápěných sklenících.
+
+Není proto divu, že i Island používá kryptoměny jako gigantickou baterii a transoceánský distribuční systém elektřiny. Přesněji řečeno, díky neviditelné ruce trhu si těžaři našli Island sami, ale výsledek je stejný. Země může využívat přebytečných zdrojů a prodávat je za ceny, které se už řádově blíží cenám elektřiny v Evropě a USA. Pro Island je to tak výhodné, že těžaři kryptoměn již prý spotřebují víc elektřiny než všechny islandské domácnosti dohromady.
+
+Ale proč píšou centrální bankéři o bateriích? Protože je to nyní možná nejlepší užitečné použití kryptoměn, když odmyslíme jejich statut jako platidel. Upřímně, kryptoměny v podstatě nejsou měny. Nesplňují zatím ani jedno ze tří kritérií, která definují rozumné peníze. Neslouží jako uchovatel hodnoty, když jejich hodnota může kolísat o desítky procent denně. Neslouží jako zúčtovací jednotka, když téměř všichni držitelé kryptoměn svá portfolia přepočítávají zpět do konvenčních měn. A neslouží příliš jako prostředek směny, když je přijímá jen zlomek obchodníků a placení jimi je zatím spíše drahé a pomalé.
+
+Kryptoměny byly vytvořeny jako „digitální komodity“ a musíme s nimi tedy zacházet jako s tradičními komoditami: zemním plynem, cínem, nebo kukuřicí. Některé jsou na komodity přímo navázané: například bilur, který je spojen s cenou ropy. Většinou se ale jedná o kousky kódu, které mají pro některé lidi sentimentální, ideologickou či sběratelskou hodnotu. Inu, fajn.
+
+Řada takových sběratelů kryptoměny přirovnává k archivnímu vínu, obrazům starých mistrů, nebo vzácným poštovním známkám. Bohužel, jak už to u digitálních věcí bývá, jejich množství není úplně zafixované – na rozdíl třeba právě od obrazů starých mistrů. Nejen, že se kdykoli může objevit nová kryptoměna, která ty dosavadní technicky překoná a učiní bezcennými. Ale i množství jedné kryptoměny může náhle vzrůst, jak ukázalo vloni rozdělení bitcoinu na dvě části (tzv. „fork“ mezi bitcoinem a bitcoinem cash) či nedávné oddělení litecoin a litecoin cash.
+
+Jak se ke kryptoměnám staví centrální banky a regulátoři? Jedna část populace na ně naléhá, aby kryptoměny regulovaly nebo rovnou zakázaly. Druhá část by naopak chtěla, aby centrální banky kryptoměnám pomohly. Což je trochu paradoxní, protože tato druhá skupina čítá i ty, kteří jinak odmítají jakékoli zásahy státních institucí. Ale vážně, proč by měla centrální banka regulovat trh s bateriemi, poštovními známkami nebo kukuřicí? Věříme v liberální přístup ke kryptoměnám: aktivně nepomáhat, ale ani neškodit.
+
+---
+
 ## Schovejme auta pod zemí
 
 *Lilie, březen 2018. Tomáš Havránek.*
@@ -7285,5 +7321,17 @@ Existuje mýtus, že absolvent bez praxe nemá na pracovním trhu šanci. To mo�
 Jak vidíte svoji budoucnost – na IES, na CERGE-EI, ve světě?
 
 To ukáže čas a příležitosti, které se naskytnou jak mě, tak manželovi. Příštích pár let se ale zřejmě stěhovat nebudeme, kvůli dětem.
+
+---
+
+## Nositelé ceny rektora prozrazují své budoucí kroky
+
+*iForum (Univerzita Karlova), 11. ledna 2010. Tomáš Havránek.*
+
+Zdroj: https://iforum.cuni.cz/IFORUM-8454.html
+
+Jaké budou Vaše další kroky do budoucna (budete dále studovat, budete se oboru, za nějž jste cenu získali, dále věnovat)?
+
+Nyní jsem studentem doktorského programu ekonomie na Institutu ekonomických studií Fakulty sociálních věd a zároveň pracuji v Odboru ekonomického výzkumu a finanční stability ČNB, takže se vystudovanému oboru věnuji naplno a ve svém současném výzkumu na oceněnou diplomovou práci navazuji. Zabývám se zejména meta-analýzou a publikační selektivitou, což jsou koncepty, které si ekonomie vypůjčila z medicíny. Ekonomové (a výzkumníci obecně) často zveřejňují především výsledky, jež jsou v souladu s převažující teorií a/nebo vycházejí „pěkně“ (tedy statisticky signifikantně), neboť takové závěry se snáze publikují. Ukazuje se, že tento výběr silně zkresluje odhad skutečnosti a může mít závažný dopad například na politické rozhodování. V posledních několika letech byly představeny metody, jak je možno toto zkreslení odfiltrovat, a těmto metodám a jejich aplikaci se věnuji.
 
 ---
