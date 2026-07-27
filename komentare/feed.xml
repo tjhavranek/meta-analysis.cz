@@ -232,6 +232,16 @@ https://lnkd.in/d_BciGAd</p><p>Two practical points I would emphasize (my person
 https://lnkd.in/d63DFbPz</p><p>2️⃣ These guidelines intentionally do not recommend any particular methodology. We do so in our 2024 method guidelines (https://lnkd.in/dPcDR7Gr). Brief update: I think the baseline meta-analysis technique is now Robust Bayesian Meta-Analysis (RoBMA) by František Bartoš, Maximilian Maier, and Eric-Jan Wagenmakers -- a principled way to average over various bias-correction methods. But these methods don&#x27;t address p-hacking, so RoBMA should be complemented with MAIVE (easy to apply via https://easymeta.org) and RTMA (Maya Mathur).</p><p>The updated reporting guidelines were led by Nikolai Cook and co-authored with František Bartoš, Pedro Bom, Sebastian Gechert, Klára Kantová, Jerome Geyer-Klingeberg, Dr.-Ing., Tomas Havranek, Martina Lušková, Matej Opatrny, Franz Prante, Heiko Rachinger, and Tom Stanley.</p>]]></content:encoded>
     </item>
     <item>
+      <title>Florbalisté prvního stupně sahali po medaili z Dní florbalu</title>
+      <link>https://meta-analysis.cz/komentare/zamecka-dny-florbalu-2026/</link>
+      <guid isPermaLink="true">https://meta-analysis.cz/komentare/zamecka-dny-florbalu-2026/</guid>
+      <pubDate>Mon, 11 May 2026 00:00:00 +0000</pubDate>
+      <category>Litomyšlské sloupky</category>
+      <dc:language>cs</dc:language>
+      <source url="https://www.1zslitomysl.cz/skolni-uspechy/">ZŠ Litomyšl, Zámecká</source>
+      <content:encoded><![CDATA[<p>Na turnaj v rámci Dní florbalu 11. května se přihlásilo celkem 20 špičkových týmů z celého Pardubického kraje. V naší skupině jsme skončili druzí, když jsme porazili Ústí nad Orlicí 4:0, Opatov 8:0 a Žamberk 3:0. Nad naše síly byla pouze ZŠ Litomyšl, T. G. Masaryka, které jsme podlehli 0:2. Postoupili jsme tedy do osmifinále, ve kterém jsme přemohli Jablonné 3:0. S našimi medailovými nadějemi to vypadalo velmi dobře až do poslední minuty čtvrtfinále: Proti Chocni jsme otočili z 0:1 na 2:1. V poslední minutě jsme ale dostali dva smolné góly a na mety vyšší už nedosáhli. O kvalitě turnaje svědčí i fakt, že ve čtvrtfinále vypadl i nedávný vítěz krajského kola a 8. nejlepší tým celého republikového finále, ZŠ Litomyšl, TGM. Celkově byla letošního florbalová sezóna prvního stupně úspěšná, neboť tým ve složení Adam Ferko, Daniel Drábek, Adam Dospiva, Matouš Halamka, Filip Havránek, Kryštof Klejch, Matěj Kopecký a Anna Vanžurová přinesl ze 3 turnajů hned dvakrát stříbrné medaile.</p>]]></content:encoded>
+    </item>
+    <item>
       <title>Nepořádek u autobusového nádraží</title>
       <link>https://meta-analysis.cz/komentare/litomysl-neporadek-u-autobusoveho-nadrazi/</link>
       <guid isPermaLink="true">https://meta-analysis.cz/komentare/litomysl-neporadek-u-autobusoveho-nadrazi/</guid>
@@ -352,6 +362,16 @@ https://lnkd.in/dME6se-W</p>]]></content:encoded>
       <dc:language>en</dc:language>
       <source url="https://www.linkedin.com/feed/update/urn%3Ali%3Ashare%3A7436800791929151488">LinkedIn</source>
       <content:encoded><![CDATA[<p>Meta-analyses should try to correct not just for publication bias, but also for p-hacking.</p><p>Some estimates are more likely to be reported than others, so every good summary of research should correct for this publication bias. In case you&#x27;re wondering — yes, this can be done, there are dozens of methods and decades of research on this. There is even a great way to put these different correction techniques together: see RoBMA by František Bartoš and colleagues.</p><p>The problem is that these techniques assume that the reported estimates are individually unbiased. This is a strong assumption, as researchers can tweak models (consciously or unconsciously) to get more &quot;sensible&quot; results. This is called p-hacking. Most of us do it.</p><p>In our recent Nature Communications paper we show that under some forms of p-hacking, classical models correcting for publication bias can actually be more biased than a simple average of published estimates.</p><p>As far as I know, there are only two meta-analysis corrections for (some forms of) p-hacking: our MAIVE (from the Nature Comms paper) and RTMA by Maya Mathur. If you know of more, please let me know in the comments!</p><p>If you want to see MAIVE and RTMA applied, take a look at our meta-analysis of the beauty premium. Spoiler: apart from the sex industry, beauty doesn&#x27;t matter much in the labor market.</p>]]></content:encoded>
+    </item>
+    <item>
+      <title>Florbalisté prvního stupně stříbrní v oblastním kole</title>
+      <link>https://meta-analysis.cz/komentare/zamecka-stribro-oblastni-kolo/</link>
+      <guid isPermaLink="true">https://meta-analysis.cz/komentare/zamecka-stribro-oblastni-kolo/</guid>
+      <pubDate>Thu, 26 Feb 2026 00:00:00 +0000</pubDate>
+      <category>Litomyšlské sloupky</category>
+      <dc:language>cs</dc:language>
+      <source url="https://www.1zslitomysl.cz/skolni-uspechy/">ZŠ Litomyšl, Zámecká</source>
+      <content:encoded><![CDATA[<p>Ve čtvrtek 26. února se školní florbalové týmy z Litomyšle a okolí utkaly na turnaji v Dolním Újezdě. Turnaj jsme zahájili soubojem proti pozdějším bronzovým medailistům z Cerekvice, které jsme porazili 3:0 i díky skvělému výkonu Adama Dospivy v bráně. S dalším adeptem na medaili, Dolním Újezdem, jsme ve strhujícím zápase při skvělé atmosféře remizovali 4:4 díky našemu vyrovnání v posledních vteřinách. Následně jsme si bez větších potíží poradili se Sebranicemi 5:0 a čekalo nás finále proti ZŠ Litomyšl, U Školek. V něm se od nás odvrátilo štěstí, projevila se únava z dlouhého turnaje a bezchybně hrajícímu soupeři jsme podlehli, což pro nás i tak znamenalo krásné druhé místo. Tým ZŠ Zámecká skvěle reprezentovali Adam Ferko, Daniel Drábek, Adam Dospiva, Matouš Halamka, Filip Havránek, Kryštof Klejch, Matěj Kopecký a Anna Vanžurová, jež obdržela cenu pro nejlepšího hráče turnaje.</p>]]></content:encoded>
     </item>
     <item>
       <title>Mladí florbalisté zlatí na největším evropském turnaji!</title>
@@ -599,6 +619,16 @@ MAIVE helps address this.</p><p>You can now install MAIVE directly in R:</p><p>i
  🖥️ https://www.easymeta.org
 More details:
  📦 CRAN package: https://lnkd.in/dQ7XjiAq</p><p> 📄 Nature Communications article: https://lnkd.in/eFfrP6H2</p><p> 📰 Blog overview: https://lnkd.in/ejkgbU6X</p><p>A big thank-you to Petr Čala, who built the MAIVE web app and prepared the CRAN release. His work makes high-quality meta-analysis methods accessible.</p><p>#metaanalysis #OpenScience #researchmethods #RStats</p>]]></content:encoded>
+    </item>
+    <item>
+      <title>Florbalisté prvního stupně vezou stříbro z okresního kola!</title>
+      <link>https://meta-analysis.cz/komentare/zamecka-stribro-okresni-kolo/</link>
+      <guid isPermaLink="true">https://meta-analysis.cz/komentare/zamecka-stribro-okresni-kolo/</guid>
+      <pubDate>Tue, 25 Nov 2025 00:00:00 +0000</pubDate>
+      <category>Litomyšlské sloupky</category>
+      <dc:language>cs</dc:language>
+      <source url="https://www.1zslitomysl.cz/skolni-uspechy/">ZŠ Litomyšl, Zámecká</source>
+      <content:encoded><![CDATA[<p>V úterý 25. listopadu se nejlepší školní florbalové týmy okresu utkaly na turnaji ve Svitavách. Začali jsme přátelským duelem s modrou litomyšlskou školou, který jsme vyhráli 4:1. Následoval zápas ve skupině proti Poličce, v němž jsme po velkém boji zvítězili 3:2. Následně jsme porazili Svitavy 3:0 a zajistili jsme si tak první místo ve skupině. Ve čtvrtfinále jsme další svitavskou školu přehráli přesvědčivě 5:1. Zvládli jsme též semifinálovou odvetu proti Poličce, a to poměrem 7:4. Naše jízda turnajem skončila až ve finále, kde jsme napodruhé už nevyzráli na modrou školu a v dramatickém zápase podlehli 2:4. Vezeme tak domů cenné stříbrné medaile. Tým ZŠ Zámecká skvěle reprezentovali Adam Ferko, Daniel Drábek, Anna Vanžurová, Filip Havránek, Matouš Halamka, Matěj Kopecký a Kryštof Klejch, jenž obdržel cenu za nejlepšího hráče turnaje.</p>]]></content:encoded>
     </item>
     <item>
       <title>Highlights from the 2025 MAER-Net Colloquium in Ottawa</title>
@@ -1151,6 +1181,16 @@ More details:
 <p>Výsledné stříbro a bronz přesto ukazují na dominanci litomyšlského florbalu v Pardubickém kraji hráčů prvního stupně. Zvláštní individuální ocenění zaslouží Kryštof Slavík, který se zúčastnil obou turnajů a v obou ovládl brankářské statistiky.</p>]]></content:encoded>
     </item>
     <item>
+      <title>Bronz pro první stupeň ze Dnů florbalu</title>
+      <link>https://meta-analysis.cz/komentare/zamecka-bronz-dny-florbalu/</link>
+      <guid isPermaLink="true">https://meta-analysis.cz/komentare/zamecka-bronz-dny-florbalu/</guid>
+      <pubDate>Mon, 19 May 2025 00:00:00 +0000</pubDate>
+      <category>Litomyšlské sloupky</category>
+      <dc:language>cs</dc:language>
+      <source url="https://www.1zslitomysl.cz/skolni-uspechy/">ZŠ Litomyšl, Zámecká</source>
+      <content:encoded><![CDATA[<p>Tým ve složení David Šlégr, Jáchym Štarman, Vendelín Vaňásek, Jáchym Vanžura, Jan Abramovič, Ondřej Nešpor, Daniel Havránek a Filip Havránek vybojoval skvělé 3. místo v konkurenci 18 týmů Pardubického kraje. Turnaj v České Třebové proběhl v pondělí 19. května v rámci Dnů florbalu. Základní skupinu jsme ovládli jednoznačně s celkovým skóre 33:2, když jsme porazili postupně Ústí, Brandýs, Choceň, Dolní Čermnou a Jablonné. Ve čtvrtfinále jsme si poradili s Opatovem také bez potíží 6:0. Ve finálové skupině se od nás však odvrátilo štěstí, kvůli smolnému rozlosování jsme museli hrát 3 zápasy bez přestávky a přes značnou střeleckou a územní převahu naši unavení hráči podlehli Moravské Třebové 1:3 a ZŠ Litomyšl, T. G. Masaryka 1:2. Výsledkem byly cenné bronzové medaile. Po celý turnaj náš tým zdobila útočná kombinační hra a naše zápasy probíhaly ve skvělé atmosféře, kterou zajistily vzájemně si fandící litomyšlské týmy.</p>]]></content:encoded>
+    </item>
+    <item>
       <title>Litomyšlský florbal na jaře</title>
       <link>https://meta-analysis.cz/komentare/litomysl-florbal-2025/</link>
       <guid isPermaLink="true">https://meta-analysis.cz/komentare/litomysl-florbal-2025/</guid>
@@ -1322,6 +1362,16 @@ More details:
 <p>Ve florbale se hrají též školní soutěže, kde se tradičně daří litomyšlským školám. Letos v okresním kole získal tým druhého stupně ZŠ Zámecká stříbro, tým prvního stupně bronz. Zvláště dramatický byl boj o bronz, kde kluci ze Zámecké prohrávali již 0:3, ale dokázali zápas vyrovnat a rozhodnout v nájezdech. Dobře se dařilo i týmu ZŠ TGM, který byl na turnaji nejmladší a příští rok bude největším favoritem.</p>
 <p>Rád bych tímto poděkoval všem trenérům, kteří se v Litomyšli florbalu věnují. Jmenovitě (neb trénují moje syny) chci poděkovat Leoši Dvořákovi, Tomáši Doubkovi a Danu Novotnému. Jejich tréninky mladších a starších žáků mají velkou úroveň, což je pak vidět na turnajích, a hlavně na dobrém kolektivu, který se v Litomyšli kolem florbalu podařilo vybudovat.</p>
 <p>S florbalem lze začít kdykoli během roku, nezávazně a v libovolném věku. Někdo začíná v 5 letech. Jsou i hráči, kteří naskočili až ve 13 a brzy se stali tahouny týmu. Stačí přijít na trénink, podívat se a vyzkoušet si hru. Čas tréninků je k dispozici v listopadové Lilii. Má-li člověk zájem a snaží se, není obvykle problém okusit již po několika týdnech reprezentační zápas v dresu Litomyšle.</p>]]></content:encoded>
+    </item>
+    <item>
+      <title>Zámecká bere bronz z okresního kola mladších florbalistů</title>
+      <link>https://meta-analysis.cz/komentare/zamecka-bronz-okresni-kolo/</link>
+      <guid isPermaLink="true">https://meta-analysis.cz/komentare/zamecka-bronz-okresni-kolo/</guid>
+      <pubDate>Tue, 12 Nov 2024 00:00:00 +0000</pubDate>
+      <category>Litomyšlské sloupky</category>
+      <dc:language>cs</dc:language>
+      <source url="https://www.1zslitomysl.cz/skolni-uspechy/">ZŠ Litomyšl, Zámecká</source>
+      <content:encoded><![CDATA[<p>Tým florbalistů prvního stupně ve složení Matěj Pohorský, Ondřej Nešpor, Daniel Havránek, Filip Havránek, Jáchym Vanžura, Vendelín Vaňásek a Jáchym Štarman vybojoval v úterý 12. listopadu ve Svitavách parádní třetí místo v konkurenci 12 nejlepších týmů okresu. Začátek byl přitom krušný, když jsme první zápas s Moravskou Třebovou ztratili 1:4 a v polovině dalšího utkání s Jevíčkem prohrávali 0:2. Pak ale kluci přidali na důrazu, zápas s Jevíčkem otočili na 4:2 a po vítězstvích nad dvěma svitavskými školami v poměru 10:0 a 2:1 postoupili do semifinále. V něm jsme měli celý zápas velikou převahu nad týmem ze Starého Města, ale florbal se hraje na góly -- my vstřelili jen dva a rozhodlo přísně odpískané trestné střílení proti nám v poslední minutě. V boji o bronz nás znovu čekala silná a agresivně hrající Moravská Třebová. Naši zklamaní a unavení hráči od začátku nestíhali, brzy jsme jsme prohrávali 0:3 a vypadalo to bledě. Pak ale kluci ze Zámecké ukázali bojovnost a týmového ducha. Postupně snižovali a zápas vyrovnal Dan z trestného střílení milimetrovou střelou v posledních vteřinách, ačkoli přitom kulhal po předchozím faulu na něj. Zápas tím dospěl do nájezdů, které rozhodl opět Dan hned třemi góly v bouřlivé atmosféře zaplněné svitavské arény. Nevídaný obrat nad možná nejsilnějším týmem turnaje zajistil našim hráčům zasloužené medaile a pohár. Výborně hráli všichni kluci, v bráně tradičně jistý Matěj, spolehlivý univerzál Ondra, produktivní útočník Fíla. Pro Vendelína a oba Jáchymy to byl první florbalový turnaj, který zvládli parádně a neztratili by se ani v reprezentačním týmu Litomyšle.</p>]]></content:encoded>
     </item>
     <item>
       <title>Florbalisté mladší žáci poprvé na velkém hřišti</title>

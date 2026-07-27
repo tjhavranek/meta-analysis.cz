@@ -2,7 +2,7 @@
 
 > Publicistika Tomáše Havránka a Zuzany Havránkové: komentáře pro celostátní média, sloupky pro litomyšlskou Lilii, rozhovory a kratší příspěvky ze sítí. Texty jsou zde archivovány v plném znění s odkazem na původní vydání.
 
-Publicistika: 192 položek a 23 kratších příspěvků ze sítí (215 záznamů celkem), 2014–2026. Plné znění každého textu je na uvedené adrese; zdrojový Markdown položek je v /komentare/src/ (příspěvky ze sítí zdrojový soubor nemají).
+Publicistika: 197 položek a 23 kratších příspěvků ze sítí (220 záznamů celkem), 2014–2026. Plné znění každého textu je na uvedené adrese; zdrojový Markdown položek je v /komentare/src/ (příspěvky ze sítí zdrojový soubor nemají).
 
 ## Celostátní komentáře
 
@@ -89,19 +89,24 @@ Sloupky pro Lilii, měsíčník města Litomyšle — doprava, zeleň, školstv�
 - [Poděkování za péči o růže u fary](https://meta-analysis.cz/komentare/litomysl-ruze-u-fary/) — Lilie, červenec 2026
 - [Miroslav Brýdl na vrcholu sil](https://meta-analysis.cz/komentare/litomysl-miroslav-brydl/) — Lilie, červen 2026
 - [Budou mít naše vnoučata co pít?](https://meta-analysis.cz/komentare/litomysl-voda/) — Lilie, červen 2026
+- [Florbalisté prvního stupně sahali po medaili z Dní florbalu](https://meta-analysis.cz/komentare/zamecka-dny-florbalu-2026/) — ZŠ Litomyšl, Zámecká, 11. května 2026
 - [Nepořádek u autobusového nádraží](https://meta-analysis.cz/komentare/litomysl-neporadek-u-autobusoveho-nadrazi/) — Lilie, květen 2026
+- [Florbalisté prvního stupně stříbrní v oblastním kole](https://meta-analysis.cz/komentare/zamecka-stribro-oblastni-kolo/) — ZŠ Litomyšl, Zámecká, 26. února 2026
 - [Mladí florbalisté zlatí na největším evropském turnaji!](https://meta-analysis.cz/komentare/litomysl-florbaliste-zlati-na-turnaji/) — Lilie, únor 2026
+- [Florbalisté prvního stupně vezou stříbro z okresního kola!](https://meta-analysis.cz/komentare/zamecka-stribro-okresni-kolo/) — ZŠ Litomyšl, Zámecká, 25. listopadu 2025
 - [Podpořme mladé florbalisty v neděli 12. října](https://meta-analysis.cz/komentare/litomysl-podporme-mlade-florbalisty/) — Lilie, říjen 2025
 - [Dálnice začne sloužit podle plánu, obchvat přivaděčů v nedohlednu](https://meta-analysis.cz/komentare/litomysl-privadece-obchvat/) — Lilie, září 2025
 - [Srovnání základních škol v Litomyšli a na Novém Zélandu](https://meta-analysis.cz/komentare/litomysl-srovnani-skol-litomysl-novy-zeland/) — Lilie, červenec 2025
 - [Pátek pro planetu ve školní jídelně (pokračování)](https://meta-analysis.cz/komentare/litomysl-skolni-jidelny/) — Lilie, červen 2025
 - [Mladí florbalisté úspěšní na mezinárodních i školních soutěžích](https://meta-analysis.cz/komentare/litomysl-florbaliste-mezinarodni-i-skolni/) — Lilie, červen 2025
+- [Bronz pro první stupeň ze Dnů florbalu](https://meta-analysis.cz/komentare/zamecka-bronz-dny-florbalu/) — ZŠ Litomyšl, Zámecká, 19. května 2025
 - [Litomyšlský florbal na jaře](https://meta-analysis.cz/komentare/litomysl-florbal-2025/) — Lilie, květen 2025
 - [„Pátek pro planetu“ ve školní jídelně planetě nepomůže a dětem uškodí](https://meta-analysis.cz/komentare/litomysl-patek-pro-planetu-tomas/) — Lilie, duben 2025
 - [„Pátek pro planetu“ ve školní jídelně planetě nepomůže a dětem uškodí](https://meta-analysis.cz/komentare/litomysl-patek-pro-planetu-zuzana/) — Lilie, duben 2025
 - [Mladí florbalisté Litomyšle úspěšní na největším středoevropském turnaji](https://meta-analysis.cz/komentare/litomysl-prague-floorball-cup/) — Lilie, únor 2025
 - [Ohlédnutí za nejúspěšnějším rokem florbalu v Litomyšli](https://meta-analysis.cz/komentare/litomysl-ohlednuti-za-rokem-florbalu/) — Lilie, leden 2025
 - [Florbalová sezóna nabírá na obrátkách](https://meta-analysis.cz/komentare/litomysl-florbalova-sezona/) — Lilie, prosinec 2024
+- [Zámecká bere bronz z okresního kola mladších florbalistů](https://meta-analysis.cz/komentare/zamecka-bronz-okresni-kolo/) — ZŠ Litomyšl, Zámecká, 12. listopadu 2024
 - [Florbalisté mladší žáci poprvé na velkém hřišti](https://meta-analysis.cz/komentare/litomysl-mladsi-zaci-velke-hriste/) — Lilie, listopad 2024
 - [Poděkování za obnovu židovského hřbitova: symbol naděje a úcty k minulosti](https://meta-analysis.cz/komentare/litomysl-zidovsky-hrbitov/) — Lilie, září 2024
 - [Mladí florbalisté mezi nejlepšími v republice](https://meta-analysis.cz/komentare/litomysl-mladi-florbaliste/) — Lilie, červen 2024

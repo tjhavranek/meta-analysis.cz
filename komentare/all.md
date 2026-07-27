@@ -2,7 +2,7 @@
 
 Publicistika Tomáše Havránka a Zuzany Havránkové: komentáře pro celostátní média, sloupky pro litomyšlskou Lilii, rozhovory a kratší příspěvky ze sítí. Texty jsou zde archivovány v plném znění s odkazem na původní vydání.
 
-Tento soubor obsahuje plné znění všech textových položek (176 z celkem 192). Zbývající položky jsou audio a video, které archiv vede pouze odkazem, a v tomto souboru nejsou; jejich metadata najdete v index.json a corpus.jsonl. Samostatně jsou vedeny kratší příspěvky ze sociálních sítí (23), psané převážně anglicky. Mají vlastní stránku https://meta-analysis.cz/komentare/posts/ a v index.json i corpus.jsonl jsou označeny jako genre=social_post.
+Tento soubor obsahuje plné znění všech textových položek (181 z celkem 197). Zbývající položky jsou audio a video, které archiv vede pouze odkazem, a v tomto souboru nejsou; jejich metadata najdete v index.json a corpus.jsonl. Samostatně jsou vedeny kratší příspěvky ze sociálních sítí (23), psané převážně anglicky. Mají vlastní stránku https://meta-analysis.cz/komentare/posts/ a v index.json i corpus.jsonl jsou označeny jako genre=social_post.
 
 ---
 
@@ -197,6 +197,16 @@ Try it on something you are working on and tell us how we could improve it!
 
 ---
 
+## Florbalisté prvního stupně sahali po medaili z Dní florbalu
+
+*ZŠ Litomyšl, Zámecká, 11. května 2026. Tomáš Havránek.*
+
+Zdroj: https://www.1zslitomysl.cz/skolni-uspechy/
+
+Na turnaj v rámci Dní florbalu 11. května se přihlásilo celkem 20 špičkových týmů z celého Pardubického kraje. V naší skupině jsme skončili druzí, když jsme porazili Ústí nad Orlicí 4:0, Opatov 8:0 a Žamberk 3:0. Nad naše síly byla pouze ZŠ Litomyšl, T. G. Masaryka, které jsme podlehli 0:2. Postoupili jsme tedy do osmifinále, ve kterém jsme přemohli Jablonné 3:0. S našimi medailovými nadějemi to vypadalo velmi dobře až do poslední minuty čtvrtfinále: Proti Chocni jsme otočili z 0:1 na 2:1. V poslední minutě jsme ale dostali dva smolné góly a na mety vyšší už nedosáhli. O kvalitě turnaje svědčí i fakt, že ve čtvrtfinále vypadl i nedávný vítěz krajského kola a 8. nejlepší tým celého republikového finále, ZŠ Litomyšl, TGM. Celkově byla letošního florbalová sezóna prvního stupně úspěšná, neboť tým ve složení Adam Ferko, Daniel Drábek, Adam Dospiva, Matouš Halamka, Filip Havránek, Kryštof Klejch, Matěj Kopecký a Anna Vanžurová přinesl ze 3 turnajů hned dvakrát stříbrné medaile.
+
+---
+
 ## Nepořádek u autobusového nádraží
 
 *Lilie, květen 2026. Tomáš Havránek.*
@@ -240,6 +250,16 @@ Může to fungovat jen proto, že japonské domácnosti jsou ochotny masivně pr
 Sami už vidíte paralely s českou situací: domácnosti i u nás „spoří" masivně za záporný reálný úrok v bankách a stát drží cca 50 % HDP aktiv v zahraničí skrze rezervy České národní banky. Čtvrtina těchto aktiv už je správně investována na výnos (tedy do akcií), i když v porovnání s Japonskem to děláme mimořádně pomalu a opatrně. Podobně jako v Japonsku i u nás potřebujeme naučit domácnosti, aby do akcií investovaly samy.
 
 Osobně obdivuji odvahu, s jakou Japonci v roce 2012 nabrali kalkulované riziko, aby oddálili rozpad cenové a finanční stability. Přesně tohle naše ČNB odmítla udělat v roce 2017. Ale japonské zapákování je moc i na mě: už nejde, aby Bank of Japan v budoucnu výrazněji zvýšila úroky. Vypadá to jako sashimi zdarma, ale i Japonci budou muset nakonec zaplatit účty: inflací a finanční represí.
+
+---
+
+## Florbalisté prvního stupně stříbrní v oblastním kole
+
+*ZŠ Litomyšl, Zámecká, 26. února 2026. Tomáš Havránek.*
+
+Zdroj: https://www.1zslitomysl.cz/skolni-uspechy/
+
+Ve čtvrtek 26. února se školní florbalové týmy z Litomyšle a okolí utkaly na turnaji v Dolním Újezdě. Turnaj jsme zahájili soubojem proti pozdějším bronzovým medailistům z Cerekvice, které jsme porazili 3:0 i díky skvělému výkonu Adama Dospivy v bráně. S dalším adeptem na medaili, Dolním Újezdem, jsme ve strhujícím zápase při skvělé atmosféře remizovali 4:4 díky našemu vyrovnání v posledních vteřinách. Následně jsme si bez větších potíží poradili se Sebranicemi 5:0 a čekalo nás finále proti ZŠ Litomyšl, U Školek. V něm se od nás odvrátilo štěstí, projevila se únava z dlouhého turnaje a bezchybně hrajícímu soupeři jsme podlehli, což pro nás i tak znamenalo krásné druhé místo. Tým ZŠ Zámecká skvěle reprezentovali Adam Ferko, Daniel Drábek, Adam Dospiva, Matouš Halamka, Filip Havránek, Kryštof Klejch, Matěj Kopecký a Anna Vanžurová, jež obdržela cenu pro nejlepšího hráče turnaje.
 
 ---
 
@@ -501,6 +521,16 @@ MAIVE is also available in the [EasyMeta.org](https://www.easymeta.org) web app,
 👉 Nature Communications article: [https://www.nature.com/articles/s41467-025-63261-0](https://www.nature.com/articles/s41467-025-63261-0)
 
 Many thanks to **Petr Čala** for preparing the CRAN release and building the EasyMeta interface.
+
+---
+
+## Florbalisté prvního stupně vezou stříbro z okresního kola!
+
+*ZŠ Litomyšl, Zámecká, 25. listopadu 2025. Tomáš Havránek.*
+
+Zdroj: https://www.1zslitomysl.cz/skolni-uspechy/
+
+V úterý 25. listopadu se nejlepší školní florbalové týmy okresu utkaly na turnaji ve Svitavách. Začali jsme přátelským duelem s modrou litomyšlskou školou, který jsme vyhráli 4:1. Následoval zápas ve skupině proti Poličce, v němž jsme po velkém boji zvítězili 3:2. Následně jsme porazili Svitavy 3:0 a zajistili jsme si tak první místo ve skupině. Ve čtvrtfinále jsme další svitavskou školu přehráli přesvědčivě 5:1. Zvládli jsme též semifinálovou odvetu proti Poličce, a to poměrem 7:4. Naše jízda turnajem skončila až ve finále, kde jsme napodruhé už nevyzráli na modrou školu a v dramatickém zápase podlehli 2:4. Vezeme tak domů cenné stříbrné medaile. Tým ZŠ Zámecká skvěle reprezentovali Adam Ferko, Daniel Drábek, Anna Vanžurová, Filip Havránek, Matouš Halamka, Matěj Kopecký a Kryštof Klejch, jenž obdržel cenu za nejlepšího hráče turnaje.
 
 ---
 
@@ -1380,6 +1410,16 @@ Výsledné stříbro a bronz přesto ukazují na dominanci litomyšlského florb
 
 ---
 
+## Bronz pro první stupeň ze Dnů florbalu
+
+*ZŠ Litomyšl, Zámecká, 19. května 2025. Tomáš Havránek.*
+
+Zdroj: https://www.1zslitomysl.cz/skolni-uspechy/
+
+Tým ve složení David Šlégr, Jáchym Štarman, Vendelín Vaňásek, Jáchym Vanžura, Jan Abramovič, Ondřej Nešpor, Daniel Havránek a Filip Havránek vybojoval skvělé 3. místo v konkurenci 18 týmů Pardubického kraje. Turnaj v České Třebové proběhl v pondělí 19. května v rámci Dnů florbalu. Základní skupinu jsme ovládli jednoznačně s celkovým skóre 33:2, když jsme porazili postupně Ústí, Brandýs, Choceň, Dolní Čermnou a Jablonné. Ve čtvrtfinále jsme si poradili s Opatovem také bez potíží 6:0. Ve finálové skupině se od nás však odvrátilo štěstí, kvůli smolnému rozlosování jsme museli hrát 3 zápasy bez přestávky a přes značnou střeleckou a územní převahu naši unavení hráči podlehli Moravské Třebové 1:3 a ZŠ Litomyšl, T. G. Masaryka 1:2. Výsledkem byly cenné bronzové medaile. Po celý turnaj náš tým zdobila útočná kombinační hra a naše zápasy probíhaly ve skvělé atmosféře, kterou zajistily vzájemně si fandící litomyšlské týmy.
+
+---
+
 ## Litomyšlský florbal na jaře
 
 *Lilie, květen 2025. Tomáš Havránek.*
@@ -1620,6 +1660,16 @@ Ve florbale se hrají též školní soutěže, kde se tradičně daří litomy�
 Rád bych tímto poděkoval všem trenérům, kteří se v Litomyšli florbalu věnují. Jmenovitě (neb trénují moje syny) chci poděkovat Leoši Dvořákovi, Tomáši Doubkovi a Danu Novotnému. Jejich tréninky mladších a starších žáků mají velkou úroveň, což je pak vidět na turnajích, a hlavně na dobrém kolektivu, který se v Litomyšli kolem florbalu podařilo vybudovat.
 
 S florbalem lze začít kdykoli během roku, nezávazně a v libovolném věku. Někdo začíná v 5 letech. Jsou i hráči, kteří naskočili až ve 13 a brzy se stali tahouny týmu. Stačí přijít na trénink, podívat se a vyzkoušet si hru. Čas tréninků je k dispozici v listopadové Lilii. Má-li člověk zájem a snaží se, není obvykle problém okusit již po několika týdnech reprezentační zápas v dresu Litomyšle.
+
+---
+
+## Zámecká bere bronz z okresního kola mladších florbalistů
+
+*ZŠ Litomyšl, Zámecká, 12. listopadu 2024. Tomáš Havránek.*
+
+Zdroj: https://www.1zslitomysl.cz/skolni-uspechy/
+
+Tým florbalistů prvního stupně ve složení Matěj Pohorský, Ondřej Nešpor, Daniel Havránek, Filip Havránek, Jáchym Vanžura, Vendelín Vaňásek a Jáchym Štarman vybojoval v úterý 12. listopadu ve Svitavách parádní třetí místo v konkurenci 12 nejlepších týmů okresu. Začátek byl přitom krušný, když jsme první zápas s Moravskou Třebovou ztratili 1:4 a v polovině dalšího utkání s Jevíčkem prohrávali 0:2. Pak ale kluci přidali na důrazu, zápas s Jevíčkem otočili na 4:2 a po vítězstvích nad dvěma svitavskými školami v poměru 10:0 a 2:1 postoupili do semifinále. V něm jsme měli celý zápas velikou převahu nad týmem ze Starého Města, ale florbal se hraje na góly -- my vstřelili jen dva a rozhodlo přísně odpískané trestné střílení proti nám v poslední minutě. V boji o bronz nás znovu čekala silná a agresivně hrající Moravská Třebová. Naši zklamaní a unavení hráči od začátku nestíhali, brzy jsme jsme prohrávali 0:3 a vypadalo to bledě. Pak ale kluci ze Zámecké ukázali bojovnost a týmového ducha. Postupně snižovali a zápas vyrovnal Dan z trestného střílení milimetrovou střelou v posledních vteřinách, ačkoli přitom kulhal po předchozím faulu na něj. Zápas tím dospěl do nájezdů, které rozhodl opět Dan hned třemi góly v bouřlivé atmosféře zaplněné svitavské arény. Nevídaný obrat nad možná nejsilnějším týmem turnaje zajistil našim hráčům zasloužené medaile a pohár. Výborně hráli všichni kluci, v bráně tradičně jistý Matěj, spolehlivý univerzál Ondra, produktivní útočník Fíla. Pro Vendelína a oba Jáchymy to byl první florbalový turnaj, který zvládli parádně a neztratili by se ani v reprezentačním týmu Litomyšle.
 
 ---
 

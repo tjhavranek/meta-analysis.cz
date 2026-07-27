@@ -150,6 +150,7 @@ OUTLET_IN = {
     "Ekonomický magazín": "v Ekonomickém magazínu",
     "Ekonom": "v týdeníku Ekonom",
     "Věda na FSV UK (podcast De Facto)": "na webu Věda na FSV UK",
+    "ZŠ Litomyšl, Zámecká": "na webu ZŠ Litomyšl, Zámecká",
 }
 
 MEDIA_LABEL = {"video": "video", "audio": "audio"}
@@ -697,7 +698,11 @@ def write_item(a):
     else:
         where = OUTLET_IN.get(a["outlet"], f'v médiu {a["outlet"]}')
         prov = (f'Poprvé vyšlo {where} {cs_date(a["date"], a.get("date_precision"), "cs")}.'
-                + (f' <a href="{esc(a["url"])}" rel="external">Původní vydání</a>.'
+                # url_label matters when the link is not a permalink: the school's
+                # "Školní úspěchy" is a rolling feed, so "Původní vydání" would promise
+                # a page that is only about this item.
+                + (f' <a href="{esc(a["url"])}" rel="external">'
+                   f'{esc(a.get("url_label", "Původní vydání"))}</a>.'
                    if a.get("url") else ""))
     # be honest about which text this is: an author manuscript can differ from what
     # the magazine printed, and for at least one Lilie column it demonstrably does.
