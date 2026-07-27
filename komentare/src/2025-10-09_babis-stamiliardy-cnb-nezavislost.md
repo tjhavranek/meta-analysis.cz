@@ -27,7 +27,7 @@ Nějaké dluhopisy je ovšem dobré si nechat. V případě té nukleární vál
 
 Mnozí experti dokážou tvrdit dvě věci najednou: 1) Akcie jsou příliš rizikové, 2) Na ztrátě národní banky nezáleží. Pokud na ztrátě ČNB nezáleží, měla by investovat masivně nejen do akcií, ale i do rizikovějších aktiv typu krypta, nebo by za svá eura stavěla jaderné elektrárny v Turkmenistánu. Případný zisk je totiž zcela určitě reálný. Ztráta je ovšem reálná taky: nakonec ji musíme zaplatit buď inflací, nebo dotací ze státního rozpočtu, jak to nedávno udělalo Švédsko a Británie.
 
-Kolegové zprava mi namítají, že národní banky by neměly kupovat akcie, protože to pak už není kapitalismus. Akcie jsou podíly na vlastnictví firem a jejich zisku, no a ty firmy by neměl vlastnit stát. To je čistý postoj. Jenže ČNB je kapka v moři: když si koupíme zlomek procenta Google, kapitalismus neohrozíme. Státní bankrot skrze pádivou inflaci je přerozdělení majetku, které by i pro pravici mělo být horší než vydělat stamiliardy takhle „špinavým" způsobem.
+Kolegové zprava mi namítají, že národní banky by neměly kupovat akcie, protože to pak už není kapitalismus. Akcie jsou podíly na vlastnictví firem a jejich zisku, no a ty firmy by neměl vlastnit stát. To je čistý postoj. Jenže ČNB je kapka v moři: když si koupíme zlomek procenta Google, kapitalismus neohrozíme. Státní bankrot skrze pádivou inflaci je přerozdělení majetku, které by i pro pravici mělo být horší než vydělat stamiliardy takhle „špinavým“ způsobem.
 
 ## Proč se ČNB bojí zisku
 

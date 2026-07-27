@@ -17,7 +17,7 @@ image_credit: "Foto: pořadatelé turnaje"
 
 # Mladí florbalisté mezi nejlepšími v republice
 
-Po historickém postupu „áčka" florbalistů do Národní ligy se sluší připomenout i letošní úspěchy mládeže. Junioři končí ve 2. lize na parádním třetím místě. Dorostenci svoji 2. ligu dokonce vyhráli a brali bronz v nadstavbovém republikovém turnaji „final four".
+Po historickém postupu „áčka“ florbalistů do Národní ligy se sluší připomenout i letošní úspěchy mládeže. Junioři končí ve 2. lize na parádním třetím místě. Dorostenci svoji 2. ligu dokonce vyhráli a brali bronz v nadstavbovém republikovém turnaji „final four“.
 
 Starší žáci skončili třetí na prestižním náchodském turnaji, kde v semifinále padli jen těsně po nájezdech s Hradcem Králové. Smíšený tým mladších žáků a elévů v dresu ZŠ Zámecká ovládl kategorii prvního stupně školního turnaje v České Třebové, kde ve finále porazil Králíky.
 
@@ -27,4 +27,4 @@ Nejmladší hráči (přípravka) neměli ve východních Čechách konkurenci, 
 
 Přípravku prověřil až turnaj Prague Floorball Cup. Skupinu vyhráli, i když se pořádně nadřeli proti pražským týmům Chodov a Butchis. Ve finálové skupině už po boji nestačili na Bratislavu a Olomouc, a berou tak cenný bronz. Turnaj ukázal, že nejmladší florbalisté Litomyšle se mohou směle měřit se špičkovými týmy střední Evropy. Přidají-li ještě v tréninku, mohou se odvážit na nejtěžší světový turnaj dětí ve Švédsku. Kdo si chce florbal vyzkoušet, má šanci na zářijových trénincích. V Litomyšli dává dětem florbal příležitost utkávat se s týmy z celé republiky i zahraničí. Florbal hrají i holky: naše Lucinka v 6 letech odehrála hromadu turnajů a dala za Litomyšl i nějaké góly. S florbalem není problém začít i později, třeba až ve 12 letech.
 
-Florbalisté vyhlíží novou sezonu, v níž budou muži poprvé hrát národní ligu. Tam je snem litomyšlského fanouška vidět jednou hrát spolu v dresu s lilií před bouřící plnou halou naše nejslavnější odchovance: bratry Pakostovy. Dočkáme se? Ondřej se lvím podílem zasloužil o postup do „národky". Přemek, držitel bronzové medaile z mistrovství světa juniorů, byl v uplynulé sezoně kapitánem superligových Pardubic. Těšíme se ale také na další úspěchy naší mládeže od přípravky po juniory!
+Florbalisté vyhlíží novou sezonu, v níž budou muži poprvé hrát národní ligu. Tam je snem litomyšlského fanouška vidět jednou hrát spolu v dresu s lilií před bouřící plnou halou naše nejslavnější odchovance: bratry Pakostovy. Dočkáme se? Ondřej se lvím podílem zasloužil o postup do „národky“. Přemek, držitel bronzové medaile z mistrovství světa juniorů, byl v uplynulé sezoně kapitánem superligových Pardubic. Těšíme se ale také na další úspěchy naší mládeže od přípravky po juniory!

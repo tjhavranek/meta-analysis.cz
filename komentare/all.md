@@ -2,7 +2,7 @@
 
 Publicistika Tomáše Havránka a Zuzany Havránkové: komentáře pro celostátní média, sloupky pro litomyšlskou Lilii, rozhovory a kratší příspěvky ze sítí. Texty jsou zde archivovány v plném znění s odkazem na původní vydání.
 
-Tento soubor obsahuje plné znění všech textových položek (187 z celkem 205). Zbývající položky jsou audio a video, které archiv vede pouze odkazem, a v tomto souboru nejsou; jejich metadata najdete v index.json a corpus.jsonl. Samostatně jsou vedeny kratší příspěvky ze sociálních sítí (23), psané převážně anglicky. Mají vlastní stránku https://meta-analysis.cz/komentare/posts/ a v index.json i corpus.jsonl jsou označeny jako genre=social_post.
+Tento soubor obsahuje plné znění všech textových položek (188 z celkem 206). Zbývající položky jsou audio a video, které archiv vede pouze odkazem, a v tomto souboru nejsou; jejich metadata najdete v index.json a corpus.jsonl. Samostatně jsou vedeny kratší příspěvky ze sociálních sítí (23), psané převážně anglicky. Mají vlastní stránku https://meta-analysis.cz/komentare/posts/ a v index.json i corpus.jsonl jsou označeny jako genre=social_post.
 
 ---
 
@@ -247,7 +247,7 @@ Druhým problémem je riziko. Japonský dluh je financován hlavně úsporami do
 
 Může to fungovat jen proto, že japonské domácnosti jsou ochotny masivně prodělávat ukládáním svých peněz do bank. Proč to dělají? Důvody jsou dva. Zaprvé, až do 90. let byly výnosy dobré. Zadruhé, Japonsko mělo historicky silnou regulaci bránící investicím do akcií. Některé zvyky se těžko mění a japonské domácnosti se akcií pořád bojí. Ve výsledku to za ně dělá stát skrze Bank of Japan a veřejné penzijní fondy.
 
-Sami už vidíte paralely s českou situací: domácnosti i u nás „spoří" masivně za záporný reálný úrok v bankách a stát drží cca 50 % HDP aktiv v zahraničí skrze rezervy České národní banky. Čtvrtina těchto aktiv už je správně investována na výnos (tedy do akcií), i když v porovnání s Japonskem to děláme mimořádně pomalu a opatrně. Podobně jako v Japonsku i u nás potřebujeme naučit domácnosti, aby do akcií investovaly samy.
+Sami už vidíte paralely s českou situací: domácnosti i u nás „spoří“ masivně za záporný reálný úrok v bankách a stát drží cca 50 % HDP aktiv v zahraničí skrze rezervy České národní banky. Čtvrtina těchto aktiv už je správně investována na výnos (tedy do akcií), i když v porovnání s Japonskem to děláme mimořádně pomalu a opatrně. Podobně jako v Japonsku i u nás potřebujeme naučit domácnosti, aby do akcií investovaly samy.
 
 Osobně obdivuji odvahu, s jakou Japonci v roce 2012 nabrali kalkulované riziko, aby oddálili rozpad cenové a finanční stability. Přesně tohle naše ČNB odmítla udělat v roce 2017. Ale japonské zapákování je moc i na mě: už nejde, aby Bank of Japan v budoucnu výrazněji zvýšila úroky. Vypadá to jako sashimi zdarma, ale i Japonci budou muset nakonec zaplatit účty: inflací a finanční represí.
 
@@ -574,7 +574,7 @@ Nějaké dluhopisy je ovšem dobré si nechat. V případě té nukleární vál
 
 Mnozí experti dokážou tvrdit dvě věci najednou: 1) Akcie jsou příliš rizikové, 2) Na ztrátě národní banky nezáleží. Pokud na ztrátě ČNB nezáleží, měla by investovat masivně nejen do akcií, ale i do rizikovějších aktiv typu krypta, nebo by za svá eura stavěla jaderné elektrárny v Turkmenistánu. Případný zisk je totiž zcela určitě reálný. Ztráta je ovšem reálná taky: nakonec ji musíme zaplatit buď inflací, nebo dotací ze státního rozpočtu, jak to nedávno udělalo Švédsko a Británie.
 
-Kolegové zprava mi namítají, že národní banky by neměly kupovat akcie, protože to pak už není kapitalismus. Akcie jsou podíly na vlastnictví firem a jejich zisku, no a ty firmy by neměl vlastnit stát. To je čistý postoj. Jenže ČNB je kapka v moři: když si koupíme zlomek procenta Google, kapitalismus neohrozíme. Státní bankrot skrze pádivou inflaci je přerozdělení majetku, které by i pro pravici mělo být horší než vydělat stamiliardy takhle „špinavým" způsobem.
+Kolegové zprava mi namítají, že národní banky by neměly kupovat akcie, protože to pak už není kapitalismus. Akcie jsou podíly na vlastnictví firem a jejich zisku, no a ty firmy by neměl vlastnit stát. To je čistý postoj. Jenže ČNB je kapka v moři: když si koupíme zlomek procenta Google, kapitalismus neohrozíme. Státní bankrot skrze pádivou inflaci je přerozdělení majetku, které by i pro pravici mělo být horší než vydělat stamiliardy takhle „špinavým“ způsobem.
 
 ## Proč se ČNB bojí zisku
 
@@ -1198,7 +1198,7 @@ Let me know if you’ve found better ways to do this. I’m especially curious a
 
 Zdroj: https://www.seznamzpravy.cz/clanek/ekonomika-komentar-navod-pro-dluzniky-a-stradatele-jak-prezit-dluh-vetsi-nez-ekonomika-281287
 
-Podle základního scénáře Zprávy o udržitelnosti veřejných financí z dílny Národní rozpočtové rady přeteče český státní dluh roční objem tuzemské výroby v roce 2050. Od zveřejnění zprávy jsme sice přijali lehkou reformu důchodů, ale též se zavázali k vyšším výdajům na obranu. Rozpočtová rada „bod zlomu" v příští analýze posune blíž současnosti. Jak ukazují harvardští profesoři Reinhart a Rogoff, takové zadlužení je obvykle spojené se zaostáváním životní úrovně.
+Podle základního scénáře Zprávy o udržitelnosti veřejných financí z dílny Národní rozpočtové rady přeteče český státní dluh roční objem tuzemské výroby v roce 2050. Od zveřejnění zprávy jsme sice přijali lehkou reformu důchodů, ale též se zavázali k vyšším výdajům na obranu. Rozpočtová rada „bod zlomu“ v příští analýze posune blíž současnosti. Jak ukazují harvardští profesoři Reinhart a Rogoff, takové zadlužení je obvykle spojené se zaostáváním životní úrovně.
 
 Zaplatí dluh naše děti a vnoučata? Pravděpodobně ho zaplatí už ti z nás, kteří spoří a nepůjčují si. Dluh, který před sebou společně tlačíme, nemusí znamenat vyšší daně pro děti. Nemusí znamenat ani nižší důchody pro nás. Může znamenat inflaci a částečný státní bankrot. Všechna řešení jsou ošklivá, ale některé si vybrat musíme. Přitom politicky průchozí je jediné.
 
@@ -1396,7 +1396,7 @@ Nechceme, aby děti místo oběda v jídelně chodily do města na kebab, pizzu 
 
 Zdroj: https://www.litomysl.cz/soubor/17488424982675570_lilie_2025_6.pdf
 
-Florbalový kalendář má pro květen vyhrazeny speciální turnaje. V České Třebové jsou to tradiční Dny florbalu, kam se sjíždějí nejlepší školní týmy kraje. V Praze je to mezinárodní Prague Floorball Cup, největší středoevropský turnaj pro hráče v „mini" florbalu do 11 let. Litomyšl letos do obou soutěží vyslala hned dva týmy. Jak si vedly?
+Florbalový kalendář má pro květen vyhrazeny speciální turnaje. V České Třebové jsou to tradiční Dny florbalu, kam se sjíždějí nejlepší školní týmy kraje. V Praze je to mezinárodní Prague Floorball Cup, největší středoevropský turnaj pro hráče v „mini“ florbalu do 11 let. Litomyšl letos do obou soutěží vyslala hned dva týmy. Jak si vedly?
 
 Na pražský turnaj vyjeli zvlášť mladší a starší elévové. V obou kategoriích dohromady soutěžilo 38 týmů ze střední Evropy. Starší elévové na úvod podlehli Kladnu, ale chuť si spravili překvapivou výhrou nad berlínskými Red Devils. Následující výhra nad Říčanami jim zajistila postup z druhého místa ve skupině, na čemž nic nezměnila ani těsná večerní porážka s pražskými Black Angels.
 
@@ -1446,11 +1446,11 @@ Děkuji Petru Stolínovi, který nově (a skvěle) trénuje dorostence. Děkuji 
 
 Zdroj: https://www.litomysl.cz/soubor/17437666198041909_lilie_2025_4.pdf
 
-Školní jídelna Primirest tvrdí, že děti pomohou planetě i sobě, budou-li jíst méně masa. Vegetariánská a veganská strava je prý zdravá. Akce se jmenuje „Pátek pro planetu". Kdo by nechtěl zdravější děti a planetu?
+Školní jídelna Primirest tvrdí, že děti pomohou planetě i sobě, budou-li jíst méně masa. Vegetariánská a veganská strava je prý zdravá. Akce se jmenuje „Pátek pro planetu“. Kdo by nechtěl zdravější děti a planetu?
 
 Má žena v této Lilii shrnuje výzkum o výživě: děti potřebují pestrou stravu, v níž má maso (hlavně hovězí) a jiné živočišné produkty nezastupitelné místo. Vegetariánská či veganská dieta není zdravější. Jde se tak živit, ale téměř nutností pro zdraví jsou pak pravidelné krevní testy a prášky. Respektuji ty, co to vydrží. Kdo se tak chce živit, ať se tak živí – ale dejme dětem informace i o nevýhodách, neb ty jsou značné.
 
-Teď se podívejme na tu část „pro planetu". Chov hospodářských zvířat skutečně přispívá k vyšším emisím skleníkových plynů, to je vědecký fakt. Hospodářská zvířata produkují metan, díky němuž se rychleji otepluje. Protože se otepluje, jiným zvířatům, rostlinám a lidem to škodí. Budou-li děti jíst méně masa, mohlo by být nakonec méně krav, tedy menší oteplování a „zdravější" planeta.
+Teď se podívejme na tu část „pro planetu“. Chov hospodářských zvířat skutečně přispívá k vyšším emisím skleníkových plynů, to je vědecký fakt. Hospodářská zvířata produkují metan, díky němuž se rychleji otepluje. Protože se otepluje, jiným zvířatům, rostlinám a lidem to škodí. Budou-li děti jíst méně masa, mohlo by být nakonec méně krav, tedy menší oteplování a „zdravější“ planeta.
 
 Není ale jasné, co se vlastně stane s počty krav, budou-li děti v Litomyšli jíst méně masa. Záleží na tom, jak se zachovají ostatní spotřebitelé a výrobci. S nižší poptávkou klesne cena, takže si maso budou moci dovolit i chudší lidé v Africe. Je-li nabídka neelastická, počet krav se změní málo či vůbec. Absurditu věci ilustruje skutečnost, že lidi taky produkují metan. Některá jídla metan podporují více. Podle stejné logiky bychom v pátek neměli jíst fazole!
 
@@ -1470,7 +1470,7 @@ Zdroj: https://www.litomysl.cz/soubor/17437666198041909_lilie_2025_4.pdf
 
 Školní jídelna Primirest přestala jednou v měsíci nabízet jakékoli jídlo obsahující maso. To samo o sobě není problém. Problém je, jak to Primirest dětem vysvětluje. Dostali následující zprávu:
 
-„Pátek pro planetu (…) zahrnuje: Podporu zdravého životního stylu a zvýšení povědomí o přínosech vegetariánské a veganské stravy, snížení spotřeby masa s cílem přispět ke zmírnění (…) emisí (…)"
+„Pátek pro planetu (…) zahrnuje: Podporu zdravého životního stylu a zvýšení povědomí o přínosech vegetariánské a veganské stravy, snížení spotřeby masa s cílem přispět ke zmírnění (…) emisí (…)“
 
 To je z vědeckého pohledu zavádějící. Řekněme to na rovinu: je to lež. Ponechme zatím stranou mizivý vliv na emise, který v této Lilii probírá manžel (a opravdu chceme začít řešit klima tak, že dětem sebereme maso?). Podívejme se, co moderní věda říká o dopadech na zdraví. Hlavní body:
 
@@ -1496,9 +1496,9 @@ Zdroj: https://www.seznamzpravy.cz/clanek/domaci-zivot-v-cesku-komentar-patek-pr
 
 Síť školních jídelen Primirest přestala jednou v měsíci nabízet jídlo obsahující maso. To určitě není problém, zpestření jídelníčku je vhodné a ne každý chce a potřebuje jíst maso každý den. Preferuje-li někdo živit se čistě rostlinnou stravou, ať má tu možnost. Problém je, jakým způsobem je akce pojmenována a prezentována.
 
-Rodiče a děti dostali následující zprávu: „Pátek pro planetu (…) zahrnuje podporu zdravého životního stylu a zvýšení povědomí o přínosech vegetariánské a veganské stravy, snížení spotřeby masa s cílem přispět ke zmírnění (…) emisí (…)."
+Rodiče a děti dostali následující zprávu: „Pátek pro planetu (…) zahrnuje podporu zdravého životního stylu a zvýšení povědomí o přínosech vegetariánské a veganské stravy, snížení spotřeby masa s cílem přispět ke zmírnění (…) emisí (…).“
 
-Kdo by nechtěl zdravější děti a k tomu i planetu? Podívejme se, nakolik je prezentace této akce („přínosy vegetariánské stravy" a „zmírnění emisí") konzistentní se současným stavem vědeckého poznání. Bohužel málo, jak uvidíme dále. Hlavní body lze shrnout následovně:
+Kdo by nechtěl zdravější děti a k tomu i planetu? Podívejme se, nakolik je prezentace této akce („přínosy vegetariánské stravy“ a „zmírnění emisí“) konzistentní se současným stavem vědeckého poznání. Bohužel málo, jak uvidíme dále. Hlavní body lze shrnout následovně:
 
 1. Spojovat maso s morálními principy pro děti není v pořádku. Vytváříme jim zbytečně poruchy příjmu potravy.
 2. Vliv spotřeby masa u dětí na životní prostředí je sporný. Zdůrazňováním pochybných mechanismů torpédujeme celkovou věrohodnost klimatické politiky.
@@ -1512,21 +1512,21 @@ Začněme dopady stravy na zdraví. Níže podrobněji rozebíráme současný v
 
 Naopak rostlinné proteiny jsou často nekompletní, tedy některé esenciální aminokyseliny jim chybí. Například sója je kompletní protein, ale jiné rostlinné zdroje (luštěniny, obiloviny) je nutné kombinovat pro plnohodnotný aminokyselinový profil. I u sóji mohou být při vyšší spotřebě problémem fytoestrogeny, které ovlivňují hladinu pohlavních hormonů. Biologická dostupnost rostlinných proteinů je nižší, jelikož obsahují vlákninu a další látky, jež mohou narušovat jejich vstřebávání. Proto lidé na čistě rostlinné stravě často potřebují konzumovat větší množství bílkovin, nebo se spoléhat na izolované rostlinné proteiny a doplňky.
 
-To určitě neznamená, že z veganské či vegetariánské stravy nelze vytěžit vše potřebné. Ale vyžaduje to pečlivé plánování a většinou též doplňování vitamínu B12, železa, omega-3 mastných kyselin a dalších živin. Kromě samotného složení stravy je zásadní také mentální přístup ke stravování – není vhodné označovat některé potraviny jako „špatné", protože to může vést k nezdravému vztahu k jídlu a negativním stravovacím vzorcům. Nezapomeňme, že anorexie (odmítání jídla) patří mezi nejfatálnější psychiatrická onemocnění.
+To určitě neznamená, že z veganské či vegetariánské stravy nelze vytěžit vše potřebné. Ale vyžaduje to pečlivé plánování a většinou též doplňování vitamínu B12, železa, omega-3 mastných kyselin a dalších živin. Kromě samotného složení stravy je zásadní také mentální přístup ke stravování – není vhodné označovat některé potraviny jako „špatné“, protože to může vést k nezdravému vztahu k jídlu a negativním stravovacím vzorcům. Nezapomeňme, že anorexie (odmítání jídla) patří mezi nejfatálnější psychiatrická onemocnění.
 
 Jinými slovy, vegetariánská či veganská dieta není automaticky zdravější než vyvážená smíšená strava. Ano, smažené a průmyslově zprocesované potraviny, včetně těch masitých, zdravé nejsou. Lze jíst jen rostliny, ale častou nutností pro zdraví jsou pak pravidelné krevní testy a užívání potravinových doplňků. Respektujeme ty, kteří si tuto cestu zvolí z přesvědčení a vydrží to. Je ale zavádějící říkat ve škole dětem, že tato dieta je pro ně výhodná. Dejme jim informace o výhodách i nevýhodách, aby se později mohly samy rozhodnout.
 
 ## Vliv spotřeby masa na planetu
 
-Teď se podívejme na tu část „pro planetu". Chov hospodářských zvířat skutečně přispívá k vyšším emisím skleníkových plynů, to je vědecký fakt. Zvířata produkují mimo jiné metan, díky němuž se rychleji otepluje. Protože se otepluje, jiným zvířatům a lidem to škodí. Budou-li děti jíst méně masa, mohlo by být nakonec méně krav a méně emisí. Jestli bude planeta opravdu „zdravější", je sporné. Louky a pastviny jsou ekologicky i společensky hodnotnější než pole, což jsou biologické pouště.
+Teď se podívejme na tu část „pro planetu“. Chov hospodářských zvířat skutečně přispívá k vyšším emisím skleníkových plynů, to je vědecký fakt. Zvířata produkují mimo jiné metan, díky němuž se rychleji otepluje. Protože se otepluje, jiným zvířatům a lidem to škodí. Budou-li děti jíst méně masa, mohlo by být nakonec méně krav a méně emisí. Jestli bude planeta opravdu „zdravější“, je sporné. Louky a pastviny jsou ekologicky i společensky hodnotnější než pole, což jsou biologické pouště.
 
 Navíc není vůbec jasné, co se vlastně stane s počty krav, budou-li děti na českých základních školách jíst méně masa. Záleží na tom, jak se zachovají ostatní spotřebitelé a výrobci. S nižší poptávkou klesne cena masa, takže si steaky mohou dovolit i chudší lidé. Je-li nabídka neelastická, počet krav se změní málo či vůbec.
 
-Shodneme se, že se změnou klimatu je vhodné něco dělat. „Pátek pro planetu" je pouze symbolická a u mnohých rodičů nepopulární akce. Není lepší začít u opatření, která jsou vědecky podložená, účinná a konsensuální? Nabízí se hlavně intenzivnější sázení stromů. Stromy globálně vysázené na holinách, kde se nedá jídlo pořádně pěstovat, mohou z atmosféry stáhnout čtvrtinu uhlíku. Hodiny výchovy k občanství by měly zahrnovat i diskuse o účinnosti různých líbivých opatření.
+Shodneme se, že se změnou klimatu je vhodné něco dělat. „Pátek pro planetu“ je pouze symbolická a u mnohých rodičů nepopulární akce. Není lepší začít u opatření, která jsou vědecky podložená, účinná a konsensuální? Nabízí se hlavně intenzivnější sázení stromů. Stromy globálně vysázené na holinách, kde se nedá jídlo pořádně pěstovat, mohou z atmosféry stáhnout čtvrtinu uhlíku. Hodiny výchovy k občanství by měly zahrnovat i diskuse o účinnosti různých líbivých opatření.
 
 Neděsme děti zbytečně, obzvlášť ne ve škole. Oteplování není jejich vrozená vina. Změna klimatu má technická řešení. Budoucnost pro mladého člověka vypadá lépe než dřív. Přesto čelíme epidemii duševních nemocí dětí, depresí, sebevražd. Proč? Data Stanfordu: Čtyři z deseti mladých lidí se kvůli klimatu bojí mít děti. Polovina se kvůli klimatu cítí smutně, naštvaně, bezmocně a provinile. Pro skoro polovinu představuje klima stres týrající je každý den.
 
-Za to můžeme my dospělí a přispívají k tomu teď školní jídelny. Zamysleme se nad tím, jestli to, co dětem říkáme, dává smysl. Nestačí, že to na první poslech zní dobře. Začneme-li přehánět a lhát, abychom upozornili na dobrou věc, nebude nám nakonec věřit nikdo. Případ USA ukazuje, co se stane, když klimatické politiky ztratí důvěryhodnost – totální obrat. Chceme-li zdravé životní prostředí, stavme na rigorózní vědě a široké podpoře společnosti. „Pátek pro planetu" nesplňuje ani jedno.
+Za to můžeme my dospělí a přispívají k tomu teď školní jídelny. Zamysleme se nad tím, jestli to, co dětem říkáme, dává smysl. Nestačí, že to na první poslech zní dobře. Začneme-li přehánět a lhát, abychom upozornili na dobrou věc, nebude nám nakonec věřit nikdo. Případ USA ukazuje, co se stane, když klimatické politiky ztratí důvěryhodnost – totální obrat. Chceme-li zdravé životní prostředí, stavme na rigorózní vědě a široké podpoře společnosti. „Pátek pro planetu“ nesplňuje ani jedno.
 
 ---
 
@@ -1591,7 +1591,7 @@ Vloni se nebývale dařilo jak elitnímu A týmu florbalistů, tak mládežnick�
 
 Na páté rozhodující utkání s Kadaní o Velikonočním pondělí přišlo do naší haly 500 lidí. Víc se nás tam nevejde. Zážitek to byl o to větší, že nám Kadaň nedala nic zadarmo. Po dvou třetinách jsme prohrávali, a to ještě náš brankář těsně před sirénou parádně lapil trestné střílení. Až ve třetí třetině jsme Kadaň zlomili, nasázeli spoustu gólů a oslavili spolu postup.
 
-Národní liga je o parník těžší, než co jsme znali z divize. I tak se nám daří občas ukořistit skalpy favoritů, třeba Písku, Kobylis, Panthers Praha. Naše domácí zápasy jsou proslulé skvělou atmosférou; rozhodčí na ně mají pořadník. Viz například oficiální komentář trenéra pražského týmu po prohraném utkání v Litomyšli: „Skvělé prostředí, soupeř, výborní diváci i zápas. Klobouk dolů, kvůli tomuhle to hrajeme." Cílem pro rok 2025 je Národní ligu v Litomyšli udržet.
+Národní liga je o parník těžší, než co jsme znali z divize. I tak se nám daří občas ukořistit skalpy favoritů, třeba Písku, Kobylis, Panthers Praha. Naše domácí zápasy jsou proslulé skvělou atmosférou; rozhodčí na ně mají pořadník. Viz například oficiální komentář trenéra pražského týmu po prohraném utkání v Litomyšli: „Skvělé prostředí, soupeř, výborní diváci i zápas. Klobouk dolů, kvůli tomuhle to hrajeme.“ Cílem pro rok 2025 je Národní ligu v Litomyšli udržet.
 
 Vloni zaznamenali skvělý úspěch též dorostenci Litomyšle, kteří ovládli 2. ligu! Titul mohli opět za skvělé kulisy oslavit doma. I na zápasy mládežnických kategorií u nás chodí přes 100 diváků, což je u zápasů dětí nevídané. Kdo mě zná, ví, že jsem na Litomyšl hrdý obecně – ale máloco se u mě vyrovná parádně zorganizovanému turnaji pro celé východní Čechy, kde si třeba děti z Pardubic prvně zahrají v atmosféře jako z play off.
 
@@ -2041,11 +2041,11 @@ Zdroj: https://www.seznamzpravy.cz/clanek/ekonomika-ocima-byznysu-komentar-odkud
 
 Takřka celou historii byla životní úroveň běžného člověka taková, aby těsně nezhynul hlady. Za dobrých císařů trochu lepší, za špatných trochu horší. Měl-li člověk sám to nezvyklé štěstí, aby se dožil třicítky, uviděl obvykle dvě vlastní děti umírat malé. Ekonomický růst, jak ho známe dnes, nastartoval až kolem roku 1800. Od té doby se životní úroveň ve vyspělých zemích ztřicetinásobila. Ano, pro Česko to platí taky.
 
-Co přelomového přišlo před 200 lety? Nebyl to začátek kapitalismu, ten fungoval už ve starém Řecku. Nebyly to stabilní a předvídatelné „instituce", ty měla už Mongolská říše. Nebyly to levné peníze a volné úspory, těch bylo dost už ve středověké Číně. A určitě to nebyly státní investice do školství a infrastruktury, na něž si starší civilizace často potrpěly více. Všechno tohle je potřeba, ale nestačí to; podobně jako oheň potřebuje kyslík, ale ten sám požár nezažehne.
+Co přelomového přišlo před 200 lety? Nebyl to začátek kapitalismu, ten fungoval už ve starém Řecku. Nebyly to stabilní a předvídatelné „instituce“, ty měla už Mongolská říše. Nebyly to levné peníze a volné úspory, těch bylo dost už ve středověké Číně. A určitě to nebyly státní investice do školství a infrastruktury, na něž si starší civilizace často potrpěly více. Všechno tohle je potřeba, ale nestačí to; podobně jako oheň potřebuje kyslík, ale ten sám požár nezažehne.
 
 Ekonomický růst rovná se kolaps lidské bídy a nakonec i zdravější příroda. V nejvyspělejších zemích je dnes víc lesů než ve středověku. Co růst skutečně umožnilo, nejdříve v Nizozemí, Anglii a pak ve zbytku Západu (včetně, mezi prvními, Čech a Moravy), byla tektonická změna postoje k inovacím a inovátorům. Přirozenou tendencí člověka a všech historických civilizací je strach ze změn. Změny ohrožují postavení elit, ale někdy i živobytí části běžných lidí.
 
-Oproti tomu dvě staletí nový systém, kterému ekonomická historička Deirdre McCloskeyová říká „buržoazní dohoda", by naše předky šokoval: Nechte mě, inovátora a podnikatele, překopat způsob, jak žijeme. Nechte mě zbohatnout, abyste nakonec mohli zbohatnout i vy. Tak jsme dostali elektřinu, telefon, auta, letadla, rotavirovou vakcínu, smartphone, viagru, Google, Mapy.cz, Teslu, Uber, ChatGPT.
+Oproti tomu dvě staletí nový systém, kterému ekonomická historička Deirdre McCloskeyová říká „buržoazní dohoda“, by naše předky šokoval: Nechte mě, inovátora a podnikatele, překopat způsob, jak žijeme. Nechte mě zbohatnout, abyste nakonec mohli zbohatnout i vy. Tak jsme dostali elektřinu, telefon, auta, letadla, rotavirovou vakcínu, smartphone, viagru, Google, Mapy.cz, Teslu, Uber, ChatGPT.
 
 Ani nejlepší inovace nepomůžou hned všem, nejsou win-win. Jsou win-win-win-win-win-lose. Na auta doplatili kočí, na Uber taxikáři, na ChatGPT překladatelé. Prosperující společnost si musí zvyknout na příběhy selhání. Lidem, kteří na inovacích dočasně prodělají, je správné pomoct. Hrozba selhání je ale důležitá: Máte-li jistotu, že selhat nemůžete, že vás vždy někdo vytáhne na průměr, jakou máte motivaci rozhodovat se odpovědně třeba při výběru povolání?
 
@@ -2053,7 +2053,7 @@ Ani nejlepší inovace nepomůžou hned všem, nejsou win-win. Jsou win-win-win-
 
 Dnešní růstová ekonomie je snadná. Země rostou rychle, dokud mohou absorbovat existující inovace ze zahraničí. Viz Japonsko od války do 1990 nebo Česko od vstupu do EU do covidu. Pak boom končí. Další růst záleží na nastavení motivací. Vyplatí se tvrdě pracovat, riskovat, podnikat, inovovat? Máte produktivitu Singapuru. Vyplatí se být pasivní, dělat jen, co se vám řekne, chránit vlastní zadek? Zastavíte se 20 % pod úrovní USA, jako je to v Japonsku, Itálii, Česku.
 
-Nefunguje tedy nová mantra českých politiků: Nalijme peníze do vzdělání a infrastruktury, přidejme špetku „reforem", zamíchejme a bude dobře. Aby bylo jasno, investice do obojího u nás mají smysl. Nedostatky proti Západu znamenají snadný výnos z prvních stamiliard. Opravdu je ale u nás základní školství o moc horší než v USA? Opravdu se nám vyplatí rychlovlaky? Ekonomický výzkum ostatně ukazuje jen slabý vztah mezi vládními investicemi a životní úrovní.
+Nefunguje tedy nová mantra českých politiků: Nalijme peníze do vzdělání a infrastruktury, přidejme špetku „reforem“, zamíchejme a bude dobře. Aby bylo jasno, investice do obojího u nás mají smysl. Nedostatky proti Západu znamenají snadný výnos z prvních stamiliard. Opravdu je ale u nás základní školství o moc horší než v USA? Opravdu se nám vyplatí rychlovlaky? Ekonomický výzkum ostatně ukazuje jen slabý vztah mezi vládními investicemi a životní úrovní.
 
 Důraz na investice je užitečný v tom, že boří českou opatrnost a haléřový management. V životě je potřeba i zariskovat, zadlužit se, investovat. Jen pozor, abychom se nezadlužili kvůli projektům, kde přínosy nemohou převážit náklady. I když jsou to sexy nápady typu rychlovlaků a i když je občas mají v zahraničí. Megaprojekty vyžadují pečlivou cost-benefit analýzu. Buď jak buď, veřejné investice o životní úrovni našich dětí a vnoučat nerozhodnou.
 
@@ -2095,7 +2095,7 @@ Buď jak buď, ti méně krásní z nás si nemusí zoufat: pět procent je mál
 
 Zdroj: https://www.litomysl.cz/soubor/17176646847780324_lilie_2024_6.pdf
 
-Po historickém postupu „áčka" florbalistů do Národní ligy se sluší připomenout i letošní úspěchy mládeže. Junioři končí ve 2. lize na parádním třetím místě. Dorostenci svoji 2. ligu dokonce vyhráli a brali bronz v nadstavbovém republikovém turnaji „final four".
+Po historickém postupu „áčka“ florbalistů do Národní ligy se sluší připomenout i letošní úspěchy mládeže. Junioři končí ve 2. lize na parádním třetím místě. Dorostenci svoji 2. ligu dokonce vyhráli a brali bronz v nadstavbovém republikovém turnaji „final four“.
 
 Starší žáci skončili třetí na prestižním náchodském turnaji, kde v semifinále padli jen těsně po nájezdech s Hradcem Králové. Smíšený tým mladších žáků a elévů v dresu ZŠ Zámecká ovládl kategorii prvního stupně školního turnaje v České Třebové, kde ve finále porazil Králíky.
 
@@ -2105,7 +2105,7 @@ Nejmladší hráči (přípravka) neměli ve východních Čechách konkurenci, 
 
 Přípravku prověřil až turnaj Prague Floorball Cup. Skupinu vyhráli, i když se pořádně nadřeli proti pražským týmům Chodov a Butchis. Ve finálové skupině už po boji nestačili na Bratislavu a Olomouc, a berou tak cenný bronz. Turnaj ukázal, že nejmladší florbalisté Litomyšle se mohou směle měřit se špičkovými týmy střední Evropy. Přidají-li ještě v tréninku, mohou se odvážit na nejtěžší světový turnaj dětí ve Švédsku. Kdo si chce florbal vyzkoušet, má šanci na zářijových trénincích. V Litomyšli dává dětem florbal příležitost utkávat se s týmy z celé republiky i zahraničí. Florbal hrají i holky: naše Lucinka v 6 letech odehrála hromadu turnajů a dala za Litomyšl i nějaké góly. S florbalem není problém začít i později, třeba až ve 12 letech.
 
-Florbalisté vyhlíží novou sezonu, v níž budou muži poprvé hrát národní ligu. Tam je snem litomyšlského fanouška vidět jednou hrát spolu v dresu s lilií před bouřící plnou halou naše nejslavnější odchovance: bratry Pakostovy. Dočkáme se? Ondřej se lvím podílem zasloužil o postup do „národky". Přemek, držitel bronzové medaile z mistrovství světa juniorů, byl v uplynulé sezoně kapitánem superligových Pardubic. Těšíme se ale také na další úspěchy naší mládeže od přípravky po juniory!
+Florbalisté vyhlíží novou sezonu, v níž budou muži poprvé hrát národní ligu. Tam je snem litomyšlského fanouška vidět jednou hrát spolu v dresu s lilií před bouřící plnou halou naše nejslavnější odchovance: bratry Pakostovy. Dočkáme se? Ondřej se lvím podílem zasloužil o postup do „národky“. Přemek, držitel bronzové medaile z mistrovství světa juniorů, byl v uplynulé sezoně kapitánem superligových Pardubic. Těšíme se ale také na další úspěchy naší mládeže od přípravky po juniory!
 
 ---
 
@@ -2149,7 +2149,7 @@ Zdroj: https://www.seznamzpravy.cz/clanek/nazory-komentare-komentar-rychlovlaky-
 
 Do 12 let spojíme největší populační centra sítí vysokorychlostních železnic. Projekt nás přijde nejvýš na bilion korun. Vlaky pojedou až 350 kilometrů za hodinu. Do pár hodin se dostaneme po celém státě. Zní vám to povědomě? Není to ovšem český, nýbrž kalifornský plán na rychlovlaky. Plán z roku 2008.
 
-Střih do letošního roku, čtyři roky po plánovaném otevření tratí. Rychlovlaky z Los Angeles do San Francisca nejezdí. Rychlovlaky dokonce nejezdí v Kalifornii nikde. Kousek tratě odnikud nikam uprostřed pouště by se mohl otevřít možná už za šest let, ale i optimisté raději mluví až o roce 2033. Kalifornská správa železnic očekává, že projekt nakonec spolkne v přepočtu víc než tři biliony korun. Její bývalý šéf otevřeně hlásí: „Je to propadák."
+Střih do letošního roku, čtyři roky po plánovaném otevření tratí. Rychlovlaky z Los Angeles do San Francisca nejezdí. Rychlovlaky dokonce nejezdí v Kalifornii nikde. Kousek tratě odnikud nikam uprostřed pouště by se mohl otevřít možná už za šest let, ale i optimisté raději mluví až o roce 2033. Kalifornská správa železnic očekává, že projekt nakonec spolkne v přepočtu víc než tři biliony korun. Její bývalý šéf otevřeně hlásí: „Je to propadák.“
 
 Jasně, v Česku propadák nehrozí. Veřejné projekty stavíme – na rozdíl od Američanů – rychle a efektivně. Správa železnic má bohaté zkušenosti s výstavbou na zelené louce. O trasování rychlovlaků se u nás lidé a okolní obce určitě soudit nebudou. A hlavně – peněz máme dost! Jedna věc nás ale s Kalifornií přece jenom spojuje: Jako oni ani my jsme se vůbec neobtěžovali spočítat, jestli se nám dopravní megaprojekt vyplatí.
 
@@ -2161,7 +2161,7 @@ Jedinou skutečnou cost-benefit analýzou je diplomová práce (!), a ta se věn
 
 Proč stát nechce znát návratnost rychlovlaků? Nejsnazší vysvětlení zní, že odpovědní lidé už dávno vědí. Vědí, že rychlovlaky nevyjdou v plusu, pokud tedy dost průhledným způsobem neohneme čísla. Snad se mýlím a odpovědné to jen nenapadlo, neboť mají na starosti důležitější věci než nějaké biliony. Každopádně je povinností vlády jako řádného hospodáře ukázat výpočet, který obstojí v transparentním oponentním řízení, a to i před zahraničními odborníky.
 
-České rychlovlaky jsou také selháním české ekonomie. Nedaří se nám vysvětlovat principy hospodaření ani veřejnosti, ani vládě – minulé či současné. I u projektů, které jsou nějak všeobecně atraktivní a sexy, prostě musejí výnosy převážit nad náklady. Do výnosů samozřejmě počítáme nejen vybrané jízdné, ale hlavně ušetřený čas a také méně nehod a nižší emise. Výpočet není snadný. Místo racionálního pokusu o něj však slýcháme: „Přestaňte projekt zpochybňovat, začněte mu věřit!" Rychlovlaky prostě chceme a basta.
+České rychlovlaky jsou také selháním české ekonomie. Nedaří se nám vysvětlovat principy hospodaření ani veřejnosti, ani vládě – minulé či současné. I u projektů, které jsou nějak všeobecně atraktivní a sexy, prostě musejí výnosy převážit nad náklady. Do výnosů samozřejmě počítáme nejen vybrané jízdné, ale hlavně ušetřený čas a také méně nehod a nižší emise. Výpočet není snadný. Místo racionálního pokusu o něj však slýcháme: „Přestaňte projekt zpochybňovat, začněte mu věřit!“ Rychlovlaky prostě chceme a basta.
 
 Nevyplatí-li se rychlotratě, co postavit místo nich? Jedna možnost je nestavět nic a o dva nebo tři biliony snížit státní dluh. To by jistě potěšilo Národní rozpočtovou radu, ale voliče již méně.
 
@@ -2209,7 +2209,7 @@ Jinými slovy, kromě expertizy je zapotřebí ochota tlačit těžká rozhodnut
 
 ## Zaplaťme české špičky
 
-Zadruhé, mnoho našich elitních talentů zmíněných výše buď trvale žije v zahraničí, nebo tam tráví značnou část roku. Dnes jim často není možné nabídnout „balíček" tak atraktivní, aby je do české národohospodářské praxe přilákal. K tomu musíme prolomit český haléřový management a úměrně k vyšší odpovědnosti zvednout také platy na klíčových ekonomických postech. Vyděláme na tom nakonec všichni.
+Zadruhé, mnoho našich elitních talentů zmíněných výše buď trvale žije v zahraničí, nebo tam tráví značnou část roku. Dnes jim často není možné nabídnout „balíček“ tak atraktivní, aby je do české národohospodářské praxe přilákal. K tomu musíme prolomit český haléřový management a úměrně k vyšší odpovědnosti zvednout také platy na klíčových ekonomických postech. Vyděláme na tom nakonec všichni.
 
 Přispět k tomu můžeme už letos. V prosinci končí první mandát radnímu ČNB Tomáši Holubovi. Ten si zřejmě druhý (a poslední) mandát teď nevyplýtvá, neboť je přirozeným favoritem na guvernérské křeslo od roku 2028. Věřme, že na jeho místo prezident zvolí experta s výraznou zahraniční zkušeností, třeba z Mezinárodního měnového fondu. Ruku v ruce s tím potřebujeme zvednout platy radních skrze bonusy za udržování nízké inflace.
 
@@ -2235,7 +2235,7 @@ Ale když cestujeme po ČR i zahraničí, vidíme věci, jež můžeme doma zlep
 
 5) Zeleň. Přeměňme městské pozemky kolem zástavby na (leso)parky – tak, jak to už máme v územním plánu. Ideální je kombinace víc domů + víc stromů. Vysázejme pás zeleně kolem města. Super, že se to už v některých lokalitách děje. Nenechme Svitavy a Ústí, aby nás předběhly v úpravě zeleně podél silnic. Propojme Benátky s Litomyšlí průchodem pod světelnou křižovatkou podél řeky. To zpříjemní procházky, ale i dennodenní život všech, co bydlí za křižovatkou.
 
-6) Porodnice. Pro budoucnost města je klíčové vrátit porodnici. Narodí-li se člověk ve městě, má k němu užší vztah. Ušetříme na domově důchodců (místo 400 milionů za novou megastavbu opravme a rozšiřme stávající budovy) a za zbylé peníze podpořme znovuotevření porodnice, byť třeba soukromé. „Narozen v Litomyšli" je atraktivní značka.
+6) Porodnice. Pro budoucnost města je klíčové vrátit porodnici. Narodí-li se člověk ve městě, má k němu užší vztah. Ušetříme na domově důchodců (místo 400 milionů za novou megastavbu opravme a rozšiřme stávající budovy) a za zbylé peníze podpořme znovuotevření porodnice, byť třeba soukromé. „Narozen v Litomyšli“ je atraktivní značka.
 
 7) Výkaly na chodnících. Tohle mimo rozvojové země vidíme zřídka. Pomohlo by víc sáčků se zabudovanou lopatkou, na každém odpadkovém koši poděkování pejskařům, že po svých pejscích uklízí. Je to otrava, ale zpříjemníme život všem.
 
@@ -2249,7 +2249,7 @@ Zdroj: https://www.seznamzpravy.cz/clanek/nazory-komentare-komentar-jak-naucit-d
 
 Každý rok se potkávám s kolegou Portugalcem, který pracuje ve Španělsku. Jeho žena pochází z Baskicka. Poznali se, když oba působili v Německu, a tam se narodily jejich tři děti. Ve školce děti mluvily německy. Kolega s manželkou spolu doma mluví anglicky, takže děti angličtinu pochytily také. Každý z rodičů na ně mluvil svým rodným jazykem, takže se odmalička naučily i portugalsky a baskicky. A teď ve Španělsku mají školu ve španělštině.
 
-„A kolika jazyky mluví tvoje děti?" ptá se mě kolega na večeři ve čtvrti Gion v Kjótu. Dobře ví, že moje žena je původem Slovenka, takže si možná myslí, že spolu musíme doma taky mluvit anglicky. Vysvětluji, že čeština a slovenština jsou si hodně blízko, něco jako londýnská a apalačská angličtina. Vidím jeho zklamaný výraz: Škoda, tak aspoň děti mluví česky a slovensky? Ne, vrtím hlavou, splývá jim to dohromady, mluví česky, jen některá slova mají radši ve slovenštině.
+„A kolika jazyky mluví tvoje děti?“ ptá se mě kolega na večeři ve čtvrti Gion v Kjótu. Dobře ví, že moje žena je původem Slovenka, takže si možná myslí, že spolu musíme doma taky mluvit anglicky. Vysvětluji, že čeština a slovenština jsou si hodně blízko, něco jako londýnská a apalačská angličtina. Vidím jeho zklamaný výraz: Škoda, tak aspoň děti mluví česky a slovensky? Ne, vrtím hlavou, splývá jim to dohromady, mluví česky, jen některá slova mají radši ve slovenštině.
 
 Přesto nakonec mohu aspoň říct, že děti mluví anglicky dobře. Ne, tak doma opravdu nemluvíme. Zkoušel jsem to jednou, když byl dceři rok, a začala plakat. Ale teď ve dvanácti letech mluví anglicky lépe než já, s perfektním americkým přízvukem, a mladší tři děti se tomu blíží. Důvod je jediný: když doma pustíme televizi, tak jedině v angličtině. České pohádky mají děti jako velkou vzácnost o Vánocích u babičky.
 
@@ -2259,7 +2259,7 @@ Kroužky s rodilým mluvčím jsou super, a ještě lepší je poslat děti stud
 
 Musím se přiznat, že z půlhodiny se postupně stala hodina, a tenhle zvyk držíme pořád: děti vyžadují od šesti do sedmi večer pohádky v angličtině. Přes youtubové pořady pro malé děti jsme se dostali k Penguins of Madagascar, My Little Pony, SpongeBobovi a Simpsonovým. Jasně, hodina televize není ta nejzdravější věc na světě. Ale rodiče si nějaký odpočinek zaslouží, navíc si ho mohou ospravedlnit tím, že se děti učí jazyk.
 
-Rád o tomhle systému vyprávím přátelům a popisuji vědecký výzkum, který za tím stojí. Manželka se na mě mračí („Kdybys nekecal," říká mi v duchu, a někdy nahlas), protože dobře ví, že žádný výzkum jsme tehdy neřešili. Ze svého dětství si pamatovala spolužáka, který uměl perfektně anglicky, jelikož rodiče mu doma pouštěli Cartoon Network. Korelace není kauzalita, ale zdálo se nám to jako dobrý nápad.
+Rád o tomhle systému vyprávím přátelům a popisuji vědecký výzkum, který za tím stojí. Manželka se na mě mračí („Kdybys nekecal,“ říká mi v duchu, a někdy nahlas), protože dobře ví, že žádný výzkum jsme tehdy neřešili. Ze svého dětství si pamatovala spolužáka, který uměl perfektně anglicky, jelikož rodiče mu doma pouštěli Cartoon Network. Korelace není kauzalita, ale zdálo se nám to jako dobrý nápad.
 
 ## Dabing může zůstat
 
@@ -2569,13 +2569,13 @@ A právě v tomhle se intervence liší od nákupu dluhopisů, tzv. kvantitativn
 
 Proto mají intervence větší šanci něco s ekonomikou udělat. Kvantitativní uvolňování zřejmě mělo mizivý vliv na inflaci i růst. Přitom inflace a růst je to, co tyhle politiky měly docílit. U intervencí to mělo fungovat takhle: ČNB oslabí korunu, čímž zdraží dovozy. Slabší koruna též pomůže exportérům, kteří chtějí zaměstnat víc lidí. Zahřátá ekonomika tlačí na růst mezd a ve finále cen.
 
-Poslední větě se v ekonomii říká „Phillipsova křivka". Při pohledu na data není jasné, jestli je to opravdu příčinný vztah a funguje tak, jak centrální banky chtějí. Oslabení koruny v praxi zapracovalo poněkud slaběji, než banka očekávala. Nicméně s odstupem 10 let a řadou ekonometrických studií není pochyb, že intervence opravdu nakonec zvýšily inflaci a trochu i růst.
+Poslední větě se v ekonomii říká „Phillipsova křivka“. Při pohledu na data není jasné, jestli je to opravdu příčinný vztah a funguje tak, jak centrální banky chtějí. Oslabení koruny v praxi zapracovalo poněkud slaběji, než banka očekávala. Nicméně s odstupem 10 let a řadou ekonometrických studií není pochyb, že intervence opravdu nakonec zvýšily inflaci a trochu i růst.
 
 ## Výzkum dopadů intervencí
 
 Jak to víme? Intervence byly přirozený experiment. Můžeme porovnat naši ekonomiku se zeměmi, které intervence neměly. Tzv. metoda syntetické kontroly nám umožní odhadnout hypotetický vývoj Česka bez intervencí. Takové studie jsou tři, a i když se výsledky mezi sebou mírně liší, dohromady potvrzují zvýšení cen (zabránění deflaci) a mírné oživení ekonomiky kvůli intervencím.
 
-Intervence tedy splnily svůj záměr, i když ne tak rychle, jak ČNB na podzim 2013 čekala. Navíc ukončení intervencí v dubnu 2017 proběhlo nečekaně hladce. Až do příchodu pandemie jsme tedy hodnotili tento „kurzový závazek" jako bezmála totální vítězství. Připomínám znovu, že tohle hodnocení platí pro centrální banku cílící na dvouprocentní inflaci, což je ale naprosto běžné.
+Intervence tedy splnily svůj záměr, i když ne tak rychle, jak ČNB na podzim 2013 čekala. Navíc ukončení intervencí v dubnu 2017 proběhlo nečekaně hladce. Až do příchodu pandemie jsme tedy hodnotili tento „kurzový závazek“ jako bezmála totální vítězství. Připomínám znovu, že tohle hodnocení platí pro centrální banku cílící na dvouprocentní inflaci, což je ale naprosto běžné.
 
 Odkaz intervencí pošpinilo až chování ČNB po roce 2017 a zejména 2020. ČNB jako vedlejší produkt intervencí nasyslila víc eur než největší hedgeové fondy světa. Jenže ta eura odmítla investovat, aby dlouhodobě vydělávaly, po vzoru Singapuru a Norska. Výsledkem je masivní ztráta ČNB (tudíž nakonec nás všech), jež má dva zdroje.
 
@@ -2585,7 +2585,7 @@ Zaprvé, má-li ČNB většinu eur uloženou de facto na běžném účtu, nezvl
 
 Osudnou chybu ČNB udělala v roce 2021, kdy gigantickou zásobu eur na běžném účtu odmítla využít k posílení koruny a rychlému snížení inflace. Jde o promarněnou příležitost katastrofálních rozměrů, která se zapíše do učebnic centrálního bankovnictví. Nyní víme, že ČNB se k inflačnímu cíli nechová symetricky. Odchylky dolů jí vadí, vysoká inflace tolik ne. Důsledek jsme viděli vloni, vidíme ho letos a uvidíme ho v letech příštích.
 
-V kostce: intervence splnily účel, pro nějž byly před 10 lety spuštěny. Jejich dlouhodobé důsledky jsme ale nezvážili dost. Možná by tehdy bylo lepší ztrátu ČNB rovnou nasypat na lidi „z vrtulníku". Není jasné, jak intervence přispěly k inflaci 2021–2023. Každopádně díky nim mohla ČNB v roce 2021 vedle zvýšení sazeb též masivně posílit korunu. Tu možnost prováhala, i kvůli čemuž máme za poslední roky jednu z nejvyšších inflací ve vyspělém světě.
+V kostce: intervence splnily účel, pro nějž byly před 10 lety spuštěny. Jejich dlouhodobé důsledky jsme ale nezvážili dost. Možná by tehdy bylo lepší ztrátu ČNB rovnou nasypat na lidi „z vrtulníku“. Není jasné, jak intervence přispěly k inflaci 2021–2023. Každopádně díky nim mohla ČNB v roce 2021 vedle zvýšení sazeb též masivně posílit korunu. Tu možnost prováhala, i kvůli čemuž máme za poslední roky jednu z nejvyšších inflací ve vyspělém světě.
 
 ---
 
@@ -2811,9 +2811,9 @@ Proč je prudká deflace nebezpečná? Zvyšuje skutečnou hodnotu dluhů, kter�
 
 ## Deflace a deprese
 
-Centrální bankéři se hluboké deflace děsí. Něco podobného předchozímu odstavci se odehrálo ve 30. letech během Velké deprese, největší hospodářské krize v dějinách. Tento strach se instinktivně přenáší na jakoukoli deflaci, byť jen půlprocentní. A tady už pozor: obava z mírné deflace nemá oporu v moderním ekonomickém výzkumu. Nemá – ať už se jedná o teorii, empirii (data), nebo to, čemu se občas říká „praxe", tedy příběhy z historie.
+Centrální bankéři se hluboké deflace děsí. Něco podobného předchozímu odstavci se odehrálo ve 30. letech během Velké deprese, největší hospodářské krize v dějinách. Tento strach se instinktivně přenáší na jakoukoli deflaci, byť jen půlprocentní. A tady už pozor: obava z mírné deflace nemá oporu v moderním ekonomickém výzkumu. Nemá – ať už se jedná o teorii, empirii (data), nebo to, čemu se občas říká „praxe“, tedy příběhy z historie.
 
-Začněme příběhy. Každá deflace je prý nebezpečná, protože víme, co se stalo ve Velké depresi. Logika příběhu je taková, že mírná deflace dostane ekonomiku do spirály. Nakonec přijde hluboká deflace a deprese. Jenže čtete-li rozbor Velké deprese z pera nobelisty Bernankeho, dozvíte se něco jiného: depresi a deflaci zařídili sami centrální bankéři svou mimořádně tupou politikou. „My jsme to udělali", řekl Bernanke, exšéf americké centrální banky.
+Začněme příběhy. Každá deflace je prý nebezpečná, protože víme, co se stalo ve Velké depresi. Logika příběhu je taková, že mírná deflace dostane ekonomiku do spirály. Nakonec přijde hluboká deflace a deprese. Jenže čtete-li rozbor Velké deprese z pera nobelisty Bernankeho, dozvíte se něco jiného: depresi a deflaci zařídili sami centrální bankéři svou mimořádně tupou politikou. „My jsme to udělali“, řekl Bernanke, exšéf americké centrální banky.
 
 Jinými slovy, deflační spirála ve 30. letech nevznikla proto, že by centrální banky neměly nástroje na boj s původně malou deflací. Deflace se neroztočila do spirály kvůli tomu, že nešlo snižovat úrokové sazby do záporu. Spirála vznikla proto, že centrální banky nechaly kleknout bankovní sektor a s ním třetinu ekonomiky, no a prudká deflace tyhle problémy potom ještě prohloubila.
 
@@ -2821,9 +2821,9 @@ Jinými slovy, deflační spirála ve 30. letech nevznikla proto, že by centrá
 
 Ani tak by ale nebezpečná spirála nepřišla, kdyby tehdy peníze nebyly vázané na jedinou komoditu, zlato. Při nedostatku zlata se sníží cena všeho ostatního vyjádřeného ve zlatě (deflace). Vláda měla povinnost peníze směnit za zlato, které si ale musela být schopná půjčit. Při deflaci se zvyšuje reálná hodnota dluhů vlády, podobně jako u tiskařského stroje popsaného výše. Zlatý standard vyžadoval striktní rozpočtovou disciplínu. Vláda tedy musela v krizi šetřit, což depresi a deflaci dál živilo.
 
-Dnes ale nic takového nehrozí. Dovedete si představit, že vláda bude na recesi a deflaci reagovat šetřením? Naopak, zasype ekonomiku penězi. A tady jsme u dalšího příběhu: pandemické „peníze z vrtulníku". Vyzkoušeli jsme si, že zasypání penězi opravdu vede k rychlé inflaci. I kdyby nic jiného, tenhle experiment stačí k tomu, abychom se do budoucna báli víc inflace než deflace. Zasypat nás penězi je snadné. Sebrat nám ty peníze je politicky o dost těžší.
+Dnes ale nic takového nehrozí. Dovedete si představit, že vláda bude na recesi a deflaci reagovat šetřením? Naopak, zasype ekonomiku penězi. A tady jsme u dalšího příběhu: pandemické „peníze z vrtulníku“. Vyzkoušeli jsme si, že zasypání penězi opravdu vede k rychlé inflaci. I kdyby nic jiného, tenhle experiment stačí k tomu, abychom se do budoucna báli víc inflace než deflace. Zasypat nás penězi je snadné. Sebrat nám ty peníze je politicky o dost těžší.
 
-Další příběhy už jen stručně. Co například Japonsko? To v posledních 30 letech není žádný tygr a zároveň je často v deflaci. Jenže reálný výkon japonské ekonomiky, vyjádřený v produktivitě na zaměstnance, je v těch „ztracených" dekádách podobný jako v Evropě, která inflaci měla. Japonskou tragédií je totiž úpadek porodnosti, ne klesající ceny. A mimochodem ani v Japonsku mírná deflace spirálu nevyvolala.
+Další příběhy už jen stručně. Co například Japonsko? To v posledních 30 letech není žádný tygr a zároveň je často v deflaci. Jenže reálný výkon japonské ekonomiky, vyjádřený v produktivitě na zaměstnance, je v těch „ztracených“ dekádách podobný jako v Evropě, která inflaci měla. Japonskou tragédií je totiž úpadek porodnosti, ne klesající ceny. A mimochodem ani v Japonsku mírná deflace spirálu nevyvolala.
 
 ## Švýcarsko, data a teorie
 
@@ -2831,13 +2831,13 @@ Navíc protipříklad ukazuje Švýcarsko. To mělo mezi lety 2008 a 2021 v prů
 
 Jasně, příběhy samy o sobě nic nedokazují. Avšak měly by nás vést k zamyšlení, zda se opravdu musíme děsit malé deflace. Vedle příběhů pak existuje rozsáhlý výzkum (empirie), jenž pomocí statistických technik zkoumá, jak mírná deflace nebo inflace ovlivnila prosperitu desítek zemí. A jeho výsledek? V datech je nemožné najít robustní vztah, což platí i o údajném odkládání spotřeby kvůli deflaci. Mírná deflace ani inflace růst neovlivní.
 
-Poslední dílek skládanky přidává ekonomická teorie, tedy více či méně sofistikované modely ekonomiky. Aby bylo v moderní ekonomice vůbec možné něco jako deflační spirála, musí se lidé systematicky nechávat nachytat. Jsou-li aspoň trochu „vpředhledící", tedy berou v úvahu i budoucnost, nejenom minulost, spirála nastat nemůže. Konsensus v profesi je takový, že lidi se nenechají oblbovat donekonečna, a tak se spirála v odborné literatuře už prakticky nevyskytuje. V řadě modelů ve Friedmanově tradici je naopak mírná deflace ideální.
+Poslední dílek skládanky přidává ekonomická teorie, tedy více či méně sofistikované modely ekonomiky. Aby bylo v moderní ekonomice vůbec možné něco jako deflační spirála, musí se lidé systematicky nechávat nachytat. Jsou-li aspoň trochu „vpředhledící“, tedy berou v úvahu i budoucnost, nejenom minulost, spirála nastat nemůže. Konsensus v profesi je takový, že lidi se nenechají oblbovat donekonečna, a tak se spirála v odborné literatuře už prakticky nevyskytuje. V řadě modelů ve Friedmanově tradici je naopak mírná deflace ideální.
 
 ## Troška deflace pomůže
 
 Vše uvedené lze shrnout do konstatování, že moderní ekonomie nedává důvod, proč by měla ČNB bránit drobné deflaci v letech 2024 a 2025. Ta, pokud by nastala, bude způsobena hlavně zlevňováním energií. A nehrozí spirála, jen mírné snížení marží firem. Inflační debakl 2021-2023 napravit nejde. Abychom ten příští zmírnili, ČNB se musí zavázat (dopředu!), že bude odchylky od cenové stability opravovat – postupně a pomalu. To nám dá větší jistotu ohledně budoucí hodnoty peněz. Firmy se v reakci na dovezený inflační šok nebudou tolik předbíhat ve zdražování.
 
-Obnovení reputace ČNB nepomohou projevy radních a fotky guvernéra s celebritami z amerických konferencí. ČNB musí ukázat na našich peněženkách, že to myslí s cenovou stabilitou vážně. „Dováženou" inflaci přes rok ignorovala. Stejně nechť zachází i s dováženou deflací. Poté doufejme, že zvládne udržovat dlouhodobě kladné úroky i po odečtení inflace.
+Obnovení reputace ČNB nepomohou projevy radních a fotky guvernéra s celebritami z amerických konferencí. ČNB musí ukázat na našich peněženkách, že to myslí s cenovou stabilitou vážně. „Dováženou“ inflaci přes rok ignorovala. Stejně nechť zachází i s dováženou deflací. Poté doufejme, že zvládne udržovat dlouhodobě kladné úroky i po odečtení inflace.
 
 ---
 
@@ -2953,7 +2953,7 @@ Zdroj: https://www.seznamzpravy.cz/clanek/ekonomika-ocima-byznysu-cesko-az-tak-n
 
 Mezinárodní srovnání výkonu našeho hospodářství vyznívá prachbídně. Ve dvou hlavních disciplínách, cenové stabilitě a růstu hrubého domácího produktu, se od covidu řadíme poblíž chvostu pelotonu všech rozvinutých zemí. Naše inflace patří k nejvyšším ve vyspělém světě dokonce již 5 let – naposledy byla kousek pod cílem ČNB na začátku roku 2018, a to jen 3 měsíce.
 
-U inflace omluvu nenajdeme. Pět let je příliš dlouho, abychom ji mohli svést na zahraniční šoky. Drtivá většina ekonomické teorie i praxe hovoří stejně: za dlouhodobě vysokou inflaci odpovídá v každé zemi národní banka. Ta naše aktuálně slaví inflaci na pětinásobku svého cíle: „Nastavení měnové politiky bylo adekvátní." Jinde je zvykem v takové situaci psát omluvné dopisy veřejnosti.
+U inflace omluvu nenajdeme. Pět let je příliš dlouho, abychom ji mohli svést na zahraniční šoky. Drtivá většina ekonomické teorie i praxe hovoří stejně: za dlouhodobě vysokou inflaci odpovídá v každé zemi národní banka. Ta naše aktuálně slaví inflaci na pětinásobku svého cíle: „Nastavení měnové politiky bylo adekvátní.“ Jinde je zvykem v takové situaci psát omluvné dopisy veřejnosti.
 
 Nepomáhá česká specialita, feudalismus obsazování postů ČNB. Vedení vybírá prezident samojediný. OK, dokud jde o nezávislé experty. Ještě exguvernér Singer býval občas přehlasován radou. Od té doby systém degeneroval v léno, kdy prezident povýší guvernéra, jenž sám a najednou pasuje většinu rady. Výsledkem je diktatura jednoho názoru a tektonické změny při výměně guvernéra.
 
@@ -2961,7 +2961,7 @@ Nepomáhá česká specialita, feudalismus obsazování postů ČNB. Vedení vyb
 
 Utěšit nás může, že aspoň hrubý domácí produkt na tom není tak mizerně, jak vyplývá z oficiálních dat. Statistici umí měřit jen to, co vidí, tedy takzvanou bílou ekonomiku. Šedou, neoficiální ekonomiku, jež funguje téměř výlučně v hotovosti, mohou jen odhadovat. A právě podíl šedé ekonomiky se po covidu zvýšil, což v oficiálních číslech není odraženo.
 
-Abychom vychýlení v HDP zhruba spočítali, musíme se vrátit k zavedení EET. Tehdy jsme chvíli rostli skoro nejrychleji na světě. Pamatujete ty časy? Pokud ne, nevadí. Ale podivný skok českého HDP po zavedení EET v porovnání s ostatními zeměmi nám umožní změřit míru tehdejšího „obílení ekonomiky". Tomuto postupu se v ekonometrii říká syntetická kontrolní metoda.
+Abychom vychýlení v HDP zhruba spočítali, musíme se vrátit k zavedení EET. Tehdy jsme chvíli rostli skoro nejrychleji na světě. Pamatujete ty časy? Pokud ne, nevadí. Ale podivný skok českého HDP po zavedení EET v porovnání s ostatními zeměmi nám umožní změřit míru tehdejšího „obílení ekonomiky“. Tomuto postupu se v ekonometrii říká syntetická kontrolní metoda.
 
 Obílení ekonomiky šlo ruku v ruce s přecházením na platby kartou a přesouváním odměn zaměstnancům v restauracích do oficiální mzdy místo bokem v hotovosti. Platby, které předtím statistický úřad neviděl, najednou šlo započítat. Přišel oficiální růst HDP, aniž se ekonomika zvětšila – jen se zvětšil podíl bílé složky oproti šedé. Po covidu sledujeme proces opačný.
 
@@ -2972,6 +2972,28 @@ Odhady nadhodnocení HDP po zavedení EET spočítané pomocí syntetické kontr
 Jenže je tady ještě jedna věc, snad důležitější než EET. Se změnou vlády se radikálně změnil přístup k výběru daní. Namísto zaklekávání se berňák tváří jako kamarád. Příběhy z firem (tzv. anekdotická evidence) naznačují, že daním je teď snazší se vyhnout. Výsledné zešednutí ekonomiky zatím spočítat neumíme, zřejmě se ale v růstu dostaneme nedaleko evropského průměru.
 
 V kostce: nerostoucí HDP neznamená, že ekonomika po covidu stagnuje. Růst se skrývá v neoficiálních transakcích, často v hotovosti. Ty umíme špatně měřit a moc z nich neplatíme daně. Rozpočet tak má větší deficit. Ale hotovost je únikový ventil, bez něhož by některé druhy podnikání v naší přeregulované zemi nebyly možné. Osekáme-li tento vnitřní daňový ráj a zaklekneme na OSVČ, můžeme na tom prodělat všichni.
+
+---
+
+## ČNB sníží úrokové sazby nejdříve v roce 2025
+
+*SYRI, 11. července 2023. Tomáš Havránek.*
+
+Zdroj: https://web.archive.org/web/20241103191301/https://www.syri.cz/komentare/cnb-snizi-urokove-sazby-nejdrive-v-roce-2025
+
+Finanční trh dlouhodobě očekává, že ČNB sníží úrokové sazby z úrovně 7 % ještě letos. Tato úvaha předpokládá, že ČNB se bude chovat podobně jako ostatní centrální banky. ČNB ale rok odmítala zvyšovat sazby tváří v tvář dvojciferné inflaci. Aby obnovila svou důvěryhodnost, sazby nechá na 7 % mnohem déle, než bude nutné k dosažení 2% inflačního cíle.
+
+Většinu historie ČNB její rozhodování ukotvoval matematicko-ekonometrický model. To neznamená, že banku ve skutečnosti řídila umělá inteligence, ale triáda data – matematika – expertní úvaha odborníků vysvětlovala velkou většinu rozhodnutí o sazbách. Tato triáda v posledním roce doporučovala na každém zasedání prudké zvýšení sazeb. Bankovní rada ale doporučení vždy zamítla, protože považuje stabilitu sazeb za dobrou samu o sobě.
+
+Standardní novokeynesiánská ekonomická teorie a praxe implikuje, že takové chování ČNB přispělo k letošní vysoké, byť již samovolně klesající inflaci. Některé nové ekonomické teorie (zejména fiskální teorie cenové hladiny) však naznačují, že tomu tak nutně být nemusí. Buď jak buď, není důvod očekávat, že modelová triáda začne najednou pro rozhodování ČNB fungovat ke konci letošního roku a bankovní rada najednou poslechne doporučení snížit sazby.
+
+ČNB de facto poslední rok tolerovala vysokou inflaci s odůvodněním, že další protiinflační kroky (zejména zvyšování sazeb) jsou pro ekonomiku příliš nákladné. Ovšem jediným ústavním úkolem banky je péče o cenovou stabilitu. Aby banka ukázala, že jí na cenové stabilitě opravdu záleží a že ústavu záměrně neporušuje, bude minimálně po celý příští rok předchozí selhání vyvažovat a tolerovat nízkou inflaci, možná krátkodobě i deflaci.
+
+Členové bankovní rady vědí, že bude-li inflace kolem nuly nebo v mírném záporu, veřejnost jí to po debaklu s dvoucifernou inflací rozhodně nebude vyčítat - naopak, za nulovou inflaci budou chváleni. Toto vědomí je tak silné, a potřeba obnovit kredibilitu instituce tak urgentní, že snížení sazeb je v letošním roce vyloučené a v roce následujícím nepravděpodobné. Bankovní rada za žádnou cenu nebude chtít udělat chybu a raději připustí podstřelení než nadstřelení inflačního cíle.
+
+Prognóza stability úrokových sazeb nejméně do února 2025 je také konzistentní se současnou komunikací většiny členů bankovní rady. Kladou důraz na to, že sazby opravdu budou stabilní po dlouhou dobu a že se na nízké úrovně již nikdy nevrátí. Je tak možné, že sazby zůstanou na 7 %, i když inflace klesne pod nulu. To bude znamenat nejvyšší reálné úrokové sazby (tedy po odečtení inflace) v historii.
+
+I vysoké reálné úrokové sazby však dávají z hlediska ČNB velký smysl. Banka říká, že reálné sazby by měly být v průměru kolem +1 %. Za posledních 20 let se však do plusu dostaly málokdy a průměrně jsou hluboce záporné. I zde tedy bude chtít národní banka kompenzovat, konkrétně střadatelům jejich enormní ztráty z posledních 3 let. Blíží se konečně dobré časy pro střadatele, špatné časy pro dlužníky.
 
 ---
 
@@ -3602,7 +3624,7 @@ Suma sumárum, národní banka nesmí být názorový monolit. Musí mít jak č
 
 Zdroj: https://www.litomysl.cz/soubor/1675429568941_lilie_2023_2.pdf
 
-V loňském roce jsem podal do participativního rozpočtu návrh „Zelený pás kolem Litomyšle", který jste se, milí spoluobčané, rozhodli v hlasování podpořit. Chtěl bych za to poděkovat Vám a také paní inženýrce Rezkové, která má na starosti městskou zeleň a na provedení projektu udělala nejvíce práce. Z přidělených peněz se mimo jiné budou postupně sázet stromy podél ulice Zahájská až k vodojemu. Další úsek pásu vznikne na Prokopu za ulicí Bohdana Kopeckého. Další místa pro sázení jsou připravené na druhé straně města. Na kompletní realizaci celé myšlenky - tedy obklopení Litomyšle hustým pásmem zeleně - bude ale potřeba ještě hodně peněz a úsilí. Moc vás prosím, zda byste na tento prvotní výstřel mohli navázat a podat návrh dalšího projektu, který by v tomto úsilí pokračoval. Celý proces je poměrně jednoduchý a nezabere mnoho času. A nebojte se podávat i projekty, které s životním prostředím nesouvisí. I když se v Litomyšli žije dobře, je toho mnoho, co společně můžeme zlepšit!
+V loňském roce jsem podal do participativního rozpočtu návrh „Zelený pás kolem Litomyšle“, který jste se, milí spoluobčané, rozhodli v hlasování podpořit. Chtěl bych za to poděkovat Vám a také paní inženýrce Rezkové, která má na starosti městskou zeleň a na provedení projektu udělala nejvíce práce. Z přidělených peněz se mimo jiné budou postupně sázet stromy podél ulice Zahájská až k vodojemu. Další úsek pásu vznikne na Prokopu za ulicí Bohdana Kopeckého. Další místa pro sázení jsou připravené na druhé straně města. Na kompletní realizaci celé myšlenky - tedy obklopení Litomyšle hustým pásmem zeleně - bude ale potřeba ještě hodně peněz a úsilí. Moc vás prosím, zda byste na tento prvotní výstřel mohli navázat a podat návrh dalšího projektu, který by v tomto úsilí pokračoval. Celý proces je poměrně jednoduchý a nezabere mnoho času. A nebojte se podávat i projekty, které s životním prostředím nesouvisí. I když se v Litomyšli žije dobře, je toho mnoho, co společně můžeme zlepšit!
 
 ---
 
@@ -6518,7 +6540,7 @@ Ale když je to tak výhodné, proč to ČNB nedělá? Řada zaměstnanců, od a
 
 Projevem pnutí v ČNB v této oblasti byla loňská změna strategie správy rezerv. Centrální banka přiznala, že větší část nepotřebuje a bude usilovat o vyšší výnos. Bohužel ale došlo jen k formálnímu rozdělení rezerv na dvě části, a ne k opravdu potřebným změnám.
 
-Nenuťme centrální banku zachraňovat státní finance. Ale měli bychom jí umožnit vydělat peníze, které vydělat může, když přitom ničemu neuškodí. Podle zákona musí ČNB odvádět zisk do státního rozpočtu. Zároveň chce nyní banka zákon měnit a žádá nové pravomoci. Udělme jí při této příležitosti též mandát rezervy zhodnocovat. Navrhuji tuto formulaci: „ČNB nakládá s devizovými rezervami s péčí řádného hospodáře."
+Nenuťme centrální banku zachraňovat státní finance. Ale měli bychom jí umožnit vydělat peníze, které vydělat může, když přitom ničemu neuškodí. Podle zákona musí ČNB odvádět zisk do státního rozpočtu. Zároveň chce nyní banka zákon měnit a žádá nové pravomoci. Udělme jí při této příležitosti též mandát rezervy zhodnocovat. Navrhuji tuto formulaci: „ČNB nakládá s devizovými rezervami s péčí řádného hospodáře.“
 
 ---
 

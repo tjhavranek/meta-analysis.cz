@@ -13,7 +13,7 @@ perex: "Vysokorychlostní železnice bude stát biliony, na které se složíme 
 
 Do 12 let spojíme největší populační centra sítí vysokorychlostních železnic. Projekt nás přijde nejvýš na bilion korun. Vlaky pojedou až 350 kilometrů za hodinu. Do pár hodin se dostaneme po celém státě. Zní vám to povědomě? Není to ovšem český, nýbrž kalifornský plán na rychlovlaky. Plán z roku 2008.
 
-Střih do letošního roku, čtyři roky po plánovaném otevření tratí. Rychlovlaky z Los Angeles do San Francisca nejezdí. Rychlovlaky dokonce nejezdí v Kalifornii nikde. Kousek tratě odnikud nikam uprostřed pouště by se mohl otevřít možná už za šest let, ale i optimisté raději mluví až o roce 2033. Kalifornská správa železnic očekává, že projekt nakonec spolkne v přepočtu víc než tři biliony korun. Její bývalý šéf otevřeně hlásí: „Je to propadák."
+Střih do letošního roku, čtyři roky po plánovaném otevření tratí. Rychlovlaky z Los Angeles do San Francisca nejezdí. Rychlovlaky dokonce nejezdí v Kalifornii nikde. Kousek tratě odnikud nikam uprostřed pouště by se mohl otevřít možná už za šest let, ale i optimisté raději mluví až o roce 2033. Kalifornská správa železnic očekává, že projekt nakonec spolkne v přepočtu víc než tři biliony korun. Její bývalý šéf otevřeně hlásí: „Je to propadák.“
 
 Jasně, v Česku propadák nehrozí. Veřejné projekty stavíme – na rozdíl od Američanů – rychle a efektivně. Správa železnic má bohaté zkušenosti s výstavbou na zelené louce. O trasování rychlovlaků se u nás lidé a okolní obce určitě soudit nebudou. A hlavně – peněz máme dost! Jedna věc nás ale s Kalifornií přece jenom spojuje: Jako oni ani my jsme se vůbec neobtěžovali spočítat, jestli se nám dopravní megaprojekt vyplatí.
 
@@ -25,7 +25,7 @@ Jedinou skutečnou cost-benefit analýzou je diplomová práce (!), a ta se věn
 
 Proč stát nechce znát návratnost rychlovlaků? Nejsnazší vysvětlení zní, že odpovědní lidé už dávno vědí. Vědí, že rychlovlaky nevyjdou v plusu, pokud tedy dost průhledným způsobem neohneme čísla. Snad se mýlím a odpovědné to jen nenapadlo, neboť mají na starosti důležitější věci než nějaké biliony. Každopádně je povinností vlády jako řádného hospodáře ukázat výpočet, který obstojí v transparentním oponentním řízení, a to i před zahraničními odborníky.
 
-České rychlovlaky jsou také selháním české ekonomie. Nedaří se nám vysvětlovat principy hospodaření ani veřejnosti, ani vládě – minulé či současné. I u projektů, které jsou nějak všeobecně atraktivní a sexy, prostě musejí výnosy převážit nad náklady. Do výnosů samozřejmě počítáme nejen vybrané jízdné, ale hlavně ušetřený čas a také méně nehod a nižší emise. Výpočet není snadný. Místo racionálního pokusu o něj však slýcháme: „Přestaňte projekt zpochybňovat, začněte mu věřit!" Rychlovlaky prostě chceme a basta.
+České rychlovlaky jsou také selháním české ekonomie. Nedaří se nám vysvětlovat principy hospodaření ani veřejnosti, ani vládě – minulé či současné. I u projektů, které jsou nějak všeobecně atraktivní a sexy, prostě musejí výnosy převážit nad náklady. Do výnosů samozřejmě počítáme nejen vybrané jízdné, ale hlavně ušetřený čas a také méně nehod a nižší emise. Výpočet není snadný. Místo racionálního pokusu o něj však slýcháme: „Přestaňte projekt zpochybňovat, začněte mu věřit!“ Rychlovlaky prostě chceme a basta.
 
 Nevyplatí-li se rychlotratě, co postavit místo nich? Jedna možnost je nestavět nic a o dva nebo tři biliony snížit státní dluh. To by jistě potěšilo Národní rozpočtovou radu, ale voliče již méně.
 

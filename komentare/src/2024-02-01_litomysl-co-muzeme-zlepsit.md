@@ -28,6 +28,6 @@ Ale když cestujeme po ČR i zahraničí, vidíme věci, jež můžeme doma zlep
 
 5) Zeleň. Přeměňme městské pozemky kolem zástavby na (leso)parky – tak, jak to už máme v územním plánu. Ideální je kombinace víc domů + víc stromů. Vysázejme pás zeleně kolem města. Super, že se to už v některých lokalitách děje. Nenechme Svitavy a Ústí, aby nás předběhly v úpravě zeleně podél silnic. Propojme Benátky s Litomyšlí průchodem pod světelnou křižovatkou podél řeky. To zpříjemní procházky, ale i dennodenní život všech, co bydlí za křižovatkou.
 
-6) Porodnice. Pro budoucnost města je klíčové vrátit porodnici. Narodí-li se člověk ve městě, má k němu užší vztah. Ušetříme na domově důchodců (místo 400 milionů za novou megastavbu opravme a rozšiřme stávající budovy) a za zbylé peníze podpořme znovuotevření porodnice, byť třeba soukromé. „Narozen v Litomyšli" je atraktivní značka.
+6) Porodnice. Pro budoucnost města je klíčové vrátit porodnici. Narodí-li se člověk ve městě, má k němu užší vztah. Ušetříme na domově důchodců (místo 400 milionů za novou megastavbu opravme a rozšiřme stávající budovy) a za zbylé peníze podpořme znovuotevření porodnice, byť třeba soukromé. „Narozen v Litomyšli“ je atraktivní značka.
 
 7) Výkaly na chodnících. Tohle mimo rozvojové země vidíme zřídka. Pomohlo by víc sáčků se zabudovanou lopatkou, na každém odpadkovém koši poděkování pejskařům, že po svých pejscích uklízí. Je to otrava, ale zpříjemníme život všem.

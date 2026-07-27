@@ -11,7 +11,7 @@ perex: "Dnešní padesátníci se dožijí státního dluhu přes 100 procent HD
 
 # Návod pro dlužníky a střadatele, jak přežít dluh větší než ekonomika
 
-Podle základního scénáře Zprávy o udržitelnosti veřejných financí z dílny Národní rozpočtové rady přeteče český státní dluh roční objem tuzemské výroby v roce 2050. Od zveřejnění zprávy jsme sice přijali lehkou reformu důchodů, ale též se zavázali k vyšším výdajům na obranu. Rozpočtová rada „bod zlomu" v příští analýze posune blíž současnosti. Jak ukazují harvardští profesoři Reinhart a Rogoff, takové zadlužení je obvykle spojené se zaostáváním životní úrovně.
+Podle základního scénáře Zprávy o udržitelnosti veřejných financí z dílny Národní rozpočtové rady přeteče český státní dluh roční objem tuzemské výroby v roce 2050. Od zveřejnění zprávy jsme sice přijali lehkou reformu důchodů, ale též se zavázali k vyšším výdajům na obranu. Rozpočtová rada „bod zlomu“ v příští analýze posune blíž současnosti. Jak ukazují harvardští profesoři Reinhart a Rogoff, takové zadlužení je obvykle spojené se zaostáváním životní úrovně.
 
 Zaplatí dluh naše děti a vnoučata? Pravděpodobně ho zaplatí už ti z nás, kteří spoří a nepůjčují si. Dluh, který před sebou společně tlačíme, nemusí znamenat vyšší daně pro děti. Nemusí znamenat ani nižší důchody pro nás. Může znamenat inflaci a částečný státní bankrot. Všechna řešení jsou ošklivá, ale některé si vybrat musíme. Přitom politicky průchozí je jediné.
 

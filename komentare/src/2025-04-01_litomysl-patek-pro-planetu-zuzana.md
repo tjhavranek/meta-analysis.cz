@@ -17,7 +17,7 @@ title_suffix: "Zuzana Havránková"
 
 Školní jídelna Primirest přestala jednou v měsíci nabízet jakékoli jídlo obsahující maso. To samo o sobě není problém. Problém je, jak to Primirest dětem vysvětluje. Dostali následující zprávu:
 
-„Pátek pro planetu (…) zahrnuje: Podporu zdravého životního stylu a zvýšení povědomí o přínosech vegetariánské a veganské stravy, snížení spotřeby masa s cílem přispět ke zmírnění (…) emisí (…)"
+„Pátek pro planetu (…) zahrnuje: Podporu zdravého životního stylu a zvýšení povědomí o přínosech vegetariánské a veganské stravy, snížení spotřeby masa s cílem přispět ke zmírnění (…) emisí (…)“
 
 To je z vědeckého pohledu zavádějící. Řekněme to na rovinu: je to lež. Ponechme zatím stranou mizivý vliv na emise, který v této Lilii probírá manžel (a opravdu chceme začít řešit klima tak, že dětem sebereme maso?). Podívejme se, co moderní věda říká o dopadech na zdraví. Hlavní body:
 

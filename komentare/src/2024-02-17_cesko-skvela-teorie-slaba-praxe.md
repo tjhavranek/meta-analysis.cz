@@ -29,6 +29,6 @@ Jinými slovy, kromě expertizy je zapotřebí ochota tlačit těžká rozhodnut
 
 ## Zaplaťme české špičky
 
-Zadruhé, mnoho našich elitních talentů zmíněných výše buď trvale žije v zahraničí, nebo tam tráví značnou část roku. Dnes jim často není možné nabídnout „balíček" tak atraktivní, aby je do české národohospodářské praxe přilákal. K tomu musíme prolomit český haléřový management a úměrně k vyšší odpovědnosti zvednout také platy na klíčových ekonomických postech. Vyděláme na tom nakonec všichni.
+Zadruhé, mnoho našich elitních talentů zmíněných výše buď trvale žije v zahraničí, nebo tam tráví značnou část roku. Dnes jim často není možné nabídnout „balíček“ tak atraktivní, aby je do české národohospodářské praxe přilákal. K tomu musíme prolomit český haléřový management a úměrně k vyšší odpovědnosti zvednout také platy na klíčových ekonomických postech. Vyděláme na tom nakonec všichni.
 
 Přispět k tomu můžeme už letos. V prosinci končí první mandát radnímu ČNB Tomáši Holubovi. Ten si zřejmě druhý (a poslední) mandát teď nevyplýtvá, neboť je přirozeným favoritem na guvernérské křeslo od roku 2028. Věřme, že na jeho místo prezident zvolí experta s výraznou zahraniční zkušeností, třeba z Mezinárodního měnového fondu. Ruku v ruce s tím potřebujeme zvednout platy radních skrze bonusy za udržování nízké inflace.

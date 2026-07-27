@@ -13,7 +13,7 @@ perex: "Konec EET a méně agresivní výběr daní posunuly část lidí a fire
 
 Mezinárodní srovnání výkonu našeho hospodářství vyznívá prachbídně. Ve dvou hlavních disciplínách, cenové stabilitě a růstu hrubého domácího produktu, se od covidu řadíme poblíž chvostu pelotonu všech rozvinutých zemí. Naše inflace patří k nejvyšším ve vyspělém světě dokonce již 5 let – naposledy byla kousek pod cílem ČNB na začátku roku 2018, a to jen 3 měsíce.
 
-U inflace omluvu nenajdeme. Pět let je příliš dlouho, abychom ji mohli svést na zahraniční šoky. Drtivá většina ekonomické teorie i praxe hovoří stejně: za dlouhodobě vysokou inflaci odpovídá v každé zemi národní banka. Ta naše aktuálně slaví inflaci na pětinásobku svého cíle: „Nastavení měnové politiky bylo adekvátní." Jinde je zvykem v takové situaci psát omluvné dopisy veřejnosti.
+U inflace omluvu nenajdeme. Pět let je příliš dlouho, abychom ji mohli svést na zahraniční šoky. Drtivá většina ekonomické teorie i praxe hovoří stejně: za dlouhodobě vysokou inflaci odpovídá v každé zemi národní banka. Ta naše aktuálně slaví inflaci na pětinásobku svého cíle: „Nastavení měnové politiky bylo adekvátní.“ Jinde je zvykem v takové situaci psát omluvné dopisy veřejnosti.
 
 Nepomáhá česká specialita, feudalismus obsazování postů ČNB. Vedení vybírá prezident samojediný. OK, dokud jde o nezávislé experty. Ještě exguvernér Singer býval občas přehlasován radou. Od té doby systém degeneroval v léno, kdy prezident povýší guvernéra, jenž sám a najednou pasuje většinu rady. Výsledkem je diktatura jednoho názoru a tektonické změny při výměně guvernéra.
 
@@ -21,7 +21,7 @@ Nepomáhá česká specialita, feudalismus obsazování postů ČNB. Vedení vyb
 
 Utěšit nás může, že aspoň hrubý domácí produkt na tom není tak mizerně, jak vyplývá z oficiálních dat. Statistici umí měřit jen to, co vidí, tedy takzvanou bílou ekonomiku. Šedou, neoficiální ekonomiku, jež funguje téměř výlučně v hotovosti, mohou jen odhadovat. A právě podíl šedé ekonomiky se po covidu zvýšil, což v oficiálních číslech není odraženo.
 
-Abychom vychýlení v HDP zhruba spočítali, musíme se vrátit k zavedení EET. Tehdy jsme chvíli rostli skoro nejrychleji na světě. Pamatujete ty časy? Pokud ne, nevadí. Ale podivný skok českého HDP po zavedení EET v porovnání s ostatními zeměmi nám umožní změřit míru tehdejšího „obílení ekonomiky". Tomuto postupu se v ekonometrii říká syntetická kontrolní metoda.
+Abychom vychýlení v HDP zhruba spočítali, musíme se vrátit k zavedení EET. Tehdy jsme chvíli rostli skoro nejrychleji na světě. Pamatujete ty časy? Pokud ne, nevadí. Ale podivný skok českého HDP po zavedení EET v porovnání s ostatními zeměmi nám umožní změřit míru tehdejšího „obílení ekonomiky“. Tomuto postupu se v ekonometrii říká syntetická kontrolní metoda.
 
 Obílení ekonomiky šlo ruku v ruce s přecházením na platby kartou a přesouváním odměn zaměstnancům v restauracích do oficiální mzdy místo bokem v hotovosti. Platby, které předtím statistický úřad neviděl, najednou šlo započítat. Přišel oficiální růst HDP, aniž se ekonomika zvětšila – jen se zvětšil podíl bílé složky oproti šedé. Po covidu sledujeme proces opačný.
 

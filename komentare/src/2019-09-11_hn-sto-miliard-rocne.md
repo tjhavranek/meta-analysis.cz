@@ -34,4 +34,4 @@ Ale když je to tak výhodné, proč to ČNB nedělá? Řada zaměstnanců, od a
 
 Projevem pnutí v ČNB v této oblasti byla loňská změna strategie správy rezerv. Centrální banka přiznala, že větší část nepotřebuje a bude usilovat o vyšší výnos. Bohužel ale došlo jen k formálnímu rozdělení rezerv na dvě části, a ne k opravdu potřebným změnám.
 
-Nenuťme centrální banku zachraňovat státní finance. Ale měli bychom jí umožnit vydělat peníze, které vydělat může, když přitom ničemu neuškodí. Podle zákona musí ČNB odvádět zisk do státního rozpočtu. Zároveň chce nyní banka zákon měnit a žádá nové pravomoci. Udělme jí při této příležitosti též mandát rezervy zhodnocovat. Navrhuji tuto formulaci: „ČNB nakládá s devizovými rezervami s péčí řádného hospodáře."
+Nenuťme centrální banku zachraňovat státní finance. Ale měli bychom jí umožnit vydělat peníze, které vydělat může, když přitom ničemu neuškodí. Podle zákona musí ČNB odvádět zisk do státního rozpočtu. Zároveň chce nyní banka zákon měnit a žádá nové pravomoci. Udělme jí při této příležitosti též mandát rezervy zhodnocovat. Navrhuji tuto formulaci: „ČNB nakládá s devizovými rezervami s péčí řádného hospodáře.“

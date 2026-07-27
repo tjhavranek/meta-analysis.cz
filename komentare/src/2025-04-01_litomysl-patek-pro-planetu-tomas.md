@@ -15,11 +15,11 @@ title_suffix: "Tomáš Havránek"
 
 # „Pátek pro planetu“ ve školní jídelně planetě nepomůže a dětem uškodí
 
-Školní jídelna Primirest tvrdí, že děti pomohou planetě i sobě, budou-li jíst méně masa. Vegetariánská a veganská strava je prý zdravá. Akce se jmenuje „Pátek pro planetu". Kdo by nechtěl zdravější děti a planetu?
+Školní jídelna Primirest tvrdí, že děti pomohou planetě i sobě, budou-li jíst méně masa. Vegetariánská a veganská strava je prý zdravá. Akce se jmenuje „Pátek pro planetu“. Kdo by nechtěl zdravější děti a planetu?
 
 Má žena v této Lilii shrnuje výzkum o výživě: děti potřebují pestrou stravu, v níž má maso (hlavně hovězí) a jiné živočišné produkty nezastupitelné místo. Vegetariánská či veganská dieta není zdravější. Jde se tak živit, ale téměř nutností pro zdraví jsou pak pravidelné krevní testy a prášky. Respektuji ty, co to vydrží. Kdo se tak chce živit, ať se tak živí – ale dejme dětem informace i o nevýhodách, neb ty jsou značné.
 
-Teď se podívejme na tu část „pro planetu". Chov hospodářských zvířat skutečně přispívá k vyšším emisím skleníkových plynů, to je vědecký fakt. Hospodářská zvířata produkují metan, díky němuž se rychleji otepluje. Protože se otepluje, jiným zvířatům, rostlinám a lidem to škodí. Budou-li děti jíst méně masa, mohlo by být nakonec méně krav, tedy menší oteplování a „zdravější" planeta.
+Teď se podívejme na tu část „pro planetu“. Chov hospodářských zvířat skutečně přispívá k vyšším emisím skleníkových plynů, to je vědecký fakt. Hospodářská zvířata produkují metan, díky němuž se rychleji otepluje. Protože se otepluje, jiným zvířatům, rostlinám a lidem to škodí. Budou-li děti jíst méně masa, mohlo by být nakonec méně krav, tedy menší oteplování a „zdravější“ planeta.
 
 Není ale jasné, co se vlastně stane s počty krav, budou-li děti v Litomyšli jíst méně masa. Záleží na tom, jak se zachovají ostatní spotřebitelé a výrobci. S nižší poptávkou klesne cena, takže si maso budou moci dovolit i chudší lidé v Africe. Je-li nabídka neelastická, počet krav se změní málo či vůbec. Absurditu věci ilustruje skutečnost, že lidi taky produkují metan. Některá jídla metan podporují více. Podle stejné logiky bychom v pátek neměli jíst fazole!
 

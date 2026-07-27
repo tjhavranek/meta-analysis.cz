@@ -13,7 +13,7 @@ word_count: "421"
 
 # Mladí florbalisté úspěšní na mezinárodních i školních soutěžích
 
-Florbalový kalendář má pro květen vyhrazeny speciální turnaje. V České Třebové jsou to tradiční Dny florbalu, kam se sjíždějí nejlepší školní týmy kraje. V Praze je to mezinárodní Prague Floorball Cup, největší středoevropský turnaj pro hráče v „mini" florbalu do 11 let. Litomyšl letos do obou soutěží vyslala hned dva týmy. Jak si vedly?
+Florbalový kalendář má pro květen vyhrazeny speciální turnaje. V České Třebové jsou to tradiční Dny florbalu, kam se sjíždějí nejlepší školní týmy kraje. V Praze je to mezinárodní Prague Floorball Cup, největší středoevropský turnaj pro hráče v „mini“ florbalu do 11 let. Litomyšl letos do obou soutěží vyslala hned dva týmy. Jak si vedly?
 
 Na pražský turnaj vyjeli zvlášť mladší a starší elévové. V obou kategoriích dohromady soutěžilo 38 týmů ze střední Evropy. Starší elévové na úvod podlehli Kladnu, ale chuť si spravili překvapivou výhrou nad berlínskými Red Devils. Následující výhra nad Říčanami jim zajistila postup z druhého místa ve skupině, na čemž nic nezměnila ani těsná večerní porážka s pražskými Black Angels.
 
