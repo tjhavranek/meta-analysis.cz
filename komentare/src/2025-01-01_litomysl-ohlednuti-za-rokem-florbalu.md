@@ -9,6 +9,9 @@ headline: "Ohlédnutí za nejúspěšnějším rokem florbalu v Litomyšli"
 byline: "Tomáš Havránek"
 source: "image"
 word_count: "416"
+images: "2025-01_florbal-tym-u-branky.jpg"
+image_alt: "Skupinové foto litomyšlského florbalového týmu v modrých dresech s bílou lilií. Hráči klečí a stojí před brankou v hale, kolem nich leží florbalové hole."
+image_credit: "Tutéž fotografii autor poslal i k příspěvku z října 2025."
 ---
 
 # Ohlédnutí za nejúspěšnějším rokem florbalu v Litomyšli

@@ -10,6 +10,8 @@ byline: "Tomáš Havránek"
 source: "image"
 word_count: "353"
 body_note: "Confirmed standalone signed piece in the section „SPORT“, lower half of the page; body runs across the two left columns, the second narrowing beside a photograph. Distinct from the motocross report above it (signed Petr Kovář)."
+images: "2024-11_florbal-velke-hriste.jpg"
+image_alt: "Tým mladších žáků v modrých dresech s bílou lilií stojí v brance a kolem ní; brankář v plné výstroji leží vpředu na zelené podlaze. V brance visí červená vlajka s lilií."
 ---
 
 # Florbalisté mladší žáci poprvé na velkém hřišti

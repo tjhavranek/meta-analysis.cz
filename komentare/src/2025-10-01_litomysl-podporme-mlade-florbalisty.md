@@ -10,6 +10,8 @@ byline: "Tomáš Havránek"
 source: "image"
 word_count: "414"
 body_note: "E-mailová adresa je v tisku vysázena s mezerou: „t.havranek @gmail.com“ – přepsáno tak, jak je vytištěno."
+images: "2025-01_florbal-tym-u-branky.jpg"
+image_alt: "Skupinové foto litomyšlského florbalového týmu v modrých dresech s bílou lilií. Hráči klečí a stojí před brankou v hale, kolem nich leží florbalové hole."
 ---
 
 # Podpořme mladé florbalisty v neděli 12. října

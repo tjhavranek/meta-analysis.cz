@@ -9,6 +9,8 @@ headline: "Mladí florbalisté Litomyšle úspěšní na největším středoevr
 byline: "Tomáš Havránek"
 source: "image"
 word_count: "405"
+images: "2025-02_florbal-vlajky-zemi.jpg"
+image_alt: "Litomyšlští florbalisté slaví v hale s holemi zdviženými nad hlavu. Na stěně za nimi visí vlajky Lotyšska, Polska, Slovenska, Česka, Německa a Rakouska."
 ---
 
 # Mladí florbalisté Litomyšle úspěšní na největším středoevropském turnaji

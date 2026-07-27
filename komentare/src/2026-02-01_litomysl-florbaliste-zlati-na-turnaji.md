@@ -9,6 +9,8 @@ headline: "Mladí florbalisté zlatí na největším evropském turnaji!"
 byline: "Tomáš Havránek"
 source: "image"
 word_count: "413"
+images: "2026-02_florbal-pfc-zlato.png"
+image_alt: "Sedm mladých florbalistů v modrých dresech Litomyšle se zlatými medailemi na krku pózuje v hale; drží diplom a zlatou plaketu turnaje PFC."
 ---
 
 # Mladí florbalisté zlatí na největším evropském turnaji!

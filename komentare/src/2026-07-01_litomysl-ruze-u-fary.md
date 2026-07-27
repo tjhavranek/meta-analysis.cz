@@ -11,6 +11,8 @@ byline: "Tomáš Havránek"
 source: "image"
 word_count: "391"
 body_note: "Rubrika Dopisy čtenářů. Delší citovaná pasáž je text babičky autora, Marie Lorencové, rozené Kudrnové."
+images: "2026-07_lavicka-ruze.png"
+image_alt: "Modrošedá dřevěná lavička u kamenné zdi, obrostlá keři žlutých růží. Na opěradle je připevněná kovová růže, do sedáku je vyryto „ML 1932–2023“."
 ---
 
 # Poděkování za péči o růže u fary

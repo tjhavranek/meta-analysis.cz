@@ -9,6 +9,8 @@ headline: "Litomyšlský florbal na jaře"
 byline: "Tomáš Havránek"
 source: "draft"
 word_count: "409"
+images: "2025-05_florbal-vlajka.jpg"
+image_alt: "Florbalisté Litomyšle v modrých dresech pózují venku před budovou; uprostřed drží červenou vlajku s bílou litomyšlskou lilií."
 ---
 
 # Litomyšlský florbal na jaře

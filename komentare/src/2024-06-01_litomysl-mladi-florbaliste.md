@@ -10,6 +10,9 @@ byline: "Tomáš Havránek"
 source: "image"
 word_count: "401"
 body_note: "Standalone signed piece at the top of the sports page; body runs across all three columns. Signature printed as „Tomáš Havránek, foto: archiv“."
+images: "2024-06_florbal-bronz.jpg"
+image_alt: "Nejmladší florbalisté s bronzovými medailemi na krku stojí v trávě vedle velkého průsvitného písmene G a společně zvedají nad hlavu kovovou trofej."
+image_credit: "Foto: pořadatelé turnaje"
 ---
 
 # Mladí florbalisté mezi nejlepšími v republice
