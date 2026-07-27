@@ -6,7 +6,7 @@ url: "https://www.maer-net.org/post/bias-correction-made-easy-a-web-app-for-meta
 date: "2025-09-27"
 headline: "Bias Correction Made Easy: A Web App for Meta-Analysis at EasyMeta.org"
 byline: "Zuzana Irsova"
-word_count: "268"
+word_count: "257"
 perex: "Run MAIVE, PET-PEESE, and EK with one click — no coding, no installation."
 body_note: "Text je ponechán v původním znění. Aplikace se mezitím přestěhovala na spuriousprecision.com — easymeta.org sice přesměrovává, ale odkaz na demo se rozpadl, takže míří rovnou na novou adresu."
 ---

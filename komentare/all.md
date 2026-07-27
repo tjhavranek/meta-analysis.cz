@@ -908,6 +908,8 @@ Dobře si je nicméně vědoma toho, že propad porodnosti v rozvinutém světě
 
 *Lilie, září 2025. Tomáš Havránek.*
 
+*Nevyšlo. Text byl napsán pro otištění v Lilii, měsíčníku města Litomyšle; uvedené datum je zamýšlené, nikoli datum otištění.*
+
 Zdroj: https://meta-analysis.cz/komentare/litomysl-privadece-obchvat/
 
 Dopravní peklo lidem u hlavní silnice skončí za dva roky. Skončí naše litomyšlská ostuda, kdy jsme si pasivitou mezi lety 2010-2018 způsobili zpoždění na úseku, který měl původně být stavěn jako první. I nadále bude ale provoz na hlavní velmi silný, protože silnice bude fungovat jako dálniční přivaděč pro Českou Třebovou a Ústí nad Orlicí.
@@ -6049,6 +6051,8 @@ Dostal jsem k nahlédnutí nově upravený projekt dálnice. Musím uznat, že n
 ## Na dálnici bude u Litomyšle mezera. Jak jsme se k tomu dopracovali? (díl druhý)
 
 *Lilie, únor 2021. Tomáš Havránek.*
+
+*Nevyšlo. Text byl napsán pro otištění v Lilii, měsíčníku města Litomyšle; uvedené datum je zamýšlené, nikoli datum otištění.*
 
 Zdroj: https://meta-analysis.cz/komentare/litomysl-dalnice-mezera-2/
 

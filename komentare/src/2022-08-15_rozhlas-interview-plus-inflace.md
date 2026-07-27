@@ -9,4 +9,3 @@ byline: "Tomáš Havránek"
 interviewer: "Jan Bumba"
 ---
 
-

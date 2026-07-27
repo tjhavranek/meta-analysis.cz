@@ -7,10 +7,10 @@ url_label: "Rubrika Školní úspěchy"
 date: "2026-05-11"
 headline: "Florbalisté prvního stupně sahali po medaili z Dní florbalu"
 byline: "Tomáš Havránek"
+genre: "report"
 word_count: "159"
 body_note: "Krátká zpráva o turnaji, kterou autor napsal jako trenér a poslal vedení školy; škola ji zveřejnila v rubrice Školní úspěchy, kde se příspěvky neuvádějí s podpisem. Autorství doloženo e-mailem řediteli školy z 11. 5. 2026. Přepsáno ze stránky školy, jména hráčů ponechána tak, jak je škola zveřejnila."
 ---
-
 
 # Florbalisté prvního stupně sahali po medaili z Dní florbalu
 

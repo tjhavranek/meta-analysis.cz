@@ -6,7 +6,7 @@ url: "https://www.maer-net.org/post/methods-guidelines-for-meta-analysis"
 date: "2023-11-27"
 headline: "Methods Guidelines for Meta-Analysis"
 byline: "Zuzana Irsova"
-word_count: "916"
+word_count: "925"
 ---
 
 # Methods Guidelines for Meta-Analysis

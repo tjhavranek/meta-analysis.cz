@@ -7,7 +7,7 @@ date_precision: "month"
 headline: "Na dálnici bude u Litomyšle mezera. Jak jsme se k tomu dopracovali? (díl druhý)"
 byline: "Tomáš Havránek"
 source: "draft"
-word_count: "427"
+word_count: "413"
 unpublished: "Pokračování slíbené v prvním dílu; v Lilii se nakonec neobjevilo. Text sám ohlašuje ještě třetí díl, který rovněž nevyšel."
 body_note: "Navazuje na první díl z čísla 2021/1, který končí větou: „Kvůli limitu počtu znaků musím psát na pokračování. Příště tedy začneme řešením otázky, na kterou jsem nejčastěji tázán: kdo za to může?“ Uvedené číslo vydání je zamýšlené."
 ---

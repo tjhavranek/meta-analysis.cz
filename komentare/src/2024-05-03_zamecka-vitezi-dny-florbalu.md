@@ -7,10 +7,10 @@ url_label: "Rubrika Školní úspěchy"
 date: "2024-05-03"
 headline: "Zámecká vítězí na Dnech florbalu 2024"
 byline: "Tomáš Havránek"
+genre: "report"
 word_count: "178"
 body_note: "Krátká zpráva o turnaji, kterou autor napsal jako trenér a poslal vedení školy; škola ji zveřejnila v rubrice Školní úspěchy, kde se příspěvky neuvádějí s podpisem. Autorství doloženo e-mailem řediteli školy z 3. 5. 2024. Přepsáno ze stránky školy, jména hráčů ponechána tak, jak je škola zveřejnila."
 ---
-
 
 # Zámecká vítězí na Dnech florbalu 2024
 

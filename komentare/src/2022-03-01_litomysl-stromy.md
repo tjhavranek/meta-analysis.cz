@@ -8,7 +8,7 @@ date_precision: "month"
 headline: "Těšme se na víc stromů v Litomyšli"
 byline: "Tomáš Havránek"
 source: "draft"
-word_count: "969"
+word_count: "974"
 ---
 
 # Těšme se na víc stromů v Litomyšli

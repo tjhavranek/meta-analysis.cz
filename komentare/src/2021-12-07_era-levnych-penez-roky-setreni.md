@@ -5,7 +5,7 @@ date: "2021-12-07"
 headline: "Éru levných peněz vystřídají roky šetření. Z inflační krize se ale neprošetříme, když zároveň neporosteme"
 status: full
 byline: "Tomáš Havránek"
-word_count: "569"
+word_count: "578"
 ---
 
 # Éru levných peněz vystřídají roky šetření. Z inflační krize se ale neprošetříme, když zároveň neporosteme

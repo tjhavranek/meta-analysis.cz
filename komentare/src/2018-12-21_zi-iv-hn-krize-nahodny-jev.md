@@ -7,7 +7,7 @@ date: "2018-12-21"
 headline: "Krize je typický náhodný jev. Mýlíme se častěji než jiní vědci, říká ekonomka roku Zuzana Havránková"
 byline: "Zuzana Havránková"
 interviewer: "Miloš Čermák"
-word_count: "1854"
+word_count: "1851"
 perex: "Narodila se na Slovensku, dnes však patří k nejcitovanějším mladým ekonomům v Česku. Publikuje často se svým manželem, rovněž ekonomem. Má za sebou úspěšný konec roku: nedávno byla habilitována docentkou a získala titul Ekonomka roku."
 body_note: "Autorizovaná verze rozhovoru, kterou Zuzana Havránková schválila pro redakci. Vydaná verze je za paywallem a může se v detailech lišit."
 ---

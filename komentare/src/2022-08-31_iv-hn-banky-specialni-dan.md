@@ -7,7 +7,7 @@ date: "2022-08-31"
 headline: "Banky si speciální daň zaslouží, rýžují peníze a nemusí se ani snažit"
 byline: "Tomáš Havránek"
 interviewer: "David Busta"
-word_count: "3005"
+word_count: "2998"
 perex: "Současné dění v České národní bance znepokojuje ekonomy, zejména je zaráží změny v modelu, který se snaží předvídat chování ekonomiky. Profesor Tomáš Havránek, jenž v ČNB pracoval deset let, v rozhovoru přibližuje, jak přesně prognózy fungují."
 body_note: "Autorizovaná verze rozhovoru — text redakce s úpravami autora. Vydaná verze v Hospodářských novinách je za placenou zdí."
 ---

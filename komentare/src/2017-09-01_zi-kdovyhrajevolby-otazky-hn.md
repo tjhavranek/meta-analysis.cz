@@ -9,6 +9,7 @@ date_precision: "month"
 headline: "Dvanáct otázek Hospodářských novin k modelu KdoVyhrajeVolby.cz"
 byline: "Zuzana Havránková"
 interviewer: "redakce Hospodářských novin"
+interviewer_type: "Organization"
 word_count: "987"
 body_note: "Písemné odpovědi na dvanáct otázek Hospodářských novin, které autorka vystavila jako PDF na webu projektu KdoVyhrajeVolby.cz; titulek je popisný, samotné PDF žádný nemá. Z těchto odpovědí čerpá článek Markéty Plíhalové z 29. 8. 2017 — odpověď na druhou otázku je v něm citována doslova. Web projektu zanikl, text pochází z archivu Wayback Machine; soubor tam byl uložen v září 2017, proto je uveden jen měsíc."
 ---

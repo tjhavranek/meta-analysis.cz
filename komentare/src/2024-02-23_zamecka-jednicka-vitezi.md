@@ -7,10 +7,10 @@ url_label: "Rubrika Školní úspěchy"
 date: "2024-02-23"
 headline: "Jednička vítězí!"
 byline: "Tomáš Havránek"
-word_count: "236"
-body_note: "Krátká zpráva o turnaji, kterou autor napsal jako trenér a poslal vedení školy; škola ji zveřejnila v rubrice Školní úspěchy, kde se příspěvky neuvádějí s podpisem. Autorství doloženo e-mailem řediteli školy z 26. 2. 2024. Přepsáno ze stránky školy, jména hráčů ponechána tak, jak je škola zveřejnila."
+genre: "report"
+word_count: "235"
+body_note: "Krátká zpráva o turnaji, kterou autor napsal jako trenér a poslal vedení školy; škola ji zveřejnila v rubrice Školní úspěchy, kde se příspěvky neuvádějí s podpisem. Autorství doloženo e-mailem řediteli školy z 26. 2. 2024; uvedené datum je datum turnaje, kterým škola příspěvek označila, text tedy vyšel až po něm. Přepsáno ze stránky školy, jména hráčů ponechána tak, jak je škola zveřejnila."
 ---
-
 
 # Jednička vítězí!
 

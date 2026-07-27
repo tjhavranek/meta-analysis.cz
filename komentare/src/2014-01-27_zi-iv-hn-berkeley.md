@@ -8,7 +8,7 @@ headline: "Z mateřské zamíří rovnou do Berkeley"
 byline: "Zuzana Havránková"
 interviewer: "Julie Daňková"
 source: "draft"
-word_count: "1440"
+word_count: "1441"
 body_note: "Písemné odpovědi, které Zuzana Havránková poslala redakci. Vydaný text je reportáž z těchto odpovědí čerpající, ne otázky a odpovědi, a je z větší části za paywallem. Otázky jsou v původním znění redaktorky včetně překlepů a pravopisu jmen."
 ---
 

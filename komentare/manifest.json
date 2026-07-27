@@ -27,31 +27,36 @@
   "link_only": "audio or video; no text is stored, the record links to the source",
   "unpublished_manuscript": "written for the outlet and submitted, but never printed; the date is the issue it was written for, not a publication date"
  },
+ "provenance_meanings": {
+  "editorial": "an outlet's editor stood between the author and the reader",
+  "self_published": "posted by the author, with no outlet editing it",
+  "unpublished": "never printed anywhere, so no editor and no publication date"
+ },
  "files": {
   "corpus.jsonl": {
    "url": "https://meta-analysis.cz/komentare/corpus.jsonl",
-   "bytes": 1332830,
-   "sha256": "7014e4a543c9118f066f19ce843fb800be1efbe11ea6d9abe45c8021d18fd4aa"
+   "bytes": 1332972,
+   "sha256": "7f5e8bfad7823d27ea91944da12823fe575c30a43a1d86739d12a43c7e665ead"
   },
   "index.json": {
    "url": "https://meta-analysis.cz/komentare/index.json",
-   "bytes": 1355282,
-   "sha256": "7b9fbb6cef6311c711888ea370e4ed2b000f3e74b9c07bcd1d065c01124ac491"
+   "bytes": 1355452,
+   "sha256": "1175a4c2ecfab91de75655e2d98cd5f08f86b9f61e79e193bfc4b20bf6a6f67d"
   },
   "all.md": {
    "url": "https://meta-analysis.cz/komentare/all.md",
-   "bytes": 1177648,
-   "sha256": "01d3630087ead4b4be399431bec165b27d42ce87b4bd2f2161762cb24f424da9"
+   "bytes": 1177944,
+   "sha256": "cbcfee6bd2a7707c3ff788d85b41d350081acb74afda9429926e7a8cdcd4e589"
   },
   "llms.txt": {
    "url": "https://meta-analysis.cz/komentare/llms.txt",
-   "bytes": 41746,
-   "sha256": "58e147ca33115c1a679e6227561ca348ea77a4f84049fddd820e6ff994a922a1"
+   "bytes": 41885,
+   "sha256": "3f2bddb882c9d542d4bdfc0d11dc78d94a1e83458f87e36d2c88b428ebba1ac4"
   },
   "feed.xml": {
    "url": "https://meta-analysis.cz/komentare/feed.xml",
-   "bytes": 1321959,
-   "sha256": "78711fa69fa65bfa4551c58c0ca47d09d5d72577aabea8784236c88c1b44dd4c"
+   "bytes": 1322205,
+   "sha256": "6a99d2ddd319681f9062e7e606a29f65c810a5c7c5e5ce9351df4c9230f58251"
   }
  },
  "generated_from": [

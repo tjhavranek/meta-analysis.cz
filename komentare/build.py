@@ -95,8 +95,9 @@ SECTIONS = {
     "litomysl": dict(
         title="Litomyšlské sloupky",
         short="Litomyšl",
-        desc="Sloupky pro Lilii, měsíčník města Litomyšle — doprava, zeleň, školství, "
-             "sport a další místní témata.",
+        desc="Především sloupky pro Lilii, měsíčník města Litomyšle — doprava, zeleň, "
+             "školství, sport a další místní témata. Několik textů vyšlo jinde v "
+             "Litomyšli: na webu ZŠ Zámecká a v participativním rozpočtu města.",
     ),
     "rozhovory": dict(
         title="Rozhovory",
@@ -160,7 +161,8 @@ MEDIA_LABEL = {"video": "video", "audio": "audio"}
 # Where a text was self-published rather than edited by an outlet. The archive mixes
 # both, and a retrieval corpus should be able to tell them apart: an HN op-ed passed an
 # editor, a manifesto on the author's own site did not.
-SELF_PUBLISHED = re.compile(r"(?i)^(LinkedIn|MAER-Net|Zrušme inflaci|zrusme-inflaci|SYRI)$")
+SELF_PUBLISHED = re.compile(
+    r"(?i)^(LinkedIn|MAER\-Net|Zrušme inflaci|zrusme\-inflaci|SYRI|KdoVyhrajeVolby\.cz)$")
 
 # headlines carried by more than one item; filled in main(). Such items always show
 # their byline so that two rows never render as the same link text.
@@ -623,19 +625,31 @@ def write_item(a):
     # genre — never OpinionNewsArticle, which would claim it is the author's opinion
     # column when it is material written for newsrooms to quote.
     is_pr = a.get("genre") == "press_release"
+    # Nothing was ever printed, so there is no publisher and no publication date. The
+    # page has always said so in Czech; the markup used to say the opposite, which is
+    # the version a machine reads. datePublished + publisher on a withdrawn draft
+    # asserts he published it in Lilie. Report the writing date as dateCreated instead.
+    unpub = bool(a.get("unpublished"))
+    # Not everything in the archive is an opinion column. A match report is straight
+    # factual reporting; OpinionNewsArticle would tell a machine it is his argument.
+    is_report = a.get("genre") == "report"
 
     node = {
-        "@type": "Article" if (is_iv or is_pr) else "OpinionNewsArticle",
+        "@type": ("Article" if (is_iv or is_pr or unpub or is_report)
+                  else "OpinionNewsArticle"),
         "@id": canonical + "#article",
         "mainEntityOfPage": canonical,
         "url": canonical,
         "headline": a["headline"],
         "inLanguage": lang,
-        "datePublished": a["date"],
+        ("dateCreated" if unpub else "datePublished"): a["date"],
         "isAccessibleForFree": True,
-        "publisher": {"@type": "Organization", "name": a["outlet"]},
         "articleSection": SECTIONS[a["category"]]["title"],
     }
+    if unpub:
+        node["creativeWorkStatus"] = "Unpublished"
+    else:
+        node["publisher"] = {"@type": "Organization", "name": a["outlet"]}
     persons = [{k: v for k, v in (("@type", "Person"), ("name", n),
                                   ("sameAs", ORCIDS.get(n))) if v} for n in names]
     if is_iv:
@@ -647,7 +661,10 @@ def write_item(a):
             node["author"] = [{"@type": a.get("written_by_type", "Organization"),
                                "name": a["written_by"]}]
         elif a.get("interviewer"):
-            node["author"] = [{"@type": "Person", "name": a["interviewer"]}]
+            # usually a journalist, but sometimes a whole newsroom put the questions,
+            # and typing "redakce Hospodářských novin" as a Person is simply wrong
+            node["author"] = [{"@type": a.get("interviewer_type", "Person"),
+                               "name": a["interviewer"]}]
         else:
             node["author"] = [{"@type": "Organization", "name": a["outlet"]}]
     else:
@@ -657,7 +674,7 @@ def write_item(a):
     if a.get("url"):
         node["isBasedOn"] = a["url"]
     if a.get("date_precision") == "month":
-        node["datePublished"] = a["date"][:7]
+        node["dateCreated" if unpub else "datePublished"] = a["date"][:7]
     if a.get("audio_url"):
         # the same interview as an audio recording — a distinct media object, not a
         # duplicate work, so schema.org's `audio` says exactly that
@@ -748,7 +765,9 @@ def write_item(a):
 
     head = (f'<meta property="og:type" content="article" />\n'
             + "".join(f'<meta name="author" content="{esc(n)}" />\n' for n in names)
-            + f'<meta property="article:published_time" content="{a["date"]}" />\n'
+            # only for things that actually appeared; see `unpub` above
+            + ("" if unpub else
+               f'<meta property="article:published_time" content="{a["date"]}" />\n')
             # plain-text source of this page, for anything that would rather not parse HTML
             + f'<link rel="alternate" type="text/markdown" '
               f'href="{PATH}/src/{esc(a["file"])}" title="Zdrojový text (Markdown)" />\n')
@@ -886,18 +905,27 @@ def write_feed(items, social=()):
     it = []
     for a in items:
         url = f"{BASE}/{a['slug']}/" if a["media"] == "text" else (a.get("url") or BASE)
-        content = (f"<![CDATA[{fix_quotes(md_to_html(a['body']))}]]>"
+        body = fix_quotes(md_to_html(a["body"]))
+        # A reader who only ever sees the feed must not be told this ran in Lilie.
+        if a.get("unpublished"):
+            body = (f'<p><em>Nevyšlo. Text byl napsán pro otištění '
+                    f'{OUTLET_IN.get(a["outlet"], "v " + a["outlet"])}; uvedené datum '
+                    f"je zamýšlené, nikoli datum otištění.</em></p>\n" + body)
+        content = (f"<![CDATA[{body}]]>"
                    if a["media"] == "text" else
                    f"<![CDATA[<p>{MEDIA_LABEL.get(a['media'], '')} — "
                    f'<a href="{a.get("url", "")}">{esc(a["outlet"])}</a></p>]]>')
+        # `url` is a required attribute of <source>; emitting it empty is invalid RSS,
+        # and an unpublished piece has no original to point at anyway.
+        source = (f'\n      <source url="{esc(a["url"])}">{esc(a["outlet"])}</source>'
+                  if a.get("url") else "")
         it.append((a["date"], f"""    <item>
       <title>{esc(a["headline"])}</title>
       <link>{url}</link>
       <guid isPermaLink="true">{url}</guid>
       <pubDate>{rfc822(a["date"])}</pubDate>
       <category>{esc(SECTIONS[a["category"]]["title"])}</category>
-      <dc:language>{a.get("lang") or SECTIONS[a["category"]]["lang"]}</dc:language>
-      <source url="{esc(a.get("url", ""))}">{esc(a["outlet"])}</source>
+      <dc:language>{a.get("lang") or SECTIONS[a["category"]]["lang"]}</dc:language>{source}
       <content:encoded>{content}</content:encoded>
     </item>"""))
     # The posts used to be kept out of the feed, on the reasoning that back-filling
@@ -957,8 +985,11 @@ def write_machine_readable(items, social=()):
         L += [f"## {sec['title']}", "", sec["desc"], ""]
         for a in sel:
             d = cs_date(a["date"], a.get("date_precision"))
+            # llms.txt is read by machines that will not open the page and see the
+            # Czech "Nevyšlo" note, so the marker has to travel with the line itself.
+            out = a["outlet"] + (" (nevyšlo)" if a.get("unpublished") else "")
             if a["media"] == "text":
-                L.append(f"- [{a['headline']}]({BASE}/{a['slug']}/) — {a['outlet']}, {d}")
+                L.append(f"- [{a['headline']}]({BASE}/{a['slug']}/) — {out}, {d}")
             else:
                 L.append(f"- [{a['headline']}]({a.get('url','')}) — {a['outlet']}, {d} "
                          f"({MEDIA_LABEL.get(a['media'], '')}, pouze odkaz)")
@@ -1010,7 +1041,10 @@ def write_machine_readable(items, social=()):
             d["source_markdown"] = f"{BASE}/src/{a['file']}"
             d["word_count"] = len(a["body"].split())
             d["text"] = a["body"]
-        d["provenance"] = ("self_published"
+        # "editorial" claims an editor stood between the author and the reader. For a
+        # piece that was written, submitted and then never printed, no editor ever did.
+        d["provenance"] = ("unpublished" if a.get("unpublished") else
+                           "self_published"
                            if (SELF_PUBLISHED.search(a["outlet"])
                                or a.get("genre") == "press_release") else "editorial")
         if a.get("genre"):
@@ -1085,8 +1119,13 @@ def write_machine_readable(items, social=()):
         A += [f"## {a['headline']}", "",
               f"*{a['outlet']}, {cs_date(a['date'], a.get('date_precision'))}"
               + (f", ptal se {a['interviewer']}" if a.get("interviewer") else "")
-              + f". {', '.join(people(a.get('byline')))}.*", "",
-              f"Zdroj: {a.get('url') or BASE + '/' + a['slug'] + '/'}", "",
+              + f". {', '.join(people(a.get('byline')))}.*", ""]
+        # this file is the one an AI is most likely to ingest whole
+        if a.get("unpublished"):
+            A += [f"*Nevyšlo. Text byl napsán pro otištění "
+                  f"{OUTLET_IN.get(a['outlet'], 'v ' + a['outlet'])}; uvedené datum "
+                  f"je zamýšlené, nikoli datum otištění.*", ""]
+        A += [f"Zdroj: {a.get('url') or BASE + '/' + a['slug'] + '/'}", "",
               a["body"], "", "---", ""]
     (KDIR / "all.md").write_text(chr(10).join(A), encoding="utf-8")
 
@@ -1131,6 +1170,11 @@ def write_machine_readable(items, social=()):
             "unpublished_manuscript": "written for the outlet and submitted, but never "
                                       "printed; the date is the issue it was written for, "
                                       "not a publication date",
+        },
+        "provenance_meanings": {
+            "editorial": "an outlet's editor stood between the author and the reader",
+            "self_published": "posted by the author, with no outlet editing it",
+            "unpublished": "never printed anywhere, so no editor and no publication date",
         },
         "files": files,
         "generated_from": ["komentare/src/*.md", "komentare/social-posts.json"],
@@ -1782,6 +1826,22 @@ def check():
         _un = set(mf["records"]["by_text_status"]) - set(mf["text_status_meanings"])
         if _un:
             fails.append(f"text_status values with no meaning given: {sorted(_un)}")
+        _idx = json.loads((KDIR / "index.json").read_text(encoding="utf-8"))
+        _pr = {r["provenance"] for r in _idx["items"] if r.get("provenance")}
+        _unp = _pr - set(mf.get("provenance_meanings", {}))
+        if _unp:
+            fails.append(f"provenance values with no meaning given: {sorted(_unp)}")
+        # The src/*.md files are served publicly and linked from every page as the
+        # plain-text source, so a word_count in their front matter that disagrees with
+        # the one in the corpus is a visible contradiction. It had drifted in 55 files.
+        _wc = {Path(r["source_markdown"]).name: r["word_count"]
+               for r in _idx["items"] if r.get("source_markdown") and r.get("word_count")}
+        for _f, _want in sorted(_wc.items()):
+            _m = re.search(r'^word_count:\s*"(\d+)"',
+                           (KDIR / "src" / _f).read_text(encoding="utf-8"), re.M)
+            if _m and int(_m.group(1)) != _want:
+                fails.append(f"{_f}: front-matter word_count {_m.group(1)} "
+                             f"!= computed {_want}")
         _dp = (KDIR / "data" / "index.html").read_text(encoding="utf-8")
         if f"{expected} záznamů" not in _dp:
             fails.append(f"data page does not report {expected} záznamů")

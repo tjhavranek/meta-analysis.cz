@@ -7,7 +7,7 @@ date: "2024-06-16"
 headline: "Práce při studiu? Ani 20 hodin týdně známky nezhorší, říká vědkyně"
 byline: "Zuzana Havránková"
 interviewer: "Tomáš Svoboda"
-word_count: "838"
+word_count: "1016"
 perex: "Podle vědecké studie si studenti při kombinaci práce se školou osvojí hlavně dobře rozvrhovat čas. Problémy přicházejí, když zaměstnání překročí 30 hodin týdně."
 ---
 

@@ -7,10 +7,10 @@ url_label: "Rubrika Školní úspěchy"
 date: "2025-11-25"
 headline: "Florbalisté prvního stupně vezou stříbro z okresního kola!"
 byline: "Tomáš Havránek"
+genre: "report"
 word_count: "129"
 body_note: "Krátká zpráva o turnaji, kterou autor napsal jako trenér a poslal vedení školy; škola ji zveřejnila v rubrice Školní úspěchy, kde se příspěvky neuvádějí s podpisem. Autorství doloženo e-mailem řediteli školy z 25. 11. 2025. Přepsáno ze stránky školy, jména hráčů ponechána tak, jak je škola zveřejnila."
 ---
-
 
 # Florbalisté prvního stupně vezou stříbro z okresního kola!
 

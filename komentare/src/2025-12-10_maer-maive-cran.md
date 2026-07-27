@@ -6,7 +6,7 @@ url: "https://www.maer-net.org/post/maive-is-now-on-cran"
 date: "2025-12-10"
 headline: "MAIVE Is Now on CRAN"
 byline: "Zuzana Irsova"
-word_count: "144"
+word_count: "103"
 ---
 
 # MAIVE Is Now on CRAN

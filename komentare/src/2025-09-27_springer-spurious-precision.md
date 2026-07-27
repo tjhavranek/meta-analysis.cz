@@ -6,7 +6,7 @@ url: "https://communities.springernature.com/posts/spurious-precision-in-meta-an
 date: "2025-09-27"
 headline: "Spurious Precision in Meta-Analysis"
 byline: "Zuzana Irsova"
-word_count: "913"
+word_count: "918"
 perex: "Meta-analyses give more weight to precise studies. But what if the reported precision is spurious? We introduce MAIVE, a new estimator that tackles this problem."
 body_note: "Behind-the-paper post k článku v Nature Communications. Přepsáno doslovně včetně překlepu „ratonale“ v druhém odstavci."
 ---
