@@ -386,3 +386,26 @@ html>body #footer {
 	font-weight: normal;
 	color: #1B75A9;
 }
+
+/* --- phones and narrow tablets: the layout above is fixed-width (880px), so
+   without this the whole page renders at 880px and is zoomed out on a phone --- */
+@media (max-width: 820px) {
+  body { font-size: 15px; }
+  #wrapper, #page, #header, #logo, #menu, #content, #sidebar, #footer {
+    width: auto; float: none; }
+  #page { padding: 0 14px; }
+  #logo { height: auto; padding: 14px 0 8px; }
+  #logo h1, #logo h2 { float: none; padding: 0; line-height: 1.25; }
+  #logo h1 { font-size: 26px; }
+  #logo h2 { font-size: 15px; padding-top: 2px; }
+  #menu { height: auto; }
+  #menu ul { padding: 8px 4px; text-align: center; }
+  #menu li { display: inline-block; float: none; border: 0; }
+  #menu a { padding: 6px 10px; font-size: 13px; }
+  #content { border-right: none; padding: 0; }
+  #sidebar { padding: 16px 0 0; border-top: 1px solid #ddd; margin-top: 18px; }
+  #content .entry, #content li, #content p { text-align: left; }
+  img { max-width: 100%; height: auto; }
+  table { width: 100% !important; }
+  h1.title, h2.title, .post .title, .entry { width: auto; }
+}

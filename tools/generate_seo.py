@@ -337,6 +337,9 @@ def inject(path, block):
         return False
     # these pages are English (Czech sections are SELF_MANAGED and never injected);
     # declare it for screen readers, translation tools, and search engines
+    if "name=\"viewport\"" not in raw:
+        raw = raw.replace("</head>", '<meta name="viewport" content="width=device-width, initial-scale=1" />
+</head>', 1)
     mh = re.search("<html[^>]*>", raw)
     if mh and "lang=" not in mh.group(0):
         raw = raw[:mh.start()] + mh.group(0).replace("<html", chr(60) + 'html lang="en"', 1) + raw[mh.end():]
