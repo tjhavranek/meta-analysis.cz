@@ -6,7 +6,26 @@
     <atom:link href="https://meta-analysis.cz/komentare/feed.xml" rel="self" type="application/rss+xml" />
     <description>Publicistika Tomáše Havránka a Zuzany Havránkové: komentáře pro celostátní média, sloupky pro litomyšlskou Lilii, rozhovory a kratší příspěvky ze sítí, v plném znění.</description>
     <language>cs</language>
-    <lastBuildDate>Sat, 25 Jul 2026 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 27 Jul 2026 00:00:00 +0000</lastBuildDate>
+    <item>
+      <title>Two new pre-registered papers: outlier decisions in meta-analysis and AI feedback on meta</title>
+      <link>https://meta-analysis.cz/komentare/maer-two-pre-registered-papers/</link>
+      <guid isPermaLink="true">https://meta-analysis.cz/komentare/maer-two-pre-registered-papers/</guid>
+      <pubDate>Mon, 27 Jul 2026 00:00:00 +0000</pubDate>
+      <category>In English</category>
+      <dc:language>en</dc:language>
+      <source url="https://www.maer-net.org/post/two-new-pre-registered-papers-outlier-decisions-in-meta-analysis-and-ai-feedback-on-meta">MAER-Net</source>
+      <content:encoded><![CDATA[<p>My colleagues and I have two new pre-registered papers that may interest MAER-Net members.</p>
+<h3>1. Do decisions about outliers and influential effects matter?</h3>
+<p>(<a href="https://meta-analysis.cz/outliers">https://meta-analysis.cz/outliers</a>, <a href="https://arxiv.org/abs/2607.23174">https://arxiv.org/abs/2607.23174</a>)</p>
+<p>With Zuzana Irsova, Martina Luskova, and Tom Stanley, we recompute 358 behavioral science meta-analyses under five outlier treatments: do nothing, drop the most extreme estimate, remove studentized residuals above 3, winsorize at 5/95, and remove estimates with |DFBETAS| above 2/sqrt(k). Each runs under random effects and UWLS. All data, thresholds, and rules were registered before we saw any results.</p>
+<p>The mean effect barely moves: the median absolute change in Cohen's d is at most 0.047. Interpretation moves more. In 11.5% of the meta-analyses at least one treatment changes statistical significance, and in 15.9% whether the effect reaches a smallest effect size of interest (|d| &gt;= 0.20). Nearly all flips are in results already close to the boundary; strongly significant results essentially never change. Winsorizing changes the fewest conclusions, DFBETAS the most, and DFBETAS computed with UWLS flags the most influential estimates. Takeaway: pre-register the outlier rule and report results with and without it.</p>
+<h3>2. Does multi-agent debate improve AI feedback on research papers?</h3>
+<p>(<a href="https://meta-analysis.cz/debate">https://meta-analysis.cz/debate</a>, <a href="https://arxiv.org/abs/2607.14713">https://arxiv.org/abs/2607.14713</a>)</p>
+<p>Many of you took part in this experiment with Zuzana and me -- thank you! Authors of 44 economics meta-analyses ranked three blinded AI reports on their own paper: a single pass by a frontier model against two multi-agent debate tools we built and expected to win. The single pass won, by 0.66 rank points over mad-research and 0.57 over paper-workshop, although paper-workshop spends about thirty times the tokens. Authors who recalled their journal referee report usually placed it first and never last; the AI judges almost always put the same human report last. And an independent AI judge (Gemini) would have reversed the authors' verdict and picked the most expensive tool. Takeaway: an AI judge is not a substitute for the author, so be careful with LLM-as-a-judge designs.</p>
+<p>Both tools are open source: <a href="https://github.com/tjhavranek/mad-research">https://github.com/tjhavranek/mad-research</a> and <a href="https://github.com/tjhavranek/paper-workshop">https://github.com/tjhavranek/paper-workshop</a></p>
+<p>Comments are welcome!!</p>]]></content:encoded>
+    </item>
     <item>
       <title>So, how much do different outlier treatments matter for meta-analysis results?</title>
       <link>https://meta-analysis.cz/komentare/posts/2026-07-25-do-outlier-decisions-matter/</link>
