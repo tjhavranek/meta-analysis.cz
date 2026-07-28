@@ -649,7 +649,7 @@
   ],
   "year": 2025,
   "journal": null,
-  "doi_or_publisher_url": "https://osf.io/preprints/psyarxiv/qr8e2_v1",
+  "doi_or_publisher_url": "https://doi.org/10.31234/osf.io/qr8e2_v1",
   "menu_links": [
    {
     "label": "Read the paper",
@@ -1115,7 +1115,7 @@
  {
   "project": "lags",
   "title": "Transmission Lags of Monetary Policy: A Meta-Analysis",
-  "abstract": "The transmission of monetary policy to the economy is generally thought to have long and variable lags. In this paper we quantitatively review the modern literature on monetary transmission to provide stylized facts on the average lag length and the sources of variability. We collect 67 published studies and examine when prices bottom out after monetary contraction. The average transmission lag is 29 months, and the maximum decrease in prices reaches 1.2% on average after a one-percentage-point hike in the policy rate. Transmission lags are longer in developed economies (25-50 months) than in transition economies (10-20 months). We find that the factor most effective in explaining this heterogeneity is financial development: greater financial development is associated with slower transmission. Our results also suggest that researchers who use monthly data instead of quarterly data report systematically faster transmission.",
+  "abstract": "The transmission of monetary policy to the economy is generally thought to have long and variable lags. In this paper we quantitatively review the modern literature on monetary transmission to provide stylized facts on the average lag length and the sources of variability. We collect 67 published studies and examine when prices bottom out after monetary contraction. The average transmission lag is 29 months, and the maximum decrease in prices reaches 0.9% on average after a one-percentage-point hike in the policy rate. Transmission lags are longer in developed economies (25-50 months) than in transition economies (10-20 months). We find that the factor most effective in explaining this heterogeneity is financial development: greater financial development is associated with slower transmission. Our results also suggest that researchers who use monthly data instead of quarterly data report systematically faster transmission.",
   "reference_line": "Tomas Havranek & Marek Rusnak (2013), \"Transmission Lags of Monetary Policy: A Meta-Analysis.\" International Journal of Central Banking 9(4), pp. 39-76.",
   "authors": [
    "Tomas Havranek",

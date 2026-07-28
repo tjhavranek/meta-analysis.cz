@@ -59,6 +59,7 @@
 
 ## Resources
 
+- [Headline results for every paper](https://meta-analysis.cz/estimates.csv): one row per paper — the parameter, the value the paper headlines, the sample it rests on, and the verbatim sentence from the paper that each figure came from (CSV)
 - [Full paper index with abstracts and file links](https://meta-analysis.cz/llms-full.txt): one entry per paper, for LLM ingestion
 - [Sitemap](https://meta-analysis.cz/sitemap.xml): all pages and PDF full texts
 - [Commentary and interviews](https://meta-analysis.cz/komentare/): op-eds, columns and interviews (mostly Czech); machine index at https://meta-analysis.cz/komentare/llms.txt

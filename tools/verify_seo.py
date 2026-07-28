@@ -63,6 +63,20 @@ for rel in pages:
         continue
     if visible_text(old) != visible_text(new):
         fails.append(f"{rel}: VISIBLE TEXT CHANGED")
+    # STRUCTURAL: today's incident - a stray </div> closed #content early and
+    # dropped the sidebar out of the page box, while every other check passed.
+    nopen, nclose = new.count('<div'), new.count('</div>')
+    if nopen != nclose:
+        fails.append(f"{rel}: unbalanced divs ({nopen} open / {nclose} close) - layout will break")
+    if 'id="sidebar"' in new and 'id="content"' in new:
+        i, j = new.index('id="content"'), new.index('id="sidebar"')
+        seg = new[i:j]
+        if seg.count('<div') - seg.count('</div>') < 0:
+            fails.append(f"{rel}: #content closes before #sidebar - sidebar escapes the page box")
+    if 'name="viewport"' not in new:
+        fails.append(f"{rel}: no viewport meta - page will render zoomed out on phones")
+    if not re.search(r'<html[^>]*lang=', new):
+        fails.append(f"{rel}: <html> has no lang attribute")
     if new.count('rel="canonical"') != 1:
         fails.append(f"{rel}: canonical count != 1")
     # duplicate metadata families confuse Google Scholar (the /debate incident):

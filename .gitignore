@@ -2,3 +2,28 @@ tools/__pycache__/
 *.pyc
 codex_out_*.md
 sol_*.md
+
+# private working notes (never publish)
+PROGRESS.md
+review_baseline/
+
+# scratch text dumps left by PDF-extraction subagents (repo root only — real
+# content such as spillovers/excluded_studies.txt lives in subfolders)
+/*_intro.txt
+/*_concl.txt
+/*_head.txt
+/*_tail.txt
+/*_out.txt
+/*_full.txt
+/*_ctx*.txt
+
+# Subagents reading PDFs keep writing scratch dumps into the repo root under
+# ad-hoc names (foo_intro.txt, cl_p0.txt, ...). Ignore root-level .txt wholesale
+# and re-admit the three that belong to the site. Tracked files are unaffected
+# by .gitignore, so this cannot drop llms.txt / robots.txt from the deploy.
+/*.txt
+!/llms.txt
+!/llms-full.txt
+!/robots.txt
+# the IndexNow key file (its name IS the key); tracked, but be explicit
+!/6c841b23e12756bf2f1491dbd661cd2d.txt
