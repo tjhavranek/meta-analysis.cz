@@ -1,0 +1,34 @@
+---
+category: "litomysl"
+media: "text"
+outlet: "Pracovní skupina Financování městských aktivit, Litomyšl"
+url: "https://www.litomysl.cz/soubor/1655288841931_strategicky_plan_mesta_litomysl_2022_2030.pdf"
+url_label: "Výsledný strategický plán města (2022–2030)"
+date: "2021-04-30"
+headline: "Tři náměty k financování Litomyšle: dotace, trvalý pobyt a investice"
+byline: "Tomáš Havránek"
+genre: "submission"
+word_count: "750"
+submission: "Autor byl členem pracovní skupiny Financování městských aktivit, kterou pro přípravu strategického plánu zřídila Rada města usnesením 551/20 z 23. 6. 2020; podklad zaslal vedoucímu skupiny, místostarostovi Radomilu Kašparovi, a ostatním členům."
+body_note: "Podklad pro pracovní skupinu, nikoli článek — proto se nikde neotiskl a datum je datum odeslání, ne vydání. Titulek je popisný, e-mail žádný neměl. Dva ze tří námětů se do výsledného strategického plánu dostaly: dotační kancelář jako opatření B.3.2 a získávání obyvatel s trvalým pobytem jako B.3.3 (str. 58), obojí pak i jako projekty B.3.2.1 a B.3.3.1 v akčním plánu. Třetí námět, investovat úspory města místo spoření na účtu, se do plánu nedostal; ten mezi hrozbami uvádí „Inflační znehodnocení volných finančních prostředků města“, ale řešení nenavrhuje. Devět dní před odesláním, 21. 4. 2021, Rada zrušila dvě usnesení z roku 2019, která vycházela z nabídek bank na zhodnocení prostředků města; smlouvy uzavřeny nebyly. Město pak od poloviny roku 2022 ukládalo 100–160 milionů na termínované vklady a v září 2025 si na stavbu domova pro seniory bralo úvěr 100 milionů. Námět 2 autor publikoval samostatně už v Lilii 7/2020. Odkazovaný článek v Hospodářských novinách vyšel 22. 4. 2021 pod titulkem „ČNB konečně ukázala odvahu. Pomůže to českému rozpočtu?“."
+---
+
+# Tři náměty k financování Litomyšle: dotace, trvalý pobyt a investice
+
+Vážený pane místostarosto, vážení kolegové,
+
+dokumenty jsem si prostudoval a níže si dovoluji připojit 3 náměty. Upozorňuji, že nejsem odborníkem na obecní finance (spíše se zabývám financemi státními a financováním zahraničních univerzit). Vím jen, co jsem se dočetl z podkladů, co lze dohledat z veřejných zdrojů, případně co mi sdělil pan starosta. Takže Vy budete vědět o obecních financích mnohem více, zejména pan místostarosta na základě jeho dlouholetých zkušeností s vedením města.
+
+Dodatečné příjmy můžeme získat ze 3 oblastí: 1) dotace, 2) daně, 3) investice. Celkový potenciál je takový, že po vhodných úpravách může být rozpočet města dlouhodobě vyrovnaný i při výraznějším navýšení výdajů. Zmíněné 3 zdroje příjmů popisuji postupně v pořadí podle důležitosti násobené jednoduchostí zavedení. Tedy ač by například bod 3 dlouhodobě vydělal nejvíce peněz, je nejvíce kontroverzní a složitý, proto ho řadím až na konec.
+
+1) **Dotace**. Pokud ji ještě na MÚ nemáme, navrhuji zřídit samostatnou dotační projektovou kancelář. Taková funguje v řadě měst a má na starosti výlučně aktivní vyhledávání dotačních příležitostí a zpracovávání projektů pro získávání dotací -- odkudkoli a na cokoli. Pro město velikosti Litomyšle dávají smysl 2 úvazky s minimálním tabulkovým platem, ale štědrým procentuálním bonusem z objemu získaných dotací. Takto je možné zaplatit a motivovat schopné lidi, jejichž odměna se městu vrátí mnohonásobně. Jako příklad se nabízí domov pro seniory. Nemýlím-li se, zbývalo málo a dotaci bychom získali, čímž bychom ušetřili desítky milionů korun. O dotace bude stále větší konkurence a městu se vyplatí, když se jim někdo bude věnovat na plný úvazek a za výsledek bude jasně osobně zodpovědný.
+
+2) **Daně**. Většina daňových příjmů měst je rozdělována proporčně v rámci celé ČR podle počtu obyvatel s trvalým pobytem. Proporcionalitu neovlivníme, ale můžeme ovlivnit náš populační koeficient -- řada lidí v Litomyšli bydlí nebo vlastní nemovitosti, ale nemají tu trvalý pobyt. Navrhuji zpracovat a do každého domu distribuovat leták (1 přehledná stránka A4), kde bude uvedeno, co přesně Litomyšl získá tím, když si k nám člověk převede trvalý pobyt a co tím získá člověk. Explicitně o to lidi poprosme. V návaznosti na to by bylo vhodné zvětšit participativní rozpočet, aby si o části těchto nově získaných peněz mohli lidé rozhodovat sami. Pomohlo by též rozšíření finanční motivace, která už teď dobře funguje u parkovného (sleva za trvalý pobyt). Bylo by užitečné, aby se v Lilii (a na Facebooku) pravidelně objevovalo vysvětlení, proč je důležité mít trvalý pobyt v Litomyšli -- například každý druhý měsíc zařadit výše uvedený leták s krátkým aktuálním popisem. Zde je potenciál vydělat každý rok jednotky milionů navíc. Tedy ne moc, ale dost na pár hezkých nových hřišť pro děti nebo štědré zkrášlení zeleně.
+
+3) **Investice**. Stavební projekty města je vhodné realizovat buď z dotací, nebo z úvěrů -- tedy nešetřit na ně bokem. Jak vyplývá z materiálů poskytnutých panem místostarostou, město si půjčuje obvykle za úrokové sazby hluboko pod 2 %, což je inflační cíl České národní banky. Půjčujeme si tedy za reálně záporné sazby, reálně nám banky platí za to, že si od nich peníze bereme. Zatímco když peníze spoříme, reálně nám ztrácejí na hodnotě. Tyto vztahy platí dlouhodobě a změna není na obzoru. Přesto je vhodné si peníze dávat stranou -- ale neukládat je na běžný nebo spořící účet, nýbrž investovat na dlouhou dobu. Soukromé univerzity v USA (např. Princeton nebo Yale) si takto vytvořily velké fondy bohatství a už desítky let vydělávají průměrně kolem 6 % čistého, což nyní financuje jejich provoz. Podobně funguje Singapur. Samozřejmě výnosy se rok od roku mění podle kolísání akciového trhu, ale důležitý je dlouhodobý průměrný výnos, který je desítky let relativně konstantní. Město může investovat daleko snáze než každý z nás individuálně, protože má delší investiční horizont (nemusí řešit důchod, nezemře). Může tedy ignorovat krátkodobé výkyvy. Pro město velikosti Litomyšle dává smysl vytvořit si postupně během 10 let fond kolem 500 milionů Kč, aby následný průměrný roční výnos činil kolem 30 milionů. Princip částečně popisuji v článku pro Hospodářské noviny, týká se to financování celého státu, ale jádro je stejné.
+
+To jsou samozřejmě z mé strany možná naivní návrhy. Jak jsem řekl, o obecních financích vím málo, navíc netuším, zda je výše uvedené politicky průchozí. Nicméně jsem přesvědčen, že kombinací výše uvedených 3 přístupů lze pro Litomyšl získat ročně v průměru nejméně 50 milionů korun navíc. V opačném případě se obávám, že nebudeme mít v budoucnu prostor pro větší fyzické investice, resp. bude nutné začít rozprodávat současný (a velmi značný) majetek města.
+
+Rád si prostuduji Vaše náměty a těším se, až je probereme osobně.
+
+Přeji Vám krásné jarní dny!

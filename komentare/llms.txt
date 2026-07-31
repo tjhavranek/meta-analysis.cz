@@ -2,7 +2,7 @@
 
 > Publicistika Tomáše Havránka a Zuzany Havránkové: komentáře pro celostátní média, sloupky pro litomyšlskou Lilii, rozhovory a kratší příspěvky ze sítí. Texty jsou zde archivovány v plném znění s odkazem na původní vydání.
 
-Publicistika: 207 položek a 23 kratších příspěvků ze sítí (230 záznamů celkem), 2014–2026. Plné znění každého textu je na uvedené adrese; zdrojový Markdown položek je v /komentare/src/ (příspěvky ze sítí zdrojový soubor nemají).
+Publicistika: 208 položek a 23 kratších příspěvků ze sítí (231 záznamů celkem), 2014–2026. Plné znění každého textu je na uvedené adrese; zdrojový Markdown položek je v /komentare/src/ (příspěvky ze sítí zdrojový soubor nemají).
 
 ## Celostátní komentáře
 
@@ -132,6 +132,7 @@ Především sloupky pro Lilii, měsíčník města Litomyšle — doprava, zele
 - [Florbal v Litomyšli je kroužek snů](https://meta-analysis.cz/komentare/litomysl-florbal-je-krouzek-snu/) — Lilie, říjen 2021
 - [Ceny pozemků v Litomyšli jsou nekonečné. Je to špatně?](https://meta-analysis.cz/komentare/litomysl-ceny-pozemku-jsou-nekonecne/) — Lilie, červen 2021
 - [Jak to bylo s opravou zámecké zdi](https://meta-analysis.cz/komentare/litomysl-zamecka-zed/) — Lilie, květen 2021
+- [Tři náměty k financování Litomyšle: dotace, trvalý pobyt a investice](https://meta-analysis.cz/komentare/litomysl-tri-namety-financovani-mesta/) — Pracovní skupina Financování městských aktivit, Litomyšl (podklad, nepublikováno), 30. dubna 2021
 - [Poděkování za Primátorku](https://meta-analysis.cz/komentare/litomysl-podekovani-za-primatorku/) — Lilie, duben 2021
 - [Nově upravený projekt dálnice D35](https://meta-analysis.cz/komentare/litomysl-novy-projekt-dalnice-d35/) — Lilie, únor 2021
 - [Na dálnici bude u Litomyšle mezera. Jak jsme se k tomu dopracovali? (díl druhý)](https://meta-analysis.cz/komentare/litomysl-dalnice-mezera-2/) — Lilie (nevyšlo), únor 2021
