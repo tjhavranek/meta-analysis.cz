@@ -261,7 +261,14 @@ def _inline(t):
     t = html.escape(t, quote=False)
     t = re.sub(r"\[([^\]]+)\]\(([^)]+)\)", r'<a href="\2">\1</a>', t)
     t = re.sub(r"\*\*([^*]+)\*\*", r"<strong>\1</strong>", t)
-    t = re.sub(r"(?<!\*)\*([^*]+)\*(?!\*)", r"<em>\1</em>", t)
+    # An opening "*" must not be followed by whitespace — CommonMark's left-flanking
+    # rule. Without it, a literal asterisk that belongs to the text opened an emphasis
+    # span: "p-uniform* method. *Tilburg University …*" italicised " method. " and ate
+    # the star in p-uniform*, which is part of the estimator's name. The closing rule
+    # stays lax on purpose: the reference lists throughout the archive are written
+    # "*Journal Name *2019", with a space before the closing star, and strict
+    # CommonMark would leave every one of those asterisks visible to the reader.
+    t = re.sub(r"(?<!\*)\*(?!\s)([^*]+)\*(?!\*)", r"<em>\1</em>", t)
     # Inline code was never handled, so a source written with backticks showed them to
     # the reader: `install.packages("MAIVE")` appeared literally, backticks and all.
     t = re.sub(r"`([^`]+)`", r"<code>\1</code>", t)

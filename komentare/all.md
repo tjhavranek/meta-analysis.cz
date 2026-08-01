@@ -3700,7 +3700,7 @@ Spurious precision, while plausibly destructive, is surmounted by adjusting funn
 - Lane H, Tranel B. The Lombard Sign and the Role of Hearing in Speech. *Journal of Speech and Hearing Research *1971; 14(4): 677–709.
 - McCloskey DN, Ziliak ST. What quantitative methods should we teach to graduate students? A comment on Swann’s 'Is precise econometrics an illusion'? *The Journal of Economic Education *2019; 50(4): 356–361.
 - Hedges LV. A random effects model for effect sizes. *Psychological Bulletin *1983; 93(2): 388–395.
-- Hedges LV, Olkin I. Statistical methods* for meta-analysis*. Orlando, FL: Academic Press. 1985.
+- Hedges LV, Olkin I. *Statistical methods for meta-analysis*. Orlando, FL: Academic Press. 1985.
 - Taylor LR. Aggregation, variance and the mean. *Nature *1961;189(4766): 732–735.
 - Stanley TD, Doucouliagos H. Neither fixed nor random: weighted least squares meta-regression. *Research Synthesis Methods *2017; 8(1): 19–42.
 - Havranek T, Stanley TD, Doucouliagos H, et al. Reporting Guidelines for Meta-Analysis in Economics. *Journal of Economic Surveys *2020; 34(3): 469–475.
