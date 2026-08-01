@@ -705,59 +705,74 @@ def write_item(a):
     if a.get("interviewer"):
         meta.append(f'<span>ptal se: {esc(a["interviewer"])}</span>')
 
+    # Every sentence below is generated, so it can follow the item's OWN language.
+    # Site chrome stays Czech by design (see shell()), but a reader who opens an
+    # English piece should not meet a Czech sentence explaining where it came from.
+    en = lang == "en"
+
     if is_pr:
         # "Poprvé vyšlo" would be false: a release is sent, and whether anyone printed
         # it is a separate question the archive does not answer.
-        prov = (f'Tisková zpráva rozeslaná redakcím '
-                f'{cs_date(a["date"], a.get("date_precision"), "cs")}.'
+        prov = (("Press release sent to newsrooms " if en
+                 else "Tisková zpráva rozeslaná redakcím ")
+                + f'{cs_date(a["date"], a.get("date_precision"), lang)}.'
                 + (f' <a href="{esc(a["url"])}" rel="external">'
-                   f'{esc(a.get("url_label", "Web projektu"))}</a>.'
+                   f'{esc(a.get("url_label", "Project site" if en else "Web projektu"))}</a>.'
                    if a.get("url") else ""))
     elif a.get("genre") == "correspondence":
         # A letter or memo he sent, never printed anywhere. "Nevyšlo … pro vydání" would
         # be wrong twice over: it was not written for an issue, and the date is real —
         # the day it was sent — not an intention.
-        prov = (f'Korespondence, nikoli publikovaný text. Zasláno '
-                f'{cs_date(a["date"], a.get("date_precision"), "cs")}. '
-                f'{esc(a.get("context", ""))}'
+        prov = (("Correspondence, not a published text. Sent " if en
+                 else "Korespondence, nikoli publikovaný text. Zasláno ")
+                + f'{cs_date(a["date"], a.get("date_precision"), lang)}. '
+                + f'{esc(a.get("context", ""))}'
                 + (f' <a href="{esc(a["url"])}" rel="external">'
-                   f'{esc(a.get("url_label", "Související dokument"))}</a>.'
+                   f'{esc(a.get("url_label", "Related document" if en else "Související dokument"))}</a>.'
                    if a.get("url") else ""))
     elif a.get("unpublished"):
         # "Poprvé vyšlo" would be a plain lie. Say what actually happened, and give the
         # issue it was written for as an intention rather than a publication date.
         where = OUTLET_IN.get(a["outlet"], f'v médiu {a["outlet"]}')
-        prov = (f'Nevyšlo. Text byl napsán pro vydání '
-                f'{cs_date(a["date"], a.get("date_precision"), "cs")} '
-                f'{where}; datum je tedy zamýšlené, nikoli datum otištění. '
-                f'{esc(a["unpublished"])}')
+        prov = ((f'Never published. Written for the {cs_date(a["date"], a.get("date_precision"), lang)} '
+                 f'issue of {esc(a["outlet"])}; the date is therefore the intended one, '
+                 f'not a date of publication. ' if en else
+                 f'Nevyšlo. Text byl napsán pro vydání '
+                 f'{cs_date(a["date"], a.get("date_precision"), lang)} '
+                 f'{where}; datum je tedy zamýšlené, nikoli datum otištění. ')
+                + f'{esc(a["unpublished"])}')
     else:
         where = OUTLET_IN.get(a["outlet"], f'v médiu {a["outlet"]}')
         # An outlet named with an apposition ("v Lilii, měsíčníku města Litomyšle")
         # has to close it before the date, or the sentence runs "…města Litomyšle
         # červenec 2017", which is not Czech. Outlets without a comma read fine as is.
         sep = ", " if "," in where else " "
-        prov = (f'Poprvé vyšlo {where}{sep}'
-                f'{cs_date(a["date"], a.get("date_precision"), "cs")}.'
+        prov = ((f'First published in {esc(a["outlet"])}, ' if en
+                 else f'Poprvé vyšlo {where}{sep}')
+                + f'{cs_date(a["date"], a.get("date_precision"), lang)}.'
                 # url_label matters when the link is not a permalink: the school's
                 # "Školní úspěchy" is a rolling feed, so "Původní vydání" would promise
                 # a page that is only about this item.
                 + (f' <a href="{esc(a["url"])}" rel="external">'
-                   f'{esc(a.get("url_label", "Původní vydání"))}</a>.'
+                   f'{esc(a.get("url_label", "Original publication" if en else "Původní vydání"))}</a>.'
                    if a.get("url") else ""))
     # be honest about which text this is: an author manuscript can differ from what
     # the magazine printed, and for at least one Lilie column it demonstrably does.
     # Meaningless when nothing was printed, so unpublished items skip it.
     if a.get("source") == "draft" and not a.get("unpublished"):
-        prov += (" Text vychází z autorova rukopisu; tištěná verze se může v detailech lišit.")
+        prov += (" This is the author's own manuscript; the printed version may differ in"
+                 " details." if en else
+                 " Text vychází z autorova rukopisu; tištěná verze se může v detailech lišit.")
     elif a.get("source") == "image":
-        prov += (" Text byl přepsán z tištěného vydání.")
+        prov += (" Transcribed from the printed edition." if en else
+                 " Text byl přepsán z tištěného vydání.")
     # Same interview, second format: a text item may also exist as a broadcast the
     # reader can listen to. The transcript is the archived text; the audio is a link.
     if a.get("audio_url"):
-        prov += (f' Rozhovor je k poslechu také jako audio: '
-                 f'<a href="{esc(a["audio_url"])}" rel="external">'
-                 f'{esc(a.get("audio_label", "podcast"))}</a>.')
+        prov += ((" The interview can also be heard as audio: " if en else
+                  " Rozhovor je k poslechu také jako audio: ")
+                 + f'<a href="{esc(a["audio_url"])}" rel="external">'
+                   f'{esc(a.get("audio_label", "podcast"))}</a>.')
 
     _figs, _figfiles = item_images(a)
     figs = (_figs + "\n") if _figs else ""
@@ -767,9 +782,13 @@ def write_item(a):
     note = f'<div class="provenance"><p>{esc(a["body_note"])}</p></div>\n' if a.get("body_note") else ""
     # The reader has to know this was never printed BEFORE reading it as a column, not
     # in the provenance line under the last paragraph. The full story stays down there.
-    flag = ('      <p class="unpublished-flag">Korespondence — '
-            'nejde o publikovaný text.</p>\n' if a.get("genre") == "correspondence" else
-            '      <p class="unpublished-flag">Nevyšlo — tento text nebyl otištěn.</p>\n'
+    flag = ((f'      <p class="unpublished-flag">Correspondence &mdash; not a published text.</p>\n'
+             if en else
+             f'      <p class="unpublished-flag">Korespondence &mdash; nejde o publikovaný text.</p>\n')
+            if a.get("genre") == "correspondence" else
+            (f'      <p class="unpublished-flag">Never published &mdash; this text did not appear in print.</p>\n'
+             if en else
+             f'      <p class="unpublished-flag">Nevyšlo &mdash; tento text nebyl otištěn.</p>\n')
             if unpub else "")
     # the outlet's standfirst: part of the published piece, but the editor's words,
     # not the author's — so it is set apart rather than folded into the prose
@@ -787,7 +806,7 @@ def write_item(a):
       <div class="provenance"><p>{prov}</p></div>
       <nav class="pager">
         <a href="{PATH}/{a["category"]}/">← {esc(SECTIONS[a["category"]]["title"])}</a>
-        <a href="{PATH}/">Všechny texty</a>
+        <a href="{PATH}/">{"All texts" if en else "Všechny texty"}</a>
       </nav>
     </article>"""
 

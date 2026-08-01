@@ -36,7 +36,7 @@ Comments are welcome!!
 
 ## Results of the AI report ranking experiment
 
-*the 47 authors who took part in the experiment, 16. července 2026. Tomáš Havránek, Zuzana Iršová Havránková.*
+*the 47 authors who took part in the experiment, 16. července 2026. Tomáš Havránek, Zuzana Irsova.*
 
 *Korespondence, nikoli publikovaný text: zasláno the 47 authors who took part in the experiment. Uvedené datum je datum odeslání.*
 

@@ -7,11 +7,11 @@ url: "https://meta-analysis.cz/debate"
 url_label: "Project page and paper"
 date: "2026-07-16"
 headline: "Results of the AI report ranking experiment"
-byline: "Tomáš Havránek, Zuzana Iršová Havránková"
+byline: "Tomáš Havránek, Zuzana Irsova"
 genre: "correspondence"
 word_count: "265"
-context: "Rozesláno skrytou kopií autorům 44 meta-analýz, kteří v experimentu seřadili tři anonymizované AI posudky na svou vlastní práci; seznam příjemců zde neuvádíme."
-body_note: "Dopis účastníkům experimentu, nikoli publikovaný text — proto je uveden jako korespondence. Shrnuje výsledky studie „Does Multi-Agent Debate Improve AI Feedback on Research Papers?“ v den, kdy vyšel preprint. Vše, na co odkazuje, je veřejné: preprint, CEPR Discussion Paper 21752, předregistrace na OSF, replikační balíček na Zenodu i oba nástroje na GitHubu. Text je otištěn beze změn."
+context: "Sent as a blind copy to the authors of 44 meta-analyses who had ranked three blinded AI reports on their own paper; the recipient list is not reproduced here."
+body_note: "A letter to the participants, not a published text, which is why it is filed as correspondence. It reports the results of \"Does Multi-Agent Debate Improve AI Feedback on Research Papers?\" on the day the preprint appeared. Everything it points to is public: the preprint, CEPR Discussion Paper 21752, the OSF pre-registration, the Zenodo replication package and both tools on GitHub. The text is reproduced unchanged; only the recipient list and the attached PDF are omitted."
 ---
 
 # Results of the AI report ranking experiment
