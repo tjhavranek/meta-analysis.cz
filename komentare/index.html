@@ -1598,6 +1598,8 @@
         <button class="chip" data-cat="zuzana" aria-pressed="false">Zuzana</button>
       </div>
       <p class="count js-only" id="count" role="status" aria-live="polite"></p>
+      <p class="count js-only" id="zi-posts" hidden>Zuzana má navíc kratší příspěvky ze
+        sítí, které tento seznam nevede: <a href="/komentare/posts/">všechny příspěvky</a>.</p>
     </div>
 <h2 class="year">2026</h2>
 <ul class="items">
@@ -2544,6 +2546,7 @@
       h.hidden = !vis; if (s) s.hidden = !vis;
     });
     count.textContent = n + (n === 1 ? ' položka' : (n < 5 ? ' položky' : ' položek'));
+    var zp = document.getElementById('zi-posts'); if (zp) zp.hidden = (cat !== 'zuzana');
   }
   q.addEventListener('input', apply);
   function select(c) {

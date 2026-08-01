@@ -519,6 +519,8 @@ FILTER = """    <div class="filter">
         <button class="chip" data-cat="zuzana" aria-pressed="false">Zuzana</button>
       </div>
       <p class="count js-only" id="count" role="status" aria-live="polite"></p>
+      <p class="count js-only" id="zi-posts" hidden>Zuzana má navíc kratší příspěvky ze
+        sítí, které tento seznam nevede: <a href="/komentare/posts/">všechny příspěvky</a>.</p>
     </div>
 """
 
@@ -544,6 +546,7 @@ SCRIPT = """<script>
       h.hidden = !vis; if (s) s.hidden = !vis;
     });
     count.textContent = n + (n === 1 ? ' položka' : (n < 5 ? ' položky' : ' položek'));
+    var zp = document.getElementById('zi-posts'); if (zp) zp.hidden = (cat !== 'zuzana');
   }
   q.addEventListener('input', apply);
   function select(c) {
@@ -922,12 +925,36 @@ def write_index(items, key=None):
         if n_soc:
             links.append(f'<a href="{PATH}/posts/">Posts ({n_soc})</a>')
         counts = "      <p>" + " · ".join(links) + "</p>\n"
-        # The hub read as staler than the site is: its newest row predates the newest
-        # post. Interleaving 22 short posts among 179 press items would need invented
-        # titles, and per Google's URL guidance 22 rows pointing at #anchors still yield
-        # ONE indexable destination, not 22 — so the cost is real and the gain is not.
-        # Surface the newest one instead, QUOTING its opening line rather than turning
-        # it into a headline the author never wrote.
+        # WHY THE POSTS ARE NOT ROWS IN THIS LISTING. Reviewed again 2026-08-01, and
+        # the original note here had rotted: it argued from "22 rows pointing at
+        # #anchors yield ONE indexable destination" and counted "179 press items".
+        # Both are false now — every post has had its own page since July 2026, and the
+        # listing holds 211. That dead reasoning nearly justified a merge. The reasons
+        # that do survive:
+        #
+        #  1. Register. Every one of the 211 items is a formal text with a headline its
+        #     author wrote, addressed to readers through an outlet or a formal act of
+        #     writing — including the four letters and the 103-word MAER-Net note. About
+        #     a third of the posts are personal (a boxing gym in Palo Alto, spare
+        #     festival tickets). The line here is register, not length or pedigree.
+        #  2. Audience. The posts page is English on purpose for readers who arrive
+        #     there directly; see SOCIAL_DESC below.
+        #  3. Cross-posting makes duplicates, and would keep making them. At least four
+        #     posts announce, within two days, an item this listing already carries —
+        #     „🔎 MAIVE is now on CRAN…" the same day as the MAER-Net item "MAIVE Is Now
+        #     on CRAN". Merged, those are adjacent near-identical rows pointing at
+        #     different pages; DUP_HEADLINES cannot catch them because the strings
+        #     differ. The defect grows with normal posting behaviour.
+        #  4. Proportion. 18 of the 23 posts are from 2026 against 16 items, so a merge
+        #     makes the top of the page — the first thing anyone reads — majority
+        #     LinkedIn, on a page called "Komentáře, sloupky a rozhovory".
+        #  5. The filter would lie. 20 items are English and so are 20 posts; filing
+        #     posts under their own category would stop the English chip matching half
+        #     the English texts on the page.
+        #
+        # What the hub owes the posts instead is a route and freshness: the counts link
+        # above, and the newest post QUOTED below — its opening line in quotation marks,
+        # never dressed up as a headline the author never wrote.
         if SOCIAL_JSON.exists():
             _sp = json.loads(SOCIAL_JSON.read_text(encoding="utf-8"))
             _sp.sort(key=lambda p: p.get("datetime", p["date"]), reverse=True)
