@@ -4,20 +4,20 @@
  "newest_record": "2026-07-27",
  "temporal_coverage": "2014-01-27/2026-07-27",
  "records": {
-  "total": 231,
+  "total": 234,
   "by_text_status": {
    "published_full_text": 189,
+   "correspondence": 4,
    "author_manuscript": 19,
    "link_only": 18,
    "unpublished_manuscript": 2,
-   "submitted_document": 1,
    "publisher_excerpt": 2
   },
   "by_section": {
-   "Celostátní komentáře": 77,
+   "Celostátní komentáře": 79,
    "Litomyšlské sloupky": 60,
    "Rozhovory": 52,
-   "In English": 19,
+   "In English": 20,
    "Posts (ze sítí)": 23
   }
  },
@@ -26,40 +26,40 @@
   "author_manuscript": "the author's own version, as sent to the outlet",
   "publisher_excerpt": "only the outlet's free teaser; the original is paywalled",
   "link_only": "audio or video; no text is stored, the record links to the source",
-  "submitted_document": "written for and sent to a public body, not to an outlet; never published. The date is the day it was sent, and is exact",
+  "correspondence": "a letter or memo the author sent — to a public body, to colleagues, to students — never published anywhere. The date is the day it was sent, and is exact",
   "unpublished_manuscript": "written for the outlet and submitted, but never printed; the date is the issue it was written for, not a publication date"
  },
  "provenance_meanings": {
   "editorial": "an outlet's editor stood between the author and the reader",
   "self_published": "posted by the author, with no outlet editing it",
   "unpublished": "never printed anywhere, so no editor and no publication date",
-  "submitted": "sent to a public body rather than published; no editor stood between the author and the reader because there was no reader"
+  "correspondence": "sent to named recipients rather than published; no editor stood between the author and the reader"
  },
  "files": {
   "corpus.jsonl": {
    "url": "https://meta-analysis.cz/komentare/corpus.jsonl",
-   "bytes": 1347568,
-   "sha256": "f26c7ab22111ef445ea984d5947f040885f7b714afa0b8bd697399628f7a03c1"
+   "bytes": 1356086,
+   "sha256": "d546d606dc6b9f6c29be6c70b8c5650decac97cbbf9fc912528bf0ca81529af8"
   },
   "index.json": {
    "url": "https://meta-analysis.cz/komentare/index.json",
-   "bytes": 1365641,
-   "sha256": "b9c54ad89c652fd1d01f3ee5022d99edd13b8429a4ee3f9e923f36d9a684f22e"
+   "bytes": 1374373,
+   "sha256": "54ed289b92c05cc8e2e1ded36168d1a10886d94b7d959c39a592b6717978248a"
   },
   "all.md": {
    "url": "https://meta-analysis.cz/komentare/all.md",
-   "bytes": 1179002,
-   "sha256": "43a2597dda791603fba5df92a0538d501113263802e13827ac1359e874e92458"
+   "bytes": 1186429,
+   "sha256": "4a4fca1834ff605457c888df194713ee9ae6e6a8537803e4d2c1644de83c45ec"
   },
   "llms.txt": {
    "url": "https://meta-analysis.cz/komentare/llms.txt",
-   "bytes": 42068,
-   "sha256": "79d04aa4e6f9ad9720443282ba600c6aece2334fb3fb0b3e9d2948ec6a9de05b"
+   "bytes": 42740,
+   "sha256": "ed8b841c3aa96d09fb12e0a9374b4342f3c7fce62128e1ae3a1caa38c1ee81d5"
   },
   "feed.xml": {
    "url": "https://meta-analysis.cz/komentare/feed.xml",
-   "bytes": 1326523,
-   "sha256": "df6bcd754985921a11cdd307d67278008fb6955ffa7bfa268ca1023b9af220bf"
+   "bytes": 1335450,
+   "sha256": "05e717fa051beeb28d600dfc31709de38e7ac9df0f7dcfb88735f874f14e9629"
   }
  },
  "generated_from": [

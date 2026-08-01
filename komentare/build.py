@@ -182,8 +182,8 @@ def text_status(a):
     | unpublished_manuscript"""
     # Written and sent to the outlet, but never printed. Not the same as
     # author_manuscript, which is the author's version of something that DID run.
-    if a.get("genre") == "submission":
-        return "submitted_document"
+    if a.get("genre") == "correspondence":
+        return "correspondence"
     if a.get("unpublished"):
         return "unpublished_manuscript"
     if a["media"] != "text":
@@ -591,8 +591,8 @@ def item_row(a, show_cat):
     # A row that looks exactly like the published ones would imply this ran. It did not.
     if a.get("unpublished"):
         bits.append('<span class="tag tag-unpub">nevyšlo</span>')
-    elif a.get("genre") == "submission":
-        bits.append('<span class="tag tag-unpub">podklad</span>')
+    elif a.get("genre") == "correspondence":
+        bits.append('<span class="tag tag-unpub">korespondence</span>')
     if tag:
         bits.append(tag)
     zi = ' data-zi="1"' if any(n in ZI_NAMES for n in names_row) else ""
@@ -633,10 +633,10 @@ def write_item(a):
     # page has always said so in Czech; the markup used to say the opposite, which is
     # the version a machine reads. datePublished + publisher on a withdrawn draft
     # asserts he published it in Lilie. Report the writing date as dateCreated instead.
-    # A submission to a public body is unpublished in exactly the sense the markup
+    # Correspondence is unpublished in exactly the sense the markup
     # cares about: no publisher, no publication date. Its date is real, though —
     # the day it was sent — so the Czech wording differs from a withdrawn draft.
-    unpub = bool(a.get("unpublished")) or a.get("genre") == "submission"
+    unpub = bool(a.get("unpublished")) or a.get("genre") == "correspondence"
     # Not everything in the archive is an opinion column. A match report is straight
     # factual reporting; OpinionNewsArticle would tell a machine it is his argument.
     is_report = a.get("genre") == "report"
@@ -713,13 +713,13 @@ def write_item(a):
                 + (f' <a href="{esc(a["url"])}" rel="external">'
                    f'{esc(a.get("url_label", "Web projektu"))}</a>.'
                    if a.get("url") else ""))
-    elif a.get("genre") == "submission":
-        # Written for a public body rather than an outlet: dated by the day it was sent,
-        # never printed anywhere. "Nevyšlo … pro vydání" would be wrong twice over — it
-        # was not written for an issue, and the date is real, not intended.
-        prov = (f'Podklad zaslaný '
-                f'{cs_date(a["date"], a.get("date_precision"), "cs")}; '
-                f'nejde o publikovaný text. {esc(a.get("submission", ""))}'
+    elif a.get("genre") == "correspondence":
+        # A letter or memo he sent, never printed anywhere. "Nevyšlo … pro vydání" would
+        # be wrong twice over: it was not written for an issue, and the date is real —
+        # the day it was sent — not an intention.
+        prov = (f'Korespondence, nikoli publikovaný text. Zasláno '
+                f'{cs_date(a["date"], a.get("date_precision"), "cs")}. '
+                f'{esc(a.get("context", ""))}'
                 + (f' <a href="{esc(a["url"])}" rel="external">'
                    f'{esc(a.get("url_label", "Související dokument"))}</a>.'
                    if a.get("url") else ""))
@@ -767,8 +767,8 @@ def write_item(a):
     note = f'<div class="provenance"><p>{esc(a["body_note"])}</p></div>\n' if a.get("body_note") else ""
     # The reader has to know this was never printed BEFORE reading it as a column, not
     # in the provenance line under the last paragraph. The full story stays down there.
-    flag = ('      <p class="unpublished-flag">Podklad pro veřejnou instituci — '
-            'nejde o publikovaný text.</p>\n' if a.get("genre") == "submission" else
+    flag = ('      <p class="unpublished-flag">Korespondence — '
+            'nejde o publikovaný text.</p>\n' if a.get("genre") == "correspondence" else
             '      <p class="unpublished-flag">Nevyšlo — tento text nebyl otištěn.</p>\n'
             if unpub else "")
     # the outlet's standfirst: part of the published piece, but the editor's words,
@@ -887,7 +887,7 @@ def write_index(items, key=None):
             "@id": (f"{BASE}/{a['slug']}/#article" if a["media"] == "text" else a.get("url", "")),
             "url": (f"{BASE}/{a['slug']}/" if a["media"] == "text" else a.get("url", "")),
             "headline": a["headline"],
-            ("dateCreated" if (a.get("unpublished") or a.get("genre") == "submission")
+            ("dateCreated" if (a.get("unpublished") or a.get("genre") == "correspondence")
              else "datePublished"): a["date"],
         } for a in sel],
     }
@@ -940,8 +940,8 @@ def write_feed(items, social=()):
         url = f"{BASE}/{a['slug']}/" if a["media"] == "text" else (a.get("url") or BASE)
         body = fix_quotes(md_to_html(a["body"]))
         # A reader who only ever sees the feed must not be told this ran in Lilie.
-        if a.get("genre") == "submission":
-            body = (f'<p><em>Nejde o publikovaný text: podklad zaslaný '
+        if a.get("genre") == "correspondence":
+            body = (f'<p><em>Korespondence, nikoli publikovaný text: zasláno '
                     f'{esc(a["outlet"])}. Uvedené datum je datum odeslání.'
                     f"</em></p>\n" + body)
         elif a.get("unpublished"):
@@ -1025,8 +1025,8 @@ def write_machine_readable(items, social=()):
             # llms.txt is read by machines that will not open the page and see the
             # Czech "Nevyšlo" note, so the marker has to travel with the line itself.
             out = a["outlet"] + (" (nevyšlo)" if a.get("unpublished") else
-                                 " (podklad, nepublikováno)"
-                                 if a.get("genre") == "submission" else "")
+                                 " (korespondence, nepublikováno)"
+                                 if a.get("genre") == "correspondence" else "")
             if a["media"] == "text":
                 L.append(f"- [{a['headline']}]({BASE}/{a['slug']}/) — {out}, {d}")
             else:
@@ -1090,7 +1090,7 @@ def write_machine_readable(items, social=()):
                            for i, f in enumerate(_imgs)]
         # "editorial" claims an editor stood between the author and the reader. For a
         # piece that was written, submitted and then never printed, no editor ever did.
-        d["provenance"] = ("submitted" if a.get("genre") == "submission" else
+        d["provenance"] = ("correspondence" if a.get("genre") == "correspondence" else
                            "unpublished" if a.get("unpublished") else
                            "self_published"
                            if (SELF_PUBLISHED.search(a["outlet"])
@@ -1169,8 +1169,8 @@ def write_machine_readable(items, social=()):
               + (f", ptal se {a['interviewer']}" if a.get("interviewer") else "")
               + f". {', '.join(people(a.get('byline')))}.*", ""]
         # this file is the one an AI is most likely to ingest whole
-        if a.get("genre") == "submission":
-            A += [f"*Nejde o publikovaný text: podklad zaslaný {a['outlet']}. "
+        if a.get("genre") == "correspondence":
+            A += [f"*Korespondence, nikoli publikovaný text: zasláno {a['outlet']}. "
                   f"Uvedené datum je datum odeslání.*", ""]
         elif a.get("unpublished"):
             A += [f"*Nevyšlo. Text byl napsán pro otištění "
@@ -1223,9 +1223,9 @@ def write_machine_readable(items, social=()):
             "author_manuscript": "the author's own version, as sent to the outlet",
             "publisher_excerpt": "only the outlet's free teaser; the original is paywalled",
             "link_only": "audio or video; no text is stored, the record links to the source",
-            "submitted_document": "written for and sent to a public body, not to an "
-                                  "outlet; never published. The date is the day it "
-                                  "was sent, and is exact",
+            "correspondence": "a letter or memo the author sent — to a public body, to "
+                                  "colleagues, to students — never published anywhere. The date "
+                                  "is the day it was sent, and is exact",
             "unpublished_manuscript": "written for the outlet and submitted, but never "
                                       "printed; the date is the issue it was written for, "
                                       "not a publication date",
@@ -1234,8 +1234,8 @@ def write_machine_readable(items, social=()):
             "editorial": "an outlet's editor stood between the author and the reader",
             "self_published": "posted by the author, with no outlet editing it",
             "unpublished": "never printed anywhere, so no editor and no publication date",
-            "submitted": "sent to a public body rather than published; no editor stood "
-                         "between the author and the reader because there was no reader",
+            "correspondence": "sent to named recipients rather than published; no editor "
+                         "stood between the author and the reader",
         },
         "files": files,
         "generated_from": ["komentare/src/*.md", "komentare/social-posts.json"],

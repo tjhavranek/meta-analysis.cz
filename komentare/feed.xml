@@ -42,6 +42,39 @@ Replication package:
 https://lnkd.in/dQrKGiw2</p><p>Joint work with Tomas Havranek, Martina Lušková, and T. D. Stanley</p>]]></content:encoded>
     </item>
     <item>
+      <title>Results of the AI report ranking experiment</title>
+      <link>https://meta-analysis.cz/komentare/debate-vysledky-experimentu-autorum/</link>
+      <guid isPermaLink="true">https://meta-analysis.cz/komentare/debate-vysledky-experimentu-autorum/</guid>
+      <pubDate>Thu, 16 Jul 2026 00:00:00 +0000</pubDate>
+      <category>In English</category>
+      <dc:language>en</dc:language>
+      <source url="https://meta-analysis.cz/debate">the 47 authors who took part in the experiment</source>
+      <content:encoded><![CDATA[<p><em>Korespondence, nikoli publikovaný text: zasláno the 47 authors who took part in the experiment. Uvedené datum je datum odeslání.</em></p>
+<p>Dear colleague,</p>
+<p>Thank you again for reading the AI reports on your paper and ranking them. Our experiment exists only because 47 authors were willing to do it! The paper is now out.</p>
+<p>What we found:</p>
+<ul>
+<li>A report produced by a single prompt using one frontier model beat both elaborate multi-agent tools, even though one of the tools spent about 30 times the tokens. In our experiment, multi-agent debate did not help.</li>
+<li>Had an external AI model ranked the reports in your place, the most elaborate tool would have come first.</li>
+<li>Authors who recalled their real journal referee report usually ranked it above all the AI reports. In contrast, the AI judges almost always ranked that same human report last.</li>
+<li>Author rankings and the external AI model's rankings agree only weakly (correlation 0.14). Several of you told us the ranking took a lot of time, and we are grateful!</li>
+</ul>
+<p>The two multi-agent tools from the experiment are open source: <a href="https://github.com/tjhavranek/mad-research">mad-research</a> runs a cross-model adversarial audit, and <a href="https://github.com/tjhavranek/paper-workshop">paper-workshop</a> runs a Claude-only expert workshop. They didn't beat a single prompt in our experiment, but both still produce detailed comments that can be useful as you revise your paper.</p>
+<p>Links:</p>
+<ul>
+<li>Paper and project page: <a href="https://meta-analysis.cz/debate">meta-analysis.cz/debate</a></li>
+<li>CEPR Discussion Paper 21752: <a href="https://cepr.org/publications/dp21752">cepr.org/publications/dp21752</a></li>
+<li>mad-research: <a href="https://github.com/tjhavranek/mad-research">github.com/tjhavranek/mad-research</a></li>
+<li>paper-workshop: <a href="https://github.com/tjhavranek/paper-workshop">github.com/tjhavranek/paper-workshop</a></li>
+<li>Pre-registration (OSF): <a href="https://doi.org/10.17605/OSF.IO/E6XGW">https://doi.org/10.17605/OSF.IO/E6XGW</a></li>
+<li>Online supplement (OSF): <a href="https://osf.io/7nfyb">osf.io/7nfyb</a></li>
+<li>Replication package (Zenodo): <a href="https://doi.org/10.5281/zenodo.21273528">https://doi.org/10.5281/zenodo.21273528</a></li>
+</ul>
+<p><em>Havranek, T and Z Irsova (2026), "Does Multi-Agent Debate Improve AI Feedback on Research Papers?", CEPR Discussion Paper No. 21752. CEPR Press, Paris &amp; London.</em></p>
+<p>Stay well,</p>
+<p>Tomas Havranek and Zuzana Irsova</p>]]></content:encoded>
+    </item>
+    <item>
       <title>Does multi-agent debate improve AI feedback on research papers?</title>
       <link>https://meta-analysis.cz/komentare/posts/2026-07-16-does-multi-agent-debate-improve-ai-feedback/</link>
       <guid isPermaLink="true">https://meta-analysis.cz/komentare/posts/2026-07-16-does-multi-agent-debate-improve-ai-feedback/</guid>
@@ -341,6 +374,38 @@ https://lnkd.in/dME6se-W</p>]]></content:encoded>
 5️⃣ Red Dawn Over China (Dikötter): How China became communist.
 6️⃣ The Lives of the Caesars (Suetonius): The most readable classical text I know. Reads like a novel.
 7️⃣ The Fiscal Theory of the Price Level (John H. Cochrane): A bold, rigorous book on modern macroeconomics.</p><p>What&#x27;s the best non-fiction book you&#x27;ve read this year?</p>]]></content:encoded>
+    </item>
+    <item>
+      <title>Co číst a sledovat: doporučení studentům ekonomie</title>
+      <link>https://meta-analysis.cz/komentare/ekonomie-co-cist-a-sledovat/</link>
+      <guid isPermaLink="true">https://meta-analysis.cz/komentare/ekonomie-co-cist-a-sledovat/</guid>
+      <pubDate>Fri, 27 Mar 2026 00:00:00 +0000</pubDate>
+      <category>Celostátní komentáře</category>
+      <dc:language>cs</dc:language>
+      <content:encoded><![CDATA[<p><em>Korespondence, nikoli publikovaný text: zasláno studentům kurzu Ekonomie II, IES FSV UK. Uvedené datum je datum odeslání.</em></p>
+<p>Vážení kolegové,</p>
+<p>zde konečně shrnuji, co je podle mě dobré sledovat a číst. Mluvil jsem o tom útržkovitě na přednáškách, tady to máte přehledně.</p>
+<h2>1) Noviny</h2>
+<p>Pokud nemáte předplatné, je užitečné si projíždět titulky/perexy, ať jste v obraze. Pozor, že ne všechno je v novinách vždy správně. Když vynecháte, nic moc se nestane.</p>
+<p>Wall Street Journal (editorial board doprava). Financial Times (celkově doleva).</p>
+<h2>2) Sítě</h2>
+<p>Koho sledovat, kdo nepíše nesmysly. Stále relativně málo důležité.</p>
+<p>České prostředí: Jakub Seidler. Obecně: John Cochrane, Hanno Lustig.</p>
+<h2>3) Podcasty</h2>
+<p>Tohle už je důležitější a velmi doporučuji pro udržení v obraze. Nové díly cca 1x za 2 týdny.</p>
+<p><a href="https://www.hoover.org/publications/goodfellows">GoodFellows</a>: pro všeobecný přehled (politika, historie, ekonomie). <a href="https://www.hoover.org/podcasts/economics-applied">Economics, Applied</a>: konkrétní příklady ekonomického výzkumu. <a href="https://www.hoover.org/publications/uncommon-knowledge">Uncommon Knowledge</a>: podrobné rozhovory s chytrými lidmi.</p>
+<p>A když čekáte na další díl, nebo když cvičíte, je super poslouchat <a href="https://www.youtube.com/playlist?list=PL023BCE5134243987">tohle</a> pro pochopení vzniku západní civilizace.</p>
+<h2>4) Knihy</h2>
+<p>To je nejdůležitější pro vybudování vaší konkurenční výhody. Snažte se číst. Dobře funguje třeba 30 minut před spaním každý den. Níže výběr nejlepších knih pro vás. Když během studia přečtete 3 z nich + budete sledovat ty podcasty výše, budete vzdělanější než většina profesorů v ČR.</p>
+<p><em>Bourgeois Equality</em> (McCloskey). Vysvětlení zbohatnutí světa po roce 1800.</p>
+<p><em>In the Garden of Beasts</em> (Larson). Nástup Hitlera k moci očima fascinující dcery amerického velvyslance.</p>
+<p><em>Recession</em> (Goodspeed). Proč máme ekonomické recese?</p>
+<p><em>Cicero</em> (Everitt). O nejdůležitějším člověku západní civilizace.</p>
+<p><em>Red Dawn over China</em> (Dikötter). Jak se Čína stala komunistickou (koho zajímá víc Rusko, tak Kotkin).</p>
+<p><em>The Lives of the Caesars</em> (Suetonius). Nejlépe čitelný klasický text v brilantním překladu, spousta skandálů, násilí a sexu, čte se jako román (kdo chce něco vážnějšího, ať sáhne po Aureliovi).</p>
+<p><em>The Fiscal Theory of the Price Level</em> (Cochrane). Nejlepší kniha o současné makroekonomii.</p>
+<p>Hezký víkend, mějte se krásně,</p>
+<p>Tomáš Havránek</p>]]></content:encoded>
     </item>
     <item>
       <title>Two AI models dueling worked. Four models debating works better.</title>
@@ -1934,6 +1999,23 @@ More details:
 </ol>
 <p>Asi je málo pravděpodobné, že ČNB skutečně vloží do akcií (tedy globálního ekonomického růstu) většinu rezerv. Ale mohla by se alespoň dostat ke 30–40 procentům, což by i tak velmi pomohlo každému daňovému poplatníkovi a nikomu neublížilo. Největší selhání našich státních institucí v této oblasti je smutný fakt, že se o této možnosti nikdo reálně ani nebaví. V ČNB o tom samozřejmě vědí, ale opakují mi dokola: „Nikdo nás za zisk nepochválí a za krátkodobou ztrátu nám vynadají.“ Nutno dodat, že už se povedlo dokopat je alespoň ke 20procentní alokaci do akcií. Za to bychom je pochválit měli.</p>
 <p>Autor je profesorem na Institutu ekonomických studií FSV UK.</p>]]></content:encoded>
+    </item>
+    <item>
+      <title>Využití rezerv ČNB: dopis po debatě v Otázkách Václava Moravce</title>
+      <link>https://meta-analysis.cz/komentare/cnb-rezervy-dopis-ministrovi/</link>
+      <guid isPermaLink="true">https://meta-analysis.cz/komentare/cnb-rezervy-dopis-ministrovi/</guid>
+      <pubDate>Mon, 06 Nov 2023 00:00:00 +0000</pubDate>
+      <category>Celostátní komentáře</category>
+      <dc:language>cs</dc:language>
+      <content:encoded><![CDATA[<p><em>Korespondence, nikoli publikovaný text: zasláno kancelář ministra dopravy. Uvedené datum je datum odeslání.</em></p>
+<p>Dobrý den pane ministře,</p>
+<p>rád jsem Vás včera poznal. Máte naprosto skvělý projev, jak po stránce formální, tak faktické.</p>
+<p>V kostce, co s rezervami ČNB: vše, co je třeba, je zvýšit podíl akcií v portfoliu ze současných 20 % na 60 %, jak je běžně zvykem u investování takového balíku peněz s dlouhým investičním horizontem. Mluvíme zde o akciích velkých globálních firem, tímto si kupujeme podíl na globálním růstu a zisku těch firem. Změnu může udělat ČNB sama, bude-li cítit podporu. Potom dlouhodobě vydělá průměrně o 100 mld ročně více. Dříve tak uhradí svoji současnou ztrátu a bude moci každoročně tuto částku přispívat do státního rozpočtu, podobně jako je to zvykem ve všech vyspělých zemích a jak dovoluje Zákon o ČNB. Singapur je jen příklad, není nutné kopírovat přesně jejich instituce. Níže dávám pro dokreslení krátké video a text, dohromady 10 minut Vašeho času.</p>
+<p>Prosím Vás, proberte to s guvernérem. I kdyby se podařilo jen částečné vykročení tímto směrem, je zcela reálné každoročně získat do rozpočtu desítky miliard navíc. Kdyby se tento plán realizoval před 4 lety, kdy jsem o tom poprvé psal, převáděla by ČNB od té doby do rozpočtu 1 bilion Kč. Tento email je v případě potřeby možné sdílet dále.</p>
+<p>Video o využití rezerv v Singapuru (celkem 7 minut, relevantní část začíná 2:20): <a href="https://www.youtube.com/watch?v=z7AstOVze0A">youtube.com/watch?v=z7AstOVze0A</a></p>
+<p>Krátký text (4 min čtení) o možnosti využití rezerv ČNB, 4 roky staré, ale stále aktuální: <a href="https://archiv.hn.cz/c7-66639220-14l3ct-0d2fb9f568c9971">archiv.hn.cz</a></p>
+<p>Mějte se fajn a díky za Vaši skvělou práci pro naši zemi.</p>
+<p>Tomáš Havránek</p>]]></content:encoded>
     </item>
     <item>
       <title>Otázky Václava Moravce: Dálniční katastrofa</title>
@@ -4166,7 +4248,7 @@ More details:
       <category>Litomyšlské sloupky</category>
       <dc:language>cs</dc:language>
       <source url="https://www.litomysl.cz/soubor/1655288841931_strategicky_plan_mesta_litomysl_2022_2030.pdf">Pracovní skupina Financování městských aktivit, Litomyšl</source>
-      <content:encoded><![CDATA[<p><em>Nejde o publikovaný text: podklad zaslaný Pracovní skupina Financování městských aktivit, Litomyšl. Uvedené datum je datum odeslání.</em></p>
+      <content:encoded><![CDATA[<p><em>Korespondence, nikoli publikovaný text: zasláno Pracovní skupina Financování městských aktivit, Litomyšl. Uvedené datum je datum odeslání.</em></p>
 <p>Vážený pane místostarosto, vážení kolegové,</p>
 <p>dokumenty jsem si prostudoval a níže si dovoluji připojit 3 náměty. Upozorňuji, že nejsem odborníkem na obecní finance (spíše se zabývám financemi státními a financováním zahraničních univerzit). Vím jen, co jsem se dočetl z podkladů, co lze dohledat z veřejných zdrojů, případně co mi sdělil pan starosta. Takže Vy budete vědět o obecních financích mnohem více, zejména pan místostarosta na základě jeho dlouholetých zkušeností s vedením města.</p>
 <p>Dodatečné příjmy můžeme získat ze 3 oblastí: 1) dotace, 2) daně, 3) investice. Celkový potenciál je takový, že po vhodných úpravách může být rozpočet města dlouhodobě vyrovnaný i při výraznějším navýšení výdajů. Zmíněné 3 zdroje příjmů popisuji postupně v pořadí podle důležitosti násobené jednoduchostí zavedení. Tedy ač by například bod 3 dlouhodobě vydělal nejvíce peněz, je nejvíce kontroverzní a složitý, proto ho řadím až na konec.</p>

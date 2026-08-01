@@ -2,7 +2,7 @@
 
 Publicistika Tomáše Havránka a Zuzany Havránkové: komentáře pro celostátní média, sloupky pro litomyšlskou Lilii, rozhovory a kratší příspěvky ze sítí. Texty jsou zde archivovány v plném znění s odkazem na původní vydání.
 
-Tento soubor obsahuje plné znění všech textových položek (190 z celkem 208). Zbývající položky jsou audio a video, které archiv vede pouze odkazem, a v tomto souboru nejsou; jejich metadata najdete v index.json a corpus.jsonl. Samostatně jsou vedeny kratší příspěvky ze sociálních sítí (23), psané převážně anglicky. Mají vlastní stránku https://meta-analysis.cz/komentare/posts/ a v index.json i corpus.jsonl jsou označeny jako genre=social_post.
+Tento soubor obsahuje plné znění všech textových položek (193 z celkem 211). Zbývající položky jsou audio a video, které archiv vede pouze odkazem, a v tomto souboru nejsou; jejich metadata najdete v index.json a corpus.jsonl. Samostatně jsou vedeny kratší příspěvky ze sociálních sítí (23), psané převážně anglicky. Mají vlastní stránku https://meta-analysis.cz/komentare/posts/ a v index.json i corpus.jsonl jsou označeny jako genre=social_post.
 
 ---
 
@@ -31,6 +31,45 @@ Many of you took part in this experiment with Zuzana and me -- thank you! Author
 Both tools are open source: [https://github.com/tjhavranek/mad-research](https://github.com/tjhavranek/mad-research) and [https://github.com/tjhavranek/paper-workshop](https://github.com/tjhavranek/paper-workshop)
 
 Comments are welcome!!
+
+---
+
+## Results of the AI report ranking experiment
+
+*the 47 authors who took part in the experiment, 16. července 2026. Tomáš Havránek, Zuzana Iršová Havránková.*
+
+*Korespondence, nikoli publikovaný text: zasláno the 47 authors who took part in the experiment. Uvedené datum je datum odeslání.*
+
+Zdroj: https://meta-analysis.cz/debate
+
+Dear colleague,
+
+Thank you again for reading the AI reports on your paper and ranking them. Our experiment exists only because 47 authors were willing to do it! The paper is now out.
+
+What we found:
+
+- A report produced by a single prompt using one frontier model beat both elaborate multi-agent tools, even though one of the tools spent about 30 times the tokens. In our experiment, multi-agent debate did not help.
+- Had an external AI model ranked the reports in your place, the most elaborate tool would have come first.
+- Authors who recalled their real journal referee report usually ranked it above all the AI reports. In contrast, the AI judges almost always ranked that same human report last.
+- Author rankings and the external AI model's rankings agree only weakly (correlation 0.14). Several of you told us the ranking took a lot of time, and we are grateful!
+
+The two multi-agent tools from the experiment are open source: [mad-research](https://github.com/tjhavranek/mad-research) runs a cross-model adversarial audit, and [paper-workshop](https://github.com/tjhavranek/paper-workshop) runs a Claude-only expert workshop. They didn't beat a single prompt in our experiment, but both still produce detailed comments that can be useful as you revise your paper.
+
+Links:
+
+- Paper and project page: [meta-analysis.cz/debate](https://meta-analysis.cz/debate)
+- CEPR Discussion Paper 21752: [cepr.org/publications/dp21752](https://cepr.org/publications/dp21752)
+- mad-research: [github.com/tjhavranek/mad-research](https://github.com/tjhavranek/mad-research)
+- paper-workshop: [github.com/tjhavranek/paper-workshop](https://github.com/tjhavranek/paper-workshop)
+- Pre-registration (OSF): [https://doi.org/10.17605/OSF.IO/E6XGW](https://doi.org/10.17605/OSF.IO/E6XGW)
+- Online supplement (OSF): [osf.io/7nfyb](https://osf.io/7nfyb)
+- Replication package (Zenodo): [https://doi.org/10.5281/zenodo.21273528](https://doi.org/10.5281/zenodo.21273528)
+
+*Havranek, T and Z Irsova (2026), "Does Multi-Agent Debate Improve AI Feedback on Research Papers?", CEPR Discussion Paper No. 21752. CEPR Press, Paris & London.*
+
+Stay well,
+
+Tomas Havranek and Zuzana Irsova
 
 ---
 
@@ -282,6 +321,62 @@ Může to fungovat jen proto, že japonské domácnosti jsou ochotny masivně pr
 Sami už vidíte paralely s českou situací: domácnosti i u nás „spoří“ masivně za záporný reálný úrok v bankách a stát drží cca 50 % HDP aktiv v zahraničí skrze rezervy České národní banky. Čtvrtina těchto aktiv už je správně investována na výnos (tedy do akcií), i když v porovnání s Japonskem to děláme mimořádně pomalu a opatrně. Podobně jako v Japonsku i u nás potřebujeme naučit domácnosti, aby do akcií investovaly samy.
 
 Osobně obdivuji odvahu, s jakou Japonci v roce 2012 nabrali kalkulované riziko, aby oddálili rozpad cenové a finanční stability. Přesně tohle naše ČNB odmítla udělat v roce 2017. Ale japonské zapákování je moc i na mě: už nejde, aby Bank of Japan v budoucnu výrazněji zvýšila úroky. Vypadá to jako sashimi zdarma, ale i Japonci budou muset nakonec zaplatit účty: inflací a finanční represí.
+
+---
+
+## Co číst a sledovat: doporučení studentům ekonomie
+
+*studentům kurzu Ekonomie II, IES FSV UK, 27. března 2026. Tomáš Havránek.*
+
+*Korespondence, nikoli publikovaný text: zasláno studentům kurzu Ekonomie II, IES FSV UK. Uvedené datum je datum odeslání.*
+
+Zdroj: https://meta-analysis.cz/komentare/ekonomie-co-cist-a-sledovat/
+
+Vážení kolegové,
+
+zde konečně shrnuji, co je podle mě dobré sledovat a číst. Mluvil jsem o tom útržkovitě na přednáškách, tady to máte přehledně.
+
+## 1) Noviny
+
+Pokud nemáte předplatné, je užitečné si projíždět titulky/perexy, ať jste v obraze. Pozor, že ne všechno je v novinách vždy správně. Když vynecháte, nic moc se nestane.
+
+Wall Street Journal (editorial board doprava). Financial Times (celkově doleva).
+
+## 2) Sítě
+
+Koho sledovat, kdo nepíše nesmysly. Stále relativně málo důležité.
+
+České prostředí: Jakub Seidler. Obecně: John Cochrane, Hanno Lustig.
+
+## 3) Podcasty
+
+Tohle už je důležitější a velmi doporučuji pro udržení v obraze. Nové díly cca 1x za 2 týdny.
+
+[GoodFellows](https://www.hoover.org/publications/goodfellows): pro všeobecný přehled (politika, historie, ekonomie). [Economics, Applied](https://www.hoover.org/podcasts/economics-applied): konkrétní příklady ekonomického výzkumu. [Uncommon Knowledge](https://www.hoover.org/publications/uncommon-knowledge): podrobné rozhovory s chytrými lidmi.
+
+A když čekáte na další díl, nebo když cvičíte, je super poslouchat [tohle](https://www.youtube.com/playlist?list=PL023BCE5134243987) pro pochopení vzniku západní civilizace.
+
+## 4) Knihy
+
+To je nejdůležitější pro vybudování vaší konkurenční výhody. Snažte se číst. Dobře funguje třeba 30 minut před spaním každý den. Níže výběr nejlepších knih pro vás. Když během studia přečtete 3 z nich + budete sledovat ty podcasty výše, budete vzdělanější než většina profesorů v ČR.
+
+*Bourgeois Equality* (McCloskey). Vysvětlení zbohatnutí světa po roce 1800.
+
+*In the Garden of Beasts* (Larson). Nástup Hitlera k moci očima fascinující dcery amerického velvyslance.
+
+*Recession* (Goodspeed). Proč máme ekonomické recese?
+
+*Cicero* (Everitt). O nejdůležitějším člověku západní civilizace.
+
+*Red Dawn over China* (Dikötter). Jak se Čína stala komunistickou (koho zajímá víc Rusko, tak Kotkin).
+
+*The Lives of the Caesars* (Suetonius). Nejlépe čitelný klasický text v brilantním překladu, spousta skandálů, násilí a sexu, čte se jako román (kdo chce něco vážnějšího, ať sáhne po Aureliovi).
+
+*The Fiscal Theory of the Price Level* (Cochrane). Nejlepší kniha o současné makroekonomii.
+
+Hezký víkend, mějte se krásně,
+
+Tomáš Havránek
 
 ---
 
@@ -2538,6 +2633,32 @@ Dlouhodobý výkon akciových indexů, stejně jako výkon fondů bohatství Nor
 Asi je málo pravděpodobné, že ČNB skutečně vloží do akcií (tedy globálního ekonomického růstu) většinu rezerv. Ale mohla by se alespoň dostat ke 30–40 procentům, což by i tak velmi pomohlo každému daňovému poplatníkovi a nikomu neublížilo. Největší selhání našich státních institucí v této oblasti je smutný fakt, že se o této možnosti nikdo reálně ani nebaví. V ČNB o tom samozřejmě vědí, ale opakují mi dokola: „Nikdo nás za zisk nepochválí a za krátkodobou ztrátu nám vynadají.“ Nutno dodat, že už se povedlo dokopat je alespoň ke 20procentní alokaci do akcií. Za to bychom je pochválit měli.
 
 Autor je profesorem na Institutu ekonomických studií FSV UK.
+
+---
+
+## Využití rezerv ČNB: dopis po debatě v Otázkách Václava Moravce
+
+*kancelář ministra dopravy, 6. listopadu 2023. Tomáš Havránek.*
+
+*Korespondence, nikoli publikovaný text: zasláno kancelář ministra dopravy. Uvedené datum je datum odeslání.*
+
+Zdroj: https://meta-analysis.cz/komentare/cnb-rezervy-dopis-ministrovi/
+
+Dobrý den pane ministře,
+
+rád jsem Vás včera poznal. Máte naprosto skvělý projev, jak po stránce formální, tak faktické.
+
+V kostce, co s rezervami ČNB: vše, co je třeba, je zvýšit podíl akcií v portfoliu ze současných 20 % na 60 %, jak je běžně zvykem u investování takového balíku peněz s dlouhým investičním horizontem. Mluvíme zde o akciích velkých globálních firem, tímto si kupujeme podíl na globálním růstu a zisku těch firem. Změnu může udělat ČNB sama, bude-li cítit podporu. Potom dlouhodobě vydělá průměrně o 100 mld ročně více. Dříve tak uhradí svoji současnou ztrátu a bude moci každoročně tuto částku přispívat do státního rozpočtu, podobně jako je to zvykem ve všech vyspělých zemích a jak dovoluje Zákon o ČNB. Singapur je jen příklad, není nutné kopírovat přesně jejich instituce. Níže dávám pro dokreslení krátké video a text, dohromady 10 minut Vašeho času.
+
+Prosím Vás, proberte to s guvernérem. I kdyby se podařilo jen částečné vykročení tímto směrem, je zcela reálné každoročně získat do rozpočtu desítky miliard navíc. Kdyby se tento plán realizoval před 4 lety, kdy jsem o tom poprvé psal, převáděla by ČNB od té doby do rozpočtu 1 bilion Kč. Tento email je v případě potřeby možné sdílet dále.
+
+Video o využití rezerv v Singapuru (celkem 7 minut, relevantní část začíná 2:20): [youtube.com/watch?v=z7AstOVze0A](https://www.youtube.com/watch?v=z7AstOVze0A)
+
+Krátký text (4 min čtení) o možnosti využití rezerv ČNB, 4 roky staré, ale stále aktuální: [archiv.hn.cz](https://archiv.hn.cz/c7-66639220-14l3ct-0d2fb9f568c9971)
+
+Mějte se fajn a díky za Vaši skvělou práci pro naši zemi.
+
+Tomáš Havránek
 
 ---
 
@@ -5890,7 +6011,7 @@ Teď je možné zachránit zbytek zdi, ale vrátit tu „opravenou“ do původn
 
 *Pracovní skupina Financování městských aktivit, Litomyšl, 30. dubna 2021. Tomáš Havránek.*
 
-*Nejde o publikovaný text: podklad zaslaný Pracovní skupina Financování městských aktivit, Litomyšl. Uvedené datum je datum odeslání.*
+*Korespondence, nikoli publikovaný text: zasláno Pracovní skupina Financování městských aktivit, Litomyšl. Uvedené datum je datum odeslání.*
 
 Zdroj: https://www.litomysl.cz/soubor/1655288841931_strategicky_plan_mesta_litomysl_2022_2030.pdf
 

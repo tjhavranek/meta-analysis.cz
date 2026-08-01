@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Results of the AI report ranking experiment — Tomáš Havránek, Zuzana Iršová Havránková</title>
+<meta name="description" content="Dear colleague, Thank you again for reading the AI reports on your paper and ranking them. Our experiment exists only because 47 authors were willing to do it! The paper is now out. What we…" />
+<link rel="stylesheet" href="/komentare/style.css" />
+<link rel="canonical" href="https://meta-analysis.cz/komentare/debate-vysledky-experimentu-autorum/" />
+<link rel="alternate" type="application/rss+xml" title="Komentáře — Tomáš Havránek, Zuzana Havránková" href="/komentare/feed.xml" />
+<meta property="og:site_name" content="Komentáře — Tomáš Havránek, Zuzana Havránková" />
+<meta property="og:locale" content="en_GB" />
+<meta property="og:title" content="Results of the AI report ranking experiment — Tomáš Havránek, Zuzana Iršová Havránková" />
+<meta property="og:description" content="Dear colleague, Thank you again for reading the AI reports on your paper and ranking them. Our experiment exists only because 47 authors were willing to do it! The paper is now out. What we…" />
+<meta property="og:url" content="https://meta-analysis.cz/komentare/debate-vysledky-experimentu-autorum/" />
+<meta property="og:type" content="article" />
+<meta name="author" content="Tomáš Havránek" />
+<meta name="author" content="Zuzana Iršová Havránková" />
+<link rel="alternate" type="text/markdown" href="/komentare/src/2026-07-16_debate-vysledky-experimentu-autorum.md" title="Zdrojový text (Markdown)" />
+<script type="application/ld+json">
+{
+ "@context": "https://schema.org",
+ "@graph": [
+  {
+   "@type": "Article",
+   "@id": "https://meta-analysis.cz/komentare/debate-vysledky-experimentu-autorum/#article",
+   "mainEntityOfPage": "https://meta-analysis.cz/komentare/debate-vysledky-experimentu-autorum/",
+   "url": "https://meta-analysis.cz/komentare/debate-vysledky-experimentu-autorum/",
+   "headline": "Results of the AI report ranking experiment",
+   "inLanguage": "en",
+   "dateCreated": "2026-07-16",
+   "isAccessibleForFree": true,
+   "articleSection": "In English",
+   "creativeWorkStatus": "Unpublished",
+   "author": [
+    {
+     "@type": "Person",
+     "name": "Tomáš Havránek",
+     "sameAs": "https://orcid.org/0000-0002-3158-2539"
+    },
+    {
+     "@type": "Person",
+     "name": "Zuzana Iršová Havránková",
+     "sameAs": "https://orcid.org/0000-0002-0753-8124"
+    }
+   ],
+   "isBasedOn": "https://meta-analysis.cz/debate",
+   "description": "Dear colleague, Thank you again for reading the AI reports on your paper and ranking them. Our experiment exists only because 47 authors were willing to do it! The paper is now out. What we…"
+  }
+ ]
+}
+</script>
+<script>document.documentElement.className+=" has-js";</script>
+</head>
+<body>
+<header class="masthead">
+  <div class="wrap">
+    <p class="site-name"><a href="/komentare/">Komentáře<small>Tomáš Havránek, Zuzana Iršová Havránková</small></a></p>
+    <nav class="nav"><a href="/komentare/celostatni/" lang="cs">Celostátní</a><a href="/komentare/litomysl/" lang="cs">Litomyšl</a><a href="/komentare/rozhovory/" lang="cs">Rozhovory</a><a href="/komentare/english/" aria-current="page">English</a><a href="/komentare/posts/">Posts</a></nav>
+  </div>
+</header>
+<main>
+  <div class="wrap">
+    <article>
+      <div class="article-head">
+        <h1>Results of the AI report ranking experiment</h1>
+        <div class="byline"><span>16 July 2026</span><span>the 47 authors who took part in the experiment</span><span>Tomáš Havránek, Zuzana Iršová Havránková</span></div>
+      </div>
+      <p class="unpublished-flag">Korespondence — nejde o publikovaný text.</p>
+<div class="provenance"><p>Dopis účastníkům experimentu, nikoli publikovaný text — proto je uveden jako korespondence. Shrnuje výsledky studie „Does Multi-Agent Debate Improve AI Feedback on Research Papers?“ v den, kdy vyšel preprint. Vše, na co odkazuje, je veřejné: preprint, CEPR Discussion Paper 21752, předregistrace na OSF, replikační balíček na Zenodu i oba nástroje na GitHubu. Text je otištěn beze změn.</p></div>
+      <div class="prose reading">
+<p>Dear colleague,</p>
+<p>Thank you again for reading the AI reports on your paper and ranking them. Our experiment exists only because 47 authors were willing to do it! The paper is now out.</p>
+<p>What we found:</p>
+<ul>
+<li>A report produced by a single prompt using one frontier model beat both elaborate multi-agent tools, even though one of the tools spent about 30 times the tokens. In our experiment, multi-agent debate did not help.</li>
+<li>Had an external AI model ranked the reports in your place, the most elaborate tool would have come first.</li>
+<li>Authors who recalled their real journal referee report usually ranked it above all the AI reports. In contrast, the AI judges almost always ranked that same human report last.</li>
+<li>Author rankings and the external AI model's rankings agree only weakly (correlation 0.14). Several of you told us the ranking took a lot of time, and we are grateful!</li>
+</ul>
+<p>The two multi-agent tools from the experiment are open source: <a href="https://github.com/tjhavranek/mad-research">mad-research</a> runs a cross-model adversarial audit, and <a href="https://github.com/tjhavranek/paper-workshop">paper-workshop</a> runs a Claude-only expert workshop. They didn't beat a single prompt in our experiment, but both still produce detailed comments that can be useful as you revise your paper.</p>
+<p>Links:</p>
+<ul>
+<li>Paper and project page: <a href="https://meta-analysis.cz/debate">meta-analysis.cz/debate</a></li>
+<li>CEPR Discussion Paper 21752: <a href="https://cepr.org/publications/dp21752">cepr.org/publications/dp21752</a></li>
+<li>mad-research: <a href="https://github.com/tjhavranek/mad-research">github.com/tjhavranek/mad-research</a></li>
+<li>paper-workshop: <a href="https://github.com/tjhavranek/paper-workshop">github.com/tjhavranek/paper-workshop</a></li>
+<li>Pre-registration (OSF): <a href="https://doi.org/10.17605/OSF.IO/E6XGW">https://doi.org/10.17605/OSF.IO/E6XGW</a></li>
+<li>Online supplement (OSF): <a href="https://osf.io/7nfyb">osf.io/7nfyb</a></li>
+<li>Replication package (Zenodo): <a href="https://doi.org/10.5281/zenodo.21273528">https://doi.org/10.5281/zenodo.21273528</a></li>
+</ul>
+<p><em>Havranek, T and Z Irsova (2026), "Does Multi-Agent Debate Improve AI Feedback on Research Papers?", CEPR Discussion Paper No. 21752. CEPR Press, Paris &amp; London.</em></p>
+<p>Stay well,</p>
+<p>Tomas Havranek and Zuzana Irsova</p>
+      </div>
+      <div class="provenance"><p>Korespondence, nikoli publikovaný text. Zasláno 16. července 2026. Rozesláno skrytou kopií autorům 44 meta-analýz, kteří v experimentu seřadili tři anonymizované AI posudky na svou vlastní práci; seznam příjemců zde neuvádíme. <a href="https://meta-analysis.cz/debate" rel="external">Project page and paper</a>.</p></div>
+      <nav class="pager">
+        <a href="/komentare/english/">← In English</a>
+        <a href="/komentare/">Všechny texty</a>
+      </nav>
+    </article>
+  </div>
+</main>
+<footer class="foot">
+  <div class="wrap about">
+    <p class="about-bio"><strong>Tomáš Havránek</strong> is Professor of Economics at the Institute of Economic Studies, Charles University, Prague. He works on monetary policy, meta-analysis and meta-research, and was an adviser to the Vice-Governor and the Board of the Czech National Bank. He is a Research Affiliate at CEPR (London) and at Stanford METRICS.</p><p class="about-bio"><strong>Zuzana Havránková</strong> is Professor of Economics at the same institute. She works on meta-analysis and meta-research, labour economics and international economics, and is an affiliate researcher at Stanford METRICS. She publishes in English as Zuzana Irsova.</p><p class="about-bio">This section archives their published commentary, columns and interviews.</p>
+    <ul class="about-links">
+      <li class="who">Tomáš Havránek</li>
+      <li><a href="https://www.tomashavranek.cz/">tomashavranek.cz</a></li>
+      <li><a href="https://ies.fsv.cuni.cz/en/contacts/institute-members/78067720">IES FSV UK</a></li>
+      <li><a href="https://orcid.org/0000-0002-3158-2539">ORCID</a></li>
+      <li><a href="https://scholar.google.com/citations?user=BF0BvBkAAAAJ">Google Scholar</a></li>
+      <li><a href="https://ideas.repec.org/f/pha418.html">RePEc</a></li>
+      <li><a href="https://www.scopus.com/authid/detail.uri?authorId=24453189000">Scopus</a></li>
+      <li><a href="https://cepr.org/about/people/tomas-havranek">CEPR</a></li>
+      <li><a href="https://metrics.stanford.edu/people/tomas-havranek">Stanford METRICS</a></li>
+    </ul>
+    <ul class="about-links">
+      <li class="who">Zuzana Iršová Havránková</li>
+      <li><a href="https://www.irsova.com/">irsova.com</a></li>
+      <li><a href="https://ies.fsv.cuni.cz/en/contacts/institute-members/73504033">IES FSV UK</a></li>
+      <li><a href="https://orcid.org/0000-0002-0753-8124">ORCID</a></li>
+      <li><a href="https://scholar.google.com/citations?user=LaHrICUAAAAJ">Google Scholar</a></li>
+      <li><a href="https://ideas.repec.org/e/pir23.html">RePEc</a></li>
+      <li><a href="https://www.scopus.com/authid/detail.uri?authorId=37080793200">Scopus</a></li>
+      <li><a href="https://cepr.org/about/people/zuzana-irsova">CEPR</a></li>
+      <li><a href="https://metrics.stanford.edu/people/zuzana-irsova">Stanford METRICS</a></li>
+    </ul>
+    <ul class="about-links">
+      <li class="who">Projects</li>
+      <li><a href="https://meta-analysis.cz/">meta-analysis.cz</a></li>
+      <li><a href="https://zrusme-inflaci.cz/">Zrušme inflaci</a></li>
+      <li><a href="/komentare/feed.xml">RSS</a></li>
+    </ul>
+    <p class="about-machine" lang="en">For machines:
+      <a href="/komentare/data/">the corpus</a> (JSONL, JSON, Markdown, checksums) ·
+      <a href="/komentare/llms.txt">llms.txt</a> ·
+      <a href="/komentare/index.json">index.json</a> (metadata for every item, full text where available) ·
+      <a href="/komentare/all.md">all.md</a> (every text in one file) ·
+      <a href="/komentare/feed.xml">RSS</a>. The Markdown source of each item is in
+      <a href="/komentare/src/">/komentare/src/</a>. Text and metadata may be freely
+      indexed, quoted and used for research, with attribution to the original outlet.</p>
+  </div>
+</footer>
+</body>
+</html>
