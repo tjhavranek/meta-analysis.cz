@@ -38,7 +38,7 @@ Comments are welcome!!
 
 *the 47 authors who took part in the experiment, 16. července 2026. Tomáš Havránek, Zuzana Irsova.*
 
-*Korespondence, nikoli publikovaný text: zasláno the 47 authors who took part in the experiment. Uvedené datum je datum odeslání.*
+*Korespondence, nikoli publikovaný text. Uvedené datum je datum odeslání.*
 
 Zdroj: https://meta-analysis.cz/debate
 
@@ -328,7 +328,7 @@ Osobně obdivuji odvahu, s jakou Japonci v roce 2012 nabrali kalkulované riziko
 
 *studentům kurzu Ekonomie II, IES FSV UK, 27. března 2026. Tomáš Havránek.*
 
-*Korespondence, nikoli publikovaný text: zasláno studentům kurzu Ekonomie II, IES FSV UK. Uvedené datum je datum odeslání.*
+*Korespondence, nikoli publikovaný text. Uvedené datum je datum odeslání.*
 
 Zdroj: https://meta-analysis.cz/komentare/ekonomie-co-cist-a-sledovat/
 
@@ -520,7 +520,7 @@ Autoři jsou ekonomové
 
 ## „Slovensko zostane len liahňou talentov a vidiekom Prahy,“ hovorí najmladšia profesorka na Karlovej univerzite
 
-*Startitup.sk, 18. prosince 2025, ptal se Ema Dzurjovčinová. Zuzana Havránková.*
+*Startitup.sk, 18. prosince 2025, ptala se Ema Dzurjovčinová. Zuzana Havránková.*
 
 Zdroj: https://www.startitup.sk/originals-slovensko-zostane-len-liahnou-talentov-a-vidiekom-prahy-hovori-najmladsia-profesorka-na-karlovej-univerzite/
 
@@ -721,7 +721,7 @@ Nezávislost národní banky je nástroj, není to cíl. V demokracii může bý
 
 ## Je na čase přestat protežovat ženy, říká nejmladší profesorka Univerzity Karlovy
 
-*Forbes, 4. října 2025, ptal se Jana Mertová. Zuzana Havránková.*
+*Forbes, 4. října 2025, ptala se Jana Mertová. Zuzana Havránková.*
 
 Zdroj: https://forbes.cz/je-na-case-prestat-protezovat-zeny-rika-nejmladsi-profesorka-univerzity-karlovy/
 
@@ -1051,7 +1051,7 @@ Dosud byla prioritou samotná dostavba dálnice. Ta už v ohrožení není. Sou�
 
 ## Nejmladší profesorka v historii Univerzity Karlovy vychovává s manželem čtyři děti. Důležitá je disciplína a lidé, na které je spoleh, říká
 
-*Hospodářské noviny, 20. srpna 2025, ptal se Patrik Salát, Luděk Vainert. Zuzana Havránková.*
+*Hospodářské noviny, 20. srpna 2025, ptali se Patrik Salát, Luděk Vainert. Zuzana Havránková.*
 
 Zdroj: https://vikend.hn.cz/c1-67773370-milujeme-pokrok-kdyz-se-neodehrava-na-nasem-dvorku-rika-nejmladsi-profesorka-plyne-z-toho-i-proc-je-trump-u-moci
 
@@ -1417,7 +1417,7 @@ Děkuji paním učitelkám a pánům učitelům ze Zámecké (a hlavně třídn�
 
 ## Zuzana Havránková: Profesura a čtyři děti před čtyřicítkou? Jde to!
 
-*Forum Univerzity Karlovy, 20. června 2025, ptal se Helena Zdráhalová. Zuzana Havránková.*
+*Forum Univerzity Karlovy, 20. června 2025, ptala se Helena Zdráhalová. Zuzana Havránková.*
 
 Zdroj: https://www.ukforum.cz/rubriky/veda/profesura-a-ctyri-deti-pred-ctyricitkou-jde-to
 
@@ -2564,7 +2564,7 @@ To be clear, we do not claim that our guidelines must always be followed nor are
 
 ## Zuzana Havránková: Menší třídy nenapomáhají lepším výsledkům žáků ve školách
 
-*Věda na FSV UK (podcast De Facto), 15. listopadu 2023, ptal se Alice Němcová Tejkalová. Zuzana Havránková.*
+*Věda na FSV UK (podcast De Facto), 15. listopadu 2023, ptala se Alice Němcová Tejkalová. Zuzana Havránková.*
 
 Zdroj: https://science.fsv.cuni.cz/zuzana-havrankova-mensi-tridy-nenapomahaji-lepsim-vysledkum-zaku-ve-skolach/
 
@@ -2640,7 +2640,7 @@ Autor je profesorem na Institutu ekonomických studií FSV UK.
 
 *kancelář ministra dopravy, 6. listopadu 2023. Tomáš Havránek.*
 
-*Korespondence, nikoli publikovaný text: zasláno kancelář ministra dopravy. Uvedené datum je datum odeslání.*
+*Korespondence, nikoli publikovaný text. Uvedené datum je datum odeslání.*
 
 Zdroj: https://meta-analysis.cz/komentare/cnb-rezervy-dopis-ministrovi/
 
@@ -3004,7 +3004,7 @@ Obnovení reputace ČNB nepomohou projevy radních a fotky guvernéra s celebrit
 
 ## Inovace ověřené trhem jsou základ naší prosperity
 
-*Ekonomický magazín, 26. srpna 2023, ptal se Renáta Lucková. Tomáš Havránek.*
+*Ekonomický magazín, 26. srpna 2023, ptala se Renáta Lucková. Tomáš Havránek.*
 
 Zdroj: https://e-news.cz/rozhovory/tomas-havranek-inovace-overene-trhem-jsou-zaklad-nasi-prosperity-a-kvality-naseho-zivota/
 
@@ -5381,7 +5381,7 @@ Na druhou stranu NPÚ ošklivě nezvládlo přestavbu zámecké zdi, tady měli 
 
 ## Inflaci můžeme úplně zrušit, je neústavní
 
-*iDNES.cz, 19. prosince 2021, ptal se Martina Riemlová. Tomáš Havránek.*
+*iDNES.cz, 19. prosince 2021, ptala se Martina Riemlová. Tomáš Havránek.*
 
 Zdroj: https://www.idnes.cz/ekonomika/domaci/ekonom-tomas-havranek-rozhovor-inflace-cenova-stabilita.A211215_125014_ekonomika_rie
 
@@ -5683,7 +5683,7 @@ Výzkum v České národní bance je tedy důležitý a i po radikální změně
 
 ## Havránek: Hodnocení ERC je velmi poctivé, nápady vynikající
 
-*Forum Univerzity Karlovy, 22. června 2021, ptal se Pavla Hubálková. Tomáš Havránek.*
+*Forum Univerzity Karlovy, 22. června 2021, ptala se Pavla Hubálková. Tomáš Havránek.*
 
 Zdroj: https://ukforum.cz/rubriky/veda/7994-havranek-hodnoceni-erc-je-velmi-poctive-napady-vynikajici
 
@@ -6011,7 +6011,7 @@ Teď je možné zachránit zbytek zdi, ale vrátit tu „opravenou“ do původn
 
 *Pracovní skupina Financování městských aktivit, Litomyšl, 30. dubna 2021. Tomáš Havránek.*
 
-*Korespondence, nikoli publikovaný text: zasláno Pracovní skupina Financování městských aktivit, Litomyšl. Uvedené datum je datum odeslání.*
+*Korespondence, nikoli publikovaný text. Uvedené datum je datum odeslání.*
 
 Zdroj: https://www.litomysl.cz/soubor/1655288841931_strategicky_plan_mesta_litomysl_2022_2030.pdf
 
@@ -6065,7 +6065,7 @@ Každopádně doufejme, že ČNB bude pokračovat směrem k současné švýcars
 
 ## Bojím se, že papírové peníze v Česku skončí do pěti let, říká ekonom
 
-*iDNES.cz, 18. dubna 2021, ptal se Martina Riemlová. Tomáš Havránek.*
+*iDNES.cz, 18. dubna 2021, ptala se Martina Riemlová. Tomáš Havránek.*
 
 Zdroj: https://www.idnes.cz/ekonomika/domaci/rozhovor-tomas-havranek-ekonom-cnb-univerzita-karlova.A210415_125459_ekonomika_rie
 
@@ -7400,7 +7400,7 @@ Jako všechny odhady zisku mandátů je i tato projekce pomocí D'Hondtovy metod
 
 ## Dvanáct otázek Hospodářských novin k modelu KdoVyhrajeVolby.cz
 
-*KdoVyhrajeVolby.cz, září 2017, ptal se redakce Hospodářských novin. Zuzana Havránková.*
+*KdoVyhrajeVolby.cz, září 2017, ptala se redakce Hospodářských novin. Zuzana Havránková.*
 
 Zdroj: https://web.archive.org/web/20170921194015/http://kdovyhrajevolby.cz/wp-content/uploads/2017/09/HN_otazky_odpovedi.pdf
 
@@ -7572,7 +7572,7 @@ Křivku investic posouvají doleva tyto vlivy: i) nižší relativní ceny kapit
 
 ## Z mateřské zamíří rovnou do Berkeley
 
-*Hospodářské noviny, 27. ledna 2014, ptal se Julie Daňková. Zuzana Havránková.*
+*Hospodářské noviny, 27. ledna 2014, ptala se Julie Daňková. Zuzana Havránková.*
 
 Zdroj: https://archiv.hn.cz/c1-61619400-z-materske-zamiri-rovnou-do-berkeley
 

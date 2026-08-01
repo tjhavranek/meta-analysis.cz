@@ -48,8 +48,8 @@
   },
   "all.md": {
    "url": "https://meta-analysis.cz/komentare/all.md",
-   "bytes": 1186414,
-   "sha256": "9f62fe5c34e4573ecdf9e3efa8b6036dae2e220bcecb36768c4aade17056b94e"
+   "bytes": 1186206,
+   "sha256": "821e00d36952e64af64b7c3a3423b6909c1cebe59ffcb9a6b71e6b0cfcaff50a"
   },
   "llms.txt": {
    "url": "https://meta-analysis.cz/komentare/llms.txt",
@@ -58,8 +58,8 @@
   },
   "feed.xml": {
    "url": "https://meta-analysis.cz/komentare/feed.xml",
-   "bytes": 1335450,
-   "sha256": "05e717fa051beeb28d600dfc31709de38e7ac9df0f7dcfb88735f874f14e9629"
+   "bytes": 1335225,
+   "sha256": "9bf4050e6b9bca2cf8298abe017e21fc4dee9ae3184c481e972b6ac7d918d382"
   }
  },
  "generated_from": [

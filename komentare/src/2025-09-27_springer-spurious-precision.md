@@ -8,7 +8,7 @@ headline: "Spurious Precision in Meta-Analysis"
 byline: "Zuzana Irsova"
 word_count: "918"
 perex: "Meta-analyses give more weight to precise studies. But what if the reported precision is spurious? We introduce MAIVE, a new estimator that tackles this problem."
-body_note: "Behind-the-paper post k článku v Nature Communications. Přepsáno doslovně včetně překlepu „ratonale“ v druhém odstavci."
+body_note: "A behind-the-paper post about the article in Nature Communications. Transcribed verbatim, including the typo \"ratonale\" in the second paragraph."
 ---
 
 # Spurious Precision in Meta-Analysis

@@ -590,7 +590,8 @@ def item_row(a, show_cat):
     if a.get("issue"):
         bits.append(f'<span>č.&nbsp;{esc(a["issue"])}</span>')
     if a.get("interviewer"):
-        bits.append(f'<span>ptal se: {esc(a["interviewer"])}</span>')
+        bits.append(f'<span>{asked_by(a["interviewer"])}: '
+                    f'{esc(a["interviewer"])}</span>')
     # A row that looks exactly like the published ones would imply this ran. It did not.
     if a.get("unpublished"):
         bits.append('<span class="tag tag-unpub">nevyšlo</span>')
@@ -704,9 +705,11 @@ def write_item(a):
         meta.append(f'<span>č.&nbsp;{esc(a["issue"])}</span>')
     meta.append("<span>" + esc(", ".join(names)) + "</span>")
     if a.get("written_by"):
-        meta.append(f'<span>text: {esc(a["written_by"])}</span>')
+        meta.append(f'<span>{"written by" if lang == "en" else "text"}: '
+                    f'{esc(a["written_by"])}</span>')
     if a.get("interviewer"):
-        meta.append(f'<span>ptal se: {esc(a["interviewer"])}</span>')
+        meta.append(f'<span>{asked_by(a["interviewer"], lang == "en")}: '
+                    f'{esc(a["interviewer"])}</span>')
 
     # Every sentence below is generated, so it can follow the item's OWN language.
     # Site chrome stays Czech by design (see shell()), but a reader who opens an
@@ -987,9 +990,11 @@ def write_feed(items, social=()):
         body = fix_quotes(md_to_html(a["body"]))
         # A reader who only ever sees the feed must not be told this ran in Lilie.
         if a.get("genre") == "correspondence":
-            body = (f'<p><em>Korespondence, nikoli publikovaný text: zasláno '
-                    f'{esc(a["outlet"])}. Uvedené datum je datum odeslání.'
-                    f"</em></p>\n" + body)
+            _en = (a.get("lang") or SECTIONS[a["category"]]["lang"]) == "en"
+            body = ((f'<p><em>Correspondence, not a published text. The date is the'
+                     f' day it was sent.</em></p>' + chr(10) if _en else
+                     f'<p><em>Korespondence, nikoli publikovaný text. Uvedené datum'
+                     f' je datum odeslání.</em></p>' + chr(10)) + body)
         elif a.get("unpublished"):
             body = (f'<p><em>Nevyšlo. Text byl napsán pro otištění '
                     f'{OUTLET_IN.get(a["outlet"], "v " + a["outlet"])}; uvedené datum '
@@ -1212,11 +1217,12 @@ def write_machine_readable(items, social=()):
             continue
         A += [f"## {a['headline']}", "",
               f"*{a['outlet']}, {cs_date(a['date'], a.get('date_precision'))}"
-              + (f", ptal se {a['interviewer']}" if a.get("interviewer") else "")
+              + (f", {asked_by(a['interviewer'])} {a['interviewer']}"
+                 if a.get("interviewer") else "")
               + f". {', '.join(people(a.get('byline')))}.*", ""]
         # this file is the one an AI is most likely to ingest whole
         if a.get("genre") == "correspondence":
-            A += [f"*Korespondence, nikoli publikovaný text: zasláno {a['outlet']}. "
+            A += [f"*Korespondence, nikoli publikovaný text. "
                   f"Uvedené datum je datum odeslání.*", ""]
         elif a.get("unpublished"):
             A += [f"*Nevyšlo. Text byl napsán pro otištění "
@@ -1391,6 +1397,26 @@ def _img_size(path):
                         int.from_bytes(b[i + 5:i + 7], "big"))
             i += 2 + ln
     return None
+
+
+def asked_by(name, en=False):
+    """The label before an interviewer's name, in the right gender.
+
+    It was hard-coded masculine as "ptal se", which is simply wrong in front of a
+    woman's name — and most of the interviewers here are women, so the error sat on
+    Zuzana's interview pages in particular. Czech female surnames are reliable enough
+    to decide this: -ová and -á. "redakce" is feminine too, and two or more names take
+    the plural.
+    """
+    if en:
+        return "interviewed by"
+    n = (name or "").strip()
+    if "," in n or " a " in n:
+        return "ptali se"
+    last = n.split()[-1] if n.split() else ""
+    if n.lower().startswith("redakce") or last.endswith(("ová", "á")):
+        return "ptala se"
+    return "ptal se"
 
 
 def _split(v):
