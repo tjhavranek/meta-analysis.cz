@@ -453,10 +453,21 @@ def main():
          # collected here are hers, and a graph that never names her leaves a search
          # engine or a model no way to connect this body of work to her at all. She is a
          # contributor to the site, which is what is true — not its publisher.
+         # sameAs is an identity assertion between records, not a reading link, so the
+         # language of the target is irrelevant. Wikidata is the anchor that matters:
+         # it is language-neutral, it already carries his ORCID and Scopus id (which is
+         # how these two items were confirmed to be the right people), and it is what
+         # points on to the cs.wikipedia article, so linking that article too would be
+         # redundant. The en.wikipedia "Tomáš Havránek" is a DIFFERENT PERSON, an ice
+         # hockey player, and cs.wikipedia's undisambiguated title is a disambiguation
+         # page listing three men — never link either.
          "publisher": {"@type": "Person", "@id": BASE + "/#th", "name": "Tomas Havranek",
+                       "alternateName": ["Tomáš Havránek"],
                        "affiliation": {"@type": "Organization", "name": "Charles University, Prague"},
                        "url": "https://www.tomashavranek.cz",
-                       "sameAs": ["https://orcid.org/0000-0002-3158-2539"]},
+                       "sameAs": ["https://orcid.org/0000-0002-3158-2539",
+                                  "https://www.wikidata.org/entity/Q41800151",
+                                  "https://openalex.org/A5086665090"]},
          "contributor": [
              {"@id": BASE + "/#th"},
              {"@type": "Person", "@id": BASE + "/#zi", "name": "Zuzana Irsova",
@@ -468,7 +479,9 @@ def main():
                                 "Zuzana Iršová Havránková", "Zuzana Irsova Havrankova"],
               "affiliation": {"@type": "Organization", "name": "Charles University, Prague"},
               "url": "https://www.irsova.com",
-              "sameAs": ["https://orcid.org/0000-0002-0753-8124"]}]},
+              "sameAs": ["https://orcid.org/0000-0002-0753-8124",
+                         "https://www.wikidata.org/entity/Q41799025",
+                         "https://openalex.org/A5072893157"]}]},
         {"@type": "ItemList", "@id": BASE + "/#papers", "name": "Meta-analyses on this site",
          "numberOfItems": len(items), "itemListElement": items}]}
     home_block = "\n".join([
@@ -476,7 +489,9 @@ def main():
         '<meta property="og:site_name" content="meta-analysis.cz" />',
         '<meta property="og:type" content="website" />',
         '<meta property="og:title" content="Meta-Analysis in Economics and Social Sciences" />',
-        '<meta property="og:description" content="Data and codes for papers on meta-analysis and research synthesis in economics and the social sciences" />',
+        '<meta property="og:description" content="Data and codes for papers on meta-analysis '
+        'and research synthesis in economics and the social sciences, by Tomas Havranek, '
+        'Zuzana Irsova, and their co-authors at Charles University, Prague" />',
         f'<meta property="og:url" content="{BASE}/" />',
 
         '<script type="application/ld+json">\n' + jdump(home_graph) + "\n</script>"]) + "\n"
@@ -537,7 +552,8 @@ def main():
 
     lt = ["# meta-analysis.cz", "",
           "> Data, code, and papers for meta-analyses in economics and the social sciences, "
-          "by researchers at Charles University, Prague. Each paper page links the full-text PDF "
+          "by Tomas Havranek, Zuzana Irsova, and their co-authors at Charles University, Prague. "
+          "Each paper page links the full-text PDF "
           "and, for most papers, the dataset and estimation code.", "", "## Papers", ""]
     lt += [f"- [{merged[p]['title']}]({BASE}/{p}/): {merged[p]['one_line']}" for p in projects]
     lt += ["", "## Resources", "",

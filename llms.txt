@@ -1,6 +1,6 @@
 # meta-analysis.cz
 
-> Data, code, and papers for meta-analyses in economics and the social sciences, by researchers at Charles University, Prague. Each paper page links the full-text PDF and, for most papers, the dataset and estimation code.
+> Data, code, and papers for meta-analyses in economics and the social sciences, by Tomas Havranek, Zuzana Irsova, and their co-authors at Charles University, Prague. Each paper page links the full-text PDF and, for most papers, the dataset and estimation code.
 
 ## Papers
 
