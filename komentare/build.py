@@ -552,7 +552,7 @@ SCRIPT = """<script>
       if (s) Array.prototype.forEach.call(s.children, function (li) { if (!li.hidden) vis = true; });
       h.hidden = !vis; if (s) s.hidden = !vis;
     });
-    count.textContent = n + (n === 1 ? ' položka' : (n < 5 ? ' položky' : ' položek'));
+    count.textContent = n + (n === 1 ? ' položka' : (n > 1 && n < 5 ? ' položky' : ' položek'));
     var zp = document.getElementById('zi-posts'); if (zp) zp.hidden = (cat !== 'zuzana');
   }
   q.addEventListener('input', apply);
@@ -689,7 +689,11 @@ def write_item(a):
         node["author"] = persons
     if is_pr:
         node["genre"] = "press release"
-    if a.get("url"):
+    # isBasedOn names the work this one derives FROM. On a published piece that is the
+    # outlet's page, which is right. On a letter it was pointing the other way: the
+    # 2021 memo's `url` is the strategic plan the memo fed INTO, published a year later,
+    # so the graph asserted the memo was based on its own consequence.
+    if a.get("url") and not unpub:
         node["isBasedOn"] = a["url"]
     if a.get("date_precision") == "month":
         node["dateCreated" if unpub else "datePublished"] = a["date"][:7]
@@ -826,8 +830,13 @@ def write_item(a):
     head = (f'<meta property="og:type" content="article" />\n'
             + "".join(f'<meta name="author" content="{esc(n)}" />\n' for n in names)
             # only for things that actually appeared; see `unpub` above
+            # Month precision has to survive here too. The JSON-LD was fixed to say
+            # "2026-07"; this tag went on asserting "2026-07-01", a day nobody knows,
+            # to every crawler that reads meta tags rather than the graph.
             + ("" if unpub else
-               f'<meta property="article:published_time" content="{a["date"]}" />\n')
+               f'<meta property="article:published_time" content='
+               f'"{a["date"][:7] if a.get("date_precision") == "month" else a["date"]}"'
+               f' />\n')
             # plain-text source of this page, for anything that would rather not parse HTML
             + f'<link rel="alternate" type="text/markdown" '
               f'href="{PATH}/src/{esc(a["file"])}" title="Zdrojový text (Markdown)" />\n')
@@ -946,12 +955,14 @@ def write_index(items, key=None):
         # the original note here had rotted: it argued from "22 rows pointing at
         # #anchors yield ONE indexable destination" and counted "179 press items".
         # Both are false now — every post has had its own page since July 2026, and the
-        # listing holds 211. That dead reasoning nearly justified a merge. The reasons
+        # listing holds 213. That dead reasoning nearly justified a merge. Keep these
+        # counts current — a rotted comment here has already caused one wrong call.
+        # The reasons
         # that do survive:
         #
-        #  1. Register. Every one of the 211 items is a formal text with a headline its
+        #  1. Register. Every one of the 213 items is a formal text with a headline its
         #     author wrote, addressed to readers through an outlet or a formal act of
-        #     writing — including the four letters and the 103-word MAER-Net note. About
+        #     writing — including the six letters and the 103-word MAER-Net note. About
         #     a third of the posts are personal (a boxing gym in Palo Alto, spare
         #     festival tickets). The line here is register, not length or pedigree.
         #  2. Audience. The posts page is English on purpose for readers who arrive
@@ -1017,17 +1028,20 @@ def write_feed(items, social=()):
                    if a["media"] == "text" else
                    f"<![CDATA[<p>{MEDIA_LABEL.get(a['media'], '')} — "
                    f'<a href="{a.get("url", "")}">{esc(a["outlet"])}</a></p>]]>')
+        _never = a.get("genre") == "correspondence" or a.get("unpublished")
         # `url` is a required attribute of <source>; emitting it empty is invalid RSS,
-        # and an unpublished piece has no original to point at anyway.
+        # and a piece that was never published has no original to point at. That was the
+        # stated intent, but the guard only tested for a url — and the letters do carry
+        # one, pointing at a related document rather than an origin. <source> then told
+        # a feed reader the letter had run there.
         source = (f'\n      <source url="{esc(a["url"])}">{esc(a["outlet"])}</source>'
-                  if a.get("url") else "")
-        # RSS pubDate means "when this was published". Six records were never published
-        # anywhere — four letters and two withdrawn drafts — so they get no pubDate. An
+                  if a.get("url") and not _never else "")
+        # RSS pubDate means "when this was published". Eight records were never published
+        # anywhere — six letters and two withdrawn drafts — so they get no pubDate. An
         # earlier pass kept it for sort order and said so in a comment; two independent
         # reviews called that wrong, and they are right: an archive that states an
         # invariant should not carry a documented exception to it. Readers fall back to
         # feed order, and the item body opens by saying it was never published.
-        _never = a.get("genre") == "correspondence" or a.get("unpublished")
         _pub = ("" if _never else f'<pubDate>{rfc822(a["date"])}</pubDate>' + chr(10) + "      ")
         it.append((a["date"], f"""    <item>
       <title>{esc(a["headline"])}</title>
@@ -1096,9 +1110,15 @@ def write_machine_readable(items, social=()):
             d = cs_date(a["date"], a.get("date_precision"))
             # llms.txt is read by machines that will not open the page and see the
             # Czech "Nevyšlo" note, so the marker has to travel with the line itself.
-            out = a["outlet"] + (" (nevyšlo)" if a.get("unpublished") else
-                                 " (korespondence, nepublikováno)"
-                                 if a.get("genre") == "correspondence" else "")
+            # The same argument covers the two statuses that qualify what the stored
+            # text IS. A machine reading only this line would otherwise quote an
+            # author's manuscript as the printed text, or quote a two-paragraph teaser
+            # as a whole article.
+            out = a["outlet"] + {"unpublished_manuscript": " (nevyšlo)",
+                                 "correspondence": " (korespondence, nepublikováno)",
+                                 "author_manuscript": " (autorská verze, ne otištěné znění)",
+                                 "publisher_excerpt": " (jen ukázka, zbytek je za paywallem)",
+                                 }.get(text_status(a), "")
             if a["media"] == "text":
                 L.append(f"- [{a['headline']}]({BASE}/{a['slug']}/) — {out}, {d}")
             else:
@@ -1136,7 +1156,15 @@ def write_machine_readable(items, social=()):
              "section": SECTIONS[a["category"]]["title"], "category": a["category"],
              "language": a.get("lang") or SECTIONS[a["category"]]["lang"],
              "outlet": a["outlet"], "authors": people(a.get("byline")),
-             "media": a["media"], "original_url": a.get("url", ""),
+             "media": a["media"],
+             # On every published record `original_url` means "where this ran". A letter
+             # never ran anywhere, and its `url` points at something related — the plan
+             # the memo fed into, the project page a circular announced. Calling that
+             # `original_url` would state the one thing the record exists to deny.
+             **({"related_url": a["url"]}
+                if (a.get("url") and (a.get("genre") == "correspondence"
+                                      or a.get("unpublished")))
+                else {"original_url": a.get("url", "")}),
              "text_status": text_status(a)}
         if a.get("perex"):
             d["standfirst"] = a["perex"]
@@ -1225,8 +1253,17 @@ def write_machine_readable(items, social=()):
 
     # --- all.md ---------------------------------------------------------------
     A = [f"# Komentáře — {SITE_AUTHORS}", "", HUB_DESC, "",
-         f"Tento soubor obsahuje plné znění všech textových položek "
-         f"({sum(1 for a in items if a['media'] == 'text')} z celkem {len(items)}). "
+         # "plné znění" was not true of every one of them: two records hold only the
+         # outlet's free teaser, and a machine that trusted this line would quote a
+         # tenth of an article as the whole of it.
+         f"Tento soubor obsahuje text všech textových položek "
+         f"({sum(1 for a in items if a['media'] == 'text')} z celkem {len(items)}), "
+         f"u naprosté většiny v plném znění; výjimkou jsou položky označené v index.json "
+         f"jako publisher_excerpt "
+         f"({sum(1 for a in items if text_status(a) == 'publisher_excerpt')}), "
+         f"kde je uložena jen volně dostupná ukázka, a author_manuscript "
+         f"({sum(1 for a in items if text_status(a) == 'author_manuscript')}), "
+         f"kde jde o autorskou verzi, která se může lišit od otištěné. "
          f"Zbývající položky jsou audio a video, které archiv vede pouze odkazem, "
          f"a v tomto souboru nejsou; jejich metadata najdete v index.json a corpus.jsonl. "
          f"Samostatně jsou vedeny kratší příspěvky ze sociálních sítí ({n_social}), "

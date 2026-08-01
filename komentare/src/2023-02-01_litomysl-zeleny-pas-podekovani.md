@@ -9,7 +9,7 @@ headline: "Zelený pás kolem Litomyšle"
 byline: "Tomáš Havránek"
 source: "image"
 word_count: "159"
-body_note: "Nejde o samostatný sloupek: krátký podepsaný příspěvek ve společné rubrice „Poděkování, blahopřání, vzpomínky“, označený červenou čtvercovou odrážkou. Nemá vlastní titulek, proto je nad textem použit název rubriky. Text začíná ve spodní části prostředního sloupce a končí v pravém sloupci."
+body_note: "Nejde o samostatný sloupek: krátký podepsaný příspěvek ve společné rubrice „Poděkování, blahopřání, vzpomínky“, označený červenou čtvercovou odrážkou. Neměl v Lilii vlastní titulek; ten nad textem je popisný a doplnil ho tento archiv. Text začíná ve spodní části prostředního sloupce a končí v pravém sloupci."
 title_suffix: "2023-02"
 ---
 

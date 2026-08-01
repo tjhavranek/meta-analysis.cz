@@ -2575,7 +2575,7 @@
       if (s) Array.prototype.forEach.call(s.children, function (li) { if (!li.hidden) vis = true; });
       h.hidden = !vis; if (s) s.hidden = !vis;
     });
-    count.textContent = n + (n === 1 ? ' položka' : (n < 5 ? ' položky' : ' položek'));
+    count.textContent = n + (n === 1 ? ' položka' : (n > 1 && n < 5 ? ' položky' : ' položek'));
     var zp = document.getElementById('zi-posts'); if (zp) zp.hidden = (cat !== 'zuzana');
   }
   q.addEventListener('input', apply);

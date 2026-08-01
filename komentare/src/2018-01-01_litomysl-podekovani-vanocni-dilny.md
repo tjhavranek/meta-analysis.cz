@@ -9,7 +9,7 @@ headline: "Poděkování za vánoční dílny"
 byline: "Tomáš Havránek"
 source: "image"
 word_count: "31"
-body_note: "Nejde o samostatný sloupek: krátké poděkování (jedna odrážka) ve společné rubrice „Poděkování, blahopřání, vzpomínky“. Příspěvek nemá vlastní titulek, proto je nad textem použit název rubriky. Podpis je vysazen kurzivou na konci příspěvku."
+body_note: "Nejde o samostatný sloupek: krátké poděkování (jedna odrážka) ve společné rubrice „Poděkování, blahopřání, vzpomínky“. Příspěvek neměl v Lilii vlastní titulek; ten nad textem je popisný a doplnil ho tento archiv. Podpis je vysazen kurzivou na konci příspěvku."
 title_suffix: "2018-01"
 ---
 

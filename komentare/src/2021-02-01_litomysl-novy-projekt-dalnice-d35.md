@@ -9,7 +9,7 @@ headline: "Nově upravený projekt dálnice D35"
 byline: "Tomáš Havránek"
 source: "image"
 word_count: "132"
-body_note: "Nejde o samostatný sloupek: odrážkový příspěvek ve společné rubrice „Poděkování, blahopřání, vzpomínky“ (pravý sloupec strany). Příspěvek nemá vlastní titulek, proto je nad textem použit název rubriky. Podpis je vysazen kurzivou na konci příspěvku."
+body_note: "Nejde o samostatný sloupek: odrážkový příspěvek ve společné rubrice „Poděkování, blahopřání, vzpomínky“ (pravý sloupec strany). Příspěvek neměl v Lilii vlastní titulek; ten nad textem je popisný a doplnil ho tento archiv. Podpis je vysazen kurzivou na konci příspěvku."
 title_suffix: "2021-02"
 ---
 
