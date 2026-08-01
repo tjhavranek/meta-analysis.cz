@@ -907,14 +907,21 @@ def write_index(items, key=None):
         # These share the per-page node's @id, so anything merging the graph would end up
         # with dateCreated from the page AND datePublished from here on one entity. An
         # unpublished draft must carry the same date field in both places.
-        "hasPart": [{
-            "@type": "Article",
-            "@id": (f"{BASE}/{a['slug']}/#article" if a["media"] == "text" else a.get("url", "")),
-            "url": (f"{BASE}/{a['slug']}/" if a["media"] == "text" else a.get("url", "")),
-            "headline": a["headline"],
-            ("dateCreated" if (a.get("unpublished") or a.get("genre") == "correspondence")
-             else "datePublished"): a["date"],
-        } for a in sel],
+        "hasPart": [dict(
+            {"@type": "Article",
+             "@id": (f"{BASE}/{a['slug']}/#article" if a["media"] == "text" else a.get("url", "")),
+             "url": (f"{BASE}/{a['slug']}/" if a["media"] == "text" else a.get("url", "")),
+             "headline": a["headline"],
+             # Month precision has to be stated the same way the item page states it, or
+             # one @id carries two different dates and 2026-07-01 asserts a day nobody
+             # knows. Likewise the status: a reference to a never-published text must not
+             # look like a reference to a published one.
+             ("dateCreated" if (a.get("unpublished") or a.get("genre") == "correspondence")
+              else "datePublished"): (a["date"][:7]
+                                      if a.get("date_precision") == "month" else a["date"])},
+            **({"creativeWorkStatus": "Unpublished"}
+               if (a.get("unpublished") or a.get("genre") == "correspondence") else {})
+        ) for a in sel],
     }
     counts = ""
     if not key:
@@ -1007,12 +1014,19 @@ def write_feed(items, social=()):
         # and an unpublished piece has no original to point at anyway.
         source = (f'\n      <source url="{esc(a["url"])}">{esc(a["outlet"])}</source>'
                   if a.get("url") else "")
+        # RSS pubDate means "when this was published". Six records were never published
+        # anywhere — four letters and two withdrawn drafts — so they get no pubDate. An
+        # earlier pass kept it for sort order and said so in a comment; two independent
+        # reviews called that wrong, and they are right: an archive that states an
+        # invariant should not carry a documented exception to it. Readers fall back to
+        # feed order, and the item body opens by saying it was never published.
+        _never = a.get("genre") == "correspondence" or a.get("unpublished")
+        _pub = ("" if _never else f'<pubDate>{rfc822(a["date"])}</pubDate>' + chr(10) + "      ")
         it.append((a["date"], f"""    <item>
       <title>{esc(a["headline"])}</title>
       <link>{url}</link>
       <guid isPermaLink="true">{url}</guid>
-      <pubDate>{rfc822(a["date"])}</pubDate>
-      <category>{esc(SECTIONS[a["category"]]["title"])}</category>
+      {_pub}<category>{esc(SECTIONS[a["category"]]["title"])}</category>
       <dc:language>{a.get("lang") or SECTIONS[a["category"]]["lang"]}</dc:language>{source}
       <content:encoded>{content}</content:encoded>
     </item>"""))
