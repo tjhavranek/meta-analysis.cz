@@ -2,7 +2,7 @@
 
 > Publicistika Tomáše Havránka a Zuzany Havránkové: komentáře pro celostátní média, sloupky pro litomyšlskou Lilii, rozhovory a kratší příspěvky ze sítí. Texty jsou zde archivovány v plném znění s odkazem na původní vydání.
 
-Publicistika: 213 položek a 23 kratších příspěvků ze sítí (236 záznamů celkem), 2014–2026. Plné znění každého textu je na uvedené adrese; zdrojový Markdown položek je v /komentare/src/ (příspěvky ze sítí zdrojový soubor nemají).
+Publicistika: 211 položek a 23 kratších příspěvků ze sítí (234 záznamů celkem), 2014–2026. Plné znění každého textu je na uvedené adrese; zdrojový Markdown položek je v /komentare/src/ (příspěvky ze sítí zdrojový soubor nemají).
 
 ## Celostátní komentáře
 
@@ -16,9 +16,7 @@ Komentáře a sloupky pro celostátní média — měnová politika, inflace, ve
 - [Návod pro dlužníky a střadatele, jak přežít dluh větší než ekonomika](https://meta-analysis.cz/komentare/navod-pro-dluzniky-a-stradatele/) — Seznam Zprávy, 12. července 2025
 - [„Pátek pro planetu“ ve školních jídelnách Zemi nepomůže a dětem uškodí](https://meta-analysis.cz/komentare/patek-pro-planetu-skolni-jidelny/) — Seznam Zprávy, 14. března 2025
 - [Osobní pohled na Mojmíra Hampla](https://meta-analysis.cz/komentare/e15-hampl/) — E15, 13. března 2025
-- [Rušení podpory finálových kol školních soutěží: dopis ministrovi](https://meta-analysis.cz/komentare/skolni-souteze-finalova-kola/) — ministr školství (korespondence, nepublikováno), 17. prosince 2024
 - [Naděje na cenovou stabilitu? Do ČNB se vrací nezávislý výzkum](https://meta-analysis.cz/komentare/nadeje-na-cenovou-stabilitu-cnb-vyzkum/) — Seznam Zprávy, 6. prosince 2024
-- [Spotřební koš pro školní jídelny: dotaz na evidenci o mase](https://meta-analysis.cz/komentare/skolni-jidelny-spotrebni-kos/) — ministr školství (korespondence, nepublikováno), 10. října 2024
 - [V čem Češi poráží Ameriku](https://meta-analysis.cz/komentare/ln-cesi-amerika/) — Lidové noviny, 9. září 2024
 - [Odkud se bere ekonomický růst? Investice prosperitu nezajistí](https://meta-analysis.cz/komentare/odkud-se-bere-ekonomicky-rust/) — Seznam Zprávy, 12. června 2024
 - [Hezčí lidé vydělávají víc. Kvůli kráse to ale není](https://meta-analysis.cz/komentare/zi-sz-hezci-lide/) — Seznam Zprávy, 7. června 2024

@@ -2,7 +2,7 @@
 
 Publicistika Tomáše Havránka a Zuzany Havránkové: komentáře pro celostátní média, sloupky pro litomyšlskou Lilii, rozhovory a kratší příspěvky ze sítí. Texty jsou zde archivovány v plném znění s odkazem na původní vydání.
 
-Tento soubor obsahuje text všech textových položek (195 z celkem 213), u naprosté většiny v plném znění; výjimkou jsou položky označené v index.json jako publisher_excerpt (2), kde je uložena jen volně dostupná ukázka, a author_manuscript (19), kde jde o autorskou verzi, která se může lišit od otištěné. Zbývající položky jsou audio a video, které archiv vede pouze odkazem, a v tomto souboru nejsou; jejich metadata najdete v index.json a corpus.jsonl. Samostatně jsou vedeny kratší příspěvky ze sociálních sítí (23), psané převážně anglicky. Mají vlastní stránku https://meta-analysis.cz/komentare/posts/ a v index.json i corpus.jsonl jsou označeny jako genre=social_post.
+Tento soubor obsahuje text všech textových položek (193 z celkem 211), u naprosté většiny v plném znění; výjimkou jsou položky označené v index.json jako publisher_excerpt (2), kde je uložena jen volně dostupná ukázka, a author_manuscript (19), kde jde o autorskou verzi, která se může lišit od otištěné. Zbývající položky jsou audio a video, které archiv vede pouze odkazem, a v tomto souboru nejsou; jejich metadata najdete v index.json a corpus.jsonl. Samostatně jsou vedeny kratší příspěvky ze sociálních sítí (23), psané převážně anglicky. Mají vlastní stránku https://meta-analysis.cz/komentare/posts/ a v index.json i corpus.jsonl jsou označeny jako genre=social_post.
 
 ---
 
@@ -1732,26 +1732,6 @@ Píšu o florbale, neb florbal hrají mé děti. Mám ale radost, že i další 
 
 ---
 
-## Rušení podpory finálových kol školních soutěží: dopis ministrovi
-
-*ministr školství, 17. prosince 2024. Tomáš Havránek.*
-
-*Korespondence, nikoli publikovaný text. Uvedené datum je datum odeslání.*
-
-Zdroj: https://meta-analysis.cz/komentare/skolni-souteze-finalova-kola/
-
-Dobrý den pane ministře,
-
-MŠMT se na příští roky chystá rušit podporu pro republiková, pro I. stupeň i krajská kola školních soutěží. Osobně děti na tyto soutěže trénuji ve florbale na I. ZŠ v Litomyšli, jezdíme každý rok a pro děti (včetně mých čtyř vlastních) je to skvělá motivace.
-
-Chtěl bych na Vás apelovat i tímto způsobem, zda by toto rozhodnutí Vašich podřízených mohlo být přehodnoceno. Chystám se o tom psát článek na Seznam Zprávy, prosím pokud možno o Vaše osobní vyjádření, jestli s tou změnou opravdu souhlasíte.
-
-Přeji Vám hezký advent a prosím, abyste do nového roku nebral dětem školní soutěže.
-
-Tomáš Havránek
-
----
-
 ## Naděje na cenovou stabilitu? Do ČNB se vrací nezávislý výzkum
 
 *Seznam Zprávy, 6. prosince 2024. Tomáš Havránek.*
@@ -1839,26 +1819,6 @@ Druhý turnaj odehráli mladší žáci doma v Litomyšli 13. října. Hned na z
 Ne vždy se vyhrává a hlavní je hru si užít. S florbalem je možné začít kdykoli během roku. Stačí si přinést sálovou obuv a pití a přijít do městské sportovní haly buď v úterý v 14.00, nebo v pátek 14.30 (děti od 5 do 10 let) nebo v pondělí v 15.30, středu 15.30, či pátek 16.00 (od 11 let výše). Florbalku trenéři půjčí na zkoušku.
 
 Není problém kombinovat florbal s ostatními sporty – u mladších dětí to podporuje zdravou všestrannost. Florbal hrají i holky, třeba naše Lucinka. Sport je to divácky atraktivní a domácí zápasy – ať už áčka, nebo mládeže – mívají báječnou a hlučnou (ale slušnou) atmosféru. Dotazy klidně směřujte na t.havranek@gmail.com.
-
----
-
-## Spotřební koš pro školní jídelny: dotaz na evidenci o mase
-
-*ministr školství, 10. října 2024. Tomáš Havránek.*
-
-*Korespondence, nikoli publikovaný text. Uvedené datum je datum odeslání.*
-
-Zdroj: https://meta-analysis.cz/komentare/skolni-jidelny-spotrebni-kos/
-
-Dobrý den pane ministře,
-
-děkuji mimo jiné za práci na novém spotřebním koši, řada avizovaných změn je tam potřebných a konzistentních s moderním výzkumem (snížení podílu cukru atd).
-
-Mohu se prosím zeptat, na základě jaké vědecké evidence je založeno plánované snížení podílu masa? Probíral jsem to nedávno s kolegy na Stanfordu, kteří se zaměřují na nutriční výzkum. Škodlivost masa byla často vykazována ve starších studiích, které se nakonec ukázaly jako metodologicky chybné; bohužel tyto studie často získávaly velkou pozornost v médiích. Pro mnoho dětí z nízkopříjmových domácností jsou školní jídelny hlavním zdrojem kvalitních bílkovin, kde je v tomto ohledu těžké maso něčím nahradit.
-
-Děkuji moc a zdravím Vás,
-
-Tomáš Havránek
 
 ---
 

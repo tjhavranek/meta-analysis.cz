@@ -955,14 +955,14 @@ def write_index(items, key=None):
         # the original note here had rotted: it argued from "22 rows pointing at
         # #anchors yield ONE indexable destination" and counted "179 press items".
         # Both are false now — every post has had its own page since July 2026, and the
-        # listing holds 213. That dead reasoning nearly justified a merge. Keep these
+        # listing holds 211. That dead reasoning nearly justified a merge. Keep these
         # counts current — a rotted comment here has already caused one wrong call.
         # The reasons
         # that do survive:
         #
-        #  1. Register. Every one of the 213 items is a formal text with a headline its
+        #  1. Register. Every one of the 211 items is a formal text with a headline its
         #     author wrote, addressed to readers through an outlet or a formal act of
-        #     writing — including the six letters and the 103-word MAER-Net note. About
+        #     writing — including the four letters and the 103-word MAER-Net note. About
         #     a third of the posts are personal (a boxing gym in Palo Alto, spare
         #     festival tickets). The line here is register, not length or pedigree.
         #  2. Audience. The posts page is English on purpose for readers who arrive
@@ -1036,8 +1036,8 @@ def write_feed(items, social=()):
         # a feed reader the letter had run there.
         source = (f'\n      <source url="{esc(a["url"])}">{esc(a["outlet"])}</source>'
                   if a.get("url") and not _never else "")
-        # RSS pubDate means "when this was published". Eight records were never published
-        # anywhere — six letters and two withdrawn drafts — so they get no pubDate. An
+        # RSS pubDate means "when this was published". Six records were never published
+        # anywhere — four letters and two withdrawn drafts — so they get no pubDate. An
         # earlier pass kept it for sort order and said so in a comment; two independent
         # reviews called that wrong, and they are right: an archive that states an
         # invariant should not carry a documented exception to it. Readers fall back to

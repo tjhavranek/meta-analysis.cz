@@ -20,7 +20,7 @@
   }
  ],
  "license": "Texty jsou majetkem autora a původních vydavatelů; archiv slouží ke čtení a citaci s uvedením původního zdroje.",
- "count": 236,
+ "count": 234,
  "generated_from": [
   "komentare/src/*.md",
   "komentare/social-posts.json"
@@ -1129,28 +1129,6 @@
    "provenance": "editorial"
   },
   {
-   "id": "skolni-souteze-finalova-kola",
-   "title": "Rušení podpory finálových kol školních soutěží: dopis ministrovi",
-   "date": "2024-12-17",
-   "date_precision": "day",
-   "section": "Celostátní komentáře",
-   "category": "celostatni",
-   "language": "cs",
-   "outlet": "ministr školství",
-   "authors": [
-    "Tomáš Havránek"
-   ],
-   "media": "text",
-   "original_url": "",
-   "text_status": "correspondence",
-   "url": "https://meta-analysis.cz/komentare/skolni-souteze-finalova-kola/",
-   "source_markdown": "https://meta-analysis.cz/komentare/src/2024-12-17_skolni-souteze-finalova-kola.md",
-   "word_count": 104,
-   "text": "Dobrý den pane ministře,\n\nMŠMT se na příští roky chystá rušit podporu pro republiková, pro I. stupeň i krajská kola školních soutěží. Osobně děti na tyto soutěže trénuji ve florbale na I. ZŠ v Litomyšli, jezdíme každý rok a pro děti (včetně mých čtyř vlastních) je to skvělá motivace.\n\nChtěl bych na Vás apelovat i tímto způsobem, zda by toto rozhodnutí Vašich podřízených mohlo být přehodnoceno. Chystám se o tom psát článek na Seznam Zprávy, prosím pokud možno o Vaše osobní vyjádření, jestli s tou změnou opravdu souhlasíte.\n\nPřeji Vám hezký advent a prosím, abyste do nového roku nebral dětem školní soutěže.\n\nTomáš Havránek",
-   "provenance": "correspondence",
-   "genre": "correspondence"
-  },
-  {
    "id": "nadeje-na-cenovou-stabilitu-cnb-vyzkum",
    "title": "Naděje na cenovou stabilitu? Do ČNB se vrací nezávislý výzkum",
    "date": "2024-12-06",
@@ -1250,28 +1228,6 @@
     }
    ],
    "provenance": "editorial"
-  },
-  {
-   "id": "skolni-jidelny-spotrebni-kos",
-   "title": "Spotřební koš pro školní jídelny: dotaz na evidenci o mase",
-   "date": "2024-10-10",
-   "date_precision": "day",
-   "section": "Celostátní komentáře",
-   "category": "celostatni",
-   "language": "cs",
-   "outlet": "ministr školství",
-   "authors": [
-    "Tomáš Havránek"
-   ],
-   "media": "text",
-   "original_url": "",
-   "text_status": "correspondence",
-   "url": "https://meta-analysis.cz/komentare/skolni-jidelny-spotrebni-kos/",
-   "source_markdown": "https://meta-analysis.cz/komentare/src/2024-10-10_skolni-jidelny-spotrebni-kos.md",
-   "word_count": 110,
-   "text": "Dobrý den pane ministře,\n\nděkuji mimo jiné za práci na novém spotřebním koši, řada avizovaných změn je tam potřebných a konzistentních s moderním výzkumem (snížení podílu cukru atd).\n\nMohu se prosím zeptat, na základě jaké vědecké evidence je založeno plánované snížení podílu masa? Probíral jsem to nedávno s kolegy na Stanfordu, kteří se zaměřují na nutriční výzkum. Škodlivost masa byla často vykazována ve starších studiích, které se nakonec ukázaly jako metodologicky chybné; bohužel tyto studie často získávaly velkou pozornost v médiích. Pro mnoho dětí z nízkopříjmových domácností jsou školní jídelny hlavním zdrojem kvalitních bílkovin, kde je v tomto ohledu těžké maso něčím nahradit.\n\nDěkuji moc a zdravím Vás,\n\nTomáš Havránek",
-   "provenance": "correspondence",
-   "genre": "correspondence"
   },
   {
    "id": "ln-cesi-amerika",
