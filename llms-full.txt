@@ -1,7 +1,8 @@
 # meta-analysis.cz — full paper index
 
 Site: https://meta-analysis.cz/ — Data, code, and papers for meta-analyses in economics
-and the social sciences (Charles University, Prague). Maintained by Tomas Havranek and coauthors.
+and the social sciences (Charles University, Prague). By Tomas Havranek
+(ORCID 0000-0002-3158-2539), Zuzana Irsova (ORCID 0000-0002-0753-8124), and coauthors.
 
 ## Does Shareholder Activism Create Value? A Meta-Analysis
 URL: https://meta-analysis.cz/activism/
