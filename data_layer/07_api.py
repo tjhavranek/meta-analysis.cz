@@ -235,7 +235,8 @@ index=dict(
     counts_explained=("rows_in_source_files counts every row of the 44 converted files. "
                       "estimates_in_analysis_samples applies each paper's own filters and is what "
                       "the catalogue table shows. estimates_in_harmonised_table additionally drops "
-                      "the literatures that duplicate another or lack per-estimate precision.")),
+                      "literatures that duplicate another exactly, overlap one already "
+                      "included, or lack per-estimate precision.")),
   harmonised_table=dict(
     version="0.9.0-beta", status="beta",
     n_rows=harm.get("n_rows"), n_literatures=harm.get("n_datasets"),

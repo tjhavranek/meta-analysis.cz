@@ -49,6 +49,15 @@ jobs:
         run: python komentare/build.py --check
       - name: Verify (visible content unchanged, JSON-LD valid, URLs resolve)
         run: python tools/verify_seo.py
+      # The data layer's own gate. It checks what verify_seo cannot see: duplicate
+      # literatures, unit violations, implausible sample sizes, direction notes that
+      # contradict their data, advertised URLs, parquet/csv agreement. It ran only in
+      # the local pre-push hook, so a push from anywhere else was unprotected by the
+      # strongest verifier in the repo.
+      - name: Install the data-layer's dependencies
+        run: python -m pip install --quiet pandas pyarrow
+      - name: Verify the data layer
+        run: python data_layer/09_verify.py
       - name: Configure Pages
         uses: actions/configure-pages@v5
       - name: Upload site artifact

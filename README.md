@@ -1,8 +1,21 @@
 # meta-analysis.cz — website
 
 This repository **is** the website: plain static files (HTML, PDF, data, code,
-figures), one folder per meta-analysis project. No build step, no server-side
-code. It is served by **GitHub Pages** at the custom domain **meta-analysis.cz**.
+figures), one folder per meta-analysis project. No server-side code. It is served
+by **GitHub Pages** at the custom domain **meta-analysis.cz**.
+
+Two generated layers sit on top of the static files, both reproducible from this
+repository:
+
+- **the metadata layer** — `tools/generate_seo.py` injects canonical, Highwire,
+  Open Graph and JSON-LD into each page between sentinels, and regenerates
+  `sitemap.xml`, `robots.txt` and `llms*.txt`. `tools/verify_seo.py` is its gate.
+- **the data layer** — `data_layer/` builds `/api/v1/` and `/data/v1/` from the
+  papers' own published files. `data_layer/09_verify.py` is its gate. See
+  `data_layer/README.md`.
+
+Everything on the site is **CC BY 4.0**, including the datasets and the PDFs.
+See `LICENSE`.
 
 ## How it's published (one-time setup)
 
@@ -74,8 +87,12 @@ and Scholar tags appear. Never edit inside the sentinel comments by hand.
    submit `https://meta-analysis.cz/sitemap.xml`.
 2. Backfill publisher DOIs for published papers into `tools/papers.json`
    (field `doi_or_publisher_url`) — enables `citation_doi` and richer JSON-LD.
-3. Consider Zenodo/OSF deposits with DOIs + explicit licenses for datasets,
-   and make sure RePEc/IDEAS records link to these landing pages.
+3. ~~Zenodo deposit~~ **DONE** — the harmonised data layer is archived at
+   concept DOI `10.5281/zenodo.21773678` (cite this; always resolves to the
+   newest version). Build the deposit with `data_layer/12_zenodo_bundle.py`;
+   never enable the GitHub↔Zenodo integration, which would archive the whole
+   repository including journal PDFs. See `data_layer/ZENODO_DEPOSIT.md`.
+   Still worth doing: make sure RePEc/IDEAS records link to these landing pages.
 
 ## After any deploy — quick check
 
