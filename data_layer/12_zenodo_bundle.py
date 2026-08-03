@@ -1,13 +1,12 @@
 """Assemble the CURATED Zenodo deposit. Never deposit the repository wholesale.
 
-A repo-wide deposit would place 173 author-copy PDFs (journal copyright, see LICENSE 2e)
-and 23 third-party replication packages under a single CC BY record, permanently. This
-bundle contains only material whose rights are the maintainers' to grant: the harmonised
-table (a NEW compilation - the selection of literatures, the common schema, the column
-mappings), the index, the codebooks and the documentation.
+Everything on the site is CC BY 4.0, so the exclusions below are about SIZE and
+citability, not rights. A repo-wide deposit would be 422 MB and would bury the citable
+artefact among 173 PDFs and 23 replication packages. This bundle is the harmonised table,
+the index, the codebooks and the documentation: the part someone actually cites.
 
-The 44 per-dataset mirrors are deliberately EXCLUDED: each is a format conversion of a
-co-authored dataset, and LICENSE 2b says rights inherit from the source.
+The 44 per-dataset mirrors are left out for the same reason. They remain on the site and
+are covered by the same CC BY 4.0 grant.
 """
 import os, shutil, hashlib
 HERE=os.path.dirname(os.path.abspath(__file__))

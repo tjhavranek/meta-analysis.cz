@@ -91,6 +91,18 @@ for path, probe in (("/api/v1/croissant.json", "creativecommons.org/licenses/by/
     except Exception as e:
         check(f"{path} declares CC BY", False, str(e)[:60])
 
+# The README is prose, so no field check reaches it. It sat live for hours telling readers
+# the data was all rights reserved while every machine-readable surface said CC BY. Scan it.
+try:
+    _rd = get("/api/v1/README.md")
+    check("README declares CC BY", "CC BY 4.0" in _rd)
+    for _bad in ("all rights reserved", "does not cover the underlying",
+                 "none of which are ours to license", "attribution is not the same as permission"):
+        check(f"README free of restrictive text: {_bad!r}", _bad.lower() not in _rd.lower(),
+              "contradicts the CC BY policy every other surface declares")
+except Exception as e:
+    check("README readable", False, str(e)[:60])
+
 if fails:
     print(f"SMOKE TEST FAIL — {len(fails)} of {checks} checks failed")
     for f in fails:

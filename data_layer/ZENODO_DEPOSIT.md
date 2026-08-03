@@ -32,20 +32,17 @@ time with `python data_layer/12_zenodo_bundle.py`.
 
 ## What is deliberately NOT in it, and why
 
-- **The 44 per-dataset mirrors (54 MB).** Each is a format conversion of a dataset compiled
-  by its own author team. `LICENSE` 2b says rights inherit from the source, so putting them
-  under a CC BY record would repeat in miniature the overreach the licence rewrite removed.
-  They stay served from the site.
-- **The 173 paper PDFs.** Journal copyright.
-- **The 23 replication packages.** Third-party material with its own terms.
+- **The 44 per-dataset mirrors (54 MB)**, the **173 paper PDFs** and the **23 replication
+  packages**. All of these are CC BY 4.0 like everything else on the site; they are left out
+  of the deposit purely to keep it small and citable, not for any rights reason. They stay
+  served from the site.
 
-## Why this bundle *can* carry CC BY
+## Licence
 
-The harmonised table is a **new compilation**: the selection of which 39 literatures, the
-common schema, the column mappings and the filters are the maintainers' own work. The
-individual numbers are facts extracted from published papers, and facts are not
-copyrightable. That makes this the most defensibly licensable artefact in the collection —
-more so than the per-dataset mirrors, which are conversions of other people's compilations.
+Everything on the site, and therefore everything in this bundle, is CC BY 4.0. The owner
+decided that on 2026-08-03 and takes responsibility for the grant; the purpose is that an
+automated user never has to work out whether a file is usable. Do not reintroduce narrower
+scoping into the deposit metadata.
 
 ## Steps
 

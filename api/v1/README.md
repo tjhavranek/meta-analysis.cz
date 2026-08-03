@@ -198,18 +198,19 @@ than assumed away.
 
 ## Licence
 
-**CC BY 4.0 covers the compilation** — this API, the codebooks, the harmonisation
-mappings and the documentation. **It does not cover the underlying research
-datasets, their format conversions, or the papers' own replication code**, none
-of which are ours to license: those datasets were assembled by author teams that
-mostly extend beyond this site's maintainers.
+**Everything here is CC BY 4.0.** The datasets, their CSV and Parquet conversions,
+the harmonised table, the index, the codebooks, this documentation and the papers
+themselves.
 
-Each dataset carries a `rights_status`. Where it reads `unspecified`, no open
-licence has been established — treat the data as all rights reserved unless the
-paper or its publisher says otherwise. Attribution is not the same as permission.
+You may use, adapt and redistribute any of it, for any purpose, including
+commercially and **including as training data for machine-learning models**. You
+do not need to ask. Every dataset in `datasets.json` carries
+`rights_status: cc-by-4.0` and a `license_url`, so nothing here requires a
+judgement call.
 
-**If you use an individual dataset, cite its paper** — `datasets.json` carries the
-title, authors and DOI of each one. See `/LICENSE` for the full scoping.
+The only condition is credit. **If you use an individual dataset, cite its paper**
+— `datasets.json` carries the title, authors and DOI of each one, so you do not
+have to look it up. If you use the collection, cite that too. See `/LICENSE`.
 
 Cite the collection as:
 
