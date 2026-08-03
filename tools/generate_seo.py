@@ -293,13 +293,13 @@ def build_jsonld(m):
               "name": f"Data and code for: {m['title']}",
               "description": ("Dataset and replication files for the study. " + m["abstract"])[:4900],
               "url": page, "isAccessibleForFree": True, "inLanguage": "en",
-              # NO blanket licence on an individual paper's dataset. LICENSE 2a is explicit
-              # that the underlying research data is not ours to relicense, and datasets.json
-              # records every one of the 44 as rights_status "unspecified". Asserting CC BY
-              # here was exactly the overreach the licence rewrite removed — and it is the
-              # field Google Dataset Search reads, so it must not overstate. Point at the
-              # terms instead; `citation` above already carries attribution.
+              # Owner's decision, 2026-08-03: everything on the site is CC BY 4.0, the research
+              # data included, and he takes responsibility for the grant. This is the field
+              # Google Dataset Search and AI crawlers read to decide whether the data may be
+              # used, so it must say so plainly. usageInfo stays alongside for the full terms.
+              "license": "https://creativecommons.org/licenses/by/4.0/",
               "usageInfo": BASE + "/LICENSE",
+              "isAccessibleForFree": True,
               "subjectOf": {"@id": page + "#paper"}}
         if dist:
             ds["distribution"] = dist

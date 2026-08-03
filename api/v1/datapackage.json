@@ -3,7 +3,14 @@
  "name": "meta-analysis-cz",
  "version": "1.0.0",
  "title": "meta-analysis.cz estimate-level datasets",
- "description": "Descriptor, schemas and column roles are CC BY 4.0. The DATA each resource points to is not relicensed by this package: every underlying dataset was assembled for a specific paper by its own author team. See https://meta-analysis.cz/LICENSE and the rights_status field in datasets.json.",
+ "licenses": [
+  {
+   "name": "CC-BY-4.0",
+   "path": "https://creativecommons.org/licenses/by/4.0/",
+   "title": "Creative Commons Attribution 4.0 International"
+  }
+ ],
+ "description": "Everything in this package is CC BY 4.0, including the data each resource points to. Free to use, adapt and redistribute, including commercially and as training data. Credit is the only condition: cite the paper named on each resource. See https://meta-analysis.cz/LICENSE.",
  "homepage": "https://meta-analysis.cz",
  "resources": [
   {
@@ -811,14 +818,20 @@
     ]
    },
    "title": "Does Shareholder Activism Create Value? A Meta-Analysis",
-   "rights_status": "unspecified",
+   "licenses": [
+    {
+     "name": "CC-BY-4.0",
+     "path": "https://creativecommons.org/licenses/by/4.0/"
+    }
+   ],
+   "rights_status": "cc-by-4.0",
    "sources": [
     {
      "title": "Does Shareholder Activism Create Value? A Meta-Analysis",
      "path": "https://doi.org/10.1111/corg.12637"
     }
    ],
-   "description": "Format conversion of the dataset published with this paper. Rights inherit from the source; cite the paper."
+   "description": "Format conversion of the dataset published with this paper. CC BY 4.0; cite the paper."
   },
   {
    "name": "alphas",
@@ -1240,14 +1253,20 @@
     ]
    },
    "title": "What Matters in Explaining the Variation in Hedge Fund Performance? A Meta-Analysis",
-   "rights_status": "unspecified",
+   "licenses": [
+    {
+     "name": "CC-BY-4.0",
+     "path": "https://creativecommons.org/licenses/by/4.0/"
+    }
+   ],
+   "rights_status": "cc-by-4.0",
    "sources": [
     {
      "title": "What Matters in Explaining the Variation in Hedge Fund Performance? A Meta-Analysis",
      "path": "https://meta-analysis.cz/alphas/"
     }
    ],
-   "description": "Format conversion of the dataset published with this paper. Rights inherit from the source; cite the paper."
+   "description": "Format conversion of the dataset published with this paper. CC BY 4.0; cite the paper."
   },
   {
    "name": "armington",
@@ -1639,14 +1658,20 @@
     ]
    },
    "title": "A Meta-Analysis of the Trade Cost Elasticity",
-   "rights_status": "unspecified",
+   "licenses": [
+    {
+     "name": "CC-BY-4.0",
+     "path": "https://creativecommons.org/licenses/by/4.0/"
+    }
+   ],
+   "rights_status": "cc-by-4.0",
    "sources": [
     {
      "title": "A Meta-Analysis of the Trade Cost Elasticity",
      "path": "https://doi.org/10.1016/j.jinteco.2020.103383"
     }
    ],
-   "description": "Format conversion of the dataset published with this paper. Rights inherit from the source; cite the paper."
+   "description": "Format conversion of the dataset published with this paper. CC BY 4.0; cite the paper."
   },
   {
    "name": "beauty",
@@ -1938,14 +1963,20 @@
     ]
    },
    "title": "Beauty and Professional Success: A Meta-Analysis",
-   "rights_status": "unspecified",
+   "licenses": [
+    {
+     "name": "CC-BY-4.0",
+     "path": "https://creativecommons.org/licenses/by/4.0/"
+    }
+   ],
+   "rights_status": "cc-by-4.0",
    "sources": [
     {
      "title": "Beauty and Professional Success: A Meta-Analysis",
      "path": "https://meta-analysis.cz/beauty/"
     }
    ],
-   "description": "Format conversion of the dataset published with this paper. Rights inherit from the source; cite the paper."
+   "description": "Format conversion of the dataset published with this paper. CC BY 4.0; cite the paper."
   },
   {
    "name": "bma",
@@ -2462,14 +2493,20 @@
     ]
    },
    "title": "A Meta-Analysis of Horizontal Spillovers from FDI",
-   "rights_status": "unspecified",
+   "licenses": [
+    {
+     "name": "CC-BY-4.0",
+     "path": "https://creativecommons.org/licenses/by/4.0/"
+    }
+   ],
+   "rights_status": "cc-by-4.0",
    "sources": [
     {
      "title": "A Meta-Analysis of Horizontal Spillovers from FDI",
      "path": "https://doi.org/10.1016/j.worlddev.2012.07.001"
     }
    ],
-   "description": "Format conversion of the dataset published with this paper. Rights inherit from the source; cite the paper."
+   "description": "Format conversion of the dataset published with this paper. CC BY 4.0; cite the paper."
   },
   {
    "name": "border",
@@ -2786,14 +2823,20 @@
     ]
    },
    "title": "Do Borders Really Slash Trade? A Meta-Analysis",
-   "rights_status": "unspecified",
+   "licenses": [
+    {
+     "name": "CC-BY-4.0",
+     "path": "https://creativecommons.org/licenses/by/4.0/"
+    }
+   ],
+   "rights_status": "cc-by-4.0",
    "sources": [
     {
      "title": "Do Borders Really Slash Trade? A Meta-Analysis",
      "path": "https://doi.org/10.1057/s41308-016-0001-5"
     }
    ],
-   "description": "Format conversion of the dataset published with this paper. Rights inherit from the source; cite the paper."
+   "description": "Format conversion of the dataset published with this paper. CC BY 4.0; cite the paper."
   },
   {
    "name": "class",
@@ -3140,14 +3183,20 @@
     ]
    },
    "title": "Class Size and Student Achievement: A Meta-Analysis",
-   "rights_status": "unspecified",
+   "licenses": [
+    {
+     "name": "CC-BY-4.0",
+     "path": "https://creativecommons.org/licenses/by/4.0/"
+    }
+   ],
+   "rights_status": "cc-by-4.0",
    "sources": [
     {
      "title": "Class Size and Student Achievement: A Meta-Analysis",
      "path": "https://doi.org/10.1086/737989"
     }
    ],
-   "description": "Format conversion of the dataset published with this paper. Rights inherit from the source; cite the paper."
+   "description": "Format conversion of the dataset published with this paper. CC BY 4.0; cite the paper."
   },
   {
    "name": "climate",
@@ -3294,14 +3343,20 @@
     ]
    },
    "title": "Publication Bias in Measuring Anthropogenic Climate Change",
-   "rights_status": "unspecified",
+   "licenses": [
+    {
+     "name": "CC-BY-4.0",
+     "path": "https://creativecommons.org/licenses/by/4.0/"
+    }
+   ],
+   "rights_status": "cc-by-4.0",
    "sources": [
     {
      "title": "Publication Bias in Measuring Anthropogenic Climate Change",
      "path": "https://doi.org/10.1260/0958-305x.26.5.853"
     }
    ],
-   "description": "Format conversion of the dataset published with this paper. Rights inherit from the source; cite the paper."
+   "description": "Format conversion of the dataset published with this paper. CC BY 4.0; cite the paper."
   },
   {
    "name": "competition",
@@ -3508,14 +3563,20 @@
     ]
    },
    "title": "Bank Competition and Financial Stability: Much Ado About Nothing?",
-   "rights_status": "unspecified",
+   "licenses": [
+    {
+     "name": "CC-BY-4.0",
+     "path": "https://creativecommons.org/licenses/by/4.0/"
+    }
+   ],
+   "rights_status": "cc-by-4.0",
    "sources": [
     {
      "title": "Bank Competition and Financial Stability: Much Ado About Nothing?",
      "path": "https://doi.org/10.1111/joes.12131"
     }
    ],
-   "description": "Format conversion of the dataset published with this paper. Rights inherit from the source; cite the paper."
+   "description": "Format conversion of the dataset published with this paper. CC BY 4.0; cite the paper."
   },
   {
    "name": "discrate",
@@ -3717,14 +3778,20 @@
     ]
    },
    "title": "Individual Discount Rates: A Meta-Analysis of Experimental Evidence",
-   "rights_status": "unspecified",
+   "licenses": [
+    {
+     "name": "CC-BY-4.0",
+     "path": "https://creativecommons.org/licenses/by/4.0/"
+    }
+   ],
+   "rights_status": "cc-by-4.0",
    "sources": [
     {
      "title": "Individual Discount Rates: A Meta-Analysis of Experimental Evidence",
      "path": "https://doi.org/10.1007/s10683-021-09716-9"
     }
    ],
-   "description": "Format conversion of the dataset published with this paper. Rights inherit from the source; cite the paper."
+   "description": "Format conversion of the dataset published with this paper. CC BY 4.0; cite the paper."
   },
   {
    "name": "dst",
@@ -3916,14 +3983,20 @@
     ]
    },
    "title": "Does Daylight Saving Save Electricity? A Meta-Analysis",
-   "rights_status": "unspecified",
+   "licenses": [
+    {
+     "name": "CC-BY-4.0",
+     "path": "https://creativecommons.org/licenses/by/4.0/"
+    }
+   ],
+   "rights_status": "cc-by-4.0",
    "sources": [
     {
      "title": "Does Daylight Saving Save Electricity? A Meta-Analysis",
      "path": "https://doi.org/10.5547/01956574.39.2.thav"
     }
    ],
-   "description": "Format conversion of the dataset published with this paper. Rights inherit from the source; cite the paper."
+   "description": "Format conversion of the dataset published with this paper. CC BY 4.0; cite the paper."
   },
   {
    "name": "education",
@@ -4185,14 +4258,20 @@
     ]
    },
    "title": "Publication Bias in Measuring the Impact of Tuition on Enrollment",
-   "rights_status": "unspecified",
+   "licenses": [
+    {
+     "name": "CC-BY-4.0",
+     "path": "https://creativecommons.org/licenses/by/4.0/"
+    }
+   ],
+   "rights_status": "cc-by-4.0",
    "sources": [
     {
      "title": "Publication Bias in Measuring the Impact of Tuition on Enrollment",
      "path": "https://doi.org/10.1111/obes.12240"
     }
    ],
-   "description": "Format conversion of the dataset published with this paper. Rights inherit from the source; cite the paper."
+   "description": "Format conversion of the dataset published with this paper. CC BY 4.0; cite the paper."
   },
   {
    "name": "eis",
@@ -4464,14 +4543,20 @@
     ]
    },
    "title": "Publication Bias in Measuring Intertemporal Substitution",
-   "rights_status": "unspecified",
+   "licenses": [
+    {
+     "name": "CC-BY-4.0",
+     "path": "https://creativecommons.org/licenses/by/4.0/"
+    }
+   ],
+   "rights_status": "cc-by-4.0",
    "sources": [
     {
      "title": "Publication Bias in Measuring Intertemporal Substitution",
      "path": "https://doi.org/10.1111/jeea.12133"
     }
    ],
-   "description": "Format conversion of the dataset published with this paper. Rights inherit from the source; cite the paper."
+   "description": "Format conversion of the dataset published with this paper. CC BY 4.0; cite the paper."
   },
   {
    "name": "electricity",
@@ -4843,14 +4928,20 @@
     ]
    },
    "title": "Price Elasticity of Electricity Demand: A Meta-Analysis",
-   "rights_status": "unspecified",
+   "licenses": [
+    {
+     "name": "CC-BY-4.0",
+     "path": "https://creativecommons.org/licenses/by/4.0/"
+    }
+   ],
+   "rights_status": "cc-by-4.0",
    "sources": [
     {
      "title": "Price Elasticity of Electricity Demand: A Meta-Analysis",
      "path": "https://meta-analysis.cz/electricity/"
     }
    ],
-   "description": "Format conversion of the dataset published with this paper. Rights inherit from the source; cite the paper."
+   "description": "Format conversion of the dataset published with this paper. CC BY 4.0; cite the paper."
   },
   {
    "name": "esg",
@@ -5187,14 +5278,20 @@
     ]
    },
    "title": "Do Female Directors Raise ESG Ratings? A Meta-Analysis",
-   "rights_status": "unspecified",
+   "licenses": [
+    {
+     "name": "CC-BY-4.0",
+     "path": "https://creativecommons.org/licenses/by/4.0/"
+    }
+   ],
+   "rights_status": "cc-by-4.0",
    "sources": [
     {
      "title": "Do Female Directors Raise ESG Ratings? A Meta-Analysis",
      "path": "https://meta-analysis.cz/esg/"
     }
    ],
-   "description": "Format conversion of the dataset published with this paper. Rights inherit from the source; cite the paper."
+   "description": "Format conversion of the dataset published with this paper. CC BY 4.0; cite the paper."
   },
   {
    "name": "euro",
@@ -5446,14 +5543,20 @@
     ]
    },
    "title": "A Meta-Analysis of the Trade Effect of the Euro",
-   "rights_status": "unspecified",
+   "licenses": [
+    {
+     "name": "CC-BY-4.0",
+     "path": "https://creativecommons.org/licenses/by/4.0/"
+    }
+   ],
+   "rights_status": "cc-by-4.0",
    "sources": [
     {
      "title": "A Meta-Analysis of the Trade Effect of the Euro",
      "path": "https://doi.org/10.1007/s10290-010-0050-1"
     }
    ],
-   "description": "Format conversion of the dataset published with this paper. Rights inherit from the source; cite the paper."
+   "description": "Format conversion of the dataset published with this paper. CC BY 4.0; cite the paper."
   },
   {
    "name": "excess_sensitivity",
@@ -5840,14 +5943,20 @@
     ]
    },
    "title": "A Meta-Analysis of the Excess Sensitivity of Consumption to Anticipated Income Changes",
-   "rights_status": "unspecified",
+   "licenses": [
+    {
+     "name": "CC-BY-4.0",
+     "path": "https://creativecommons.org/licenses/by/4.0/"
+    }
+   ],
+   "rights_status": "cc-by-4.0",
    "sources": [
     {
      "title": "A Meta-Analysis of the Excess Sensitivity of Consumption to Anticipated Income Changes",
      "path": "https://doi.org/10.1016/j.red.2019.05.004"
     }
    ],
-   "description": "Format conversion of the dataset published with this paper. Rights inherit from the source; cite the paper."
+   "description": "Format conversion of the dataset published with this paper. CC BY 4.0; cite the paper."
   },
   {
    "name": "fdi",
@@ -5974,14 +6083,20 @@
     ]
    },
    "title": "Foreign Capital and Domestic Productivity in the Czech Republic: A Meta-Regression Analysis",
-   "rights_status": "unspecified",
+   "licenses": [
+    {
+     "name": "CC-BY-4.0",
+     "path": "https://creativecommons.org/licenses/by/4.0/"
+    }
+   ],
+   "rights_status": "cc-by-4.0",
    "sources": [
     {
      "title": "Foreign Capital and Domestic Productivity in the Czech Republic: A Meta-Regression Analysis",
      "path": "https://doi.org/10.1080/00036846.2020.1726864"
     }
    ],
-   "description": "Format conversion of the dataset published with this paper. Rights inherit from the source; cite the paper."
+   "description": "Format conversion of the dataset published with this paper. CC BY 4.0; cite the paper."
   },
   {
    "name": "forward",
@@ -6403,14 +6518,20 @@
     ]
    },
    "title": "How Puzzling Is the Forward Premium Puzzle? A Meta-Analysis",
-   "rights_status": "unspecified",
+   "licenses": [
+    {
+     "name": "CC-BY-4.0",
+     "path": "https://creativecommons.org/licenses/by/4.0/"
+    }
+   ],
+   "rights_status": "cc-by-4.0",
    "sources": [
     {
      "title": "How Puzzling Is the Forward Premium Puzzle? A Meta-Analysis",
      "path": "https://doi.org/10.1016/j.euroecorev.2021.103714"
     }
    ],
-   "description": "Format conversion of the dataset published with this paper. Rights inherit from the source; cite the paper."
+   "description": "Format conversion of the dataset published with this paper. CC BY 4.0; cite the paper."
   },
   {
    "name": "frisch",
@@ -6667,14 +6788,20 @@
     ]
    },
    "title": "Publication and Identification Biases in Measuring the Intertemporal Substitution of Labor Supply",
-   "rights_status": "unspecified",
+   "licenses": [
+    {
+     "name": "CC-BY-4.0",
+     "path": "https://creativecommons.org/licenses/by/4.0/"
+    }
+   ],
+   "rights_status": "cc-by-4.0",
    "sources": [
     {
      "title": "Publication and Identification Biases in Measuring the Intertemporal Substitution of Labor Supply",
      "path": "https://doi.org/10.1016/j.red.2023.10.001"
     }
    ],
-   "description": "Format conversion of the dataset published with this paper. Rights inherit from the source; cite the paper."
+   "description": "Format conversion of the dataset published with this paper. CC BY 4.0; cite the paper."
   },
   {
    "name": "gasoline",
@@ -6846,14 +6973,20 @@
     ]
    },
    "title": "A Meta-Analysis of the Income Elasticity of Gasoline Demand",
-   "rights_status": "unspecified",
+   "licenses": [
+    {
+     "name": "CC-BY-4.0",
+     "path": "https://creativecommons.org/licenses/by/4.0/"
+    }
+   ],
+   "rights_status": "cc-by-4.0",
    "sources": [
     {
      "title": "A Meta-Analysis of the Income Elasticity of Gasoline Demand",
      "path": "https://doi.org/10.1016/j.eneco.2014.11.004"
     }
    ],
-   "description": "Format conversion of the dataset published with this paper. Rights inherit from the source; cite the paper."
+   "description": "Format conversion of the dataset published with this paper. CC BY 4.0; cite the paper."
   },
   {
    "name": "gasoline_price",
@@ -6920,14 +7053,20 @@
     ]
    },
    "title": "A Meta-Analysis of the Price Elasticity of Gasoline Demand",
-   "rights_status": "unspecified",
+   "licenses": [
+    {
+     "name": "CC-BY-4.0",
+     "path": "https://creativecommons.org/licenses/by/4.0/"
+    }
+   ],
+   "rights_status": "cc-by-4.0",
    "sources": [
     {
      "title": "A Meta-Analysis of the Price Elasticity of Gasoline Demand",
      "path": "https://doi.org/10.1016/j.eneco.2011.09.003"
     }
    ],
-   "description": "Format conversion of the dataset published with this paper. Rights inherit from the source; cite the paper."
+   "description": "Format conversion of the dataset published with this paper. CC BY 4.0; cite the paper."
   },
   {
    "name": "habits",
@@ -7144,14 +7283,20 @@
     ]
    },
    "title": "Habit Formation in Consumption: A Meta-Analysis",
-   "rights_status": "unspecified",
+   "licenses": [
+    {
+     "name": "CC-BY-4.0",
+     "path": "https://creativecommons.org/licenses/by/4.0/"
+    }
+   ],
+   "rights_status": "cc-by-4.0",
    "sources": [
     {
      "title": "Habit Formation in Consumption: A Meta-Analysis",
      "path": "https://doi.org/10.1016/j.euroecorev.2017.03.009"
     }
    ],
-   "description": "Format conversion of the dataset published with this paper. Rights inherit from the source; cite the paper."
+   "description": "Format conversion of the dataset published with this paper. CC BY 4.0; cite the paper."
   },
   {
    "name": "hedge",
@@ -7308,14 +7453,20 @@
     ]
    },
    "title": "Hedge Fund Performance: A Meta-Analysis",
-   "rights_status": "unspecified",
+   "licenses": [
+    {
+     "name": "CC-BY-4.0",
+     "path": "https://creativecommons.org/licenses/by/4.0/"
+    }
+   ],
+   "rights_status": "cc-by-4.0",
    "sources": [
     {
      "title": "Hedge Fund Performance: A Meta-Analysis",
      "path": "https://doi.org/10.1111/joes.12574"
     }
    ],
-   "description": "Format conversion of the dataset published with this paper. Rights inherit from the source; cite the paper."
+   "description": "Format conversion of the dataset published with this paper. CC BY 4.0; cite the paper."
   },
   {
    "name": "house_prices",
@@ -7942,14 +8093,20 @@
     ]
    },
    "title": "When Does Monetary Policy Sway House Prices? A Meta-Analysis",
-   "rights_status": "unspecified",
+   "licenses": [
+    {
+     "name": "CC-BY-4.0",
+     "path": "https://creativecommons.org/licenses/by/4.0/"
+    }
+   ],
+   "rights_status": "cc-by-4.0",
    "sources": [
     {
      "title": "When Does Monetary Policy Sway House Prices? A Meta-Analysis",
      "path": "https://doi.org/10.1057/s41308-022-00185-5"
     }
    ],
-   "description": "Format conversion of the dataset published with this paper. Rights inherit from the source; cite the paper."
+   "description": "Format conversion of the dataset published with this paper. CC BY 4.0; cite the paper."
   },
   {
    "name": "incentives",
@@ -8321,14 +8478,20 @@
     ]
    },
    "title": "Financial Incentives and Performance: A Meta-Analysis of Experiments in Economics",
-   "rights_status": "unspecified",
+   "licenses": [
+    {
+     "name": "CC-BY-4.0",
+     "path": "https://creativecommons.org/licenses/by/4.0/"
+    }
+   ],
+   "rights_status": "cc-by-4.0",
    "sources": [
     {
      "title": "Financial Incentives and Performance: A Meta-Analysis of Experiments in Economics",
      "path": "https://meta-analysis.cz/incentives/"
     }
    ],
-   "description": "Format conversion of the dataset published with this paper. Rights inherit from the source; cite the paper."
+   "description": "Format conversion of the dataset published with this paper. CC BY 4.0; cite the paper."
   },
   {
    "name": "inflation",
@@ -9235,14 +9398,20 @@
     ]
    },
    "title": "Optimal Inflation Rate: A Meta-Analysis",
-   "rights_status": "unspecified",
+   "licenses": [
+    {
+     "name": "CC-BY-4.0",
+     "path": "https://creativecommons.org/licenses/by/4.0/"
+    }
+   ],
+   "rights_status": "cc-by-4.0",
    "sources": [
     {
      "title": "Optimal Inflation Rate: A Meta-Analysis",
      "path": "https://meta-analysis.cz/inflation/"
     }
    ],
-   "description": "Format conversion of the dataset published with this paper. Rights inherit from the source; cite the paper."
+   "description": "Format conversion of the dataset published with this paper. CC BY 4.0; cite the paper."
   },
   {
    "name": "lags",
@@ -10009,14 +10178,20 @@
     ]
    },
    "title": "Transmission Lags of Monetary Policy: A Meta-Analysis",
-   "rights_status": "unspecified",
+   "licenses": [
+    {
+     "name": "CC-BY-4.0",
+     "path": "https://creativecommons.org/licenses/by/4.0/"
+    }
+   ],
+   "rights_status": "cc-by-4.0",
    "sources": [
     {
      "title": "Transmission Lags of Monetary Policy: A Meta-Analysis",
      "path": "https://meta-analysis.cz/lags/"
     }
    ],
-   "description": "Format conversion of the dataset published with this paper. Rights inherit from the source; cite the paper."
+   "description": "Format conversion of the dataset published with this paper. CC BY 4.0; cite the paper."
   },
   {
    "name": "learning",
@@ -10113,14 +10288,20 @@
     ]
    },
    "title": "Publication Bias and P-Hacking in the Effect of COVID-19 on Learning: A Meta-Analysis",
-   "rights_status": "unspecified",
+   "licenses": [
+    {
+     "name": "CC-BY-4.0",
+     "path": "https://creativecommons.org/licenses/by/4.0/"
+    }
+   ],
+   "rights_status": "cc-by-4.0",
    "sources": [
     {
      "title": "Publication Bias and P-Hacking in the Effect of COVID-19 on Learning: A Meta-Analysis",
      "path": "https://meta-analysis.cz/learning/"
     }
    ],
-   "description": "Format conversion of the dataset published with this paper. Rights inherit from the source; cite the paper."
+   "description": "Format conversion of the dataset published with this paper. CC BY 4.0; cite the paper."
   },
   {
    "name": "migrant",
@@ -10417,14 +10598,20 @@
     ]
    },
    "title": "The Elasticity of Substitution between Native and Immigrant Labor: A Meta-Analysis",
-   "rights_status": "unspecified",
+   "licenses": [
+    {
+     "name": "CC-BY-4.0",
+     "path": "https://creativecommons.org/licenses/by/4.0/"
+    }
+   ],
+   "rights_status": "cc-by-4.0",
    "sources": [
     {
      "title": "The Elasticity of Substitution between Native and Immigrant Labor: A Meta-Analysis",
      "path": "https://meta-analysis.cz/migrant/"
     }
    ],
-   "description": "Format conversion of the dataset published with this paper. Rights inherit from the source; cite the paper."
+   "description": "Format conversion of the dataset published with this paper. CC BY 4.0; cite the paper."
   },
   {
    "name": "price_puzzle",
@@ -11191,14 +11378,20 @@
     ]
    },
    "title": "How to Solve the Price Puzzle? A Meta-Analysis",
-   "rights_status": "unspecified",
+   "licenses": [
+    {
+     "name": "CC-BY-4.0",
+     "path": "https://creativecommons.org/licenses/by/4.0/"
+    }
+   ],
+   "rights_status": "cc-by-4.0",
    "sources": [
     {
      "title": "How to Solve the Price Puzzle? A Meta-Analysis",
      "path": "https://doi.org/10.1111/j.1538-4616.2012.00561.x"
     }
    ],
-   "description": "Format conversion of the dataset published with this paper. Rights inherit from the source; cite the paper."
+   "description": "Format conversion of the dataset published with this paper. CC BY 4.0; cite the paper."
   },
   {
    "name": "reforms",
@@ -11420,14 +11613,20 @@
     ]
    },
    "title": "Structural Reforms and Economic Growth: A Meta-Analysis",
-   "rights_status": "unspecified",
+   "licenses": [
+    {
+     "name": "CC-BY-4.0",
+     "path": "https://creativecommons.org/licenses/by/4.0/"
+    }
+   ],
+   "rights_status": "cc-by-4.0",
    "sources": [
     {
      "title": "Structural Reforms and Economic Growth: A Meta-Analysis",
      "path": "https://doi.org/10.1111/ecot.12029"
     }
    ],
-   "description": "Format conversion of the dataset published with this paper. Rights inherit from the source; cite the paper."
+   "description": "Format conversion of the dataset published with this paper. CC BY 4.0; cite the paper."
   },
   {
    "name": "remittances",
@@ -11794,14 +11993,20 @@
     ]
    },
    "title": "Remittances and Economic Growth: A Meta-Analysis",
-   "rights_status": "unspecified",
+   "licenses": [
+    {
+     "name": "CC-BY-4.0",
+     "path": "https://creativecommons.org/licenses/by/4.0/"
+    }
+   ],
+   "rights_status": "cc-by-4.0",
    "sources": [
     {
      "title": "Remittances and Economic Growth: A Meta-Analysis",
      "path": "https://doi.org/10.1016/j.worlddev.2020.105021"
     }
    ],
-   "description": "Format conversion of the dataset published with this paper. Rights inherit from the source; cite the paper."
+   "description": "Format conversion of the dataset published with this paper. CC BY 4.0; cite the paper."
   },
   {
    "name": "resource_curse",
@@ -12373,14 +12578,20 @@
     ]
    },
    "title": "Natural Resources and Economic Growth: A Meta-Analysis",
-   "rights_status": "unspecified",
+   "licenses": [
+    {
+     "name": "CC-BY-4.0",
+     "path": "https://creativecommons.org/licenses/by/4.0/"
+    }
+   ],
+   "rights_status": "cc-by-4.0",
    "sources": [
     {
      "title": "Natural Resources and Economic Growth: A Meta-Analysis",
      "path": "https://doi.org/10.1016/j.worlddev.2016.07.016"
     }
    ],
-   "description": "Format conversion of the dataset published with this paper. Rights inherit from the source; cite the paper."
+   "description": "Format conversion of the dataset published with this paper. CC BY 4.0; cite the paper."
   },
   {
    "name": "risk",
@@ -12697,14 +12908,20 @@
     ]
    },
    "title": "Relative Risk Aversion: A Meta-Analysis",
-   "rights_status": "unspecified",
+   "licenses": [
+    {
+     "name": "CC-BY-4.0",
+     "path": "https://creativecommons.org/licenses/by/4.0/"
+    }
+   ],
+   "rights_status": "cc-by-4.0",
    "sources": [
     {
      "title": "Relative Risk Aversion: A Meta-Analysis",
      "path": "https://doi.org/10.1111/joes.12689"
     }
    ],
-   "description": "Format conversion of the dataset published with this paper. Rights inherit from the source; cite the paper."
+   "description": "Format conversion of the dataset published with this paper. CC BY 4.0; cite the paper."
   },
   {
    "name": "scc",
@@ -12896,14 +13113,20 @@
     ]
    },
    "title": "Selective Reporting and the Social Cost of Carbon",
-   "rights_status": "unspecified",
+   "licenses": [
+    {
+     "name": "CC-BY-4.0",
+     "path": "https://creativecommons.org/licenses/by/4.0/"
+    }
+   ],
+   "rights_status": "cc-by-4.0",
    "sources": [
     {
      "title": "Selective Reporting and the Social Cost of Carbon",
      "path": "https://doi.org/10.1016/j.eneco.2015.08.009"
     }
    ],
-   "description": "Format conversion of the dataset published with this paper. Rights inherit from the source; cite the paper."
+   "description": "Format conversion of the dataset published with this paper. CC BY 4.0; cite the paper."
   },
   {
    "name": "sigma",
@@ -13490,14 +13713,20 @@
     ]
    },
    "title": "Measuring Capital-Labor Substitution: The Importance of Method Choices and Publication Bias",
-   "rights_status": "unspecified",
+   "licenses": [
+    {
+     "name": "CC-BY-4.0",
+     "path": "https://creativecommons.org/licenses/by/4.0/"
+    }
+   ],
+   "rights_status": "cc-by-4.0",
    "sources": [
     {
      "title": "Measuring Capital-Labor Substitution: The Importance of Method Choices and Publication Bias",
      "path": "https://doi.org/10.1016/j.red.2021.05.003"
     }
    ],
-   "description": "Format conversion of the dataset published with this paper. Rights inherit from the source; cite the paper."
+   "description": "Format conversion of the dataset published with this paper. CC BY 4.0; cite the paper."
   },
   {
    "name": "size",
@@ -15544,14 +15773,20 @@
     ]
    },
    "title": "A Meta-Analysis of the Relation Between Firm Size and Stock Returns",
-   "rights_status": "unspecified",
+   "licenses": [
+    {
+     "name": "CC-BY-4.0",
+     "path": "https://creativecommons.org/licenses/by/4.0/"
+    }
+   ],
+   "rights_status": "cc-by-4.0",
    "sources": [
     {
      "title": "A Meta-Analysis of the Relation Between Firm Size and Stock Returns",
      "path": "https://doi.org/10.1111/joes.12335"
     }
    ],
-   "description": "Format conversion of the dataset published with this paper. Rights inherit from the source; cite the paper."
+   "description": "Format conversion of the dataset published with this paper. CC BY 4.0; cite the paper."
   },
   {
    "name": "skill",
@@ -15813,14 +16048,20 @@
     ]
    },
    "title": "Publication and Attenuation Biases in Measuring Skill Substitution",
-   "rights_status": "unspecified",
+   "licenses": [
+    {
+     "name": "CC-BY-4.0",
+     "path": "https://creativecommons.org/licenses/by/4.0/"
+    }
+   ],
+   "rights_status": "cc-by-4.0",
    "sources": [
     {
      "title": "Publication and Attenuation Biases in Measuring Skill Substitution",
      "path": "https://doi.org/10.1162/rest_a_01227"
     }
    ],
-   "description": "Format conversion of the dataset published with this paper. Rights inherit from the source; cite the paper."
+   "description": "Format conversion of the dataset published with this paper. CC BY 4.0; cite the paper."
   },
   {
    "name": "spillovers",
@@ -16322,14 +16563,20 @@
     ]
    },
    "title": "A Meta-Analysis of Vertical Spillovers from FDI",
-   "rights_status": "unspecified",
+   "licenses": [
+    {
+     "name": "CC-BY-4.0",
+     "path": "https://creativecommons.org/licenses/by/4.0/"
+    }
+   ],
+   "rights_status": "cc-by-4.0",
    "sources": [
     {
      "title": "A Meta-Analysis of Vertical Spillovers from FDI",
      "path": "https://doi.org/10.1016/j.jinteco.2011.07.004"
     }
    ],
-   "description": "Format conversion of the dataset published with this paper. Rights inherit from the source; cite the paper."
+   "description": "Format conversion of the dataset published with this paper. CC BY 4.0; cite the paper."
   },
   {
    "name": "students",
@@ -16636,14 +16883,20 @@
     ]
    },
    "title": "Student Employment and Education: A Meta-Analysis",
-   "rights_status": "unspecified",
+   "licenses": [
+    {
+     "name": "CC-BY-4.0",
+     "path": "https://creativecommons.org/licenses/by/4.0/"
+    }
+   ],
+   "rights_status": "cc-by-4.0",
    "sources": [
     {
      "title": "Student Employment and Education: A Meta-Analysis",
      "path": "https://doi.org/10.1016/j.econedurev.2024.102539"
     }
    ],
-   "description": "Format conversion of the dataset published with this paper. Rights inherit from the source; cite the paper."
+   "description": "Format conversion of the dataset published with this paper. CC BY 4.0; cite the paper."
   },
   {
    "name": "substitution",
@@ -16980,14 +17233,20 @@
     ]
    },
    "title": "Why Does Intertemporal Substitution Vary Across Countries? A Meta-Analysis",
-   "rights_status": "unspecified",
+   "licenses": [
+    {
+     "name": "CC-BY-4.0",
+     "path": "https://creativecommons.org/licenses/by/4.0/"
+    }
+   ],
+   "rights_status": "cc-by-4.0",
    "sources": [
     {
      "title": "Why Does Intertemporal Substitution Vary Across Countries? A Meta-Analysis",
      "path": "https://doi.org/10.1016/j.jinteco.2015.01.012"
     }
    ],
-   "description": "Format conversion of the dataset published with this paper. Rights inherit from the source; cite the paper."
+   "description": "Format conversion of the dataset published with this paper. CC BY 4.0; cite the paper."
   },
   {
    "name": "trust",
@@ -17224,14 +17483,20 @@
     ]
    },
    "title": "Trust, Rule of Law, and the Size Premium: Evidence from a Meta-Analysis",
-   "rights_status": "unspecified",
+   "licenses": [
+    {
+     "name": "CC-BY-4.0",
+     "path": "https://creativecommons.org/licenses/by/4.0/"
+    }
+   ],
+   "rights_status": "cc-by-4.0",
    "sources": [
     {
      "title": "Trust, Rule of Law, and the Size Premium: Evidence from a Meta-Analysis",
      "path": "https://meta-analysis.cz/trust/"
     }
    ],
-   "description": "Format conversion of the dataset published with this paper. Rights inherit from the source; cite the paper."
+   "description": "Format conversion of the dataset published with this paper. CC BY 4.0; cite the paper."
   },
   {
    "name": "water",
@@ -17508,14 +17773,20 @@
     ]
    },
    "title": "Publication Bias in Measuring the Income Elasticity of Water Demand",
-   "rights_status": "unspecified",
+   "licenses": [
+    {
+     "name": "CC-BY-4.0",
+     "path": "https://creativecommons.org/licenses/by/4.0/"
+    }
+   ],
+   "rights_status": "cc-by-4.0",
    "sources": [
     {
      "title": "Publication Bias in Measuring the Income Elasticity of Water Demand",
      "path": "https://doi.org/10.3368/le.94.2.259"
     }
    ],
-   "description": "Format conversion of the dataset published with this paper. Rights inherit from the source; cite the paper."
+   "description": "Format conversion of the dataset published with this paper. CC BY 4.0; cite the paper."
   }
  ]
 }

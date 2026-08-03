@@ -3,11 +3,12 @@
  "version": "1.0.0",
  "description": "Estimate-level datasets from meta-analyses in economics and the social sciences, with the hand-coded study characteristics collected for each paper.",
  "license": {
-  "newly_authored_structure": "CC-BY-4.0",
-  "newly_authored_software": "MIT",
-  "underlying_datasets": "not licensed here - see each dataset's rights_status",
-  "url": "https://meta-analysis.cz/LICENSE",
-  "note": "CC BY 4.0 covers the compilation, index, codebooks and harmonisation mappings only. It does NOT relicense the underlying research datasets, their format conversions, or the papers' own replication code, none of which are ours to grant. Cite both the collection and the individual paper."
+  "id": "CC-BY-4.0",
+  "url": "https://creativecommons.org/licenses/by/4.0/",
+  "terms": "https://meta-analysis.cz/LICENSE",
+  "applies_to": "everything on this site",
+  "note": "Everything here is CC BY 4.0: the research datasets, their CSV and Parquet conversions, the harmonised table, the index, the codebooks, the documentation and the deposited PDFs. Free to use, adapt and redistribute, including commercially and including as training data for machine-learning models. The only condition is credit: cite the collection, and cite the paper whose dataset you used.",
+  "machine_readable": true
  },
  "cite_as": "Havranek, T. and Z. Irsova (2026). meta-analysis.cz: harmonised estimate-level data from meta-analyses in economics. Zenodo. https://doi.org/10.5281/zenodo.21773678",
  "doi": "10.5281/zenodo.21773679",
@@ -178,9 +179,9 @@
    "same_literature_as": null,
    "excluded_to_avoid_double_counting": false,
    "shares_source_file_with": null,
-   "rights_status": "unspecified",
-   "license_url": null,
-   "rights_note": "Format conversions of the source dataset; rights inherit from it. The collection licence covers the index, codebooks and harmonisation, not this dataset. Cite the paper, and check with its authors if your use needs an explicit reuse right.",
+   "rights_status": "cc-by-4.0",
+   "license_url": "https://creativecommons.org/licenses/by/4.0/",
+   "rights_note": "CC BY 4.0. Free to use, adapt and redistribute, including commercially and including as training data. The only condition is credit: cite the paper named in this entry.",
    "audit_status": "domain_reviewed"
   },
   {
@@ -231,9 +232,9 @@
    "same_literature_as": null,
    "excluded_to_avoid_double_counting": false,
    "shares_source_file_with": null,
-   "rights_status": "unspecified",
-   "license_url": null,
-   "rights_note": "Format conversions of the source dataset; rights inherit from it. The collection licence covers the index, codebooks and harmonisation, not this dataset. Cite the paper, and check with its authors if your use needs an explicit reuse right.",
+   "rights_status": "cc-by-4.0",
+   "license_url": "https://creativecommons.org/licenses/by/4.0/",
+   "rights_note": "CC BY 4.0. Free to use, adapt and redistribute, including commercially and including as training data. The only condition is credit: cite the paper named in this entry.",
    "audit_status": "arithmetic_pairing_only"
   },
   {
@@ -284,9 +285,9 @@
    "same_literature_as": null,
    "excluded_to_avoid_double_counting": false,
    "shares_source_file_with": null,
-   "rights_status": "unspecified",
-   "license_url": null,
-   "rights_note": "Format conversions of the source dataset; rights inherit from it. The collection licence covers the index, codebooks and harmonisation, not this dataset. Cite the paper, and check with its authors if your use needs an explicit reuse right.",
+   "rights_status": "cc-by-4.0",
+   "license_url": "https://creativecommons.org/licenses/by/4.0/",
+   "rights_note": "CC BY 4.0. Free to use, adapt and redistribute, including commercially and including as training data. The only condition is credit: cite the paper named in this entry.",
    "audit_status": "arithmetic_pairing_only"
   },
   {
@@ -337,9 +338,9 @@
    "same_literature_as": null,
    "excluded_to_avoid_double_counting": false,
    "shares_source_file_with": null,
-   "rights_status": "unspecified",
-   "license_url": null,
-   "rights_note": "Format conversions of the source dataset; rights inherit from it. The collection licence covers the index, codebooks and harmonisation, not this dataset. Cite the paper, and check with its authors if your use needs an explicit reuse right.",
+   "rights_status": "cc-by-4.0",
+   "license_url": "https://creativecommons.org/licenses/by/4.0/",
+   "rights_note": "CC BY 4.0. Free to use, adapt and redistribute, including commercially and including as training data. The only condition is credit: cite the paper named in this entry.",
    "audit_status": "arithmetic_pairing_only"
   },
   {
@@ -388,9 +389,9 @@
    "same_literature_as": null,
    "excluded_to_avoid_double_counting": false,
    "shares_source_file_with": "spillovers",
-   "rights_status": "unspecified",
-   "license_url": null,
-   "rights_note": "Format conversions of the source dataset; rights inherit from it. The collection licence covers the index, codebooks and harmonisation, not this dataset. Cite the paper, and check with its authors if your use needs an explicit reuse right.",
+   "rights_status": "cc-by-4.0",
+   "license_url": "https://creativecommons.org/licenses/by/4.0/",
+   "rights_note": "CC BY 4.0. Free to use, adapt and redistribute, including commercially and including as training data. The only condition is credit: cite the paper named in this entry.",
    "audit_status": "domain_reviewed",
    "note": "HORIZONTAL spillovers. Shares the FDI spillovers database with the 'spillovers' project, which takes the vertical subset. The two are complementary, not duplicates."
   },
@@ -440,9 +441,9 @@
    "same_literature_as": null,
    "excluded_to_avoid_double_counting": false,
    "shares_source_file_with": null,
-   "rights_status": "unspecified",
-   "license_url": null,
-   "rights_note": "Format conversions of the source dataset; rights inherit from it. The collection licence covers the index, codebooks and harmonisation, not this dataset. Cite the paper, and check with its authors if your use needs an explicit reuse right.",
+   "rights_status": "cc-by-4.0",
+   "license_url": "https://creativecommons.org/licenses/by/4.0/",
+   "rights_note": "CC BY 4.0. Free to use, adapt and redistribute, including commercially and including as training data. The only condition is credit: cite the paper named in this entry.",
    "audit_status": "arithmetic_pairing_only"
   },
   {
@@ -493,9 +494,9 @@
    "same_literature_as": null,
    "excluded_to_avoid_double_counting": false,
    "shares_source_file_with": null,
-   "rights_status": "unspecified",
-   "license_url": null,
-   "rights_note": "Format conversions of the source dataset; rights inherit from it. The collection licence covers the index, codebooks and harmonisation, not this dataset. Cite the paper, and check with its authors if your use needs an explicit reuse right.",
+   "rights_status": "cc-by-4.0",
+   "license_url": "https://creativecommons.org/licenses/by/4.0/",
+   "rights_note": "CC BY 4.0. Free to use, adapt and redistribute, including commercially and including as training data. The only condition is credit: cite the paper named in this entry.",
    "audit_status": "arithmetic_pairing_only"
   },
   {
@@ -544,9 +545,9 @@
    "same_literature_as": null,
    "excluded_to_avoid_double_counting": false,
    "shares_source_file_with": null,
-   "rights_status": "unspecified",
-   "license_url": null,
-   "rights_note": "Format conversions of the source dataset; rights inherit from it. The collection licence covers the index, codebooks and harmonisation, not this dataset. Cite the paper, and check with its authors if your use needs an explicit reuse right.",
+   "rights_status": "cc-by-4.0",
+   "license_url": "https://creativecommons.org/licenses/by/4.0/",
+   "rights_note": "CC BY 4.0. Free to use, adapt and redistribute, including commercially and including as training data. The only condition is credit: cite the paper named in this entry.",
    "audit_status": "domain_reviewed"
   },
   {
@@ -595,9 +596,9 @@
    "same_literature_as": null,
    "excluded_to_avoid_double_counting": false,
    "shares_source_file_with": null,
-   "rights_status": "unspecified",
-   "license_url": null,
-   "rights_note": "Format conversions of the source dataset; rights inherit from it. The collection licence covers the index, codebooks and harmonisation, not this dataset. Cite the paper, and check with its authors if your use needs an explicit reuse right.",
+   "rights_status": "cc-by-4.0",
+   "license_url": "https://creativecommons.org/licenses/by/4.0/",
+   "rights_note": "CC BY 4.0. Free to use, adapt and redistribute, including commercially and including as training data. The only condition is credit: cite the paper named in this entry.",
    "audit_status": "arithmetic_pairing_only"
   },
   {
@@ -647,9 +648,9 @@
    "same_literature_as": null,
    "excluded_to_avoid_double_counting": false,
    "shares_source_file_with": null,
-   "rights_status": "unspecified",
-   "license_url": null,
-   "rights_note": "Format conversions of the source dataset; rights inherit from it. The collection licence covers the index, codebooks and harmonisation, not this dataset. Cite the paper, and check with its authors if your use needs an explicit reuse right.",
+   "rights_status": "cc-by-4.0",
+   "license_url": "https://creativecommons.org/licenses/by/4.0/",
+   "rights_note": "CC BY 4.0. Free to use, adapt and redistribute, including commercially and including as training data. The only condition is credit: cite the paper named in this entry.",
    "audit_status": "domain_reviewed"
   },
   {
@@ -699,9 +700,9 @@
    "same_literature_as": null,
    "excluded_to_avoid_double_counting": false,
    "shares_source_file_with": null,
-   "rights_status": "unspecified",
-   "license_url": null,
-   "rights_note": "Format conversions of the source dataset; rights inherit from it. The collection licence covers the index, codebooks and harmonisation, not this dataset. Cite the paper, and check with its authors if your use needs an explicit reuse right.",
+   "rights_status": "cc-by-4.0",
+   "license_url": "https://creativecommons.org/licenses/by/4.0/",
+   "rights_note": "CC BY 4.0. Free to use, adapt and redistribute, including commercially and including as training data. The only condition is credit: cite the paper named in this entry.",
    "audit_status": "domain_reviewed"
   },
   {
@@ -751,9 +752,9 @@
    "same_literature_as": null,
    "excluded_to_avoid_double_counting": false,
    "shares_source_file_with": null,
-   "rights_status": "unspecified",
-   "license_url": null,
-   "rights_note": "Format conversions of the source dataset; rights inherit from it. The collection licence covers the index, codebooks and harmonisation, not this dataset. Cite the paper, and check with its authors if your use needs an explicit reuse right.",
+   "rights_status": "cc-by-4.0",
+   "license_url": "https://creativecommons.org/licenses/by/4.0/",
+   "rights_note": "CC BY 4.0. Free to use, adapt and redistribute, including commercially and including as training data. The only condition is credit: cite the paper named in this entry.",
    "audit_status": "arithmetic_pairing_only"
   },
   {
@@ -801,9 +802,9 @@
    "same_literature_as": null,
    "excluded_to_avoid_double_counting": false,
    "shares_source_file_with": null,
-   "rights_status": "unspecified",
-   "license_url": null,
-   "rights_note": "Format conversions of the source dataset; rights inherit from it. The collection licence covers the index, codebooks and harmonisation, not this dataset. Cite the paper, and check with its authors if your use needs an explicit reuse right.",
+   "rights_status": "cc-by-4.0",
+   "license_url": "https://creativecommons.org/licenses/by/4.0/",
+   "rights_note": "CC BY 4.0. Free to use, adapt and redistribute, including commercially and including as training data. The only condition is credit: cite the paper named in this entry.",
    "audit_status": "domain_reviewed"
   },
   {
@@ -855,9 +856,9 @@
    "same_literature_as": null,
    "excluded_to_avoid_double_counting": false,
    "shares_source_file_with": null,
-   "rights_status": "unspecified",
-   "license_url": null,
-   "rights_note": "Format conversions of the source dataset; rights inherit from it. The collection licence covers the index, codebooks and harmonisation, not this dataset. Cite the paper, and check with its authors if your use needs an explicit reuse right.",
+   "rights_status": "cc-by-4.0",
+   "license_url": "https://creativecommons.org/licenses/by/4.0/",
+   "rights_note": "CC BY 4.0. Free to use, adapt and redistribute, including commercially and including as training data. The only condition is credit: cite the paper named in this entry.",
    "audit_status": "domain_reviewed"
   },
   {
@@ -907,9 +908,9 @@
    "same_literature_as": null,
    "excluded_to_avoid_double_counting": false,
    "shares_source_file_with": null,
-   "rights_status": "unspecified",
-   "license_url": null,
-   "rights_note": "Format conversions of the source dataset; rights inherit from it. The collection licence covers the index, codebooks and harmonisation, not this dataset. Cite the paper, and check with its authors if your use needs an explicit reuse right.",
+   "rights_status": "cc-by-4.0",
+   "license_url": "https://creativecommons.org/licenses/by/4.0/",
+   "rights_note": "CC BY 4.0. Free to use, adapt and redistribute, including commercially and including as training data. The only condition is credit: cite the paper named in this entry.",
    "audit_status": "arithmetic_pairing_only"
   },
   {
@@ -957,9 +958,9 @@
    "same_literature_as": null,
    "excluded_to_avoid_double_counting": false,
    "shares_source_file_with": null,
-   "rights_status": "unspecified",
-   "license_url": null,
-   "rights_note": "Format conversions of the source dataset; rights inherit from it. The collection licence covers the index, codebooks and harmonisation, not this dataset. Cite the paper, and check with its authors if your use needs an explicit reuse right.",
+   "rights_status": "cc-by-4.0",
+   "license_url": "https://creativecommons.org/licenses/by/4.0/",
+   "rights_note": "CC BY 4.0. Free to use, adapt and redistribute, including commercially and including as training data. The only condition is credit: cite the paper named in this entry.",
    "audit_status": "arithmetic_pairing_only"
   },
   {
@@ -1008,9 +1009,9 @@
    "same_literature_as": null,
    "excluded_to_avoid_double_counting": false,
    "shares_source_file_with": null,
-   "rights_status": "unspecified",
-   "license_url": null,
-   "rights_note": "Format conversions of the source dataset; rights inherit from it. The collection licence covers the index, codebooks and harmonisation, not this dataset. Cite the paper, and check with its authors if your use needs an explicit reuse right.",
+   "rights_status": "cc-by-4.0",
+   "license_url": "https://creativecommons.org/licenses/by/4.0/",
+   "rights_note": "CC BY 4.0. Free to use, adapt and redistribute, including commercially and including as training data. The only condition is credit: cite the paper named in this entry.",
    "audit_status": "domain_reviewed"
   },
   {
@@ -1060,9 +1061,9 @@
    "same_literature_as": null,
    "excluded_to_avoid_double_counting": false,
    "shares_source_file_with": null,
-   "rights_status": "unspecified",
-   "license_url": null,
-   "rights_note": "Format conversions of the source dataset; rights inherit from it. The collection licence covers the index, codebooks and harmonisation, not this dataset. Cite the paper, and check with its authors if your use needs an explicit reuse right.",
+   "rights_status": "cc-by-4.0",
+   "license_url": "https://creativecommons.org/licenses/by/4.0/",
+   "rights_note": "CC BY 4.0. Free to use, adapt and redistribute, including commercially and including as training data. The only condition is credit: cite the paper named in this entry.",
    "audit_status": "excluded_no_precision"
   },
   {
@@ -1112,9 +1113,9 @@
    "same_literature_as": null,
    "excluded_to_avoid_double_counting": false,
    "shares_source_file_with": null,
-   "rights_status": "unspecified",
-   "license_url": null,
-   "rights_note": "Format conversions of the source dataset; rights inherit from it. The collection licence covers the index, codebooks and harmonisation, not this dataset. Cite the paper, and check with its authors if your use needs an explicit reuse right.",
+   "rights_status": "cc-by-4.0",
+   "license_url": "https://creativecommons.org/licenses/by/4.0/",
+   "rights_note": "CC BY 4.0. Free to use, adapt and redistribute, including commercially and including as training data. The only condition is credit: cite the paper named in this entry.",
    "audit_status": "domain_reviewed"
   },
   {
@@ -1165,9 +1166,9 @@
    "same_literature_as": null,
    "excluded_to_avoid_double_counting": false,
    "shares_source_file_with": null,
-   "rights_status": "unspecified",
-   "license_url": null,
-   "rights_note": "Format conversions of the source dataset; rights inherit from it. The collection licence covers the index, codebooks and harmonisation, not this dataset. Cite the paper, and check with its authors if your use needs an explicit reuse right.",
+   "rights_status": "cc-by-4.0",
+   "license_url": "https://creativecommons.org/licenses/by/4.0/",
+   "rights_note": "CC BY 4.0. Free to use, adapt and redistribute, including commercially and including as training data. The only condition is credit: cite the paper named in this entry.",
    "audit_status": "domain_reviewed"
   },
   {
@@ -1216,9 +1217,9 @@
    "same_literature_as": null,
    "excluded_to_avoid_double_counting": false,
    "shares_source_file_with": null,
-   "rights_status": "unspecified",
-   "license_url": null,
-   "rights_note": "Format conversions of the source dataset; rights inherit from it. The collection licence covers the index, codebooks and harmonisation, not this dataset. Cite the paper, and check with its authors if your use needs an explicit reuse right.",
+   "rights_status": "cc-by-4.0",
+   "license_url": "https://creativecommons.org/licenses/by/4.0/",
+   "rights_note": "CC BY 4.0. Free to use, adapt and redistribute, including commercially and including as training data. The only condition is credit: cite the paper named in this entry.",
    "audit_status": "domain_reviewed"
   },
   {
@@ -1268,9 +1269,9 @@
    "same_literature_as": null,
    "excluded_to_avoid_double_counting": false,
    "shares_source_file_with": null,
-   "rights_status": "unspecified",
-   "license_url": null,
-   "rights_note": "Format conversions of the source dataset; rights inherit from it. The collection licence covers the index, codebooks and harmonisation, not this dataset. Cite the paper, and check with its authors if your use needs an explicit reuse right.",
+   "rights_status": "cc-by-4.0",
+   "license_url": "https://creativecommons.org/licenses/by/4.0/",
+   "rights_note": "CC BY 4.0. Free to use, adapt and redistribute, including commercially and including as training data. The only condition is credit: cite the paper named in this entry.",
    "audit_status": "arithmetic_pairing_only"
   },
   {
@@ -1320,9 +1321,9 @@
    "same_literature_as": null,
    "excluded_to_avoid_double_counting": false,
    "shares_source_file_with": null,
-   "rights_status": "unspecified",
-   "license_url": null,
-   "rights_note": "Format conversions of the source dataset; rights inherit from it. The collection licence covers the index, codebooks and harmonisation, not this dataset. Cite the paper, and check with its authors if your use needs an explicit reuse right.",
+   "rights_status": "cc-by-4.0",
+   "license_url": "https://creativecommons.org/licenses/by/4.0/",
+   "rights_note": "CC BY 4.0. Free to use, adapt and redistribute, including commercially and including as training data. The only condition is credit: cite the paper named in this entry.",
    "audit_status": "domain_reviewed"
   },
   {
@@ -1374,9 +1375,9 @@
    "excluded_to_avoid_double_counting": true,
    "overlap_kind": "identical row for row",
    "shares_source_file_with": null,
-   "rights_status": "unspecified",
-   "license_url": null,
-   "rights_note": "Format conversions of the source dataset; rights inherit from it. The collection licence covers the index, codebooks and harmonisation, not this dataset. Cite the paper, and check with its authors if your use needs an explicit reuse right.",
+   "rights_status": "cc-by-4.0",
+   "license_url": "https://creativecommons.org/licenses/by/4.0/",
+   "rights_note": "CC BY 4.0. Free to use, adapt and redistribute, including commercially and including as training data. The only condition is credit: cite the paper named in this entry.",
    "audit_status": "duplicate_excluded",
    "note": "Two papers on one dataset. 'alphas' is kept because it fills 10 harmonised moderators against hedge's 7, and hedge's set is a strict subset, so nothing is lost. CITE the published version for these estimates: Hedge Fund Performance: A Meta-Analysis, Journal of Economic Surveys 2024 (DOI on the hedge dataset entry). The hedge file remains published in full as its own dataset."
   },
@@ -1427,9 +1428,9 @@
    "same_literature_as": null,
    "excluded_to_avoid_double_counting": false,
    "shares_source_file_with": null,
-   "rights_status": "unspecified",
-   "license_url": null,
-   "rights_note": "Format conversions of the source dataset; rights inherit from it. The collection licence covers the index, codebooks and harmonisation, not this dataset. Cite the paper, and check with its authors if your use needs an explicit reuse right.",
+   "rights_status": "cc-by-4.0",
+   "license_url": "https://creativecommons.org/licenses/by/4.0/",
+   "rights_note": "CC BY 4.0. Free to use, adapt and redistribute, including commercially and including as training data. The only condition is credit: cite the paper named in this entry.",
    "audit_status": "domain_reviewed"
   },
   {
@@ -1482,9 +1483,9 @@
    "same_literature_as": null,
    "excluded_to_avoid_double_counting": false,
    "shares_source_file_with": null,
-   "rights_status": "unspecified",
-   "license_url": null,
-   "rights_note": "Format conversions of the source dataset; rights inherit from it. The collection licence covers the index, codebooks and harmonisation, not this dataset. Cite the paper, and check with its authors if your use needs an explicit reuse right.",
+   "rights_status": "cc-by-4.0",
+   "license_url": "https://creativecommons.org/licenses/by/4.0/",
+   "rights_note": "CC BY 4.0. Free to use, adapt and redistribute, including commercially and including as training data. The only condition is credit: cite the paper named in this entry.",
    "audit_status": "domain_reviewed"
   },
   {
@@ -1536,9 +1537,9 @@
    "same_literature_as": null,
    "excluded_to_avoid_double_counting": false,
    "shares_source_file_with": null,
-   "rights_status": "unspecified",
-   "license_url": null,
-   "rights_note": "Format conversions of the source dataset; rights inherit from it. The collection licence covers the index, codebooks and harmonisation, not this dataset. Cite the paper, and check with its authors if your use needs an explicit reuse right.",
+   "rights_status": "cc-by-4.0",
+   "license_url": "https://creativecommons.org/licenses/by/4.0/",
+   "rights_note": "CC BY 4.0. Free to use, adapt and redistribute, including commercially and including as training data. The only condition is credit: cite the paper named in this entry.",
    "audit_status": "arithmetic_pairing_only"
   },
   {
@@ -1587,9 +1588,9 @@
    "same_literature_as": null,
    "excluded_to_avoid_double_counting": false,
    "shares_source_file_with": "price_puzzle",
-   "rights_status": "unspecified",
-   "license_url": null,
-   "rights_note": "Format conversions of the source dataset; rights inherit from it. The collection licence covers the index, codebooks and harmonisation, not this dataset. Cite the paper, and check with its authors if your use needs an explicit reuse right.",
+   "rights_status": "cc-by-4.0",
+   "license_url": "https://creativecommons.org/licenses/by/4.0/",
+   "rights_note": "CC BY 4.0. Free to use, adapt and redistribute, including commercially and including as training data. The only condition is credit: cite the paper named in this entry.",
    "audit_status": "excluded_no_precision",
    "note": "Shares a source FILE with 'price_puzzle' but uses different columns or rows. A distinct literature, NOT a duplicate, and pooled on its own."
   },
@@ -1644,9 +1645,9 @@
    "same_literature_as": null,
    "excluded_to_avoid_double_counting": false,
    "shares_source_file_with": null,
-   "rights_status": "unspecified",
-   "license_url": null,
-   "rights_note": "Format conversions of the source dataset; rights inherit from it. The collection licence covers the index, codebooks and harmonisation, not this dataset. Cite the paper, and check with its authors if your use needs an explicit reuse right.",
+   "rights_status": "cc-by-4.0",
+   "license_url": "https://creativecommons.org/licenses/by/4.0/",
+   "rights_note": "CC BY 4.0. Free to use, adapt and redistribute, including commercially and including as training data. The only condition is credit: cite the paper named in this entry.",
    "audit_status": "domain_reviewed"
   },
   {
@@ -1697,9 +1698,9 @@
    "same_literature_as": null,
    "excluded_to_avoid_double_counting": false,
    "shares_source_file_with": null,
-   "rights_status": "unspecified",
-   "license_url": null,
-   "rights_note": "Format conversions of the source dataset; rights inherit from it. The collection licence covers the index, codebooks and harmonisation, not this dataset. Cite the paper, and check with its authors if your use needs an explicit reuse right.",
+   "rights_status": "cc-by-4.0",
+   "license_url": "https://creativecommons.org/licenses/by/4.0/",
+   "rights_note": "CC BY 4.0. Free to use, adapt and redistribute, including commercially and including as training data. The only condition is credit: cite the paper named in this entry.",
    "audit_status": "arithmetic_pairing_only"
   },
   {
@@ -1749,9 +1750,9 @@
    "same_literature_as": null,
    "excluded_to_avoid_double_counting": false,
    "shares_source_file_with": "lags",
-   "rights_status": "unspecified",
-   "license_url": null,
-   "rights_note": "Format conversions of the source dataset; rights inherit from it. The collection licence covers the index, codebooks and harmonisation, not this dataset. Cite the paper, and check with its authors if your use needs an explicit reuse right.",
+   "rights_status": "cc-by-4.0",
+   "license_url": "https://creativecommons.org/licenses/by/4.0/",
+   "rights_note": "CC BY 4.0. Free to use, adapt and redistribute, including commercially and including as training data. The only condition is credit: cite the paper named in this entry.",
    "audit_status": "domain_reviewed",
    "note": "shares its source file with the lags project, but uses different columns, so it is not a duplicate. One row per (estimate, horizon): rows within an impulse response are not independent."
   },
@@ -1801,9 +1802,9 @@
    "same_literature_as": null,
    "excluded_to_avoid_double_counting": false,
    "shares_source_file_with": null,
-   "rights_status": "unspecified",
-   "license_url": null,
-   "rights_note": "Format conversions of the source dataset; rights inherit from it. The collection licence covers the index, codebooks and harmonisation, not this dataset. Cite the paper, and check with its authors if your use needs an explicit reuse right.",
+   "rights_status": "cc-by-4.0",
+   "license_url": "https://creativecommons.org/licenses/by/4.0/",
+   "rights_note": "CC BY 4.0. Free to use, adapt and redistribute, including commercially and including as training data. The only condition is credit: cite the paper named in this entry.",
    "audit_status": "domain_reviewed"
   },
   {
@@ -1853,9 +1854,9 @@
    "same_literature_as": null,
    "excluded_to_avoid_double_counting": false,
    "shares_source_file_with": null,
-   "rights_status": "unspecified",
-   "license_url": null,
-   "rights_note": "Format conversions of the source dataset; rights inherit from it. The collection licence covers the index, codebooks and harmonisation, not this dataset. Cite the paper, and check with its authors if your use needs an explicit reuse right.",
+   "rights_status": "cc-by-4.0",
+   "license_url": "https://creativecommons.org/licenses/by/4.0/",
+   "rights_note": "CC BY 4.0. Free to use, adapt and redistribute, including commercially and including as training data. The only condition is credit: cite the paper named in this entry.",
    "audit_status": "arithmetic_pairing_only"
   },
   {
@@ -1905,9 +1906,9 @@
    "same_literature_as": null,
    "excluded_to_avoid_double_counting": false,
    "shares_source_file_with": null,
-   "rights_status": "unspecified",
-   "license_url": null,
-   "rights_note": "Format conversions of the source dataset; rights inherit from it. The collection licence covers the index, codebooks and harmonisation, not this dataset. Cite the paper, and check with its authors if your use needs an explicit reuse right.",
+   "rights_status": "cc-by-4.0",
+   "license_url": "https://creativecommons.org/licenses/by/4.0/",
+   "rights_note": "CC BY 4.0. Free to use, adapt and redistribute, including commercially and including as training data. The only condition is credit: cite the paper named in this entry.",
    "audit_status": "arithmetic_pairing_only"
   },
   {
@@ -1957,9 +1958,9 @@
    "same_literature_as": null,
    "excluded_to_avoid_double_counting": false,
    "shares_source_file_with": null,
-   "rights_status": "unspecified",
-   "license_url": null,
-   "rights_note": "Format conversions of the source dataset; rights inherit from it. The collection licence covers the index, codebooks and harmonisation, not this dataset. Cite the paper, and check with its authors if your use needs an explicit reuse right.",
+   "rights_status": "cc-by-4.0",
+   "license_url": "https://creativecommons.org/licenses/by/4.0/",
+   "rights_note": "CC BY 4.0. Free to use, adapt and redistribute, including commercially and including as training data. The only condition is credit: cite the paper named in this entry.",
    "audit_status": "arithmetic_pairing_only"
   },
   {
@@ -2010,9 +2011,9 @@
    "same_literature_as": null,
    "excluded_to_avoid_double_counting": false,
    "shares_source_file_with": null,
-   "rights_status": "unspecified",
-   "license_url": null,
-   "rights_note": "Format conversions of the source dataset; rights inherit from it. The collection licence covers the index, codebooks and harmonisation, not this dataset. Cite the paper, and check with its authors if your use needs an explicit reuse right.",
+   "rights_status": "cc-by-4.0",
+   "license_url": "https://creativecommons.org/licenses/by/4.0/",
+   "rights_note": "CC BY 4.0. Free to use, adapt and redistribute, including commercially and including as training data. The only condition is credit: cite the paper named in this entry.",
    "audit_status": "domain_reviewed"
   },
   {
@@ -2063,9 +2064,9 @@
    "same_literature_as": null,
    "excluded_to_avoid_double_counting": false,
    "shares_source_file_with": null,
-   "rights_status": "unspecified",
-   "license_url": null,
-   "rights_note": "Format conversions of the source dataset; rights inherit from it. The collection licence covers the index, codebooks and harmonisation, not this dataset. Cite the paper, and check with its authors if your use needs an explicit reuse right.",
+   "rights_status": "cc-by-4.0",
+   "license_url": "https://creativecommons.org/licenses/by/4.0/",
+   "rights_note": "CC BY 4.0. Free to use, adapt and redistribute, including commercially and including as training data. The only condition is credit: cite the paper named in this entry.",
    "audit_status": "arithmetic_pairing_only"
   },
   {
@@ -2115,9 +2116,9 @@
    "same_literature_as": null,
    "excluded_to_avoid_double_counting": false,
    "shares_source_file_with": null,
-   "rights_status": "unspecified",
-   "license_url": null,
-   "rights_note": "Format conversions of the source dataset; rights inherit from it. The collection licence covers the index, codebooks and harmonisation, not this dataset. Cite the paper, and check with its authors if your use needs an explicit reuse right.",
+   "rights_status": "cc-by-4.0",
+   "license_url": "https://creativecommons.org/licenses/by/4.0/",
+   "rights_note": "CC BY 4.0. Free to use, adapt and redistribute, including commercially and including as training data. The only condition is credit: cite the paper named in this entry.",
    "audit_status": "arithmetic_pairing_only"
   },
   {
@@ -2168,9 +2169,9 @@
    "same_literature_as": null,
    "excluded_to_avoid_double_counting": false,
    "shares_source_file_with": null,
-   "rights_status": "unspecified",
-   "license_url": null,
-   "rights_note": "Format conversions of the source dataset; rights inherit from it. The collection licence covers the index, codebooks and harmonisation, not this dataset. Cite the paper, and check with its authors if your use needs an explicit reuse right.",
+   "rights_status": "cc-by-4.0",
+   "license_url": "https://creativecommons.org/licenses/by/4.0/",
+   "rights_note": "CC BY 4.0. Free to use, adapt and redistribute, including commercially and including as training data. The only condition is credit: cite the paper named in this entry.",
    "audit_status": "arithmetic_pairing_only"
   },
   {
@@ -2219,9 +2220,9 @@
    "same_literature_as": null,
    "excluded_to_avoid_double_counting": false,
    "shares_source_file_with": "bma",
-   "rights_status": "unspecified",
-   "license_url": null,
-   "rights_note": "Format conversions of the source dataset; rights inherit from it. The collection licence covers the index, codebooks and harmonisation, not this dataset. Cite the paper, and check with its authors if your use needs an explicit reuse right.",
+   "rights_status": "cc-by-4.0",
+   "license_url": "https://creativecommons.org/licenses/by/4.0/",
+   "rights_note": "CC BY 4.0. Free to use, adapt and redistribute, including commercially and including as training data. The only condition is credit: cite the paper named in this entry.",
    "audit_status": "domain_reviewed",
    "note": "VERTICAL spillovers (forward and backward). CAUTION: the filtered count is 2,421 while the paper's abstract reports 3,626 estimates, so the published file appears to be a subset of the sample behind the paper. Reconcile before relying on the count."
   },
@@ -2272,9 +2273,9 @@
    "same_literature_as": null,
    "excluded_to_avoid_double_counting": false,
    "shares_source_file_with": null,
-   "rights_status": "unspecified",
-   "license_url": null,
-   "rights_note": "Format conversions of the source dataset; rights inherit from it. The collection licence covers the index, codebooks and harmonisation, not this dataset. Cite the paper, and check with its authors if your use needs an explicit reuse right.",
+   "rights_status": "cc-by-4.0",
+   "license_url": "https://creativecommons.org/licenses/by/4.0/",
+   "rights_note": "CC BY 4.0. Free to use, adapt and redistribute, including commercially and including as training data. The only condition is credit: cite the paper named in this entry.",
    "audit_status": "code_traced"
   },
   {
@@ -2326,9 +2327,9 @@
    "excluded_to_avoid_double_counting": true,
    "overlap_kind": "identical row for row",
    "shares_source_file_with": null,
-   "rights_status": "unspecified",
-   "license_url": null,
-   "rights_note": "Format conversions of the source dataset; rights inherit from it. The collection licence covers the index, codebooks and harmonisation, not this dataset. Cite the paper, and check with its authors if your use needs an explicit reuse right.",
+   "rights_status": "cc-by-4.0",
+   "license_url": "https://creativecommons.org/licenses/by/4.0/",
+   "rights_note": "CC BY 4.0. Free to use, adapt and redistribute, including commercially and including as training data. The only condition is credit: cite the paper named in this entry.",
    "audit_status": "duplicate_excluded",
    "note": "Different PAPER (why intertemporal substitution varies across countries) but the same underlying estimates as 'eis', so including both would double count. The substitution file carries 65 columns against eis's 52, including country-level moderators, and remains published in full as its own dataset. Both projects fill the same 18 harmonised moderators, so the choice of which to keep costs nothing; eis is kept as the already-canonical entry."
   },
@@ -2381,9 +2382,9 @@
    "excluded_to_avoid_double_counting": true,
    "overlap_kind": "same literature, partially overlapping collections",
    "shares_source_file_with": null,
-   "rights_status": "unspecified",
-   "license_url": null,
-   "rights_note": "Format conversions of the source dataset; rights inherit from it. The collection licence covers the index, codebooks and harmonisation, not this dataset. Cite the paper, and check with its authors if your use needs an explicit reuse right.",
+   "rights_status": "cc-by-4.0",
+   "license_url": "https://creativecommons.org/licenses/by/4.0/",
+   "rights_note": "CC BY 4.0. Free to use, adapt and redistribute, including commercially and including as training data. The only condition is credit: cite the paper named in this entry.",
    "audit_status": "duplicate_excluded"
   },
   {
@@ -2433,9 +2434,9 @@
    "same_literature_as": null,
    "excluded_to_avoid_double_counting": false,
    "shares_source_file_with": null,
-   "rights_status": "unspecified",
-   "license_url": null,
-   "rights_note": "Format conversions of the source dataset; rights inherit from it. The collection licence covers the index, codebooks and harmonisation, not this dataset. Cite the paper, and check with its authors if your use needs an explicit reuse right.",
+   "rights_status": "cc-by-4.0",
+   "license_url": "https://creativecommons.org/licenses/by/4.0/",
+   "rights_note": "CC BY 4.0. Free to use, adapt and redistribute, including commercially and including as training data. The only condition is credit: cite the paper named in this entry.",
    "audit_status": "arithmetic_pairing_only"
   }
  ]

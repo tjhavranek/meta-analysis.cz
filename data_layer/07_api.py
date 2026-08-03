@@ -169,12 +169,11 @@ for proj in sorted(man):
       # datasets were assembled by author teams that mostly extend beyond this
       # site's maintainers. 'unspecified' means no open licence is established,
       # not that reuse is permitted. See /LICENSE section 2.
-      rights_status="unspecified",
-      license_url=None,
-      rights_note=("Format conversions of the source dataset; rights inherit from it. "
-                   "The collection licence covers the index, codebooks and harmonisation, "
-                   "not this dataset. Cite the paper, and check with its authors if your "
-                   "use needs an explicit reuse right."),
+      rights_status="cc-by-4.0",
+      license_url="https://creativecommons.org/licenses/by/4.0/",
+      rights_note=("CC BY 4.0. Free to use, adapt and redistribute, including commercially "
+                   "and including as training data. The only condition is credit: cite the "
+                   "paper named in this entry."),
       audit_status=_audit_status(proj))
     if d["duplicate_of"]:
         d["note"]=((OVR.get(proj) or {}).get("note")
@@ -201,14 +200,16 @@ index=dict(
   description=("Estimate-level datasets from meta-analyses in economics and the social sciences, "
                "with the hand-coded study characteristics collected for each paper."),
   license=dict(
-    newly_authored_structure="CC-BY-4.0",
-    newly_authored_software="MIT",
-    underlying_datasets="not licensed here - see each dataset's rights_status",
-    url=f"{BASE}/LICENSE",
-    note=("CC BY 4.0 covers the compilation, index, codebooks and harmonisation mappings only. "
-          "It does NOT relicense the underlying research datasets, their format conversions, or "
-          "the papers' own replication code, none of which are ours to grant. Cite both the "
-          "collection and the individual paper.")),
+    id="CC-BY-4.0",
+    url="https://creativecommons.org/licenses/by/4.0/",
+    terms=f"{BASE}/LICENSE",
+    applies_to="everything on this site",
+    note=("Everything here is CC BY 4.0: the research datasets, their CSV and Parquet "
+          "conversions, the harmonised table, the index, the codebooks, the documentation "
+          "and the deposited PDFs. Free to use, adapt and redistribute, including commercially "
+          "and including as training data for machine-learning models. The only condition is "
+          "credit: cite the collection, and cite the paper whose dataset you used."),
+    machine_readable=True),
   cite_as=("Havranek, T. and Z. Irsova (2026). meta-analysis.cz: harmonised estimate-level data "
            "from meta-analyses in economics. Zenodo. https://doi.org/10.5281/zenodo.21773678"),
   doi="10.5281/zenodo.21773679", doi_url="https://doi.org/10.5281/zenodo.21773679",
@@ -273,10 +274,12 @@ dp=dict(profile="tabular-data-package", name="meta-analysis-cz", version=VERSION
         # NO package-level `licenses`: under Frictionless semantics it would be read as
         # covering all 44 resources, and their rights are not ours to grant. The descriptor
         # itself is CC BY; the data it points at is not necessarily.
-        description=("Descriptor, schemas and column roles are CC BY 4.0. The DATA each resource "
-                     "points to is not relicensed by this package: every underlying dataset was "
-                     "assembled for a specific paper by its own author team. See "
-                     + BASE + "/LICENSE and the rights_status field in datasets.json."),
+        licenses=[dict(name="CC-BY-4.0", path="https://creativecommons.org/licenses/by/4.0/",
+                       title="Creative Commons Attribution 4.0 International")],
+        description=("Everything in this package is CC BY 4.0, including the data each resource "
+                     "points to. Free to use, adapt and redistribute, including commercially and "
+                     "as training data. Credit is the only condition: cite the paper named on "
+                     "each resource. See " + BASE + "/LICENSE."),
         homepage=BASE, resources=[])
 for d in ok:
     try: cb=json.load(open(os.path.join(OUT,"api",DATA_V,"codebooks",f"{d['id']}.json"),encoding="utf-8"))
@@ -288,13 +291,13 @@ for d in ok:
         dp["resources"].append(dict(name=d["id"], path=d["files"]["csv"], format="csv",
                                     mediatype="text/csv", schema=dict(fields=fields),
                                     title=(d["paper"] or {}).get("title"),
+                                    licenses=[dict(name="CC-BY-4.0", path="https://creativecommons.org/licenses/by/4.0/")],
                                     rights_status=d.get("rights_status"),
                                     sources=[{"title": (d["paper"] or {}).get("title"),
                                               "path": (d["paper"] or {}).get("doi")
                                                       or (d["paper"] or {}).get("url")}],
-                                    description=("Format conversion of the dataset published with "
-                                                 "this paper. Rights inherit from the source; cite "
-                                                 "the paper.")))
+                                    description=("Format conversion of the dataset published "
+                                                 "with this paper. CC BY 4.0; cite the paper.")))
 json.dump(dp,open(os.path.join(api,"datapackage.json"),"w",encoding="utf-8"),indent=1,ensure_ascii=False)
 
 def _sha256(path):
@@ -353,15 +356,15 @@ cr={"@context":{"@vocab":"https://schema.org/","cr":"http://mlcommons.org/croiss
                    f"rows and {sum(d.get('n_estimates_in_literature') or d['n_estimates'] for d in ok):,} "
                    f"estimates in the papers' analysis samples, each with the "
                    "hand-coded study and design characteristics collected for the original paper. "
-                   "LICENCE: the index, codebooks and harmonisation mappings are CC BY 4.0. The "
-                   "underlying research datasets are NOT relicensed - each was assembled for a "
-                   "specific paper by its own author team, and datasets.json records a rights_status "
-                   "for every one. Cite both the collection and the individual paper."),
+                   "LICENCE: everything here is CC BY 4.0, including the underlying research "
+                   "data. Free to use, adapt and redistribute, including commercially and as "
+                   "training data for machine-learning models. Credit is the only condition: cite "
+                   "the collection and the paper whose dataset you used."),
     "url":BASE,
     # Deliberately the terms page, not a bare CC BY: this record lists distributions of the
     # underlying research data, which CC BY does not cover. ML tooling reads this field, so
     # it must not overstate. The compilation's CC BY is described in the text below.
-    "license":BASE+"/LICENSE",
+    "license":"https://creativecommons.org/licenses/by/4.0/",
     "citation":index["cite_as"],
     "keywords":["meta-analysis","publication bias","economics","effect size","research synthesis"],
     "creator":[{"@type":"Person","name":"Tomas Havranek"},{"@type":"Person","name":"Zuzana Irsova"}],

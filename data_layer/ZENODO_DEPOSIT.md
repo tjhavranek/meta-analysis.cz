@@ -77,5 +77,5 @@ in `datasets.json` as `audit_status`, and on the `/datasets/` page.
 
 A DOI is permanent and citable. Publishing a beta under one is normal and honest — the
 version number and the audit status say what it is — but it is worth deciding deliberately
-rather than by default. The alternative is to wait until the remaining 20 literatures have
+rather than by default. The alternative is to wait until the remaining 19 literatures have
 been reviewed and mint at `1.0.0`.
