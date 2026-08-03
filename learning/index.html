@@ -12,7 +12,7 @@ Released for free under a Creative Commons Attribution 2.5 License
 <title>Publication Bias and P-Hacking in the Effect of COVID-19 on Learning: A Meta-Analysis</title>
 <meta name="keywords" content="COVID-19, learning loss, pandemic, meta-analysis, publication bias, p-hacking, RoBMA, MAIVE, education" />
 <meta name="description" content="A meta-analysis of publication bias and p-hacking in the effect of COVID-19 on learning" />
-<link href="default.css" rel="stylesheet" type="text/css" />
+<link href="/style.css" rel="stylesheet" type="text/css" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <!-- seo-meta:start -->
 <link rel="canonical" href="https://meta-analysis.cz/learning/" />
@@ -161,8 +161,9 @@ Released for free under a Creative Commons Attribution 2.5 License
 <div id="wrapper">
 <!-- start header -->
 <div id="logo">
-	<h1><a href="learning.pdf">Effect of COVID-19 on Learning</a></h1>
-	<h2> &raquo;&nbsp;&nbsp;&nbsp; a meta-analysis</h2>
+	<a class="masthead-home" href="/">meta-analysis.cz</a>
+	<h1><a class="title-link" href="learning.pdf">Effect of COVID-19 on Learning</a></h1>
+	<h2> <span class="mk">&raquo;</span>&nbsp;&nbsp;&nbsp; a meta-analysis</h2>
 </div>
 <div id="header">
 	<div id="menu">
@@ -182,15 +183,14 @@ Released for free under a Creative Commons Attribution 2.5 License
 	<!-- start content -->
 	<div id="content">
 		<div class="post">
-			<h1 class="title">Abstract</h1>
+			<h2 class="title">Abstract</h2>
 			<div class="entry">
 <p>
 We revisit a central estimate in the economics of education: the human-capital loss associated with COVID-19 school closures. Estimates of pandemic learning loss may be affected by publication bias, p-hacking, and the mechanical correlation between standardized effect sizes and their standard errors. We conduct a comprehensive multi-method assessment of bias by applying a wide range of correction techniques &mdash; including PET-PEESE, three-parameter selection models (3PSM), Robust Bayesian Meta-Analysis (RoBMA), Meta-Analysis Instrumental Variable Estimation (MAIVE), Right-Truncated Meta-Analysis (RTMA), and multi-bias sensitivity analysis. Our preferred specifications, RoBMA and MAIVE, rely on different assumptions yet converge on an effect size of approximately &minus;0.12 SD, equivalent to a learning loss of about 30% of a school year. Although some methods reveal signs of publication bias and selective reporting, these findings do not explain away the central finding: the COVID-19 learning deficit is economically meaningful and statistically robust.
 </p>
 
 <p></p>
-<b>Fig: A learning deficit that survives correction for publication bias</b> <br> <br>
-   <img src="funnelplot.png" alt="Funnel plot of 291 COVID-19 learning-loss estimates: effect size (Cohen's d) on the horizontal axis, estimated standard error on the vertical axis; most points are negative, a dashed line marks zero and a dotted line marks the mean near -0.13." width="560"/>
+<figure><img src="funnelplot.png" alt="Funnel plot of 291 COVID-19 learning-loss estimates: effect size (Cohen's d) on the horizontal axis, estimated standard error on the vertical axis; most points are negative, a dashed line marks zero and a dotted line marks the mean near -0.13." width="560"/><figcaption>Fig: A learning deficit that survives correction for publication bias</figcaption></figure>
 <br>
 <br>
 <i>Funnel plot of 291 effect-size estimates of COVID-19 learning loss. Horizontal axis: effect size (Cohen's d); vertical axis: estimated standard error. The dashed line marks zero (no effect); the dotted line marks the unweighted mean of the estimates (about &minus;0.13 SD). Most estimates are negative, indicating a learning deficit. Across a battery of bias-correction methods (PET-PEESE, 3PSM, RoBMA, MAIVE, RTMA, multi-bias), the preferred RoBMA and MAIVE specifications converge on about &minus;0.12 SD &mdash; roughly 30% of a school year &mdash; and the deficit survives corrections for publication bias and selective reporting.</i>
@@ -204,7 +204,36 @@ We revisit a central estimate in the economics of education: the human-capital l
 			<div class="meta">
 				<p class="links"><a href="/" class="more">More meta from Prague</a> </p>
 			</div>
-		</div>
+		
+<!-- paper-extras:start -->
+<div class="extras">
+<div class="extra" id="headline-result">
+<h3>Headline result</h3>
+<p>Learning loss from COVID-19 school closures: the meta-analytic estimate is about -0.12 SD, roughly 30% of a school year (Luskova et al. 2026).</p>
+</div>
+<div class="extra" id="cite">
+<h3>How to cite</h3>
+<p class="ref">Martina Luskova, Nino Buliskeria, Ali Elminejad, Tomas Havranek, Zuzana Irsova, Stepan Jurajda, Marek Kapicka (2026), “Publication Bias and P-Hacking in the Effect of COVID-19 on Learning.” Charles University, Prague. Available at meta-analysis.cz/learning.</p>
+<details><summary>BibTeX</summary>
+<pre>@misc{luskova2026learning,
+  author  = {Martina Luskova and Nino Buliskeria and Ali Elminejad and Tomas Havranek and Zuzana Irsova and Stepan Jurajda and Marek Kapicka},
+  title   = {Publication Bias and P-Hacking in the Effect of COVID-19 on Learning},
+  year    = {2026},
+}</pre>
+</details>
+</div>
+<div class="extra" id="related">
+<h3>Other papers in this field</h3>
+<ul>
+<li><a href="/class/">Effect of class size on student achievement</a></li>
+<li><a href="/education/">Tuition-enrollment elasticity (effect of tuition on university enrollment)</a></li>
+<li><a href="/frisch/">Frisch elasticity of labor supply (intertemporal substitution in hours worked)</a></li>
+<li><a href="/migrant/">Elasticity of substitution between native and immigrant workers</a></li>
+</ul>
+</div>
+</div>
+<!-- paper-extras:end -->
+</div>
 	</div>
 	<!-- end content -->
 	<!-- start sidebar -->
@@ -214,7 +243,7 @@ We revisit a central estimate in the economics of education: the human-capital l
     <h2>Search</h2>
     <form method="get" action="https://www.google.com/search">
       <fieldset>
-        <input type="text" id="s" name="q" value="" />
+        <input type="text" id="s" name="q" value="" aria-label="Search meta-analysis.cz" />
         <input type="hidden" name="as_sitesearch" value="meta-analysis.cz" />
         <input type="submit" id="x" value="Search" />
       </fieldset>

@@ -13,7 +13,7 @@ Released for free under a Creative Commons Attribution 2.5 License
 <title>Do decisions about outliers and influential effects matter? Evidence from 358 behavioral science meta-analyses</title>
 <meta name="keywords" content="outliers, influence diagnostics, DFBETAS, winsorizing, studentized residuals, meta-analysis, publication bias, robustness, pre-registration, behavioral science" />
 <meta name="description" content="A pre-registered analysis of four outlier and influence handling treatments across 358 behavioral science meta-analyses: little effect on the mean, but reversed statistical significance in 11.5% of cases." />
-<link href="default.css" rel="stylesheet" type="text/css" />
+<link href="/style.css" rel="stylesheet" type="text/css" />
 <!-- seo-meta:start -->
 <link rel="canonical" href="https://meta-analysis.cz/outliers/" />
 <meta name="citation_title" content="Do decisions about outliers and influential effects matter? Evidence from 358 behavioral science meta-analyses" />
@@ -132,8 +132,9 @@ Released for free under a Creative Commons Attribution 2.5 License
 <div id="wrapper">
 <!-- start header -->
 <div id="logo">
-	<h1><a href="outliers.pdf">Outlier and Influence Handling</a></h1>
-	<h2> &raquo;&nbsp;&nbsp;&nbsp; evidence from 358 meta-analyses</h2>
+	<a class="masthead-home" href="/">meta-analysis.cz</a>
+	<h1><a class="title-link" href="outliers.pdf">Outlier and Influence Handling</a></h1>
+	<h2> <span class="mk">&raquo;</span>&nbsp;&nbsp;&nbsp; evidence from 358 meta-analyses</h2>
 </div>
 <div id="header">
 	<div id="menu">
@@ -152,7 +153,7 @@ Released for free under a Creative Commons Attribution 2.5 License
 	<!-- start content -->
 	<div id="content">
 		<div class="post">
-			<h1 class="title">Abstract</h1>
+			<h2 class="title">Abstract</h2>
 			<div class="entry">
 <p>
 Meta-analysts routinely face estimates that look too large or extreme. Yet, how to handle them is left to the reviewer's judgment. The methods for detecting such estimates are well known. What is missing is an informed assessment of how much alternative handling choices might change a meta-analysis' conclusions. We fill this gap by analyzing the effects of four pre-registered handling treatments across 358 behavioral science meta-analyses with at least ten estimates. Each outlier handling treatment is estimated by two estimators (random effects and unrestricted weighted least squares), and compared to the 'do-nothing' baseline on three outcomes: the pooled effect, statistical significance, and whether the effect reaches the smallest effect size of interest (|d| ≥ 0.20). Alternative outlier handling treatments have little effect on the meta-analysis mean as the median absolute change in Cohen's d is at most 0.047 and often much less. Yet, at least one of these four treatments in combination with one of these estimators reverses the statistical significance of 11.5% of meta-analyses and the smallest-effect-of-interest assessment in 15.9%. Winsorizing has the least effect and DFBETAS the most.
@@ -160,7 +161,7 @@ Meta-analysts routinely face estimates that look too large or extreme. Yet, how 
 
 <p></p>
 
-<table style="border-collapse:collapse; width:100%; margin:6px 0 4px 0; font-size:12px;">
+<div class="table-scroll"><table style="border-collapse:collapse; width:100%; margin:6px 0 4px 0; font-size:12px;">
 <caption style="caption-side:top; text-align:left; padding-bottom:6px; font-style:italic;">
 How much each treatment moves the result, against doing nothing &mdash; pooled over the two
 estimators (Tables&nbsp;2 and 3 of the paper). The abstract&rsquo;s 0.047 is the largest
@@ -206,7 +207,7 @@ median shift under a single estimator, DFBETAS under random effects.
 <td style="padding:5px 6px; border-top:1px solid #444; text-align:right;"><b>10.3%</b></td>
 </tr>
 </tbody>
-</table>
+</table></div>
 <p style="font-size:11px; font-style:italic; line-height:1.45; margin:0 0 10px 0; border-bottom:1px solid #444; padding-bottom:8px;">
 The unit is a meta-analysis-by-estimator cell. The last row uses the 715 cells estimable under all five treatments; each treatment row uses all cells estimable under that treatment (715 or 716). Counting a
 meta-analysis as changed if either estimator changes, the rates in the last row rise
@@ -229,7 +230,36 @@ outputs) is archived on Zenodo.
 			<div class="meta">
 				<p class="links"><a href="/" class="more">More meta from Prague</a> </p>
 			</div>
-		</div>
+		
+<!-- paper-extras:start -->
+<div class="extras">
+<div class="extra" id="headline-result">
+<h3>Headline result</h3>
+<p>Sensitivity of meta-analysis results to outlier handling: the methodological finding is median shift at most 0.047 (Cohen&#x27;s d); significance flips in 11.5% of cases (across four pre-registered outlier treatments and two estimators), based on 358 behavioral science meta-analyses (Havranek et al. 2026).</p>
+</div>
+<div class="extra" id="cite">
+<h3>How to cite</h3>
+<p class="ref">Tomas Havranek, Zuzana Irsova, Martina Luskova, T. D. Stanley (2026), "Do decisions about outliers and influential effects matter? Evidence from 358 behavioral science meta-analyses." Charles University, Prague. Available at meta-analysis.cz/outliers.</p>
+<details><summary>BibTeX</summary>
+<pre>@misc{havranek2026outliers,
+  author  = {Tomas Havranek and Zuzana Irsova and Martina Luskova and T. D. Stanley},
+  title   = {Do decisions about outliers and influential effects matter? Evidence from 358 behavioral science meta-analyses},
+  year    = {2026},
+}</pre>
+</details>
+</div>
+<div class="extra" id="related">
+<h3>Other papers in this field</h3>
+<ul>
+<li><a href="/correlations/">Bias in meta-analyses of correlations</a></li>
+<li><a href="/guidelines/">How to run a modern meta-analysis</a></li>
+<li><a href="/pcc/">Bias in meta-analyses of partial correlations</a></li>
+<li><a href="/debate/">Whether multi-agent AI debate improves feedback on research papers</a></li>
+</ul>
+</div>
+</div>
+<!-- paper-extras:end -->
+</div>
 	</div>
 	<!-- end content -->
 	<!-- start sidebar -->
@@ -239,7 +269,7 @@ outputs) is archived on Zenodo.
     <h2>Search</h2>
     <form method="get" action="https://www.google.com/search">
       <fieldset>
-        <input type="text" id="s" name="q" value="" />
+        <input type="text" id="s" name="q" value="" aria-label="Search meta-analysis.cz" />
         <input type="hidden" name="as_sitesearch" value="meta-analysis.cz" />
         <input type="submit" id="x" value="Search" />
       </fieldset>

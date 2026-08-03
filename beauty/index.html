@@ -12,7 +12,7 @@ Released for free under a Creative Commons Attribution 2.5 License
 <title>Beauty and Professional Success: A Meta-Analysis</title>
 <meta name="keywords" content="Beauty premium, productivity, meta-analysis, model uncertainty, publication bias" />
 <meta name="description" content="A Meta-Analysis of the Beauty Premium" />
-<link href="default.css" rel="stylesheet" type="text/css" />
+<link href="/style.css" rel="stylesheet" type="text/css" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <!-- seo-meta:start -->
 <link rel="canonical" href="https://meta-analysis.cz/beauty/" />
@@ -140,8 +140,9 @@ Released for free under a Creative Commons Attribution 2.5 License
 <div id="wrapper">
 <!-- start header -->
 <div id="logo">
-	<h1><a href="beauty.pdf">Beauty and Professional Success</a></h1>
-	<h2> &raquo;&nbsp;&nbsp;&nbsp; a meta-analysis</h2>
+	<a class="masthead-home" href="/">meta-analysis.cz</a>
+	<h1><a class="title-link" href="beauty.pdf">Beauty and Professional Success</a></h1>
+	<h2> <span class="mk">&raquo;</span>&nbsp;&nbsp;&nbsp; a meta-analysis</h2>
 </div>
 <div id="header">
 	<div id="menu">
@@ -160,15 +161,14 @@ Released for free under a Creative Commons Attribution 2.5 License
 	<!-- start content -->
 	<div id="content">
 		<div class="post">
-			<h1 class="title">Abstract</h1>
+			<h2 class="title">Abstract</h2>
 			<div class="entry">
 <p>
 Common wisdom suggests that beauty helps in the labor market. We show that two factors combine to explain away most of the mean beauty premium reported in the literature. First, correcting for publication bias reduces the premium by at least a third. Second, controlling for cognitive ability renders the premium small (mean = 1.1%; 95% CrI = -0.8%, 3.0%) for all occupations except sex workers, where appearance is a direct input. The beauty premium is similar for earnings and productivity, a fact inconsistent with discrimination based on employer tastes for beauty. We find little evidence of attenuation bias that could offset publication and omitted-variable biases. To obtain these results we collect 1,159 estimates of the beauty premium in 67 studies and codify 35 aspects that reflect estimation context. We employ recently developed techniques to account for publication bias and model uncertainty.
 </p>
 
 <p></p>
-<b>Fig: Reported beauty premiums diverge </b> <br> <br>
-   <img src="trend.png" alt="Trend in reported beauty premiums" width="570"/>
+<figure><img src="trend.png" alt="Trend in reported beauty premiums" width="570"/><figcaption>Fig: Reported beauty premiums diverge </figcaption></figure>
 <br>
 <br>
 <br>
@@ -179,7 +179,36 @@ Common wisdom suggests that beauty helps in the labor market. We show that two f
 			<div class="meta">
 				<p class="links"><a href="/" class="more">More meta from Prague</a> </p>
 			</div>
-		</div>
+		
+<!-- paper-extras:start -->
+<div class="extras">
+<div class="extra" id="headline-result">
+<h3>Headline result</h3>
+<p>Beauty premium in earnings: the meta-analytic estimate is 1.1% (95% CrI -0.8% to 3.0%; controlling for cognitive ability; large only for sex workers), based on 1,159 estimates in 67 studies (Irsova et al. 2025).</p>
+</div>
+<div class="extra" id="cite">
+<h3>How to cite</h3>
+<p class="ref">Irsova Zuzana, Havranek Tomas, Borntikova Kseniya, Bartoš František (2025), "Meta-Analysis of Field Studies on Beauty and Professional Success." Charles University, Prague. Available at meta-analysis.cz/beauty.</p>
+<details><summary>BibTeX</summary>
+<pre>@misc{irsova2025beauty,
+  author  = {Zuzana Irsova and Tomas Havranek and Kseniya Bortnikova and František Bartoš},
+  title   = {Meta-Analysis of Field Studies on Beauty and Professional Success},
+  year    = {2025},
+}</pre>
+</details>
+</div>
+<div class="extra" id="related">
+<h3>Other papers in this field</h3>
+<ul>
+<li><a href="/exercise/">Effect of physical exercise on cognition</a></li>
+<li><a href="/incentives/">Effect of financial incentives on performance</a></li>
+<li><a href="/risk/">Coefficient of relative risk aversion</a></li>
+<li><a href="/discrate/">Individual discount rate (impatience measured in experiments)</a></li>
+</ul>
+</div>
+</div>
+<!-- paper-extras:end -->
+</div>
 	</div>
 	<!-- end content -->
 	<!-- start sidebar -->
@@ -189,7 +218,7 @@ Common wisdom suggests that beauty helps in the labor market. We show that two f
     <h2>Search</h2>
     <form method="get" action="https://www.google.com/search">
       <fieldset>
-        <input type="text" id="s" name="q" value="" />
+        <input type="text" id="s" name="q" value="" aria-label="Search meta-analysis.cz" />
         <input type="hidden" name="as_sitesearch" value="meta-analysis.cz" />
         <input type="submit" id="x" value="Search" />
       </fieldset>

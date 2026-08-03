@@ -13,12 +13,10 @@ Released for free under a Creative Commons Attribution 2.5 License
 <title>Meta-Analysis Instrumental Variable Estimator</title>
 <meta name="keywords" content="Publication bias, p-hacking, selection models, meta-regression, funnel plot, inverse-variance weighting" />
 <meta name="description" content="Spurious Precision in Meta-Analysis" />
-<link href="default.css" rel="stylesheet" type="text/css" />
+<link href="/style.css" rel="stylesheet" type="text/css" />
 
 <!-- Minimal mobile wrapping fix for long links -->
-<style type="text/css">
-  a { overflow-wrap: break-word; word-wrap: break-word; }
-</style>
+
 
 <!-- seo-meta:start -->
 <link rel="canonical" href="https://meta-analysis.cz/maive/" />
@@ -164,8 +162,9 @@ Released for free under a Creative Commons Attribution 2.5 License
 <div id="wrapper">
 <!-- start header -->
 <div id="logo">
-	<h1><a href="maive.pdf">Spurious Precision in Meta-Analysis</a></h1>
-	<h2> &raquo;&nbsp;&nbsp;&nbsp; a solution</h2>
+	<a class="masthead-home" href="/">meta-analysis.cz</a>
+	<h1><a class="title-link" href="maive.pdf">Spurious Precision in Meta-Analysis</a></h1>
+	<h2> <span class="mk">&raquo;</span>&nbsp;&nbsp;&nbsp; a solution</h2>
 </div>
 <div id="header">
 	<div id="menu">
@@ -178,7 +177,7 @@ Released for free under a Creative Commons Attribution 2.5 License
 			<li class="current_page_item"><a href="maive_slides.pdf">Slides</a></li>
 			<li><a href="maive_replication.zip">Replication</a></li>
 			<li><a href="https://cran.r-project.org/package=MAIVE">MAIVE in R</a></li>
-			<li><a href="https://spuriousprecision.com/">MAIVE app</a></li>
+			
 		</ul>
 	</div>
 </div>
@@ -189,17 +188,16 @@ Released for free under a Creative Commons Attribution 2.5 License
 	<!-- start content -->
 	<div id="content">
 		<div class="post">
-			<h1 class="title">Abstract</h1>
+			<h2 class="title">Abstract</h2>
 			<div class="entry">
 <p>
 Meta-analysis upweights studies reporting lower standard errors and hence more precision. But in observational settings common to much research on human behavior, precision is not given to the researcher. Precision must be estimated, and thus can be p-hacked to achieve statistical significance. Simulations and large-scale empirical applications show that spurious precision can invalidate inverse-variance weighting and bias-correction methods based on the funnel plot. Selection models fail to solve the problem, and common cures to publication bias can become worse than the disease. We introduce an approach (Meta-Analysis Instrumental Variable Estimator, MAIVE) that addresses spurious precision and limits the resulting bias in meta-analysis.
 </p>
 
-<b><a href="https://spuriousprecision.com/">One-click meta-analysis in your browser: spuriousprecision.com</a></b>
+<b class="tool-link"><a href="https://spuriousprecision.com/">One-click meta-analysis in your browser: spuriousprecision.com</a></b>
 
 <p></p>
-<b>Fig: Spurious precision (right panel) renders common meta-analysis techniques biased</b> <br /> <br />
-   <img src="spurious.png" alt="Spurious precision" width="590" />
+<figure><img src="spurious.png" alt="Spurious precision" width="590" /><figcaption>Fig: Spurious precision (right panel) renders common meta-analysis techniques biased</figcaption></figure>
 <br />
 <br />
 <br />
@@ -208,7 +206,38 @@ Meta-analysis upweights studies reporting lower standard errors and hence more p
 			<div class="meta">
 				<p class="links"><a href="/" class="more">More meta from Prague</a> </p>
 			</div>
-		</div>
+		
+<!-- paper-extras:start -->
+<div class="extras">
+<div class="extra" id="headline-result">
+<h3>Headline result</h3>
+<p>Spurious precision in meta-analysis (the MAIVE estimator): the methodological finding is estimated precision can be p-hacked, which invalidates inverse-variance weighting; MAIVE instruments variance with sample size (Irsova et al. 2025, Nature Communications).</p>
+</div>
+<div class="extra" id="cite">
+<h3>How to cite</h3>
+<p class="ref">Zuzana Irsova, Pedro Bom, Tomas Havranek, and Heiko Rachinger (2025): "Spurious Precision in Meta-Analysis of Observational Research." Nature Commun 16, 8454. doi.org/10.1038/s41467-025-63261-0</p>
+<details><summary>BibTeX</summary>
+<pre>@article{irsova2025maive,
+  author  = {Zuzana Irsova and Pedro Bom and Tomas Havranek and Heiko Rachinger},
+  title   = {Spurious Precision in Meta-Analysis of Observational Research},
+  journal = {Nature Communications},
+  year    = {2025},
+  doi     = {10.1038/s41467-025-63261-0},
+}</pre>
+</details>
+</div>
+<div class="extra" id="related">
+<h3>Other papers in this field</h3>
+<ul>
+<li><a href="/guidelines/">How to run a modern meta-analysis</a></li>
+<li><a href="/correlations/">Bias in meta-analyses of correlations</a></li>
+<li><a href="/debate/">Whether multi-agent AI debate improves feedback on research papers</a></li>
+<li><a href="/outliers/">Sensitivity of meta-analysis results to outlier handling</a></li>
+</ul>
+</div>
+</div>
+<!-- paper-extras:end -->
+</div>
 	</div>
 	<!-- end content -->
 	<!-- start sidebar -->
@@ -218,7 +247,7 @@ Meta-analysis upweights studies reporting lower standard errors and hence more p
     <h2>Search</h2>
     <form method="get" action="https://www.google.com/search">
       <fieldset>
-        <input type="text" id="s" name="q" value="" />
+        <input type="text" id="s" name="q" value="" aria-label="Search meta-analysis.cz" />
         <input type="hidden" name="as_sitesearch" value="meta-analysis.cz" />
         <input type="submit" id="x" value="Search" />
       </fieldset>

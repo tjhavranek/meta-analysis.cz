@@ -12,7 +12,7 @@ Released for free under a Creative Commons Attribution 2.5 License
 <title>Optimal Inflation Rate: A Meta-Analysis</title>
 <meta name="keywords" content="Optimal inflation, meta-analysis, New Keynesian models, publication bias, Bayesian model averaging, measurement error, large language models" />
 <meta name="description" content="A Meta-Analysis of the Optimal Long-Run Rate of Inflation" />
-<link href="default.css" rel="stylesheet" type="text/css" />
+<link href="/style.css" rel="stylesheet" type="text/css" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <!-- seo-meta:start -->
 <link rel="canonical" href="https://meta-analysis.cz/inflation/" />
@@ -143,8 +143,9 @@ Released for free under a Creative Commons Attribution 2.5 License
 <div id="wrapper">
 <!-- start header -->
 <div id="logo">
-	<h1><a href="inflation.pdf">Optimal Inflation Rate</a></h1>
-	<h2> &raquo;&nbsp;&nbsp;&nbsp; a meta-analysis</h2>
+	<a class="masthead-home" href="/">meta-analysis.cz</a>
+	<h1><a class="title-link" href="inflation.pdf">Optimal Inflation Rate</a></h1>
+	<h2> <span class="mk">&raquo;</span>&nbsp;&nbsp;&nbsp; a meta-analysis</h2>
 </div>
 <div id="header">
 	<div id="menu">
@@ -164,15 +165,14 @@ Released for free under a Creative Commons Attribution 2.5 License
 	<!-- start content -->
 	<div id="content">
 		<div class="post">
-			<h1 class="title">Abstract</h1>
+			<h2 class="title">Abstract</h2>
 			<div class="entry">
 <p>
 We revisit the optimal long-run inflation rate using 777 estimates from 116 primary studies published between 1989 and 2026, the largest sample assembled to date. To our knowledge, this is among the first meta-analyses in economics whose primary-data extraction is performed end-to-end through a documented and auditable large-language-model pipeline, calibrated against a hand-coded training set and released for replication. Across publication-selection and selection-on-significance diagnostics that are applicable in this calibration-dominated corpus, the literature points to an optimum of roughly 0.6 percentage points per year, well below the two-percent targets commonly used by advanced-economy central banks. Bayesian model averaging over the full structural-moderator schema shows that cross-study variation is driven by genuine modelling choices, the choice of monetary benchmark (Friedman rule vs. laissez-faire), the transactions-frictions technology, the assumed shock structure, and the class of nominal-rigidity contract, rather than by selective reporting.
 </p>
 
 <p></p>
-<b>Fig: The literature is bimodal &mdash; one mode near price stability, one near the two-percent target </b> <br> <br>
-   <img src="distribution.png" alt="Distribution of reported optimal inflation rates: bimodal, with mass near 0 and near 2 percent, and a paper-level mean of 0.6 percent" width="570"/>
+<figure><img src="distribution.png" alt="Distribution of reported optimal inflation rates: bimodal, with mass near 0 and near 2 percent, and a paper-level mean of 0.6 percent" width="570"/><figcaption>Fig: The literature is bimodal &mdash; one mode near price stability, one near the two-percent target </figcaption></figure>
 <br>
 <br>
 <i>Histogram of 777 reported optimal inflation rates (in percent per year) from 116 primary studies, winsorised at the 5th and 95th percentiles. Solid red line: zero inflation (price stability). Dashed orange line: the two-percent central-bank target. Dotted black line: the literature's median.</i>
@@ -186,7 +186,36 @@ We revisit the optimal long-run inflation rate using 777 estimates from 116 prim
 			<div class="meta">
 				<p class="links"><a href="/" class="more">More meta from Prague</a> </p>
 			</div>
-		</div>
+		
+<!-- paper-extras:start -->
+<div class="extras">
+<div class="extra" id="headline-result">
+<h3>Headline result</h3>
+<p>Optimal long-run inflation rate: the meta-analytic estimate is about 0.6% per year (calibration-dominated model literature), based on 777 estimates from 116 primary studies (Opatrny et al. 2026).</p>
+</div>
+<div class="extra" id="cite">
+<h3>How to cite</h3>
+<p class="ref">Matej Opatrny, Martin Opatrny, Tomas Havranek, Zuzana Irsova, Mojmir Hampl (2026), "Optimal Inflation Rate: A Meta-Analysis." Charles University, Prague. Available at meta-analysis.cz/inflation.</p>
+<details><summary>BibTeX</summary>
+<pre>@misc{opatrny2026inflation,
+  author  = {Matej Opatrny and Martin Opatrny and Tomas Havranek and Zuzana Irsova and Mojmir Hampl},
+  title   = {Optimal Inflation Rate: A Meta-Analysis},
+  year    = {2026},
+}</pre>
+</details>
+</div>
+<div class="extra" id="related">
+<h3>Other papers in this field</h3>
+<ul>
+<li><a href="/house_prices/">Effect of monetary policy on house prices</a></li>
+<li><a href="/sigma/">Elasticity of substitution between capital and labor</a></li>
+<li><a href="/eis/">Elasticity of intertemporal substitution in consumption</a></li>
+<li><a href="/excess_sensitivity/">Excess sensitivity of consumption to anticipated income changes</a></li>
+</ul>
+</div>
+</div>
+<!-- paper-extras:end -->
+</div>
 	</div>
 	<!-- end content -->
 	<!-- start sidebar -->
@@ -196,7 +225,7 @@ We revisit the optimal long-run inflation rate using 777 estimates from 116 prim
     <h2>Search</h2>
     <form method="get" action="https://www.google.com/search">
       <fieldset>
-        <input type="text" id="s" name="q" value="" />
+        <input type="text" id="s" name="q" value="" aria-label="Search meta-analysis.cz" />
         <input type="hidden" name="as_sitesearch" value="meta-analysis.cz" />
         <input type="submit" id="x" value="Search" />
       </fieldset>
