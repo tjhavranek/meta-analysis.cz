@@ -2,9 +2,9 @@
  "project": "learning",
  "source_file": "learning_loss_data.xlsx",
  "source_archive": null,
- "source_sheet": "Betth\u00e4user",
+ "source_sheet": "data",
  "n_rows": 291,
- "n_columns": 13,
+ "n_columns": 17,
  "columns": [
   {
    "name": "study",
@@ -199,6 +199,64 @@
     "mean": 0.003222,
     "sd": 0.045259
    }
+  },
+  {
+   "name": "Title",
+   "normalized": "title",
+   "dtype": "str",
+   "n_missing": 0,
+   "n_unique": 42,
+   "top_values": [
+    "Student Achievement in 2021\u20132022: Cause for Hope and Continued Urgency",
+    "COVID-19 Impacts on Student Learning: Evidence from Interim Assessments in California",
+    "No Longer a Prediction: What New Data Tell Us About the Effects of 2020 Learning Disruptions",
+    "Learning Loss in Reading and Math in US Schools Due to the COVID-19 Pandemic",
+    "The Impact of School Closures on Autumn 2020 Attainment"
+   ]
+  },
+  {
+   "name": "Year",
+   "normalized": "year",
+   "dtype": "int64",
+   "n_missing": 0,
+   "n_unique": 3,
+   "stats": {
+    "min": 2020.0,
+    "p25": 2021.0,
+    "median": 2021.0,
+    "p75": 2022.0,
+    "max": 2022.0,
+    "mean": 2021.309278,
+    "sd": 0.545088
+   }
+  },
+  {
+   "name": "Published in",
+   "normalized": "published_in",
+   "dtype": "str",
+   "n_missing": 0,
+   "n_unique": 34,
+   "top_values": [
+    "NWEA",
+    "RS Assessment from Hodder Education and SchoolDash",
+    "PACE Working Paper (Policy Analysis for California Education)",
+    "Illuminate Education",
+    "Istation"
+   ]
+  },
+  {
+   "name": "PubliationType",
+   "normalized": "publiationtype",
+   "dtype": "str",
+   "n_missing": 0,
+   "n_unique": 8,
+   "top_values": [
+    "Report",
+    "Published study",
+    "Working paper",
+    "Government report",
+    "Working paper / Report"
+   ]
   }
  ]
 }

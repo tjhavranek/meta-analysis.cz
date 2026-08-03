@@ -9870,6 +9870,26 @@
       "name": "p",
       "type": "number",
       "description": null
+     },
+     {
+      "name": "Title",
+      "type": "string",
+      "description": null
+     },
+     {
+      "name": "Year",
+      "type": "number",
+      "description": null
+     },
+     {
+      "name": "Published in",
+      "type": "string",
+      "description": null
+     },
+     {
+      "name": "PubliationType",
+      "type": "string",
+      "description": null
      }
     ]
    },

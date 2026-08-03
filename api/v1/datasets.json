@@ -25,7 +25,7 @@
  "harmonised_table": {
   "version": "0.9.0-beta",
   "status": "beta",
-  "n_rows": 56466,
+  "n_rows": 54087,
   "n_literatures": 39,
   "columns": [
    "dataset",
@@ -124,13 +124,13 @@
     "evidence": "se_derived_from:t-stats"
    },
    "effect_units": "percent",
-   "direction_note": null,
-   "column_mapping_verified_by": null,
+   "direction_note": "Reconstructed on a comparable scale; the raw Estimate column mixes percent and decimal across studies.",
+   "column_mapping_verified_by": "activism.R sets data$elasticity <- data$Estim_adj and data$se_all <- data$Se_adj, having first deleted the raw Estimate and se columns; the second header row of the published workbook marks them 'Delete' for the same reason. Estim_adj = Estimate*100*Multiplicator, and the Multiplicator takes only the values 0.01 and 1, i.e. the raw column MIXES percent and decimal scales across studies. Reconstructing it gives a median of 0.489, matching the paper's Estim_adj.",
    "in_harmonised_table": true,
    "reconciliation": {
     "n_estimates_reported_in_paper": 1973,
     "n_rows_in_harmonised_table": 1254,
-    "note": "fewer rows than the paper reports; see this dataset's note and column_mapping_verified_by for the reason (usually a missing standard error on the remainder, occasionally a published file narrower than the paper's sample)"
+    "note": "fewer rows than the abstract's collection count, and correctly so: the paper's own replication code restricts to an analysis subset, which is reproduced here. See column_mapping_verified_by."
    },
    "excluded_from_harmonised_because": null,
    "duplicate_of": null,
@@ -574,13 +574,13 @@
     "evidence": "t_match:TSTAT"
    },
    "effect_units": "percent",
-   "direction_note": "Positive values denote electricity SAVINGS. The abstract writes savings as positive, the body as negative; this column follows the abstract.",
+   "direction_note": "SIGN TRAP: the stored value is the impact on electricity CONSUMPTION, so NEGATIVE means savings and is the favourable direction (median -0.40). The abstract instead frames the headline as a positive magnitude, 'slight electricity savings: 0.34%'. Taking the sign at face value inverts the finding.",
    "column_mapping_verified_by": null,
    "in_harmonised_table": true,
    "reconciliation": {
     "n_estimates_reported_in_paper": 162,
     "n_rows_in_harmonised_table": 101,
-    "note": "fewer rows than the paper reports; see this dataset's note and column_mapping_verified_by for the reason (usually a missing standard error on the remainder, occasionally a published file narrower than the paper's sample)"
+    "note": "fewer rows than the paper reports; see this dataset's note and column_mapping_verified_by (usually no usable standard error on the remainder, occasionally a published file narrower than the paper's sample)"
    },
    "excluded_from_harmonised_because": null,
    "duplicate_of": null,
@@ -663,7 +663,7 @@
    },
    "effect_units": "elasticity",
    "direction_note": null,
-   "column_mapping_verified_by": null,
+   "column_mapping_verified_by": "eis.do line 106 restricts DESCRIPTIVE statistics to abs(eis)<10; the regressions use all 2,735 rows with prec=1/se.",
    "in_harmonised_table": true,
    "reconciliation": {
     "n_estimates_reported_in_paper": 2735,
@@ -693,7 +693,7 @@
    "description": "Meta-analysis of the price elasticity of electricity demand: no increase in price responsiveness despite ninety years of technological change.",
    "n_estimates": 4720,
    "n_variables": 72,
-   "n_estimates_in_literature": 4720,
+   "n_estimates_in_literature": 3324,
    "source_file": "https://meta-analysis.cz/electricity/electricity.xlsx",
    "source_member": null,
    "source_sheet": "data",
@@ -709,12 +709,12 @@
     "evidence": "plausible"
    },
    "effect_units": "elasticity",
-   "direction_note": null,
-   "column_mapping_verified_by": null,
+   "direction_note": "Marshallian-equivalent price elasticity (the paper's Slutsky-converted effect_M), negative by convention. Pools short-, intermediate- and long-run estimates, which the paper analyses separately; condition on the run-length flags in the per-dataset file rather than pooling blind.",
+   "column_mapping_verified_by": "electricity.R line 74 defines the analysis sample as in_M_pool==1 & formula==1 & is.finite(effect_M) & se_source!='imputed_uniform_t', and its own header comment states this is 3,324 of the 4,720 usable-SE corpus. Reproduced exactly. effect_M is the Slutsky-converted Marshallian-equivalent measure the paper analyses; it correlates 0.9998 with the raw effect on this sample.",
    "in_harmonised_table": true,
    "reconciliation": {
     "n_estimates_reported_in_paper": null,
-    "n_rows_in_harmonised_table": 4720,
+    "n_rows_in_harmonised_table": 3324,
     "note": null
    },
    "excluded_from_harmonised_because": null,
@@ -992,7 +992,7 @@
    "reconciliation": {
     "n_estimates_reported_in_paper": 700,
     "n_rows_in_harmonised_table": 532,
-    "note": "fewer rows than the paper reports; see this dataset's note and column_mapping_verified_by for the reason (usually a missing standard error on the remainder, occasionally a published file narrower than the paper's sample)"
+    "note": "fewer rows than the paper reports; see this dataset's note and column_mapping_verified_by (usually no usable standard error on the remainder, occasionally a published file narrower than the paper's sample)"
    },
    "excluded_from_harmonised_because": null,
    "duplicate_of": null,
@@ -1030,8 +1030,8 @@
     "evidence": "se_derived_from:tstat"
    },
    "effect_units": "elasticity",
-   "direction_note": null,
-   "column_mapping_verified_by": null,
+   "direction_note": "Long-run income elasticity only; see the dataset note for the short-run estimates.",
+   "column_mapping_verified_by": "init.do generates se as abs(e/tstat), which is reproduced here. gas_income_revision.dta's 'e' equals mra-data.dta's Ystat exactly (n=701, mean 0.6589), matching the abstract's long-run figure.",
    "in_harmonised_table": true,
    "reconciliation": {
     "n_estimates_reported_in_paper": null,
@@ -1243,7 +1243,7 @@
    "description": "Meta-analysis of 2,193 estimates finds financial incentives have near-zero corrected effect on performance in most field settings.",
    "n_estimates": 2193,
    "n_variables": 72,
-   "n_estimates_in_literature": 2193,
+   "n_estimates_in_literature": 1252,
    "source_file": "https://meta-analysis.cz/incentives/incentives.xlsx",
    "source_member": null,
    "source_sheet": "data",
@@ -1258,14 +1258,14 @@
     "standard_error_note": null,
     "evidence": "plausible"
    },
-   "effect_units": "Cohen's d",
-   "direction_note": null,
-   "column_mapping_verified_by": null,
+   "effect_units": "partial correlation coefficient",
+   "direction_note": "Baseline measure. Cohen's d, the paper's robustness variant, is in the per-dataset file.",
+   "column_mapping_verified_by": "incentives.do lines 57-60 drop include==2 and bma==0 to form the baseline sample. The mean partial correlation on that sample is 0.05118, matching the paper's stated 0.051 exactly (1,252 estimates). The previous mapping used cohens_d unfiltered, which is the paper's ROBUSTNESS dataset, not its baseline: 'For robustness checks, we consider two additional datasets. First, instead of correlations we look at Cohen's d.'",
    "in_harmonised_table": true,
    "reconciliation": {
     "n_estimates_reported_in_paper": 2193,
-    "n_rows_in_harmonised_table": 2193,
-    "note": "matches the paper"
+    "n_rows_in_harmonised_table": 1252,
+    "note": "fewer rows than the abstract's collection count, and correctly so: the paper's own replication code restricts to an analysis subset, which is reproduced here. See column_mapping_verified_by."
    },
    "excluded_from_harmonised_because": null,
    "duplicate_of": null,
@@ -1382,11 +1382,11 @@
    },
    "description": "Meta-analysis of COVID-19 learning loss: bias-corrected RoBMA and MAIVE estimates converge on about -0.12 SD, roughly 30% of a school year.",
    "n_estimates": 291,
-   "n_variables": 13,
+   "n_variables": 17,
    "n_estimates_in_literature": 291,
    "source_file": "https://meta-analysis.cz/learning/learning_loss_data.xlsx",
    "source_member": null,
-   "source_sheet": "Betthäuser",
+   "source_sheet": "data",
    "files": {
     "parquet": "https://meta-analysis.cz/data/v1/learning/learning.parquet",
     "csv": "https://meta-analysis.cz/data/v1/learning/learning.csv",
@@ -1400,7 +1400,7 @@
    },
    "effect_units": "standardised mean difference",
    "direction_note": "Negative values are learning LOSS.",
-   "column_mapping_verified_by": null,
+   "column_mapping_verified_by": "00_setup.R reads the workbook with no sheet argument, so readxl takes the FIRST sheet, which is 'data'. Our picker chose 'Betthauser', a sheet named after a study. The two are byte-identical on the shared columns today, so no number changes, but that identity is coincidental and the reference is pinned to 'data'. ('data_old' is a stale earlier version and must not be used.)",
    "in_harmonised_table": true,
    "reconciliation": {
     "n_estimates_reported_in_paper": null,
@@ -1537,7 +1537,7 @@
    "description": "Meta-analysis of 46 studies finds structural reforms in transition countries carry short-run costs but strong long-run growth benefits.",
    "n_estimates": 456,
    "n_variables": 42,
-   "n_estimates_in_literature": 287,
+   "n_estimates_in_literature": 245,
    "source_file": "https://meta-analysis.cz/reforms/reform.xls",
    "source_member": null,
    "source_sheet": "reform",
@@ -1554,11 +1554,11 @@
    },
    "effect_units": "partial correlation coefficient",
    "direction_note": "Computed here from the reported t-statistic and degrees of freedom, following the paper's own code.",
-   "column_mapping_verified_by": "reform.do converts lib (the t-statistic on the reform coefficient, NOT a coefficient) to pcor = lib/sqrt(lib^2+df) with se_pcor = sqrt((1-pcor^2)/df); df = n - k holds exactly on all 456 rows",
+   "column_mapping_verified_by": "reform.do converts lib (a t-statistic, NOT a coefficient) to pcor=lib/sqrt(lib^2+df) with se_pcor=sqrt((1-pcor^2)/df); df=n-k holds exactly on all 456 rows. It then caps lib<12, drops a flagged outlier set defined on the computed correlation ((1/se_pcor)>15 & pcor>0.3 & lib<12) and drops rg==0. Applying all of it gives exactly the 245 short-run coefficients the paper reports.",
    "in_harmonised_table": true,
    "reconciliation": {
     "n_estimates_reported_in_paper": null,
-    "n_rows_in_harmonised_table": 287,
+    "n_rows_in_harmonised_table": 245,
     "note": null
    },
    "excluded_from_harmonised_because": null,
@@ -1740,7 +1740,7 @@
    "reconciliation": {
     "n_estimates_reported_in_paper": 809,
     "n_rows_in_harmonised_table": 602,
-    "note": "fewer rows than the paper reports; see this dataset's note and column_mapping_verified_by for the reason (usually a missing standard error on the remainder, occasionally a published file narrower than the paper's sample)"
+    "note": "fewer rows than the paper reports; see this dataset's note and column_mapping_verified_by (usually no usable standard error on the remainder, occasionally a published file narrower than the paper's sample)"
    },
    "excluded_from_harmonised_because": null,
    "duplicate_of": null,
@@ -1921,7 +1921,7 @@
    "reconciliation": {
     "n_estimates_reported_in_paper": 3626,
     "n_rows_in_harmonised_table": 2421,
-    "note": "fewer rows than the paper reports; see this dataset's note and column_mapping_verified_by for the reason (usually a missing standard error on the remainder, occasionally a published file narrower than the paper's sample)"
+    "note": "fewer rows than the abstract's collection count, and correctly so: the paper's own replication code restricts to an analysis subset, which is reproduced here. See column_mapping_verified_by."
    },
    "excluded_from_harmonised_because": null,
    "duplicate_of": "bma",
