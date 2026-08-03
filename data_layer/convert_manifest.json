@@ -1,0 +1,457 @@
+[
+ {
+  "project": "activism",
+  "status": "ok",
+  "rows": 1974,
+  "cols": 159,
+  "parquet_bytes": 247268,
+  "csv_bytes": 3054900,
+  "source": "activism.xlsx",
+  "sheet": "Data"
+ },
+ {
+  "project": "alphas",
+  "status": "ok",
+  "rows": 1019,
+  "cols": 82,
+  "parquet_bytes": 109407,
+  "csv_bytes": 523013,
+  "source": "alphas.xlsx",
+  "sheet": "data"
+ },
+ {
+  "project": "armington",
+  "status": "ok",
+  "rows": 3524,
+  "cols": 76,
+  "parquet_bytes": 218114,
+  "csv_bytes": 1024690,
+  "source": "armington.xlsx",
+  "sheet": "data"
+ },
+ {
+  "project": "beauty",
+  "status": "ok",
+  "rows": 1159,
+  "cols": 56,
+  "parquet_bytes": 99976,
+  "csv_bytes": 563464,
+  "source": "beauty.xlsx",
+  "sheet": "data"
+ },
+ {
+  "project": "bma",
+  "status": "ok",
+  "rows": 4147,
+  "cols": 101,
+  "parquet_bytes": 205852,
+  "csv_bytes": 2342406,
+  "source": "determinants.xls",
+  "sheet": "stata"
+ },
+ {
+  "project": "border",
+  "status": "ok",
+  "rows": 1271,
+  "cols": 61,
+  "parquet_bytes": 82429,
+  "csv_bytes": 435919,
+  "source": "border.dta",
+  "sheet": null
+ },
+ {
+  "project": "class",
+  "status": "ok",
+  "rows": 2906,
+  "cols": 67,
+  "parquet_bytes": 256967,
+  "csv_bytes": 2195000,
+  "source": "class.xlsx",
+  "sheet": "data"
+ },
+ {
+  "project": "climate",
+  "status": "ok",
+  "rows": 48,
+  "cols": 27,
+  "parquet_bytes": 16991,
+  "csv_bytes": 3924,
+  "source": "climate.dta",
+  "sheet": null
+ },
+ {
+  "project": "competition",
+  "status": "ok",
+  "rows": 598,
+  "cols": 39,
+  "parquet_bytes": 41860,
+  "csv_bytes": 111676,
+  "source": "competition.xlsx",
+  "sheet": "List1"
+ },
+ {
+  "project": "discrate",
+  "status": "ok",
+  "rows": 927,
+  "cols": 38,
+  "parquet_bytes": 46550,
+  "csv_bytes": 257660,
+  "source": "discrate.dta",
+  "sheet": null
+ },
+ {
+  "project": "dst",
+  "status": "ok",
+  "rows": 162,
+  "cols": 36,
+  "parquet_bytes": 33723,
+  "csv_bytes": 60651,
+  "source": "dst.xlsx",
+  "sheet": "STATA"
+ },
+ {
+  "project": "education",
+  "status": "ok",
+  "rows": 442,
+  "cols": 50,
+  "parquet_bytes": 64767,
+  "csv_bytes": 148137,
+  "source": "education.xlsx",
+  "sheet": "data"
+ },
+ {
+  "project": "eis",
+  "status": "ok",
+  "rows": 2735,
+  "cols": 52,
+  "parquet_bytes": 103237,
+  "csv_bytes": 508632,
+  "source": "eis/eis.dta",
+  "sheet": null
+ },
+ {
+  "project": "electricity",
+  "status": "ok",
+  "rows": 4720,
+  "cols": 72,
+  "parquet_bytes": 359680,
+  "csv_bytes": 3967394,
+  "source": "electricity.xlsx",
+  "sheet": "data"
+ },
+ {
+  "project": "esg",
+  "status": "ok",
+  "rows": 533,
+  "cols": 65,
+  "parquet_bytes": 85978,
+  "csv_bytes": 320613,
+  "source": "esg_data.xlsx",
+  "sheet": "Data"
+ },
+ {
+  "project": "euro",
+  "status": "ok",
+  "rows": 61,
+  "cols": 48,
+  "parquet_bytes": 35000,
+  "csv_bytes": 19592,
+  "source": "trade_meta.dta",
+  "sheet": null
+ },
+ {
+  "project": "ews",
+  "status": "excluded",
+  "reason": "country-level crisis database, not extracted estimates"
+ },
+ {
+  "project": "excess_sensitivity",
+  "status": "ok",
+  "rows": 3127,
+  "cols": 75,
+  "parquet_bytes": 132510,
+  "csv_bytes": 765010,
+  "source": "excess.dta",
+  "sheet": null
+ },
+ {
+  "project": "fdi",
+  "status": "ok",
+  "rows": 332,
+  "cols": 23,
+  "parquet_bytes": 16887,
+  "csv_bytes": 26569,
+  "source": "spillovers.dta",
+  "sheet": null
+ },
+ {
+  "project": "forward",
+  "status": "ok",
+  "rows": 3643,
+  "cols": 82,
+  "parquet_bytes": 112517,
+  "csv_bytes": 862502,
+  "source": "forward.dta",
+  "sheet": null
+ },
+ {
+  "project": "frisch",
+  "status": "ok",
+  "rows": 723,
+  "cols": 49,
+  "parquet_bytes": 37080,
+  "csv_bytes": 119743,
+  "source": "frisch.dta",
+  "sheet": null
+ },
+ {
+  "project": "gasoline",
+  "status": "ok",
+  "rows": 701,
+  "cols": 32,
+  "parquet_bytes": 33155,
+  "csv_bytes": 69491,
+  "source": "gas_income_revision.dta",
+  "sheet": null
+ },
+ {
+  "project": "gasoline_price",
+  "status": "ok",
+  "rows": 202,
+  "cols": 11,
+  "parquet_bytes": 12628,
+  "csv_bytes": 13526,
+  "source": "papers_revised.xls",
+  "sheet": "data"
+ },
+ {
+  "project": "habits",
+  "status": "ok",
+  "rows": 606,
+  "cols": 41,
+  "parquet_bytes": 42179,
+  "csv_bytes": 108802,
+  "source": "habit.dta",
+  "sheet": null
+ },
+ {
+  "project": "hedge",
+  "status": "ok",
+  "rows": 1019,
+  "cols": 29,
+  "parquet_bytes": 61199,
+  "csv_bytes": 360276,
+  "source": "hedge.xlsx",
+  "sheet": "data"
+ },
+ {
+  "project": "house_prices",
+  "status": "ok",
+  "rows": 1785,
+  "cols": 123,
+  "parquet_bytes": 263825,
+  "csv_bytes": 1920684,
+  "source": "house.dta",
+  "sheet": null
+ },
+ {
+  "project": "incentives",
+  "status": "ok",
+  "rows": 2193,
+  "cols": 72,
+  "parquet_bytes": 214067,
+  "csv_bytes": 1564930,
+  "source": "incentives.xlsx",
+  "sheet": "data"
+ },
+ {
+  "project": "inflation",
+  "status": "ok",
+  "rows": 885,
+  "cols": 179,
+  "parquet_bytes": 235269,
+  "csv_bytes": 1399628,
+  "source": "inflation_v34.dta",
+  "sheet": null
+ },
+ {
+  "project": "lags",
+  "status": "ok",
+  "rows": 1519,
+  "cols": 151,
+  "parquet_bytes": 250012,
+  "csv_bytes": 2332315,
+  "source": "lags.xls",
+  "sheet": "stata"
+ },
+ {
+  "project": "learning",
+  "status": "ok",
+  "rows": 291,
+  "cols": 17,
+  "parquet_bytes": 24210,
+  "csv_bytes": 77248,
+  "source": "learning_loss_data.xlsx",
+  "sheet": "data"
+ },
+ {
+  "project": "maive",
+  "status": "excluded",
+  "reason": "Bartos et al. cross-field archive (external), not a Havranek literature"
+ },
+ {
+  "project": "migrant",
+  "status": "ok",
+  "rows": 1091,
+  "cols": 57,
+  "parquet_bytes": 59528,
+  "csv_bytes": 359491,
+  "source": "migrant.xlsx",
+  "sheet": "Sheet1"
+ },
+ {
+  "project": "pcc",
+  "status": "excluded",
+  "reason": "Google Scholar search listing, not extracted estimates"
+ },
+ {
+  "project": "price_puzzle",
+  "status": "ok",
+  "rows": 1519,
+  "cols": 151,
+  "parquet_bytes": 250012,
+  "csv_bytes": 2332315,
+  "source": "puzzle.xls",
+  "sheet": "stata"
+ },
+ {
+  "project": "reforms",
+  "status": "ok",
+  "rows": 456,
+  "cols": 42,
+  "parquet_bytes": 40401,
+  "csv_bytes": 66901,
+  "source": "reform.xls",
+  "sheet": "reform"
+ },
+ {
+  "project": "remittances",
+  "status": "ok",
+  "rows": 538,
+  "cols": 71,
+  "parquet_bytes": 69285,
+  "csv_bytes": 130599,
+  "source": "remittances.xlsx",
+  "sheet": "Data"
+ },
+ {
+  "project": "resource_curse",
+  "status": "ok",
+  "rows": 605,
+  "cols": 112,
+  "parquet_bytes": 203262,
+  "csv_bytes": 464555,
+  "source": "resource_curse.dta",
+  "sheet": null
+ },
+ {
+  "project": "risk",
+  "status": "ok",
+  "rows": 1021,
+  "cols": 61,
+  "parquet_bytes": 61839,
+  "csv_bytes": 199224,
+  "source": "risk.dta",
+  "sheet": null
+ },
+ {
+  "project": "scc",
+  "status": "ok",
+  "rows": 1144,
+  "cols": 36,
+  "parquet_bytes": 42562,
+  "csv_bytes": 180522,
+  "source": "scc.xlsx",
+  "sheet": "stata"
+ },
+ {
+  "project": "sigma",
+  "status": "ok",
+  "rows": 3186,
+  "cols": 115,
+  "parquet_bytes": 145666,
+  "csv_bytes": 1009533,
+  "source": "sigma.dta",
+  "sheet": null
+ },
+ {
+  "project": "size",
+  "status": "ok",
+  "rows": 1746,
+  "cols": 407,
+  "parquet_bytes": 303065,
+  "csv_bytes": 1799055,
+  "source": "size.dta",
+  "sheet": null
+ },
+ {
+  "project": "skill",
+  "status": "ok",
+  "rows": 1097,
+  "cols": 50,
+  "parquet_bytes": 88696,
+  "csv_bytes": 459880,
+  "source": "skill.dta",
+  "sheet": null
+ },
+ {
+  "project": "spillovers",
+  "status": "ok",
+  "rows": 4147,
+  "cols": 98,
+  "parquet_bytes": 203433,
+  "csv_bytes": 2262698,
+  "source": "data.xls",
+  "sheet": "stata"
+ },
+ {
+  "project": "students",
+  "status": "ok",
+  "rows": 892,
+  "cols": 59,
+  "parquet_bytes": 82133,
+  "csv_bytes": 333874,
+  "source": "students.xlsx",
+  "sheet": "data"
+ },
+ {
+  "project": "substitution",
+  "status": "ok",
+  "rows": 2735,
+  "cols": 65,
+  "parquet_bytes": 144300,
+  "csv_bytes": 803873,
+  "source": "eis_det.dta",
+  "sheet": null
+ },
+ {
+  "project": "trust",
+  "status": "ok",
+  "rows": 1613,
+  "cols": 45,
+  "parquet_bytes": 87646,
+  "csv_bytes": 579034,
+  "source": "trust_data.csv",
+  "sheet": null
+ },
+ {
+  "project": "water",
+  "status": "ok",
+  "rows": 307,
+  "cols": 53,
+  "parquet_bytes": 52839,
+  "csv_bytes": 112649,
+  "source": "water.xlsx",
+  "sheet": "dataset"
+ }
+]

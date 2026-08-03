@@ -1,0 +1,174 @@
+{
+ "activism": {
+  "units": "percent",
+  "direction_note": "Reconstructed on a comparable scale; the raw Estimate column mixes percent and decimal across studies."
+ },
+ "alphas": {
+  "units": "percent",
+  "direction_note": "Monthly return, not annualised."
+ },
+ "armington": {
+  "units": "elasticity",
+  "direction_note": null
+ },
+ "beauty": {
+  "units": "percent",
+  "direction_note": null
+ },
+ "bma": {
+  "units": "elasticity",
+  "direction_note": null
+ },
+ "border": {
+  "units": "semi-elasticity",
+  "direction_note": "Raw coefficient on the border dummy in a log-linear gravity model; the paper's headline reduction is a transform of it, not the raw value."
+ },
+ "class": {
+  "units": "partial correlation coefficient",
+  "direction_note": null
+ },
+ "climate": {
+  "units": "degrees Celsius",
+  "direction_note": null
+ },
+ "competition": {
+  "units": "partial correlation coefficient",
+  "direction_note": null
+ },
+ "discrate": {
+  "units": "annual discount rate",
+  "direction_note": null
+ },
+ "dst": {
+  "units": "percent",
+  "direction_note": "SIGN TRAP: the stored value is the impact on electricity CONSUMPTION, so NEGATIVE means savings and is the favourable direction (median -0.40). The abstract instead frames the headline as a positive magnitude, 'slight electricity savings: 0.34%'. Taking the sign at face value inverts the finding."
+ },
+ "education": {
+  "units": "partial correlation coefficient",
+  "direction_note": null
+ },
+ "eis": {
+  "units": "elasticity",
+  "direction_note": null
+ },
+ "electricity": {
+  "units": "elasticity",
+  "direction_note": "Marshallian-equivalent price elasticity (the paper's Slutsky-converted effect_M), negative by convention. Pools short-, intermediate- and long-run estimates, which the paper analyses separately; condition on the run-length flags in the per-dataset file rather than pooling blind."
+ },
+ "esg": {
+  "units": "ESG rating points",
+  "direction_note": "Points on the Bloomberg/LSEG ESG scale per percentage point of board gender diversity, not a percent change."
+ },
+ "euro": {
+  "units": "semi-elasticity",
+  "direction_note": "Raw gravity-model coefficient on the currency-union dummy; the headline trade effect is a transform of it."
+ },
+ "excess_sensitivity": {
+  "units": "regression coefficient",
+  "direction_note": null
+ },
+ "forward": {
+  "units": "regression coefficient",
+  "direction_note": "The null of interest is a slope of 1, not 0. Testing against zero will mislead."
+ },
+ "frisch": {
+  "units": "elasticity",
+  "direction_note": null
+ },
+ "gasoline": {
+  "units": "elasticity",
+  "direction_note": "Long-run income elasticity only; see the dataset note for the short-run estimates. CAUTION on n_obs: it is the file's Observations column, which init.do weights by as sqrt(Observations), but 90 of 701 rows record 1 — not a plausible sample size, and possibly a missing-value code. Filter before using n_obs as a precision instrument."
+ },
+ "gasoline_price": {
+  "units": "elasticity",
+  "direction_note": "Negative by convention: demand falls as price rises."
+ },
+ "habits": {
+  "units": "habit persistence parameter",
+  "direction_note": "Unitless, normally bounded by 0 (no habit) and 1 (full persistence)."
+ },
+ "hedge": {
+  "units": "percent",
+  "direction_note": "Monthly return, not annualised."
+ },
+ "house_prices": {
+  "units": "semi-elasticity (proportional)",
+  "direction_note": "Stored as a PROPORTION: house.do multiplies by 100 for the percentages the paper reports. Negative is the expected direction, higher policy rates lowering house prices. One row per impulse-response horizon, so rows within an IRF are not independent."
+ },
+ "incentives": {
+  "units": "partial correlation coefficient",
+  "direction_note": "Baseline measure. Cohen's d, the paper's robustness variant, is in the per-dataset file."
+ },
+ "inflation": {
+  "units": "percentage points",
+  "direction_note": null
+ },
+ "learning": {
+  "units": "standardised mean difference",
+  "direction_note": "Negative values are learning LOSS."
+ },
+ "migrant": {
+  "units": "elasticity",
+  "direction_note": "Stored as a negative inverse elasticity; a sign flip and inversion are needed to read it as the substitution elasticity discussed in the paper. Verify before pooling."
+ },
+ "price_puzzle": {
+  "units": "proportional change in the price level",
+  "direction_note": "Stored as a PROPORTION, not a percent: multiply by 100 to read as the paper does (median |effect| 0.002 = 0.2%, consistent with its reported 0.33% trough). Positive values are the puzzling price INCREASE after a monetary contraction; theory expects negative. One row per horizon."
+ },
+ "reforms": {
+  "units": "partial correlation coefficient",
+  "direction_note": "Computed here from the reported t-statistic and degrees of freedom, following the paper's own code."
+ },
+ "remittances": {
+  "units": "regression coefficient",
+  "direction_note": null
+ },
+ "resource_curse": {
+  "units": "partial correlation coefficient",
+  "direction_note": null
+ },
+ "risk": {
+  "units": "relative risk aversion coefficient",
+  "direction_note": null
+ },
+ "scc": {
+  "units": "US dollars per tonne of carbon",
+  "direction_note": null
+ },
+ "sigma": {
+  "units": "elasticity",
+  "direction_note": null
+ },
+ "size": {
+  "units": "percent",
+  "direction_note": "Raw size-return slopes: NEGATIVE means a larger conventional size premium, i.e. small firms outperforming. The abstract states that researchers prefer estimates showing 'a negative relation between size and returns'. 76% of stored effects are negative. Do not read positive as the premium."
+ },
+ "skill": {
+  "units": "elasticity",
+  "direction_note": "Stored as inverse elasticities; inversion is needed to read them as the skill-substitution elasticity. Dropping this step reverses the finding."
+ },
+ "students": {
+  "units": "partial correlation coefficient",
+  "direction_note": null
+ },
+ "trust": {
+  "units": "percent",
+  "direction_note": "Raw size-return slopes: more negative means a larger conventional size premium."
+ },
+ "water": {
+  "units": "elasticity",
+  "direction_note": null
+ },
+ "fdi": {
+  "units": "elasticity",
+  "direction_note": "Winsorised FDI spillover elasticity (e_w). No standard error exists in the file, so this dataset supports model averaging over study characteristics but not SE-based synthesis."
+ },
+ "lags": {
+  "units": "months",
+  "direction_note": "Transmission lag: months from the monetary shock to the trough of the price response (mon_bot). A duration, not a regression coefficient, so it has no sampling standard error."
+ },
+ "substitution": {
+  "units": "elasticity",
+  "direction_note": "Elasticity of intertemporal substitution. Same 2,735 estimates as the eis dataset; this file adds country-level moderators."
+ }
+}

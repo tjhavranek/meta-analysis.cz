@@ -1,0 +1,124 @@
+"""Tier B: Parquet mirrors + per-dataset codebooks. Originals untouched."""
+import json, os, re, io, zipfile, warnings, hashlib; warnings.filterwarnings("ignore")
+import numpy as np, pandas as pd
+import os, sys
+sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
+from _paths import WORK, SITE
+
+OUT=os.path.join(WORK,"out")
+prim=json.load(open(os.path.join(WORK,"primaries.json"),encoding="utf-8"))
+res=json.load(open(os.path.join(WORK,"resolved2.json"),encoding="utf-8"))
+_o=os.path.join(WORK,"overrides.json")
+OVR=json.load(open(_o,encoding="utf-8")) if os.path.exists(_o) else {}
+inv=json.load(open(os.path.join(WORK,"inventory_raw.json"),encoding="utf-8"))
+
+def norm(c): return re.sub(r"[^a-z0-9]+","_",str(c).strip().lower()).strip("_")
+
+def pick_sheet(xl):
+    best=None
+    for sh in xl.sheet_names:
+        try: d=xl.parse(sh)
+        except Exception: continue
+        if d.shape[0]<5 or d.shape[1]<3: continue
+        un=sum(1 for c in d.columns if str(c).startswith("Unnamed") or str(c).strip()=="" or str(c).startswith("nan"))
+        sc=(1-un/max(d.shape[1],1))*3+np.mean([pd.to_numeric(d[c],errors="coerce").notna().mean() for c in d.columns]) \
+           +min(d.shape[0],4000)/4000+min(d.shape[1],80)/80
+        if best is None or sc>best[0]: best=(sc,sh,d)
+    return (best[1],best[2]) if best else (None,None)
+
+def read_member(project, source, archive, member, sheet=None):
+    p=os.path.join(SITE,project)
+    if source=="loose": src,name=os.path.join(p,member),member
+    else:
+        z=zipfile.ZipFile(os.path.join(p,archive)); src,name=io.BytesIO(z.read(member)),member
+    e=os.path.splitext(name)[1].lower()
+    if e==".dta": return pd.read_stata(src,convert_categoricals=False),None
+    if e==".csv": return pd.read_csv(src,low_memory=False),None
+    xl=pd.ExcelFile(src)
+    if sheet and sheet in xl.sheet_names: return xl.parse(sheet),sheet
+    return pick_sheet(xl)
+
+def clean_for_parquet(df):
+    df=df.copy()
+    seen={}; cols=[]
+    for c in df.columns:                                  # unique, non-empty names
+        n=str(c).strip() or "col"
+        n=re.sub(r"\s+"," ",n)
+        if n in seen: seen[n]+=1; n=f"{n}__{seen[n]}"
+        else: seen[n]=0
+        cols.append(n)
+    df.columns=cols
+    for c in df.columns:                                  # object -> numeric where clean, else str
+        if df[c].dtype==object:
+            num=pd.to_numeric(df[c],errors="coerce")
+            if num.notna().sum()>=0.95*df[c].notna().sum() and df[c].notna().sum()>0: df[c]=num
+            else: df[c]=df[c].astype(str).replace({"nan":None,"None":None,"":None})
+    return df
+
+def describe(df, roles):
+    cb=[]
+    for c in df.columns:
+        s=df[c]; e=dict(name=str(c), normalized=norm(c), dtype=str(s.dtype),
+                        n_missing=int(s.isna().sum()), n_unique=int(s.nunique(dropna=True)))
+        r=roles.get(str(c))
+        if r: e["role"]=r
+        if pd.api.types.is_numeric_dtype(s) and s.notna().any():
+            d=s.dropna().astype(float)
+            e["stats"]=dict(min=round(float(d.min()),6), p25=round(float(d.quantile(.25)),6),
+                            median=round(float(d.median()),6), p75=round(float(d.quantile(.75)),6),
+                            max=round(float(d.max()),6), mean=round(float(d.mean()),6),
+                            sd=round(float(d.std()),6) if len(d)>1 else None)
+            u=d.unique()
+            if len(u)<=2 and set(np.round(u,6)).issubset({0.0,1.0}): e["binary"]=True
+        elif s.notna().any():
+            e["top_values"]=[str(x) for x in s.dropna().astype(str).value_counts().head(5).index]
+        cb.append(e)
+    return cb
+
+os.makedirs(OUT,exist_ok=True)
+manifest=[]
+for proj in sorted(prim):
+    r=res.get(proj,{})
+    if r.get("status")=="excluded":
+        manifest.append(dict(project=proj,status="excluded",reason=r["reason"])); continue
+    rec=prim[proj]
+    want=(OVR.get(proj) or {}).get("sheet") or r.get("sheet")
+    try: df,sheet=read_member(proj,rec["source"],rec["archive"],rec["member"],want)
+    except Exception as ex:
+        manifest.append(dict(project=proj,status="error",reason=str(ex)[:120])); continue
+    if df is None or df.empty:
+        manifest.append(dict(project=proj,status="error",reason="empty")); continue
+    df=clean_for_parquet(df)
+    roles={}
+    if r.get("status")=="ok":
+        if r.get("effect") in df.columns: roles[r["effect"]]="effect_estimate"
+        if r.get("se") in df.columns: roles[r["se"]]="standard_error"
+    for c in df.columns:
+        n=norm(c)
+        if re.match(r"^(id_?study|study_?id|idstudy|studyid)$",n): roles.setdefault(str(c),"study_id")
+        elif re.match(r"^(n|nobs|no_?obs|n_?obs|obs|observations|sample_?size|samplesize)$",n): roles.setdefault(str(c),"n_obs")
+        elif re.match(r"^(pub_?year|publication_?year|yearpub|publicationyear)$",n): roles.setdefault(str(c),"pub_year")
+        elif re.match(r"^(t|t_?stat\w*|t_?value|tstats?)$",n): roles.setdefault(str(c),"t_stat")
+        elif re.match(r"^(country|idcountry)$",n): roles.setdefault(str(c),"country")
+    d=os.path.join(OUT,"data","v1",proj); os.makedirs(d,exist_ok=True)
+    pq=os.path.join(d,f"{proj}.parquet"); df.to_parquet(pq,index=False,compression="snappy")
+    csv_path=None
+    if os.path.getsize(pq) < 4_000_000:
+        csv_path=os.path.join(d,f"{proj}.csv"); df.to_csv(csv_path,index=False,encoding="utf-8",lineterminator=chr(10))
+    cb=os.path.join(OUT,"api","v1","codebooks"); os.makedirs(cb,exist_ok=True)
+    json.dump(dict(project=proj, source_file=rec["member"], source_archive=rec["archive"],
+                   source_sheet=sheet, n_rows=int(len(df)), n_columns=int(df.shape[1]),
+                   columns=describe(df,roles)),
+              open(os.path.join(cb,f"{proj}.json"),"w",encoding="utf-8"), indent=1)
+    manifest.append(dict(project=proj,status="ok",rows=int(len(df)),cols=int(df.shape[1]),
+                         parquet_bytes=os.path.getsize(pq),
+                         csv_bytes=os.path.getsize(csv_path) if csv_path else None,
+                         source=rec["member"],sheet=sheet))
+
+json.dump(manifest,open(os.path.join(WORK,"convert_manifest.json"),"w",encoding="utf-8"),indent=1)
+ok=[m for m in manifest if m["status"]=="ok"]
+tp=sum(m["parquet_bytes"] for m in ok); tc=sum(m["csv_bytes"] or 0 for m in ok)
+print(f"converted {len(ok)} datasets | {sum(m['rows'] for m in ok):,} rows")
+print(f"parquet total {tp/1e6:.1f} MB | csv total {tc/1e6:.1f} MB | combined {(tp+tc)/1e6:.1f} MB")
+for m in manifest:
+    if m["status"]!="ok": print(f"  [{m['status']}] {m['project']}: {m.get('reason','')[:60]}")

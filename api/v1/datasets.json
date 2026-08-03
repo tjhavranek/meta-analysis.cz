@@ -79,12 +79,12 @@
   "csv": "https://meta-analysis.cz/data/v1/estimates_harmonised.csv",
   "notes": [
    "One row per estimate, pooled across literatures.",
-   "Effects are not comparable across literatures in raw units; see effect_units. Within a literature units are consistent. Across literatures compare ratios, not levels.",
+   "Raw effect levels are not comparable across literatures; see effect_units. Analyse within each literature. Comparing across them needs an explicitly standardised measure, and relative changes are meaningful only where the baseline is safely away from zero.",
    "Moderator columns are populated only where the source dataset recorded them; check for nulls.",
    "source_file, effect_col and se_col identify the origin of every value, so any row can be traced to the published dataset and checked.",
    "se_is_derived marks rows whose standard error was reconstructed rather than read directly.",
    "Column mappings were resolved arithmetically (effect/se must reproduce the reported t-statistic) and, where that was not decisive, taken from the paper's own replication code.",
-   "Beta: the harmonisation may be revised. Pin a version, or use the DOI deposit, if you need a stable reference."
+   "Beta: the harmonisation may be revised. THERE IS NO DOI DEPOSIT YET. For a reference that does not move, pin the version string and the file checksum."
   ],
   "excluded": {
    "fdi": "no per-estimate precision exists: the file has no standard error, t-statistic, weight or inverse-SE column, so SE-based synthesis is impossible",
@@ -568,11 +568,11 @@
     "effect": "discrate",
     "standard_error": "standard_error",
     "standard_error_note": null,
-    "evidence": "plausible"
+    "evidence": "paper's replication code"
    },
    "effect_units": "annual discount rate",
    "direction_note": null,
-   "column_mapping_verified_by": null,
+   "column_mapping_verified_by": "discrate.do line 10 destrings standard_error; lines 204-208 are the paper's own 'PET robust check' using standard_error_win if !missing(standard_error), which reproduces this 539-of-927 subset exactly. Also verified there that sample_size == ln(nobs) for all 927 rows, which is why n_obs maps to nobs and not to sample_size.",
    "in_harmonised_table": true,
    "reconciliation": {
     "n_estimates_reported_in_paper": null,
@@ -617,11 +617,11 @@
     "effect": "ESTIMATE",
     "standard_error": "SE",
     "standard_error_note": null,
-    "evidence": "t_match:TSTAT"
+    "evidence": "paper's replication code"
    },
    "effect_units": "percent",
    "direction_note": "SIGN TRAP: the stored value is the impact on electricity CONSUMPTION, so NEGATIVE means savings and is the favourable direction (median -0.40). The abstract instead frames the headline as a positive magnitude, 'slight electricity savings: 0.34%'. Taking the sign at face value inverts the finding.",
-   "column_mapping_verified_by": null,
+   "column_mapping_verified_by": "dst.do labels ESTIMATE 'Estimate of the DST impact (in %)' and runs 'ivreg2 ESTIMATE SE, cluster(...)' as its main FAT-PET regression. 101 of 162 rows have ESTIMATE, SE, TSTAT and PRECISION jointly non-null; the other 61 have all four blank, so the loss is a genuinely unreported standard error, not a column choice.",
    "in_harmonised_table": true,
    "reconciliation": {
     "n_estimates_reported_in_paper": 162,
@@ -917,11 +917,11 @@
     "effect": "excess",
     "standard_error": "se",
     "standard_error_note": null,
-    "evidence": "plausible"
+    "evidence": "paper's replication code"
    },
    "effect_units": "regression coefficient",
    "direction_note": null,
-   "column_mapping_verified_by": null,
+   "column_mapping_verified_by": "excess.do lines 14-15: 'gen prec=1/se' and 'gen tstat=excess/se', used through the funnel-asymmetry regressions (e.g. 'ivreg2 excess se if micro==1'). All 3,127 rows carry both. The separate mpc/mpc_se pair is a different estimand and is excluded by the paper's own BMA export.",
    "in_harmonised_table": true,
    "reconciliation": {
     "n_estimates_reported_in_paper": null,
@@ -1065,11 +1065,11 @@
     "effect": "frisch",
     "standard_error": "se",
     "standard_error_note": null,
-    "evidence": "plausible"
+    "evidence": "paper's replication code"
    },
    "effect_units": "elasticity",
    "direction_note": null,
-   "column_mapping_verified_by": null,
+   "column_mapping_verified_by": "frisch.do: 'gen tstat = frisch/se' and 'winsor2 frisch se, cuts(5 95)' confirm frisch/se as the analysis columns. 532 of 723 rows have a usable standard error (538 non-missing, less 6 zeros). The paper imputes the remainder from a per-study bootstrap rather than dropping them; that input was not published, so they are excluded here rather than filled.",
    "in_harmonised_table": true,
    "reconciliation": {
     "n_estimates_reported_in_paper": 700,
@@ -1211,11 +1211,11 @@
     "effect": "habit",
     "standard_error": "se",
     "standard_error_note": null,
-    "evidence": "plausible"
+    "evidence": "paper's replication code"
    },
    "effect_units": "habit persistence parameter",
    "direction_note": "Unitless, normally bounded by 0 (no habit) and 1 (full persistence).",
-   "column_mapping_verified_by": null,
+   "column_mapping_verified_by": "habit.do applies 'drop if missing(se)' and winsorises the standard error only, with no trimming of habit itself: 606 rows less 9 missing se = 597, matching the abstract's '597 estimates from 81 published studies'. 125 of 597 fall outside the theoretical [0,1] range; the paper neither trims nor remarks on it, and this is known behaviour for GMM/DSGE habit estimates.",
    "in_harmonised_table": true,
    "reconciliation": {
     "n_estimates_reported_in_paper": 597,

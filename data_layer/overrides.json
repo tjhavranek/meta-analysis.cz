@@ -1,0 +1,267 @@
+{
+ "_README": "Per-dataset overrides of the automatic column resolution. Every entry here was verified against the paper's own replication code (.do / .R) or its abstract, and the evidence is recorded in 'verified_by'. The automatic resolver is used only where no override exists.",
+ "lags": {
+  "exclude": true,
+  "reason": "outcome is the transmission lag (mon_bot, months to the price trough); it has no sampling standard error, so it cannot enter an effect/SE table",
+  "verified_by": "lags.do keeps horizon==99 and models mon_bot directly; the se/up/low on that row belong to the price-response magnitude, not to the lag"
+ },
+ "price_puzzle": {
+  "alias_of": null,
+  "effect": "res",
+  "se": "se",
+  "reshape_long": {
+   "id_col": "horizon",
+   "effect_name": "res",
+   "se_name": "se",
+   "pairs": [
+    [
+     3,
+     "M3R",
+     "SE3"
+    ],
+    [
+     6,
+     "M6R",
+     "SE6"
+    ],
+    [
+     12,
+     "M12R",
+     "SE12"
+    ],
+    [
+     18,
+     "M18R",
+     "SE18"
+    ],
+    [
+     36,
+     "M36R",
+     "SE36"
+    ]
+   ]
+  },
+  "units": "proportional change in the price level",
+  "verified_by": "puzzle.do computes t=res/se and prec=1/se on the long form restricted to horizon in {3,6,12,18,36}; the published file is wide, so the M{h}R / SE{h} pairs are reshaped here to reproduce it. Median |t| is 0.75-0.91 across horizons, consistent with the literature's mostly insignificant responses.",
+  "note": "shares its source file with the lags project, but uses different columns, so it is not a duplicate. One row per (estimate, horizon): rows within an impulse response are not independent."
+ },
+ "climate": {
+  "effect": "estimate",
+  "se": "se_low",
+  "units": "degrees Celsius (equilibrium climate sensitivity)",
+  "verified_by": "climate.do builds prec=1/se_low and runs all FAT-PET and funnel regressions on se_low; se_up appears only in one robustness line"
+ },
+ "house_prices": {
+  "effect": "est",
+  "se_mean_of": [
+   "SE_l",
+   "SE_u"
+  ],
+  "units": "semi-elasticity (proportional)",
+  "verified_by": "house.do rescales est to percent and sets SE=(SE_l+SE_u)/2; seraw is populated on only 40 of 1785 rows. Restricting to inlevels==1 (the paper's own main sample) yields exactly 1,555 usable estimates, matching the abstract; the 126 growths==1 rows are a different specification.",
+  "note": "one row per impulse-response horizon, roughly 7 horizons per (idstudy, idirf), so rows within a study are not independent",
+  "filters": [
+   {
+    "column": "inlevels",
+    "in": [
+     1
+    ]
+   }
+  ]
+ },
+ "bma": {
+  "filters": [
+   {
+    "column": "aux",
+    "not_in": [
+     1
+    ]
+   },
+   {
+    "column": "horiz",
+    "in": [
+     1
+    ]
+   }
+  ],
+  "units": "elasticity",
+  "verified_by": "determinants.do runs 'drop if aux==1' then 'drop if horiz!=1'. Applying exactly those two filters yields 1,205 usable estimates, matching the abstract exactly.",
+  "note": "HORIZONTAL spillovers. Shares the FDI spillovers database with the 'spillovers' project, which takes the vertical subset. The two are complementary, not duplicates."
+ },
+ "spillovers": {
+  "alias_of": null,
+  "filters": [
+   {
+    "column": "aux",
+    "not_in": [
+     1
+    ]
+   },
+   {
+    "column": "horiz",
+    "not_in": [
+     1
+    ]
+   }
+  ],
+  "units": "elasticity",
+  "verified_by": "Stata_program.do runs 'drop if aux==1' and defines back = (horiz==0 & forw==0) | (horiz==0 & local==1), i.e. the non-horizontal complement",
+  "note": "VERTICAL spillovers (forward and backward). CAUTION: the filtered count is 2,421 while the paper's abstract reports 3,626 estimates, so the published file appears to be a subset of the sample behind the paper. Reconcile before relying on the count."
+ },
+ "fdi": {
+  "exclude": true,
+  "reason": "no per-estimate precision exists: the file has no standard error, t-statistic, weight or inverse-SE column, so SE-based synthesis is impossible",
+  "verified_by": "spillovers.R uses e_w (winsorized spillover elasticity) as the response in a Bayesian model averaging regression over moderators; the zip contains only that script and the data. No_of_firms is a log-scaled moderator, not a recoverable N",
+  "note": "still fully usable for model averaging over study characteristics, as in the original paper; it is only the effect/SE table it cannot join"
+ },
+ "reforms": {
+  "compute": {
+   "type": "pcc_from_t",
+   "t_col": "lib",
+   "df_col": "df",
+   "outlier_rule": "reforms"
+  },
+  "n_obs": "n",
+  "units": "partial correlation coefficient",
+  "verified_by": "reform.do converts lib (a t-statistic, NOT a coefficient) to pcor=lib/sqrt(lib^2+df) with se_pcor=sqrt((1-pcor^2)/df); df=n-k holds exactly on all 456 rows. It then caps lib<12, drops a flagged outlier set defined on the computed correlation ((1/se_pcor)>15 & pcor>0.3 & lib<12) and drops rg==0. Applying all of it gives exactly the 245 short-run coefficients the paper reports.",
+  "note": "lib is short-run, lib_cum long-run; the short-run t-statistic is used here"
+ },
+ "scc": {
+  "effect": "scc",
+  "se": "stdlow",
+  "units": "US dollars per tonne of carbon",
+  "verified_by": "scc.do labels stdlow 'Standard error' and runs the funnel-asymmetry regression 'reg scc stdlow'; stdup is an alternative built from the upper CI bound for robustness",
+  "note": "usable only on the subset where stdlow is present (about 53% of rows); there is no primary-study sample size, perstudy is an estimates-per-study de-clustering weight"
+ },
+ "forward": {
+  "effect": "Coeff",
+  "se": "SE",
+  "n_obs": "Sample_size",
+  "units": "slope coefficient in the forward premium regression (null of interest is 1, not 0)",
+  "verified_by": "forward.do runs 'sum beta se' immediately after loading; T and N reproduce ln(Sample_size), so neither is a t-statistic"
+ },
+ "substitution": {
+  "alias_of": "eis",
+  "reason": "same 2,735 estimates as the eis project",
+  "note": "Different PAPER (why intertemporal substitution varies across countries) but the same underlying estimates as 'eis', so including both would double count. The substitution file carries 65 columns against eis's 52, including country-level moderators, and remains published in full as its own dataset. Both projects fill the same 18 harmonised moderators, so the choice of which to keep costs nothing; eis is kept as the already-canonical entry."
+ },
+ "_DEDUP_RULE": "Two projects can publish the same estimates (two papers, one dataset). Keeping both double counts. RULE: keep the project that fills strictly more harmonised moderators; on a tie keep the one whose paper is published; always record the other's DOI in the note so citation stays unambiguous. Both remain published individually under /data/v1/ regardless.",
+ "hedge": {
+  "alias_of": "alphas",
+  "reason": "same 1,019 estimates as the alphas project",
+  "verified_by": "effect, se and study_id are element-wise identical across all 1,019 rows; a pairwise scan of the (effect,se) value multiset over all 41 literatures found this as the only remaining duplicate pair",
+  "note": "Two papers on one dataset. 'alphas' is kept because it fills 10 harmonised moderators against hedge's 7, and hedge's set is a strict subset, so nothing is lost. CITE the published version for these estimates: Hedge Fund Performance: A Meta-Analysis, Journal of Economic Surveys 2024 (DOI on the hedge dataset entry). The hedge file remains published in full as its own dataset."
+ },
+ "trust": {
+  "alias_of": "size",
+  "reason": "same literature as the size project (the size premium); 1,256 of its estimates also appear there",
+  "verified_by": "pairwise (effect,se) scan: 1,256 shared pairs, 276 only in size, 259 only in trust. Both papers meta-analyse reported size-premium estimates; trust is a later, extended collection (105 studies) of the same literature that size (98 studies) first assembled.",
+  "note": "NOT an exact duplicate — trust is a LATER, LARGER collection of the SAME literature, so pooling both would count 1,256 estimates twice and would treat one literature as two independent ones. 'size' is kept for the pooled table because it fills 17 harmonised moderators against trust's 5 and is the published version (Journal of Economic Surveys 2019). IF YOU ARE STUDYING THE SIZE PREMIUM SPECIFICALLY, prefer the trust dataset: it is the larger and more recent collection and carries the trust and rule-of-law moderators. It remains published in full at /data/v1/trust/."
+ },
+ "remittances": {
+  "note": "The file holds BOTH a long-run (COEF_L/SE_L) and a short-run (COEF_S/SE_S) coefficient per row. Only the LONG-RUN pair enters the harmonised table, because the two are different estimands and pooling them would mix horizons. The short-run pair (48 usable rows) remains in the published per-dataset file for anyone who wants it."
+ },
+ "learning": {
+  "sheet": "data",
+  "verified_by": "00_setup.R reads the workbook with no sheet argument, so readxl takes the FIRST sheet, which is 'data'. Our picker chose 'Betthauser', a sheet named after a study. The two are byte-identical on the shared columns today, so no number changes, but that identity is coincidental and the reference is pinned to 'data'. ('data_old' is a stale earlier version and must not be used.)"
+ },
+ "electricity": {
+  "effect": "effect_M",
+  "se": "se",
+  "filters": [
+   {
+    "column": "in_M_pool",
+    "in": [
+     1
+    ]
+   },
+   {
+    "column": "formula",
+    "in": [
+     1
+    ]
+   },
+   {
+    "column": "effect_M",
+    "finite": true
+   },
+   {
+    "column": "se_source",
+    "str_not_in": [
+     "imputed_uniform_t"
+    ]
+   }
+  ],
+  "units": "elasticity",
+  "verified_by": "electricity.R line 74 defines the analysis sample as in_M_pool==1 & formula==1 & is.finite(effect_M) & se_source!='imputed_uniform_t', and its own header comment states this is 3,324 of the 4,720 usable-SE corpus. Reproduced exactly. effect_M is the Slutsky-converted Marshallian-equivalent measure the paper analyses; it correlates 0.9998 with the raw effect on this sample.",
+  "note": "Price elasticity of electricity demand. The pool spans short-run (median -0.16), intermediate-run (-0.39) and long-run (-0.35) estimates, which the paper analyses SEPARATELY; the short_run / intermediate_run / long_run flags are in the per-dataset file, and you should condition on them rather than pool blind. Income elasticities are a different estimand and are kept in their own columns, not mixed in here."
+ },
+ "discrate": {
+  "note": "Only the 539 estimates with a GENUINELY REPORTED standard error are included. The paper's headline FAT-PET instead uses standard_error_comb, which imputes a bootstrapped study-level SE for the other 388; that is its 'robust check' specification we match, not its headline. The choice is deliberate: imputed standard errors would contaminate a benchmark whose purpose is comparing standard-error-based correctors. Use the per-dataset file if you want the imputed variant. Negative discount rates are real, not a sign error: a minority of studies estimate them.",
+  "verified_by": "discrate.do line 10 destrings standard_error; lines 204-208 are the paper's own 'PET robust check' using standard_error_win if !missing(standard_error), which reproduces this 539-of-927 subset exactly. Also verified there that sample_size == ln(nobs) for all 927 rows, which is why n_obs maps to nobs and not to sample_size."
+ },
+ "incentives": {
+  "effect": "pcc",
+  "se": "se_pcc",
+  "filters": [
+   {
+    "column": "include",
+    "in": [
+     1
+    ]
+   },
+   {
+    "column": "bma",
+    "in": [
+     1
+    ]
+   }
+  ],
+  "units": "partial correlation coefficient",
+  "verified_by": "incentives.do lines 57-60 drop include==2 and bma==0 to form the baseline sample. The mean partial correlation on that sample is 0.05118, matching the paper's stated 0.051 exactly (1,252 estimates). The previous mapping used cohens_d unfiltered, which is the paper's ROBUSTNESS dataset, not its baseline: 'For robustness checks, we consider two additional datasets. First, instead of correlations we look at Cohen's d.'",
+  "note": "Baseline is the partial correlation. Cohen's d and its standard error remain in the per-dataset file for anyone wanting the robustness variant."
+ },
+ "eis": {
+  "units": "elasticity",
+  "verified_by": "eis.do line 106 restricts DESCRIPTIVE statistics to abs(eis)<10; the regressions use all 2,735 rows with prec=1/se.",
+  "note": "All 2,735 estimates are included. The extremes (to +/-100,000, with standard errors that scale with them) are REAL weak-instrument Euler-equation estimates, not missing-value sentinels, and the paper keeps them, relying on precision weighting to down-weight them. If you compute a raw MEAN, apply abs(eis)<10 as the paper does for its descriptives: that gives 0.49, matching its reported 0.5, where the unrestricted mean is 41.7. The median is barely affected either way."
+ },
+ "activism": {
+  "compute": {
+   "type": "rescale_from_t",
+   "col": "Estimate",
+   "constant": 100.0,
+   "factor_col": "Multiplicator to obtain estimates in points (number)",
+   "t_col": "t-stats"
+  },
+  "units": "percent",
+  "verified_by": "activism.R sets data$elasticity <- data$Estim_adj and data$se_all <- data$Se_adj, having first deleted the raw Estimate and se columns; the second header row of the published workbook marks them 'Delete' for the same reason. Estim_adj = Estimate*100*Multiplicator, and the Multiplicator takes only the values 0.01 and 1, i.e. the raw column MIXES percent and decimal scales across studies. Reconstructing it gives a median of 0.489, matching the paper's Estim_adj.",
+  "note": "The analysis workbook (data_v14.xlsx) that holds Estim_adj and Se_adj directly was never published, so the comparable estimate is reconstructed from the two columns that were. The paper recovers standard errors from p-values where Se_adj is missing; that step needs the unpublished file, so here the standard error is derived from the reported t-statistic instead and rows without one are dropped. Pooling the RAW Estimate column would silently mix two scales."
+ },
+ "gasoline": {
+  "units": "elasticity",
+  "verified_by": "init.do generates se as abs(e/tstat), which is reproduced here. gas_income_revision.dta's 'e' equals mra-data.dta's Ystat exactly (n=701, mean 0.6589), matching the abstract's long-run figure.",
+  "note": "LONG-RUN estimates only. The published gas_income_revision.dta is the long-run subsample; the paper's headline is both horizons (short-run mean 0.28, long-run 0.66). The 845 SHORT-RUN estimates are in mra-data.dta, inside the same gasoline/data.zip, as Ysr with t-statistic tYsr. They are not yet in the harmonised table."
+ },
+ "frisch": {
+  "units": "elasticity",
+  "note": "Extensive-margin estimates only; the intensive margin is a separate file (data_intensive.xlsx). 532 of 723 rows have a usable standard error. The paper does not drop the rest, it imputes a per-study bootstrapped standard error, which cannot be reproduced without the bootstrap inputs, so they are excluded here rather than filled.",
+  "verified_by": "frisch.do: 'gen tstat = frisch/se' and 'winsor2 frisch se, cuts(5 95)' confirm frisch/se as the analysis columns. 532 of 723 rows have a usable standard error (538 non-missing, less 6 zeros). The paper imputes the remainder from a per-study bootstrap rather than dropping them; that input was not published, so they are excluded here rather than filled."
+ },
+ "inflation": {
+  "units": "percentage points",
+  "note": "Uses the paper's WINSORISED estimate column (Estimate_win): 45 rows sit exactly at the lower bound -3.85 and 42 at the upper bound 6.0. That is what the paper analyses, but it departs from this collection's usual raw-tails policy and the clumps at the bounds will be visible in any funnel plot."
+ },
+ "class": {
+  "note": "Two of 2,819 rows carry a partial correlation outside [-1,1] (1.372 and 1.116), taken straight from the source pcc column. They are almost certainly coding errors in the original file. Kept rather than silently dropped, so the mirror stays faithful to what was published — filter on abs(effect)<=1 if you need a strictly valid correlation."
+ },
+ "dst": {
+  "verified_by": "dst.do labels ESTIMATE 'Estimate of the DST impact (in %)' and runs 'ivreg2 ESTIMATE SE, cluster(...)' as its main FAT-PET regression. 101 of 162 rows have ESTIMATE, SE, TSTAT and PRECISION jointly non-null; the other 61 have all four blank, so the loss is a genuinely unreported standard error, not a column choice."
+ },
+ "excess_sensitivity": {
+  "verified_by": "excess.do lines 14-15: 'gen prec=1/se' and 'gen tstat=excess/se', used through the funnel-asymmetry regressions (e.g. 'ivreg2 excess se if micro==1'). All 3,127 rows carry both. The separate mpc/mpc_se pair is a different estimand and is excluded by the paper's own BMA export."
+ },
+ "habits": {
+  "verified_by": "habit.do applies 'drop if missing(se)' and winsorises the standard error only, with no trimming of habit itself: 606 rows less 9 missing se = 597, matching the abstract's '597 estimates from 81 published studies'. 125 of 597 fall outside the theoretical [0,1] range; the paper neither trims nor remarks on it, and this is known behaviour for GMM/DSGE habit estimates."
+ }
+}

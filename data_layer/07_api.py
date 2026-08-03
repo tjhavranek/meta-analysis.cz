@@ -1,0 +1,297 @@
+"""Tier A+D: static JSON API — datasets index, Frictionless datapackage, Croissant."""
+import json, os, re, warnings; warnings.filterwarnings("ignore")
+import os, sys
+sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
+from _paths import WORK, SITE
+
+OUT=os.path.join(WORK,"out"); BASE="https://meta-analysis.cz"
+VERSION="1.0.0"; DATA_V="v1"
+
+papers={p["project"]:p for p in json.load(open(os.path.join(SITE,"tools","papers.json"),encoding="utf-8"))}
+man={m["project"]:m for m in json.load(open(os.path.join(WORK,"convert_manifest.json"),encoding="utf-8"))}
+res=json.load(open(os.path.join(WORK,"resolved2.json"),encoding="utf-8"))
+def _load(n):
+    q=os.path.join(WORK,n)
+    return json.load(open(q,encoding="utf-8")) if os.path.exists(q) else {}
+UNITS=_load("units.json"); OVR=_load("overrides.json"); PRIM=_load("primaries.json")
+try: harm=json.load(open(os.path.join(WORK,"harmonised_report.json"),encoding="utf-8"))
+except Exception: harm={"projects":{},"n_rows":None,"columns":[]}
+
+import pandas as _pd
+try: _H=_pd.read_parquet(os.path.join(OUT,"data",DATA_V,"estimates_harmonised.parquet"))
+except Exception: _H=None
+_NH=(_H.groupby("dataset").size().to_dict() if _H is not None else {})
+
+def claimed_n(pap):
+    """How many estimates the paper itself says it uses."""
+    t=((pap or {}).get("one_line") or "")+" "+((pap or {}).get("abstract") or "")
+    m=re.search(r"([\d,]{3,})\s+estimates",t)
+    return int(m.group(1).replace(",","")) if m else None
+
+# Which literatures actually received a domain review, and which rest on the
+# arithmetic pairing alone. Published as a field so users can filter on review
+# quality instead of reading prose. The arithmetic test proves an (effect, se)
+# PAIRING; it cannot tell a headline estimand from a robustness one.
+DOMAIN_REVIEWED = {"activism","gasoline","frisch","dst","electricity","excess_sensitivity",
+                   "discrate","learning","eis","incentives","habits","reforms",
+                   "lags","price_puzzle","climate","house_prices","forward",
+                   "fdi","scc","bma","spillovers"}
+
+def _audit_status(proj):
+    o=OVR.get(proj) or {}; r=res.get(proj) or {}
+    if o.get("alias_of"): return "duplicate_excluded"
+    if o.get("exclude"):  return "excluded_no_precision"
+    # A reviewed literature that needed NO change has no override. Absence of an
+    # override is evidence it passed, not evidence it was never looked at.
+    if proj in DOMAIN_REVIEWED: return "domain_reviewed"
+    if o.get("verified_by"): return "code_traced"
+    ev=(r.get("evidence") or "")
+    if ev.startswith("t_match:") and (r.get("score") or 0)>=90: return "arithmetic_pairing_only"
+    return "unresolved"
+
+# Two projects can share one source FILE while being different literatures
+# (bma/spillovers take the horizontal and vertical halves of one FDI database;
+# lags/price_puzzle use different columns of one monetary-policy database).
+# That is NOT duplication and must not be reported as it.
+SHARED_SOURCE = {"bma":"spillovers", "spillovers":"bma",
+                 "lags":"price_puzzle", "price_puzzle":"lags"}
+
+def _core_cols(proj):
+    o=OVR.get(proj) or {}; r=res.get(proj) or {}
+    cmp_=o.get("compute")
+    if cmp_ and cmp_.get("type")=="pcc_from_t":
+        return dict(effect=f"partial correlation computed from {cmp_['t_col']} and {cmp_['df_col']}",
+                    standard_error=f"computed as sqrt((1-r^2)/{cmp_['df_col']})",
+                    standard_error_note="derived, not read from a column", evidence="paper's replication code")
+    if cmp_ and cmp_.get("type")=="rescale_from_t":
+        return dict(effect=f"{cmp_['col']} rescaled by {cmp_.get('constant',1)} x {cmp_['factor_col']}",
+                    standard_error=f"derived as |effect/{cmp_['t_col']}|",
+                    standard_error_note="derived, not read from a column", evidence="paper's replication code")
+    eff=o.get("effect") or r.get("effect")
+    se=o.get("se") or (None if r.get("se_derived") else r.get("se"))
+    if o.get("se_mean_of"): se="mean of "+" and ".join(o["se_mean_of"])
+    return dict(effect=eff, standard_error=se,
+                standard_error_note=(r.get("se") if r.get("se_derived") and not se else None),
+                evidence=("paper's replication code" if o.get("verified_by") else r.get("evidence")))
+
+def _recon_note(proj,pap):
+    """Explain a gap between the abstract's count and the pooled rows.
+
+    A smaller count is often CORRECT: several papers collect N estimates but analyse
+    a documented subset, and we reproduce the subset by applying their own filters.
+    Saying "fewer than the paper reports" there would imply a defect that is not one.
+    """
+    c,n=claimed_n(pap),_NH.get(proj)
+    if not (c and n): return None
+    if n==c: return "matches the paper exactly"
+    d=n-c
+    if (OVR.get(proj) or {}).get("filters") or (OVR.get(proj) or {}).get("compute"):
+        return (f"{d:+d} rows against the abstract's count, and correctly so: the paper's own replication "
+                f"code restricts to an analysis subset, reproduced here. See column_mapping_verified_by.")
+    if d > 0:
+        return (f"{d:+d} rows MORE than the abstract states. The abstract's figure may count studies or a "
+                f"sub-sample differently; the published file is the source of truth here. Unexplained.")
+    return (f"{d:+d} rows against the paper's count, usually because the published file has no usable "
+            f"standard error on the remainder. See this dataset's note and column_mapping_verified_by.")
+
+def doi_of(p):
+    u=(p or {}).get("doi_or_publisher_url") or ""
+    m=re.search(r"(10\.\d{4,9}/[^\s\"'<>]+)",u)
+    return "https://doi.org/"+m.group(1) if m else (u or None)
+
+datasets=[]
+for proj in sorted(man):
+    m=man[proj]; r=res.get(proj,{}); pap=papers.get(proj,{})
+    if m["status"]!="ok":
+        datasets.append(dict(id=proj,status=m["status"],reason=m.get("reason"),
+                             paper=dict(title=pap.get("title"),url=f"{BASE}/{proj}/"))); continue
+    d=dict(
+      id=proj,
+      paper=dict(title=pap.get("title"), authors=pap.get("authors"), year=pap.get("year"),
+                 journal=pap.get("journal"), doi=doi_of(pap), url=f"{BASE}/{proj}/"),
+      description=pap.get("one_line") or None,
+      n_estimates=m["rows"], n_variables=m["cols"],
+      # m["rows"] is rows in the published FILE. Where two papers share one file
+      # (bma/spillovers take the horizontal and vertical halves of one FDI database)
+      # that number belongs to neither literature on its own, so also expose the
+      # count after the paper's own filters.
+      n_estimates_in_literature=(_NH.get(proj) if _NH.get(proj) else m["rows"]),
+      # A dataset extracted from a zip must advertise the ZIP, not the member path:
+      # site/euro/trade_meta.dta does not exist, site/euro/data.zip does.
+      source_file=(f"{BASE}/{proj}/{(PRIM.get(proj) or {}).get('archive')}"
+                   if (PRIM.get(proj) or {}).get("source")=="zip"
+                   else f"{BASE}/{proj}/{m['source']}"),
+      source_member=((PRIM.get(proj) or {}).get("member")
+                     if (PRIM.get(proj) or {}).get("source")=="zip" else None),
+      source_sheet=m.get("sheet"),
+      files=dict(
+        parquet=f"{BASE}/data/{DATA_V}/{proj}/{proj}.parquet",
+        csv=f"{BASE}/data/{DATA_V}/{proj}/{proj}.csv" if m.get("csv_bytes") else None,
+        codebook=f"{BASE}/api/{DATA_V}/codebooks/{proj}.json"),
+      # Must report the mapping ACTUALLY USED. An override supersedes the resolver, and
+      # reporting the resolver's guess here advertised `cohens_d` for incentives while the
+      # harmonised table used `pcc` — a machine-readable lie.
+      core_columns=_core_cols(proj),
+      effect_units=((UNITS.get(proj) or {}).get("units") or (OVR.get(proj) or {}).get("units")),
+      direction_note=(UNITS.get(proj) or {}).get("direction_note"),
+      column_mapping_verified_by=(OVR.get(proj) or {}).get("verified_by"),
+      in_harmonised_table=bool((harm.get("projects",{}).get(proj) or {}).get("included")),
+      reconciliation=dict(
+        n_estimates_reported_in_paper=claimed_n(pap),
+        n_rows_in_harmonised_table=_NH.get(proj),
+        note=_recon_note(proj,pap)),
+      excluded_from_harmonised_because=(None if (harm.get("projects",{}).get(proj) or {}).get("included")
+                                        else (harm.get("projects",{}).get(proj) or {}).get("reason")),
+      duplicate_of=((OVR.get(proj) or {}).get("alias_of")
+                    if "alias_of" in (OVR.get(proj) or {}) else r.get("alias_of")),
+      shares_source_file_with=SHARED_SOURCE.get(proj),
+      # Rights in the underlying research data are NOT ours to grant: these
+      # datasets were assembled by author teams that mostly extend beyond this
+      # site's maintainers. 'unspecified' means no open licence is established,
+      # not that reuse is permitted. See /LICENSE section 2.
+      rights_status="unspecified",
+      license_url=None,
+      rights_note=("Format conversions of the source dataset; rights inherit from it. "
+                   "The collection licence covers the index, codebooks and harmonisation, "
+                   "not this dataset. Cite the paper, and check with its authors if your "
+                   "use needs an explicit reuse right."),
+      audit_status=_audit_status(proj))
+    if d["duplicate_of"]:
+        d["note"]=((OVR.get(proj) or {}).get("note")
+                   or f"Same estimates as '{d['duplicate_of']}'; excluded from the harmonised "
+                      f"table to avoid double counting.")
+    elif d["shares_source_file_with"]:
+        d["note"]=((OVR.get(proj) or {}).get("note")
+                   or f"Shares a source FILE with '{d['shares_source_file_with']}' but uses different "
+                      f"columns or rows. A distinct literature, NOT a duplicate, and pooled on its own.")
+    datasets.append(d)
+
+ok=[d for d in datasets if d.get("n_estimates")]
+# No $schema key: there is no JSON Schema document for this index, and the URL that
+# used to be advertised here 404s. An unresolvable $schema is worse than none — it
+# tells a validator to fetch something that is not there.
+index=dict(
+  name="meta-analysis.cz data API", version=VERSION,
+  description=("Estimate-level datasets from meta-analyses in economics and the social sciences, "
+               "with the hand-coded study characteristics collected for each paper."),
+  license=dict(
+    newly_authored_structure="CC-BY-4.0",
+    newly_authored_software="MIT",
+    underlying_datasets="not licensed here - see each dataset's rights_status",
+    url=f"{BASE}/LICENSE",
+    note=("CC BY 4.0 covers the compilation, index, codebooks and harmonisation mappings only. "
+          "It does NOT relicense the underlying research datasets, their format conversions, or "
+          "the papers' own replication code, none of which are ours to grant. Cite both the "
+          "collection and the individual paper.")),
+  cite_as="Havranek, T. and Z. Irsova (2026). meta-analysis.cz: data and code for meta-analyses in economics.",
+  endpoints={
+    "datasets":f"{BASE}/api/{DATA_V}/datasets.json",
+    "codebook":f"{BASE}/api/{DATA_V}/codebooks/{{id}}.json",
+    "datapackage":f"{BASE}/api/{DATA_V}/datapackage.json",
+    "croissant":f"{BASE}/api/{DATA_V}/croissant.json",
+    "harmonised_parquet":f"{BASE}/data/{DATA_V}/estimates_harmonised.parquet",
+    "harmonised_csv":f"{BASE}/data/{DATA_V}/estimates_harmonised.csv"},
+  # THREE different numbers, all correct, previously conflated into one. The catalogue
+  # sums to the middle one, so advertising only the first made ~4,000 estimates look lost.
+  counts=dict(
+    datasets=len(ok),
+    rows_in_source_files=sum(d["n_estimates"] for d in ok),
+    estimates_in_analysis_samples=sum(d.get("n_estimates_in_literature") or d["n_estimates"] for d in ok),
+    estimates_in_harmonised_table=(harm.get("n_rows") or 0),
+    literatures_in_harmonised_table=(harm.get("n_datasets") or 0),
+    in_harmonised_table=sum(1 for d in ok if d["in_harmonised_table"]),
+    counts_explained=("rows_in_source_files counts every row of the 44 converted files. "
+                      "estimates_in_analysis_samples applies each paper's own filters and is what "
+                      "the catalogue table shows. estimates_in_harmonised_table additionally drops "
+                      "the literatures that duplicate another or lack per-estimate precision.")),
+  harmonised_table=dict(
+    version="0.9.0-beta", status="beta",
+    n_rows=harm.get("n_rows"), n_literatures=harm.get("n_datasets"),
+    columns=harm.get("columns"),
+    parquet=f"{BASE}/data/{DATA_V}/estimates_harmonised.parquet",
+    csv=f"{BASE}/data/{DATA_V}/estimates_harmonised.csv",
+    notes=[
+      "One row per estimate, pooled across literatures.",
+      "Raw effect levels are not comparable across literatures; see effect_units. Analyse within "
+      "each literature. Comparing across them needs an explicitly standardised measure, and "
+      "relative changes are meaningful only where the baseline is safely away from zero.",
+      "Moderator columns are populated only where the source dataset recorded them; check for nulls.",
+      "source_file, effect_col and se_col identify the origin of every value, so any row can be "
+      "traced to the published dataset and checked.",
+      "se_is_derived marks rows whose standard error was reconstructed rather than read directly.",
+      "Column mappings were resolved arithmetically (effect/se must reproduce the reported "
+      "t-statistic) and, where that was not decisive, taken from the paper's own replication code.",
+      "Beta: the harmonisation may be revised. THERE IS NO DOI DEPOSIT YET. For a reference that "
+      "does not move, pin the version string and the file checksum."],
+    excluded={p:v.get("reason") for p,v in (harm.get("projects") or {}).items()
+              if not v.get("included")}),
+  datasets=datasets)
+
+api=os.path.join(OUT,"api",DATA_V); os.makedirs(api,exist_ok=True)
+json.dump(index,open(os.path.join(api,"datasets.json"),"w",encoding="utf-8"),indent=1,ensure_ascii=False)
+
+# Frictionless Data Package
+dp=dict(profile="tabular-data-package", name="meta-analysis-cz", version=VERSION,
+        title="meta-analysis.cz estimate-level datasets",
+        # NO package-level `licenses`: under Frictionless semantics it would be read as
+        # covering all 44 resources, and their rights are not ours to grant. The descriptor
+        # itself is CC BY; the data it points at is not necessarily.
+        description=("Descriptor, schemas and column roles are CC BY 4.0. The DATA each resource "
+                     "points to is not relicensed by this package: every underlying dataset was "
+                     "assembled for a specific paper by its own author team. See "
+                     + BASE + "/LICENSE and the rights_status field in datasets.json."),
+        homepage=BASE, resources=[])
+for d in ok:
+    try: cb=json.load(open(os.path.join(OUT,"api",DATA_V,"codebooks",f"{d['id']}.json"),encoding="utf-8"))
+    except Exception: continue
+    fields=[dict(name=c["name"],
+                 type=("number" if c["dtype"].startswith(("float","int")) else "string"),
+                 description=c.get("role")) for c in cb["columns"]]
+    if d["files"]["csv"]:
+        dp["resources"].append(dict(name=d["id"], path=d["files"]["csv"], format="csv",
+                                    mediatype="text/csv", schema=dict(fields=fields),
+                                    title=(d["paper"] or {}).get("title"),
+                                    rights_status=d.get("rights_status"),
+                                    sources=[{"title": (d["paper"] or {}).get("title"),
+                                              "path": (d["paper"] or {}).get("doi")
+                                                      or (d["paper"] or {}).get("url")}],
+                                    description=("Format conversion of the dataset published with "
+                                                 "this paper. Rights inherit from the source; cite "
+                                                 "the paper.")))
+json.dump(dp,open(os.path.join(api,"datapackage.json"),"w",encoding="utf-8"),indent=1,ensure_ascii=False)
+
+# MLCommons Croissant
+cr={"@context":{"@vocab":"https://schema.org/","cr":"http://mlcommons.org/croissant/",
+                "sc":"https://schema.org/","data":{"@id":"cr:data","@type":"@json"},
+                "recordSet":"cr:recordSet","field":"cr:field","fileObject":"cr:fileObject",
+                "distribution":"cr:distribution","dataType":{"@id":"cr:dataType","@type":"@vocab"}},
+    "@type":"sc:Dataset","conformsTo":"http://mlcommons.org/croissant/1.0",
+    "name":"meta-analysis-cz","version":VERSION,
+    "description":("Estimate-level data from meta-analyses in economics and the social sciences. "
+                   f"{len(ok)} datasets, {sum(d['n_estimates'] for d in ok):,} estimates, each with the "
+                   "hand-coded study and design characteristics collected for the original paper. "
+                   "LICENCE: the index, codebooks and harmonisation mappings are CC BY 4.0. The "
+                   "underlying research datasets are NOT relicensed - each was assembled for a "
+                   "specific paper by its own author team, and datasets.json records a rights_status "
+                   "for every one. Cite both the collection and the individual paper."),
+    "url":BASE,
+    # Deliberately the terms page, not a bare CC BY: this record lists distributions of the
+    # underlying research data, which CC BY does not cover. ML tooling reads this field, so
+    # it must not overstate. The compilation's CC BY is described in the text below.
+    "license":BASE+"/LICENSE",
+    "citation":index["cite_as"],
+    "keywords":["meta-analysis","publication bias","economics","effect size","research synthesis"],
+    "creator":[{"@type":"Person","name":"Tomas Havranek"},{"@type":"Person","name":"Zuzana Irsova"}],
+    "distribution":[{"@type":"cr:FileObject","@id":d["id"]+".parquet","name":d["id"]+".parquet",
+                     "contentUrl":d["files"]["parquet"],"encodingFormat":"application/vnd.apache.parquet",
+                     "sha256":"see codebook"} for d in ok],
+    "recordSet":[{"@type":"cr:RecordSet","@id":d["id"],"name":d["id"],
+                  "description":(d["paper"] or {}).get("title")} for d in ok]}
+json.dump(cr,open(os.path.join(api,"croissant.json"),"w",encoding="utf-8"),indent=1,ensure_ascii=False)
+
+print(f"datasets.json: {len(datasets)} entries ({len(ok)} with data), "
+      f"{sum(d['n_estimates'] for d in ok):,} estimates")
+print(f"with DOI: {sum(1 for d in ok if (d['paper'] or {}).get('doi'))} | "
+      f"datapackage resources: {len(dp['resources'])}")
+missing=[d["id"] for d in ok if not (d["paper"] or {}).get("title")]
+if missing: print("no papers.json entry:", ", ".join(missing))
