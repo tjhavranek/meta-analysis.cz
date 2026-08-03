@@ -107,6 +107,7 @@
    "n_estimates": 1974,
    "n_variables": 159,
    "source_file": "https://meta-analysis.cz/activism/activism.xlsx",
+   "source_member": null,
    "source_sheet": "Data",
    "files": {
     "parquet": "https://meta-analysis.cz/data/v1/activism/activism.parquet",
@@ -151,6 +152,7 @@
    "n_estimates": 1019,
    "n_variables": 82,
    "source_file": "https://meta-analysis.cz/alphas/alphas.xlsx",
+   "source_member": null,
    "source_sheet": "data",
    "files": {
     "parquet": "https://meta-analysis.cz/data/v1/alphas/alphas.parquet",
@@ -195,6 +197,7 @@
    "n_estimates": 3524,
    "n_variables": 76,
    "source_file": "https://meta-analysis.cz/armington/armington.xlsx",
+   "source_member": null,
    "source_sheet": "data",
    "files": {
     "parquet": "https://meta-analysis.cz/data/v1/armington/armington.parquet",
@@ -239,6 +242,7 @@
    "n_estimates": 1159,
    "n_variables": 56,
    "source_file": "https://meta-analysis.cz/beauty/beauty.xlsx",
+   "source_member": null,
    "source_sheet": "data",
    "files": {
     "parquet": "https://meta-analysis.cz/data/v1/beauty/beauty.parquet",
@@ -281,6 +285,7 @@
    "n_estimates": 4147,
    "n_variables": 101,
    "source_file": "https://meta-analysis.cz/bma/determinants.xls",
+   "source_member": null,
    "source_sheet": "stata",
    "files": {
     "parquet": "https://meta-analysis.cz/data/v1/bma/bma.parquet",
@@ -323,6 +328,7 @@
    "n_estimates": 1271,
    "n_variables": 61,
    "source_file": "https://meta-analysis.cz/border/border.dta",
+   "source_member": null,
    "source_sheet": null,
    "files": {
     "parquet": "https://meta-analysis.cz/data/v1/border/border.parquet",
@@ -367,6 +373,7 @@
    "n_estimates": 2906,
    "n_variables": 67,
    "source_file": "https://meta-analysis.cz/class/class.xlsx",
+   "source_member": null,
    "source_sheet": "data",
    "files": {
     "parquet": "https://meta-analysis.cz/data/v1/class/class.parquet",
@@ -409,6 +416,7 @@
    "n_estimates": 48,
    "n_variables": 27,
    "source_file": "https://meta-analysis.cz/climate/climate.dta",
+   "source_member": null,
    "source_sheet": null,
    "files": {
     "parquet": "https://meta-analysis.cz/data/v1/climate/climate.parquet",
@@ -451,6 +459,7 @@
    "n_estimates": 598,
    "n_variables": 39,
    "source_file": "https://meta-analysis.cz/competition/competition.xlsx",
+   "source_member": null,
    "source_sheet": "List1",
    "files": {
     "parquet": "https://meta-analysis.cz/data/v1/competition/competition.parquet",
@@ -494,6 +503,7 @@
    "n_estimates": 927,
    "n_variables": 38,
    "source_file": "https://meta-analysis.cz/discrate/discrate.dta",
+   "source_member": null,
    "source_sheet": null,
    "files": {
     "parquet": "https://meta-analysis.cz/data/v1/discrate/discrate.parquet",
@@ -537,6 +547,7 @@
    "n_estimates": 162,
    "n_variables": 36,
    "source_file": "https://meta-analysis.cz/dst/dst.xlsx",
+   "source_member": null,
    "source_sheet": "STATA",
    "files": {
     "parquet": "https://meta-analysis.cz/data/v1/dst/dst.parquet",
@@ -580,6 +591,7 @@
    "n_estimates": 442,
    "n_variables": 50,
    "source_file": "https://meta-analysis.cz/education/education.xlsx",
+   "source_member": null,
    "source_sheet": "data",
    "files": {
     "parquet": "https://meta-analysis.cz/data/v1/education/education.parquet",
@@ -620,7 +632,8 @@
    "description": "Meta-analysis of 2,735 EIS estimates finds strong selective reporting inflates the elasticity of intertemporal substitution.",
    "n_estimates": 2735,
    "n_variables": 52,
-   "source_file": "eis/eis.dta",
+   "source_file": "https://meta-analysis.cz/eis/eis.zip",
+   "source_member": "eis/eis.dta",
    "source_sheet": null,
    "files": {
     "parquet": "https://meta-analysis.cz/data/v1/eis/eis.parquet",
@@ -666,6 +679,7 @@
    "n_estimates": 4720,
    "n_variables": 72,
    "source_file": "https://meta-analysis.cz/electricity/electricity.xlsx",
+   "source_member": null,
    "source_sheet": "data",
    "files": {
     "parquet": "https://meta-analysis.cz/data/v1/electricity/electricity.parquet",
@@ -709,6 +723,7 @@
    "n_estimates": 533,
    "n_variables": 65,
    "source_file": "https://meta-analysis.cz/esg/esg_data.xlsx",
+   "source_member": null,
    "source_sheet": "Data",
    "files": {
     "parquet": "https://meta-analysis.cz/data/v1/esg/esg.parquet",
@@ -749,7 +764,8 @@
    "description": "Meta-analysis finds the euro's trade-promoting effect is insignificant once publication bias is corrected for.",
    "n_estimates": 61,
    "n_variables": 48,
-   "source_file": "https://meta-analysis.cz/euro/trade_meta.dta",
+   "source_file": "https://meta-analysis.cz/euro/data.zip",
+   "source_member": "trade_meta.dta",
    "source_sheet": null,
    "files": {
     "parquet": "https://meta-analysis.cz/data/v1/euro/euro.parquet",
@@ -800,7 +816,8 @@
    "description": "Meta-analysis of 144 studies finds little excess sensitivity of consumption once micro data, publication bias, and liquidity constraints are addressed.",
    "n_estimates": 3127,
    "n_variables": 75,
-   "source_file": "https://meta-analysis.cz/excess_sensitivity/excess.dta",
+   "source_file": "https://meta-analysis.cz/excess_sensitivity/data_code.zip",
+   "source_member": "excess.dta",
    "source_sheet": null,
    "files": {
     "parquet": "https://meta-analysis.cz/data/v1/excess_sensitivity/excess_sensitivity.parquet",
@@ -843,7 +860,8 @@
    "description": "Meta-analysis of 332 estimates finds FDI spillovers raise Czech domestic firm productivity, larger for joint ventures.",
    "n_estimates": 332,
    "n_variables": 23,
-   "source_file": "https://meta-analysis.cz/fdi/spillovers.dta",
+   "source_file": "https://meta-analysis.cz/fdi/spillovers.zip",
+   "source_member": "spillovers.dta",
    "source_sheet": null,
    "files": {
     "parquet": "https://meta-analysis.cz/data/v1/fdi/fdi.parquet",
@@ -887,6 +905,7 @@
    "n_estimates": 3643,
    "n_variables": 82,
    "source_file": "https://meta-analysis.cz/forward/forward.dta",
+   "source_member": null,
    "source_sheet": null,
    "files": {
     "parquet": "https://meta-analysis.cz/data/v1/forward/forward.parquet",
@@ -931,6 +950,7 @@
    "n_estimates": 723,
    "n_variables": 49,
    "source_file": "https://meta-analysis.cz/frisch/frisch.dta",
+   "source_member": null,
    "source_sheet": null,
    "files": {
     "parquet": "https://meta-analysis.cz/data/v1/frisch/frisch.parquet",
@@ -972,7 +992,8 @@
    "description": "Meta-regression corrects for publication bias, finding gasoline demand income elasticity of 0.1 short run and 0.23 long run.",
    "n_estimates": 701,
    "n_variables": 32,
-   "source_file": "https://meta-analysis.cz/gasoline/gas_income_revision.dta",
+   "source_file": "https://meta-analysis.cz/gasoline/data.zip",
+   "source_member": "gas_income_revision.dta",
    "source_sheet": null,
    "files": {
     "parquet": "https://meta-analysis.cz/data/v1/gasoline/gasoline.parquet",
@@ -1015,7 +1036,8 @@
    "description": "Meta-analysis shows published gasoline demand elasticities are exaggerated twofold due to publication selection bias.",
    "n_estimates": 202,
    "n_variables": 11,
-   "source_file": "https://meta-analysis.cz/gasoline_price/papers_revised.xls",
+   "source_file": "https://meta-analysis.cz/gasoline_price/data.zip",
+   "source_member": "papers_revised.xls",
    "source_sheet": "data",
    "files": {
     "parquet": "https://meta-analysis.cz/data/v1/gasoline_price/gasoline_price.parquet",
@@ -1059,6 +1081,7 @@
    "n_estimates": 606,
    "n_variables": 41,
    "source_file": "https://meta-analysis.cz/habits/habit.dta",
+   "source_member": null,
    "source_sheet": null,
    "files": {
     "parquet": "https://meta-analysis.cz/data/v1/habits/habits.parquet",
@@ -1103,6 +1126,7 @@
    "n_estimates": 1019,
    "n_variables": 29,
    "source_file": "https://meta-analysis.cz/hedge/hedge.xlsx",
+   "source_member": null,
    "source_sheet": "data",
    "files": {
     "parquet": "https://meta-analysis.cz/data/v1/hedge/hedge.parquet",
@@ -1146,6 +1170,7 @@
    "n_estimates": 1785,
    "n_variables": 123,
    "source_file": "https://meta-analysis.cz/house_prices/house.dta",
+   "source_member": null,
    "source_sheet": null,
    "files": {
     "parquet": "https://meta-analysis.cz/data/v1/house_prices/house_prices.parquet",
@@ -1192,6 +1217,7 @@
    "n_estimates": 2193,
    "n_variables": 72,
    "source_file": "https://meta-analysis.cz/incentives/incentives.xlsx",
+   "source_member": null,
    "source_sheet": "data",
    "files": {
     "parquet": "https://meta-analysis.cz/data/v1/incentives/incentives.parquet",
@@ -1237,6 +1263,7 @@
    "n_estimates": 885,
    "n_variables": 179,
    "source_file": "https://meta-analysis.cz/inflation/inflation_v34.dta",
+   "source_member": null,
    "source_sheet": null,
    "files": {
     "parquet": "https://meta-analysis.cz/data/v1/inflation/inflation.parquet",
@@ -1278,7 +1305,8 @@
    "description": "A meta-analysis of 67 studies finds monetary policy transmission lags average 29 months, longer in developed than transition economies.",
    "n_estimates": 1519,
    "n_variables": 151,
-   "source_file": "https://meta-analysis.cz/lags/lags.xls",
+   "source_file": "https://meta-analysis.cz/lags/lags.zip",
+   "source_member": "lags.xls",
    "source_sheet": "stata",
    "files": {
     "parquet": "https://meta-analysis.cz/data/v1/lags/lags.parquet",
@@ -1326,6 +1354,7 @@
    "n_estimates": 291,
    "n_variables": 13,
    "source_file": "https://meta-analysis.cz/learning/learning_loss_data.xlsx",
+   "source_member": null,
    "source_sheet": "Betthäuser",
    "files": {
     "parquet": "https://meta-analysis.cz/data/v1/learning/learning.parquet",
@@ -1379,6 +1408,7 @@
    "n_estimates": 1091,
    "n_variables": 57,
    "source_file": "https://meta-analysis.cz/migrant/migrant.xlsx",
+   "source_member": null,
    "source_sheet": "Sheet1",
    "files": {
     "parquet": "https://meta-analysis.cz/data/v1/migrant/migrant.parquet",
@@ -1431,6 +1461,7 @@
    "n_estimates": 1519,
    "n_variables": 151,
    "source_file": "https://meta-analysis.cz/price_puzzle/puzzle.xls",
+   "source_member": null,
    "source_sheet": "stata",
    "files": {
     "parquet": "https://meta-analysis.cz/data/v1/price_puzzle/price_puzzle.parquet",
@@ -1474,6 +1505,7 @@
    "n_estimates": 456,
    "n_variables": 42,
    "source_file": "https://meta-analysis.cz/reforms/reform.xls",
+   "source_member": null,
    "source_sheet": "reform",
    "files": {
     "parquet": "https://meta-analysis.cz/data/v1/reforms/reforms.parquet",
@@ -1517,6 +1549,7 @@
    "n_estimates": 538,
    "n_variables": 71,
    "source_file": "https://meta-analysis.cz/remittances/remittances.xlsx",
+   "source_member": null,
    "source_sheet": "Data",
    "files": {
     "parquet": "https://meta-analysis.cz/data/v1/remittances/remittances.parquet",
@@ -1560,6 +1593,7 @@
    "n_estimates": 605,
    "n_variables": 112,
    "source_file": "https://meta-analysis.cz/resource_curse/resource_curse.dta",
+   "source_member": null,
    "source_sheet": null,
    "files": {
     "parquet": "https://meta-analysis.cz/data/v1/resource_curse/resource_curse.parquet",
@@ -1603,6 +1637,7 @@
    "n_estimates": 1021,
    "n_variables": 61,
    "source_file": "https://meta-analysis.cz/risk/risk.dta",
+   "source_member": null,
    "source_sheet": null,
    "files": {
     "parquet": "https://meta-analysis.cz/data/v1/risk/risk.parquet",
@@ -1647,6 +1682,7 @@
    "n_estimates": 1144,
    "n_variables": 36,
    "source_file": "https://meta-analysis.cz/scc/scc.xlsx",
+   "source_member": null,
    "source_sheet": "stata",
    "files": {
     "parquet": "https://meta-analysis.cz/data/v1/scc/scc.parquet",
@@ -1691,6 +1727,7 @@
    "n_estimates": 3186,
    "n_variables": 115,
    "source_file": "https://meta-analysis.cz/sigma/sigma.dta",
+   "source_member": null,
    "source_sheet": null,
    "files": {
     "parquet": "https://meta-analysis.cz/data/v1/sigma/sigma.parquet",
@@ -1734,6 +1771,7 @@
    "n_estimates": 1746,
    "n_variables": 407,
    "source_file": "https://meta-analysis.cz/size/size.dta",
+   "source_member": null,
    "source_sheet": null,
    "files": {
     "parquet": "https://meta-analysis.cz/data/v1/size/size.parquet",
@@ -1778,6 +1816,7 @@
    "n_estimates": 1097,
    "n_variables": 50,
    "source_file": "https://meta-analysis.cz/skill/skill.dta",
+   "source_member": null,
    "source_sheet": null,
    "files": {
     "parquet": "https://meta-analysis.cz/data/v1/skill/skill.parquet",
@@ -1820,6 +1859,7 @@
    "n_estimates": 4147,
    "n_variables": 98,
    "source_file": "https://meta-analysis.cz/spillovers/data.xls",
+   "source_member": null,
    "source_sheet": "stata",
    "files": {
     "parquet": "https://meta-analysis.cz/data/v1/spillovers/spillovers.parquet",
@@ -1864,6 +1904,7 @@
    "n_estimates": 892,
    "n_variables": 59,
    "source_file": "https://meta-analysis.cz/students/students.xlsx",
+   "source_member": null,
    "source_sheet": "data",
    "files": {
     "parquet": "https://meta-analysis.cz/data/v1/students/students.parquet",
@@ -1908,6 +1949,7 @@
    "n_estimates": 2735,
    "n_variables": 65,
    "source_file": "https://meta-analysis.cz/substitution/eis_det.dta",
+   "source_member": null,
    "source_sheet": null,
    "files": {
     "parquet": "https://meta-analysis.cz/data/v1/substitution/substitution.parquet",
@@ -1953,6 +1995,7 @@
    "n_estimates": 1613,
    "n_variables": 45,
    "source_file": "https://meta-analysis.cz/trust/trust_data.csv",
+   "source_member": null,
    "source_sheet": null,
    "files": {
     "parquet": "https://meta-analysis.cz/data/v1/trust/trust.parquet",
@@ -1996,6 +2039,7 @@
    "n_estimates": 307,
    "n_variables": 53,
    "source_file": "https://meta-analysis.cz/water/water.xlsx",
+   "source_member": null,
    "source_sheet": "dataset",
    "files": {
     "parquet": "https://meta-analysis.cz/data/v1/water/water.parquet",
