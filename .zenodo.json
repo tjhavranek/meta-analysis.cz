@@ -1,0 +1,42 @@
+{
+ "title": "meta-analysis.cz: data and code for meta-analyses in economics",
+ "upload_type": "dataset",
+ "access_right": "open",
+ "license": "cc-by-4.0",
+ "creators": [
+  {
+   "name": "Havránek, Tomáš",
+   "affiliation": "Charles University, Prague",
+   "orcid": "0000-0002-3158-2539"
+  },
+  {
+   "name": "Iršová, Zuzana",
+   "affiliation": "Charles University, Prague",
+   "orcid": "0000-0002-0753-8124"
+  }
+ ],
+ "description": "<p>Estimate-level data from meta-analyses in economics and the social sciences, with the study and design characteristics hand-coded for each original paper.</p><p>The collection publishes 44 datasets and roughly 65,000 estimates. Each dataset ships as Parquet and CSV alongside a column-level codebook giving every variable's type, missingness and distribution. A harmonised table pools those literatures that share a common effect-and-standard-error structure into one file, one row per estimate, with the moderators that recur across literatures.</p><p>Which column holds the effect and which its standard error was resolved arithmetically rather than by name: the correct pair is the one for which the effect divided by its standard error reproduces the t-statistic the dataset already reports. Where that was not decisive, the mapping was taken from the paper's own published replication code, and the evidence is recorded per dataset.</p><p>Every row of the harmonised table carries the source file and the exact column names it came from, so any value can be traced back to the published dataset and checked. Effects are not comparable across literatures in raw units; an <code>effect_units</code> column records what each one measures.</p><p>The collection, its index, the codebooks and the harmonised table are released under CC BY 4.0. Each underlying dataset was assembled for a specific paper with its own authors: if you use an individual dataset, please cite its paper. The dataset index carries every paper's title, authors and DOI for that purpose.</p><p>The harmonised table is a beta release and may be revised.</p>",
+ "keywords": [
+  "meta-analysis",
+  "publication bias",
+  "research synthesis",
+  "economics",
+  "effect size",
+  "partial correlation",
+  "replication",
+  "open data"
+ ],
+ "related_identifiers": [
+  {
+   "identifier": "https://meta-analysis.cz",
+   "relation": "isDerivedFrom",
+   "scheme": "url"
+  },
+  {
+   "identifier": "https://meta-analysis.cz/api/v1/datasets.json",
+   "relation": "isDescribedBy",
+   "scheme": "url"
+  }
+ ],
+ "language": "eng"
+}

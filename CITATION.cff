@@ -1,0 +1,35 @@
+cff-version: 1.2.0
+title: "meta-analysis.cz: data and code for meta-analyses in economics"
+message: >-
+  If you use this collection, please cite it. If you use an individual dataset,
+  please also cite the paper it was assembled for — every dataset entry in
+  /api/v1/datasets.json carries that paper's title, authors and DOI.
+type: dataset
+authors:
+  - family-names: Havránek
+    given-names: Tomáš
+    orcid: "https://orcid.org/0000-0002-3158-2539"
+    affiliation: "Charles University, Prague"
+  - family-names: Iršová
+    given-names: Zuzana
+    orcid: "https://orcid.org/0000-0002-0753-8124"
+    affiliation: "Charles University, Prague"
+repository-code: "https://github.com/tjhavranek/meta-analysis.cz"
+url: "https://meta-analysis.cz"
+abstract: >-
+  Estimate-level data from meta-analyses in economics and the social sciences,
+  with the study and design characteristics hand-coded for each original paper.
+  Forty-four datasets and roughly 65,000 estimates, each published as Parquet and
+  CSV with a column-level codebook, plus a harmonised table pooling those
+  literatures that share a common effect-and-standard-error structure. Column
+  mappings were resolved arithmetically, by requiring that the effect divided by
+  its standard error reproduce the t-statistic each dataset already reports, and
+  otherwise taken from each paper's own replication code.
+keywords:
+  - meta-analysis
+  - publication bias
+  - research synthesis
+  - economics
+  - effect size
+  - replication
+license: CC-BY-4.0

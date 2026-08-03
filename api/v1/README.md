@@ -45,7 +45,7 @@ curl -s https://meta-analysis.cz/api/v1/datasets.json | jq '.datasets[] | {id, n
 
 ## The harmonised table
 
-One row per estimate, pooled across literatures. Version **0.9.0-beta**.
+One row per estimate, pooled across literatures: **56,466 estimates from 39 literatures**. Version **0.9.0-beta**.
 
 Core columns are present for every row: `dataset`, `study_id`, `estimate_id`,
 `effect`, `se`, `t_stat`, `precision`. The rest are harmonised moderators, and
@@ -84,29 +84,61 @@ which is what the underlying papers do. As a worked check, FAT-PET run on the
 1st–99th percentile winsorised data reproduces the published conclusions:
 `education` corrects to about 0.02 and `excess_sensitivity` to about 0.01, both
 of which their papers describe as near zero, and `forward` corrects to 0.92
-against a null of 1. Sixteen of the 41 literatures show a
+against a null of 1. Sixteen of the 39 literatures show a
 publication-bias intercept beyond ±1.96.
 
 Per-column minimum, maximum, median and quartiles for every dataset are in its
 codebook, so you can see the tails before you load anything.
 
+One more thing worth knowing if you use `n_obs` as an instrument, as MAIVE does:
+two source files store the sample size as its logarithm rather than as a count.
+`n_obs` here is always a count — a log column is either replaced by the raw one
+from the same file or exponentiated, and `datasets.json` records where that
+happened. Check `effect_units` and the direction notes too: a few literatures
+store proportions where the paper reports percentages, and two store inverse
+elasticities, where dropping the inversion reverses the finding.
+
 ## What is not in the harmonised table, and why
 
-Four literatures on the site are published as datasets but cannot join an
-effect/standard-error table. The reasons are recorded in `datasets.json` and in
-the harmonisation report:
+Every dataset on the site is published. Some cannot join a pooled
+effect/standard-error table, and the reason is recorded for each in
+`datasets.json`.
 
-- **`fdi`** — the file carries no standard error, t-statistic or weight, so no
-  per-estimate precision exists. Model averaging over its moderators still works;
-  that is what the original paper does.
-- **`lags`** — its outcome is a transmission lag in months, which has no sampling
-  standard error.
+**No per-estimate precision exists:**
+
+- **`fdi`** — no standard error, t-statistic or weight anywhere in the file.
+  Model averaging over its moderators still works; that is what the paper does.
+- **`lags`** — its outcome is a transmission lag in months, which has no
+  sampling standard error.
 - **`ews`**, **`pcc`** — a country-level crisis database and a literature search
   listing. Neither is a set of extracted estimates.
 
-Two further projects (`spillovers`, `substitution`) share their underlying data
-with another project and are excluded to avoid double counting. `price_puzzle`
-shares a source *file* with `lags` but uses different columns, so both are kept.
+**Two papers written on one dataset.** Keeping both would count the same
+estimates twice and present one literature as two independent ones:
+
+- **`hedge`** — the same 1,019 estimates as `alphas`, identical row by row.
+  `alphas` is pooled; cite the published *Journal of Economic Surveys* 2024
+  version for these estimates.
+- **`substitution`** — the same 2,735 estimates as `eis`. Two papers, one
+  dataset. It carries additional country-level moderators and is published in
+  full.
+- **`trust`** — shares 1,256 estimates with `size`. Not an exact duplicate:
+  `trust` is a later, larger collection (105 studies) of the same literature,
+  the size premium, that `size` (98 studies) first assembled. `size` is pooled
+  because it carries far more of the shared moderators, but **if the size
+  premium is your subject, use `trust`** — it is the more recent and more
+  complete collection.
+
+`price_puzzle` and `lags` share a source *file* but use different columns of it,
+so both are kept. So are `bma` and `spillovers`, which take the horizontal and
+vertical halves of one FDI database.
+
+These overlaps were found by comparing the (effect, standard error) value sets
+of every pair of literatures. That check now runs on every build: a complete
+overlap fails outright, and a partial one fails too unless it has been ruled on
+explicitly. Row counts, t-statistics and reconciliation against the papers all
+looked entirely normal while the duplicates were present, which is why the
+check exists.
 
 ## Column resolution
 
