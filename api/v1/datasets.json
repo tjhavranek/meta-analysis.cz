@@ -20,13 +20,13 @@
  "counts": {
   "datasets": 44,
   "estimates": 65349,
-  "in_harmonised_table": 41
+  "in_harmonised_table": 39
  },
  "harmonised_table": {
   "version": "0.9.0-beta",
   "status": "beta",
-  "n_rows": 59098,
-  "n_literatures": 41,
+  "n_rows": 56466,
+  "n_literatures": 39,
   "columns": [
    "dataset",
    "study_id",
@@ -83,8 +83,10 @@
   ],
   "excluded": {
    "fdi": "no per-estimate precision exists: the file has no standard error, t-statistic, weight or inverse-SE column, so SE-based synthesis is impossible",
+   "hedge": "duplicate of alphas",
    "lags": "outcome is the transmission lag (mon_bot, months to the price trough); it has no sampling standard error, so it cannot enter an effect/SE table",
-   "substitution": "duplicate of eis"
+   "substitution": "duplicate of eis",
+   "trust": "duplicate of size"
   }
  },
  "datasets": [
@@ -1141,14 +1143,14 @@
    },
    "effect_units": "percent",
    "direction_note": "Monthly return, not annualised.",
-   "column_mapping_verified_by": null,
-   "in_harmonised_table": true,
+   "column_mapping_verified_by": "effect, se and study_id are element-wise identical across all 1,019 rows; a pairwise scan of the (effect,se) value multiset over all 41 literatures found this as the only remaining duplicate pair",
+   "in_harmonised_table": false,
    "reconciliation": {
     "n_estimates_reported_in_paper": null,
-    "n_rows_in_harmonised_table": 1019,
+    "n_rows_in_harmonised_table": null,
     "note": null
    },
-   "excluded_from_harmonised_because": null,
+   "excluded_from_harmonised_because": "duplicate of alphas",
    "duplicate_of": null,
    "license": "CC-BY-4.0"
   },
@@ -1183,8 +1185,8 @@
     "standard_error_note": null,
     "evidence": "plausible"
    },
-   "effect_units": "semi-elasticity",
-   "direction_note": "Negative is the expected direction: higher policy rates lower house prices. One row per impulse-response horizon.",
+   "effect_units": "semi-elasticity (proportional)",
+   "direction_note": "Stored as a PROPORTION: house.do multiplies by 100 for the percentages the paper reports. Negative is the expected direction, higher policy rates lowering house prices. One row per impulse-response horizon, so rows within an IRF are not independent.",
    "column_mapping_verified_by": "house.do rescales est to percent and sets SE=(SE_l+SE_u)/2; seraw is populated on only 40 of 1785 rows. Restricting to inlevels==1 (the paper's own main sample) yields exactly 1,555 usable estimates, matching the abstract; the 126 growths==1 rows are a different specification.",
    "in_harmonised_table": true,
    "reconciliation": {
@@ -1474,8 +1476,8 @@
     "standard_error_note": null,
     "evidence": "plausible"
    },
-   "effect_units": "percent",
-   "direction_note": "Positive values are the puzzling price INCREASE after a contraction; theory expects negative. One row per horizon.",
+   "effect_units": "proportional change in the price level",
+   "direction_note": "Stored as a PROPORTION, not a percent: multiply by 100 to read as the paper does (median |effect| 0.002 = 0.2%, consistent with its reported 0.33% trough). Positive values are the puzzling price INCREASE after a monetary contraction; theory expects negative. One row per horizon.",
    "column_mapping_verified_by": "puzzle.do computes t=res/se and prec=1/se on the long form restricted to horizon in {3,6,12,18,36}; the published file is wide, so the M{h}R / SE{h} pairs are reshaped here to reproduce it. Median |t| is 0.75-0.91 across horizons, consistent with the literature's mostly insignificant responses.",
    "in_harmonised_table": true,
    "reconciliation": {
@@ -2010,14 +2012,14 @@
    },
    "effect_units": "percent",
    "direction_note": "Raw size-return slopes: more negative means a larger conventional size premium.",
-   "column_mapping_verified_by": null,
-   "in_harmonised_table": true,
+   "column_mapping_verified_by": "pairwise (effect,se) scan: 1,256 shared pairs, 276 only in size, 259 only in trust. Both papers meta-analyse reported size-premium estimates; trust is a later, extended collection (105 studies) of the same literature that size (98 studies) first assembled.",
+   "in_harmonised_table": false,
    "reconciliation": {
     "n_estimates_reported_in_paper": null,
-    "n_rows_in_harmonised_table": 1613,
+    "n_rows_in_harmonised_table": null,
     "note": null
    },
-   "excluded_from_harmonised_because": null,
+   "excluded_from_harmonised_because": "duplicate of size",
    "duplicate_of": null,
    "license": "CC-BY-4.0"
   },
