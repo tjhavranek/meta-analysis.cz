@@ -532,7 +532,20 @@ table.catalogue li{ margin-bottom:var(--s2); font-size:var(--f-1); line-height:1
 #content > .post > .entry.datasets > pre,
 #content > .post > .entry.datasets > .funding,
 #content > .post > .entry.datasets > .not-pooled-reasons{ max-width:var(--measure); }
-.entry .table-scroll{ max-width:100%; overflow-x:auto; }
+/* Scroll shadows. The tables DO scroll on a phone -- measured 358px of viewport against a
+   544px table on /outliers/ and 756px on /datasets/ -- but mobile scrollbars are invisible
+   until you touch, so a reader sees a column sliced mid-word and no reason to think there is
+   more. These two gradients are painted on the scroller: the `local` pair scrolls with the
+   content and hides the shadow when you reach an edge, the `scroll` pair stays put. So a
+   shadow appears only on the side that has something left to see. */
+.entry .table-scroll{
+  max-width:100%; overflow-x:auto;
+  background:
+    linear-gradient(to right, var(--paper) 40%, rgba(255,255,255,0)) left center / 2.5rem 100% no-repeat local,
+    linear-gradient(to left,  var(--paper) 40%, rgba(255,255,255,0)) right center / 2.5rem 100% no-repeat local,
+    radial-gradient(farthest-side at 0 50%, rgba(31,41,51,.16), rgba(31,41,51,0)) left center / .9rem 100% no-repeat scroll,
+    radial-gradient(farthest-side at 100% 50%, rgba(31,41,51,.16), rgba(31,41,51,0)) right center / .9rem 100% no-repeat scroll;
+}
 @media (max-width:48rem){
   .entry .dataset-catalogue{ width:auto; min-width:100%; }
   .entry .dataset-catalogue td,.entry .dataset-catalogue th{ min-width:8rem; }
