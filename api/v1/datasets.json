@@ -1,6 +1,9 @@
 {
  "name": "meta-analysis.cz data API",
  "version": "1.0.0",
+ "api_version": "1.0.0",
+ "data_version": "0.9.0-beta",
+ "version_note": "version and api_version describe this INTERFACE. data_version describes the harmonised table, and is what croissant.json reports. They move independently.",
  "description": "Estimate-level datasets from meta-analyses in economics and the social sciences, with the hand-coded study characteristics collected for each paper.",
  "license": {
   "id": "CC-BY-4.0",

@@ -14,7 +14,9 @@ def _load(n):
     q=os.path.join(WORK,n)
     return json.load(open(q,encoding="utf-8")) if os.path.exists(q) else {}
 UNITS=_load("units.json"); OVR=_load("overrides.json"); PRIM=_load("primaries.json")
-try: harm=json.load(open(os.path.join(WORK,"harmonised_report.json"),encoding="utf-8"))
+try:
+    harm=json.load(open(os.path.join(WORK,"harmonised_report.json"),encoding="utf-8"))
+    harm.setdefault("version","0.9.0-beta")
 except Exception: harm={"projects":{},"n_rows":None,"columns":[]}
 
 import pandas as _pd
@@ -197,6 +199,13 @@ ok=datasets
 # tells a validator to fetch something that is not there.
 index=dict(
   name="meta-analysis.cz data API", version=VERSION,
+  # `version` is the API/descriptor version and clients may already read it, so it is
+  # left alone. These two say which is which, because croissant.json carries the DATA
+  # version and the two disagreeing looked like a defect.
+  api_version=VERSION,
+  data_version=(harm.get("version") or "0.9.0-beta"),
+  version_note=("version and api_version describe this INTERFACE. data_version describes the "
+                "harmonised table, and is what croissant.json reports. They move independently."),
   description=("Estimate-level datasets from meta-analyses in economics and the social sciences, "
                "with the hand-coded study characteristics collected for each paper."),
   license=dict(
@@ -271,6 +280,7 @@ json.dump(index,open(os.path.join(api,"datasets.json"),"w",encoding="utf-8"),ind
 
 # Frictionless Data Package
 dp=dict(profile="tabular-data-package", name="meta-analysis-cz", version=VERSION,
+        api_version=VERSION, data_version=(harm.get("version") or "0.9.0-beta"),
         title="meta-analysis.cz estimate-level datasets",
         # NO package-level `licenses`: under Frictionless semantics it would be read as
         # covering all 44 resources, and their rights are not ours to grant. The descriptor

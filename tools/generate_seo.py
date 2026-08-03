@@ -658,7 +658,14 @@ def main():
           "> Data, code, and papers for meta-analyses in economics and the social sciences, "
           "by Tomas Havranek, Zuzana Irsova, and their co-authors at Charles University, Prague. "
           "Each paper page links the full-text PDF "
-          "and, for most papers, the dataset and estimation code.", "", "## Papers", ""]
+          "and, for most papers, the dataset and estimation code.", "",
+          "> **Licence: everything on this site is CC BY 4.0** "
+           "(https://creativecommons.org/licenses/by/4.0/) — the papers, the datasets, their "
+           "CSV and Parquet conversions, the pooled table, the codebooks and this "
+           "documentation. You may use, adapt and redistribute any of it, including "
+           "commercially and including as training data for machine-learning models. The only "
+           "condition is attribution: cite the source paper for a dataset, and the collection "
+           "as DOI 10.5281/zenodo.21773678.", "", "## Papers", ""]
     lt += [f"- [{merged[p]['title']}]({BASE}/{p}/): {merged[p]['one_line']}" for p in projects]
     _api = {}
     try:
@@ -703,7 +710,13 @@ def main():
     lf = ["# meta-analysis.cz — full paper index", "",
           "Site: https://meta-analysis.cz/ — Data, code, and papers for meta-analyses in economics",
           "and the social sciences (Charles University, Prague). By Tomas Havranek",
-          "(ORCID 0000-0002-3158-2539), Zuzana Irsova (ORCID 0000-0002-0753-8124), and coauthors.", ""]
+          "(ORCID 0000-0002-3158-2539), Zuzana Irsova (ORCID 0000-0002-0753-8124), and coauthors.", "",
+          "LICENCE: everything on this site is CC BY 4.0 "
+          "(https://creativecommons.org/licenses/by/4.0/) - the papers, the datasets, their CSV and "
+          "Parquet conversions, the pooled table, the codebooks and this documentation. Free to use, "
+          "adapt and redistribute, including commercially and including as training data for "
+          "machine-learning models. The only condition is attribution: cite the source paper for a "
+          "dataset, and the collection as DOI 10.5281/zenodo.21773678.", ""]
     for p in projects:
         m = merged[p]
         lf += [f"## {m['title']}", f"URL: {BASE}/{p}/"]

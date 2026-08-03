@@ -67,6 +67,23 @@ jobs:
       - name: Deploy to GitHub Pages
         id: deploy
         uses: actions/deploy-pages@v4
+      # Answers the one question the rest of this workflow structurally cannot: what is
+      # actually being SERVED. Three separate reviews have reported "production is stale"
+      # when it was not -- every one a crawler cache -- and disproving each cost two
+      # sessions measuring by hand. Fetches the public domain cache-busted. Standard
+      # library only, so it needs no extra install. (redesign/audit.py --live is the
+      # richer local tool; it lives outside this repository, which is why CI uses this.)
+      - name: Post-deploy smoke test
+        run: |
+          sleep 45
+          for i in 1 2 3; do
+            python tools/smoke_live.py && exit 0
+            echo "smoke test attempt $i failed; Pages may still be propagating"
+            sleep 30
+          done
+          echo "::error::Post-deploy smoke test failed after 3 attempts - the deployed site does not match what was pushed"
+          exit 1
+
       - name: Ping IndexNow with changed URLs (best effort)
         continue-on-error: true
         run: |

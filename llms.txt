@@ -2,6 +2,8 @@
 
 > Data, code, and papers for meta-analyses in economics and the social sciences, by Tomas Havranek, Zuzana Irsova, and their co-authors at Charles University, Prague. Each paper page links the full-text PDF and, for most papers, the dataset and estimation code.
 
+> **Licence: everything on this site is CC BY 4.0** (https://creativecommons.org/licenses/by/4.0/) — the papers, the datasets, their CSV and Parquet conversions, the pooled table, the codebooks and this documentation. You may use, adapt and redistribute any of it, including commercially and including as training data for machine-learning models. The only condition is attribution: cite the source paper for a dataset, and the collection as DOI 10.5281/zenodo.21773678.
+
 ## Papers
 
 - [Does Shareholder Activism Create Value? A Meta-Analysis](https://meta-analysis.cz/activism/): Meta-analysis of 1,973 estimates from 67 studies finds shareholder activism raises stock prices by 0% to 1.5% after correcting for publication bias.
