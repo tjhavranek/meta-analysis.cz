@@ -485,3 +485,91 @@ table.catalogue li{ margin-bottom:var(--s2); font-size:var(--f-1); line-height:1
   table.catalogue td[colspan] ul:last-child{ margin-bottom:0; }
   .funding{ margin-top:var(--s6); }
 }
+/* ---- /datasets/ ---- */
+/* The catalogue is genuine tabular data, not the homepage's layout table, so it gets real
+   table treatment: a caption, a ruled header, and hairline rows. It is wider than the prose
+   measure by design -- five columns of 44 rows is not something to squeeze into 36rem. */
+.entry .dataset-catalogue{
+  width:100%; max-width:none; border-collapse:collapse;
+  margin:var(--s5) 0 var(--s6); font-size:var(--f-1);
+}
+.entry .dataset-catalogue caption{
+  caption-side:top; text-align:left; padding-bottom:var(--s3);
+  font:400 var(--f-1)/1.5 var(--sans); color:var(--ink-soft);
+}
+.entry .dataset-catalogue th{
+  text-align:left; vertical-align:bottom; padding:0 var(--s4) var(--s2) 0;
+  font:600 var(--f-2)/1.3 var(--sans); text-transform:uppercase; letter-spacing:.07em;
+  color:var(--ink-soft); border-bottom:1px solid var(--control);
+}
+.entry .dataset-catalogue td{
+  padding:var(--s3) var(--s4) var(--s3) 0; vertical-align:top;
+  border-bottom:1px solid var(--rule); line-height:1.45;
+}
+.entry .dataset-catalogue td.num,.entry .dataset-catalogue th:nth-child(2){
+  text-align:right; padding-right:var(--s5);
+  font-variant-numeric:tabular-nums lining-nums;   /* 44 counts that must line up */
+  white-space:nowrap;
+}
+.entry .dataset-catalogue .not-pooled{
+  display:inline-block; margin-left:var(--s2); font:600 var(--f-2)/1 var(--sans);
+  text-transform:uppercase; letter-spacing:.06em; color:var(--ink-soft);
+}
+/* On a phone five columns cannot fit and stacking 44 rows would be unreadable, so the table
+   scrolls inside its own box. The SCROLLING BELONGS TO THE WRAPPER, not the table: setting
+   display:block + overflow-x on the table itself did not contain it, because the cells'
+   min-widths then size the table's own block box (measured 544px inside a 390px viewport, and
+   the whole document scrolled sideways). A wrapper with a constrained width and the table at
+   its natural width inside is the arrangement that actually holds. */
+/* A's .entry is capped at the prose measure (36rem), which is right for reading and wrong for
+   a five-column table: at 576px "codebook" broke as "codebo/ok" and rows ran to five lines.
+   On this page only, the entry takes the full sheet and the PROSE keeps the measure, so the
+   table gets 894px while the sentences stay readable. Specificity has to beat
+   `#content > .post > .entry`, hence the same chain plus the class. */
+#content > .post > .entry.datasets{ max-width:none; }
+#content > .post > .entry.datasets > p,
+#content > .post > .entry.datasets > h2,
+#content > .post > .entry.datasets > pre,
+#content > .post > .entry.datasets > .funding,
+#content > .post > .entry.datasets > .not-pooled-reasons{ max-width:var(--measure); }
+.entry .table-scroll{ max-width:100%; overflow-x:auto; }
+@media (max-width:48rem){
+  .entry .dataset-catalogue{ width:auto; min-width:100%; }
+  .entry .dataset-catalogue td,.entry .dataset-catalogue th{ min-width:8rem; }
+  .entry .dataset-catalogue td:first-child,.entry .dataset-catalogue th:first-child{ min-width:15rem; }
+}
+
+/* why four datasets are published but not pooled */
+.entry .not-pooled-reasons{ margin:var(--s5) 0 var(--s6); }
+.entry .not-pooled-reasons dt{
+  font:600 var(--f-1)/1.4 var(--mono,ui-monospace,SFMono-Regular,Menlo,monospace);
+  color:var(--ink); margin-top:var(--s4);
+}
+.entry .not-pooled-reasons dd{
+  margin:var(--s1) 0 0; padding-left:0; color:var(--ink-soft);
+  font-size:var(--f-1); line-height:1.5;
+}
+
+/* Paste-and-run. These WRAP rather than scroll: the whole point is that a reader sees the
+   command and copies it, and a horizontally scrolled box hides the second half of the URL --
+   which is the half that matters. Wrapping at any character keeps the URL intact on copy,
+   because the wrap is visual only and no character is inserted. */
+.entry pre.usage{
+  margin:var(--s3) 0; padding:var(--s3) var(--s4);
+  background:var(--canvas); border-left:3px solid var(--rule);
+  font-size:var(--f-1); line-height:1.5;
+  white-space:pre-wrap; overflow-wrap:anywhere;
+}
+.entry pre.usage code{ font-family:ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;
+  font-variant-ligatures:none; }
+.entry p.alt-format{ margin-top:calc(-1 * var(--s3)); font-size:var(--f-1); color:var(--ink-soft); }
+
+/* The units caveat sits directly under the download on purpose: a reader who pools an
+   elasticity with a dollar value gets a confident wrong answer. Marked, not shouted. */
+.entry p.caveat{
+  margin:var(--s5) 0; padding:var(--s3) var(--s4);
+  border-left:3px solid var(--control); background:var(--paper);
+  font-size:var(--f-1); line-height:1.55; color:var(--ink);
+}
+.entry p.caveat code{ font-family:ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;
+  font-size:.95em; }
