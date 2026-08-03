@@ -214,5 +214,9 @@ have to look it up. If you use the collection, cite that too. See `/LICENSE`.
 
 Cite the collection as:
 
-> Havránek, T. and Z. Iršová (2026). meta-analysis.cz: data and code for
-> meta-analyses in economics. https://meta-analysis.cz
+> Havránek, T. and Z. Iršová (2026). meta-analysis.cz: harmonised estimate-level
+> data from meta-analyses in economics. Zenodo. https://doi.org/10.5281/zenodo.21773678
+
+That is the concept DOI: it always resolves to the newest version. In a replication
+package, where the exact files matter, cite this release instead:
+`10.5281/zenodo.21773679`, version 0.9.0-beta.
