@@ -17,6 +17,8 @@ def w(name, s):
     open(os.path.join(FR,name),"w",encoding="utf-8",newline="\n").write(s)
 
 e=html.escape
+# literatures whose rows are horizon-level rather than one-per-estimate
+RESHAPED={"price_puzzle","house_prices"}
 rows=[d for d in api["datasets"] if d.get("n_estimates")]
 nlit=lambda d: d.get("n_estimates_in_literature") or d.get("n_estimates") or 0
 rows.sort(key=lambda d: -nlit(d))
@@ -66,9 +68,15 @@ for d in rows:
     paper=(f'<a href="{e(doi)}">{e(pap.get("journal") or "published version")}</a>' if doi
            else f'<a href="{e(pap.get("url") or "/"+d["id"]+"/")}">page</a>')
     mark="" if d.get("in_harmonised_table") else ' <span class="not-pooled">not pooled</span>'
+    # A reshaped literature contributes one row per horizon, so its count is not comparable
+    # with a paper's estimate count. Saying so in the cell stops it reading as an error.
+    horizon_note=""
+    if d["id"] in RESHAPED:
+        horizon_note=(' <span class="horizon-note" title="One row per impulse-response horizon, '
+                      'not per independent estimate">per horizon</span>')
     t += ['<tr>',
           f'<td><a href="{e(pap.get("url") or "/"+d["id"]+"/")}">{title}</a>{mark}</td>',
-          f'<td class="num">{n}</td>',
+          f'<td class="num">{n}{horizon_note}</td>',
           f'<td>{units}</td>',
           f'<td>{" ".join(files)}</td>',
           f'<td>{paper}</td>',

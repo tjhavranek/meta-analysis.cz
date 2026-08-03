@@ -106,7 +106,8 @@
   ],
   "units": "elasticity",
   "verified_by": "Stata_program.do runs 'drop if aux==1' and defines back = (horiz==0 & forw==0) | (horiz==0 & local==1), i.e. the non-horizontal complement",
-  "note": "VERTICAL spillovers (forward and backward). CAUTION: the filtered count is 2,421 while the paper's abstract reports 3,626 estimates, so the published file appears to be a subset of the sample behind the paper. Reconcile before relying on the count."
+  "note": "VERTICAL spillovers (forward and backward). CAUTION: the filtered count is 2,421 while the paper's abstract reports 3,626 estimates, so the published file appears to be a subset of the sample behind the paper. Reconcile before relying on the count.",
+  "reconciliation_note": "The filtered count is 2,421 against the abstract's 3,626. The vertical/horizontal split is applied exactly as the paper's code defines it, so the remaining gap is NOT explained by filtering: the published file appears narrower than the sample behind the paper. Unresolved - treat the count as the file's, not the paper's."
  },
  "fdi": {
   "exclude": true,
@@ -263,5 +264,18 @@
  },
  "habits": {
   "verified_by": "habit.do applies 'drop if missing(se)' and winsorises the standard error only, with no trimming of habit itself: 606 rows less 9 missing se = 597, matching the abstract's '597 estimates from 81 published studies'. 125 of 597 fall outside the theoretical [0,1] range; the paper neither trims nor remarks on it, and this is known behaviour for GMM/DSGE habit estimates."
+ },
+ "students": {
+  "filters": [
+   {
+    "column": "idstudy",
+    "max_abs": 69
+   }
+  ],
+  "effect": "pcc",
+  "se": "se_pcc",
+  "units": "partial correlation coefficient",
+  "verified_by": "students.do lines 14-16: 'drop if idstudy>69', then drop if missing(pcc) or missing(se_pcc). Applying all three gives exactly 861 estimates from 69 studies, matching the paper. Without the idstudy filter the file yields 872, which is what was published before and was recorded as an unexplained surplus. It was not unexplained; the filter was missed.",
+  "note": "The published file carries 892 rows, 31 of which the paper's own code excludes."
  }
 }

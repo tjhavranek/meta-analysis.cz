@@ -23,8 +23,8 @@
  "counts": {
   "datasets": 44,
   "rows_in_source_files": 65349,
-  "estimates_in_analysis_samples": 61305,
-  "estimates_in_harmonised_table": 54087,
+  "estimates_in_analysis_samples": 61294,
+  "estimates_in_harmonised_table": 54076,
   "literatures_in_harmonised_table": 39,
   "in_harmonised_table": 39,
   "counts_explained": "rows_in_source_files counts every row of the 44 converted files. estimates_in_analysis_samples applies each paper's own filters and is what the catalogue table shows. estimates_in_harmonised_table additionally drops the literatures that duplicate another or lack per-estimate precision."
@@ -32,7 +32,7 @@
  "harmonised_table": {
   "version": "0.9.0-beta",
   "status": "beta",
-  "n_rows": 54087,
+  "n_rows": 54076,
   "n_literatures": 39,
   "columns": [
    "dataset",
@@ -2208,7 +2208,7 @@
    "reconciliation": {
     "n_estimates_reported_in_paper": 3626,
     "n_rows_in_harmonised_table": 2421,
-    "note": "-1205 rows against the abstract's count, and correctly so: the paper's own replication code restricts to an analysis subset, reproduced here. See column_mapping_verified_by."
+    "note": "The filtered count is 2,421 against the abstract's 3,626. The vertical/horizontal split is applied exactly as the paper's code defines it, so the remaining gap is NOT explained by filtering: the published file appears narrower than the sample behind the paper. Unresolved - treat the count as the file's, not the paper's."
    },
    "excluded_from_harmonised_because": null,
    "duplicate_of": null,
@@ -2239,7 +2239,7 @@
    "description": "Meta-analysis of 861 estimates finds student employment has a negative but economically small effect on educational outcomes.",
    "n_estimates": 892,
    "n_variables": 59,
-   "n_estimates_in_literature": 872,
+   "n_estimates_in_literature": 861,
    "source_file": "https://meta-analysis.cz/students/students.xlsx",
    "source_member": null,
    "source_sheet": "data",
@@ -2252,16 +2252,16 @@
     "effect": "pcc",
     "standard_error": "se_pcc",
     "standard_error_note": null,
-    "evidence": "t_match:tstat"
+    "evidence": "paper's replication code"
    },
    "effect_units": "partial correlation coefficient",
    "direction_note": null,
-   "column_mapping_verified_by": null,
+   "column_mapping_verified_by": "students.do lines 14-16: 'drop if idstudy>69', then drop if missing(pcc) or missing(se_pcc). Applying all three gives exactly 861 estimates from 69 studies, matching the paper. Without the idstudy filter the file yields 872, which is what was published before and was recorded as an unexplained surplus. It was not unexplained; the filter was missed.",
    "in_harmonised_table": true,
    "reconciliation": {
     "n_estimates_reported_in_paper": 861,
-    "n_rows_in_harmonised_table": 872,
-    "note": "+11 rows MORE than the abstract states. The abstract's figure may count studies or a sub-sample differently; the published file is the source of truth here. Unexplained."
+    "n_rows_in_harmonised_table": 861,
+    "note": "matches the paper exactly"
    },
    "excluded_from_harmonised_because": null,
    "duplicate_of": null,
@@ -2272,7 +2272,7 @@
    "rights_status": "unspecified",
    "license_url": null,
    "rights_note": "Format conversions of the source dataset; rights inherit from it. The collection licence covers the index, codebooks and harmonisation, not this dataset. Cite the paper, and check with its authors if your use needs an explicit reuse right.",
-   "audit_status": "arithmetic_pairing_only"
+   "audit_status": "code_traced"
   },
   {
    "id": "substitution",

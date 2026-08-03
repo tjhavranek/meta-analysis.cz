@@ -100,6 +100,8 @@ def _recon_note(proj,pap):
     a documented subset, and we reproduce the subset by applying their own filters.
     Saying "fewer than the paper reports" there would imply a defect that is not one.
     """
+    ovr_note=(OVR.get(proj) or {}).get("reconciliation_note")
+    if ovr_note: return ovr_note
     c,n=claimed_n(pap),_NH.get(proj)
     if not (c and n): return None
     if n==c: return "matches the paper exactly"
