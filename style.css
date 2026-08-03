@@ -474,3 +474,14 @@ table.catalogue li{ margin-bottom:var(--s2); font-size:var(--f-1); line-height:1
 }
 /* let a full paper title use the width the masthead actually has */
 #logo h1,#logo .site-name{ max-width:52ch }
+@media (max-width:48rem){
+  table.catalogue td[colspan]{ text-align:left !important; padding-top:0 !important; }
+  table.catalogue td[colspan] > div{ display:block !important; }
+  /* The visible white before the funding line was 72px: the last group's list still carried
+     the 32px margin that separates one group from the next, plus 24px of cell padding, plus
+     the funding line's own margin. Nothing follows the last group, so the first two are paying
+     for a separation that is not needed. Zero them and let one deliberate 32px do the work. */
+  table.catalogue td[colspan]{ padding-bottom:0 !important; }
+  table.catalogue td[colspan] ul:last-child{ margin-bottom:0; }
+  .funding{ margin-top:var(--s6); }
+}
