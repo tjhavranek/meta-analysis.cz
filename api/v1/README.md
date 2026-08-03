@@ -65,9 +65,11 @@ partial correlation and a dollar value per tonne of carbon all live in the
 units are consistent, which is what estimator comparisons need; across
 literatures, compare ratios — corrected against uncorrected — not levels.
 
-Being a beta, the harmonisation may be revised. Pin the version if you need
-stability: the released files are also deposited with a DOI, and that deposit
-does not move.
+Being a beta, the harmonisation may be revised. **There is no DOI yet** — an
+earlier version of this file said the files were deposited with one, which was
+never true. When a deposit exists it will be linked here, and pinning to it will
+be the way to get a reference that does not move. Until then, pin the version
+string and the file's checksum.
 
 ## Before you pool
 

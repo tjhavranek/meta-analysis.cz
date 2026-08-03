@@ -1,5 +1,4 @@
 {
- "$schema": "https://meta-analysis.cz/api/v1/index.json",
  "name": "meta-analysis.cz data API",
  "version": "1.0.0",
  "description": "Estimate-level datasets from meta-analyses in economics and the social sciences, with the hand-coded study characteristics collected for each paper.",
