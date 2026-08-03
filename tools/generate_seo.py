@@ -293,10 +293,13 @@ def build_jsonld(m):
               "name": f"Data and code for: {m['title']}",
               "description": ("Dataset and replication files for the study. " + m["abstract"])[:4900],
               "url": page, "isAccessibleForFree": True, "inLanguage": "en",
-              # Google Dataset Search treats an explicit licence as a quality signal, and
-              # the collection is CC BY 4.0 (see /LICENSE). Individual datasets stay
-              # attributable to their own paper, which `citation` above already carries.
-              "license": "https://creativecommons.org/licenses/by/4.0/",
+              # NO blanket licence on an individual paper's dataset. LICENSE 2a is explicit
+              # that the underlying research data is not ours to relicense, and datasets.json
+              # records every one of the 44 as rights_status "unspecified". Asserting CC BY
+              # here was exactly the overreach the licence rewrite removed — and it is the
+              # field Google Dataset Search reads, so it must not overstate. Point at the
+              # terms instead; `citation` above already carries attribution.
+              "usageInfo": BASE + "/LICENSE",
               "subjectOf": {"@id": page + "#paper"}}
         if dist:
             ds["distribution"] = dist
@@ -551,7 +554,10 @@ def main():
                     f"estimates in their analysis samples, "
                     f"each with the study characteristics hand-coded for the original paper."),
                 "url": BASE + "/datasets/",
+                # Correct HERE and only here: a DataCatalog describes the COMPILATION, which
+                # is precisely what CC BY 4.0 covers. usageInfo carries the full scoping.
                 "license": "https://creativecommons.org/licenses/by/4.0/",
+                "usageInfo": BASE + "/LICENSE",
                 "isAccessibleForFree": True,
                 "provider": {"@id": BASE + "/#org"},
                 "dataset": [{"@id": f"{BASE}/{d['id']}/#dataset"} for d in entries],
