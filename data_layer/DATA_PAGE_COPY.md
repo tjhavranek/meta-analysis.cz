@@ -95,13 +95,13 @@ Then `{{not_pooled}}`.
 ## Licence and citation
 
 > The index, the codebooks, the harmonisation and this documentation are released
-> under [CC BY 4.0](/LICENSE). That licence covers **this compilation** — not the
-> underlying research datasets, not their CSV and Parquet conversions, and not the
+> under [CC BY 4.0](/LICENSE). That licence covers **this compilation**. It does not
+> cover the underlying research datasets, their CSV and Parquet conversions, or the
 > papers' own replication code. Those were assembled by their own author teams and
 > their rights are unchanged.
 >
 > **Each dataset was assembled for a specific paper. If you use one, cite that
-> paper** — the index carries every paper's title, authors and DOI, and a
+> paper.** The index carries every paper's title, authors and DOI, and a
 > `rights_status`. Where that reads `unspecified`, no open licence has been
 > established: treat the data as all rights reserved unless the paper or its
 > publisher says otherwise. Attribution is not the same as permission.
