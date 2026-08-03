@@ -1,0 +1,6832 @@
+{
+ "project": "size",
+ "source_file": "size.dta",
+ "source_archive": null,
+ "source_sheet": null,
+ "n_rows": 1746,
+ "n_columns": 407,
+ "columns": [
+  {
+   "name": "id",
+   "normalized": "id",
+   "dtype": "int16",
+   "n_missing": 0,
+   "n_unique": 1746,
+   "stats": {
+    "min": 1.0,
+    "p25": 437.25,
+    "median": 879.5,
+    "p75": 1318.75,
+    "max": 1755.0,
+    "mean": 878.501718,
+    "sd": 507.801368
+   }
+  },
+  {
+   "name": "id_in_study",
+   "normalized": "id_in_study",
+   "dtype": "str",
+   "n_missing": 0,
+   "n_unique": 108,
+   "top_values": [
+    "1",
+    "2",
+    "3",
+    "4",
+    "5"
+   ]
+  },
+  {
+   "name": "idstudy",
+   "normalized": "idstudy",
+   "dtype": "int16",
+   "n_missing": 0,
+   "n_unique": 102,
+   "role": "study_id",
+   "stats": {
+    "min": 1.0,
+    "p25": 19.0,
+    "median": 46.0,
+    "p75": 72.0,
+    "max": 103.0,
+    "mean": 48.343643,
+    "sd": 29.037628
+   }
+  },
+  {
+   "name": "size",
+   "normalized": "size",
+   "dtype": "float64",
+   "n_missing": 0,
+   "n_unique": 673,
+   "role": "effect_estimate",
+   "stats": {
+    "min": -5.94,
+    "p25": -0.11,
+    "median": -0.0045,
+    "p75": 0.0,
+    "max": 4.691,
+    "mean": -0.092319,
+    "sd": 0.481657
+   }
+  },
+  {
+   "name": "size_calc",
+   "normalized": "size_calc",
+   "dtype": "float64",
+   "n_missing": 1692,
+   "n_unique": 54,
+   "stats": {
+    "min": -0.009628,
+    "p25": -0.000388,
+    "median": 0.000332,
+    "p75": 0.001203,
+    "max": 0.009771,
+    "mean": 0.000528,
+    "sd": 0.003204
+   }
+  },
+  {
+   "name": "size_merged",
+   "normalized": "size_merged",
+   "dtype": "float64",
+   "n_missing": 0,
+   "n_unique": 726,
+   "stats": {
+    "min": -5.94,
+    "p25": -0.11,
+    "median": -0.0047,
+    "p75": 4.1e-05,
+    "max": 4.691,
+    "mean": -0.092303,
+    "sd": 0.48166
+   }
+  },
+  {
+   "name": "size_other",
+   "normalized": "size_other",
+   "dtype": "int8",
+   "n_missing": 0,
+   "n_unique": 2,
+   "stats": {
+    "min": 0.0,
+    "p25": 0.0,
+    "median": 0.0,
+    "p75": 0.0,
+    "max": 1.0,
+    "mean": 0.128866,
+    "sd": 0.335148
+   },
+   "binary": true
+  },
+  {
+   "name": "size_other_comment",
+   "normalized": "size_other_comment",
+   "dtype": "str",
+   "n_missing": 0,
+   "n_unique": 16,
+   "top_values": [
+    "",
+    "relative to average market value of all securities",
+    "rank of the portfolio",
+    "the time-series average of the natural log of the ratio ofthe portfolio\u0092s market capitalization at the beginning of the month to the totalmarket capitalization",
+    "size relative to local market"
+   ]
+  },
+  {
+   "name": "size_scale",
+   "normalized": "size_scale",
+   "dtype": "int8",
+   "n_missing": 0,
+   "n_unique": 4,
+   "stats": {
+    "min": 0.0,
+    "p25": 0.0,
+    "median": 6.0,
+    "p75": 6.0,
+    "max": 9.0,
+    "mean": 3.900344,
+    "sd": 3.576961
+   }
+  },
+  {
+   "name": "se_calc",
+   "normalized": "se_calc",
+   "dtype": "float64",
+   "n_missing": 61,
+   "n_unique": 1447,
+   "role": "standard_error",
+   "stats": {
+    "min": 0.0,
+    "p25": 0.000936,
+    "median": 0.02768,
+    "p75": 0.059761,
+    "max": 3.789474,
+    "mean": 0.10604,
+    "sd": 0.302681
+   }
+  },
+  {
+   "name": "sd",
+   "normalized": "sd",
+   "dtype": "float64",
+   "n_missing": 0,
+   "n_unique": 18,
+   "stats": {
+    "min": 0.0,
+    "p25": 0.0,
+    "median": 0.0,
+    "p75": 0.0,
+    "max": 8.82,
+    "mean": 0.022477,
+    "sd": 0.35011
+   }
+  },
+  {
+   "name": "tstat_adj",
+   "normalized": "tstat_adj",
+   "dtype": "int8",
+   "n_missing": 0,
+   "n_unique": 2,
+   "role": "t_stat",
+   "stats": {
+    "min": 0.0,
+    "p25": 0.0,
+    "median": 0.0,
+    "p75": 0.0,
+    "max": 1.0,
+    "mean": 0.056128,
+    "sd": 0.230235
+   },
+   "binary": true
+  },
+  {
+   "name": "tstat_type_comment",
+   "normalized": "tstat_type_comment",
+   "dtype": "str",
+   "n_missing": 0,
+   "n_unique": 8,
+   "role": "t_stat",
+   "top_values": [
+    "",
+    "autocorrelation-adjusted",
+    "standard errors are corrected as per Shanken (1992)",
+    "adj. for autocorrelation as in Cooper, Gulen, Schill (2008)",
+    "0"
+   ]
+  },
+  {
+   "name": "pvalue",
+   "normalized": "pvalue",
+   "dtype": "float64",
+   "n_missing": 0,
+   "n_unique": 15,
+   "stats": {
+    "min": 0.0,
+    "p25": 0.0,
+    "median": 0.0,
+    "p75": 0.0,
+    "max": 0.8597,
+    "mean": 0.001842,
+    "sd": 0.02742
+   }
+  },
+  {
+   "name": "pvalue_calc",
+   "normalized": "pvalue_calc",
+   "dtype": "float64",
+   "n_missing": 1740,
+   "n_unique": 6,
+   "stats": {
+    "min": 0.000112,
+    "p25": 0.000495,
+    "median": 0.000728,
+    "p75": 0.002593,
+    "max": 0.007882,
+    "mean": 0.00218,
+    "sd": 0.003
+   }
+  },
+  {
+   "name": "pvalue_merged",
+   "normalized": "pvalue_merged",
+   "dtype": "float64",
+   "n_missing": 1726,
+   "n_unique": 20,
+   "stats": {
+    "min": 0.000112,
+    "p25": 0.003944,
+    "median": 0.12145,
+    "p75": 0.201325,
+    "max": 0.8597,
+    "mean": 0.161504,
+    "sd": 0.204721
+   }
+  },
+  {
+   "name": "obs",
+   "normalized": "obs",
+   "dtype": "float64",
+   "n_missing": 4,
+   "n_unique": 112,
+   "role": "n_obs",
+   "stats": {
+    "min": 11.0,
+    "p25": 131.0,
+    "median": 239.0,
+    "p75": 383.0,
+    "max": 905.0,
+    "mean": 265.704411,
+    "sd": 174.832975
+   }
+  },
+  {
+   "name": "firms",
+   "normalized": "firms",
+   "dtype": "float64",
+   "n_missing": 0,
+   "n_unique": 53,
+   "stats": {
+    "min": 0.0,
+    "p25": 0.0,
+    "median": 0.0,
+    "p75": 0.0,
+    "max": 27488.0,
+    "mean": 484.418958,
+    "sd": 1909.891583
+   }
+  },
+  {
+   "name": "country_region",
+   "normalized": "country_region",
+   "dtype": "str",
+   "n_missing": 0,
+   "n_unique": 57,
+   "top_values": [
+    "USA",
+    "Japan",
+    "Australia",
+    "New Zealand",
+    "Taiwan"
+   ]
+  },
+  {
+   "name": "geo",
+   "normalized": "geo",
+   "dtype": "str",
+   "n_missing": 0,
+   "n_unique": 9,
+   "top_values": [
+    "US",
+    "ASIA",
+    "WE",
+    "OTHER",
+    "EMER"
+   ]
+  },
+  {
+   "name": "industry",
+   "normalized": "industry",
+   "dtype": "str",
+   "n_missing": 0,
+   "n_unique": 9,
+   "top_values": [
+    "0",
+    "manufacturing",
+    "Basic industries",
+    "Capital goods",
+    "Consumer goods"
+   ]
+  },
+  {
+   "name": "stockex",
+   "normalized": "stockex",
+   "dtype": "str",
+   "n_missing": 0,
+   "n_unique": 23,
+   "top_values": [
+    "0",
+    "NYSE, Amex, Nasdaq",
+    "NYSE",
+    "NYSE, Amex",
+    "TSE"
+   ]
+  },
+  {
+   "name": "database",
+   "normalized": "database",
+   "dtype": "str",
+   "n_missing": 0,
+   "n_unique": 35,
+   "top_values": [
+    "CRSP, Compustat",
+    "0",
+    "CRSP",
+    "PACAP",
+    "Emerging Markets Database, Datastream"
+   ]
+  },
+  {
+   "name": "annual",
+   "normalized": "annual",
+   "dtype": "int8",
+   "n_missing": 0,
+   "n_unique": 2,
+   "stats": {
+    "min": 0.0,
+    "p25": 0.0,
+    "median": 0.0,
+    "p75": 0.0,
+    "max": 1.0,
+    "mean": 0.058419,
+    "sd": 0.234602
+   },
+   "binary": true
+  },
+  {
+   "name": "quarterly",
+   "normalized": "quarterly",
+   "dtype": "int8",
+   "n_missing": 0,
+   "n_unique": 2,
+   "stats": {
+    "min": 0.0,
+    "p25": 0.0,
+    "median": 0.0,
+    "p75": 0.0,
+    "max": 1.0,
+    "mean": 0.016037,
+    "sd": 0.125652
+   },
+   "binary": true
+  },
+  {
+   "name": "monthly",
+   "normalized": "monthly",
+   "dtype": "int8",
+   "n_missing": 0,
+   "n_unique": 2,
+   "stats": {
+    "min": 0.0,
+    "p25": 1.0,
+    "median": 1.0,
+    "p75": 1.0,
+    "max": 1.0,
+    "mean": 0.863116,
+    "sd": 0.343824
+   },
+   "binary": true
+  },
+  {
+   "name": "winsor",
+   "normalized": "winsor",
+   "dtype": "str",
+   "n_missing": 0,
+   "n_unique": 24,
+   "top_values": [
+    "0",
+    "B/M 0.5% two-tailed",
+    "0.5% two-tailed B/M",
+    "more than three deviations away from the median (two-tailed)",
+    "5% of smallest firms excluded in all non-US countries"
+   ]
+  },
+  {
+   "name": "trim1",
+   "normalized": "trim1",
+   "dtype": "str",
+   "n_missing": 0,
+   "n_unique": 55,
+   "top_values": [
+    "0",
+    "non-financial only",
+    "actively traded, non-negative B, 18 month of returns",
+    "minimum of 15 stocks in cross-section",
+    "drop frist two years of Compustat data for each firm"
+   ]
+  },
+  {
+   "name": "trim2",
+   "normalized": "trim2",
+   "dtype": "str",
+   "n_missing": 0,
+   "n_unique": 23,
+   "top_values": [
+    "0",
+    "drop financial firms",
+    "no less than: 5 mil USD BE; 10 mil USD assets; 0.01 mil USD ME",
+    "firm should be listed on COMPUSTAT for 2 years (backfilling bias)",
+    "negative earnings excluded"
+   ]
+  },
+  {
+   "name": "trim3",
+   "normalized": "trim3",
+   "dtype": "str",
+   "n_missing": 0,
+   "n_unique": 8,
+   "top_values": [
+    "0",
+    "\"extreme percentiles\" of B/P, ND/P, NOA/EV, B/P - NOA/EV; all indep. Vars are truncated at 1% and 99%",
+    "various cleaning procedures ",
+    "only 33% pre-1975 LSPD random sample",
+    "negative B/E excluded"
+   ]
+  },
+  {
+   "name": "penny_stock",
+   "normalized": "penny_stock",
+   "dtype": "str",
+   "n_missing": 0,
+   "n_unique": 4,
+   "top_values": [
+    "0",
+    "min price 5$",
+    "less than 1 USD",
+    "min price 1$"
+   ]
+  },
+  {
+   "name": "OLS",
+   "normalized": "ols",
+   "dtype": "int8",
+   "n_missing": 0,
+   "n_unique": 2,
+   "stats": {
+    "min": 0.0,
+    "p25": 0.0,
+    "median": 1.0,
+    "p75": 1.0,
+    "max": 1.0,
+    "mean": 0.531501,
+    "sd": 0.49915
+   },
+   "binary": true
+  },
+  {
+   "name": "GMM",
+   "normalized": "gmm",
+   "dtype": "int8",
+   "n_missing": 0,
+   "n_unique": 2,
+   "stats": {
+    "min": 0.0,
+    "p25": 0.0,
+    "median": 0.0,
+    "p75": 0.0,
+    "max": 1.0,
+    "mean": 0.05441,
+    "sd": 0.22689
+   },
+   "binary": true
+  },
+  {
+   "name": "GLS",
+   "normalized": "gls",
+   "dtype": "int8",
+   "n_missing": 0,
+   "n_unique": 2,
+   "stats": {
+    "min": 0.0,
+    "p25": 0.0,
+    "median": 0.0,
+    "p75": 0.0,
+    "max": 1.0,
+    "mean": 0.072738,
+    "sd": 0.25978
+   },
+   "binary": true
+  },
+  {
+   "name": "WLS",
+   "normalized": "wls",
+   "dtype": "int8",
+   "n_missing": 0,
+   "n_unique": 2,
+   "stats": {
+    "min": 0.0,
+    "p25": 0.0,
+    "median": 0.0,
+    "p75": 0.0,
+    "max": 1.0,
+    "mean": 0.017182,
+    "sd": 0.129987
+   },
+   "binary": true
+  },
+  {
+   "name": "LTS",
+   "normalized": "lts",
+   "dtype": "int8",
+   "n_missing": 0,
+   "n_unique": 2,
+   "stats": {
+    "min": 0.0,
+    "p25": 0.0,
+    "median": 0.0,
+    "p75": 0.0,
+    "max": 1.0,
+    "mean": 0.009164,
+    "sd": 0.095315
+   },
+   "binary": true
+  },
+  {
+   "name": "MLE",
+   "normalized": "mle",
+   "dtype": "int8",
+   "n_missing": 0,
+   "n_unique": 2,
+   "stats": {
+    "min": 0.0,
+    "p25": 0.0,
+    "median": 0.0,
+    "p75": 0.0,
+    "max": 1.0,
+    "mean": 0.024055,
+    "sd": 0.153264
+   },
+   "binary": true
+  },
+  {
+   "name": "FM",
+   "normalized": "fm",
+   "dtype": "int8",
+   "n_missing": 0,
+   "n_unique": 2,
+   "stats": {
+    "min": 0.0,
+    "p25": 1.0,
+    "median": 1.0,
+    "p75": 1.0,
+    "max": 1.0,
+    "mean": 0.895762,
+    "sd": 0.305657
+   },
+   "binary": true
+  },
+  {
+   "name": "SUR",
+   "normalized": "sur",
+   "dtype": "int8",
+   "n_missing": 0,
+   "n_unique": 2,
+   "stats": {
+    "min": 0.0,
+    "p25": 0.0,
+    "median": 0.0,
+    "p75": 0.0,
+    "max": 1.0,
+    "mean": 0.072738,
+    "sd": 0.25978
+   },
+   "binary": true
+  },
+  {
+   "name": "SLS",
+   "normalized": "sls",
+   "dtype": "int8",
+   "n_missing": 0,
+   "n_unique": 2,
+   "stats": {
+    "min": 0.0,
+    "p25": 0.0,
+    "median": 0.0,
+    "p75": 0.0,
+    "max": 1.0,
+    "mean": 0.009737,
+    "sd": 0.09822
+   },
+   "binary": true
+  },
+  {
+   "name": "se_corr",
+   "normalized": "se_corr",
+   "dtype": "int8",
+   "n_missing": 0,
+   "n_unique": 2,
+   "stats": {
+    "min": 0.0,
+    "p25": 0.0,
+    "median": 0.0,
+    "p75": 0.0,
+    "max": 1.0,
+    "mean": 0.030928,
+    "sd": 0.173172
+   },
+   "binary": true
+  },
+  {
+   "name": "currency",
+   "normalized": "currency",
+   "dtype": "str",
+   "n_missing": 0,
+   "n_unique": 10,
+   "top_values": [
+    "0",
+    "USD",
+    "JPY",
+    "AUD",
+    "DM"
+   ]
+  },
+  {
+   "name": "ret_scale",
+   "normalized": "ret_scale",
+   "dtype": "int8",
+   "n_missing": 0,
+   "n_unique": 2,
+   "stats": {
+    "min": 0.0,
+    "p25": 0.0,
+    "median": 2.0,
+    "p75": 2.0,
+    "max": 2.0,
+    "mean": 1.076747,
+    "sd": 0.997336
+   }
+  },
+  {
+   "name": "excess",
+   "normalized": "excess",
+   "dtype": "int8",
+   "n_missing": 0,
+   "n_unique": 3,
+   "stats": {
+    "min": 0.0,
+    "p25": 0.0,
+    "median": 0.0,
+    "p75": 1.0,
+    "max": 2.0,
+    "mean": 0.436999,
+    "sd": 0.497311
+   }
+  },
+  {
+   "name": "index",
+   "normalized": "index",
+   "dtype": "str",
+   "n_missing": 0,
+   "n_unique": 30,
+   "top_values": [
+    "0",
+    "equal-weighted NYSE",
+    "local value-weighted; FT/S&P Actuaries'",
+    "CRIF value-weighted market index",
+    "equal-weighted CRSP"
+   ]
+  },
+  {
+   "name": "riskfree",
+   "normalized": "riskfree",
+   "dtype": "str",
+   "n_missing": 0,
+   "n_unique": 15,
+   "top_values": [
+    "0",
+    "T-bill",
+    "various, see p.33, table 4",
+    "13-week treasury notes",
+    "30-day repo and risk-free rate"
+   ]
+  },
+  {
+   "name": "retweight",
+   "normalized": "retweight",
+   "dtype": "int8",
+   "n_missing": 0,
+   "n_unique": 1,
+   "stats": {
+    "min": 0.0,
+    "p25": 0.0,
+    "median": 0.0,
+    "p75": 0.0,
+    "max": 0.0,
+    "mean": 0.0,
+    "sd": 0.0
+   },
+   "binary": true
+  },
+  {
+   "name": "adjusted",
+   "normalized": "adjusted",
+   "dtype": "int8",
+   "n_missing": 0,
+   "n_unique": 2,
+   "stats": {
+    "min": 0.0,
+    "p25": 0.0,
+    "median": 0.0,
+    "p75": 0.0,
+    "max": 1.0,
+    "mean": 0.146048,
+    "sd": 0.353256
+   },
+   "binary": true
+  },
+  {
+   "name": "indstock",
+   "normalized": "indstock",
+   "dtype": "int8",
+   "n_missing": 0,
+   "n_unique": 2,
+   "stats": {
+    "min": 0.0,
+    "p25": 0.0,
+    "median": 1.0,
+    "p75": 1.0,
+    "max": 1.0,
+    "mean": 0.613975,
+    "sd": 0.486976
+   },
+   "binary": true
+  },
+  {
+   "name": "portfolio",
+   "normalized": "portfolio",
+   "dtype": "int8",
+   "n_missing": 0,
+   "n_unique": 2,
+   "stats": {
+    "min": 0.0,
+    "p25": 0.0,
+    "median": 0.0,
+    "p75": 1.0,
+    "max": 1.0,
+    "mean": 0.359679,
+    "sd": 0.480044
+   },
+   "binary": true
+  },
+  {
+   "name": "sort",
+   "normalized": "sort",
+   "dtype": "int8",
+   "n_missing": 0,
+   "n_unique": 2,
+   "stats": {
+    "min": 0.0,
+    "p25": 0.0,
+    "median": 0.0,
+    "p75": 1.0,
+    "max": 1.0,
+    "mean": 0.277778,
+    "sd": 0.448032
+   },
+   "binary": true
+  },
+  {
+   "name": "portnum",
+   "normalized": "portnum",
+   "dtype": "int16",
+   "n_missing": 0,
+   "n_unique": 18,
+   "stats": {
+    "min": 0.0,
+    "p25": 0.0,
+    "median": 0.0,
+    "p75": 3.75,
+    "max": 400.0,
+    "mean": 9.52291,
+    "sd": 34.536004
+   }
+  },
+  {
+   "name": "breakpoints",
+   "normalized": "breakpoints",
+   "dtype": "str",
+   "n_missing": 0,
+   "n_unique": 5,
+   "top_values": [
+    "0",
+    "NYSE deciles",
+    "NYSE 30 and 70 pctiles",
+    "NYSE quintiles",
+    "MSCI all countries quintiles"
+   ]
+  },
+  {
+   "name": "bm_sort",
+   "normalized": "bm_sort",
+   "dtype": "int8",
+   "n_missing": 0,
+   "n_unique": 2,
+   "stats": {
+    "min": 0.0,
+    "p25": 0.0,
+    "median": 0.0,
+    "p75": 0.0,
+    "max": 1.0,
+    "mean": 0.036655,
+    "sd": 0.187968
+   },
+   "binary": true
+  },
+  {
+   "name": "ep_sort",
+   "normalized": "ep_sort",
+   "dtype": "int8",
+   "n_missing": 0,
+   "n_unique": 2,
+   "stats": {
+    "min": 0.0,
+    "p25": 0.0,
+    "median": 0.0,
+    "p75": 0.0,
+    "max": 1.0,
+    "mean": 0.021191,
+    "sd": 0.144063
+   },
+   "binary": true
+  },
+  {
+   "name": "size_sort",
+   "normalized": "size_sort",
+   "dtype": "int8",
+   "n_missing": 0,
+   "n_unique": 2,
+   "stats": {
+    "min": 0.0,
+    "p25": 0.0,
+    "median": 0.0,
+    "p75": 0.0,
+    "max": 1.0,
+    "mean": 0.18614,
+    "sd": 0.389331
+   },
+   "binary": true
+  },
+  {
+   "name": "mom_sort",
+   "normalized": "mom_sort",
+   "dtype": "int8",
+   "n_missing": 0,
+   "n_unique": 2,
+   "stats": {
+    "min": 0.0,
+    "p25": 0.0,
+    "median": 0.0,
+    "p75": 0.0,
+    "max": 1.0,
+    "mean": 0.001718,
+    "sd": 0.041428
+   },
+   "binary": true
+  },
+  {
+   "name": "beta_sort",
+   "normalized": "beta_sort",
+   "dtype": "int8",
+   "n_missing": 0,
+   "n_unique": 2,
+   "stats": {
+    "min": 0.0,
+    "p25": 0.0,
+    "median": 0.0,
+    "p75": 0.0,
+    "max": 1.0,
+    "mean": 0.095647,
+    "sd": 0.294191
+   },
+   "binary": true
+  },
+  {
+   "name": "price_sort",
+   "normalized": "price_sort",
+   "dtype": "int8",
+   "n_missing": 0,
+   "n_unique": 2,
+   "stats": {
+    "min": 0.0,
+    "p25": 0.0,
+    "median": 0.0,
+    "p75": 0.0,
+    "max": 1.0,
+    "mean": 0.034364,
+    "sd": 0.182215
+   },
+   "binary": true
+  },
+  {
+   "name": "liq_sort",
+   "normalized": "liq_sort",
+   "dtype": "int8",
+   "n_missing": 0,
+   "n_unique": 2,
+   "stats": {
+    "min": 0.0,
+    "p25": 0.0,
+    "median": 0.0,
+    "p75": 0.0,
+    "max": 1.0,
+    "mean": 0.008591,
+    "sd": 0.092315
+   },
+   "binary": true
+  },
+  {
+   "name": "avg_spread_sort",
+   "normalized": "avg_spread_sort",
+   "dtype": "int8",
+   "n_missing": 0,
+   "n_unique": 2,
+   "stats": {
+    "min": 0.0,
+    "p25": 0.0,
+    "median": 0.0,
+    "p75": 0.0,
+    "max": 1.0,
+    "mean": 0.030355,
+    "sd": 0.171612
+   },
+   "binary": true
+  },
+  {
+   "name": "debt_to_book_sort",
+   "normalized": "debt_to_book_sort",
+   "dtype": "int8",
+   "n_missing": 0,
+   "n_unique": 2,
+   "stats": {
+    "min": 0.0,
+    "p25": 0.0,
+    "median": 0.0,
+    "p75": 0.0,
+    "max": 1.0,
+    "mean": 0.013746,
+    "sd": 0.116467
+   },
+   "binary": true
+  },
+  {
+   "name": "months_listed_sort",
+   "normalized": "months_listed_sort",
+   "dtype": "int8",
+   "n_missing": 0,
+   "n_unique": 2,
+   "stats": {
+    "min": 0.0,
+    "p25": 0.0,
+    "median": 0.0,
+    "p75": 0.0,
+    "max": 1.0,
+    "mean": 0.004582,
+    "sd": 0.067554
+   },
+   "binary": true
+  },
+  {
+   "name": "past_returns_sort",
+   "normalized": "past_returns_sort",
+   "dtype": "int8",
+   "n_missing": 0,
+   "n_unique": 2,
+   "stats": {
+    "min": 0.0,
+    "p25": 0.0,
+    "median": 0.0,
+    "p75": 0.0,
+    "max": 1.0,
+    "mean": 0.005155,
+    "sd": 0.071631
+   },
+   "binary": true
+  },
+  {
+   "name": "st_dev_sort",
+   "normalized": "st_dev_sort",
+   "dtype": "int8",
+   "n_missing": 0,
+   "n_unique": 2,
+   "stats": {
+    "min": 0.0,
+    "p25": 0.0,
+    "median": 0.0,
+    "p75": 0.0,
+    "max": 1.0,
+    "mean": 0.008591,
+    "sd": 0.092315
+   },
+   "binary": true
+  },
+  {
+   "name": "yield_sort",
+   "normalized": "yield_sort",
+   "dtype": "int8",
+   "n_missing": 0,
+   "n_unique": 2,
+   "stats": {
+    "min": 0.0,
+    "p25": 0.0,
+    "median": 0.0,
+    "p75": 0.0,
+    "max": 1.0,
+    "mean": 0.001145,
+    "sd": 0.033835
+   },
+   "binary": true
+  },
+  {
+   "name": "inst_holdings_sort",
+   "normalized": "inst_holdings_sort",
+   "dtype": "int8",
+   "n_missing": 0,
+   "n_unique": 2,
+   "stats": {
+    "min": 0.0,
+    "p25": 0.0,
+    "median": 0.0,
+    "p75": 0.0,
+    "max": 1.0,
+    "mean": 0.001145,
+    "sd": 0.033835
+   },
+   "binary": true
+  },
+  {
+   "name": "analyst_sort",
+   "normalized": "analyst_sort",
+   "dtype": "int8",
+   "n_missing": 0,
+   "n_unique": 2,
+   "stats": {
+    "min": 0.0,
+    "p25": 0.0,
+    "median": 0.0,
+    "p75": 0.0,
+    "max": 1.0,
+    "mean": 0.002291,
+    "sd": 0.047823
+   },
+   "binary": true
+  },
+  {
+   "name": "turnover_sort",
+   "normalized": "turnover_sort",
+   "dtype": "int8",
+   "n_missing": 0,
+   "n_unique": 2,
+   "stats": {
+    "min": 0.0,
+    "p25": 0.0,
+    "median": 0.0,
+    "p75": 0.0,
+    "max": 1.0,
+    "mean": 0.001145,
+    "sd": 0.033835
+   },
+   "binary": true
+  },
+  {
+   "name": "analyst_disp_sort",
+   "normalized": "analyst_disp_sort",
+   "dtype": "int8",
+   "n_missing": 0,
+   "n_unique": 1,
+   "stats": {
+    "min": 0.0,
+    "p25": 0.0,
+    "median": 0.0,
+    "p75": 0.0,
+    "max": 0.0,
+    "mean": 0.0,
+    "sd": 0.0
+   },
+   "binary": true
+  },
+  {
+   "name": "bm_quint",
+   "normalized": "bm_quint",
+   "dtype": "int8",
+   "n_missing": 0,
+   "n_unique": 1,
+   "stats": {
+    "min": 0.0,
+    "p25": 0.0,
+    "median": 0.0,
+    "p75": 0.0,
+    "max": 0.0,
+    "mean": 0.0,
+    "sd": 0.0
+   },
+   "binary": true
+  },
+  {
+   "name": "ep_quint",
+   "normalized": "ep_quint",
+   "dtype": "int8",
+   "n_missing": 0,
+   "n_unique": 1,
+   "stats": {
+    "min": 0.0,
+    "p25": 0.0,
+    "median": 0.0,
+    "p75": 0.0,
+    "max": 0.0,
+    "mean": 0.0,
+    "sd": 0.0
+   },
+   "binary": true
+  },
+  {
+   "name": "mom_quint",
+   "normalized": "mom_quint",
+   "dtype": "int8",
+   "n_missing": 0,
+   "n_unique": 1,
+   "stats": {
+    "min": 0.0,
+    "p25": 0.0,
+    "median": 0.0,
+    "p75": 0.0,
+    "max": 0.0,
+    "mean": 0.0,
+    "sd": 0.0
+   },
+   "binary": true
+  },
+  {
+   "name": "size_quint",
+   "normalized": "size_quint",
+   "dtype": "str",
+   "n_missing": 0,
+   "n_unique": 5,
+   "top_values": [
+    "0",
+    "1",
+    "2",
+    "3",
+    "2+3"
+   ]
+  },
+  {
+   "name": "beta_quint",
+   "normalized": "beta_quint",
+   "dtype": "int8",
+   "n_missing": 0,
+   "n_unique": 1,
+   "stats": {
+    "min": 0.0,
+    "p25": 0.0,
+    "median": 0.0,
+    "p75": 0.0,
+    "max": 0.0,
+    "mean": 0.0,
+    "sd": 0.0
+   },
+   "binary": true
+  },
+  {
+   "name": "jan",
+   "normalized": "jan",
+   "dtype": "int8",
+   "n_missing": 0,
+   "n_unique": 2,
+   "stats": {
+    "min": 0.0,
+    "p25": 0.0,
+    "median": 0.0,
+    "p75": 0.0,
+    "max": 1.0,
+    "mean": 0.064719,
+    "sd": 0.2461
+   },
+   "binary": true
+  },
+  {
+   "name": "febdec",
+   "normalized": "febdec",
+   "dtype": "int8",
+   "n_missing": 0,
+   "n_unique": 2,
+   "stats": {
+    "min": 0.0,
+    "p25": 0.0,
+    "median": 0.0,
+    "p75": 0.0,
+    "max": 1.0,
+    "mean": 0.081329,
+    "sd": 0.273418
+   },
+   "binary": true
+  },
+  {
+   "name": "feb",
+   "normalized": "feb",
+   "dtype": "int8",
+   "n_missing": 0,
+   "n_unique": 2,
+   "stats": {
+    "min": 0.0,
+    "p25": 0.0,
+    "median": 0.0,
+    "p75": 0.0,
+    "max": 1.0,
+    "mean": 0.001718,
+    "sd": 0.041428
+   },
+   "binary": true
+  },
+  {
+   "name": "mar",
+   "normalized": "mar",
+   "dtype": "int8",
+   "n_missing": 0,
+   "n_unique": 2,
+   "stats": {
+    "min": 0.0,
+    "p25": 0.0,
+    "median": 0.0,
+    "p75": 0.0,
+    "max": 1.0,
+    "mean": 0.003436,
+    "sd": 0.058537
+   },
+   "binary": true
+  },
+  {
+   "name": "apr",
+   "normalized": "apr",
+   "dtype": "int8",
+   "n_missing": 0,
+   "n_unique": 2,
+   "stats": {
+    "min": 0.0,
+    "p25": 0.0,
+    "median": 0.0,
+    "p75": 0.0,
+    "max": 1.0,
+    "mean": 0.003436,
+    "sd": 0.058537
+   },
+   "binary": true
+  },
+  {
+   "name": "may",
+   "normalized": "may",
+   "dtype": "int8",
+   "n_missing": 0,
+   "n_unique": 2,
+   "stats": {
+    "min": 0.0,
+    "p25": 0.0,
+    "median": 0.0,
+    "p75": 0.0,
+    "max": 1.0,
+    "mean": 0.003436,
+    "sd": 0.058537
+   },
+   "binary": true
+  },
+  {
+   "name": "jun",
+   "normalized": "jun",
+   "dtype": "int8",
+   "n_missing": 0,
+   "n_unique": 2,
+   "stats": {
+    "min": 0.0,
+    "p25": 0.0,
+    "median": 0.0,
+    "p75": 0.0,
+    "max": 1.0,
+    "mean": 0.003436,
+    "sd": 0.058537
+   },
+   "binary": true
+  },
+  {
+   "name": "jul",
+   "normalized": "jul",
+   "dtype": "int8",
+   "n_missing": 0,
+   "n_unique": 2,
+   "stats": {
+    "min": 0.0,
+    "p25": 0.0,
+    "median": 0.0,
+    "p75": 0.0,
+    "max": 1.0,
+    "mean": 0.006873,
+    "sd": 0.082641
+   },
+   "binary": true
+  },
+  {
+   "name": "aug",
+   "normalized": "aug",
+   "dtype": "int8",
+   "n_missing": 0,
+   "n_unique": 2,
+   "stats": {
+    "min": 0.0,
+    "p25": 0.0,
+    "median": 0.0,
+    "p75": 0.0,
+    "max": 1.0,
+    "mean": 0.003436,
+    "sd": 0.058537
+   },
+   "binary": true
+  },
+  {
+   "name": "sep",
+   "normalized": "sep",
+   "dtype": "int8",
+   "n_missing": 0,
+   "n_unique": 2,
+   "stats": {
+    "min": 0.0,
+    "p25": 0.0,
+    "median": 0.0,
+    "p75": 0.0,
+    "max": 1.0,
+    "mean": 0.003436,
+    "sd": 0.058537
+   },
+   "binary": true
+  },
+  {
+   "name": "oct",
+   "normalized": "oct",
+   "dtype": "int8",
+   "n_missing": 0,
+   "n_unique": 2,
+   "stats": {
+    "min": 0.0,
+    "p25": 0.0,
+    "median": 0.0,
+    "p75": 0.0,
+    "max": 1.0,
+    "mean": 0.003436,
+    "sd": 0.058537
+   },
+   "binary": true
+  },
+  {
+   "name": "nov",
+   "normalized": "nov",
+   "dtype": "int8",
+   "n_missing": 0,
+   "n_unique": 2,
+   "stats": {
+    "min": 0.0,
+    "p25": 0.0,
+    "median": 0.0,
+    "p75": 0.0,
+    "max": 1.0,
+    "mean": 0.003436,
+    "sd": 0.058537
+   },
+   "binary": true
+  },
+  {
+   "name": "dec",
+   "normalized": "dec",
+   "dtype": "int8",
+   "n_missing": 0,
+   "n_unique": 2,
+   "stats": {
+    "min": 0.0,
+    "p25": 0.0,
+    "median": 0.0,
+    "p75": 0.0,
+    "max": 1.0,
+    "mean": 0.003436,
+    "sd": 0.058537
+   },
+   "binary": true
+  },
+  {
+   "name": "non_janjul",
+   "normalized": "non_janjul",
+   "dtype": "int8",
+   "n_missing": 0,
+   "n_unique": 2,
+   "stats": {
+    "min": 0.0,
+    "p25": 0.0,
+    "median": 0.0,
+    "p75": 0.0,
+    "max": 1.0,
+    "mean": 0.003436,
+    "sd": 0.058537
+   },
+   "binary": true
+  },
+  {
+   "name": "BM",
+   "normalized": "bm",
+   "dtype": "int8",
+   "n_missing": 0,
+   "n_unique": 2,
+   "stats": {
+    "min": 0.0,
+    "p25": 0.0,
+    "median": 1.0,
+    "p75": 1.0,
+    "max": 1.0,
+    "mean": 0.544101,
+    "sd": 0.498194
+   },
+   "binary": true
+  },
+  {
+   "name": "beta",
+   "normalized": "beta",
+   "dtype": "int8",
+   "n_missing": 0,
+   "n_unique": 2,
+   "stats": {
+    "min": 0.0,
+    "p25": 0.0,
+    "median": 0.0,
+    "p75": 1.0,
+    "max": 1.0,
+    "mean": 0.469645,
+    "sd": 0.499221
+   },
+   "binary": true
+  },
+  {
+   "name": "beta_sq",
+   "normalized": "beta_sq",
+   "dtype": "int8",
+   "n_missing": 0,
+   "n_unique": 2,
+   "stats": {
+    "min": 0.0,
+    "p25": 0.0,
+    "median": 0.0,
+    "p75": 0.0,
+    "max": 1.0,
+    "mean": 0.017182,
+    "sd": 0.129987
+   },
+   "binary": true
+  },
+  {
+   "name": "mom",
+   "normalized": "mom",
+   "dtype": "int8",
+   "n_missing": 0,
+   "n_unique": 2,
+   "stats": {
+    "min": 0.0,
+    "p25": 0.0,
+    "median": 0.0,
+    "p75": 0.0,
+    "max": 1.0,
+    "mean": 0.063574,
+    "sd": 0.244062
+   },
+   "binary": true
+  },
+  {
+   "name": "mom3",
+   "normalized": "mom3",
+   "dtype": "int8",
+   "n_missing": 0,
+   "n_unique": 2,
+   "stats": {
+    "min": 0.0,
+    "p25": 0.0,
+    "median": 0.0,
+    "p75": 0.0,
+    "max": 1.0,
+    "mean": 0.014891,
+    "sd": 0.121152
+   },
+   "binary": true
+  },
+  {
+   "name": "mom3_1",
+   "normalized": "mom3_1",
+   "dtype": "int8",
+   "n_missing": 0,
+   "n_unique": 2,
+   "stats": {
+    "min": 0.0,
+    "p25": 0.0,
+    "median": 0.0,
+    "p75": 0.0,
+    "max": 1.0,
+    "mean": 0.000573,
+    "sd": 0.023932
+   },
+   "binary": true
+  },
+  {
+   "name": "mom3_2",
+   "normalized": "mom3_2",
+   "dtype": "int8",
+   "n_missing": 0,
+   "n_unique": 2,
+   "stats": {
+    "min": 0.0,
+    "p25": 0.0,
+    "median": 0.0,
+    "p75": 0.0,
+    "max": 1.0,
+    "mean": 0.000573,
+    "sd": 0.023932
+   },
+   "binary": true
+  },
+  {
+   "name": "mom3_3",
+   "normalized": "mom3_3",
+   "dtype": "int8",
+   "n_missing": 0,
+   "n_unique": 2,
+   "stats": {
+    "min": 0.0,
+    "p25": 0.0,
+    "median": 0.0,
+    "p75": 0.0,
+    "max": 1.0,
+    "mean": 0.000573,
+    "sd": 0.023932
+   },
+   "binary": true
+  },
+  {
+   "name": "mom_36",
+   "normalized": "mom_36",
+   "dtype": "int8",
+   "n_missing": 0,
+   "n_unique": 2,
+   "stats": {
+    "min": 0.0,
+    "p25": 0.0,
+    "median": 0.0,
+    "p75": 0.0,
+    "max": 1.0,
+    "mean": 0.016037,
+    "sd": 0.125652
+   },
+   "binary": true
+  },
+  {
+   "name": "BM_dum",
+   "normalized": "bm_dum",
+   "dtype": "int8",
+   "n_missing": 0,
+   "n_unique": 2,
+   "stats": {
+    "min": 0.0,
+    "p25": 0.0,
+    "median": 0.0,
+    "p75": 0.0,
+    "max": 1.0,
+    "mean": 0.008591,
+    "sd": 0.092315
+   },
+   "binary": true
+  },
+  {
+   "name": "CP",
+   "normalized": "cp",
+   "dtype": "int8",
+   "n_missing": 0,
+   "n_unique": 2,
+   "stats": {
+    "min": 0.0,
+    "p25": 0.0,
+    "median": 0.0,
+    "p75": 0.0,
+    "max": 1.0,
+    "mean": 0.018328,
+    "sd": 0.134172
+   },
+   "binary": true
+  },
+  {
+   "name": "CP_dum",
+   "normalized": "cp_dum",
+   "dtype": "int8",
+   "n_missing": 0,
+   "n_unique": 2,
+   "stats": {
+    "min": 0.0,
+    "p25": 0.0,
+    "median": 0.0,
+    "p75": 0.0,
+    "max": 1.0,
+    "mean": 0.0063,
+    "sd": 0.079146
+   },
+   "binary": true
+  },
+  {
+   "name": "DP",
+   "normalized": "dp",
+   "dtype": "int8",
+   "n_missing": 0,
+   "n_unique": 2,
+   "stats": {
+    "min": 0.0,
+    "p25": 0.0,
+    "median": 0.0,
+    "p75": 0.0,
+    "max": 1.0,
+    "mean": 0.015464,
+    "sd": 0.123424
+   },
+   "binary": true
+  },
+  {
+   "name": "DP_dum",
+   "normalized": "dp_dum",
+   "dtype": "int8",
+   "n_missing": 0,
+   "n_unique": 2,
+   "stats": {
+    "min": 0.0,
+    "p25": 0.0,
+    "median": 0.0,
+    "p75": 0.0,
+    "max": 1.0,
+    "mean": 0.004582,
+    "sd": 0.067554
+   },
+   "binary": true
+  },
+  {
+   "name": "EP",
+   "normalized": "ep",
+   "dtype": "int8",
+   "n_missing": 0,
+   "n_unique": 2,
+   "stats": {
+    "min": 0.0,
+    "p25": 0.0,
+    "median": 0.0,
+    "p75": 0.0,
+    "max": 1.0,
+    "mean": 0.099084,
+    "sd": 0.29886
+   },
+   "binary": true
+  },
+  {
+   "name": "EP_dum",
+   "normalized": "ep_dum",
+   "dtype": "int8",
+   "n_missing": 0,
+   "n_unique": 2,
+   "stats": {
+    "min": 0.0,
+    "p25": 0.0,
+    "median": 0.0,
+    "p75": 0.0,
+    "max": 1.0,
+    "mean": 0.020619,
+    "sd": 0.142144
+   },
+   "binary": true
+  },
+  {
+   "name": "EB",
+   "normalized": "eb",
+   "dtype": "int8",
+   "n_missing": 0,
+   "n_unique": 2,
+   "stats": {
+    "min": 0.0,
+    "p25": 0.0,
+    "median": 0.0,
+    "p75": 0.0,
+    "max": 1.0,
+    "mean": 0.010882,
+    "sd": 0.103777
+   },
+   "binary": true
+  },
+  {
+   "name": "FCFB",
+   "normalized": "fcfb",
+   "dtype": "int8",
+   "n_missing": 0,
+   "n_unique": 2,
+   "stats": {
+    "min": 0.0,
+    "p25": 0.0,
+    "median": 0.0,
+    "p75": 0.0,
+    "max": 1.0,
+    "mean": 0.010882,
+    "sd": 0.103777
+   },
+   "binary": true
+  },
+  {
+   "name": "LB",
+   "normalized": "lb",
+   "dtype": "int8",
+   "n_missing": 0,
+   "n_unique": 2,
+   "stats": {
+    "min": 0.0,
+    "p25": 0.0,
+    "median": 0.0,
+    "p75": 0.0,
+    "max": 1.0,
+    "mean": 0.000573,
+    "sd": 0.023932
+   },
+   "binary": true
+  },
+  {
+   "name": "LB_dum",
+   "normalized": "lb_dum",
+   "dtype": "int8",
+   "n_missing": 0,
+   "n_unique": 2,
+   "stats": {
+    "min": 0.0,
+    "p25": 0.0,
+    "median": 0.0,
+    "p75": 0.0,
+    "max": 1.0,
+    "mean": 0.000573,
+    "sd": 0.023932
+   },
+   "binary": true
+  },
+  {
+   "name": "EBITDAA",
+   "normalized": "ebitdaa",
+   "dtype": "int8",
+   "n_missing": 0,
+   "n_unique": 2,
+   "stats": {
+    "min": 0.0,
+    "p25": 0.0,
+    "median": 0.0,
+    "p75": 0.0,
+    "max": 1.0,
+    "mean": 0.011455,
+    "sd": 0.106443
+   },
+   "binary": true
+  },
+  {
+   "name": "EBITDAXSGA",
+   "normalized": "ebitdaxsga",
+   "dtype": "int8",
+   "n_missing": 0,
+   "n_unique": 2,
+   "stats": {
+    "min": 0.0,
+    "p25": 0.0,
+    "median": 0.0,
+    "p75": 0.0,
+    "max": 1.0,
+    "mean": 0.011455,
+    "sd": 0.106443
+   },
+   "binary": true
+  },
+  {
+   "name": "A_turn",
+   "normalized": "a_turn",
+   "dtype": "int8",
+   "n_missing": 0,
+   "n_unique": 2,
+   "stats": {
+    "min": 0.0,
+    "p25": 0.0,
+    "median": 0.0,
+    "p75": 0.0,
+    "max": 1.0,
+    "mean": 0.004009,
+    "sd": 0.063209
+   },
+   "binary": true
+  },
+  {
+   "name": "gross_margin",
+   "normalized": "gross_margin",
+   "dtype": "int8",
+   "n_missing": 0,
+   "n_unique": 2,
+   "stats": {
+    "min": 0.0,
+    "p25": 0.0,
+    "median": 0.0,
+    "p75": 0.0,
+    "max": 1.0,
+    "mean": 0.004009,
+    "sd": 0.063209
+   },
+   "binary": true
+  },
+  {
+   "name": "AM",
+   "normalized": "am",
+   "dtype": "int8",
+   "n_missing": 0,
+   "n_unique": 2,
+   "stats": {
+    "min": 0.0,
+    "p25": 0.0,
+    "median": 0.0,
+    "p75": 0.0,
+    "max": 1.0,
+    "mean": 0.013746,
+    "sd": 0.116467
+   },
+   "binary": true
+  },
+  {
+   "name": "AB",
+   "normalized": "ab",
+   "dtype": "int8",
+   "n_missing": 0,
+   "n_unique": 2,
+   "stats": {
+    "min": 0.0,
+    "p25": 0.0,
+    "median": 0.0,
+    "p75": 0.0,
+    "max": 1.0,
+    "mean": 0.003436,
+    "sd": 0.058537
+   },
+   "binary": true
+  },
+  {
+   "name": "accruals",
+   "normalized": "accruals",
+   "dtype": "int8",
+   "n_missing": 0,
+   "n_unique": 2,
+   "stats": {
+    "min": 0.0,
+    "p25": 0.0,
+    "median": 0.0,
+    "p75": 0.0,
+    "max": 1.0,
+    "mean": 0.007446,
+    "sd": 0.085991
+   },
+   "binary": true
+  },
+  {
+   "name": "XRDM",
+   "normalized": "xrdm",
+   "dtype": "int8",
+   "n_missing": 0,
+   "n_unique": 2,
+   "stats": {
+    "min": 0.0,
+    "p25": 0.0,
+    "median": 0.0,
+    "p75": 0.0,
+    "max": 1.0,
+    "mean": 0.004009,
+    "sd": 0.063209
+   },
+   "binary": true
+  },
+  {
+   "name": "beta_loc",
+   "normalized": "beta_loc",
+   "dtype": "int8",
+   "n_missing": 0,
+   "n_unique": 2,
+   "stats": {
+    "min": 0.0,
+    "p25": 0.0,
+    "median": 0.0,
+    "p75": 0.0,
+    "max": 1.0,
+    "mean": 0.004582,
+    "sd": 0.067554
+   },
+   "binary": true
+  },
+  {
+   "name": "beta_glob",
+   "normalized": "beta_glob",
+   "dtype": "int8",
+   "n_missing": 0,
+   "n_unique": 2,
+   "stats": {
+    "min": 0.0,
+    "p25": 0.0,
+    "median": 0.0,
+    "p75": 0.0,
+    "max": 1.0,
+    "mean": 0.002291,
+    "sd": 0.047823
+   },
+   "binary": true
+  },
+  {
+   "name": "beta_up",
+   "normalized": "beta_up",
+   "dtype": "int8",
+   "n_missing": 0,
+   "n_unique": 2,
+   "stats": {
+    "min": 0.0,
+    "p25": 0.0,
+    "median": 0.0,
+    "p75": 0.0,
+    "max": 1.0,
+    "mean": 0.002291,
+    "sd": 0.047823
+   },
+   "binary": true
+  },
+  {
+   "name": "beta_down",
+   "normalized": "beta_down",
+   "dtype": "int8",
+   "n_missing": 0,
+   "n_unique": 2,
+   "stats": {
+    "min": 0.0,
+    "p25": 0.0,
+    "median": 0.0,
+    "p75": 0.0,
+    "max": 1.0,
+    "mean": 0.002291,
+    "sd": 0.047823
+   },
+   "binary": true
+  },
+  {
+   "name": "illiq",
+   "normalized": "illiq",
+   "dtype": "int8",
+   "n_missing": 0,
+   "n_unique": 2,
+   "stats": {
+    "min": 0.0,
+    "p25": 0.0,
+    "median": 0.0,
+    "p75": 0.0,
+    "max": 1.0,
+    "mean": 0.022337,
+    "sd": 0.147819
+   },
+   "binary": true
+  },
+  {
+   "name": "divyld",
+   "normalized": "divyld",
+   "dtype": "int8",
+   "n_missing": 0,
+   "n_unique": 2,
+   "stats": {
+    "min": 0.0,
+    "p25": 0.0,
+    "median": 0.0,
+    "p75": 0.0,
+    "max": 1.0,
+    "mean": 0.087629,
+    "sd": 0.282835
+   },
+   "binary": true
+  },
+  {
+   "name": "r100",
+   "normalized": "r100",
+   "dtype": "int8",
+   "n_missing": 0,
+   "n_unique": 2,
+   "stats": {
+    "min": 0.0,
+    "p25": 0.0,
+    "median": 0.0,
+    "p75": 0.0,
+    "max": 1.0,
+    "mean": 0.002291,
+    "sd": 0.047823
+   },
+   "binary": true
+  },
+  {
+   "name": "r100yr",
+   "normalized": "r100yr",
+   "dtype": "int8",
+   "n_missing": 0,
+   "n_unique": 2,
+   "stats": {
+    "min": 0.0,
+    "p25": 0.0,
+    "median": 0.0,
+    "p75": 0.0,
+    "max": 1.0,
+    "mean": 0.002291,
+    "sd": 0.047823
+   },
+   "binary": true
+  },
+  {
+   "name": "sd_ret",
+   "normalized": "sd_ret",
+   "dtype": "int8",
+   "n_missing": 0,
+   "n_unique": 2,
+   "stats": {
+    "min": 0.0,
+    "p25": 0.0,
+    "median": 0.0,
+    "p75": 0.0,
+    "max": 1.0,
+    "mean": 0.003436,
+    "sd": 0.058537
+   },
+   "binary": true
+  },
+  {
+   "name": "ret2_3",
+   "normalized": "ret2_3",
+   "dtype": "int8",
+   "n_missing": 0,
+   "n_unique": 2,
+   "stats": {
+    "min": 0.0,
+    "p25": 0.0,
+    "median": 0.0,
+    "p75": 0.0,
+    "max": 1.0,
+    "mean": 0.09622,
+    "sd": 0.294977
+   },
+   "binary": true
+  },
+  {
+   "name": "ret4_6",
+   "normalized": "ret4_6",
+   "dtype": "int8",
+   "n_missing": 0,
+   "n_unique": 2,
+   "stats": {
+    "min": 0.0,
+    "p25": 0.0,
+    "median": 0.0,
+    "p75": 0.0,
+    "max": 1.0,
+    "mean": 0.081329,
+    "sd": 0.273418
+   },
+   "binary": true
+  },
+  {
+   "name": "ret2_7",
+   "normalized": "ret2_7",
+   "dtype": "int8",
+   "n_missing": 0,
+   "n_unique": 2,
+   "stats": {
+    "min": 0.0,
+    "p25": 0.0,
+    "median": 0.0,
+    "p75": 0.0,
+    "max": 1.0,
+    "mean": 0.002864,
+    "sd": 0.053452
+   },
+   "binary": true
+  },
+  {
+   "name": "ret7_12",
+   "normalized": "ret7_12",
+   "dtype": "int8",
+   "n_missing": 0,
+   "n_unique": 2,
+   "stats": {
+    "min": 0.0,
+    "p25": 0.0,
+    "median": 0.0,
+    "p75": 0.0,
+    "max": 1.0,
+    "mean": 0.080756,
+    "sd": 0.272538
+   },
+   "binary": true
+  },
+  {
+   "name": "ret_7_1",
+   "normalized": "ret_7_1",
+   "dtype": "int8",
+   "n_missing": 0,
+   "n_unique": 2,
+   "stats": {
+    "min": 0.0,
+    "p25": 0.0,
+    "median": 0.0,
+    "p75": 0.0,
+    "max": 1.0,
+    "mean": 0.000573,
+    "sd": 0.023932
+   },
+   "binary": true
+  },
+  {
+   "name": "ret36_13",
+   "normalized": "ret36_13",
+   "dtype": "int8",
+   "n_missing": 0,
+   "n_unique": 2,
+   "stats": {
+    "min": 0.0,
+    "p25": 0.0,
+    "median": 0.0,
+    "p75": 0.0,
+    "max": 1.0,
+    "mean": 0.021191,
+    "sd": 0.144063
+   },
+   "binary": true
+  },
+  {
+   "name": "ret_1_1",
+   "normalized": "ret_1_1",
+   "dtype": "int8",
+   "n_missing": 0,
+   "n_unique": 2,
+   "stats": {
+    "min": 0.0,
+    "p25": 0.0,
+    "median": 0.0,
+    "p75": 0.0,
+    "max": 1.0,
+    "mean": 0.021191,
+    "sd": 0.144063
+   },
+   "binary": true
+  },
+  {
+   "name": "ret1_0",
+   "normalized": "ret1_0",
+   "dtype": "int8",
+   "n_missing": 0,
+   "n_unique": 2,
+   "stats": {
+    "min": 0.0,
+    "p25": 0.0,
+    "median": 0.0,
+    "p75": 0.0,
+    "max": 1.0,
+    "mean": 0.038373,
+    "sd": 0.192151
+   },
+   "binary": true
+  },
+  {
+   "name": "ret12_2",
+   "normalized": "ret12_2",
+   "dtype": "int8",
+   "n_missing": 0,
+   "n_unique": 2,
+   "stats": {
+    "min": 0.0,
+    "p25": 0.0,
+    "median": 0.0,
+    "p75": 0.0,
+    "max": 1.0,
+    "mean": 0.031501,
+    "sd": 0.174716
+   },
+   "binary": true
+  },
+  {
+   "name": "ret6",
+   "normalized": "ret6",
+   "dtype": "int8",
+   "n_missing": 0,
+   "n_unique": 2,
+   "stats": {
+    "min": 0.0,
+    "p25": 0.0,
+    "median": 0.0,
+    "p75": 0.0,
+    "max": 1.0,
+    "mean": 0.018328,
+    "sd": 0.134172
+   },
+   "binary": true
+  },
+  {
+   "name": "ret6_1",
+   "normalized": "ret6_1",
+   "dtype": "int8",
+   "n_missing": 0,
+   "n_unique": 2,
+   "stats": {
+    "min": 0.0,
+    "p25": 0.0,
+    "median": 0.0,
+    "p75": 0.0,
+    "max": 1.0,
+    "mean": 0.003436,
+    "sd": 0.058537
+   },
+   "binary": true
+  },
+  {
+   "name": "ret12",
+   "normalized": "ret12",
+   "dtype": "int8",
+   "n_missing": 0,
+   "n_unique": 2,
+   "stats": {
+    "min": 0.0,
+    "p25": 0.0,
+    "median": 0.0,
+    "p75": 0.0,
+    "max": 1.0,
+    "mean": 0.020619,
+    "sd": 0.142144
+   },
+   "binary": true
+  },
+  {
+   "name": "ret12_1",
+   "normalized": "ret12_1",
+   "dtype": "int8",
+   "n_missing": 0,
+   "n_unique": 2,
+   "stats": {
+    "min": 0.0,
+    "p25": 0.0,
+    "median": 0.0,
+    "p75": 0.0,
+    "max": 1.0,
+    "mean": 0.009737,
+    "sd": 0.09822
+   },
+   "binary": true
+  },
+  {
+   "name": "ret36",
+   "normalized": "ret36",
+   "dtype": "int8",
+   "n_missing": 0,
+   "n_unique": 2,
+   "stats": {
+    "min": 0.0,
+    "p25": 0.0,
+    "median": 0.0,
+    "p75": 0.0,
+    "max": 1.0,
+    "mean": 0.001145,
+    "sd": 0.033835
+   },
+   "binary": true
+  },
+  {
+   "name": "ret48",
+   "normalized": "ret48",
+   "dtype": "int8",
+   "n_missing": 0,
+   "n_unique": 1,
+   "stats": {
+    "min": 0.0,
+    "p25": 0.0,
+    "median": 0.0,
+    "p75": 0.0,
+    "max": 0.0,
+    "mean": 0.0,
+    "sd": 0.0
+   },
+   "binary": true
+  },
+  {
+   "name": "ret60_12",
+   "normalized": "ret60_12",
+   "dtype": "int8",
+   "n_missing": 0,
+   "n_unique": 2,
+   "stats": {
+    "min": 0.0,
+    "p25": 0.0,
+    "median": 0.0,
+    "p75": 0.0,
+    "max": 1.0,
+    "mean": 0.000573,
+    "sd": 0.023932
+   },
+   "binary": true
+  },
+  {
+   "name": "ind_ret_1_1",
+   "normalized": "ind_ret_1_1",
+   "dtype": "int8",
+   "n_missing": 0,
+   "n_unique": 2,
+   "stats": {
+    "min": 0.0,
+    "p25": 0.0,
+    "median": 0.0,
+    "p75": 0.0,
+    "max": 1.0,
+    "mean": 0.006873,
+    "sd": 0.082641
+   },
+   "binary": true
+  },
+  {
+   "name": "ind_ret36_13",
+   "normalized": "ind_ret36_13",
+   "dtype": "int8",
+   "n_missing": 0,
+   "n_unique": 2,
+   "stats": {
+    "min": 0.0,
+    "p25": 0.0,
+    "median": 0.0,
+    "p75": 0.0,
+    "max": 1.0,
+    "mean": 0.013173,
+    "sd": 0.114048
+   },
+   "binary": true
+  },
+  {
+   "name": "ind_ret6",
+   "normalized": "ind_ret6",
+   "dtype": "int8",
+   "n_missing": 0,
+   "n_unique": 2,
+   "stats": {
+    "min": 0.0,
+    "p25": 0.0,
+    "median": 0.0,
+    "p75": 0.0,
+    "max": 1.0,
+    "mean": 0.003436,
+    "sd": 0.058537
+   },
+   "binary": true
+  },
+  {
+   "name": "ind_ret6_1",
+   "normalized": "ind_ret6_1",
+   "dtype": "int8",
+   "n_missing": 0,
+   "n_unique": 2,
+   "stats": {
+    "min": 0.0,
+    "p25": 0.0,
+    "median": 0.0,
+    "p75": 0.0,
+    "max": 1.0,
+    "mean": 0.003436,
+    "sd": 0.058537
+   },
+   "binary": true
+  },
+  {
+   "name": "ind_ret12",
+   "normalized": "ind_ret12",
+   "dtype": "int8",
+   "n_missing": 0,
+   "n_unique": 2,
+   "stats": {
+    "min": 0.0,
+    "p25": 0.0,
+    "median": 0.0,
+    "p75": 0.0,
+    "max": 1.0,
+    "mean": 0.003436,
+    "sd": 0.058537
+   },
+   "binary": true
+  },
+  {
+   "name": "ind_ret12_1",
+   "normalized": "ind_ret12_1",
+   "dtype": "int8",
+   "n_missing": 0,
+   "n_unique": 2,
+   "stats": {
+    "min": 0.0,
+    "p25": 0.0,
+    "median": 0.0,
+    "p75": 0.0,
+    "max": 1.0,
+    "mean": 0.003436,
+    "sd": 0.058537
+   },
+   "binary": true
+  },
+  {
+   "name": "gross_proftA",
+   "normalized": "gross_profta",
+   "dtype": "int8",
+   "n_missing": 0,
+   "n_unique": 2,
+   "stats": {
+    "min": 0.0,
+    "p25": 0.0,
+    "median": 0.0,
+    "p75": 0.0,
+    "max": 1.0,
+    "mean": 0.008018,
+    "sd": 0.089211
+   },
+   "binary": true
+  },
+  {
+   "name": "price",
+   "normalized": "price",
+   "dtype": "int8",
+   "n_missing": 0,
+   "n_unique": 2,
+   "stats": {
+    "min": 0.0,
+    "p25": 0.0,
+    "median": 0.0,
+    "p75": 0.0,
+    "max": 1.0,
+    "mean": 0.126002,
+    "sd": 0.331947
+   },
+   "binary": true
+  },
+  {
+   "name": "nydvol",
+   "normalized": "nydvol",
+   "dtype": "int8",
+   "n_missing": 0,
+   "n_unique": 2,
+   "stats": {
+    "min": 0.0,
+    "p25": 0.0,
+    "median": 0.0,
+    "p75": 0.0,
+    "max": 1.0,
+    "mean": 0.014891,
+    "sd": 0.121152
+   },
+   "binary": true
+  },
+  {
+   "name": "nadvol",
+   "normalized": "nadvol",
+   "dtype": "int8",
+   "n_missing": 0,
+   "n_unique": 2,
+   "stats": {
+    "min": 0.0,
+    "p25": 0.0,
+    "median": 0.0,
+    "p75": 0.0,
+    "max": 1.0,
+    "mean": 0.009164,
+    "sd": 0.095315
+   },
+   "binary": true
+  },
+  {
+   "name": "e_ivol",
+   "normalized": "e_ivol",
+   "dtype": "int8",
+   "n_missing": 0,
+   "n_unique": 2,
+   "stats": {
+    "min": 0.0,
+    "p25": 0.0,
+    "median": 0.0,
+    "p75": 0.0,
+    "max": 1.0,
+    "mean": 0.001145,
+    "sd": 0.033835
+   },
+   "binary": true
+  },
+  {
+   "name": "ivol",
+   "normalized": "ivol",
+   "dtype": "int8",
+   "n_missing": 0,
+   "n_unique": 2,
+   "stats": {
+    "min": 0.0,
+    "p25": 0.0,
+    "median": 0.0,
+    "p75": 0.0,
+    "max": 1.0,
+    "mean": 0.002291,
+    "sd": 0.047823
+   },
+   "binary": true
+  },
+  {
+   "name": "vol",
+   "normalized": "vol",
+   "dtype": "int8",
+   "n_missing": 0,
+   "n_unique": 2,
+   "stats": {
+    "min": 0.0,
+    "p25": 0.0,
+    "median": 0.0,
+    "p75": 0.0,
+    "max": 1.0,
+    "mean": 0.042383,
+    "sd": 0.201518
+   },
+   "binary": true
+  },
+  {
+   "name": "vol_sqr",
+   "normalized": "vol_sqr",
+   "dtype": "int8",
+   "n_missing": 0,
+   "n_unique": 2,
+   "stats": {
+    "min": 0.0,
+    "p25": 0.0,
+    "median": 0.0,
+    "p75": 0.0,
+    "max": 1.0,
+    "mean": 0.001145,
+    "sd": 0.033835
+   },
+   "binary": true
+  },
+  {
+   "name": "nasdum",
+   "normalized": "nasdum",
+   "dtype": "int8",
+   "n_missing": 0,
+   "n_unique": 2,
+   "stats": {
+    "min": 0.0,
+    "p25": 0.0,
+    "median": 0.0,
+    "p75": 0.0,
+    "max": 1.0,
+    "mean": 0.024628,
+    "sd": 0.155032
+   },
+   "binary": true
+  },
+  {
+   "name": "nyturn",
+   "normalized": "nyturn",
+   "dtype": "int8",
+   "n_missing": 0,
+   "n_unique": 2,
+   "stats": {
+    "min": 0.0,
+    "p25": 0.0,
+    "median": 0.0,
+    "p75": 0.0,
+    "max": 1.0,
+    "mean": 0.030928,
+    "sd": 0.173172
+   },
+   "binary": true
+  },
+  {
+   "name": "nasdturn",
+   "normalized": "nasdturn",
+   "dtype": "int8",
+   "n_missing": 0,
+   "n_unique": 2,
+   "stats": {
+    "min": 0.0,
+    "p25": 0.0,
+    "median": 0.0,
+    "p75": 0.0,
+    "max": 1.0,
+    "mean": 0.0189,
+    "sd": 0.136212
+   },
+   "binary": true
+  },
+  {
+   "name": "turn",
+   "normalized": "turn",
+   "dtype": "int8",
+   "n_missing": 0,
+   "n_unique": 2,
+   "stats": {
+    "min": 0.0,
+    "p25": 0.0,
+    "median": 0.0,
+    "p75": 0.0,
+    "max": 1.0,
+    "mean": 0.097365,
+    "sd": 0.29654
+   },
+   "binary": true
+  },
+  {
+   "name": "turn_sq",
+   "normalized": "turn_sq",
+   "dtype": "int8",
+   "n_missing": 0,
+   "n_unique": 2,
+   "stats": {
+    "min": 0.0,
+    "p25": 0.0,
+    "median": 0.0,
+    "p75": 0.0,
+    "max": 1.0,
+    "mean": 0.001145,
+    "sd": 0.033835
+   },
+   "binary": true
+  },
+  {
+   "name": "cvvol",
+   "normalized": "cvvol",
+   "dtype": "int8",
+   "n_missing": 0,
+   "n_unique": 2,
+   "stats": {
+    "min": 0.0,
+    "p25": 0.0,
+    "median": 0.0,
+    "p75": 0.0,
+    "max": 1.0,
+    "mean": 0.0063,
+    "sd": 0.079146
+   },
+   "binary": true
+  },
+  {
+   "name": "cvvol_plus",
+   "normalized": "cvvol_plus",
+   "dtype": "int8",
+   "n_missing": 0,
+   "n_unique": 2,
+   "stats": {
+    "min": 0.0,
+    "p25": 0.0,
+    "median": 0.0,
+    "p75": 0.0,
+    "max": 1.0,
+    "mean": 0.001145,
+    "sd": 0.033835
+   },
+   "binary": true
+  },
+  {
+   "name": "cvvol_minus",
+   "normalized": "cvvol_minus",
+   "dtype": "int8",
+   "n_missing": 0,
+   "n_unique": 2,
+   "stats": {
+    "min": 0.0,
+    "p25": 0.0,
+    "median": 0.0,
+    "p75": 0.0,
+    "max": 1.0,
+    "mean": 0.001145,
+    "sd": 0.033835
+   },
+   "binary": true
+  },
+  {
+   "name": "cvturn",
+   "normalized": "cvturn",
+   "dtype": "int8",
+   "n_missing": 0,
+   "n_unique": 2,
+   "stats": {
+    "min": 0.0,
+    "p25": 0.0,
+    "median": 0.0,
+    "p75": 0.0,
+    "max": 1.0,
+    "mean": 0.013173,
+    "sd": 0.114048
+   },
+   "binary": true
+  },
+  {
+   "name": "cvturn_plus",
+   "normalized": "cvturn_plus",
+   "dtype": "int8",
+   "n_missing": 0,
+   "n_unique": 2,
+   "stats": {
+    "min": 0.0,
+    "p25": 0.0,
+    "median": 0.0,
+    "p75": 0.0,
+    "max": 1.0,
+    "mean": 0.001145,
+    "sd": 0.033835
+   },
+   "binary": true
+  },
+  {
+   "name": "cvturn_minus",
+   "normalized": "cvturn_minus",
+   "dtype": "int8",
+   "n_missing": 0,
+   "n_unique": 2,
+   "stats": {
+    "min": 0.0,
+    "p25": 0.0,
+    "median": 0.0,
+    "p75": 0.0,
+    "max": 1.0,
+    "mean": 0.001145,
+    "sd": 0.033835
+   },
+   "binary": true
+  },
+  {
+   "name": "hvol",
+   "normalized": "hvol",
+   "dtype": "int8",
+   "n_missing": 0,
+   "n_unique": 2,
+   "stats": {
+    "min": 0.0,
+    "p25": 0.0,
+    "median": 0.0,
+    "p75": 0.0,
+    "max": 1.0,
+    "mean": 0.001145,
+    "sd": 0.033835
+   },
+   "binary": true
+  },
+  {
+   "name": "hturn",
+   "normalized": "hturn",
+   "dtype": "int8",
+   "n_missing": 0,
+   "n_unique": 2,
+   "stats": {
+    "min": 0.0,
+    "p25": 0.0,
+    "median": 0.0,
+    "p75": 0.0,
+    "max": 1.0,
+    "mean": 0.001145,
+    "sd": 0.033835
+   },
+   "binary": true
+  },
+  {
+   "name": "max",
+   "normalized": "max",
+   "dtype": "int8",
+   "n_missing": 0,
+   "n_unique": 2,
+   "stats": {
+    "min": 0.0,
+    "p25": 0.0,
+    "median": 0.0,
+    "p75": 0.0,
+    "max": 1.0,
+    "mean": 0.005727,
+    "sd": 0.075484
+   },
+   "binary": true
+  },
+  {
+   "name": "min",
+   "normalized": "min",
+   "dtype": "int8",
+   "n_missing": 0,
+   "n_unique": 2,
+   "stats": {
+    "min": 0.0,
+    "p25": 0.0,
+    "median": 0.0,
+    "p75": 0.0,
+    "max": 1.0,
+    "mean": 0.001145,
+    "sd": 0.033835
+   },
+   "binary": true
+  },
+  {
+   "name": "rev",
+   "normalized": "rev",
+   "dtype": "int8",
+   "n_missing": 0,
+   "n_unique": 2,
+   "stats": {
+    "min": 0.0,
+    "p25": 0.0,
+    "median": 0.0,
+    "p75": 0.0,
+    "max": 1.0,
+    "mean": 0.008018,
+    "sd": 0.089211
+   },
+   "binary": true
+  },
+  {
+   "name": "tskew",
+   "normalized": "tskew",
+   "dtype": "int8",
+   "n_missing": 0,
+   "n_unique": 1,
+   "stats": {
+    "min": 0.0,
+    "p25": 0.0,
+    "median": 0.0,
+    "p75": 0.0,
+    "max": 0.0,
+    "mean": 0.0,
+    "sd": 0.0
+   },
+   "binary": true
+  },
+  {
+   "name": "sskew",
+   "normalized": "sskew",
+   "dtype": "int8",
+   "n_missing": 0,
+   "n_unique": 1,
+   "stats": {
+    "min": 0.0,
+    "p25": 0.0,
+    "median": 0.0,
+    "p75": 0.0,
+    "max": 0.0,
+    "mean": 0.0,
+    "sd": 0.0
+   },
+   "binary": true
+  },
+  {
+   "name": "iskew",
+   "normalized": "iskew",
+   "dtype": "int8",
+   "n_missing": 0,
+   "n_unique": 1,
+   "stats": {
+    "min": 0.0,
+    "p25": 0.0,
+    "median": 0.0,
+    "p75": 0.0,
+    "max": 0.0,
+    "mean": 0.0,
+    "sd": 0.0
+   },
+   "binary": true
+  },
+  {
+   "name": "w_ff_vol",
+   "normalized": "w_ff_vol",
+   "dtype": "int8",
+   "n_missing": 0,
+   "n_unique": 2,
+   "stats": {
+    "min": 0.0,
+    "p25": 0.0,
+    "median": 0.0,
+    "p75": 0.0,
+    "max": 1.0,
+    "mean": 0.016037,
+    "sd": 0.125652
+   },
+   "binary": true
+  },
+  {
+   "name": "w_ff_vol_3",
+   "normalized": "w_ff_vol_3",
+   "dtype": "int8",
+   "n_missing": 0,
+   "n_unique": 2,
+   "stats": {
+    "min": 0.0,
+    "p25": 0.0,
+    "median": 0.0,
+    "p75": 0.0,
+    "max": 1.0,
+    "mean": 0.001718,
+    "sd": 0.041428
+   },
+   "binary": true
+  },
+  {
+   "name": "w_ff_vol_6",
+   "normalized": "w_ff_vol_6",
+   "dtype": "int8",
+   "n_missing": 0,
+   "n_unique": 2,
+   "stats": {
+    "min": 0.0,
+    "p25": 0.0,
+    "median": 0.0,
+    "p75": 0.0,
+    "max": 1.0,
+    "mean": 0.001718,
+    "sd": 0.041428
+   },
+   "binary": true
+  },
+  {
+   "name": "w_ff_vol_12",
+   "normalized": "w_ff_vol_12",
+   "dtype": "int8",
+   "n_missing": 0,
+   "n_unique": 2,
+   "stats": {
+    "min": 0.0,
+    "p25": 0.0,
+    "median": 0.0,
+    "p75": 0.0,
+    "max": 1.0,
+    "mean": 0.001718,
+    "sd": 0.041428
+   },
+   "binary": true
+  },
+  {
+   "name": "l_ff_vol",
+   "normalized": "l_ff_vol",
+   "dtype": "int8",
+   "n_missing": 0,
+   "n_unique": 2,
+   "stats": {
+    "min": 0.0,
+    "p25": 0.0,
+    "median": 0.0,
+    "p75": 0.0,
+    "max": 1.0,
+    "mean": 0.005155,
+    "sd": 0.071631
+   },
+   "binary": true
+  },
+  {
+   "name": "SMB",
+   "normalized": "smb",
+   "dtype": "int8",
+   "n_missing": 0,
+   "n_unique": 2,
+   "stats": {
+    "min": 0.0,
+    "p25": 0.0,
+    "median": 0.0,
+    "p75": 0.0,
+    "max": 1.0,
+    "mean": 0.025773,
+    "sd": 0.158503
+   },
+   "binary": true
+  },
+  {
+   "name": "HML",
+   "normalized": "hml",
+   "dtype": "int8",
+   "n_missing": 0,
+   "n_unique": 2,
+   "stats": {
+    "min": 0.0,
+    "p25": 0.0,
+    "median": 0.0,
+    "p75": 0.0,
+    "max": 1.0,
+    "mean": 0.025773,
+    "sd": 0.158503
+   },
+   "binary": true
+  },
+  {
+   "name": "dum_can",
+   "normalized": "dum_can",
+   "dtype": "int8",
+   "n_missing": 0,
+   "n_unique": 2,
+   "stats": {
+    "min": 0.0,
+    "p25": 0.0,
+    "median": 0.0,
+    "p75": 0.0,
+    "max": 1.0,
+    "mean": 0.005727,
+    "sd": 0.075484
+   },
+   "binary": true
+  },
+  {
+   "name": "dum_fr",
+   "normalized": "dum_fr",
+   "dtype": "int8",
+   "n_missing": 0,
+   "n_unique": 2,
+   "stats": {
+    "min": 0.0,
+    "p25": 0.0,
+    "median": 0.0,
+    "p75": 0.0,
+    "max": 1.0,
+    "mean": 0.0063,
+    "sd": 0.079146
+   },
+   "binary": true
+  },
+  {
+   "name": "dum_ger",
+   "normalized": "dum_ger",
+   "dtype": "int8",
+   "n_missing": 0,
+   "n_unique": 2,
+   "stats": {
+    "min": 0.0,
+    "p25": 0.0,
+    "median": 0.0,
+    "p75": 0.0,
+    "max": 1.0,
+    "mean": 0.0063,
+    "sd": 0.079146
+   },
+   "binary": true
+  },
+  {
+   "name": "dum_it",
+   "normalized": "dum_it",
+   "dtype": "int8",
+   "n_missing": 0,
+   "n_unique": 2,
+   "stats": {
+    "min": 0.0,
+    "p25": 0.0,
+    "median": 0.0,
+    "p75": 0.0,
+    "max": 1.0,
+    "mean": 0.0063,
+    "sd": 0.079146
+   },
+   "binary": true
+  },
+  {
+   "name": "dum_jap",
+   "normalized": "dum_jap",
+   "dtype": "int8",
+   "n_missing": 0,
+   "n_unique": 2,
+   "stats": {
+    "min": 0.0,
+    "p25": 0.0,
+    "median": 0.0,
+    "p75": 0.0,
+    "max": 1.0,
+    "mean": 0.005727,
+    "sd": 0.075484
+   },
+   "binary": true
+  },
+  {
+   "name": "dum_uk",
+   "normalized": "dum_uk",
+   "dtype": "int8",
+   "n_missing": 0,
+   "n_unique": 2,
+   "stats": {
+    "min": 0.0,
+    "p25": 0.0,
+    "median": 0.0,
+    "p75": 0.0,
+    "max": 1.0,
+    "mean": 0.002864,
+    "sd": 0.053452
+   },
+   "binary": true
+  },
+  {
+   "name": "dum_other",
+   "normalized": "dum_other",
+   "dtype": "int8",
+   "n_missing": 0,
+   "n_unique": 2,
+   "stats": {
+    "min": 0.0,
+    "p25": 0.0,
+    "median": 0.0,
+    "p75": 0.0,
+    "max": 1.0,
+    "mean": 0.004582,
+    "sd": 0.067554
+   },
+   "binary": true
+  },
+  {
+   "name": "PIN",
+   "normalized": "pin",
+   "dtype": "int8",
+   "n_missing": 0,
+   "n_unique": 2,
+   "stats": {
+    "min": 0.0,
+    "p25": 0.0,
+    "median": 0.0,
+    "p75": 0.0,
+    "max": 1.0,
+    "mean": 0.009737,
+    "sd": 0.09822
+   },
+   "binary": true
+  },
+  {
+   "name": "perc_of_zero_returns",
+   "normalized": "perc_of_zero_returns",
+   "dtype": "int8",
+   "n_missing": 0,
+   "n_unique": 2,
+   "stats": {
+    "min": 0.0,
+    "p25": 0.0,
+    "median": 0.0,
+    "p75": 0.0,
+    "max": 1.0,
+    "mean": 0.001145,
+    "sd": 0.033835
+   },
+   "binary": true
+  },
+  {
+   "name": "analyst_cov",
+   "normalized": "analyst_cov",
+   "dtype": "int8",
+   "n_missing": 0,
+   "n_unique": 2,
+   "stats": {
+    "min": 0.0,
+    "p25": 0.0,
+    "median": 0.0,
+    "p75": 0.0,
+    "max": 1.0,
+    "mean": 0.021191,
+    "sd": 0.144063
+   },
+   "binary": true
+  },
+  {
+   "name": "ins_own",
+   "normalized": "ins_own",
+   "dtype": "int8",
+   "n_missing": 0,
+   "n_unique": 2,
+   "stats": {
+    "min": 0.0,
+    "p25": 0.0,
+    "median": 0.0,
+    "p75": 0.0,
+    "max": 1.0,
+    "mean": 0.002864,
+    "sd": 0.053452
+   },
+   "binary": true
+  },
+  {
+   "name": "delay",
+   "normalized": "delay",
+   "dtype": "int8",
+   "n_missing": 0,
+   "n_unique": 2,
+   "stats": {
+    "min": 0.0,
+    "p25": 0.0,
+    "median": 0.0,
+    "p75": 0.0,
+    "max": 1.0,
+    "mean": 0.0063,
+    "sd": 0.079146
+   },
+   "binary": true
+  },
+  {
+   "name": "skeweness",
+   "normalized": "skeweness",
+   "dtype": "int8",
+   "n_missing": 0,
+   "n_unique": 2,
+   "stats": {
+    "min": 0.0,
+    "p25": 0.0,
+    "median": 0.0,
+    "p75": 0.0,
+    "max": 1.0,
+    "mean": 0.001145,
+    "sd": 0.033835
+   },
+   "binary": true
+  },
+  {
+   "name": "leverage",
+   "normalized": "leverage",
+   "dtype": "int8",
+   "n_missing": 0,
+   "n_unique": 2,
+   "stats": {
+    "min": 0.0,
+    "p25": 0.0,
+    "median": 0.0,
+    "p75": 0.0,
+    "max": 1.0,
+    "mean": 0.005727,
+    "sd": 0.075484
+   },
+   "binary": true
+  },
+  {
+   "name": "leverage_times_l_ff_vol",
+   "normalized": "leverage_times_l_ff_vol",
+   "dtype": "int8",
+   "n_missing": 0,
+   "n_unique": 2,
+   "stats": {
+    "min": 0.0,
+    "p25": 0.0,
+    "median": 0.0,
+    "p75": 0.0,
+    "max": 1.0,
+    "mean": 0.000573,
+    "sd": 0.023932
+   },
+   "binary": true
+  },
+  {
+   "name": "assetg",
+   "normalized": "assetg",
+   "dtype": "int8",
+   "n_missing": 0,
+   "n_unique": 2,
+   "stats": {
+    "min": 0.0,
+    "p25": 0.0,
+    "median": 0.0,
+    "p75": 0.0,
+    "max": 1.0,
+    "mean": 0.020046,
+    "sd": 0.140197
+   },
+   "binary": true
+  },
+  {
+   "name": "l2assetg",
+   "normalized": "l2assetg",
+   "dtype": "int8",
+   "n_missing": 0,
+   "n_unique": 2,
+   "stats": {
+    "min": 0.0,
+    "p25": 0.0,
+    "median": 0.0,
+    "p75": 0.0,
+    "max": 1.0,
+    "mean": 0.002291,
+    "sd": 0.047823
+   },
+   "binary": true
+  },
+  {
+   "name": "ysalesg",
+   "normalized": "ysalesg",
+   "dtype": "int8",
+   "n_missing": 0,
+   "n_unique": 2,
+   "stats": {
+    "min": 0.0,
+    "p25": 0.0,
+    "median": 0.0,
+    "p75": 0.0,
+    "max": 1.0,
+    "mean": 0.002291,
+    "sd": 0.047823
+   },
+   "binary": true
+  },
+  {
+   "name": "yassetg",
+   "normalized": "yassetg",
+   "dtype": "int8",
+   "n_missing": 0,
+   "n_unique": 2,
+   "stats": {
+    "min": 0.0,
+    "p25": 0.0,
+    "median": 0.0,
+    "p75": 0.0,
+    "max": 1.0,
+    "mean": 0.002291,
+    "sd": 0.047823
+   },
+   "binary": true
+  },
+  {
+   "name": "ci",
+   "normalized": "ci",
+   "dtype": "int8",
+   "n_missing": 0,
+   "n_unique": 2,
+   "stats": {
+    "min": 0.0,
+    "p25": 0.0,
+    "median": 0.0,
+    "p75": 0.0,
+    "max": 1.0,
+    "mean": 0.002291,
+    "sd": 0.047823
+   },
+   "binary": true
+  },
+  {
+   "name": "noa_a",
+   "normalized": "noa_a",
+   "dtype": "int8",
+   "n_missing": 0,
+   "n_unique": 2,
+   "stats": {
+    "min": 0.0,
+    "p25": 0.0,
+    "median": 0.0,
+    "p75": 0.0,
+    "max": 1.0,
+    "mean": 0.004582,
+    "sd": 0.067554
+   },
+   "binary": true
+  },
+  {
+   "name": "up",
+   "normalized": "up",
+   "dtype": "int8",
+   "n_missing": 0,
+   "n_unique": 2,
+   "stats": {
+    "min": 0.0,
+    "p25": 0.0,
+    "median": 0.0,
+    "p75": 0.0,
+    "max": 1.0,
+    "mean": 0.0063,
+    "sd": 0.079146
+   },
+   "binary": true
+  },
+  {
+   "name": "down",
+   "normalized": "down",
+   "dtype": "int8",
+   "n_missing": 0,
+   "n_unique": 2,
+   "stats": {
+    "min": 0.0,
+    "p25": 0.0,
+    "median": 0.0,
+    "p75": 0.0,
+    "max": 1.0,
+    "mean": 0.0063,
+    "sd": 0.079146
+   },
+   "binary": true
+  },
+  {
+   "name": "middle",
+   "normalized": "middle",
+   "dtype": "int8",
+   "n_missing": 0,
+   "n_unique": 2,
+   "stats": {
+    "min": 0.0,
+    "p25": 0.0,
+    "median": 0.0,
+    "p75": 0.0,
+    "max": 1.0,
+    "mean": 0.000573,
+    "sd": 0.023932
+   },
+   "binary": true
+  },
+  {
+   "name": "BM_size",
+   "normalized": "bm_size",
+   "dtype": "int8",
+   "n_missing": 0,
+   "n_unique": 2,
+   "stats": {
+    "min": 0.0,
+    "p25": 0.0,
+    "median": 0.0,
+    "p75": 0.0,
+    "max": 1.0,
+    "mean": 0.0063,
+    "sd": 0.079146
+   },
+   "binary": true
+  },
+  {
+   "name": "BM_ivol",
+   "normalized": "bm_ivol",
+   "dtype": "int8",
+   "n_missing": 0,
+   "n_unique": 2,
+   "stats": {
+    "min": 0.0,
+    "p25": 0.0,
+    "median": 0.0,
+    "p75": 0.0,
+    "max": 1.0,
+    "mean": 0.002291,
+    "sd": 0.047823
+   },
+   "binary": true
+  },
+  {
+   "name": "BM_analyst",
+   "normalized": "bm_analyst",
+   "dtype": "int8",
+   "n_missing": 0,
+   "n_unique": 2,
+   "stats": {
+    "min": 0.0,
+    "p25": 0.0,
+    "median": 0.0,
+    "p75": 0.0,
+    "max": 1.0,
+    "mean": 0.002291,
+    "sd": 0.047823
+   },
+   "binary": true
+  },
+  {
+   "name": "BM_illiq",
+   "normalized": "bm_illiq",
+   "dtype": "int8",
+   "n_missing": 0,
+   "n_unique": 2,
+   "stats": {
+    "min": 0.0,
+    "p25": 0.0,
+    "median": 0.0,
+    "p75": 0.0,
+    "max": 1.0,
+    "mean": 0.002291,
+    "sd": 0.047823
+   },
+   "binary": true
+  },
+  {
+   "name": "BM_io",
+   "normalized": "bm_io",
+   "dtype": "int8",
+   "n_missing": 0,
+   "n_unique": 2,
+   "stats": {
+    "min": 0.0,
+    "p25": 0.0,
+    "median": 0.0,
+    "p75": 0.0,
+    "max": 1.0,
+    "mean": 0.002291,
+    "sd": 0.047823
+   },
+   "binary": true
+  },
+  {
+   "name": "BM_volume",
+   "normalized": "bm_volume",
+   "dtype": "int8",
+   "n_missing": 0,
+   "n_unique": 2,
+   "stats": {
+    "min": 0.0,
+    "p25": 0.0,
+    "median": 0.0,
+    "p75": 0.0,
+    "max": 1.0,
+    "mean": 0.001145,
+    "sd": 0.033835
+   },
+   "binary": true
+  },
+  {
+   "name": "capex_growth_2",
+   "normalized": "capex_growth_2",
+   "dtype": "int8",
+   "n_missing": 0,
+   "n_unique": 2,
+   "stats": {
+    "min": 0.0,
+    "p25": 0.0,
+    "median": 0.0,
+    "p75": 0.0,
+    "max": 1.0,
+    "mean": 0.001145,
+    "sd": 0.033835
+   },
+   "binary": true
+  },
+  {
+   "name": "capex_growth_3",
+   "normalized": "capex_growth_3",
+   "dtype": "int8",
+   "n_missing": 0,
+   "n_unique": 2,
+   "stats": {
+    "min": 0.0,
+    "p25": 0.0,
+    "median": 0.0,
+    "p75": 0.0,
+    "max": 1.0,
+    "mean": 0.001145,
+    "sd": 0.033835
+   },
+   "binary": true
+  },
+  {
+   "name": "distress",
+   "normalized": "distress",
+   "dtype": "int8",
+   "n_missing": 0,
+   "n_unique": 2,
+   "stats": {
+    "min": 0.0,
+    "p25": 0.0,
+    "median": 0.0,
+    "p75": 0.0,
+    "max": 1.0,
+    "mean": 0.001145,
+    "sd": 0.033835
+   },
+   "binary": true
+  },
+  {
+   "name": "capex",
+   "normalized": "capex",
+   "dtype": "int8",
+   "n_missing": 0,
+   "n_unique": 2,
+   "stats": {
+    "min": 0.0,
+    "p25": 0.0,
+    "median": 0.0,
+    "p75": 0.0,
+    "max": 1.0,
+    "mean": 0.001145,
+    "sd": 0.033835
+   },
+   "binary": true
+  },
+  {
+   "name": "analyst_disp",
+   "normalized": "analyst_disp",
+   "dtype": "int8",
+   "n_missing": 0,
+   "n_unique": 2,
+   "stats": {
+    "min": 0.0,
+    "p25": 0.0,
+    "median": 0.0,
+    "p75": 0.0,
+    "max": 1.0,
+    "mean": 0.016037,
+    "sd": 0.125652
+   },
+   "binary": true
+  },
+  {
+   "name": "earn_smoothi",
+   "normalized": "earn_smoothi",
+   "dtype": "int8",
+   "n_missing": 0,
+   "n_unique": 2,
+   "stats": {
+    "min": 0.0,
+    "p25": 0.0,
+    "median": 0.0,
+    "p75": 0.0,
+    "max": 1.0,
+    "mean": 0.001145,
+    "sd": 0.033835
+   },
+   "binary": true
+  },
+  {
+   "name": "accruals_qual",
+   "normalized": "accruals_qual",
+   "dtype": "int8",
+   "n_missing": 0,
+   "n_unique": 2,
+   "stats": {
+    "min": 0.0,
+    "p25": 0.0,
+    "median": 0.0,
+    "p75": 0.0,
+    "max": 1.0,
+    "mean": 0.001145,
+    "sd": 0.033835
+   },
+   "binary": true
+  },
+  {
+   "name": "net_stock_issues",
+   "normalized": "net_stock_issues",
+   "dtype": "int8",
+   "n_missing": 0,
+   "n_unique": 2,
+   "stats": {
+    "min": 0.0,
+    "p25": 0.0,
+    "median": 0.0,
+    "p75": 0.0,
+    "max": 1.0,
+    "mean": 0.002864,
+    "sd": 0.053452
+   },
+   "binary": true
+  },
+  {
+   "name": "net_stock_issues_zero_dum",
+   "normalized": "net_stock_issues_zero_dum",
+   "dtype": "int8",
+   "n_missing": 0,
+   "n_unique": 2,
+   "stats": {
+    "min": 0.0,
+    "p25": 0.0,
+    "median": 0.0,
+    "p75": 0.0,
+    "max": 1.0,
+    "mean": 0.002864,
+    "sd": 0.053452
+   },
+   "binary": true
+  },
+  {
+   "name": "accruals_pos_dum",
+   "normalized": "accruals_pos_dum",
+   "dtype": "int8",
+   "n_missing": 0,
+   "n_unique": 2,
+   "stats": {
+    "min": 0.0,
+    "p25": 0.0,
+    "median": 0.0,
+    "p75": 0.0,
+    "max": 1.0,
+    "mean": 0.002864,
+    "sd": 0.053452
+   },
+   "binary": true
+  },
+  {
+   "name": "accruals_neg_dum",
+   "normalized": "accruals_neg_dum",
+   "dtype": "int8",
+   "n_missing": 0,
+   "n_unique": 2,
+   "stats": {
+    "min": 0.0,
+    "p25": 0.0,
+    "median": 0.0,
+    "p75": 0.0,
+    "max": 1.0,
+    "mean": 0.002864,
+    "sd": 0.053452
+   },
+   "binary": true
+  },
+  {
+   "name": "eq_income_neg_dum",
+   "normalized": "eq_income_neg_dum",
+   "dtype": "int8",
+   "n_missing": 0,
+   "n_unique": 2,
+   "stats": {
+    "min": 0.0,
+    "p25": 0.0,
+    "median": 0.0,
+    "p75": 0.0,
+    "max": 1.0,
+    "mean": 0.002864,
+    "sd": 0.053452
+   },
+   "binary": true
+  },
+  {
+   "name": "profitab_pos_dum",
+   "normalized": "profitab_pos_dum",
+   "dtype": "int8",
+   "n_missing": 0,
+   "n_unique": 2,
+   "stats": {
+    "min": 0.0,
+    "p25": 0.0,
+    "median": 0.0,
+    "p75": 0.0,
+    "max": 1.0,
+    "mean": 0.002864,
+    "sd": 0.053452
+   },
+   "binary": true
+  },
+  {
+   "name": "AM_pos_dum",
+   "normalized": "am_pos_dum",
+   "dtype": "int8",
+   "n_missing": 0,
+   "n_unique": 2,
+   "stats": {
+    "min": 0.0,
+    "p25": 0.0,
+    "median": 0.0,
+    "p75": 0.0,
+    "max": 1.0,
+    "mean": 0.001145,
+    "sd": 0.033835
+   },
+   "binary": true
+  },
+  {
+   "name": "AM_neg_dum",
+   "normalized": "am_neg_dum",
+   "dtype": "int8",
+   "n_missing": 0,
+   "n_unique": 2,
+   "stats": {
+    "min": 0.0,
+    "p25": 0.0,
+    "median": 0.0,
+    "p75": 0.0,
+    "max": 1.0,
+    "mean": 0.001145,
+    "sd": 0.033835
+   },
+   "binary": true
+  },
+  {
+   "name": "net_debt",
+   "normalized": "net_debt",
+   "dtype": "int8",
+   "n_missing": 0,
+   "n_unique": 2,
+   "stats": {
+    "min": 0.0,
+    "p25": 0.0,
+    "median": 0.0,
+    "p75": 0.0,
+    "max": 1.0,
+    "mean": 0.003436,
+    "sd": 0.058537
+   },
+   "binary": true
+  },
+  {
+   "name": "def_prob",
+   "normalized": "def_prob",
+   "dtype": "int8",
+   "n_missing": 0,
+   "n_unique": 2,
+   "stats": {
+    "min": 0.0,
+    "p25": 0.0,
+    "median": 0.0,
+    "p75": 0.0,
+    "max": 1.0,
+    "mean": 0.009737,
+    "sd": 0.09822
+   },
+   "binary": true
+  },
+  {
+   "name": "fin_constraints",
+   "normalized": "fin_constraints",
+   "dtype": "int8",
+   "n_missing": 0,
+   "n_unique": 2,
+   "stats": {
+    "min": 0.0,
+    "p25": 0.0,
+    "median": 0.0,
+    "p75": 0.0,
+    "max": 1.0,
+    "mean": 0.003436,
+    "sd": 0.058537
+   },
+   "binary": true
+  },
+  {
+   "name": "st_dev",
+   "normalized": "st_dev",
+   "dtype": "int8",
+   "n_missing": 0,
+   "n_unique": 2,
+   "stats": {
+    "min": 0.0,
+    "p25": 0.0,
+    "median": 0.0,
+    "p75": 0.0,
+    "max": 1.0,
+    "mean": 0.037228,
+    "sd": 0.189374
+   },
+   "binary": true
+  },
+  {
+   "name": "coskew",
+   "normalized": "coskew",
+   "dtype": "int8",
+   "n_missing": 0,
+   "n_unique": 2,
+   "stats": {
+    "min": 0.0,
+    "p25": 0.0,
+    "median": 0.0,
+    "p75": 0.0,
+    "max": 1.0,
+    "mean": 0.002291,
+    "sd": 0.047823
+   },
+   "binary": true
+  },
+  {
+   "name": "cokurt",
+   "normalized": "cokurt",
+   "dtype": "int8",
+   "n_missing": 0,
+   "n_unique": 2,
+   "stats": {
+    "min": 0.0,
+    "p25": 0.0,
+    "median": 0.0,
+    "p75": 0.0,
+    "max": 1.0,
+    "mean": 0.001718,
+    "sd": 0.041428
+   },
+   "binary": true
+  },
+  {
+   "name": "cegth2",
+   "normalized": "cegth2",
+   "dtype": "int8",
+   "n_missing": 0,
+   "n_unique": 1,
+   "stats": {
+    "min": 0.0,
+    "p25": 0.0,
+    "median": 0.0,
+    "p75": 0.0,
+    "max": 0.0,
+    "mean": 0.0,
+    "sd": 0.0
+   },
+   "binary": true
+  },
+  {
+   "name": "cegth3",
+   "normalized": "cegth3",
+   "dtype": "int8",
+   "n_missing": 0,
+   "n_unique": 1,
+   "stats": {
+    "min": 0.0,
+    "p25": 0.0,
+    "median": 0.0,
+    "p75": 0.0,
+    "max": 0.0,
+    "mean": 0.0,
+    "sd": 0.0
+   },
+   "binary": true
+  },
+  {
+   "name": "inst",
+   "normalized": "inst",
+   "dtype": "int8",
+   "n_missing": 0,
+   "n_unique": 2,
+   "stats": {
+    "min": 0.0,
+    "p25": 0.0,
+    "median": 0.0,
+    "p75": 0.0,
+    "max": 1.0,
+    "mean": 0.017182,
+    "sd": 0.129987
+   },
+   "binary": true
+  },
+  {
+   "name": "MB_inst",
+   "normalized": "mb_inst",
+   "dtype": "int8",
+   "n_missing": 0,
+   "n_unique": 2,
+   "stats": {
+    "min": 0.0,
+    "p25": 0.0,
+    "median": 0.0,
+    "p75": 0.0,
+    "max": 1.0,
+    "mean": 0.000573,
+    "sd": 0.023932
+   },
+   "binary": true
+  },
+  {
+   "name": "adisp_size",
+   "normalized": "adisp_size",
+   "dtype": "int8",
+   "n_missing": 0,
+   "n_unique": 2,
+   "stats": {
+    "min": 0.0,
+    "p25": 0.0,
+    "median": 0.0,
+    "p75": 0.0,
+    "max": 1.0,
+    "mean": 0.000573,
+    "sd": 0.023932
+   },
+   "binary": true
+  },
+  {
+   "name": "adisp_inst",
+   "normalized": "adisp_inst",
+   "dtype": "int8",
+   "n_missing": 0,
+   "n_unique": 2,
+   "stats": {
+    "min": 0.0,
+    "p25": 0.0,
+    "median": 0.0,
+    "p75": 0.0,
+    "max": 1.0,
+    "mean": 0.000573,
+    "sd": 0.023932
+   },
+   "binary": true
+  },
+  {
+   "name": "turn_size",
+   "normalized": "turn_size",
+   "dtype": "int8",
+   "n_missing": 0,
+   "n_unique": 2,
+   "stats": {
+    "min": 0.0,
+    "p25": 0.0,
+    "median": 0.0,
+    "p75": 0.0,
+    "max": 1.0,
+    "mean": 0.000573,
+    "sd": 0.023932
+   },
+   "binary": true
+  },
+  {
+   "name": "turn_inst",
+   "normalized": "turn_inst",
+   "dtype": "int8",
+   "n_missing": 0,
+   "n_unique": 2,
+   "stats": {
+    "min": 0.0,
+    "p25": 0.0,
+    "median": 0.0,
+    "p75": 0.0,
+    "max": 1.0,
+    "mean": 0.000573,
+    "sd": 0.023932
+   },
+   "binary": true
+  },
+  {
+   "name": "vol_size",
+   "normalized": "vol_size",
+   "dtype": "int8",
+   "n_missing": 0,
+   "n_unique": 2,
+   "stats": {
+    "min": 0.0,
+    "p25": 0.0,
+    "median": 0.0,
+    "p75": 0.0,
+    "max": 1.0,
+    "mean": 0.000573,
+    "sd": 0.023932
+   },
+   "binary": true
+  },
+  {
+   "name": "vol_inst",
+   "normalized": "vol_inst",
+   "dtype": "int8",
+   "n_missing": 0,
+   "n_unique": 2,
+   "stats": {
+    "min": 0.0,
+    "p25": 0.0,
+    "median": 0.0,
+    "p75": 0.0,
+    "max": 1.0,
+    "mean": 0.000573,
+    "sd": 0.023932
+   },
+   "binary": true
+  },
+  {
+   "name": "trading_days",
+   "normalized": "trading_days",
+   "dtype": "int8",
+   "n_missing": 0,
+   "n_unique": 2,
+   "stats": {
+    "min": 0.0,
+    "p25": 0.0,
+    "median": 0.0,
+    "p75": 0.0,
+    "max": 1.0,
+    "mean": 0.003436,
+    "sd": 0.058537
+   },
+   "binary": true
+  },
+  {
+   "name": "liq_turn_ny_am",
+   "normalized": "liq_turn_ny_am",
+   "dtype": "int8",
+   "n_missing": 0,
+   "n_unique": 2,
+   "stats": {
+    "min": 0.0,
+    "p25": 0.0,
+    "median": 0.0,
+    "p75": 0.0,
+    "max": 1.0,
+    "mean": 0.001145,
+    "sd": 0.033835
+   },
+   "binary": true
+  },
+  {
+   "name": "liq_turn_nasd",
+   "normalized": "liq_turn_nasd",
+   "dtype": "int8",
+   "n_missing": 0,
+   "n_unique": 2,
+   "stats": {
+    "min": 0.0,
+    "p25": 0.0,
+    "median": 0.0,
+    "p75": 0.0,
+    "max": 1.0,
+    "mean": 0.001145,
+    "sd": 0.033835
+   },
+   "binary": true
+  },
+  {
+   "name": "liq_cv_turn_ny_am",
+   "normalized": "liq_cv_turn_ny_am",
+   "dtype": "int8",
+   "n_missing": 0,
+   "n_unique": 2,
+   "stats": {
+    "min": 0.0,
+    "p25": 0.0,
+    "median": 0.0,
+    "p75": 0.0,
+    "max": 1.0,
+    "mean": 0.001145,
+    "sd": 0.033835
+   },
+   "binary": true
+  },
+  {
+   "name": "liq_cv_turn_nasd",
+   "normalized": "liq_cv_turn_nasd",
+   "dtype": "int8",
+   "n_missing": 0,
+   "n_unique": 2,
+   "stats": {
+    "min": 0.0,
+    "p25": 0.0,
+    "median": 0.0,
+    "p75": 0.0,
+    "max": 1.0,
+    "mean": 0.001145,
+    "sd": 0.033835
+   },
+   "binary": true
+  },
+  {
+   "name": "liq_vol_ny_am",
+   "normalized": "liq_vol_ny_am",
+   "dtype": "int8",
+   "n_missing": 0,
+   "n_unique": 2,
+   "stats": {
+    "min": 0.0,
+    "p25": 0.0,
+    "median": 0.0,
+    "p75": 0.0,
+    "max": 1.0,
+    "mean": 0.001145,
+    "sd": 0.033835
+   },
+   "binary": true
+  },
+  {
+   "name": "liq_vol_nasd",
+   "normalized": "liq_vol_nasd",
+   "dtype": "int8",
+   "n_missing": 0,
+   "n_unique": 2,
+   "stats": {
+    "min": 0.0,
+    "p25": 0.0,
+    "median": 0.0,
+    "p75": 0.0,
+    "max": 1.0,
+    "mean": 0.001145,
+    "sd": 0.033835
+   },
+   "binary": true
+  },
+  {
+   "name": "liq_cv_vol_ny_am",
+   "normalized": "liq_cv_vol_ny_am",
+   "dtype": "int8",
+   "n_missing": 0,
+   "n_unique": 2,
+   "stats": {
+    "min": 0.0,
+    "p25": 0.0,
+    "median": 0.0,
+    "p75": 0.0,
+    "max": 1.0,
+    "mean": 0.001145,
+    "sd": 0.033835
+   },
+   "binary": true
+  },
+  {
+   "name": "liq_cv_vol_nasd",
+   "normalized": "liq_cv_vol_nasd",
+   "dtype": "int8",
+   "n_missing": 0,
+   "n_unique": 2,
+   "stats": {
+    "min": 0.0,
+    "p25": 0.0,
+    "median": 0.0,
+    "p75": 0.0,
+    "max": 1.0,
+    "mean": 0.001145,
+    "sd": 0.033835
+   },
+   "binary": true
+  },
+  {
+   "name": "liq_illiq_ny_am",
+   "normalized": "liq_illiq_ny_am",
+   "dtype": "int8",
+   "n_missing": 0,
+   "n_unique": 2,
+   "stats": {
+    "min": 0.0,
+    "p25": 0.0,
+    "median": 0.0,
+    "p75": 0.0,
+    "max": 1.0,
+    "mean": 0.001145,
+    "sd": 0.033835
+   },
+   "binary": true
+  },
+  {
+   "name": "liq_illiq_nasd",
+   "normalized": "liq_illiq_nasd",
+   "dtype": "int8",
+   "n_missing": 0,
+   "n_unique": 2,
+   "stats": {
+    "min": 0.0,
+    "p25": 0.0,
+    "median": 0.0,
+    "p75": 0.0,
+    "max": 1.0,
+    "mean": 0.001145,
+    "sd": 0.033835
+   },
+   "binary": true
+  },
+  {
+   "name": "liq_cv_illiq_ny_am",
+   "normalized": "liq_cv_illiq_ny_am",
+   "dtype": "int8",
+   "n_missing": 0,
+   "n_unique": 2,
+   "stats": {
+    "min": 0.0,
+    "p25": 0.0,
+    "median": 0.0,
+    "p75": 0.0,
+    "max": 1.0,
+    "mean": 0.001145,
+    "sd": 0.033835
+   },
+   "binary": true
+  },
+  {
+   "name": "liq_cv_illiq_nasd",
+   "normalized": "liq_cv_illiq_nasd",
+   "dtype": "int8",
+   "n_missing": 0,
+   "n_unique": 2,
+   "stats": {
+    "min": 0.0,
+    "p25": 0.0,
+    "median": 0.0,
+    "p75": 0.0,
+    "max": 1.0,
+    "mean": 0.001145,
+    "sd": 0.033835
+   },
+   "binary": true
+  },
+  {
+   "name": "delay_turn_att",
+   "normalized": "delay_turn_att",
+   "dtype": "int8",
+   "n_missing": 0,
+   "n_unique": 1,
+   "stats": {
+    "min": 0.0,
+    "p25": 0.0,
+    "median": 0.0,
+    "p75": 0.0,
+    "max": 0.0,
+    "mean": 0.0,
+    "sd": 0.0
+   },
+   "binary": true
+  },
+  {
+   "name": "delay_turn_liq",
+   "normalized": "delay_turn_liq",
+   "dtype": "int8",
+   "n_missing": 0,
+   "n_unique": 1,
+   "stats": {
+    "min": 0.0,
+    "p25": 0.0,
+    "median": 0.0,
+    "p75": 0.0,
+    "max": 0.0,
+    "mean": 0.0,
+    "sd": 0.0
+   },
+   "binary": true
+  },
+  {
+   "name": "delay_turn_res",
+   "normalized": "delay_turn_res",
+   "dtype": "int8",
+   "n_missing": 0,
+   "n_unique": 1,
+   "stats": {
+    "min": 0.0,
+    "p25": 0.0,
+    "median": 0.0,
+    "p75": 0.0,
+    "max": 0.0,
+    "mean": 0.0,
+    "sd": 0.0
+   },
+   "binary": true
+  },
+  {
+   "name": "delay_vol_att",
+   "normalized": "delay_vol_att",
+   "dtype": "int8",
+   "n_missing": 0,
+   "n_unique": 1,
+   "stats": {
+    "min": 0.0,
+    "p25": 0.0,
+    "median": 0.0,
+    "p75": 0.0,
+    "max": 0.0,
+    "mean": 0.0,
+    "sd": 0.0
+   },
+   "binary": true
+  },
+  {
+   "name": "delay_vol_liq",
+   "normalized": "delay_vol_liq",
+   "dtype": "int8",
+   "n_missing": 0,
+   "n_unique": 1,
+   "stats": {
+    "min": 0.0,
+    "p25": 0.0,
+    "median": 0.0,
+    "p75": 0.0,
+    "max": 0.0,
+    "mean": 0.0,
+    "sd": 0.0
+   },
+   "binary": true
+  },
+  {
+   "name": "delay_vol_res",
+   "normalized": "delay_vol_res",
+   "dtype": "int8",
+   "n_missing": 0,
+   "n_unique": 1,
+   "stats": {
+    "min": 0.0,
+    "p25": 0.0,
+    "median": 0.0,
+    "p75": 0.0,
+    "max": 0.0,
+    "mean": 0.0,
+    "sd": 0.0
+   },
+   "binary": true
+  },
+  {
+   "name": "delay_illiq_att",
+   "normalized": "delay_illiq_att",
+   "dtype": "int8",
+   "n_missing": 0,
+   "n_unique": 1,
+   "stats": {
+    "min": 0.0,
+    "p25": 0.0,
+    "median": 0.0,
+    "p75": 0.0,
+    "max": 0.0,
+    "mean": 0.0,
+    "sd": 0.0
+   },
+   "binary": true
+  },
+  {
+   "name": "delay_illiq_liq",
+   "normalized": "delay_illiq_liq",
+   "dtype": "int8",
+   "n_missing": 0,
+   "n_unique": 1,
+   "stats": {
+    "min": 0.0,
+    "p25": 0.0,
+    "median": 0.0,
+    "p75": 0.0,
+    "max": 0.0,
+    "mean": 0.0,
+    "sd": 0.0
+   },
+   "binary": true
+  },
+  {
+   "name": "delay_illiq_res",
+   "normalized": "delay_illiq_res",
+   "dtype": "int8",
+   "n_missing": 0,
+   "n_unique": 1,
+   "stats": {
+    "min": 0.0,
+    "p25": 0.0,
+    "median": 0.0,
+    "p75": 0.0,
+    "max": 0.0,
+    "mean": 0.0,
+    "sd": 0.0
+   },
+   "binary": true
+  },
+  {
+   "name": "expan_pol",
+   "normalized": "expan_pol",
+   "dtype": "int8",
+   "n_missing": 0,
+   "n_unique": 2,
+   "stats": {
+    "min": 0.0,
+    "p25": 0.0,
+    "median": 0.0,
+    "p75": 0.0,
+    "max": 1.0,
+    "mean": 0.001145,
+    "sd": 0.033835
+   },
+   "binary": true
+  },
+  {
+   "name": "restrict_pol",
+   "normalized": "restrict_pol",
+   "dtype": "int8",
+   "n_missing": 0,
+   "n_unique": 2,
+   "stats": {
+    "min": 0.0,
+    "p25": 0.0,
+    "median": 0.0,
+    "p75": 0.0,
+    "max": 1.0,
+    "mean": 0.001145,
+    "sd": 0.033835
+   },
+   "binary": true
+  },
+  {
+   "name": "pol_dum_beta",
+   "normalized": "pol_dum_beta",
+   "dtype": "int8",
+   "n_missing": 0,
+   "n_unique": 2,
+   "stats": {
+    "min": 0.0,
+    "p25": 0.0,
+    "median": 0.0,
+    "p75": 0.0,
+    "max": 1.0,
+    "mean": 0.001145,
+    "sd": 0.033835
+   },
+   "binary": true
+  },
+  {
+   "name": "pol_dum_size",
+   "normalized": "pol_dum_size",
+   "dtype": "int8",
+   "n_missing": 0,
+   "n_unique": 2,
+   "stats": {
+    "min": 0.0,
+    "p25": 0.0,
+    "median": 0.0,
+    "p75": 0.0,
+    "max": 1.0,
+    "mean": 0.002291,
+    "sd": 0.047823
+   },
+   "binary": true
+  },
+  {
+   "name": "pol_dum_BM",
+   "normalized": "pol_dum_bm",
+   "dtype": "int8",
+   "n_missing": 0,
+   "n_unique": 2,
+   "stats": {
+    "min": 0.0,
+    "p25": 0.0,
+    "median": 0.0,
+    "p75": 0.0,
+    "max": 1.0,
+    "mean": 0.001145,
+    "sd": 0.033835
+   },
+   "binary": true
+  },
+  {
+   "name": "resid_analyst_cov",
+   "normalized": "resid_analyst_cov",
+   "dtype": "int8",
+   "n_missing": 0,
+   "n_unique": 2,
+   "stats": {
+    "min": 0.0,
+    "p25": 0.0,
+    "median": 0.0,
+    "p75": 0.0,
+    "max": 1.0,
+    "mean": 0.005727,
+    "sd": 0.075484
+   },
+   "binary": true
+  },
+  {
+   "name": "debt_to_book",
+   "normalized": "debt_to_book",
+   "dtype": "int8",
+   "n_missing": 0,
+   "n_unique": 2,
+   "stats": {
+    "min": 0.0,
+    "p25": 0.0,
+    "median": 0.0,
+    "p75": 0.0,
+    "max": 1.0,
+    "mean": 0.010882,
+    "sd": 0.103777
+   },
+   "binary": true
+  },
+  {
+   "name": "sales_to_assets",
+   "normalized": "sales_to_assets",
+   "dtype": "int8",
+   "n_missing": 0,
+   "n_unique": 2,
+   "stats": {
+    "min": 0.0,
+    "p25": 0.0,
+    "median": 0.0,
+    "p75": 0.0,
+    "max": 1.0,
+    "mean": 0.000573,
+    "sd": 0.023932
+   },
+   "binary": true
+  },
+  {
+   "name": "sd_earn",
+   "normalized": "sd_earn",
+   "dtype": "int8",
+   "n_missing": 0,
+   "n_unique": 2,
+   "stats": {
+    "min": 0.0,
+    "p25": 0.0,
+    "median": 0.0,
+    "p75": 0.0,
+    "max": 1.0,
+    "mean": 0.000573,
+    "sd": 0.023932
+   },
+   "binary": true
+  },
+  {
+   "name": "forecast_age",
+   "normalized": "forecast_age",
+   "dtype": "int8",
+   "n_missing": 0,
+   "n_unique": 2,
+   "stats": {
+    "min": 0.0,
+    "p25": 0.0,
+    "median": 0.0,
+    "p75": 0.0,
+    "max": 1.0,
+    "mean": 0.000573,
+    "sd": 0.023932
+   },
+   "binary": true
+  },
+  {
+   "name": "sd_forecast",
+   "normalized": "sd_forecast",
+   "dtype": "int8",
+   "n_missing": 0,
+   "n_unique": 2,
+   "stats": {
+    "min": 0.0,
+    "p25": 0.0,
+    "median": 0.0,
+    "p75": 0.0,
+    "max": 1.0,
+    "mean": 0.001718,
+    "sd": 0.041428
+   },
+   "binary": true
+  },
+  {
+   "name": "disp_forecast",
+   "normalized": "disp_forecast",
+   "dtype": "int8",
+   "n_missing": 0,
+   "n_unique": 2,
+   "stats": {
+    "min": 0.0,
+    "p25": 0.0,
+    "median": 0.0,
+    "p75": 0.0,
+    "max": 1.0,
+    "mean": 0.002291,
+    "sd": 0.047823
+   },
+   "binary": true
+  },
+  {
+   "name": "forecast_mean",
+   "normalized": "forecast_mean",
+   "dtype": "int8",
+   "n_missing": 0,
+   "n_unique": 2,
+   "stats": {
+    "min": 0.0,
+    "p25": 0.0,
+    "median": 0.0,
+    "p75": 0.0,
+    "max": 1.0,
+    "mean": 0.001718,
+    "sd": 0.041428
+   },
+   "binary": true
+  },
+  {
+   "name": "size_sq",
+   "normalized": "size_sq",
+   "dtype": "int8",
+   "n_missing": 0,
+   "n_unique": 2,
+   "stats": {
+    "min": 0.0,
+    "p25": 0.0,
+    "median": 0.0,
+    "p75": 0.0,
+    "max": 1.0,
+    "mean": 0.002291,
+    "sd": 0.047823
+   },
+   "binary": true
+  },
+  {
+   "name": "ret_fit",
+   "normalized": "ret_fit",
+   "dtype": "int8",
+   "n_missing": 0,
+   "n_unique": 2,
+   "stats": {
+    "min": 0.0,
+    "p25": 0.0,
+    "median": 0.0,
+    "p75": 0.0,
+    "max": 1.0,
+    "mean": 0.002291,
+    "sd": 0.047823
+   },
+   "binary": true
+  },
+  {
+   "name": "ROE",
+   "normalized": "roe",
+   "dtype": "int8",
+   "n_missing": 0,
+   "n_unique": 2,
+   "stats": {
+    "min": 0.0,
+    "p25": 0.0,
+    "median": 0.0,
+    "p75": 0.0,
+    "max": 1.0,
+    "mean": 0.008018,
+    "sd": 0.089211
+   },
+   "binary": true
+  },
+  {
+   "name": "EPS",
+   "normalized": "eps",
+   "dtype": "int8",
+   "n_missing": 0,
+   "n_unique": 2,
+   "stats": {
+    "min": 0.0,
+    "p25": 0.0,
+    "median": 0.0,
+    "p75": 0.0,
+    "max": 1.0,
+    "mean": 0.002291,
+    "sd": 0.047823
+   },
+   "binary": true
+  },
+  {
+   "name": "dum_issue",
+   "normalized": "dum_issue",
+   "dtype": "int8",
+   "n_missing": 0,
+   "n_unique": 2,
+   "stats": {
+    "min": 0.0,
+    "p25": 0.0,
+    "median": 0.0,
+    "p75": 0.0,
+    "max": 1.0,
+    "mean": 0.002864,
+    "sd": 0.053452
+   },
+   "binary": true
+  },
+  {
+   "name": "y_sales_growth_preformation",
+   "normalized": "y_sales_growth_preformation",
+   "dtype": "int8",
+   "n_missing": 0,
+   "n_unique": 2,
+   "stats": {
+    "min": 0.0,
+    "p25": 0.0,
+    "median": 0.0,
+    "p75": 0.0,
+    "max": 1.0,
+    "mean": 0.001145,
+    "sd": 0.033835
+   },
+   "binary": true
+  },
+  {
+   "name": "y_sales_growth_preformation2",
+   "normalized": "y_sales_growth_preformation2",
+   "dtype": "int8",
+   "n_missing": 0,
+   "n_unique": 2,
+   "stats": {
+    "min": 0.0,
+    "p25": 0.0,
+    "median": 0.0,
+    "p75": 0.0,
+    "max": 1.0,
+    "mean": 0.001145,
+    "sd": 0.033835
+   },
+   "binary": true
+  },
+  {
+   "name": "idiosync_risk",
+   "normalized": "idiosync_risk",
+   "dtype": "int8",
+   "n_missing": 0,
+   "n_unique": 2,
+   "stats": {
+    "min": 0.0,
+    "p25": 0.0,
+    "median": 0.0,
+    "p75": 0.0,
+    "max": 1.0,
+    "mean": 0.004582,
+    "sd": 0.067554
+   },
+   "binary": true
+  },
+  {
+   "name": "liq",
+   "normalized": "liq",
+   "dtype": "int8",
+   "n_missing": 0,
+   "n_unique": 2,
+   "stats": {
+    "min": 0.0,
+    "p25": 0.0,
+    "median": 0.0,
+    "p75": 0.0,
+    "max": 1.0,
+    "mean": 0.006873,
+    "sd": 0.082641
+   },
+   "binary": true
+  },
+  {
+   "name": "fx",
+   "normalized": "fx",
+   "dtype": "int8",
+   "n_missing": 0,
+   "n_unique": 2,
+   "stats": {
+    "min": 0.0,
+    "p25": 0.0,
+    "median": 0.0,
+    "p75": 0.0,
+    "max": 1.0,
+    "mean": 0.010309,
+    "sd": 0.101039
+   },
+   "binary": true
+  },
+  {
+   "name": "ERRI",
+   "normalized": "erri",
+   "dtype": "int8",
+   "n_missing": 0,
+   "n_unique": 2,
+   "stats": {
+    "min": 0.0,
+    "p25": 0.0,
+    "median": 0.0,
+    "p75": 0.0,
+    "max": 1.0,
+    "mean": 0.023482,
+    "sd": 0.151473
+   },
+   "binary": true
+  },
+  {
+   "name": "EWR",
+   "normalized": "ewr",
+   "dtype": "int8",
+   "n_missing": 0,
+   "n_unique": 2,
+   "stats": {
+    "min": 0.0,
+    "p25": 0.0,
+    "median": 0.0,
+    "p75": 0.0,
+    "max": 1.0,
+    "mean": 0.023482,
+    "sd": 0.151473
+   },
+   "binary": true
+  },
+  {
+   "name": "RX",
+   "normalized": "rx",
+   "dtype": "int8",
+   "n_missing": 0,
+   "n_unique": 2,
+   "stats": {
+    "min": 0.0,
+    "p25": 0.0,
+    "median": 0.0,
+    "p75": 0.0,
+    "max": 1.0,
+    "mean": 0.023482,
+    "sd": 0.151473
+   },
+   "binary": true
+  },
+  {
+   "name": "price_lag_12",
+   "normalized": "price_lag_12",
+   "dtype": "int8",
+   "n_missing": 0,
+   "n_unique": 2,
+   "stats": {
+    "min": 0.0,
+    "p25": 0.0,
+    "median": 0.0,
+    "p75": 0.0,
+    "max": 1.0,
+    "mean": 0.023482,
+    "sd": 0.151473
+   },
+   "binary": true
+  },
+  {
+   "name": "price_lag_52",
+   "normalized": "price_lag_52",
+   "dtype": "int8",
+   "n_missing": 0,
+   "n_unique": 2,
+   "stats": {
+    "min": 0.0,
+    "p25": 0.0,
+    "median": 0.0,
+    "p75": 0.0,
+    "max": 1.0,
+    "mean": 0.023482,
+    "sd": 0.151473
+   },
+   "binary": true
+  },
+  {
+   "name": "negative_event",
+   "normalized": "negative_event",
+   "dtype": "int8",
+   "n_missing": 0,
+   "n_unique": 2,
+   "stats": {
+    "min": 0.0,
+    "p25": 0.0,
+    "median": 0.0,
+    "p75": 0.0,
+    "max": 1.0,
+    "mean": 0.001718,
+    "sd": 0.041428
+   },
+   "binary": true
+  },
+  {
+   "name": "EWNY",
+   "normalized": "ewny",
+   "dtype": "int8",
+   "n_missing": 0,
+   "n_unique": 2,
+   "stats": {
+    "min": 0.0,
+    "p25": 0.0,
+    "median": 0.0,
+    "p75": 0.0,
+    "max": 1.0,
+    "mean": 0.001145,
+    "sd": 0.033835
+   },
+   "binary": true
+  },
+  {
+   "name": "VWNY",
+   "normalized": "vwny",
+   "dtype": "int8",
+   "n_missing": 0,
+   "n_unique": 2,
+   "stats": {
+    "min": 0.0,
+    "p25": 0.0,
+    "median": 0.0,
+    "p75": 0.0,
+    "max": 1.0,
+    "mean": 0.000573,
+    "sd": 0.023932
+   },
+   "binary": true
+  },
+  {
+   "name": "DEI",
+   "normalized": "dei",
+   "dtype": "int8",
+   "n_missing": 0,
+   "n_unique": 2,
+   "stats": {
+    "min": 0.0,
+    "p25": 0.0,
+    "median": 0.0,
+    "p75": 0.0,
+    "max": 1.0,
+    "mean": 0.001718,
+    "sd": 0.041428
+   },
+   "binary": true
+  },
+  {
+   "name": "UITB",
+   "normalized": "uitb",
+   "dtype": "int8",
+   "n_missing": 0,
+   "n_unique": 2,
+   "stats": {
+    "min": 0.0,
+    "p25": 0.0,
+    "median": 0.0,
+    "p75": 0.0,
+    "max": 1.0,
+    "mean": 0.001718,
+    "sd": 0.041428
+   },
+   "binary": true
+  },
+  {
+   "name": "TBD",
+   "normalized": "tbd",
+   "dtype": "int8",
+   "n_missing": 0,
+   "n_unique": 2,
+   "stats": {
+    "min": 0.0,
+    "p25": 0.0,
+    "median": 0.0,
+    "p75": 0.0,
+    "max": 1.0,
+    "mean": 0.001718,
+    "sd": 0.041428
+   },
+   "binary": true
+  },
+  {
+   "name": "PREMA",
+   "normalized": "prema",
+   "dtype": "int8",
+   "n_missing": 0,
+   "n_unique": 2,
+   "stats": {
+    "min": 0.0,
+    "p25": 0.0,
+    "median": 0.0,
+    "p75": 0.0,
+    "max": 1.0,
+    "mean": 0.001718,
+    "sd": 0.041428
+   },
+   "binary": true
+  },
+  {
+   "name": "IP_1",
+   "normalized": "ip_1",
+   "dtype": "int8",
+   "n_missing": 0,
+   "n_unique": 2,
+   "stats": {
+    "min": 0.0,
+    "p25": 0.0,
+    "median": 0.0,
+    "p75": 0.0,
+    "max": 1.0,
+    "mean": 0.001718,
+    "sd": 0.041428
+   },
+   "binary": true
+  },
+  {
+   "name": "WHL",
+   "normalized": "whl",
+   "dtype": "int8",
+   "n_missing": 0,
+   "n_unique": 2,
+   "stats": {
+    "min": 0.0,
+    "p25": 0.0,
+    "median": 0.0,
+    "p75": 0.0,
+    "max": 1.0,
+    "mean": 0.0126,
+    "sd": 0.111573
+   },
+   "binary": true
+  },
+  {
+   "name": "WHW",
+   "normalized": "whw",
+   "dtype": "int8",
+   "n_missing": 0,
+   "n_unique": 2,
+   "stats": {
+    "min": 0.0,
+    "p25": 0.0,
+    "median": 0.0,
+    "p75": 0.0,
+    "max": 1.0,
+    "mean": 0.0126,
+    "sd": 0.111573
+   },
+   "binary": true
+  },
+  {
+   "name": "leverage_low",
+   "normalized": "leverage_low",
+   "dtype": "int8",
+   "n_missing": 0,
+   "n_unique": 2,
+   "stats": {
+    "min": 0.0,
+    "p25": 0.0,
+    "median": 0.0,
+    "p75": 0.0,
+    "max": 1.0,
+    "mean": 0.010309,
+    "sd": 0.101039
+   },
+   "binary": true
+  },
+  {
+   "name": "leverage_high",
+   "normalized": "leverage_high",
+   "dtype": "int8",
+   "n_missing": 0,
+   "n_unique": 2,
+   "stats": {
+    "min": 0.0,
+    "p25": 0.0,
+    "median": 0.0,
+    "p75": 0.0,
+    "max": 1.0,
+    "mean": 0.010309,
+    "sd": 0.101039
+   },
+   "binary": true
+  },
+  {
+   "name": "Oscore_low",
+   "normalized": "oscore_low",
+   "dtype": "int8",
+   "n_missing": 0,
+   "n_unique": 2,
+   "stats": {
+    "min": 0.0,
+    "p25": 0.0,
+    "median": 0.0,
+    "p75": 0.0,
+    "max": 1.0,
+    "mean": 0.005727,
+    "sd": 0.075484
+   },
+   "binary": true
+  },
+  {
+   "name": "Oscore_high",
+   "normalized": "oscore_high",
+   "dtype": "int8",
+   "n_missing": 0,
+   "n_unique": 2,
+   "stats": {
+    "min": 0.0,
+    "p25": 0.0,
+    "median": 0.0,
+    "p75": 0.0,
+    "max": 1.0,
+    "mean": 0.005727,
+    "sd": 0.075484
+   },
+   "binary": true
+  },
+  {
+   "name": "def_prob_low",
+   "normalized": "def_prob_low",
+   "dtype": "int8",
+   "n_missing": 0,
+   "n_unique": 2,
+   "stats": {
+    "min": 0.0,
+    "p25": 0.0,
+    "median": 0.0,
+    "p75": 0.0,
+    "max": 1.0,
+    "mean": 0.002291,
+    "sd": 0.047823
+   },
+   "binary": true
+  },
+  {
+   "name": "def_prob_high",
+   "normalized": "def_prob_high",
+   "dtype": "int8",
+   "n_missing": 0,
+   "n_unique": 2,
+   "stats": {
+    "min": 0.0,
+    "p25": 0.0,
+    "median": 0.0,
+    "p75": 0.0,
+    "max": 1.0,
+    "mean": 0.002291,
+    "sd": 0.047823
+   },
+   "binary": true
+  },
+  {
+   "name": "leverage_low_low_tax_benefit",
+   "normalized": "leverage_low_low_tax_benefit",
+   "dtype": "int8",
+   "n_missing": 0,
+   "n_unique": 2,
+   "stats": {
+    "min": 0.0,
+    "p25": 0.0,
+    "median": 0.0,
+    "p75": 0.0,
+    "max": 1.0,
+    "mean": 0.001145,
+    "sd": 0.033835
+   },
+   "binary": true
+  },
+  {
+   "name": "leverage_high_low_tax_benefit",
+   "normalized": "leverage_high_low_tax_benefit",
+   "dtype": "int8",
+   "n_missing": 0,
+   "n_unique": 2,
+   "stats": {
+    "min": 0.0,
+    "p25": 0.0,
+    "median": 0.0,
+    "p75": 0.0,
+    "max": 1.0,
+    "mean": 0.001145,
+    "sd": 0.033835
+   },
+   "binary": true
+  },
+  {
+   "name": "leverage_low_high_tax_benefit",
+   "normalized": "leverage_low_high_tax_benefit",
+   "dtype": "int8",
+   "n_missing": 0,
+   "n_unique": 2,
+   "stats": {
+    "min": 0.0,
+    "p25": 0.0,
+    "median": 0.0,
+    "p75": 0.0,
+    "max": 1.0,
+    "mean": 0.001145,
+    "sd": 0.033835
+   },
+   "binary": true
+  },
+  {
+   "name": "leverage_high_high_tex_benefit",
+   "normalized": "leverage_high_high_tex_benefit",
+   "dtype": "int8",
+   "n_missing": 0,
+   "n_unique": 2,
+   "stats": {
+    "min": 0.0,
+    "p25": 0.0,
+    "median": 0.0,
+    "p75": 0.0,
+    "max": 1.0,
+    "mean": 0.001145,
+    "sd": 0.033835
+   },
+   "binary": true
+  },
+  {
+   "name": "leverage_low_low_coverage",
+   "normalized": "leverage_low_low_coverage",
+   "dtype": "int8",
+   "n_missing": 0,
+   "n_unique": 2,
+   "stats": {
+    "min": 0.0,
+    "p25": 0.0,
+    "median": 0.0,
+    "p75": 0.0,
+    "max": 1.0,
+    "mean": 0.001145,
+    "sd": 0.033835
+   },
+   "binary": true
+  },
+  {
+   "name": "leverage_high_low_coverage",
+   "normalized": "leverage_high_low_coverage",
+   "dtype": "int8",
+   "n_missing": 0,
+   "n_unique": 2,
+   "stats": {
+    "min": 0.0,
+    "p25": 0.0,
+    "median": 0.0,
+    "p75": 0.0,
+    "max": 1.0,
+    "mean": 0.001145,
+    "sd": 0.033835
+   },
+   "binary": true
+  },
+  {
+   "name": "leverage_low_def_prob_low",
+   "normalized": "leverage_low_def_prob_low",
+   "dtype": "int8",
+   "n_missing": 0,
+   "n_unique": 2,
+   "stats": {
+    "min": 0.0,
+    "p25": 0.0,
+    "median": 0.0,
+    "p75": 0.0,
+    "max": 1.0,
+    "mean": 0.001145,
+    "sd": 0.033835
+   },
+   "binary": true
+  },
+  {
+   "name": "leverage_low_def_prob_high",
+   "normalized": "leverage_low_def_prob_high",
+   "dtype": "int8",
+   "n_missing": 0,
+   "n_unique": 2,
+   "stats": {
+    "min": 0.0,
+    "p25": 0.0,
+    "median": 0.0,
+    "p75": 0.0,
+    "max": 1.0,
+    "mean": 0.001145,
+    "sd": 0.033835
+   },
+   "binary": true
+  },
+  {
+   "name": "leverage_high_def_prob_low",
+   "normalized": "leverage_high_def_prob_low",
+   "dtype": "int8",
+   "n_missing": 0,
+   "n_unique": 2,
+   "stats": {
+    "min": 0.0,
+    "p25": 0.0,
+    "median": 0.0,
+    "p75": 0.0,
+    "max": 1.0,
+    "mean": 0.001145,
+    "sd": 0.033835
+   },
+   "binary": true
+  },
+  {
+   "name": "leverage_high_def_prob_high",
+   "normalized": "leverage_high_def_prob_high",
+   "dtype": "int8",
+   "n_missing": 0,
+   "n_unique": 2,
+   "stats": {
+    "min": 0.0,
+    "p25": 0.0,
+    "median": 0.0,
+    "p75": 0.0,
+    "max": 1.0,
+    "mean": 0.001145,
+    "sd": 0.033835
+   },
+   "binary": true
+  },
+  {
+   "name": "breadth",
+   "normalized": "breadth",
+   "dtype": "int8",
+   "n_missing": 0,
+   "n_unique": 2,
+   "stats": {
+    "min": 0.0,
+    "p25": 0.0,
+    "median": 0.0,
+    "p75": 0.0,
+    "max": 1.0,
+    "mean": 0.004582,
+    "sd": 0.067554
+   },
+   "binary": true
+  },
+  {
+   "name": "breadth_in",
+   "normalized": "breadth_in",
+   "dtype": "int8",
+   "n_missing": 0,
+   "n_unique": 2,
+   "stats": {
+    "min": 0.0,
+    "p25": 0.0,
+    "median": 0.0,
+    "p75": 0.0,
+    "max": 1.0,
+    "mean": 0.000573,
+    "sd": 0.023932
+   },
+   "binary": true
+  },
+  {
+   "name": "breadth_out",
+   "normalized": "breadth_out",
+   "dtype": "int8",
+   "n_missing": 0,
+   "n_unique": 2,
+   "stats": {
+    "min": 0.0,
+    "p25": 0.0,
+    "median": 0.0,
+    "p75": 0.0,
+    "max": 1.0,
+    "mean": 0.000573,
+    "sd": 0.023932
+   },
+   "binary": true
+  },
+  {
+   "name": "hold",
+   "normalized": "hold",
+   "dtype": "int8",
+   "n_missing": 0,
+   "n_unique": 2,
+   "stats": {
+    "min": 0.0,
+    "p25": 0.0,
+    "median": 0.0,
+    "p75": 0.0,
+    "max": 1.0,
+    "mean": 0.005155,
+    "sd": 0.071631
+   },
+   "binary": true
+  },
+  {
+   "name": "hold_1",
+   "normalized": "hold_1",
+   "dtype": "int8",
+   "n_missing": 0,
+   "n_unique": 2,
+   "stats": {
+    "min": 0.0,
+    "p25": 0.0,
+    "median": 0.0,
+    "p75": 0.0,
+    "max": 1.0,
+    "mean": 0.000573,
+    "sd": 0.023932
+   },
+   "binary": true
+  },
+  {
+   "name": "hold_2",
+   "normalized": "hold_2",
+   "dtype": "int8",
+   "n_missing": 0,
+   "n_unique": 2,
+   "stats": {
+    "min": 0.0,
+    "p25": 0.0,
+    "median": 0.0,
+    "p75": 0.0,
+    "max": 1.0,
+    "mean": 0.000573,
+    "sd": 0.023932
+   },
+   "binary": true
+  },
+  {
+   "name": "hold_3",
+   "normalized": "hold_3",
+   "dtype": "int8",
+   "n_missing": 0,
+   "n_unique": 2,
+   "stats": {
+    "min": 0.0,
+    "p25": 0.0,
+    "median": 0.0,
+    "p75": 0.0,
+    "max": 1.0,
+    "mean": 0.000573,
+    "sd": 0.023932
+   },
+   "binary": true
+  },
+  {
+   "name": "hold_4",
+   "normalized": "hold_4",
+   "dtype": "int8",
+   "n_missing": 0,
+   "n_unique": 2,
+   "stats": {
+    "min": 0.0,
+    "p25": 0.0,
+    "median": 0.0,
+    "p75": 0.0,
+    "max": 1.0,
+    "mean": 0.000573,
+    "sd": 0.023932
+   },
+   "binary": true
+  },
+  {
+   "name": "avg_spread",
+   "normalized": "avg_spread",
+   "dtype": "int8",
+   "n_missing": 0,
+   "n_unique": 2,
+   "stats": {
+    "min": 0.0,
+    "p25": 0.0,
+    "median": 0.0,
+    "p75": 0.0,
+    "max": 1.0,
+    "mean": 0.03551,
+    "sd": 0.185117
+   },
+   "binary": true
+  },
+  {
+   "name": "spread_jan_dum",
+   "normalized": "spread_jan_dum",
+   "dtype": "int8",
+   "n_missing": 0,
+   "n_unique": 2,
+   "stats": {
+    "min": 0.0,
+    "p25": 0.0,
+    "median": 0.0,
+    "p75": 0.0,
+    "max": 1.0,
+    "mean": 0.000573,
+    "sd": 0.023932
+   },
+   "binary": true
+  },
+  {
+   "name": "size_jan_dum",
+   "normalized": "size_jan_dum",
+   "dtype": "int8",
+   "n_missing": 0,
+   "n_unique": 2,
+   "stats": {
+    "min": 0.0,
+    "p25": 0.0,
+    "median": 0.0,
+    "p75": 0.0,
+    "max": 1.0,
+    "mean": 0.001145,
+    "sd": 0.033835
+   },
+   "binary": true
+  },
+  {
+   "name": "period_listing",
+   "normalized": "period_listing",
+   "dtype": "int8",
+   "n_missing": 0,
+   "n_unique": 2,
+   "stats": {
+    "min": 0.0,
+    "p25": 0.0,
+    "median": 0.0,
+    "p75": 0.0,
+    "max": 1.0,
+    "mean": 0.004582,
+    "sd": 0.067554
+   },
+   "binary": true
+  },
+  {
+   "name": "beta_size",
+   "normalized": "beta_size",
+   "dtype": "int8",
+   "n_missing": 0,
+   "n_unique": 2,
+   "stats": {
+    "min": 0.0,
+    "p25": 0.0,
+    "median": 0.0,
+    "p75": 0.0,
+    "max": 1.0,
+    "mean": 0.002291,
+    "sd": 0.047823
+   },
+   "binary": true
+  },
+  {
+   "name": "period_listing_size",
+   "normalized": "period_listing_size",
+   "dtype": "int8",
+   "n_missing": 0,
+   "n_unique": 2,
+   "stats": {
+    "min": 0.0,
+    "p25": 0.0,
+    "median": 0.0,
+    "p75": 0.0,
+    "max": 1.0,
+    "mean": 0.002291,
+    "sd": 0.047823
+   },
+   "binary": true
+  },
+  {
+   "name": "beta_period_listing",
+   "normalized": "beta_period_listing",
+   "dtype": "int8",
+   "n_missing": 0,
+   "n_unique": 2,
+   "stats": {
+    "min": 0.0,
+    "p25": 0.0,
+    "median": 0.0,
+    "p75": 0.0,
+    "max": 1.0,
+    "mean": 0.002291,
+    "sd": 0.047823
+   },
+   "binary": true
+  },
+  {
+   "name": "exp_growth_earnings",
+   "normalized": "exp_growth_earnings",
+   "dtype": "int8",
+   "n_missing": 0,
+   "n_unique": 2,
+   "stats": {
+    "min": 0.0,
+    "p25": 0.0,
+    "median": 0.0,
+    "p75": 0.0,
+    "max": 1.0,
+    "mean": 0.000573,
+    "sd": 0.023932
+   },
+   "binary": true
+  },
+  {
+   "name": "altman_z_score",
+   "normalized": "altman_z_score",
+   "dtype": "int8",
+   "n_missing": 0,
+   "n_unique": 2,
+   "stats": {
+    "min": 0.0,
+    "p25": 0.0,
+    "median": 0.0,
+    "p75": 0.0,
+    "max": 1.0,
+    "mean": 0.001145,
+    "sd": 0.033835
+   },
+   "binary": true
+  },
+  {
+   "name": "ohlson_o_score",
+   "normalized": "ohlson_o_score",
+   "dtype": "int8",
+   "n_missing": 0,
+   "n_unique": 2,
+   "stats": {
+    "min": 0.0,
+    "p25": 0.0,
+    "median": 0.0,
+    "p75": 0.0,
+    "max": 1.0,
+    "mean": 0.006873,
+    "sd": 0.082641
+   },
+   "binary": true
+  },
+  {
+   "name": "consum_growth",
+   "normalized": "consum_growth",
+   "dtype": "int8",
+   "n_missing": 0,
+   "n_unique": 2,
+   "stats": {
+    "min": 0.0,
+    "p25": 0.0,
+    "median": 0.0,
+    "p75": 0.0,
+    "max": 1.0,
+    "mean": 0.001145,
+    "sd": 0.033835
+   },
+   "binary": true
+  },
+  {
+   "name": "ret_rank",
+   "normalized": "ret_rank",
+   "dtype": "int8",
+   "n_missing": 0,
+   "n_unique": 2,
+   "stats": {
+    "min": 0.0,
+    "p25": 0.0,
+    "median": 0.0,
+    "p75": 0.0,
+    "max": 1.0,
+    "mean": 0.003436,
+    "sd": 0.058537
+   },
+   "binary": true
+  },
+  {
+   "name": "ret_rank_small_dum",
+   "normalized": "ret_rank_small_dum",
+   "dtype": "int8",
+   "n_missing": 0,
+   "n_unique": 2,
+   "stats": {
+    "min": 0.0,
+    "p25": 0.0,
+    "median": 0.0,
+    "p75": 0.0,
+    "max": 1.0,
+    "mean": 0.001145,
+    "sd": 0.033835
+   },
+   "binary": true
+  },
+  {
+   "name": "ret_rank_med_dum",
+   "normalized": "ret_rank_med_dum",
+   "dtype": "int8",
+   "n_missing": 0,
+   "n_unique": 2,
+   "stats": {
+    "min": 0.0,
+    "p25": 0.0,
+    "median": 0.0,
+    "p75": 0.0,
+    "max": 1.0,
+    "mean": 0.001145,
+    "sd": 0.033835
+   },
+   "binary": true
+  },
+  {
+   "name": "ret_rank_large_dum",
+   "normalized": "ret_rank_large_dum",
+   "dtype": "int8",
+   "n_missing": 0,
+   "n_unique": 2,
+   "stats": {
+    "min": 0.0,
+    "p25": 0.0,
+    "median": 0.0,
+    "p75": 0.0,
+    "max": 1.0,
+    "mean": 0.001145,
+    "sd": 0.033835
+   },
+   "binary": true
+  },
+  {
+   "name": "share_issue_ST",
+   "normalized": "share_issue_st",
+   "dtype": "int8",
+   "n_missing": 0,
+   "n_unique": 2,
+   "stats": {
+    "min": 0.0,
+    "p25": 0.0,
+    "median": 0.0,
+    "p75": 0.0,
+    "max": 1.0,
+    "mean": 0.008591,
+    "sd": 0.092315
+   },
+   "binary": true
+  },
+  {
+   "name": "share_issue_LT",
+   "normalized": "share_issue_lt",
+   "dtype": "int8",
+   "n_missing": 0,
+   "n_unique": 2,
+   "stats": {
+    "min": 0.0,
+    "p25": 0.0,
+    "median": 0.0,
+    "p75": 0.0,
+    "max": 1.0,
+    "mean": 0.008591,
+    "sd": 0.092315
+   },
+   "binary": true
+  },
+  {
+   "name": "share_issue_LT_dum",
+   "normalized": "share_issue_lt_dum",
+   "dtype": "int8",
+   "n_missing": 0,
+   "n_unique": 2,
+   "stats": {
+    "min": 0.0,
+    "p25": 0.0,
+    "median": 0.0,
+    "p75": 0.0,
+    "max": 1.0,
+    "mean": 0.008591,
+    "sd": 0.092315
+   },
+   "binary": true
+  },
+  {
+   "name": "div_factor",
+   "normalized": "div_factor",
+   "dtype": "int8",
+   "n_missing": 0,
+   "n_unique": 2,
+   "stats": {
+    "min": 0.0,
+    "p25": 0.0,
+    "median": 0.0,
+    "p75": 0.0,
+    "max": 1.0,
+    "mean": 0.000573,
+    "sd": 0.023932
+   },
+   "binary": true
+  },
+  {
+   "name": "lev_factor",
+   "normalized": "lev_factor",
+   "dtype": "int8",
+   "n_missing": 0,
+   "n_unique": 2,
+   "stats": {
+    "min": 0.0,
+    "p25": 0.0,
+    "median": 0.0,
+    "p75": 0.0,
+    "max": 1.0,
+    "mean": 0.000573,
+    "sd": 0.023932
+   },
+   "binary": true
+  },
+  {
+   "name": "spread_bonds",
+   "normalized": "spread_bonds",
+   "dtype": "int8",
+   "n_missing": 0,
+   "n_unique": 2,
+   "stats": {
+    "min": 0.0,
+    "p25": 0.0,
+    "median": 0.0,
+    "p75": 0.0,
+    "max": 1.0,
+    "mean": 0.001718,
+    "sd": 0.041428
+   },
+   "binary": true
+  },
+  {
+   "name": "spread_bonds_2",
+   "normalized": "spread_bonds_2",
+   "dtype": "int8",
+   "n_missing": 0,
+   "n_unique": 2,
+   "stats": {
+    "min": 0.0,
+    "p25": 0.0,
+    "median": 0.0,
+    "p75": 0.0,
+    "max": 1.0,
+    "mean": 0.000573,
+    "sd": 0.023932
+   },
+   "binary": true
+  },
+  {
+   "name": "labor_growth",
+   "normalized": "labor_growth",
+   "dtype": "int8",
+   "n_missing": 0,
+   "n_unique": 2,
+   "stats": {
+    "min": 0.0,
+    "p25": 0.0,
+    "median": 0.0,
+    "p75": 0.0,
+    "max": 1.0,
+    "mean": 0.001145,
+    "sd": 0.033835
+   },
+   "binary": true
+  },
+  {
+   "name": "SP",
+   "normalized": "sp",
+   "dtype": "int8",
+   "n_missing": 0,
+   "n_unique": 2,
+   "stats": {
+    "min": 0.0,
+    "p25": 0.0,
+    "median": 0.0,
+    "p75": 0.0,
+    "max": 1.0,
+    "mean": 0.014891,
+    "sd": 0.121152
+   },
+   "binary": true
+  },
+  {
+   "name": "idiosync_risk_EG",
+   "normalized": "idiosync_risk_eg",
+   "dtype": "int8",
+   "n_missing": 0,
+   "n_unique": 2,
+   "stats": {
+    "min": 0.0,
+    "p25": 0.0,
+    "median": 0.0,
+    "p75": 0.0,
+    "max": 1.0,
+    "mean": 0.001145,
+    "sd": 0.033835
+   },
+   "binary": true
+  },
+  {
+   "name": "idiosync_risk_AR",
+   "normalized": "idiosync_risk_ar",
+   "dtype": "int8",
+   "n_missing": 0,
+   "n_unique": 2,
+   "stats": {
+    "min": 0.0,
+    "p25": 0.0,
+    "median": 0.0,
+    "p75": 0.0,
+    "max": 1.0,
+    "mean": 0.001145,
+    "sd": 0.033835
+   },
+   "binary": true
+  },
+  {
+   "name": "ORW_ratio",
+   "normalized": "orw_ratio",
+   "dtype": "int8",
+   "n_missing": 0,
+   "n_unique": 2,
+   "stats": {
+    "min": 0.0,
+    "p25": 0.0,
+    "median": 0.0,
+    "p75": 0.0,
+    "max": 1.0,
+    "mean": 0.000573,
+    "sd": 0.023932
+   },
+   "binary": true
+  },
+  {
+   "name": "option_interest",
+   "normalized": "option_interest",
+   "dtype": "int8",
+   "n_missing": 0,
+   "n_unique": 2,
+   "stats": {
+    "min": 0.0,
+    "p25": 0.0,
+    "median": 0.0,
+    "p75": 0.0,
+    "max": 1.0,
+    "mean": 0.000573,
+    "sd": 0.023932
+   },
+   "binary": true
+  },
+  {
+   "name": "lagger",
+   "normalized": "lagger",
+   "dtype": "int8",
+   "n_missing": 0,
+   "n_unique": 2,
+   "stats": {
+    "min": 0.0,
+    "p25": 0.0,
+    "median": 0.0,
+    "p75": 0.0,
+    "max": 1.0,
+    "mean": 0.000573,
+    "sd": 0.023932
+   },
+   "binary": true
+  },
+  {
+   "name": "CF",
+   "normalized": "cf",
+   "dtype": "int8",
+   "n_missing": 0,
+   "n_unique": 2,
+   "stats": {
+    "min": 0.0,
+    "p25": 0.0,
+    "median": 0.0,
+    "p75": 0.0,
+    "max": 1.0,
+    "mean": 0.001145,
+    "sd": 0.033835
+   },
+   "binary": true
+  },
+  {
+   "name": "WCF",
+   "normalized": "wcf",
+   "dtype": "int8",
+   "n_missing": 0,
+   "n_unique": 2,
+   "stats": {
+    "min": 0.0,
+    "p25": 0.0,
+    "median": 0.0,
+    "p75": 0.0,
+    "max": 1.0,
+    "mean": 0.001145,
+    "sd": 0.033835
+   },
+   "binary": true
+  },
+  {
+   "name": "assets",
+   "normalized": "assets",
+   "dtype": "int8",
+   "n_missing": 0,
+   "n_unique": 2,
+   "stats": {
+    "min": 0.0,
+    "p25": 0.0,
+    "median": 0.0,
+    "p75": 0.0,
+    "max": 1.0,
+    "mean": 0.002291,
+    "sd": 0.047823
+   },
+   "binary": true
+  },
+  {
+   "name": "ppe",
+   "normalized": "ppe",
+   "dtype": "int8",
+   "n_missing": 0,
+   "n_unique": 2,
+   "stats": {
+    "min": 0.0,
+    "p25": 0.0,
+    "median": 0.0,
+    "p75": 0.0,
+    "max": 1.0,
+    "mean": 0.009164,
+    "sd": 0.095315
+   },
+   "binary": true
+  },
+  {
+   "name": "employees",
+   "normalized": "employees",
+   "dtype": "int8",
+   "n_missing": 0,
+   "n_unique": 2,
+   "stats": {
+    "min": 0.0,
+    "p25": 0.0,
+    "median": 0.0,
+    "p75": 0.0,
+    "max": 1.0,
+    "mean": 0.001145,
+    "sd": 0.033835
+   },
+   "binary": true
+  },
+  {
+   "name": "st_dev_CF",
+   "normalized": "st_dev_cf",
+   "dtype": "int8",
+   "n_missing": 0,
+   "n_unique": 2,
+   "stats": {
+    "min": 0.0,
+    "p25": 0.0,
+    "median": 0.0,
+    "p75": 0.0,
+    "max": 1.0,
+    "mean": 0.000573,
+    "sd": 0.023932
+   },
+   "binary": true
+  },
+  {
+   "name": "st_dev_CF_growth",
+   "normalized": "st_dev_cf_growth",
+   "dtype": "int8",
+   "n_missing": 0,
+   "n_unique": 2,
+   "stats": {
+    "min": 0.0,
+    "p25": 0.0,
+    "median": 0.0,
+    "p75": 0.0,
+    "max": 1.0,
+    "mean": 0.000573,
+    "sd": 0.023932
+   },
+   "binary": true
+  },
+  {
+   "name": "intangible_ratio",
+   "normalized": "intangible_ratio",
+   "dtype": "int8",
+   "n_missing": 0,
+   "n_unique": 2,
+   "stats": {
+    "min": 0.0,
+    "p25": 0.0,
+    "median": 0.0,
+    "p75": 0.0,
+    "max": 1.0,
+    "mean": 0.005727,
+    "sd": 0.075484
+   },
+   "binary": true
+  },
+  {
+   "name": "liability_ratio",
+   "normalized": "liability_ratio",
+   "dtype": "int8",
+   "n_missing": 0,
+   "n_unique": 2,
+   "stats": {
+    "min": 0.0,
+    "p25": 0.0,
+    "median": 0.0,
+    "p75": 0.0,
+    "max": 1.0,
+    "mean": 0.005727,
+    "sd": 0.075484
+   },
+   "binary": true
+  },
+  {
+   "name": "buy_lambda",
+   "normalized": "buy_lambda",
+   "dtype": "int8",
+   "n_missing": 0,
+   "n_unique": 2,
+   "stats": {
+    "min": 0.0,
+    "p25": 0.0,
+    "median": 0.0,
+    "p75": 0.0,
+    "max": 1.0,
+    "mean": 0.006873,
+    "sd": 0.082641
+   },
+   "binary": true
+  },
+  {
+   "name": "sell_lambda",
+   "normalized": "sell_lambda",
+   "dtype": "int8",
+   "n_missing": 0,
+   "n_unique": 2,
+   "stats": {
+    "min": 0.0,
+    "p25": 0.0,
+    "median": 0.0,
+    "p75": 0.0,
+    "max": 1.0,
+    "mean": 0.006873,
+    "sd": 0.082641
+   },
+   "binary": true
+  },
+  {
+   "name": "avg_lambda",
+   "normalized": "avg_lambda",
+   "dtype": "int8",
+   "n_missing": 0,
+   "n_unique": 2,
+   "stats": {
+    "min": 0.0,
+    "p25": 0.0,
+    "median": 0.0,
+    "p75": 0.0,
+    "max": 1.0,
+    "mean": 0.000573,
+    "sd": 0.023932
+   },
+   "binary": true
+  },
+  {
+   "name": "sell_minus_buy_lambda",
+   "normalized": "sell_minus_buy_lambda",
+   "dtype": "int8",
+   "n_missing": 0,
+   "n_unique": 2,
+   "stats": {
+    "min": 0.0,
+    "p25": 0.0,
+    "median": 0.0,
+    "p75": 0.0,
+    "max": 1.0,
+    "mean": 0.001145,
+    "sd": 0.033835
+   },
+   "binary": true
+  },
+  {
+   "name": "FSRV",
+   "normalized": "fsrv",
+   "dtype": "int8",
+   "n_missing": 0,
+   "n_unique": 2,
+   "stats": {
+    "min": 0.0,
+    "p25": 0.0,
+    "median": 0.0,
+    "p75": 0.0,
+    "max": 1.0,
+    "mean": 0.000573,
+    "sd": 0.023932
+   },
+   "binary": true
+  },
+  {
+   "name": "proxy_rsq",
+   "normalized": "proxy_rsq",
+   "dtype": "int8",
+   "n_missing": 0,
+   "n_unique": 2,
+   "stats": {
+    "min": 0.0,
+    "p25": 0.0,
+    "median": 0.0,
+    "p75": 0.0,
+    "max": 1.0,
+    "mean": 0.010882,
+    "sd": 0.103777
+   },
+   "binary": true
+  },
+  {
+   "name": "CSR",
+   "normalized": "csr",
+   "dtype": "int8",
+   "n_missing": 0,
+   "n_unique": 2,
+   "stats": {
+    "min": 0.0,
+    "p25": 0.0,
+    "median": 0.0,
+    "p75": 0.0,
+    "max": 1.0,
+    "mean": 0.001145,
+    "sd": 0.033835
+   },
+   "binary": true
+  },
+  {
+   "name": "env_soc",
+   "normalized": "env_soc",
+   "dtype": "int8",
+   "n_missing": 0,
+   "n_unique": 2,
+   "stats": {
+    "min": 0.0,
+    "p25": 0.0,
+    "median": 0.0,
+    "p75": 0.0,
+    "max": 1.0,
+    "mean": 0.001145,
+    "sd": 0.033835
+   },
+   "binary": true
+  },
+  {
+   "name": "emp_soc",
+   "normalized": "emp_soc",
+   "dtype": "int8",
+   "n_missing": 0,
+   "n_unique": 2,
+   "stats": {
+    "min": 0.0,
+    "p25": 0.0,
+    "median": 0.0,
+    "p75": 0.0,
+    "max": 1.0,
+    "mean": 0.001145,
+    "sd": 0.033835
+   },
+   "binary": true
+  },
+  {
+   "name": "comm_soc",
+   "normalized": "comm_soc",
+   "dtype": "int8",
+   "n_missing": 0,
+   "n_unique": 2,
+   "stats": {
+    "min": 0.0,
+    "p25": 0.0,
+    "median": 0.0,
+    "p75": 0.0,
+    "max": 1.0,
+    "mean": 0.001145,
+    "sd": 0.033835
+   },
+   "binary": true
+  },
+  {
+   "name": "IMR",
+   "normalized": "imr",
+   "dtype": "int8",
+   "n_missing": 0,
+   "n_unique": 2,
+   "stats": {
+    "min": 0.0,
+    "p25": 0.0,
+    "median": 0.0,
+    "p75": 0.0,
+    "max": 1.0,
+    "mean": 0.002291,
+    "sd": 0.047823
+   },
+   "binary": true
+  },
+  {
+   "name": "PI_candidates",
+   "normalized": "pi_candidates",
+   "dtype": "int8",
+   "n_missing": 0,
+   "n_unique": 2,
+   "stats": {
+    "min": 0.0,
+    "p25": 0.0,
+    "median": 0.0,
+    "p75": 0.0,
+    "max": 1.0,
+    "mean": 0.000573,
+    "sd": 0.023932
+   },
+   "binary": true
+  },
+  {
+   "name": "PI_strength",
+   "normalized": "pi_strength",
+   "dtype": "int8",
+   "n_missing": 0,
+   "n_unique": 2,
+   "stats": {
+    "min": 0.0,
+    "p25": 0.0,
+    "median": 0.0,
+    "p75": 0.0,
+    "max": 1.0,
+    "mean": 0.000573,
+    "sd": 0.023932
+   },
+   "binary": true
+  },
+  {
+   "name": "PI_ability",
+   "normalized": "pi_ability",
+   "dtype": "int8",
+   "n_missing": 0,
+   "n_unique": 2,
+   "stats": {
+    "min": 0.0,
+    "p25": 0.0,
+    "median": 0.0,
+    "p75": 0.0,
+    "max": 1.0,
+    "mean": 0.000573,
+    "sd": 0.023932
+   },
+   "binary": true
+  },
+  {
+   "name": "PI_power",
+   "normalized": "pi_power",
+   "dtype": "int8",
+   "n_missing": 0,
+   "n_unique": 2,
+   "stats": {
+    "min": 0.0,
+    "p25": 0.0,
+    "median": 0.0,
+    "p75": 0.0,
+    "max": 1.0,
+    "mean": 0.000573,
+    "sd": 0.023932
+   },
+   "binary": true
+  },
+  {
+   "name": "tobin_Q",
+   "normalized": "tobin_q",
+   "dtype": "int8",
+   "n_missing": 0,
+   "n_unique": 2,
+   "stats": {
+    "min": 0.0,
+    "p25": 0.0,
+    "median": 0.0,
+    "p75": 0.0,
+    "max": 1.0,
+    "mean": 0.002291,
+    "sd": 0.047823
+   },
+   "binary": true
+  },
+  {
+   "name": "cash",
+   "normalized": "cash",
+   "dtype": "int8",
+   "n_missing": 0,
+   "n_unique": 2,
+   "stats": {
+    "min": 0.0,
+    "p25": 0.0,
+    "median": 0.0,
+    "p75": 0.0,
+    "max": 1.0,
+    "mean": 0.002291,
+    "sd": 0.047823
+   },
+   "binary": true
+  },
+  {
+   "name": "ROA",
+   "normalized": "roa",
+   "dtype": "int8",
+   "n_missing": 0,
+   "n_unique": 2,
+   "stats": {
+    "min": 0.0,
+    "p25": 0.0,
+    "median": 0.0,
+    "p75": 0.0,
+    "max": 1.0,
+    "mean": 0.002291,
+    "sd": 0.047823
+   },
+   "binary": true
+  },
+  {
+   "name": "BLOCK",
+   "normalized": "block",
+   "dtype": "int8",
+   "n_missing": 0,
+   "n_unique": 2,
+   "stats": {
+    "min": 0.0,
+    "p25": 0.0,
+    "median": 0.0,
+    "p75": 0.0,
+    "max": 1.0,
+    "mean": 0.002291,
+    "sd": 0.047823
+   },
+   "binary": true
+  },
+  {
+   "name": "industry_takeover",
+   "normalized": "industry_takeover",
+   "dtype": "int8",
+   "n_missing": 0,
+   "n_unique": 2,
+   "stats": {
+    "min": 0.0,
+    "p25": 0.0,
+    "median": 0.0,
+    "p75": 0.0,
+    "max": 1.0,
+    "mean": 0.002291,
+    "sd": 0.047823
+   },
+   "binary": true
+  },
+  {
+   "name": "logit",
+   "normalized": "logit",
+   "dtype": "int8",
+   "n_missing": 0,
+   "n_unique": 2,
+   "stats": {
+    "min": 0.0,
+    "p25": 0.0,
+    "median": 0.0,
+    "p75": 0.0,
+    "max": 1.0,
+    "mean": 0.002291,
+    "sd": 0.047823
+   },
+   "binary": true
+  },
+  {
+   "name": "CF_cov",
+   "normalized": "cf_cov",
+   "dtype": "int8",
+   "n_missing": 0,
+   "n_unique": 2,
+   "stats": {
+    "min": 0.0,
+    "p25": 0.0,
+    "median": 0.0,
+    "p75": 0.0,
+    "max": 1.0,
+    "mean": 0.001145,
+    "sd": 0.033835
+   },
+   "binary": true
+  },
+  {
+   "name": "CF_cov_dur",
+   "normalized": "cf_cov_dur",
+   "dtype": "int8",
+   "n_missing": 0,
+   "n_unique": 2,
+   "stats": {
+    "min": 0.0,
+    "p25": 0.0,
+    "median": 0.0,
+    "p75": 0.0,
+    "max": 1.0,
+    "mean": 0.001145,
+    "sd": 0.033835
+   },
+   "binary": true
+  },
+  {
+   "name": "num_indep",
+   "normalized": "num_indep",
+   "dtype": "int8",
+   "n_missing": 0,
+   "n_unique": 15,
+   "stats": {
+    "min": 0.0,
+    "p25": 1.0,
+    "median": 2.0,
+    "p75": 5.0,
+    "max": 14.0,
+    "mean": 3.242268,
+    "sd": 3.0964
+   }
+  },
+  {
+   "name": "topjour",
+   "normalized": "topjour",
+   "dtype": "int8",
+   "n_missing": 0,
+   "n_unique": 1,
+   "stats": {
+    "min": 0.0,
+    "p25": 0.0,
+    "median": 0.0,
+    "p75": 0.0,
+    "max": 0.0,
+    "mean": 0.0,
+    "sd": 0.0
+   },
+   "binary": true
+  },
+  {
+   "name": "impact",
+   "normalized": "impact",
+   "dtype": "float64",
+   "n_missing": 83,
+   "n_unique": 32,
+   "stats": {
+    "min": 0.001,
+    "p25": 0.073,
+    "median": 1.914,
+    "p75": 1.945,
+    "max": 3.989,
+    "mean": 1.129319,
+    "sd": 0.980378
+   }
+  },
+  {
+   "name": "cits",
+   "normalized": "cits",
+   "dtype": "int16",
+   "n_missing": 0,
+   "n_unique": 97,
+   "stats": {
+    "min": 1.0,
+    "p25": 59.0,
+    "median": 265.0,
+    "p75": 671.0,
+    "max": 15628.0,
+    "mean": 796.776632,
+    "sd": 2269.411235
+   }
+  },
+  {
+   "name": "published",
+   "normalized": "published",
+   "dtype": "int8",
+   "n_missing": 0,
+   "n_unique": 1,
+   "stats": {
+    "min": 1.0,
+    "p25": 1.0,
+    "median": 1.0,
+    "p75": 1.0,
+    "max": 1.0,
+    "mean": 1.0,
+    "sd": 0.0
+   },
+   "binary": true
+  },
+  {
+   "name": "pubyear",
+   "normalized": "pubyear",
+   "dtype": "int16",
+   "n_missing": 0,
+   "n_unique": 32,
+   "role": "pub_year",
+   "stats": {
+    "min": 1981.0,
+    "p25": 1997.0,
+    "median": 2000.0,
+    "p75": 2006.0,
+    "max": 2014.0,
+    "mean": 2000.549255,
+    "sd": 7.478959
+   }
+  },
+  {
+   "name": "study",
+   "normalized": "study",
+   "dtype": "str",
+   "n_missing": 0,
+   "n_unique": 101,
+   "top_values": [
+    "(Chui and Wei 1998)",
+    "(Serra 2003)",
+    "(Gaunt et al. 2000)",
+    "(Avramov and Chordia 2006)",
+    "(Heston et al. 1999)"
+   ]
+  },
+  {
+   "name": "comment1",
+   "normalized": "comment1",
+   "dtype": "str",
+   "n_missing": 0,
+   "n_unique": 107,
+   "top_values": [
+    "0",
+    "returns are in percentages",
+    "size adjusted for correlation with BM and beta",
+    "weekly data of log returns",
+    "coefficients are multiplied by 100"
+   ]
+  },
+  {
+   "name": "comment2",
+   "normalized": "comment2",
+   "dtype": "str",
+   "n_missing": 0,
+   "n_unique": 29,
+   "top_values": [
+    "0",
+    "all coefficients multiplies by 100",
+    "coefficients of size, beta and intercept are constraint to be constant across equations",
+    "slope coefficients multiplied by 100",
+    "beta adjusted for thin trading Dimson (1979)"
+   ]
+  },
+  {
+   "name": "comment3",
+   "normalized": "comment3",
+   "dtype": "str",
+   "n_missing": 0,
+   "n_unique": 24,
+   "top_values": [
+    "0",
+    "all coefficients multiplied by 100",
+    "Fama\u0096MacBeth regression estimates with excess market return as the risk factor",
+    "Fama\u0096MacBeth regression estimates with excess market return, SMB, and HML as risk factors",
+    "Fama\u0096MacBeth regression estimates with excess market return, SMB, HML, and liquidity as risk factors"
+   ]
+  },
+  {
+   "name": "comment4",
+   "normalized": "comment4",
+   "dtype": "str",
+   "n_missing": 0,
+   "n_unique": 2,
+   "top_values": [
+    "0",
+    "regression coefficients are \"purged\" as per p.21"
+   ]
+  },
+  {
+   "name": "PE",
+   "normalized": "pe",
+   "dtype": "str",
+   "n_missing": 0,
+   "n_unique": 2,
+   "top_values": [
+    "",
+    "x"
+   ]
+  },
+  {
+   "name": "se",
+   "normalized": "se",
+   "dtype": "float32",
+   "n_missing": 0,
+   "n_unique": 1498,
+   "stats": {
+    "min": 0.0,
+    "p25": 0.000967,
+    "median": 0.026151,
+    "p75": 0.059474,
+    "max": 4.864,
+    "mean": 0.10935,
+    "sd": 0.338507
+   }
+  },
+  {
+   "name": "startmonth",
+   "normalized": "startmonth",
+   "dtype": "float32",
+   "n_missing": 8,
+   "n_unique": 12,
+   "stats": {
+    "min": 0.0,
+    "p25": 1.0,
+    "median": 1.0,
+    "p75": 7.0,
+    "max": 12.0,
+    "mean": 3.625432,
+    "sd": 3.109696
+   }
+  },
+  {
+   "name": "endmonth",
+   "normalized": "endmonth",
+   "dtype": "float32",
+   "n_missing": 8,
+   "n_unique": 10,
+   "stats": {
+    "min": 0.0,
+    "p25": 12.0,
+    "median": 12.0,
+    "p75": 12.0,
+    "max": 12.0,
+    "mean": 10.673188,
+    "sd": 2.656324
+   }
+  },
+  {
+   "name": "startyear",
+   "normalized": "startyear",
+   "dtype": "float32",
+   "n_missing": 8,
+   "n_unique": 55,
+   "stats": {
+    "min": 0.0,
+    "p25": 1963.0,
+    "median": 1971.0,
+    "p75": 1980.0,
+    "max": 2002.0,
+    "mean": 1965.783084,
+    "sd": 95.542198
+   }
+  },
+  {
+   "name": "endyear",
+   "normalized": "endyear",
+   "dtype": "float32",
+   "n_missing": 8,
+   "n_unique": 52,
+   "stats": {
+    "min": 0.0,
+    "p25": 1990.0,
+    "median": 1995.0,
+    "p75": 2001.0,
+    "max": 2011.0,
+    "mean": 1989.253165,
+    "sd": 96.052886
+   }
+  },
+  {
+   "name": "rel_size",
+   "normalized": "rel_size",
+   "dtype": "float32",
+   "n_missing": 1,
+   "n_unique": 2,
+   "stats": {
+    "min": 0.0,
+    "p25": 0.0,
+    "median": 0.0,
+    "p75": 0.0,
+    "max": 1.0,
+    "mean": 0.067049,
+    "sd": 0.250178
+   },
+   "binary": true
+  },
+  {
+   "name": "tstat",
+   "normalized": "tstat",
+   "dtype": "float32",
+   "n_missing": 0,
+   "n_unique": 849,
+   "role": "t_stat",
+   "stats": {
+    "min": -16.84,
+    "p25": -2.6575,
+    "median": -1.34,
+    "p75": 0.0,
+    "max": 26.18,
+    "mean": -1.246389,
+    "sd": 2.95607
+   }
+  }
+ ]
+}

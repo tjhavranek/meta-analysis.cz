@@ -1,0 +1,204 @@
+{
+ "project": "learning",
+ "source_file": "learning_loss_data.xlsx",
+ "source_archive": null,
+ "source_sheet": "Betth\u00e4user",
+ "n_rows": 291,
+ "n_columns": 13,
+ "columns": [
+  {
+   "name": "study",
+   "normalized": "study",
+   "dtype": "str",
+   "n_missing": 0,
+   "n_unique": 42,
+   "top_values": [
+    "Kuhfeld and Lewis 2022",
+    "Pier et al. 2021",
+    "Bielinski et al. 2021",
+    "Locke et al. 2021",
+    "Blainey and Hannay 2021a"
+   ]
+  },
+  {
+   "name": "prim_sec",
+   "normalized": "prim_sec",
+   "dtype": "str",
+   "n_missing": 0,
+   "n_unique": 2,
+   "top_values": [
+    "Primary",
+    "Secondary"
+   ]
+  },
+  {
+   "name": "grade",
+   "normalized": "grade",
+   "dtype": "str",
+   "n_missing": 0,
+   "n_unique": 18,
+   "top_values": [
+    "5",
+    "4",
+    "6",
+    "3",
+    "2"
+   ]
+  },
+  {
+   "name": "age",
+   "normalized": "age",
+   "dtype": "float64",
+   "n_missing": 0,
+   "n_unique": 18,
+   "stats": {
+    "min": 5.0,
+    "p25": 8.0,
+    "median": 9.0,
+    "p75": 11.0,
+    "max": 18.0,
+    "mean": 9.600146,
+    "sd": 2.309024
+   }
+  },
+  {
+   "name": "date",
+   "normalized": "date",
+   "dtype": "str",
+   "n_missing": 0,
+   "n_unique": 15,
+   "top_values": [
+    "Jan 2021",
+    "Mar 2021",
+    "Sep 2020",
+    "Oct 2020",
+    "May 2021"
+   ]
+  },
+  {
+   "name": "months",
+   "normalized": "months",
+   "dtype": "int64",
+   "n_missing": 0,
+   "n_unique": 15,
+   "stats": {
+    "min": 2.0,
+    "p25": 6.5,
+    "median": 10.0,
+    "p75": 13.0,
+    "max": 26.0,
+    "mean": 10.378007,
+    "sd": 5.064555
+   }
+  },
+  {
+   "name": "subject",
+   "normalized": "subject",
+   "dtype": "str",
+   "n_missing": 0,
+   "n_unique": 3,
+   "top_values": [
+    "Reading",
+    "Math",
+    "Math/Reading"
+   ]
+  },
+  {
+   "name": "country",
+   "normalized": "country",
+   "dtype": "str",
+   "n_missing": 0,
+   "n_unique": 15,
+   "role": "country",
+   "top_values": [
+    "United States",
+    "United Kingdom",
+    "Netherlands",
+    "Italy",
+    "Germany"
+   ]
+  },
+  {
+   "name": "n_study",
+   "normalized": "n_study",
+   "dtype": "int64",
+   "n_missing": 0,
+   "n_unique": 213,
+   "stats": {
+    "min": 275.0,
+    "p25": 9443.0,
+    "median": 50000.0,
+    "p75": 369737.0,
+    "max": 10884922.0,
+    "mean": 446416.604811,
+    "sd": 1054076.758718
+   }
+  },
+  {
+   "name": "es",
+   "normalized": "es",
+   "dtype": "float64",
+   "n_missing": 0,
+   "n_unique": 236,
+   "role": "effect_estimate",
+   "stats": {
+    "min": -0.701675,
+    "p25": -0.2,
+    "median": -0.123982,
+    "p75": -0.05,
+    "max": 0.332526,
+    "mean": -0.126138,
+    "sd": 0.127232
+   }
+  },
+  {
+   "name": "se",
+   "normalized": "se",
+   "dtype": "float64",
+   "n_missing": 0,
+   "n_unique": 267,
+   "role": "standard_error",
+   "stats": {
+    "min": 0.0002,
+    "p25": 0.004031,
+    "median": 0.009046,
+    "p75": 0.023134,
+    "max": 0.139593,
+    "mean": 0.019463,
+    "sd": 0.025822
+   }
+  },
+  {
+   "name": "z",
+   "normalized": "z",
+   "dtype": "float64",
+   "n_missing": 0,
+   "n_unique": 275,
+   "stats": {
+    "min": 0.0,
+    "p25": 4.29116,
+    "median": 10.991691,
+    "p75": 29.547593,
+    "max": 1775.0,
+    "mean": 37.785044,
+    "sd": 133.688135
+   }
+  },
+  {
+   "name": "p",
+   "normalized": "p",
+   "dtype": "float64",
+   "n_missing": 0,
+   "n_unique": 9,
+   "stats": {
+    "min": 0.0,
+    "p25": 0.0,
+    "median": 0.0,
+    "p75": 0.0,
+    "max": 0.758316,
+    "mean": 0.003222,
+    "sd": 0.045259
+   }
+  }
+ ]
+}

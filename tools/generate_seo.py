@@ -268,6 +268,10 @@ def build_jsonld(m):
               "name": f"Data and code for: {m['title']}",
               "description": ("Dataset and replication files for the study. " + m["abstract"])[:4900],
               "url": page, "isAccessibleForFree": True, "inLanguage": "en",
+              # Google Dataset Search treats an explicit licence as a quality signal, and
+              # the collection is CC BY 4.0 (see /LICENSE). Individual datasets stay
+              # attributable to their own paper, which `citation` above already carries.
+              "license": "https://creativecommons.org/licenses/by/4.0/",
               "subjectOf": {"@id": page + "#paper"}}
         if dist:
             ds["distribution"] = dist
@@ -556,7 +560,20 @@ def main():
           "Each paper page links the full-text PDF "
           "and, for most papers, the dataset and estimation code.", "", "## Papers", ""]
     lt += [f"- [{merged[p]['title']}]({BASE}/{p}/): {merged[p]['one_line']}" for p in projects]
-    lt += ["", "## Resources", "",
+    lt += ["", "## Data", "",
+           f"- [Dataset index / data API]({BASE}/api/v1/datasets.json): every dataset on this site "
+           f"as machine-readable JSON — paper, DOI, row counts, file URLs, and which columns hold "
+           f"the effect estimate and its standard error",
+           f"- [Harmonised estimate-level table]({BASE}/data/v1/estimates_harmonised.csv): all "
+           f"literatures pooled into one table, one row per estimate, with effect, standard error, "
+           f"t-statistic, sample size and shared study characteristics "
+           f"(also [Parquet]({BASE}/data/v1/estimates_harmonised.parquet); beta)",
+           f"- [Per-dataset files]({BASE}/api/v1/datapackage.json): each dataset also published "
+           f"individually as Parquet and CSV, with a column-level codebook giving every variable's "
+           f"type, missingness and summary statistics — all URLs listed in datasets.json",
+           f"- [API documentation]({BASE}/api/v1/README.md): endpoints, usage, licence, and what "
+           f"is deliberately not in the harmonised table",
+           "", "## Resources", "",
            f"- [Headline results for every paper]({BASE}/estimates.csv): one row per paper — the "
            f"parameter, the value the paper headlines, the sample it rests on, and the verbatim "
            f"sentence from the paper that each figure came from (CSV)",

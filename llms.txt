@@ -57,6 +57,13 @@
 - [Trust, Rule of Law, and the Size Premium: Evidence from a Meta-Analysis](https://meta-analysis.cz/trust/): Meta-analysis of 1,613 reported size-premium estimates from 105 studies on how generalized trust and rule of law explain the disagreement across markets.
 - [Publication Bias in Measuring the Income Elasticity of Water Demand](https://meta-analysis.cz/water/): A meta-analysis finds publication and endogeneity biases inflate reported income elasticities of water demand, with a true elasticity near 0.15.
 
+## Data
+
+- [Dataset index / data API](https://meta-analysis.cz/api/v1/datasets.json): every dataset on this site as machine-readable JSON — paper, DOI, row counts, file URLs, and which columns hold the effect estimate and its standard error
+- [Harmonised estimate-level table](https://meta-analysis.cz/data/v1/estimates_harmonised.csv): all literatures pooled into one table, one row per estimate, with effect, standard error, t-statistic, sample size and shared study characteristics (also [Parquet](https://meta-analysis.cz/data/v1/estimates_harmonised.parquet); beta)
+- [Per-dataset files](https://meta-analysis.cz/api/v1/datapackage.json): each dataset also published individually as Parquet and CSV, with a column-level codebook giving every variable's type, missingness and summary statistics — all URLs listed in datasets.json
+- [API documentation](https://meta-analysis.cz/api/v1/README.md): endpoints, usage, licence, and what is deliberately not in the harmonised table
+
 ## Resources
 
 - [Headline results for every paper](https://meta-analysis.cz/estimates.csv): one row per paper — the parameter, the value the paper headlines, the sample it rests on, and the verbatim sentence from the paper that each figure came from (CSV)

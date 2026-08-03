@@ -1,0 +1,688 @@
+{
+ "project": "habits",
+ "source_file": "habit.dta",
+ "source_archive": null,
+ "source_sheet": null,
+ "n_rows": 606,
+ "n_columns": 41,
+ "columns": [
+  {
+   "name": "id",
+   "normalized": "id",
+   "dtype": "int8",
+   "n_missing": 0,
+   "n_unique": 78,
+   "stats": {
+    "min": 1.0,
+    "p25": 3.0,
+    "median": 7.0,
+    "p75": 18.0,
+    "max": 78.0,
+    "mean": 13.892739,
+    "sd": 16.83503
+   }
+  },
+  {
+   "name": "idstudy",
+   "normalized": "idstudy",
+   "dtype": "int8",
+   "n_missing": 0,
+   "n_unique": 81,
+   "role": "study_id",
+   "stats": {
+    "min": 1.0,
+    "p25": 15.0,
+    "median": 39.0,
+    "p75": 63.0,
+    "max": 81.0,
+    "mean": 39.851485,
+    "sd": 24.059727
+   }
+  },
+  {
+   "name": "study",
+   "normalized": "study",
+   "dtype": "str",
+   "n_missing": 0,
+   "n_unique": 81,
+   "top_values": [
+    "Fusaro and Dutkowsky (2011)",
+    "Baltagi et al. (2003)",
+    "Carroll et al. (2011)",
+    "Maurer and Meier (2008)",
+    "Ferson and Constantides (1991)"
+   ]
+  },
+  {
+   "name": "country",
+   "normalized": "country",
+   "dtype": "str",
+   "n_missing": 0,
+   "n_unique": 18,
+   "role": "country",
+   "top_values": [
+    "US",
+    "France",
+    "Japan",
+    "Spain",
+    "UK"
+   ]
+  },
+  {
+   "name": "habit",
+   "normalized": "habit",
+   "dtype": "float64",
+   "n_missing": 0,
+   "n_unique": 402,
+   "role": "effect_estimate",
+   "stats": {
+    "min": -2.111,
+    "p25": 0.007725,
+    "median": 0.4407,
+    "p75": 0.7485,
+    "max": 2.4372,
+    "mean": 0.41897,
+    "sd": 0.453167
+   }
+  },
+  {
+   "name": "se",
+   "normalized": "se",
+   "dtype": "float64",
+   "n_missing": 9,
+   "n_unique": 449,
+   "role": "standard_error",
+   "stats": {
+    "min": 0.0,
+    "p25": 0.03,
+    "median": 0.078,
+    "p75": 0.153587,
+    "max": 1002.4,
+    "mean": 2.427019,
+    "sd": 42.453264
+   }
+  },
+  {
+   "name": "observations",
+   "normalized": "observations",
+   "dtype": "int16",
+   "n_missing": 0,
+   "n_unique": 153,
+   "role": "n_obs",
+   "stats": {
+    "min": 45.0,
+    "p25": 114.0,
+    "median": 184.0,
+    "p75": 1584.0,
+    "max": 27188.0,
+    "mean": 2837.930693,
+    "sd": 6095.06824
+   }
+  },
+  {
+   "name": "no_cross",
+   "normalized": "no_cross",
+   "dtype": "float64",
+   "n_missing": 0,
+   "n_unique": 50,
+   "stats": {
+    "min": 1.0,
+    "p25": 1.0,
+    "median": 1.0,
+    "p75": 1245.0,
+    "max": 4194.0,
+    "mean": 506.716455,
+    "sd": 828.300034
+   }
+  },
+  {
+   "name": "no_years",
+   "normalized": "no_years",
+   "dtype": "int16",
+   "n_missing": 0,
+   "n_unique": 50,
+   "stats": {
+    "min": 1.0,
+    "p25": 13.0,
+    "median": 24.0,
+    "p75": 36.0,
+    "max": 123.0,
+    "mean": 25.245875,
+    "sd": 17.921332
+   }
+  },
+  {
+   "name": "avg_year",
+   "normalized": "avg_year",
+   "dtype": "float64",
+   "n_missing": 0,
+   "n_unique": 51,
+   "stats": {
+    "min": 1932.0,
+    "p25": 1980.5,
+    "median": 1985.5,
+    "p75": 1993.875,
+    "max": 2003.5,
+    "mean": 1985.563531,
+    "sd": 11.838047
+   }
+  },
+  {
+   "name": "micro",
+   "normalized": "micro",
+   "dtype": "int8",
+   "n_missing": 0,
+   "n_unique": 2,
+   "stats": {
+    "min": 0.0,
+    "p25": 0.0,
+    "median": 0.0,
+    "p75": 1.0,
+    "max": 1.0,
+    "mean": 0.316832,
+    "sd": 0.465626
+   },
+   "binary": true
+  },
+  {
+   "name": "dsge",
+   "normalized": "dsge",
+   "dtype": "int8",
+   "n_missing": 0,
+   "n_unique": 2,
+   "stats": {
+    "min": 0.0,
+    "p25": 0.0,
+    "median": 0.0,
+    "p75": 0.0,
+    "max": 1.0,
+    "mean": 0.222772,
+    "sd": 0.41645
+   },
+   "binary": true
+  },
+  {
+   "name": "monthly",
+   "normalized": "monthly",
+   "dtype": "int8",
+   "n_missing": 0,
+   "n_unique": 2,
+   "stats": {
+    "min": 0.0,
+    "p25": 0.0,
+    "median": 0.0,
+    "p75": 0.0,
+    "max": 1.0,
+    "mean": 0.165017,
+    "sd": 0.371502
+   },
+   "binary": true
+  },
+  {
+   "name": "annual",
+   "normalized": "annual",
+   "dtype": "int8",
+   "n_missing": 0,
+   "n_unique": 2,
+   "stats": {
+    "min": 0.0,
+    "p25": 0.0,
+    "median": 0.0,
+    "p75": 1.0,
+    "max": 1.0,
+    "mean": 0.316832,
+    "sd": 0.465626
+   },
+   "binary": true
+  },
+  {
+   "name": "external",
+   "normalized": "external",
+   "dtype": "int8",
+   "n_missing": 0,
+   "n_unique": 2,
+   "stats": {
+    "min": 0.0,
+    "p25": 0.0,
+    "median": 0.0,
+    "p75": 1.0,
+    "max": 1.0,
+    "mean": 0.376238,
+    "sd": 0.484841
+   },
+   "binary": true
+  },
+  {
+   "name": "durable_other",
+   "normalized": "durable_other",
+   "dtype": "int8",
+   "n_missing": 0,
+   "n_unique": 2,
+   "stats": {
+    "min": 0.0,
+    "p25": 0.0,
+    "median": 1.0,
+    "p75": 1.0,
+    "max": 1.0,
+    "mean": 0.747525,
+    "sd": 0.434791
+   },
+   "binary": true
+  },
+  {
+   "name": "food",
+   "normalized": "food",
+   "dtype": "int8",
+   "n_missing": 0,
+   "n_unique": 2,
+   "stats": {
+    "min": 0.0,
+    "p25": 0.0,
+    "median": 0.0,
+    "p75": 0.0,
+    "max": 1.0,
+    "mean": 0.117162,
+    "sd": 0.321879
+   },
+   "binary": true
+  },
+  {
+   "name": "OLS",
+   "normalized": "ols",
+   "dtype": "int8",
+   "n_missing": 0,
+   "n_unique": 2,
+   "stats": {
+    "min": 0.0,
+    "p25": 0.0,
+    "median": 0.0,
+    "p75": 0.0,
+    "max": 1.0,
+    "mean": 0.016502,
+    "sd": 0.1275
+   },
+   "binary": true
+  },
+  {
+   "name": "GMM",
+   "normalized": "gmm",
+   "dtype": "int8",
+   "n_missing": 0,
+   "n_unique": 2,
+   "stats": {
+    "min": 0.0,
+    "p25": 0.0,
+    "median": 0.0,
+    "p75": 1.0,
+    "max": 1.0,
+    "mean": 0.463696,
+    "sd": 0.499092
+   },
+   "binary": true
+  },
+  {
+   "name": "TSLS",
+   "normalized": "tsls",
+   "dtype": "int8",
+   "n_missing": 0,
+   "n_unique": 2,
+   "stats": {
+    "min": 0.0,
+    "p25": 0.0,
+    "median": 0.0,
+    "p75": 0.0,
+    "max": 1.0,
+    "mean": 0.138614,
+    "sd": 0.345829
+   },
+   "binary": true
+  },
+  {
+   "name": "bayes",
+   "normalized": "bayes",
+   "dtype": "int8",
+   "n_missing": 0,
+   "n_unique": 2,
+   "stats": {
+    "min": 0.0,
+    "p25": 0.0,
+    "median": 0.0,
+    "p75": 0.0,
+    "max": 1.0,
+    "mean": 0.19802,
+    "sd": 0.398836
+   },
+   "binary": true
+  },
+  {
+   "name": "min_distance",
+   "normalized": "min_distance",
+   "dtype": "int8",
+   "n_missing": 0,
+   "n_unique": 2,
+   "stats": {
+    "min": 0.0,
+    "p25": 0.0,
+    "median": 0.0,
+    "p75": 0.0,
+    "max": 1.0,
+    "mean": 0.057756,
+    "sd": 0.233474
+   },
+   "binary": true
+  },
+  {
+   "name": "ML",
+   "normalized": "ml",
+   "dtype": "int8",
+   "n_missing": 0,
+   "n_unique": 2,
+   "stats": {
+    "min": 0.0,
+    "p25": 0.0,
+    "median": 0.0,
+    "p75": 0.0,
+    "max": 1.0,
+    "mean": 0.024752,
+    "sd": 0.155498
+   },
+   "binary": true
+  },
+  {
+   "name": "panel",
+   "normalized": "panel",
+   "dtype": "int8",
+   "n_missing": 0,
+   "n_unique": 2,
+   "stats": {
+    "min": 0.0,
+    "p25": 0.0,
+    "median": 0.0,
+    "p75": 0.0,
+    "max": 1.0,
+    "mean": 0.052805,
+    "sd": 0.223829
+   },
+   "binary": true
+  },
+  {
+   "name": "pub_year",
+   "normalized": "pub_year",
+   "dtype": "int16",
+   "n_missing": 0,
+   "n_unique": 20,
+   "role": "pub_year",
+   "stats": {
+    "min": 1990.0,
+    "p25": 2003.0,
+    "median": 2008.0,
+    "p75": 2011.0,
+    "max": 2014.0,
+    "mean": 2005.582508,
+    "sd": 6.738243
+   }
+  },
+  {
+   "name": "citations",
+   "normalized": "citations",
+   "dtype": "int16",
+   "n_missing": 0,
+   "n_unique": 73,
+   "stats": {
+    "min": 0.0,
+    "p25": 20.0,
+    "median": 45.0,
+    "p75": 112.0,
+    "max": 3706.0,
+    "mean": 181.793729,
+    "sd": 459.46725
+   }
+  },
+  {
+   "name": "top",
+   "normalized": "top",
+   "dtype": "int8",
+   "n_missing": 0,
+   "n_unique": 2,
+   "stats": {
+    "min": 0.0,
+    "p25": 0.0,
+    "median": 0.0,
+    "p75": 0.0,
+    "max": 1.0,
+    "mean": 0.074257,
+    "sd": 0.262406
+   },
+   "binary": true
+  },
+  {
+   "name": "impact",
+   "normalized": "impact",
+   "dtype": "float64",
+   "n_missing": 0,
+   "n_unique": 41,
+   "stats": {
+    "min": 0.001,
+    "p25": 0.144,
+    "median": 0.731,
+    "p75": 1.17,
+    "max": 3.701,
+    "mean": 0.865926,
+    "sd": 0.796509
+   }
+  },
+  {
+   "name": "deep",
+   "normalized": "deep",
+   "dtype": "int8",
+   "n_missing": 0,
+   "n_unique": 2,
+   "stats": {
+    "min": 0.0,
+    "p25": 0.0,
+    "median": 0.0,
+    "p75": 0.0,
+    "max": 1.0,
+    "mean": 0.044554,
+    "sd": 0.206494
+   },
+   "binary": true
+  },
+  {
+   "name": "open",
+   "normalized": "open",
+   "dtype": "int8",
+   "n_missing": 0,
+   "n_unique": 2,
+   "stats": {
+    "min": 0.0,
+    "p25": 0.0,
+    "median": 0.0,
+    "p75": 0.0,
+    "max": 1.0,
+    "mean": 0.016502,
+    "sd": 0.1275
+   },
+   "binary": true
+  },
+  {
+   "name": "secord",
+   "normalized": "secord",
+   "dtype": "int8",
+   "n_missing": 0,
+   "n_unique": 2,
+   "stats": {
+    "min": 0.0,
+    "p25": 0.0,
+    "median": 0.0,
+    "p75": 0.0,
+    "max": 1.0,
+    "mean": 0.046205,
+    "sd": 0.210101
+   },
+   "binary": true
+  },
+  {
+   "name": "exact",
+   "normalized": "exact",
+   "dtype": "int8",
+   "n_missing": 0,
+   "n_unique": 2,
+   "stats": {
+    "min": 0.0,
+    "p25": 0.0,
+    "median": 0.0,
+    "p75": 1.0,
+    "max": 1.0,
+    "mean": 0.267327,
+    "sd": 0.44293
+   },
+   "binary": true
+  },
+  {
+   "name": "asset_returns",
+   "normalized": "asset_returns",
+   "dtype": "int8",
+   "n_missing": 0,
+   "n_unique": 2,
+   "stats": {
+    "min": 0.0,
+    "p25": 0.0,
+    "median": 0.0,
+    "p75": 0.0,
+    "max": 1.0,
+    "mean": 0.143564,
+    "sd": 0.350937
+   },
+   "binary": true
+  },
+  {
+   "name": "mp_match",
+   "normalized": "mp_match",
+   "dtype": "int8",
+   "n_missing": 0,
+   "n_unique": 2,
+   "stats": {
+    "min": 0.0,
+    "p25": 0.0,
+    "median": 0.0,
+    "p75": 0.0,
+    "max": 1.0,
+    "mean": 0.044554,
+    "sd": 0.206494
+   },
+   "binary": true
+  },
+  {
+   "name": "n_matched",
+   "normalized": "n_matched",
+   "dtype": "int8",
+   "n_missing": 0,
+   "n_unique": 14,
+   "stats": {
+    "min": 0.0,
+    "p25": 0.0,
+    "median": 0.0,
+    "p75": 0.0,
+    "max": 17.0,
+    "mean": 1.435644,
+    "sd": 2.87853
+   }
+  },
+  {
+   "name": "matched",
+   "normalized": "matched",
+   "dtype": "str",
+   "n_missing": 0,
+   "n_unique": 57,
+   "top_values": [
+    "",
+    "Output, inflation, interest rate",
+    " output, inflation, changes in import price,  nominal interest rates,  terms of trade, nominal exchange rate",
+    "real GDP, real consumption, the GDP deflator, real investment, the real wage, and labor productivity, real profits,  growth rate of M2, interest rate",
+    "Real output, consumption,  real wage, hours worked, interest rate, investment, inflation"
+   ]
+  },
+  {
+   "name": "n_observables",
+   "normalized": "n_observables",
+   "dtype": "int8",
+   "n_missing": 0,
+   "n_unique": 13,
+   "stats": {
+    "min": 0.0,
+    "p25": 0.0,
+    "median": 0.0,
+    "p75": 0.0,
+    "max": 17.0,
+    "mean": 1.450495,
+    "sd": 2.876527
+   }
+  },
+  {
+   "name": "observables",
+   "normalized": "observables",
+   "dtype": "str",
+   "n_missing": 0,
+   "n_unique": 54,
+   "top_values": [
+    "",
+    "Output, inflation, interest rate",
+    " output, inflation, changes in import price,  nominal interest rates,  terms of trade, nominal exchange rate",
+    "real GDP, real consumption, the GDP deflator, real investment, the real wage, and labor productivity, real profits,  growth rate of M2, interest rate",
+    "Real output, consumption,  real wage, hours worked, interest rate, investment, inflation"
+   ]
+  },
+  {
+   "name": "seven_observ",
+   "normalized": "seven_observ",
+   "dtype": "int8",
+   "n_missing": 0,
+   "n_unique": 2,
+   "stats": {
+    "min": 0.0,
+    "p25": 0.0,
+    "median": 0.0,
+    "p75": 0.0,
+    "max": 1.0,
+    "mean": 0.056106,
+    "sd": 0.230316
+   },
+   "binary": true
+  },
+  {
+   "name": "no_cons",
+   "normalized": "no_cons",
+   "dtype": "int8",
+   "n_missing": 0,
+   "n_unique": 2,
+   "stats": {
+    "min": 0.0,
+    "p25": 0.0,
+    "median": 0.0,
+    "p75": 0.0,
+    "max": 1.0,
+    "mean": 0.132013,
+    "sd": 0.338785
+   },
+   "binary": true
+  },
+  {
+   "name": "no_wage",
+   "normalized": "no_wage",
+   "dtype": "int8",
+   "n_missing": 0,
+   "n_unique": 2,
+   "stats": {
+    "min": 0.0,
+    "p25": 0.0,
+    "median": 0.0,
+    "p75": 0.0,
+    "max": 1.0,
+    "mean": 0.151815,
+    "sd": 0.359138
+   },
+   "binary": true
+  }
+ ]
+}

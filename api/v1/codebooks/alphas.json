@@ -1,0 +1,1368 @@
+{
+ "project": "alphas",
+ "source_file": "alphas.xlsx",
+ "source_archive": null,
+ "source_sheet": "data",
+ "n_rows": 1019,
+ "n_columns": 82,
+ "columns": [
+  {
+   "name": "study_id",
+   "normalized": "study_id",
+   "dtype": "int64",
+   "n_missing": 0,
+   "n_unique": 74,
+   "role": "study_id",
+   "stats": {
+    "min": 1.0,
+    "p25": 15.0,
+    "median": 31.0,
+    "p75": 54.0,
+    "max": 74.0,
+    "mean": 34.50736,
+    "sd": 22.419529
+   }
+  },
+  {
+   "name": "team_id",
+   "normalized": "team_id",
+   "dtype": "int64",
+   "n_missing": 0,
+   "n_unique": 55,
+   "stats": {
+    "min": 1.0,
+    "p25": 17.0,
+    "median": 26.0,
+    "p75": 47.0,
+    "max": 56.0,
+    "mean": 29.790972,
+    "sd": 17.118175
+   }
+  },
+  {
+   "name": "study",
+   "normalized": "study",
+   "dtype": "str",
+   "n_missing": 0,
+   "n_unique": 74,
+   "top_values": [
+    "Agarwal et al. (2017)",
+    "Racicot & Theoret (2009)",
+    "Buraschi et al. (2014)",
+    "Ranaldo & Favre (2005)",
+    "Gupta et al. (2003)"
+   ]
+  },
+  {
+   "name": "alpha",
+   "normalized": "alpha",
+   "dtype": "float64",
+   "n_missing": 0,
+   "n_unique": 623,
+   "role": "effect_estimate",
+   "stats": {
+    "min": -3.64,
+    "p25": 0.13,
+    "median": 0.3503,
+    "p75": 0.564167,
+    "max": 5.1134,
+    "mean": 0.365413,
+    "sd": 0.535006
+   }
+  },
+  {
+   "name": "tstat",
+   "normalized": "tstat",
+   "dtype": "float64",
+   "n_missing": 0,
+   "n_unique": 768,
+   "role": "t_stat",
+   "stats": {
+    "min": -2.994,
+    "p25": 0.79885,
+    "median": 2.083333,
+    "p75": 3.745,
+    "max": 48.644,
+    "mean": 2.850865,
+    "sd": 4.525047
+   }
+  },
+  {
+   "name": "se",
+   "normalized": "se",
+   "dtype": "float64",
+   "n_missing": 0,
+   "n_unique": 940,
+   "role": "standard_error",
+   "stats": {
+    "min": 0.008081,
+    "p25": 0.102644,
+    "median": 0.160165,
+    "p75": 0.287393,
+    "max": 170.446667,
+    "mean": 0.429361,
+    "sd": 5.347261
+   }
+  },
+  {
+   "name": "precision",
+   "normalized": "precision",
+   "dtype": "float64",
+   "n_missing": 0,
+   "n_unique": 936,
+   "stats": {
+    "min": 0.005867,
+    "p25": 3.47958,
+    "median": 6.243542,
+    "p75": 9.742477,
+    "max": 123.746017,
+    "mean": 8.284288,
+    "sd": 11.175669
+   }
+  },
+  {
+   "name": "sample_size",
+   "normalized": "sample_size",
+   "dtype": "float64",
+   "n_missing": 40,
+   "n_unique": 157,
+   "role": "n_obs",
+   "stats": {
+    "min": 18.0,
+    "p25": 79.5,
+    "median": 152.0,
+    "p75": 204.0,
+    "max": 634735.0,
+    "mean": 4693.151736,
+    "sd": 33330.925024
+   }
+  },
+  {
+   "name": "weight",
+   "normalized": "weight",
+   "dtype": "float64",
+   "n_missing": 0,
+   "n_unique": 29,
+   "stats": {
+    "min": 0.016393,
+    "p25": 0.025,
+    "median": 0.041667,
+    "p75": 0.090909,
+    "max": 1.0,
+    "mean": 0.07262,
+    "sd": 0.100644
+   }
+  },
+  {
+   "name": "year_data",
+   "normalized": "year_data",
+   "dtype": "float64",
+   "n_missing": 0,
+   "n_unique": 38,
+   "stats": {
+    "min": 1990.0,
+    "p25": 1998.0,
+    "median": 2001.5,
+    "p75": 2004.5,
+    "max": 2014.5,
+    "mean": 2001.609421,
+    "sd": 5.132962
+   }
+  },
+  {
+   "name": "year_publication",
+   "normalized": "year_publication",
+   "dtype": "int64",
+   "n_missing": 0,
+   "n_unique": 20,
+   "stats": {
+    "min": 2001.0,
+    "p25": 2007.0,
+    "median": 2012.0,
+    "p75": 2017.0,
+    "max": 2021.0,
+    "mean": 2011.52895,
+    "sd": 5.559987
+   }
+  },
+  {
+   "name": "country",
+   "normalized": "country",
+   "dtype": "str",
+   "n_missing": 0,
+   "n_unique": 9,
+   "role": "country",
+   "top_values": [
+    "Global funds",
+    "Canadian & US funds",
+    "Australian funds",
+    "Chinese & Korean funds",
+    "Japanese funds"
+   ]
+  },
+  {
+   "name": "depvar_individual_funds",
+   "normalized": "depvar_individual_funds",
+   "dtype": "int64",
+   "n_missing": 0,
+   "n_unique": 2,
+   "stats": {
+    "min": 0.0,
+    "p25": 0.0,
+    "median": 0.0,
+    "p75": 0.0,
+    "max": 1.0,
+    "mean": 0.171737,
+    "sd": 0.377337
+   },
+   "binary": true
+  },
+  {
+   "name": "depvar_equalw_funds",
+   "normalized": "depvar_equalw_funds",
+   "dtype": "int64",
+   "n_missing": 0,
+   "n_unique": 2,
+   "stats": {
+    "min": 0.0,
+    "p25": 0.0,
+    "median": 0.0,
+    "p75": 1.0,
+    "max": 1.0,
+    "mean": 0.493621,
+    "sd": 0.500205
+   },
+   "binary": true
+  },
+  {
+   "name": "depvar_valuew_funds",
+   "normalized": "depvar_valuew_funds",
+   "dtype": "int64",
+   "n_missing": 0,
+   "n_unique": 2,
+   "stats": {
+    "min": 0.0,
+    "p25": 0.0,
+    "median": 0.0,
+    "p75": 1.0,
+    "max": 1.0,
+    "mean": 0.334642,
+    "sd": 0.472097
+   },
+   "binary": true
+  },
+  {
+   "name": "depvar_net_returns",
+   "normalized": "depvar_net_returns",
+   "dtype": "int64",
+   "n_missing": 0,
+   "n_unique": 2,
+   "stats": {
+    "min": 0.0,
+    "p25": 1.0,
+    "median": 1.0,
+    "p75": 1.0,
+    "max": 1.0,
+    "mean": 0.965653,
+    "sd": 0.182209
+   },
+   "binary": true
+  },
+  {
+   "name": "depvar_gross_returns",
+   "normalized": "depvar_gross_returns",
+   "dtype": "int64",
+   "n_missing": 0,
+   "n_unique": 2,
+   "stats": {
+    "min": 0.0,
+    "p25": 0.0,
+    "median": 0.0,
+    "p75": 0.0,
+    "max": 1.0,
+    "mean": 0.034347,
+    "sd": 0.182209
+   },
+   "binary": true
+  },
+  {
+   "name": "data_cross_section",
+   "normalized": "data_cross_section",
+   "dtype": "int64",
+   "n_missing": 0,
+   "n_unique": 2,
+   "stats": {
+    "min": 0.0,
+    "p25": 1.0,
+    "median": 1.0,
+    "p75": 1.0,
+    "max": 1.0,
+    "mean": 0.839058,
+    "sd": 0.367658
+   },
+   "binary": true
+  },
+  {
+   "name": "data_longitudal",
+   "normalized": "data_longitudal",
+   "dtype": "int64",
+   "n_missing": 0,
+   "n_unique": 2,
+   "stats": {
+    "min": 0.0,
+    "p25": 0.0,
+    "median": 0.0,
+    "p75": 0.0,
+    "max": 1.0,
+    "mean": 0.160942,
+    "sd": 0.367658
+   },
+   "binary": true
+  },
+  {
+   "name": "data_midyear",
+   "normalized": "data_midyear",
+   "dtype": "float64",
+   "n_missing": 0,
+   "n_unique": 38,
+   "stats": {
+    "min": 0.0,
+    "p25": 2.197225,
+    "median": 2.525729,
+    "p75": 2.74084,
+    "max": 3.238678,
+    "mean": 2.404989,
+    "sd": 0.602617
+   }
+  },
+  {
+   "name": "database_default",
+   "normalized": "database_default",
+   "dtype": "int64",
+   "n_missing": 0,
+   "n_unique": 2,
+   "stats": {
+    "min": 0.0,
+    "p25": 0.0,
+    "median": 1.0,
+    "p75": 1.0,
+    "max": 1.0,
+    "mean": 0.526987,
+    "sd": 0.499516
+   },
+   "binary": true
+  },
+  {
+   "name": "database_cst",
+   "normalized": "database_cst",
+   "dtype": "int64",
+   "n_missing": 0,
+   "n_unique": 2,
+   "stats": {
+    "min": 0.0,
+    "p25": 0.0,
+    "median": 0.0,
+    "p75": 1.0,
+    "max": 1.0,
+    "mean": 0.251227,
+    "sd": 0.433932
+   },
+   "binary": true
+  },
+  {
+   "name": "database_cisdm",
+   "normalized": "database_cisdm",
+   "dtype": "int64",
+   "n_missing": 0,
+   "n_unique": 2,
+   "stats": {
+    "min": 0.0,
+    "p25": 0.0,
+    "median": 0.0,
+    "p75": 0.0,
+    "max": 1.0,
+    "mean": 0.174681,
+    "sd": 0.379881
+   },
+   "binary": true
+  },
+  {
+   "name": "database_handcollect",
+   "normalized": "database_handcollect",
+   "dtype": "int64",
+   "n_missing": 0,
+   "n_unique": 2,
+   "stats": {
+    "min": 0.0,
+    "p25": 0.0,
+    "median": 0.0,
+    "p75": 0.0,
+    "max": 1.0,
+    "mean": 0.02159,
+    "sd": 0.145411
+   },
+   "binary": true
+  },
+  {
+   "name": "database_other",
+   "normalized": "database_other",
+   "dtype": "int64",
+   "n_missing": 0,
+   "n_unique": 2,
+   "stats": {
+    "min": 0.0,
+    "p25": 0.0,
+    "median": 0.0,
+    "p75": 0.0,
+    "max": 1.0,
+    "mean": 0.163886,
+    "sd": 0.370354
+   },
+   "binary": true
+  },
+  {
+   "name": "number_of_databases",
+   "normalized": "number_of_databases",
+   "dtype": "int64",
+   "n_missing": 0,
+   "n_unique": 8,
+   "stats": {
+    "min": 0.0,
+    "p25": 1.0,
+    "median": 1.0,
+    "p75": 1.0,
+    "max": 7.0,
+    "mean": 1.366045,
+    "sd": 1.048184
+   }
+  },
+  {
+   "name": "market_developed",
+   "normalized": "market_developed",
+   "dtype": "int64",
+   "n_missing": 0,
+   "n_unique": 2,
+   "stats": {
+    "min": 0.0,
+    "p25": 0.0,
+    "median": 0.0,
+    "p75": 0.0,
+    "max": 1.0,
+    "mean": 0.13739,
+    "sd": 0.344427
+   },
+   "binary": true
+  },
+  {
+   "name": "market_world",
+   "normalized": "market_world",
+   "dtype": "int64",
+   "n_missing": 0,
+   "n_unique": 2,
+   "stats": {
+    "min": 0.0,
+    "p25": 1.0,
+    "median": 1.0,
+    "p75": 1.0,
+    "max": 1.0,
+    "mean": 0.86261,
+    "sd": 0.344427
+   },
+   "binary": true
+  },
+  {
+   "name": "market_bull",
+   "normalized": "market_bull",
+   "dtype": "int64",
+   "n_missing": 0,
+   "n_unique": 2,
+   "stats": {
+    "min": 0.0,
+    "p25": 0.0,
+    "median": 0.0,
+    "p75": 0.0,
+    "max": 1.0,
+    "mean": 0.038273,
+    "sd": 0.191948
+   },
+   "binary": true
+  },
+  {
+   "name": "market_bear",
+   "normalized": "market_bear",
+   "dtype": "int64",
+   "n_missing": 0,
+   "n_unique": 2,
+   "stats": {
+    "min": 0.0,
+    "p25": 0.0,
+    "median": 0.0,
+    "p75": 0.0,
+    "max": 1.0,
+    "mean": 0.038273,
+    "sd": 0.191948
+   },
+   "binary": true
+  },
+  {
+   "name": "strategy_all",
+   "normalized": "strategy_all",
+   "dtype": "int64",
+   "n_missing": 0,
+   "n_unique": 2,
+   "stats": {
+    "min": 0.0,
+    "p25": 0.0,
+    "median": 0.0,
+    "p75": 0.0,
+    "max": 1.0,
+    "mean": 0.238469,
+    "sd": 0.426357
+   },
+   "binary": true
+  },
+  {
+   "name": "strategy_equity",
+   "normalized": "strategy_equity",
+   "dtype": "int64",
+   "n_missing": 0,
+   "n_unique": 2,
+   "stats": {
+    "min": 0.0,
+    "p25": 0.0,
+    "median": 0.0,
+    "p75": 0.0,
+    "max": 1.0,
+    "mean": 0.22473,
+    "sd": 0.417609
+   },
+   "binary": true
+  },
+  {
+   "name": "strategy_events",
+   "normalized": "strategy_events",
+   "dtype": "int64",
+   "n_missing": 0,
+   "n_unique": 2,
+   "stats": {
+    "min": 0.0,
+    "p25": 0.0,
+    "median": 0.0,
+    "p75": 0.0,
+    "max": 1.0,
+    "mean": 0.110893,
+    "sd": 0.314154
+   },
+   "binary": true
+  },
+  {
+   "name": "strategy_relative_value",
+   "normalized": "strategy_relative_value",
+   "dtype": "int64",
+   "n_missing": 0,
+   "n_unique": 2,
+   "stats": {
+    "min": 0.0,
+    "p25": 0.0,
+    "median": 0.0,
+    "p75": 0.0,
+    "max": 1.0,
+    "mean": 0.092247,
+    "sd": 0.289517
+   },
+   "binary": true
+  },
+  {
+   "name": "strategy_global",
+   "normalized": "strategy_global",
+   "dtype": "int64",
+   "n_missing": 0,
+   "n_unique": 2,
+   "stats": {
+    "min": 0.0,
+    "p25": 0.0,
+    "median": 0.0,
+    "p75": 0.0,
+    "max": 1.0,
+    "mean": 0.153091,
+    "sd": 0.360252
+   },
+   "binary": true
+  },
+  {
+   "name": "strategy_fund_of_funds",
+   "normalized": "strategy_fund_of_funds",
+   "dtype": "int64",
+   "n_missing": 0,
+   "n_unique": 2,
+   "stats": {
+    "min": 0.0,
+    "p25": 0.0,
+    "median": 0.0,
+    "p75": 0.0,
+    "max": 1.0,
+    "mean": 0.065751,
+    "sd": 0.247968
+   },
+   "binary": true
+  },
+  {
+   "name": "strategy_multi",
+   "normalized": "strategy_multi",
+   "dtype": "int64",
+   "n_missing": 0,
+   "n_unique": 2,
+   "stats": {
+    "min": 0.0,
+    "p25": 0.0,
+    "median": 0.0,
+    "p75": 0.0,
+    "max": 1.0,
+    "mean": 0.039254,
+    "sd": 0.194294
+   },
+   "binary": true
+  },
+  {
+   "name": "strategy_other",
+   "normalized": "strategy_other",
+   "dtype": "int64",
+   "n_missing": 0,
+   "n_unique": 2,
+   "stats": {
+    "min": 0.0,
+    "p25": 0.0,
+    "median": 0.0,
+    "p75": 0.0,
+    "max": 1.0,
+    "mean": 0.075564,
+    "sd": 0.264429
+   },
+   "binary": true
+  },
+  {
+   "name": "method_iv",
+   "normalized": "method_iv",
+   "dtype": "int64",
+   "n_missing": 0,
+   "n_unique": 2,
+   "stats": {
+    "min": 0.0,
+    "p25": 0.0,
+    "median": 0.0,
+    "p75": 0.0,
+    "max": 1.0,
+    "mean": 0.045142,
+    "sd": 0.207718
+   },
+   "binary": true
+  },
+  {
+   "name": "model_1factor",
+   "normalized": "model_1factor",
+   "dtype": "int64",
+   "n_missing": 0,
+   "n_unique": 2,
+   "stats": {
+    "min": 0.0,
+    "p25": 0.0,
+    "median": 0.0,
+    "p75": 0.0,
+    "max": 1.0,
+    "mean": 0.163886,
+    "sd": 0.370354
+   },
+   "binary": true
+  },
+  {
+   "name": "model_3factor",
+   "normalized": "model_3factor",
+   "dtype": "int64",
+   "n_missing": 0,
+   "n_unique": 2,
+   "stats": {
+    "min": 0.0,
+    "p25": 0.0,
+    "median": 0.0,
+    "p75": 0.0,
+    "max": 1.0,
+    "mean": 0.069676,
+    "sd": 0.254725
+   },
+   "binary": true
+  },
+  {
+   "name": "model_4factor",
+   "normalized": "model_4factor",
+   "dtype": "int64",
+   "n_missing": 0,
+   "n_unique": 2,
+   "stats": {
+    "min": 0.0,
+    "p25": 0.0,
+    "median": 0.0,
+    "p75": 0.0,
+    "max": 1.0,
+    "mean": 0.201178,
+    "sd": 0.401077
+   },
+   "binary": true
+  },
+  {
+   "name": "model_7factor",
+   "normalized": "model_7factor",
+   "dtype": "int64",
+   "n_missing": 0,
+   "n_unique": 2,
+   "stats": {
+    "min": 0.0,
+    "p25": 0.0,
+    "median": 0.0,
+    "p75": 1.0,
+    "max": 1.0,
+    "mean": 0.292444,
+    "sd": 0.455108
+   },
+   "binary": true
+  },
+  {
+   "name": "model_uncertainty",
+   "normalized": "model_uncertainty",
+   "dtype": "int64",
+   "n_missing": 0,
+   "n_unique": 2,
+   "stats": {
+    "min": 0.0,
+    "p25": 0.0,
+    "median": 0.0,
+    "p75": 0.0,
+    "max": 1.0,
+    "mean": 0.139352,
+    "sd": 0.346484
+   },
+   "binary": true
+  },
+  {
+   "name": "model_asset_based",
+   "normalized": "model_asset_based",
+   "dtype": "int64",
+   "n_missing": 0,
+   "n_unique": 2,
+   "stats": {
+    "min": 0.0,
+    "p25": 0.0,
+    "median": 0.0,
+    "p75": 0.0,
+    "max": 1.0,
+    "mean": 0.078508,
+    "sd": 0.269102
+   },
+   "binary": true
+  },
+  {
+   "name": "model_other",
+   "normalized": "model_other",
+   "dtype": "int64",
+   "n_missing": 0,
+   "n_unique": 2,
+   "stats": {
+    "min": 0.0,
+    "p25": 0.0,
+    "median": 0.0,
+    "p75": 0.0,
+    "max": 1.0,
+    "mean": 0.054956,
+    "sd": 0.228006
+   },
+   "binary": true
+  },
+  {
+   "name": "survivorship_treated",
+   "normalized": "survivorship_treated",
+   "dtype": "int64",
+   "n_missing": 0,
+   "n_unique": 2,
+   "stats": {
+    "min": 0.0,
+    "p25": 0.0,
+    "median": 1.0,
+    "p75": 1.0,
+    "max": 1.0,
+    "mean": 0.576055,
+    "sd": 0.494424
+   },
+   "binary": true
+  },
+  {
+   "name": "backfilling_treated",
+   "normalized": "backfilling_treated",
+   "dtype": "int64",
+   "n_missing": 0,
+   "n_unique": 2,
+   "stats": {
+    "min": 0.0,
+    "p25": 0.0,
+    "median": 0.0,
+    "p75": 1.0,
+    "max": 1.0,
+    "mean": 0.301276,
+    "sd": 0.459038
+   },
+   "binary": true
+  },
+  {
+   "name": "publication_year",
+   "normalized": "publication_year",
+   "dtype": "float64",
+   "n_missing": 0,
+   "n_unique": 20,
+   "role": "pub_year",
+   "stats": {
+    "min": 0.0,
+    "p25": 1.94591,
+    "median": 2.484907,
+    "p75": 2.833213,
+    "max": 3.044522,
+    "mean": 2.25983,
+    "sd": 0.712788
+   }
+  },
+  {
+   "name": "citations",
+   "normalized": "citations",
+   "dtype": "float64",
+   "n_missing": 0,
+   "n_unique": 68,
+   "stats": {
+    "min": 0.0,
+    "p25": 0.780159,
+    "median": 1.403994,
+    "p75": 2.772589,
+    "max": 4.150165,
+    "mean": 1.748497,
+    "sd": 1.041141
+   }
+  },
+  {
+   "name": "impact_factor",
+   "normalized": "impact_factor",
+   "dtype": "float64",
+   "n_missing": 0,
+   "n_unique": 31,
+   "stats": {
+    "min": 0.001,
+    "p25": 0.724,
+    "median": 0.767,
+    "p75": 4.933,
+    "max": 18.151,
+    "mean": 3.649591,
+    "sd": 5.081052
+   }
+  },
+  {
+   "name": "top3",
+   "normalized": "top3",
+   "dtype": "int64",
+   "n_missing": 0,
+   "n_unique": 2,
+   "stats": {
+    "min": 0.0,
+    "p25": 0.0,
+    "median": 0.0,
+    "p75": 0.0,
+    "max": 1.0,
+    "mean": 0.213935,
+    "sd": 0.410283
+   },
+   "binary": true
+  },
+  {
+   "name": "top5",
+   "normalized": "top5",
+   "dtype": "int64",
+   "n_missing": 0,
+   "n_unique": 2,
+   "stats": {
+    "min": 0.0,
+    "p25": 0.0,
+    "median": 0.0,
+    "p75": 1.0,
+    "max": 1.0,
+    "mean": 0.251227,
+    "sd": 0.433932
+   },
+   "binary": true
+  },
+  {
+   "name": "reference",
+   "normalized": "reference",
+   "dtype": "str",
+   "n_missing": 0,
+   "n_unique": 74,
+   "top_values": [
+    "Agarwal, V., Arisoy, Y.E. & N.Y. Naik (2017): Volatility of aggregate volatility and hedge fund returns. Journal of Financial Economics 125(3): 491-510.",
+    "Racicot, F.-E. & R. Theoret (2009): Integrating volatility factors in the analysis of the hedge fund alpha puzzle. Journal of Asset Management 10: 37\u201362.",
+    "Buraschi, A., Kosowski, R. & F. Trojani (2014): When There Is No Place to Hide: Correlation Risk and the Cross-Section of Hedge Fund Returns. The Review of Financial Studies 27(2): 581\u2013616.",
+    "Ranaldo, A. & L. Favre (2005): Hedge Fund Performance and Higher-Moment Market Models. The Journal of Alternative Investments 8(3): 37-51.",
+    "Gupta, B., Cerrahoglu, B. & A. Daglioglu (2003): Evaluating Hedge Fund Performance: Traditional Versus Conditional Approaches. The Journal of Alternative Investments 6(3): 7-24."
+   ]
+  },
+  {
+   "name": "alpha_m",
+   "normalized": "alpha_m",
+   "dtype": "float64",
+   "n_missing": 222,
+   "n_unique": 449,
+   "stats": {
+    "min": -3.64,
+    "p25": 0.14,
+    "median": 0.38,
+    "p75": 0.62,
+    "max": 5.1134,
+    "mean": 0.398226,
+    "sd": 0.574543
+   }
+  },
+  {
+   "name": "alpha_y",
+   "normalized": "alpha_y",
+   "dtype": "float64",
+   "n_missing": 803,
+   "n_unique": 204,
+   "stats": {
+    "min": -16.2,
+    "p25": 1.3995,
+    "median": 3.41,
+    "p75": 5.105,
+    "max": 15.24,
+    "mean": 2.999685,
+    "sd": 4.05927
+   }
+  },
+  {
+   "name": "alpha_q",
+   "normalized": "alpha_q",
+   "dtype": "float64",
+   "n_missing": 1013,
+   "n_unique": 6,
+   "stats": {
+    "min": 0.26,
+    "p25": 0.4125,
+    "median": 0.585,
+    "p75": 0.8325,
+    "max": 1.2,
+    "mean": 0.65,
+    "sd": 0.349399
+   }
+  },
+  {
+   "name": "t_stat",
+   "normalized": "t_stat",
+   "dtype": "float64",
+   "n_missing": 370,
+   "n_unique": 489,
+   "role": "t_stat",
+   "stats": {
+    "min": -2.83,
+    "p25": 0.93,
+    "median": 2.21,
+    "p75": 3.97,
+    "max": 826.74,
+    "mean": 4.430267,
+    "sd": 32.756019
+   }
+  },
+  {
+   "name": "t_hetero_std",
+   "normalized": "t_hetero_std",
+   "dtype": "float64",
+   "n_missing": 903,
+   "n_unique": 108,
+   "stats": {
+    "min": -2.994,
+    "p25": 0.6995,
+    "median": 2.09,
+    "p75": 3.4775,
+    "max": 7.54,
+    "mean": 2.235822,
+    "sd": 2.265218
+   }
+  },
+  {
+   "name": "aux_ts_all",
+   "normalized": "aux_ts_all",
+   "dtype": "float64",
+   "n_missing": 899,
+   "n_unique": 101,
+   "stats": {
+    "min": -2.380842,
+    "p25": -0.145626,
+    "median": 1.098147,
+    "p75": 2.525093,
+    "max": 3.530077,
+    "mean": 1.095702,
+    "sd": 1.486183
+   }
+  },
+  {
+   "name": "se_monthly",
+   "normalized": "se_monthly",
+   "dtype": "float64",
+   "n_missing": 877,
+   "n_unique": 103,
+   "stats": {
+    "min": 0.033333,
+    "p25": 0.116208,
+    "median": 0.1685,
+    "p75": 0.25,
+    "max": 3.74,
+    "mean": 0.273277,
+    "sd": 0.461498
+   }
+  },
+  {
+   "name": "starty",
+   "normalized": "starty",
+   "dtype": "int64",
+   "n_missing": 0,
+   "n_unique": 22,
+   "stats": {
+    "min": 1970.0,
+    "p25": 1994.0,
+    "median": 1995.0,
+    "p75": 2000.0,
+    "max": 2012.0,
+    "mean": 1996.435721,
+    "sd": 5.326707
+   }
+  },
+  {
+   "name": "endy",
+   "normalized": "endy",
+   "dtype": "int64",
+   "n_missing": 0,
+   "n_unique": 24,
+   "stats": {
+    "min": 1990.0,
+    "p25": 2002.0,
+    "median": 2005.0,
+    "p75": 2011.0,
+    "max": 2019.0,
+    "mean": 2005.783121,
+    "sd": 6.483246
+   }
+  },
+  {
+   "name": "n_obs_tot",
+   "normalized": "n_obs_tot",
+   "dtype": "float64",
+   "n_missing": 892,
+   "n_unique": 33,
+   "stats": {
+    "min": 18.0,
+    "p25": 108.0,
+    "median": 212.0,
+    "p75": 254.0,
+    "max": 420432.0,
+    "mean": 6828.905512,
+    "sd": 41121.145066
+   }
+  },
+  {
+   "name": "n_time_series",
+   "normalized": "n_time_series",
+   "dtype": "float64",
+   "n_missing": 105,
+   "n_unique": 84,
+   "stats": {
+    "min": 18.0,
+    "p25": 58.0,
+    "median": 120.0,
+    "p75": 182.0,
+    "max": 475.0,
+    "mean": 124.881127,
+    "sd": 72.002359
+   }
+  },
+  {
+   "name": "n_cross_section",
+   "normalized": "n_cross_section",
+   "dtype": "float64",
+   "n_missing": 57,
+   "n_unique": 61,
+   "stats": {
+    "min": 1.0,
+    "p25": 1.0,
+    "median": 1.0,
+    "p75": 1.0,
+    "max": 14194.0,
+    "mean": 210.518493,
+    "sd": 1299.801498
+   }
+  },
+  {
+   "name": "depvar_index",
+   "normalized": "depvar_index",
+   "dtype": "int64",
+   "n_missing": 0,
+   "n_unique": 2,
+   "stats": {
+    "min": 0.0,
+    "p25": 0.0,
+    "median": 1.0,
+    "p75": 1.0,
+    "max": 1.0,
+    "mean": 0.527969,
+    "sd": 0.499462
+   },
+   "binary": true
+  },
+  {
+   "name": "depvar_portfolio",
+   "normalized": "depvar_portfolio",
+   "dtype": "int64",
+   "n_missing": 0,
+   "n_unique": 2,
+   "stats": {
+    "min": 0.0,
+    "p25": 0.0,
+    "median": 0.0,
+    "p75": 1.0,
+    "max": 1.0,
+    "mean": 0.300294,
+    "sd": 0.458611
+   },
+   "binary": true
+  },
+  {
+   "name": "market_development",
+   "normalized": "market_development",
+   "dtype": "str",
+   "n_missing": 0,
+   "n_unique": 3,
+   "top_values": [
+    "world market",
+    "developed market",
+    "developing market"
+   ]
+  },
+  {
+   "name": "fund_old",
+   "normalized": "fund_old",
+   "dtype": "int64",
+   "n_missing": 0,
+   "n_unique": 2,
+   "stats": {
+    "min": 0.0,
+    "p25": 0.0,
+    "median": 0.0,
+    "p75": 0.0,
+    "max": 1.0,
+    "mean": 0.003925,
+    "sd": 0.062561
+   },
+   "binary": true
+  },
+  {
+   "name": "fund_young",
+   "normalized": "fund_young",
+   "dtype": "int64",
+   "n_missing": 0,
+   "n_unique": 2,
+   "stats": {
+    "min": 0.0,
+    "p25": 0.0,
+    "median": 0.0,
+    "p75": 0.0,
+    "max": 1.0,
+    "mean": 0.003925,
+    "sd": 0.062561
+   },
+   "binary": true
+  },
+  {
+   "name": "fund_small",
+   "normalized": "fund_small",
+   "dtype": "int64",
+   "n_missing": 0,
+   "n_unique": 2,
+   "stats": {
+    "min": 0.0,
+    "p25": 0.0,
+    "median": 0.0,
+    "p75": 0.0,
+    "max": 1.0,
+    "mean": 0.005888,
+    "sd": 0.076545
+   },
+   "binary": true
+  },
+  {
+   "name": "fund_large",
+   "normalized": "fund_large",
+   "dtype": "int64",
+   "n_missing": 0,
+   "n_unique": 2,
+   "stats": {
+    "min": 0.0,
+    "p25": 0.0,
+    "median": 0.0,
+    "p75": 0.0,
+    "max": 1.0,
+    "mean": 0.010795,
+    "sd": 0.103387
+   },
+   "binary": true
+  },
+  {
+   "name": "lockup_restriction",
+   "normalized": "lockup_restriction",
+   "dtype": "int64",
+   "n_missing": 0,
+   "n_unique": 2,
+   "stats": {
+    "min": 0.0,
+    "p25": 0.0,
+    "median": 0.0,
+    "p75": 0.0,
+    "max": 1.0,
+    "mean": 0.01472,
+    "sd": 0.12049
+   },
+   "binary": true
+  },
+  {
+   "name": "country.1",
+   "normalized": "country_1",
+   "dtype": "str",
+   "n_missing": 0,
+   "n_unique": 12,
+   "top_values": [
+    "i_region_all",
+    "i_na",
+    "i_canada",
+    "i_au",
+    "i_us"
+   ]
+  },
+  {
+   "name": "market_recession",
+   "normalized": "market_recession",
+   "dtype": "int64",
+   "n_missing": 0,
+   "n_unique": 2,
+   "stats": {
+    "min": 0.0,
+    "p25": 0.0,
+    "median": 0.0,
+    "p75": 0.0,
+    "max": 1.0,
+    "mean": 0.015702,
+    "sd": 0.12438
+   },
+   "binary": true
+  },
+  {
+   "name": "market_growth",
+   "normalized": "market_growth",
+   "dtype": "int64",
+   "n_missing": 0,
+   "n_unique": 2,
+   "stats": {
+    "min": 0.0,
+    "p25": 0.0,
+    "median": 0.0,
+    "p75": 0.0,
+    "max": 1.0,
+    "mean": 0.015702,
+    "sd": 0.12438
+   },
+   "binary": true
+  },
+  {
+   "name": "alpha_monthly",
+   "normalized": "alpha_monthly",
+   "dtype": "int64",
+   "n_missing": 0,
+   "n_unique": 2,
+   "stats": {
+    "min": 0.0,
+    "p25": 1.0,
+    "median": 1.0,
+    "p75": 1.0,
+    "max": 1.0,
+    "mean": 0.782139,
+    "sd": 0.412995
+   },
+   "binary": true
+  },
+  {
+   "name": "data_monthly",
+   "normalized": "data_monthly",
+   "dtype": "int64",
+   "n_missing": 0,
+   "n_unique": 2,
+   "stats": {
+    "min": 0.0,
+    "p25": 1.0,
+    "median": 1.0,
+    "p75": 1.0,
+    "max": 1.0,
+    "mean": 0.98528,
+    "sd": 0.12049
+   },
+   "binary": true
+  },
+  {
+   "name": "method_ols",
+   "normalized": "method_ols",
+   "dtype": "int64",
+   "n_missing": 0,
+   "n_unique": 2,
+   "stats": {
+    "min": 0.0,
+    "p25": 1.0,
+    "median": 1.0,
+    "p75": 1.0,
+    "max": 1.0,
+    "mean": 0.911678,
+    "sd": 0.283902
+   },
+   "binary": true
+  },
+  {
+   "name": "method_gmm",
+   "normalized": "method_gmm",
+   "dtype": "int64",
+   "n_missing": 0,
+   "n_unique": 2,
+   "stats": {
+    "min": 0.0,
+    "p25": 0.0,
+    "median": 0.0,
+    "p75": 0.0,
+    "max": 1.0,
+    "mean": 0.037291,
+    "sd": 0.189568
+   },
+   "binary": true
+  },
+  {
+   "name": "method_other",
+   "normalized": "method_other",
+   "dtype": "int64",
+   "n_missing": 0,
+   "n_unique": 2,
+   "stats": {
+    "min": 0.0,
+    "p25": 0.0,
+    "median": 0.0,
+    "p75": 0.0,
+    "max": 1.0,
+    "mean": 0.05103,
+    "sd": 0.220168
+   },
+   "binary": true
+  }
+ ]
+}

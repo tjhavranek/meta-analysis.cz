@@ -1,0 +1,844 @@
+{
+ "project": "skill",
+ "source_file": "skill.dta",
+ "source_archive": null,
+ "source_sheet": null,
+ "n_rows": 1097,
+ "n_columns": 50,
+ "columns": [
+  {
+   "name": "idstudy",
+   "normalized": "idstudy",
+   "dtype": "int8",
+   "n_missing": 0,
+   "n_unique": 99,
+   "role": "study_id",
+   "stats": {
+    "min": 1.0,
+    "p25": 22.0,
+    "median": 66.0,
+    "p75": 79.0,
+    "max": 99.0,
+    "mean": 54.402917,
+    "sd": 30.870667
+   }
+  },
+  {
+   "name": "idcountry",
+   "normalized": "idcountry",
+   "dtype": "int8",
+   "n_missing": 0,
+   "n_unique": 29,
+   "role": "country",
+   "stats": {
+    "min": 1.0,
+    "p25": 15.0,
+    "median": 26.0,
+    "p75": 27.0,
+    "max": 29.0,
+    "mean": 20.144029,
+    "sd": 9.146379
+   }
+  },
+  {
+   "name": "author",
+   "normalized": "author",
+   "dtype": "str",
+   "n_missing": 0,
+   "n_unique": 99,
+   "top_values": [
+    "Reshef (2007)",
+    "Kiyota & Kurokawa (2019)",
+    "Ciccone & Peri (2005)",
+    "Jerzmanowski & Tamura (2020)",
+    "Blankenau & Cassou (2011)"
+   ]
+  },
+  {
+   "name": "elasticity",
+   "normalized": "elasticity",
+   "dtype": "float64",
+   "n_missing": 0,
+   "n_unique": 805,
+   "role": "effect_estimate",
+   "stats": {
+    "min": -436.85,
+    "p25": 0.66,
+    "median": 1.406,
+    "p75": 2.352941,
+    "max": 1000.0,
+    "mean": 3.806548,
+    "sd": 39.466837
+   }
+  },
+  {
+   "name": "se",
+   "normalized": "se",
+   "dtype": "float64",
+   "n_missing": 132,
+   "n_unique": 860,
+   "role": "standard_error",
+   "stats": {
+    "min": 0.0173,
+    "p25": 0.213508,
+    "median": 0.41,
+    "p75": 0.865672,
+    "max": 111000.0,
+    "mean": 213.452573,
+    "sd": 4010.996191
+   }
+  },
+  {
+   "name": "precision",
+   "normalized": "precision",
+   "dtype": "float64",
+   "n_missing": 132,
+   "n_unique": 858,
+   "stats": {
+    "min": 9e-06,
+    "p25": 1.155172,
+    "median": 2.439024,
+    "p75": 4.683673,
+    "max": 57.803468,
+    "mean": 4.429902,
+    "sd": 6.542472
+   }
+  },
+  {
+   "name": "tstat",
+   "normalized": "tstat",
+   "dtype": "float64",
+   "n_missing": 132,
+   "n_unique": 874,
+   "role": "t_stat",
+   "stats": {
+    "min": -18.5,
+    "p25": 1.49434,
+    "median": 2.733333,
+    "p75": 5.165,
+    "max": 33.806667,
+    "mean": 3.994501,
+    "sd": 5.353634
+   }
+  },
+  {
+   "name": "weight",
+   "normalized": "weight",
+   "dtype": "float64",
+   "n_missing": 0,
+   "n_unique": 28,
+   "stats": {
+    "min": 0.005435,
+    "p25": 0.015152,
+    "median": 0.034483,
+    "p75": 0.1,
+    "max": 1.0,
+    "mean": 0.090246,
+    "sd": 0.152614
+   }
+  },
+  {
+   "name": "instrument_se",
+   "normalized": "instrument_se",
+   "dtype": "float64",
+   "n_missing": 788,
+   "n_unique": 283,
+   "stats": {
+    "min": 0.61086,
+    "p25": 16.22981,
+    "median": 51.7204,
+    "p75": 128.2871,
+    "max": 1129.714,
+    "mean": 111.867641,
+    "sd": 171.517471
+   }
+  },
+  {
+   "name": "instrument_sec",
+   "normalized": "instrument_sec",
+   "dtype": "float64",
+   "n_missing": 592,
+   "n_unique": 450,
+   "stats": {
+    "min": 6.922811,
+    "p25": 53.55919,
+    "median": 84.51543,
+    "p75": 221.6715,
+    "max": 4051.468,
+    "mean": 205.822073,
+    "sd": 317.830372
+   }
+  },
+  {
+   "name": "inverted_estimate",
+   "normalized": "inverted_estimate",
+   "dtype": "int8",
+   "n_missing": 0,
+   "n_unique": 2,
+   "stats": {
+    "min": 0.0,
+    "p25": 0.0,
+    "median": 1.0,
+    "p75": 1.0,
+    "max": 1.0,
+    "mean": 0.622607,
+    "sd": 0.484956
+   },
+   "binary": true
+  },
+  {
+   "name": "direct_estimate",
+   "normalized": "direct_estimate",
+   "dtype": "int8",
+   "n_missing": 0,
+   "n_unique": 2,
+   "stats": {
+    "min": 0.0,
+    "p25": 0.0,
+    "median": 0.0,
+    "p75": 1.0,
+    "max": 1.0,
+    "mean": 0.377393,
+    "sd": 0.484956
+   },
+   "binary": true
+  },
+  {
+   "name": "higher_frequency",
+   "normalized": "higher_frequency",
+   "dtype": "int8",
+   "n_missing": 0,
+   "n_unique": 2,
+   "stats": {
+    "min": 0.0,
+    "p25": 0.0,
+    "median": 0.0,
+    "p75": 0.0,
+    "max": 1.0,
+    "mean": 0.06381,
+    "sd": 0.244526
+   },
+   "binary": true
+  },
+  {
+   "name": "annual_frequency",
+   "normalized": "annual_frequency",
+   "dtype": "int8",
+   "n_missing": 0,
+   "n_unique": 2,
+   "stats": {
+    "min": 0.0,
+    "p25": 1.0,
+    "median": 1.0,
+    "p75": 1.0,
+    "max": 1.0,
+    "mean": 0.835005,
+    "sd": 0.371346
+   },
+   "binary": true
+  },
+  {
+   "name": "lower_frequency",
+   "normalized": "lower_frequency",
+   "dtype": "int8",
+   "n_missing": 0,
+   "n_unique": 2,
+   "stats": {
+    "min": 0.0,
+    "p25": 0.0,
+    "median": 0.0,
+    "p75": 0.0,
+    "max": 1.0,
+    "mean": 0.101185,
+    "sd": 0.301711
+   },
+   "binary": true
+  },
+  {
+   "name": "micro_data",
+   "normalized": "micro_data",
+   "dtype": "int8",
+   "n_missing": 0,
+   "n_unique": 2,
+   "stats": {
+    "min": 0.0,
+    "p25": 0.0,
+    "median": 0.0,
+    "p75": 0.0,
+    "max": 1.0,
+    "mean": 0.208751,
+    "sd": 0.406602
+   },
+   "binary": true
+  },
+  {
+   "name": "sectoral_data",
+   "normalized": "sectoral_data",
+   "dtype": "int8",
+   "n_missing": 0,
+   "n_unique": 2,
+   "stats": {
+    "min": 0.0,
+    "p25": 0.0,
+    "median": 0.0,
+    "p75": 1.0,
+    "max": 1.0,
+    "mean": 0.372835,
+    "sd": 0.483779
+   },
+   "binary": true
+  },
+  {
+   "name": "aggregated_data",
+   "normalized": "aggregated_data",
+   "dtype": "int8",
+   "n_missing": 0,
+   "n_unique": 2,
+   "stats": {
+    "min": 0.0,
+    "p25": 0.0,
+    "median": 0.0,
+    "p75": 1.0,
+    "max": 1.0,
+    "mean": 0.418414,
+    "sd": 0.493524
+   },
+   "binary": true
+  },
+  {
+   "name": "country_estimate",
+   "normalized": "country_estimate",
+   "dtype": "int8",
+   "n_missing": 0,
+   "n_unique": 2,
+   "stats": {
+    "min": 0.0,
+    "p25": 1.0,
+    "median": 1.0,
+    "p75": 1.0,
+    "max": 1.0,
+    "mean": 0.889699,
+    "sd": 0.313407
+   },
+   "binary": true
+  },
+  {
+   "name": "region_estimate",
+   "normalized": "region_estimate",
+   "dtype": "int8",
+   "n_missing": 0,
+   "n_unique": 2,
+   "stats": {
+    "min": 0.0,
+    "p25": 0.0,
+    "median": 0.0,
+    "p75": 0.0,
+    "max": 1.0,
+    "mean": 0.104831,
+    "sd": 0.306476
+   },
+   "binary": true
+  },
+  {
+   "name": "cross_section",
+   "normalized": "cross_section",
+   "dtype": "int8",
+   "n_missing": 0,
+   "n_unique": 2,
+   "stats": {
+    "min": 0.0,
+    "p25": 0.0,
+    "median": 0.0,
+    "p75": 0.0,
+    "max": 1.0,
+    "mean": 0.157703,
+    "sd": 0.364628
+   },
+   "binary": true
+  },
+  {
+   "name": "data_midyear",
+   "normalized": "data_midyear",
+   "dtype": "float64",
+   "n_missing": 0,
+   "n_unique": 59,
+   "stats": {
+    "min": 0.0,
+    "p25": 3.912023,
+    "median": 4.077537,
+    "p75": 4.174387,
+    "max": 4.406719,
+    "mean": 4.019036,
+    "sd": 0.31486
+   }
+  },
+  {
+   "name": "united_states",
+   "normalized": "united_states",
+   "dtype": "int8",
+   "n_missing": 0,
+   "n_unique": 2,
+   "stats": {
+    "min": 0.0,
+    "p25": 0.0,
+    "median": 0.0,
+    "p75": 1.0,
+    "max": 1.0,
+    "mean": 0.393801,
+    "sd": 0.488815
+   },
+   "binary": true
+  },
+  {
+   "name": "europe",
+   "normalized": "europe",
+   "dtype": "int8",
+   "n_missing": 0,
+   "n_unique": 2,
+   "stats": {
+    "min": 0.0,
+    "p25": 0.0,
+    "median": 0.0,
+    "p75": 0.0,
+    "max": 1.0,
+    "mean": 0.164995,
+    "sd": 0.371346
+   },
+   "binary": true
+  },
+  {
+   "name": "developed_country",
+   "normalized": "developed_country",
+   "dtype": "int8",
+   "n_missing": 0,
+   "n_unique": 2,
+   "stats": {
+    "min": 0.0,
+    "p25": 0.0,
+    "median": 1.0,
+    "p75": 1.0,
+    "max": 1.0,
+    "mean": 0.610757,
+    "sd": 0.487801
+   },
+   "binary": true
+  },
+  {
+   "name": "developing_country",
+   "normalized": "developing_country",
+   "dtype": "int8",
+   "n_missing": 0,
+   "n_unique": 2,
+   "stats": {
+    "min": 0.0,
+    "p25": 0.0,
+    "median": 0.0,
+    "p75": 1.0,
+    "max": 1.0,
+    "mean": 0.285324,
+    "sd": 0.451774
+   },
+   "binary": true
+  },
+  {
+   "name": "manufacturing_sector",
+   "normalized": "manufacturing_sector",
+   "dtype": "int8",
+   "n_missing": 0,
+   "n_unique": 2,
+   "stats": {
+    "min": 0.0,
+    "p25": 0.0,
+    "median": 0.0,
+    "p75": 1.0,
+    "max": 1.0,
+    "mean": 0.34093,
+    "sd": 0.474238
+   },
+   "binary": true
+  },
+  {
+   "name": "onelevel_ces_function",
+   "normalized": "onelevel_ces_function",
+   "dtype": "int8",
+   "n_missing": 0,
+   "n_unique": 2,
+   "stats": {
+    "min": 0.0,
+    "p25": 0.0,
+    "median": 0.0,
+    "p75": 1.0,
+    "max": 1.0,
+    "mean": 0.402917,
+    "sd": 0.490708
+   },
+   "binary": true
+  },
+  {
+   "name": "multilevel_ces_function",
+   "normalized": "multilevel_ces_function",
+   "dtype": "int8",
+   "n_missing": 0,
+   "n_unique": 2,
+   "stats": {
+    "min": 0.0,
+    "p25": 0.0,
+    "median": 0.0,
+    "p75": 1.0,
+    "max": 1.0,
+    "mean": 0.42753,
+    "sd": 0.494946
+   },
+   "binary": true
+  },
+  {
+   "name": "other_function",
+   "normalized": "other_function",
+   "dtype": "int8",
+   "n_missing": 0,
+   "n_unique": 2,
+   "stats": {
+    "min": 0.0,
+    "p25": 0.0,
+    "median": 0.0,
+    "p75": 0.0,
+    "max": 1.0,
+    "mean": 0.169553,
+    "sd": 0.375411
+   },
+   "binary": true
+  },
+  {
+   "name": "time_control",
+   "normalized": "time_control",
+   "dtype": "int8",
+   "n_missing": 0,
+   "n_unique": 2,
+   "stats": {
+    "min": 0.0,
+    "p25": 0.0,
+    "median": 1.0,
+    "p75": 1.0,
+    "max": 1.0,
+    "mean": 0.548769,
+    "sd": 0.497843
+   },
+   "binary": true
+  },
+  {
+   "name": "location_control",
+   "normalized": "location_control",
+   "dtype": "int8",
+   "n_missing": 0,
+   "n_unique": 2,
+   "stats": {
+    "min": 0.0,
+    "p25": 0.0,
+    "median": 0.0,
+    "p75": 0.0,
+    "max": 1.0,
+    "mean": 0.122151,
+    "sd": 0.32761
+   },
+   "binary": true
+  },
+  {
+   "name": "macro_control",
+   "normalized": "macro_control",
+   "dtype": "int8",
+   "n_missing": 0,
+   "n_unique": 2,
+   "stats": {
+    "min": 0.0,
+    "p25": 0.0,
+    "median": 0.0,
+    "p75": 0.0,
+    "max": 1.0,
+    "mean": 0.080219,
+    "sd": 0.271755
+   },
+   "binary": true
+  },
+  {
+   "name": "age_control",
+   "normalized": "age_control",
+   "dtype": "int8",
+   "n_missing": 0,
+   "n_unique": 2,
+   "stats": {
+    "min": 0.0,
+    "p25": 0.0,
+    "median": 0.0,
+    "p75": 0.0,
+    "max": 1.0,
+    "mean": 0.061987,
+    "sd": 0.241242
+   },
+   "binary": true
+  },
+  {
+   "name": "capital_control",
+   "normalized": "capital_control",
+   "dtype": "int8",
+   "n_missing": 0,
+   "n_unique": 2,
+   "stats": {
+    "min": 0.0,
+    "p25": 0.0,
+    "median": 0.0,
+    "p75": 0.0,
+    "max": 1.0,
+    "mean": 0.212397,
+    "sd": 0.409191
+   },
+   "binary": true
+  },
+  {
+   "name": "dynamic_model",
+   "normalized": "dynamic_model",
+   "dtype": "int8",
+   "n_missing": 0,
+   "n_unique": 2,
+   "stats": {
+    "min": 0.0,
+    "p25": 0.0,
+    "median": 0.0,
+    "p75": 0.0,
+    "max": 1.0,
+    "mean": 0.127621,
+    "sd": 0.333819
+   },
+   "binary": true
+  },
+  {
+   "name": "unit_fixed_effects",
+   "normalized": "unit_fixed_effects",
+   "dtype": "int8",
+   "n_missing": 0,
+   "n_unique": 2,
+   "stats": {
+    "min": 0.0,
+    "p25": 0.0,
+    "median": 0.0,
+    "p75": 1.0,
+    "max": 1.0,
+    "mean": 0.497721,
+    "sd": 0.500223
+   },
+   "binary": true
+  },
+  {
+   "name": "time_fixed_effects",
+   "normalized": "time_fixed_effects",
+   "dtype": "int8",
+   "n_missing": 0,
+   "n_unique": 2,
+   "stats": {
+    "min": 0.0,
+    "p25": 0.0,
+    "median": 0.0,
+    "p75": 0.0,
+    "max": 1.0,
+    "mean": 0.149499,
+    "sd": 0.356742
+   },
+   "binary": true
+  },
+  {
+   "name": "ols_method2",
+   "normalized": "ols_method2",
+   "dtype": "int8",
+   "n_missing": 0,
+   "n_unique": 2,
+   "stats": {
+    "min": 0.0,
+    "p25": 0.0,
+    "median": 1.0,
+    "p75": 1.0,
+    "max": 1.0,
+    "mean": 0.648131,
+    "sd": 0.477771
+   },
+   "binary": true
+  },
+  {
+   "name": "iv_method2",
+   "normalized": "iv_method2",
+   "dtype": "int8",
+   "n_missing": 0,
+   "n_unique": 2,
+   "stats": {
+    "min": 0.0,
+    "p25": 0.0,
+    "median": 0.0,
+    "p75": 1.0,
+    "max": 1.0,
+    "mean": 0.295351,
+    "sd": 0.456408
+   },
+   "binary": true
+  },
+  {
+   "name": "natural_experiment",
+   "normalized": "natural_experiment",
+   "dtype": "int8",
+   "n_missing": 0,
+   "n_unique": 2,
+   "stats": {
+    "min": 0.0,
+    "p25": 0.0,
+    "median": 0.0,
+    "p75": 0.0,
+    "max": 1.0,
+    "mean": 0.036463,
+    "sd": 0.187525
+   },
+   "binary": true
+  },
+  {
+   "name": "impact_factor",
+   "normalized": "impact_factor",
+   "dtype": "float64",
+   "n_missing": 0,
+   "n_unique": 55,
+   "stats": {
+    "min": 0.0,
+    "p25": 0.0,
+    "median": 0.127,
+    "p75": 1.225,
+    "max": 5.16,
+    "mean": 0.75208,
+    "sd": 1.104871
+   }
+  },
+  {
+   "name": "citations",
+   "normalized": "citations",
+   "dtype": "float64",
+   "n_missing": 0,
+   "n_unique": 84,
+   "stats": {
+    "min": 0.0,
+    "p25": 0.405465,
+    "median": 0.916291,
+    "p75": 1.932838,
+    "max": 5.756691,
+    "mean": 1.383721,
+    "sd": 1.279107
+   }
+  },
+  {
+   "name": "published_study",
+   "normalized": "published_study",
+   "dtype": "int8",
+   "n_missing": 0,
+   "n_unique": 2,
+   "stats": {
+    "min": 0.0,
+    "p25": 0.0,
+    "median": 1.0,
+    "p75": 1.0,
+    "max": 1.0,
+    "mean": 0.59526,
+    "sd": 0.491066
+   },
+   "binary": true
+  },
+  {
+   "name": "top_journal",
+   "normalized": "top_journal",
+   "dtype": "int8",
+   "n_missing": 0,
+   "n_unique": 2,
+   "stats": {
+    "min": 0.0,
+    "p25": 0.0,
+    "median": 0.0,
+    "p75": 0.0,
+    "max": 1.0,
+    "mean": 0.206016,
+    "sd": 0.404627
+   },
+   "binary": true
+  },
+  {
+   "name": "publication_year",
+   "normalized": "publication_year",
+   "dtype": "float64",
+   "n_missing": 0,
+   "n_unique": 40,
+   "role": "pub_year",
+   "stats": {
+    "min": 0.0,
+    "p25": 3.583519,
+    "median": 3.637586,
+    "p75": 3.871201,
+    "max": 3.951244,
+    "mean": 3.512292,
+    "sd": 0.67251
+   }
+  },
+  {
+   "name": "midyear",
+   "normalized": "midyear",
+   "dtype": "float64",
+   "n_missing": 0,
+   "n_unique": 59,
+   "stats": {
+    "min": 1929.0,
+    "p25": 1978.0,
+    "median": 1987.0,
+    "p75": 1993.0,
+    "max": 2010.0,
+    "mean": 1985.510483,
+    "sd": 12.168586
+   }
+  },
+  {
+   "name": "pubyear",
+   "normalized": "pubyear",
+   "dtype": "int16",
+   "n_missing": 0,
+   "n_unique": 40,
+   "role": "pub_year",
+   "stats": {
+    "min": 1970.0,
+    "p25": 2005.0,
+    "median": 2007.0,
+    "p75": 2017.0,
+    "max": 2021.0,
+    "mean": 2007.085688,
+    "sd": 12.284639
+   }
+  },
+  {
+   "name": "country",
+   "normalized": "country",
+   "dtype": "str",
+   "n_missing": 0,
+   "n_unique": 29,
+   "role": "country",
+   "top_values": [
+    "United States",
+    "World",
+    "Chile",
+    "OECD",
+    "Brazil"
+   ]
+  },
+  {
+   "name": "reference",
+   "normalized": "reference",
+   "dtype": "str",
+   "n_missing": 0,
+   "n_unique": 99,
+   "top_values": [
+    "Reshef, A. (2007): Heckscher-Ohlin and the global increase of skill premia: Factor intensity reversals to the rescue. Working paper, New York University.",
+    "Kiyota, K. & Y. Kurokawa (2019): Intermediate Goods-Skill Complementarity. Keio-IES Discussion Paper Series 2019-013, Institute for Economics Studies, Keio University.",
+    "Ciccone, A. & G. Peri (2005): Long-run substitutability between more and less educated workers: Evidence from US states, 1950-1990. Review of Economics and Statistics 87(4): pp. 652-663.",
+    "Jerzmanowski, M., & R. Tamura (2020): Aggregate Elasticity of Substitution between Skills: Estimates from a Macroeconomic Approach. MPRA Paper 100768, University Library of Munich, Germany.",
+    "Blankenau, W. F. & S. P. Cassou (2011): Industry estimates of the elasticity of substitution and the rate of biased technological change between skilled and unskilled labour. Applied Economics 43(23): pp. 3129-3142."
+   ]
+  }
+ ]
+}

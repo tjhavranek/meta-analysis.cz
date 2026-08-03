@@ -1,0 +1,1079 @@
+{
+ "project": "esg",
+ "source_file": "esg_data.xlsx",
+ "source_archive": null,
+ "source_sheet": "Data",
+ "n_rows": 533,
+ "n_columns": 65,
+ "columns": [
+  {
+   "name": "id_study",
+   "normalized": "id_study",
+   "dtype": "int64",
+   "n_missing": 0,
+   "n_unique": 106,
+   "role": "study_id",
+   "stats": {
+    "min": 1.0,
+    "p25": 16.0,
+    "median": 40.0,
+    "p75": 71.0,
+    "max": 106.0,
+    "mean": 44.956848,
+    "sd": 32.618264
+   }
+  },
+  {
+   "name": "study",
+   "normalized": "study",
+   "dtype": "str",
+   "n_missing": 0,
+   "n_unique": 106,
+   "top_values": [
+    "Amorelli & Garc\u00eda-S\u00e1nchez (2023)",
+    "Alkhawaja et al. (2023)",
+    "Gerged et al. (2023)",
+    "Almaqtari et al. (2023)",
+    "Donkor et al. (2023)"
+   ]
+  },
+  {
+   "name": "id_estimate",
+   "normalized": "id_estimate",
+   "dtype": "int64",
+   "n_missing": 0,
+   "n_unique": 28,
+   "stats": {
+    "min": 1.0,
+    "p25": 2.0,
+    "median": 4.0,
+    "p75": 9.0,
+    "max": 28.0,
+    "mean": 6.262664,
+    "sd": 5.660048
+   }
+  },
+  {
+   "name": "estimate",
+   "normalized": "estimate",
+   "dtype": "float64",
+   "n_missing": 0,
+   "n_unique": 425,
+   "role": "effect_estimate",
+   "stats": {
+    "min": -2.7988,
+    "p25": 0.063,
+    "median": 0.17,
+    "p75": 0.334,
+    "max": 5.905,
+    "mean": 0.278653,
+    "sd": 0.46726
+   }
+  },
+  {
+   "name": "se_estimate",
+   "normalized": "se_estimate",
+   "dtype": "float64",
+   "n_missing": 0,
+   "n_unique": 431,
+   "role": "standard_error",
+   "stats": {
+    "min": 0.000199,
+    "p25": 0.014,
+    "median": 0.045,
+    "p75": 0.1096,
+    "max": 17.64518,
+    "mean": 0.128259,
+    "sd": 0.794296
+   }
+  },
+  {
+   "name": "t_stat",
+   "normalized": "t_stat",
+   "dtype": "float64",
+   "n_missing": 0,
+   "n_unique": 505,
+   "role": "t_stat",
+   "stats": {
+    "min": -16.25,
+    "p25": 2.181818,
+    "median": 3.903453,
+    "p75": 6.82,
+    "max": 417.5,
+    "mean": 9.986132,
+    "sd": 31.014778
+   }
+  },
+  {
+   "name": "se_imputed",
+   "normalized": "se_imputed",
+   "dtype": "int64",
+   "n_missing": 0,
+   "n_unique": 2,
+   "stats": {
+    "min": 0.0,
+    "p25": 0.0,
+    "median": 0.0,
+    "p75": 0.0,
+    "max": 1.0,
+    "mean": 0.075047,
+    "sd": 0.263715
+   },
+   "binary": true
+  },
+  {
+   "name": "interaction_term",
+   "normalized": "interaction_term",
+   "dtype": "int64",
+   "n_missing": 0,
+   "n_unique": 2,
+   "stats": {
+    "min": 0.0,
+    "p25": 0.0,
+    "median": 0.0,
+    "p75": 0.0,
+    "max": 1.0,
+    "mean": 0.144465,
+    "sd": 0.351891
+   },
+   "binary": true
+  },
+  {
+   "name": "direct_est",
+   "normalized": "direct_est",
+   "dtype": "int64",
+   "n_missing": 0,
+   "n_unique": 2,
+   "stats": {
+    "min": 0.0,
+    "p25": 1.0,
+    "median": 1.0,
+    "p75": 1.0,
+    "max": 1.0,
+    "mean": 0.79925,
+    "sd": 0.400938
+   },
+   "binary": true
+  },
+  {
+   "name": "sample_size",
+   "normalized": "sample_size",
+   "dtype": "int64",
+   "n_missing": 0,
+   "n_unique": 233,
+   "role": "n_obs",
+   "stats": {
+    "min": 77.0,
+    "p25": 438.0,
+    "median": 989.0,
+    "p75": 5087.0,
+    "max": 52143.0,
+    "mean": 6913.560976,
+    "sd": 13092.189262
+   }
+  },
+  {
+   "name": "ln_sample_size",
+   "normalized": "ln_sample_size",
+   "dtype": "float64",
+   "n_missing": 0,
+   "n_unique": 234,
+   "stats": {
+    "min": 4.343805,
+    "p25": 6.082219,
+    "median": 6.896694,
+    "p75": 8.534444,
+    "max": 10.861745,
+    "mean": 7.326958,
+    "sd": 1.731979
+   }
+  },
+  {
+   "name": "data_firms",
+   "normalized": "data_firms",
+   "dtype": "float64",
+   "n_missing": 0,
+   "n_unique": 142,
+   "stats": {
+    "min": 11.0,
+    "p25": 81.0,
+    "median": 223.0,
+    "p75": 1327.0,
+    "max": 8262.0,
+    "mean": 1313.980859,
+    "sd": 2272.439153
+   }
+  },
+  {
+   "name": "ln_data firms",
+   "normalized": "ln_data_firms",
+   "dtype": "float64",
+   "n_missing": 0,
+   "n_unique": 142,
+   "stats": {
+    "min": 2.397895,
+    "p25": 4.394449,
+    "median": 5.407172,
+    "p75": 7.190676,
+    "max": 9.019422,
+    "mean": 5.702398,
+    "sd": 1.767181
+   }
+  },
+  {
+   "name": "bgd_mean",
+   "normalized": "bgd_mean",
+   "dtype": "float64",
+   "n_missing": 0,
+   "n_unique": 114,
+   "stats": {
+    "min": 1.63,
+    "p25": 12.8,
+    "median": 19.0,
+    "p75": 25.1,
+    "max": 75.0,
+    "mean": 19.048511,
+    "sd": 9.006599
+   }
+  },
+  {
+   "name": "ln_bgd_mean",
+   "normalized": "ln_bgd_mean",
+   "dtype": "float64",
+   "n_missing": 0,
+   "n_unique": 115,
+   "stats": {
+    "min": 0.48858,
+    "p25": 2.549445,
+    "median": 2.944439,
+    "p75": 3.222868,
+    "max": 4.317488,
+    "mean": 2.795069,
+    "sd": 0.641491
+   }
+  },
+  {
+   "name": "method_linear",
+   "normalized": "method_linear",
+   "dtype": "int64",
+   "n_missing": 0,
+   "n_unique": 2,
+   "stats": {
+    "min": 0.0,
+    "p25": 0.0,
+    "median": 0.0,
+    "p75": 1.0,
+    "max": 1.0,
+    "mean": 0.348968,
+    "sd": 0.477092
+   },
+   "binary": true
+  },
+  {
+   "name": "method_panel",
+   "normalized": "method_panel",
+   "dtype": "int64",
+   "n_missing": 0,
+   "n_unique": 2,
+   "stats": {
+    "min": 0.0,
+    "p25": 0.0,
+    "median": 0.0,
+    "p75": 1.0,
+    "max": 1.0,
+    "mean": 0.403377,
+    "sd": 0.491036
+   },
+   "binary": true
+  },
+  {
+   "name": "method_iv",
+   "normalized": "method_iv",
+   "dtype": "int64",
+   "n_missing": 0,
+   "n_unique": 2,
+   "stats": {
+    "min": 0.0,
+    "p25": 0.0,
+    "median": 0.0,
+    "p75": 0.0,
+    "max": 1.0,
+    "mean": 0.061914,
+    "sd": 0.241225
+   },
+   "binary": true
+  },
+  {
+   "name": "method_gmm",
+   "normalized": "method_gmm",
+   "dtype": "int64",
+   "n_missing": 0,
+   "n_unique": 2,
+   "stats": {
+    "min": 0.0,
+    "p25": 0.0,
+    "median": 0.0,
+    "p75": 0.0,
+    "max": 1.0,
+    "mean": 0.078799,
+    "sd": 0.269678
+   },
+   "binary": true
+  },
+  {
+   "name": "method_tobit",
+   "normalized": "method_tobit",
+   "dtype": "int64",
+   "n_missing": 0,
+   "n_unique": 2,
+   "stats": {
+    "min": 0.0,
+    "p25": 0.0,
+    "median": 0.0,
+    "p75": 0.0,
+    "max": 1.0,
+    "mean": 0.045028,
+    "sd": 0.207561
+   },
+   "binary": true
+  },
+  {
+   "name": "method_quantile",
+   "normalized": "method_quantile",
+   "dtype": "int64",
+   "n_missing": 0,
+   "n_unique": 2,
+   "stats": {
+    "min": 0.0,
+    "p25": 0.0,
+    "median": 0.0,
+    "p75": 0.0,
+    "max": 1.0,
+    "mean": 0.061914,
+    "sd": 0.241225
+   },
+   "binary": true
+  },
+  {
+   "name": "method_other",
+   "normalized": "method_other",
+   "dtype": "int64",
+   "n_missing": 0,
+   "n_unique": 2,
+   "stats": {
+    "min": 0.0,
+    "p25": 0.0,
+    "median": 0.0,
+    "p75": 0.0,
+    "max": 1.0,
+    "mean": 0.106942,
+    "sd": 0.30933
+   },
+   "binary": true
+  },
+  {
+   "name": "data_panel",
+   "normalized": "data_panel",
+   "dtype": "int64",
+   "n_missing": 0,
+   "n_unique": 2,
+   "stats": {
+    "min": 0.0,
+    "p25": 1.0,
+    "median": 1.0,
+    "p75": 1.0,
+    "max": 1.0,
+    "mean": 0.9606,
+    "sd": 0.194727
+   },
+   "binary": true
+  },
+  {
+   "name": "data_cross-section",
+   "normalized": "data_cross_section",
+   "dtype": "int64",
+   "n_missing": 0,
+   "n_unique": 2,
+   "stats": {
+    "min": 0.0,
+    "p25": 0.0,
+    "median": 0.0,
+    "p75": 0.0,
+    "max": 1.0,
+    "mean": 0.0394,
+    "sd": 0.194727
+   },
+   "binary": true
+  },
+  {
+   "name": "proper_endog_control",
+   "normalized": "proper_endog_control",
+   "dtype": "int64",
+   "n_missing": 0,
+   "n_unique": 2,
+   "stats": {
+    "min": 0.0,
+    "p25": 0.0,
+    "median": 0.0,
+    "p75": 0.0,
+    "max": 1.0,
+    "mean": 0.183865,
+    "sd": 0.387738
+   },
+   "binary": true
+  },
+  {
+   "name": "poor_endog_control",
+   "normalized": "poor_endog_control",
+   "dtype": "int64",
+   "n_missing": 0,
+   "n_unique": 2,
+   "stats": {
+    "min": 0.0,
+    "p25": 1.0,
+    "median": 1.0,
+    "p75": 1.0,
+    "max": 1.0,
+    "mean": 0.816135,
+    "sd": 0.387738
+   },
+   "binary": true
+  },
+  {
+   "name": "control_firm_lev",
+   "normalized": "control_firm_lev",
+   "dtype": "int64",
+   "n_missing": 0,
+   "n_unique": 2,
+   "stats": {
+    "min": 0.0,
+    "p25": 1.0,
+    "median": 1.0,
+    "p75": 1.0,
+    "max": 1.0,
+    "mean": 0.78424,
+    "sd": 0.411735
+   },
+   "binary": true
+  },
+  {
+   "name": "control_firm_size",
+   "normalized": "control_firm_size",
+   "dtype": "int64",
+   "n_missing": 0,
+   "n_unique": 2,
+   "stats": {
+    "min": 0.0,
+    "p25": 1.0,
+    "median": 1.0,
+    "p75": 1.0,
+    "max": 1.0,
+    "mean": 0.889306,
+    "sd": 0.314048
+   },
+   "binary": true
+  },
+  {
+   "name": "control_board_ind",
+   "normalized": "control_board_ind",
+   "dtype": "int64",
+   "n_missing": 0,
+   "n_unique": 2,
+   "stats": {
+    "min": 0.0,
+    "p25": 0.0,
+    "median": 1.0,
+    "p75": 1.0,
+    "max": 1.0,
+    "mean": 0.669794,
+    "sd": 0.470729
+   },
+   "binary": true
+  },
+  {
+   "name": "control_board_size",
+   "normalized": "control_board_size",
+   "dtype": "int64",
+   "n_missing": 0,
+   "n_unique": 2,
+   "stats": {
+    "min": 0.0,
+    "p25": 0.0,
+    "median": 1.0,
+    "p75": 1.0,
+    "max": 1.0,
+    "mean": 0.72045,
+    "sd": 0.4492
+   },
+   "binary": true
+  },
+  {
+   "name": "control_csr_com",
+   "normalized": "control_csr_com",
+   "dtype": "int64",
+   "n_missing": 0,
+   "n_unique": 2,
+   "stats": {
+    "min": 0.0,
+    "p25": 0.0,
+    "median": 0.0,
+    "p75": 1.0,
+    "max": 1.0,
+    "mean": 0.386492,
+    "sd": 0.487403
+   },
+   "binary": true
+  },
+  {
+   "name": "bloomberg",
+   "normalized": "bloomberg",
+   "dtype": "int64",
+   "n_missing": 0,
+   "n_unique": 2,
+   "stats": {
+    "min": 0.0,
+    "p25": 0.0,
+    "median": 0.0,
+    "p75": 1.0,
+    "max": 1.0,
+    "mean": 0.382739,
+    "sd": 0.486512
+   },
+   "binary": true
+  },
+  {
+   "name": "eikon",
+   "normalized": "eikon",
+   "dtype": "int64",
+   "n_missing": 0,
+   "n_unique": 2,
+   "stats": {
+    "min": 0.0,
+    "p25": 0.0,
+    "median": 1.0,
+    "p75": 1.0,
+    "max": 1.0,
+    "mean": 0.617261,
+    "sd": 0.486512
+   },
+   "binary": true
+  },
+  {
+   "name": "global",
+   "normalized": "global",
+   "dtype": "int64",
+   "n_missing": 0,
+   "n_unique": 2,
+   "stats": {
+    "min": 0.0,
+    "p25": 0.0,
+    "median": 0.0,
+    "p75": 1.0,
+    "max": 1.0,
+    "mean": 0.332083,
+    "sd": 0.471403
+   },
+   "binary": true
+  },
+  {
+   "name": "europe",
+   "normalized": "europe",
+   "dtype": "int64",
+   "n_missing": 0,
+   "n_unique": 2,
+   "stats": {
+    "min": 0.0,
+    "p25": 0.0,
+    "median": 0.0,
+    "p75": 1.0,
+    "max": 1.0,
+    "mean": 0.341463,
+    "sd": 0.474646
+   },
+   "binary": true
+  },
+  {
+   "name": "us",
+   "normalized": "us",
+   "dtype": "int64",
+   "n_missing": 0,
+   "n_unique": 2,
+   "stats": {
+    "min": 0.0,
+    "p25": 0.0,
+    "median": 0.0,
+    "p75": 0.0,
+    "max": 1.0,
+    "mean": 0.078799,
+    "sd": 0.269678
+   },
+   "binary": true
+  },
+  {
+   "name": "asia",
+   "normalized": "asia",
+   "dtype": "int64",
+   "n_missing": 0,
+   "n_unique": 2,
+   "stats": {
+    "min": 0.0,
+    "p25": 0.0,
+    "median": 0.0,
+    "p75": 0.0,
+    "max": 1.0,
+    "mean": 0.080675,
+    "sd": 0.272592
+   },
+   "binary": true
+  },
+  {
+   "name": "middle_east",
+   "normalized": "middle_east",
+   "dtype": "int64",
+   "n_missing": 0,
+   "n_unique": 2,
+   "stats": {
+    "min": 0.0,
+    "p25": 0.0,
+    "median": 0.0,
+    "p75": 0.0,
+    "max": 1.0,
+    "mean": 0.056285,
+    "sd": 0.230688
+   },
+   "binary": true
+  },
+  {
+   "name": "other",
+   "normalized": "other",
+   "dtype": "int64",
+   "n_missing": 0,
+   "n_unique": 2,
+   "stats": {
+    "min": 0.0,
+    "p25": 0.0,
+    "median": 0.0,
+    "p75": 0.0,
+    "max": 1.0,
+    "mean": 0.110694,
+    "sd": 0.314048
+   },
+   "binary": true
+  },
+  {
+   "name": "developed",
+   "normalized": "developed",
+   "dtype": "int64",
+   "n_missing": 0,
+   "n_unique": 2,
+   "stats": {
+    "min": 0.0,
+    "p25": 0.0,
+    "median": 1.0,
+    "p75": 1.0,
+    "max": 1.0,
+    "mean": 0.514071,
+    "sd": 0.500271
+   },
+   "binary": true
+  },
+  {
+   "name": "emerging",
+   "normalized": "emerging",
+   "dtype": "int64",
+   "n_missing": 0,
+   "n_unique": 2,
+   "stats": {
+    "min": 0.0,
+    "p25": 0.0,
+    "median": 0.0,
+    "p75": 0.0,
+    "max": 1.0,
+    "mean": 0.183865,
+    "sd": 0.387738
+   },
+   "binary": true
+  },
+  {
+   "name": "financial",
+   "normalized": "financial",
+   "dtype": "int64",
+   "n_missing": 0,
+   "n_unique": 2,
+   "stats": {
+    "min": 0.0,
+    "p25": 0.0,
+    "median": 0.0,
+    "p75": 0.0,
+    "max": 1.0,
+    "mean": 0.069418,
+    "sd": 0.254403
+   },
+   "binary": true
+  },
+  {
+   "name": "non-financial",
+   "normalized": "non_financial",
+   "dtype": "int64",
+   "n_missing": 0,
+   "n_unique": 2,
+   "stats": {
+    "min": 0.0,
+    "p25": 0.0,
+    "median": 0.0,
+    "p75": 1.0,
+    "max": 1.0,
+    "mean": 0.285178,
+    "sd": 0.451923
+   },
+   "binary": true
+  },
+  {
+   "name": "cross_sector",
+   "normalized": "cross_sector",
+   "dtype": "int64",
+   "n_missing": 0,
+   "n_unique": 2,
+   "stats": {
+    "min": 0.0,
+    "p25": 0.0,
+    "median": 1.0,
+    "p75": 1.0,
+    "max": 1.0,
+    "mean": 0.645403,
+    "sd": 0.47884
+   },
+   "binary": true
+  },
+  {
+   "name": "sector",
+   "normalized": "sector",
+   "dtype": "str",
+   "n_missing": 0,
+   "n_unique": 24,
+   "top_values": [
+    "mixed",
+    "non-financial",
+    "banks",
+    "H&T",
+    "healthcare"
+   ]
+  },
+  {
+   "name": "sector_cat",
+   "normalized": "sector_cat",
+   "dtype": "str",
+   "n_missing": 0,
+   "n_unique": 10,
+   "top_values": [
+    "Cross-sector",
+    "Non-financial Firms",
+    "Financial Services",
+    "Services & Hospitality",
+    "Healthcare"
+   ]
+  },
+  {
+   "name": "country",
+   "normalized": "country",
+   "dtype": "str",
+   "n_missing": 0,
+   "n_unique": 43,
+   "role": "country",
+   "top_values": [
+    "global",
+    "EU",
+    "US",
+    "UK",
+    "Australia"
+   ]
+  },
+  {
+   "name": "country_cat",
+   "normalized": "country_cat",
+   "dtype": "str",
+   "n_missing": 181,
+   "n_unique": 15,
+   "top_values": [
+    "Europe",
+    "USA",
+    "UK",
+    "Middle East",
+    "Australia"
+   ]
+  },
+  {
+   "name": "published_study",
+   "normalized": "published_study",
+   "dtype": "int64",
+   "n_missing": 0,
+   "n_unique": 2,
+   "stats": {
+    "min": 0.0,
+    "p25": 1.0,
+    "median": 1.0,
+    "p75": 1.0,
+    "max": 1.0,
+    "mean": 0.949343,
+    "sd": 0.219502
+   },
+   "binary": true
+  },
+  {
+   "name": "unpublished_study",
+   "normalized": "unpublished_study",
+   "dtype": "int64",
+   "n_missing": 0,
+   "n_unique": 2,
+   "stats": {
+    "min": 0.0,
+    "p25": 0.0,
+    "median": 0.0,
+    "p75": 0.0,
+    "max": 1.0,
+    "mean": 0.050657,
+    "sd": 0.219502
+   },
+   "binary": true
+  },
+  {
+   "name": "pub_year",
+   "normalized": "pub_year",
+   "dtype": "int64",
+   "n_missing": 0,
+   "n_unique": 10,
+   "role": "pub_year",
+   "stats": {
+    "min": 2014.0,
+    "p25": 2022.0,
+    "median": 2023.0,
+    "p75": 2024.0,
+    "max": 2024.0,
+    "mean": 2022.677298,
+    "sd": 1.567105
+   }
+  },
+  {
+   "name": "ln_publication_year",
+   "normalized": "ln_publication_year",
+   "dtype": "float64",
+   "n_missing": 0,
+   "n_unique": 11,
+   "stats": {
+    "min": 7.607878,
+    "p25": 7.611842,
+    "median": 7.612337,
+    "p75": 7.612831,
+    "max": 7.612831,
+    "mean": 7.612177,
+    "sd": 0.000775
+   }
+  },
+  {
+   "name": "citations",
+   "normalized": "citations",
+   "dtype": "int64",
+   "n_missing": 0,
+   "n_unique": 61,
+   "stats": {
+    "min": 0.0,
+    "p25": 5.0,
+    "median": 24.0,
+    "p75": 43.0,
+    "max": 818.0,
+    "mean": 50.407129,
+    "sd": 96.219504
+   }
+  },
+  {
+   "name": "ln_citations",
+   "normalized": "ln_citations",
+   "dtype": "float64",
+   "n_missing": 0,
+   "n_unique": 60,
+   "stats": {
+    "min": 0.0,
+    "p25": 1.609438,
+    "median": 3.178054,
+    "p75": 3.7612,
+    "max": 6.706862,
+    "mean": 2.87124,
+    "sd": 1.538343
+   }
+  },
+  {
+   "name": "impact_factor",
+   "normalized": "impact_factor",
+   "dtype": "float64",
+   "n_missing": 189,
+   "n_unique": 31,
+   "stats": {
+    "min": 0.0001,
+    "p25": 0.007,
+    "median": 0.049,
+    "p75": 0.072,
+    "max": 0.123,
+    "mean": 0.046221,
+    "sd": 0.041251
+   }
+  },
+  {
+   "name": "ln_impact_factor",
+   "normalized": "ln_impact_factor",
+   "dtype": "float64",
+   "n_missing": 189,
+   "n_unique": 31,
+   "stats": {
+    "min": -9.21034,
+    "p25": -4.961845,
+    "median": -3.015935,
+    "p75": -2.631089,
+    "max": -2.095571,
+    "mean": -3.683418,
+    "sd": 1.266972
+   }
+  },
+  {
+   "name": "data_start",
+   "normalized": "data_start",
+   "dtype": "int64",
+   "n_missing": 0,
+   "n_unique": 19,
+   "stats": {
+    "min": 2002.0,
+    "p25": 2010.0,
+    "median": 2011.0,
+    "p75": 2016.0,
+    "max": 2022.0,
+    "mean": 2012.060038,
+    "sd": 4.563684
+   }
+  },
+  {
+   "name": "data_end",
+   "normalized": "data_end",
+   "dtype": "int64",
+   "n_missing": 0,
+   "n_unique": 12,
+   "stats": {
+    "min": 2011.0,
+    "p25": 2018.0,
+    "median": 2019.0,
+    "p75": 2021.0,
+    "max": 2023.0,
+    "mean": 2019.249531,
+    "sd": 1.907549
+   }
+  },
+  {
+   "name": "data_mid_year",
+   "normalized": "data_mid_year",
+   "dtype": "float64",
+   "n_missing": 0,
+   "n_unique": 23,
+   "stats": {
+    "min": 2009.5,
+    "p25": 2014.0,
+    "median": 2015.5,
+    "p75": 2018.0,
+    "max": 2022.0,
+    "mean": 2015.654784,
+    "sd": 2.81276
+   }
+  },
+  {
+   "name": "ln_avg_year",
+   "normalized": "ln_avg_year",
+   "dtype": "float64",
+   "n_missing": 0,
+   "n_unique": 25,
+   "stats": {
+    "min": 7.605641,
+    "p25": 7.607878,
+    "median": 7.608623,
+    "p75": 7.609862,
+    "max": 7.611842,
+    "mean": 7.608698,
+    "sd": 0.001396
+   }
+  },
+  {
+   "name": "data_length",
+   "normalized": "data_length",
+   "dtype": "int64",
+   "n_missing": 0,
+   "n_unique": 18,
+   "stats": {
+    "min": 1.0,
+    "p25": 5.0,
+    "median": 8.0,
+    "p75": 10.0,
+    "max": 21.0,
+    "mean": 8.185741,
+    "sd": 4.1582
+   }
+  },
+  {
+   "name": "ln_data_length",
+   "normalized": "ln_data_length",
+   "dtype": "float64",
+   "n_missing": 0,
+   "n_unique": 20,
+   "stats": {
+    "min": 0.0,
+    "p25": 1.609438,
+    "median": 2.079442,
+    "p75": 2.302585,
+    "max": 3.044522,
+    "mean": 1.948903,
+    "sd": 0.61057
+   }
+  },
+  {
+   "name": "data_variables",
+   "normalized": "data_variables",
+   "dtype": "int64",
+   "n_missing": 0,
+   "n_unique": 23,
+   "stats": {
+    "min": 1.0,
+    "p25": 8.0,
+    "median": 10.0,
+    "p75": 13.0,
+    "max": 25.0,
+    "mean": 11.086304,
+    "sd": 4.639652
+   }
+  },
+  {
+   "name": "ln_data_variables",
+   "normalized": "ln_data_variables",
+   "dtype": "float64",
+   "n_missing": 0,
+   "n_unique": 25,
+   "stats": {
+    "min": 0.0,
+    "p25": 2.079442,
+    "median": 2.302585,
+    "p75": 2.564949,
+    "max": 3.218876,
+    "mean": 2.311478,
+    "sd": 0.46557
+   }
+  },
+  {
+   "name": "Reference",
+   "normalized": "reference",
+   "dtype": "str",
+   "n_missing": 0,
+   "n_unique": 106,
+   "top_values": [
+    "Amorelli, Mar\\'ia-Florencia and Isabel-Mar\\'ia Garc\\'ia-Sanchez, 'Leadership in heels: Women on boards and sustainability in times of COVID-19', Corporate Social Responsibility and Environmental Management, 30, no. 4 (2023), 1987\u20132010.",
+    "Alkhawaja, Abdallah, Fang Hu, Shireenjit Johl, and Sivathaasan Nadarajah, 'Board gender diversity, quotas, and ESG disclosure: Global evidence', International Review of Financial Analysis, 90 (2023), 102823.",
+    "Gerged, Ali Meftah, Mi Tran, and Eshani S Beddewela, 'Engendering pro-sustainable performance through a multi-layered gender diversity criterion: Evidence from the hospitality and tourism sector', Journal of Travel Research, 62, no. 5 (2023), 1047\u20131076.",
+    "Almaqtari, Faozi A, Tamer Elsheikh, Farah Abdelkhair, and Yasser SA Mazrou, 'The impact of corporate environmental disclosure practices and board attributes on sustainability: Empirical evidence from Asia and Europe', Heliyon, 9, no. 8 (2023).",
+    "Donkor, Augustine, Terri Trireksani, and Hadrian Geri Djajadikerta, 'Board diversity and corporate sustainability performance: do CEO power and firm environmental sensitivity matter?', Sustainability, 15, no. 23 (2023), 16142."
+   ]
+  }
+ ]
+}

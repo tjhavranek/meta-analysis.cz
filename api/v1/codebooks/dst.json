@@ -1,0 +1,576 @@
+{
+ "project": "dst",
+ "source_file": "dst.xlsx",
+ "source_archive": null,
+ "source_sheet": "STATA",
+ "n_rows": 162,
+ "n_columns": 36,
+ "columns": [
+  {
+   "name": "LABEL",
+   "normalized": "label",
+   "dtype": "str",
+   "n_missing": 0,
+   "n_unique": 44,
+   "top_values": [
+    "Belzer et al. (2008)",
+    "Terna (2016)",
+    "Kotchen & Grant (2011)",
+    "Momami et al. (2009)",
+    "Kandel & Sheridan (2007)"
+   ]
+  },
+  {
+   "name": "IDSTUDY",
+   "normalized": "idstudy",
+   "dtype": "int64",
+   "n_missing": 0,
+   "n_unique": 44,
+   "role": "study_id",
+   "stats": {
+    "min": 1.0,
+    "p25": 7.0,
+    "median": 12.5,
+    "p75": 29.0,
+    "max": 44.0,
+    "mean": 18.487654,
+    "sd": 12.964949
+   }
+  },
+  {
+   "name": "IDAUTHOR",
+   "normalized": "idauthor",
+   "dtype": "int64",
+   "n_missing": 0,
+   "n_unique": 38,
+   "stats": {
+    "min": 1.0,
+    "p25": 5.0,
+    "median": 9.5,
+    "p75": 23.0,
+    "max": 38.0,
+    "mean": 14.833333,
+    "sd": 11.251639
+   }
+  },
+  {
+   "name": "COUNTRY",
+   "normalized": "country",
+   "dtype": "str",
+   "n_missing": 0,
+   "n_unique": 21,
+   "role": "country",
+   "top_values": [
+    "USA",
+    "Italy",
+    "Jordan",
+    "Australia",
+    "Germany"
+   ]
+  },
+  {
+   "name": "COUNTRYA",
+   "normalized": "countrya",
+   "dtype": "str",
+   "n_missing": 0,
+   "n_unique": 20,
+   "top_values": [
+    "USA",
+    "Italy",
+    "Jordan",
+    "Norway",
+    "Germany"
+   ]
+  },
+  {
+   "name": "ESTIMATE",
+   "normalized": "estimate",
+   "dtype": "float64",
+   "n_missing": 0,
+   "n_unique": 77,
+   "role": "effect_estimate",
+   "stats": {
+    "min": -2.42,
+    "p25": -0.575,
+    "median": -0.3,
+    "p75": -0.105,
+    "max": 1.4,
+    "mean": -0.334454,
+    "sd": 0.54698
+   }
+  },
+  {
+   "name": "SE",
+   "normalized": "se",
+   "dtype": "str",
+   "n_missing": 0,
+   "n_unique": 42,
+   "role": "standard_error",
+   "top_values": [
+    ".",
+    "0.3",
+    "0.2",
+    "0.4",
+    "0.5"
+   ]
+  },
+  {
+   "name": "TSTAT",
+   "normalized": "tstat",
+   "dtype": "str",
+   "n_missing": 0,
+   "n_unique": 57,
+   "role": "t_stat",
+   "top_values": [
+    ".",
+    "-2",
+    "-1",
+    "-2.5",
+    "-1.6666666666666667"
+   ]
+  },
+  {
+   "name": "PRECISION",
+   "normalized": "precision",
+   "dtype": "str",
+   "n_missing": 0,
+   "n_unique": 42,
+   "top_values": [
+    ".",
+    "3.333333333333333",
+    "5",
+    "2.5",
+    "2"
+   ]
+  },
+  {
+   "name": "PCC",
+   "normalized": "pcc",
+   "dtype": "str",
+   "n_missing": 0,
+   "n_unique": 54,
+   "top_values": [
+    ".",
+    "-0.024521886354905213",
+    "-0.048999595755002526",
+    "-0.06343614796955512",
+    "-0.07920559147847744"
+   ]
+  },
+  {
+   "name": "PCCSE",
+   "normalized": "pccse",
+   "dtype": "str",
+   "n_missing": 0,
+   "n_unique": 1,
+   "top_values": [
+    "."
+   ]
+  },
+  {
+   "name": "N",
+   "normalized": "n",
+   "dtype": "str",
+   "n_missing": 0,
+   "n_unique": 20,
+   "role": "n_obs",
+   "top_values": [
+    ".",
+    "2112",
+    "1440",
+    "57696",
+    "3685287"
+   ]
+  },
+  {
+   "name": "K",
+   "normalized": "k",
+   "dtype": "str",
+   "n_missing": 0,
+   "n_unique": 15,
+   "top_values": [
+    ".",
+    "450",
+    "72",
+    "8",
+    "18"
+   ]
+  },
+  {
+   "name": "DF",
+   "normalized": "df",
+   "dtype": "str",
+   "n_missing": 0,
+   "n_unique": 21,
+   "top_values": [
+    ".",
+    "1662",
+    "990",
+    "57624",
+    "614"
+   ]
+  },
+  {
+   "name": "REGRESSION",
+   "normalized": "regression",
+   "dtype": "int64",
+   "n_missing": 0,
+   "n_unique": 2,
+   "stats": {
+    "min": 0.0,
+    "p25": 0.0,
+    "median": 1.0,
+    "p75": 1.0,
+    "max": 1.0,
+    "mean": 0.722222,
+    "sd": 0.449292
+   },
+   "binary": true
+  },
+  {
+   "name": "SIMULATION",
+   "normalized": "simulation",
+   "dtype": "int64",
+   "n_missing": 0,
+   "n_unique": 2,
+   "stats": {
+    "min": 0.0,
+    "p25": 0.0,
+    "median": 0.0,
+    "p75": 0.0,
+    "max": 1.0,
+    "mean": 0.12963,
+    "sd": 0.336937
+   },
+   "binary": true
+  },
+  {
+   "name": "RESIDENT",
+   "normalized": "resident",
+   "dtype": "int64",
+   "n_missing": 0,
+   "n_unique": 2,
+   "stats": {
+    "min": 0.0,
+    "p25": 0.0,
+    "median": 0.0,
+    "p75": 0.0,
+    "max": 1.0,
+    "mean": 0.104938,
+    "sd": 0.307424
+   },
+   "binary": true
+  },
+  {
+   "name": "LIGHT",
+   "normalized": "light",
+   "dtype": "int64",
+   "n_missing": 0,
+   "n_unique": 2,
+   "stats": {
+    "min": 0.0,
+    "p25": 0.0,
+    "median": 0.0,
+    "p75": 0.0,
+    "max": 1.0,
+    "mean": 0.04321,
+    "sd": 0.20396
+   },
+   "binary": true
+  },
+  {
+   "name": "USA",
+   "normalized": "usa",
+   "dtype": "int64",
+   "n_missing": 0,
+   "n_unique": 2,
+   "stats": {
+    "min": 0.0,
+    "p25": 0.0,
+    "median": 1.0,
+    "p75": 1.0,
+    "max": 1.0,
+    "mean": 0.580247,
+    "sd": 0.495049
+   },
+   "binary": true
+  },
+  {
+   "name": "PUBYEAR",
+   "normalized": "pubyear",
+   "dtype": "int64",
+   "n_missing": 0,
+   "n_unique": 26,
+   "role": "pub_year",
+   "stats": {
+    "min": 1970.0,
+    "p25": 2007.0,
+    "median": 2008.0,
+    "p75": 2009.0,
+    "max": 2016.0,
+    "mean": 2004.820988,
+    "sd": 9.545513
+   }
+  },
+  {
+   "name": "DSTYEAR",
+   "normalized": "dstyear",
+   "dtype": "int64",
+   "n_missing": 0,
+   "n_unique": 28,
+   "stats": {
+    "min": 1968.0,
+    "p25": 2000.0,
+    "median": 2006.0,
+    "p75": 2006.0,
+    "max": 2015.0,
+    "mean": 2001.555556,
+    "sd": 9.368906
+   }
+  },
+  {
+   "name": "PERIOD",
+   "normalized": "period",
+   "dtype": "str",
+   "n_missing": 0,
+   "n_unique": 9,
+   "top_values": [
+    "2",
+    "1",
+    "3",
+    ".",
+    "7"
+   ]
+  },
+  {
+   "name": "HOUR",
+   "normalized": "hour",
+   "dtype": "int64",
+   "n_missing": 0,
+   "n_unique": 2,
+   "stats": {
+    "min": 0.0,
+    "p25": 1.0,
+    "median": 1.0,
+    "p75": 1.0,
+    "max": 1.0,
+    "mean": 0.858025,
+    "sd": 0.350107
+   },
+   "binary": true
+  },
+  {
+   "name": "DAY",
+   "normalized": "day",
+   "dtype": "int64",
+   "n_missing": 0,
+   "n_unique": 2,
+   "stats": {
+    "min": 0.0,
+    "p25": 0.0,
+    "median": 0.0,
+    "p75": 0.0,
+    "max": 1.0,
+    "mean": 0.092593,
+    "sd": 0.290759
+   },
+   "binary": true
+  },
+  {
+   "name": "MONTH",
+   "normalized": "month",
+   "dtype": "int64",
+   "n_missing": 0,
+   "n_unique": 2,
+   "stats": {
+    "min": 0.0,
+    "p25": 0.0,
+    "median": 0.0,
+    "p75": 0.0,
+    "max": 1.0,
+    "mean": 0.04321,
+    "sd": 0.20396
+   },
+   "binary": true
+  },
+  {
+   "name": "DID",
+   "normalized": "did",
+   "dtype": "int64",
+   "n_missing": 0,
+   "n_unique": 2,
+   "stats": {
+    "min": 0.0,
+    "p25": 0.0,
+    "median": 1.0,
+    "p75": 1.0,
+    "max": 1.0,
+    "mean": 0.580247,
+    "sd": 0.495049
+   },
+   "binary": true
+  },
+  {
+   "name": "LOG",
+   "normalized": "log",
+   "dtype": "int64",
+   "n_missing": 0,
+   "n_unique": 2,
+   "stats": {
+    "min": 0.0,
+    "p25": 0.0,
+    "median": 1.0,
+    "p75": 1.0,
+    "max": 1.0,
+    "mean": 0.555556,
+    "sd": 0.498445
+   },
+   "binary": true
+  },
+  {
+   "name": "MAIN",
+   "normalized": "main",
+   "dtype": "int64",
+   "n_missing": 0,
+   "n_unique": 2,
+   "stats": {
+    "min": 0.0,
+    "p25": 0.0,
+    "median": 0.0,
+    "p75": 1.0,
+    "max": 1.0,
+    "mean": 0.41358,
+    "sd": 0.494002
+   },
+   "binary": true
+  },
+  {
+   "name": "CITATIONS",
+   "normalized": "citations",
+   "dtype": "int64",
+   "n_missing": 0,
+   "n_unique": 15,
+   "stats": {
+    "min": 0.0,
+    "p25": 4.0,
+    "median": 7.0,
+    "p75": 8.0,
+    "max": 110.0,
+    "mean": 9.604938,
+    "sd": 13.729579
+   }
+  },
+  {
+   "name": "JOURNAL",
+   "normalized": "journal",
+   "dtype": "int64",
+   "n_missing": 0,
+   "n_unique": 2,
+   "stats": {
+    "min": 0.0,
+    "p25": 0.0,
+    "median": 0.0,
+    "p75": 0.75,
+    "max": 1.0,
+    "mean": 0.253086,
+    "sd": 0.436128
+   },
+   "binary": true
+  },
+  {
+   "name": "IMPACT",
+   "normalized": "impact",
+   "dtype": "float64",
+   "n_missing": 0,
+   "n_unique": 7,
+   "stats": {
+    "min": 0.0,
+    "p25": 0.0,
+    "median": 0.0,
+    "p75": 0.0,
+    "max": 1.22,
+    "mean": 0.07308,
+    "sd": 0.259458
+   }
+  },
+  {
+   "name": "WEIGHT",
+   "normalized": "weight",
+   "dtype": "float64",
+   "n_missing": 0,
+   "n_unique": 9,
+   "stats": {
+    "min": 0.014925,
+    "p25": 0.014925,
+    "median": 0.142857,
+    "p75": 0.5,
+    "max": 1.0,
+    "mean": 0.271605,
+    "sd": 0.350392
+   }
+  },
+  {
+   "name": "LATITUDE",
+   "normalized": "latitude",
+   "dtype": "float64",
+   "n_missing": 0,
+   "n_unique": 25,
+   "stats": {
+    "min": 18.4746,
+    "p25": 37.751,
+    "median": 37.751,
+    "p75": 42.8333,
+    "max": 62.0,
+    "mean": 39.85213,
+    "sd": 8.239713
+   }
+  },
+  {
+   "name": "DAYLIGHT",
+   "normalized": "daylight",
+   "dtype": "float64",
+   "n_missing": 0,
+   "n_unique": 26,
+   "stats": {
+    "min": 13.233333,
+    "p25": 14.766667,
+    "median": 14.766667,
+    "p75": 15.333333,
+    "max": 19.766667,
+    "mean": 15.18786,
+    "sd": 1.263082
+   }
+  },
+  {
+   "name": "EUROPE",
+   "normalized": "europe",
+   "dtype": "int64",
+   "n_missing": 0,
+   "n_unique": 2,
+   "stats": {
+    "min": 0.0,
+    "p25": 0.0,
+    "median": 0.0,
+    "p75": 1.0,
+    "max": 1.0,
+    "mean": 0.265432,
+    "sd": 0.442932
+   },
+   "binary": true
+  },
+  {
+   "name": "REFERENCE",
+   "normalized": "reference",
+   "dtype": "str",
+   "n_missing": 0,
+   "n_unique": 44,
+   "top_values": [
+    "Belzer, D. B., S. W. Hadley, & S. M. Chin (2008): Impact of extended daylight saving time on national energy consumption. Technical report 10/2008, US Department of Energy Office of Energy Efficiency and Renewable Energy.",
+    "Terna (2016): Daylight saving time: In seven months Italy saved... Press release 2006-2016, Terna Group: grid operator for electricity transmission in Italy, 2016\n",
+    "Kotchen, M. J. & L. E. Grant (2011): Does Daylight Saving Time Save Energy? Evidence from a Natural Experiment in Indiana. The Review of Economics and Statistics 93(4): pp. 1172-1185.",
+    "Momani, M. A., B. Yatim, & M. A. M. Ali (2009): The impact of the daylight saving time on electricity consumption: A case study from Jordan. Energy Policy 37(5): pp. 2042-2051.",
+    "Kandel, A. & M. Sheridan (2007): The Effect of Early Daylight Saving Time on California Electricity Consumption: A Statistical Analysis. Staff report 4/2007, Electricity & Demand Analysis Division, California Energy Commission."
+   ]
+  }
+ ]
+}

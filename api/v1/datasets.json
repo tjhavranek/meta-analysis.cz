@@ -1,0 +1,2025 @@
+{
+ "$schema": "https://meta-analysis.cz/api/v1/index.json",
+ "name": "meta-analysis.cz data API",
+ "version": "1.0.0",
+ "description": "Estimate-level datasets from meta-analyses in economics and the social sciences, with the hand-coded study characteristics collected for each paper.",
+ "license": {
+  "collection": "CC-BY-4.0",
+  "url": "https://meta-analysis.cz/LICENSE",
+  "note": "Cite the individual paper when you use its dataset; each entry carries its DOI."
+ },
+ "cite_as": "Havranek, T. and Z. Irsova (2026). meta-analysis.cz: data and code for meta-analyses in economics.",
+ "endpoints": {
+  "datasets": "https://meta-analysis.cz/api/v1/datasets.json",
+  "codebook": "https://meta-analysis.cz/api/v1/codebooks/{id}.json",
+  "datapackage": "https://meta-analysis.cz/api/v1/datapackage.json",
+  "croissant": "https://meta-analysis.cz/api/v1/croissant.json",
+  "harmonised_parquet": "https://meta-analysis.cz/data/v1/estimates_harmonised.parquet",
+  "harmonised_csv": "https://meta-analysis.cz/data/v1/estimates_harmonised.csv"
+ },
+ "counts": {
+  "datasets": 44,
+  "estimates": 65349,
+  "in_harmonised_table": 41
+ },
+ "harmonised_table": {
+  "version": "0.9.0-beta",
+  "status": "beta",
+  "n_rows": 59098,
+  "n_literatures": 41,
+  "columns": [
+   "dataset",
+   "study_id",
+   "estimate_id",
+   "study_label",
+   "effect",
+   "se",
+   "t_stat",
+   "precision",
+   "n_obs",
+   "df",
+   "pcc",
+   "se_pcc",
+   "pub_year",
+   "citations",
+   "impact_factor",
+   "published",
+   "top_journal",
+   "country",
+   "country_id",
+   "is_usa",
+   "is_europe",
+   "data_start",
+   "data_end",
+   "data_midyear",
+   "is_panel",
+   "is_cross_section",
+   "is_time_series",
+   "freq_annual",
+   "freq_quarterly",
+   "freq_monthly",
+   "method_ols",
+   "method_iv",
+   "method_gmm",
+   "method_ml",
+   "method_fe",
+   "horizon",
+   "effect_units",
+   "source_file",
+   "effect_col",
+   "se_col",
+   "se_is_derived"
+  ],
+  "parquet": "https://meta-analysis.cz/data/v1/estimates_harmonised.parquet",
+  "csv": "https://meta-analysis.cz/data/v1/estimates_harmonised.csv",
+  "notes": [
+   "One row per estimate, pooled across literatures.",
+   "Effects are not comparable across literatures in raw units; see effect_units. Within a literature units are consistent. Across literatures compare ratios, not levels.",
+   "Moderator columns are populated only where the source dataset recorded them; check for nulls.",
+   "source_file, effect_col and se_col identify the origin of every value, so any row can be traced to the published dataset and checked.",
+   "se_is_derived marks rows whose standard error was reconstructed rather than read directly.",
+   "Column mappings were resolved arithmetically (effect/se must reproduce the reported t-statistic) and, where that was not decisive, taken from the paper's own replication code.",
+   "Beta: the harmonisation may be revised. Pin a version, or use the DOI deposit, if you need a stable reference."
+  ],
+  "excluded": {
+   "fdi": "no per-estimate precision exists: the file has no standard error, t-statistic, weight or inverse-SE column, so SE-based synthesis is impossible",
+   "lags": "outcome is the transmission lag (mon_bot, months to the price trough); it has no sampling standard error, so it cannot enter an effect/SE table",
+   "substitution": "duplicate of eis"
+  }
+ },
+ "datasets": [
+  {
+   "id": "activism",
+   "paper": {
+    "title": "Does Shareholder Activism Create Value? A Meta-Analysis",
+    "authors": [
+     "Josef Bajzik",
+     "Tomas Havranek",
+     "Zuzana Irsova",
+     "Jiri Novak"
+    ],
+    "year": 2025,
+    "journal": "Corporate Governance: An International Review",
+    "doi": "https://doi.org/10.1111/corg.12637",
+    "url": "https://meta-analysis.cz/activism/"
+   },
+   "description": "Meta-analysis of 1,973 estimates from 67 studies finds shareholder activism raises stock prices by 0% to 1.5% after correcting for publication bias.",
+   "n_estimates": 1974,
+   "n_variables": 159,
+   "source_file": "https://meta-analysis.cz/activism/activism.xlsx",
+   "source_sheet": "Data",
+   "files": {
+    "parquet": "https://meta-analysis.cz/data/v1/activism/activism.parquet",
+    "csv": "https://meta-analysis.cz/data/v1/activism/activism.csv",
+    "codebook": "https://meta-analysis.cz/api/v1/codebooks/activism.json"
+   },
+   "core_columns": {
+    "effect": "Estimate",
+    "standard_error": null,
+    "standard_error_note": "<derived: |Estimate/t-stats|>",
+    "evidence": "se_derived_from:t-stats"
+   },
+   "effect_units": "percent",
+   "direction_note": null,
+   "column_mapping_verified_by": null,
+   "in_harmonised_table": true,
+   "reconciliation": {
+    "n_estimates_reported_in_paper": 1973,
+    "n_rows_in_harmonised_table": 1254,
+    "note": "fewer rows than the paper reports; see this dataset's note and column_mapping_verified_by for the reason (usually a missing standard error on the remainder, occasionally a published file narrower than the paper's sample)"
+   },
+   "excluded_from_harmonised_because": null,
+   "duplicate_of": null,
+   "license": "CC-BY-4.0"
+  },
+  {
+   "id": "alphas",
+   "paper": {
+    "title": "What Matters in Explaining the Variation in Hedge Fund Performance? A Meta-Analysis",
+    "authors": [
+     "Fan Yang",
+     "Tomas Havranek",
+     "Zuzana Irsova",
+     "Jiri Novak"
+    ],
+    "year": 2026,
+    "journal": null,
+    "doi": null,
+    "url": "https://meta-analysis.cz/alphas/"
+   },
+   "description": "Meta-analysis of 1,019 estimates from 74 studies identifies which factors explain the variation in hedge fund performance; net performance is near zero.",
+   "n_estimates": 1019,
+   "n_variables": 82,
+   "source_file": "https://meta-analysis.cz/alphas/alphas.xlsx",
+   "source_sheet": "data",
+   "files": {
+    "parquet": "https://meta-analysis.cz/data/v1/alphas/alphas.parquet",
+    "csv": "https://meta-analysis.cz/data/v1/alphas/alphas.csv",
+    "codebook": "https://meta-analysis.cz/api/v1/codebooks/alphas.json"
+   },
+   "core_columns": {
+    "effect": "alpha",
+    "standard_error": "se",
+    "standard_error_note": null,
+    "evidence": "t_match:tstat"
+   },
+   "effect_units": "percent",
+   "direction_note": "Monthly return, not annualised.",
+   "column_mapping_verified_by": null,
+   "in_harmonised_table": true,
+   "reconciliation": {
+    "n_estimates_reported_in_paper": 1019,
+    "n_rows_in_harmonised_table": 1019,
+    "note": "matches the paper"
+   },
+   "excluded_from_harmonised_because": null,
+   "duplicate_of": null,
+   "license": "CC-BY-4.0"
+  },
+  {
+   "id": "armington",
+   "paper": {
+    "title": "A Meta-Analysis of the Trade Cost Elasticity",
+    "authors": [
+     "Josef Bajzik",
+     "Tomas Havranek",
+     "Zuzana Irsova",
+     "Jiri Schwarz"
+    ],
+    "year": 2020,
+    "journal": "Journal of International Economics",
+    "doi": "https://doi.org/10.1016/j.jinteco.2020.103383",
+    "url": "https://meta-analysis.cz/armington/"
+   },
+   "description": "Meta-analysis of 3,524 estimates finds the Armington trade elasticity is 2.5-5.1 after correcting for publication bias.",
+   "n_estimates": 3524,
+   "n_variables": 76,
+   "source_file": "https://meta-analysis.cz/armington/armington.xlsx",
+   "source_sheet": "data",
+   "files": {
+    "parquet": "https://meta-analysis.cz/data/v1/armington/armington.parquet",
+    "csv": "https://meta-analysis.cz/data/v1/armington/armington.csv",
+    "codebook": "https://meta-analysis.cz/api/v1/codebooks/armington.json"
+   },
+   "core_columns": {
+    "effect": "armel",
+    "standard_error": "se",
+    "standard_error_note": null,
+    "evidence": "t_match:tstats"
+   },
+   "effect_units": "elasticity",
+   "direction_note": null,
+   "column_mapping_verified_by": null,
+   "in_harmonised_table": true,
+   "reconciliation": {
+    "n_estimates_reported_in_paper": 3524,
+    "n_rows_in_harmonised_table": 3524,
+    "note": "matches the paper"
+   },
+   "excluded_from_harmonised_because": null,
+   "duplicate_of": null,
+   "license": "CC-BY-4.0"
+  },
+  {
+   "id": "beauty",
+   "paper": {
+    "title": "Beauty and Professional Success: A Meta-Analysis",
+    "authors": [
+     "Zuzana Irsova",
+     "Tomas Havranek",
+     "Kseniya Bortnikova",
+     "František Bartoš"
+    ],
+    "year": 2025,
+    "journal": null,
+    "doi": null,
+    "url": "https://meta-analysis.cz/beauty/"
+   },
+   "description": "A meta-analysis of 1,159 estimates: the beauty premium in earnings and productivity is small once publication bias and cognitive ability are addressed.",
+   "n_estimates": 1159,
+   "n_variables": 56,
+   "source_file": "https://meta-analysis.cz/beauty/beauty.xlsx",
+   "source_sheet": "data",
+   "files": {
+    "parquet": "https://meta-analysis.cz/data/v1/beauty/beauty.parquet",
+    "csv": "https://meta-analysis.cz/data/v1/beauty/beauty.csv",
+    "codebook": "https://meta-analysis.cz/api/v1/codebooks/beauty.json"
+   },
+   "core_columns": {
+    "effect": "premium",
+    "standard_error": "se_premium",
+    "standard_error_note": null,
+    "evidence": "t_match:tstat_premium"
+   },
+   "effect_units": "percent",
+   "direction_note": null,
+   "column_mapping_verified_by": null,
+   "in_harmonised_table": true,
+   "reconciliation": {
+    "n_estimates_reported_in_paper": 1159,
+    "n_rows_in_harmonised_table": 1159,
+    "note": "matches the paper"
+   },
+   "excluded_from_harmonised_because": null,
+   "duplicate_of": null,
+   "license": "CC-BY-4.0"
+  },
+  {
+   "id": "bma",
+   "paper": {
+    "title": "A Meta-Analysis of Horizontal Spillovers from FDI",
+    "authors": [
+     "Zuzana Irsova",
+     "Tomas Havranek"
+    ],
+    "year": 2013,
+    "journal": "World Development",
+    "doi": "https://doi.org/10.1016/j.worlddev.2012.07.001",
+    "url": "https://meta-analysis.cz/bma/"
+   },
+   "description": "Meta-analysis of 1205 estimates finds horizontal FDI spillovers average zero, shaped by technology gap and ownership structure.",
+   "n_estimates": 4147,
+   "n_variables": 101,
+   "source_file": "https://meta-analysis.cz/bma/determinants.xls",
+   "source_sheet": "stata",
+   "files": {
+    "parquet": "https://meta-analysis.cz/data/v1/bma/bma.parquet",
+    "csv": "https://meta-analysis.cz/data/v1/bma/bma.csv",
+    "codebook": "https://meta-analysis.cz/api/v1/codebooks/bma.json"
+   },
+   "core_columns": {
+    "effect": "e",
+    "standard_error": "se",
+    "standard_error_note": null,
+    "evidence": "t_match:t"
+   },
+   "effect_units": "elasticity",
+   "direction_note": null,
+   "column_mapping_verified_by": "determinants.do runs 'drop if aux==1' then 'drop if horiz!=1'. Applying exactly those two filters yields 1,205 usable estimates, matching the abstract exactly.",
+   "in_harmonised_table": true,
+   "reconciliation": {
+    "n_estimates_reported_in_paper": 1205,
+    "n_rows_in_harmonised_table": 1205,
+    "note": "matches the paper"
+   },
+   "excluded_from_harmonised_because": null,
+   "duplicate_of": null,
+   "license": "CC-BY-4.0"
+  },
+  {
+   "id": "border",
+   "paper": {
+    "title": "Do Borders Really Slash Trade? A Meta-Analysis",
+    "authors": [
+     "Tomas Havranek",
+     "Zuzana Irsova"
+    ],
+    "year": 2017,
+    "journal": "IMF Economic Review",
+    "doi": "https://doi.org/10.1057/s41308-016-0001-5",
+    "url": "https://meta-analysis.cz/border/"
+   },
+   "description": "Meta-analysis of 1,271 estimates from 61 studies finds methodological choices shrink the true border effect on trade.",
+   "n_estimates": 1271,
+   "n_variables": 61,
+   "source_file": "https://meta-analysis.cz/border/border.dta",
+   "source_sheet": null,
+   "files": {
+    "parquet": "https://meta-analysis.cz/data/v1/border/border.parquet",
+    "csv": "https://meta-analysis.cz/data/v1/border/border.csv",
+    "codebook": "https://meta-analysis.cz/api/v1/codebooks/border.json"
+   },
+   "core_columns": {
+    "effect": "b",
+    "standard_error": "se",
+    "standard_error_note": null,
+    "evidence": "t_match:tstat"
+   },
+   "effect_units": "semi-elasticity",
+   "direction_note": "Raw coefficient on the border dummy in a log-linear gravity model; the paper's headline reduction is a transform of it, not the raw value.",
+   "column_mapping_verified_by": null,
+   "in_harmonised_table": true,
+   "reconciliation": {
+    "n_estimates_reported_in_paper": 1271,
+    "n_rows_in_harmonised_table": 1271,
+    "note": "matches the paper"
+   },
+   "excluded_from_harmonised_because": null,
+   "duplicate_of": null,
+   "license": "CC-BY-4.0"
+  },
+  {
+   "id": "class",
+   "paper": {
+    "title": "Class Size and Student Achievement: A Meta-Analysis",
+    "authors": [
+     "Matej Opatrny",
+     "Tomas Havranek",
+     "Zuzana Irsova",
+     "Milan Scasny"
+    ],
+    "year": 2025,
+    "journal": "Journal of Labor Economics",
+    "doi": "https://doi.org/10.1086/737989",
+    "url": "https://meta-analysis.cz/class/"
+   },
+   "description": "A meta-analysis of 2,819 estimates from 66 studies finds little publication bias and a negligible class size effect on student achievement.",
+   "n_estimates": 2906,
+   "n_variables": 67,
+   "source_file": "https://meta-analysis.cz/class/class.xlsx",
+   "source_sheet": "data",
+   "files": {
+    "parquet": "https://meta-analysis.cz/data/v1/class/class.parquet",
+    "csv": "https://meta-analysis.cz/data/v1/class/class.csv",
+    "codebook": "https://meta-analysis.cz/api/v1/codebooks/class.json"
+   },
+   "core_columns": {
+    "effect": "pcc",
+    "standard_error": "se_pcc",
+    "standard_error_note": null,
+    "evidence": "t_match:t_stat"
+   },
+   "effect_units": "partial correlation coefficient",
+   "direction_note": null,
+   "column_mapping_verified_by": null,
+   "in_harmonised_table": true,
+   "reconciliation": {
+    "n_estimates_reported_in_paper": 2819,
+    "n_rows_in_harmonised_table": 2819,
+    "note": "matches the paper"
+   },
+   "excluded_from_harmonised_because": null,
+   "duplicate_of": null,
+   "license": "CC-BY-4.0"
+  },
+  {
+   "id": "climate",
+   "paper": {
+    "title": "Publication Bias in Measuring Anthropogenic Climate Change",
+    "authors": [
+     "Dominika Reckova",
+     "Zuzana Irsova"
+    ],
+    "year": 2015,
+    "journal": "Energy and Environment",
+    "doi": "https://doi.org/10.1260/0958-305x.26.5.853",
+    "url": "https://meta-analysis.cz/climate/"
+   },
+   "description": "Meta-analysis of 48 estimates finds publication bias inflates climate sensitivity; corrected range is 1.4-2.3°C.",
+   "n_estimates": 48,
+   "n_variables": 27,
+   "source_file": "https://meta-analysis.cz/climate/climate.dta",
+   "source_sheet": null,
+   "files": {
+    "parquet": "https://meta-analysis.cz/data/v1/climate/climate.parquet",
+    "csv": "https://meta-analysis.cz/data/v1/climate/climate.csv",
+    "codebook": "https://meta-analysis.cz/api/v1/codebooks/climate.json"
+   },
+   "core_columns": {
+    "effect": "estimate",
+    "standard_error": "se_low",
+    "standard_error_note": null,
+    "evidence": "plausible"
+   },
+   "effect_units": "degrees Celsius",
+   "direction_note": null,
+   "column_mapping_verified_by": "climate.do builds prec=1/se_low and runs all FAT-PET and funnel regressions on se_low; se_up appears only in one robustness line",
+   "in_harmonised_table": true,
+   "reconciliation": {
+    "n_estimates_reported_in_paper": null,
+    "n_rows_in_harmonised_table": 48,
+    "note": null
+   },
+   "excluded_from_harmonised_because": null,
+   "duplicate_of": null,
+   "license": "CC-BY-4.0"
+  },
+  {
+   "id": "competition",
+   "paper": {
+    "title": "Bank Competition and Financial Stability: Much Ado About Nothing?",
+    "authors": [
+     "Diana Zigraiova",
+     "Tomas Havranek"
+    ],
+    "year": 2016,
+    "journal": "Journal of Economic Surveys",
+    "doi": "https://doi.org/10.1111/joes.12131",
+    "url": "https://meta-analysis.cz/competition/"
+   },
+   "description": "A meta-analysis of 598 estimates from 31 studies finding little relationship between bank competition and financial stability.",
+   "n_estimates": 598,
+   "n_variables": 39,
+   "source_file": "https://meta-analysis.cz/competition/competition.xlsx",
+   "source_sheet": "List1",
+   "files": {
+    "parquet": "https://meta-analysis.cz/data/v1/competition/competition.parquet",
+    "csv": "https://meta-analysis.cz/data/v1/competition/competition.csv",
+    "codebook": "https://meta-analysis.cz/api/v1/codebooks/competition.json"
+   },
+   "core_columns": {
+    "effect": "PCC",
+    "standard_error": "SE PCC",
+    "standard_error_note": null,
+    "evidence": "t_match:t"
+   },
+   "effect_units": "partial correlation coefficient",
+   "direction_note": null,
+   "column_mapping_verified_by": null,
+   "in_harmonised_table": true,
+   "reconciliation": {
+    "n_estimates_reported_in_paper": 598,
+    "n_rows_in_harmonised_table": 598,
+    "note": "matches the paper"
+   },
+   "excluded_from_harmonised_because": null,
+   "duplicate_of": null,
+   "license": "CC-BY-4.0"
+  },
+  {
+   "id": "discrate",
+   "paper": {
+    "title": "Individual Discount Rates: A Meta-Analysis of Experimental Evidence",
+    "authors": [
+     "Jindrich Matousek",
+     "Tomas Havranek",
+     "Zuzana Irsova"
+    ],
+    "year": 2022,
+    "journal": "Experimental Economics",
+    "doi": "https://doi.org/10.1007/s10683-021-09716-9",
+    "url": "https://meta-analysis.cz/discrate/"
+   },
+   "description": "Meta-analysis of experimental discount-rate estimates finds publication bias and a corrected mean annual rate of 0.33.",
+   "n_estimates": 927,
+   "n_variables": 38,
+   "source_file": "https://meta-analysis.cz/discrate/discrate.dta",
+   "source_sheet": null,
+   "files": {
+    "parquet": "https://meta-analysis.cz/data/v1/discrate/discrate.parquet",
+    "csv": "https://meta-analysis.cz/data/v1/discrate/discrate.csv",
+    "codebook": "https://meta-analysis.cz/api/v1/codebooks/discrate.json"
+   },
+   "core_columns": {
+    "effect": "discrate",
+    "standard_error": "standard_error",
+    "standard_error_note": null,
+    "evidence": "plausible"
+   },
+   "effect_units": "annual discount rate",
+   "direction_note": null,
+   "column_mapping_verified_by": null,
+   "in_harmonised_table": true,
+   "reconciliation": {
+    "n_estimates_reported_in_paper": null,
+    "n_rows_in_harmonised_table": 539,
+    "note": null
+   },
+   "excluded_from_harmonised_because": null,
+   "duplicate_of": null,
+   "license": "CC-BY-4.0"
+  },
+  {
+   "id": "dst",
+   "paper": {
+    "title": "Does Daylight Saving Save Electricity? A Meta-Analysis",
+    "authors": [
+     "Tomas Havranek",
+     "Dominik Herman",
+     "Zuzana Irsova"
+    ],
+    "year": 2018,
+    "journal": "Energy Journal",
+    "doi": "https://doi.org/10.5547/01956574.39.2.thav",
+    "url": "https://meta-analysis.cz/dst/"
+   },
+   "description": "A meta-analysis of 162 estimates from 44 studies finds daylight saving time yields slight electricity savings of about 0.34%.",
+   "n_estimates": 162,
+   "n_variables": 36,
+   "source_file": "https://meta-analysis.cz/dst/dst.xlsx",
+   "source_sheet": "STATA",
+   "files": {
+    "parquet": "https://meta-analysis.cz/data/v1/dst/dst.parquet",
+    "csv": "https://meta-analysis.cz/data/v1/dst/dst.csv",
+    "codebook": "https://meta-analysis.cz/api/v1/codebooks/dst.json"
+   },
+   "core_columns": {
+    "effect": "ESTIMATE",
+    "standard_error": "SE",
+    "standard_error_note": null,
+    "evidence": "t_match:TSTAT"
+   },
+   "effect_units": "percent",
+   "direction_note": "Positive values denote electricity SAVINGS. The abstract writes savings as positive, the body as negative; this column follows the abstract.",
+   "column_mapping_verified_by": null,
+   "in_harmonised_table": true,
+   "reconciliation": {
+    "n_estimates_reported_in_paper": 162,
+    "n_rows_in_harmonised_table": 101,
+    "note": "fewer rows than the paper reports; see this dataset's note and column_mapping_verified_by for the reason (usually a missing standard error on the remainder, occasionally a published file narrower than the paper's sample)"
+   },
+   "excluded_from_harmonised_because": null,
+   "duplicate_of": null,
+   "license": "CC-BY-4.0"
+  },
+  {
+   "id": "education",
+   "paper": {
+    "title": "Publication Bias in Measuring the Impact of Tuition on Enrollment",
+    "authors": [
+     "Tomas Havranek",
+     "Zuzana Irsova",
+     "Olesia Zeynalova"
+    ],
+    "year": 2018,
+    "journal": "Oxford Bulletin of Economics and Statistics",
+    "doi": "https://doi.org/10.1111/obes.12240",
+    "url": "https://meta-analysis.cz/education/"
+   },
+   "description": "Meta-analysis of 443 estimates finds the tuition-enrollment elasticity is near zero once publication bias is corrected.",
+   "n_estimates": 442,
+   "n_variables": 50,
+   "source_file": "https://meta-analysis.cz/education/education.xlsx",
+   "source_sheet": "data",
+   "files": {
+    "parquet": "https://meta-analysis.cz/data/v1/education/education.parquet",
+    "csv": "https://meta-analysis.cz/data/v1/education/education.csv",
+    "codebook": "https://meta-analysis.cz/api/v1/codebooks/education.json"
+   },
+   "core_columns": {
+    "effect": "pcc",
+    "standard_error": "pcc_se",
+    "standard_error_note": null,
+    "evidence": "t_match:tstat"
+   },
+   "effect_units": "partial correlation coefficient",
+   "direction_note": null,
+   "column_mapping_verified_by": null,
+   "in_harmonised_table": true,
+   "reconciliation": {
+    "n_estimates_reported_in_paper": 443,
+    "n_rows_in_harmonised_table": 442,
+    "note": "matches the paper"
+   },
+   "excluded_from_harmonised_because": null,
+   "duplicate_of": null,
+   "license": "CC-BY-4.0"
+  },
+  {
+   "id": "eis",
+   "paper": {
+    "title": "Publication Bias in Measuring Intertemporal Substitution",
+    "authors": [
+     "Tomas Havranek"
+    ],
+    "year": 2015,
+    "journal": "Journal of the European Economic Association",
+    "doi": "https://doi.org/10.1111/jeea.12133",
+    "url": "https://meta-analysis.cz/eis/"
+   },
+   "description": "Meta-analysis of 2,735 EIS estimates finds strong selective reporting inflates the elasticity of intertemporal substitution.",
+   "n_estimates": 2735,
+   "n_variables": 52,
+   "source_file": "eis/eis.dta",
+   "source_sheet": null,
+   "files": {
+    "parquet": "https://meta-analysis.cz/data/v1/eis/eis.parquet",
+    "csv": "https://meta-analysis.cz/data/v1/eis/eis.csv",
+    "codebook": "https://meta-analysis.cz/api/v1/codebooks/eis.json"
+   },
+   "core_columns": {
+    "effect": "eis",
+    "standard_error": "se",
+    "standard_error_note": null,
+    "evidence": "plausible"
+   },
+   "effect_units": "elasticity",
+   "direction_note": null,
+   "column_mapping_verified_by": null,
+   "in_harmonised_table": true,
+   "reconciliation": {
+    "n_estimates_reported_in_paper": 2735,
+    "n_rows_in_harmonised_table": 2735,
+    "note": "matches the paper"
+   },
+   "excluded_from_harmonised_because": null,
+   "duplicate_of": null,
+   "license": "CC-BY-4.0"
+  },
+  {
+   "id": "electricity",
+   "paper": {
+    "title": "Price Elasticity of Electricity Demand: A Meta-Analysis",
+    "authors": [
+     "Peter Kudela",
+     "Tomas Havranek",
+     "Zuzana Irsova",
+     "Anna Kudelova",
+     "Vojtech Sikl"
+    ],
+    "year": 2026,
+    "journal": null,
+    "doi": null,
+    "url": "https://meta-analysis.cz/electricity/"
+   },
+   "description": "Meta-analysis of the price elasticity of electricity demand: no increase in price responsiveness despite ninety years of technological change.",
+   "n_estimates": 4720,
+   "n_variables": 72,
+   "source_file": "https://meta-analysis.cz/electricity/electricity.xlsx",
+   "source_sheet": "data",
+   "files": {
+    "parquet": "https://meta-analysis.cz/data/v1/electricity/electricity.parquet",
+    "csv": "https://meta-analysis.cz/data/v1/electricity/electricity.csv",
+    "codebook": "https://meta-analysis.cz/api/v1/codebooks/electricity.json"
+   },
+   "core_columns": {
+    "effect": "effect",
+    "standard_error": "se",
+    "standard_error_note": null,
+    "evidence": "plausible"
+   },
+   "effect_units": "elasticity",
+   "direction_note": null,
+   "column_mapping_verified_by": null,
+   "in_harmonised_table": true,
+   "reconciliation": {
+    "n_estimates_reported_in_paper": null,
+    "n_rows_in_harmonised_table": 4720,
+    "note": null
+   },
+   "excluded_from_harmonised_because": null,
+   "duplicate_of": null,
+   "license": "CC-BY-4.0"
+  },
+  {
+   "id": "esg",
+   "paper": {
+    "title": "Do Female Directors Raise ESG Ratings? A Meta-Analysis",
+    "authors": [
+     "Karolina Hozova",
+     "Tomas Havranek",
+     "Zuzana Irsova"
+    ],
+    "year": 2026,
+    "journal": null,
+    "doi": null,
+    "url": "https://meta-analysis.cz/esg/"
+   },
+   "description": "Meta-analysis of 533 estimates from 106 studies on whether female board directors raise corporate ESG ratings.",
+   "n_estimates": 533,
+   "n_variables": 65,
+   "source_file": "https://meta-analysis.cz/esg/esg_data.xlsx",
+   "source_sheet": "Data",
+   "files": {
+    "parquet": "https://meta-analysis.cz/data/v1/esg/esg.parquet",
+    "csv": "https://meta-analysis.cz/data/v1/esg/esg.csv",
+    "codebook": "https://meta-analysis.cz/api/v1/codebooks/esg.json"
+   },
+   "core_columns": {
+    "effect": "estimate",
+    "standard_error": "se_estimate",
+    "standard_error_note": null,
+    "evidence": "t_match:t_stat"
+   },
+   "effect_units": "ESG rating points",
+   "direction_note": "Points on the Bloomberg/LSEG ESG scale per percentage point of board gender diversity, not a percent change.",
+   "column_mapping_verified_by": null,
+   "in_harmonised_table": true,
+   "reconciliation": {
+    "n_estimates_reported_in_paper": 533,
+    "n_rows_in_harmonised_table": 533,
+    "note": "matches the paper"
+   },
+   "excluded_from_harmonised_because": null,
+   "duplicate_of": null,
+   "license": "CC-BY-4.0"
+  },
+  {
+   "id": "euro",
+   "paper": {
+    "title": "A Meta-Analysis of the Trade Effect of the Euro",
+    "authors": [
+     "Tomas Havranek"
+    ],
+    "year": 2010,
+    "journal": "Review of World Economics",
+    "doi": "https://doi.org/10.1007/s10290-010-0050-1",
+    "url": "https://meta-analysis.cz/euro/"
+   },
+   "description": "Meta-analysis finds the euro's trade-promoting effect is insignificant once publication bias is corrected for.",
+   "n_estimates": 61,
+   "n_variables": 48,
+   "source_file": "https://meta-analysis.cz/euro/trade_meta.dta",
+   "source_sheet": null,
+   "files": {
+    "parquet": "https://meta-analysis.cz/data/v1/euro/euro.parquet",
+    "csv": "https://meta-analysis.cz/data/v1/euro/euro.csv",
+    "codebook": "https://meta-analysis.cz/api/v1/codebooks/euro.json"
+   },
+   "core_columns": {
+    "effect": "gamma",
+    "standard_error": "se",
+    "standard_error_note": null,
+    "evidence": "t_match:tstat"
+   },
+   "effect_units": "semi-elasticity",
+   "direction_note": "Raw gravity-model coefficient on the currency-union dummy; the headline trade effect is a transform of it.",
+   "column_mapping_verified_by": null,
+   "in_harmonised_table": true,
+   "reconciliation": {
+    "n_estimates_reported_in_paper": null,
+    "n_rows_in_harmonised_table": 61,
+    "note": null
+   },
+   "excluded_from_harmonised_because": null,
+   "duplicate_of": null,
+   "license": "CC-BY-4.0"
+  },
+  {
+   "id": "ews",
+   "status": "excluded",
+   "reason": "country-level crisis database, not extracted estimates",
+   "paper": {
+    "title": null,
+    "url": "https://meta-analysis.cz/ews/"
+   }
+  },
+  {
+   "id": "excess_sensitivity",
+   "paper": {
+    "title": "A Meta-Analysis of the Excess Sensitivity of Consumption to Anticipated Income Changes",
+    "authors": [
+     "Tomas Havranek",
+     "Anna Sokolova"
+    ],
+    "year": 2020,
+    "journal": "Review of Economic Dynamics",
+    "doi": "https://doi.org/10.1016/j.red.2019.05.004",
+    "url": "https://meta-analysis.cz/excess_sensitivity/"
+   },
+   "description": "Meta-analysis of 144 studies finds little excess sensitivity of consumption once micro data, publication bias, and liquidity constraints are addressed.",
+   "n_estimates": 3127,
+   "n_variables": 75,
+   "source_file": "https://meta-analysis.cz/excess_sensitivity/excess.dta",
+   "source_sheet": null,
+   "files": {
+    "parquet": "https://meta-analysis.cz/data/v1/excess_sensitivity/excess_sensitivity.parquet",
+    "csv": "https://meta-analysis.cz/data/v1/excess_sensitivity/excess_sensitivity.csv",
+    "codebook": "https://meta-analysis.cz/api/v1/codebooks/excess_sensitivity.json"
+   },
+   "core_columns": {
+    "effect": "excess",
+    "standard_error": "se",
+    "standard_error_note": null,
+    "evidence": "plausible"
+   },
+   "effect_units": "regression coefficient",
+   "direction_note": null,
+   "column_mapping_verified_by": null,
+   "in_harmonised_table": true,
+   "reconciliation": {
+    "n_estimates_reported_in_paper": null,
+    "n_rows_in_harmonised_table": 3127,
+    "note": null
+   },
+   "excluded_from_harmonised_because": null,
+   "duplicate_of": null,
+   "license": "CC-BY-4.0"
+  },
+  {
+   "id": "fdi",
+   "paper": {
+    "title": "Foreign Capital and Domestic Productivity in the Czech Republic: A Meta-Regression Analysis",
+    "authors": [
+     "Mojmir Hampl",
+     "Tomas Havranek",
+     "Zuzana Irsova"
+    ],
+    "year": 2020,
+    "journal": "Applied Economics",
+    "doi": "https://doi.org/10.1080/00036846.2020.1726864",
+    "url": "https://meta-analysis.cz/fdi/"
+   },
+   "description": "Meta-analysis of 332 estimates finds FDI spillovers raise Czech domestic firm productivity, larger for joint ventures.",
+   "n_estimates": 332,
+   "n_variables": 23,
+   "source_file": "https://meta-analysis.cz/fdi/spillovers.dta",
+   "source_sheet": null,
+   "files": {
+    "parquet": "https://meta-analysis.cz/data/v1/fdi/fdi.parquet",
+    "csv": "https://meta-analysis.cz/data/v1/fdi/fdi.csv",
+    "codebook": "https://meta-analysis.cz/api/v1/codebooks/fdi.json"
+   },
+   "core_columns": {
+    "effect": null,
+    "standard_error": null,
+    "standard_error_note": null,
+    "evidence": null
+   },
+   "effect_units": null,
+   "direction_note": null,
+   "column_mapping_verified_by": "spillovers.R uses e_w (winsorized spillover elasticity) as the response in a Bayesian model averaging regression over moderators; the zip contains only that script and the data. No_of_firms is a log-scaled moderator, not a recoverable N",
+   "in_harmonised_table": false,
+   "reconciliation": {
+    "n_estimates_reported_in_paper": 332,
+    "n_rows_in_harmonised_table": null,
+    "note": null
+   },
+   "excluded_from_harmonised_because": "no per-estimate precision exists: the file has no standard error, t-statistic, weight or inverse-SE column, so SE-based synthesis is impossible",
+   "duplicate_of": null,
+   "license": "CC-BY-4.0"
+  },
+  {
+   "id": "forward",
+   "paper": {
+    "title": "How Puzzling Is the Forward Premium Puzzle? A Meta-Analysis",
+    "authors": [
+     "Diana Zigraiova",
+     "Tomas Havranek",
+     "Jiri Novak"
+    ],
+    "year": 2021,
+    "journal": "European Economic Review",
+    "doi": "https://doi.org/10.1016/j.euroecorev.2021.103714",
+    "url": "https://meta-analysis.cz/forward/"
+   },
+   "description": "Meta-analysis of 3,643 estimates from 91 studies finds forward rate unbiasedness holds better than commonly thought once biases are corrected.",
+   "n_estimates": 3643,
+   "n_variables": 82,
+   "source_file": "https://meta-analysis.cz/forward/forward.dta",
+   "source_sheet": null,
+   "files": {
+    "parquet": "https://meta-analysis.cz/data/v1/forward/forward.parquet",
+    "csv": "https://meta-analysis.cz/data/v1/forward/forward.csv",
+    "codebook": "https://meta-analysis.cz/api/v1/codebooks/forward.json"
+   },
+   "core_columns": {
+    "effect": "Coeff",
+    "standard_error": "SE",
+    "standard_error_note": null,
+    "evidence": "t_match:T"
+   },
+   "effect_units": "regression coefficient",
+   "direction_note": "The null of interest is a slope of 1, not 0. Testing against zero will mislead.",
+   "column_mapping_verified_by": "forward.do runs 'sum beta se' immediately after loading; T and N reproduce ln(Sample_size), so neither is a t-statistic",
+   "in_harmonised_table": true,
+   "reconciliation": {
+    "n_estimates_reported_in_paper": 3643,
+    "n_rows_in_harmonised_table": 3643,
+    "note": "matches the paper"
+   },
+   "excluded_from_harmonised_because": null,
+   "duplicate_of": null,
+   "license": "CC-BY-4.0"
+  },
+  {
+   "id": "frisch",
+   "paper": {
+    "title": "Publication and Identification Biases in Measuring the Intertemporal Substitution of Labor Supply",
+    "authors": [
+     "Ali Elminejad",
+     "Tomas Havranek",
+     "Roman Horvath",
+     "Zuzana Irsova"
+    ],
+    "year": 2023,
+    "journal": "Review of Economic Dynamics",
+    "doi": "https://doi.org/10.1016/j.red.2023.10.001",
+    "url": "https://meta-analysis.cz/frisch/"
+   },
+   "description": "Meta-analysis of over 700 estimates finds publication bias inflates the Frisch labor supply elasticity, with a corrected total hours elasticity near 0.25.",
+   "n_estimates": 723,
+   "n_variables": 49,
+   "source_file": "https://meta-analysis.cz/frisch/frisch.dta",
+   "source_sheet": null,
+   "files": {
+    "parquet": "https://meta-analysis.cz/data/v1/frisch/frisch.parquet",
+    "csv": "https://meta-analysis.cz/data/v1/frisch/frisch.csv",
+    "codebook": "https://meta-analysis.cz/api/v1/codebooks/frisch.json"
+   },
+   "core_columns": {
+    "effect": "frisch",
+    "standard_error": "se",
+    "standard_error_note": null,
+    "evidence": "plausible"
+   },
+   "effect_units": "elasticity",
+   "direction_note": null,
+   "column_mapping_verified_by": null,
+   "in_harmonised_table": true,
+   "reconciliation": {
+    "n_estimates_reported_in_paper": 700,
+    "n_rows_in_harmonised_table": 532,
+    "note": "fewer rows than the paper reports; see this dataset's note and column_mapping_verified_by for the reason (usually a missing standard error on the remainder, occasionally a published file narrower than the paper's sample)"
+   },
+   "excluded_from_harmonised_because": null,
+   "duplicate_of": null,
+   "license": "CC-BY-4.0"
+  },
+  {
+   "id": "gasoline",
+   "paper": {
+    "title": "A Meta-Analysis of the Income Elasticity of Gasoline Demand",
+    "authors": [
+     "Tomas Havranek",
+     "Ondrej Kokes"
+    ],
+    "year": 2015,
+    "journal": "Energy Economics",
+    "doi": "https://doi.org/10.1016/j.eneco.2014.11.004",
+    "url": "https://meta-analysis.cz/gasoline/"
+   },
+   "description": "Meta-regression corrects for publication bias, finding gasoline demand income elasticity of 0.1 short run and 0.23 long run.",
+   "n_estimates": 701,
+   "n_variables": 32,
+   "source_file": "https://meta-analysis.cz/gasoline/gas_income_revision.dta",
+   "source_sheet": null,
+   "files": {
+    "parquet": "https://meta-analysis.cz/data/v1/gasoline/gasoline.parquet",
+    "csv": "https://meta-analysis.cz/data/v1/gasoline/gasoline.csv",
+    "codebook": "https://meta-analysis.cz/api/v1/codebooks/gasoline.json"
+   },
+   "core_columns": {
+    "effect": "e",
+    "standard_error": null,
+    "standard_error_note": "<derived: |e/tstat|>",
+    "evidence": "se_derived_from:tstat"
+   },
+   "effect_units": "elasticity",
+   "direction_note": null,
+   "column_mapping_verified_by": null,
+   "in_harmonised_table": true,
+   "reconciliation": {
+    "n_estimates_reported_in_paper": null,
+    "n_rows_in_harmonised_table": 701,
+    "note": null
+   },
+   "excluded_from_harmonised_because": null,
+   "duplicate_of": null,
+   "license": "CC-BY-4.0"
+  },
+  {
+   "id": "gasoline_price",
+   "paper": {
+    "title": "A Meta-Analysis of the Price Elasticity of Gasoline Demand",
+    "authors": [
+     "Tomas Havranek",
+     "Zuzana Irsova",
+     "Karel Janda"
+    ],
+    "year": 2012,
+    "journal": "Energy Economics",
+    "doi": "https://doi.org/10.1016/j.eneco.2011.09.003",
+    "url": "https://meta-analysis.cz/gasoline_price/"
+   },
+   "description": "Meta-analysis shows published gasoline demand elasticities are exaggerated twofold due to publication selection bias.",
+   "n_estimates": 202,
+   "n_variables": 11,
+   "source_file": "https://meta-analysis.cz/gasoline_price/papers_revised.xls",
+   "source_sheet": "data",
+   "files": {
+    "parquet": "https://meta-analysis.cz/data/v1/gasoline_price/gasoline_price.parquet",
+    "csv": "https://meta-analysis.cz/data/v1/gasoline_price/gasoline_price.csv",
+    "codebook": "https://meta-analysis.cz/api/v1/codebooks/gasoline_price.json"
+   },
+   "core_columns": {
+    "effect": "e",
+    "standard_error": "se",
+    "standard_error_note": null,
+    "evidence": "t_match:t"
+   },
+   "effect_units": "elasticity",
+   "direction_note": "Negative by convention: demand falls as price rises.",
+   "column_mapping_verified_by": null,
+   "in_harmonised_table": true,
+   "reconciliation": {
+    "n_estimates_reported_in_paper": null,
+    "n_rows_in_harmonised_table": 202,
+    "note": null
+   },
+   "excluded_from_harmonised_because": null,
+   "duplicate_of": null,
+   "license": "CC-BY-4.0"
+  },
+  {
+   "id": "habits",
+   "paper": {
+    "title": "Habit Formation in Consumption: A Meta-Analysis",
+    "authors": [
+     "Tomas Havranek",
+     "Marek Rusnak",
+     "Anna Sokolova"
+    ],
+    "year": 2017,
+    "journal": "European Economic Review",
+    "doi": "https://doi.org/10.1016/j.euroecorev.2017.03.009",
+    "url": "https://meta-analysis.cz/habits/"
+   },
+   "description": "Meta-analysis of 597 estimates finds habit formation averages 0.4, with macro data yielding larger estimates than micro data.",
+   "n_estimates": 606,
+   "n_variables": 41,
+   "source_file": "https://meta-analysis.cz/habits/habit.dta",
+   "source_sheet": null,
+   "files": {
+    "parquet": "https://meta-analysis.cz/data/v1/habits/habits.parquet",
+    "csv": "https://meta-analysis.cz/data/v1/habits/habits.csv",
+    "codebook": "https://meta-analysis.cz/api/v1/codebooks/habits.json"
+   },
+   "core_columns": {
+    "effect": "habit",
+    "standard_error": "se",
+    "standard_error_note": null,
+    "evidence": "plausible"
+   },
+   "effect_units": "habit persistence parameter",
+   "direction_note": "Unitless, normally bounded by 0 (no habit) and 1 (full persistence).",
+   "column_mapping_verified_by": null,
+   "in_harmonised_table": true,
+   "reconciliation": {
+    "n_estimates_reported_in_paper": 597,
+    "n_rows_in_harmonised_table": 597,
+    "note": "matches the paper"
+   },
+   "excluded_from_harmonised_because": null,
+   "duplicate_of": null,
+   "license": "CC-BY-4.0"
+  },
+  {
+   "id": "hedge",
+   "paper": {
+    "title": "Hedge Fund Performance: A Meta-Analysis",
+    "authors": [
+     "Fan Yang",
+     "Tomas Havranek",
+     "Zuzana Irsova",
+     "Jiri Novak"
+    ],
+    "year": 2024,
+    "journal": "Journal of Economic Surveys",
+    "doi": "https://doi.org/10.1111/joes.12574",
+    "url": "https://meta-analysis.cz/hedge/"
+   },
+   "description": "Quantitative survey of 1,019 hedge fund alpha estimates from 74 studies finds little evidence of publication selection bias.",
+   "n_estimates": 1019,
+   "n_variables": 29,
+   "source_file": "https://meta-analysis.cz/hedge/hedge.xlsx",
+   "source_sheet": "data",
+   "files": {
+    "parquet": "https://meta-analysis.cz/data/v1/hedge/hedge.parquet",
+    "csv": "https://meta-analysis.cz/data/v1/hedge/hedge.csv",
+    "codebook": "https://meta-analysis.cz/api/v1/codebooks/hedge.json"
+   },
+   "core_columns": {
+    "effect": "alpha",
+    "standard_error": "se",
+    "standard_error_note": null,
+    "evidence": "t_match:tstat"
+   },
+   "effect_units": "percent",
+   "direction_note": "Monthly return, not annualised.",
+   "column_mapping_verified_by": null,
+   "in_harmonised_table": true,
+   "reconciliation": {
+    "n_estimates_reported_in_paper": null,
+    "n_rows_in_harmonised_table": 1019,
+    "note": null
+   },
+   "excluded_from_harmonised_because": null,
+   "duplicate_of": null,
+   "license": "CC-BY-4.0"
+  },
+  {
+   "id": "house_prices",
+   "paper": {
+    "title": "When Does Monetary Policy Sway House Prices? A Meta-Analysis",
+    "authors": [
+     "Dominika Ehrenbergerova",
+     "Josef Bajzik",
+     "Tomas Havranek"
+    ],
+    "year": 2023,
+    "journal": "IMF Economic Review",
+    "doi": "https://doi.org/10.1057/s41308-022-00185-5",
+    "url": "https://meta-analysis.cz/house_prices/"
+   },
+   "description": "A meta-analysis of 1,555 estimates from 37 studies across 45 countries finds publication bias exaggerates the effect of interest rates on house prices.",
+   "n_estimates": 1785,
+   "n_variables": 123,
+   "source_file": "https://meta-analysis.cz/house_prices/house.dta",
+   "source_sheet": null,
+   "files": {
+    "parquet": "https://meta-analysis.cz/data/v1/house_prices/house_prices.parquet",
+    "csv": "https://meta-analysis.cz/data/v1/house_prices/house_prices.csv",
+    "codebook": "https://meta-analysis.cz/api/v1/codebooks/house_prices.json"
+   },
+   "core_columns": {
+    "effect": "est",
+    "standard_error": "SE_l",
+    "standard_error_note": null,
+    "evidence": "plausible"
+   },
+   "effect_units": "semi-elasticity",
+   "direction_note": "Negative is the expected direction: higher policy rates lower house prices. One row per impulse-response horizon.",
+   "column_mapping_verified_by": "house.do rescales est to percent and sets SE=(SE_l+SE_u)/2; seraw is populated on only 40 of 1785 rows. Restricting to inlevels==1 (the paper's own main sample) yields exactly 1,555 usable estimates, matching the abstract; the 126 growths==1 rows are a different specification.",
+   "in_harmonised_table": true,
+   "reconciliation": {
+    "n_estimates_reported_in_paper": 1555,
+    "n_rows_in_harmonised_table": 1555,
+    "note": "matches the paper"
+   },
+   "excluded_from_harmonised_because": null,
+   "duplicate_of": null,
+   "license": "CC-BY-4.0"
+  },
+  {
+   "id": "incentives",
+   "paper": {
+    "title": "Financial Incentives and Performance: A Meta-Analysis of Experiments in Economics",
+    "authors": [
+     "Petr Cala",
+     "Tomas Havranek",
+     "Zuzana Irsova",
+     "Martina Luskova",
+     "Jindrich Matousek",
+     "Jiri Novak"
+    ],
+    "year": 2026,
+    "journal": "Journal of Political Economy Microeconomics",
+    "doi": null,
+    "url": "https://meta-analysis.cz/incentives/"
+   },
+   "description": "Meta-analysis of 2,193 estimates finds financial incentives have near-zero corrected effect on performance in most field settings.",
+   "n_estimates": 2193,
+   "n_variables": 72,
+   "source_file": "https://meta-analysis.cz/incentives/incentives.xlsx",
+   "source_sheet": "data",
+   "files": {
+    "parquet": "https://meta-analysis.cz/data/v1/incentives/incentives.parquet",
+    "csv": "https://meta-analysis.cz/data/v1/incentives/incentives.csv",
+    "codebook": "https://meta-analysis.cz/api/v1/codebooks/incentives.json"
+   },
+   "core_columns": {
+    "effect": "cohens_d",
+    "standard_error": "se_cohens_d",
+    "standard_error_note": null,
+    "evidence": "plausible"
+   },
+   "effect_units": "Cohen's d",
+   "direction_note": null,
+   "column_mapping_verified_by": null,
+   "in_harmonised_table": true,
+   "reconciliation": {
+    "n_estimates_reported_in_paper": 2193,
+    "n_rows_in_harmonised_table": 2193,
+    "note": "matches the paper"
+   },
+   "excluded_from_harmonised_because": null,
+   "duplicate_of": null,
+   "license": "CC-BY-4.0"
+  },
+  {
+   "id": "inflation",
+   "paper": {
+    "title": "Optimal Inflation Rate: A Meta-Analysis",
+    "authors": [
+     "Matej Opatrny",
+     "Martin Opatrny",
+     "Tomas Havranek",
+     "Zuzana Irsova",
+     "Mojmir Hampl"
+    ],
+    "year": 2026,
+    "journal": null,
+    "doi": null,
+    "url": "https://meta-analysis.cz/inflation/"
+   },
+   "description": "Meta-analysis of 777 estimates from 116 studies finds an optimal long-run inflation rate near 0.6% per year, below common two-percent central-bank targets.",
+   "n_estimates": 885,
+   "n_variables": 179,
+   "source_file": "https://meta-analysis.cz/inflation/inflation_v34.dta",
+   "source_sheet": null,
+   "files": {
+    "parquet": "https://meta-analysis.cz/data/v1/inflation/inflation.parquet",
+    "csv": "https://meta-analysis.cz/data/v1/inflation/inflation.csv",
+    "codebook": "https://meta-analysis.cz/api/v1/codebooks/inflation.json"
+   },
+   "core_columns": {
+    "effect": "Estimate_win",
+    "standard_error": "SE_win",
+    "standard_error_note": null,
+    "evidence": "t_match:tstat"
+   },
+   "effect_units": "percentage points",
+   "direction_note": null,
+   "column_mapping_verified_by": null,
+   "in_harmonised_table": true,
+   "reconciliation": {
+    "n_estimates_reported_in_paper": 777,
+    "n_rows_in_harmonised_table": 702,
+    "note": "matches the paper"
+   },
+   "excluded_from_harmonised_because": null,
+   "duplicate_of": null,
+   "license": "CC-BY-4.0"
+  },
+  {
+   "id": "lags",
+   "paper": {
+    "title": "Transmission Lags of Monetary Policy: A Meta-Analysis",
+    "authors": [
+     "Tomas Havranek",
+     "Marek Rusnak"
+    ],
+    "year": 2013,
+    "journal": "International Journal of Central Banking",
+    "doi": null,
+    "url": "https://meta-analysis.cz/lags/"
+   },
+   "description": "A meta-analysis of 67 studies finds monetary policy transmission lags average 29 months, longer in developed than transition economies.",
+   "n_estimates": 1519,
+   "n_variables": 151,
+   "source_file": "https://meta-analysis.cz/lags/lags.xls",
+   "source_sheet": "stata",
+   "files": {
+    "parquet": "https://meta-analysis.cz/data/v1/lags/lags.parquet",
+    "csv": "https://meta-analysis.cz/data/v1/lags/lags.csv",
+    "codebook": "https://meta-analysis.cz/api/v1/codebooks/lags.json"
+   },
+   "core_columns": {
+    "effect": "lags",
+    "standard_error": "ci_se",
+    "standard_error_note": null,
+    "evidence": "plausible"
+   },
+   "effect_units": null,
+   "direction_note": null,
+   "column_mapping_verified_by": "lags.do keeps horizon==99 and models mon_bot directly; the se/up/low on that row belong to the price-response magnitude, not to the lag",
+   "in_harmonised_table": false,
+   "reconciliation": {
+    "n_estimates_reported_in_paper": null,
+    "n_rows_in_harmonised_table": null,
+    "note": null
+   },
+   "excluded_from_harmonised_because": "outcome is the transmission lag (mon_bot, months to the price trough); it has no sampling standard error, so it cannot enter an effect/SE table",
+   "duplicate_of": null,
+   "license": "CC-BY-4.0"
+  },
+  {
+   "id": "learning",
+   "paper": {
+    "title": "Publication Bias and P-Hacking in the Effect of COVID-19 on Learning: A Meta-Analysis",
+    "authors": [
+     "Martina Luskova",
+     "Nino Buliskeria",
+     "Ali Elminejad",
+     "Tomas Havranek",
+     "Zuzana Irsova",
+     "Stepan Jurajda",
+     "Marek Kapicka"
+    ],
+    "year": 2026,
+    "journal": null,
+    "doi": null,
+    "url": "https://meta-analysis.cz/learning/"
+   },
+   "description": "Meta-analysis of COVID-19 learning loss: bias-corrected RoBMA and MAIVE estimates converge on about -0.12 SD, roughly 30% of a school year.",
+   "n_estimates": 291,
+   "n_variables": 13,
+   "source_file": "https://meta-analysis.cz/learning/learning_loss_data.xlsx",
+   "source_sheet": "Betthäuser",
+   "files": {
+    "parquet": "https://meta-analysis.cz/data/v1/learning/learning.parquet",
+    "csv": "https://meta-analysis.cz/data/v1/learning/learning.csv",
+    "codebook": "https://meta-analysis.cz/api/v1/codebooks/learning.json"
+   },
+   "core_columns": {
+    "effect": "es",
+    "standard_error": "se",
+    "standard_error_note": null,
+    "evidence": "t_match:z"
+   },
+   "effect_units": "standardised mean difference",
+   "direction_note": "Negative values are learning LOSS.",
+   "column_mapping_verified_by": null,
+   "in_harmonised_table": true,
+   "reconciliation": {
+    "n_estimates_reported_in_paper": null,
+    "n_rows_in_harmonised_table": 291,
+    "note": null
+   },
+   "excluded_from_harmonised_because": null,
+   "duplicate_of": null,
+   "license": "CC-BY-4.0"
+  },
+  {
+   "id": "maive",
+   "status": "excluded",
+   "reason": "Bartos et al. cross-field archive (external), not a Havranek literature",
+   "paper": {
+    "title": "Meta-Analysis Instrumental Variable Estimator",
+    "url": "https://meta-analysis.cz/maive/"
+   }
+  },
+  {
+   "id": "migrant",
+   "paper": {
+    "title": "The Elasticity of Substitution between Native and Immigrant Labor: A Meta-Analysis",
+    "authors": [
+     "Klara Kantova",
+     "Tomas Havranek",
+     "Zuzana Irsova",
+     "Jiri Schwarz"
+    ],
+    "year": 2026,
+    "journal": null,
+    "doi": null,
+    "url": "https://meta-analysis.cz/migrant/"
+   },
+   "description": "Meta-analysis of 1,091 estimates finds native-immigrant labor substitution elasticity rises from 13 to about 22 after bias correction.",
+   "n_estimates": 1091,
+   "n_variables": 57,
+   "source_file": "https://meta-analysis.cz/migrant/migrant.xlsx",
+   "source_sheet": "Sheet1",
+   "files": {
+    "parquet": "https://meta-analysis.cz/data/v1/migrant/migrant.parquet",
+    "csv": "https://meta-analysis.cz/data/v1/migrant/migrant.csv",
+    "codebook": "https://meta-analysis.cz/api/v1/codebooks/migrant.json"
+   },
+   "core_columns": {
+    "effect": "elasticity",
+    "standard_error": "se",
+    "standard_error_note": null,
+    "evidence": "t_match:tstat"
+   },
+   "effect_units": "elasticity",
+   "direction_note": "Stored as a negative inverse elasticity; a sign flip and inversion are needed to read it as the substitution elasticity discussed in the paper. Verify before pooling.",
+   "column_mapping_verified_by": null,
+   "in_harmonised_table": true,
+   "reconciliation": {
+    "n_estimates_reported_in_paper": 1091,
+    "n_rows_in_harmonised_table": 1091,
+    "note": "matches the paper"
+   },
+   "excluded_from_harmonised_because": null,
+   "duplicate_of": null,
+   "license": "CC-BY-4.0"
+  },
+  {
+   "id": "pcc",
+   "status": "excluded",
+   "reason": "Google Scholar search listing, not extracted estimates",
+   "paper": {
+    "title": "Meta-analyses of partial correlations are biased: Detection and solutions",
+    "url": "https://meta-analysis.cz/pcc/"
+   }
+  },
+  {
+   "id": "price_puzzle",
+   "paper": {
+    "title": "How to Solve the Price Puzzle? A Meta-Analysis",
+    "authors": [
+     "Marek Rusnak",
+     "Tomas Havranek",
+     "Roman Horvath"
+    ],
+    "year": 2013,
+    "journal": "Journal of Money, Credit and Banking",
+    "doi": "https://doi.org/10.1111/j.1538-4616.2012.00561.x",
+    "url": "https://meta-analysis.cz/price_puzzle/"
+   },
+   "description": "Meta-analysis of 1,000 VAR estimates shows the price puzzle stems from model misspecification, not a true price effect.",
+   "n_estimates": 1519,
+   "n_variables": 151,
+   "source_file": "https://meta-analysis.cz/price_puzzle/puzzle.xls",
+   "source_sheet": "stata",
+   "files": {
+    "parquet": "https://meta-analysis.cz/data/v1/price_puzzle/price_puzzle.parquet",
+    "csv": "https://meta-analysis.cz/data/v1/price_puzzle/price_puzzle.csv",
+    "codebook": "https://meta-analysis.cz/api/v1/codebooks/price_puzzle.json"
+   },
+   "core_columns": {
+    "effect": "idauthor",
+    "standard_error": "ci_se",
+    "standard_error_note": null,
+    "evidence": "plausible"
+   },
+   "effect_units": "percent",
+   "direction_note": "Positive values are the puzzling price INCREASE after a contraction; theory expects negative. One row per horizon.",
+   "column_mapping_verified_by": "puzzle.do computes t=res/se and prec=1/se on the long form restricted to horizon in {3,6,12,18,36}; the published file is wide, so the M{h}R / SE{h} pairs are reshaped here to reproduce it. Median |t| is 0.75-0.91 across horizons, consistent with the literature's mostly insignificant responses.",
+   "in_harmonised_table": true,
+   "reconciliation": {
+    "n_estimates_reported_in_paper": null,
+    "n_rows_in_harmonised_table": 7420,
+    "note": null
+   },
+   "excluded_from_harmonised_because": null,
+   "duplicate_of": "lags",
+   "license": "CC-BY-4.0",
+   "note": "Same underlying data as 'lags'; excluded from the harmonised table to avoid double counting."
+  },
+  {
+   "id": "reforms",
+   "paper": {
+    "title": "Structural Reforms and Economic Growth: A Meta-Analysis",
+    "authors": [
+     "Jan Babecky",
+     "Tomas Havranek"
+    ],
+    "year": 2014,
+    "journal": "Economics of Transition",
+    "doi": "https://doi.org/10.1111/ecot.12029",
+    "url": "https://meta-analysis.cz/reforms/"
+   },
+   "description": "Meta-analysis of 46 studies finds structural reforms in transition countries carry short-run costs but strong long-run growth benefits.",
+   "n_estimates": 456,
+   "n_variables": 42,
+   "source_file": "https://meta-analysis.cz/reforms/reform.xls",
+   "source_sheet": "reform",
+   "files": {
+    "parquet": "https://meta-analysis.cz/data/v1/reforms/reforms.parquet",
+    "csv": "https://meta-analysis.cz/data/v1/reforms/reforms.csv",
+    "codebook": "https://meta-analysis.cz/api/v1/codebooks/reforms.json"
+   },
+   "core_columns": {
+    "effect": null,
+    "standard_error": null,
+    "standard_error_note": null,
+    "evidence": null
+   },
+   "effect_units": "partial correlation coefficient",
+   "direction_note": "Computed here from the reported t-statistic and degrees of freedom, following the paper's own code.",
+   "column_mapping_verified_by": "reform.do converts lib (the t-statistic on the reform coefficient, NOT a coefficient) to pcor = lib/sqrt(lib^2+df) with se_pcor = sqrt((1-pcor^2)/df); df = n - k holds exactly on all 456 rows",
+   "in_harmonised_table": true,
+   "reconciliation": {
+    "n_estimates_reported_in_paper": null,
+    "n_rows_in_harmonised_table": 287,
+    "note": null
+   },
+   "excluded_from_harmonised_because": null,
+   "duplicate_of": null,
+   "license": "CC-BY-4.0"
+  },
+  {
+   "id": "remittances",
+   "paper": {
+    "title": "Remittances and Economic Growth: A Meta-Analysis",
+    "authors": [
+     "Alina Cazachevici",
+     "Tomas Havranek",
+     "Roman Horvath"
+    ],
+    "year": 2020,
+    "journal": "World Development",
+    "doi": "https://doi.org/10.1016/j.worlddev.2020.105021",
+    "url": "https://meta-analysis.cz/remittances/"
+   },
+   "description": "Meta-analysis of 538 estimates finds remittances have a small positive, publication-bias-corrected effect on growth, stronger in Asia than Africa.",
+   "n_estimates": 538,
+   "n_variables": 71,
+   "source_file": "https://meta-analysis.cz/remittances/remittances.xlsx",
+   "source_sheet": "Data",
+   "files": {
+    "parquet": "https://meta-analysis.cz/data/v1/remittances/remittances.parquet",
+    "csv": "https://meta-analysis.cz/data/v1/remittances/remittances.csv",
+    "codebook": "https://meta-analysis.cz/api/v1/codebooks/remittances.json"
+   },
+   "core_columns": {
+    "effect": "COEF_L",
+    "standard_error": "SE_L",
+    "standard_error_note": null,
+    "evidence": "t_match:TSTAT_L"
+   },
+   "effect_units": "regression coefficient",
+   "direction_note": null,
+   "column_mapping_verified_by": null,
+   "in_harmonised_table": true,
+   "reconciliation": {
+    "n_estimates_reported_in_paper": 538,
+    "n_rows_in_harmonised_table": 490,
+    "note": "matches the paper"
+   },
+   "excluded_from_harmonised_because": null,
+   "duplicate_of": null,
+   "license": "CC-BY-4.0"
+  },
+  {
+   "id": "resource_curse",
+   "paper": {
+    "title": "Natural Resources and Economic Growth: A Meta-Analysis",
+    "authors": [
+     "Tomas Havranek",
+     "Roman Horvath",
+     "Ayaz Zeynalov"
+    ],
+    "year": 2016,
+    "journal": "World Development",
+    "doi": "https://doi.org/10.1016/j.worlddev.2016.07.016",
+    "url": "https://meta-analysis.cz/resource_curse/"
+   },
+   "description": "Meta-analysis of 605 estimates finds weak support for the resource curse once publication bias and methods are addressed.",
+   "n_estimates": 605,
+   "n_variables": 112,
+   "source_file": "https://meta-analysis.cz/resource_curse/resource_curse.dta",
+   "source_sheet": null,
+   "files": {
+    "parquet": "https://meta-analysis.cz/data/v1/resource_curse/resource_curse.parquet",
+    "csv": "https://meta-analysis.cz/data/v1/resource_curse/resource_curse.csv",
+    "codebook": "https://meta-analysis.cz/api/v1/codebooks/resource_curse.json"
+   },
+   "core_columns": {
+    "effect": "PCC",
+    "standard_error": "PCC_SE",
+    "standard_error_note": null,
+    "evidence": "t_match:TSTAT"
+   },
+   "effect_units": "partial correlation coefficient",
+   "direction_note": null,
+   "column_mapping_verified_by": null,
+   "in_harmonised_table": true,
+   "reconciliation": {
+    "n_estimates_reported_in_paper": 605,
+    "n_rows_in_harmonised_table": 605,
+    "note": "matches the paper"
+   },
+   "excluded_from_harmonised_because": null,
+   "duplicate_of": null,
+   "license": "CC-BY-4.0"
+  },
+  {
+   "id": "risk",
+   "paper": {
+    "title": "Relative Risk Aversion: A Meta-Analysis",
+    "authors": [
+     "Ali Elminejad",
+     "Tomas Havranek",
+     "Zuzana Irsova"
+    ],
+    "year": 2025,
+    "journal": "Journal of Economic Surveys",
+    "doi": "https://doi.org/10.1111/joes.12689",
+    "url": "https://meta-analysis.cz/risk/"
+   },
+   "description": "A meta-analysis of 1,021 estimates from 92 studies finds publication-bias-corrected relative risk aversion near 1 in economics and 2-7 in finance.",
+   "n_estimates": 1021,
+   "n_variables": 61,
+   "source_file": "https://meta-analysis.cz/risk/risk.dta",
+   "source_sheet": null,
+   "files": {
+    "parquet": "https://meta-analysis.cz/data/v1/risk/risk.parquet",
+    "csv": "https://meta-analysis.cz/data/v1/risk/risk.csv",
+    "codebook": "https://meta-analysis.cz/api/v1/codebooks/risk.json"
+   },
+   "core_columns": {
+    "effect": "rra",
+    "standard_error": "se",
+    "standard_error_note": null,
+    "evidence": "t_match:tstat"
+   },
+   "effect_units": "relative risk aversion coefficient",
+   "direction_note": null,
+   "column_mapping_verified_by": null,
+   "in_harmonised_table": true,
+   "reconciliation": {
+    "n_estimates_reported_in_paper": 1021,
+    "n_rows_in_harmonised_table": 1018,
+    "note": "matches the paper"
+   },
+   "excluded_from_harmonised_because": null,
+   "duplicate_of": null,
+   "license": "CC-BY-4.0"
+  },
+  {
+   "id": "scc",
+   "paper": {
+    "title": "Selective Reporting and the Social Cost of Carbon",
+    "authors": [
+     "Tomas Havranek",
+     "Zuzana Irsova",
+     "Karel Janda",
+     "David Zilberman"
+    ],
+    "year": 2015,
+    "journal": "Energy Economics",
+    "doi": "https://doi.org/10.1016/j.eneco.2015.08.009",
+    "url": "https://meta-analysis.cz/scc/"
+   },
+   "description": "Meta-analysis of 809 SCC estimates from 101 studies finds selective reporting creates an upward bias, especially in peer-reviewed journals.",
+   "n_estimates": 1144,
+   "n_variables": 36,
+   "source_file": "https://meta-analysis.cz/scc/scc.xlsx",
+   "source_sheet": "stata",
+   "files": {
+    "parquet": "https://meta-analysis.cz/data/v1/scc/scc.parquet",
+    "csv": "https://meta-analysis.cz/data/v1/scc/scc.csv",
+    "codebook": "https://meta-analysis.cz/api/v1/codebooks/scc.json"
+   },
+   "core_columns": {
+    "effect": null,
+    "standard_error": null,
+    "standard_error_note": null,
+    "evidence": null
+   },
+   "effect_units": "US dollars per tonne of carbon",
+   "direction_note": null,
+   "column_mapping_verified_by": "scc.do labels stdlow 'Standard error' and runs the funnel-asymmetry regression 'reg scc stdlow'; stdup is an alternative built from the upper CI bound for robustness",
+   "in_harmonised_table": true,
+   "reconciliation": {
+    "n_estimates_reported_in_paper": 809,
+    "n_rows_in_harmonised_table": 602,
+    "note": "fewer rows than the paper reports; see this dataset's note and column_mapping_verified_by for the reason (usually a missing standard error on the remainder, occasionally a published file narrower than the paper's sample)"
+   },
+   "excluded_from_harmonised_because": null,
+   "duplicate_of": null,
+   "license": "CC-BY-4.0"
+  },
+  {
+   "id": "sigma",
+   "paper": {
+    "title": "Measuring Capital-Labor Substitution: The Importance of Method Choices and Publication Bias",
+    "authors": [
+     "Sebastian Gechert",
+     "Tomas Havranek",
+     "Zuzana Irsova",
+     "Dominika Kolcunova"
+    ],
+    "year": 2022,
+    "journal": "Review of Economic Dynamics",
+    "doi": "https://doi.org/10.1016/j.red.2021.05.003",
+    "url": "https://meta-analysis.cz/sigma/"
+   },
+   "description": "Meta-analysis of 3,186 estimates from 121 studies finds the capital-labor elasticity of substitution is 0.3, far below the literature's average of 0.9.",
+   "n_estimates": 3186,
+   "n_variables": 115,
+   "source_file": "https://meta-analysis.cz/sigma/sigma.dta",
+   "source_sheet": null,
+   "files": {
+    "parquet": "https://meta-analysis.cz/data/v1/sigma/sigma.parquet",
+    "csv": "https://meta-analysis.cz/data/v1/sigma/sigma.csv",
+    "codebook": "https://meta-analysis.cz/api/v1/codebooks/sigma.json"
+   },
+   "core_columns": {
+    "effect": "sigma",
+    "standard_error": "se",
+    "standard_error_note": null,
+    "evidence": "t_match:t"
+   },
+   "effect_units": "elasticity",
+   "direction_note": null,
+   "column_mapping_verified_by": null,
+   "in_harmonised_table": true,
+   "reconciliation": {
+    "n_estimates_reported_in_paper": 3186,
+    "n_rows_in_harmonised_table": 3186,
+    "note": "matches the paper"
+   },
+   "excluded_from_harmonised_because": null,
+   "duplicate_of": null,
+   "license": "CC-BY-4.0"
+  },
+  {
+   "id": "size",
+   "paper": {
+    "title": "A Meta-Analysis of the Relation Between Firm Size and Stock Returns",
+    "authors": [
+     "Anton Astakhov",
+     "Tomas Havranek",
+     "Jiri Novak"
+    ],
+    "year": 2019,
+    "journal": "Journal of Economic Surveys",
+    "doi": "https://doi.org/10.1111/joes.12335",
+    "url": "https://meta-analysis.cz/size/"
+   },
+   "description": "First meta-analysis of the size premium finds strong publication bias and a corrected effect of 1.72% in annual returns.",
+   "n_estimates": 1746,
+   "n_variables": 407,
+   "source_file": "https://meta-analysis.cz/size/size.dta",
+   "source_sheet": null,
+   "files": {
+    "parquet": "https://meta-analysis.cz/data/v1/size/size.parquet",
+    "csv": "https://meta-analysis.cz/data/v1/size/size.csv",
+    "codebook": "https://meta-analysis.cz/api/v1/codebooks/size.json"
+   },
+   "core_columns": {
+    "effect": "size",
+    "standard_error": "se_calc",
+    "standard_error_note": null,
+    "evidence": "t_match:tstat"
+   },
+   "effect_units": "percent",
+   "direction_note": "Small-minus-large return spread, so positive means the premium exists; some primary studies instead report the raw size-return slope, which has the opposite sign.",
+   "column_mapping_verified_by": null,
+   "in_harmonised_table": true,
+   "reconciliation": {
+    "n_estimates_reported_in_paper": 1746,
+    "n_rows_in_harmonised_table": 1631,
+    "note": "matches the paper"
+   },
+   "excluded_from_harmonised_because": null,
+   "duplicate_of": null,
+   "license": "CC-BY-4.0"
+  },
+  {
+   "id": "skill",
+   "paper": {
+    "title": "Publication and Attenuation Biases in Measuring Skill Substitution",
+    "authors": [
+     "Tomas Havranek",
+     "Zuzana Irsova",
+     "Lubica Laslopova",
+     "Olesia Zeynalova"
+    ],
+    "year": 2024,
+    "journal": "Review of Economics and Statistics",
+    "doi": "https://doi.org/10.1162/rest_a_01227",
+    "url": "https://meta-analysis.cz/skill/"
+   },
+   "description": "Meta-analysis finds publication bias dominates in skill substitution estimates, implying a mean elasticity of 4.",
+   "n_estimates": 1097,
+   "n_variables": 50,
+   "source_file": "https://meta-analysis.cz/skill/skill.dta",
+   "source_sheet": null,
+   "files": {
+    "parquet": "https://meta-analysis.cz/data/v1/skill/skill.parquet",
+    "csv": "https://meta-analysis.cz/data/v1/skill/skill.csv",
+    "codebook": "https://meta-analysis.cz/api/v1/codebooks/skill.json"
+   },
+   "core_columns": {
+    "effect": "elasticity",
+    "standard_error": "se",
+    "standard_error_note": null,
+    "evidence": "t_match:tstat"
+   },
+   "effect_units": "elasticity",
+   "direction_note": "Stored as inverse elasticities; inversion is needed to read them as the skill-substitution elasticity. Dropping this step reverses the finding.",
+   "column_mapping_verified_by": null,
+   "in_harmonised_table": true,
+   "reconciliation": {
+    "n_estimates_reported_in_paper": null,
+    "n_rows_in_harmonised_table": 965,
+    "note": null
+   },
+   "excluded_from_harmonised_because": null,
+   "duplicate_of": null,
+   "license": "CC-BY-4.0"
+  },
+  {
+   "id": "spillovers",
+   "paper": {
+    "title": "A Meta-Analysis of Vertical Spillovers from FDI",
+    "authors": [
+     "Tomas Havranek",
+     "Zuzana Irsova"
+    ],
+    "year": 2011,
+    "journal": "Journal of International Economics",
+    "doi": "https://doi.org/10.1016/j.jinteco.2011.07.004",
+    "url": "https://meta-analysis.cz/spillovers/"
+   },
+   "description": "A meta-analysis of 3,626 estimates finds vertical FDI spillovers to suppliers are economically significant but spillovers to buyers small.",
+   "n_estimates": 4147,
+   "n_variables": 98,
+   "source_file": "https://meta-analysis.cz/spillovers/data.xls",
+   "source_sheet": "stata",
+   "files": {
+    "parquet": "https://meta-analysis.cz/data/v1/spillovers/spillovers.parquet",
+    "csv": "https://meta-analysis.cz/data/v1/spillovers/spillovers.csv",
+    "codebook": "https://meta-analysis.cz/api/v1/codebooks/spillovers.json"
+   },
+   "core_columns": {
+    "effect": "e",
+    "standard_error": "se",
+    "standard_error_note": null,
+    "evidence": "t_match:t"
+   },
+   "effect_units": null,
+   "direction_note": null,
+   "column_mapping_verified_by": "Stata_program.do runs 'drop if aux==1' and defines back = (horiz==0 & forw==0) | (horiz==0 & local==1), i.e. the non-horizontal complement",
+   "in_harmonised_table": true,
+   "reconciliation": {
+    "n_estimates_reported_in_paper": 3626,
+    "n_rows_in_harmonised_table": 2421,
+    "note": "fewer rows than the paper reports; see this dataset's note and column_mapping_verified_by for the reason (usually a missing standard error on the remainder, occasionally a published file narrower than the paper's sample)"
+   },
+   "excluded_from_harmonised_because": null,
+   "duplicate_of": "bma",
+   "license": "CC-BY-4.0",
+   "note": "Same underlying data as 'bma'; excluded from the harmonised table to avoid double counting."
+  },
+  {
+   "id": "students",
+   "paper": {
+    "title": "Student Employment and Education: A Meta-Analysis",
+    "authors": [
+     "Katerina Kroupova",
+     "Tomas Havranek",
+     "Zuzana Irsova"
+    ],
+    "year": 2024,
+    "journal": "Economics of Education Review",
+    "doi": "https://doi.org/10.1016/j.econedurev.2024.102539",
+    "url": "https://meta-analysis.cz/students/"
+   },
+   "description": "Meta-analysis of 861 estimates finds student employment has a negative but economically small effect on educational outcomes.",
+   "n_estimates": 892,
+   "n_variables": 59,
+   "source_file": "https://meta-analysis.cz/students/students.xlsx",
+   "source_sheet": "data",
+   "files": {
+    "parquet": "https://meta-analysis.cz/data/v1/students/students.parquet",
+    "csv": "https://meta-analysis.cz/data/v1/students/students.csv",
+    "codebook": "https://meta-analysis.cz/api/v1/codebooks/students.json"
+   },
+   "core_columns": {
+    "effect": "pcc",
+    "standard_error": "se_pcc",
+    "standard_error_note": null,
+    "evidence": "t_match:tstat"
+   },
+   "effect_units": "partial correlation coefficient",
+   "direction_note": null,
+   "column_mapping_verified_by": null,
+   "in_harmonised_table": true,
+   "reconciliation": {
+    "n_estimates_reported_in_paper": 861,
+    "n_rows_in_harmonised_table": 872,
+    "note": "matches the paper"
+   },
+   "excluded_from_harmonised_because": null,
+   "duplicate_of": null,
+   "license": "CC-BY-4.0"
+  },
+  {
+   "id": "substitution",
+   "paper": {
+    "title": "Why Does Intertemporal Substitution Vary Across Countries? A Meta-Analysis",
+    "authors": [
+     "Tomas Havranek",
+     "Roman Horvath",
+     "Zuzana Irsova",
+     "Marek Rusnak"
+    ],
+    "year": 2015,
+    "journal": "Journal of International Economics",
+    "doi": "https://doi.org/10.1016/j.jinteco.2015.01.012",
+    "url": "https://meta-analysis.cz/substitution/"
+   },
+   "description": "Meta-analysis of 2,735 estimates across 104 countries links intertemporal substitution to income and stock market participation.",
+   "n_estimates": 2735,
+   "n_variables": 65,
+   "source_file": "https://meta-analysis.cz/substitution/eis_det.dta",
+   "source_sheet": null,
+   "files": {
+    "parquet": "https://meta-analysis.cz/data/v1/substitution/substitution.parquet",
+    "csv": "https://meta-analysis.cz/data/v1/substitution/substitution.csv",
+    "codebook": "https://meta-analysis.cz/api/v1/codebooks/substitution.json"
+   },
+   "core_columns": {
+    "effect": "eis",
+    "standard_error": "se",
+    "standard_error_note": null,
+    "evidence": "plausible"
+   },
+   "effect_units": null,
+   "direction_note": null,
+   "column_mapping_verified_by": null,
+   "in_harmonised_table": false,
+   "reconciliation": {
+    "n_estimates_reported_in_paper": 2735,
+    "n_rows_in_harmonised_table": null,
+    "note": null
+   },
+   "excluded_from_harmonised_because": "duplicate of eis",
+   "duplicate_of": "eis",
+   "license": "CC-BY-4.0",
+   "note": "Same underlying data as 'eis'; excluded from the harmonised table to avoid double counting."
+  },
+  {
+   "id": "trust",
+   "paper": {
+    "title": "Trust, Rule of Law, and the Size Premium: Evidence from a Meta-Analysis",
+    "authors": [
+     "Jiri Schwarz",
+     "Tomas Havranek",
+     "Zuzana Irsova",
+     "Jiri Novak"
+    ],
+    "year": 2026,
+    "journal": null,
+    "doi": null,
+    "url": "https://meta-analysis.cz/trust/"
+   },
+   "description": "Meta-analysis of 1,613 reported size-premium estimates from 105 studies on how generalized trust and rule of law explain the disagreement across markets.",
+   "n_estimates": 1613,
+   "n_variables": 45,
+   "source_file": "https://meta-analysis.cz/trust/trust_data.csv",
+   "source_sheet": null,
+   "files": {
+    "parquet": "https://meta-analysis.cz/data/v1/trust/trust.parquet",
+    "csv": "https://meta-analysis.cz/data/v1/trust/trust.csv",
+    "codebook": "https://meta-analysis.cz/api/v1/codebooks/trust.json"
+   },
+   "core_columns": {
+    "effect": "size",
+    "standard_error": "se",
+    "standard_error_note": null,
+    "evidence": "plausible"
+   },
+   "effect_units": "percent",
+   "direction_note": "Raw size-return slopes: more negative means a larger conventional size premium.",
+   "column_mapping_verified_by": null,
+   "in_harmonised_table": true,
+   "reconciliation": {
+    "n_estimates_reported_in_paper": null,
+    "n_rows_in_harmonised_table": 1613,
+    "note": null
+   },
+   "excluded_from_harmonised_because": null,
+   "duplicate_of": null,
+   "license": "CC-BY-4.0"
+  },
+  {
+   "id": "water",
+   "paper": {
+    "title": "Publication Bias in Measuring the Income Elasticity of Water Demand",
+    "authors": [
+     "Tomas Havranek",
+     "Zuzana Irsova",
+     "Tomas Vlach"
+    ],
+    "year": 2018,
+    "journal": "Land Economics",
+    "doi": "https://doi.org/10.3368/le.94.2.259",
+    "url": "https://meta-analysis.cz/water/"
+   },
+   "description": "A meta-analysis finds publication and endogeneity biases inflate reported income elasticities of water demand, with a true elasticity near 0.15.",
+   "n_estimates": 307,
+   "n_variables": 53,
+   "source_file": "https://meta-analysis.cz/water/water.xlsx",
+   "source_sheet": "dataset",
+   "files": {
+    "parquet": "https://meta-analysis.cz/data/v1/water/water.parquet",
+    "csv": "https://meta-analysis.cz/data/v1/water/water.csv",
+    "codebook": "https://meta-analysis.cz/api/v1/codebooks/water.json"
+   },
+   "core_columns": {
+    "effect": "incomeelasticity",
+    "standard_error": "standarderror",
+    "standard_error_note": null,
+    "evidence": "t_match:tvalue"
+   },
+   "effect_units": "elasticity",
+   "direction_note": null,
+   "column_mapping_verified_by": null,
+   "in_harmonised_table": true,
+   "reconciliation": {
+    "n_estimates_reported_in_paper": null,
+    "n_rows_in_harmonised_table": 307,
+    "note": null
+   },
+   "excluded_from_harmonised_because": null,
+   "duplicate_of": null,
+   "license": "CC-BY-4.0"
+  }
+ ]
+}

@@ -1,0 +1,1000 @@
+{
+ "project": "students",
+ "source_file": "students.xlsx",
+ "source_archive": null,
+ "source_sheet": "data",
+ "n_rows": 892,
+ "n_columns": 59,
+ "columns": [
+  {
+   "name": "idstudy",
+   "normalized": "idstudy",
+   "dtype": "int64",
+   "n_missing": 0,
+   "n_unique": 73,
+   "role": "study_id",
+   "stats": {
+    "min": 1.0,
+    "p25": 18.0,
+    "median": 45.5,
+    "p75": 49.0,
+    "max": 73.0,
+    "mean": 38.878924,
+    "sd": 18.594404
+   }
+  },
+  {
+   "name": "idcountry",
+   "normalized": "idcountry",
+   "dtype": "int64",
+   "n_missing": 0,
+   "n_unique": 16,
+   "role": "country",
+   "stats": {
+    "min": 1.0,
+    "p25": 1.0,
+    "median": 1.0,
+    "p75": 1.0,
+    "max": 16.0,
+    "mean": 2.494395,
+    "sd": 3.399837
+   }
+  },
+  {
+   "name": "study",
+   "normalized": "study",
+   "dtype": "str",
+   "n_missing": 0,
+   "n_unique": 73,
+   "top_values": [
+    "Sabia (2009)",
+    "Buscha et al. (2012)",
+    "Darolia (2014)",
+    "Warren & Cataldi (2006)",
+    "Oettinger (1999)"
+   ]
+  },
+  {
+   "name": "pcc",
+   "normalized": "pcc",
+   "dtype": "float64",
+   "n_missing": 20,
+   "n_unique": 866,
+   "role": "effect_estimate",
+   "stats": {
+    "min": -0.2954,
+    "p25": -0.04715,
+    "median": -0.00665,
+    "p75": 0.020561,
+    "max": 0.208271,
+    "mean": -0.017787,
+    "sd": 0.068564
+   }
+  },
+  {
+   "name": "se_pcc",
+   "normalized": "se_pcc",
+   "dtype": "float64",
+   "n_missing": 20,
+   "n_unique": 864,
+   "role": "standard_error",
+   "stats": {
+    "min": 0.002586,
+    "p25": 0.016104,
+    "median": 0.022718,
+    "p75": 0.03289,
+    "max": 0.113784,
+    "mean": 0.026877,
+    "sd": 0.01725
+   }
+  },
+  {
+   "name": "tstat",
+   "normalized": "tstat",
+   "dtype": "float64",
+   "n_missing": 12,
+   "n_unique": 793,
+   "role": "t_stat",
+   "stats": {
+    "min": -17.002,
+    "p25": -2.051456,
+    "median": -0.25921,
+    "p75": 1.007042,
+    "max": 11.31,
+    "mean": -0.691102,
+    "sd": 2.817771
+   }
+  },
+  {
+   "name": "estimate",
+   "normalized": "estimate",
+   "dtype": "float64",
+   "n_missing": 0,
+   "n_unique": 563,
+   "stats": {
+    "min": -8.96,
+    "p25": -0.11235,
+    "median": -0.0095,
+    "p75": 0.067092,
+    "max": 11.49,
+    "mean": -0.060029,
+    "sd": 0.813586
+   }
+  },
+  {
+   "name": "se_estimate",
+   "normalized": "se_estimate",
+   "dtype": "float64",
+   "n_missing": 0,
+   "n_unique": 477,
+   "stats": {
+    "min": -1.457143,
+    "p25": 0.03175,
+    "median": 0.068376,
+    "p75": 0.186,
+    "max": 27.276471,
+    "mean": 0.260235,
+    "sd": 1.238411
+   }
+  },
+  {
+   "name": "education_choice",
+   "normalized": "education_choice",
+   "dtype": "float64",
+   "n_missing": 11,
+   "n_unique": 2,
+   "stats": {
+    "min": 0.0,
+    "p25": 0.0,
+    "median": 0.0,
+    "p75": 0.0,
+    "max": 1.0,
+    "mean": 0.166856,
+    "sd": 0.373059
+   },
+   "binary": true
+  },
+  {
+   "name": "education_attainment",
+   "normalized": "education_attainment",
+   "dtype": "float64",
+   "n_missing": 11,
+   "n_unique": 2,
+   "stats": {
+    "min": 0.0,
+    "p25": 0.0,
+    "median": 0.0,
+    "p75": 0.0,
+    "max": 1.0,
+    "mean": 0.143019,
+    "sd": 0.350291
+   },
+   "binary": true
+  },
+  {
+   "name": "education_test",
+   "normalized": "education_test",
+   "dtype": "float64",
+   "n_missing": 11,
+   "n_unique": 2,
+   "stats": {
+    "min": 0.0,
+    "p25": 0.0,
+    "median": 1.0,
+    "p75": 1.0,
+    "max": 1.0,
+    "mean": 0.690125,
+    "sd": 0.462705
+   },
+   "binary": true
+  },
+  {
+   "name": "employment_continuous",
+   "normalized": "employment_continuous",
+   "dtype": "float64",
+   "n_missing": 11,
+   "n_unique": 2,
+   "stats": {
+    "min": 0.0,
+    "p25": 0.0,
+    "median": 0.0,
+    "p75": 1.0,
+    "max": 1.0,
+    "mean": 0.318956,
+    "sd": 0.466337
+   },
+   "binary": true
+  },
+  {
+   "name": "employment_dummy",
+   "normalized": "employment_dummy",
+   "dtype": "float64",
+   "n_missing": 11,
+   "n_unique": 2,
+   "stats": {
+    "min": 0.0,
+    "p25": 0.0,
+    "median": 0.0,
+    "p75": 0.0,
+    "max": 1.0,
+    "mean": 0.179342,
+    "sd": 0.383856
+   },
+   "binary": true
+  },
+  {
+   "name": "employment_categorical",
+   "normalized": "employment_categorical",
+   "dtype": "float64",
+   "n_missing": 11,
+   "n_unique": 2,
+   "stats": {
+    "min": 0.0,
+    "p25": 0.0,
+    "median": 1.0,
+    "p75": 1.0,
+    "max": 1.0,
+    "mean": 0.501703,
+    "sd": 0.500281
+   },
+   "binary": true
+  },
+  {
+   "name": "longitudinal_data",
+   "normalized": "longitudinal_data",
+   "dtype": "float64",
+   "n_missing": 11,
+   "n_unique": 2,
+   "stats": {
+    "min": 0.0,
+    "p25": 1.0,
+    "median": 1.0,
+    "p75": 1.0,
+    "max": 1.0,
+    "mean": 0.836549,
+    "sd": 0.369986
+   },
+   "binary": true
+  },
+  {
+   "name": "crosssectional_data",
+   "normalized": "crosssectional_data",
+   "dtype": "float64",
+   "n_missing": 11,
+   "n_unique": 2,
+   "stats": {
+    "min": 0.0,
+    "p25": 0.0,
+    "median": 0.0,
+    "p75": 0.0,
+    "max": 1.0,
+    "mean": 0.163451,
+    "sd": 0.369986
+   },
+   "binary": true
+  },
+  {
+   "name": "secondary_education",
+   "normalized": "secondary_education",
+   "dtype": "float64",
+   "n_missing": 11,
+   "n_unique": 2,
+   "stats": {
+    "min": 0.0,
+    "p25": 0.0,
+    "median": 1.0,
+    "p75": 1.0,
+    "max": 1.0,
+    "mean": 0.713961,
+    "sd": 0.452164
+   },
+   "binary": true
+  },
+  {
+   "name": "tertiary_education",
+   "normalized": "tertiary_education",
+   "dtype": "float64",
+   "n_missing": 11,
+   "n_unique": 2,
+   "stats": {
+    "min": 0.0,
+    "p25": 0.0,
+    "median": 0.0,
+    "p75": 1.0,
+    "max": 1.0,
+    "mean": 0.286039,
+    "sd": 0.452164
+   },
+   "binary": true
+  },
+  {
+   "name": "male_students",
+   "normalized": "male_students",
+   "dtype": "float64",
+   "n_missing": 11,
+   "n_unique": 2,
+   "stats": {
+    "min": 0.0,
+    "p25": 0.0,
+    "median": 0.0,
+    "p75": 0.0,
+    "max": 1.0,
+    "mean": 0.248581,
+    "sd": 0.432436
+   },
+   "binary": true
+  },
+  {
+   "name": "female_students",
+   "normalized": "female_students",
+   "dtype": "float64",
+   "n_missing": 11,
+   "n_unique": 2,
+   "stats": {
+    "min": 0.0,
+    "p25": 0.0,
+    "median": 0.0,
+    "p75": 1.0,
+    "max": 1.0,
+    "mean": 0.253121,
+    "sd": 0.435047
+   },
+   "binary": true
+  },
+  {
+   "name": "mixed_gender_students",
+   "normalized": "mixed_gender_students",
+   "dtype": "float64",
+   "n_missing": 11,
+   "n_unique": 2,
+   "stats": {
+    "min": 0.0,
+    "p25": 0.0,
+    "median": 0.0,
+    "p75": 1.0,
+    "max": 1.0,
+    "mean": 0.498297,
+    "sd": 0.500281
+   },
+   "binary": true
+  },
+  {
+   "name": "europe",
+   "normalized": "europe",
+   "dtype": "int64",
+   "n_missing": 0,
+   "n_unique": 2,
+   "stats": {
+    "min": 0.0,
+    "p25": 0.0,
+    "median": 0.0,
+    "p75": 0.0,
+    "max": 1.0,
+    "mean": 0.141256,
+    "sd": 0.34848
+   },
+   "binary": true
+  },
+  {
+   "name": "germany",
+   "normalized": "germany",
+   "dtype": "int64",
+   "n_missing": 0,
+   "n_unique": 2,
+   "stats": {
+    "min": 0.0,
+    "p25": 0.0,
+    "median": 0.0,
+    "p75": 0.0,
+    "max": 1.0,
+    "mean": 0.032511,
+    "sd": 0.177453
+   },
+   "binary": true
+  },
+  {
+   "name": "usa",
+   "normalized": "usa",
+   "dtype": "int64",
+   "n_missing": 0,
+   "n_unique": 2,
+   "stats": {
+    "min": 0.0,
+    "p25": 1.0,
+    "median": 1.0,
+    "p75": 1.0,
+    "max": 1.0,
+    "mean": 0.808296,
+    "sd": 0.393862
+   },
+   "binary": true
+  },
+  {
+   "name": "other_countries",
+   "normalized": "other_countries",
+   "dtype": "int64",
+   "n_missing": 0,
+   "n_unique": 2,
+   "stats": {
+    "min": 0.0,
+    "p25": 0.0,
+    "median": 0.0,
+    "p75": 0.0,
+    "max": 1.0,
+    "mean": 0.050448,
+    "sd": 0.218991
+   },
+   "binary": true
+  },
+  {
+   "name": "data_year",
+   "normalized": "data_year",
+   "dtype": "float64",
+   "n_missing": 11,
+   "n_unique": 47,
+   "stats": {
+    "min": 0.0,
+    "p25": 3.295837,
+    "median": 3.38439,
+    "p75": 3.511545,
+    "max": 3.912023,
+    "mean": 3.286247,
+    "sd": 0.511465
+   }
+  },
+  {
+   "name": "sample_size",
+   "normalized": "sample_size",
+   "dtype": "float64",
+   "n_missing": 11,
+   "n_unique": 196,
+   "role": "n_obs",
+   "stats": {
+    "min": 4.369448,
+    "p25": 6.883463,
+    "median": 7.659643,
+    "p75": 8.521185,
+    "max": 11.915774,
+    "mean": 7.672417,
+    "sd": 1.260046
+   }
+  },
+  {
+   "name": "ols_method",
+   "normalized": "ols_method",
+   "dtype": "float64",
+   "n_missing": 11,
+   "n_unique": 2,
+   "stats": {
+    "min": 0.0,
+    "p25": 0.0,
+    "median": 1.0,
+    "p75": 1.0,
+    "max": 1.0,
+    "mean": 0.609535,
+    "sd": 0.488132
+   },
+   "binary": true
+  },
+  {
+   "name": "matching_method",
+   "normalized": "matching_method",
+   "dtype": "float64",
+   "n_missing": 11,
+   "n_unique": 2,
+   "stats": {
+    "min": 0.0,
+    "p25": 0.0,
+    "median": 0.0,
+    "p75": 0.0,
+    "max": 1.0,
+    "mean": 0.032917,
+    "sd": 0.178521
+   },
+   "binary": true
+  },
+  {
+   "name": "did_method",
+   "normalized": "did_method",
+   "dtype": "float64",
+   "n_missing": 11,
+   "n_unique": 2,
+   "stats": {
+    "min": 0.0,
+    "p25": 0.0,
+    "median": 0.0,
+    "p75": 0.0,
+    "max": 1.0,
+    "mean": 0.049943,
+    "sd": 0.217951
+   },
+   "binary": true
+  },
+  {
+   "name": "panel_method",
+   "normalized": "panel_method",
+   "dtype": "float64",
+   "n_missing": 11,
+   "n_unique": 2,
+   "stats": {
+    "min": 0.0,
+    "p25": 0.0,
+    "median": 0.0,
+    "p75": 0.0,
+    "max": 1.0,
+    "mean": 0.122588,
+    "sd": 0.32815
+   },
+   "binary": true
+  },
+  {
+   "name": "iv_method",
+   "normalized": "iv_method",
+   "dtype": "float64",
+   "n_missing": 11,
+   "n_unique": 2,
+   "stats": {
+    "min": 0.0,
+    "p25": 0.0,
+    "median": 0.0,
+    "p75": 0.0,
+    "max": 1.0,
+    "mean": 0.16118,
+    "sd": 0.367906
+   },
+   "binary": true
+  },
+  {
+   "name": "dynamic_model",
+   "normalized": "dynamic_model",
+   "dtype": "float64",
+   "n_missing": 11,
+   "n_unique": 2,
+   "stats": {
+    "min": 0.0,
+    "p25": 0.0,
+    "median": 0.0,
+    "p75": 0.0,
+    "max": 1.0,
+    "mean": 0.023837,
+    "sd": 0.152626
+   },
+   "binary": true
+  },
+  {
+   "name": "number_of_variables",
+   "normalized": "number_of_variables",
+   "dtype": "float64",
+   "n_missing": 0,
+   "n_unique": 40,
+   "stats": {
+    "min": 0.0,
+    "p25": 2.079442,
+    "median": 2.70805,
+    "p75": 3.258097,
+    "max": 4.488636,
+    "mean": 2.557628,
+    "sd": 0.86995
+   }
+  },
+  {
+   "name": "ability_control",
+   "normalized": "ability_control",
+   "dtype": "float64",
+   "n_missing": 11,
+   "n_unique": 2,
+   "stats": {
+    "min": 0.0,
+    "p25": 0.0,
+    "median": 0.0,
+    "p75": 1.0,
+    "max": 1.0,
+    "mean": 0.371169,
+    "sd": 0.483392
+   },
+   "binary": true
+  },
+  {
+   "name": "motivation_control",
+   "normalized": "motivation_control",
+   "dtype": "float64",
+   "n_missing": 11,
+   "n_unique": 2,
+   "stats": {
+    "min": 0.0,
+    "p25": 0.0,
+    "median": 0.0,
+    "p75": 1.0,
+    "max": 1.0,
+    "mean": 0.339387,
+    "sd": 0.47377
+   },
+   "binary": true
+  },
+  {
+   "name": "parental_education_control",
+   "normalized": "parental_education_control",
+   "dtype": "float64",
+   "n_missing": 11,
+   "n_unique": 2,
+   "stats": {
+    "min": 0.0,
+    "p25": 0.0,
+    "median": 1.0,
+    "p75": 1.0,
+    "max": 1.0,
+    "mean": 0.54143,
+    "sd": 0.498564
+   },
+   "binary": true
+  },
+  {
+   "name": "age_control",
+   "normalized": "age_control",
+   "dtype": "float64",
+   "n_missing": 11,
+   "n_unique": 2,
+   "stats": {
+    "min": 0.0,
+    "p25": 0.0,
+    "median": 0.0,
+    "p75": 1.0,
+    "max": 1.0,
+    "mean": 0.46084,
+    "sd": 0.498747
+   },
+   "binary": true
+  },
+  {
+   "name": "ethnicity_control",
+   "normalized": "ethnicity_control",
+   "dtype": "float64",
+   "n_missing": 11,
+   "n_unique": 2,
+   "stats": {
+    "min": 0.0,
+    "p25": 0.0,
+    "median": 1.0,
+    "p75": 1.0,
+    "max": 1.0,
+    "mean": 0.595914,
+    "sd": 0.490993
+   },
+   "binary": true
+  },
+  {
+   "name": "publication_year",
+   "normalized": "publication_year",
+   "dtype": "float64",
+   "n_missing": 11,
+   "n_unique": 60,
+   "role": "pub_year",
+   "stats": {
+    "min": -3.178054,
+    "p25": 3.339617,
+    "median": 3.443352,
+    "p75": 3.544576,
+    "max": 3.738661,
+    "mean": 3.26371,
+    "sd": 0.907145
+   }
+  },
+  {
+   "name": "citations",
+   "normalized": "citations",
+   "dtype": "float64",
+   "n_missing": 11,
+   "n_unique": 111,
+   "stats": {
+    "min": -2.702479,
+    "p25": 1.400893,
+    "median": 1.458749,
+    "p75": 2.177806,
+    "max": 5.334787,
+    "mean": 1.692382,
+    "sd": 0.997591
+   }
+  },
+  {
+   "name": "published_study",
+   "normalized": "published_study",
+   "dtype": "float64",
+   "n_missing": 11,
+   "n_unique": 2,
+   "stats": {
+    "min": 0.0,
+    "p25": 1.0,
+    "median": 1.0,
+    "p75": 1.0,
+    "max": 1.0,
+    "mean": 0.900114,
+    "sd": 0.300019
+   },
+   "binary": true
+  },
+  {
+   "name": "impact_factor",
+   "normalized": "impact_factor",
+   "dtype": "float64",
+   "n_missing": 11,
+   "n_unique": 37,
+   "stats": {
+    "min": 0.0,
+    "p25": 0.918,
+    "median": 1.354,
+    "p75": 1.794,
+    "max": 5.013,
+    "mean": 1.563959,
+    "sd": 1.249288
+   }
+  },
+  {
+   "name": "low_intensity_employment",
+   "normalized": "low_intensity_employment",
+   "dtype": "float64",
+   "n_missing": 11,
+   "n_unique": 2,
+   "stats": {
+    "min": 0.0,
+    "p25": 0.0,
+    "median": 0.0,
+    "p75": 0.0,
+    "max": 1.0,
+    "mean": 0.209989,
+    "sd": 0.407532
+   },
+   "binary": true
+  },
+  {
+   "name": "medium_intensity_employment",
+   "normalized": "medium_intensity_employment",
+   "dtype": "float64",
+   "n_missing": 11,
+   "n_unique": 2,
+   "stats": {
+    "min": 0.0,
+    "p25": 0.0,
+    "median": 0.0,
+    "p75": 0.0,
+    "max": 1.0,
+    "mean": 0.106697,
+    "sd": 0.308903
+   },
+   "binary": true
+  },
+  {
+   "name": "high_intensity_employment",
+   "normalized": "high_intensity_employment",
+   "dtype": "float64",
+   "n_missing": 11,
+   "n_unique": 2,
+   "stats": {
+    "min": 0.0,
+    "p25": 0.0,
+    "median": 0.0,
+    "p75": 0.0,
+    "max": 1.0,
+    "mean": 0.185017,
+    "sd": 0.388532
+   },
+   "binary": true
+  },
+  {
+   "name": "oncampus_employment",
+   "normalized": "oncampus_employment",
+   "dtype": "float64",
+   "n_missing": 11,
+   "n_unique": 2,
+   "stats": {
+    "min": 0.0,
+    "p25": 0.0,
+    "median": 0.0,
+    "p75": 0.0,
+    "max": 1.0,
+    "mean": 0.019296,
+    "sd": 0.137642
+   },
+   "binary": true
+  },
+  {
+   "name": "parttime_students",
+   "normalized": "parttime_students",
+   "dtype": "float64",
+   "n_missing": 11,
+   "n_unique": 2,
+   "stats": {
+    "min": 0.0,
+    "p25": 0.0,
+    "median": 0.0,
+    "p75": 0.0,
+    "max": 1.0,
+    "mean": 0.037457,
+    "sd": 0.189988
+   },
+   "binary": true
+  },
+  {
+   "name": "twoyear_college",
+   "normalized": "twoyear_college",
+   "dtype": "float64",
+   "n_missing": 573,
+   "n_unique": 2,
+   "stats": {
+    "min": 0.0,
+    "p25": 0.0,
+    "median": 0.0,
+    "p75": 0.0,
+    "max": 1.0,
+    "mean": 0.125392,
+    "sd": 0.331683
+   },
+   "binary": true
+  },
+  {
+   "name": "undergraduate_students",
+   "normalized": "undergraduate_students",
+   "dtype": "float64",
+   "n_missing": 573,
+   "n_unique": 2,
+   "stats": {
+    "min": 0.0,
+    "p25": 0.0,
+    "median": 1.0,
+    "p75": 1.0,
+    "max": 1.0,
+    "mean": 0.655172,
+    "sd": 0.476059
+   },
+   "binary": true
+  },
+  {
+   "name": "minority_students",
+   "normalized": "minority_students",
+   "dtype": "float64",
+   "n_missing": 11,
+   "n_unique": 2,
+   "stats": {
+    "min": 0.0,
+    "p25": 0.0,
+    "median": 0.0,
+    "p75": 0.0,
+    "max": 1.0,
+    "mean": 0.053348,
+    "sd": 0.224855
+   },
+   "binary": true
+  },
+  {
+   "name": "caucasian_students",
+   "normalized": "caucasian_students",
+   "dtype": "float64",
+   "n_missing": 11,
+   "n_unique": 2,
+   "stats": {
+    "min": 0.0,
+    "p25": 0.0,
+    "median": 0.0,
+    "p75": 0.0,
+    "max": 1.0,
+    "mean": 0.038593,
+    "sd": 0.192731
+   },
+   "binary": true
+  },
+  {
+   "name": "homogeneous_subsample",
+   "normalized": "homogeneous_subsample",
+   "dtype": "float64",
+   "n_missing": 11,
+   "n_unique": 2,
+   "stats": {
+    "min": 0.0,
+    "p25": 0.0,
+    "median": 0.0,
+    "p75": 0.0,
+    "max": 1.0,
+    "mean": 0.104427,
+    "sd": 0.305987
+   },
+   "binary": true
+  },
+  {
+   "name": "endogeneity_control",
+   "normalized": "endogeneity_control",
+   "dtype": "float64",
+   "n_missing": 11,
+   "n_unique": 2,
+   "stats": {
+    "min": 0.0,
+    "p25": 0.0,
+    "median": 0.0,
+    "p75": 1.0,
+    "max": 1.0,
+    "mean": 0.496027,
+    "sd": 0.500268
+   },
+   "binary": true
+  },
+  {
+   "name": "selfreported_education",
+   "normalized": "selfreported_education",
+   "dtype": "float64",
+   "n_missing": 11,
+   "n_unique": 2,
+   "stats": {
+    "min": 0.0,
+    "p25": 0.0,
+    "median": 0.0,
+    "p75": 1.0,
+    "max": 1.0,
+    "mean": 0.263337,
+    "sd": 0.440694
+   },
+   "binary": true
+  },
+  {
+   "name": "sample_size_full",
+   "normalized": "sample_size_full",
+   "dtype": "int64",
+   "n_missing": 0,
+   "n_unique": 202,
+   "stats": {
+    "min": 79.0,
+    "p25": 961.0,
+    "median": 2085.0,
+    "p75": 5020.0,
+    "max": 149608.0,
+    "mean": 5178.82287,
+    "sd": 12516.43385
+   }
+  },
+  {
+   "name": "country",
+   "normalized": "country",
+   "dtype": "str",
+   "n_missing": 0,
+   "n_unique": 16,
+   "role": "country",
+   "top_values": [
+    "USA",
+    "Germany",
+    "Canada",
+    "United Kingdom",
+    "France"
+   ]
+  },
+  {
+   "name": "pub_year",
+   "normalized": "pub_year",
+   "dtype": "float64",
+   "n_missing": 11,
+   "n_unique": 60,
+   "role": "pub_year",
+   "stats": {
+    "min": 1978.041667,
+    "p25": 2006.208333,
+    "median": 2009.291667,
+    "p75": 2012.625,
+    "max": 2020.041667,
+    "mean": 2007.909289,
+    "sd": 7.917694
+   }
+  },
+  {
+   "name": "mid_year",
+   "normalized": "mid_year",
+   "dtype": "float64",
+   "n_missing": 11,
+   "n_unique": 47,
+   "stats": {
+    "min": 1967.0,
+    "p25": 1993.0,
+    "median": 1995.5,
+    "p75": 1999.5,
+    "max": 2016.0,
+    "mean": 1995.198638,
+    "sd": 9.652469
+   }
+  }
+ ]
+}

@@ -1,0 +1,788 @@
+{
+ "project": "euro",
+ "source_file": "trade_meta.dta",
+ "source_archive": "data.zip",
+ "source_sheet": null,
+ "n_rows": 61,
+ "n_columns": 48,
+ "columns": [
+  {
+   "name": "id",
+   "normalized": "id",
+   "dtype": "int8",
+   "n_missing": 0,
+   "n_unique": 61,
+   "stats": {
+    "min": 1.0,
+    "p25": 16.0,
+    "median": 31.0,
+    "p75": 46.0,
+    "max": 61.0,
+    "mean": 31.0,
+    "sd": 17.752934
+   }
+  },
+  {
+   "name": "authors",
+   "normalized": "authors",
+   "dtype": "str",
+   "n_missing": 0,
+   "n_unique": 52,
+   "top_values": [
+    "Rose",
+    "Flam, Nordstrom",
+    "Melitz",
+    "de Sousa, Lochard",
+    "Bun, Klaassen"
+   ]
+  },
+  {
+   "name": "time",
+   "normalized": "time",
+   "dtype": "int16",
+   "n_missing": 0,
+   "n_unique": 9,
+   "stats": {
+    "min": 2000.0,
+    "p25": 2002.0,
+    "median": 2004.0,
+    "p75": 2006.0,
+    "max": 2008.0,
+    "mean": 2004.245902,
+    "sd": 2.467494
+   }
+  },
+  {
+   "name": "firstn",
+   "normalized": "firstn",
+   "dtype": "str",
+   "n_missing": 0,
+   "n_unique": 52,
+   "top_values": [
+    "Andrew",
+    "Harry, Hakan",
+    "Jacques",
+    "Jose, Julie",
+    "Maurice, Franc"
+   ]
+  },
+  {
+   "name": "study",
+   "normalized": "study",
+   "dtype": "str",
+   "n_missing": 0,
+   "n_unique": 61,
+   "top_values": [
+    "Alesina et al. (2003)",
+    "Micco et al. (2003)",
+    "Rose (2000)",
+    "Rose (2001)",
+    "Rose (2004)"
+   ]
+  },
+  {
+   "name": "title",
+   "normalized": "title",
+   "dtype": "str",
+   "n_missing": 0,
+   "n_unique": 61,
+   "top_values": [
+    "Optimal currency areas",
+    "The currency union effect on trade: Early evidence from EMU",
+    "One money, one market: Estimating the effect of common currencies on trade",
+    "Currency unions and trade: The effect is large",
+    "Do we really know that the WTO increases trade?"
+   ]
+  },
+  {
+   "name": "pubn",
+   "normalized": "pubn",
+   "dtype": "str",
+   "n_missing": 0,
+   "n_unique": 30,
+   "top_values": [
+    "unpublished",
+    "Economic Policy",
+    "NBER WP",
+    "American Economic Review",
+    "Journal of International Money and Finance"
+   ]
+  },
+  {
+   "name": "impisi",
+   "normalized": "impisi",
+   "dtype": "float32",
+   "n_missing": 0,
+   "n_unique": 18,
+   "stats": {
+    "min": 0.0,
+    "p25": 0.0,
+    "median": 0.0,
+    "p75": 0.994,
+    "max": 3.688,
+    "mean": 0.567557,
+    "sd": 0.853491
+   }
+  },
+  {
+   "name": "impact",
+   "normalized": "impact",
+   "dtype": "float32",
+   "n_missing": 0,
+   "n_unique": 20,
+   "stats": {
+    "min": 0.017875,
+    "p25": 0.017875,
+    "median": 0.0715,
+    "p75": 0.994,
+    "max": 3.688,
+    "mean": 0.583967,
+    "sd": 0.842566
+   }
+  },
+  {
+   "name": "impwall",
+   "normalized": "impwall",
+   "dtype": "float32",
+   "n_missing": 0,
+   "n_unique": 20,
+   "stats": {
+    "min": 0.03061,
+    "p25": 0.03061,
+    "median": 0.122438,
+    "p75": 1.70215,
+    "max": 6.315423,
+    "mean": 1.0,
+    "sd": 1.442831
+   }
+  },
+  {
+   "name": "impweur",
+   "normalized": "impweur",
+   "dtype": "float32",
+   "n_missing": 0,
+   "n_unique": 11,
+   "stats": {
+    "min": 0.0,
+    "p25": 0.0,
+    "median": 0.0,
+    "p75": 0.284143,
+    "max": 3.811386,
+    "mean": 0.459016,
+    "sd": 0.963725
+   }
+  },
+  {
+   "name": "impwnon",
+   "normalized": "impwnon",
+   "dtype": "float32",
+   "n_missing": 0,
+   "n_unique": 17,
+   "stats": {
+    "min": 0.0,
+    "p25": 0.0,
+    "median": 0.021689,
+    "p75": 0.650363,
+    "max": 4.474885,
+    "mean": 0.540984,
+    "sd": 1.03513
+   }
+  },
+  {
+   "name": "infisi",
+   "normalized": "infisi",
+   "dtype": "float32",
+   "n_missing": 0,
+   "n_unique": 17,
+   "stats": {
+    "min": 0.0,
+    "p25": 0.0,
+    "median": 0.0,
+    "p75": 1.702,
+    "max": 11.241,
+    "mean": 1.067246,
+    "sd": 2.217159
+   }
+  },
+  {
+   "name": "infwall",
+   "normalized": "infwall",
+   "dtype": "float32",
+   "n_missing": 0,
+   "n_unique": 19,
+   "stats": {
+    "min": 0.030339,
+    "p25": 0.030339,
+    "median": 0.121355,
+    "p75": 1.547169,
+    "max": 10.218406,
+    "mean": 1.0,
+    "sd": 2.001133
+   }
+  },
+  {
+   "name": "infweur",
+   "normalized": "infweur",
+   "dtype": "float32",
+   "n_missing": 0,
+   "n_unique": 11,
+   "stats": {
+    "min": 0.0,
+    "p25": 0.0,
+    "median": 0.0,
+    "p75": 0.229401,
+    "max": 4.300007,
+    "mean": 0.459016,
+    "sd": 1.068659
+   }
+  },
+  {
+   "name": "infwnon",
+   "normalized": "infwnon",
+   "dtype": "float32",
+   "n_missing": 0,
+   "n_unique": 16,
+   "stats": {
+    "min": 0.0,
+    "p25": 0.0,
+    "median": 0.019968,
+    "p75": 0.284786,
+    "max": 6.725387,
+    "mean": 0.540984,
+    "sd": 1.33447
+   }
+  },
+  {
+   "name": "refrep",
+   "normalized": "refrep",
+   "dtype": "int16",
+   "n_missing": 0,
+   "n_unique": 27,
+   "stats": {
+    "min": 0.0,
+    "p25": 0.0,
+    "median": 4.0,
+    "p75": 22.0,
+    "max": 109.0,
+    "mean": 15.311475,
+    "sd": 25.332154
+   }
+  },
+  {
+   "name": "refrepwall",
+   "normalized": "refrepwall",
+   "dtype": "float32",
+   "n_missing": 0,
+   "n_unique": 38,
+   "stats": {
+    "min": 0.0,
+    "p25": 0.0,
+    "median": 0.155774,
+    "p75": 0.636076,
+    "max": 8.178123,
+    "mean": 0.688525,
+    "sd": 1.424462
+   }
+  },
+  {
+   "name": "refrepweur",
+   "normalized": "refrepweur",
+   "dtype": "float32",
+   "n_missing": 0,
+   "n_unique": 18,
+   "stats": {
+    "min": 0.0,
+    "p25": 0.0,
+    "median": 0.0,
+    "p75": 0.075913,
+    "max": 7.85702,
+    "mean": 0.311475,
+    "sd": 1.156839
+   }
+  },
+  {
+   "name": "refrepwnon",
+   "normalized": "refrepwnon",
+   "dtype": "float32",
+   "n_missing": 0,
+   "n_unique": 25,
+   "stats": {
+    "min": 0.0,
+    "p25": 0.0,
+    "median": 0.0,
+    "p75": 0.296257,
+    "max": 7.618039,
+    "mean": 0.409836,
+    "sd": 1.101881
+   }
+  },
+  {
+   "name": "refisi",
+   "normalized": "refisi",
+   "dtype": "int8",
+   "n_missing": 0,
+   "n_unique": 15,
+   "stats": {
+    "min": 0.0,
+    "p25": 0.0,
+    "median": 0.0,
+    "p75": 4.0,
+    "max": 94.0,
+    "mean": 8.836066,
+    "sd": 22.446366
+   }
+  },
+  {
+   "name": "refisiwall",
+   "normalized": "refisiwall",
+   "dtype": "float32",
+   "n_missing": 0,
+   "n_unique": 21,
+   "stats": {
+    "min": 0.0,
+    "p25": 0.0,
+    "median": 0.0,
+    "p75": 0.165511,
+    "max": 6.256327,
+    "mean": 0.377049,
+    "sd": 1.037596
+   }
+  },
+  {
+   "name": "refisiweur",
+   "normalized": "refisiweur",
+   "dtype": "float32",
+   "n_missing": 0,
+   "n_unique": 6,
+   "stats": {
+    "min": 0.0,
+    "p25": 0.0,
+    "median": 0.0,
+    "p75": 0.0,
+    "max": 4.447059,
+    "mean": 0.098361,
+    "sd": 0.574463
+   }
+  },
+  {
+   "name": "refisiwnon",
+   "normalized": "refisiwnon",
+   "dtype": "float32",
+   "n_missing": 0,
+   "n_unique": 17,
+   "stats": {
+    "min": 0.0,
+    "p25": 0.0,
+    "median": 0.0,
+    "p75": 0.029033,
+    "max": 5.487327,
+    "mean": 0.278689,
+    "sd": 0.874869
+   }
+  },
+  {
+   "name": "woman",
+   "normalized": "woman",
+   "dtype": "int8",
+   "n_missing": 0,
+   "n_unique": 2,
+   "stats": {
+    "min": 0.0,
+    "p25": 0.0,
+    "median": 0.0,
+    "p75": 1.0,
+    "max": 1.0,
+    "mean": 0.311475,
+    "sd": 0.46694
+   },
+   "binary": true
+  },
+  {
+   "name": "usa",
+   "normalized": "usa",
+   "dtype": "int8",
+   "n_missing": 0,
+   "n_unique": 2,
+   "stats": {
+    "min": 0.0,
+    "p25": 0.0,
+    "median": 0.0,
+    "p75": 1.0,
+    "max": 1.0,
+    "mean": 0.311475,
+    "sd": 0.46694
+   },
+   "binary": true
+  },
+  {
+   "name": "repec",
+   "normalized": "repec",
+   "dtype": "int8",
+   "n_missing": 0,
+   "n_unique": 2,
+   "stats": {
+    "min": 0.0,
+    "p25": 0.0,
+    "median": 1.0,
+    "p75": 1.0,
+    "max": 1.0,
+    "mean": 0.622951,
+    "sd": 0.488669
+   },
+   "binary": true
+  },
+  {
+   "name": "topfive",
+   "normalized": "topfive",
+   "dtype": "int8",
+   "n_missing": 0,
+   "n_unique": 2,
+   "stats": {
+    "min": 0.0,
+    "p25": 0.0,
+    "median": 0.0,
+    "p75": 1.0,
+    "max": 1.0,
+    "mean": 0.377049,
+    "sd": 0.488669
+   },
+   "binary": true
+  },
+  {
+   "name": "latex",
+   "normalized": "latex",
+   "dtype": "int8",
+   "n_missing": 0,
+   "n_unique": 2,
+   "stats": {
+    "min": 0.0,
+    "p25": 0.0,
+    "median": 0.0,
+    "p75": 0.0,
+    "max": 1.0,
+    "mean": 0.163934,
+    "sd": 0.373288
+   },
+   "binary": true
+  },
+  {
+   "name": "year",
+   "normalized": "year",
+   "dtype": "int8",
+   "n_missing": 0,
+   "n_unique": 9,
+   "stats": {
+    "min": 0.0,
+    "p25": 2.0,
+    "median": 4.0,
+    "p75": 6.0,
+    "max": 8.0,
+    "mean": 4.229508,
+    "sd": 2.445359
+   }
+  },
+  {
+   "name": "year2",
+   "normalized": "year2",
+   "dtype": "int8",
+   "n_missing": 0,
+   "n_unique": 9,
+   "stats": {
+    "min": 0.0,
+    "p25": 4.0,
+    "median": 16.0,
+    "p75": 36.0,
+    "max": 64.0,
+    "mean": 23.770492,
+    "sd": 22.291548
+   }
+  },
+  {
+   "name": "rose",
+   "normalized": "rose",
+   "dtype": "int8",
+   "n_missing": 0,
+   "n_unique": 2,
+   "stats": {
+    "min": 0.0,
+    "p25": 0.0,
+    "median": 0.0,
+    "p75": 0.0,
+    "max": 1.0,
+    "mean": 0.114754,
+    "sd": 0.32137
+   },
+   "binary": true
+  },
+  {
+   "name": "nitsch",
+   "normalized": "nitsch",
+   "dtype": "int8",
+   "n_missing": 0,
+   "n_unique": 2,
+   "stats": {
+    "min": 0.0,
+    "p25": 0.0,
+    "median": 0.0,
+    "p75": 0.0,
+    "max": 1.0,
+    "mean": 0.04918,
+    "sd": 0.218039
+   },
+   "binary": true
+  },
+  {
+   "name": "baldwin",
+   "normalized": "baldwin",
+   "dtype": "int8",
+   "n_missing": 0,
+   "n_unique": 2,
+   "stats": {
+    "min": 0.0,
+    "p25": 0.0,
+    "median": 0.0,
+    "p75": 0.0,
+    "max": 1.0,
+    "mean": 0.065574,
+    "sd": 0.24959
+   },
+   "binary": true
+  },
+  {
+   "name": "denardis",
+   "normalized": "denardis",
+   "dtype": "int8",
+   "n_missing": 0,
+   "n_unique": 2,
+   "stats": {
+    "min": 0.0,
+    "p25": 0.0,
+    "median": 0.0,
+    "p75": 0.0,
+    "max": 1.0,
+    "mean": 0.04918,
+    "sd": 0.218039
+   },
+   "binary": true
+  },
+  {
+   "name": "taglioni",
+   "normalized": "taglioni",
+   "dtype": "int8",
+   "n_missing": 0,
+   "n_unique": 2,
+   "stats": {
+    "min": 0.0,
+    "p25": 0.0,
+    "median": 0.0,
+    "p75": 0.0,
+    "max": 1.0,
+    "mean": 0.065574,
+    "sd": 0.24959
+   },
+   "binary": true
+  },
+  {
+   "name": "tenreyro",
+   "normalized": "tenreyro",
+   "dtype": "int8",
+   "n_missing": 0,
+   "n_unique": 2,
+   "stats": {
+    "min": 0.0,
+    "p25": 0.0,
+    "median": 0.0,
+    "p75": 0.0,
+    "max": 1.0,
+    "mean": 0.04918,
+    "sd": 0.218039
+   },
+   "binary": true
+  },
+  {
+   "name": "journal",
+   "normalized": "journal",
+   "dtype": "int8",
+   "n_missing": 0,
+   "n_unique": 2,
+   "stats": {
+    "min": 0.0,
+    "p25": 0.0,
+    "median": 1.0,
+    "p75": 1.0,
+    "max": 1.0,
+    "mean": 0.540984,
+    "sd": 0.502453
+   },
+   "binary": true
+  },
+  {
+   "name": "gamma",
+   "normalized": "gamma",
+   "dtype": "float32",
+   "n_missing": 0,
+   "n_unique": 57,
+   "role": "effect_estimate",
+   "stats": {
+    "min": -0.378,
+    "p25": 0.089,
+    "median": 0.47,
+    "p75": 0.82,
+    "max": 1.899,
+    "mean": 0.512952,
+    "sd": 0.509568
+   }
+  },
+  {
+   "name": "se",
+   "normalized": "se",
+   "dtype": "float32",
+   "n_missing": 0,
+   "n_unique": 49,
+   "role": "standard_error",
+   "stats": {
+    "min": 0.004,
+    "p25": 0.025,
+    "median": 0.1,
+    "p75": 0.23,
+    "max": 0.529,
+    "mean": 0.137998,
+    "sd": 0.131128
+   }
+  },
+  {
+   "name": "tstat",
+   "normalized": "tstat",
+   "dtype": "float32",
+   "n_missing": 0,
+   "n_unique": 59,
+   "role": "t_stat",
+   "stats": {
+    "min": -0.714556,
+    "p25": 2.22,
+    "median": 3.56,
+    "p75": 6.95,
+    "max": 16.571428,
+    "mean": 4.916527,
+    "sd": 4.089157
+   }
+  },
+  {
+   "name": "nobs",
+   "normalized": "nobs",
+   "dtype": "int32",
+   "n_missing": 0,
+   "n_unique": 56,
+   "role": "n_obs",
+   "stats": {
+    "min": 190.0,
+    "p25": 3558.0,
+    "median": 10064.0,
+    "p75": 31010.0,
+    "max": 16000000.0,
+    "mean": 304442.42623,
+    "sd": 2044575.697648
+   }
+  },
+  {
+   "name": "euro",
+   "normalized": "euro",
+   "dtype": "int8",
+   "n_missing": 0,
+   "n_unique": 2,
+   "stats": {
+    "min": 0.0,
+    "p25": 0.0,
+    "median": 0.0,
+    "p75": 1.0,
+    "max": 1.0,
+    "mean": 0.459016,
+    "sd": 0.502453
+   },
+   "binary": true
+  },
+  {
+   "name": "shortrun",
+   "normalized": "shortrun",
+   "dtype": "int8",
+   "n_missing": 0,
+   "n_unique": 2,
+   "stats": {
+    "min": 0.0,
+    "p25": 0.0,
+    "median": 0.0,
+    "p75": 1.0,
+    "max": 1.0,
+    "mean": 0.360656,
+    "sd": 0.484176
+   },
+   "binary": true
+  },
+  {
+   "name": "panel",
+   "normalized": "panel",
+   "dtype": "int8",
+   "n_missing": 0,
+   "n_unique": 2,
+   "stats": {
+    "min": 0.0,
+    "p25": 1.0,
+    "median": 1.0,
+    "p75": 1.0,
+    "max": 1.0,
+    "mean": 0.770492,
+    "sd": 0.424006
+   },
+   "binary": true
+  },
+  {
+   "name": "countries",
+   "normalized": "countries",
+   "dtype": "int16",
+   "n_missing": 0,
+   "n_unique": 27,
+   "stats": {
+    "min": 14.0,
+    "p25": 22.0,
+    "median": 40.0,
+    "p75": 186.0,
+    "max": 225.0,
+    "mean": 102.278689,
+    "sd": 84.933725
+   }
+  },
+  {
+   "name": "years",
+   "normalized": "years",
+   "dtype": "int8",
+   "n_missing": 0,
+   "n_unique": 27,
+   "stats": {
+    "min": 1.0,
+    "p25": 12.0,
+    "median": 20.0,
+    "p75": 33.0,
+    "max": 59.0,
+    "mean": 23.803279,
+    "sd": 15.305576
+   }
+  },
+  {
+   "name": "postwar",
+   "normalized": "postwar",
+   "dtype": "int8",
+   "n_missing": 0,
+   "n_unique": 2,
+   "stats": {
+    "min": 0.0,
+    "p25": 1.0,
+    "median": 1.0,
+    "p75": 1.0,
+    "max": 1.0,
+    "mean": 0.95082,
+    "sd": 0.218039
+   },
+   "binary": true
+  }
+ ]
+}

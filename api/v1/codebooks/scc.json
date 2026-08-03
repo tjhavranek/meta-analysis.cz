@@ -1,0 +1,598 @@
+{
+ "project": "scc",
+ "source_file": "scc.xlsx",
+ "source_archive": null,
+ "source_sheet": "stata",
+ "n_rows": 1144,
+ "n_columns": 36,
+ "columns": [
+  {
+   "name": "label",
+   "normalized": "label",
+   "dtype": "str",
+   "n_missing": 0,
+   "n_unique": 101,
+   "top_values": [
+    "Kopp et al. (2012)",
+    "Greenstone et al. (2013)",
+    "Parry (1993)",
+    "Ceronsky et al. (2011)",
+    "Tol (1999)"
+   ]
+  },
+  {
+   "name": "idstudy",
+   "normalized": "idstudy",
+   "dtype": "int64",
+   "n_missing": 0,
+   "n_unique": 101,
+   "role": "study_id",
+   "stats": {
+    "min": 1.0,
+    "p25": 38.0,
+    "median": 69.0,
+    "p75": 78.0,
+    "max": 102.0,
+    "mean": 59.47465,
+    "sd": 26.958236
+   }
+  },
+  {
+   "name": "pubyear",
+   "normalized": "pubyear",
+   "dtype": "int64",
+   "n_missing": 0,
+   "n_unique": 24,
+   "role": "pub_year",
+   "stats": {
+    "min": 1982.0,
+    "p25": 2004.0,
+    "median": 2011.0,
+    "p75": 2012.0,
+    "max": 2014.0,
+    "mean": 2007.449301,
+    "sd": 7.073855
+   }
+  },
+  {
+   "name": "reviewed",
+   "normalized": "reviewed",
+   "dtype": "int64",
+   "n_missing": 0,
+   "n_unique": 2,
+   "stats": {
+    "min": 0.0,
+    "p25": 1.0,
+    "median": 1.0,
+    "p75": 1.0,
+    "max": 1.0,
+    "mean": 0.829545,
+    "sd": 0.376196
+   },
+   "binary": true
+  },
+  {
+   "name": "dollaryear",
+   "normalized": "dollaryear",
+   "dtype": "int64",
+   "n_missing": 0,
+   "n_unique": 15,
+   "stats": {
+    "min": 1980.0,
+    "p25": 1995.0,
+    "median": 2005.0,
+    "p75": 2005.0,
+    "max": 2013.0,
+    "mean": 2000.612762,
+    "sd": 6.977746
+   }
+  },
+  {
+   "name": "emissionyear",
+   "normalized": "emissionyear",
+   "dtype": "int64",
+   "n_missing": 0,
+   "n_unique": 17,
+   "stats": {
+    "min": 1980.0,
+    "p25": 2000.0,
+    "median": 2010.0,
+    "p75": 2015.0,
+    "max": 2030.0,
+    "mean": 2007.839161,
+    "sd": 9.443501
+   }
+  },
+  {
+   "name": "tolweight",
+   "normalized": "tolweight",
+   "dtype": "float64",
+   "n_missing": 68,
+   "n_unique": 71,
+   "stats": {
+    "min": 0.0,
+    "p25": 0.006944,
+    "median": 0.030303,
+    "p75": 0.116279,
+    "max": 1.571429,
+    "mean": 0.135146,
+    "sd": 0.260093
+   }
+  },
+  {
+   "name": "scc",
+   "normalized": "scc",
+   "dtype": "float64",
+   "n_missing": 0,
+   "n_unique": 698,
+   "stats": {
+    "min": -12.829166,
+    "p25": 32.346517,
+    "median": 120.087733,
+    "p75": 380.434007,
+    "max": 10396.657152,
+    "mean": 312.97284,
+    "sd": 598.714464
+   }
+  },
+  {
+   "name": "sccmean",
+   "normalized": "sccmean",
+   "dtype": "float64",
+   "n_missing": 0,
+   "n_unique": 3,
+   "stats": {
+    "min": 0.0,
+    "p25": 0.0,
+    "median": 0.0,
+    "p75": 0.125,
+    "max": 1.0,
+    "mean": 0.249563,
+    "sd": 0.432697
+   }
+  },
+  {
+   "name": "sccbg",
+   "normalized": "sccbg",
+   "dtype": "float64",
+   "n_missing": 0,
+   "n_unique": 3,
+   "stats": {
+    "min": 0.0,
+    "p25": 0.0,
+    "median": 0.0,
+    "p75": 1.0,
+    "max": 1.0,
+    "mean": 0.444493,
+    "sd": 0.496907
+   }
+  },
+  {
+   "name": "sccmed",
+   "normalized": "sccmed",
+   "dtype": "int64",
+   "n_missing": 0,
+   "n_unique": 2,
+   "stats": {
+    "min": 0.0,
+    "p25": 0.0,
+    "median": 0.0,
+    "p75": 1.0,
+    "max": 1.0,
+    "mean": 0.305944,
+    "sd": 0.461008
+   },
+   "binary": true
+  },
+  {
+   "name": "stdev",
+   "normalized": "stdev",
+   "dtype": "float64",
+   "n_missing": 1096,
+   "n_unique": 24,
+   "stats": {
+    "min": 0.660449,
+    "p25": 11.437394,
+    "median": 73.666767,
+    "p75": 294.075966,
+    "max": 2046.048565,
+    "mean": 284.707582,
+    "sd": 494.837017
+   }
+  },
+  {
+   "name": "stdlow",
+   "normalized": "stdlow",
+   "dtype": "float64",
+   "n_missing": 542,
+   "n_unique": 233,
+   "stats": {
+    "min": 0.626528,
+    "p25": 38.293282,
+    "median": 91.903877,
+    "p75": 168.490441,
+    "max": 2046.048565,
+    "mean": 154.601609,
+    "sd": 230.13873
+   }
+  },
+  {
+   "name": "stdup",
+   "normalized": "stdup",
+   "dtype": "float64",
+   "n_missing": 542,
+   "n_unique": 295,
+   "stats": {
+    "min": 0.105451,
+    "p25": 90.325204,
+    "median": 446.831728,
+    "p75": 1285.052763,
+    "max": 14015.341268,
+    "mean": 1075.687569,
+    "sd": 1835.500471
+   }
+  },
+  {
+   "name": "iie",
+   "normalized": "iie",
+   "dtype": "int64",
+   "n_missing": 0,
+   "n_unique": 2,
+   "stats": {
+    "min": 0.0,
+    "p25": 0.0,
+    "median": 0.0,
+    "p75": 0.0,
+    "max": 1.0,
+    "mean": 0.162587,
+    "sd": 0.36915
+   },
+   "binary": true
+  },
+  {
+   "name": "mmi",
+   "normalized": "mmi",
+   "dtype": "int64",
+   "n_missing": 0,
+   "n_unique": 2,
+   "stats": {
+    "min": 0.0,
+    "p25": 1.0,
+    "median": 1.0,
+    "p75": 1.0,
+    "max": 1.0,
+    "mean": 0.965909,
+    "sd": 0.181542
+   },
+   "binary": true
+  },
+  {
+   "name": "dim",
+   "normalized": "dim",
+   "dtype": "int64",
+   "n_missing": 0,
+   "n_unique": 2,
+   "stats": {
+    "min": 0.0,
+    "p25": 0.0,
+    "median": 0.0,
+    "p75": 1.0,
+    "max": 1.0,
+    "mean": 0.333042,
+    "sd": 0.471508
+   },
+   "binary": true
+  },
+  {
+   "name": "sce",
+   "normalized": "sce",
+   "dtype": "int64",
+   "n_missing": 0,
+   "n_unique": 2,
+   "stats": {
+    "min": 0.0,
+    "p25": 1.0,
+    "median": 1.0,
+    "p75": 1.0,
+    "max": 1.0,
+    "mean": 0.848776,
+    "sd": 0.358424
+   },
+   "binary": true
+  },
+  {
+   "name": "fund",
+   "normalized": "fund",
+   "dtype": "int64",
+   "n_missing": 0,
+   "n_unique": 2,
+   "stats": {
+    "min": 0.0,
+    "p25": 0.0,
+    "median": 0.0,
+    "p75": 1.0,
+    "max": 1.0,
+    "mean": 0.329545,
+    "sd": 0.470254
+   },
+   "binary": true
+  },
+  {
+   "name": "dicerice",
+   "normalized": "dicerice",
+   "dtype": "int64",
+   "n_missing": 0,
+   "n_unique": 2,
+   "stats": {
+    "min": 0.0,
+    "p25": 0.0,
+    "median": 1.0,
+    "p75": 1.0,
+    "max": 1.0,
+    "mean": 0.500874,
+    "sd": 0.500218
+   },
+   "binary": true
+  },
+  {
+   "name": "page",
+   "normalized": "page",
+   "dtype": "int64",
+   "n_missing": 0,
+   "n_unique": 2,
+   "stats": {
+    "min": 0.0,
+    "p25": 0.0,
+    "median": 0.0,
+    "p75": 0.0,
+    "max": 1.0,
+    "mean": 0.221154,
+    "sd": 0.415205
+   },
+   "binary": true
+  },
+  {
+   "name": "cdr",
+   "normalized": "cdr",
+   "dtype": "float64",
+   "n_missing": 509,
+   "n_unique": 33,
+   "stats": {
+    "min": 0.0,
+    "p25": 3.0,
+    "median": 3.0,
+    "p75": 3.0,
+    "max": 10.0,
+    "mean": 3.238482,
+    "sd": 1.376351
+   }
+  },
+  {
+   "name": "prtp",
+   "normalized": "prtp",
+   "dtype": "float64",
+   "n_missing": 241,
+   "n_unique": 36,
+   "stats": {
+    "min": -2.0,
+    "p25": 0.0,
+    "median": 1.0,
+    "p75": 3.0,
+    "max": 8.0,
+    "mean": 1.217631,
+    "sd": 1.534381
+   }
+  },
+  {
+   "name": "rra",
+   "normalized": "rra",
+   "dtype": "float64",
+   "n_missing": 1002,
+   "n_unique": 18,
+   "stats": {
+    "min": 0.0,
+    "p25": 1.0,
+    "median": 1.125,
+    "p75": 2.0,
+    "max": 10.0,
+    "mean": 1.852133,
+    "sd": 2.149329
+   }
+  },
+  {
+   "name": "growth",
+   "normalized": "growth",
+   "dtype": "float64",
+   "n_missing": 1102,
+   "n_unique": 15,
+   "stats": {
+    "min": 0.0,
+    "p25": 1.3,
+    "median": 1.782456,
+    "p75": 2.15,
+    "max": 4.0,
+    "mean": 1.810469,
+    "sd": 0.952553
+   }
+  },
+  {
+   "name": "ies",
+   "normalized": "ies",
+   "dtype": "float64",
+   "n_missing": 1094,
+   "n_unique": 13,
+   "stats": {
+    "min": 0.363636,
+    "p25": 0.5,
+    "median": 0.5,
+    "p75": 1.0,
+    "max": 2.0,
+    "mean": 0.743762,
+    "sd": 0.356791
+   }
+  },
+  {
+   "name": "eweight",
+   "normalized": "eweight",
+   "dtype": "float64",
+   "n_missing": 0,
+   "n_unique": 3,
+   "stats": {
+    "min": 0.0,
+    "p25": 0.0,
+    "median": 0.0,
+    "p75": 0.0,
+    "max": 1.0,
+    "mean": 0.174825,
+    "sd": 0.379408
+   }
+  },
+  {
+   "name": "climatesens",
+   "normalized": "climatesens",
+   "dtype": "float64",
+   "n_missing": 1068,
+   "n_unique": 14,
+   "stats": {
+    "min": 1.2,
+    "p25": 3.0,
+    "median": 3.0,
+    "p75": 3.025,
+    "max": 6.0,
+    "mean": 3.126842,
+    "sd": 0.689839
+   }
+  },
+  {
+   "name": "hope",
+   "normalized": "hope",
+   "dtype": "int64",
+   "n_missing": 0,
+   "n_unique": 2,
+   "stats": {
+    "min": 0.0,
+    "p25": 0.0,
+    "median": 0.0,
+    "p75": 0.0,
+    "max": 1.0,
+    "mean": 0.118881,
+    "sd": 0.32379
+   },
+   "binary": true
+  },
+  {
+   "name": "nordhaus",
+   "normalized": "nordhaus",
+   "dtype": "int64",
+   "n_missing": 0,
+   "n_unique": 2,
+   "stats": {
+    "min": 0.0,
+    "p25": 0.0,
+    "median": 0.0,
+    "p75": 0.0,
+    "max": 1.0,
+    "mean": 0.026224,
+    "sd": 0.15987
+   },
+   "binary": true
+  },
+  {
+   "name": "tol",
+   "normalized": "tol",
+   "dtype": "int64",
+   "n_missing": 0,
+   "n_unique": 2,
+   "stats": {
+    "min": 0.0,
+    "p25": 0.0,
+    "median": 0.0,
+    "p75": 1.0,
+    "max": 1.0,
+    "mean": 0.252622,
+    "sd": 0.434706
+   },
+   "binary": true
+  },
+  {
+   "name": "pigou",
+   "normalized": "pigou",
+   "dtype": "float64",
+   "n_missing": 0,
+   "n_unique": 3,
+   "stats": {
+    "min": 0.0,
+    "p25": 0.0,
+    "median": 0.0,
+    "p75": 1.0,
+    "max": 1.0,
+    "mean": 0.349068,
+    "sd": 0.47668
+   }
+  },
+  {
+   "name": "dataset",
+   "normalized": "dataset",
+   "dtype": "int64",
+   "n_missing": 0,
+   "n_unique": 3,
+   "stats": {
+    "min": 0.0,
+    "p25": 0.0,
+    "median": 0.0,
+    "p75": 1.0,
+    "max": 2.0,
+    "mean": 0.352273,
+    "sd": 0.589374
+   }
+  },
+  {
+   "name": "citations",
+   "normalized": "citations",
+   "dtype": "int64",
+   "n_missing": 0,
+   "n_unique": 66,
+   "stats": {
+    "min": 0.0,
+    "p25": 23.0,
+    "median": 23.0,
+    "p75": 63.0,
+    "max": 4237.0,
+    "mean": 74.316434,
+    "sd": 193.320923
+   }
+  },
+  {
+   "name": "sjr",
+   "normalized": "sjr",
+   "dtype": "float64",
+   "n_missing": 0,
+   "n_unique": 27,
+   "stats": {
+    "min": 0.0,
+    "p25": 0.0,
+    "median": 0.0,
+    "p75": 1.84,
+    "max": 15.1,
+    "mean": 1.139729,
+    "sd": 2.141266
+   }
+  },
+  {
+   "name": "perstudy",
+   "normalized": "perstudy",
+   "dtype": "int64",
+   "n_missing": 0,
+   "n_unique": 23,
+   "stats": {
+    "min": 1.0,
+    "p25": 8.0,
+    "median": 16.0,
+    "p75": 144.0,
+    "max": 144.0,
+    "mean": 49.972028,
+    "sd": 56.794569
+   }
+  }
+ ]
+}

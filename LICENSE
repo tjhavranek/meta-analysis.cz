@@ -1,0 +1,90 @@
+meta-analysis.cz — licensing
+============================
+
+This file covers the material published at https://meta-analysis.cz.
+Three different things are licensed differently. Please read the part that
+applies to what you are using.
+
+
+1. THE COLLECTION AND ITS DERIVED DATA LAYER
+--------------------------------------------
+Licence: Creative Commons Attribution 4.0 International (CC BY 4.0)
+         https://creativecommons.org/licenses/by/4.0/
+
+This covers the compilation itself and everything generated from it:
+
+  - the dataset index and API (`/api/v1/`), including `datasets.json`,
+    the per-dataset codebooks, `datapackage.json` and the Croissant record
+  - the Parquet and CSV mirrors under `/data/v1/<project>/`
+  - the harmonised estimate-level table (`estimates_harmonised.*`)
+  - the selection, arrangement and documentation of the collection
+
+You may copy, redistribute, adapt and build upon this material, including
+commercially, provided you give appropriate credit.
+
+Cite the collection as:
+
+  Havránek, T. and Z. Iršová (2026). meta-analysis.cz: data and code for
+  meta-analyses in economics. https://meta-analysis.cz
+
+
+2. THE UNDERLYING RESEARCH DATASETS
+------------------------------------
+Each dataset under `/data/v1/<project>/` and each original file in a project
+folder was assembled for a specific published paper, with its own authors and
+co-authors. Those datasets remain the work of their respective author teams.
+
+The compilation licence in section 1 is granted by the maintainers of this site
+over the collection they assembled. It is not a re-licensing of any co-author's
+independent rights in an underlying dataset, and it does not override any terms
+attached to a dataset by its publisher or by a third-party data provider.
+
+**If you use an individual dataset, cite its paper.** Every dataset entry in
+`/api/v1/datasets.json` carries the paper's title, authors and DOI for exactly
+this purpose. This is the normal scholarly expectation and, for most of these
+datasets, also the condition on which the underlying material was shared.
+
+Where a dataset was compiled from a third-party source with its own terms, the
+codebook for that dataset records it. Two collections distributed here are not
+extracted-estimate datasets and are not part of the harmonised layer: the
+crisis database under `ews/` and the cross-field archive bundled in the MAIVE
+replication package under `maive/`. Their original terms apply.
+
+
+3. CODE
+-------
+Licence: MIT
+
+This covers the estimation and replication code distributed with the papers
+(`.do`, `.R`, `.py` files and the scripts inside the replication archives) and
+the tooling that generates this site and its data layer.
+
+  Copyright (c) the respective authors
+
+  Permission is hereby granted, free of charge, to any person obtaining a copy
+  of this software and associated documentation files (the "Software"), to deal
+  in the Software without restriction, including without limitation the rights
+  to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+  copies of the Software, and to permit persons to whom the Software is
+  furnished to do so, subject to the following conditions:
+
+  The above copyright notice and this permission notice shall be included in
+  all copies or substantial portions of the Software.
+
+  THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+  IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+  FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+  AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+  LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+  OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+  SOFTWARE.
+
+
+4. PAPERS
+---------
+The PDFs distributed here are author copies provided for scholarly use.
+Copyright in the published versions rests with the respective journals. They
+are not covered by section 1.
+
+
+Questions about reuse: https://meta-analysis.cz

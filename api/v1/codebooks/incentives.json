@@ -1,0 +1,1205 @@
+{
+ "project": "incentives",
+ "source_file": "incentives.xlsx",
+ "source_archive": null,
+ "source_sheet": "data",
+ "n_rows": 2193,
+ "n_columns": 72,
+ "columns": [
+  {
+   "name": "study_id",
+   "normalized": "study_id",
+   "dtype": "int64",
+   "n_missing": 0,
+   "n_unique": 88,
+   "role": "study_id",
+   "stats": {
+    "min": 1.0,
+    "p25": 17.0,
+    "median": 42.0,
+    "p75": 61.0,
+    "max": 88.0,
+    "mean": 40.904241,
+    "sd": 26.26429
+   }
+  },
+  {
+   "name": "experiment_id",
+   "normalized": "experiment_id",
+   "dtype": "int64",
+   "n_missing": 0,
+   "n_unique": 104,
+   "stats": {
+    "min": 1.0,
+    "p25": 23.0,
+    "median": 52.0,
+    "p75": 76.0,
+    "max": 104.0,
+    "mean": 50.569539,
+    "sd": 30.673029
+   }
+  },
+  {
+   "name": "include",
+   "normalized": "include",
+   "dtype": "int64",
+   "n_missing": 0,
+   "n_unique": 2,
+   "stats": {
+    "min": 1.0,
+    "p25": 1.0,
+    "median": 1.0,
+    "p75": 1.0,
+    "max": 2.0,
+    "mean": 1.186047,
+    "sd": 0.389233
+   }
+  },
+  {
+   "name": "bma",
+   "normalized": "bma",
+   "dtype": "int64",
+   "n_missing": 0,
+   "n_unique": 2,
+   "stats": {
+    "min": 0.0,
+    "p25": 0.0,
+    "median": 1.0,
+    "p75": 1.0,
+    "max": 1.0,
+    "mean": 0.570907,
+    "sd": 0.495059
+   },
+   "binary": true
+  },
+  {
+   "name": "study",
+   "normalized": "study",
+   "dtype": "str",
+   "n_missing": 0,
+   "n_unique": 88,
+   "top_values": [
+    "Berry et al. (2022)",
+    "Fryer (2011)",
+    "Campos-Mercade et al. (2023)",
+    "Ito (2015)",
+    "Karlan & List (2007)"
+   ]
+  },
+  {
+   "name": "publication_year",
+   "normalized": "publication_year",
+   "dtype": "int64",
+   "n_missing": 0,
+   "n_unique": 21,
+   "role": "pub_year",
+   "stats": {
+    "min": 1999.0,
+    "p25": 2011.0,
+    "median": 2016.0,
+    "p75": 2022.0,
+    "max": 2025.0,
+    "mean": 2016.006384,
+    "sd": 5.657012
+   }
+  },
+  {
+   "name": "data_year",
+   "normalized": "data_year",
+   "dtype": "float64",
+   "n_missing": 0,
+   "n_unique": 43,
+   "stats": {
+    "min": 1994.3,
+    "p25": 2005.0,
+    "median": 2010.3,
+    "p75": 2016.0,
+    "max": 2024.0,
+    "mean": 2010.863416,
+    "sd": 6.40557
+   }
+  },
+  {
+   "name": "country",
+   "normalized": "country",
+   "dtype": "str",
+   "n_missing": 0,
+   "n_unique": 27,
+   "role": "country",
+   "top_values": [
+    "United States",
+    "Germany",
+    "Sweden",
+    "Malawi",
+    "Colombia"
+   ]
+  },
+  {
+   "name": "cohens_d",
+   "normalized": "cohens_d",
+   "dtype": "float64",
+   "n_missing": 0,
+   "n_unique": 2147,
+   "role": "effect_estimate",
+   "stats": {
+    "min": -7.54656,
+    "p25": -0.005565,
+    "median": 0.03351,
+    "p75": 0.147967,
+    "max": 2.163228,
+    "mean": 0.092172,
+    "sd": 0.280277
+   }
+  },
+  {
+   "name": "se_cohens_d",
+   "normalized": "se_cohens_d",
+   "dtype": "float64",
+   "n_missing": 0,
+   "n_unique": 2143,
+   "role": "standard_error",
+   "stats": {
+    "min": 0.001092,
+    "p25": 0.024684,
+    "median": 0.056887,
+    "p75": 0.105882,
+    "max": 3.591546,
+    "mean": 0.076016,
+    "sd": 0.102544
+   }
+  },
+  {
+   "name": "pcc",
+   "normalized": "pcc",
+   "dtype": "float64",
+   "n_missing": 0,
+   "n_unique": 2147,
+   "stats": {
+    "min": -0.96663,
+    "p25": -0.002782,
+    "median": 0.016752,
+    "p75": 0.073782,
+    "max": 0.734266,
+    "mean": 0.045147,
+    "sd": 0.105928
+   }
+  },
+  {
+   "name": "se_pcc",
+   "normalized": "se_pcc",
+   "dtype": "float64",
+   "n_missing": 0,
+   "n_unique": 2143,
+   "stats": {
+    "min": 0.000546,
+    "p25": 0.012332,
+    "median": 0.028062,
+    "p75": 0.052165,
+    "max": 0.209078,
+    "mean": 0.035528,
+    "sd": 0.031399
+   }
+  },
+  {
+   "name": "t_adjusted",
+   "normalized": "t_adjusted",
+   "dtype": "float64",
+   "n_missing": 0,
+   "n_unique": 1826,
+   "stats": {
+    "min": -32.017341,
+    "p25": -0.175182,
+    "median": 1.178511,
+    "p75": 2.666667,
+    "max": 48.0,
+    "mean": 1.67265,
+    "sd": 3.448733
+   }
+  },
+  {
+   "name": "precision_pcc",
+   "normalized": "precision_pcc",
+   "dtype": "float64",
+   "n_missing": 0,
+   "n_unique": 2143,
+   "stats": {
+    "min": 4.782903,
+    "p25": 19.170031,
+    "median": 35.284558,
+    "p75": 81.092593,
+    "max": 1832.302589,
+    "mean": 119.912662,
+    "sd": 277.106659
+   }
+  },
+  {
+   "name": "weight",
+   "normalized": "weight",
+   "dtype": "float64",
+   "n_missing": 0,
+   "n_unique": 40,
+   "stats": {
+    "min": 0.008065,
+    "p25": 0.015625,
+    "median": 0.020833,
+    "p75": 0.037037,
+    "max": 1.0,
+    "mean": 0.040128,
+    "sd": 0.067109
+   }
+  },
+  {
+   "name": "weight_pref",
+   "normalized": "weight_pref",
+   "dtype": "float64",
+   "n_missing": 0,
+   "n_unique": 44,
+   "stats": {
+    "min": 0.011628,
+    "p25": 0.019231,
+    "median": 0.037037,
+    "p75": 0.066667,
+    "max": 1.0,
+    "mean": 0.069767,
+    "sd": 0.105225
+   }
+  },
+  {
+   "name": "weight_exp",
+   "normalized": "weight_exp",
+   "dtype": "float64",
+   "n_missing": 0,
+   "n_unique": 42,
+   "stats": {
+    "min": 0.008065,
+    "p25": 0.015873,
+    "median": 0.02381,
+    "p75": 0.041667,
+    "max": 1.0,
+    "mean": 0.047424,
+    "sd": 0.079023
+   }
+  },
+  {
+   "name": "weight_exp_pref",
+   "normalized": "weight_exp_pref",
+   "dtype": "float64",
+   "n_missing": 0,
+   "n_unique": 43,
+   "stats": {
+    "min": 0.011628,
+    "p25": 0.021739,
+    "median": 0.038462,
+    "p75": 0.083333,
+    "max": 1.0,
+    "mean": 0.080255,
+    "sd": 0.121069
+   }
+  },
+  {
+   "name": "observations",
+   "normalized": "observations",
+   "dtype": "int64",
+   "n_missing": 0,
+   "n_unique": 533,
+   "role": "n_obs",
+   "stats": {
+    "min": 26.0,
+    "p25": 379.0,
+    "median": 1255.0,
+    "p75": 6586.0,
+    "max": 3357332.0,
+    "mean": 91469.723666,
+    "sd": 423247.169343
+   }
+  },
+  {
+   "name": "n_obs",
+   "normalized": "n_obs",
+   "dtype": "float64",
+   "n_missing": 0,
+   "n_unique": 533,
+   "role": "n_obs",
+   "stats": {
+    "min": 3.258097,
+    "p25": 5.937536,
+    "median": 7.134891,
+    "p75": 8.792701,
+    "max": 15.026657,
+    "mean": 7.668708,
+    "sd": 2.34052
+   }
+  },
+  {
+   "name": "preferred",
+   "normalized": "preferred",
+   "dtype": "int64",
+   "n_missing": 0,
+   "n_unique": 2,
+   "stats": {
+    "min": 0.0,
+    "p25": 0.0,
+    "median": 0.0,
+    "p75": 1.0,
+    "max": 1.0,
+    "mean": 0.330141,
+    "sd": 0.470371
+   },
+   "binary": true
+  },
+  {
+   "name": "preferred_reasoning",
+   "normalized": "preferred_reasoning",
+   "dtype": "str",
+   "n_missing": 1469,
+   "n_unique": 107,
+   "top_values": [
+    "In the abstract, the authors state: 'We find that the Population-based scholarship decreased test scores and motivation to study, especially for those least likely to win. By contrast, we find no evidence for test score impacts among those in the Bin-based scholarship program.'",
+    "In the abstract, the authors state: 'We find that incentives backfire: students offered incentives perform worse than their control counterparts. These negative effects are mainly driven by mismatched goals: the negative treatment effects are concentrated among low-ability students who are assigned a high goal and among students with high aspirations who are assigned a low goal. The effects are also negative but not statistically significant from zero when students are allowed to choose their own goal.'",
+    "In the abstract, the authors note: 'No program had an effect on men\u2019s grades or other measures of academic performance. However, the fall and first-year grades of women in the combined group were significantly higher than those of women in the control group. Women in this group also earned more course credits and were less likely to be on academic probation. These differences persisted through the end of the second year.' These findings correspond to Tables 4 and 5.",
+    "In the conclusion, the authors report: 'The empirical results point to an increase in (proxy) high-school graduation rates of 5 to 7 percentage points.'",
+    "In the abstract, the authors state: 'We find that guaranteed incentives of $20 increase uptake by 13 percentage points in the short run and 9 in the long run. Guaranteed incentives are more effective than lottery-based, prosocial, or individually-targeted incentives, though all boost vaccinations.'"
+   ]
+  },
+  {
+   "name": "effect_result",
+   "normalized": "effect_result",
+   "dtype": "int64",
+   "n_missing": 0,
+   "n_unique": 2,
+   "stats": {
+    "min": 0.0,
+    "p25": 0.0,
+    "median": 1.0,
+    "p75": 1.0,
+    "max": 1.0,
+    "mean": 0.704514,
+    "sd": 0.456365
+   },
+   "binary": true
+  },
+  {
+   "name": "effect_effort",
+   "normalized": "effect_effort",
+   "dtype": "int64",
+   "n_missing": 0,
+   "n_unique": 2,
+   "stats": {
+    "min": 0.0,
+    "p25": 0.0,
+    "median": 0.0,
+    "p75": 1.0,
+    "max": 1.0,
+    "mean": 0.295486,
+    "sd": 0.456365
+   },
+   "binary": true
+  },
+  {
+   "name": "effect_gpa",
+   "normalized": "effect_gpa",
+   "dtype": "float64",
+   "n_missing": 941,
+   "n_unique": 2,
+   "stats": {
+    "min": 0.0,
+    "p25": 0.0,
+    "median": 0.0,
+    "p75": 1.0,
+    "max": 1.0,
+    "mean": 0.396965,
+    "sd": 0.489464
+   },
+   "binary": true
+  },
+  {
+   "name": "effect_charity",
+   "normalized": "effect_charity",
+   "dtype": "float64",
+   "n_missing": 941,
+   "n_unique": 2,
+   "stats": {
+    "min": 0.0,
+    "p25": 0.0,
+    "median": 0.0,
+    "p75": 0.0,
+    "max": 1.0,
+    "mean": 0.226038,
+    "sd": 0.418431
+   },
+   "binary": true
+  },
+  {
+   "name": "effect_game",
+   "normalized": "effect_game",
+   "dtype": "float64",
+   "n_missing": 941,
+   "n_unique": 2,
+   "stats": {
+    "min": 0.0,
+    "p25": 0.0,
+    "median": 0.0,
+    "p75": 0.0,
+    "max": 1.0,
+    "mean": 0.222843,
+    "sd": 0.41632
+   },
+   "binary": true
+  },
+  {
+   "name": "effect_work",
+   "normalized": "effect_work",
+   "dtype": "float64",
+   "n_missing": 941,
+   "n_unique": 2,
+   "stats": {
+    "min": 0.0,
+    "p25": 0.0,
+    "median": 0.0,
+    "p75": 0.0,
+    "max": 1.0,
+    "mean": 0.154153,
+    "sd": 0.36124
+   },
+   "binary": true
+  },
+  {
+   "name": "effect_positive",
+   "normalized": "effect_positive",
+   "dtype": "int64",
+   "n_missing": 0,
+   "n_unique": 2,
+   "stats": {
+    "min": 0.0,
+    "p25": 1.0,
+    "median": 1.0,
+    "p75": 1.0,
+    "max": 1.0,
+    "mean": 0.845417,
+    "sd": 0.361589
+   },
+   "binary": true
+  },
+  {
+   "name": "task_app",
+   "normalized": "task_app",
+   "dtype": "float64",
+   "n_missing": 941,
+   "n_unique": 2,
+   "stats": {
+    "min": 0.0,
+    "p25": 0.0,
+    "median": 0.0,
+    "p75": 1.0,
+    "max": 1.0,
+    "mean": 0.436901,
+    "sd": 0.496201
+   },
+   "binary": true
+  },
+  {
+   "name": "task_napp",
+   "normalized": "task_napp",
+   "dtype": "float64",
+   "n_missing": 941,
+   "n_unique": 2,
+   "stats": {
+    "min": 0.0,
+    "p25": 0.0,
+    "median": 1.0,
+    "p75": 1.0,
+    "max": 1.0,
+    "mean": 0.563099,
+    "sd": 0.496201
+   },
+   "binary": true
+  },
+  {
+   "name": "task_cog",
+   "normalized": "task_cog",
+   "dtype": "float64",
+   "n_missing": 941,
+   "n_unique": 2,
+   "stats": {
+    "min": 0.0,
+    "p25": 1.0,
+    "median": 1.0,
+    "p75": 1.0,
+    "max": 1.0,
+    "mean": 0.765974,
+    "sd": 0.423557
+   },
+   "binary": true
+  },
+  {
+   "name": "task_man",
+   "normalized": "task_man",
+   "dtype": "float64",
+   "n_missing": 941,
+   "n_unique": 2,
+   "stats": {
+    "min": 0.0,
+    "p25": 0.0,
+    "median": 0.0,
+    "p75": 0.0,
+    "max": 1.0,
+    "mean": 0.234026,
+    "sd": 0.423557
+   },
+   "binary": true
+  },
+  {
+   "name": "perf_quan",
+   "normalized": "perf_quan",
+   "dtype": "float64",
+   "n_missing": 941,
+   "n_unique": 2,
+   "stats": {
+    "min": 0.0,
+    "p25": 1.0,
+    "median": 1.0,
+    "p75": 1.0,
+    "max": 1.0,
+    "mean": 0.806709,
+    "sd": 0.395037
+   },
+   "binary": true
+  },
+  {
+   "name": "perf_qual",
+   "normalized": "perf_qual",
+   "dtype": "float64",
+   "n_missing": 941,
+   "n_unique": 2,
+   "stats": {
+    "min": 0.0,
+    "p25": 0.0,
+    "median": 0.0,
+    "p75": 0.0,
+    "max": 1.0,
+    "mean": 0.193291,
+    "sd": 0.395037
+   },
+   "binary": true
+  },
+  {
+   "name": "reward_scaled",
+   "normalized": "reward_scaled",
+   "dtype": "float64",
+   "n_missing": 941,
+   "n_unique": 96,
+   "stats": {
+    "min": 0.0,
+    "p25": 0.301728,
+    "median": 0.426211,
+    "p75": 0.862339,
+    "max": 1.379832,
+    "mean": 0.549252,
+    "sd": 0.3989
+   }
+  },
+  {
+   "name": "framing_pos",
+   "normalized": "framing_pos",
+   "dtype": "float64",
+   "n_missing": 941,
+   "n_unique": 2,
+   "stats": {
+    "min": 0.0,
+    "p25": 1.0,
+    "median": 1.0,
+    "p75": 1.0,
+    "max": 1.0,
+    "mean": 0.911342,
+    "sd": 0.284363
+   },
+   "binary": true
+  },
+  {
+   "name": "framing_neg",
+   "normalized": "framing_neg",
+   "dtype": "float64",
+   "n_missing": 941,
+   "n_unique": 2,
+   "stats": {
+    "min": 0.0,
+    "p25": 0.0,
+    "median": 0.0,
+    "p75": 0.0,
+    "max": 1.0,
+    "mean": 0.088658,
+    "sd": 0.284363
+   },
+   "binary": true
+  },
+  {
+   "name": "all_paid",
+   "normalized": "all_paid",
+   "dtype": "float64",
+   "n_missing": 941,
+   "n_unique": 2,
+   "stats": {
+    "min": 0.0,
+    "p25": 0.0,
+    "median": 1.0,
+    "p75": 1.0,
+    "max": 1.0,
+    "mean": 0.565495,
+    "sd": 0.49589
+   },
+   "binary": true
+  },
+  {
+   "name": "reward_own",
+   "normalized": "reward_own",
+   "dtype": "float64",
+   "n_missing": 941,
+   "n_unique": 2,
+   "stats": {
+    "min": 0.0,
+    "p25": 1.0,
+    "median": 1.0,
+    "p75": 1.0,
+    "max": 1.0,
+    "mean": 0.837859,
+    "sd": 0.368727
+   },
+   "binary": true
+  },
+  {
+   "name": "reward_else",
+   "normalized": "reward_else",
+   "dtype": "float64",
+   "n_missing": 941,
+   "n_unique": 2,
+   "stats": {
+    "min": 0.0,
+    "p25": 0.0,
+    "median": 0.0,
+    "p75": 0.0,
+    "max": 1.0,
+    "mean": 0.165335,
+    "sd": 0.371631
+   },
+   "binary": true
+  },
+  {
+   "name": "control_zero",
+   "normalized": "control_zero",
+   "dtype": "int64",
+   "n_missing": 0,
+   "n_unique": 2,
+   "stats": {
+    "min": 0.0,
+    "p25": 1.0,
+    "median": 1.0,
+    "p75": 1.0,
+    "max": 1.0,
+    "mean": 0.754218,
+    "sd": 0.430648
+   },
+   "binary": true
+  },
+  {
+   "name": "control_nonzero",
+   "normalized": "control_nonzero",
+   "dtype": "int64",
+   "n_missing": 0,
+   "n_unique": 2,
+   "stats": {
+    "min": 0.0,
+    "p25": 0.0,
+    "median": 0.0,
+    "p75": 0.0,
+    "max": 1.0,
+    "mean": 0.245782,
+    "sd": 0.430648
+   },
+   "binary": true
+  },
+  {
+   "name": "mot_alt",
+   "normalized": "mot_alt",
+   "dtype": "float64",
+   "n_missing": 941,
+   "n_unique": 2,
+   "stats": {
+    "min": 0.0,
+    "p25": 0.0,
+    "median": 0.0,
+    "p75": 0.0,
+    "max": 1.0,
+    "mean": 0.215655,
+    "sd": 0.41144
+   },
+   "binary": true
+  },
+  {
+   "name": "mot_rec",
+   "normalized": "mot_rec",
+   "dtype": "float64",
+   "n_missing": 941,
+   "n_unique": 2,
+   "stats": {
+    "min": 0.0,
+    "p25": 0.0,
+    "median": 0.0,
+    "p75": 0.0,
+    "max": 1.0,
+    "mean": 0.103834,
+    "sd": 0.305167
+   },
+   "binary": true
+  },
+  {
+   "name": "mot_fai",
+   "normalized": "mot_fai",
+   "dtype": "float64",
+   "n_missing": 941,
+   "n_unique": 2,
+   "stats": {
+    "min": 0.0,
+    "p25": 0.0,
+    "median": 0.0,
+    "p75": 0.0,
+    "max": 1.0,
+    "mean": 0.094249,
+    "sd": 0.292292
+   },
+   "binary": true
+  },
+  {
+   "name": "mot_mon",
+   "normalized": "mot_mon",
+   "dtype": "float64",
+   "n_missing": 941,
+   "n_unique": 2,
+   "stats": {
+    "min": 0.0,
+    "p25": 0.0,
+    "median": 1.0,
+    "p75": 1.0,
+    "max": 1.0,
+    "mean": 0.586262,
+    "sd": 0.492699
+   },
+   "binary": true
+  },
+  {
+   "name": "location_lab",
+   "normalized": "location_lab",
+   "dtype": "float64",
+   "n_missing": 941,
+   "n_unique": 2,
+   "stats": {
+    "min": 0.0,
+    "p25": 0.0,
+    "median": 0.0,
+    "p75": 0.0,
+    "max": 1.0,
+    "mean": 0.193291,
+    "sd": 0.395037
+   },
+   "binary": true
+  },
+  {
+   "name": "location_field",
+   "normalized": "location_field",
+   "dtype": "float64",
+   "n_missing": 941,
+   "n_unique": 2,
+   "stats": {
+    "min": 0.0,
+    "p25": 1.0,
+    "median": 1.0,
+    "p75": 1.0,
+    "max": 1.0,
+    "mean": 0.806709,
+    "sd": 0.395037
+   },
+   "binary": true
+  },
+  {
+   "name": "crowding_out",
+   "normalized": "crowding_out",
+   "dtype": "float64",
+   "n_missing": 941,
+   "n_unique": 2,
+   "stats": {
+    "min": 0.0,
+    "p25": 0.0,
+    "median": 1.0,
+    "p75": 1.0,
+    "max": 1.0,
+    "mean": 0.563898,
+    "sd": 0.496098
+   },
+   "binary": true
+  },
+  {
+   "name": "subject_st",
+   "normalized": "subject_st",
+   "dtype": "float64",
+   "n_missing": 941,
+   "n_unique": 2,
+   "stats": {
+    "min": 0.0,
+    "p25": 0.0,
+    "median": 1.0,
+    "p75": 1.0,
+    "max": 1.0,
+    "mean": 0.620607,
+    "sd": 0.48543
+   },
+   "binary": true
+  },
+  {
+   "name": "subject_emp",
+   "normalized": "subject_emp",
+   "dtype": "float64",
+   "n_missing": 941,
+   "n_unique": 2,
+   "stats": {
+    "min": 0.0,
+    "p25": 0.0,
+    "median": 0.0,
+    "p75": 0.0,
+    "max": 1.0,
+    "mean": 0.101438,
+    "sd": 0.302028
+   },
+   "binary": true
+  },
+  {
+   "name": "subject_mix",
+   "normalized": "subject_mix",
+   "dtype": "float64",
+   "n_missing": 941,
+   "n_unique": 2,
+   "stats": {
+    "min": 0.0,
+    "p25": 0.0,
+    "median": 0.0,
+    "p75": 1.0,
+    "max": 1.0,
+    "mean": 0.277955,
+    "sd": 0.44817
+   },
+   "binary": true
+  },
+  {
+   "name": "male",
+   "normalized": "male",
+   "dtype": "float64",
+   "n_missing": 941,
+   "n_unique": 24,
+   "stats": {
+    "min": 0.0,
+    "p25": 0.49,
+    "median": 0.5,
+    "p75": 0.52,
+    "max": 1.0,
+    "mean": 0.5282,
+    "sd": 0.229426
+   }
+  },
+  {
+   "name": "female",
+   "normalized": "female",
+   "dtype": "float64",
+   "n_missing": 941,
+   "n_unique": 24,
+   "stats": {
+    "min": 0.0,
+    "p25": 0.48,
+    "median": 0.5,
+    "p75": 0.51,
+    "max": 1.0,
+    "mean": 0.471512,
+    "sd": 0.229453
+   }
+  },
+  {
+   "name": "mid_age",
+   "normalized": "mid_age",
+   "dtype": "float64",
+   "n_missing": 941,
+   "n_unique": 44,
+   "stats": {
+    "min": 2.014903,
+    "p25": 2.724167,
+    "median": 3.091042,
+    "p75": 3.496508,
+    "max": 4.174387,
+    "mean": 3.134546,
+    "sd": 0.52208
+   }
+  },
+  {
+   "name": "data_avgyear",
+   "normalized": "data_avgyear",
+   "dtype": "float64",
+   "n_missing": 0,
+   "n_unique": 43,
+   "stats": {
+    "min": 7.598048,
+    "p25": 7.603399,
+    "median": 7.606039,
+    "p75": 7.608871,
+    "max": 7.612831,
+    "mean": 7.606314,
+    "sd": 0.003185
+   }
+  },
+  {
+   "name": "developed_country",
+   "normalized": "developed_country",
+   "dtype": "float64",
+   "n_missing": 941,
+   "n_unique": 2,
+   "stats": {
+    "min": 0.0,
+    "p25": 0.0,
+    "median": 1.0,
+    "p75": 1.0,
+    "max": 1.0,
+    "mean": 0.744409,
+    "sd": 0.436367
+   },
+   "binary": true
+  },
+  {
+   "name": "ols_method",
+   "normalized": "ols_method",
+   "dtype": "float64",
+   "n_missing": 941,
+   "n_unique": 2,
+   "stats": {
+    "min": 0.0,
+    "p25": 0.0,
+    "median": 1.0,
+    "p75": 1.0,
+    "max": 1.0,
+    "mean": 0.642971,
+    "sd": 0.479315
+   },
+   "binary": true
+  },
+  {
+   "name": "logit_method",
+   "normalized": "logit_method",
+   "dtype": "float64",
+   "n_missing": 941,
+   "n_unique": 2,
+   "stats": {
+    "min": 0.0,
+    "p25": 0.0,
+    "median": 0.0,
+    "p75": 0.0,
+    "max": 1.0,
+    "mean": 0.054313,
+    "sd": 0.226725
+   },
+   "binary": true
+  },
+  {
+   "name": "probit_method",
+   "normalized": "probit_method",
+   "dtype": "float64",
+   "n_missing": 941,
+   "n_unique": 2,
+   "stats": {
+    "min": 0.0,
+    "p25": 0.0,
+    "median": 0.0,
+    "p75": 0.0,
+    "max": 1.0,
+    "mean": 0.07508,
+    "sd": 0.263625
+   },
+   "binary": true
+  },
+  {
+   "name": "tobit_method",
+   "normalized": "tobit_method",
+   "dtype": "float64",
+   "n_missing": 941,
+   "n_unique": 2,
+   "stats": {
+    "min": 0.0,
+    "p25": 0.0,
+    "median": 0.0,
+    "p75": 0.0,
+    "max": 1.0,
+    "mean": 0.031949,
+    "sd": 0.175934
+   },
+   "binary": true
+  },
+  {
+   "name": "fe_method",
+   "normalized": "fe_method",
+   "dtype": "float64",
+   "n_missing": 941,
+   "n_unique": 2,
+   "stats": {
+    "min": 0.0,
+    "p25": 0.0,
+    "median": 0.0,
+    "p75": 0.0,
+    "max": 1.0,
+    "mean": 0.045527,
+    "sd": 0.208541
+   },
+   "binary": true
+  },
+  {
+   "name": "re_method",
+   "normalized": "re_method",
+   "dtype": "float64",
+   "n_missing": 941,
+   "n_unique": 2,
+   "stats": {
+    "min": 0.0,
+    "p25": 0.0,
+    "median": 0.0,
+    "p75": 0.0,
+    "max": 1.0,
+    "mean": 0.03115,
+    "sd": 0.173793
+   },
+   "binary": true
+  },
+  {
+   "name": "mean_method",
+   "normalized": "mean_method",
+   "dtype": "float64",
+   "n_missing": 941,
+   "n_unique": 2,
+   "stats": {
+    "min": 0.0,
+    "p25": 0.0,
+    "median": 0.0,
+    "p75": 0.0,
+    "max": 1.0,
+    "mean": 0.027955,
+    "sd": 0.164911
+   },
+   "binary": true
+  },
+  {
+   "name": "did_method",
+   "normalized": "did_method",
+   "dtype": "float64",
+   "n_missing": 941,
+   "n_unique": 2,
+   "stats": {
+    "min": 0.0,
+    "p25": 0.0,
+    "median": 0.0,
+    "p75": 0.0,
+    "max": 1.0,
+    "mean": 0.035942,
+    "sd": 0.186221
+   },
+   "binary": true
+  },
+  {
+   "name": "other_method",
+   "normalized": "other_method",
+   "dtype": "float64",
+   "n_missing": 941,
+   "n_unique": 2,
+   "stats": {
+    "min": 0.0,
+    "p25": 0.0,
+    "median": 0.0,
+    "p75": 0.0,
+    "max": 1.0,
+    "mean": 0.055112,
+    "sd": 0.22829
+   },
+   "binary": true
+  },
+  {
+   "name": "data_cross",
+   "normalized": "data_cross",
+   "dtype": "float64",
+   "n_missing": 941,
+   "n_unique": 2,
+   "stats": {
+    "min": 0.0,
+    "p25": 0.0,
+    "median": 1.0,
+    "p75": 1.0,
+    "max": 1.0,
+    "mean": 0.542332,
+    "sd": 0.498404
+   },
+   "binary": true
+  },
+  {
+   "name": "data_panel",
+   "normalized": "data_panel",
+   "dtype": "float64",
+   "n_missing": 941,
+   "n_unique": 2,
+   "stats": {
+    "min": 0.0,
+    "p25": 0.0,
+    "median": 0.0,
+    "p75": 1.0,
+    "max": 1.0,
+    "mean": 0.457668,
+    "sd": 0.498404
+   },
+   "binary": true
+  },
+  {
+   "name": "impact_factor",
+   "normalized": "impact_factor",
+   "dtype": "float64",
+   "n_missing": 941,
+   "n_unique": 28,
+   "stats": {
+    "min": 1.925853,
+    "p25": 3.919535,
+    "median": 4.013044,
+    "p75": 4.366621,
+    "max": 5.116112,
+    "mean": 4.064661,
+    "sd": 0.586716
+   }
+  },
+  {
+   "name": "citations",
+   "normalized": "citations",
+   "dtype": "float64",
+   "n_missing": 941,
+   "n_unique": 54,
+   "stats": {
+    "min": 0.251314,
+    "p25": 2.6112,
+    "median": 3.602346,
+    "p75": 3.947844,
+    "max": 5.105945,
+    "mean": 3.240461,
+    "sd": 0.997396
+   }
+  },
+  {
+   "name": "reference",
+   "normalized": "reference",
+   "dtype": "str",
+   "n_missing": 0,
+   "n_unique": 88,
+   "top_values": [
+    "Berry, J., Kim, H. B. & Son, H. H. (2022): \"When Student Incentives Do Not Work: Evidence from a Field Experiment in Malawi.\" Journal of Development Economics 158: art. 102893.",
+    "Fryer, R. G. (2011): \u201cFinancial Incentives and Student Achievement: Evidence from Randomized Trials.\u201d The Quarterly Journal of Economics 126(4): pp. 1755\u20131798.",
+    "P Campos-Mercade, P Thiemann, E Wengstr\u00f6m (2023). Performance Incentives in Education: The Role of Goal Mismatch.",
+    "Ito, K. (2015): \"Asymmetric Incentives in Subsidies: Evidence from a Large-Scale Electricity Rebate Program.\" American Economic Journal: Economic Policy 7(3): pp. 209\u2013237.",
+    "Karlan, D. & List, J. A. (2007): \u201cDoes Price Matter in Charitable Giving? Evidence from a Large-Scale Natural Field Experiment.\u201d American Economic Review 97(5): pp. 1774\u20131793."
+   ]
+  }
+ ]
+}

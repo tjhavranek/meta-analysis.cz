@@ -1,0 +1,944 @@
+{
+ "project": "beauty",
+ "source_file": "beauty.xlsx",
+ "source_archive": null,
+ "source_sheet": "data",
+ "n_rows": 1159,
+ "n_columns": 56,
+ "columns": [
+  {
+   "name": "study_id",
+   "normalized": "study_id",
+   "dtype": "int64",
+   "n_missing": 0,
+   "n_unique": 67,
+   "role": "study_id",
+   "stats": {
+    "min": 1.0,
+    "p25": 16.0,
+    "median": 31.0,
+    "p75": 48.0,
+    "max": 67.0,
+    "mean": 32.147541,
+    "sd": 17.791485
+   }
+  },
+  {
+   "name": "study",
+   "normalized": "study",
+   "dtype": "str",
+   "n_missing": 0,
+   "n_unique": 67,
+   "top_values": [
+    "Clark & Walker (2009)",
+    "Harper (2000)",
+    "Hamermesh & Biddle (1994)",
+    "Kanazawa & Still (2018)",
+    "Malik et al. (2023)"
+   ]
+  },
+  {
+   "name": "country",
+   "normalized": "country",
+   "dtype": "str",
+   "n_missing": 0,
+   "n_unique": 19,
+   "role": "country",
+   "top_values": [
+    "United States",
+    "World",
+    "Italy",
+    "China",
+    "Canada"
+   ]
+  },
+  {
+   "name": "premium",
+   "normalized": "premium",
+   "dtype": "float64",
+   "n_missing": 0,
+   "n_unique": 1029,
+   "role": "effect_estimate",
+   "stats": {
+    "min": -35.666165,
+    "p25": 0.878209,
+    "median": 2.924083,
+    "p75": 6.709173,
+    "max": 48.699901,
+    "mean": 4.263575,
+    "sd": 6.835543
+   }
+  },
+  {
+   "name": "se_premium",
+   "normalized": "se_premium",
+   "dtype": "float64",
+   "n_missing": 0,
+   "n_unique": 1029,
+   "role": "standard_error",
+   "stats": {
+    "min": 0.000574,
+    "p25": 1.212262,
+    "median": 2.30104,
+    "p75": 4.367826,
+    "max": 129.2,
+    "mean": 4.070631,
+    "sd": 7.521861
+   }
+  },
+  {
+   "name": "precision_premium",
+   "normalized": "precision_premium",
+   "dtype": "float64",
+   "n_missing": 0,
+   "n_unique": 1029,
+   "stats": {
+    "min": 0.00774,
+    "p25": 0.228947,
+    "median": 0.434586,
+    "p75": 0.824906,
+    "max": 1742.247719,
+    "mean": 4.272522,
+    "sd": 71.381461
+   }
+  },
+  {
+   "name": "tstat_premium",
+   "normalized": "tstat_premium",
+   "dtype": "float64",
+   "n_missing": 0,
+   "n_unique": 1100,
+   "role": "t_stat",
+   "stats": {
+    "min": -7.595506,
+    "p25": 0.421276,
+    "median": 1.728712,
+    "p75": 2.971372,
+    "max": 51.273132,
+    "mean": 2.022615,
+    "sd": 3.659694
+   }
+  },
+  {
+   "name": "nobs",
+   "normalized": "nobs",
+   "dtype": "int64",
+   "n_missing": 0,
+   "n_unique": 360,
+   "role": "n_obs",
+   "stats": {
+    "min": 33.0,
+    "p25": 425.0,
+    "median": 1422.0,
+    "p75": 2734.0,
+    "max": 275858.0,
+    "mean": 9012.147541,
+    "sd": 37773.730076
+   }
+  },
+  {
+   "name": "instrument",
+   "normalized": "instrument",
+   "dtype": "float64",
+   "n_missing": 0,
+   "n_unique": 360,
+   "stats": {
+    "min": 5.744563,
+    "p25": 20.6154,
+    "median": 37.709415,
+    "p75": 52.287666,
+    "max": 525.221858,
+    "mean": 54.615166,
+    "sd": 77.682288
+   }
+  },
+  {
+   "name": "weight",
+   "normalized": "weight",
+   "dtype": "float64",
+   "n_missing": 0,
+   "n_unique": 34,
+   "stats": {
+    "min": 0.015625,
+    "p25": 0.025,
+    "median": 0.038462,
+    "p75": 0.055556,
+    "max": 1.0,
+    "mean": 0.057808,
+    "sd": 0.065875
+   }
+  },
+  {
+   "name": "interviewer_rated_beauty",
+   "normalized": "interviewer_rated_beauty",
+   "dtype": "int64",
+   "n_missing": 0,
+   "n_unique": 2,
+   "stats": {
+    "min": 0.0,
+    "p25": 0.0,
+    "median": 0.0,
+    "p75": 1.0,
+    "max": 1.0,
+    "mean": 0.45384,
+    "sd": 0.49808
+   },
+   "binary": true
+  },
+  {
+   "name": "photo_rated_beauty",
+   "normalized": "photo_rated_beauty",
+   "dtype": "int64",
+   "n_missing": 0,
+   "n_unique": 2,
+   "stats": {
+    "min": 0.0,
+    "p25": 0.0,
+    "median": 0.0,
+    "p75": 1.0,
+    "max": 1.0,
+    "mean": 0.415013,
+    "sd": 0.492937
+   },
+   "binary": true
+  },
+  {
+   "name": "software_rated_beauty",
+   "normalized": "software_rated_beauty",
+   "dtype": "int64",
+   "n_missing": 0,
+   "n_unique": 2,
+   "stats": {
+    "min": 0.0,
+    "p25": 0.0,
+    "median": 0.0,
+    "p75": 0.0,
+    "max": 1.0,
+    "mean": 0.089733,
+    "sd": 0.285922
+   },
+   "binary": true
+  },
+  {
+   "name": "self_rated_beauty",
+   "normalized": "self_rated_beauty",
+   "dtype": "int64",
+   "n_missing": 0,
+   "n_unique": 2,
+   "stats": {
+    "min": 0.0,
+    "p25": 0.0,
+    "median": 0.0,
+    "p75": 0.0,
+    "max": 1.0,
+    "mean": 0.048318,
+    "sd": 0.214529
+   },
+   "binary": true
+  },
+  {
+   "name": "dummy_beauty",
+   "normalized": "dummy_beauty",
+   "dtype": "int64",
+   "n_missing": 0,
+   "n_unique": 2,
+   "stats": {
+    "min": 0.0,
+    "p25": 0.0,
+    "median": 0.0,
+    "p75": 1.0,
+    "max": 1.0,
+    "mean": 0.396894,
+    "sd": 0.489465
+   },
+   "binary": true
+  },
+  {
+   "name": "categorical_beauty",
+   "normalized": "categorical_beauty",
+   "dtype": "int64",
+   "n_missing": 0,
+   "n_unique": 2,
+   "stats": {
+    "min": 0.0,
+    "p25": 0.0,
+    "median": 1.0,
+    "p75": 1.0,
+    "max": 1.0,
+    "mean": 0.603106,
+    "sd": 0.489465
+   },
+   "binary": true
+  },
+  {
+   "name": "beauty_penalty",
+   "normalized": "beauty_penalty",
+   "dtype": "int64",
+   "n_missing": 0,
+   "n_unique": 2,
+   "stats": {
+    "min": 0.0,
+    "p25": 0.0,
+    "median": 0.0,
+    "p75": 0.0,
+    "max": 1.0,
+    "mean": 0.176877,
+    "sd": 0.381729
+   },
+   "binary": true
+  },
+  {
+   "name": "number_of_raters",
+   "normalized": "number_of_raters",
+   "dtype": "float64",
+   "n_missing": 0,
+   "n_unique": 26,
+   "stats": {
+    "min": 0.0,
+    "p25": 0.0,
+    "median": 1.386294,
+    "p75": 3.135494,
+    "max": 4.442651,
+    "mean": 1.852068,
+    "sd": 1.523115
+   }
+  },
+  {
+   "name": "salary",
+   "normalized": "salary",
+   "dtype": "int64",
+   "n_missing": 0,
+   "n_unique": 2,
+   "stats": {
+    "min": 0.0,
+    "p25": 0.0,
+    "median": 1.0,
+    "p75": 1.0,
+    "max": 1.0,
+    "mean": 0.593615,
+    "sd": 0.49137
+   },
+   "binary": true
+  },
+  {
+   "name": "study_outcomes",
+   "normalized": "study_outcomes",
+   "dtype": "int64",
+   "n_missing": 0,
+   "n_unique": 2,
+   "stats": {
+    "min": 0.0,
+    "p25": 0.0,
+    "median": 0.0,
+    "p75": 0.0,
+    "max": 1.0,
+    "mean": 0.163072,
+    "sd": 0.36959
+   },
+   "binary": true
+  },
+  {
+   "name": "teaching_research_outcomes",
+   "normalized": "teaching_research_outcomes",
+   "dtype": "int64",
+   "n_missing": 0,
+   "n_unique": 2,
+   "stats": {
+    "min": 0.0,
+    "p25": 0.0,
+    "median": 0.0,
+    "p75": 0.0,
+    "max": 1.0,
+    "mean": 0.119931,
+    "sd": 0.325021
+   },
+   "binary": true
+  },
+  {
+   "name": "athletic_success",
+   "normalized": "athletic_success",
+   "dtype": "int64",
+   "n_missing": 0,
+   "n_unique": 2,
+   "stats": {
+    "min": 0.0,
+    "p25": 0.0,
+    "median": 0.0,
+    "p75": 0.0,
+    "max": 1.0,
+    "mean": 0.028473,
+    "sd": 0.166391
+   },
+   "binary": true
+  },
+  {
+   "name": "electoral_success",
+   "normalized": "electoral_success",
+   "dtype": "int64",
+   "n_missing": 0,
+   "n_unique": 2,
+   "stats": {
+    "min": 0.0,
+    "p25": 0.0,
+    "median": 0.0,
+    "p75": 0.0,
+    "max": 1.0,
+    "mean": 0.031924,
+    "sd": 0.175874
+   },
+   "binary": true
+  },
+  {
+   "name": "other_outcomes",
+   "normalized": "other_outcomes",
+   "dtype": "int64",
+   "n_missing": 0,
+   "n_unique": 2,
+   "stats": {
+    "min": 0.0,
+    "p25": 0.0,
+    "median": 0.0,
+    "p75": 0.0,
+    "max": 1.0,
+    "mean": 0.062985,
+    "sd": 0.243041
+   },
+   "binary": true
+  },
+  {
+   "name": "male_subjects",
+   "normalized": "male_subjects",
+   "dtype": "int64",
+   "n_missing": 0,
+   "n_unique": 2,
+   "stats": {
+    "min": 0.0,
+    "p25": 0.0,
+    "median": 0.0,
+    "p75": 1.0,
+    "max": 1.0,
+    "mean": 0.323555,
+    "sd": 0.468034
+   },
+   "binary": true
+  },
+  {
+   "name": "female_subjects",
+   "normalized": "female_subjects",
+   "dtype": "int64",
+   "n_missing": 0,
+   "n_unique": 2,
+   "stats": {
+    "min": 0.0,
+    "p25": 0.0,
+    "median": 0.0,
+    "p75": 1.0,
+    "max": 1.0,
+    "mean": 0.385677,
+    "sd": 0.486965
+   },
+   "binary": true
+  },
+  {
+   "name": "mix_gender_subjects",
+   "normalized": "mix_gender_subjects",
+   "dtype": "int64",
+   "n_missing": 0,
+   "n_unique": 2,
+   "stats": {
+    "min": 0.0,
+    "p25": 0.0,
+    "median": 0.0,
+    "p75": 1.0,
+    "max": 1.0,
+    "mean": 0.290768,
+    "sd": 0.454313
+   },
+   "binary": true
+  },
+  {
+   "name": "age_subject",
+   "normalized": "age_subject",
+   "dtype": "float64",
+   "n_missing": 0,
+   "n_unique": 86,
+   "stats": {
+    "min": 1.94591,
+    "p25": 3.173878,
+    "median": 3.417727,
+    "p75": 3.760735,
+    "max": 4.110874,
+    "mean": 3.404672,
+    "sd": 0.453484
+   }
+  },
+  {
+   "name": "high_skilled_workers",
+   "normalized": "high_skilled_workers",
+   "dtype": "int64",
+   "n_missing": 0,
+   "n_unique": 2,
+   "stats": {
+    "min": 0.0,
+    "p25": 0.0,
+    "median": 0.0,
+    "p75": 1.0,
+    "max": 1.0,
+    "mean": 0.289042,
+    "sd": 0.453513
+   },
+   "binary": true
+  },
+  {
+   "name": "prostitutes",
+   "normalized": "prostitutes",
+   "dtype": "int64",
+   "n_missing": 0,
+   "n_unique": 2,
+   "stats": {
+    "min": 0.0,
+    "p25": 0.0,
+    "median": 0.0,
+    "p75": 0.0,
+    "max": 1.0,
+    "mean": 0.047455,
+    "sd": 0.212701
+   },
+   "binary": true
+  },
+  {
+   "name": "other_dressy_occupations",
+   "normalized": "other_dressy_occupations",
+   "dtype": "int64",
+   "n_missing": 0,
+   "n_unique": 2,
+   "stats": {
+    "min": 0.0,
+    "p25": 0.0,
+    "median": 0.0,
+    "p75": 0.0,
+    "max": 1.0,
+    "mean": 0.119068,
+    "sd": 0.324009
+   },
+   "binary": true
+  },
+  {
+   "name": "non_dressy_occupation",
+   "normalized": "non_dressy_occupation",
+   "dtype": "int64",
+   "n_missing": 0,
+   "n_unique": 2,
+   "stats": {
+    "min": 0.0,
+    "p25": 1.0,
+    "median": 1.0,
+    "p75": 1.0,
+    "max": 1.0,
+    "mean": 0.833477,
+    "sd": 0.37271
+   },
+   "binary": true
+  },
+  {
+   "name": "western_culture",
+   "normalized": "western_culture",
+   "dtype": "int64",
+   "n_missing": 0,
+   "n_unique": 2,
+   "stats": {
+    "min": 0.0,
+    "p25": 1.0,
+    "median": 1.0,
+    "p75": 1.0,
+    "max": 1.0,
+    "mean": 0.754098,
+    "sd": 0.430806
+   },
+   "binary": true
+  },
+  {
+   "name": "other_cultures",
+   "normalized": "other_cultures",
+   "dtype": "int64",
+   "n_missing": 0,
+   "n_unique": 2,
+   "stats": {
+    "min": 0.0,
+    "p25": 0.0,
+    "median": 0.0,
+    "p75": 0.0,
+    "max": 1.0,
+    "mean": 0.245902,
+    "sd": 0.430806
+   },
+   "binary": true
+  },
+  {
+   "name": "panel_data",
+   "normalized": "panel_data",
+   "dtype": "int64",
+   "n_missing": 0,
+   "n_unique": 2,
+   "stats": {
+    "min": 0.0,
+    "p25": 1.0,
+    "median": 1.0,
+    "p75": 1.0,
+    "max": 1.0,
+    "mean": 0.861087,
+    "sd": 0.346005
+   },
+   "binary": true
+  },
+  {
+   "name": "cross_section",
+   "normalized": "cross_section",
+   "dtype": "int64",
+   "n_missing": 0,
+   "n_unique": 2,
+   "stats": {
+    "min": 0.0,
+    "p25": 0.0,
+    "median": 0.0,
+    "p75": 0.0,
+    "max": 1.0,
+    "mean": 0.138913,
+    "sd": 0.346005
+   },
+   "binary": true
+  },
+  {
+   "name": "data_year",
+   "normalized": "data_year",
+   "dtype": "float64",
+   "n_missing": 0,
+   "n_unique": 44,
+   "stats": {
+    "min": 0.0,
+    "p25": 3.332205,
+    "median": 3.496508,
+    "p75": 3.650658,
+    "max": 3.931826,
+    "mean": 3.33672,
+    "sd": 0.608971
+   }
+  },
+  {
+   "name": "ols_method",
+   "normalized": "ols_method",
+   "dtype": "int64",
+   "n_missing": 0,
+   "n_unique": 2,
+   "stats": {
+    "min": 0.0,
+    "p25": 1.0,
+    "median": 1.0,
+    "p75": 1.0,
+    "max": 1.0,
+    "mean": 0.77912,
+    "sd": 0.415019
+   },
+   "binary": true
+  },
+  {
+   "name": "iv_method",
+   "normalized": "iv_method",
+   "dtype": "int64",
+   "n_missing": 0,
+   "n_unique": 2,
+   "stats": {
+    "min": 0.0,
+    "p25": 0.0,
+    "median": 0.0,
+    "p75": 0.0,
+    "max": 1.0,
+    "mean": 0.071613,
+    "sd": 0.257958
+   },
+   "binary": true
+  },
+  {
+   "name": "quasi_experimental_method",
+   "normalized": "quasi_experimental_method",
+   "dtype": "int64",
+   "n_missing": 0,
+   "n_unique": 2,
+   "stats": {
+    "min": 0.0,
+    "p25": 0.0,
+    "median": 0.0,
+    "p75": 0.0,
+    "max": 1.0,
+    "mean": 0.010354,
+    "sd": 0.101269
+   },
+   "binary": true
+  },
+  {
+   "name": "other_method",
+   "normalized": "other_method",
+   "dtype": "int64",
+   "n_missing": 0,
+   "n_unique": 2,
+   "stats": {
+    "min": 0.0,
+    "p25": 0.0,
+    "median": 0.0,
+    "p75": 0.0,
+    "max": 1.0,
+    "mean": 0.138913,
+    "sd": 0.346005
+   },
+   "binary": true
+  },
+  {
+   "name": "ageexp_control",
+   "normalized": "ageexp_control",
+   "dtype": "int64",
+   "n_missing": 0,
+   "n_unique": 2,
+   "stats": {
+    "min": 0.0,
+    "p25": 1.0,
+    "median": 1.0,
+    "p75": 1.0,
+    "max": 1.0,
+    "mean": 0.875755,
+    "sd": 0.330003
+   },
+   "binary": true
+  },
+  {
+   "name": "education_control",
+   "normalized": "education_control",
+   "dtype": "int64",
+   "n_missing": 0,
+   "n_unique": 2,
+   "stats": {
+    "min": 0.0,
+    "p25": 0.0,
+    "median": 1.0,
+    "p75": 1.0,
+    "max": 1.0,
+    "mean": 0.66264,
+    "sd": 0.473013
+   },
+   "binary": true
+  },
+  {
+   "name": "ethnicity_control",
+   "normalized": "ethnicity_control",
+   "dtype": "int64",
+   "n_missing": 0,
+   "n_unique": 2,
+   "stats": {
+    "min": 0.0,
+    "p25": 0.0,
+    "median": 1.0,
+    "p75": 1.0,
+    "max": 1.0,
+    "mean": 0.547023,
+    "sd": 0.497999
+   },
+   "binary": true
+  },
+  {
+   "name": "cognitive_skill_control",
+   "normalized": "cognitive_skill_control",
+   "dtype": "int64",
+   "n_missing": 0,
+   "n_unique": 2,
+   "stats": {
+    "min": 0.0,
+    "p25": 0.0,
+    "median": 0.0,
+    "p75": 1.0,
+    "max": 1.0,
+    "mean": 0.383952,
+    "sd": 0.486556
+   },
+   "binary": true
+  },
+  {
+   "name": "noncognitive_skill_control",
+   "normalized": "noncognitive_skill_control",
+   "dtype": "int64",
+   "n_missing": 0,
+   "n_unique": 2,
+   "stats": {
+    "min": 0.0,
+    "p25": 0.0,
+    "median": 0.0,
+    "p75": 0.0,
+    "max": 1.0,
+    "mean": 0.210526,
+    "sd": 0.407858
+   },
+   "binary": true
+  },
+  {
+   "name": "physicality_control",
+   "normalized": "physicality_control",
+   "dtype": "int64",
+   "n_missing": 0,
+   "n_unique": 2,
+   "stats": {
+    "min": 0.0,
+    "p25": 0.0,
+    "median": 0.0,
+    "p75": 1.0,
+    "max": 1.0,
+    "mean": 0.267472,
+    "sd": 0.442832
+   },
+   "binary": true
+  },
+  {
+   "name": "publication_year",
+   "normalized": "publication_year",
+   "dtype": "float64",
+   "n_missing": 0,
+   "n_unique": 22,
+   "role": "pub_year",
+   "stats": {
+    "min": 0.0,
+    "p25": 2.772589,
+    "median": 3.044522,
+    "p75": 3.258097,
+    "max": 3.401197,
+    "mean": 2.82782,
+    "sd": 0.744486
+   }
+  },
+  {
+   "name": "published_study",
+   "normalized": "published_study",
+   "dtype": "int64",
+   "n_missing": 0,
+   "n_unique": 2,
+   "stats": {
+    "min": 0.0,
+    "p25": 1.0,
+    "median": 1.0,
+    "p75": 1.0,
+    "max": 1.0,
+    "mean": 0.886109,
+    "sd": 0.317816
+   },
+   "binary": true
+  },
+  {
+   "name": "high_quality",
+   "normalized": "high_quality",
+   "dtype": "int64",
+   "n_missing": 0,
+   "n_unique": 2,
+   "stats": {
+    "min": 0.0,
+    "p25": 0.0,
+    "median": 0.0,
+    "p75": 0.0,
+    "max": 1.0,
+    "mean": 0.130285,
+    "sd": 0.336762
+   },
+   "binary": true
+  },
+  {
+   "name": "impact_factor",
+   "normalized": "impact_factor",
+   "dtype": "float64",
+   "n_missing": 0,
+   "n_unique": 37,
+   "stats": {
+    "min": 0.0,
+    "p25": 0.905,
+    "median": 2.083,
+    "p75": 4.179,
+    "max": 12.082,
+    "mean": 2.88007,
+    "sd": 2.819603
+   }
+  },
+  {
+   "name": "citations",
+   "normalized": "citations",
+   "dtype": "float64",
+   "n_missing": 0,
+   "n_unique": 53,
+   "stats": {
+    "min": 0.0,
+    "p25": 0.693147,
+    "median": 1.236763,
+    "p75": 1.981001,
+    "max": 4.060443,
+    "mean": 1.416659,
+    "sd": 1.062588
+   }
+  },
+  {
+   "name": "interrater_pairwise",
+   "normalized": "interrater_pairwise",
+   "dtype": "float64",
+   "n_missing": 870,
+   "n_unique": 21,
+   "stats": {
+    "min": 0.373,
+    "p25": 0.47,
+    "median": 0.5,
+    "p75": 0.62175,
+    "max": 0.971,
+    "mean": 0.567068,
+    "sd": 0.149387
+   }
+  },
+  {
+   "name": "pubyear",
+   "normalized": "pubyear",
+   "dtype": "int64",
+   "n_missing": 0,
+   "n_unique": 23,
+   "role": "pub_year",
+   "stats": {
+    "min": 1981.0,
+    "p25": 2009.0,
+    "median": 2014.0,
+    "p75": 2019.0,
+    "max": 2023.0,
+    "mean": 2012.738568,
+    "sd": 7.661885
+   }
+  },
+  {
+   "name": "datyear",
+   "normalized": "datyear",
+   "dtype": "float64",
+   "n_missing": 0,
+   "n_unique": 44,
+   "stats": {
+    "min": 1971.0,
+    "p25": 1998.0,
+    "median": 2003.0,
+    "p75": 2008.5,
+    "max": 2021.0,
+    "mean": 2001.615186,
+    "sd": 10.806896
+   }
+  },
+  {
+   "name": "reference",
+   "normalized": "reference",
+   "dtype": "str",
+   "n_missing": 0,
+   "n_unique": 67,
+   "top_values": [
+    "Clark, C. & D.M. Walker (2009): Does adolescent attractiveness matter? Academic performance, college attendance, and criminal & delinquent behavior. Southern Business & Economic Journal 32(3-4): pp. 57-78.",
+    "Harper, B. (2000): Beauty, Stature and the Labour Market: A British Cohort Study. Oxford Bulletin of Economics and Statistics 62(s1): pp. 771-800.",
+    "Hamermesh, D. S. & J.E. Biddle (1994):Beauty and the Labor Market. American Economic Review 84(5): pp. 1174-1194.",
+    "Kanazawa, S. & M. Still (2018): Is There Really a Beauty Premium or an Ugliness Penalty on Earnings? Journal of Business and Psychology 33: pp. 249-262.",
+    "Malik, N., Singh, P.V., Srinivasan, K. & D. Lee (2022): A Dynamic Analysis of Beauty Premium. Marketing Science (forthcoming)."
+   ]
+  }
+ ]
+}

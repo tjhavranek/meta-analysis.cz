@@ -1,0 +1,629 @@
+{
+ "project": "discrate",
+ "source_file": "discrate.dta",
+ "source_archive": null,
+ "source_sheet": null,
+ "n_rows": 927,
+ "n_columns": 38,
+ "columns": [
+  {
+   "name": "idstudy",
+   "normalized": "idstudy",
+   "dtype": "int8",
+   "n_missing": 0,
+   "n_unique": 56,
+   "role": "study_id",
+   "stats": {
+    "min": 1.0,
+    "p25": 12.0,
+    "median": 32.0,
+    "p75": 43.0,
+    "max": 56.0,
+    "mean": 28.261057,
+    "sd": 17.140407
+   }
+  },
+  {
+   "name": "idauthor",
+   "normalized": "idauthor",
+   "dtype": "int8",
+   "n_missing": 0,
+   "n_unique": 31,
+   "stats": {
+    "min": 1.0,
+    "p25": 5.0,
+    "median": 13.0,
+    "p75": 23.0,
+    "max": 31.0,
+    "mean": 14.551241,
+    "sd": 9.447554
+   }
+  },
+  {
+   "name": "study",
+   "normalized": "study",
+   "dtype": "str",
+   "n_missing": 0,
+   "n_unique": 56,
+   "top_values": [
+    "Ifcher & Zarghamee (2011)",
+    "Cairns & van der Pol (1997)",
+    "Benzion et al. (1989)",
+    "Castillo et al. (2011)",
+    "Warner & Pleeter (2001)"
+   ]
+  },
+  {
+   "name": "discrate",
+   "normalized": "discrate",
+   "dtype": "float64",
+   "n_missing": 0,
+   "n_unique": 747,
+   "role": "effect_estimate",
+   "stats": {
+    "min": -0.998621,
+    "p25": 0.189,
+    "median": 0.369863,
+    "p75": 0.8885,
+    "max": 13.673938,
+    "mean": 0.869783,
+    "sd": 1.301717
+   }
+  },
+  {
+   "name": "standard_error",
+   "normalized": "standard_error",
+   "dtype": "float64",
+   "n_missing": 388,
+   "n_unique": 485,
+   "role": "standard_error",
+   "stats": {
+    "min": 0.000261,
+    "p25": 0.014696,
+    "median": 0.04,
+    "p75": 0.402709,
+    "max": 14.679845,
+    "mean": 1.003598,
+    "sd": 2.073208
+   }
+  },
+  {
+   "name": "hyperbolic_discounting",
+   "normalized": "hyperbolic_discounting",
+   "dtype": "int8",
+   "n_missing": 0,
+   "n_unique": 2,
+   "stats": {
+    "min": 0.0,
+    "p25": 0.0,
+    "median": 0.0,
+    "p75": 1.0,
+    "max": 1.0,
+    "mean": 0.402373,
+    "sd": 0.490641
+   },
+   "binary": true
+  },
+  {
+   "name": "exponential_discounting",
+   "normalized": "exponential_discounting",
+   "dtype": "int8",
+   "n_missing": 0,
+   "n_unique": 2,
+   "stats": {
+    "min": 0.0,
+    "p25": 0.0,
+    "median": 0.0,
+    "p75": 0.0,
+    "max": 1.0,
+    "mean": 0.143474,
+    "sd": 0.350744
+   },
+   "binary": true
+  },
+  {
+   "name": "delay",
+   "normalized": "delay",
+   "dtype": "float64",
+   "n_missing": 0,
+   "n_unique": 56,
+   "stats": {
+    "min": -9.771098,
+    "p25": -1.386294,
+    "median": 0.0,
+    "p75": 1.098612,
+    "max": 3.912023,
+    "mean": -0.255057,
+    "sd": 2.221581
+   }
+  },
+  {
+   "name": "frontend_delay",
+   "normalized": "frontend_delay",
+   "dtype": "int8",
+   "n_missing": 0,
+   "n_unique": 2,
+   "stats": {
+    "min": 0.0,
+    "p25": 0.0,
+    "median": 0.0,
+    "p75": 1.0,
+    "max": 1.0,
+    "mean": 0.337648,
+    "sd": 0.473163
+   },
+   "binary": true
+  },
+  {
+   "name": "lab_experiment",
+   "normalized": "lab_experiment",
+   "dtype": "int8",
+   "n_missing": 0,
+   "n_unique": 2,
+   "stats": {
+    "min": 0.0,
+    "p25": 0.0,
+    "median": 1.0,
+    "p75": 1.0,
+    "max": 1.0,
+    "mean": 0.650485,
+    "sd": 0.477074
+   },
+   "binary": true
+  },
+  {
+   "name": "real_reward",
+   "normalized": "real_reward",
+   "dtype": "int8",
+   "n_missing": 0,
+   "n_unique": 2,
+   "stats": {
+    "min": 0.0,
+    "p25": 0.0,
+    "median": 1.0,
+    "p75": 1.0,
+    "max": 1.0,
+    "mean": 0.62891,
+    "sd": 0.483357
+   },
+   "binary": true
+  },
+  {
+   "name": "matching_task",
+   "normalized": "matching_task",
+   "dtype": "int8",
+   "n_missing": 0,
+   "n_unique": 2,
+   "stats": {
+    "min": 0.0,
+    "p25": 0.0,
+    "median": 0.0,
+    "p75": 0.0,
+    "max": 1.0,
+    "mean": 0.242718,
+    "sd": 0.428958
+   },
+   "binary": true
+  },
+  {
+   "name": "health_domain",
+   "normalized": "health_domain",
+   "dtype": "int8",
+   "n_missing": 0,
+   "n_unique": 2,
+   "stats": {
+    "min": 0.0,
+    "p25": 0.0,
+    "median": 0.0,
+    "p75": 0.0,
+    "max": 1.0,
+    "mean": 0.055016,
+    "sd": 0.228135
+   },
+   "binary": true
+  },
+  {
+   "name": "other_domain",
+   "normalized": "other_domain",
+   "dtype": "int8",
+   "n_missing": 0,
+   "n_unique": 2,
+   "stats": {
+    "min": 0.0,
+    "p25": 0.0,
+    "median": 0.0,
+    "p75": 0.0,
+    "max": 1.0,
+    "mean": 0.081985,
+    "sd": 0.27449
+   },
+   "binary": true
+  },
+  {
+   "name": "negative_framing",
+   "normalized": "negative_framing",
+   "dtype": "int8",
+   "n_missing": 0,
+   "n_unique": 2,
+   "stats": {
+    "min": 0.0,
+    "p25": 0.0,
+    "median": 0.0,
+    "p75": 0.0,
+    "max": 1.0,
+    "mean": 0.0863,
+    "sd": 0.280958
+   },
+   "binary": true
+  },
+  {
+   "name": "neutral_framing",
+   "normalized": "neutral_framing",
+   "dtype": "int8",
+   "n_missing": 0,
+   "n_unique": 2,
+   "stats": {
+    "min": 0.0,
+    "p25": 0.0,
+    "median": 0.0,
+    "p75": 0.0,
+    "max": 1.0,
+    "mean": 0.022654,
+    "sd": 0.148877
+   },
+   "binary": true
+  },
+  {
+   "name": "stakes",
+   "normalized": "stakes",
+   "dtype": "float64",
+   "n_missing": 150,
+   "n_unique": 106,
+   "stats": {
+    "min": 0.137796,
+    "p25": 0.539963,
+    "median": 0.644418,
+    "p75": 1.056408,
+    "max": 1.912126,
+    "mean": 0.81712,
+    "sd": 0.372705
+   }
+  },
+  {
+   "name": "sample_size",
+   "normalized": "sample_size",
+   "dtype": "float64",
+   "n_missing": 0,
+   "n_unique": 185,
+   "role": "n_obs",
+   "stats": {
+    "min": 0.0,
+    "p25": 3.624252,
+    "median": 4.574711,
+    "p75": 5.527441,
+    "max": 11.104702,
+    "mean": 4.889312,
+    "sd": 1.617006
+   }
+  },
+  {
+   "name": "students",
+   "normalized": "students",
+   "dtype": "int8",
+   "n_missing": 0,
+   "n_unique": 2,
+   "stats": {
+    "min": 0.0,
+    "p25": 0.0,
+    "median": 1.0,
+    "p75": 1.0,
+    "max": 1.0,
+    "mean": 0.527508,
+    "sd": 0.499512
+   },
+   "binary": true
+  },
+  {
+   "name": "males_only",
+   "normalized": "males_only",
+   "dtype": "int8",
+   "n_missing": 0,
+   "n_unique": 2,
+   "stats": {
+    "min": 0.0,
+    "p25": 0.0,
+    "median": 0.0,
+    "p75": 0.0,
+    "max": 1.0,
+    "mean": 0.029126,
+    "sd": 0.168251
+   },
+   "binary": true
+  },
+  {
+   "name": "females_only",
+   "normalized": "females_only",
+   "dtype": "int8",
+   "n_missing": 0,
+   "n_unique": 2,
+   "stats": {
+    "min": 0.0,
+    "p25": 0.0,
+    "median": 0.0,
+    "p75": 0.0,
+    "max": 1.0,
+    "mean": 0.030205,
+    "sd": 0.171243
+   },
+   "binary": true
+  },
+  {
+   "name": "north_america",
+   "normalized": "north_america",
+   "dtype": "int8",
+   "n_missing": 0,
+   "n_unique": 2,
+   "stats": {
+    "min": 0.0,
+    "p25": 0.0,
+    "median": 1.0,
+    "p75": 1.0,
+    "max": 1.0,
+    "mean": 0.587918,
+    "sd": 0.492475
+   },
+   "binary": true
+  },
+  {
+   "name": "asia",
+   "normalized": "asia",
+   "dtype": "int8",
+   "n_missing": 0,
+   "n_unique": 2,
+   "stats": {
+    "min": 0.0,
+    "p25": 0.0,
+    "median": 0.0,
+    "p75": 0.0,
+    "max": 1.0,
+    "mean": 0.058252,
+    "sd": 0.234347
+   },
+   "binary": true
+  },
+  {
+   "name": "africa",
+   "normalized": "africa",
+   "dtype": "int8",
+   "n_missing": 0,
+   "n_unique": 2,
+   "stats": {
+    "min": 0.0,
+    "p25": 0.0,
+    "median": 0.0,
+    "p75": 0.0,
+    "max": 1.0,
+    "mean": 0.030205,
+    "sd": 0.171243
+   },
+   "binary": true
+  },
+  {
+   "name": "citations",
+   "normalized": "citations",
+   "dtype": "float64",
+   "n_missing": 0,
+   "n_unique": 55,
+   "stats": {
+    "min": -1.89712,
+    "p25": 1.909543,
+    "median": 3.034953,
+    "p75": 3.520831,
+    "max": 4.534553,
+    "mean": 2.69081,
+    "sd": 1.278303
+   }
+  },
+  {
+   "name": "publication_year",
+   "normalized": "publication_year",
+   "dtype": "float64",
+   "n_missing": 0,
+   "n_unique": 24,
+   "role": "pub_year",
+   "stats": {
+    "min": -2.515452,
+    "p25": -0.680333,
+    "median": 0.543079,
+    "p75": 0.746981,
+    "max": 1.358687,
+    "mean": -0.0,
+    "sd": 1.00054
+   }
+  },
+  {
+   "name": "elicitation_method",
+   "normalized": "elicitation_method",
+   "dtype": "str",
+   "n_missing": 0,
+   "n_unique": 6,
+   "top_values": [
+    "choice",
+    "matching",
+    "lump-sum vs annuity choice",
+    "auction",
+    "response time"
+   ]
+  },
+  {
+   "name": "discounting",
+   "normalized": "discounting",
+   "dtype": "str",
+   "n_missing": 0,
+   "n_unique": 6,
+   "top_values": [
+    "na",
+    "hyperbolic",
+    "exponential",
+    "quasi-hyperbolic",
+    "exponential mixture share"
+   ]
+  },
+  {
+   "name": "domain",
+   "normalized": "domain",
+   "dtype": "str",
+   "n_missing": 0,
+   "n_unique": 9,
+   "top_values": [
+    "money",
+    "health",
+    "gift certificate",
+    "money & time",
+    "other"
+   ]
+  },
+  {
+   "name": "money_domain",
+   "normalized": "money_domain",
+   "dtype": "int8",
+   "n_missing": 0,
+   "n_unique": 2,
+   "stats": {
+    "min": 0.0,
+    "p25": 1.0,
+    "median": 1.0,
+    "p75": 1.0,
+    "max": 1.0,
+    "mean": 0.897519,
+    "sd": 0.303444
+   },
+   "binary": true
+  },
+  {
+   "name": "nobs",
+   "normalized": "nobs",
+   "dtype": "float64",
+   "n_missing": 0,
+   "n_unique": 185,
+   "role": "n_obs",
+   "stats": {
+    "min": 1.0,
+    "p25": 37.5,
+    "median": 97.0,
+    "p75": 251.5,
+    "max": 66483.0,
+    "mean": 1906.280475,
+    "sd": 9179.331766
+   }
+  },
+  {
+   "name": "instrument",
+   "normalized": "instrument",
+   "dtype": "float64",
+   "n_missing": 0,
+   "n_unique": 185,
+   "stats": {
+    "min": 0.003878,
+    "p25": 0.063057,
+    "median": 0.101535,
+    "p75": 0.16331,
+    "max": 1.0,
+    "mean": 0.10956,
+    "sd": 0.068922
+   }
+  },
+  {
+   "name": "country",
+   "normalized": "country",
+   "dtype": "str",
+   "n_missing": 0,
+   "n_unique": 12,
+   "role": "country",
+   "top_values": [
+    "USA",
+    "United Kingdom",
+    "Denmark",
+    "Israel",
+    "Thailand"
+   ]
+  },
+  {
+   "name": "continent",
+   "normalized": "continent",
+   "dtype": "str",
+   "n_missing": 0,
+   "n_unique": 4,
+   "top_values": [
+    "North America",
+    "Europe",
+    "Asia",
+    "Africa"
+   ]
+  },
+  {
+   "name": "impact_factor",
+   "normalized": "impact_factor",
+   "dtype": "float64",
+   "n_missing": 0,
+   "n_unique": 30,
+   "stats": {
+    "min": 0.01,
+    "p25": 0.216,
+    "median": 0.6,
+    "p75": 2.329,
+    "max": 4.977,
+    "mean": 1.048046,
+    "sd": 0.978933
+   }
+  },
+  {
+   "name": "year",
+   "normalized": "year",
+   "dtype": "int16",
+   "n_missing": 0,
+   "n_unique": 24,
+   "stats": {
+    "min": 1979.0,
+    "p25": 1997.0,
+    "median": 2009.0,
+    "p75": 2011.0,
+    "max": 2017.0,
+    "mean": 2003.673139,
+    "sd": 9.813925
+   }
+  },
+  {
+   "name": "invperst",
+   "normalized": "invperst",
+   "dtype": "float64",
+   "n_missing": 0,
+   "n_unique": 25,
+   "stats": {
+    "min": 0.007937,
+    "p25": 0.015625,
+    "median": 0.028571,
+    "p75": 0.055556,
+    "max": 1.0,
+    "mean": 0.06041,
+    "sd": 0.110479
+   }
+  },
+  {
+   "name": "invperst_origse",
+   "normalized": "invperst_origse",
+   "dtype": "float64",
+   "n_missing": 388,
+   "n_unique": 17,
+   "stats": {
+    "min": 0.007937,
+    "p25": 0.015625,
+    "median": 0.028571,
+    "p75": 0.083333,
+    "max": 1.0,
+    "mean": 0.076067,
+    "sd": 0.138078
+   }
+  }
+ ]
+}

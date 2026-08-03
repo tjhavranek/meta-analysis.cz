@@ -1,0 +1,754 @@
+{
+ "project": "trust",
+ "source_file": "trust_data.csv",
+ "source_archive": null,
+ "source_sheet": null,
+ "n_rows": 1613,
+ "n_columns": 45,
+ "columns": [
+  {
+   "name": "cn_id",
+   "normalized": "cn_id",
+   "dtype": "str",
+   "n_missing": 0,
+   "n_unique": 31,
+   "top_values": [
+    "US",
+    "Japan",
+    "Australia",
+    "UK",
+    "New Zealand"
+   ]
+  },
+  {
+   "name": "idstudy",
+   "normalized": "idstudy",
+   "dtype": "int64",
+   "n_missing": 0,
+   "n_unique": 105,
+   "role": "study_id",
+   "stats": {
+    "min": 1.0,
+    "p25": 25.0,
+    "median": 54.0,
+    "p75": 84.0,
+    "max": 113.0,
+    "mean": 54.491011,
+    "sd": 32.327046
+   }
+  },
+  {
+   "name": "size",
+   "normalized": "size",
+   "dtype": "float64",
+   "n_missing": 0,
+   "n_unique": 673,
+   "role": "effect_estimate",
+   "stats": {
+    "min": -1.7352,
+    "p25": -0.101,
+    "median": -0.005,
+    "p75": -0.0002,
+    "max": 1.33,
+    "mean": -0.087172,
+    "sd": 0.343565
+   }
+  },
+  {
+   "name": "size_unwinsorized",
+   "normalized": "size_unwinsorized",
+   "dtype": "float64",
+   "n_missing": 0,
+   "n_unique": 696,
+   "stats": {
+    "min": -3.6,
+    "p25": -0.101,
+    "median": -0.005,
+    "p75": -0.0002,
+    "max": 4.447,
+    "mean": -0.091023,
+    "sd": 0.472359
+   }
+  },
+  {
+   "name": "se",
+   "normalized": "se",
+   "dtype": "float64",
+   "n_missing": 0,
+   "n_unique": 1369,
+   "role": "standard_error",
+   "stats": {
+    "min": 0.000123,
+    "p25": 0.000925,
+    "median": 0.023026,
+    "p75": 0.054152,
+    "max": 1.614458,
+    "mean": 0.083643,
+    "sd": 0.225529
+   }
+  },
+  {
+   "name": "se_unwinsorized",
+   "normalized": "se_unwinsorized",
+   "dtype": "float64",
+   "n_missing": 0,
+   "n_unique": 1395,
+   "stats": {
+    "min": 0.0,
+    "p25": 0.000925,
+    "median": 0.023026,
+    "p75": 0.054152,
+    "max": 3.789474,
+    "mean": 0.089106,
+    "sd": 0.277795
+   }
+  },
+  {
+   "name": "trust_index",
+   "normalized": "trust_index",
+   "dtype": "float64",
+   "n_missing": 0,
+   "n_unique": 52,
+   "stats": {
+    "min": -1.000967,
+    "p25": 0.899895,
+    "median": 0.899895,
+    "p75": 0.992561,
+    "max": 1.886301,
+    "mean": 0.762292,
+    "sd": 0.503899
+   }
+  },
+  {
+   "name": "rule_of_law",
+   "normalized": "rule_of_law",
+   "dtype": "float64",
+   "n_missing": 0,
+   "n_unique": 48,
+   "stats": {
+    "min": -1.289723,
+    "p25": 1.500219,
+    "median": 1.500219,
+    "p75": 1.500219,
+    "max": 1.950942,
+    "mean": 1.407021,
+    "sd": 0.413297
+   }
+  },
+  {
+   "name": "trust_rule_of_law",
+   "normalized": "trust_rule_of_law",
+   "dtype": "float64",
+   "n_missing": 0,
+   "n_unique": 57,
+   "stats": {
+    "min": -0.756233,
+    "p25": 1.350039,
+    "median": 1.350039,
+    "p75": 1.48906,
+    "max": 3.627951,
+    "mean": 1.214541,
+    "sd": 0.748314
+   }
+  },
+  {
+   "name": "placebo_index",
+   "normalized": "placebo_index",
+   "dtype": "float64",
+   "n_missing": 0,
+   "n_unique": 31,
+   "stats": {
+    "min": -1.152448,
+    "p25": -0.039121,
+    "median": -0.039121,
+    "p75": -0.039121,
+    "max": 1.208406,
+    "mean": 0.045085,
+    "sd": 0.269457
+   }
+  },
+  {
+   "name": "regulatory_quality",
+   "normalized": "regulatory_quality",
+   "dtype": "float64",
+   "n_missing": 0,
+   "n_unique": 48,
+   "stats": {
+    "min": -0.968231,
+    "p25": 1.593102,
+    "median": 1.593102,
+    "p75": 1.593102,
+    "max": 2.020525,
+    "mean": 1.45165,
+    "sd": 0.443294
+   }
+  },
+  {
+   "name": "government_effectiveness",
+   "normalized": "government_effectiveness",
+   "dtype": "float64",
+   "n_missing": 0,
+   "n_unique": 48,
+   "stats": {
+    "min": -0.923636,
+    "p25": 1.52492,
+    "median": 1.52492,
+    "p75": 1.52492,
+    "max": 2.124532,
+    "mean": 1.416548,
+    "sd": 0.427105
+   }
+  },
+  {
+   "name": "control_of_corruption",
+   "normalized": "control_of_corruption",
+   "dtype": "float64",
+   "n_missing": 0,
+   "n_unique": 48,
+   "stats": {
+    "min": -1.189009,
+    "p25": 1.571041,
+    "median": 1.571041,
+    "p75": 1.571041,
+    "max": 2.314719,
+    "mean": 1.475534,
+    "sd": 0.499663
+   }
+  },
+  {
+   "name": "rel_size",
+   "normalized": "rel_size",
+   "dtype": "int64",
+   "n_missing": 0,
+   "n_unique": 2,
+   "stats": {
+    "min": 0.0,
+    "p25": 0.0,
+    "median": 0.0,
+    "p75": 0.0,
+    "max": 1.0,
+    "mean": 0.063236,
+    "sd": 0.243463
+   },
+   "binary": true
+  },
+  {
+   "name": "avg_year",
+   "normalized": "avg_year",
+   "dtype": "float64",
+   "n_missing": 0,
+   "n_unique": 72,
+   "stats": {
+    "min": -23.301,
+    "p25": -3.801,
+    "median": 0.699,
+    "p75": 5.199,
+    "max": 23.199,
+    "mean": 0.566328,
+    "sd": 8.648233
+   }
+  },
+  {
+   "name": "num_years",
+   "normalized": "num_years",
+   "dtype": "float64",
+   "n_missing": 0,
+   "n_unique": 47,
+   "stats": {
+    "min": 0.0,
+    "p25": 2.639057,
+    "median": 3.135494,
+    "p75": 3.555348,
+    "max": 4.330733,
+    "mean": 3.04281,
+    "sd": 0.683035
+   }
+  },
+  {
+   "name": "any_trim",
+   "normalized": "any_trim",
+   "dtype": "int64",
+   "n_missing": 0,
+   "n_unique": 2,
+   "stats": {
+    "min": 0.0,
+    "p25": 0.0,
+    "median": 1.0,
+    "p75": 1.0,
+    "max": 1.0,
+    "mean": 0.534408,
+    "sd": 0.498969
+   },
+   "binary": true
+  },
+  {
+   "name": "OLS",
+   "normalized": "ols",
+   "dtype": "int64",
+   "n_missing": 0,
+   "n_unique": 2,
+   "stats": {
+    "min": 0.0,
+    "p25": 0.0,
+    "median": 0.0,
+    "p75": 1.0,
+    "max": 1.0,
+    "mean": 0.49659,
+    "sd": 0.500143
+   },
+   "binary": true
+  },
+  {
+   "name": "FM",
+   "normalized": "fm",
+   "dtype": "int64",
+   "n_missing": 0,
+   "n_unique": 2,
+   "stats": {
+    "min": 0.0,
+    "p25": 1.0,
+    "median": 1.0,
+    "p75": 1.0,
+    "max": 1.0,
+    "mean": 0.867948,
+    "sd": 0.338652
+   },
+   "binary": true
+  },
+  {
+   "name": "excess",
+   "normalized": "excess",
+   "dtype": "int64",
+   "n_missing": 0,
+   "n_unique": 2,
+   "stats": {
+    "min": 0.0,
+    "p25": 0.0,
+    "median": 0.0,
+    "p75": 1.0,
+    "max": 1.0,
+    "mean": 0.453193,
+    "sd": 0.497959
+   },
+   "binary": true
+  },
+  {
+   "name": "indstock",
+   "normalized": "indstock",
+   "dtype": "int64",
+   "n_missing": 0,
+   "n_unique": 2,
+   "stats": {
+    "min": 0.0,
+    "p25": 0.0,
+    "median": 1.0,
+    "p75": 1.0,
+    "max": 1.0,
+    "mean": 0.644761,
+    "sd": 0.478734
+   },
+   "binary": true
+  },
+  {
+   "name": "jan",
+   "normalized": "jan",
+   "dtype": "int64",
+   "n_missing": 0,
+   "n_unique": 2,
+   "stats": {
+    "min": 0.0,
+    "p25": 0.0,
+    "median": 0.0,
+    "p75": 0.0,
+    "max": 1.0,
+    "mean": 0.056417,
+    "sd": 0.230796
+   },
+   "binary": true
+  },
+  {
+   "name": "impact",
+   "normalized": "impact",
+   "dtype": "float64",
+   "n_missing": 0,
+   "n_unique": 33,
+   "stats": {
+    "min": 0.001,
+    "p25": 0.053,
+    "median": 0.536,
+    "p75": 1.945,
+    "max": 3.989,
+    "mean": 1.031363,
+    "sd": 0.923177
+   }
+  },
+  {
+   "name": "cits",
+   "normalized": "cits",
+   "dtype": "float64",
+   "n_missing": 0,
+   "n_unique": 96,
+   "stats": {
+    "min": 0.0,
+    "p25": 3.871201,
+    "median": 5.451038,
+    "p75": 6.508769,
+    "max": 9.656819,
+    "mean": 5.135991,
+    "sd": 1.805567
+   }
+  },
+  {
+   "name": "indep_demean",
+   "normalized": "indep_demean",
+   "dtype": "int64",
+   "n_missing": 0,
+   "n_unique": 2,
+   "stats": {
+    "min": 0.0,
+    "p25": 0.0,
+    "median": 0.0,
+    "p75": 0.0,
+    "max": 1.0,
+    "mean": 0.048977,
+    "sd": 0.215887
+   },
+   "binary": true
+  },
+  {
+   "name": "value",
+   "normalized": "value",
+   "dtype": "int64",
+   "n_missing": 0,
+   "n_unique": 2,
+   "stats": {
+    "min": 0.0,
+    "p25": 0.0,
+    "median": 1.0,
+    "p75": 1.0,
+    "max": 1.0,
+    "mean": 0.640422,
+    "sd": 0.480026
+   },
+   "binary": true
+  },
+  {
+   "name": "syst_risk",
+   "normalized": "syst_risk",
+   "dtype": "int64",
+   "n_missing": 0,
+   "n_unique": 2,
+   "stats": {
+    "min": 0.0,
+    "p25": 0.0,
+    "median": 0.0,
+    "p75": 1.0,
+    "max": 1.0,
+    "mean": 0.456913,
+    "sd": 0.498295
+   },
+   "binary": true
+  },
+  {
+   "name": "momentum",
+   "normalized": "momentum",
+   "dtype": "int64",
+   "n_missing": 0,
+   "n_unique": 2,
+   "stats": {
+    "min": 0.0,
+    "p25": 0.0,
+    "median": 0.0,
+    "p75": 1.0,
+    "max": 1.0,
+    "mean": 0.317421,
+    "sd": 0.465617
+   },
+   "binary": true
+  },
+  {
+   "name": "leverage_group",
+   "normalized": "leverage_group",
+   "dtype": "int64",
+   "n_missing": 0,
+   "n_unique": 2,
+   "stats": {
+    "min": 0.0,
+    "p25": 0.0,
+    "median": 0.0,
+    "p75": 0.0,
+    "max": 1.0,
+    "mean": 0.052077,
+    "sd": 0.222251
+   },
+   "binary": true
+  },
+  {
+   "name": "profitability",
+   "normalized": "profitability",
+   "dtype": "int64",
+   "n_missing": 0,
+   "n_unique": 2,
+   "stats": {
+    "min": 0.0,
+    "p25": 0.0,
+    "median": 0.0,
+    "p75": 0.0,
+    "max": 1.0,
+    "mean": 0.140732,
+    "sd": 0.347852
+   },
+   "binary": true
+  },
+  {
+   "name": "liquidity",
+   "normalized": "liquidity",
+   "dtype": "int64",
+   "n_missing": 0,
+   "n_unique": 2,
+   "stats": {
+    "min": 0.0,
+    "p25": 0.0,
+    "median": 0.0,
+    "p75": 0.0,
+    "max": 1.0,
+    "mean": 0.178549,
+    "sd": 0.383093
+   },
+   "binary": true
+  },
+  {
+   "name": "volatility",
+   "normalized": "volatility",
+   "dtype": "int64",
+   "n_missing": 0,
+   "n_unique": 2,
+   "stats": {
+    "min": 0.0,
+    "p25": 0.0,
+    "median": 0.0,
+    "p75": 0.0,
+    "max": 1.0,
+    "mean": 0.16739,
+    "sd": 0.373439
+   },
+   "binary": true
+  },
+  {
+   "name": "price_group",
+   "normalized": "price_group",
+   "dtype": "int64",
+   "n_missing": 0,
+   "n_unique": 2,
+   "stats": {
+    "min": 0.0,
+    "p25": 0.0,
+    "median": 0.0,
+    "p75": 0.0,
+    "max": 1.0,
+    "mean": 0.140112,
+    "sd": 0.34721
+   },
+   "binary": true
+  },
+  {
+   "name": "mkt_char",
+   "normalized": "mkt_char",
+   "dtype": "int64",
+   "n_missing": 0,
+   "n_unique": 2,
+   "stats": {
+    "min": 0.0,
+    "p25": 0.0,
+    "median": 0.0,
+    "p75": 0.0,
+    "max": 1.0,
+    "mean": 0.026658,
+    "sd": 0.161133
+   },
+   "binary": true
+  },
+  {
+   "name": "mkt_state",
+   "normalized": "mkt_state",
+   "dtype": "int64",
+   "n_missing": 0,
+   "n_unique": 2,
+   "stats": {
+    "min": 0.0,
+    "p25": 0.0,
+    "median": 0.0,
+    "p75": 0.0,
+    "max": 1.0,
+    "mean": 0.022939,
+    "sd": 0.149754
+   },
+   "binary": true
+  },
+  {
+   "name": "information",
+   "normalized": "information",
+   "dtype": "int64",
+   "n_missing": 0,
+   "n_unique": 2,
+   "stats": {
+    "min": 0.0,
+    "p25": 0.0,
+    "median": 0.0,
+    "p75": 0.0,
+    "max": 1.0,
+    "mean": 0.044637,
+    "sd": 0.20657
+   },
+   "binary": true
+  },
+  {
+   "name": "ownership",
+   "normalized": "ownership",
+   "dtype": "int64",
+   "n_missing": 0,
+   "n_unique": 2,
+   "stats": {
+    "min": 0.0,
+    "p25": 0.0,
+    "median": 0.0,
+    "p75": 0.0,
+    "max": 1.0,
+    "mean": 0.027278,
+    "sd": 0.162944
+   },
+   "binary": true
+  },
+  {
+   "name": "growth",
+   "normalized": "growth",
+   "dtype": "int64",
+   "n_missing": 0,
+   "n_unique": 2,
+   "stats": {
+    "min": 0.0,
+    "p25": 0.0,
+    "median": 0.0,
+    "p75": 0.0,
+    "max": 1.0,
+    "mean": 0.032858,
+    "sd": 0.17832
+   },
+   "binary": true
+  },
+  {
+   "name": "distress_group",
+   "normalized": "distress_group",
+   "dtype": "int64",
+   "n_missing": 0,
+   "n_unique": 2,
+   "stats": {
+    "min": 0.0,
+    "p25": 0.0,
+    "median": 0.0,
+    "p75": 0.0,
+    "max": 1.0,
+    "mean": 0.032238,
+    "sd": 0.176687
+   },
+   "binary": true
+  },
+  {
+   "name": "size_group",
+   "normalized": "size_group",
+   "dtype": "int64",
+   "n_missing": 0,
+   "n_unique": 2,
+   "stats": {
+    "min": 0.0,
+    "p25": 0.0,
+    "median": 0.0,
+    "p75": 0.0,
+    "max": 1.0,
+    "mean": 0.031618,
+    "sd": 0.175035
+   },
+   "binary": true
+  },
+  {
+   "name": "bond_yield",
+   "normalized": "bond_yield",
+   "dtype": "float64",
+   "n_missing": 0,
+   "n_unique": 162,
+   "stats": {
+    "min": 1.47,
+    "p25": 7.09,
+    "median": 8.92,
+    "p75": 11.59,
+    "max": 29.393999,
+    "mean": 9.224199,
+    "sd": 3.339064
+   }
+  },
+  {
+   "name": "mkt_return_vol",
+   "normalized": "mkt_return_vol",
+   "dtype": "float64",
+   "n_missing": 0,
+   "n_unique": 174,
+   "stats": {
+    "min": 0.103727,
+    "p25": 0.535374,
+    "median": 0.765506,
+    "p75": 0.937331,
+    "max": 5.741576,
+    "mean": 0.835353,
+    "sd": 0.514684
+   }
+  },
+  {
+   "name": "credit_gdp",
+   "normalized": "credit_gdp",
+   "dtype": "float64",
+   "n_missing": 0,
+   "n_unique": 129,
+   "stats": {
+    "min": 0.055774,
+    "p25": 0.476078,
+    "median": 0.522473,
+    "p75": 0.54977,
+    "max": 1.66715,
+    "mean": 0.564961,
+    "sd": 0.241195
+   }
+  },
+  {
+   "name": "gdp_pc",
+   "normalized": "gdp_pc",
+   "dtype": "float64",
+   "n_missing": 0,
+   "n_unique": 130,
+   "stats": {
+    "min": 6.33203,
+    "p25": 10.066414,
+    "median": 10.276047,
+    "p75": 10.401994,
+    "max": 10.992603,
+    "mean": 10.115135,
+    "sd": 0.635009
+   }
+  },
+  {
+   "name": "gdp_growth",
+   "normalized": "gdp_growth",
+   "dtype": "float64",
+   "n_missing": 0,
+   "n_unique": 203,
+   "stats": {
+    "min": -2.628639,
+    "p25": 0.710814,
+    "median": 0.781457,
+    "p75": 0.809248,
+    "max": 3.826213,
+    "mean": 0.740249,
+    "sd": 0.467085
+   }
+  }
+ ]
+}

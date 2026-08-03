@@ -1,0 +1,1032 @@
+{
+ "project": "risk",
+ "source_file": "risk.dta",
+ "source_archive": null,
+ "source_sheet": null,
+ "n_rows": 1021,
+ "n_columns": 61,
+ "columns": [
+  {
+   "name": "paper",
+   "normalized": "paper",
+   "dtype": "str",
+   "n_missing": 0,
+   "n_unique": 92,
+   "top_values": [
+    "Malloy et al. (2009)",
+    "Hyde and Sherif (2005a)",
+    "Bednarek and Patel (2015)",
+    "Epstein and Zin (1991)",
+    "Smith (1999)"
+   ]
+  },
+  {
+   "name": "idstudy",
+   "normalized": "idstudy",
+   "dtype": "int16",
+   "n_missing": 0,
+   "n_unique": 92,
+   "role": "study_id",
+   "stats": {
+    "min": 1.0,
+    "p25": 23.0,
+    "median": 38.0,
+    "p75": 61.0,
+    "max": 92.0,
+    "mean": 41.250735,
+    "sd": 25.58465
+   }
+  },
+  {
+   "name": "idcoeff",
+   "normalized": "idcoeff",
+   "dtype": "int16",
+   "n_missing": 0,
+   "n_unique": 143,
+   "stats": {
+    "min": 1.0,
+    "p25": 4.0,
+    "median": 12.0,
+    "p75": 28.0,
+    "max": 143.0,
+    "mean": 22.061704,
+    "sd": 28.271844
+   }
+  },
+  {
+   "name": "rra",
+   "normalized": "rra",
+   "dtype": "float64",
+   "n_missing": 0,
+   "n_unique": 978,
+   "role": "effect_estimate",
+   "stats": {
+    "min": -810.34,
+    "p25": 0.9667,
+    "median": 3.772,
+    "p75": 21.308,
+    "max": 2103.56,
+    "mean": 23.358118,
+    "sd": 98.580687
+   }
+  },
+  {
+   "name": "se",
+   "normalized": "se",
+   "dtype": "float64",
+   "n_missing": 0,
+   "n_unique": 975,
+   "role": "standard_error",
+   "stats": {
+    "min": 0.0,
+    "p25": 0.277,
+    "median": 2.156,
+    "p75": 11.454,
+    "max": 17529.666667,
+    "mean": 76.646878,
+    "sd": 730.63341
+   }
+  },
+  {
+   "name": "tstat",
+   "normalized": "tstat",
+   "dtype": "float64",
+   "n_missing": 726,
+   "n_unique": 254,
+   "role": "t_stat",
+   "stats": {
+    "min": -2.13,
+    "p25": 1.735,
+    "median": 2.614,
+    "p75": 3.7175,
+    "max": 11.0,
+    "mean": 2.7686,
+    "sd": 1.835751
+   }
+  },
+  {
+   "name": "perstudy",
+   "normalized": "perstudy",
+   "dtype": "int16",
+   "n_missing": 0,
+   "n_unique": 28,
+   "stats": {
+    "min": 1.0,
+    "p25": 13.0,
+    "median": 32.0,
+    "p75": 60.0,
+    "max": 143.0,
+    "mean": 43.119491,
+    "sd": 43.984527
+   }
+  },
+  {
+   "name": "pubyear",
+   "normalized": "pubyear",
+   "dtype": "int16",
+   "n_missing": 0,
+   "n_unique": 28,
+   "role": "pub_year",
+   "stats": {
+    "min": 1989.0,
+    "p25": 2003.0,
+    "median": 2009.0,
+    "p75": 2015.0,
+    "max": 2021.0,
+    "mean": 2007.839373,
+    "sd": 8.595693
+   }
+  },
+  {
+   "name": "pyear",
+   "normalized": "pyear",
+   "dtype": "int8",
+   "n_missing": 0,
+   "n_unique": 28,
+   "stats": {
+    "min": 0.0,
+    "p25": 14.0,
+    "median": 20.0,
+    "p75": 26.0,
+    "max": 32.0,
+    "mean": 18.839373,
+    "sd": 8.595693
+   }
+  },
+  {
+   "name": "exp",
+   "normalized": "exp",
+   "dtype": "int8",
+   "n_missing": 0,
+   "n_unique": 2,
+   "stats": {
+    "min": 0.0,
+    "p25": 0.0,
+    "median": 0.0,
+    "p75": 0.0,
+    "max": 1.0,
+    "mean": 0.022527,
+    "sd": 0.148462
+   },
+   "binary": true
+  },
+  {
+   "name": "ez",
+   "normalized": "ez",
+   "dtype": "int8",
+   "n_missing": 0,
+   "n_unique": 2,
+   "stats": {
+    "min": 0.0,
+    "p25": 1.0,
+    "median": 1.0,
+    "p75": 1.0,
+    "max": 1.0,
+    "mean": 0.898139,
+    "sd": 0.302614
+   },
+   "binary": true
+  },
+  {
+   "name": "panel",
+   "normalized": "panel",
+   "dtype": "int8",
+   "n_missing": 0,
+   "n_unique": 2,
+   "stats": {
+    "min": 0.0,
+    "p25": 0.0,
+    "median": 0.0,
+    "p75": 0.0,
+    "max": 1.0,
+    "mean": 0.036239,
+    "sd": 0.186976
+   },
+   "binary": true
+  },
+  {
+   "name": "csection",
+   "normalized": "csection",
+   "dtype": "int8",
+   "n_missing": 0,
+   "n_unique": 2,
+   "stats": {
+    "min": 0.0,
+    "p25": 0.0,
+    "median": 0.0,
+    "p75": 0.0,
+    "max": 1.0,
+    "mean": 0.196866,
+    "sd": 0.397825
+   },
+   "binary": true
+  },
+  {
+   "name": "start",
+   "normalized": "start",
+   "dtype": "int16",
+   "n_missing": 0,
+   "n_unique": 51,
+   "stats": {
+    "min": 1871.0,
+    "p25": 1951.0,
+    "median": 1960.0,
+    "p75": 1976.0,
+    "max": 2020.0,
+    "mean": 1959.816846,
+    "sd": 27.365585
+   }
+  },
+  {
+   "name": "end",
+   "normalized": "end",
+   "dtype": "int16",
+   "n_missing": 0,
+   "n_unique": 36,
+   "stats": {
+    "min": 1964.0,
+    "p25": 1994.0,
+    "median": 2002.0,
+    "p75": 2007.0,
+    "max": 2020.0,
+    "mean": 2000.787463,
+    "sd": 10.278899
+   }
+  },
+  {
+   "name": "timespan",
+   "normalized": "timespan",
+   "dtype": "int16",
+   "n_missing": 0,
+   "n_unique": 65,
+   "stats": {
+    "min": 1.0,
+    "p25": 20.0,
+    "median": 36.0,
+    "p75": 55.0,
+    "max": 140.0,
+    "mean": 41.93046,
+    "sd": 26.219101
+   }
+  },
+  {
+   "name": "obs",
+   "normalized": "obs",
+   "dtype": "int32",
+   "n_missing": 0,
+   "n_unique": 144,
+   "role": "n_obs",
+   "stats": {
+    "min": 17.0,
+    "p25": 75.0,
+    "median": 146.0,
+    "p75": 237.0,
+    "max": 433200.0,
+    "mean": 4270.439765,
+    "sd": 29735.449999
+   }
+  },
+  {
+   "name": "avyear",
+   "normalized": "avyear",
+   "dtype": "float64",
+   "n_missing": 0,
+   "n_unique": 65,
+   "stats": {
+    "min": 1930.5,
+    "p25": 1973.0,
+    "median": 1981.5,
+    "p75": 1989.0,
+    "max": 2020.0,
+    "mean": 1980.302155,
+    "sd": 15.953856
+   }
+  },
+  {
+   "name": "midpoint",
+   "normalized": "midpoint",
+   "dtype": "float64",
+   "n_missing": 0,
+   "n_unique": 65,
+   "stats": {
+    "min": 0.0,
+    "p25": 42.5,
+    "median": 51.0,
+    "p75": 58.5,
+    "max": 89.5,
+    "mean": 49.802155,
+    "sd": 15.953856
+   }
+  },
+  {
+   "name": "monthly",
+   "normalized": "monthly",
+   "dtype": "int8",
+   "n_missing": 0,
+   "n_unique": 2,
+   "stats": {
+    "min": 0.0,
+    "p25": 0.0,
+    "median": 0.0,
+    "p75": 0.0,
+    "max": 1.0,
+    "mean": 0.248776,
+    "sd": 0.432515
+   },
+   "binary": true
+  },
+  {
+   "name": "quarterly",
+   "normalized": "quarterly",
+   "dtype": "int8",
+   "n_missing": 0,
+   "n_unique": 2,
+   "stats": {
+    "min": 0.0,
+    "p25": 0.0,
+    "median": 1.0,
+    "p75": 1.0,
+    "max": 1.0,
+    "mean": 0.508325,
+    "sd": 0.500176
+   },
+   "binary": true
+  },
+  {
+   "name": "annual",
+   "normalized": "annual",
+   "dtype": "int8",
+   "n_missing": 0,
+   "n_unique": 2,
+   "stats": {
+    "min": 0.0,
+    "p25": 0.0,
+    "median": 0.0,
+    "p75": 0.0,
+    "max": 1.0,
+    "mean": 0.242899,
+    "sd": 0.429045
+   },
+   "binary": true
+  },
+  {
+   "name": "uk",
+   "normalized": "uk",
+   "dtype": "int8",
+   "n_missing": 0,
+   "n_unique": 2,
+   "stats": {
+    "min": 0.0,
+    "p25": 0.0,
+    "median": 0.0,
+    "p75": 0.0,
+    "max": 1.0,
+    "mean": 0.084231,
+    "sd": 0.27787
+   },
+   "binary": true
+  },
+  {
+   "name": "us",
+   "normalized": "us",
+   "dtype": "int8",
+   "n_missing": 0,
+   "n_unique": 2,
+   "stats": {
+    "min": 0.0,
+    "p25": 0.0,
+    "median": 1.0,
+    "p75": 1.0,
+    "max": 1.0,
+    "mean": 0.739471,
+    "sd": 0.439138
+   },
+   "binary": true
+  },
+  {
+   "name": "eu",
+   "normalized": "eu",
+   "dtype": "int8",
+   "n_missing": 0,
+   "n_unique": 2,
+   "stats": {
+    "min": 0.0,
+    "p25": 0.0,
+    "median": 0.0,
+    "p75": 0.0,
+    "max": 1.0,
+    "mean": 0.10382,
+    "sd": 0.305176
+   },
+   "binary": true
+  },
+  {
+   "name": "asia",
+   "normalized": "asia",
+   "dtype": "int8",
+   "n_missing": 0,
+   "n_unique": 2,
+   "stats": {
+    "min": 0.0,
+    "p25": 0.0,
+    "median": 0.0,
+    "p75": 0.0,
+    "max": 1.0,
+    "mean": 0.033301,
+    "sd": 0.179509
+   },
+   "binary": true
+  },
+  {
+   "name": "developing",
+   "normalized": "developing",
+   "dtype": "int8",
+   "n_missing": 0,
+   "n_unique": 2,
+   "stats": {
+    "min": 0.0,
+    "p25": 0.0,
+    "median": 0.0,
+    "p75": 0.0,
+    "max": 1.0,
+    "mean": 0.063663,
+    "sd": 0.244271
+   },
+   "binary": true
+  },
+  {
+   "name": "others",
+   "normalized": "others",
+   "dtype": "int8",
+   "n_missing": 0,
+   "n_unique": 2,
+   "stats": {
+    "min": 0.0,
+    "p25": 0.0,
+    "median": 0.0,
+    "p75": 0.0,
+    "max": 1.0,
+    "mean": 0.059745,
+    "sd": 0.237131
+   },
+   "binary": true
+  },
+  {
+   "name": "country",
+   "normalized": "country",
+   "dtype": "str",
+   "n_missing": 0,
+   "n_unique": 23,
+   "role": "country",
+   "top_values": [
+    "USA",
+    "UK",
+    "Brazil",
+    "Canada",
+    "Japan"
+   ]
+  },
+  {
+   "name": "sepdur",
+   "normalized": "sepdur",
+   "dtype": "int8",
+   "n_missing": 0,
+   "n_unique": 2,
+   "stats": {
+    "min": 0.0,
+    "p25": 0.0,
+    "median": 0.0,
+    "p75": 0.0,
+    "max": 1.0,
+    "mean": 0.129285,
+    "sd": 0.33568
+   },
+   "binary": true
+  },
+  {
+   "name": "totalc",
+   "normalized": "totalc",
+   "dtype": "int8",
+   "n_missing": 0,
+   "n_unique": 2,
+   "stats": {
+    "min": 0.0,
+    "p25": 0.0,
+    "median": 0.0,
+    "p75": 0.0,
+    "max": 1.0,
+    "mean": 0.100881,
+    "sd": 0.301319
+   },
+   "binary": true
+  },
+  {
+   "name": "ndsothers",
+   "normalized": "ndsothers",
+   "dtype": "int8",
+   "n_missing": 0,
+   "n_unique": 2,
+   "stats": {
+    "min": 0.0,
+    "p25": 1.0,
+    "median": 1.0,
+    "p75": 1.0,
+    "max": 1.0,
+    "mean": 0.899119,
+    "sd": 0.301319
+   },
+   "binary": true
+  },
+  {
+   "name": "nd",
+   "normalized": "nd",
+   "dtype": "int8",
+   "n_missing": 0,
+   "n_unique": 2,
+   "stats": {
+    "min": 0.0,
+    "p25": 0.0,
+    "median": 0.0,
+    "p75": 1.0,
+    "max": 1.0,
+    "mean": 0.27522,
+    "sd": 0.446844
+   },
+   "binary": true
+  },
+  {
+   "name": "nds",
+   "normalized": "nds",
+   "dtype": "int8",
+   "n_missing": 0,
+   "n_unique": 2,
+   "stats": {
+    "min": 0.0,
+    "p25": 0.0,
+    "median": 1.0,
+    "p75": 1.0,
+    "max": 1.0,
+    "mean": 0.58668,
+    "sd": 0.492671
+   },
+   "binary": true
+  },
+  {
+   "name": "durable",
+   "normalized": "durable",
+   "dtype": "int8",
+   "n_missing": 0,
+   "n_unique": 2,
+   "stats": {
+    "min": 0.0,
+    "p25": 0.0,
+    "median": 0.0,
+    "p75": 0.0,
+    "max": 1.0,
+    "mean": 0.123408,
+    "sd": 0.329067
+   },
+   "binary": true
+  },
+  {
+   "name": "longrisk",
+   "normalized": "longrisk",
+   "dtype": "int8",
+   "n_missing": 0,
+   "n_unique": 2,
+   "stats": {
+    "min": 0.0,
+    "p25": 0.0,
+    "median": 0.0,
+    "p75": 1.0,
+    "max": 1.0,
+    "mean": 0.323213,
+    "sd": 0.467932
+   },
+   "binary": true
+  },
+  {
+   "name": "fixed_ies",
+   "normalized": "fixed_ies",
+   "dtype": "int8",
+   "n_missing": 0,
+   "n_unique": 2,
+   "stats": {
+    "min": 0.0,
+    "p25": 0.0,
+    "median": 0.0,
+    "p75": 0.0,
+    "max": 1.0,
+    "mean": 0.246817,
+    "sd": 0.431371
+   },
+   "binary": true
+  },
+  {
+   "name": "implied",
+   "normalized": "implied",
+   "dtype": "int8",
+   "n_missing": 0,
+   "n_unique": 2,
+   "stats": {
+    "min": 0.0,
+    "p25": 0.0,
+    "median": 0.0,
+    "p75": 0.0,
+    "max": 1.0,
+    "mean": 0.12047,
+    "sd": 0.32567
+   },
+   "binary": true
+  },
+  {
+   "name": "exact",
+   "normalized": "exact",
+   "dtype": "int8",
+   "n_missing": 0,
+   "n_unique": 2,
+   "stats": {
+    "min": 0.0,
+    "p25": 0.0,
+    "median": 0.0,
+    "p75": 1.0,
+    "max": 1.0,
+    "mean": 0.371205,
+    "sd": 0.483364
+   },
+   "binary": true
+  },
+  {
+   "name": "second",
+   "normalized": "second",
+   "dtype": "int8",
+   "n_missing": 0,
+   "n_unique": 2,
+   "stats": {
+    "min": 0.0,
+    "p25": 0.0,
+    "median": 1.0,
+    "p75": 1.0,
+    "max": 1.0,
+    "mean": 0.539667,
+    "sd": 0.498668
+   },
+   "binary": true
+  },
+  {
+   "name": "gmm",
+   "normalized": "gmm",
+   "dtype": "int8",
+   "n_missing": 0,
+   "n_unique": 2,
+   "stats": {
+    "min": 0.0,
+    "p25": 0.0,
+    "median": 1.0,
+    "p75": 1.0,
+    "max": 1.0,
+    "mean": 0.590597,
+    "sd": 0.491965
+   },
+   "binary": true
+  },
+  {
+   "name": "ml",
+   "normalized": "ml",
+   "dtype": "int8",
+   "n_missing": 0,
+   "n_unique": 2,
+   "stats": {
+    "min": 0.0,
+    "p25": 0.0,
+    "median": 0.0,
+    "p75": 0.0,
+    "max": 1.0,
+    "mean": 0.047992,
+    "sd": 0.213854
+   },
+   "binary": true
+  },
+  {
+   "name": "ols",
+   "normalized": "ols",
+   "dtype": "int8",
+   "n_missing": 0,
+   "n_unique": 2,
+   "stats": {
+    "min": 0.0,
+    "p25": 0.0,
+    "median": 0.0,
+    "p75": 0.0,
+    "max": 1.0,
+    "mean": 0.227228,
+    "sd": 0.419247
+   },
+   "binary": true
+  },
+  {
+   "name": "gls",
+   "normalized": "gls",
+   "dtype": "int8",
+   "n_missing": 0,
+   "n_unique": 2,
+   "stats": {
+    "min": 0.0,
+    "p25": 0.0,
+    "median": 0.0,
+    "p75": 0.0,
+    "max": 1.0,
+    "mean": 0.005877,
+    "sd": 0.076471
+   },
+   "binary": true
+  },
+  {
+   "name": "ols_gls",
+   "normalized": "ols_gls",
+   "dtype": "int8",
+   "n_missing": 0,
+   "n_unique": 2,
+   "stats": {
+    "min": 0.0,
+    "p25": 0.0,
+    "median": 0.0,
+    "p75": 0.0,
+    "max": 1.0,
+    "mean": 0.233105,
+    "sd": 0.423016
+   },
+   "binary": true
+  },
+  {
+   "name": "ogmls",
+   "normalized": "ogmls",
+   "dtype": "int8",
+   "n_missing": 0,
+   "n_unique": 2,
+   "stats": {
+    "min": 0.0,
+    "p25": 0.0,
+    "median": 0.0,
+    "p75": 1.0,
+    "max": 1.0,
+    "mean": 0.281097,
+    "sd": 0.449755
+   },
+   "binary": true
+  },
+  {
+   "name": "simul",
+   "normalized": "simul",
+   "dtype": "int8",
+   "n_missing": 0,
+   "n_unique": 2,
+   "stats": {
+    "min": 0.0,
+    "p25": 0.0,
+    "median": 0.0,
+    "p75": 0.0,
+    "max": 1.0,
+    "mean": 0.128306,
+    "sd": 0.334594
+   },
+   "binary": true
+  },
+  {
+   "name": "stockhold",
+   "normalized": "stockhold",
+   "dtype": "int8",
+   "n_missing": 0,
+   "n_unique": 2,
+   "stats": {
+    "min": 0.0,
+    "p25": 0.0,
+    "median": 0.0,
+    "p75": 0.0,
+    "max": 1.0,
+    "mean": 0.118511,
+    "sd": 0.323371
+   },
+   "binary": true
+  },
+  {
+   "name": "nonstockhold",
+   "normalized": "nonstockhold",
+   "dtype": "int8",
+   "n_missing": 0,
+   "n_unique": 2,
+   "stats": {
+    "min": 0.0,
+    "p25": 0.0,
+    "median": 0.0,
+    "p75": 0.0,
+    "max": 1.0,
+    "mean": 0.048972,
+    "sd": 0.215914
+   },
+   "binary": true
+  },
+  {
+   "name": "firstlag",
+   "normalized": "firstlag",
+   "dtype": "int8",
+   "n_missing": 0,
+   "n_unique": 2,
+   "stats": {
+    "min": 0.0,
+    "p25": 0.0,
+    "median": 0.0,
+    "p75": 1.0,
+    "max": 1.0,
+    "mean": 0.286974,
+    "sd": 0.452571
+   },
+   "binary": true
+  },
+  {
+   "name": "seclag",
+   "normalized": "seclag",
+   "dtype": "int8",
+   "n_missing": 0,
+   "n_unique": 2,
+   "stats": {
+    "min": 0.0,
+    "p25": 0.0,
+    "median": 0.0,
+    "p75": 0.0,
+    "max": 1.0,
+    "mean": 0.156709,
+    "sd": 0.363704
+   },
+   "binary": true
+  },
+  {
+   "name": "instrument",
+   "normalized": "instrument",
+   "dtype": "int8",
+   "n_missing": 0,
+   "n_unique": 2,
+   "stats": {
+    "min": 0.0,
+    "p25": 0.0,
+    "median": 1.0,
+    "p75": 1.0,
+    "max": 1.0,
+    "mean": 0.511263,
+    "sd": 0.500118
+   },
+   "binary": true
+  },
+  {
+   "name": "mreturn",
+   "normalized": "mreturn",
+   "dtype": "int8",
+   "n_missing": 0,
+   "n_unique": 2,
+   "stats": {
+    "min": 0.0,
+    "p25": 0.0,
+    "median": 0.0,
+    "p75": 1.0,
+    "max": 1.0,
+    "mean": 0.324192,
+    "sd": 0.468302
+   },
+   "binary": true
+  },
+  {
+   "name": "consinclude",
+   "normalized": "consinclude",
+   "dtype": "int8",
+   "n_missing": 0,
+   "n_unique": 2,
+   "stats": {
+    "min": 0.0,
+    "p25": 0.0,
+    "median": 0.0,
+    "p75": 1.0,
+    "max": 1.0,
+    "mean": 0.348678,
+    "sd": 0.476785
+   },
+   "binary": true
+  },
+  {
+   "name": "incomeincl",
+   "normalized": "incomeincl",
+   "dtype": "int8",
+   "n_missing": 0,
+   "n_unique": 2,
+   "stats": {
+    "min": 0.0,
+    "p25": 0.0,
+    "median": 0.0,
+    "p75": 0.0,
+    "max": 1.0,
+    "mean": 0.021548,
+    "sd": 0.145272
+   },
+   "binary": true
+  },
+  {
+   "name": "hcapital",
+   "normalized": "hcapital",
+   "dtype": "int8",
+   "n_missing": 0,
+   "n_unique": 2,
+   "stats": {
+    "min": 0.0,
+    "p25": 0.0,
+    "median": 0.0,
+    "p75": 0.0,
+    "max": 1.0,
+    "mean": 0.101861,
+    "sd": 0.302614
+   },
+   "binary": true
+  },
+  {
+   "name": "top",
+   "normalized": "top",
+   "dtype": "int8",
+   "n_missing": 0,
+   "n_unique": 2,
+   "stats": {
+    "min": 0.0,
+    "p25": 0.0,
+    "median": 0.0,
+    "p75": 1.0,
+    "max": 1.0,
+    "mean": 0.302644,
+    "sd": 0.459628
+   },
+   "binary": true
+  },
+  {
+   "name": "econjournal",
+   "normalized": "econjournal",
+   "dtype": "int8",
+   "n_missing": 0,
+   "n_unique": 2,
+   "stats": {
+    "min": 0.0,
+    "p25": 0.0,
+    "median": 1.0,
+    "p75": 1.0,
+    "max": 1.0,
+    "mean": 0.577865,
+    "sd": 0.494142
+   },
+   "binary": true
+  },
+  {
+   "name": "finjournal",
+   "normalized": "finjournal",
+   "dtype": "int8",
+   "n_missing": 0,
+   "n_unique": 2,
+   "stats": {
+    "min": 0.0,
+    "p25": 0.0,
+    "median": 0.0,
+    "p75": 1.0,
+    "max": 1.0,
+    "mean": 0.422135,
+    "sd": 0.494142
+   },
+   "binary": true
+  },
+  {
+   "name": "gcits",
+   "normalized": "gcits",
+   "dtype": "int16",
+   "n_missing": 0,
+   "n_unique": 62,
+   "stats": {
+    "min": 0.0,
+    "p25": 3.0,
+    "median": 39.0,
+    "p75": 384.0,
+    "max": 2105.0,
+    "mean": 229.087169,
+    "sd": 470.94342
+   }
+  },
+  {
+   "name": "yearcits",
+   "normalized": "yearcits",
+   "dtype": "float64",
+   "n_missing": 0,
+   "n_unique": 83,
+   "stats": {
+    "min": 0.0,
+    "p25": 0.333333,
+    "median": 2.294118,
+    "p75": 27.368421,
+    "max": 80.961538,
+    "mean": 12.946053,
+    "sd": 18.103629
+   }
+  }
+ ]
+}

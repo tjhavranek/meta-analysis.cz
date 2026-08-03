@@ -1,0 +1,1818 @@
+{
+ "project": "resource_curse",
+ "source_file": "resource_curse.dta",
+ "source_archive": null,
+ "source_sheet": null,
+ "n_rows": 605,
+ "n_columns": 112,
+ "columns": [
+  {
+   "name": "AUTHOR",
+   "normalized": "author",
+   "dtype": "str",
+   "n_missing": 0,
+   "n_unique": 36,
+   "top_values": [
+    "Boshcini et.al.",
+    "Arzeki and vander Ploeg",
+    "Brunnschweiller",
+    "El Anshasy and Katsaiti",
+    "Sachs and Warner"
+   ]
+  },
+  {
+   "name": "ID",
+   "normalized": "id",
+   "dtype": "int8",
+   "n_missing": 0,
+   "n_unique": 43,
+   "stats": {
+    "min": 1.0,
+    "p25": 12.0,
+    "median": 26.0,
+    "p75": 34.0,
+    "max": 43.0,
+    "mean": 24.052893,
+    "sd": 13.135331
+   }
+  },
+  {
+   "name": "OUTPUT",
+   "normalized": "output",
+   "dtype": "int8",
+   "n_missing": 0,
+   "n_unique": 80,
+   "stats": {
+    "min": 1.0,
+    "p25": 4.0,
+    "median": 10.0,
+    "p75": 22.0,
+    "max": 80.0,
+    "mean": 16.819835,
+    "sd": 17.751847
+   }
+  },
+  {
+   "name": "dep_var",
+   "normalized": "dep_var",
+   "dtype": "str",
+   "n_missing": 0,
+   "n_unique": 105,
+   "top_values": [
+    "Log growth of income per capita, average, 1970\u00962000",
+    "real per capita GDP growth 1984\u00962008",
+    "GDP growth 1970-2005",
+    "Average GDP growth 1970-89",
+    "real per capita GDP growth, 1970-98"
+   ]
+  },
+  {
+   "name": "GDP_pc",
+   "normalized": "gdp_pc",
+   "dtype": "int8",
+   "n_missing": 0,
+   "n_unique": 2,
+   "stats": {
+    "min": 0.0,
+    "p25": 0.0,
+    "median": 1.0,
+    "p75": 1.0,
+    "max": 1.0,
+    "mean": 0.62314,
+    "sd": 0.485
+   },
+   "binary": true
+  },
+  {
+   "name": "GDP_growth",
+   "normalized": "gdp_growth",
+   "dtype": "int8",
+   "n_missing": 0,
+   "n_unique": 2,
+   "stats": {
+    "min": 0.0,
+    "p25": 1.0,
+    "median": 1.0,
+    "p75": 1.0,
+    "max": 1.0,
+    "mean": 0.852893,
+    "sd": 0.354506
+   },
+   "binary": true
+  },
+  {
+   "name": "GDP_nr",
+   "normalized": "gdp_nr",
+   "dtype": "int8",
+   "n_missing": 0,
+   "n_unique": 2,
+   "stats": {
+    "min": 0.0,
+    "p25": 0.0,
+    "median": 0.0,
+    "p75": 0.0,
+    "max": 1.0,
+    "mean": 0.028099,
+    "sd": 0.165393
+   },
+   "binary": true
+  },
+  {
+   "name": "EXP_VAR",
+   "normalized": "exp_var",
+   "dtype": "str",
+   "n_missing": 0,
+   "n_unique": 91,
+   "top_values": [
+    "The resource rents as the measure of natural resources",
+    "PrimExp/GNP",
+    "The primary export per GDP",
+    "lnNatCapital/GNI",
+    "Log total natural capital in US$ per capita, average 1994\u00962000 (lnnatcap)"
+   ]
+  },
+  {
+   "name": "RES_ABUNDANCE",
+   "normalized": "res_abundance",
+   "dtype": "float32",
+   "n_missing": 0,
+   "n_unique": 2,
+   "stats": {
+    "min": 0.0,
+    "p25": 0.0,
+    "median": 0.0,
+    "p75": 0.0,
+    "max": 1.0,
+    "mean": 0.155372,
+    "sd": 0.362559
+   },
+   "binary": true
+  },
+  {
+   "name": "NATURALR",
+   "normalized": "naturalr",
+   "dtype": "int8",
+   "n_missing": 0,
+   "n_unique": 2,
+   "stats": {
+    "min": 0.0,
+    "p25": 0.0,
+    "median": 1.0,
+    "p75": 1.0,
+    "max": 1.0,
+    "mean": 0.692562,
+    "sd": 0.461814
+   },
+   "binary": true
+  },
+  {
+   "name": "POINTR",
+   "normalized": "pointr",
+   "dtype": "int8",
+   "n_missing": 0,
+   "n_unique": 2,
+   "stats": {
+    "min": 0.0,
+    "p25": 0.0,
+    "median": 0.0,
+    "p75": 1.0,
+    "max": 1.0,
+    "mean": 0.307438,
+    "sd": 0.461814
+   },
+   "binary": true
+  },
+  {
+   "name": "OILR",
+   "normalized": "oilr",
+   "dtype": "int8",
+   "n_missing": 0,
+   "n_unique": 2,
+   "stats": {
+    "min": 0.0,
+    "p25": 0.0,
+    "median": 0.0,
+    "p75": 0.0,
+    "max": 1.0,
+    "mean": 0.14876,
+    "sd": 0.356147
+   },
+   "binary": true
+  },
+  {
+   "name": "EFFECT_SIZE",
+   "normalized": "effect_size",
+   "dtype": "float64",
+   "n_missing": 0,
+   "n_unique": 483,
+   "stats": {
+    "min": -155.823,
+    "p25": -5.383,
+    "median": -0.652,
+    "p75": 0.048,
+    "max": 62.998,
+    "mean": -3.798516,
+    "sd": 11.177481
+   }
+  },
+  {
+   "name": "EFFECT_SIZE_SE",
+   "normalized": "effect_size_se",
+   "dtype": "float64",
+   "n_missing": 0,
+   "n_unique": 496,
+   "stats": {
+    "min": 0.002237,
+    "p25": 0.08,
+    "median": 1.51,
+    "p75": 2.724,
+    "max": 216.23,
+    "mean": 3.29266,
+    "sd": 13.068891
+   }
+  },
+  {
+   "name": "BETA_INTERACTION",
+   "normalized": "beta_interaction",
+   "dtype": "float32",
+   "n_missing": 0,
+   "n_unique": 182,
+   "stats": {
+    "min": -286.009003,
+    "p25": 0.0,
+    "median": 0.0,
+    "p75": 0.0,
+    "max": 399.89801,
+    "mean": 2.269944,
+    "sd": 26.487614
+   }
+  },
+  {
+   "name": "INTERACTION_SE",
+   "normalized": "interaction_se",
+   "dtype": "float64",
+   "n_missing": 0,
+   "n_unique": 185,
+   "stats": {
+    "min": -183.706,
+    "p25": 0.0,
+    "median": 0.0,
+    "p75": 0.06,
+    "max": 558.253,
+    "mean": 2.557153,
+    "sd": 33.516848
+   }
+  },
+  {
+   "name": "INSTITUTION_MEAN",
+   "normalized": "institution_mean",
+   "dtype": "float64",
+   "n_missing": 0,
+   "n_unique": 20,
+   "stats": {
+    "min": 0.0,
+    "p25": 0.0,
+    "median": 0.0,
+    "p75": 0.532,
+    "max": 9.325,
+    "mean": 0.875074,
+    "sd": 2.111235
+   }
+  },
+  {
+   "name": "NO_EXP",
+   "normalized": "no_exp",
+   "dtype": "int8",
+   "n_missing": 0,
+   "n_unique": 20,
+   "stats": {
+    "min": 1.0,
+    "p25": 5.0,
+    "median": 6.0,
+    "p75": 9.0,
+    "max": 21.0,
+    "mean": 8.031405,
+    "sd": 4.724602
+   }
+  },
+  {
+   "name": "NO_OBS",
+   "normalized": "no_obs",
+   "dtype": "int16",
+   "n_missing": 0,
+   "n_unique": 132,
+   "role": "n_obs",
+   "stats": {
+    "min": 20.0,
+    "p25": 66.0,
+    "median": 82.0,
+    "p75": 98.0,
+    "max": 4204.0,
+    "mean": 197.646281,
+    "sd": 442.741217
+   }
+  },
+  {
+   "name": "NO_COUNTRY",
+   "normalized": "no_country",
+   "dtype": "int16",
+   "n_missing": 0,
+   "n_unique": 76,
+   "stats": {
+    "min": 1.0,
+    "p25": 61.0,
+    "median": 79.0,
+    "p75": 87.0,
+    "max": 153.0,
+    "mean": 73.568595,
+    "sd": 26.731694
+   }
+  },
+  {
+   "name": "NO_TIME",
+   "normalized": "no_time",
+   "dtype": "int8",
+   "n_missing": 0,
+   "n_unique": 11,
+   "stats": {
+    "min": 1.0,
+    "p25": 1.0,
+    "median": 1.0,
+    "p75": 1.0,
+    "max": 44.0,
+    "mean": 4.343802,
+    "sd": 8.690263
+   }
+  },
+  {
+   "name": "INST_TYPE",
+   "normalized": "inst_type",
+   "dtype": "str",
+   "n_missing": 0,
+   "n_unique": 28,
+   "top_values": [
+    "",
+    "rule of law",
+    "ICRG",
+    "Polity",
+    "gov.effect"
+   ]
+  },
+  {
+   "name": "INSTITUTION",
+   "normalized": "institution",
+   "dtype": "int8",
+   "n_missing": 0,
+   "n_unique": 2,
+   "stats": {
+    "min": 0.0,
+    "p25": 0.0,
+    "median": 1.0,
+    "p75": 1.0,
+    "max": 1.0,
+    "mean": 0.704132,
+    "sd": 0.45681
+   },
+   "binary": true
+  },
+  {
+   "name": "INTERACTION",
+   "normalized": "interaction",
+   "dtype": "int8",
+   "n_missing": 0,
+   "n_unique": 2,
+   "stats": {
+    "min": 0.0,
+    "p25": 0.0,
+    "median": 0.0,
+    "p75": 1.0,
+    "max": 1.0,
+    "mean": 0.335537,
+    "sd": 0.472569
+   },
+   "binary": true
+  },
+  {
+   "name": "INVESTMENT",
+   "normalized": "investment",
+   "dtype": "int8",
+   "n_missing": 0,
+   "n_unique": 2,
+   "stats": {
+    "min": 0.0,
+    "p25": 0.0,
+    "median": 1.0,
+    "p75": 1.0,
+    "max": 1.0,
+    "mean": 0.624793,
+    "sd": 0.484577
+   },
+   "binary": true
+  },
+  {
+   "name": "SCHOOLING",
+   "normalized": "schooling",
+   "dtype": "int8",
+   "n_missing": 0,
+   "n_unique": 2,
+   "stats": {
+    "min": 0.0,
+    "p25": 0.0,
+    "median": 0.0,
+    "p75": 1.0,
+    "max": 1.0,
+    "mean": 0.487603,
+    "sd": 0.50026
+   },
+   "binary": true
+  },
+  {
+   "name": "TOT",
+   "normalized": "tot",
+   "dtype": "int8",
+   "n_missing": 0,
+   "n_unique": 2,
+   "stats": {
+    "min": 0.0,
+    "p25": 0.0,
+    "median": 0.0,
+    "p75": 0.0,
+    "max": 1.0,
+    "mean": 0.12562,
+    "sd": 0.331695
+   },
+   "binary": true
+  },
+  {
+   "name": "OPENNESS",
+   "normalized": "openness",
+   "dtype": "int8",
+   "n_missing": 0,
+   "n_unique": 2,
+   "stats": {
+    "min": 0.0,
+    "p25": 0.0,
+    "median": 1.0,
+    "p75": 1.0,
+    "max": 1.0,
+    "mean": 0.672727,
+    "sd": 0.469606
+   },
+   "binary": true
+  },
+  {
+   "name": "iGDP",
+   "normalized": "igdp",
+   "dtype": "int8",
+   "n_missing": 0,
+   "n_unique": 2,
+   "stats": {
+    "min": 0.0,
+    "p25": 1.0,
+    "median": 1.0,
+    "p75": 1.0,
+    "max": 1.0,
+    "mean": 0.791736,
+    "sd": 0.406403
+   },
+   "binary": true
+  },
+  {
+   "name": "OLS",
+   "normalized": "ols",
+   "dtype": "float32",
+   "n_missing": 0,
+   "n_unique": 2,
+   "stats": {
+    "min": 0.0,
+    "p25": 0.0,
+    "median": 1.0,
+    "p75": 1.0,
+    "max": 1.0,
+    "mean": 0.527273,
+    "sd": 0.499669
+   },
+   "binary": true
+  },
+  {
+   "name": "ENDOGENEITY",
+   "normalized": "endogeneity",
+   "dtype": "int8",
+   "n_missing": 0,
+   "n_unique": 2,
+   "stats": {
+    "min": 0.0,
+    "p25": 0.0,
+    "median": 0.0,
+    "p75": 1.0,
+    "max": 1.0,
+    "mean": 0.413223,
+    "sd": 0.49282
+   },
+   "binary": true
+  },
+  {
+   "name": "sxp",
+   "normalized": "sxp",
+   "dtype": "float64",
+   "n_missing": 0,
+   "n_unique": 515,
+   "stats": {
+    "min": -85.622568,
+    "p25": -4.49,
+    "median": -0.416,
+    "p75": 0.09008,
+    "max": 56.922736,
+    "mean": -2.358334,
+    "sd": 7.982945
+   }
+  },
+  {
+   "name": "DUMMY60",
+   "normalized": "dummy60",
+   "dtype": "int8",
+   "n_missing": 0,
+   "n_unique": 2,
+   "stats": {
+    "min": 0.0,
+    "p25": 0.0,
+    "median": 0.0,
+    "p75": 0.0,
+    "max": 1.0,
+    "mean": 0.02314,
+    "sd": 0.150474
+   },
+   "binary": true
+  },
+  {
+   "name": "DUMMY70",
+   "normalized": "dummy70",
+   "dtype": "int8",
+   "n_missing": 0,
+   "n_unique": 2,
+   "stats": {
+    "min": 0.0,
+    "p25": 0.0,
+    "median": 0.0,
+    "p75": 1.0,
+    "max": 1.0,
+    "mean": 0.363636,
+    "sd": 0.481444
+   },
+   "binary": true
+  },
+  {
+   "name": "DUMMY80",
+   "normalized": "dummy80",
+   "dtype": "int8",
+   "n_missing": 0,
+   "n_unique": 2,
+   "stats": {
+    "min": 0.0,
+    "p25": 0.0,
+    "median": 0.0,
+    "p75": 1.0,
+    "max": 1.0,
+    "mean": 0.292562,
+    "sd": 0.455315
+   },
+   "binary": true
+  },
+  {
+   "name": "DUMMY90",
+   "normalized": "dummy90",
+   "dtype": "int8",
+   "n_missing": 0,
+   "n_unique": 2,
+   "stats": {
+    "min": 0.0,
+    "p25": 0.0,
+    "median": 0.0,
+    "p75": 1.0,
+    "max": 1.0,
+    "mean": 0.26281,
+    "sd": 0.440524
+   },
+   "binary": true
+  },
+  {
+   "name": "DUMMY00",
+   "normalized": "dummy00",
+   "dtype": "int8",
+   "n_missing": 0,
+   "n_unique": 2,
+   "stats": {
+    "min": 0.0,
+    "p25": 0.0,
+    "median": 0.0,
+    "p75": 0.0,
+    "max": 1.0,
+    "mean": 0.057851,
+    "sd": 0.233655
+   },
+   "binary": true
+  },
+  {
+   "name": "YEAR",
+   "normalized": "year",
+   "dtype": "int16",
+   "n_missing": 0,
+   "n_unique": 14,
+   "stats": {
+    "min": 1995.0,
+    "p25": 2006.0,
+    "median": 2008.0,
+    "p75": 2011.0,
+    "max": 2013.0,
+    "mean": 2007.778512,
+    "sd": 4.312757
+   }
+  },
+  {
+   "name": "GOOGLE",
+   "normalized": "google",
+   "dtype": "int16",
+   "n_missing": 0,
+   "n_unique": 41,
+   "stats": {
+    "min": 0.0,
+    "p25": 19.0,
+    "median": 141.0,
+    "p75": 240.0,
+    "max": 3258.0,
+    "mean": 293.950413,
+    "sd": 624.518504
+   }
+  },
+  {
+   "name": "IDEASREPEC",
+   "normalized": "ideasrepec",
+   "dtype": "int16",
+   "n_missing": 0,
+   "n_unique": 31,
+   "stats": {
+    "min": 0.0,
+    "p25": 3.0,
+    "median": 29.0,
+    "p75": 71.0,
+    "max": 433.0,
+    "mean": 58.046281,
+    "sd": 91.822286
+   }
+  },
+  {
+   "name": "MODEL",
+   "normalized": "model",
+   "dtype": "str",
+   "n_missing": 0,
+   "n_unique": 4,
+   "top_values": [
+    "cross-sectional",
+    "panel",
+    "time series",
+    "time-series"
+   ]
+  },
+  {
+   "name": "METHOD",
+   "normalized": "method",
+   "dtype": "str",
+   "n_missing": 0,
+   "n_unique": 13,
+   "top_values": [
+    "OLS",
+    "IV",
+    "2SLS",
+    "POLS",
+    "Hausman-Taylor"
+   ]
+  },
+  {
+   "name": "REVIEW",
+   "normalized": "review",
+   "dtype": "int8",
+   "n_missing": 0,
+   "n_unique": 2,
+   "stats": {
+    "min": 0.0,
+    "p25": 0.0,
+    "median": 1.0,
+    "p75": 1.0,
+    "max": 1.0,
+    "mean": 0.732231,
+    "sd": 0.443163
+   },
+   "binary": true
+  },
+  {
+   "name": "REGION",
+   "normalized": "region",
+   "dtype": "int8",
+   "n_missing": 0,
+   "n_unique": 2,
+   "stats": {
+    "min": 0.0,
+    "p25": 1.0,
+    "median": 1.0,
+    "p75": 1.0,
+    "max": 1.0,
+    "mean": 0.861157,
+    "sd": 0.346069
+   },
+   "binary": true
+  },
+  {
+   "name": "INDEX",
+   "normalized": "index",
+   "dtype": "float64",
+   "n_missing": 0,
+   "n_unique": 25,
+   "stats": {
+    "min": 0.0,
+    "p25": 0.009,
+    "median": 0.093,
+    "p75": 0.093,
+    "max": 0.874,
+    "mean": 0.152754,
+    "sd": 0.24398
+   }
+  },
+  {
+   "name": "LITERATURE",
+   "normalized": "literature",
+   "dtype": "str",
+   "n_missing": 0,
+   "n_unique": 43,
+   "top_values": [
+    "",
+    "Jeffrey D. Sachs & Andrew M. Warner, 1995. \"Natural Resource Abundance and Economic Growth,\" NBER Working Papers 5398, National Bureau of Economic Research, Inc.",
+    "Gylfason, Thorvaldur, 1999. \"Exports, Inflation and Growth,\" World Development, Elsevier, vol. 27(6), pages 1031-1057, June.",
+    "Gylfason, Thorvaldur, 2001. \"Natural resources, education, and economic development,\" European Economic Review, Elsevier, vol. 45(4-6), pages 847-859, May.",
+    "Hodler, Roland, 2006. \"The curse of natural resources in fractionalized countries,\" European Economic Review, Elsevier, vol. 50(6), pages 1367-1386, August."
+   ]
+  },
+  {
+   "name": "NO_STUDY",
+   "normalized": "no_study",
+   "dtype": "int8",
+   "n_missing": 0,
+   "n_unique": 25,
+   "stats": {
+    "min": 1.0,
+    "p25": 12.0,
+    "median": 21.0,
+    "p75": 52.0,
+    "max": 80.0,
+    "mean": 32.629752,
+    "sd": 26.055883
+   }
+  },
+  {
+   "name": "DF",
+   "normalized": "df",
+   "dtype": "float32",
+   "n_missing": 0,
+   "n_unique": 156,
+   "stats": {
+    "min": 11.0,
+    "p25": 57.0,
+    "median": 74.0,
+    "p75": 92.0,
+    "max": 4188.0,
+    "mean": 189.614876,
+    "sd": 441.002503
+   }
+  },
+  {
+   "name": "SXP",
+   "normalized": "sxp",
+   "dtype": "float32",
+   "n_missing": 0,
+   "n_unique": 514,
+   "stats": {
+    "min": -85.622566,
+    "p25": -4.49,
+    "median": -0.504,
+    "p75": 0.060764,
+    "max": 56.922741,
+    "mean": -2.391887,
+    "sd": 7.972598
+   }
+  },
+  {
+   "name": "SXP_SE",
+   "normalized": "sxp_se",
+   "dtype": "float32",
+   "n_missing": 0,
+   "n_unique": 514,
+   "stats": {
+    "min": 0.005,
+    "p25": 0.09,
+    "median": 1.538202,
+    "p75": 3.18,
+    "max": 367.367432,
+    "mean": 5.140925,
+    "sd": 24.111162
+   }
+  },
+  {
+   "name": "TSTAT",
+   "normalized": "tstat",
+   "dtype": "float32",
+   "n_missing": 0,
+   "n_unique": 540,
+   "role": "t_stat",
+   "stats": {
+    "min": -21.292,
+    "p25": -2.39,
+    "median": -0.790156,
+    "p75": 0.639301,
+    "max": 11.549974,
+    "mean": -0.718796,
+    "sd": 2.75612
+   }
+  },
+  {
+   "name": "PCC",
+   "normalized": "pcc",
+   "dtype": "float32",
+   "n_missing": 0,
+   "n_unique": 580,
+   "role": "effect_estimate",
+   "stats": {
+    "min": -0.935202,
+    "p25": -0.275035,
+    "median": -0.06692,
+    "p75": 0.044604,
+    "max": 0.766134,
+    "mean": -0.077999,
+    "sd": 0.27272
+   }
+  },
+  {
+   "name": "PCC_SE",
+   "normalized": "pcc_se",
+   "dtype": "float32",
+   "n_missing": 0,
+   "n_unique": 577,
+   "role": "standard_error",
+   "stats": {
+    "min": 0.015452,
+    "p25": 0.09759,
+    "median": 0.111318,
+    "p75": 0.125497,
+    "max": 0.299342,
+    "mean": 0.108896,
+    "sd": 0.038197
+   }
+  },
+  {
+   "name": "prec",
+   "normalized": "prec",
+   "dtype": "float32",
+   "n_missing": 0,
+   "n_unique": 577,
+   "stats": {
+    "min": 11.159999,
+    "p25": 63.493835,
+    "median": 80.699631,
+    "p75": 105.0,
+    "max": 4188.102051,
+    "mean": 197.715183,
+    "sd": 441.672987
+   }
+  },
+  {
+   "name": "invperst",
+   "normalized": "invperst",
+   "dtype": "float32",
+   "n_missing": 0,
+   "n_unique": 25,
+   "stats": {
+    "min": 0.0125,
+    "p25": 0.019231,
+    "median": 0.047619,
+    "p75": 0.083333,
+    "max": 1.0,
+    "mean": 0.069666,
+    "sd": 0.09118
+   }
+  },
+  {
+   "name": "INVSE",
+   "normalized": "invse",
+   "dtype": "float32",
+   "n_missing": 0,
+   "n_unique": 576,
+   "stats": {
+    "min": 3.340658,
+    "p25": 7.968302,
+    "median": 8.983297,
+    "p75": 10.246951,
+    "max": 64.715546,
+    "mean": 11.414637,
+    "sd": 8.217839
+   }
+  },
+  {
+   "name": "SXPSE",
+   "normalized": "sxpse",
+   "dtype": "float32",
+   "n_missing": 0,
+   "n_unique": 540,
+   "stats": {
+    "min": -21.292,
+    "p25": -2.39,
+    "median": -0.790156,
+    "p75": 0.639301,
+    "max": 11.549974,
+    "mean": -0.718796,
+    "sd": 2.75612
+   }
+  },
+  {
+   "name": "CROSS",
+   "normalized": "cross",
+   "dtype": "float32",
+   "n_missing": 0,
+   "n_unique": 2,
+   "stats": {
+    "min": 0.0,
+    "p25": 1.0,
+    "median": 1.0,
+    "p75": 1.0,
+    "max": 1.0,
+    "mean": 0.81157,
+    "sd": 0.391379
+   },
+   "binary": true
+  },
+  {
+   "name": "PANEL",
+   "normalized": "panel",
+   "dtype": "float32",
+   "n_missing": 0,
+   "n_unique": 2,
+   "stats": {
+    "min": 0.0,
+    "p25": 0.0,
+    "median": 0.0,
+    "p75": 0.0,
+    "max": 1.0,
+    "mean": 0.180165,
+    "sd": 0.384643
+   },
+   "binary": true
+  },
+  {
+   "name": "TIME_SERIES",
+   "normalized": "time_series",
+   "dtype": "float32",
+   "n_missing": 0,
+   "n_unique": 2,
+   "stats": {
+    "min": 0.0,
+    "p25": 0.0,
+    "median": 0.0,
+    "p75": 0.0,
+    "max": 1.0,
+    "mean": 0.006612,
+    "sd": 0.081109
+   },
+   "binary": true
+  },
+  {
+   "name": "instrument",
+   "normalized": "instrument",
+   "dtype": "float32",
+   "n_missing": 0,
+   "n_unique": 156,
+   "stats": {
+    "min": 0.015452,
+    "p25": 0.104257,
+    "median": 0.116248,
+    "p75": 0.132453,
+    "max": 0.301511,
+    "mean": 0.114506,
+    "sd": 0.040584
+   }
+  },
+  {
+   "name": "NO_OBSSE",
+   "normalized": "no_obsse",
+   "dtype": "float32",
+   "n_missing": 0,
+   "n_unique": 579,
+   "stats": {
+    "min": 66.813171,
+    "p25": 539.119995,
+    "median": 719.115295,
+    "p75": 985.553711,
+    "max": 272064.15625,
+    "mean": 5711.796185,
+    "sd": 23770.113279
+   }
+  },
+  {
+   "name": "NO_EXPSE",
+   "normalized": "no_expse",
+   "dtype": "float32",
+   "n_missing": 0,
+   "n_unique": 579,
+   "stats": {
+    "min": 4.838398,
+    "p25": 40.358673,
+    "median": 57.929047,
+    "p75": 99.683617,
+    "max": 1220.303223,
+    "mean": 105.878787,
+    "sd": 151.699866
+   }
+  },
+  {
+   "name": "DFSE",
+   "normalized": "dfse",
+   "dtype": "float32",
+   "n_missing": 0,
+   "n_unique": 579,
+   "stats": {
+    "min": 36.747242,
+    "p25": 470.072327,
+    "median": 665.053589,
+    "p75": 937.468689,
+    "max": 271028.71875,
+    "mean": 5605.917461,
+    "sd": 23639.656564
+   }
+  },
+  {
+   "name": "NO_COUNTRYSE",
+   "normalized": "no_countryse",
+   "dtype": "float32",
+   "n_missing": 0,
+   "n_unique": 580,
+   "stats": {
+    "min": 4.98593,
+    "p25": 521.241943,
+    "median": 715.900452,
+    "p75": 964.795288,
+    "max": 6037.289551,
+    "mean": 887.047009,
+    "sd": 760.914143
+   }
+  },
+  {
+   "name": "NO_TIMESE",
+   "normalized": "no_timese",
+   "dtype": "float32",
+   "n_missing": 0,
+   "n_unique": 576,
+   "stats": {
+    "min": 3.340658,
+    "p25": 8.081599,
+    "median": 9.097341,
+    "p75": 10.723805,
+    "max": 2569.059326,
+    "mean": 105.187033,
+    "sd": 324.815991
+   }
+  },
+  {
+   "name": "YEARSE",
+   "normalized": "yearse",
+   "dtype": "float32",
+   "n_missing": 0,
+   "n_unique": 586,
+   "stats": {
+    "min": 6694.679688,
+    "p25": 15979.333984,
+    "median": 18022.351562,
+    "p75": 20575.876953,
+    "max": 130272.390625,
+    "mean": 22931.347798,
+    "sd": 16552.890859
+   }
+  },
+  {
+   "name": "INDEXSE",
+   "normalized": "indexse",
+   "dtype": "float32",
+   "n_missing": 0,
+   "n_unique": 474,
+   "stats": {
+    "min": 0.0,
+    "p25": 0.092075,
+    "median": 0.766903,
+    "p75": 1.955167,
+    "max": 13.940454,
+    "mean": 1.657682,
+    "sd": 2.522574
+   }
+  },
+  {
+   "name": "GOOGLESE",
+   "normalized": "googlese",
+   "dtype": "float32",
+   "n_missing": 0,
+   "n_unique": 543,
+   "stats": {
+    "min": 0.0,
+    "p25": 186.652405,
+    "median": 1196.224121,
+    "p75": 2189.431396,
+    "max": 33186.597656,
+    "mean": 2628.732063,
+    "sd": 5529.56197
+   }
+  },
+  {
+   "name": "REVIEWSE",
+   "normalized": "reviewse",
+   "dtype": "float32",
+   "n_missing": 0,
+   "n_unique": 429,
+   "stats": {
+    "min": 0.0,
+    "p25": 0.0,
+    "median": 8.452482,
+    "p75": 10.008017,
+    "max": 64.715546,
+    "mean": 9.111712,
+    "sd": 9.724043
+   }
+  },
+  {
+   "name": "INSTITUTIONSE",
+   "normalized": "institutionse",
+   "dtype": "float32",
+   "n_missing": 0,
+   "n_unique": 407,
+   "stats": {
+    "min": 0.0,
+    "p25": 0.0,
+    "median": 8.095377,
+    "p75": 9.224323,
+    "max": 64.715546,
+    "mean": 8.528487,
+    "sd": 9.649007
+   }
+  },
+  {
+   "name": "INTERACTIONSE",
+   "normalized": "interactionse",
+   "dtype": "float32",
+   "n_missing": 0,
+   "n_unique": 202,
+   "stats": {
+    "min": 0.0,
+    "p25": 0.0,
+    "median": 0.0,
+    "p75": 8.075595,
+    "max": 64.715546,
+    "mean": 4.974149,
+    "sd": 10.02832
+   }
+  },
+  {
+   "name": "TOTSE",
+   "normalized": "totse",
+   "dtype": "float32",
+   "n_missing": 0,
+   "n_unique": 76,
+   "stats": {
+    "min": 0.0,
+    "p25": 0.0,
+    "median": 0.0,
+    "p75": 0.0,
+    "max": 23.12722,
+    "mean": 1.13052,
+    "sd": 3.284913
+   }
+  },
+  {
+   "name": "OPENNESSE",
+   "normalized": "opennesse",
+   "dtype": "float32",
+   "n_missing": 0,
+   "n_unique": 397,
+   "stats": {
+    "min": 0.0,
+    "p25": 0.0,
+    "median": 8.095377,
+    "p75": 9.610601,
+    "max": 64.715546,
+    "mean": 8.388615,
+    "sd": 9.619044
+   }
+  },
+  {
+   "name": "iGDPSE",
+   "normalized": "igdpse",
+   "dtype": "float32",
+   "n_missing": 0,
+   "n_unique": 466,
+   "stats": {
+    "min": 0.0,
+    "p25": 5.931258,
+    "median": 8.382363,
+    "p75": 9.724196,
+    "max": 64.715546,
+    "mean": 9.46283,
+    "sd": 9.466207
+   }
+  },
+  {
+   "name": "INVESTMENTSE",
+   "normalized": "investmentse",
+   "dtype": "float32",
+   "n_missing": 0,
+   "n_unique": 366,
+   "stats": {
+    "min": 0.0,
+    "p25": 0.0,
+    "median": 7.682654,
+    "p75": 9.22397,
+    "max": 64.715546,
+    "mean": 7.728378,
+    "sd": 9.657928
+   }
+  },
+  {
+   "name": "SCHOOLINGSE",
+   "normalized": "schoolingse",
+   "dtype": "float32",
+   "n_missing": 0,
+   "n_unique": 284,
+   "stats": {
+    "min": 0.0,
+    "p25": 0.0,
+    "median": 0.0,
+    "p75": 8.699348,
+    "max": 64.715546,
+    "mean": 6.319785,
+    "sd": 9.856909
+   }
+  },
+  {
+   "name": "NATURALRSE",
+   "normalized": "naturalrse",
+   "dtype": "float32",
+   "n_missing": 0,
+   "n_unique": 403,
+   "stats": {
+    "min": 0.0,
+    "p25": 0.0,
+    "median": 8.246272,
+    "p75": 9.493625,
+    "max": 64.715546,
+    "mean": 7.711477,
+    "sd": 8.662496
+   }
+  },
+  {
+   "name": "POINTRSE",
+   "normalized": "pointrse",
+   "dtype": "float32",
+   "n_missing": 0,
+   "n_unique": 182,
+   "stats": {
+    "min": 0.0,
+    "p25": 0.0,
+    "median": 0.0,
+    "p75": 7.565712,
+    "max": 51.342472,
+    "mean": 3.776936,
+    "sd": 7.041151
+   }
+  },
+  {
+   "name": "OILRSE",
+   "normalized": "oilrse",
+   "dtype": "float32",
+   "n_missing": 0,
+   "n_unique": 87,
+   "stats": {
+    "min": 0.0,
+    "p25": 0.0,
+    "median": 0.0,
+    "p75": 0.0,
+    "max": 13.185896,
+    "mean": 1.30175,
+    "sd": 3.191533
+   }
+  },
+  {
+   "name": "GDPpcSE",
+   "normalized": "gdppcse",
+   "dtype": "float32",
+   "n_missing": 0,
+   "n_unique": 361,
+   "stats": {
+    "min": 0.0,
+    "p25": 0.0,
+    "median": 7.583903,
+    "p75": 9.39397,
+    "max": 47.905338,
+    "mean": 6.559806,
+    "sd": 6.883018
+   }
+  },
+  {
+   "name": "GDPgrowthSE",
+   "normalized": "gdpgrowthse",
+   "dtype": "float32",
+   "n_missing": 0,
+   "n_unique": 492,
+   "stats": {
+    "min": 0.0,
+    "p25": 6.918012,
+    "median": 8.566545,
+    "p75": 9.725964,
+    "max": 64.715546,
+    "mean": 9.85481,
+    "sd": 8.853644
+   }
+  },
+  {
+   "name": "GDPnrSE",
+   "normalized": "gdpnrse",
+   "dtype": "float32",
+   "n_missing": 0,
+   "n_unique": 18,
+   "stats": {
+    "min": 0.0,
+    "p25": 0.0,
+    "median": 0.0,
+    "p75": 0.0,
+    "max": 47.905338,
+    "mean": 0.42578,
+    "sd": 3.329611
+   }
+  },
+  {
+   "name": "CROSSSE",
+   "normalized": "crossse",
+   "dtype": "float32",
+   "n_missing": 0,
+   "n_unique": 465,
+   "stats": {
+    "min": 0.0,
+    "p25": 6.640402,
+    "median": 8.428644,
+    "p75": 9.381956,
+    "max": 22.767284,
+    "mean": 7.075323,
+    "sd": 3.711356
+   }
+  },
+  {
+   "name": "PANELSE",
+   "normalized": "panelse",
+   "dtype": "float32",
+   "n_missing": 0,
+   "n_unique": 108,
+   "stats": {
+    "min": 0.0,
+    "p25": 0.0,
+    "median": 0.0,
+    "p75": 0.0,
+    "max": 64.715546,
+    "mean": 4.287918,
+    "sd": 10.74167
+   }
+  },
+  {
+   "name": "TIME_SERISSE",
+   "normalized": "time_serisse",
+   "dtype": "float32",
+   "n_missing": 0,
+   "n_unique": 5,
+   "stats": {
+    "min": 0.0,
+    "p25": 0.0,
+    "median": 0.0,
+    "p75": 0.0,
+    "max": 7.420687,
+    "mean": 0.041392,
+    "sd": 0.512618
+   }
+  },
+  {
+   "name": "ENDOGENEITYSE",
+   "normalized": "endogeneityse",
+   "dtype": "float32",
+   "n_missing": 0,
+   "n_unique": 243,
+   "stats": {
+    "min": 0.0,
+    "p25": 0.0,
+    "median": 0.0,
+    "p75": 8.355866,
+    "max": 64.715546,
+    "mean": 5.415901,
+    "sd": 9.098837
+   }
+  },
+  {
+   "name": "OLSSE",
+   "normalized": "olsse",
+   "dtype": "float32",
+   "n_missing": 0,
+   "n_unique": 307,
+   "stats": {
+    "min": 0.0,
+    "p25": 0.0,
+    "median": 5.5,
+    "p75": 9.176953,
+    "max": 64.226486,
+    "mean": 5.356133,
+    "sd": 6.65486
+   }
+  },
+  {
+   "name": "REGIONSE",
+   "normalized": "regionse",
+   "dtype": "float32",
+   "n_missing": 0,
+   "n_unique": 493,
+   "stats": {
+    "min": 0.0,
+    "p25": 7.48391,
+    "median": 8.888194,
+    "p75": 10.174026,
+    "max": 64.715546,
+    "mean": 10.214018,
+    "sd": 8.748212
+   }
+  },
+  {
+   "name": "DUMMY60SE",
+   "normalized": "dummy60se",
+   "dtype": "float32",
+   "n_missing": 0,
+   "n_unique": 15,
+   "stats": {
+    "min": 0.0,
+    "p25": 0.0,
+    "median": 0.0,
+    "p75": 0.0,
+    "max": 23.12722,
+    "mean": 0.289119,
+    "sd": 2.229634
+   }
+  },
+  {
+   "name": "DUMMY70SE",
+   "normalized": "dummy70se",
+   "dtype": "float32",
+   "n_missing": 0,
+   "n_unique": 211,
+   "stats": {
+    "min": 0.0,
+    "p25": 0.0,
+    "median": 0.0,
+    "p75": 8.547842,
+    "max": 22.767284,
+    "mean": 3.25311,
+    "sd": 4.396105
+   }
+  },
+  {
+   "name": "DUMMY80SE",
+   "normalized": "dummy80se",
+   "dtype": "float32",
+   "n_missing": 0,
+   "n_unique": 176,
+   "stats": {
+    "min": 0.0,
+    "p25": 0.0,
+    "median": 0.0,
+    "p75": 7.589987,
+    "max": 64.715546,
+    "mean": 4.957018,
+    "sd": 10.237509
+   }
+  },
+  {
+   "name": "DUMMY90SE",
+   "normalized": "dummy90se",
+   "dtype": "float32",
+   "n_missing": 0,
+   "n_unique": 149,
+   "stats": {
+    "min": 0.0,
+    "p25": 0.0,
+    "median": 0.0,
+    "p75": 4.543127,
+    "max": 47.905338,
+    "mean": 2.387843,
+    "sd": 4.79334
+   }
+  },
+  {
+   "name": "DUMMY00SE",
+   "normalized": "dummy00se",
+   "dtype": "float32",
+   "n_missing": 0,
+   "n_unique": 33,
+   "stats": {
+    "min": 0.0,
+    "p25": 0.0,
+    "median": 0.0,
+    "p75": 0.0,
+    "max": 13.350192,
+    "mean": 0.527548,
+    "sd": 2.162439
+   }
+  },
+  {
+   "name": "IV",
+   "normalized": "iv",
+   "dtype": "float32",
+   "n_missing": 448,
+   "n_unique": 1,
+   "stats": {
+    "min": 1.0,
+    "p25": 1.0,
+    "median": 1.0,
+    "p75": 1.0,
+    "max": 1.0,
+    "mean": 1.0,
+    "sd": 0.0
+   },
+   "binary": true
+  },
+  {
+   "name": "IVSE",
+   "normalized": "ivse",
+   "dtype": "float32",
+   "n_missing": 448,
+   "n_unique": 155,
+   "stats": {
+    "min": 6.328684,
+    "p25": 7.550707,
+    "median": 8.497134,
+    "p75": 10.355873,
+    "max": 64.715546,
+    "mean": 12.535938,
+    "sd": 11.133792
+   }
+  },
+  {
+   "name": "LN_NO_OBS",
+   "normalized": "ln_no_obs",
+   "dtype": "float32",
+   "n_missing": 0,
+   "n_unique": 132,
+   "stats": {
+    "min": 3.044523,
+    "p25": 4.204693,
+    "median": 4.41884,
+    "p75": 4.59512,
+    "max": 8.344029,
+    "mean": 4.618419,
+    "sd": 0.885251
+   }
+  },
+  {
+   "name": "LN_NO_EXP",
+   "normalized": "ln_no_exp",
+   "dtype": "float32",
+   "n_missing": 0,
+   "n_unique": 20,
+   "stats": {
+    "min": 0.693147,
+    "p25": 1.791759,
+    "median": 1.94591,
+    "p75": 2.302585,
+    "max": 3.091043,
+    "mean": 2.081504,
+    "sd": 0.48103
+   }
+  },
+  {
+   "name": "LN_NO_COUNTRY",
+   "normalized": "ln_no_country",
+   "dtype": "float32",
+   "n_missing": 0,
+   "n_unique": 76,
+   "stats": {
+    "min": 0.693147,
+    "p25": 4.127134,
+    "median": 4.382027,
+    "p75": 4.477337,
+    "max": 5.036952,
+    "mean": 4.144361,
+    "sd": 0.809459
+   }
+  },
+  {
+   "name": "LN_NO_TIME",
+   "normalized": "ln_no_time",
+   "dtype": "float32",
+   "n_missing": 0,
+   "n_unique": 11,
+   "stats": {
+    "min": 0.693147,
+    "p25": 0.693147,
+    "median": 0.693147,
+    "p75": 0.693147,
+    "max": 3.806663,
+    "mean": 1.085606,
+    "sd": 0.862903
+   }
+  },
+  {
+   "name": "LN_YEAR",
+   "normalized": "ln_year",
+   "dtype": "float32",
+   "n_missing": 0,
+   "n_unique": 14,
+   "stats": {
+    "min": 7.5989,
+    "p25": 7.604396,
+    "median": 7.605392,
+    "p75": 7.606884,
+    "max": 7.607878,
+    "mean": 7.60528,
+    "sd": 0.002149
+   }
+  },
+  {
+   "name": "LN_INDEX",
+   "normalized": "ln_index",
+   "dtype": "float32",
+   "n_missing": 0,
+   "n_unique": 25,
+   "stats": {
+    "min": 0.0,
+    "p25": 0.00896,
+    "median": 0.088926,
+    "p75": 0.088926,
+    "max": 0.628075,
+    "mean": 0.124468,
+    "sd": 0.177495
+   }
+  },
+  {
+   "name": "LN_GOOGLE",
+   "normalized": "ln_google",
+   "dtype": "float32",
+   "n_missing": 0,
+   "n_unique": 41,
+   "stats": {
+    "min": 0.0,
+    "p25": 2.995732,
+    "median": 4.955827,
+    "p75": 5.484797,
+    "max": 8.089175,
+    "mean": 4.221463,
+    "sd": 1.997206
+   }
+  },
+  {
+   "name": "LN_NO_OBSSE",
+   "normalized": "ln_no_obsse",
+   "dtype": "float32",
+   "n_missing": 0,
+   "n_unique": 580,
+   "stats": {
+    "min": 10.17071,
+    "p25": 33.721451,
+    "median": 39.304615,
+    "p75": 46.720257,
+    "max": 539.988403,
+    "mean": 59.553537,
+    "sd": 67.592939
+   }
+  },
+  {
+   "name": "LN_NO_EXPSE",
+   "normalized": "ln_no_expse",
+   "dtype": "float32",
+   "n_missing": 0,
+   "n_unique": 580,
+   "stats": {
+    "min": 3.353722,
+    "p25": 14.59628,
+    "median": 18.033669,
+    "p75": 22.601614,
+    "max": 192.40535,
+    "mean": 25.121196,
+    "sd": 24.219314
+   }
+  },
+  {
+   "name": "LN_NO_COUNTRYSE",
+   "normalized": "ln_no_countryse",
+   "dtype": "float32",
+   "n_missing": 0,
+   "n_unique": 581,
+   "stats": {
+    "min": 3.455984,
+    "p25": 33.321373,
+    "median": 39.194038,
+    "p75": 46.561062,
+    "max": 292.630005,
+    "mean": 48.54255,
+    "sd": 37.699032
+   }
+  },
+  {
+   "name": "LN_NO_TIMESE",
+   "normalized": "ln_no_timese",
+   "dtype": "float32",
+   "n_missing": 0,
+   "n_unique": 577,
+   "stats": {
+    "min": 2.315568,
+    "p25": 5.601737,
+    "median": 6.305796,
+    "p75": 7.433176,
+    "max": 238.509674,
+    "mean": 17.750071,
+    "sd": 33.602495
+   }
+  },
+  {
+   "name": "LN_YEARSE",
+   "normalized": "ln_yearse",
+   "dtype": "float32",
+   "n_missing": 0,
+   "n_unique": 586,
+   "stats": {
+    "min": 25.40036,
+    "p25": 60.582207,
+    "median": 68.312553,
+    "p75": 77.886078,
+    "max": 492.347992,
+    "mean": 86.818119,
+    "sd": 62.525469
+   }
+  },
+  {
+   "name": "LN_INDEXSE",
+   "normalized": "ln_indexse",
+   "dtype": "float32",
+   "n_missing": 0,
+   "n_unique": 474,
+   "stats": {
+    "min": 0.0,
+    "p25": 0.091632,
+    "median": 0.73331,
+    "p75": 1.869523,
+    "max": 12.235843,
+    "mean": 1.377954,
+    "sd": 1.913615
+   }
+  },
+  {
+   "name": "LN_GOOGLESE",
+   "normalized": "ln_googlese",
+   "dtype": "float32",
+   "n_missing": 0,
+   "n_unique": 544,
+   "stats": {
+    "min": 0.0,
+    "p25": 25.822996,
+    "median": 43.688877,
+    "p75": 52.532307,
+    "max": 224.286987,
+    "mean": 42.747406,
+    "sd": 29.208615
+   }
+  },
+  {
+   "name": "LN_DF",
+   "normalized": "ln_df",
+   "dtype": "float32",
+   "n_missing": 0,
+   "n_unique": 156,
+   "stats": {
+    "min": 2.484907,
+    "p25": 4.060443,
+    "median": 4.317488,
+    "p75": 4.532599,
+    "max": 8.340218,
+    "mean": 4.520694,
+    "sd": 0.927301
+   }
+  },
+  {
+   "name": "RES_ABUNDANCESE",
+   "normalized": "res_abundancese",
+   "dtype": "float32",
+   "n_missing": 0,
+   "n_unique": 85,
+   "stats": {
+    "min": 0.0,
+    "p25": 0.0,
+    "median": 0.0,
+    "p75": 0.0,
+    "max": 47.905338,
+    "mean": 1.622884,
+    "sd": 4.495928
+   }
+  }
+ ]
+}

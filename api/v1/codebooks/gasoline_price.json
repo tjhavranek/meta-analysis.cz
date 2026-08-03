@@ -1,0 +1,195 @@
+{
+ "project": "gasoline_price",
+ "source_file": "papers_revised.xls",
+ "source_archive": "data.zip",
+ "source_sheet": "data",
+ "n_rows": 202,
+ "n_columns": 11,
+ "columns": [
+  {
+   "name": "idstudy",
+   "normalized": "idstudy",
+   "dtype": "int64",
+   "n_missing": 0,
+   "n_unique": 41,
+   "role": "study_id",
+   "stats": {
+    "min": 1.0,
+    "p25": 6.25,
+    "median": 20.0,
+    "p75": 29.0,
+    "max": 46.0,
+    "mean": 20.336634,
+    "sd": 13.100664
+   }
+  },
+  {
+   "name": "e",
+   "normalized": "e",
+   "dtype": "float64",
+   "n_missing": 0,
+   "n_unique": 143,
+   "role": "effect_estimate",
+   "stats": {
+    "min": -1.59,
+    "p25": -0.6175,
+    "median": -0.3405,
+    "p75": -0.171725,
+    "max": 0.08,
+    "mean": -0.4382,
+    "sd": 0.342184
+   }
+  },
+  {
+   "name": "se",
+   "normalized": "se",
+   "dtype": "float64",
+   "n_missing": 0,
+   "n_unique": 187,
+   "role": "standard_error",
+   "stats": {
+    "min": 0.009485,
+    "p25": 0.035416,
+    "median": 0.084157,
+    "p75": 0.178168,
+    "max": 1.054945,
+    "mean": 0.12282,
+    "sd": 0.124149
+   }
+  },
+  {
+   "name": "t",
+   "normalized": "t",
+   "dtype": "float64",
+   "n_missing": 0,
+   "n_unique": 177,
+   "role": "t_stat",
+   "stats": {
+    "min": -29.2,
+    "p25": -7.115,
+    "median": -4.627071,
+    "p75": -2.622545,
+    "max": 0.82,
+    "mean": -5.166168,
+    "sd": 3.565299
+   }
+  },
+  {
+   "name": "prec",
+   "normalized": "prec",
+   "dtype": "float64",
+   "n_missing": 0,
+   "n_unique": 185,
+   "stats": {
+    "min": 0.947917,
+    "p25": 5.615231,
+    "median": 11.882614,
+    "p75": 28.238636,
+    "max": 105.428571,
+    "mean": 21.062591,
+    "sd": 21.736285
+   }
+  },
+  {
+   "name": "longr",
+   "normalized": "longr",
+   "dtype": "int64",
+   "n_missing": 0,
+   "n_unique": 2,
+   "stats": {
+    "min": 0.0,
+    "p25": 0.0,
+    "median": 0.0,
+    "p75": 1.0,
+    "max": 1.0,
+    "mean": 0.455446,
+    "sd": 0.499248
+   },
+   "binary": true
+  },
+  {
+   "name": "pubdate",
+   "normalized": "pubdate",
+   "dtype": "int64",
+   "n_missing": 0,
+   "n_unique": 25,
+   "stats": {
+    "min": 1974.0,
+    "p25": 1983.0,
+    "median": 1991.0,
+    "p75": 1997.0,
+    "max": 2011.0,
+    "mean": 1991.148515,
+    "sd": 10.590417
+   }
+  },
+  {
+   "name": "cs",
+   "normalized": "cs",
+   "dtype": "int64",
+   "n_missing": 0,
+   "n_unique": 2,
+   "stats": {
+    "min": 0.0,
+    "p25": 0.0,
+    "median": 0.0,
+    "p75": 0.0,
+    "max": 1.0,
+    "mean": 0.10396,
+    "sd": 0.305967
+   },
+   "binary": true
+  },
+  {
+   "name": "tscs",
+   "normalized": "tscs",
+   "dtype": "int64",
+   "n_missing": 0,
+   "n_unique": 2,
+   "stats": {
+    "min": 0.0,
+    "p25": 0.0,
+    "median": 1.0,
+    "p75": 1.0,
+    "max": 1.0,
+    "mean": 0.569307,
+    "sd": 0.496403
+   },
+   "binary": true
+  },
+  {
+   "name": "usdata",
+   "normalized": "usdata",
+   "dtype": "int64",
+   "n_missing": 0,
+   "n_unique": 2,
+   "stats": {
+    "min": 0.0,
+    "p25": 0.0,
+    "median": 0.0,
+    "p75": 1.0,
+    "max": 1.0,
+    "mean": 0.262376,
+    "sd": 0.441019
+   },
+   "binary": true
+  },
+  {
+   "name": "csection",
+   "normalized": "csection",
+   "dtype": "int64",
+   "n_missing": 0,
+   "n_unique": 2,
+   "stats": {
+    "min": 0.0,
+    "p25": 0.0,
+    "median": 1.0,
+    "p75": 1.0,
+    "max": 1.0,
+    "mean": 0.673267,
+    "sd": 0.470184
+   },
+   "binary": true
+  }
+ ]
+}

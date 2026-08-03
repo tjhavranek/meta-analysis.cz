@@ -1,0 +1,702 @@
+{
+ "project": "reforms",
+ "source_file": "reform.xls",
+ "source_archive": null,
+ "source_sheet": "reform",
+ "n_rows": 456,
+ "n_columns": 42,
+ "columns": [
+  {
+   "name": "obs",
+   "normalized": "obs",
+   "dtype": "int64",
+   "n_missing": 0,
+   "n_unique": 456,
+   "role": "n_obs",
+   "stats": {
+    "min": 1.0,
+    "p25": 114.75,
+    "median": 228.5,
+    "p75": 342.25,
+    "max": 478.0,
+    "mean": 229.333333,
+    "sd": 133.223874
+   }
+  },
+  {
+   "name": "study",
+   "normalized": "study",
+   "dtype": "int64",
+   "n_missing": 0,
+   "n_unique": 60,
+   "stats": {
+    "min": 1.0,
+    "p25": 23.0,
+    "median": 31.0,
+    "p75": 43.25,
+    "max": 69.0,
+    "mean": 33.337719,
+    "sd": 16.592067
+   }
+  },
+  {
+   "name": "rg",
+   "normalized": "rg",
+   "dtype": "str",
+   "n_missing": 315,
+   "n_unique": 3,
+   "top_values": [
+    " ",
+    "0",
+    "1"
+   ]
+  },
+  {
+   "name": "lib",
+   "normalized": "lib",
+   "dtype": "str",
+   "n_missing": 127,
+   "n_unique": 275,
+   "top_values": [
+    " ",
+    "-0.7400000095367432",
+    "4.170000076293945",
+    "-1.6100000143051147",
+    "1.7400000095367432"
+   ]
+  },
+  {
+   "name": "lib_cum",
+   "normalized": "lib_cum",
+   "dtype": "str",
+   "n_missing": 77,
+   "n_unique": 310,
+   "top_values": [
+    " ",
+    "3.0999999046325684",
+    "1.98326414",
+    "1.149999976158142",
+    "0.10000000149011612"
+   ]
+  },
+  {
+   "name": "n",
+   "normalized": "n",
+   "dtype": "int64",
+   "n_missing": 0,
+   "n_unique": 97,
+   "role": "n_obs",
+   "stats": {
+    "min": 21.0,
+    "p25": 81.0,
+    "median": 149.0,
+    "p75": 200.0,
+    "max": 442.0,
+    "mean": 151.912281,
+    "sd": 97.281878
+   }
+  },
+  {
+   "name": "k",
+   "normalized": "k",
+   "dtype": "int64",
+   "n_missing": 0,
+   "n_unique": 41,
+   "stats": {
+    "min": 2.0,
+    "p25": 6.0,
+    "median": 8.0,
+    "p75": 15.25,
+    "max": 58.0,
+    "mean": 13.539474,
+    "sd": 12.334468
+   }
+  },
+  {
+   "name": "df",
+   "normalized": "df",
+   "dtype": "int64",
+   "n_missing": 0,
+   "n_unique": 148,
+   "stats": {
+    "min": 12.0,
+    "p25": 70.0,
+    "median": 137.0,
+    "p75": 188.0,
+    "max": 422.0,
+    "mean": 138.372807,
+    "sd": 92.567749
+   }
+  },
+  {
+   "name": "authaff",
+   "normalized": "authaff",
+   "dtype": "int64",
+   "n_missing": 0,
+   "n_unique": 2,
+   "stats": {
+    "min": 0.0,
+    "p25": 0.0,
+    "median": 1.0,
+    "p75": 1.0,
+    "max": 1.0,
+    "mean": 0.574561,
+    "sd": 0.494952
+   },
+   "binary": true
+  },
+  {
+   "name": "panel",
+   "normalized": "panel",
+   "dtype": "int64",
+   "n_missing": 0,
+   "n_unique": 2,
+   "stats": {
+    "min": 0.0,
+    "p25": 1.0,
+    "median": 1.0,
+    "p75": 1.0,
+    "max": 1.0,
+    "mean": 0.837719,
+    "sd": 0.369113
+   },
+   "binary": true
+  },
+  {
+   "name": "endo",
+   "normalized": "endo",
+   "dtype": "int64",
+   "n_missing": 0,
+   "n_unique": 2,
+   "stats": {
+    "min": 0.0,
+    "p25": 0.0,
+    "median": 0.0,
+    "p75": 1.0,
+    "max": 1.0,
+    "mean": 0.320175,
+    "sd": 0.467056
+   },
+   "binary": true
+  },
+  {
+   "name": "fixed",
+   "normalized": "fixed",
+   "dtype": "int64",
+   "n_missing": 0,
+   "n_unique": 2,
+   "stats": {
+    "min": 0.0,
+    "p25": 0.0,
+    "median": 0.0,
+    "p75": 1.0,
+    "max": 1.0,
+    "mean": 0.282895,
+    "sd": 0.4509
+   },
+   "binary": true
+  },
+  {
+   "name": "start",
+   "normalized": "start",
+   "dtype": "int64",
+   "n_missing": 0,
+   "n_unique": 15,
+   "stats": {
+    "min": 1983.0,
+    "p25": 1990.0,
+    "median": 1991.0,
+    "p75": 1992.0,
+    "max": 2004.0,
+    "mean": 1991.133772,
+    "sd": 2.925763
+   }
+  },
+  {
+   "name": "end",
+   "normalized": "end",
+   "dtype": "int64",
+   "n_missing": 0,
+   "n_unique": 18,
+   "stats": {
+    "min": 1992.0,
+    "p25": 1997.0,
+    "median": 1999.0,
+    "p75": 2003.0,
+    "max": 2009.0,
+    "mean": 1999.846491,
+    "sd": 4.212815
+   }
+  },
+  {
+   "name": "lagdep",
+   "normalized": "lagdep",
+   "dtype": "int64",
+   "n_missing": 0,
+   "n_unique": 2,
+   "stats": {
+    "min": 0.0,
+    "p25": 0.0,
+    "median": 0.0,
+    "p75": 0.0,
+    "max": 1.0,
+    "mean": 0.219298,
+    "sd": 0.414226
+   },
+   "binary": true
+  },
+  {
+   "name": "speed",
+   "normalized": "speed",
+   "dtype": "int64",
+   "n_missing": 0,
+   "n_unique": 2,
+   "stats": {
+    "min": 0.0,
+    "p25": 0.0,
+    "median": 0.0,
+    "p75": 0.0,
+    "max": 1.0,
+    "mean": 0.197368,
+    "sd": 0.39845
+   },
+   "binary": true
+  },
+  {
+   "name": "lags",
+   "normalized": "lags",
+   "dtype": "int64",
+   "n_missing": 0,
+   "n_unique": 2,
+   "stats": {
+    "min": 0.0,
+    "p25": 0.0,
+    "median": 0.0,
+    "p75": 1.0,
+    "max": 1.0,
+    "mean": 0.394737,
+    "sd": 0.489331
+   },
+   "binary": true
+  },
+  {
+   "name": "time",
+   "normalized": "time",
+   "dtype": "int64",
+   "n_missing": 0,
+   "n_unique": 2,
+   "stats": {
+    "min": 0.0,
+    "p25": 0.0,
+    "median": 0.0,
+    "p75": 0.0,
+    "max": 1.0,
+    "mean": 0.195175,
+    "sd": 0.396771
+   },
+   "binary": true
+  },
+  {
+   "name": "wb",
+   "normalized": "wb",
+   "dtype": "int64",
+   "n_missing": 0,
+   "n_unique": 2,
+   "stats": {
+    "min": 0.0,
+    "p25": 0.0,
+    "median": 0.0,
+    "p75": 0.0,
+    "max": 1.0,
+    "mean": 0.247807,
+    "sd": 0.432213
+   },
+   "binary": true
+  },
+  {
+   "name": "ebrd",
+   "normalized": "ebrd",
+   "dtype": "int64",
+   "n_missing": 0,
+   "n_unique": 2,
+   "stats": {
+    "min": 0.0,
+    "p25": 0.0,
+    "median": 1.0,
+    "p75": 1.0,
+    "max": 1.0,
+    "mean": 0.548246,
+    "sd": 0.498214
+   },
+   "binary": true
+  },
+  {
+   "name": "comb",
+   "normalized": "comb",
+   "dtype": "int64",
+   "n_missing": 0,
+   "n_unique": 2,
+   "stats": {
+    "min": 0.0,
+    "p25": 0.0,
+    "median": 0.0,
+    "p75": 0.0,
+    "max": 1.0,
+    "mean": 0.10307,
+    "sd": 0.304384
+   },
+   "binary": true
+  },
+  {
+   "name": "other",
+   "normalized": "other",
+   "dtype": "int64",
+   "n_missing": 0,
+   "n_unique": 2,
+   "stats": {
+    "min": 0.0,
+    "p25": 0.0,
+    "median": 0.0,
+    "p75": 0.0,
+    "max": 1.0,
+    "mean": 0.100877,
+    "sd": 0.301497
+   },
+   "binary": true
+  },
+  {
+   "name": "lii",
+   "normalized": "lii",
+   "dtype": "int64",
+   "n_missing": 0,
+   "n_unique": 2,
+   "stats": {
+    "min": 0.0,
+    "p25": 0.0,
+    "median": 0.0,
+    "p75": 0.0,
+    "max": 1.0,
+    "mean": 0.074561,
+    "sd": 0.262971
+   },
+   "binary": true
+  },
+  {
+   "name": "lie",
+   "normalized": "lie",
+   "dtype": "int64",
+   "n_missing": 0,
+   "n_unique": 2,
+   "stats": {
+    "min": 0.0,
+    "p25": 0.0,
+    "median": 0.0,
+    "p75": 0.0,
+    "max": 1.0,
+    "mean": 0.048246,
+    "sd": 0.21452
+   },
+   "binary": true
+  },
+  {
+   "name": "lip",
+   "normalized": "lip",
+   "dtype": "int64",
+   "n_missing": 0,
+   "n_unique": 2,
+   "stats": {
+    "min": 0.0,
+    "p25": 0.0,
+    "median": 0.0,
+    "p75": 0.0,
+    "max": 1.0,
+    "mean": 0.122807,
+    "sd": 0.328576
+   },
+   "binary": true
+  },
+  {
+   "name": "av",
+   "normalized": "av",
+   "dtype": "int64",
+   "n_missing": 0,
+   "n_unique": 2,
+   "stats": {
+    "min": 0.0,
+    "p25": 0.0,
+    "median": 1.0,
+    "p75": 1.0,
+    "max": 1.0,
+    "mean": 0.653509,
+    "sd": 0.476375
+   },
+   "binary": true
+  },
+  {
+   "name": "cli",
+   "normalized": "cli",
+   "dtype": "int64",
+   "n_missing": 0,
+   "n_unique": 2,
+   "stats": {
+    "min": 0.0,
+    "p25": 0.0,
+    "median": 0.0,
+    "p75": 0.0,
+    "max": 1.0,
+    "mean": 0.059211,
+    "sd": 0.236278
+   },
+   "binary": true
+  },
+  {
+   "name": "margeff",
+   "normalized": "margeff",
+   "dtype": "int64",
+   "n_missing": 0,
+   "n_unique": 2,
+   "stats": {
+    "min": 0.0,
+    "p25": 0.0,
+    "median": 0.0,
+    "p75": 0.0,
+    "max": 1.0,
+    "mean": 0.116228,
+    "sd": 0.32085
+   },
+   "binary": true
+  },
+  {
+   "name": "ic",
+   "normalized": "ic",
+   "dtype": "int64",
+   "n_missing": 0,
+   "n_unique": 2,
+   "stats": {
+    "min": 0.0,
+    "p25": 0.0,
+    "median": 1.0,
+    "p75": 1.0,
+    "max": 1.0,
+    "mean": 0.708333,
+    "sd": 0.455029
+   },
+   "binary": true
+  },
+  {
+   "name": "ic12",
+   "normalized": "ic12",
+   "dtype": "int64",
+   "n_missing": 0,
+   "n_unique": 2,
+   "stats": {
+    "min": 0.0,
+    "p25": 0.0,
+    "median": 0.0,
+    "p75": 0.0,
+    "max": 1.0,
+    "mean": 0.177632,
+    "sd": 0.382622
+   },
+   "binary": true
+  },
+  {
+   "name": "nic",
+   "normalized": "nic",
+   "dtype": "int64",
+   "n_missing": 0,
+   "n_unique": 9,
+   "stats": {
+    "min": 0.0,
+    "p25": 0.0,
+    "median": 1.0,
+    "p75": 2.0,
+    "max": 9.0,
+    "mean": 1.557018,
+    "sd": 1.750678
+   }
+  },
+  {
+   "name": "stabil",
+   "normalized": "stabil",
+   "dtype": "int64",
+   "n_missing": 0,
+   "n_unique": 2,
+   "stats": {
+    "min": 0.0,
+    "p25": 1.0,
+    "median": 1.0,
+    "p75": 1.0,
+    "max": 1.0,
+    "mean": 0.791667,
+    "sd": 0.406562
+   },
+   "binary": true
+  },
+  {
+   "name": "nstab",
+   "normalized": "nstab",
+   "dtype": "int64",
+   "n_missing": 0,
+   "n_unique": 5,
+   "stats": {
+    "min": 0.0,
+    "p25": 1.0,
+    "median": 1.0,
+    "p75": 2.0,
+    "max": 4.0,
+    "mean": 1.285088,
+    "sd": 0.995527
+   }
+  },
+  {
+   "name": "infl",
+   "normalized": "infl",
+   "dtype": "int64",
+   "n_missing": 0,
+   "n_unique": 2,
+   "stats": {
+    "min": 0.0,
+    "p25": 0.0,
+    "median": 1.0,
+    "p75": 1.0,
+    "max": 1.0,
+    "mean": 0.690789,
+    "sd": 0.462676
+   },
+   "binary": true
+  },
+  {
+   "name": "inst",
+   "normalized": "inst",
+   "dtype": "int64",
+   "n_missing": 0,
+   "n_unique": 2,
+   "stats": {
+    "min": 0.0,
+    "p25": 0.0,
+    "median": 0.0,
+    "p75": 0.0,
+    "max": 1.0,
+    "mean": 0.230263,
+    "sd": 0.421464
+   },
+   "binary": true
+  },
+  {
+   "name": "ninst",
+   "normalized": "ninst",
+   "dtype": "int64",
+   "n_missing": 0,
+   "n_unique": 6,
+   "stats": {
+    "min": 0.0,
+    "p25": 0.0,
+    "median": 0.0,
+    "p75": 0.0,
+    "max": 5.0,
+    "mean": 0.33114,
+    "sd": 0.748622
+   }
+  },
+  {
+   "name": "fact",
+   "normalized": "fact",
+   "dtype": "int64",
+   "n_missing": 0,
+   "n_unique": 2,
+   "stats": {
+    "min": 0.0,
+    "p25": 0.0,
+    "median": 0.0,
+    "p75": 1.0,
+    "max": 1.0,
+    "mean": 0.29386,
+    "sd": 0.456029
+   },
+   "binary": true
+  },
+  {
+   "name": "nfact",
+   "normalized": "nfact",
+   "dtype": "int64",
+   "n_missing": 0,
+   "n_unique": 3,
+   "stats": {
+    "min": 0.0,
+    "p25": 0.0,
+    "median": 0.0,
+    "p75": 1.0,
+    "max": 2.0,
+    "mean": 0.324561,
+    "sd": 0.530322
+   }
+  },
+  {
+   "name": "pubpr",
+   "normalized": "pubpr",
+   "dtype": "int64",
+   "n_missing": 0,
+   "n_unique": 2,
+   "stats": {
+    "min": 0.0,
+    "p25": 0.0,
+    "median": 0.0,
+    "p75": 0.0,
+    "max": 1.0,
+    "mean": 0.074561,
+    "sd": 0.262971
+   },
+   "binary": true
+  },
+  {
+   "name": "journal",
+   "normalized": "journal",
+   "dtype": "int64",
+   "n_missing": 0,
+   "n_unique": 2,
+   "stats": {
+    "min": 0.0,
+    "p25": 0.0,
+    "median": 1.0,
+    "p75": 1.0,
+    "max": 1.0,
+    "mean": 0.548246,
+    "sd": 0.498214
+   },
+   "binary": true
+  },
+  {
+   "name": "lgoog_pa",
+   "normalized": "lgoog_pa",
+   "dtype": "float64",
+   "n_missing": 0,
+   "n_unique": 53,
+   "stats": {
+    "min": 0.0,
+    "p25": 0.847298,
+    "median": 1.475906,
+    "p75": 2.788093,
+    "max": 3.732365,
+    "mean": 1.681624,
+    "sd": 1.09988
+   }
+  },
+  {
+   "name": "lgoog_tot",
+   "normalized": "lgoog_tot",
+   "dtype": "float64",
+   "n_missing": 0,
+   "n_unique": 48,
+   "stats": {
+    "min": 0.0,
+    "p25": 2.079442,
+    "median": 3.188364,
+    "p75": 4.905275,
+    "max": 6.079933,
+    "mean": 3.135628,
+    "sd": 1.752714
+   }
+  }
+ ]
+}

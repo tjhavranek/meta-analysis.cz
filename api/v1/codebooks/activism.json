@@ -1,0 +1,2581 @@
+{
+ "project": "activism",
+ "source_file": "activism.xlsx",
+ "source_archive": null,
+ "source_sheet": "Data",
+ "n_rows": 1974,
+ "n_columns": 159,
+ "columns": [
+  {
+   "name": "ArticleNo",
+   "normalized": "articleno",
+   "dtype": "float64",
+   "n_missing": 1,
+   "n_unique": 67,
+   "stats": {
+    "min": 1.0,
+    "p25": 19.0,
+    "median": 34.0,
+    "p75": 47.0,
+    "max": 67.0,
+    "mean": 33.805373,
+    "sd": 18.103815
+   }
+  },
+  {
+   "name": "Relevant?",
+   "normalized": "relevant",
+   "dtype": "str",
+   "n_missing": 0,
+   "n_unique": 3,
+   "top_values": [
+    "Odhad",
+    "Rovnice",
+    "Delete"
+   ]
+  },
+  {
+   "name": "Strong dummy",
+   "normalized": "strong_dummy",
+   "dtype": "float64",
+   "n_missing": 1,
+   "n_unique": 2,
+   "stats": {
+    "min": 0.0,
+    "p25": 0.0,
+    "median": 0.0,
+    "p75": 0.0,
+    "max": 1.0,
+    "mean": 0.081602,
+    "sd": 0.273826
+   },
+   "binary": true
+  },
+  {
+   "name": "Unsure_int",
+   "normalized": "unsure_int",
+   "dtype": "float64",
+   "n_missing": 1,
+   "n_unique": 2,
+   "stats": {
+    "min": 0.0,
+    "p25": 0.0,
+    "median": 0.0,
+    "p75": 0.0,
+    "max": 1.0,
+    "mean": 0.053725,
+    "sd": 0.225532
+   },
+   "binary": true
+  },
+  {
+   "name": "Sure",
+   "normalized": "sure",
+   "dtype": "float64",
+   "n_missing": 1,
+   "n_unique": 2,
+   "stats": {
+    "min": 0.0,
+    "p25": 1.0,
+    "median": 1.0,
+    "p75": 1.0,
+    "max": 1.0,
+    "mean": 0.946275,
+    "sd": 0.225532
+   },
+   "binary": true
+  },
+  {
+   "name": "Authors",
+   "normalized": "authors",
+   "dtype": "str",
+   "n_missing": 0,
+   "n_unique": 63,
+   "top_values": [
+    "Weber, Zimmermann",
+    "Greenwood, Schor",
+    "Becht et al",
+    "Nelson",
+    "English et al"
+   ]
+  },
+  {
+   "name": "PubYear",
+   "normalized": "pubyear",
+   "dtype": "float64",
+   "n_missing": 1,
+   "n_unique": 29,
+   "role": "pub_year",
+   "stats": {
+    "min": 1983.0,
+    "p25": 2004.0,
+    "median": 2010.0,
+    "p75": 2014.0,
+    "max": 2020.0,
+    "mean": 2008.254435,
+    "sd": 8.342269
+   }
+  },
+  {
+   "name": "Title",
+   "normalized": "title",
+   "dtype": "str",
+   "n_missing": 0,
+   "n_unique": 68,
+   "top_values": [
+    "Hedge Fund Activism and Information Disclosure: the Case of Germany",
+    "Investor activism and takeovers",
+    "The CalPERS effect revisited again",
+    "The \u2018\u2018CalPERS effect\u2019\u2019 revisited",
+    "Returns to Hedge Fund Activism: An International Study"
+   ]
+  },
+  {
+   "name": "Pblshd?",
+   "normalized": "pblshd",
+   "dtype": "float64",
+   "n_missing": 1,
+   "n_unique": 1,
+   "stats": {
+    "min": 1.0,
+    "p25": 1.0,
+    "median": 1.0,
+    "p75": 1.0,
+    "max": 1.0,
+    "mean": 1.0,
+    "sd": 0.0
+   },
+   "binary": true
+  },
+  {
+   "name": "Publication series name (text)",
+   "normalized": "publication_series_name_text",
+   "dtype": "str",
+   "n_missing": 0,
+   "n_unique": 36,
+   "top_values": [
+    "Journal of Financial Economics",
+    "Journal of Corporate Finance",
+    "European Financial Management",
+    "The Review of Financial Studies",
+    "The Journal of Finance"
+   ]
+  },
+  {
+   "name": "Estimate",
+   "normalized": "estimate",
+   "dtype": "float64",
+   "n_missing": 4,
+   "n_unique": 1060,
+   "role": "effect_estimate",
+   "stats": {
+    "min": -5.45,
+    "p25": -0.00885,
+    "median": 0.15,
+    "p75": 1.6775,
+    "max": 51.7,
+    "mean": 1.377667,
+    "sd": 3.200096
+   }
+  },
+  {
+   "name": "SE",
+   "normalized": "se",
+   "dtype": "float64",
+   "n_missing": 1790,
+   "n_unique": 137,
+   "stats": {
+    "min": 0.000924,
+    "p25": 0.01,
+    "median": 0.078209,
+    "p75": 1.9925,
+    "max": 25.1,
+    "mean": 1.697897,
+    "sd": 3.329802
+   }
+  },
+  {
+   "name": "t-stats",
+   "normalized": "t_stats",
+   "dtype": "float64",
+   "n_missing": 704,
+   "n_unique": 685,
+   "role": "t_stat",
+   "stats": {
+    "min": -8.06,
+    "p25": 0.0,
+    "median": 1.06,
+    "p75": 2.1275,
+    "max": 112.0,
+    "mean": 1.2466,
+    "sd": 3.630407
+   }
+  },
+  {
+   "name": "z-stats",
+   "normalized": "z_stats",
+   "dtype": "float64",
+   "n_missing": 1580,
+   "n_unique": 326,
+   "stats": {
+    "min": -7.56,
+    "p25": -0.8,
+    "median": 0.605,
+    "p75": 2.2,
+    "max": 11.6,
+    "mean": 1.08874,
+    "sd": 2.883589
+   }
+  },
+  {
+   "name": "p-value",
+   "normalized": "p_value",
+   "dtype": "float64",
+   "n_missing": 1813,
+   "n_unique": 122,
+   "stats": {
+    "min": 0.0,
+    "p25": 0.0037,
+    "median": 0.133,
+    "p75": 0.5727,
+    "max": 0.993,
+    "mean": 0.289401,
+    "sd": 0.320542
+   }
+  },
+  {
+   "name": "EstimPage",
+   "normalized": "estimpage",
+   "dtype": "float64",
+   "n_missing": 1,
+   "n_unique": 36,
+   "stats": {
+    "min": 4.0,
+    "p25": 13.0,
+    "median": 17.0,
+    "p75": 22.0,
+    "max": 45.0,
+    "mean": 17.718196,
+    "sd": 7.229199
+   }
+  },
+  {
+   "name": "Estimate.1",
+   "normalized": "estimate_1",
+   "dtype": "float64",
+   "n_missing": 1,
+   "n_unique": 1064,
+   "stats": {
+    "min": -24.0,
+    "p25": -0.01,
+    "median": 0.22,
+    "p75": 1.85,
+    "max": 51.7,
+    "mean": 1.3992,
+    "sd": 3.378896
+   }
+  },
+  {
+   "name": "SE.1",
+   "normalized": "se_1",
+   "dtype": "float64",
+   "n_missing": 1676,
+   "n_unique": 252,
+   "stats": {
+    "min": 0.000924,
+    "p25": 0.29054,
+    "median": 0.873016,
+    "p75": 2.242297,
+    "max": 100.0,
+    "mean": 2.129362,
+    "sd": 6.367211
+   }
+  },
+  {
+   "name": "t-stats.1",
+   "normalized": "t_stats_1",
+   "dtype": "float64",
+   "n_missing": 815,
+   "n_unique": 659,
+   "role": "t_stat",
+   "stats": {
+    "min": -8.06,
+    "p25": 0.02,
+    "median": 1.16,
+    "p75": 2.225,
+    "max": 112.0,
+    "mean": 1.324355,
+    "sd": 3.771365
+   }
+  },
+  {
+   "name": "z-stats.1",
+   "normalized": "z_stats_1",
+   "dtype": "float64",
+   "n_missing": 1580,
+   "n_unique": 326,
+   "stats": {
+    "min": -7.56,
+    "p25": -0.8,
+    "median": 0.605,
+    "p75": 2.2,
+    "max": 11.6,
+    "mean": 1.08874,
+    "sd": 2.883589
+   }
+  },
+  {
+   "name": "p-value.1",
+   "normalized": "p_value_1",
+   "dtype": "float64",
+   "n_missing": 1852,
+   "n_unique": 87,
+   "stats": {
+    "min": 0.0,
+    "p25": 0.00055,
+    "median": 0.1011,
+    "p75": 0.500275,
+    "max": 0.9761,
+    "mean": 0.261226,
+    "sd": 0.310988
+   }
+  },
+  {
+   "name": "Effect on DV + page (text)",
+   "normalized": "effect_on_dv_page_text",
+   "dtype": "str",
+   "n_missing": 23,
+   "n_unique": 79,
+   "top_values": [
+    "p13: from table in %",
+    "p7+8: Events that result in a spinoff earn significantly positive announcement returns\nof 6.4%.",
+    "p7: The results presented in panel A of Table 3 are consistent with those of Wahal (1996), with a significant CAR of 1.72% over the ( 1, +5) window for all CalPERS targetings.",
+    "p11: CalPERS\u2019 targeting, including repeat targets (full sample), is associated with a positive, statistically significant abnormal return of 0.95% and 0.98% during the event windows of ( 1,1) and (0,1) using the equal-weighted CRSP index.",
+    "p16: In panel A, for the aggregate sample, average abnormal returns are 6.4% for the (\u221220, 20) window, and 6.1% for the (\u221210,10) window, significantly different from zero at the 1% level"
+   ]
+  },
+  {
+   "name": "Shock/change in IV + page (text)",
+   "normalized": "shock_change_in_iv_page_text",
+   "dtype": "str",
+   "n_missing": 1969,
+   "n_unique": 2,
+   "top_values": [
+    "je v procentech",
+    "Delete"
+   ]
+  },
+  {
+   "name": "EstimPreference",
+   "normalized": "estimpreference",
+   "dtype": "str",
+   "n_missing": 1955,
+   "n_unique": 2,
+   "top_values": [
+    "robustness",
+    "Delete"
+   ]
+  },
+  {
+   "name": "Multiplicator to obtain estimates in points (number)",
+   "normalized": "multiplicator_to_obtain_estimates_in_points_number",
+   "dtype": "float64",
+   "n_missing": 1,
+   "n_unique": 2,
+   "stats": {
+    "min": 0.01,
+    "p25": 0.01,
+    "median": 0.01,
+    "p75": 0.01,
+    "max": 1.0,
+    "mean": 0.254866,
+    "sd": 0.427259
+   }
+  },
+  {
+   "name": "Unnamed: 25",
+   "normalized": "unnamed_25",
+   "dtype": "float64",
+   "n_missing": 1,
+   "n_unique": 990,
+   "stats": {
+    "min": -24.0,
+    "p25": -0.119,
+    "median": 0.5,
+    "p75": 2.32,
+    "max": 51.7,
+    "mean": 1.523558,
+    "sd": 3.511955
+   }
+  },
+  {
+   "name": "Unnamed: 26",
+   "normalized": "unnamed_26",
+   "dtype": "float64",
+   "n_missing": 123,
+   "n_unique": 1649,
+   "stats": {
+    "min": 0.000282,
+    "p25": 0.447972,
+    "median": 0.831776,
+    "p75": 1.643961,
+    "max": 325.0,
+    "mean": 1.864093,
+    "sd": 10.970704
+   }
+  },
+  {
+   "name": "lagged (t-1)",
+   "normalized": "lagged_t_1",
+   "dtype": "float64",
+   "n_missing": 1,
+   "n_unique": 2,
+   "stats": {
+    "min": 0.0,
+    "p25": 0.0,
+    "median": 0.0,
+    "p75": 0.0,
+    "max": 1.0,
+    "mean": 0.009123,
+    "sd": 0.095103
+   },
+   "binary": true
+  },
+  {
+   "name": "lagged (t-x)?",
+   "normalized": "lagged_t_x",
+   "dtype": "float64",
+   "n_missing": 1,
+   "n_unique": 1,
+   "stats": {
+    "min": 0.0,
+    "p25": 0.0,
+    "median": 0.0,
+    "p75": 0.0,
+    "max": 0.0,
+    "mean": 0.0,
+    "sd": 0.0
+   },
+   "binary": true
+  },
+  {
+   "name": "Event window start",
+   "normalized": "event_window_start",
+   "dtype": "float64",
+   "n_missing": 1,
+   "n_unique": 24,
+   "stats": {
+    "min": -20.0,
+    "p25": -7.0,
+    "median": -1.0,
+    "p75": -1.0,
+    "max": 10.0,
+    "mean": -4.016219,
+    "sd": 5.966161
+   }
+  },
+  {
+   "name": "Event window end",
+   "normalized": "event_window_end",
+   "dtype": "float64",
+   "n_missing": 1,
+   "n_unique": 23,
+   "stats": {
+    "min": -10.0,
+    "p25": 0.0,
+    "median": 1.0,
+    "p75": 5.0,
+    "max": 20.0,
+    "mean": 3.251901,
+    "sd": 5.809947
+   }
+  },
+  {
+   "name": "Length of the CAR period",
+   "normalized": "length_of_the_car_period",
+   "dtype": "float64",
+   "n_missing": 1,
+   "n_unique": 23,
+   "stats": {
+    "min": 1.0,
+    "p25": 2.0,
+    "median": 5.0,
+    "p75": 11.0,
+    "max": 41.0,
+    "mean": 8.280791,
+    "sd": 9.660737
+   }
+  },
+  {
+   "name": "day average",
+   "normalized": "day_average",
+   "dtype": "str",
+   "n_missing": 1962,
+   "n_unique": 2,
+   "top_values": [
+    "22",
+    "Delete"
+   ]
+  },
+  {
+   "name": "months (0/1)",
+   "normalized": "months_0_1",
+   "dtype": "float64",
+   "n_missing": 1,
+   "n_unique": 2,
+   "stats": {
+    "min": 0.0,
+    "p25": 0.0,
+    "median": 0.0,
+    "p75": 0.0,
+    "max": 1.0,
+    "mean": 0.026863,
+    "sd": 0.161723
+   },
+   "binary": true
+  },
+  {
+   "name": "Event Start",
+   "normalized": "event_start",
+   "dtype": "float64",
+   "n_missing": 1,
+   "n_unique": 26,
+   "stats": {
+    "min": -21.0,
+    "p25": -7.0,
+    "median": -1.0,
+    "p75": -1.0,
+    "max": 21.0,
+    "mean": -4.158135,
+    "sd": 6.236737
+   }
+  },
+  {
+   "name": "Event End",
+   "normalized": "event_end",
+   "dtype": "float64",
+   "n_missing": 1,
+   "n_unique": 24,
+   "stats": {
+    "min": -10.0,
+    "p25": 0.0,
+    "median": 1.0,
+    "p75": 5.0,
+    "max": 21.0,
+    "mean": 3.57628,
+    "sd": 6.219276
+   }
+  },
+  {
+   "name": "Event_symmetry",
+   "normalized": "event_symmetry",
+   "dtype": "float64",
+   "n_missing": 1,
+   "n_unique": 2,
+   "stats": {
+    "min": 0.0,
+    "p25": 0.0,
+    "median": 1.0,
+    "p75": 1.0,
+    "max": 1.0,
+    "mean": 0.501774,
+    "sd": 0.500124
+   },
+   "binary": true
+  },
+  {
+   "name": "Event_start_end_adj",
+   "normalized": "event_start_end_adj",
+   "dtype": "float64",
+   "n_missing": 1,
+   "n_unique": 25,
+   "stats": {
+    "min": -10.0,
+    "p25": 1.0,
+    "median": 2.0,
+    "p75": 10.0,
+    "max": 21.0,
+    "mean": 5.594019,
+    "sd": 6.753176
+   }
+  },
+  {
+   "name": "Event Length",
+   "normalized": "event_length",
+   "dtype": "float64",
+   "n_missing": 1,
+   "n_unique": 25,
+   "stats": {
+    "min": 1.0,
+    "p25": 2.0,
+    "median": 5.0,
+    "p75": 11.0,
+    "max": 63.0,
+    "mean": 8.939686,
+    "sd": 10.135487
+   }
+  },
+  {
+   "name": "0_0",
+   "normalized": "0_0",
+   "dtype": "float64",
+   "n_missing": 1,
+   "n_unique": 2,
+   "stats": {
+    "min": 0.0,
+    "p25": 0.0,
+    "median": 0.0,
+    "p75": 0.0,
+    "max": 1.0,
+    "mean": 0.080588,
+    "sd": 0.27227
+   },
+   "binary": true
+  },
+  {
+   "name": "-1_0",
+   "normalized": "1_0",
+   "dtype": "float64",
+   "n_missing": 1,
+   "n_unique": 2,
+   "stats": {
+    "min": 0.0,
+    "p25": 0.0,
+    "median": 0.0,
+    "p75": 0.0,
+    "max": 1.0,
+    "mean": 0.121642,
+    "sd": 0.326955
+   },
+   "binary": true
+  },
+  {
+   "name": "0_1",
+   "normalized": "0_1",
+   "dtype": "float64",
+   "n_missing": 1,
+   "n_unique": 2,
+   "stats": {
+    "min": 0.0,
+    "p25": 0.0,
+    "median": 0.0,
+    "p75": 0.0,
+    "max": 1.0,
+    "mean": 0.041054,
+    "sd": 0.198466
+   },
+   "binary": true
+  },
+  {
+   "name": "-1_1",
+   "normalized": "1_1",
+   "dtype": "float64",
+   "n_missing": 1,
+   "n_unique": 2,
+   "stats": {
+    "min": 0.0,
+    "p25": 0.0,
+    "median": 0.0,
+    "p75": 0.0,
+    "max": 1.0,
+    "mean": 0.152053,
+    "sd": 0.359163
+   },
+   "binary": true
+  },
+  {
+   "name": "-3_0",
+   "normalized": "3_0",
+   "dtype": "float64",
+   "n_missing": 1,
+   "n_unique": 2,
+   "stats": {
+    "min": 0.0,
+    "p25": 0.0,
+    "median": 0.0,
+    "p75": 0.0,
+    "max": 1.0,
+    "mean": 0.015712,
+    "sd": 0.124391
+   },
+   "binary": true
+  },
+  {
+   "name": "0_3",
+   "normalized": "0_3",
+   "dtype": "float64",
+   "n_missing": 1,
+   "n_unique": 2,
+   "stats": {
+    "min": 0.0,
+    "p25": 0.0,
+    "median": 0.0,
+    "p75": 0.0,
+    "max": 1.0,
+    "mean": 0.020274,
+    "sd": 0.140971
+   },
+   "binary": true
+  },
+  {
+   "name": "-3_3",
+   "normalized": "3_3",
+   "dtype": "float64",
+   "n_missing": 1,
+   "n_unique": 2,
+   "stats": {
+    "min": 0.0,
+    "p25": 0.0,
+    "median": 0.0,
+    "p75": 0.0,
+    "max": 1.0,
+    "mean": 0.066903,
+    "sd": 0.249918
+   },
+   "binary": true
+  },
+  {
+   "name": "-7_0",
+   "normalized": "7_0",
+   "dtype": "float64",
+   "n_missing": 1,
+   "n_unique": 2,
+   "stats": {
+    "min": 0.0,
+    "p25": 0.0,
+    "median": 0.0,
+    "p75": 0.0,
+    "max": 1.0,
+    "mean": 0.011151,
+    "sd": 0.105032
+   },
+   "binary": true
+  },
+  {
+   "name": "0_7",
+   "normalized": "0_7",
+   "dtype": "float64",
+   "n_missing": 1,
+   "n_unique": 2,
+   "stats": {
+    "min": 0.0,
+    "p25": 0.0,
+    "median": 0.0,
+    "p75": 0.0,
+    "max": 1.0,
+    "mean": 0.024835,
+    "sd": 0.155662
+   },
+   "binary": true
+  },
+  {
+   "name": "-7_7",
+   "normalized": "7_7",
+   "dtype": "float64",
+   "n_missing": 1,
+   "n_unique": 2,
+   "stats": {
+    "min": 0.0,
+    "p25": 0.0,
+    "median": 0.0,
+    "p75": 0.0,
+    "max": 1.0,
+    "mean": 0.113026,
+    "sd": 0.316705
+   },
+   "binary": true
+  },
+  {
+   "name": "-14_0",
+   "normalized": "14_0",
+   "dtype": "float64",
+   "n_missing": 1,
+   "n_unique": 2,
+   "stats": {
+    "min": 0.0,
+    "p25": 0.0,
+    "median": 0.0,
+    "p75": 0.0,
+    "max": 1.0,
+    "mean": 0.08515,
+    "sd": 0.279175
+   },
+   "binary": true
+  },
+  {
+   "name": "0_14",
+   "normalized": "0_14",
+   "dtype": "float64",
+   "n_missing": 1,
+   "n_unique": 2,
+   "stats": {
+    "min": 0.0,
+    "p25": 0.0,
+    "median": 0.0,
+    "p75": 0.0,
+    "max": 1.0,
+    "mean": 0.026863,
+    "sd": 0.161723
+   },
+   "binary": true
+  },
+  {
+   "name": "-14_14",
+   "normalized": "14_14",
+   "dtype": "float64",
+   "n_missing": 1,
+   "n_unique": 2,
+   "stats": {
+    "min": 0.0,
+    "p25": 0.0,
+    "median": 0.0,
+    "p75": 0.0,
+    "max": 1.0,
+    "mean": 0.104916,
+    "sd": 0.306523
+   },
+   "binary": true
+  },
+  {
+   "name": "-30_0",
+   "normalized": "30_0",
+   "dtype": "float64",
+   "n_missing": 1,
+   "n_unique": 2,
+   "stats": {
+    "min": 0.0,
+    "p25": 0.0,
+    "median": 0.0,
+    "p75": 0.0,
+    "max": 1.0,
+    "mean": 0.00963,
+    "sd": 0.097684
+   },
+   "binary": true
+  },
+  {
+   "name": "0_30",
+   "normalized": "0_30",
+   "dtype": "float64",
+   "n_missing": 1,
+   "n_unique": 2,
+   "stats": {
+    "min": 0.0,
+    "p25": 0.0,
+    "median": 0.0,
+    "p75": 0.0,
+    "max": 1.0,
+    "mean": 0.033958,
+    "sd": 0.181168
+   },
+   "binary": true
+  },
+  {
+   "name": "-30_30",
+   "normalized": "30_30",
+   "dtype": "float64",
+   "n_missing": 1,
+   "n_unique": 2,
+   "stats": {
+    "min": 0.0,
+    "p25": 0.0,
+    "median": 0.0,
+    "p75": 0.0,
+    "max": 1.0,
+    "mean": 0.092245,
+    "sd": 0.289445
+   },
+   "binary": true
+  },
+  {
+   "name": "Type of event",
+   "normalized": "type_of_event",
+   "dtype": "str",
+   "n_missing": 0,
+   "n_unique": 119,
+   "top_values": [
+    "p6: Filling date",
+    "p8: The \u2018Publication Date\u2019 (PD) is the date where the target company announces the information to the public.",
+    "p1: announcement of the target list in the Wall Street Journal",
+    "p25: the earliest announcement date of the outcome",
+    "p8: only the initial date of MSWG intervention in that year has been taken - sending a letter (7)"
+   ]
+  },
+  {
+   "name": "Whatever comes first",
+   "normalized": "whatever_comes_first",
+   "dtype": "float64",
+   "n_missing": 1,
+   "n_unique": 2,
+   "stats": {
+    "min": 0.0,
+    "p25": 0.0,
+    "median": 0.0,
+    "p75": 1.0,
+    "max": 1.0,
+    "mean": 0.308667,
+    "sd": 0.46206
+   },
+   "binary": true
+  },
+  {
+   "name": "Initial press annoucement",
+   "normalized": "initial_press_annoucement",
+   "dtype": "float64",
+   "n_missing": 1,
+   "n_unique": 2,
+   "stats": {
+    "min": 0.0,
+    "p25": 0.0,
+    "median": 0.0,
+    "p75": 0.0,
+    "max": 1.0,
+    "mean": 0.130765,
+    "sd": 0.337229
+   },
+   "binary": true
+  },
+  {
+   "name": "Proxy mailing date",
+   "normalized": "proxy_mailing_date",
+   "dtype": "float64",
+   "n_missing": 1,
+   "n_unique": 2,
+   "stats": {
+    "min": 0.0,
+    "p25": 0.0,
+    "median": 0.0,
+    "p75": 0.0,
+    "max": 1.0,
+    "mean": 0.067917,
+    "sd": 0.251667
+   },
+   "binary": true
+  },
+  {
+   "name": "Shareholder meeting date",
+   "normalized": "shareholder_meeting_date",
+   "dtype": "float64",
+   "n_missing": 1,
+   "n_unique": 2,
+   "stats": {
+    "min": 0.0,
+    "p25": 0.0,
+    "median": 0.0,
+    "p75": 0.0,
+    "max": 1.0,
+    "mean": 0.094273,
+    "sd": 0.292282
+   },
+   "binary": true
+  },
+  {
+   "name": "13D/13G filing",
+   "normalized": "13d_13g_filing",
+   "dtype": "float64",
+   "n_missing": 1,
+   "n_unique": 2,
+   "stats": {
+    "min": 0.0,
+    "p25": 0.0,
+    "median": 0.0,
+    "p75": 0.0,
+    "max": 1.0,
+    "mean": 0.152053,
+    "sd": 0.359163
+   },
+   "binary": true
+  },
+  {
+   "name": "Decision",
+   "normalized": "decision",
+   "dtype": "float64",
+   "n_missing": 1,
+   "n_unique": 2,
+   "stats": {
+    "min": 0.0,
+    "p25": 0.0,
+    "median": 0.0,
+    "p75": 0.0,
+    "max": 1.0,
+    "mean": 0.115053,
+    "sd": 0.319167
+   },
+   "binary": true
+  },
+  {
+   "name": "Focus List",
+   "normalized": "focus_list",
+   "dtype": "float64",
+   "n_missing": 1,
+   "n_unique": 2,
+   "stats": {
+    "min": 0.0,
+    "p25": 0.0,
+    "median": 0.0,
+    "p75": 0.0,
+    "max": 1.0,
+    "mean": 0.018246,
+    "sd": 0.133875
+   },
+   "binary": true
+  },
+  {
+   "name": "LetterDay",
+   "normalized": "letterday",
+   "dtype": "float64",
+   "n_missing": 1,
+   "n_unique": 2,
+   "stats": {
+    "min": 0.0,
+    "p25": 0.0,
+    "median": 0.0,
+    "p75": 0.0,
+    "max": 1.0,
+    "mean": 0.055246,
+    "sd": 0.228517
+   },
+   "binary": true
+  },
+  {
+   "name": "ThresholdReach",
+   "normalized": "thresholdreach",
+   "dtype": "float64",
+   "n_missing": 1,
+   "n_unique": 2,
+   "stats": {
+    "min": 0.0,
+    "p25": 0.0,
+    "median": 0.0,
+    "p75": 0.0,
+    "max": 1.0,
+    "mean": 0.05778,
+    "sd": 0.233386
+   },
+   "binary": true
+  },
+  {
+   "name": "Objective",
+   "normalized": "objective",
+   "dtype": "str",
+   "n_missing": 375,
+   "n_unique": 189,
+   "top_values": [
+    "p2: performance and overall governance practices",
+    "p4: performance and governance",
+    "p27: German supervisory board appointment; p29: no takeover, no merger",
+    "p13: board contests in which the dissident was seeking one or more board seats",
+    "p4: board seats"
+   ]
+  },
+  {
+   "name": "All",
+   "normalized": "all",
+   "dtype": "float64",
+   "n_missing": 1,
+   "n_unique": 2,
+   "stats": {
+    "min": 0.0,
+    "p25": 0.0,
+    "median": 0.0,
+    "p75": 1.0,
+    "max": 1.0,
+    "mean": 0.31779,
+    "sd": 0.465735
+   },
+   "binary": true
+  },
+  {
+   "name": "General undervaluation",
+   "normalized": "general_undervaluation",
+   "dtype": "float64",
+   "n_missing": 1,
+   "n_unique": 2,
+   "stats": {
+    "min": 0.0,
+    "p25": 0.0,
+    "median": 0.0,
+    "p75": 0.0,
+    "max": 1.0,
+    "mean": 0.022808,
+    "sd": 0.149329
+   },
+   "binary": true
+  },
+  {
+   "name": "Performance + governance",
+   "normalized": "performance_governance",
+   "dtype": "float64",
+   "n_missing": 1,
+   "n_unique": 2,
+   "stats": {
+    "min": 0.0,
+    "p25": 0.0,
+    "median": 0.0,
+    "p75": 0.0,
+    "max": 1.0,
+    "mean": 0.117081,
+    "sd": 0.321598
+   },
+   "binary": true
+  },
+  {
+   "name": "Governance - general",
+   "normalized": "governance_general",
+   "dtype": "float64",
+   "n_missing": 1,
+   "n_unique": 2,
+   "stats": {
+    "min": 0.0,
+    "p25": 0.0,
+    "median": 0.0,
+    "p75": 0.0,
+    "max": 1.0,
+    "mean": 0.117587,
+    "sd": 0.322201
+   },
+   "binary": true
+  },
+  {
+   "name": "Governance - seats",
+   "normalized": "governance_seats",
+   "dtype": "float64",
+   "n_missing": 1,
+   "n_unique": 2,
+   "stats": {
+    "min": 0.0,
+    "p25": 0.0,
+    "median": 0.0,
+    "p75": 0.0,
+    "max": 1.0,
+    "mean": 0.182463,
+    "sd": 0.386324
+   },
+   "binary": true
+  },
+  {
+   "name": "Governance - rescind",
+   "normalized": "governance_rescind",
+   "dtype": "float64",
+   "n_missing": 1,
+   "n_unique": 2,
+   "stats": {
+    "min": 0.0,
+    "p25": 0.0,
+    "median": 0.0,
+    "p75": 0.0,
+    "max": 1.0,
+    "mean": 0.032945,
+    "sd": 0.178537
+   },
+   "binary": true
+  },
+  {
+   "name": "Governance - renumeration",
+   "normalized": "governance_renumeration",
+   "dtype": "float64",
+   "n_missing": 1,
+   "n_unique": 2,
+   "stats": {
+    "min": 0.0,
+    "p25": 0.0,
+    "median": 0.0,
+    "p75": 0.0,
+    "max": 1.0,
+    "mean": 0.059301,
+    "sd": 0.236246
+   },
+   "binary": true
+  },
+  {
+   "name": "Governance - voting",
+   "normalized": "governance_voting",
+   "dtype": "float64",
+   "n_missing": 1,
+   "n_unique": 2,
+   "stats": {
+    "min": 0.0,
+    "p25": 0.0,
+    "median": 0.0,
+    "p75": 0.0,
+    "max": 1.0,
+    "mean": 0.010644,
+    "sd": 0.102644
+   },
+   "binary": true
+  },
+  {
+   "name": "Governance - other",
+   "normalized": "governance_other",
+   "dtype": "float64",
+   "n_missing": 1,
+   "n_unique": 2,
+   "stats": {
+    "min": 0.0,
+    "p25": 0.0,
+    "median": 0.0,
+    "p75": 0.0,
+    "max": 1.0,
+    "mean": 0.021287,
+    "sd": 0.144377
+   },
+   "binary": true
+  },
+  {
+   "name": "Capital Structure",
+   "normalized": "capital_structure",
+   "dtype": "float64",
+   "n_missing": 1,
+   "n_unique": 2,
+   "stats": {
+    "min": 0.0,
+    "p25": 0.0,
+    "median": 0.0,
+    "p75": 0.0,
+    "max": 1.0,
+    "mean": 0.022301,
+    "sd": 0.147698
+   },
+   "binary": true
+  },
+  {
+   "name": "Business Strategy",
+   "normalized": "business_strategy",
+   "dtype": "float64",
+   "n_missing": 1,
+   "n_unique": 2,
+   "stats": {
+    "min": 0.0,
+    "p25": 0.0,
+    "median": 0.0,
+    "p75": 0.0,
+    "max": 1.0,
+    "mean": 0.013178,
+    "sd": 0.114065
+   },
+   "binary": true
+  },
+  {
+   "name": "Sale",
+   "normalized": "sale",
+   "dtype": "float64",
+   "n_missing": 1,
+   "n_unique": 2,
+   "stats": {
+    "min": 0.0,
+    "p25": 0.0,
+    "median": 0.0,
+    "p75": 0.0,
+    "max": 1.0,
+    "mean": 0.074506,
+    "sd": 0.262659
+   },
+   "binary": true
+  },
+  {
+   "name": "Other",
+   "normalized": "other",
+   "dtype": "float64",
+   "n_missing": 1,
+   "n_unique": 2,
+   "stats": {
+    "min": 0.0,
+    "p25": 0.0,
+    "median": 0.0,
+    "p75": 0.0,
+    "max": 1.0,
+    "mean": 0.008109,
+    "sd": 0.089709
+   },
+   "binary": true
+  },
+  {
+   "name": "Outcome",
+   "normalized": "outcome",
+   "dtype": "str",
+   "n_missing": 1614,
+   "n_unique": 35,
+   "top_values": [
+    "unsuccessful",
+    "success",
+    "Successful",
+    "successful",
+    " NA"
+   ]
+  },
+  {
+   "name": "Outcome - success",
+   "normalized": "outcome_success",
+   "dtype": "float64",
+   "n_missing": 1,
+   "n_unique": 2,
+   "stats": {
+    "min": 0.0,
+    "p25": 0.0,
+    "median": 0.0,
+    "p75": 0.0,
+    "max": 1.0,
+    "mean": 0.090218,
+    "sd": 0.286566
+   },
+   "binary": true
+  },
+  {
+   "name": "Outcome - unuccessful",
+   "normalized": "outcome_unuccessful",
+   "dtype": "float64",
+   "n_missing": 1,
+   "n_unique": 2,
+   "stats": {
+    "min": 0.0,
+    "p25": 0.0,
+    "median": 0.0,
+    "p75": 0.0,
+    "max": 1.0,
+    "mean": 0.076026,
+    "sd": 0.265107
+   },
+   "binary": true
+  },
+  {
+   "name": "Outvome - NA",
+   "normalized": "outvome_na",
+   "dtype": "float64",
+   "n_missing": 1,
+   "n_unique": 2,
+   "stats": {
+    "min": 0.0,
+    "p25": 1.0,
+    "median": 1.0,
+    "p75": 1.0,
+    "max": 1.0,
+    "mean": 0.833756,
+    "sd": 0.372394
+   },
+   "binary": true
+  },
+  {
+   "name": "DV (text)",
+   "normalized": "dv_text",
+   "dtype": "str",
+   "n_missing": 0,
+   "n_unique": 100,
+   "top_values": [
+    "p11: We model the expected stock return as a linear function of the expected benchmark return.",
+    "p5: FF target returns - FF matching portfolio returns",
+    "p16: the cumulative abnormal return around the initial disclosure of the activist engagement, measured across all jurisdictions. Table 5 reports the market-model adjusted abnormal returns around the disclosure date for two event windows, 21 days and 41 days",
+    "p12: Cumulative average abnormal returns are calculated using the market model design with an estimation period of 255 days ending 20 days before the announcement.",
+    "p19: This table shows percent cumulative abnormal returns around proposal announcements. Market model parameters are estimated over the 200-day period ending 20 days before the proxy mailing date, using the CRSP equal-weighted index"
+   ]
+  },
+  {
+   "name": "DV page",
+   "normalized": "dv_page",
+   "dtype": "str",
+   "n_missing": 0,
+   "n_unique": 76,
+   "top_values": [
+    "p12",
+    "p5",
+    "p11+12",
+    "p11",
+    "16"
+   ]
+  },
+  {
+   "name": "Market model",
+   "normalized": "market_model",
+   "dtype": "float64",
+   "n_missing": 1,
+   "n_unique": 2,
+   "stats": {
+    "min": 0.0,
+    "p25": 0.0,
+    "median": 0.0,
+    "p75": 1.0,
+    "max": 1.0,
+    "mean": 0.424227,
+    "sd": 0.49435
+   },
+   "binary": true
+  },
+  {
+   "name": "market-adjusted returns",
+   "normalized": "market_adjusted_returns",
+   "dtype": "float64",
+   "n_missing": 1,
+   "n_unique": 2,
+   "stats": {
+    "min": 0.0,
+    "p25": 0.0,
+    "median": 0.0,
+    "p75": 1.0,
+    "max": 1.0,
+    "mean": 0.292955,
+    "sd": 0.455233
+   },
+   "binary": true
+  },
+  {
+   "name": "FF",
+   "normalized": "ff",
+   "dtype": "float64",
+   "n_missing": 1,
+   "n_unique": 2,
+   "stats": {
+    "min": 0.0,
+    "p25": 0.0,
+    "median": 0.0,
+    "p75": 0.0,
+    "max": 1.0,
+    "mean": 0.094273,
+    "sd": 0.292282
+   },
+   "binary": true
+  },
+  {
+   "name": "BHAR",
+   "normalized": "bhar",
+   "dtype": "float64",
+   "n_missing": 1,
+   "n_unique": 2,
+   "stats": {
+    "min": 0.0,
+    "p25": 0.0,
+    "median": 0.0,
+    "p75": 0.0,
+    "max": 1.0,
+    "mean": 0.043082,
+    "sd": 0.203092
+   },
+   "binary": true
+  },
+  {
+   "name": "Rovnice",
+   "normalized": "rovnice",
+   "dtype": "float64",
+   "n_missing": 1,
+   "n_unique": 2,
+   "stats": {
+    "min": 0.0,
+    "p25": 0.0,
+    "median": 0.0,
+    "p75": 0.0,
+    "max": 1.0,
+    "mean": 0.145464,
+    "sd": 0.352657
+   },
+   "binary": true
+  },
+  {
+   "name": "Equal-weighted",
+   "normalized": "equal_weighted",
+   "dtype": "float64",
+   "n_missing": 1,
+   "n_unique": 2,
+   "stats": {
+    "min": 0.0,
+    "p25": 0.0,
+    "median": 0.0,
+    "p75": 1.0,
+    "max": 1.0,
+    "mean": 0.349721,
+    "sd": 0.477003
+   },
+   "binary": true
+  },
+  {
+   "name": "Value-weighted",
+   "normalized": "value_weighted",
+   "dtype": "float64",
+   "n_missing": 1,
+   "n_unique": 2,
+   "stats": {
+    "min": 0.0,
+    "p25": 0.0,
+    "median": 0.0,
+    "p75": 1.0,
+    "max": 1.0,
+    "mean": 0.302078,
+    "sd": 0.459275
+   },
+   "binary": true
+  },
+  {
+   "name": "IV (text)",
+   "normalized": "iv_text",
+   "dtype": "str",
+   "n_missing": 1690,
+   "n_unique": 92,
+   "top_values": [
+    "p4: Top Return Hedge Funds, defined as the ones with average 21-day announcement period abnormal returns (over and above the CRSP value-weighted index) of at least 10% and with at least 3 interventions in rolling windows of past 3 years.",
+    "p30: dummy variable equal to 1 for activist shareholders that agree and support managers' strategies, 0 otherwise.",
+    "p30: dummy variable equal to 1 for activist shareholders that not agree and support managers' strategies, 0 otherwise.",
+    "p21: Institutional Sponsor",
+    "One day later, t+1"
+   ]
+  },
+  {
+   "name": "IV page",
+   "normalized": "iv_page",
+   "dtype": "str",
+   "n_missing": 1708,
+   "n_unique": 18,
+   "top_values": [
+    "p19",
+    "p24",
+    "4",
+    "p22",
+    "30"
+   ]
+  },
+  {
+   "name": "Type of activist (text)",
+   "normalized": "type_of_activist_text",
+   "dtype": "str",
+   "n_missing": 34,
+   "n_unique": 123,
+   "top_values": [
+    "p1: Calpers",
+    "p1: Hedge fund activism",
+    "p3+4: hedge funds + non-hedge funds",
+    "not mentioned",
+    "p4: international database of hedge fund activist engagements that includes 23 countries from three regions, Asia, Europe, and NorthAmerica."
+   ]
+  },
+  {
+   "name": "hedge fund activism",
+   "normalized": "hedge_fund_activism",
+   "dtype": "float64",
+   "n_missing": 1,
+   "n_unique": 2,
+   "stats": {
+    "min": 0.0,
+    "p25": 0.0,
+    "median": 0.0,
+    "p75": 0.0,
+    "max": 1.0,
+    "mean": 0.236695,
+    "sd": 0.425161
+   },
+   "binary": true
+  },
+  {
+   "name": "Calpers",
+   "normalized": "calpers",
+   "dtype": "float64",
+   "n_missing": 1,
+   "n_unique": 2,
+   "stats": {
+    "min": 0.0,
+    "p25": 0.0,
+    "median": 0.0,
+    "p75": 0.0,
+    "max": 1.0,
+    "mean": 0.137354,
+    "sd": 0.344308
+   },
+   "binary": true
+  },
+  {
+   "name": "Other pension funds/institutions",
+   "normalized": "other_pension_funds_institutions",
+   "dtype": "float64",
+   "n_missing": 1,
+   "n_unique": 2,
+   "stats": {
+    "min": 0.0,
+    "p25": 0.0,
+    "median": 0.0,
+    "p75": 0.0,
+    "max": 1.0,
+    "mean": 0.228586,
+    "sd": 0.420028
+   },
+   "binary": true
+  },
+  {
+   "name": "Coalition of institutions",
+   "normalized": "coalition_of_institutions",
+   "dtype": "float64",
+   "n_missing": 1,
+   "n_unique": 2,
+   "stats": {
+    "min": 0.0,
+    "p25": 0.0,
+    "median": 0.0,
+    "p75": 0.0,
+    "max": 1.0,
+    "mean": 0.018246,
+    "sd": 0.133875
+   },
+   "binary": true
+  },
+  {
+   "name": "By individuals",
+   "normalized": "by_individuals",
+   "dtype": "float64",
+   "n_missing": 1,
+   "n_unique": 2,
+   "stats": {
+    "min": 0.0,
+    "p25": 0.0,
+    "median": 0.0,
+    "p75": 0.0,
+    "max": 1.0,
+    "mean": 0.02889,
+    "sd": 0.16754
+   },
+   "binary": true
+  },
+  {
+   "name": "Coalition/group of individuals",
+   "normalized": "coalition_group_of_individuals",
+   "dtype": "float64",
+   "n_missing": 1,
+   "n_unique": 2,
+   "stats": {
+    "min": 0.0,
+    "p25": 0.0,
+    "median": 0.0,
+    "p75": 0.0,
+    "max": 1.0,
+    "mean": 0.003548,
+    "sd": 0.059474
+   },
+   "binary": true
+  },
+  {
+   "name": "All.1",
+   "normalized": "all_1",
+   "dtype": "float64",
+   "n_missing": 1,
+   "n_unique": 2,
+   "stats": {
+    "min": 0.0,
+    "p25": 0.0,
+    "median": 0.0,
+    "p75": 1.0,
+    "max": 1.0,
+    "mean": 0.34668,
+    "sd": 0.476033
+   },
+   "binary": true
+  },
+  {
+   "name": "Group",
+   "normalized": "group",
+   "dtype": "float64",
+   "n_missing": 1,
+   "n_unique": 2,
+   "stats": {
+    "min": 0.0,
+    "p25": 0.0,
+    "median": 0.0,
+    "p75": 0.0,
+    "max": 1.0,
+    "mean": 0.022808,
+    "sd": 0.149329
+   },
+   "binary": true
+  },
+  {
+   "name": "Type of activism (text)",
+   "normalized": "type_of_activism_text",
+   "dtype": "str",
+   "n_missing": 174,
+   "n_unique": 107,
+   "top_values": [
+    "not mentioned",
+    "p1+2: shareholders proposals, proxy proposals, (corp gov + takeover-related) + direct negotiations",
+    "p1: proxy contest",
+    "p5: proxy proposals or the outcome of any negotiations",
+    "p17+18: meetings, letters, calls, litigation, hostile takeover attempt, press campaign; p4 - proxy statement; p19 - rather private than public (vs US)"
+   ]
+  },
+  {
+   "name": "ActivismAll",
+   "normalized": "activismall",
+   "dtype": "float64",
+   "n_missing": 1,
+   "n_unique": 2,
+   "stats": {
+    "min": 0.0,
+    "p25": 0.0,
+    "median": 0.0,
+    "p75": 1.0,
+    "max": 1.0,
+    "mean": 0.258996,
+    "sd": 0.438195
+   },
+   "binary": true
+  },
+  {
+   "name": "Proposals",
+   "normalized": "proposals",
+   "dtype": "float64",
+   "n_missing": 1,
+   "n_unique": 2,
+   "stats": {
+    "min": 0.0,
+    "p25": 0.0,
+    "median": 0.0,
+    "p75": 1.0,
+    "max": 1.0,
+    "mean": 0.256462,
+    "sd": 0.436791
+   },
+   "binary": true
+  },
+  {
+   "name": "Negotiation",
+   "normalized": "negotiation",
+   "dtype": "float64",
+   "n_missing": 1,
+   "n_unique": 2,
+   "stats": {
+    "min": 0.0,
+    "p25": 0.0,
+    "median": 0.0,
+    "p75": 0.0,
+    "max": 1.0,
+    "mean": 0.046629,
+    "sd": 0.210897
+   },
+   "binary": true
+  },
+  {
+   "name": "Proxy",
+   "normalized": "proxy",
+   "dtype": "float64",
+   "n_missing": 1,
+   "n_unique": 2,
+   "stats": {
+    "min": 0.0,
+    "p25": 0.0,
+    "median": 0.0,
+    "p75": 0.0,
+    "max": 1.0,
+    "mean": 0.221997,
+    "sd": 0.415694
+   },
+   "binary": true
+  },
+  {
+   "name": "Prop_Neg/Proxy",
+   "normalized": "prop_neg_proxy",
+   "dtype": "float64",
+   "n_missing": 1,
+   "n_unique": 2,
+   "stats": {
+    "min": 0.0,
+    "p25": 0.0,
+    "median": 0.0,
+    "p75": 0.0,
+    "max": 1.0,
+    "mean": 0.126204,
+    "sd": 0.332163
+   },
+   "binary": true
+  },
+  {
+   "name": "Prop+Neg+Proxy",
+   "normalized": "prop_neg_proxy",
+   "dtype": "float64",
+   "n_missing": 1,
+   "n_unique": 2,
+   "stats": {
+    "min": 0.0,
+    "p25": 0.0,
+    "median": 0.0,
+    "p75": 0.0,
+    "max": 1.0,
+    "mean": 0.01926,
+    "sd": 0.137472
+   },
+   "binary": true
+  },
+  {
+   "name": "Litigation",
+   "normalized": "litigation",
+   "dtype": "float64",
+   "n_missing": 1,
+   "n_unique": 2,
+   "stats": {
+    "min": 0.0,
+    "p25": 0.0,
+    "median": 0.0,
+    "p75": 0.0,
+    "max": 1.0,
+    "mean": 0.009123,
+    "sd": 0.095103
+   },
+   "binary": true
+  },
+  {
+   "name": "ActivismOther",
+   "normalized": "activismother",
+   "dtype": "float64",
+   "n_missing": 1,
+   "n_unique": 2,
+   "stats": {
+    "min": 0.0,
+    "p25": 0.0,
+    "median": 0.0,
+    "p75": 0.0,
+    "max": 1.0,
+    "mean": 0.061328,
+    "sd": 0.239992
+   },
+   "binary": true
+  },
+  {
+   "name": "IV more vars",
+   "normalized": "iv_more_vars",
+   "dtype": "float64",
+   "n_missing": 1,
+   "n_unique": 1,
+   "stats": {
+    "min": 0.0,
+    "p25": 0.0,
+    "median": 0.0,
+    "p75": 0.0,
+    "max": 0.0,
+    "mean": 0.0,
+    "sd": 0.0
+   },
+   "binary": true
+  },
+  {
+   "name": "datastart_y",
+   "normalized": "datastart_y",
+   "dtype": "float64",
+   "n_missing": 1,
+   "n_unique": 32,
+   "stats": {
+    "min": 1962.0,
+    "p25": 1990.0,
+    "median": 1994.0,
+    "p75": 2000.0,
+    "max": 2012.0,
+    "mean": 1994.019767,
+    "sd": 9.126401
+   }
+  },
+  {
+   "name": "dataend_y",
+   "normalized": "dataend_y",
+   "dtype": "float64",
+   "n_missing": 1,
+   "n_unique": 29,
+   "stats": {
+    "min": 1967.0,
+    "p25": 1997.0,
+    "median": 2006.0,
+    "p75": 2008.0,
+    "max": 2015.0,
+    "mean": 2002.471363,
+    "sd": 8.175485
+   }
+  },
+  {
+   "name": "datastart_mqh",
+   "normalized": "datastart_mqh",
+   "dtype": "float64",
+   "n_missing": 1493,
+   "n_unique": 7,
+   "stats": {
+    "min": 1.0,
+    "p25": 1.0,
+    "median": 1.0,
+    "p75": 3.0,
+    "max": 12.0,
+    "mean": 3.02079,
+    "sd": 3.586953
+   }
+  },
+  {
+   "name": "dataend_mqh",
+   "normalized": "dataend_mqh",
+   "dtype": "float64",
+   "n_missing": 1493,
+   "n_unique": 7,
+   "stats": {
+    "min": 1.0,
+    "p25": 4.0,
+    "median": 7.0,
+    "p75": 12.0,
+    "max": 12.0,
+    "mean": 7.711019,
+    "sd": 4.107623
+   }
+  },
+  {
+   "name": "Midyear",
+   "normalized": "midyear",
+   "dtype": "float64",
+   "n_missing": 1,
+   "n_unique": 46,
+   "stats": {
+    "min": 1964.5,
+    "p25": 1994.0,
+    "median": 2000.0,
+    "p75": 2005.0,
+    "max": 2013.0,
+    "mean": 1998.245565,
+    "sd": 8.322337
+   }
+  },
+  {
+   "name": "Length",
+   "normalized": "length",
+   "dtype": "str",
+   "n_missing": 1924,
+   "n_unique": 3,
+   "top_values": [
+    "7",
+    " ",
+    "Length"
+   ]
+  },
+  {
+   "name": "TotalObs",
+   "normalized": "totalobs",
+   "dtype": "float64",
+   "n_missing": 1,
+   "n_unique": 246,
+   "stats": {
+    "min": 2.0,
+    "p25": 27.0,
+    "median": 65.0,
+    "p75": 208.0,
+    "max": 11884.0,
+    "mean": 666.471363,
+    "sd": 2233.22537
+   }
+  },
+  {
+   "name": "Daily",
+   "normalized": "daily",
+   "dtype": "float64",
+   "n_missing": 1,
+   "n_unique": 2,
+   "stats": {
+    "min": 0.0,
+    "p25": 1.0,
+    "median": 1.0,
+    "p75": 1.0,
+    "max": 1.0,
+    "mean": 0.973644,
+    "sd": 0.160232
+   },
+   "binary": true
+  },
+  {
+   "name": "Monthly",
+   "normalized": "monthly",
+   "dtype": "float64",
+   "n_missing": 1,
+   "n_unique": 2,
+   "stats": {
+    "min": 0.0,
+    "p25": 0.0,
+    "median": 0.0,
+    "p75": 0.0,
+    "max": 1.0,
+    "mean": 0.026356,
+    "sd": 0.160232
+   },
+   "binary": true
+  },
+  {
+   "name": "Data source",
+   "normalized": "data_source",
+   "dtype": "str",
+   "n_missing": 0,
+   "n_unique": 85,
+   "top_values": [
+    "p9: The respective information for each fund is collected from the fund\u2019s webpage (if available), newspapers, magazines, and from the Center for International Securities and Derivatives Markets (CISDM).",
+    "p3: We merge all Schedule 13D and DFAN 14A filings from the SEC\u2019s EDGAR database for the13-year period from the third quarter of 1993 through the third quarter of 2006.",
+    "p9: Wahal, 1996 + Wall Street Journal using the ProQuest online databases + Calpers Focus list release",
+    "p5: Lexis-Nexis, p10: CRSP",
+    "p5: hand-collected, US - 13D Monitor"
+   ]
+  },
+  {
+   "name": "Region (text)",
+   "normalized": "region_text",
+   "dtype": "str",
+   "n_missing": 0,
+   "n_unique": 17,
+   "top_values": [
+    "US",
+    "Germany",
+    "UK",
+    "Malaysia",
+    "Japan"
+   ]
+  },
+  {
+   "name": "Number of countries (text)",
+   "normalized": "number_of_countries_text",
+   "dtype": "float64",
+   "n_missing": 1,
+   "n_unique": 6,
+   "stats": {
+    "min": 1.0,
+    "p25": 1.0,
+    "median": 1.0,
+    "p75": 1.0,
+    "max": 17.0,
+    "mean": 1.224024,
+    "sd": 1.573581
+   }
+  },
+  {
+   "name": "Number of firms/events",
+   "normalized": "number_of_firms_events",
+   "dtype": "str",
+   "n_missing": 24,
+   "n_unique": 222,
+   "top_values": [
+    "230",
+    "47 firms, 63 announcemments",
+    "41 firms/events",
+    "548 firms",
+    "p29: The final sample consists of 253 potentially activist minority stakes in 140 target firms between January 1999 and May 2011, consistent with the number of events in the studies of shareholder activism in Germany by Bessler et al. (2010) and Drerup (2010)."
+   ]
+  },
+  {
+   "name": "Subsample specification (text)",
+   "normalized": "subsample_specification_text",
+   "dtype": "str",
+   "n_missing": 1,
+   "n_unique": 604,
+   "top_values": [
+    "Buy stocks",
+    "Sell stocks",
+    "Full sample",
+    "EW CRSP - Full sample",
+    "VW CRSP - Full sample"
+   ]
+  },
+  {
+   "name": "US",
+   "normalized": "us",
+   "dtype": "float64",
+   "n_missing": 1,
+   "n_unique": 2,
+   "stats": {
+    "min": 0.0,
+    "p25": 0.0,
+    "median": 1.0,
+    "p75": 1.0,
+    "max": 1.0,
+    "mean": 0.697922,
+    "sd": 0.459275
+   },
+   "binary": true
+  },
+  {
+   "name": "Germany",
+   "normalized": "germany",
+   "dtype": "float64",
+   "n_missing": 1,
+   "n_unique": 2,
+   "stats": {
+    "min": 0.0,
+    "p25": 0.0,
+    "median": 0.0,
+    "p75": 0.0,
+    "max": 1.0,
+    "mean": 0.160669,
+    "sd": 0.367318
+   },
+   "binary": true
+  },
+  {
+   "name": "Europe",
+   "normalized": "europe",
+   "dtype": "float64",
+   "n_missing": 1,
+   "n_unique": 2,
+   "stats": {
+    "min": 0.0,
+    "p25": 0.0,
+    "median": 0.0,
+    "p75": 0.0,
+    "max": 1.0,
+    "mean": 0.070958,
+    "sd": 0.25682
+   },
+   "binary": true
+  },
+  {
+   "name": "Asia",
+   "normalized": "asia",
+   "dtype": "float64",
+   "n_missing": 1,
+   "n_unique": 2,
+   "stats": {
+    "min": 0.0,
+    "p25": 0.0,
+    "median": 0.0,
+    "p75": 0.0,
+    "max": 1.0,
+    "mean": 0.070451,
+    "sd": 0.255971
+   },
+   "binary": true
+  },
+  {
+   "name": "Model and page (text)",
+   "normalized": "model_and_page_text",
+   "dtype": "str",
+   "n_missing": 0,
+   "n_unique": 52,
+   "top_values": [
+    "p13: simple",
+    "p14: simple",
+    "p17: simple",
+    "p8: simple",
+    "p21: simple"
+   ]
+  },
+  {
+   "name": "SE clustered/robust",
+   "normalized": "se_clustered_robust",
+   "dtype": "float64",
+   "n_missing": 1,
+   "n_unique": 2,
+   "stats": {
+    "min": 0.0,
+    "p25": 0.0,
+    "median": 0.0,
+    "p75": 1.0,
+    "max": 1.0,
+    "mean": 0.252914,
+    "sd": 0.434792
+   },
+   "binary": true
+  },
+  {
+   "name": "SE adjustment (text)",
+   "normalized": "se_adjustment_text",
+   "dtype": "str",
+   "n_missing": 0,
+   "n_unique": 30,
+   "top_values": [
+    "0",
+    "p12: Test statistics are calculated using the standardized residual method with a correction for eveninduced variance suggested by Boehmer et al. (1991).",
+    "p19: T-statistics use standard errors with White (1980) correction for heteroskedasticity and adjusted for clustering of observations on each firm",
+    "p9: but assumes no cross-sectional dependence in abnormal returns. t-statistic of Boehmer et al. (1991) uses a standardized residual method as in Patell (1976), but then adds a correction for event-induced variance.",
+    "Boehmer Test as proposed in Boehmer, Musumeci and Poulsen (1991) is a modification of the traditional T-Test, which is robust towards event-induced variance"
+   ]
+  },
+  {
+   "name": "Control variables + page (text)",
+   "normalized": "control_variables_page_text",
+   "dtype": "str",
+   "n_missing": 55,
+   "n_unique": 46,
+   "top_values": [
+    "0",
+    "p19: many of the - please check and fill",
+    "p13: volume",
+    "p9: \u03b21   Hedge Funds \u00fe \u03b22   Market Cap\u00fe \u03b23   ROA \u00fe \u03b24   Book to Market \u00fe \u03b25   Nasdaq\u2010listing \u00fe \u03b26   Finance Firm\u00fe \u03b27   Percentage of Shares Held on Filing Date\u00fe \u03b28   Call Option \u00fe \u03b29   Put Option ",
+    "p25: CAR lagged, earning_sup (earnings divided by stock price), ROA, lag_size, discretionary accruals, year + industry + market indicators"
+   ]
+  },
+  {
+   "name": "RoA",
+   "normalized": "roa",
+   "dtype": "float64",
+   "n_missing": 1,
+   "n_unique": 2,
+   "stats": {
+    "min": 0.0,
+    "p25": 0.0,
+    "median": 0.0,
+    "p75": 0.0,
+    "max": 1.0,
+    "mean": 0.036999,
+    "sd": 0.188808
+   },
+   "binary": true
+  },
+  {
+   "name": "Size",
+   "normalized": "size",
+   "dtype": "float64",
+   "n_missing": 1,
+   "n_unique": 2,
+   "stats": {
+    "min": 0.0,
+    "p25": 0.0,
+    "median": 0.0,
+    "p75": 0.0,
+    "max": 1.0,
+    "mean": 0.18297,
+    "sd": 0.38674
+   },
+   "binary": true
+  },
+  {
+   "name": "Dynamic",
+   "normalized": "dynamic",
+   "dtype": "float64",
+   "n_missing": 1,
+   "n_unique": 2,
+   "stats": {
+    "min": 0.0,
+    "p25": 0.0,
+    "median": 0.0,
+    "p75": 0.0,
+    "max": 1.0,
+    "mean": 0.078054,
+    "sd": 0.268324
+   },
+   "binary": true
+  },
+  {
+   "name": "Estimation methodology (text)",
+   "normalized": "estimation_methodology_text",
+   "dtype": "str",
+   "n_missing": 0,
+   "n_unique": 56,
+   "top_values": [
+    "p14: OLS (probably)",
+    "p13: OLS (probably)",
+    "p8: OLS (probably)",
+    "p17: OLS (probably)",
+    "p6: OLS (probably)"
+   ]
+  },
+  {
+   "name": "OLS",
+   "normalized": "ols",
+   "dtype": "float64",
+   "n_missing": 1,
+   "n_unique": 2,
+   "stats": {
+    "min": 0.0,
+    "p25": 1.0,
+    "median": 1.0,
+    "p75": 1.0,
+    "max": 1.0,
+    "mean": 0.937152,
+    "sd": 0.242752
+   },
+   "binary": true
+  },
+  {
+   "name": "IV",
+   "normalized": "iv",
+   "dtype": "float64",
+   "n_missing": 1,
+   "n_unique": 2,
+   "stats": {
+    "min": 0.0,
+    "p25": 0.0,
+    "median": 0.0,
+    "p75": 0.0,
+    "max": 1.0,
+    "mean": 0.001521,
+    "sd": 0.038974
+   },
+   "binary": true
+  },
+  {
+   "name": "Panel FE",
+   "normalized": "panel_fe",
+   "dtype": "float64",
+   "n_missing": 1,
+   "n_unique": 2,
+   "stats": {
+    "min": 0.0,
+    "p25": 0.0,
+    "median": 0.0,
+    "p75": 0.0,
+    "max": 1.0,
+    "mean": 0.040547,
+    "sd": 0.197289
+   },
+   "binary": true
+  },
+  {
+   "name": "Otherest",
+   "normalized": "otherest",
+   "dtype": "float64",
+   "n_missing": 1,
+   "n_unique": 2,
+   "stats": {
+    "min": 0.0,
+    "p25": 0.0,
+    "median": 0.0,
+    "p75": 0.0,
+    "max": 1.0,
+    "mean": 0.020274,
+    "sd": 0.140971
+   },
+   "binary": true
+  },
+  {
+   "name": "Impact",
+   "normalized": "impact",
+   "dtype": "float64",
+   "n_missing": 1,
+   "n_unique": 25,
+   "stats": {
+    "min": 0.0,
+    "p25": 0.061,
+    "median": 0.357,
+    "p75": 2.405,
+    "max": 3.316,
+    "mean": 1.15226,
+    "sd": 1.220401
+   }
+  },
+  {
+   "name": "Cit",
+   "normalized": "cit",
+   "dtype": "float64",
+   "n_missing": 1,
+   "n_unique": 54,
+   "stats": {
+    "min": 0.0,
+    "p25": 17.0,
+    "median": 106.0,
+    "p75": 526.0,
+    "max": 2123.0,
+    "mean": 316.794222,
+    "sd": 445.936771
+   }
+  },
+  {
+   "name": "First year in GS",
+   "normalized": "first_year_in_gs",
+   "dtype": "float64",
+   "n_missing": 1,
+   "n_unique": 28,
+   "stats": {
+    "min": 1983.0,
+    "p25": 2004.0,
+    "median": 2010.0,
+    "p75": 2014.0,
+    "max": 2019.0,
+    "mean": 2007.169285,
+    "sd": 7.982342
+   }
+  },
+  {
+   "name": "Region (text).1",
+   "normalized": "region_text_1",
+   "dtype": "str",
+   "n_missing": 0,
+   "n_unique": 17,
+   "top_values": [
+    "US",
+    "Germany",
+    "UK",
+    "Malaysia",
+    "Japan"
+   ]
+  },
+  {
+   "name": "Midyear.1",
+   "normalized": "midyear_1",
+   "dtype": "float64",
+   "n_missing": 1,
+   "n_unique": 46,
+   "stats": {
+    "min": 1964.5,
+    "p25": 1994.0,
+    "median": 2000.0,
+    "p75": 2005.0,
+    "max": 2013.0,
+    "mean": 1998.245565,
+    "sd": 8.322337
+   }
+  },
+  {
+   "name": "Concatenate",
+   "normalized": "concatenate",
+   "dtype": "str",
+   "n_missing": 0,
+   "n_unique": 67,
+   "top_values": [
+    "Germany2006,5",
+    "US2000",
+    "US1990",
+    "US1994,5",
+    "US1998,5"
+   ]
+  },
+  {
+   "name": "English-origin",
+   "normalized": "english_origin",
+   "dtype": "float64",
+   "n_missing": 1,
+   "n_unique": 2,
+   "stats": {
+    "min": 0.0,
+    "p25": 1.0,
+    "median": 1.0,
+    "p75": 1.0,
+    "max": 1.0,
+    "mean": 0.779524,
+    "sd": 0.414673
+   },
+   "binary": true
+  },
+  {
+   "name": "French-origin",
+   "normalized": "french_origin",
+   "dtype": "float64",
+   "n_missing": 1,
+   "n_unique": 2,
+   "stats": {
+    "min": 0.0,
+    "p25": 0.0,
+    "median": 0.0,
+    "p75": 0.0,
+    "max": 1.0,
+    "mean": 0.014192,
+    "sd": 0.11831
+   },
+   "binary": true
+  },
+  {
+   "name": "German-origin",
+   "normalized": "german_origin",
+   "dtype": "float64",
+   "n_missing": 1,
+   "n_unique": 2,
+   "stats": {
+    "min": 0.0,
+    "p25": 0.0,
+    "median": 0.0,
+    "p75": 0.0,
+    "max": 1.0,
+    "mean": 0.206285,
+    "sd": 0.40474
+   },
+   "binary": true
+  },
+  {
+   "name": "Scandinavian-origin",
+   "normalized": "scandinavian_origin",
+   "dtype": "float64",
+   "n_missing": 1,
+   "n_unique": 1,
+   "stats": {
+    "min": 0.0,
+    "p25": 0.0,
+    "median": 0.0,
+    "p75": 0.0,
+    "max": 0.0,
+    "mean": 0.0,
+    "sd": 0.0
+   },
+   "binary": true
+  },
+  {
+   "name": "antidirector rights",
+   "normalized": "antidirector_rights",
+   "dtype": "float64",
+   "n_missing": 1,
+   "n_unique": 9,
+   "stats": {
+    "min": 1.0,
+    "p25": 4.0,
+    "median": 5.0,
+    "p75": 5.0,
+    "max": 5.0,
+    "mean": 4.203075,
+    "sd": 1.505171
+   }
+  },
+  {
+   "name": "Regulatory disclosure threshold",
+   "normalized": "regulatory_disclosure_threshold",
+   "dtype": "float64",
+   "n_missing": 1,
+   "n_unique": 10,
+   "stats": {
+    "min": 0.0,
+    "p25": 0.0425,
+    "median": 0.05,
+    "p75": 0.05,
+    "max": 0.1,
+    "mean": 0.0446,
+    "sd": 0.012789
+   }
+  },
+  {
+   "name": "Rule_of_Law",
+   "normalized": "rule_of_law",
+   "dtype": "float64",
+   "n_missing": 1,
+   "n_unique": 46,
+   "stats": {
+    "min": 0.455968,
+    "p25": 1.569473,
+    "median": 1.592754,
+    "p75": 1.627855,
+    "max": 1.976893,
+    "mean": 1.550808,
+    "sd": 0.230121
+   }
+  },
+  {
+   "name": "Cap_GDP",
+   "normalized": "cap_gdp",
+   "dtype": "float64",
+   "n_missing": 1,
+   "n_unique": 63,
+   "stats": {
+    "min": 18.694025,
+    "p25": 58.131363,
+    "median": 87.973888,
+    "p75": 139.753441,
+    "max": 209.604096,
+    "mean": 96.505524,
+    "sd": 41.886426
+   }
+  },
+  {
+   "name": "HHI",
+   "normalized": "hhi",
+   "dtype": "float64",
+   "n_missing": 1,
+   "n_unique": 53,
+   "stats": {
+    "min": 0.039627,
+    "p25": 0.065472,
+    "median": 0.07347,
+    "p75": 0.082008,
+    "max": 0.647144,
+    "mean": 0.08429,
+    "sd": 0.062219
+   }
+  },
+  {
+   "name": "Sarbanes_Oxley",
+   "normalized": "sarbanes_oxley",
+   "dtype": "float64",
+   "n_missing": 1,
+   "n_unique": 2,
+   "stats": {
+    "min": 0.0,
+    "p25": 0.0,
+    "median": 0.0,
+    "p75": 0.0,
+    "max": 1.0,
+    "mean": 0.100355,
+    "sd": 0.300549
+   },
+   "binary": true
+  }
+ ]
+}

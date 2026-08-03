@@ -1,0 +1,486 @@
+{
+ "project": "hedge",
+ "source_file": "hedge.xlsx",
+ "source_archive": null,
+ "source_sheet": "data",
+ "n_rows": 1019,
+ "n_columns": 29,
+ "columns": [
+  {
+   "name": "study_id",
+   "normalized": "study_id",
+   "dtype": "int64",
+   "n_missing": 0,
+   "n_unique": 74,
+   "role": "study_id",
+   "stats": {
+    "min": 1.0,
+    "p25": 15.0,
+    "median": 31.0,
+    "p75": 54.0,
+    "max": 74.0,
+    "mean": 34.50736,
+    "sd": 22.419529
+   }
+  },
+  {
+   "name": "team_id",
+   "normalized": "team_id",
+   "dtype": "int64",
+   "n_missing": 0,
+   "n_unique": 55,
+   "stats": {
+    "min": 1.0,
+    "p25": 17.0,
+    "median": 26.0,
+    "p75": 47.0,
+    "max": 56.0,
+    "mean": 29.790972,
+    "sd": 17.118175
+   }
+  },
+  {
+   "name": "study",
+   "normalized": "study",
+   "dtype": "str",
+   "n_missing": 0,
+   "n_unique": 74,
+   "top_values": [
+    "Agarwal et al. (2017)",
+    "Racicot & Theoret (2009)",
+    "Buraschi et al. (2014)",
+    "Ranaldo & Favre (2005)",
+    "Gupta et al. (2003)"
+   ]
+  },
+  {
+   "name": "alpha",
+   "normalized": "alpha",
+   "dtype": "float64",
+   "n_missing": 0,
+   "n_unique": 623,
+   "role": "effect_estimate",
+   "stats": {
+    "min": -3.64,
+    "p25": 0.13,
+    "median": 0.3503,
+    "p75": 0.564167,
+    "max": 5.1134,
+    "mean": 0.365413,
+    "sd": 0.535006
+   }
+  },
+  {
+   "name": "tstat",
+   "normalized": "tstat",
+   "dtype": "float64",
+   "n_missing": 0,
+   "n_unique": 768,
+   "role": "t_stat",
+   "stats": {
+    "min": -2.994,
+    "p25": 0.79885,
+    "median": 2.083333,
+    "p75": 3.745,
+    "max": 48.644,
+    "mean": 2.850865,
+    "sd": 4.525047
+   }
+  },
+  {
+   "name": "se",
+   "normalized": "se",
+   "dtype": "float64",
+   "n_missing": 0,
+   "n_unique": 940,
+   "role": "standard_error",
+   "stats": {
+    "min": 0.008081,
+    "p25": 0.102644,
+    "median": 0.160165,
+    "p75": 0.287393,
+    "max": 170.446667,
+    "mean": 0.429361,
+    "sd": 5.347261
+   }
+  },
+  {
+   "name": "precision",
+   "normalized": "precision",
+   "dtype": "float64",
+   "n_missing": 0,
+   "n_unique": 935,
+   "stats": {
+    "min": 0.005867,
+    "p25": 3.47958,
+    "median": 6.243542,
+    "p75": 9.742477,
+    "max": 123.746017,
+    "mean": 8.284288,
+    "sd": 11.175669
+   }
+  },
+  {
+   "name": "sample_size",
+   "normalized": "sample_size",
+   "dtype": "float64",
+   "n_missing": 40,
+   "n_unique": 157,
+   "role": "n_obs",
+   "stats": {
+    "min": 18.0,
+    "p25": 79.5,
+    "median": 152.0,
+    "p75": 204.0,
+    "max": 634735.0,
+    "mean": 4693.151736,
+    "sd": 33330.925024
+   }
+  },
+  {
+   "name": "weight",
+   "normalized": "weight",
+   "dtype": "float64",
+   "n_missing": 0,
+   "n_unique": 29,
+   "stats": {
+    "min": 0.016393,
+    "p25": 0.025,
+    "median": 0.041667,
+    "p75": 0.090909,
+    "max": 1.0,
+    "mean": 0.07262,
+    "sd": 0.100644
+   }
+  },
+  {
+   "name": "year_data",
+   "normalized": "year_data",
+   "dtype": "float64",
+   "n_missing": 0,
+   "n_unique": 38,
+   "stats": {
+    "min": 1990.0,
+    "p25": 1998.0,
+    "median": 2001.5,
+    "p75": 2004.5,
+    "max": 2014.5,
+    "mean": 2001.609421,
+    "sd": 5.132962
+   }
+  },
+  {
+   "name": "year_publication",
+   "normalized": "year_publication",
+   "dtype": "int64",
+   "n_missing": 0,
+   "n_unique": 20,
+   "stats": {
+    "min": 2001.0,
+    "p25": 2007.0,
+    "median": 2012.0,
+    "p75": 2017.0,
+    "max": 2021.0,
+    "mean": 2011.52895,
+    "sd": 5.559987
+   }
+  },
+  {
+   "name": "country",
+   "normalized": "country",
+   "dtype": "str",
+   "n_missing": 0,
+   "n_unique": 9,
+   "role": "country",
+   "top_values": [
+    "Global funds",
+    "Canadian & US funds",
+    "Australian funds",
+    "Chinese & Korean funds",
+    "Japanese funds"
+   ]
+  },
+  {
+   "name": "data_midyear",
+   "normalized": "data_midyear",
+   "dtype": "float64",
+   "n_missing": 0,
+   "n_unique": 38,
+   "stats": {
+    "min": 0.0,
+    "p25": 2.197225,
+    "median": 2.525729,
+    "p75": 2.74084,
+    "max": 3.238678,
+    "mean": 2.404989,
+    "sd": 0.602617
+   }
+  },
+  {
+   "name": "market_developed",
+   "normalized": "market_developed",
+   "dtype": "int64",
+   "n_missing": 0,
+   "n_unique": 2,
+   "stats": {
+    "min": 0.0,
+    "p25": 0.0,
+    "median": 0.0,
+    "p75": 0.0,
+    "max": 1.0,
+    "mean": 0.13739,
+    "sd": 0.344427
+   },
+   "binary": true
+  },
+  {
+   "name": "market_world",
+   "normalized": "market_world",
+   "dtype": "int64",
+   "n_missing": 0,
+   "n_unique": 2,
+   "stats": {
+    "min": 0.0,
+    "p25": 1.0,
+    "median": 1.0,
+    "p75": 1.0,
+    "max": 1.0,
+    "mean": 0.86261,
+    "sd": 0.344427
+   },
+   "binary": true
+  },
+  {
+   "name": "market_bull",
+   "normalized": "market_bull",
+   "dtype": "int64",
+   "n_missing": 0,
+   "n_unique": 2,
+   "stats": {
+    "min": 0.0,
+    "p25": 0.0,
+    "median": 0.0,
+    "p75": 0.0,
+    "max": 1.0,
+    "mean": 0.038273,
+    "sd": 0.191948
+   },
+   "binary": true
+  },
+  {
+   "name": "market_bear",
+   "normalized": "market_bear",
+   "dtype": "int64",
+   "n_missing": 0,
+   "n_unique": 2,
+   "stats": {
+    "min": 0.0,
+    "p25": 0.0,
+    "median": 0.0,
+    "p75": 0.0,
+    "max": 1.0,
+    "mean": 0.038273,
+    "sd": 0.191948
+   },
+   "binary": true
+  },
+  {
+   "name": "method_iv",
+   "normalized": "method_iv",
+   "dtype": "int64",
+   "n_missing": 0,
+   "n_unique": 2,
+   "stats": {
+    "min": 0.0,
+    "p25": 0.0,
+    "median": 0.0,
+    "p75": 0.0,
+    "max": 1.0,
+    "mean": 0.045142,
+    "sd": 0.207718
+   },
+   "binary": true
+  },
+  {
+   "name": "model_1factor",
+   "normalized": "model_1factor",
+   "dtype": "int64",
+   "n_missing": 0,
+   "n_unique": 2,
+   "stats": {
+    "min": 0.0,
+    "p25": 0.0,
+    "median": 0.0,
+    "p75": 0.0,
+    "max": 1.0,
+    "mean": 0.163886,
+    "sd": 0.370354
+   },
+   "binary": true
+  },
+  {
+   "name": "model_7factor",
+   "normalized": "model_7factor",
+   "dtype": "int64",
+   "n_missing": 0,
+   "n_unique": 2,
+   "stats": {
+    "min": 0.0,
+    "p25": 0.0,
+    "median": 0.0,
+    "p75": 1.0,
+    "max": 1.0,
+    "mean": 0.292444,
+    "sd": 0.455108
+   },
+   "binary": true
+  },
+  {
+   "name": "survivorship_treated",
+   "normalized": "survivorship_treated",
+   "dtype": "int64",
+   "n_missing": 0,
+   "n_unique": 2,
+   "stats": {
+    "min": 0.0,
+    "p25": 0.0,
+    "median": 1.0,
+    "p75": 1.0,
+    "max": 1.0,
+    "mean": 0.576055,
+    "sd": 0.494424
+   },
+   "binary": true
+  },
+  {
+   "name": "backfilling_treated",
+   "normalized": "backfilling_treated",
+   "dtype": "int64",
+   "n_missing": 0,
+   "n_unique": 2,
+   "stats": {
+    "min": 0.0,
+    "p25": 0.0,
+    "median": 0.0,
+    "p75": 1.0,
+    "max": 1.0,
+    "mean": 0.301276,
+    "sd": 0.459038
+   },
+   "binary": true
+  },
+  {
+   "name": "publication_year",
+   "normalized": "publication_year",
+   "dtype": "float64",
+   "n_missing": 0,
+   "n_unique": 20,
+   "role": "pub_year",
+   "stats": {
+    "min": 0.0,
+    "p25": 1.94591,
+    "median": 2.484907,
+    "p75": 2.833213,
+    "max": 3.044522,
+    "mean": 2.25983,
+    "sd": 0.712788
+   }
+  },
+  {
+   "name": "top3",
+   "normalized": "top3",
+   "dtype": "int64",
+   "n_missing": 0,
+   "n_unique": 2,
+   "stats": {
+    "min": 0.0,
+    "p25": 0.0,
+    "median": 0.0,
+    "p75": 0.0,
+    "max": 1.0,
+    "mean": 0.213935,
+    "sd": 0.410283
+   },
+   "binary": true
+  },
+  {
+   "name": "top5",
+   "normalized": "top5",
+   "dtype": "int64",
+   "n_missing": 0,
+   "n_unique": 2,
+   "stats": {
+    "min": 0.0,
+    "p25": 0.0,
+    "median": 0.0,
+    "p75": 1.0,
+    "max": 1.0,
+    "mean": 0.251227,
+    "sd": 0.433932
+   },
+   "binary": true
+  },
+  {
+   "name": "reference",
+   "normalized": "reference",
+   "dtype": "str",
+   "n_missing": 0,
+   "n_unique": 74,
+   "top_values": [
+    "Agarwal, V., Arisoy, Y.E. & N.Y. Naik (2017): Volatility of aggregate volatility and hedge fund returns. Journal of Financial Economics 125(3): 491-510.",
+    "Racicot, F.-E. & R. Theoret (2009): Integrating volatility factors in the analysis of the hedge fund alpha puzzle. Journal of Asset Management 10: 37\u201362.",
+    "Buraschi, A., Kosowski, R. & F. Trojani (2014): When There Is No Place to Hide: Correlation Risk and the Cross-Section of Hedge Fund Returns. The Review of Financial Studies 27(2): 581\u2013616.",
+    "Ranaldo, A. & L. Favre (2005): Hedge Fund Performance and Higher-Moment Market Models. The Journal of Alternative Investments 8(3): 37-51.",
+    "Gupta, B., Cerrahoglu, B. & A. Daglioglu (2003): Evaluating Hedge Fund Performance: Traditional Versus Conditional Approaches. The Journal of Alternative Investments 6(3): 7-24."
+   ]
+  },
+  {
+   "name": "n_obs_tot",
+   "normalized": "n_obs_tot",
+   "dtype": "float64",
+   "n_missing": 892,
+   "n_unique": 33,
+   "stats": {
+    "min": 18.0,
+    "p25": 108.0,
+    "median": 212.0,
+    "p75": 254.0,
+    "max": 420432.0,
+    "mean": 6828.905512,
+    "sd": 41121.145066
+   }
+  },
+  {
+   "name": "n_time_series",
+   "normalized": "n_time_series",
+   "dtype": "float64",
+   "n_missing": 105,
+   "n_unique": 84,
+   "stats": {
+    "min": 18.0,
+    "p25": 58.0,
+    "median": 120.0,
+    "p75": 182.0,
+    "max": 475.0,
+    "mean": 124.881127,
+    "sd": 72.002359
+   }
+  },
+  {
+   "name": "n_cross_section",
+   "normalized": "n_cross_section",
+   "dtype": "float64",
+   "n_missing": 57,
+   "n_unique": 61,
+   "stats": {
+    "min": 1.0,
+    "p25": 1.0,
+    "median": 1.0,
+    "p75": 1.0,
+    "max": 14194.0,
+    "mean": 210.518493,
+    "sd": 1299.801498
+   }
+  }
+ ]
+}

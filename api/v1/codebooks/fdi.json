@@ -1,0 +1,396 @@
+{
+ "project": "fdi",
+ "source_file": "spillovers.dta",
+ "source_archive": "spillovers.zip",
+ "source_sheet": null,
+ "n_rows": 332,
+ "n_columns": 23,
+ "columns": [
+  {
+   "name": "e_w",
+   "normalized": "e_w",
+   "dtype": "float64",
+   "n_missing": 0,
+   "n_unique": 268,
+   "stats": {
+    "min": -2.303,
+    "p25": -0.286222,
+    "median": 0.010172,
+    "p75": 0.3065,
+    "max": 1.275,
+    "mean": -0.118804,
+    "sd": 0.862478
+   }
+  },
+  {
+   "name": "Forward",
+   "normalized": "forward",
+   "dtype": "int8",
+   "n_missing": 0,
+   "n_unique": 2,
+   "stats": {
+    "min": 0.0,
+    "p25": 0.0,
+    "median": 0.0,
+    "p75": 1.0,
+    "max": 1.0,
+    "mean": 0.373494,
+    "sd": 0.484462
+   },
+   "binary": true
+  },
+  {
+   "name": "Horizontal",
+   "normalized": "horizontal",
+   "dtype": "int8",
+   "n_missing": 0,
+   "n_unique": 2,
+   "stats": {
+    "min": 0.0,
+    "p25": 0.0,
+    "median": 0.0,
+    "p75": 0.0,
+    "max": 1.0,
+    "mean": 0.243976,
+    "sd": 0.430127
+   },
+   "binary": true
+  },
+  {
+   "name": "Lagged",
+   "normalized": "lagged",
+   "dtype": "int8",
+   "n_missing": 0,
+   "n_unique": 2,
+   "stats": {
+    "min": 0.0,
+    "p25": 0.0,
+    "median": 0.0,
+    "p75": 0.0,
+    "max": 1.0,
+    "mean": 0.228916,
+    "sd": 0.420769
+   },
+   "binary": true
+  },
+  {
+   "name": "Quadratic",
+   "normalized": "quadratic",
+   "dtype": "int8",
+   "n_missing": 0,
+   "n_unique": 2,
+   "stats": {
+    "min": 0.0,
+    "p25": 0.0,
+    "median": 0.0,
+    "p75": 0.0,
+    "max": 1.0,
+    "mean": 0.048193,
+    "sd": 0.214497
+   },
+   "binary": true
+  },
+  {
+   "name": "Differences",
+   "normalized": "differences",
+   "dtype": "int8",
+   "n_missing": 0,
+   "n_unique": 2,
+   "stats": {
+    "min": 0.0,
+    "p25": 0.0,
+    "median": 1.0,
+    "p75": 1.0,
+    "max": 1.0,
+    "mean": 0.64759,
+    "sd": 0.478442
+   },
+   "binary": true
+  },
+  {
+   "name": "No_of_firms",
+   "normalized": "no_of_firms",
+   "dtype": "float64",
+   "n_missing": 0,
+   "n_unique": 88,
+   "stats": {
+    "min": 5.147494,
+    "p25": 6.553415,
+    "median": 8.756525,
+    "p75": 9.405002,
+    "max": 10.072386,
+    "mean": 8.146589,
+    "sd": 1.501863
+   }
+  },
+  {
+   "name": "Data_year",
+   "normalized": "data_year",
+   "dtype": "float64",
+   "n_missing": 0,
+   "n_unique": 10,
+   "stats": {
+    "min": 0.0,
+    "p25": 3.5,
+    "median": 4.0,
+    "p75": 5.0,
+    "max": 7.5,
+    "mean": 4.085843,
+    "sd": 1.205856
+   }
+  },
+  {
+   "name": "Year_FE",
+   "normalized": "year_fe",
+   "dtype": "int8",
+   "n_missing": 0,
+   "n_unique": 2,
+   "stats": {
+    "min": 0.0,
+    "p25": 1.0,
+    "median": 1.0,
+    "p75": 1.0,
+    "max": 1.0,
+    "mean": 0.960843,
+    "sd": 0.19426
+   },
+   "binary": true
+  },
+  {
+   "name": "Sector_FE",
+   "normalized": "sector_fe",
+   "dtype": "int8",
+   "n_missing": 0,
+   "n_unique": 2,
+   "stats": {
+    "min": 0.0,
+    "p25": 0.0,
+    "median": 0.0,
+    "p75": 0.0,
+    "max": 1.0,
+    "mean": 0.120482,
+    "sd": 0.326016
+   },
+   "binary": true
+  },
+  {
+   "name": "Competition",
+   "normalized": "competition",
+   "dtype": "int8",
+   "n_missing": 0,
+   "n_unique": 2,
+   "stats": {
+    "min": 0.0,
+    "p25": 0.0,
+    "median": 0.0,
+    "p75": 0.0,
+    "max": 1.0,
+    "mean": 0.084337,
+    "sd": 0.278313
+   },
+   "binary": true
+  },
+  {
+   "name": "Fully_owned",
+   "normalized": "fully_owned",
+   "dtype": "int8",
+   "n_missing": 0,
+   "n_unique": 2,
+   "stats": {
+    "min": 0.0,
+    "p25": 0.0,
+    "median": 0.0,
+    "p75": 0.0,
+    "max": 1.0,
+    "mean": 0.126506,
+    "sd": 0.332921
+   },
+   "binary": true
+  },
+  {
+   "name": "Joint_ventures",
+   "normalized": "joint_ventures",
+   "dtype": "int8",
+   "n_missing": 0,
+   "n_unique": 2,
+   "stats": {
+    "min": 0.0,
+    "p25": 0.0,
+    "median": 0.0,
+    "p75": 0.0,
+    "max": 1.0,
+    "mean": 0.126506,
+    "sd": 0.332921
+   },
+   "binary": true
+  },
+  {
+   "name": "Services",
+   "normalized": "services",
+   "dtype": "int8",
+   "n_missing": 0,
+   "n_unique": 2,
+   "stats": {
+    "min": 0.0,
+    "p25": 0.0,
+    "median": 0.0,
+    "p75": 0.0,
+    "max": 1.0,
+    "mean": 0.027108,
+    "sd": 0.162645
+   },
+   "binary": true
+  },
+  {
+   "name": "Assets",
+   "normalized": "assets",
+   "dtype": "int8",
+   "n_missing": 0,
+   "n_unique": 2,
+   "stats": {
+    "min": 0.0,
+    "p25": 0.0,
+    "median": 0.0,
+    "p75": 1.0,
+    "max": 1.0,
+    "mean": 0.460843,
+    "sd": 0.499217
+   },
+   "binary": true
+  },
+  {
+   "name": "Output",
+   "normalized": "output",
+   "dtype": "int8",
+   "n_missing": 0,
+   "n_unique": 2,
+   "stats": {
+    "min": 0.0,
+    "p25": 0.0,
+    "median": 1.0,
+    "p75": 1.0,
+    "max": 1.0,
+    "mean": 0.671687,
+    "sd": 0.470308
+   },
+   "binary": true
+  },
+  {
+   "name": "POLS",
+   "normalized": "pols",
+   "dtype": "int8",
+   "n_missing": 0,
+   "n_unique": 2,
+   "stats": {
+    "min": 0.0,
+    "p25": 0.0,
+    "median": 0.0,
+    "p75": 0.0,
+    "max": 1.0,
+    "mean": 0.108434,
+    "sd": 0.311397
+   },
+   "binary": true
+  },
+  {
+   "name": "Random",
+   "normalized": "random",
+   "dtype": "int8",
+   "n_missing": 0,
+   "n_unique": 2,
+   "stats": {
+    "min": 0.0,
+    "p25": 0.0,
+    "median": 0.0,
+    "p75": 0.0,
+    "max": 1.0,
+    "mean": 0.036145,
+    "sd": 0.186932
+   },
+   "binary": true
+  },
+  {
+   "name": "GMM",
+   "normalized": "gmm",
+   "dtype": "int8",
+   "n_missing": 0,
+   "n_unique": 2,
+   "stats": {
+    "min": 0.0,
+    "p25": 0.0,
+    "median": 0.0,
+    "p75": 0.0,
+    "max": 1.0,
+    "mean": 0.039157,
+    "sd": 0.19426
+   },
+   "binary": true
+  },
+  {
+   "name": "Real_linkages",
+   "normalized": "real_linkages",
+   "dtype": "int8",
+   "n_missing": 0,
+   "n_unique": 2,
+   "stats": {
+    "min": 0.0,
+    "p25": 0.0,
+    "median": 0.0,
+    "p75": 1.0,
+    "max": 1.0,
+    "mean": 0.277108,
+    "sd": 0.448246
+   },
+   "binary": true
+  },
+  {
+   "name": "Impact_factor",
+   "normalized": "impact_factor",
+   "dtype": "float64",
+   "n_missing": 0,
+   "n_unique": 8,
+   "stats": {
+    "min": 0.0,
+    "p25": 0.038,
+    "median": 0.099,
+    "p75": 0.182,
+    "max": 0.309,
+    "mean": 0.091331,
+    "sd": 0.070606
+   }
+  },
+  {
+   "name": "Citations",
+   "normalized": "citations",
+   "dtype": "float64",
+   "n_missing": 0,
+   "n_unique": 8,
+   "stats": {
+    "min": 0.1,
+    "p25": 1.571429,
+    "median": 2.3,
+    "p75": 3.0,
+    "max": 22.75,
+    "mean": 2.993144,
+    "sd": 3.6913
+   }
+  },
+  {
+   "name": "Pub_year",
+   "normalized": "pub_year",
+   "dtype": "int8",
+   "n_missing": 0,
+   "n_unique": 6,
+   "role": "pub_year",
+   "stats": {
+    "min": 0.0,
+    "p25": 4.0,
+    "median": 6.0,
+    "p75": 7.0,
+    "max": 10.0,
+    "mean": 5.48494,
+    "sd": 1.537963
+   }
+  }
+ ]
+}

@@ -1,0 +1,16 @@
+# Published data files must be byte-identical to what was generated.
+# GitHub Pages serves these directly; any line-ending translation would corrupt
+# Parquet outright and silently change the checksum of every CSV.
+*.parquet   binary
+*.csv       -text
+*.dta       binary
+*.xlsx      binary
+*.xls       binary
+*.zip       binary
+
+# Machine-readable metadata: keep LF so hashes are stable across platforms.
+*.json      text eol=lf
+llms.txt    text eol=lf
+llms-full.txt text eol=lf
+robots.txt  text eol=lf
+sitemap.xml text eol=lf

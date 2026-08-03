@@ -1,0 +1,1203 @@
+{
+ "project": "electricity",
+ "source_file": "electricity.xlsx",
+ "source_archive": null,
+ "source_sheet": "data",
+ "n_rows": 4720,
+ "n_columns": 72,
+ "columns": [
+  {
+   "name": "study_name",
+   "normalized": "study_name",
+   "dtype": "str",
+   "n_missing": 0,
+   "n_unique": 462,
+   "top_values": [
+    "Walfridson (1987)",
+    "Bernstein & Griffin (2006)",
+    "Fisher & Kaysen (1962)",
+    "Cao et al. (2023)",
+    "McRae & Meeks (2016)"
+   ]
+  },
+  {
+   "name": "obs_id",
+   "normalized": "obs_id",
+   "dtype": "int64",
+   "n_missing": 0,
+   "n_unique": 4720,
+   "stats": {
+    "min": 1.0,
+    "p25": 1310.75,
+    "median": 2717.5,
+    "p75": 4062.25,
+    "max": 900691.0,
+    "mean": 126754.817585,
+    "sd": 310291.205503
+   }
+  },
+  {
+   "name": "n_obs",
+   "normalized": "n_obs",
+   "dtype": "float64",
+   "n_missing": 35,
+   "n_unique": 539,
+   "role": "n_obs",
+   "stats": {
+    "min": 8.0,
+    "p25": 67.0,
+    "median": 390.0,
+    "p75": 1536.0,
+    "max": 31333746.0,
+    "mean": 46793.505561,
+    "sd": 755200.371536
+   }
+  },
+  {
+   "name": "study_id",
+   "normalized": "study_id",
+   "dtype": "int64",
+   "n_missing": 0,
+   "n_unique": 462,
+   "role": "study_id",
+   "stats": {
+    "min": 1.0,
+    "p25": 125.0,
+    "median": 274.0,
+    "p75": 440.0,
+    "max": 692.0,
+    "mean": 292.441314,
+    "sd": 197.681068
+   }
+  },
+  {
+   "name": "exp",
+   "normalized": "exp",
+   "dtype": "float64",
+   "n_missing": 21,
+   "n_unique": 2,
+   "stats": {
+    "min": 0.0,
+    "p25": 0.0,
+    "median": 0.0,
+    "p75": 0.0,
+    "max": 1.0,
+    "mean": 0.041073,
+    "sd": 0.198479
+   },
+   "binary": true
+  },
+  {
+   "name": "formula",
+   "normalized": "formula",
+   "dtype": "float64",
+   "n_missing": 23,
+   "n_unique": 2,
+   "stats": {
+    "min": 0.0,
+    "p25": 1.0,
+    "median": 1.0,
+    "p75": 1.0,
+    "max": 1.0,
+    "mean": 0.82244,
+    "sd": 0.382183
+   },
+   "binary": true
+  },
+  {
+   "name": "effect",
+   "normalized": "effect",
+   "dtype": "float64",
+   "n_missing": 0,
+   "n_unique": 2098,
+   "role": "effect_estimate",
+   "stats": {
+    "min": -12.61,
+    "p25": -0.56994,
+    "median": -0.262,
+    "p75": -0.09,
+    "max": 9.39,
+    "mean": -0.392526,
+    "sd": 0.655198
+   }
+  },
+  {
+   "name": "se",
+   "normalized": "se",
+   "dtype": "float64",
+   "n_missing": 0,
+   "n_unique": 3136,
+   "role": "standard_error",
+   "stats": {
+    "min": 0.0,
+    "p25": 0.04,
+    "median": 0.083333,
+    "p75": 0.172341,
+    "max": 332.0988,
+    "mean": 0.274486,
+    "sd": 5.038797
+   }
+  },
+  {
+   "name": "income_elasticity",
+   "normalized": "income_elasticity",
+   "dtype": "float64",
+   "n_missing": 3564,
+   "n_unique": 684,
+   "stats": {
+    "min": -1.8,
+    "p25": 0.109,
+    "median": 0.299,
+    "p75": 0.61,
+    "max": 5.79,
+    "mean": 0.463084,
+    "sd": 0.638179
+   }
+  },
+  {
+   "name": "se_income_elasticity",
+   "normalized": "se_income_elasticity",
+   "dtype": "float64",
+   "n_missing": 3670,
+   "n_unique": 724,
+   "stats": {
+    "min": 1.3e-05,
+    "p25": 0.035818,
+    "median": 0.090909,
+    "p75": 0.194022,
+    "max": 2.64881,
+    "mean": 0.162149,
+    "sd": 0.24037
+   }
+  },
+  {
+   "name": "short_run",
+   "normalized": "short_run",
+   "dtype": "float64",
+   "n_missing": 21,
+   "n_unique": 2,
+   "stats": {
+    "min": 0.0,
+    "p25": 0.0,
+    "median": 0.0,
+    "p75": 1.0,
+    "max": 1.0,
+    "mean": 0.435412,
+    "sd": 0.495864
+   },
+   "binary": true
+  },
+  {
+   "name": "intermediate_run",
+   "normalized": "intermediate_run",
+   "dtype": "float64",
+   "n_missing": 21,
+   "n_unique": 2,
+   "stats": {
+    "min": 0.0,
+    "p25": 0.0,
+    "median": 0.0,
+    "p75": 1.0,
+    "max": 1.0,
+    "mean": 0.31645,
+    "sd": 0.46514
+   },
+   "binary": true
+  },
+  {
+   "name": "long_run",
+   "normalized": "long_run",
+   "dtype": "int64",
+   "n_missing": 0,
+   "n_unique": 2,
+   "stats": {
+    "min": 0.0,
+    "p25": 0.0,
+    "median": 0.0,
+    "p75": 1.0,
+    "max": 1.0,
+    "mean": 0.251483,
+    "sd": 0.433912
+   },
+   "binary": true
+  },
+  {
+   "name": "data_midyear",
+   "normalized": "data_midyear",
+   "dtype": "float64",
+   "n_missing": 23,
+   "n_unique": 199,
+   "stats": {
+    "min": 1937.75,
+    "p25": 1973.583333,
+    "median": 1988.5,
+    "p75": 2003.0,
+    "max": 2022.0,
+    "mean": 1988.07715,
+    "sd": 17.290357
+   }
+  },
+  {
+   "name": "data_period",
+   "normalized": "data_period",
+   "dtype": "float64",
+   "n_missing": 23,
+   "n_unique": 94,
+   "stats": {
+    "min": 0.0,
+    "p25": 4.416667,
+    "median": 14.0,
+    "p75": 20.0,
+    "max": 49.0,
+    "mean": 14.144347,
+    "sd": 10.80957
+   }
+  },
+  {
+   "name": "country",
+   "normalized": "country",
+   "dtype": "str",
+   "n_missing": 0,
+   "n_unique": 95,
+   "role": "country",
+   "top_values": [
+    "USA",
+    "Canada",
+    "Sweden",
+    "South Korea",
+    "Japan"
+   ]
+  },
+  {
+   "name": "loc_usa",
+   "normalized": "loc_usa",
+   "dtype": "int64",
+   "n_missing": 0,
+   "n_unique": 2,
+   "stats": {
+    "min": 0.0,
+    "p25": 0.0,
+    "median": 0.0,
+    "p75": 1.0,
+    "max": 1.0,
+    "mean": 0.441102,
+    "sd": 0.496571
+   },
+   "binary": true
+  },
+  {
+   "name": "loc_europe",
+   "normalized": "loc_europe",
+   "dtype": "int64",
+   "n_missing": 0,
+   "n_unique": 2,
+   "stats": {
+    "min": 0.0,
+    "p25": 0.0,
+    "median": 0.0,
+    "p75": 0.0,
+    "max": 1.0,
+    "mean": 0.182839,
+    "sd": 0.386575
+   },
+   "binary": true
+  },
+  {
+   "name": "loc_other",
+   "normalized": "loc_other",
+   "dtype": "int64",
+   "n_missing": 0,
+   "n_unique": 2,
+   "stats": {
+    "min": 0.0,
+    "p25": 0.0,
+    "median": 0.0,
+    "p75": 1.0,
+    "max": 1.0,
+    "mean": 0.385805,
+    "sd": 0.486836
+   },
+   "binary": true
+  },
+  {
+   "name": "daylight_hours",
+   "normalized": "daylight_hours",
+   "dtype": "float64",
+   "n_missing": 12,
+   "n_unique": 104,
+   "stats": {
+    "min": 0.0,
+    "p25": 14.5,
+    "median": 14.766667,
+    "p75": 15.266667,
+    "max": 21.033333,
+    "mean": 14.962527,
+    "sd": 1.748691
+   }
+  },
+  {
+   "name": "population",
+   "normalized": "population",
+   "dtype": "float64",
+   "n_missing": 7,
+   "n_unique": 478,
+   "stats": {
+    "min": 12.43,
+    "p25": 17.048938,
+    "median": 19.044146,
+    "p75": 19.296703,
+    "max": 22.577844,
+    "mean": 18.287196,
+    "sd": 1.572328
+   }
+  },
+  {
+   "name": "country_data",
+   "normalized": "country_data",
+   "dtype": "float64",
+   "n_missing": 21,
+   "n_unique": 2,
+   "stats": {
+    "min": 0.0,
+    "p25": 0.0,
+    "median": 0.0,
+    "p75": 1.0,
+    "max": 1.0,
+    "mean": 0.254948,
+    "sd": 0.435878
+   },
+   "binary": true
+  },
+  {
+   "name": "regional_data",
+   "normalized": "regional_data",
+   "dtype": "int64",
+   "n_missing": 0,
+   "n_unique": 2,
+   "stats": {
+    "min": 0.0,
+    "p25": 0.0,
+    "median": 0.0,
+    "p75": 1.0,
+    "max": 1.0,
+    "mean": 0.298093,
+    "sd": 0.457469
+   },
+   "binary": true
+  },
+  {
+   "name": "city_data",
+   "normalized": "city_data",
+   "dtype": "float64",
+   "n_missing": 21,
+   "n_unique": 2,
+   "stats": {
+    "min": 0.0,
+    "p25": 0.0,
+    "median": 0.0,
+    "p75": 0.0,
+    "max": 1.0,
+    "mean": 0.134497,
+    "sd": 0.341222
+   },
+   "binary": true
+  },
+  {
+   "name": "disaggregated_data",
+   "normalized": "disaggregated_data",
+   "dtype": "int64",
+   "n_missing": 0,
+   "n_unique": 2,
+   "stats": {
+    "min": 0.0,
+    "p25": 0.0,
+    "median": 0.0,
+    "p75": 0.0,
+    "max": 1.0,
+    "mean": 0.216314,
+    "sd": 0.411774
+   },
+   "binary": true
+  },
+  {
+   "name": "industrial_demand",
+   "normalized": "industrial_demand",
+   "dtype": "float64",
+   "n_missing": 21,
+   "n_unique": 2,
+   "stats": {
+    "min": 0.0,
+    "p25": 0.0,
+    "median": 0.0,
+    "p75": 1.0,
+    "max": 1.0,
+    "mean": 0.276867,
+    "sd": 0.447498
+   },
+   "binary": true
+  },
+  {
+   "name": "commercial_demand",
+   "normalized": "commercial_demand",
+   "dtype": "float64",
+   "n_missing": 21,
+   "n_unique": 2,
+   "stats": {
+    "min": 0.0,
+    "p25": 0.0,
+    "median": 0.0,
+    "p75": 0.0,
+    "max": 1.0,
+    "mean": 0.090019,
+    "sd": 0.28624
+   },
+   "binary": true
+  },
+  {
+   "name": "residential_demand",
+   "normalized": "residential_demand",
+   "dtype": "int64",
+   "n_missing": 0,
+   "n_unique": 2,
+   "stats": {
+    "min": 0.0,
+    "p25": 0.0,
+    "median": 1.0,
+    "p75": 1.0,
+    "max": 1.0,
+    "mean": 0.551695,
+    "sd": 0.497373
+   },
+   "binary": true
+  },
+  {
+   "name": "panel_data",
+   "normalized": "panel_data",
+   "dtype": "int64",
+   "n_missing": 0,
+   "n_unique": 2,
+   "stats": {
+    "min": 0.0,
+    "p25": 0.0,
+    "median": 0.0,
+    "p75": 1.0,
+    "max": 1.0,
+    "mean": 0.497881,
+    "sd": 0.500048
+   },
+   "binary": true
+  },
+  {
+   "name": "time_series_data",
+   "normalized": "time_series_data",
+   "dtype": "float64",
+   "n_missing": 21,
+   "n_unique": 2,
+   "stats": {
+    "min": 0.0,
+    "p25": 0.0,
+    "median": 0.0,
+    "p75": 1.0,
+    "max": 1.0,
+    "mean": 0.382209,
+    "sd": 0.485979
+   },
+   "binary": true
+  },
+  {
+   "name": "cross_section_data",
+   "normalized": "cross_section_data",
+   "dtype": "float64",
+   "n_missing": 21,
+   "n_unique": 2,
+   "stats": {
+    "min": 0.0,
+    "p25": 0.0,
+    "median": 0.0,
+    "p75": 0.0,
+    "max": 1.0,
+    "mean": 0.12109,
+    "sd": 0.326266
+   },
+   "binary": true
+  },
+  {
+   "name": "yearly_granularity",
+   "normalized": "yearly_granularity",
+   "dtype": "int64",
+   "n_missing": 0,
+   "n_unique": 2,
+   "stats": {
+    "min": 0.0,
+    "p25": 0.0,
+    "median": 1.0,
+    "p75": 1.0,
+    "max": 1.0,
+    "mean": 0.70911,
+    "sd": 0.454221
+   },
+   "binary": true
+  },
+  {
+   "name": "monthly_granularity",
+   "normalized": "monthly_granularity",
+   "dtype": "float64",
+   "n_missing": 21,
+   "n_unique": 2,
+   "stats": {
+    "min": 0.0,
+    "p25": 0.0,
+    "median": 0.0,
+    "p75": 0.0,
+    "max": 1.0,
+    "mean": 0.242392,
+    "sd": 0.428576
+   },
+   "binary": true
+  },
+  {
+   "name": "average_price",
+   "normalized": "average_price",
+   "dtype": "int64",
+   "n_missing": 0,
+   "n_unique": 2,
+   "stats": {
+    "min": 0.0,
+    "p25": 0.0,
+    "median": 1.0,
+    "p75": 1.0,
+    "max": 1.0,
+    "mean": 0.591102,
+    "sd": 0.491683
+   },
+   "binary": true
+  },
+  {
+   "name": "marginal_price",
+   "normalized": "marginal_price",
+   "dtype": "float64",
+   "n_missing": 21,
+   "n_unique": 2,
+   "stats": {
+    "min": 0.0,
+    "p25": 0.0,
+    "median": 0.0,
+    "p75": 0.0,
+    "max": 1.0,
+    "mean": 0.211534,
+    "sd": 0.40844
+   },
+   "binary": true
+  },
+  {
+   "name": "other_price",
+   "normalized": "other_price",
+   "dtype": "float64",
+   "n_missing": 21,
+   "n_unique": 2,
+   "stats": {
+    "min": 0.0,
+    "p25": 0.0,
+    "median": 0.0,
+    "p75": 0.0,
+    "max": 1.0,
+    "mean": 0.065333,
+    "sd": 0.247139
+   },
+   "binary": true
+  },
+  {
+   "name": "increasing_tariff",
+   "normalized": "increasing_tariff",
+   "dtype": "float64",
+   "n_missing": 21,
+   "n_unique": 2,
+   "stats": {
+    "min": 0.0,
+    "p25": 0.0,
+    "median": 0.0,
+    "p75": 0.0,
+    "max": 1.0,
+    "mean": 0.139604,
+    "sd": 0.346613
+   },
+   "binary": true
+  },
+  {
+   "name": "decreasing_tariff",
+   "normalized": "decreasing_tariff",
+   "dtype": "float64",
+   "n_missing": 21,
+   "n_unique": 2,
+   "stats": {
+    "min": 0.0,
+    "p25": 0.0,
+    "median": 0.0,
+    "p75": 0.0,
+    "max": 1.0,
+    "mean": 0.096191,
+    "sd": 0.294884
+   },
+   "binary": true
+  },
+  {
+   "name": "flat_tariff",
+   "normalized": "flat_tariff",
+   "dtype": "int64",
+   "n_missing": 0,
+   "n_unique": 2,
+   "stats": {
+    "min": 0.0,
+    "p25": 0.0,
+    "median": 0.0,
+    "p75": 0.0,
+    "max": 1.0,
+    "mean": 0.039195,
+    "sd": 0.194079
+   },
+   "binary": true
+  },
+  {
+   "name": "time_of_use_tariff",
+   "normalized": "time_of_use_tariff",
+   "dtype": "float64",
+   "n_missing": 21,
+   "n_unique": 2,
+   "stats": {
+    "min": 0.0,
+    "p25": 0.0,
+    "median": 0.0,
+    "p75": 0.0,
+    "max": 1.0,
+    "mean": 0.113003,
+    "sd": 0.31663
+   },
+   "binary": true
+  },
+  {
+   "name": "demographics_control",
+   "normalized": "demographics_control",
+   "dtype": "float64",
+   "n_missing": 21,
+   "n_unique": 2,
+   "stats": {
+    "min": 0.0,
+    "p25": 0.0,
+    "median": 0.0,
+    "p75": 1.0,
+    "max": 1.0,
+    "mean": 0.329432,
+    "sd": 0.470057
+   },
+   "binary": true
+  },
+  {
+   "name": "temperature_control",
+   "normalized": "temperature_control",
+   "dtype": "int64",
+   "n_missing": 0,
+   "n_unique": 2,
+   "stats": {
+    "min": 0.0,
+    "p25": 0.0,
+    "median": 0.0,
+    "p75": 1.0,
+    "max": 1.0,
+    "mean": 0.473093,
+    "sd": 0.499328
+   },
+   "binary": true
+  },
+  {
+   "name": "stock_control",
+   "normalized": "stock_control",
+   "dtype": "float64",
+   "n_missing": 21,
+   "n_unique": 2,
+   "stats": {
+    "min": 0.0,
+    "p25": 0.0,
+    "median": 0.0,
+    "p75": 0.0,
+    "max": 1.0,
+    "mean": 0.182166,
+    "sd": 0.386023
+   },
+   "binary": true
+  },
+  {
+   "name": "fuels_control",
+   "normalized": "fuels_control",
+   "dtype": "float64",
+   "n_missing": 21,
+   "n_unique": 2,
+   "stats": {
+    "min": 0.0,
+    "p25": 0.0,
+    "median": 0.0,
+    "p75": 1.0,
+    "max": 1.0,
+    "mean": 0.382635,
+    "sd": 0.486082
+   },
+   "binary": true
+  },
+  {
+   "name": "income_control",
+   "normalized": "income_control",
+   "dtype": "int64",
+   "n_missing": 0,
+   "n_unique": 2,
+   "stats": {
+    "min": 0.0,
+    "p25": 0.0,
+    "median": 1.0,
+    "p75": 1.0,
+    "max": 1.0,
+    "mean": 0.575424,
+    "sd": 0.494331
+   },
+   "binary": true
+  },
+  {
+   "name": "reduced_form",
+   "normalized": "reduced_form",
+   "dtype": "int64",
+   "n_missing": 0,
+   "n_unique": 2,
+   "stats": {
+    "min": 0.0,
+    "p25": 0.0,
+    "median": 0.0,
+    "p75": 1.0,
+    "max": 1.0,
+    "mean": 0.477331,
+    "sd": 0.499539
+   },
+   "binary": true
+  },
+  {
+   "name": "structural_form",
+   "normalized": "structural_form",
+   "dtype": "int64",
+   "n_missing": 0,
+   "n_unique": 2,
+   "stats": {
+    "min": 0.0,
+    "p25": 0.0,
+    "median": 0.0,
+    "p75": 1.0,
+    "max": 1.0,
+    "mean": 0.467373,
+    "sd": 0.498987
+   },
+   "binary": true
+  },
+  {
+   "name": "dynamic_model",
+   "normalized": "dynamic_model",
+   "dtype": "int64",
+   "n_missing": 0,
+   "n_unique": 2,
+   "stats": {
+    "min": 0.0,
+    "p25": 0.0,
+    "median": 1.0,
+    "p75": 1.0,
+    "max": 1.0,
+    "mean": 0.657415,
+    "sd": 0.474624
+   },
+   "binary": true
+  },
+  {
+   "name": "static_model",
+   "normalized": "static_model",
+   "dtype": "float64",
+   "n_missing": 21,
+   "n_unique": 2,
+   "stats": {
+    "min": 0.0,
+    "p25": 0.0,
+    "median": 0.0,
+    "p75": 1.0,
+    "max": 1.0,
+    "mean": 0.33986,
+    "sd": 0.473712
+   },
+   "binary": true
+  },
+  {
+   "name": "RE",
+   "normalized": "re",
+   "dtype": "float64",
+   "n_missing": 21,
+   "n_unique": 2,
+   "stats": {
+    "min": 0.0,
+    "p25": 0.0,
+    "median": 0.0,
+    "p75": 0.0,
+    "max": 1.0,
+    "mean": 0.01213,
+    "sd": 0.109479
+   },
+   "binary": true
+  },
+  {
+   "name": "FE",
+   "normalized": "fe",
+   "dtype": "float64",
+   "n_missing": 14,
+   "n_unique": 2,
+   "stats": {
+    "min": 0.0,
+    "p25": 0.0,
+    "median": 0.0,
+    "p75": 0.0,
+    "max": 1.0,
+    "mean": 0.135359,
+    "sd": 0.342143
+   },
+   "binary": true
+  },
+  {
+   "name": "ARDL",
+   "normalized": "ardl",
+   "dtype": "float64",
+   "n_missing": 21,
+   "n_unique": 2,
+   "stats": {
+    "min": 0.0,
+    "p25": 0.0,
+    "median": 0.0,
+    "p75": 0.0,
+    "max": 1.0,
+    "mean": 0.072356,
+    "sd": 0.259104
+   },
+   "binary": true
+  },
+  {
+   "name": "LE",
+   "normalized": "le",
+   "dtype": "float64",
+   "n_missing": 21,
+   "n_unique": 2,
+   "stats": {
+    "min": 0.0,
+    "p25": 0.0,
+    "median": 0.0,
+    "p75": 0.0,
+    "max": 1.0,
+    "mean": 0.180251,
+    "sd": 0.384437
+   },
+   "binary": true
+  },
+  {
+   "name": "ML",
+   "normalized": "ml",
+   "dtype": "float64",
+   "n_missing": 21,
+   "n_unique": 2,
+   "stats": {
+    "min": 0.0,
+    "p25": 0.0,
+    "median": 0.0,
+    "p75": 0.0,
+    "max": 1.0,
+    "mean": 0.059374,
+    "sd": 0.236349
+   },
+   "binary": true
+  },
+  {
+   "name": "GMM",
+   "normalized": "gmm",
+   "dtype": "float64",
+   "n_missing": 21,
+   "n_unique": 2,
+   "stats": {
+    "min": 0.0,
+    "p25": 0.0,
+    "median": 0.0,
+    "p75": 0.0,
+    "max": 1.0,
+    "mean": 0.044265,
+    "sd": 0.205705
+   },
+   "binary": true
+  },
+  {
+   "name": "OLS",
+   "normalized": "ols",
+   "dtype": "float64",
+   "n_missing": 16,
+   "n_unique": 2,
+   "stats": {
+    "min": 0.0,
+    "p25": 0.0,
+    "median": 0.0,
+    "p75": 1.0,
+    "max": 1.0,
+    "mean": 0.38244,
+    "sd": 0.486035
+   },
+   "binary": true
+  },
+  {
+   "name": "IV",
+   "normalized": "iv",
+   "dtype": "float64",
+   "n_missing": 21,
+   "n_unique": 2,
+   "stats": {
+    "min": 0.0,
+    "p25": 0.0,
+    "median": 0.0,
+    "p75": 0.0,
+    "max": 1.0,
+    "mean": 0.068738,
+    "sd": 0.253035
+   },
+   "binary": true
+  },
+  {
+   "name": "linear_function",
+   "normalized": "linear_function",
+   "dtype": "float64",
+   "n_missing": 21,
+   "n_unique": 2,
+   "stats": {
+    "min": 0.0,
+    "p25": 0.0,
+    "median": 0.0,
+    "p75": 0.0,
+    "max": 1.0,
+    "mean": 0.130453,
+    "sd": 0.336837
+   },
+   "binary": true
+  },
+  {
+   "name": "semilog_function",
+   "normalized": "semilog_function",
+   "dtype": "float64",
+   "n_missing": 21,
+   "n_unique": 2,
+   "stats": {
+    "min": 0.0,
+    "p25": 0.0,
+    "median": 0.0,
+    "p75": 0.0,
+    "max": 1.0,
+    "mean": 0.018302,
+    "sd": 0.134055
+   },
+   "binary": true
+  },
+  {
+   "name": "doublelog_function",
+   "normalized": "doublelog_function",
+   "dtype": "int64",
+   "n_missing": 0,
+   "n_unique": 2,
+   "stats": {
+    "min": 0.0,
+    "p25": 0.0,
+    "median": 1.0,
+    "p75": 1.0,
+    "max": 1.0,
+    "mean": 0.659958,
+    "sd": 0.473773
+   },
+   "binary": true
+  },
+  {
+   "name": "publication_year",
+   "normalized": "publication_year",
+   "dtype": "int64",
+   "n_missing": 0,
+   "n_unique": 57,
+   "role": "pub_year",
+   "stats": {
+    "min": 1951.0,
+    "p25": 1985.0,
+    "median": 2005.0,
+    "p75": 2016.0,
+    "max": 2026.0,
+    "mean": 1999.933475,
+    "sd": 17.110161
+   }
+  },
+  {
+   "name": "impact_factor",
+   "normalized": "impact_factor",
+   "dtype": "float64",
+   "n_missing": 231,
+   "n_unique": 85,
+   "stats": {
+    "min": 0.0,
+    "p25": 0.003,
+    "median": 0.061,
+    "p75": 0.117,
+    "max": 11.2,
+    "mean": 0.569754,
+    "sd": 1.796023
+   }
+  },
+  {
+   "name": "citations",
+   "normalized": "citations",
+   "dtype": "float64",
+   "n_missing": 5,
+   "n_unique": 401,
+   "stats": {
+    "min": 0.0,
+    "p25": 0.397683,
+    "median": 1.127811,
+    "p75": 1.94591,
+    "max": 150.0,
+    "mean": 2.395696,
+    "sd": 9.917131
+   }
+  },
+  {
+   "name": "rung",
+   "normalized": "rung",
+   "dtype": "float64",
+   "n_missing": 877,
+   "n_unique": 6,
+   "stats": {
+    "min": 1.0,
+    "p25": 4.0,
+    "median": 5.0,
+    "p75": 5.0,
+    "max": 6.0,
+    "mean": 4.790788,
+    "sd": 0.993183
+   }
+  },
+  {
+   "name": "preferred",
+   "normalized": "preferred",
+   "dtype": "float64",
+   "n_missing": 797,
+   "n_unique": 2,
+   "stats": {
+    "min": 0.0,
+    "p25": 0.0,
+    "median": 0.0,
+    "p75": 1.0,
+    "max": 1.0,
+    "mean": 0.294163,
+    "sd": 0.455724
+   },
+   "binary": true
+  },
+  {
+   "name": "preferred_expl",
+   "normalized": "preferred_expl",
+   "dtype": "str",
+   "n_missing": 1106,
+   "n_unique": 481,
+   "top_values": [
+    "Authors' headline national short-run own-price elasticities: residential -0.24 (Table D.1) and commercial -0.21 (Table D.2), emphasized as inelastic and stable over 20 years || 'The estimate indicates that short run price elasticity (-0.21) is also inelastic and similar to previous estimates in the literature.' (p.69); 'demand is relatively inelastic to price. We also found that in the past 20 years, this relationship has not changed significantly' (Exec Summary, p.x)",
+    "Authors' control-group headline: double-log, CD-present, non-IV, static -> commercial -0.089 (obs 4254) and industrial -0.103 (obs 4314) || 'For the experiment's control group, characterized by a double-log panel data regression specification and accounts for CD presence, the static elasticity estimate for commercial electricity demand is -0.089 ... The static elasticity estimate for the U.S. industrial electricity demand is -0.103' (p.2); 'The non-IV elasticity estimates shaded in light green are preferable to the other estimates because CD presence is highly significant ... and the price ratio data are not endogenous based on the DWH test results' (p.9)",
+    "Authors' headline implied own-price elasticities from expected-marginal-price IV specification: low/mid/high tariff-knowledge groups = -0.24/-0.28/-0.33; base preferred elasticity around -0.28 (exp. marginal) / -0.39 (IV). Abstract stresses heterogeneity rather than a single point estimate. || 'Using expected marginal price, the implied price elasticity for the low group is -0.24, compared to price elasticities of -0.28 and -0.33 for the middle and high groups.' (p.16)",
+    "Whole-panel (group-means) residential price elasticity is the authors' headline; added as group estimates (not among coded country cells) || 'an inelastic price elasticity of approximately -0.4 in the long run ... a price elasticity of approximately -0.1' (Exec. Summary, p.1-2)",
+    "No single point estimate is the headline; the contribution is the asymmetric elasticity-by-era/region series. Marked the estimates the authors verbally single out as representative: Gyeongbuk residential P1 -0.652 (obs 4591) as the largest negative residential elasticity, and Gyeonggi industrial P1-B -0.230 (obs 4619) as the walked-through asymmetry example. || 'The region with the highest negative elasticity during P1 is Gyeongbuk, with an estimate of -0.652' (p.13); 'Gyeonggi had elasticity of -0.092 in P1-A, -0.230 in P1-B, and -0.074 in P2' (p.15)."
+   ]
+  },
+  {
+   "name": "iddatabase",
+   "normalized": "iddatabase",
+   "dtype": "float64",
+   "n_missing": 877,
+   "n_unique": 374,
+   "stats": {
+    "min": 1.0,
+    "p25": 106.0,
+    "median": 231.0,
+    "p75": 319.0,
+    "max": 420.0,
+    "mean": 212.571949,
+    "sd": 121.134807
+   }
+  },
+  {
+   "name": "se_source",
+   "normalized": "se_source",
+   "dtype": "str",
+   "n_missing": 0,
+   "n_unique": 4,
+   "top_values": [
+    "reported",
+    "imputed_uniform_t",
+    "derived_from_t",
+    "recomputed_from_t_DEDDverified"
+   ]
+  },
+  {
+   "name": "effect_M",
+   "normalized": "effect_m",
+   "dtype": "float64",
+   "n_missing": 859,
+   "n_unique": 2269,
+   "stats": {
+    "min": -12.61,
+    "p25": -0.57,
+    "median": -0.2715,
+    "p75": -0.1,
+    "max": 9.39,
+    "mean": -0.389179,
+    "sd": 0.653588
+   }
+  },
+  {
+   "name": "effect_M_source",
+   "normalized": "effect_m_source",
+   "dtype": "str",
+   "n_missing": 0,
+   "n_unique": 4,
+   "top_values": [
+    "native_M",
+    "slutsky_H_s0.04",
+    "other_type",
+    "unconvertible_H_noEta"
+   ]
+  },
+  {
+   "name": "in_M_pool",
+   "normalized": "in_m_pool",
+   "dtype": "int64",
+   "n_missing": 0,
+   "n_unique": 2,
+   "stats": {
+    "min": 0.0,
+    "p25": 1.0,
+    "median": 1.0,
+    "p75": 1.0,
+    "max": 1.0,
+    "mean": 0.818008,
+    "sd": 0.385878
+   },
+   "binary": true
+  },
+  {
+   "name": "reference",
+   "normalized": "reference",
+   "dtype": "str",
+   "n_missing": 0,
+   "n_unique": 462,
+   "top_values": [
+    "Walfridson, B. (1987): \u201cDynamic Models of Factor Demand: An Application to Swedish Industry.\u201d Ph.D. Thesis, Gothenburg University: School of Business, Economics and Law, Sweden",
+    "Bernstein, M. A., and J. Griffin (2006): \u201cRegional Differences in the Price-Elasticity of Demand for Energy.\u201d Prepared for the National Renewable Energy Laboratory, Rand Corporation Subcontract Report NREL/SR-620-39512, Santa Monica, California",
+    "Fisher, F.M., and G.S. Kaysen (1962): \u201cA Study in Econometrics: The demand for electricity in the United States.\u201d North-Holland Pub. Co.: Amsterdam",
+    "Cao, K. H., Qi, H. S., Li, R., Woo, C. K., Tishler, A., & Zarnikau, J. (2023): \"An experiment in own-price elasticity estimation for non-residential electricity demand in the US.\"\u00a0Utilities Policy,\u00a081, 101489.",
+    "McRae, S. & R. Meeks (2016): \"Price perception and electricity demand with nonlinear tariffs.\" Mimeo."
+   ]
+  }
+ ]
+}

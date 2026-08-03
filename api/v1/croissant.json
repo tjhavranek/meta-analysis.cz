@@ -1,0 +1,664 @@
+{
+ "@context": {
+  "@vocab": "https://schema.org/",
+  "cr": "http://mlcommons.org/croissant/",
+  "sc": "https://schema.org/",
+  "data": {
+   "@id": "cr:data",
+   "@type": "@json"
+  },
+  "recordSet": "cr:recordSet",
+  "field": "cr:field",
+  "fileObject": "cr:fileObject",
+  "distribution": "cr:distribution",
+  "dataType": {
+   "@id": "cr:dataType",
+   "@type": "@vocab"
+  }
+ },
+ "@type": "sc:Dataset",
+ "conformsTo": "http://mlcommons.org/croissant/1.0",
+ "name": "meta-analysis-cz",
+ "version": "1.0.0",
+ "description": "Estimate-level data from meta-analyses in economics and the social sciences. 44 datasets, 65,349 estimates, each with the hand-coded study and design characteristics collected for the original paper.",
+ "url": "https://meta-analysis.cz",
+ "license": "https://creativecommons.org/licenses/by/4.0/",
+ "citation": "Havranek, T. and Z. Irsova (2026). meta-analysis.cz: data and code for meta-analyses in economics.",
+ "keywords": [
+  "meta-analysis",
+  "publication bias",
+  "economics",
+  "effect size",
+  "research synthesis"
+ ],
+ "creator": [
+  {
+   "@type": "Person",
+   "name": "Tomas Havranek"
+  },
+  {
+   "@type": "Person",
+   "name": "Zuzana Irsova"
+  }
+ ],
+ "distribution": [
+  {
+   "@type": "cr:FileObject",
+   "@id": "activism.parquet",
+   "name": "activism.parquet",
+   "contentUrl": "https://meta-analysis.cz/data/v1/activism/activism.parquet",
+   "encodingFormat": "application/vnd.apache.parquet",
+   "sha256": "see codebook"
+  },
+  {
+   "@type": "cr:FileObject",
+   "@id": "alphas.parquet",
+   "name": "alphas.parquet",
+   "contentUrl": "https://meta-analysis.cz/data/v1/alphas/alphas.parquet",
+   "encodingFormat": "application/vnd.apache.parquet",
+   "sha256": "see codebook"
+  },
+  {
+   "@type": "cr:FileObject",
+   "@id": "armington.parquet",
+   "name": "armington.parquet",
+   "contentUrl": "https://meta-analysis.cz/data/v1/armington/armington.parquet",
+   "encodingFormat": "application/vnd.apache.parquet",
+   "sha256": "see codebook"
+  },
+  {
+   "@type": "cr:FileObject",
+   "@id": "beauty.parquet",
+   "name": "beauty.parquet",
+   "contentUrl": "https://meta-analysis.cz/data/v1/beauty/beauty.parquet",
+   "encodingFormat": "application/vnd.apache.parquet",
+   "sha256": "see codebook"
+  },
+  {
+   "@type": "cr:FileObject",
+   "@id": "bma.parquet",
+   "name": "bma.parquet",
+   "contentUrl": "https://meta-analysis.cz/data/v1/bma/bma.parquet",
+   "encodingFormat": "application/vnd.apache.parquet",
+   "sha256": "see codebook"
+  },
+  {
+   "@type": "cr:FileObject",
+   "@id": "border.parquet",
+   "name": "border.parquet",
+   "contentUrl": "https://meta-analysis.cz/data/v1/border/border.parquet",
+   "encodingFormat": "application/vnd.apache.parquet",
+   "sha256": "see codebook"
+  },
+  {
+   "@type": "cr:FileObject",
+   "@id": "class.parquet",
+   "name": "class.parquet",
+   "contentUrl": "https://meta-analysis.cz/data/v1/class/class.parquet",
+   "encodingFormat": "application/vnd.apache.parquet",
+   "sha256": "see codebook"
+  },
+  {
+   "@type": "cr:FileObject",
+   "@id": "climate.parquet",
+   "name": "climate.parquet",
+   "contentUrl": "https://meta-analysis.cz/data/v1/climate/climate.parquet",
+   "encodingFormat": "application/vnd.apache.parquet",
+   "sha256": "see codebook"
+  },
+  {
+   "@type": "cr:FileObject",
+   "@id": "competition.parquet",
+   "name": "competition.parquet",
+   "contentUrl": "https://meta-analysis.cz/data/v1/competition/competition.parquet",
+   "encodingFormat": "application/vnd.apache.parquet",
+   "sha256": "see codebook"
+  },
+  {
+   "@type": "cr:FileObject",
+   "@id": "discrate.parquet",
+   "name": "discrate.parquet",
+   "contentUrl": "https://meta-analysis.cz/data/v1/discrate/discrate.parquet",
+   "encodingFormat": "application/vnd.apache.parquet",
+   "sha256": "see codebook"
+  },
+  {
+   "@type": "cr:FileObject",
+   "@id": "dst.parquet",
+   "name": "dst.parquet",
+   "contentUrl": "https://meta-analysis.cz/data/v1/dst/dst.parquet",
+   "encodingFormat": "application/vnd.apache.parquet",
+   "sha256": "see codebook"
+  },
+  {
+   "@type": "cr:FileObject",
+   "@id": "education.parquet",
+   "name": "education.parquet",
+   "contentUrl": "https://meta-analysis.cz/data/v1/education/education.parquet",
+   "encodingFormat": "application/vnd.apache.parquet",
+   "sha256": "see codebook"
+  },
+  {
+   "@type": "cr:FileObject",
+   "@id": "eis.parquet",
+   "name": "eis.parquet",
+   "contentUrl": "https://meta-analysis.cz/data/v1/eis/eis.parquet",
+   "encodingFormat": "application/vnd.apache.parquet",
+   "sha256": "see codebook"
+  },
+  {
+   "@type": "cr:FileObject",
+   "@id": "electricity.parquet",
+   "name": "electricity.parquet",
+   "contentUrl": "https://meta-analysis.cz/data/v1/electricity/electricity.parquet",
+   "encodingFormat": "application/vnd.apache.parquet",
+   "sha256": "see codebook"
+  },
+  {
+   "@type": "cr:FileObject",
+   "@id": "esg.parquet",
+   "name": "esg.parquet",
+   "contentUrl": "https://meta-analysis.cz/data/v1/esg/esg.parquet",
+   "encodingFormat": "application/vnd.apache.parquet",
+   "sha256": "see codebook"
+  },
+  {
+   "@type": "cr:FileObject",
+   "@id": "euro.parquet",
+   "name": "euro.parquet",
+   "contentUrl": "https://meta-analysis.cz/data/v1/euro/euro.parquet",
+   "encodingFormat": "application/vnd.apache.parquet",
+   "sha256": "see codebook"
+  },
+  {
+   "@type": "cr:FileObject",
+   "@id": "excess_sensitivity.parquet",
+   "name": "excess_sensitivity.parquet",
+   "contentUrl": "https://meta-analysis.cz/data/v1/excess_sensitivity/excess_sensitivity.parquet",
+   "encodingFormat": "application/vnd.apache.parquet",
+   "sha256": "see codebook"
+  },
+  {
+   "@type": "cr:FileObject",
+   "@id": "fdi.parquet",
+   "name": "fdi.parquet",
+   "contentUrl": "https://meta-analysis.cz/data/v1/fdi/fdi.parquet",
+   "encodingFormat": "application/vnd.apache.parquet",
+   "sha256": "see codebook"
+  },
+  {
+   "@type": "cr:FileObject",
+   "@id": "forward.parquet",
+   "name": "forward.parquet",
+   "contentUrl": "https://meta-analysis.cz/data/v1/forward/forward.parquet",
+   "encodingFormat": "application/vnd.apache.parquet",
+   "sha256": "see codebook"
+  },
+  {
+   "@type": "cr:FileObject",
+   "@id": "frisch.parquet",
+   "name": "frisch.parquet",
+   "contentUrl": "https://meta-analysis.cz/data/v1/frisch/frisch.parquet",
+   "encodingFormat": "application/vnd.apache.parquet",
+   "sha256": "see codebook"
+  },
+  {
+   "@type": "cr:FileObject",
+   "@id": "gasoline.parquet",
+   "name": "gasoline.parquet",
+   "contentUrl": "https://meta-analysis.cz/data/v1/gasoline/gasoline.parquet",
+   "encodingFormat": "application/vnd.apache.parquet",
+   "sha256": "see codebook"
+  },
+  {
+   "@type": "cr:FileObject",
+   "@id": "gasoline_price.parquet",
+   "name": "gasoline_price.parquet",
+   "contentUrl": "https://meta-analysis.cz/data/v1/gasoline_price/gasoline_price.parquet",
+   "encodingFormat": "application/vnd.apache.parquet",
+   "sha256": "see codebook"
+  },
+  {
+   "@type": "cr:FileObject",
+   "@id": "habits.parquet",
+   "name": "habits.parquet",
+   "contentUrl": "https://meta-analysis.cz/data/v1/habits/habits.parquet",
+   "encodingFormat": "application/vnd.apache.parquet",
+   "sha256": "see codebook"
+  },
+  {
+   "@type": "cr:FileObject",
+   "@id": "hedge.parquet",
+   "name": "hedge.parquet",
+   "contentUrl": "https://meta-analysis.cz/data/v1/hedge/hedge.parquet",
+   "encodingFormat": "application/vnd.apache.parquet",
+   "sha256": "see codebook"
+  },
+  {
+   "@type": "cr:FileObject",
+   "@id": "house_prices.parquet",
+   "name": "house_prices.parquet",
+   "contentUrl": "https://meta-analysis.cz/data/v1/house_prices/house_prices.parquet",
+   "encodingFormat": "application/vnd.apache.parquet",
+   "sha256": "see codebook"
+  },
+  {
+   "@type": "cr:FileObject",
+   "@id": "incentives.parquet",
+   "name": "incentives.parquet",
+   "contentUrl": "https://meta-analysis.cz/data/v1/incentives/incentives.parquet",
+   "encodingFormat": "application/vnd.apache.parquet",
+   "sha256": "see codebook"
+  },
+  {
+   "@type": "cr:FileObject",
+   "@id": "inflation.parquet",
+   "name": "inflation.parquet",
+   "contentUrl": "https://meta-analysis.cz/data/v1/inflation/inflation.parquet",
+   "encodingFormat": "application/vnd.apache.parquet",
+   "sha256": "see codebook"
+  },
+  {
+   "@type": "cr:FileObject",
+   "@id": "lags.parquet",
+   "name": "lags.parquet",
+   "contentUrl": "https://meta-analysis.cz/data/v1/lags/lags.parquet",
+   "encodingFormat": "application/vnd.apache.parquet",
+   "sha256": "see codebook"
+  },
+  {
+   "@type": "cr:FileObject",
+   "@id": "learning.parquet",
+   "name": "learning.parquet",
+   "contentUrl": "https://meta-analysis.cz/data/v1/learning/learning.parquet",
+   "encodingFormat": "application/vnd.apache.parquet",
+   "sha256": "see codebook"
+  },
+  {
+   "@type": "cr:FileObject",
+   "@id": "migrant.parquet",
+   "name": "migrant.parquet",
+   "contentUrl": "https://meta-analysis.cz/data/v1/migrant/migrant.parquet",
+   "encodingFormat": "application/vnd.apache.parquet",
+   "sha256": "see codebook"
+  },
+  {
+   "@type": "cr:FileObject",
+   "@id": "price_puzzle.parquet",
+   "name": "price_puzzle.parquet",
+   "contentUrl": "https://meta-analysis.cz/data/v1/price_puzzle/price_puzzle.parquet",
+   "encodingFormat": "application/vnd.apache.parquet",
+   "sha256": "see codebook"
+  },
+  {
+   "@type": "cr:FileObject",
+   "@id": "reforms.parquet",
+   "name": "reforms.parquet",
+   "contentUrl": "https://meta-analysis.cz/data/v1/reforms/reforms.parquet",
+   "encodingFormat": "application/vnd.apache.parquet",
+   "sha256": "see codebook"
+  },
+  {
+   "@type": "cr:FileObject",
+   "@id": "remittances.parquet",
+   "name": "remittances.parquet",
+   "contentUrl": "https://meta-analysis.cz/data/v1/remittances/remittances.parquet",
+   "encodingFormat": "application/vnd.apache.parquet",
+   "sha256": "see codebook"
+  },
+  {
+   "@type": "cr:FileObject",
+   "@id": "resource_curse.parquet",
+   "name": "resource_curse.parquet",
+   "contentUrl": "https://meta-analysis.cz/data/v1/resource_curse/resource_curse.parquet",
+   "encodingFormat": "application/vnd.apache.parquet",
+   "sha256": "see codebook"
+  },
+  {
+   "@type": "cr:FileObject",
+   "@id": "risk.parquet",
+   "name": "risk.parquet",
+   "contentUrl": "https://meta-analysis.cz/data/v1/risk/risk.parquet",
+   "encodingFormat": "application/vnd.apache.parquet",
+   "sha256": "see codebook"
+  },
+  {
+   "@type": "cr:FileObject",
+   "@id": "scc.parquet",
+   "name": "scc.parquet",
+   "contentUrl": "https://meta-analysis.cz/data/v1/scc/scc.parquet",
+   "encodingFormat": "application/vnd.apache.parquet",
+   "sha256": "see codebook"
+  },
+  {
+   "@type": "cr:FileObject",
+   "@id": "sigma.parquet",
+   "name": "sigma.parquet",
+   "contentUrl": "https://meta-analysis.cz/data/v1/sigma/sigma.parquet",
+   "encodingFormat": "application/vnd.apache.parquet",
+   "sha256": "see codebook"
+  },
+  {
+   "@type": "cr:FileObject",
+   "@id": "size.parquet",
+   "name": "size.parquet",
+   "contentUrl": "https://meta-analysis.cz/data/v1/size/size.parquet",
+   "encodingFormat": "application/vnd.apache.parquet",
+   "sha256": "see codebook"
+  },
+  {
+   "@type": "cr:FileObject",
+   "@id": "skill.parquet",
+   "name": "skill.parquet",
+   "contentUrl": "https://meta-analysis.cz/data/v1/skill/skill.parquet",
+   "encodingFormat": "application/vnd.apache.parquet",
+   "sha256": "see codebook"
+  },
+  {
+   "@type": "cr:FileObject",
+   "@id": "spillovers.parquet",
+   "name": "spillovers.parquet",
+   "contentUrl": "https://meta-analysis.cz/data/v1/spillovers/spillovers.parquet",
+   "encodingFormat": "application/vnd.apache.parquet",
+   "sha256": "see codebook"
+  },
+  {
+   "@type": "cr:FileObject",
+   "@id": "students.parquet",
+   "name": "students.parquet",
+   "contentUrl": "https://meta-analysis.cz/data/v1/students/students.parquet",
+   "encodingFormat": "application/vnd.apache.parquet",
+   "sha256": "see codebook"
+  },
+  {
+   "@type": "cr:FileObject",
+   "@id": "substitution.parquet",
+   "name": "substitution.parquet",
+   "contentUrl": "https://meta-analysis.cz/data/v1/substitution/substitution.parquet",
+   "encodingFormat": "application/vnd.apache.parquet",
+   "sha256": "see codebook"
+  },
+  {
+   "@type": "cr:FileObject",
+   "@id": "trust.parquet",
+   "name": "trust.parquet",
+   "contentUrl": "https://meta-analysis.cz/data/v1/trust/trust.parquet",
+   "encodingFormat": "application/vnd.apache.parquet",
+   "sha256": "see codebook"
+  },
+  {
+   "@type": "cr:FileObject",
+   "@id": "water.parquet",
+   "name": "water.parquet",
+   "contentUrl": "https://meta-analysis.cz/data/v1/water/water.parquet",
+   "encodingFormat": "application/vnd.apache.parquet",
+   "sha256": "see codebook"
+  }
+ ],
+ "recordSet": [
+  {
+   "@type": "cr:RecordSet",
+   "@id": "activism",
+   "name": "activism",
+   "description": "Does Shareholder Activism Create Value? A Meta-Analysis"
+  },
+  {
+   "@type": "cr:RecordSet",
+   "@id": "alphas",
+   "name": "alphas",
+   "description": "What Matters in Explaining the Variation in Hedge Fund Performance? A Meta-Analysis"
+  },
+  {
+   "@type": "cr:RecordSet",
+   "@id": "armington",
+   "name": "armington",
+   "description": "A Meta-Analysis of the Trade Cost Elasticity"
+  },
+  {
+   "@type": "cr:RecordSet",
+   "@id": "beauty",
+   "name": "beauty",
+   "description": "Beauty and Professional Success: A Meta-Analysis"
+  },
+  {
+   "@type": "cr:RecordSet",
+   "@id": "bma",
+   "name": "bma",
+   "description": "A Meta-Analysis of Horizontal Spillovers from FDI"
+  },
+  {
+   "@type": "cr:RecordSet",
+   "@id": "border",
+   "name": "border",
+   "description": "Do Borders Really Slash Trade? A Meta-Analysis"
+  },
+  {
+   "@type": "cr:RecordSet",
+   "@id": "class",
+   "name": "class",
+   "description": "Class Size and Student Achievement: A Meta-Analysis"
+  },
+  {
+   "@type": "cr:RecordSet",
+   "@id": "climate",
+   "name": "climate",
+   "description": "Publication Bias in Measuring Anthropogenic Climate Change"
+  },
+  {
+   "@type": "cr:RecordSet",
+   "@id": "competition",
+   "name": "competition",
+   "description": "Bank Competition and Financial Stability: Much Ado About Nothing?"
+  },
+  {
+   "@type": "cr:RecordSet",
+   "@id": "discrate",
+   "name": "discrate",
+   "description": "Individual Discount Rates: A Meta-Analysis of Experimental Evidence"
+  },
+  {
+   "@type": "cr:RecordSet",
+   "@id": "dst",
+   "name": "dst",
+   "description": "Does Daylight Saving Save Electricity? A Meta-Analysis"
+  },
+  {
+   "@type": "cr:RecordSet",
+   "@id": "education",
+   "name": "education",
+   "description": "Publication Bias in Measuring the Impact of Tuition on Enrollment"
+  },
+  {
+   "@type": "cr:RecordSet",
+   "@id": "eis",
+   "name": "eis",
+   "description": "Publication Bias in Measuring Intertemporal Substitution"
+  },
+  {
+   "@type": "cr:RecordSet",
+   "@id": "electricity",
+   "name": "electricity",
+   "description": "Price Elasticity of Electricity Demand: A Meta-Analysis"
+  },
+  {
+   "@type": "cr:RecordSet",
+   "@id": "esg",
+   "name": "esg",
+   "description": "Do Female Directors Raise ESG Ratings? A Meta-Analysis"
+  },
+  {
+   "@type": "cr:RecordSet",
+   "@id": "euro",
+   "name": "euro",
+   "description": "A Meta-Analysis of the Trade Effect of the Euro"
+  },
+  {
+   "@type": "cr:RecordSet",
+   "@id": "excess_sensitivity",
+   "name": "excess_sensitivity",
+   "description": "A Meta-Analysis of the Excess Sensitivity of Consumption to Anticipated Income Changes"
+  },
+  {
+   "@type": "cr:RecordSet",
+   "@id": "fdi",
+   "name": "fdi",
+   "description": "Foreign Capital and Domestic Productivity in the Czech Republic: A Meta-Regression Analysis"
+  },
+  {
+   "@type": "cr:RecordSet",
+   "@id": "forward",
+   "name": "forward",
+   "description": "How Puzzling Is the Forward Premium Puzzle? A Meta-Analysis"
+  },
+  {
+   "@type": "cr:RecordSet",
+   "@id": "frisch",
+   "name": "frisch",
+   "description": "Publication and Identification Biases in Measuring the Intertemporal Substitution of Labor Supply"
+  },
+  {
+   "@type": "cr:RecordSet",
+   "@id": "gasoline",
+   "name": "gasoline",
+   "description": "A Meta-Analysis of the Income Elasticity of Gasoline Demand"
+  },
+  {
+   "@type": "cr:RecordSet",
+   "@id": "gasoline_price",
+   "name": "gasoline_price",
+   "description": "A Meta-Analysis of the Price Elasticity of Gasoline Demand"
+  },
+  {
+   "@type": "cr:RecordSet",
+   "@id": "habits",
+   "name": "habits",
+   "description": "Habit Formation in Consumption: A Meta-Analysis"
+  },
+  {
+   "@type": "cr:RecordSet",
+   "@id": "hedge",
+   "name": "hedge",
+   "description": "Hedge Fund Performance: A Meta-Analysis"
+  },
+  {
+   "@type": "cr:RecordSet",
+   "@id": "house_prices",
+   "name": "house_prices",
+   "description": "When Does Monetary Policy Sway House Prices? A Meta-Analysis"
+  },
+  {
+   "@type": "cr:RecordSet",
+   "@id": "incentives",
+   "name": "incentives",
+   "description": "Financial Incentives and Performance: A Meta-Analysis of Experiments in Economics"
+  },
+  {
+   "@type": "cr:RecordSet",
+   "@id": "inflation",
+   "name": "inflation",
+   "description": "Optimal Inflation Rate: A Meta-Analysis"
+  },
+  {
+   "@type": "cr:RecordSet",
+   "@id": "lags",
+   "name": "lags",
+   "description": "Transmission Lags of Monetary Policy: A Meta-Analysis"
+  },
+  {
+   "@type": "cr:RecordSet",
+   "@id": "learning",
+   "name": "learning",
+   "description": "Publication Bias and P-Hacking in the Effect of COVID-19 on Learning: A Meta-Analysis"
+  },
+  {
+   "@type": "cr:RecordSet",
+   "@id": "migrant",
+   "name": "migrant",
+   "description": "The Elasticity of Substitution between Native and Immigrant Labor: A Meta-Analysis"
+  },
+  {
+   "@type": "cr:RecordSet",
+   "@id": "price_puzzle",
+   "name": "price_puzzle",
+   "description": "How to Solve the Price Puzzle? A Meta-Analysis"
+  },
+  {
+   "@type": "cr:RecordSet",
+   "@id": "reforms",
+   "name": "reforms",
+   "description": "Structural Reforms and Economic Growth: A Meta-Analysis"
+  },
+  {
+   "@type": "cr:RecordSet",
+   "@id": "remittances",
+   "name": "remittances",
+   "description": "Remittances and Economic Growth: A Meta-Analysis"
+  },
+  {
+   "@type": "cr:RecordSet",
+   "@id": "resource_curse",
+   "name": "resource_curse",
+   "description": "Natural Resources and Economic Growth: A Meta-Analysis"
+  },
+  {
+   "@type": "cr:RecordSet",
+   "@id": "risk",
+   "name": "risk",
+   "description": "Relative Risk Aversion: A Meta-Analysis"
+  },
+  {
+   "@type": "cr:RecordSet",
+   "@id": "scc",
+   "name": "scc",
+   "description": "Selective Reporting and the Social Cost of Carbon"
+  },
+  {
+   "@type": "cr:RecordSet",
+   "@id": "sigma",
+   "name": "sigma",
+   "description": "Measuring Capital-Labor Substitution: The Importance of Method Choices and Publication Bias"
+  },
+  {
+   "@type": "cr:RecordSet",
+   "@id": "size",
+   "name": "size",
+   "description": "A Meta-Analysis of the Relation Between Firm Size and Stock Returns"
+  },
+  {
+   "@type": "cr:RecordSet",
+   "@id": "skill",
+   "name": "skill",
+   "description": "Publication and Attenuation Biases in Measuring Skill Substitution"
+  },
+  {
+   "@type": "cr:RecordSet",
+   "@id": "spillovers",
+   "name": "spillovers",
+   "description": "A Meta-Analysis of Vertical Spillovers from FDI"
+  },
+  {
+   "@type": "cr:RecordSet",
+   "@id": "students",
+   "name": "students",
+   "description": "Student Employment and Education: A Meta-Analysis"
+  },
+  {
+   "@type": "cr:RecordSet",
+   "@id": "substitution",
+   "name": "substitution",
+   "description": "Why Does Intertemporal Substitution Vary Across Countries? A Meta-Analysis"
+  },
+  {
+   "@type": "cr:RecordSet",
+   "@id": "trust",
+   "name": "trust",
+   "description": "Trust, Rule of Law, and the Size Premium: Evidence from a Meta-Analysis"
+  },
+  {
+   "@type": "cr:RecordSet",
+   "@id": "water",
+   "name": "water",
+   "description": "Publication Bias in Measuring the Income Elasticity of Water Demand"
+  }
+ ]
+}

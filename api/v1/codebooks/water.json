@@ -1,0 +1,890 @@
+{
+ "project": "water",
+ "source_file": "water.xlsx",
+ "source_archive": null,
+ "source_sheet": "dataset",
+ "n_rows": 307,
+ "n_columns": 53,
+ "columns": [
+  {
+   "name": "label",
+   "normalized": "label",
+   "dtype": "str",
+   "n_missing": 0,
+   "n_unique": 62,
+   "top_values": [
+    "Hanemann & Nauges (2005)",
+    "Williams (1985)",
+    "Ayadi et al. (2002)",
+    "Younes & Matoussi (2011)",
+    "Hoglund (1999)"
+   ]
+  },
+  {
+   "name": "country",
+   "normalized": "country",
+   "dtype": "str",
+   "n_missing": 0,
+   "n_unique": 3,
+   "role": "country",
+   "top_values": [
+    "US",
+    "Other",
+    "Europe"
+   ]
+  },
+  {
+   "name": "studyid",
+   "normalized": "studyid",
+   "dtype": "int64",
+   "n_missing": 0,
+   "n_unique": 62,
+   "role": "study_id",
+   "stats": {
+    "min": 1.0,
+    "p25": 18.0,
+    "median": 31.0,
+    "p75": 48.0,
+    "max": 62.0,
+    "mean": 32.798046,
+    "sd": 18.263278
+   }
+  },
+  {
+   "name": "estimateid",
+   "normalized": "estimateid",
+   "dtype": "int64",
+   "n_missing": 0,
+   "n_unique": 18,
+   "stats": {
+    "min": 1.0,
+    "p25": 2.0,
+    "median": 4.0,
+    "p75": 7.0,
+    "max": 18.0,
+    "mean": 4.931596,
+    "sd": 4.055805
+   }
+  },
+  {
+   "name": "numberofestimates",
+   "normalized": "numberofestimates",
+   "dtype": "int64",
+   "n_missing": 0,
+   "n_unique": 13,
+   "stats": {
+    "min": 1.0,
+    "p25": 5.0,
+    "median": 7.0,
+    "p75": 14.0,
+    "max": 18.0,
+    "mean": 8.905537,
+    "sd": 5.517133
+   }
+  },
+  {
+   "name": "invnoest",
+   "normalized": "invnoest",
+   "dtype": "float64",
+   "n_missing": 0,
+   "n_unique": 13,
+   "stats": {
+    "min": 0.055556,
+    "p25": 0.071429,
+    "median": 0.142857,
+    "p75": 0.2,
+    "max": 1.0,
+    "mean": 0.201773,
+    "sd": 0.207124
+   }
+  },
+  {
+   "name": "publicationyear",
+   "normalized": "publicationyear",
+   "dtype": "int64",
+   "n_missing": 0,
+   "n_unique": 28,
+   "role": "pub_year",
+   "stats": {
+    "min": 1972.0,
+    "p25": 1999.0,
+    "median": 2005.0,
+    "p75": 2011.0,
+    "max": 2015.0,
+    "mean": 2002.286645,
+    "sd": 11.361668
+   }
+  },
+  {
+   "name": "published",
+   "normalized": "published",
+   "dtype": "int64",
+   "n_missing": 0,
+   "n_unique": 2,
+   "stats": {
+    "min": 0.0,
+    "p25": 1.0,
+    "median": 1.0,
+    "p75": 1.0,
+    "max": 1.0,
+    "mean": 0.785016,
+    "sd": 0.411482
+   },
+   "binary": true
+  },
+  {
+   "name": "numberofcitations",
+   "normalized": "numberofcitations",
+   "dtype": "int64",
+   "n_missing": 0,
+   "n_unique": 44,
+   "stats": {
+    "min": 0.0,
+    "p25": 4.0,
+    "median": 17.0,
+    "p75": 96.0,
+    "max": 341.0,
+    "mean": 53.921824,
+    "sd": 70.333429
+   }
+  },
+  {
+   "name": "numberofyears",
+   "normalized": "numberofyears",
+   "dtype": "int64",
+   "n_missing": 0,
+   "n_unique": 28,
+   "stats": {
+    "min": 1.0,
+    "p25": 5.0,
+    "median": 11.0,
+    "p75": 17.0,
+    "max": 44.0,
+    "mean": 13.716612,
+    "sd": 11.359593
+   }
+  },
+  {
+   "name": "citations",
+   "normalized": "citations",
+   "dtype": "float64",
+   "n_missing": 0,
+   "n_unique": 54,
+   "stats": {
+    "min": 0.0,
+    "p25": 0.609756,
+    "median": 1.5,
+    "p75": 5.0,
+    "max": 27.333333,
+    "mean": 4.494179,
+    "sd": 6.723791
+   }
+  },
+  {
+   "name": "impact",
+   "normalized": "impact",
+   "dtype": "float64",
+   "n_missing": 0,
+   "n_unique": 19,
+   "stats": {
+    "min": 0.0,
+    "p25": 0.0,
+    "median": 0.007,
+    "p75": 0.098,
+    "max": 0.875,
+    "mean": 0.105746,
+    "sd": 0.199182
+   }
+  },
+  {
+   "name": "incomeelasticity",
+   "normalized": "incomeelasticity",
+   "dtype": "float64",
+   "n_missing": 0,
+   "n_unique": 207,
+   "role": "effect_estimate",
+   "stats": {
+    "min": -0.45,
+    "p25": 0.071,
+    "median": 0.157,
+    "p75": 0.309,
+    "max": 2.801,
+    "mean": 0.260737,
+    "sd": 0.376673
+   }
+  },
+  {
+   "name": "tvalue",
+   "normalized": "tvalue",
+   "dtype": "float64",
+   "n_missing": 0,
+   "n_unique": 263,
+   "role": "t_stat",
+   "stats": {
+    "min": -1.75,
+    "p25": 1.714899,
+    "median": 3.05,
+    "p75": 5.859751,
+    "max": 89.6,
+    "mean": 5.930479,
+    "sd": 9.392074
+   }
+  },
+  {
+   "name": "standarderror",
+   "normalized": "standarderror",
+   "dtype": "float64",
+   "n_missing": 0,
+   "n_unique": 238,
+   "role": "standard_error",
+   "stats": {
+    "min": 0.002,
+    "p25": 0.022,
+    "median": 0.05378,
+    "p75": 0.121405,
+    "max": 2.62084,
+    "mean": 0.123059,
+    "sd": 0.231647
+   }
+  },
+  {
+   "name": "inverseofstandarderror",
+   "normalized": "inverseofstandarderror",
+   "dtype": "float64",
+   "n_missing": 0,
+   "n_unique": 241,
+   "stats": {
+    "min": 0.381557,
+    "p25": 8.237996,
+    "median": 18.594273,
+    "p75": 45.454545,
+    "max": 500.0,
+    "mean": 45.048517,
+    "sd": 72.375106
+   }
+  },
+  {
+   "name": "longrun",
+   "normalized": "longrun",
+   "dtype": "int64",
+   "n_missing": 0,
+   "n_unique": 2,
+   "stats": {
+    "min": 0.0,
+    "p25": 0.0,
+    "median": 0.0,
+    "p75": 1.0,
+    "max": 1.0,
+    "mean": 0.296417,
+    "sd": 0.457423
+   },
+   "binary": true
+  },
+  {
+   "name": "average",
+   "normalized": "average",
+   "dtype": "int64",
+   "n_missing": 0,
+   "n_unique": 2,
+   "stats": {
+    "min": 0.0,
+    "p25": 0.0,
+    "median": 0.0,
+    "p75": 1.0,
+    "max": 1.0,
+    "mean": 0.469055,
+    "sd": 0.499856
+   },
+   "binary": true
+  },
+  {
+   "name": "marginal",
+   "normalized": "marginal",
+   "dtype": "int64",
+   "n_missing": 0,
+   "n_unique": 2,
+   "stats": {
+    "min": 0.0,
+    "p25": 0.0,
+    "median": 0.0,
+    "p75": 1.0,
+    "max": 1.0,
+    "mean": 0.400651,
+    "sd": 0.490831
+   },
+   "binary": true
+  },
+  {
+   "name": "otherprice",
+   "normalized": "otherprice",
+   "dtype": "int64",
+   "n_missing": 0,
+   "n_unique": 2,
+   "stats": {
+    "min": 0.0,
+    "p25": 0.0,
+    "median": 0.0,
+    "p75": 0.0,
+    "max": 1.0,
+    "mean": 0.130293,
+    "sd": 0.337175
+   },
+   "binary": true
+  },
+  {
+   "name": "differencevariable",
+   "normalized": "differencevariable",
+   "dtype": "int64",
+   "n_missing": 0,
+   "n_unique": 2,
+   "stats": {
+    "min": 0.0,
+    "p25": 0.0,
+    "median": 0.0,
+    "p75": 0.0,
+    "max": 1.0,
+    "mean": 0.156352,
+    "sd": 0.363781
+   },
+   "binary": true
+  },
+  {
+   "name": "discretecontinuous",
+   "normalized": "discretecontinuous",
+   "dtype": "int64",
+   "n_missing": 0,
+   "n_unique": 2,
+   "stats": {
+    "min": 0.0,
+    "p25": 0.0,
+    "median": 0.0,
+    "p75": 0.0,
+    "max": 1.0,
+    "mean": 0.107492,
+    "sd": 0.310243
+   },
+   "binary": true
+  },
+  {
+   "name": "decreasing",
+   "normalized": "decreasing",
+   "dtype": "int64",
+   "n_missing": 0,
+   "n_unique": 2,
+   "stats": {
+    "min": 0.0,
+    "p25": 0.0,
+    "median": 0.0,
+    "p75": 0.0,
+    "max": 1.0,
+    "mean": 0.022801,
+    "sd": 0.149513
+   },
+   "binary": true
+  },
+  {
+   "name": "increasing",
+   "normalized": "increasing",
+   "dtype": "int64",
+   "n_missing": 0,
+   "n_unique": 2,
+   "stats": {
+    "min": 0.0,
+    "p25": 0.0,
+    "median": 0.0,
+    "p75": 1.0,
+    "max": 1.0,
+    "mean": 0.485342,
+    "sd": 0.500601
+   },
+   "binary": true
+  },
+  {
+   "name": "flat",
+   "normalized": "flat",
+   "dtype": "int64",
+   "n_missing": 0,
+   "n_unique": 2,
+   "stats": {
+    "min": 0.0,
+    "p25": 0.0,
+    "median": 0.0,
+    "p75": 0.0,
+    "max": 1.0,
+    "mean": 0.078176,
+    "sd": 0.268886
+   },
+   "binary": true
+  },
+  {
+   "name": "notavailable",
+   "normalized": "notavailable",
+   "dtype": "int64",
+   "n_missing": 0,
+   "n_unique": 2,
+   "stats": {
+    "min": 0.0,
+    "p25": 0.0,
+    "median": 0.0,
+    "p75": 1.0,
+    "max": 1.0,
+    "mean": 0.413681,
+    "sd": 0.493297
+   },
+   "binary": true
+  },
+  {
+   "name": "firstyearofdependentvariable",
+   "normalized": "firstyearofdependentvariable",
+   "dtype": "int64",
+   "n_missing": 0,
+   "n_unique": 29,
+   "stats": {
+    "min": 1951.0,
+    "p25": 1980.0,
+    "median": 1990.0,
+    "p75": 2000.5,
+    "max": 2012.0,
+    "mean": 1989.511401,
+    "sd": 13.38528
+   }
+  },
+  {
+   "name": "lastyearofdependentvariable",
+   "normalized": "lastyearofdependentvariable",
+   "dtype": "int64",
+   "n_missing": 0,
+   "n_unique": 30,
+   "stats": {
+    "min": 1960.0,
+    "p25": 1986.0,
+    "median": 1998.0,
+    "p75": 2005.0,
+    "max": 2013.0,
+    "mean": 1994.677524,
+    "sd": 13.846152
+   }
+  },
+  {
+   "name": "midyear",
+   "normalized": "midyear",
+   "dtype": "float64",
+   "n_missing": 0,
+   "n_unique": 41,
+   "stats": {
+    "min": 1956.0,
+    "p25": 1984.75,
+    "median": 1995.5,
+    "p75": 2002.0,
+    "max": 2012.5,
+    "mean": 1992.094463,
+    "sd": 13.126865
+   }
+  },
+  {
+   "name": "daily",
+   "normalized": "daily",
+   "dtype": "int64",
+   "n_missing": 0,
+   "n_unique": 2,
+   "stats": {
+    "min": 0.0,
+    "p25": 0.0,
+    "median": 0.0,
+    "p75": 0.0,
+    "max": 1.0,
+    "mean": 0.188925,
+    "sd": 0.392088
+   },
+   "binary": true
+  },
+  {
+   "name": "monthly",
+   "normalized": "monthly",
+   "dtype": "int64",
+   "n_missing": 0,
+   "n_unique": 2,
+   "stats": {
+    "min": 0.0,
+    "p25": 0.0,
+    "median": 0.0,
+    "p75": 1.0,
+    "max": 1.0,
+    "mean": 0.394137,
+    "sd": 0.489462
+   },
+   "binary": true
+  },
+  {
+   "name": "quarterly",
+   "normalized": "quarterly",
+   "dtype": "int64",
+   "n_missing": 0,
+   "n_unique": 2,
+   "stats": {
+    "min": 0.0,
+    "p25": 0.0,
+    "median": 0.0,
+    "p75": 0.0,
+    "max": 1.0,
+    "mean": 0.18241,
+    "sd": 0.386813
+   },
+   "binary": true
+  },
+  {
+   "name": "annual",
+   "normalized": "annual",
+   "dtype": "int64",
+   "n_missing": 0,
+   "n_unique": 2,
+   "stats": {
+    "min": 0.0,
+    "p25": 0.0,
+    "median": 0.0,
+    "p75": 0.0,
+    "max": 1.0,
+    "mean": 0.234528,
+    "sd": 0.424395
+   },
+   "binary": true
+  },
+  {
+   "name": "crosssection",
+   "normalized": "crosssection",
+   "dtype": "int64",
+   "n_missing": 0,
+   "n_unique": 2,
+   "stats": {
+    "min": 0.0,
+    "p25": 0.0,
+    "median": 0.0,
+    "p75": 1.0,
+    "max": 1.0,
+    "mean": 0.29316,
+    "sd": 0.455954
+   },
+   "binary": true
+  },
+  {
+   "name": "timeseries",
+   "normalized": "timeseries",
+   "dtype": "int64",
+   "n_missing": 0,
+   "n_unique": 2,
+   "stats": {
+    "min": 0.0,
+    "p25": 0.0,
+    "median": 0.0,
+    "p75": 0.0,
+    "max": 1.0,
+    "mean": 0.029316,
+    "sd": 0.168966
+   },
+   "binary": true
+  },
+  {
+   "name": "paneldata",
+   "normalized": "paneldata",
+   "dtype": "int64",
+   "n_missing": 0,
+   "n_unique": 2,
+   "stats": {
+    "min": 0.0,
+    "p25": 0.0,
+    "median": 1.0,
+    "p75": 1.0,
+    "max": 1.0,
+    "mean": 0.677524,
+    "sd": 0.468187
+   },
+   "binary": true
+  },
+  {
+   "name": "householddata",
+   "normalized": "householddata",
+   "dtype": "int64",
+   "n_missing": 0,
+   "n_unique": 2,
+   "stats": {
+    "min": 0.0,
+    "p25": 0.0,
+    "median": 1.0,
+    "p75": 1.0,
+    "max": 1.0,
+    "mean": 0.631922,
+    "sd": 0.48307
+   },
+   "binary": true
+  },
+  {
+   "name": "aggregatedata",
+   "normalized": "aggregatedata",
+   "dtype": "int64",
+   "n_missing": 0,
+   "n_unique": 2,
+   "stats": {
+    "min": 0.0,
+    "p25": 0.0,
+    "median": 0.0,
+    "p75": 1.0,
+    "max": 1.0,
+    "mean": 0.368078,
+    "sd": 0.48307
+   },
+   "binary": true
+  },
+  {
+   "name": "lagged",
+   "normalized": "lagged",
+   "dtype": "int64",
+   "n_missing": 0,
+   "n_unique": 2,
+   "stats": {
+    "min": 0.0,
+    "p25": 0.0,
+    "median": 0.0,
+    "p75": 0.0,
+    "max": 1.0,
+    "mean": 0.084691,
+    "sd": 0.278875
+   },
+   "binary": true
+  },
+  {
+   "name": "evaporation",
+   "normalized": "evaporation",
+   "dtype": "int64",
+   "n_missing": 0,
+   "n_unique": 2,
+   "stats": {
+    "min": 0.0,
+    "p25": 0.0,
+    "median": 0.0,
+    "p75": 0.0,
+    "max": 1.0,
+    "mean": 0.130293,
+    "sd": 0.337175
+   },
+   "binary": true
+  },
+  {
+   "name": "householdsize",
+   "normalized": "householdsize",
+   "dtype": "int64",
+   "n_missing": 0,
+   "n_unique": 2,
+   "stats": {
+    "min": 0.0,
+    "p25": 0.0,
+    "median": 1.0,
+    "p75": 1.0,
+    "max": 1.0,
+    "mean": 0.517915,
+    "sd": 0.500495
+   },
+   "binary": true
+  },
+  {
+   "name": "populationdensity",
+   "normalized": "populationdensity",
+   "dtype": "int64",
+   "n_missing": 0,
+   "n_unique": 2,
+   "stats": {
+    "min": 0.0,
+    "p25": 0.0,
+    "median": 0.0,
+    "p75": 0.0,
+    "max": 1.0,
+    "mean": 0.107492,
+    "sd": 0.310243
+   },
+   "binary": true
+  },
+  {
+   "name": "temperature",
+   "normalized": "temperature",
+   "dtype": "int64",
+   "n_missing": 0,
+   "n_unique": 2,
+   "stats": {
+    "min": 0.0,
+    "p25": 0.0,
+    "median": 0.0,
+    "p75": 1.0,
+    "max": 1.0,
+    "mean": 0.488599,
+    "sd": 0.500686
+   },
+   "binary": true
+  },
+  {
+   "name": "rainfall",
+   "normalized": "rainfall",
+   "dtype": "int64",
+   "n_missing": 0,
+   "n_unique": 2,
+   "stats": {
+    "min": 0.0,
+    "p25": 0.0,
+    "median": 1.0,
+    "p75": 1.0,
+    "max": 1.0,
+    "mean": 0.631922,
+    "sd": 0.48307
+   },
+   "binary": true
+  },
+  {
+   "name": "ovb",
+   "normalized": "ovb",
+   "dtype": "int64",
+   "n_missing": 0,
+   "n_unique": 2,
+   "stats": {
+    "min": 0.0,
+    "p25": 0.0,
+    "median": 0.0,
+    "p75": 1.0,
+    "max": 1.0,
+    "mean": 0.462541,
+    "sd": 0.499409
+   },
+   "binary": true
+  },
+  {
+   "name": "iv",
+   "normalized": "iv",
+   "dtype": "int64",
+   "n_missing": 0,
+   "n_unique": 2,
+   "stats": {
+    "min": 0.0,
+    "p25": 0.0,
+    "median": 0.0,
+    "p75": 0.0,
+    "max": 1.0,
+    "mean": 0.18241,
+    "sd": 0.386813
+   },
+   "binary": true
+  },
+  {
+   "name": "paneltechnique",
+   "normalized": "paneltechnique",
+   "dtype": "int64",
+   "n_missing": 0,
+   "n_unique": 2,
+   "stats": {
+    "min": 0.0,
+    "p25": 0.0,
+    "median": 0.0,
+    "p75": 0.0,
+    "max": 1.0,
+    "mean": 0.2443,
+    "sd": 0.430373
+   },
+   "binary": true
+  },
+  {
+   "name": "otherestimator",
+   "normalized": "otherestimator",
+   "dtype": "int64",
+   "n_missing": 0,
+   "n_unique": 2,
+   "stats": {
+    "min": 0.0,
+    "p25": 0.0,
+    "median": 0.0,
+    "p75": 0.0,
+    "max": 1.0,
+    "mean": 0.110749,
+    "sd": 0.314334
+   },
+   "binary": true
+  },
+  {
+   "name": "developed",
+   "normalized": "developed",
+   "dtype": "int64",
+   "n_missing": 0,
+   "n_unique": 2,
+   "stats": {
+    "min": 0.0,
+    "p25": 0.0,
+    "median": 1.0,
+    "p75": 1.0,
+    "max": 1.0,
+    "mean": 0.654723,
+    "sd": 0.476235
+   },
+   "binary": true
+  },
+  {
+   "name": "us",
+   "normalized": "us",
+   "dtype": "int64",
+   "n_missing": 0,
+   "n_unique": 2,
+   "stats": {
+    "min": 0.0,
+    "p25": 0.0,
+    "median": 0.0,
+    "p75": 1.0,
+    "max": 1.0,
+    "mean": 0.442997,
+    "sd": 0.497551
+   },
+   "binary": true
+  },
+  {
+   "name": "europe",
+   "normalized": "europe",
+   "dtype": "int64",
+   "n_missing": 0,
+   "n_unique": 2,
+   "stats": {
+    "min": 0.0,
+    "p25": 0.0,
+    "median": 0.0,
+    "p75": 0.0,
+    "max": 1.0,
+    "mean": 0.166124,
+    "sd": 0.372799
+   },
+   "binary": true
+  },
+  {
+   "name": "otherlocation",
+   "normalized": "otherlocation",
+   "dtype": "int64",
+   "n_missing": 0,
+   "n_unique": 2,
+   "stats": {
+    "min": 0.0,
+    "p25": 0.0,
+    "median": 0.0,
+    "p75": 1.0,
+    "max": 1.0,
+    "mean": 0.390879,
+    "sd": 0.488744
+   },
+   "binary": true
+  },
+  {
+   "name": "reference",
+   "normalized": "reference",
+   "dtype": "str",
+   "n_missing": 0,
+   "n_unique": 62,
+   "top_values": [
+    "Hanemann, W. M. & C. Nauges (2005): \"Heterogeneous responses to water conservation programs: the case of residential users in Los Angeles.\" CUDARE Working Paper Series 1026, University of California at Berkeley, Department of Agricultural and Resource Economics and Policy.",
+    "Williams, M. (1985): \"Estimating urban residential demand for water under alternative price measures.\" Journal of Urban Economics 18(2): pp. 213--225.",
+    "Ayadi, M., J. Krishnakumar & M.-S. Matoussi (2002): \"A panel data analysis of residential water demand in presence of nonlinear progressive tariffs.\" Working Paper 6/2012, Department of Econometrics, University of Geneva.",
+    "Younes, B. Z. & M. S. Matoussi (2011): \"Residential Water Demand: A Panel Cointegration Approach and Application to Tunisia.\" Working Paper 656, The Economic Research Forum (ERF).",
+    "Hoglund, L. (1999): \"Household demand for water in Sweden with implications of a potential tax on water use.\" Water Resources Research 35(12): pp. 3853--3863."
+   ]
+  }
+ ]
+}
