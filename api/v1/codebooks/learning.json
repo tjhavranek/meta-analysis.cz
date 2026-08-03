@@ -109,7 +109,8 @@
    "dtype": "str",
    "n_missing": 0,
    "n_unique": 15,
-   "role": "country",
+   "inferred_role": "country",
+   "inferred_role_confidence": "name-match only, not verified",
    "top_values": [
     "United States",
     "United Kingdom",

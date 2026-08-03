@@ -26,7 +26,8 @@
    "dtype": "int8",
    "n_missing": 0,
    "n_unique": 36,
-   "role": "study_id",
+   "inferred_role": "study_id",
+   "inferred_role_confidence": "name-match only, not verified",
    "stats": {
     "min": 1.0,
     "p25": 19.0,
@@ -43,7 +44,8 @@
    "dtype": "int16",
    "n_missing": 0,
    "n_unique": 17,
-   "role": "pub_year",
+   "inferred_role": "pub_year",
+   "inferred_role_confidence": "name-match only, not verified",
    "stats": {
     "min": 1996.0,
     "p25": 2016.0,
@@ -192,7 +194,8 @@
    "dtype": "float64",
    "n_missing": 124,
    "n_unique": 140,
-   "role": "n_obs",
+   "inferred_role": "n_obs",
+   "inferred_role_confidence": "name-match only, not verified",
    "stats": {
     "min": 20.0,
     "p25": 3183.0,

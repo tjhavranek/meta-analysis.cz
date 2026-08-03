@@ -381,7 +381,8 @@
    "dtype": "int8",
    "n_missing": 0,
    "n_unique": 6,
-   "role": "pub_year",
+   "inferred_role": "pub_year",
+   "inferred_role_confidence": "name-match only, not verified",
    "stats": {
     "min": 0.0,
     "p25": 4.0,

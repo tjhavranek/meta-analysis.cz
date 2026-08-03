@@ -45,7 +45,11 @@ curl -s https://meta-analysis.cz/api/v1/datasets.json | jq '.datasets[] | {id, n
 
 ## The harmonised table
 
-One row per estimate, pooled across literatures: **54,087 estimates from 39 literatures**. Version **0.9.0-beta**.
+One row per harmonised **observation**, pooled across literatures: **54,087 rows
+from 39 literatures**. Rows are not always independent estimates — `price_puzzle`
+reshapes wide impulse-response columns into one row per horizon, and
+`house_prices` ships about seven horizons per impulse response. Check `horizon`
+before treating rows as independent. Version **0.9.0-beta**.
 
 Core columns are present for every row: `dataset`, `study_id`, `estimate_id`,
 `effect`, `se`, `t_stat`, `precision`. The rest are harmonised moderators, and
@@ -59,11 +63,12 @@ back to the published dataset and checked. `se_is_derived` marks rows whose
 standard error was reconstructed rather than read directly (from a reported
 t-statistic, or as the mean of an asymmetric confidence interval).
 
-**Effects are not comparable across literatures in raw units.** An elasticity, a
+**Raw effect levels are not comparable across literatures.** An elasticity, a
 partial correlation and a dollar value per tonne of carbon all live in the
-`effect` column. `effect_units` tells you which is which. Within a literature the
-units are consistent, which is what estimator comparisons need; across
-literatures, compare ratios — corrected against uncorrected — not levels.
+`effect` column; `effect_units` tells you which is which. Within a literature the
+units are consistent, which is what estimator comparisons need. Comparing across
+literatures needs an explicitly standardised measure — and ratios are unsuitable
+where the denominator may sit near zero or change sign.
 
 Being a beta, the harmonisation may be revised. **There is no DOI yet** — an
 earlier version of this file said the files were deposited with one, which was

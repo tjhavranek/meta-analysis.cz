@@ -105,7 +105,8 @@
    "dtype": "float64",
    "n_missing": 1,
    "n_unique": 29,
-   "role": "pub_year",
+   "inferred_role": "pub_year",
+   "inferred_role_confidence": "name-match only, not verified",
    "stats": {
     "min": 1983.0,
     "p25": 2004.0,
@@ -167,7 +168,6 @@
    "dtype": "float64",
    "n_missing": 4,
    "n_unique": 1060,
-   "role": "effect_estimate",
    "stats": {
     "min": -5.45,
     "p25": -0.00885,
@@ -200,7 +200,8 @@
    "dtype": "float64",
    "n_missing": 704,
    "n_unique": 685,
-   "role": "t_stat",
+   "inferred_role": "t_stat",
+   "inferred_role_confidence": "name-match only, not verified",
    "stats": {
     "min": -8.06,
     "p25": 0.0,
@@ -297,7 +298,8 @@
    "dtype": "float64",
    "n_missing": 815,
    "n_unique": 659,
-   "role": "t_stat",
+   "inferred_role": "t_stat",
+   "inferred_role_confidence": "name-match only, not verified",
    "stats": {
     "min": -8.06,
     "p25": 0.02,

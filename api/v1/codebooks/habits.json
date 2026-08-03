@@ -28,7 +28,8 @@
    "dtype": "int8",
    "n_missing": 0,
    "n_unique": 81,
-   "role": "study_id",
+   "inferred_role": "study_id",
+   "inferred_role_confidence": "name-match only, not verified",
    "stats": {
     "min": 1.0,
     "p25": 15.0,
@@ -59,7 +60,8 @@
    "dtype": "str",
    "n_missing": 0,
    "n_unique": 18,
-   "role": "country",
+   "inferred_role": "country",
+   "inferred_role_confidence": "name-match only, not verified",
    "top_values": [
     "US",
     "France",
@@ -108,7 +110,8 @@
    "dtype": "int16",
    "n_missing": 0,
    "n_unique": 153,
-   "role": "n_obs",
+   "inferred_role": "n_obs",
+   "inferred_role_confidence": "name-match only, not verified",
    "stats": {
     "min": 45.0,
     "p25": 114.0,
@@ -411,7 +414,8 @@
    "dtype": "int16",
    "n_missing": 0,
    "n_unique": 20,
-   "role": "pub_year",
+   "inferred_role": "pub_year",
+   "inferred_role_confidence": "name-match only, not verified",
    "stats": {
     "min": 1990.0,
     "p25": 2003.0,

@@ -12,7 +12,8 @@
    "dtype": "int64",
    "n_missing": 0,
    "n_unique": 74,
-   "role": "study_id",
+   "inferred_role": "study_id",
+   "inferred_role_confidence": "name-match only, not verified",
    "stats": {
     "min": 1.0,
     "p25": 15.0,
@@ -76,7 +77,8 @@
    "dtype": "float64",
    "n_missing": 0,
    "n_unique": 768,
-   "role": "t_stat",
+   "inferred_role": "t_stat",
+   "inferred_role_confidence": "name-match only, not verified",
    "stats": {
     "min": -2.994,
     "p25": 0.79885,
@@ -126,7 +128,8 @@
    "dtype": "float64",
    "n_missing": 40,
    "n_unique": 157,
-   "role": "n_obs",
+   "inferred_role": "n_obs",
+   "inferred_role_confidence": "name-match only, not verified",
    "stats": {
     "min": 18.0,
     "p25": 79.5,
@@ -191,7 +194,8 @@
    "dtype": "str",
    "n_missing": 0,
    "n_unique": 9,
-   "role": "country",
+   "inferred_role": "country",
+   "inferred_role_confidence": "name-match only, not verified",
    "top_values": [
     "Global funds",
     "Canadian & US funds",
@@ -816,7 +820,8 @@
    "dtype": "float64",
    "n_missing": 0,
    "n_unique": 20,
-   "role": "pub_year",
+   "inferred_role": "pub_year",
+   "inferred_role_confidence": "name-match only, not verified",
    "stats": {
     "min": 0.0,
     "p25": 1.94591,
@@ -961,7 +966,8 @@
    "dtype": "float64",
    "n_missing": 370,
    "n_unique": 489,
-   "role": "t_stat",
+   "inferred_role": "t_stat",
+   "inferred_role_confidence": "name-match only, not verified",
    "stats": {
     "min": -2.83,
     "p25": 0.93,

@@ -56,6 +56,25 @@ def _audit_status(proj):
 SHARED_SOURCE = {"bma":"spillovers", "spillovers":"bma",
                  "lags":"price_puzzle", "price_puzzle":"lags"}
 
+# `duplicate_of` is reserved for genuinely identical data (hedge == alphas, row for row).
+# `trust` shares 1,256 estimates with `size` but is a later, LARGER collection of the same
+# literature; calling that a duplicate misleads any automated consumer.
+EXACT_DUPLICATES = {"hedge", "substitution"}
+
+def _overlap_fields(proj, r):
+    o = OVR.get(proj) or {}
+    alias = o["alias_of"] if "alias_of" in o else r.get("alias_of")
+    if not alias:
+        return dict(duplicate_of=None, overlaps_with=None, same_literature_as=None,
+                    excluded_to_avoid_double_counting=False)
+    exact = proj in EXACT_DUPLICATES
+    return dict(duplicate_of=(alias if exact else None),
+                overlaps_with=alias,
+                same_literature_as=alias,
+                excluded_to_avoid_double_counting=True,
+                overlap_kind=("identical row for row" if exact
+                              else "same literature, partially overlapping collections"))
+
 def _core_cols(proj):
     o=OVR.get(proj) or {}; r=res.get(proj) or {}
     cmp_=o.get("compute")
@@ -142,8 +161,7 @@ for proj in sorted(man):
         note=_recon_note(proj,pap)),
       excluded_from_harmonised_because=(None if (harm.get("projects",{}).get(proj) or {}).get("included")
                                         else (harm.get("projects",{}).get(proj) or {}).get("reason")),
-      duplicate_of=((OVR.get(proj) or {}).get("alias_of")
-                    if "alias_of" in (OVR.get(proj) or {}) else r.get("alias_of")),
+      **_overlap_fields(proj, r),
       shares_source_file_with=SHARED_SOURCE.get(proj),
       # Rights in the underlying research data are NOT ours to grant: these
       # datasets were assembled by author teams that mostly extend beyond this
@@ -166,7 +184,13 @@ for proj in sorted(man):
                       f"columns or rows. A distinct literature, NOT a duplicate, and pooled on its own.")
     datasets.append(d)
 
-ok=[d for d in datasets if d.get("n_estimates")]
+# Records with no data are not datasets. Iterating .datasets[] used to hand a consumer three
+# entries with no files, rights, codebook or audit status, while counts.datasets promised 44.
+excluded=[dict(id=d["id"], reason=d.get("reason"), paper=d.get("paper"),
+               excluded_because="examined and not an estimate-level dataset")
+          for d in datasets if not d.get("n_estimates")]
+datasets=[d for d in datasets if d.get("n_estimates")]
+ok=datasets
 # No $schema key: there is no JSON Schema document for this index, and the URL that
 # used to be advertised here 404s. An unresolvable $schema is worse than none — it
 # tells a validator to fetch something that is not there.
@@ -211,7 +235,10 @@ index=dict(
     parquet=f"{BASE}/data/{DATA_V}/estimates_harmonised.parquet",
     csv=f"{BASE}/data/{DATA_V}/estimates_harmonised.csv",
     notes=[
-      "One row per estimate, pooled across literatures.",
+      "One row per harmonised OBSERVATION, pooled across literatures. Some literatures contribute "
+      "several horizon-specific observations per underlying estimate: price_puzzle reshapes wide "
+      "impulse-response columns into one row per horizon, and house_prices ships ~7 horizons per "
+      "impulse response. Do not treat rows as independent estimates without checking `horizon`.",
       "Raw effect levels are not comparable across literatures; see effect_units. Analyse within "
       "each literature. Comparing across them needs an explicitly standardised measure, and "
       "relative changes are meaningful only where the baseline is safely away from zero.",
@@ -225,6 +252,9 @@ index=dict(
       "does not move, pin the version string and the file checksum."],
     excluded={p:v.get("reason") for p,v in (harm.get("projects") or {}).items()
               if not v.get("included")}),
+  counts_note=("`datasets` contains exactly counts.datasets entries, all of them real datasets. "
+               "Inputs that were examined and excluded live in `excluded_resources`."),
+  excluded_resources=excluded,
   datasets=datasets)
 
 api=os.path.join(OUT,"api",DATA_V); os.makedirs(api,exist_ok=True)
@@ -260,6 +290,47 @@ for d in ok:
                                                  "the paper.")))
 json.dump(dp,open(os.path.join(api,"datapackage.json"),"w",encoding="utf-8"),indent=1,ensure_ascii=False)
 
+def _sha256(path):
+    import hashlib
+    h=hashlib.sha256()
+    with open(path,"rb") as fh:
+        for chunk in iter(lambda: fh.read(1 << 20), b""): h.update(chunk)
+    return h.hexdigest()
+
+def _file_object(d):
+    """A real digest or no digest. Croissant defines sha256 as the file's actual hash;
+    the string 'see codebook' sat there before, which fails any consumer that verifies."""
+    rel=d["files"]["parquet"].replace(BASE+"/","")
+    lp=os.path.join(OUT, rel.replace("/", os.sep))
+    fo={"@type":"cr:FileObject","@id":d["id"]+".parquet","name":d["id"]+".parquet",
+        "contentUrl":d["files"]["parquet"],
+        "encodingFormat":"application/vnd.apache.parquet"}
+    if os.path.exists(lp):
+        fo["sha256"]=_sha256(lp); fo["contentSize"]=str(os.path.getsize(lp))
+    return fo
+
+def _record_set(d):
+    """Fields from the dataset's own codebook. A RecordSet with no fields tells a consumer
+    nothing, which is what made the earlier record standards-shaped but unusable."""
+    rs={"@type":"cr:RecordSet","@id":d["id"],"name":d["id"],
+        "description":(d["paper"] or {}).get("title")}
+    if (d["paper"] or {}).get("doi"): rs["isBasedOn"]=d["paper"]["doi"]
+    try:
+        cb=json.load(open(os.path.join(OUT,"api",DATA_V,"codebooks",f"{d['id']}.json"),encoding="utf-8"))
+    except Exception:
+        return rs
+    fields=[]
+    for c in cb["columns"]:
+        f={"@type":"cr:Field","@id":f"{d['id']}/{c['normalized']}","name":c["name"],
+           "dataType":("sc:Float" if c["dtype"].startswith("float")
+                       else "sc:Integer" if c["dtype"].startswith("int") else "sc:Text"),
+           "source":{"fileObject":{"@id":d["id"]+".parquet"},
+                     "extract":{"column":c["name"]}}}
+        if c.get("role"): f["description"]=f"verified role: {c['role']}"
+        fields.append(f)
+    rs["field"]=fields
+    return rs
+
 # MLCommons Croissant
 cr={"@context":{"@vocab":"https://schema.org/","cr":"http://mlcommons.org/croissant/",
                 "sc":"https://schema.org/","data":{"@id":"cr:data","@type":"@json"},
@@ -268,7 +339,9 @@ cr={"@context":{"@vocab":"https://schema.org/","cr":"http://mlcommons.org/croiss
     "@type":"sc:Dataset","conformsTo":"http://mlcommons.org/croissant/1.0",
     "name":"meta-analysis-cz","version":VERSION,
     "description":("Estimate-level data from meta-analyses in economics and the social sciences. "
-                   f"{len(ok)} datasets, {sum(d['n_estimates'] for d in ok):,} estimates, each with the "
+                   f"{len(ok)} datasets containing {sum(d['n_estimates'] for d in ok):,} converted source "
+                   f"rows and {sum(d.get('n_estimates_in_literature') or d['n_estimates'] for d in ok):,} "
+                   f"estimates in the papers' analysis samples, each with the "
                    "hand-coded study and design characteristics collected for the original paper. "
                    "LICENCE: the index, codebooks and harmonisation mappings are CC BY 4.0. The "
                    "underlying research datasets are NOT relicensed - each was assembled for a "
@@ -282,11 +355,8 @@ cr={"@context":{"@vocab":"https://schema.org/","cr":"http://mlcommons.org/croiss
     "citation":index["cite_as"],
     "keywords":["meta-analysis","publication bias","economics","effect size","research synthesis"],
     "creator":[{"@type":"Person","name":"Tomas Havranek"},{"@type":"Person","name":"Zuzana Irsova"}],
-    "distribution":[{"@type":"cr:FileObject","@id":d["id"]+".parquet","name":d["id"]+".parquet",
-                     "contentUrl":d["files"]["parquet"],"encodingFormat":"application/vnd.apache.parquet",
-                     "sha256":"see codebook"} for d in ok],
-    "recordSet":[{"@type":"cr:RecordSet","@id":d["id"],"name":d["id"],
-                  "description":(d["paper"] or {}).get("title")} for d in ok]}
+    "distribution":[_file_object(d) for d in ok],
+    "recordSet":[_record_set(d) for d in ok]}
 json.dump(cr,open(os.path.join(api,"croissant.json"),"w",encoding="utf-8"),indent=1,ensure_ascii=False)
 
 print(f"datasets.json: {len(datasets)} entries ({len(ok)} with data), "

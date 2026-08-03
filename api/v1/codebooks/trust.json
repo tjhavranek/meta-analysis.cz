@@ -26,7 +26,8 @@
    "dtype": "int64",
    "n_missing": 0,
    "n_unique": 105,
-   "role": "study_id",
+   "inferred_role": "study_id",
+   "inferred_role_confidence": "name-match only, not verified",
    "stats": {
     "min": 1.0,
     "p25": 25.0,

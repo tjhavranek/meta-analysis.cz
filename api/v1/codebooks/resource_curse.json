@@ -301,7 +301,8 @@
    "dtype": "int16",
    "n_missing": 0,
    "n_unique": 132,
-   "role": "n_obs",
+   "inferred_role": "n_obs",
+   "inferred_role_confidence": "name-match only, not verified",
    "stats": {
     "min": 20.0,
     "p25": 66.0,
@@ -821,7 +822,8 @@
    "dtype": "float32",
    "n_missing": 0,
    "n_unique": 540,
-   "role": "t_stat",
+   "inferred_role": "t_stat",
+   "inferred_role_confidence": "name-match only, not verified",
    "stats": {
     "min": -21.292,
     "p25": -2.39,

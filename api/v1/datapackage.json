@@ -46,7 +46,7 @@
      {
       "name": "PubYear",
       "type": "number",
-      "description": "pub_year"
+      "description": null
      },
      {
       "name": "Title",
@@ -66,7 +66,7 @@
      {
       "name": "Estimate",
       "type": "number",
-      "description": "effect_estimate"
+      "description": null
      },
      {
       "name": "SE",
@@ -76,7 +76,7 @@
      {
       "name": "t-stats",
       "type": "number",
-      "description": "t_stat"
+      "description": null
      },
      {
       "name": "z-stats",
@@ -106,7 +106,7 @@
      {
       "name": "t-stats.1",
       "type": "number",
-      "description": "t_stat"
+      "description": null
      },
      {
       "name": "z-stats.1",
@@ -830,7 +830,7 @@
      {
       "name": "study_id",
       "type": "number",
-      "description": "study_id"
+      "description": null
      },
      {
       "name": "team_id",
@@ -850,7 +850,7 @@
      {
       "name": "tstat",
       "type": "number",
-      "description": "t_stat"
+      "description": null
      },
      {
       "name": "se",
@@ -865,7 +865,7 @@
      {
       "name": "sample_size",
       "type": "number",
-      "description": "n_obs"
+      "description": null
      },
      {
       "name": "weight",
@@ -885,7 +885,7 @@
      {
       "name": "country",
       "type": "string",
-      "description": "country"
+      "description": null
      },
      {
       "name": "depvar_individual_funds",
@@ -1070,7 +1070,7 @@
      {
       "name": "publication_year",
       "type": "number",
-      "description": "pub_year"
+      "description": null
      },
      {
       "name": "citations",
@@ -1115,7 +1115,7 @@
      {
       "name": "t_stat",
       "type": "number",
-      "description": "t_stat"
+      "description": null
      },
      {
       "name": "t_hetero_std",
@@ -1264,22 +1264,22 @@
      {
       "name": "pubyear",
       "type": "number",
-      "description": "pub_year"
+      "description": null
      },
      {
       "name": "country",
       "type": "string",
-      "description": "country"
+      "description": null
      },
      {
       "name": "idcountry",
       "type": "number",
-      "description": "country"
+      "description": null
      },
      {
       "name": "idstudy",
       "type": "number",
-      "description": "study_id"
+      "description": null
      },
      {
       "name": "invse_w",
@@ -1289,7 +1289,7 @@
      {
       "name": "tstats_w",
       "type": "number",
-      "description": "t_stat"
+      "description": null
      },
      {
       "name": "armel",
@@ -1309,12 +1309,12 @@
      {
       "name": "tstats",
       "type": "number",
-      "description": "t_stat"
+      "description": null
      },
      {
       "name": "nobs",
       "type": "number",
-      "description": "n_obs"
+      "description": null
      },
      {
       "name": "nobs_long",
@@ -1658,7 +1658,7 @@
      {
       "name": "study_id",
       "type": "number",
-      "description": "study_id"
+      "description": null
      },
      {
       "name": "study",
@@ -1668,7 +1668,7 @@
      {
       "name": "country",
       "type": "string",
-      "description": "country"
+      "description": null
      },
      {
       "name": "premium",
@@ -1688,12 +1688,12 @@
      {
       "name": "tstat_premium",
       "type": "number",
-      "description": "t_stat"
+      "description": null
      },
      {
       "name": "nobs",
       "type": "number",
-      "description": "n_obs"
+      "description": null
      },
      {
       "name": "instrument",
@@ -1893,7 +1893,7 @@
      {
       "name": "publication_year",
       "type": "number",
-      "description": "pub_year"
+      "description": null
      },
      {
       "name": "published_study",
@@ -1923,7 +1923,7 @@
      {
       "name": "pubyear",
       "type": "number",
-      "description": "pub_year"
+      "description": null
      },
      {
       "name": "datyear",
@@ -1957,7 +1957,7 @@
      {
       "name": "idstudy",
       "type": "number",
-      "description": "study_id"
+      "description": null
      },
      {
       "name": "study",
@@ -2037,7 +2037,7 @@
      {
       "name": "t",
       "type": "number",
-      "description": "t_stat"
+      "description": null
      },
      {
       "name": "lin",
@@ -2082,7 +2082,7 @@
      {
       "name": "country",
       "type": "string",
-      "description": "country"
+      "description": null
      },
      {
       "name": "amad",
@@ -2097,7 +2097,7 @@
      {
       "name": "nobs",
       "type": "number",
-      "description": "n_obs"
+      "description": null
      },
      {
       "name": "start",
@@ -2282,7 +2282,7 @@
      {
       "name": "idcountry",
       "type": "number",
-      "description": "country"
+      "description": null
      },
      {
       "name": "dist",
@@ -2486,7 +2486,7 @@
      {
       "name": "idstudy",
       "type": "number",
-      "description": "study_id"
+      "description": null
      },
      {
       "name": "study",
@@ -2506,7 +2506,7 @@
      {
       "name": "tstat",
       "type": "number",
-      "description": "t_stat"
+      "description": null
      },
      {
       "name": "start",
@@ -2596,7 +2596,7 @@
      {
       "name": "nobs",
       "type": "number",
-      "description": "n_obs"
+      "description": null
      },
      {
       "name": "disagg",
@@ -2805,7 +2805,7 @@
      {
       "name": "idstudy",
       "type": "number",
-      "description": "study_id"
+      "description": null
      },
      {
       "name": "study",
@@ -2815,7 +2815,7 @@
      {
       "name": "pub_year",
       "type": "number",
-      "description": "pub_year"
+      "description": null
      },
      {
       "name": "effect_true",
@@ -2835,7 +2835,7 @@
      {
       "name": "t_stat",
       "type": "number",
-      "description": "t_stat"
+      "description": null
      },
      {
       "name": "weight",
@@ -2865,7 +2865,7 @@
      {
       "name": "sample_size",
       "type": "number",
-      "description": "n_obs"
+      "description": null
      },
      {
       "name": "weight_pcc",
@@ -2970,7 +2970,7 @@
      {
       "name": "country",
       "type": "string",
-      "description": "country"
+      "description": null
      },
      {
       "name": "country_usa",
@@ -3085,7 +3085,7 @@
      {
       "name": "publication_year",
       "type": "number",
-      "description": "pub_year"
+      "description": null
      },
      {
       "name": "impact_factor",
@@ -3159,7 +3159,7 @@
      {
       "name": "idstudy",
       "type": "number",
-      "description": "study_id"
+      "description": null
      },
      {
       "name": "id",
@@ -3199,7 +3199,7 @@
      {
       "name": "publicationyear",
       "type": "number",
-      "description": "pub_year"
+      "description": null
      },
      {
       "name": "asa",
@@ -3313,12 +3313,12 @@
      {
       "name": "IDStudy",
       "type": "number",
-      "description": "study_id"
+      "description": null
      },
      {
       "name": "t",
       "type": "number",
-      "description": "t_stat"
+      "description": null
      },
      {
       "name": "PCC",
@@ -3438,12 +3438,12 @@
      {
       "name": "T",
       "type": "number",
-      "description": "t_stat"
+      "description": null
      },
      {
       "name": "Samplesize",
       "type": "number",
-      "description": "n_obs"
+      "description": null
      },
      {
       "name": "endogeneity",
@@ -3527,7 +3527,7 @@
      {
       "name": "idstudy",
       "type": "number",
-      "description": "study_id"
+      "description": null
      },
      {
       "name": "idauthor",
@@ -3612,7 +3612,7 @@
      {
       "name": "sample_size",
       "type": "number",
-      "description": "n_obs"
+      "description": null
      },
      {
       "name": "students",
@@ -3652,7 +3652,7 @@
      {
       "name": "publication_year",
       "type": "number",
-      "description": "pub_year"
+      "description": null
      },
      {
       "name": "elicitation_method",
@@ -3677,7 +3677,7 @@
      {
       "name": "nobs",
       "type": "number",
-      "description": "n_obs"
+      "description": null
      },
      {
       "name": "instrument",
@@ -3687,7 +3687,7 @@
      {
       "name": "country",
       "type": "string",
-      "description": "country"
+      "description": null
      },
      {
       "name": "continent",
@@ -3741,7 +3741,7 @@
      {
       "name": "IDSTUDY",
       "type": "number",
-      "description": "study_id"
+      "description": null
      },
      {
       "name": "IDAUTHOR",
@@ -3751,7 +3751,7 @@
      {
       "name": "COUNTRY",
       "type": "string",
-      "description": "country"
+      "description": null
      },
      {
       "name": "COUNTRYA",
@@ -3771,7 +3771,7 @@
      {
       "name": "TSTAT",
       "type": "string",
-      "description": "t_stat"
+      "description": null
      },
      {
       "name": "PRECISION",
@@ -3791,7 +3791,7 @@
      {
       "name": "N",
       "type": "string",
-      "description": "n_obs"
+      "description": null
      },
      {
       "name": "K",
@@ -3831,7 +3831,7 @@
      {
       "name": "PUBYEAR",
       "type": "number",
-      "description": "pub_year"
+      "description": null
      },
      {
       "name": "DSTYEAR",
@@ -3940,12 +3940,12 @@
      {
       "name": "pub_year",
       "type": "number",
-      "description": "pub_year"
+      "description": null
      },
      {
       "name": "idstudy",
       "type": "number",
-      "description": "study_id"
+      "description": null
      },
      {
       "name": "dep_var",
@@ -3975,7 +3975,7 @@
      {
       "name": "no_obs",
       "type": "number",
-      "description": "n_obs"
+      "description": null
      },
      {
       "name": "no_df",
@@ -4070,12 +4070,12 @@
      {
       "name": "country",
       "type": "string",
-      "description": "country"
+      "description": null
      },
      {
       "name": "idcountry",
       "type": "number",
-      "description": "country"
+      "description": null
      },
      {
       "name": "usa",
@@ -4100,7 +4100,7 @@
      {
       "name": "tstat",
       "type": "number",
-      "description": "t_stat"
+      "description": null
      },
      {
       "name": "pcc",
@@ -4209,7 +4209,7 @@
      {
       "name": "idstudy",
       "type": "number",
-      "description": "study_id"
+      "description": null
      },
      {
       "name": "eis",
@@ -4364,12 +4364,12 @@
      {
       "name": "country",
       "type": "string",
-      "description": "country"
+      "description": null
      },
      {
       "name": "idcountry",
       "type": "number",
-      "description": "country"
+      "description": null
      },
      {
       "name": "annual",
@@ -4399,7 +4399,7 @@
      {
       "name": "obs",
       "type": "number",
-      "description": "n_obs"
+      "description": null
      },
      {
       "name": "csunits",
@@ -4439,7 +4439,7 @@
      {
       "name": "pubyear",
       "type": "number",
-      "description": "pub_year"
+      "description": null
      },
      {
       "name": "comb",
@@ -4493,12 +4493,12 @@
      {
       "name": "n_obs",
       "type": "number",
-      "description": "n_obs"
+      "description": null
      },
      {
       "name": "study_id",
       "type": "number",
-      "description": "study_id"
+      "description": null
      },
      {
       "name": "exp",
@@ -4513,7 +4513,7 @@
      {
       "name": "effect",
       "type": "number",
-      "description": "effect_estimate"
+      "description": null
      },
      {
       "name": "se",
@@ -4558,7 +4558,7 @@
      {
       "name": "country",
       "type": "string",
-      "description": "country"
+      "description": null
      },
      {
       "name": "loc_usa",
@@ -4783,7 +4783,7 @@
      {
       "name": "publication_year",
       "type": "number",
-      "description": "pub_year"
+      "description": null
      },
      {
       "name": "impact_factor",
@@ -4823,7 +4823,7 @@
      {
       "name": "effect_M",
       "type": "number",
-      "description": null
+      "description": "effect_estimate"
      },
      {
       "name": "effect_M_source",
@@ -4862,7 +4862,7 @@
      {
       "name": "id_study",
       "type": "number",
-      "description": "study_id"
+      "description": null
      },
      {
       "name": "study",
@@ -4887,7 +4887,7 @@
      {
       "name": "t_stat",
       "type": "number",
-      "description": "t_stat"
+      "description": null
      },
      {
       "name": "se_imputed",
@@ -4907,7 +4907,7 @@
      {
       "name": "sample_size",
       "type": "number",
-      "description": "n_obs"
+      "description": null
      },
      {
       "name": "ln_sample_size",
@@ -5092,7 +5092,7 @@
      {
       "name": "country",
       "type": "string",
-      "description": "country"
+      "description": null
      },
      {
       "name": "country_cat",
@@ -5112,7 +5112,7 @@
      {
       "name": "pub_year",
       "type": "number",
-      "description": "pub_year"
+      "description": null
      },
      {
       "name": "ln_publication_year",
@@ -5406,12 +5406,12 @@
      {
       "name": "tstat",
       "type": "number",
-      "description": "t_stat"
+      "description": null
      },
      {
       "name": "nobs",
       "type": "number",
-      "description": "n_obs"
+      "description": null
      },
      {
       "name": "euro",
@@ -5470,7 +5470,7 @@
      {
       "name": "idstudy",
       "type": "number",
-      "description": "study_id"
+      "description": null
      },
      {
       "name": "study",
@@ -5665,7 +5665,7 @@
      {
       "name": "country",
       "type": "string",
-      "description": "country"
+      "description": null
      },
      {
       "name": "annual",
@@ -5700,7 +5700,7 @@
      {
       "name": "obs",
       "type": "number",
-      "description": "n_obs"
+      "description": null
      },
      {
       "name": "csunits",
@@ -5830,7 +5830,7 @@
      {
       "name": "pubyear",
       "type": "number",
-      "description": "pub_year"
+      "description": null
      },
      {
       "name": "countryyear",
@@ -5969,7 +5969,7 @@
      {
       "name": "Pub_year",
       "type": "number",
-      "description": "pub_year"
+      "description": null
      }
     ]
    },
@@ -5993,7 +5993,7 @@
      {
       "name": "StudyID",
       "type": "number",
-      "description": "study_id"
+      "description": null
      },
      {
       "name": "lnSpot",
@@ -6203,17 +6203,17 @@
      {
       "name": "T",
       "type": "number",
-      "description": "t_stat"
+      "description": null
      },
      {
       "name": "N",
       "type": "number",
-      "description": "n_obs"
+      "description": null
      },
      {
       "name": "Sample_size",
       "type": "number",
-      "description": "n_obs"
+      "description": null
      },
      {
       "name": "Sample_year",
@@ -6427,12 +6427,12 @@
      {
       "name": "idstudy",
       "type": "number",
-      "description": "study_id"
+      "description": null
      },
      {
       "name": "pub_year",
       "type": "number",
-      "description": "pub_year"
+      "description": null
      },
      {
       "name": "pub_year_dif",
@@ -6477,7 +6477,7 @@
      {
       "name": "no_obs",
       "type": "number",
-      "description": "n_obs"
+      "description": null
      },
      {
       "name": "est_per_study",
@@ -6691,7 +6691,7 @@
      {
       "name": "Studyid",
       "type": "number",
-      "description": "study_id"
+      "description": null
      },
      {
       "name": "Study",
@@ -6706,7 +6706,7 @@
      {
       "name": "tstat",
       "type": "number",
-      "description": "t_stat"
+      "description": null
      },
      {
       "name": "Published",
@@ -6716,7 +6716,7 @@
      {
       "name": "Pubyear",
       "type": "number",
-      "description": "pub_year"
+      "description": null
      },
      {
       "name": "Australia",
@@ -6781,7 +6781,7 @@
      {
       "name": "Observations",
       "type": "number",
-      "description": "n_obs"
+      "description": null
      },
      {
       "name": "Cross_section",
@@ -6865,7 +6865,7 @@
      {
       "name": "idstudy",
       "type": "number",
-      "description": "study_id"
+      "description": null
      },
      {
       "name": "e",
@@ -6880,7 +6880,7 @@
      {
       "name": "t",
       "type": "number",
-      "description": "t_stat"
+      "description": null
      },
      {
       "name": "prec",
@@ -6944,7 +6944,7 @@
      {
       "name": "idstudy",
       "type": "number",
-      "description": "study_id"
+      "description": null
      },
      {
       "name": "study",
@@ -6954,7 +6954,7 @@
      {
       "name": "country",
       "type": "string",
-      "description": "country"
+      "description": null
      },
      {
       "name": "habit",
@@ -6969,7 +6969,7 @@
      {
       "name": "observations",
       "type": "number",
-      "description": "n_obs"
+      "description": null
      },
      {
       "name": "no_cross",
@@ -7059,7 +7059,7 @@
      {
       "name": "pub_year",
       "type": "number",
-      "description": "pub_year"
+      "description": null
      },
      {
       "name": "citations",
@@ -7163,7 +7163,7 @@
      {
       "name": "study_id",
       "type": "number",
-      "description": "study_id"
+      "description": null
      },
      {
       "name": "team_id",
@@ -7183,7 +7183,7 @@
      {
       "name": "tstat",
       "type": "number",
-      "description": "t_stat"
+      "description": null
      },
      {
       "name": "se",
@@ -7198,7 +7198,7 @@
      {
       "name": "sample_size",
       "type": "number",
-      "description": "n_obs"
+      "description": null
      },
      {
       "name": "weight",
@@ -7218,7 +7218,7 @@
      {
       "name": "country",
       "type": "string",
-      "description": "country"
+      "description": null
      },
      {
       "name": "data_midyear",
@@ -7273,7 +7273,7 @@
      {
       "name": "publication_year",
       "type": "number",
-      "description": "pub_year"
+      "description": null
      },
      {
       "name": "top3",
@@ -7342,7 +7342,7 @@
      {
       "name": "idstudy",
       "type": "number",
-      "description": "study_id"
+      "description": null
      },
      {
       "name": "Author",
@@ -7352,7 +7352,7 @@
      {
       "name": "pubyear",
       "type": "number",
-      "description": "pub_year"
+      "description": null
      },
      {
       "name": "authoryear",
@@ -7372,12 +7372,12 @@
      {
       "name": "Country",
       "type": "string",
-      "description": "country"
+      "description": null
      },
      {
       "name": "idcountry",
       "type": "number",
-      "description": "country"
+      "description": null
      },
      {
       "name": "Model",
@@ -7467,7 +7467,7 @@
      {
       "name": "SE_u",
       "type": "number",
-      "description": null
+      "description": "standard_error"
      },
      {
       "name": "monthly",
@@ -7537,7 +7537,7 @@
      {
       "name": "nobs",
       "type": "number",
-      "description": "n_obs"
+      "description": null
      },
      {
       "name": "midyear",
@@ -7961,7 +7961,7 @@
      {
       "name": "study_id",
       "type": "number",
-      "description": "study_id"
+      "description": null
      },
      {
       "name": "experiment_id",
@@ -7986,7 +7986,7 @@
      {
       "name": "publication_year",
       "type": "number",
-      "description": "pub_year"
+      "description": null
      },
      {
       "name": "data_year",
@@ -7996,27 +7996,27 @@
      {
       "name": "country",
       "type": "string",
-      "description": "country"
+      "description": null
      },
      {
       "name": "cohens_d",
       "type": "number",
-      "description": "effect_estimate"
+      "description": null
      },
      {
       "name": "se_cohens_d",
       "type": "number",
-      "description": "standard_error"
+      "description": null
      },
      {
       "name": "pcc",
       "type": "number",
-      "description": null
+      "description": "effect_estimate"
      },
      {
       "name": "se_pcc",
       "type": "number",
-      "description": null
+      "description": "standard_error"
      },
      {
       "name": "t_adjusted",
@@ -8051,12 +8051,12 @@
      {
       "name": "observations",
       "type": "number",
-      "description": "n_obs"
+      "description": null
      },
      {
       "name": "n_obs",
       "type": "number",
-      "description": "n_obs"
+      "description": null
      },
      {
       "name": "preferred",
@@ -8340,7 +8340,7 @@
      {
       "name": "Idstudy",
       "type": "number",
-      "description": "study_id"
+      "description": null
      },
      {
       "name": "IdEstimate",
@@ -8470,7 +8470,7 @@
      {
       "name": "Country",
       "type": "string",
-      "description": "country"
+      "description": null
      },
      {
       "name": "Calibration_Frequency",
@@ -8680,7 +8680,7 @@
      {
       "name": "Sample_Size",
       "type": "number",
-      "description": "n_obs"
+      "description": null
      },
      {
       "name": "Sample_Period_Start",
@@ -8780,7 +8780,7 @@
      {
       "name": "tstat",
       "type": "number",
-      "description": "t_stat"
+      "description": null
      },
      {
       "name": "precision",
@@ -9254,7 +9254,7 @@
      {
       "name": "idstudy",
       "type": "number",
-      "description": "study_id"
+      "description": null
      },
      {
       "name": "study",
@@ -9274,7 +9274,7 @@
      {
       "name": "yearpub",
       "type": "number",
-      "description": "pub_year"
+      "description": null
      },
      {
       "name": "focus",
@@ -9394,17 +9394,17 @@
      {
       "name": "nobs",
       "type": "number",
-      "description": "n_obs"
+      "description": null
      },
      {
       "name": "country",
       "type": "string",
-      "description": "country"
+      "description": null
      },
      {
       "name": "idcountry",
       "type": "number",
-      "description": "country"
+      "description": null
      },
      {
       "name": "CPI",
@@ -10063,7 +10063,7 @@
      {
       "name": "country",
       "type": "string",
-      "description": "country"
+      "description": null
      },
      {
       "name": "n_study",
@@ -10132,12 +10132,12 @@
      {
       "name": "idstudy",
       "type": "number",
-      "description": "study_id"
+      "description": null
      },
      {
       "name": "n",
       "type": "number",
-      "description": "n_obs"
+      "description": null
      },
      {
       "name": "author",
@@ -10162,7 +10162,7 @@
      {
       "name": "tstat",
       "type": "number",
-      "description": "t_stat"
+      "description": null
      },
      {
       "name": "weight",
@@ -10377,7 +10377,7 @@
      {
       "name": "pub_year",
       "type": "number",
-      "description": "pub_year"
+      "description": null
      },
      {
       "name": "lpub_year",
@@ -10402,12 +10402,12 @@
      {
       "name": "country",
       "type": "string",
-      "description": "country"
+      "description": null
      },
      {
       "name": "idcountry",
       "type": "number",
-      "description": "country"
+      "description": null
      },
      {
       "name": "midyear",
@@ -10436,7 +10436,7 @@
      {
       "name": "idstudy",
       "type": "number",
-      "description": "study_id"
+      "description": null
      },
      {
       "name": "study",
@@ -10446,7 +10446,7 @@
      {
       "name": "idauthor",
       "type": "number",
-      "description": "effect_estimate"
+      "description": null
      },
      {
       "name": "horizon",
@@ -10456,7 +10456,7 @@
      {
       "name": "yearpub",
       "type": "number",
-      "description": "pub_year"
+      "description": null
      },
      {
       "name": "focus",
@@ -10576,17 +10576,17 @@
      {
       "name": "nobs",
       "type": "number",
-      "description": "n_obs"
+      "description": null
      },
      {
       "name": "country",
       "type": "string",
-      "description": "country"
+      "description": null
      },
      {
       "name": "idcountry",
       "type": "number",
-      "description": "country"
+      "description": null
      },
      {
       "name": "CPI",
@@ -11001,7 +11001,7 @@
      {
       "name": "ci_se",
       "type": "number",
-      "description": "standard_error"
+      "description": null
      },
      {
       "name": "scale",
@@ -11210,7 +11210,7 @@
      {
       "name": "obs",
       "type": "number",
-      "description": "n_obs"
+      "description": null
      },
      {
       "name": "study",
@@ -11235,7 +11235,7 @@
      {
       "name": "n",
       "type": "number",
-      "description": "n_obs"
+      "description": null
      },
      {
       "name": "k",
@@ -11439,12 +11439,12 @@
      {
       "name": "Obs",
       "type": "number",
-      "description": "n_obs"
+      "description": null
      },
      {
       "name": "ID Study",
       "type": "number",
-      "description": "study_id"
+      "description": null
      },
      {
       "name": "No_Eq",
@@ -11529,12 +11529,12 @@
      {
       "name": "N",
       "type": "number",
-      "description": "n_obs"
+      "description": null
      },
      {
       "name": "T",
       "type": "number",
-      "description": "t_stat"
+      "description": null
      },
      {
       "name": "Sample",
@@ -11784,12 +11784,12 @@
      {
       "name": "TSTAT_L",
       "type": "number",
-      "description": "t_stat"
+      "description": null
      },
      {
       "name": "TSTAT_S",
       "type": "number",
-      "description": "t_stat"
+      "description": null
      }
     ]
    },
@@ -11903,7 +11903,7 @@
      {
       "name": "NO_OBS",
       "type": "number",
-      "description": "n_obs"
+      "description": null
      },
      {
       "name": "NO_COUNTRY",
@@ -12063,7 +12063,7 @@
      {
       "name": "TSTAT",
       "type": "number",
-      "description": "t_stat"
+      "description": null
      },
      {
       "name": "PCC",
@@ -12397,7 +12397,7 @@
      {
       "name": "idstudy",
       "type": "number",
-      "description": "study_id"
+      "description": null
      },
      {
       "name": "idcoeff",
@@ -12417,7 +12417,7 @@
      {
       "name": "tstat",
       "type": "number",
-      "description": "t_stat"
+      "description": null
      },
      {
       "name": "perstudy",
@@ -12427,7 +12427,7 @@
      {
       "name": "pubyear",
       "type": "number",
-      "description": "pub_year"
+      "description": null
      },
      {
       "name": "pyear",
@@ -12472,7 +12472,7 @@
      {
       "name": "obs",
       "type": "number",
-      "description": "n_obs"
+      "description": null
      },
      {
       "name": "avyear",
@@ -12532,7 +12532,7 @@
      {
       "name": "country",
       "type": "string",
-      "description": "country"
+      "description": null
      },
      {
       "name": "sepdur",
@@ -12721,12 +12721,12 @@
      {
       "name": "idstudy",
       "type": "number",
-      "description": "study_id"
+      "description": null
      },
      {
       "name": "pubyear",
       "type": "number",
-      "description": "pub_year"
+      "description": null
      },
      {
       "name": "reviewed",
@@ -12751,7 +12751,7 @@
      {
       "name": "scc",
       "type": "number",
-      "description": null
+      "description": "effect_estimate"
      },
      {
       "name": "sccmean",
@@ -12776,7 +12776,7 @@
      {
       "name": "stdlow",
       "type": "number",
-      "description": null
+      "description": "standard_error"
      },
      {
       "name": "stdup",
@@ -12920,7 +12920,7 @@
      {
       "name": "idstudy",
       "type": "number",
-      "description": "study_id"
+      "description": null
      },
      {
       "name": "label",
@@ -12950,7 +12950,7 @@
      {
       "name": "t",
       "type": "number",
-      "description": "t_stat"
+      "description": null
      },
      {
       "name": "viadelta",
@@ -12985,7 +12985,7 @@
      {
       "name": "nobs",
       "type": "number",
-      "description": "n_obs"
+      "description": null
      },
      {
       "name": "midpoint",
@@ -13035,12 +13035,12 @@
      {
       "name": "country",
       "type": "string",
-      "description": "country"
+      "description": null
      },
      {
       "name": "idcountry",
       "type": "number",
-      "description": "country"
+      "description": null
      },
      {
       "name": "country_US",
@@ -13475,7 +13475,7 @@
      {
       "name": "pubyear",
       "type": "number",
-      "description": "pub_year"
+      "description": null
      },
      {
       "name": "impact",
@@ -13519,7 +13519,7 @@
      {
       "name": "idstudy",
       "type": "number",
-      "description": "study_id"
+      "description": null
      },
      {
       "name": "size",
@@ -13564,12 +13564,12 @@
      {
       "name": "tstat_adj",
       "type": "number",
-      "description": "t_stat"
+      "description": null
      },
      {
       "name": "tstat_type_comment",
       "type": "string",
-      "description": "t_stat"
+      "description": null
      },
      {
       "name": "pvalue",
@@ -13589,7 +13589,7 @@
      {
       "name": "obs",
       "type": "number",
-      "description": "n_obs"
+      "description": null
      },
      {
       "name": "firms",
@@ -15474,7 +15474,7 @@
      {
       "name": "pubyear",
       "type": "number",
-      "description": "pub_year"
+      "description": null
      },
      {
       "name": "study",
@@ -15539,7 +15539,7 @@
      {
       "name": "tstat",
       "type": "number",
-      "description": "t_stat"
+      "description": null
      }
     ]
    },
@@ -15563,12 +15563,12 @@
      {
       "name": "idstudy",
       "type": "number",
-      "description": "study_id"
+      "description": null
      },
      {
       "name": "idcountry",
       "type": "number",
-      "description": "country"
+      "description": null
      },
      {
       "name": "author",
@@ -15593,7 +15593,7 @@
      {
       "name": "tstat",
       "type": "number",
-      "description": "t_stat"
+      "description": null
      },
      {
       "name": "weight",
@@ -15788,7 +15788,7 @@
      {
       "name": "publication_year",
       "type": "number",
-      "description": "pub_year"
+      "description": null
      },
      {
       "name": "midyear",
@@ -15798,12 +15798,12 @@
      {
       "name": "pubyear",
       "type": "number",
-      "description": "pub_year"
+      "description": null
      },
      {
       "name": "country",
       "type": "string",
-      "description": "country"
+      "description": null
      },
      {
       "name": "reference",
@@ -15832,7 +15832,7 @@
      {
       "name": "idstudy",
       "type": "number",
-      "description": "study_id"
+      "description": null
      },
      {
       "name": "study",
@@ -15912,7 +15912,7 @@
      {
       "name": "t",
       "type": "number",
-      "description": "t_stat"
+      "description": null
      },
      {
       "name": "lin",
@@ -15957,7 +15957,7 @@
      {
       "name": "country",
       "type": "string",
-      "description": "country"
+      "description": null
      },
      {
       "name": "amad",
@@ -15972,7 +15972,7 @@
      {
       "name": "nobs",
       "type": "number",
-      "description": "n_obs"
+      "description": null
      },
      {
       "name": "start",
@@ -16157,7 +16157,7 @@
      {
       "name": "idcountry",
       "type": "number",
-      "description": "country"
+      "description": null
      },
      {
       "name": "dist",
@@ -16341,12 +16341,12 @@
      {
       "name": "idstudy",
       "type": "number",
-      "description": "study_id"
+      "description": null
      },
      {
       "name": "idcountry",
       "type": "number",
-      "description": "country"
+      "description": null
      },
      {
       "name": "study",
@@ -16366,7 +16366,7 @@
      {
       "name": "tstat",
       "type": "number",
-      "description": "t_stat"
+      "description": null
      },
      {
       "name": "estimate",
@@ -16471,7 +16471,7 @@
      {
       "name": "sample_size",
       "type": "number",
-      "description": "n_obs"
+      "description": null
      },
      {
       "name": "ols_method",
@@ -16536,7 +16536,7 @@
      {
       "name": "publication_year",
       "type": "number",
-      "description": "pub_year"
+      "description": null
      },
      {
       "name": "citations",
@@ -16621,12 +16621,12 @@
      {
       "name": "country",
       "type": "string",
-      "description": "country"
+      "description": null
      },
      {
       "name": "pub_year",
       "type": "number",
-      "description": "pub_year"
+      "description": null
      },
      {
       "name": "mid_year",
@@ -16660,12 +16660,12 @@
      {
       "name": "idstudy",
       "type": "number",
-      "description": "study_id"
+      "description": null
      },
      {
       "name": "country",
       "type": "string",
-      "description": "country"
+      "description": null
      },
      {
       "name": "startyear",
@@ -16830,7 +16830,7 @@
      {
       "name": "idcountry",
       "type": "number",
-      "description": "country"
+      "description": null
      },
      {
       "name": "annual",
@@ -16850,7 +16850,7 @@
      {
       "name": "obs",
       "type": "number",
-      "description": "n_obs"
+      "description": null
      },
      {
       "name": "csunits",
@@ -16890,7 +16890,7 @@
      {
       "name": "pubyear",
       "type": "number",
-      "description": "pub_year"
+      "description": null
      },
      {
       "name": "comb",
@@ -17004,7 +17004,7 @@
      {
       "name": "idstudy",
       "type": "number",
-      "description": "study_id"
+      "description": null
      },
      {
       "name": "size",
@@ -17248,12 +17248,12 @@
      {
       "name": "country",
       "type": "string",
-      "description": "country"
+      "description": null
      },
      {
       "name": "studyid",
       "type": "number",
-      "description": "study_id"
+      "description": null
      },
      {
       "name": "estimateid",
@@ -17273,7 +17273,7 @@
      {
       "name": "publicationyear",
       "type": "number",
-      "description": "pub_year"
+      "description": null
      },
      {
       "name": "published",
@@ -17308,7 +17308,7 @@
      {
       "name": "tvalue",
       "type": "number",
-      "description": "t_stat"
+      "description": null
      },
      {
       "name": "standarderror",

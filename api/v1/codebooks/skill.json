@@ -12,7 +12,8 @@
    "dtype": "int8",
    "n_missing": 0,
    "n_unique": 99,
-   "role": "study_id",
+   "inferred_role": "study_id",
+   "inferred_role_confidence": "name-match only, not verified",
    "stats": {
     "min": 1.0,
     "p25": 22.0,
@@ -29,7 +30,8 @@
    "dtype": "int8",
    "n_missing": 0,
    "n_unique": 29,
-   "role": "country",
+   "inferred_role": "country",
+   "inferred_role_confidence": "name-match only, not verified",
    "stats": {
     "min": 1.0,
     "p25": 15.0,
@@ -110,7 +112,8 @@
    "dtype": "float64",
    "n_missing": 132,
    "n_unique": 874,
-   "role": "t_stat",
+   "inferred_role": "t_stat",
+   "inferred_role_confidence": "name-match only, not verified",
    "stats": {
     "min": -18.5,
     "p25": 1.49434,
@@ -767,7 +770,8 @@
    "dtype": "float64",
    "n_missing": 0,
    "n_unique": 40,
-   "role": "pub_year",
+   "inferred_role": "pub_year",
+   "inferred_role_confidence": "name-match only, not verified",
    "stats": {
     "min": 0.0,
     "p25": 3.583519,
@@ -800,7 +804,8 @@
    "dtype": "int16",
    "n_missing": 0,
    "n_unique": 40,
-   "role": "pub_year",
+   "inferred_role": "pub_year",
+   "inferred_role_confidence": "name-match only, not verified",
    "stats": {
     "min": 1970.0,
     "p25": 2005.0,
@@ -817,7 +822,8 @@
    "dtype": "str",
    "n_missing": 0,
    "n_unique": 29,
-   "role": "country",
+   "inferred_role": "country",
+   "inferred_role_confidence": "name-match only, not verified",
    "top_values": [
     "United States",
     "World",

@@ -12,7 +12,8 @@
    "dtype": "int64",
    "n_missing": 0,
    "n_unique": 66,
-   "role": "study_id",
+   "inferred_role": "study_id",
+   "inferred_role_confidence": "name-match only, not verified",
    "stats": {
     "min": 1.0,
     "p25": 9.0,
@@ -43,7 +44,8 @@
    "dtype": "int64",
    "n_missing": 0,
    "n_unique": 24,
-   "role": "pub_year",
+   "inferred_role": "pub_year",
+   "inferred_role_confidence": "name-match only, not verified",
    "stats": {
     "min": 1995.0,
     "p25": 2006.0,
@@ -109,7 +111,8 @@
    "dtype": "float64",
    "n_missing": 0,
    "n_unique": 2518,
-   "role": "t_stat",
+   "inferred_role": "t_stat",
+   "inferred_role_confidence": "name-match only, not verified",
    "stats": {
     "min": -85.714286,
     "p25": -2.087315,
@@ -202,7 +205,8 @@
    "dtype": "float64",
    "n_missing": 8,
    "n_unique": 699,
-   "role": "n_obs",
+   "inferred_role": "n_obs",
+   "inferred_role_confidence": "name-match only, not verified",
    "stats": {
     "min": 36.0,
     "p25": 2563.0,
@@ -555,7 +559,8 @@
    "dtype": "str",
    "n_missing": 0,
    "n_unique": 70,
-   "role": "country",
+   "inferred_role": "country",
+   "inferred_role_confidence": "name-match only, not verified",
    "top_values": [
     "USA",
     "Japan",
@@ -942,7 +947,8 @@
    "dtype": "float64",
    "n_missing": 0,
    "n_unique": 24,
-   "role": "pub_year",
+   "inferred_role": "pub_year",
+   "inferred_role_confidence": "name-match only, not verified",
    "stats": {
     "min": 0.0,
     "p25": 2.484907,

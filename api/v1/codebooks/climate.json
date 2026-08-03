@@ -12,7 +12,8 @@
    "dtype": "int8",
    "n_missing": 0,
    "n_unique": 16,
-   "role": "study_id",
+   "inferred_role": "study_id",
+   "inferred_role_confidence": "name-match only, not verified",
    "stats": {
     "min": 1.0,
     "p25": 6.0,
@@ -143,7 +144,8 @@
    "dtype": "int16",
    "n_missing": 0,
    "n_unique": 8,
-   "role": "pub_year",
+   "inferred_role": "pub_year",
+   "inferred_role_confidence": "name-match only, not verified",
    "stats": {
     "min": 2001.0,
     "p25": 2005.75,

@@ -42,7 +42,8 @@
    "dtype": "float64",
    "n_missing": 35,
    "n_unique": 539,
-   "role": "n_obs",
+   "inferred_role": "n_obs",
+   "inferred_role_confidence": "name-match only, not verified",
    "stats": {
     "min": 8.0,
     "p25": 67.0,
@@ -59,7 +60,8 @@
    "dtype": "int64",
    "n_missing": 0,
    "n_unique": 462,
-   "role": "study_id",
+   "inferred_role": "study_id",
+   "inferred_role_confidence": "name-match only, not verified",
    "stats": {
     "min": 1.0,
     "p25": 125.0,
@@ -110,7 +112,6 @@
    "dtype": "float64",
    "n_missing": 0,
    "n_unique": 2098,
-   "role": "effect_estimate",
    "stats": {
     "min": -12.61,
     "p25": -0.56994,
@@ -259,7 +260,8 @@
    "dtype": "str",
    "n_missing": 0,
    "n_unique": 95,
-   "role": "country",
+   "inferred_role": "country",
+   "inferred_role_confidence": "name-match only, not verified",
    "top_values": [
     "USA",
     "Canada",
@@ -1020,7 +1022,8 @@
    "dtype": "int64",
    "n_missing": 0,
    "n_unique": 57,
-   "role": "pub_year",
+   "inferred_role": "pub_year",
+   "inferred_role_confidence": "name-match only, not verified",
    "stats": {
     "min": 1951.0,
     "p25": 1985.0,
@@ -1145,6 +1148,7 @@
    "dtype": "float64",
    "n_missing": 859,
    "n_unique": 2269,
+   "role": "effect_estimate",
    "stats": {
     "min": -12.61,
     "p25": -0.57,

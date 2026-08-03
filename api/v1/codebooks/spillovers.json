@@ -12,7 +12,8 @@
    "dtype": "int64",
    "n_missing": 0,
    "n_unique": 57,
-   "role": "study_id",
+   "inferred_role": "study_id",
+   "inferred_role_confidence": "name-match only, not verified",
    "stats": {
     "min": 1.0,
     "p25": 22.0,
@@ -275,7 +276,8 @@
    "dtype": "float64",
    "n_missing": 0,
    "n_unique": 3530,
-   "role": "t_stat",
+   "inferred_role": "t_stat",
+   "inferred_role_confidence": "name-match only, not verified",
    "stats": {
     "min": -149.84127,
     "p25": -0.957273,
@@ -426,7 +428,8 @@
    "dtype": "str",
    "n_missing": 0,
    "n_unique": 41,
-   "role": "country",
+   "inferred_role": "country",
+   "inferred_role_confidence": "name-match only, not verified",
    "top_values": [
     "China",
     "Albania, Bulgaria, Croatia, Czech Republic, Estonia, Hungary, Georgia, Kazakhstan, Latvia, Lithuania, Poland, Romania, Russia, Serbia, Slovakia, Slovenia, Ukraine",
@@ -475,7 +478,8 @@
    "dtype": "int64",
    "n_missing": 0,
    "n_unique": 538,
-   "role": "n_obs",
+   "inferred_role": "n_obs",
+   "inferred_role_confidence": "name-match only, not verified",
    "stats": {
     "min": 35.0,
     "p25": 3141.0,
@@ -1088,7 +1092,8 @@
    "dtype": "int64",
    "n_missing": 0,
    "n_unique": 49,
-   "role": "country",
+   "inferred_role": "country",
+   "inferred_role_confidence": "name-match only, not verified",
    "stats": {
     "min": 16.0,
     "p25": 59.0,

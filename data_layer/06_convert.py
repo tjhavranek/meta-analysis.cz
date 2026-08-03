@@ -55,13 +55,21 @@ def clean_for_parquet(df):
             else: df[c]=df[c].astype(str).replace({"nan":None,"None":None,"":None})
     return df
 
+VERIFIED_ROLES={"effect_estimate","standard_error"}   # set from the resolved mapping, not a guess
+
 def describe(df, roles):
     cb=[]
     for c in df.columns:
         s=df[c]; e=dict(name=str(c), normalized=norm(c), dtype=str(s.dtype),
                         n_missing=int(s.isna().sum()), n_unique=int(s.nunique(dropna=True)))
         r=roles.get(str(c))
-        if r: e["role"]=r
+        if r:
+            # `role` is asserted ONLY for columns confirmed by the arithmetic test or the
+            # paper's replication code. Everything else is a NAME-BASED GUESS and is labelled
+            # as such: price_puzzle's idauthor was being published as an effect_estimate.
+            e["role" if r in VERIFIED_ROLES else "inferred_role"]=r
+            if r not in VERIFIED_ROLES:
+                e["inferred_role_confidence"]="name-match only, not verified"
         if pd.api.types.is_numeric_dtype(s) and s.notna().any():
             d=s.dropna().astype(float)
             e["stats"]=dict(min=round(float(d.min()),6), p25=round(float(d.quantile(.25)),6),
@@ -90,9 +98,21 @@ for proj in sorted(prim):
         manifest.append(dict(project=proj,status="error",reason="empty")); continue
     df=clean_for_parquet(df)
     roles={}
-    if r.get("status")=="ok":
-        if r.get("effect") in df.columns: roles[r["effect"]]="effect_estimate"
-        if r.get("se") in df.columns: roles[r["se"]]="standard_error"
+    # The OVERRIDE supersedes the resolver. Reading the resolver's guess here published
+    # price_puzzle's `idauthor` as an effect_estimate, because the resolver guessed it and
+    # the override (a wide->long reshape onto `res`/`se`) replaced that guess entirely.
+    # Where the override reshapes or computes, no raw column IS the effect, so assert none.
+    ov=OVR.get(proj) or {}
+    if ov.get("reshape_long") or ov.get("compute"):
+        pass                                   # effect is constructed, not a column here
+    else:
+        eff=ov.get("effect") or (r.get("effect") if r.get("status")=="ok" else None)
+        se=ov.get("se") or (None if r.get("se_derived") else
+                            (r.get("se") if r.get("status")=="ok" else None))
+        if eff in df.columns: roles[eff]="effect_estimate"
+        if se in df.columns: roles[se]="standard_error"
+        for c in (ov.get("se_mean_of") or []):
+            if c in df.columns: roles[c]="standard_error"
     for c in df.columns:
         n=norm(c)
         if re.match(r"^(id_?study|study_?id|idstudy|studyid)$",n): roles.setdefault(str(c),"study_id")

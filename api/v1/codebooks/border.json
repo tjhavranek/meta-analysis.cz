@@ -28,7 +28,8 @@
    "dtype": "int8",
    "n_missing": 0,
    "n_unique": 61,
-   "role": "study_id",
+   "inferred_role": "study_id",
+   "inferred_role_confidence": "name-match only, not verified",
    "stats": {
     "min": 1.0,
     "p25": 19.0,
@@ -93,7 +94,8 @@
    "dtype": "float64",
    "n_missing": 0,
    "n_unique": 1138,
-   "role": "t_stat",
+   "inferred_role": "t_stat",
+   "inferred_role_confidence": "name-match only, not verified",
    "stats": {
     "min": -4.692308,
     "p25": 8.050625,
@@ -388,7 +390,8 @@
    "dtype": "int32",
    "n_missing": 0,
    "n_unique": 215,
-   "role": "n_obs",
+   "inferred_role": "n_obs",
+   "inferred_role_confidence": "name-match only, not verified",
    "stats": {
     "min": 24.0,
     "p25": 1260.0,
