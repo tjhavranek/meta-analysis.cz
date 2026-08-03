@@ -28,7 +28,14 @@ NOTES = []   # informational only -- never fail the build
 # feed. Injecting the paper-oriented ScholarlyArticle block here would duplicate
 # every one of those tags and fail verify_seo. Their pages are still listed in
 # sitemap.xml below.
-SELF_MANAGED = {"komentare", "notes"}
+SELF_MANAGED = {"komentare", "notes", "datasets"}
+
+# /datasets/ is the human landing page for the data layer. It is NOT a paper, so it
+# must not receive Highwire citation_* tags — hence SELF_MANAGED above. It does get a
+# schema.org DataCatalog block, injected below, which is what Google Dataset Search
+# reads to discover the individual datasets. The page itself is hand-built; only the
+# block between the sentinels is generated. Safe if the page does not exist yet.
+DATA_API = "/api/v1/datasets.json"
 
 FMT = {
     ".pdf": "application/pdf", ".dta": "application/x-stata-dta",
@@ -500,6 +507,47 @@ def main():
 
         '<script type="application/ld+json">\n' + jdump(home_graph) + "\n</script>"]) + "\n"
     inject(os.path.join(SITE, "index.html"), home_block)
+
+    # /datasets/ — the data layer's landing page. Hand-built and hand-designed; we
+    # only inject the DataCatalog that makes its datasets discoverable. Each entry
+    # points at the paper page's existing #dataset node rather than restating it, so
+    # there is one description of each dataset, not two that can drift apart.
+    dsets_index = os.path.join(SITE, "datasets", "index.html")
+    if os.path.isfile(dsets_index):
+        try:
+            api = json.load(open(os.path.join(SITE, "api", "v1", "datasets.json"),
+                                 encoding="utf-8"))
+        except Exception as e:
+            api = None
+            WARNINGS.append(f"datasets/: cannot read api/v1/datasets.json ({e}) — "
+                            f"DataCatalog not injected")
+        if api:
+            entries = [d for d in api["datasets"] if d.get("n_estimates")]
+            catalog = {
+                "@context": "https://schema.org", "@type": "DataCatalog",
+                "@id": BASE + "/datasets/#catalog",
+                "name": "meta-analysis.cz datasets",
+                "description": (
+                    f"{len(entries)} estimate-level datasets from meta-analyses in economics "
+                    f"and the social sciences, {api['counts']['estimates']:,} estimates in total, "
+                    f"each with the study characteristics hand-coded for the original paper."),
+                "url": BASE + "/datasets/",
+                "license": "https://creativecommons.org/licenses/by/4.0/",
+                "isAccessibleForFree": True,
+                "provider": {"@id": BASE + "/#org"},
+                "dataset": [{"@id": f"{BASE}/{d['id']}/#dataset"} for d in entries],
+                "distribution": [
+                    {"@type": "DataDownload", "encodingFormat": "application/json",
+                     "contentUrl": BASE + DATA_API,
+                     "description": "Machine-readable index of every dataset"},
+                    {"@type": "DataDownload", "encodingFormat": "text/csv",
+                     "contentUrl": BASE + "/data/v1/estimates_harmonised.csv",
+                     "description": "All literatures pooled into one estimate-level table"}]}
+            block = ('<script type="application/ld+json">'
+                     + json.dumps(catalog, ensure_ascii=False, separators=(",", ":"))
+                     + "</script>")
+            inject(dsets_index, block)
+            print(f"datasets/: DataCatalog injected ({len(entries)} datasets)")
     print("injected homepage block")
 
     ai_bots = ["GPTBot", "OAI-SearchBot", "ClaudeBot", "Claude-SearchBot", "Claude-User",
