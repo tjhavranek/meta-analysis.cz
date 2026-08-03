@@ -70,11 +70,14 @@ units are consistent, which is what estimator comparisons need. Comparing across
 literatures needs an explicitly standardised measure — and ratios are unsuitable
 where the denominator may sit near zero or change sign.
 
-Being a beta, the harmonisation may be revised. **There is no DOI yet** — an
-earlier version of this file said the files were deposited with one, which was
-never true. When a deposit exists it will be linked here, and pinning to it will
-be the way to get a reference that does not move. Until then, pin the version
-string and the file's checksum.
+Being a beta, the harmonisation may be revised. For a reference that does not
+move, cite the archived deposit:
+
+> **https://doi.org/10.5281/zenodo.21773679**
+
+That deposit is immutable: it holds this version's harmonised table, index,
+codebooks and documentation, with checksums. The live files here may change; the
+DOI will not.
 
 ## Before you pool
 

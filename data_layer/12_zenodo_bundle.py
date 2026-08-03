@@ -12,7 +12,7 @@ co-authored dataset, and LICENSE 2b says rights inherit from the source.
 import os, shutil, hashlib
 HERE=os.path.dirname(os.path.abspath(__file__))
 SITE=os.path.join(os.path.dirname(HERE),"site")
-OUT=os.path.join(os.path.dirname(HERE),"zenodo_deposit","meta-analysis-cz-harmonised-v1.0.0")
+OUT=os.path.join(os.path.dirname(HERE),"zenodo_deposit","meta-analysis-cz-harmonised-v0.9.0-beta")
 ITEMS=[("data/v1/estimates_harmonised.csv","estimates_harmonised.csv"),
        ("data/v1/estimates_harmonised.parquet","estimates_harmonised.parquet"),
        ("api/v1/datasets.json","datasets.json"),

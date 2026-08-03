@@ -9,7 +9,9 @@
   "url": "https://meta-analysis.cz/LICENSE",
   "note": "CC BY 4.0 covers the compilation, index, codebooks and harmonisation mappings only. It does NOT relicense the underlying research datasets, their format conversions, or the papers' own replication code, none of which are ours to grant. Cite both the collection and the individual paper."
  },
- "cite_as": "Havranek, T. and Z. Irsova (2026). meta-analysis.cz: data and code for meta-analyses in economics.",
+ "cite_as": "Havranek, T. and Z. Irsova (2026). meta-analysis.cz: harmonised estimate-level data from meta-analyses in economics. Zenodo. https://doi.org/10.5281/zenodo.21773679",
+ "doi": "10.5281/zenodo.21773679",
+ "doi_url": "https://doi.org/10.5281/zenodo.21773679",
  "endpoints": {
   "datasets": "https://meta-analysis.cz/api/v1/datasets.json",
   "codebook": "https://meta-analysis.cz/api/v1/codebooks/{id}.json",
@@ -84,7 +86,7 @@
    "source_file, effect_col and se_col identify the origin of every value, so any row can be traced to the published dataset and checked.",
    "se_is_derived marks rows whose standard error was reconstructed rather than read directly.",
    "Column mappings were resolved arithmetically (effect/se must reproduce the reported t-statistic) and, where that was not decisive, taken from the paper's own replication code.",
-   "Beta: the harmonisation may be revised. THERE IS NO DOI DEPOSIT YET. For a reference that does not move, pin the version string and the file checksum."
+   "Beta: the harmonisation may be revised. For a reference that does not move, cite the archived deposit https://doi.org/10.5281/zenodo.21773679 , which is immutable and carries checksums."
   ],
   "excluded": {
    "fdi": "no per-estimate precision exists: the file has no standard error, t-statistic, weight or inverse-SE column, so SE-based synthesis is impossible",

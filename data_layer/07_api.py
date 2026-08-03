@@ -207,7 +207,9 @@ index=dict(
           "It does NOT relicense the underlying research datasets, their format conversions, or "
           "the papers' own replication code, none of which are ours to grant. Cite both the "
           "collection and the individual paper.")),
-  cite_as="Havranek, T. and Z. Irsova (2026). meta-analysis.cz: data and code for meta-analyses in economics.",
+  cite_as=("Havranek, T. and Z. Irsova (2026). meta-analysis.cz: harmonised estimate-level data "
+           "from meta-analyses in economics. Zenodo. https://doi.org/10.5281/zenodo.21773679"),
+  doi="10.5281/zenodo.21773679", doi_url="https://doi.org/10.5281/zenodo.21773679",
   endpoints={
     "datasets":f"{BASE}/api/{DATA_V}/datasets.json",
     "codebook":f"{BASE}/api/{DATA_V}/codebooks/{{id}}.json",
@@ -248,8 +250,8 @@ index=dict(
       "se_is_derived marks rows whose standard error was reconstructed rather than read directly.",
       "Column mappings were resolved arithmetically (effect/se must reproduce the reported "
       "t-statistic) and, where that was not decisive, taken from the paper's own replication code.",
-      "Beta: the harmonisation may be revised. THERE IS NO DOI DEPOSIT YET. For a reference that "
-      "does not move, pin the version string and the file checksum."],
+      "Beta: the harmonisation may be revised. For a reference that does not move, cite the "
+      "archived deposit https://doi.org/10.5281/zenodo.21773679 , which is immutable and carries checksums."],
     excluded={p:v.get("reason") for p,v in (harm.get("projects") or {}).items()
               if not v.get("included")}),
   counts_note=("`datasets` contains exactly counts.datasets entries, all of them real datasets. "
