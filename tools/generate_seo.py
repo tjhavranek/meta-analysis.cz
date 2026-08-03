@@ -547,7 +547,8 @@ def main():
                 "name": "meta-analysis.cz datasets",
                 "description": (
                     f"{len(entries)} estimate-level datasets from meta-analyses in economics "
-                    f"and the social sciences, {api['counts']['estimates']:,} estimates in total, "
+                    f"and the social sciences, {api['counts']['estimates_in_analysis_samples']:,} "
+                    f"estimates in their analysis samples, "
                     f"each with the study characteristics hand-coded for the original paper."),
                 "url": BASE + "/datasets/",
                 "license": "https://creativecommons.org/licenses/by/4.0/",
@@ -561,9 +562,26 @@ def main():
                     {"@type": "DataDownload", "encodingFormat": "text/csv",
                      "contentUrl": BASE + "/data/v1/estimates_harmonised.csv",
                      "description": "All literatures pooled into one estimate-level table"}]}
-            block = ('<script type="application/ld+json">'
-                     + json.dumps(catalog, ensure_ascii=False, separators=(",", ":"))
-                     + "</script>")
+            # /datasets/ is in SELF_MANAGED only to suppress Highwire citation_* tags (it is
+            # not a paper). Canonical and Open Graph got caught up in that by accident, and a
+            # public front door with no canonical is weak in exactly the way this layer exists
+            # to fix. Emit them here; still no citation_* tags.
+            durl = BASE + "/datasets/"
+            ddesc = (f"{len(entries)} estimate-level datasets from meta-analyses in economics and "
+                     f"the social sciences, published as Parquet and CSV with column-level "
+                     f"codebooks, plus a harmonised table pooling "
+                     f"{api['counts'].get('literatures_in_harmonised_table', '')} literatures.")
+            block = chr(10).join([
+                f'<link rel="canonical" href="{durl}" />',
+                f'<meta name="description" content="{html.escape(ddesc, quote=True)}" />',
+                '<meta property="og:type" content="website" />',
+                '<meta property="og:title" content="Datasets | meta-analysis.cz" />',
+                f'<meta property="og:url" content="{durl}" />',
+                f'<meta property="og:description" content="{html.escape(ddesc, quote=True)}" />',
+                '<meta name="twitter:card" content="summary" />',
+                '<script type="application/ld+json">'
+                + json.dumps(catalog, ensure_ascii=False, separators=(",", ":"))
+                + "</script>"])
             inject(dsets_index, block)
             print(f"datasets/: DataCatalog injected ({len(entries)} datasets)")
     print("injected homepage block")

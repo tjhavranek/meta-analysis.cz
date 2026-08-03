@@ -1,9 +1,15 @@
 cff-version: 1.2.0
 title: "meta-analysis.cz: data and code for meta-analyses in economics"
 message: >-
+  LICENCE SCOPE: the CC-BY-4.0 below covers the COMPILATION only — the index,
+  codebooks, harmonisation mappings and documentation. It does NOT cover the
+  underlying research datasets, their CSV/Parquet format conversions, or the
+  papers' own replication code; those were assembled by their own author teams
+  and their rights are unchanged. See https://meta-analysis.cz/LICENSE.
   If you use this collection, please cite it. If you use an individual dataset,
-  please also cite the paper it was assembled for — every dataset entry in
-  /api/v1/datasets.json carries that paper's title, authors and DOI.
+  you must also cite the paper it was assembled for — every dataset entry in
+  /api/v1/datasets.json carries that paper's title, authors and DOI, and a
+  rights_status field. Attribution is not the same as permission.
 type: dataset
 authors:
   - family-names: Havránek

@@ -21,8 +21,12 @@
  },
  "counts": {
   "datasets": 44,
-  "estimates": 65349,
-  "in_harmonised_table": 39
+  "rows_in_source_files": 65349,
+  "estimates_in_analysis_samples": 61305,
+  "estimates_in_harmonised_table": 54087,
+  "literatures_in_harmonised_table": 39,
+  "in_harmonised_table": 39,
+  "counts_explained": "rows_in_source_files counts every row of the 44 converted files. estimates_in_analysis_samples applies each paper's own filters and is what the catalogue table shows. estimates_in_harmonised_table additionally drops the literatures that duplicate another or lack per-estimate precision."
  },
  "harmonised_table": {
   "version": "0.9.0-beta",
@@ -120,10 +124,10 @@
     "codebook": "https://meta-analysis.cz/api/v1/codebooks/activism.json"
    },
    "core_columns": {
-    "effect": "Estimate",
-    "standard_error": null,
-    "standard_error_note": "<derived: |Estimate/t-stats|>",
-    "evidence": "se_derived_from:t-stats"
+    "effect": "Estimate rescaled by 100.0 x Multiplicator to obtain estimates in points (number)",
+    "standard_error": "derived as |effect/t-stats|",
+    "standard_error_note": "derived, not read from a column",
+    "evidence": "paper's replication code"
    },
    "effect_units": "percent",
    "direction_note": "Reconstructed on a comparable scale; the raw Estimate column mixes percent and decimal across studies.",
@@ -132,10 +136,11 @@
    "reconciliation": {
     "n_estimates_reported_in_paper": 1973,
     "n_rows_in_harmonised_table": 1254,
-    "note": "fewer rows than the abstract's collection count, and correctly so: the paper's own replication code restricts to an analysis subset, which is reproduced here. See column_mapping_verified_by."
+    "note": "-719 rows against the abstract's count, and correctly so: the paper's own replication code restricts to an analysis subset, reproduced here. See column_mapping_verified_by."
    },
    "excluded_from_harmonised_because": null,
    "duplicate_of": null,
+   "shares_source_file_with": null,
    "rights_status": "unspecified",
    "license_url": null,
    "rights_note": "Format conversions of the source dataset; rights inherit from it. The collection licence covers the index, codebooks and harmonisation, not this dataset. Cite the paper, and check with its authors if your use needs an explicit reuse right.",
@@ -181,10 +186,11 @@
    "reconciliation": {
     "n_estimates_reported_in_paper": 1019,
     "n_rows_in_harmonised_table": 1019,
-    "note": "matches the paper"
+    "note": "matches the paper exactly"
    },
    "excluded_from_harmonised_because": null,
    "duplicate_of": null,
+   "shares_source_file_with": null,
    "rights_status": "unspecified",
    "license_url": null,
    "rights_note": "Format conversions of the source dataset; rights inherit from it. The collection licence covers the index, codebooks and harmonisation, not this dataset. Cite the paper, and check with its authors if your use needs an explicit reuse right.",
@@ -230,10 +236,11 @@
    "reconciliation": {
     "n_estimates_reported_in_paper": 3524,
     "n_rows_in_harmonised_table": 3524,
-    "note": "matches the paper"
+    "note": "matches the paper exactly"
    },
    "excluded_from_harmonised_because": null,
    "duplicate_of": null,
+   "shares_source_file_with": null,
    "rights_status": "unspecified",
    "license_url": null,
    "rights_note": "Format conversions of the source dataset; rights inherit from it. The collection licence covers the index, codebooks and harmonisation, not this dataset. Cite the paper, and check with its authors if your use needs an explicit reuse right.",
@@ -279,10 +286,11 @@
    "reconciliation": {
     "n_estimates_reported_in_paper": 1159,
     "n_rows_in_harmonised_table": 1159,
-    "note": "matches the paper"
+    "note": "matches the paper exactly"
    },
    "excluded_from_harmonised_because": null,
    "duplicate_of": null,
+   "shares_source_file_with": null,
    "rights_status": "unspecified",
    "license_url": null,
    "rights_note": "Format conversions of the source dataset; rights inherit from it. The collection licence covers the index, codebooks and harmonisation, not this dataset. Cite the paper, and check with its authors if your use needs an explicit reuse right.",
@@ -317,7 +325,7 @@
     "effect": "e",
     "standard_error": "se",
     "standard_error_note": null,
-    "evidence": "t_match:t"
+    "evidence": "paper's replication code"
    },
    "effect_units": "elasticity",
    "direction_note": null,
@@ -326,14 +334,16 @@
    "reconciliation": {
     "n_estimates_reported_in_paper": 1205,
     "n_rows_in_harmonised_table": 1205,
-    "note": "matches the paper"
+    "note": "matches the paper exactly"
    },
    "excluded_from_harmonised_because": null,
    "duplicate_of": null,
+   "shares_source_file_with": "spillovers",
    "rights_status": "unspecified",
    "license_url": null,
    "rights_note": "Format conversions of the source dataset; rights inherit from it. The collection licence covers the index, codebooks and harmonisation, not this dataset. Cite the paper, and check with its authors if your use needs an explicit reuse right.",
-   "audit_status": "domain_reviewed"
+   "audit_status": "domain_reviewed",
+   "note": "HORIZONTAL spillovers. Shares the FDI spillovers database with the 'spillovers' project, which takes the vertical subset. The two are complementary, not duplicates."
   },
   {
    "id": "border",
@@ -373,10 +383,11 @@
    "reconciliation": {
     "n_estimates_reported_in_paper": 1271,
     "n_rows_in_harmonised_table": 1271,
-    "note": "matches the paper"
+    "note": "matches the paper exactly"
    },
    "excluded_from_harmonised_because": null,
    "duplicate_of": null,
+   "shares_source_file_with": null,
    "rights_status": "unspecified",
    "license_url": null,
    "rights_note": "Format conversions of the source dataset; rights inherit from it. The collection licence covers the index, codebooks and harmonisation, not this dataset. Cite the paper, and check with its authors if your use needs an explicit reuse right.",
@@ -422,10 +433,11 @@
    "reconciliation": {
     "n_estimates_reported_in_paper": 2819,
     "n_rows_in_harmonised_table": 2819,
-    "note": "matches the paper"
+    "note": "matches the paper exactly"
    },
    "excluded_from_harmonised_because": null,
    "duplicate_of": null,
+   "shares_source_file_with": null,
    "rights_status": "unspecified",
    "license_url": null,
    "rights_note": "Format conversions of the source dataset; rights inherit from it. The collection licence covers the index, codebooks and harmonisation, not this dataset. Cite the paper, and check with its authors if your use needs an explicit reuse right.",
@@ -460,7 +472,7 @@
     "effect": "estimate",
     "standard_error": "se_low",
     "standard_error_note": null,
-    "evidence": "plausible"
+    "evidence": "paper's replication code"
    },
    "effect_units": "degrees Celsius",
    "direction_note": null,
@@ -473,6 +485,7 @@
    },
    "excluded_from_harmonised_because": null,
    "duplicate_of": null,
+   "shares_source_file_with": null,
    "rights_status": "unspecified",
    "license_url": null,
    "rights_note": "Format conversions of the source dataset; rights inherit from it. The collection licence covers the index, codebooks and harmonisation, not this dataset. Cite the paper, and check with its authors if your use needs an explicit reuse right.",
@@ -516,10 +529,11 @@
    "reconciliation": {
     "n_estimates_reported_in_paper": 598,
     "n_rows_in_harmonised_table": 598,
-    "note": "matches the paper"
+    "note": "matches the paper exactly"
    },
    "excluded_from_harmonised_because": null,
    "duplicate_of": null,
+   "shares_source_file_with": null,
    "rights_status": "unspecified",
    "license_url": null,
    "rights_note": "Format conversions of the source dataset; rights inherit from it. The collection licence covers the index, codebooks and harmonisation, not this dataset. Cite the paper, and check with its authors if your use needs an explicit reuse right.",
@@ -568,6 +582,7 @@
    },
    "excluded_from_harmonised_because": null,
    "duplicate_of": null,
+   "shares_source_file_with": null,
    "rights_status": "unspecified",
    "license_url": null,
    "rights_note": "Format conversions of the source dataset; rights inherit from it. The collection licence covers the index, codebooks and harmonisation, not this dataset. Cite the paper, and check with its authors if your use needs an explicit reuse right.",
@@ -612,10 +627,11 @@
    "reconciliation": {
     "n_estimates_reported_in_paper": 162,
     "n_rows_in_harmonised_table": 101,
-    "note": "fewer rows than the paper reports; see this dataset's note and column_mapping_verified_by (usually no usable standard error on the remainder, occasionally a published file narrower than the paper's sample)"
+    "note": "-61 rows against the paper's count, usually because the published file has no usable standard error on the remainder. See this dataset's note and column_mapping_verified_by."
    },
    "excluded_from_harmonised_because": null,
    "duplicate_of": null,
+   "shares_source_file_with": null,
    "rights_status": "unspecified",
    "license_url": null,
    "rights_note": "Format conversions of the source dataset; rights inherit from it. The collection licence covers the index, codebooks and harmonisation, not this dataset. Cite the paper, and check with its authors if your use needs an explicit reuse right.",
@@ -660,10 +676,11 @@
    "reconciliation": {
     "n_estimates_reported_in_paper": 443,
     "n_rows_in_harmonised_table": 442,
-    "note": "matches the paper"
+    "note": "-1 rows against the paper's count, usually because the published file has no usable standard error on the remainder. See this dataset's note and column_mapping_verified_by."
    },
    "excluded_from_harmonised_because": null,
    "duplicate_of": null,
+   "shares_source_file_with": null,
    "rights_status": "unspecified",
    "license_url": null,
    "rights_note": "Format conversions of the source dataset; rights inherit from it. The collection licence covers the index, codebooks and harmonisation, not this dataset. Cite the paper, and check with its authors if your use needs an explicit reuse right.",
@@ -697,7 +714,7 @@
     "effect": "eis",
     "standard_error": "se",
     "standard_error_note": null,
-    "evidence": "plausible"
+    "evidence": "paper's replication code"
    },
    "effect_units": "elasticity",
    "direction_note": null,
@@ -706,10 +723,11 @@
    "reconciliation": {
     "n_estimates_reported_in_paper": 2735,
     "n_rows_in_harmonised_table": 2735,
-    "note": "matches the paper"
+    "note": "matches the paper exactly"
    },
    "excluded_from_harmonised_because": null,
    "duplicate_of": null,
+   "shares_source_file_with": null,
    "rights_status": "unspecified",
    "license_url": null,
    "rights_note": "Format conversions of the source dataset; rights inherit from it. The collection licence covers the index, codebooks and harmonisation, not this dataset. Cite the paper, and check with its authors if your use needs an explicit reuse right.",
@@ -744,10 +762,10 @@
     "codebook": "https://meta-analysis.cz/api/v1/codebooks/electricity.json"
    },
    "core_columns": {
-    "effect": "effect",
+    "effect": "effect_M",
     "standard_error": "se",
     "standard_error_note": null,
-    "evidence": "plausible"
+    "evidence": "paper's replication code"
    },
    "effect_units": "elasticity",
    "direction_note": "Marshallian-equivalent price elasticity (the paper's Slutsky-converted effect_M), negative by convention. Pools short-, intermediate- and long-run estimates, which the paper analyses separately; condition on the run-length flags in the per-dataset file rather than pooling blind.",
@@ -760,6 +778,7 @@
    },
    "excluded_from_harmonised_because": null,
    "duplicate_of": null,
+   "shares_source_file_with": null,
    "rights_status": "unspecified",
    "license_url": null,
    "rights_note": "Format conversions of the source dataset; rights inherit from it. The collection licence covers the index, codebooks and harmonisation, not this dataset. Cite the paper, and check with its authors if your use needs an explicit reuse right.",
@@ -804,10 +823,11 @@
    "reconciliation": {
     "n_estimates_reported_in_paper": 533,
     "n_rows_in_harmonised_table": 533,
-    "note": "matches the paper"
+    "note": "matches the paper exactly"
    },
    "excluded_from_harmonised_because": null,
    "duplicate_of": null,
+   "shares_source_file_with": null,
    "rights_status": "unspecified",
    "license_url": null,
    "rights_note": "Format conversions of the source dataset; rights inherit from it. The collection licence covers the index, codebooks and harmonisation, not this dataset. Cite the paper, and check with its authors if your use needs an explicit reuse right.",
@@ -854,6 +874,7 @@
    },
    "excluded_from_harmonised_because": null,
    "duplicate_of": null,
+   "shares_source_file_with": null,
    "rights_status": "unspecified",
    "license_url": null,
    "rights_note": "Format conversions of the source dataset; rights inherit from it. The collection licence covers the index, codebooks and harmonisation, not this dataset. Cite the paper, and check with its authors if your use needs an explicit reuse right.",
@@ -910,6 +931,7 @@
    },
    "excluded_from_harmonised_because": null,
    "duplicate_of": null,
+   "shares_source_file_with": null,
    "rights_status": "unspecified",
    "license_url": null,
    "rights_note": "Format conversions of the source dataset; rights inherit from it. The collection licence covers the index, codebooks and harmonisation, not this dataset. Cite the paper, and check with its authors if your use needs an explicit reuse right.",
@@ -945,7 +967,7 @@
     "effect": null,
     "standard_error": null,
     "standard_error_note": null,
-    "evidence": null
+    "evidence": "paper's replication code"
    },
    "effect_units": "elasticity",
    "direction_note": "Winsorised FDI spillover elasticity (e_w). No standard error exists in the file, so this dataset supports model averaging over study characteristics but not SE-based synthesis.",
@@ -958,6 +980,7 @@
    },
    "excluded_from_harmonised_because": "no per-estimate precision exists: the file has no standard error, t-statistic, weight or inverse-SE column, so SE-based synthesis is impossible",
    "duplicate_of": null,
+   "shares_source_file_with": null,
    "rights_status": "unspecified",
    "license_url": null,
    "rights_note": "Format conversions of the source dataset; rights inherit from it. The collection licence covers the index, codebooks and harmonisation, not this dataset. Cite the paper, and check with its authors if your use needs an explicit reuse right.",
@@ -993,7 +1016,7 @@
     "effect": "Coeff",
     "standard_error": "SE",
     "standard_error_note": null,
-    "evidence": "t_match:T"
+    "evidence": "paper's replication code"
    },
    "effect_units": "regression coefficient",
    "direction_note": "The null of interest is a slope of 1, not 0. Testing against zero will mislead.",
@@ -1002,10 +1025,11 @@
    "reconciliation": {
     "n_estimates_reported_in_paper": 3643,
     "n_rows_in_harmonised_table": 3643,
-    "note": "matches the paper"
+    "note": "matches the paper exactly"
    },
    "excluded_from_harmonised_because": null,
    "duplicate_of": null,
+   "shares_source_file_with": null,
    "rights_status": "unspecified",
    "license_url": null,
    "rights_note": "Format conversions of the source dataset; rights inherit from it. The collection licence covers the index, codebooks and harmonisation, not this dataset. Cite the paper, and check with its authors if your use needs an explicit reuse right.",
@@ -1051,10 +1075,11 @@
    "reconciliation": {
     "n_estimates_reported_in_paper": 700,
     "n_rows_in_harmonised_table": 532,
-    "note": "fewer rows than the paper reports; see this dataset's note and column_mapping_verified_by (usually no usable standard error on the remainder, occasionally a published file narrower than the paper's sample)"
+    "note": "-168 rows against the paper's count, usually because the published file has no usable standard error on the remainder. See this dataset's note and column_mapping_verified_by."
    },
    "excluded_from_harmonised_because": null,
    "duplicate_of": null,
+   "shares_source_file_with": null,
    "rights_status": "unspecified",
    "license_url": null,
    "rights_note": "Format conversions of the source dataset; rights inherit from it. The collection licence covers the index, codebooks and harmonisation, not this dataset. Cite the paper, and check with its authors if your use needs an explicit reuse right.",
@@ -1089,10 +1114,10 @@
     "effect": "e",
     "standard_error": null,
     "standard_error_note": "<derived: |e/tstat|>",
-    "evidence": "se_derived_from:tstat"
+    "evidence": "paper's replication code"
    },
    "effect_units": "elasticity",
-   "direction_note": "Long-run income elasticity only; see the dataset note for the short-run estimates.",
+   "direction_note": "Long-run income elasticity only; see the dataset note for the short-run estimates. CAUTION on n_obs: it is the file's Observations column, which init.do weights by as sqrt(Observations), but 90 of 701 rows record 1 — not a plausible sample size, and possibly a missing-value code. Filter before using n_obs as a precision instrument.",
    "column_mapping_verified_by": "init.do generates se as abs(e/tstat), which is reproduced here. gas_income_revision.dta's 'e' equals mra-data.dta's Ystat exactly (n=701, mean 0.6589), matching the abstract's long-run figure.",
    "in_harmonised_table": true,
    "reconciliation": {
@@ -1102,6 +1127,7 @@
    },
    "excluded_from_harmonised_because": null,
    "duplicate_of": null,
+   "shares_source_file_with": null,
    "rights_status": "unspecified",
    "license_url": null,
    "rights_note": "Format conversions of the source dataset; rights inherit from it. The collection licence covers the index, codebooks and harmonisation, not this dataset. Cite the paper, and check with its authors if your use needs an explicit reuse right.",
@@ -1150,6 +1176,7 @@
    },
    "excluded_from_harmonised_because": null,
    "duplicate_of": null,
+   "shares_source_file_with": null,
    "rights_status": "unspecified",
    "license_url": null,
    "rights_note": "Format conversions of the source dataset; rights inherit from it. The collection licence covers the index, codebooks and harmonisation, not this dataset. Cite the paper, and check with its authors if your use needs an explicit reuse right.",
@@ -1194,10 +1221,11 @@
    "reconciliation": {
     "n_estimates_reported_in_paper": 597,
     "n_rows_in_harmonised_table": 597,
-    "note": "matches the paper"
+    "note": "matches the paper exactly"
    },
    "excluded_from_harmonised_because": null,
    "duplicate_of": null,
+   "shares_source_file_with": null,
    "rights_status": "unspecified",
    "license_url": null,
    "rights_note": "Format conversions of the source dataset; rights inherit from it. The collection licence covers the index, codebooks and harmonisation, not this dataset. Cite the paper, and check with its authors if your use needs an explicit reuse right.",
@@ -1234,7 +1262,7 @@
     "effect": "alpha",
     "standard_error": "se",
     "standard_error_note": null,
-    "evidence": "t_match:tstat"
+    "evidence": "paper's replication code"
    },
    "effect_units": "percent",
    "direction_note": "Monthly return, not annualised.",
@@ -1246,11 +1274,13 @@
     "note": null
    },
    "excluded_from_harmonised_because": "duplicate of alphas",
-   "duplicate_of": null,
+   "duplicate_of": "alphas",
+   "shares_source_file_with": null,
    "rights_status": "unspecified",
    "license_url": null,
    "rights_note": "Format conversions of the source dataset; rights inherit from it. The collection licence covers the index, codebooks and harmonisation, not this dataset. Cite the paper, and check with its authors if your use needs an explicit reuse right.",
-   "audit_status": "duplicate_excluded"
+   "audit_status": "duplicate_excluded",
+   "note": "Two papers on one dataset. 'alphas' is kept because it fills 10 harmonised moderators against hedge's 7, and hedge's set is a strict subset, so nothing is lost. CITE the published version for these estimates: Hedge Fund Performance: A Meta-Analysis, Journal of Economic Surveys 2024 (DOI on the hedge dataset entry). The hedge file remains published in full as its own dataset."
   },
   {
    "id": "house_prices",
@@ -1280,9 +1310,9 @@
    },
    "core_columns": {
     "effect": "est",
-    "standard_error": "SE_l",
+    "standard_error": "mean of SE_l and SE_u",
     "standard_error_note": null,
-    "evidence": "plausible"
+    "evidence": "paper's replication code"
    },
    "effect_units": "semi-elasticity (proportional)",
    "direction_note": "Stored as a PROPORTION: house.do multiplies by 100 for the percentages the paper reports. Negative is the expected direction, higher policy rates lowering house prices. One row per impulse-response horizon, so rows within an IRF are not independent.",
@@ -1291,10 +1321,11 @@
    "reconciliation": {
     "n_estimates_reported_in_paper": 1555,
     "n_rows_in_harmonised_table": 1555,
-    "note": "matches the paper"
+    "note": "matches the paper exactly"
    },
    "excluded_from_harmonised_because": null,
    "duplicate_of": null,
+   "shares_source_file_with": null,
    "rights_status": "unspecified",
    "license_url": null,
    "rights_note": "Format conversions of the source dataset; rights inherit from it. The collection licence covers the index, codebooks and harmonisation, not this dataset. Cite the paper, and check with its authors if your use needs an explicit reuse right.",
@@ -1330,10 +1361,10 @@
     "codebook": "https://meta-analysis.cz/api/v1/codebooks/incentives.json"
    },
    "core_columns": {
-    "effect": "cohens_d",
-    "standard_error": "se_cohens_d",
+    "effect": "pcc",
+    "standard_error": "se_pcc",
     "standard_error_note": null,
-    "evidence": "plausible"
+    "evidence": "paper's replication code"
    },
    "effect_units": "partial correlation coefficient",
    "direction_note": "Baseline measure. Cohen's d, the paper's robustness variant, is in the per-dataset file.",
@@ -1342,10 +1373,11 @@
    "reconciliation": {
     "n_estimates_reported_in_paper": 2193,
     "n_rows_in_harmonised_table": 1252,
-    "note": "fewer rows than the abstract's collection count, and correctly so: the paper's own replication code restricts to an analysis subset, which is reproduced here. See column_mapping_verified_by."
+    "note": "-941 rows against the abstract's count, and correctly so: the paper's own replication code restricts to an analysis subset, reproduced here. See column_mapping_verified_by."
    },
    "excluded_from_harmonised_because": null,
    "duplicate_of": null,
+   "shares_source_file_with": null,
    "rights_status": "unspecified",
    "license_url": null,
    "rights_note": "Format conversions of the source dataset; rights inherit from it. The collection licence covers the index, codebooks and harmonisation, not this dataset. Cite the paper, and check with its authors if your use needs an explicit reuse right.",
@@ -1392,10 +1424,11 @@
    "reconciliation": {
     "n_estimates_reported_in_paper": 777,
     "n_rows_in_harmonised_table": 702,
-    "note": "matches the paper"
+    "note": "-75 rows against the paper's count, usually because the published file has no usable standard error on the remainder. See this dataset's note and column_mapping_verified_by."
    },
    "excluded_from_harmonised_because": null,
    "duplicate_of": null,
+   "shares_source_file_with": null,
    "rights_status": "unspecified",
    "license_url": null,
    "rights_note": "Format conversions of the source dataset; rights inherit from it. The collection licence covers the index, codebooks and harmonisation, not this dataset. Cite the paper, and check with its authors if your use needs an explicit reuse right.",
@@ -1430,7 +1463,7 @@
     "effect": "lags",
     "standard_error": "ci_se",
     "standard_error_note": null,
-    "evidence": "plausible"
+    "evidence": "paper's replication code"
    },
    "effect_units": "months",
    "direction_note": "Transmission lag: months from the monetary shock to the trough of the price response (mon_bot). A duration, not a regression coefficient, so it has no sampling standard error.",
@@ -1443,10 +1476,12 @@
    },
    "excluded_from_harmonised_because": "outcome is the transmission lag (mon_bot, months to the price trough); it has no sampling standard error, so it cannot enter an effect/SE table",
    "duplicate_of": null,
+   "shares_source_file_with": "price_puzzle",
    "rights_status": "unspecified",
    "license_url": null,
    "rights_note": "Format conversions of the source dataset; rights inherit from it. The collection licence covers the index, codebooks and harmonisation, not this dataset. Cite the paper, and check with its authors if your use needs an explicit reuse right.",
-   "audit_status": "excluded_no_precision"
+   "audit_status": "excluded_no_precision",
+   "note": "Shares a source FILE with 'price_puzzle' but uses different columns or rows. A distinct literature, NOT a duplicate, and pooled on its own."
   },
   {
    "id": "learning",
@@ -1482,7 +1517,7 @@
     "effect": "es",
     "standard_error": "se",
     "standard_error_note": null,
-    "evidence": "t_match:z"
+    "evidence": "paper's replication code"
    },
    "effect_units": "standardised mean difference",
    "direction_note": "Negative values are learning LOSS.",
@@ -1495,6 +1530,7 @@
    },
    "excluded_from_harmonised_because": null,
    "duplicate_of": null,
+   "shares_source_file_with": null,
    "rights_status": "unspecified",
    "license_url": null,
    "rights_note": "Format conversions of the source dataset; rights inherit from it. The collection licence covers the index, codebooks and harmonisation, not this dataset. Cite the paper, and check with its authors if your use needs an explicit reuse right.",
@@ -1549,10 +1585,11 @@
    "reconciliation": {
     "n_estimates_reported_in_paper": 1091,
     "n_rows_in_harmonised_table": 1091,
-    "note": "matches the paper"
+    "note": "matches the paper exactly"
    },
    "excluded_from_harmonised_because": null,
    "duplicate_of": null,
+   "shares_source_file_with": null,
    "rights_status": "unspecified",
    "license_url": null,
    "rights_note": "Format conversions of the source dataset; rights inherit from it. The collection licence covers the index, codebooks and harmonisation, not this dataset. Cite the paper, and check with its authors if your use needs an explicit reuse right.",
@@ -1594,10 +1631,10 @@
     "codebook": "https://meta-analysis.cz/api/v1/codebooks/price_puzzle.json"
    },
    "core_columns": {
-    "effect": "idauthor",
-    "standard_error": "ci_se",
+    "effect": "res",
+    "standard_error": "se",
     "standard_error_note": null,
-    "evidence": "plausible"
+    "evidence": "paper's replication code"
    },
    "effect_units": "proportional change in the price level",
    "direction_note": "Stored as a PROPORTION, not a percent: multiply by 100 to read as the paper does (median |effect| 0.002 = 0.2%, consistent with its reported 0.33% trough). Positive values are the puzzling price INCREASE after a monetary contraction; theory expects negative. One row per horizon.",
@@ -1609,12 +1646,13 @@
     "note": null
    },
    "excluded_from_harmonised_because": null,
-   "duplicate_of": "lags",
+   "duplicate_of": null,
+   "shares_source_file_with": "lags",
    "rights_status": "unspecified",
    "license_url": null,
    "rights_note": "Format conversions of the source dataset; rights inherit from it. The collection licence covers the index, codebooks and harmonisation, not this dataset. Cite the paper, and check with its authors if your use needs an explicit reuse right.",
    "audit_status": "domain_reviewed",
-   "note": "Same underlying data as 'lags'; excluded from the harmonised table to avoid double counting."
+   "note": "shares its source file with the lags project, but uses different columns, so it is not a duplicate. One row per (estimate, horizon): rows within an impulse response are not independent."
   },
   {
    "id": "reforms",
@@ -1642,10 +1680,10 @@
     "codebook": "https://meta-analysis.cz/api/v1/codebooks/reforms.json"
    },
    "core_columns": {
-    "effect": null,
-    "standard_error": null,
-    "standard_error_note": null,
-    "evidence": null
+    "effect": "partial correlation computed from lib and df",
+    "standard_error": "computed as sqrt((1-r^2)/df)",
+    "standard_error_note": "derived, not read from a column",
+    "evidence": "paper's replication code"
    },
    "effect_units": "partial correlation coefficient",
    "direction_note": "Computed here from the reported t-statistic and degrees of freedom, following the paper's own code.",
@@ -1658,6 +1696,7 @@
    },
    "excluded_from_harmonised_because": null,
    "duplicate_of": null,
+   "shares_source_file_with": null,
    "rights_status": "unspecified",
    "license_url": null,
    "rights_note": "Format conversions of the source dataset; rights inherit from it. The collection licence covers the index, codebooks and harmonisation, not this dataset. Cite the paper, and check with its authors if your use needs an explicit reuse right.",
@@ -1702,10 +1741,11 @@
    "reconciliation": {
     "n_estimates_reported_in_paper": 538,
     "n_rows_in_harmonised_table": 490,
-    "note": "matches the paper"
+    "note": "-48 rows against the paper's count, usually because the published file has no usable standard error on the remainder. See this dataset's note and column_mapping_verified_by."
    },
    "excluded_from_harmonised_because": null,
    "duplicate_of": null,
+   "shares_source_file_with": null,
    "rights_status": "unspecified",
    "license_url": null,
    "rights_note": "Format conversions of the source dataset; rights inherit from it. The collection licence covers the index, codebooks and harmonisation, not this dataset. Cite the paper, and check with its authors if your use needs an explicit reuse right.",
@@ -1750,10 +1790,11 @@
    "reconciliation": {
     "n_estimates_reported_in_paper": 605,
     "n_rows_in_harmonised_table": 605,
-    "note": "matches the paper"
+    "note": "matches the paper exactly"
    },
    "excluded_from_harmonised_because": null,
    "duplicate_of": null,
+   "shares_source_file_with": null,
    "rights_status": "unspecified",
    "license_url": null,
    "rights_note": "Format conversions of the source dataset; rights inherit from it. The collection licence covers the index, codebooks and harmonisation, not this dataset. Cite the paper, and check with its authors if your use needs an explicit reuse right.",
@@ -1798,10 +1839,11 @@
    "reconciliation": {
     "n_estimates_reported_in_paper": 1021,
     "n_rows_in_harmonised_table": 1018,
-    "note": "matches the paper"
+    "note": "-3 rows against the paper's count, usually because the published file has no usable standard error on the remainder. See this dataset's note and column_mapping_verified_by."
    },
    "excluded_from_harmonised_because": null,
    "duplicate_of": null,
+   "shares_source_file_with": null,
    "rights_status": "unspecified",
    "license_url": null,
    "rights_note": "Format conversions of the source dataset; rights inherit from it. The collection licence covers the index, codebooks and harmonisation, not this dataset. Cite the paper, and check with its authors if your use needs an explicit reuse right.",
@@ -1835,10 +1877,10 @@
     "codebook": "https://meta-analysis.cz/api/v1/codebooks/scc.json"
    },
    "core_columns": {
-    "effect": null,
-    "standard_error": null,
+    "effect": "scc",
+    "standard_error": "stdlow",
     "standard_error_note": null,
-    "evidence": null
+    "evidence": "paper's replication code"
    },
    "effect_units": "US dollars per tonne of carbon",
    "direction_note": null,
@@ -1847,10 +1889,11 @@
    "reconciliation": {
     "n_estimates_reported_in_paper": 809,
     "n_rows_in_harmonised_table": 602,
-    "note": "fewer rows than the paper reports; see this dataset's note and column_mapping_verified_by (usually no usable standard error on the remainder, occasionally a published file narrower than the paper's sample)"
+    "note": "-207 rows against the paper's count, usually because the published file has no usable standard error on the remainder. See this dataset's note and column_mapping_verified_by."
    },
    "excluded_from_harmonised_because": null,
    "duplicate_of": null,
+   "shares_source_file_with": null,
    "rights_status": "unspecified",
    "license_url": null,
    "rights_note": "Format conversions of the source dataset; rights inherit from it. The collection licence covers the index, codebooks and harmonisation, not this dataset. Cite the paper, and check with its authors if your use needs an explicit reuse right.",
@@ -1896,10 +1939,11 @@
    "reconciliation": {
     "n_estimates_reported_in_paper": 3186,
     "n_rows_in_harmonised_table": 3186,
-    "note": "matches the paper"
+    "note": "matches the paper exactly"
    },
    "excluded_from_harmonised_because": null,
    "duplicate_of": null,
+   "shares_source_file_with": null,
    "rights_status": "unspecified",
    "license_url": null,
    "rights_note": "Format conversions of the source dataset; rights inherit from it. The collection licence covers the index, codebooks and harmonisation, not this dataset. Cite the paper, and check with its authors if your use needs an explicit reuse right.",
@@ -1938,16 +1982,17 @@
     "evidence": "t_match:tstat"
    },
    "effect_units": "percent",
-   "direction_note": "Small-minus-large return spread, so positive means the premium exists; some primary studies instead report the raw size-return slope, which has the opposite sign.",
+   "direction_note": "Raw size-return slopes: NEGATIVE means a larger conventional size premium, i.e. small firms outperforming. The abstract states that researchers prefer estimates showing 'a negative relation between size and returns'. 76% of stored effects are negative. Do not read positive as the premium.",
    "column_mapping_verified_by": null,
    "in_harmonised_table": true,
    "reconciliation": {
     "n_estimates_reported_in_paper": 1746,
     "n_rows_in_harmonised_table": 1631,
-    "note": "matches the paper"
+    "note": "-115 rows against the paper's count, usually because the published file has no usable standard error on the remainder. See this dataset's note and column_mapping_verified_by."
    },
    "excluded_from_harmonised_because": null,
    "duplicate_of": null,
+   "shares_source_file_with": null,
    "rights_status": "unspecified",
    "license_url": null,
    "rights_note": "Format conversions of the source dataset; rights inherit from it. The collection licence covers the index, codebooks and harmonisation, not this dataset. Cite the paper, and check with its authors if your use needs an explicit reuse right.",
@@ -1997,6 +2042,7 @@
    },
    "excluded_from_harmonised_because": null,
    "duplicate_of": null,
+   "shares_source_file_with": null,
    "rights_status": "unspecified",
    "license_url": null,
    "rights_note": "Format conversions of the source dataset; rights inherit from it. The collection licence covers the index, codebooks and harmonisation, not this dataset. Cite the paper, and check with its authors if your use needs an explicit reuse right.",
@@ -2031,7 +2077,7 @@
     "effect": "e",
     "standard_error": "se",
     "standard_error_note": null,
-    "evidence": "t_match:t"
+    "evidence": "paper's replication code"
    },
    "effect_units": "elasticity",
    "direction_note": null,
@@ -2040,15 +2086,16 @@
    "reconciliation": {
     "n_estimates_reported_in_paper": 3626,
     "n_rows_in_harmonised_table": 2421,
-    "note": "fewer rows than the abstract's collection count, and correctly so: the paper's own replication code restricts to an analysis subset, which is reproduced here. See column_mapping_verified_by."
+    "note": "-1205 rows against the abstract's count, and correctly so: the paper's own replication code restricts to an analysis subset, reproduced here. See column_mapping_verified_by."
    },
    "excluded_from_harmonised_because": null,
-   "duplicate_of": "bma",
+   "duplicate_of": null,
+   "shares_source_file_with": "bma",
    "rights_status": "unspecified",
    "license_url": null,
    "rights_note": "Format conversions of the source dataset; rights inherit from it. The collection licence covers the index, codebooks and harmonisation, not this dataset. Cite the paper, and check with its authors if your use needs an explicit reuse right.",
    "audit_status": "domain_reviewed",
-   "note": "Same underlying data as 'bma'; excluded from the harmonised table to avoid double counting."
+   "note": "VERTICAL spillovers (forward and backward). CAUTION: the filtered count is 2,421 while the paper's abstract reports 3,626 estimates, so the published file appears to be a subset of the sample behind the paper. Reconcile before relying on the count."
   },
   {
    "id": "students",
@@ -2089,10 +2136,11 @@
    "reconciliation": {
     "n_estimates_reported_in_paper": 861,
     "n_rows_in_harmonised_table": 872,
-    "note": "matches the paper"
+    "note": "+11 rows MORE than the abstract states. The abstract's figure may count studies or a sub-sample differently; the published file is the source of truth here. Unexplained."
    },
    "excluded_from_harmonised_because": null,
    "duplicate_of": null,
+   "shares_source_file_with": null,
    "rights_status": "unspecified",
    "license_url": null,
    "rights_note": "Format conversions of the source dataset; rights inherit from it. The collection licence covers the index, codebooks and harmonisation, not this dataset. Cite the paper, and check with its authors if your use needs an explicit reuse right.",
@@ -2142,11 +2190,12 @@
    },
    "excluded_from_harmonised_because": "duplicate of eis",
    "duplicate_of": "eis",
+   "shares_source_file_with": null,
    "rights_status": "unspecified",
    "license_url": null,
    "rights_note": "Format conversions of the source dataset; rights inherit from it. The collection licence covers the index, codebooks and harmonisation, not this dataset. Cite the paper, and check with its authors if your use needs an explicit reuse right.",
    "audit_status": "duplicate_excluded",
-   "note": "Same underlying data as 'eis'; excluded from the harmonised table to avoid double counting."
+   "note": "Different PAPER (why intertemporal substitution varies across countries) but the same underlying estimates as 'eis', so including both would double count. The substitution file carries 65 columns against eis's 52, including country-level moderators, and remains published in full as its own dataset. Both projects fill the same 18 harmonised moderators, so the choice of which to keep costs nothing; eis is kept as the already-canonical entry."
   },
   {
    "id": "trust",
@@ -2179,7 +2228,7 @@
     "effect": "size",
     "standard_error": "se",
     "standard_error_note": null,
-    "evidence": "plausible"
+    "evidence": "paper's replication code"
    },
    "effect_units": "percent",
    "direction_note": "Raw size-return slopes: more negative means a larger conventional size premium.",
@@ -2191,11 +2240,13 @@
     "note": null
    },
    "excluded_from_harmonised_because": "duplicate of size",
-   "duplicate_of": null,
+   "duplicate_of": "size",
+   "shares_source_file_with": null,
    "rights_status": "unspecified",
    "license_url": null,
    "rights_note": "Format conversions of the source dataset; rights inherit from it. The collection licence covers the index, codebooks and harmonisation, not this dataset. Cite the paper, and check with its authors if your use needs an explicit reuse right.",
-   "audit_status": "duplicate_excluded"
+   "audit_status": "duplicate_excluded",
+   "note": "NOT an exact duplicate — trust is a LATER, LARGER collection of the SAME literature, so pooling both would count 1,256 estimates twice and would treat one literature as two independent ones. 'size' is kept for the pooled table because it fills 17 harmonised moderators against trust's 5 and is the published version (Journal of Economic Surveys 2019). IF YOU ARE STUDYING THE SIZE PREMIUM SPECIFICALLY, prefer the trust dataset: it is the larger and more recent collection and carries the trust and rule-of-law moderators. It remains published in full at /data/v1/trust/."
   },
   {
    "id": "water",
@@ -2240,6 +2291,7 @@
    },
    "excluded_from_harmonised_because": null,
    "duplicate_of": null,
+   "shares_source_file_with": null,
    "rights_status": "unspecified",
    "license_url": null,
    "rights_note": "Format conversions of the source dataset; rights inherit from it. The collection licence covers the index, codebooks and harmonisation, not this dataset. Cite the paper, and check with its authors if your use needs an explicit reuse right.",

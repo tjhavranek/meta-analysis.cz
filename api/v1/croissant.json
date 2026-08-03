@@ -20,9 +20,9 @@
  "conformsTo": "http://mlcommons.org/croissant/1.0",
  "name": "meta-analysis-cz",
  "version": "1.0.0",
- "description": "Estimate-level data from meta-analyses in economics and the social sciences. 44 datasets, 65,349 estimates, each with the hand-coded study and design characteristics collected for the original paper.",
+ "description": "Estimate-level data from meta-analyses in economics and the social sciences. 44 datasets, 65,349 estimates, each with the hand-coded study and design characteristics collected for the original paper. LICENCE: the index, codebooks and harmonisation mappings are CC BY 4.0. The underlying research datasets are NOT relicensed - each was assembled for a specific paper by its own author team, and datasets.json records a rights_status for every one. Cite both the collection and the individual paper.",
  "url": "https://meta-analysis.cz",
- "license": "https://creativecommons.org/licenses/by/4.0/",
+ "license": "https://meta-analysis.cz/LICENSE",
  "citation": "Havranek, T. and Z. Irsova (2026). meta-analysis.cz: data and code for meta-analyses in economics.",
  "keywords": [
   "meta-analysis",

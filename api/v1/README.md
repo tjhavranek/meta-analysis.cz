@@ -45,7 +45,7 @@ curl -s https://meta-analysis.cz/api/v1/datasets.json | jq '.datasets[] | {id, n
 
 ## The harmonised table
 
-One row per estimate, pooled across literatures: **56,466 estimates from 39 literatures**. Version **0.9.0-beta**.
+One row per estimate, pooled across literatures: **54,087 estimates from 39 literatures**. Version **0.9.0-beta**.
 
 Core columns are present for every row: `dataset`, `study_id`, `estimate_id`,
 `effect`, `se`, `t_stat`, `precision`. The rest are harmonised moderators, and
