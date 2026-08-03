@@ -160,10 +160,28 @@ def fallback_parse(proj, raw):
     fm = re.search(r'<img src="([^"]+\.(?:png|jpg))"', raw, re.I)
     if fm:
         fig = {"src": fm.group(1), "caption": title}
+    # Prominent tool links that live in the page BODY rather than the resource menu.
+    # The redesign promoted the MAIVE app from a menu button to a `.tool-link`
+    # sentence, which silently dropped its URL out of llms-full.txt — the file that
+    # exists for AI crawlers. The link is still on the page, so emit it from there.
+    tools = []
+    for tm in re.finditer(r'<b[^>]*class="[^"]*tool-link[^"]*"[^>]*>(.*?)</b>', raw, re.S | re.I):
+        blk = tm.group(1)
+        am = re.search(r'<a[^>]+href="(https?://[^"]+)"[^>]*>(.*?)</a>', blk, re.S | re.I)
+        if not am:
+            continue
+        lbl = re.sub(r"<[^>]+>", "", am.group(2))
+        lbl = re.sub(r"\s+", " ", html.unescape(lbl)).strip(" : ")
+        # the visible text usually ends with the bare domain, which the URL then
+        # repeats; drop it so the line reads as a label rather than a stutter
+        host = re.sub(r"^www\.", "", urllib.parse.urlparse(am.group(1)).netloc)
+        lbl = re.sub(r"[\s:,-]*" + re.escape(host) + r"/?\s*$", "", lbl, flags=re.I).strip(" :,-")
+        if lbl and not any(t["href"] == am.group(1) for t in tools):
+            tools.append({"href": am.group(1), "label": lbl})
     return {
         "project": proj, "title": title, "abstract": abstract or title,
         "reference_line": ref, "authors": None, "year": year, "journal": None,
-        "doi_or_publisher_url": None, "menu_links": menu, "figure": fig,
+        "doi_or_publisher_url": None, "menu_links": menu, "tool_links": tools, "figure": fig,
         "has_meta_description": '<meta name="description"' in raw,
         "meta_keywords": rx1(r'<meta name="keywords" content="([^"]*)"'),
         "one_line": (abstract or title)[:152] + ("..." if len(abstract or title) > 152 else ""),
@@ -651,6 +669,10 @@ def main():
             lf.append(f"Published version: {m['doi_or_publisher_url']}")
         lf += [f"{l['label']}: {absurl(p, l['href'])}" for l in m["menu_links"]
                if l["href"].startswith(("http://", "https://")) or local_exists(p, l["href"])]
+        # body tool links, not already listed in the menu
+        seen_hrefs = {l["href"] for l in m["menu_links"]}
+        lf += [f"{t['label']}: {t['href']}" for t in (m.get("tool_links") or [])
+               if t["href"] not in seen_hrefs]
         lf += ["", f"Abstract: {m['abstract']}", ""]
     open(os.path.join(SITE, "llms-full.txt"), "w", encoding="utf-8", newline="\n").write("\n".join(lf))
     print("wrote robots.txt, sitemap.xml, llms.txt, llms-full.txt")
