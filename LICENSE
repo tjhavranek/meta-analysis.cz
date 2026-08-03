@@ -1,90 +1,114 @@
 meta-analysis.cz — licensing
 ============================
 
-This file covers the material published at https://meta-analysis.cz.
-Three different things are licensed differently. Please read the part that
-applies to what you are using.
+This file states what is licensed here and, just as importantly, what is NOT.
+Read the section that matches what you are using. Where rights are not ours to
+grant, this file says so rather than granting them anyway.
 
 
-1. THE COLLECTION AND ITS DERIVED DATA LAYER
---------------------------------------------
-Licence: Creative Commons Attribution 4.0 International (CC BY 4.0)
-         https://creativecommons.org/licenses/by/4.0/
+1. WHAT WE LICENSE
+------------------
 
-This covers the compilation itself and everything generated from it:
+1a. NEWLY AUTHORED SOFTWARE — MIT
+    The pipeline that builds the data layer and the tooling that generates this
+    site: `data_layer/` and `tools/`.
 
-  - the dataset index and API (`/api/v1/`), including `datasets.json`,
-    the per-dataset codebooks, `datapackage.json` and the Croissant record
-  - the Parquet and CSV mirrors under `/data/v1/<project>/`
-  - the harmonised estimate-level table (`estimates_harmonised.*`)
-  - the selection, arrangement and documentation of the collection
+    Copyright (c) 2026 Tomáš Havránek and Zuzana Iršová
 
-You may copy, redistribute, adapt and build upon this material, including
-commercially, provided you give appropriate credit.
+    Permission is hereby granted, free of charge, to any person obtaining a copy
+    of this software and associated documentation files (the "Software"), to deal
+    in the Software without restriction, including without limitation the rights
+    to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+    copies of the Software, and to permit persons to whom the Software is
+    furnished to do so, subject to the following conditions:
 
-Cite the collection as:
+    The above copyright notice and this permission notice shall be included in
+    all copies or substantial portions of the Software.
 
-  Havránek, T. and Z. Iršová (2026). meta-analysis.cz: data and code for
-  meta-analyses in economics. https://meta-analysis.cz
+    THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+    IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+    FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+    AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+    LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+    OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+    SOFTWARE.
 
+1b. NEWLY AUTHORED DATA STRUCTURE AND DOCUMENTATION — CC BY 4.0
+    https://creativecommons.org/licenses/by/4.0/
 
-2. THE UNDERLYING RESEARCH DATASETS
-------------------------------------
-Each dataset under `/data/v1/<project>/` and each original file in a project
-folder was assembled for a specific published paper, with its own authors and
-co-authors. Those datasets remain the work of their respective author teams.
+    - the dataset index and API under `/api/v1/` (`datasets.json`, the codebooks,
+      `datapackage.json`, the Croissant record, the generated fragments)
+    - the harmonisation mappings, filters and column-role assignments
+    - the documentation
+    - the selection and arrangement of the collection
 
-The compilation licence in section 1 is granted by the maintainers of this site
-over the collection they assembled. It is not a re-licensing of any co-author's
-independent rights in an underlying dataset, and it does not override any terms
-attached to a dataset by its publisher or by a third-party data provider.
-
-**If you use an individual dataset, cite its paper.** Every dataset entry in
-`/api/v1/datasets.json` carries the paper's title, authors and DOI for exactly
-this purpose. This is the normal scholarly expectation and, for most of these
-datasets, also the condition on which the underlying material was shared.
-
-Where a dataset was compiled from a third-party source with its own terms, the
-codebook for that dataset records it. Two collections distributed here are not
-extracted-estimate datasets and are not part of the harmonised layer: the
-crisis database under `ews/` and the cross-field archive bundled in the MAIVE
-replication package under `maive/`. Their original terms apply.
+    Granted to the extent we hold the applicable rights in this newly authored
+    material. It is a licence over the compilation and its documentation, not
+    over the underlying research data.
 
 
-3. CODE
--------
-Licence: MIT
+2. WHAT WE DO NOT LICENSE
+-------------------------
 
-This covers the estimation and replication code distributed with the papers
-(`.do`, `.R`, `.py` files and the scripts inside the replication archives) and
-the tooling that generates this site and its data layer.
+2a. THE ORIGINAL RESEARCH DATASETS
+    Each dataset under a project folder was assembled for a specific published
+    paper, by an author team that in most cases extends beyond the maintainers of
+    this site. **Their rights status is unchanged by this file.** Nothing here
+    purports to relicense a co-author's contribution, and no reuse right in the
+    underlying data is granted by section 1b.
 
-  Copyright (c) the respective authors
+    `/api/v1/datasets.json` records a `rights_status` and, where one is known, a
+    `license_url` for every dataset. Where the status is `unspecified`, no open
+    licence has been established and you should treat the data as all rights
+    reserved unless the paper or its publisher says otherwise.
 
-  Permission is hereby granted, free of charge, to any person obtaining a copy
-  of this software and associated documentation files (the "Software"), to deal
-  in the Software without restriction, including without limitation the rights
-  to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
-  copies of the Software, and to permit persons to whom the Software is
-  furnished to do so, subject to the following conditions:
+2b. THE CSV AND PARQUET MIRRORS
+    The files under `/data/v1/<project>/` are **format conversions** of the
+    corresponding source dataset. A format conversion does not create a new
+    licence. Their rights status is inherited from the source dataset in 2a, not
+    granted by section 1b.
 
-  The above copyright notice and this permission notice shall be included in
-  all copies or substantial portions of the Software.
+2c. HISTORICAL REPLICATION CODE
+    The `.do`, `.R` and other scripts distributed with the papers were written by
+    those papers' author teams. **They are not covered by the MIT grant in 1a.**
+    An earlier version of this file appeared to license them; that was an
+    overreach and is corrected here.
 
-  THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
-  IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
-  FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
-  AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
-  LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
-  OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
-  SOFTWARE.
+2d. THIRD-PARTY MATERIAL INSIDE REPLICATION PACKAGES
+    Some packages embed material from other sources with its own terms. Two are
+    distributed here that are not extracted-estimate datasets of ours: the crisis
+    database under `ews/` and the cross-field archive bundled in the MAIVE
+    replication package under `maive/`. Their original terms apply.
+
+2e. THE PAPERS
+    PDFs are author copies for scholarly use. Copyright in the published versions
+    rests with the respective journals.
 
 
-4. PAPERS
----------
-The PDFs distributed here are author copies provided for scholarly use.
-Copyright in the published versions rests with the respective journals. They
-are not covered by section 1.
+3. HOW TO CITE
+--------------
+
+Cite BOTH, not one or the other:
+
+  1. the collection —
+     Havránek, T. and Z. Iršová (2026). meta-analysis.cz: data and code for
+     meta-analyses in economics. https://meta-analysis.cz
+
+  2. the paper whose data you used — `datasets.json` carries its title, authors
+     and DOI for exactly this purpose.
+
+Attribution is not the same as permission. Citing a paper tells readers whose
+work it is; it does not by itself establish that you hold a reuse right in that
+paper's data. Where that matters for your use, check `rights_status` and, if it
+is `unspecified`, ask the authors.
+
+
+4. IF YOU ARE A CO-AUTHOR
+-------------------------
+
+If you co-authored one of these datasets and want its rights status changed —
+in either direction — say so and it will be recorded in `datasets.json` and
+honoured here. The default is deliberately conservative.
 
 
 Questions about reuse: https://meta-analysis.cz

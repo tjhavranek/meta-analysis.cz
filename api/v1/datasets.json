@@ -4,9 +4,11 @@
  "version": "1.0.0",
  "description": "Estimate-level datasets from meta-analyses in economics and the social sciences, with the hand-coded study characteristics collected for each paper.",
  "license": {
-  "collection": "CC-BY-4.0",
+  "newly_authored_structure": "CC-BY-4.0",
+  "newly_authored_software": "MIT",
+  "underlying_datasets": "not licensed here - see each dataset's rights_status",
   "url": "https://meta-analysis.cz/LICENSE",
-  "note": "Cite the individual paper when you use its dataset; each entry carries its DOI."
+  "note": "CC BY 4.0 covers the compilation, index, codebooks and harmonisation mappings only. It does NOT relicense the underlying research datasets, their format conversions, or the papers' own replication code, none of which are ours to grant. Cite both the collection and the individual paper."
  },
  "cite_as": "Havranek, T. and Z. Irsova (2026). meta-analysis.cz: data and code for meta-analyses in economics.",
  "endpoints": {
@@ -134,7 +136,10 @@
    },
    "excluded_from_harmonised_because": null,
    "duplicate_of": null,
-   "license": "CC-BY-4.0"
+   "rights_status": "unspecified",
+   "license_url": null,
+   "rights_note": "Format conversions of the source dataset; rights inherit from it. The collection licence covers the index, codebooks and harmonisation, not this dataset. Cite the paper, and check with its authors if your use needs an explicit reuse right.",
+   "audit_status": "domain_reviewed"
   },
   {
    "id": "alphas",
@@ -180,7 +185,10 @@
    },
    "excluded_from_harmonised_because": null,
    "duplicate_of": null,
-   "license": "CC-BY-4.0"
+   "rights_status": "unspecified",
+   "license_url": null,
+   "rights_note": "Format conversions of the source dataset; rights inherit from it. The collection licence covers the index, codebooks and harmonisation, not this dataset. Cite the paper, and check with its authors if your use needs an explicit reuse right.",
+   "audit_status": "arithmetic_pairing_only"
   },
   {
    "id": "armington",
@@ -226,7 +234,10 @@
    },
    "excluded_from_harmonised_because": null,
    "duplicate_of": null,
-   "license": "CC-BY-4.0"
+   "rights_status": "unspecified",
+   "license_url": null,
+   "rights_note": "Format conversions of the source dataset; rights inherit from it. The collection licence covers the index, codebooks and harmonisation, not this dataset. Cite the paper, and check with its authors if your use needs an explicit reuse right.",
+   "audit_status": "arithmetic_pairing_only"
   },
   {
    "id": "beauty",
@@ -272,7 +283,10 @@
    },
    "excluded_from_harmonised_because": null,
    "duplicate_of": null,
-   "license": "CC-BY-4.0"
+   "rights_status": "unspecified",
+   "license_url": null,
+   "rights_note": "Format conversions of the source dataset; rights inherit from it. The collection licence covers the index, codebooks and harmonisation, not this dataset. Cite the paper, and check with its authors if your use needs an explicit reuse right.",
+   "audit_status": "arithmetic_pairing_only"
   },
   {
    "id": "bma",
@@ -316,7 +330,10 @@
    },
    "excluded_from_harmonised_because": null,
    "duplicate_of": null,
-   "license": "CC-BY-4.0"
+   "rights_status": "unspecified",
+   "license_url": null,
+   "rights_note": "Format conversions of the source dataset; rights inherit from it. The collection licence covers the index, codebooks and harmonisation, not this dataset. Cite the paper, and check with its authors if your use needs an explicit reuse right.",
+   "audit_status": "domain_reviewed"
   },
   {
    "id": "border",
@@ -360,7 +377,10 @@
    },
    "excluded_from_harmonised_because": null,
    "duplicate_of": null,
-   "license": "CC-BY-4.0"
+   "rights_status": "unspecified",
+   "license_url": null,
+   "rights_note": "Format conversions of the source dataset; rights inherit from it. The collection licence covers the index, codebooks and harmonisation, not this dataset. Cite the paper, and check with its authors if your use needs an explicit reuse right.",
+   "audit_status": "arithmetic_pairing_only"
   },
   {
    "id": "class",
@@ -406,7 +426,10 @@
    },
    "excluded_from_harmonised_because": null,
    "duplicate_of": null,
-   "license": "CC-BY-4.0"
+   "rights_status": "unspecified",
+   "license_url": null,
+   "rights_note": "Format conversions of the source dataset; rights inherit from it. The collection licence covers the index, codebooks and harmonisation, not this dataset. Cite the paper, and check with its authors if your use needs an explicit reuse right.",
+   "audit_status": "arithmetic_pairing_only"
   },
   {
    "id": "climate",
@@ -450,7 +473,10 @@
    },
    "excluded_from_harmonised_because": null,
    "duplicate_of": null,
-   "license": "CC-BY-4.0"
+   "rights_status": "unspecified",
+   "license_url": null,
+   "rights_note": "Format conversions of the source dataset; rights inherit from it. The collection licence covers the index, codebooks and harmonisation, not this dataset. Cite the paper, and check with its authors if your use needs an explicit reuse right.",
+   "audit_status": "domain_reviewed"
   },
   {
    "id": "competition",
@@ -494,7 +520,10 @@
    },
    "excluded_from_harmonised_because": null,
    "duplicate_of": null,
-   "license": "CC-BY-4.0"
+   "rights_status": "unspecified",
+   "license_url": null,
+   "rights_note": "Format conversions of the source dataset; rights inherit from it. The collection licence covers the index, codebooks and harmonisation, not this dataset. Cite the paper, and check with its authors if your use needs an explicit reuse right.",
+   "audit_status": "arithmetic_pairing_only"
   },
   {
    "id": "discrate",
@@ -539,7 +568,10 @@
    },
    "excluded_from_harmonised_because": null,
    "duplicate_of": null,
-   "license": "CC-BY-4.0"
+   "rights_status": "unspecified",
+   "license_url": null,
+   "rights_note": "Format conversions of the source dataset; rights inherit from it. The collection licence covers the index, codebooks and harmonisation, not this dataset. Cite the paper, and check with its authors if your use needs an explicit reuse right.",
+   "audit_status": "domain_reviewed"
   },
   {
    "id": "dst",
@@ -584,7 +616,10 @@
    },
    "excluded_from_harmonised_because": null,
    "duplicate_of": null,
-   "license": "CC-BY-4.0"
+   "rights_status": "unspecified",
+   "license_url": null,
+   "rights_note": "Format conversions of the source dataset; rights inherit from it. The collection licence covers the index, codebooks and harmonisation, not this dataset. Cite the paper, and check with its authors if your use needs an explicit reuse right.",
+   "audit_status": "domain_reviewed"
   },
   {
    "id": "education",
@@ -629,7 +664,10 @@
    },
    "excluded_from_harmonised_because": null,
    "duplicate_of": null,
-   "license": "CC-BY-4.0"
+   "rights_status": "unspecified",
+   "license_url": null,
+   "rights_note": "Format conversions of the source dataset; rights inherit from it. The collection licence covers the index, codebooks and harmonisation, not this dataset. Cite the paper, and check with its authors if your use needs an explicit reuse right.",
+   "audit_status": "arithmetic_pairing_only"
   },
   {
    "id": "eis",
@@ -672,7 +710,10 @@
    },
    "excluded_from_harmonised_because": null,
    "duplicate_of": null,
-   "license": "CC-BY-4.0"
+   "rights_status": "unspecified",
+   "license_url": null,
+   "rights_note": "Format conversions of the source dataset; rights inherit from it. The collection licence covers the index, codebooks and harmonisation, not this dataset. Cite the paper, and check with its authors if your use needs an explicit reuse right.",
+   "audit_status": "domain_reviewed"
   },
   {
    "id": "electricity",
@@ -719,7 +760,10 @@
    },
    "excluded_from_harmonised_because": null,
    "duplicate_of": null,
-   "license": "CC-BY-4.0"
+   "rights_status": "unspecified",
+   "license_url": null,
+   "rights_note": "Format conversions of the source dataset; rights inherit from it. The collection licence covers the index, codebooks and harmonisation, not this dataset. Cite the paper, and check with its authors if your use needs an explicit reuse right.",
+   "audit_status": "domain_reviewed"
   },
   {
    "id": "esg",
@@ -764,7 +808,10 @@
    },
    "excluded_from_harmonised_because": null,
    "duplicate_of": null,
-   "license": "CC-BY-4.0"
+   "rights_status": "unspecified",
+   "license_url": null,
+   "rights_note": "Format conversions of the source dataset; rights inherit from it. The collection licence covers the index, codebooks and harmonisation, not this dataset. Cite the paper, and check with its authors if your use needs an explicit reuse right.",
+   "audit_status": "arithmetic_pairing_only"
   },
   {
    "id": "euro",
@@ -807,7 +854,10 @@
    },
    "excluded_from_harmonised_because": null,
    "duplicate_of": null,
-   "license": "CC-BY-4.0"
+   "rights_status": "unspecified",
+   "license_url": null,
+   "rights_note": "Format conversions of the source dataset; rights inherit from it. The collection licence covers the index, codebooks and harmonisation, not this dataset. Cite the paper, and check with its authors if your use needs an explicit reuse right.",
+   "audit_status": "arithmetic_pairing_only"
   },
   {
    "id": "ews",
@@ -860,7 +910,10 @@
    },
    "excluded_from_harmonised_because": null,
    "duplicate_of": null,
-   "license": "CC-BY-4.0"
+   "rights_status": "unspecified",
+   "license_url": null,
+   "rights_note": "Format conversions of the source dataset; rights inherit from it. The collection licence covers the index, codebooks and harmonisation, not this dataset. Cite the paper, and check with its authors if your use needs an explicit reuse right.",
+   "audit_status": "domain_reviewed"
   },
   {
    "id": "fdi",
@@ -905,7 +958,10 @@
    },
    "excluded_from_harmonised_because": "no per-estimate precision exists: the file has no standard error, t-statistic, weight or inverse-SE column, so SE-based synthesis is impossible",
    "duplicate_of": null,
-   "license": "CC-BY-4.0"
+   "rights_status": "unspecified",
+   "license_url": null,
+   "rights_note": "Format conversions of the source dataset; rights inherit from it. The collection licence covers the index, codebooks and harmonisation, not this dataset. Cite the paper, and check with its authors if your use needs an explicit reuse right.",
+   "audit_status": "excluded_no_precision"
   },
   {
    "id": "forward",
@@ -950,7 +1006,10 @@
    },
    "excluded_from_harmonised_because": null,
    "duplicate_of": null,
-   "license": "CC-BY-4.0"
+   "rights_status": "unspecified",
+   "license_url": null,
+   "rights_note": "Format conversions of the source dataset; rights inherit from it. The collection licence covers the index, codebooks and harmonisation, not this dataset. Cite the paper, and check with its authors if your use needs an explicit reuse right.",
+   "audit_status": "domain_reviewed"
   },
   {
    "id": "frisch",
@@ -996,7 +1055,10 @@
    },
    "excluded_from_harmonised_because": null,
    "duplicate_of": null,
-   "license": "CC-BY-4.0"
+   "rights_status": "unspecified",
+   "license_url": null,
+   "rights_note": "Format conversions of the source dataset; rights inherit from it. The collection licence covers the index, codebooks and harmonisation, not this dataset. Cite the paper, and check with its authors if your use needs an explicit reuse right.",
+   "audit_status": "domain_reviewed"
   },
   {
    "id": "gasoline",
@@ -1040,7 +1102,10 @@
    },
    "excluded_from_harmonised_because": null,
    "duplicate_of": null,
-   "license": "CC-BY-4.0"
+   "rights_status": "unspecified",
+   "license_url": null,
+   "rights_note": "Format conversions of the source dataset; rights inherit from it. The collection licence covers the index, codebooks and harmonisation, not this dataset. Cite the paper, and check with its authors if your use needs an explicit reuse right.",
+   "audit_status": "domain_reviewed"
   },
   {
    "id": "gasoline_price",
@@ -1085,7 +1150,10 @@
    },
    "excluded_from_harmonised_because": null,
    "duplicate_of": null,
-   "license": "CC-BY-4.0"
+   "rights_status": "unspecified",
+   "license_url": null,
+   "rights_note": "Format conversions of the source dataset; rights inherit from it. The collection licence covers the index, codebooks and harmonisation, not this dataset. Cite the paper, and check with its authors if your use needs an explicit reuse right.",
+   "audit_status": "arithmetic_pairing_only"
   },
   {
    "id": "habits",
@@ -1130,7 +1198,10 @@
    },
    "excluded_from_harmonised_because": null,
    "duplicate_of": null,
-   "license": "CC-BY-4.0"
+   "rights_status": "unspecified",
+   "license_url": null,
+   "rights_note": "Format conversions of the source dataset; rights inherit from it. The collection licence covers the index, codebooks and harmonisation, not this dataset. Cite the paper, and check with its authors if your use needs an explicit reuse right.",
+   "audit_status": "domain_reviewed"
   },
   {
    "id": "hedge",
@@ -1176,7 +1247,10 @@
    },
    "excluded_from_harmonised_because": "duplicate of alphas",
    "duplicate_of": null,
-   "license": "CC-BY-4.0"
+   "rights_status": "unspecified",
+   "license_url": null,
+   "rights_note": "Format conversions of the source dataset; rights inherit from it. The collection licence covers the index, codebooks and harmonisation, not this dataset. Cite the paper, and check with its authors if your use needs an explicit reuse right.",
+   "audit_status": "duplicate_excluded"
   },
   {
    "id": "house_prices",
@@ -1221,7 +1295,10 @@
    },
    "excluded_from_harmonised_because": null,
    "duplicate_of": null,
-   "license": "CC-BY-4.0"
+   "rights_status": "unspecified",
+   "license_url": null,
+   "rights_note": "Format conversions of the source dataset; rights inherit from it. The collection licence covers the index, codebooks and harmonisation, not this dataset. Cite the paper, and check with its authors if your use needs an explicit reuse right.",
+   "audit_status": "domain_reviewed"
   },
   {
    "id": "incentives",
@@ -1269,7 +1346,10 @@
    },
    "excluded_from_harmonised_because": null,
    "duplicate_of": null,
-   "license": "CC-BY-4.0"
+   "rights_status": "unspecified",
+   "license_url": null,
+   "rights_note": "Format conversions of the source dataset; rights inherit from it. The collection licence covers the index, codebooks and harmonisation, not this dataset. Cite the paper, and check with its authors if your use needs an explicit reuse right.",
+   "audit_status": "domain_reviewed"
   },
   {
    "id": "inflation",
@@ -1316,7 +1396,10 @@
    },
    "excluded_from_harmonised_because": null,
    "duplicate_of": null,
-   "license": "CC-BY-4.0"
+   "rights_status": "unspecified",
+   "license_url": null,
+   "rights_note": "Format conversions of the source dataset; rights inherit from it. The collection licence covers the index, codebooks and harmonisation, not this dataset. Cite the paper, and check with its authors if your use needs an explicit reuse right.",
+   "audit_status": "arithmetic_pairing_only"
   },
   {
    "id": "lags",
@@ -1360,7 +1443,10 @@
    },
    "excluded_from_harmonised_because": "outcome is the transmission lag (mon_bot, months to the price trough); it has no sampling standard error, so it cannot enter an effect/SE table",
    "duplicate_of": null,
-   "license": "CC-BY-4.0"
+   "rights_status": "unspecified",
+   "license_url": null,
+   "rights_note": "Format conversions of the source dataset; rights inherit from it. The collection licence covers the index, codebooks and harmonisation, not this dataset. Cite the paper, and check with its authors if your use needs an explicit reuse right.",
+   "audit_status": "excluded_no_precision"
   },
   {
    "id": "learning",
@@ -1409,7 +1495,10 @@
    },
    "excluded_from_harmonised_because": null,
    "duplicate_of": null,
-   "license": "CC-BY-4.0"
+   "rights_status": "unspecified",
+   "license_url": null,
+   "rights_note": "Format conversions of the source dataset; rights inherit from it. The collection licence covers the index, codebooks and harmonisation, not this dataset. Cite the paper, and check with its authors if your use needs an explicit reuse right.",
+   "audit_status": "domain_reviewed"
   },
   {
    "id": "maive",
@@ -1464,7 +1553,10 @@
    },
    "excluded_from_harmonised_because": null,
    "duplicate_of": null,
-   "license": "CC-BY-4.0"
+   "rights_status": "unspecified",
+   "license_url": null,
+   "rights_note": "Format conversions of the source dataset; rights inherit from it. The collection licence covers the index, codebooks and harmonisation, not this dataset. Cite the paper, and check with its authors if your use needs an explicit reuse right.",
+   "audit_status": "arithmetic_pairing_only"
   },
   {
    "id": "pcc",
@@ -1518,7 +1610,10 @@
    },
    "excluded_from_harmonised_because": null,
    "duplicate_of": "lags",
-   "license": "CC-BY-4.0",
+   "rights_status": "unspecified",
+   "license_url": null,
+   "rights_note": "Format conversions of the source dataset; rights inherit from it. The collection licence covers the index, codebooks and harmonisation, not this dataset. Cite the paper, and check with its authors if your use needs an explicit reuse right.",
+   "audit_status": "domain_reviewed",
    "note": "Same underlying data as 'lags'; excluded from the harmonised table to avoid double counting."
   },
   {
@@ -1563,7 +1658,10 @@
    },
    "excluded_from_harmonised_because": null,
    "duplicate_of": null,
-   "license": "CC-BY-4.0"
+   "rights_status": "unspecified",
+   "license_url": null,
+   "rights_note": "Format conversions of the source dataset; rights inherit from it. The collection licence covers the index, codebooks and harmonisation, not this dataset. Cite the paper, and check with its authors if your use needs an explicit reuse right.",
+   "audit_status": "domain_reviewed"
   },
   {
    "id": "remittances",
@@ -1608,7 +1706,10 @@
    },
    "excluded_from_harmonised_because": null,
    "duplicate_of": null,
-   "license": "CC-BY-4.0"
+   "rights_status": "unspecified",
+   "license_url": null,
+   "rights_note": "Format conversions of the source dataset; rights inherit from it. The collection licence covers the index, codebooks and harmonisation, not this dataset. Cite the paper, and check with its authors if your use needs an explicit reuse right.",
+   "audit_status": "arithmetic_pairing_only"
   },
   {
    "id": "resource_curse",
@@ -1653,7 +1754,10 @@
    },
    "excluded_from_harmonised_because": null,
    "duplicate_of": null,
-   "license": "CC-BY-4.0"
+   "rights_status": "unspecified",
+   "license_url": null,
+   "rights_note": "Format conversions of the source dataset; rights inherit from it. The collection licence covers the index, codebooks and harmonisation, not this dataset. Cite the paper, and check with its authors if your use needs an explicit reuse right.",
+   "audit_status": "arithmetic_pairing_only"
   },
   {
    "id": "risk",
@@ -1698,7 +1802,10 @@
    },
    "excluded_from_harmonised_because": null,
    "duplicate_of": null,
-   "license": "CC-BY-4.0"
+   "rights_status": "unspecified",
+   "license_url": null,
+   "rights_note": "Format conversions of the source dataset; rights inherit from it. The collection licence covers the index, codebooks and harmonisation, not this dataset. Cite the paper, and check with its authors if your use needs an explicit reuse right.",
+   "audit_status": "arithmetic_pairing_only"
   },
   {
    "id": "scc",
@@ -1744,7 +1851,10 @@
    },
    "excluded_from_harmonised_because": null,
    "duplicate_of": null,
-   "license": "CC-BY-4.0"
+   "rights_status": "unspecified",
+   "license_url": null,
+   "rights_note": "Format conversions of the source dataset; rights inherit from it. The collection licence covers the index, codebooks and harmonisation, not this dataset. Cite the paper, and check with its authors if your use needs an explicit reuse right.",
+   "audit_status": "domain_reviewed"
   },
   {
    "id": "sigma",
@@ -1790,7 +1900,10 @@
    },
    "excluded_from_harmonised_because": null,
    "duplicate_of": null,
-   "license": "CC-BY-4.0"
+   "rights_status": "unspecified",
+   "license_url": null,
+   "rights_note": "Format conversions of the source dataset; rights inherit from it. The collection licence covers the index, codebooks and harmonisation, not this dataset. Cite the paper, and check with its authors if your use needs an explicit reuse right.",
+   "audit_status": "arithmetic_pairing_only"
   },
   {
    "id": "size",
@@ -1835,7 +1948,10 @@
    },
    "excluded_from_harmonised_because": null,
    "duplicate_of": null,
-   "license": "CC-BY-4.0"
+   "rights_status": "unspecified",
+   "license_url": null,
+   "rights_note": "Format conversions of the source dataset; rights inherit from it. The collection licence covers the index, codebooks and harmonisation, not this dataset. Cite the paper, and check with its authors if your use needs an explicit reuse right.",
+   "audit_status": "arithmetic_pairing_only"
   },
   {
    "id": "skill",
@@ -1881,7 +1997,10 @@
    },
    "excluded_from_harmonised_because": null,
    "duplicate_of": null,
-   "license": "CC-BY-4.0"
+   "rights_status": "unspecified",
+   "license_url": null,
+   "rights_note": "Format conversions of the source dataset; rights inherit from it. The collection licence covers the index, codebooks and harmonisation, not this dataset. Cite the paper, and check with its authors if your use needs an explicit reuse right.",
+   "audit_status": "arithmetic_pairing_only"
   },
   {
    "id": "spillovers",
@@ -1925,7 +2044,10 @@
    },
    "excluded_from_harmonised_because": null,
    "duplicate_of": "bma",
-   "license": "CC-BY-4.0",
+   "rights_status": "unspecified",
+   "license_url": null,
+   "rights_note": "Format conversions of the source dataset; rights inherit from it. The collection licence covers the index, codebooks and harmonisation, not this dataset. Cite the paper, and check with its authors if your use needs an explicit reuse right.",
+   "audit_status": "domain_reviewed",
    "note": "Same underlying data as 'bma'; excluded from the harmonised table to avoid double counting."
   },
   {
@@ -1971,7 +2093,10 @@
    },
    "excluded_from_harmonised_because": null,
    "duplicate_of": null,
-   "license": "CC-BY-4.0"
+   "rights_status": "unspecified",
+   "license_url": null,
+   "rights_note": "Format conversions of the source dataset; rights inherit from it. The collection licence covers the index, codebooks and harmonisation, not this dataset. Cite the paper, and check with its authors if your use needs an explicit reuse right.",
+   "audit_status": "arithmetic_pairing_only"
   },
   {
    "id": "substitution",
@@ -2017,7 +2142,10 @@
    },
    "excluded_from_harmonised_because": "duplicate of eis",
    "duplicate_of": "eis",
-   "license": "CC-BY-4.0",
+   "rights_status": "unspecified",
+   "license_url": null,
+   "rights_note": "Format conversions of the source dataset; rights inherit from it. The collection licence covers the index, codebooks and harmonisation, not this dataset. Cite the paper, and check with its authors if your use needs an explicit reuse right.",
+   "audit_status": "duplicate_excluded",
    "note": "Same underlying data as 'eis'; excluded from the harmonised table to avoid double counting."
   },
   {
@@ -2064,7 +2192,10 @@
    },
    "excluded_from_harmonised_because": "duplicate of size",
    "duplicate_of": null,
-   "license": "CC-BY-4.0"
+   "rights_status": "unspecified",
+   "license_url": null,
+   "rights_note": "Format conversions of the source dataset; rights inherit from it. The collection licence covers the index, codebooks and harmonisation, not this dataset. Cite the paper, and check with its authors if your use needs an explicit reuse right.",
+   "audit_status": "duplicate_excluded"
   },
   {
    "id": "water",
@@ -2109,7 +2240,10 @@
    },
    "excluded_from_harmonised_because": null,
    "duplicate_of": null,
-   "license": "CC-BY-4.0"
+   "rights_status": "unspecified",
+   "license_url": null,
+   "rights_note": "Format conversions of the source dataset; rights inherit from it. The collection licence covers the index, codebooks and harmonisation, not this dataset. Cite the paper, and check with its authors if your use needs an explicit reuse right.",
+   "audit_status": "arithmetic_pairing_only"
   }
  ]
 }

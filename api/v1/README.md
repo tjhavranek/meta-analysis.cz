@@ -151,14 +151,48 @@ t-statistic — the mapping was taken from the paper's own published replication
 code, and `verified_by` in the harmonisation report records which file and which
 line of reasoning settled it.
 
+## Two products, not one
+
+**The archive is stable. The harmonised table is a beta.** They are separate
+things and should be trusted differently.
+
+*Archive* — the original files, faithful CSV and Parquet mirrors, codebooks, and
+paper/DOI metadata. Faithful conversions of what was published.
+
+*Harmonised table* — 54,087 selected estimates, automatically mapped and in some
+cases transformed, with **varying levels of review** and no independent
+end-to-end reproduction.
+
+Every dataset carries an `audit_status` so you can filter on review quality
+rather than read prose:
+
+| status | meaning | count |
+|---|---|---|
+| `domain_reviewed` | checked against the paper's own replication code | 19 of 39 pooled |
+| `arithmetic_pairing_only` | effect/se pair proven by reproducing the reported t-statistic, estimand **not** independently confirmed | 20 of 39 pooled |
+| `duplicate_excluded` | same estimates as another literature | 3 |
+| `excluded_no_precision` | no per-estimate standard error exists | 2 |
+
+The arithmetic test proves that two columns form a statistical pair. It cannot
+distinguish a headline estimand from a robustness one, a short-run from a
+long-run effect, or a baseline sample from a filtered one. Four of the errors
+found so far were exactly that kind, which is why the status is published rather
+than assumed away.
+
 ## Licence
 
-The collection, this API, the codebooks and the harmonised table are
-**CC BY 4.0**. See `/LICENSE`.
+**CC BY 4.0 covers the compilation** — this API, the codebooks, the harmonisation
+mappings and the documentation. **It does not cover the underlying research
+datasets, their format conversions, or the papers' own replication code**, none
+of which are ours to license: those datasets were assembled by author teams that
+mostly extend beyond this site's maintainers.
 
-Each underlying dataset was assembled for a specific paper with its own authors.
+Each dataset carries a `rights_status`. Where it reads `unspecified`, no open
+licence has been established — treat the data as all rights reserved unless the
+paper or its publisher says otherwise. Attribution is not the same as permission.
+
 **If you use an individual dataset, cite its paper** — `datasets.json` carries the
-title, authors and DOI of each one for exactly that purpose.
+title, authors and DOI of each one. See `/LICENSE` for the full scoping.
 
 Cite the collection as:
 
