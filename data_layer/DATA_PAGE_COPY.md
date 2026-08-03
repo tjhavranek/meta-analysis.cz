@@ -95,21 +95,18 @@ Then `{{not_pooled}}`.
 ## Licence and citation
 
 > The index, the codebooks, the harmonisation and this documentation are released
-> under [CC BY 4.0](/LICENSE). That licence covers **this compilation**. It does not
-> cover the underlying research datasets, their CSV and Parquet conversions, or the
-> papers' own replication code. Those were assembled by their own author teams and
-> their rights are unchanged.
+> under [CC BY 4.0](/LICENSE): the datasets, their CSV and Parquet conversions, the
+> pooled table, the codebooks, the documentation and the papers deposited here. Use
+> any of it, including for training, provided you give credit.
 >
-> **Each dataset was assembled for a specific paper. If you use one, cite that
-> paper.** The index carries every paper's title, authors and DOI, and a
-> `rights_status`. Where that reads `unspecified`, no open licence has been
-> established: treat the data as all rights reserved unless the paper or its
-> publisher says otherwise. Attribution is not the same as permission.
+> **Each dataset was assembled for a specific paper. When you use one, cite that
+> paper.** The index carries every paper's title, authors and DOI. That is how
+> attribution under CC BY is satisfied here.
 >
 > To cite the collection:
 >
-> Havránek, T. and Z. Iršová (2026). meta-analysis.cz: data and code for
-> meta-analyses in economics. https://meta-analysis.cz
+> Havránek, T. and Z. Iršová (2026). meta-analysis.cz: harmonised estimate-level
+> data from meta-analyses in economics. Zenodo. https://doi.org/10.5281/zenodo.21773678
 
 ---
 
