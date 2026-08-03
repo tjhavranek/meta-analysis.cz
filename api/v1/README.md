@@ -45,7 +45,7 @@ curl -s https://meta-analysis.cz/api/v1/datasets.json | jq '.datasets[] | {id, n
 
 ## The harmonised table
 
-One row per harmonised **observation**, pooled across literatures: **54,087 rows
+One row per harmonised **observation**, pooled across literatures: **54,076 rows
 from 39 literatures**. Rows are not always independent estimates — `price_puzzle`
 reshapes wide impulse-response columns into one row per horizon, and
 `house_prices` ships about seven horizons per impulse response. Check `horizon`
@@ -99,6 +99,9 @@ which is what the underlying papers do. As a worked check, FAT-PET run on the
 of which their papers describe as near zero, and `forward` corrects to 0.92
 against a null of 1. Sixteen of the 39 literatures show a
 publication-bias intercept beyond ±1.96.
+
+**Twenty of the 39 pooled literatures are code-checked** (19 `domain_reviewed`, 1
+`code_traced`); the remaining 19 rest on the arithmetic pairing alone.
 
 Per-column minimum, maximum, median and quartiles for every dataset are in its
 codebook, so you can see the tails before you load anything.
@@ -172,7 +175,7 @@ things and should be trusted differently.
 *Archive* — the original files, faithful CSV and Parquet mirrors, codebooks, and
 paper/DOI metadata. Faithful conversions of what was published.
 
-*Harmonised table* — 54,087 selected estimates, automatically mapped and in some
+*Harmonised table* — 54,076 selected estimates, automatically mapped and in some
 cases transformed, with **varying levels of review** and no independent
 end-to-end reproduction.
 
@@ -182,7 +185,8 @@ rather than read prose:
 | status | meaning | count |
 |---|---|---|
 | `domain_reviewed` | checked against the paper's own replication code | 19 of 39 pooled |
-| `arithmetic_pairing_only` | effect/se pair proven by reproducing the reported t-statistic, estimand **not** independently confirmed | 20 of 39 pooled |
+| `code_traced` | mapping taken from the replication code, not separately reviewed | 1 |
+| `arithmetic_pairing_only` | effect/se pair proven by reproducing the reported t-statistic, estimand **not** independently confirmed | 19 of 39 pooled |
 | `duplicate_excluded` | same estimates as another literature | 3 |
 | `excluded_no_precision` | no per-estimate standard error exists | 2 |
 

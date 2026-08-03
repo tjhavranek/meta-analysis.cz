@@ -161,6 +161,25 @@ for fn in ("llms.txt", "llms-full.txt"):
         if lp and not os.path.isfile(lp):
             fails.append(f"{fn}: missing target {u}")
 
+# /datasets/ inlines generated fragments at BUILD time, so it can fall out of date with
+# them without any file changing: a stale page is a CLEAN file, invisible to git status and
+# to the visible-text check above, which only compares against HEAD. This caught nothing
+# when the page said 61,305 while the fragments said 61,294. One assertion closes it.
+_dsets = os.path.join(SITE, "datasets", "index.html")
+_frag = os.path.join(SITE, "api", "v1", "fragments")
+if os.path.isfile(_dsets) and os.path.isdir(_frag):
+    _page = open(_dsets, "rb").read().decode("utf-8", "replace")
+    for _f in ("count_datasets", "count_estimates", "count_analysis",
+               "count_harmonised_estimates", "count_harmonised_literatures",
+               "harmonised_version"):
+        _fp = os.path.join(_frag, _f + ".html")
+        if not os.path.isfile(_fp):
+            continue
+        _v = open(_fp, encoding="utf-8").read().strip()
+        if _v and _v not in _page:
+            fails.append(f"datasets/index.html: STALE - fragment {_f} is '{_v}' but the page "
+                         f"does not contain it. Rebuild the page from the fragments.")
+
 print(f"pages checked: {len(pages)}; JSON-LD blocks valid: {n_ld}; URLs resolved: {n_urls}")
 if fails:
     print(f"\nFAILURES ({len(fails)}):")

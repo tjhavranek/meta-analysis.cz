@@ -554,12 +554,22 @@ def main():
                     f"estimates in their analysis samples, "
                     f"each with the study characteristics hand-coded for the original paper."),
                 "url": BASE + "/datasets/",
+                # Connect the page to the archived deposit. Without this a machine cannot
+                # tell that the DOI and this catalogue describe the same thing.
+                **({"identifier": [
+                        {"@type": "PropertyValue", "propertyID": "DOI", "value": api["concept_doi"],
+                         "description": "Concept DOI - always resolves to the latest version"},
+                        {"@type": "PropertyValue", "propertyID": "DOI", "value": api["doi"],
+                         "description": "This version"}],
+                    "sameAs": api["concept_doi_url"]} if api.get("concept_doi") else {}),
                 # Correct HERE and only here: a DataCatalog describes the COMPILATION, which
                 # is precisely what CC BY 4.0 covers. usageInfo carries the full scoping.
                 "license": "https://creativecommons.org/licenses/by/4.0/",
                 "usageInfo": BASE + "/LICENSE",
                 "isAccessibleForFree": True,
-                "provider": {"@id": BASE + "/#org"},
+                # `provider` used to point at BASE + "/#org", which the homepage graph never
+                # defines - a dangling reference. Name the people the homepage does define.
+                "creator": [{"@id": BASE + "/#th"}, {"@id": BASE + "/#zi"}],
                 "dataset": [{"@id": f"{BASE}/{d['id']}/#dataset"} for d in entries],
                 "distribution": [
                     {"@type": "DataDownload", "encodingFormat": "application/json",
@@ -650,12 +660,24 @@ def main():
           "Each paper page links the full-text PDF "
           "and, for most papers, the dataset and estimation code.", "", "## Papers", ""]
     lt += [f"- [{merged[p]['title']}]({BASE}/{p}/): {merged[p]['one_line']}" for p in projects]
-    lt += ["", "## Data", "",
+    _api = {}
+    try:
+        _api = json.load(open(os.path.join(SITE, "api", "v1", "datasets.json"), encoding="utf-8"))
+    except Exception:
+        pass
+    lt += ["", "## Data", ""]
+    if _api.get("concept_doi"):
+        lt += [f"- **Archived and citable**: {_api['concept_doi_url']} (DOI {_api['concept_doi']}) — "
+               f"the concept DOI, which always resolves to the newest version. Version "
+               f"{_api['harmonised_table']['version']} specifically is DOI {_api['doi']}. "
+               f"Cite the collection AND the individual paper whose data you use."]
+    lt += [
            f"- [Dataset index / data API]({BASE}/api/v1/datasets.json): every dataset on this site "
            f"as machine-readable JSON — paper, DOI, row counts, file URLs, and which columns hold "
            f"the effect estimate and its standard error",
            f"- [Harmonised estimate-level table]({BASE}/data/v1/estimates_harmonised.csv): all "
-           f"literatures pooled into one table, one row per estimate, with effect, standard error, "
+           f"literatures pooled into one table, one row per harmonised observation (some "
+           f"literatures contribute one row per impulse-response horizon), with effect, standard error, "
            f"t-statistic, sample size and shared study characteristics "
            f"(also [Parquet]({BASE}/data/v1/estimates_harmonised.parquet); beta)",
            f"- [Per-dataset files]({BASE}/api/v1/datapackage.json): each dataset also published "

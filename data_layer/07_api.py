@@ -344,7 +344,10 @@ cr={"@context":{"@vocab":"https://schema.org/","cr":"http://mlcommons.org/croiss
                 "recordSet":"cr:recordSet","field":"cr:field","fileObject":"cr:fileObject",
                 "distribution":"cr:distribution","dataType":{"@id":"cr:dataType","@type":"@vocab"}},
     "@type":"sc:Dataset","conformsTo":"http://mlcommons.org/croissant/1.0",
-    "name":"meta-analysis-cz","version":VERSION,
+    "name":"meta-analysis-cz",
+    # the DATASET's version, not the schema's. It used to read 1.0.0 while the artefact
+    # declared 0.9.0-beta, which a consumer would read as a contradiction.
+    "version":index["harmonised_table"]["version"],   # the ARTEFACT's version, not the schema's
     "description":("Estimate-level data from meta-analyses in economics and the social sciences. "
                    f"{len(ok)} datasets containing {sum(d['n_estimates'] for d in ok):,} converted source "
                    f"rows and {sum(d.get('n_estimates_in_literature') or d['n_estimates'] for d in ok):,} "
