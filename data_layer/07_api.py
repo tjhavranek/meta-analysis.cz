@@ -210,8 +210,11 @@ index=dict(
           "the papers' own replication code, none of which are ours to grant. Cite both the "
           "collection and the individual paper.")),
   cite_as=("Havranek, T. and Z. Irsova (2026). meta-analysis.cz: harmonised estimate-level data "
-           "from meta-analyses in economics. Zenodo. https://doi.org/10.5281/zenodo.21773679"),
+           "from meta-analyses in economics. Zenodo. https://doi.org/10.5281/zenodo.21773678"),
   doi="10.5281/zenodo.21773679", doi_url="https://doi.org/10.5281/zenodo.21773679",
+  concept_doi="10.5281/zenodo.21773678", concept_doi_url="https://doi.org/10.5281/zenodo.21773678",
+  doi_note=("Cite the CONCEPT DOI in prose - it always resolves to the newest version. "
+            "Cite the version DOI in a replication package, where you need the exact files."),
   endpoints={
     "datasets":f"{BASE}/api/{DATA_V}/datasets.json",
     "codebook":f"{BASE}/api/{DATA_V}/codebooks/{{id}}.json",

@@ -42,5 +42,6 @@
  "language": "eng",
  "notes": "CC BY 4.0 applies to the compilation (index, codebooks, harmonisation mappings, documentation) and to newly written software under MIT. It does not relicense the underlying research datasets, their format conversions, or the papers' replication code. Cite both the collection and the individual paper whose data you use.",
  "version": "0.9.0-beta",
- "doi": "10.5281/zenodo.21773679"
+ "doi": "10.5281/zenodo.21773679",
+ "concept_doi": "10.5281/zenodo.21773678"
 }

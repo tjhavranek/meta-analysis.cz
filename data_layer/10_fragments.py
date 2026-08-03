@@ -34,6 +34,9 @@ if api.get("doi"):
     w("doi.html", e(api["doi"]))
     w("doi_url.html", e(api["doi_url"]))
     w("cite_as.html", e(api["cite_as"]))
+if api.get("concept_doi"):
+    w("concept_doi.html", e(api["concept_doi"]))
+    w("concept_doi_url.html", e(api["concept_doi_url"]))
 w("count_analysis.html", f"{api['counts']['estimates_in_analysis_samples']:,}")
 _dr=sum(1 for d in rows if d.get("audit_status")=="domain_reviewed" and d.get("in_harmonised_table"))
 _po=sum(1 for d in rows if d.get("audit_status")=="arithmetic_pairing_only" and d.get("in_harmonised_table"))

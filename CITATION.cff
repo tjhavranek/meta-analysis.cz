@@ -20,12 +20,15 @@ authors:
     given-names: Zuzana
     orcid: "https://orcid.org/0000-0002-0753-8124"
     affiliation: "Charles University, Prague"
-doi: "10.5281/zenodo.21773679"
+doi: "10.5281/zenodo.21773678"
 version: "0.9.0-beta"
 identifiers:
   - type: doi
+    value: "10.5281/zenodo.21773678"
+    description: "Concept DOI - always resolves to the latest version. Cite this."
+  - type: doi
     value: "10.5281/zenodo.21773679"
-    description: "This version of the deposit"
+    description: "Version 0.9.0-beta specifically"
 repository-code: "https://github.com/tjhavranek/meta-analysis.cz"
 url: "https://meta-analysis.cz"
 abstract: >-

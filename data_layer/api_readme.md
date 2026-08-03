@@ -73,9 +73,12 @@ where the denominator may sit near zero or change sign.
 Being a beta, the harmonisation may be revised. For a reference that does not
 move, cite the archived deposit:
 
-> **https://doi.org/10.5281/zenodo.21773679**
+> **https://doi.org/10.5281/zenodo.21773678** — cite this. It always resolves to the newest version.
+>
+> **https://doi.org/10.5281/zenodo.21773679** — version 0.9.0-beta specifically, for a replication package where the
+> exact files matter.
 
-That deposit is immutable: it holds this version's harmonised table, index,
+The deposit is immutable: it holds that version's harmonised table, index,
 codebooks and documentation, with checksums. The live files here may change; the
 DOI will not.
 

@@ -9,9 +9,12 @@
   "url": "https://meta-analysis.cz/LICENSE",
   "note": "CC BY 4.0 covers the compilation, index, codebooks and harmonisation mappings only. It does NOT relicense the underlying research datasets, their format conversions, or the papers' own replication code, none of which are ours to grant. Cite both the collection and the individual paper."
  },
- "cite_as": "Havranek, T. and Z. Irsova (2026). meta-analysis.cz: harmonised estimate-level data from meta-analyses in economics. Zenodo. https://doi.org/10.5281/zenodo.21773679",
+ "cite_as": "Havranek, T. and Z. Irsova (2026). meta-analysis.cz: harmonised estimate-level data from meta-analyses in economics. Zenodo. https://doi.org/10.5281/zenodo.21773678",
  "doi": "10.5281/zenodo.21773679",
  "doi_url": "https://doi.org/10.5281/zenodo.21773679",
+ "concept_doi": "10.5281/zenodo.21773678",
+ "concept_doi_url": "https://doi.org/10.5281/zenodo.21773678",
+ "doi_note": "Cite the CONCEPT DOI in prose - it always resolves to the newest version. Cite the version DOI in a replication package, where you need the exact files.",
  "endpoints": {
   "datasets": "https://meta-analysis.cz/api/v1/datasets.json",
   "codebook": "https://meta-analysis.cz/api/v1/codebooks/{id}.json",
