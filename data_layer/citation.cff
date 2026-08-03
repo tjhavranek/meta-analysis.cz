@@ -1,5 +1,5 @@
 cff-version: 1.2.0
-title: "meta-analysis.cz: data and code for meta-analyses in economics"
+title: "meta-analysis.cz: harmonised estimate-level data from meta-analyses in economics"
 message: >-
   LICENCE SCOPE: the CC-BY-4.0 below covers the COMPILATION only — the index,
   codebooks, harmonisation mappings and documentation. It does NOT cover the
@@ -34,9 +34,10 @@ url: "https://meta-analysis.cz"
 abstract: >-
   Estimate-level data from meta-analyses in economics and the social sciences,
   with the study and design characteristics hand-coded for each original paper.
-  Forty-four datasets and roughly 65,000 estimates, each published as Parquet and
-  CSV with a column-level codebook, plus a harmonised table pooling those
-  literatures that share a common effect-and-standard-error structure. Column
+  Forty-four datasets holding 65,349 rows in the converted source
+  files, 61,294 estimates after each paper's own analysis
+  selection, and a harmonised table pooling 54,076 of them across
+  39 literatures. Each dataset ships a column-level codebook. Column
   mappings were resolved arithmetically, by requiring that the effect divided by
   its standard error reproduce the t-statistic each dataset already reports, and
   otherwise taken from each paper's own replication code.

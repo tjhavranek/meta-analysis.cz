@@ -42,6 +42,28 @@ if [ -f komentare/build.py ]; then
   "$PY" komentare/build.py --check > /tmp/_seo_kom.log 2>&1 || { sed -n '1,30p' /tmp/_seo_kom.log; fail "komentare/build.py --check failed."; }
 fi
 
+# The data layer's own gate. It checks things verify_seo cannot see: duplicate literatures,
+# unit violations, implausible sample sizes, direction notes that contradict their data,
+# advertised URLs, parquet/csv agreement. It was never wired in, so the strongest verifier
+# in the repo ran only when someone remembered. Only for changes that touch the data layer,
+# and skipped cleanly if its dependencies are absent (CI has no pandas).
+if git diff --cached --name-only HEAD 2>/dev/null | grep -qE '^(data_layer/|api/|data/|CITATION\.cff|\.zenodo\.json|LICENSE)' ||
+   git diff --name-only HEAD 2>/dev/null | grep -qE '^(data_layer/|api/|data/|CITATION\.cff|\.zenodo\.json|LICENSE)'; then
+  if [ -f data_layer/09_verify.py ] && "$PY" -c "import pandas, pyarrow" >/dev/null 2>&1; then
+    echo "pre-push: running the data-layer gate (09_verify.py)..."
+    if ! "$PY" data_layer/09_verify.py > /tmp/_dl_verify.log 2>&1; then
+      sed -n '/FAILURE/,$p' /tmp/_dl_verify.log | head -20
+      fail "data_layer/09_verify.py failed. The data layer is inconsistent with its own
+  metadata. Fix it before publishing -- this gate exists because several defects
+  (duplicate literatures, a units error of 100x, a sample size stored as a log)
+  passed every other check."
+    fi
+    tail -1 /tmp/_dl_verify.log
+  else
+    echo "pre-push: data-layer gate skipped (pandas/pyarrow not available)"
+  fi
+fi
+
 echo "pre-push: verifying..."
 if ! "$PY" tools/verify_seo.py > /tmp/_seo_ver.log 2>&1; then
   sed -n '1,40p' /tmp/_seo_ver.log

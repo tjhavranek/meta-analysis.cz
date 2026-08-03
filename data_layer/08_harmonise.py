@@ -101,7 +101,15 @@ for proj in sorted(man):
     # an override with an explicit effect or a compute rule rescues a dataset the resolver could not read
     if r.get("status")!="ok" and not (o.get("effect") or o.get("compute") or o.get("exclude")): continue
     alias=o["alias_of"] if "alias_of" in o else r.get("alias_of")
-    if alias: report[proj]=dict(included=False,reason=f"duplicate of {alias}"); continue
+    if alias:
+        # `trust` is a later, LARGER collection of the same literature, not a duplicate.
+        # Saying "duplicate of size" contradicted the API record and reached the page.
+        exact = proj in ("hedge","substitution")
+        reason = (f"duplicate of {alias}: identical estimates, row for row" if exact
+                  else f"later, larger collection of the same literature as {alias}; partially "
+                       f"overlaps it and is excluded to avoid double counting")
+        report[proj]=dict(included=False,reason=reason,alias_of=alias,exact_duplicate=exact)
+        continue
     if o.get("exclude"):
         report[proj]=dict(included=False,reason=o.get("reason","excluded by override")); continue
     eff=o.get("effect") or r.get("effect"); se=o.get("se") or (None if r.get("se_derived") else r.get("se"))

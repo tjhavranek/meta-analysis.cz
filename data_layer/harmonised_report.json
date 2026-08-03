@@ -1,5 +1,5 @@
 {
- "n_rows": 54087,
+ "n_rows": 54076,
  "n_datasets": 39,
  "columns": [
   "dataset",
@@ -337,7 +337,9 @@
   },
   "hedge": {
    "included": false,
-   "reason": "duplicate of alphas"
+   "reason": "duplicate of alphas: identical estimates, row for row",
+   "alias_of": "alphas",
+   "exact_duplicate": true
   },
   "house_prices": {
    "included": true,
@@ -540,7 +542,7 @@
   },
   "students": {
    "included": true,
-   "n": 872,
+   "n": 861,
    "effect": "pcc",
    "se": "se_pcc",
    "se_is_derived": false,
@@ -548,16 +550,20 @@
    "n_obs_from_log": true,
    "units": "partial correlation coefficient",
    "direction_note": null,
-   "n_studies": 73,
+   "n_studies": 69,
    "moderators": 17
   },
   "substitution": {
    "included": false,
-   "reason": "duplicate of eis"
+   "reason": "duplicate of eis: identical estimates, row for row",
+   "alias_of": "eis",
+   "exact_duplicate": true
   },
   "trust": {
    "included": false,
-   "reason": "duplicate of size"
+   "reason": "later, larger collection of the same literature as size; partially overlaps it and is excluded to avoid double counting",
+   "alias_of": "size",
+   "exact_duplicate": false
   },
   "water": {
    "included": true,

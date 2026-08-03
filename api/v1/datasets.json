@@ -93,10 +93,10 @@
   ],
   "excluded": {
    "fdi": "no per-estimate precision exists: the file has no standard error, t-statistic, weight or inverse-SE column, so SE-based synthesis is impossible",
-   "hedge": "duplicate of alphas",
+   "hedge": "duplicate of alphas: identical estimates, row for row",
    "lags": "outcome is the transmission lag (mon_bot, months to the price trough); it has no sampling standard error, so it cannot enter an effect/SE table",
-   "substitution": "duplicate of eis",
-   "trust": "duplicate of size"
+   "substitution": "duplicate of eis: identical estimates, row for row",
+   "trust": "later, larger collection of the same literature as size; partially overlaps it and is excluded to avoid double counting"
   }
  },
  "counts_note": "`datasets` contains exactly counts.datasets entries, all of them real datasets. Inputs that were examined and excluded live in `excluded_resources`.",
@@ -1367,7 +1367,7 @@
     "n_rows_in_harmonised_table": null,
     "note": null
    },
-   "excluded_from_harmonised_because": "duplicate of alphas",
+   "excluded_from_harmonised_because": "duplicate of alphas: identical estimates, row for row",
    "duplicate_of": "alphas",
    "overlaps_with": "alphas",
    "same_literature_as": "alphas",
@@ -2319,7 +2319,7 @@
     "n_rows_in_harmonised_table": null,
     "note": null
    },
-   "excluded_from_harmonised_because": "duplicate of eis",
+   "excluded_from_harmonised_because": "duplicate of eis: identical estimates, row for row",
    "duplicate_of": "eis",
    "overlaps_with": "eis",
    "same_literature_as": "eis",
@@ -2374,7 +2374,7 @@
     "n_rows_in_harmonised_table": null,
     "note": null
    },
-   "excluded_from_harmonised_because": "duplicate of size",
+   "excluded_from_harmonised_because": "later, larger collection of the same literature as size; partially overlaps it and is excluded to avoid double counting",
    "duplicate_of": null,
    "overlaps_with": "size",
    "same_literature_as": "size",

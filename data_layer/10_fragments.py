@@ -42,6 +42,11 @@ _dr=sum(1 for d in rows if d.get("audit_status")=="domain_reviewed" and d.get("i
 _po=sum(1 for d in rows if d.get("audit_status")=="arithmetic_pairing_only" and d.get("in_harmonised_table"))
 w("count_domain_reviewed.html", str(_dr))
 w("count_pairing_only.html", str(_po))
+_ct=sum(1 for d in rows if d.get("audit_status")=="code_traced" and d.get("in_harmonised_table"))
+w("count_code_traced.html", str(_ct))
+w("count_code_checked.html", str(_dr+_ct))          # domain_reviewed + code_traced
+assert _dr+_ct+_po == H["n_literatures"], (
+    f"audit statuses do not sum to the pooled total: {_dr}+{_ct}+{_po} != {H['n_literatures']}")
 
 # ---- the catalogue table ----
 t=['<table class="dataset-catalogue">',

@@ -5,7 +5,14 @@ import os, sys
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 from _paths import WORK, SITE
 
-OUT=os.path.join(WORK,"out"); DV="v1"; BASE="https://meta-analysis.cz"
+# In the development layout OUT is the build output. In the PUBLISHED copy there is no
+# out/ -- the built files are the live tree itself -- so verify those. That makes the gate
+# usable from the pre-push hook, which runs the published copy, and means it checks what
+# will actually be served rather than a staging directory.
+OUT=os.path.join(WORK,"out")
+if not os.path.isdir(OUT):
+    OUT=SITE
+DV="v1"; BASE="https://meta-analysis.cz"
 
 fail=[]; warn=[]
 
