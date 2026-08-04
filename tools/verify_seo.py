@@ -187,6 +187,12 @@ if os.path.isfile(_dsets) and os.path.isdir(_frag):
 # correct; its actual estimate is 0.01%, essentially zero. llms.txt carried it, so an answer
 # engine was told the opposite of the paper's conclusion, and of this site's whole thesis.
 # estimates.csv already records which figure is preferred, so make it the referee.
+# SCOPE: this is a KEYWORD guard, not a semantic one -- it only fires on the word "against".
+# Verified 2026-08-04 across all 52 rows: exactly four mention a comparator at all
+# (excess_sensitivity, lags, dst, trust); the first three use "against" and are covered, and
+# trust's is a causality caveat rather than a raw-versus-corrected comparison. So the gap is
+# prospective: the first headline written as "compared with the raw mean" will pass silently.
+# If you add such a row, widen this alternation rather than assuming the guard saw it.
 _est = os.path.join(SITE, "estimates.csv")
 _pap = os.path.join(SITE, "tools", "papers.json")
 if os.path.isfile(_est) and os.path.isfile(_pap):
