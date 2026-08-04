@@ -24,6 +24,32 @@ try: _H=_pd.read_parquet(os.path.join(OUT,"data",DATA_V,"estimates_harmonised.pa
 except Exception: _H=None
 _NH=(_H.groupby("dataset").size().to_dict() if _H is not None else {})
 
+
+def _weight_share():
+    """Share of total 1/se^2 held by the single most precise estimate, per literature.
+
+    Every precision-weighted estimator this collection exists to serve -- UWLS, PET, PEESE,
+    MAIVE -- weights by 1/se^2, so one estimate whose standard error the original paper rounded
+    to 8.6e-08 carries a weight of 1.4e14 and silently BECOMES the result. Three literatures
+    here are effectively a single observation under such weighting. A user comparing estimators
+    on this table needs to know that before they read anything into the comparison, so it is
+    published per dataset rather than left to be rediscovered. Found by 94_sanity.py.
+    """
+    if _H is None:
+        return {}
+    import numpy as _np
+    out={}
+    for proj,g in _H.groupby("dataset"):
+        se=_pd.to_numeric(g["se"],errors="coerce").astype("float64").values
+        k=_np.isfinite(se)&(se>0)
+        if k.sum()<10: continue
+        w=1.0/se[k]**2
+        out[proj]=round(float(w.max()/w.sum()),4)
+    return out
+
+
+_WS=_weight_share()
+
 def claimed_n(pap):
     """How many estimates the paper itself says it uses."""
     t=((pap or {}).get("one_line") or "")+" "+((pap or {}).get("abstract") or "")
@@ -172,15 +198,17 @@ for proj in sorted(man):
                                         else (harm.get("projects",{}).get(proj) or {}).get("reason")),
       **_overlap_fields(proj, r),
       shares_source_file_with=SHARED_SOURCE.get(proj),
-      # Rights in the underlying research data are NOT ours to grant: these
-      # datasets were assembled by author teams that mostly extend beyond this
-      # site's maintainers. 'unspecified' means no open licence is established,
-      # not that reuse is permitted. See /LICENSE section 2.
+      # Owner's decision, 2026-08-03: EVERYTHING here is CC BY 4.0, the underlying research
+      # data included, and he takes responsibility for the grant. (The comment that used to sit
+      # here said the opposite -- that rights in the data were not ours to grant -- which was
+      # the pre-reversal policy and contradicted the line below it. Do not reinstate it.)
       rights_status="cc-by-4.0",
       license_url="https://creativecommons.org/licenses/by/4.0/",
       rights_note=("CC BY 4.0. Free to use, adapt and redistribute, including commercially "
                    "and including as training data. The only condition is credit: cite the "
                    "paper named in this entry."),
+      # See _weight_share(): how much of this literature's precision weight sits on one estimate.
+      max_precision_weight_share=_WS.get(proj),
       audit_status=_audit_status(proj))
     if d["duplicate_of"]:
         d["note"]=((OVR.get(proj) or {}).get("note")
