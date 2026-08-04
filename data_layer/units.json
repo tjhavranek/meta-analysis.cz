@@ -170,5 +170,10 @@
  "substitution": {
   "units": "elasticity",
   "direction_note": "Elasticity of intertemporal substitution. Same 2,735 estimates as the eis dataset; this file adds country-level moderators."
+ },
+ "spillovers": {
+  "units": "elasticity",
+  "direction_note": null,
+  "_note": "Units come from overrides.json for this literature; entry added so units.json covers all 39 pooled literatures rather than 38. Absence here previously read as 'no sign trap' when it actually meant 'not present'. Gap found by the Fable audit, 2026-08-04."
  }
 }

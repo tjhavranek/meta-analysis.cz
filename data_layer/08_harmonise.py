@@ -228,6 +228,11 @@ for proj in sorted(man):
         if o.get("se_mean_of"):                 # house_prices: SE = (SE_l + SE_u)/2, per house.do
             parts=[pd.to_numeric(df[c],errors="coerce") for c in o["se_mean_of"] if c in df.columns]
             s=pd.concat(parts,axis=1).mean(axis=1); se="mean:"+"+".join(o["se_mean_of"])
+            # This SE is CONSTRUCTED -- averaged from two confidence-bound columns -- so it must
+            # say so. It was the one derived standard error in the table still flagged
+            # se_is_derived=False, which told a user it came straight from the source file.
+            # Found by the Fable audit, 2026-08-04.
+            se_derived=True
         elif se and se in df.columns and not str(se).startswith("<derived"):
             s=pd.to_numeric(df[se],errors="coerce")
         elif tcol and tcol in df.columns:

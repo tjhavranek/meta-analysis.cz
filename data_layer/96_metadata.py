@@ -140,6 +140,41 @@ except Exception:
     pass
 print(f"   dataset counts by record: {counts}")
 
+# --------------------------------- 4. does each description agree with its own count?
+# price_puzzle's catalogue entry read "Meta-analysis of 1,000 VAR estimates" beside
+# n_estimates_in_literature = 7,420. That contradiction sat in our OWN published metadata and
+# nothing ever compared the two, so a sevenfold duplication was announced on the page and went
+# unnoticed. A description quoting the PAPER's count will legitimately differ from the shipped
+# file's a little (inflation: 777 vs 885); an order-of-magnitude gap is structural.
+# Known and already fixed in code, pending regeneration -- the sevenfold price_puzzle reshape.
+# Listed so the gate stays usable now rather than failing on a defect already being fixed.
+STAGED_COUNT = {"price_puzzle"}
+print("\n4. does each description agree with the count published beside it?")
+import re as _re
+_n = _re.compile(r"([\d][\d,]*)\s+(?:VAR\s+)?estimates", _re.I)
+_flag = 0
+for d in API["datasets"]:
+    m = _n.search(d.get("description") or "")
+    if not m:
+        continue
+    said = int(m.group(1).replace(",", ""))
+    got = d.get("n_estimates_in_literature") or d.get("n_estimates")
+    if not got or said <= 0:
+        continue
+    ratio = max(said, got) / min(said, got)
+    if ratio >= 2 and d["id"] in STAGED_COUNT:
+        soft.append(f"{d['id']}: description says {said:,} vs {got:,} published ({ratio:.1f}x) -- "
+                    f"KNOWN, fixed in 08_harmonise, lands at 1.0.0")
+    elif ratio >= 2:
+        _flag += 1
+        fails.append(f"{d['id']}: the description says {said:,} estimates but the entry publishes "
+                     f"{got:,} beside it ({ratio:.1f}x apart) -- one of the two is wrong")
+    elif ratio >= 1.25:
+        soft.append(f"{d['id']}: description says {said:,} estimates, entry publishes {got:,} "
+                    f"({ratio:.2f}x) -- probably the paper's count against the shipped file's, "
+                    f"but worth a look")
+hard(_flag == 0, "every description agrees with the count published beside it")
+
 print(f"\n{len(soft)} soft observation(s):")
 for s_ in soft[:8]:
     print("  . " + s_)
