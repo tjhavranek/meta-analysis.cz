@@ -191,9 +191,14 @@ for proj in sorted(man):
     s=s.where(s>0)
     keep=e.notna()&s.notna()
     if keep.sum()<5: report[proj]=dict(included=False,reason=f"only {int(keep.sum())} usable rows"); continue
+    # float64 BEFORE deriving. Stata sources give float32, and t_stat/precision computed
+    # in float32 then stored as float64 do not reproduce effect/se exactly -- a user who
+    # recomputes gets a different number in the 8th digit. Immaterial for any estimator,
+    # but a derived column should be exactly derivable. Affected climate, euro,
+    # resource_curse; caught by 91_distribution.py.
     out=pd.DataFrame({"dataset":proj,
-                      "effect":e[keep].values,
-                      "se":s[keep].values})
+                      "effect":e[keep].astype("float64").values,
+                      "se":s[keep].astype("float64").values})
     out["t_stat"]=out["effect"]/out["se"]
     out["precision"]=1.0/out["se"]
     n_obs_was_log=False
