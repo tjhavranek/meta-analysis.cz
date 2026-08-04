@@ -33,6 +33,16 @@ H = pd.read_parquet(os.path.join(OUT, "data", "v1", "estimates_harmonised.parque
 API = json.load(open(os.path.join(OUT, "api", "v1", "datasets.json"), encoding="utf-8"))
 STATUS = {d["id"]: d.get("audit_status", "?") for d in API["datasets"]}
 
+
+def _load(n):
+    q = os.path.join(WORK, n)
+    return json.load(open(q, encoding="utf-8")) if os.path.exists(q) else {}
+
+
+OVR = _load("overrides.json")
+PRIM = _load("primaries.json")
+REP = _load("harmonised_report.json") or {"projects": {}}
+
 CODE_EXT = (".do", ".r", ".py", ".ado")
 # Stata commands whose first two arguments are the effect and its standard error.
 CMD = re.compile(
@@ -49,7 +59,7 @@ R_CMD = [
     re.compile(r"\bmetagen\s*\(\s*(?:TE\s*=\s*)?([A-Za-z_.][\w.]*)\s*,\s*(?:seTE\s*=\s*)?([A-Za-z_.][\w.]*)", re.I),
 ]
 # suffixes papers append when they transform a column in code
-SUF = re.compile(r"(_w|_win\d*|_wins?|_w\d+|_trim\d*|_sd|_alt|_c)$", re.I)
+SUF = re.compile(r"(_w|_win\d*|_wins?|_unwins\w*|_w\d+|_trim\d*|_raw|_sd|_alt|_c)$", re.I)
 
 
 def stem(v):
@@ -131,10 +141,39 @@ RESOLVED = {
  "remittances":  "REAL, staged in overrides.pending_1_0_0: code builds PCC from TSTAT_L and DF; we ship COEF_L/SE_L",
 }
 
-rows = []
-for proj in sorted(H["dataset"].unique()):
+def resolved_pair(proj):
+    """The effect/se this dataset resolves to, whether or not it is pooled.
+
+    The 5 EXCLUDED datasets never appear in the harmonised table, so a loop over
+    H["dataset"] silently skipped them -- and an exclusion decision deserves the same
+    code-level evidence as an inclusion. Fall back to the harmonised report, then to the
+    inventory's own resolution.
+    """
     g = H[H["dataset"] == proj]
-    eff, se = str(g["effect_col"].iloc[0]), str(g["se_col"].iloc[0])
+    if len(g):
+        return str(g["effect_col"].iloc[0]), str(g["se_col"].iloc[0])
+    o = OVR.get(proj) or {}
+    r = REP["projects"].get(proj) or {}
+    pr = PRIM.get(proj) or {}
+    eff = o.get("effect") or r.get("effect") or pr.get("effect")
+    se = o.get("se") or r.get("se")
+    if not isinstance(se, str) or not se:
+        se = (pr.get("se_cols") or [None])[0]
+    return (str(eff) if eff else "?"), (str(se) if se else "?")
+
+
+ALL = sorted({d["id"] for d in API["datasets"]} | set(H["dataset"].unique()))
+POOLED = set(H["dataset"].unique())
+rows = []
+for proj in ALL:
+    eff, se = resolved_pair(proj)
+    # No effect mapping exists for these, so every downstream comparison is noise. Decide it
+    # before the has-code / has-regression branches, or `lags` reports NO REGRESSION and shows a
+    # meaningless fallback pair (end_variab/seasonal) instead of saying there is nothing to check.
+    if STATUS.get(proj) == "excluded_no_precision":
+        rows.append((proj, STATUS.get(proj, "?"), "n/a (no effect mapping)", "N/A",
+                     "excluded for having no per-estimate precision; see 97_exclusions", ""))
+        continue
     texts = code_texts(proj)
     if not texts:
         rows.append((proj, STATUS.get(proj, "?"), f"{eff}/{se}", "NO CODE", "", "")); continue
@@ -142,6 +181,32 @@ for proj in sorted(H["dataset"].unique()):
     if not hits:
         rows.append((proj, STATUS.get(proj, "?"), f"{eff}/{se}", "NO REGRESSION", "",
                      f"{len(texts)} script(s), no recognised command")); continue
+
+    # An EXCLUDED dataset has no effect/se mapping -- it never enters the pooled table -- so the
+    # fallback above INVENTS one (fdi resolves to Year_FE/Sector_FE, which is meaningless). And
+    # the code in these packages often runs the paper's actual research regression rather than a
+    # FAT-PET, so the second token is a moderator, not a standard error: `reg eis marketpartic`,
+    # `lm(size ~ trust_index)`. Judge these on the EFFECT column alone, which is the only part
+    # that carries meaning here, and say so rather than reporting a pair mismatch.
+    if proj not in POOLED:
+        # A dataset excluded for having NO per-estimate precision has no effect mapping at all,
+        # so `eff` above is a meaningless fallback guess (fdi -> Year_FE). Comparing it to
+        # anything is noise; say there is nothing to compare.
+        if STATUS.get(proj) == "excluded_no_precision":
+            rows.append((proj, STATUS.get(proj, "?"), "n/a (no effect mapping)", "N/A",
+                         "excluded for having no per-estimate precision; see 97_exclusions",
+                         f"{len(hits)} regressions"))
+            continue
+        eff_hit = [h for h in hits if stem(h[0]) == stem(eff)]
+        if eff_hit:
+            rows.append((proj, STATUS.get(proj, "?"), f"{eff} (effect only)", "EFFECT OK",
+                         f"code regresses {eff_hit[0][0]} @ {eff_hit[0][2]}", f"{len(hits)} regressions"))
+        else:
+            from collections import Counter as _C
+            top = _C((a, b) for a, b, _ in hits).most_common(1)[0]
+            rows.append((proj, STATUS.get(proj, "?"), f"{eff} (effect only)", "NO EFFECT MATCH",
+                         f"code's most common pair is {top[0][0]}/{top[0][1]}", f"{len(hits)} regressions"))
+        continue
 
     exact = [h for h in hits if h[0].lower() == eff.lower() and h[1].lower() == se.lower()]
     winsy = [h for h in hits if stem(h[0]) == stem(eff) and stem(h[1]) == stem(se)]
@@ -159,12 +224,19 @@ for proj in sorted(H["dataset"].unique()):
             v, ev = "RESOLVED", RESOLVED[proj]
     rows.append((proj, STATUS.get(proj, "?"), f"{eff}/{se}", v, ev, f"{len(hits)} regressions"))
 
-print("%-16s %-22s %-26s %-11s %s" % ("literature", "audit_status", "ours", "verdict", "code says"))
+print("%-18s %-22s %-26s %-11s %s" % ("dataset", "audit_status", "ours", "verdict", "code says"))
 for p, st, pair, v, ev, n in rows:
-    print("%-16s %-22s %-26s %-11s %s" % (p, st, pair[:26], v, ev[:110]))
+    mark = "  " if p in POOLED else "* "      # * = published but NOT pooled
+    print("%s%-16s %-22s %-26s %-11s %s" % (mark, p, st, pair[:26], v, ev[:104]))
+print("  (* = published but excluded from the pooled table)")
 
 from collections import Counter
 tally = Counter(r[3] for r in rows)
+_pool = Counter(r[3] for r in rows if r[0] in POOLED)
+_excl = Counter(r[3] for r in rows if r[0] not in POOLED)
+print(f"pooled ({len(POOLED)}): " + " | ".join(f"{k}: {v}" for k, v in _pool.most_common()))
+print(f"excluded ({len(rows)-len(POOLED)}): " + " | ".join(f"{k}: {v}" for k, v in _excl.most_common()))
+print(f"all {len(rows)} -->", end=" ")
 print("\n" + " | ".join(f"{k}: {v}" for k, v in tally.most_common()))
 bad = [r for r in rows if r[3] == "UNRELATED"]
 # A RESOLVED note that stops firing means the mapping moved under it. That is the failure

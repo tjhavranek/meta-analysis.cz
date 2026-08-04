@@ -349,5 +349,8 @@
  },
  "migrant": {
   "verified_by": "The paper's replication is in R, not Stata: run_replication_package.R:1002 runs stats::lm(elasticity ~ se, data = master, weights = se_weight) and clusters on idstudy -- the FAT-PET on exactly this pair. Found by 93_codegrep.py once R patterns were added; a Stata-only scan had reported this literature as having no regression at all."
+ },
+ "gasoline_price": {
+  "arithmetic_evidence": "No replication code ships with this dataset, so it cannot be code-traced. It carries the strongest evidence arithmetic can give, from TWO columns the authors shipped independently of the pair: e/se reproduces the file's own `t` on 100.0% of all 202 rows, AND `prec` equals 1/se on 100.0% of rows. An exhaustive search of every column pair found no genuine rival -- the only other combinations reproducing t are t divided by a 0/1 dummy, which returns t trivially. Checked 2026-08-04."
  }
 }
