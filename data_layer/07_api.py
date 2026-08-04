@@ -317,9 +317,15 @@ index=dict(
       "se_is_derived marks rows whose standard error was reconstructed rather than read directly.",
       "Column mappings were resolved arithmetically (effect/se must reproduce the reported "
       "t-statistic) and, where that was not decisive, taken from the paper's own replication code.",
-      "Beta: the harmonisation may be revised. For a reference that does not move, cite the "
-      "archived deposit https://doi.org/10.5281/zenodo.21773678 , the concept DOI, which always "
-      "resolves to the newest archived version and carries checksums."],
+      # DERIVED from DATA_STATUS, never hardcoded. This note said "Beta:" while
+      # harmonised_table.status in the SAME object said "stable" -- a consumer reading one field
+      # got the opposite of a consumer reading the other. The citation advice below is good
+      # regardless of maturity; only the label was wrong.
+      (("Beta: the harmonisation may be revised. " if DATA_STATUS == "beta"
+        else "The harmonisation may still be revised. ") +
+       "For a reference that does not move, cite the "
+       "archived deposit https://doi.org/10.5281/zenodo.21773678 , the concept DOI, which always "
+       "resolves to the newest archived version and carries checksums.")],
     excluded={p:v.get("reason") for p,v in (harm.get("projects") or {}).items()
               if not v.get("included")}),
   counts_note=("`datasets` contains exactly counts.datasets entries, all of them real datasets. "

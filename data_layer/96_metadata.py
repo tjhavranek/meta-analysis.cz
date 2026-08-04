@@ -285,6 +285,49 @@ fails.extend(_rd_bad)
 hard(not _rd_bad,
      "README, CITATION.cff and .zenodo.json state this release's version, counts, maturity and DOI")
 
+# --------------------------------- 8. does any machine surface still call this a beta?
+# Check 7 covers hand-written files carrying a NUMBER. These two carried a maturity WORD with no
+# number attached, so they sailed through it: llms.txt linked the current Parquet file and
+# appended "; beta)", and datasets.json's own notes said "Beta: the harmonisation may be revised"
+# while harmonised_table.status in the same object said "stable". Six instances of this class in
+# one day, each missed by the check written for the previous one. So this checks the CLASS: no
+# machine surface may say "beta" unless it is plainly about the superseded 0.9.0-beta release.
+print("\n8. does any machine surface still call the current release a beta?")
+_SURFACES = [os.path.join(OUT, "llms.txt"), os.path.join(OUT, "llms-full.txt"),
+             os.path.join(OUT, ".zenodo.json"), os.path.join(OUT, "CITATION.cff"),
+             os.path.join(AV, "README.md"), os.path.join(AV, "datasets.json"),
+             os.path.join(AV, "croissant.json"), os.path.join(AV, "datapackage.json")]
+# also whatever the site is actually serving, if this is the published layout
+_SURFACES += [os.path.join(SITE, "llms.txt"), os.path.join(SITE, ".zenodo.json")]
+# Match the CLAIM, not the word. Scanning for "beta" anywhere flagged legitimate history --
+# .zenodo.json's "Changes since 0.9.0-beta" paragraph says "the beta" several times, and
+# datapackage/croissant have a column literally named `beta`. What must never appear is an
+# assertion that the CURRENT release is one. These six patterns cover every instance found today.
+_CLAIMS = re.compile(
+    r"\b(?:is|remains|stays|still)\s+(?:a\s+|an\s+)?beta\b"     # "the table is a beta"
+    r"|\bbeta\s+release\b"                                       # "this is a beta release"
+    r"|^\s*Beta[:\s]"                                            # a note beginning "Beta: ..."
+    r"|;\s*beta\s*\)"                                            # "(also Parquet; beta)"
+    r"|\bBeta:\s"                                                # "Beta: the harmonisation..."
+    r"|\bbeing\s+a\s+beta\b",                                    # "Being a beta, ..."
+    re.I | re.M)
+_beta_bad = []
+if API["harmonised_table"].get("status") != "beta":
+    for _f in _SURFACES:
+        if not os.path.isfile(_f):
+            continue
+        _t = open(_f, encoding="utf-8", errors="replace").read()
+        for _m in _CLAIMS.finditer(_t):
+            _ctx = _t[max(0, _m.start() - 60):_m.end() + 60]
+            if "0.9.0" in _ctx:
+                continue                      # explicitly about the superseded release
+            _beta_bad.append(f"{os.path.relpath(_f, OUT)}: {_m.group(0)!r} near "
+                             f"...{re.sub(chr(10), ' ', _ctx).strip()[:80]}...")
+fails.extend(_beta_bad)
+hard(not _beta_bad,
+     f"no machine surface calls the current release a beta "
+     f"(status={API['harmonised_table'].get('status')!r})")
+
 print(f"\n{len(soft)} soft observation(s):")
 for s_ in soft[:8]:
     print("  . " + s_)

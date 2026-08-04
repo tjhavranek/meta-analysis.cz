@@ -718,7 +718,9 @@ def main():
            f"literatures pooled into one table, one row per harmonised observation (some "
            f"literatures contribute one row per impulse-response horizon), with effect, standard error, "
            f"t-statistic, sample size and shared study characteristics "
-           f"(also [Parquet]({BASE}/data/v1/estimates_harmonised.parquet); beta)",
+           # the maturity label is DERIVED; it read "; beta)" beside a link to the 1.0.0 file
+           f"(also [Parquet]({BASE}/data/v1/estimates_harmonised.parquet); version "
+           f"{_api['harmonised_table']['version']})",
            f"- [Per-dataset files]({BASE}/api/v1/datapackage.json): each dataset also published "
            f"individually as Parquet and CSV, with a column-level codebook giving every variable's "
            f"type, missingness and summary statistics — all URLs listed in datasets.json",
