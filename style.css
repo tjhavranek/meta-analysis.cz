@@ -639,6 +639,12 @@ table.catalogue li{ margin-bottom:var(--s2); font-size:var(--f-1); line-height:1
    purple, which was never checked against --canvas. Keep them distinguishable
    from unvisited without dropping below AA. */
 a:visited{ color:var(--accent-dark); }
+/* ...but NOT inside the masthead. `a:visited` is (0,1,1) and `.masthead-home` is (0,1,0), so
+   the visited rule wins, and --accent-dark (#0b4a6e) on the slate (#28313A) is 1.39:1 --
+   effectively invisible, and only for people who had already visited the homepage, which is
+   why it read as "dark until you hover". The masthead keeps its own colours in every state. */
+#logo a:visited{ color:rgba(255,255,255,.85); }
+#logo h1 a:visited, #logo .site-name a:visited{ color:#fff; }
 
 /* Figures carried no width/height, so nothing reserved their box and every one of them
    shifted the layout as it loaded. The fix is the intrinsic width/height attributes now
