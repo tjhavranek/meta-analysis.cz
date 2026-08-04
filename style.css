@@ -277,6 +277,12 @@ table.catalogue li{ margin-bottom:var(--s2); font-size:var(--f-1); line-height:1
   #menu a::after{ display:none; }            /* 9 items would wrap to 4 rows with badges */
   table.catalogue, table.catalogue tbody, table.catalogue tr,
   table.catalogue td{ display:block; width:100%; padding-right:0; }
+  /* The cell's bottom padding exists to separate the two columns' last rows in the desktop
+     grid. Once the table linearises it lands between two consecutive field groups, on top of
+     the list's own 32px margin, so a reader saw 56px at the two cell boundaries -- before
+     "International economics" and before "Meta-research methods" -- and 32px everywhere else.
+     Nothing about the stacked layout needs it; drop it so every field group is spaced alike. */
+  table.catalogue td{ padding-bottom:0; }
   .entry img{ padding:var(--s3); }
 }
 
