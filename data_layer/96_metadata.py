@@ -211,6 +211,25 @@ for _root in _roots:
 fails.extend(_bad)
 hard(not _bad, f"{_seen} rights-bearing file(s) scanned, none contradict the CC BY policy")
 
+# --------------------------------- 6. does any fragment cite a DOI the catalogue disowns?
+# doi.html was written CONDITIONALLY, so when 1.0.0 nulled the version DOI the previous
+# release's value simply survived on disk, and the page was about to pair
+# "10.5281/zenodo.21773679" with "version 1.0.0". A conditional write does not leave a blank,
+# it leaves a stale value, and downstream nothing can tell the two apart.
+print("\n6. do the published fragments cite only DOIs the catalogue vouches for?")
+_ok = {d for d in (API.get("doi"), API.get("concept_doi")) if d}
+_fr = os.path.join(AV, "fragments")
+_stale = []
+if os.path.isdir(_fr):
+    for _f in sorted(os.listdir(_fr)):
+        _t = open(os.path.join(_fr, _f), encoding="utf-8", errors="replace").read()
+        for _d in _re.findall(r"10\.5281/zenodo\.\d+", _t):
+            if _d not in _ok:
+                _stale.append(f"fragments/{_f} cites {_d}, which datasets.json does not vouch "
+                              f"for (it publishes {sorted(_ok) or 'no DOI'})")
+fails.extend(_stale)
+hard(not _stale, f"every fragment cites only {sorted(_ok) or 'no DOI'}")
+
 print(f"\n{len(soft)} soft observation(s):")
 for s_ in soft[:8]:
     print("  . " + s_)

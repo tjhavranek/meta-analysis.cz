@@ -68,7 +68,12 @@ def claimed_n(pap):
 DOMAIN_REVIEWED = {"activism","gasoline","frisch","dst","electricity","excess_sensitivity",
                    "discrate","learning","eis","incentives","habits","reforms",
                    "lags","price_puzzle","climate","house_prices","forward",
-                   "fdi","scc","bma","spillovers"}
+                   "fdi","scc","bma","spillovers",
+                   # No replication code exists for gasoline_price, so it was reviewed against
+                   # the paper's published results directly: our means reproduce the twofold
+                   # exaggeration its abstract reports, and the long/short-run ordering. That is
+                   # a domain review, not a code trace. See overrides.gasoline_price.verified_by.
+                   "gasoline_price"}
 
 def _audit_status(proj):
     o=OVR.get(proj) or {}; r=res.get(proj) or {}
