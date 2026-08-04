@@ -639,6 +639,12 @@ table.catalogue li{ margin-bottom:var(--s2); font-size:var(--f-1); line-height:1
 .foot-machine{ font-size:var(--f-2); color:var(--ink-soft); }
 @media (max-width:40rem){
   .site-foot{ padding-left:var(--s3); padding-right:var(--s3); }
+  /* The masthead pills are the control every visitor taps on every page, and the /results/
+     chips are the only way to filter that page. Both measured 32px and 36px tall -- under
+     Apple's 44pt and Material's 48dp guidance. Height only; the labels and gaps are unchanged. */
+  #menu a{ min-height:44px; display:flex; align-items:center; }
+  .chips .chip{ min-height:44px; }
+  .r-filter input[type="search"]{ min-height:44px; }
 }
 
 /* Visited links had no rule at all, so they fell back to the browser default
