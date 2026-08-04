@@ -246,7 +246,11 @@ def build_jsonld(m):
            "mainEntityOfPage": page, "url": page,
            "headline": m.get("citation_title") or m["title"],
            "name": m.get("citation_title") or m["title"],
-           "abstract": m["abstract"], "inLanguage": "en"}
+           "abstract": m["abstract"], "inLanguage": "en",
+           # The sibling Dataset node has carried a license since the CC BY decision, but this
+           # one did not, so a crawler reading the PAPER saw no rights at all on 51 of 51 pages.
+           # The whole point of the CC BY declaration is that a machine never has to wonder.
+           "license": "https://creativecommons.org/licenses/by/4.0/"}
     if authors:
         art["author"] = authors
     if m["year"]:
@@ -281,6 +285,12 @@ def build_jsonld(m):
         art["hasPart"] = [{"@type": "CreativeWork", "name": p["label"],
                             "url": absurl(proj, p["href"])} for p in other_pdfs]
     graph = [art]
+    # NOT a bug that some pages emit a Dataset node yet are absent from the /datasets/
+    # DataCatalog (pcc is the example): this node means "data and code for this study", which a
+    # literature-search log satisfies, while the catalogue admits only estimate-level datasets
+    # with a per-estimate standard error. Different scopes, both correct. Raised by the site
+    # audit of 2026-08-04 and checked: pcc ships only search.xlsx, so it belongs here and not
+    # in the catalogue.
     if dc_local or dc_ext_file or ext_landing:
         # distribution = actual downloadable files only; repository landing
         # pages (OSF/Zenodo) go to sameAs, not distribution

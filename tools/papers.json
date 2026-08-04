@@ -1371,7 +1371,7 @@
  {
   "project": "reforms",
   "title": "Structural Reforms and Economic Growth: A Meta-Analysis",
-  "abstract": "The present fiscal difficulties of many countries amplify the call for structural reforms. To provide stylized facts on how such reforms have worked in the past, we quantitatively review 46 studies estimating the relation between reforms and growth. These studies examined structural reforms carried out in different transition countries around the world. Our results suggest that an average reform was costly in the short run, but had strong positive effects on the long-run growth. The findings hold even after correction for publication bias and misspecifications in some primary studies.",
+  "abstract": "The present fiscal difficulties of many countries amplify the call for structural reforms. To provide stylized facts on how reforms worked in the past, we quantitatively review 60 studies estimating the relationship between reforms and growth. These studies examine structural reforms carried out in 26 transition countries around the world. Our results show that an average reform caused substantial costs in the short run, but had strong positive effects on long-run growth. Reforms focused on external liberalization proved to be more beneficial than others in both the short and long run. The findings hold even after correction for publication bias and misspecifications present in some primary studies.",
   "reference_line": "Jan Babecky & Tomas Havranek (2014), \"Structural Reforms and Growth in Transition: A Meta-Analysis.\" Economics of Transition 22(1), pp. 13-42.",
   "authors": [
    "Jan Babecky",
@@ -1401,7 +1401,7 @@
   "figure": null,
   "has_meta_description": true,
   "meta_keywords": "structural reforms, economic growth, transition economies, meta-analysis, publication bias",
-  "one_line": "Meta-analysis of 46 studies finds structural reforms in transition countries carry short-run costs but strong long-run growth benefits.",
+  "one_line": "Meta-analysis of 60 studies finds structural reforms in transition countries carry short-run costs but strong long-run growth benefits.",
   "citation_title": "Structural Reforms and Growth in Transition: A Meta-Analysis"
  },
  {
