@@ -478,7 +478,7 @@
   },
   "has_meta_description": true,
   "meta_keywords": "Daylight saving time, energy savings, Bayesian model averaging, meta-analysis, publication bias",
-  "one_line": "A meta-analysis of 162 estimates from 44 studies finds daylight saving time yields slight electricity savings of about 0.34%."
+  "one_line": "A meta-analysis of 162 estimates from 44 studies finds daylight saving time saves essentially no electricity: 0.01% after correction, against a 0.34% simple average of reported estimates."
  },
  {
   "project": "education",
@@ -1248,7 +1248,7 @@
    },
    {
     "label": "MAIVE app",
-    "href": "https://spuriousprecision.com/"
+    "href": "https://easymeta.org/"
    }
   ],
   "figure": {

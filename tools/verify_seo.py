@@ -180,6 +180,38 @@ if os.path.isfile(_dsets) and os.path.isdir(_frag):
             fails.append(f"datasets/index.html: STALE - fragment {_f} is '{_v}' but the page "
                          f"does not contain it. Rebuild the page from the fragments.")
 
+# --- does any one-line summary publish the number the paper CORRECTS, as the finding? ---
+# `one_line` is derived from the abstract's opening, and abstracts often lead with the raw mean
+# before the corrected estimate. On `dst` that produced a summary saying daylight saving yields
+# "slight electricity savings of about 0.34%" -- 0.34% is the simple average the paper exists to
+# correct; its actual estimate is 0.01%, essentially zero. llms.txt carried it, so an answer
+# engine was told the opposite of the paper's conclusion, and of this site's whole thesis.
+# estimates.csv already records which figure is preferred, so make it the referee.
+_est = os.path.join(SITE, "estimates.csv")
+_pap = os.path.join(SITE, "tools", "papers.json")
+if os.path.isfile(_est) and os.path.isfile(_pap):
+    import csv as _csv
+    _one = {x.get("project"): (x.get("one_line") or "")
+            for x in json.load(open(_pap, encoding="utf-8"))}
+    _num = re.compile(r"-?\d+(?:\.\d+)?%")
+    for _row in _csv.DictReader(open(_est, encoding="utf-8")):
+        _proj, _head = (_row.get("project") or "").strip(), (_row.get("headline") or "")
+        _ol = _one.get(_proj) or ""
+        if not _ol or "against" not in _head:
+            continue
+        # "essentially zero, 0.01% savings, against a 0.34% simple average" ->
+        # preferred = numbers before "against", comparator = numbers after it
+        _pre, _post = _head.split("against", 1)
+        _preferred = set(_num.findall(_pre))
+        _comparator = set(_num.findall(_post))
+        _in_ol = set(_num.findall(_ol))
+        if _comparator & _in_ol and not (_preferred & _in_ol):
+            fails.append(
+                f"{_proj}: one_line quotes {sorted(_comparator & _in_ol)}, which estimates.csv "
+                f"records as the comparator the paper CORRECTS, and omits the preferred figure "
+                f"{sorted(_preferred)}. This is what the abstract-first heuristic gets wrong; "
+                f"override one_line in papers.json.")
+
 print(f"pages checked: {len(pages)}; JSON-LD blocks valid: {n_ld}; URLs resolved: {n_urls}")
 if fails:
     print(f"\nFAILURES ({len(fails)}):")
