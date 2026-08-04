@@ -4,7 +4,8 @@ media: "text"
 outlet: "MAER-Net"
 url: "https://www.maer-net.org/post/two-new-pre-registered-papers-outlier-decisions-in-meta-analysis-and-ai-feedback-on-meta"
 date: "2026-07-27"
-headline: "Two new pre-registered papers: outlier decisions in meta-analysis and AI feedback on meta"
+headline: "Two new pre-registered papers: outlier decisions in meta-analysis and AI feedback on meta-analyses"
+mirror: "maer-two-pre-registered-papers"
 byline: "Tomáš Havránek"
 word_count: "332"
 images: "2026-07_outliers-table3.png|2026-07_debate-cost-vs-rank.png"
@@ -13,7 +14,7 @@ image_credit: "From the first paper, Do decisions about outliers and influential
 body_note: "Post to the MAER-Net members' forum announcing two pre-registered papers. The headline is reproduced as posted: the platform cuts it after „on meta“, and the post's own URL is truncated the same way. In the original the two paper links are printed as bare URLs; here they are the same text, made clickable. The post itself carries no figures — the table and the chart below are reproduced from the two papers it announces, one from each, and are not part of what was posted."
 ---
 
-# Two new pre-registered papers: outlier decisions in meta-analysis and AI feedback on meta
+# Two new pre-registered papers: outlier decisions in meta-analysis and AI feedback on meta-analyses
 
 My colleagues and I have two new pre-registered papers that may interest MAER-Net members.
 

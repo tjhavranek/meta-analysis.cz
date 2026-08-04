@@ -1,0 +1,239 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+<title>Why Model Averaging Is Useful in Meta-Analysis</title>
+<meta name="keywords" content="model averaging, model uncertainty, Bayesian model averaging, meta-regression" />
+<meta name="description" content="An introduction to model averaging as a response to model uncertainty in regression and meta-regression, explaining why weighting many specifications by fit and parsimony beats picking a single best model." />
+<link href="/style.css" rel="stylesheet" type="text/css" />
+<link rel="alternate" type="application/rss+xml" title="Research notes" href="https://meta-analysis.cz/notes/feed.xml" />
+
+<!-- seo-meta:start -->
+<link rel="canonical" href="https://meta-analysis.cz/notes/maer-model-averaging/" />
+<meta name="author" content="Tomas Havranek" />
+<meta property="article:published_time" content="2019-02-27" />
+<meta property="article:modified_time" content="2019-02-27" />
+<meta property="og:site_name" content="meta-analysis.cz" />
+<meta property="og:type" content="article" />
+<meta property="og:title" content="Why Model Averaging Is Useful in Meta-Analysis" />
+<meta property="og:description" content="An introduction to model averaging as a response to model uncertainty in regression and meta-regression, explaining why weighting many specifications by fit and parsimony beats picking a single best model." />
+<meta property="og:url" content="https://meta-analysis.cz/notes/maer-model-averaging/" />
+<script type="application/ld+json">
+{
+ "@context": "https://schema.org",
+ "@graph": [
+  {
+   "@type": "BlogPosting",
+   "@id": "https://meta-analysis.cz/notes/maer-model-averaging/#note",
+   "mainEntityOfPage": "https://meta-analysis.cz/notes/maer-model-averaging/",
+   "url": "https://meta-analysis.cz/notes/maer-model-averaging/",
+   "headline": "Why Model Averaging Is Useful in Meta-Analysis",
+   "name": "Why Model Averaging Is Useful in Meta-Analysis",
+   "abstract": "An introduction to model averaging as a response to model uncertainty in regression and meta-regression, explaining why weighting many specifications by fit and parsimony beats picking a single best model.",
+   "description": "An introduction to model averaging as a response to model uncertainty in regression and meta-regression, explaining why weighting many specifications by fit and parsimony beats picking a single best model.",
+   "inLanguage": "en",
+   "datePublished": "2019-02-27",
+   "dateModified": "2019-02-27",
+   "keywords": "model averaging, model uncertainty, Bayesian model averaging, meta-regression",
+   "author": [
+    {
+     "@type": "Person",
+     "name": "Tomas Havranek",
+     "sameAs": "https://orcid.org/0000-0002-3158-2539"
+    }
+   ],
+   "publisher": {
+    "@type": "Organization",
+    "name": "meta-analysis.cz",
+    "url": "https://meta-analysis.cz"
+   },
+   "isPartOf": {
+    "@type": "Blog",
+    "@id": "https://meta-analysis.cz/notes/#blog",
+    "name": "Research notes"
+   },
+   "license": "https://creativecommons.org/licenses/by/4.0/",
+   "isAccessibleForFree": true,
+   "about": [
+    {
+     "@type": "Thing",
+     "name": "meta-analysis methods"
+    }
+   ],
+   "sameAs": [
+    "https://www.maer-net.org/post/model-averaging"
+   ]
+  }
+ ]
+}
+</script>
+<!-- seo-meta:end -->
+</head>
+<body>
+<div id="wrapper">
+<div id="logo">
+	<a class="masthead-home" href="/">meta-analysis.cz</a>
+	<p class="site-name"><a href="/notes/">Research notes</a></p>
+	<h2> <span class="mk">&raquo;</span>&nbsp;&nbsp;&nbsp; methods, tools, and findings</h2>
+</div>
+<div id="header">
+	<div id="menu">
+		<ul>
+			<li class="current_page_item"><a href="/notes/">Notes</a></li>
+			<li><a href="/">Data &amp; code</a></li>
+			<li><a href="/datasets/">Datasets</a></li>
+			<li><a href="/guidelines">Guidelines</a></li>
+			<li><a href="https://meta-analysis.cz/notes/feed.xml">RSS</a></li>
+		</ul>
+	</div>
+</div>
+</div>
+<div id="page">
+	<div id="content">
+		<div class="post">
+			<h1 class="title">Why Model Averaging Is Useful in Meta-Analysis</h1>
+			<p class="byline">27 February 2019 &nbsp;&middot;&nbsp; Tomas Havranek &nbsp;&middot;&nbsp; meta-analysis methods</p>
+			<div class="entry">
+<p class="byline">First published on <a href="https://www.maer-net.org/post/model-averaging" rel="external">MAER-Net</a>, 27 February 2019. Archived with the rest of our writing at <a href="https://meta-analysis.cz/komentare/maer-model-averaging/">/komentare/maer-model-averaging/</a>.</p>
+
+<p>
+If you’ve ever run a regression with more than a handful of variables, you know the problem. It’s called <b>model uncertainty</b>: which variables should go into the baseline? One solution is to simply put all in one model, but doing so attenuates precision. Another approach is to get rid of the variables that are more difficult to interpret, but that’s not kosher either:
+</p>
+
+<blockquote><p>It is important to realize that this uncertainty is an inherent part of economic modelling, whether we acknowledge it or not. Putting on blinkers and narrowly focusing on a limited set of possible models implies that we may fail to capture important aspects of economic reality. (<a href="https://warwick.ac.uk/fac/sci/statistics/staff/academic-research/steel/steel_homepage/techrep/modelaveraging_jel_final.pdf">Steel, 2019</a>)</p></blockquote>
+
+<p>
+A formal response to model uncertainty is <b>model averaging</b>. The idea is to run regression models with different combinations of variables, and then give these models weights based on how they fit the data and how parsimonious, and possibly well-specified, they are. I’ll write from an economist’s perspective (model averaging has its <a href="https://link.springer.com/article/10.1057/jors.1969.103">roots </a> in economics), but I hope this post will appeal to anyone who uses regression analysis: social scientists, medical scientists, ecologists, biologists, meta-analysts.
+</p>
+
+<h2>How it Works</h2>
+
+<p>
+Suppose we have 5 explanatory variables. To do model averaging, we first estimate 2^5 = 32 regressions. Then we assign each model a weight and compute a <b>weighted average</b> over the 32 regressions. The weight increases with data fit, but decreases with model complexity (given the same fit, a regression with 4 variables will get more weight than a regression with 5 variables). So, think of adjusted R-squared as an intuitive weight for model averaging. It’s not an optimal weight, but you get the idea.
+</p>
+
+<p>
+Many methods of model averaging exist, and the technicalities may look intimidating. Luckily for us, the statistician Mark Steel has crafted a <a href="https://warwick.ac.uk/fac/sci/statistics/staff/academic-research/steel/steel_homepage/techrep/modelaveraging_jel_final.pdf"><b>superb survey</b></a><b>,</b> which is now forthcoming in the Journal of Economic Literature. Mark’s paper has it all: it’s easily accessible to scientists from various fields, but also contains useful technical details. In this post I quote Mark’s paper liberally – I couldn’t put it better.
+</p>
+
+<h2>Key for Meta-Analysis</h2>
+
+<p>
+Mark makes a strong case that model averaging should form an essential part of an empirical economist’s toolkit. If that holds for economics, it must hold double for <b>meta-regression </b>analysis (in any field), where model uncertainty <a href="https://journals.sagepub.com/doi/10.1177/1740774508101279">runs rampant</a>. In most meta-analysis contexts we can think of <a href="http://meta-analysis.cz/excess_sensitivity/">dozens</a> of factors that may influence (or just be correlated with) the reported outcomes. Sometimes there’s the theory to guide us, but more often than not we are on our own.
+</p>
+
+<p>
+Our traditional response to model uncertainty is <b>model selection</b>: let’s choose the best model, either via sequential t-tests or sophisticated <a href="https://onlinelibrary.wiley.com/doi/full/10.1002/jae.615">general-to-specific</a> modelling. But with 20 variables (a common number in economics meta-analyses), we already have more than a million, 2^20, models to choose from – so we’re virtually guaranteed to choose the wrong one. One can’t possibly run thorough specification checks for a million models. In addition, as Mark explains:
+</p>
+
+<blockquote><p>The most important common characteristic of model selection methods is that they choose a model and then conduct inference conditionally upon the assumption that this model actually generated the data. So these methods only deal with the uncertainty in a limited sense: they try to select the ‘best’ model, and their inference can only be relied upon if that model happens to be (a really good approximation to) the data generating process. In the much more likely case where the best model captures some aspects of reality, but there are other models that capture other aspects, model selection implies that our inference is almost always misleading, either in the sense of being systematically wrong or overly precise. (<a href="https://warwick.ac.uk/fac/sci/statistics/staff/academic-research/steel/steel_homepage/techrep/modelaveraging_jel_final.pdf">Steel, 2019</a>)</p></blockquote>
+
+<p>
+Sure, that’s not to say we should bury the theory for good and just go all in for data mining. We always have some idea about the <b>structure of the underlying model</b>. We know that certain variables must play a role – so we can pin these to all regressions and only use model averaging to work over the ‘control’ variables (for which we have no theory, but still don’t want to ignore them). Roman Horvath, Zuzana Irsova, Marek Rusnak, and myself use this strategy in our 2015 <a href="http://meta-analysis.cz/substitution/">Journal of International Economics</a> paper, among other applications.
+</p>
+
+<h2>But It’s All Bayesian, Right?</h2>
+
+<p>
+The most common model averaging technique is <b>Bayesian model averaging</b> (BMA). Model averaging arises naturally as a response to model uncertainty in the Bayesian setting, but I suspect that most of us BMA-users are not convinced Bayesians. We are Bayesian opportunists. True, frequentist methods of model averaging <a href="https://arxiv.org/abs/1802.03511">do exist</a> (Mark discusses them thoroughly), but BMA is more flexible and easier to compute.
+</p>
+
+<p>
+Why? With more than 30 variables, one would have to compute over a billion, 2^30, models. That would take you months, so you need to simplify the model space. Such simplification methods (and I won’t go to details here; read Mark’s paper if you’re interested) are readily available for BMA, but not for the frequentist alternatives – well, with some recent <a href="https://onlinelibrary.wiley.com/doi/abs/10.1002/jae.2288">exceptions</a>. Mark quotes a line by <a href="https://www.sciencedirect.com/science/article/pii/S0304407608001115">Jonathan Wright</a>, who is spot on:
+</p>
+
+<blockquote><p>One does not have to be a subjectivist Bayesian to believe in the usefulness of BMA, or of Bayesian shrinkage techniques more generally. A frequentist econometrician can interpret these methods as pragmatic devices that may be useful for out-of-sample forecasting in the face of model and parameter uncertainty. (<a href="https://www.sciencedirect.com/science/article/pii/S0304407608001115">Wright, 2008</a>)</p></blockquote>
+
+<h2>Priors Matter</h2>
+
+<p>
+A disclaimer is in order. If you decide to use BMA, note that different priors will give you different results. The natural baseline is to use <b>agnostic priors</b>: for example, that all coefficients are zero and that the weight of this prior is the same as the weight of one observation of data (so, <a href="https://cran.r-project.org/web/packages/BMS/vignettes/bmsmanual.pdf">pretty small</a>). You must also specify the prior on model space. Again, the natural starting point is a prior in which all models have the same probability. In any case, robustness checks are crucial, and doing frequentist together with Bayesian model averaging in the same paper often yields the ultimate robustness check.
+</p>
+
+<p>
+Yes, <a href="https://link.springer.com/article/10.1007/s11424-009-9198-y">frequentist techniques</a> do not require priors (not explicitly, anyway) – but you have to choose your assumptions concerning optimal weights. In my eyes, the challenge is essentially the same, but concealed. Mark stresses the importance of priors, but the same goes for assumptions in the frequentist setting:
+</p>
+
+<blockquote><p>For BMA, it is important to understand that the weights (based on posterior model probabilities) are typically quite sensitive to the prior assumptions, in contrast to the usually much more robust results for the model parameters given a specific model. In addition, this sensitivity does not vanish as the sample size grows. Thus, a good understanding of the effect of (seemingly arbitrary) prior choices is critical. (<a href="https://warwick.ac.uk/fac/sci/statistics/staff/academic-research/steel/steel_homepage/techrep/modelaveraging_jel_final.pdf">Steel, 2019</a>)</p></blockquote>
+
+<h2>Model Averaging Is User-Friendly</h2>
+
+<p>
+How difficult is to do model averaging in <b>your next meta-analysis</b>? Not difficult at all. You can use the packages described by Mark or the R code from <a href="http://meta-analysis.cz/">our website</a> (you don’t have to know R syntax to apply these estimators; the code is self-contained). We have three recent papers in which we use both Bayesian and frequentist model averaging and for which we provide data and code: one in the <a href="http://meta-analysis.cz/habits/">European Economic Review</a> (as far as we know, the first application of frequentist model averaging in meta-analysis), another in the <a href="http://meta-analysis.cz/dst/">Energy Journal</a>, and the third in the <a href="http://meta-analysis.cz/education/">Oxford Bulletin of Economics and Statistics</a>.
+</p>
+
+<h2>Anything Else?</h2>
+
+<p>
+Not related to model averaging, but important news for the meta-analysis community: the <b>American Economic Review</b> has accepted the first regular <a href="https://maxkasy.github.io/home/files/papers/PublicationBias.pdf">paper</a> ever that focuses on meta-analysis and publication bias. Congratulations to Isaiah Andrews and Maximilian Kasy! They also have an <a href="https://maxkasy.github.io/home/metastudy/">app</a> for their method, so now you can do meta-analysis using your iPhone (or Xiaomi Mi, if you prefer). Another <a href="https://github.com/Chishio318/stem-based_method">superb new technique</a> was developed by <b>Chishio Furukawa</b> from the MIT. It’s a clever, intuitive non-parametric estimator that in my experience works great, and I recommend you give it a try. In our new paper conditionally accepted by the <a href="http://meta-analysis.cz/excess_sensitivity/">Review of Economic Dynamics</a> we employ these two techniques along with more traditional ones (including the ingenious and already classical <a href="https://onlinelibrary.wiley.com/doi/full/10.1111/ecoj.12461">WAAP</a> by John Ioannidis, Tom Stanley, and Chris Doucouliagos), and all point to the same direction.
+</p>
+
+<p>
+By now it won’t surprise you that we do model averaging in that paper, too.
+</p>
+			</div>
+			<div class="meta">
+				<p class="links"><a href="/notes/" class="more">All notes</a> &nbsp;&middot;&nbsp; <a href="/" class="more">More meta from Prague</a></p>
+			</div>
+		</div>
+	</div>
+<div id="sidebar">
+<ul>
+  <li id="search">
+    <h2>Search</h2>
+    <form method="get" action="https://www.google.com/search">
+      <fieldset>
+        <input type="text" id="s" name="q" value="" title="Search meta-analysis.cz" />
+        <input type="hidden" name="as_sitesearch" value="meta-analysis.cz" />
+        <input type="submit" id="x" value="Search" />
+      </fieldset>
+    </form>
+  </li>
+<li>
+<h2>Also posted on</h2>
+<ul>
+<li><a href="https://www.maer-net.org/post/model-averaging" rel="syndication">MAER-Net</a></li>
+</ul>
+</li>
+<li>
+<h2>Links</h2>
+<ul>
+<li><a href="/">Data &amp; code by topic</a></li>
+<li><a href="/guidelines">A practitioner&#x27;s guide</a></li>
+<li><a href="/maive">MAIVE</a></li>
+<li><a href="https://www.irsova.com/">Zuzana Irsova</a></li>
+<li><a href="https://ideas.repec.org/k/metaana.html">Meta-Analysis on RePEc</a></li>
+<li><a href="https://www.maer-net.org/">MAER-Net</a></li>
+<li><a href="/notes/feed.xml">RSS feed</a></li>
+</ul>
+</li>
+</ul>
+</div>
+	<div style="clear: both;">&nbsp;</div>
+</div>
+
+<footer class="site-foot">
+<p class="foot-lede"><b>meta-analysis.cz</b> collects meta-analyses in economics: the papers, the
+data behind them, and the code that produced them. It is maintained by <b>Tomáš Havránek</b> and
+<b>Zuzana Iršová</b> at the Institute of Economic Studies, Charles University, Prague.</p>
+<p class="foot-who"><b>Tomáš Havránek</b> &middot; <a href="https://www.tomashavranek.cz/">tomashavranek.cz</a> &middot; <a href="https://ies.fsv.cuni.cz/contacts/institute-members/78067720">IES FSV UK</a> &middot; <a href="https://orcid.org/0000-0002-3158-2539">ORCID</a> &middot; <a href="https://scholar.google.com/citations?user=BF0BvBkAAAAJ">Google Scholar</a> &middot; <a href="https://ideas.repec.org/f/pha418.html">RePEc</a> &middot; <a href="https://www.scopus.com/authid/detail.uri?authorId=24453189000">Scopus</a> &middot; <a href="https://cepr.org/about/people/tomas-havranek">CEPR</a> &middot; <a href="https://metrics.stanford.edu/people/tomas-havranek">Stanford METRICS</a></p>
+<p class="foot-who"><b>Zuzana Iršová</b> &middot; <a href="https://www.irsova.com/">irsova.com</a> &middot; <a href="https://ies.fsv.cuni.cz/contacts/institute-members/73504033">IES FSV UK</a> &middot; <a href="https://orcid.org/0000-0002-0753-8124">ORCID</a> &middot; <a href="https://scholar.google.com/citations?user=LaHrICUAAAAJ">Google Scholar</a> &middot; <a href="https://ideas.repec.org/e/pir23.html">RePEc</a> &middot; <a href="https://www.scopus.com/authid/detail.uri?authorId=37080793200">Scopus</a> &middot; <a href="https://cepr.org/about/people/zuzana-irsova">CEPR</a> &middot; <a href="https://metrics.stanford.edu/people/zuzana-irsova">Stanford METRICS</a></p>
+<p class="foot-cite"><b>How to cite this collection:</b> Havranek, T. and Z. Irsova (2026).
+meta-analysis.cz: harmonised estimate-level data from meta-analyses in economics. Zenodo.
+<a href="https://doi.org/10.5281/zenodo.21773678">https://doi.org/10.5281/zenodo.21773678</a>.
+Individual papers carry their own citation on their own page.</p>
+<p class="foot-licence"><b>Licence: CC BY 4.0.</b> Everything on this site is licensed under the
+<a href="https://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0
+International Licence</a>. That covers the papers, the datasets, their CSV and Parquet conversions,
+the pooled table, the codebooks and the documentation. You may copy, redistribute, adapt and reuse
+any of it for any purpose, including commercial use and training machine-learning models, as long
+as you give attribution to meta-analysis.cz. You do not need to ask.</p>
+<p class="foot-machine">For machines: <a href="/api/v1/datasets.json">datasets.json</a> &middot;
+<a href="/api/v1/datapackage.json">datapackage.json</a> &middot;
+<a href="/api/v1/croissant.json">croissant.json</a> &middot;
+<a href="/llms.txt">llms.txt</a> &middot; <a href="/llms-full.txt">llms-full.txt</a> &middot;
+<a href="/sitemap.xml">sitemap.xml</a> &middot; <a href="/LICENSE">LICENSE</a></p>
+</footer>
+</body>
+</html>

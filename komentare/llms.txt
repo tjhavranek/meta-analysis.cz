@@ -214,7 +214,7 @@ Rozhovory pro česká média. U audio a video rozhovorů uvádíme pouze odkaz n
 
 Columns and commentary written in English — policy pieces for VoxEU/CEPR and posts on meta-analysis methods for MAER-Net.
 
-- [Two new pre-registered papers: outlier decisions in meta-analysis and AI feedback on meta](https://meta-analysis.cz/komentare/maer-two-pre-registered-papers/) — MAER-Net, 27. července 2026
+- [Two new pre-registered papers: outlier decisions in meta-analysis and AI feedback on meta-analyses](https://meta-analysis.cz/komentare/maer-two-pre-registered-papers/) — MAER-Net, 27. července 2026
 - [Results of the AI report ranking experiment](https://meta-analysis.cz/komentare/debate-vysledky-experimentu-autorum/) — the 47 authors who took part in the experiment (korespondence, nepublikováno), 16. července 2026
 - [Stress-testing research with AI, now super easy and fully automated](https://meta-analysis.cz/komentare/maer-stress-testing/) — MAER-Net, 31. května 2026
 - [Stress-Testing Meta-Research with AI Duels](https://meta-analysis.cz/komentare/maer-ai-duels/) — MAER-Net, 12. prosince 2025

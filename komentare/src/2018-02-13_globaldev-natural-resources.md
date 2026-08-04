@@ -5,6 +5,7 @@ outlet: "GlobalDev Blog"
 url: "https://globaldev.blog/natural-resources-and-economic-growth-research-evidence/"
 date: "2018-02-13"
 headline: "Natural resources and economic growth: the research evidence"
+mirror: "globaldev-natural-resources"
 byline: "Tomáš Havránek, Roman Horváth"
 word_count: "737"
 ---

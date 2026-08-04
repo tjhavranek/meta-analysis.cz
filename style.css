@@ -620,9 +620,11 @@ table.catalogue li{ margin-bottom:var(--s2); font-size:var(--f-1); line-height:1
    from unvisited without dropping below AA. */
 a:visited{ color:var(--accent-dark); }
 
-/* Figures carried no width/height and the stylesheet had no aspect-ratio
-   fallback, so every one of them shifted the layout as it loaded. */
-.entry figure img{ aspect-ratio:attr(width) / attr(height); }
+/* Figures carried no width/height, so nothing reserved their box and every one of them
+   shifted the layout as it loaded. The fix is the intrinsic width/height attributes now
+   on each <img>: with height:auto the browser derives the ratio from them itself. This
+   rule only guarantees the scaling that makes that work. */
+.entry figure img{ max-width:100%; height:auto; }
 
 /* The datasets catalogue's summary line used to be a <caption>, i.e. inside the table and
    therefore inside .table-scroll, so at 390px it was clipped mid-sentence instead of

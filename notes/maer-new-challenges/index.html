@@ -1,0 +1,203 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+<title>New Challenges for Meta-Analysis: Attenuation Bias, P-Hacking, Preferred Estimates</title>
+<meta name="keywords" content="attenuation bias, p-hacking, preferred estimates, MAIVE, publication bias" />
+<meta name="description" content="Our recent meta-analyses highlight three issues for the field: attenuation bias can rival publication bias in distorting results; new methods like MAIVE address p-hacking more effectively; and author preferred estimates may systematically differ from others." />
+<link href="/style.css" rel="stylesheet" type="text/css" />
+<link rel="alternate" type="application/rss+xml" title="Research notes" href="https://meta-analysis.cz/notes/feed.xml" />
+
+<!-- seo-meta:start -->
+<link rel="canonical" href="https://meta-analysis.cz/notes/maer-new-challenges/" />
+<meta name="author" content="Tomas Havranek" />
+<meta property="article:published_time" content="2025-07-07" />
+<meta property="article:modified_time" content="2025-07-07" />
+<meta property="og:site_name" content="meta-analysis.cz" />
+<meta property="og:type" content="article" />
+<meta property="og:title" content="New Challenges for Meta-Analysis: Attenuation Bias, P-Hacking, Preferred Estimates" />
+<meta property="og:description" content="Our recent meta-analyses highlight three issues for the field: attenuation bias can rival publication bias in distorting results; new methods like MAIVE address p-hacking more effectively; and author preferred estimates may systematically differ from others." />
+<meta property="og:url" content="https://meta-analysis.cz/notes/maer-new-challenges/" />
+<script type="application/ld+json">
+{
+ "@context": "https://schema.org",
+ "@graph": [
+  {
+   "@type": "BlogPosting",
+   "@id": "https://meta-analysis.cz/notes/maer-new-challenges/#note",
+   "mainEntityOfPage": "https://meta-analysis.cz/notes/maer-new-challenges/",
+   "url": "https://meta-analysis.cz/notes/maer-new-challenges/",
+   "headline": "New Challenges for Meta-Analysis: Attenuation Bias, P-Hacking, Preferred Estimates",
+   "name": "New Challenges for Meta-Analysis: Attenuation Bias, P-Hacking, Preferred Estimates",
+   "abstract": "Our recent meta-analyses highlight three issues for the field: attenuation bias can rival publication bias in distorting results; new methods like MAIVE address p-hacking more effectively; and author preferred estimates may systematically differ from others.",
+   "description": "Our recent meta-analyses highlight three issues for the field: attenuation bias can rival publication bias in distorting results; new methods like MAIVE address p-hacking more effectively; and author preferred estimates may systematically differ from others.",
+   "inLanguage": "en",
+   "datePublished": "2025-07-07",
+   "dateModified": "2025-07-07",
+   "keywords": "attenuation bias, p-hacking, preferred estimates, MAIVE, publication bias",
+   "author": [
+    {
+     "@type": "Person",
+     "name": "Tomas Havranek",
+     "sameAs": "https://orcid.org/0000-0002-3158-2539"
+    }
+   ],
+   "publisher": {
+    "@type": "Organization",
+    "name": "meta-analysis.cz",
+    "url": "https://meta-analysis.cz"
+   },
+   "isPartOf": {
+    "@type": "Blog",
+    "@id": "https://meta-analysis.cz/notes/#blog",
+    "name": "Research notes"
+   },
+   "license": "https://creativecommons.org/licenses/by/4.0/",
+   "isAccessibleForFree": true,
+   "about": [
+    {
+     "@type": "Thing",
+     "name": "meta-analysis methods"
+    },
+    {
+     "@type": "Thing",
+     "name": "publication bias"
+    }
+   ],
+   "sameAs": [
+    "https://www.maer-net.org/post/new-challenges-for-meta-analysis-attenuation-bias-p-hacking-preferred-estimates"
+   ]
+  }
+ ]
+}
+</script>
+<!-- seo-meta:end -->
+</head>
+<body>
+<div id="wrapper">
+<div id="logo">
+	<a class="masthead-home" href="/">meta-analysis.cz</a>
+	<p class="site-name"><a href="/notes/">Research notes</a></p>
+	<h2> <span class="mk">&raquo;</span>&nbsp;&nbsp;&nbsp; methods, tools, and findings</h2>
+</div>
+<div id="header">
+	<div id="menu">
+		<ul>
+			<li class="current_page_item"><a href="/notes/">Notes</a></li>
+			<li><a href="/">Data &amp; code</a></li>
+			<li><a href="/datasets/">Datasets</a></li>
+			<li><a href="/guidelines">Guidelines</a></li>
+			<li><a href="https://meta-analysis.cz/notes/feed.xml">RSS</a></li>
+		</ul>
+	</div>
+</div>
+</div>
+<div id="page">
+	<div id="content">
+		<div class="post">
+			<h1 class="title">New Challenges for Meta-Analysis: Attenuation Bias, P-Hacking, Preferred Estimates</h1>
+			<p class="byline">7 July 2025 &nbsp;&middot;&nbsp; Tomas Havranek &nbsp;&middot;&nbsp; meta-analysis methods / publication bias</p>
+			<div class="entry">
+<p class="byline">First published on <a href="https://www.maer-net.org/post/new-challenges-for-meta-analysis-attenuation-bias-p-hacking-preferred-estimates" rel="external">MAER-Net</a>, 7 July 2025. Archived with the rest of our writing at <a href="https://meta-analysis.cz/komentare/maer-new-challenges/">/komentare/maer-new-challenges/</a>.</p>
+
+<p>
+My colleagues and I have recently published or revised three meta-analyses, each raising issues that may matter for how we do meta-analysis in economics. I’d be grateful for thoughts or feedback -- here, by e-mail, or in person at our colloquium in Ottawa.
+</p>
+
+<p>
+<b>1. Attenuation bias (</b><a href="https://meta-analysis.cz/skill/"><b>Review of Economics and Statistics, 2024</b></a><b>)</b>
+</p>
+
+<p>
+Attenuation bias, aka regression dilution, arises when explanatory variables are measured with (classical random) error, biasing regression coefficients toward zero. We show that attenuation bias can be quantitatively important in estimating the elasticity of substitution between skilled and unskilled labor, although publication bias is still the bigger problem. We’re now working on comparing the two biases more broadly across meta-analyses in economics. Is it possible that on average, the two wrongs make a right? On a technical note, we also argue it’s risky to meta-analyze inverted regression coefficients -- especially common when elasticities are estimated primarily in their inverse form. Working with these transformed estimates can violate key meta-analysis assumptions. We should meta-analyze the originally reported regression coefficients.
+</p>
+
+<p>
+<b>2. P-hacking (</b><a href="https://meta-analysis.cz/incentives/"><b>JPE Microeconomics, revised &amp; resubmitted</b></a><b>)</b>
+</p>
+
+<p>
+Publication bias and p-hacking are commonly treated as the same problem, and in many settings, this is defensible: both are often observationally equivalent and create a correlation between effect sizes and standard errors. But the distinction can matter for methods. Selection models don’t handle p-hacking, while meta-regression (such as PET-PEESE) is robust to some forms. In this paper on the effect of financial incentives on performance we apply MAIVE, a new extension of PET-PEESE <a href="https://meta-analysis.cz/maive/">forthcoming in Nature Communications</a> robust to more p-hacking strategies that work on precision (such as clustering choices or changing controls) as well as omitted-variable bias in meta-regression. Our results, in the Nature C and JPE Micro papers, suggest a need for more attention to the mechanisms behind selective reporting and for broader adoption of estimators robust to p-hacking, not just MAIVE but also RTMA developed by Maya Mathur.
+</p>
+
+<p>
+<b>3. Preferred estimates (</b><a href="https://meta-analysis.cz/class/"><b>Journal of Labor Economics, forthcoming</b></a><b>)</b>
+</p>
+
+<p>
+Most economics meta-analyses collect all reported estimates -- a good default. But some estimates are clearly marked by the original authors as less or more trustworthy. The entire point of some papers is that a particular estimation strategy is wrong. In our class size meta-analysis, we classified estimates as “preferred,” “neutral,” or “discounted” according to how study authors described them. Preferred estimates were systematically larger, and this could not be explained by method choices or publication bias (based on tests we didn’t include in the final version of the paper because they were not relevant for JOLE readership though the finding could be relevant for MAER-Net). Takeaway: It’s worth coding which results are preferred in primary studies, as these author judgments may capture information that’s otherwise hard to quantify.
+</p>
+
+<p>
+Comments, questions, or counterexamples are welcome!
+</p>
+
+<p>
+<i>Links to papers and methods are at </i><a href="http://meta-analysis.cz/"><i>meta-analysis.cz</i></a><i>.</i>
+</p>
+			</div>
+			<div class="meta">
+				<p class="links"><a href="/notes/" class="more">All notes</a> &nbsp;&middot;&nbsp; <a href="/" class="more">More meta from Prague</a></p>
+			</div>
+		</div>
+	</div>
+<div id="sidebar">
+<ul>
+  <li id="search">
+    <h2>Search</h2>
+    <form method="get" action="https://www.google.com/search">
+      <fieldset>
+        <input type="text" id="s" name="q" value="" title="Search meta-analysis.cz" />
+        <input type="hidden" name="as_sitesearch" value="meta-analysis.cz" />
+        <input type="submit" id="x" value="Search" />
+      </fieldset>
+    </form>
+  </li>
+<li>
+<h2>Also posted on</h2>
+<ul>
+<li><a href="https://www.maer-net.org/post/new-challenges-for-meta-analysis-attenuation-bias-p-hacking-preferred-estimates" rel="syndication">MAER-Net</a></li>
+</ul>
+</li>
+<li>
+<h2>Links</h2>
+<ul>
+<li><a href="/">Data &amp; code by topic</a></li>
+<li><a href="/guidelines">A practitioner&#x27;s guide</a></li>
+<li><a href="/maive">MAIVE</a></li>
+<li><a href="https://www.irsova.com/">Zuzana Irsova</a></li>
+<li><a href="https://ideas.repec.org/k/metaana.html">Meta-Analysis on RePEc</a></li>
+<li><a href="https://www.maer-net.org/">MAER-Net</a></li>
+<li><a href="/notes/feed.xml">RSS feed</a></li>
+</ul>
+</li>
+</ul>
+</div>
+	<div style="clear: both;">&nbsp;</div>
+</div>
+
+<footer class="site-foot">
+<p class="foot-lede"><b>meta-analysis.cz</b> collects meta-analyses in economics: the papers, the
+data behind them, and the code that produced them. It is maintained by <b>Tomáš Havránek</b> and
+<b>Zuzana Iršová</b> at the Institute of Economic Studies, Charles University, Prague.</p>
+<p class="foot-who"><b>Tomáš Havránek</b> &middot; <a href="https://www.tomashavranek.cz/">tomashavranek.cz</a> &middot; <a href="https://ies.fsv.cuni.cz/contacts/institute-members/78067720">IES FSV UK</a> &middot; <a href="https://orcid.org/0000-0002-3158-2539">ORCID</a> &middot; <a href="https://scholar.google.com/citations?user=BF0BvBkAAAAJ">Google Scholar</a> &middot; <a href="https://ideas.repec.org/f/pha418.html">RePEc</a> &middot; <a href="https://www.scopus.com/authid/detail.uri?authorId=24453189000">Scopus</a> &middot; <a href="https://cepr.org/about/people/tomas-havranek">CEPR</a> &middot; <a href="https://metrics.stanford.edu/people/tomas-havranek">Stanford METRICS</a></p>
+<p class="foot-who"><b>Zuzana Iršová</b> &middot; <a href="https://www.irsova.com/">irsova.com</a> &middot; <a href="https://ies.fsv.cuni.cz/contacts/institute-members/73504033">IES FSV UK</a> &middot; <a href="https://orcid.org/0000-0002-0753-8124">ORCID</a> &middot; <a href="https://scholar.google.com/citations?user=LaHrICUAAAAJ">Google Scholar</a> &middot; <a href="https://ideas.repec.org/e/pir23.html">RePEc</a> &middot; <a href="https://www.scopus.com/authid/detail.uri?authorId=37080793200">Scopus</a> &middot; <a href="https://cepr.org/about/people/zuzana-irsova">CEPR</a> &middot; <a href="https://metrics.stanford.edu/people/zuzana-irsova">Stanford METRICS</a></p>
+<p class="foot-cite"><b>How to cite this collection:</b> Havranek, T. and Z. Irsova (2026).
+meta-analysis.cz: harmonised estimate-level data from meta-analyses in economics. Zenodo.
+<a href="https://doi.org/10.5281/zenodo.21773678">https://doi.org/10.5281/zenodo.21773678</a>.
+Individual papers carry their own citation on their own page.</p>
+<p class="foot-licence"><b>Licence: CC BY 4.0.</b> Everything on this site is licensed under the
+<a href="https://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0
+International Licence</a>. That covers the papers, the datasets, their CSV and Parquet conversions,
+the pooled table, the codebooks and the documentation. You may copy, redistribute, adapt and reuse
+any of it for any purpose, including commercial use and training machine-learning models, as long
+as you give attribution to meta-analysis.cz. You do not need to ask.</p>
+<p class="foot-machine">For machines: <a href="/api/v1/datasets.json">datasets.json</a> &middot;
+<a href="/api/v1/datapackage.json">datapackage.json</a> &middot;
+<a href="/api/v1/croissant.json">croissant.json</a> &middot;
+<a href="/llms.txt">llms.txt</a> &middot; <a href="/llms-full.txt">llms-full.txt</a> &middot;
+<a href="/sitemap.xml">sitemap.xml</a> &middot; <a href="/LICENSE">LICENSE</a></p>
+</footer>
+</body>
+</html>

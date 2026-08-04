@@ -6,7 +6,7 @@ Tento soubor obsahuje text všech textových položek (193 z celkem 211), u napr
 
 ---
 
-## Two new pre-registered papers: outlier decisions in meta-analysis and AI feedback on meta
+## Two new pre-registered papers: outlier decisions in meta-analysis and AI feedback on meta-analyses
 
 *MAER-Net, 27. července 2026. Tomáš Havránek.*
 

@@ -5,6 +5,7 @@ outlet: "MAER-Net"
 url: "https://www.maer-net.org/post/stress-testing-research-with-ai-now-super-easy-and-fully-automated"
 date: "2026-05-31"
 headline: "Stress-testing research with AI, now super easy and fully automated"
+mirror: "maer-stress-testing"
 byline: "Tomáš Havránek"
 word_count: "183"
 ---

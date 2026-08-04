@@ -1,0 +1,209 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+<title>Stress-Testing Meta-Research with AI Duels</title>
+<meta name="keywords" content="research audit protocol, multi-agent debate, MAIVE, WAIVE, meta-analysis" />
+<meta name="description" content="The Research Audit Protocol coordinates ChatGPT and Gemini in a structured, human-in-the-loop duel of anchor assessment, adversarial probing, and synthesis, illustrated with a case study auditing the proposed WAIVE idea against the MAIVE framework." />
+<link href="/style.css" rel="stylesheet" type="text/css" />
+<link rel="alternate" type="application/rss+xml" title="Research notes" href="https://meta-analysis.cz/notes/feed.xml" />
+
+<!-- seo-meta:start -->
+<link rel="canonical" href="https://meta-analysis.cz/notes/maer-ai-duels/" />
+<meta name="author" content="Zuzana Irsova" />
+<meta property="article:published_time" content="2025-12-12" />
+<meta property="article:modified_time" content="2025-12-12" />
+<meta property="og:site_name" content="meta-analysis.cz" />
+<meta property="og:type" content="article" />
+<meta property="og:title" content="Stress-Testing Meta-Research with AI Duels" />
+<meta property="og:description" content="The Research Audit Protocol coordinates ChatGPT and Gemini in a structured, human-in-the-loop duel of anchor assessment, adversarial probing, and synthesis, illustrated with a case study auditing the proposed WAIVE idea against the MAIVE framework." />
+<meta property="og:url" content="https://meta-analysis.cz/notes/maer-ai-duels/" />
+<script type="application/ld+json">
+{
+ "@context": "https://schema.org",
+ "@graph": [
+  {
+   "@type": "BlogPosting",
+   "@id": "https://meta-analysis.cz/notes/maer-ai-duels/#note",
+   "mainEntityOfPage": "https://meta-analysis.cz/notes/maer-ai-duels/",
+   "url": "https://meta-analysis.cz/notes/maer-ai-duels/",
+   "headline": "Stress-Testing Meta-Research with AI Duels",
+   "name": "Stress-Testing Meta-Research with AI Duels",
+   "abstract": "The Research Audit Protocol coordinates ChatGPT and Gemini in a structured, human-in-the-loop duel of anchor assessment, adversarial probing, and synthesis, illustrated with a case study auditing the proposed WAIVE idea against the MAIVE framework.",
+   "description": "The Research Audit Protocol coordinates ChatGPT and Gemini in a structured, human-in-the-loop duel of anchor assessment, adversarial probing, and synthesis, illustrated with a case study auditing the proposed WAIVE idea against the MAIVE framework.",
+   "inLanguage": "en",
+   "datePublished": "2025-12-12",
+   "dateModified": "2025-12-12",
+   "keywords": "research audit protocol, multi-agent debate, MAIVE, WAIVE, meta-analysis",
+   "author": [
+    {
+     "@type": "Person",
+     "name": "Zuzana Irsova",
+     "sameAs": "https://orcid.org/0000-0002-0753-8124"
+    },
+    {
+     "@type": "Person",
+     "name": "Tomas Havranek",
+     "sameAs": "https://orcid.org/0000-0002-3158-2539"
+    }
+   ],
+   "publisher": {
+    "@type": "Organization",
+    "name": "meta-analysis.cz",
+    "url": "https://meta-analysis.cz"
+   },
+   "isPartOf": {
+    "@type": "Blog",
+    "@id": "https://meta-analysis.cz/notes/#blog",
+    "name": "Research notes"
+   },
+   "license": "https://creativecommons.org/licenses/by/4.0/",
+   "isAccessibleForFree": true,
+   "about": [
+    {
+     "@type": "Thing",
+     "name": "AI and research"
+    },
+    {
+     "@type": "Thing",
+     "name": "meta-analysis methods"
+    }
+   ],
+   "sameAs": [
+    "https://www.maer-net.org/post/ai_duel"
+   ]
+  }
+ ]
+}
+</script>
+<!-- seo-meta:end -->
+</head>
+<body>
+<div id="wrapper">
+<div id="logo">
+	<a class="masthead-home" href="/">meta-analysis.cz</a>
+	<p class="site-name"><a href="/notes/">Research notes</a></p>
+	<h2> <span class="mk">&raquo;</span>&nbsp;&nbsp;&nbsp; methods, tools, and findings</h2>
+</div>
+<div id="header">
+	<div id="menu">
+		<ul>
+			<li class="current_page_item"><a href="/notes/">Notes</a></li>
+			<li><a href="/">Data &amp; code</a></li>
+			<li><a href="/datasets/">Datasets</a></li>
+			<li><a href="/guidelines">Guidelines</a></li>
+			<li><a href="https://meta-analysis.cz/notes/feed.xml">RSS</a></li>
+		</ul>
+	</div>
+</div>
+</div>
+<div id="page">
+	<div id="content">
+		<div class="post">
+			<h1 class="title">Stress-Testing Meta-Research with AI Duels</h1>
+			<p class="byline">12 December 2025 &nbsp;&middot;&nbsp; Zuzana Irsova, Tomas Havranek &nbsp;&middot;&nbsp; AI and research / meta-analysis methods</p>
+			<div class="entry">
+<p class="byline">First published on <a href="https://www.maer-net.org/post/ai_duel" rel="external">MAER-Net</a>, 12 December 2025. Archived with the rest of our writing at <a href="https://meta-analysis.cz/komentare/maer-ai-duels/">/komentare/maer-ai-duels/</a>.</p>
+
+<p>
+Many of us now use large language models for meta-analysis tasks like coding, short summaries, or quick checks. Where they become genuinely valuable for research, though, is not in producing a single clean answer. It is in creating <b>structured disagreement</b>: two models pushing on each other’s reasoning, with a researcher steering the process.
+</p>
+
+<p>
+That is the idea behind the <a href="https://github.com/tjhavranek/research-audit-duel-protocol"><b>Research Audit Protocol (v1.7)</b></a>. It is a structured, human-in-the-loop workflow that coordinates ChatGPT and Gemini in a deliberate “duel.” The goal is not AI approval. The goal is to generate the kinds of counterexamples, boundary conditions, and missing assumptions that a single model (and often a single human pass) would not surface. (Of course, advanced users can substitute Claude for the auditor role, or run the same workflow via an API-based multi-agent setup.)
+</p>
+
+<p>
+<b>Why duels work</b> A normal chat is optimized for flow. A duel is optimized for scrutiny:
+</p>
+
+<ul>
+<li><b>Anchor (ChatGPT):</b> Start with a full, file-grounded assessment before seeing any critique.</li>
+<li><b>Duel (Gemini):</b> Probe hard for identification problems, hidden assumptions, and failure modes—and force specificity.</li>
+<li><b>Synthesis (You + ChatGPT):</b> Map the disagreement (or convergence) and record what changed and why, so the final view is auditable.</li>
+</ul>
+
+<p>
+<b>A MAER-Net Case Study: </b><a href="https://github.com/tjhavranek/research-audit-duel-protocol/tree/main/examples"><b>WAIVE vs. MAIVE</b></a> As a proof of concept for meta-method work, we applied the protocol to an audit of the proposed <b>WAIVE</b> idea against the <b>MAIVE</b> framework. The duel did not just restate the two approaches. It forced us to pin down the key tension that matters for applied meta-analysis: when does downweighting “suspiciously precise” results reduce spurious precision, and when might it also penalize genuinely informative studies?
+</p>
+
+<p>
+In other words, it pushed us to state the boundary conditions clearly—the kind of slow thinking that improves methods before they hit peer review.
+</p>
+
+<p>
+<b>Resources</b>
+</p>
+
+<ul>
+<li><b>Protocol (v1.7):</b> <a href="https://github.com/tjhavranek/research-audit-duel-protocol">GitHub Repository</a></li>
+<li><b>Worked Example (WAIVE/MAIVE):</b> <a href="https://github.com/tjhavranek/research-audit-duel-protocol/tree/main/examples">Examples Folder</a></li>
+<li><b>Permanent DOI:</b> <a href="https://doi.org/10.5281/zenodo.17898869">Zenodo</a></li>
+<li><b>MAIVE Code:</b> <a href="https://cran.r-project.org/package=MAIVE">CRAN</a> | <a href="https://easymeta.org/">EasyMeta.org</a></li>
+</ul>
+			</div>
+			<div class="meta">
+				<p class="links"><a href="/notes/" class="more">All notes</a> &nbsp;&middot;&nbsp; <a href="/" class="more">More meta from Prague</a></p>
+			</div>
+		</div>
+	</div>
+<div id="sidebar">
+<ul>
+  <li id="search">
+    <h2>Search</h2>
+    <form method="get" action="https://www.google.com/search">
+      <fieldset>
+        <input type="text" id="s" name="q" value="" title="Search meta-analysis.cz" />
+        <input type="hidden" name="as_sitesearch" value="meta-analysis.cz" />
+        <input type="submit" id="x" value="Search" />
+      </fieldset>
+    </form>
+  </li>
+<li>
+<h2>Also posted on</h2>
+<ul>
+<li><a href="https://www.maer-net.org/post/ai_duel" rel="syndication">MAER-Net</a></li>
+</ul>
+</li>
+<li>
+<h2>Links</h2>
+<ul>
+<li><a href="/">Data &amp; code by topic</a></li>
+<li><a href="/guidelines">A practitioner&#x27;s guide</a></li>
+<li><a href="/maive">MAIVE</a></li>
+<li><a href="https://www.irsova.com/">Zuzana Irsova</a></li>
+<li><a href="https://ideas.repec.org/k/metaana.html">Meta-Analysis on RePEc</a></li>
+<li><a href="https://www.maer-net.org/">MAER-Net</a></li>
+<li><a href="/notes/feed.xml">RSS feed</a></li>
+</ul>
+</li>
+</ul>
+</div>
+	<div style="clear: both;">&nbsp;</div>
+</div>
+
+<footer class="site-foot">
+<p class="foot-lede"><b>meta-analysis.cz</b> collects meta-analyses in economics: the papers, the
+data behind them, and the code that produced them. It is maintained by <b>Tomáš Havránek</b> and
+<b>Zuzana Iršová</b> at the Institute of Economic Studies, Charles University, Prague.</p>
+<p class="foot-who"><b>Tomáš Havránek</b> &middot; <a href="https://www.tomashavranek.cz/">tomashavranek.cz</a> &middot; <a href="https://ies.fsv.cuni.cz/contacts/institute-members/78067720">IES FSV UK</a> &middot; <a href="https://orcid.org/0000-0002-3158-2539">ORCID</a> &middot; <a href="https://scholar.google.com/citations?user=BF0BvBkAAAAJ">Google Scholar</a> &middot; <a href="https://ideas.repec.org/f/pha418.html">RePEc</a> &middot; <a href="https://www.scopus.com/authid/detail.uri?authorId=24453189000">Scopus</a> &middot; <a href="https://cepr.org/about/people/tomas-havranek">CEPR</a> &middot; <a href="https://metrics.stanford.edu/people/tomas-havranek">Stanford METRICS</a></p>
+<p class="foot-who"><b>Zuzana Iršová</b> &middot; <a href="https://www.irsova.com/">irsova.com</a> &middot; <a href="https://ies.fsv.cuni.cz/contacts/institute-members/73504033">IES FSV UK</a> &middot; <a href="https://orcid.org/0000-0002-0753-8124">ORCID</a> &middot; <a href="https://scholar.google.com/citations?user=LaHrICUAAAAJ">Google Scholar</a> &middot; <a href="https://ideas.repec.org/e/pir23.html">RePEc</a> &middot; <a href="https://www.scopus.com/authid/detail.uri?authorId=37080793200">Scopus</a> &middot; <a href="https://cepr.org/about/people/zuzana-irsova">CEPR</a> &middot; <a href="https://metrics.stanford.edu/people/zuzana-irsova">Stanford METRICS</a></p>
+<p class="foot-cite"><b>How to cite this collection:</b> Havranek, T. and Z. Irsova (2026).
+meta-analysis.cz: harmonised estimate-level data from meta-analyses in economics. Zenodo.
+<a href="https://doi.org/10.5281/zenodo.21773678">https://doi.org/10.5281/zenodo.21773678</a>.
+Individual papers carry their own citation on their own page.</p>
+<p class="foot-licence"><b>Licence: CC BY 4.0.</b> Everything on this site is licensed under the
+<a href="https://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0
+International Licence</a>. That covers the papers, the datasets, their CSV and Parquet conversions,
+the pooled table, the codebooks and the documentation. You may copy, redistribute, adapt and reuse
+any of it for any purpose, including commercial use and training machine-learning models, as long
+as you give attribution to meta-analysis.cz. You do not need to ask.</p>
+<p class="foot-machine">For machines: <a href="/api/v1/datasets.json">datasets.json</a> &middot;
+<a href="/api/v1/datapackage.json">datapackage.json</a> &middot;
+<a href="/api/v1/croissant.json">croissant.json</a> &middot;
+<a href="/llms.txt">llms.txt</a> &middot; <a href="/llms-full.txt">llms-full.txt</a> &middot;
+<a href="/sitemap.xml">sitemap.xml</a> &middot; <a href="/LICENSE">LICENSE</a></p>
+</footer>
+</body>
+</html>

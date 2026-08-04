@@ -1,0 +1,207 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+<title>AI Tools for Meta-Analysis</title>
+<meta name="keywords" content="AI tools, literature search, data collection, meta-analysis, ChatGPT" />
+<meta name="description" content="A practical rundown of how ChatGPT&#x27;s deep research, o3, and Agent modes speed up literature search and data collection for meta-analysis, with the reminder that competent humans still need to check every AI-assisted extraction." />
+<link href="/style.css" rel="stylesheet" type="text/css" />
+<link rel="alternate" type="application/rss+xml" title="Research notes" href="https://meta-analysis.cz/notes/feed.xml" />
+
+<!-- seo-meta:start -->
+<link rel="canonical" href="https://meta-analysis.cz/notes/maer-ai-tools/" />
+<meta name="author" content="Tomas Havranek" />
+<meta property="article:published_time" content="2025-07-30" />
+<meta property="article:modified_time" content="2025-07-30" />
+<meta property="og:site_name" content="meta-analysis.cz" />
+<meta property="og:type" content="article" />
+<meta property="og:title" content="AI Tools for Meta-Analysis" />
+<meta property="og:description" content="A practical rundown of how ChatGPT&#x27;s deep research, o3, and Agent modes speed up literature search and data collection for meta-analysis, with the reminder that competent humans still need to check every AI-assisted extraction." />
+<meta property="og:url" content="https://meta-analysis.cz/notes/maer-ai-tools/" />
+<script type="application/ld+json">
+{
+ "@context": "https://schema.org",
+ "@graph": [
+  {
+   "@type": "BlogPosting",
+   "@id": "https://meta-analysis.cz/notes/maer-ai-tools/#note",
+   "mainEntityOfPage": "https://meta-analysis.cz/notes/maer-ai-tools/",
+   "url": "https://meta-analysis.cz/notes/maer-ai-tools/",
+   "headline": "AI Tools for Meta-Analysis",
+   "name": "AI Tools for Meta-Analysis",
+   "abstract": "A practical rundown of how ChatGPT's deep research, o3, and Agent modes speed up literature search and data collection for meta-analysis, with the reminder that competent humans still need to check every AI-assisted extraction.",
+   "description": "A practical rundown of how ChatGPT's deep research, o3, and Agent modes speed up literature search and data collection for meta-analysis, with the reminder that competent humans still need to check every AI-assisted extraction.",
+   "inLanguage": "en",
+   "datePublished": "2025-07-30",
+   "dateModified": "2025-07-30",
+   "keywords": "AI tools, literature search, data collection, meta-analysis, ChatGPT",
+   "author": [
+    {
+     "@type": "Person",
+     "name": "Tomas Havranek",
+     "sameAs": "https://orcid.org/0000-0002-3158-2539"
+    }
+   ],
+   "publisher": {
+    "@type": "Organization",
+    "name": "meta-analysis.cz",
+    "url": "https://meta-analysis.cz"
+   },
+   "isPartOf": {
+    "@type": "Blog",
+    "@id": "https://meta-analysis.cz/notes/#blog",
+    "name": "Research notes"
+   },
+   "license": "https://creativecommons.org/licenses/by/4.0/",
+   "isAccessibleForFree": true,
+   "about": [
+    {
+     "@type": "Thing",
+     "name": "AI and research"
+    },
+    {
+     "@type": "Thing",
+     "name": "meta-analysis methods"
+    }
+   ],
+   "sameAs": [
+    "https://www.maer-net.org/post/ai-tools-for-meta-analysis"
+   ]
+  }
+ ]
+}
+</script>
+<!-- seo-meta:end -->
+</head>
+<body>
+<div id="wrapper">
+<div id="logo">
+	<a class="masthead-home" href="/">meta-analysis.cz</a>
+	<p class="site-name"><a href="/notes/">Research notes</a></p>
+	<h2> <span class="mk">&raquo;</span>&nbsp;&nbsp;&nbsp; methods, tools, and findings</h2>
+</div>
+<div id="header">
+	<div id="menu">
+		<ul>
+			<li class="current_page_item"><a href="/notes/">Notes</a></li>
+			<li><a href="/">Data &amp; code</a></li>
+			<li><a href="/datasets/">Datasets</a></li>
+			<li><a href="/guidelines">Guidelines</a></li>
+			<li><a href="https://meta-analysis.cz/notes/feed.xml">RSS</a></li>
+		</ul>
+	</div>
+</div>
+</div>
+<div id="page">
+	<div id="content">
+		<div class="post">
+			<h1 class="title">AI Tools for Meta-Analysis</h1>
+			<p class="byline">30 July 2025 &nbsp;&middot;&nbsp; Tomas Havranek &nbsp;&middot;&nbsp; AI and research / meta-analysis methods</p>
+			<div class="entry">
+<p class="byline">First published on <a href="https://www.maer-net.org/post/ai-tools-for-meta-analysis" rel="external">MAER-Net</a>, 30 July 2025. Archived with the rest of our writing at <a href="https://meta-analysis.cz/komentare/maer-ai-tools/">/komentare/maer-ai-tools/</a>.</p>
+
+<p>
+I believe we’ve finally reached the point where AI tools can genuinely save a lot of time in meta-analysis during literature search and data collection. Below is a summary of what works well as of late July 2025. My experience is mostly with ChatGPT, so I’d be interested to hear what has worked for others. There must be better ways of doing this.
+</p>
+
+<h2>A) Literature search</h2>
+
+<ul>
+<li><b>Start with deep research. </b>The deep research function in ChatGPT helps you explore the literature before you begin the actual meta-analysis. It improves your understanding of the topic and also improves how useful ChatGPT replies become in later stages.</li>
+<li><b>Refine search strategy using o3. </b>Upload a few key papers and ask the o3 reasoning model to help you create a good Google Scholar query, also based on the deep research results. Go back and forth with it until the first page of results gives you mostly relevant studies.</li>
+<li><b>Use ChatGPT Agent to scan results. </b>The Agent can go through the first few hundred hits on Google Scholar and look at the abstracts. Ask it to flag papers that have at least a small chance of including the type of estimates you want. <i>Example prompt: You are an expert in meta-analysis. For each abstract and based on all information you can find about the paper, say whether the paper reports, with more than 20 percent probability, quantitative estimates on the effect of beauty on labor market outcomes. Justify briefly.</i></li>
+<li><b>Download flagged papers and filter again. </b>The Agent can download some PDFs but usually not those behind paywalls, so you’ll have to do that part. Upload them to ChatGPT in batches of five. Ask whether the papers include effect size estimates and where in the paper they are located (table numbers or page references). <i>Example prompt: For each of these papers, does it contain new empirical estimates of the effect of beauty on wages that I can use in a meta-analysis? Point to specific tables or pages.</i></li>
+<li><b>Cross-check with other tools. </b>Use ASReview or Semantic Scholar to double-check or supplement your results. ASReview is good if you want to train an active learning model on what counts as relevant in your case.</li>
+<li><b>Use snowballing to expand the dataset. </b>Ask the Agent to identify studies that are closely connected to those already in your list. For example, you can request the 100 most frequently cited papers <i>by</i> the studies in your dataset, or the 100 most recent papers that <i>cite</i> at least five of them. (The latter helps surface newer work that may be underrepresented in standard Google Scholar results due to low citation counts.) Then return to step 4 and screen these new candidates for relevance.</li>
+</ul>
+
+<h2>B) Data collection</h2>
+
+<ul>
+<li><b>Upload papers and identify coding dimensions. </b>Upload your included papers in small batches. Ask ChatGPT to identify the main ways in which the studies differ, both in terms of methodology and data. These differences typically become your coding dimensions (e.g. IV vs. RDD vs. DID, different professions examined, different time periods).</li>
+<li><b>Use o3 to review the coding structure. </b>Before you finalize the structure of your dataset, ask the o3 reasoning model to help you think through whether the coding dimensions you’ve selected make sense. Adjust if needed. Then fix the structure yourself. Keep all related chats in one project folder in ChatGPT.</li>
+<li><b>Train the Agent on a few coded papers. </b>Code five papers manually. Upload the PDFs and your data entries for three of them. Then ask ChatGPT Agent to extract the same information from the other two using GPT-4.1. Iterate your prompt until it works well, then continue in batches. <i>Example prompt: Here are three PDFs and the corresponding rows from my Excel sheet. Learn the structure. These data are collected well and I want you to collect data from other papers. I will now send two new PDFs. Extract estimates of the beauty premium and the corresponding standard error. Collect information on the estimation method used, the definition of the beauty variable, definition of the earnings variable.</i></li>
+<li><b>Use NotebookLM as a separate check. </b>Upload the same batch to NotebookLM. Let it try the same extraction task independently. Compare the two outputs. Manually resolve discrepancies and randomly spot-check the rest.</li>
+</ul>
+
+<p>
+As of July 2025, you still need competent humans to collect data for meta-analysis. All of the above should be complemented with your usual expertise. You have to check carefully what the AI returns. There’s still a risk of hallucinations, although with good prompting the risk is quite small. But where you needed four co-authors a year ago, now you probably need just two. And they can focus on more intellectually demanding tasks.
+</p>
+
+<p>
+Let me know if you’ve found better ways to do this. I’m especially curious about tools outside the OpenAI ecosystem. Some colleagues report success with Claude, which seems strong in reasoning, but I haven’t tested it systematically yet.
+</p>
+
+<p>
+<b>Update (July 31, 2025):</b> Several MAER-Net colleagues wrote to me about a promising new platform called <a href="https://ottosr.com/"><i>otto-SR</i></a>. It offers an end-to-end AI pipeline for systematic reviews, using tools like GPT-4.1 and o3 for screening and data extraction: essentially a polished, integrated version of the workflow I described above. It’s currently in preview only and not publicly available. While the <a href="https://www.medrxiv.org/content/10.1101/2025.06.13.25329541v2">early results</a> sound more than impressive, otto-SR has been designed and benchmarked mainly for Cochrane-style reviews, which differ quite a bit from meta-analyses in economics. Still, it’s worth watching closely.
+</p>
+
+<p>
+<b>Update (August 19, 2025):</b> ChatGPT now runs on GPT‑5. In the UI you pick Auto, Fast, or Thinking; I use GPT‑5 Thinking for screening and PDF extraction because it reasons longer and stays more consistent. Agent mode also feels steadier, but careful human checks are still essential. (If you work via API, OpenAI still documents separate “reasoning” models like o3, but that label isn’t shown in the ChatGPT menu.)
+</p>
+			</div>
+			<div class="meta">
+				<p class="links"><a href="/notes/" class="more">All notes</a> &nbsp;&middot;&nbsp; <a href="/" class="more">More meta from Prague</a></p>
+			</div>
+		</div>
+	</div>
+<div id="sidebar">
+<ul>
+  <li id="search">
+    <h2>Search</h2>
+    <form method="get" action="https://www.google.com/search">
+      <fieldset>
+        <input type="text" id="s" name="q" value="" title="Search meta-analysis.cz" />
+        <input type="hidden" name="as_sitesearch" value="meta-analysis.cz" />
+        <input type="submit" id="x" value="Search" />
+      </fieldset>
+    </form>
+  </li>
+<li>
+<h2>Also posted on</h2>
+<ul>
+<li><a href="https://www.maer-net.org/post/ai-tools-for-meta-analysis" rel="syndication">MAER-Net</a></li>
+</ul>
+</li>
+<li>
+<h2>Links</h2>
+<ul>
+<li><a href="/">Data &amp; code by topic</a></li>
+<li><a href="/guidelines">A practitioner&#x27;s guide</a></li>
+<li><a href="/maive">MAIVE</a></li>
+<li><a href="https://www.irsova.com/">Zuzana Irsova</a></li>
+<li><a href="https://ideas.repec.org/k/metaana.html">Meta-Analysis on RePEc</a></li>
+<li><a href="https://www.maer-net.org/">MAER-Net</a></li>
+<li><a href="/notes/feed.xml">RSS feed</a></li>
+</ul>
+</li>
+</ul>
+</div>
+	<div style="clear: both;">&nbsp;</div>
+</div>
+
+<footer class="site-foot">
+<p class="foot-lede"><b>meta-analysis.cz</b> collects meta-analyses in economics: the papers, the
+data behind them, and the code that produced them. It is maintained by <b>Tomáš Havránek</b> and
+<b>Zuzana Iršová</b> at the Institute of Economic Studies, Charles University, Prague.</p>
+<p class="foot-who"><b>Tomáš Havránek</b> &middot; <a href="https://www.tomashavranek.cz/">tomashavranek.cz</a> &middot; <a href="https://ies.fsv.cuni.cz/contacts/institute-members/78067720">IES FSV UK</a> &middot; <a href="https://orcid.org/0000-0002-3158-2539">ORCID</a> &middot; <a href="https://scholar.google.com/citations?user=BF0BvBkAAAAJ">Google Scholar</a> &middot; <a href="https://ideas.repec.org/f/pha418.html">RePEc</a> &middot; <a href="https://www.scopus.com/authid/detail.uri?authorId=24453189000">Scopus</a> &middot; <a href="https://cepr.org/about/people/tomas-havranek">CEPR</a> &middot; <a href="https://metrics.stanford.edu/people/tomas-havranek">Stanford METRICS</a></p>
+<p class="foot-who"><b>Zuzana Iršová</b> &middot; <a href="https://www.irsova.com/">irsova.com</a> &middot; <a href="https://ies.fsv.cuni.cz/contacts/institute-members/73504033">IES FSV UK</a> &middot; <a href="https://orcid.org/0000-0002-0753-8124">ORCID</a> &middot; <a href="https://scholar.google.com/citations?user=LaHrICUAAAAJ">Google Scholar</a> &middot; <a href="https://ideas.repec.org/e/pir23.html">RePEc</a> &middot; <a href="https://www.scopus.com/authid/detail.uri?authorId=37080793200">Scopus</a> &middot; <a href="https://cepr.org/about/people/zuzana-irsova">CEPR</a> &middot; <a href="https://metrics.stanford.edu/people/zuzana-irsova">Stanford METRICS</a></p>
+<p class="foot-cite"><b>How to cite this collection:</b> Havranek, T. and Z. Irsova (2026).
+meta-analysis.cz: harmonised estimate-level data from meta-analyses in economics. Zenodo.
+<a href="https://doi.org/10.5281/zenodo.21773678">https://doi.org/10.5281/zenodo.21773678</a>.
+Individual papers carry their own citation on their own page.</p>
+<p class="foot-licence"><b>Licence: CC BY 4.0.</b> Everything on this site is licensed under the
+<a href="https://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0
+International Licence</a>. That covers the papers, the datasets, their CSV and Parquet conversions,
+the pooled table, the codebooks and the documentation. You may copy, redistribute, adapt and reuse
+any of it for any purpose, including commercial use and training machine-learning models, as long
+as you give attribution to meta-analysis.cz. You do not need to ask.</p>
+<p class="foot-machine">For machines: <a href="/api/v1/datasets.json">datasets.json</a> &middot;
+<a href="/api/v1/datapackage.json">datapackage.json</a> &middot;
+<a href="/api/v1/croissant.json">croissant.json</a> &middot;
+<a href="/llms.txt">llms.txt</a> &middot; <a href="/llms-full.txt">llms-full.txt</a> &middot;
+<a href="/sitemap.xml">sitemap.xml</a> &middot; <a href="/LICENSE">LICENSE</a></p>
+</footer>
+</body>
+</html>

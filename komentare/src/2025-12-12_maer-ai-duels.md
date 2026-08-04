@@ -5,6 +5,7 @@ outlet: "MAER-Net"
 url: "https://www.maer-net.org/post/ai_duel"
 date: "2025-12-12"
 headline: "Stress-Testing Meta-Research with AI Duels"
+mirror: "maer-ai-duels"
 byline: "Zuzana Irsova, Tomáš Havránek"
 word_count: "316"
 ---

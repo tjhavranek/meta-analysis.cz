@@ -27,6 +27,9 @@ Frontmatter
     issue                  for Lilie, e.g. "2025/10"
     date_precision         "month" when only the issue month is known
     body_note              rendered as an editorial note above the text
+    mirror                 slug of a second copy at /notes/<slug>/ (English research
+                           writing is published in both places); points rel=canonical
+                           and og:url there. Maintained by redesign/sync_notes.py.
     written_by             who wrote a reported piece the author only speaks in
     written_by_type        "Person" when written_by names a journalist, not a newsroom
     audio_url              a broadcast/podcast version of a text interview; linked
@@ -391,7 +394,8 @@ def parse(path):
 
 # --------------------------------------------------------------- templates ---
 
-def shell(title, desc, canonical, jsonld, body, active, extra_head="", lang="cs"):
+def shell(title, desc, canonical, jsonld, body, active, extra_head="", lang="cs",
+          canonical_link=None):
     # The chrome is Czech on every page, including the English and Slovak ones. WCAG
     # 3.1.2 wants those runs marked, or a screen reader reads them with the wrong
     # phonetics. Any non-Czech page needs the marking, not just the English ones.
@@ -445,7 +449,7 @@ def shell(title, desc, canonical, jsonld, body, active, extra_head="", lang="cs"
 <title>{esc(title)}</title>
 <meta name="description" content="{esc(desc)}" />
 <link rel="stylesheet" href="{PATH}/style.css" />
-<link rel="canonical" href="{canonical}" />
+<link rel="canonical" href="{canonical_link or canonical}" />
 <link rel="alternate" type="application/rss+xml" title="{rss_title}" href="{PATH}/feed.xml" />
 <meta property="og:site_name" content="Komentáře — {SITE_AUTHORS}" />
 <meta property="og:locale" content="{"en_GB" if lang == "en" else "cs_CZ"}" />
@@ -633,6 +637,14 @@ def listing(items, show_cat):
 
 def write_item(a):
     canonical = f"{BASE}/{a['slug']}/"
+    # `mirror: "<slug>"` means this English text is ALSO published at /notes/<slug>/, the
+    # English research-facing surface. Both copies stay live -- this archive is deliberately
+    # complete -- but rel=canonical points at /notes/ so the two do not compete in search
+    # and an English research query lands in an English shell. Inbound links here keep
+    # working and pass their authority through. JSON-LD still identifies this page as
+    # itself; only the canonical and og:url move. Written by redesign/sync_notes.py.
+    mirror = a.get("mirror")
+    canonical_link = f"{SITE}/notes/{mirror}/" if mirror else None
     lang = a.get("lang") or SECTIONS[a["category"]]["lang"]
     names = people(a.get("byline"))
     is_iv = a["category"] == "rozhovory"
@@ -848,7 +860,7 @@ def write_item(a):
         tt += f' ({a["title_suffix"]})'
     page = shell(f'{tt} — {", ".join(names)}', desc, canonical,
                  {"@context": "https://schema.org", "@graph": [node]},
-                 body, a["category"], head, lang)
+                 body, a["category"], head, lang, canonical_link)
     d = KDIR / a["slug"]
     d.mkdir(exist_ok=True)
     (d / "index.html").write_text(page, encoding="utf-8")

@@ -5,6 +5,7 @@ outlet: "MAER-Net"
 url: "https://www.maer-net.org/post/methods-guidelines-for-meta-analysis"
 date: "2023-11-27"
 headline: "Methods Guidelines for Meta-Analysis"
+mirror: "maer-methods-guidelines"
 byline: "Zuzana Irsova"
 word_count: "925"
 ---

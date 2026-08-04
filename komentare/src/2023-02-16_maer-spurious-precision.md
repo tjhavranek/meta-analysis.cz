@@ -5,6 +5,7 @@ outlet: "MAER-Net"
 url: "https://www.maer-net.org/post/maive"
 date: "2023-02-16"
 headline: "Spurious Precision in Meta-Analysis"
+mirror: "maer-spurious-precision"
 byline: "Zuzana Irsova, Pedro R. D. Bom, Tomáš Havránek, Heiko Rachinger"
 word_count: "5306"
 ---

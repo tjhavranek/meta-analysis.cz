@@ -1,0 +1,193 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+<title>Meta-analysis should correct for p-hacking too</title>
+<meta name="keywords" content="p-hacking, MAIVE, RTMA, publication bias, meta-analysis" />
+<meta name="description" content="Corrections for publication bias assume individually unbiased estimates, an assumption p-hacking violates. The Nature Communications MAIVE paper shows that under some forms of p-hacking, classical publication-bias corrections can be more biased than a simple average." />
+<link href="/style.css" rel="stylesheet" type="text/css" />
+<link rel="alternate" type="application/rss+xml" title="Research notes" href="https://meta-analysis.cz/notes/feed.xml" />
+
+<!-- seo-meta:start -->
+<link rel="canonical" href="https://meta-analysis.cz/notes/correcting-for-p-hacking-too/" />
+<meta name="author" content="Zuzana Irsova" />
+<meta property="article:published_time" content="2026-03-09" />
+<meta property="article:modified_time" content="2026-03-09" />
+<meta property="og:site_name" content="meta-analysis.cz" />
+<meta property="og:type" content="article" />
+<meta property="og:title" content="Meta-analysis should correct for p-hacking too" />
+<meta property="og:description" content="Corrections for publication bias assume individually unbiased estimates, an assumption p-hacking violates. The Nature Communications MAIVE paper shows that under some forms of p-hacking, classical publication-bias corrections can be more biased than a simple average." />
+<meta property="og:url" content="https://meta-analysis.cz/notes/correcting-for-p-hacking-too/" />
+<script type="application/ld+json">
+{
+ "@context": "https://schema.org",
+ "@graph": [
+  {
+   "@type": "BlogPosting",
+   "@id": "https://meta-analysis.cz/notes/correcting-for-p-hacking-too/#note",
+   "mainEntityOfPage": "https://meta-analysis.cz/notes/correcting-for-p-hacking-too/",
+   "url": "https://meta-analysis.cz/notes/correcting-for-p-hacking-too/",
+   "headline": "Meta-analysis should correct for p-hacking too",
+   "name": "Meta-analysis should correct for p-hacking too",
+   "abstract": "Corrections for publication bias assume individually unbiased estimates, an assumption p-hacking violates. The Nature Communications MAIVE paper shows that under some forms of p-hacking, classical publication-bias corrections can be more biased than a simple average.",
+   "description": "Corrections for publication bias assume individually unbiased estimates, an assumption p-hacking violates. The Nature Communications MAIVE paper shows that under some forms of p-hacking, classical publication-bias corrections can be more biased than a simple average.",
+   "inLanguage": "en",
+   "datePublished": "2026-03-09",
+   "dateModified": "2026-03-09",
+   "keywords": "p-hacking, MAIVE, RTMA, publication bias, meta-analysis",
+   "author": [
+    {
+     "@type": "Person",
+     "name": "Zuzana Irsova",
+     "sameAs": "https://orcid.org/0000-0002-0753-8124"
+    }
+   ],
+   "publisher": {
+    "@type": "Organization",
+    "name": "meta-analysis.cz",
+    "url": "https://meta-analysis.cz"
+   },
+   "isPartOf": {
+    "@type": "Blog",
+    "@id": "https://meta-analysis.cz/notes/#blog",
+    "name": "Research notes"
+   },
+   "license": "https://creativecommons.org/licenses/by/4.0/",
+   "isAccessibleForFree": true,
+   "about": [
+    {
+     "@type": "Thing",
+     "name": "meta-analysis methods"
+    },
+    {
+     "@type": "Thing",
+     "name": "publication bias"
+    }
+   ],
+   "sameAs": [
+    "https://www.linkedin.com/feed/update/urn%3Ali%3Ashare%3A7436800791929151488"
+   ]
+  }
+ ]
+}
+</script>
+<!-- seo-meta:end -->
+</head>
+<body>
+<div id="wrapper">
+<div id="logo">
+	<a class="masthead-home" href="/">meta-analysis.cz</a>
+	<p class="site-name"><a href="/notes/">Research notes</a></p>
+	<h2> <span class="mk">&raquo;</span>&nbsp;&nbsp;&nbsp; methods, tools, and findings</h2>
+</div>
+<div id="header">
+	<div id="menu">
+		<ul>
+			<li class="current_page_item"><a href="/notes/">Notes</a></li>
+			<li><a href="/">Data &amp; code</a></li>
+			<li><a href="/datasets/">Datasets</a></li>
+			<li><a href="/guidelines">Guidelines</a></li>
+			<li><a href="https://meta-analysis.cz/notes/feed.xml">RSS</a></li>
+		</ul>
+	</div>
+</div>
+</div>
+<div id="page">
+	<div id="content">
+		<div class="post">
+			<h1 class="title">Meta-analysis should correct for p-hacking too</h1>
+			<p class="byline">9 March 2026 &nbsp;&middot;&nbsp; Zuzana Irsova &nbsp;&middot;&nbsp; meta-analysis methods / publication bias</p>
+			<div class="entry">
+<p class="byline">First published on <a href="https://www.linkedin.com/feed/update/urn%3Ali%3Ashare%3A7436800791929151488" rel="external">LinkedIn</a>, 9 March 2026. Archived with the rest of our writing at <a href="https://meta-analysis.cz/komentare/posts/2026-03-09-correcting-for-p-hacking-too/">/komentare/posts/2026-03-09-correcting-for-p-hacking-too/</a>.</p>
+
+<p>
+Meta-analyses should try to correct not just for publication bias, but also for p-hacking.
+</p>
+
+<p>
+Some estimates are more likely to be reported than others, so every good summary of research should correct for this publication bias. In case you're wondering — yes, this can be done, there are dozens of methods and decades of research on this. There is even a great way to put these different correction techniques together: see RoBMA by František Bartoš and colleagues.
+</p>
+
+<p>
+The problem is that these techniques assume that the reported estimates are individually unbiased. This is a strong assumption, as researchers can tweak models (consciously or unconsciously) to get more "sensible" results. This is called p-hacking. Most of us do it.
+</p>
+
+<p>
+In our recent Nature Communications paper we show that under some forms of p-hacking, classical models correcting for publication bias can actually be more biased than a simple average of published estimates.
+</p>
+
+<p>
+As far as I know, there are only two meta-analysis corrections for (some forms of) p-hacking: our MAIVE (from the Nature Comms paper) and RTMA by Maya Mathur. If you know of more, please let me know in the comments!
+</p>
+
+<p>
+If you want to see MAIVE and RTMA applied, take a look at our meta-analysis of the beauty premium. Spoiler: apart from the sex industry, beauty doesn't matter much in the labor market.
+</p>
+
+<figure><img src="https://meta-analysis.cz/komentare/social-img/2026-03-09_p16_1.jpeg" alt="Funnel plot of estimates of the beauty effect on earnings. The bulk of estimates cluster near zero; a red line marks the mean of 4.3 per cent, and estimates for sex workers, shown separately in red, sit well to the right of it." /></figure>
+			</div>
+			<div class="meta">
+				<p class="links"><a href="/notes/" class="more">All notes</a> &nbsp;&middot;&nbsp; <a href="/" class="more">More meta from Prague</a></p>
+			</div>
+		</div>
+	</div>
+<div id="sidebar">
+<ul>
+  <li id="search">
+    <h2>Search</h2>
+    <form method="get" action="https://www.google.com/search">
+      <fieldset>
+        <input type="text" id="s" name="q" value="" title="Search meta-analysis.cz" />
+        <input type="hidden" name="as_sitesearch" value="meta-analysis.cz" />
+        <input type="submit" id="x" value="Search" />
+      </fieldset>
+    </form>
+  </li>
+<li>
+<h2>Also posted on</h2>
+<ul>
+<li><a href="https://www.linkedin.com/feed/update/urn%3Ali%3Ashare%3A7436800791929151488" rel="syndication">LinkedIn</a></li>
+</ul>
+</li>
+<li>
+<h2>Links</h2>
+<ul>
+<li><a href="/">Data &amp; code by topic</a></li>
+<li><a href="/guidelines">A practitioner&#x27;s guide</a></li>
+<li><a href="/maive">MAIVE</a></li>
+<li><a href="https://www.irsova.com/">Zuzana Irsova</a></li>
+<li><a href="https://ideas.repec.org/k/metaana.html">Meta-Analysis on RePEc</a></li>
+<li><a href="https://www.maer-net.org/">MAER-Net</a></li>
+<li><a href="/notes/feed.xml">RSS feed</a></li>
+</ul>
+</li>
+</ul>
+</div>
+	<div style="clear: both;">&nbsp;</div>
+</div>
+
+<footer class="site-foot">
+<p class="foot-lede"><b>meta-analysis.cz</b> collects meta-analyses in economics: the papers, the
+data behind them, and the code that produced them. It is maintained by <b>Tomáš Havránek</b> and
+<b>Zuzana Iršová</b> at the Institute of Economic Studies, Charles University, Prague.</p>
+<p class="foot-who"><b>Tomáš Havránek</b> &middot; <a href="https://www.tomashavranek.cz/">tomashavranek.cz</a> &middot; <a href="https://ies.fsv.cuni.cz/contacts/institute-members/78067720">IES FSV UK</a> &middot; <a href="https://orcid.org/0000-0002-3158-2539">ORCID</a> &middot; <a href="https://scholar.google.com/citations?user=BF0BvBkAAAAJ">Google Scholar</a> &middot; <a href="https://ideas.repec.org/f/pha418.html">RePEc</a> &middot; <a href="https://www.scopus.com/authid/detail.uri?authorId=24453189000">Scopus</a> &middot; <a href="https://cepr.org/about/people/tomas-havranek">CEPR</a> &middot; <a href="https://metrics.stanford.edu/people/tomas-havranek">Stanford METRICS</a></p>
+<p class="foot-who"><b>Zuzana Iršová</b> &middot; <a href="https://www.irsova.com/">irsova.com</a> &middot; <a href="https://ies.fsv.cuni.cz/contacts/institute-members/73504033">IES FSV UK</a> &middot; <a href="https://orcid.org/0000-0002-0753-8124">ORCID</a> &middot; <a href="https://scholar.google.com/citations?user=LaHrICUAAAAJ">Google Scholar</a> &middot; <a href="https://ideas.repec.org/e/pir23.html">RePEc</a> &middot; <a href="https://www.scopus.com/authid/detail.uri?authorId=37080793200">Scopus</a> &middot; <a href="https://cepr.org/about/people/zuzana-irsova">CEPR</a> &middot; <a href="https://metrics.stanford.edu/people/zuzana-irsova">Stanford METRICS</a></p>
+<p class="foot-cite"><b>How to cite this collection:</b> Havranek, T. and Z. Irsova (2026).
+meta-analysis.cz: harmonised estimate-level data from meta-analyses in economics. Zenodo.
+<a href="https://doi.org/10.5281/zenodo.21773678">https://doi.org/10.5281/zenodo.21773678</a>.
+Individual papers carry their own citation on their own page.</p>
+<p class="foot-licence"><b>Licence: CC BY 4.0.</b> Everything on this site is licensed under the
+<a href="https://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0
+International Licence</a>. That covers the papers, the datasets, their CSV and Parquet conversions,
+the pooled table, the codebooks and the documentation. You may copy, redistribute, adapt and reuse
+any of it for any purpose, including commercial use and training machine-learning models, as long
+as you give attribution to meta-analysis.cz. You do not need to ask.</p>
+<p class="foot-machine">For machines: <a href="/api/v1/datasets.json">datasets.json</a> &middot;
+<a href="/api/v1/datapackage.json">datapackage.json</a> &middot;
+<a href="/api/v1/croissant.json">croissant.json</a> &middot;
+<a href="/llms.txt">llms.txt</a> &middot; <a href="/llms-full.txt">llms-full.txt</a> &middot;
+<a href="/sitemap.xml">sitemap.xml</a> &middot; <a href="/LICENSE">LICENSE</a></p>
+</footer>
+</body>
+</html>

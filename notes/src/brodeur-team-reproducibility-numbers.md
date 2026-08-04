@@ -1,0 +1,3 @@
+<p class="byline">First published on <a href="https://www.linkedin.com/feed/update/urn%3Ali%3Ashare%3A7445392769788968960" rel="external">LinkedIn</a>, 2 April 2026. Archived with the rest of our writing at <a href="https://meta-analysis.cz/komentare/posts/2026-04-02-brodeur-team-reproducibility-numbers/">/komentare/posts/2026-04-02-brodeur-team-reproducibility-numbers/</a>.</p>
+
+It was fun to be (a very small) part of the amazing team led by Abel Brodeur. The numbers look great, but note that we replicate papers in journals that have mandatory data and code sharing. So: share your data and code! And while you're at it, pre-register your papers and upload pre-analysis plans. This is the way!

@@ -91,6 +91,13 @@ def md_to_html(md):
         while i < len(lines) and lines[i].strip() and not lines[i].lstrip().startswith(("#", "- ", "* ", ">", "<")):
             para.append(lines[i].strip())
             i += 1
+        # A line starting with "#" that is NOT a level 2-4 heading -- a bare "#", a "#1",
+        # or a social-media hashtag -- matched no branch above and was also excluded here,
+        # so `para` came back empty and `i` never moved: an infinite loop that hung the
+        # build with no error. Consume the line as ordinary text and always make progress.
+        if not para:
+            para.append(lines[i].strip())
+            i += 1
         out.append(f"<p>\n{_inline(' '.join(para))}\n</p>")
 
     return "\n\n".join(out)
@@ -148,11 +155,12 @@ def sidebar(cfg, note=None):
 PAGE = """<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
 <head>
+<meta name="viewport" content="width=device-width, initial-scale=1" />
 <meta http-equiv="content-type" content="text/html; charset=utf-8" />
 <title>{title}</title>
 <meta name="keywords" content="{keywords}" />
 <meta name="description" content="{summary}" />
-<link href="/default.css" rel="stylesheet" type="text/css" />
+<link href="/style.css" rel="stylesheet" type="text/css" />
 <link rel="alternate" type="application/rss+xml" title="{feed_title}" href="{site}/notes/feed.xml" />
 
 <!-- seo-meta:start -->
@@ -170,14 +178,16 @@ PAGE = """<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w
 <body>
 <div id="wrapper">
 <div id="logo">
-	<h1><a href="{logo_href}">{logo}</a></h1>
-	<h2> &raquo;&nbsp;&nbsp;&nbsp; {tagline}</h2>
+	<a class="masthead-home" href="/">meta-analysis.cz</a>
+	<p class="site-name"><a href="{logo_href}">{logo}</a></p>
+	<h2> <span class="mk">&raquo;</span>&nbsp;&nbsp;&nbsp; {tagline}</h2>
 </div>
 <div id="header">
 	<div id="menu">
 		<ul>
 			<li class="current_page_item"><a href="/notes/">Notes</a></li>
 			<li><a href="/">Data &amp; code</a></li>
+			<li><a href="/datasets/">Datasets</a></li>
 			<li><a href="/guidelines">Guidelines</a></li>
 			<li><a href="{site}/notes/feed.xml">RSS</a></li>
 		</ul>
@@ -200,6 +210,29 @@ PAGE = """<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w
 {sidebar}
 	<div style="clear: both;">&nbsp;</div>
 </div>
+
+<footer class="site-foot">
+<p class="foot-lede"><b>meta-analysis.cz</b> collects meta-analyses in economics: the papers, the
+data behind them, and the code that produced them. It is maintained by <b>Tomáš Havránek</b> and
+<b>Zuzana Iršová</b> at the Institute of Economic Studies, Charles University, Prague.</p>
+<p class="foot-who"><b>Tomáš Havránek</b> &middot; <a href="https://www.tomashavranek.cz/">tomashavranek.cz</a> &middot; <a href="https://ies.fsv.cuni.cz/contacts/institute-members/78067720">IES FSV UK</a> &middot; <a href="https://orcid.org/0000-0002-3158-2539">ORCID</a> &middot; <a href="https://scholar.google.com/citations?user=BF0BvBkAAAAJ">Google Scholar</a> &middot; <a href="https://ideas.repec.org/f/pha418.html">RePEc</a> &middot; <a href="https://www.scopus.com/authid/detail.uri?authorId=24453189000">Scopus</a> &middot; <a href="https://cepr.org/about/people/tomas-havranek">CEPR</a> &middot; <a href="https://metrics.stanford.edu/people/tomas-havranek">Stanford METRICS</a></p>
+<p class="foot-who"><b>Zuzana Iršová</b> &middot; <a href="https://www.irsova.com/">irsova.com</a> &middot; <a href="https://ies.fsv.cuni.cz/contacts/institute-members/73504033">IES FSV UK</a> &middot; <a href="https://orcid.org/0000-0002-0753-8124">ORCID</a> &middot; <a href="https://scholar.google.com/citations?user=LaHrICUAAAAJ">Google Scholar</a> &middot; <a href="https://ideas.repec.org/e/pir23.html">RePEc</a> &middot; <a href="https://www.scopus.com/authid/detail.uri?authorId=37080793200">Scopus</a> &middot; <a href="https://cepr.org/about/people/zuzana-irsova">CEPR</a> &middot; <a href="https://metrics.stanford.edu/people/zuzana-irsova">Stanford METRICS</a></p>
+<p class="foot-cite"><b>How to cite this collection:</b> Havranek, T. and Z. Irsova (2026).
+meta-analysis.cz: harmonised estimate-level data from meta-analyses in economics. Zenodo.
+<a href="https://doi.org/10.5281/zenodo.21773678">https://doi.org/10.5281/zenodo.21773678</a>.
+Individual papers carry their own citation on their own page.</p>
+<p class="foot-licence"><b>Licence: CC BY 4.0.</b> Everything on this site is licensed under the
+<a href="https://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0
+International Licence</a>. That covers the papers, the datasets, their CSV and Parquet conversions,
+the pooled table, the codebooks and the documentation. You may copy, redistribute, adapt and reuse
+any of it for any purpose, including commercial use and training machine-learning models, as long
+as you give attribution to meta-analysis.cz. You do not need to ask.</p>
+<p class="foot-machine">For machines: <a href="/api/v1/datasets.json">datasets.json</a> &middot;
+<a href="/api/v1/datapackage.json">datapackage.json</a> &middot;
+<a href="/api/v1/croissant.json">croissant.json</a> &middot;
+<a href="/llms.txt">llms.txt</a> &middot; <a href="/llms-full.txt">llms-full.txt</a> &middot;
+<a href="/sitemap.xml">sitemap.xml</a> &middot; <a href="/LICENSE">LICENSE</a></p>
+</footer>
 </body>
 </html>
 """
@@ -227,7 +260,11 @@ def build_note(cfg, note):
             "datePublished": note["date"],
             "dateModified": note.get("updated", note["date"]),
             "keywords": ", ".join(note.get("keywords", [])),
-            "author": [{"@type": "Person", "name": a["name"], "sameAs": a["orcid"]} for a in authors],
+            # co-authors outside the two of us do not all have an ORCID on file; emit the
+            # Person without sameAs rather than dropping the credit or crashing the build
+            "author": [{"@type": "Person", "name": a["name"],
+                        **({"sameAs": a["orcid"]} if a.get("orcid") else {})}
+                       for a in authors],
             "publisher": {"@type": "Organization", "name": "meta-analysis.cz", "url": SITE},
             "isPartOf": {"@type": "Blog", "@id": NOTES_URL + "#blog", "name": cfg["notes_title"]},
             "license": cfg["license_url"],
@@ -276,7 +313,9 @@ def build_index(cfg, notes):
     rows = []
     for n in notes:
         rows.append(
-            f'<h3><a href="/notes/{n["slug"]}/">{esc(n["title"])}</a></h3>\n'
+            # h2, not h3: the page's only h1 is "Research notes", so an h3 here skips a
+            # level, which a screen reader and an outline extractor both read as a gap
+            f'<h2><a href="/notes/{n["slug"]}/">{esc(n["title"])}</a></h2>\n'
             f'<p class="byline">{pretty_date(n["date"])}</p>\n'
             f'<p>{esc(n["summary"])}</p>\n'
             f'<p class="links"><a href="/notes/{n["slug"]}/" class="more">Read the note</a></p>\n<hr />'

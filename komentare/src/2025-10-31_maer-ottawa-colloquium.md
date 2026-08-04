@@ -5,6 +5,7 @@ outlet: "MAER-Net"
 url: "https://www.maer-net.org/post/highlights-from-the-2025-maer-net-colloquium-in-ottawa"
 date: "2025-10-31"
 headline: "Highlights from the 2025 MAER-Net Colloquium in Ottawa"
+mirror: "maer-ottawa-colloquium"
 byline: "Tom Stanley, Sebastian Gechert, Jerome Geyer-Klingeberg, Tomáš Havránek"
 word_count: "330"
 ---
