@@ -55,7 +55,7 @@ independent. Version **1.0.0**.
 This release is **smaller than 0.9.0-beta while covering more**: 48,355 rows
 against 54,076. The beta repeated every `price_puzzle` estimate seven times, so
 roughly one row in eight of it was a duplicate. Correcting that removed more rows
-than the two added literatures and two added horizons put back.
+than the one added literature and two added horizons put back.
 
 Core columns are present for every row: `dataset`, `study_id`, `estimate_id`,
 `effect`, `se`, `t_stat`, `precision`. The rest are harmonised moderators, and
@@ -186,8 +186,10 @@ line of reasoning settled it.
 
 ## Two products, not one
 
-**The archive is stable. The harmonised table is a beta.** They are separate
-things and should be trusted differently.
+**The archive is a faithful mirror. The harmonised table is an interpretation.**
+They are separate things and should be trusted differently. As of 1.0.0 the table
+is no longer a beta -- every literature's mapping is verified -- but it still
+involves judgement the archive does not.
 
 *Archive* — the original files, faithful CSV and Parquet mirrors, codebooks, and
 paper/DOI metadata. Faithful conversions of what was published.

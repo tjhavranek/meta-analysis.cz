@@ -18,7 +18,7 @@ Nothing has ever checked the metadata against the data it describes.
 
 Pass --offline to skip the URL checks.
 """
-import os, sys, json, warnings, urllib.request, urllib.error
+import os, re, sys, json, warnings, urllib.request, urllib.error
 warnings.filterwarnings("ignore")
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 from _paths import WORK, SITE
@@ -235,22 +235,38 @@ hard(not _stale, f"every fragment cites only {sorted(_ok) or 'no DOI'}")
 # describing 0.9.0-beta after 1.0.0 shipped: 54,076 rows, 39 literatures, 20 of 39 verified,
 # trust excluded. It was inside the built Zenodo deposit before anyone noticed. A generated file
 # cannot go stale; a hand-written one sitting in generated territory always can.
-print("\n7. does the README describe the release it ships with?")
-_rd_p = os.path.join(AV, "README.md")
+print("\n7. do the hand-written docs describe the release they ship with?")
+_v = API["harmonised_table"]["version"]
+_n = API["counts"]["estimates_in_harmonised_table"]
+_A = API["counts"]["estimates_in_analysis_samples"]
+_L = API["counts"]["literatures_in_harmonised_table"]
 _rd_bad = []
-if os.path.isfile(_rd_p):
-    _rd = open(_rd_p, encoding="utf-8", errors="replace").read()
-    _v = API["harmonised_table"]["version"]
-    _n = API["counts"]["estimates_in_harmonised_table"]
-    _L = API["counts"]["literatures_in_harmonised_table"]
-    # the current figures must appear; historical mentions of older ones are fine and expected
-    for _lbl, _want in (("version", f"**{_v}**"), ("row count", f"{_n:,}"),
-                        ("literature count", f"{_L} literatures")):
-        if _want not in _rd:
-            _rd_bad.append(f"README does not state this release's {_lbl} ({_want}) -- "
-                           f"it is hand-written and nothing regenerates it")
+# CITATION.cff embeds the counts in its abstract and was missed the first time this check was
+# written, so it went to Zenodo saying 61,294 / 54,076 / 39 beside a 1.0.0 version field. Any
+# hand-written file carrying a number belongs here, not just the one that failed most recently.
+for _f, _wants in (
+        (os.path.join(AV, "README.md"),
+         [("version", f"**{_v}**"), ("row count", f"{_n:,}"),
+          ("literature count", f"{_L} literatures")]),
+        (os.path.join(OUT, "CITATION.cff"),
+         [("version", f'"{_v}"'), ("row count", f"{_n:,}"),
+          ("analysis-sample count", f"{_A:,}"), ("literature count", str(_L))])):
+    if not os.path.isfile(_f):
+        continue
+    _t = open(_f, encoding="utf-8", errors="replace").read()
+    for _lbl, _want in _wants:                 # historical mentions of older figures are fine
+        if _want not in _t:
+            _rd_bad.append(f"{os.path.basename(_f)} does not state this release's {_lbl} "
+                           f"({_want}) -- it is hand-written and nothing regenerates it")
+# and no hand-written doc may still assert the table is a beta once it is not
+if API["harmonised_table"].get("status") != "beta":
+    for _f in (os.path.join(AV, "README.md"), os.path.join(OUT, "CITATION.cff")):
+        if os.path.isfile(_f) and re.search(r"\bis a beta\b",
+                                            open(_f, encoding="utf-8", errors="replace").read(), re.I):
+            _rd_bad.append(f"{os.path.basename(_f)} still says the table 'is a beta' while "
+                           f"datasets.json reports status={API['harmonised_table'].get('status')!r}")
 fails.extend(_rd_bad)
-hard(not _rd_bad, "README states this release's version, row count and literature count")
+hard(not _rd_bad, "README and CITATION.cff state this release's version, counts and maturity")
 
 print(f"\n{len(soft)} soft observation(s):")
 for s_ in soft[:8]:
