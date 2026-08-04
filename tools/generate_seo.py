@@ -285,6 +285,14 @@ def build_jsonld(m):
         art["hasPart"] = [{"@type": "CreativeWork", "name": p["label"],
                             "url": absurl(proj, p["href"])} for p in other_pdfs]
     graph = [art]
+    # ALSO NOT a bug, and the same shape as the pcc case below: /debate/, /learning/ and
+    # /outliers/ show a DOI in visible text but emit no citation_doi. Those are Charles
+    # University working papers with no journal DOI; the DOIs on the page are OSF
+    # pre-registrations and Zenodo replication packages. Putting either in citation_doi would
+    # tell Google Scholar the PAPER's DOI is a dataset's, corrupting the record rather than
+    # completing it. No citation_doi until these papers actually have one. A checker that sees
+    # a DOI on a page and assumes it belongs to the paper will keep re-raising this; it is wrong.
+    #
     # NOT a bug that some pages emit a Dataset node yet are absent from the /datasets/
     # DataCatalog (pcc is the example): this node means "data and code for this study", which a
     # literature-search log satisfies, while the catalogue admits only estimate-level datasets
@@ -524,7 +532,11 @@ def main():
               "sameAs": ["https://orcid.org/0000-0002-0753-8124",
                          "https://www.wikidata.org/entity/Q41799025",
                          "https://openalex.org/A5072893157"]}]},
+        # One creator on the list, not an author array repeated across 52 ListItems: the Person
+        # nodes are already defined above, so a reference costs nothing and says the same thing.
+        # (Site audit, 2026-08-04: the list carried only url and name per paper.)
         {"@type": "ItemList", "@id": BASE + "/#papers", "name": "Meta-analyses on this site",
+         "creator": [{"@id": BASE + "/#th"}, {"@id": BASE + "/#zi"}],
          "numberOfItems": len(items), "itemListElement": items}]}
     home_block = "\n".join([
         f'<link rel="canonical" href="{BASE}/" />',
