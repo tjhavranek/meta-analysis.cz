@@ -266,7 +266,7 @@
  "gasoline": {
   "units": "elasticity",
   "verified_by": "init.do generates se as abs(e/tstat), which is reproduced here. gas_income_revision.dta's 'e' equals mra-data.dta's Ystat exactly (n=701, mean 0.6589), matching the abstract's long-run figure.",
-  "note": "LONG-RUN estimates only. The published gas_income_revision.dta is the long-run subsample; the paper's headline is both horizons (short-run mean 0.28, long-run 0.66). The 845 SHORT-RUN estimates are in mra-data.dta, inside the same gasoline/data.zip, as Ysr with t-statistic tYsr. They are not yet in the harmonised table."
+  "note": "LONG-RUN estimates only. The published gas_income_revision.dta is the long-run subsample; the paper's headline is both horizons (short-run mean 0.28, long-run 0.66). The 845 SHORT-RUN estimates are in mra-data.dta, inside the same gasoline/data.zip, as Ysr with t-statistic tYsr. They are not yet in the harmonised table. 90 rows carry n_obs <= 1, which is not a usable sample size -- almost certainly a missing-value code in the source rather than a real count. They are left as they are, but anything using sample size as a precision instrument (MAIVE above all) should drop them first. Flagged on every run by 95_columns. Found 2026-08-04."
  },
  "frisch": {
   "units": "elasticity",
@@ -279,7 +279,7 @@
   "verified_by": "The paper's own replication code regresses exactly this pair at replication.zip:replication_package_FIXED/stata/Inflation_v34.do:391. Found mechanically by 93_codegrep.py, which reads each paper's code and reads off the two variables of its headline meta-analysis regression."
  },
  "class": {
-  "note": "Two of 2,819 rows carry a partial correlation outside [-1,1] (1.372 and 1.116), taken straight from the source pcc column. They are almost certainly coding errors in the original file. Kept rather than silently dropped, so the mirror stays faithful to what was published — filter on abs(effect)<=1 if you need a strictly valid correlation.",
+  "note": "Two of 2,819 rows carry a partial correlation outside [-1,1] (1.372 and 1.116), taken straight from the source pcc column. They are almost certainly coding errors in the original file. Kept rather than silently dropped, so the mirror stays faithful to what was published — filter on abs(effect)<=1 if you need a strictly valid correlation. UPSTREAM DATA ERROR, documented rather than silently passed: class.xlsx itself carries two partial correlations outside [-1,1] -- pcc = 1.371675 and 1.116313, sitting beside effect/se_effect of 7.24/1.5671 and 0.967742/0.430108. A correlation cannot leave [-1,1], so these are errors in the authors' own pcc column, not in the conversion; 90_roundtrip confirms both values occur verbatim in the source. A further 73 rows sit exactly at -1 or +1 with positive standard errors, which is also not a coherent PCC/SE pair; 70 of those come from one study. Their combined precision weight is about 1e-6 of the literature's total, so they barely move an inverse-variance estimate, but they are invalid input to any correlation transform. Retained because the table's contract is faithful reproduction, and flagged on every run by 94_sanity. Found 2026-08-04.",
   "verified_by": "The paper's own replication code regresses pcc_w/se_pcc_w @ class.do:737 -- a winsorised copy of this pair, built inside the script from the raw columns. The published file carries only the raw columns, so they are what the harmonised table can offer. Found mechanically by 93_codegrep.py."
  },
  "dst": {

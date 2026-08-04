@@ -1,6 +1,6 @@
 {
- "n_rows": 54076,
- "n_datasets": 39,
+ "n_rows": 48355,
+ "n_datasets": 40,
  "columns": [
   "dataset",
   "study_id",
@@ -69,7 +69,7 @@
    "units": "percent",
    "direction_note": "Monthly return, not annualised.",
    "n_studies": 74,
-   "moderators": 11
+   "moderators": 10
   },
   "armington": {
    "included": true,
@@ -305,7 +305,7 @@
    "n_obs_col": null,
    "n_obs_from_log": false,
    "units": "elasticity",
-   "direction_note": "Long-run income elasticity only; see the dataset note for the short-run estimates. CAUTION on n_obs: it is the file's Observations column, which init.do weights by as sqrt(Observations), but 90 of 701 rows record 1 \u2014 not a plausible sample size, and possibly a missing-value code. Filter before using n_obs as a precision instrument.",
+   "direction_note": "Long-run income elasticity only; see the dataset note for the short-run estimates. CAUTION on n_obs: it is the file's Observations column, which init.do weights by as sqrt(Observations), but 90 of 701 rows record 1, which is not a plausible sample size and may be a missing-value code. Filter before using n_obs as a precision instrument.",
    "n_studies": 88,
    "moderators": 17
   },
@@ -346,7 +346,7 @@
    "n": 1555,
    "effect": "est",
    "se": "mean:SE_l+SE_u",
-   "se_is_derived": false,
+   "se_is_derived": true,
    "n_obs_col": null,
    "n_obs_from_log": false,
    "units": "semi-elasticity (proportional)",
@@ -405,14 +405,14 @@
    "se_is_derived": false,
    "n_obs_col": null,
    "n_obs_from_log": false,
-   "units": "elasticity",
-   "direction_note": "Stored as a negative inverse elasticity; a sign flip and inversion are needed to read it as the substitution elasticity discussed in the paper. Verify before pooling.",
+   "units": "negative inverse elasticity",
+   "direction_note": "The stored value is NOT the elasticity. It is the negative inverse: 88.8% of values are negative with median -0.050, and -1/effect has median 15.38, matching the paper's headline substitution elasticity of 13 to about 22. To recover the elasticity take -1/effect, and convert the standard error by the delta method -- se/effect^2 -- rather than using the stored se unchanged. Do NOT pool this column with the other 'elasticity' literatures. Confirmed 2026-08-04 after the Fable and Codex audits both flagged it.",
    "n_studies": 41,
    "moderators": 13
   },
   "price_puzzle": {
    "included": true,
-   "n": 7420,
+   "n": 1415,
    "effect": "res",
    "se": "se",
    "se_is_derived": false,
@@ -439,15 +439,15 @@
   "remittances": {
    "included": true,
    "n": 490,
-   "effect": "COEF_L",
-   "se": "SE_L",
-   "se_is_derived": false,
+   "effect": "pcc_from(TSTAT_L,DF)",
+   "se": "se_pcc_from(DF)",
+   "se_is_derived": true,
    "n_obs_col": null,
    "n_obs_from_log": false,
-   "units": "regression coefficient",
+   "units": "partial correlation coefficient",
    "direction_note": null,
    "n_studies": 91,
-   "moderators": 14
+   "moderators": 13
   },
   "resource_curse": {
    "included": true,
@@ -523,7 +523,7 @@
    "n_obs_col": null,
    "n_obs_from_log": false,
    "units": "elasticity",
-   "direction_note": "Stored as inverse elasticities; inversion is needed to read them as the skill-substitution elasticity. Dropping this step reverses the finding.",
+   "direction_note": "Stored as inverse elasticities; inversion is needed to read them as the skill-substitution elasticity. Dropping this step reverses the finding. OPEN QUESTION, not resolved: two independent audits suggested this column is an inverse elasticity, on the grounds that PET on the stored scale is 0.326 whose reciprocal 3.07 is near the paper's headline of 4. That is a PET-level inference, and it does not hold row-wise -- the stored median is 1.42 and 1/1.42 = 0.70, nowhere near 4, with only 7.9% of values negative. So the simple inversion that demonstrably applies to `migrant` does NOT apply here. Units are left as 'elasticity' because relabelling on an unverified inference would be worse than the uncertainty. Settling it needs the paper's own transformation.",
    "n_studies": 81,
    "moderators": 15
   },
@@ -535,7 +535,7 @@
    "se_is_derived": false,
    "n_obs_col": null,
    "n_obs_from_log": false,
-   "units": null,
+   "units": "elasticity",
    "direction_note": null,
    "n_studies": 57,
    "moderators": 11
@@ -560,10 +560,17 @@
    "exact_duplicate": true
   },
   "trust": {
-   "included": false,
-   "reason": "later, larger collection of the same literature as size; partially overlaps it and is excluded to avoid double counting",
-   "alias_of": "size",
-   "exact_duplicate": false
+   "included": true,
+   "n": 284,
+   "effect": "size",
+   "se": "se",
+   "se_is_derived": false,
+   "n_obs_col": null,
+   "n_obs_from_log": false,
+   "units": "percent",
+   "direction_note": "Raw size-return slopes: more negative means a larger conventional size premium.",
+   "n_studies": 39,
+   "moderators": 5
   },
   "water": {
    "included": true,

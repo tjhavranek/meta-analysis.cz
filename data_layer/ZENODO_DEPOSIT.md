@@ -7,9 +7,14 @@
 
 **Do NOT enable the GitHub↔Zenodo integration for `tjhavranek/meta-analysis.cz`.**
 It deposits the whole repository tarball and cannot take a subset. That would place
-**173 author-copy PDFs** — whose copyright `LICENSE` section 2e concedes to the journals —
-and **23 third-party replication packages** under one CC BY record, permanently. A DOI
-freezes whatever is wrong at mint time.
+**173 author-copy PDFs** and **23 third-party replication packages** into one record
+weighing 438 MB, permanently, when the deposit is meant to be the harmonised data and its
+documentation. A DOI freezes whatever is wrong at mint time.
+
+The reason is scope and size, not licensing: the owner decided on 2026-08-03 that everything
+on the site is CC BY 4.0, and `LICENSE` now says so. An earlier version of this file cited
+`LICENSE` section 2e, which conceded PDF copyright to the journals; that section no longer
+exists and the rationale it carried is superseded.
 
 Upload manually instead. It takes about five minutes.
 

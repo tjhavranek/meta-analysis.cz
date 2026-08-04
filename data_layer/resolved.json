@@ -1,0 +1,442 @@
+{
+ "activism": {
+  "error": "no viable (effect,se) pair",
+  "rows": 1974,
+  "file": "activism.xlsx"
+ },
+ "alphas": {
+  "effect": "alpha",
+  "se": "se",
+  "score": 105.41,
+  "kind": "t_match",
+  "t_col": "tstat",
+  "median_abs_t": 2.11,
+  "rows": 1019,
+  "file": "alphas.xlsx"
+ },
+ "armington": {
+  "effect": "armel",
+  "se": "se",
+  "score": 92.85,
+  "kind": "t_match",
+  "t_col": "tstats_w",
+  "median_abs_t": 3.178,
+  "rows": 3524,
+  "file": "armington.xlsx"
+ },
+ "beauty": {
+  "effect": "premium",
+  "se": "se_premium",
+  "score": 106.0,
+  "kind": "t_match",
+  "t_col": "tstat_premium",
+  "median_abs_t": 1.839,
+  "rows": 1159,
+  "file": "beauty.xlsx"
+ },
+ "bma": {
+  "effect": "e",
+  "se": "se",
+  "score": 106.0,
+  "kind": "t_match",
+  "t_col": "t",
+  "median_abs_t": 1.441,
+  "rows": 4147,
+  "file": "determinants.xls"
+ },
+ "border": {
+  "effect": "b",
+  "se": "se",
+  "score": 106.0,
+  "kind": "t_match",
+  "t_col": "tstat",
+  "median_abs_t": 14.5,
+  "rows": 1271,
+  "file": "border.dta"
+ },
+ "class": {
+  "effect": "pcc",
+  "se": "se_pcc",
+  "score": 106.0,
+  "kind": "t_match",
+  "t_col": "t_stat",
+  "median_abs_t": 1.35,
+  "rows": 2906,
+  "file": "class.xlsx"
+ },
+ "climate": {
+  "effect": "estimate",
+  "se": "se_low",
+  "score": 22.0,
+  "kind": "plausible",
+  "t_col": null,
+  "median_abs_t": 4.183,
+  "rows": 48,
+  "file": "climate.dta"
+ },
+ "competition": {
+  "effect": "PCC",
+  "se": "SE PCC",
+  "score": 106.0,
+  "kind": "t_match",
+  "t_col": "t",
+  "median_abs_t": 2.331,
+  "rows": 598,
+  "file": "competition.xlsx"
+ },
+ "discrate": {
+  "effect": "discrate",
+  "se": "standard_error",
+  "score": 18.0,
+  "kind": "plausible",
+  "t_col": null,
+  "median_abs_t": 9.171,
+  "rows": 927,
+  "file": "discrate.dta"
+ },
+ "dst": {
+  "effect": "ESTIMATE",
+  "se": "SE",
+  "score": 106.0,
+  "kind": "t_match",
+  "t_col": "TSTAT",
+  "median_abs_t": 2.0,
+  "rows": 162,
+  "file": "dst.xlsx"
+ },
+ "education": {
+  "effect": "pcc",
+  "se": "pcc_se",
+  "score": 106.0,
+  "kind": "t_match",
+  "t_col": "tstat",
+  "median_abs_t": 1.858,
+  "rows": 442,
+  "file": "education.xlsx"
+ },
+ "eis": {
+  "effect": "eis",
+  "se": "se",
+  "score": 22.0,
+  "kind": "plausible",
+  "t_col": null,
+  "median_abs_t": 1.673,
+  "rows": 2735,
+  "file": "eis/eis.dta"
+ },
+ "electricity": {
+  "effect": "effect",
+  "se": "se",
+  "score": 18.0,
+  "kind": "plausible",
+  "t_col": null,
+  "median_abs_t": 2.853,
+  "rows": 4720,
+  "file": "electricity.xlsx"
+ },
+ "esg": {
+  "effect": "estimate",
+  "se": "se_estimate",
+  "score": 106.0,
+  "kind": "t_match",
+  "t_col": "t_stat",
+  "median_abs_t": 3.927,
+  "rows": 533,
+  "file": "esg_data.xlsx"
+ },
+ "euro": {
+  "effect": "gamma",
+  "se": "se",
+  "score": 106.0,
+  "kind": "t_match",
+  "t_col": "tstat",
+  "median_abs_t": 3.56,
+  "rows": 61,
+  "file": "trade_meta.dta"
+ },
+ "ews": {
+  "error": "no viable (effect,se) pair",
+  "rows": 6560,
+  "file": "crises_database.xls"
+ },
+ "excess_sensitivity": {
+  "effect": "excess",
+  "se": "se",
+  "score": 16.0,
+  "kind": "plausible",
+  "t_col": null,
+  "median_abs_t": 2.23,
+  "rows": 3127,
+  "file": "excess.dta"
+ },
+ "fdi": {
+  "error": "no viable (effect,se) pair",
+  "rows": 332,
+  "file": "spillovers.dta"
+ },
+ "forward": {
+  "effect": "Coeff",
+  "se": "SE",
+  "score": 6.71,
+  "kind": "t_match",
+  "t_col": "T",
+  "median_abs_t": 1.846,
+  "rows": 3643,
+  "file": "forward.dta"
+ },
+ "frisch": {
+  "effect": "frisch",
+  "se": "se",
+  "score": 18.0,
+  "kind": "plausible",
+  "t_col": null,
+  "median_abs_t": 9.6,
+  "rows": 723,
+  "file": "frisch.dta"
+ },
+ "gasoline": {
+  "effect": "e",
+  "se": "Observations",
+  "score": 7.28,
+  "kind": "t_match",
+  "t_col": "tstat",
+  "median_abs_t": 0.037,
+  "rows": 701,
+  "file": "gas_income_revision.dta"
+ },
+ "gasoline_price": {
+  "effect": "e",
+  "se": "se",
+  "score": 106.0,
+  "kind": "t_match",
+  "t_col": "t",
+  "median_abs_t": 4.627,
+  "rows": 202,
+  "file": "papers_revised.xls"
+ },
+ "habits": {
+  "effect": "habit",
+  "se": "se",
+  "score": 18.0,
+  "kind": "plausible",
+  "t_col": null,
+  "median_abs_t": 3.667,
+  "rows": 606,
+  "file": "habit.dta"
+ },
+ "hedge": {
+  "effect": "alpha",
+  "se": "se",
+  "score": 105.41,
+  "kind": "t_match",
+  "t_col": "tstat",
+  "median_abs_t": 2.11,
+  "rows": 1019,
+  "file": "hedge.xlsx"
+ },
+ "house_prices": {
+  "effect": "est",
+  "se": "SE_l",
+  "score": 22.0,
+  "kind": "plausible",
+  "t_col": null,
+  "median_abs_t": 1.398,
+  "rows": 1785,
+  "file": "house.dta"
+ },
+ "incentives": {
+  "effect": "cohens_d",
+  "se": "se_cohens_d",
+  "score": 22.0,
+  "kind": "plausible",
+  "t_col": null,
+  "median_abs_t": 1.575,
+  "rows": 2193,
+  "file": "incentives.xlsx"
+ },
+ "inflation": {
+  "effect": "Estimate_win",
+  "se": "SE_win",
+  "score": 100.0,
+  "kind": "t_match",
+  "t_col": "tstat",
+  "median_abs_t": 3.748,
+  "rows": 885,
+  "file": "inflation_v34.dta"
+ },
+ "lags": {
+  "effect": "lags",
+  "se": "ci_se",
+  "score": 18.0,
+  "kind": "plausible",
+  "t_col": null,
+  "median_abs_t": 3.0,
+  "rows": 1519,
+  "file": "lags.xls"
+ },
+ "learning": {
+  "effect": "es",
+  "se": "se",
+  "score": 19.75,
+  "kind": "t_match",
+  "t_col": "z",
+  "median_abs_t": 10.992,
+  "rows": 291,
+  "file": "learning_loss_data.xlsx"
+ },
+ "maive": {
+  "effect": "Effect size",
+  "se": "Standard error",
+  "score": 22.0,
+  "kind": "plausible",
+  "t_col": null,
+  "median_abs_t": 2.032,
+  "rows": 209766,
+  "file": "Replication files/Application Bartos et al (2024)/Matlab/Dataset_Clean.xlsx"
+ },
+ "migrant": {
+  "effect": "elasticity",
+  "se": "se",
+  "score": 106.0,
+  "kind": "t_match",
+  "t_col": "tstat",
+  "median_abs_t": 2.652,
+  "rows": 1091,
+  "file": "migrant.xlsx"
+ },
+ "pcc": {
+  "error": "no viable (effect,se) pair",
+  "rows": 100,
+  "file": "search.xlsx"
+ },
+ "price_puzzle": {
+  "effect": "idcountry",
+  "se": "ci_se",
+  "score": 16.0,
+  "kind": "plausible",
+  "t_col": null,
+  "median_abs_t": 14.75,
+  "rows": 1519,
+  "file": "puzzle.xls"
+ },
+ "reforms": {
+  "error": "no viable (effect,se) pair",
+  "rows": 456,
+  "file": "reform.xls"
+ },
+ "remittances": {
+  "effect": "COEF_L",
+  "se": "SE_L",
+  "score": 6.41,
+  "kind": "t_match",
+  "t_col": "T",
+  "median_abs_t": 1.849,
+  "rows": 538,
+  "file": "remittances.xlsx"
+ },
+ "resource_curse": {
+  "effect": "PCC",
+  "se": "PCC_SE",
+  "score": 106.0,
+  "kind": "t_match",
+  "t_col": "TSTAT",
+  "median_abs_t": 1.72,
+  "rows": 605,
+  "file": "resource_curse.dta"
+ },
+ "risk": {
+  "effect": "rra",
+  "se": "se",
+  "score": 106.0,
+  "kind": "t_match",
+  "t_col": "tstat",
+  "median_abs_t": 2.802,
+  "rows": 1021,
+  "file": "risk.dta"
+ },
+ "scc": {
+  "error": "no viable (effect,se) pair",
+  "rows": 1134,
+  "file": "scc.xlsx"
+ },
+ "sigma": {
+  "effect": "sigma",
+  "se": "se",
+  "score": 22.0,
+  "kind": "plausible",
+  "t_col": null,
+  "median_abs_t": 4.829,
+  "rows": 3186,
+  "file": "sigma.dta"
+ },
+ "size": {
+  "effect": "size",
+  "se": "se_calc",
+  "score": 104.47,
+  "kind": "t_match",
+  "t_col": "tstat",
+  "median_abs_t": 1.94,
+  "rows": 1746,
+  "file": "size.dta"
+ },
+ "skill": {
+  "effect": "elasticity",
+  "se": "se",
+  "score": 106.0,
+  "kind": "t_match",
+  "t_col": "tstat",
+  "median_abs_t": 2.816,
+  "rows": 1097,
+  "file": "skill.dta"
+ },
+ "spillovers": {
+  "effect": "e",
+  "se": "se",
+  "score": 106.0,
+  "kind": "t_match",
+  "t_col": "t",
+  "median_abs_t": 1.441,
+  "rows": 4147,
+  "file": "data.xls"
+ },
+ "students": {
+  "effect": "pcc",
+  "se": "se_pcc",
+  "score": 106.0,
+  "kind": "t_match",
+  "t_col": "tstat",
+  "median_abs_t": 1.396,
+  "rows": 892,
+  "file": "students.xlsx"
+ },
+ "substitution": {
+  "effect": "eis",
+  "se": "se",
+  "score": 22.0,
+  "kind": "plausible",
+  "t_col": null,
+  "median_abs_t": 1.673,
+  "rows": 2735,
+  "file": "eis_det.dta"
+ },
+ "trust": {
+  "effect": "size",
+  "se": "se",
+  "score": 22.0,
+  "kind": "plausible",
+  "t_col": null,
+  "median_abs_t": 1.99,
+  "rows": 1613,
+  "file": "trust_data.csv"
+ },
+ "water": {
+  "effect": "incomeelasticity",
+  "se": "standarderror",
+  "score": 100.0,
+  "kind": "t_match",
+  "t_col": "tvalue",
+  "median_abs_t": 3.05,
+  "rows": 307,
+  "file": "water.xlsx"
+ }
+}
