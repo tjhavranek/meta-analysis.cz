@@ -699,9 +699,16 @@ def main():
         pass
     lt += ["", "## Data", ""]
     if _api.get("concept_doi"):
+        # The version DOI is null between a version bump and its deposit. Interpolating it
+        # unconditionally printed the literal string "None." into llms.txt -- the file whose whole
+        # purpose is telling machines how to cite this -- so an answer engine was told the DOI of
+        # version 1.0.0 was "None". Same class as doi.html keeping the previous release's value:
+        # an absent value must produce no claim, not a claim with a placeholder in it.
+        _ver = _api["harmonised_table"]["version"]
+        _vd = (f" Version {_ver} specifically is DOI {_api['doi']}." if _api.get("doi")
+               else f" Version {_ver} is the current release; cite the concept DOI and name the version.")
         lt += [f"- **Archived and citable**: {_api['concept_doi_url']} (DOI {_api['concept_doi']}) — "
-               f"the concept DOI, which always resolves to the newest version. Version "
-               f"{_api['harmonised_table']['version']} specifically is DOI {_api['doi']}. "
+               f"the concept DOI, which always resolves to the newest version.{_vd} "
                f"Cite the collection AND the individual paper whose data you use."]
     lt += [
            f"- [Dataset index / data API]({BASE}/api/v1/datasets.json): every dataset on this site "
