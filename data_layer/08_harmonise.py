@@ -134,7 +134,10 @@ for proj in sorted(man):
         # Saying "duplicate of size" contradicted the API record and reached the page.
         exact = proj in ("hedge","substitution")
         reason = (f"duplicate of {alias}: identical estimates, row for row" if exact
-                  else f"later, larger collection of the same literature as {alias}; partially "
+                  # NOT "larger": trust is 1,613 rows against size's 1,746 (1,631 pooled).
+                  # Measured 2026-08-04 by 97_exclusions.py -- state the relation, not a size
+                  # claim that happens to be backwards.
+                  else f"a separate collection of the same literature as {alias}; partially "
                        f"overlaps it and is excluded to avoid double counting")
         report[proj]=dict(included=False,reason=reason,alias_of=alias,exact_duplicate=exact)
         continue

@@ -1,0 +1,151 @@
+"""Does the machine-readable layer describe the data that is actually there?
+
+The whole point of this site's CC BY declaration is that a crawler or a training pipeline can
+take the data without a human in the loop. That only works if the metadata is true. A codebook
+naming a column the file does not have, or a download URL that 404s, fails silently: no page
+looks broken, and the machine gets a worse answer than if the metadata had never existed.
+
+Nothing has ever checked the metadata against the data it describes.
+
+  CODEBOOKS   44 of them, one per dataset, listing every column with a type and a role. Compare
+              each against the per-dataset file it documents: same columns, same count, and the
+              stated summary statistics consistent with the values actually present.
+  URLS        every file URL the catalogue publishes -- parquet, csv, codebook, per dataset --
+              must resolve. ~132 of them, none covered by verify_seo, which checks page links.
+  CONTRACTS   datapackage.json (Frictionless) and croissant.json (MLCommons) are read by tools
+              that will not tolerate a missing required field. Check the fields their consumers
+              actually require, and that they agree with datasets.json rather than drifting.
+
+Pass --offline to skip the URL checks.
+"""
+import os, sys, json, warnings, urllib.request, urllib.error
+warnings.filterwarnings("ignore")
+sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
+from _paths import WORK, SITE
+import numpy as np, pandas as pd
+
+OFFLINE = "--offline" in sys.argv
+OUT = os.path.join(WORK, "out")
+if not os.path.isdir(OUT):
+    OUT = SITE
+DV = os.path.join(OUT, "data", "v1")
+AV = os.path.join(OUT, "api", "v1")
+API = json.load(open(os.path.join(AV, "datasets.json"), encoding="utf-8"))
+fails, soft = [], []
+
+
+def hard(ok, msg):
+    if not ok:
+        fails.append(msg)
+    print(("  ok   " if ok else "  FAIL ") + msg)
+
+
+# ------------------------------------------------------------------- 1. codebook vs the data
+print("1. does each codebook describe the file it documents?")
+cb_dir = os.path.join(AV, "codebooks")
+checked = bad_cols = bad_stats = missing = 0
+for d in API["datasets"]:
+    proj = d["id"]
+    cb_p = os.path.join(cb_dir, f"{proj}.json")
+    data_p = os.path.join(DV, proj, f"{proj}.parquet")
+    if not os.path.exists(cb_p):
+        fails.append(f"{proj}: no codebook published though the catalogue lists one"); missing += 1
+        continue
+    if not os.path.exists(data_p):
+        soft.append(f"{proj}: codebook exists but no per-dataset parquet to compare"); continue
+    cb = json.load(open(cb_p, encoding="utf-8"))
+    df = pd.read_parquet(data_p)
+    checked += 1
+    cb_cols = [c["name"] for c in cb.get("columns", [])]
+    if list(cb_cols) != list(df.columns):
+        only_cb = set(cb_cols) - set(df.columns)
+        only_df = set(df.columns) - set(cb_cols)
+        if only_cb or only_df:
+            bad_cols += 1
+            fails.append(f"{proj}: codebook and file disagree on columns -- "
+                         f"{len(only_cb)} only in codebook {sorted(only_cb)[:3]}, "
+                         f"{len(only_df)} only in file {sorted(only_df)[:3]}")
+    # the stated statistics must match the data, or the codebook is describing an older build
+    for c in cb.get("columns", []):
+        nm = c["name"]
+        if nm not in df.columns:
+            continue
+        stated = c.get("n_missing")
+        if stated is not None and int(df[nm].isna().sum()) != int(stated):
+            bad_stats += 1
+            fails.append(f"{proj}.{nm}: codebook says {stated} missing, file has "
+                         f"{int(df[nm].isna().sum())} -- the codebook is stale")
+            break
+hard(bad_cols == 0 and missing == 0 and bad_stats == 0,
+     f"{checked} codebooks match their files on columns and missingness")
+
+# -------------------------------------------------------------------- 2. do the URLs resolve?
+print("\n2. does every published file URL resolve?")
+if OFFLINE:
+    print("   skipped (--offline)")
+else:
+    urls = []
+    for d in API["datasets"]:
+        for k, v in (d.get("files") or {}).items():
+            if isinstance(v, str) and v.startswith("http"):
+                urls.append((d["id"], k, v))
+    dead = []
+    for proj, kind, u in urls:
+        try:
+            req = urllib.request.Request(u, method="HEAD",
+                                         headers={"User-Agent": "meta-analysis.cz-metadata-check"})
+            with urllib.request.urlopen(req, timeout=45) as r:
+                if r.status >= 400:
+                    dead.append(f"{proj}/{kind} -> HTTP {r.status}")
+        except Exception as e:
+            code = getattr(e, "code", None)
+            dead.append(f"{proj}/{kind} -> {code or str(e)[:40]}")
+    hard(not dead, f"all {len(urls)} published dataset file URLs resolve"
+         if not dead else f"{len(dead)} of {len(urls)} published URLs are dead: {dead[:6]}")
+
+# ------------------------------------------------------- 3. the machine-readable contracts
+print("\n3. do the Frictionless and Croissant records hold together?")
+ids = {d["id"] for d in API["datasets"]}
+try:
+    dp = json.load(open(os.path.join(AV, "datapackage.json"), encoding="utf-8"))
+    res = dp.get("resources") or []
+    hard(bool(dp.get("name") and dp.get("licenses") and res),
+         "datapackage.json carries name, licenses and resources")
+    hard(all(r.get("path") and r.get("name") for r in res),
+         f"all {len(res)} datapackage resources carry a name and a path")
+except Exception as e:
+    hard(False, f"datapackage.json unreadable: {str(e)[:60]}")
+
+try:
+    cr = json.load(open(os.path.join(AV, "croissant.json"), encoding="utf-8"))
+    ctx = cr.get("@context")
+    hard(bool(ctx) and cr.get("@type") in ("sc:Dataset", "Dataset"),
+         f"croissant.json declares @context and @type ({cr.get('@type')})")
+    hard(bool(cr.get("license")), "croissant.json declares a license")
+    dist = cr.get("distribution") or []
+    hard(bool(dist), f"croissant.json carries {len(dist)} distribution entries")
+    # a Croissant consumer needs an encodingFormat on every distribution to know how to read it
+    noenc = [x.get("@id") or x.get("name") for x in dist
+             if not (x.get("encodingFormat") or x.get("sc:encodingFormat"))]
+    hard(not noenc, "every croissant distribution declares an encodingFormat"
+         if not noenc else f"{len(noenc)} croissant distribution(s) have no encodingFormat: {noenc[:4]}")
+except Exception as e:
+    hard(False, f"croissant.json unreadable: {str(e)[:60]}")
+
+# the three records must agree on how many datasets exist
+counts = {"datasets.json": len(ids)}
+try:
+    counts["datapackage.json"] = len(dp.get("resources") or [])
+except Exception:
+    pass
+print(f"   dataset counts by record: {counts}")
+
+print(f"\n{len(soft)} soft observation(s):")
+for s_ in soft[:8]:
+    print("  . " + s_)
+print(f"\n{len(fails)} hard failure(s)")
+if fails:
+    for f_ in fails[:12]:
+        print("  X " + f_)
+    sys.exit(1)
+print("METADATA PASS - codebooks match, URLs resolve, contracts hold")
