@@ -114,6 +114,64 @@ for src,dst in (("api_readme.md", os.path.join(OUT,"api",DV,"README.md")),
     else:
         print(f"   WARNING: canonical {src} missing from data_layer/")
 
+# ---------------------------------------------------------------- known issues in the SHIPPED data
+# A defect found after a release sits in the downloads until the next build. Recording it only in
+# the pipeline notes leaves anyone who takes the CSV, the Parquet or the Zenodo deposit today with
+# no way to know. So state it on the page that offers the download.
+#
+# SELF-RETIRING BY DESIGN: every issue below is emitted only if its condition is still TRUE of the
+# data being described. When the fix lands and the table is rebuilt, the condition fails and the
+# issue disappears on its own. A hand-maintained warning would outlive its defect and start lying
+# in the other direction, which is how "known issues" sections usually rot.
+def _known_issues():
+    import pandas as _pd, numpy as _np
+    try:
+        _H = _pd.read_parquet(os.path.join(OUT, "data", DV, "estimates_harmonised.parquet"))
+    except Exception:
+        return []
+    out = []
+
+    _y = _pd.to_numeric(_H.get("pub_year"), errors="coerce")
+    _bad = sorted(_H.loc[(_y < 1950) | (_y > 2027), "dataset"].unique()) if _y is not None else []
+    if _bad:
+        out.append(("<code>pub_year</code> is not a publication year in "
+                    + ", ".join(f"<code>{e(b)}</code>" for b in _bad) +
+                    ". Those source files carry a standardised regressor of the same name, and the "
+                    "column was matched by name rather than by value. Do not use "
+                    "<code>pub_year</code> for these literatures; every other column is unaffected."))
+
+    _rem = _H[_H["dataset"] == "remittances"]
+    if len(_rem) and str(_rem["effect_units"].iloc[0]).startswith("regression coefficient"):
+        out.append("<code>remittances</code> reports the source file's raw regression coefficients "
+                   "rather than the partial correlations its paper analyses. Those coefficients run "
+                   "over five different dependent variables, so they are not comparable with each "
+                   "other or with the other literatures. Treat this literature as unusable for now.")
+
+    _pp = _H[_H["dataset"] == "price_puzzle"]
+    if len(_pp):
+        _g = _pp.groupby(["study_id", "horizon", "effect", "se"]).size()
+        if len(_g) and int(_g.min()) > 1:
+            _m = int(_g.min())
+            out.append(f"<code>price_puzzle</code> repeats every estimate {_m} times: "
+                       f"{len(_pp):,} rows where {len(_g):,} are distinct. The source file is already "
+                       "long on <code>horizon</code> while its response columns are wide, and the "
+                       "reshape did not deduplicate. A weighted average is unchanged, but any count "
+                       "of estimates, any unweighted statistic and any method treating rows as "
+                       "independent observations will be wrong for this literature.")
+    return out
+
+
+_ki = _known_issues()
+if _ki:
+    _items = "\n".join(f"<li>{x}</li>" for x in _ki)
+    w("known_issues.html",
+      "<p>These defects are present in the files published here and in the archived deposit. "
+      "Each will be fixed in the next release. Nothing else in the table is affected.</p>\n"
+      "<ul>\n" + _items + "\n</ul>\n")
+else:
+    # emit an EMPTY file rather than none, so the page inlines nothing and the box vanishes
+    w("known_issues.html", "")
+
 print(f"fragments written to api/{DV}/fragments/:")
 for f in sorted(os.listdir(FR)):
     print(f"   {f:38s} {os.path.getsize(os.path.join(FR,f)):>7,} bytes")
