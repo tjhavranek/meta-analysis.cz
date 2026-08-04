@@ -199,7 +199,7 @@ URL: https://meta-analysis.cz/euro/
 Citation: Tomas Havranek (2010), "Rose Effect and the Euro: Is the Magic Gone?" Review of World Economics, 146(2), pp. 241-261.
 Published version: https://doi.org/10.1007/s10290-010-0050-1
 Read the paper: https://meta-analysis.cz/euro/euro2.pdf
-Download the data set: https://meta-analysis.cz/euro/data.zip
+Download the dataset: https://meta-analysis.cz/euro/data.zip
 
 Abstract: This paper presents an updated meta-analysis of the effect of currency unions on trade, focusing on the euro area. Using meta-regression methods such as funnel asymmetry test, evidence for strong publication bias is found. The estimated underlying effect for currency unions other than eurozone reaches more than 60%. However, according to the meta-regression analysis, the euro's trade promoting effect corrected for publication bias is insignificant. The Rose effect literature shows signs of the economics research cycle: reported t-statistic is a quadratic concave function of publication year. Explanatory meta-regression (robust fixed effects and random effects), that can explain about 70% of the heterogeneity in the literature, suggests that results published by some authors might consistently differ from the mainstream output and that study outcomes are systematically dependent on study design (usage of panel data, short- or long-run nature, number of countries in the data set).
 
@@ -239,7 +239,7 @@ Citation: Petra Valickova, Tomas Havranek, and Roman Horvath (2015), "Financial 
 Published version: https://doi.org/10.1111/joes.12068
 Read the paper: https://meta-analysis.cz/finance_growth/finance_growth2.pdf
 Download the appendix: https://meta-analysis.cz/finance_growth/appendix.pdf
-Download the data set: https://meta-analysis.cz/finance_growth/finance_growth.zip
+Download the dataset: https://meta-analysis.cz/finance_growth/finance_growth.zip
 
 Abstract: We analyze 1334 estimates from 67 studies that examine the effect of financial development on economic growth. Taken together, the studies imply a positive and statistically significant effect, but the individual estimates vary widely. We find that both research design and heterogeneity in the underlying effect play a role in explaining the differences in results. Studies that do not address endogeneity tend to overstate the effect of finance on growth. While the effect seems to be weaker in poor countries, the effect decreases worldwide after the 1980s. Our results also suggest that stock markets support faster economic growth than other financial intermediaries. We find little evidence of publication bias in the literature.
 
@@ -280,7 +280,7 @@ URL: https://meta-analysis.cz/gasoline_price/
 Citation: Tomas Havranek, Zuzana Irsova, and Karel Janda (2012), "Demand for Gasoline is More Price-Inelastic than Commonly Thought," Energy Economics 34(1), pp. 201-207.
 Published version: https://doi.org/10.1016/j.eneco.2011.09.003
 Read the paper: https://meta-analysis.cz/gasoline_price/gasoline_price2.pdf
-Download the data set: https://meta-analysis.cz/gasoline_price/data.zip
+Download the dataset: https://meta-analysis.cz/gasoline_price/data.zip
 
 Abstract: One of the most frequently examined statistical relationships in energy economics has been the price elasticity of gasoline demand. We conduct a quantitative survey of the estimates of elasticity reported for various countries around the world. Our meta-analysis indicates that the literature suffers from publication selection bias: insignificant or positive estimates of the price elasticity are rarely reported, although implausibly large negative estimates are reported regularly. In consequence, the average published estimates of both short- and long-run elasticities are exaggerated twofold. Using mixed-effects multilevel meta-regression, we show that after correction for publication bias the average long-run elasticity reaches -0.31 and the average short-run elasticity only -0.09.
 
@@ -288,7 +288,7 @@ Abstract: One of the most frequently examined statistical relationships in energ
 URL: https://meta-analysis.cz/guidelines/
 Citation: Zuzana Irsova, Hristos Doucouliagos, Tomas Havranek, and T. D. Stanley (2024): "Meta-Analysis of Social Science Research: A Practitioner’s Guide." Journal of Economic Surveys 38(5): 1547-1566.
 Published version: https://doi.org/10.1111/joes.12595
-Guide (PDF): https://meta-analysis.cz/guidelines/guidelines2.pdf
+The guide: https://meta-analysis.cz/guidelines/guidelines2.pdf
 Published version: https://onlinelibrary.wiley.com/doi/full/10.1111/joes.12595
 Blog version: https://www.maer-net.org/post/methods-guidelines-for-meta-analysis
 
@@ -383,7 +383,7 @@ Talk: https://youtu.be/VZNDiICI08A
 Slides: https://meta-analysis.cz/maive/maive_slides.pdf
 Replication: https://meta-analysis.cz/maive/maive_replication.zip
 MAIVE in R: https://cran.r-project.org/package=MAIVE
-One-click meta-analysis in your browser: https://spuriousprecision.com/
+One-click meta-analysis in your browser: https://www.easymeta.org/
 
 Abstract: Meta-analysis upweights studies reporting lower standard errors and hence more precision. But in observational settings common to much research on human behavior, precision is not given to the researcher. Precision must be estimated, and thus can be p-hacked to achieve statistical significance. Simulations and large-scale empirical applications show that spurious precision can invalidate inverse-variance weighting and bias-correction methods based on the funnel plot. Selection models fail to solve the problem, and common cures to publication bias can become worse than the disease. We introduce an approach (Meta-Analysis Instrumental Variable Estimator, MAIVE) that addresses spurious precision and limits the resulting bias in meta-analysis.
 
