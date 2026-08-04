@@ -64,4 +64,4 @@ We are not the first to highlight the disconnect between the Cobb-Douglas specif
 
 **Endnotes**
 
-[1] The full paper, together with data and codes, is available at [http://meta-analysis.cz/sigma](http://meta-analysis.cz/sigma).
+[1] The full paper, together with data and codes, is available at [https://meta-analysis.cz/sigma](https://meta-analysis.cz/sigma).

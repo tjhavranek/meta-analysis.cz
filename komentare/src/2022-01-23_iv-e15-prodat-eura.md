@@ -12,7 +12,7 @@ interviewer: "Jan Novotný"
 
 # ČNB by měla prodat miliardy eur a více investovat do akcií
 
-Česká národní banka je v krocení inflace málo odvážná. S růstem úrokových sazeb by měla postupně vyprodávat eura nakoupená během devizových intervencí a mnohem aktivněji investovat rezervy do akcií podobně jako švýcarská centrální banka. Tvrdí to nejcitovanější český ekonom současnosti Tomáš Havránek. „Pokud by ČNB investovala jako Švýcaři, jen za dva roky by vydělala 300 miliard korun navíc,” říká profesor Institutu ekonomických studií FSV UK. Vzhledem k tomu, že zisk ČNB je ze zákona součástí státního rozpočtu, stát by mohl díky tomu snižovat svůj dluh.
+Česká národní banka je v krocení inflace málo odvážná. S růstem úrokových sazeb by měla postupně vyprodávat eura nakoupená během devizových intervencí a mnohem aktivněji investovat rezervy do akcií podobně jako švýcarská centrální banka. Tvrdí to nejcitovanější český ekonom současnosti Tomáš Havránek. „Pokud by ČNB investovala jako Švýcaři, jen za dva roky by vydělala 300 miliard korun navíc,“ říká profesor Institutu ekonomických studií FSV UK. Vzhledem k tomu, že zisk ČNB je ze zákona součástí státního rozpočtu, stát by mohl díky tomu snižovat svůj dluh.
 
 Nakolik je současná inflace způsobená domácími vlivy?
 
