@@ -45,11 +45,17 @@ curl -s https://meta-analysis.cz/api/v1/datasets.json | jq '.datasets[] | {id, n
 
 ## The harmonised table
 
-One row per harmonised **observation**, pooled across literatures: **54,076 rows
-from 39 literatures**. Rows are not always independent estimates — `price_puzzle`
-reshapes wide impulse-response columns into one row per horizon, and
-`house_prices` ships about seven horizons per impulse response. Check `horizon`
-before treating rows as independent. Version **0.9.0-beta**.
+One row per harmonised **observation**, pooled across literatures: **48,355 rows
+from 40 literatures**. Rows are not always independent estimates — `price_puzzle`
+carries one row per impulse response per horizon (the five month horizons plus
+the trough, coded 99, and the peak, coded 88), and `house_prices` ships about
+seven horizons per impulse response. Check `horizon` before treating rows as
+independent. Version **1.0.0**.
+
+This release is **smaller than 0.9.0-beta while covering more**: 48,355 rows
+against 54,076. The beta repeated every `price_puzzle` estimate seven times, so
+roughly one row in eight of it was a duplicate. Correcting that removed more rows
+than the two added literatures and two added horizons put back.
 
 Core columns are present for every row: `dataset`, `study_id`, `estimate_id`,
 `effect`, `se`, `t_stat`, `precision`. The rest are harmonised moderators, and
@@ -70,13 +76,16 @@ units are consistent, which is what estimator comparisons need. Comparing across
 literatures needs an explicitly standardised measure — and ratios are unsuitable
 where the denominator may sit near zero or change sign.
 
-Being a beta, the harmonisation may be revised. For a reference that does not
-move, cite the archived deposit:
+The harmonisation may still be revised. For a reference that does not move, cite
+the archived deposit:
 
 > **https://doi.org/10.5281/zenodo.21773678** — cite this. It always resolves to the newest version.
 >
-> **https://doi.org/10.5281/zenodo.21773679** — version 0.9.0-beta specifically, for a replication package where the
-> exact files matter.
+> A version DOI for 1.0.0 will be minted when this release is deposited; until then cite the
+> concept DOI above and name the version. The earlier
+> **https://doi.org/10.5281/zenodo.21773679** is version 0.9.0-beta, now superseded — it is kept
+> live so existing citations of the beta still resolve, but its `price_puzzle` rows are duplicated
+> sevenfold and its `remittances` effects are the wrong estimand. Do not start new work from it.
 
 The deposit is immutable: it holds that version's harmonised table, index,
 codebooks and documentation, with checksums. The live files here may change; the
@@ -97,11 +106,14 @@ which is what the underlying papers do. As a worked check, FAT-PET run on the
 1st–99th percentile winsorised data reproduces the published conclusions:
 `education` corrects to about 0.02 and `excess_sensitivity` to about 0.01, both
 of which their papers describe as near zero, and `forward` corrects to 0.92
-against a null of 1. Sixteen of the 39 literatures show a
+against a null of 1. Eighteen of the 40 literatures show a
 publication-bias intercept beyond ±1.96.
 
-**Twenty of the 39 pooled literatures are code-checked** (19 `domain_reviewed`, 1
-`code_traced`); the remaining 19 rest on the arithmetic pairing alone.
+**All 40 pooled literatures are verified** — 20 `domain_reviewed`, 20 `code_traced`. None rests
+on the arithmetic pairing alone. `gasoline_price` ships no replication code anywhere, so it was
+checked against its paper's published results instead: the abstract reports corrected elasticities
+of -0.31 long-run and -0.09 short-run with published averages "exaggerated twofold", and the
+shipped data gives -0.691 and -0.227, reproducing that.
 
 Per-column minimum, maximum, median and quartiles for every dataset are in its
 codebook, so you can see the tails before you load anything.
@@ -111,8 +123,11 @@ two source files store the sample size as its logarithm rather than as a count.
 `n_obs` here is always a count — a log column is either replaced by the raw one
 from the same file or exponentiated, and `datasets.json` records where that
 happened. Check `effect_units` and the direction notes too: a few literatures
-store proportions where the paper reports percentages, and two store inverse
-elasticities, where dropping the inversion reverses the finding.
+store proportions where the paper reports percentages, and `migrant` stores a
+**negative inverse** elasticity — take -1/effect to recover the elasticity, and
+convert its standard error by the delta method rather than using the stored one.
+`skill` is suspected of a similar inversion but it is **not confirmed**, so its
+units are left as `elasticity`; that open question is recorded in `units.json`.
 
 ## What is not in the harmonised table, and why
 
@@ -138,12 +153,14 @@ estimates twice and present one literature as two independent ones:
 - **`substitution`** — the same 2,735 estimates as `eis`. Two papers, one
   dataset. It carries additional country-level moderators and is published in
   full.
-- **`trust`** — shares 1,256 estimates with `size`. Not an exact duplicate:
-  `trust` is a later, larger collection (105 studies) of the same literature,
-  the size premium, that `size` (98 studies) first assembled. `size` is pooled
-  because it carries far more of the shared moderators, but **if the size
-  premium is your subject, use `trust`** — it is the more recent and more
-  complete collection.
+- **`trust`** — from 1.0.0 this is **pooled**, but only for the 284 estimates
+  `size` does not already carry. It is the later collection (2026 against 2019)
+  of the same literature, the size premium, and the *smaller* one at 1,613 rows
+  against `size`'s 1,746; 83.5% of its usable pairs already appear in `size` and
+  are dropped here so nothing is counted twice. That makes this literature a
+  deliberate splice of two separately-assembled collections. **If the size
+  premium is your subject, use either per-dataset file whole** rather than the
+  pooled rows.
 
 `price_puzzle` and `lags` share a source *file* but use different columns of it,
 so both are kept. So are `bma` and `spillovers`, which take the horizontal and
@@ -175,19 +192,21 @@ things and should be trusted differently.
 *Archive* — the original files, faithful CSV and Parquet mirrors, codebooks, and
 paper/DOI metadata. Faithful conversions of what was published.
 
-*Harmonised table* — 54,076 selected estimates, automatically mapped and in some
-cases transformed, with **varying levels of review** and no independent
-end-to-end reproduction.
+*Harmonised table* — 48,355 selected estimates, automatically mapped and in some
+cases transformed. Every literature's column mapping is now verified against the
+paper's own replication code or published results, but there is still **no
+independent end-to-end reproduction** of any paper's headline number from these
+files alone.
 
 Every dataset carries an `audit_status` so you can filter on review quality
 rather than read prose:
 
 | status | meaning | count |
 |---|---|---|
-| `domain_reviewed` | checked against the paper's own replication code | 19 of 39 pooled |
-| `code_traced` | mapping taken from the replication code, not separately reviewed | 1 |
-| `arithmetic_pairing_only` | effect/se pair proven by reproducing the reported t-statistic, estimand **not** independently confirmed | 19 of 39 pooled |
-| `duplicate_excluded` | same estimates as another literature | 3 |
+| `domain_reviewed` | checked by hand against the paper's own replication code, or against its published results where no code exists | 20 of 40 pooled |
+| `code_traced` | mapping confirmed by reading the paper's code and comparing the variables it regresses | 20 of 40 pooled |
+| `arithmetic_pairing_only` | effect/se pair proven only by reproducing the reported t-statistic, estimand **not** independently confirmed | 0 — none remain |
+| `duplicate_excluded` | same estimates as another literature | 2 |
 | `excluded_no_precision` | no per-estimate standard error exists | 2 |
 
 The arithmetic test proves that two columns form a statistical pair. It cannot

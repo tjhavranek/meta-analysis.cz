@@ -230,6 +230,28 @@ if os.path.isdir(_fr):
 fails.extend(_stale)
 hard(not _stale, f"every fragment cites only {sorted(_ok) or 'no DOI'}")
 
+# --------------------------------- 7. does the hand-written README still describe THIS release?
+# api_readme.md is hand-written and nothing regenerates its numbers, so it silently went on
+# describing 0.9.0-beta after 1.0.0 shipped: 54,076 rows, 39 literatures, 20 of 39 verified,
+# trust excluded. It was inside the built Zenodo deposit before anyone noticed. A generated file
+# cannot go stale; a hand-written one sitting in generated territory always can.
+print("\n7. does the README describe the release it ships with?")
+_rd_p = os.path.join(AV, "README.md")
+_rd_bad = []
+if os.path.isfile(_rd_p):
+    _rd = open(_rd_p, encoding="utf-8", errors="replace").read()
+    _v = API["harmonised_table"]["version"]
+    _n = API["counts"]["estimates_in_harmonised_table"]
+    _L = API["counts"]["literatures_in_harmonised_table"]
+    # the current figures must appear; historical mentions of older ones are fine and expected
+    for _lbl, _want in (("version", f"**{_v}**"), ("row count", f"{_n:,}"),
+                        ("literature count", f"{_L} literatures")):
+        if _want not in _rd:
+            _rd_bad.append(f"README does not state this release's {_lbl} ({_want}) -- "
+                           f"it is hand-written and nothing regenerates it")
+fails.extend(_rd_bad)
+hard(not _rd_bad, "README states this release's version, row count and literature count")
+
 print(f"\n{len(soft)} soft observation(s):")
 for s_ in soft[:8]:
     print("  . " + s_)
