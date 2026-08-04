@@ -250,7 +250,16 @@ for _f, _wants in (
           ("literature count", f"{_L} literatures")]),
         (os.path.join(OUT, "CITATION.cff"),
          [("version", f'"{_v}"'), ("row count", f"{_n:,}"),
-          ("analysis-sample count", f"{_A:,}"), ("literature count", str(_L))])):
+          ("analysis-sample count", f"{_A:,}"), ("literature count", str(_L))]),
+        # .zenodo.json describes the DEPOSIT, so a stale copy is a live trap rather than a
+        # cosmetic one -- it is served publicly and is what Zenodo tooling would read. It went
+        # out describing 0.9.0-beta because data_layer held BOTH `zenodo.json` (canonical, copied
+        # by 10_fragments) and `.zenodo.json` (edited by mistake for a whole release). The dot
+        # file is deleted; this asserts the survivor. Fourth instance of the same class, so the
+        # list is now every hand-written file that carries a number, not the ones that failed.
+        (os.path.join(OUT, ".zenodo.json"),
+         [("version", f'"{_v}"'), ("row count", f"{_n:,}"),
+          ("analysis-sample count", f"{_A:,}")])):
     if not os.path.isfile(_f):
         continue
     _t = open(_f, encoding="utf-8", errors="replace").read()
@@ -265,8 +274,16 @@ if API["harmonised_table"].get("status") != "beta":
                                             open(_f, encoding="utf-8", errors="replace").read(), re.I):
             _rd_bad.append(f"{os.path.basename(_f)} still says the table 'is a beta' while "
                            f"datasets.json reports status={API['harmonised_table'].get('status')!r}")
+# and every one of them must cite the CURRENT version DOI, not a previous release's
+if API.get("doi"):
+    for _f in (os.path.join(AV, "README.md"), os.path.join(OUT, "CITATION.cff"),
+               os.path.join(OUT, ".zenodo.json")):
+        if os.path.isfile(_f) and API["doi"] not in open(_f, encoding="utf-8", errors="replace").read():
+            _rd_bad.append(f"{os.path.basename(_f)} does not cite the current version DOI "
+                           f"{API['doi']}")
 fails.extend(_rd_bad)
-hard(not _rd_bad, "README and CITATION.cff state this release's version, counts and maturity")
+hard(not _rd_bad,
+     "README, CITATION.cff and .zenodo.json state this release's version, counts, maturity and DOI")
 
 print(f"\n{len(soft)} soft observation(s):")
 for s_ in soft[:8]:
