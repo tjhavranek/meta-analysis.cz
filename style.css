@@ -647,16 +647,26 @@ table.catalogue li{ margin-bottom:var(--s2); font-size:var(--f-1); line-height:1
   .r-filter input[type="search"]{ min-height:44px; }
 }
 
-/* Visited links had no rule at all, so they fell back to the browser default
-   purple, which was never checked against --canvas. Keep them distinguishable
-   from unvisited without dropping below AA. */
-a:visited{ color:var(--accent-dark); }
-/* ...but NOT inside the masthead. `a:visited` is (0,1,1) and `.masthead-home` is (0,1,0), so
-   the visited rule wins, and --accent-dark (#0b4a6e) on the slate (#28313A) is 1.39:1 --
-   effectively invisible, and only for people who had already visited the homepage, which is
-   why it read as "dark until you hover". The masthead keeps its own colours in every state. */
-#logo a:visited{ color:rgba(255,255,255,.85); }
-#logo h1 a:visited, #logo .site-name a:visited{ color:#fff; }
+/* NO :visited RULE, deliberately. A link looks the same before and after you follow it.
+   The owner's call, and the reasoning is worth keeping so nobody "fixes" it back:
+
+   The rule that used to live here was added on the premise that visited links fell back to
+   the browser's default purple. That premise was WRONG -- `a{ color:var(--accent) }` above
+   already applies to visited links, because an author rule beats the UA stylesheet whatever
+   its specificity. There was never any purple. So the rule solved nothing and cost three
+   things: it collided with `a:hover`, which owns --accent-dark, making a visited link
+   indistinguishable from a hovered one; it overrode the dark masthead's own link colour at
+   1.39:1 until three scoping overrides were added to undo it; and the distinction it drew
+   was deltaE 10 between two blues on the same ramp, which reads as inconsistency rather
+   than as information.
+
+   Standards do not ask for this: WCAG 1.4.1 explicitly exempts visited/unvisited from the
+   contrast requirement. Peers do not do it either -- arXiv groups a:link, a:visited and
+   a:active into one identical rule, and PubMed has no :visited rule at all. Browsers permit
+   only colour changes on :visited anyway, for history-sniffing reasons, so there is no
+   subtler lever available.
+
+   --accent-dark now belongs to :hover alone. Three states, no collision. */
 
 /* Figures carried no width/height, so nothing reserved their box and every one of them
    shifted the layout as it loaded. The fix is the intrinsic width/height attributes now
