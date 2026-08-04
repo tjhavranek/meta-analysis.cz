@@ -21,14 +21,14 @@ authors:
     orcid: "https://orcid.org/0000-0002-0753-8124"
     affiliation: "Charles University, Prague"
 doi: "10.5281/zenodo.21773678"
-version: "0.9.0-beta"
+version: "1.0.0"
 identifiers:
   - type: doi
     value: "10.5281/zenodo.21773678"
     description: "Concept DOI - always resolves to the latest version. Cite this."
   - type: doi
     value: "10.5281/zenodo.21773679"
-    description: "Version 0.9.0-beta specifically"
+    description: "Version 0.9.0-beta, superseded by 1.0.0. Kept so citations of the beta still resolve. The 1.0.0 version DOI is assigned by Zenodo on publication; cite the concept DOI above."
 repository-code: "https://github.com/tjhavranek/meta-analysis.cz"
 url: "https://meta-analysis.cz"
 abstract: >-

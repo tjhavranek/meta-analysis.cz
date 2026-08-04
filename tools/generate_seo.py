@@ -28,7 +28,10 @@ NOTES = []   # informational only -- never fail the build
 # feed. Injecting the paper-oriented ScholarlyArticle block here would duplicate
 # every one of those tags and fail verify_seo. Their pages are still listed in
 # sitemap.xml below.
-SELF_MANAGED = {"komentare", "notes", "datasets"}
+import sys as _sys, os as _os
+_sys.path.insert(0, _os.path.dirname(_os.path.abspath(__file__)))
+from _seo_shared import SELF_MANAGED   # one definition, shared with verify_seo.py
+# (was declared here AND in verify_seo.py with different contents; see _seo_shared.py)
 
 # /datasets/ is the human landing page for the data layer. It is NOT a paper, so it
 # must not receive Highwire citation_* tags — hence SELF_MANAGED above. It does get a

@@ -9,6 +9,8 @@ VERSION="1.0.0"; DATA_V="v1"
 # The DATA artefact's version, in ONE place. It was hardcoded in four, which is how a
 # consumer once saw the Croissant record say 1.0.0 while the table said 0.9.0-beta.
 DATA_VERSION="1.0.0"; DATA_STATUS="stable"
+# Set once Zenodo mints the 1.0.0 version DOI; until then cite the concept DOI.
+DATA_DOI=None
 
 papers={p["project"]:p for p in json.load(open(os.path.join(SITE,"tools","papers.json"),encoding="utf-8"))}
 man={m["project"]:m for m in json.load(open(os.path.join(WORK,"convert_manifest.json"),encoding="utf-8"))}
@@ -260,7 +262,11 @@ index=dict(
     machine_readable=True),
   cite_as=("Havranek, T. and Z. Irsova (2026). meta-analysis.cz: harmonised estimate-level data "
            "from meta-analyses in economics. Zenodo. https://doi.org/10.5281/zenodo.21773678"),
-  doi="10.5281/zenodo.21773679", doi_url="https://doi.org/10.5281/zenodo.21773679",
+  # The VERSION DOI is minted by Zenodo when the new version is published, so it cannot be
+  # known at build time. Publishing the previous version's DOI here would tell a citing reader
+  # that the 1.0.0 table is 0.9.0-beta. Null until minted; the concept DOI below always resolves
+  # to the newest version and is the one to cite.
+  doi=DATA_DOI, doi_url=(f"https://doi.org/{DATA_DOI}" if DATA_DOI else None),
   concept_doi="10.5281/zenodo.21773678", concept_doi_url="https://doi.org/10.5281/zenodo.21773678",
   doi_note=("Cite the CONCEPT DOI in prose - it always resolves to the newest version. "
             "Cite the version DOI in a replication package, where you need the exact files."),
@@ -306,7 +312,8 @@ index=dict(
       "Column mappings were resolved arithmetically (effect/se must reproduce the reported "
       "t-statistic) and, where that was not decisive, taken from the paper's own replication code.",
       "Beta: the harmonisation may be revised. For a reference that does not move, cite the "
-      "archived deposit https://doi.org/10.5281/zenodo.21773679 , which is immutable and carries checksums."],
+      "archived deposit https://doi.org/10.5281/zenodo.21773678 , the concept DOI, which always "
+      "resolves to the newest archived version and carries checksums."],
     excluded={p:v.get("reason") for p,v in (harm.get("projects") or {}).items()
               if not v.get("included")}),
   counts_note=("`datasets` contains exactly counts.datasets entries, all of them real datasets. "

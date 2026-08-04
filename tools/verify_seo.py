@@ -40,12 +40,18 @@ def url_to_path(u):
         p += "index.html"
     return os.path.join(SITE, p.replace("/", os.sep))
 
-# Sections that build their own metadata layer (see SELF_MANAGED in
-# generate_seo.py). They are not injected into, so they legitimately carry
-# canonical/OG/JSON-LD outside the sentinel block — checking them here would
-# report the absence of an injection we deliberately skipped. They are still
-# listed in sitemap.xml, and their own build script validates their markup.
-SELF_MANAGED = {"komentare", "notes"}
+# Sections that build their own metadata layer. They are not injected into, so they
+# legitimately carry canonical/OG/JSON-LD outside the sentinel block — checking them here would
+# report the absence of an injection we deliberately skipped. They are still listed in
+# sitemap.xml, still checked below for stale inlined fragments, and their own build script
+# validates their markup.
+#
+# This set USED to be declared here as {"komentare", "notes"} while generate_seo.py declared
+# {"komentare", "notes", "datasets"} — which is exactly why /datasets/ reported
+# "canonical count != 1". One definition now, in _seo_shared.py.
+import sys as _sys, os as _os
+_sys.path.insert(0, _os.path.dirname(_os.path.abspath(__file__)))
+from _seo_shared import SELF_MANAGED
 
 fails = []
 pages = ["index.html"] + sorted(
