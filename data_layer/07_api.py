@@ -46,6 +46,11 @@ def _audit_status(proj):
     # A reviewed literature that needed NO change has no override. Absence of an
     # override is evidence it passed, not evidence it was never looked at.
     if proj in DOMAIN_REVIEWED: return "domain_reviewed"
+    # A staged, known defect outranks the evidence. remittances HAS verified_by -- the code
+    # was read and understood -- but what that reading found is that we ship the wrong
+    # estimand. Promoting it to code_traced on the strength of the evidence that condemns it
+    # would tell a user the opposite of the truth. It stays provisional until the fix ships.
+    if o.get("pending_1_0_0"): return "arithmetic_pairing_only"
     if o.get("verified_by"): return "code_traced"
     ev=(r.get("evidence") or "")
     if ev.startswith("t_match:") and (r.get("score") or 0)>=90: return "arithmetic_pairing_only"

@@ -1,5 +1,5 @@
 {
- "_README": "Per-dataset overrides of the automatic column resolution. Every entry here was verified against the paper's own replication code (.do / .R) or its abstract, and the evidence is recorded in 'verified_by'. The automatic resolver is used only where no override exists.",
+ "_README": "Machine-readable record of every per-dataset decision. `verified_by` quotes the evidence. NOTE ON WINSORISING, which applies across the collection: many of these papers run their headline regressions on winsorised copies of the effect and standard error, built inside their own replication code. In nearly every case those copies do not exist in the published file, so the harmonised table carries the RAW columns. armington is the one literature that ships both, and we take raw there too, for one consistent rule. Consequence: our values will not reproduce those papers' published coefficients until you apply the paper's own winsorising.",
  "lags": {
   "exclude": true,
   "reason": "outcome is the transmission lag (mon_bot, months to the price trough); it has no sampling standard error, so it cannot enter an effect/SE table",
@@ -267,10 +267,12 @@
  },
  "inflation": {
   "units": "percentage points",
-  "note": "Uses the paper's WINSORISED estimate column (Estimate_win): 45 rows sit exactly at the lower bound -3.85 and 42 at the upper bound 6.0. That is what the paper analyses, but it departs from this collection's usual raw-tails policy and the clumps at the bounds will be visible in any funnel plot."
+  "note": "Uses the paper's WINSORISED estimate column (Estimate_win): 45 rows sit exactly at the lower bound -3.85 and 42 at the upper bound 6.0. That is what the paper analyses, but it departs from this collection's usual raw-tails policy and the clumps at the bounds will be visible in any funnel plot.",
+  "verified_by": "The paper's own replication code regresses exactly this pair at replication.zip:replication_package_FIXED/stata/Inflation_v34.do:391. Found mechanically by 93_codegrep.py, which reads each paper's code and reads off the two variables of its headline meta-analysis regression."
  },
  "class": {
-  "note": "Two of 2,819 rows carry a partial correlation outside [-1,1] (1.372 and 1.116), taken straight from the source pcc column. They are almost certainly coding errors in the original file. Kept rather than silently dropped, so the mirror stays faithful to what was published — filter on abs(effect)<=1 if you need a strictly valid correlation."
+  "note": "Two of 2,819 rows carry a partial correlation outside [-1,1] (1.372 and 1.116), taken straight from the source pcc column. They are almost certainly coding errors in the original file. Kept rather than silently dropped, so the mirror stays faithful to what was published — filter on abs(effect)<=1 if you need a strictly valid correlation.",
+  "verified_by": "The paper's own replication code regresses pcc_w/se_pcc_w @ class.do:737 -- a winsorised copy of this pair, built inside the script from the raw columns. The published file carries only the raw columns, so they are what the harmonised table can offer. Found mechanically by 93_codegrep.py."
  },
  "dst": {
   "verified_by": "dst.do labels ESTIMATE 'Estimate of the DST impact (in %)' and runs 'ivreg2 ESTIMATE SE, cluster(...)' as its main FAT-PET regression. 101 of 162 rows have ESTIMATE, SE, TSTAT and PRECISION jointly non-null; the other 61 have all four blank, so the loss is a genuinely unreported standard error, not a column choice."
@@ -313,5 +315,35 @@
  "armington": {
   "verified_by": "armington.do lines 94-96 run the headline FAT-PET on the WINSORISED pair: `ivreg2 armel_w se_w, cluster(idstudy idcountry)`. The paper's equation (1) is sigma_ij = sigma_0 + delta*SE(sigma_ij) + mu_ij, and it states it winsorises at the 2.5% level (mean 1.53 -> 1.45, which armel/armel_w reproduce: 1.531 -> 1.454).",
   "note": "DELIBERATE CHOICE, and the one literature where it is a choice: armington.xlsx stores BOTH the raw pair (armel/se) and the winsorised pair (armel_w/se_w), and they differ on 176 of 3,524 rows (armel spans -56.19..78.60, armel_w -0.996..8.505). The harmonised table stores the RAW pair, for consistency with every other literature here -- in sigma, beauty and risk the winsorised columns are generated inside the paper's code and are simply not available in the source, so raw is the only option there. Storing raw everywhere keeps one rule across the table and lets a user winsorise themselves; it does mean our values will NOT reproduce this paper's published coefficients until you apply the 2.5% winsorising yourself. Long-run and short-run elasticities share the column and are separated only by the srun flag; do not pool them without it. tstats_w/invse_w serve an alternative t-based specification and are not the primary pair."
+ },
+ "alphas": {
+  "verified_by": "The paper's own replication code regresses alpha_w/se_w @ alphas.do:207 -- a winsorised copy of this pair, built inside the script from the raw columns. The published file carries only the raw columns, so they are what the harmonised table can offer. Found mechanically by 93_codegrep.py."
+ },
+ "border": {
+  "verified_by": "The paper's own replication code regresses exactly this pair at border.do:108. Found mechanically by 93_codegrep.py, which reads each paper's code and reads off the two variables of its headline meta-analysis regression."
+ },
+ "competition": {
+  "verified_by": "Our column is literally named 'SE PCC' (with a space) and competition.do:38 regresses PCC on SEPCC -- the same column, the spacing differs between the spreadsheet header and the Stata name."
+ },
+ "education": {
+  "verified_by": "The paper's own replication code regresses exactly this pair at education.do:58. Found mechanically by 93_codegrep.py, which reads each paper's code and reads off the two variables of its headline meta-analysis regression."
+ },
+ "esg": {
+  "verified_by": "The paper's own replication code regresses exactly this pair at replication.zip:replication_package/Code/esg_code_v5.do:496. Found mechanically by 93_codegrep.py, which reads each paper's code and reads off the two variables of its headline meta-analysis regression."
+ },
+ "euro": {
+  "verified_by": "The paper's own replication code regresses exactly this pair at data.zip:trade_meta.do:16. Found mechanically by 93_codegrep.py, which reads each paper's code and reads off the two variables of its headline meta-analysis regression."
+ },
+ "resource_curse": {
+  "verified_by": "The paper's own replication code regresses exactly this pair at resource_curse.do:164. Found mechanically by 93_codegrep.py, which reads each paper's code and reads off the two variables of its headline meta-analysis regression."
+ },
+ "size": {
+  "verified_by": "size.do regresses size on se, but se_calc is the column that reproduces the file's OWN tstat: 100.0% of rows within 1%, against 96.7% for se. We take se_calc for internal consistency (t = effect/se holds exactly), accepting that it is not the column the paper's regression names. se_calc also contains zeros, which the se>0 filter drops."
+ },
+ "skill": {
+  "verified_by": "skill.do:174 regresses tstat_coefficient_w on precision_coefficient_w, the WLS form of FAT-PET. Regressing t on precision is algebraically the same test as regressing the effect on its standard error, so it confirms rather than contradicts elasticity/se."
+ },
+ "migrant": {
+  "verified_by": "The paper's replication is in R, not Stata: run_replication_package.R:1002 runs stats::lm(elasticity ~ se, data = master, weights = se_weight) and clusters on idstudy -- the FAT-PET on exactly this pair. Found by 93_codegrep.py once R patterns were added; a Stata-only scan had reported this literature as having no regression at all."
  }
 }
