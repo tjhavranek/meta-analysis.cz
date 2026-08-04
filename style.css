@@ -655,3 +655,21 @@ a:visited{ color:var(--accent-dark); }
   font-size:var(--f-1);
   color:var(--ink-soft);
 }
+
+/* Defects present in the files people can download right now. Deliberately the loudest
+   thing on /datasets/ apart from the h1: a beta label tells a reader to be careful in
+   general, this tells them exactly which literature not to use and why. The block is
+   generated from a data-session fragment whose conditions are re-tested at every build,
+   so it disappears by itself when the defects are fixed. */
+.known-issues{
+  margin:var(--s5) 0;
+  padding:var(--s4) var(--s5);
+  background:var(--tint);
+  border:1px solid var(--control);
+  border-left:4px solid var(--accent);
+  border-radius:var(--radius);
+}
+.known-issues h2{ margin-top:0; font-size:var(--f1); }
+.known-issues p:last-child, .known-issues ul:last-child{ margin-bottom:0; }
+.known-issues li{ margin-bottom:var(--s2); }
+.known-issues code{ font-size:.9em; }
