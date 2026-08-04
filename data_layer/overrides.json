@@ -160,7 +160,23 @@
   "note": "NOT an exact duplicate — trust is a LATER, LARGER collection of the SAME literature, so pooling both would count 1,256 estimates twice and would treat one literature as two independent ones. 'size' is kept for the pooled table because it fills 17 harmonised moderators against trust's 5 and is the published version (Journal of Economic Surveys 2019). IF YOU ARE STUDYING THE SIZE PREMIUM SPECIFICALLY, prefer the trust dataset: it is the larger and more recent collection and carries the trust and rule-of-law moderators. It remains published in full at /data/v1/trust/."
  },
  "remittances": {
-  "note": "The file holds BOTH a long-run (COEF_L/SE_L) and a short-run (COEF_S/SE_S) coefficient per row. Only the LONG-RUN pair enters the harmonised table, because the two are different estimands and pooling them would mix horizons. The short-run pair (48 usable rows) remains in the published per-dataset file for anyone who wants it."
+  "note": "The file holds BOTH a long-run (COEF_L/SE_L) and a short-run (COEF_S/SE_S) coefficient per row. Only the LONG-RUN pair enters the harmonised table, because the two are different estimands and pooling them would mix horizons. The short-run pair (48 usable rows) remains in the published per-dataset file for anyone who wants it.",
+  "verified_by": "COEF_L/SE_L reproduces TSTAT_L exactly on all 490 usable rows (checked numerically), so the stored pairing is internally correct. remittances.do line 2 shows what the PAPER analyses, and it is not that pair: `gen PCC_L=TSTAT_L/sqrt(TSTAT_L^2+DF)`, with SE_PCC_L=sqrt((1-PCC_L^2)/DF); the headline `mean PCC_L` and `metan PCC_L SE_PCC_L` and the whole BMA section run on PCC_L. The short-run set is an appendix robustness check on 48 observations, not pooled.",
+  "pending_1_0_0": {
+   "_why": "NOT ACTIVE. The pipeline ignores this key; it is a staged decision for the next release, kept here so the evidence and the exact formula sit with the dataset. Raised by the blind audit of 2026-08-04.",
+   "_problem": "The harmonised table currently stores COEF_L/SE_L under units 'regression coefficient'. Those are raw coefficients across FIVE different coded dependent variables (DepVar takes values 1-5) and span -11 to 191. Pooling them is not a meaningful quantity, which is exactly why the paper converts to partial correlations first. Three other literatures share the 'regression coefficient' unit and deserve the same look.",
+   "_proposed": {
+    "compute": {
+     "type": "pcc_from_t",
+     "t_col": "TSTAT_L",
+     "df_col": "DF"
+    },
+    "units": "partial correlation coefficient"
+   },
+   "_checked": "PCC_L is computable on all 490 rows and spans -0.986..0.994. The transformation is already precedented in this pipeline: `reforms` uses the identical pcc_from_t path.",
+   "_also": "The paper additionally drops 3 outliers where |t| exceeds 5 SD from the mean (obs 195, 205, 283). Not replicated by the proposal above, which keeps all 490; decide at release time.",
+   "_not_applied_because": "It changes the published estimand, and 0.9.0-beta is already archived on Zenodo. It belongs in a deliberate 1.0.0 build, not a silent edit."
+  }
  },
  "learning": {
   "sheet": "data",
@@ -277,5 +293,25 @@
   "units": "partial correlation coefficient",
   "verified_by": "students.do lines 14-16: 'drop if idstudy>69', then drop if missing(pcc) or missing(se_pcc). Applying all three gives exactly 861 estimates from 69 studies, matching the paper. Without the idstudy filter the file yields 872, which is what was published before and was recorded as an unexplained surplus. It was not unexplained; the filter was missed.",
   "note": "The published file carries 892 rows, 31 of which the paper's own code excludes."
+ },
+ "water": {
+  "verified_by": "water.do line 90 runs the paper's FAT-PET on exactly this pair: `ivreg2 incomeelasticity standarderror, cluster(studyid)`; line 32 `sum incomeelasticity, detail`. The .do header names the paper: INCOME ELASTICITY OF WATER DEMAND. No winsorising or row-dropping is applied to the main regressions (winsor2 is installed at line 10 but never invoked); the only `if` conditions are descriptive subsample splits and one graph-only restriction at line 77. All 307 rows are the analysis sample.",
+  "note": "This is the INCOME elasticity of water demand, not the price elasticity, so the stored values are positive by expectation and are NOT sign-flipped or absolute-valued. `standarderrorovb` is a derived interaction regressor (standarderror x ovb), not a second standard-error column."
+ },
+ "risk": {
+  "verified_by": "rra.do (inside risk.zip) lines 104-110 treat rra/se as the pair: `replace se=0.0001 if se==0`, `gen prec = 1/se`, `replace tstat = rra/se if tstat == .`; every downstream meta-analysis traces to it (funnel plot line 192, PET/PEESE lines 211-337, p-uniform* line 705 `keep idstudy rra_win se_win`). BMACode.R line 61 corroborates. risk.dta carries no alternative effect column across its 61 columns, so there is no rejected candidate.",
+  "note": "The published risk.dta is ALREADY restricted to econometrically estimated RRA: rra.do line 90 `drop if estimated==0` (dropping calibrated values) and line 92 `drop estimated`, which is why the column is absent from the shipped file. The paper's headline regressions then use rra_win/se_win, winsorised at the 10th/90th percentiles by `winsor2 rra se, suffix(_win) cuts(10 90)` at line 135 -- those columns are GENERATED in code and do not exist in risk.dta, so the raw pair is the only thing the source offers."
+ },
+ "sigma": {
+  "verified_by": "sigma.do line 28 `gen tstat = sigma/se` establishes the pair; line 202 runs the headline FAT-PET `ivreg2 sigma_win5 se_win5, cluster (idstudy idcountry)` on winsorised versions built at line 83 by `winsor2 sigma se invsqrtnobs, suffix(_win5) cuts(5 95)`. The paper states it winsorises at the 5% level. sigma.dta contains sigma and se but NOT sigma_win5/se_win5, so the raw pair is the only thing the source offers.",
+  "note": "The effect is sigma itself, the elasticity of substitution -- not its inverse and not 1-sigma. Primary studies that estimated a transformation (1/sigma, 1-sigma, (1-sigma)/sigma, rho) were converted back to sigma units before the file was written; formula_code records which transformation the primary study used. About 4% of values are negative and are retained, so sigma is not truncated at zero."
+ },
+ "beauty": {
+  "verified_by": "beauty.do line 390 runs the headline FAT-PET `ivreg2 premium_w se_premium_w, cluster(study_id)`, where premium_w/se_premium_w are winsorised copies built at line 69 by `foreach v in premium se_premium premium_sd se_premium_sd { winsor2 `v', suffix(_w) cuts(1 99) }`. The site's beauty.xlsx contains premium and se_premium but NOT premium_w/se_premium_w, so the raw pair is the only thing the source offers.",
+  "note": "The effect is the percentage increase in earnings or productivity per one-standard-deviation increase in rated beauty, in percentage points (8.91 means 8.91%). Beauty-PENALTY rows are pooled with premiums at their original sign in the main analysis; only a robustness variable flips them. excluded.xlsx is a PRISMA study-level screen -- those studies never entered beauty.xlsx, so it is not a row filter on this file."
+ },
+ "armington": {
+  "verified_by": "armington.do lines 94-96 run the headline FAT-PET on the WINSORISED pair: `ivreg2 armel_w se_w, cluster(idstudy idcountry)`. The paper's equation (1) is sigma_ij = sigma_0 + delta*SE(sigma_ij) + mu_ij, and it states it winsorises at the 2.5% level (mean 1.53 -> 1.45, which armel/armel_w reproduce: 1.531 -> 1.454).",
+  "note": "DELIBERATE CHOICE, and the one literature where it is a choice: armington.xlsx stores BOTH the raw pair (armel/se) and the winsorised pair (armel_w/se_w), and they differ on 176 of 3,524 rows (armel spans -56.19..78.60, armel_w -0.996..8.505). The harmonised table stores the RAW pair, for consistency with every other literature here -- in sigma, beauty and risk the winsorised columns are generated inside the paper's code and are simply not available in the source, so raw is the only option there. Storing raw everywhere keeps one rule across the table and lets a user winsorise themselves; it does mean our values will NOT reproduce this paper's published coefficients until you apply the 2.5% winsorising yourself. Long-run and short-run elasticities share the column and are separated only by the srun flag; do not pool them without it. tstats_w/invse_w serve an alternative t-based specification and are not the primary pair."
  }
 }
