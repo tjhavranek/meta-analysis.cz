@@ -23,7 +23,7 @@ MOD = {
  "estimate_id": r"^(idcoeff|id_?coeff|id_?est\w*|est\w*_?id|obs_?id|id_in_study)$",
  "n_obs":       r"^(nobs|no_?obs|n_?obs|obs|observations|sample_?size|samplesize|n)$",
  "df":          r"^(df|degrees_?of_?freedom)$",
- "pub_year":    r"^(pubyear|pub_?year|publication_?year|yearpub|publicationyear)$",
+ "pub_year":    r"^(pubyear|pub_?year|publication_?year|yearpub|publicationyear|year_?publication|year_?published)$",
  "citations":   r"^(citations|cit|cit_?google|num_?citations|google|cits)$",
  "impact_factor":r"^(impact|impact_?factor|if|sjr|recursiveif)$",
  "published":   r"^(published|pubpr|reviewed|pblshd)$",
@@ -32,7 +32,7 @@ MOD = {
  "country_id":  r"^(idcountry|country_?id|countrya)$",
  "data_start":  r"^(start|startyear|start_?year|syear|first_?year)$",
  "data_end":    r"^(end|endyear|end_?year|eyear|last_?year)$",
- "data_midyear":r"^(midyear|mid_?year|avyear|avg_?year|data_?year|data_?midyear|midpoint)$",
+ "data_midyear":r"^(midyear|mid_?year|avyear|avg_?year|data_?year|data_?midyear|midpoint|datyear|dat_?year)$",
  "pcc":         r"^(pcc|partial_?correlation)$",
  "se_pcc":      r"^(se_?pcc|pcc_?se|pccse)$",
  "is_usa":      r"^(usa|us|united_?states|country_?us)$",
@@ -69,6 +69,34 @@ def looks_log(s):
     v=s.dropna()
     if len(v)<10: return False
     return v.max()<20 and v.median()<15 and (v==v.round()).mean()<0.9 and (v>=0).all()
+
+YEAR_CONCEPTS = {"pub_year", "data_start", "data_end", "data_midyear"}
+
+
+def find_year(df, pat):
+    """Pick a column that actually holds years, not a standardised copy of them.
+
+    The same trap as find_n_obs, and it bit five literatures. alphas, beauty, skill, students
+    and discrate each ship a BMA regressor literally NAMED `publication_year` holding
+    standardised values (0..3.4, or -2.5..1.4) right beside the real column, which is called
+    something the pattern did not even match -- `year_publication`, `pubyear`, `year`. Name
+    matching therefore picked the transformed regressor, and the published pub_year was not a
+    year at all on 4,543 rows. Found by 95_columns.py.
+
+    Match on VALUES, not names: a publication year lies between 1900 and 2030. A name match
+    that fails that test returns nothing, because a null is honest and a standardised regressor
+    masquerading as a year is not.
+    """
+    for c in df.columns:
+        if not re.match(pat, norm(c)):
+            continue
+        v = pd.to_numeric(df[c], errors="coerce").dropna()
+        if len(v) < 5:
+            continue
+        if 1900 <= float(v.median()) <= 2030:
+            return c
+    return None
+
 
 def find_n_obs(df, pat):
     """Pick the primary-study sample size, not a log of it.
@@ -205,6 +233,8 @@ for proj in sorted(man):
     for concept,pat in MOD.items():
         if concept=="n_obs" and concept not in o:
             col,n_obs_was_log=find_n_obs(df,pat)
+        elif concept in YEAR_CONCEPTS and concept not in o:
+            col=find_year(df,pat)
         else:
             col=o.get(concept) if concept in o else find(df,pat,binary=concept in BINARY_ONLY)
         if col and col in df.columns:
