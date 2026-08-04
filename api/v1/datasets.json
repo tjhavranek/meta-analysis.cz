@@ -14,8 +14,8 @@
   "machine_readable": true
  },
  "cite_as": "Havranek, T. and Z. Irsova (2026). meta-analysis.cz: harmonised estimate-level data from meta-analyses in economics. Zenodo. https://doi.org/10.5281/zenodo.21773678",
- "doi": null,
- "doi_url": null,
+ "doi": "10.5281/zenodo.21789702",
+ "doi_url": "https://doi.org/10.5281/zenodo.21789702",
  "concept_doi": "10.5281/zenodo.21773678",
  "concept_doi_url": "https://doi.org/10.5281/zenodo.21773678",
  "doi_note": "Cite the CONCEPT DOI in prose - it always resolves to the newest version. Cite the version DOI in a replication package, where you need the exact files.",

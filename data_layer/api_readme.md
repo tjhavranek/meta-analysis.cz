@@ -81,10 +81,11 @@ the archived deposit:
 
 > **https://doi.org/10.5281/zenodo.21773678** — cite this. It always resolves to the newest version.
 >
-> A version DOI for 1.0.0 will be minted when this release is deposited; until then cite the
-> concept DOI above and name the version. The earlier
-> **https://doi.org/10.5281/zenodo.21773679** is version 0.9.0-beta, now superseded — it is kept
-> live so existing citations of the beta still resolve, but its `price_puzzle` rows are duplicated
+> **https://doi.org/10.5281/zenodo.21789702** — version 1.0.0 specifically, for a replication
+> package where the exact files matter.
+>
+> **https://doi.org/10.5281/zenodo.21773679** is version 0.9.0-beta, now superseded — kept live so
+> existing citations of the beta still resolve, but its `price_puzzle` rows are duplicated
 > sevenfold and its `remittances` effects are the wrong estimand. Do not start new work from it.
 
 The deposit is immutable: it holds that version's harmonised table, index,

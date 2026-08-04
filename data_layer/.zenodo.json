@@ -42,5 +42,6 @@
   "language": "eng",
   "notes": "Everything in this deposit is released under CC BY 4.0, as is everything on meta-analysis.cz: the datasets, their CSV and Parquet conversions, the pooled table, the codebooks, the documentation and the deposited papers. You may use, adapt and redistribute any of it for any purpose, including commercially and including as training data for machine-learning models. The only condition is credit: cite the individual paper when you use its dataset, and the collection when you use the whole.",
   "version": "1.0.0",
-  "concept_doi": "10.5281/zenodo.21773678"
+  "concept_doi": "10.5281/zenodo.21773678",
+  "doi": "10.5281/zenodo.21789702"
 }

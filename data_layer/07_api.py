@@ -9,8 +9,9 @@ VERSION="1.0.0"; DATA_V="v1"
 # The DATA artefact's version, in ONE place. It was hardcoded in four, which is how a
 # consumer once saw the Croissant record say 1.0.0 while the table said 0.9.0-beta.
 DATA_VERSION="1.0.0"; DATA_STATUS="stable"
-# Set once Zenodo mints the 1.0.0 version DOI; until then cite the concept DOI.
-DATA_DOI=None
+# The VERSION DOI, set once Zenodo minted it. None until deposited -- publishing the
+# previous version's DOI beside a new version tells a citing reader the wrong thing.
+DATA_DOI="10.5281/zenodo.21789702"   # minted 2026-08-04; verified against zenodo.org/api/records/21789702
 
 papers={p["project"]:p for p in json.load(open(os.path.join(SITE,"tools","papers.json"),encoding="utf-8"))}
 man={m["project"]:m for m in json.load(open(os.path.join(WORK,"convert_manifest.json"),encoding="utf-8"))}
