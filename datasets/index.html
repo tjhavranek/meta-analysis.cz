@@ -7,14 +7,7 @@
 <meta name="keywords" content="meta-analysis data, effect sizes, estimate-level data, publication bias, economics datasets, open data, research synthesis" />
 <link href="/style.css" rel="stylesheet" type="text/css" />
 <!-- seo-meta:start -->
-<link rel="canonical" href="https://meta-analysis.cz/datasets/" />
-<meta name="description" content="44 estimate-level datasets from meta-analyses in economics and the social sciences, published as Parquet and CSV with column-level codebooks, plus a harmonised table pooling 39 literatures." />
-<meta property="og:type" content="website" />
-<meta property="og:title" content="Datasets | meta-analysis.cz" />
-<meta property="og:url" content="https://meta-analysis.cz/datasets/" />
-<meta property="og:description" content="44 estimate-level datasets from meta-analyses in economics and the social sciences, published as Parquet and CSV with column-level codebooks, plus a harmonised table pooling 39 literatures." />
-<meta name="twitter:card" content="summary" />
-<script type="application/ld+json">{"@context":"https://schema.org","@type":"DataCatalog","@id":"https://meta-analysis.cz/datasets/#catalog","name":"meta-analysis.cz datasets","description":"44 estimate-level datasets from meta-analyses in economics and the social sciences, 61,294 estimates in their analysis samples, each with the study characteristics hand-coded for the original paper.","url":"https://meta-analysis.cz/datasets/","identifier":[{"@type":"PropertyValue","propertyID":"DOI","value":"10.5281/zenodo.21773678","description":"Concept DOI - always resolves to the latest version"},{"@type":"PropertyValue","propertyID":"DOI","value":"10.5281/zenodo.21773679","description":"This version"}],"sameAs":"https://doi.org/10.5281/zenodo.21773678","license":"https://creativecommons.org/licenses/by/4.0/","usageInfo":"https://meta-analysis.cz/LICENSE","isAccessibleForFree":true,"creator":[{"@id":"https://meta-analysis.cz/#th"},{"@id":"https://meta-analysis.cz/#zi"}],"dataset":[{"@id":"https://meta-analysis.cz/activism/#dataset"},{"@id":"https://meta-analysis.cz/alphas/#dataset"},{"@id":"https://meta-analysis.cz/armington/#dataset"},{"@id":"https://meta-analysis.cz/beauty/#dataset"},{"@id":"https://meta-analysis.cz/bma/#dataset"},{"@id":"https://meta-analysis.cz/border/#dataset"},{"@id":"https://meta-analysis.cz/class/#dataset"},{"@id":"https://meta-analysis.cz/climate/#dataset"},{"@id":"https://meta-analysis.cz/competition/#dataset"},{"@id":"https://meta-analysis.cz/discrate/#dataset"},{"@id":"https://meta-analysis.cz/dst/#dataset"},{"@id":"https://meta-analysis.cz/education/#dataset"},{"@id":"https://meta-analysis.cz/eis/#dataset"},{"@id":"https://meta-analysis.cz/electricity/#dataset"},{"@id":"https://meta-analysis.cz/esg/#dataset"},{"@id":"https://meta-analysis.cz/euro/#dataset"},{"@id":"https://meta-analysis.cz/excess_sensitivity/#dataset"},{"@id":"https://meta-analysis.cz/fdi/#dataset"},{"@id":"https://meta-analysis.cz/forward/#dataset"},{"@id":"https://meta-analysis.cz/frisch/#dataset"},{"@id":"https://meta-analysis.cz/gasoline/#dataset"},{"@id":"https://meta-analysis.cz/gasoline_price/#dataset"},{"@id":"https://meta-analysis.cz/habits/#dataset"},{"@id":"https://meta-analysis.cz/hedge/#dataset"},{"@id":"https://meta-analysis.cz/house_prices/#dataset"},{"@id":"https://meta-analysis.cz/incentives/#dataset"},{"@id":"https://meta-analysis.cz/inflation/#dataset"},{"@id":"https://meta-analysis.cz/lags/#dataset"},{"@id":"https://meta-analysis.cz/learning/#dataset"},{"@id":"https://meta-analysis.cz/migrant/#dataset"},{"@id":"https://meta-analysis.cz/price_puzzle/#dataset"},{"@id":"https://meta-analysis.cz/reforms/#dataset"},{"@id":"https://meta-analysis.cz/remittances/#dataset"},{"@id":"https://meta-analysis.cz/resource_curse/#dataset"},{"@id":"https://meta-analysis.cz/risk/#dataset"},{"@id":"https://meta-analysis.cz/scc/#dataset"},{"@id":"https://meta-analysis.cz/sigma/#dataset"},{"@id":"https://meta-analysis.cz/size/#dataset"},{"@id":"https://meta-analysis.cz/skill/#dataset"},{"@id":"https://meta-analysis.cz/spillovers/#dataset"},{"@id":"https://meta-analysis.cz/students/#dataset"},{"@id":"https://meta-analysis.cz/substitution/#dataset"},{"@id":"https://meta-analysis.cz/trust/#dataset"},{"@id":"https://meta-analysis.cz/water/#dataset"}],"distribution":[{"@type":"DataDownload","encodingFormat":"application/json","contentUrl":"https://meta-analysis.cz/api/v1/datasets.json","description":"Machine-readable index of every dataset"},{"@type":"DataDownload","encodingFormat":"text/csv","contentUrl":"https://meta-analysis.cz/data/v1/estimates_harmonised.csv","description":"All literatures pooled into one estimate-level table"}]}</script><!-- seo-meta:end -->
+<!-- seo-meta:end -->
 </head>
 <body>
 <div id="wrapper">
@@ -53,12 +46,12 @@ literatures, take the harmonised table and read the caveats below first.</p>
 <p>The converted source files hold 65,349 rows, every one keeping the
 variables coded for its original paper. After applying each paper's analysis selection and,
 where necessary, reshaping the source data into estimate-level observations, the catalogue
-below represents 61,294 estimates.</p>
+below represents 53,960 estimates.</p>
 
 <h2>One file, every literature</h2>
 
-<p>54,076 estimate-level rows from
-39 literatures in a single table, with the effect, its
+<p>48,355 estimate-level rows from
+40 literatures in a single table, with the effect, its
 standard error, the sample size, and the characteristics that recur across literatures. Some
 literatures contribute one row per impulse-response horizon rather than one per independent
 estimate, so treat a row as an observation and check <code>effect_units</code> and the
@@ -80,27 +73,26 @@ partial correlation and a dollar value per tonne of carbon all sit in the same c
 across them needs an explicitly standardised measure, and relative changes are meaningful only
 where the baseline is safely away from zero.</p>
 
-<p>The harmonised table is version 0.9.0-beta:
-54,076 observations from 39
+<p>The harmonised table is version 1.0.0:
+48,355 observations from 40
 literatures. Every row records the file and the columns it came from, so any value can be
 traced back to its published dataset.</p>
 
-<div class="known-issues">
-<h2>Known issues in this release</h2>
-<p>These defects are present in the files published here and in the archived deposit. Each will be fixed in the next release. Nothing else in the table is affected.</p>
-<ul>
-<li><code>pub_year</code> is not a publication year in <code>alphas</code>, <code>beauty</code>, <code>discrate</code>, <code>skill</code>, <code>students</code>. Those source files carry a standardised regressor of the same name, and the column was matched by name rather than by value. Do not use <code>pub_year</code> for these literatures; every other column is unaffected.</li>
-<li><code>remittances</code> reports the source file's raw regression coefficients rather than the partial correlations its paper analyses. Those coefficients run over five different dependent variables, so they are not comparable with each other or with the other literatures. Treat this literature as unusable for now.</li>
-<li><code>price_puzzle</code> repeats every estimate 7 times: 7,420 rows where 1,060 are distinct. The source file is already long on <code>horizon</code> while its response columns are wide, and the reshape did not deduplicate. A weighted average is unchanged, but any count of estimates, any unweighted statistic and any method treating rows as independent observations will be wrong for this literature.</li>
-</ul>
-</div>
+<p><b>This release is smaller than the 0.9.0-beta table and covers more.</b> The beta reported
+54,076 observations from 39 literatures; this one reports
+48,355 from 40. The
+count fell because the beta was wrong: the price-puzzle literature had been reshaped in a way
+that repeated every estimate seven times, so roughly one row in eight of that table was a
+duplicate. Those duplicates are gone, that literature now carries every impulse-response
+horizon including the trough and the peak the beta discarded, and a further literature has
+been added. Fewer rows, more evidence.</p>
 
 
 
-<p class="caveat">20 of the
-39 pooled literatures have code-based verification:
+<p class="caveat">39 of the
+40 pooled literatures have code-based verification:
 19 checked against the paper's own replication code and
-1 traced through it. The remaining 19
+20 traced through it. The remaining 1
 rest on arithmetic effect/standard-error matching alone and are provisional. Every dataset
 publishes an <code>audit_status</code> saying which it is.</p>
 
@@ -117,7 +109,7 @@ row per impulse-response horizon. <a href="/api/v1/datasets.json">datasets.json<
 reconciliation for every dataset where the two counts differ, including the cases that remain
 unexplained.</p>
 
-<p class="table-note">44 datasets, 61,294 estimates in their analysis samples (65,349 rows in the source files). 39 literatures are pooled into the harmonised table.</p>
+<p class="table-note">44 datasets, 53,960 estimates in their analysis samples (65,349 rows in the source files). 40 literatures are pooled into the harmonised table.</p>
 <div class="table-scroll">
 <table class="dataset-catalogue">
 <thead>
@@ -130,13 +122,6 @@ unexplained.</p>
 </tr>
 </thead>
 <tbody>
-<tr>
-<td><a href="https://meta-analysis.cz/price_puzzle/">How to Solve the Price Puzzle? A Meta-Analysis</a></td>
-<td class="num">7,420 <span class="horizon-note" title="One row per impulse-response horizon, not per independent estimate">per horizon</span></td>
-<td>proportional change in the price level</td>
-<td><a href="https://meta-analysis.cz/data/v1/price_puzzle/price_puzzle.csv">CSV</a> <a href="https://meta-analysis.cz/data/v1/price_puzzle/price_puzzle.parquet">Parquet</a> <a href="https://meta-analysis.cz/api/v1/codebooks/price_puzzle.json">codebook</a></td>
-<td><a href="https://doi.org/10.1111/j.1538-4616.2012.00561.x">Journal of Money, Credit and Banking</a></td>
-</tr>
 <tr>
 <td><a href="https://meta-analysis.cz/forward/">How Puzzling Is the Forward Premium Puzzle? A Meta-Analysis</a></td>
 <td class="num">3,643</td>
@@ -208,13 +193,6 @@ unexplained.</p>
 <td><a href="https://doi.org/10.1111/joes.12335">Journal of Economic Surveys</a></td>
 </tr>
 <tr>
-<td><a href="https://meta-analysis.cz/trust/">Trust, Rule of Law, and the Size Premium: Evidence from a Meta-Analysis</a> <span class="not-pooled">not pooled</span></td>
-<td class="num">1,613</td>
-<td>percent</td>
-<td><a href="https://meta-analysis.cz/data/v1/trust/trust.csv">CSV</a> <a href="https://meta-analysis.cz/data/v1/trust/trust.parquet">Parquet</a> <a href="https://meta-analysis.cz/api/v1/codebooks/trust.json">codebook</a></td>
-<td><a href="https://meta-analysis.cz/trust/">page</a></td>
-</tr>
-<tr>
 <td><a href="https://meta-analysis.cz/house_prices/">When Does Monetary Policy Sway House Prices? A Meta-Analysis</a></td>
 <td class="num">1,555 <span class="horizon-note" title="One row per impulse-response horizon, not per independent estimate">per horizon</span></td>
 <td>semi-elasticity (proportional)</td>
@@ -227,6 +205,13 @@ unexplained.</p>
 <td>months</td>
 <td><a href="https://meta-analysis.cz/data/v1/lags/lags.csv">CSV</a> <a href="https://meta-analysis.cz/data/v1/lags/lags.parquet">Parquet</a> <a href="https://meta-analysis.cz/api/v1/codebooks/lags.json">codebook</a></td>
 <td><a href="https://meta-analysis.cz/lags/">page</a></td>
+</tr>
+<tr>
+<td><a href="https://meta-analysis.cz/price_puzzle/">How to Solve the Price Puzzle? A Meta-Analysis</a></td>
+<td class="num">1,415 <span class="horizon-note" title="One row per impulse-response horizon, not per independent estimate">per horizon</span></td>
+<td>proportional change in the price level</td>
+<td><a href="https://meta-analysis.cz/data/v1/price_puzzle/price_puzzle.csv">CSV</a> <a href="https://meta-analysis.cz/data/v1/price_puzzle/price_puzzle.parquet">Parquet</a> <a href="https://meta-analysis.cz/api/v1/codebooks/price_puzzle.json">codebook</a></td>
+<td><a href="https://doi.org/10.1111/j.1538-4616.2012.00561.x">Journal of Money, Credit and Banking</a></td>
 </tr>
 <tr>
 <td><a href="https://meta-analysis.cz/border/">Do Borders Really Slash Trade? A Meta-Analysis</a></td>
@@ -266,7 +251,7 @@ unexplained.</p>
 <tr>
 <td><a href="https://meta-analysis.cz/migrant/">The Elasticity of Substitution between Native and Immigrant Labor: A Meta-Analysis</a></td>
 <td class="num">1,091</td>
-<td>elasticity</td>
+<td>negative inverse elasticity</td>
 <td><a href="https://meta-analysis.cz/data/v1/migrant/migrant.csv">CSV</a> <a href="https://meta-analysis.cz/data/v1/migrant/migrant.parquet">Parquet</a> <a href="https://meta-analysis.cz/api/v1/codebooks/migrant.json">codebook</a></td>
 <td><a href="https://meta-analysis.cz/migrant/">page</a></td>
 </tr>
@@ -371,7 +356,7 @@ unexplained.</p>
 <tr>
 <td><a href="https://meta-analysis.cz/remittances/">Remittances and Economic Growth: A Meta-Analysis</a></td>
 <td class="num">490</td>
-<td>regression coefficient</td>
+<td>partial correlation coefficient</td>
 <td><a href="https://meta-analysis.cz/data/v1/remittances/remittances.csv">CSV</a> <a href="https://meta-analysis.cz/data/v1/remittances/remittances.parquet">Parquet</a> <a href="https://meta-analysis.cz/api/v1/codebooks/remittances.json">codebook</a></td>
 <td><a href="https://doi.org/10.1016/j.worlddev.2020.105021">World Development</a></td>
 </tr>
@@ -402,6 +387,13 @@ unexplained.</p>
 <td>standardised mean difference</td>
 <td><a href="https://meta-analysis.cz/data/v1/learning/learning.csv">CSV</a> <a href="https://meta-analysis.cz/data/v1/learning/learning.parquet">Parquet</a> <a href="https://meta-analysis.cz/api/v1/codebooks/learning.json">codebook</a></td>
 <td><a href="https://meta-analysis.cz/learning/">page</a></td>
+</tr>
+<tr>
+<td><a href="https://meta-analysis.cz/trust/">Trust, Rule of Law, and the Size Premium: Evidence from a Meta-Analysis</a></td>
+<td class="num">284</td>
+<td>percent</td>
+<td><a href="https://meta-analysis.cz/data/v1/trust/trust.csv">CSV</a> <a href="https://meta-analysis.cz/data/v1/trust/trust.parquet">Parquet</a> <a href="https://meta-analysis.cz/api/v1/codebooks/trust.json">codebook</a></td>
+<td><a href="https://meta-analysis.cz/trust/">page</a></td>
 </tr>
 <tr>
 <td><a href="https://meta-analysis.cz/reforms/">Structural Reforms and Economic Growth: A Meta-Analysis</a></td>
@@ -457,8 +449,6 @@ counted twice.</p>
 <dd>outcome is the transmission lag (mon_bot, months to the price trough); it has no sampling standard error, so it cannot enter an effect/SE table</dd>
 <dt>substitution</dt>
 <dd>duplicate of eis: identical estimates, row for row</dd>
-<dt>trust</dt>
-<dd>later, larger collection of the same literature as size; partially overlaps it and is excluded to avoid double counting</dd>
 </dl>
 
 <h2>Machine-readable</h2>
@@ -485,9 +475,7 @@ under CC BY is satisfied here.</p>
 
 <p class="ref">Havranek, T. and Z. Irsova (2026). meta-analysis.cz: harmonised estimate-level data from meta-analyses in economics. Zenodo. https://doi.org/10.5281/zenodo.21773678</p>
 
-<p>That is the concept DOI: it always resolves to the newest version. In a replication
-package, where the exact files matter, cite this release instead:
-<a href="https://doi.org/10.5281/zenodo.21773679">10.5281/zenodo.21773679</a>, version 0.9.0-beta.</p>
+<p>That is the concept DOI: it always resolves to the newest version. Version 1.0.0 has not been deposited yet, so it has no version DOI of its own. Until it does, cite the concept DOI above and state the version you used (1.0.0); the files here are that version.</p>
 
 <div class="funding">The papers themselves, with their abstracts, figures and replication
 packages, are on the <a href="/">main catalogue</a>.</div>

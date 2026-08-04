@@ -673,3 +673,54 @@ a:visited{ color:var(--accent-dark); }
 .known-issues p:last-child, .known-issues ul:last-child{ margin-bottom:0; }
 .known-issues li{ margin-bottom:var(--s2); }
 .known-issues code{ font-size:.9em; }
+
+/* ---- /results/ ------------------------------------------------------------
+   One answer per meta-analysis, phrased as the question it answers. The page has
+   no sidebar, so the shell rule that widens a sidebar-less page applies and the
+   column runs full width; results are capped at a readable measure instead. */
+.entry.results{ max-width:48rem; }
+.r-filter{ margin:var(--s5) 0 var(--s6); padding:0; border:0; }
+.r-filter fieldset{ border:0; padding:0; margin:0 0 var(--s3); min-width:0; }
+.r-filter label{
+  display:block; margin-bottom:var(--s2);
+  font:600 var(--f-2)/1 var(--sans); letter-spacing:.06em;
+  text-transform:uppercase; color:var(--ink-soft);
+}
+.r-filter input[type="search"]{
+  width:100%; max-width:26rem; padding:var(--s2) var(--s3);
+  font:var(--f0)/1.3 var(--sans); color:var(--ink);
+  border:1px solid var(--control); border-radius:var(--radius); background:var(--paper);
+}
+.chips{ display:flex; flex-wrap:wrap; gap:var(--s2); }
+.chip{
+  padding:var(--s2) var(--s3); min-height:2.25rem;
+  font:var(--f-1)/1 var(--sans); color:var(--accent);
+  background:var(--paper); border:1px solid var(--control);
+  border-radius:999px; cursor:pointer;
+}
+.chip:hover{ background:var(--tint); }
+.chip.is-on{ background:var(--slate); border-color:var(--slate); color:#fff; }
+.r-count{ margin:var(--s3) 0 0; font:var(--f-1)/1 var(--sans); color:var(--ink-soft); }
+
+.r-field{ margin-top:var(--s6); }
+.r-field h2{
+  padding-bottom:var(--s2); border-bottom:1px solid var(--rule);
+  font:600 var(--f-2)/1.2 var(--sans); letter-spacing:.07em;
+  text-transform:uppercase; color:var(--ink-soft);
+}
+.result{ margin:var(--s5) 0; padding-bottom:var(--s4); border-bottom:1px solid var(--rule); }
+.result:last-child{ border-bottom:0; }
+.result h3{ margin:0 0 var(--s2); font:400 var(--f1)/1.3 var(--serif); color:var(--ink); }
+/* the answer is the thing people came for: it gets the weight, not the heading */
+.r-answer{ margin:0 0 var(--s3); font-size:var(--f0); color:var(--ink); }
+.r-caveat, .r-basis, .r-flag{
+  margin:0 0 var(--s2); font:var(--f-1)/1.5 var(--sans); color:var(--ink-soft);
+}
+.r-links{ margin:var(--s3) 0 0; font:var(--f-1)/1 var(--sans); }
+.result[hidden], .r-field[hidden]{ display:none; }
+
+.r-cite{
+  margin:0 0 var(--s2); font:var(--f-1)/1.5 var(--sans); color:var(--ink-soft);
+}
+.r-cite b{ color:var(--ink); font-weight:600; }
+.r-updated{ font:var(--f-1)/1.5 var(--sans); color:var(--ink-soft); }
