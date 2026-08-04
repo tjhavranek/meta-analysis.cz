@@ -252,7 +252,7 @@ Additional material: https://meta-analysis.cz/forward/appendix.pdf
 Data: https://meta-analysis.cz/forward/forward.dta
 Code: https://meta-analysis.cz/forward/forward.do
 
-Abstract: A key theoretical prediction in financial economics is that under risk neutrality and rational expectations a currency's forward rates should form unbiased predictors of future spot rates. Yet scores of empirical studies report negative slope coefficients from regressions of spot rates on forward rates, which is inconsistent with the forward rate unbiasedness hypothesis. We collect 3,643 estimates from 91 research articles and using recently developed techniques investigate the effect of publication and misspecification biases on the reported results. Correcting for these biases we estimate the slope coefficients of 0.31 and 0.98 for developed and emerging currencies respectively, which implies that empirical evidence is in line with the theoretical prediction for emerging economies and less puzzling than commonly thought for developed economies. Our results also suggest that the coefficients are systematically influenced by the choice of data, numeraire currencies, and estimation methods.
+Abstract: A key theoretical prediction in financial economics is that under risk neutrality and rational expectations a currency's forward rates should form unbiased predictors of future spot rates. Yet scores of empirical studies report negative slope coefficients from regressions of spot rates on forward rates. We collect 3,643 estimates from 91 research articles and using recently developed techniques investigate the effect of publication and misspecification biases on the reported results. Correcting for these biases yields slope coefficients in the intervals (0.23,0.45) and (0.95,1.16) for the currencies of developed and emerging countries respectively, which implies that empirical evidence is in line with the theoretical prediction for emerging economies and less puzzling than commonly thought for developed economies. Our results also suggest that the coefficients are systematically influenced by the choice of data, numeraire currency, and estimation method.
 
 ## Publication and Identification Biases in Measuring the Intertemporal Substitution of Labor Supply
 URL: https://meta-analysis.cz/frisch/
@@ -288,9 +288,9 @@ Abstract: One of the most frequently examined statistical relationships in energ
 URL: https://meta-analysis.cz/guidelines/
 Citation: Zuzana Irsova, Hristos Doucouliagos, Tomas Havranek, and T. D. Stanley (2024): "Meta-Analysis of Social Science Research: A Practitioner’s Guide." Journal of Economic Surveys 38(5): 1547-1566.
 Published version: https://doi.org/10.1111/joes.12595
-Meta-analysis guidelines: https://onlinelibrary.wiley.com/doi/full/10.1111/joes.12595
+Guide (PDF): https://meta-analysis.cz/guidelines/guidelines2.pdf
+Published version: https://onlinelibrary.wiley.com/doi/full/10.1111/joes.12595
 Blog version: https://www.maer-net.org/post/methods-guidelines-for-meta-analysis
-Meta-Analysis of Social Science Research: https://meta-analysis.cz/guidelines/guidelines2.pdf
 
 Abstract: This paper provides concise, nontechnical, step-by-step guidelines on how to conduct a modern meta-analysis, especially in social sciences. We treat publication bias, p-hacking, and systematic heterogeneity as phenomena meta-analysts must always confront. To this end, we provide concrete methodological recommendations. Meta-analysis methods have advanced notably over the last few years. Yet many meta-analyses still rely on outdated approaches, some ignoring publication bias and systematic heterogeneity. While limitations persist, recently developed techniques allow robust inference even in the face of formidable problems in the underlying empirical literature. The purpose of this paper is to summarize the state of the art in a way accessible to aspiring meta-analysts in any field. We also discuss how meta-analysts can use advances in artificial intelligence to work more efficiently.
 
@@ -479,7 +479,7 @@ URL: https://meta-analysis.cz/scc/
 Citation: Tomas Havranek, Zuzana Irsova, Karel Janda, and David Zilberman (2015), "Selective Reporting and the Social Cost of Carbon." Energy Economics 51, 364-406.
 Published version: https://doi.org/10.1016/j.eneco.2015.08.009
 Paper: https://meta-analysis.cz/scc/scc2.pdf
-Examined Studies: http://scholar.google.cz/scholar?as_sdt=1,5&q=%22social+costs+of+carbon%22+OR+%22social+cost+of+carbon%22+carbon+climate+change+marginal+damage+costs+emissions+greenhouse+impacts&hl=en&as_ylo=2012&as_vis=1
+Examined Studies: http://scholar.google.cz/scholar?as_sdt=1,5&amp;q=%22social+costs+of+carbon%22+OR+%22social+cost+of+carbon%22+carbon+climate+change+marginal+damage+costs+emissions+greenhouse+impacts&hl=en&as_ylo=2012&as_vis=1
 Included Studies: https://meta-analysis.cz/scc/studies.xls
 Data: https://meta-analysis.cz/scc/scc.xlsx
 Code: https://meta-analysis.cz/scc/scc.do
