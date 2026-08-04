@@ -149,6 +149,22 @@ for proj in sorted(man):
     df=pd.read_parquet(os.path.join(OUT,"data",DV,proj,f"{proj}.parquet"))
     if o.get("reshape_long"):                 # wide horizons -> one row per (estimate, horizon)
         rs=o["reshape_long"]; parts=[]
+        # DEDUPE FIRST. puzzle.xls is a HYBRID: already long on `horizon` (7 rows per impulse
+        # response, horizons 3/6/12/18/36/88/99) while the price-response columns M3R/SE3... are
+        # WIDE and identical across all 7. Melting the wide columns once per row therefore
+        # emitted each estimate 7 times: 7,420 rows where 1,060 are distinct, 6,360 spurious
+        # copies -- 11.8% of the whole pooled table. Uniform replication leaves a weighted mean
+        # unchanged, which is why the estimator battery never flinched, but it overstates the
+        # information count sevenfold and understates any iid standard error by sqrt(7)=2.65.
+        # 90_roundtrip could not see it either: it compares SETS, so duplicates are invisible.
+        # Found by the Codex audit, 2026-08-04. Only `horizon` varies within a block, so
+        # dropping duplicates on every other column is exact, not a heuristic.
+        if rs.get("dedupe_on_all_but"):
+            keep_cols=[c for c in df.columns if c not in rs["dedupe_on_all_but"]]
+            before=len(df)
+            df=df.drop_duplicates(subset=keep_cols).reset_index(drop=True)
+            if before!=len(df):
+                print(f"   {proj}: reshape dedupe {before} -> {len(df)} source records")
         carry=[c for c in df.columns if not any(c in (a,b) for _,a,b in rs["pairs"])]
         for h,ec,sc in rs["pairs"]:
             if ec not in df.columns or sc not in df.columns: continue

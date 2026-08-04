@@ -39,11 +39,14 @@
      "M36R",
      "SE36"
     ]
+   ],
+   "dedupe_on_all_but": [
+    "horizon"
    ]
   },
   "units": "proportional change in the price level",
   "verified_by": "puzzle.do computes t=res/se and prec=1/se on the long form restricted to horizon in {3,6,12,18,36}; the published file is wide, so the M{h}R / SE{h} pairs are reshaped here to reproduce it. Median |t| is 0.75-0.91 across horizons, consistent with the literature's mostly insignificant responses.",
-  "note": "shares its source file with the lags project, but uses different columns, so it is not a duplicate. One row per (estimate, horizon): rows within an impulse response are not independent."
+  "note": "puzzle.xls is a HYBRID layout: already long on `horizon` (7 rows per impulse response, horizons 3/6/12/18/36/88/99) while the price-response columns M3R/SE3... are WIDE and constant across all 7. The reshape must DEDUPE to one record per impulse response before melting, or every estimate is emitted 7 times -- which is what 0.9.0-beta shipped: 7,420 rows where ~1,075 are distinct, 6,345 spurious copies, 11.8% of the whole pooled table. The `lags` dataset shares this file and uses `mon_bot`, which genuinely varies across the 7 rows; that is why the file is shaped this way. DEDUPE KEY: all columns except `horizon`, which is exact -- only `horizon` varies within a block. That yields 220 impulse responses and 1,075 selected-horizon rows. Deduping on the price-response columns alone would give 217 and 1,060, because 3 impulse responses have byte-identical responses at all five horizons but DISAGREE on `sdate`/`edate` within their own block -- an upstream coding inconsistency. Merging them would silently pick one date, so they are kept separate and flagged instead; if the authors confirm the dates are a coding error, the correct counts become 217 and 1,060. Found by the Codex audit, 2026-08-04."
  },
  "climate": {
   "effect": "estimate",
