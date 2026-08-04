@@ -108,8 +108,8 @@
   "direction_note": "Negative values are learning LOSS."
  },
  "migrant": {
-  "units": "elasticity",
-  "direction_note": "Stored as a negative inverse elasticity; a sign flip and inversion are needed to read it as the substitution elasticity discussed in the paper. Verify before pooling."
+  "units": "negative inverse elasticity",
+  "direction_note": "The stored value is NOT the elasticity. It is the negative inverse: 88.8% of values are negative with median -0.050, and -1/effect has median 15.38, matching the paper's headline substitution elasticity of 13 to about 22. To recover the elasticity take -1/effect, and convert the standard error by the delta method -- se/effect^2 -- rather than using the stored se unchanged. Do NOT pool this column with the other 'elasticity' literatures. Confirmed 2026-08-04 after the Fable and Codex audits both flagged it."
  },
  "price_puzzle": {
   "units": "proportional change in the price level",
@@ -120,7 +120,7 @@
   "direction_note": "Computed here from the reported t-statistic and degrees of freedom, following the paper's own code."
  },
  "remittances": {
-  "units": "regression coefficient",
+  "units": "partial correlation coefficient",
   "direction_note": null
  },
  "resource_curse": {
@@ -145,7 +145,7 @@
  },
  "skill": {
   "units": "elasticity",
-  "direction_note": "Stored as inverse elasticities; inversion is needed to read them as the skill-substitution elasticity. Dropping this step reverses the finding."
+  "direction_note": "Stored as inverse elasticities; inversion is needed to read them as the skill-substitution elasticity. Dropping this step reverses the finding. OPEN QUESTION, not resolved: two independent audits suggested this column is an inverse elasticity, on the grounds that PET on the stored scale is 0.326 whose reciprocal 3.07 is near the paper's headline of 4. That is a PET-level inference, and it does not hold row-wise -- the stored median is 1.42 and 1/1.42 = 0.70, nowhere near 4, with only 7.9% of values negative. So the simple inversion that demonstrably applies to `migrant` does NOT apply here. Units are left as 'elasticity' because relabelling on an unverified inference would be worse than the uncertainty. Settling it needs the paper's own transformation."
  },
  "students": {
   "units": "partial correlation coefficient",

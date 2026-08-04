@@ -2,7 +2,7 @@
  "name": "meta-analysis.cz data API",
  "version": "1.0.0",
  "api_version": "1.0.0",
- "data_version": "0.9.0-beta",
+ "data_version": "1.0.0",
  "version_note": "version and api_version describe this INTERFACE. data_version describes the harmonised table, and is what croissant.json reports. They move independently.",
  "description": "Estimate-level datasets from meta-analyses in economics and the social sciences, with the hand-coded study characteristics collected for each paper.",
  "license": {
@@ -30,17 +30,17 @@
  "counts": {
   "datasets": 44,
   "rows_in_source_files": 65349,
-  "estimates_in_analysis_samples": 61294,
-  "estimates_in_harmonised_table": 54076,
-  "literatures_in_harmonised_table": 39,
-  "in_harmonised_table": 39,
+  "estimates_in_analysis_samples": 53960,
+  "estimates_in_harmonised_table": 48355,
+  "literatures_in_harmonised_table": 40,
+  "in_harmonised_table": 40,
   "counts_explained": "rows_in_source_files counts every row of the 44 converted files. estimates_in_analysis_samples applies each paper's own filters and is what the catalogue table shows. estimates_in_harmonised_table additionally drops literatures that duplicate another exactly, overlap one already included, or lack per-estimate precision."
  },
  "harmonised_table": {
-  "version": "0.9.0-beta",
-  "status": "beta",
-  "n_rows": 54076,
-  "n_literatures": 39,
+  "version": "1.0.0",
+  "status": "stable",
+  "n_rows": 48355,
+  "n_literatures": 40,
   "columns": [
    "dataset",
    "study_id",
@@ -99,8 +99,7 @@
    "fdi": "no per-estimate precision exists: the file has no standard error, t-statistic, weight or inverse-SE column, so SE-based synthesis is impossible",
    "hedge": "duplicate of alphas: identical estimates, row for row",
    "lags": "outcome is the transmission lag (mon_bot, months to the price trough); it has no sampling standard error, so it cannot enter an effect/SE table",
-   "substitution": "duplicate of eis: identical estimates, row for row",
-   "trust": "later, larger collection of the same literature as size; partially overlaps it and is excluded to avoid double counting"
+   "substitution": "duplicate of eis: identical estimates, row for row"
   }
  },
  "counts_note": "`datasets` contains exactly counts.datasets entries, all of them real datasets. Inputs that were examined and excluded live in `excluded_resources`.",
@@ -185,6 +184,7 @@
    "rights_status": "cc-by-4.0",
    "license_url": "https://creativecommons.org/licenses/by/4.0/",
    "rights_note": "CC BY 4.0. Free to use, adapt and redistribute, including commercially and including as training data. The only condition is credit: cite the paper named in this entry.",
+   "max_precision_weight_share": 0.2143,
    "audit_status": "domain_reviewed"
   },
   {
@@ -218,11 +218,11 @@
     "effect": "alpha",
     "standard_error": "se",
     "standard_error_note": null,
-    "evidence": "t_match:tstat"
+    "evidence": "paper's replication code"
    },
    "effect_units": "percent",
    "direction_note": "Monthly return, not annualised.",
-   "column_mapping_verified_by": null,
+   "column_mapping_verified_by": "The paper's own replication code regresses alpha_w/se_w @ alphas.do:207 -- a winsorised copy of this pair, built inside the script from the raw columns. The published file carries only the raw columns, so they are what the harmonised table can offer. Found mechanically by 93_codegrep.py.",
    "in_harmonised_table": true,
    "reconciliation": {
     "n_estimates_reported_in_paper": 1019,
@@ -238,7 +238,8 @@
    "rights_status": "cc-by-4.0",
    "license_url": "https://creativecommons.org/licenses/by/4.0/",
    "rights_note": "CC BY 4.0. Free to use, adapt and redistribute, including commercially and including as training data. The only condition is credit: cite the paper named in this entry.",
-   "audit_status": "arithmetic_pairing_only"
+   "max_precision_weight_share": 0.0777,
+   "audit_status": "code_traced"
   },
   {
    "id": "armington",
@@ -271,11 +272,11 @@
     "effect": "armel",
     "standard_error": "se",
     "standard_error_note": null,
-    "evidence": "t_match:tstats"
+    "evidence": "paper's replication code"
    },
    "effect_units": "elasticity",
    "direction_note": null,
-   "column_mapping_verified_by": null,
+   "column_mapping_verified_by": "armington.do lines 94-96 run the headline FAT-PET on the WINSORISED pair: `ivreg2 armel_w se_w, cluster(idstudy idcountry)`. The paper's equation (1) is sigma_ij = sigma_0 + delta*SE(sigma_ij) + mu_ij, and it states it winsorises at the 2.5% level (mean 1.53 -> 1.45, which armel/armel_w reproduce: 1.531 -> 1.454).",
    "in_harmonised_table": true,
    "reconciliation": {
     "n_estimates_reported_in_paper": 3524,
@@ -291,7 +292,8 @@
    "rights_status": "cc-by-4.0",
    "license_url": "https://creativecommons.org/licenses/by/4.0/",
    "rights_note": "CC BY 4.0. Free to use, adapt and redistribute, including commercially and including as training data. The only condition is credit: cite the paper named in this entry.",
-   "audit_status": "arithmetic_pairing_only"
+   "max_precision_weight_share": 0.1474,
+   "audit_status": "code_traced"
   },
   {
    "id": "beauty",
@@ -324,11 +326,11 @@
     "effect": "premium",
     "standard_error": "se_premium",
     "standard_error_note": null,
-    "evidence": "t_match:tstat_premium"
+    "evidence": "paper's replication code"
    },
    "effect_units": "percent",
    "direction_note": null,
-   "column_mapping_verified_by": null,
+   "column_mapping_verified_by": "beauty.do line 390 runs the headline FAT-PET `ivreg2 premium_w se_premium_w, cluster(study_id)`, where premium_w/se_premium_w are winsorised copies built at line 69 by `foreach v in premium se_premium premium_sd se_premium_sd { winsor2 `v', suffix(_w) cuts(1 99) }`. The site's beauty.xlsx contains premium and se_premium but NOT premium_w/se_premium_w, so the raw pair is the only thing the source offers.",
    "in_harmonised_table": true,
    "reconciliation": {
     "n_estimates_reported_in_paper": 1159,
@@ -344,7 +346,8 @@
    "rights_status": "cc-by-4.0",
    "license_url": "https://creativecommons.org/licenses/by/4.0/",
    "rights_note": "CC BY 4.0. Free to use, adapt and redistribute, including commercially and including as training data. The only condition is credit: cite the paper named in this entry.",
-   "audit_status": "arithmetic_pairing_only"
+   "max_precision_weight_share": 0.5126,
+   "audit_status": "code_traced"
   },
   {
    "id": "bma",
@@ -395,6 +398,7 @@
    "rights_status": "cc-by-4.0",
    "license_url": "https://creativecommons.org/licenses/by/4.0/",
    "rights_note": "CC BY 4.0. Free to use, adapt and redistribute, including commercially and including as training data. The only condition is credit: cite the paper named in this entry.",
+   "max_precision_weight_share": 0.0716,
    "audit_status": "domain_reviewed",
    "note": "HORIZONTAL spillovers. Shares the FDI spillovers database with the 'spillovers' project, which takes the vertical subset. The two are complementary, not duplicates."
   },
@@ -427,11 +431,11 @@
     "effect": "b",
     "standard_error": "se",
     "standard_error_note": null,
-    "evidence": "t_match:tstat"
+    "evidence": "paper's replication code"
    },
    "effect_units": "semi-elasticity",
    "direction_note": "Raw coefficient on the border dummy in a log-linear gravity model; the paper's headline reduction is a transform of it, not the raw value.",
-   "column_mapping_verified_by": null,
+   "column_mapping_verified_by": "The paper's own replication code regresses exactly this pair at border.do:108. Found mechanically by 93_codegrep.py, which reads each paper's code and reads off the two variables of its headline meta-analysis regression.",
    "in_harmonised_table": true,
    "reconciliation": {
     "n_estimates_reported_in_paper": 1271,
@@ -447,7 +451,8 @@
    "rights_status": "cc-by-4.0",
    "license_url": "https://creativecommons.org/licenses/by/4.0/",
    "rights_note": "CC BY 4.0. Free to use, adapt and redistribute, including commercially and including as training data. The only condition is credit: cite the paper named in this entry.",
-   "audit_status": "arithmetic_pairing_only"
+   "max_precision_weight_share": 0.0223,
+   "audit_status": "code_traced"
   },
   {
    "id": "class",
@@ -480,11 +485,11 @@
     "effect": "pcc",
     "standard_error": "se_pcc",
     "standard_error_note": null,
-    "evidence": "t_match:t_stat"
+    "evidence": "paper's replication code"
    },
    "effect_units": "partial correlation coefficient",
    "direction_note": null,
-   "column_mapping_verified_by": null,
+   "column_mapping_verified_by": "The paper's own replication code regresses pcc_w/se_pcc_w @ class.do:737 -- a winsorised copy of this pair, built inside the script from the raw columns. The published file carries only the raw columns, so they are what the harmonised table can offer. Found mechanically by 93_codegrep.py.",
    "in_harmonised_table": true,
    "reconciliation": {
     "n_estimates_reported_in_paper": 2819,
@@ -500,7 +505,8 @@
    "rights_status": "cc-by-4.0",
    "license_url": "https://creativecommons.org/licenses/by/4.0/",
    "rights_note": "CC BY 4.0. Free to use, adapt and redistribute, including commercially and including as training data. The only condition is credit: cite the paper named in this entry.",
-   "audit_status": "arithmetic_pairing_only"
+   "max_precision_weight_share": 0.0211,
+   "audit_status": "code_traced"
   },
   {
    "id": "climate",
@@ -551,6 +557,7 @@
    "rights_status": "cc-by-4.0",
    "license_url": "https://creativecommons.org/licenses/by/4.0/",
    "rights_note": "CC BY 4.0. Free to use, adapt and redistribute, including commercially and including as training data. The only condition is credit: cite the paper named in this entry.",
+   "max_precision_weight_share": 0.6516,
    "audit_status": "domain_reviewed"
   },
   {
@@ -582,11 +589,11 @@
     "effect": "PCC",
     "standard_error": "SE PCC",
     "standard_error_note": null,
-    "evidence": "t_match:t"
+    "evidence": "paper's replication code"
    },
    "effect_units": "partial correlation coefficient",
    "direction_note": null,
-   "column_mapping_verified_by": null,
+   "column_mapping_verified_by": "Our column is literally named 'SE PCC' (with a space) and competition.do:38 regresses PCC on SEPCC -- the same column, the spacing differs between the spreadsheet header and the Stata name.",
    "in_harmonised_table": true,
    "reconciliation": {
     "n_estimates_reported_in_paper": 598,
@@ -602,7 +609,8 @@
    "rights_status": "cc-by-4.0",
    "license_url": "https://creativecommons.org/licenses/by/4.0/",
    "rights_note": "CC BY 4.0. Free to use, adapt and redistribute, including commercially and including as training data. The only condition is credit: cite the paper named in this entry.",
-   "audit_status": "arithmetic_pairing_only"
+   "max_precision_weight_share": 0.0162,
+   "audit_status": "code_traced"
   },
   {
    "id": "discrate",
@@ -654,6 +662,7 @@
    "rights_status": "cc-by-4.0",
    "license_url": "https://creativecommons.org/licenses/by/4.0/",
    "rights_note": "CC BY 4.0. Free to use, adapt and redistribute, including commercially and including as training data. The only condition is credit: cite the paper named in this entry.",
+   "max_precision_weight_share": 0.2264,
    "audit_status": "domain_reviewed"
   },
   {
@@ -670,7 +679,7 @@
     "doi": "https://doi.org/10.5547/01956574.39.2.thav",
     "url": "https://meta-analysis.cz/dst/"
    },
-   "description": "A meta-analysis of 162 estimates from 44 studies finds daylight saving time yields slight electricity savings of about 0.34%.",
+   "description": "A meta-analysis of 162 estimates from 44 studies finds daylight saving time saves essentially no electricity: 0.01% after correction, against a 0.34% simple average of reported estimates.",
    "n_estimates": 162,
    "n_variables": 36,
    "n_estimates_in_literature": 101,
@@ -706,6 +715,7 @@
    "rights_status": "cc-by-4.0",
    "license_url": "https://creativecommons.org/licenses/by/4.0/",
    "rights_note": "CC BY 4.0. Free to use, adapt and redistribute, including commercially and including as training data. The only condition is credit: cite the paper named in this entry.",
+   "max_precision_weight_share": 0.5033,
    "audit_status": "domain_reviewed"
   },
   {
@@ -738,11 +748,11 @@
     "effect": "pcc",
     "standard_error": "pcc_se",
     "standard_error_note": null,
-    "evidence": "t_match:tstat"
+    "evidence": "paper's replication code"
    },
    "effect_units": "partial correlation coefficient",
    "direction_note": null,
-   "column_mapping_verified_by": null,
+   "column_mapping_verified_by": "The paper's own replication code regresses exactly this pair at education.do:58. Found mechanically by 93_codegrep.py, which reads each paper's code and reads off the two variables of its headline meta-analysis regression.",
    "in_harmonised_table": true,
    "reconciliation": {
     "n_estimates_reported_in_paper": 443,
@@ -758,7 +768,8 @@
    "rights_status": "cc-by-4.0",
    "license_url": "https://creativecommons.org/licenses/by/4.0/",
    "rights_note": "CC BY 4.0. Free to use, adapt and redistribute, including commercially and including as training data. The only condition is credit: cite the paper named in this entry.",
-   "audit_status": "arithmetic_pairing_only"
+   "max_precision_weight_share": 0.018,
+   "audit_status": "code_traced"
   },
   {
    "id": "eis",
@@ -808,6 +819,7 @@
    "rights_status": "cc-by-4.0",
    "license_url": "https://creativecommons.org/licenses/by/4.0/",
    "rights_note": "CC BY 4.0. Free to use, adapt and redistribute, including commercially and including as training data. The only condition is credit: cite the paper named in this entry.",
+   "max_precision_weight_share": 0.2785,
    "audit_status": "domain_reviewed"
   },
   {
@@ -862,6 +874,7 @@
    "rights_status": "cc-by-4.0",
    "license_url": "https://creativecommons.org/licenses/by/4.0/",
    "rights_note": "CC BY 4.0. Free to use, adapt and redistribute, including commercially and including as training data. The only condition is credit: cite the paper named in this entry.",
+   "max_precision_weight_share": 1.0,
    "audit_status": "domain_reviewed"
   },
   {
@@ -894,11 +907,11 @@
     "effect": "estimate",
     "standard_error": "se_estimate",
     "standard_error_note": null,
-    "evidence": "t_match:t_stat"
+    "evidence": "paper's replication code"
    },
    "effect_units": "ESG rating points",
    "direction_note": "Points on the Bloomberg/LSEG ESG scale per percentage point of board gender diversity, not a percent change.",
-   "column_mapping_verified_by": null,
+   "column_mapping_verified_by": "The paper's own replication code regresses exactly this pair at replication.zip:replication_package/Code/esg_code_v5.do:496. Found mechanically by 93_codegrep.py, which reads each paper's code and reads off the two variables of its headline meta-analysis regression.",
    "in_harmonised_table": true,
    "reconciliation": {
     "n_estimates_reported_in_paper": 533,
@@ -914,7 +927,8 @@
    "rights_status": "cc-by-4.0",
    "license_url": "https://creativecommons.org/licenses/by/4.0/",
    "rights_note": "CC BY 4.0. Free to use, adapt and redistribute, including commercially and including as training data. The only condition is credit: cite the paper named in this entry.",
-   "audit_status": "arithmetic_pairing_only"
+   "max_precision_weight_share": 0.42,
+   "audit_status": "code_traced"
   },
   {
    "id": "euro",
@@ -944,11 +958,11 @@
     "effect": "gamma",
     "standard_error": "se",
     "standard_error_note": null,
-    "evidence": "t_match:tstat"
+    "evidence": "paper's replication code"
    },
    "effect_units": "semi-elasticity",
    "direction_note": "Raw gravity-model coefficient on the currency-union dummy; the headline trade effect is a transform of it.",
-   "column_mapping_verified_by": null,
+   "column_mapping_verified_by": "The paper's own replication code regresses exactly this pair at data.zip:trade_meta.do:16. Found mechanically by 93_codegrep.py, which reads each paper's code and reads off the two variables of its headline meta-analysis regression.",
    "in_harmonised_table": true,
    "reconciliation": {
     "n_estimates_reported_in_paper": null,
@@ -964,7 +978,8 @@
    "rights_status": "cc-by-4.0",
    "license_url": "https://creativecommons.org/licenses/by/4.0/",
    "rights_note": "CC BY 4.0. Free to use, adapt and redistribute, including commercially and including as training data. The only condition is credit: cite the paper named in this entry.",
-   "audit_status": "arithmetic_pairing_only"
+   "max_precision_weight_share": 0.3895,
+   "audit_status": "code_traced"
   },
   {
    "id": "excess_sensitivity",
@@ -1015,6 +1030,7 @@
    "rights_status": "cc-by-4.0",
    "license_url": "https://creativecommons.org/licenses/by/4.0/",
    "rights_note": "CC BY 4.0. Free to use, adapt and redistribute, including commercially and including as training data. The only condition is credit: cite the paper named in this entry.",
+   "max_precision_weight_share": 0.1872,
    "audit_status": "domain_reviewed"
   },
   {
@@ -1067,6 +1083,7 @@
    "rights_status": "cc-by-4.0",
    "license_url": "https://creativecommons.org/licenses/by/4.0/",
    "rights_note": "CC BY 4.0. Free to use, adapt and redistribute, including commercially and including as training data. The only condition is credit: cite the paper named in this entry.",
+   "max_precision_weight_share": null,
    "audit_status": "excluded_no_precision"
   },
   {
@@ -1119,6 +1136,7 @@
    "rights_status": "cc-by-4.0",
    "license_url": "https://creativecommons.org/licenses/by/4.0/",
    "rights_note": "CC BY 4.0. Free to use, adapt and redistribute, including commercially and including as training data. The only condition is credit: cite the paper named in this entry.",
+   "max_precision_weight_share": 0.1404,
    "audit_status": "domain_reviewed"
   },
   {
@@ -1172,6 +1190,7 @@
    "rights_status": "cc-by-4.0",
    "license_url": "https://creativecommons.org/licenses/by/4.0/",
    "rights_note": "CC BY 4.0. Free to use, adapt and redistribute, including commercially and including as training data. The only condition is credit: cite the paper named in this entry.",
+   "max_precision_weight_share": 0.4466,
    "audit_status": "domain_reviewed"
   },
   {
@@ -1223,6 +1242,7 @@
    "rights_status": "cc-by-4.0",
    "license_url": "https://creativecommons.org/licenses/by/4.0/",
    "rights_note": "CC BY 4.0. Free to use, adapt and redistribute, including commercially and including as training data. The only condition is credit: cite the paper named in this entry.",
+   "max_precision_weight_share": 0.0692,
    "audit_status": "domain_reviewed"
   },
   {
@@ -1275,6 +1295,7 @@
    "rights_status": "cc-by-4.0",
    "license_url": "https://creativecommons.org/licenses/by/4.0/",
    "rights_note": "CC BY 4.0. Free to use, adapt and redistribute, including commercially and including as training data. The only condition is credit: cite the paper named in this entry.",
+   "max_precision_weight_share": 0.0602,
    "audit_status": "arithmetic_pairing_only"
   },
   {
@@ -1327,6 +1348,7 @@
    "rights_status": "cc-by-4.0",
    "license_url": "https://creativecommons.org/licenses/by/4.0/",
    "rights_note": "CC BY 4.0. Free to use, adapt and redistribute, including commercially and including as training data. The only condition is credit: cite the paper named in this entry.",
+   "max_precision_weight_share": 0.9986,
    "audit_status": "domain_reviewed"
   },
   {
@@ -1381,6 +1403,7 @@
    "rights_status": "cc-by-4.0",
    "license_url": "https://creativecommons.org/licenses/by/4.0/",
    "rights_note": "CC BY 4.0. Free to use, adapt and redistribute, including commercially and including as training data. The only condition is credit: cite the paper named in this entry.",
+   "max_precision_weight_share": null,
    "audit_status": "duplicate_excluded",
    "note": "Two papers on one dataset. 'alphas' is kept because it fills 10 harmonised moderators against hedge's 7, and hedge's set is a strict subset, so nothing is lost. CITE the published version for these estimates: Hedge Fund Performance: A Meta-Analysis, Journal of Economic Surveys 2024 (DOI on the hedge dataset entry). The hedge file remains published in full as its own dataset."
   },
@@ -1434,6 +1457,7 @@
    "rights_status": "cc-by-4.0",
    "license_url": "https://creativecommons.org/licenses/by/4.0/",
    "rights_note": "CC BY 4.0. Free to use, adapt and redistribute, including commercially and including as training data. The only condition is credit: cite the paper named in this entry.",
+   "max_precision_weight_share": 0.2663,
    "audit_status": "domain_reviewed"
   },
   {
@@ -1489,6 +1513,7 @@
    "rights_status": "cc-by-4.0",
    "license_url": "https://creativecommons.org/licenses/by/4.0/",
    "rights_note": "CC BY 4.0. Free to use, adapt and redistribute, including commercially and including as training data. The only condition is credit: cite the paper named in this entry.",
+   "max_precision_weight_share": 0.0156,
    "audit_status": "domain_reviewed"
   },
   {
@@ -1523,11 +1548,11 @@
     "effect": "Estimate_win",
     "standard_error": "SE_win",
     "standard_error_note": null,
-    "evidence": "t_match:tstat"
+    "evidence": "paper's replication code"
    },
    "effect_units": "percentage points",
    "direction_note": null,
-   "column_mapping_verified_by": null,
+   "column_mapping_verified_by": "The paper's own replication code regresses exactly this pair at replication.zip:replication_package_FIXED/stata/Inflation_v34.do:391. Found mechanically by 93_codegrep.py, which reads each paper's code and reads off the two variables of its headline meta-analysis regression.",
    "in_harmonised_table": true,
    "reconciliation": {
     "n_estimates_reported_in_paper": 777,
@@ -1543,7 +1568,8 @@
    "rights_status": "cc-by-4.0",
    "license_url": "https://creativecommons.org/licenses/by/4.0/",
    "rights_note": "CC BY 4.0. Free to use, adapt and redistribute, including commercially and including as training data. The only condition is credit: cite the paper named in this entry.",
-   "audit_status": "arithmetic_pairing_only"
+   "max_precision_weight_share": 0.0163,
+   "audit_status": "code_traced"
   },
   {
    "id": "lags",
@@ -1594,6 +1620,7 @@
    "rights_status": "cc-by-4.0",
    "license_url": "https://creativecommons.org/licenses/by/4.0/",
    "rights_note": "CC BY 4.0. Free to use, adapt and redistribute, including commercially and including as training data. The only condition is credit: cite the paper named in this entry.",
+   "max_precision_weight_share": null,
    "audit_status": "excluded_no_precision",
    "note": "Shares a source FILE with 'price_puzzle' but uses different columns or rows. A distinct literature, NOT a duplicate, and pooled on its own."
   },
@@ -1651,6 +1678,7 @@
    "rights_status": "cc-by-4.0",
    "license_url": "https://creativecommons.org/licenses/by/4.0/",
    "rights_note": "CC BY 4.0. Free to use, adapt and redistribute, including commercially and including as training data. The only condition is credit: cite the paper named in this entry.",
+   "max_precision_weight_share": 0.3244,
    "audit_status": "domain_reviewed"
   },
   {
@@ -1684,11 +1712,11 @@
     "effect": "elasticity",
     "standard_error": "se",
     "standard_error_note": null,
-    "evidence": "t_match:tstat"
+    "evidence": "paper's replication code"
    },
-   "effect_units": "elasticity",
-   "direction_note": "Stored as a negative inverse elasticity; a sign flip and inversion are needed to read it as the substitution elasticity discussed in the paper. Verify before pooling.",
-   "column_mapping_verified_by": null,
+   "effect_units": "negative inverse elasticity",
+   "direction_note": "The stored value is NOT the elasticity. It is the negative inverse: 88.8% of values are negative with median -0.050, and -1/effect has median 15.38, matching the paper's headline substitution elasticity of 13 to about 22. To recover the elasticity take -1/effect, and convert the standard error by the delta method -- se/effect^2 -- rather than using the stored se unchanged. Do NOT pool this column with the other 'elasticity' literatures. Confirmed 2026-08-04 after the Fable and Codex audits both flagged it.",
+   "column_mapping_verified_by": "The paper's replication is in R, not Stata: run_replication_package.R:1002 runs stats::lm(elasticity ~ se, data = master, weights = se_weight) and clusters on idstudy -- the FAT-PET on exactly this pair. Found by 93_codegrep.py once R patterns were added; a Stata-only scan had reported this literature as having no regression at all.",
    "in_harmonised_table": true,
    "reconciliation": {
     "n_estimates_reported_in_paper": 1091,
@@ -1704,7 +1732,8 @@
    "rights_status": "cc-by-4.0",
    "license_url": "https://creativecommons.org/licenses/by/4.0/",
    "rights_note": "CC BY 4.0. Free to use, adapt and redistribute, including commercially and including as training data. The only condition is credit: cite the paper named in this entry.",
-   "audit_status": "arithmetic_pairing_only"
+   "max_precision_weight_share": 0.0648,
+   "audit_status": "code_traced"
   },
   {
    "id": "price_puzzle",
@@ -1723,7 +1752,7 @@
    "description": "Meta-analysis of 1,000 VAR estimates shows the price puzzle stems from model misspecification, not a true price effect.",
    "n_estimates": 1519,
    "n_variables": 151,
-   "n_estimates_in_literature": 7420,
+   "n_estimates_in_literature": 1415,
    "source_file": "https://meta-analysis.cz/price_puzzle/puzzle.xls",
    "source_member": null,
    "source_sheet": "stata",
@@ -1744,7 +1773,7 @@
    "in_harmonised_table": true,
    "reconciliation": {
     "n_estimates_reported_in_paper": null,
-    "n_rows_in_harmonised_table": 7420,
+    "n_rows_in_harmonised_table": 1415,
     "note": null
    },
    "excluded_from_harmonised_because": null,
@@ -1756,8 +1785,9 @@
    "rights_status": "cc-by-4.0",
    "license_url": "https://creativecommons.org/licenses/by/4.0/",
    "rights_note": "CC BY 4.0. Free to use, adapt and redistribute, including commercially and including as training data. The only condition is credit: cite the paper named in this entry.",
+   "max_precision_weight_share": 0.0609,
    "audit_status": "domain_reviewed",
-   "note": "shares its source file with the lags project, but uses different columns, so it is not a duplicate. One row per (estimate, horizon): rows within an impulse response are not independent."
+   "note": "puzzle.xls is a HYBRID layout: already long on `horizon` (7 rows per impulse response) while the response columns are WIDE and constant across those 7. Melting the wide columns once per row emitted every estimate 7 times -- what 0.9.0-beta shipped: 7,420 rows of which ~6,345 were exact duplicates, identical in every column INCLUDING horizon, so they were never additional horizons. The file provides SEVEN horizons, not five: the month horizons 3/6/12/18/36 plus the trough (MBR/SEB, horizon code 99) and the peak (MPR/SEP, horizon code 88). puzzle.do line 29 excludes `horizon~=88 & horizon~=99` from its 'all horizons' figure and its headline regressions use the five month horizons, so the paper analyses five -- but this catalogue publishes what the file contains, and the trough and peak responses were being silently discarded. All seven are now emitted from the deduplicated records: 1,415 rows (211/218/218/220/208 for the month horizons, 202 trough, 138 peak). Owner's decision 2026-08-04: list every horizon. Anyone wanting the paper's own sample should filter to the five numeric horizons. HORIZON CODES: months 3/6/12/18/36 are literal; 99 marks the trough and 88 the peak, the source file's own codes. The trough/peak assignment is inferred from lags.do, which keeps horizon==99 and models mon_bot, the months to the price trough. If that is backwards the two labels swap and no value changes. Filter to horizon<=36 for the paper's own sample."
   },
   {
    "id": "reforms",
@@ -1808,6 +1838,7 @@
    "rights_status": "cc-by-4.0",
    "license_url": "https://creativecommons.org/licenses/by/4.0/",
    "rights_note": "CC BY 4.0. Free to use, adapt and redistribute, including commercially and including as training data. The only condition is credit: cite the paper named in this entry.",
+   "max_precision_weight_share": 0.0103,
    "audit_status": "domain_reviewed"
   },
   {
@@ -1837,19 +1868,19 @@
     "codebook": "https://meta-analysis.cz/api/v1/codebooks/remittances.json"
    },
    "core_columns": {
-    "effect": "COEF_L",
-    "standard_error": "SE_L",
-    "standard_error_note": null,
-    "evidence": "t_match:TSTAT_L"
+    "effect": "partial correlation computed from TSTAT_L and DF",
+    "standard_error": "computed as sqrt((1-r^2)/DF)",
+    "standard_error_note": "derived, not read from a column",
+    "evidence": "paper's replication code"
    },
-   "effect_units": "regression coefficient",
+   "effect_units": "partial correlation coefficient",
    "direction_note": null,
-   "column_mapping_verified_by": null,
+   "column_mapping_verified_by": "COEF_L/SE_L reproduces TSTAT_L exactly on all 490 usable rows (checked numerically), so the stored pairing is internally correct. remittances.do line 2 shows what the PAPER analyses, and it is not that pair: `gen PCC_L=TSTAT_L/sqrt(TSTAT_L^2+DF)`, with SE_PCC_L=sqrt((1-PCC_L^2)/DF); the headline `mean PCC_L` and `metan PCC_L SE_PCC_L` and the whole BMA section run on PCC_L. The short-run set is an appendix robustness check on 48 observations, not pooled.",
    "in_harmonised_table": true,
    "reconciliation": {
     "n_estimates_reported_in_paper": 538,
     "n_rows_in_harmonised_table": 490,
-    "note": "-48 rows against the paper's count, usually because the published file has no usable standard error on the remainder. See this dataset's note and column_mapping_verified_by."
+    "note": "-48 rows against the abstract's count, and correctly so: the paper's own replication code restricts to an analysis subset, reproduced here. See column_mapping_verified_by."
    },
    "excluded_from_harmonised_because": null,
    "duplicate_of": null,
@@ -1860,7 +1891,8 @@
    "rights_status": "cc-by-4.0",
    "license_url": "https://creativecommons.org/licenses/by/4.0/",
    "rights_note": "CC BY 4.0. Free to use, adapt and redistribute, including commercially and including as training data. The only condition is credit: cite the paper named in this entry.",
-   "audit_status": "arithmetic_pairing_only"
+   "max_precision_weight_share": 0.0181,
+   "audit_status": "code_traced"
   },
   {
    "id": "resource_curse",
@@ -1892,11 +1924,11 @@
     "effect": "PCC",
     "standard_error": "PCC_SE",
     "standard_error_note": null,
-    "evidence": "t_match:TSTAT"
+    "evidence": "paper's replication code"
    },
    "effect_units": "partial correlation coefficient",
    "direction_note": null,
-   "column_mapping_verified_by": null,
+   "column_mapping_verified_by": "The paper's own replication code regresses exactly this pair at resource_curse.do:164. Found mechanically by 93_codegrep.py, which reads each paper's code and reads off the two variables of its headline meta-analysis regression.",
    "in_harmonised_table": true,
    "reconciliation": {
     "n_estimates_reported_in_paper": 605,
@@ -1912,7 +1944,8 @@
    "rights_status": "cc-by-4.0",
    "license_url": "https://creativecommons.org/licenses/by/4.0/",
    "rights_note": "CC BY 4.0. Free to use, adapt and redistribute, including commercially and including as training data. The only condition is credit: cite the paper named in this entry.",
-   "audit_status": "arithmetic_pairing_only"
+   "max_precision_weight_share": 0.035,
+   "audit_status": "code_traced"
   },
   {
    "id": "risk",
@@ -1944,11 +1977,11 @@
     "effect": "rra",
     "standard_error": "se",
     "standard_error_note": null,
-    "evidence": "t_match:tstat"
+    "evidence": "paper's replication code"
    },
    "effect_units": "relative risk aversion coefficient",
    "direction_note": null,
-   "column_mapping_verified_by": null,
+   "column_mapping_verified_by": "rra.do (inside risk.zip) lines 104-110 treat rra/se as the pair: `replace se=0.0001 if se==0`, `gen prec = 1/se`, `replace tstat = rra/se if tstat == .`; every downstream meta-analysis traces to it (funnel plot line 192, PET/PEESE lines 211-337, p-uniform* line 705 `keep idstudy rra_win se_win`). BMACode.R line 61 corroborates. risk.dta carries no alternative effect column across its 61 columns, so there is no rejected candidate.",
    "in_harmonised_table": true,
    "reconciliation": {
     "n_estimates_reported_in_paper": 1021,
@@ -1964,7 +1997,8 @@
    "rights_status": "cc-by-4.0",
    "license_url": "https://creativecommons.org/licenses/by/4.0/",
    "rights_note": "CC BY 4.0. Free to use, adapt and redistribute, including commercially and including as training data. The only condition is credit: cite the paper named in this entry.",
-   "audit_status": "arithmetic_pairing_only"
+   "max_precision_weight_share": 0.3088,
+   "audit_status": "code_traced"
   },
   {
    "id": "scc",
@@ -2017,6 +2051,7 @@
    "rights_status": "cc-by-4.0",
    "license_url": "https://creativecommons.org/licenses/by/4.0/",
    "rights_note": "CC BY 4.0. Free to use, adapt and redistribute, including commercially and including as training data. The only condition is credit: cite the paper named in this entry.",
+   "max_precision_weight_share": 0.1789,
    "audit_status": "domain_reviewed"
   },
   {
@@ -2050,11 +2085,11 @@
     "effect": "sigma",
     "standard_error": "se",
     "standard_error_note": null,
-    "evidence": "t_match:t"
+    "evidence": "paper's replication code"
    },
    "effect_units": "elasticity",
    "direction_note": null,
-   "column_mapping_verified_by": null,
+   "column_mapping_verified_by": "sigma.do line 28 `gen tstat = sigma/se` establishes the pair; line 202 runs the headline FAT-PET `ivreg2 sigma_win5 se_win5, cluster (idstudy idcountry)` on winsorised versions built at line 83 by `winsor2 sigma se invsqrtnobs, suffix(_win5) cuts(5 95)`. The paper states it winsorises at the 5% level. sigma.dta contains sigma and se but NOT sigma_win5/se_win5, so the raw pair is the only thing the source offers.",
    "in_harmonised_table": true,
    "reconciliation": {
     "n_estimates_reported_in_paper": 3186,
@@ -2070,7 +2105,8 @@
    "rights_status": "cc-by-4.0",
    "license_url": "https://creativecommons.org/licenses/by/4.0/",
    "rights_note": "CC BY 4.0. Free to use, adapt and redistribute, including commercially and including as training data. The only condition is credit: cite the paper named in this entry.",
-   "audit_status": "arithmetic_pairing_only"
+   "max_precision_weight_share": 0.0502,
+   "audit_status": "code_traced"
   },
   {
    "id": "size",
@@ -2102,11 +2138,11 @@
     "effect": "size",
     "standard_error": "se_calc",
     "standard_error_note": null,
-    "evidence": "t_match:tstat"
+    "evidence": "paper's replication code"
    },
    "effect_units": "percent",
    "direction_note": "Raw size-return slopes: NEGATIVE means a larger conventional size premium, i.e. small firms outperforming. The abstract states that researchers prefer estimates showing 'a negative relation between size and returns'. 76% of stored effects are negative. Do not read positive as the premium.",
-   "column_mapping_verified_by": null,
+   "column_mapping_verified_by": "size.do regresses size on se, but se_calc is the column that reproduces the file's OWN tstat: 100.0% of rows within 1%, against 96.7% for se. We take se_calc for internal consistency (t = effect/se holds exactly), accepting that it is not the column the paper's regression names. se_calc also contains zeros, which the se>0 filter drops.",
    "in_harmonised_table": true,
    "reconciliation": {
     "n_estimates_reported_in_paper": 1746,
@@ -2122,7 +2158,8 @@
    "rights_status": "cc-by-4.0",
    "license_url": "https://creativecommons.org/licenses/by/4.0/",
    "rights_note": "CC BY 4.0. Free to use, adapt and redistribute, including commercially and including as training data. The only condition is credit: cite the paper named in this entry.",
-   "audit_status": "arithmetic_pairing_only"
+   "max_precision_weight_share": 0.477,
+   "audit_status": "code_traced"
   },
   {
    "id": "skill",
@@ -2155,11 +2192,11 @@
     "effect": "elasticity",
     "standard_error": "se",
     "standard_error_note": null,
-    "evidence": "t_match:tstat"
+    "evidence": "paper's replication code"
    },
    "effect_units": "elasticity",
-   "direction_note": "Stored as inverse elasticities; inversion is needed to read them as the skill-substitution elasticity. Dropping this step reverses the finding.",
-   "column_mapping_verified_by": null,
+   "direction_note": "Stored as inverse elasticities; inversion is needed to read them as the skill-substitution elasticity. Dropping this step reverses the finding. OPEN QUESTION, not resolved: two independent audits suggested this column is an inverse elasticity, on the grounds that PET on the stored scale is 0.326 whose reciprocal 3.07 is near the paper's headline of 4. That is a PET-level inference, and it does not hold row-wise -- the stored median is 1.42 and 1/1.42 = 0.70, nowhere near 4, with only 7.9% of values negative. So the simple inversion that demonstrably applies to `migrant` does NOT apply here. Units are left as 'elasticity' because relabelling on an unverified inference would be worse than the uncertainty. Settling it needs the paper's own transformation.",
+   "column_mapping_verified_by": "skill.do:174 regresses tstat_coefficient_w on precision_coefficient_w, the WLS form of FAT-PET. Regressing t on precision is algebraically the same test as regressing the effect on its standard error, so it confirms rather than contradicts elasticity/se.",
    "in_harmonised_table": true,
    "reconciliation": {
     "n_estimates_reported_in_paper": null,
@@ -2175,7 +2212,8 @@
    "rights_status": "cc-by-4.0",
    "license_url": "https://creativecommons.org/licenses/by/4.0/",
    "rights_note": "CC BY 4.0. Free to use, adapt and redistribute, including commercially and including as training data. The only condition is credit: cite the paper named in this entry.",
-   "audit_status": "arithmetic_pairing_only"
+   "max_precision_weight_share": 0.0555,
+   "audit_status": "code_traced"
   },
   {
    "id": "spillovers",
@@ -2226,6 +2264,7 @@
    "rights_status": "cc-by-4.0",
    "license_url": "https://creativecommons.org/licenses/by/4.0/",
    "rights_note": "CC BY 4.0. Free to use, adapt and redistribute, including commercially and including as training data. The only condition is credit: cite the paper named in this entry.",
+   "max_precision_weight_share": 0.9973,
    "audit_status": "domain_reviewed",
    "note": "VERTICAL spillovers (forward and backward). CAUTION: the filtered count is 2,421 while the paper's abstract reports 3,626 estimates, so the published file appears to be a subset of the sample behind the paper. Reconcile before relying on the count."
   },
@@ -2279,6 +2318,7 @@
    "rights_status": "cc-by-4.0",
    "license_url": "https://creativecommons.org/licenses/by/4.0/",
    "rights_note": "CC BY 4.0. Free to use, adapt and redistribute, including commercially and including as training data. The only condition is credit: cite the paper named in this entry.",
+   "max_precision_weight_share": 0.038,
    "audit_status": "code_traced"
   },
   {
@@ -2333,6 +2373,7 @@
    "rights_status": "cc-by-4.0",
    "license_url": "https://creativecommons.org/licenses/by/4.0/",
    "rights_note": "CC BY 4.0. Free to use, adapt and redistribute, including commercially and including as training data. The only condition is credit: cite the paper named in this entry.",
+   "max_precision_weight_share": null,
    "audit_status": "duplicate_excluded",
    "note": "Different PAPER (why intertemporal substitution varies across countries) but the same underlying estimates as 'eis', so including both would double count. The substitution file carries 65 columns against eis's 52, including country-level moderators, and remains published in full as its own dataset. Both projects fill the same 18 harmonised moderators, so the choice of which to keep costs nothing; eis is kept as the already-canonical entry."
   },
@@ -2354,7 +2395,7 @@
    "description": "Meta-analysis of 1,613 reported size-premium estimates from 105 studies on how generalized trust and rule of law explain the disagreement across markets.",
    "n_estimates": 1613,
    "n_variables": 45,
-   "n_estimates_in_literature": 1613,
+   "n_estimates_in_literature": 284,
    "source_file": "https://meta-analysis.cz/trust/trust_data.csv",
    "source_member": null,
    "source_sheet": null,
@@ -2371,14 +2412,14 @@
    },
    "effect_units": "percent",
    "direction_note": "Raw size-return slopes: more negative means a larger conventional size premium.",
-   "column_mapping_verified_by": "pairwise (effect,se) scan: 1,256 shared pairs, 276 only in size, 259 only in trust. Both papers meta-analyse reported size-premium estimates; trust is a later, extended collection (105 studies) of the same literature that size (98 studies) first assembled.",
-   "in_harmonised_table": false,
+   "column_mapping_verified_by": "The paper's own replication code regresses this effect column: replication.zip:replication_package/R/04_diagnostics.R:78 runs lm(size ~ trust_index), the paper's research regression rather than a FAT-PET, so only the effect column is informative there -- and it is `size`, the same column (as size_unwinsorized) this dataset resolves to. Confirmed by 93_codegrep.py once excluded datasets were brought into its scope, 2026-08-04.",
+   "in_harmonised_table": true,
    "reconciliation": {
     "n_estimates_reported_in_paper": null,
-    "n_rows_in_harmonised_table": null,
+    "n_rows_in_harmonised_table": 284,
     "note": null
    },
-   "excluded_from_harmonised_because": "later, larger collection of the same literature as size; partially overlaps it and is excluded to avoid double counting",
+   "excluded_from_harmonised_because": null,
    "duplicate_of": null,
    "overlaps_with": "size",
    "same_literature_as": "size",
@@ -2388,7 +2429,8 @@
    "rights_status": "cc-by-4.0",
    "license_url": "https://creativecommons.org/licenses/by/4.0/",
    "rights_note": "CC BY 4.0. Free to use, adapt and redistribute, including commercially and including as training data. The only condition is credit: cite the paper named in this entry.",
-   "audit_status": "duplicate_excluded"
+   "max_precision_weight_share": 0.0394,
+   "audit_status": "code_traced"
   },
   {
    "id": "water",
@@ -2420,11 +2462,11 @@
     "effect": "incomeelasticity",
     "standard_error": "standarderror",
     "standard_error_note": null,
-    "evidence": "t_match:tvalue"
+    "evidence": "paper's replication code"
    },
    "effect_units": "elasticity",
    "direction_note": null,
-   "column_mapping_verified_by": null,
+   "column_mapping_verified_by": "water.do line 90 runs the paper's FAT-PET on exactly this pair: `ivreg2 incomeelasticity standarderror, cluster(studyid)`; line 32 `sum incomeelasticity, detail`. The .do header names the paper: INCOME ELASTICITY OF WATER DEMAND. No winsorising or row-dropping is applied to the main regressions (winsor2 is installed at line 10 but never invoked); the only `if` conditions are descriptive subsample splits and one graph-only restriction at line 77. All 307 rows are the analysis sample.",
    "in_harmonised_table": true,
    "reconciliation": {
     "n_estimates_reported_in_paper": null,
@@ -2440,7 +2482,8 @@
    "rights_status": "cc-by-4.0",
    "license_url": "https://creativecommons.org/licenses/by/4.0/",
    "rights_note": "CC BY 4.0. Free to use, adapt and redistribute, including commercially and including as training data. The only condition is credit: cite the paper named in this entry.",
-   "audit_status": "arithmetic_pairing_only"
+   "max_precision_weight_share": 0.1123,
+   "audit_status": "code_traced"
   }
  ]
 }

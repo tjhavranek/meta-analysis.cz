@@ -140,7 +140,7 @@ hard(not undeclared,
 print("\n4. year and horizon")
 if "pub_year" in H.columns:
     y = pd.to_numeric(H["pub_year"], errors="coerce").dropna()
-    odd = y[(y < 1950) | (y > 2027)]
+    odd = y[(y < 1950) | (y > 2027)]      # PUBLICATION years only
     # KNOWN, FIXED IN CODE, PENDING REGENERATION. The shipped 0.9.0-beta carries a standardised
     # BMA regressor in pub_year for five literatures, because those files name it
     # `publication_year` while the real column is `year_publication` / `pubyear` / `year`.

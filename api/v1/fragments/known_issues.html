@@ -1,6 +1,0 @@
-<p>These defects are present in the files published here and in the archived deposit. Each will be fixed in the next release. Nothing else in the table is affected.</p>
-<ul>
-<li><code>pub_year</code> is not a publication year in <code>alphas</code>, <code>beauty</code>, <code>discrate</code>, <code>skill</code>, <code>students</code>. Those source files carry a standardised regressor of the same name, and the column was matched by name rather than by value. Do not use <code>pub_year</code> for these literatures; every other column is unaffected.</li>
-<li><code>remittances</code> reports the source file's raw regression coefficients rather than the partial correlations its paper analyses. Those coefficients run over five different dependent variables, so they are not comparable with each other or with the other literatures. Treat this literature as unusable for now.</li>
-<li><code>price_puzzle</code> repeats every estimate 7 times: 7,420 rows where 1,060 are distinct. The source file is already long on <code>horizon</code> while its response columns are wide, and the reshape did not deduplicate. A weighted average is unchanged, but any count of estimates, any unweighted statistic and any method treating rows as independent observations will be wrong for this literature.</li>
-</ul>

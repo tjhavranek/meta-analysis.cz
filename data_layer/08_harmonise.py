@@ -129,6 +129,11 @@ for proj in sorted(man):
     # an override with an explicit effect or a compute rule rescues a dataset the resolver could not read
     if r.get("status")!="ok" and not (o.get("effect") or o.get("compute") or o.get("exclude")): continue
     alias=o["alias_of"] if "alias_of" in o else r.get("alias_of")
+    # A dataset that shares a literature with another is normally dropped whole. `trust` is
+    # included instead, contributing only the estimates `size` does not already carry, so it
+    # must not be caught by the alias gate. Owner's decision, 2026-08-04.
+    if alias and o.get("subtract_overlap_with"):
+        alias=None
     if alias:
         # `trust` is a later, LARGER collection of the same literature, not a duplicate.
         # Saying "duplicate of size" contradicted the API record and reached the page.
@@ -275,11 +280,27 @@ for proj in sorted(man):
     if out["study_id"].isna().all() and "study_label" in out:
         out["study_id"]=pd.factorize(out["study_label"])[0]+1
     out["estimate_id"]=out.groupby("dataset").cumcount()+1
+    _sub=o.get("subtract_overlap_with")
+    if _sub:
+        _twin=pd.concat([q for q in rows if str(q["dataset"].iloc[0])==_sub], ignore_index=True)               if any(str(q["dataset"].iloc[0])==_sub for q in rows) else None
+        if _twin is None:
+            raise SystemExit(f"{proj}: subtract_overlap_with='{_sub}' but '{_sub}' has not been "
+                             f"built yet -- it must be processed first")
+        _have=set(zip(np.round(_twin["effect"].astype("float64"),8),
+                      np.round(_twin["se"].astype("float64"),8)))
+        _mine=list(zip(np.round(out["effect"].astype("float64"),8),
+                       np.round(out["se"].astype("float64"),8)))
+        _keep=np.array([pr not in _have for pr in _mine])
+        print(f"   {proj}: subtracting overlap with {_sub} -> {int(_keep.sum())} of {len(out)} "
+              f"estimates are unique and kept")
+        out=out[_keep].reset_index(drop=True)
     out["source_file"]=m["source"]; out["effect_col"]=eff; out["se_col"]=se
     out["se_is_derived"]=se_derived
     out["effect_units"]=(UNITS.get(proj) or {}).get("units") or o.get("units")
     rows.append(out)
-    report[proj]=dict(included=True,n=int(keep.sum()),effect=eff,se=se,se_is_derived=se_derived,
+    # len(out), NOT keep.sum(): with subtract_overlap_with the frame is filtered AFTER the keep
+    # mask, so the pre-subtraction count would be reported and 09_verify would flag the mismatch.
+    report[proj]=dict(included=True,n=int(len(out)),effect=eff,se=se,se_is_derived=se_derived,
                       n_obs_col=col if False else None, n_obs_from_log=bool(n_obs_was_log),
                       units=(UNITS.get(proj) or {}).get("units"),
                       direction_note=(UNITS.get(proj) or {}).get("direction_note"),

@@ -148,7 +148,7 @@ print(f"   dataset counts by record: {counts}")
 # file's a little (inflation: 777 vs 885); an order-of-magnitude gap is structural.
 # Known and already fixed in code, pending regeneration -- the sevenfold price_puzzle reshape.
 # Listed so the gate stays usable now rather than failing on a defect already being fixed.
-STAGED_COUNT = {"price_puzzle"}
+STAGED_COUNT = set()   # price_puzzle fixed in 1.0.0; keep empty so a regression fails loudly
 print("\n4. does each description agree with the count published beside it?")
 import re as _re
 _n = _re.compile(r"([\d][\d,]*)\s+(?:VAR\s+)?estimates", _re.I)
@@ -174,6 +174,42 @@ for d in API["datasets"]:
                     f"({ratio:.2f}x) -- probably the paper's count against the shipped file's, "
                     f"but worth a look")
 hard(_flag == 0, "every description agrees with the count published beside it")
+
+# --------------------------------- 5. does any rights file contradict the CC BY policy?
+# The pre-reversal wording ("covers the COMPILATION only ... does NOT cover the underlying
+# research datasets") has now resurfaced four times, most recently because 10_fragments copies a
+# CANONICAL CITATION.cff out of data_layer/ over the published one. Fixing site/CITATION.cff
+# alone was therefore silently undone by the next build, and the wrong text was about to ship
+# inside the Zenodo deposit. Scan every rights-bearing file, everywhere it lands.
+print("\n5. do the rights files agree with the CC BY policy?")
+BAD = ["compilation only", "does not cover the underlying", "rights are unchanged",
+       "attribution is not the same as permission", "all rights reserved",
+       "none of which are ours to license"]
+_roots = {OUT, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))}
+_seen, _bad = 0, []
+for _root in _roots:
+    for _dp, _dn, _fn in os.walk(_root):
+        # Skip prior-version deposit folders: they are the RECORD of what was uploaded then,
+        # and 0.9.0-beta genuinely shipped the pre-reversal wording. Rewriting history there
+        # would hide that the live deposit needs replacing. Only the current bundle is scanned.
+        if any(x in _dp for x in (".git", "node_modules", "redesign", "_seo_stash")):
+            continue
+        if "zenodo_deposit" in _dp and "v1.0.0" not in _dp:
+            continue
+        for _f in _fn:
+            if _f not in ("CITATION.cff", "LICENSE", "README.md", ".zenodo.json"):
+                continue
+            _p = os.path.join(_dp, _f)
+            try:
+                _t = open(_p, encoding="utf-8", errors="replace").read().lower()
+            except Exception:
+                continue
+            _seen += 1
+            for _b in BAD:
+                if _b in _t:
+                    _bad.append(f"{_p}: pre-reversal licence wording {_b!r}")
+fails.extend(_bad)
+hard(not _bad, f"{_seen} rights-bearing file(s) scanned, none contradict the CC BY policy")
 
 print(f"\n{len(soft)} soft observation(s):")
 for s_ in soft[:8]:

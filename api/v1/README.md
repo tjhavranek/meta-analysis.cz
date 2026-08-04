@@ -6,14 +6,6 @@ browser, a script, or a notebook without a key, a quota, or a login.
 
 Base: `https://meta-analysis.cz`
 
-By Tomáš Havránek and Zuzana Iršová, Charles University, Prague.
-Everything here is [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/) — the
-datasets, their conversions, the pooled table, the codebooks and this documentation.
-Use it for any purpose, including as training data, with credit. When you use an
-individual dataset, cite the paper it was assembled for; every entry in
-`datasets.json` carries that paper's title, authors and DOI. To cite the collection:
-<https://doi.org/10.5281/zenodo.21773678>.
-
 ## Endpoints
 
 | URL | What it is |
@@ -222,9 +214,5 @@ have to look it up. If you use the collection, cite that too. See `/LICENSE`.
 
 Cite the collection as:
 
-> Havránek, T. and Z. Iršová (2026). meta-analysis.cz: harmonised estimate-level
-> data from meta-analyses in economics. Zenodo. https://doi.org/10.5281/zenodo.21773678
-
-That is the concept DOI: it always resolves to the newest version. In a replication
-package, where the exact files matter, cite this release instead:
-`10.5281/zenodo.21773679`, version 0.9.0-beta.
+> Havránek, T. and Z. Iršová (2026). meta-analysis.cz: data and code for
+> meta-analyses in economics. https://meta-analysis.cz

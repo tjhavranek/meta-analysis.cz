@@ -38,6 +38,16 @@
      36,
      "M36R",
      "SE36"
+    ],
+    [
+     99,
+     "MBR",
+     "SEB"
+    ],
+    [
+     88,
+     "MPR",
+     "SEP"
     ]
    ],
    "dedupe_on_all_but": [
@@ -46,7 +56,7 @@
   },
   "units": "proportional change in the price level",
   "verified_by": "puzzle.do computes t=res/se and prec=1/se on the long form restricted to horizon in {3,6,12,18,36}; the published file is wide, so the M{h}R / SE{h} pairs are reshaped here to reproduce it. Median |t| is 0.75-0.91 across horizons, consistent with the literature's mostly insignificant responses.",
-  "note": "puzzle.xls is a HYBRID layout: already long on `horizon` (7 rows per impulse response, horizons 3/6/12/18/36/88/99) while the price-response columns M3R/SE3... are WIDE and constant across all 7. The reshape must DEDUPE to one record per impulse response before melting, or every estimate is emitted 7 times -- which is what 0.9.0-beta shipped: 7,420 rows where ~1,075 are distinct, 6,345 spurious copies, 11.8% of the whole pooled table. The `lags` dataset shares this file and uses `mon_bot`, which genuinely varies across the 7 rows; that is why the file is shaped this way. DEDUPE KEY: all columns except `horizon`, which is exact -- only `horizon` varies within a block. That yields 220 impulse responses and 1,075 selected-horizon rows. Deduping on the price-response columns alone would give 217 and 1,060, because 3 impulse responses have byte-identical responses at all five horizons but DISAGREE on `sdate`/`edate` within their own block -- an upstream coding inconsistency. Merging them would silently pick one date, so they are kept separate and flagged instead; if the authors confirm the dates are a coding error, the correct counts become 217 and 1,060. Found by the Codex audit, 2026-08-04."
+  "note": "puzzle.xls is a HYBRID layout: already long on `horizon` (7 rows per impulse response) while the response columns are WIDE and constant across those 7. Melting the wide columns once per row emitted every estimate 7 times -- what 0.9.0-beta shipped: 7,420 rows of which ~6,345 were exact duplicates, identical in every column INCLUDING horizon, so they were never additional horizons. The file provides SEVEN horizons, not five: the month horizons 3/6/12/18/36 plus the trough (MBR/SEB, horizon code 99) and the peak (MPR/SEP, horizon code 88). puzzle.do line 29 excludes `horizon~=88 & horizon~=99` from its 'all horizons' figure and its headline regressions use the five month horizons, so the paper analyses five -- but this catalogue publishes what the file contains, and the trough and peak responses were being silently discarded. All seven are now emitted from the deduplicated records: 1,415 rows (211/218/218/220/208 for the month horizons, 202 trough, 138 peak). Owner's decision 2026-08-04: list every horizon. Anyone wanting the paper's own sample should filter to the five numeric horizons. HORIZON CODES: months 3/6/12/18/36 are literal; 99 marks the trough and 88 the peak, the source file's own codes. The trough/peak assignment is inferred from lags.do, which keeps horizon==99 and models mon_bot, the months to the price trough. If that is backwards the two labels swap and no value changes. Filter to horizon<=36 for the paper's own sample."
  },
  "climate": {
   "effect": "estimate",
@@ -159,27 +169,21 @@
  "trust": {
   "alias_of": "size",
   "reason": "same literature as the size project (the size premium); 1,256 of its estimates also appear there",
-  "verified_by": "pairwise (effect,se) scan: 1,256 shared pairs, 276 only in size, 259 only in trust. Both papers meta-analyse reported size-premium estimates; trust is a later, extended collection (105 studies) of the same literature that size (98 studies) first assembled.",
-  "note": "Excluded from the pooled table to avoid double counting with `size`, and the overlap is MEASURED rather than asserted. Of trust's 1,613 rows, 1,520 yield a usable (effect, se) pair; 1,269 of those 1,520 (83.5%) already appear in the pooled `size` rows, leaving 251 estimates unique to trust that the harmonised table does not contain. (An earlier version of this note said '1,269 of 1,613 (83.5%)', mixing the row count with the usable-pair count -- 1,269/1,613 is 78.7%. Corrected 2026-08-04.) Keeping both would double-count; taking only the unique remainder would splice two separately-assembled collections into one literature. Excluding it is the conservative call, but the 251 are a real, quantified omission -- for the fullest firm-size sample use trust_data.csv directly. trust (2026) is LATER than size (2019) but not larger: 1,613 rows against 1,746."
+  "verified_by": "The paper's own replication code regresses this effect column: replication.zip:replication_package/R/04_diagnostics.R:78 runs lm(size ~ trust_index), the paper's research regression rather than a FAT-PET, so only the effect column is informative there -- and it is `size`, the same column (as size_unwinsorized) this dataset resolves to. Confirmed by 93_codegrep.py once excluded datasets were brought into its scope, 2026-08-04.",
+  "note": "INCLUDED from 1.0.0 by the owner's decision (2026-08-04), but only the estimates `size` does not already carry. Of trust's 1,613 rows, 1,520 yield a usable (effect, se) pair and 1,269 of those (83.5%) duplicate pooled `size` rows; those are dropped here so nothing is counted twice, leaving the ~251 unique to trust. This is a deliberate splice of two separately-assembled collections of one literature: trust (2026) is the later collection, size (2019) the earlier and larger one at 1,746 rows. Anyone who wants either collection whole should use its own per-dataset file rather than the pooled table.",
+  "subtract_overlap_with": "size",
+  "units": "percent"
  },
  "remittances": {
-  "note": "The file holds BOTH a long-run (COEF_L/SE_L) and a short-run (COEF_S/SE_S) coefficient per row. Only the LONG-RUN pair enters the harmonised table, because the two are different estimands and pooling them would mix horizons. The short-run pair (48 usable rows) remains in the published per-dataset file for anyone who wants it.",
+  "note": "The file holds BOTH a long-run (COEF_L/SE_L) and a short-run (COEF_S/SE_S) coefficient per row. Only the LONG-RUN pair enters the harmonised table, because the two are different estimands and pooling them would mix horizons. The short-run pair (48 usable rows) remains in the published per-dataset file for anyone who wants it. APPLIED 1.0.0: the effect is now the partial correlation the paper analyses, PCC = TSTAT_L/sqrt(TSTAT_L^2+DF) with se = sqrt((1-PCC^2)/DF), replacing the raw COEF_L/SE_L which ran over five different dependent variables and were not comparable. n_obs is set to NULL: the column matched by name was a row ordinal -- all 490 values unique, strictly increasing over 1..538, and degrees of freedom exceed it on 38.4% of rows, which is impossible for a sample size. A null is honest; leaving it would silently corrupt MAIVE, which instruments precision with sample size. Both found by the Codex audit, 2026-08-04.",
   "verified_by": "COEF_L/SE_L reproduces TSTAT_L exactly on all 490 usable rows (checked numerically), so the stored pairing is internally correct. remittances.do line 2 shows what the PAPER analyses, and it is not that pair: `gen PCC_L=TSTAT_L/sqrt(TSTAT_L^2+DF)`, with SE_PCC_L=sqrt((1-PCC_L^2)/DF); the headline `mean PCC_L` and `metan PCC_L SE_PCC_L` and the whole BMA section run on PCC_L. The short-run set is an appendix robustness check on 48 observations, not pooled.",
-  "pending_1_0_0": {
-   "_why": "NOT ACTIVE. The pipeline ignores this key; it is a staged decision for the next release, kept here so the evidence and the exact formula sit with the dataset. Raised by the blind audit of 2026-08-04.",
-   "_problem": "The harmonised table currently stores COEF_L/SE_L under units 'regression coefficient'. Those are raw coefficients across FIVE different coded dependent variables (DepVar takes values 1-5) and span -11 to 191. Pooling them is not a meaningful quantity, which is exactly why the paper converts to partial correlations first. Three other literatures share the 'regression coefficient' unit and deserve the same look.",
-   "_proposed": {
-    "compute": {
-     "type": "pcc_from_t",
-     "t_col": "TSTAT_L",
-     "df_col": "DF"
-    },
-    "units": "partial correlation coefficient"
-   },
-   "_checked": "PCC_L is computable on all 490 rows and spans -0.986..0.994. The transformation is already precedented in this pipeline: `reforms` uses the identical pcc_from_t path.",
-   "_also": "The paper additionally drops 3 outliers where |t| exceeds 5 SD from the mean (obs 195, 205, 283). Not replicated by the proposal above, which keeps all 490; decide at release time.",
-   "_not_applied_because": "It changes the published estimand, and 0.9.0-beta is already archived on Zenodo. It belongs in a deliberate 1.0.0 build, not a silent edit."
-  }
+  "compute": {
+   "type": "pcc_from_t",
+   "t_col": "TSTAT_L",
+   "df_col": "DF"
+  },
+  "units": "partial correlation coefficient",
+  "n_obs": null
  },
  "learning": {
   "sheet": "data",
@@ -348,7 +352,8 @@
   "verified_by": "skill.do:174 regresses tstat_coefficient_w on precision_coefficient_w, the WLS form of FAT-PET. Regressing t on precision is algebraically the same test as regressing the effect on its standard error, so it confirms rather than contradicts elasticity/se."
  },
  "migrant": {
-  "verified_by": "The paper's replication is in R, not Stata: run_replication_package.R:1002 runs stats::lm(elasticity ~ se, data = master, weights = se_weight) and clusters on idstudy -- the FAT-PET on exactly this pair. Found by 93_codegrep.py once R patterns were added; a Stata-only scan had reported this literature as having no regression at all."
+  "verified_by": "The paper's replication is in R, not Stata: run_replication_package.R:1002 runs stats::lm(elasticity ~ se, data = master, weights = se_weight) and clusters on idstudy -- the FAT-PET on exactly this pair. Found by 93_codegrep.py once R patterns were added; a Stata-only scan had reported this literature as having no regression at all.",
+  "units": "negative inverse elasticity"
  },
  "gasoline_price": {
   "arithmetic_evidence": "No replication code ships with this dataset, so it cannot be code-traced. It carries the strongest evidence arithmetic can give, from TWO columns the authors shipped independently of the pair: e/se reproduces the file's own `t` on 100.0% of all 202 rows, AND `prec` equals 1/se on 100.0% of rows. An exhaustive search of every column pair found no genuine rival -- the only other combinations reproducing t are t divided by a 0/1 dummy, which returns t trivially. Checked 2026-08-04."

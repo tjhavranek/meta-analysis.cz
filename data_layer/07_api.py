@@ -6,6 +6,9 @@ from _paths import WORK, SITE
 
 OUT=os.path.join(WORK,"out"); BASE="https://meta-analysis.cz"
 VERSION="1.0.0"; DATA_V="v1"
+# The DATA artefact's version, in ONE place. It was hardcoded in four, which is how a
+# consumer once saw the Croissant record say 1.0.0 while the table said 0.9.0-beta.
+DATA_VERSION="1.0.0"; DATA_STATUS="stable"
 
 papers={p["project"]:p for p in json.load(open(os.path.join(SITE,"tools","papers.json"),encoding="utf-8"))}
 man={m["project"]:m for m in json.load(open(os.path.join(WORK,"convert_manifest.json"),encoding="utf-8"))}
@@ -16,7 +19,7 @@ def _load(n):
 UNITS=_load("units.json"); OVR=_load("overrides.json"); PRIM=_load("primaries.json")
 try:
     harm=json.load(open(os.path.join(WORK,"harmonised_report.json"),encoding="utf-8"))
-    harm.setdefault("version","0.9.0-beta")
+    harm.setdefault("version",DATA_VERSION)
 except Exception: harm={"projects":{},"n_rows":None,"columns":[]}
 
 import pandas as _pd
@@ -67,7 +70,9 @@ DOMAIN_REVIEWED = {"activism","gasoline","frisch","dst","electricity","excess_se
 
 def _audit_status(proj):
     o=OVR.get(proj) or {}; r=res.get(proj) or {}
-    if o.get("alias_of"): return "duplicate_excluded"
+    # `trust` shares a literature with `size` but is now INCLUDED, contributing only the
+    # estimates size does not carry, so the alias must not mark it excluded.
+    if o.get("alias_of") and not o.get("subtract_overlap_with"): return "duplicate_excluded"
     if o.get("exclude"):  return "excluded_no_precision"
     # A reviewed literature that needed NO change has no override. Absence of an
     # override is evidence it passed, not evidence it was never looked at.
@@ -90,8 +95,9 @@ SHARED_SOURCE = {"bma":"spillovers", "spillovers":"bma",
                  "lags":"price_puzzle", "price_puzzle":"lags"}
 
 # `duplicate_of` is reserved for genuinely identical data (hedge == alphas, row for row).
-# `trust` shares 1,256 estimates with `size` but is a later, LARGER collection of the same
-# literature; calling that a duplicate misleads any automated consumer.
+# `trust` is the LATER (2026 vs 2019) but SMALLER collection of the same literature -- 1,613 rows
+# against size's 1,746 -- overlapping it on 83.5% of its usable pairs. From 1.0.0 it is INCLUDED,
+# contributing only the estimates size does not carry, so it is not excluded at all.
 EXACT_DUPLICATES = {"hedge", "substitution"}
 
 def _overlap_fields(proj, r):
@@ -236,7 +242,7 @@ index=dict(
   # left alone. These two say which is which, because croissant.json carries the DATA
   # version and the two disagreeing looked like a defect.
   api_version=VERSION,
-  data_version=(harm.get("version") or "0.9.0-beta"),
+  data_version=(harm.get("version") or DATA_VERSION),
   version_note=("version and api_version describe this INTERFACE. data_version describes the "
                 "harmonised table, and is what croissant.json reports. They move independently."),
   description=("Estimate-level datasets from meta-analyses in economics and the social sciences, "
@@ -280,7 +286,7 @@ index=dict(
                       "literatures that duplicate another exactly, overlap one already "
                       "included, or lack per-estimate precision.")),
   harmonised_table=dict(
-    version="0.9.0-beta", status="beta",
+    version=DATA_VERSION, status=DATA_STATUS,
     n_rows=harm.get("n_rows"), n_literatures=harm.get("n_datasets"),
     columns=harm.get("columns"),
     parquet=f"{BASE}/data/{DATA_V}/estimates_harmonised.parquet",
@@ -313,7 +319,7 @@ json.dump(index,open(os.path.join(api,"datasets.json"),"w",encoding="utf-8"),ind
 
 # Frictionless Data Package
 dp=dict(profile="tabular-data-package", name="meta-analysis-cz", version=VERSION,
-        api_version=VERSION, data_version=(harm.get("version") or "0.9.0-beta"),
+        api_version=VERSION, data_version=(harm.get("version") or DATA_VERSION),
         title="meta-analysis.cz estimate-level datasets",
         # NO package-level `licenses`: under Frictionless semantics it would be read as
         # covering all 44 resources, and their rights are not ours to grant. The descriptor

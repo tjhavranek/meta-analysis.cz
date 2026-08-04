@@ -3,7 +3,7 @@
  "name": "meta-analysis-cz",
  "version": "1.0.0",
  "api_version": "1.0.0",
- "data_version": "0.9.0-beta",
+ "data_version": "1.0.0",
  "title": "meta-analysis.cz estimate-level datasets",
  "licenses": [
   {
@@ -11710,12 +11710,12 @@
      {
       "name": "COEF_L",
       "type": "number",
-      "description": "effect_estimate"
+      "description": null
      },
      {
       "name": "SE_L",
       "type": "number",
-      "description": "standard_error"
+      "description": null
      },
      {
       "name": "COEF_S",
