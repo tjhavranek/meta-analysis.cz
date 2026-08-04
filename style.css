@@ -621,6 +621,13 @@ table.catalogue li{ margin-bottom:var(--s2); font-size:var(--f-1); line-height:1
   padding-bottom:var(--s4);
   border-bottom:1px solid var(--rule);
 }
+/* Most first visits land on a PAPER page from Scholar or an LLM answer, not on the
+   homepage, and those pages carry only paper-specific navigation (Paper / Data / Code).
+   Before this line a visitor arriving at /armington/ had no route anywhere -- not to the
+   pooled dataset, the guide, MAIVE or the notes. The footer is the one block on every
+   page, so the site's own map belongs here. */
+.foot-nav{ font-size:var(--f-1); max-width:46rem; margin-bottom:var(--s4); }
+.foot-nav a{ white-space:nowrap; }
 .foot-who{ font-size:var(--f-1); max-width:46rem; margin-bottom:var(--s2); }
 .foot-cite, .foot-licence{ max-width:46rem; }
 .foot-machine{ font-size:var(--f-2); color:var(--ink-soft); }
