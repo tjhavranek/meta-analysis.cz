@@ -30,9 +30,15 @@ w("count_estimates.html", f"{api['counts']['rows_in_source_files']:,}")
 w("count_harmonised_estimates.html", f"{H['n_rows']:,}")
 w("count_harmonised_literatures.html", f"{H['n_literatures']}")
 w("harmonised_version.html", e(H["version"]))
-if api.get("doi"):
-    w("doi.html", e(api["doi"]))
-    w("doi_url.html", e(api["doi_url"]))
+# ALWAYS write these, empty when there is no version DOI. Writing them conditionally left the
+# PREVIOUS release's DOI on disk when 1.0.0 nulled it, so the page was about to pair
+# "10.5281/zenodo.21773679" with "version 1.0.0" -- the last release's identifier attached to
+# this release's data. A conditional write does not leave a blank, it leaves a stale value, and
+# a stale value is indistinguishable from a current one to everything downstream. Caught by the
+# redesign session during the 1.0.0 rebuild, 2026-08-04.
+w("doi.html", e(api["doi"]) if api.get("doi") else "")
+w("doi_url.html", e(api["doi_url"]) if api.get("doi_url") else "")
+if api.get("cite_as"):
     w("cite_as.html", e(api["cite_as"]))
 if api.get("concept_doi"):
     w("concept_doi.html", e(api["concept_doi"]))
