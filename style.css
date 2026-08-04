@@ -70,7 +70,7 @@ img{ max-width:100%; height:auto; }
   display:inline-block; margin-bottom:var(--s3);
   font:600 var(--f-2)/1 var(--sans);
   letter-spacing:.08em; text-transform:uppercase;
-  color:rgba(255,255,255,.72); text-decoration:none;
+  color:rgba(255,255,255,.85); text-decoration:none;
 }
 .masthead-home:hover{ color:#fff; text-decoration:underline; }
 
@@ -607,9 +607,22 @@ table.catalogue li{ margin-bottom:var(--s2); font-size:var(--f-1); line-height:1
 .site-foot p{ margin:0 0 var(--s3); }
 .site-foot b{ color:var(--ink); font-weight:600; }
 .site-foot a{ color:var(--accent); }
-.foot-lede{ font-size:var(--f0); color:var(--ink); max-width:var(--measure); }
-.foot-who{ font-size:var(--f-1); }
-.foot-cite, .foot-licence{ max-width:52rem; }
+/* One measure for the whole block. The lede was on --measure (36rem) while the licence
+   ran to 52rem, so the footer had two different line lengths for no reason and read as a
+   stack of unrelated paragraphs. The opening statement is set in the page's serif, and a
+   hairline separates who-we-are from the metadata beneath it. */
+.foot-lede{
+  max-width:46rem;
+  font-family:var(--serif);
+  font-size:1.1875rem;
+  line-height:1.5;
+  color:var(--ink);
+  margin-bottom:var(--s5);
+  padding-bottom:var(--s4);
+  border-bottom:1px solid var(--rule);
+}
+.foot-who{ font-size:var(--f-1); max-width:46rem; margin-bottom:var(--s2); }
+.foot-cite, .foot-licence{ max-width:46rem; }
 .foot-machine{ font-size:var(--f-2); color:var(--ink-soft); }
 @media (max-width:40rem){
   .site-foot{ padding-left:var(--s3); padding-right:var(--s3); }

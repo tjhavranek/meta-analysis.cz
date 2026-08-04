@@ -34,6 +34,14 @@
       "url": "/maive"
     },
     {
+      "label": "Datasets and pooled table",
+      "url": "/datasets/"
+    },
+    {
+      "label": "Tomas Havranek",
+      "url": "https://www.tomashavranek.cz/"
+    },
+    {
       "label": "Zuzana Irsova",
       "url": "https://www.irsova.com/"
     },
@@ -179,37 +187,7 @@
         {
           "label": "Bluesky",
           "url": "https://bsky.app/profile/irsova.bsky.social"
-        }
-      ]
-    },
-    {
-      "slug": "does-multi-agent-debate-improve-ai-feedback",
-      "title": "Does multi-agent debate improve AI feedback on research papers?",
-      "date": "2026-07-16",
-      "summary": "In a pre-registered experiment, authors ranked three blinded AI reports on their own meta-analysis papers. A single-prompt report beat two multi-agent debate tools, one of which spent about 30 times more tokens.",
-      "topics": [
-        "AI and research",
-        "peer review"
-      ],
-      "keywords": [
-        "multi-agent debate",
-        "AI feedback",
-        "LLM-as-a-judge",
-        "pre-registration",
-        "peer review"
-      ],
-      "authors": [
-        {
-          "name": "Zuzana Irsova",
-          "orcid": "https://orcid.org/0000-0002-0753-8124"
         },
-        {
-          "name": "Tomas Havranek",
-          "orcid": "https://orcid.org/0000-0002-3158-2539"
-        }
-      ],
-      "links": [],
-      "syndicated": [
         {
           "label": "LinkedIn",
           "url": "https://www.linkedin.com/feed/update/urn%3Ali%3AugcPost%3A7483554931325542401"
@@ -645,36 +623,7 @@
         {
           "label": "MAER-Net",
           "url": "https://www.maer-net.org/post/ai_duel"
-        }
-      ]
-    },
-    {
-      "slug": "i-make-ai-models-duel",
-      "title": "Making AI models duel to sharpen deep analytical work",
-      "date": "2025-12-12",
-      "summary": "A structured workflow has one AI model write a first-pass assessment and a second model actively try to break it, so a researcher sees what survives rather than accepting a single model's fast, overconfident answer.",
-      "topics": [
-        "AI and research",
-        "research tools"
-      ],
-      "keywords": [
-        "multi-agent debate",
-        "research audit protocol",
-        "AI and research",
-        "critical thinking"
-      ],
-      "authors": [
-        {
-          "name": "Zuzana Irsova",
-          "orcid": "https://orcid.org/0000-0002-0753-8124"
         },
-        {
-          "name": "Tomas Havranek",
-          "orcid": "https://orcid.org/0000-0002-3158-2539"
-        }
-      ],
-      "links": [],
-      "syndicated": [
         {
           "label": "LinkedIn",
           "url": "https://www.linkedin.com/feed/update/urn%3Ali%3Ashare%3A7405164270306504704"
@@ -708,33 +657,7 @@
         {
           "label": "MAER-Net",
           "url": "https://www.maer-net.org/post/maive-is-now-on-cran"
-        }
-      ]
-    },
-    {
-      "slug": "maive-is-now-on-cran",
-      "title": "MAIVE is now installable directly from CRAN",
-      "date": "2025-12-10",
-      "summary": "MAIVE, a meta-analysis bias-correction method for detecting when study results look too precise because of method choices or selective reporting, can now be installed directly in R with install.packages(\"MAIVE\"), in addition to the EasyMeta.org web app.",
-      "topics": [
-        "meta-analysis methods",
-        "research tools"
-      ],
-      "keywords": [
-        "MAIVE",
-        "CRAN",
-        "R package",
-        "meta-analysis",
-        "bias correction"
-      ],
-      "authors": [
-        {
-          "name": "Zuzana Irsova",
-          "orcid": "https://orcid.org/0000-0002-0753-8124"
-        }
-      ],
-      "links": [],
-      "syndicated": [
+        },
         {
           "label": "LinkedIn",
           "url": "https://www.linkedin.com/feed/update/urn%3Ali%3Ashare%3A7404420382004539392"

@@ -16,4 +16,4 @@ Most economics meta-analyses collect all reported estimates -- a good default. B
 
 Comments, questions, or counterexamples are welcome!
 
-*Links to papers and methods are at *[*meta-analysis.cz*](http://meta-analysis.cz/)*.*
+*Links to papers and methods are at *[*meta-analysis.cz*](https://meta-analysis.cz/)*.*

@@ -18,7 +18,7 @@ body_note: "Post to the MAER-Net members' forum announcing two pre-registered pa
 
 My colleagues and I have two new pre-registered papers that may interest MAER-Net members.
 
-### 1. Do decisions about outliers and influential effects matter?
+## 1. Do decisions about outliers and influential effects matter?
 
 ([https://meta-analysis.cz/outliers](https://meta-analysis.cz/outliers), [https://arxiv.org/abs/2607.23174](https://arxiv.org/abs/2607.23174))
 
@@ -26,7 +26,7 @@ With Zuzana Irsova, Martina Luskova, and Tom Stanley, we recompute 358 behaviora
 
 The mean effect barely moves: the median absolute change in Cohen's d is at most 0.047. Interpretation moves more. In 11.5% of the meta-analyses at least one treatment changes statistical significance, and in 15.9% whether the effect reaches a smallest effect size of interest (|d| >= 0.20). Nearly all flips are in results already close to the boundary; strongly significant results essentially never change. Winsorizing changes the fewest conclusions, DFBETAS the most, and DFBETAS computed with UWLS flags the most influential estimates. Takeaway: pre-register the outlier rule and report results with and without it.
 
-### 2. Does multi-agent debate improve AI feedback on research papers?
+## 2. Does multi-agent debate improve AI feedback on research papers?
 
 ([https://meta-analysis.cz/debate](https://meta-analysis.cz/debate), [https://arxiv.org/abs/2607.14713](https://arxiv.org/abs/2607.14713))
 

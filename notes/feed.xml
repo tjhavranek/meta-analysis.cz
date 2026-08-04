@@ -19,7 +19,7 @@
 My colleagues and I have two new pre-registered papers that may interest MAER-Net members.
 </p>
 
-<h3>1. Do decisions about outliers and influential effects matter?</h3>
+<h2>1. Do decisions about outliers and influential effects matter?</h2>
 
 <p>
 (<a href="https://meta-analysis.cz/outliers">https://meta-analysis.cz/outliers</a>, <a href="https://arxiv.org/abs/2607.23174">https://arxiv.org/abs/2607.23174</a>)
@@ -33,7 +33,7 @@ With Zuzana Irsova, Martina Luskova, and Tom Stanley, we recompute 358 behaviora
 The mean effect barely moves: the median absolute change in Cohen's d is at most 0.047. Interpretation moves more. In 11.5% of the meta-analyses at least one treatment changes statistical significance, and in 15.9% whether the effect reaches a smallest effect size of interest (|d| &gt;= 0.20). Nearly all flips are in results already close to the boundary; strongly significant results essentially never change. Winsorizing changes the fewest conclusions, DFBETAS the most, and DFBETAS computed with UWLS flags the most influential estimates. Takeaway: pre-register the outlier rule and report results with and without it.
 </p>
 
-<h3>2. Does multi-agent debate improve AI feedback on research papers?</h3>
+<h2>2. Does multi-agent debate improve AI feedback on research papers?</h2>
 
 <p>
 (<a href="https://meta-analysis.cz/debate">https://meta-analysis.cz/debate</a>, <a href="https://arxiv.org/abs/2607.14713">https://arxiv.org/abs/2607.14713</a>)
@@ -142,62 +142,6 @@ We measured perceived usefulness, judged by authors, on finished papers. That is
 <p>
 We built these tools, we expected them to win, and we pre-registered the comparison before finding out. Reporting the outcome either way was the point of registering it. Both tools remain open source and are linked above; the finding is about test-time compute in this setting, not about whether the tools are useful for anything.
 </p>]]></content:encoded>
-    </item>
-    <item>
-      <title>Does multi-agent debate improve AI feedback on research papers?</title>
-      <link>https://meta-analysis.cz/notes/does-multi-agent-debate-improve-ai-feedback/</link>
-      <guid isPermaLink="true">https://meta-analysis.cz/notes/does-multi-agent-debate-improve-ai-feedback/</guid>
-      <pubDate>Thu, 16 Jul 2026 00:00:00 +0000</pubDate>
-      <description>In a pre-registered experiment, authors ranked three blinded AI reports on their own meta-analysis papers. A single-prompt report beat two multi-agent debate tools, one of which spent about 30 times more tokens.</description>
-      <content:encoded><![CDATA[<p class="byline">First published on <a href="https://www.linkedin.com/feed/update/urn%3Ali%3AugcPost%3A7483554931325542401" rel="external">LinkedIn</a>, 16 July 2026. Archived with the rest of our writing at <a href="https://meta-analysis.cz/komentare/posts/2026-07-16-does-multi-agent-debate-improve-ai-feedback/">/komentare/posts/2026-07-16-does-multi-agent-debate-improve-ai-feedback/</a>.</p>
-
-<p>
-Does multi-agent debate improve AI feedback on research papers?
-</p>
-
-<p>
-Not in our experiment.
-</p>
-
-<p>
-We just posted a pre-registered study in which authors ranked three AI reports on their own paper. The reports were blinded and came from three setups: a single prompt and two multi-agent tools. We expected the multi-agent tools to win.
-</p>
-
-<p>
-We find:
-</p>
-
-<p>
-1) Multi-agent debate does not help here. The single prompt beat both multi-agent tools, even though one of them spent about 30x the tokens.
-</p>
-
-<p>
-2) If an independent AI model ranked the reports in the authors' place, it would put the most expensive multi-agent tool first.
-</p>
-
-<p>
-3) Authors who recalled their real journal referee feedback usually ranked it above all the AI reports. In contrast, the AI judges almost always ranked the human feedback last.
-</p>
-
-<p>
-I was also surprised by how little the author and AI rankings agree (correlation 0.14). Authors seem to have actually read the AI reports (!) and thought about them, not just used a chatbot to rank them.
-</p>
-
-<p>
-Thanks to all 47 authors who participated!
-</p>
-
-<p>
-Paper: <a href="https://meta-analysis.cz/debate">https://meta-analysis.cz/debate</a>
-</p>
-
-<p>
-Both multi-agent tools are open source: <a href="https://github.com/tjhavranek/mad-research">https://github.com/tjhavranek/mad-research</a> <a href="https://github.com/tjhavranek/paper-workshop">https://github.com/tjhavranek/paper-workshop</a>
-</p>
-
-<figure><img src="https://meta-analysis.cz/komentare/social-img/2026-07-16_p2_1.jpeg" alt="Title page of the working paper Does Multi-Agent Debate Improve AI Feedback on Research Papers? by Tomas Havranek and Zuzana Irsova, dated 16 July 2026." /></figure>
-
-<figure><img src="https://meta-analysis.cz/komentare/social-img/2026-07-16_p2_2.jpeg" alt="Chart: author mean rank plotted against tokens per paper on a log scale. The single pass ranks best at roughly 25k tokens, while mad-research and paper-workshop rank worse despite spending about 200k and 800k tokens." /></figure>]]></content:encoded>
     </item>
     <item>
       <title>A new AI tool for reviewing ERC grant proposals</title>
@@ -629,46 +573,6 @@ In other words, it pushed us to state the boundary conditions clearly—the kind
 </ul>]]></content:encoded>
     </item>
     <item>
-      <title>Making AI models duel to sharpen deep analytical work</title>
-      <link>https://meta-analysis.cz/notes/i-make-ai-models-duel/</link>
-      <guid isPermaLink="true">https://meta-analysis.cz/notes/i-make-ai-models-duel/</guid>
-      <pubDate>Fri, 12 Dec 2025 00:00:00 +0000</pubDate>
-      <description>A structured workflow has one AI model write a first-pass assessment and a second model actively try to break it, so a researcher sees what survives rather than accepting a single model&#x27;s fast, overconfident answer.</description>
-      <content:encoded><![CDATA[<p class="byline">First published on <a href="https://www.linkedin.com/feed/update/urn%3Ali%3Ashare%3A7405164270306504704" rel="external">LinkedIn</a>, 12 December 2025. Archived with the rest of our writing at <a href="https://meta-analysis.cz/komentare/posts/2025-12-12-i-make-ai-models-duel/">/komentare/posts/2025-12-12-i-make-ai-models-duel/</a>.</p>
-
-<p>
-For deep analytical work, I don’t use one AI model. I make them duel.
-</p>
-
-<p>
-For thinking-intensive tasks (research, strategy, due diligence) a single AI model often converges too fast. It sounds convincing but skips edge cases and hidden assumptions.
-</p>
-
-<p>
-So Tomas Havranek and I formalized a workflow to create structured disagreement:
-</p>
-
-<p>
-🔹 Anchor (ChatGPT): Writes a first-pass assessment grounded in the files. 🔹 Audit (Gemini): Actively tries to break it (logic gaps, counterexamples, failure modes). ChatGPT defends. The duel iterates. 🔹 Synthesis (You): You analyze the conflict to see what survives.
-</p>
-
-<p>
-The output is not “AI approval.” It is a clearer map of risks, boundary conditions, and what you must verify.
-</p>
-
-<p>
-Advanced users: You can swap the auditor for Claude or automate this via API (MAD).
-</p>
-
-<p>
-For everyone else: no code needed. You can copy-paste the protocol and try it via ChatGPT Agent.
-</p>
-
-<p>
-Protocol (GitHub): 👉 <a href="https://github.com/tjhavranek/research-audit-duel-protocol">https://github.com/tjhavranek/research-audit-duel-protocol</a> Research example: 👉 <a href="https://www.maer-net.org/post/ai_duel">https://www.maer-net.org/post/ai_duel</a>
-</p>]]></content:encoded>
-    </item>
-    <item>
       <title>MAIVE Is Now on CRAN</title>
       <link>https://meta-analysis.cz/notes/maer-maive-cran/</link>
       <guid isPermaLink="true">https://meta-analysis.cz/notes/maer-maive-cran/</guid>
@@ -706,50 +610,6 @@ MAIVE is also available in the <a href="https://www.easymeta.org">EasyMeta.org</
 
 <p>
 Many thanks to <b>Petr Čala</b> for preparing the CRAN release and building the EasyMeta interface.
-</p>]]></content:encoded>
-    </item>
-    <item>
-      <title>MAIVE is now installable directly from CRAN</title>
-      <link>https://meta-analysis.cz/notes/maive-is-now-on-cran/</link>
-      <guid isPermaLink="true">https://meta-analysis.cz/notes/maive-is-now-on-cran/</guid>
-      <pubDate>Wed, 10 Dec 2025 00:00:00 +0000</pubDate>
-      <description>MAIVE, a meta-analysis bias-correction method for detecting when study results look too precise because of method choices or selective reporting, can now be installed directly in R with install.packages(&quot;MAIVE&quot;), in addition to the EasyMeta.org web app.</description>
-      <content:encoded><![CDATA[<p class="byline">First published on <a href="https://www.linkedin.com/feed/update/urn%3Ali%3Ashare%3A7404420382004539392" rel="external">LinkedIn</a>, 10 December 2025. Archived with the rest of our writing at <a href="https://meta-analysis.cz/komentare/posts/2025-12-10-maive-is-now-on-cran/">/komentare/posts/2025-12-10-maive-is-now-on-cran/</a>.</p>
-
-<p>
-🔎 MAIVE is now on CRAN: Better tools for trustworthy meta-analysis
-</p>
-
-<p>
-Meta-analysis is one of the key pillars of evidence-based research. It combines results from many studies to give us a clearer, more reliable answer.
-</p>
-
-<p>
-But in observational research, studies can sometimes appear too precise --not because the evidence is strong, but because of method choices, selective reporting, or p-hacking. This can distort the final meta-analytic conclusion. MAIVE helps address this.
-</p>
-
-<p>
-You can now install MAIVE directly in R:
-</p>
-
-<p>
-install.packages("MAIVE")
-</p>
-
-<p>
-Or try it instantly in your browser (no coding needed): 🖥️ <a href="https://www.easymeta.org">https://www.easymeta.org</a> More details: 📦 CRAN package: <a href="https://CRAN.R-project.org/package=MAIVE">https://CRAN.R-project.org/package=MAIVE</a>
-</p>
-
-<p>
-📄 Nature Communications article: <a href="https://www.nature.com/articles/s41467-025-63261-0">https://www.nature.com/articles/s41467-025-63261-0</a>
-</p>
-
-<p>
-📰 Blog overview: <a href="https://communities.springernature.com/posts/spurious-precision-in-meta-analysis-of-observational-research">https://communities.springernature.com/posts/spurious-precision-in-meta-analysis-of-observational-research</a>
-</p>
-
-<p>
-A big thank-you to Petr Čala, who built the MAIVE web app and prepared the CRAN release. His work makes high-quality meta-analysis methods accessible.
 </p>]]></content:encoded>
     </item>
     <item>
@@ -1033,7 +893,7 @@ Comments, questions, or counterexamples are welcome!
 </p>
 
 <p>
-<i>Links to papers and methods are at </i><a href="http://meta-analysis.cz/"><i>meta-analysis.cz</i></a><i>.</i>
+<i>Links to papers and methods are at </i><a href="https://meta-analysis.cz/"><i>meta-analysis.cz</i></a><i>.</i>
 </p>]]></content:encoded>
     </item>
     <item>
@@ -1053,7 +913,7 @@ Following these guidelines is not obligatory for publication in <i>JoES</i> or e
 </p>
 
 <p>
-We provide a step-by-step guide on how to do a meta-analysis from scratch. We cover the following issues: topic selection, literature search, data collection, correction for publication bias and p-hacking, heterogeneity, implied (best practice) estimate, and use of artificial intelligence. The guidelines draw, first, on the vast experience of Tom and Chris with both methods and applications, and second, on the data and codes for dozens of meta-analyses available at <a href="http://meta-analysis.cz/">meta-analysis.cz</a>. Each discussed step and method characteristic is accompanied by a practical example.
+We provide a step-by-step guide on how to do a meta-analysis from scratch. We cover the following issues: topic selection, literature search, data collection, correction for publication bias and p-hacking, heterogeneity, implied (best practice) estimate, and use of artificial intelligence. The guidelines draw, first, on the vast experience of Tom and Chris with both methods and applications, and second, on the data and codes for dozens of meta-analyses available at <a href="https://meta-analysis.cz/">meta-analysis.cz</a>. Each discussed step and method characteristic is accompanied by a practical example.
 </p>
 
 <p>
@@ -1077,7 +937,7 @@ The guidelines are brief and non-technical, so please read them if you are inter
 </p>
 
 <p>
-<b>Correction techniques</b>. Always correct for potential publication bias or p-hacking. Use at least one model based on the funnel plot (such as PET-PEESE) and one selection model (such as 3PSM). Both families of correction techniques have quite different assumptions. Recently, Bartoš et al. (2023) have offered a model average across both families of publication selection bias corrections and models without any selection bias. Bartoš et al. offer easy to use software, JASP: (<a href="https://fbartos.github.io/RoBMA/">https://fbartos.github.io/RoBMA/</a>) to calculate RoBMA-PSMA. Also, there are a number of video and <a href="https://journals.sagepub.com/doi/full/10.1177/25152459221109259">published tutorials</a> that provide step-by-step guidance. Additionally, you can also use our new <a href="http://meta-analysis.cz/maive/">MAIVE technique</a>, which allows for spurious precision.
+<b>Correction techniques</b>. Always correct for potential publication bias or p-hacking. Use at least one model based on the funnel plot (such as PET-PEESE) and one selection model (such as 3PSM). Both families of correction techniques have quite different assumptions. Recently, Bartoš et al. (2023) have offered a model average across both families of publication selection bias corrections and models without any selection bias. Bartoš et al. offer easy to use software, JASP: (<a href="https://fbartos.github.io/RoBMA/">https://fbartos.github.io/RoBMA/</a>) to calculate RoBMA-PSMA. Also, there are a number of video and <a href="https://journals.sagepub.com/doi/full/10.1177/25152459221109259">published tutorials</a> that provide step-by-step guidance. Additionally, you can also use our new <a href="https://meta-analysis.cz/maive/">MAIVE technique</a>, which allows for spurious precision.
 </p>
 
 <p>
@@ -1113,10 +973,10 @@ To be clear, we do not claim that our guidelines must always be followed nor are
 </p>
 
 <p>
-<b>The paper is available at </b><a href="http://meta-analysis.cz/maive"><b>meta-analysis.cz/maive</b></a><b>. We provide a package for R (</b><i><b>maive</b></i><b>), which makes it easy to use the new method.</b>
+<b>The paper is available at </b><a href="https://meta-analysis.cz/maive"><b>meta-analysis.cz/maive</b></a><b>. We provide a package for R (</b><i><b>maive</b></i><b>), which makes it easy to use the new method.</b>
 </p>
 
-<h3>What is already known</h3>
+<h2>What is already known</h2>
 
 <ul>
 <li>In meta-analysis it's optimal to give more weight to more precise studies.</li>
@@ -1124,7 +984,7 @@ To be clear, we do not claim that our guidelines must always be followed nor are
 <li>Inverse-variance weighting is used by all common estimators.</li>
 </ul>
 
-<h3>What is new</h3>
+<h2>What is new</h2>
 
 <ul>
 <li>If reported precision exaggerates real one, inverse-variance weighting creates a bias.</li>
@@ -1133,7 +993,7 @@ To be clear, we do not claim that our guidelines must always be followed nor are
 <li>Meta-Analysis Instrumental Variable Estimator (MAIVE) corrects for spuriousness.</li>
 </ul>
 
-<h3>Potential impact</h3>
+<h2>Potential impact</h2>
 
 <ul>
 <li>Meta-analysts should use MAIVE if they suspect <i>p</i>-hacking.</li>
@@ -1145,7 +1005,7 @@ To be clear, we do not claim that our guidelines must always be followed nor are
 Inverse-variance weighting reigns in meta-analysis. <a href="https://www.maer-net.org/post/maive#viewer-2137l">[1</a>] More precise studies, or rather those seemingly more precise based on lower reported standard errors, get a greater weight explicitly or implicitly. The weight is explicit in traditional summaries, such as the fixed-effect model (assuming a common effect) and the random-effects model (allowing for heterogeneity). <a href="https://www.maer-net.org/post/maive#viewer-2137l">[2,3</a>] These models work as weighted averages, the weight diluted in random effects by a heterogeneity term. The weight is also explicit in publication bias correction models based on the funnel plot. <a href="https://www.maer-net.org/post/maive#viewer-2137l">[4–12</a>] <b>In funnel-based models, reported precision is particularly important</b> because the weighted average gets reinforced by assigning more importance to supposedly less biased (nominally more precise) studies. The weight is implicit in selection models estimated using the maximum likelihood approach, <a href="https://www.maer-net.org/post/maive#viewer-2137l">[13–18</a>] which often reduce to the random-effects model in the absence of publication bias.
 </p>
 
-<h3>Reported precision turned spurious</h3>
+<h2>Reported precision turned spurious</h2>
 
 <p>
 The tacit assumption behind all these techniques is that the reported, nominal precision represents the true, underlying precision. The standard error, inverse of precision, is given to the researcher by her data and methods. It's fixed and can't be manipulated, consciously or unconsciously. The assumption is plausible in experimental research, for which most meta-analysis methods were developed. But in observational research, where thousands of meta-analyses are produced each year, <b>the derivation of the standard error is often a key part of the empirical exercise</b>. Consider a regression analysis with longitudinal data: explaining the health outcomes of patients treated by different physicians and observed over several years. Individual observations aren't independent, and standard errors need to be clustered. <a href="https://www.maer-net.org/post/maive#viewer-2137l">[19</a>] But how? At the level of physicians, patients, or years? Should one use double clustering <a href="https://www.maer-net.org/post/maive#viewer-2137l">[20</a>] or perhaps wild bootstrap <a href="https://www.maer-net.org/post/maive#viewer-2137l">[21</a>]? It's complicated, and with a different computation of confidence intervals the researcher will report different precision for the same estimated effect size.
@@ -1155,7 +1015,7 @@ The tacit assumption behind all these techniques is that the reported, nominal p
 Spurious precision can arise in many contexts other than longitudinal data analysis. Ordinary least squares, the workhorse of observational research, assume homoskedasticity of residuals. The assumption is often violated, and in these cases researchers should use heteroskedasticity-robust standard errors, <a href="https://www.maer-net.org/post/maive#viewer-2137l">[22</a>] typically larger than plain vanilla standard errors. <b>If researchers ignore heteroskedasticity, they report precise estimates, but the precision is spurious</b>. Similar problems may arise due to nonstationarity in time series <a href="https://www.maer-net.org/post/maive#viewer-2137l">[23</a>] and a myriad of other issues. When a study with exaggerated precision enters meta-analysis, it gets too much impact because of inverse-variance weighting. If a meta-analyst spots the methodological problem, she can exclude the study or add a corresponding control. Either way, the weighting problem isn't properly addressed. And spotting misspecification is hard, because the tweak lifting reported precision can be hidden within a complex model.
 </p>
 
-<h3>Various sources of spuriousness</h3>
+<h2>Various sources of spuriousness</h2>
 
 <p>
 Spurious precision can also arise due to cheating. For economics journals, quasi-experimental evidence shows that the introduction of obligatory data sharing substantially reduced the reported <i>t</i>-statistics. <a href="https://www.maer-net.org/post/maive#viewer-2137l">[24</a>] Prior to the introduction of data sharing some authors had probably cheated by manipulating data or results. Pütz and Bruns find hundreds of reporting errors in top economics journals; when they ask authors to explain the errors, the authors are four times more likely to admit a mistake in the standard error than in the estimated effect size. [67] But cheating, mistakes, and other issues that can affect the standard error independently of the estimated effect size aren't necessary to produce spurious precision. <b>A realistic mechanism is </b><i><b>p</b></i><b>-hacking, in which the researcher adjusts the entire model to produce statistically significant results.</b> After adjusting the model, both the effect size and standard error change, and both can jointly contribute to statistical significance. We examine, by employing Monte Carlo simulations, the consequences of cheating and the more realistic <i>p</i>-hacking behavior, of which spurious precision is a natural result.
@@ -1165,7 +1025,7 @@ Spurious precision can also arise due to cheating. For economics journals, quasi
 Figure 1 gives intuition on the cheating/clustering/heteroskedasticity/nonstationarity simulation. For brevity we call it a cheating scenario. Researchers crave statistically significant estimates and to that effect manipulate effect sizes or standard errors at will, but not both at the same time. The scenario is simplistic, and we start with it because it allows for a clean separation of selection on estimates (conventional in the literature) and selection on standard errors (our focus). The separation isn't so clean in the <i>p</i>-hacking scenario but can be mapped back to the cheating scenario. The mechanism of the left-hand panel of Figure 1 is analogous to the Lombard effect in psychoacoustic: <a href="https://www.maer-net.org/post/maive#viewer-2137l">[25,26</a>] speakers increase their vocal effort in response to noise. Here <b>researchers increase their selection effort in response to noise in data or methods</b>, noise that produces imprecision and insignificance. When researchers so cheat with effect sizes, the results are consistent with funnel-based models of publication bias: funnel asymmetry arises, the most precise estimates remain close to the true effect, and inverse-variance weighting helps mitigate the bias—aside from improving the efficiency of the aggregate estimate, the original rationale for using the weights. <a href="https://www.maer-net.org/post/maive#viewer-2137l">[27,28</a>]
 </p>
 
-<h3>Bias in inverse-variance weighting</h3>
+<h2>Bias in inverse-variance weighting</h2>
 
 <p>
 The right-hand panel of Figure 1 paints a different picture. Here the mechanism is analogous to Taylor’s law in ecology: <a href="https://www.maer-net.org/post/maive#viewer-2137l">[29</a>] the variance can decrease with a smaller mean (originally describing population density for various species). <b>When researchers achieve significance by lowering the standard error, we again observe funnel asymmetry. But this time no bias arises </b>in the reported effect sizes: the black-filled circles and the hollow circles denote the same effect size, only precision changes. The simple unweighted mean of reported estimates is unbiased, and inverse-variance weighting paradoxically creates a downward bias. The bias increases when we use a correction based on the funnel plot: effectively, when we estimate the size of a hypothetical infinitely precise study, the intercept of a regression curve.
@@ -1175,7 +1035,7 @@ The right-hand panel of Figure 1 paints a different picture. Here the mechanism 
 In practice, as noted, selection on estimates and standard errors arises simultaneously. We generate this quality in simulations by allowing researchers to replace control variables in a regression context, a mechanism that also gives rise to sizable heterogeneity. Control variables are correlated with the main regressor of interest (for example, a treatment variable), and their <b>replacement affects both the estimated treatment effect and the corresponding precision</b>. Then <i>p</i>-hacked estimates move not strictly north or west, as in the figure, but northwest. Even spuriously large estimates can now be spuriously precise. The resulting bias direction due to inverse-variance weighting is unclear. Our simulations suggest that an upwards bias is plausible.
 </p>
 
-<h3>Current methods fail with spurious precision</h3>
+<h2>Current methods fail with spurious precision</h2>
 
 <p>
 Does any technique yield little bias and good coverage rates in the case of panel B of Figure 1, or at least with a small ratio of selection on standard errors relative to selection on estimates? <b>We examine 7 current estimators</b>: simple unweighted mean, fixed effects (weighted least squares, FE/WLS), <a href="https://www.maer-net.org/post/maive#viewer-2137l">[30</a>] precision-effect test and precision-effect estimate with standard errors (PET-PEESE), <a href="https://www.maer-net.org/post/maive#viewer-2137l">[9</a>] endogenous kink (EK), <a href="https://www.maer-net.org/post/maive#viewer-2137l">[11</a>] weighted average of adequately powered estimates (WAAP), <a href="https://www.maer-net.org/post/maive#viewer-2137l">[10</a>] the selection model by Andrews and Kasy, <a href="https://www.maer-net.org/post/maive#viewer-2137l">[17</a>] and <i>p</i>-uniform∗ <a href="https://www.maer-net.org/post/maive#viewer-2137l">[18</a>]. The first two are basic summary statistics, the next three are correction methods based on the funnel plot, and the last two are selection models. The choice of estimators is subjective, but the three funnel-based techniques are commonly used in observational research. <a href="https://www.maer-net.org/post/maive#viewer-2137l">[31–38</a>] The two selection models are also used often <a href="https://www.maer-net.org/post/maive#viewer-2137l">[39–46</a>] and represent the latest incarnations of models in the tradition of Hedges <a href="https://www.maer-net.org/post/maive#viewer-2137l">[13–16</a>] and their simplifications <a href="https://www.maer-net.org/post/maive#viewer-2137l">[47–52</a>].
@@ -1193,7 +1053,7 @@ The importance of reported precision for these estimators is summarized in Table
 where <i>αi_hat</i> on the left-hand side denotes effects estimated in primary studies and <i>SE </i>their standard errors. This is the PEESE model due to Stanley and Doucouliagos, but for simplicity without additional inverse-variance weights—since the model searches for the effect conditional on maximum precision, it already features an implicit, built-in weight. In panel A of Figure 1, the quadratic regression would fit the data quite well, <a href="https://www.maer-net.org/post/maive#viewer-2137l">[9</a>] and estimated <i>α</i>0 would lie close to the mean underlying effect. <b>In panel B, however, the regression fails to recover the underlying coefficients.</b> The regression fails because it assumes a causal effect of the standard error on the estimate: a good description of panel A (Lombard effect), but not panel B (Taylor’s law). In panel B, the standard error sometimes depends on the estimated effect size and is thus correlated with the error term, <i>vi</i>. The resulting estimates of <i>α</i>0 (true effect) and <i>β </i>(intensity of selection) are biased.
 </p>
 
-<h3>Endogeneity problem in meta-regression</h3>
+<h2>Endogeneity problem in meta-regression</h2>
 
 <p>
 The problem is the correlation between <i>SE </i>and <i>vi</i>, which can arise for three reasons: First, selective reporting based on standard errors, which we simulate. Second, measurement error in <i>SE</i>. This issue was mentioned in 2005 by Tom Stanley, <a href="https://www.maer-net.org/post/maive#viewer-2137l">[53</a>] <b>who was the first to instrument the standard error in a meta-analysis context</b>. Nevertheless, Stanley didn't discuss the adjustment of weights nor did he pursue the idea further as a bias-correction estimator. We don't consider this source of correlation in simulations. Third, the correlation can be caused by unobserved heterogeneity: some method choices affect both estimates and standard errors, and some standardized meta-analysis effects feature a mechanical correlation between both quantities. [36] (A careless meta-analyst may also mix estimates measured in different units. <a href="https://www.maer-net.org/post/maive#viewer-2137l">[54</a>]) Our <i>p</i>-hacking simulation only partly addresses this mechanism by allowing researchers to change control variables, which can affect both estimates and standard errors at the same time—a combination of panel A and panel B of Figure 1. In other words, we model only some of the mechanisms which give rise to spurious precision.
@@ -1203,7 +1063,7 @@ The problem is the correlation between <i>SE </i>and <i>vi</i>, which can arise 
 The statistical solution to the problem, often called endogeneity, is to find an instrument for the standard error. A valid instrument is correlated with the standard error, but not with the error term (and thus unrelated to the three sources of endogeneity mentioned above). While finding good instruments is often challenging, here the answer beckons. By definition, reported variance (<i>SE</i>2) is a linear function of the inverse of the sample size used in the primary study. <b>The sample size is plausibly robust to selection,</b> or at least it's more difficult to collect more data than to <i>p</i>-hack the standard error to achieve significance. The sample size isn't estimated, and so it doesn't suffer from measurement error. The sample size is typically not affected by changing methodology, certainly not by changing control variables. Some endogeneity may remain if researchers correctly expecting smaller effects design larger experiments. <a href="https://www.maer-net.org/post/maive#viewer-2137l">[41</a>] But, at least in observational research, authors often use as much data as available from the start. Indeed, the sample size, unlike the standard error, is often given to the researcher: the very word <i>data </i>means things given.
 </p>
 
-<h3>Meta-Analysis Instrumental Variable Estimator (MAIVE)</h3>
+<h2>Meta-Analysis Instrumental Variable Estimator (MAIVE)</h2>
 
 <p>
 <b>We regress the squared reported standard errors on the inverse sample size and plug the fitted values instead of the variance</b> to the right-hand side of the aforementioned equation. Thence we obtain the baseline MAIVE estimator. For the baseline MAIVE we choose the instrumented version of PEESE without additional inverse-variance weights because it works well in simulations. The version with additional adjusted weights (again, using fitted values instead of reported precision) often performs similarly but is more complex, so we prefer the former, parsimonious solution. In principle, any funnel-based technique (and the funnel plot itself) can be adjusted by the procedure described above: just replace the standard error with the square root of the fitted values. The adjustment helps the fixed-effect, WAAP, and endogenous kink model to typically defeat both the simple unweighted mean and selection models in the presence of spurious precision. MAIVE can be easily applied using our <i>maive </i>package in R.
@@ -1218,30 +1078,30 @@ In Figure 2 below we report one set of simulation results: the case of the <i>p<
 </p>
 
 <p>
-The higher the correlation, the more potential for <i>p</i>-hacking via the replacement of the control variable. If there is no correlation, removing or replacing the control won't systematically affect the main estimated parameter. With a positive correlation and a positive underlying value of the second slope coefficient, replacing the control variable with a less relevant proxy creates an upwards omitted-variable bias. Importantly for our purposes, a <b>higher correlation increases selection on standard errors more than proportionally compared to selection on estimates.</b> With a higher correlation and thus more <i>p</i>-hacking and also more relative selection on standard errors, the bias of standard meta-analysis estimators increases. Note that even a large correlation still corresponds to a relatively small ratio of selection on standard errors (spurious precision, Taylor's law) relative to selection on estimates (Lombard effect). In <a href="http://meta-analysis.cz/maive/maive.pdf">the paper</a> we compute and tabulate this correspondence for different values of the true effect.
+The higher the correlation, the more potential for <i>p</i>-hacking via the replacement of the control variable. If there is no correlation, removing or replacing the control won't systematically affect the main estimated parameter. With a positive correlation and a positive underlying value of the second slope coefficient, replacing the control variable with a less relevant proxy creates an upwards omitted-variable bias. Importantly for our purposes, a <b>higher correlation increases selection on standard errors more than proportionally compared to selection on estimates.</b> With a higher correlation and thus more <i>p</i>-hacking and also more relative selection on standard errors, the bias of standard meta-analysis estimators increases. Note that even a large correlation still corresponds to a relatively small ratio of selection on standard errors (spurious precision, Taylor's law) relative to selection on estimates (Lombard effect). In <a href="https://meta-analysis.cz/maive/maive.pdf">the paper</a> we compute and tabulate this correspondence for different values of the true effect.
 </p>
 
-<h3>Simple mean beats complex models</h3>
+<h2>Simple mean beats complex models</h2>
 
 <p>
-Eventually, the bias of the classical, unadjusted techniques gets even larger than the bias of the simple unweighted mean. That is, when there is enough spuriousness, corrections for publication bias do more harm than good. MAIVE corrects most of the spuriousness bias (see panels B-G in Figure 2 and compare panel A, classical estimators, to panel H, MAIVE versions of these estimators), and the MAIVE versions with adjusted or omitted weights work similarly well. MAIVE performs comparably to conventional estimators if spurious precision is negligible, and dominates unadjusted estimators if spuriousness is non-negligible (as we show in the paper, about 1:10 of selection on standard errors to selection on estimates). In <a href="http://meta-analysis.cz/maive/maive.pdf">the paper</a> we report the results of many more simulation scenarios, both cheating and <i>p</i>-hacking, for bias, MSE, and coverage rates—with comparable results in qualitative terms. <b>Even a modest dose of spurious precision makes inverse-variance weighting (explicit or implicit) unreliable and warrants a MAIVE treatment.</b>
+Eventually, the bias of the classical, unadjusted techniques gets even larger than the bias of the simple unweighted mean. That is, when there is enough spuriousness, corrections for publication bias do more harm than good. MAIVE corrects most of the spuriousness bias (see panels B-G in Figure 2 and compare panel A, classical estimators, to panel H, MAIVE versions of these estimators), and the MAIVE versions with adjusted or omitted weights work similarly well. MAIVE performs comparably to conventional estimators if spurious precision is negligible, and dominates unadjusted estimators if spuriousness is non-negligible (as we show in the paper, about 1:10 of selection on standard errors to selection on estimates). In <a href="https://meta-analysis.cz/maive/maive.pdf">the paper</a> we report the results of many more simulation scenarios, both cheating and <i>p</i>-hacking, for bias, MSE, and coverage rates—with comparable results in qualitative terms. <b>Even a modest dose of spurious precision makes inverse-variance weighting (explicit or implicit) unreliable and warrants a MAIVE treatment.</b>
 </p>
 
 <p>
-Why, instead of instrumenting, don't we simply<b> replace variance with inverse sample size</b>? <a href="https://www.maer-net.org/post/maive#viewer-2137l">[36,55–57</a>] While the replacement would also address spurious precision, the instrumental approach has many advantages, as discussed in Section 3 of <a href="http://meta-analysis.cz/maive/maive.pdf">the paper.</a> One advantage is flexibility: the instrumental approach can incorporate other aspects of study design, besides sample size, that affect standard errors. Sample size rarely forms a perfect proxy for precision, and MAIVE can be extended by adding instruments to improve the fit. Moreover, the instrumental approach remains statistically valid even if, for some reason, the correlation between the reported variance and the inverse sample size is small.
+Why, instead of instrumenting, don't we simply<b> replace variance with inverse sample size</b>? <a href="https://www.maer-net.org/post/maive#viewer-2137l">[36,55–57</a>] While the replacement would also address spurious precision, the instrumental approach has many advantages, as discussed in Section 3 of <a href="https://meta-analysis.cz/maive/maive.pdf">the paper.</a> One advantage is flexibility: the instrumental approach can incorporate other aspects of study design, besides sample size, that affect standard errors. Sample size rarely forms a perfect proxy for precision, and MAIVE can be extended by adding instruments to improve the fit. Moreover, the instrumental approach remains statistically valid even if, for some reason, the correlation between the reported variance and the inverse sample size is small.
 </p>
 
-<h3>Current methods adjusted to spuriousness</h3>
+<h2>Current methods adjusted to spuriousness</h2>
 
 <p>
 We don't argue that spurious precision is common. We argue that it can plausibly arise in observational research. Even in experimental settings, randomization can fail, <a href="https://www.maer-net.org/post/maive#viewer-2137l">[58</a>] and authors often use regressions to control for pre-treatment covariates or make other adjustments <a href="https://www.maer-net.org/post/maive#viewer-2137l">[59</a>] that can yield spurious precision. When it arises, a small dose can render the simple mean more reliable than sophisticated correction techniques. The Meta-Analysis Instrumental Variable Estimator (MAIVE) solves the problem by using inverse sample size as an instrument for reported variance. That is, we regress the reported squared standard errors on the inverse of the number of observations used in the primary study. The fitted values from this regression are then used instead of reported variance in the PEESE meta-regression. Standard weighted means, funnel plots, and funnel-based methods can be adjusted similarly to make them robust to spurious precision. <b>The entire meta-analysis toolkit can be salvaged with this modification.</b>
 </p>
 
 <p>
-The instrumental approach has seven benefits over using sample size as a proxy for precision, as noted, and we explain them in <a href="http://meta-analysis.cz/maive/maive.pdf">the paper</a>. There are at least two costs as well, both compared to the proxy approach and the classical one that relies on reported precision. First, MAIVE is more complex since it involves an additional regression and computation of fitted values and valid confidence intervals. But the instrumental approach is readily available in most statistical programs. <b>We create the </b><i><b>maive </b></i><b>package for R, which makes estimation easy for meta-analysts unfamiliar with instrumental variables.</b> Second, the additional regression makes MAIVE noisier compared to conventional techniques. When a meta-analyst is sure there can be absolutely no spurious precision in her data, using reported precision without instruments will yield unbiased and more efficient estimates. The lack of spurious precision can be tested approximately by employing the Hausman specification test: <a href="https://www.maer-net.org/post/maive#viewer-2137l">[60</a>] if the coefficients estimated in MAIVE are far from those of an unadjusted PEESE, spurious precision is likely an issue.
+The instrumental approach has seven benefits over using sample size as a proxy for precision, as noted, and we explain them in <a href="https://meta-analysis.cz/maive/maive.pdf">the paper</a>. There are at least two costs as well, both compared to the proxy approach and the classical one that relies on reported precision. First, MAIVE is more complex since it involves an additional regression and computation of fitted values and valid confidence intervals. But the instrumental approach is readily available in most statistical programs. <b>We create the </b><i><b>maive </b></i><b>package for R, which makes estimation easy for meta-analysts unfamiliar with instrumental variables.</b> Second, the additional regression makes MAIVE noisier compared to conventional techniques. When a meta-analyst is sure there can be absolutely no spurious precision in her data, using reported precision without instruments will yield unbiased and more efficient estimates. The lack of spurious precision can be tested approximately by employing the Hausman specification test: <a href="https://www.maer-net.org/post/maive#viewer-2137l">[60</a>] if the coefficients estimated in MAIVE are far from those of an unadjusted PEESE, spurious precision is likely an issue.
 </p>
 
-<h3>Using MAIVE in practice</h3>
+<h2>Using MAIVE in practice</h2>
 
 <p>
 A discussion is in order regarding the application of MAIVE—pronounced, by the way, as the Irish name Maeve. The instrument is the overall sample size, not degrees of freedom, because the latter depends on clustering units. <b>We prefer the MAIVE version of PEESE without weights</b> (after testing with unweighted MAIVE-PET whether the true effect is nonzero). This parsimonious specification intuitively fits both panels of Figure 1. The <i>maive </i>package allows for optional adjusted weights. Researchers may choose a MAIVE version of another estimator, such as endogenous kink. The package also runs the Hausman test, a rough indicator of spuriousness. Because PEESE is heteroskedastic by definition and we prefer not to use inverse-variance weights, the package produces heteroskedasticity-robust standard errors by default. When some studies report multiple estimates, standard errors in MAIVE—and any meta-analysis estimator—<b>should be clustered at the study level,</b> again a default option. With fewer than 30 studies we recommend wild bootstrap. <a href="https://www.maer-net.org/post/maive#viewer-2137l">[21</a>] It's a good idea to include study-level dummies (econometric fixed effects) to filter out study-specific idiosyncrasies related to unobserved heterogeneity. The package also reports a robust F-statistic of the first-stage regression. If the F-statistic is below 10, the instrument is weak and MAIVE results should be treated with caution. Researchers may want to use confidence intervals robust to weak instruments.
@@ -1251,19 +1111,19 @@ A discussion is in order regarding the application of MAIVE—pronounced, by the
 The reader will object that our simulation is unfair to correction methods. <b>The methods were designed to counter publication bias; we simulate </b><i><b>p</b></i><b>-hacking</b>. Individual estimates and standard errors get biased, which is why selection models don't work well here—though they don't assume, as funnel methods assume, that selection works only on estimates (the Lombard effect discussed earlier). The distinction between publication bias and <i>p</i>-hacking is clear in theory, but in practice both are often observationally equivalent to the meta-analyst. (But <i>p</i>-hacking likely predominates. <a href="https://www.maer-net.org/post/maive#viewer-2137l">[61</a>]) As long as we believe our <i>p</i>-hacking environment is broadly realistic, we need a technique that corrects the resulting bias. MAIVE is the only such technique. One can design <i>p</i>-hacking scenarios in which misspecifications make it almost impossible for meta-analysis methods to uncover the true mean. <a href="https://www.maer-net.org/post/maive#viewer-2137l">[58,62</a>] If that is a realistic description of observational research, unconditional meta-analysis means are meaningless. <a href="https://www.maer-net.org/post/maive#viewer-2137l">[63</a>] <b>MAIVE can be extended to allow for observed heterogeneity</b> and deliver context-specific means via incorporation into <a href="https://www.maer-net.org/post/model-averaging">Bayesian model averaging meta-regression</a> approaches addressing model uncertainty. <a href="https://www.maer-net.org/post/maive#viewer-2137l">[42–46</a>]
 </p>
 
-<h3>Low-hanging fruit for future research</h3>
+<h2>Low-hanging fruit for future research</h2>
 
 <p>
 We leave many questions open regarding spurious precision. How common is it in practice? How does measurement error influence the relative performance of MAIVE? What happens when method heterogeneity explicitly affects both estimates and their precision? Does spurious precision help explain why meta-analyses often exaggerate the true effect compared to multi-lab pre-registered replications? <a href="https://www.maer-net.org/post/maive#viewer-2137l">[64–66</a>] <b>How to correctly adjust selection models for spuriousness?</b> The last is perhaps the most important question for future research because many meta-analysts prefer selection models over funnel-based techniques. The adjustment of selection models isn't straightforward since here precision has two intertwined roles: identification and weighting. For identification, we need the reported, nominal precision, which determines statistical significance. But for weights we need the underlying, true precision. The maximum likelihood approach has to be modified to allow a different measure of precision for each role.
 </p>
 
-<h3>Bottom line</h3>
+<h2>Bottom line</h2>
 
 <p>
 Spurious precision, while plausibly destructive, is surmounted by adjusting funnel-based methods.
 </p>
 
-<h3>References</h3>
+<h2>References</h2>
 
 <ul>
 <li>Gurevitch J, Koricheva J, Nakagawa S, Stewart G. Meta-analysis and the science of research synthesis. <i>Nature </i>2018; 555: 175–182.</li>
@@ -1639,7 +1499,7 @@ We are not the first to highlight the disconnect between the Cobb-Douglas specif
 </p>
 
 <p>
-[1] The full paper, together with data and codes, is available at <a href="http://meta-analysis.cz/sigma">http://meta-analysis.cz/sigma</a>.
+[1] The full paper, together with data and codes, is available at <a href="https://meta-analysis.cz/sigma">https://meta-analysis.cz/sigma</a>.
 </p>]]></content:encoded>
     </item>
     <item>
@@ -1673,7 +1533,7 @@ Many methods of model averaging exist, and the technicalities may look intimidat
 <h2>Key for Meta-Analysis</h2>
 
 <p>
-Mark makes a strong case that model averaging should form an essential part of an empirical economist’s toolkit. If that holds for economics, it must hold double for <b>meta-regression </b>analysis (in any field), where model uncertainty <a href="https://journals.sagepub.com/doi/10.1177/1740774508101279">runs rampant</a>. In most meta-analysis contexts we can think of <a href="http://meta-analysis.cz/excess_sensitivity/">dozens</a> of factors that may influence (or just be correlated with) the reported outcomes. Sometimes there’s the theory to guide us, but more often than not we are on our own.
+Mark makes a strong case that model averaging should form an essential part of an empirical economist’s toolkit. If that holds for economics, it must hold double for <b>meta-regression </b>analysis (in any field), where model uncertainty <a href="https://journals.sagepub.com/doi/10.1177/1740774508101279">runs rampant</a>. In most meta-analysis contexts we can think of <a href="https://meta-analysis.cz/excess_sensitivity/">dozens</a> of factors that may influence (or just be correlated with) the reported outcomes. Sometimes there’s the theory to guide us, but more often than not we are on our own.
 </p>
 
 <p>
@@ -1683,7 +1543,7 @@ Our traditional response to model uncertainty is <b>model selection</b>: let’s
 <blockquote><p>The most important common characteristic of model selection methods is that they choose a model and then conduct inference conditionally upon the assumption that this model actually generated the data. So these methods only deal with the uncertainty in a limited sense: they try to select the ‘best’ model, and their inference can only be relied upon if that model happens to be (a really good approximation to) the data generating process. In the much more likely case where the best model captures some aspects of reality, but there are other models that capture other aspects, model selection implies that our inference is almost always misleading, either in the sense of being systematically wrong or overly precise. (<a href="https://warwick.ac.uk/fac/sci/statistics/staff/academic-research/steel/steel_homepage/techrep/modelaveraging_jel_final.pdf">Steel, 2019</a>)</p></blockquote>
 
 <p>
-Sure, that’s not to say we should bury the theory for good and just go all in for data mining. We always have some idea about the <b>structure of the underlying model</b>. We know that certain variables must play a role – so we can pin these to all regressions and only use model averaging to work over the ‘control’ variables (for which we have no theory, but still don’t want to ignore them). Roman Horvath, Zuzana Irsova, Marek Rusnak, and myself use this strategy in our 2015 <a href="http://meta-analysis.cz/substitution/">Journal of International Economics</a> paper, among other applications.
+Sure, that’s not to say we should bury the theory for good and just go all in for data mining. We always have some idea about the <b>structure of the underlying model</b>. We know that certain variables must play a role – so we can pin these to all regressions and only use model averaging to work over the ‘control’ variables (for which we have no theory, but still don’t want to ignore them). Roman Horvath, Zuzana Irsova, Marek Rusnak, and myself use this strategy in our 2015 <a href="https://meta-analysis.cz/substitution/">Journal of International Economics</a> paper, among other applications.
 </p>
 
 <h2>But It’s All Bayesian, Right?</h2>
@@ -1713,13 +1573,13 @@ Yes, <a href="https://link.springer.com/article/10.1007/s11424-009-9198-y">frequ
 <h2>Model Averaging Is User-Friendly</h2>
 
 <p>
-How difficult is to do model averaging in <b>your next meta-analysis</b>? Not difficult at all. You can use the packages described by Mark or the R code from <a href="http://meta-analysis.cz/">our website</a> (you don’t have to know R syntax to apply these estimators; the code is self-contained). We have three recent papers in which we use both Bayesian and frequentist model averaging and for which we provide data and code: one in the <a href="http://meta-analysis.cz/habits/">European Economic Review</a> (as far as we know, the first application of frequentist model averaging in meta-analysis), another in the <a href="http://meta-analysis.cz/dst/">Energy Journal</a>, and the third in the <a href="http://meta-analysis.cz/education/">Oxford Bulletin of Economics and Statistics</a>.
+How difficult is to do model averaging in <b>your next meta-analysis</b>? Not difficult at all. You can use the packages described by Mark or the R code from <a href="https://meta-analysis.cz/">our website</a> (you don’t have to know R syntax to apply these estimators; the code is self-contained). We have three recent papers in which we use both Bayesian and frequentist model averaging and for which we provide data and code: one in the <a href="https://meta-analysis.cz/habits/">European Economic Review</a> (as far as we know, the first application of frequentist model averaging in meta-analysis), another in the <a href="https://meta-analysis.cz/dst/">Energy Journal</a>, and the third in the <a href="https://meta-analysis.cz/education/">Oxford Bulletin of Economics and Statistics</a>.
 </p>
 
 <h2>Anything Else?</h2>
 
 <p>
-Not related to model averaging, but important news for the meta-analysis community: the <b>American Economic Review</b> has accepted the first regular <a href="https://maxkasy.github.io/home/files/papers/PublicationBias.pdf">paper</a> ever that focuses on meta-analysis and publication bias. Congratulations to Isaiah Andrews and Maximilian Kasy! They also have an <a href="https://maxkasy.github.io/home/metastudy/">app</a> for their method, so now you can do meta-analysis using your iPhone (or Xiaomi Mi, if you prefer). Another <a href="https://github.com/Chishio318/stem-based_method">superb new technique</a> was developed by <b>Chishio Furukawa</b> from the MIT. It’s a clever, intuitive non-parametric estimator that in my experience works great, and I recommend you give it a try. In our new paper conditionally accepted by the <a href="http://meta-analysis.cz/excess_sensitivity/">Review of Economic Dynamics</a> we employ these two techniques along with more traditional ones (including the ingenious and already classical <a href="https://onlinelibrary.wiley.com/doi/full/10.1111/ecoj.12461">WAAP</a> by John Ioannidis, Tom Stanley, and Chris Doucouliagos), and all point to the same direction.
+Not related to model averaging, but important news for the meta-analysis community: the <b>American Economic Review</b> has accepted the first regular <a href="https://maxkasy.github.io/home/files/papers/PublicationBias.pdf">paper</a> ever that focuses on meta-analysis and publication bias. Congratulations to Isaiah Andrews and Maximilian Kasy! They also have an <a href="https://maxkasy.github.io/home/metastudy/">app</a> for their method, so now you can do meta-analysis using your iPhone (or Xiaomi Mi, if you prefer). Another <a href="https://github.com/Chishio318/stem-based_method">superb new technique</a> was developed by <b>Chishio Furukawa</b> from the MIT. It’s a clever, intuitive non-parametric estimator that in my experience works great, and I recommend you give it a try. In our new paper conditionally accepted by the <a href="https://meta-analysis.cz/excess_sensitivity/">Review of Economic Dynamics</a> we employ these two techniques along with more traditional ones (including the ingenious and already classical <a href="https://onlinelibrary.wiley.com/doi/full/10.1111/ecoj.12461">WAAP</a> by John Ioannidis, Tom Stanley, and Chris Doucouliagos), and all point to the same direction.
 </p>
 
 <p>
