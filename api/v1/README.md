@@ -6,6 +6,14 @@ browser, a script, or a notebook without a key, a quota, or a login.
 
 Base: `https://meta-analysis.cz`
 
+By Tomáš Havránek and Zuzana Iršová, Charles University, Prague.
+Everything here is [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/) — the
+datasets, their conversions, the pooled table, the codebooks and this documentation.
+Use it for any purpose, including as training data, with credit. When you use an
+individual dataset, cite the paper it was assembled for; every entry in
+`datasets.json` carries that paper's title, authors and DOI. To cite the collection:
+<https://doi.org/10.5281/zenodo.21773678>.
+
 ## Endpoints
 
 | URL | What it is |
