@@ -1991,5 +1991,31 @@
   "meta_keywords": "outliers, influence diagnostics, DFBETAS, winsorizing, studentized residuals, meta-analysis, publication bias, robustness, pre-registration, behavioral science",
   "one_line": "Pre-registered analysis of 358 behavioral science meta-analyses: alternative outlier and influence handling treatments barely move the mean but reverse statistical significance in 11.5% of cases.",
   "dataset_doi": "10.5281/zenodo.21216506"
+ },
+ {
+  "project": "pcc_survey",
+  "title": "Do methods matter in the meta-analysis of partial correlation coefficients?",
+  "abstract": "Recent studies have demonstrated that conventional meta-analyses of partial correlation coefficients (PCC) are biased. Several adjustments have been shown in simulations to reduce these small-sample biases to negligibility. While many meta-analyses of partial correlation coefficients are conducted each year across several disciplines, the practical importance of these issues remains unknown. To address this question and to offer advice for applications, we survey 172 economic meta-analyses of PCCs. We find that small-sample biases are negligible in practice. However, some publication selection biases remain. Although Fisher's z transformations have often been recommended, they reduce neither small-sample nor publication selection biases relative to conventional random effects. Both the unrestricted weighted least squares (UWLS) and the Hunter-Schmidt (HS) estimators produce smaller, arguably less biased, estimates of the mean PCC in these applications than either random effects or Fisher's z transformations. These findings offer practical guidance for any discipline that meta-analyzes partial correlations.",
+  "reference_line": "T. D. Stanley, Petr Cala, Hristos Doucouliagos, Zuzana Irsova, and Tomas Havranek (2026), \"Do methods matter in the meta-analysis of partial correlation coefficients?\" Charles University, Prague. Available at meta-analysis.cz/pcc_survey.",
+  "authors": [
+   "T. D. Stanley",
+   "Petr Cala",
+   "Hristos Doucouliagos",
+   "Zuzana Irsova",
+   "Tomas Havranek"
+  ],
+  "year": 2026,
+  "journal": null,
+  "doi_or_publisher_url": null,
+  "menu_links": [
+   {
+    "label": "Data & Code",
+    "href": "https://github.com/PetrCala/pcc-survey"
+   }
+  ],
+  "figure": null,
+  "has_meta_description": true,
+  "meta_keywords": "partial correlation coefficient, PCC, meta-analysis, UWLS, Hunter-Schmidt, random effects, Fisher's z, publication selection bias, small-sample bias, research synthesis",
+  "one_line": "A survey of 172 economics meta-analyses covering 63,730 partial correlations from 6,191 papers: small-sample biases are negligible in practice, Fisher's z reduces neither small-sample nor publication selection bias, and UWLS and Hunter-Schmidt give smaller mean estimates than random effects."
  }
 ]

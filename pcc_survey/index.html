@@ -1,0 +1,151 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Do methods matter in the meta-analysis of partial correlation coefficients?</title>
+<meta name="keywords" content="partial correlation coefficient, PCC, meta-analysis, UWLS, Hunter-Schmidt, random effects, Fisher's z, publication selection bias, small-sample bias, research synthesis" />
+<meta name="description" content="A survey of 172 economics meta-analyses of partial correlations: small-sample biases are negligible in practice, Fisher's z helps with neither bias, and UWLS and Hunter-Schmidt give smaller mean estimates." />
+<link href="/style.css" rel="stylesheet" type="text/css" />
+<!-- seo-meta:start -->
+<!-- seo-meta:end -->
+</head>
+<body>
+<div id="wrapper">
+<!-- start header -->
+<div id="logo">
+	<a class="masthead-home" href="/">meta-analysis.cz</a>
+	<h1>Do Methods Matter for Partial Correlations?</h1>
+	<h2> <span class="mk">&raquo;</span>&nbsp;&nbsp;&nbsp; evidence from 172 meta-analyses</h2>
+</div>
+<div id="header">
+	<div id="menu">
+		<ul>
+			<li class="current_page_item"><a href="https://github.com/PetrCala/pcc-survey">Data &amp; Code</a></li>
+			<li><a href="/pcc/">The bias</a></li>
+			<li><a href="/correlations/">Correlations</a></li>
+			<li><a href="/guidelines/">Guidelines</a></li>
+		</ul>
+	</div>
+</div>
+<!-- end header -->
+</div>
+<!-- start page -->
+<div id="page">
+	<!-- start content -->
+	<div id="content">
+		<div class="post">
+			<h2 class="title">Abstract</h2>
+			<div class="entry">
+<p>
+Recent studies have demonstrated that conventional meta-analyses of partial correlation coefficients (PCC) are biased. Several adjustments have been shown in simulations to reduce these small-sample biases to negligibility. While many meta-analyses of partial correlation coefficients are conducted each year across several disciplines, the practical importance of these issues remains unknown. To address this question and to offer advice for applications, we survey 172 economic meta-analyses of PCCs. We find that small-sample biases are negligible in practice. However, some publication selection biases remain. Although Fisher&rsquo;s z transformations have often been recommended, they reduce neither small-sample nor publication selection biases relative to conventional random effects. Both the unrestricted weighted least squares (UWLS) and the Hunter-Schmidt (HS) estimators produce smaller, arguably less biased, estimates of the mean PCC in these applications than either random effects or Fisher&rsquo;s z transformations. These findings offer practical guidance for any discipline that meta-analyzes partial correlations.
+</p>
+
+<p>The survey covers <b>172 meta-analyses</b> containing <b>63,730 estimated partial correlations</b> and their standard errors, extracted from <b>6,191 papers</b> &mdash; about 371 estimates per meta-analysis, and about ten per primary study. The typical effect in this literature is small: the median partial correlation is around 0.06.</p>
+
+<p class="caveat"><b>Status.</b> Under review at <i>Research Synthesis Methods</i>. Invited to revise and resubmit in May 2026; the revision was submitted in July 2026. There is no published version yet, so this page carries no paper PDF, and the text above is the abstract as submitted. The data and the code are public.</p>
+
+<h3>What changes if you switch estimator</h3>
+
+<p>Almost nothing, until you reach the margin. The corrections proposed for the small-sample bias &mdash; Fisher&rsquo;s z applied to random effects or to UWLS, and the degrees-of-freedom adjustment UWLS+3 &mdash; barely move the mean away from the unadjusted estimator they correct. Across 172 real meta-analyses, sample sizes are large and widely dispersed enough that the small-sample bias washes out. What remains is publication selection bias, and that is a different problem with a different remedy.</p>
+
+<p>Where the choice does bite is in the weighting rather than the transformation. The median UWLS mean is about <b>30% smaller</b> than the corresponding random-effects mean, matching what simulations predict when publication selection is present. Hunter-Schmidt is smaller still. And if 0.1 is taken as the smallest partial correlation of interest, roughly <b>one in three</b> of the &ldquo;small&rdquo; average effects that random effects reports becomes negligible under UWLS or Hunter-Schmidt. The survey therefore supports UWLS and Hunter-Schmidt over random effects, and the paper argues that when the estimators disagree the more conservative number is the one to emphasise.</p>
+
+<h3>Three papers on partial correlations, and what each one does</h3>
+
+<p>Partial correlations are the workhorse effect size of economics meta-analysis, and three papers on this site are about them. They answer different questions and should not be confused:</p>
+
+<ul>
+<li><a href="/pcc/">Meta-analyses of partial correlations are biased</a> (2024) established the problem in theory and simulation, and proposed corrections.</li>
+<li><a href="/correlations/">Reducing the biases of the conventional meta-analysis of correlations</a> (2025) carried the same agenda to ordinary correlations, and brought in the Hunter-Schmidt approach.</li>
+<li><b>This paper</b> asks whether any of it changes the answer in practice, by running the alternatives across 172 real meta-analyses rather than simulated data.</li>
+</ul>
+
+<h3>Data and code</h3>
+
+<p>The survey data and the analysis code are public at
+<a href="https://github.com/PetrCala/pcc-survey">github.com/PetrCala/pcc-survey</a>: an R package holding the analysis dataset, the estimator and publication-selection routines, unit tests, a replication-guide vignette, and package versions locked with <code>renv</code>. The companion Stata and spreadsheet calculations sit under <code>secondary-stats/</code>.</p>
+
+<p class="ref"><b>Reference:</b> T. D. Stanley, Petr Cala, Hristos Doucouliagos, Zuzana Irsova, and Tomas Havranek (2026), &ldquo;Do methods matter in the meta-analysis of partial correlation coefficients?&rdquo; Charles University, Prague. Available at meta-analysis.cz/pcc_survey.</p>
+			</div>
+			<div class="meta">
+				<p class="links"><a href="https://github.com/PetrCala/pcc-survey" class="more">Data and code on GitHub</a> </p>
+			</div>
+</div>
+	</div>
+	<!-- end content -->
+	<!-- start sidebar -->
+	<div id="sidebar">
+		<ul>
+  <li id="search">
+    <h2>Search</h2>
+    <form method="get" action="https://www.google.com/search">
+      <fieldset>
+        <input type="text" id="s" name="q" value="" aria-label="Search meta-analysis.cz" />
+        <input type="hidden" name="as_sitesearch" value="meta-analysis.cz" />
+        <input type="submit" id="x" value="Search" />
+      </fieldset>
+    </form>
+  </li>
+			<li>
+								<h2>Related papers</h2>
+				<ul>
+<li><a href="/pcc/">Bias in partial correlations</a></li>
+<li><a href="/correlations/">Bias in correlations</a></li>
+<li><a href="/maive/">MAIVE estimator</a></li>
+<li><a href="/guidelines/">A practitioner&#x27;s guide</a></li>
+<li><a href="/outliers/">Outliers and influence</a></li>
+				</ul>
+			</li>
+			<li>
+								<h2>Related tools</h2>
+				<ul>
+<li><a href="https://www.easymeta.org/">EasyMeta (web app)</a></li>
+<li><a href="https://github.com/PetrCala/pcc-survey">Survey data and code</a></li>
+				</ul>
+			</li>
+			<li>
+								<h2>Links</h2>
+				<ul>
+<li><a href="https://ies.fsv.cuni.cz/en/research/overview">Research at Charles University</a></li>
+<li><a href="https://www.maer-net.org/">MAER-Net</a></li>
+<li><a href="https://ideas.repec.org/k/metaana.html">Meta-Analysis on RePEc</a></li>
+				</ul>
+			</li>
+		</ul>
+	</div>
+	<!-- end sidebar -->
+	<div style="clear: both;">&nbsp;</div>
+</div>
+<!-- end page -->
+<footer class="site-foot">
+<p class="foot-lede"><b>meta-analysis.cz</b> collects meta-analyses in economics: the papers, the
+data behind them, and the code that produced them. It is maintained by <b>Tomáš Havránek</b> and
+<b>Zuzana Iršová</b> at the Institute of Economic Studies, Charles University, Prague.</p>
+<p class="foot-nav"><a href="/">All meta-analyses</a> &middot;
+<a href="/results/">Headline results</a> &middot;
+<a href="/datasets/">Datasets and the pooled table</a> &middot;
+<a href="/maive/">MAIVE</a> &middot;
+<a href="/guidelines/">Practitioner&#x27;s guide</a> &middot;
+<a href="/notes/">Research notes</a> &middot;
+<a href="https://www.easymeta.org/">EasyMeta web app</a></p>
+<p class="foot-who"><b>Tomáš Havránek</b> &middot; <a href="https://www.tomashavranek.cz/">tomashavranek.cz</a> &middot; <a href="https://ies.fsv.cuni.cz/contacts/institute-members/78067720">IES FSV UK</a> &middot; <a href="https://orcid.org/0000-0002-3158-2539">ORCID</a> &middot; <a href="https://scholar.google.com/citations?user=BF0BvBkAAAAJ">Google Scholar</a> &middot; <a href="https://ideas.repec.org/f/pha418.html">RePEc</a> &middot; <a href="https://www.scopus.com/authid/detail.uri?authorId=24453189000">Scopus</a> &middot; <a href="https://cepr.org/about/people/tomas-havranek">CEPR</a> &middot; <a href="https://metrics.stanford.edu/people/tomas-havranek">Stanford METRICS</a></p>
+<p class="foot-who"><b>Zuzana Iršová</b> &middot; <a href="https://www.irsova.com/">irsova.com</a> &middot; <a href="https://ies.fsv.cuni.cz/contacts/institute-members/73504033">IES FSV UK</a> &middot; <a href="https://orcid.org/0000-0002-0753-8124">ORCID</a> &middot; <a href="https://scholar.google.com/citations?user=LaHrICUAAAAJ">Google Scholar</a> &middot; <a href="https://ideas.repec.org/e/pir23.html">RePEc</a> &middot; <a href="https://www.scopus.com/authid/detail.uri?authorId=37080793200">Scopus</a> &middot; <a href="https://cepr.org/about/people/zuzana-irsova">CEPR</a> &middot; <a href="https://metrics.stanford.edu/people/zuzana-irsova">Stanford METRICS</a></p>
+<p class="foot-cite"><b>How to cite this collection:</b> Havranek, T. and Z. Irsova (2026).
+meta-analysis.cz: harmonised estimate-level data from meta-analyses in economics. Zenodo.
+<a href="https://doi.org/10.5281/zenodo.21773678">https://doi.org/10.5281/zenodo.21773678</a>.
+Individual papers carry their own citation on their own page.</p>
+<p class="foot-licence"><b>Licence: CC BY 4.0.</b> Everything on this site is licensed under the
+<a href="https://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0
+International Licence</a>. That covers the papers, the datasets, their CSV and Parquet conversions,
+the pooled table, the codebooks and the documentation. You may copy, redistribute, adapt and reuse
+any of it for any purpose, including commercial use and training machine-learning models, as long
+as you give attribution to meta-analysis.cz. You do not need to ask.</p>
+<p class="foot-machine">For machines: <a href="/api/v1/datasets.json">datasets.json</a> &middot;
+<a href="/api/v1/datapackage.json">datapackage.json</a> &middot;
+<a href="/api/v1/croissant.json">croissant.json</a> &middot;
+<a href="/llms.txt">llms.txt</a> &middot; <a href="/llms-full.txt">llms-full.txt</a> &middot;
+<a href="/sitemap.xml">sitemap.xml</a> &middot; <a href="/LICENSE">LICENSE</a></p>
+</footer>
+</body>
+</html>
