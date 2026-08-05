@@ -160,12 +160,12 @@ Recent studies have demonstrated that conventional meta-analyses of partial corr
 
 <p class="prose">Almost nothing, until you reach the margin. The corrections proposed for the small-sample bias &mdash; Fisher&rsquo;s z applied to random effects or to UWLS, and the degrees-of-freedom adjustment UWLS+3 &mdash; barely move the mean away from the unadjusted estimator they correct. Across 172 real meta-analyses, sample sizes are large and widely dispersed enough that the small-sample bias washes out. What remains is publication selection bias, and that is a different problem with a different remedy.</p>
 
-<p class="prose">Where the choice does bite is in the weighting rather than the transformation. The median UWLS mean is about <b>30% smaller</b> than the corresponding random-effects mean, matching what simulations predict when publication selection is present. Hunter-Schmidt is smaller still. And if 0.1 is taken as the smallest partial correlation of interest, roughly <b>one in three</b> of the &ldquo;small&rdquo; average effects that random effects reports becomes negligible under UWLS or Hunter-Schmidt. The survey therefore supports UWLS and Hunter-Schmidt over random effects, and the paper argues that when the estimators disagree the more conservative number is the one to emphasise.</p>
+<p class="prose">Where the choice does bite is in the weighting rather than the transformation. The median UWLS mean is about <b>30% smaller</b> than the corresponding random-effects mean, matching what simulations predict when publication selection is present. Hunter-Schmidt is smaller still. And if 0.1 is taken as the smallest partial correlation of interest, roughly <b>one in three</b> of the &ldquo;small&rdquo; average effects that random effects reports becomes negligible under UWLS or Hunter-Schmidt. The survey therefore supports UWLS and Hunter-Schmidt over random effects, and the paper argues that when the estimators disagree the more conservative number is the one to emphasize.</p>
 
 <p class="table-note">Ten ways to average the same 172 meta-analyses (Table&nbsp;1 of the paper). Every
-literature is sign-aligned so that its median partial correlation is positive, which means both
-small-sample bias and publication selection push a number <i>up</i>: smaller is, on this evidence,
-less biased. <b>MSE vs PET-PEESE</b> is the mean squared distance from the publication-bias-corrected
+literature is sign-aligned so that its median partial correlation is positive, so both small-sample
+bias and publication selection push a number <i>up</i>, and a smaller average is the one consistent
+with less of both. <b>MSE vs PET-PEESE</b> is the mean squared distance from the publication-bias-corrected
 estimate. <b>Flipped</b> is the same mean over the 50 meta-analyses whose estimates were mostly
 negative.</p>
 <div class="table-scroll"><table style="border-collapse:collapse; width:100%; margin:6px 0 4px 0; font-size:12px;">
@@ -267,9 +267,10 @@ negative.</p>
 transformations barely move anything: RE<sub>z</sub> lands on 0.131 against random effects&rsquo;
 0.126, and UWLS+3 on 0.109 against UWLS&rsquo;s 0.110. The weighting moves a lot: 0.126 for random
 effects against 0.096 for Hunter-Schmidt. And the estimators that come out smallest are also the
-ones closest to the publication-bias-corrected PET-PEESE, which is the paper&rsquo;s reason for
-reading &ldquo;smaller&rdquo; as &ldquo;less biased&rdquo; rather than merely &ldquo;more
-conservative&rdquo;.</p>
+ones closest to the publication-bias-corrected PET-PEESE. The paper is careful about what that
+licenses: it declines to infer smaller bias from a smaller average &mdash; that would be affirming
+the consequent &mdash; and claims only a pattern consistent with the upward-bias hypothesis and
+with what simulations show when publication selection is present.</p>
 
 <h3>Three papers on partial correlations, and what each one does</h3>
 
