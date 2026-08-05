@@ -2009,6 +2009,10 @@
   "doi_or_publisher_url": null,
   "menu_links": [
    {
+    "label": "Paper (PDF)",
+    "href": "pcc_survey.pdf"
+   },
+   {
     "label": "Data & Code",
     "href": "https://github.com/PetrCala/pcc-survey"
    }

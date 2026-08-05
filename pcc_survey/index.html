@@ -17,6 +17,7 @@
 <meta name="citation_author" content="Tomas Havranek" />
 <meta name="citation_publication_date" content="2026" />
 <meta name="citation_technical_report_institution" content="Charles University, Prague" />
+<meta name="citation_pdf_url" content="https://meta-analysis.cz/pcc_survey/pcc_survey.pdf" />
 <meta property="og:site_name" content="meta-analysis.cz" />
 <meta property="og:type" content="article" />
 <meta property="og:title" content="Do methods matter in the meta-analysis of partial correlation coefficients?" />
@@ -61,7 +62,15 @@
     }
    ],
    "datePublished": "2026",
-   "keywords": "partial correlation coefficient, PCC, meta-analysis, UWLS, Hunter-Schmidt, random effects, Fisher's z, publication selection bias, small-sample bias, research synthesis"
+   "keywords": "partial correlation coefficient, PCC, meta-analysis, UWLS, Hunter-Schmidt, random effects, Fisher's z, publication selection bias, small-sample bias, research synthesis",
+   "encoding": [
+    {
+     "@type": "MediaObject",
+     "name": "Paper (PDF)",
+     "contentUrl": "https://meta-analysis.cz/pcc_survey/pcc_survey.pdf",
+     "encodingFormat": "application/pdf"
+    }
+   ]
   },
   {
    "@type": "Dataset",
@@ -122,7 +131,8 @@
 <div id="header">
 	<div id="menu">
 		<ul>
-			<li class="current_page_item"><a href="https://github.com/PetrCala/pcc-survey">Data &amp; Code</a></li>
+			<li class="current_page_item"><a href="pcc_survey.pdf">Paper (PDF)</a></li>
+				<li><a href="https://github.com/PetrCala/pcc-survey">Data &amp; Code</a></li>
 			<li><a href="/pcc/">The bias</a></li>
 			<li><a href="/correlations/">Correlations</a></li>
 			<li><a href="/guidelines/">Guidelines</a></li>
@@ -144,13 +154,122 @@ Recent studies have demonstrated that conventional meta-analyses of partial corr
 
 <p class="prose">The survey covers <b>172 meta-analyses</b> containing <b>63,730 estimated partial correlations</b> and their standard errors, extracted from <b>6,191 papers</b> &mdash; about 371 estimates per meta-analysis, and about ten per primary study. The typical effect in this literature is small: the median partial correlation is around 0.06.</p>
 
-<p class="caveat"><b>Status.</b> Under review at <i>Research Synthesis Methods</i>. Invited to revise and resubmit in May 2026; the revision was submitted in July 2026. There is no published version yet, so this page carries no paper PDF, and the text above is the abstract as submitted. The data and the code are public.</p>
+<p class="caveat"><b>Status.</b> Under review at <i>Research Synthesis Methods</i>. Invited to revise and resubmit in May 2026; the revision was submitted in July 2026. The PDF here is the <a href="pcc_survey.pdf">authors&rsquo; June 2026 revision</a>, the manuscript version prepared for that resubmission; the version now with the journal may differ, and there is no published version yet. The data and the code are public.</p>
 
 <h3>What changes if you switch estimator</h3>
 
 <p class="prose">Almost nothing, until you reach the margin. The corrections proposed for the small-sample bias &mdash; Fisher&rsquo;s z applied to random effects or to UWLS, and the degrees-of-freedom adjustment UWLS+3 &mdash; barely move the mean away from the unadjusted estimator they correct. Across 172 real meta-analyses, sample sizes are large and widely dispersed enough that the small-sample bias washes out. What remains is publication selection bias, and that is a different problem with a different remedy.</p>
 
 <p class="prose">Where the choice does bite is in the weighting rather than the transformation. The median UWLS mean is about <b>30% smaller</b> than the corresponding random-effects mean, matching what simulations predict when publication selection is present. Hunter-Schmidt is smaller still. And if 0.1 is taken as the smallest partial correlation of interest, roughly <b>one in three</b> of the &ldquo;small&rdquo; average effects that random effects reports becomes negligible under UWLS or Hunter-Schmidt. The survey therefore supports UWLS and Hunter-Schmidt over random effects, and the paper argues that when the estimators disagree the more conservative number is the one to emphasise.</p>
+
+<p class="table-note">Ten ways to average the same 172 meta-analyses (Table&nbsp;1 of the paper). Every
+literature is sign-aligned so that its median partial correlation is positive, which means both
+small-sample bias and publication selection push a number <i>up</i>: smaller is, on this evidence,
+less biased. <b>MSE vs PET-PEESE</b> is the mean squared distance from the publication-bias-corrected
+estimate. <b>Flipped</b> is the same mean over the 50 meta-analyses whose estimates were mostly
+negative.</p>
+<div class="table-scroll"><table style="border-collapse:collapse; width:100%; margin:6px 0 4px 0; font-size:12px;">
+<thead>
+<tr>
+<th scope="col" style="text-align:left;  border-top:1px solid #444; border-bottom:1px solid #444; padding:5px 6px;">Estimator of the mean PCC</th>
+<th scope="col" style="text-align:right; border-top:1px solid #444; border-bottom:1px solid #444; padding:5px 6px;">Mean</th>
+<th scope="col" style="text-align:right; border-top:1px solid #444; border-bottom:1px solid #444; padding:5px 6px;">Median</th>
+<th scope="col" style="text-align:right; border-top:1px solid #444; border-bottom:1px solid #444; padding:5px 6px;">Std. dev.</th>
+<th scope="col" style="text-align:right; border-top:1px solid #444; border-bottom:1px solid #444; padding:5px 6px;">MSE vs PET-PEESE</th>
+<th scope="col" style="text-align:right; border-top:1px solid #444; border-bottom:1px solid #444; padding:5px 6px;">Flipped</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="padding:4px 6px;">Unweighted mean</td>
+<td style="padding:4px 6px; text-align:right;">0.131</td>
+<td style="padding:4px 6px; text-align:right;">0.097</td>
+<td style="padding:4px 6px; text-align:right;">0.115</td>
+<td style="padding:4px 6px; text-align:right;">0.022</td>
+<td style="padding:4px 6px; text-align:right;">0.078</td>
+</tr>
+<tr>
+<td style="padding:4px 6px;">Random effects (RE<sub>1</sub>)</td>
+<td style="padding:4px 6px; text-align:right;">0.126</td>
+<td style="padding:4px 6px; text-align:right;">0.087</td>
+<td style="padding:4px 6px; text-align:right;">0.116</td>
+<td style="padding:4px 6px; text-align:right;">0.020</td>
+<td style="padding:4px 6px; text-align:right;">0.073</td>
+</tr>
+<tr>
+<td style="padding:4px 6px;">Random effects, conventional SE (RE<sub>2</sub>)</td>
+<td style="padding:4px 6px; text-align:right;">0.129</td>
+<td style="padding:4px 6px; text-align:right;">0.090</td>
+<td style="padding:4px 6px; text-align:right;">0.117</td>
+<td style="padding:4px 6px; text-align:right;">0.021</td>
+<td style="padding:4px 6px; text-align:right;">0.075</td>
+</tr>
+<tr>
+<td style="padding:4px 6px;">UWLS (UWLS<sub>1</sub>)</td>
+<td style="padding:4px 6px; text-align:right;">0.110</td>
+<td style="padding:4px 6px; text-align:right;">0.061</td>
+<td style="padding:4px 6px; text-align:right;">0.128</td>
+<td style="padding:4px 6px; text-align:right;">0.010</td>
+<td style="padding:4px 6px; text-align:right;">0.064</td>
+</tr>
+<tr>
+<td style="padding:4px 6px;">UWLS, conventional SE (UWLS<sub>2</sub>)</td>
+<td style="padding:4px 6px; text-align:right;">0.140</td>
+<td style="padding:4px 6px; text-align:right;">0.069</td>
+<td style="padding:4px 6px; text-align:right;">0.175</td>
+<td style="padding:4px 6px; text-align:right;">0.019</td>
+<td style="padding:4px 6px; text-align:right;">0.090</td>
+</tr>
+<tr>
+<td style="padding:4px 6px;">UWLS+3 (degrees-of-freedom adjusted)</td>
+<td style="padding:4px 6px; text-align:right;">0.109</td>
+<td style="padding:4px 6px; text-align:right;">0.061</td>
+<td style="padding:4px 6px; text-align:right;">0.127</td>
+<td style="padding:4px 6px; text-align:right;">0.009</td>
+<td style="padding:4px 6px; text-align:right;">0.063</td>
+</tr>
+<tr>
+<td style="padding:4px 6px;">Random effects on Fisher&rsquo;s z (RE<sub>z</sub>)</td>
+<td style="padding:4px 6px; text-align:right;">0.131</td>
+<td style="padding:4px 6px; text-align:right;">0.088</td>
+<td style="padding:4px 6px; text-align:right;">0.123</td>
+<td style="padding:4px 6px; text-align:right;">0.022</td>
+<td style="padding:4px 6px; text-align:right;">0.076</td>
+</tr>
+<tr>
+<td style="padding:4px 6px;">UWLS on Fisher&rsquo;s z (UWLS<sub>z</sub>)</td>
+<td style="padding:4px 6px; text-align:right;">0.101</td>
+<td style="padding:4px 6px; text-align:right;">0.056</td>
+<td style="padding:4px 6px; text-align:right;">0.117</td>
+<td style="padding:4px 6px; text-align:right;">0.009</td>
+<td style="padding:4px 6px; text-align:right;">0.056</td>
+</tr>
+<tr>
+<td style="padding:4px 6px;">Hunter-Schmidt (HS)</td>
+<td style="padding:4px 6px; text-align:right;">0.096</td>
+<td style="padding:4px 6px; text-align:right;">0.056</td>
+<td style="padding:4px 6px; text-align:right;">0.109</td>
+<td style="padding:4px 6px; text-align:right;">0.010</td>
+<td style="padding:4px 6px; text-align:right;">0.055</td>
+</tr>
+<tr>
+<td style="padding:5px 6px; border-top:1px solid #444;">PET-PEESE, corrected for publication bias</td>
+<td style="padding:5px 6px; border-top:1px solid #444; text-align:right;">0.090</td>
+<td style="padding:5px 6px; border-top:1px solid #444; text-align:right;">0.040</td>
+<td style="padding:5px 6px; border-top:1px solid #444; text-align:right;">0.171</td>
+<td style="padding:5px 6px; border-top:1px solid #444; text-align:right;">&mdash;</td>
+<td style="padding:5px 6px; border-top:1px solid #444; text-align:right;">0.046</td>
+</tr>
+</tbody>
+</table></div>
+
+<p class="prose">Read down the Mean column and the paper&rsquo;s argument is visible in one glance. The
+transformations barely move anything: RE<sub>z</sub> lands on 0.131 against random effects&rsquo;
+0.126, and UWLS+3 on 0.109 against UWLS&rsquo;s 0.110. The weighting moves a lot: 0.126 for random
+effects against 0.096 for Hunter-Schmidt. And the estimators that come out smallest are also the
+ones closest to the publication-bias-corrected PET-PEESE, which is the paper&rsquo;s reason for
+reading &ldquo;smaller&rdquo; as &ldquo;less biased&rdquo; rather than merely &ldquo;more
+conservative&rdquo;.</p>
 
 <h3>Three papers on partial correlations, and what each one does</h3>
 
@@ -170,7 +289,7 @@ Recent studies have demonstrated that conventional meta-analyses of partial corr
 <p class="ref"><b>Reference:</b> T. D. Stanley, Petr Cala, Hristos Doucouliagos, Zuzana Irsova, and Tomas Havranek (2026), &ldquo;Do methods matter in the meta-analysis of partial correlation coefficients?&rdquo; Charles University, Prague. Available at meta-analysis.cz/pcc_survey.</p>
 			</div>
 			<div class="meta">
-				<p class="links"><a href="https://github.com/PetrCala/pcc-survey" class="more">Data and code on GitHub</a> </p>
+				<p class="links"><a href="pcc_survey.pdf" class="more">Read the paper (PDF)</a> &middot; <a href="https://github.com/PetrCala/pcc-survey" class="more">Data and code on GitHub</a> </p>
 			</div>
 </div>
 	</div>
