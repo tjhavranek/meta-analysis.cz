@@ -642,7 +642,15 @@ table.catalogue li{ margin-bottom:var(--s2); font-size:var(--f-1); line-height:1
   /* The masthead pills are the control every visitor taps on every page, and the /results/
      chips are the only way to filter that page. Both measured 32px and 36px tall -- under
      Apple's 44pt and Material's 48dp guidance. Height only; the labels and gaps are unchanged. */
-  #menu a{ min-height:44px; display:flex; align-items:center; }
+  /* The tiles are the masthead's visual weight. Forcing them to 44px to satisfy the touch
+     guideline overrode the deliberate 2rem/tight-padding rule above and made them heavier
+     than the page title beneath them. Keep the tile 32px and put the 44px target in an
+     invisible overlay instead: the hit area is what needs to be 44px, not the ink. */
+  #menu a{ position:relative; }
+  #menu a::before{
+    content:""; position:absolute; left:0; right:0;
+    top:50%; height:44px; transform:translateY(-50%);
+  }
   .chips .chip{ min-height:44px; }
   .r-filter input[type="search"]{ min-height:44px; }
 }
