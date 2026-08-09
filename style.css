@@ -165,6 +165,14 @@ img{ max-width:100%; height:auto; }
 /* NO lead-paragraph rule. On these pages the first <p> IS the whole abstract (eis: 708
    chars), so enlarging it squeezes the entire abstract to 59 chars/line. Found by
    rendering, not by reading. */
+/* The reference line sits under a figure note that is often loose inline text (a bare <i>
+   or a "Materials:" run), not a <p>. Loose text forms an anonymous block with no margins,
+   so with margin-top:0 the reference butted straight into the note — 2px instead of 16px
+   on debate, electricity, inflation, learning and outliers. A top margin fixes those and
+   changes nothing elsewhere: against a preceding <p> (16px) or <figure> (24px) the two
+   margins collapse to the larger. #cite .ref keeps its own tighter spacing by specificity. */
+.entry p.ref{ margin-top:var(--s4); }
+
 .entry a{ overflow-wrap:anywhere; }   /* long DOIs overflow 320px otherwise */
 
 /* figures: measured 1100x800 shown at 400px — they have the resolution to fill the column */
