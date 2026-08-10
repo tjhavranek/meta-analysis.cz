@@ -81,6 +81,18 @@ for rel in pages:
             fails.append(f"{rel}: #content closes before #sidebar - sidebar escapes the page box")
     if 'name="viewport"' not in new:
         fails.append(f"{rel}: no viewport meta - page will render zoomed out on phones")
+    # A bare "<" in visible text (an abstract writing "n < 200") is invisible in a browser and
+    # catastrophic for every text extractor: a regex tag-stripper swallows everything from that
+    # bracket to the next ">". On /pcc/ that silently deleted the rest of the abstract from
+    # every corpus built from the page. This site is written to be read by machines.
+    _spans = [(m.start(), m.end()) for m in
+              re.finditer(r"<script\b.*?</script>|<style\b.*?</style>|<!--.*?-->", new, re.S | re.I)]
+    for m in re.finditer(r"<(?![/a-zA-Z!?])", new):
+        if any(a <= m.start() < b for a, b in _spans):
+            continue          # inside a script/style/comment it is not markup and not text
+        ctx = " ".join(new[max(0, m.start() - 40):m.start() + 40].split())
+        fails.append(f"{rel}: unescaped '<' in visible text - a tag-stripper will delete "
+                     f"everything after it. Write &lt;. Context: ...{ctx}...")
     if not re.search(r'<html[^>]*lang=', new):
         fails.append(f"{rel}: <html> has no lang attribute")
     if new.count('rel="canonical"') != 1:

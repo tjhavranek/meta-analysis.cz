@@ -102,6 +102,20 @@ def build(check=False):
         elif len((r.get("corrected_locator") or "").strip()) < 12:
             sys.exit(f"{p}: quote_source is 'pdf', so corrected_locator must say where in the "
                      f"paper the number is, precisely enough for a reader to check it")
+        # A row drawn as a solid disc claims its pair is exact, so the number a reader sees has
+        # to be findable in the sentence quoted beside it. A row that cannot meet that is
+        # approximate by definition, and then it owes the reader a note saying what is
+        # approximate about it -- which is what the tooltip shows and the ring signals.
+        tier = r.get("tier", "exact")
+        shown = f'{r["corrected"]:g}'.lstrip("-")
+        if tier == "exact":
+            if shown not in (r["corrected_quote"] or "").replace("−", "-"):
+                sys.exit(f"{p}: the corrected value {shown} does not appear in the sentence "
+                         f"quoted for it. Either quote the sentence that contains it, or give "
+                         f"the row a tier and an `approximation` note and let it draw as a ring.")
+        elif not (r.get("approximation") or "").strip():
+            sys.exit(f"{p}: tier '{tier}' is drawn as a ring, so it needs an `approximation` "
+                     f"note saying what is approximate about the pair")
         if r.get("mean_from") == "ratio":
             # the paper states the revision itself ("exaggerates the mean reported estimate
             # twofold"), so there is nothing to divide -- and nothing to get wrong either
