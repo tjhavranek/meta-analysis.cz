@@ -74,6 +74,111 @@ which is smaller and keeps column types.</p>
 <pre class="usage"><code>import pandas as pd
 df = pd.read_parquet("https://meta-analysis.cz/data/v1/estimates_harmonised.parquet")</code></pre>
 
+<figure class="zfig-wrap">
+<svg viewBox="0 0 640 260" width="100%" role="img" aria-labelledby="zsig-t zsig-d" class="zfig">
+<title id="zsig-t">Distribution of absolute t-statistics across 48,355 estimates</title>
+<desc id="zsig-d">Most estimates sit below the conventional thresholds. In a 0.05-wide window either side of 1.96 there are 499 estimates just below and 614 just above. At 1.645 and 2.576 the count falls as the threshold is crossed.</desc>
+<g fill="var(--rule)">
+<rect x="38.00" y="14.00" width="6.20" height="212.00"/>
+<rect x="44.60" y="55.93" width="6.20" height="170.07"/>
+<rect x="51.20" y="54.12" width="6.20" height="171.88"/>
+<rect x="57.80" y="69.14" width="6.20" height="156.86"/>
+<rect x="64.40" y="72.76" width="6.20" height="153.24"/>
+<rect x="71.00" y="63.05" width="6.20" height="162.95"/>
+<rect x="77.60" y="75.22" width="6.20" height="150.78"/>
+<rect x="84.20" y="77.55" width="6.20" height="148.45"/>
+<rect x="90.80" y="84.15" width="6.20" height="141.85"/>
+<rect x="97.40" y="96.57" width="6.20" height="129.43"/>
+<rect x="104.00" y="66.81" width="6.20" height="159.19"/>
+<rect x="110.60" y="79.23" width="6.20" height="146.77"/>
+<rect x="117.20" y="107.06" width="6.20" height="118.94"/>
+<rect x="123.80" y="101.10" width="6.20" height="124.90"/>
+<rect x="130.40" y="107.83" width="6.20" height="118.17"/>
+<rect x="137.00" y="101.75" width="6.20" height="124.25"/>
+<rect x="143.60" y="99.55" width="6.20" height="126.45"/>
+<rect x="150.20" y="113.01" width="6.20" height="112.99"/>
+<rect x="156.80" y="112.36" width="6.20" height="113.64"/>
+<rect x="163.40" y="102.66" width="6.20" height="123.34"/>
+<rect x="170.00" y="93.86" width="6.20" height="132.14"/>
+<rect x="176.60" y="115.08" width="6.20" height="110.92"/>
+<rect x="183.20" y="112.23" width="6.20" height="113.77"/>
+<rect x="189.80" y="115.73" width="6.20" height="110.27"/>
+<rect x="196.40" y="141.23" width="6.20" height="84.77"/>
+<rect x="203.00" y="104.73" width="6.20" height="121.27"/>
+<rect x="209.60" y="130.61" width="6.20" height="95.39"/>
+<rect x="216.20" y="139.16" width="6.20" height="86.84"/>
+<rect x="222.80" y="132.81" width="6.20" height="93.19"/>
+<rect x="229.40" y="158.18" width="6.20" height="67.82"/>
+<rect x="236.00" y="149.77" width="6.20" height="76.23"/>
+<rect x="242.60" y="154.04" width="6.20" height="71.96"/>
+<rect x="249.20" y="131.52" width="6.20" height="94.48"/>
+<rect x="255.80" y="171.25" width="6.20" height="54.75"/>
+<rect x="262.40" y="170.99" width="6.20" height="55.01"/>
+<rect x="269.00" y="165.04" width="6.20" height="60.96"/>
+<rect x="275.60" y="174.10" width="6.20" height="51.90"/>
+<rect x="282.20" y="173.19" width="6.20" height="52.81"/>
+<rect x="288.80" y="182.51" width="6.20" height="43.49"/>
+<rect x="295.40" y="185.49" width="6.20" height="40.51"/>
+<rect x="302.00" y="179.02" width="6.20" height="46.98"/>
+<rect x="308.60" y="191.44" width="6.20" height="34.56"/>
+<rect x="315.20" y="188.73" width="6.20" height="37.27"/>
+<rect x="321.80" y="189.76" width="6.20" height="36.24"/>
+<rect x="328.40" y="190.54" width="6.20" height="35.46"/>
+<rect x="335.00" y="191.57" width="6.20" height="34.43"/>
+<rect x="341.60" y="194.42" width="6.20" height="31.58"/>
+<rect x="348.20" y="194.42" width="6.20" height="31.58"/>
+<rect x="354.80" y="200.76" width="6.20" height="25.24"/>
+<rect x="361.40" y="199.73" width="6.20" height="26.27"/>
+<rect x="368.00" y="198.17" width="6.20" height="27.83"/>
+<rect x="374.60" y="201.80" width="6.20" height="24.20"/>
+<rect x="381.20" y="198.43" width="6.20" height="27.57"/>
+<rect x="387.80" y="200.50" width="6.20" height="25.50"/>
+<rect x="394.40" y="205.94" width="6.20" height="20.06"/>
+<rect x="401.00" y="204.00" width="6.20" height="22.00"/>
+<rect x="407.60" y="204.64" width="6.20" height="21.36"/>
+<rect x="414.20" y="205.81" width="6.20" height="20.19"/>
+<rect x="420.80" y="207.62" width="6.20" height="18.38"/>
+<rect x="427.40" y="208.27" width="6.20" height="17.73"/>
+</g>
+<line x1="146.57" y1="12" x2="146.57" y2="226" stroke="var(--control)" stroke-width="1" stroke-dasharray="3 3"/>
+<text x="143.57" y="10" text-anchor="end" class="zl">1.645</text>
+<line x1="167.36" y1="12" x2="167.36" y2="226" stroke="var(--accent)" stroke-width="1.5"/>
+<text x="167.36" y="10" text-anchor="middle" class="zl zk">1.96</text>
+<line x1="208.02" y1="12" x2="208.02" y2="226" stroke="var(--control)" stroke-width="1" stroke-dasharray="3 3"/>
+<text x="211.02" y="10" text-anchor="start" class="zl">2.576</text>
+<line x1="38" y1="226" x2="434" y2="226" stroke="var(--control)"/>
+<text x="38.00" y="240" text-anchor="middle" class="za">0</text>
+<text x="104.00" y="240" text-anchor="middle" class="za">1</text>
+<text x="170.00" y="240" text-anchor="middle" class="za">2</text>
+<text x="236.00" y="240" text-anchor="middle" class="za">3</text>
+<text x="302.00" y="240" text-anchor="middle" class="za">4</text>
+<text x="368.00" y="240" text-anchor="middle" class="za">5</text>
+<text x="434.00" y="240" text-anchor="middle" class="za">6</text>
+<text x="236.00" y="256" text-anchor="middle" class="za">|t|</text>
+<text x="34" y="22" text-anchor="end" class="za">1638</text>
+<text x="34" y="226" text-anchor="end" class="za">0</text>
+<g fill="var(--rule)">
+<rect x="460.00" y="81.64" width="16.60" height="144.36" fill="var(--tint)"/>
+<rect x="477.20" y="77.26" width="16.60" height="148.74" fill="var(--tint)"/>
+<rect x="494.40" y="83.99" width="16.60" height="142.01" fill="var(--tint)"/>
+<rect x="511.60" y="74.23" width="16.60" height="151.77" fill="var(--tint)"/>
+<rect x="528.80" y="62.46" width="16.60" height="163.54" fill="var(--tint)"/>
+<rect x="546.00" y="14.00" width="16.60" height="212.00" fill="var(--accent)"/>
+<rect x="563.20" y="94.43" width="16.60" height="131.57" fill="var(--accent)"/>
+<rect x="580.40" y="62.12" width="16.60" height="163.88" fill="var(--accent)"/>
+<rect x="597.60" y="95.10" width="16.60" height="130.90" fill="var(--accent)"/>
+<rect x="614.80" y="72.22" width="16.60" height="153.78" fill="var(--accent)"/>
+</g>
+<line x1="546.00" y1="12" x2="546.00" y2="226" stroke="var(--accent)" stroke-width="1.5"/>
+<text x="546.00" y="10" text-anchor="middle" class="zl zk">1.96</text>
+<line x1="460.00" y1="226" x2="632.00" y2="226" stroke="var(--control)"/>
+<text x="460.00" y="240" text-anchor="middle" class="za">1.71</text>
+<text x="632.00" y="240" text-anchor="middle" class="za">2.21</text>
+<text x="546.00" y="256" text-anchor="middle" class="za">a 0.5-wide caliper</text>
+</svg>
+<p class="table-note"><b>Where the estimates fall.</b> Absolute t-statistics for all 48,355 pooled estimates; the panel shows the 81% below 6, and the caliper on the right magnifies half a unit around 1.96. In equal 0.05-wide bins there are <b>499 estimates just below 1.96 and 614 just above</b>, 1.23 times as many. The step is real but modest, and it is specific to that one threshold: at 1.645 the ratio is 0.94 and at 2.576 it is 0.82, so the count falls rather than jumps as those are crossed. Read it as a distributional diagnostic, not as a measurement of p-hacking: selective reporting, specification search and genuinely large effects all leave marks here, and estimates are clustered within studies. The bin counts are in <a href="/data/v1/t_distribution.csv">t_distribution.csv</a>.</p>
+</figure>
+
 <p class="caveat">Raw effect levels are not comparable across literatures. An elasticity, a
 partial correlation and a dollar value per tonne of carbon all sit in the same column;
 <code>effect_units</code> records which is which. Analyse within each literature. Comparing
@@ -496,34 +601,5 @@ packages, are on the <a href="/">main catalogue</a>.</div>
 	     :not(:has(#sidebar)) rule) and the table gets the full sheet. Nothing is lost:
 	     every link a sidebar would carry is already in the nav or the body sections. -->
 </div>
-<footer class="site-foot">
-<p class="foot-lede"><b>meta-analysis.cz</b> collects meta-analyses in economics: the papers, the
-data behind them, and the code that produced them. It is maintained by <b>Tomáš Havránek</b> and
-<b>Zuzana Iršová</b> at the Institute of Economic Studies, Charles University, Prague.</p>
-<p class="foot-nav"><a href="/">All meta-analyses</a> &middot;
-<a href="/results/">Headline results</a> &middot;
-<a href="/datasets/">Datasets and the pooled table</a> &middot;
-<a href="/maive/">MAIVE</a> &middot;
-<a href="/guidelines/">Practitioner&#x27;s guide</a> &middot;
-<a href="/notes/">Research notes</a> &middot;
-<a href="https://www.easymeta.org/">EasyMeta web app</a></p>
-<p class="foot-who"><b>Tomáš Havránek</b> &middot; <a href="https://www.tomashavranek.cz/">tomashavranek.cz</a> &middot; <a href="https://ies.fsv.cuni.cz/contacts/institute-members/78067720">IES FSV UK</a> &middot; <a href="https://orcid.org/0000-0002-3158-2539">ORCID</a> &middot; <a href="https://scholar.google.com/citations?user=BF0BvBkAAAAJ">Google Scholar</a> &middot; <a href="https://ideas.repec.org/f/pha418.html">RePEc</a> &middot; <a href="https://www.scopus.com/authid/detail.uri?authorId=24453189000">Scopus</a> &middot; <a href="https://cepr.org/about/people/tomas-havranek">CEPR</a> &middot; <a href="https://metrics.stanford.edu/people/tomas-havranek">Stanford METRICS</a></p>
-<p class="foot-who"><b>Zuzana Iršová</b> &middot; <a href="https://www.irsova.com/">irsova.com</a> &middot; <a href="https://ies.fsv.cuni.cz/contacts/institute-members/73504033">IES FSV UK</a> &middot; <a href="https://orcid.org/0000-0002-0753-8124">ORCID</a> &middot; <a href="https://scholar.google.com/citations?user=LaHrICUAAAAJ">Google Scholar</a> &middot; <a href="https://ideas.repec.org/e/pir23.html">RePEc</a> &middot; <a href="https://www.scopus.com/authid/detail.uri?authorId=37080793200">Scopus</a> &middot; <a href="https://cepr.org/about/people/zuzana-irsova">CEPR</a> &middot; <a href="https://metrics.stanford.edu/people/zuzana-irsova">Stanford METRICS</a></p>
-<p class="foot-cite"><b>How to cite this collection:</b> Havranek, T. and Z. Irsova (2026).
-meta-analysis.cz: harmonised estimate-level data from meta-analyses in economics. Zenodo.
-<a href="https://doi.org/10.5281/zenodo.21773678">https://doi.org/10.5281/zenodo.21773678</a>.
-Individual papers carry their own citation on their own page.</p>
-<p class="foot-licence"><b>Licence: CC BY 4.0.</b> Everything on this site is licensed under the
-<a href="https://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0
-International Licence</a>. That covers the papers, the datasets, their CSV and Parquet conversions,
-the pooled table, the codebooks and the documentation. You may copy, redistribute, adapt and reuse
-any of it for any purpose, including commercial use and training machine-learning models, as long
-as you give attribution to meta-analysis.cz. You do not need to ask.</p>
-<p class="foot-machine">For machines: <a href="/api/v1/datasets.json">datasets.json</a> &middot;
-<a href="/api/v1/datapackage.json">datapackage.json</a> &middot;
-<a href="/api/v1/croissant.json">croissant.json</a> &middot;
-<a href="/llms.txt">llms.txt</a> &middot; <a href="/llms-full.txt">llms-full.txt</a> &middot;
-<a href="/sitemap.xml">sitemap.xml</a> &middot; <a href="/LICENSE">LICENSE</a></p>
-</footer>
 </body>
 </html>
