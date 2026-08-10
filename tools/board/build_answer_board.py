@@ -1,4 +1,4 @@
-"""Build the homepage answer board and fold the 53 sentences into a <details>.
+"""Build the homepage answer board and fold the 54 sentences into a <details>.
 
 The board is one tile per paper: the question the paper asks, the answer it gives.
 Nothing here is a new claim. Three existing artifacts supply the content --
@@ -10,7 +10,7 @@ Nothing here is a new claim. Three existing artifacts supply the content --
 
 and the build refuses to run if any number in a `value` is absent from that row's `headline`.
 
-The 53 full sentences are NOT removed. They keep their existing markup, byte for byte, inside a
+The 54 full sentences are NOT removed. They keep their existing markup, byte for byte, inside a
 collapsed <details>: a reader sees a short page, and every extraction pipeline still sees the
 sentences, because <details> content is ordinary DOM text. That was the point of the change.
 
@@ -44,6 +44,7 @@ def numbers(s):
 
 def main():
     check = "--check" in sys.argv
+    tiles_only = "--tiles-only" in sys.argv
     rows = {r["project"]: r for r in csv.DictReader(
         open(os.path.join(SITE, "estimates.csv"), encoding="utf-8"))}
     questions = {q["project"]: q["question"] for q in json.load(
@@ -88,8 +89,10 @@ def main():
             v = values[p]
             li = ' class="z"' if v.get("zero") else ""
             # a few papers put the lay equivalent in the headline rather than the
-            # caveat column, and the tile would otherwise drop it
-            tail = r["caveat"].strip() or v.get("tail", "")
+            # caveat column, and the tile would otherwise drop it. An explicit `tail`
+            # in the board file wins over the CSV caveat: it is the curated one, written
+            # for a tile, and a tile that carries both would otherwise drop it silently.
+            tail = v.get("tail") or r["caveat"].strip()
             out.append(f'  <li{li}><a href="/{p}/">')
             out.append(f'    <span class="q">{E(questions[p])}</span>')
             out.append(f'    <span class="a">{E(v["value"])}'
@@ -119,9 +122,27 @@ def main():
     # after a build -- they live inside the <details> -- so keying off their absence is not
     # enough: it silently produced a page with one <details> and two </details>.
     if '<details class="sentences"' in old:
-        sys.exit('already built: the sentences are already inside <details>, and rebuilding '
-                 'would nest a second </details>. Restore the pre-board page first:\n'
-                 '    git -C site checkout <commit-before-the-board> -- index.html')
+        # The page is already built, so the sentences must not be re-wrapped. The tiles
+        # themselves can still be regenerated: they occupy exactly START..<details>, and
+        # rebuilding only that span is how a corrected tile reaches the page without
+        # anyone hand-editing HTML. Editing the tiles by hand is what put six answers
+        # out of step with their own rows in the first place.
+        d = old.find('<details class="sentences"')
+        if not tiles_only:
+            sys.exit('already built: the sentences are already inside <details>. To update '
+                     'the TILES on the built page, rerun with --tiles-only; a full rebuild '
+                     'needs the pre-board page:\n'
+                     '    git -C site checkout <commit-before-the-board> -- index.html')
+        if check:
+            print(f"would rewrite {tiles} tiles in place, leaving the <details> alone")
+            return 0
+        open(INDEX, "w", encoding="utf-8", newline="").write(
+            page[:i] + board + "\n" + page[i + d:])
+        print(f"answer board: {tiles} tiles rewritten in place; sentences untouched")
+        _publish()
+        return 0
+    if tiles_only:
+        sys.exit("--tiles-only expects an already-built page; this one is not built")
     k = old.find("\t\t<p><b>")
     if k < 0:
         sys.exit("could not find the per-field sentence lists")

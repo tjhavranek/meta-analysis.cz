@@ -181,6 +181,19 @@ def build():
 </div>
 """
 
+    # The site footer carries both authors' ORCID, Scholar, RePEc, Scopus, CEPR and
+    # METRICS links, the collection's Zenodo citation and the licence. This page dropped
+    # it the moment it started being generated instead of hand-edited, and nobody noticed
+    # for a commit. Take it verbatim from the homepage rather than keeping a second copy:
+    # 87 other pages carry the same block, and a copy here would drift from all of them.
+    home = open(os.path.join(SITE, "index.html"), encoding="utf-8").read()
+    fi = home.find('<footer class="site-foot">')
+    fj = home.find("</footer>", fi)
+    if fi < 0 or fj < 0:
+        sys.exit("the homepage has no <footer class=\"site-foot\">; /datasets/ takes its "
+                 "footer from there, so fix the homepage first")
+    FOOTER = home[fi:fj + len("</footer>")]
+
     body = f"""<div id="page">
 \t<div id="content">
 \t\t<div class="post">
@@ -192,10 +205,10 @@ empirical meta-analyses on this site, each in a standard format.</p>
 
 <p><b>There are two products here, not one.</b> The <i>archive</i> is the original file behind
 each paper, converted automatically to CSV and Parquet and published with its codebook and
-DOI. The conversion preserves the source rows and columns, but only the effect and standard
-error of the pooled literatures are machine-verified against the original
-(<code>90_roundtrip</code> checks every such pair); the remaining columns are not
-independently checked, so for anything load-bearing work from the original file. The
+DOI. The conversion carries one data sheet per source workbook &mdash; the sheet named in
+<code>datasets.json</code> &mdash; so any other sheet in the original file is not in the CSV or
+Parquet, and no column is independently re-checked. For anything load-bearing, work from the
+original file. The
 <i>harmonised table</i> pools those datasets into one file with a common set of columns so
 they can be compared across literatures{harmonised_maturity}. If you want one paper's data,
 take it from the archive. If you want to work across literatures, take the harmonised table
@@ -317,6 +330,7 @@ packages, are on the <a href="/">main catalogue</a>.</div>
 \t     :not(:has(#sidebar)) rule) and the table gets the full sheet. Nothing is lost:
 \t     every link a sidebar would carry is already in the nav or the body sections. -->
 </div>
+{FOOTER}
 </body>
 </html>
 """

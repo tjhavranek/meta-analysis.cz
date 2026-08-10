@@ -19,7 +19,8 @@
   },
   "excess_sensitivity": {
    "value": "0.11",
-   "zero": false
+   "zero": false,
+   "tail": "corrected for aggregation and publication bias; the mean reported estimate is 0.37"
   },
   "inflation": {
    "value": "about 0.6% per year",
@@ -90,7 +91,7 @@
    "zero": false
   },
   "scc": {
-   "value": "0–134 USD per ton",
+   "value": "0–134 USD per ton of carbon",
    "zero": false
   },
   "armington": {
@@ -114,8 +115,9 @@
    "zero": false
   },
   "forward": {
-   "value": "slopes 0.23–0.45 developed, 0.95–1.16 emerging",
-   "zero": false
+   "value": "attenuated but alive for developed currencies, absent for emerging",
+   "zero": false,
+   "tail": "slopes 0.23–0.45 developed, 0.95–1.16 emerging; the unbiasedness hypothesis predicts a slope of 1"
   },
   "spillovers": {
    "value": "about 9% per 10 pp for suppliers, small for buyers",
@@ -135,7 +137,8 @@
   },
   "skill": {
    "value": "4, lower bound 2",
-   "zero": false
+   "zero": false,
+   "tail": "smaller in developing countries"
   },
   "frisch": {
    "value": "about 0.25",
@@ -183,8 +186,9 @@
    "zero": false
   },
   "alphas": {
-   "value": "fees, above all",
-   "zero": false
+   "value": "whether alpha is gross or net of fees",
+   "zero": false,
+   "tail": "the largest of the 9 study characteristics out of 34 that consistently explain the variation; a gap of 0.439 percentage points a month"
   },
   "correlations": {
    "value": "yes, the conventional ones",
@@ -211,8 +215,9 @@
    "zero": false
   },
   "pcc_survey": {
-   "value": "yes — UWLS and Hunter-Schmidt give smaller means",
-   "zero": false
+   "value": "yes — UWLS and Hunter-Schmidt give smaller means than random effects",
+   "zero": false,
+   "tail": "arguably less biased; small-sample biases are negligible and Fisher's z helps with neither them nor publication selection"
   },
   "conventional_wisdom": {
    "value": "45–60% smaller, sometimes sign-flipped",

@@ -294,8 +294,8 @@ def build(check=False):
 \t\t\t<div class="entry results">
 
 <p>One answer per paper: the headline result of each of the {n_rows} papers below, with the
-caveat, the evidence and the citation that belong to it. Where the paper corrects for
-publication bias, and most do, the corrected number is the one shown.</p>
+caveat, the evidence and the citation that belong to it. Where the paper reports a
+publication-bias-corrected number, that is the one shown.</p>
 
 {strip}
 

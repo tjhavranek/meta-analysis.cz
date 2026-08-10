@@ -4,7 +4,7 @@ These are the exact sources that produced what is on the site. They are copied h
 `publish_board_sources.py`, which every generator calls as its last step, so a file in
 this directory is always the version that built the current page.
 
-    build_answer_board.py     the 53 homepage tiles, and folds the 53 result sentences
+    build_answer_board.py     the 54 homepage tiles, and folds the 54 result sentences
                               into the collapsed <details> beneath them
     answer_board.json         the only curated text on a tile: a short form of each
                               paper's published headline -- usually by deletion, sometimes
