@@ -213,6 +213,10 @@
   "pcc_survey": {
    "value": "yes — UWLS and Hunter-Schmidt give smaller means",
    "zero": false
+  },
+  "conventional_wisdom": {
+   "value": "45–60% smaller, sometimes sign-flipped",
+   "zero": false
   }
  }
 }

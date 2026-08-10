@@ -28,7 +28,16 @@ QUESTIONS = os.path.join(HERE, "results_questions.json")
 OUT = os.path.join(SITE, "results", "index.html")
 # Stamped, not computed: the page states when the figures were last assembled so a
 # reader can judge whether one has been superseded. Bump when estimates.csv changes.
-BUILD_DATE = "2026-08-05"
+# Derived, not typed: this was hand-bumped and went stale twice, so JSON-LD said the
+# page was last modified days before the estimates it renders actually changed.
+def _last_change(path):
+    import subprocess
+    r = subprocess.run(["git", "-C", os.path.dirname(path), "log", "-1",
+                        "--format=%cs", "--", os.path.basename(path)],
+                       capture_output=True, text=True)
+    return (r.stdout or "").strip()
+
+BUILD_DATE = None   # set in build(), from estimates.csv's last commit
 
 # fields in the order the homepage uses them
 FIELD_ORDER = ["Macroeconomics", "International economics", "Financial economics",
@@ -40,7 +49,56 @@ def esc(s):
     return html.escape(s or "", quote=True)
 
 
+
+def zero_strip(rows, fields):
+    """One square per result, filled where the paper's own answer is about zero.
+
+    The classification is NOT derived here. It reads the `zero` flag in
+    tools_seo/answer_board.json -- the same flag that mutes a homepage tile -- because two
+    surfaces publishing different counts of the same thing is the defect this repo keeps
+    hitting, and here a reader could see both in one scroll. It is also not derived by
+    regex: a regex sweeps in "about 0.25" (frisch) and "about 0.12" (esg), which are not
+    zero results.
+    """
+    board = os.path.join(HERE, "..", "tools_seo", "answer_board.json")
+    flags = {k: v.get("zero", False)
+             for k, v in json.load(open(board, encoding="utf-8"))["values"].items()}
+    missing = [r["project"] for r in rows if r["project"] not in flags]
+    if missing:
+        sys.exit(f"no board zero flag for {missing}; the strip and the homepage would disagree")
+
+    n_zero = sum(1 for r in rows if flags[r["project"]])
+    S, G, FG = 13, 3, 10          # square, gap, gap between fields
+    x, sq = 0, []
+    for f in fields:
+        group = [r for r in rows if r["field"] == f]
+        for r in group:
+            on = flags[r["project"]]
+            sq.append('<a href="#%s"><rect x="%d" y="0" width="%d" height="%d" rx="2" '
+                      'fill="%s"><title>%s%s</title></rect></a>'
+                      % (r["project"], x, S, S,
+                         "var(--accent)" if on else "var(--rule)",
+                         esc(r["parameter"]), " - about zero" if on else ""))
+            x += S + G
+        x += FG
+    w = x - G - FG
+    return ('<figure class="zerostrip">\n'
+            f'<svg viewBox="0 0 {w} {S}" width="100%" height="{S}" role="img" '
+            f'aria-label="{n_zero} of {len(rows)} results are about zero; one square per '
+            'paper, grouped by field">\n' + "".join(sq) + "\n</svg>\n"
+            f'<figcaption class="table-note"><b>{n_zero} of the {len(rows)} results</b> on this '
+            f'page answer their question with about zero. Each square is one paper, '
+            f'grouped by field in the order below; a filled square is a paper whose own '
+            f'stated finding is a negligible or undetectable effect. Nothing is pooled.'
+            '</figcaption>\n</figure>')
+
+
 def build(check=False):
+    global BUILD_DATE
+    BUILD_DATE = _last_change(CSV)
+    if not re.fullmatch(r"\d{4}-\d{2}-\d{2}", BUILD_DATE or ""):
+        sys.exit("could not read estimates.csv's last commit date; refusing to stamp the "
+                 "page with a guess")
     rows = list(csv.DictReader(open(CSV, encoding="utf-8")))
     qs = {q["project"]: q for q in json.load(open(QUESTIONS, encoding="utf-8"))}
 
@@ -90,6 +148,7 @@ def build(check=False):
         'Available at meta-analysis.cz/esg.')
 
     # ---- body -----------------------------------------------------------
+    strip = zero_strip(rows, fields)
     chips = "\n".join(
         f'<button type="button" class="chip" data-field="{esc(f)}">{esc(f)}</button>'
         for f in fields)
@@ -168,7 +227,7 @@ def build(check=False):
         # shape is what answer engines parse; the container type is the honest one.
         "@type": "ItemList",
         "@id": "https://meta-analysis.cz/results/#results",
-        "name": "Headline results from meta-analyses in economics",
+        "name": "Headline results from research on meta-analysis in economics",
         "numberOfItems": len(jsonld_items),
         "creator": [{"@id": "https://meta-analysis.cz/#th"},
                     {"@id": "https://meta-analysis.cz/#zi"}],
@@ -183,8 +242,8 @@ def build(check=False):
 <head>
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <meta http-equiv="content-type" content="text/html; charset=utf-8" />
-<title>Headline results from {len(rows)} meta-analyses in economics</title>
-<meta name="description" content="One answer per meta-analysis: {len(rows)} headline findings in economics, each corrected for publication bias, with its caveat, the evidence behind it, and a citation." />
+<title>Headline results from {len(rows)} papers on meta-analysis in economics</title>
+<meta name="description" content="One answer per paper: {len(rows)} headline findings from meta-analyses and meta-research in economics, corrected for publication bias where the paper reports a corrected estimate, each with its caveat, the evidence behind it, and a citation." />
 <link href="/style.css" rel="stylesheet" type="text/css" />
 <script type="application/ld+json">
 {jsonld}
@@ -218,9 +277,12 @@ def build(check=False):
 \t\t\t<h1 class="title">Headline results</h1>
 \t\t\t<div class="entry results">
 
-<p>One line per meta-analysis: the result the paper itself headlines, after correcting for
-publication bias. Each is the answer to a question someone actually asks, with the caveat that
-belongs to it, the evidence it rests on, and a citation.</p>
+<p>One line per paper: the result it headlines, corrected for publication bias where the
+paper reports a corrected estimate and otherwise as the paper states it. Each is the answer
+to a question someone actually asks, with the caveat that belongs to it, the evidence it
+rests on, and a citation.</p>
+
+{strip}
 
 <p class="r-updated">Figures last assembled {BUILD_DATE}. Each is the paper's own headline
 result; the paper's page carries the full abstract, the data and the code.</p>

@@ -68,6 +68,29 @@ def build():
 
     table = frag("datasets_table")
     not_pooled = frag("not_pooled")
+    # This sentence used to be hand-written above the list and said "five ... two ... three"
+    # while the list held four. Count the list instead: the data session owns which datasets
+    # sit out and why, so the prose has to follow the fragment, not a memory of it.
+    reasons = re.findall(r"<dt>(.*?)</dt>\s*<dd>(.*?)</dd>", not_pooled, re.S)
+    if not reasons:
+        sys.exit("not_pooled.html has no <dt>/<dd> pairs -- the lede cannot be derived")
+    dupes = [d for _, d in reasons if d.strip().lower().startswith("duplicate of")]
+    n_all, n_dup = len(reasons), len(dupes)
+    n_prec = n_all - n_dup
+    word = {1: "One", 2: "Two", 3: "Three", 4: "Four", 5: "Five", 6: "Six"}
+    num = {1: "one", 2: "two", 3: "three", 4: "four", 5: "five", 6: "six"}
+    parts = []
+    if n_prec:
+        parts.append(f"{num.get(n_prec, n_prec)} carr{'ies' if n_prec == 1 else 'y'} "
+                     f"no per-estimate standard error")
+    if n_dup:
+        parts.append(f"{num.get(n_dup, n_dup)} duplicate{'s' if n_dup == 1 else ''} a dataset "
+                     f"already included, which would otherwise be counted twice")
+    not_pooled_lede = (f"{word.get(n_all, n_all)} dataset{'' if n_all == 1 else 's'} "
+                       f"{'is' if n_all == 1 else 'are'} published but stay"
+                       f"{'s' if n_all == 1 else ''} out of the pooled table: "
+                       + ", and ".join(parts) + ".")
+
 
     # Defects known to be present in the files people can download RIGHT NOW. The data
     # session owns the text and, more importantly, the conditions: each issue is emitted
@@ -168,7 +191,11 @@ def build():
 empirical meta-analyses on this site, each in a standard format.</p>
 
 <p><b>There are two products here, not one.</b> The <i>archive</i> is the original file behind
-each paper, mirrored faithfully as CSV and Parquet with its codebook and DOI. The
+each paper, converted automatically to CSV and Parquet and published with its codebook and
+DOI. The conversion preserves the source rows and columns, but only the effect and standard
+error of the pooled literatures are machine-verified against the original
+(<code>90_roundtrip</code> checks every such pair); the remaining columns are not
+independently checked, so for anything load-bearing work from the original file. The
 <i>harmonised table</i> pools those datasets into one file with a common set of columns so
 they can be compared across literatures{harmonised_maturity}. If you want one paper's data,
 take it from the archive. If you want to work across literatures, take the harmonised table
@@ -248,9 +275,7 @@ unexplained.</p>
 
 <h2>Published but not pooled</h2>
 
-<p>Five datasets are published but stay out of the pooled table: two carry no per-estimate
-standard error, and three overlap with a dataset already included, which would otherwise be
-counted twice.</p>
+<p>{not_pooled_lede}</p>
 
 {not_pooled}
 

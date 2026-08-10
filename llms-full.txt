@@ -108,6 +108,15 @@ Code: https://meta-analysis.cz/competition/competition.do
 
 Abstract: The theoretical literature gives conflicting predictions on how bank competition should affect financial stability, and dozens of researchers have attempted to evaluate the relationship empirically. We collect 598 estimates of the competition-stability nexus reported in 31 studies and analyze the literature using meta-analysis methods. We control for 35 aspects of study design and employ Bayesian model averaging to tackle the resulting model uncertainty. Our findings suggest that the definition of financial stability and bank competition used by researchers influences their results in a systematic way. The choice of data, estimation methodology, and control variables also affects the reported coefficient. We find evidence for moderate publication bias. Taken together, the estimates reported in the literature suggest little interplay between competition and stability, even when corrected for publication bias and potential misspecifications.
 
+## Conventional wisdom, meta-analysis, and research revision in economics
+URL: https://meta-analysis.cz/conventional_wisdom/
+Citation: Sebastian Gechert, Bianka Mey, Matej Opatrny, Tomas Havranek, T. D. Stanley, Pedro R. D. Bom, Hristos Doucouliagos, Philipp Heimberger, Zuzana Irsova, Heiko J. Rachinger (2025), “Conventional wisdom, meta-analysis, and research revision in economics.” Journal of Economic Surveys 39, 980–999.
+Published version: https://doi.org/10.1111/joes.12630
+Paper: https://meta-analysis.cz/conventional_wisdom/conventional_wisdom.pdf
+Published version: https://doi.org/10.1111/joes.12630
+
+Abstract: Over the past several decades, meta-analysis has emerged as a widely accepted tool to understand economics research. Meta-analyses often challenge the established conventional wisdom of their respective fields. We systematically review a wide range of influential meta-analyses in economics and compare them to “conventional wisdom.” After correcting for observable biases, the empirical economic effects are typically much closer to zero and sometimes switch signs. Typically, the relative reduction in effect sizes is 45%–60%.
+
 ## Reducing the biases of the conventional meta-analysis of correlations
 URL: https://meta-analysis.cz/correlations/
 Citation: T. D. Stanley, Hristos Doucouliagos, and Tomas Havranek (2025): "Reducing the biases of the conventional meta-analysis of correlations." Research Synthesis Methods 16(1): 42-59.

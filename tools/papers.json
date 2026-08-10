@@ -2021,5 +2021,36 @@
   "has_meta_description": true,
   "meta_keywords": "partial correlation coefficient, PCC, meta-analysis, UWLS, Hunter-Schmidt, random effects, Fisher's z, publication selection bias, small-sample bias, research synthesis",
   "one_line": "A survey of 172 economics meta-analyses covering 63,730 partial correlations from 6,191 papers: small-sample biases are negligible in practice, Fisher's z reduces neither small-sample nor publication selection bias, and UWLS and Hunter-Schmidt give smaller mean estimates than random effects."
+ },
+ {
+  "project": "conventional_wisdom",
+  "title": "Conventional wisdom, meta-analysis, and research revision in economics",
+  "abstract": "Over the past several decades, meta-analysis has emerged as a widely accepted tool to understand economics research. Meta-analyses often challenge the established conventional wisdom of their respective fields. We systematically review a wide range of influential meta-analyses in economics and compare them to “conventional wisdom.” After correcting for observable biases, the empirical economic effects are typically much closer to zero and sometimes switch signs. Typically, the relative reduction in effect sizes is 45%–60%.",
+  "reference_line": "Sebastian Gechert, Bianka Mey, Matej Opatrny, Tomas Havranek, T. D. Stanley, Pedro R. D. Bom, Hristos Doucouliagos, Philipp Heimberger, Zuzana Irsova, Heiko J. Rachinger (2025), “Conventional wisdom, meta-analysis, and research revision in economics.” Journal of Economic Surveys 39, 980-999.",
+  "authors": [
+   "Sebastian Gechert",
+   "Bianka Mey",
+   "Matej Opatrny",
+   "Tomas Havranek",
+   "T. D. Stanley",
+   "Pedro R. D. Bom",
+   "Hristos Doucouliagos",
+   "Philipp Heimberger",
+   "Zuzana Irsova",
+   "Heiko J. Rachinger"
+  ],
+  "year": 2025,
+  "journal": "Journal of Economic Surveys",
+  "doi_or_publisher_url": "https://doi.org/10.1111/joes.12630",
+  "menu_links": [
+   {
+    "label": "Paper",
+    "href": "conventional_wisdom.pdf"
+   }
+  ],
+  "figure": null,
+  "has_meta_description": true,
+  "meta_keywords": "conventional wisdom, meta-analysis, systematic review, publication bias, research revision, effect size, economics",
+  "one_line": "A systematic review of influential economics meta-analyses against the conventional wisdom they tested: after correcting for observable biases, effects are typically much closer to zero and sometimes switch sign, with a relative reduction of 45-60%."
  }
 ]

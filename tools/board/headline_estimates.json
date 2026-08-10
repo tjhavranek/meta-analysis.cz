@@ -552,5 +552,17 @@
   "kind": null,
   "field": "Meta-research methods",
   "lead": "the methodological finding is that"
+ },
+ {
+  "project": "conventional_wisdom",
+  "confidence": "high",
+  "parameter": "How far corrected effects move from conventional wisdom",
+  "headline": "corrected effects are typically 45-60% smaller, much closer to zero, and sometimes switch sign",
+  "evidence": "After correcting for observable biases, the empirical economic effects are typically much closer to zero and sometimes switch signs. Typically, the relative reduction in effect sizes is 45%-60%.",
+  "basis": "a systematic review of influential economics meta-analyses against their fields' conventional wisdom",
+  "caveat": null,
+  "kind": null,
+  "field": "Meta-research methods",
+  "lead": "the methodological finding is that"
  }
 ]

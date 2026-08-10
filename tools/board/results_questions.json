@@ -263,5 +263,10 @@
   "project": "debate",
   "question": "Does multi-agent AI debate improve feedback on research papers?",
   "short": "AI debate feedback"
+ },
+ {
+  "project": "conventional_wisdom",
+  "question": "How far do corrected meta-analytic effects move from conventional wisdom?",
+  "short": "conventional wisdom"
  }
 ]
