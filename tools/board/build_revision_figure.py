@@ -1,11 +1,12 @@
 """Draw the research-revision figure for /conventional_wisdom/ from that paper's Tables 2 and 3.
 
-The question the owner kept asking -- when a meta-analysis corrects for bias, how far does
-the number move from what the field believed? -- cannot be answered from this site's own
-data: only three of the 54 rows in estimates.csv carry both a corrected value and its
-uncorrected comparator. It can be answered from a published paper of his own, which reviews
-24 literatures and reports, for each, the seminal study's conventional wisdom, the simple
-mean of the literature, and the bias-corrected mean.
+This figure answers "how far did the corrected number move from what the FIELD believed",
+against the conventional wisdom of a seminal study. Its sibling on /results/
+(build_correction_figure.py) answers a different question about his own 54 papers -- how far
+the corrected number moved from the average estimate the literature itself reported -- and
+the two baselines are deliberately kept apart. A 50% cut against a seminal study's number and
+a 50% cut against the literature's own mean are not the same object, and putting them on one
+scale would make both meaningless.
 
 So the figure plots the paper's numbers, not ours. Nothing is recomputed and nothing is
 pooled. The build asserts the medians of all three published indices before it will write,
@@ -48,8 +49,8 @@ def build(check=False):
     FLOOR = -100                       # bars are capped here; past it the sign flipped
 
     LW, BW, RH, TOP = 340, 150, 19, 26     # label, bar area, row height, header
-    H = TOP + RH * len(rows) + 40          # the last 20px carry the source credit
-    W = LW + BW + 34
+    H = TOP + RH * len(rows) + 56          # tick labels, then the source credit
+    W = LW + BW + 48   # the -100% tick label needs room to the right of the bars
     zero = LW + 26                      # x of the zero line; the gap is what a
                                     # leftward (green) bar needs, or it paints
                                     # over the end of its own label
@@ -64,12 +65,26 @@ def build(check=False):
          f'median revision is {src["published_median"]["r3_seminal"]}%. Two literatures '
          f'changed sign; one, capital-energy substitution, rose by 7%.</desc>']
 
+    med_seminal = src["published_median"]["r3_seminal"]
+
     # header: the axis, marked where it matters
     p.append(f'<text x="{zero}" y="12" text-anchor="middle" class="ra">no change</text>')
-    p.append(f'<text x="{zero + BW}" y="12" text-anchor="end" class="ra">'
-             f'&#8722;100% or beyond</text>')
     p.append(f'<line x1="{zero}" y1="{TOP - 8}" x2="{zero}" y2="{TOP + RH*len(rows)}" '
              f'stroke="var(--control)"/>')
+    # Gridlines every 25% and the published median, drawn rather than only stated in the
+    # caption: the whole finding of the paper is where that median sits, and a reader
+    # should not have to read a paragraph to see it.
+    for tick in (25, 50, 75, 100):
+        x = zero + tick * scale
+        p.append(f'<line x1="{x:.1f}" y1="{TOP - 4}" x2="{x:.1f}" y2="{TOP + RH*len(rows)}" '
+                 f'stroke="var(--rule)" stroke-opacity="0.55"/>')
+        p.append(f'<text x="{x:.1f}" y="{TOP + RH*len(rows) + 12}" text-anchor="middle" '
+                 f'class="ra">&#8722;{tick}%</text>')
+    mx = zero + abs(med_seminal) * scale
+    p.append(f'<line x1="{mx:.1f}" y1="{TOP - 8}" x2="{mx:.1f}" y2="{TOP + RH*len(rows)}" '
+             f'stroke="var(--rv-down)" stroke-dasharray="4 3"/>')
+    p.append(f'<text x="{mx:.1f}" y="{TOP - 12}" text-anchor="middle" class="rl">'
+             f'median {med_seminal}%</text>')
 
     for i, r in enumerate(rows):
         y = TOP + i * RH
@@ -105,10 +120,10 @@ def build(check=False):
         p.append("</g>")
     # A credit inside the frame, not only in the caption: the image gets screenshotted and
     # reposted, and 20 of these 24 meta-analyses are other researchers' work.
-    p.append(f'<text x="{LW}" y="{TOP + RH*len(rows) + 22}" text-anchor="end" class="ra">'
+    p.append(f'<text x="{LW}" y="{TOP + RH*len(rows) + 38}" text-anchor="end" class="ra">'
              f'24 meta-analyses reviewed in Gechert et al. (2025), J Econ Surveys'
              f'</text>')
-    p.append(f'<text x="{zero + BW}" y="{TOP + RH*len(rows) + 22}" text-anchor="end" '
+    p.append(f'<text x="{zero + BW}" y="{TOP + RH*len(rows) + 38}" text-anchor="end" '
              f'class="ra">meta-analysis.cz</text>')
     p.append("</svg>")
 
