@@ -44,7 +44,11 @@
 empirical meta-analyses on this site, each in a standard format.</p>
 
 <p><b>There are two products here, not one.</b> The <i>archive</i> is the original file behind
-each paper, mirrored faithfully as CSV and Parquet with its codebook and DOI. The
+each paper, converted automatically to CSV and Parquet and published with its codebook and
+DOI. The conversion preserves the source rows and columns, but only the effect and standard
+error of the pooled literatures are machine-verified against the original
+(<code>90_roundtrip</code> checks every such pair); the remaining columns are not
+independently checked, so for anything load-bearing work from the original file. The
 <i>harmonised table</i> pools those datasets into one file with a common set of columns so
 they can be compared across literatures, and it is stable as of version 1.0.0. If you want one paper's data,
 take it from the archive. If you want to work across literatures, take the harmonised table
