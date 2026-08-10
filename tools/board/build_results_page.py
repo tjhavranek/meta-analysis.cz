@@ -148,7 +148,15 @@ def build(check=False):
         'Available at meta-analysis.cz/esg.')
 
     # ---- body -----------------------------------------------------------
-    strip = zero_strip(rows, fields)
+    # The zero strip said something true but weak, and the owner could not parse it.
+    # Replaced by the research-revision figure, whose numbers are published rather
+    # than ours: tools_seo/build_revision_figure.py writes the fragment.
+    fpath = os.path.join(HERE, "_fragments", "revision_figure.html")
+    if not os.path.isfile(fpath):
+        sys.exit("missing redesign/_fragments/revision_figure.html -- run "
+                 "tools_seo/build_revision_figure.py")
+    n_rows = len(rows)
+    strip = open(fpath, encoding="utf-8").read().strip()
     chips = "\n".join(
         f'<button type="button" class="chip" data-field="{esc(f)}">{esc(f)}</button>'
         for f in fields)
@@ -277,10 +285,9 @@ def build(check=False):
 \t\t\t<h1 class="title">Headline results</h1>
 \t\t\t<div class="entry results">
 
-<p>One line per paper: the result it headlines, corrected for publication bias where the
-paper reports a corrected estimate and otherwise as the paper states it. Each is the answer
-to a question someone actually asks, with the caveat that belongs to it, the evidence it
-rests on, and a citation.</p>
+<p>One answer per paper: the headline result of each of the {n_rows} papers below, with the
+caveat, the evidence and the citation that belong to it. Where the paper corrects for
+publication bias, and most do, the corrected number is the one shown.</p>
 
 {strip}
 

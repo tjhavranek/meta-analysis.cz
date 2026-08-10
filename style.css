@@ -894,3 +894,17 @@ table.catalogue li{ margin-bottom:var(--s2); font-size:var(--f-1); line-height:1
 .zerostrip svg{ display:block; width:100%; height:auto; }
 .zerostrip a rect{ transition:none; }
 .zerostrip figcaption{ margin-top:var(--s3); }
+
+/* ---- /results/ research-revision figure --------------------------------- */
+/* Gechert et al. (2025) Tables 2-3: 24 literatures, corrected mean against the
+   conventional wisdom of a seminal study. Published numbers, not ours. */
+:root{ --rv-down:#9c4221; --rv-up:#276b3d; }
+.rvfig-wrap{ margin:var(--s5) 0; }
+.rvfig-scroll{ overflow-x:auto; }
+.rvfig{ display:block; height:auto; }
+.rvfig .rl{ font:400 11px var(--sans); fill:var(--ink); }
+.rvfig .ra{ font:400 9.5px var(--sans); fill:var(--ink-soft); }
+.rvfig .rv-flip{ fill:var(--rv-down); font-weight:600; }
+.rvfig g:hover rect{ opacity:.82; }
+.rvfig-wrap .table-note{ margin-top:var(--s3); }
+@media (max-width:30rem){ .rvfig{ min-width:26rem; } }
