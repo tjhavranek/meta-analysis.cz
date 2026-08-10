@@ -885,3 +885,12 @@ table.catalogue li{ margin-bottom:var(--s2); font-size:var(--f-1); line-height:1
     background-attachment: local, local, scroll, scroll;
   }
 }
+
+/* ---- /results/ zero strip ------------------------------------------------ */
+/* 53 squares, one per result, filled where the paper's own answer is about
+   zero. The classification is the same `zero` flag that mutes a homepage tile,
+   read from answer_board.json, so the two pages cannot disagree. */
+.zerostrip{ margin:var(--s5) 0; }
+.zerostrip svg{ display:block; width:100%; height:auto; }
+.zerostrip a rect{ transition:none; }
+.zerostrip figcaption{ margin-top:var(--s3); }
