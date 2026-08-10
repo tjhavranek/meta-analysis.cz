@@ -768,3 +768,92 @@ table.catalogue li{ margin-bottom:var(--s2); font-size:var(--f-1); line-height:1
 }
 .r-cite b{ color:var(--ink); font-weight:600; }
 .r-updated{ font:var(--f-1)/1.5 var(--sans); color:var(--ink-soft); }
+
+/* ---- homepage answer board ---------------------------------------------- */
+/* One tile per paper: the question from redesign/results_questions.json, the
+   value from tools_seo/answer_board.json (a deletion-only short form of the
+   published headline), the tail from estimates.csv's own `caveat` column. The
+   53 full sentences are not removed -- they sit in the <details> below, so a
+   reader sees a short page while every extraction pipeline still sees them. */
+
+.entry .bf{ margin:var(--s6) 0 0; }
+.entry .bf:first-of-type{ margin-top:var(--s5); }
+.entry .bf h3{
+  margin:0 0 var(--s3); padding-bottom:var(--s2);
+  font:600 var(--f-2)/1.2 var(--sans); letter-spacing:.07em; text-transform:uppercase;
+  color:var(--ink-soft);
+  border-bottom:2px solid var(--fc,var(--rule));
+}
+
+/* one hue per field, carried to the tiles through --fc. Colour touches only two
+   2px rules; all text stays --ink / --ink-soft, and every group also carries its
+   field name in words, so colour is never the sole carrier (WCAG 1.4.1). */
+.bf.macro { --fc:#0f5f8c; }   /* the site's own accent */
+.bf.micro { --fc:#6b4a8c; }
+.bf.energy{ --fc:#276b3d; }
+.bf.intl  { --fc:#0f6a72; }
+.bf.labor { --fc:#9c4221; }
+.bf.fin   { --fc:#7d5a1f; }
+.bf.meth  { --fc:#5a6672; }   /* methods stay monochrome on purpose */
+
+.post.estimates .board{
+  margin:0; padding:0; list-style:none;
+  display:grid; grid-template-columns:repeat(auto-fill,minmax(10.5rem,1fr));
+  gap:var(--s3);
+}
+.post.estimates .board li{
+  max-width:none; margin:0; padding:0; font-size:inherit; line-height:inherit;
+}
+.post.estimates .board li::marker{ content:""; }
+
+.board a{
+  position:relative; height:100%; box-sizing:border-box;
+  display:flex; flex-direction:column; gap:var(--s2);
+  padding:var(--s3);
+  background:var(--paper);
+  border:1px solid var(--rule); border-top:2px solid var(--fc,var(--control));
+  border-radius:var(--radius);
+  text-decoration:none; color:var(--ink); font-weight:400;
+}
+.board a:hover{ border-color:var(--fc); background:var(--canvas); }
+@media (prefers-reduced-motion:no-preference){
+  .board a{ transition:border-color .12s ease, background-color .12s ease; }
+}
+
+.board .q{ font:400 var(--f-1)/1.45 var(--sans); color:var(--ink-soft); }
+.board .a{ margin-top:auto; font:400 var(--f1)/1.35 var(--serif); color:var(--ink); }
+.board .u{ display:block; margin-top:var(--s1);
+  font:400 var(--f-2)/1.45 var(--sans); color:var(--ink-soft); }
+
+/* a result the paper itself calls about zero: the value recedes, and a corner
+   mark repeats it. The mark is generated content -- decorative duplication of
+   words already in the tile, so nothing is lost where it is not rendered. */
+.z .a{ font-size:var(--f0); color:var(--ink-soft); }
+.z .q::before{ content:""; float:right; width:2.5rem; height:1.45em; }
+.z > a::after{
+  content:"\2248 0";
+  position:absolute; top:var(--s2); right:var(--s3);
+  font:600 var(--f-2)/1 var(--sans); letter-spacing:.05em; color:var(--ink-soft);
+}
+
+/* the 53 sentences: collapsed for readers, present for everything else */
+.post.estimates .sentences{
+  margin-top:var(--s7); padding-top:var(--s5); border-top:1px solid var(--rule);
+}
+.post.estimates .sentences summary{
+  cursor:pointer; width:max-content; max-width:100%;
+  font:600 var(--f-1)/1.5 var(--sans); color:var(--accent);
+}
+.post.estimates .sentences summary:hover{ color:var(--accent-dark); }
+.post.estimates .sentences[open] summary{ margin-bottom:var(--s5); }
+
+@media print{
+  /* `display` cannot reveal a closed disclosure -- the UA hides the content on an
+     inner slot -- so open it properly. Browsers without ::details-content simply
+     print the board and the summary line, which is honest either way. */
+  .post.estimates .sentences::details-content{
+    content-visibility:visible; block-size:auto; opacity:1;
+  }
+  .post.estimates .sentences > summary{ display:none; }
+  .board a{ border:1px solid var(--rule); }
+}
