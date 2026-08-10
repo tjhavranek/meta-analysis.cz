@@ -50,15 +50,15 @@ def esc(s):
 
 
 
-def zero_strip(rows, fields):
-    """One square per result, filled where the paper's own answer is about zero.
+def dot_strip(rows, fields):
+    """One square per paper on this page, coloured by field, hollow where the paper's own
+    answer is about zero.
 
-    The classification is NOT derived here. It reads the `zero` flag in
-    tools_seo/answer_board.json -- the same flag that mutes a homepage tile -- because two
-    surfaces publishing different counts of the same thing is the defect this repo keeps
-    hitting, and here a reader could see both in one scroll. It is also not derived by
-    regex: a regex sweeps in "about 0.25" (frisch) and "about 0.12" (esg), which are not
-    zero results.
+    Everything here is already audited and already on the site: the field is the row's own
+    `field`, the colours are the homepage board's seven field colours, and the about-zero
+    mark reads the same `zero` flag in tools_seo/answer_board.json that mutes a homepage
+    tile. No comparison is computed, nothing is pooled, and every square is one of HIS
+    papers -- which is the property the previous figure lost.
     """
     board = os.path.join(HERE, "..", "tools_seo", "answer_board.json")
     flags = {k: v.get("zero", False)
@@ -67,29 +67,39 @@ def zero_strip(rows, fields):
     if missing:
         sys.exit(f"no board zero flag for {missing}; the strip and the homepage would disagree")
 
+    CLS = {"Macroeconomics": "macro", "Micro and experimental economics": "micro",
+           "Energy and environmental economics": "energy", "International economics": "intl",
+           "Labor and education economics": "labor", "Financial economics": "fin",
+           "Meta-research methods": "meth"}
     n_zero = sum(1 for r in rows if flags[r["project"]])
-    S, G, FG = 13, 3, 10          # square, gap, gap between fields
-    x, sq = 0, []
+    S, G, FG, H = 15, 4, 13, 15
+    x, sq, legend = 0, [], []
     for f in fields:
         group = [r for r in rows if r["field"] == f]
+        start = x
         for r in group:
-            on = flags[r["project"]]
-            sq.append('<a href="#%s"><rect x="%d" y="0" width="%d" height="%d" rx="2" '
-                      'fill="%s"><title>%s%s</title></rect></a>'
+            z = flags[r["project"]]
+            sq.append('<a href="#%s"><rect x="%d" y="0" width="%d" height="%d" rx="2.5" '
+                      'fill="%s" stroke="%s" stroke-width="%s"><title>%s%s</title></rect></a>'
                       % (r["project"], x, S, S,
-                         "var(--accent)" if on else "var(--rule)",
-                         esc(r["parameter"]), " - about zero" if on else ""))
+                         "var(--paper)" if z else f"var(--bf-{CLS[f]})",
+                         f"var(--bf-{CLS[f]})", "2" if z else "0",
+                         esc(r["parameter"]), " — about zero" if z else ""))
             x += S + G
+        legend.append((f, start, x - G))
         x += FG
     w = x - G - FG
-    return ('<figure class="zerostrip">\n'
-            f'<svg viewBox="0 0 {w} {S}" width="100%" height="{S}" role="img" '
-            f'aria-label="{n_zero} of {len(rows)} results are about zero; one square per '
-            'paper, grouped by field">\n' + "".join(sq) + "\n</svg>\n"
-            f'<figcaption class="table-note"><b>{n_zero} of the {len(rows)} results</b> on this '
-            f'page answer their question with about zero. Each square is one paper, '
-            f'grouped by field in the order below; a filled square is a paper whose own '
-            f'stated finding is a negligible or undetectable effect. Nothing is pooled.'
+    return ('<figure class="dotstrip">\n'
+            f'<svg viewBox="0 0 {w} {H}" width="100%" height="{H}" role="img" '
+            f'aria-label="One square per paper on this page, grouped and coloured by field; '
+            f'{n_zero} of {len(rows)} are drawn hollow because the paper answers its question '
+            'with about zero">\n' + "".join(sq) + "\n</svg>\n"
+            '<figcaption class="table-note">One square per paper below, in the order they '
+            'appear and coloured by field &mdash; the same seven colours as the homepage. '
+            f'The <b>{n_zero} hollow squares</b> are the papers whose own answer is about '
+            'zero: class size, financial incentives, tuition and enrolment, working while '
+            'studying, bank competition and stability, daylight saving, and the euro’s '
+            'effect on trade. Hover a square for the question it answers.'
             '</figcaption>\n</figure>')
 
 
@@ -148,15 +158,13 @@ def build(check=False):
         'Available at meta-analysis.cz/esg.')
 
     # ---- body -----------------------------------------------------------
-    # The zero strip said something true but weak, and the owner could not parse it.
-    # Replaced by the research-revision figure, whose numbers are published rather
-    # than ours: tools_seo/build_revision_figure.py writes the fragment.
-    fpath = os.path.join(HERE, "_fragments", "revision_figure.html")
-    if not os.path.isfile(fpath):
-        sys.exit("missing redesign/_fragments/revision_figure.html -- run "
-                 "tools_seo/build_revision_figure.py")
+    # The research-revision figure was here for one build and is now on
+    # /conventional_wisdom/ instead. It plots the 24 literatures reviewed by Gechert et
+    # al., and 21 of those 24 are OTHER researchers' meta-analyses. On a page headed
+    # "Headline results from 54 papers" that reads as a claim on work that is not his.
+    # It belongs on the reviewing paper's own page, where the attribution is plain.
     n_rows = len(rows)
-    strip = open(fpath, encoding="utf-8").read().strip()
+    strip = dot_strip(rows, fields)
     chips = "\n".join(
         f'<button type="button" class="chip" data-field="{esc(f)}">{esc(f)}</button>'
         for f in fields)

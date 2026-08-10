@@ -791,13 +791,24 @@ table.catalogue li{ margin-bottom:var(--s2); font-size:var(--f-1); line-height:1
 /* one hue per field, carried to the tiles through --fc. Colour touches only two
    2px rules; all text stays --ink / --ink-soft, and every group also carries its
    field name in words, so colour is never the sole carrier (WCAG 1.4.1). */
-.bf.macro { --fc:#0f5f8c; }   /* the site's own accent */
-.bf.micro { --fc:#6b4a8c; }
-.bf.energy{ --fc:#276b3d; }
-.bf.intl  { --fc:#0f6a72; }
-.bf.labor { --fc:#9c4221; }
-.bf.fin   { --fc:#7d5a1f; }
-.bf.meth  { --fc:#5a6672; }   /* methods stay monochrome on purpose */
+/* one place for the seven field hues: the homepage tiles read them through --fc,
+   the /results/ dot strip reads them directly, so the two cannot drift apart */
+:root{
+  --bf-macro:#0f5f8c;   /* the site's own accent */
+  --bf-micro:#6b4a8c;
+  --bf-energy:#276b3d;
+  --bf-intl:#0f6a72;
+  --bf-labor:#9c4221;
+  --bf-fin:#7d5a1f;
+  --bf-meth:#5a6672;    /* methods stay monochrome on purpose */
+}
+.bf.macro { --fc:var(--bf-macro); }
+.bf.micro { --fc:var(--bf-micro); }
+.bf.energy{ --fc:var(--bf-energy); }
+.bf.intl  { --fc:var(--bf-intl); }
+.bf.labor { --fc:var(--bf-labor); }
+.bf.fin   { --fc:var(--bf-fin); }
+.bf.meth  { --fc:var(--bf-meth); }
 
 .post.estimates .board{
   margin:0; padding:0; list-style:none;
@@ -890,10 +901,10 @@ table.catalogue li{ margin-bottom:var(--s2); font-size:var(--f-1); line-height:1
 /* 53 squares, one per result, filled where the paper's own answer is about
    zero. The classification is the same `zero` flag that mutes a homepage tile,
    read from answer_board.json, so the two pages cannot disagree. */
-.zerostrip{ margin:var(--s5) 0; }
-.zerostrip svg{ display:block; width:100%; height:auto; }
-.zerostrip a rect{ transition:none; }
-.zerostrip figcaption{ margin-top:var(--s3); }
+.dotstrip{ margin:var(--s5) 0; }
+.dotstrip svg{ display:block; width:100%; height:auto; }
+.dotstrip figcaption{ margin-top:var(--s3); }
+.dotstrip a:hover rect{ opacity:.75; }
 
 /* ---- /results/ research-revision figure --------------------------------- */
 /* Gechert et al. (2025) Tables 2-3: 24 literatures, corrected mean against the
@@ -903,8 +914,9 @@ table.catalogue li{ margin-bottom:var(--s2); font-size:var(--f-1); line-height:1
 .rvfig-scroll{ overflow-x:auto; }
 .rvfig{ display:block; height:auto; }
 .rvfig .rl{ font:400 11px var(--sans); fill:var(--ink); }
+.rvfig .rs{ fill:var(--ink-soft); }   /* whose meta-analysis each row is */
 .rvfig .ra{ font:400 9.5px var(--sans); fill:var(--ink-soft); }
 .rvfig .rv-flip{ fill:var(--paper); font-weight:600; }
 .rvfig g:hover rect{ opacity:.82; }
 .rvfig-wrap .table-note{ margin-top:var(--s3); }
-@media (max-width:24rem){ .rvfig{ min-width:22rem; } }
+@media (max-width:34rem){ .rvfig{ min-width:32rem; } }
