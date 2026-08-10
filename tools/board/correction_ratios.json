@@ -54,7 +54,9 @@
    "mean": null,
    "mean_from": "data",
    "corrected_quote": "Attempting to correct simultaneously for publication and endogeneity biases, we find that the mean underlying elasticity is approximately 0.15 or less.",
-   "note": "'0.15 or less' is an upper bound; taking 0.15 understates the correction, which is the conservative direction"
+   "note": "'0.15 or less' is an upper bound; taking 0.15 understates the correction, which is the conservative direction",
+   "tier": "range",
+   "approximation": "The paper says the elasticity is 'approximately 0.15 or less', an upper bound rather than a point, so 0.15 understates the correction."
   },
   {
    "project": "frisch",

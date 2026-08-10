@@ -237,14 +237,20 @@ def build(check=False):
     up = [r for r in out if r["rev"] > 0]
     # the same index under a comparator the figure does NOT use, so the caption can say what
     # happens if you disagree with the one it does
-    alt = []
+    alt, n_alt = [], 0
     for r in out:
-        m = (r["mean"] if r.get("mean_from") == "paper"
-             else statistics.median(effects[r["project"]]))
-        alt.append((abs(r["corrected"]) - abs(m)) / abs(m) * 100.0)
+        v = effects.get(r["project"])
+        if v:
+            n_alt += 1
+            m = statistics.median(v)
+            alt.append((abs(r["corrected"]) - abs(m)) / abs(m) * 100.0)
+        else:
+            alt.append(r["rev"])
     alt_med = statistics.median(alt)
+    alt_up = sum(1 for x in alt if x > 0)
     n_paper = sum(1 for r in out if r.get("mean_from") == "paper")
     n_approx = sum(1 for r in out if r["tier"] != "exact")
+    n_up = len(out) - len(down)
 
     caption = (
         '<figcaption class="table-note"><b>What best practice did to the number.</b> '
@@ -256,8 +262,10 @@ def build(check=False):
         f'from it; the median revision is <b>{med:+.0f}%</b>. '
         'The comparator is the paper&rsquo;s own uncorrected mean wherever it states one '
         f'&mdash; {n_paper} of the {len(out)} do &mdash; and otherwise the average of that '
-        'literature&rsquo;s estimates in the data on this site, winsorised at 1%. Against the '
-        f'<i>median</i> reported estimate instead, the median revision would be {alt_med:+.0f}%. '
+        'literature&rsquo;s estimates in the data on this site, winsorised at 1%. If you distrust '
+        f'means, take the <i>median</i> reported estimate instead, wherever one can be computed '
+        f'from the data here ({n_alt} of the {len(out)}): the median revision becomes '
+        f'{alt_med:+.0f}% and {alt_up} of the {len(out)} turn upward rather than {n_up}. '
         + ((f'<b>One of the {len(out)}</b> is drawn as a ring rather than a disc: its pair '
             if n_approx == 1 else
             f'<b>{n_approx} of the {len(out)}</b> are drawn as rings rather than discs: their '
@@ -268,7 +276,7 @@ def build(check=False):
              'is written beside it in the spec, and shown when you hover the dot. '
            if n_approx else '')
         + f'<b>{len(out)} of the {n_all} papers qualify.</b> Of the other {n_all - len(out)}, '
-        'about a third are methods papers with no literature of their own to correct. The rest '
+        'eight are methods papers with no literature of their own to correct. The rest '
         'answer in words rather than a number, or measure the corrected effect as a different '
         'quantity from the one their estimate-level data holds, or give a headline that is not '
         'a correction at all, or sit against a comparator so near zero that the ratio is noise '
