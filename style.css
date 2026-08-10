@@ -335,6 +335,10 @@ table.catalogue li{ margin-bottom:var(--s2); font-size:var(--f-1); line-height:1
      sidebar -- six screenfuls -- before reaching the board that summarises them. */
   #content > .post.estimates{ order:2; }
   #sidebar{ order:3; }
+  /* The funding note has no `order`, so it defaulted to 0 and jumped ahead of everything
+     with an explicit one: on a phone the homepage opened on the grant acknowledgement,
+     ABOVE the page title. Desktop was fine, which is why it survived a desktop review. */
+  .funding{ order:4; }
   #page > div[style]{ order:9; display:none; }
 }
 @media (max-width:48rem){
