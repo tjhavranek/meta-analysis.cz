@@ -174,7 +174,7 @@ def build(check=False):
 
     p = [f'<svg viewBox="0 0 {W} {H}" width="100%" role="img" '
          f'aria-labelledby="cf-t cf-d" class="cfig">',
-         '<title id="cf-t">What correcting for bias did to each number</title>',
+         '<title id="cf-t">What correction and best practice did to each number</title>',
          f'<desc id="cf-d">One dot per meta-analysis, placed by how far its corrected or '
          f'best-practice estimate sits from the average estimate that literature reported. '
          f'{len(down)} of the {len(out)} moved toward zero and {len(out) - len(down)} away '
@@ -229,6 +229,8 @@ def build(check=False):
         if r["tier"] != "exact" and r.get("approximation"):
             tip += " " + r["approximation"]
         p.append(f'<a href="#{E(r["project"])}"><title>{E(tip)}</title>')
+        # an invisible target twice the dot: 18 user-units is a small thing to hit with a thumb
+        p.append(f'<circle cx="{x:.1f}" cy="{y:.1f}" r="{R * 2}" fill="transparent"/>')
         p.append(f'<circle cx="{x:.1f}" cy="{y:.1f}" r="{R}" fill="{fill}" '
                  f'fill-opacity="{op:.2f}"/>')
         if r["tier"] != "exact":
@@ -266,47 +268,66 @@ def build(check=False):
     n_approx = sum(1 for r in out if r["tier"] != "exact")
     n_up = len(out) - len(down)
 
+    # The caption had grown to hold the comparator rule, the sensitivity check, the ring
+    # taxonomy, the exclusion taxonomy and a defence of the selection rule. All of it is worth
+    # keeping and none of it is what a reader wants first. The finding stays visible; the
+    # method goes in a <details>, whose content is ordinary DOM text and so still reaches
+    # every crawler and every text corpus -- unlike a <script>, which they discard.
     caption = (
-        '<figcaption class="table-note"><b>What best practice did to the number.</b> '
-        'One dot per meta-analysis, placed by how far the correction moved it. '
-        '<b>Red</b>: the corrected or best-practice estimate is smaller <i>in absolute '
-        'magnitude</i> than the average estimate the literature reported. <b>Green</b>: '
-        'larger. Stronger colour, bigger move. '
-        f'<b>{len(down)} of the {len(out)}</b> moved toward zero and <b>{len(up)}</b> away '
-        f'from it; the median revision is <b>{med:+.0f}%</b>. '
-        'The comparator is the paper&rsquo;s own uncorrected mean wherever it states one '
-        f'&mdash; {n_paper} of the {len(out)} do &mdash; and otherwise the average of that '
-        'literature&rsquo;s estimates in the data on this site, winsorised at 1%. If you distrust '
-        f'means, take the <i>median</i> reported estimate instead, wherever one can be computed '
-        f'from the data here ({n_alt} of the {len(out)}): the median revision becomes '
-        f'{alt_med:+.0f}% and {alt_up} of the {len(out)} turn upward rather than {n_up}. '
-        + ((f'<b>One of the {len(out)}</b> is drawn as a ring rather than a disc: its pair '
-            if n_approx == 1 else
-            f'<b>{n_approx} of the {len(out)}</b> are drawn as rings rather than discs: their '
-            'pair ')
-           + 'is approximate &mdash; the central value of a range, the horizon the paper '
-             'leads with, a number from a results table where the headline is verbal, or a '
-             'revision the paper states directly rather than two levels. What is approximate '
-             'is written beside it in the spec, and shown when you hover the dot. '
-           if n_approx else '')
-        + f'<b>{len(out)} of the {n_all} papers qualify.</b> Of the other {n_all - len(out)}, '
-        'eight are methods papers with no literature of their own to correct. The rest '
-        'answer in words rather than a number, or measure the corrected effect as a different '
-        'quantity from the one their estimate-level data holds, or give a headline that is not '
-        'a correction at all, or sit against a comparator so near zero that the ratio is noise '
-        '&mdash; and a few were dropped because two defensible comparators disagreed about which '
-        'way they moved. The rule takes no account of which way a paper moved, and every one of '
-        f'those {n_all - len(out)} is written down with its reason, individually, in '
-        '<a href="/tools/board/correction_ratios.json">correction_ratios.json</a>. '
-        'Most of these papers correct with estimators that shrink toward zero, so the '
-        'direction is not a discovery; the size of the move is the point. The same index, '
-        'applied to 24 literatures mostly by other researchers, is in '
-        '<a href="/conventional_wisdom/">Gechert et al. (2025)</a>.'
-        '</figcaption>')
+        '<figcaption class="table-note">'
+        '<b>What correction and best practice did to the number.</b> '
+        'One dot per meta-analysis, placed by how far its corrected or best-practice estimate '
+        'sits from the mean the literature reported. <b>Red</b>: smaller <i>in absolute '
+        'magnitude</i>. <b>Green</b>: larger. '
+        + (f'<b>All {len(out)} moved toward zero</b>; ' if len(down) == len(out) else
+           f'<b>{len(down)} of the {len(out)}</b> moved toward zero and <b>{n_up}</b> away from '
+           'it; ')
+        + f'the median revision is <b>{med:+.0f}%</b>. '
+        + (f'The {n_approx} drawn as rings are approximate pairs. ' if n_approx else '')
+        + 'Vertical position only keeps the dots from overlapping; it carries no meaning.'
+        '<details class="figmethod"><summary>How this figure is built, and which papers it '
+        'leaves out</summary>'
+        '<p>The index is <i>(|corrected| &minus; |mean|) / |mean|</i>, the same relative revision '
+        'as Table 3 of <a href="/conventional_wisdom/">Gechert et al. (2025)</a>, which applies '
+        'it to 24 literatures mostly by other researchers.</p>'
+        f'<p><b>The comparator</b> is the paper&rsquo;s own uncorrected mean wherever it states '
+        f'one &mdash; {n_paper} of the {len(out)} do &mdash; and otherwise the average of that '
+        'literature&rsquo;s estimates in the data on this site, winsorised at 1%. The '
+        'paper&rsquo;s own number is preferred for a reason: the harmonised table keeps only '
+        'estimates that '
+        'report a usable standard error, so a mean computed from it can rest on a subset of what '
+        'the paper analysed.</p>'
+        f'<p><b>If you distrust means</b>, take the median reported estimate instead, wherever '
+        f'one can be computed from the harmonised estimates here ({n_alt} of the {len(out)}): '
+        f'the median revision becomes {alt_med:+.0f}% and {alt_up} of the {len(out)} turn upward '
+        f'rather than {n_up}. That is a sensitivity check on the estimates this site holds, not '
+        'a perfectly matched alternative denominator, for the same subset reason.</p>'
+        + (f'<p><b>The {n_approx} rings</b> are pairs that are approximate in a stated way: the '
+           'central value of a range or an upper bound, the horizon or the subsample the paper '
+           'leads with, a number read from a results table where the headline is verbal, or a '
+           'revision the paper states directly rather than as two levels. Hover a ring and it '
+           'says which.</p>' if n_approx else '')
+        + f'<p><b>{len(out)} of the {n_all} papers qualify.</b> Of the other {n_all - len(out)}, '
+        'eight have no single literature effect to correct &mdash; methods papers, an '
+        'experiment, and the review that supplies the companion figure. The rest answer in words '
+        'rather than a number, or measure the corrected effect as a different quantity from the '
+        'one their estimate-level data holds, or give a headline that is not a correction at '
+        'all, or sit against a comparator so near zero that the ratio is noise; a few were '
+        'dropped because two defensible comparators disagreed about which way they moved. '
+        'The rule takes no account of which way a paper moved, and every one of those '
+        f'{n_all - len(out)} is written down with its reason, individually, in '
+        '<a href="/tools/board/correction_ratios.json">correction_ratios.json</a>.</p>'
+        '<p>Most of these papers correct with estimators that shrink toward zero, so the '
+        'direction is not a discovery; the size of the move is the point.</p>'
+        '</details></figcaption>')
 
     os.makedirs(os.path.dirname(FRAG), exist_ok=True)
+    # The drawing scrolls; the caption does not. Without the wrapper the SVG scales its
+    # 760-unit box to whatever width it is given -- 47% on a phone, which put the axis labels
+    # at 5px. The other two figures on the site already scroll rather than shrink.
     open(FRAG, "w", encoding="utf-8", newline="\n").write(
-        '<figure class="cfig-wrap">\n' + "\n".join(p) + "\n" + caption + "\n</figure>\n")
+        '<figure class="cfig-wrap">\n<div class="cfig-scroll">\n' + "\n".join(p)
+        + "\n</div>\n" + caption + "\n</figure>\n")
     print(f"  wrote {os.path.relpath(FRAG, BASE)}  ({len(out)} of {n_all} papers, "
           f"{len(down)} down, median {med:+.0f}%, {excl} exclusions recorded)")
     import subprocess

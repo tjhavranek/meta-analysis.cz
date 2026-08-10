@@ -946,14 +946,31 @@ table.catalogue li{ margin-bottom:var(--s2); font-size:var(--f-1); line-height:1
    figures apply the same index, one to his own literatures and one to 24 mostly other
    people's, and a reader who sees both should recognise the second. */
 .cfig-wrap{ margin:var(--s5) 0; }
-.cfig{ display:block; max-width:100%; height:auto; overflow:visible; }
+/* The drawing scrolls; the caption does not. Without this the SVG scaled its 760-unit box to
+   whatever width it was given -- 47% on a phone, which rendered the axis labels at 5px and the
+   dots at 8px. The two other figures on the site already scroll rather than shrink. */
+.cfig-scroll{ overflow-x:auto; max-width:100%; }
+.cfig-wrap{ max-width:100%; min-width:0; }
+.cfig{ display:block; min-width:34rem; height:auto; overflow:visible; }
+@media (max-width:44rem){
+  .cfig{ min-width:40rem; }
+  .cfig-scroll{
+    background:
+      linear-gradient(to right, var(--paper) 30%, rgba(255,255,255,0)) left / 40px 100% no-repeat,
+      linear-gradient(to left,  var(--paper) 30%, rgba(255,255,255,0)) right / 40px 100% no-repeat,
+      radial-gradient(farthest-side at 0 50%, rgba(0,0,0,.10), transparent) left / 14px 100% no-repeat,
+      radial-gradient(farthest-side at 100% 50%, rgba(0,0,0,.10), transparent) right / 14px 100% no-repeat;
+    background-attachment: local, local, scroll, scroll;
+  }
+}
+/* the method, folded: <details> content is ordinary DOM text, so a crawler still reads it */
+.figmethod{ margin-top:var(--s3); }
+.figmethod > summary{ cursor:pointer; font-weight:600; color:var(--ink); }
+.figmethod > p{ margin:var(--s3) 0 0; }
 .cfig a{ text-decoration:none; }
 .cfig circle{ transition:r .12s ease; }
 .cfig a:hover circle, .cfig a:focus circle{ r:15; }
-.cfig .cfl{ font:600 12px/1 var(--sans); fill:var(--ink); }
-.cfig .cfa{ font:400 11px/1 var(--sans); fill:var(--ink-soft);
+.cfig .cfl{ font:600 15px/1 var(--sans); fill:var(--ink); }
+.cfig .cfa{ font:400 14px/1 var(--sans); fill:var(--ink-soft);
   letter-spacing:.02em; text-transform:uppercase; }
-@media (max-width:640px){
-  .cfig .cfl{ font-size:11px; }
-  .cfig .cfa{ font-size:10px; }
-}
+
