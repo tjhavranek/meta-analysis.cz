@@ -1,0 +1,217 @@
+{
+ "_readme": "Homepage answer-board values. `value` is the tile-sized form of estimates.csv `headline`, produced by DELETION ONLY -- never rounded, never re-worded into a new claim; where the headline is prose rather than a number, `value` is a short verdict answering the question. `zero` marks a result the paper itself calls about zero. Questions come from redesign/results_questions.json and tails from the estimates.csv `caveat` column, so neither is duplicated here. build_answer_board.py re-checks every number in `value` against that row's `headline` and refuses to build on a mismatch.",
+ "values": {
+  "house_prices": {
+   "value": "1.2% per 1 pp",
+   "zero": false
+  },
+  "reforms": {
+   "value": "short-run cost, long-run gain",
+   "zero": false
+  },
+  "eis": {
+   "value": "0.3–0.4",
+   "zero": false
+  },
+  "sigma": {
+   "value": "0.3",
+   "zero": false
+  },
+  "excess_sensitivity": {
+   "value": "0.11",
+   "zero": false
+  },
+  "inflation": {
+   "value": "about 0.6% per year",
+   "zero": false
+  },
+  "price_puzzle": {
+   "value": "no once biases are corrected — prices fall",
+   "zero": false
+  },
+  "lags": {
+   "value": "29 months; 25–50 developed, 10–20 post-transition",
+   "zero": false
+  },
+  "substitution": {
+   "value": "income and asset market participation",
+   "zero": false
+  },
+  "beauty": {
+   "value": "1.1% (95% CrI −0.8% to 3.0%)",
+   "zero": false
+  },
+  "risk": {
+   "value": "1 in economics, 2–7 in finance",
+   "zero": false
+  },
+  "incentives": {
+   "value": "about 0",
+   "zero": true
+  },
+  "exercise": {
+   "value": "SMD 0.227 general cognition, 0.027 memory, 0.012 executive",
+   "zero": false
+  },
+  "habits": {
+   "value": "0.4 (macro 0.6, micro 0.1)",
+   "zero": false
+  },
+  "discrate": {
+   "value": "33% per year",
+   "zero": false
+  },
+  "climate": {
+   "value": "1.4–2.3 °C",
+   "zero": false
+  },
+  "dst": {
+   "value": "essentially zero",
+   "zero": true
+  },
+  "gasoline": {
+   "value": "0.1 short run, 0.23 long run",
+   "zero": false
+  },
+  "water": {
+   "value": "about 0.15 or less",
+   "zero": false
+  },
+  "resource_curse": {
+   "value": "weak support for a curse",
+   "zero": false
+  },
+  "electricity": {
+   "value": "−0.16 short run, −0.38 long run",
+   "zero": false
+  },
+  "gasoline_price": {
+   "value": "−0.09 short run, −0.31 long run",
+   "zero": false
+  },
+  "scc": {
+   "value": "0–134 USD per ton",
+   "zero": false
+  },
+  "armington": {
+   "value": "2.5–5.1, median 3.8",
+   "zero": false
+  },
+  "border": {
+   "value": "one-third less trade",
+   "zero": false
+  },
+  "bma": {
+   "value": "the technology gap and ownership structure",
+   "zero": false
+  },
+  "euro": {
+   "value": "no effect once bias is corrected",
+   "zero": true
+  },
+  "fdi": {
+   "value": "+11% per 10 pp",
+   "zero": false
+  },
+  "forward": {
+   "value": "present in developed currencies, not in emerging",
+   "zero": false
+  },
+  "spillovers": {
+   "value": "about 9% per 10 pp for suppliers, small for buyers",
+   "zero": false
+  },
+  "class": {
+   "value": "about 0",
+   "zero": true
+  },
+  "students": {
+   "value": "about 0, slightly negative",
+   "zero": true
+  },
+  "migrant": {
+   "value": "about 17",
+   "zero": false
+  },
+  "skill": {
+   "value": "4, lower bound 2",
+   "zero": false
+  },
+  "frisch": {
+   "value": "about 0.25",
+   "zero": false
+  },
+  "learning": {
+   "value": "about −0.12 SD",
+   "zero": false
+  },
+  "education": {
+   "value": "about 0",
+   "zero": true
+  },
+  "competition": {
+   "value": "about 0",
+   "zero": true
+  },
+  "esg": {
+   "value": "about 0.12 points per 1 pp",
+   "zero": false
+  },
+  "finance_growth": {
+   "value": "positive but widely varying; endogeneity overstates it",
+   "zero": false
+  },
+  "remittances": {
+   "value": "positive but economically small",
+   "zero": false
+  },
+  "hedge": {
+   "value": "30–40 basis points per month",
+   "zero": false
+  },
+  "size": {
+   "value": "1.72% per year",
+   "zero": false
+  },
+  "activism": {
+   "value": "0% to 1.5%",
+   "zero": false
+  },
+  "trust": {
+   "value": "stronger rule of law, larger premium",
+   "zero": false
+  },
+  "alphas": {
+   "value": "fees, above all",
+   "zero": false
+  },
+  "correlations": {
+   "value": "yes, the conventional ones",
+   "zero": false
+  },
+  "pcc": {
+   "value": "yes, all of them",
+   "zero": false
+  },
+  "guidelines": {
+   "value": "confront publication bias, p-hacking and heterogeneity",
+   "zero": false
+  },
+  "outliers": {
+   "value": "median shift at most 0.047 Cohen's d; 11.5% flip significance",
+   "zero": false
+  },
+  "maive": {
+   "value": "yes",
+   "zero": false
+  },
+  "debate": {
+   "value": "no",
+   "zero": false
+  },
+  "pcc_survey": {
+   "value": "yes — UWLS and Hunter-Schmidt give smaller means",
+   "zero": false
+  }
+ }
+}

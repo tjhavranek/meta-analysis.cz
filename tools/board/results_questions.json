@@ -1,0 +1,267 @@
+[
+ {
+  "project": "house_prices",
+  "question": "How much do house prices fall after a monetary policy rate hike?",
+  "short": "house prices"
+ },
+ {
+  "project": "reforms",
+  "question": "How do structural reforms affect growth in transition countries?",
+  "short": "structural reforms"
+ },
+ {
+  "project": "eis",
+  "question": "What is the elasticity of intertemporal substitution in consumption?",
+  "short": "intertemporal substitution"
+ },
+ {
+  "project": "sigma",
+  "question": "What is the elasticity of substitution between capital and labor?",
+  "short": "capital-labor substitution"
+ },
+ {
+  "project": "excess_sensitivity",
+  "question": "How large is the excess sensitivity of consumption to anticipated income?",
+  "short": "excess sensitivity"
+ },
+ {
+  "project": "inflation",
+  "question": "What is the optimal long-run inflation rate?",
+  "short": "optimal inflation"
+ },
+ {
+  "project": "price_puzzle",
+  "question": "Do prices rise after a monetary policy tightening?",
+  "short": "price puzzle"
+ },
+ {
+  "project": "lags",
+  "question": "How long does monetary policy take to affect prices?",
+  "short": "policy transmission lag"
+ },
+ {
+  "project": "substitution",
+  "question": "Why does intertemporal substitution differ across countries?",
+  "short": "substitution across countries"
+ },
+ {
+  "project": "beauty",
+  "question": "How large is the beauty premium in earnings?",
+  "short": "beauty premium"
+ },
+ {
+  "project": "risk",
+  "question": "What is the coefficient of relative risk aversion?",
+  "short": "risk aversion"
+ },
+ {
+  "project": "incentives",
+  "question": "Do financial incentives improve performance?",
+  "short": "financial incentives"
+ },
+ {
+  "project": "exercise",
+  "question": "Does physical exercise improve cognition?",
+  "short": "exercise and cognition"
+ },
+ {
+  "project": "habits",
+  "question": "How strong is habit formation in consumption?",
+  "short": "habit formation"
+ },
+ {
+  "project": "discrate",
+  "question": "How impatient are people in experiments?",
+  "short": "discount rates"
+ },
+ {
+  "project": "climate",
+  "question": "What does the historical record imply about climate sensitivity?",
+  "short": "climate sensitivity"
+ },
+ {
+  "project": "dst",
+  "question": "Does daylight saving time reduce electricity use?",
+  "short": "daylight saving time"
+ },
+ {
+  "project": "gasoline",
+  "question": "How much does gasoline demand rise with income?",
+  "short": "gasoline income elasticity"
+ },
+ {
+  "project": "water",
+  "question": "How much does water demand rise with income?",
+  "short": "water income elasticity"
+ },
+ {
+  "project": "resource_curse",
+  "question": "Does having abundant natural resources hurt long-run economic growth?",
+  "short": "resource curse"
+ },
+ {
+  "project": "electricity",
+  "question": "How much does electricity demand fall when prices rise?",
+  "short": "electricity demand"
+ },
+ {
+  "project": "gasoline_price",
+  "question": "How much does gasoline demand fall when prices rise?",
+  "short": "gasoline demand"
+ },
+ {
+  "project": "scc",
+  "question": "What is the social cost of carbon?",
+  "short": "social cost of carbon"
+ },
+ {
+  "project": "armington",
+  "question": "What is the Armington elasticity between domestic and foreign goods?",
+  "short": "Armington elasticity"
+ },
+ {
+  "project": "border",
+  "question": "How much do national borders reduce international trade?",
+  "short": "border effect"
+ },
+ {
+  "project": "bma",
+  "question": "What determines the size of horizontal FDI spillovers?",
+  "short": "FDI spillover determinants"
+ },
+ {
+  "project": "euro",
+  "question": "Does adopting the euro increase trade between member countries?",
+  "short": "euro and trade"
+ },
+ {
+  "project": "fdi",
+  "question": "How much do FDI spillovers boost Czech firm productivity?",
+  "short": "Czech FDI productivity"
+ },
+ {
+  "project": "forward",
+  "question": "Is the forward premium puzzle real in currency markets?",
+  "short": "forward premium puzzle"
+ },
+ {
+  "project": "spillovers",
+  "question": "Do FDI spillovers benefit domestic suppliers and buyers?",
+  "short": "vertical FDI spillovers"
+ },
+ {
+  "project": "class",
+  "question": "Does smaller class size improve student achievement?",
+  "short": "class size"
+ },
+ {
+  "project": "students",
+  "question": "Does working while in school hurt academic outcomes?",
+  "short": "working while studying"
+ },
+ {
+  "project": "migrant",
+  "question": "How substitutable are native and immigrant workers?",
+  "short": "native-immigrant substitution"
+ },
+ {
+  "project": "skill",
+  "question": "How substitutable are skilled and unskilled workers?",
+  "short": "skill substitution"
+ },
+ {
+  "project": "frisch",
+  "question": "What is the Frisch elasticity of labor supply?",
+  "short": "Frisch elasticity"
+ },
+ {
+  "project": "learning",
+  "question": "How much learning did students lose from COVID-19 school closures?",
+  "short": "COVID learning loss"
+ },
+ {
+  "project": "education",
+  "question": "Does raising tuition reduce university enrollment?",
+  "short": "tuition and enrollment"
+ },
+ {
+  "project": "competition",
+  "question": "Does bank competition threaten financial stability?",
+  "short": "bank competition"
+ },
+ {
+  "project": "esg",
+  "question": "Does board gender diversity improve ESG performance?",
+  "short": "gender diversity ESG"
+ },
+ {
+  "project": "finance_growth",
+  "question": "Does financial development boost economic growth?",
+  "short": "finance and growth"
+ },
+ {
+  "project": "remittances",
+  "question": "Do remittances boost economic growth?",
+  "short": "remittances and growth"
+ },
+ {
+  "project": "hedge",
+  "question": "How much alpha do hedge funds generate before fees?",
+  "short": "hedge fund alpha"
+ },
+ {
+  "project": "size",
+  "question": "How large is the size premium in stock returns?",
+  "short": "size premium"
+ },
+ {
+  "project": "activism",
+  "question": "How much do stock prices move after shareholder activism?",
+  "short": "shareholder activism"
+ },
+ {
+  "project": "trust",
+  "question": "Does stronger rule of law relate to a larger size premium?",
+  "short": "rule of law premium"
+ },
+ {
+  "project": "alphas",
+  "question": "What explains the variation in hedge fund alpha?",
+  "short": "hedge fund variation"
+ },
+ {
+  "project": "correlations",
+  "question": "Are meta-analyses of correlations biased?",
+  "short": "correlation meta-bias"
+ },
+ {
+  "project": "pcc",
+  "question": "Are meta-analyses of partial correlations biased?",
+  "short": "partial correlation bias"
+ },
+ {
+  "project": "pcc_survey",
+  "question": "Does the choice of meta-analysis method change the answer for partial correlations?",
+  "short": "PCC methods in practice"
+ },
+ {
+  "project": "guidelines",
+  "question": "How should researchers conduct a modern meta-analysis?",
+  "short": "meta-analysis guidelines"
+ },
+ {
+  "project": "outliers",
+  "question": "How sensitive are meta-analysis results to outlier handling?",
+  "short": "outlier sensitivity"
+ },
+ {
+  "project": "maive",
+  "question": "Can p-hacked precision distort meta-analysis weighting?",
+  "short": "spurious precision"
+ },
+ {
+  "project": "debate",
+  "question": "Does multi-agent AI debate improve feedback on research papers?",
+  "short": "AI debate feedback"
+ }
+]
