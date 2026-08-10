@@ -182,8 +182,10 @@ def build(check=False):
              % (CX + CW, T + PH + 14))
     p.append('<text x="%.2f" y="%d" text-anchor="middle" class="za">a 0.5-wide caliper, '
              'its own scale</text>' % (CX + CW / 2, T + PH + 30))
+    # inside the panel, not left of it: at 390px the panel scrolls off and a label
+    # placed outside it hung alone in the fade, which read as a broken chart
     p.append('<text x="%.2f" y="%d" text-anchor="end" class="za">%d</text>'
-             % (CX - 3, T + 8, cal_peak))
+             % (CX + CW, T + 8, cal_peak))
     p.append("</svg>")
 
     b, a = calipers[1][2], calipers[1][3]

@@ -824,7 +824,10 @@ table.catalogue li{ margin-bottom:var(--s2); font-size:var(--f-1); line-height:1
 }
 
 .board .q{ font:400 var(--f-1)/1.45 var(--sans); color:var(--ink-soft); }
-.board .a{ font:400 var(--f1)/1.35 var(--serif); color:var(--ink); }
+.board .a{ font:400 var(--f1)/1.35 var(--serif); color:var(--ink);
+  /* the answers are short and the tiles narrow, so a last word alone on its own
+     line was common; pretty keeps the last line from being an orphan */
+  text-wrap:pretty; }
 @media (min-width:48rem){ .board .a{ margin-top:auto; } }
 .board .u{ display:block; margin-top:var(--s1);
   font:400 var(--f-2)/1.45 var(--sans); color:var(--ink-soft); }

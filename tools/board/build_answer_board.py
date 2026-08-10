@@ -87,7 +87,9 @@ def main():
             p = r["project"]
             v = values[p]
             li = ' class="z"' if v.get("zero") else ""
-            tail = r["caveat"].strip()
+            # a few papers put the lay equivalent in the headline rather than the
+            # caveat column, and the tile would otherwise drop it
+            tail = r["caveat"].strip() or v.get("tail", "")
             out.append(f'  <li{li}><a href="/{p}/">')
             out.append(f'    <span class="q">{E(questions[p])}</span>')
             out.append(f'    <span class="a">{E(v["value"])}'
