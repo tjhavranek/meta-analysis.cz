@@ -732,10 +732,11 @@
   "project": "forward",
   "title": "How Puzzling Is the Forward Premium Puzzle? A Meta-Analysis",
   "abstract": "A key theoretical prediction in financial economics is that under risk neutrality and rational expectations a currency's forward rates should form unbiased predictors of future spot rates. Yet scores of empirical studies report negative slope coefficients from regressions of spot rates on forward rates, which is inconsistent with the forward rate unbiasedness hypothesis. We collect 3,643 estimates from 91 research articles and using recently developed techniques investigate the effect of publication and misspecification biases on the reported results. Correcting for these biases we estimate the slope coefficients of 0.31 and 0.98 for developed and emerging currencies respectively, which implies that empirical evidence is in line with the theoretical prediction for emerging economies and less puzzling than commonly thought for developed economies. Our results also suggest that the coefficients are systematically influenced by the choice of data, numeraire currencies, and estimation methods.",
-  "reference_line": "Diana Zigraiova, Tomas Havranek, and Jiri Novak (2021), \"How Puzzling Is the Forward Premium Puzzle? A Meta-Analysis.\" European Economic Review 134, 103714.",
+  "reference_line": "Diana Zigraiova, Tomas Havranek, Zuzana Irsova, and Jiri Novak (2021), \"How Puzzling Is the Forward Premium Puzzle? A Meta-Analysis.\" European Economic Review 134, 103714.",
   "authors": [
    "Diana Zigraiova",
    "Tomas Havranek",
+   "Zuzana Irsova",
    "Jiri Novak"
   ],
   "year": 2021,
@@ -1290,7 +1291,7 @@
   },
   "has_meta_description": true,
   "meta_keywords": "labor, wages, migrants, meta-analysis, model uncertainty, publication bias",
-  "one_line": "Meta-analysis of 1,091 estimates finds native-immigrant labor substitution elasticity rises from 13 to about 22 after bias correction."
+  "one_line": "Meta-analysis of 1,091 estimates finds native-immigrant labor substitution elasticity of about 17 under best practice, against an uncorrected mean of 13."
  },
  {
   "project": "pcc",

@@ -190,7 +190,7 @@
    "mean": 411,
    "mean_from": "paper",
    "quote_source": "pdf",
-   "tier": "ratio",
+   "tier": "range",
    "units": "USD per ton of carbon, 2010 prices, emission year 2015",
    "approximation": "134 is the LARGEST of the paper's corrected means, and 411 the uncorrected mean of the same estimates -- the pair the paper itself puts in one sentence. Taking the largest corrected value understates the correction, which is the conservative direction.",
    "corrected_quote": "The largest corrected mean SCC we get for estimates with uncertainty is USD 134 per ton of carbon at 2010 prices for emission year 2015; because the uncorrected mean of these estimates is 411, our results indicate that the reported estimates of the SCC are exaggerated",

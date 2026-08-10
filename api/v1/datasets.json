@@ -1093,6 +1093,7 @@
     "authors": [
      "Diana Zigraiova",
      "Tomas Havranek",
+     "Zuzana Irsova",
      "Jiri Novak"
     ],
     "year": 2021,
@@ -1474,7 +1475,7 @@
     ],
     "year": 2026,
     "journal": "Journal of Political Economy Microeconomics",
-    "doi": null,
+    "doi": "https://doi.org/10.1086/743543",
     "url": "https://meta-analysis.cz/incentives/"
    },
    "description": "Meta-analysis of 2,193 estimates finds financial incentives have near-zero corrected effect on performance in most field settings.",
@@ -1696,7 +1697,7 @@
     "doi": null,
     "url": "https://meta-analysis.cz/migrant/"
    },
-   "description": "Meta-analysis of 1,091 estimates finds native-immigrant labor substitution elasticity rises from 13 to about 22 after bias correction.",
+   "description": "Meta-analysis of 1,091 estimates finds native-immigrant labor substitution elasticity of about 17 under best practice, against an uncorrected mean of 13.",
    "n_estimates": 1091,
    "n_variables": 57,
    "n_estimates_in_literature": 1091,

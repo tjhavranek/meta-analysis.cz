@@ -21628,6 +21628,7 @@
    "@id": "incentives",
    "name": "incentives",
    "description": "Financial Incentives and Performance: A Meta-Analysis of Experiments in Economics",
+   "isBasedOn": "https://doi.org/10.1086/743543",
    "field": [
     {
      "@type": "cr:Field",

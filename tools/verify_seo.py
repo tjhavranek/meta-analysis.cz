@@ -1,7 +1,7 @@
 # Verify the SEO injection: (1) visible text of every page is UNCHANGED vs git HEAD,
 # (2) every JSON-LD block parses and has required fields, (3) every contentUrl /
 # sitemap / llms.txt URL maps to an existing local file, (4) exactly one canonical.
-import json, os, re, subprocess, sys, urllib.parse
+import csv, html, json, os, re, subprocess, sys, urllib.parse
 from html.parser import HTMLParser
 
 SITE = os.environ.get("SEO_SITE_DIR", os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
@@ -53,6 +53,10 @@ import sys as _sys, os as _os
 _sys.path.insert(0, _os.path.dirname(_os.path.abspath(__file__)))
 from _seo_shared import SELF_MANAGED
 
+# the canonical sentence for each paper, so a paper page cannot drift from it
+_ESTIMATES = {r["project"]: r for r in csv.DictReader(
+    open(os.path.join(SITE, "estimates.csv"), encoding="utf-8"))}
+
 fails = []
 pages = ["index.html"] + sorted(
     f"{d}/index.html" for d in os.listdir(SITE)
@@ -81,6 +85,23 @@ for rel in pages:
             fails.append(f"{rel}: #content closes before #sidebar - sidebar escapes the page box")
     if 'name="viewport"' not in new:
         fails.append(f"{rel}: no viewport meta - page will render zoomed out on phones")
+    # Each paper page states its own headline result in a plain <p> that NOTHING under site/
+    # generates -- the only emitter of the paper-extras block writes to redesign/preview/,
+    # deliberately outside the deploy. So the sentence on a paper's own page can fall behind
+    # estimates.csv, and it did: two caveats were corrected in the CSV, on /results/, in the
+    # JSON-LD and in the homepage tile, and the papers' own pages kept saying the old thing
+    # for a commit. A reader who lands on /hedge/ from a search result sees that page, not
+    # /results/.
+    if rel.count("/") == 1 and rel.endswith("/index.html"):
+        _proj = rel.split("/")[0]
+        _row = _ESTIMATES.get(_proj)
+        _m = re.search(r"<h3>\s*Headline result\s*</h3>\s*<p[^>]*>(.*?)</p>", new, re.S)
+        if _row and _m:
+            _got = " ".join(html.unescape(re.sub(r"<[^>]+>", " ", _m.group(1))).split())
+            _want = " ".join(_row["sentence"].split())
+            if _got != _want:
+                fails.append(f"{rel}: the Headline result paragraph has drifted from "
+                             f"estimates.csv. page={_got[:100]!r} csv={_want[:100]!r}")
     # A bare "<" in visible text (an abstract writing "n < 200") is invisible in a browser and
     # catastrophic for every text extractor: a regex tag-stripper swallows everything from that
     # bracket to the next ">". On /pcc/ that silently deleted the rest of the abstract from

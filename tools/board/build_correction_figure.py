@@ -41,6 +41,15 @@ EST = os.path.join(BASE, "site", "estimates.csv")
 QUESTIONS = os.path.join(BASE, "redesign", "results_questions.json")
 FRAG = os.path.join(BASE, "redesign", "_fragments", "correction_figure.html")
 
+TIER_ORDER = ["range", "horizon", "table", "subsample", "ratio"]
+TIER_WORDS = {
+    "range": "the central value of a range, or an upper bound",
+    "horizon": "the horizon the paper leads with",
+    "table": "a number read from a results table where the headline is verbal",
+    "subsample": "the subsample the paper leads with",
+    "ratio": "a revision the paper states directly rather than as two levels",
+}
+
 E = lambda s: (str(s).replace("&", "&amp;").replace("<", "&lt;").replace(">", "&gt;")
                .replace('"', "&quot;"))
 
@@ -253,10 +262,16 @@ def build(check=False):
     up = [r for r in out if r["rev"] > 0]
     # the same index under a comparator the figure does NOT use, so the caption can say what
     # happens if you disagree with the one it does
+    # Substituting a median is only meaningful where the comparator came from that column in
+    # the first place. Where the paper states its own mean, its corrected value need not be in
+    # the column's units at all -- size is an annualised premium in percent against a column of
+    # slopes, migrant an elasticity against a different transform -- and swapping in the column
+    # median produced +25,961% and +33,900%. Those two artefacts were the whole of the reported
+    # "5 turn upward".
     alt, n_alt = [], 0
     for r in out:
         v = effects.get(r["project"])
-        if v:
+        if r.get("mean_from") == "data" and v:
             n_alt += 1
             m = statistics.median(v)
             alt.append((abs(r["corrected"]) - abs(m)) / abs(m) * 100.0)
@@ -267,6 +282,13 @@ def build(check=False):
     n_paper = sum(1 for r in out if r.get("mean_from") == "paper")
     n_approx = sum(1 for r in out if r["tier"] != "exact")
     n_up = len(out) - len(down)
+    tier_counts = {}
+    for r in out:
+        if r["tier"] != "exact":
+            tier_counts[r["tier"]] = tier_counts.get(r["tier"], 0) + 1
+    NOLIT = {"correlations", "guidelines", "maive", "outliers", "pcc", "pcc_survey",
+             "conventional_wisdom", "debate"}
+    n_nolit = len([e for e in spec["excluded"] if e["project"] in NOLIT])
 
     # The caption had grown to hold the comparator rule, the sensitivity check, the ring
     # taxonomy, the exclusion taxonomy and a defence of the selection rule. All of it is worth
@@ -297,23 +319,28 @@ def build(check=False):
         'estimates that '
         'report a usable standard error, so a mean computed from it can rest on a subset of what '
         'the paper analysed.</p>'
-        f'<p><b>If you distrust means</b>, take the median reported estimate instead, wherever '
-        f'one can be computed from the harmonised estimates here ({n_alt} of the {len(out)}): '
-        f'the median revision becomes {alt_med:+.0f}% and {alt_up} of the {len(out)} turn upward '
-        f'rather than {n_up}. That is a sensitivity check on the estimates this site holds, not '
-        'a perfectly matched alternative denominator, for the same subset reason.</p>'
-        + (f'<p><b>The {n_approx} rings</b> are pairs that are approximate in a stated way: the '
-           'central value of a range or an upper bound, the horizon or the subsample the paper '
-           'leads with, a number read from a results table where the headline is verbal, or a '
-           'revision the paper states directly rather than as two levels. Hover a ring and it '
-           'says which.</p>' if n_approx else '')
+        f'<p><b>If you distrust means</b>: {n_alt} of the {len(out)} comparators are computed '
+        f'here rather than quoted from the paper, and they are winsorised means. Use the median '
+        f'of those literatures&rsquo; estimates instead and the overall median revision becomes '
+        f'{alt_med:+.0f}%'
+        + (f', with the number moving upward unchanged at {n_up}. ' if alt_up == n_up else
+           f', and {alt_up} of the {len(out)} move upward rather than {n_up}. ')
+        + 'The swap is confined to those rows on purpose: where a paper states its own mean, its '
+        'corrected value need not be in the same units as the estimate column at all, so a '
+        'median taken from that column would not be a comparator. It is a sensitivity check on '
+        'the estimates this site holds, not a matched alternative denominator &mdash; the '
+        'harmonised table keeps only estimates that report a usable standard error.</p>'
+        + (f'<p><b>The {n_approx} rings</b> are pairs that are approximate in a stated way: '
+           + ", ".join(TIER_WORDS[t] + f" ({tier_counts[t]})" for t in TIER_ORDER
+                       if tier_counts.get(t))
+           + '. Hover a ring and it says which.</p>' if n_approx else '')
         + f'<p><b>{len(out)} of the {n_all} papers qualify.</b> Of the other {n_all - len(out)}, '
-        'eight have no single literature effect to correct &mdash; methods papers, an '
+        f'{n_nolit} have no single literature effect to correct &mdash; methods papers, an '
         'experiment, and the review that supplies the companion figure. The rest answer in words '
         'rather than a number, or measure the corrected effect as a different quantity from the '
         'one their estimate-level data holds, or give a headline that is not a correction at '
-        'all, or sit against a comparator so near zero that the ratio is noise; a few were '
-        'dropped because two defensible comparators disagreed about which way they moved. '
+        'all, or sit against a comparator so near zero that the ratio is noise; one was '
+        'dropped because two defensible comparators disagreed about which way it moved. '
         'The rule takes no account of which way a paper moved, and every one of those '
         f'{n_all - len(out)} is written down with its reason, individually, in '
         '<a href="/tools/board/correction_ratios.json">correction_ratios.json</a>.</p>'

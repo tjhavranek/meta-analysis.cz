@@ -253,7 +253,7 @@ Abstract: We analyze 1334 estimates from 67 studies that examine the effect of f
 
 ## How Puzzling Is the Forward Premium Puzzle? A Meta-Analysis
 URL: https://meta-analysis.cz/forward/
-Citation: Diana Zigraiova, Tomas Havranek, and Jiri Novak (2021), "How Puzzling Is the Forward Premium Puzzle? A Meta-Analysis." European Economic Review 134, 103714.
+Citation: Diana Zigraiova, Tomas Havranek, Zuzana Irsova, and Jiri Novak (2021), "How Puzzling Is the Forward Premium Puzzle? A Meta-Analysis." European Economic Review 134, 103714.
 Published version: https://doi.org/10.1016/j.euroecorev.2021.103714
 Paper: https://meta-analysis.cz/forward/forward2.pdf
 Additional material: https://meta-analysis.cz/forward/appendix.pdf
