@@ -7,9 +7,13 @@ this directory is always the version that built the current page.
     build_answer_board.py     the 53 homepage tiles, and folds the 53 result sentences
                               into the collapsed <details> beneath them
     answer_board.json         the only curated text on a tile: a short form of each
-                              paper's published headline, produced by deletion. The
-                              build refuses to run if a value carries a number that its
-                              headline in estimates.csv does not.
+                              paper's published headline -- usually by deletion, sometimes
+                              a light paraphrase or verdict where the headline is prose.
+                              The build refuses to run if a value carries a number that its
+                              headline in estimates.csv does not, so a paraphrase can
+                              rephrase but never introduce or alter a figure. A tile may
+                              also carry its own `tail` where the lay equivalent lives in
+                              the headline rather than the caveat column.
     results_questions.json    the question on each tile and on /results/
     build_zstat_figure.py     the |t| distribution and the 1.96 caliper on /datasets/,
                               plus data/v1/t_distribution.csv
