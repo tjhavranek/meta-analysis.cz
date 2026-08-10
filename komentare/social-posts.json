@@ -1,5 +1,31 @@
 [
   {
+    "date": "2026-08-10",
+    "datetime": "2026-08-10 08:22:32",
+    "url": "https://www.linkedin.com/feed/update/urn%3Ali%3Ashare%3A7492465389231206400",
+    "reshare_with_comment": false,
+    "lang": "en",
+    "images": [
+      "2026-08-10_p1_1.png"
+    ],
+    "image_size": [
+      [
+        696,
+        626
+      ]
+    ],
+    "image_alt": [
+      "Title block and abstract of the paper “Financial Incentives and Performance: A Meta-Analysis of Experiments in Economics” by Petr Cala, Tomas Havranek, Zuzana Irsova, Martina Luskova, Jindrich Matousek and Jiri Novak, in the Journal of Political Economy Microeconomics."
+    ],
+    "comment_links": [
+      "https://www.journals.uchicago.edu/doi/10.1086/743543",
+      "https://meta-analysis.cz/incentives/"
+    ],
+    "slug": "2026-08-10-financial-incentives-and-performance",
+    "anchor": "2026-08-10",
+    "text": "🔎 New in the Journal of Political Economy Microeconomics: a meta-analysis of the effect of financial incentives on performance.\n\nI teach Econ 101, and the first thing I tell students is that economics is all about incentives. Well, financial incentives do not automatically improve performance, at least in economics experiments.\n\nIn fact, the mean effect of financial incentives, corrected for publication bias and p-hacking, is close to zero in most field settings. Why could that be?\n\n1️⃣ First, money could crowd out the enjoyment we otherwise derive from a task (\"intrinsic motivation\"), though our results don't fully support this explanation.\n\n2️⃣ Second, economists like to be original, so they often focus on \"funny,\" unintended effects of incentives in weird settings and at small stakes. That's what we see in a meta-analysis.\n\nDoes that mean financial incentives don't work in practice? One of our referees was late with his report. He (yes, he signed his report) assured us he would have submitted it on time if the journal had offered him a million dollars.\n\nWe shouldn't assume that financial incentives automatically make people more productive. As a rule of thumb, I like Uri Gneezy and Aldo Rustichini's \"pay enough or don't pay at all.\" I also highly recommend Uri's book on incentives, Mixed Signals, for the full picture.\n\n📄 Paper available here: https://www.journals.uchicago.edu/doi/10.1086/743543\n🖥️ One-click replication package available at meta-analysis.cz: https://meta-analysis.cz/incentives/\n\nJoint work with Petr Čala, Tomas Havranek, Martina Lušková, Jindřich Matoušek, and Jiri Novak."
+  },
+  {
     "date": "2026-07-16",
     "datetime": "2026-07-16 16:15:33",
     "url": "https://www.linkedin.com/feed/update/urn%3Ali%3AugcPost%3A7483554931325542401",

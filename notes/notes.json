@@ -60,6 +60,80 @@
   ],
   "notes": [
     {
+      "slug": "financial-incentives-performance",
+      "title": "Do financial incentives improve performance?",
+      "date": "2026-08-10",
+      "summary": "Not reliably. Across 2,193 estimates from 88 economics experiments, the mean effect of financial incentives on performance is close to zero in most field settings once publication bias and p-hacking are corrected for. Laboratory settings and loss framing keep small but significant effects. Published in the Journal of Political Economy Microeconomics.",
+      "topics": [
+        "meta-analysis methods",
+        "economics"
+      ],
+      "keywords": [
+        "financial incentives",
+        "performance",
+        "intrinsic motivation",
+        "motivation crowding",
+        "meta-analysis",
+        "publication bias",
+        "p-hacking",
+        "experimental economics"
+      ],
+      "authors": [
+        {
+          "name": "Petr Cala"
+        },
+        {
+          "name": "Tomas Havranek",
+          "orcid": "https://orcid.org/0000-0002-3158-2539"
+        },
+        {
+          "name": "Zuzana Irsova",
+          "orcid": "https://orcid.org/0000-0002-0753-8124"
+        },
+        {
+          "name": "Martina Luskova"
+        },
+        {
+          "name": "Jindrich Matousek"
+        },
+        {
+          "name": "Jiri Novak"
+        }
+      ],
+      "links": [
+        {
+          "label": "Paper (Journal of Political Economy Microeconomics)",
+          "url": "https://www.journals.uchicago.edu/doi/10.1086/743543"
+        },
+        {
+          "label": "Paper (PDF)",
+          "url": "https://meta-analysis.cz/incentives/incentives.pdf"
+        },
+        {
+          "label": "Project page",
+          "url": "https://meta-analysis.cz/incentives/"
+        },
+        {
+          "label": "Appendix",
+          "url": "https://meta-analysis.cz/incentives/appendix.pdf"
+        },
+        {
+          "label": "Included studies",
+          "url": "https://meta-analysis.cz/incentives/studies.xlsx"
+        },
+        {
+          "label": "Replication package",
+          "url": "https://meta-analysis.cz/incentives/replication.zip"
+        }
+      ],
+      "syndicated": [
+        {
+          "label": "LinkedIn",
+          "url": "https://www.linkedin.com/posts/zuzanairsova_new-in-the-journal-of-political-economy-share-7492465389231206400-ysP5"
+        }
+      ]
+    },
+    {
       "slug": "maer-two-pre-registered-papers",
       "title": "Two new pre-registered papers: outlier decisions in meta-analysis and AI feedback on meta-analyses",
       "date": "2026-07-27",

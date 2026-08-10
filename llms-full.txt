@@ -331,6 +331,7 @@ Abstract: Several central banks have leaned against the wind in the housing mark
 URL: https://meta-analysis.cz/incentives/
 Citation: Petr Cala, Tomas Havranek, Zuzana Irsova, Martina Luskova, Jindrich Matousek, and Jiri Novak (2026), "Financial Incentives and Performance: A Meta-Analysis of Experiments in Economics." Journal of Political Economy Microeconomics, forthcoming.
 Paper: https://meta-analysis.cz/incentives/incentives.pdf
+Published version: https://www.journals.uchicago.edu/doi/10.1086/743543
 Appendix: https://meta-analysis.cz/incentives/appendix.pdf
 Included Studies: https://meta-analysis.cz/incentives/studies.xlsx
 Excluded Studies: https://meta-analysis.cz/incentives/excluded.xlsx

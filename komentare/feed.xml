@@ -6,7 +6,18 @@
     <atom:link href="https://meta-analysis.cz/komentare/feed.xml" rel="self" type="application/rss+xml" />
     <description>Publicistika Tomáše Havránka a Zuzany Havránkové: komentáře pro celostátní média, sloupky pro litomyšlskou Lilii, rozhovory a kratší příspěvky ze sítí, v plném znění.</description>
     <language>cs</language>
-    <lastBuildDate>Mon, 27 Jul 2026 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 10 Aug 2026 00:00:00 +0000</lastBuildDate>
+    <item>
+      <title>🔎 New in the Journal of Political Economy Microeconomics: a meta-analysis of the effect of financial…</title>
+      <link>https://meta-analysis.cz/komentare/posts/2026-08-10-financial-incentives-and-performance/</link>
+      <guid isPermaLink="true">https://meta-analysis.cz/komentare/posts/2026-08-10-financial-incentives-and-performance/</guid>
+      <pubDate>Mon, 10 Aug 2026 00:00:00 +0000</pubDate>
+      <category>Posts (ze sítí)</category>
+      <dc:language>en</dc:language>
+      <source url="https://www.linkedin.com/feed/update/urn%3Ali%3Ashare%3A7492465389231206400">LinkedIn</source>
+      <content:encoded><![CDATA[<p>🔎 New in the Journal of Political Economy Microeconomics: a meta-analysis of the effect of financial incentives on performance.</p><p>I teach Econ 101, and the first thing I tell students is that economics is all about incentives. Well, financial incentives do not automatically improve performance, at least in economics experiments.</p><p>In fact, the mean effect of financial incentives, corrected for publication bias and p-hacking, is close to zero in most field settings. Why could that be?</p><p>1️⃣ First, money could crowd out the enjoyment we otherwise derive from a task (&quot;intrinsic motivation&quot;), though our results don&#x27;t fully support this explanation.</p><p>2️⃣ Second, economists like to be original, so they often focus on &quot;funny,&quot; unintended effects of incentives in weird settings and at small stakes. That&#x27;s what we see in a meta-analysis.</p><p>Does that mean financial incentives don&#x27;t work in practice? One of our referees was late with his report. He (yes, he signed his report) assured us he would have submitted it on time if the journal had offered him a million dollars.</p><p>We shouldn&#x27;t assume that financial incentives automatically make people more productive. As a rule of thumb, I like Uri Gneezy and Aldo Rustichini&#x27;s &quot;pay enough or don&#x27;t pay at all.&quot; I also highly recommend Uri&#x27;s book on incentives, Mixed Signals, for the full picture.</p><p>📄 Paper available here: https://www.journals.uchicago.edu/doi/10.1086/743543
+🖥️ One-click replication package available at meta-analysis.cz: https://meta-analysis.cz/incentives/</p><p>Joint work with Petr Čala, Tomas Havranek, Martina Lušková, Jindřich Matoušek, and Jiri Novak.</p>]]></content:encoded>
+    </item>
     <item>
       <title>Two new pre-registered papers: outlier decisions in meta-analysis and AI feedback on meta-analyses</title>
       <link>https://meta-analysis.cz/komentare/maer-two-pre-registered-papers/</link>

@@ -6,7 +6,49 @@
     <atom:link href="https://meta-analysis.cz/notes/feed.xml" rel="self" type="application/rss+xml" />
     <description>Short, self-contained notes on economics research: methods, tools, findings, and how the work gets done.</description>
     <language>en</language>
-    <lastBuildDate>Mon, 27 Jul 2026 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 10 Aug 2026 00:00:00 +0000</lastBuildDate>
+    <item>
+      <title>Do financial incentives improve performance?</title>
+      <link>https://meta-analysis.cz/notes/financial-incentives-performance/</link>
+      <guid isPermaLink="true">https://meta-analysis.cz/notes/financial-incentives-performance/</guid>
+      <pubDate>Mon, 10 Aug 2026 00:00:00 +0000</pubDate>
+      <description>Not reliably. Across 2,193 estimates from 88 economics experiments, the mean effect of financial incentives on performance is close to zero in most field settings once publication bias and p-hacking are corrected for. Laboratory settings and loss framing keep small but significant effects. Published in the Journal of Political Economy Microeconomics.</description>
+      <content:encoded><![CDATA[<p>
+Not reliably. We collected 2,193 estimates from 88 economics experiments and corrected them for publication bias and p-hacking. The corrected mean effect of financial incentives on performance is close to zero across most field contexts. The paper is now out in the <i>Journal of Political Economy Microeconomics</i>; the replication package runs in one click and is linked in the sidebar.
+</p>
+
+<p>
+We wrote about an earlier stage of this project for VoxEU in 2023, when the sample was 44 studies: <a href="/notes/voxeu-incentives/">How financial incentives affect performance</a>. The published paper is twice that size and adds the correction for p-hacking.
+</p>
+
+<h2>The question</h2>
+
+<p>
+Economists usually model financial incentives as raising effort and therefore performance. It is the first thing many of us teach in Econ 101. Psychologists have long argued the opposite can happen: paying for a task can crowd out the enjoyment that was driving it in the first place. The experimental literature has produced findings on both sides, which is the situation a meta-analysis exists to resolve — provided the literature itself is not distorted.
+</p>
+
+<h2>What we did</h2>
+
+<p>
+We gathered 2,193 estimates from 88 experiments in economics and coded 48 contextual factors for each: the setting, the size of the stake, whether the task was framed as a gain or a loss, laboratory against field, and so on. We then applied recent methods for correcting publication bias and p-hacking rather than taking the published averages at face value.
+</p>
+
+<h2>What we found</h2>
+
+<p>
+After correction, the mean effect is close to zero in most field settings. Two exceptions survive: laboratory settings and loss framing both yield statistically significant effects, but modest ones. Raising financial rewards rarely produces large performance gains in the settings economists have chosen to study.
+</p>
+
+<p>
+Two explanations are worth separating. The first is crowding out of intrinsic motivation, the psychologists' story — our results do not fully support it. The second is a selection effect in what gets studied at all. Economists like to be original, so the literature tilts toward surprising, unintended effects in unusual settings and at small stakes. A meta-analysis of that literature inherits the tilt.
+</p>
+
+<h2>What it does not mean</h2>
+
+<p>
+It does not mean incentives fail in practice. It means the experiments economists run are mostly not testing the cases where incentives would obviously bite. Gneezy and Rustichini's rule of thumb still seems the right one to us: pay enough, or don't pay at all.
+</p>]]></content:encoded>
+    </item>
     <item>
       <title>Two new pre-registered papers: outlier decisions in meta-analysis and AI feedback on meta-analyses</title>
       <link>https://meta-analysis.cz/notes/maer-two-pre-registered-papers/</link>
