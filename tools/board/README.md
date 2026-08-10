@@ -16,6 +16,27 @@ this directory is always the version that built the current page.
     build_estimates.py        estimates.csv and the homepage result sentences
     headline_estimates.json   one quote-grounded record per paper behind those sentences
 
+    inject_estimates.py       replaces the homepage results block; the only step that can
+                              un-build it, which build_answer_board.py needs before it will
+                              run again
+    build_results_page.py     /results/
+    build_datasets_page.py    /datasets/, which inlines the figure fragment
+
 Everything is derived from `estimates.csv` and `data/v1/estimates_harmonised.csv`, both
 published here under CC BY. Nothing on a tile or in a caption is a claim that is not
 also in one of those files.
+
+## These copies do not run in place
+
+They are the exact sources that built the current pages, for reading and auditing. They
+compute their paths from a working tree that has `site/` beside `tools_seo/` and
+`redesign/`, so to actually re-run them, put them back:
+
+    <work>/tools_seo/     build_answer_board.py, answer_board.json, build_zstat_figure.py,
+                          build_estimates.py, headline_estimates.json, inject_estimates.py
+    <work>/redesign/      results_questions.json, build_results_page.py,
+                          build_datasets_page.py
+    <work>/site/          this repository
+
+`build_datasets_page.py` also expects the figure fragment at
+`<work>/redesign/_fragments/zstat_figure.html`, which `build_zstat_figure.py` writes.

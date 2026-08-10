@@ -75,6 +75,7 @@ which is smaller and keeps column types.</p>
 df = pd.read_parquet("https://meta-analysis.cz/data/v1/estimates_harmonised.parquet")</code></pre>
 
 <figure class="zfig-wrap">
+<div class="zfig-scroll">
 <svg viewBox="0 0 640 260" width="100%" role="img" aria-labelledby="zsig-t zsig-d" class="zfig">
 <title id="zsig-t">Distribution of absolute t-statistics across 48,355 estimates</title>
 <desc id="zsig-d">Most estimates sit below the conventional thresholds. In a 0.05-wide window either side of 1.96 there are 499 estimates just below and 614 just above. At 1.645 and 2.576 the count falls as the threshold is crossed.</desc>
@@ -177,7 +178,8 @@ df = pd.read_parquet("https://meta-analysis.cz/data/v1/estimates_harmonised.parq
 <text x="546.00" y="256" text-anchor="middle" class="za">a 0.5-wide caliper, its own scale</text>
 <text x="457.00" y="22" text-anchor="end" class="za">614</text>
 </svg>
-<p class="table-note"><b>Where the estimates fall.</b> Absolute t-statistics for all 48,355 pooled estimates; the panel shows the 81% below 6, and the caliper on the right magnifies half a unit around 1.96. In equal 0.05-wide bins there are <b>499 estimates just below 1.96 and 614 just above</b>, 1.23 times as many. The step is real but modest, and it is specific to that one threshold: at 1.645 the ratio is 0.94 and at 2.576 it is 0.82, so the count falls rather than jumps as those are crossed. Read it as a distributional diagnostic, not as a measurement of p-hacking: selective reporting, specification search and genuinely large effects all leave marks here, and estimates are clustered within studies. The bin counts are in <a href="/data/v1/t_distribution.csv">t_distribution.csv</a>.</p>
+</div>
+<p class="table-note"><b>Where the estimates fall.</b> Absolute t-statistics for all 48,355 pooled estimates; the first panel shows the 81% below 6, and the second panel magnifies half a unit around 1.96 on its own vertical scale. In equal 0.05-wide bins there are <b>499 estimates just below 1.96 and 614 just above</b>, 1.23 times as many. The observed step is modest, and it is specific to that one threshold: at 1.645 the ratio is 0.94 and at 2.576 it is 0.82, so the count falls rather than jumps as those are crossed. Read it as a distributional diagnostic, not as a measurement of p-hacking: selective reporting, specification search and genuinely large effects all leave marks here, and estimates are clustered within studies. The bin counts are in <a href="/data/v1/t_distribution.csv">t_distribution.csv</a>.</p>
 </figure>
 
 <p class="caveat">Raw effect levels are not comparable across literatures. An elasticity, a

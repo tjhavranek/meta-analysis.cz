@@ -330,8 +330,11 @@ table.catalogue li{ margin-bottom:var(--s2); font-size:var(--f-1); line-height:1
   #page{ display:flex; flex-direction:column; }
   #content{ display:contents; }
   #content > .post{ order:1; }
-  #sidebar{ order:2; }
-  #content > .post.estimates{ order:3; }
+  /* the answer board comes BEFORE the sidebar on a phone. It used to sit third, so a
+     reader met the intro, then the by-field index of all 53 papers, then the whole
+     sidebar -- six screenfuls -- before reaching the board that summarises them. */
+  #content > .post.estimates{ order:2; }
+  #sidebar{ order:3; }
   #page > div[style]{ order:9; display:none; }
 }
 @media (max-width:48rem){
@@ -821,20 +824,16 @@ table.catalogue li{ margin-bottom:var(--s2); font-size:var(--f-1); line-height:1
 }
 
 .board .q{ font:400 var(--f-1)/1.45 var(--sans); color:var(--ink-soft); }
-.board .a{ margin-top:auto; font:400 var(--f1)/1.35 var(--serif); color:var(--ink); }
+.board .a{ font:400 var(--f1)/1.35 var(--serif); color:var(--ink); }
+@media (min-width:48rem){ .board .a{ margin-top:auto; } }
 .board .u{ display:block; margin-top:var(--s1);
   font:400 var(--f-2)/1.45 var(--sans); color:var(--ink-soft); }
 
-/* a result the paper itself calls about zero: the value recedes, and a corner
-   mark repeats it. The mark is generated content -- decorative duplication of
-   words already in the tile, so nothing is lost where it is not rendered. */
+/* a result the paper itself calls about zero: the value recedes to soft ink.
+   There used to be an "= 0" corner mark as well; it duplicated the answer a
+   few centimetres below it and its reserved space broke the question's first
+   line, so on a phone it read as a rendering fault rather than a signal. */
 .z .a{ font-size:var(--f0); color:var(--ink-soft); }
-.z .q::before{ content:""; float:right; width:2.5rem; height:1.45em; }
-.z > a::after{
-  content:"\2248 0";
-  position:absolute; top:var(--s2); right:var(--s3);
-  font:600 var(--f-2)/1 var(--sans); letter-spacing:.05em; color:var(--ink-soft);
-}
 
 /* the 53 sentences: collapsed for readers, present for everything else */
 .post.estimates .sentences{
@@ -868,9 +867,18 @@ table.catalogue li{ margin-bottom:var(--s2); font-size:var(--f-1); line-height:1
 .zfig .zl{ font:400 10px var(--sans); fill:var(--ink-soft); }
 .zfig .zl.zk{ font-weight:600; fill:var(--accent); }
 .zfig-wrap .table-note{ margin-top:var(--s3); }
+/* Only the drawing scrolls sideways. The caption used to sit inside the scroller,
+   so swiping the chart dragged the words off the screen -- and the words are what
+   carry the numbers. The gradient is the same swipe affordance the data tables use. */
+.zfig-scroll{ overflow-x:auto; }
 @media (max-width:32rem){
-  /* the caliper panel is unreadable below about 500px; the caption carries the
-     same two counts in words, so hide the graphic rather than shrink it */
   .zfig{ min-width:30rem; }
-  .zfig-wrap{ overflow-x:auto; }
+  .zfig-scroll{
+    background:
+      linear-gradient(to right, var(--paper) 30%, rgba(255,255,255,0)) left / 40px 100% no-repeat,
+      linear-gradient(to left,  var(--paper) 30%, rgba(255,255,255,0)) right / 40px 100% no-repeat,
+      radial-gradient(farthest-side at 0 50%, rgba(0,0,0,.10), transparent) left / 14px 100% no-repeat,
+      radial-gradient(farthest-side at 100% 50%, rgba(0,0,0,.10), transparent) right / 14px 100% no-repeat;
+    background-attachment: local, local, scroll, scroll;
+  }
 }

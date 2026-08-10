@@ -115,8 +115,8 @@ def build(check=False):
 
     p = ['<svg viewBox="0 0 %d %d" width="100%%" role="img" '
          'aria-labelledby="zsig-t zsig-d" class="zfig">' % (W, H),
-         '<title id="zsig-t">Distribution of absolute t-statistics across 48,355 estimates'
-         '</title>',
+         '<title id="zsig-t">Distribution of absolute t-statistics across '
+         f'{total:,} estimates</title>',
          '<desc id="zsig-d">Most estimates sit below the conventional thresholds. In a '
          '0.05-wide window either side of 1.96 there are %d estimates just below and %d '
          'just above. At 1.645 and 2.576 the count falls as the threshold is crossed.'
@@ -190,10 +190,11 @@ def build(check=False):
     lo_r, hi_r = calipers[0][4], calipers[2][4]
     caption = (
         '<p class="table-note"><b>Where the estimates fall.</b> Absolute t-statistics for all '
-        f'{total:,} pooled estimates; the panel shows the {100*shown/total:.0f}% below 6, and '
-        'the caliper on the right magnifies half a unit around 1.96. In equal 0.05-wide bins '
-        f'there are <b>{b} estimates just below 1.96 and {a} just above</b>, '
-        f'{a/b:.2f} times as many. The step is real but modest, and it is specific to that one '
+        f'{total:,} pooled estimates; the first panel shows the {100*shown/total:.0f}% below 6, '
+        'and the second panel magnifies half a unit around 1.96 on its own vertical scale. '
+        f'In equal 0.05-wide bins there are <b>{b} estimates just below 1.96 and {a} just '
+        f'above</b>, {a/b:.2f} times as many. The observed step is modest, and it is specific '
+        'to that one '
         f'threshold: at 1.645 the ratio is {lo_r:.2f} and at 2.576 it is {hi_r:.2f}, so the '
         'count falls rather than jumps as those are crossed. Read it as a distributional '
         'diagnostic, not as a measurement of p-hacking: selective reporting, specification '
@@ -203,7 +204,10 @@ def build(check=False):
 
     os.makedirs(os.path.dirname(FRAG), exist_ok=True)
     open(FRAG, "w", encoding="utf-8", newline="\n").write(
-        '<figure class="zfig-wrap">\n' + "\n".join(p) + "\n" + caption + "\n</figure>\n")
+        # only the drawing scrolls sideways: the caption carries the numbers and must not
+        # be dragged off a phone screen along with the chart
+        '<figure class="zfig-wrap">\n<div class="zfig-scroll">\n'
+        + "\n".join(p) + "\n</div>\n" + caption + "\n</figure>\n")
 
     with open(DATA, "w", encoding="utf-8", newline="") as f:
         w = csv.writer(f)
