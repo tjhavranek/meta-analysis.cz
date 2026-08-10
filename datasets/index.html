@@ -43,11 +43,11 @@
 <p>This catalogue collects 44 estimate-level datasets from the
 empirical meta-analyses on this site, each in a standard format.</p>
 
-<p><b>There are two products here, not one.</b> The <i>archive</i> is the original file behind
+<p><b>There are two products here.</b> The <i>archive</i> is the original file behind
 each paper, converted automatically to CSV and Parquet and published with its codebook and
-DOI. The conversion carries one data sheet per source workbook &mdash; the sheet named in
-<code>datasets.json</code> &mdash; so any other sheet in the original file is not in the CSV or
-Parquet, and no column is independently re-checked. For anything load-bearing, work from the
+DOI. The conversion carries one data sheet per source workbook, the one named in
+<code>datasets.json</code>. Any other sheet in the original file is therefore absent from the
+CSV and the Parquet, and no column is independently re-checked. For anything load-bearing, work from the
 original file. The
 <i>harmonised table</i> pools those datasets into one file with a common set of columns so
 they can be compared across literatures, and it is stable as of version 1.0.0. If you want one paper's data,
@@ -67,16 +67,6 @@ standard error, the sample size, and the characteristics that recur across liter
 literatures contribute one row per impulse-response horizon rather than one per independent
 estimate, so treat a row as an observation and check <code>effect_units</code> and the
 dataset's own notes before assuming independence.</p>
-
-<b class="tool-link"><a href="/data/v1/estimates_harmonised.csv">estimates_harmonised.csv</a></b>
-
-<p class="alt-format">Also as <a href="/data/v1/estimates_harmonised.parquet">Parquet</a>,
-which is smaller and keeps column types.</p>
-
-<pre class="usage"><code>df &lt;- read.csv("https://meta-analysis.cz/data/v1/estimates_harmonised.csv")</code></pre>
-
-<pre class="usage"><code>import pandas as pd
-df = pd.read_parquet("https://meta-analysis.cz/data/v1/estimates_harmonised.parquet")</code></pre>
 
 <figure class="zfig-wrap">
 <div class="zfig-scroll">
@@ -183,8 +173,18 @@ df = pd.read_parquet("https://meta-analysis.cz/data/v1/estimates_harmonised.parq
 <text x="632.00" y="22" text-anchor="end" class="za">614</text>
 </svg>
 </div>
-<p class="table-note"><b>Where the estimates fall.</b> Absolute t-statistics for all 48,355 pooled estimates; the first panel shows the 81% below 6, and the second panel magnifies half a unit around 1.96 on its own vertical scale. In equal 0.05-wide bins ([1.91, 1.96) against [1.96, 2.01), so an estimate reported as exactly 1.96 counts as above) there are <b>499 estimates just below and 614 just above</b>, 1.23 times as many. The observed step is modest, and it is specific to that one threshold: at 1.645 the ratio is 0.94 and at 2.576 it is 0.82, so the count falls rather than jumps as those are crossed. Read it as a distributional diagnostic, not as a measurement of p-hacking: selective reporting, specification search and genuinely large effects all leave marks here, and estimates are clustered within studies. The bin counts are in <a href="/data/v1/t_distribution.csv">t_distribution.csv</a>.</p>
+<p class="table-note"><b>Where the estimates fall.</b> Absolute t-statistics for all 48,355 pooled estimates; the first panel shows the 81% below 6, and the second panel magnifies half a unit around 1.96 on its own vertical scale. In equal 0.05-wide bins ([1.91, 1.96) against [1.96, 2.01), so an estimate reported as exactly 1.96 counts as above) there are <b>499 estimates just below and 614 just above</b>, 1.23 times as many. The observed step is modest, and it is specific to that one threshold: at 1.645 the ratio is 0.94 and at 2.576 it is 0.82, so the count falls as those are crossed instead of jumping. What the picture shows is the shape of the distribution; it does not measure p-hacking. Selective reporting, specification search and genuinely large effects all leave marks here, and estimates are clustered within studies. The bin counts are in <a href="/data/v1/t_distribution.csv">t_distribution.csv</a>.</p>
 </figure>
+
+<b class="tool-link"><a href="/data/v1/estimates_harmonised.csv">estimates_harmonised.csv</a></b>
+
+<p class="alt-format">Also as <a href="/data/v1/estimates_harmonised.parquet">Parquet</a>,
+which is smaller and keeps column types.</p>
+
+<pre class="usage"><code>df &lt;- read.csv("https://meta-analysis.cz/data/v1/estimates_harmonised.csv")</code></pre>
+
+<pre class="usage"><code>import pandas as pd
+df = pd.read_parquet("https://meta-analysis.cz/data/v1/estimates_harmonised.parquet")</code></pre>
 
 <p class="caveat">Raw effect levels are not comparable across literatures. An elasticity, a
 partial correlation and a dollar value per tonne of carbon all sit in the same column;

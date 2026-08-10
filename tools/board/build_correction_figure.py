@@ -303,39 +303,39 @@ def build(check=False):
         'magnitude</i>. <b>Green</b>: larger. '
         + (f'<b>All {len(out)} moved toward zero</b>; ' if len(down) == len(out) else
            f'<b>{len(down)} of the {len(out)}</b> moved toward zero and <b>{n_up}</b> away from '
-           'it; ')
-        + f'the median revision is <b>{med:+.0f}%</b>. '
+           'it. ')
+        + f'The median revision is <b>{med:+.0f}%</b>. '
         + (f'The {n_approx} drawn as rings are approximate pairs. ' if n_approx else '')
-        + 'Vertical position only keeps the dots from overlapping; it carries no meaning.'
+        + 'Vertical position carries no meaning. The dots are stacked only to keep them apart.'
         '<details class="figmethod"><summary>How this figure is built, and which papers it '
         'leaves out</summary>'
         '<p>The index is <i>(|corrected| &minus; |mean|) / |mean|</i>, the same relative revision '
         'as Table 3 of <a href="/conventional_wisdom/">Gechert et al. (2025)</a>, which applies '
         'it to 24 literatures mostly by other researchers.</p>'
-        f'<p><b>The comparator</b> is the paper&rsquo;s own uncorrected mean wherever it states '
-        f'one &mdash; {n_paper} of the {len(out)} do &mdash; and otherwise the average of that '
+        f'<p>The comparator is the paper&rsquo;s own uncorrected mean wherever it states '
+        f'one, which {n_paper} of the {len(out)} do. Otherwise it is the average of that '
         'literature&rsquo;s estimates in the data on this site, winsorised at 1%. The '
-        'paper&rsquo;s own number is preferred for a reason: the harmonised table keeps only '
+        'paper&rsquo;s own number is preferred because the harmonised table keeps only '
         'estimates that '
         'report a usable standard error, so a mean computed from it can rest on a subset of what '
         'the paper analysed.</p>'
-        f'<p><b>If you distrust means</b>: {n_alt} of the {len(out)} comparators are computed '
-        f'here rather than quoted from the paper, and they are winsorised means. Use the median '
+        f'<p>If you distrust means, there is a second reading. {n_alt} of the {len(out)} '
+        f'comparators are computed here instead of quoted from a paper, and those are '
+        f'winsorised means. Use the median '
         f'of those literatures&rsquo; estimates instead and the overall median revision becomes '
         f'{alt_med:+.0f}%'
         + (f', with the number moving upward unchanged at {n_up}. ' if alt_up == n_up else
            f', and {alt_up} of the {len(out)} move upward rather than {n_up}. ')
         + 'The swap is confined to those rows on purpose: where a paper states its own mean, its '
         'corrected value need not be in the same units as the estimate column at all, so a '
-        'median taken from that column would not be a comparator. It is a sensitivity check on '
-        'the estimates this site holds, not a matched alternative denominator &mdash; the '
-        'harmonised table keeps only estimates that report a usable standard error.</p>'
+        'median taken from that column would not be a comparator. The check covers only the '
+        'estimates this site holds, under the same standard-error selection.</p>'
         + (f'<p><b>The {n_approx} rings</b> are pairs that are approximate in a stated way: '
            + ", ".join(TIER_WORDS[t] + f" ({tier_counts[t]})" for t in TIER_ORDER
                        if tier_counts.get(t))
            + '. Hover a ring and it says which.</p>' if n_approx else '')
         + f'<p><b>{len(out)} of the {n_all} papers qualify.</b> Of the other {n_all - len(out)}, '
-        f'{n_nolit} have no single literature effect to correct &mdash; methods papers, an '
+        f'{n_nolit} have no single literature effect to correct: methods papers, an '
         'experiment, and the review that supplies the companion figure. The rest answer in words '
         'rather than a number, or measure the corrected effect as a different quantity from the '
         'one their estimate-level data holds, or give a headline that is not a correction at '
@@ -344,8 +344,8 @@ def build(check=False):
         'The rule takes no account of which way a paper moved, and every one of those '
         f'{n_all - len(out)} is written down with its reason, individually, in '
         '<a href="/tools/board/correction_ratios.json">correction_ratios.json</a>.</p>'
-        '<p>Most of these papers correct with estimators that shrink toward zero, so the '
-        'direction is not a discovery; the size of the move is the point.</p>'
+        '<p>Most of these papers correct with estimators that shrink toward zero. What the figure '
+        'adds is the size of each move.</p>'
         '</details></figcaption>')
 
     os.makedirs(os.path.dirname(FRAG), exist_ok=True)

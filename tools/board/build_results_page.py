@@ -319,14 +319,12 @@ publication-bias-corrected number, that is the one shown.</p>
 {strip}
 
 <p class="r-updated">Figures last assembled {BUILD_DATE}. Each is the paper's own headline
-result; the paper's page carries the full abstract, and the data and code
-where they exist.</p>
+result. The paper's own page carries the rest.</p>
 
 <p><b>Read the caveat before you reuse a number.</b> Definitions, samples and units differ
-across literatures, and a corrected mean is not a law of nature. The paper's own page carries
-the full abstract, and the data and code where they exist; the figure here is a
-summary of it, not a substitute
-for it. The same table is available as a spreadsheet:
+across literatures, and a corrected mean is still an estimate. The paper's own page carries
+the full abstract, and the data and code where they exist. Read it there when the number
+matters. The same table is available as a spreadsheet:
 <a href="/estimates.csv">estimates.csv</a>, which also carries the sentence in the paper each
 figure came from.</p>
 

@@ -200,10 +200,10 @@ def build(check=False):
         f'above</b>, {a/b:.2f} times as many. The observed step is modest, and it is specific '
         'to that one '
         f'threshold: at 1.645 the ratio is {lo_r:.2f} and at 2.576 it is {hi_r:.2f}, so the '
-        'count falls rather than jumps as those are crossed. Read it as a distributional '
-        'diagnostic, not as a measurement of p-hacking: selective reporting, specification '
-        'search and genuinely large effects all leave marks here, and estimates are clustered '
-        'within studies. The bin counts are in '
+        'count falls as those are crossed instead of jumping. What the picture shows is the '
+        'shape of the distribution; it does not measure p-hacking. Selective reporting, '
+        'specification search and genuinely large effects all leave marks here, and '
+        'estimates are clustered within studies. The bin counts are in '
         '<a href="/data/v1/t_distribution.csv">t_distribution.csv</a>.</p>')
 
     os.makedirs(os.path.dirname(FRAG), exist_ok=True)

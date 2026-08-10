@@ -70,10 +70,10 @@ def main():
     tiles = 0
     out = [START, '\t\t<div class="entry">',
            '<p>One tile per paper: the question it asks and the answer it gives, at the '
-           'precision the paper reports. The units differ from tile to tile — an '
-           'elasticity, a percentage, a number of months — so the numbers are not '
-           'comparable with one another, and definitions and samples differ too; check the '
-           'source before reusing one. The same results run as full sentences below, on '
+           'precision the paper reports. Units differ from tile to tile, so the numbers do '
+           'not compare with one another, and neither do the definitions and samples behind '
+           'them. Look at the source first. The same results run as full '
+           'sentences below, on '
            '<a href="/results/"><b>one searchable page</b></a>, and as a spreadsheet: '
            '<a href="https://meta-analysis.cz/estimates.csv">estimates.csv</a>.</p>']
 

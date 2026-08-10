@@ -203,11 +203,11 @@ def build():
 <p>This catalogue collects {counts['count_datasets']} estimate-level datasets from the
 empirical meta-analyses on this site, each in a standard format.</p>
 
-<p><b>There are two products here, not one.</b> The <i>archive</i> is the original file behind
+<p><b>There are two products here.</b> The <i>archive</i> is the original file behind
 each paper, converted automatically to CSV and Parquet and published with its codebook and
-DOI. The conversion carries one data sheet per source workbook &mdash; the sheet named in
-<code>datasets.json</code> &mdash; so any other sheet in the original file is not in the CSV or
-Parquet, and no column is independently re-checked. For anything load-bearing, work from the
+DOI. The conversion carries one data sheet per source workbook, the one named in
+<code>datasets.json</code>. Any other sheet in the original file is therefore absent from the
+CSV and the Parquet, and no column is independently re-checked. For anything load-bearing, work from the
 original file. The
 <i>harmonised table</i> pools those datasets into one file with a common set of columns so
 they can be compared across literatures{harmonised_maturity}. If you want one paper's data,
@@ -228,6 +228,8 @@ literatures contribute one row per impulse-response horizon rather than one per 
 estimate, so treat a row as an observation and check <code>effect_units</code> and the
 dataset's own notes before assuming independence.</p>
 
+{zfig}
+
 <b class="tool-link"><a href="/data/v1/estimates_harmonised.csv">estimates_harmonised.csv</a></b>
 
 <p class="alt-format">Also as <a href="/data/v1/estimates_harmonised.parquet">Parquet</a>,
@@ -237,8 +239,6 @@ which is smaller and keeps column types.</p>
 
 <pre class="usage"><code>import pandas as pd
 df = pd.read_parquet("https://meta-analysis.cz/data/v1/estimates_harmonised.parquet")</code></pre>
-
-{zfig}
 
 <p class="caveat">Raw effect levels are not comparable across literatures. An elasticity, a
 partial correlation and a dollar value per tonne of carbon all sit in the same column;
