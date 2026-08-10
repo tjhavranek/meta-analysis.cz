@@ -1,4 +1,4 @@
-"""Draw the research-revision figure for /results/ from Gechert et al. (2025), Tables 2 and 3.
+"""Draw the research-revision figure for /conventional_wisdom/ from that paper's Tables 2 and 3.
 
 The question the owner kept asking -- when a meta-analysis corrects for bias, how far does
 the number move from what the field believed? -- cannot be answered from this site's own
@@ -11,12 +11,15 @@ So the figure plots the paper's numbers, not ours. Nothing is recomputed and not
 pooled. The build asserts the medians of all three published indices before it will write,
 which is what catches a transcription slip.
 
-It replaces the "how many answers are about zero" strip, which said something true but weak
-and which the owner could not parse.
+It lives on the paper's own page and nowhere else. It spent one commit on /results/, under
+a heading that said "Headline results from 54 papers", and that was a real error: 20 of the
+24 bars are other researchers' meta-analyses, so on a page of HIS results the figure read
+as a claim on all of them. Anything that moves it back belongs on this page too.
 
     python tools_seo/build_revision_figure.py [--check]
 
-Writes redesign/_fragments/revision_figure.html, inlined by redesign/build_results_page.py.
+Writes redesign/_fragments/revision_figure.html and inlines it between the
+revision-figure markers in site/conventional_wisdom/index.html.
 """
 import json, os, statistics, sys
 
@@ -45,7 +48,7 @@ def build(check=False):
     FLOOR = -100                       # bars are capped here; past it the sign flipped
 
     LW, BW, RH, TOP = 340, 150, 19, 26     # label, bar area, row height, header
-    H = TOP + RH * len(rows) + 20
+    H = TOP + RH * len(rows) + 40          # the last 20px carry the source credit
     W = LW + BW + 34
     zero = LW + 26                      # x of the zero line; the gap is what a
                                     # leftward (green) bar needs, or it paints
@@ -80,8 +83,13 @@ def build(check=False):
             x, fill = zero - w, "var(--rv-up)"
         else:
             x, fill = zero, "var(--rule)"
-        title = (f'{r["topic"]}. {r["study"]}: conventional wisdom {r["cw"]:g}, '
-                 f'corrected {r["corrected"]:g}. '
+        # Name the two numbers' owners separately. The old wording -- "Study X:
+        # conventional wisdom N, corrected M" -- read as if the meta-analysts held the
+        # conventional wisdom. They do not: the CW number belongs to a different,
+        # earlier, seminal study, which is the paper's whole point.
+        title = (f'{r["topic"]}. Meta-analysis: {r["study"]}, corrected mean '
+                 f'{r["corrected"]:g}. Conventional wisdom of the seminal study named in '
+                 f'the paper’s Table 2: {r["cw"]:g}. '
                  + ("The corrected estimate has the opposite sign."
                     if flipped else f'{v:+g}% revision.'))
         p.append(f'<g><title>{E(title)}</title>')
@@ -95,19 +103,32 @@ def build(check=False):
             p.append(f'<text x="{zero + BW - 5}" y="{y + 13}" text-anchor="end" '
                      f'class="ra rv-flip">sign flip</text>')
         p.append("</g>")
+    # A credit inside the frame, not only in the caption: the image gets screenshotted and
+    # reposted, and 20 of these 24 meta-analyses are other researchers' work.
+    p.append(f'<text x="{LW}" y="{TOP + RH*len(rows) + 22}" text-anchor="end" class="ra">'
+             f'24 meta-analyses reviewed in Gechert et al. (2025), J Econ Surveys'
+             f'</text>')
+    p.append(f'<text x="{zero + BW}" y="{TOP + RH*len(rows) + 22}" text-anchor="end" '
+             f'class="ra">meta-analysis.cz</text>')
     p.append("</svg>")
 
     med = src["published_median"]
+    # Derived, never typed: an earlier build said "three of the 24 are his" and was wrong
+    # by one, because the count lived in the caption string instead of in the data.
+    mine = sum(1 for r in rows if r["havranek"])
+    NUM = {3: "Three", 4: "Four", 5: "Five", 6: "Six"}
     caption = (
         '<figcaption class="table-note"><b>What correcting for bias does to a number.</b> '
         'Each bar is one of the 24 meta-analyses reviewed in this paper, <b>almost all of '
-        'them by other researchers</b> — three of the 24 are Havránek&rsquo;s own. Each '
+        f'them by other researchers</b> &mdash; {NUM[mine].lower()} of the 24 are '
+        'Havránek&rsquo;s own. Each '
         'compares that meta-analysis&rsquo;s corrected or best-practice mean with the conventional '
         'wisdom of the seminal study named in the paper&rsquo;s Table 2. '
         '<b>Red</b>: the corrected effect is smaller <i>in absolute magnitude</i> than the '
         'field believed. <b>Green</b>: larger. Two of them &mdash; the minimum wage and '
         'gender differences in response to performance pay &mdash; came out with the '
-        'opposite sign, so their bars run past the end. The median revision is '
+        'opposite sign, and revised by more than 100%, so their bars are capped at the end '
+        'of the scale and marked <i>sign flip</i>. The median revision is '
         f'<b>{med["r3_seminal"]}%</b> against the seminal '
         f'study, {med["r3_ai"]}% against an AI\'s summary of the prior literature, and '
         f'{med["r3_meta"]}% against the literature\'s own simple mean. '

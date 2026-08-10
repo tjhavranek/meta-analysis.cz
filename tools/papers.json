@@ -2051,6 +2051,7 @@
   "figure": null,
   "has_meta_description": true,
   "meta_keywords": "conventional wisdom, meta-analysis, systematic review, publication bias, research revision, effect size, economics",
-  "one_line": "A systematic review of influential economics meta-analyses against the conventional wisdom they tested: after correcting for observable biases, effects are typically much closer to zero and sometimes switch sign, with a relative reduction of 45-60%."
+  "one_line": "A systematic review of influential economics meta-analyses against the conventional wisdom they tested: after correcting for observable biases, effects are typically much closer to zero and sometimes switch sign, with a relative reduction of 45-60%.",
+  "article_license": "https://creativecommons.org/licenses/by-nc-nd/4.0/"
  }
 ]

@@ -1,5 +1,5 @@
 {
- "_readme": "Tables 2 and 3 of Gechert, Mey, Opatrny, Havranek, Stanley, Bom, Doucouliagos, Heimberger, Irsova and Rachinger (2025), 'Conventional wisdom, meta-analysis, and research revision in economics', Journal of Economic Surveys 39, 980-999, doi 10.1111/joes.12630, open access. Transcribed verbatim from the published PDF at site/conventional_wisdom/conventional_wisdom.pdf: `cw` is Table 2 column (3), the seminal study's quantitative conventional wisdom; `simple_mean` is column (5); `corrected` is column (6); `r3_seminal`, `r3_ai` and `r3_meta` are the three relative-research-revision indices of Table 3. `topic` is a short label written from that row's qualitative description in Table 2 column (2) -- it is the only text here that is not the paper's own. Nothing is recomputed: the build asserts the medians it prints against the paper's published medians of -62%, -60% and -50%.",
+ "_readme": "Tables 2 and 3 of Gechert, Mey, Opatrny, Havranek, Stanley, Bom, Doucouliagos, Heimberger, Irsova and Rachinger (2025), 'Conventional wisdom, meta-analysis, and research revision in economics', Journal of Economic Surveys 39, 980-999, doi 10.1111/joes.12630, open access. Transcribed verbatim from the published PDF at site/conventional_wisdom/conventional_wisdom.pdf: `cw` is Table 2 column (3), the seminal study's quantitative conventional wisdom; `simple_mean` is column (5); `corrected` is column (6); `r3_seminal`, `r3_ai` and `r3_meta` are the three relative-research-revision indices of Table 3. `havranek` marks the four rows he co-authored, checked against the paper's own reference list (Gechert/Havranek/Irsova/Kolcunova 2022; Havranek & Irsova 2011; Havranek 2015; Havranek/Irsova/Laslopova/Zeynalova 2022) -- the caption's count is derived from it, never typed. `topic` is a short label written from that row's qualitative description in Table 2 column (2) -- it is the only text here that is not the paper's own. Nothing is recomputed: the build asserts the medians it prints against the paper's published medians of -62%, -60% and -50%.",
  "source": {
   "citation": "Gechert, Mey, Opatrny, Havranek, Stanley, Bom, Doucouliagos, Heimberger, Irsova, Rachinger (2025), “Conventional wisdom, meta-analysis, and research revision in economics.” Journal of Economic Surveys 39, 980–999.",
   "doi": "https://doi.org/10.1111/joes.12630",
@@ -25,7 +25,8 @@
    "corrected": 0.3,
    "r3_seminal": -85,
    "r3_ai": -85,
-   "r3_meta": -93
+   "r3_meta": -93,
+   "havranek": false
   },
   {
    "study": "Ashenfelter et al. (1999)",
@@ -35,7 +36,8 @@
    "corrected": 0.07,
    "r3_seminal": -24,
    "r3_ai": -24,
-   "r3_meta": -7
+   "r3_meta": -7,
+   "havranek": false
   },
   {
    "study": "Bandiera et al. (2021)",
@@ -45,7 +47,8 @@
    "corrected": 0.07,
    "r3_seminal": -124,
    "r3_ai": null,
-   "r3_meta": -18
+   "r3_meta": -18,
+   "havranek": false
   },
   {
    "study": "Bom and Ligthart (2014)",
@@ -55,7 +58,8 @@
    "corrected": 0.11,
    "r3_seminal": -73,
    "r3_ai": -39,
-   "r3_meta": -44
+   "r3_meta": -44,
+   "havranek": false
   },
   {
    "study": "Disdier and Head (2008)",
@@ -65,7 +69,8 @@
    "corrected": 0.8,
    "r3_seminal": -38,
    "r3_ai": -16,
-   "r3_meta": -12
+   "r3_meta": -12,
+   "havranek": false
   },
   {
    "study": "Doucouliagos and Stanley (2009)",
@@ -75,7 +80,8 @@
    "corrected": 0.04,
    "r3_seminal": -155,
    "r3_ai": -141,
-   "r3_meta": -122
+   "r3_meta": -122,
+   "havranek": false
   },
   {
    "study": "Doucouliagos et al. (2012)",
@@ -85,7 +91,8 @@
    "corrected": 1.66,
    "r3_seminal": -57,
    "r3_ai": -72,
-   "r3_meta": -83
+   "r3_meta": -83,
+   "havranek": false
   },
   {
    "study": "Feld and Heckemeyer (2011)",
@@ -95,7 +102,8 @@
    "corrected": 1.74,
    "r3_seminal": -64,
    "r3_ai": -31,
-   "r3_meta": -48
+   "r3_meta": -48,
+   "havranek": false
   },
   {
    "study": "Fidrmuc and Korhonen (2006)",
@@ -105,7 +113,8 @@
    "corrected": 0.16,
    "r3_seminal": -73,
    "r3_ai": -73,
-   "r3_meta": 6
+   "r3_meta": 6,
+   "havranek": false
   },
   {
    "study": "Gechert (2015)",
@@ -115,7 +124,8 @@
    "corrected": 0.61,
    "r3_seminal": -75,
    "r3_ai": -6,
-   "r3_meta": 13
+   "r3_meta": 13,
+   "havranek": false
   },
   {
    "study": "Gechert et al. (2022)",
@@ -125,7 +135,8 @@
    "corrected": 0.3,
    "r3_seminal": -60,
    "r3_ai": -68,
-   "r3_meta": -67
+   "r3_meta": -67,
+   "havranek": true
   },
   {
    "study": "Havranek and Irsova (2011)",
@@ -135,7 +146,8 @@
    "corrected": 0.18,
    "r3_seminal": -53,
    "r3_ai": -76,
-   "r3_meta": -80
+   "r3_meta": -80,
+   "havranek": true
   },
   {
    "study": "Havranek (2015)",
@@ -145,7 +157,8 @@
    "corrected": 0.07,
    "r3_seminal": -85,
    "r3_ai": -79,
-   "r3_meta": -85
+   "r3_meta": -85,
+   "havranek": true
   },
   {
    "study": "Havranek et al. (2022)",
@@ -155,7 +168,8 @@
    "corrected": -0.27,
    "r3_seminal": -60,
    "r3_ai": -53,
-   "r3_meta": -51
+   "r3_meta": -51,
+   "havranek": true
   },
   {
    "study": "Imai et al. (2021)",
@@ -165,7 +179,8 @@
    "corrected": 0.01,
    "r3_seminal": -83,
    "r3_ai": -94,
-   "r3_meta": -72
+   "r3_meta": -72,
+   "havranek": false
   },
   {
    "study": "Kaiser et al. (2022)",
@@ -175,7 +190,8 @@
    "corrected": 0.13,
    "r3_seminal": -43,
    "r3_ai": -36,
-   "r3_meta": -32
+   "r3_meta": -32,
+   "havranek": false
   },
   {
    "study": "Koetse et al. (2008)",
@@ -185,7 +201,8 @@
    "corrected": 0.46,
    "r3_seminal": 7,
    "r3_ai": -8,
-   "r3_meta": -2
+   "r3_meta": -2,
+   "havranek": false
   },
   {
    "study": "Labandeira et al. (2017)",
@@ -195,7 +212,8 @@
    "corrected": -0.53,
    "r3_seminal": -34,
    "r3_ai": -25,
-   "r3_meta": 0
+   "r3_meta": 0,
+   "havranek": false
   },
   {
    "study": "Longhi et al. (2005)",
@@ -205,7 +223,8 @@
    "corrected": -0.04,
    "r3_seminal": -72,
    "r3_ai": -72,
-   "r3_meta": -64
+   "r3_meta": -64,
+   "havranek": false
   },
   {
    "study": "Melo et al. (2009)",
@@ -215,7 +234,8 @@
    "corrected": 0.04,
    "r3_seminal": -35,
    "r3_ai": 11,
-   "r3_meta": -33
+   "r3_meta": -33,
+   "havranek": false
   },
   {
    "study": "Nijkamp and Poot (2005)",
@@ -225,7 +245,8 @@
    "corrected": -0.08,
    "r3_seminal": -23,
    "r3_ai": -23,
-   "r3_meta": -35
+   "r3_meta": -35,
+   "havranek": false
   },
   {
    "study": "Reynaud and Lanzanova (2017)",
@@ -235,7 +256,8 @@
    "corrected": 153,
    "r3_seminal": 0,
    "r3_ai": null,
-   "r3_meta": -51
+   "r3_meta": -51,
+   "havranek": false
   },
   {
    "study": "Rose and Stanley (2005)",
@@ -245,7 +267,8 @@
    "corrected": 0.39,
    "r3_seminal": -68,
    "r3_ai": -67,
-   "r3_meta": -55
+   "r3_meta": -55,
+   "havranek": false
   },
   {
    "study": "Vooren et al. (2019)",
@@ -255,7 +278,8 @@
    "corrected": 0.004,
    "r3_seminal": -87,
    "r3_ai": -96,
-   "r3_meta": -80
+   "r3_meta": -80,
+   "havranek": false
   }
  ]
 }
