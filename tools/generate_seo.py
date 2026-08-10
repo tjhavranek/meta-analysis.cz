@@ -12,7 +12,7 @@
 # abstract, menu links, figure) and included in sitemap/llms.txt, but gets no
 # Highwire tags until papers.json is enriched — the script then exits 1 so CI
 # turns red and the owner knows to ask their AI assistant to add the entry.
-import json, os, re, sys, datetime, html, subprocess, urllib.parse
+import json, os, re, sys, datetime, hashlib, html, subprocess, urllib.parse
 
 HERE = os.path.dirname(os.path.abspath(__file__))
 SITE = os.environ.get("SEO_SITE_DIR", os.path.dirname(HERE))
@@ -253,7 +253,14 @@ def build_jsonld(m):
            # The sibling Dataset node has carried a license since the CC BY decision, but this
            # one did not, so a crawler reading the PAPER saw no rights at all on 51 of 51 pages.
            # The whole point of the CC BY declaration is that a machine never has to wonder.
-           "license": "https://creativecommons.org/licenses/by/4.0/"}
+           #
+           # CC BY 4.0 is the owner's decision for HIS material, and it is the right default.
+           # It is not his to declare for a publisher's typeset OA copy hosted here under the
+           # journal's own terms: conventional_wisdom.pdf is Wiley's version of record, marked
+           # CC BY-NC-ND on its first page, with nine other copyright holders. So the default
+           # stands and papers.json may override it per paper.
+           "license": m.get("article_license")
+                      or "https://creativecommons.org/licenses/by/4.0/"}
     if authors:
         art["author"] = authors
     if m["year"]:
@@ -469,8 +476,8 @@ def main():
             s = metas[proj]
             m = dict(base)   # title/abstract/menu/figure/keywords from CURRENT page
             for k in ("authors", "journal", "one_line", "doi_or_publisher_url",
-                      "dataset_doi", "dataset_license", "license", "citation_title",
-                      "pending_files"):
+                      "dataset_doi", "dataset_license", "license", "article_license",
+                      "citation_title", "pending_files"):
                 if s.get(k):
                     m[k] = s[k]
             if not m["abstract"] or len(m["abstract"]) < 80:
@@ -641,6 +648,7 @@ def main():
     lastmod = lambda rel: gd.get(rel.replace(os.sep, "/"), TODAY)
     urls = [(BASE + "/", lastmod("index.html"))]
     urls += [(f"{BASE}/{p}/", lastmod(f"{p}/index.html")) for p in projects]
+    pdf_rels = []
     for dp, dns, fns in os.walk(SITE):
         rel_dir = os.path.relpath(dp, SITE).replace(os.sep, "/")
         top = rel_dir.split("/")[0]
@@ -652,7 +660,33 @@ def main():
         for fn in sorted(fns):
             if fn.lower().endswith(".pdf"):
                 rel = fn if rel_dir == "." else f"{rel_dir}/{fn}"
+                pdf_rels.append(rel)
                 urls.append((BASE + urllib.parse.quote("/" + rel), lastmod(rel)))
+    # A legacy root-level PDF that is byte-identical to one inside a paper folder is the
+    # same document under two URLs, and listing both splits the indexing and citation
+    # signals between them. /inflation2.pdf is /conventional_wisdom/conventional_wisdom.pdf.
+    # The file stays on disk so old inbound links keep resolving; only the sitemap entry
+    # goes, so crawlers are pointed at the canonical path.
+    by_hash = {}
+    for rel in pdf_rels:
+        try:
+            h = hashlib.sha1(open(os.path.join(SITE, rel), "rb").read()).hexdigest()
+        except OSError:
+            continue
+        by_hash.setdefault(h, []).append(rel)
+    dropped = set()
+    for h, rels in by_hash.items():
+        if len(rels) < 2:
+            continue
+        # the canonical copy is the one that lives beside its paper page
+        canon = sorted(rels, key=lambda r: ("/" not in r, r))[0]
+        for r in rels:
+            if r != canon and "/" not in r:
+                dropped.add(BASE + urllib.parse.quote("/" + r))
+                NOTES.append(f"sitemap: /{r} omitted, byte-identical to /{canon}; "
+                             f"the file itself is kept so old links still resolve")
+    if dropped:
+        urls = [u for u in urls if u[0] not in dropped]
     # self-managed sections: list every page they generate, so the sitemap stays
     # the single authoritative index even though their metadata is written elsewhere
     for sec in sorted(SELF_MANAGED):
@@ -758,10 +792,18 @@ def main():
             lf.append(f"Citation: {m['reference_line']}")
         elif m["authors"]:
             lf.append(f"Authors: {', '.join(m['authors'])}")
+        # One "Published version:" per entry. The page menu usually carries a link with that
+        # same label, so emitting both put the key in twice -- once as the DOI and once as the
+        # publisher's own URL -- and a flat key:value format read by a machine has no way to
+        # tell which is meant. The DOI form wins; the menu's copy is dropped.
+        emitted_labels = set()
         if m["doi_or_publisher_url"]:
             lf.append(f"Published version: {m['doi_or_publisher_url']}")
+            emitted_labels.add("published version")
         lf += [f"{l['label']}: {absurl(p, l['href'])}" for l in m["menu_links"]
-               if l["href"].startswith(("http://", "https://")) or local_exists(p, l["href"])]
+               if (l["href"].startswith(("http://", "https://"))
+                   or local_exists(p, l["href"]))
+               and l["label"].strip().lower() not in emitted_labels]
         # body tool links, not already listed in the menu
         seen_hrefs = {l["href"] for l in m["menu_links"]}
         lf += [f"{t['label']}: {t['href']}" for t in (m.get("tool_links") or [])
