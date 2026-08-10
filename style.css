@@ -433,17 +433,33 @@ table.catalogue li{ margin-bottom:var(--s2); font-size:var(--f-1); line-height:1
 /* The three flagship links measured 17px -- exactly body size -- so the site's three crown
    products read as ordinary paragraphs. The accent bar is A's OWN device, reused from the
    paper-page headline result, rather than a new one imported from D/E/F. */
-#content > .post > .entry > p:has(> br){
+#content > .post > .entry > p:has(> br):not(.fieldnav){
   border-left:3px solid var(--accent);
   padding-left:var(--s4);
   margin:var(--s5) 0;
 }
-#content > .post > .entry > p:has(> br) > a{
+/* "Browse by field" is navigation for the board underneath it, not a fourth flagship. It
+   carries a <br>, so it was picking up the accent bar meant for MAIVE, EasyMeta and the
+   Guide -- which made three promotions read as a list of four equal things and cost each of
+   them a third of its weight. It gets its own quieter treatment: a rule ABOVE it, tying it
+   to the tiles that follow rather than to the crown above. */
+.fieldnav{
+  border-top:1px solid var(--rule);
+  padding-top:var(--s3);
+  margin:var(--s5) 0 var(--s3);
+  font:400 var(--f-1)/1.6 var(--sans);
+  color:var(--ink-soft);
+}
+.fieldnav b{ color:var(--ink); }
+.fieldnav a{ white-space:nowrap; font-size:inherit; }
+/* the trailing sentence is the board's own caption; it must not outshout the links */
+.fieldnav > b:last-of-type, .fieldnav a[href="/results/"] b{ font-weight:600; }
+#content > .post > .entry > p:has(> br):not(.fieldnav) > a{
   font-size:var(--f1);            /* 20px: one step above body, below the page title */
   line-height:1.4;
 }
 @media print{
-  #content > .post > .entry > p:has(> br){ border-left:0; padding-left:0; }
+  #content > .post > .entry > p:has(> br):not(.fieldnav){ border-left:0; padding-left:0; }
 }
 /* The phone crown cost 269px on the homepage and 331px on /maive/ -- 39% of the viewport
    before a word of content. Desktop is deliberately untouched: the tall slate crown with the
@@ -920,3 +936,20 @@ table.catalogue li{ margin-bottom:var(--s2); font-size:var(--f-1); line-height:1
 .rvfig g:hover rect{ opacity:.82; }
 .rvfig-wrap .table-note{ margin-top:var(--s3); }
 @media (max-width:34rem){ .rvfig{ min-width:32rem; } }
+
+/* ---- /results/: what best practice did to the number -------------------------- */
+/* Same two hues as the revision figure on /conventional_wisdom/, on purpose: the two
+   figures apply the same index, one to his own literatures and one to 24 mostly other
+   people's, and a reader who sees both should recognise the second. */
+.cfig-wrap{ margin:var(--s5) 0; }
+.cfig{ display:block; max-width:100%; height:auto; overflow:visible; }
+.cfig a{ text-decoration:none; }
+.cfig circle{ transition:r .12s ease; }
+.cfig a:hover circle, .cfig a:focus circle{ r:15; }
+.cfig .cfl{ font:600 12px/1 var(--sans); fill:var(--ink); }
+.cfig .cfa{ font:400 11px/1 var(--sans); fill:var(--ink-soft);
+  letter-spacing:.02em; text-transform:uppercase; }
+@media (max-width:640px){
+  .cfig .cfl{ font-size:11px; }
+  .cfig .cfa{ font-size:10px; }
+}

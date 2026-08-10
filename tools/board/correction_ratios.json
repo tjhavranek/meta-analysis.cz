@@ -1,0 +1,386 @@
+{
+ "_readme": "One row per paper on meta-analysis.cz whose own headline states a SINGLE bias-corrected or best-practice value in the SAME units as that literature's estimate-level `effect` column. `corrected` is that value, read off the paper; `corrected_quote` is the sentence it comes from, verbatim from estimates.csv `source_quote`. `mean` is what the reported estimates average to: the paper's own stated simple mean where it gives one (preferred -- it is the published comparator and the authors chose it), otherwise the 1%-winsorised mean of that literature's `effect` column in site/data/v1/estimates_harmonised.csv, computed by build_correction_figure.py and never typed here. The revision is (|corrected| - |mean|) / |mean|, the same relative index as Table 3 of Gechert et al. (2025), which is his own paper. The rule is DIRECTION-BLIND and was rewritten to be so after an adversarial review; see `rule.direction_blind`. Exclusions are listed with their reason and are part of the record: the figure's caption states how many papers qualified and why the rest did not.",
+ "rule": {
+  "include": "the paper states, in its own words, a single corrected or best-practice value for its whole literature, AND a comparator in the same units: either its own uncorrected/reported mean, or a value commensurate with its estimate-level effect column",
+  "comparator": "the paper's own stated mean if it states one -- it is the published comparator and the authors chose it -- otherwise the 1%-winsorised mean of the estimate-level data",
+  "exclude": "ranges, several values for different horizons or subsamples, narrative answers, a different estimand (a peak response against an average, a conditional prediction at sample maxima), units that do not match, a headline value that is not itself a correction, and any case where two defensible comparators disagree about the DIRECTION",
+  "direction_blind": "The rule was rewritten after an adversarial review found that every paper whose correction moved the number AWAY from zero had landed in the excluded set. Nothing in the rule refers to the sign of the revision, and `migrant` (+31%) and `armington` (+152%) are in the figure because the rule admits them, not despite it. If a future paper moves up, it appears.",
+  "verbal_zero": "A paper that says its corrected effect is 'about zero', 'negligible' or 'insignificant' without giving a number does NOT enter as 0. Coding a verbal hedge as an exact zero forces exactly -100% and would have put four such papers at the extreme of the figure. Insignificance is not a point estimate."
+ },
+ "rows": [
+  {
+   "project": "dst",
+   "corrected": -0.01,
+   "mean": -0.34,
+   "mean_from": "paper",
+   "corrected_quote": "The resulting global estimate is -0.01%, quite distant from -0.34%, the simple average effect reported in the literature.",
+   "note": "the paper states both numbers in one sentence"
+  },
+  {
+   "project": "excess_sensitivity",
+   "corrected": 0.11,
+   "mean": 0.37,
+   "mean_from": "paper",
+   "corrected_quote": "When corrected for the bias due to aggregation and the bias due to publication selection, the literature yields a mean excess sensitivity of merely 0.11.",
+   "note": "the headline itself carries the comparator: '0.11, against a mean reported estimate of 0.37'"
+  },
+  {
+   "project": "sigma",
+   "corrected": 0.3,
+   "mean": 0.9,
+   "mean_from": "paper",
+   "corrected_quote": "The mean elasticity conditional on the absence of publication bias, disaggregated data, and inclusion of information from the first-order condition for capital is 0.3.",
+   "note": "the caveat column states the comparator: 'the mean reported estimate is 0.9'. The winsorised mean of the shipped data is 0.66; the paper's own number is used."
+  },
+  {
+   "project": "discrate",
+   "corrected": 0.33,
+   "mean": 0.8,
+   "mean_from": "paper",
+   "corrected_quote": "The corrected mean annual discount rate is 0.33.",
+   "mean_quote": "publication bias exaggerates the mean reported discount rate more than twofold, from 0.33 to 0.80 (the simple uncorrected mean)",
+   "note": "the paper states both numbers in one sentence. The site's harmonised column holds only the 539 of 927 estimates that report a standard error, and its mean of 1.02 appears nowhere in the paper."
+  },
+  {
+   "project": "esg",
+   "corrected": 0.12,
+   "mean": null,
+   "mean_from": "data",
+   "corrected_quote": "A best-practice estimate that also imposes sound study design puts it near 0.12 for most of the world."
+  },
+  {
+   "project": "water",
+   "corrected": 0.15,
+   "mean": null,
+   "mean_from": "data",
+   "corrected_quote": "Attempting to correct simultaneously for publication and endogeneity biases, we find that the mean underlying elasticity is approximately 0.15 or less.",
+   "note": "'0.15 or less' is an upper bound; taking 0.15 understates the correction, which is the conservative direction"
+  },
+  {
+   "project": "frisch",
+   "corrected": 0.25,
+   "mean": 0.5,
+   "mean_from": "paper",
+   "corrected_quote": "A total hours elasticity of about 0.25 is the most consistent with empirical evidence.",
+   "mean_quote": "For both the intensive and extensive margins the literature provides over 700 estimates, with a mean of 0.5 in both cases",
+   "note": "the corrected 0.25 is for TOTAL hours; the shipped column is the extensive-margin file, a different estimand, so its mean cannot be the comparator. The paper's own pair is used: mean 0.5, and its conclusion says publication bias exaggerates the mean reported elasticity approximately twofold."
+  },
+  {
+   "project": "beauty",
+   "corrected": 1.1,
+   "mean": null,
+   "mean_from": "data",
+   "corrected_quote": "Second, controlling for cognitive ability renders the premium small (mean = 1.1%; 95% CrI = -0.8%, 3.0%) for all occupations except sex workers, where appearance is a direct input."
+  },
+  {
+   "project": "learning",
+   "corrected": -0.12,
+   "mean": null,
+   "mean_from": "data",
+   "corrected_quote": "Our preferred specifications, RoBMA and MAIVE, rely on different assumptions yet converge on an effect size of approximately -0.12 SD, equivalent to a learning loss of about 30% of a school year."
+  },
+  {
+   "project": "migrant",
+   "corrected": 17,
+   "mean": 13,
+   "mean_from": "paper",
+   "corrected_quote": "Our best-practice estimates, which net out publication bias and prioritize the most granular data, imply an elasticity of about 17 in our baseline regional specification, lower than implied by a simple bias correction but substantially higher than the uncorrected mean.",
+   "note": "the abstract states both: 'raises the mean elasticity (sigma) from an uncorrected 13 to approximately 22'. 17 is the best-practice figure the paper leads with; 13 is its own uncorrected mean. Its estimate-level column is a different transform, which is why the paper's own pair is used -- the same treatment as sigma, dst and excess_sensitivity."
+  },
+  {
+   "project": "armington",
+   "corrected": 3.8,
+   "mean": null,
+   "mean_from": "data",
+   "corrected_quote": "Third, the elasticity implied by the literature after accounting for both publication bias and study quality lies in the range 2.5--5.1 with a median of 3.8.",
+   "note": "the paper gives a median, not only a range; 3.8 is its own central value. It is numerically also the midpoint of 2.5-5.1, which is worth knowing, but a stated median is a stated value."
+  },
+  {
+   "project": "skill",
+   "corrected": 4,
+   "mean": 1.8,
+   "mean_from": "paper",
+   "corrected_quote": "The implied mean elasticity is 4, with a lower bound of 2.",
+   "note": "An upward revision, and the paper names both numbers. It works in INVERSE elasticities: publication bias exaggerates the reported inverse, correcting pulls it toward zero, and the implied elasticity rises from 1.8 to 4. The corrected 4 is the inversion of a corrected mean inverse elasticity, so it is not commensurable with a mean of the raw elasticities in the harmonised column (median 1.42, maximum 1000) -- which is why the paper's own pair is used, the same treatment as migrant, sigma and dst.",
+   "mean_quote": "even our preferred estimate of 4 is much larger than the uncorrected mean implied elasticity of 1.8, a difference which shows that publication bias dominates attenuation bias"
+  },
+  {
+   "project": "size",
+   "corrected": 1.72,
+   "mean": 5.08,
+   "mean_from": "paper",
+   "quote_source": "pdf",
+   "units": "annualised size premium, % per year",
+   "corrected_quote": "The implied difference in percentage returns between the 10th and the 90th percentile of NYSE stocks is 0.142%, or 1.72% in annualized terms, which is roughly three times lower than the unadjusted value.",
+   "corrected_locator": "size2.pdf p.14 (JoES 33(5), p.1476), end of Section 4; tabulated in Table 6, row '10th'",
+   "mean_quote": "As a benchmark for the unadjusted size premium, we use the simple mean reported coefficient of -0.092 reported in Table 1 ... We obtain a benchmark monthly size premium of 0.415%, or 5.08% annualized.",
+   "note": "The two numbers are the SAME transform of the same quantity, applied to two slopes: the corrected FAT-PET intercept and the mean reported coefficient. Table 6 prints both at 19 percentiles and their ratio holds at 0.337-0.340 throughout, so the choice of the 10th/90th cut does not drive it. Previously excluded for pairing 1.72% with the raw slope mean of -0.10%, which crosses a sign-flipping transform -- true of that pairing, but the paper states its own benchmark in the headline units and that was never tested."
+  },
+  {
+   "project": "border",
+   "corrected": 1.76,
+   "mean": 3.03,
+   "mean_from": "paper",
+   "quote_source": "pdf",
+   "units": "semi-elasticity of trade w.r.t. the within-country dummy",
+   "corrected_quote": "The overall mean semi-elasticity is 1.76, which translates into a border effect of 5.8-almost four times smaller than the border effect based on the sample mean of the semi-elasticities reported in the literature.",
+   "corrected_locator": "border2.pdf p.22 (IMF Economic Review 65(2), p.386), Section 5 'Best Practice'; same value in the 'All countries' row",
+   "mean_quote": "Table 1, 'Border Effects Differ Across Countries', p.372, last row: All countries | 1,271 | 3.03 (unweighted mean)",
+   "note": "Same units as the shipped column (semi-elasticity, the same 1,271 estimates). Excluded before because the site quotes the paper's 'one-third reduction in trade' sentence, which is a different transform -- but the paper states the semi-elasticity pair itself."
+  },
+  {
+   "project": "climate",
+   "corrected": 1.6,
+   "mean": 3.27,
+   "mean_from": "paper",
+   "quote_source": "pdf",
+   "units": "degrees Celsius, equilibrium climate sensitivity",
+   "corrected_quote": "After correction for publication bias, the best estimate assumes that the mean climate sensitivity equals 1.6 with a 95% confidence interval (1.246, 1.989). This is one half of the simple uncorrected average, 3.27.",
+   "corrected_locator": "climate2.pdf p.6 (Energy & Environment 26(5), p.858), Section 5, final paragraph; restated in the Conclusion",
+   "mean_quote": "The 48 CS estimates collected from 16 studies range from 0.7 to 10.4, with a mean of 3.27.",
+   "note": "Excluded before as 'a range, 1.4-2.3 degrees', which is the abstract's phrasing; the body states a single best estimate of 1.6 and its own uncorrected mean in the same sentence.",
+   "tier": "range",
+   "approximation": "The site's headline for this paper is a range, 1.4-2.3 C, which is the span across specifications; the figure uses the paper's own stated best estimate of 1.6 C."
+  },
+  {
+   "project": "education",
+   "corrected": -0.037,
+   "mean": -0.19,
+   "mean_from": "paper",
+   "quote_source": "pdf",
+   "tier": "table",
+   "units": "partial correlation coefficient, on both sides of the ratio",
+   "approximation": "The paper's headline answer is verbal - the elasticity is 'close to zero' - so the number here is its best-practice estimate from Table 6 rather than a figure it puts in the abstract.",
+   "corrected_quote": "The 'best-practice' estimation in Table 6 yields a partial coefficient of −0.037 with a 95% confidence interval of (−0.055; −0.019).",
+   "corrected_locator": "education2.pdf Table 6 ('All estimates', BMA column), p.21; restated in prose on p.22",
+   "mean_quote": "the mean reported value of the tuition-enrolment partial correlation coefficient, −0.19 (shown in Table 2), is significantly exaggerated by the presence of publication bias",
+   "note": "This is the right way to handle a verbal-zero headline: use the number the paper actually reports, never an exact 0. -0.037 against -0.19 is -80%, not the -100% that coding 'about zero' as zero would have produced."
+  },
+  {
+   "project": "risk",
+   "corrected": 1,
+   "mean": 7.5,
+   "mean_from": "paper",
+   "quote_source": "pdf",
+   "tier": "subsample",
+   "units": "coefficient of relative risk aversion",
+   "approximation": "The paper gives economics and finance separately. This is economics -- 590 estimates from 58 studies, the value its abstract leads with -- against the paper's own uncorrected mean for the same subsample. Finance moves further: 1-3 corrected against 45 uncorrected.",
+   "corrected_quote": "The corrected mean coefficient of relative risk aversion is around 1 for economics and 1-3 for finance, compared with uncorrected means of 7.5 and 45, respectively.",
+   "corrected_locator": "risk2.pdf p.2320 (JoES 39, Section 3, discussion of Table 2); Table 1 Panel A p.2318 gives Economics 590 estimates, mean 7.50",
+   "mean_quote": "compared with uncorrected means of 7.5 and 45, respectively"
+  },
+  {
+   "project": "eis",
+   "corrected": 0.0145,
+   "mean": 0.5,
+   "mean_from": "paper",
+   "quote_source": "pdf",
+   "tier": "table",
+   "units": "elasticity of intertemporal substitution",
+   "approximation": "The site's headline, 0.3-0.4, is the corrected value for a narrower subsample: micro estimates for asset holders. What is plotted is Table 1's corrected mean for the WHOLE literature, which is the quantity this figure measures and which the paper reports as essentially zero.",
+   "corrected_quote": "The first column of Table 1 reports the baseline result. The estimated β is approximately two and the constant equals zero, suggesting strong selective reporting and zero underlying elasticity on average.",
+   "corrected_locator": "Havranek 2015, JEEA 13(6), Table 1 column 'FE', the paper's preferred specification: Constant 0.0145, s.e. 0.00881, 2,735 estimates",
+   "mean_quote": "The mean reported estimate from all studies is 0.5."
+  },
+  {
+   "project": "scc",
+   "corrected": 134,
+   "mean": 411,
+   "mean_from": "paper",
+   "quote_source": "pdf",
+   "tier": "ratio",
+   "units": "USD per ton of carbon, 2010 prices, emission year 2015",
+   "approximation": "134 is the LARGEST of the paper's corrected means, and 411 the uncorrected mean of the same estimates -- the pair the paper itself puts in one sentence. Taking the largest corrected value understates the correction, which is the conservative direction.",
+   "corrected_quote": "The largest corrected mean SCC we get for estimates with uncertainty is USD 134 per ton of carbon at 2010 prices for emission year 2015; because the uncorrected mean of these estimates is 411, our results indicate that the reported estimates of the SCC are exaggerated",
+   "corrected_locator": "Havranek, Irsova, Janda & Zilberman 2015, Energy Economics 51: 394-406, p.405, concluding remarks",
+   "mean_quote": "the uncorrected mean of these estimates is 411"
+  },
+  {
+   "project": "activism",
+   "corrected": 0.75,
+   "mean": 1.49,
+   "mean_from": "paper",
+   "quote_source": "pdf",
+   "tier": "range",
+   "units": "percent, short-window cumulative abnormal return",
+   "approximation": "The paper gives a corrected range, 0% to 1.5%, and names no central value, so the midpoint is plotted. The ten estimators behind that range average 0.60%, so the midpoint understates the correction rather than overstating it.",
+   "corrected_quote": "We find that, after correcting for this bias, the value created by shareholder activism is positive but much smaller than commonly proposed. Our estimates range from 0% to 1.5%, depending on the estimation technique.",
+   "corrected_locator": "Bajzik, Havranek, Irsova & Novak 2025, Corporate Governance 33: 1039-1061, p.1041; the ten corrected values are in Table A2 of the appendix",
+   "mean_quote": "Table 2, row 'All': Nobs 1,973, Mean 1.49; the note to Table A2 reads 'The uncorrected mean value creation by shareholder activism is 1.49%'"
+  },
+  {
+   "project": "gasoline_price",
+   "corrected": -0.31,
+   "mean": -0.691,
+   "mean_from": "paper",
+   "quote_source": "pdf",
+   "tier": "horizon",
+   "units": "price elasticity of gasoline demand, long run",
+   "approximation": "The paper gives two horizons. This is the long run, the one its abstract names first, against the paper's own simple mean for the same horizon; the short run moves the same way.",
+   "corrected_quote": "Using mixed-effects multilevel meta-regression, we show that after correction for publication bias the average long-run elasticity reaches - 0.31 and the average short-run elasticity only - 0.09.",
+   "corrected_locator": "Havranek, Irsova & Janda 2012, Energy Economics 34, Abstract p.201; body p.205",
+   "mean_quote": "This sharply contrasts to the simple uncorrected averages amounting to -0.23 and -0.69: publication bias exaggerates the average reported elasticity more than twofold."
+  },
+  {
+   "project": "gasoline",
+   "corrected": 0.1,
+   "mean": 0.28,
+   "mean_from": "paper",
+   "quote_source": "pdf",
+   "tier": "horizon",
+   "units": "income elasticity of gasoline demand, short run",
+   "approximation": "The paper gives two horizons. This is the short run, the one its abstract leads with, and the only one whose corrected value and comparator come from the same whole sample.",
+   "corrected_quote": "Our results suggest that the income elasticity of gasoline demand is on average much smaller than reported in previous surveys: the mean corrected for publication bias is 0.1 for the short run and 0.23 for the long run.",
+   "corrected_locator": "Havranek & Kokes 2015, Energy Economics 47, Abstract p.77; Table 5 p.83, row 'Preferred estimate'",
+   "mean_quote": "The studies cover many countries and report a mean elasticity of 0.28 for the short run and 0.66 for the long run."
+  },
+  {
+   "project": "electricity",
+   "corrected": -0.16,
+   "mean": -0.267,
+   "mean_from": "paper",
+   "quote_source": "pdf",
+   "tier": "horizon",
+   "units": "own-price elasticity of electricity demand, short run",
+   "approximation": "The paper gives two horizons. This is the short run, the value its abstract leads with, against the paper's own raw mean for the same row; the long run moves the same way.",
+   "corrected_quote": "the publication-bias-corrected short-run elasticity is about -0.16 (a 10% rise in the electricity price cuts consumption by under 2%)",
+   "corrected_locator": "Kudela et al. 2026, electricity.pdf, Abstract p.1; PET column of the 'Short-run elasticities (full sample)' row of Table 2",
+   "mean_quote": "every corrector pulls the raw mean of -0.27 toward zero, to -0.16 (PET), -0.23 (PEESE), -0.11 (WAAP)"
+  },
+  {
+   "project": "hedge",
+   "corrected": 0.335,
+   "mean": 0.36,
+   "mean_from": "paper",
+   "quote_source": "pdf",
+   "tier": "range",
+   "units": "percent per month, hedge fund alpha",
+   "approximation": "The paper's headline is a 30-40 basis point range; plotted here is the mean of its own twelve corrected estimates, 0.335%, which it states in Table 7, against its own unconditional sample mean of 0.36%.",
+   "corrected_quote": "The table shows that, for the full sample, our estimates based on various techniques of the “representative” alpha coefficient corrected for the publication selection bias range from 0.274 and 0.386. The mean and median values of 0.335 and 0.338, respectively",
+   "corrected_locator": "Yang, Havranek, Irsova & Novak 2024, JoES 38: 1085-1131, p.1120 and Table 7, row 'Table 2 / Full sample'",
+   "mean_quote": "The vertical line in Figure 3 denotes the unconditional sample mean of monthly alphas of 0.36%"
+  }
+ ],
+ "excluded": [
+  {
+   "project": "alphas",
+   "why": "the best-practice value is -0.079, a prediction conditioned on data year, citations and impact factor at their sample MAXIMA, and Table 4 gives nine values by strategy, not one"
+  },
+  {
+   "project": "bma",
+   "why": "corrected about zero against a mean of 0.012, already negligible"
+  },
+  {
+   "project": "class",
+   "why": "the corrected -0.21 against a mean of -0.25 is a 16% move whose confidence interval (-1.38, 0.97) swamps it, and the headline carries subsample carve-outs (Tennessee STAR, classes under 15). One reviewer accepted it and a second refuted it; it stays out until that is settled"
+  },
+  {
+   "project": "competition",
+   "why": "corrected about zero against a mean of -0.0002, itself zero to three decimals: a ratio of two zeros carries no information"
+  },
+  {
+   "project": "conventional_wisdom",
+   "why": "a review of 24 other meta-analyses, not a meta-analysis of one literature; its own revision figure is on its page"
+  },
+  {
+   "project": "correlations",
+   "why": "a methods paper about converting effects to partial correlations; no literature effect to correct"
+  },
+  {
+   "project": "debate",
+   "why": "a randomised experiment on feedback, not a meta-analysis with a corrected mean"
+  },
+  {
+   "project": "euro",
+   "why": "the corrected effect is 'insignificant'. Insignificance is not a point estimate, and coding it as 0 would manufacture a -100% bar out of a significance test"
+  },
+  {
+   "project": "exercise",
+   "why": "a pooled corrected estimate exists (SMD 0.227 against an unadjusted 0.474) but the paper calls it 'of little value due to the extreme between-study heterogeneity' in the same sentence. A number its own authors demote is not a headline this figure may borrow"
+  },
+  {
+   "project": "fdi",
+   "why": "the corrected value is not in the units of its own estimate-level column, the same problem as spillovers"
+  },
+  {
+   "project": "finance_growth",
+   "why": "a narrative answer about the direction of the finance-growth link"
+  },
+  {
+   "project": "forward",
+   "why": "two ranges, developed and emerging currencies"
+  },
+  {
+   "project": "guidelines",
+   "why": "the practitioner's guide: a methods text, not a meta-analysis"
+  },
+  {
+   "project": "habits",
+   "why": "the headline 0.4 is the MEAN REPORTED estimate, not a corrected one -- its own caveat says 'with no correction for publication bias'. Plotting it would invert the figure's meaning."
+  },
+  {
+   "project": "house_prices",
+   "why": "the corrected -1.2% is the mean MAXIMUM of an impulse response; the estimate-level column holds average semi-elasticities. A peak against an average is not a ratio. Its own caveat records an upward move: publication-bias correction alone gives 0.23%, best practice offsets it back to 1.2%"
+  },
+  {
+   "project": "incentives",
+   "why": "the best-practice mean 0.031 against a stated mean of 0.051 looks clean, and the units are the identical partial correlation on the identical 1,252 estimates -- but the direction does not survive the comparator test: the median gives +40% and an inverse-variance mean +78%, both upward, on a column that is fully commensurate. Every other included row agrees in direction across all four comparators. Excluded under the direction-disagreement clause, not for its size"
+  },
+  {
+   "project": "inflation",
+   "why": "the headline 0.6 is not a correction: the paper calls it 'the paper-level average of these two polar cases over the actual composition of the literature', and finds that cross-study variation is driven by real modelling choices rather than by selective reporting, demoting its funnel intercepts to diagnostics. Excluded on the same ground as habits"
+  },
+  {
+   "project": "lags",
+   "why": "no estimate-level data on this site and no stated pair"
+  },
+  {
+   "project": "maive",
+   "why": "the estimator paper itself; it has no literature of its own to correct"
+  },
+  {
+   "project": "outliers",
+   "why": "a methods paper on outlier treatment"
+  },
+  {
+   "project": "pcc",
+   "why": "a methods paper on partial correlation coefficients"
+  },
+  {
+   "project": "pcc_survey",
+   "why": "a survey of estimators, not a meta-analysis of one literature"
+  },
+  {
+   "project": "price_puzzle",
+   "why": "the paper does give a number, a 0.33% maximum price fall, but it is a peak response against an average in the data and the sign flips, so the ratio would not mean what the figure means"
+  },
+  {
+   "project": "reforms",
+   "why": "a narrative answer: short-run cost, long-run gain"
+  },
+  {
+   "project": "remittances",
+   "why": "'positive but economically small' gives no scalar"
+  },
+  {
+   "project": "resource_curse",
+   "why": "'weak support for a curse' gives no scalar"
+  },
+  {
+   "project": "spillovers",
+   "why": "'9% higher productivity per 10-percentage-point rise in foreign presence' is not the elasticity the effect column holds"
+  },
+  {
+   "project": "students",
+   "why": "corrected about zero against a mean partial correlation of -0.017, already negligible: same problem as competition"
+  },
+  {
+   "project": "substitution",
+   "why": "no stated corrected scalar and no comparable mean"
+  },
+  {
+   "project": "trust",
+   "why": "a narrative answer about moderators, not a level"
+  }
+ ]
+}

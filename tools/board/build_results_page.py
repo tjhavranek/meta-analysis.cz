@@ -164,7 +164,26 @@ def build(check=False):
     # "Headline results from 54 papers" that reads as a claim on work that is not his.
     # It belongs on the reviewing paper's own page, where the attribution is plain.
     n_rows = len(rows)
-    strip = dot_strip(rows, fields)
+    # The field-coloured strip was pretty and said nothing -- his verdict, and he was right.
+    # What replaces it answers the question he actually asked: when these papers correct for
+    # bias, how far does the number move? Built by tools_seo/build_correction_figure.py from
+    # the estimate-level data on this site plus each paper's own stated corrected value, and
+    # only for the papers where a single honest ratio exists. dot_strip() is kept below in
+    # case the comparison ever has to come out again.
+    # The licence line, the Zenodo citation and both authors' ORCID / Scholar / RePEc /
+    # Scopus / CEPR / METRICS links live in the site footer, and this page never had one.
+    # Lifted verbatim from the homepage: one copy of the block to keep right, not two.
+    home_ = open(os.path.join(SITE, "index.html"), encoding="utf-8").read()
+    fi_ = home_.find('<footer class="site-foot">')
+    fj_ = home_.find("</footer>", fi_)
+    if fi_ < 0 or fj_ < 0:
+        sys.exit('the homepage has no <footer class="site-foot"> to copy')
+    FOOTER = home_[fi_:fj_ + len("</footer>")]
+
+    frag = os.path.join(HERE, "_fragments", "correction_figure.html")
+    if not os.path.isfile(frag):
+        sys.exit("run tools_seo/build_correction_figure.py first: " + frag)
+    strip = open(frag, encoding="utf-8").read().strip()
     chips = "\n".join(
         f'<button type="button" class="chip" data-field="{esc(f)}">{esc(f)}</button>'
         for f in fields)
@@ -364,6 +383,7 @@ figure came from.</p>
   apply();
 }})();
 </script>
+{FOOTER}
 </body>
 </html>
 """
