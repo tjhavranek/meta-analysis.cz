@@ -904,7 +904,7 @@ table.catalogue li{ margin-bottom:var(--s2); font-size:var(--f-1); line-height:1
 .rvfig{ display:block; height:auto; }
 .rvfig .rl{ font:400 11px var(--sans); fill:var(--ink); }
 .rvfig .ra{ font:400 9.5px var(--sans); fill:var(--ink-soft); }
-.rvfig .rv-flip{ fill:var(--rv-down); font-weight:600; }
+.rvfig .rv-flip{ fill:var(--paper); font-weight:600; }
 .rvfig g:hover rect{ opacity:.82; }
 .rvfig-wrap .table-note{ margin-top:var(--s3); }
-@media (max-width:30rem){ .rvfig{ min-width:26rem; } }
+@media (max-width:24rem){ .rvfig{ min-width:22rem; } }

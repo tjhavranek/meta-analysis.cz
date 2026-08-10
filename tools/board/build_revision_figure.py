@@ -46,8 +46,10 @@ def build(check=False):
 
     LW, BW, RH, TOP = 208, 150, 19, 26     # label, bar area, row height, header
     H = TOP + RH * len(rows) + 20
-    W = LW + BW + 66          # room for the sign-flip note
-    zero = LW + 8                       # x of the zero line
+    W = LW + BW + 34
+    zero = LW + 26                      # x of the zero line; the gap is what a
+                                    # leftward (green) bar needs, or it paints
+                                    # over the end of its own label
     scale = BW / 100.0                  # 100% of revision spans the bar area
 
     p = [f'<svg viewBox="0 0 {W} {H}" width="100%" role="img" '
@@ -74,7 +76,7 @@ def build(check=False):
         if v < 0:
             x, fill = zero, "var(--rv-down)"
         elif v > 0:
-            x, fill = zero - w - 3, "var(--rv-up)"   # clear of the label
+            x, fill = zero - w, "var(--rv-up)"
         else:
             x, fill = zero, "var(--rule)"
         title = (f'{r["topic"]}. {r["study"]}: conventional wisdom {r["cw"]:g}, '
@@ -87,8 +89,10 @@ def build(check=False):
         p.append(f'<rect x="{x:.1f}" y="{y + 3}" width="{max(w, 1.5):.1f}" height="12" '
                  f'rx="1.5" fill="{fill}"/>')
         if flipped:
-            p.append(f'<text x="{zero + BW + 4}" y="{y + 13}" class="ra rv-flip">'
-                     f'sign flip</text>')
+            # inside the bar, not past its end: at 390px the figure scrolls and a label
+            # placed to the right of the plot was never seen
+            p.append(f'<text x="{zero + BW - 5}" y="{y + 13}" text-anchor="end" '
+                     f'class="ra rv-flip">sign flip</text>')
         p.append("</g>")
     p.append("</svg>")
 
