@@ -76,7 +76,7 @@
  },
  {
   "project": "climate",
-  "question": "What does the historical record imply about climate sensitivity?",
+  "question": "What does the published literature imply about climate sensitivity?",
   "short": "climate sensitivity"
  },
  {
@@ -206,7 +206,7 @@
  },
  {
   "project": "hedge",
-  "question": "How much alpha do hedge funds generate before fees?",
+  "question": "How much alpha do hedge funds generate?",
   "short": "hedge fund alpha"
  },
  {

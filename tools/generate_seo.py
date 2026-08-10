@@ -450,6 +450,21 @@ def git_dates():
 
 def main():
     metas = {m["project"]: m for m in json.load(open(META, encoding="utf-8"))}
+    # Every surname in `authors` must appear in that paper's `reference_line`. The two are
+    # written by hand and read by different things -- `authors` feeds the JSON-LD and the
+    # Highwire tags, `reference_line` feeds the visible citation and the how-to-cite block --
+    # so a name can be right in one and wrong in the other for a long time without anyone
+    # noticing. One was: a co-author's surname was misspelled in the citation line only.
+    for proj, m in sorted(metas.items()):
+        ref = m.get("reference_line") or ""
+        if not ref:
+            continue
+        for full in (m.get("authors") or []):
+            surname = full.split()[-1]
+            if surname and surname not in ref:
+                WARNINGS.append(
+                    f"{proj}: '{surname}' is in authors but not in reference_line — "
+                    f"one of the two is misspelled, and they are read by different things")
     # filesystem is the source of truth for WHICH pages exist
     projects = sorted(d for d in os.listdir(SITE)
                       if os.path.isfile(os.path.join(SITE, d, "index.html"))

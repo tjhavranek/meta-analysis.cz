@@ -492,7 +492,7 @@ Abstract: Estimates of relative risk aversion vary widely, but no study has atte
 
 ## Selective Reporting and the Social Cost of Carbon
 URL: https://meta-analysis.cz/scc/
-Citation: Tomas Havranek, Zuzana Irsova, Karel Janda, and David Zilberman (2015), "Selective Reporting and the Social Cost of Carbon." Energy Economics 51, 364-406.
+Citation: Tomas Havranek, Zuzana Irsova, Karel Janda, and David Zilberman (2015), "Selective Reporting and the Social Cost of Carbon." Energy Economics 51, 394-406.
 Published version: https://doi.org/10.1016/j.eneco.2015.08.009
 Paper: https://meta-analysis.cz/scc/scc2.pdf
 Examined Studies: http://scholar.google.cz/scholar?as_sdt=1,5&amp;q=%22social+costs+of+carbon%22+OR+%22social+cost+of+carbon%22+carbon+climate+change+marginal+damage+costs+emissions+greenhouse+impacts&hl=en&as_ylo=2012&as_vis=1
