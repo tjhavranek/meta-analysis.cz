@@ -721,7 +721,7 @@ We introduce MAIVE, a simple way to detect and correct such bias, including publ
 <figure><img src="https://meta-analysis.cz/komentare/social-img/2025-10-26_spurious.png" alt="Two funnel plots side by side from the Nature Communications paper. In (a), selection on estimates, the surviving studies sit above the t=1.96 line and the effect size is inflated. In (b), selection on standard errors, the funnel is equally asymmetric but the effect size is not inflated. Both plot standard errors against estimates." /></figure>]]></content:encoded>
     </item>
     <item>
-      <title>Spurious Precision in Meta-Analysis</title>
+      <title>Spurious precision in meta-analysis: why we built MAIVE</title>
       <link>https://meta-analysis.cz/notes/springer-spurious-precision/</link>
       <guid isPermaLink="true">https://meta-analysis.cz/notes/springer-spurious-precision/</guid>
       <pubDate>Sat, 27 Sep 2025 00:00:00 +0000</pubDate>
@@ -1003,7 +1003,7 @@ To be clear, we do not claim that our guidelines must always be followed nor are
 </p>]]></content:encoded>
     </item>
     <item>
-      <title>Spurious Precision in Meta-Analysis</title>
+      <title>Spurious precision in meta-analysis: introducing MAIVE</title>
       <link>https://meta-analysis.cz/notes/maer-spurious-precision/</link>
       <guid isPermaLink="true">https://meta-analysis.cz/notes/maer-spurious-precision/</guid>
       <pubDate>Thu, 16 Feb 2023 00:00:00 +0000</pubDate>

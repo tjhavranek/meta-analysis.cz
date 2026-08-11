@@ -152,13 +152,13 @@
 Recent studies have demonstrated that conventional meta-analyses of partial correlation coefficients (PCC) are biased. Several adjustments have been shown in simulations to reduce these small-sample biases to negligibility. While many meta-analyses of partial correlation coefficients are conducted each year across several disciplines, the practical importance of these issues remains unknown. To address this question and to offer advice for applications, we survey 172 economic meta-analyses of PCCs. We find that small-sample biases are negligible in practice. However, some publication selection biases remain. Although Fisher&rsquo;s z transformations have often been recommended, they reduce neither small-sample nor publication selection biases relative to conventional random effects. Both the unrestricted weighted least squares (UWLS) and the Hunter-Schmidt (HS) estimators produce smaller, arguably less biased, estimates of the mean PCC in these applications than either random effects or Fisher&rsquo;s z transformations. These findings offer practical guidance for any discipline that meta-analyzes partial correlations.
 </p>
 
-<p class="prose">The survey covers <b>172 meta-analyses</b> containing <b>63,730 estimated partial correlations</b> and their standard errors, extracted from <b>6,191 papers</b> &mdash; about 371 estimates per meta-analysis, and about ten per primary study. The typical effect in this literature is small: the median partial correlation is around 0.06.</p>
+<p class="prose">The survey covers <b>172 meta-analyses</b> containing <b>63,730 estimated partial correlations</b> and their standard errors, extracted from <b>6,191 papers</b>. That is about 371 estimates per meta-analysis, and about ten per primary study. The typical effect in this literature is small: the median partial correlation is around 0.06.</p>
 
 <p class="caveat"><b>Status.</b> Under review at <i>Research Synthesis Methods</i>. Invited to revise and resubmit in May 2026; the revision was submitted in July 2026. The PDF here is the <a href="pcc_survey.pdf">authors&rsquo; June 2026 revision</a>, the manuscript version prepared for that resubmission; the version now with the journal may differ, and there is no published version yet. The data and the code are public.</p>
 
 <h3>What changes if you switch estimator</h3>
 
-<p class="prose">Almost nothing, until you reach the margin. The corrections proposed for the small-sample bias &mdash; Fisher&rsquo;s z applied to random effects or to UWLS, and the degrees-of-freedom adjustment UWLS+3 &mdash; barely move the mean away from the unadjusted estimator they correct. Across 172 real meta-analyses, sample sizes are large and widely dispersed enough that the small-sample bias washes out. What remains is publication selection bias, and that is a different problem with a different remedy.</p>
+<p class="prose">Almost nothing, until you reach the margin. The corrections proposed for the small-sample bias barely move the mean away from the unadjusted estimator they correct. That holds for Fisher&rsquo;s z applied to random effects or to UWLS, and for the degrees-of-freedom adjustment UWLS+3. Across 172 real meta-analyses, sample sizes are large and widely dispersed enough that the small-sample bias washes out. What remains is publication selection bias, and that is a different problem with a different remedy.</p>
 
 <p class="prose">Where the choice does bite is in the weighting rather than the transformation. The median UWLS mean is about <b>30% smaller</b> than the corresponding random-effects mean, matching what simulations predict when publication selection is present. Hunter-Schmidt is smaller still. And if 0.1 is taken as the smallest partial correlation of interest, roughly <b>one in three</b> of the &ldquo;small&rdquo; average effects that random effects reports becomes negligible under UWLS or Hunter-Schmidt. The survey therefore supports UWLS and Hunter-Schmidt over random effects, and the paper argues that when the estimators disagree the more conservative number is the one to emphasize.</p>
 
@@ -268,8 +268,8 @@ transformations barely move anything: RE<sub>z</sub> lands on 0.131 against rand
 0.126, and UWLS+3 on 0.109 against UWLS&rsquo;s 0.110. The weighting moves a lot: 0.126 for random
 effects against 0.096 for Hunter-Schmidt. And the estimators that come out smallest are also the
 ones closest to the publication-bias-corrected PET-PEESE. The paper is careful about what that
-licenses: it declines to infer smaller bias from a smaller average &mdash; that would be affirming
-the consequent &mdash; and claims only a pattern consistent with the upward-bias hypothesis and
+licenses: it declines to infer smaller bias from a smaller average, which would be affirming
+the consequent, and claims only a pattern consistent with the upward-bias hypothesis and
 with what simulations show when publication selection is present.</p>
 
 <h3>Three papers on partial correlations, and what each one does</h3>
