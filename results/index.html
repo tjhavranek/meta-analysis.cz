@@ -22,7 +22,7 @@
   }
  ],
  "license": "https://creativecommons.org/licenses/by/4.0/",
- "dateModified": "2026-08-10",
+ "dateModified": "2026-08-11",
  "itemListElement": [
   {
    "@type": "ListItem",
@@ -2211,7 +2211,7 @@
     "url": "https://meta-analysis.cz/results/#maive",
     "acceptedAnswer": {
      "@type": "Answer",
-     "text": "Spurious precision in meta-analysis (the MAIVE estimator): the methodological finding is estimated precision can be p-hacked, which invalidates inverse-variance weighting; MAIVE instruments variance with sample size (Irsova et al. 2025, Nature Communications).",
+     "text": "Spurious precision in meta-analysis (the MAIVE estimator): the methodological finding is estimated precision can be p-hacked, which can undermine inverse-variance weighting; MAIVE instruments variance with sample size (Irsova et al. 2025, Nature Communications).",
      "url": "https://meta-analysis.cz/maive/",
      "author": [
       {
@@ -2257,7 +2257,7 @@
     "url": "https://meta-analysis.cz/results/#debate",
     "acceptedAnswer": {
      "@type": "Answer",
-     "text": "Whether multi-agent AI debate improves feedback on research papers: it does not; authors of 44 meta-analyses preferred a single frontier-model pass to two multi-agent debate tools, based on a pre-registered, identity-masked experiment (Havranek and Irsova 2026).",
+     "text": "Whether multi-agent AI debate improves feedback on research papers: probably not, at least for meta-analyses in economics; authors of 44 meta-analyses preferred a single frontier-model pass to two multi-agent debate tools, based on a pre-registered, identity-masked experiment (Havranek and Irsova 2026).",
      "url": "https://meta-analysis.cz/debate/",
      "author": [
       {
@@ -2518,7 +2518,7 @@ publication-bias-corrected number, that is the one shown.</p>
 <figcaption class="table-note"><b>What correction and best practice did to the number.</b> One dot per meta-analysis, placed by how far its corrected or best-practice estimate sits from the mean the literature reported. <b>Red</b>: smaller <i>in absolute magnitude</i>. <b>Green</b>: larger. <b>21 of the 25</b> moved toward zero and <b>4</b> away from it. The median revision is <b>-55%</b>. The 14 drawn as rings are approximate pairs. Vertical position carries no meaning. The dots are stacked only to keep them apart.<details class="figmethod"><summary>How this figure is built, and which papers it leaves out</summary><p>The index is <i>(|corrected| &minus; |mean|) / |mean|</i>, the same relative revision as Table 3 of <a href="/conventional_wisdom/">Gechert et al. (2025)</a>, which applies it to 24 literatures mostly by other researchers.</p><p>The comparator is the paper&rsquo;s own uncorrected mean wherever it states one, which 20 of the 25 do. Otherwise it is the average of that literature&rsquo;s estimates in the data on this site, winsorised at 1%. The paper&rsquo;s own number is preferred because the harmonised table keeps only estimates that report a usable standard error, so a mean computed from it can rest on a subset of what the paper analysed.</p><p>If you distrust means, there is a second reading. 5 of the 25 comparators are computed here instead of quoted from a paper, and those are winsorised means. Use the median of those literatures&rsquo; estimates instead and the overall median revision becomes -51%, with the number moving upward unchanged at 4. The swap is confined to those rows on purpose: where a paper states its own mean, its corrected value need not be in the same units as the estimate column at all, so a median taken from that column would not be a comparator. The check covers only the estimates this site holds, under the same standard-error selection.</p><p><b>The 14 rings</b> are pairs that are approximate in a stated way: the central value of a range, or an upper bound (5), the horizon the paper leads with (3), a number read from a results table where the headline is verbal (3), the subsample the paper leads with (3). Hover a ring and it says which.</p><p><b>25 of the 54 papers qualify.</b> Of the other 29, 8 have no single literature effect to correct: methods papers, an experiment, and the review that supplies the companion figure. The rest answer in words rather than a number, or measure the corrected effect as a different quantity from the one their estimate-level data holds, or give a headline that is not a correction at all, or sit against a comparator so near zero that the ratio is noise; one was dropped because two defensible comparators disagreed about which way it moved. The rule takes no account of which way a paper moved, and every one of those 29 is written down with its reason, individually, in <a href="/tools/board/correction_ratios.json">correction_ratios.json</a>.</p><p><b>What best practice means here.</b> Several of these papers do not simply average their estimates. They evaluate their model at the literature&rsquo;s preferred values, for recent data, more observations and better-cited outlets, and report that as the figure a careful study would have produced. It is the construction these authors use, it is what Gechert et al.&rsquo;s corrected column is built from, and in each case it is the paper&rsquo;s own headline conclusion. The rows concerned name it in the spec.</p><p>Most of these papers correct with estimators that shrink toward zero. What the figure adds is the size of each move.</p></details></figcaption>
 </figure>
 
-<p class="r-updated">Figures last assembled 2026-08-10. Each is the paper's own headline
+<p class="r-updated">Figures last assembled 2026-08-11. Each is the paper's own headline
 result. The paper's own page carries the rest.</p>
 
 <p><b>Read the caveat before you reuse a number.</b> Definitions, samples and units differ
@@ -2872,15 +2872,15 @@ figure came from.</p>
 <p class="r-cite"><b>Cite as</b> Tomas Havranek, Zuzana Irsova, Martina Luskova, T. D. Stanley (2026), &quot;Do decisions about outliers and influential effects matter? Evidence from 358 behavioral science meta-analyses.&quot; Charles University, Prague. Available at meta-analysis.cz/outliers.</p>
 <p class="r-links"><a href="https://meta-analysis.cz/outliers/">Paper page</a> &middot; <a href="https://meta-analysis.cz/outliers/outliers.pdf">PDF</a></p>
 </div>
-<div class="result" id="maive" data-field="Meta-research methods" data-search="can p-hacked precision distort meta-analysis weighting? spurious precision in meta-analysis (the maive estimator) estimated precision can be p-hacked, which invalidates inverse-variance weighting; maive instruments variance with sample size maive">
+<div class="result" id="maive" data-field="Meta-research methods" data-search="can p-hacked precision distort meta-analysis weighting? spurious precision in meta-analysis (the maive estimator) estimated precision can be p-hacked, which can undermine inverse-variance weighting; maive instruments variance with sample size maive">
 <h3>Can p-hacked precision distort meta-analysis weighting?</h3>
-<p class="r-answer">Spurious precision in meta-analysis (the MAIVE estimator): the methodological finding is estimated precision can be p-hacked, which invalidates inverse-variance weighting; MAIVE instruments variance with sample size (Irsova et al. 2025, Nature Communications).</p>
+<p class="r-answer">Spurious precision in meta-analysis (the MAIVE estimator): the methodological finding is estimated precision can be p-hacked, which can undermine inverse-variance weighting; MAIVE instruments variance with sample size (Irsova et al. 2025, Nature Communications).</p>
 <p class="r-cite"><b>Cite as</b> Zuzana Irsova, Pedro Bom, Tomas Havranek, and Heiko Rachinger (2025): &quot;Spurious Precision in Meta-Analysis of Observational Research.&quot; Nature Communications 16, 8454. doi.org/10.1038/s41467-025-63261-0</p>
 <p class="r-links"><a href="https://meta-analysis.cz/maive/">Paper page</a> &middot; <a href="https://meta-analysis.cz/maive/maive.pdf">PDF</a> &middot; <a href="https://doi.org/10.1038/s41467-025-63261-0">10.1038/s41467-025-63261-0</a></p>
 </div>
-<div class="result" id="debate" data-field="Meta-research methods" data-search="does multi-agent ai debate improve feedback on research papers? whether multi-agent ai debate improves feedback on research papers it does not; authors of 44 meta-analyses preferred a single frontier-model pass to two multi-agent debate tools debate">
+<div class="result" id="debate" data-field="Meta-research methods" data-search="does multi-agent ai debate improve feedback on research papers? whether multi-agent ai debate improves feedback on research papers probably not, at least for meta-analyses in economics; authors of 44 meta-analyses preferred a single frontier-model pass to two multi-agent debate tools debate">
 <h3>Does multi-agent AI debate improve feedback on research papers?</h3>
-<p class="r-answer">Whether multi-agent AI debate improves feedback on research papers: it does not; authors of 44 meta-analyses preferred a single frontier-model pass to two multi-agent debate tools, based on a pre-registered, identity-masked experiment (Havranek and Irsova 2026).</p>
+<p class="r-answer">Whether multi-agent AI debate improves feedback on research papers: probably not, at least for meta-analyses in economics; authors of 44 meta-analyses preferred a single frontier-model pass to two multi-agent debate tools, based on a pre-registered, identity-masked experiment (Havranek and Irsova 2026).</p>
 <p class="r-cite"><b>Cite as</b> Tomas Havranek, Zuzana Irsova (2026), &quot;Does Multi-Agent Debate Improve AI Feedback on Research Papers?&quot; arXiv:2607.14713. Available at meta-analysis.cz/debate.</p>
 <p class="r-links"><a href="https://meta-analysis.cz/debate/">Paper page</a> &middot; <a href="https://meta-analysis.cz/debate/debate.pdf">PDF</a> &middot; <a href="https://arxiv.org/abs/2607.14713">https://arxiv.org/abs/2607.14713</a></p>
 </div>

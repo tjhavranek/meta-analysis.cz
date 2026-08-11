@@ -301,7 +301,7 @@
  {
   "project": "maive",
   "parameter": "Spurious precision in meta-analysis (the MAIVE estimator)",
-  "headline": "estimated precision can be p-hacked, which invalidates inverse-variance weighting; MAIVE instruments variance with sample size",
+  "headline": "estimated precision can be p-hacked, which can undermine inverse-variance weighting; MAIVE instruments variance with sample size",
   "evidence": "spurious precision can invalidate inverse-variance weighting",
   "basis": null,
   "caveat": null,
@@ -481,7 +481,7 @@
  {
   "project": "debate",
   "parameter": "Whether multi-agent AI debate improves feedback on research papers",
-  "headline": "it does not; authors of 44 meta-analyses preferred a single frontier-model pass to two multi-agent debate tools",
+  "headline": "probably not, at least for meta-analyses in economics; authors of 44 meta-analyses preferred a single frontier-model pass to two multi-agent debate tools",
   "evidence": "The authors preferred the single pass",
   "basis": "a pre-registered, identity-masked experiment",
   "caveat": null,
