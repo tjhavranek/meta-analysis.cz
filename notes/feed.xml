@@ -134,11 +134,11 @@ Joint work with Tomas Havranek, Martina Lušková, and T. D. Stanley
 <figure><img src="https://meta-analysis.cz/komentare/social-img/2026-07-25_outliers_table.png" alt="Table 3 of the paper, Changes in statistical significance and smallest effect size of interest. Two panels compare four outlier treatments (drop-extreme, absolute studentized residual above 3, Winsorize 5/95, and absolute DFBETAS above 2 over the square root of k) against the do-nothing baseline, each under random-effects and unrestricted weighted least squares estimators. Winsorizing changes the fewest conclusions and DFBETAS the most." /></figure>]]></content:encoded>
     </item>
     <item>
-      <title>Does multi-agent AI debate improve feedback on research papers?</title>
+      <title>What 44 meta-analysis authors said about AI feedback</title>
       <link>https://meta-analysis.cz/notes/multi-agent-debate-ai-feedback/</link>
       <guid isPermaLink="true">https://meta-analysis.cz/notes/multi-agent-debate-ai-feedback/</guid>
       <pubDate>Thu, 16 Jul 2026 00:00:00 +0000</pubDate>
-      <description>No, at least not for economics meta-analyses. Authors of 44 meta-analyses ranked three blinded AI reports on their own paper; a single prompt beat two multi-agent debate tools, one of which spent thirty times the tokens.</description>
+      <description>Probably not, at least for economics meta-analyses. Authors of 44 meta-analyses ranked three blinded AI reports on their own paper; a single prompt beat two multi-agent debate tools, one of which spent thirty times the tokens.</description>
       <content:encoded><![CDATA[<p>
 Probably not. We built two multi-agent debate tools, expected them to win, and they lost to a single prompt. This note summarises what we did and what we found; the full paper, the pre-registration, and the replication package are linked in the sidebar.
 </p>

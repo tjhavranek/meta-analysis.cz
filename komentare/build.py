@@ -1626,6 +1626,13 @@ def write_socials_page():
             f'      </article>')
         canon = f"{BASE}/posts/{p['slug']}/"
         head = _headline(p["text"])
+        # The post's own opening line is its headline and stays the <h1> -- this is an
+        # archive of what she wrote, so that line is not ours to reword. But two pages on
+        # one domain must not compete for the same <title>: when a post opens with the
+        # same words as the paper page it comments on, a search engine picks one and
+        # suppresses the other. `page_title` renames the PAGE only. The h1 and the
+        # SocialMediaPosting headline keep her words.
+        ptitle = p.get("page_title") or head
         node = {
             "@type": "SocialMediaPosting",
             "@id": canon + "#post",
@@ -1674,14 +1681,14 @@ def write_socials_page():
             + '</p></div>\n'
             '    </article>\n')
         pjson = {"@context": "https://schema.org", "@graph": [
-            {"@type": "WebPage", "@id": canon, "url": canon, "name": head,
+            {"@type": "WebPage", "@id": canon, "url": canon, "name": ptitle,
              "inLanguage": lang, "isPartOf": {"@id": f"{BASE}/posts/#collection"},
              "about": {"@id": canon + "#post"}},
             node]}
         d = KDIR / "posts" / p["slug"]
         d.mkdir(parents=True, exist_ok=True)
         (d / "index.html").write_text(
-            shell(head, _post_desc(p["text"]), canon, pjson, pbody, "posts", lang=lang),
+            shell(ptitle, _post_desc(p["text"]), canon, pjson, pbody, "posts", lang=lang),
             encoding="utf-8")
 
     jsonld = {"@context": "https://schema.org", "@graph": [
@@ -1718,6 +1725,9 @@ def write_socials_page():
     old.mkdir(exist_ok=True)
     (old / "index.html").write_text(
         '<!doctype html>\n<html lang="en">\n<meta charset="utf-8">\n'
+        # The refresh fires immediately, so this is only ever seen when it does not --
+        # and then it is a line of text a phone should not have to zoom into.
+        '<meta name="viewport" content="width=device-width, initial-scale=1">\n'
         f'<title>Moved to {BASE}/posts/</title>\n'
         f'<link rel="canonical" href="{BASE}/posts/">\n'
         f'<meta property="og:url" content="{BASE}/posts/">\n'

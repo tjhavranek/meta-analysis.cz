@@ -204,10 +204,10 @@
   },
   {
    "slug": "multi-agent-debate-ai-feedback",
-   "title": "Does multi-agent AI debate improve feedback on research papers?",
+   "title": "What 44 meta-analysis authors said about AI feedback",
    "date": "2026-07-16",
    "updated": "2026-07-21",
-   "summary": "No, at least not for economics meta-analyses. Authors of 44 meta-analyses ranked three blinded AI reports on their own paper; a single prompt beat two multi-agent debate tools, one of which spent thirty times the tokens.",
+   "summary": "Probably not, at least for economics meta-analyses. Authors of 44 meta-analyses ranked three blinded AI reports on their own paper; a single prompt beat two multi-agent debate tools, one of which spent thirty times the tokens.",
    "topics": [
     "AI and research",
     "peer review"
