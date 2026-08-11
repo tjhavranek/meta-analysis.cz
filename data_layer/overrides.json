@@ -164,7 +164,7 @@
   "alias_of": "alphas",
   "reason": "same 1,019 estimates as the alphas project",
   "verified_by": "effect, se and study_id are element-wise identical across all 1,019 rows; a pairwise scan of the (effect,se) value multiset over all 41 literatures found this as the only remaining duplicate pair",
-  "note": "Two papers on one dataset. 'alphas' is kept because it fills 10 harmonised moderators against hedge's 7, and hedge's set is a strict subset, so nothing is lost. CITE the published version for these estimates: Hedge Fund Performance: A Meta-Analysis, Journal of Economic Surveys 2024 (DOI on the hedge dataset entry). The hedge file remains published in full as its own dataset."
+  "note": "Two papers on one dataset. 'alphas' is kept because it fills 10 harmonised moderators against hedge's 7, and hedge's set is a strict subset, so nothing is lost. CITE the published version for these estimates: Is research on hedge fund performance published selectively? A quantitative survey, Journal of Economic Surveys 2024 (DOI on the hedge dataset entry). The hedge file remains published in full as its own dataset."
  },
  "trust": {
   "alias_of": "size",

@@ -733,6 +733,10 @@ def main():
           "by Tomas Havranek, Zuzana Irsova, and their co-authors at Charles University, Prague. "
           "Each paper page links the full-text PDF "
           "and, for most papers, the dataset and estimation code.", "",
+          "> Maintained by Tomas Havranek (in Czech Tomáš Havránek) and "
+          "Zuzana Irsova (Zuzana Iršová, earlier work indexed as Zuzana Havránková) at the "
+          "Institute of Economic Studies, Charles University, Prague. "
+          f"Who they are: {BASE}/about/", "",
           "> **Licence: everything on this site is CC BY 4.0** "
            "(https://creativecommons.org/licenses/by/4.0/) — the papers, the datasets, their "
            "CSV and Parquet conversions, the pooled table, the codebooks and this "
@@ -780,6 +784,7 @@ def main():
            f"parameter, the value the paper headlines, the sample it rests on, and the verbatim "
            f"sentence from the paper that each figure came from (CSV)",
            f"- [Full paper index with abstracts and file links]({BASE}/llms-full.txt): one entry per paper, for LLM ingestion",
+           f"- [About the site and who maintains it]({BASE}/about/): affiliations and ORCIDs",
            f"- [Sitemap]({BASE}/sitemap.xml): all pages and PDF full texts",
            f"- [Commentary and interviews]({BASE}/komentare/): op-eds, columns and interviews "
            f"(mostly Czech); machine index at {BASE}/komentare/llms.txt",

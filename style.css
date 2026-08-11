@@ -974,3 +974,12 @@ table.catalogue li{ margin-bottom:var(--s2); font-size:var(--f-1); line-height:1
 .cfig .cfa{ font:400 14px/1 var(--sans); fill:var(--ink-soft);
   letter-spacing:.02em; text-transform:uppercase; }
 
+/* The two Journal of Economic Surveys notes are the Practitioner's Guide's siblings, so they
+   sit inside its block rather than in the Resources list, whose grammar is other people's
+   tools. Subordinate to the flagship link above them, and never the same size: the flagship
+   is the destination, this is the footnote that says who wrote the companions. */
+.companion{
+  display:block; margin-top:var(--s2);
+  font:400 var(--f-1)/1.5 var(--sans); color:var(--ink-soft);
+}
+.companion a{ font-size:inherit; }

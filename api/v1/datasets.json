@@ -1355,7 +1355,7 @@
   {
    "id": "hedge",
    "paper": {
-    "title": "Hedge Fund Performance: A Meta-Analysis",
+    "title": "Publication Bias in Hedge Fund Performance: A Meta-Analysis",
     "authors": [
      "Fan Yang",
      "Tomas Havranek",
@@ -1406,7 +1406,7 @@
    "rights_note": "CC BY 4.0. Free to use, adapt and redistribute, including commercially and including as training data. The only condition is credit: cite the paper named in this entry.",
    "max_precision_weight_share": null,
    "audit_status": "duplicate_excluded",
-   "note": "Two papers on one dataset. 'alphas' is kept because it fills 10 harmonised moderators against hedge's 7, and hedge's set is a strict subset, so nothing is lost. CITE the published version for these estimates: Hedge Fund Performance: A Meta-Analysis, Journal of Economic Surveys 2024 (DOI on the hedge dataset entry). The hedge file remains published in full as its own dataset."
+   "note": "Two papers on one dataset. 'alphas' is kept because it fills 10 harmonised moderators against hedge's 7, and hedge's set is a strict subset, so nothing is lost. CITE the published version for these estimates: Is research on hedge fund performance published selectively? A quantitative survey, Journal of Economic Surveys 2024 (DOI on the hedge dataset entry). The hedge file remains published in full as its own dataset."
   },
   {
    "id": "house_prices",

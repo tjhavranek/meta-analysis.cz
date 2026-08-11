@@ -19476,7 +19476,7 @@
    "@type": "cr:RecordSet",
    "@id": "hedge",
    "name": "hedge",
-   "description": "Hedge Fund Performance: A Meta-Analysis",
+   "description": "Publication Bias in Hedge Fund Performance: A Meta-Analysis",
    "isBasedOn": "https://doi.org/10.1111/joes.12574",
    "field": [
     {

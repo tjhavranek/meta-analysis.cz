@@ -6,7 +6,6 @@
   "evidence": "Corrected activism effects range from 0% to 1.5%.",
   "basis": "1,973 estimates from 67 studies",
   "caveat": null,
-  "confidence": "high",
   "field": "Financial economics"
  },
  {
@@ -16,7 +15,6 @@
   "evidence": "We document that 9 out of the 34 characteristics we analyze are consistently relevant to explain the variation in the reported estimates. ... when considering the fees and the variation in research designs, the current estimates of expected alphas implied by the best practice methodology are close to zero for all common hedge fund strategies.",
   "basis": "1,019 estimates from 74 studies",
   "caveat": null,
-  "confidence": "high",
   "field": "Financial economics",
   "lead": "the main result is that",
   "kind": null
@@ -28,7 +26,6 @@
   "evidence": "Third, the elasticity implied by the literature after accounting for both publication bias and study quality lies in the range 2.5--5.1 with a median of 3.8.",
   "basis": "3,524 estimates",
   "caveat": null,
-  "confidence": "high",
   "field": "International economics"
  },
  {
@@ -38,7 +35,6 @@
   "evidence": "Second, controlling for cognitive ability renders the premium small (mean = 1.1%; 95% CrI = -0.8%, 3.0%) for all occupations except sex workers, where appearance is a direct input.",
   "basis": "1,159 estimates in 67 studies",
   "caveat": "controlling for cognitive ability; large only for sex workers",
-  "confidence": "high",
   "field": "Micro and experimental economics"
  },
  {
@@ -48,7 +44,6 @@
   "evidence": "Our results suggest that horizontal spillovers are on average zero, but that their sign and magnitude depend systematically on the characteristics of the domestic economy and foreign investors. The most important determinants are the technology gap between domestic and foreign firms and the ownership structure in investment projects. ... it may increase the average spillovers by 0.144 + 0.158 = 0.302, an economically significant value.",
   "basis": "1,205 estimates screened against 43 candidate determinants",
   "caveat": null,
-  "confidence": "high",
   "field": "International economics",
   "lead": "the main result is that",
   "kind": null
@@ -60,7 +55,6 @@
   "evidence": "We show that major methodological innovations of the last decade combine to shrink the border effect to a one-third reduction in international trade flows worldwide.",
   "basis": "1,271 estimates from 61 studies",
   "caveat": null,
-  "confidence": "high",
   "field": "International economics"
  },
  {
@@ -70,7 +64,6 @@
   "evidence": "The implied class size effect is negligible for all identification approaches except Tennessee's Student/Teacher Achievement Ratio project and for all contexts except classes of fewer than 15 students.",
   "basis": "2,819 estimates from 66 studies",
   "caveat": "except in the STAR experiment and classes under 15 students",
-  "confidence": "high",
   "field": "Labor and education economics"
  },
  {
@@ -80,7 +73,6 @@
   "evidence": "Corrected for publication bias, the bulk of the literature is consistent with climate sensitivity lying between 1.4 and 2.3 degrees Celsius.",
   "basis": "48 estimates from 16 studies",
   "caveat": "all 48 published estimates from 16 studies, literature search closed March 2014; the IPCC AR6 Working Group I report, published six years later in 2021, gives a best estimate near 3 C",
-  "confidence": "high",
   "field": "Energy and environmental economics"
  },
  {
@@ -90,12 +82,10 @@
   "evidence": "Taken together, the estimates reported in the literature suggest little interplay between competition and stability, even when corrected for publication bias and potential misspecifications.",
   "basis": "598 estimates from 31 studies",
   "caveat": null,
-  "confidence": "medium",
   "field": "Financial economics"
  },
  {
   "project": "correlations",
-  "confidence": "high",
   "parameter": "Bias in meta-analyses of correlations",
   "headline": "conventional fixed- and random-effects estimators are biased; the UWLS+3 and Hunter-Schmidt estimators correct this",
   "evidence": "Conventional meta-analyses (both fixed and random effects) of correlations are biased",
@@ -112,7 +102,6 @@
   "evidence": "The corrected mean annual discount rate is 0.33.",
   "basis": "927 estimates from 56 studies",
   "caveat": null,
-  "confidence": "high",
   "field": "Micro and experimental economics"
  },
  {
@@ -122,7 +111,6 @@
   "evidence": "The resulting global estimate is -0.01%, quite distant from -0.34%, the simple average effect reported in the literature. ... We conclude that electricity savings from DST are, on average, negligible and highly unlikely to exceed 0.76% of total electricity consumption during the days when the daylight saving policy is in place.",
   "basis": "162 estimates from 44 studies",
   "caveat": "savings during the days DST applies; the paper finds no publication bias in this literature, so this is a methodological correction",
-  "confidence": "high",
   "field": "Energy and environmental economics",
   "lead": "the best-practice estimate is"
  },
@@ -133,7 +121,6 @@
   "evidence": "After correcting for this publication bias, we find that the literature is consistent with the mean tuition-enrollment elasticity being close to zero.",
   "basis": "443 estimates from 43 studies",
   "caveat": null,
-  "confidence": "high",
   "field": "Labor and education economics"
  },
  {
@@ -143,7 +130,6 @@
   "evidence": "The corrected mean of micro estimates of the EIS for asset holders is around 0.3-0.4.",
   "basis": "2,735 estimates from 169 published studies",
   "caveat": "micro estimates for asset holders; macro mean zero",
-  "confidence": "high",
   "field": "Macroeconomics"
  },
  {
@@ -153,7 +139,6 @@
   "evidence": "First, the best-identified studies find smaller responses than naive ones: the publication-bias-corrected short-run elasticity is about −0.16 (a 10% rise in the electricity price cuts consumption by under 2%), and only −0.09 among the best-identified studies, whose adjusted value is statistically indistinguishable from zero. Second, responsiveness grows with time to adjust, roughly doubling from −0.16 in the short run to −0.38 in the long run as the capital stock turns over, but this pattern has itself been stable for decades.",
   "basis": "4,720 estimates from 462 studies",
   "caveat": "best-identified short-run estimates statistically indistinguishable from zero",
-  "confidence": "high",
   "field": "Energy and environmental economics"
  },
  {
@@ -163,7 +148,6 @@
   "evidence": "A best-practice estimate that also imposes sound study design puts it near 0.12 for most of the world, markedly higher for the Middle East, and essentially zero, if anything slightly negative, for the Southeast Asian markets that dominate the Asian evidence.",
   "basis": "533 estimates from 106 studies",
   "caveat": "higher in the Middle East, about zero in Southeast Asia",
-  "confidence": "high",
   "field": "Financial economics"
  },
  {
@@ -173,7 +157,6 @@
   "evidence": "However, according to the meta-regression analysis, the euro's trade promoting effect corrected for publication bias is insignificant.",
   "basis": null,
   "caveat": null,
-  "confidence": "high",
   "field": "International economics",
   "lead": ""
  },
@@ -184,7 +167,6 @@
   "evidence": "When corrected for the bias due to aggregation and the bias due to publication selection, the literature yields a mean excess sensitivity of merely 0.11.",
   "basis": "about 3,000 estimates from 144 studies",
   "caveat": null,
-  "confidence": "medium",
   "field": "Macroeconomics",
   "kind": "estimate corrected for aggregation and publication bias"
  },
@@ -195,7 +177,6 @@
   "evidence": "Analyses adjusted for publication bias reveal average effects much smaller than commonly reported (general cognition: standardized mean difference, SMD = 0.227, 95% credible interval 0.116 to 0.330; memory: SMD = 0.027, 95% credible interval 0.000 to 0.227; executive functions: SMD = 0.012, 95% credible interval 0.000 to 0.147), along with wide prediction intervals spanning both negative and positive effects.",
   "basis": "2,239 effect-size estimates from 215 meta-analyses",
   "caveat": "wide prediction intervals spanning negative and positive effects",
-  "confidence": "high",
   "field": "Micro and experimental economics"
  },
  {
@@ -205,7 +186,6 @@
   "evidence": "When placing more weight on estimates that solve important identification problems in the literature (such as using data on existing linkages between firms instead of approximations based on input-output tables), we find that, as of 2018, a 10-percentage-point increase in foreign presence is likely to lift the productivity of domestic firms by 11%.",
   "basis": "332 estimates",
   "caveat": "as of 2018; 19% for joint ventures",
-  "confidence": "high",
   "field": "International economics"
  },
  {
@@ -215,7 +195,6 @@
   "evidence": "Taken together, the studies imply a positive and statistically significant effect, but the individual estimates vary widely.",
   "basis": "1,334 estimates from 67 studies",
   "caveat": null,
-  "confidence": "high",
   "field": "Financial economics"
  },
  {
@@ -225,7 +204,6 @@
   "evidence": "Correcting for these biases yields slope coefficients in the intervals (0.23,0.45) and (0.95,1.16) for the currencies of developed and emerging countries respectively.",
   "basis": "3,643 estimates from 91 studies",
   "caveat": "unbiasedness hypothesis predicts slope of 1",
-  "confidence": "high",
   "field": "International economics"
  },
  {
@@ -235,7 +213,6 @@
   "evidence": "A total hours elasticity of about 0.25 is the most consistent with empirical evidence.",
   "basis": "over 700 estimates for each margin",
   "caveat": "0.2 on the intensive margin, near zero on the extensive",
-  "confidence": "high",
   "field": "Labor and education economics"
  },
  {
@@ -245,7 +222,6 @@
   "evidence": "Our results suggest that the income elasticity of gasoline demand is on average much smaller than reported in previous surveys: the mean corrected for publication bias is 0.1 for the short run and 0.23 for the long run.",
   "basis": null,
   "caveat": null,
-  "confidence": "high",
   "field": "Energy and environmental economics"
  },
  {
@@ -255,12 +231,10 @@
   "evidence": "Using mixed-effects multilevel meta-regression, we show that after correction for publication bias the average long-run elasticity reaches -0.31 and the average short-run elasticity only -0.09.",
   "basis": null,
   "caveat": null,
-  "confidence": "high",
   "field": "Energy and environmental economics"
  },
  {
   "project": "guidelines",
-  "confidence": "high",
   "parameter": "How to run a modern meta-analysis",
   "headline": "a concise, nontechnical, step-by-step guide for practitioners, treating publication bias, p-hacking and heterogeneity as problems every meta-analyst must confront",
   "evidence": "This paper provides concise, nontechnical, step-by-step guidelines on how to conduct a modern meta-analysis",
@@ -277,7 +251,6 @@
   "evidence": "The mean reported strength of habit formation equals 0.4, but the estimates vary widely both within and across studies. We use Bayesian and frequentist model averaging to assign a pattern to this variance while taking into account model uncertainty. Studies employing macro data report consistently larger estimates than micro studies: 0.6 vs. 0.1 on average.",
   "basis": "597 estimates from 81 published studies",
   "caveat": "mean reported estimate, with no correction for publication bias",
-  "confidence": "high",
   "field": "Micro and experimental economics"
  },
  {
@@ -287,7 +260,6 @@
   "evidence": "Most of our monthly alpha estimates adjusted for the (small) bias fall within a relatively narrow range of 30 to 40 basis points.",
   "basis": "1,019 alpha estimates from 74 studies",
   "caveat": "predominantly net of fees: 984 of the 1,019 estimates are net; the companion study puts the best-practice figure near zero once recent data and study design are imposed",
-  "confidence": "high",
   "field": "Financial economics"
  },
  {
@@ -297,7 +269,6 @@
   "evidence": "Using recent advances in correcting for publication bias and p-hacking, we find that the corrected mean effect of financial incentives on performance is close to zero across most field contexts.",
   "basis": "2,193 estimates from 88 economics experiments",
   "caveat": "field contexts; lab and loss framing modestly positive",
-  "confidence": "high",
   "field": "Micro and experimental economics"
  },
  {
@@ -307,7 +278,6 @@
   "evidence": "Across publication-selection and selection-on-significance diagnostics that are applicable in this calibration-dominated corpus, the literature points to an optimum of roughly 0.6 percentage points per year, well below the two-percent targets commonly used by advanced-economy central banks.",
   "basis": "777 estimates from 116 primary studies",
   "caveat": "calibration-dominated model literature",
-  "confidence": "high",
   "field": "Macroeconomics"
  },
  {
@@ -317,7 +287,6 @@
   "evidence": "The average transmission lag is twenty-nine months, and the maximum decrease in prices reaches 0.9 percent on average after a 1-percentage-point hike in the policy rate. Transmission lags are longer in developed economies (twenty-five to fifty months) than in post-transition economies (ten to twenty months). We find that the factor most effective in explaining this heterogeneity is financial development: greater financial development is associated with slower transmission.",
   "basis": "67 published studies",
   "caveat": "prices bottom out 0.9% below baseline after a 1-percentage-point hike",
-  "confidence": "high",
   "field": "Macroeconomics"
  },
  {
@@ -327,12 +296,10 @@
   "evidence": "Our preferred specifications, RoBMA and MAIVE, rely on different assumptions yet converge on an effect size of approximately −0.12 SD, equivalent to a learning loss of about 30% of a school year.",
   "basis": null,
   "caveat": null,
-  "confidence": "high",
   "field": "Labor and education economics"
  },
  {
   "project": "maive",
-  "confidence": "high",
   "parameter": "Spurious precision in meta-analysis (the MAIVE estimator)",
   "headline": "estimated precision can be p-hacked, which invalidates inverse-variance weighting; MAIVE instruments variance with sample size",
   "evidence": "spurious precision can invalidate inverse-variance weighting",
@@ -348,7 +315,6 @@
   "evidence": "Our best-practice estimates, which net out publication bias and prioritize the most granular data, imply an elasticity of about 17 in our baseline regional specification, lower than implied by a simple bias correction but substantially higher than the uncorrected mean.",
   "basis": "1,091 estimates from 41 studies",
   "caveat": "baseline regional specification; simple bias correction implies 22",
-  "confidence": "high",
   "field": "Labor and education economics"
  },
  {
@@ -358,13 +324,11 @@
   "evidence": "Alternative outlier handling treatments have little effect on the meta-analysis mean as the median absolute change in Cohen's d is at most 0.047 and often much less. Yet, at least one of these four treatments in combination with one of these estimators reverses the statistical significance of 11.5% of meta-analyses and the smallest-effect-of-interest assessment in 15.9%.",
   "basis": "358 behavioral science meta-analyses",
   "caveat": "across four pre-registered outlier treatments and two estimators",
-  "confidence": "high",
   "kind": "methodological finding",
   "field": "Meta-research methods"
  },
  {
   "project": "pcc",
-  "confidence": "high",
   "parameter": "Bias in meta-analyses of partial correlations",
   "headline": "all such meta-analyses are biased; the UWLS+3 weighted average corrects them",
   "evidence": "We demonstrate that all meta-analyses of partial correlations are biased",
@@ -381,7 +345,6 @@
   "evidence": "After controlling for both publication and misspecification biases, the price puzzle is not present and prices bottom out 6 months after a 1 percentage point increase in the interest rate. The maximum decrease in the price level reaches 0.33% and is statistically significant at the 5% level.",
   "basis": "about 1,000 estimates from 70 studies",
   "caveat": null,
-  "confidence": "high",
   "field": "Macroeconomics",
   "lead": ""
  },
@@ -392,7 +355,6 @@
   "evidence": "Our results show that an average reform caused substantial costs in the short run, but had strong positive effects on long-run growth. ... The findings hold even after correction for publication bias and misspecifications present in some primary studies. ... In total, 60 studies issued since 1996 are included ... they contain 537 empirical estimates",
   "basis": "60 studies with 537 estimates",
   "caveat": null,
-  "confidence": "high",
   "field": "Macroeconomics",
   "lead": ""
  },
@@ -403,7 +365,6 @@
   "evidence": "Correcting for the bias using recently developed techniques, we find that the mean effect of remittances on growth is still positive but economically small.",
   "basis": "538 estimates from 95 studies",
   "caveat": "growth-enhancing in Asia but not Africa",
-  "confidence": "high",
   "field": "Financial economics"
  },
  {
@@ -413,7 +374,6 @@
   "evidence": "In a quantitative survey of 605 estimates reported in 43 studies, we find that overall support for the resource curse hypothesis is weak when potential publication bias and method heterogeneity are taken into account.",
   "basis": "605 estimates from 43 studies",
   "caveat": null,
-  "confidence": "medium",
   "field": "Energy and environmental economics"
  },
  {
@@ -423,7 +383,6 @@
   "evidence": "After correction for the bias, the literature suggests a mean risk aversion of 1 in economics and 2-7 in finance contexts.",
   "basis": "1,021 estimates from 92 studies",
   "caveat": "from consumption Euler equation studies",
-  "confidence": "high",
   "field": "Micro and experimental economics"
  },
  {
@@ -433,7 +392,6 @@
   "evidence": "Our estimates of the mean reported SCC corrected for the selective reporting bias range between 0 and 134 USD per ton of carbon in 2010 prices for emission year 2015.",
   "basis": "809 estimates from 101 studies",
   "caveat": "2010 prices, emission year 2015; per ton of carbon, not CO2",
-  "confidence": "high",
   "field": "Energy and environmental economics"
  },
  {
@@ -443,7 +401,6 @@
   "evidence": "The mean elasticity conditional on the absence of publication bias, disaggregated data, and inclusion of information from the first-order condition for capital is 0.3.",
   "basis": "3,186 estimates from 121 studies",
   "caveat": "best-practice specification; the mean reported estimate is 0.9",
-  "confidence": "high",
   "field": "Macroeconomics"
  },
  {
@@ -453,7 +410,6 @@
   "evidence": "After correcting for the bias, we find that the literature suggests a size premium (the difference in annual stock returns on the smallest and largest capitalization quintile) of 1.72%.",
   "basis": "1,746 estimates from 102 published studies",
   "caveat": "smallest vs. largest capitalization quintile",
-  "confidence": "high",
   "field": "Financial economics"
  },
  {
@@ -463,7 +419,6 @@
   "evidence": "The implied mean elasticity is 4, with a lower bound of 2.",
   "basis": "682 estimates from 77 studies",
   "caveat": null,
-  "confidence": "high",
   "field": "Labor and education economics"
  },
  {
@@ -473,7 +428,6 @@
   "evidence": "Taking into consideration publication and misspecification bias, our preferred estimate suggests that a 10-percentage-point increase in foreign presence is associated with an increase in the productivity of domestic firms in supplier sectors of about 9%.",
   "basis": "3,626 estimates",
   "caveat": null,
-  "confidence": "high",
   "field": "International economics",
   "kind": "estimate corrected for publication and misspecification bias"
  },
@@ -484,12 +438,10 @@
   "evidence": "Overall the literature suggests a negative but economically inconsequential mean effect.",
   "basis": "861 estimates from 69 studies",
   "caveat": "more substantive for dropout decisions",
-  "confidence": "high",
   "field": "Labor and education economics"
  },
  {
   "project": "substitution",
-  "confidence": "high",
   "parameter": "Why intertemporal substitution varies across countries",
   "headline": "income and asset market participation explain most of the cross-country heterogeneity",
   "evidence": "income and asset market participation are the most effective factors in explaining the heterogeneity",
@@ -505,7 +457,6 @@
   "evidence": "The more stable association is with rule of law, and it runs against the intuitive expectation that better legal institutions shrink the premium: stronger rule of law is associated with more negative reported size slopes, hence larger conventional size premia.",
   "basis": "1,613 estimates from 105 studies and 31 countries",
   "caveat": "association in reported estimates, not causal",
-  "confidence": "high",
   "field": "Financial economics"
  },
  {
@@ -515,7 +466,6 @@
   "evidence": "Attempting to correct simultaneously for publication and endogeneity biases, we find that the mean underlying elasticity is approximately 0.15 or less.",
   "basis": "307 estimates",
   "caveat": null,
-  "confidence": "high",
   "field": "Energy and environmental economics"
  },
  {
@@ -525,13 +475,11 @@
   "evidence": "As the bottom line of our analysis we compute the impulse response implied by the entire literature but conditional on the absence of publication bias and potential misspecifications. ... The mean maximum corrected semi-elasticity is -1.2 ... Our results suggest that a one-percentage-point increase in the policy rate is on average associated with a maximum decrease of 1.2% in house prices after two years.",
   "basis": "1,555 estimates from 237 impulse responses in 37 studies",
   "caveat": "correcting for publication bias alone gives 0.23%, but conditioning on best practice offsets it",
-  "confidence": "high",
   "field": "Macroeconomics",
   "lead": "corrected for publication bias and misspecification,"
  },
  {
   "project": "debate",
-  "confidence": "high",
   "parameter": "Whether multi-agent AI debate improves feedback on research papers",
   "headline": "it does not; authors of 44 meta-analyses preferred a single frontier-model pass to two multi-agent debate tools",
   "evidence": "The authors preferred the single pass",
@@ -543,7 +491,6 @@
  },
  {
   "project": "pcc_survey",
-  "confidence": "high",
   "parameter": "Whether the estimator choice matters for partial correlations in practice",
   "headline": "small-sample biases are negligible and Fisher's z helps with neither them nor publication selection bias; UWLS and Hunter-Schmidt give smaller, arguably less biased means than random effects",
   "evidence": "We find that small-sample biases are negligible in practice. However, some publication selection biases remain. Although Fisher's z transformations have often been recommended, they reduce neither small-sample nor publication selection biases relative to conventional random effects. Both the unrestricted weighted least squares (UWLS) and the Hunter-Schmidt (HS) estimators produce smaller, arguably less biased, estimates of the mean PCC in these applications than either random effects or Fisher's z transformations.",
@@ -555,7 +502,6 @@
  },
  {
   "project": "conventional_wisdom",
-  "confidence": "high",
   "parameter": "How far corrected effects move from conventional wisdom",
   "headline": "corrected effects are typically 45-60% smaller, much closer to zero, and sometimes switch sign",
   "evidence": "After correcting for observable biases, the empirical economic effects are typically much closer to zero and sometimes switch signs. Typically, the relative reduction in effect sizes is 45%-60%.",

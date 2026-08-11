@@ -207,10 +207,12 @@ def build(check=False):
             # evidence count and the citation. Checked across all 52 rows: every sentence
             # already contains its own source, basis and caveat, so rendering those again
             # underneath would only repeat them.
-            # `confidence` is the site's own flag on how firmly the figure is established;
-            # say so rather than hiding it, and only when it is not the default.
-            flag = ('<p class="r-flag">The site records this figure as medium confidence.</p>\n'
-                    if r.get("confidence") and r["confidence"].lower() != "high" else "")
+            # The confidence grade is no longer published. 51 of 54 were "high" silently
+            # and 3 were flagged, which is an unfinished taxonomy rather than a rubric:
+            # it invited "why is that one high?" for every paper, obliged a grade on every
+            # future one, and all three flagged papers were his own. A caveat that matters
+            # belongs in the answer prose, the way /hedge/ carries net-of-fees.
+            flag = ""
             # A reader who found their number still had to click through for a citation:
             # "Ehrenbergerova et al. 2023, IMF Economic Review" is not something you can
             # paste into a bibliography. papers.json already holds the full reference line
@@ -242,9 +244,6 @@ def build(check=False):
             if refs.get(p):
                 answer["citation"] = ([answer["citation"], refs[p]]
                                       if "citation" in answer else refs[p])
-            if r.get("confidence") and r["confidence"].lower() != "high":
-                answer["disambiguatingDescription"] = (
-                    f"meta-analysis.cz records this figure as {r['confidence']} confidence.")
             jsonld_items.append({
                 "@type": "Question",
                 "name": q,

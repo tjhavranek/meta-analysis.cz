@@ -82,7 +82,7 @@ for e in EST:
         "field": e.get("field", ""), "project": proj, "parameter": e["parameter"],
         "headline": e["headline"], "caveat": e.get("caveat") or "",
         "basis": e.get("basis") or "", "source": src,
-        "confidence": e.get("confidence", ""), "url": f"{SITE}/{proj}/",
+        "url": f"{SITE}/{proj}/",
         "doi": p.get("doi_or_publisher_url") or "",
         "sentence": sentence, "source_quote": e.get("evidence") or "",
         "pdf": pdf_url(proj),

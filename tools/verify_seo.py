@@ -62,6 +62,11 @@ pages = ["index.html"] + sorted(
     f"{d}/index.html" for d in os.listdir(SITE)
     if os.path.isfile(os.path.join(SITE, d, "index.html"))
     and d not in SELF_MANAGED)
+# /about/ is self-managed so the paper injector leaves it alone, but it is a normal
+# hand-authored page and every structural check below still applies to it. Without this
+# line it would be the one page nothing verifies.
+if os.path.isfile(os.path.join(SITE, "about", "index.html")):
+    pages.append("about/index.html")
 
 n_ld = n_urls = 0
 for rel in pages:

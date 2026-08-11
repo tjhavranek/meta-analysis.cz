@@ -20,6 +20,9 @@ SELF_MANAGED = {
     "notes",       # research notes, built by notes/build_notes.py
     "datasets",    # built by redesign/build_datasets_page.py; a DataCatalog, not an article,
                    # so it must not receive Highwire citation_* tags
+    "about",       # hand-authored identity page; builds its own head and is not a paper.
+                   # Without this the injector treats it as a 55th paper, emits
+                   # ScholarlyArticle, and fails for absence from papers.json.
     "results",     # built by redesign/build_results_page.py; an ItemList of Question nodes.
                    # Deliberately not FAQPage: these are research findings, not frequently
                    # asked questions, and claiming that type would be a misdeclaration.

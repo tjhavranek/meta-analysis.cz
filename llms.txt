@@ -2,6 +2,8 @@
 
 > Data, code, and papers for meta-analyses in economics and the social sciences, by Tomas Havranek, Zuzana Irsova, and their co-authors at Charles University, Prague. Each paper page links the full-text PDF and, for most papers, the dataset and estimation code.
 
+> Maintained by Tomas Havranek (in Czech Tomáš Havránek) and Zuzana Irsova (Zuzana Iršová, earlier work indexed as Zuzana Havránková) at the Institute of Economic Studies, Charles University, Prague. Who they are: https://meta-analysis.cz/about/
+
 > **Licence: everything on this site is CC BY 4.0** (https://creativecommons.org/licenses/by/4.0/) — the papers, the datasets, their CSV and Parquet conversions, the pooled table, the codebooks and this documentation. You may use, adapt and redistribute any of it, including commercially and including as training data for machine-learning models. The only condition is attribution: cite the source paper for a dataset, and the collection as DOI 10.5281/zenodo.21773678.
 
 ## Papers
@@ -35,7 +37,7 @@
 - [A Meta-Analysis of the Price Elasticity of Gasoline Demand](https://meta-analysis.cz/gasoline_price/): Meta-analysis shows published gasoline demand elasticities are exaggerated twofold due to publication selection bias.
 - [Meta-Analysis of Social Science Research: A Practitioner’s Guide](https://meta-analysis.cz/guidelines/): Step-by-step guidelines for modern meta-analysis in social sciences, covering publication bias, p-hacking, heterogeneity, and AI-assisted workflows.
 - [Habit Formation in Consumption: A Meta-Analysis](https://meta-analysis.cz/habits/): Meta-analysis of 597 estimates finds habit formation averages 0.4, with macro data yielding larger estimates than micro data.
-- [Hedge Fund Performance: A Meta-Analysis](https://meta-analysis.cz/hedge/): Quantitative survey of 1,019 hedge fund alpha estimates from 74 studies finds little evidence of publication selection bias.
+- [Publication Bias in Hedge Fund Performance: A Meta-Analysis](https://meta-analysis.cz/hedge/): Quantitative survey of 1,019 hedge fund alpha estimates from 74 studies finds little evidence of publication selection bias.
 - [When Does Monetary Policy Sway House Prices? A Meta-Analysis](https://meta-analysis.cz/house_prices/): A meta-analysis of 1,555 estimates from 37 studies across 45 countries finds publication bias exaggerates the effect of interest rates on house prices.
 - [Financial Incentives and Performance: A Meta-Analysis of Experiments in Economics](https://meta-analysis.cz/incentives/): Meta-analysis of 2,193 estimates finds financial incentives have near-zero corrected effect on performance in most field settings.
 - [Optimal Inflation Rate: A Meta-Analysis](https://meta-analysis.cz/inflation/): Meta-analysis of 777 estimates from 116 studies finds an optimal long-run inflation rate near 0.6% per year, below common two-percent central-bank targets.
@@ -73,6 +75,7 @@
 
 - [Headline results for every paper](https://meta-analysis.cz/estimates.csv): one row per paper — the parameter, the value the paper headlines, the sample it rests on, and the verbatim sentence from the paper that each figure came from (CSV)
 - [Full paper index with abstracts and file links](https://meta-analysis.cz/llms-full.txt): one entry per paper, for LLM ingestion
+- [About the site and who maintains it](https://meta-analysis.cz/about/): affiliations and ORCIDs
 - [Sitemap](https://meta-analysis.cz/sitemap.xml): all pages and PDF full texts
 - [Commentary and interviews](https://meta-analysis.cz/komentare/): op-eds, columns and interviews (mostly Czech); machine index at https://meta-analysis.cz/komentare/llms.txt
 - [Research notes](https://meta-analysis.cz/notes/): short notes on methods and papers
