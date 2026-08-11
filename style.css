@@ -644,6 +644,15 @@ table.catalogue li{ margin-bottom:var(--s2); font-size:var(--f-1); line-height:1
 .site-foot p{ margin:0 0 var(--s3); }
 .site-foot b{ color:var(--ink); font-weight:600; }
 .site-foot a{ color:var(--accent); }
+/* A link whose words are also bold was coming out in two colours. The bold rules above are
+   written for standalone emphasis and beat the anchor on specificity, so in "maintained by
+   Tomáš Havránek and Zuzana Iršová" -- one link wrapping two bold names and a plain "and" --
+   the names rendered ink and only the "and" took the link colour. Bold inside a link follows
+   the link, in the three places where the two rules meet -- the same defect sat under the
+   field navigation, where "one searchable page" was a black underlined phrase standing among
+   six blue ones. The de-promotion there was about the field links' weight against the tool
+   links above, so `.fieldnav b` still mutes the standalone "Browse by field:" label. */
+.site-foot a b, .post.estimates .entry p a b, .fieldnav a b{ color:inherit; }
 /* One measure for the whole block. The lede was on --measure (36rem) while the licence
    ran to 52rem, so the footer had two different line lengths for no reason and read as a
    stack of unrelated paragraphs. The opening statement is set in the page's serif, and a
