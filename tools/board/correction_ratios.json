@@ -45,12 +45,15 @@
   },
   {
    "project": "esg",
-   "corrected": 0.12,
-   "mean": null,
-   "mean_from": "data",
-   "corrected_quote": "A best-practice estimate that also imposes sound study design puts it near 0.12 for most of the world.",
-   "tier": "subsample",
-   "approximation": "0.12 is the best-practice estimate for the rest of the world, which is where most of the estimates are; the paper reports 0.276 for the Middle East and about zero for Asia. Correcting for publication bias alone across the whole sample gives 0.08 to 0.17 against the same mean, so the direction is the same either way."
+   "corrected": 0.125,
+   "mean": 0.28,
+   "mean_from": "paper",
+   "corrected_quote": "Correcting for publication bias alone brings the typical effect down to between 0.08 and 0.17 points, depending on the method.",
+   "tier": "range",
+   "approximation": "plotted at 0.125, the midpoint of the 0.08 to 0.17 the paper reports for the whole sample; both ends are its own figures. The 0.12 the page quotes is the best-practice estimate for most of the world, and the paper reports 0.276 for the Middle East and about zero for Southeast Asia, so it does not cover the same firms as an average over every estimate.",
+   "quote_source": "pdf",
+   "corrected_locator": "Havránek, Iršová et al., abstract: the sentence beginning 'Much of that reflects selective reporting'",
+   "mean_quote": "diversity raises ESG scores by about 0.28 points"
   },
   {
    "project": "water",
@@ -75,12 +78,15 @@
   },
   {
    "project": "beauty",
-   "corrected": 1.1,
-   "mean": null,
-   "mean_from": "data",
-   "corrected_quote": "Second, controlling for cognitive ability renders the premium small (mean = 1.1%; 95% CrI = -0.8%, 3.0%) for all occupations except sex workers, where appearance is a direct input.",
-   "tier": "subsample",
-   "approximation": "1.1% is the paper's representative figure for the US economy: it reweights occupation subgroups by external employment shares, and the paper notes the subgroups do not average to the overall mean. Correcting for publication bias alone gives roughly 3% against 4.3%, the same direction and a smaller move."
+   "corrected": 3,
+   "mean": 5,
+   "mean_from": "paper",
+   "corrected_quote": "Conservative corrections for publication bias reduce the mean premium from about 5% to about 3%, while other techniques suggest a more aggressive reduction.",
+   "tier": "range",
+   "approximation": "both ends are the paper's own approximate figures, and 3% is the conservative end: it says other techniques cut the premium further. The 1.1% the page quotes is a different quantity -- it controls for cognitive ability and reweights occupations towards US employment shares, and the paper says its subgroups do not average to the overall mean.",
+   "quote_source": "pdf",
+   "corrected_locator": "Iršová, Havránek et al., abstract: the sentence after 'The mean premium reported in the literature is exaggerated by publication bias.'",
+   "mean_quote": "reduce the mean premium from about 5%"
   },
   {
    "project": "learning",
@@ -91,19 +97,23 @@
   },
   {
    "project": "migrant",
-   "corrected": 17,
+   "corrected": 22,
    "mean": 13,
    "mean_from": "paper",
-   "corrected_quote": "Our best-practice estimates, which net out publication bias and prioritize the most granular data, imply an elasticity of about 17 in our baseline regional specification, lower than implied by a simple bias correction but substantially higher than the uncorrected mean.",
-   "note": "the abstract states both: 'raises the mean elasticity (sigma) from an uncorrected 13 to approximately 22'. 17 is the best-practice figure the paper leads with; 13 is its own uncorrected mean. Its estimate-level column is a different transform, which is why the paper's own pair is used -- the same treatment as sigma, dst and excess_sensitivity. Its best-practice figure is a synthetic study: the paper evaluates its model at the literature's preferred values — recent data, more observations, better-cited outlets. That is the construction these authors use and the one behind Gechert et al.'s corrected column, and it is the paper's own headline conclusion."
+   "corrected_quote": "After correcting for this bias, the implied elasticity rises from an uncorrected average of 13 to approximately 22.",
+   "note": "both ends are the paper's own whole-literature figures. Its best-practice estimate of about 17, which the page quotes, conditions on the baseline regional specification -- Table 5 gives about 8 for national models -- so it is not commensurate with an uncorrected mean taken across every design.",
+   "quote_source": "pdf",
+   "corrected_locator": "Iršová et al., section 1: the sentence follows the precision-selection result and precedes the relative-wage implication",
+   "mean_quote": "the implied elasticity rises from an uncorrected average of 13"
   },
   {
    "project": "armington",
    "corrected": 3.8,
-   "mean": null,
-   "mean_from": "data",
+   "mean": 1.56,
+   "mean_from": "paper",
    "corrected_quote": "Third, the elasticity implied by the literature after accounting for both publication bias and study quality lies in the range 2.5--5.1 with a median of 3.8.",
-   "note": "the paper gives a median, not only a range; 3.8 is its own central value. It is numerically also the midpoint of 2.5-5.1, which is worth knowing, but a stated median is a stated value."
+   "note": "the paper corrects long-run elasticities only, so the comparator is its own long-run uncorrected mean rather than the mean of every estimate in the file. Table 1 splits the sample: 556 short-run estimates average 0.88, 2,968 long-run estimates 1.56.",
+   "mean_quote": "Long-run effect ... 1.56 (Table 1, 2,968 estimates)"
   },
   {
    "project": "skill",
@@ -187,7 +197,7 @@
    "quote_source": "pdf",
    "tier": "table",
    "units": "elasticity of intertemporal substitution",
-   "approximation": "The site's headline, 0.3-0.4, is the corrected value for a narrower subsample: micro estimates for asset holders. What is plotted is Table 1's corrected mean for the WHOLE literature, which is the quantity this figure measures and which the paper reports as essentially zero.",
+   "approximation": "The site's headline, 0.3-0.4, is the corrected value for a narrower subsample: micro estimates for asset holders. What is plotted is Table 1's corrected mean for the WHOLE literature, which is the quantity this figure measures and which the paper reports as essentially zero. The two ends also treat the tails differently: the mean of 0.5 excludes estimates above 10 in absolute value, while the regression keeps all 2,735 because precision weighting already gives the extremes little weight.",
    "corrected_quote": "The first column of Table 1 reports the baseline result. The estimated β is approximately two and the constant equals zero, suggesting strong selective reporting and zero underlying elasticity on average.",
    "corrected_locator": "Havranek 2015, JEEA 13(6), Table 1 column 'FE', the paper's preferred specification: Constant 0.0145, s.e. 0.00881, 2,735 estimates",
    "mean_quote": "The mean reported estimate from all studies is 0.5."
