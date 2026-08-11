@@ -3,7 +3,7 @@
  "rule": {
   "include": "the paper states, in its own words, a single corrected or best-practice value for ONE clearly defined estimand -- the whole literature where it gives one, otherwise a named horizon or subsample -- AND a comparator for that same estimand in the same units and the same transform: either the paper's own uncorrected/reported mean, or a value commensurate with its estimate-level effect column. Anything narrower than the whole literature, or read off a table rather than the headline, or taken as the central value of a range or an upper bound, is admitted under `tier` and drawn as a ring with a note saying so.",
   "comparator": "the paper's own stated mean if it states one -- it is the published comparator and the authors chose it -- otherwise the 1%-winsorised mean of the estimate-level data",
-  "exclude": "ranges, several values for different horizons or subsamples, narrative answers, a different estimand (a peak response against an average, a conditional prediction at sample maxima), units that do not match, a headline value that is not itself a correction, and any case where two defensible comparators disagree about the DIRECTION",
+  "exclude": "ranges, several values for different horizons or subsamples, narrative answers, a different estimand, units that do not match, a headline value that is not itself a correction, a second row on a literature already represented, and any case where two defensible comparators disagree about the DIRECTION. Note what is NOT excluded: a best-practice figure computed as a synthetic study at the literature's preferred values. That is how these papers construct best practice and how Gechert et al. build their corrected column; excluding it would remove most papers' own headline conclusions. The rows concerned say so in their notes.",
   "direction_blind": "The rule was rewritten after an adversarial review found that every paper whose correction moved the number AWAY from zero had landed in the excluded set. Nothing in the rule refers to the sign of the revision, and `migrant` (+31%) and `armington` (+152%) are in the figure because the rule admits them, not despite it. If a future paper moves up, it appears.",
   "verbal_zero": "A paper that says its corrected effect is 'about zero', 'negligible' or 'insignificant' without giving a number does NOT enter as 0. Coding a verbal hedge as an exact zero forces exactly -100% and would have put four such papers at the extreme of the figure. Insignificance is not a point estimate."
  },
@@ -14,7 +14,7 @@
    "mean": -0.34,
    "mean_from": "paper",
    "corrected_quote": "The resulting global estimate is -0.01%, quite distant from -0.34%, the simple average effect reported in the literature.",
-   "note": "the paper states both numbers in one sentence"
+   "note": "the paper states both numbers in one sentence Its best-practice figure is a synthetic study: the paper evaluates its model at the literature's preferred values — recent data, more observations, better-cited outlets. That is the construction these authors use and the one behind Gechert et al.'s corrected column, and it is the paper's own headline conclusion."
   },
   {
    "project": "excess_sensitivity",
@@ -29,8 +29,10 @@
    "corrected": 0.3,
    "mean": 0.9,
    "mean_from": "paper",
-   "corrected_quote": "The mean elasticity conditional on the absence of publication bias, disaggregated data, and inclusion of information from the first-order condition for capital is 0.3.",
-   "note": "the caveat column states the comparator: 'the mean reported estimate is 0.9'. The winsorised mean of the shipped data is 0.66; the paper's own number is used."
+   "corrected_quote": "The mean elasticity conditional on the absence of these issues is 0.3.",
+   "note": "the caveat column states the comparator: 'the mean reported estimate is 0.9'. The winsorised mean of the shipped data is 0.66; the paper's own number is used.",
+   "quote_source": "pdf",
+   "corrected_locator": "sigma2.pdf p.1 (abstract); 'these issues' are the publication bias, aggregation and first-order-condition problems named in the preceding sentence"
   },
   {
    "project": "discrate",
@@ -46,7 +48,9 @@
    "corrected": 0.12,
    "mean": null,
    "mean_from": "data",
-   "corrected_quote": "A best-practice estimate that also imposes sound study design puts it near 0.12 for most of the world."
+   "corrected_quote": "A best-practice estimate that also imposes sound study design puts it near 0.12 for most of the world.",
+   "tier": "subsample",
+   "approximation": "0.12 is the best-practice estimate for the rest of the world, which is where most of the estimates are; the paper reports 0.276 for the Middle East and about zero for Asia. Correcting for publication bias alone across the whole sample gives 0.08 to 0.17 against the same mean, so the direction is the same either way."
   },
   {
    "project": "water",
@@ -63,16 +67,20 @@
    "corrected": 0.25,
    "mean": 0.5,
    "mean_from": "paper",
-   "corrected_quote": "A total hours elasticity of about 0.25 is the most consistent with empirical evidence.",
-   "mean_quote": "For both the intensive and extensive margins the literature provides over 700 estimates, with a mean of 0.5 in both cases",
-   "note": "the corrected 0.25 is for TOTAL hours; the shipped column is the extensive-margin file, a different estimand, so its mean cannot be the comparator. The paper's own pair is used: mean 0.5, and its conclusion says publication bias exaggerates the mean reported elasticity approximately twofold."
+   "corrected_quote": "the two panels suggest that 0.25 is a reasonable estimate for the mean Frisch elasticity at the extensive margin",
+   "mean_quote": "publication bias in the literature is substantial and likely to exaggerate the mean reported elasticity approximately twofold",
+   "note": "0.25 is the paper's estimate for the EXTENSIVE margin, which is the margin the shipped column holds; it also happens to be the paper's total-hours headline. The earlier version of this row quoted the total-hours sentence against a per-margin mean, which crossed estimands. The pair and the -50% are unchanged.",
+   "quote_source": "pdf",
+   "corrected_locator": "frisch2.pdf p.8; the same page concludes that publication bias 'is likely to exaggerate the mean reported elasticity approximately twofold', i.e. 0.25 against the reported 0.5"
   },
   {
    "project": "beauty",
    "corrected": 1.1,
    "mean": null,
    "mean_from": "data",
-   "corrected_quote": "Second, controlling for cognitive ability renders the premium small (mean = 1.1%; 95% CrI = -0.8%, 3.0%) for all occupations except sex workers, where appearance is a direct input."
+   "corrected_quote": "Second, controlling for cognitive ability renders the premium small (mean = 1.1%; 95% CrI = -0.8%, 3.0%) for all occupations except sex workers, where appearance is a direct input.",
+   "tier": "subsample",
+   "approximation": "1.1% is the paper's representative figure for the US economy: it reweights occupation subgroups by external employment shares, and the paper notes the subgroups do not average to the overall mean. Correcting for publication bias alone gives roughly 3% against 4.3%, the same direction and a smaller move."
   },
   {
    "project": "learning",
@@ -87,7 +95,7 @@
    "mean": 13,
    "mean_from": "paper",
    "corrected_quote": "Our best-practice estimates, which net out publication bias and prioritize the most granular data, imply an elasticity of about 17 in our baseline regional specification, lower than implied by a simple bias correction but substantially higher than the uncorrected mean.",
-   "note": "the abstract states both: 'raises the mean elasticity (sigma) from an uncorrected 13 to approximately 22'. 17 is the best-practice figure the paper leads with; 13 is its own uncorrected mean. Its estimate-level column is a different transform, which is why the paper's own pair is used -- the same treatment as sigma, dst and excess_sensitivity."
+   "note": "the abstract states both: 'raises the mean elasticity (sigma) from an uncorrected 13 to approximately 22'. 17 is the best-practice figure the paper leads with; 13 is its own uncorrected mean. Its estimate-level column is a different transform, which is why the paper's own pair is used -- the same treatment as sigma, dst and excess_sensitivity. Its best-practice figure is a synthetic study: the paper evaluates its model at the literature's preferred values — recent data, more observations, better-cited outlets. That is the construction these authors use and the one behind Gechert et al.'s corrected column, and it is the paper's own headline conclusion."
   },
   {
    "project": "armington",
@@ -128,7 +136,7 @@
    "corrected_quote": "The overall mean semi-elasticity is 1.76, which translates into a border effect of 5.8-almost four times smaller than the border effect based on the sample mean of the semi-elasticities reported in the literature.",
    "corrected_locator": "border2.pdf p.22 (IMF Economic Review 65(2), p.386), Section 5 'Best Practice'; same value in the 'All countries' row",
    "mean_quote": "Table 1, 'Border Effects Differ Across Countries', p.372, last row: All countries | 1,271 | 3.03 (unweighted mean)",
-   "note": "Same units as the shipped column (semi-elasticity, the same 1,271 estimates). Excluded before because the site quotes the paper's 'one-third reduction in trade' sentence, which is a different transform -- but the paper states the semi-elasticity pair itself."
+   "note": "Same units as the shipped column (semi-elasticity, the same 1,271 estimates). Excluded before because the site quotes the paper's 'one-third reduction in trade' sentence, which is a different transform -- but the paper states the semi-elasticity pair itself. Its best-practice figure is a synthetic study: the paper evaluates its model at the literature's preferred values — recent data, more observations, better-cited outlets. That is the construction these authors use and the one behind Gechert et al.'s corrected column, and it is the paper's own headline conclusion."
   },
   {
    "project": "climate",
@@ -152,7 +160,7 @@
    "quote_source": "pdf",
    "tier": "table",
    "units": "partial correlation coefficient, on both sides of the ratio",
-   "approximation": "The paper's headline answer is verbal - the elasticity is 'close to zero' - so the number here is its best-practice estimate from Table 6 rather than a figure it puts in the abstract.",
+   "approximation": "The paper's headline answer is verbal - the elasticity is 'close to zero' - so the number here is its best-practice estimate from Table 6 rather than a figure it puts in the abstract. The Table 6 figure is a synthetic study: publication characteristics are set at their sample maxima, the standard error and OLS at their minima, and the endogeneity control at its maximum.",
    "corrected_quote": "The 'best-practice' estimation in Table 6 yields a partial coefficient of −0.037 with a 95% confidence interval of (−0.055; −0.019).",
    "corrected_locator": "education2.pdf Table 6 ('All estimates', BMA column), p.21; restated in prose on p.22",
    "mean_quote": "the mean reported value of the tuition-enrolment partial correlation coefficient, −0.19 (shown in Table 2), is significantly exaggerated by the presence of publication bias",
@@ -261,12 +269,26 @@
    "corrected_quote": "The table shows that, for the full sample, our estimates based on various techniques of the “representative” alpha coefficient corrected for the publication selection bias range from 0.274 and 0.386. The mean and median values of 0.335 and 0.338, respectively",
    "corrected_locator": "Yang, Havranek, Irsova & Novak 2024, JoES 38: 1085-1131, p.1120 and Table 7, row 'Table 2 / Full sample'",
    "mean_quote": "The vertical line in Figure 3 denotes the unconditional sample mean of monthly alphas of 0.36%"
+  },
+  {
+   "project": "finance_growth",
+   "corrected": 0.199,
+   "mean": 0.15,
+   "mean_from": "paper",
+   "quote_source": "pdf",
+   "tier": "table",
+   "units": "partial correlation coefficient",
+   "approximation": "The paper's headline is verbal — an 'authentic positive link' — so the number here is the FAT-PET effect from its Table 2 rather than a figure it puts in the abstract.",
+   "corrected_quote": "The statistically significant estimate of beta indicates that the literature identifies, on average, an authentic link between financial development and economic growth.",
+   "corrected_locator": "finance_growth2.pdf p.8, Table 2: 1/SE_r (Effect) 0.199*** (0.018), 1,334 estimates from 67 studies",
+   "mean_quote": "Simple average r 0.15 (0.095, 0.20)",
+   "note": "An UPWARD row, and the same construction as the included eis row: a FAT-PET intercept against the literature's own simple average. The earlier exclusion called the answer narrative, which was wrong — both numbers are tabulated."
   }
  ],
  "excluded": [
   {
    "project": "alphas",
-   "why": "the best-practice value is -0.079, a prediction conditioned on data year, citations and impact factor at their sample MAXIMA, and Table 4 gives nine values by strategy, not one"
+   "why": "its best-practice value conditions on the sample MAXIMUM data year because the paper is explicitly answering what a hedge fund earns NOW, for a current investment decision — an estimand shift riding a real decline over time, not a correction of the same quantity, and its interval (-0.393, 0.235) spans zero. The same literature is already in the figure as `hedge`, against the identical 0.36 comparator; two rows on one literature at -7% and -78% would be incoherent. (An earlier reason here said Table 4 gives nine values and not one. That was wrong: its first row, All strategies -0.079, is a single pooled value.)"
   },
   {
    "project": "bma",
@@ -303,10 +325,6 @@
   {
    "project": "fdi",
    "why": "the corrected value is not in the units of its own estimate-level column, the same problem as spillovers"
-  },
-  {
-   "project": "finance_growth",
-   "why": "a narrative answer about the direction of the finance-growth link"
   },
   {
    "project": "forward",
@@ -358,7 +376,7 @@
   },
   {
    "project": "reforms",
-   "why": "a narrative answer: short-run cost, long-run gain"
+   "why": "the paper does state best-practice values, -0.38 short run and 0.27 long run, against simple means of -0.052 and 0.146 — so the earlier reason ('a narrative answer') was wrong and is corrected here. It stays out because the two horizons move in OPPOSITE directions, and every horizon row in this figure rests on the other horizon moving the same way. The short-run pair alone would enter at about +631%, seven times a borderline simple mean, and would dominate the axis on its own."
   },
   {
    "project": "remittances",

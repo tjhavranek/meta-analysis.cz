@@ -344,6 +344,13 @@ def build(check=False):
         'The rule takes no account of which way a paper moved, and every one of those '
         f'{n_all - len(out)} is written down with its reason, individually, in '
         '<a href="/tools/board/correction_ratios.json">correction_ratios.json</a>.</p>'
+        '<p><b>What best practice means here.</b> Several of these papers do not simply '
+        'average their estimates. They evaluate their model at the literature&rsquo;s '
+        'preferred values, for recent data, more observations and better-cited outlets, '
+        'and report that as the figure a careful study would have produced. It is the '
+        'construction these authors use, it is what Gechert et al.&rsquo;s corrected '
+        'column is built from, and in each case it is the paper&rsquo;s own headline '
+        'conclusion. The rows concerned name it in the spec.</p>'
         '<p>Most of these papers correct with estimators that shrink toward zero. What the figure '
         'adds is the size of each move.</p>'
         '</details></figcaption>')
