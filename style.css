@@ -552,6 +552,11 @@ table.catalogue li{ margin-bottom:var(--s2); font-size:var(--f-1); line-height:1
   display:inline-block; margin-left:var(--s2); font:600 var(--f-2)/1 var(--sans);
   text-transform:uppercase; letter-spacing:.06em; color:var(--ink-soft);
 }
+/* The Paper cell now carries the title the journal printed, with the journal beneath it. The
+   venue line is set quiet so the column still scans as one item per row rather than two. */
+.entry .dataset-catalogue .cat-venue{
+  display:block; margin-top:.15em; font:400 var(--f-1)/1.25 var(--sans); color:var(--ink-soft);
+}
 /* On a phone five columns cannot fit and stacking 44 rows would be unreadable, so the table
    scrolls inside its own box. The SCROLLING BELONGS TO THE WRAPPER, not the table: setting
    display:block + overflow-x on the table itself did not contain it, because the cells'
@@ -587,6 +592,10 @@ table.catalogue li{ margin-bottom:var(--s2); font-size:var(--f-1); line-height:1
   .entry .dataset-catalogue{ width:auto; min-width:100%; }
   .entry .dataset-catalogue td,.entry .dataset-catalogue th{ min-width:8rem; }
   .entry .dataset-catalogue td:first-child,.entry .dataset-catalogue th:first-child{ min-width:15rem; }
+  /* The last column now holds a full published title. At the 8rem the other columns get, it
+     squeezed to 128px and ran to ten lines -- a 246px cell beside a one-line neighbour. The
+     wrapper already scrolls, so the column can simply be wider. */
+  .entry .dataset-catalogue td:last-child,.entry .dataset-catalogue th:last-child{ min-width:15rem; }
 }
 
 /* why four datasets are published but not pooled */

@@ -4,7 +4,7 @@ Bare fragments: no wrapper div, no inline styles, no <script>. One class on the
 table so the redesign can style it without fighting specificity. The page owns
 all presentation; this owns only the facts, which change when the data is rebuilt.
 """
-import json, os, html
+import json, os, html, re
 import os, sys
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 from _paths import WORK, SITE
@@ -69,7 +69,9 @@ t=['<table class="dataset-catalogue">',
    '</tr>','</thead>','<tbody>']
 for d in rows:
     pap=d.get("paper") or {}
-    title=e(pap.get("title") or d["id"])
+    # Column 1 is headed "Literature", so it carries this site's plain-language label for the
+    # literature. The verbatim published title belongs in the Paper column, next to the DOI.
+    title=e(pap.get("page_title") or pap.get("title") or d["id"])
     n=f"{nlit(d):,}"
     units=e(d.get("effect_units") or "\u2014")
     files=[]
@@ -78,9 +80,26 @@ for d in rows:
     if (d["files"] or {}).get("parquet"):
         files.append(f'<a href="{e(d["files"]["parquet"])}">Parquet</a>')
     files.append(f'<a href="{e(d["files"]["codebook"])}">codebook</a>')
+    # The cell used to say only "Journal of International Economics", linked to the DOI, so on a
+    # page that tells the reader "the index carries every paper's title, authors and DOI", the
+    # title the journal actually printed appeared nowhere. It does now -- but only where it adds
+    # something. For 24 of the 44 rows this site's label for the literature IS the published
+    # title, and printing it again in the next column made half the table restate itself, which
+    # then muddies the rows where the difference is real. So: the journal alone when the two
+    # agree, the title above the journal when they do not.
     doi=pap.get("doi")
-    paper=(f'<a href="{e(doi)}">{e(pap.get("journal") or "published version")}</a>' if doi
-           else f'<a href="{e(pap.get("url") or "/"+d["id"]+"/")}">page</a>')
+    def _same(a,b):
+        clean=lambda s: re.sub(r"[\s.,;:]+$","",re.sub(r"\s+"," ",html.unescape(s or ""))).casefold()
+        return clean(a)==clean(b)
+    ptitle=e(pap.get("title") or d["id"])
+    venue=pap.get("journal") or ""
+    href=doi or pap.get("url") or "/"+d["id"]+"/"
+    label=venue if doi else "working paper"
+    if _same(pap.get("title"), pap.get("page_title") or pap.get("title")):
+        paper=f'<a href="{e(href)}">{e(label or "published version")}</a>'
+    else:
+        paper=(f'<a href="{e(href)}">{ptitle}</a>'
+               f'<br /><span class="cat-venue">{e(label or "published version")}</span>')
     mark="" if d.get("in_harmonised_table") else ' <span class="not-pooled">not pooled</span>'
     # A reshaped literature contributes one row per horizon, so its count is not comparable
     # with a paper's estimate count. Saying so in the cell stops it reading as an error.

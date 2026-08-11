@@ -56,6 +56,20 @@ from _seo_shared import SELF_MANAGED
 # the canonical sentence for each paper, so a paper page cannot drift from it
 _ESTIMATES = {r["project"]: r for r in csv.DictReader(
     open(os.path.join(SITE, "estimates.csv"), encoding="utf-8"))}
+# and the canonical citation, for the same reason
+_PAPERS = {r["project"]: r for r in json.load(
+    open(os.path.join(SITE, "tools", "papers.json"), encoding="utf-8"))}
+
+_CITE_CHARS = {0x2010: "-", 0x2011: "-", 0x2012: "-", 0x2013: "-", 0x2014: "-", 0x2212: "-",
+               0x201c: '"', 0x201d: '"', 0x2018: "'", 0x2019: "'"}
+
+
+def _cite_norm(t):
+    """A citation stripped to what is bibliographic: no markup, no "Reference:" label, and
+    typographic dashes and quotes folded to ASCII, since those differ between the page and the
+    JSON for reasons that are not about the paper."""
+    t = html.unescape(re.sub(r"<[^>]+>", "", t)).translate(_CITE_CHARS)
+    return re.sub(r"^\s*Reference:\s*", "", " ".join(t.split()))
 
 fails = []
 pages = ["index.html"] + sorted(
@@ -107,6 +121,24 @@ for rel in pages:
             if _got != _want:
                 fails.append(f"{rel}: the Headline result paragraph has drifted from "
                              f"estimates.csv. page={_got[:100]!r} csv={_want[:100]!r}")
+        # The visible "How to cite" line is in the page body and nothing under site/ writes it,
+        # exactly like the headline paragraph above -- while papers.json `reference_line` feeds
+        # /results/, llms-full.txt and the JSON-LD. Two texts, kept in step by hand, and they
+        # had drifted on four papers: /debate/ cited an arXiv paper as a Charles University
+        # working paper and printed `Papers?."`, and papers.json carried a stray comma before
+        # a year. Unicode dashes and quotes are normalised because those differences are
+        # typographic, not bibliographic.
+        # A paper page carries the citation TWICE -- once in the body as "Reference: ..." and
+        # once in the "How to cite" block -- so both are checked. Looking at only the first
+        # hid a fix that had been applied to the second.
+        _ref = ((_PAPERS.get(_proj) or {}).get("reference_line") or "").strip()
+        if _ref:
+            for _pm in re.finditer(r'<p class="ref">(.*?)</p>', new, re.S):
+                _page_cite, _json_cite = _cite_norm(_pm.group(1)), _cite_norm(_ref)
+                if _page_cite != _json_cite:
+                    fails.append(f"{rel}: the visible citation differs from papers.json "
+                                 f"reference_line.\n    page: {_page_cite[:120]}"
+                                 f"\n    json: {_json_cite[:120]}")
     # A bare "<" in visible text (an abstract writing "n < 200") is invisible in a browser and
     # catastrophic for every text extractor: a regex tag-stripper swallows everything from that
     # bracket to the next ">". On /pcc/ that silently deleted the rest of the abstract from

@@ -147,15 +147,14 @@ def build(check=False):
                 person["sameAs"] = ORCID[n]
             out.append(person)
         return out
-    # Two working papers have no reference_line in papers.json yet. Supplied here on the
-    # owner's instruction so every entry is citable; remove each once papers.json carries it.
-    refs.setdefault("debate",
-        'Tomas Havranek, Zuzana Irsova (2026), "Does Multi-Agent Debate Improve AI Feedback '
-        'on Research Papers?" arXiv:2607.14713. Available at meta-analysis.cz/debate.')
-    refs.setdefault("esg",
-        'Karolina Hozova, Tomas Havranek, Zuzana Irsova (2026), "Do Female Directors Raise '
-        'ESG Ratings? A Meta-Analysis." Charles University, Prague. '
-        'Available at meta-analysis.cz/esg.')
+    # These two working papers used to have their reference_line supplied here, because
+    # papers.json had none -- and the paper pages, which never saw this file, synthesised their
+    # own instead: /debate/ cited an arXiv paper as "Charles University, Prague" and printed
+    # `Papers?."`. Both lines now live in papers.json, so every surface reads the same string.
+    for _p in ("debate", "esg"):
+        if not (refs.get(_p) or "").strip():
+            sys.exit(f"{_p}: papers.json has lost its reference_line; /results/ used to carry a "
+                     f"local copy of it and no longer does")
 
     # ---- body -----------------------------------------------------------
     # The research-revision figure was here for one build and is now on

@@ -127,7 +127,7 @@ Abstract: Conventional meta-analyses (both fixed and random effects) of correlat
 
 ## Does Multi-Agent Debate Improve AI Feedback on Research Papers?
 URL: https://meta-analysis.cz/debate/
-Citation: Tomas Havranek, Zuzana Irsova (2026), “Does Multi-Agent Debate Improve AI Feedback on Research Papers?” Charles University, Prague. Available at meta-analysis.cz/debate.
+Citation: Tomas Havranek, Zuzana Irsova (2026), “Does Multi-Agent Debate Improve AI Feedback on Research Papers?” arXiv:2607.14713. Available at meta-analysis.cz/debate.
 Published version: https://arxiv.org/abs/2607.14713
 Paper: https://meta-analysis.cz/debate/debate.pdf
 Pre-registration: https://doi.org/10.17605/OSF.IO/E6XGW

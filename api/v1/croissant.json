@@ -2679,7 +2679,7 @@
    "@type": "cr:RecordSet",
    "@id": "alphas",
    "name": "alphas",
-   "description": "What Matters in Explaining the Variation in Hedge Fund Performance? A Meta-Analysis",
+   "description": "What Matters in Explaining the Variation in Hedge Fund Performance?",
    "field": [
     {
      "@type": "cr:Field",
@@ -3837,7 +3837,7 @@
    "@type": "cr:RecordSet",
    "@id": "armington",
    "name": "armington",
-   "description": "A Meta-Analysis of the Trade Cost Elasticity",
+   "description": "Estimating the Armington Elasticity: The Importance of Study Design and Publication Bias",
    "isBasedOn": "https://doi.org/10.1016/j.jinteco.2020.103383",
    "field": [
     {
@@ -4912,7 +4912,7 @@
    "@type": "cr:RecordSet",
    "@id": "beauty",
    "name": "beauty",
-   "description": "Beauty and Professional Success: A Meta-Analysis",
+   "description": "Meta-Analysis of Field Studies on Beauty and Professional Success",
    "field": [
     {
      "@type": "cr:Field",
@@ -5706,7 +5706,7 @@
    "@type": "cr:RecordSet",
    "@id": "bma",
    "name": "bma",
-   "description": "A Meta-Analysis of Horizontal Spillovers from FDI",
+   "description": "Determinants of Horizontal Spillovers from FDI: Evidence from a Large Meta-Analysis",
    "isBasedOn": "https://doi.org/10.1016/j.worlddev.2012.07.001",
    "field": [
     {
@@ -7996,7 +7996,7 @@
    "@type": "cr:RecordSet",
    "@id": "class",
    "name": "class",
-   "description": "Class Size and Student Achievement: A Meta-Analysis",
+   "description": "Publication Bias and Model Uncertainty in Measuring the Effect of Class Size on Achievement",
    "isBasedOn": "https://doi.org/10.1086/737989",
    "field": [
     {
@@ -10949,7 +10949,7 @@
    "@type": "cr:RecordSet",
    "@id": "education",
    "name": "education",
-   "description": "Publication Bias in Measuring the Impact of Tuition on Enrollment",
+   "description": "Tuition Fees and University Enrolment: A Meta-Regression Analysis",
    "isBasedOn": "https://doi.org/10.1111/obes.12240",
    "field": [
     {
@@ -11660,7 +11660,7 @@
    "@type": "cr:RecordSet",
    "@id": "eis",
    "name": "eis",
-   "description": "Publication Bias in Measuring Intertemporal Substitution",
+   "description": "Measuring Intertemporal Substitution: The Importance of Method Choices and Selective Reporting",
    "isBasedOn": "https://doi.org/10.1111/jeea.12133",
    "field": [
     {
@@ -12399,7 +12399,7 @@
    "@type": "cr:RecordSet",
    "@id": "electricity",
    "name": "electricity",
-   "description": "Price Elasticity of Electricity Demand: A Meta-Analysis",
+   "description": "Electricity demand has not become more price-responsive despite ninety years of technological change",
    "field": [
     {
      "@type": "cr:Field",
@@ -14337,7 +14337,7 @@
    "@type": "cr:RecordSet",
    "@id": "euro",
    "name": "euro",
-   "description": "A Meta-Analysis of the Trade Effect of the Euro",
+   "description": "Rose Effect and the Euro: Is the Magic Gone?",
    "isBasedOn": "https://doi.org/10.1007/s10290-010-0050-1",
    "field": [
     {
@@ -15020,7 +15020,7 @@
    "@type": "cr:RecordSet",
    "@id": "excess_sensitivity",
    "name": "excess_sensitivity",
-   "description": "A Meta-Analysis of the Excess Sensitivity of Consumption to Anticipated Income Changes",
+   "description": "Do Consumers Really Follow a Rule of Thumb? Three Thousand Estimates from 144 Studies Say 'Probably Not'",
    "isBasedOn": "https://doi.org/10.1016/j.red.2019.05.004",
    "field": [
     {
@@ -17571,7 +17571,7 @@
    "@type": "cr:RecordSet",
    "@id": "frisch",
    "name": "frisch",
-   "description": "Publication and Identification Biases in Measuring the Intertemporal Substitution of Labor Supply",
+   "description": "Intertemporal Substitution in Labor Supply: A Meta-Analysis",
    "isBasedOn": "https://doi.org/10.1016/j.red.2023.10.001",
    "field": [
     {
@@ -18268,7 +18268,7 @@
    "@type": "cr:RecordSet",
    "@id": "gasoline",
    "name": "gasoline",
-   "description": "A Meta-Analysis of the Income Elasticity of Gasoline Demand",
+   "description": "Income Elasticity of Gasoline Demand: A Meta-Analysis",
    "isBasedOn": "https://doi.org/10.1016/j.eneco.2014.11.004",
    "field": [
     {
@@ -18726,7 +18726,7 @@
    "@type": "cr:RecordSet",
    "@id": "gasoline_price",
    "name": "gasoline_price",
-   "description": "A Meta-Analysis of the Price Elasticity of Gasoline Demand",
+   "description": "Demand for Gasoline is More Price-Inelastic than Commonly Thought",
    "isBasedOn": "https://doi.org/10.1016/j.eneco.2011.09.003",
    "field": [
     {
@@ -19476,7 +19476,7 @@
    "@type": "cr:RecordSet",
    "@id": "hedge",
    "name": "hedge",
-   "description": "Publication Bias in Hedge Fund Performance: A Meta-Analysis",
+   "description": "Is research on hedge fund performance published selectively? A quantitative survey",
    "isBasedOn": "https://doi.org/10.1111/joes.12574",
    "field": [
     {
@@ -27286,7 +27286,7 @@
    "@type": "cr:RecordSet",
    "@id": "learning",
    "name": "learning",
-   "description": "Publication Bias and P-Hacking in the Effect of COVID-19 on Learning: A Meta-Analysis",
+   "description": "Publication Bias and P-Hacking in the Effect of COVID-19 on Learning",
    "field": [
     {
      "@type": "cr:Field",
@@ -30465,7 +30465,7 @@
    "@type": "cr:RecordSet",
    "@id": "reforms",
    "name": "reforms",
-   "description": "Structural Reforms and Economic Growth: A Meta-Analysis",
+   "description": "Structural Reforms and Growth in Transition: A Meta-Analysis",
    "isBasedOn": "https://doi.org/10.1111/ecot.12029",
    "field": [
     {
@@ -36645,7 +36645,7 @@
    "@type": "cr:RecordSet",
    "@id": "size",
    "name": "size",
-   "description": "A Meta-Analysis of the Relation Between Firm Size and Stock Returns",
+   "description": "Firm Size and Stock Returns: A Quantitative Survey",
    "isBasedOn": "https://doi.org/10.1111/joes.12335",
    "field": [
     {
@@ -43065,7 +43065,7 @@
    "@type": "cr:RecordSet",
    "@id": "spillovers",
    "name": "spillovers",
-   "description": "A Meta-Analysis of Vertical Spillovers from FDI",
+   "description": "Estimating Vertical Spillovers from FDI: Why Results Vary and What the True Effect Is",
    "isBasedOn": "https://doi.org/10.1016/j.jinteco.2011.07.004",
    "field": [
     {
@@ -45285,7 +45285,7 @@
    "@type": "cr:RecordSet",
    "@id": "substitution",
    "name": "substitution",
-   "description": "Why Does Intertemporal Substitution Vary Across Countries? A Meta-Analysis",
+   "description": "Cross-Country Heterogeneity in Intertemporal Substitution",
    "isBasedOn": "https://doi.org/10.1016/j.jinteco.2015.01.012",
    "field": [
     {
@@ -46846,7 +46846,7 @@
    "@type": "cr:RecordSet",
    "@id": "water",
    "name": "water",
-   "description": "Publication Bias in Measuring the Income Elasticity of Water Demand",
+   "description": "Measuring the Income Elasticity of Water Demand: The Importance of Publication and Endogeneity Biases",
    "isBasedOn": "https://doi.org/10.3368/le.94.2.259",
    "field": [
     {

@@ -1265,7 +1265,7 @@
   "project": "migrant",
   "title": "The Elasticity of Substitution between Native and Immigrant Labor: A Meta-Analysis",
   "abstract": "This paper presents the first comprehensive meta-analysis of the elasticity of substitution between native and immigrant labor. Drawing on 1,091 estimates from 41 studies, we examine the extent to which published estimates are shaped by methodological choices and publication selection bias. We find strong evidence of selective reporting: less precise estimates are systematically associated with lower reported elasticities. Correcting for these biases using a wide array of metaregression techniques raises the mean elasticity (sigma) from an uncorrected 13 to approximately 22. Model averaging techniques reveal that data features, specifically geographic scale, data granularity, and worker experience, explain much of the heterogeneity in reported results. While the choice between log(mean wage) and mean(log wage) remains a substantial driver of variation, its impact is moderated once publication bias and modeling scale are controlled for. Our \"best practice\" estimates, which prioritize the most granular data, suggest an elasticity of approximately 17 for regional models. While publication bias masks a higher potential elasticity, rigorous research designs that isolate pure substitution effects yield a stable benchmark that is more conservative than a simple bias correction yet higher than the uncorrected mean.",
-  "reference_line": "Klara Kantova, Tomas Havranek, Zuzana Irsova, Jiri Schwarz, (2026), \"The Elasticity of Substitution between Native and Immigrant Labor: A Meta-Analysis.\" Charles University, Prague. Available at meta-analysis.cz/migrant.",
+  "reference_line": "Klara Kantova, Tomas Havranek, Zuzana Irsova, Jiri Schwarz (2026), \"The Elasticity of Substitution between Native and Immigrant Labor: A Meta-Analysis.\" Charles University, Prague. Available at meta-analysis.cz/migrant.",
   "authors": [
    "Klara Kantova",
    "Tomas Havranek",
@@ -1870,7 +1870,7 @@
   "project": "esg",
   "title": "Do Female Directors Raise ESG Ratings? A Meta-Analysis",
   "abstract": "Appointing more women to corporate boards is widely expected to also raise firms' environmental, social, and governance (ESG) performance. We provide the first meta-analysis of this relationship, drawing on 533 estimates from 106 studies that measure ESG performance with Bloomberg or LSEG ratings. The average reported effect of a one-percentage-point increase in board gender diversity is about 0.28 ESG points, but much of it does not survive scrutiny. Correcting for publication bias with a battery of linear and non-linear methods lowers the effect to between roughly 0.08 and 0.17 points. A best-practice estimate that also imposes sound study design puts it near 0.12 for most of the world, markedly higher for the Middle East, and essentially zero, if anything slightly negative, for the Southeast Asian markets that dominate the Asian evidence. The differences that remain across studies are systematic, driven mainly by geography and by the choice of estimation method rather than by the ESG-rating provider or the controls a study includes. Board gender diversity may be well worth pursuing on its own merits, but the evidence that it reliably raises ESG scores is weaker than the published record suggests.",
-  "reference_line": null,
+  "reference_line": "Karolina Hozova, Tomas Havranek, Zuzana Irsova (2026), \"Do Female Directors Raise ESG Ratings? A Meta-Analysis.\" Charles University, Prague. Available at meta-analysis.cz/esg.",
   "authors": [
    "Karolina Hozova",
    "Tomas Havranek",
@@ -1911,7 +1911,7 @@
   "project": "debate",
   "title": "Does Multi-Agent Debate Improve AI Feedback on Research Papers?",
   "abstract": "",
-  "reference_line": null,
+  "reference_line": "Tomas Havranek, Zuzana Irsova (2026), \"Does Multi-Agent Debate Improve AI Feedback on Research Papers?\" arXiv:2607.14713. Available at meta-analysis.cz/debate.",
   "authors": [
    "Tomas Havranek",
    "Zuzana Irsova"
@@ -1930,7 +1930,7 @@
   "project": "trust",
   "title": "Trust, Rule of Law, and the Size Premium: Evidence from a Meta-Analysis",
   "abstract": "Reported estimates of the size premium vary widely across studies, countries, periods, and designs. We examine whether generalized trust and rule of law help account for that heterogeneity. We study 1,613 reported size-slope estimates from 105 studies and 31 countries, linking them to trust measures from the European Values Study and World Values Survey, and to rule of law from the Worldwide Governance Indicators. The meta-regressions control for study design, specification, precision, publication context, and market and macro-financial conditions; Bayesian model averaging assesses uncertainty over the control set. The more stable association is with rule of law, and it runs against the intuitive guess that better legal institutions shrink the premium: stronger rule of law is associated with more negative reported size slopes, hence larger conventional size premia, and the association survives dropping the United States. The trust association is conditional: higher generalized trust is linked to less negative reported slopes, and thus a weaker premium, where rule of law is weak, and it fades as rule of law strengthens. The conditional pattern is sign-consistent but imprecise under clustered inference and leans on the large U.S. share of the sample. Formal and informal institutions thus help organize part of the disagreement in this literature, although the analysis concerns variation in reported estimates and does not identify causal effects.",
-  "reference_line": "Jiri Schwarz, Tomas Havranek, Zuzana Irsova, Jiri Novak (2026), \"Trust, Rule of Law, and the Size Premium: Evidence from a Meta-Analysis.\" Anglo-American University and Charles University, Prague.",
+  "reference_line": "Jiri Schwarz, Tomas Havranek, Zuzana Irsova, Jiri Novak (2026), \"Trust, Rule of Law, and the Size Premium: Evidence from a Meta-Analysis.\" Anglo-American University and Charles University, Prague. Available at meta-analysis.cz/trust.",
   "authors": [
    "Jiri Schwarz",
    "Tomas Havranek",
@@ -2027,7 +2027,7 @@
   "project": "conventional_wisdom",
   "title": "Conventional wisdom, meta-analysis, and research revision in economics",
   "abstract": "Over the past several decades, meta-analysis has emerged as a widely accepted tool to understand economics research. Meta-analyses often challenge the established conventional wisdom of their respective fields. We systematically review a wide range of influential meta-analyses in economics and compare them to “conventional wisdom.” After correcting for observable biases, the empirical economic effects are typically much closer to zero and sometimes switch signs. Typically, the relative reduction in effect sizes is 45%–60%.",
-  "reference_line": "Sebastian Gechert, Bianka Mey, Matej Opatrny, Tomas Havranek, T. D. Stanley, Pedro R. D. Bom, Hristos Doucouliagos, Philipp Heimberger, Zuzana Irsova, Heiko J. Rachinger (2025), “Conventional wisdom, meta-analysis, and research revision in economics.” Journal of Economic Surveys 39, 980-999.",
+  "reference_line": "Sebastian Gechert, Bianka Mey, Matej Opatrny, Tomas Havranek, T. D. Stanley, Pedro R. D. Bom, Hristos Doucouliagos, Philipp Heimberger, Zuzana Irsova, Heiko J. Rachinger (2025), “Conventional wisdom, meta-analysis, and research revision in economics.” Journal of Economic Surveys 39, 980-999. 10.1111/joes.12630",
   "authors": [
    "Sebastian Gechert",
    "Bianka Mey",

@@ -167,15 +167,35 @@ def doi_of(p):
     m=re.search(r"(10\.\d{4,9}/[^\s\"'<>]+)",u)
     return "https://doi.org/"+m.group(1) if m else (u or None)
 
+def published_title(p):
+    """The title the journal printed.
+
+    papers.json carries two names on purpose: `title` is a DISPLAY string written to match
+    what someone would type into a search box, and it becomes the page's <title>; where it
+    differs from what the journal printed, `citation_title` holds the real one. 21 of the 54
+    differ. In THIS file every `title` we emit sits inside a record that means "the paper" --
+    beside its authors, its journal and its DOI -- so it has to be the published one. A record
+    that pairs an invented title with a real DOI is a claim about the literature, not a label,
+    and it is the form of the error that propagates: Frictionless `sources` is a citation
+    slot, Google Dataset Search reads croissant, and datasets.json tells a reader to "cite the
+    paper named in this entry".
+    """
+    p=p or {}
+    return p.get("citation_title") or p.get("title")
+
 datasets=[]
 for proj in sorted(man):
     m=man[proj]; r=res.get(proj,{}); pap=papers.get(proj,{})
     if m["status"]!="ok":
         datasets.append(dict(id=proj,status=m["status"],reason=m.get("reason"),
-                             paper=dict(title=pap.get("title"),url=f"{BASE}/{proj}/"))); continue
+                             paper=dict(title=published_title(pap),page_title=pap.get("title"),
+                                        url=f"{BASE}/{proj}/"))); continue
     d=dict(
       id=proj,
-      paper=dict(title=pap.get("title"), authors=pap.get("authors"), year=pap.get("year"),
+      # `title` is the published one; `page_title` is the plain-language string this site uses
+      # as the literature's label, which is what the catalogue's Literature column shows.
+      paper=dict(title=published_title(pap), page_title=pap.get("title"),
+                 authors=pap.get("authors"), year=pap.get("year"),
                  journal=pap.get("journal"), doi=doi_of(pap), url=f"{BASE}/{proj}/"),
       description=pap.get("one_line") or None,
       n_estimates=m["rows"], n_variables=m["cols"],

@@ -744,7 +744,20 @@ def main():
            "commercially and including as training data for machine-learning models. The only "
            "condition is attribution: cite the source paper for a dataset, and the collection "
            "as DOI 10.5281/zenodo.21773678.", "", "## Papers", ""]
-    lt += [f"- [{merged[p]['title']}]({BASE}/{p}/): {merged[p]['one_line']}" for p in projects]
+    # The link text is this site's plain-language name for the literature, which is also the
+    # target page's <title>, so anchor and target agree. But this list sits under "## Papers"
+    # in a file written to be ingested whole, and for 21 papers that name is not what the
+    # journal printed -- with no citation anywhere else in the file to correct it. A model
+    # trained on this would repeat an invented title back in a reference list, so where the two
+    # differ the published one is stated outright.
+    def _llms_line(p):
+        m = merged[p]
+        line = f"- [{m['title']}]({BASE}/{p}/): {m['one_line']}"
+        pub = m.get("citation_title")
+        if pub and pub != m["title"]:
+            line += f' Published as "{pub}".'
+        return line
+    lt += [_llms_line(p) for p in projects]
     _api = {}
     try:
         _api = json.load(open(os.path.join(SITE, "api", "v1", "datasets.json"), encoding="utf-8"))
