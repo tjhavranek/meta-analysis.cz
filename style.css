@@ -599,7 +599,10 @@ table.catalogue li{ margin-bottom:var(--s2); font-size:var(--f-1); line-height:1
   /* The last column now holds a full published title. At the 8rem the other columns get, it
      squeezed to 128px and ran to ten lines -- a 246px cell beside a one-line neighbour. The
      wrapper already scrolls, so the column can simply be wider. */
-  .entry .dataset-catalogue td:last-child,.entry .dataset-catalogue th:last-child{ min-width:15rem; }
+  /* the Paper cell holds a full title over a venue line; at 15rem it wrapped to five
+     lines and left its neighbours in 130px of blank, so the row is taller than the
+     column that caused it */
+  .entry .dataset-catalogue td:last-child,.entry .dataset-catalogue th:last-child{ min-width:20rem; }
 }
 
 /* why four datasets are published but not pooled */
@@ -993,7 +996,10 @@ table.catalogue li{ margin-bottom:var(--s2); font-size:var(--f-1); line-height:1
 }
 /* the method, folded: <details> content is ordinary DOM text, so a crawler still reads it */
 .figmethod{ margin-top:var(--s3); }
-.figmethod > summary{ cursor:pointer; font-weight:600; color:var(--ink); }
+.figmethod > summary,
+/* the release-history fold on /datasets/ was the only summary on the site left with a
+   default cursor and marker, so it did not read as something you could open */
+.release-note > summary{ cursor:pointer; font-weight:600; color:var(--ink); }
 .figmethod > p{ margin:var(--s3) 0 0; }
 .cfig a{ text-decoration:none; }
 .cfig circle{ transition:r .12s ease; }

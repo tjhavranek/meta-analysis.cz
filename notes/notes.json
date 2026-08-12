@@ -184,16 +184,6 @@
         {
           "name": "Zuzana Irsova",
           "orcid": "https://orcid.org/0000-0002-0753-8124"
-        },
-        {
-          "name": "Tomas Havranek",
-          "orcid": "https://orcid.org/0000-0002-3158-2539"
-        },
-        {
-          "name": "Martina Luskova"
-        },
-        {
-          "name": "T. D. Stanley"
         }
       ],
       "links": [],
@@ -291,10 +281,6 @@
         {
           "name": "Zuzana Irsova",
           "orcid": "https://orcid.org/0000-0002-0753-8124"
-        },
-        {
-          "name": "Tomas Havranek",
-          "orcid": "https://orcid.org/0000-0002-3158-2539"
         }
       ],
       "links": [],
@@ -450,19 +436,6 @@
         {
           "name": "Zuzana Irsova",
           "orcid": "https://orcid.org/0000-0002-0753-8124"
-        },
-        {
-          "name": "Tomas Havranek",
-          "orcid": "https://orcid.org/0000-0002-3158-2539"
-        },
-        {
-          "name": "Frantisek Bartos"
-        },
-        {
-          "name": "Xenia Bortnikova"
-        },
-        {
-          "name": "Martina Luskova"
         }
       ],
       "links": [],
@@ -616,19 +589,6 @@
         {
           "name": "Zuzana Irsova",
           "orcid": "https://orcid.org/0000-0002-0753-8124"
-        },
-        {
-          "name": "Pedro Bom"
-        },
-        {
-          "name": "Tomas Havranek",
-          "orcid": "https://orcid.org/0000-0002-3158-2539"
-        },
-        {
-          "name": "Heiko Rachinger"
-        },
-        {
-          "name": "Petr Cala"
         }
       ],
       "links": [],
@@ -773,16 +733,6 @@
         {
           "name": "Zuzana Irsova",
           "orcid": "https://orcid.org/0000-0002-0753-8124"
-        },
-        {
-          "name": "Pedro Bom"
-        },
-        {
-          "name": "Tomas Havranek",
-          "orcid": "https://orcid.org/0000-0002-3158-2539"
-        },
-        {
-          "name": "Heiko Rachinger"
         }
       ],
       "links": [],
@@ -1009,12 +959,21 @@
       "venue": "VoxEU / CEPR",
       "authors": [
         {
+          "name": "Petr Cala"
+        },
+        {
           "name": "Tomas Havranek",
           "orcid": "https://orcid.org/0000-0002-3158-2539"
         },
         {
           "name": "Zuzana Irsova",
           "orcid": "https://orcid.org/0000-0002-0753-8124"
+        },
+        {
+          "name": "Jindrich Matousek"
+        },
+        {
+          "name": "Jiri Novak"
         }
       ],
       "links": [],
@@ -1044,12 +1003,18 @@
       "venue": "VoxEU / CEPR",
       "authors": [
         {
+          "name": "Josef Bajzik"
+        },
+        {
           "name": "Tomas Havranek",
           "orcid": "https://orcid.org/0000-0002-3158-2539"
         },
         {
           "name": "Zuzana Irsova",
           "orcid": "https://orcid.org/0000-0002-0753-8124"
+        },
+        {
+          "name": "Jiri Schwarz"
         }
       ],
       "links": [],

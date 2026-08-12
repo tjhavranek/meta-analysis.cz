@@ -274,7 +274,7 @@ rather than the shared subset, and a codebook describing every column.</p>
 <p class="caveat">The Estimates column counts the rows in each published file after that
 paper's own analysis filters, which is not always the number in the paper's abstract. Usually
 the file is the analysis subset rather than the full collection; for a few literatures the
-published file is genuinely narrower than the sample behind the paper, and one contributes a
+published file is genuinely narrower than the sample behind the paper, and two contribute a
 row per impulse-response horizon. <a href="/api/v1/datasets.json">datasets.json</a> carries a
 reconciliation for every dataset where the two counts differ, including the cases that remain
 unexplained.</p>
