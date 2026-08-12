@@ -43,30 +43,17 @@
 <p>This catalogue collects 44 estimate-level datasets from the
 empirical meta-analyses on this site, each in a standard format.</p>
 
-<p><b>There are two products here.</b> The <i>archive</i> is the original file behind
-each paper, converted automatically to CSV and Parquet and published with its codebook and
-DOI. The conversion carries one data sheet per source workbook, the one named in
-<code>datasets.json</code>. Any other sheet in the original file is therefore absent from the
-CSV and the Parquet, and no column is independently re-checked. For anything load-bearing, work from the
-original file. The
-<i>harmonised table</i> pools those datasets into one file with a common set of columns so
-they can be compared across literatures, and it is stable as of version 1.0.0. If you want one paper's data,
-take it from the archive. If you want to work across literatures, take the harmonised table
-and read the caveats below first.</p>
-
-<p>The converted source files hold 65,349 rows, every one keeping the
-variables coded for its original paper. After applying each paper's analysis selection and,
-where necessary, reshaping the source data into estimate-level observations, the catalogue
-below represents 53,960 estimates.</p>
+<p><b>There are two products here.</b> The <i>archive</i> publishes each paper's original
+file with automatic CSV and Parquet conversions, a codebook and a DOI. The <i>harmonised
+table</i> pools those datasets into one file with a common set of columns, so they can be
+compared across literatures, and it is stable as of version 1.0.0. For one paper's data use the archive; to
+work across literatures use the harmonised table, and read its caveats below.</p>
 
 <h2>One file, every literature</h2>
 
 <p>48,355 estimate-level rows from
 40 literatures in a single table, with the effect, its
-standard error, the sample size, and the characteristics that recur across literatures. Some
-literatures contribute one row per impulse-response horizon rather than one per independent
-estimate, so treat a row as an observation and check <code>effect_units</code> and the
-dataset's own notes before assuming independence.</p>
+standard error, the sample size, and the characteristics that recur across literatures.</p>
 
 <figure class="zfig-wrap">
 <div class="zfig-scroll">
@@ -173,7 +160,7 @@ dataset's own notes before assuming independence.</p>
 <text x="632.00" y="22" text-anchor="end" class="za">614</text>
 </svg>
 </div>
-<p class="table-note"><b>Where the estimates fall.</b> Absolute t-statistics for all 48,355 pooled estimates; the first panel shows the 81% below 6, and the second panel magnifies half a unit around 1.96 on its own vertical scale. In equal 0.05-wide bins ([1.91, 1.96) against [1.96, 2.01), so an estimate reported as exactly 1.96 counts as above) there are <b>499 estimates just below and 614 just above</b>, 1.23 times as many. The observed step is modest, and it is specific to that one threshold: at 1.645 the ratio is 0.94 and at 2.576 it is 0.82, so the count falls as those are crossed instead of jumping. What the picture shows is the shape of the distribution; it does not measure p-hacking. Selective reporting, specification search and genuinely large effects all leave marks here, and estimates are clustered within studies. The bin counts are in <a href="/data/v1/t_distribution.csv">t_distribution.csv</a>.</p>
+<p class="table-note"><b>Where the estimates fall.</b> Absolute t-statistics for all 48,355 pooled estimates; the first panel shows the 81% below 6, and the second panel magnifies half a unit around 1.96 on its own vertical scale. In equal 0.05-wide bins ([1.91, 1.96) against [1.96, 2.01), so an estimate reported as exactly 1.96 counts as above) there are <b>499 estimates just below and 614 just above</b>, 1.23 times as many. The observed step is modest, and it is specific to that one threshold: at 1.645 and at 2.576 the count falls as they are crossed instead of jumping. What the picture shows is the shape of the distribution; it does not measure p-hacking. Selective reporting, specification search and genuinely large effects all leave marks here, and estimates are clustered within studies. The bin counts are in <a href="/data/v1/t_distribution.csv">t_distribution.csv</a>.</p>
 </figure>
 
 <b class="tool-link"><a href="/data/v1/estimates_harmonised.csv">estimates_harmonised.csv</a></b>
@@ -197,14 +184,16 @@ where the baseline is safely away from zero.</p>
 literatures. Every row records the file and the columns it came from, so any value can be
 traced back to its published dataset.</p>
 
-<p><b>This release is smaller than the 0.9.0-beta table and covers more.</b> The beta reported
-54,076 observations from 39 literatures; this one reports
+<details class="release-note"><summary>Smaller than the 0.9.0-beta table, and covering
+more</summary>
+<p>The beta reported 54,076 observations from 39 literatures; this one reports
 48,355 from 40. The
 count fell because the beta was wrong: the price-puzzle literature had been reshaped in a way
 that repeated every estimate seven times, so roughly one row in eight of that table was a
 duplicate. Those duplicates are gone, that literature now carries every impulse-response
 horizon including the trough and the peak the beta discarded, and a further literature has
 been added. Fewer rows, more evidence.</p>
+</details>
 
 
 
@@ -216,6 +205,14 @@ code-traced. Every dataset publishes an <code>audit_status</code> saying
 which it is.</p>
 
 <h2>One literature at a time</h2>
+
+<p>The converted source files hold 65,349 rows, every one keeping the
+variables coded for its original paper. After applying each paper's analysis selection and,
+where necessary, reshaping the source data into estimate-level observations, the catalogue
+below represents 53,960 estimates. The CSV and Parquet are automatic
+conversions carrying one data sheet per source workbook, the one named in
+<code>datasets.json</code>; any other sheet is absent, and no column is independently
+re-checked. For anything load-bearing, work from the original file.</p>
 
 <p>Each dataset is also published on its own, with all of the variables coded for its paper
 rather than the shared subset, and a codebook describing every column.</p>

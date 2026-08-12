@@ -203,30 +203,17 @@ def build():
 <p>This catalogue collects {counts['count_datasets']} estimate-level datasets from the
 empirical meta-analyses on this site, each in a standard format.</p>
 
-<p><b>There are two products here.</b> The <i>archive</i> is the original file behind
-each paper, converted automatically to CSV and Parquet and published with its codebook and
-DOI. The conversion carries one data sheet per source workbook, the one named in
-<code>datasets.json</code>. Any other sheet in the original file is therefore absent from the
-CSV and the Parquet, and no column is independently re-checked. For anything load-bearing, work from the
-original file. The
-<i>harmonised table</i> pools those datasets into one file with a common set of columns so
-they can be compared across literatures{harmonised_maturity}. If you want one paper's data,
-take it from the archive. If you want to work across literatures, take the harmonised table
-and read the caveats below first.</p>
-
-<p>The converted source files hold {counts['count_estimates']} rows, every one keeping the
-variables coded for its original paper. After applying each paper's analysis selection and,
-where necessary, reshaping the source data into estimate-level observations, the catalogue
-below represents {counts['count_analysis']} estimates.</p>
+<p><b>There are two products here.</b> The <i>archive</i> publishes each paper's original
+file with automatic CSV and Parquet conversions, a codebook and a DOI. The <i>harmonised
+table</i> pools those datasets into one file with a common set of columns, so they can be
+compared across literatures{harmonised_maturity}. For one paper's data use the archive; to
+work across literatures use the harmonised table, and read its caveats below.</p>
 
 <h2>One file, every literature</h2>
 
 <p>{counts['count_harmonised_estimates']} estimate-level rows from
 {counts['count_harmonised_literatures']} literatures in a single table, with the effect, its
-standard error, the sample size, and the characteristics that recur across literatures. Some
-literatures contribute one row per impulse-response horizon rather than one per independent
-estimate, so treat a row as an observation and check <code>effect_units</code> and the
-dataset's own notes before assuming independence.</p>
+standard error, the sample size, and the characteristics that recur across literatures.</p>
 
 {zfig}
 
@@ -251,14 +238,16 @@ where the baseline is safely away from zero.</p>
 literatures. Every row records the file and the columns it came from, so any value can be
 traced back to its published dataset.</p>
 
-<p><b>This release is smaller than the 0.9.0-beta table and covers more.</b> The beta reported
-54,076 observations from 39 literatures; this one reports
+<details class="release-note"><summary>Smaller than the 0.9.0-beta table, and covering
+more</summary>
+<p>The beta reported 54,076 observations from 39 literatures; this one reports
 {counts['count_harmonised_estimates']} from {counts['count_harmonised_literatures']}. The
 count fell because the beta was wrong: the price-puzzle literature had been reshaped in a way
 that repeated every estimate seven times, so roughly one row in eight of that table was a
 duplicate. Those duplicates are gone, that literature now carries every impulse-response
 horizon including the trough and the peak the beta discarded, and a further literature has
 been added. Fewer rows, more evidence.</p>
+</details>
 
 {issues_block}
 
@@ -270,6 +259,14 @@ code-traced.{provisional_note} Every dataset publishes an <code>audit_status</co
 which it is.</p>
 
 <h2>One literature at a time</h2>
+
+<p>The converted source files hold {counts['count_estimates']} rows, every one keeping the
+variables coded for its original paper. After applying each paper's analysis selection and,
+where necessary, reshaping the source data into estimate-level observations, the catalogue
+below represents {counts['count_analysis']} estimates. The CSV and Parquet are automatic
+conversions carrying one data sheet per source workbook, the one named in
+<code>datasets.json</code>; any other sheet is absent, and no column is independently
+re-checked. For anything load-bearing, work from the original file.</p>
 
 <p>Each dataset is also published on its own, with all of the variables coded for its paper
 rather than the shared subset, and a codebook describing every column.</p>

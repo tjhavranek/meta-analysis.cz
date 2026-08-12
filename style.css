@@ -422,8 +422,12 @@ table.catalogue li{ margin-bottom:var(--s2); font-size:var(--f-1); line-height:1
 /* and give the results section a real break: it is a new section of the page, not the
    next paragraph. Space does the work; the rule only confirms it. */
 .post.estimates{
-  margin-top:var(--s8);
-  padding-top:var(--s7);
+  /* 64px + 48px of air above a 2px rule put 114px of nothing between the field links and the
+     heading that tells you what the rule was for -- two thirds of a phone screen. A step down
+     each still clears every paragraph gap on the page twice over, and with the field headings
+     now hairlines this is the only heavy rule left, so it carries the break on rank. */
+  margin-top:var(--s7);
+  padding-top:var(--s6);
   border-top:2px solid var(--ink-soft);
 }
 .post.estimates > .entry > p:first-of-type{     /* the "one line per paper" note */
