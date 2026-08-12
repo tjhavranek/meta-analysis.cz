@@ -192,9 +192,12 @@ for proj in sorted(man):
                                         url=f"{BASE}/{proj}/"))); continue
     d=dict(
       id=proj,
-      # `title` is the published one; `page_title` is the plain-language string this site uses
-      # as the literature's label, which is what the catalogue's Literature column shows.
+      # Three names, and each column takes the one it means. `title` is what the journal
+      # printed; `page_title` is the search-facing string that is also the page's <title>;
+      # `literature` is the short noun phrase naming the body of primary studies, which is
+      # what a column headed "Literature" should carry.
       paper=dict(title=published_title(pap), page_title=pap.get("title"),
+                 literature=pap.get("literature") or pap.get("title"),
                  authors=pap.get("authors"), year=pap.get("year"),
                  journal=pap.get("journal"), doi=doi_of(pap), url=f"{BASE}/{proj}/"),
       description=pap.get("one_line") or None,

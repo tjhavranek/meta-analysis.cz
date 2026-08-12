@@ -299,21 +299,17 @@ column roles, a <a href="/api/v1/datapackage.json">Frictionless data package</a>
 
 <h2>Licence and citation</h2>
 
-<p><strong>Everything on this site is released under
-<a href="https://creativecommons.org/licenses/by/4.0/">CC BY 4.0</a></strong>: the datasets,
-their CSV and Parquet conversions, the pooled table, the codebooks, the index, the
-documentation and the papers deposited here. Use any of it, including for training, provided
-you give credit. <a href="/LICENSE">The licence file</a> states the terms.</p>
+<p><strong>Everything here is <a href="https://creativecommons.org/licenses/by/4.0/">CC
+BY 4.0</a></strong>, including for training, provided you give credit.
+<a href="/LICENSE">The licence file</a> states the terms, and the citation for the collection
+is in the footer of every page.</p>
 
 <p><strong>Each dataset was assembled for a specific paper. When you use one, cite that
 paper.</strong> The index carries every paper's title, authors and DOI. That is how attribution
 under CC BY is satisfied here.</p>
 
-<p>To cite the collection:</p>
-
-<p class="ref">{counts['cite_as']}</p>
-
-<p>That is the concept DOI: it always resolves to the newest version.{version_doi_note}</p>
+<p>The Zenodo identifier in that footer is the concept DOI: it always resolves to the newest
+version.{version_doi_note}</p>
 
 <div class="funding">The papers themselves, with their abstracts, figures and replication
 packages, are on the <a href="/">main catalogue</a>.</div>

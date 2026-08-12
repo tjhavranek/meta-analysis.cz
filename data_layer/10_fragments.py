@@ -63,15 +63,16 @@ t=['<table class="dataset-catalogue">',
    '<thead>','<tr>',
    '<th scope="col">Literature</th>',
    '<th scope="col">Estimates</th>',
-   '<th scope="col">Effect measured in</th>',
+   '<th scope="col">Effect measure</th>',
    '<th scope="col">Data</th>',
    '<th scope="col">Paper</th>',
    '</tr>','</thead>','<tbody>']
 for d in rows:
     pap=d.get("paper") or {}
-    # Column 1 is headed "Literature", so it carries this site's plain-language label for the
-    # literature. The verbatim published title belongs in the Paper column, next to the DOI.
-    title=e(pap.get("page_title") or pap.get("title") or d["id"])
+    # Column 1 is headed "Literature" and now carries a literature: a short noun phrase naming
+    # the body of primary studies. It used to carry the page's search-facing title, so the
+    # column read as a second, paraphrased Paper column.
+    title=e(pap.get("literature") or pap.get("page_title") or pap.get("title") or d["id"])
     n=f"{nlit(d):,}"
     units=e(d.get("effect_units") or "\u2014")
     files=[]
@@ -80,33 +81,30 @@ for d in rows:
     if (d["files"] or {}).get("parquet"):
         files.append(f'<a href="{e(d["files"]["parquet"])}">Parquet</a>')
     files.append(f'<a href="{e(d["files"]["codebook"])}">codebook</a>')
-    # The cell used to say only "Journal of International Economics", linked to the DOI, so on a
-    # page that tells the reader "the index carries every paper's title, authors and DOI", the
-    # title the journal actually printed appeared nowhere. It does now -- but only where it adds
-    # something. For 24 of the 44 rows this site's label for the literature IS the published
-    # title, and printing it again in the next column made half the table restate itself, which
-    # then muddies the rows where the difference is real. So: the journal alone when the two
-    # agree, the title above the journal when they do not.
+    # Every row, the same shape: the title the journal printed, linked to the DOI where there
+    # is one, with the venue and year beneath. Two earlier attempts were worse. Showing only
+    # the journal meant the published title appeared nowhere on a page that promises "the index
+    # carries every paper's title"; showing the title only where it differed from column 1 made
+    # the column look arbitrary. The venue was also taken from the DOI rather than the journal
+    # field, so `lags` -- International Journal of Central Banking, 2013 -- was labelled a
+    # working paper because it has no DOI.
     doi=pap.get("doi")
-    def _same(a,b):
-        clean=lambda s: re.sub(r"[\s.,;:]+$","",re.sub(r"\s+"," ",html.unescape(s or ""))).casefold()
-        return clean(a)==clean(b)
     ptitle=e(pap.get("title") or d["id"])
-    venue=pap.get("journal") or ""
+    venue=(pap.get("journal") or "").strip()
+    year=pap.get("year")
     href=doi or pap.get("url") or "/"+d["id"]+"/"
-    label=venue if doi else "working paper"
-    if _same(pap.get("title"), pap.get("page_title") or pap.get("title")):
-        paper=f'<a href="{e(href)}">{e(label or "published version")}</a>'
-    else:
-        paper=(f'<a href="{e(href)}">{ptitle}</a>'
-               f'<br /><span class="cat-venue">{e(label or "published version")}</span>')
+    label=e(venue) if venue else "Working paper"
+    if year: label += f" &middot; {year}"
+    paper=(f'<a href="{e(href)}">{ptitle}</a>'
+           f'<br /><span class="cat-venue">{label}</span>')
     mark="" if d.get("in_harmonised_table") else ' <span class="not-pooled">not pooled</span>'
-    # A reshaped literature contributes one row per horizon, so its count is not comparable
-    # with a paper's estimate count. Saying so in the cell stops it reading as an error.
+    # The two impulse-response literatures used to carry a "per horizon" tag here, warning that
+    # the count was rows rather than independent estimates. The owner's ruling is that a
+    # horizon-specific response IS a point estimate and should be counted as one, which is what
+    # these numbers already do -- 1,415 for price_puzzle against the paper's own "more than
+    # 1,000 point estimates". The tag contradicted the count it annotated. Each dataset's own
+    # record still carries the horizon note for anyone modelling the dependence.
     horizon_note=""
-    if d["id"] in RESHAPED:
-        horizon_note=(' <span class="horizon-note" title="One row per impulse-response horizon, '
-                      'not per independent estimate">per horizon</span>')
     t += ['<tr>',
           f'<td><a href="{e(pap.get("url") or "/"+d["id"]+"/")}">{title}</a>{mark}</td>',
           f'<td class="num">{n}{horizon_note}</td>',

@@ -322,7 +322,11 @@ def build_index(cfg, notes):
             # h2, not h3: the page's only h1 is "Research notes", so an h3 here skips a
             # level, which a screen reader and an outline extractor both read as a gap
             f'<h2><a href="/notes/{n["slug"]}/">{esc(n["title"])}</a></h2>\n'
-            f'<p class="byline">{pretty_date(n["date"])}</p>\n'
+            # A bare date made a Nature Communications piece and a LinkedIn reshare look
+            # identical at a scan, and the venue is what a senior reader triages on.
+            f'<p class="byline">{pretty_date(n["date"])}'
+            + (f' &middot; {esc(n["venue"])}' if n.get("venue") else '')
+            + '</p>\n'
             f'<p>{esc(n["summary"])}</p>\n'
             f'<p class="links"><a href="/notes/{n["slug"]}/" class="more">Read the note</a></p>\n<hr />'
         )

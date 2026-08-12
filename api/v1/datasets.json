@@ -138,6 +138,7 @@
    "paper": {
     "title": "Does Shareholder Activism Create Value? A Meta-Analysis",
     "page_title": "Does Shareholder Activism Create Value? A Meta-Analysis",
+    "literature": "Shareholder Activism and Firm Value",
     "authors": [
      "Josef Bajzik",
      "Tomas Havranek",
@@ -193,6 +194,7 @@
    "paper": {
     "title": "What Matters in Explaining the Variation in Hedge Fund Performance?",
     "page_title": "What Matters in Explaining the Variation in Hedge Fund Performance? A Meta-Analysis",
+    "literature": "Heterogeneity in Hedge Fund Performance",
     "authors": [
      "Fan Yang",
      "Tomas Havranek",
@@ -248,6 +250,7 @@
    "paper": {
     "title": "Estimating the Armington Elasticity: The Importance of Study Design and Publication Bias",
     "page_title": "A Meta-Analysis of the Trade Cost Elasticity",
+    "literature": "Armington Elasticity",
     "authors": [
      "Josef Bajzik",
      "Tomas Havranek",
@@ -303,6 +306,7 @@
    "paper": {
     "title": "Meta-Analysis of Field Studies on Beauty and Professional Success",
     "page_title": "Beauty and Professional Success: A Meta-Analysis",
+    "literature": "Beauty and Professional Success",
     "authors": [
      "Zuzana Irsova",
      "Tomas Havranek",
@@ -358,6 +362,7 @@
    "paper": {
     "title": "Determinants of Horizontal Spillovers from FDI: Evidence from a Large Meta-Analysis",
     "page_title": "A Meta-Analysis of Horizontal Spillovers from FDI",
+    "literature": "Horizontal Spillovers from FDI",
     "authors": [
      "Zuzana Irsova",
      "Tomas Havranek"
@@ -412,6 +417,7 @@
    "paper": {
     "title": "Do Borders Really Slash Trade? A Meta-Analysis",
     "page_title": "Do Borders Really Slash Trade? A Meta-Analysis",
+    "literature": "National Borders and Trade",
     "authors": [
      "Tomas Havranek",
      "Zuzana Irsova"
@@ -465,6 +471,7 @@
    "paper": {
     "title": "Publication Bias and Model Uncertainty in Measuring the Effect of Class Size on Achievement",
     "page_title": "Class Size and Student Achievement: A Meta-Analysis",
+    "literature": "Class Size and Student Achievement",
     "authors": [
      "Matej Opatrny",
      "Tomas Havranek",
@@ -520,6 +527,7 @@
    "paper": {
     "title": "Publication Bias in Measuring Anthropogenic Climate Change",
     "page_title": "Publication Bias in Measuring Anthropogenic Climate Change",
+    "literature": "Anthropogenic Climate Change",
     "authors": [
      "Dominika Reckova",
      "Zuzana Irsova"
@@ -573,6 +581,7 @@
    "paper": {
     "title": "Bank Competition and Financial Stability: Much Ado About Nothing?",
     "page_title": "Bank Competition and Financial Stability: Much Ado About Nothing?",
+    "literature": "Bank Competition and Financial Stability",
     "authors": [
      "Diana Zigraiova",
      "Tomas Havranek"
@@ -626,6 +635,7 @@
    "paper": {
     "title": "Individual Discount Rates: A Meta-Analysis of Experimental Evidence",
     "page_title": "Individual Discount Rates: A Meta-Analysis of Experimental Evidence",
+    "literature": "Individual Discount Rates",
     "authors": [
      "Jindrich Matousek",
      "Tomas Havranek",
@@ -680,6 +690,7 @@
    "paper": {
     "title": "Does Daylight Saving Save Electricity? A Meta-Analysis",
     "page_title": "Does Daylight Saving Save Electricity? A Meta-Analysis",
+    "literature": "Daylight Saving and Electricity Use",
     "authors": [
      "Tomas Havranek",
      "Dominik Herman",
@@ -734,6 +745,7 @@
    "paper": {
     "title": "Tuition Fees and University Enrolment: A Meta-Regression Analysis",
     "page_title": "Publication Bias in Measuring the Impact of Tuition on Enrollment",
+    "literature": "Tuition and Demand for Higher Education",
     "authors": [
      "Tomas Havranek",
      "Zuzana Irsova",
@@ -788,6 +800,7 @@
    "paper": {
     "title": "Measuring Intertemporal Substitution: The Importance of Method Choices and Selective Reporting",
     "page_title": "Publication Bias in Measuring Intertemporal Substitution",
+    "literature": "Elasticity of Intertemporal Substitution",
     "authors": [
      "Tomas Havranek"
     ],
@@ -840,6 +853,7 @@
    "paper": {
     "title": "Electricity demand has not become more price-responsive despite ninety years of technological change",
     "page_title": "Price Elasticity of Electricity Demand: A Meta-Analysis",
+    "literature": "Price Elasticity of Electricity Demand",
     "authors": [
      "Peter Kudela",
      "Tomas Havranek",
@@ -896,6 +910,7 @@
    "paper": {
     "title": "Do Female Directors Raise ESG Ratings? A Meta-Analysis",
     "page_title": "Do Female Directors Raise ESG Ratings? A Meta-Analysis",
+    "literature": "Female Directors and ESG Ratings",
     "authors": [
      "Karolina Hozova",
      "Tomas Havranek",
@@ -950,6 +965,7 @@
    "paper": {
     "title": "Rose Effect and the Euro: Is the Magic Gone?",
     "page_title": "A Meta-Analysis of the Trade Effect of the Euro",
+    "literature": "Euro Adoption and Trade",
     "authors": [
      "Tomas Havranek"
     ],
@@ -1002,6 +1018,7 @@
    "paper": {
     "title": "Do Consumers Really Follow a Rule of Thumb? Three Thousand Estimates from 144 Studies Say 'Probably Not'",
     "page_title": "A Meta-Analysis of the Excess Sensitivity of Consumption to Anticipated Income Changes",
+    "literature": "Excess Sensitivity of Consumption",
     "authors": [
      "Tomas Havranek",
      "Anna Sokolova"
@@ -1055,6 +1072,7 @@
    "paper": {
     "title": "Foreign Capital and Domestic Productivity in the Czech Republic: A Meta-Regression Analysis",
     "page_title": "Foreign Capital and Domestic Productivity in the Czech Republic: A Meta-Regression Analysis",
+    "literature": "FDI Spillovers in the Czech Republic",
     "authors": [
      "Mojmir Hampl",
      "Tomas Havranek",
@@ -1109,6 +1127,7 @@
    "paper": {
     "title": "How Puzzling Is the Forward Premium Puzzle? A Meta-Analysis",
     "page_title": "How Puzzling Is the Forward Premium Puzzle? A Meta-Analysis",
+    "literature": "Forward Premium Puzzle",
     "authors": [
      "Diana Zigraiova",
      "Tomas Havranek",
@@ -1164,6 +1183,7 @@
    "paper": {
     "title": "Intertemporal Substitution in Labor Supply: A Meta-Analysis",
     "page_title": "Publication and Identification Biases in Measuring the Intertemporal Substitution of Labor Supply",
+    "literature": "Intertemporal Substitution in Labor Supply",
     "authors": [
      "Ali Elminejad",
      "Tomas Havranek",
@@ -1219,6 +1239,7 @@
    "paper": {
     "title": "Income Elasticity of Gasoline Demand: A Meta-Analysis",
     "page_title": "A Meta-Analysis of the Income Elasticity of Gasoline Demand",
+    "literature": "Income Elasticity of Gasoline Demand",
     "authors": [
      "Tomas Havranek",
      "Ondrej Kokes"
@@ -1272,6 +1293,7 @@
    "paper": {
     "title": "Demand for Gasoline is More Price-Inelastic than Commonly Thought",
     "page_title": "A Meta-Analysis of the Price Elasticity of Gasoline Demand",
+    "literature": "Price Elasticity of Gasoline Demand",
     "authors": [
      "Tomas Havranek",
      "Zuzana Irsova",
@@ -1326,6 +1348,7 @@
    "paper": {
     "title": "Habit Formation in Consumption: A Meta-Analysis",
     "page_title": "Habit Formation in Consumption: A Meta-Analysis",
+    "literature": "Habit Formation in Consumption",
     "authors": [
      "Tomas Havranek",
      "Marek Rusnak",
@@ -1380,6 +1403,7 @@
    "paper": {
     "title": "Is research on hedge fund performance published selectively? A quantitative survey",
     "page_title": "Publication Bias in Hedge Fund Performance: A Meta-Analysis",
+    "literature": "Hedge Fund Performance",
     "authors": [
      "Fan Yang",
      "Tomas Havranek",
@@ -1437,6 +1461,7 @@
    "paper": {
     "title": "When Does Monetary Policy Sway House Prices? A Meta-Analysis",
     "page_title": "When Does Monetary Policy Sway House Prices? A Meta-Analysis",
+    "literature": "Monetary Policy and House Prices",
     "authors": [
      "Dominika Ehrenbergerova",
      "Josef Bajzik",
@@ -1491,6 +1516,7 @@
    "paper": {
     "title": "Financial Incentives and Performance: A Meta-Analysis of Experiments in Economics",
     "page_title": "Financial Incentives and Performance: A Meta-Analysis of Experiments in Economics",
+    "literature": "Financial Incentives and Performance",
     "authors": [
      "Petr Cala",
      "Tomas Havranek",
@@ -1548,6 +1574,7 @@
    "paper": {
     "title": "Optimal Inflation Rate: A Meta-Analysis",
     "page_title": "Optimal Inflation Rate: A Meta-Analysis",
+    "literature": "Optimal Inflation Rate",
     "authors": [
      "Matej Opatrny",
      "Martin Opatrny",
@@ -1604,6 +1631,7 @@
    "paper": {
     "title": "Transmission Lags of Monetary Policy: A Meta-Analysis",
     "page_title": "Transmission Lags of Monetary Policy: A Meta-Analysis",
+    "literature": "Transmission Lags of Monetary Policy",
     "authors": [
      "Tomas Havranek",
      "Marek Rusnak"
@@ -1658,6 +1686,7 @@
    "paper": {
     "title": "Publication Bias and P-Hacking in the Effect of COVID-19 on Learning",
     "page_title": "Publication Bias and P-Hacking in the Effect of COVID-19 on Learning: A Meta-Analysis",
+    "literature": "Effect of COVID-19 on Learning",
     "authors": [
      "Martina Luskova",
      "Nino Buliskeria",
@@ -1716,6 +1745,7 @@
    "paper": {
     "title": "The Elasticity of Substitution between Native and Immigrant Labor: A Meta-Analysis",
     "page_title": "The Elasticity of Substitution between Native and Immigrant Labor: A Meta-Analysis",
+    "literature": "Native and Immigrant Labor Substitution",
     "authors": [
      "Klara Kantova",
      "Tomas Havranek",
@@ -1771,6 +1801,7 @@
    "paper": {
     "title": "How to Solve the Price Puzzle? A Meta-Analysis",
     "page_title": "How to Solve the Price Puzzle? A Meta-Analysis",
+    "literature": "The Price Puzzle",
     "authors": [
      "Marek Rusnak",
      "Tomas Havranek",
@@ -1826,6 +1857,7 @@
    "paper": {
     "title": "Structural Reforms and Growth in Transition: A Meta-Analysis",
     "page_title": "Structural Reforms and Economic Growth: A Meta-Analysis",
+    "literature": "Structural Reforms and Economic Growth",
     "authors": [
      "Jan Babecky",
      "Tomas Havranek"
@@ -1879,6 +1911,7 @@
    "paper": {
     "title": "Remittances and Economic Growth: A Meta-Analysis",
     "page_title": "Remittances and Economic Growth: A Meta-Analysis",
+    "literature": "Remittances and Economic Growth",
     "authors": [
      "Alina Cazachevici",
      "Tomas Havranek",
@@ -1933,6 +1966,7 @@
    "paper": {
     "title": "Natural Resources and Economic Growth: A Meta-Analysis",
     "page_title": "Natural Resources and Economic Growth: A Meta-Analysis",
+    "literature": "Natural Resources and Economic Growth",
     "authors": [
      "Tomas Havranek",
      "Roman Horvath",
@@ -1987,6 +2021,7 @@
    "paper": {
     "title": "Relative Risk Aversion: A Meta-Analysis",
     "page_title": "Relative Risk Aversion: A Meta-Analysis",
+    "literature": "Relative Risk Aversion",
     "authors": [
      "Ali Elminejad",
      "Tomas Havranek",
@@ -2041,6 +2076,7 @@
    "paper": {
     "title": "Selective Reporting and the Social Cost of Carbon",
     "page_title": "Selective Reporting and the Social Cost of Carbon",
+    "literature": "Social Cost of Carbon",
     "authors": [
      "Tomas Havranek",
      "Zuzana Irsova",
@@ -2096,6 +2132,7 @@
    "paper": {
     "title": "Measuring Capital-Labor Substitution: The Importance of Method Choices and Publication Bias",
     "page_title": "Measuring Capital-Labor Substitution: The Importance of Method Choices and Publication Bias",
+    "literature": "Capital-Labor Substitution",
     "authors": [
      "Sebastian Gechert",
      "Tomas Havranek",
@@ -2151,6 +2188,7 @@
    "paper": {
     "title": "Firm Size and Stock Returns: A Quantitative Survey",
     "page_title": "A Meta-Analysis of the Relation Between Firm Size and Stock Returns",
+    "literature": "Firm Size and Stock Returns",
     "authors": [
      "Anton Astakhov",
      "Tomas Havranek",
@@ -2205,6 +2243,7 @@
    "paper": {
     "title": "Publication and Attenuation Biases in Measuring Skill Substitution",
     "page_title": "Publication and Attenuation Biases in Measuring Skill Substitution",
+    "literature": "Skilled-Unskilled Labor Substitution",
     "authors": [
      "Tomas Havranek",
      "Zuzana Irsova",
@@ -2260,6 +2299,7 @@
    "paper": {
     "title": "Estimating Vertical Spillovers from FDI: Why Results Vary and What the True Effect Is",
     "page_title": "A Meta-Analysis of Vertical Spillovers from FDI",
+    "literature": "Vertical Spillovers from FDI",
     "authors": [
      "Tomas Havranek",
      "Zuzana Irsova"
@@ -2314,6 +2354,7 @@
    "paper": {
     "title": "Student Employment and Education: A Meta-Analysis",
     "page_title": "Student Employment and Education: A Meta-Analysis",
+    "literature": "Student Employment and Education",
     "authors": [
      "Katerina Kroupova",
      "Tomas Havranek",
@@ -2368,6 +2409,7 @@
    "paper": {
     "title": "Cross-Country Heterogeneity in Intertemporal Substitution",
     "page_title": "Why Does Intertemporal Substitution Vary Across Countries? A Meta-Analysis",
+    "literature": "Cross-Country Heterogeneity in Intertemporal Substitution",
     "authors": [
      "Tomas Havranek",
      "Roman Horvath",
@@ -2425,6 +2467,7 @@
    "paper": {
     "title": "Trust, Rule of Law, and the Size Premium: Evidence from a Meta-Analysis",
     "page_title": "Trust, Rule of Law, and the Size Premium: Evidence from a Meta-Analysis",
+    "literature": "Trust, Rule of Law, and the Size Premium",
     "authors": [
      "Jiri Schwarz",
      "Tomas Havranek",
@@ -2481,6 +2524,7 @@
    "paper": {
     "title": "Measuring the Income Elasticity of Water Demand: The Importance of Publication and Endogeneity Biases",
     "page_title": "Publication Bias in Measuring the Income Elasticity of Water Demand",
+    "literature": "Income Elasticity of Water Demand",
     "authors": [
      "Tomas Havranek",
      "Zuzana Irsova",

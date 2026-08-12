@@ -4,7 +4,7 @@
     <title>Research notes</title>
     <link>https://meta-analysis.cz/notes/</link>
     <atom:link href="https://meta-analysis.cz/notes/feed.xml" rel="self" type="application/rss+xml" />
-    <description>Short, self-contained notes on economics research: methods, tools, findings, and how the work gets done.</description>
+    <description>Research writing by Tomas Havranek and Zuzana Irsova, first published at MAER-Net, VoxEU, Springer Nature Research Communities and elsewhere, collected here with a link to each original.</description>
     <language>en</language>
     <lastBuildDate>Mon, 10 Aug 2026 00:00:00 +0000</lastBuildDate>
     <item>
@@ -54,7 +54,7 @@ It does not mean incentives fail in practice. It means the experiments economist
       <link>https://meta-analysis.cz/notes/maer-two-pre-registered-papers/</link>
       <guid isPermaLink="true">https://meta-analysis.cz/notes/maer-two-pre-registered-papers/</guid>
       <pubDate>Mon, 27 Jul 2026 00:00:00 +0000</pubDate>
-      <description>Two pre-registered papers are announced: recomputing 358 meta-analyses under five outlier treatments changes conclusions in up to 15.9% of cases, and blinded authors of 44 meta-analyses rank a single AI pass above two multi-agent debate tools.</description>
+      <description>Two pre-registered papers are announced: recomputing 358 behavioral science meta-analyses under five outlier treatments changes conclusions in up to 15.9% of cases, and authors of 44 economics meta-analyses rank a single blinded AI pass above two multi-agent debate tools.</description>
       <content:encoded><![CDATA[<p class="byline">First published on <a href="https://www.maer-net.org/post/two-new-pre-registered-papers-outlier-decisions-in-meta-analysis-and-ai-feedback-on-meta" rel="external">MAER-Net</a>, 27 July 2026. Archived with the rest of our writing at <a href="https://meta-analysis.cz/komentare/maer-two-pre-registered-papers/">/komentare/maer-two-pre-registered-papers/</a>.</p>
 
 <p>
@@ -102,7 +102,7 @@ Comments are welcome!!
       <link>https://meta-analysis.cz/notes/do-outlier-decisions-matter/</link>
       <guid isPermaLink="true">https://meta-analysis.cz/notes/do-outlier-decisions-matter/</guid>
       <pubDate>Sat, 25 Jul 2026 00:00:00 +0000</pubDate>
-      <description>Recomputing 358 behavioral science meta-analyses under five outlier treatments barely moves the mean effect, but changes statistical significance in 11.5% of cases and whether the effect clears a smallest-effect-size threshold in 15.9%, with winsorizing changing conclusions least and DFBETAS most.</description>
+      <description>Recomputing 358 behavioral science meta-analyses under five outlier treatments leaves most conclusions standing, but in 11.5% of them at least one treatment changes statistical significance and in 15.9% it changes whether the effect clears a smallest effect size of interest; winsorizing changes conclusions least, DFBETAS most.</description>
       <content:encoded><![CDATA[<p class="byline">First published on <a href="https://www.linkedin.com/posts/zuzanairsova_so-how-much-do-different-outlier-treatments-activity-7486767472440827905-HD5D" rel="external">LinkedIn</a>, 25 July 2026. Archived with the rest of our writing at <a href="https://meta-analysis.cz/komentare/posts/2026-07-25-do-outlier-decisions-matter/">/komentare/posts/2026-07-25-do-outlier-decisions-matter/</a>.</p>
 
 <p>
@@ -186,11 +186,11 @@ We built these tools, we expected them to win, and we pre-registered the compari
 </p>]]></content:encoded>
     </item>
     <item>
-      <title>A new AI tool for reviewing ERC grant proposals</title>
+      <title>An AI tool for checking your ERC proposal</title>
       <link>https://meta-analysis.cz/notes/a-tool-for-your-erc-proposal/</link>
       <guid isPermaLink="true">https://meta-analysis.cz/notes/a-tool-for-your-erc-proposal/</guid>
       <pubDate>Tue, 23 Jun 2026 00:00:00 +0000</pubDate>
-      <description>A new tool checks ERC grant drafts against the official evaluation criteria and rules, flagging routine weak spots before human reviewers see the proposal. It is meant to clear easy problems, not replace human review.</description>
+      <description>A tool checks an ERC draft against the official evaluation criteria and flags the routine weak spots, so the easy problems are cleared before you ask colleagues to read it.</description>
       <content:encoded><![CDATA[<p class="byline">First published on <a href="https://www.linkedin.com/feed/update/urn%3Ali%3Ashare%3A7475160943409135616" rel="external">LinkedIn</a>, 23 June 2026. Archived with the rest of our writing at <a href="https://meta-analysis.cz/komentare/posts/2026-06-23-a-tool-for-your-erc-proposal/">/komentare/posts/2026-06-23-a-tool-for-your-erc-proposal/</a>.</p>
 
 <p>
@@ -358,7 +358,7 @@ The updated reporting guidelines were led by Nikolai Cook and co-authored with F
       <link>https://meta-analysis.cz/notes/redoing-a-meta-analysis-from-scratch/</link>
       <guid isPermaLink="true">https://meta-analysis.cz/notes/redoing-a-meta-analysis-from-scratch/</guid>
       <pubDate>Tue, 28 Apr 2026 00:00:00 +0000</pubDate>
-      <description>A pre-registered revision redoes a meta-analysis of beauty and professional success using multidisciplinary systematic-review methods: librarian-designed multi-database search, dual screening, coding checks, and PRISMA documentation, as a natural experiment on the team&#x27;s own earlier work.</description>
+      <description>We are redoing our meta-analysis of beauty and professional success from scratch: pre-registered, with a librarian-designed search, dual screening and coding checks. It doubles as a natural experiment on our own earlier work.</description>
       <content:encoded><![CDATA[<p class="byline">First published on <a href="https://www.linkedin.com/feed/update/urn%3Ali%3Ashare%3A7454914753266692097" rel="external">LinkedIn</a>, 28 April 2026. Archived with the rest of our writing at <a href="https://meta-analysis.cz/komentare/posts/2026-04-28-redoing-a-meta-analysis-from-scratch/">/komentare/posts/2026-04-28-redoing-a-meta-analysis-from-scratch/</a>.</p>
 
 <p>
@@ -408,7 +408,7 @@ Co-authored with Tomas Havranek, František Bartoš, Xenia Bortnikova, and Marti
       <link>https://meta-analysis.cz/notes/note-in-journal-of-economic-surveys/</link>
       <guid isPermaLink="true">https://meta-analysis.cz/notes/note-in-journal-of-economic-surveys/</guid>
       <pubDate>Wed, 22 Apr 2026 00:00:00 +0000</pubDate>
-      <description>A new Journal of Economic Surveys note sets a floor for AI use in meta-analysis: human leadership, human accountability, human auditing of at least 10 percent of screening and coding, and full disclosure of AI use in prompts and models.</description>
+      <description>A note in the Journal of Economic Surveys sets a floor for AI use in meta-analysis: humans lead and remain accountable, AI cannot be an author, at least 10% of screening records and 10% of coded studies are audited by hand (or 100 and 20, whichever is larger), and anything that shapes the results is disclosed, with prompts and model versions saved.</description>
       <content:encoded><![CDATA[<p class="byline">First published on <a href="https://www.linkedin.com/feed/update/urn%3Ali%3Ashare%3A7452590050799853568" rel="external">LinkedIn</a>, 22 April 2026. Archived with the rest of our writing at <a href="https://meta-analysis.cz/komentare/posts/2026-04-22-note-in-journal-of-economic-surveys/">/komentare/posts/2026-04-22-note-in-journal-of-economic-surveys/</a>.</p>
 
 <p>
@@ -450,11 +450,11 @@ For the full discussion of how we agreed on these guidelines (scroll down to com
 <figure><img src="https://meta-analysis.cz/komentare/social-img/2026-04-22_p11_1.jpeg" alt="Journal of Economic Surveys article header, open access: Guidance for the Use of AI in the Meta-Analysis of Economics Research, by Nikolai Cook, Frantisek Bartos, Pedro R. D. Bom, Sebastian Gechert, Klara Kantova, Jerome Geyer-Klingeberg, Tomas Havranek, Zuzana Irsova, Martina Luskova, Matej Opatrny, Heiko J. Rachinger and T. D. Stanley. First published 21 April 2026." /></figure>]]></content:encoded>
     </item>
     <item>
-      <title>Reproducibility numbers from the Brodeur team&#x27;s Nature study</title>
+      <title>A caveat on the Brodeur team&#x27;s Nature reproducibility study</title>
       <link>https://meta-analysis.cz/notes/brodeur-team-reproducibility-numbers/</link>
       <guid isPermaLink="true">https://meta-analysis.cz/notes/brodeur-team-reproducibility-numbers/</guid>
       <pubDate>Thu, 02 Apr 2026 00:00:00 +0000</pubDate>
-      <description>A Nature study led by Abel Brodeur&#x27;s team reports reproducibility and robustness numbers for economics and political science research, based on papers from journals with mandatory data and code sharing.</description>
+      <description>A short comment on the Nature reproducibility study she co-authored: the numbers look good, but the papers replicated came from journals that already mandate data and code sharing. Share your data and code, and pre-register.</description>
       <content:encoded><![CDATA[<p class="byline">First published on <a href="https://www.linkedin.com/feed/update/urn%3Ali%3Ashare%3A7445392769788968960" rel="external">LinkedIn</a>, 2 April 2026. Archived with the rest of our writing at <a href="https://meta-analysis.cz/komentare/posts/2026-04-02-brodeur-team-reproducibility-numbers/">/komentare/posts/2026-04-02-brodeur-team-reproducibility-numbers/</a>.</p>
 
 <p>
@@ -466,7 +466,7 @@ It was fun to be (a very small) part of the amazing team led by Abel Brodeur. Th
       <link>https://meta-analysis.cz/notes/four-models-debating-works-better/</link>
       <guid isPermaLink="true">https://meta-analysis.cz/notes/four-models-debating-works-better/</guid>
       <pubDate>Thu, 19 Mar 2026 00:00:00 +0000</pubDate>
-      <description>An updated research audit protocol (MAD v2.0) runs ChatGPT, Claude, Gemini, and Grok through independent critique, cross-examination, and a final synthesis, using copy-paste prompts with no coding required, or full automation via API frameworks.</description>
+      <description>An updated research audit protocol (MAD v2.0) runs ChatGPT, Claude, Gemini, and Grok through independent critique, cross-examination, and a final synthesis, using copy-paste prompts with no coding required, or full automation via API frameworks. A pre-registered experiment four months later found the opposite in one setting: authors of 44 meta-analyses preferred a single-pass AI report to multi-agent debate.</description>
       <content:encoded><![CDATA[<p class="byline">First published on <a href="https://www.linkedin.com/feed/update/urn%3Ali%3Ashare%3A7440296636783960064" rel="external">LinkedIn</a>, 19 March 2026. Archived with the rest of our writing at <a href="https://meta-analysis.cz/komentare/posts/2026-03-19-four-models-debating-works-better/">/komentare/posts/2026-03-19-four-models-debating-works-better/</a>.</p>
 
 <p>
@@ -659,7 +659,7 @@ Many thanks to <b>Petr Čala</b> for preparing the CRAN release and building the
       <link>https://meta-analysis.cz/notes/maer-ottawa-colloquium/</link>
       <guid isPermaLink="true">https://meta-analysis.cz/notes/maer-ottawa-colloquium/</guid>
       <pubDate>Fri, 31 Oct 2025 00:00:00 +0000</pubDate>
-      <description>A recap of the 2025 MAER-Net Colloquium in Ottawa, where Abel Brodeur received the Founders&#x27; Medal and Shinichi Nakagawa and Andrew Gelman gave keynotes; the 2026 colloquium moves to Chemnitz, Germany, hosted by Sebastian Gechert.</description>
+      <description>The 2025 MAER-Net Colloquium in Ottawa was a great success: Abel Brodeur received the Founders&#x27; Medal, Shinichi Nakagawa and Andrew Gelman gave the keynotes, and in 2026 we move to Chemnitz.</description>
       <content:encoded><![CDATA[<p class="byline">First published on <a href="https://www.maer-net.org/post/highlights-from-the-2025-maer-net-colloquium-in-ottawa" rel="external">MAER-Net</a>, 31 October 2025. Archived with the rest of our writing at <a href="https://meta-analysis.cz/komentare/maer-ottawa-colloquium/">/komentare/maer-ottawa-colloquium/</a>.</p>
 
 <p>
@@ -851,7 +851,7 @@ Special thanks to <b>Petr Čala</b> for creating the app, and to <b>Heiko Rachin
       <link>https://meta-analysis.cz/notes/maer-ai-tools/</link>
       <guid isPermaLink="true">https://meta-analysis.cz/notes/maer-ai-tools/</guid>
       <pubDate>Wed, 30 Jul 2025 00:00:00 +0000</pubDate>
-      <description>A practical rundown of how ChatGPT&#x27;s deep research, o3, and Agent modes speed up literature search and data collection for meta-analysis, with the reminder that competent humans still need to check every AI-assisted extraction.</description>
+      <description>AI tools have reached the point where they save real time in literature search and data collection. Here is what worked for me in mid-2025, mostly in ChatGPT, and where a competent human still has to check carefully what the AI returns.</description>
       <content:encoded><![CDATA[<p class="byline">First published on <a href="https://www.maer-net.org/post/ai-tools-for-meta-analysis" rel="external">MAER-Net</a>, 30 July 2025. Archived with the rest of our writing at <a href="https://meta-analysis.cz/komentare/maer-ai-tools/">/komentare/maer-ai-tools/</a>.</p>
 
 <p>
@@ -943,7 +943,7 @@ Comments, questions, or counterexamples are welcome!
       <link>https://meta-analysis.cz/notes/maer-methods-guidelines/</link>
       <guid isPermaLink="true">https://meta-analysis.cz/notes/maer-methods-guidelines/</guid>
       <pubDate>Mon, 27 Nov 2023 00:00:00 +0000</pubDate>
-      <description>Zuzana Irsova highlights seven recommendations from the new Journal of Economic Surveys methods guidelines for meta-analysis, covering topic choice, comparability, study quality, correction techniques, Bayesian model averaging, and implied best-practice estimates.</description>
+      <description>Our methods guidelines are out in the Journal of Economic Surveys. Here I pick the seven issues I personally find most important: choosing a topic, comparability, study quality, multiple estimates per study, correction techniques, Bayesian approaches, and the implied best-practice estimate.</description>
       <content:encoded><![CDATA[<p class="byline">First published on <a href="https://www.maer-net.org/post/methods-guidelines-for-meta-analysis" rel="external">MAER-Net</a>, 27 November 2023. Archived with the rest of our writing at <a href="https://meta-analysis.cz/komentare/maer-methods-guidelines/">/komentare/maer-methods-guidelines/</a>.</p>
 
 <p>
@@ -1007,7 +1007,7 @@ To be clear, we do not claim that our guidelines must always be followed nor are
       <link>https://meta-analysis.cz/notes/maer-spurious-precision/</link>
       <guid isPermaLink="true">https://meta-analysis.cz/notes/maer-spurious-precision/</guid>
       <pubDate>Thu, 16 Feb 2023 00:00:00 +0000</pubDate>
-      <description>Meta-analysis upweights studies that report lower standard errors, but reported precision can be p-hacked rather than given. The authors show existing corrections then fail and introduce MAIVE, an instrumental-variable estimator that corrects for this spurious precision.</description>
+      <description>Meta-analysis gives more weight to studies that report smaller standard errors, but precision is estimated, not given, and can be p-hacked. Cures for publication bias can then be worse than the disease, so we introduce MAIVE, which instruments reported precision with sample size.</description>
       <content:encoded><![CDATA[<p class="byline">First published on <a href="https://www.maer-net.org/post/maive" rel="external">MAER-Net</a>, 16 February 2023. Archived with the rest of our writing at <a href="https://meta-analysis.cz/komentare/maer-spurious-precision/">/komentare/maer-spurious-precision/</a>.</p>
 
 <p>
@@ -1242,7 +1242,7 @@ Spurious precision, while plausibly destructive, is surmounted by adjusting funn
       <link>https://meta-analysis.cz/notes/voxeu-incentives/</link>
       <guid isPermaLink="true">https://meta-analysis.cz/notes/voxeu-incentives/</guid>
       <pubDate>Mon, 13 Feb 2023 00:00:00 +0000</pubDate>
-      <description>A meta-analysis of 44 experimental economics studies finds a negligible effect of financial incentives on performance once publication bias and differences in experimental context are corrected, suggesting money-based nudges are less effective than commonly assumed.</description>
+      <description>A meta-analysis of experimental economics studies finds the effect of financial incentives on performance is negligible across field-experiment contexts once publication bias and experimental context are accounted for, which suggests money-based nudges may be less effective than commonly thought.</description>
       <content:encoded><![CDATA[<p class="byline">First published on <a href="https://cepr.org/voxeu/columns/how-financial-incentives-affect-performance" rel="external">VoxEU / CEPR</a>, 13 February 2023. Archived with the rest of our writing at <a href="https://meta-analysis.cz/komentare/voxeu-incentives/">/komentare/voxeu-incentives/</a>.</p>
 
 <p>
@@ -1406,7 +1406,7 @@ The implied Armington elasticity corrected for the biases lies in the range 2.5-
       <link>https://meta-analysis.cz/notes/maer-reporting-guidelines/</link>
       <guid isPermaLink="true">https://meta-analysis.cz/notes/maer-reporting-guidelines/</guid>
       <pubDate>Mon, 11 Nov 2019 00:00:00 +0000</pubDate>
-      <description>Tomáš Havránek proposes 12 recommendations to revise the reporting guidelines for meta-analysis in economics, covering weights, outliers, reconstructed standard errors, clustering, model averaging, robustness checks, and data sharing, and invites MAER-Net members to weigh in.</description>
+      <description>Seven years on from the current reporting guidelines for meta-analysis in economics, I offer 12 subjective recommendations I miss in them, and ask MAER-Net to argue about the list before anyone drafts a revision.</description>
       <content:encoded><![CDATA[<p class="byline">First published on <a href="https://www.maer-net.org/post/revision-of-reporting-guidelines" rel="external">MAER-Net</a>, 11 November 2019. Archived with the rest of our writing at <a href="https://meta-analysis.cz/komentare/maer-reporting-guidelines/">/komentare/maer-reporting-guidelines/</a>.</p>
 
 <p>
@@ -1549,7 +1549,7 @@ We are not the first to highlight the disconnect between the Cobb-Douglas specif
       <link>https://meta-analysis.cz/notes/maer-model-averaging/</link>
       <guid isPermaLink="true">https://meta-analysis.cz/notes/maer-model-averaging/</guid>
       <pubDate>Wed, 27 Feb 2019 00:00:00 +0000</pubDate>
-      <description>An introduction to model averaging as a response to model uncertainty in regression and meta-regression, explaining why weighting many specifications by fit and parsimony beats picking a single best model.</description>
+      <description>Run a regression with more than a handful of candidate variables and the question is which ones belong in the baseline. Model averaging answers it by weighting many specifications rather than picking one, and it is what we use for meta-regression.</description>
       <content:encoded><![CDATA[<p class="byline">First published on <a href="https://www.maer-net.org/post/model-averaging" rel="external">MAER-Net</a>, 27 February 2019. Archived with the rest of our writing at <a href="https://meta-analysis.cz/komentare/maer-model-averaging/">/komentare/maer-model-averaging/</a>.</p>
 
 <p>
@@ -1633,7 +1633,7 @@ By now it won’t surprise you that we do model averaging in that paper, too.
       <link>https://meta-analysis.cz/notes/globaldev-natural-resources/</link>
       <guid isPermaLink="true">https://meta-analysis.cz/notes/globaldev-natural-resources/</guid>
       <pubDate>Tue, 13 Feb 2018 00:00:00 +0000</pubDate>
-      <description>A review of more than 40 studies on natural resources and economic growth finds only weak support for a resource curse once publication bias and method heterogeneity are accounted for, with the effect strongly dependent on the quality of a country&#x27;s institutions.</description>
+      <description>A review of more than 40 studies on natural resources and economic growth finds only very weak support for a resource curse once publication bias and method heterogeneity are accounted for, with the effect strongly dependent on the quality of a country&#x27;s institutions.</description>
       <content:encoded><![CDATA[<p class="byline">First published on <a href="https://globaldev.blog/natural-resources-and-economic-growth-research-evidence/" rel="external">GlobalDev Blog</a>, 13 February 2018. Archived with the rest of our writing at <a href="https://meta-analysis.cz/komentare/globaldev-natural-resources/">/komentare/globaldev-natural-resources/</a>.</p>
 
 <p>
