@@ -2510,7 +2510,7 @@
    "duplicate_of": null,
    "overlaps_with": "size",
    "same_literature_as": "size",
-   "excluded_to_avoid_double_counting": true,
+   "excluded_to_avoid_double_counting": false,
    "overlap_kind": "same literature, partially overlapping collections",
    "shares_source_file_with": null,
    "rights_status": "cc-by-4.0",

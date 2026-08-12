@@ -118,7 +118,9 @@ def _overlap_fields(proj, r):
     return dict(duplicate_of=(alias if exact else None),
                 overlaps_with=alias,
                 same_literature_as=alias,
-                excluded_to_avoid_double_counting=True,
+                # true only for the collections actually held out of the table; `trust`
+                # overlaps `size` but contributes the estimates size does not carry
+                excluded_to_avoid_double_counting=exact,
                 overlap_kind=("identical row for row" if exact
                               else "same literature, partially overlapping collections"))
 
