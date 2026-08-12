@@ -255,8 +255,15 @@ def build(check=False):
     p.append(f'<text x="{W - RM}" y="{AX + 40}" text-anchor="end" class="cfa">'
              f'correction enlarges it</text>')
     p.append("</svg>")
-    shift = max(0.0, 26.0 - top)
-    p[0] = p[0].replace(f'viewBox="0 0 {W} {H}"', f'viewBox="0 {top - 20:.0f} {W} {H - (top - 20):.0f}"')
+    # The two labels above the plot sit on a baseline at `top - 12`, so a viewBox starting at
+    # `top - 20` left 8 units of headroom for a 15px cap height: both "median -51%" and "no
+    # change" had their tops sliced off. Headroom is now the label's own size plus its offset,
+    # with a little to spare. The width is unchanged, so the labels render at the same size --
+    # the box is taller, not the type smaller.
+    LABEL_PX = 15
+    head = top - 12 - LABEL_PX - 4
+    p[0] = p[0].replace(f'viewBox="0 0 {W} {H}"',
+                        f'viewBox="0 {head:.0f} {W} {H - head:.0f}"')
 
     excl = len(spec["excluded"])
     up = [r for r in out if r["rev"] > 0]
