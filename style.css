@@ -451,6 +451,15 @@ table.catalogue li{ margin-bottom:var(--s2); font-size:var(--f-1); line-height:1
    Guide -- which made three promotions read as a list of four equal things and cost each of
    them a third of its weight. It gets its own quieter treatment: a rule ABOVE it, tying it
    to the tiles that follow rather than to the crown above. */
+.principles{
+  border-top:1px solid var(--rule);
+  padding-top:var(--s4);
+  margin:var(--s5) 0 var(--s5);
+  font:400 var(--f-1)/1.65 var(--sans);
+  color:var(--ink-soft);
+}
+.principles b{ color:var(--ink); }
+
 .fieldnav{
   border-top:1px solid var(--rule);
   padding-top:var(--s3);

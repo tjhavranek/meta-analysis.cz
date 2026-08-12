@@ -448,6 +448,17 @@
 This site collects meta-analysis methods and applications by <a href="https://www.tomashavranek.cz"><b>Tomas Havranek</b></a>, <a href="https://www.irsova.com"><b>Zuzana Irsova</b></a>, and their co-authors at Charles University, Prague. Meta-analysis pools what a literature has estimated and, done properly, corrects it for publication bias and p-hacking. It also relates the differences between studies to the methods and settings behind them. Nearly every paper here comes with its data and estimation code. The papers have appeared in journals such as <i>Nature Communications</i>, <i>Review of Economics and Statistics</i>, <i>Journal of the European Economic Association</i>, <i>Journal of Labor Economics</i>, and <i>Journal of Political Economy Microeconomics</i>.
 </p>
 
+<p class="principles">
+<b>Three principles behind this work.</b> Correct for publication bias: the baseline is now
+Robust Bayesian Meta-Analysis (<a href="https://fbartos.github.io/RoBMA/">RoBMA</a>), by
+Franti&scaron;ek Barto&scaron;, Maximilian Maier and Eric-Jan Wagenmakers. Those methods do
+not address <i>p</i>-hacking, so add one that does: our <a href="/maive/">MAIVE</a>, which
+targets the <i>p</i>-hacking that works on precision, or RTMA, by Maya Mathur. And estimates
+from one study are not independent: collect them all, cluster at the study level, and use the
+wild bootstrap when the studies are few. The
+<a href="/guidelines/">practitioner&rsquo;s guide</a> sets all of this out.
+</p>
+
 <p>
 
 <b>A new meta-analysis approach robust to <i>p</i>-hacking:</b><br> <a href="/maive/"><b>Meta-Analysis Instrumental Variable Estimator (MAIVE)</b></a> &mdash; Irsova, Bom, Havranek &amp; Rachinger, <i>Nature Communications</i>, 2025
