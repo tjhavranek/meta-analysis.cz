@@ -353,7 +353,7 @@ def build(check=False):
         '<a href="/tools/board/correction_ratios.json">correction_ratios.json</a>.</p>'
         '<p><b>What best practice means here.</b> Several of these papers do not simply '
         'average their estimates. They evaluate their model at the literature&rsquo;s '
-        'preferred values, for recent data, more observations and better-cited outlets, '
+        'preferred values, for recent data, more observations, and better-cited outlets, '
         'and report that as the figure a careful study would have produced. It is the '
         'construction these authors use, it is what Gechert et al.&rsquo;s corrected '
         'column is built from, and in each case it is the paper&rsquo;s own headline '

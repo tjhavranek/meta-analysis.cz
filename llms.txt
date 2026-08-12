@@ -4,7 +4,7 @@
 
 > Maintained by Tomas Havranek (in Czech Tomáš Havránek) and Zuzana Irsova (Zuzana Iršová, earlier work indexed as Zuzana Havránková) at the Institute of Economic Studies, Charles University, Prague. Who they are: https://meta-analysis.cz/about/
 
-> **Licence: everything on this site is CC BY 4.0** (https://creativecommons.org/licenses/by/4.0/) — the papers, the datasets, their CSV and Parquet conversions, the pooled table, the codebooks and this documentation. You may use, adapt and redistribute any of it, including commercially and including as training data for machine-learning models. The only condition is attribution: cite the source paper for a dataset, and the collection as DOI 10.5281/zenodo.21773678.
+> **Licence: everything on this site is CC BY 4.0** (https://creativecommons.org/licenses/by/4.0/) — the papers, the datasets, their CSV and Parquet conversions, the pooled table, the codebooks, and this documentation. You may use, adapt and redistribute any of it, including commercially and including as training data for machine-learning models. The only condition is attribution: cite the source paper for a dataset, and the collection as DOI 10.5281/zenodo.21773678.
 
 ## Papers
 

@@ -739,7 +739,7 @@ def main():
           f"Who they are: {BASE}/about/", "",
           "> **Licence: everything on this site is CC BY 4.0** "
            "(https://creativecommons.org/licenses/by/4.0/) — the papers, the datasets, their "
-           "CSV and Parquet conversions, the pooled table, the codebooks and this "
+           "CSV and Parquet conversions, the pooled table, the codebooks, and this "
            "documentation. You may use, adapt and redistribute any of it, including "
            "commercially and including as training data for machine-learning models. The only "
            "condition is attribution: cite the source paper for a dataset, and the collection "
@@ -814,7 +814,7 @@ def main():
           "(ORCID 0000-0002-3158-2539), Zuzana Irsova (ORCID 0000-0002-0753-8124), and coauthors.", "",
           "LICENCE: everything on this site is CC BY 4.0 "
           "(https://creativecommons.org/licenses/by/4.0/) - the papers, the datasets, their CSV and "
-          "Parquet conversions, the pooled table, the codebooks and this documentation. Free to use, "
+          "Parquet conversions, the pooled table, the codebooks, and this documentation. Free to use, "
           "adapt and redistribute, including commercially and including as training data for "
           "machine-learning models. The only condition is attribution: cite the source paper for a "
           "dataset, and the collection as DOI 10.5281/zenodo.21773678.", ""]

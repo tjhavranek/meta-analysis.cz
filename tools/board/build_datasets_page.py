@@ -12,7 +12,7 @@ literatures / 59,098 estimates; the fragments said 39 / 54,087. Reading the frag
 only way this page cannot drift.
 
 The licence wording changed on 2026-08-03 by the owner's explicit decision: EVERYTHING on the
-site is CC BY 4.0, including the datasets, the format conversions and the deposited PDFs. He
+site is CC BY 4.0, including the datasets, the format conversions, and the deposited PDFs. He
 stated he takes full responsibility for that grant. The page previously carried a narrowly
 scoped claim covering only the compilation; the point of the change is that a bot or a
 researcher should never have to wonder whether a file here is safe to use.
@@ -312,7 +312,7 @@ under CC BY is satisfied here.</p>
 <p>The Zenodo identifier in that footer is the concept DOI: it always resolves to the newest
 version.{version_doi_note}</p>
 
-<div class="funding">The papers themselves, with their abstracts, figures and replication
+<div class="funding">The papers themselves, with their abstracts, figures, and replication
 packages, are on the <a href="/">main catalogue</a>.</div>
 
 \t\t\t</div>

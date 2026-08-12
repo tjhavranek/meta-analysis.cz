@@ -236,7 +236,7 @@
  {
   "project": "guidelines",
   "parameter": "How to run a modern meta-analysis",
-  "headline": "a concise, nontechnical, step-by-step guide for practitioners, treating publication bias, p-hacking and heterogeneity as problems every meta-analyst must confront",
+  "headline": "a concise, nontechnical, step-by-step guide for practitioners, treating publication bias, p-hacking, and heterogeneity as problems every meta-analyst must confront",
   "evidence": "This paper provides concise, nontechnical, step-by-step guidelines on how to conduct a modern meta-analysis",
   "basis": null,
   "caveat": null,

@@ -200,7 +200,7 @@
    "tail": "UWLS+3 corrects them"
   },
   "guidelines": {
-   "value": "confront publication bias, p-hacking and heterogeneity",
+   "value": "confront publication bias, p-hacking, and heterogeneity",
    "zero": false
   },
   "outliers": {

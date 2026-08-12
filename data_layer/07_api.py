@@ -243,7 +243,7 @@ for proj in sorted(man):
       # the pre-reversal policy and contradicted the line below it. Do not reinstate it.)
       rights_status="cc-by-4.0",
       license_url="https://creativecommons.org/licenses/by/4.0/",
-      rights_note=("CC BY 4.0. Free to use, adapt and redistribute, including commercially "
+      rights_note=("CC BY 4.0. Free to use, adapt, and redistribute, including commercially "
                    "and including as training data. The only condition is credit: cite the "
                    "paper named in this entry."),
       # See _weight_share(): how much of this literature's precision weight sits on one estimate.
@@ -287,7 +287,7 @@ index=dict(
     applies_to="everything on this site",
     note=("Everything here is CC BY 4.0: the research datasets, their CSV and Parquet "
           "conversions, the harmonised table, the index, the codebooks, the documentation "
-          "and the deposited PDFs. Free to use, adapt and redistribute, including commercially "
+          "and the deposited PDFs. Free to use, adapt, and redistribute, including commercially "
           "and including as training data for machine-learning models. The only condition is "
           "credit: cite the collection, and cite the paper whose dataset you used."),
     machine_readable=True),
@@ -371,7 +371,7 @@ dp=dict(profile="tabular-data-package", name="meta-analysis-cz", version=VERSION
         licenses=[dict(name="CC-BY-4.0", path="https://creativecommons.org/licenses/by/4.0/",
                        title="Creative Commons Attribution 4.0 International")],
         description=("Everything in this package is CC BY 4.0, including the data each resource "
-                     "points to. Free to use, adapt and redistribute, including commercially and "
+                     "points to. Free to use, adapt, and redistribute, including commercially and "
                      "as training data. Credit is the only condition: cite the paper named on "
                      "each resource. See " + BASE + "/LICENSE."),
         homepage=BASE, resources=[])
@@ -451,7 +451,7 @@ cr={"@context":{"@vocab":"https://schema.org/","cr":"http://mlcommons.org/croiss
                    f"estimates in the papers' analysis samples, each with the "
                    "hand-coded study and design characteristics collected for the original paper. "
                    "LICENCE: everything here is CC BY 4.0, including the underlying research "
-                   "data. Free to use, adapt and redistribute, including commercially and as "
+                   "data. Free to use, adapt, and redistribute, including commercially and as "
                    "training data for machine-learning models. Credit is the only condition: cite "
                    "the collection and the paper whose dataset you used."),
     "url":BASE,
