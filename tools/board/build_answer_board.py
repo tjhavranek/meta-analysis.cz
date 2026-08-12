@@ -69,19 +69,17 @@ def main():
 
     tiles = 0
     out = [START, '\t\t<div class="entry">',
-           # This paragraph used to open with three caveats before the reader had seen a
-           # single tile: the precision each paper reports, that units differ, that definitions
-           # and samples differ, and "Look at the source first". Most of that is throat-clearing
-           # and every tile links the paper anyway -- but units alone turned out not to carry
-           # the warning, because eight tiles share "partial correlation coefficient" and a
-           # reader could fairly conclude that those eight do compare. Hence the samples, in a
-           # clause rather than the sentence of its own it used to have.
-           '<p>One tile per paper: the question it asks and the answer it gives. Units differ '
-           'from tile to tile, as do the samples behind them, so the numbers do not '
-           'compare with one another. The same '
-           'results run as full sentences below, and on '
-           '<a href="/results/"><b>Headline results</b></a> each one carries the caveat, the '
-           'evidence and the citation that belong to it. As a spreadsheet: '
+           # This lede has been cut twice on the owner's instruction. It once opened with
+           # four caveats before the reader had seen a single tile -- the precision each paper
+           # reports, differing units, differing definitions and samples, and "Look at the
+           # source first" -- and none of them survive. Every tile links its paper, /results/
+           # carries the caveat and the citation for each result, and the units are printed on
+           # the row in the datasets catalogue, so the warning is available three ways to
+           # anyone who needs it. His call, twice, and recorded here so it is not quietly
+           # reinstated by a later reviewer who notices the numbers are not comparable.
+           '<p>One tile per paper: the question it asks and the answer it gives. The same '
+           'results as full sentences below, with a caveat and a citation each on '
+           '<a href="/results/"><b>Headline results</b></a>, and as a spreadsheet: '
            '<a href="https://meta-analysis.cz/estimates.csv">estimates.csv</a>.</p>']
 
     for field, cls in FIELDS:

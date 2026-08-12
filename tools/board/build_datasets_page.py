@@ -173,6 +173,7 @@ def build():
 \t\t<ul>
 \t\t\t<li class="current_page_item"><a href="/datasets/">Datasets</a></li>
 \t\t\t<li><a href="/">Data &amp; code</a></li>
+\t\t\t<li><a href="/results/">Headline results</a></li>
 \t\t\t<li><a href="/api/v1/README.md">API</a></li>
 \t\t\t<li><a href="/LICENSE">Licence</a></li>
 \t\t</ul>
