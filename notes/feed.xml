@@ -190,7 +190,7 @@ We built these tools, we expected them to win, and we pre-registered the compari
       <link>https://meta-analysis.cz/notes/a-tool-for-your-erc-proposal/</link>
       <guid isPermaLink="true">https://meta-analysis.cz/notes/a-tool-for-your-erc-proposal/</guid>
       <pubDate>Tue, 23 Jun 2026 00:00:00 +0000</pubDate>
-      <description>A tool checks an ERC draft against the official evaluation criteria and flags the routine weak spots, so the easy problems are cleared before you ask colleagues to read it.</description>
+      <description>A tool checks an ERC draft against the official evaluation criteria and flags the routine weak spots, so the easy problems are cleared before you ask colleagues to read it. It does not replace human review.</description>
       <content:encoded><![CDATA[<p class="byline">First published on <a href="https://www.linkedin.com/feed/update/urn%3Ali%3Ashare%3A7475160943409135616" rel="external">LinkedIn</a>, 23 June 2026. Archived with the rest of our writing at <a href="https://meta-analysis.cz/komentare/posts/2026-06-23-a-tool-for-your-erc-proposal/">/komentare/posts/2026-06-23-a-tool-for-your-erc-proposal/</a>.</p>
 
 <p>
@@ -454,7 +454,7 @@ For the full discussion of how we agreed on these guidelines (scroll down to com
       <link>https://meta-analysis.cz/notes/brodeur-team-reproducibility-numbers/</link>
       <guid isPermaLink="true">https://meta-analysis.cz/notes/brodeur-team-reproducibility-numbers/</guid>
       <pubDate>Thu, 02 Apr 2026 00:00:00 +0000</pubDate>
-      <description>A short comment on the Nature reproducibility study she co-authored: the numbers look good, but the papers replicated came from journals that already mandate data and code sharing. Share your data and code, and pre-register.</description>
+      <description>A short comment on the Nature reproducibility study I co-authored: the numbers look good, but the papers replicated came from journals that already mandate data and code sharing. Share your data and code, and pre-register.</description>
       <content:encoded><![CDATA[<p class="byline">First published on <a href="https://www.linkedin.com/feed/update/urn%3Ali%3Ashare%3A7445392769788968960" rel="external">LinkedIn</a>, 2 April 2026. Archived with the rest of our writing at <a href="https://meta-analysis.cz/komentare/posts/2026-04-02-brodeur-team-reproducibility-numbers/">/komentare/posts/2026-04-02-brodeur-team-reproducibility-numbers/</a>.</p>
 
 <p>
@@ -466,7 +466,7 @@ It was fun to be (a very small) part of the amazing team led by Abel Brodeur. Th
       <link>https://meta-analysis.cz/notes/four-models-debating-works-better/</link>
       <guid isPermaLink="true">https://meta-analysis.cz/notes/four-models-debating-works-better/</guid>
       <pubDate>Thu, 19 Mar 2026 00:00:00 +0000</pubDate>
-      <description>An updated research audit protocol (MAD v2.0) runs ChatGPT, Claude, Gemini, and Grok through independent critique, cross-examination, and a final synthesis, using copy-paste prompts with no coding required, or full automation via API frameworks. A pre-registered experiment four months later found the opposite in one setting: authors of 44 meta-analyses preferred a single-pass AI report to multi-agent debate.</description>
+      <description>An updated research audit protocol (MAD v2.0) runs ChatGPT, Claude, Gemini, and Grok through independent critique, cross-examination, and a final synthesis, using copy-paste prompts with no coding required, or full automation via API frameworks. A pre-registered experiment four months later put this to a test of a different shape: authors of 44 meta-analyses ranked a single pass by one frontier model above two multi-agent debate tools.</description>
       <content:encoded><![CDATA[<p class="byline">First published on <a href="https://www.linkedin.com/feed/update/urn%3Ali%3Ashare%3A7440296636783960064" rel="external">LinkedIn</a>, 19 March 2026. Archived with the rest of our writing at <a href="https://meta-analysis.cz/komentare/posts/2026-03-19-four-models-debating-works-better/">/komentare/posts/2026-03-19-four-models-debating-works-better/</a>.</p>
 
 <p>
@@ -851,7 +851,7 @@ Special thanks to <b>Petr Čala</b> for creating the app, and to <b>Heiko Rachin
       <link>https://meta-analysis.cz/notes/maer-ai-tools/</link>
       <guid isPermaLink="true">https://meta-analysis.cz/notes/maer-ai-tools/</guid>
       <pubDate>Wed, 30 Jul 2025 00:00:00 +0000</pubDate>
-      <description>AI tools have reached the point where they save real time in literature search and data collection. Here is what worked for me in mid-2025, mostly in ChatGPT, and where a competent human still has to check carefully what the AI returns.</description>
+      <description>I think AI tools have now reached the point where they can save real time in literature search and data collection. Here is what worked for me in mid-2025, mostly in ChatGPT, and where a competent human still has to check carefully what the AI returns.</description>
       <content:encoded><![CDATA[<p class="byline">First published on <a href="https://www.maer-net.org/post/ai-tools-for-meta-analysis" rel="external">MAER-Net</a>, 30 July 2025. Archived with the rest of our writing at <a href="https://meta-analysis.cz/komentare/maer-ai-tools/">/komentare/maer-ai-tools/</a>.</p>
 
 <p>

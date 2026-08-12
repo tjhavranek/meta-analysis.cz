@@ -43,7 +43,7 @@
  {
   "project": "alphas",
   "title": "What Matters in Explaining the Variation in Hedge Fund Performance? A Meta-Analysis",
-  "literature": "Heterogeneity in Hedge Fund Performance",
+  "literature": "Hedge Fund Performance",
   "abstract": "We examine the ability of 34 variables to explain the variation in reported estimates of hedge fund performance. Using 1,019 estimates collected from 74 empirical studies, we identify 9 consistently relevant variables. We also quantify the impact of management and performance fees. Synthesizing this extensive empirical evidence, we show that when considering the fees and the variation in research designs, current performance implied by the best practice methodology is close to zero for all common hedge fund strategies. Our paper helps evaluate the robustness of prior propositions on hedge fund performance and reconcile some seemingly contradictory findings.",
   "reference_line": "Fan Yang, Tomas Havranek, Zuzana Irsova, and Jiri Novak (2026), \"What Matters in Explaining the Variation in Hedge Fund Performance?\" Charles University, Prague. Available at meta-analysis.cz/alphas.",
   "authors": [
@@ -1407,7 +1407,7 @@
  {
   "project": "reforms",
   "title": "Structural Reforms and Economic Growth: A Meta-Analysis",
-  "literature": "Structural Reforms and Economic Growth",
+  "literature": "Structural Reforms and Growth in Transition",
   "abstract": "The present fiscal difficulties of many countries amplify the call for structural reforms. To provide stylized facts on how reforms worked in the past, we quantitatively review 60 studies estimating the relationship between reforms and growth. These studies examine structural reforms carried out in 26 transition countries around the world. Our results show that an average reform caused substantial costs in the short run, but had strong positive effects on long-run growth. Reforms focused on external liberalization proved to be more beneficial than others in both the short and long run. The findings hold even after correction for publication bias and misspecifications present in some primary studies.",
   "reference_line": "Jan Babecky & Tomas Havranek (2014), \"Structural Reforms and Growth in Transition: A Meta-Analysis.\" Economics of Transition 22(1), pp. 13-42.",
   "authors": [
@@ -1821,7 +1821,7 @@
  {
   "project": "substitution",
   "title": "Why Does Intertemporal Substitution Vary Across Countries? A Meta-Analysis",
-  "literature": "Cross-Country Heterogeneity in Intertemporal Substitution",
+  "literature": "Elasticity of Intertemporal Substitution",
   "abstract": "We collect 2,735 estimates of the elasticity of intertemporal substitution in consumption from 169 published studies that cover 104 countries during different time periods. The estimates vary substantially from country to country, even after controlling for 30 aspects of study design. Our results suggest that income and asset market participation are the most effective factors in explaining the heterogeneity: households in rich countries and countries with high stock market participation substitute a larger fraction of consumption intertemporally in response to changes in expected asset returns. Micro-level studies that focus on sub-samples of rich households or asset holders also find systematically larger values of the elasticity.",
   "reference_line": "Tomas Havranek, Roman Horvath, Zuzana Irsova, and Marek Rusnak (2015), \"Cross-Country Heterogeneity in Intertemporal Substitution.\" Journal of International Economics 96(1), 100-118.",
   "authors": [

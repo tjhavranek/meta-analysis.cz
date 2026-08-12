@@ -196,7 +196,8 @@
   },
   "pcc": {
    "value": "yes, all of them",
-   "zero": false
+   "zero": false,
+   "tail": "UWLS+3 corrects them"
   },
   "guidelines": {
    "value": "confront publication bias, p-hacking and heterogeneity",

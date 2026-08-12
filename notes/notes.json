@@ -274,7 +274,7 @@
       "slug": "a-tool-for-your-erc-proposal",
       "title": "An AI tool for checking your ERC proposal",
       "date": "2026-06-23",
-      "summary": "A tool checks an ERC draft against the official evaluation criteria and flags the routine weak spots, so the easy problems are cleared before you ask colleagues to read it.",
+      "summary": "A tool checks an ERC draft against the official evaluation criteria and flags the routine weak spots, so the easy problems are cleared before you ask colleagues to read it. It does not replace human review.",
       "topics": [
         "research tools",
         "peer review"
@@ -493,9 +493,6 @@
         {
           "name": "Zuzana Irsova",
           "orcid": "https://orcid.org/0000-0002-0753-8124"
-        },
-        {
-          "name": "Nikolai Cook"
         }
       ],
       "links": [],
@@ -510,7 +507,7 @@
       "slug": "brodeur-team-reproducibility-numbers",
       "title": "A caveat on the Brodeur team's Nature reproducibility study",
       "date": "2026-04-02",
-      "summary": "A short comment on the Nature reproducibility study she co-authored: the numbers look good, but the papers replicated came from journals that already mandate data and code sharing. Share your data and code, and pre-register.",
+      "summary": "A short comment on the Nature reproducibility study I co-authored: the numbers look good, but the papers replicated came from journals that already mandate data and code sharing. Share your data and code, and pre-register.",
       "topics": [
         "economics",
         "research tools"
@@ -541,7 +538,7 @@
       "slug": "four-models-debating-works-better",
       "title": "Four AI models debating works better than two",
       "date": "2026-03-19",
-      "summary": "An updated research audit protocol (MAD v2.0) runs ChatGPT, Claude, Gemini, and Grok through independent critique, cross-examination, and a final synthesis, using copy-paste prompts with no coding required, or full automation via API frameworks. A pre-registered experiment four months later found the opposite in one setting: authors of 44 meta-analyses preferred a single-pass AI report to multi-agent debate.",
+      "summary": "An updated research audit protocol (MAD v2.0) runs ChatGPT, Claude, Gemini, and Grok through independent critique, cross-examination, and a final synthesis, using copy-paste prompts with no coding required, or full automation via API frameworks. A pre-registered experiment four months later put this to a test of a different shape: authors of 44 meta-analyses ranked a single pass by one frontier model above two multi-agent debate tools.",
       "topics": [
         "AI and research",
         "research tools"
@@ -863,7 +860,7 @@
       "slug": "maer-ai-tools",
       "title": "AI Tools for Meta-Analysis",
       "date": "2025-07-30",
-      "summary": "AI tools have reached the point where they save real time in literature search and data collection. Here is what worked for me in mid-2025, mostly in ChatGPT, and where a competent human still has to check carefully what the AI returns.",
+      "summary": "I think AI tools have now reached the point where they can save real time in literature search and data collection. Here is what worked for me in mid-2025, mostly in ChatGPT, and where a competent human still has to check carefully what the AI returns.",
       "topics": [
         "AI and research",
         "meta-analysis methods"
