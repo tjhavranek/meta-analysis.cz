@@ -823,7 +823,13 @@ table.catalogue li{ margin-bottom:var(--s2); font-size:var(--f-1); line-height:1
   margin:0 0 var(--s3); padding-bottom:var(--s2);
   font:600 var(--f-2)/1.2 var(--sans); letter-spacing:.07em; text-transform:uppercase;
   color:var(--ink-soft);
-  border-bottom:2px solid var(--fc,var(--rule));
+  /* This was a 2px rule in the field's own hue, 12px above a row of tiles whose top borders
+     are also 2px in that hue: two strokes of identical weight and colour close enough that the
+     eye pairs them into one doubled line and then has to work out which is the section
+     boundary. A neutral hairline gives each stroke one job -- this line says the section
+     starts, the coloured one says the card belongs to the field -- and it matches the field
+     headings on /results/, which already use exactly this rule. */
+  border-bottom:1px solid var(--rule);
 }
 
 /* one hue per field, carried to the tiles through --fc. Colour touches only two

@@ -69,12 +69,16 @@ def main():
 
     tiles = 0
     out = [START, '\t\t<div class="entry">',
-           '<p>One tile per paper: the question it asks and the answer it gives, at the '
-           'precision the paper reports. Units differ from tile to tile, so the numbers do '
-           'not compare with one another, and neither do the definitions and samples behind '
-           'them. Look at the source first. The same results run as full '
-           'sentences below, on '
-           '<a href="/results/"><b>one searchable page</b></a>, and as a spreadsheet: '
+           # This paragraph used to open with three caveats before the reader had seen a single
+           # tile: the precision each paper reports, that units differ, that definitions and
+           # samples differ, and "Look at the source first". The one that earns its place is
+           # units, because a reader who compares 0.0145 with 22 across two tiles gets
+           # nonsense; the rest is throat-clearing, and every tile links the paper anyway.
+           '<p>One tile per paper: the question it asks and the answer it gives. Units differ '
+           'from tile to tile, so the numbers do not compare with one another. The same '
+           'results run as full sentences below, and on '
+           '<a href="/results/"><b>Headline results</b></a> each one carries the caveat, the '
+           'evidence and the citation that belong to it. As a spreadsheet: '
            '<a href="https://meta-analysis.cz/estimates.csv">estimates.csv</a>.</p>']
 
     for field, cls in FIELDS:
