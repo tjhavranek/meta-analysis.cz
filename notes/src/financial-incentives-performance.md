@@ -1,4 +1,4 @@
-Not reliably. We collected 2,193 estimates from 88 economics experiments and corrected them for
+Not automatically, at least in the experiments economists run. We collected 2,193 estimates from 88 economics experiments and corrected them for
 publication bias and p-hacking. The corrected mean effect of financial incentives on performance is
 close to zero across most field contexts. The paper is now out in the *Journal of Political Economy
 Microeconomics*; the replication package runs in one click and is linked in the sidebar.
