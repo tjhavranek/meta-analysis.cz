@@ -538,6 +538,9 @@ def main():
          # page listing three men — never link either.
          "publisher": {"@type": "Person", "@id": BASE + "/#th", "name": "Tomas Havranek",
                        "alternateName": ["Tomáš Havránek"],
+                       # /about/ states the rank in prose and in its own Person node; the
+                       # homepage node merges with it on @id, so it carries the same jobTitle.
+                       "jobTitle": "Professor of Economics",
                        "affiliation": {"@type": "Organization", "name": "Charles University, Prague"},
                        "url": "https://www.tomashavranek.cz",
                        "sameAs": ["https://orcid.org/0000-0002-3158-2539",
@@ -552,6 +555,7 @@ def main():
               # those are the same person as the "Zuzana Irsova" on the papers.
               "alternateName": ["Zuzana Iršová", "Zuzana Havránková",
                                 "Zuzana Iršová Havránková", "Zuzana Irsova Havrankova"],
+              "jobTitle": "Professor of Economics",
               "affiliation": {"@type": "Organization", "name": "Charles University, Prague"},
               "url": "https://www.irsova.com",
               "sameAs": ["https://orcid.org/0000-0002-0753-8124",
