@@ -90,7 +90,17 @@ for rel in pages:
     if old is None:
         fails.append(f"{rel}: not in git HEAD?")
         continue
-    if visible_text(old) != visible_text(new):
+    _o, _n = visible_text(old), visible_text(new)
+    # generate_seo.refresh_about_counts() rewrites /about/'s pooled-datasets numbers from
+    # api/v1/datasets.json, so on the build that first picks up a new dataset the page
+    # legitimately differs from HEAD. Comparing the sentence with its digits masked keeps
+    # every other word on that page under the same guard, and the count itself is not
+    # unchecked: the generator warns if the sentence stops matching its pattern at all.
+    _counts = re.compile(r"pools \d+ of the \d+ published datasets")
+    if rel == "about/index.html":
+        _o, _n = _counts.sub("pools N of the N published datasets", _o), \
+                 _counts.sub("pools N of the N published datasets", _n)
+    if _o != _n:
         fails.append(f"{rel}: VISIBLE TEXT CHANGED")
     # STRUCTURAL: today's incident - a stray </div> closed #content early and
     # dropped the sidebar out of the page box, while every other check passed.
