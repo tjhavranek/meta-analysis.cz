@@ -2,7 +2,7 @@
 
 Meta-analyses should try to correct not just for publication bias, but also for p-hacking.
 
-Some estimates are more likely to be reported than others, so every good summary of research should correct for this publication bias. In case you're wondering — yes, this can be done, there are dozens of methods and decades of research on this. There is even a great way to put these different correction techniques together: see RoBMA by František Bartoš and colleagues.
+Some estimates are more likely to be reported than others, so every good summary of research should correct for this publication bias. In case you're wondering — yes, this can be done, there are dozens of methods and decades of research on this. There is even a great way to put these different correction techniques together: see RoBMA by Frantisek Bartos and colleagues.
 
 The problem is that these techniques assume that the reported estimates are individually unbiased. This is a strong assumption, as researchers can tweak models (consciously or unconsciously) to get more "sensible" results. This is called p-hacking. Most of us do it.
 

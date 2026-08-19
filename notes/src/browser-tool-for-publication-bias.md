@@ -16,6 +16,6 @@ Swipe through the four slides to see the workflow.
 
 Try it with your own data: 👉 easymeta.org (https://www.easymeta.org/)
 
-With Pedro Bom, Tomas Havranek, Heiko Rachinger, and Petr Čala
+With Pedro Bom, Tomas Havranek, Heiko Rachinger, and Petr Cala
 
 <figure><img src="https://meta-analysis.cz/komentare/social-img/2026-01-27_easymeta.png" alt="First slide of the EasyMeta walkthrough: Seamless Meta-Analysis with MAIVE, adjust your data for publication bias, p-hacking, and spurious precision, with buttons to upload data or run a demo." /></figure>

@@ -135,7 +135,7 @@ def build(check=False):
     caption = (
         '<figcaption class="table-note"><b>What correcting for bias does to a number.</b> '
         'Each bar is one of the 24 meta-analyses reviewed in this paper. <b>Almost all are by '
-        f'other researchers</b>: {NUM[mine].lower()} of the 24 are Havránek&rsquo;s own. Each '
+        f'other researchers</b>: {NUM[mine].lower()} of the 24 are Havranek&rsquo;s own. Each '
         'compares that meta-analysis&rsquo;s corrected or best-practice mean with the conventional '
         'wisdom of the seminal study named in the paper&rsquo;s Table 2. '
         '<b>Red</b>: the corrected effect is smaller <i>in absolute magnitude</i> than the '

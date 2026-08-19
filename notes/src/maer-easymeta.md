@@ -10,6 +10,6 @@ We hope this tool will lower entry barriers to modern meta-analysis for students
 
 We'd be very grateful if you could use your favorite social network to share this tool with colleagues, students, or collaborators who might find it useful. And please let us know about any errors, missing features, or ideas for improvement — we'll keep refining the app based on your feedback. Together we can make bias correction in meta-analysis more accessible.
 
-Special thanks to **Petr Čala** for creating the app, and to **Heiko Rachinger** and **Pedro Bom** for developing the R package that powers it.
+Special thanks to **Petr Cala** for creating the app, and to **Heiko Rachinger** and **Pedro Bom** for developing the R package that powers it.
 
 👉 Try a demo at [EasyMeta.org/demo](https://www.spuriousprecision.com/demo)

@@ -15,7 +15,7 @@ Pre-registration:
 Replication package:
 [https://doi.org/10.5281/zenodo.21216506](https://doi.org/10.5281/zenodo.21216506)
 
-Joint work with Tomas Havranek, Martina Lušková, and T. D. Stanley
+Joint work with Tomas Havranek, Martina Luskova, and T. D. Stanley
 
 <figure><img src="https://meta-analysis.cz/komentare/social-img/2026-07-25_outliers_title.png" alt="Title page of the working paper Do decisions about outliers and influential effects matter? Evidence from 358 behavioral science meta-analyses by Tomas Havranek, Zuzana Irsova, Martina Luskova and T. D. Stanley, dated July 2026, with the full abstract below the title." /></figure>
 

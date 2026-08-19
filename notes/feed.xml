@@ -126,7 +126,7 @@ Paper, online appendix, and data: <a href="https://meta-analysis.cz/outliers">ht
 </p>
 
 <p>
-Joint work with Tomas Havranek, Martina Lušková, and T. D. Stanley
+Joint work with Tomas Havranek, Martina Luskova, and T. D. Stanley
 </p>
 
 <figure><img src="https://meta-analysis.cz/komentare/social-img/2026-07-25_outliers_title.png" alt="Title page of the working paper Do decisions about outliers and influential effects matter? Evidence from 358 behavioral science meta-analyses by Tomas Havranek, Zuzana Irsova, Martina Luskova and T. D. Stanley, dated July 2026, with the full abstract below the title." /></figure>
@@ -344,11 +344,11 @@ Two practical points I would emphasize (my personal opinion), beyond the reporti
 </p>
 
 <p>
-2️⃣ These guidelines intentionally do not recommend any particular methodology. We do so in our 2024 method guidelines (https://onlinelibrary.wiley.com/doi/full/10.1111/joes.12595). Brief update: I think the baseline meta-analysis technique is now Robust Bayesian Meta-Analysis (RoBMA) by František Bartoš, Maximilian Maier, and Eric-Jan Wagenmakers -- a principled way to average over various bias-correction methods. But these methods don't address p-hacking, so RoBMA should be complemented with MAIVE (easy to apply via <a href="https://easymeta.org">https://easymeta.org</a>) and RTMA (Maya Mathur).
+2️⃣ These guidelines intentionally do not recommend any particular methodology. We do so in our 2024 method guidelines (https://onlinelibrary.wiley.com/doi/full/10.1111/joes.12595). Brief update: I think the baseline meta-analysis technique is now Robust Bayesian Meta-Analysis (RoBMA) by Frantisek Bartos, Maximilian Maier, and Eric-Jan Wagenmakers -- a principled way to average over various bias-correction methods. But these methods don't address p-hacking, so RoBMA should be complemented with MAIVE (easy to apply via <a href="https://easymeta.org">https://easymeta.org</a>) and RTMA (Maya Mathur).
 </p>
 
 <p>
-The updated reporting guidelines were led by Nikolai Cook and co-authored with František Bartoš, Pedro Bom, Sebastian Gechert, Klára Kantová, Jerome Geyer-Klingeberg, Dr.-Ing., Tomas Havranek, Martina Lušková, Matej Opatrny, Franz Prante, Heiko Rachinger, and Tom Stanley.
+The updated reporting guidelines were led by Nikolai Cook and co-authored with Frantisek Bartos, Pedro Bom, Sebastian Gechert, Klara Kantova, Jerome Geyer-Klingeberg, Dr.-Ing., Tomas Havranek, Martina Luskova, Matej Opatrny, Franz Prante, Heiko Rachinger, and Tom Stanley.
 </p>
 
 <figure><img src="https://meta-analysis.cz/komentare/social-img/2026-05-13_p9_1.jpeg" alt="Journal of Economic Surveys article header, open access: Reporting Guidelines for Meta-Analysis in Economics, Updated for AI, by Nikolai Cook, Frantisek Bartos, Pedro R. D. Bom, Sebastian Gechert, Klara Kantova, Jerome Geyer-Klingeberg, Tomas Havranek, Zuzana Irsova, Martina Luskova and others. First published 12 May 2026." /></figure>]]></content:encoded>
@@ -382,7 +382,7 @@ A nice side effect is that this becomes a natural experiment on our own work. Ho
 </p>
 
 <p>
-The amazing Martina Lušková joined the team to help lead study selection and coding, and we are working with a librarian at the University of Amsterdam on the search strategy.
+The amazing Martina Luskova joined the team to help lead study selection and coding, and we are working with a librarian at the University of Amsterdam on the search strategy.
 </p>
 
 <p>
@@ -398,7 +398,7 @@ We should do much more pre-registration in observational research. It doesn't fu
 </p>
 
 <p>
-Co-authored with Tomas Havranek, František Bartoš, Xenia Bortnikova, and Martina Lušková
+Co-authored with Tomas Havranek, Frantisek Bartos, Xenia Bortnikova, and Martina Luskova
 </p>
 
 <figure><img src="https://meta-analysis.cz/komentare/social-img/2026-04-28_p10_1.jpeg" alt="First page of a pre-registered protocol headed Systematic review, update protocol: Meta-Analysis of Field Studies on Beauty and Professional Success. A table gives the protocol type, describing substantial revisions to the literature search, screening, coding, analysis and reporting of the previous version, and records the registration on the Open Science Framework." /></figure>]]></content:encoded>
@@ -510,7 +510,7 @@ Meta-analyses should try to correct not just for publication bias, but also for 
 </p>
 
 <p>
-Some estimates are more likely to be reported than others, so every good summary of research should correct for this publication bias. In case you're wondering — yes, this can be done, there are dozens of methods and decades of research on this. There is even a great way to put these different correction techniques together: see RoBMA by František Bartoš and colleagues.
+Some estimates are more likely to be reported than others, so every good summary of research should correct for this publication bias. In case you're wondering — yes, this can be done, there are dozens of methods and decades of research on this. There is even a great way to put these different correction techniques together: see RoBMA by Frantisek Bartos and colleagues.
 </p>
 
 <p>
@@ -564,7 +564,7 @@ Try it with your own data: 👉 easymeta.org (https://www.easymeta.org/)
 </p>
 
 <p>
-With Pedro Bom, Tomas Havranek, Heiko Rachinger, and Petr Čala
+With Pedro Bom, Tomas Havranek, Heiko Rachinger, and Petr Cala
 </p>
 
 <figure><img src="https://meta-analysis.cz/komentare/social-img/2026-01-27_easymeta.png" alt="First slide of the EasyMeta walkthrough: Seamless Meta-Analysis with MAIVE, adjust your data for publication bias, p-hacking, and spurious precision, with buttons to upload data or run a demo." /></figure>]]></content:encoded>
@@ -651,7 +651,7 @@ MAIVE is also available in the <a href="https://www.easymeta.org">EasyMeta.org</
 </p>
 
 <p>
-Many thanks to <b>Petr Čala</b> for preparing the CRAN release and building the EasyMeta interface.
+Many thanks to <b>Petr Cala</b> for preparing the CRAN release and building the EasyMeta interface.
 </p>]]></content:encoded>
     </item>
     <item>
@@ -839,7 +839,7 @@ We'd be very grateful if you could use your favorite social network to share thi
 </p>
 
 <p>
-Special thanks to <b>Petr Čala</b> for creating the app, and to <b>Heiko Rachinger</b> and <b>Pedro Bom</b> for developing the R package that powers it.
+Special thanks to <b>Petr Cala</b> for creating the app, and to <b>Heiko Rachinger</b> and <b>Pedro Bom</b> for developing the R package that powers it.
 </p>
 
 <p>
@@ -979,7 +979,7 @@ The guidelines are brief and non-technical, so please read them if you are inter
 </p>
 
 <p>
-<b>Correction techniques</b>. Always correct for potential publication bias or p-hacking. Use at least one model based on the funnel plot (such as PET-PEESE) and one selection model (such as 3PSM). Both families of correction techniques have quite different assumptions. Recently, Bartoš et al. (2023) have offered a model average across both families of publication selection bias corrections and models without any selection bias. Bartoš et al. offer easy to use software, JASP: (<a href="https://fbartos.github.io/RoBMA/">https://fbartos.github.io/RoBMA/</a>) to calculate RoBMA-PSMA. Also, there are a number of video and <a href="https://journals.sagepub.com/doi/full/10.1177/25152459221109259">published tutorials</a> that provide step-by-step guidance. Additionally, you can also use our new <a href="https://meta-analysis.cz/maive/">MAIVE technique</a>, which allows for spurious precision.
+<b>Correction techniques</b>. Always correct for potential publication bias or p-hacking. Use at least one model based on the funnel plot (such as PET-PEESE) and one selection model (such as 3PSM). Both families of correction techniques have quite different assumptions. Recently, Bartos et al. (2023) have offered a model average across both families of publication selection bias corrections and models without any selection bias. Bartos et al. offer easy to use software, JASP: (<a href="https://fbartos.github.io/RoBMA/">https://fbartos.github.io/RoBMA/</a>) to calculate RoBMA-PSMA. Also, there are a number of video and <a href="https://journals.sagepub.com/doi/full/10.1177/25152459221109259">published tutorials</a> that provide step-by-step guidance. Additionally, you can also use our new <a href="https://meta-analysis.cz/maive/">MAIVE technique</a>, which allows for spurious precision.
 </p>
 
 <p>
