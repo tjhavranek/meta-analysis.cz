@@ -448,6 +448,41 @@ def git_dates():
         print("git dates unavailable:", e)
     return dates
 
+def refresh_about_counts(api):
+    """Keep /about/'s one hand-written pair of numbers honest.
+
+    The About page is SELF_MANAGED, so the head injector never touches it, and its
+    body sentence "pools 40 of the 44 published datasets" was maintained by hand --
+    correct when written and silently wrong the day a 45th dataset lands. The
+    numbers live in api/v1/datasets.json like every other count on the site, so
+    read them from there and rewrite the sentence in place. Nothing else on the
+    page is touched, and a mismatch is reported rather than fixed quietly.
+    """
+    path = os.path.join(SITE, "about", "index.html")
+    if not os.path.exists(path):
+        return
+    counts = (api or {}).get("counts") or {}
+    pooled = counts.get("literatures_in_harmonised_table")
+    total = counts.get("datasets")
+    if not (pooled and total):
+        WARNINGS.append("about: datasets.json carries no counts to refresh the page with")
+        return
+    s = open(path, encoding="utf-8").read()
+    pat = re.compile(r"pools (\d+) of the (\d+) published datasets")
+    m = pat.search(s)
+    if not m:
+        WARNINGS.append(
+            "about: the pooled-datasets sentence has been reworded, so its counts are "
+            "no longer refreshed here -- update the pattern in refresh_about_counts()")
+        return
+    if (int(m.group(1)), int(m.group(2))) == (pooled, total):
+        return
+    NOTES.append(f"about: pooled-datasets count refreshed to {pooled} of {total} "
+                 f"(page said {m.group(1)} of {m.group(2)})")
+    open(path, "w", encoding="utf-8", newline="\n").write(
+        pat.sub(f"pools {pooled} of the {total} published datasets", s, count=1))
+
+
 def main():
     metas = {m["project"]: m for m in json.load(open(META, encoding="utf-8"))}
     # Every surname in `authors` must appear in that paper's `reference_line`. The two are
@@ -847,6 +882,7 @@ def main():
                if t["href"] not in seen_hrefs]
         lf += ["", f"Abstract: {m['abstract']}", ""]
     open(os.path.join(SITE, "llms-full.txt"), "w", encoding="utf-8", newline="\n").write("\n".join(lf))
+    refresh_about_counts(_api)
     print("wrote robots.txt, sitemap.xml, llms.txt, llms-full.txt")
 
     if NOTES:

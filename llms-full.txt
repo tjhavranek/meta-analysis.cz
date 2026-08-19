@@ -41,7 +41,7 @@ Abstract: A key parameter in international economics is the elasticity of substi
 
 ## Beauty and Professional Success: A Meta-Analysis
 URL: https://meta-analysis.cz/beauty/
-Citation: Zuzana Irsova, Tomas Havranek, Kseniya Bortnikova, František Bartoš (2025), "Meta-Analysis of Field Studies on Beauty and Professional Success." Charles University, Prague. Available at meta-analysis.cz/beauty.
+Citation: Zuzana Irsova, Tomas Havranek, Kseniya Bortnikova, Frantisek Bartos (2025), "Meta-Analysis of Field Studies on Beauty and Professional Success." Charles University, Prague. Available at meta-analysis.cz/beauty.
 Paper: https://meta-analysis.cz/beauty/beauty.pdf
 Excluded Studies: https://meta-analysis.cz/beauty/excluded.xlsx
 Classification Details: https://meta-analysis.cz/beauty/classification.xlsx
@@ -225,7 +225,7 @@ Abstract: We show that three factors combine to explain the mean magnitude of ex
 
 ## Effect of Exercise on Cognition, Memory, and Executive Function: A Study-Level Meta-Meta-Analysis Across Populations and Exercise Categories
 URL: https://meta-analysis.cz/exercise/
-Citation: František Bartoš, Martina Lušková, Kseniya Bortnikova, Karolína Hozová, Klara Kantova, Zuzana Irsova, Tomas Havranek (2025), "Effect of Exercise on Cognition, Memory, and Executive Function: A Study-Level Meta-Meta-Analysis Across Populations and Exercise Categories," available at osf.io/preprints/psyarxiv/qr8e2_v1.
+Citation: Frantisek Bartos, Martina Luskova, Kseniya Bortnikova, Karolina Hozova, Klara Kantova, Zuzana Irsova, Tomas Havranek (2025), "Effect of Exercise on Cognition, Memory, and Executive Function: A Study-Level Meta-Meta-Analysis Across Populations and Exercise Categories," available at osf.io/preprints/psyarxiv/qr8e2_v1.
 Published version: https://doi.org/10.31234/osf.io/qr8e2_v1
 Read the paper: https://osf.io/preprints/psyarxiv/qr8e2_v1
 Replication package: https://osf.io/egfzt/overview
