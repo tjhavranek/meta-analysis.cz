@@ -537,8 +537,24 @@ cr={"@context":{"@vocab":"https://schema.org/","cr":"http://mlcommons.org/croiss
         "description":("DERIVED AGGREGATE VIEW of the per-dataset files above, reshaped to a "
                        "common schema. Rows are not additional to them."),
         "contentUrl":f"{BASE}/data/{DATA_V}/estimates_harmonised.csv",
-        "encodingFormat":"text/csv"}],
-    "recordSet":[_record_set(d) for d in ok]}
+        "encodingFormat":"text/csv"},{
+        "@type":"cr:FileObject","@id":"estimates_harmonised.parquet",
+        "name":"estimates_harmonised.parquet",
+        "description":"The same derived aggregate view, as Parquet.",
+        "contentUrl":f"{BASE}/data/{DATA_V}/estimates_harmonised.parquet",
+        "encodingFormat":"application/vnd.apache.parquet"}],
+    # The flagship artifact was a bare FileObject: no schema, and CSV only, while every
+    # per-dataset entry ships Parquet with a typed RecordSet. A Croissant consumer could see
+    # that the pooled table exists but not what is in it.
+    "recordSet":[_record_set(d) for d in ok]+[{
+        "@type":"cr:RecordSet","@id":"estimates_harmonised","name":"estimates_harmonised",
+        "description":("DERIVED AGGREGATE VIEW of the per-dataset record sets, reshaped to a "
+                       "common schema. Its rows are not additional to them."),
+        "field":[{"@type":"cr:Field","@id":f"estimates_harmonised/{f['name']}","name":f["name"],
+                  "dataType":("sc:Float" if f["type"]=="number" else "sc:Text"),
+                  "source":{"fileObject":{"@id":"estimates_harmonised.parquet"},
+                            "extract":{"column":f["name"]}}}
+                 for f in _harmonised_fields()]}]}
 json.dump(cr,open(os.path.join(api,"croissant.json"),"w",encoding="utf-8"),indent=1,ensure_ascii=False)
 
 print(f"datasets.json: {len(datasets)} entries ({len(ok)} with data), "

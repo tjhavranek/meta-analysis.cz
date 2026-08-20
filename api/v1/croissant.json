@@ -455,6 +455,14 @@
    "description": "DERIVED AGGREGATE VIEW of the per-dataset files above, reshaped to a common schema. Rows are not additional to them.",
    "contentUrl": "https://meta-analysis.cz/data/v1/estimates_harmonised.csv",
    "encodingFormat": "text/csv"
+  },
+  {
+   "@type": "cr:FileObject",
+   "@id": "estimates_harmonised.parquet",
+   "name": "estimates_harmonised.parquet",
+   "description": "The same derived aggregate view, as Parquet.",
+   "contentUrl": "https://meta-analysis.cz/data/v1/estimates_harmonised.parquet",
+   "encodingFormat": "application/vnd.apache.parquet"
   }
  ],
  "recordSet": [
@@ -49621,6 +49629,588 @@
       },
       "extract": {
        "column": "reference"
+      }
+     }
+    }
+   ]
+  },
+  {
+   "@type": "cr:RecordSet",
+   "@id": "estimates_harmonised",
+   "name": "estimates_harmonised",
+   "description": "DERIVED AGGREGATE VIEW of the per-dataset record sets, reshaped to a common schema. Its rows are not additional to them.",
+   "field": [
+    {
+     "@type": "cr:Field",
+     "@id": "estimates_harmonised/dataset",
+     "name": "dataset",
+     "dataType": "sc:Text",
+     "source": {
+      "fileObject": {
+       "@id": "estimates_harmonised.parquet"
+      },
+      "extract": {
+       "column": "dataset"
+      }
+     }
+    },
+    {
+     "@type": "cr:Field",
+     "@id": "estimates_harmonised/study_id",
+     "name": "study_id",
+     "dataType": "sc:Float",
+     "source": {
+      "fileObject": {
+       "@id": "estimates_harmonised.parquet"
+      },
+      "extract": {
+       "column": "study_id"
+      }
+     }
+    },
+    {
+     "@type": "cr:Field",
+     "@id": "estimates_harmonised/estimate_id",
+     "name": "estimate_id",
+     "dataType": "sc:Float",
+     "source": {
+      "fileObject": {
+       "@id": "estimates_harmonised.parquet"
+      },
+      "extract": {
+       "column": "estimate_id"
+      }
+     }
+    },
+    {
+     "@type": "cr:Field",
+     "@id": "estimates_harmonised/study_label",
+     "name": "study_label",
+     "dataType": "sc:Text",
+     "source": {
+      "fileObject": {
+       "@id": "estimates_harmonised.parquet"
+      },
+      "extract": {
+       "column": "study_label"
+      }
+     }
+    },
+    {
+     "@type": "cr:Field",
+     "@id": "estimates_harmonised/effect",
+     "name": "effect",
+     "dataType": "sc:Float",
+     "source": {
+      "fileObject": {
+       "@id": "estimates_harmonised.parquet"
+      },
+      "extract": {
+       "column": "effect"
+      }
+     }
+    },
+    {
+     "@type": "cr:Field",
+     "@id": "estimates_harmonised/se",
+     "name": "se",
+     "dataType": "sc:Float",
+     "source": {
+      "fileObject": {
+       "@id": "estimates_harmonised.parquet"
+      },
+      "extract": {
+       "column": "se"
+      }
+     }
+    },
+    {
+     "@type": "cr:Field",
+     "@id": "estimates_harmonised/t_stat",
+     "name": "t_stat",
+     "dataType": "sc:Float",
+     "source": {
+      "fileObject": {
+       "@id": "estimates_harmonised.parquet"
+      },
+      "extract": {
+       "column": "t_stat"
+      }
+     }
+    },
+    {
+     "@type": "cr:Field",
+     "@id": "estimates_harmonised/precision",
+     "name": "precision",
+     "dataType": "sc:Float",
+     "source": {
+      "fileObject": {
+       "@id": "estimates_harmonised.parquet"
+      },
+      "extract": {
+       "column": "precision"
+      }
+     }
+    },
+    {
+     "@type": "cr:Field",
+     "@id": "estimates_harmonised/n_obs",
+     "name": "n_obs",
+     "dataType": "sc:Float",
+     "source": {
+      "fileObject": {
+       "@id": "estimates_harmonised.parquet"
+      },
+      "extract": {
+       "column": "n_obs"
+      }
+     }
+    },
+    {
+     "@type": "cr:Field",
+     "@id": "estimates_harmonised/df",
+     "name": "df",
+     "dataType": "sc:Float",
+     "source": {
+      "fileObject": {
+       "@id": "estimates_harmonised.parquet"
+      },
+      "extract": {
+       "column": "df"
+      }
+     }
+    },
+    {
+     "@type": "cr:Field",
+     "@id": "estimates_harmonised/pcc",
+     "name": "pcc",
+     "dataType": "sc:Float",
+     "source": {
+      "fileObject": {
+       "@id": "estimates_harmonised.parquet"
+      },
+      "extract": {
+       "column": "pcc"
+      }
+     }
+    },
+    {
+     "@type": "cr:Field",
+     "@id": "estimates_harmonised/se_pcc",
+     "name": "se_pcc",
+     "dataType": "sc:Float",
+     "source": {
+      "fileObject": {
+       "@id": "estimates_harmonised.parquet"
+      },
+      "extract": {
+       "column": "se_pcc"
+      }
+     }
+    },
+    {
+     "@type": "cr:Field",
+     "@id": "estimates_harmonised/pub_year",
+     "name": "pub_year",
+     "dataType": "sc:Float",
+     "source": {
+      "fileObject": {
+       "@id": "estimates_harmonised.parquet"
+      },
+      "extract": {
+       "column": "pub_year"
+      }
+     }
+    },
+    {
+     "@type": "cr:Field",
+     "@id": "estimates_harmonised/citations",
+     "name": "citations",
+     "dataType": "sc:Float",
+     "source": {
+      "fileObject": {
+       "@id": "estimates_harmonised.parquet"
+      },
+      "extract": {
+       "column": "citations"
+      }
+     }
+    },
+    {
+     "@type": "cr:Field",
+     "@id": "estimates_harmonised/impact_factor",
+     "name": "impact_factor",
+     "dataType": "sc:Float",
+     "source": {
+      "fileObject": {
+       "@id": "estimates_harmonised.parquet"
+      },
+      "extract": {
+       "column": "impact_factor"
+      }
+     }
+    },
+    {
+     "@type": "cr:Field",
+     "@id": "estimates_harmonised/published",
+     "name": "published",
+     "dataType": "sc:Float",
+     "source": {
+      "fileObject": {
+       "@id": "estimates_harmonised.parquet"
+      },
+      "extract": {
+       "column": "published"
+      }
+     }
+    },
+    {
+     "@type": "cr:Field",
+     "@id": "estimates_harmonised/top_journal",
+     "name": "top_journal",
+     "dataType": "sc:Float",
+     "source": {
+      "fileObject": {
+       "@id": "estimates_harmonised.parquet"
+      },
+      "extract": {
+       "column": "top_journal"
+      }
+     }
+    },
+    {
+     "@type": "cr:Field",
+     "@id": "estimates_harmonised/country",
+     "name": "country",
+     "dataType": "sc:Text",
+     "source": {
+      "fileObject": {
+       "@id": "estimates_harmonised.parquet"
+      },
+      "extract": {
+       "column": "country"
+      }
+     }
+    },
+    {
+     "@type": "cr:Field",
+     "@id": "estimates_harmonised/country_id",
+     "name": "country_id",
+     "dataType": "sc:Float",
+     "source": {
+      "fileObject": {
+       "@id": "estimates_harmonised.parquet"
+      },
+      "extract": {
+       "column": "country_id"
+      }
+     }
+    },
+    {
+     "@type": "cr:Field",
+     "@id": "estimates_harmonised/is_usa",
+     "name": "is_usa",
+     "dataType": "sc:Float",
+     "source": {
+      "fileObject": {
+       "@id": "estimates_harmonised.parquet"
+      },
+      "extract": {
+       "column": "is_usa"
+      }
+     }
+    },
+    {
+     "@type": "cr:Field",
+     "@id": "estimates_harmonised/is_europe",
+     "name": "is_europe",
+     "dataType": "sc:Float",
+     "source": {
+      "fileObject": {
+       "@id": "estimates_harmonised.parquet"
+      },
+      "extract": {
+       "column": "is_europe"
+      }
+     }
+    },
+    {
+     "@type": "cr:Field",
+     "@id": "estimates_harmonised/data_start",
+     "name": "data_start",
+     "dataType": "sc:Float",
+     "source": {
+      "fileObject": {
+       "@id": "estimates_harmonised.parquet"
+      },
+      "extract": {
+       "column": "data_start"
+      }
+     }
+    },
+    {
+     "@type": "cr:Field",
+     "@id": "estimates_harmonised/data_end",
+     "name": "data_end",
+     "dataType": "sc:Float",
+     "source": {
+      "fileObject": {
+       "@id": "estimates_harmonised.parquet"
+      },
+      "extract": {
+       "column": "data_end"
+      }
+     }
+    },
+    {
+     "@type": "cr:Field",
+     "@id": "estimates_harmonised/data_midyear",
+     "name": "data_midyear",
+     "dataType": "sc:Float",
+     "source": {
+      "fileObject": {
+       "@id": "estimates_harmonised.parquet"
+      },
+      "extract": {
+       "column": "data_midyear"
+      }
+     }
+    },
+    {
+     "@type": "cr:Field",
+     "@id": "estimates_harmonised/is_panel",
+     "name": "is_panel",
+     "dataType": "sc:Float",
+     "source": {
+      "fileObject": {
+       "@id": "estimates_harmonised.parquet"
+      },
+      "extract": {
+       "column": "is_panel"
+      }
+     }
+    },
+    {
+     "@type": "cr:Field",
+     "@id": "estimates_harmonised/is_cross_section",
+     "name": "is_cross_section",
+     "dataType": "sc:Float",
+     "source": {
+      "fileObject": {
+       "@id": "estimates_harmonised.parquet"
+      },
+      "extract": {
+       "column": "is_cross_section"
+      }
+     }
+    },
+    {
+     "@type": "cr:Field",
+     "@id": "estimates_harmonised/is_time_series",
+     "name": "is_time_series",
+     "dataType": "sc:Float",
+     "source": {
+      "fileObject": {
+       "@id": "estimates_harmonised.parquet"
+      },
+      "extract": {
+       "column": "is_time_series"
+      }
+     }
+    },
+    {
+     "@type": "cr:Field",
+     "@id": "estimates_harmonised/freq_annual",
+     "name": "freq_annual",
+     "dataType": "sc:Float",
+     "source": {
+      "fileObject": {
+       "@id": "estimates_harmonised.parquet"
+      },
+      "extract": {
+       "column": "freq_annual"
+      }
+     }
+    },
+    {
+     "@type": "cr:Field",
+     "@id": "estimates_harmonised/freq_quarterly",
+     "name": "freq_quarterly",
+     "dataType": "sc:Float",
+     "source": {
+      "fileObject": {
+       "@id": "estimates_harmonised.parquet"
+      },
+      "extract": {
+       "column": "freq_quarterly"
+      }
+     }
+    },
+    {
+     "@type": "cr:Field",
+     "@id": "estimates_harmonised/freq_monthly",
+     "name": "freq_monthly",
+     "dataType": "sc:Float",
+     "source": {
+      "fileObject": {
+       "@id": "estimates_harmonised.parquet"
+      },
+      "extract": {
+       "column": "freq_monthly"
+      }
+     }
+    },
+    {
+     "@type": "cr:Field",
+     "@id": "estimates_harmonised/method_ols",
+     "name": "method_ols",
+     "dataType": "sc:Float",
+     "source": {
+      "fileObject": {
+       "@id": "estimates_harmonised.parquet"
+      },
+      "extract": {
+       "column": "method_ols"
+      }
+     }
+    },
+    {
+     "@type": "cr:Field",
+     "@id": "estimates_harmonised/method_iv",
+     "name": "method_iv",
+     "dataType": "sc:Float",
+     "source": {
+      "fileObject": {
+       "@id": "estimates_harmonised.parquet"
+      },
+      "extract": {
+       "column": "method_iv"
+      }
+     }
+    },
+    {
+     "@type": "cr:Field",
+     "@id": "estimates_harmonised/method_gmm",
+     "name": "method_gmm",
+     "dataType": "sc:Float",
+     "source": {
+      "fileObject": {
+       "@id": "estimates_harmonised.parquet"
+      },
+      "extract": {
+       "column": "method_gmm"
+      }
+     }
+    },
+    {
+     "@type": "cr:Field",
+     "@id": "estimates_harmonised/method_ml",
+     "name": "method_ml",
+     "dataType": "sc:Float",
+     "source": {
+      "fileObject": {
+       "@id": "estimates_harmonised.parquet"
+      },
+      "extract": {
+       "column": "method_ml"
+      }
+     }
+    },
+    {
+     "@type": "cr:Field",
+     "@id": "estimates_harmonised/method_fe",
+     "name": "method_fe",
+     "dataType": "sc:Float",
+     "source": {
+      "fileObject": {
+       "@id": "estimates_harmonised.parquet"
+      },
+      "extract": {
+       "column": "method_fe"
+      }
+     }
+    },
+    {
+     "@type": "cr:Field",
+     "@id": "estimates_harmonised/horizon",
+     "name": "horizon",
+     "dataType": "sc:Float",
+     "source": {
+      "fileObject": {
+       "@id": "estimates_harmonised.parquet"
+      },
+      "extract": {
+       "column": "horizon"
+      }
+     }
+    },
+    {
+     "@type": "cr:Field",
+     "@id": "estimates_harmonised/effect_units",
+     "name": "effect_units",
+     "dataType": "sc:Text",
+     "source": {
+      "fileObject": {
+       "@id": "estimates_harmonised.parquet"
+      },
+      "extract": {
+       "column": "effect_units"
+      }
+     }
+    },
+    {
+     "@type": "cr:Field",
+     "@id": "estimates_harmonised/source_file",
+     "name": "source_file",
+     "dataType": "sc:Text",
+     "source": {
+      "fileObject": {
+       "@id": "estimates_harmonised.parquet"
+      },
+      "extract": {
+       "column": "source_file"
+      }
+     }
+    },
+    {
+     "@type": "cr:Field",
+     "@id": "estimates_harmonised/effect_col",
+     "name": "effect_col",
+     "dataType": "sc:Text",
+     "source": {
+      "fileObject": {
+       "@id": "estimates_harmonised.parquet"
+      },
+      "extract": {
+       "column": "effect_col"
+      }
+     }
+    },
+    {
+     "@type": "cr:Field",
+     "@id": "estimates_harmonised/se_col",
+     "name": "se_col",
+     "dataType": "sc:Text",
+     "source": {
+      "fileObject": {
+       "@id": "estimates_harmonised.parquet"
+      },
+      "extract": {
+       "column": "se_col"
+      }
+     }
+    },
+    {
+     "@type": "cr:Field",
+     "@id": "estimates_harmonised/se_is_derived",
+     "name": "se_is_derived",
+     "dataType": "sc:Text",
+     "source": {
+      "fileObject": {
+       "@id": "estimates_harmonised.parquet"
+      },
+      "extract": {
+       "column": "se_is_derived"
       }
      }
     }
