@@ -171,8 +171,9 @@ estimates twice and present one literature as two independent ones:
 IDs*. Two of them describe the same literature: `trust` is a later, separate collection of
 the size-premium literature that `size` also covers, which is why only the 284 estimates
 `size` does not already carry are pooled. So "41 literatures" means 41 contributing dataset
-IDs, not 40 independent bodies of evidence — treat `trust` and `size` as one family in any
-analysis that assumes independence.
+IDs, not 41 independent bodies of evidence: `trust` and `size` cover the same size-premium
+literature, so the 41 IDs represent at most 40 literature families. Treat those two as one
+family in any analysis that assumes independence.
 
 **Several pooled columns are literature-local.** `study_id` and `estimate_id` are unique
 within a dataset, not across the table; a study appearing in two literatures carries two

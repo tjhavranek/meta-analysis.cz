@@ -413,7 +413,13 @@ def _harmonised_fields():
             for j,c in enumerate(head)]
 
 
-dp=dict(profile="tabular-data-package", name="meta-analysis-cz", version=VERSION,
+# `version` is the DATA PACKAGE version, per the Frictionless standard: its own versioning
+# recipe says to bump it when data resources are added or existing data is corrected. It is
+# NOT an interface version. This shipped VERSION (the site's API-interface number) here, so
+# a conforming client read the 1.1.0 package as 1.0.0. api_version keeps the interface
+# concept as a custom property, which the spec permits.
+dp=dict(profile="tabular-data-package", name="meta-analysis-cz",
+        version=(harm.get("version") or DATA_VERSION),
         api_version=VERSION, data_version=(harm.get("version") or DATA_VERSION),
         title="meta-analysis.cz estimate-level datasets",
         # Package-level `licenses` IS set, deliberately. Under Frictionless semantics it

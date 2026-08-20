@@ -43,7 +43,9 @@ abstract: >-
   41 literatures. Each dataset ships a column-level codebook. Column
   mappings were resolved arithmetically, by requiring that the effect divided by
   its standard error reproduce the t-statistic each dataset already reports, and
-  otherwise taken from each paper's own replication code.
+  otherwise from each paper's own replication code or other documented evidence.
+  One literature is an exception: finance_growth, whose mapping is provisional and
+  marked arithmetic_pairing_only because its replication code was not read.
 keywords:
   - meta-analysis
   - publication bias

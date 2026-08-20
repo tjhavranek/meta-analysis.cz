@@ -21,7 +21,7 @@ so anyone can check.
     python tools_seo/build_zstat_figure.py            # writes the fragment + data csv
     python tools_seo/build_zstat_figure.py --check    # prints the numbers, writes nothing
 
-The fragment lands in redesign/_fragments/zstat_figure.html and is inlined by
+The fragment lands beside this script in _fragments/zstat_figure.html and is inlined by
 redesign/build_datasets_page.py; the numbers land in site/data/v1/t_distribution.csv
 so a reader can redraw it.
 """
