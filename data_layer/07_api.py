@@ -147,7 +147,11 @@ def _core_cols(proj):
     if o.get("se_mean_of"): se="mean of "+" and ".join(o["se_mean_of"])
     return dict(effect=eff, standard_error=se,
                 standard_error_note=(r.get("se") if r.get("se_derived") and not se else None),
-                evidence=("paper's replication code" if o.get("verified_by") else r.get("evidence")))
+                # Same trap as _audit_status: verified_by normally means the code was read,
+                # but it can record a mapping settled another way. An explicit `evidence`
+                # declaration wins, so the catalogue cannot claim a source it does not have.
+                evidence=(o.get("evidence") or
+                          ("paper's replication code" if o.get("verified_by") else r.get("evidence"))))
 
 def _recon_note(proj,pap):
     """Explain a gap between the abstract's count and the pooled rows.
@@ -325,7 +329,7 @@ index=dict(
     estimates_in_harmonised_table=(harm.get("n_rows") or 0),
     literatures_in_harmonised_table=(harm.get("n_datasets") or 0),
     in_harmonised_table=sum(1 for d in ok if d["in_harmonised_table"]),
-    counts_explained=("rows_in_source_files counts every row of the 44 converted files. "
+    counts_explained=(f"rows_in_source_files counts every row of the {len(ok)} converted files. "
                       "estimates_in_analysis_samples applies each paper's own filters and is what "
                       "the catalogue table shows. estimates_in_harmonised_table additionally drops "
                       "literatures that duplicate another exactly, overlap one already "

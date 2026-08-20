@@ -170,7 +170,7 @@ estimates twice and present one literature as two independent ones:
 **Dataset IDs are not literature families.** The catalogue counts *contributing dataset
 IDs*. Two of them describe the same literature: `trust` is a later, separate collection of
 the size-premium literature that `size` also covers, which is why only the 284 estimates
-`size` does not already carry are pooled. So "40 literatures" means 40 contributing dataset
+`size` does not already carry are pooled. So "41 literatures" means 41 contributing dataset
 IDs, not 40 independent bodies of evidence — treat `trust` and `size` as one family in any
 analysis that assumes independence.
 
@@ -250,9 +250,9 @@ rather than read prose:
 
 | status | meaning | count |
 |---|---|---|
-| `domain_reviewed` | checked by hand against the paper's own replication code, or against its published results where no code exists | 20 of 40 pooled |
-| `code_traced` | mapping confirmed by reading the paper's code and comparing the variables it regresses | 20 of 40 pooled |
-| `arithmetic_pairing_only` | effect/se pair proven only by reproducing the reported t-statistic, estimand **not** independently confirmed | 0 — none remain |
+| `domain_reviewed` | checked by hand against the paper's own replication code, or against its published results where no code exists | 20 of 41 pooled |
+| `code_traced` | mapping confirmed by reading the paper's code and comparing the variables it regresses | 20 of 41 pooled |
+| `arithmetic_pairing_only` | effect/se pair proven only by reproducing the reported t-statistic, estimand **not** independently confirmed | 1 of 41 pooled — `finance_growth`, added at 1.1.0 |
 | `duplicate_excluded` | same estimates as another literature | 2 |
 | `excluded_no_precision` | no per-estimate standard error exists | 2 |
 

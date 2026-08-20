@@ -43,12 +43,26 @@ try:
 except Exception as e:
     note(False, f"could not fetch the live CSV: {str(e)[:60]}")
 
+# Compare against the deposit OF THE LIVE VERSION. This was pinned to the 0.9.0-beta zip,
+# so from 1.0.0 onwards it compared 48,355 live rows against the beta's 54,076 and reported a
+# failure on every run -- a permanently red check says nothing, and trains you to ignore it.
+# When the live version has no deposit yet, that is a fact to state, not a failure.
+DEPOSITS = {"0.9.0-beta": "21773679", "1.0.0": "21789702"}
+zen = None
 try:
-    url = ("https://zenodo.org/records/21773679/files/"
-           "ZENODO-UPLOAD-meta-analysis-cz-v0.9.0-beta.zip?download=1")
-    blob = urllib.request.urlopen(url, timeout=180).read()
-    z = zipfile.ZipFile(io.BytesIO(blob))
-    zen = pd.read_csv(io.BytesIO(z.read("estimates_harmonised.csv")), low_memory=False)
+    _idx = json.load(io.BytesIO(urllib.request.urlopen(
+        "https://meta-analysis.cz/api/v1/datasets.json?cb=verify", timeout=120).read()))
+    _lv = (_idx.get("harmonised_table") or {}).get("version")
+    _rec = DEPOSITS.get(_lv)
+    if not _rec:
+        print(f"   .. live data version {_lv} has no Zenodo deposit yet, so there is nothing to "
+              f"compare it against. Deposit it, add its record id to DEPOSITS, and this check "
+              f"resumes.")
+    else:
+        url = (f"https://zenodo.org/records/{_rec}/files/"
+               f"ZENODO-UPLOAD-meta-analysis-cz-v{_lv}.zip?download=1")
+        z = zipfile.ZipFile(io.BytesIO(urllib.request.urlopen(url, timeout=180).read()))
+        zen = pd.read_csv(io.BytesIO(z.read("estimates_harmonised.csv")), low_memory=False)
 except Exception as e:
     note(False, f"could not fetch the Zenodo deposit: {str(e)[:60]}")
 
