@@ -25,7 +25,8 @@
   "datapackage": "https://meta-analysis.cz/api/v1/datapackage.json",
   "croissant": "https://meta-analysis.cz/api/v1/croissant.json",
   "harmonised_parquet": "https://meta-analysis.cz/data/v1/estimates_harmonised.parquet",
-  "harmonised_csv": "https://meta-analysis.cz/data/v1/estimates_harmonised.csv"
+  "harmonised_csv": "https://meta-analysis.cz/data/v1/estimates_harmonised.csv",
+  "headline_estimates": "https://meta-analysis.cz/estimates.csv"
  },
  "counts": {
   "datasets": 44,

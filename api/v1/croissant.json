@@ -23,7 +23,8 @@
  "description": "Estimate-level data from meta-analyses in economics and the social sciences. 44 datasets containing 65,349 converted source rows and 53,960 estimates in the papers' analysis samples, each with the hand-coded study and design characteristics collected for the original paper. LICENCE: everything here is CC BY 4.0, including the underlying research data. Free to use, adapt and redistribute, including commercially and as training data for machine-learning models. Credit is the only condition: cite the collection and the paper whose dataset you used.",
  "url": "https://meta-analysis.cz",
  "license": "https://creativecommons.org/licenses/by/4.0/",
- "citation": "Havranek, T. and Z. Irsova (2026). meta-analysis.cz: harmonised estimate-level data from meta-analyses in economics. Zenodo. https://doi.org/10.5281/zenodo.21773678",
+ "citeAs": "Havranek, T. and Z. Irsova (2026). meta-analysis.cz: harmonised estimate-level data from meta-analyses in economics. Zenodo. https://doi.org/10.5281/zenodo.21773678",
+ "datePublished": "2026-08-04",
  "keywords": [
   "meta-analysis",
   "publication bias",

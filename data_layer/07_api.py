@@ -307,7 +307,8 @@ index=dict(
     "datapackage":f"{BASE}/api/{DATA_V}/datapackage.json",
     "croissant":f"{BASE}/api/{DATA_V}/croissant.json",
     "harmonised_parquet":f"{BASE}/data/{DATA_V}/estimates_harmonised.parquet",
-    "harmonised_csv":f"{BASE}/data/{DATA_V}/estimates_harmonised.csv"},
+    "harmonised_csv":f"{BASE}/data/{DATA_V}/estimates_harmonised.csv",
+    "headline_estimates":f"{BASE}/estimates.csv"},
   # THREE different numbers, all correct, previously conflated into one. The catalogue
   # sums to the middle one, so advertising only the first made ~4,000 estimates look lost.
   counts=dict(
@@ -378,11 +379,20 @@ dp=dict(profile="tabular-data-package", name="meta-analysis-cz", version=VERSION
 for d in ok:
     try: cb=json.load(open(os.path.join(OUT,"api",DATA_V,"codebooks",f"{d['id']}.json"),encoding="utf-8"))
     except Exception: continue
-    fields=[dict(name=c["name"],
-                 type=("number" if c["dtype"].startswith(("float","int")) else "string"),
-                 description=c.get("role")) for c in cb["columns"]]
+    # `description` is OMITTED when there is no verified role. Emitting it as null made
+    # every one of the 3,257 role-less fields a schema violation ("None is not of type
+    # 'string'"), and the reference validator refused the whole descriptor over it.
+    fields=[]
+    for c in cb["columns"]:
+        _f=dict(name=c["name"],
+                type=("number" if c["dtype"].startswith(("float","int")) else "string"))
+        if c.get("role"): _f["description"]=c["role"]
+        fields.append(_f)
     if d["files"]["csv"]:
         dp["resources"].append(dict(name=d["id"], path=d["files"]["csv"], format="csv",
+                                    # the package declares itself tabular-data-package, which
+                                    # obliges every resource to declare this in turn
+                                    profile="tabular-data-resource",
                                     mediatype="text/csv", schema=dict(fields=fields),
                                     title=(d["paper"] or {}).get("title"),
                                     licenses=[dict(name="CC-BY-4.0", path="https://creativecommons.org/licenses/by/4.0/")],
@@ -467,7 +477,9 @@ cr={"@context":{"@vocab":"https://schema.org/","cr":"http://mlcommons.org/croiss
     # underlying research data, which CC BY does not cover. ML tooling reads this field, so
     # it must not overstate. The compilation's CC BY is described in the text below.
     "license":"https://creativecommons.org/licenses/by/4.0/",
-    "citation":index["cite_as"],
+    "citeAs":index["cite_as"],
+    # Issued date of the Zenodo deposit (DataCite dateType "Issued" on the concept DOI).
+    "datePublished":"2026-08-04",
     "keywords":["meta-analysis","publication bias","economics","effect size","research synthesis"],
     "creator":[{"@type":"Person","name":"Tomas Havranek"},{"@type":"Person","name":"Zuzana Irsova"}],
     "distribution":[_file_object(d) for d in ok],

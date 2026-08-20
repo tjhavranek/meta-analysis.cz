@@ -18,6 +18,7 @@ Base: `https://meta-analysis.cz`
 | `/data/v1/{id}/{id}.csv` | The same, as CSV (published for datasets under 4 MB) |
 | `/data/v1/estimates_harmonised.parquet` | All literatures pooled into one estimate-level table |
 | `/data/v1/estimates_harmonised.csv` | The same, as CSV |
+| `/estimates.csv` | One headline result per paper — the table behind `/results/`, with its caveat and citation |
 
 ## Quick start
 
@@ -62,6 +63,10 @@ Core columns are present for every row: `dataset`, `study_id`, `estimate_id`,
 they are populated only where the source dataset recorded them — coverage per
 column runs from about 90% (`n_obs`) down to under 20% for the more specialised
 ones. Check for nulls rather than assuming.
+
+`precision` is exactly `1 / se`. It is provided because most meta-analysis
+software expects it, not as independent information — it carries nothing `se`
+does not, and weighting by both would double-count.
 
 Provenance travels with every row. `source_file`, `effect_col` and `se_col` name
 the file and the exact columns each value came from, so any number can be traced
