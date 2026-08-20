@@ -1,47 +1,47 @@
 {
-  "_WARNING": "DO NOT ENABLE THE GITHUB-ZENODO INTEGRATION FOR THIS REPOSITORY. That integration deposits the ENTIRE repository tarball (~422 MB, including 173 author-copy PDFs and 23 third-party replication packages). This file describes a CURATED deposit only: the harmonised table, the dataset index, the codebooks and the documentation. Build it with data_layer/12_zenodo_bundle.py and upload manually. See data_layer/ZENODO_DEPOSIT.md. EDIT THIS FILE, data_layer/zenodo.json -- it is the canonical copy that 10_fragments publishes to /.zenodo.json. A second file named data_layer/.zenodo.json used to exist and was edited by mistake for a whole release; it has been deleted so the two can never diverge again.",
-  "title": "meta-analysis.cz: harmonised estimate-level data from meta-analyses in economics",
-  "upload_type": "dataset",
-  "access_right": "open",
-  "license": "cc-by-4.0",
-  "creators": [
-    {
-      "name": "Havránek, Tomáš",
-      "affiliation": "Charles University, Prague",
-      "orcid": "0000-0002-3158-2539"
-    },
-    {
-      "name": "Iršová, Zuzana",
-      "affiliation": "Charles University, Prague",
-      "orcid": "0000-0002-0753-8124"
-    }
-  ],
-  "description": "<p><strong>What this deposit contains.</strong> The harmonised estimate-level table pooling 40 economics meta-analysis literatures, the machine-readable dataset index, a column-level codebook for each of the 44 source datasets, and the documentation. It does NOT contain the per-dataset format conversions, the papers themselves, or their replication packages; those remain at https://meta-analysis.cz.</p><p><strong>Licence.</strong> Everything in this deposit is CC BY 4.0, as is everything on meta-analysis.cz. Use it for any purpose, including as training data, with credit. Cite the individual paper when you use its dataset.</p><p>Estimate-level data from meta-analyses in economics and the social sciences, with the study and design characteristics hand-coded for each original paper.</p><p><strong>What the numbers mean.</strong> 44 datasets contain <strong>65,349</strong> rows in the converted source files. After each paper's own analysis selection, and where necessary a reshape of wide data into estimate-level form, those become <strong>53,960</strong> estimates. The harmonised table pools <strong>48,355</strong> of them across <strong>40</strong> literatures. Each dataset also ships a column-level codebook.</p><p><strong>Review status: every literature has been checked against its source.</strong> All 40 pooled literatures are verified, with the evidence quoted per dataset: 20 reviewed against the paper's own replication code or published results by hand, and 20 confirmed mechanically by reading each paper's code and comparing the variables it regresses with the columns published here. None rests on arithmetic column-matching alone. <code>gasoline_price</code> ships no replication code at all and was therefore verified against its paper's published results directly: the abstract reports a corrected long-run elasticity of -0.31 and short-run of -0.09, with published averages 'exaggerated twofold', and the shipped data gives means of -0.691 and -0.227, reproducing that twofold exaggeration and the long-run/short-run ordering. Every dataset publishes an <code>audit_status</code>.</p><p><strong>Changes since 0.9.0-beta.</strong> This release corrects defects found by an independent audit of the beta files. <code>price_puzzle</code> repeated every estimate seven times, because its source file is already long on the impulse-response horizon while its response columns are wide and the reshape did not deduplicate; it now carries 1,415 rows across all seven horizons, including the trough and peak responses that the beta discarded entirely. <code>remittances</code> published the raw regression coefficients its source file carries, over five different dependent variables; it now publishes the partial correlations its paper actually analyses, and its sample-size column, which was a row counter rather than a sample size, is set to null. <code>pub_year</code> held a standardised model regressor rather than a publication year in five literatures, because the column was matched by name; year columns are now validated by value. <code>trust</code> is newly included, contributing the 284 estimates that <code>size</code> does not already carry. <code>t_stat</code> and <code>precision</code> are now derived in double precision throughout. Because of the deduplication the table is smaller than the beta, at 48,355 rows against 54,076, while covering more literatures and more horizons.</p><p><strong>Read the weight concentration before benchmarking.</strong> Each dataset now publishes <code>max_precision_weight_share</code>, the share of total inverse-variance weight held by its single most precise estimate. In several literatures one estimate carries more than half, and in three it carries essentially all of it, because the original paper rounded a standard error to a very small value. Any precision-weighted estimator on those literatures returns approximately that one observation, so a comparison of estimators there measures very little. Check this field before drawing conclusions.</p><p>Which column holds the effect and which its standard error was resolved arithmetically rather than by name: the correct pair is the one for which the effect divided by its standard error reproduces the t-statistic the dataset already reports. Where that was not decisive, the mapping was taken from the paper's own published replication code, and the evidence is recorded per dataset.</p><p>Every row of the harmonised table carries the source file and the exact column names it came from, so any value can be traced back to the published dataset and checked. Effects are not comparable across literatures in raw units; an <code>effect_units</code> column records what each one measures, and a direction note records the sign conventions that would otherwise trap a reanalyst.</p>",
-  "keywords": [
-    "meta-analysis",
-    "publication bias",
-    "research synthesis",
-    "economics",
-    "effect size",
-    "partial correlation",
-    "replication",
-    "open data"
-  ],
-  "related_identifiers": [
-    {
-      "identifier": "https://meta-analysis.cz",
-      "relation": "isDerivedFrom",
-      "scheme": "url"
-    },
-    {
-      "identifier": "https://meta-analysis.cz/api/v1/datasets.json",
-      "relation": "isDescribedBy",
-      "scheme": "url"
-    }
-  ],
-  "language": "eng",
-  "notes": "Everything in this deposit is released under CC BY 4.0, as is everything on meta-analysis.cz: the datasets, their CSV and Parquet conversions, the pooled table, the codebooks, the documentation and the deposited papers. You may use, adapt and redistribute any of it for any purpose, including commercially and including as training data for machine-learning models. The only condition is credit: cite the individual paper when you use its dataset, and the collection when you use the whole.",
-  "version": "1.0.0",
-  "concept_doi": "10.5281/zenodo.21773678",
-  "doi": "10.5281/zenodo.21789702"
+ "_WARNING": "DO NOT ENABLE THE GITHUB-ZENODO INTEGRATION FOR THIS REPOSITORY. That integration deposits the ENTIRE repository tarball (~422 MB, including 173 author-copy PDFs and 23 third-party replication packages). This file describes a CURATED deposit only: the harmonised table, the dataset index, the codebooks and the documentation. Build it with data_layer/12_zenodo_bundle.py and upload manually. See data_layer/ZENODO_DEPOSIT.md. EDIT THIS FILE, data_layer/zenodo.json -- it is the canonical copy that 10_fragments publishes to /.zenodo.json. A second file named data_layer/.zenodo.json used to exist and was edited by mistake for a whole release; it has been deleted so the two can never diverge again. VERSION DOI: null until 1.1.0 is deposited. Do NOT carry 1.0.0's 21789702 here — it would attach the previous release's identifier to this one, which is the incident this file already records for the beta.",
+ "title": "meta-analysis.cz: harmonised estimate-level data from meta-analyses in economics",
+ "upload_type": "dataset",
+ "access_right": "open",
+ "license": "cc-by-4.0",
+ "creators": [
+  {
+   "name": "Havránek, Tomáš",
+   "affiliation": "Charles University, Prague",
+   "orcid": "0000-0002-3158-2539"
+  },
+  {
+   "name": "Iršová, Zuzana",
+   "affiliation": "Charles University, Prague",
+   "orcid": "0000-0002-0753-8124"
+  }
+ ],
+ "description": "<p><strong>What this deposit contains.</strong> The harmonised estimate-level table pooling 40 economics meta-analysis literatures, the machine-readable dataset index, a column-level codebook for each of the 44 source datasets, and the documentation. It does NOT contain the per-dataset format conversions, the papers themselves, or their replication packages; those remain at https://meta-analysis.cz.</p><p><strong>Licence.</strong> Everything in this deposit is CC BY 4.0, as is everything on meta-analysis.cz. Use it for any purpose, including as training data, with credit. Cite the individual paper when you use its dataset.</p><p>Estimate-level data from meta-analyses in economics and the social sciences, with the study and design characteristics hand-coded for each original paper.</p><p><strong>What the numbers mean.</strong> 45 datasets contain <strong>66,683</strong> rows in the converted source files. After each paper's own analysis selection, and where necessary a reshape of wide data into estimate-level form, those become <strong>55,294</strong> estimates. The harmonised table pools <strong>49,689</strong> of them across <strong>41</strong> literatures. Each dataset also ships a column-level codebook.</p><p><strong>Review status: every literature has been checked against its source.</strong> All 40 pooled literatures are verified, with the evidence quoted per dataset: 20 reviewed against the paper's own replication code or published results by hand, and 20 confirmed mechanically by reading each paper's code and comparing the variables it regresses with the columns published here. None rests on arithmetic column-matching alone. <code>gasoline_price</code> ships no replication code at all and was therefore verified against its paper's published results directly: the abstract reports a corrected long-run elasticity of -0.31 and short-run of -0.09, with published averages 'exaggerated twofold', and the shipped data gives means of -0.691 and -0.227, reproducing that twofold exaggeration and the long-run/short-run ordering. Every dataset publishes an <code>audit_status</code>.</p><p><strong>Changes since 0.9.0-beta.</strong> This release corrects defects found by an independent audit of the beta files. <code>price_puzzle</code> repeated every estimate seven times, because its source file is already long on the impulse-response horizon while its response columns are wide and the reshape did not deduplicate; it now carries 1,415 rows across all seven horizons, including the trough and peak responses that the beta discarded entirely. <code>remittances</code> published the raw regression coefficients its source file carries, over five different dependent variables; it now publishes the partial correlations its paper actually analyses, and its sample-size column, which was a row counter rather than a sample size, is set to null. <code>pub_year</code> held a standardised model regressor rather than a publication year in five literatures, because the column was matched by name; year columns are now validated by value. <code>trust</code> is newly included, contributing the 284 estimates that <code>size</code> does not already carry. <code>t_stat</code> and <code>precision</code> are now derived in double precision throughout. Because of the deduplication the table is smaller than the beta, at 49,689 rows against 54,076, while covering more literatures and more horizons.</p><p><strong>Read the weight concentration before benchmarking.</strong> Each dataset now publishes <code>max_precision_weight_share</code>, the share of total inverse-variance weight held by its single most precise estimate. In several literatures one estimate carries more than half, and in three it carries essentially all of it, because the original paper rounded a standard error to a very small value. Any precision-weighted estimator on those literatures returns approximately that one observation, so a comparison of estimators there measures very little. Check this field before drawing conclusions.</p><p>Which column holds the effect and which its standard error was resolved arithmetically rather than by name: the correct pair is the one for which the effect divided by its standard error reproduces the t-statistic the dataset already reports. Where that was not decisive, the mapping was taken from the paper's own published replication code, and the evidence is recorded per dataset.</p><p>Every row of the harmonised table carries the source file and the exact column names it came from, so any value can be traced back to the published dataset and checked. Effects are not comparable across literatures in raw units; an <code>effect_units</code> column records what each one measures, and a direction note records the sign conventions that would otherwise trap a reanalyst.</p>",
+ "keywords": [
+  "meta-analysis",
+  "publication bias",
+  "research synthesis",
+  "economics",
+  "effect size",
+  "partial correlation",
+  "replication",
+  "open data"
+ ],
+ "related_identifiers": [
+  {
+   "identifier": "https://meta-analysis.cz",
+   "relation": "isDerivedFrom",
+   "scheme": "url"
+  },
+  {
+   "identifier": "https://meta-analysis.cz/api/v1/datasets.json",
+   "relation": "isDescribedBy",
+   "scheme": "url"
+  }
+ ],
+ "language": "eng",
+ "notes": "Everything in this deposit is released under CC BY 4.0, as is everything on meta-analysis.cz: the datasets, their CSV and Parquet conversions, the pooled table, the codebooks, the documentation and the deposited papers. You may use, adapt and redistribute any of it for any purpose, including commercially and including as training data for machine-learning models. The only condition is credit: cite the individual paper when you use its dataset, and the collection when you use the whole.",
+ "version": "1.1.0",
+ "concept_doi": "10.5281/zenodo.21773678",
+ "doi": null
 }
