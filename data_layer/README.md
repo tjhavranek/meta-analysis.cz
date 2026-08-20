@@ -7,6 +7,8 @@ and referenced it from `.zenodo.json` without actually publishing it.
 
 Run in order. `09_verify.py` is the gate and must print `ALL CHECKS PASS`.
 
+**Pin the toolchain first: `pip install -r data_layer/requirements-pinned.txt`.** pandas and pyarrow both write their versions into every Parquet file, so an unpinned rebuild changes all 44 dataset checksums without changing any data.
+
 | | |
 |---|---|
 | `01_inventory.py` | find every tabular file, including inside zips |

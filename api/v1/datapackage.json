@@ -3,7 +3,7 @@
  "name": "meta-analysis-cz",
  "version": "1.0.0",
  "api_version": "1.0.0",
- "data_version": "1.0.0",
+ "data_version": "1.1.0",
  "title": "meta-analysis.cz estimate-level datasets",
  "licenses": [
   {
@@ -12,13 +12,14 @@
    "title": "Creative Commons Attribution 4.0 International"
   }
  ],
- "description": "Everything in this package is CC BY 4.0, including the data each resource points to. Free to use, adapt and redistribute, including commercially and as training data. Credit is the only condition: cite the paper named on each resource. See https://meta-analysis.cz/LICENSE.",
+ "description": "Everything in this package is CC BY 4.0, including the data each resource points to. Free to use, adapt, and redistribute, including commercially and as training data. Credit is the only condition: cite the paper named on each resource. See https://meta-analysis.cz/LICENSE.",
  "homepage": "https://meta-analysis.cz",
  "resources": [
   {
    "name": "activism",
    "path": "https://meta-analysis.cz/data/v1/activism/activism.csv",
    "format": "csv",
+   "profile": "tabular-data-resource",
    "mediatype": "text/csv",
    "schema": {
     "fields": [
@@ -674,13 +675,13 @@
      "path": "https://doi.org/10.1111/corg.12637"
     }
    ],
-   "description": "Format conversion of the dataset published with this paper. CC BY 4.0; cite the paper.",
-   "profile": "tabular-data-resource"
+   "description": "Format conversion of the dataset published with this paper. CC BY 4.0; cite the paper."
   },
   {
    "name": "alphas",
    "path": "https://meta-analysis.cz/data/v1/alphas/alphas.csv",
    "format": "csv",
+   "profile": "tabular-data-resource",
    "mediatype": "text/csv",
    "schema": {
     "fields": [
@@ -1030,13 +1031,13 @@
      "path": "https://meta-analysis.cz/alphas/"
     }
    ],
-   "description": "Format conversion of the dataset published with this paper. CC BY 4.0; cite the paper.",
-   "profile": "tabular-data-resource"
+   "description": "Format conversion of the dataset published with this paper. CC BY 4.0; cite the paper."
   },
   {
    "name": "armington",
    "path": "https://meta-analysis.cz/data/v1/armington/armington.csv",
    "format": "csv",
+   "profile": "tabular-data-resource",
    "mediatype": "text/csv",
    "schema": {
     "fields": [
@@ -1362,13 +1363,13 @@
      "path": "https://doi.org/10.1016/j.jinteco.2020.103383"
     }
    ],
-   "description": "Format conversion of the dataset published with this paper. CC BY 4.0; cite the paper.",
-   "profile": "tabular-data-resource"
+   "description": "Format conversion of the dataset published with this paper. CC BY 4.0; cite the paper."
   },
   {
    "name": "beauty",
    "path": "https://meta-analysis.cz/data/v1/beauty/beauty.csv",
    "format": "csv",
+   "profile": "tabular-data-resource",
    "mediatype": "text/csv",
    "schema": {
     "fields": [
@@ -1614,13 +1615,13 @@
      "path": "https://meta-analysis.cz/beauty/"
     }
    ],
-   "description": "Format conversion of the dataset published with this paper. CC BY 4.0; cite the paper.",
-   "profile": "tabular-data-resource"
+   "description": "Format conversion of the dataset published with this paper. CC BY 4.0; cite the paper."
   },
   {
    "name": "bma",
    "path": "https://meta-analysis.cz/data/v1/bma/bma.csv",
    "format": "csv",
+   "profile": "tabular-data-resource",
    "mediatype": "text/csv",
    "schema": {
     "fields": [
@@ -2046,13 +2047,13 @@
      "path": "https://doi.org/10.1016/j.worlddev.2012.07.001"
     }
    ],
-   "description": "Format conversion of the dataset published with this paper. CC BY 4.0; cite the paper.",
-   "profile": "tabular-data-resource"
+   "description": "Format conversion of the dataset published with this paper. CC BY 4.0; cite the paper."
   },
   {
    "name": "border",
    "path": "https://meta-analysis.cz/data/v1/border/border.csv",
    "format": "csv",
+   "profile": "tabular-data-resource",
    "mediatype": "text/csv",
    "schema": {
     "fields": [
@@ -2318,13 +2319,13 @@
      "path": "https://doi.org/10.1057/s41308-016-0001-5"
     }
    ],
-   "description": "Format conversion of the dataset published with this paper. CC BY 4.0; cite the paper.",
-   "profile": "tabular-data-resource"
+   "description": "Format conversion of the dataset published with this paper. CC BY 4.0; cite the paper."
   },
   {
    "name": "class",
    "path": "https://meta-analysis.cz/data/v1/class/class.csv",
    "format": "csv",
+   "profile": "tabular-data-resource",
    "mediatype": "text/csv",
    "schema": {
     "fields": [
@@ -2614,13 +2615,13 @@
      "path": "https://doi.org/10.1086/737989"
     }
    ],
-   "description": "Format conversion of the dataset published with this paper. CC BY 4.0; cite the paper.",
-   "profile": "tabular-data-resource"
+   "description": "Format conversion of the dataset published with this paper. CC BY 4.0; cite the paper."
   },
   {
    "name": "climate",
    "path": "https://meta-analysis.cz/data/v1/climate/climate.csv",
    "format": "csv",
+   "profile": "tabular-data-resource",
    "mediatype": "text/csv",
    "schema": {
     "fields": [
@@ -2750,13 +2751,13 @@
      "path": "https://doi.org/10.1260/0958-305x.26.5.853"
     }
    ],
-   "description": "Format conversion of the dataset published with this paper. CC BY 4.0; cite the paper.",
-   "profile": "tabular-data-resource"
+   "description": "Format conversion of the dataset published with this paper. CC BY 4.0; cite the paper."
   },
   {
    "name": "competition",
    "path": "https://meta-analysis.cz/data/v1/competition/competition.csv",
    "format": "csv",
+   "profile": "tabular-data-resource",
    "mediatype": "text/csv",
    "schema": {
     "fields": [
@@ -2934,13 +2935,13 @@
      "path": "https://doi.org/10.1111/joes.12131"
     }
    ],
-   "description": "Format conversion of the dataset published with this paper. CC BY 4.0; cite the paper.",
-   "profile": "tabular-data-resource"
+   "description": "Format conversion of the dataset published with this paper. CC BY 4.0; cite the paper."
   },
   {
    "name": "discrate",
    "path": "https://meta-analysis.cz/data/v1/discrate/discrate.csv",
    "format": "csv",
+   "profile": "tabular-data-resource",
    "mediatype": "text/csv",
    "schema": {
     "fields": [
@@ -3114,13 +3115,13 @@
      "path": "https://doi.org/10.1007/s10683-021-09716-9"
     }
    ],
-   "description": "Format conversion of the dataset published with this paper. CC BY 4.0; cite the paper.",
-   "profile": "tabular-data-resource"
+   "description": "Format conversion of the dataset published with this paper. CC BY 4.0; cite the paper."
   },
   {
    "name": "dst",
    "path": "https://meta-analysis.cz/data/v1/dst/dst.csv",
    "format": "csv",
+   "profile": "tabular-data-resource",
    "mediatype": "text/csv",
    "schema": {
     "fields": [
@@ -3286,13 +3287,13 @@
      "path": "https://doi.org/10.5547/01956574.39.2.thav"
     }
    ],
-   "description": "Format conversion of the dataset published with this paper. CC BY 4.0; cite the paper.",
-   "profile": "tabular-data-resource"
+   "description": "Format conversion of the dataset published with this paper. CC BY 4.0; cite the paper."
   },
   {
    "name": "education",
    "path": "https://meta-analysis.cz/data/v1/education/education.csv",
    "format": "csv",
+   "profile": "tabular-data-resource",
    "mediatype": "text/csv",
    "schema": {
     "fields": [
@@ -3514,13 +3515,13 @@
      "path": "https://doi.org/10.1111/obes.12240"
     }
    ],
-   "description": "Format conversion of the dataset published with this paper. CC BY 4.0; cite the paper.",
-   "profile": "tabular-data-resource"
+   "description": "Format conversion of the dataset published with this paper. CC BY 4.0; cite the paper."
   },
   {
    "name": "eis",
    "path": "https://meta-analysis.cz/data/v1/eis/eis.csv",
    "format": "csv",
+   "profile": "tabular-data-resource",
    "mediatype": "text/csv",
    "schema": {
     "fields": [
@@ -3750,13 +3751,13 @@
      "path": "https://doi.org/10.1111/jeea.12133"
     }
    ],
-   "description": "Format conversion of the dataset published with this paper. CC BY 4.0; cite the paper.",
-   "profile": "tabular-data-resource"
+   "description": "Format conversion of the dataset published with this paper. CC BY 4.0; cite the paper."
   },
   {
    "name": "electricity",
    "path": "https://meta-analysis.cz/data/v1/electricity/electricity.csv",
    "format": "csv",
+   "profile": "tabular-data-resource",
    "mediatype": "text/csv",
    "schema": {
     "fields": [
@@ -4066,13 +4067,13 @@
      "path": "https://meta-analysis.cz/electricity/"
     }
    ],
-   "description": "Format conversion of the dataset published with this paper. CC BY 4.0; cite the paper.",
-   "profile": "tabular-data-resource"
+   "description": "Format conversion of the dataset published with this paper. CC BY 4.0; cite the paper."
   },
   {
    "name": "esg",
    "path": "https://meta-analysis.cz/data/v1/esg/esg.csv",
    "format": "csv",
+   "profile": "tabular-data-resource",
    "mediatype": "text/csv",
    "schema": {
     "fields": [
@@ -4354,13 +4355,13 @@
      "path": "https://meta-analysis.cz/esg/"
     }
    ],
-   "description": "Format conversion of the dataset published with this paper. CC BY 4.0; cite the paper.",
-   "profile": "tabular-data-resource"
+   "description": "Format conversion of the dataset published with this paper. CC BY 4.0; cite the paper."
   },
   {
    "name": "euro",
    "path": "https://meta-analysis.cz/data/v1/euro/euro.csv",
    "format": "csv",
+   "profile": "tabular-data-resource",
    "mediatype": "text/csv",
    "schema": {
     "fields": [
@@ -4574,13 +4575,13 @@
      "path": "https://doi.org/10.1007/s10290-010-0050-1"
     }
    ],
-   "description": "Format conversion of the dataset published with this paper. CC BY 4.0; cite the paper.",
-   "profile": "tabular-data-resource"
+   "description": "Format conversion of the dataset published with this paper. CC BY 4.0; cite the paper."
   },
   {
    "name": "excess_sensitivity",
    "path": "https://meta-analysis.cz/data/v1/excess_sensitivity/excess_sensitivity.csv",
    "format": "csv",
+   "profile": "tabular-data-resource",
    "mediatype": "text/csv",
    "schema": {
     "fields": [
@@ -4902,13 +4903,13 @@
      "path": "https://doi.org/10.1016/j.red.2019.05.004"
     }
    ],
-   "description": "Format conversion of the dataset published with this paper. CC BY 4.0; cite the paper.",
-   "profile": "tabular-data-resource"
+   "description": "Format conversion of the dataset published with this paper. CC BY 4.0; cite the paper."
   },
   {
    "name": "fdi",
    "path": "https://meta-analysis.cz/data/v1/fdi/fdi.csv",
    "format": "csv",
+   "profile": "tabular-data-resource",
    "mediatype": "text/csv",
    "schema": {
     "fields": [
@@ -5020,13 +5021,613 @@
      "path": "https://doi.org/10.1080/00036846.2020.1726864"
     }
    ],
-   "description": "Format conversion of the dataset published with this paper. CC BY 4.0; cite the paper.",
-   "profile": "tabular-data-resource"
+   "description": "Format conversion of the dataset published with this paper. CC BY 4.0; cite the paper."
+  },
+  {
+   "name": "finance_growth",
+   "path": "https://meta-analysis.cz/data/v1/finance_growth/finance_growth.csv",
+   "format": "csv",
+   "profile": "tabular-data-resource",
+   "mediatype": "text/csv",
+   "schema": {
+    "fields": [
+     {
+      "name": "idstudy",
+      "type": "number"
+     },
+     {
+      "name": "study",
+      "type": "string"
+     },
+     {
+      "name": "depvar",
+      "type": "number"
+     },
+     {
+      "name": "real_pc_gdp",
+      "type": "number"
+     },
+     {
+      "name": "pc_gdp",
+      "type": "number"
+     },
+     {
+      "name": "gdp",
+      "type": "number"
+     },
+     {
+      "name": "real_gdp",
+      "type": "number"
+     },
+     {
+      "name": "ft",
+      "type": "number"
+     },
+     {
+      "name": "seft",
+      "type": "number"
+     },
+     {
+      "name": "pcc",
+      "type": "number",
+      "description": "effect_estimate"
+     },
+     {
+      "name": "sepcc",
+      "type": "number",
+      "description": "standard_error"
+     },
+     {
+      "name": "prec",
+      "type": "number"
+     },
+     {
+      "name": "tstat",
+      "type": "number"
+     },
+     {
+      "name": "n",
+      "type": "number"
+     },
+     {
+      "name": "t",
+      "type": "number"
+     },
+     {
+      "name": "samsize",
+      "type": "number"
+     },
+     {
+      "name": "ln_samsize",
+      "type": "number"
+     },
+     {
+      "name": "len",
+      "type": "number"
+     },
+     {
+      "name": "fddepth",
+      "type": "number"
+     },
+     {
+      "name": "fdacti1",
+      "type": "number"
+     },
+     {
+      "name": "fdacti2",
+      "type": "number"
+     },
+     {
+      "name": "fdbank",
+      "type": "number"
+     },
+     {
+      "name": "fdpricr",
+      "type": "number"
+     },
+     {
+      "name": "fdmktc",
+      "type": "number"
+     },
+     {
+      "name": "fdmkta",
+      "type": "number"
+     },
+     {
+      "name": "fdmkttr",
+      "type": "number"
+     },
+     {
+      "name": "fdother",
+      "type": "number"
+     },
+     {
+      "name": "fdnonl",
+      "type": "number"
+     },
+     {
+      "name": "fdchg",
+      "type": "number"
+     },
+     {
+      "name": "fdjoint",
+      "type": "number"
+     },
+     {
+      "name": "OLS",
+      "type": "number"
+     },
+     {
+      "name": "DOLS",
+      "type": "number"
+     },
+     {
+      "name": "IV",
+      "type": "number"
+     },
+     {
+      "name": "FE",
+      "type": "number"
+     },
+     {
+      "name": "RE",
+      "type": "number"
+     },
+     {
+      "name": "GMM",
+      "type": "number"
+     },
+     {
+      "name": "GMMSYS",
+      "type": "number"
+     },
+     {
+      "name": "GMMlev",
+      "type": "number"
+     },
+     {
+      "name": "GMM_all",
+      "type": "number"
+     },
+     {
+      "name": "Homo",
+      "type": "number"
+     },
+     {
+      "name": "Start",
+      "type": "number"
+     },
+     {
+      "name": "1960s",
+      "type": "number"
+     },
+     {
+      "name": "1970s",
+      "type": "number"
+     },
+     {
+      "name": "1980s",
+      "type": "number"
+     },
+     {
+      "name": "1990s",
+      "type": "number"
+     },
+     {
+      "name": "2000s",
+      "type": "number"
+     },
+     {
+      "name": "End",
+      "type": "number"
+     },
+     {
+      "name": "regcnt",
+      "type": "number"
+     },
+     {
+      "name": "endo",
+      "type": "number"
+     },
+     {
+      "name": "Year",
+      "type": "number"
+     },
+     {
+      "name": "Year_adj",
+      "type": "number"
+     },
+     {
+      "name": "regeap",
+      "type": "number"
+     },
+     {
+      "name": "regsa",
+      "type": "number"
+     },
+     {
+      "name": "regasi",
+      "type": "number"
+     },
+     {
+      "name": "regeu",
+      "type": "number"
+     },
+     {
+      "name": "reglac",
+      "type": "number"
+     },
+     {
+      "name": "regmena",
+      "type": "number"
+     },
+     {
+      "name": "regssa",
+      "type": "number"
+     },
+     {
+      "name": "regrow",
+      "type": "number"
+     },
+     {
+      "name": "macro",
+      "type": "number"
+     },
+     {
+      "name": "polstab",
+      "type": "number"
+     },
+     {
+      "name": "Trade",
+      "type": "number"
+     },
+     {
+      "name": "Income",
+      "type": "number"
+     },
+     {
+      "name": "Human",
+      "type": "number"
+     },
+     {
+      "name": "invest",
+      "type": "number"
+     },
+     {
+      "name": "fincri",
+      "type": "number"
+     },
+     {
+      "name": "timdum",
+      "type": "number"
+     },
+     {
+      "name": "Log",
+      "type": "number"
+     },
+     {
+      "name": "Panel",
+      "type": "number"
+     },
+     {
+      "name": "xsec",
+      "type": "number"
+     },
+     {
+      "name": "timser",
+      "type": "number"
+     },
+     {
+      "name": "journal impact",
+      "type": "number"
+     },
+     {
+      "name": "Notes",
+      "type": "string"
+     },
+     {
+      "name": "depvar_se",
+      "type": "number"
+     },
+     {
+      "name": "real_pc_gdp_se",
+      "type": "number"
+     },
+     {
+      "name": "pc_gdp_se",
+      "type": "number"
+     },
+     {
+      "name": "gdp_se",
+      "type": "number"
+     },
+     {
+      "name": "real_gdp_se",
+      "type": "number"
+     },
+     {
+      "name": "ft_se",
+      "type": "number"
+     },
+     {
+      "name": "seft_se",
+      "type": "number"
+     },
+     {
+      "name": "pcc_se",
+      "type": "number"
+     },
+     {
+      "name": "Unnamed: 81",
+      "type": "number"
+     },
+     {
+      "name": "prec_se",
+      "type": "number"
+     },
+     {
+      "name": "Unnamed: 83",
+      "type": "number"
+     },
+     {
+      "name": "n_se",
+      "type": "number"
+     },
+     {
+      "name": "t_se",
+      "type": "number"
+     },
+     {
+      "name": "samsize_se",
+      "type": "number"
+     },
+     {
+      "name": "ln_samsize_se",
+      "type": "number"
+     },
+     {
+      "name": "len_se",
+      "type": "number"
+     },
+     {
+      "name": "fddepth_se",
+      "type": "number"
+     },
+     {
+      "name": "fdacti1_se",
+      "type": "number"
+     },
+     {
+      "name": "fdacti2_se",
+      "type": "number"
+     },
+     {
+      "name": "fdbank_se",
+      "type": "number"
+     },
+     {
+      "name": "fdpricr_se",
+      "type": "number"
+     },
+     {
+      "name": "fdmktc_se",
+      "type": "number"
+     },
+     {
+      "name": "fdmkta_se",
+      "type": "number"
+     },
+     {
+      "name": "fdmkttr_se",
+      "type": "number"
+     },
+     {
+      "name": "fdother_se",
+      "type": "number"
+     },
+     {
+      "name": "fdnonl_se",
+      "type": "number"
+     },
+     {
+      "name": "fdchg_se",
+      "type": "number"
+     },
+     {
+      "name": "fdjoint_se",
+      "type": "number"
+     },
+     {
+      "name": "ols_se",
+      "type": "number"
+     },
+     {
+      "name": "dols_se",
+      "type": "number"
+     },
+     {
+      "name": "iv_se",
+      "type": "number"
+     },
+     {
+      "name": "fe_se",
+      "type": "number"
+     },
+     {
+      "name": "re_se",
+      "type": "number"
+     },
+     {
+      "name": "gmm_se",
+      "type": "number"
+     },
+     {
+      "name": "gmmsys_se",
+      "type": "number"
+     },
+     {
+      "name": "gmmlev_se",
+      "type": "number"
+     },
+     {
+      "name": "gmm_all_se",
+      "type": "number"
+     },
+     {
+      "name": "homo_se",
+      "type": "number"
+     },
+     {
+      "name": "start_se",
+      "type": "number"
+     },
+     {
+      "name": "sixtys_se",
+      "type": "number"
+     },
+     {
+      "name": "seventys_se",
+      "type": "number"
+     },
+     {
+      "name": "eightys_se",
+      "type": "number"
+     },
+     {
+      "name": "ninetys_se",
+      "type": "number"
+     },
+     {
+      "name": "mill_se",
+      "type": "number"
+     },
+     {
+      "name": "end_se",
+      "type": "number"
+     },
+     {
+      "name": "regcnt_se",
+      "type": "number"
+     },
+     {
+      "name": "endo_se",
+      "type": "number"
+     },
+     {
+      "name": "year _se",
+      "type": "number"
+     },
+     {
+      "name": "year_adj_se",
+      "type": "number"
+     },
+     {
+      "name": "regeap_se",
+      "type": "number"
+     },
+     {
+      "name": "regsa_se",
+      "type": "number"
+     },
+     {
+      "name": "regasi_se",
+      "type": "number"
+     },
+     {
+      "name": "regeu_se",
+      "type": "number"
+     },
+     {
+      "name": "reglac_se",
+      "type": "number"
+     },
+     {
+      "name": "regmena_se",
+      "type": "number"
+     },
+     {
+      "name": "regssa_se",
+      "type": "number"
+     },
+     {
+      "name": "regrow_se",
+      "type": "number"
+     },
+     {
+      "name": "macro_se",
+      "type": "number"
+     },
+     {
+      "name": "polstab_se",
+      "type": "number"
+     },
+     {
+      "name": "trade_se",
+      "type": "number"
+     },
+     {
+      "name": "income_se",
+      "type": "number"
+     },
+     {
+      "name": "human_se",
+      "type": "number"
+     },
+     {
+      "name": "invest_se",
+      "type": "number"
+     },
+     {
+      "name": "fincri_se",
+      "type": "number"
+     },
+     {
+      "name": "timdum_se",
+      "type": "number"
+     },
+     {
+      "name": "log _se",
+      "type": "number"
+     },
+     {
+      "name": "panel_se",
+      "type": "number"
+     },
+     {
+      "name": "xsec_se",
+      "type": "number"
+     },
+     {
+      "name": "timser_se",
+      "type": "number"
+     },
+     {
+      "name": "journal impact_se",
+      "type": "number"
+     }
+    ]
+   },
+   "title": "Financial Development and Economic Growth: A Meta-Analysis",
+   "licenses": [
+    {
+     "name": "CC-BY-4.0",
+     "path": "https://creativecommons.org/licenses/by/4.0/"
+    }
+   ],
+   "rights_status": "cc-by-4.0",
+   "sources": [
+    {
+     "title": "Financial Development and Economic Growth: A Meta-Analysis",
+     "path": "https://doi.org/10.1111/joes.12068"
+    }
+   ],
+   "description": "Format conversion of the dataset published with this paper. CC BY 4.0; cite the paper."
   },
   {
    "name": "forward",
    "path": "https://meta-analysis.cz/data/v1/forward/forward.csv",
    "format": "csv",
+   "profile": "tabular-data-resource",
    "mediatype": "text/csv",
    "schema": {
     "fields": [
@@ -5376,13 +5977,13 @@
      "path": "https://doi.org/10.1016/j.euroecorev.2021.103714"
     }
    ],
-   "description": "Format conversion of the dataset published with this paper. CC BY 4.0; cite the paper.",
-   "profile": "tabular-data-resource"
+   "description": "Format conversion of the dataset published with this paper. CC BY 4.0; cite the paper."
   },
   {
    "name": "frisch",
    "path": "https://meta-analysis.cz/data/v1/frisch/frisch.csv",
    "format": "csv",
+   "profile": "tabular-data-resource",
    "mediatype": "text/csv",
    "schema": {
     "fields": [
@@ -5600,13 +6201,13 @@
      "path": "https://doi.org/10.1016/j.red.2023.10.001"
     }
    ],
-   "description": "Format conversion of the dataset published with this paper. CC BY 4.0; cite the paper.",
-   "profile": "tabular-data-resource"
+   "description": "Format conversion of the dataset published with this paper. CC BY 4.0; cite the paper."
   },
   {
    "name": "gasoline",
    "path": "https://meta-analysis.cz/data/v1/gasoline/gasoline.csv",
    "format": "csv",
+   "profile": "tabular-data-resource",
    "mediatype": "text/csv",
    "schema": {
     "fields": [
@@ -5755,13 +6356,13 @@
      "path": "https://doi.org/10.1016/j.eneco.2014.11.004"
     }
    ],
-   "description": "Format conversion of the dataset published with this paper. CC BY 4.0; cite the paper.",
-   "profile": "tabular-data-resource"
+   "description": "Format conversion of the dataset published with this paper. CC BY 4.0; cite the paper."
   },
   {
    "name": "gasoline_price",
    "path": "https://meta-analysis.cz/data/v1/gasoline_price/gasoline_price.csv",
    "format": "csv",
+   "profile": "tabular-data-resource",
    "mediatype": "text/csv",
    "schema": {
     "fields": [
@@ -5827,13 +6428,13 @@
      "path": "https://doi.org/10.1016/j.eneco.2011.09.003"
     }
    ],
-   "description": "Format conversion of the dataset published with this paper. CC BY 4.0; cite the paper.",
-   "profile": "tabular-data-resource"
+   "description": "Format conversion of the dataset published with this paper. CC BY 4.0; cite the paper."
   },
   {
    "name": "habits",
    "path": "https://meta-analysis.cz/data/v1/habits/habits.csv",
    "format": "csv",
+   "profile": "tabular-data-resource",
    "mediatype": "text/csv",
    "schema": {
     "fields": [
@@ -6019,13 +6620,13 @@
      "path": "https://doi.org/10.1016/j.euroecorev.2017.03.009"
     }
    ],
-   "description": "Format conversion of the dataset published with this paper. CC BY 4.0; cite the paper.",
-   "profile": "tabular-data-resource"
+   "description": "Format conversion of the dataset published with this paper. CC BY 4.0; cite the paper."
   },
   {
    "name": "hedge",
    "path": "https://meta-analysis.cz/data/v1/hedge/hedge.csv",
    "format": "csv",
+   "profile": "tabular-data-resource",
    "mediatype": "text/csv",
    "schema": {
     "fields": [
@@ -6163,13 +6764,13 @@
      "path": "https://doi.org/10.1111/joes.12574"
     }
    ],
-   "description": "Format conversion of the dataset published with this paper. CC BY 4.0; cite the paper.",
-   "profile": "tabular-data-resource"
+   "description": "Format conversion of the dataset published with this paper. CC BY 4.0; cite the paper."
   },
   {
    "name": "house_prices",
    "path": "https://meta-analysis.cz/data/v1/house_prices/house_prices.csv",
    "format": "csv",
+   "profile": "tabular-data-resource",
    "mediatype": "text/csv",
    "schema": {
     "fields": [
@@ -6684,13 +7285,13 @@
      "path": "https://doi.org/10.1057/s41308-022-00185-5"
     }
    ],
-   "description": "Format conversion of the dataset published with this paper. CC BY 4.0; cite the paper.",
-   "profile": "tabular-data-resource"
+   "description": "Format conversion of the dataset published with this paper. CC BY 4.0; cite the paper."
   },
   {
    "name": "incentives",
    "path": "https://meta-analysis.cz/data/v1/incentives/incentives.csv",
    "format": "csv",
+   "profile": "tabular-data-resource",
    "mediatype": "text/csv",
    "schema": {
     "fields": [
@@ -7000,13 +7601,13 @@
      "path": "https://doi.org/10.1086/743543"
     }
    ],
-   "description": "Format conversion of the dataset published with this paper. CC BY 4.0; cite the paper.",
-   "profile": "tabular-data-resource"
+   "description": "Format conversion of the dataset published with this paper. CC BY 4.0; cite the paper."
   },
   {
    "name": "inflation",
    "path": "https://meta-analysis.cz/data/v1/inflation/inflation.csv",
    "format": "csv",
+   "profile": "tabular-data-resource",
    "mediatype": "text/csv",
    "schema": {
     "fields": [
@@ -7744,13 +8345,13 @@
      "path": "https://meta-analysis.cz/inflation/"
     }
    ],
-   "description": "Format conversion of the dataset published with this paper. CC BY 4.0; cite the paper.",
-   "profile": "tabular-data-resource"
+   "description": "Format conversion of the dataset published with this paper. CC BY 4.0; cite the paper."
   },
   {
    "name": "lags",
    "path": "https://meta-analysis.cz/data/v1/lags/lags.csv",
    "format": "csv",
+   "profile": "tabular-data-resource",
    "mediatype": "text/csv",
    "schema": {
     "fields": [
@@ -8376,13 +8977,13 @@
      "path": "https://meta-analysis.cz/lags/"
     }
    ],
-   "description": "Format conversion of the dataset published with this paper. CC BY 4.0; cite the paper.",
-   "profile": "tabular-data-resource"
+   "description": "Format conversion of the dataset published with this paper. CC BY 4.0; cite the paper."
   },
   {
    "name": "learning",
    "path": "https://meta-analysis.cz/data/v1/learning/learning.csv",
    "format": "csv",
+   "profile": "tabular-data-resource",
    "mediatype": "text/csv",
    "schema": {
     "fields": [
@@ -8472,13 +9073,13 @@
      "path": "https://meta-analysis.cz/learning/"
     }
    ],
-   "description": "Format conversion of the dataset published with this paper. CC BY 4.0; cite the paper.",
-   "profile": "tabular-data-resource"
+   "description": "Format conversion of the dataset published with this paper. CC BY 4.0; cite the paper."
   },
   {
    "name": "migrant",
    "path": "https://meta-analysis.cz/data/v1/migrant/migrant.csv",
    "format": "csv",
+   "profile": "tabular-data-resource",
    "mediatype": "text/csv",
    "schema": {
     "fields": [
@@ -8728,13 +9329,13 @@
      "path": "https://meta-analysis.cz/migrant/"
     }
    ],
-   "description": "Format conversion of the dataset published with this paper. CC BY 4.0; cite the paper.",
-   "profile": "tabular-data-resource"
+   "description": "Format conversion of the dataset published with this paper. CC BY 4.0; cite the paper."
   },
   {
    "name": "price_puzzle",
    "path": "https://meta-analysis.cz/data/v1/price_puzzle/price_puzzle.csv",
    "format": "csv",
+   "profile": "tabular-data-resource",
    "mediatype": "text/csv",
    "schema": {
     "fields": [
@@ -9358,13 +9959,13 @@
      "path": "https://doi.org/10.1111/j.1538-4616.2012.00561.x"
     }
    ],
-   "description": "Format conversion of the dataset published with this paper. CC BY 4.0; cite the paper.",
-   "profile": "tabular-data-resource"
+   "description": "Format conversion of the dataset published with this paper. CC BY 4.0; cite the paper."
   },
   {
    "name": "reforms",
    "path": "https://meta-analysis.cz/data/v1/reforms/reforms.csv",
    "format": "csv",
+   "profile": "tabular-data-resource",
    "mediatype": "text/csv",
    "schema": {
     "fields": [
@@ -9552,13 +10153,13 @@
      "path": "https://doi.org/10.1111/ecot.12029"
     }
    ],
-   "description": "Format conversion of the dataset published with this paper. CC BY 4.0; cite the paper.",
-   "profile": "tabular-data-resource"
+   "description": "Format conversion of the dataset published with this paper. CC BY 4.0; cite the paper."
   },
   {
    "name": "remittances",
    "path": "https://meta-analysis.cz/data/v1/remittances/remittances.csv",
    "format": "csv",
+   "profile": "tabular-data-resource",
    "mediatype": "text/csv",
    "schema": {
     "fields": [
@@ -9862,13 +10463,13 @@
      "path": "https://doi.org/10.1016/j.worlddev.2020.105021"
     }
    ],
-   "description": "Format conversion of the dataset published with this paper. CC BY 4.0; cite the paper.",
-   "profile": "tabular-data-resource"
+   "description": "Format conversion of the dataset published with this paper. CC BY 4.0; cite the paper."
   },
   {
    "name": "resource_curse",
    "path": "https://meta-analysis.cz/data/v1/resource_curse/resource_curse.csv",
    "format": "csv",
+   "profile": "tabular-data-resource",
    "mediatype": "text/csv",
    "schema": {
     "fields": [
@@ -10338,13 +10939,13 @@
      "path": "https://doi.org/10.1016/j.worlddev.2016.07.016"
     }
    ],
-   "description": "Format conversion of the dataset published with this paper. CC BY 4.0; cite the paper.",
-   "profile": "tabular-data-resource"
+   "description": "Format conversion of the dataset published with this paper. CC BY 4.0; cite the paper."
   },
   {
    "name": "risk",
    "path": "https://meta-analysis.cz/data/v1/risk/risk.csv",
    "format": "csv",
+   "profile": "tabular-data-resource",
    "mediatype": "text/csv",
    "schema": {
     "fields": [
@@ -10610,13 +11211,13 @@
      "path": "https://doi.org/10.1111/joes.12689"
     }
    ],
-   "description": "Format conversion of the dataset published with this paper. CC BY 4.0; cite the paper.",
-   "profile": "tabular-data-resource"
+   "description": "Format conversion of the dataset published with this paper. CC BY 4.0; cite the paper."
   },
   {
    "name": "scc",
    "path": "https://meta-analysis.cz/data/v1/scc/scc.csv",
    "format": "csv",
+   "profile": "tabular-data-resource",
    "mediatype": "text/csv",
    "schema": {
     "fields": [
@@ -10782,13 +11383,13 @@
      "path": "https://doi.org/10.1016/j.eneco.2015.08.009"
     }
    ],
-   "description": "Format conversion of the dataset published with this paper. CC BY 4.0; cite the paper.",
-   "profile": "tabular-data-resource"
+   "description": "Format conversion of the dataset published with this paper. CC BY 4.0; cite the paper."
   },
   {
    "name": "sigma",
    "path": "https://meta-analysis.cz/data/v1/sigma/sigma.csv",
    "format": "csv",
+   "profile": "tabular-data-resource",
    "mediatype": "text/csv",
    "schema": {
     "fields": [
@@ -11270,13 +11871,13 @@
      "path": "https://doi.org/10.1016/j.red.2021.05.003"
     }
    ],
-   "description": "Format conversion of the dataset published with this paper. CC BY 4.0; cite the paper.",
-   "profile": "tabular-data-resource"
+   "description": "Format conversion of the dataset published with this paper. CC BY 4.0; cite the paper."
   },
   {
    "name": "size",
    "path": "https://meta-analysis.cz/data/v1/size/size.csv",
    "format": "csv",
+   "profile": "tabular-data-resource",
    "mediatype": "text/csv",
    "schema": {
     "fields": [
@@ -12926,13 +13527,13 @@
      "path": "https://doi.org/10.1111/joes.12335"
     }
    ],
-   "description": "Format conversion of the dataset published with this paper. CC BY 4.0; cite the paper.",
-   "profile": "tabular-data-resource"
+   "description": "Format conversion of the dataset published with this paper. CC BY 4.0; cite the paper."
   },
   {
    "name": "skill",
    "path": "https://meta-analysis.cz/data/v1/skill/skill.csv",
    "format": "csv",
+   "profile": "tabular-data-resource",
    "mediatype": "text/csv",
    "schema": {
     "fields": [
@@ -13154,13 +13755,13 @@
      "path": "https://doi.org/10.1162/rest_a_01227"
     }
    ],
-   "description": "Format conversion of the dataset published with this paper. CC BY 4.0; cite the paper.",
-   "profile": "tabular-data-resource"
+   "description": "Format conversion of the dataset published with this paper. CC BY 4.0; cite the paper."
   },
   {
    "name": "spillovers",
    "path": "https://meta-analysis.cz/data/v1/spillovers/spillovers.csv",
    "format": "csv",
+   "profile": "tabular-data-resource",
    "mediatype": "text/csv",
    "schema": {
     "fields": [
@@ -13574,13 +14175,13 @@
      "path": "https://doi.org/10.1016/j.jinteco.2011.07.004"
     }
    ],
-   "description": "Format conversion of the dataset published with this paper. CC BY 4.0; cite the paper.",
-   "profile": "tabular-data-resource"
+   "description": "Format conversion of the dataset published with this paper. CC BY 4.0; cite the paper."
   },
   {
    "name": "students",
    "path": "https://meta-analysis.cz/data/v1/students/students.csv",
    "format": "csv",
+   "profile": "tabular-data-resource",
    "mediatype": "text/csv",
    "schema": {
     "fields": [
@@ -13838,13 +14439,13 @@
      "path": "https://doi.org/10.1016/j.econedurev.2024.102539"
     }
    ],
-   "description": "Format conversion of the dataset published with this paper. CC BY 4.0; cite the paper.",
-   "profile": "tabular-data-resource"
+   "description": "Format conversion of the dataset published with this paper. CC BY 4.0; cite the paper."
   },
   {
    "name": "substitution",
    "path": "https://meta-analysis.cz/data/v1/substitution/substitution.csv",
    "format": "csv",
+   "profile": "tabular-data-resource",
    "mediatype": "text/csv",
    "schema": {
     "fields": [
@@ -14126,13 +14727,13 @@
      "path": "https://doi.org/10.1016/j.jinteco.2015.01.012"
     }
    ],
-   "description": "Format conversion of the dataset published with this paper. CC BY 4.0; cite the paper.",
-   "profile": "tabular-data-resource"
+   "description": "Format conversion of the dataset published with this paper. CC BY 4.0; cite the paper."
   },
   {
    "name": "trust",
    "path": "https://meta-analysis.cz/data/v1/trust/trust.csv",
    "format": "csv",
+   "profile": "tabular-data-resource",
    "mediatype": "text/csv",
    "schema": {
     "fields": [
@@ -14334,13 +14935,13 @@
      "path": "https://meta-analysis.cz/trust/"
     }
    ],
-   "description": "Format conversion of the dataset published with this paper. CC BY 4.0; cite the paper.",
-   "profile": "tabular-data-resource"
+   "description": "Format conversion of the dataset published with this paper. CC BY 4.0; cite the paper."
   },
   {
    "name": "water",
    "path": "https://meta-analysis.cz/data/v1/water/water.csv",
    "format": "csv",
+   "profile": "tabular-data-resource",
    "mediatype": "text/csv",
    "schema": {
     "fields": [
@@ -14574,8 +15175,190 @@
      "path": "https://doi.org/10.3368/le.94.2.259"
     }
    ],
-   "description": "Format conversion of the dataset published with this paper. CC BY 4.0; cite the paper.",
-   "profile": "tabular-data-resource"
+   "description": "Format conversion of the dataset published with this paper. CC BY 4.0; cite the paper."
+  },
+  {
+   "name": "estimates_harmonised",
+   "profile": "tabular-data-resource",
+   "path": "https://meta-analysis.cz/data/v1/estimates_harmonised.csv",
+   "format": "csv",
+   "mediatype": "text/csv",
+   "title": "Harmonised estimate-level table (derived)",
+   "description": "DERIVED AGGREGATE VIEW, not a 45th dataset. Every row here also appears in one of the per-dataset resources above, reshaped to a common schema. Do not sum this resource together with them, and note that literatures which duplicate another, overlap one already included, or carry no per-estimate standard error are absent.",
+   "licenses": [
+    {
+     "name": "CC-BY-4.0",
+     "path": "https://creativecommons.org/licenses/by/4.0/"
+    }
+   ],
+   "schema": {
+    "fields": [
+     {
+      "name": "dataset",
+      "type": "string"
+     },
+     {
+      "name": "study_id",
+      "type": "number"
+     },
+     {
+      "name": "estimate_id",
+      "type": "number"
+     },
+     {
+      "name": "study_label",
+      "type": "string"
+     },
+     {
+      "name": "effect",
+      "type": "number"
+     },
+     {
+      "name": "se",
+      "type": "number"
+     },
+     {
+      "name": "t_stat",
+      "type": "number"
+     },
+     {
+      "name": "precision",
+      "type": "number"
+     },
+     {
+      "name": "n_obs",
+      "type": "number"
+     },
+     {
+      "name": "df",
+      "type": "number"
+     },
+     {
+      "name": "pcc",
+      "type": "number"
+     },
+     {
+      "name": "se_pcc",
+      "type": "number"
+     },
+     {
+      "name": "pub_year",
+      "type": "number"
+     },
+     {
+      "name": "citations",
+      "type": "number"
+     },
+     {
+      "name": "impact_factor",
+      "type": "number"
+     },
+     {
+      "name": "published",
+      "type": "number"
+     },
+     {
+      "name": "top_journal",
+      "type": "number"
+     },
+     {
+      "name": "country",
+      "type": "string"
+     },
+     {
+      "name": "country_id",
+      "type": "number"
+     },
+     {
+      "name": "is_usa",
+      "type": "number"
+     },
+     {
+      "name": "is_europe",
+      "type": "number"
+     },
+     {
+      "name": "data_start",
+      "type": "number"
+     },
+     {
+      "name": "data_end",
+      "type": "number"
+     },
+     {
+      "name": "data_midyear",
+      "type": "number"
+     },
+     {
+      "name": "is_panel",
+      "type": "number"
+     },
+     {
+      "name": "is_cross_section",
+      "type": "number"
+     },
+     {
+      "name": "is_time_series",
+      "type": "number"
+     },
+     {
+      "name": "freq_annual",
+      "type": "number"
+     },
+     {
+      "name": "freq_quarterly",
+      "type": "number"
+     },
+     {
+      "name": "freq_monthly",
+      "type": "number"
+     },
+     {
+      "name": "method_ols",
+      "type": "number"
+     },
+     {
+      "name": "method_iv",
+      "type": "number"
+     },
+     {
+      "name": "method_gmm",
+      "type": "number"
+     },
+     {
+      "name": "method_ml",
+      "type": "number"
+     },
+     {
+      "name": "method_fe",
+      "type": "number"
+     },
+     {
+      "name": "horizon",
+      "type": "number"
+     },
+     {
+      "name": "effect_units",
+      "type": "string"
+     },
+     {
+      "name": "source_file",
+      "type": "string"
+     },
+     {
+      "name": "effect_col",
+      "type": "string"
+     },
+     {
+      "name": "se_col",
+      "type": "string"
+     },
+     {
+      "name": "se_is_derived",
+      "type": "string"
+     }
+    ]
+   }
   }
  ]
 }

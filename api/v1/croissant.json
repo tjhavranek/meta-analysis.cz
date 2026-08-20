@@ -19,8 +19,8 @@
  "@type": "sc:Dataset",
  "conformsTo": "http://mlcommons.org/croissant/1.0",
  "name": "meta-analysis-cz",
- "version": "1.0.0",
- "description": "Estimate-level data from meta-analyses in economics and the social sciences. 44 datasets containing 65,349 converted source rows and 53,960 estimates in the papers' analysis samples, each with the hand-coded study and design characteristics collected for the original paper. LICENCE: everything here is CC BY 4.0, including the underlying research data. Free to use, adapt and redistribute, including commercially and as training data for machine-learning models. Credit is the only condition: cite the collection and the paper whose dataset you used.",
+ "version": "1.1.0",
+ "description": "Estimate-level data from meta-analyses in economics and the social sciences. 45 datasets containing 66,683 converted source rows and 55,294 estimates in the papers' analysis samples, each with the hand-coded study and design characteristics collected for the original paper. LICENCE: everything here is CC BY 4.0, including the underlying research data. Free to use, adapt, and redistribute, including commercially and as training data for machine-learning models. Credit is the only condition: cite the collection and the paper whose dataset you used.",
  "url": "https://meta-analysis.cz",
  "license": "https://creativecommons.org/licenses/by/4.0/",
  "citeAs": "Havranek, T. and Z. Irsova (2026). meta-analysis.cz: harmonised estimate-level data from meta-analyses in economics. Zenodo. https://doi.org/10.5281/zenodo.21773678",
@@ -204,6 +204,15 @@
    "encodingFormat": "application/vnd.apache.parquet",
    "sha256": "1aa24ee59c1906dfcf79eb581bbc934097a60fe6f57701aef9283b99087a94c0",
    "contentSize": "16887"
+  },
+  {
+   "@type": "cr:FileObject",
+   "@id": "finance_growth.parquet",
+   "name": "finance_growth.parquet",
+   "contentUrl": "https://meta-analysis.cz/data/v1/finance_growth/finance_growth.parquet",
+   "encodingFormat": "application/vnd.apache.parquet",
+   "sha256": "0d703d884a5194d1d9f515af2dcdabe615089a9f4406ad6d5702d8ec282432fa",
+   "contentSize": "590791"
   },
   {
    "@type": "cr:FileObject",
@@ -438,6 +447,14 @@
    "encodingFormat": "application/vnd.apache.parquet",
    "sha256": "4dda3d4b05fc5f20fa067abfb04c819e51e2a69c2f1f5a7681215f1b72796c37",
    "contentSize": "52839"
+  },
+  {
+   "@type": "cr:FileObject",
+   "@id": "estimates_harmonised.csv",
+   "name": "estimates_harmonised.csv",
+   "description": "DERIVED AGGREGATE VIEW of the per-dataset files above, reshaped to a common schema. Rows are not additional to them.",
+   "contentUrl": "https://meta-analysis.cz/data/v1/estimates_harmonised.csv",
+   "encodingFormat": "text/csv"
   }
  ],
  "recordSet": [
@@ -16404,6 +16421,2019 @@
       },
       "extract": {
        "column": "Pub_year"
+      }
+     }
+    }
+   ]
+  },
+  {
+   "@type": "cr:RecordSet",
+   "@id": "finance_growth",
+   "name": "finance_growth",
+   "description": "Financial Development and Economic Growth: A Meta-Analysis",
+   "isBasedOn": "https://doi.org/10.1111/joes.12068",
+   "field": [
+    {
+     "@type": "cr:Field",
+     "@id": "finance_growth/idstudy",
+     "name": "idstudy",
+     "dataType": "sc:Integer",
+     "source": {
+      "fileObject": {
+       "@id": "finance_growth.parquet"
+      },
+      "extract": {
+       "column": "idstudy"
+      }
+     }
+    },
+    {
+     "@type": "cr:Field",
+     "@id": "finance_growth/study",
+     "name": "study",
+     "dataType": "sc:Text",
+     "source": {
+      "fileObject": {
+       "@id": "finance_growth.parquet"
+      },
+      "extract": {
+       "column": "study"
+      }
+     }
+    },
+    {
+     "@type": "cr:Field",
+     "@id": "finance_growth/depvar",
+     "name": "depvar",
+     "dataType": "sc:Integer",
+     "source": {
+      "fileObject": {
+       "@id": "finance_growth.parquet"
+      },
+      "extract": {
+       "column": "depvar"
+      }
+     }
+    },
+    {
+     "@type": "cr:Field",
+     "@id": "finance_growth/real_pc_gdp",
+     "name": "real_pc_gdp",
+     "dataType": "sc:Integer",
+     "source": {
+      "fileObject": {
+       "@id": "finance_growth.parquet"
+      },
+      "extract": {
+       "column": "real_pc_gdp"
+      }
+     }
+    },
+    {
+     "@type": "cr:Field",
+     "@id": "finance_growth/pc_gdp",
+     "name": "pc_gdp",
+     "dataType": "sc:Integer",
+     "source": {
+      "fileObject": {
+       "@id": "finance_growth.parquet"
+      },
+      "extract": {
+       "column": "pc_gdp"
+      }
+     }
+    },
+    {
+     "@type": "cr:Field",
+     "@id": "finance_growth/gdp",
+     "name": "gdp",
+     "dataType": "sc:Integer",
+     "source": {
+      "fileObject": {
+       "@id": "finance_growth.parquet"
+      },
+      "extract": {
+       "column": "gdp"
+      }
+     }
+    },
+    {
+     "@type": "cr:Field",
+     "@id": "finance_growth/real_gdp",
+     "name": "real_gdp",
+     "dataType": "sc:Integer",
+     "source": {
+      "fileObject": {
+       "@id": "finance_growth.parquet"
+      },
+      "extract": {
+       "column": "real_gdp"
+      }
+     }
+    },
+    {
+     "@type": "cr:Field",
+     "@id": "finance_growth/ft",
+     "name": "ft",
+     "dataType": "sc:Float",
+     "source": {
+      "fileObject": {
+       "@id": "finance_growth.parquet"
+      },
+      "extract": {
+       "column": "ft"
+      }
+     }
+    },
+    {
+     "@type": "cr:Field",
+     "@id": "finance_growth/seft",
+     "name": "seft",
+     "dataType": "sc:Float",
+     "source": {
+      "fileObject": {
+       "@id": "finance_growth.parquet"
+      },
+      "extract": {
+       "column": "seft"
+      }
+     }
+    },
+    {
+     "@type": "cr:Field",
+     "@id": "finance_growth/pcc",
+     "name": "pcc",
+     "dataType": "sc:Float",
+     "source": {
+      "fileObject": {
+       "@id": "finance_growth.parquet"
+      },
+      "extract": {
+       "column": "pcc"
+      }
+     },
+     "description": "verified role: effect_estimate"
+    },
+    {
+     "@type": "cr:Field",
+     "@id": "finance_growth/sepcc",
+     "name": "sepcc",
+     "dataType": "sc:Float",
+     "source": {
+      "fileObject": {
+       "@id": "finance_growth.parquet"
+      },
+      "extract": {
+       "column": "sepcc"
+      }
+     },
+     "description": "verified role: standard_error"
+    },
+    {
+     "@type": "cr:Field",
+     "@id": "finance_growth/prec",
+     "name": "prec",
+     "dataType": "sc:Float",
+     "source": {
+      "fileObject": {
+       "@id": "finance_growth.parquet"
+      },
+      "extract": {
+       "column": "prec"
+      }
+     }
+    },
+    {
+     "@type": "cr:Field",
+     "@id": "finance_growth/tstat",
+     "name": "tstat",
+     "dataType": "sc:Float",
+     "source": {
+      "fileObject": {
+       "@id": "finance_growth.parquet"
+      },
+      "extract": {
+       "column": "tstat"
+      }
+     }
+    },
+    {
+     "@type": "cr:Field",
+     "@id": "finance_growth/n",
+     "name": "n",
+     "dataType": "sc:Integer",
+     "source": {
+      "fileObject": {
+       "@id": "finance_growth.parquet"
+      },
+      "extract": {
+       "column": "n"
+      }
+     }
+    },
+    {
+     "@type": "cr:Field",
+     "@id": "finance_growth/t",
+     "name": "t",
+     "dataType": "sc:Integer",
+     "source": {
+      "fileObject": {
+       "@id": "finance_growth.parquet"
+      },
+      "extract": {
+       "column": "t"
+      }
+     }
+    },
+    {
+     "@type": "cr:Field",
+     "@id": "finance_growth/samsize",
+     "name": "samsize",
+     "dataType": "sc:Integer",
+     "source": {
+      "fileObject": {
+       "@id": "finance_growth.parquet"
+      },
+      "extract": {
+       "column": "samsize"
+      }
+     }
+    },
+    {
+     "@type": "cr:Field",
+     "@id": "finance_growth/ln_samsize",
+     "name": "ln_samsize",
+     "dataType": "sc:Float",
+     "source": {
+      "fileObject": {
+       "@id": "finance_growth.parquet"
+      },
+      "extract": {
+       "column": "ln_samsize"
+      }
+     }
+    },
+    {
+     "@type": "cr:Field",
+     "@id": "finance_growth/len",
+     "name": "len",
+     "dataType": "sc:Float",
+     "source": {
+      "fileObject": {
+       "@id": "finance_growth.parquet"
+      },
+      "extract": {
+       "column": "len"
+      }
+     }
+    },
+    {
+     "@type": "cr:Field",
+     "@id": "finance_growth/fddepth",
+     "name": "fddepth",
+     "dataType": "sc:Float",
+     "source": {
+      "fileObject": {
+       "@id": "finance_growth.parquet"
+      },
+      "extract": {
+       "column": "fddepth"
+      }
+     }
+    },
+    {
+     "@type": "cr:Field",
+     "@id": "finance_growth/fdacti1",
+     "name": "fdacti1",
+     "dataType": "sc:Float",
+     "source": {
+      "fileObject": {
+       "@id": "finance_growth.parquet"
+      },
+      "extract": {
+       "column": "fdacti1"
+      }
+     }
+    },
+    {
+     "@type": "cr:Field",
+     "@id": "finance_growth/fdacti2",
+     "name": "fdacti2",
+     "dataType": "sc:Float",
+     "source": {
+      "fileObject": {
+       "@id": "finance_growth.parquet"
+      },
+      "extract": {
+       "column": "fdacti2"
+      }
+     }
+    },
+    {
+     "@type": "cr:Field",
+     "@id": "finance_growth/fdbank",
+     "name": "fdbank",
+     "dataType": "sc:Float",
+     "source": {
+      "fileObject": {
+       "@id": "finance_growth.parquet"
+      },
+      "extract": {
+       "column": "fdbank"
+      }
+     }
+    },
+    {
+     "@type": "cr:Field",
+     "@id": "finance_growth/fdpricr",
+     "name": "fdpricr",
+     "dataType": "sc:Float",
+     "source": {
+      "fileObject": {
+       "@id": "finance_growth.parquet"
+      },
+      "extract": {
+       "column": "fdpricr"
+      }
+     }
+    },
+    {
+     "@type": "cr:Field",
+     "@id": "finance_growth/fdmktc",
+     "name": "fdmktc",
+     "dataType": "sc:Float",
+     "source": {
+      "fileObject": {
+       "@id": "finance_growth.parquet"
+      },
+      "extract": {
+       "column": "fdmktc"
+      }
+     }
+    },
+    {
+     "@type": "cr:Field",
+     "@id": "finance_growth/fdmkta",
+     "name": "fdmkta",
+     "dataType": "sc:Float",
+     "source": {
+      "fileObject": {
+       "@id": "finance_growth.parquet"
+      },
+      "extract": {
+       "column": "fdmkta"
+      }
+     }
+    },
+    {
+     "@type": "cr:Field",
+     "@id": "finance_growth/fdmkttr",
+     "name": "fdmkttr",
+     "dataType": "sc:Float",
+     "source": {
+      "fileObject": {
+       "@id": "finance_growth.parquet"
+      },
+      "extract": {
+       "column": "fdmkttr"
+      }
+     }
+    },
+    {
+     "@type": "cr:Field",
+     "@id": "finance_growth/fdother",
+     "name": "fdother",
+     "dataType": "sc:Float",
+     "source": {
+      "fileObject": {
+       "@id": "finance_growth.parquet"
+      },
+      "extract": {
+       "column": "fdother"
+      }
+     }
+    },
+    {
+     "@type": "cr:Field",
+     "@id": "finance_growth/fdnonl",
+     "name": "fdnonl",
+     "dataType": "sc:Float",
+     "source": {
+      "fileObject": {
+       "@id": "finance_growth.parquet"
+      },
+      "extract": {
+       "column": "fdnonl"
+      }
+     }
+    },
+    {
+     "@type": "cr:Field",
+     "@id": "finance_growth/fdchg",
+     "name": "fdchg",
+     "dataType": "sc:Float",
+     "source": {
+      "fileObject": {
+       "@id": "finance_growth.parquet"
+      },
+      "extract": {
+       "column": "fdchg"
+      }
+     }
+    },
+    {
+     "@type": "cr:Field",
+     "@id": "finance_growth/fdjoint",
+     "name": "fdjoint",
+     "dataType": "sc:Float",
+     "source": {
+      "fileObject": {
+       "@id": "finance_growth.parquet"
+      },
+      "extract": {
+       "column": "fdjoint"
+      }
+     }
+    },
+    {
+     "@type": "cr:Field",
+     "@id": "finance_growth/ols",
+     "name": "OLS",
+     "dataType": "sc:Float",
+     "source": {
+      "fileObject": {
+       "@id": "finance_growth.parquet"
+      },
+      "extract": {
+       "column": "OLS"
+      }
+     }
+    },
+    {
+     "@type": "cr:Field",
+     "@id": "finance_growth/dols",
+     "name": "DOLS",
+     "dataType": "sc:Float",
+     "source": {
+      "fileObject": {
+       "@id": "finance_growth.parquet"
+      },
+      "extract": {
+       "column": "DOLS"
+      }
+     }
+    },
+    {
+     "@type": "cr:Field",
+     "@id": "finance_growth/iv",
+     "name": "IV",
+     "dataType": "sc:Float",
+     "source": {
+      "fileObject": {
+       "@id": "finance_growth.parquet"
+      },
+      "extract": {
+       "column": "IV"
+      }
+     }
+    },
+    {
+     "@type": "cr:Field",
+     "@id": "finance_growth/fe",
+     "name": "FE",
+     "dataType": "sc:Float",
+     "source": {
+      "fileObject": {
+       "@id": "finance_growth.parquet"
+      },
+      "extract": {
+       "column": "FE"
+      }
+     }
+    },
+    {
+     "@type": "cr:Field",
+     "@id": "finance_growth/re",
+     "name": "RE",
+     "dataType": "sc:Float",
+     "source": {
+      "fileObject": {
+       "@id": "finance_growth.parquet"
+      },
+      "extract": {
+       "column": "RE"
+      }
+     }
+    },
+    {
+     "@type": "cr:Field",
+     "@id": "finance_growth/gmm",
+     "name": "GMM",
+     "dataType": "sc:Float",
+     "source": {
+      "fileObject": {
+       "@id": "finance_growth.parquet"
+      },
+      "extract": {
+       "column": "GMM"
+      }
+     }
+    },
+    {
+     "@type": "cr:Field",
+     "@id": "finance_growth/gmmsys",
+     "name": "GMMSYS",
+     "dataType": "sc:Float",
+     "source": {
+      "fileObject": {
+       "@id": "finance_growth.parquet"
+      },
+      "extract": {
+       "column": "GMMSYS"
+      }
+     }
+    },
+    {
+     "@type": "cr:Field",
+     "@id": "finance_growth/gmmlev",
+     "name": "GMMlev",
+     "dataType": "sc:Float",
+     "source": {
+      "fileObject": {
+       "@id": "finance_growth.parquet"
+      },
+      "extract": {
+       "column": "GMMlev"
+      }
+     }
+    },
+    {
+     "@type": "cr:Field",
+     "@id": "finance_growth/gmm_all",
+     "name": "GMM_all",
+     "dataType": "sc:Integer",
+     "source": {
+      "fileObject": {
+       "@id": "finance_growth.parquet"
+      },
+      "extract": {
+       "column": "GMM_all"
+      }
+     }
+    },
+    {
+     "@type": "cr:Field",
+     "@id": "finance_growth/homo",
+     "name": "Homo",
+     "dataType": "sc:Float",
+     "source": {
+      "fileObject": {
+       "@id": "finance_growth.parquet"
+      },
+      "extract": {
+       "column": "Homo"
+      }
+     }
+    },
+    {
+     "@type": "cr:Field",
+     "@id": "finance_growth/start",
+     "name": "Start",
+     "dataType": "sc:Integer",
+     "source": {
+      "fileObject": {
+       "@id": "finance_growth.parquet"
+      },
+      "extract": {
+       "column": "Start"
+      }
+     }
+    },
+    {
+     "@type": "cr:Field",
+     "@id": "finance_growth/1960s",
+     "name": "1960s",
+     "dataType": "sc:Float",
+     "source": {
+      "fileObject": {
+       "@id": "finance_growth.parquet"
+      },
+      "extract": {
+       "column": "1960s"
+      }
+     }
+    },
+    {
+     "@type": "cr:Field",
+     "@id": "finance_growth/1970s",
+     "name": "1970s",
+     "dataType": "sc:Float",
+     "source": {
+      "fileObject": {
+       "@id": "finance_growth.parquet"
+      },
+      "extract": {
+       "column": "1970s"
+      }
+     }
+    },
+    {
+     "@type": "cr:Field",
+     "@id": "finance_growth/1980s",
+     "name": "1980s",
+     "dataType": "sc:Float",
+     "source": {
+      "fileObject": {
+       "@id": "finance_growth.parquet"
+      },
+      "extract": {
+       "column": "1980s"
+      }
+     }
+    },
+    {
+     "@type": "cr:Field",
+     "@id": "finance_growth/1990s",
+     "name": "1990s",
+     "dataType": "sc:Float",
+     "source": {
+      "fileObject": {
+       "@id": "finance_growth.parquet"
+      },
+      "extract": {
+       "column": "1990s"
+      }
+     }
+    },
+    {
+     "@type": "cr:Field",
+     "@id": "finance_growth/2000s",
+     "name": "2000s",
+     "dataType": "sc:Float",
+     "source": {
+      "fileObject": {
+       "@id": "finance_growth.parquet"
+      },
+      "extract": {
+       "column": "2000s"
+      }
+     }
+    },
+    {
+     "@type": "cr:Field",
+     "@id": "finance_growth/end",
+     "name": "End",
+     "dataType": "sc:Integer",
+     "source": {
+      "fileObject": {
+       "@id": "finance_growth.parquet"
+      },
+      "extract": {
+       "column": "End"
+      }
+     }
+    },
+    {
+     "@type": "cr:Field",
+     "@id": "finance_growth/regcnt",
+     "name": "regcnt",
+     "dataType": "sc:Integer",
+     "source": {
+      "fileObject": {
+       "@id": "finance_growth.parquet"
+      },
+      "extract": {
+       "column": "regcnt"
+      }
+     }
+    },
+    {
+     "@type": "cr:Field",
+     "@id": "finance_growth/endo",
+     "name": "endo",
+     "dataType": "sc:Integer",
+     "source": {
+      "fileObject": {
+       "@id": "finance_growth.parquet"
+      },
+      "extract": {
+       "column": "endo"
+      }
+     }
+    },
+    {
+     "@type": "cr:Field",
+     "@id": "finance_growth/year",
+     "name": "Year",
+     "dataType": "sc:Integer",
+     "source": {
+      "fileObject": {
+       "@id": "finance_growth.parquet"
+      },
+      "extract": {
+       "column": "Year"
+      }
+     }
+    },
+    {
+     "@type": "cr:Field",
+     "@id": "finance_growth/year_adj",
+     "name": "Year_adj",
+     "dataType": "sc:Float",
+     "source": {
+      "fileObject": {
+       "@id": "finance_growth.parquet"
+      },
+      "extract": {
+       "column": "Year_adj"
+      }
+     }
+    },
+    {
+     "@type": "cr:Field",
+     "@id": "finance_growth/regeap",
+     "name": "regeap",
+     "dataType": "sc:Float",
+     "source": {
+      "fileObject": {
+       "@id": "finance_growth.parquet"
+      },
+      "extract": {
+       "column": "regeap"
+      }
+     }
+    },
+    {
+     "@type": "cr:Field",
+     "@id": "finance_growth/regsa",
+     "name": "regsa",
+     "dataType": "sc:Float",
+     "source": {
+      "fileObject": {
+       "@id": "finance_growth.parquet"
+      },
+      "extract": {
+       "column": "regsa"
+      }
+     }
+    },
+    {
+     "@type": "cr:Field",
+     "@id": "finance_growth/regasi",
+     "name": "regasi",
+     "dataType": "sc:Float",
+     "source": {
+      "fileObject": {
+       "@id": "finance_growth.parquet"
+      },
+      "extract": {
+       "column": "regasi"
+      }
+     }
+    },
+    {
+     "@type": "cr:Field",
+     "@id": "finance_growth/regeu",
+     "name": "regeu",
+     "dataType": "sc:Float",
+     "source": {
+      "fileObject": {
+       "@id": "finance_growth.parquet"
+      },
+      "extract": {
+       "column": "regeu"
+      }
+     }
+    },
+    {
+     "@type": "cr:Field",
+     "@id": "finance_growth/reglac",
+     "name": "reglac",
+     "dataType": "sc:Float",
+     "source": {
+      "fileObject": {
+       "@id": "finance_growth.parquet"
+      },
+      "extract": {
+       "column": "reglac"
+      }
+     }
+    },
+    {
+     "@type": "cr:Field",
+     "@id": "finance_growth/regmena",
+     "name": "regmena",
+     "dataType": "sc:Float",
+     "source": {
+      "fileObject": {
+       "@id": "finance_growth.parquet"
+      },
+      "extract": {
+       "column": "regmena"
+      }
+     }
+    },
+    {
+     "@type": "cr:Field",
+     "@id": "finance_growth/regssa",
+     "name": "regssa",
+     "dataType": "sc:Float",
+     "source": {
+      "fileObject": {
+       "@id": "finance_growth.parquet"
+      },
+      "extract": {
+       "column": "regssa"
+      }
+     }
+    },
+    {
+     "@type": "cr:Field",
+     "@id": "finance_growth/regrow",
+     "name": "regrow",
+     "dataType": "sc:Float",
+     "source": {
+      "fileObject": {
+       "@id": "finance_growth.parquet"
+      },
+      "extract": {
+       "column": "regrow"
+      }
+     }
+    },
+    {
+     "@type": "cr:Field",
+     "@id": "finance_growth/macro",
+     "name": "macro",
+     "dataType": "sc:Float",
+     "source": {
+      "fileObject": {
+       "@id": "finance_growth.parquet"
+      },
+      "extract": {
+       "column": "macro"
+      }
+     }
+    },
+    {
+     "@type": "cr:Field",
+     "@id": "finance_growth/polstab",
+     "name": "polstab",
+     "dataType": "sc:Float",
+     "source": {
+      "fileObject": {
+       "@id": "finance_growth.parquet"
+      },
+      "extract": {
+       "column": "polstab"
+      }
+     }
+    },
+    {
+     "@type": "cr:Field",
+     "@id": "finance_growth/trade",
+     "name": "Trade",
+     "dataType": "sc:Float",
+     "source": {
+      "fileObject": {
+       "@id": "finance_growth.parquet"
+      },
+      "extract": {
+       "column": "Trade"
+      }
+     }
+    },
+    {
+     "@type": "cr:Field",
+     "@id": "finance_growth/income",
+     "name": "Income",
+     "dataType": "sc:Float",
+     "source": {
+      "fileObject": {
+       "@id": "finance_growth.parquet"
+      },
+      "extract": {
+       "column": "Income"
+      }
+     }
+    },
+    {
+     "@type": "cr:Field",
+     "@id": "finance_growth/human",
+     "name": "Human",
+     "dataType": "sc:Float",
+     "source": {
+      "fileObject": {
+       "@id": "finance_growth.parquet"
+      },
+      "extract": {
+       "column": "Human"
+      }
+     }
+    },
+    {
+     "@type": "cr:Field",
+     "@id": "finance_growth/invest",
+     "name": "invest",
+     "dataType": "sc:Float",
+     "source": {
+      "fileObject": {
+       "@id": "finance_growth.parquet"
+      },
+      "extract": {
+       "column": "invest"
+      }
+     }
+    },
+    {
+     "@type": "cr:Field",
+     "@id": "finance_growth/fincri",
+     "name": "fincri",
+     "dataType": "sc:Float",
+     "source": {
+      "fileObject": {
+       "@id": "finance_growth.parquet"
+      },
+      "extract": {
+       "column": "fincri"
+      }
+     }
+    },
+    {
+     "@type": "cr:Field",
+     "@id": "finance_growth/timdum",
+     "name": "timdum",
+     "dataType": "sc:Float",
+     "source": {
+      "fileObject": {
+       "@id": "finance_growth.parquet"
+      },
+      "extract": {
+       "column": "timdum"
+      }
+     }
+    },
+    {
+     "@type": "cr:Field",
+     "@id": "finance_growth/log",
+     "name": "Log",
+     "dataType": "sc:Float",
+     "source": {
+      "fileObject": {
+       "@id": "finance_growth.parquet"
+      },
+      "extract": {
+       "column": "Log"
+      }
+     }
+    },
+    {
+     "@type": "cr:Field",
+     "@id": "finance_growth/panel",
+     "name": "Panel",
+     "dataType": "sc:Float",
+     "source": {
+      "fileObject": {
+       "@id": "finance_growth.parquet"
+      },
+      "extract": {
+       "column": "Panel"
+      }
+     }
+    },
+    {
+     "@type": "cr:Field",
+     "@id": "finance_growth/xsec",
+     "name": "xsec",
+     "dataType": "sc:Float",
+     "source": {
+      "fileObject": {
+       "@id": "finance_growth.parquet"
+      },
+      "extract": {
+       "column": "xsec"
+      }
+     }
+    },
+    {
+     "@type": "cr:Field",
+     "@id": "finance_growth/timser",
+     "name": "timser",
+     "dataType": "sc:Float",
+     "source": {
+      "fileObject": {
+       "@id": "finance_growth.parquet"
+      },
+      "extract": {
+       "column": "timser"
+      }
+     }
+    },
+    {
+     "@type": "cr:Field",
+     "@id": "finance_growth/journal_impact",
+     "name": "journal impact",
+     "dataType": "sc:Float",
+     "source": {
+      "fileObject": {
+       "@id": "finance_growth.parquet"
+      },
+      "extract": {
+       "column": "journal impact"
+      }
+     }
+    },
+    {
+     "@type": "cr:Field",
+     "@id": "finance_growth/notes",
+     "name": "Notes",
+     "dataType": "sc:Text",
+     "source": {
+      "fileObject": {
+       "@id": "finance_growth.parquet"
+      },
+      "extract": {
+       "column": "Notes"
+      }
+     }
+    },
+    {
+     "@type": "cr:Field",
+     "@id": "finance_growth/depvar_se",
+     "name": "depvar_se",
+     "dataType": "sc:Float",
+     "source": {
+      "fileObject": {
+       "@id": "finance_growth.parquet"
+      },
+      "extract": {
+       "column": "depvar_se"
+      }
+     }
+    },
+    {
+     "@type": "cr:Field",
+     "@id": "finance_growth/real_pc_gdp_se",
+     "name": "real_pc_gdp_se",
+     "dataType": "sc:Float",
+     "source": {
+      "fileObject": {
+       "@id": "finance_growth.parquet"
+      },
+      "extract": {
+       "column": "real_pc_gdp_se"
+      }
+     }
+    },
+    {
+     "@type": "cr:Field",
+     "@id": "finance_growth/pc_gdp_se",
+     "name": "pc_gdp_se",
+     "dataType": "sc:Float",
+     "source": {
+      "fileObject": {
+       "@id": "finance_growth.parquet"
+      },
+      "extract": {
+       "column": "pc_gdp_se"
+      }
+     }
+    },
+    {
+     "@type": "cr:Field",
+     "@id": "finance_growth/gdp_se",
+     "name": "gdp_se",
+     "dataType": "sc:Float",
+     "source": {
+      "fileObject": {
+       "@id": "finance_growth.parquet"
+      },
+      "extract": {
+       "column": "gdp_se"
+      }
+     }
+    },
+    {
+     "@type": "cr:Field",
+     "@id": "finance_growth/real_gdp_se",
+     "name": "real_gdp_se",
+     "dataType": "sc:Float",
+     "source": {
+      "fileObject": {
+       "@id": "finance_growth.parquet"
+      },
+      "extract": {
+       "column": "real_gdp_se"
+      }
+     }
+    },
+    {
+     "@type": "cr:Field",
+     "@id": "finance_growth/ft_se",
+     "name": "ft_se",
+     "dataType": "sc:Float",
+     "source": {
+      "fileObject": {
+       "@id": "finance_growth.parquet"
+      },
+      "extract": {
+       "column": "ft_se"
+      }
+     }
+    },
+    {
+     "@type": "cr:Field",
+     "@id": "finance_growth/seft_se",
+     "name": "seft_se",
+     "dataType": "sc:Float",
+     "source": {
+      "fileObject": {
+       "@id": "finance_growth.parquet"
+      },
+      "extract": {
+       "column": "seft_se"
+      }
+     }
+    },
+    {
+     "@type": "cr:Field",
+     "@id": "finance_growth/pcc_se",
+     "name": "pcc_se",
+     "dataType": "sc:Float",
+     "source": {
+      "fileObject": {
+       "@id": "finance_growth.parquet"
+      },
+      "extract": {
+       "column": "pcc_se"
+      }
+     }
+    },
+    {
+     "@type": "cr:Field",
+     "@id": "finance_growth/unnamed_81",
+     "name": "Unnamed: 81",
+     "dataType": "sc:Float",
+     "source": {
+      "fileObject": {
+       "@id": "finance_growth.parquet"
+      },
+      "extract": {
+       "column": "Unnamed: 81"
+      }
+     }
+    },
+    {
+     "@type": "cr:Field",
+     "@id": "finance_growth/prec_se",
+     "name": "prec_se",
+     "dataType": "sc:Float",
+     "source": {
+      "fileObject": {
+       "@id": "finance_growth.parquet"
+      },
+      "extract": {
+       "column": "prec_se"
+      }
+     }
+    },
+    {
+     "@type": "cr:Field",
+     "@id": "finance_growth/unnamed_83",
+     "name": "Unnamed: 83",
+     "dataType": "sc:Float",
+     "source": {
+      "fileObject": {
+       "@id": "finance_growth.parquet"
+      },
+      "extract": {
+       "column": "Unnamed: 83"
+      }
+     }
+    },
+    {
+     "@type": "cr:Field",
+     "@id": "finance_growth/n_se",
+     "name": "n_se",
+     "dataType": "sc:Float",
+     "source": {
+      "fileObject": {
+       "@id": "finance_growth.parquet"
+      },
+      "extract": {
+       "column": "n_se"
+      }
+     }
+    },
+    {
+     "@type": "cr:Field",
+     "@id": "finance_growth/t_se",
+     "name": "t_se",
+     "dataType": "sc:Float",
+     "source": {
+      "fileObject": {
+       "@id": "finance_growth.parquet"
+      },
+      "extract": {
+       "column": "t_se"
+      }
+     }
+    },
+    {
+     "@type": "cr:Field",
+     "@id": "finance_growth/samsize_se",
+     "name": "samsize_se",
+     "dataType": "sc:Float",
+     "source": {
+      "fileObject": {
+       "@id": "finance_growth.parquet"
+      },
+      "extract": {
+       "column": "samsize_se"
+      }
+     }
+    },
+    {
+     "@type": "cr:Field",
+     "@id": "finance_growth/ln_samsize_se",
+     "name": "ln_samsize_se",
+     "dataType": "sc:Float",
+     "source": {
+      "fileObject": {
+       "@id": "finance_growth.parquet"
+      },
+      "extract": {
+       "column": "ln_samsize_se"
+      }
+     }
+    },
+    {
+     "@type": "cr:Field",
+     "@id": "finance_growth/len_se",
+     "name": "len_se",
+     "dataType": "sc:Float",
+     "source": {
+      "fileObject": {
+       "@id": "finance_growth.parquet"
+      },
+      "extract": {
+       "column": "len_se"
+      }
+     }
+    },
+    {
+     "@type": "cr:Field",
+     "@id": "finance_growth/fddepth_se",
+     "name": "fddepth_se",
+     "dataType": "sc:Float",
+     "source": {
+      "fileObject": {
+       "@id": "finance_growth.parquet"
+      },
+      "extract": {
+       "column": "fddepth_se"
+      }
+     }
+    },
+    {
+     "@type": "cr:Field",
+     "@id": "finance_growth/fdacti1_se",
+     "name": "fdacti1_se",
+     "dataType": "sc:Float",
+     "source": {
+      "fileObject": {
+       "@id": "finance_growth.parquet"
+      },
+      "extract": {
+       "column": "fdacti1_se"
+      }
+     }
+    },
+    {
+     "@type": "cr:Field",
+     "@id": "finance_growth/fdacti2_se",
+     "name": "fdacti2_se",
+     "dataType": "sc:Float",
+     "source": {
+      "fileObject": {
+       "@id": "finance_growth.parquet"
+      },
+      "extract": {
+       "column": "fdacti2_se"
+      }
+     }
+    },
+    {
+     "@type": "cr:Field",
+     "@id": "finance_growth/fdbank_se",
+     "name": "fdbank_se",
+     "dataType": "sc:Float",
+     "source": {
+      "fileObject": {
+       "@id": "finance_growth.parquet"
+      },
+      "extract": {
+       "column": "fdbank_se"
+      }
+     }
+    },
+    {
+     "@type": "cr:Field",
+     "@id": "finance_growth/fdpricr_se",
+     "name": "fdpricr_se",
+     "dataType": "sc:Float",
+     "source": {
+      "fileObject": {
+       "@id": "finance_growth.parquet"
+      },
+      "extract": {
+       "column": "fdpricr_se"
+      }
+     }
+    },
+    {
+     "@type": "cr:Field",
+     "@id": "finance_growth/fdmktc_se",
+     "name": "fdmktc_se",
+     "dataType": "sc:Float",
+     "source": {
+      "fileObject": {
+       "@id": "finance_growth.parquet"
+      },
+      "extract": {
+       "column": "fdmktc_se"
+      }
+     }
+    },
+    {
+     "@type": "cr:Field",
+     "@id": "finance_growth/fdmkta_se",
+     "name": "fdmkta_se",
+     "dataType": "sc:Float",
+     "source": {
+      "fileObject": {
+       "@id": "finance_growth.parquet"
+      },
+      "extract": {
+       "column": "fdmkta_se"
+      }
+     }
+    },
+    {
+     "@type": "cr:Field",
+     "@id": "finance_growth/fdmkttr_se",
+     "name": "fdmkttr_se",
+     "dataType": "sc:Float",
+     "source": {
+      "fileObject": {
+       "@id": "finance_growth.parquet"
+      },
+      "extract": {
+       "column": "fdmkttr_se"
+      }
+     }
+    },
+    {
+     "@type": "cr:Field",
+     "@id": "finance_growth/fdother_se",
+     "name": "fdother_se",
+     "dataType": "sc:Float",
+     "source": {
+      "fileObject": {
+       "@id": "finance_growth.parquet"
+      },
+      "extract": {
+       "column": "fdother_se"
+      }
+     }
+    },
+    {
+     "@type": "cr:Field",
+     "@id": "finance_growth/fdnonl_se",
+     "name": "fdnonl_se",
+     "dataType": "sc:Float",
+     "source": {
+      "fileObject": {
+       "@id": "finance_growth.parquet"
+      },
+      "extract": {
+       "column": "fdnonl_se"
+      }
+     }
+    },
+    {
+     "@type": "cr:Field",
+     "@id": "finance_growth/fdchg_se",
+     "name": "fdchg_se",
+     "dataType": "sc:Float",
+     "source": {
+      "fileObject": {
+       "@id": "finance_growth.parquet"
+      },
+      "extract": {
+       "column": "fdchg_se"
+      }
+     }
+    },
+    {
+     "@type": "cr:Field",
+     "@id": "finance_growth/fdjoint_se",
+     "name": "fdjoint_se",
+     "dataType": "sc:Float",
+     "source": {
+      "fileObject": {
+       "@id": "finance_growth.parquet"
+      },
+      "extract": {
+       "column": "fdjoint_se"
+      }
+     }
+    },
+    {
+     "@type": "cr:Field",
+     "@id": "finance_growth/ols_se",
+     "name": "ols_se",
+     "dataType": "sc:Float",
+     "source": {
+      "fileObject": {
+       "@id": "finance_growth.parquet"
+      },
+      "extract": {
+       "column": "ols_se"
+      }
+     }
+    },
+    {
+     "@type": "cr:Field",
+     "@id": "finance_growth/dols_se",
+     "name": "dols_se",
+     "dataType": "sc:Float",
+     "source": {
+      "fileObject": {
+       "@id": "finance_growth.parquet"
+      },
+      "extract": {
+       "column": "dols_se"
+      }
+     }
+    },
+    {
+     "@type": "cr:Field",
+     "@id": "finance_growth/iv_se",
+     "name": "iv_se",
+     "dataType": "sc:Float",
+     "source": {
+      "fileObject": {
+       "@id": "finance_growth.parquet"
+      },
+      "extract": {
+       "column": "iv_se"
+      }
+     }
+    },
+    {
+     "@type": "cr:Field",
+     "@id": "finance_growth/fe_se",
+     "name": "fe_se",
+     "dataType": "sc:Float",
+     "source": {
+      "fileObject": {
+       "@id": "finance_growth.parquet"
+      },
+      "extract": {
+       "column": "fe_se"
+      }
+     }
+    },
+    {
+     "@type": "cr:Field",
+     "@id": "finance_growth/re_se",
+     "name": "re_se",
+     "dataType": "sc:Float",
+     "source": {
+      "fileObject": {
+       "@id": "finance_growth.parquet"
+      },
+      "extract": {
+       "column": "re_se"
+      }
+     }
+    },
+    {
+     "@type": "cr:Field",
+     "@id": "finance_growth/gmm_se",
+     "name": "gmm_se",
+     "dataType": "sc:Float",
+     "source": {
+      "fileObject": {
+       "@id": "finance_growth.parquet"
+      },
+      "extract": {
+       "column": "gmm_se"
+      }
+     }
+    },
+    {
+     "@type": "cr:Field",
+     "@id": "finance_growth/gmmsys_se",
+     "name": "gmmsys_se",
+     "dataType": "sc:Float",
+     "source": {
+      "fileObject": {
+       "@id": "finance_growth.parquet"
+      },
+      "extract": {
+       "column": "gmmsys_se"
+      }
+     }
+    },
+    {
+     "@type": "cr:Field",
+     "@id": "finance_growth/gmmlev_se",
+     "name": "gmmlev_se",
+     "dataType": "sc:Float",
+     "source": {
+      "fileObject": {
+       "@id": "finance_growth.parquet"
+      },
+      "extract": {
+       "column": "gmmlev_se"
+      }
+     }
+    },
+    {
+     "@type": "cr:Field",
+     "@id": "finance_growth/gmm_all_se",
+     "name": "gmm_all_se",
+     "dataType": "sc:Float",
+     "source": {
+      "fileObject": {
+       "@id": "finance_growth.parquet"
+      },
+      "extract": {
+       "column": "gmm_all_se"
+      }
+     }
+    },
+    {
+     "@type": "cr:Field",
+     "@id": "finance_growth/homo_se",
+     "name": "homo_se",
+     "dataType": "sc:Float",
+     "source": {
+      "fileObject": {
+       "@id": "finance_growth.parquet"
+      },
+      "extract": {
+       "column": "homo_se"
+      }
+     }
+    },
+    {
+     "@type": "cr:Field",
+     "@id": "finance_growth/start_se",
+     "name": "start_se",
+     "dataType": "sc:Float",
+     "source": {
+      "fileObject": {
+       "@id": "finance_growth.parquet"
+      },
+      "extract": {
+       "column": "start_se"
+      }
+     }
+    },
+    {
+     "@type": "cr:Field",
+     "@id": "finance_growth/sixtys_se",
+     "name": "sixtys_se",
+     "dataType": "sc:Float",
+     "source": {
+      "fileObject": {
+       "@id": "finance_growth.parquet"
+      },
+      "extract": {
+       "column": "sixtys_se"
+      }
+     }
+    },
+    {
+     "@type": "cr:Field",
+     "@id": "finance_growth/seventys_se",
+     "name": "seventys_se",
+     "dataType": "sc:Float",
+     "source": {
+      "fileObject": {
+       "@id": "finance_growth.parquet"
+      },
+      "extract": {
+       "column": "seventys_se"
+      }
+     }
+    },
+    {
+     "@type": "cr:Field",
+     "@id": "finance_growth/eightys_se",
+     "name": "eightys_se",
+     "dataType": "sc:Float",
+     "source": {
+      "fileObject": {
+       "@id": "finance_growth.parquet"
+      },
+      "extract": {
+       "column": "eightys_se"
+      }
+     }
+    },
+    {
+     "@type": "cr:Field",
+     "@id": "finance_growth/ninetys_se",
+     "name": "ninetys_se",
+     "dataType": "sc:Float",
+     "source": {
+      "fileObject": {
+       "@id": "finance_growth.parquet"
+      },
+      "extract": {
+       "column": "ninetys_se"
+      }
+     }
+    },
+    {
+     "@type": "cr:Field",
+     "@id": "finance_growth/mill_se",
+     "name": "mill_se",
+     "dataType": "sc:Float",
+     "source": {
+      "fileObject": {
+       "@id": "finance_growth.parquet"
+      },
+      "extract": {
+       "column": "mill_se"
+      }
+     }
+    },
+    {
+     "@type": "cr:Field",
+     "@id": "finance_growth/end_se",
+     "name": "end_se",
+     "dataType": "sc:Float",
+     "source": {
+      "fileObject": {
+       "@id": "finance_growth.parquet"
+      },
+      "extract": {
+       "column": "end_se"
+      }
+     }
+    },
+    {
+     "@type": "cr:Field",
+     "@id": "finance_growth/regcnt_se",
+     "name": "regcnt_se",
+     "dataType": "sc:Float",
+     "source": {
+      "fileObject": {
+       "@id": "finance_growth.parquet"
+      },
+      "extract": {
+       "column": "regcnt_se"
+      }
+     }
+    },
+    {
+     "@type": "cr:Field",
+     "@id": "finance_growth/endo_se",
+     "name": "endo_se",
+     "dataType": "sc:Float",
+     "source": {
+      "fileObject": {
+       "@id": "finance_growth.parquet"
+      },
+      "extract": {
+       "column": "endo_se"
+      }
+     }
+    },
+    {
+     "@type": "cr:Field",
+     "@id": "finance_growth/year_se",
+     "name": "year _se",
+     "dataType": "sc:Float",
+     "source": {
+      "fileObject": {
+       "@id": "finance_growth.parquet"
+      },
+      "extract": {
+       "column": "year _se"
+      }
+     }
+    },
+    {
+     "@type": "cr:Field",
+     "@id": "finance_growth/year_adj_se",
+     "name": "year_adj_se",
+     "dataType": "sc:Float",
+     "source": {
+      "fileObject": {
+       "@id": "finance_growth.parquet"
+      },
+      "extract": {
+       "column": "year_adj_se"
+      }
+     }
+    },
+    {
+     "@type": "cr:Field",
+     "@id": "finance_growth/regeap_se",
+     "name": "regeap_se",
+     "dataType": "sc:Float",
+     "source": {
+      "fileObject": {
+       "@id": "finance_growth.parquet"
+      },
+      "extract": {
+       "column": "regeap_se"
+      }
+     }
+    },
+    {
+     "@type": "cr:Field",
+     "@id": "finance_growth/regsa_se",
+     "name": "regsa_se",
+     "dataType": "sc:Float",
+     "source": {
+      "fileObject": {
+       "@id": "finance_growth.parquet"
+      },
+      "extract": {
+       "column": "regsa_se"
+      }
+     }
+    },
+    {
+     "@type": "cr:Field",
+     "@id": "finance_growth/regasi_se",
+     "name": "regasi_se",
+     "dataType": "sc:Float",
+     "source": {
+      "fileObject": {
+       "@id": "finance_growth.parquet"
+      },
+      "extract": {
+       "column": "regasi_se"
+      }
+     }
+    },
+    {
+     "@type": "cr:Field",
+     "@id": "finance_growth/regeu_se",
+     "name": "regeu_se",
+     "dataType": "sc:Float",
+     "source": {
+      "fileObject": {
+       "@id": "finance_growth.parquet"
+      },
+      "extract": {
+       "column": "regeu_se"
+      }
+     }
+    },
+    {
+     "@type": "cr:Field",
+     "@id": "finance_growth/reglac_se",
+     "name": "reglac_se",
+     "dataType": "sc:Float",
+     "source": {
+      "fileObject": {
+       "@id": "finance_growth.parquet"
+      },
+      "extract": {
+       "column": "reglac_se"
+      }
+     }
+    },
+    {
+     "@type": "cr:Field",
+     "@id": "finance_growth/regmena_se",
+     "name": "regmena_se",
+     "dataType": "sc:Float",
+     "source": {
+      "fileObject": {
+       "@id": "finance_growth.parquet"
+      },
+      "extract": {
+       "column": "regmena_se"
+      }
+     }
+    },
+    {
+     "@type": "cr:Field",
+     "@id": "finance_growth/regssa_se",
+     "name": "regssa_se",
+     "dataType": "sc:Float",
+     "source": {
+      "fileObject": {
+       "@id": "finance_growth.parquet"
+      },
+      "extract": {
+       "column": "regssa_se"
+      }
+     }
+    },
+    {
+     "@type": "cr:Field",
+     "@id": "finance_growth/regrow_se",
+     "name": "regrow_se",
+     "dataType": "sc:Float",
+     "source": {
+      "fileObject": {
+       "@id": "finance_growth.parquet"
+      },
+      "extract": {
+       "column": "regrow_se"
+      }
+     }
+    },
+    {
+     "@type": "cr:Field",
+     "@id": "finance_growth/macro_se",
+     "name": "macro_se",
+     "dataType": "sc:Float",
+     "source": {
+      "fileObject": {
+       "@id": "finance_growth.parquet"
+      },
+      "extract": {
+       "column": "macro_se"
+      }
+     }
+    },
+    {
+     "@type": "cr:Field",
+     "@id": "finance_growth/polstab_se",
+     "name": "polstab_se",
+     "dataType": "sc:Float",
+     "source": {
+      "fileObject": {
+       "@id": "finance_growth.parquet"
+      },
+      "extract": {
+       "column": "polstab_se"
+      }
+     }
+    },
+    {
+     "@type": "cr:Field",
+     "@id": "finance_growth/trade_se",
+     "name": "trade_se",
+     "dataType": "sc:Float",
+     "source": {
+      "fileObject": {
+       "@id": "finance_growth.parquet"
+      },
+      "extract": {
+       "column": "trade_se"
+      }
+     }
+    },
+    {
+     "@type": "cr:Field",
+     "@id": "finance_growth/income_se",
+     "name": "income_se",
+     "dataType": "sc:Float",
+     "source": {
+      "fileObject": {
+       "@id": "finance_growth.parquet"
+      },
+      "extract": {
+       "column": "income_se"
+      }
+     }
+    },
+    {
+     "@type": "cr:Field",
+     "@id": "finance_growth/human_se",
+     "name": "human_se",
+     "dataType": "sc:Float",
+     "source": {
+      "fileObject": {
+       "@id": "finance_growth.parquet"
+      },
+      "extract": {
+       "column": "human_se"
+      }
+     }
+    },
+    {
+     "@type": "cr:Field",
+     "@id": "finance_growth/invest_se",
+     "name": "invest_se",
+     "dataType": "sc:Float",
+     "source": {
+      "fileObject": {
+       "@id": "finance_growth.parquet"
+      },
+      "extract": {
+       "column": "invest_se"
+      }
+     }
+    },
+    {
+     "@type": "cr:Field",
+     "@id": "finance_growth/fincri_se",
+     "name": "fincri_se",
+     "dataType": "sc:Float",
+     "source": {
+      "fileObject": {
+       "@id": "finance_growth.parquet"
+      },
+      "extract": {
+       "column": "fincri_se"
+      }
+     }
+    },
+    {
+     "@type": "cr:Field",
+     "@id": "finance_growth/timdum_se",
+     "name": "timdum_se",
+     "dataType": "sc:Float",
+     "source": {
+      "fileObject": {
+       "@id": "finance_growth.parquet"
+      },
+      "extract": {
+       "column": "timdum_se"
+      }
+     }
+    },
+    {
+     "@type": "cr:Field",
+     "@id": "finance_growth/log_se",
+     "name": "log _se",
+     "dataType": "sc:Float",
+     "source": {
+      "fileObject": {
+       "@id": "finance_growth.parquet"
+      },
+      "extract": {
+       "column": "log _se"
+      }
+     }
+    },
+    {
+     "@type": "cr:Field",
+     "@id": "finance_growth/panel_se",
+     "name": "panel_se",
+     "dataType": "sc:Float",
+     "source": {
+      "fileObject": {
+       "@id": "finance_growth.parquet"
+      },
+      "extract": {
+       "column": "panel_se"
+      }
+     }
+    },
+    {
+     "@type": "cr:Field",
+     "@id": "finance_growth/xsec_se",
+     "name": "xsec_se",
+     "dataType": "sc:Float",
+     "source": {
+      "fileObject": {
+       "@id": "finance_growth.parquet"
+      },
+      "extract": {
+       "column": "xsec_se"
+      }
+     }
+    },
+    {
+     "@type": "cr:Field",
+     "@id": "finance_growth/timser_se",
+     "name": "timser_se",
+     "dataType": "sc:Float",
+     "source": {
+      "fileObject": {
+       "@id": "finance_growth.parquet"
+      },
+      "extract": {
+       "column": "timser_se"
+      }
+     }
+    },
+    {
+     "@type": "cr:Field",
+     "@id": "finance_growth/journal_impact_se",
+     "name": "journal impact_se",
+     "dataType": "sc:Float",
+     "source": {
+      "fileObject": {
+       "@id": "finance_growth.parquet"
+      },
+      "extract": {
+       "column": "journal impact_se"
       }
      }
     }

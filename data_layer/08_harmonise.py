@@ -275,6 +275,11 @@ for proj in sorted(man):
                 vals=pd.to_numeric(v,errors="coerce")
                 if concept=="n_obs" and n_obs_was_log:
                     vals=np.exp(vals)          # stored as log(N); publish N
+                if concept=="n_obs":
+                    # A sample size is a count. Exponentiating a log left values like
+                    # 971.0000000000003, which is wrong on its face and differs in the last
+                    # digit between BLAS builds, so the released table was not byte-reproducible.
+                    vals=vals.round()
                 out[concept]=vals.values
         else: out[concept]=np.nan
     if out["study_id"].isna().all() and "study_label" in out:

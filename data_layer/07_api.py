@@ -8,10 +8,11 @@ OUT=os.path.join(WORK,"out"); BASE="https://meta-analysis.cz"
 VERSION="1.0.0"; DATA_V="v1"
 # The DATA artefact's version, in ONE place. It was hardcoded in four, which is how a
 # consumer once saw the Croissant record say 1.0.0 while the table said 0.9.0-beta.
-DATA_VERSION="1.0.0"; DATA_STATUS="stable"
+DATA_VERSION="1.1.0"; DATA_STATUS="stable"
 # The VERSION DOI, set once Zenodo minted it. None until deposited -- publishing the
 # previous version's DOI beside a new version tells a citing reader the wrong thing.
-DATA_DOI="10.5281/zenodo.21789702"   # minted 2026-08-04; verified against zenodo.org/api/records/21789702
+DATA_DOI=None   # 1.1.0 not yet deposited. Cite the concept DOI until Zenodo mints
+                # the version DOI; publishing 1.0.0's here would misdate a citation.
 
 papers={p["project"]:p for p in json.load(open(os.path.join(SITE,"tools","papers.json"),encoding="utf-8"))}
 man={m["project"]:m for m in json.load(open(os.path.join(WORK,"convert_manifest.json"),encoding="utf-8"))}
@@ -363,6 +364,30 @@ api=os.path.join(OUT,"api",DATA_V); os.makedirs(api,exist_ok=True)
 json.dump(index,open(os.path.join(api,"datasets.json"),"w",encoding="utf-8"),indent=1,ensure_ascii=False)
 
 # Frictionless Data Package
+
+def _harmonised_fields():
+    """Schema for the pooled table. tabular-data-resource requires one, and the types are
+    inferred from the data: a hardcoded list of text columns got `source_file` and
+    `se_is_derived` wrong, which the reference validator then reported as type errors on
+    every row."""
+    import csv as _csv
+    path=os.path.join(OUT,"data",DATA_V,"estimates_harmonised.csv")
+    try:
+        with open(path,encoding="utf-8",newline="") as fh:
+            r=_csv.reader(fh); head=next(r)
+            numeric=[True]*len(head)
+            for i,row in enumerate(r):
+                if i>=5000: break
+                for j,v in enumerate(row[:len(head)]):
+                    if not numeric[j] or v=="" : continue
+                    try: float(v)
+                    except ValueError: numeric[j]=False
+    except Exception:
+        return []
+    return [dict(name=c, type=("number" if numeric[j] else "string"))
+            for j,c in enumerate(head)]
+
+
 dp=dict(profile="tabular-data-package", name="meta-analysis-cz", version=VERSION,
         api_version=VERSION, data_version=(harm.get("version") or DATA_VERSION),
         title="meta-analysis.cz estimate-level datasets",
@@ -402,6 +427,20 @@ for d in ok:
                                                       or (d["paper"] or {}).get("url")}],
                                     description=("Format conversion of the dataset published "
                                                  "with this paper. CC BY 4.0; cite the paper.")))
+# The harmonised table is the flagship artifact and was described by neither machine
+# description of the collection. It is labelled unmistakably as a DERIVED aggregate that
+# overlaps the per-dataset resources, so nobody sums it together with them.
+dp["resources"].append(dict(
+    name="estimates_harmonised", profile="tabular-data-resource",
+    path=f"{BASE}/data/{DATA_V}/estimates_harmonised.csv", format="csv", mediatype="text/csv",
+    title="Harmonised estimate-level table (derived)",
+    description=("DERIVED AGGREGATE VIEW, not a 45th dataset. Every row here also appears in "
+                 "one of the per-dataset resources above, reshaped to a common schema. Do not "
+                 "sum this resource together with them, and note that literatures which "
+                 "duplicate another, overlap one already included, or carry no per-estimate "
+                 "standard error are absent."),
+    licenses=[dict(name="CC-BY-4.0", path="https://creativecommons.org/licenses/by/4.0/")],
+    schema=dict(fields=_harmonised_fields())))
 json.dump(dp,open(os.path.join(api,"datapackage.json"),"w",encoding="utf-8"),indent=1,ensure_ascii=False)
 
 def _sha256(path):
@@ -482,7 +521,13 @@ cr={"@context":{"@vocab":"https://schema.org/","cr":"http://mlcommons.org/croiss
     "datePublished":"2026-08-04",
     "keywords":["meta-analysis","publication bias","economics","effect size","research synthesis"],
     "creator":[{"@type":"Person","name":"Tomas Havranek"},{"@type":"Person","name":"Zuzana Irsova"}],
-    "distribution":[_file_object(d) for d in ok],
+    "distribution":[_file_object(d) for d in ok]+[{
+        "@type":"cr:FileObject","@id":"estimates_harmonised.csv",
+        "name":"estimates_harmonised.csv",
+        "description":("DERIVED AGGREGATE VIEW of the per-dataset files above, reshaped to a "
+                       "common schema. Rows are not additional to them."),
+        "contentUrl":f"{BASE}/data/{DATA_V}/estimates_harmonised.csv",
+        "encodingFormat":"text/csv"}],
     "recordSet":[_record_set(d) for d in ok]}
 json.dump(cr,open(os.path.join(api,"croissant.json"),"w",encoding="utf-8"),indent=1,ensure_ascii=False)
 

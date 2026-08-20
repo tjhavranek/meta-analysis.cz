@@ -27,3 +27,6 @@ review_baseline/
 !/robots.txt
 # the IndexNow key file (its name IS the key); tracked, but be explicit
 !/6c841b23e12756bf2f1491dbd661cd2d.txt
+
+# Build scratch: a byte-identical duplicate of /api/v1/ and /data/v1/.
+data_layer/out/

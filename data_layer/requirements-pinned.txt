@@ -1,0 +1,11 @@
+# The data layer is only reproducible if these are pinned.
+#
+# Both versions are embedded in every Parquet file this pipeline writes: pyarrow in
+# `created_by`, pandas in the file's pandas metadata blob. A different build therefore
+# changes all 44 per-dataset checksums with no change to a single value — which would tell
+# anyone who pinned a hash that the data moved when it had not.
+#
+# Measured 2026-08-20: unpinned, a rebuild differed from the release in 49 of 159 files;
+# with these pins, 154 of 159 reproduce byte for byte and the rest are intended changes.
+pandas==3.0.3
+pyarrow==25.0.0

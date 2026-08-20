@@ -249,6 +249,20 @@
   "ncols": 23,
   "alias_of": null
  },
+ "finance_growth": {
+  "status": "ok",
+  "file": "finance_growth.xlsm",
+  "sheet": "Stata",
+  "rows": 1334,
+  "ncols": 143,
+  "alias_of": null,
+  "effect": "Unnamed: 83",
+  "se": "eightys_se",
+  "score": 100.0,
+  "evidence": "t_match:tstat",
+  "se_derived": false,
+  "median_abs_t": 2.31
+ },
  "forward": {
   "status": "ok",
   "file": "forward.dta",

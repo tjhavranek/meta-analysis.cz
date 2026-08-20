@@ -2,7 +2,7 @@
  "name": "meta-analysis.cz data API",
  "version": "1.0.0",
  "api_version": "1.0.0",
- "data_version": "1.0.0",
+ "data_version": "1.1.0",
  "version_note": "version and api_version describe this INTERFACE. data_version describes the harmonised table, and is what croissant.json reports. They move independently.",
  "description": "Estimate-level datasets from meta-analyses in economics and the social sciences, with the hand-coded study characteristics collected for each paper.",
  "license": {
@@ -10,12 +10,12 @@
   "url": "https://creativecommons.org/licenses/by/4.0/",
   "terms": "https://meta-analysis.cz/LICENSE",
   "applies_to": "everything on this site",
-  "note": "Everything here is CC BY 4.0: the research datasets, their CSV and Parquet conversions, the harmonised table, the index, the codebooks, the documentation and the deposited PDFs. Free to use, adapt and redistribute, including commercially and including as training data for machine-learning models. The only condition is credit: cite the collection, and cite the paper whose dataset you used.",
+  "note": "Everything here is CC BY 4.0: the research datasets, their CSV and Parquet conversions, the harmonised table, the index, the codebooks, the documentation and the deposited PDFs. Free to use, adapt, and redistribute, including commercially and including as training data for machine-learning models. The only condition is credit: cite the collection, and cite the paper whose dataset you used.",
   "machine_readable": true
  },
  "cite_as": "Havranek, T. and Z. Irsova (2026). meta-analysis.cz: harmonised estimate-level data from meta-analyses in economics. Zenodo. https://doi.org/10.5281/zenodo.21773678",
- "doi": "10.5281/zenodo.21789702",
- "doi_url": "https://doi.org/10.5281/zenodo.21789702",
+ "doi": null,
+ "doi_url": null,
  "concept_doi": "10.5281/zenodo.21773678",
  "concept_doi_url": "https://doi.org/10.5281/zenodo.21773678",
  "doi_note": "Cite the CONCEPT DOI in prose - it always resolves to the newest version. Cite the version DOI in a replication package, where you need the exact files.",
@@ -29,19 +29,19 @@
   "headline_estimates": "https://meta-analysis.cz/estimates.csv"
  },
  "counts": {
-  "datasets": 44,
-  "rows_in_source_files": 65349,
-  "estimates_in_analysis_samples": 53960,
-  "estimates_in_harmonised_table": 48355,
-  "literatures_in_harmonised_table": 40,
-  "in_harmonised_table": 40,
-  "counts_explained": "rows_in_source_files counts every row of the 44 converted files. estimates_in_analysis_samples applies each paper's own filters and is what the catalogue table shows. estimates_in_harmonised_table additionally drops literatures that duplicate another exactly, overlap one already included, or lack per-estimate precision. These counts cover the 44 datasets currently inventoried; finance_growth is published on the site but not yet in this catalogue — see excluded_resources — and joins as a 45th in the next data release."
+  "datasets": 45,
+  "rows_in_source_files": 66683,
+  "estimates_in_analysis_samples": 55294,
+  "estimates_in_harmonised_table": 49689,
+  "literatures_in_harmonised_table": 41,
+  "in_harmonised_table": 41,
+  "counts_explained": "rows_in_source_files counts every row of the 44 converted files. estimates_in_analysis_samples applies each paper's own filters and is what the catalogue table shows. estimates_in_harmonised_table additionally drops literatures that duplicate another exactly, overlap one already included, or lack per-estimate precision."
  },
  "harmonised_table": {
-  "version": "1.0.0",
+  "version": "1.1.0",
   "status": "stable",
-  "n_rows": 48355,
-  "n_literatures": 40,
+  "n_rows": 49689,
+  "n_literatures": 41,
   "columns": [
    "dataset",
    "study_id",
@@ -110,8 +110,8 @@
    "reason": "country-level crisis database, not extracted estimates",
    "paper": {
     "title": null,
-    "url": null,
-    "note": "no landing page exists; the two .xls files are at https://meta-analysis.cz/ews/crises_database.xls and https://meta-analysis.cz/ews/cdec40_40_at_least_two.xls"
+    "page_title": null,
+    "url": "https://meta-analysis.cz/ews/"
    },
    "excluded_because": "examined and not an estimate-level dataset"
   },
@@ -119,7 +119,8 @@
    "id": "maive",
    "reason": "Bartos et al. cross-field archive (external), not a Havranek literature",
    "paper": {
-    "title": "Meta-Analysis Instrumental Variable Estimator",
+    "title": "Spurious Precision in Meta-Analysis of Observational Research",
+    "page_title": "Meta-Analysis Instrumental Variable Estimator",
     "url": "https://meta-analysis.cz/maive/"
    },
    "excluded_because": "examined and not an estimate-level dataset"
@@ -129,18 +130,10 @@
    "reason": "Google Scholar search listing, not extracted estimates",
    "paper": {
     "title": "Meta-analyses of partial correlations are biased: Detection and solutions",
+    "page_title": "Meta-analyses of partial correlations are biased: Detection and solutions",
     "url": "https://meta-analysis.cz/pcc/"
    },
    "excluded_because": "examined and not an estimate-level dataset"
-  },
-  {
-   "id": "finance_growth",
-   "reason": "published dataset, scheduled for inclusion in the next data release",
-   "paper": {
-    "title": null,
-    "url": "https://meta-analysis.cz/finance_growth/"
-   },
-   "excluded_because": "NOT a principled exclusion and NOT permanent. The inventory scanned only .xlsx/.xls/.dta/.csv/.rdata/.rds, and this dataset's archive holds a single .xlsm, so it was never examined. The extension is now recognised and the owner has decided to include it: the next data release inventories it as a 45th dataset (1,334 estimates from 67 studies), after which this entry is removed. Until then the counts below exclude it, while /llms.txt and the paper page list it — that disagreement is this exception, not a second dataset."
   }
  ],
  "datasets": [
@@ -181,7 +174,7 @@
    },
    "effect_units": "percent",
    "direction_note": "Reconstructed on a comparable scale; the raw Estimate column mixes percent and decimal across studies.",
-   "column_mapping_verified_by": "activism.R sets data$elasticity <- data$Estim_adj and data$se_all <- data$Se_adj, having first deleted the raw Estimate and se columns; the second header row of the published workbook marks them 'Delete' for the same reason. Estim_adj = Estimate*100*Multiplicator, and the Multiplicator takes only the values 0.01 and 1, i.e. the raw column MIXES percent and decimal scales across studies. Reconstructing it gives a median of 0.489, matching the paper's Estim_adj.",
+   "column_mapping_verified_by": "activism.R sets data$elasticity <- data$Estim_adj and data$se_all <- data$Se_adj, having first deleted the raw Estimate and se columns; the second header row of the published workbook marks them 'Delete' for the same reason. Estim_adj = Estimate*100*Multiplicator, and the Multiplicator takes only the values 0.01 and 1, i.e. the raw column MIXES percent and decimal scales across studies. Reconstructing it gives a median of 0.489, matching the paper's Estim_adj. n_obs=TotalObs: TotalObs is the observation count the paper's own replication code treats as N. Integral, 2 to 11,884, and null on exactly one source row — row 0, which also lacks ArticleNo and does not carry a usable (effect, se) pair, so it is outside the harmonised sample.",
    "in_harmonised_table": true,
    "reconciliation": {
     "n_estimates_reported_in_paper": 1973,
@@ -196,7 +189,7 @@
    "shares_source_file_with": null,
    "rights_status": "cc-by-4.0",
    "license_url": "https://creativecommons.org/licenses/by/4.0/",
-   "rights_note": "CC BY 4.0. Free to use, adapt and redistribute, including commercially and including as training data. The only condition is credit: cite the paper named in this entry.",
+   "rights_note": "CC BY 4.0. Free to use, adapt, and redistribute, including commercially and including as training data. The only condition is credit: cite the paper named in this entry.",
    "max_precision_weight_share": 0.2143,
    "audit_status": "domain_reviewed"
   },
@@ -252,7 +245,7 @@
    "shares_source_file_with": null,
    "rights_status": "cc-by-4.0",
    "license_url": "https://creativecommons.org/licenses/by/4.0/",
-   "rights_note": "CC BY 4.0. Free to use, adapt and redistribute, including commercially and including as training data. The only condition is credit: cite the paper named in this entry.",
+   "rights_note": "CC BY 4.0. Free to use, adapt, and redistribute, including commercially and including as training data. The only condition is credit: cite the paper named in this entry.",
    "max_precision_weight_share": 0.0777,
    "audit_status": "code_traced"
   },
@@ -308,7 +301,7 @@
    "shares_source_file_with": null,
    "rights_status": "cc-by-4.0",
    "license_url": "https://creativecommons.org/licenses/by/4.0/",
-   "rights_note": "CC BY 4.0. Free to use, adapt and redistribute, including commercially and including as training data. The only condition is credit: cite the paper named in this entry.",
+   "rights_note": "CC BY 4.0. Free to use, adapt, and redistribute, including commercially and including as training data. The only condition is credit: cite the paper named in this entry.",
    "max_precision_weight_share": 0.1474,
    "audit_status": "code_traced"
   },
@@ -364,7 +357,7 @@
    "shares_source_file_with": null,
    "rights_status": "cc-by-4.0",
    "license_url": "https://creativecommons.org/licenses/by/4.0/",
-   "rights_note": "CC BY 4.0. Free to use, adapt and redistribute, including commercially and including as training data. The only condition is credit: cite the paper named in this entry.",
+   "rights_note": "CC BY 4.0. Free to use, adapt, and redistribute, including commercially and including as training data. The only condition is credit: cite the paper named in this entry.",
    "max_precision_weight_share": 0.5126,
    "audit_status": "code_traced"
   },
@@ -418,7 +411,7 @@
    "shares_source_file_with": "spillovers",
    "rights_status": "cc-by-4.0",
    "license_url": "https://creativecommons.org/licenses/by/4.0/",
-   "rights_note": "CC BY 4.0. Free to use, adapt and redistribute, including commercially and including as training data. The only condition is credit: cite the paper named in this entry.",
+   "rights_note": "CC BY 4.0. Free to use, adapt, and redistribute, including commercially and including as training data. The only condition is credit: cite the paper named in this entry.",
    "max_precision_weight_share": 0.0716,
    "audit_status": "domain_reviewed",
    "note": "HORIZONTAL spillovers. Shares the FDI spillovers database with the 'spillovers' project, which takes the vertical subset. The two are complementary, not duplicates."
@@ -473,7 +466,7 @@
    "shares_source_file_with": null,
    "rights_status": "cc-by-4.0",
    "license_url": "https://creativecommons.org/licenses/by/4.0/",
-   "rights_note": "CC BY 4.0. Free to use, adapt and redistribute, including commercially and including as training data. The only condition is credit: cite the paper named in this entry.",
+   "rights_note": "CC BY 4.0. Free to use, adapt, and redistribute, including commercially and including as training data. The only condition is credit: cite the paper named in this entry.",
    "max_precision_weight_share": 0.0223,
    "audit_status": "code_traced"
   },
@@ -529,7 +522,7 @@
    "shares_source_file_with": null,
    "rights_status": "cc-by-4.0",
    "license_url": "https://creativecommons.org/licenses/by/4.0/",
-   "rights_note": "CC BY 4.0. Free to use, adapt and redistribute, including commercially and including as training data. The only condition is credit: cite the paper named in this entry.",
+   "rights_note": "CC BY 4.0. Free to use, adapt, and redistribute, including commercially and including as training data. The only condition is credit: cite the paper named in this entry.",
    "max_precision_weight_share": 0.0211,
    "audit_status": "code_traced"
   },
@@ -583,7 +576,7 @@
    "shares_source_file_with": null,
    "rights_status": "cc-by-4.0",
    "license_url": "https://creativecommons.org/licenses/by/4.0/",
-   "rights_note": "CC BY 4.0. Free to use, adapt and redistribute, including commercially and including as training data. The only condition is credit: cite the paper named in this entry.",
+   "rights_note": "CC BY 4.0. Free to use, adapt, and redistribute, including commercially and including as training data. The only condition is credit: cite the paper named in this entry.",
    "max_precision_weight_share": 0.6516,
    "audit_status": "domain_reviewed"
   },
@@ -637,7 +630,7 @@
    "shares_source_file_with": null,
    "rights_status": "cc-by-4.0",
    "license_url": "https://creativecommons.org/licenses/by/4.0/",
-   "rights_note": "CC BY 4.0. Free to use, adapt and redistribute, including commercially and including as training data. The only condition is credit: cite the paper named in this entry.",
+   "rights_note": "CC BY 4.0. Free to use, adapt, and redistribute, including commercially and including as training data. The only condition is credit: cite the paper named in this entry.",
    "max_precision_weight_share": 0.0162,
    "audit_status": "code_traced"
   },
@@ -692,7 +685,7 @@
    "shares_source_file_with": null,
    "rights_status": "cc-by-4.0",
    "license_url": "https://creativecommons.org/licenses/by/4.0/",
-   "rights_note": "CC BY 4.0. Free to use, adapt and redistribute, including commercially and including as training data. The only condition is credit: cite the paper named in this entry.",
+   "rights_note": "CC BY 4.0. Free to use, adapt, and redistribute, including commercially and including as training data. The only condition is credit: cite the paper named in this entry.",
    "max_precision_weight_share": 0.2264,
    "audit_status": "domain_reviewed"
   },
@@ -747,7 +740,7 @@
    "shares_source_file_with": null,
    "rights_status": "cc-by-4.0",
    "license_url": "https://creativecommons.org/licenses/by/4.0/",
-   "rights_note": "CC BY 4.0. Free to use, adapt and redistribute, including commercially and including as training data. The only condition is credit: cite the paper named in this entry.",
+   "rights_note": "CC BY 4.0. Free to use, adapt, and redistribute, including commercially and including as training data. The only condition is credit: cite the paper named in this entry.",
    "max_precision_weight_share": 0.5033,
    "audit_status": "domain_reviewed"
   },
@@ -802,7 +795,7 @@
    "shares_source_file_with": null,
    "rights_status": "cc-by-4.0",
    "license_url": "https://creativecommons.org/licenses/by/4.0/",
-   "rights_note": "CC BY 4.0. Free to use, adapt and redistribute, including commercially and including as training data. The only condition is credit: cite the paper named in this entry.",
+   "rights_note": "CC BY 4.0. Free to use, adapt, and redistribute, including commercially and including as training data. The only condition is credit: cite the paper named in this entry.",
    "max_precision_weight_share": 0.018,
    "audit_status": "code_traced"
   },
@@ -855,7 +848,7 @@
    "shares_source_file_with": null,
    "rights_status": "cc-by-4.0",
    "license_url": "https://creativecommons.org/licenses/by/4.0/",
-   "rights_note": "CC BY 4.0. Free to use, adapt and redistribute, including commercially and including as training data. The only condition is credit: cite the paper named in this entry.",
+   "rights_note": "CC BY 4.0. Free to use, adapt, and redistribute, including commercially and including as training data. The only condition is credit: cite the paper named in this entry.",
    "max_precision_weight_share": 0.2785,
    "audit_status": "domain_reviewed"
   },
@@ -912,7 +905,7 @@
    "shares_source_file_with": null,
    "rights_status": "cc-by-4.0",
    "license_url": "https://creativecommons.org/licenses/by/4.0/",
-   "rights_note": "CC BY 4.0. Free to use, adapt and redistribute, including commercially and including as training data. The only condition is credit: cite the paper named in this entry.",
+   "rights_note": "CC BY 4.0. Free to use, adapt, and redistribute, including commercially and including as training data. The only condition is credit: cite the paper named in this entry.",
    "max_precision_weight_share": 1.0,
    "audit_status": "domain_reviewed"
   },
@@ -967,7 +960,7 @@
    "shares_source_file_with": null,
    "rights_status": "cc-by-4.0",
    "license_url": "https://creativecommons.org/licenses/by/4.0/",
-   "rights_note": "CC BY 4.0. Free to use, adapt and redistribute, including commercially and including as training data. The only condition is credit: cite the paper named in this entry.",
+   "rights_note": "CC BY 4.0. Free to use, adapt, and redistribute, including commercially and including as training data. The only condition is credit: cite the paper named in this entry.",
    "max_precision_weight_share": 0.42,
    "audit_status": "code_traced"
   },
@@ -1020,7 +1013,7 @@
    "shares_source_file_with": null,
    "rights_status": "cc-by-4.0",
    "license_url": "https://creativecommons.org/licenses/by/4.0/",
-   "rights_note": "CC BY 4.0. Free to use, adapt and redistribute, including commercially and including as training data. The only condition is credit: cite the paper named in this entry.",
+   "rights_note": "CC BY 4.0. Free to use, adapt, and redistribute, including commercially and including as training data. The only condition is credit: cite the paper named in this entry.",
    "max_precision_weight_share": 0.3895,
    "audit_status": "code_traced"
   },
@@ -1074,7 +1067,7 @@
    "shares_source_file_with": null,
    "rights_status": "cc-by-4.0",
    "license_url": "https://creativecommons.org/licenses/by/4.0/",
-   "rights_note": "CC BY 4.0. Free to use, adapt and redistribute, including commercially and including as training data. The only condition is credit: cite the paper named in this entry.",
+   "rights_note": "CC BY 4.0. Free to use, adapt, and redistribute, including commercially and including as training data. The only condition is credit: cite the paper named in this entry.",
    "max_precision_weight_share": 0.1872,
    "audit_status": "domain_reviewed"
   },
@@ -1129,9 +1122,64 @@
    "shares_source_file_with": null,
    "rights_status": "cc-by-4.0",
    "license_url": "https://creativecommons.org/licenses/by/4.0/",
-   "rights_note": "CC BY 4.0. Free to use, adapt and redistribute, including commercially and including as training data. The only condition is credit: cite the paper named in this entry.",
+   "rights_note": "CC BY 4.0. Free to use, adapt, and redistribute, including commercially and including as training data. The only condition is credit: cite the paper named in this entry.",
    "max_precision_weight_share": null,
    "audit_status": "excluded_no_precision"
+  },
+  {
+   "id": "finance_growth",
+   "paper": {
+    "title": "Financial Development and Economic Growth: A Meta-Analysis",
+    "page_title": "Financial Development and Economic Growth: A Meta-Analysis",
+    "literature": "Financial Development and Economic Growth",
+    "authors": [
+     "Petra Valickova",
+     "Tomas Havranek",
+     "Roman Horvath"
+    ],
+    "year": 2015,
+    "journal": "Journal of Economic Surveys",
+    "doi": "https://doi.org/10.1111/joes.12068",
+    "url": "https://meta-analysis.cz/finance_growth/"
+   },
+   "description": "A meta-analysis of 1334 estimates from 67 studies finds financial development has a positive, heterogeneous effect on economic growth.",
+   "n_estimates": 1334,
+   "n_variables": 143,
+   "n_estimates_in_literature": 1334,
+   "source_file": "https://meta-analysis.cz/finance_growth/finance_growth.zip",
+   "source_member": "finance_growth.xlsm",
+   "source_sheet": "Stata",
+   "files": {
+    "parquet": "https://meta-analysis.cz/data/v1/finance_growth/finance_growth.parquet",
+    "csv": "https://meta-analysis.cz/data/v1/finance_growth/finance_growth.csv",
+    "codebook": "https://meta-analysis.cz/api/v1/codebooks/finance_growth.json"
+   },
+   "core_columns": {
+    "effect": "pcc",
+    "standard_error": "sepcc",
+    "standard_error_note": null,
+    "evidence": "paper's replication code"
+   },
+   "effect_units": "partial correlation coefficient",
+   "direction_note": "Positive means financial development is associated with higher growth.",
+   "column_mapping_verified_by": "Arithmetic alone was NOT decisive here: pcc/sepcc and the working column 'Unnamed: 83'/eightys_se both reproduce the file's own tstat on 100% of 1,334 rows. The mapping is settled on interpretability instead. pcc runs -0.716 to 0.9615 with no nulls, which is a partial correlation coefficient; 'Unnamed: 83' runs -277.97 to 3374.57 with 3 nulls, and its ratio to pcc is not constant (sd 431), so it is a different quantity rather than a rescaling. Left to the resolver the pooled table would have carried 1,247 uninterpretable rows. n_obs=samsize: integral, no nulls, 14 to 2,982; 'n' is the study's estimate count (1 to 168), not a sample size.",
+   "in_harmonised_table": true,
+   "reconciliation": {
+    "n_estimates_reported_in_paper": 1334,
+    "n_rows_in_harmonised_table": 1334,
+    "note": "matches the paper exactly"
+   },
+   "excluded_from_harmonised_because": null,
+   "duplicate_of": null,
+   "overlaps_with": null,
+   "same_literature_as": null,
+   "excluded_to_avoid_double_counting": false,
+   "shares_source_file_with": null,
+   "rights_status": "cc-by-4.0",
+   "license_url": "https://creativecommons.org/licenses/by/4.0/",
+   "rights_note": "CC BY 4.0. Free to use, adapt, and redistribute, including commercially and including as training data. The only condition is credit: cite the paper named in this entry.",
+   "max_precision_weight_share": 0.0092,
+   "audit_status": "code_traced"
   },
   {
    "id": "forward",
@@ -1185,7 +1233,7 @@
    "shares_source_file_with": null,
    "rights_status": "cc-by-4.0",
    "license_url": "https://creativecommons.org/licenses/by/4.0/",
-   "rights_note": "CC BY 4.0. Free to use, adapt and redistribute, including commercially and including as training data. The only condition is credit: cite the paper named in this entry.",
+   "rights_note": "CC BY 4.0. Free to use, adapt, and redistribute, including commercially and including as training data. The only condition is credit: cite the paper named in this entry.",
    "max_precision_weight_share": 0.1404,
    "audit_status": "domain_reviewed"
   },
@@ -1241,7 +1289,7 @@
    "shares_source_file_with": null,
    "rights_status": "cc-by-4.0",
    "license_url": "https://creativecommons.org/licenses/by/4.0/",
-   "rights_note": "CC BY 4.0. Free to use, adapt and redistribute, including commercially and including as training data. The only condition is credit: cite the paper named in this entry.",
+   "rights_note": "CC BY 4.0. Free to use, adapt, and redistribute, including commercially and including as training data. The only condition is credit: cite the paper named in this entry.",
    "max_precision_weight_share": 0.4466,
    "audit_status": "domain_reviewed"
   },
@@ -1295,7 +1343,7 @@
    "shares_source_file_with": null,
    "rights_status": "cc-by-4.0",
    "license_url": "https://creativecommons.org/licenses/by/4.0/",
-   "rights_note": "CC BY 4.0. Free to use, adapt and redistribute, including commercially and including as training data. The only condition is credit: cite the paper named in this entry.",
+   "rights_note": "CC BY 4.0. Free to use, adapt, and redistribute, including commercially and including as training data. The only condition is credit: cite the paper named in this entry.",
    "max_precision_weight_share": 0.0692,
    "audit_status": "domain_reviewed"
   },
@@ -1350,7 +1398,7 @@
    "shares_source_file_with": null,
    "rights_status": "cc-by-4.0",
    "license_url": "https://creativecommons.org/licenses/by/4.0/",
-   "rights_note": "CC BY 4.0. Free to use, adapt and redistribute, including commercially and including as training data. The only condition is credit: cite the paper named in this entry.",
+   "rights_note": "CC BY 4.0. Free to use, adapt, and redistribute, including commercially and including as training data. The only condition is credit: cite the paper named in this entry.",
    "max_precision_weight_share": 0.0602,
    "audit_status": "domain_reviewed"
   },
@@ -1405,7 +1453,7 @@
    "shares_source_file_with": null,
    "rights_status": "cc-by-4.0",
    "license_url": "https://creativecommons.org/licenses/by/4.0/",
-   "rights_note": "CC BY 4.0. Free to use, adapt and redistribute, including commercially and including as training data. The only condition is credit: cite the paper named in this entry.",
+   "rights_note": "CC BY 4.0. Free to use, adapt, and redistribute, including commercially and including as training data. The only condition is credit: cite the paper named in this entry.",
    "max_precision_weight_share": 0.9986,
    "audit_status": "domain_reviewed"
   },
@@ -1462,7 +1510,7 @@
    "shares_source_file_with": null,
    "rights_status": "cc-by-4.0",
    "license_url": "https://creativecommons.org/licenses/by/4.0/",
-   "rights_note": "CC BY 4.0. Free to use, adapt and redistribute, including commercially and including as training data. The only condition is credit: cite the paper named in this entry.",
+   "rights_note": "CC BY 4.0. Free to use, adapt, and redistribute, including commercially and including as training data. The only condition is credit: cite the paper named in this entry.",
    "max_precision_weight_share": null,
    "audit_status": "duplicate_excluded",
    "note": "Two papers on one dataset. 'alphas' is kept because it fills 10 harmonised moderators against hedge's 7, and hedge's set is a strict subset, so nothing is lost. CITE the published version for these estimates: Is research on hedge fund performance published selectively? A quantitative survey, Journal of Economic Surveys 2024 (DOI on the hedge dataset entry). The hedge file remains published in full as its own dataset."
@@ -1518,7 +1566,7 @@
    "shares_source_file_with": null,
    "rights_status": "cc-by-4.0",
    "license_url": "https://creativecommons.org/licenses/by/4.0/",
-   "rights_note": "CC BY 4.0. Free to use, adapt and redistribute, including commercially and including as training data. The only condition is credit: cite the paper named in this entry.",
+   "rights_note": "CC BY 4.0. Free to use, adapt, and redistribute, including commercially and including as training data. The only condition is credit: cite the paper named in this entry.",
    "max_precision_weight_share": 0.2663,
    "audit_status": "domain_reviewed"
   },
@@ -1576,7 +1624,7 @@
    "shares_source_file_with": null,
    "rights_status": "cc-by-4.0",
    "license_url": "https://creativecommons.org/licenses/by/4.0/",
-   "rights_note": "CC BY 4.0. Free to use, adapt and redistribute, including commercially and including as training data. The only condition is credit: cite the paper named in this entry.",
+   "rights_note": "CC BY 4.0. Free to use, adapt, and redistribute, including commercially and including as training data. The only condition is credit: cite the paper named in this entry.",
    "max_precision_weight_share": 0.0156,
    "audit_status": "domain_reviewed"
   },
@@ -1633,7 +1681,7 @@
    "shares_source_file_with": null,
    "rights_status": "cc-by-4.0",
    "license_url": "https://creativecommons.org/licenses/by/4.0/",
-   "rights_note": "CC BY 4.0. Free to use, adapt and redistribute, including commercially and including as training data. The only condition is credit: cite the paper named in this entry.",
+   "rights_note": "CC BY 4.0. Free to use, adapt, and redistribute, including commercially and including as training data. The only condition is credit: cite the paper named in this entry.",
    "max_precision_weight_share": 0.0163,
    "audit_status": "code_traced"
   },
@@ -1687,7 +1735,7 @@
    "shares_source_file_with": "price_puzzle",
    "rights_status": "cc-by-4.0",
    "license_url": "https://creativecommons.org/licenses/by/4.0/",
-   "rights_note": "CC BY 4.0. Free to use, adapt and redistribute, including commercially and including as training data. The only condition is credit: cite the paper named in this entry.",
+   "rights_note": "CC BY 4.0. Free to use, adapt, and redistribute, including commercially and including as training data. The only condition is credit: cite the paper named in this entry.",
    "max_precision_weight_share": null,
    "audit_status": "excluded_no_precision",
    "note": "Shares a source FILE with 'price_puzzle' but uses different columns or rows. A distinct literature, NOT a duplicate, and pooled on its own."
@@ -1732,7 +1780,7 @@
    },
    "effect_units": "standardised mean difference",
    "direction_note": "Negative values are learning LOSS.",
-   "column_mapping_verified_by": "00_setup.R reads the workbook with no sheet argument, so readxl takes the FIRST sheet, which is 'data'. Our picker chose 'Betthauser', a sheet named after a study. The two are byte-identical on the shared columns today, so no number changes, but that identity is coincidental and the reference is pinned to 'data'. ('data_old' is a stale earlier version and must not be used.)",
+   "column_mapping_verified_by": "00_setup.R reads the workbook with no sheet argument, so readxl takes the FIRST sheet, which is 'data'. Our picker chose 'Betthauser', a sheet named after a study. The two are byte-identical on the shared columns today, so no number changes, but that identity is coincidental and the reference is pinned to 'data'. ('data_old' is a stale earlier version and must not be used.) n_obs=n_study: n_study is the study's sample size: 291 rows, no nulls, integral, 275 to 10,884,922 — the wide range is the learning-by-doing literature's panel sizes. It is the only sample-size column in the file, so there is nothing to choose between.",
    "in_harmonised_table": true,
    "reconciliation": {
     "n_estimates_reported_in_paper": null,
@@ -1747,7 +1795,7 @@
    "shares_source_file_with": null,
    "rights_status": "cc-by-4.0",
    "license_url": "https://creativecommons.org/licenses/by/4.0/",
-   "rights_note": "CC BY 4.0. Free to use, adapt and redistribute, including commercially and including as training data. The only condition is credit: cite the paper named in this entry.",
+   "rights_note": "CC BY 4.0. Free to use, adapt, and redistribute, including commercially and including as training data. The only condition is credit: cite the paper named in this entry.",
    "max_precision_weight_share": 0.3244,
    "audit_status": "domain_reviewed"
   },
@@ -1803,7 +1851,7 @@
    "shares_source_file_with": null,
    "rights_status": "cc-by-4.0",
    "license_url": "https://creativecommons.org/licenses/by/4.0/",
-   "rights_note": "CC BY 4.0. Free to use, adapt and redistribute, including commercially and including as training data. The only condition is credit: cite the paper named in this entry.",
+   "rights_note": "CC BY 4.0. Free to use, adapt, and redistribute, including commercially and including as training data. The only condition is credit: cite the paper named in this entry.",
    "max_precision_weight_share": 0.0648,
    "audit_status": "code_traced"
   },
@@ -1858,7 +1906,7 @@
    "shares_source_file_with": "lags",
    "rights_status": "cc-by-4.0",
    "license_url": "https://creativecommons.org/licenses/by/4.0/",
-   "rights_note": "CC BY 4.0. Free to use, adapt and redistribute, including commercially and including as training data. The only condition is credit: cite the paper named in this entry.",
+   "rights_note": "CC BY 4.0. Free to use, adapt, and redistribute, including commercially and including as training data. The only condition is credit: cite the paper named in this entry.",
    "max_precision_weight_share": 0.0609,
    "audit_status": "domain_reviewed",
    "note": "puzzle.xls is a HYBRID layout: already long on `horizon` (7 rows per impulse response) while the response columns are WIDE and constant across those 7. Melting the wide columns once per row emitted every estimate 7 times -- what 0.9.0-beta shipped: 7,420 rows of which ~6,345 were exact duplicates, identical in every column INCLUDING horizon, so they were never additional horizons. The file provides SEVEN horizons, not five: the month horizons 3/6/12/18/36 plus the trough (MBR/SEB, horizon code 99) and the peak (MPR/SEP, horizon code 88). puzzle.do line 29 excludes `horizon~=88 & horizon~=99` from its 'all horizons' figure and its headline regressions use the five month horizons, so the paper analyses five -- but this catalogue publishes what the file contains, and the trough and peak responses were being silently discarded. All seven are now emitted from the deduplicated records: 1,415 rows (211/218/218/220/208 for the month horizons, 202 trough, 138 peak). Owner's decision 2026-08-04: list every horizon. Anyone wanting the paper's own sample should filter to the five numeric horizons. HORIZON CODES: months 3/6/12/18/36 are literal; 99 marks the trough and 88 the peak, the source file's own codes. The trough/peak assignment is inferred from lags.do, which keeps horizon==99 and models mon_bot, the months to the price trough. If that is backwards the two labels swap and no value changes. Filter to horizon<=36 for the paper's own sample."
@@ -1913,7 +1961,7 @@
    "shares_source_file_with": null,
    "rights_status": "cc-by-4.0",
    "license_url": "https://creativecommons.org/licenses/by/4.0/",
-   "rights_note": "CC BY 4.0. Free to use, adapt and redistribute, including commercially and including as training data. The only condition is credit: cite the paper named in this entry.",
+   "rights_note": "CC BY 4.0. Free to use, adapt, and redistribute, including commercially and including as training data. The only condition is credit: cite the paper named in this entry.",
    "max_precision_weight_share": 0.0103,
    "audit_status": "domain_reviewed"
   },
@@ -1953,7 +2001,7 @@
    },
    "effect_units": "partial correlation coefficient",
    "direction_note": null,
-   "column_mapping_verified_by": "COEF_L/SE_L reproduces TSTAT_L exactly on all 490 usable rows (checked numerically), so the stored pairing is internally correct. remittances.do line 2 shows what the PAPER analyses, and it is not that pair: `gen PCC_L=TSTAT_L/sqrt(TSTAT_L^2+DF)`, with SE_PCC_L=sqrt((1-PCC_L^2)/DF); the headline `mean PCC_L` and `metan PCC_L SE_PCC_L` and the whole BMA section run on PCC_L. The short-run set is an appendix robustness check on 48 observations, not pooled.",
+   "column_mapping_verified_by": "COEF_L/SE_L reproduces TSTAT_L exactly on all 490 usable rows (checked numerically), so the stored pairing is internally correct. remittances.do line 2 shows what the PAPER analyses, and it is not that pair: `gen PCC_L=TSTAT_L/sqrt(TSTAT_L^2+DF)`, with SE_PCC_L=sqrt((1-PCC_L^2)/DF); the headline `mean PCC_L` and `metan PCC_L SE_PCC_L` and the whole BMA section run on PCC_L. The short-run set is an appendix robustness check on 48 observations, not pooled. n_obs=Sample: Sample, NOT Obs. Both exist; Obs was rejected earlier and that rejection was right but incomplete, because it left n_obs empty rather than moving to the correct column. Sample is integral, has no nulls across 538 source rows, and runs 6 to 2,946, which is the plausible range for the micro studies this literature pools.",
    "in_harmonised_table": true,
    "reconciliation": {
     "n_estimates_reported_in_paper": 538,
@@ -1968,7 +2016,7 @@
    "shares_source_file_with": null,
    "rights_status": "cc-by-4.0",
    "license_url": "https://creativecommons.org/licenses/by/4.0/",
-   "rights_note": "CC BY 4.0. Free to use, adapt and redistribute, including commercially and including as training data. The only condition is credit: cite the paper named in this entry.",
+   "rights_note": "CC BY 4.0. Free to use, adapt, and redistribute, including commercially and including as training data. The only condition is credit: cite the paper named in this entry.",
    "max_precision_weight_share": 0.0181,
    "audit_status": "code_traced"
   },
@@ -2023,7 +2071,7 @@
    "shares_source_file_with": null,
    "rights_status": "cc-by-4.0",
    "license_url": "https://creativecommons.org/licenses/by/4.0/",
-   "rights_note": "CC BY 4.0. Free to use, adapt and redistribute, including commercially and including as training data. The only condition is credit: cite the paper named in this entry.",
+   "rights_note": "CC BY 4.0. Free to use, adapt, and redistribute, including commercially and including as training data. The only condition is credit: cite the paper named in this entry.",
    "max_precision_weight_share": 0.035,
    "audit_status": "code_traced"
   },
@@ -2078,7 +2126,7 @@
    "shares_source_file_with": null,
    "rights_status": "cc-by-4.0",
    "license_url": "https://creativecommons.org/licenses/by/4.0/",
-   "rights_note": "CC BY 4.0. Free to use, adapt and redistribute, including commercially and including as training data. The only condition is credit: cite the paper named in this entry.",
+   "rights_note": "CC BY 4.0. Free to use, adapt, and redistribute, including commercially and including as training data. The only condition is credit: cite the paper named in this entry.",
    "max_precision_weight_share": 0.3088,
    "audit_status": "code_traced"
   },
@@ -2134,7 +2182,7 @@
    "shares_source_file_with": null,
    "rights_status": "cc-by-4.0",
    "license_url": "https://creativecommons.org/licenses/by/4.0/",
-   "rights_note": "CC BY 4.0. Free to use, adapt and redistribute, including commercially and including as training data. The only condition is credit: cite the paper named in this entry.",
+   "rights_note": "CC BY 4.0. Free to use, adapt, and redistribute, including commercially and including as training data. The only condition is credit: cite the paper named in this entry.",
    "max_precision_weight_share": 0.1789,
    "audit_status": "domain_reviewed"
   },
@@ -2190,7 +2238,7 @@
    "shares_source_file_with": null,
    "rights_status": "cc-by-4.0",
    "license_url": "https://creativecommons.org/licenses/by/4.0/",
-   "rights_note": "CC BY 4.0. Free to use, adapt and redistribute, including commercially and including as training data. The only condition is credit: cite the paper named in this entry.",
+   "rights_note": "CC BY 4.0. Free to use, adapt, and redistribute, including commercially and including as training data. The only condition is credit: cite the paper named in this entry.",
    "max_precision_weight_share": 0.0502,
    "audit_status": "code_traced"
   },
@@ -2245,7 +2293,7 @@
    "shares_source_file_with": null,
    "rights_status": "cc-by-4.0",
    "license_url": "https://creativecommons.org/licenses/by/4.0/",
-   "rights_note": "CC BY 4.0. Free to use, adapt and redistribute, including commercially and including as training data. The only condition is credit: cite the paper named in this entry.",
+   "rights_note": "CC BY 4.0. Free to use, adapt, and redistribute, including commercially and including as training data. The only condition is credit: cite the paper named in this entry.",
    "max_precision_weight_share": 0.477,
    "audit_status": "code_traced"
   },
@@ -2301,7 +2349,7 @@
    "shares_source_file_with": null,
    "rights_status": "cc-by-4.0",
    "license_url": "https://creativecommons.org/licenses/by/4.0/",
-   "rights_note": "CC BY 4.0. Free to use, adapt and redistribute, including commercially and including as training data. The only condition is credit: cite the paper named in this entry.",
+   "rights_note": "CC BY 4.0. Free to use, adapt, and redistribute, including commercially and including as training data. The only condition is credit: cite the paper named in this entry.",
    "max_precision_weight_share": 0.0555,
    "audit_status": "code_traced"
   },
@@ -2355,7 +2403,7 @@
    "shares_source_file_with": "bma",
    "rights_status": "cc-by-4.0",
    "license_url": "https://creativecommons.org/licenses/by/4.0/",
-   "rights_note": "CC BY 4.0. Free to use, adapt and redistribute, including commercially and including as training data. The only condition is credit: cite the paper named in this entry.",
+   "rights_note": "CC BY 4.0. Free to use, adapt, and redistribute, including commercially and including as training data. The only condition is credit: cite the paper named in this entry.",
    "max_precision_weight_share": 0.9973,
    "audit_status": "domain_reviewed",
    "note": "VERTICAL spillovers (forward and backward). CAUTION: the filtered count is 2,421 while the paper's abstract reports 3,626 estimates, so the published file appears to be a subset of the sample behind the paper. Reconcile before relying on the count."
@@ -2411,7 +2459,7 @@
    "shares_source_file_with": null,
    "rights_status": "cc-by-4.0",
    "license_url": "https://creativecommons.org/licenses/by/4.0/",
-   "rights_note": "CC BY 4.0. Free to use, adapt and redistribute, including commercially and including as training data. The only condition is credit: cite the paper named in this entry.",
+   "rights_note": "CC BY 4.0. Free to use, adapt, and redistribute, including commercially and including as training data. The only condition is credit: cite the paper named in this entry.",
    "max_precision_weight_share": 0.038,
    "audit_status": "code_traced"
   },
@@ -2468,7 +2516,7 @@
    "shares_source_file_with": null,
    "rights_status": "cc-by-4.0",
    "license_url": "https://creativecommons.org/licenses/by/4.0/",
-   "rights_note": "CC BY 4.0. Free to use, adapt and redistribute, including commercially and including as training data. The only condition is credit: cite the paper named in this entry.",
+   "rights_note": "CC BY 4.0. Free to use, adapt, and redistribute, including commercially and including as training data. The only condition is credit: cite the paper named in this entry.",
    "max_precision_weight_share": null,
    "audit_status": "duplicate_excluded",
    "note": "Different PAPER (why intertemporal substitution varies across countries) but the same underlying estimates as 'eis', so including both would double count. The substitution file carries 65 columns against eis's 52, including country-level moderators, and remains published in full as its own dataset. Both projects fill the same 18 harmonised moderators, so the choice of which to keep costs nothing; eis is kept as the already-canonical entry."
@@ -2526,7 +2574,7 @@
    "shares_source_file_with": null,
    "rights_status": "cc-by-4.0",
    "license_url": "https://creativecommons.org/licenses/by/4.0/",
-   "rights_note": "CC BY 4.0. Free to use, adapt and redistribute, including commercially and including as training data. The only condition is credit: cite the paper named in this entry.",
+   "rights_note": "CC BY 4.0. Free to use, adapt, and redistribute, including commercially and including as training data. The only condition is credit: cite the paper named in this entry.",
    "max_precision_weight_share": 0.0394,
    "audit_status": "code_traced"
   },
@@ -2581,7 +2629,7 @@
    "shares_source_file_with": null,
    "rights_status": "cc-by-4.0",
    "license_url": "https://creativecommons.org/licenses/by/4.0/",
-   "rights_note": "CC BY 4.0. Free to use, adapt and redistribute, including commercially and including as training data. The only condition is credit: cite the paper named in this entry.",
+   "rights_note": "CC BY 4.0. Free to use, adapt, and redistribute, including commercially and including as training data. The only condition is credit: cite the paper named in this entry.",
    "max_precision_weight_share": 0.1123,
    "audit_status": "code_traced"
   }

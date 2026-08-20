@@ -31,6 +31,18 @@ NOTES = []   # informational only -- never fail the build
 import sys as _sys, os as _os
 _sys.path.insert(0, _os.path.dirname(_os.path.abspath(__file__)))
 from _seo_shared import SELF_MANAGED   # one definition, shared with verify_seo.py
+
+# The catalogue, keyed by project id. Used for variableMeasured on each paper's Dataset node:
+# core_columns names the columns whose meaning has actually been verified, which is the honest
+# thing to advertise. Absent catalogue => no variableMeasured, never a wrong one.
+def _load_datasets():
+    try:
+        import json as _j
+        _p = os.path.join(SITE, "api", "v1", "datasets.json")
+        return {d["id"]: d for d in _j.load(open(_p, encoding="utf-8"))["datasets"]}
+    except Exception:
+        return {}
+_DATASETS = _load_datasets()
 # (was declared here AND in verify_seo.py with different contents; see _seo_shared.py)
 
 # /datasets/ is the human landing page for the data layer. It is NOT a paper, so it
@@ -335,6 +347,15 @@ def build_jsonld(m):
             ds["sameAs"] = [l["href"] for l in ext_landing]
         if authors:
             ds["creator"] = authors
+        # Google Dataset Search recommends variableMeasured, and it is the only field that
+        # says what the file actually contains. Taken from the catalogue's verified
+        # core_columns, so it names the columns whose meaning has been checked rather than
+        # every column the file happens to have.
+        _cc = (_DATASETS.get(proj) or {}).get("core_columns") or {}
+        if _cc:
+            ds["variableMeasured"] = [
+                {"@type": "PropertyValue", "name": v, "description": k.replace("_", " ")}
+                for k, v in _cc.items() if v]
         if m["reference_line"]:
             ds["citation"] = m["reference_line"]
         if m.get("dataset_doi"):

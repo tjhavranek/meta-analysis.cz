@@ -176,18 +176,19 @@
  },
  "remittances": {
   "note": "The file holds BOTH a long-run (COEF_L/SE_L) and a short-run (COEF_S/SE_S) coefficient per row. Only the LONG-RUN pair enters the harmonised table, because the two are different estimands and pooling them would mix horizons. The short-run pair (48 usable rows) remains in the published per-dataset file for anyone who wants it. APPLIED 1.0.0: the effect is now the partial correlation the paper analyses, PCC = TSTAT_L/sqrt(TSTAT_L^2+DF) with se = sqrt((1-PCC^2)/DF), replacing the raw COEF_L/SE_L which ran over five different dependent variables and were not comparable. n_obs is set to NULL: the column matched by name was a row ordinal -- all 490 values unique, strictly increasing over 1..538, and degrees of freedom exceed it on 38.4% of rows, which is impossible for a sample size. A null is honest; leaving it would silently corrupt MAIVE, which instruments precision with sample size. Both found by the Codex audit, 2026-08-04.",
-  "verified_by": "COEF_L/SE_L reproduces TSTAT_L exactly on all 490 usable rows (checked numerically), so the stored pairing is internally correct. remittances.do line 2 shows what the PAPER analyses, and it is not that pair: `gen PCC_L=TSTAT_L/sqrt(TSTAT_L^2+DF)`, with SE_PCC_L=sqrt((1-PCC_L^2)/DF); the headline `mean PCC_L` and `metan PCC_L SE_PCC_L` and the whole BMA section run on PCC_L. The short-run set is an appendix robustness check on 48 observations, not pooled.",
+  "verified_by": "COEF_L/SE_L reproduces TSTAT_L exactly on all 490 usable rows (checked numerically), so the stored pairing is internally correct. remittances.do line 2 shows what the PAPER analyses, and it is not that pair: `gen PCC_L=TSTAT_L/sqrt(TSTAT_L^2+DF)`, with SE_PCC_L=sqrt((1-PCC_L^2)/DF); the headline `mean PCC_L` and `metan PCC_L SE_PCC_L` and the whole BMA section run on PCC_L. The short-run set is an appendix robustness check on 48 observations, not pooled. n_obs=Sample: Sample, NOT Obs. Both exist; Obs was rejected earlier and that rejection was right but incomplete, because it left n_obs empty rather than moving to the correct column. Sample is integral, has no nulls across 538 source rows, and runs 6 to 2,946, which is the plausible range for the micro studies this literature pools.",
   "compute": {
    "type": "pcc_from_t",
    "t_col": "TSTAT_L",
    "df_col": "DF"
   },
   "units": "partial correlation coefficient",
-  "n_obs": null
+  "n_obs": "Sample"
  },
  "learning": {
   "sheet": "data",
-  "verified_by": "00_setup.R reads the workbook with no sheet argument, so readxl takes the FIRST sheet, which is 'data'. Our picker chose 'Betthauser', a sheet named after a study. The two are byte-identical on the shared columns today, so no number changes, but that identity is coincidental and the reference is pinned to 'data'. ('data_old' is a stale earlier version and must not be used.)"
+  "verified_by": "00_setup.R reads the workbook with no sheet argument, so readxl takes the FIRST sheet, which is 'data'. Our picker chose 'Betthauser', a sheet named after a study. The two are byte-identical on the shared columns today, so no number changes, but that identity is coincidental and the reference is pinned to 'data'. ('data_old' is a stale earlier version and must not be used.) n_obs=n_study: n_study is the study's sample size: 291 rows, no nulls, integral, 275 to 10,884,922 — the wide range is the learning-by-doing literature's panel sizes. It is the only sample-size column in the file, so there is nothing to choose between.",
+  "n_obs": "n_study"
  },
  "electricity": {
   "effect": "effect_M",
@@ -260,8 +261,9 @@
    "t_col": "t-stats"
   },
   "units": "percent",
-  "verified_by": "activism.R sets data$elasticity <- data$Estim_adj and data$se_all <- data$Se_adj, having first deleted the raw Estimate and se columns; the second header row of the published workbook marks them 'Delete' for the same reason. Estim_adj = Estimate*100*Multiplicator, and the Multiplicator takes only the values 0.01 and 1, i.e. the raw column MIXES percent and decimal scales across studies. Reconstructing it gives a median of 0.489, matching the paper's Estim_adj.",
-  "note": "The analysis workbook (data_v14.xlsx) that holds Estim_adj and Se_adj directly was never published, so the comparable estimate is reconstructed from the two columns that were. The paper recovers standard errors from p-values where Se_adj is missing; that step needs the unpublished file, so here the standard error is derived from the reported t-statistic instead and rows without one are dropped. Pooling the RAW Estimate column would silently mix two scales."
+  "verified_by": "activism.R sets data$elasticity <- data$Estim_adj and data$se_all <- data$Se_adj, having first deleted the raw Estimate and se columns; the second header row of the published workbook marks them 'Delete' for the same reason. Estim_adj = Estimate*100*Multiplicator, and the Multiplicator takes only the values 0.01 and 1, i.e. the raw column MIXES percent and decimal scales across studies. Reconstructing it gives a median of 0.489, matching the paper's Estim_adj. n_obs=TotalObs: TotalObs is the observation count the paper's own replication code treats as N. Integral, 2 to 11,884, and null on exactly one source row — row 0, which also lacks ArticleNo and does not carry a usable (effect, se) pair, so it is outside the harmonised sample.",
+  "note": "The analysis workbook (data_v14.xlsx) that holds Estim_adj and Se_adj directly was never published, so the comparable estimate is reconstructed from the two columns that were. The paper recovers standard errors from p-values where Se_adj is missing; that step needs the unpublished file, so here the standard error is derived from the reported t-statistic instead and rows without one are dropped. Pooling the RAW Estimate column would silently mix two scales.",
+  "n_obs": "TotalObs"
  },
  "gasoline": {
   "units": "elasticity",
@@ -357,5 +359,11 @@
  },
  "gasoline_price": {
   "verified_by": "No replication code ships with this dataset, so it was verified against the PAPER'S OWN PUBLISHED RESULTS instead, which validates the whole chain end to end rather than just the column names. The abstract of gas_price.pdf states that after correction the average long-run elasticity reaches -0.31 and the short-run -0.09, and that the published averages are 'exaggerated twofold'. Computing from the shipped e/se and the longr flag: long-run n=92, mean -0.691; short-run n=110, mean -0.227; 92+110=202, the full file. Those means are 2.2x and 2.5x the paper's corrected values, reproducing the twofold exaggeration it reports. FAT is -3.57 and -2.89, confirming the strong publication selection the paper is about, and long-run exceeds short-run in magnitude as it states. Simple PET gives -0.189 and -0.065 against the paper's -0.31 and -0.09; the gap is the estimator, since the paper uses mixed-effects multilevel meta-regression rather than PET. Two internal checks corroborate: e/se reproduces the file's own `t` on 100.0% of all 202 rows, and `prec` equals 1/se on 100.0%. An exhaustive search over every column pair found no rival; the only other combinations reproducing t are t divided by a 0/1 dummy, which returns t. Reviewed 2026-08-04 at the owner's request to close the last unverified literature."
+ },
+ "finance_growth": {
+  "effect": "pcc",
+  "se": "sepcc",
+  "n_obs": "samsize",
+  "verified_by": "Arithmetic alone was NOT decisive here: pcc/sepcc and the working column 'Unnamed: 83'/eightys_se both reproduce the file's own tstat on 100% of 1,334 rows. The mapping is settled on interpretability instead. pcc runs -0.716 to 0.9615 with no nulls, which is a partial correlation coefficient; 'Unnamed: 83' runs -277.97 to 3374.57 with 3 nulls, and its ratio to pcc is not constant (sd 431), so it is a different quantity rather than a rescaling. Left to the resolver the pooled table would have carried 1,247 uninterpretable rows. n_obs=samsize: integral, no nulls, 14 to 2,982; 'n' is the study's estimate count (1 to 168), not a sample size."
  }
 }

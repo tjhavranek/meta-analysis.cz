@@ -1,6 +1,6 @@
 {
- "n_rows": 48355,
- "n_datasets": 40,
+ "n_rows": 49689,
+ "n_datasets": 41,
  "columns": [
   "dataset",
   "study_id",
@@ -56,7 +56,7 @@
    "units": "percent",
    "direction_note": "Reconstructed on a comparable scale; the raw Estimate column mixes percent and decimal across studies.",
    "n_studies": 38,
-   "moderators": 13
+   "moderators": 14
   },
   "alphas": {
    "included": true,
@@ -270,6 +270,19 @@
    "included": false,
    "reason": "no per-estimate precision exists: the file has no standard error, t-statistic, weight or inverse-SE column, so SE-based synthesis is impossible"
   },
+  "finance_growth": {
+   "included": true,
+   "n": 1334,
+   "effect": "pcc",
+   "se": "sepcc",
+   "se_is_derived": false,
+   "n_obs_col": null,
+   "n_obs_from_log": false,
+   "units": "partial correlation coefficient",
+   "direction_note": "Positive means financial development is associated with higher growth.",
+   "n_studies": 67,
+   "moderators": 13
+  },
   "forward": {
    "included": true,
    "n": 3643,
@@ -395,7 +408,7 @@
    "units": "standardised mean difference",
    "direction_note": "Negative values are learning LOSS.",
    "n_studies": 42,
-   "moderators": 4
+   "moderators": 5
   },
   "migrant": {
    "included": true,
@@ -447,7 +460,7 @@
    "units": "partial correlation coefficient",
    "direction_note": null,
    "n_studies": 91,
-   "moderators": 13
+   "moderators": 14
   },
   "resource_curse": {
    "included": true,

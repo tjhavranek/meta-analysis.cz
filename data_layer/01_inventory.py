@@ -22,7 +22,9 @@ def sniff(path=None, blob=None, name=""):
             df = pd.read_stata(src, convert_categoricals=False)
         elif ext == ".csv":
             df = pd.read_csv(src, low_memory=False)
-        elif ext in (".xlsx", ".xls"):
+        elif ext in (".xlsx", ".xlsm", ".xls"):   # .xlsm reads exactly like .xlsx;
+            # listing it in TAB without adding it here enumerated the file and then
+            # dropped it in sniff(), which is how the first half of this fix missed.
             xl = pd.ExcelFile(src)
             best = None
             for sh in xl.sheet_names:                    # pick the widest sheet

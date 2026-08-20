@@ -175,5 +175,9 @@
   "units": "elasticity",
   "direction_note": null,
   "_note": "Units come from overrides.json for this literature; entry added so units.json covers all 39 pooled literatures rather than 38. Absence here previously read as 'no sign trap' when it actually meant 'not present'. Gap found by the Fable audit, 2026-08-04."
+ },
+ "finance_growth": {
+  "units": "partial correlation coefficient",
+  "direction_note": "Positive means financial development is associated with higher growth."
  }
 }

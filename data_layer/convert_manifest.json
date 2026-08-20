@@ -185,6 +185,16 @@
   "sheet": null
  },
  {
+  "project": "finance_growth",
+  "status": "ok",
+  "rows": 1334,
+  "cols": 143,
+  "parquet_bytes": 590791,
+  "csv_bytes": 1223241,
+  "source": "finance_growth.xlsm",
+  "sheet": "Stata"
+ },
+ {
   "project": "forward",
   "status": "ok",
   "rows": 3643,
