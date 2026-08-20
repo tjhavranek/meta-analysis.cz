@@ -232,18 +232,18 @@ line of reasoning settled it.
 ## Two products, not one
 
 **The archive is a faithful mirror. The harmonised table is an interpretation.**
-They are separate things and should be trusted differently. As of 1.0.0 the table
-is no longer a beta -- every literature's mapping is verified -- but it still
-involves judgement the archive does not.
+They are separate things and should be trusted differently. The table is no longer
+a beta -- 40 of the 41 literatures' mappings are verified, the exception being
+`finance_growth` -- but it still involves judgement the archive does not.
 
 *Archive* — the original files, faithful CSV and Parquet mirrors, codebooks, and
 paper/DOI metadata. Faithful conversions of what was published.
 
 *Harmonised table* — 49,689 selected estimates, automatically mapped and in some
-cases transformed. Every literature's column mapping is now verified against the
-paper's own replication code or published results, but there is still **no
-independent end-to-end reproduction** of any paper's headline number from these
-files alone.
+cases transformed. Forty of the 41 column mappings are verified against the paper's
+own replication code or published results; `finance_growth`'s is not, and is marked
+`arithmetic_pairing_only`. And there is still **no independent end-to-end
+reproduction** of any paper's headline number from these files alone.
 
 Every dataset carries an `audit_status` so you can filter on review quality
 rather than read prose:

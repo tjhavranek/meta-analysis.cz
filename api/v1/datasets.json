@@ -1379,7 +1379,7 @@
     "effect": "e",
     "standard_error": "se",
     "standard_error_note": null,
-    "evidence": "paper's replication code"
+    "evidence": "the paper's own published results: no replication code ships with this dataset"
    },
    "effect_units": "elasticity",
    "direction_note": "Negative by convention: demand falls as price rises.",
@@ -1490,7 +1490,7 @@
     "effect": "alpha",
     "standard_error": "se",
     "standard_error_note": null,
-    "evidence": "paper's replication code"
+    "evidence": "element-wise identity with the alphas dataset across all 1,019 rows; excluded as a duplicate rather than mapped from code"
    },
    "effect_units": "percent",
    "direction_note": "Monthly return, not annualised.",

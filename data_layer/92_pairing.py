@@ -52,9 +52,26 @@ def read_source(proj):
         return pd.read_stata(src, convert_categoricals=False)
     if ext == ".csv":
         return pd.read_csv(src, low_memory=False)
-    sheet = (OVR.get(proj) or {}).get("sheet") or REP["projects"][proj].get("sheet")
+    # primaries.json ALREADY records which sheet the inventory chose, and it was ignored
+    # here. Falling back to the first sheet works only because every workbook until
+    # finance_growth happened to put its data first; that one opens with a 12x2 'Contents'
+    # cover sheet, so this read 12 rows, found no t-statistic, and reported the pairing as
+    # untestable -- on the single literature whose audit status rests on that very test.
+    sheet = ((OVR.get(proj) or {}).get("sheet")
+             or REP["projects"][proj].get("sheet")
+             or (PRIM.get(proj) or {}).get("sheet"))
     xl = pd.ExcelFile(src)
-    return xl.parse(sheet if sheet and sheet in xl.sheet_names else xl.sheet_names[0])
+    if sheet and sheet in xl.sheet_names:
+        return xl.parse(sheet)
+    # No recorded sheet: take the widest one with data, as 90_roundtrip.py does, rather
+    # than the first one, which may be a cover page.
+    best = None
+    for sh in xl.sheet_names:
+        try: d = xl.parse(sh)
+        except Exception: continue
+        if best is None or d.shape[1] * max(len(d), 1) > best.shape[1] * max(len(best), 1):
+            best = d
+    return best if best is not None else xl.parse(xl.sheet_names[0])
 
 
 def numeric(df):

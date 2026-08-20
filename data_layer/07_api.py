@@ -446,7 +446,7 @@ dp["resources"].append(dict(
     name="estimates_harmonised", profile="tabular-data-resource",
     path=f"{BASE}/data/{DATA_V}/estimates_harmonised.csv", format="csv", mediatype="text/csv",
     title="Harmonised estimate-level table (derived)",
-    description=("DERIVED AGGREGATE VIEW, not a 45th dataset. Every row here also appears in "
+    description=("DERIVED AGGREGATE VIEW, not an additional dataset. Every row here also appears in "
                  "one of the per-dataset resources above, reshaped to a common schema. Do not "
                  "sum this resource together with them, and note that literatures which "
                  "duplicate another, overlap one already included, or carry no per-estimate "
@@ -461,6 +461,43 @@ def _sha256(path):
     with open(path,"rb") as fh:
         for chunk in iter(lambda: fh.read(1 << 20), b""): h.update(chunk)
     return h.hexdigest()
+
+
+def _harmonised_parquet_types():
+    """(name, Croissant dataType) read from the PARQUET's own schema.
+
+    The RecordSet's source is the parquet, so its types must come from the parquet. Typing
+    them from the CSV instead declared se_is_derived (a bool) as Text and study_id /
+    estimate_id (int64) as Float -- a consumer extracting as declared would have been told
+    the wrong thing. The datapackage keeps CSV-inferred types, correctly: its resource IS
+    the CSV, which has no types of its own.
+    """
+    path = os.path.join(OUT, "data", DATA_V, "estimates_harmonised.parquet")
+    try:
+        import pyarrow.parquet as _pq
+        sch = _pq.ParquetFile(path).schema_arrow
+    except Exception:
+        # No parquet to read: fall back to the CSV inference rather than emit nothing.
+        return [(f["name"], "sc:Float" if f["type"] == "number" else "sc:Text")
+                for f in _harmonised_fields()]
+    out = []
+    for nm, ty in zip(sch.names, sch.types):
+        t = str(ty)
+        out.append((nm, "sc:Boolean" if t == "bool"
+                    else "sc:Integer" if t.startswith("int") or t.startswith("uint")
+                    else "sc:Float" if t.startswith(("float", "double", "decimal"))
+                    else "sc:Text"))
+    return out
+
+
+def _digest(path):
+    """sha256 + contentSize for a local file, or nothing. Written as a helper because the
+    harmonised FileObjects were added as inline dicts and so skipped _file_object() and its
+    hashing entirely -- a FileObject with no digest fails any consumer that verifies."""
+    if not os.path.exists(path):
+        return {}
+    return {"sha256": _sha256(path), "contentSize": str(os.path.getsize(path))}
+
 
 def _file_object(d):
     """A real digest or no digest. Croissant defines sha256 as the file's actual hash;
@@ -539,12 +576,14 @@ cr={"@context":{"@vocab":"https://schema.org/","cr":"http://mlcommons.org/croiss
         "description":("DERIVED AGGREGATE VIEW of the per-dataset files above, reshaped to a "
                        "common schema. Rows are not additional to them."),
         "contentUrl":f"{BASE}/data/{DATA_V}/estimates_harmonised.csv",
-        "encodingFormat":"text/csv"},{
+        "encodingFormat":"text/csv",
+        **_digest(os.path.join(OUT,"data",DATA_V,"estimates_harmonised.csv"))},{
         "@type":"cr:FileObject","@id":"estimates_harmonised.parquet",
         "name":"estimates_harmonised.parquet",
         "description":"The same derived aggregate view, as Parquet.",
         "contentUrl":f"{BASE}/data/{DATA_V}/estimates_harmonised.parquet",
-        "encodingFormat":"application/vnd.apache.parquet"}],
+        "encodingFormat":"application/vnd.apache.parquet",
+        **_digest(os.path.join(OUT,"data",DATA_V,"estimates_harmonised.parquet"))}],
     # The flagship artifact was a bare FileObject: no schema, and CSV only, while every
     # per-dataset entry ships Parquet with a typed RecordSet. A Croissant consumer could see
     # that the pooled table exists but not what is in it.
@@ -552,11 +591,11 @@ cr={"@context":{"@vocab":"https://schema.org/","cr":"http://mlcommons.org/croiss
         "@type":"cr:RecordSet","@id":"estimates_harmonised","name":"estimates_harmonised",
         "description":("DERIVED AGGREGATE VIEW of the per-dataset record sets, reshaped to a "
                        "common schema. Its rows are not additional to them."),
-        "field":[{"@type":"cr:Field","@id":f"estimates_harmonised/{f['name']}","name":f["name"],
-                  "dataType":("sc:Float" if f["type"]=="number" else "sc:Text"),
+        "field":[{"@type":"cr:Field","@id":f"estimates_harmonised/{n}","name":n,
+                  "dataType":t,
                   "source":{"fileObject":{"@id":"estimates_harmonised.parquet"},
-                            "extract":{"column":f["name"]}}}
-                 for f in _harmonised_fields()]}]}
+                            "extract":{"column":n}}}
+                 for n,t in _harmonised_parquet_types()]}]}
 json.dump(cr,open(os.path.join(api,"croissant.json"),"w",encoding="utf-8"),indent=1,ensure_ascii=False)
 
 print(f"datasets.json: {len(datasets)} entries ({len(ok)} with data), "

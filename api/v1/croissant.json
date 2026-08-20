@@ -454,7 +454,9 @@
    "name": "estimates_harmonised.csv",
    "description": "DERIVED AGGREGATE VIEW of the per-dataset files above, reshaped to a common schema. Rows are not additional to them.",
    "contentUrl": "https://meta-analysis.cz/data/v1/estimates_harmonised.csv",
-   "encodingFormat": "text/csv"
+   "encodingFormat": "text/csv",
+   "sha256": "a16f6409c3aca06d72fce0e260c7cf0631f984d180abec7cafae126f8dc3fea9",
+   "contentSize": "11484842"
   },
   {
    "@type": "cr:FileObject",
@@ -462,7 +464,9 @@
    "name": "estimates_harmonised.parquet",
    "description": "The same derived aggregate view, as Parquet.",
    "contentUrl": "https://meta-analysis.cz/data/v1/estimates_harmonised.parquet",
-   "encodingFormat": "application/vnd.apache.parquet"
+   "encodingFormat": "application/vnd.apache.parquet",
+   "sha256": "f7bee9e780883aec0ecc9f8a976af06f8f43161c54ba30b5ae8aa700febe0cf2",
+   "contentSize": "1771428"
   }
  ],
  "recordSet": [
@@ -49658,7 +49662,7 @@
      "@type": "cr:Field",
      "@id": "estimates_harmonised/study_id",
      "name": "study_id",
-     "dataType": "sc:Float",
+     "dataType": "sc:Integer",
      "source": {
       "fileObject": {
        "@id": "estimates_harmonised.parquet"
@@ -49672,7 +49676,7 @@
      "@type": "cr:Field",
      "@id": "estimates_harmonised/estimate_id",
      "name": "estimate_id",
-     "dataType": "sc:Float",
+     "dataType": "sc:Integer",
      "source": {
       "fileObject": {
        "@id": "estimates_harmonised.parquet"
@@ -50204,7 +50208,7 @@
      "@type": "cr:Field",
      "@id": "estimates_harmonised/se_is_derived",
      "name": "se_is_derived",
-     "dataType": "sc:Text",
+     "dataType": "sc:Boolean",
      "source": {
       "fileObject": {
        "@id": "estimates_harmonised.parquet"

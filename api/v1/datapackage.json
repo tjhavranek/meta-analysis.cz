@@ -15184,7 +15184,7 @@
    "format": "csv",
    "mediatype": "text/csv",
    "title": "Harmonised estimate-level table (derived)",
-   "description": "DERIVED AGGREGATE VIEW, not a 45th dataset. Every row here also appears in one of the per-dataset resources above, reshaped to a common schema. Do not sum this resource together with them, and note that literatures which duplicate another, overlap one already included, or carry no per-estimate standard error are absent.",
+   "description": "DERIVED AGGREGATE VIEW, not an additional dataset. Every row here also appears in one of the per-dataset resources above, reshaped to a common schema. Do not sum this resource together with them, and note that literatures which duplicate another, overlap one already included, or carry no per-estimate standard error are absent.",
    "licenses": [
     {
      "name": "CC-BY-4.0",
