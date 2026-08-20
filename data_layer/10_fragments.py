@@ -170,6 +170,25 @@ def _known_issues():
                    "over five different dependent variables, so they are not comparable with each "
                    "other or with the other literatures. Treat this literature as unusable for now.")
 
+    # 09_verify has flagged this since 1.0.0 with "must be documented", and it was
+    # documented nowhere a reader would see. A partial correlation cannot lie outside
+    # [-1,1]; a value that does will break any reanalysis that assumes the bound. Computed
+    # from the data, so it lists whatever is actually wrong and vanishes when it is fixed.
+    _u = _H.get("effect_units")
+    if _u is not None:
+        _pcc = _H[_u.astype(str).str.contains("partial correlation", case=False, na=False)]
+        _oob = _pcc[_pd.to_numeric(_pcc["effect"], errors="coerce").abs() > 1]
+        if len(_oob):
+            _by = _oob.groupby("dataset")["effect"].agg(["size", lambda c: c.abs().max()])
+            out.append("Some estimates labelled a partial correlation lie outside "
+                       "<code>[-1, 1]</code>, which a correlation cannot: "
+                       + "; ".join(f"<code>{e(k)}</code> ({int(r['size'])} row"
+                                   f"{'s' if int(r['size']) != 1 else ''}, max "
+                                   f"|{r.iloc[1]:.3f}|)" for k, r in _by.iterrows())
+                       + ". These come straight from the source files and are almost certainly "
+                       "coding errors in the originals. They are kept rather than silently "
+                       "altered, so anything assuming the bound must filter them out.")
+
     _pp = _H[_H["dataset"] == "price_puzzle"]
     if len(_pp):
         _g = _pp.groupby(["study_id", "horizon", "effect", "se"]).size()

@@ -94,10 +94,11 @@ def _audit_status(proj):
     # A reviewed literature that needed NO change has no override. Absence of an
     # override is evidence it passed, not evidence it was never looked at.
     if proj in DOMAIN_REVIEWED: return "domain_reviewed"
-    # A staged, known defect outranks the evidence. remittances HAS verified_by -- the code
-    # was read and understood -- but what that reading found is that we ship the wrong
-    # estimand. Promoting it to code_traced on the strength of the evidence that condemns it
-    # would tell a user the opposite of the truth. It stays provisional until the fix ships.
+    # A staged, known defect outranks the evidence: a literature whose verified_by records
+    # that we ship the WRONG estimand must not be promoted to code_traced on the strength of
+    # the evidence that condemns it. No override carries this flag today -- remittances was
+    # the one that did, and it was resolved -- so the branch is dormant, not dead: it is the
+    # mechanism for the next such case. Prefer an explicit `audit_status` for new ones.
     if o.get("pending_1_0_0"): return "arithmetic_pairing_only"
     if o.get("verified_by"): return "code_traced"
     ev=(r.get("evidence") or "")
@@ -378,34 +379,48 @@ json.dump(index,open(os.path.join(api,"datasets.json"),"w",encoding="utf-8"),ind
 # Frictionless Data Package
 
 def _harmonised_fields():
-    """Schema for the pooled table. tabular-data-resource requires one, and the types are
-    inferred from the data: a hardcoded list of text columns got `source_file` and
-    `se_is_derived` wrong, which the reference validator then reported as type errors on
-    every row."""
-    import csv as _csv
+    """Column types for the pooled CSV, inferred from ALL of it.
+
+    A hardcoded list of text columns got `source_file` and `se_is_derived` wrong, so types
+    are read from the data. That read the first 5,000 rows only -- and the table is ordered
+    by literature, so nine columns (df, pcc, se_pcc, data_start, data_end, is_panel,
+    method_ml, method_fe, horizon) had no value in that window at all. They were typed
+    "number" by the [True] default and happened to be numeric in the rows nobody looked at.
+    Reading all 49,689 costs nothing.
+
+    A column with no value ANYWHERE is declared string: nothing observed, nothing asserted.
+    A value counts as numeric only if Table Schema would accept it -- nan, inf and 1_0 are
+    not, though float() takes all three.
+    """
+    import csv as _csv, math as _math
     path=os.path.join(OUT,"data",DATA_V,"estimates_harmonised.csv")
     try:
         with open(path,encoding="utf-8",newline="") as fh:
             r=_csv.reader(fh); head=next(r)
-            numeric=[True]*len(head)
-            for i,row in enumerate(r):
-                if i>=5000: break
+            numeric=[True]*len(head); seen=[False]*len(head)
+            for row in r:
                 for j,v in enumerate(row[:len(head)]):
-                    if not numeric[j] or v=="" : continue
-                    try: float(v)
-                    except ValueError: numeric[j]=False
-    except Exception:
+                    if v=="" or not numeric[j]: continue
+                    seen[j]=True
+                    try: f=float(v)
+                    except ValueError: numeric[j]=False; continue
+                    if _math.isnan(f) or _math.isinf(f) or "_" in v: numeric[j]=False
+    except Exception as e:
+        WARNINGS.append(f"harmonised schema: cannot read {path} ({type(e).__name__}); the "
+                        f"datapackage resource would ship without a schema -- run 08_harmonise.py")
         return []
-    return [dict(name=c, type=("number" if numeric[j] else "string"))
+    return [dict(name=c, type=("number" if (numeric[j] and seen[j]) else "string"))
             for j,c in enumerate(head)]
 
 
 dp=dict(profile="tabular-data-package", name="meta-analysis-cz", version=VERSION,
         api_version=VERSION, data_version=(harm.get("version") or DATA_VERSION),
         title="meta-analysis.cz estimate-level datasets",
-        # NO package-level `licenses`: under Frictionless semantics it would be read as
-        # covering all 44 resources, and their rights are not ours to grant. The descriptor
-        # itself is CC BY; the data it points at is not necessarily.
+        # Package-level `licenses` IS set, deliberately. Under Frictionless semantics it
+        # covers every resource, which is what the owner decided on 2026-08-03: he holds the
+        # sublicensing authority and takes responsibility for the grant. This comment used to
+        # say the opposite -- it predates that reversal and contradicted the line below it,
+        # and the count it quoted (44 resources) is now 46.
         licenses=[dict(name="CC-BY-4.0", path="https://creativecommons.org/licenses/by/4.0/",
                        title="Creative Commons Attribution 4.0 International")],
         description=("Everything in this package is CC BY 4.0, including the data each resource "
@@ -561,9 +576,10 @@ cr={"@context":{"@vocab":"https://schema.org/","cr":"http://mlcommons.org/croiss
                    "training data for machine-learning models. Credit is the only condition: cite "
                    "the collection and the paper whose dataset you used."),
     "url":BASE,
-    # Deliberately the terms page, not a bare CC BY: this record lists distributions of the
-    # underlying research data, which CC BY does not cover. ML tooling reads this field, so
-    # it must not overstate. The compilation's CC BY is described in the text below.
+    # A bare CC BY, deliberately: since the 2026-08-03 decision the licence does cover the
+    # underlying research data, not only the compilation. ML tooling reads this field, and it
+    # would now UNDERSTATE the grant to point at a terms page instead. The previous comment
+    # here argued the reverse and predates the reversal.
     "license":"https://creativecommons.org/licenses/by/4.0/",
     "citeAs":index["cite_as"],
     # Issued date of the Zenodo deposit (DataCite dateType "Issued" on the concept DOI).

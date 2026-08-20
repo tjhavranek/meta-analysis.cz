@@ -138,7 +138,7 @@ RESOLVED = {
                  "function's local matrices, not the meta-regression. A false positive of the R patterns.",
  "electricity":  "electricity.R:907 defines fat_pet_battery <- function(effect, se, ...) and line 910 runs "
                  "lm(e ~ s) on its local copies, so the pair regressed IS effect/se. Confirms our mapping.",
- "remittances":  "REAL, staged in overrides.pending_1_0_0: code builds PCC from TSTAT_L and DF; we ship COEF_L/SE_L",
+ "remittances":  "RESOLVED: was staged in overrides.pending_1_0_0 (code builds PCC from TSTAT_L and DF while we shipped COEF_L/SE_L); the flag is gone and it is code_traced",
 }
 
 def resolved_pair(proj):

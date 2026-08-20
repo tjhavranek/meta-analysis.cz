@@ -17,9 +17,13 @@ stated he takes full responsibility for that grant. The page previously carried 
 scoped claim covering only the compilation; the point of the change is that a bot or a
 researcher should never have to wonder whether a file here is safe to use.
 
-The counts are the corrected set: the source files hold 65,349 ROWS, the analysis samples hold
-61,305 ESTIMATES, and 54,087 of those are pooled. Quoting only the first made ~4,000 estimates
-look lost against the catalogue below it.
+Three counts, not one: source-file ROWS, analysis-sample ESTIMATES, and the POOLED subset.
+Quoting only the first made ~4,000 estimates look lost against the catalogue below it. The
+figures this docstring used to name (65,349 / 61,305 / 54,087) were current when it was
+written and are not any more -- at 1.1.0 they are 66,683 / 55,294 / 49,689. They are left out
+of the prose on purpose now: this file's own first paragraph says no number is written by
+hand, and a docstring quoting counts breaks that rule as surely as the page would. Read
+api/v1/fragments/ for the live values.
 """
 import os, re, html, json, subprocess, sys
 
