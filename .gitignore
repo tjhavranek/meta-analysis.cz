@@ -30,3 +30,8 @@ review_baseline/
 
 # Build scratch: a byte-identical duplicate of /api/v1/ and /data/v1/.
 data_layer/out/
+
+# Scratch side-output of data_layer/93_codegrep.py. 13_publish.py already skips it
+# by name, so the release is unaffected -- this only stops `git add -A` committing
+# it into a public repo.
+data_layer/codegrep_evidence.json
