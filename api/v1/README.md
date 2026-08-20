@@ -160,6 +160,23 @@ estimates twice and present one literature as two independent ones:
   dataset. It carries additional country-level moderators and is published in
   full.
 
+### What a "literature" means here, and what is only name-harmonised
+
+**Dataset IDs are not literature families.** The catalogue counts *contributing dataset
+IDs*. Two of them describe the same literature: `trust` is a later, separate collection of
+the size-premium literature that `size` also covers, which is why only the 284 estimates
+`size` does not already carry are pooled. So "40 literatures" means 40 contributing dataset
+IDs, not 40 independent bodies of evidence — treat `trust` and `size` as one family in any
+analysis that assumes independence.
+
+**Several pooled columns are literature-local.** `study_id` and `estimate_id` are unique
+within a dataset, not across the table; a study appearing in two literatures carries two
+different ids, and nothing here links them. Several moderators share a column name across
+literatures while their source definitions differ — the name was harmonised, the definition
+was not. Where the definition matters, read the per-dataset codebook rather than assuming
+the column means the same thing everywhere. `effect`, `se`, `t_stat` and `precision` are
+the columns harmonised by definition and arithmetic, not merely by name.
+
 ### A caveat on `citations`
 
 `citations` is **not on one scale across literatures.** It is passed through from each

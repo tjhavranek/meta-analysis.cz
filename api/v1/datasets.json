@@ -35,7 +35,7 @@
   "estimates_in_harmonised_table": 48355,
   "literatures_in_harmonised_table": 40,
   "in_harmonised_table": 40,
-  "counts_explained": "rows_in_source_files counts every row of the 44 converted files. estimates_in_analysis_samples applies each paper's own filters and is what the catalogue table shows. estimates_in_harmonised_table additionally drops literatures that duplicate another exactly, overlap one already included, or lack per-estimate precision."
+  "counts_explained": "rows_in_source_files counts every row of the 44 converted files. estimates_in_analysis_samples applies each paper's own filters and is what the catalogue table shows. estimates_in_harmonised_table additionally drops literatures that duplicate another exactly, overlap one already included, or lack per-estimate precision. These counts cover the 44 datasets currently inventoried; finance_growth is published on the site but not yet in this catalogue — see excluded_resources — and joins as a 45th in the next data release."
  },
  "harmonised_table": {
   "version": "1.0.0",
@@ -135,12 +135,12 @@
   },
   {
    "id": "finance_growth",
-   "reason": "published dataset, not yet in the catalogue",
+   "reason": "published dataset, scheduled for inclusion in the next data release",
    "paper": {
     "title": null,
     "url": "https://meta-analysis.cz/finance_growth/"
    },
-   "excluded_because": "NOT a principled exclusion: the inventory scanned only .xlsx/.xls/.dta/.csv/.rdata/.rds, and this dataset's archive holds a single .xlsm, so it was never examined. The extension has been added and the dataset will be inventoried at the next release. Until then the counts here exclude it, and the completeness claim in counts_note should be read with this exception in mind."
+   "excluded_because": "NOT a principled exclusion and NOT permanent. The inventory scanned only .xlsx/.xls/.dta/.csv/.rdata/.rds, and this dataset's archive holds a single .xlsm, so it was never examined. The extension is now recognised and the owner has decided to include it: the next data release inventories it as a 45th dataset (1,334 estimates from 67 studies), after which this entry is removed. Until then the counts below exclude it, while /llms.txt and the paper page list it — that disagreement is this exception, not a second dataset."
   }
  ],
  "datasets": [

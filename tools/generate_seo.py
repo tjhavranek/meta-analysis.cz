@@ -558,7 +558,7 @@ def main():
         {"@type": "WebSite", "@id": BASE + "/#website", "url": BASE + "/",
          "name": "meta-analysis.cz",
          "alternateName": "Meta-Analysis in Economics and Social Sciences",
-         "description": "Data, code, and papers for meta-analyses in economics and the social sciences, by Tomas Havranek, Zuzana Irsova, and their co-authors at Charles University, Prague.",
+         "description": "Data, code, and papers for meta-analyses in economics and the social sciences, by Tomas Havranek and Zuzana Irsova of Charles University, Prague, and their co-authors.",
          # publisher stays singular: one person runs the domain. But 35 of the 52 papers
          # collected here are hers, and a graph that never names her leaves a search
          # engine or a model no way to connect this body of work to her at all. She is a
@@ -609,7 +609,7 @@ def main():
         '<meta property="og:title" content="Meta-Analysis in Economics and Social Sciences" />',
         '<meta property="og:description" content="Data and codes for papers on meta-analysis '
         'and research synthesis in economics and the social sciences, by Tomas Havranek, '
-        'Zuzana Irsova, and their co-authors at Charles University, Prague" />',
+        'Zuzana Irsova of Charles University, Prague, and their co-authors" />',
         f'<meta property="og:url" content="{BASE}/" />',
 
         '<script type="application/ld+json">\n' + jdump(home_graph) + "\n</script>"]) + "\n"
@@ -769,7 +769,7 @@ def main():
 
     lt = ["# meta-analysis.cz", "",
           "> Data, code, and papers for meta-analyses in economics and the social sciences, "
-          "by Tomas Havranek, Zuzana Irsova, and their co-authors at Charles University, Prague. "
+          "by Tomas Havranek and Zuzana Irsova of Charles University, Prague, and their co-authors. "
           "Each paper page links the full-text PDF "
           "and, for most papers, the dataset and estimation code.", "",
           "> Maintained by Tomas Havranek (in Czech Tomáš Havránek) and "

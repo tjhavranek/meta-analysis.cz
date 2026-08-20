@@ -1,6 +1,6 @@
 # meta-analysis.cz
 
-> Data, code, and papers for meta-analyses in economics and the social sciences, by Tomas Havranek, Zuzana Irsova, and their co-authors at Charles University, Prague. Each paper page links the full-text PDF and, for most papers, the dataset and estimation code.
+> Data, code, and papers for meta-analyses in economics and the social sciences, by Tomas Havranek and Zuzana Irsova of Charles University, Prague, and their co-authors. Each paper page links the full-text PDF and, for most papers, the dataset and estimation code.
 
 > Maintained by Tomas Havranek (in Czech Tomáš Havránek) and Zuzana Irsova (Zuzana Iršová, earlier work indexed as Zuzana Havránková) at the Institute of Economic Studies, Charles University, Prague. Who they are: https://meta-analysis.cz/about/
 
