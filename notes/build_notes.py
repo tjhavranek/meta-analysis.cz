@@ -390,22 +390,6 @@ def build_feed(cfg, notes):
     (NOTES_DIR / "feed.xml").write_text(feed, encoding="utf-8")
 
 
-def update_sitemap(notes):
-    """Refresh notes URLs in sitemap.xml, leaving every other entry untouched."""
-    sm = ROOT / "sitemap.xml"
-    text = sm.read_text(encoding="utf-8")
-    text = re.sub(r"\s*<url><loc>https://meta-analysis\.cz/notes/[^<]*</loc>[^\n]*</url>", "", text)
-    entries = [f'  <url><loc>{NOTES_URL}</loc><lastmod>{notes[0]["date"] if notes else ""}</lastmod></url>']
-    for n in notes:
-        entries.append(
-            f'  <url><loc>{SITE}/notes/{n["slug"]}/</loc>'
-            f'<lastmod>{n.get("updated", n["date"])}</lastmod></url>'
-        )
-    text = text.replace("</urlset>", "\n".join(entries) + "\n</urlset>")
-    sm.write_text(text, encoding="utf-8")
-    return len(entries)
-
-
 def main():
     cfg = json.loads((NOTES_DIR / "notes.json").read_text(encoding="utf-8"))
     notes = sorted(cfg["notes"], key=lambda n: n["date"], reverse=True)
@@ -420,7 +404,9 @@ def main():
     print("  index   ", NOTES_URL)
     build_feed(cfg, notes)
     print("  feed    ", f"{SITE}/notes/feed.xml")
-    print(f"  sitemap  {update_sitemap(notes)} notes URLs refreshed")
+    # sitemap.xml is owned by tools/generate_seo.py, which runs last in CI and
+    # discovers every note from the filesystem. Writing it here too meant the two
+    # fought over the notes lastmod values and this one never reached production.
     print(f"\n{len(notes)} note(s) built.")
 
 

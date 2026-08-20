@@ -4,7 +4,9 @@
 # Owner's workflow stays: edit files -> git push. A new paper folder gets
 # baseline coverage (canonical, OG, JSON-LD, sitemap, llms.txt) automatically;
 # the run then turns RED as a reminder to enrich tools/papers.json (Scholar
-# tags need reviewed authors/year) — the site still deploys fine.
+# tags need reviewed authors/year). The generator's own exit is absorbed by
+# continue-on-error, but Verify is not, and it fails on the same gap before
+# Configure Pages — so a page missing from papers.json does NOT deploy.
 name: seo-build-deploy
 on:
   push:
@@ -105,5 +107,7 @@ jobs:
       - name: Metadata enrichment audit
         if: steps.gen.outcome == 'failure'
         run: |
-          echo "::error::A page is missing from tools/papers.json (see 'Generate metadata layer' log). The site deployed fine with baseline coverage, but Google Scholar tags require reviewed metadata — ask your AI assistant to enrich tools/papers.json."
+          # Reached only when the generator warned AND everything after it passed, so the
+          # deploy did happen. A papers.json gap fails Verify instead and never gets here.
+          echo "::error::The metadata generator raised warnings (see 'Generate metadata layer' log). The site deployed with baseline coverage, but the warning needs clearing — usually a page missing from tools/papers.json, whose Google Scholar tags require reviewed authors and year."
           exit 1

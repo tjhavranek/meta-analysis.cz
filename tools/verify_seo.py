@@ -64,6 +64,18 @@ _CITE_CHARS = {0x2010: "-", 0x2011: "-", 0x2012: "-", 0x2013: "-", 0x2014: "-", 
                0x201c: '"', 0x201d: '"', 0x2018: "'", 0x2019: "'"}
 
 
+def _diff_window(a, b, width=90):
+    """Show both strings around their FIRST difference.
+
+    Printing the leading prefix hides any drift past the cut, so two strings that differ
+    at character 300 print identically and the message reads as a contradiction.
+    """
+    i = next((k for k in range(min(len(a), len(b))) if a[k] != b[k]), min(len(a), len(b)))
+    lo = max(0, i - width // 3)
+    cut = lambda t: ("..." if lo else "") + t[lo:lo + width] + ("..." if lo + width < len(t) else "")
+    return cut(a), cut(b), i
+
+
 def _cite_norm(t):
     """A citation stripped to what is bibliographic: no markup, no "Reference:" label, and
     typographic dashes and quotes folded to ASCII, since those differ between the page and the
@@ -129,8 +141,9 @@ for rel in pages:
             _got = " ".join(html.unescape(re.sub(r"<[^>]+>", " ", _m.group(1))).split())
             _want = " ".join(_row["sentence"].split())
             if _got != _want:
+                _pg, _cs, _at = _diff_window(_got, _want)
                 fails.append(f"{rel}: the Headline result paragraph has drifted from "
-                             f"estimates.csv. page={_got[:100]!r} csv={_want[:100]!r}")
+                             f"estimates.csv at character {_at}. page={_pg!r} csv={_cs!r}")
         # The visible "How to cite" line is in the page body and nothing under site/ writes it,
         # exactly like the headline paragraph above -- while papers.json `reference_line` feeds
         # /results/, llms-full.txt and the JSON-LD. Two texts, kept in step by hand, and they
@@ -146,9 +159,10 @@ for rel in pages:
             for _pm in re.finditer(r'<p class="ref">(.*?)</p>', new, re.S):
                 _page_cite, _json_cite = _cite_norm(_pm.group(1)), _cite_norm(_ref)
                 if _page_cite != _json_cite:
+                    _pg, _js, _at = _diff_window(_page_cite, _json_cite, 120)
                     fails.append(f"{rel}: the visible citation differs from papers.json "
-                                 f"reference_line.\n    page: {_page_cite[:120]}"
-                                 f"\n    json: {_json_cite[:120]}")
+                                 f"reference_line at character {_at}.\n    page: {_pg}"
+                                 f"\n    json: {_js}")
     # A bare "<" in visible text (an abstract writing "n < 200") is invisible in a browser and
     # catastrophic for every text extractor: a regex tag-stripper swallows everything from that
     # bracket to the next ">". On /pcc/ that silently deleted the rest of the abstract from
@@ -262,7 +276,14 @@ if os.path.isfile(_dsets) and os.path.isdir(_frag):
         if not os.path.isfile(_fp):
             continue
         _v = open(_fp, encoding="utf-8").read().strip()
-        if _v and _v not in _page:
+        # A pure number is matched on digit boundaries: "44" must not be satisfied by the
+        # "44" inside "1,442" or "2044". Anything else (a version string) stays a substring
+        # test, because its punctuation already makes it distinctive.
+        if re.fullmatch(r"[\d,]+", _v or ""):
+            _present = re.search(r"(?<![\d,.])" + re.escape(_v) + r"(?![\d,.])", _page) is not None
+        else:
+            _present = _v in _page
+        if _v and not _present:
             fails.append(f"datasets/index.html: STALE - fragment {_f} is '{_v}' but the page "
                          f"does not contain it. Rebuild the page from the fragments.")
 
