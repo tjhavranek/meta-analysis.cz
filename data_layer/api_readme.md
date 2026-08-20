@@ -46,15 +46,16 @@ curl -s https://meta-analysis.cz/api/v1/datasets.json | jq '.datasets[] | {id, n
 
 ## The harmonised table
 
-One row per harmonised **observation**, pooled across literatures: **48,355 rows
-from 40 literatures**. Rows are not always independent estimates — `price_puzzle`
+One row per harmonised **observation**, pooled across literatures: **49,689 rows
+from 41 literatures**. Rows are not always independent estimates — `price_puzzle`
 carries one row per impulse response per horizon (the five month horizons plus
 the trough, coded 99, and the peak, coded 88), and `house_prices` ships about
 seven horizons per impulse response. Check `horizon` before treating rows as
-independent. Version **1.0.0**.
+independent. Version **1.1.0**.
 
-This release is **smaller than 0.9.0-beta while covering more**: 48,355 rows
-against 54,076. The beta repeated every `price_puzzle` estimate seven times, so
+1.0.0 was **smaller than 0.9.0-beta while covering more**: 48,355 rows
+against 54,076. 1.1.0 adds `finance_growth`, taking the table to 49,689 rows
+across 41 literatures. The beta repeated every `price_puzzle` estimate seven times, so
 roughly one row in eight of it was a duplicate. Correcting that removed more rows
 than the one added literature and two added horizons put back.
 
@@ -112,11 +113,15 @@ which is what the underlying papers do. As a worked check, FAT-PET run on the
 1st–99th percentile winsorised data reproduces the published conclusions:
 `education` corrects to about 0.02 and `excess_sensitivity` to about 0.01, both
 of which their papers describe as near zero, and `forward` corrects to 0.92
-against a null of 1. Eighteen of the 40 literatures show a
-publication-bias intercept beyond ±1.96.
+against a null of 1. Eighteen of the 40 literatures pooled at 1.0.0 show a
+publication-bias intercept beyond ±1.96. That count has **not** been recomputed
+since `finance_growth` joined at 1.1.0.
 
-**All 40 pooled literatures are verified** — 20 `domain_reviewed`, 20 `code_traced`. None rests
-on the arithmetic pairing alone. `gasoline_price` ships no replication code anywhere, so it was
+**Forty of the 41 pooled literatures are verified** — 20 `domain_reviewed`, 20 `code_traced`.
+The exception is `finance_growth`, added at 1.1.0 and marked `arithmetic_pairing_only`: two
+candidate column pairs both reproduce its reported t-statistic, and the published pair was
+chosen because it is a partial correlation while the other spans -278 to 3375. Its replication
+code has not been read, so its estimand is not independently confirmed. `gasoline_price` ships no replication code anywhere, so it was
 checked against its paper's published results instead: the abstract reports corrected elasticities
 of -0.31 long-run and -0.09 short-run with published averages "exaggerated twofold", and the
 shipped data gives -0.691 and -0.227, reproducing that.
@@ -234,7 +239,7 @@ involves judgement the archive does not.
 *Archive* — the original files, faithful CSV and Parquet mirrors, codebooks, and
 paper/DOI metadata. Faithful conversions of what was published.
 
-*Harmonised table* — 48,355 selected estimates, automatically mapped and in some
+*Harmonised table* — 49,689 selected estimates, automatically mapped and in some
 cases transformed. Every literature's column mapping is now verified against the
 paper's own replication code or published results, but there is still **no
 independent end-to-end reproduction** of any paper's headline number from these

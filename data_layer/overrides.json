@@ -364,6 +364,7 @@
   "effect": "pcc",
   "se": "sepcc",
   "n_obs": "samsize",
-  "verified_by": "Arithmetic alone was NOT decisive here: pcc/sepcc and the working column 'Unnamed: 83'/eightys_se both reproduce the file's own tstat on 100% of 1,334 rows. The mapping is settled on interpretability instead. pcc runs -0.716 to 0.9615 with no nulls, which is a partial correlation coefficient; 'Unnamed: 83' runs -277.97 to 3374.57 with 3 nulls, and its ratio to pcc is not constant (sd 431), so it is a different quantity rather than a rescaling. Left to the resolver the pooled table would have carried 1,247 uninterpretable rows. n_obs=samsize: integral, no nulls, 14 to 2,982; 'n' is the study's estimate count (1 to 168), not a sample size."
+  "verified_by": "Arithmetic alone was NOT decisive here: pcc/sepcc and the working column 'Unnamed: 83'/eightys_se both reproduce the file's own tstat on 100% of 1,334 rows. The mapping is settled on interpretability instead. pcc runs -0.716 to 0.9615 with no nulls, which is a partial correlation coefficient; 'Unnamed: 83' runs -277.97 to 3374.57 with 3 nulls, and its ratio to pcc is not constant (sd 431), so it is a different quantity rather than a rescaling. Left to the resolver the pooled table would have carried 1,247 uninterpretable rows. n_obs=samsize: integral, no nulls, 14 to 2,982; 'n' is the study's estimate count (1 to 168), not a sample size. STATUS: arithmetic_pairing_only, not code_traced. The paper's replication code was NOT read; the pair was chosen on the range of the candidates. The estimand is not independently confirmed, and two candidate pairs both reproduce the reported t-statistic.",
+  "audit_status": "arithmetic_pairing_only"
  }
 }

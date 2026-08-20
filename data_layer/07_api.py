@@ -79,6 +79,12 @@ DOMAIN_REVIEWED = {"activism","gasoline","frisch","dst","electricity","excess_se
 
 def _audit_status(proj):
     o=OVR.get(proj) or {}; r=res.get(proj) or {}
+    # An explicit declaration wins over every inference below. `verified_by` normally means
+    # the paper's code was read, and it promotes to code_traced -- but a mapping can be
+    # recorded there for a different reason. finance_growth's was settled on the range of the
+    # candidate columns, not by reading replication code, and letting it inherit code_traced
+    # would tell a user the estimand had been confirmed when it has not.
+    if o.get("audit_status"): return o["audit_status"]
     # `trust` shares a literature with `size` but is now INCLUDED, contributing only the
     # estimates size does not carry, so the alias must not mark it excluded.
     if o.get("alias_of") and not o.get("subtract_overlap_with"): return "duplicate_excluded"

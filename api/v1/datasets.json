@@ -1162,7 +1162,7 @@
    },
    "effect_units": "partial correlation coefficient",
    "direction_note": "Positive means financial development is associated with higher growth.",
-   "column_mapping_verified_by": "Arithmetic alone was NOT decisive here: pcc/sepcc and the working column 'Unnamed: 83'/eightys_se both reproduce the file's own tstat on 100% of 1,334 rows. The mapping is settled on interpretability instead. pcc runs -0.716 to 0.9615 with no nulls, which is a partial correlation coefficient; 'Unnamed: 83' runs -277.97 to 3374.57 with 3 nulls, and its ratio to pcc is not constant (sd 431), so it is a different quantity rather than a rescaling. Left to the resolver the pooled table would have carried 1,247 uninterpretable rows. n_obs=samsize: integral, no nulls, 14 to 2,982; 'n' is the study's estimate count (1 to 168), not a sample size.",
+   "column_mapping_verified_by": "Arithmetic alone was NOT decisive here: pcc/sepcc and the working column 'Unnamed: 83'/eightys_se both reproduce the file's own tstat on 100% of 1,334 rows. The mapping is settled on interpretability instead. pcc runs -0.716 to 0.9615 with no nulls, which is a partial correlation coefficient; 'Unnamed: 83' runs -277.97 to 3374.57 with 3 nulls, and its ratio to pcc is not constant (sd 431), so it is a different quantity rather than a rescaling. Left to the resolver the pooled table would have carried 1,247 uninterpretable rows. n_obs=samsize: integral, no nulls, 14 to 2,982; 'n' is the study's estimate count (1 to 168), not a sample size. STATUS: arithmetic_pairing_only, not code_traced. The paper's replication code was NOT read; the pair was chosen on the range of the candidates. The estimand is not independently confirmed, and two candidate pairs both reproduce the reported t-statistic.",
    "in_harmonised_table": true,
    "reconciliation": {
     "n_estimates_reported_in_paper": 1334,
@@ -1179,7 +1179,7 @@
    "license_url": "https://creativecommons.org/licenses/by/4.0/",
    "rights_note": "CC BY 4.0. Free to use, adapt, and redistribute, including commercially and including as training data. The only condition is credit: cite the paper named in this entry.",
    "max_precision_weight_share": 0.0092,
-   "audit_status": "code_traced"
+   "audit_status": "arithmetic_pairing_only"
   },
   {
    "id": "forward",
