@@ -7,7 +7,10 @@ sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 from _paths import WORK, SITE
 
 STAGE = os.path.join(WORK, "staging")
-TAB = (".xlsx", ".xls", ".dta", ".csv", ".rdata", ".rds")
+TAB = (".xlsx", ".xlsm", ".xls", ".dta", ".csv", ".rdata", ".rds")
+# .xlsm was missing until 2026-08-20, and finance_growth ships exactly one member,
+# finance_growth.xlsm — so a whole published dataset was invisible to the inventory
+# and to every surface built from it. Macro-enabled workbooks are still workbooks.
 SKIP_DIRS = {"images", "tools", "komentare", "notes", ".git", ".github", "backup"}
 
 def sniff(path=None, blob=None, name=""):

@@ -27,17 +27,20 @@ identifiers:
     value: "10.5281/zenodo.21773678"
     description: "Concept DOI - always resolves to the latest version. Cite this."
   - type: doi
+    value: "10.5281/zenodo.21789702"
+    description: "Version 1.0.0 specifically, for a replication package where the exact files matter."
+  - type: doi
     value: "10.5281/zenodo.21773679"
-    description: "Version 0.9.0-beta, superseded by 1.0.0. Kept so citations of the beta still resolve. The 1.0.0 version DOI is assigned by Zenodo on publication; cite the concept DOI above."
+    description: "Version 0.9.0-beta, superseded by 1.0.0. Kept so existing citations of the beta still resolve; do not start new work from it."
 repository-code: "https://github.com/tjhavranek/meta-analysis.cz"
 url: "https://meta-analysis.cz"
 abstract: >-
   Estimate-level data from meta-analyses in economics and the social sciences,
   with the study and design characteristics hand-coded for each original paper.
   Forty-four datasets holding 65,349 rows in the converted source
-  files, 61,294 estimates after each paper's own analysis
-  selection, and a harmonised table pooling 54,076 of them across
-  39 literatures. Each dataset ships a column-level codebook. Column
+  files, 53,960 estimates after each paper's own analysis
+  selection, and a harmonised table pooling 48,355 of them across
+  40 literatures. Each dataset ships a column-level codebook. Column
   mappings were resolved arithmetically, by requiring that the effect divided by
   its standard error reproduce the t-statistic each dataset already reports, and
   otherwise taken from each paper's own replication code.

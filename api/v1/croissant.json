@@ -1975,7 +1975,7 @@
     },
     {
      "@type": "cr:Field",
-     "@id": "activism/prop_neg_proxy",
+     "@id": "activism/prop_neg_proxy_2",
      "name": "Prop+Neg+Proxy",
      "dataType": "sc:Float",
      "source": {
@@ -9691,7 +9691,7 @@
     },
     {
      "@type": "cr:Field",
-     "@id": "competition/t",
+     "@id": "competition/t_2",
      "name": "T",
      "dataType": "sc:Float",
      "source": {
@@ -32742,7 +32742,7 @@
     },
     {
      "@type": "cr:Field",
-     "@id": "resource_curse/sxp",
+     "@id": "resource_curse/sxp_2",
      "name": "SXP",
      "dataType": "sc:Float",
      "source": {

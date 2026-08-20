@@ -109,7 +109,8 @@
    "reason": "country-level crisis database, not extracted estimates",
    "paper": {
     "title": null,
-    "url": "https://meta-analysis.cz/ews/"
+    "url": null,
+    "note": "no landing page exists; the two .xls files are at https://meta-analysis.cz/ews/crises_database.xls and https://meta-analysis.cz/ews/cdec40_40_at_least_two.xls"
    },
    "excluded_because": "examined and not an estimate-level dataset"
   },
@@ -130,6 +131,15 @@
     "url": "https://meta-analysis.cz/pcc/"
    },
    "excluded_because": "examined and not an estimate-level dataset"
+  },
+  {
+   "id": "finance_growth",
+   "reason": "published dataset, not yet in the catalogue",
+   "paper": {
+    "title": null,
+    "url": "https://meta-analysis.cz/finance_growth/"
+   },
+   "excluded_because": "NOT a principled exclusion: the inventory scanned only .xlsx/.xls/.dta/.csv/.rdata/.rds, and this dataset's archive holds a single .xlsm, so it was never examined. The extension has been added and the dataset will be inventoried at the next release. Until then the counts here exclude it, and the completeness claim in counts_note should be read with this exception in mind."
   }
  ],
  "datasets": [

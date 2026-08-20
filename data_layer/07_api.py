@@ -1,5 +1,5 @@
 """Tier A+D: static JSON API — datasets index, Frictionless datapackage, Croissant."""
-import json, os, re, warnings; warnings.filterwarnings("ignore")
+import collections, json, os, re, warnings; warnings.filterwarnings("ignore")
 import os, sys
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 from _paths import WORK, SITE
@@ -424,8 +424,16 @@ def _record_set(d):
     except Exception:
         return rs
     fields=[]
+    # `normalized` collapses case and punctuation, so two distinct source columns can
+    # normalise to one string. That made the @id non-unique inside a RecordSet, which is
+    # invalid JSON-LD: a strict Croissant loader merges or drops one column of the pair.
+    # Suffix the collisions instead, keeping the first occurrence's id stable.
+    _seen=collections.Counter()
     for c in cb["columns"]:
-        f={"@type":"cr:Field","@id":f"{d['id']}/{c['normalized']}","name":c["name"],
+        _base=f"{d['id']}/{c['normalized']}"
+        _seen[_base]+=1
+        _fid=_base if _seen[_base]==1 else f"{_base}_{_seen[_base]}"
+        f={"@type":"cr:Field","@id":_fid,"name":c["name"],
            "dataType":("sc:Float" if c["dtype"].startswith("float")
                        else "sc:Integer" if c["dtype"].startswith("int") else "sc:Text"),
            "source":{"fileObject":{"@id":d["id"]+".parquet"},

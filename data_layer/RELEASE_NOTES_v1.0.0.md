@@ -70,8 +70,9 @@ carries every paper's title, authors and DOI.
 
 Cite the collection as:
 
-> Havránek, T. and Z. Iršová (2026). meta-analysis.cz: data and code for
-> meta-analyses in economics. https://meta-analysis.cz
+> Havranek, T. and Z. Irsova (2026). meta-analysis.cz: harmonised
+> estimate-level data from meta-analyses in economics. Zenodo.
+> https://doi.org/10.5281/zenodo.21773678
 
 ---
 

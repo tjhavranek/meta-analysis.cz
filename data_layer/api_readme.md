@@ -96,7 +96,7 @@ DOI will not.
 
 These are real published estimates, and several literatures are heavy-tailed.
 The `eis` file, for instance, runs from −10,000 to 100,000 with standard errors
-to match; 72 rows across the collection have a standard error below 1e-4. Those
+to match; 68 rows across the collection have a standard error below 1e-4. Those
 values are in the source files, not an artefact of the harmonisation, and they
 are kept so the table stays faithful to what was published.
 
@@ -154,11 +154,28 @@ estimates twice and present one literature as two independent ones:
 - **`substitution`** — the same 2,735 estimates as `eis`. Two papers, one
   dataset. It carries additional country-level moderators and is published in
   full.
+
+### A caveat on `citations`
+
+`citations` is **not on one scale across literatures.** It is passed through from each
+paper's own coding, and the papers did not agree:
+
+- most literatures carry a raw count (`size` reaches 15,628);
+- nine carry a log, with maxima between 4 and 10;
+- `students` carries a standardised regressor, which is why 26 of its values are negative.
+
+Nothing in the harmonisation reconciles these, and the column name does not distinguish
+them, so **do not pool, rank, or regress on `citations` across literatures** without first
+checking the scale within each. The year columns had the same defect and were gated at
+1.0.0; this column is scheduled for the same treatment at the next release, which will
+null the non-count literatures rather than silently rescale them. `impact_factor` shows a
+weaker version of the same signature and is under review.
+
 - **`trust`** — from 1.0.0 this is **pooled**, but only for the 284 estimates
   `size` does not already carry. It is the later collection (2026 against 2019)
   of the same literature, the size premium, and the *smaller* one at 1,613 rows
-  against `size`'s 1,746; 83.5% of its usable pairs already appear in `size` and
-  are dropped here so nothing is counted twice. That makes this literature a
+  against `size`'s 1,746; of those 1,613 rows, 1,329 (82.4%) already appear in
+  `size` and are dropped here so nothing is counted twice, leaving the 284 above. That makes this literature a
   deliberate splice of two separately-assembled collections. **If the size
   premium is your subject, use either per-dataset file whole** rather than the
   pooled rows.
@@ -236,5 +253,6 @@ have to look it up. If you use the collection, cite that too. See `/LICENSE`.
 
 Cite the collection as:
 
-> Havránek, T. and Z. Iršová (2026). meta-analysis.cz: data and code for
-> meta-analyses in economics. https://meta-analysis.cz
+> Havranek, T. and Z. Irsova (2026). meta-analysis.cz: harmonised
+> estimate-level data from meta-analyses in economics. Zenodo.
+> https://doi.org/10.5281/zenodo.21773678
