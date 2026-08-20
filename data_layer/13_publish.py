@@ -18,6 +18,17 @@ HERE = os.path.dirname(os.path.abspath(__file__))
 SITE = os.path.join(os.path.dirname(HERE), "site")
 DRY = "--dry-run" in sys.argv
 
+# This script only makes sense in the DEVELOPMENT layout, where data_layer/ sits beside a
+# separate site/. Run from the PUBLISHED repo -- where the pipeline lives inside the site it
+# builds -- it used to CREATE an empty site/ and copy 204 files into it. _paths.py then saw
+# that new directory, resolved SITE to it, and every source file appeared to 404. Refuse
+# instead: there is nothing to publish when the source and the destination are the same tree.
+_parent = os.path.dirname(HERE)
+if not os.path.isdir(SITE) and (os.path.isdir(os.path.join(_parent, "api"))
+                                or os.path.isdir(os.path.join(_parent, "data"))):
+    sys.exit("Nothing to publish: this is the published layout, so data_layer/ is already "
+             "inside the site. Run the numbered scripts here and commit; do not run this.")
+
 # The pipeline's own state: everything 09_verify and the numbered scripts read at runtime.
 # Listed by EXTENSION rather than by name, so a new state file is carried automatically.
 STATE_EXT = (".json", ".py", ".md")

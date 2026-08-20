@@ -24,7 +24,29 @@ look lost against the catalogue below it.
 import os, re, html, json, subprocess, sys
 
 HERE = os.path.dirname(os.path.abspath(__file__))
-SITE = os.path.normpath(os.path.join(HERE, "..", "site"))
+def _resolve_site(start):
+    """Locate the site directory under either layout.
+
+    Both this repo's scripts assumed the DEVELOPMENT layout (a `site/` folder beside the
+    tools), so run from the PUBLISHED repo -- where the tools live inside the site they
+    build -- they pointed at a directory that does not exist. data_layer/_paths.py already
+    resolves both; this is the same rule for the board scripts.
+    """
+    import os as _os
+    env = _os.environ.get("SEO_SITE_DIR")
+    if env:
+        return env
+    sibling = _os.path.join(start, "site")
+    if _os.path.isdir(sibling):
+        return sibling
+    here = start
+    for _ in range(3):
+        here = _os.path.dirname(here)
+        if _os.path.isdir(_os.path.join(here, "api")) and _os.path.isdir(_os.path.join(here, "data")):
+            return here
+    return sibling
+
+SITE = _resolve_site(os.path.normpath(os.path.join(HERE, "..")))
 FRAG = os.path.join(SITE, "api", "v1", "fragments")
 OUT = os.path.join(SITE, "datasets", "index.html")
 

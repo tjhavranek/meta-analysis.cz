@@ -28,9 +28,36 @@ so a reader can redraw it.
 import bisect, csv, os, sys
 
 BASE = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
-SITE = os.path.join(BASE, "site")
+def _resolve_site(start):
+    """Locate the site directory under either layout.
+
+    Both this repo's scripts assumed the DEVELOPMENT layout (a `site/` folder beside the
+    tools), so run from the PUBLISHED repo -- where the tools live inside the site they
+    build -- they pointed at a directory that does not exist. data_layer/_paths.py already
+    resolves both; this is the same rule for the board scripts.
+    """
+    import os as _os
+    env = _os.environ.get("SEO_SITE_DIR")
+    if env:
+        return env
+    sibling = _os.path.join(start, "site")
+    if _os.path.isdir(sibling):
+        return sibling
+    here = start
+    for _ in range(3):
+        here = _os.path.dirname(here)
+        if _os.path.isdir(_os.path.join(here, "api")) and _os.path.isdir(_os.path.join(here, "data")):
+            return here
+    return sibling
+
+SITE = _resolve_site(BASE)
 SRC = os.path.join(SITE, "data", "v1", "estimates_harmonised.csv")
-FRAG = os.path.join(BASE, "redesign", "_fragments", "zstat_figure.html")
+# Written beside THIS script, which is where build_datasets_page.py looks for it.
+# The two disagreed: this wrote tools/redesign/_fragments/ while the page builder read
+# tools/board/_fragments/, so the page build failed with "missing ... run
+# build_zstat_figure.py" immediately after that script had reported success.
+FRAG = os.path.join(os.path.dirname(os.path.abspath(__file__)), "_fragments",
+                    "zstat_figure.html")
 DATA = os.path.join(SITE, "data", "v1", "t_distribution.csv")
 
 CRIT = [(1.645, "1.645"), (1.96, "1.96"), (2.576, "2.576")]
@@ -232,8 +259,16 @@ def _publish():
     """Keep site/tools/board/ -- the copy a reader can regenerate from -- identical to
     the sources that just ran. See tools_seo/publish_board_sources.py."""
     import subprocess, sys as _s, os as _o
-    subprocess.run([_s.executable, _o.path.join(BASE, "tools_seo",
-                                                "publish_board_sources.py")], check=False)
+    # check=False meant a missing helper printed a Python traceback to stderr on every run
+    # and carried on -- noise that reads like a failure but is not one. In the published
+    # layout the sources ARE the site copy, so there is nothing to publish; say so once
+    # instead of shelling out to a script that is not there.
+    helper = _o.path.join(BASE, "tools_seo", "publish_board_sources.py")
+    if _o.path.isfile(helper):
+        subprocess.run([_s.executable, helper], check=False)
+    else:
+        print("   .. no tools_seo/publish_board_sources.py here; the sources that just ran "
+              "are already the published copy, so there is nothing to mirror.")
 
 if __name__ == "__main__":
     sys.exit(build("--check" in sys.argv))
