@@ -79,16 +79,18 @@ DOMAIN_REVIEWED = {"activism","gasoline","frisch","dst","electricity","excess_se
 
 def _audit_status(proj):
     o=OVR.get(proj) or {}; r=res.get(proj) or {}
-    # An explicit declaration wins over every inference below. `verified_by` normally means
-    # the paper's code was read, and it promotes to code_traced -- but a mapping can be
-    # recorded there for a different reason. finance_growth's was settled on the range of the
-    # candidate columns, not by reading replication code, and letting it inherit code_traced
-    # would tell a user the estimand had been confirmed when it has not.
-    if o.get("audit_status"): return o["audit_status"]
     # `trust` shares a literature with `size` but is now INCLUDED, contributing only the
     # estimates size does not carry, so the alias must not mark it excluded.
     if o.get("alias_of") and not o.get("subtract_overlap_with"): return "duplicate_excluded"
     if o.get("exclude"):  return "excluded_no_precision"
+    # An explicit declaration then wins over every inference below -- but NOT over the two
+    # exclusions above, which are structural facts about whether the dataset is in the table
+    # at all, not judgements about how well its mapping is evidenced.
+    # `verified_by` normally means the paper's code was read, and promotes to code_traced; a
+    # mapping can be recorded there for another reason. finance_growth's was settled by
+    # identifying the rival column as tstat/sepcc, not by reading replication code, and
+    # letting it inherit code_traced would say the estimand had been confirmed when it has not.
+    if o.get("audit_status"): return o["audit_status"]
     # A reviewed literature that needed NO change has no override. Absence of an
     # override is evidence it passed, not evidence it was never looked at.
     if proj in DOMAIN_REVIEWED: return "domain_reviewed"

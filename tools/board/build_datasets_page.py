@@ -131,9 +131,14 @@ def build():
 
     # The sentence used to end "The remaining N rest on arithmetic matching alone and are
     # provisional" unconditionally. At 1.0.0 that N is zero, and "the remaining 0" is noise.
+    # ...and at 1.1.0 that N is one, where "The remaining 1 rest" is ungrammatical. The
+    # sentence now agrees with its own number.
+    _n = counts['count_pairing_only']
     provisional_note = (
-        f" The remaining {counts['count_pairing_only']} rest on arithmetic"
-        " effect/standard-error matching alone and are provisional." if n_ap else "")
+        (f" The remaining one rests on arithmetic effect/standard-error matching alone and is"
+         " provisional." if str(_n) == "1" else
+         f" The remaining {_n} rest on arithmetic effect/standard-error matching alone and are"
+         " provisional.") if n_ap else "")
 
     known_issues = frag("known_issues")
     issues_block = (f'<div class="known-issues">\n<h2>Known issues in this release</h2>\n'

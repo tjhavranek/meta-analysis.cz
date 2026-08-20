@@ -351,11 +351,16 @@ def build_jsonld(m):
         # says what the file actually contains. Taken from the catalogue's verified
         # core_columns, so it names the columns whose meaning has been checked rather than
         # every column the file happens to have.
+        # ONLY the keys that name a real column. core_columns also carries `evidence` and
+        # `standard_error_note`, which are prose ABOUT the mapping -- emitting those put a
+        # 190-character sentence in as a variable name, in the field Google Dataset Search
+        # reads to learn what the file measures.
         _cc = (_DATASETS.get(proj) or {}).get("core_columns") or {}
-        if _cc:
-            ds["variableMeasured"] = [
-                {"@type": "PropertyValue", "name": v, "description": k.replace("_", " ")}
-                for k, v in _cc.items() if v]
+        _COLS = ("effect", "standard_error")
+        _vm = [{"@type": "PropertyValue", "name": _cc[k], "description": k.replace("_", " ")}
+               for k in _COLS if _cc.get(k)]
+        if _vm:
+            ds["variableMeasured"] = _vm
         if m["reference_line"]:
             ds["citation"] = m["reference_line"]
         if m.get("dataset_doi"):
