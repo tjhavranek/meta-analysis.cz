@@ -58,7 +58,8 @@ if _disk!=_man:
     raise SystemExit(f"bundle/manifest mismatch: on disk but unmanifested {sorted(_disk-_man)}; "
                      f"manifested but missing {sorted(_man-_disk)}")
 
-print(f"bundle: {len(man)} files, {sum(s for _,s,_ in man)/1048576:.1f} MB -> {OUT}")
+print(f"bundle: {len(man)} manifested payload files plus SHA256SUMS.txt, "
+      f"{sum(s for _,s,_ in man)/1048576:.1f} MB -> {OUT}")
 
 # GATE. This bundle is the thing that leaves the building and becomes immutable under a DOI, so
 # it gets its own check rather than trusting whatever ran earlier. Twice in one day a deposit was

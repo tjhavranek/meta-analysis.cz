@@ -62,15 +62,28 @@ scoping into the deposit metadata.
 ## Steps
 
 1. Sign in at https://zenodo.org (ORCID login works: 0000-0002-3158-2539).
-2. **New upload**, then drag in the contents of `meta-analysis-cz-harmonised-v0.9.0-beta/`.
-3. Fill the metadata from `data_layer/zenodo.json` — title, authors with ORCIDs, description,
+2. **Open the existing record** under the concept DOI `10.5281/zenodo.21773678` and click the
+   green **New version** button. **Not "New upload".** The concept DOI already exists, and
+   0.9.0-beta and 1.0.0 already sit under it. "New upload" starts a *separate* record with its
+   own new concept DOI, which would split the lineage in two and cannot be undone once
+   published. This is the single most expensive wrong click on this page.
+3. Build the bundle with `python data_layer/12_zenodo_bundle.py` and drag in the **contents**
+   of the folder it prints. It names that folder after the version in `datasets.json`, so take
+   the name from the script's output rather than from this page.
+4. Fill the metadata from `data_layer/zenodo.json` — title, authors with ORCIDs, description,
    keywords. Set **Licence: Creative Commons Attribution 4.0 International**.
-4. Under *Related identifiers*, add `https://meta-analysis.cz` as **is derived from**, and
+5. Under *Related identifiers*, add `https://meta-analysis.cz` as **is derived from**, and
    ideally each paper's DOI as **is supplement to** so credit flows to the original papers
    rather than collapsing into the collection citation.
-5. Reserve the DOI, then publish.
-6. Send both DOIs back — Zenodo mints a **concept** DOI alongside the version one — and they
-   go into `CITATION.cff`, `datasets.json`, `llms.txt` and the `/datasets/` page.
+6. Preview, and read the preview against the bundle you actually built: version, counts,
+   file list, licence.
+7. Publish, and record the newly minted **version** DOI. The concept DOI does not change.
+8. Propagate the version DOI to every canonical source that carries one. Regenerating is not
+   enough, because three of them are hand-written: `07_api.py` (`DATA_DOI`),
+   `data_layer/zenodo.json`, `data_layer/citation.cff`, `data_layer/api_readme.md`, the
+   Croissant `dateModified`, and the `DEPOSITS` map in `91_distribution.py`. Then rebuild and
+   check `datasets.json`, root `.zenodo.json`, root `CITATION.cff`, `llms.txt` and the
+   `/datasets/` fragments all agree.
 
 ## Afterwards
 
@@ -81,13 +94,3 @@ in a replication package.
 Once the DOI exists, connect it at https://profiles.datacite.org (sign in with ORCID) so it
 flows into ORCID automatically — that item is already on the deferred list in `PROGRESS.md`.
 
-## One thing to decide before publishing
-
-The harmonised table is `0.9.0-beta`, and 19 of its 39 literatures rest on arithmetic
-effect/standard-error pairing rather than code-based verification. That is stated in `README.md`,
-in `datasets.json` as `audit_status`, and on the `/datasets/` page.
-
-A DOI is permanent and citable. Publishing a beta under one is normal and honest — the
-version number and the audit status say what it is — but it is worth deciding deliberately
-rather than by default. The alternative is to wait until the remaining 19 literatures have
-been reviewed and mint at `1.0.0`.

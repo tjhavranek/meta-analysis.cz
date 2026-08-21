@@ -7,7 +7,7 @@ looks broken, and the machine gets a worse answer than if the metadata had never
 
 Nothing has ever checked the metadata against the data it describes.
 
-  CODEBOOKS   44 of them, one per dataset, listing every column with a type and a role. Compare
+  CODEBOOKS   one per dataset, listing every column with a type and a role. Compare
               each against the per-dataset file it documents: same columns, same count, and the
               stated summary statistics consistent with the values actually present.
   URLS        every file URL the catalogue publishes -- parquet, csv, codebook, per dataset --
