@@ -40,6 +40,20 @@ inst <- arrow::read_parquet("https://meta-analysis.cz/data/v1/estimates_harmonis
 inst <- read.csv("https://meta-analysis.cz/data/v1/estimates_harmonised.csv")
 ```
 
+**Read the Parquet where you can, and pass `float_precision="round_trip"` where you
+cannot.** The CSV carries every value at full precision and round-trips exactly, but
+pandas' default CSV parser is not exact: it moves 9,220 of the 49,689 `t_stat` values by
+up to 1.5e-11. That is invisible almost everywhere and decisive in one place. 96 estimates
+sit within 1e-9 of |t| = 1.96, so a caliper count around that threshold comes out as
+508 below and 633 above from the Parquet, and 503 and 639 from the same CSV read at
+pandas' defaults. The Parquet is canonical. If you are counting near a threshold, use it,
+or read the CSV as:
+
+```python
+pd.read_csv("https://meta-analysis.cz/data/v1/estimates_harmonised.csv",
+            float_precision="round_trip")
+```
+
 ```bash
 curl -s https://meta-analysis.cz/api/v1/datasets.json | jq '.datasets[] | {id, n_estimates}'
 ```

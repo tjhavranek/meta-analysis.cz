@@ -208,6 +208,43 @@ def _known_issues():
                 "<code>abs(effect) &lt; 1</code> if you need strictly valid correlations. "
                 "Correcting them belongs to the original authors, not to this archive.")
 
+    # The same class column carries a third family the [-1,1] test cannot see: a stored
+    # partial correlation of exactly 0 beside a t-statistic that is not. Computed from the
+    # per-dataset mirror, because the harmonised t_stat is derived from effect/se and is
+    # therefore 0 by construction on exactly these rows.
+    try:
+        _cls = _pd.read_parquet(os.path.join(OUT, "data", DV, "class", "class.parquet"))
+        _z = int(((_cls["pcc"] == 0) & (_cls["t_stat"].abs() > 0.01)).sum())
+    except Exception:
+        _z = 0
+    if _z:
+        out.append(f"A further {_z} rows of <code>class</code> store a partial correlation of "
+                   "exactly zero beside a t-statistic that is not zero, which the same "
+                   "<code>t / sqrt(t&sup2; + df)</code> relation contradicts. They are excluded "
+                   "from the pooled table by that literature's own analysis selection, so they "
+                   "affect the per-dataset file rather than the harmonised one. Recorded here "
+                   "because it is the same column and the same upstream defect.")
+
+    # Rows can share every column without the pipeline having invented them: two estimates
+    # rounded to the same coefficients really do recur. Worth stating, because the obvious
+    # hygiene step destroys real data.
+    _dc = [c for c in _H.columns if c != "estimate_id"]
+    _dup = int(_H.duplicated(subset=_dc, keep="first").sum())
+    if _dup:
+        _nlit = int(_H[_H.duplicated(subset=_dc, keep=False)]["dataset"].nunique())
+        _w = _H[_H.duplicated(subset=_dc, keep="first")]["dataset"].value_counts()
+        out.append(f"{_dup:,} rows across {_nlit} literatures are identical to another row in "
+                   "every column except <code>estimate_id</code>. Apart from the "
+                   "<code>price_puzzle</code> rows noted separately, these are not duplicates in the sense "
+                   "of being manufactured: the source files carry them, either as genuinely "
+                   "repeated coefficients or as distinct estimates that coincide once projected "
+                   "onto the harmonised columns. The heaviest are "
+                   + ", ".join(f"<code>{e(k)}</code> ({int(v):,})" for k, v in _w.head(3).items())
+                   + ". Running <code>drop_duplicates()</code> as routine hygiene will delete "
+                   "real estimates, over half of one literature in the worst case. Deduplicate "
+                   "on <code>(dataset, estimate_id)</code> instead, which is unique by "
+                   "construction.")
+
     _pp = _H[_H["dataset"] == "price_puzzle"]
     if len(_pp):
         _g = _pp.groupby(["study_id", "horizon", "effect", "se"]).size()
