@@ -409,7 +409,24 @@ def _harmonised_fields():
         WARNINGS.append(f"harmonised schema: cannot read {path} ({type(e).__name__}); the "
                         f"datapackage resource would ship without a schema -- run 08_harmonise.py")
         return []
-    return [dict(name=c, type=("number" if (numeric[j] and seen[j]) else "string"))
+    # Descriptions live in a data file, not in code, so they can be corrected without a code
+    # change. The 41 fields shipped with EMPTY descriptions until 1.1.1: 45 per-source
+    # codebooks existed while the one table most people actually load had no dictionary at
+    # all, which a researcher who ran a real analysis on it reported as the single biggest
+    # obstacle. A missing entry is left empty rather than invented.
+    _dp=os.path.join(WORK,"harmonised_field_descriptions.json")
+    try:
+        _desc=json.load(open(_dp,encoding="utf-8"))
+    except Exception as e:
+        _desc={}
+        WARNINGS.append(f"harmonised schema: no field descriptions ({type(e).__name__}); the "
+                        f"pooled table would ship undocumented -- check {_dp}")
+    _missing=[c for c in head if not _desc.get(c)]
+    if _missing:
+        WARNINGS.append(f"harmonised schema: {len(_missing)} field(s) have no description: "
+                        f"{', '.join(_missing[:8])}")
+    return [dict(name=c, type=("number" if (numeric[j] and seen[j]) else "string"),
+                 **({"description": _desc[c]} if _desc.get(c) else {}))
             for j,c in enumerate(head)]
 
 

@@ -73,24 +73,16 @@ jobs:
       # gate green each time. The rebuild below closes that, but it is scoped: a prose or styling
       # commit must not wait on a pipeline rebuild, nor be blocked by an unrelated pipeline
       # failure. That was the standing objection to gating on this at all.
-      - name: Did the data layer change?
-        id: dataclt
-        run: |
-          BASE="${{ github.event.before }}"
-          if [ -z "$BASE" ] || ! git cat-file -e "$BASE^{commit}" 2>/dev/null; then BASE="HEAD~1"; fi
-          if git diff --name-only "$BASE" HEAD 2>/dev/null \
-               | grep -qE '^(data_layer/|data/v1/|api/v1/)'; then
-            echo "changed=true" >> "$GITHUB_OUTPUT"
-          else
-            echo "changed=false" >> "$GITHUB_OUTPUT"
-          fi
-
       - name: Rebuild the data layer and require zero drift
-        # BLOCKING, and deliberately so: it runs before Configure Pages, so a tree that does not
-        # reproduce from its inputs does not deploy. Measured at roughly 40 seconds, and verified
-        # byte-identical on Python 3.11 and 3.12 given the pins above -- the interpreter is not a
-        # variable here, the dependency versions are.
-        if: steps.dataclt.outputs.changed == 'true'
+        # BLOCKING, before Configure Pages, so a tree that does not reproduce from its inputs
+        # does not deploy. Roughly 40 seconds, byte-identical on Python 3.11 and 3.12 given the
+        # pins above.
+        #
+        # It runs on EVERY push, not only pushes that touch data. A path filter looked cheaper
+        # and had a hole: it tested the PUSH RANGE, not the state of the tree, so a data commit
+        # that failed the gate would sail out on the next unrelated prose commit, unverified.
+        # The question this step answers is "is the tree reproducible", which has nothing to do
+        # with what the latest push happened to touch. Forty seconds is not worth a hole.
         run: |
           python data_layer/06_convert.py
           python data_layer/08_harmonise.py
@@ -104,6 +96,12 @@ jobs:
           diff --brief data_layer/out/CITATION.cff CITATION.cff
           diff --brief data_layer/out/.zenodo.json .zenodo.json
           diff --brief data_layer/out/LICENSE LICENSE
+          # DELETE THE SCRATCH. `Upload site artifact` below has `path: .` and tars the whole
+          # checkout: .gitignore does not apply to it. Leaving this behind published 57 MB of
+          # build scratch, 162 files, to the live site on every data push -- including a second
+          # copy of every dataset at a URL nothing links to and nothing verifies.
+          rm -rf data_layer/out data_layer/convert_manifest.json
+          git checkout -- data_layer/ 2>/dev/null || true
 
       - name: Configure Pages
         uses: actions/configure-pages@v5

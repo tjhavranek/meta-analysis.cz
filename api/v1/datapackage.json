@@ -15195,167 +15195,208 @@
     "fields": [
      {
       "name": "dataset",
-      "type": "string"
+      "type": "string",
+      "description": "Which literature the estimate was extracted from — the slug of one contributing meta-analysis dataset in the archive, and the key under which its paper, DOI, codebook and unit conventions are filed in datasets.json. It is the scope for almost everything else in the row: ids, effect scale and units are defined only relative to it. 41 slugs are not 41 independent bodies of evidence. `trust` is a later, separately assembled collection of the same size-premium literature as `size`, spliced in for only the 284 estimates `size` does not already carry, so treat the two as one family wherever independence matters. Row counts are very uneven (forward 3,643 down to climate 48), so an unweighted pooled statistic is mostly the big literatures."
      },
      {
       "name": "study_id",
-      "type": "number"
+      "type": "number",
+      "description": "Identifies the primary study (one published paper) whose regression produced the estimate, carried through unchanged from the source file's own study identifier in 36 of the 41 literatures and assigned by first-appearance order over study_label in the five that ship none (activism, euro, learning, reforms, resource_curse). The numbers are arbitrary labels rather than counts or ranks — inflation numbers its studies 9000–9201, electricity's run to 691 for 366 studies. Unique only WITHIN a dataset. There are 524 distinct values but 2,963 real (dataset, study_id) pairs, and 175 of the 524 values occur in more than one literature — study_id 1 alone spans 35 datasets and 732 rows. Cluster, group and count studies on (dataset, study_id); using study_id alone merges unrelated papers and collapses 82% of clusters. It also does not link the same paper across two literatures: a study in both carries two unrelated ids and nothing here connects them."
      },
      {
       "name": "estimate_id",
-      "type": "number"
+      "type": "number",
+      "description": "A row counter assigned during harmonisation, numbered 1..N within each dataset in the order rows survived that literature's filters, whose only purpose is to make (dataset, estimate_id) a unique key for every one of the 49,669 rows. It is not the source file's estimate identifier: 08_harmonise.py overwrites any idcoeff/idest/id_estimate/obs_id it matched with `out.groupby(\"dataset\").cumcount()+1`. Two traps. It cannot be joined back to the per-dataset file — where harmonisation dropped rows (class 2,906 source rows to 2,819; scc 1,144 to 602) or reshaped them (price_puzzle), position k here is not row k there, and the source's own estimate id was discarded rather than stored. And the id range is not a row count: `trust` is numbered before its overlap with `size` is subtracted, so its 284 rows carry ids 13–1,613 with gaps. Do keep it in any deduplication — 1,469 rows are identical to another row in every column except this one, so a bare drop_duplicates() deletes real published estimates (more than half of scc); dedupe on (dataset, estimate_id)."
      },
      {
       "name": "study_label",
-      "type": "string"
+      "type": "string",
+      "description": "The primary study's name exactly as the source authors typed it — a display string for eyeballing rows and reading funnel plots, not a normalised reference. Format is per-literature: 'Author (year)' in most (100% in eis, frisch, habits, migrant, remittances, students, water), bare surname lists in house_prices and inflation, plain author names in activism/euro/gasoline/learning/size/sigma, and in reforms just the source's numeric study code rendered as a string. Not a key at either end. Null on 9.6% of rows because five literatures (climate, competition, forward, gasoline_price, trust) ship no such column at all. Within a literature one label can cover two different study_ids ('Gupta' in house_prices, 'Abo-Zaid, S.' in inflation, '(Horowitz et al. 2000)' in size), and 126 label strings appear in more than one dataset without those rows being linked in any way — the formats differ too much to make cross-literature joining on this column safe."
      },
      {
       "name": "effect",
-      "type": "number"
+      "type": "number",
+      "description": "The point estimate that the source paper's own meta-analysis treats as its outcome, on that paper's scale — the column its replication code actually regresses in the publication-bias test (named in effect_col), or a reconstruction where the analysed column was never published (activism rescaled from Estimate x100 x Multiplicator; reforms and remittances converted to partial correlations from t and df). Present on every row. Raw levels are not comparable across literatures and in four are not comparable within one (size, trust, habits, eis show per-study median absolute effects spanning four to seven orders of magnitude — a percent-versus-decimal split, not heterogeneity). Read effect_units and data_layer/units.json before touching it: dst's negative values are the favourable direction (electricity saved), size/trust negative means a LARGER size premium, migrant stores a negative inverse elasticity (use -1/effect and a delta-method se), forward's null of interest is 1 rather than 0, and house_prices and price_puzzle store proportions the papers report as percentages. 75 class rows are not valid correlations (2 outside [-1,1], to 1.372; 73 at exactly ±1 with positive standard errors, 72 from one study) and publication-bias inference for that literature is not robust to them."
      },
      {
       "name": "se",
-      "type": "number"
+      "type": "number",
+      "description": "The standard error attached to that same estimate, on the same scale, and strictly positive by construction — non-positive values were dropped, so every surviving row has a usable inverse-variance weight. It is read from the source column named in se_col on 45,424 rows and reconstructed on 4,245 (8.5%), which se_is_derived flags: from a reported t-statistic (activism, gasoline), as the mean of two asymmetric confidence bounds (house_prices), or from degrees of freedom as sqrt((1-r^2)/df) (reforms, remittances)."
      },
      {
       "name": "t_stat",
-      "type": "number"
+      "type": "number",
+      "description": "The estimate's significance ratio, computed here in float64 as effect/se — exact on all 49,669 rows, with the sign always following effect because se is positive. It is what tells you whether a published estimate cleared conventional significance, and it is the quantity the caliper and publication-bias diagnostics on this site are built on. It is NOT the t-statistic printed in the source file, so it cannot be used as an independent check that the effect/se pairing is right — even though that pairing was originally chosen by reproducing the source's reported t. Where a source does ship its own t, ours differs on a real minority of rows (armington: 30% of 3,524 rows differ from `tstats` by more than 0.1% relative; sigma: 14.5% of its 642 non-null reported t's differ by more than 0.01), usually because the source's column is a winsorised or adjusted copy. Precision matters at thresholds: 96 estimates sit within 1e-9 of |t|=1.96 and 26 exactly on it, and pandas' default CSV parse moves the caliper counts (508/633 from the Parquet against 503/639), so read the Parquet or pass float_precision='round_trip'."
      },
      {
       "name": "precision",
-      "type": "number"
+      "type": "number",
+      "description": "The inverse-variance weight that meta-analysis software (FAT-PET, PEESE, funnel plots) expects as an input, stored as exactly 1/se. It exists purely so those routines can be run without a preparation step. It carries no information that se does not — verified equal to 1/se on all 49,669 rows with zero difference — so weighting by both precision and se double-counts, and any 'agreement' between a precision-weighted and an se-based result is arithmetic, not corroboration. Its range, 5e-06 to 1.16e7, is the mirror image of the tiny-standard-error tail: a precision-weighted mean on some literatures is effectively decided by a handful of estimates unless you winsorise first."
      },
      {
       "name": "n_obs",
-      "type": "number"
+      "type": "number",
+      "description": "The number of observations in the PRIMARY study's own regression — the sample behind that one estimate, not the number of estimates and not any meta-analysis count — expressed always as a count. The source column was chosen by the shape of its values rather than by its name: integral columns with a plausible median are preferred, a log-stored sample size is exponentiated (students) and the result rounded, and a column that is really a row ordinal is rejected. This is the column MAIVE instruments precision with, and three things break that use. 90 of gasoline's 701 rows record n_obs = 1, which is a missing-value code rather than a sample size; six pooled literatures (climate, gasoline_price, scc, skill, trust, water) carry none at all; and coverage inside a literature can be far thinner than the 93.6% headline suggests — inflation has 20 values for 702 rows, alphas 979 of 1,019, frisch 516 of 532. Names genuinely lie here: reforms' `obs` and remittances' `Obs` are strictly increasing row ordinals, and the per-source codebooks label every n_obs role as 'name-match only, not verified'."
      },
      {
       "name": "df",
-      "type": "number"
+      "type": "number",
+      "description": "Degrees of freedom of the primary study's regression (its sample size minus the estimated parameters) as reported in the source file — median n_obs minus df is 6 to 9 in the literatures carrying both. Only four of the 41 literatures ship it: reforms, remittances, resource_curse and dst. 97.1% null, and null means the source file had no such column, not that the quantity is unknown — nothing here reconstructs it, so it is unusable as a general sample-size proxy. Where it is present it is usually load-bearing rather than descriptive: in reforms, remittances and resource_curse the stored se equals sqrt((1-effect^2)/df) on 100% of rows, so df fully determines those weights, whereas dst's df is unrelated to its stored effect and se (that identity holds on 0% of dst rows) and runs to 3.69 million against an effect measured in percent."
      },
      {
       "name": "pcc",
-      "type": "number"
+      "type": "number",
+      "description": "A partial correlation coefficient copied verbatim from the source file, present on 8,000 rows across eight literatures, and intended as the scale-free measure that makes effects comparable. It is populated by matching the source column NAME against ^(pcc|partial_correlation)$ — nothing computes it and nothing checks what it correlates. Name-matching makes this column both redundant and misleading. In seven of the eight literatures (class, competition, education, finance_growth, incentives, resource_curse, students) it is byte-identical to `effect`, because the same source column is the effect, so it adds nothing. The eighth, dst, is the trap: dst's effect is a percent change in electricity consumption and its pcc is a different quantity entirely (89 rows, median -0.033 against effect median -0.40, matching effect on only 3% of rows). Meanwhile the two literatures whose effect IS a partial correlation but was computed here from t and df — reforms (245 rows) and remittances (490) — carry no pcc at all. To select partial-correlation estimates use effect_units == 'partial correlation coefficient' (9 literatures, 8,646 rows), never pcc.notna()."
      },
      {
       "name": "se_pcc",
-      "type": "number"
+      "type": "number",
+      "description": "The standard error belonging to `pcc`, copied under the same name-only rule (se_pcc / pcc_se / PCCSE / 'SE PCC'), on 7,911 rows in seven literatures. Like pcc it is a duplicate, not extra information: it equals `se` on every row where it is present, in all seven literatures. Its coverage does not even track pcc's — dst has 89 pcc values and zero se_pcc, because dst's source PCCSE column exists but is blank on all 162 rows, so `se_pcc.notna()` is not a test for 'this row has a usable partial correlation'."
      },
      {
       "name": "pub_year",
-      "type": "number"
+      "type": "number",
+      "description": "Calendar year the primary study appeared, carried over from each source file's own publication-year column and accepted only after its values were checked to be years — a candidate column passes only if its median falls between 1900 and 2030, so a standardised regressor that merely happens to be named publication_year is rejected and the field left null instead of wrong. Populated on 36,317 of 49,669 rows (73.1%) from 27 of the 41 literatures, spanning 1951–2024. `students` does not store an integer year: 858 of its 861 rows carry a mid-month decimal date (fractional parts are (m−0.5)/12, so 1978.0417 is January 1978), so floor it before grouping or counting years. Fourteen literatures carry no publication year at all, and the value gate is a median test on a whole column — it protects you from the wrong column, not from a sentinel cell inside the right one."
      },
      {
       "name": "citations",
-      "type": "number"
+      "type": "number",
+      "description": "How often the primary study had been cited at the moment that literature's own authors did their coding — each meta-analysis's citation variable passed through unchanged, with no rescaling, no common source and no common as-of date. Present on 31,989 rows (64.4%) from 25 literatures, spanning −2.702 to 15,628. This column is not one scale. Thirteen literatures hold raw counts, nine hold something logged (students is a standardised regressor — 26 negative values, min −2.702), and water holds citations per year, with sigma and electricity non-integer on a similar rate-like scale. Nothing in the column name or dtype distinguishes them, and the counts are frozen at different collection dates besides, so do not pool, rank, or regress on citations across literatures without checking the scale within each one first."
      },
      {
       "name": "impact_factor",
-      "type": "number"
+      "type": "number",
+      "description": "A journal-standing score for the outlet the estimate was published in, taken from whatever prestige column the source file happened to carry — usually a journal impact factor, but SCImago SJR in scc and a recursive/discounted impact factor in price_puzzle. Present on 35,908 rows (72.3%) from 27 literatures, 0 to 18.151. Zero is a code, not a measurement — 3,643 values are exactly 0, and in migrant and water a 0 means the item is not a journal article at all, so treating 0 as a low-prestige journal biases any prestige gradient. Because the underlying metric and vintage differ by literature (raw IF vs SJR vs recursive IF, on ranges as far apart as 0–0.12 and 1.9–5.1), the column is comparable within a literature and not across them."
      },
      {
       "name": "published",
-      "type": "number"
+      "type": "number",
+      "description": "A 0/1 flag marking estimates that come from a journal article rather than a working paper, dissertation or other unrefereed source; it is filled only from a source column whose values are strictly 0 and 1, so a differently coded publication variable is skipped and left null rather than coerced. Present on 11,600 rows (23.4%) from just 11 of the 41 literatures. In two of the eleven literatures the flag has no variation at all — activism (1,254 rows) and size (1,631 rows) are all 1s — so any pooled regression on it is identified only by the other nine, whose base rates run from 0.065 (reforms) to 0.912 (scc). A null means the source file carried no such column, never 'unpublished'; 77% of the table is null."
      },
      {
       "name": "top_journal",
-      "type": "number"
+      "type": "number",
+      "description": "A 0/1 flag for whether the outlet counts as a top journal by that literature's own definition, which is not harmonised across the table — alphas is coded against a top-3 set while the other six literatures use an unlabelled `top` column. Present on 12,214 rows (24.6%) from only 7 literatures. The shares (0.071 to 0.312) reflect different definitions as much as different literatures, since a top-3 set and an unspecified 'top' set are not the same object — do not read the column as one consistent prestige tier. A null does not mean 'not a top journal': size codes the concept in a column named topjour that the name-based matcher never sees, so 1,631 of its rows are null rather than 0."
      },
      {
       "name": "country",
-      "type": "string"
+      "type": "string",
+      "description": "Free text naming the economy or economies whose data the estimate was produced from — the sample's country, not the authors' — copied verbatim from the source file with only missing-value markers stripped. Present on 36,189 rows (72.9%) from 26 literatures as 324 distinct strings, with no controlled vocabulary of any kind. Grouping by this column across literatures splits the United States into three groups of 8,279 / 4,046 / 1,667 rows, because the spellings are literature-local. Some values are not countries at all: 864 rows are comma-separated country lists, 112 (house_prices) are opaque assen_N codes, and all 61 euro rows hold the NUMBER of countries in the sample rather than a name, because the matcher accepted a column called `countries`."
      },
      {
       "name": "country_id",
-      "type": "number"
+      "type": "number",
+      "description": "A numeric index of the sample country that is local to one literature's own file — a row number in that meta-analysis's country list, used by several of the source papers as a second clustering dimension. Present on 19,380 rows (39.0%) from 11 literatures, running 1 to 157 with no shared numbering. Like study_id, this is unique only WITHIN a dataset — id 1 is the USA in education and students but Afghanistan in eis and Argentina in sigma — so grouping, joining or clustering on the bare column merges unrelated countries. Use (dataset, country_id). It is not even 1:1 with the country name inside armington and migrant, where one id covers up to 3 and 4 different country strings."
      },
      {
       "name": "is_usa",
-      "type": "number"
+      "type": "number",
+      "description": "1 when the estimate's underlying data are for the United States, 0 when they are for somewhere else; it is filled only from a source column whose values are strictly 0/1, so a US indicator coded any other way is skipped rather than converted. Present on 11,232 rows (22.6%) from 13 literatures, of which 5,627 are 1s. A null is not a 0: 77% of the table has no flag, including whole literatures (armington, class, excess_sensitivity, eis) whose `country` string says USA on thousands of rows, so filtering on is_usa==0 silently discards them rather than selecting non-US estimates. is_usa and is_europe are mutually exclusive but not exhaustive — 3,206 rows are 0 on both — and 1,736 rows carry is_usa with no is_europe at all."
      },
      {
       "name": "is_europe",
-      "type": "number"
+      "type": "number",
+      "description": "1 when the estimate's underlying data are European, 0 otherwise, using each source literature's own idea of which countries count as Europe — that boundary was never harmonised. The sparsest of the geography columns: 9,496 rows (19.1%) from 9 literatures, and only 1,517 of those are 1s. Four literatures carry is_usa but no is_europe (1,736 rows), so a 0 in the pooled US column cannot be read as 'Europe' and there is nothing here to distinguish 'not Europe' from 'Europe was never coded'. Because each source drew the boundary itself (does the UK, Turkey or Russia count?), the 0.09-to-0.34 spread in European shares is partly definitional and should not be read as differing geographic coverage."
      },
      {
       "name": "data_start",
-      "type": "number"
+      "type": "number",
+      "description": "First year of the sample period the primary estimate was actually estimated on — a property of the underlying data, not of the paper, and it can be a century before publication. Present on 20,094 rows (40.5%) from 15 literatures, running 1833 to 2020. Coverage is only 40% and it barely overlaps the sample-period column with the widest coverage: 15 literatures carry data_start/data_end, 19 carry data_midyear, and only 7 carry all three, so a filter on data_start drops literatures that do describe their sample period, just in a different column. The year gate is a median test over the whole column, so it would not null a sentinel year inside an otherwise valid column — none survive in this release, but the guarantee is about the column, not the cell."
      },
      {
       "name": "data_end",
-      "type": "number"
+      "type": "number",
+      "description": "Last year of the sample period the estimate was estimated on. It is a data date, not a publication date, and lags pub_year by a variable and often long gap. Populated on exactly the same 20,094 rows as data_start, from the same 15 literatures, running 1913 to 2020. Present on only the same 40.5% of rows as data_start, and null for all 12 literatures that ship only a midyear — do not read a null as an open-ended sample. A 157-year maximum span and 1,039 single-year rows mean 'sample period' covers everything from one cross-section to a long historical series, so any recency measure built on data_end alone weights those identically."
      },
      {
       "name": "data_midyear",
-      "type": "number"
+      "type": "number",
+      "description": "Midpoint of the sample period behind the estimate, and the broadest recency measure in the table: it is available for 19 literatures including 12 that ship no start or end year at all. Where all three exist it is arithmetically the midpoint, equal to (data_start + data_end)/2 to a mean deviation of −0.007 years. Present on 31,188 rows (62.8%), spanning 1850 to 2021."
      },
      {
       "name": "is_panel",
-      "type": "number"
+      "type": "number",
+      "description": "Whether the primary study behind this estimate used panel data (units followed over time), as the source literature's own coder recorded it: 1 = panel, 0 = the coder marked it not a panel, null = that literature never coded the concept. It is copied from a single 0/1 column in the source file matched by name (`panel`, `paneldata`, `data_panel`, `Panel`, `PANEL`); it is never inferred from data_start/data_end or n_obs. Null is not zero and zero is not cross-section. Only 19 of 41 literatures populate it (23,272 rows, 46.9%). `finance_growth` stores it as a sparse 1-or-blank indicator — 833 non-null values, every one 1.0, out of 1,334 rows — so fillna(0) is correct there and silently wrong in the 22 literatures where null means \"never coded\". Of the 13,469 rows with is_panel==0, 6,722 have is_cross_section null, because education, resource_curse, remittances, armington and incentives name their cross-section dummy `cross`/`CROSS`/`Cross`/`data_cross`, which the harmoniser's pattern does not match; the design is coded upstream and lost here."
      },
      {
       "name": "is_cross_section",
-      "type": "number"
+      "type": "number",
+      "description": "Whether the primary study's data is a single-period cross-section, as coded by the source literature; 1 = cross-section, 0 = not, null = the literature did not code it. Populated for 15 of 41 literatures (21,275 rows, 42.8%) from one name-matched 0/1 column such as `cs`, `csection`, `crosssec`, `crosssectional_data` or `data_cross_section`. It carries no information at all for house_prices: the matched source column `crosssec` is zero on every row, so all 1,555 house_prices values are 0 rather than missing. The three design flags are a partition only in the three literatures that carry all of them (house_prices, sigma, water — 5,048 rows, where is_panel+is_cross_section+is_time_series is exactly 1 on every row); elsewhere the trio is partial. Twelve literatures fill is_panel with no is_cross_section, and eight the reverse, so a cross-tabulation of the two runs on different, non-overlapping sets of studies."
      },
      {
       "name": "is_time_series",
-      "type": "number"
+      "type": "number",
+      "description": "Whether the primary study estimated on a single time series (one unit observed over time), as coded by the source literature: 1 = time series, 0 = not, null = not coded there. The thinnest of the three design flags — only 8 of 41 literatures carry it (10,810 rows, 21.8%), from source columns named `ts`, `tseries`, `timeser`, `timeseries`, `TIME_SERIES`. Because so few literatures fill it, `is_time_series != 1` selects mostly rows where nobody asked the question, not rows that are panel or cross-section. resource_curse fills it but with a source column that is 1 on only 0.7% of rows, so it is close to a constant there. Do not read the table-wide mean (0.504 over non-nulls) as a property of the collection: it is dominated by the handful of literatures that happen to code it, chiefly house_prices and sigma."
      },
      {
       "name": "freq_annual",
-      "type": "number"
+      "type": "number",
+      "description": "Whether the primary study's data is sampled yearly, as the source literature coded it (1 = annual, 0 = not annual, null = frequency not coded in that literature). Filled for 10 of 41 literatures (17,748 rows, 35.7%) from a source column named `annual`, `annu` or `yearly`. house_prices codes annual data in a column called `annually`, which the pattern does not match, so freq_annual is null on all 1,555 of its rows while freq_quarterly and freq_monthly are filled — a null here can mean \"annual\" rather than \"unknown\". The three frequency flags are also not exhaustive: there is no slot for daily, weekly, biannual or other, so 253 rows whose literature carries all three flags (size 111, frisch 84, water 58) have all three set to 0, meaning \"some other frequency\", not missing. frisch alone codes 11.6% daily and 31.0% biannual observations that reach no harmonised column."
      },
      {
       "name": "freq_quarterly",
-      "type": "number"
+      "type": "number",
+      "description": "Whether the primary study's data is quarterly, as coded by the source literature (1/0/null as above). Present in 9 of 41 literatures (16,097 rows, 32.4%), from a source column named `quarterly`, `quart` or `quar`."
      },
      {
       "name": "freq_monthly",
-      "type": "number"
+      "type": "number",
+      "description": "Whether the primary study's data is monthly, as coded by the source literature (1/0/null as above). The best-covered frequency flag — 13 of 41 literatures, 21,715 rows (43.7%) — matched from a source column named `monthly` or `mon`. Coverage differs from its two siblings, so the three columns do not describe the same set of rows: 21,715 rows have freq_monthly, 17,748 have freq_annual, and only 7,012 have all three. Reading a 0 as \"lower than monthly\" is wrong wherever the sibling flags are absent. In activism the matched column is an event-study window descriptor (`Monthly`) rather than a data-sampling frequency, so its meaning there is not the same as in, say, size or risk."
      },
      {
       "name": "method_ols",
-      "type": "number"
+      "type": "number",
+      "description": "Whether the estimate came from a least-squares regression, as the source literature's own estimator dummy recorded it: 1 = OLS, 0 = the literature coded estimators and this one is not OLS, null = no OLS dummy was found. The widest-covered method flag, filled for 24 of 41 literatures (34,022 rows, 68.5%) from a source column named `ols`, `pols` or `ols_method`."
      },
      {
       "name": "method_iv",
-      "type": "number"
+      "type": "number",
+      "description": "Whether the estimate came from an instrumental-variables estimator, as coded by the source literature; the harmonised column pools source dummies named `iv`, `tsls`, `2sls`, `sls` and `instrument`, so it means \"IV family\" rather than any one estimator. Filled for 17 of 41 literatures (22,671 rows, 45.6%). Two literatures store it as a sparse 1-or-blank indicator rather than a 0/1 dummy: resource_curse has 157 non-null values out of 605 rows and every one is 1.0, finance_growth 223 of 1,334, all 1.0. Their blanks mean \"not IV\", so a per-literature share computed as the mean of non-nulls returns 100%. In the other direction, frisch codes IV in `sls_iv` (14.4% of rows) and forward in `Instrumental_variables` (2.8%), and both come out null because the names fall outside the pattern. Separately, a value guard deliberately rejects continuous columns named `instrument` in beauty, discrate, education and resource_curse — those hold model-averaging statistics, not dummies — so some nulls are a refusal to fill rather than an absence."
      },
      {
       "name": "method_gmm",
-      "type": "number"
+      "type": "number",
+      "description": "Whether the estimate came from a GMM estimator, as coded by the source literature (1/0, null where not coded). The narrowest-scoped of the method flags in definition — it only ever matches a source column named exactly `gmm` — and it is filled for 10 of 41 literatures, 14,994 rows (30.2%). It captures only the generic GMM dummy and drops the variants shipped beside it: finance_growth also codes `GMMSYS` (171 rows) and `GMMlev`, none of which reach any harmonised column, so its method_gmm (186 rows, all 1.0) understates GMM use in that literature. Like method_iv, finance_growth stores it sparsely — non-null means yes, blank means no — while the other nine literatures use true 0/1 dummies."
      },
      {
       "name": "method_ml",
-      "type": "number"
+      "type": "number",
+      "description": "Intended as a likelihood-estimator flag, this column carries whichever source dummy named `ml`, `mle` or `bayes` appears first in the source file's column order, so what it means is literature-specific rather than uniform. Filled for 9 of 41 literatures, 17,308 rows (34.8%). In habits it is the source's `bayes` dummy (19.8% of rows), not its `ML` dummy (2.5%), because `bayes` sits at column position 20 and `ML` at 22 and the first match wins; in eis the same rule picks `ml` (position 20) and discards `bayes` (position 24). So method_ml=1 means \"Bayesian\" in one literature and \"maximum likelihood\" in another, and habits' actual ML estimates are not flagged anywhere. Do not pool this column across literatures without checking which source column each one resolved to."
      },
      {
       "name": "method_fe",
-      "type": "number"
+      "type": "number",
+      "description": "Whether fixed effects are involved in the specification, as coded by the source literature — sometimes as an estimator choice, sometimes as a control included alongside another estimator. The least-covered method flag: 8 of 41 literatures, 9,816 rows (19.8%)."
      },
      {
       "name": "horizon",
-      "type": "number"
+      "type": "number",
+      "description": "The point in time after the shock at which a dynamic (impulse-response) estimate is measured — populated only by the two impulse-response literatures, house_prices (1,555 rows) and price_puzzle (1,395), and null for the other 39. Rows that share a study and an impulse response differ only in this column, so they are repeated readings of one response rather than independent estimates. The unit is not the same in the two literatures and nothing in the table says so: house_prices horizons (1–40) are QUARTERS after a 1pp interest-rate rise, price_puzzle's (3, 6, 12, 18, 36) are MONTHS — so horizon == 12 means three years in one literature and one year in the other, and averaging or regressing on the raw column mixes the two. price_puzzle also carries two non-time sentinel codes taken from its source file: 99 = the trough of the response (200 rows) and 88 = the peak (135), an assignment inferred from lags.do rather than stated in the file; filter to horizon <= 36 for the paper's own sample. Finally, a null horizon does not mean a single horizon — inflation's source ships a text Horizon column ('long_run' on 838 rows, 'short_run' on 29) that was coerced to numeric and lost, and remittances silently keeps only its long-run coefficients."
      },
      {
       "name": "effect_units",
-      "type": "string"
+      "type": "string",
+      "description": "What one unit of `effect` means for that literature — an elasticity, a partial correlation, US dollars per tonne of carbon, degrees Celsius — assigned per dataset from data_layer/units.json and therefore constant within every dataset (verified) and taking 16 values across the table. It is the only column that makes `effect` interpretable, and the first thing to read before comparing anything across literatures."
      },
      {
       "name": "source_file",
-      "type": "string"
+      "type": "string",
+      "description": "The name of the file inside the original replication package that this row's numbers were read from — the provenance handle for tracing a value back to what the authors published, not a path on this site. Always present, constant within a dataset, 41 distinct values for 41 literatures, and often unrelated to the dataset id (bma comes from determinants.xls, spillovers from data.xls, trust from trust_data.csv). It is neither fetchable nor a complete address of what was read: the containing archive and the spreadsheet tab are stripped. eis's `eis/eis.dta` came out of eis.zip and gasoline's `gas_income_revision.dta` out of data.zip; activism.xlsx was read from sheet \"Data\" and determinants.xls from sheet \"stata\", and none of that is in this column. Nor does it identify shared inputs — bma and spillovers are the horizontal and vertical halves of one 4,147-row FDI database that appears here under two different filenames. Use api/v1/codebooks/{dataset}.json for source_archive and source_sheet, and /data/v1/{dataset}/{dataset}.parquet for the mirror you can actually load."
      },
      {
       "name": "effect_col",
-      "type": "string"
+      "type": "string",
+      "description": "Names the exact source column the `effect` value in this row was read from, so any published number can be traced back and re-checked; constant within a dataset. It is only meaningful paired with `dataset` — 30 distinct values cover 41 literatures, with `pcc` serving as the effect column in five (class, education, finance_growth, incentives, students) and `e` in four. In four literatures it is not a column name but a formula recording that the effect was constructed: `pcc_from(lib,df)` (reforms) and `pcc_from(TSTAT_L,DF)` (remittances) are partial correlations rebuilt as t/sqrt(t²+df), `rescaled(Estimate x100.0 x Multiplicator...)` (activism) is a scale reconstruction, and price_puzzle's innocuous-looking `res` names a column created by reshaping the wide M3R/M6R/... impulse-response pairs and does not exist in its mirror at all. There is no effect_is_derived flag to match se_is_derived, so parsing this string is the only way to learn that an effect was transformed rather than read."
      },
      {
       "name": "se_col",
-      "type": "string"
+      "type": "string",
+      "description": "Names the exact source column the `se` value was read from — the standard-error half of the provenance pair, constant within a dataset. Twenty distinct values across 41 literatures, so like effect_col it identifies a column only in combination with `dataset`: 19 literatures simply say `se`. A plain column name here does not mean the paper printed that standard error. inflation resolves to `SE_win`, already winsorised in the source file; size to `se_calc`, computed inside the source; scc to `stdlow` and climate to `se_low`, standard errors built from a confidence bound, which is what those papers' own do-files use. Five values are explicit formulas instead — `derived:|e/tstat|` (gasoline), `mean:SE_l+SE_u` (house_prices), `se_pcc_from(df)` and `se_pcc_from(DF)` (reforms, remittances), and activism's derived expression — and these are exactly the rows where se_is_derived is True."
      },
      {
       "name": "se_is_derived",
-      "type": "string"
+      "type": "string",
+      "description": "True where this pipeline reconstructed the standard error instead of reading one, and False where it read a standard-error column straight out of the source file. It is True on 4,245 rows (8.5%) in exactly five literatures: activism and gasoline, where se = |effect / reported t|; house_prices, where se = (SE_l + SE_u)/2 from the two confidence bounds; and reforms and remittances, where se = sqrt((1-r²)/df) alongside a partial correlation rebuilt from t and df. False does not mean \"the standard error as the paper reported it\" — it only means the harmoniser copied a column. inflation's is winsorised (`SE_win`), size's is computed inside the source (`se_calc`), scc's and climate's are built from a confidence bound (`stdlow`, `se_low`), and all four are False. The flag also says nothing about the effect: reforms and remittances have derived effects and activism a rescaled one, which only effect_col reveals. Finally, the type is inconsistent across formats — real bool in the parquet, the text True/False in the CSV, and declared \"string\" in api/v1/datapackage.json — so a schema-driven reader gets strings where a parquet reader gets booleans."
      }
     ]
    }
