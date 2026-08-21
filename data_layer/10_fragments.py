@@ -307,13 +307,16 @@ def _known_issues():
 
 
 _ki = _known_issues()
+_dep_ver = (api.get("harmonised_table") or {}).get("version") or "the current"
 if _ki:
     _items = "\n".join(f"<li>{x}</li>" for x in _ki)
     w("known_issues.html",
-      "<p>These defects are present in the files published here. Those in the pooled "
-      "table are also in the archived v1.0.0 deposit, which ships it; the per-dataset "
-      "mirrors are not deposited. They are documented and retained rather than silently "
-      "altered or dropped. Nothing else in the table is affected.</p>\n"
+      # The deposit version is read, not hardcoded. This said v1.0.0 and stayed saying it
+      # after 1.1.1 was deposited, which made the sentence false the moment it mattered.
+      f"<p>These defects are present in the files published here. Those in the pooled "
+      f"table are also in the archived v{_dep_ver} deposit, which ships it; the per-dataset "
+      f"mirrors are not deposited. They are documented and retained rather than silently "
+      f"altered or dropped. Nothing else in the table is affected.</p>\n"
       "<ul>\n" + _items + "\n</ul>\n")
 else:
     # emit an EMPTY file rather than none, so the page inlines nothing and the box vanishes

@@ -349,7 +349,7 @@ packages, are on the <a href="/">main catalogue</a>.</div>
 \t\t\t</div>
 \t\t</div>
 \t</div>
-\t<!-- No #sidebar on purpose. The 44-row, five-column catalogue IS this page content,
+\t<!-- No #sidebar on purpose. The catalogue table IS this page content,
 \t     and beside a 15rem rail it had 576px to work in: "codebook" broke as "codebo/ok"
 \t     and rows ran to five lines. With no sidebar #page falls back to one column (the
 \t     :not(:has(#sidebar)) rule) and the table gets the full sheet. Nothing is lost:

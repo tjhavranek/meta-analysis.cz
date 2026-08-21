@@ -4,6 +4,11 @@
 > Concept DOI (cite this): **https://doi.org/10.5281/zenodo.21773678**
 > Version 0.9.0-beta: **https://doi.org/10.5281/zenodo.21773679**
 > Version 1.0.0: **https://doi.org/10.5281/zenodo.21789702**
+> Version 1.1.1: **https://doi.org/10.5281/zenodo.22050272** — current, deposited 2026-08-21.
+>
+> Zenodo strips punctuation from uploaded filenames: the 1.1.1 archive is stored as
+> `ZENODOUPLOADmetaanalysisczv1.1.1.zip`, not the hyphenated name it was uploaded under,
+> and a published file cannot be renamed. Never construct that URL; ask the record.
 > The steps below describe how it was made and how to make the next version.
 
 > **READ THIS BEFORE FOLLOWING THE STEPS.** Every count and folder name below describes
