@@ -7,18 +7,19 @@ and referenced it from `.zenodo.json` without actually publishing it.
 
 Run in order. `09_verify.py` is the gate and must print `ALL CHECKS PASS`.
 
-**The site builders have an order too, and getting it wrong is silent.** After the numbered
-scripts, run them in exactly this sequence:
+**One command runs the whole thing, in the right order.**
 
-    python tools/board/build_zstat_figure.py     # writes the figure fragment AND t_distribution.csv
-    python tools/board/build_datasets_page.py    # INLINES that fragment into /datasets/
-    python tools/generate_seo.py                 # LAST: re-adds the seo-meta block
+    python data_layer/rebuild.py            # rebuild and publish
+    python data_layer/rebuild.py --check    # rebuild and fail on drift; publishes nothing
+    python data_layer/rebuild.py --data     # data layer only
 
-`build_datasets_page.py` inlines the figure, so running it first publishes the *previous*
-figure: on release 1.1.1 that left the page saying 49,689 in the figure title and caption while
-saying 49,669 three times elsewhere, and every gate passed, because each file was internally
-consistent. `generate_seo.py` must be last because `build_datasets_page.py` rewrites
-`datasets/index.html` without the `<!-- seo-meta -->` block.
+Use it rather than running the scripts by hand. Two steps are order-sensitive in a way that
+fails *silently*: `build_datasets_page.py` inlines the figure fragment, so running it before
+`build_zstat_figure.py` republishes the previous figure -- on release 1.1.1 that left the page
+saying 49,689 in the figure title and caption while saying 49,669 three times around it, with
+every gate green, because each file was internally consistent. And `generate_seo.py` must run
+last, because `build_datasets_page.py` rewrites `datasets/index.html` without the seo-meta
+block. CI calls the same command, so there is one copy of the order and not three.
 
 **Pin the toolchain first: `pip install -r data_layer/requirements-pinned.txt`.** pandas and pyarrow both write their versions into every Parquet file, so an unpinned rebuild changes all 45 dataset checksums without changing any data.
 
