@@ -39,7 +39,7 @@
    "scheme": "url"
   },
   {
-   "identifier": "https://github.com/tjhavranek/meta-analysis.cz/tree/BUILD_COMMIT_SHA",
+   "identifier": "https://github.com/tjhavranek/meta-analysis.cz/tree/b611741a9f16576f6aff1049e5d93994a2f3cc64",
    "relation": "isCompiledBy",
    "scheme": "url"
   }
@@ -49,5 +49,5 @@
  "version": "1.1.1",
  "concept_doi": "10.5281/zenodo.21773678",
  "doi": "10.5281/zenodo.22050272",
- "_BUILD_COMMIT_NOTE": "Before uploading, replace BUILD_COMMIT_SHA in related_identifiers with the full 40-character SHA of the commit the final zip was built from. A branch name would not pin anything, because a branch can move; a commit SHA cannot. This is filled in by a metadata-only commit made AFTER the build commit, which is why it is a placeholder here: a file cannot contain the hash of the commit that contains it, and .zenodo.json is Zenodo form metadata rather than part of the uploaded zip, so editing it does not change the artifact."
+ "_BUILD_COMMIT_NOTE": "The deposited zip was built from commit b611741a9f16576f6aff1049e5d93994a2f3cc64 in a clean clone, and reproduced byte for byte there and in the working tree. This identifier is a commit SHA rather than a branch because a branch moves. It is written by a metadata-only commit made after the build commit: a file cannot contain the hash of the commit containing it, and .zenodo.json is Zenodo form metadata rather than part of the uploaded zip, so setting it afterwards does not change the artifact."
 }
