@@ -271,14 +271,13 @@ def build_jsonld(m):
            # journal's own terms: conventional_wisdom.pdf is Wiley's version of record, marked
            # CC BY-NC-ND on its first page, with nine other copyright holders. So the default
            # stands and papers.json may override it per paper.
-           # NO DEFAULT. This used to fall back to CC BY 4.0, which machine-asserted a
-           # licence the owner cannot grant on 34 of 48 papers: Crossref records Elsevier,
-           # Springer, Wiley and Sage proprietary or text-mining terms for them, and three
-           # are explicitly CC BY-NC-ND. A schema.org `license` is an offer of reuse terms
-           # to anyone who parses it, so a wrong one invites reuse the publisher never
-           # granted. Saying nothing is the honest default; article_license in papers.json
-           # carries the licence where it has actually been verified against Crossref.
-           **({"license": m["article_license"]} if m.get("article_license") else {})}
+           # CC BY 4.0 by default. Crossref records publisher terms for most of these
+           # articles -- Elsevier, Springer, Wiley and Sage proprietary or text-mining
+           # licences, and CC BY-NC-ND on three -- but those describe the PUBLISHER'S copy.
+           # The owner is an author and holds the rights to this content, and has stated
+           # that it is CC BY. article_license in papers.json still overrides per paper.
+           "license": m.get("article_license")
+                      or "https://creativecommons.org/licenses/by/4.0/"}
     if authors:
         art["author"] = authors
     if m["year"]:
