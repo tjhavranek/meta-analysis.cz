@@ -47,7 +47,7 @@ except Exception as e:
 # so from 1.0.0 onwards it compared 48,355 live rows against the beta's 54,076 and reported a
 # failure on every run -- a permanently red check says nothing, and trains you to ignore it.
 # When the live version has no deposit yet, that is a fact to state, not a failure.
-DEPOSITS = {"0.9.0-beta": "21773679", "1.0.0": "21789702"}
+DEPOSITS = {"0.9.0-beta": "21773679", "1.0.0": "21789702", "1.1.1": "22050272"}
 zen = None
 try:
     _idx = json.load(io.BytesIO(urllib.request.urlopen(
@@ -59,8 +59,17 @@ try:
               f"compare it against. Deposit it, add its record id to DEPOSITS, and this check "
               f"resumes.")
     else:
-        url = (f"https://zenodo.org/records/{_rec}/files/"
-               f"ZENODO-UPLOAD-meta-analysis-cz-v{_lv}.zip?download=1")
+        # ASK the record which file it holds; do not construct the name. Zenodo stripped the
+        # hyphens out of ZENODO-UPLOAD-meta-analysis-cz-v1.1.1.zip on upload, storing it as
+        # ZENODOUPLOADmetaanalysisczv1.1.1.zip, so a constructed URL 404s -- and a published
+        # file cannot be renamed. The 0.9.0-beta and 1.0.0 records kept their hyphens, so this
+        # is not stable across records and must be read rather than assumed.
+        _meta = json.load(io.BytesIO(urllib.request.urlopen(
+            f"https://zenodo.org/api/records/{_rec}", timeout=120).read()))
+        _zips = [f["key"] for f in _meta.get("files", []) if f.get("key","").endswith(".zip")]
+        if len(_zips) != 1:
+            raise RuntimeError(f"record {_rec} holds {len(_zips)} zips, expected exactly 1")
+        url = f"https://zenodo.org/records/{_rec}/files/{_zips[0]}?download=1"
         z = zipfile.ZipFile(io.BytesIO(urllib.request.urlopen(url, timeout=180).read()))
         zen = pd.read_csv(io.BytesIO(z.read("estimates_harmonised.csv")), low_memory=False)
 except Exception as e:
