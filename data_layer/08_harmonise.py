@@ -1,5 +1,5 @@
 """Tier C: harmonised estimate-level table (beta)."""
-import json, os, re, warnings; warnings.filterwarnings("ignore")
+import json, os, re, sys, warnings; warnings.filterwarnings("ignore")
 import numpy as np, pandas as pd
 import os, sys
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
@@ -162,9 +162,41 @@ for proj in sorted(man):
         # unchanged, which is why the estimator battery never flinched, but it overstates the
         # information count sevenfold and understates any iid standard error by sqrt(7)=2.65.
         # 90_roundtrip could not see it either: it compares SETS, so duplicates are invisible.
-        # Found by the Codex audit, 2026-08-04. Only `horizon` varies within a block, so
-        # dropping duplicates on every other column is exact, not a heuristic.
-        if rs.get("dedupe_on_all_but"):
+        # Found by the Codex audit, 2026-08-04. That fix deduped on every column EXCEPT
+        # `horizon`, and this comment used to claim the rule was "exact, not a heuristic".
+        # It was not. `idest` 134, 135 and 179 each carry ONE inconsistent sdate/edate
+        # month-code cell, so each block split in two, 1,519 source rows collapsed to 220
+        # records instead of the 217 the source's own `idest` declares, and the reshape
+        # emitted 20 rows matching no source estimate. Those date cells reach no harmonised
+        # column -- data_start/data_end come from syear/eyear -- so the split was pure noise.
+        # Fixed at 1.1.1 by deduping on the source's identifier instead of on value equality.
+        # An output-level key like (study_id, horizon, effect, se) would NOT do: two genuinely
+        # distinct estimates can agree on every published column, and 1,489 rows elsewhere in
+        # the table do exactly that. Identity comes from the source, never from equality.
+        if rs.get("dedupe_key"):
+            k=rs["dedupe_key"]
+            if k not in df.columns:
+                sys.exit(f"{proj}: reshape dedupe_key {k!r} is not a column in the source")
+            if df[k].isna().any():
+                sys.exit(f"{proj}: reshape dedupe_key {k!r} has nulls; it cannot identify a record")
+            # Every field that can reach a harmonised column must be constant within a key
+            # block, or picking the first row silently chooses one of several answers.
+            allowed={k, rs["id_col"]} | set(rs.get("varies_within_key") or []) \
+                    | {c for _,a,b in rs["pairs"] for c in (a,b)}
+            varying=[c for c in df.columns
+                     if c not in allowed and df.groupby(k)[c].nunique(dropna=False).max()>1]
+            unexpected=[c for c in varying if c not in ("sdate","edate")]
+            if unexpected:
+                sys.exit(f"{proj}: fields vary within {k} and would be resolved arbitrarily: "
+                         f"{unexpected}. Add them to varies_within_key only after proving they "
+                         f"reach no harmonised column.")
+            before=len(df)
+            df=df.drop_duplicates(subset=[k]).reset_index(drop=True)
+            if len(df)!=df[k].nunique():
+                sys.exit(f"{proj}: dedupe left {len(df)} records for {df[k].nunique()} {k} values")
+            print(f"   {proj}: reshape dedupe {before} -> {len(df)} source records "
+                  f"({df[k].nunique()} distinct {k})")
+        elif rs.get("dedupe_on_all_but"):
             keep_cols=[c for c in df.columns if c not in rs["dedupe_on_all_but"]]
             before=len(df)
             df=df.drop_duplicates(subset=keep_cols).reset_index(drop=True)

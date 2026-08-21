@@ -101,7 +101,7 @@ for d in rows:
     # The two impulse-response literatures used to carry a "per horizon" tag here, warning that
     # the count was rows rather than independent estimates. The owner's ruling is that a
     # horizon-specific response IS a point estimate and should be counted as one, which is what
-    # these numbers already do -- 1,415 for price_puzzle against the paper's own "more than
+    # these numbers already do -- 1,395 for price_puzzle against the paper's own "more than
     # 1,000 point estimates". The tag contradicted the count it annotated. Each dataset's own
     # record still carries the horizon note for anyone modelling the dependence.
     horizon_note=""
@@ -208,7 +208,12 @@ def _known_issues():
                 "all; the harmonised table is a derived product and may correct or null values "
                 "the source's own formula contradicts, with the provenance recorded and a "
                 "version bump. That is scheduled for the next data revision. Until then, filter "
-                "on <code>abs(effect) &lt; 1</code> if you need strictly valid correlations.")
+                "on <code>abs(effect) &lt; 1</code> if you need strictly valid correlations. "
+                "<strong>This matters for more than tidiness.</strong> A FAT publication-bias "
+                "test on <code>class</code> is not robust to these rows: with them the "
+                "intercept is significant beyond any conventional threshold, and once they are "
+                "excluded or corrected it is not significant at all. Recomputed independently "
+                "twice with study-clustered errors.")
 
     # The same class column carries a third family the [-1,1] test cannot see: a stored
     # partial correlation of exactly 0 beside a t-statistic that is not. Computed from the

@@ -1,9 +1,9 @@
 {
  "profile": "tabular-data-package",
  "name": "meta-analysis-cz",
- "version": "1.1.0",
+ "version": "1.1.1",
  "api_version": "1.0.0",
- "data_version": "1.1.0",
+ "data_version": "1.1.1",
  "title": "meta-analysis.cz estimate-level datasets",
  "licenses": [
   {

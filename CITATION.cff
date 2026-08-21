@@ -21,14 +21,14 @@ authors:
     orcid: "https://orcid.org/0000-0002-0753-8124"
     affiliation: "Charles University, Prague"
 doi: "10.5281/zenodo.21773678"
-version: "1.1.0"
+version: "1.1.1"
 identifiers:
   - type: doi
     value: "10.5281/zenodo.21773678"
     description: "Concept DOI - always resolves to the latest version. Cite this."
   - type: doi
     value: "10.5281/zenodo.21789702"
-    description: "Version 1.0.0 specifically. Version 1.1.0 has no version DOI yet; until it is deposited, cite the concept DOI above."
+    description: "Version 1.0.0 specifically. Version 1.1.1 has no version DOI yet; until it is deposited, cite the concept DOI above."
   - type: doi
     value: "10.5281/zenodo.21773679"
     description: "Version 0.9.0-beta, superseded by 1.0.0. Kept so existing citations of the beta still resolve; do not start new work from it."
@@ -38,8 +38,8 @@ abstract: >-
   Estimate-level data from meta-analyses in economics and the social sciences,
   with the study and design characteristics hand-coded for each original paper.
   Forty-five datasets holding 66,683 rows in the converted source
-  files, 55,294 estimates after each paper's own analysis
-  selection, and a harmonised table pooling 49,689 of them across
+  files, 55,274 estimates after each paper's own analysis
+  selection, and a harmonised table pooling 49,669 of them across
   41 literatures. Each dataset ships a column-level codebook. Column
   mappings were resolved arithmetically, by requiring that the effect divided by
   its standard error reproduce the t-statistic each dataset already reports, and

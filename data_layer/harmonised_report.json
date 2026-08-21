@@ -1,5 +1,5 @@
 {
- "n_rows": 49689,
+ "n_rows": 49669,
  "n_datasets": 41,
  "columns": [
   "dataset",
@@ -425,7 +425,7 @@
   },
   "price_puzzle": {
    "included": true,
-   "n": 1415,
+   "n": 1395,
    "effect": "res",
    "se": "se",
    "se_is_derived": false,

@@ -2,7 +2,7 @@
  "name": "meta-analysis.cz data API",
  "version": "1.0.0",
  "api_version": "1.0.0",
- "data_version": "1.1.0",
+ "data_version": "1.1.1",
  "version_note": "version and api_version describe this INTERFACE. data_version describes the harmonised table, and is what croissant.json reports. They move independently.",
  "description": "Estimate-level datasets from meta-analyses in economics and the social sciences, with the hand-coded study characteristics collected for each paper.",
  "license": {
@@ -31,16 +31,16 @@
  "counts": {
   "datasets": 45,
   "rows_in_source_files": 66683,
-  "estimates_in_analysis_samples": 55294,
-  "estimates_in_harmonised_table": 49689,
+  "estimates_in_analysis_samples": 55274,
+  "estimates_in_harmonised_table": 49669,
   "literatures_in_harmonised_table": 41,
   "in_harmonised_table": 41,
   "counts_explained": "rows_in_source_files counts every row of the 45 converted files. estimates_in_analysis_samples applies each paper's own filters and is what the catalogue table shows. estimates_in_harmonised_table additionally drops literatures that duplicate another exactly, overlap one already included, or lack per-estimate precision."
  },
  "harmonised_table": {
-  "version": "1.1.0",
+  "version": "1.1.1",
   "status": "stable",
-  "n_rows": 49689,
+  "n_rows": 49669,
   "n_literatures": 41,
   "columns": [
    "dataset",
@@ -1874,7 +1874,7 @@
    "description": "Meta-analysis of 1,000 VAR estimates shows the price puzzle stems from model misspecification, not a true price effect.",
    "n_estimates": 1519,
    "n_variables": 151,
-   "n_estimates_in_literature": 1415,
+   "n_estimates_in_literature": 1395,
    "source_file": "https://meta-analysis.cz/price_puzzle/puzzle.xls",
    "source_member": null,
    "source_sheet": "stata",
@@ -1895,7 +1895,7 @@
    "in_harmonised_table": true,
    "reconciliation": {
     "n_estimates_reported_in_paper": null,
-    "n_rows_in_harmonised_table": 1415,
+    "n_rows_in_harmonised_table": 1395,
     "note": null
    },
    "excluded_from_harmonised_because": null,
@@ -1907,7 +1907,7 @@
    "rights_status": "cc-by-4.0",
    "license_url": "https://creativecommons.org/licenses/by/4.0/",
    "rights_note": "CC BY 4.0. Free to use, adapt, and redistribute, including commercially and including as training data. The only condition is credit: cite the paper named in this entry.",
-   "max_precision_weight_share": 0.0609,
+   "max_precision_weight_share": 0.0614,
    "audit_status": "domain_reviewed",
    "note": "puzzle.xls is a HYBRID layout: already long on `horizon` (7 rows per impulse response) while the response columns are WIDE and constant across those 7. Melting the wide columns once per row emitted every estimate 7 times -- what 0.9.0-beta shipped: 7,420 rows of which ~6,345 were exact duplicates, identical in every column INCLUDING horizon, so they were never additional horizons. The file provides SEVEN horizons, not five: the month horizons 3/6/12/18/36 plus the trough (MBR/SEB, horizon code 99) and the peak (MPR/SEP, horizon code 88). puzzle.do line 29 excludes `horizon~=88 & horizon~=99` from its 'all horizons' figure and its headline regressions use the five month horizons, so the paper analyses five -- but this catalogue publishes what the file contains, and the trough and peak responses were being silently discarded. All seven are now emitted from the deduplicated records: 1,415 rows (211/218/218/220/208 for the month horizons, 202 trough, 138 peak). Owner's decision 2026-08-04: list every horizon. Anyone wanting the paper's own sample should filter to the five numeric horizons. HORIZON CODES: months 3/6/12/18/36 are literal; 99 marks the trough and 88 the peak, the source file's own codes. The trough/peak assignment is inferred from lags.do, which keeps horizon==99 and models mon_bot, the months to the price trough. If that is backwards the two labels swap and no value changes. Filter to horizon<=36 for the paper's own sample."
   },

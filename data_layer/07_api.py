@@ -8,10 +8,10 @@ OUT=os.path.join(WORK,"out"); BASE="https://meta-analysis.cz"
 VERSION="1.0.0"; DATA_V="v1"
 # The DATA artefact's version, in ONE place. It was hardcoded in four, which is how a
 # consumer once saw the Croissant record say 1.0.0 while the table said 0.9.0-beta.
-DATA_VERSION="1.1.0"; DATA_STATUS="stable"
+DATA_VERSION="1.1.1"; DATA_STATUS="stable"
 # The VERSION DOI, set once Zenodo minted it. None until deposited -- publishing the
 # previous version's DOI beside a new version tells a citing reader the wrong thing.
-DATA_DOI=None   # 1.1.0 not yet deposited. Cite the concept DOI until Zenodo mints
+DATA_DOI=None   # 1.1.1 not yet deposited. Cite the concept DOI until Zenodo mints
                 # the version DOI; publishing 1.0.0's here would misdate a citation.
 
 papers={p["project"]:p for p in json.load(open(os.path.join(SITE,"tools","papers.json"),encoding="utf-8"))}
@@ -386,7 +386,7 @@ def _harmonised_fields():
     by literature, so nine columns (df, pcc, se_pcc, data_start, data_end, is_panel,
     method_ml, method_fe, horizon) had no value in that window at all. They were typed
     "number" by the [True] default and happened to be numeric in the rows nobody looked at.
-    Reading all 49,689 costs nothing.
+    Reading all 49,669 costs nothing.
 
     A column with no value ANYWHERE is declared string: nothing observed, nothing asserted.
     A value counts as numeric only if Table Schema would accept it -- nan, inf and 1_0 are

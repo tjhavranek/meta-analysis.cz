@@ -43,12 +43,15 @@ inst <- read.csv("https://meta-analysis.cz/data/v1/estimates_harmonised.csv")
 **Read the Parquet where you can, and pass `float_precision="round_trip"` where you
 cannot.** The CSV is not the problem: it carries every value at full precision and
 round-trips exactly. Pandas' default CSV parser is the problem, and it is not exact. It
-moves 17,329 of the 49,689 `se` values, 10,043 `effect` values and 9,220 `t_stat` values,
+moves 17,310 of the 49,669 `se` values, 10,026 `effect` values and 9,213 `t_stat` values,
 each by up to about 1.5e-11. So this applies to any column you read, not only the derived
 ones, and recomputing `effect / se` yourself does not avoid it.
 
 That is invisible almost everywhere and decisive at a threshold. 96 estimates sit within
-1e-9 of |t| = 1.96, so the caliper count around it comes out as 508 below and 633 above
+1e-9 of |t| = 1.96 and 26 sit exactly on it, so any count either side of that line has to
+state its convention: bins here are closed on the left, and an estimate reported as
+exactly 1.96 is counted above. On that convention the caliper comes out as 508 below and
+633 above
 from the Parquet, 503 and 639 from the same CSV at pandas' defaults, and 506 and 634 if
 you recompute the ratio from a default-parsed CSV. The figures published on this site
 quote the Parquet. Writing the CSV with more digits does not help; it makes the default
@@ -65,16 +68,17 @@ curl -s https://meta-analysis.cz/api/v1/datasets.json | jq '.datasets[] | {id, n
 
 ## The harmonised table
 
-One row per harmonised **observation**, pooled across literatures: **49,689 rows
+One row per harmonised **observation**, pooled across literatures: **49,669 rows
 from 41 literatures**. Rows are not always independent estimates — `price_puzzle`
 carries one row per impulse response per horizon (the five month horizons plus
 the trough, coded 99, and the peak, coded 88), and `house_prices` ships about
 seven horizons per impulse response. Check `horizon` before treating rows as
-independent. Version **1.1.0**.
+independent. Version **1.1.1**.
 
 1.0.0 was **smaller than 0.9.0-beta while covering more**: 48,355 rows
-against 54,076. 1.1.0 adds `finance_growth`, taking the table to 49,689 rows
-across 41 literatures. The beta repeated every `price_puzzle` estimate seven times, so
+against 54,076. 1.1.0 added `finance_growth`, taking the table to 41 literatures,
+and 1.1.1 removed 20 `price_puzzle` rows that corresponded to no source estimate,
+leaving 49,669. The beta repeated every `price_puzzle` estimate seven times, so
 roughly one row in eight of it was a duplicate. Correcting that removed more rows
 than the one added literature and two added horizons put back.
 
@@ -118,6 +122,12 @@ codebooks and documentation, with checksums. The live files here may change; the
 DOI will not.
 
 ## Before you pool
+
+**Cluster on `(dataset, study_id)`, never on `study_id` alone.** `study_id` is unique within
+a literature, not across the table. There are 524 distinct values but 2,963 real
+literature-study pairs, so clustering on the bare column silently merges unrelated studies
+and collapses 82% of your clusters. Standard errors come out far too small and nothing warns
+you. This is the single easiest way to get a wrong answer from this table.
 
 These are real published estimates, and several literatures are heavy-tailed.
 The `eis` file, for instance, runs from −10,000 to 100,000 with standard errors
@@ -263,7 +273,7 @@ a beta -- 40 of the 41 literatures' mappings are verified, the exception being
 *Archive* — the original files, faithful CSV and Parquet mirrors, codebooks, and
 paper/DOI metadata. Faithful conversions of what was published.
 
-*Harmonised table* — 49,689 selected estimates, automatically mapped and in some
+*Harmonised table* — 49,669 selected estimates, automatically mapped and in some
 cases transformed. Forty of the 41 column mappings are verified against the paper's
 own replication code or published results; `finance_growth`'s is not, and is marked
 `arithmetic_pairing_only`. And there is still **no independent end-to-end
