@@ -3,8 +3,15 @@
 First release of the data layer: a licence, a machine-readable index, and every
 dataset on the site published in standard formats with a column-level codebook.
 
-Use this text for the GitHub release. Once the repository is linked to Zenodo, a
-release tagged `data-v1.0.0` mints the DOI automatically.
+Use this text for the GitHub release.
+
+**Do NOT link this repository to Zenodo to mint the DOI.** An earlier version of this
+line said a tagged release would mint it automatically. That is the one thing
+`ZENODO_DEPOSIT.md` forbids: the integration deposits the entire repository tarball,
+about 438 MB including 173 author-copy PDFs and 23 third-party replication packages,
+permanently, when the deposit is meant to be the harmonised table and its documentation.
+A DOI freezes whatever is wrong at mint time. Deposit by hand, following
+`data_layer/ZENODO_DEPOSIT.md`.
 
 ## What is in it
 

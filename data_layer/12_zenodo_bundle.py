@@ -92,3 +92,40 @@ if _bad:
 print(f"gate: README.md and CITATION.cff describe {_v} ({_st}), "
       f"{_c['estimates_in_harmonised_table']:,} rows, "
       f"{_c['literatures_in_harmonised_table']} literatures")
+
+# ---------------------------------------------------------------------------
+# The upload is ONE zip, not loose files. Both published records hold exactly one:
+# ZENODO-UPLOAD-meta-analysis-cz-v0.9.0-beta.zip and ...-v1.0.0.zip. That is not a
+# cosmetic convention -- 91_distribution.py fetches
+#   https://zenodo.org/records/{id}/files/ZENODO-UPLOAD-meta-analysis-cz-v{ver}.zip
+# and reads estimates_harmonised.csv from the zip ROOT. Upload loose files, or name
+# the zip anything else, and that gate 404s forever, because Zenodo files are
+# immutable once published. So the script builds the archive rather than leaving the
+# maintainer to zip a folder correctly at midnight.
+import zipfile
+ZIP = os.path.join(os.path.dirname(OUT), f"ZENODO-UPLOAD-meta-analysis-cz-v{VER}.zip")
+if os.path.exists(ZIP):
+    os.remove(ZIP)
+# Fixed timestamp and sorted order so the archive is byte-reproducible: two builds of
+# the same release must agree, or the checksum recorded here means nothing.
+_names = sorted(n for n, _, _ in man) + ["SHA256SUMS.txt"]
+with zipfile.ZipFile(ZIP, "w", zipfile.ZIP_DEFLATED) as _z:
+    for _n in _names:
+        _zi = zipfile.ZipInfo(_n, date_time=(1980, 1, 1, 0, 0, 0))
+        _zi.compress_type = zipfile.ZIP_DEFLATED
+        _zi.external_attr = 0o644 << 16
+        _z.writestr(_zi, open(os.path.join(OUT, _n), "rb").read())
+with zipfile.ZipFile(ZIP) as _z:
+    _bad_z = [n for n in _z.namelist() if "/" in n and not n.startswith("codebooks/")]
+    if _bad_z:
+        raise SystemExit(f"zip has unexpected nesting: {_bad_z[:3]}")
+    if "estimates_harmonised.csv" not in _z.namelist():
+        raise SystemExit("zip has no estimates_harmonised.csv at its root; "
+                         "91_distribution.py reads exactly that path")
+    _zn = len(_z.namelist())
+_zh = hashlib.sha256(open(ZIP, "rb").read()).hexdigest()
+print(f"\nUPLOAD THIS ONE FILE: {ZIP}")
+print(f"   {_zn} entries, {os.path.getsize(ZIP)/1048576:.1f} MB")
+print(f"   sha256 {_zh}")
+print("   In the Zenodo draft, DELETE the previous version's zip that 'New version' "
+      "carried over,\n   then upload this. The draft must end up with exactly one file.")

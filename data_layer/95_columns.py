@@ -12,7 +12,7 @@ without ever looking wrong:
   study_id   every standard error in meta-analysis is clustered by study. If study_id does not
              actually partition the estimates, clustered errors are wrong and nobody sees it.
 
-  DOUBLE     the pooled table draws 39 literatures from 44 datasets, and some share a source
+  DOUBLE     the pooled table draws 41 literatures from 45 datasets, and some share a source
   COUNTING   file or cover overlapping ground. An estimate appearing under two literatures is
              counted twice by anything pooling across them. The catalogue claims to have
              excluded these; this checks the claim against the data instead of the metadata.

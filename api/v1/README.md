@@ -101,17 +101,33 @@ t-statistic, or as the mean of an asymmetric confidence interval).
 **Raw effect levels are not comparable across literatures.** An elasticity, a
 partial correlation and a dollar value per tonne of carbon all live in the
 `effect` column; `effect_units` tells you which is which. Within a literature the
-units are consistent, which is what estimator comparisons need. Comparing across
-literatures needs an explicitly standardised measure — and ratios are unsuitable
-where the denominator may sit near zero or change sign.
+units are *usually* consistent, which is what estimator comparisons need. Do not
+assume it. In several literatures the source papers themselves mix scales: in
+`size`, `trust`, `habits` and `eis` the per-study median absolute effect spans
+four to seven orders of magnitude, which no real heterogeneity produces and which
+a percent-versus-decimal split does. `activism` carries a direction note recording
+exactly that, reconstructed; the others do not, and are not yet resolved.
+
+The practical consequence is sharp, because it survives the remedy this page
+recommends. On `habits` a precision-weighted mean after 1st–99th winsorising
+returns about 0.001 for a literature whose median estimate is 0.47. **Check the
+per-study spread of `effect` before pooling a literature**, and treat a span of
+more than about two orders of magnitude as a scale problem rather than as
+heterogeneity. Comparing across literatures needs an explicitly standardised
+measure — and ratios are unsuitable where the denominator may sit near zero or
+change sign.
 
 The harmonisation may still be revised. For a reference that does not move, cite
 the archived deposit:
 
 > **https://doi.org/10.5281/zenodo.21773678** — cite this. It always resolves to the newest version.
 >
-> **https://doi.org/10.5281/zenodo.21789702** — version 1.0.0 specifically, for a replication
-> package where the exact files matter.
+> **For a replication package, where the exact files matter, cite the version DOI of the
+> release you actually used.** If you are reading this inside a Zenodo deposit, that is the
+> version DOI shown on this record's own landing page, not the concept DOI above and not
+> another version's. `https://doi.org/10.5281/zenodo.21789702` is version 1.0.0 specifically;
+> it is superseded by 1.1.1, which removes 20 `price_puzzle` rows that corresponded to no
+> source estimate.
 >
 > **https://doi.org/10.5281/zenodo.21773679** is version 0.9.0-beta, now superseded — kept live so
 > existing citations of the beta still resolve, but its `price_puzzle` rows are duplicated
@@ -126,8 +142,10 @@ DOI will not.
 **Cluster on `(dataset, study_id)`, never on `study_id` alone.** `study_id` is unique within
 a literature, not across the table. There are 524 distinct values but 2,963 real
 literature-study pairs, so clustering on the bare column silently merges unrelated studies
-and collapses 82% of your clusters. Standard errors come out far too small and nothing warns
-you. This is the single easiest way to get a wrong answer from this table.
+and collapses 82% of your clusters, from 2,963 to 524. On a pooled regression the standard
+errors happen to come out within 1% of the correct ones, so nothing looks wrong; the damage is
+to the cluster count that cluster-robust inference depends on, and to any literature-level
+statistic where the merged studies are genuinely unrelated.
 
 These are real published estimates, and several literatures are heavy-tailed.
 The `eis` file, for instance, runs from −10,000 to 100,000 with standard errors

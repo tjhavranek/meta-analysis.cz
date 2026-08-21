@@ -3,7 +3,7 @@
 This is the blind audit done mechanically. Six agents spent ~80k tokens each doing by hand
 what is really a text-extraction job: find the paper's headline meta-analysis regression,
 read off the two variables it regresses, and compare them with the pair we ship. One script
-covers all 39 literatures for a fraction of one agent.
+covers all 41 literatures for a fraction of one agent.
 
 The pattern that made this worth automating: a meta-analysis regression is almost always
     <cmd> <effect> <se> [, options]

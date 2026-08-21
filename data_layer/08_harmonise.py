@@ -171,7 +171,7 @@ for proj in sorted(man):
         # column -- data_start/data_end come from syear/eyear -- so the split was pure noise.
         # Fixed at 1.1.1 by deduping on the source's identifier instead of on value equality.
         # An output-level key like (study_id, horizon, effect, se) would NOT do: two genuinely
-        # distinct estimates can agree on every published column, and 1,489 rows elsewhere in
+        # distinct estimates can agree on every published column, and 1,469 rows elsewhere in
         # the table do exactly that. Identity comes from the source, never from equality.
         if rs.get("dedupe_key"):
             k=rs["dedupe_key"]
@@ -181,15 +181,16 @@ for proj in sorted(man):
                 sys.exit(f"{proj}: reshape dedupe_key {k!r} has nulls; it cannot identify a record")
             # Every field that can reach a harmonised column must be constant within a key
             # block, or picking the first row silently chooses one of several answers.
-            allowed={k, rs["id_col"]} | set(rs.get("varies_within_key") or []) \
-                    | {c for _,a,b in rs["pairs"] for c in (a,b)}
+            # The pair columns are NOT exempt. They carry the effect and the standard error;
+            # if one varied within a block, drop_duplicates would silently publish row 1's
+            # value, which is the exact failure this guard exists to prevent.
+            allowed={k, rs["id_col"]} | set(rs.get("varies_within_key") or [])
             varying=[c for c in df.columns
                      if c not in allowed and df.groupby(k)[c].nunique(dropna=False).max()>1]
-            unexpected=[c for c in varying if c not in ("sdate","edate")]
-            if unexpected:
+            if varying:
                 sys.exit(f"{proj}: fields vary within {k} and would be resolved arbitrarily: "
-                         f"{unexpected}. Add them to varies_within_key only after proving they "
-                         f"reach no harmonised column.")
+                         f"{varying}. List them in varies_within_key only after proving each "
+                         f"reaches no harmonised column, and say where that was proven.")
             before=len(df)
             df=df.drop_duplicates(subset=[k]).reset_index(drop=True)
             if len(df)!=df[k].nunique():

@@ -209,11 +209,13 @@ def _known_issues():
                 "the source's own formula contradicts, with the provenance recorded and a "
                 "version bump. That is scheduled for the next data revision. Until then, filter "
                 "on <code>abs(effect) &lt; 1</code> if you need strictly valid correlations. "
-                "<strong>This matters for more than tidiness.</strong> A FAT publication-bias "
-                "test on <code>class</code> is not robust to these rows: with them the "
-                "intercept is significant beyond any conventional threshold, and once they are "
-                "excluded or corrected it is not significant at all. Recomputed independently "
-                "twice with study-clustered errors.")
+                "<strong>They are concentrated, and that makes them influential.</strong> "
+                "72 of the 75 belong to a single study. An unweighted regression of effect on "
+                "standard error, the form of the FAT bias test that does not down-weight them, "
+                "gives a slope of -0.216 with these rows and -0.095 without, and its "
+                "study-clustered t falls from -17.3 to -0.5. The precision-weighted form of the test, and any test clustered on study, absorbs them and is insignificant either way. "
+                "Which conclusion you reach about publication bias in this literature therefore "
+                "depends on rows the source's own formula contradicts.")
 
     # The same class column carries a third family the [-1,1] test cannot see: a stored
     # partial correlation of exactly 0 beside a t-statistic that is not. Computed from the

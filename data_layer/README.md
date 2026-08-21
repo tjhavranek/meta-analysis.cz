@@ -7,6 +7,19 @@ and referenced it from `.zenodo.json` without actually publishing it.
 
 Run in order. `09_verify.py` is the gate and must print `ALL CHECKS PASS`.
 
+**The site builders have an order too, and getting it wrong is silent.** After the numbered
+scripts, run them in exactly this sequence:
+
+    python tools/board/build_zstat_figure.py     # writes the figure fragment AND t_distribution.csv
+    python tools/board/build_datasets_page.py    # INLINES that fragment into /datasets/
+    python tools/generate_seo.py                 # LAST: re-adds the seo-meta block
+
+`build_datasets_page.py` inlines the figure, so running it first publishes the *previous*
+figure: on release 1.1.1 that left the page saying 49,689 in the figure title and caption while
+saying 49,669 three times elsewhere, and every gate passed, because each file was internally
+consistent. `generate_seo.py` must be last because `build_datasets_page.py` rewrites
+`datasets/index.html` without the `<!-- seo-meta -->` block.
+
 **Pin the toolchain first: `pip install -r data_layer/requirements-pinned.txt`.** pandas and pyarrow both write their versions into every Parquet file, so an unpinned rebuild changes all 45 dataset checksums without changing any data.
 
 | | |

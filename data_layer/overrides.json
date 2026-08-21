@@ -51,7 +51,12 @@
      "SEP"
     ]
    ],
-   "dedupe_key": "idest"
+   "dedupe_key": "idest",
+   "varies_within_key": [
+    "sdate",
+    "edate"
+   ],
+   "varies_within_key_note": "sdate and edate are month codes that vary in 3 of the 217 blocks. They are exempt because they reach no harmonised column: data_start and data_end are matched from syear/eyear by a regex that cannot match sdate, and they hold years while these hold months. The per-dataset mirror still publishes all 1,519 source rows with both columns intact."
   },
   "units": "proportional change in the price level",
   "verified_by": "puzzle.do computes t=res/se and prec=1/se on the long form restricted to horizon in {3,6,12,18,36}; the published file is wide, so the M{h}R / SE{h} pairs are reshaped here to reproduce it. Median |t| is 0.75-0.91 across horizons, consistent with the literature's mostly insignificant responses.",

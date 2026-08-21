@@ -67,18 +67,25 @@ scoping into the deposit metadata.
    0.9.0-beta and 1.0.0 already sit under it. "New upload" starts a *separate* record with its
    own new concept DOI, which would split the lineage in two and cannot be undone once
    published. This is the single most expensive wrong click on this page.
-3. Build the bundle with `python data_layer/12_zenodo_bundle.py` and drag in the **contents**
-   of the folder it prints. It names that folder after the version in `datasets.json`, so take
-   the name from the script's output rather than from this page.
-4. Fill the metadata from `data_layer/zenodo.json` — title, authors with ORCIDs, description,
+3. Run `python data_layer/12_zenodo_bundle.py`. It builds the folder **and** the single
+   archive `ZENODO-UPLOAD-meta-analysis-cz-v{version}.zip`, and prints the path and its
+   sha256. **Upload that one zip. Do not drag in loose files.** Every published version so
+   far holds exactly one file with exactly that name, and `91_distribution.py` fetches it by
+   that URL to byte-compare the live table against the deposit. Loose files, or a different
+   name, break that check permanently, because Zenodo files cannot be edited after publish.
+4. **Delete the previous version's zip from the draft.** "New version" copies the old
+   record's files into the new draft, so the draft starts out holding the 1.0.0 archive. If
+   you publish without removing it, this release ships the previous release's data beside its
+   own, permanently. **The draft must end up with exactly one file.**
+5. Fill the metadata from `data_layer/zenodo.json` — title, authors with ORCIDs, description,
    keywords. Set **Licence: Creative Commons Attribution 4.0 International**.
-5. Under *Related identifiers*, add `https://meta-analysis.cz` as **is derived from**, and
+6. Under *Related identifiers*, add `https://meta-analysis.cz` as **is derived from**, and
    ideally each paper's DOI as **is supplement to** so credit flows to the original papers
    rather than collapsing into the collection citation.
-6. Preview, and read the preview against the bundle you actually built: version, counts,
+7. Preview, and read the preview against the bundle you actually built: version, counts,
    file list, licence.
-7. Publish, and record the newly minted **version** DOI. The concept DOI does not change.
-8. Propagate the version DOI to every canonical source that carries one. Regenerating is not
+8. Publish, and record the newly minted **version** DOI. The concept DOI does not change.
+9. Propagate the version DOI to every canonical source that carries one. Regenerating is not
    enough, because three of them are hand-written: `07_api.py` (`DATA_DOI`),
    `data_layer/zenodo.json`, `data_layer/citation.cff`, `data_layer/api_readme.md`, the
    Croissant `dateModified`, and the `DEPOSITS` map in `91_distribution.py`. Then rebuild and
