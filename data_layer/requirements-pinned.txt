@@ -18,3 +18,9 @@ pyarrow==25.0.0
 # which is the one thing the file exists to guarantee. xlrd reads .xls, openpyxl the rest.
 xlrd==2.0.2
 openpyxl==3.1.5
+
+# NumPy is imported directly by 06_convert, 08_harmonise, 09_verify and the 9x gates, and it
+# does the numerical work behind every published statistic. pandas constrains it loosely, which
+# is not the same as pinning it: a future install could resolve a different build and move a
+# value without moving a version number anyone reads.
+numpy==2.4.6

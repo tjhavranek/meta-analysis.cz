@@ -200,10 +200,11 @@ def _known_issues():
             out.append(
                 f"{len(_oob):,} estimates are invalid under the source column's own "
                 "partial-correlation construction: " + ", and ".join(_bits) + ". They come straight from the "
-                "source file's own partial-correlation column, and they share one cause. "
+                "source file's own partial-correlation column. "
                 "Elsewhere in that file the column reproduces <code>t / sqrt(t&sup2; + df)</code>, "
                 "and inverting it on these rows returns a degrees-of-freedom argument of zero or "
-                "below, which no sample can have. The cause lies in the source's own calculation. "
+                "below, which no sample can have. That restates the inconsistency rather than "
+                "diagnosing its cause upstream, which is not established. "
                 "The per-dataset mirror will keep reproducing the source faithfully, defect and "
                 "all; the harmonised table is a derived product and may correct or null values "
                 "the source's own formula contradicts, with the provenance recorded and a "

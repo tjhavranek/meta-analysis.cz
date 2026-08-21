@@ -187,6 +187,40 @@ convert its standard error by the delta method rather than using the stored one.
 `skill` is suspected of a similar inversion but it is **not confirmed**, so its
 units are left as `elasticity`; that open question is recorded in `units.json`.
 
+## Known defects in this release
+
+These are present in the files as published, here and in the archived deposit. They are
+documented and retained rather than silently altered, so anyone reproducing an analysis gets
+what we got.
+
+**75 `class` estimates are invalid under the source column's own construction.** Two lie
+outside `[-1, 1]` altogether, to |1.372|, and 73 sit at exactly ±1 while carrying a positive
+standard error. Across the rest of that file the partial-correlation column reproduces
+`t / sqrt(t² + df)`; on these rows inverting it returns a degrees-of-freedom argument at or
+below zero, which no sample has. That is a restatement of the inconsistency rather than a
+diagnosis of its upstream cause, which is not established. Filter on `abs(effect) < 1` if you
+need strictly valid correlations.
+
+**They are concentrated, and they change a bias-test conclusion.** 72 of the 75 belong to a
+single study. An unweighted regression of effect on standard error, the form of the FAT
+publication-bias test that does not down-weight them, gives a slope of −0.216 with these rows
+and −0.095 without, with a study-clustered t of −17.3 against −0.5. The precision-weighted form
+of the test, and any test clustered on study, absorbs them and is insignificant either way. So
+what you conclude about publication bias in this literature depends on rows the source's own
+formula contradicts. Decide explicitly which form you are running.
+
+**A further 82 `class` rows** store a partial correlation of exactly zero beside a non-zero
+t-statistic, which the same relation contradicts. Those rows are excluded from the pooled table
+by that literature's own analysis selection, so they affect the per-dataset file rather than
+this one. Whether they share a cause with the 75 has not been shown.
+
+**1,469 rows across 38 literatures are identical to another row in every column except
+`estimate_id`.** These are not manufactured: the source files carry them, either as genuinely
+repeated coefficients or as distinct estimates that coincide once projected onto the harmonised
+columns. The heaviest are `scc` (322), `inflation` (177) and `forward` (88). Running
+`drop_duplicates()` as routine hygiene will delete real estimates — more than half of `scc`.
+Deduplicate on `(dataset, estimate_id)`, which is unique by construction.
+
 ## What is not in the harmonised table, and why
 
 Every dataset on the site is published. Some cannot join a pooled

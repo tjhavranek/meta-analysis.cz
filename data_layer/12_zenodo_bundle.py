@@ -84,6 +84,24 @@ for _f, _wants in (
             _bad.append(f"{_f} does not state {_w!r}")
     if _st != "beta" and _re.search(r"\bis a beta\b", _t, _re.I):
         _bad.append(f"{_f} still calls the table a beta while status is {_st!r}")
+# A release must know its own DOI before it is frozen. Zenodo lets you reserve the version
+# DOI on the unpublished draft ("Get a DOI now!"), so the correct order is: New version ->
+# reserve -> embed the DOI here -> rebuild -> upload -> publish. Publishing first freezes a
+# datasets.json saying "doi": null and a CITATION.cff saying the version DOI does not exist,
+# permanently, inside a record that has one. No chicken-and-egg: the DOI exists on the draft
+# before any file is uploaded.
+# Set MAC_BUNDLE_ALLOW_NULL_DOI=1 to build a dry-run bundle before the draft exists.
+_doi = _api.get("harmonised_table", {}).get("doi") or _api.get("doi")
+if not os.environ.get("MAC_BUNDLE_ALLOW_NULL_DOI"):
+    if not _doi:
+        _bad.append("datasets.json carries no version DOI. Reserve it on the Zenodo draft first, "
+                    "embed it, and rebuild. To build a dry run anyway, set "
+                    "MAC_BUNDLE_ALLOW_NULL_DOI=1.")
+    else:
+        for _f in ("README.md", "CITATION.cff"):
+            if _doi not in open(os.path.join(OUT, _f), encoding="utf-8", errors="replace").read():
+                _bad.append(f"{_f} does not carry the version DOI {_doi}")
+
 if _bad:
     print("\nDEPOSIT NOT SAFE TO PUBLISH:")
     for _b in _bad:
