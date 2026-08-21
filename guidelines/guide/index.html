@@ -1,0 +1,576 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+<title>Meta-Analysis of Social Science Research: A Practitioner’s Guide (full text)</title>
+<meta name="keywords" content="meta-analysis, model uncertainty, publication bias, p-hacking, artificial intelligence" />
+<meta name="description" content="The full text of Irsova, Doucouliagos, Havranek and Stanley (2024), a step-by-step guide to modern meta-analysis, with the eighteen guidelines of the checklist individually linkable." />
+<link href="/style.css" rel="stylesheet" type="text/css" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<link rel="canonical" href="https://meta-analysis.cz/guidelines/guide/" />
+<meta name="citation_title" content="Meta-analysis of social science research: A practitioner’s guide" />
+<meta name="citation_author" content="Zuzana Irsova" />
+<meta name="citation_author" content="Hristos Doucouliagos" />
+<meta name="citation_author" content="Tomas Havranek" />
+<meta name="citation_author" content="T. D. Stanley" />
+<meta name="citation_publication_date" content="2024" />
+<meta name="citation_journal_title" content="Journal of Economic Surveys" />
+<meta name="citation_volume" content="38" />
+<meta name="citation_issue" content="5" />
+<meta name="citation_firstpage" content="1547" />
+<meta name="citation_lastpage" content="1566" />
+<meta name="citation_doi" content="10.1111/joes.12595" />
+<meta name="citation_pdf_url" content="https://meta-analysis.cz/guidelines/guidelines2.pdf" />
+<meta property="og:site_name" content="meta-analysis.cz" />
+<meta property="og:type" content="article" />
+<meta property="og:title" content="Meta-Analysis of Social Science Research: A Practitioner’s Guide (full text)" />
+<meta property="og:description" content="The full text of Irsova, Doucouliagos, Havranek and Stanley (2024), a step-by-step guide to modern meta-analysis, with the eighteen guidelines of the checklist individually linkable." />
+<meta property="og:url" content="https://meta-analysis.cz/guidelines/guide/" />
+<script type="application/ld+json">
+{
+ "@context": "https://schema.org",
+ "@graph": [
+  {
+   "@type": "ScholarlyArticle",
+   "@id": "https://meta-analysis.cz/guidelines/guide/#article",
+   "mainEntityOfPage": "https://meta-analysis.cz/guidelines/guide/",
+   "url": "https://meta-analysis.cz/guidelines/guide/",
+   "headline": "Meta-analysis of social science research: A practitioner’s guide",
+   "name": "Meta-analysis of social science research: A practitioner’s guide",
+   "inLanguage": "en",
+   "author": [
+    {
+     "@type": "Person",
+     "name": "Zuzana Irsova",
+     "sameAs": "https://orcid.org/0000-0002-0753-8124"
+    },
+    {
+     "@type": "Person",
+     "name": "Hristos Doucouliagos"
+    },
+    {
+     "@type": "Person",
+     "name": "Tomas Havranek",
+     "sameAs": "https://orcid.org/0000-0002-3158-2539"
+    },
+    {
+     "@type": "Person",
+     "name": "T. D. Stanley",
+     "sameAs": "https://orcid.org/0000-0002-3205-1983"
+    }
+   ],
+   "datePublished": "2024",
+   "isPartOf": {
+    "@type": "PublicationIssue",
+    "issueNumber": "5",
+    "isPartOf": {
+     "@type": "PublicationVolume",
+     "volumeNumber": "38",
+     "isPartOf": {
+      "@type": "Periodical",
+      "name": "Journal of Economic Surveys"
+     }
+    }
+   },
+   "pageStart": "1547",
+   "pageEnd": "1566",
+   "sameAs": "https://doi.org/10.1111/joes.12595",
+   "identifier": {
+    "@type": "PropertyValue",
+    "propertyID": "DOI",
+    "value": "10.1111/joes.12595"
+   },
+   "keywords": "meta-analysis, model uncertainty, publication bias, p-hacking, artificial intelligence",
+   "abstract": "This article provides concise, nontechnical, step-by-step guidelines on how to conduct a modern meta-analysis, especially in social sciences. We treat publication bias, p-hacking, and systematic heterogeneity as phenomena meta-analysts must always confront. To this end, we provide concrete methodological recommendations. Meta-analysis methods have advanced notably over the last few years. Yet many meta-analyses still rely on outdated approaches, some ignoring publication bias and systematic heterogeneity. While limitations persist, recently developed techniques allow robust inference even in the face of formidable problems in the underlying empirical literature. The purpose of this paper is to summarize the state of the art in a way accessible to aspiring meta-analysts in any field. We also discuss how meta-analysts can use advances in artificial intelligence to work more efficiently."
+  }
+ ]
+}
+</script>
+<style type="text/css">
+/* Additions for the full-text page only. Everything else comes from /style.css. */
+.vh{ position:absolute; width:1px; height:1px; padding:0; margin:-1px; overflow:hidden;
+     clip:rect(0 0 0 0); white-space:nowrap; border:0; }
+.entry .frontmatter{ margin:0 0 var(--s5); padding:var(--s4) 0 0; border-top:1px solid var(--rule);
+     font:400 var(--f-1)/1.6 var(--sans); color:var(--ink-soft); }
+.entry .frontmatter p{ margin:0 0 var(--s2); line-height:1.6; }
+.entry .frontmatter p:last-child{ margin-bottom:0; }
+.entry .frontmatter b{ color:var(--ink); font-weight:600; }
+.entry .attribution{ margin:0 0 var(--s6); padding:var(--s4);
+     background:var(--paper); border:1px solid var(--rule); border-left:3px solid var(--accent);
+     border-radius:var(--radius); font:400 var(--f-1)/1.6 var(--sans); color:var(--ink); }
+.entry .attribution p{ margin:0 0 var(--s2); font:400 var(--f-1)/1.6 var(--sans); }
+.entry .attribution p:last-child{ margin-bottom:0; }
+.entry .attribution .attr-links a{ white-space:nowrap; }
+.entry .kw{ font:400 var(--f-1)/1.6 var(--sans); color:var(--ink-soft); margin:0 0 var(--s2); }
+.entry .kw .kw-label{ font-weight:600; color:var(--ink); letter-spacing:.06em; }
+.entry .toc{ margin:var(--s6) 0; padding:var(--s4) var(--s5);
+     background:var(--canvas); border:1px solid var(--rule); border-radius:var(--radius); }
+.entry .toc h2{ margin:0 0 var(--s3); font:600 var(--f1)/1.3 var(--sans); }
+.entry .toc ol{ margin:0; padding:0; list-style:none; font:400 var(--f-1)/1.7 var(--sans); }
+.entry .toc ol ol{ margin:0 0 0 var(--s5); }
+.entry .toc li{ margin:0; }
+.entry .toc .toc-back{ margin:var(--s3) 0 0; font:400 var(--f-1)/1.6 var(--sans);
+     color:var(--ink-soft); }
+.entry h2 .sec-num{ color:var(--ink-soft); }
+.entry h2, .entry h3{ scroll-margin-top:var(--s4); }
+.entry .guide-jump-lead{ font:400 var(--f-1)/1.6 var(--sans); color:var(--ink-soft);
+     margin:0 0 var(--s4); }
+.entry .guide-jump-lead code, .entry p code{ font:400 .9em/1.4 ui-monospace,SFMono-Regular,
+     Menlo,Consolas,monospace; color:var(--ink); }
+.entry ol.guide-jump{ counter-reset:gj; list-style:none; margin:0 0 var(--s5); padding:0; }
+.entry ol.guide-jump > li{ counter-increment:gj; position:relative;
+     margin:0 0 var(--s2); padding-left:2.1rem;
+     font:400 var(--f-1)/1.6 var(--sans); color:var(--ink-soft); }
+.entry ol.guide-jump > li::before{ content:counter(gj); position:absolute; left:0; top:0;
+     width:1.5rem; text-align:center; font:600 var(--f-1)/1.6 var(--sans); color:var(--accent); }
+.entry ol.guidelines{ counter-reset:g; list-style:none; margin:var(--s5) 0 var(--s5); padding:0; }
+.entry ol.guidelines > li{ counter-increment:g; position:relative;
+     margin:0 0 var(--s3); padding:var(--s3) var(--s4) var(--s3) 3.5rem;
+     background:var(--paper); border:1px solid var(--rule);
+     border-left:3px solid var(--accent); border-radius:var(--radius);
+     scroll-margin-top:var(--s4); }
+.entry ol.guidelines > li::before{ content:counter(g); position:absolute; left:0; top:var(--s3);
+     width:3.5rem; text-align:center;
+     font:600 var(--f1)/1.4 var(--sans); color:var(--accent); }
+.entry ol.guidelines > li:target{ background:var(--tint); border-color:var(--accent); }
+.entry ol.guidelines p{ margin:0; }
+.entry .g-permalink{ text-decoration:none; color:var(--ink-soft); font-weight:600;
+     padding:0 .15em; }
+.entry .g-permalink:hover{ color:var(--accent); }
+.entry .fnref a{ text-decoration:none; }
+.entry .fnback{ text-decoration:none; }
+.entry ol.endnotes{ list-style:none; margin:0 0 var(--s5); padding:0; counter-reset:en; }
+.entry ol.endnotes > li{ counter-increment:en; position:relative;
+     margin:0 0 var(--s3); padding-left:2.1rem; scroll-margin-top:var(--s4); }
+.entry ol.endnotes > li::before{ content:counter(en); position:absolute; left:0; top:0;
+     width:1.5rem; text-align:center; font:600 var(--f-1)/1.7 var(--sans); color:var(--accent); }
+.entry ol.endnotes p{ margin:0; font:400 var(--f-1)/1.7 var(--sans); color:var(--ink-soft); }
+.entry ul.references{ list-style:none; margin:0 0 var(--s5); padding:0; }
+.entry ul.references > li{ margin:0 0 var(--s3); padding-left:1.5rem; text-indent:-1.5rem;
+     font:400 var(--f-1)/1.6 var(--sans); color:var(--ink-soft); }
+.entry ul.references a{ overflow-wrap:anywhere; }
+.entry math.inl{ font-size:1em; }
+@media print{
+  .entry .toc, .entry ol.guide-jump{ break-inside:avoid; }
+  .entry ol.guidelines > li{ break-inside:avoid; }
+}
+</style>
+</head>
+<body>
+<div id="wrapper">
+<!-- start header -->
+<div id="logo">
+	<a class="masthead-home" href="/">meta-analysis.cz</a>
+	<p class="site-name"><a href="/guidelines/">Meta-Analysis of Social Science Research</a></p>
+	<h2> <span class="mk">&raquo;</span>&nbsp;&nbsp;&nbsp; A Practitioner’s Guide, the full text</h2>
+</div>
+<div id="header">
+	<div id="menu">
+		<ul>
+			<li class="current_page_item"><a href="/guidelines/guide/">Full text</a></li>
+			<li><a href="/guidelines/guidelines2.pdf">The guide</a></li>
+			<li><a href="https://doi.org/10.1111/joes.12595">Version of record</a></li>
+			<li><a href="/guidelines/">Guide home</a></li>
+			<li><a href="/">Recent applied meta-analyses</a></li>
+		</ul>
+	</div>
+</div>
+<!-- end header -->
+</div>
+<!-- start page -->
+<div id="page">
+	<!-- start content -->
+	<div id="content">
+		<div class="post">
+			<h1 class="title">Meta-analysis of social science research: A practitioner’s guide</h1>
+			<p class="byline">Zuzana Irsova &nbsp;&middot;&nbsp; Hristos Doucouliagos &nbsp;&middot;&nbsp; Tomas Havranek &nbsp;&middot;&nbsp; T. D. Stanley<br />
+<i>Journal of Economic Surveys</i> (2024), 38(5), 1547–1566</p>
+			<div class="entry">
+
+<div class="attribution">
+<p>Zuzana Irsova, Hristos Doucouliagos, Tomas Havranek, and T. D. Stanley (2024): “Meta-analysis of social science research: A practitioner’s guide.” <i>Journal of Economic Surveys</i> 38(5): 1547–1566.
+<a href="https://doi.org/10.1111/joes.12595">https://doi.org/10.1111/joes.12595</a>.
+The version of record is published in the <i>Journal of Economic Surveys</i>.
+Republished with permission.</p>
+<p class="attr-links"><a href="/guidelines/guidelines2.pdf">The guide (PDF)</a> &nbsp;&middot;&nbsp;
+<a href="https://doi.org/10.1111/joes.12595">DOI</a> &nbsp;&middot;&nbsp;
+<a href="/guidelines/">Guide home page</a></p>
+</div>
+
+<div class="frontmatter">
+<p><b>Authors.</b> Zuzana Irsova<sup>1,2</sup>, Hristos Doucouliagos<sup>3</sup>,
+Tomas Havranek<sup>1,4,5</sup>, T. D. Stanley<sup>3,5</sup></p>
+<p><sup>1</sup> Institute of Economic Studies, Faculty of Social Sciences, Charles University, Prague, Czech Republic.
+<sup>2</sup> Anglo-American University, Prague, Czech Republic.
+<sup>3</sup> Department of Economics, Deakin University, Melbourne, Australia.
+<sup>4</sup> Centre for Economic Policy Research, London, UK.
+<sup>5</sup> Meta-Research Innovation Center at Stanford, Stanford University, Stanford, California, USA.</p>
+<p><b>Correspondence.</b> T.D. Stanley, Department of Economics, Deakin University, Melbourne, VIC 3125, Australia. Email: stanley@hendrix.edu</p>
+<p><b>Funding information.</b> Czech Science Foundation, Grant/Award Numbers: #23-05227M, #21-09231S; Next Generation EU</p>
+</div>
+
+<h2 id="abstract">Abstract</h2>
+<p>This article provides concise, nontechnical, step-by-step guidelines on how to conduct a modern meta-analysis, especially in social sciences. We treat publication bias, p-hacking, and systematic heterogeneity as phenomena meta-analysts must always confront. To this end, we provide concrete methodological recommendations. Meta-analysis methods have advanced notably over the last few years. Yet many meta-analyses still rely on outdated approaches, some ignoring publication bias and systematic heterogeneity. While limitations persist, recently developed techniques allow robust inference even in the face of formidable problems in the underlying empirical literature. The purpose of this paper is to summarize the state of the art in a way accessible to aspiring meta-analysts in any field. We also discuss how meta-analysts can use advances in artificial intelligence to work more efficiently.</p>
+<p class="kw"><span class="kw-label">KEYWORDS</span> meta-analysis, model uncertainty, publication bias, p-hacking, artificial intelligence</p>
+<p class="kw"><span class="kw-label">JEL CLASSIFICATION</span> A14, B49, C83</p>
+
+<nav class="toc" aria-labelledby="toc-heading">
+<h2 id="toc-heading">Contents</h2>
+<ol>
+<li><a href="#abstract">Abstract</a></li>
+<li><a href="#the-eighteen-guidelines">The eighteen guidelines</a></li>
+<li><a href="#sec-1">1 Introduction</a></li>
+<li><a href="#sec-2">2 Literature search</a></li>
+<li><a href="#sec-3">3 Data collection</a></li>
+<li><a href="#sec-4">4 Publication bias and p-hacking</a>
+ <ol>
+ <li><a href="#sec-4-1">4.1 Main approaches</a></li>
+ <li><a href="#sec-4-2">4.2 Important details</a></li>
+ </ol></li>
+<li><a href="#sec-5">5 Heterogeneity and implied estimates</a></li>
+<li><a href="#sec-6">6 Checklist: how to do a modern meta-analysis</a></li>
+<li><a href="#sec-7">7 Conclusion</a></li>
+<li><a href="#acknowledgments">Acknowledgments</a></li>
+<li><a href="#data-availability">Data availability statement</a></li>
+<li><a href="#orcid">ORCID</a></li>
+<li><a href="#endnotes">Endnotes</a></li>
+<li><a href="#references">References</a></li>
+<li><a href="#how-to-cite">How to cite this article</a></li>
+</ol>
+</nav>
+
+<h2 id="the-eighteen-guidelines">The eighteen guidelines</h2>
+<p class="guide-jump-lead">Each item below links to its full text in
+<a href="#sec-6">Section 6</a>, where every guideline has its own permanent anchor
+(<code>#guideline-1</code> to <code>#guideline-18</code>). Items shown with an ellipsis
+continue in Section 6.</p>
+<ol class="guide-jump">
+<li><a href="#guideline-1">Choose a topic you or your co-authors know well from your own primary research.</a></li>
+<li><a href="#guideline-2">Choose a topic for which no prior meta-analysis exists. &#8230;</a></li>
+<li><a href="#guideline-3">Prepare a search query in Google Scholar. &#8230;</a></li>
+<li><a href="#guideline-4">Inspect the 30 studies that are most frequently cited by the ones included based on the Scholar search.</a></li>
+<li><a href="#guideline-5">Do not discard any study a priori based on publication outlet or perceived quality.</a></li>
+<li><a href="#guideline-6">Collect all estimates and their standard errors, when possible, not just one estimate per study.</a></li>
+<li><a href="#guideline-7">Collect the data independently with a co-author, then compare and correct mistakes.</a></li>
+<li><a href="#guideline-8">Use original effect size measures when comparable. &#8230;</a></li>
+<li><a href="#guideline-9">Correlations (including partial ones) should be used as a last resort.</a></li>
+<li><a href="#guideline-10">Inspect outliers and influence points but be careful about deleting or winsorizing them. &#8230;</a></li>
+<li><a href="#guideline-11">Think carefully about the aspects in which primary studies differ. &#8230;</a></li>
+<li><a href="#guideline-12">If you want to report a simple summary statistic, use the unrestricted weighted least squares weighted average, rather than fixed-effect or random-effects estimates.</a></li>
+<li><a href="#guideline-13">Always correct for publication bias (including p-hacking). &#8230;</a></li>
+<li><a href="#guideline-14">Report standard errors clustered at the study level. &#8230;</a></li>
+<li><a href="#guideline-15">If possible, in meta-regressions use study-level dummy variables (i.e., fixed-effects panel models) to filter out unobserved study-level heterogeneity.</a></li>
+<li><a href="#guideline-16">Estimate the multiple meta-regression model by applying Bayesian model averaging with the dilution prior.</a></li>
+<li><a href="#guideline-17">If collinearity is not at issue, also use frequentist model averaging or the general-to-specific approach.</a></li>
+<li><a href="#guideline-18">Provide conditional means for effect sizes in different situations (corrected for both publication bias and potential method weaknesses in some studies).</a></li>
+</ol>
+
+<h2 id="sec-1"><span class="sec-num">1</span> INTRODUCTION</h2>
+<p>Meta-analysis has grown into a thriving research industry. According to Google Scholar, more than 107,000 meta-analyses were published in 2022 alone.<sup class="fnref"><a id="endnote-ref-1" href="#endnote-1">1</a></sup> Even in economics, which had long been skeptical, meta-research is now published (e.g., Andrews &amp; Kasy, 2019; Brodeur et al., 2020; Brown et al., 2023; DellaVigna &amp; Linos, 2022, Elliott et al., 2022, Havranek et al., 2024; Neisser, 2021) and cited (e.g., Angeletos &amp; Huo, 2021; Cogley &amp; Jovanovic, 2022; Comin et al., 2021; Kroodsma et al., 2018; List &amp; Uhlig, 2017) in most august journals, and meta-analyses often represent the most cited studies for individual prestigious outlets.</p>
+<p>Over the last several years, we have seen important advancements in methods and the rigor in which typical meta-analyses are conducted. Nonetheless, in our roles as editors and reviewers, we also see many meta-studies fall short in applying appropriate statistical analysis. Because our field has been quite dynamic, it is understandable that some researchers have fallen behind. We all struggle to keep pace in our respective fields of expertise. Although the current state of the art in meta-analysis methods and its consequences have been shared at conferences, seminars, and referee reports, we believe that it is a propitious time to briefly summarize in practical and nontechnical terms what is widely accepted as best practice.</p>
+<p>These guidelines, of course, cannot be the final word on how meta-analysis should be conducted. Meta-analysis is a complex and rapidly evolving field, and context together with newly developed approaches may force researchers to deviate from these or any set of guidelines. Yet we believe that many researchers, especially those with modest meta-analysis experience, will benefit from following the guidelines. They reflect a distillation of methodological contributions across economics, psychology, and medical research, and also our experience in applying these meta-analysis methods widely across disciplines and hundreds of specific areas of research. Although our focus is on economics and related disciplines, we believe that these guidelines are sufficiently general to be helpful for any meta-analysis. These methods guidelines are intended to complement the existing reporting guidelines for meta-analysis published in this journal (Havranek et al., 2020). Together, they form the natural starting point for any aspiring meta-analyst—though she will also do well to consult the other existing “how to” protocols (e.g., Borenstein et al., 2021; Gurevitch et al., 2018; Higgins et al., 2022; Koricheva et al., 2017; Moher et al., 2015; Nakagawa et al., 2017; Nakagawa et al., 2023; Page et al., 2021).</p>
+<p>Meta-analysis, if failing to use up-to-date methods, can be as misleading as a good meta-analysis is enlightening to policymakers and researchers. An especially important issue is publication selection bias and p-hacking. Out of the 107,000 meta-analyses published in 2022, slightly more than half do not discuss publication bias at all.<sup class="fnref"><a id="endnote-ref-2" href="#endnote-2">2</a></sup> Because publication bias or p-hacking can easily exaggerate the typical reported effect size by a factor of 2 or more (Bartoš, Maier, Wagenmakers, Nippold et al., 2023; Ioannidis et al., 2017, Open Science Collaboration, 2015, Camerer et al., 2018), meta-analyses that ignore publication bias may potentially cause more harm than good. Many advanced techniques for publication selection bias correction with rigorous foundations have recently been introduced and supported by Monte Carlo simulations and dozens of applications. Other recent developments include the treatment of observed and unobserved systematic heterogeneity in the context of model uncertainty and some forms of p-hacking. Together, these method advances constitute important steps forward in the understanding and interpreting of contemporary research.</p>
+<p>We start by discussing the search for primary studies to be included in meta-analysis. Then we move to data collection, the treatment of publication bias and heterogeneity, and, lastly, the estimation of conditional meta-analysis means corrected for both publication bias and systematic methodological problems found in some primary studies (misspecifications). Before concluding the paper, we provide a short bullet-point checklist. The website <a href="/">https://meta-analysis.cz</a> contains many examples of modern meta-analyses together with their data and codes for R and Stata. For ease of exposition, we speak directly, in the second person, to aspiring meta-analysts.</p>
+
+<h2 id="sec-2"><span class="sec-num">2</span> LITERATURE SEARCH</h2>
+<p>You should conduct meta-analyses only on topics you understand thoroughly. That is, you should have conducted primary research on the topic, written a detailed narrative literature review, or taught extensively on the subject. If not, you will need a co-author from this specific sub-field. If a meta-analysis on the topic already exists, you must show a strong raison d’être: why does your meta-analysis add value? The lack of accommodation for publication bias or heterogeneity in the original meta-analysis is such a reason. The fact that several new primary studies have been published does not. You need to show, at a minimum, a substantial advance in the methods that you use in comparison to the original meta-analysis. Mechanical updates should be left as training exercises for undergraduate students or artificial intelligence. Of course, exceptions to this general advice should be made when there have been important advancements in the approaches and/or methods of this particular area of research, placing the robustness of past meta-analysis results into question. In addition, structural features of societies might have changed such that previous effect sizes might not be representative. In some fields, it is sensible to test the influence of cutoff years to see whether structural breaks are present (for example, the Great Recession or the Covid-19 pandemic).</p>
+<p>Now, based on your knowledge of the topic, assemble a list of five primary studies that you certainly must include in the meta-analysis. To ensure that you have selected the five most important studies, you may enlist a large language model. But be careful about relying too much on artificial intelligence since current models often provide results that are factually incorrect; always double-check and give priority to your expertise. (Useful guidelines for employing artificial intelligence in the context of economics education and research are provided by Cowen &amp; Tabarrok, 2023.) Then design your main search query in Google Scholar. We prefer Google Scholar to other databases because it includes all papers that have appeared online and goes through the full text of papers, not just the title, abstract, and keywords. Having one main query for one universal database helps other researchers replicate your meta-analysis. Note, however, that Google Scholar’s algorithms may change at any moment. Depending on your topic, there can be value in using an additional database (such as EconLit for economics), and it might increase the robustness of your approach. Use different combinations of the keywords employed in primary studies. You will know that your query is reasonably well prepared if the five most important primary studies identified above are among the first hits. Spend several days fine-tuning the query (that is, improving the percentage of highly relevant primary studies returned among the first 50 hits) and pay attention to the correct search syntax. For inspiration, see the “examined studies” section in the online appendix to Havranek (2015): <a href="/eis/">https://www.meta-analysis.cz/eis</a>.</p>
+<p>For modern meta-regression analysis (MRA) techniques to work, you need at least 30 estimates of the effect size reported in at least 10 primary studies.<sup class="fnref"><a id="endnote-ref-3" href="#endnote-3">3</a></sup> Ideally, you will end up with many more. Your Google Scholar search will return hundreds of studies. Read the abstracts of the first 500 of them and download all that could potentially contain empirical estimates of the effect you are interested in. Go through the downloaded studies in detail, recording all reported estimates of the effect in question and their standard errors (or measures from which the standard errors can be computed, such as p-values and t-statistics). Standard errors (SEs) are typically needed for weights and publication bias correction. However, in some specific literatures, standard errors may not be commonly reported, and sample sizes can serve as substitute for standard errors, as SEs are often approximately proportional to <math xmlns="http://www.w3.org/1998/Math/MathML" class="inl" alttext="1 divided by the square root of n"><mrow><mn>1</mn><mo>/</mo><msqrt><mi>n</mi></msqrt></mrow></math>. In fact, it can be argued that using inverse sample sizes (or degrees of freedom) in place of SEs is superior when correlations or partial correlations are the effect sizes meta-analyzed (Hunter &amp; Schmidt, 1990; Stanley &amp; Doucouliagos, 2012; 2023). In other cases of missing SEs, individual primary studies may report dozens of effect size estimates (sensitivity analyses or scenarios). Some meta-analyses (Havranek, Irsova et al., 2015; Matousek et al., 2022) have used this within-study dispersion to approximate study-level confidence and, from this, bootstrapped study-level standard errors. Within-study dispersion should be treated as a last resort, explicitly acknowledged in the paper, and used along with robustness checks that employ subsets of the literature with reported standard errors.</p>
+<p>Do not exclude any study ex ante because you suspect the study is of poor quality, or because it is published in a local journal. You can always conduct subsample analysis in which you show what happens when you exclude some studies. In general, you want to include all studies that meet minimum explicitly-stated inclusion criteria, because they allow you to identify how variations in methodology affect the results—indeed, that might be your main reason for conducting the meta-analysis. The weight you place on bad studies may (and often will) be close to zero, but the decision should be carefully justified in your meta-analysis. Similarly, do not omit unpublished studies. Although the inclusion of unpublished studies by itself is unlikely to solve publication bias, there can be systematic differences between published and unpublished studies. What if you have too many eligible primary studies, perhaps hundreds, more than you can feasibly collect? The best option here is to invite co-authors who help you collect the entire dataset, excluding no primary study. If adding co-authors is impossible, you may need to use a random subset of the literature or to limit your analysis to a scientifically meaningful and well-defined subset. Using a random subset is also a last resort that you should avoid if possible and fully reveal when employed.</p>
+<p>Next, do “snowballing.” You already have primary studies you are sure you will use. Gather their references (for example, using Scopus or Web of Science) and inspect the 100 studies that are most commonly cited among the primary studies identified in your Google Scholar search. This way you can be reasonably confident you have not missed any important primary study. Of course, you can never be sure you have included all available studies. In particular, new studies will have few citations, so will not typically appear among the first hits in Google Scholar, nor will they be identified via the snowballing approach described above. You should repeat your Google Scholar search but limit it just to the last 3 years. Then inspect the abstracts of the first 30 hits. You should also inspect recent citations (those from the last 3 years) for the three most important primary studies. Be sure to make notes during the entire literature search process to facilitate replicability and construct a PRISMA diagram (read Havranek et al., 2020; Moher et al., 2015; Page et al., 2021, for details). See <a href="/frisch/">meta-analysis.cz/frisch</a> (Elminejad, Havranek, Horvath et al., 2022) or <a href="/risk/">meta-analysis.cz/risk</a> (Elminejad, Havranek, &amp; Irsova, 2022) for an example of the diagram.</p>
+
+<h2 id="sec-3"><span class="sec-num">3</span> DATA COLLECTION</h2>
+<p>You and your co-authors should collect data for meta-analysis; the task cannot be delegated to research assistants. Perhaps in a few years artificial intelligence (GPT 7?) will be able to help with this laborious task, but, for now, we see no substitute to the authors of the meta-analysis, experts on the meta-analyzed literature, carefully going through the primary studies one by one and painstakingly creating their dataset by hand, one data point after another. In fact, as noted by the philosopher and economic historian Deirdre McCloskey (McCloskey, 2014), here we should not talk about data (“things given” in Latin), but capta: “things seized.” Unlike the authors of most econometric studies, meta-analysts do not take existing data but create new databases. Examples of meta-analysis datasets are available at <a href="/">meta-analysis.cz</a>.</p>
+<p>If possible, at least two co-authors should collect the data independently. The reason is that random mistakes in manual coding of studies (dozens of pages in pdf) are inevitable, and with two experts collecting the same data the mistakes can be easily identified and corrected. The effect sizes collected for meta-analysis must be comparable quantitatively, not only qualitatively. This means that not only the same estimated sign implies an effect in the same direction, but that it is meaningful to compare the actual size of effects across primary studies. Quantitatively comparable effect sizes include correlation coefficients, odd ratios, elasticities, dollar values, and standardized mean differences. Regression coefficients are generally not comparable quantitatively without further transformations, because different primary studies can use different units of measurement or functional forms of the independent and/or dependent variables. An exception is represented by regressions in which variables on both sides are used in logarithms and, therefore, the regression yields estimated elasticities. If the authors of primary studies report summary statistics for their regression variables, the results can often be recomputed to a common metric. To take one example, the effect of class size on student achievement can be gauged by the change in the average test score, measured in percentiles of the test score’s standard deviation, in response to an increase in class size by 10 students (Opatrny et al., 2023).</p>
+<p>If such standardization is infeasible, meta-analysts can recompute regression estimates to partial correlation coefficients (Doucouliagos, 2005, Zigraiova &amp; Havranek, 2016; Cazachevici et al., 2020). However, a lot of information is lost though this transformation as well as the practical interpretation of the original effect sizes. Partial correlations should thus be used as a last resort (Stanley &amp; Doucouliagos, 2012; Stanley &amp; Doucouliagos, 2023; Roth et al., 2018). If you use partial correlations in your main analysis, always include a robustness check that focuses on the largest subset of primary studies with comparable effect sizes (often elasticities). For similar reasons, we discourage the use of simple correlation coefficients in meta-analysis if more informative alternatives, such as standardized mean differences, are available. Doucouliagos (2011) provides preliminary guidelines for interpreting partial correlations by trying to map partial correlations to elasticities. Because partial correlations (and, for that matter, all correlations) are related to their standard errors by construction (Stanley, Doucouliagos et al., 2023), it is often a good idea to transform them to Fisher’s z statistics for analysis, and then transform them back to correlations. Alternatively, you may use the instrumental variable approach by Irsova et al. (2023).</p>
+<p>You should collect all estimates reported in the primary studies. There are three good reasons for doing so. First, if you want to put more weight on the estimates preferred by authors themselves, you can always present a meta-analysis of the corresponding subsample of the dataset. This restricted analysis can serve as a robustness check or the baseline, but even the latter case does not justify discarding information by completely ignoring other estimates. Second, primary studies often report robustness checks themselves, and sometimes these estimates are deemed inferior by the authors. By using all estimates, you can examine whether the “inferior” estimates systematically differ from those preferred by authors. In your final best-practice meta-analysis estimate, you can still put more weight on the authors’ preferred results. Third, sometimes it is simply impossible to judge objectively which estimates the authors prefer. Collecting and analyzing all estimates eliminates the need for such a judgement.</p>
+<p>Primary studies typically report the standard errors of the estimated effect sizes. If, instead, t-statistics or p-values are reported, standard errors can be easily computed from these quantities. Complications arise in regression analysis if the explanatory variable of interest is included as an interaction with another variable or is included in different functional form (for example quadratic). Then, sometimes, it is straightforward to compute the corresponding effect size as the partial derivative of the estimated regression with respect to the explanatory variable of interest evaluated at the sample mean. But the issue is more challenging for the computation of the standard error, and the delta method needs to be used (Oehlert, 1992; Liu, 2012). Because data on covariances are almost never reported in primary studies, meta-analysts typically use the delta method with the assumption of zero covariances. An example of a dataset where the delta method is used is available at <a href="/spillovers/">meta-analysis.cz/spillovers</a> (Havranek &amp; Irsova, 2011).</p>
+<p>Note that meta-analysis can be conducted also for graphical results, not just numerical ones. In that case meta-analysts need to carefully convert graphs to numbers using pixel coordinates (Ehrenbergerova et al., 2023; Fabo et al., 2021; Havranek &amp; Rusnak, 2013; Rusnak et al., 2013); a concrete example of graphical data collection is available at <a href="/house_prices/IRs.pdf">meta-analysis.cz/house_prices/IRs. pdf</a>. Measurement error is inevitable when coding graphical results, but it is comparable to rounding in the case of numerical results—perhaps even less problematic, because the measurement error for coding graphical results is likely to be random.</p>
+<p>You should carefully inspect outliers and influence points in your data. Construct a funnel plot (a scatter plot of effect sizes and their precision). If some data points are far away from the main funnel shape (Egger et al., 1997; Stanley, 2005) or raise a red flag in DFBETA (a useful method for measuring the influence of individual data points on regression analysis, Belsley et al., 1980), read again the corresponding primary studies to make sure there are no typos in your data or in the primary study itself. Perhaps, further careful reading will identify some nuance in the way the study was conducted that makes its results not quantitatively comparable to the rest of the research literature. If still in doubt, write to the authors of the primary study. Perhaps reported units or your understanding of them are wrong. Influence or leverage points, as identified by DFBETA, are especially important as they can have a lot of weight and bias your meta-analysis results. Thus, these need to be corrected or, as a last resort, removed. Report robustness checks on what happens when you drop the outliers or when you winsorize (that is, replace observations above and below a certain centile with the value of that centile; Bajzik et al., 2020, Zigraiova et al., 2021) the data. The point is that your results should not be driven by a small number of highly influential research findings unless you know them to be especially reliable studies, in which case you must justify their prominence in detail.</p>
+<p>Apart from effect sizes and standard errors, you should also collect information on the main differences in the context in which the estimated effect sizes were obtained. Most meta-analyses should collect at least 10 variables (often dummy binary variables which take the value 0 or 1) that reflect differences in data, methods, and publication characteristics, commonly many more depending on the size and complexity of the database, but we encourage meta-analysts to keep the number below 30 for parsimony. For example, does the experiment in the primary study focus on a representative sample of the population, or only on the elderly? In which country was it conducted? Was a placebo or an alternative treatment assigned to the control group? When was the study published, what is the impact factor of the outlet, and how many per-year citations has the study received?</p>
+<p>Some researchers have argued that measures of publication impact reflect a “winner’s curse,” where the most highly cited papers and journals tend to be the most highly exaggerated (Ioannidis, 2005; Young et al., 2008; Costa-Font et al., 2013). However, some reviewers may demand that the meta-analyst evaluate research quality by these conventional metrics. In some contexts, the number of citations or the impact factor of the outlet may serve as proxies for unobservable quality characteristics. While variables related to publication can be used in a similar form in almost every meta-analysis, the remaining variables will vary. Meta-analysts should carefully prepare a list of variables they need to code before they start actual data collection. This is perhaps the most difficult and creative part of a meta-analysis: The number of potential variables is almost unlimited, and you must select the most important ones based on previous discussions in the literature and your own expertise. A large language model can be useful to help identify some of the dimensions in which the primary studies vary. Again, be aware that artificial intelligence can provide misleading results. Always double-check.</p>
+<p>You may want to include additional information that complements what you collect from primary studies. For example, if the primary studies were conducted using data from many different countries, it can be a good idea to include country (or region) characteristics as additional variables in meta-analysis. The results of an experiment can be influenced by temperature or humidity, and the response of inflation to interest rate hikes can depend on the financial development of the country. In this way, meta-analysis can bring further value and insight, often impossible to analyze by the individual primary studies.</p>
+
+<h2 id="sec-4"><span class="sec-num">4</span> PUBLICATION BIAS AND P-HACKING</h2>
+<p>A key issue that is almost impossible for individual primary studies to address is publication bias and p-hacking. That is, in contrast to what has sometimes been suggested (e.g., Rothstein et al., 2005; Rothstein, 2008), publication bias is not a problem of meta-analysis. It is a problem of primary empirical research, and meta-analysis represents one of two ways of effectively addressing the bias. Preregistration of large multi-lab experiments is the other (Nosek et al., 2018; Klein et al., 2014, 2018). When preregistration is fully followed, insignificant results are unlikely to be hidden in a file drawer nor will authors be tempted to p-hack their data or methods in order to provide significant results. Preregistration is less likely to work well in observational research, where researchers can inspect their data before preregistration. In contrast, meta-analysis can be used to correct for publication bias under all circumstances, with or without preregistration, when enough primary studies have been conducted on the specific research question. Still, current bias-correction techniques are not perfect, and a combination of pre-registration and meta-analysis seems ideal to combat publication bias even in the case of observational research.</p>
+<p>Definitions of publication bias and p-hacking vary. Sometimes the former is defined generally to comprise all situations in which the observed research results do not correspond to the results authors obtain when they analyze their data for the first time. Sometimes publication bias refers only to a situation where some studies are unpublished (the “file drawer” problem) because their results are insignificant or unintuitive. With the narrower definition of publication bias, p-hacking denotes conscious or unconscious manipulation of data or methods until statistical significance is achieved. In practice, both phenomena are observationally equivalent to the meta-analyst (unless nontraditional data are available, see Brodeur et al., 2023), so the broader definition of publication selection bias often encompasses both. But publication bias and p-hacking, narrowly defined, may have different implications for correction methods.</p>
+<p>If p-hacking is extreme enough, no publication bias correction can succeed. Consider, for example, the hypothetical case in which many researchers are dishonest and unscrupulous, make up their data, and cheat with estimation results. Then anything is possible in the research record, and meta-analysis will fail. But nothing suggests we live in such a world, and fraud, when influential on the meta-analysis findings, can sometimes be discovered (e.g., via DFBETA) and omitted— though of course by far not all influential observations are necessarily fraudulent. Comparisons of preregistered replications and original research results suggest an exaggeration of reported results due to publication bias and p-hacking (Kvarven et al., 2020), but there is little evidence of widespread or outright cheating. Journals have increasingly required data and codes for published papers, which should reduce or eliminate the more extreme forms of p-hacking (Askarov et al., 2023). As long as p-hacking is limited to selecting samples, outcome measures, and estimation methods technique to achieve statistical significance in a preferred direction, meta-analysis can accommodate and greatly reduce the resulting bias.</p>
+<p>As of 2023, we find it indefensible to ignore publication bias and p-hacking in a meta-analysis, unless meta-analysis is used to summarize the findings from multi-lab replications or individual patient data. As we noted in the Introduction, more than half of all meta-analyses published in 2022 unfortunately do ignore publication bias, often simply reporting fixed-effect or random-effects estimates and stopping there. In our view, such summaries without further correction convey little information. Of course, there are important exceptions. For randomized controlled trials of a few brand-new medical treatments or other interventions, a simple summary of current best evidence may be sufficient to guide policy and to indicate where further advancement may be made. In many areas of experimental research where there are only a handful of studies, it may be impractical to go beyond simple weighted averages.</p>
+
+<h3 id="sec-4-1">4.1 Main approaches</h3>
+<p>If you want to report a simple summary statistic before moving to a more sophisticated analysis, you should opt for unrestricted weighted least squares (UWLS), which dominate both fixed-effect and random-effects meta-analysis estimators (Stanley &amp; Doucouliagos, 2015, 2017; Stanley, Ioannidis et al., 2023). Likewise, it is never enough to use one arbitrary test of publication bias and say that because the test does not reject the null hypothesis of no bias, you will ignore bias and p-hacking in the rest of the analysis. You should use several approaches, or a Bayesian model average across them (Bartoš, Maier, Wagenmakers, Doucouliagos et al., 2023), and always show and discuss the bias-corrected estimates even if you somehow reject the presence of bias.</p>
+<p>There are two broad method families of bias correction techniques. One family is based on selection models (van Assen et al., 2015; van Aert &amp; van Assen, 2021; Andrews &amp; Kasy, 2019; Hedges, 1984, 1992; Iyengar &amp; Greenhouse, 1988; Vevea &amp; Hedges, 1995) which assume that estimates with different significance levels have different probabilities of publication. These models are typically estimated by maximum likelihood and can be interpreted as re-weighting the observed estimates by the inverse publication probability. The second family of techniques is based on the funnel plot (Bom &amp; Rachinger, 2019; Duval &amp; Tweedie, 2000; Egger et al., 1997; Furukawa, 2019; Ioannidis et al., 2017; Stanley, 2008; Stanley &amp; Doucouliagos, 2012; Stanley &amp; Doucouliagos, 2014) and assumes that selective reporting works via the size of the reported estimate (instead of the p-value, as selection models assume). Funnel-based techniques estimate the effect size reported in a hypothetical, infinitely precise study. Both groups of models have their pros and cons, and you should use, at least as a robustness check, models from both families. We prefer funnel-based techniques, because they are more flexible and can also incorporate some forms of p-hacking, not just publication bias, as we will soon see.</p>
+<p>Among selection models, the one with the most rigorous foundations is Andrews &amp; Kasy (2019). You should also report the results of a simplified selection model, p-uniform* (van Assen et al., 2015; van Aert &amp; van Assen, 2021), which can be more stable under some circumstances (McShane et al., 2016; van Aert &amp; Niemeyer, 2022; Irsova et al., 2023). Among funnel-based techniques, the baseline is PET-PEESE (Stanley &amp; Doucouliagos, 2014), which has been found to work best among bias-correction techniques when compared to preregistered replications (Kvarven et al., 2020). Another model, endogenous kink (Bom &amp; Rachinger, 2020), improves the performance of PET-PEESE in some situations. A useful robustness check is provided by WAAP (Ioannidis et al., 2017), which focuses on the estimates that are adequately powered. Codes for these techniques are available at <a href="/">meta-analysis.cz</a> under the heading “new papers.” The meta-analysis of Havranek et al. (2024) on the elasticity of substitution between skilled and unskilled labor presents an example of up-to-date application of these techniques, and can serve as a practical template.</p>
+<p>A recent alternative to the above application of multiple methods is to use a Bayesian model average, RoBMA-PSMA, across them (Bartos et al., 2023a; Maier et al., 2023). RoBMA-PSMA is a sophisticated weighted average over both families of models that uses the full research record to calculate the weights. There is also a tutorial for RoBMA-PSMA that employs a menu-driven program, JASP, complete with its own instructional video (<a href="https://bit.ly/pubbias">https://bit.ly/pubbias</a>), that does these complex calculations for you (Bartos et al., 2022). Also, JASP has drop-down menu choices that calculate: selection models, PET-PEESE, WAAP, p-curve, and p-uniform.</p>
+
+<h3 id="sec-4-2">4.2 Important details</h3>
+<p>Note that if you collect more than one estimate per study (which we recommend, because using just one estimate means that you ignore a lot of information), you need to make two adjustments. First, include a robustness check that additionally weights each estimate by the inverse of the number of estimates reported per study. The adjustment is easy to implement in meta-regression estimators such as PET-PEESE and endogenous kink. No easy adjustment exists for selection models, and the p-uniform* model can only be conducted using one estimate per study—typically the median estimate. It may be important in practice whether equal weight is placed on each estimate or each study, depending on which of the two can be viewed as the natural unit of analysis. If individual studies mostly use one study-specific dataset to deliver various estimates obtained using different methods, the study is the natural unit of analysis; if individual studies often examine different subsamples of data or entirely different datasets within studies, estimates are the natural units of analysis. For example, Krueger (2003) shows that, in the literature on the effect of class size on student achievement, the two approaches give substantially different results.</p>
+<p>Second, you should cluster standard errors at the study level. The clustering option is again easy to implement in meta-regression models, and the Andrews &amp; Kasy (2019) model also allows for clustering. But clustering works poorly when the number of clusters is small or when clusters are uneven—that is, if some studies report many estimates but others only a few. If you have fewer than 40 studies, you should use wild bootstrap instead (Roodman et al., 2019, used in the applications of Gechert et al., 2022 at <a href="/sigma/">meta-analysis.cz/sigma</a> or Yang et al., 2023 at <a href="/hedge/">meta-analysis.cz/hedge</a>) or the approach of Pustejovsky &amp; Tipton (2022). Note that the clustering of standard errors at the study level does not fully address potential estimate dependence caused, for example, by sample overlap. Sample overlap is an important issue, and we recommend the solution suggested by Bom and Rachinger (2020). An imperfect remedy is two-way clustering at the level of studies and countries or datasets (Havranek &amp; Irsova, 2017). In addition, with more than one estimate per study, meta-regression methods can (and, at least as a robustness check, should) include study-level dummies to filter out unobserved study-level heterogeneity that might be correlated with the publication bias term. This adjustment can automatically be accomplished by fixed-effects panel models, for example, in STATA. Note, however, that using study-level dummies means that you eliminate between-study variation and rely on within-study variation. This reliance will be problematic if studies report only a small number of estimates or if observed standard errors contain measurement error caused by, for example, rounding: fixed-effects panel models are more susceptible to attenuation bias than standard meta-regression.<sup class="fnref"><a id="endnote-ref-4" href="#endnote-4">4</a></sup> All techniques mentioned above try to address publication bias. But only funnel-based techniques can additionally address some forms of p-hacking; selection models assume that reported results are individually unbiased (Mathur &amp; VanderWeele, 2020), which is incompatible with any p-hacking. If the authors of primary studies p-hack their effect size estimates in response to the precision given by their data and methods in order to obtain statistically significant results, funnel-based methods like PET-PEESE and endogenous kink still come close to recovering the underlying “true” effect size. Because all abovementioned estimators rely on inverse variance weighting, they fail if the reported precision is also substantively p-hacked.</p>
+<p>In addition, funnel-based techniques detect publication bias through a correlation between the reported effect size and its standard error that is caused by truncation when there is selection for statistical significance (Stanley &amp; Doucouliagos, 2017). However, medical researchers argue that this correlation could arise due to some unspecified “small-study” effects. We routinely deal with this potential conflicting interpretation by controlling for any systematic heterogeneity through MRA. Another answer to questions about “small-study” effects is to use a new test, PSST (proportion of statistical significance test), that does not depend, in any way, on a correlation of SE (or sample size) with effect size (Stanley et al., 2021). PSST has been shown to be more powerful than selection models and funnel-based methods in detecting publication bias should it exist.</p>
+<p>Irsova et al. (2023) present a new estimator, MAIVE, that is based on PET-PEESE and the seminal idea of Stanley (2005) published in this journal. MAIVE takes the square root of the inverse of the sample size of primary studies as an instrument for reported precision and can thus address publication selection on estimates and/or their standard errors. MAIVE is also useful in other situations in which estimates are correlated with standard errors (e.g., when the meta-analysis includes correlations, Cohen’s d, or an inversion of the original regression estimate: see Stanley &amp; Rosenberger, 2009; Havranek et al., 2024).</p>
+<p>The instrumental approach is especially suitable if you suspect that some method choices in primary studies can jointly affect both the estimated effect size and the standard error. By using an instrument for the standard error, ideally also with study-level dummy variables (or fixed-effects panel) in the regression, you control for unobserved heterogeneity that might otherwise contaminate your analysis of publication bias and p-hacking. MAIVE is therefore a useful robustness check, though it remains to be seen whether p-hacking on standard errors is important in practice; likely it is much less common than p-hacking on effect size estimates. In any case, the problem can be addressed in funnel-based models by using the instrumental variable approach, while no such a straightforward solution exists for selection models. An R package for MAIVE is available at <a href="/maive/">meta-analysis.cz/maive</a>.</p>
+
+<h2 id="sec-5"><span class="sec-num">5</span> HETEROGENEITY AND IMPLIED ESTIMATES</h2>
+<p>Few empirical literatures can be represented by a single mean estimate, even when corrected for publication bias and taking unobserved heterogeneity into account. You should examine observed systematic heterogeneity; that is, examine why individual reported estimates of effect sizes vary.</p>
+<p>Eventually, the goal is to provide implied estimates, conditional means of effect sizes for different scenarios reflecting different contexts in which the effect size can be estimated or for which policy may be especially relevant. In the discussion of data collection, we have already mentioned that, if possible and permitted by the size of the database, you need to code at least 10 variables that capture the most important features of data, method, and publication characteristics of estimates and studies. For many meta-analyses, you will need to code many more. It will not hurt to ask an artificial intelligence (AI) program (e.g., chatGPT) to help identify the most important dimensions in which primary research studies on the topic differ, as long as you use your own professional judgment as the final arbiter. As we have noted earlier, you should always double-check the outputs of large language models. See <a href="/sigma/">meta-analysis.cz/sigma</a> (Gechert et al., 2022) or <a href="/eis/">meta-analysis.cz/eis</a> (Havranek, 2015) for specific examples how a final dataset with many variables capturing heterogeneity looks, and which variables are sensible to code and collect.</p>
+<p>There are two ways to approach observed heterogeneity in meta-analysis. The first way is to repeat the procedure described in the previous section about publication bias for various subsets of the dataset, the subsets driven by the main variables believed to capture heterogeneity. For example, studies can be divided according to countries, methods, or data age. As a result, you will get conditional estimates for various empirical contexts. The advantage of the subset approach is that quite different studies, and indeed quite different effect sizes, can be summarized in one paper through separate subgroup meta-analyses. At some point, when two groups of studies are different enough to warrant a separate subset analysis, they should remain separate. Of course, exceptions are possible, and subset analysis is always useful as a robustness check for multiple meta-regression if you are unsure.</p>
+<p>The second way to address heterogeneity is multiple MRA where the heterogeneity variables are included (together with the standard error) on the right-hand side of the regression model and the estimated effect sizes define the dependent variable. You should treat MRA as an extension of PET-PEESE. If you have good empirical reasons to doubt the performance of PET-PEESE regarding publication bias (including p-hacking) in your specific case (for example, an instability of central estimated coefficients resulting in small changes in the regression method or model), you will want to put more weight on the subset analysis mentioned above.</p>
+<p>The multiple meta-regression approach has two key advantages over subset analysis: it is relatively parsimonious, allowing inference from a single specification (unlike of many distinct subsets), and it accounts explicitly for likely omitted-variable bias in observational primary studies as well as in the MRA itself. Variables that reflect heterogeneity are often correlated and investigating them in isolation can easily lead to biased results. Nevertheless, this advantage is also related to the most important problem of multiple MRA: with many explanatory variables that are correlated among themselves, collinearity arises, and the resulting meta-regression estimates are imprecise and hard to interpret as individual partial derivatives. In addition, with multiple meta-regression you face model uncertainty: you do not know ex ante which variables to include in the final model. If you include all that you have collected, chances are that many will prove irrelevant and/or redundant which will again increase the imprecision of the entire MRA results.</p>
+<p>A solution that tackles both model uncertainty and collinearity is Bayesian model averaging with a dilution prior (George, 2010; Eicher et al., 2011; Steel, 2020). Bayesian model averaging runs many regressions with different combinations of right-hand-side variables and weights them according to data fit and model complexity. The dilution prior adds a weight that penalizes models with high collinearity. This model ensemble has been successfully employed in many meta-analyses (Bajzik et al. 2020, Elminejad, Havranek, &amp; Irsova, 2022, Elminejad, Havranek, Horvath et al., 2022, Havranek et al., 2024, among others), and an example of the code is available at <a href="/students/students.do">meta-analysis.cz/students/students.do</a>.</p>
+<p>If you want to avoid Bayesian approaches, you can use frequentist model averaging (Hansen, 2007, Amini &amp; Parmeter, 2012), which has less frequently been applied in meta-analysis (Kroupova et al., 2022, for example). Frequentist model averaging addresses model uncertainty but not collinearity, so you must carefully inspect variance-inflation factors and remove (or merge) variables with the factor above 10.</p>
+<p>In general, as in primary data analysis, you will not be able to use binary variables (dummy variables which take the values of either 0 or 1) that show little variance—often those with means below 0.03 or above 0.97 because, when included in a regression model, such variables typically create problems with collinearity and can lead to volatile results for the entire model. These variables should be avoided even when you use Bayesian model averaging. If your data has little collinearity, you may also use less complex techniques, such as the general-to-specific approach (Efroymson, 1960; Smith, 2018), in which the least significant variables are gradually eliminated prior to estimating the final model. In general, it is a good idea to use at least two of the three aforementioned approaches (Bayesian averaging, frequentist averaging, general-to-specific), one as the baseline and another as a robustness check.</p>
+<p>Which weights should you use for multiple meta-regression? Here again we recommend robustness checks. The optimal meta-analysis weight is based on inverse variance, but in multiple MRA, it can potentially lead to a level of collinearity that defeats the original purpose of making the estimation more efficient. A discussion of the pros and cons of various weights is available in Zigraiova &amp; Havranek (2016). You should use the classical inverse-variance weight as the starting point. If you have a strong reason to be concerned about collinearity, your model averaging specification can also be unweighted (Matousek et al., 2022) or weighted by the inverse of the number of estimates reported per study, which gives each study the same weight (Havranek, Irsova, &amp; Zeynalova, 2018). Collinearity is an issue only if you need a reliable estimate of the effect of specific variables that are highly correlated with others. For overall “prediction” and best practice, collinearity typically does not matter. Again, we recommend estimating at least two of these models, one as the baseline, another as a robustness check. Should you have concerns about p-hacking on the standard error, you may marry the instrumental (MAIVE) and Bayesian model averaging approaches (Strachan &amp; Inder, 2004; Koop et al., 2012), though, to our knowledge, such an approach has not so far been used in meta-analysis—so this is low-hanging fruit for technically skilled meta-analysts.</p>
+<p>As the central culmination of your meta-analysis, you should provide conditional means of estimated effect sizes for different scenarios. For subset analysis, the derivation of conditional means is straightforward, as we have already noted. For multiple MRA you need to compute fitted (or predicted) values from the estimated meta-regression. That is, you plug in specific values for right-hand-side variables and recover the implied effect size on the left-hand side. To make this exercise feasible, you will need to define a baseline “best practice” in the literature, or several versions of best practice when there is ambiguity. For example, we prefer studies that use the strongest available methodology: randomized experiments and quasi-experimental designs when available, controls for endogeneity when relevant, panel models rather than cross-sectional or time series data, and studies that omit the fewest relevant control variables. Note that the resulting estimate is corrected for publication bias (and many forms of p-hacking), approximately, by substituting zero for the standard error variable. The definition of “best practice” is, to some degree, unavoidably subjective, but it can be, aside from the meta-analyst’s expertise, based on a recent and highly regarded primary study. For examples and more discussion of conditional means and best practice, see Bajzik et al. (2020; <a href="/armington/">meta-analysis.cz/armington</a>), Havranek et al. (2024; <a href="/skill/">meta-analysis.cz/skill</a>), or Cala et al. (2022; <a href="/incentives/">meta-analysis.cz/incentives</a>).</p>
+
+<h2 id="sec-6"><span class="sec-num">6</span> CHECKLIST: HOW TO DO A MODERN META-ANALYSIS</h2>
+<ol class="guidelines">
+<li class="guideline" id="guideline-1"><p>Choose a topic you or your co-authors know well from your own primary research. <a class="g-permalink" href="#guideline-1" aria-label="Permalink to guideline 1">#</a></p></li>
+<li class="guideline" id="guideline-2"><p>Choose a topic for which no prior meta-analysis exists. If you update a meta-analysis, you need to use new and stronger methods. <a class="g-permalink" href="#guideline-2" aria-label="Permalink to guideline 2">#</a></p></li>
+<li class="guideline" id="guideline-3"><p>Prepare a search query in Google Scholar. Inspect the first 500 hits. <a class="g-permalink" href="#guideline-3" aria-label="Permalink to guideline 3">#</a></p></li>
+<li class="guideline" id="guideline-4"><p>Inspect the 30 studies that are most frequently cited by the ones included based on the Scholar search. <a class="g-permalink" href="#guideline-4" aria-label="Permalink to guideline 4">#</a></p></li>
+<li class="guideline" id="guideline-5"><p>Do not discard any study a priori based on publication outlet or perceived quality. <a class="g-permalink" href="#guideline-5" aria-label="Permalink to guideline 5">#</a></p></li>
+<li class="guideline" id="guideline-6"><p>Collect all estimates and their standard errors, when possible, not just one estimate per study. <a class="g-permalink" href="#guideline-6" aria-label="Permalink to guideline 6">#</a></p></li>
+<li class="guideline" id="guideline-7"><p>Collect the data independently with a co-author, then compare and correct mistakes. <a class="g-permalink" href="#guideline-7" aria-label="Permalink to guideline 7">#</a></p></li>
+<li class="guideline" id="guideline-8"><p>Use original effect size measures when comparable. If not, transform them to a common metric. <a class="g-permalink" href="#guideline-8" aria-label="Permalink to guideline 8">#</a></p></li>
+<li class="guideline" id="guideline-9"><p>Correlations (including partial ones) should be used as a last resort. <a class="g-permalink" href="#guideline-9" aria-label="Permalink to guideline 9">#</a></p></li>
+<li class="guideline" id="guideline-10"><p>Inspect outliers and influence points but be careful about deleting or winsorizing them. Report robustness checks. <a class="g-permalink" href="#guideline-10" aria-label="Permalink to guideline 10">#</a></p></li>
+<li class="guideline" id="guideline-11"><p>Think carefully about the aspects in which primary studies differ. Collect at least 10 variables capturing this heterogeneity. <a class="g-permalink" href="#guideline-11" aria-label="Permalink to guideline 11">#</a></p></li>
+<li class="guideline" id="guideline-12"><p>If you want to report a simple summary statistic, use the unrestricted weighted least squares weighted average, rather than fixed-effect or random-effects estimates. <a class="g-permalink" href="#guideline-12" aria-label="Permalink to guideline 12">#</a></p></li>
+<li class="guideline" id="guideline-13"><p>Always correct for publication bias (including p-hacking). Use RoBMA-PSMA or at least one technique from each of the following model groups: selection models (Andrews and Kasy, p-uniform*), funnel-based models (PET-PEESE, endogenous kink, WAAP, MAIVE). <a class="g-permalink" href="#guideline-13" aria-label="Permalink to guideline 13">#</a></p></li>
+<li class="guideline" id="guideline-14"><p>Report standard errors clustered at the study level. With fewer than 40 studies use the wild bootstrap. <a class="g-permalink" href="#guideline-14" aria-label="Permalink to guideline 14">#</a></p></li>
+<li class="guideline" id="guideline-15"><p>If possible, in meta-regressions use study-level dummy variables (i.e., fixed-effects panel models) to filter out unobserved study-level heterogeneity. <a class="g-permalink" href="#guideline-15" aria-label="Permalink to guideline 15">#</a></p></li>
+<li class="guideline" id="guideline-16"><p>Estimate the multiple meta-regression model by applying Bayesian model averaging with the dilution prior. <a class="g-permalink" href="#guideline-16" aria-label="Permalink to guideline 16">#</a></p></li>
+<li class="guideline" id="guideline-17"><p>If collinearity is not at issue, also use frequentist model averaging or the general-to-specific approach. <a class="g-permalink" href="#guideline-17" aria-label="Permalink to guideline 17">#</a></p></li>
+<li class="guideline" id="guideline-18"><p>Provide conditional means for effect sizes in different situations (corrected for both publication bias and potential method weaknesses in some studies). <a class="g-permalink" href="#guideline-18" aria-label="Permalink to guideline 18">#</a></p></li>
+</ol>
+<p>Of course, there are important exceptions that will depend on practical considerations and the complexities of the specific area of research investigated to this or to any sparse imperative checklist. We see these guidelines as a useful starting point, not as the final word about conducting meta-analyses.</p>
+
+<h2 id="sec-7"><span class="sec-num">7</span> CONCLUSION</h2>
+<p>Meta-analysis methodology has improved dramatically over the last few years, leading the charge towards a credibility revolution in the social sciences and beyond. Recent advances include solutions to: p-hacking, model uncertainty, collinearity, and to the lack of robustness in earlier approaches to publication bias correction. Yet few applied meta-analyses have fully exploited these advances. The purpose of this paper is to summarize these recent advances, along with providing straightforward practical guidelines for conducting meta-analysis, and to do so in one brief, nontechnical document accessible to meta-analysts from different fields.</p>
+<p>As of 2023, meta-analysis provides much more than a weighted average of the existing empirical literature. For one, neither primary studies nor weighted averages, alone, can account for publication bias and p-hacking. Moreover, as we have discussed, meta-analysis can bring substantial value added by including external information: for example, linking regional and institutional characteristics to the results of primary studies conducted for different countries (Havranek, Horvath et al., 2015; Havranek &amp; Irsova, 2017; Havranek, Herman, &amp; Irsova et al., 2018). Meta-research can also identify and measure the impact of potential method problems in some studies, such as endogeneity (Valickova et al., 2015; Havranek, Irsova, &amp; Vlach et al., 2018; Kroupova et al., 2022) or attenuation bias (Havranek et al., 2024)—problems that are, again, difficult to tackle in individual primary studies without a systematic comparison to the rest of the literature.</p>
+<p>By necessity, this brief sketch is incomplete in its breath, depth, and nuance. It is offered as a starting point for those new to meta-analysis and as a concise discussion of central methodological issues facing the meta-analysis of economics and the social sciences. Sensible deviations in our specific recommendations are welcome, especially from researchers with experience and/or strong statistics/econometric backgrounds. Nonetheless, we feel strongly that all meta-analyses should use methods that explicitly deal with common issues found in social science research: publication selection bias (including p-hacking), systematic heterogeneity, and the dependence of multiple estimates within studies. Although we believe that many disciplines and areas of research could benefit from these suggestions, we recognize that not all are suitable for multiple regression. With a median of five estimates/study (Stanley et al., 2023), most of systematic reviews of medical research are not sufficiently informative for MRA. However, much of social science research could benefit from the routine use of meta-regression, rather than subgroup comparisons, as long as there are approximately 10 or more estimates per coded moderator variable.</p>
+<p>Going forward, we see two important issues for meta-research. The first one is increased openness and transparency. You should always provide your data and codes online. Consider uploading early, private versions of your data on the Open Science Framework, where it can be time stamped, and sharing it publicly. A potential benefit of providing your materials online early is that they make other researchers more likely to cite your work, especially if your method is novel in some ways and your code is well documented, easy to run and follow.</p>
+<p>Second, the field is likely to be radically changed by artificial intelligence soon. As in any research area, the most important steps in meta-analysis are creative; thus, it is hard to imagine how these can be fully automated even with radically better versions of AI than we have at present. But meta-analysis is based on a uniquely laborious data collection that often takes months of expert researcher time. So, meta-analysis can benefit from AI more than most research fields. We believe that in a few years new versions of GPT (or some equivalent) will be able to assist with data collection from primary studies. Within a few years, AI may truly become a “virtual co-author,” scraping text as a starting point, and helping to identify relevant papers, variables, and data errors.</p>
+<p>AI programs such as GPT will soon be able to update existing meta-analyses that provide their data because this is a relatively mechanical task. GPT can be trained on the data of the original meta-analysis, the original search query, and the texts of the original primary studies and then update the dataset by scrapping data from the texts of new primary studies using best-practice meta-analysis methods in combination with these or other guidelines as a template. In most cases, therefore, it will be enough to publish one good meta-analysis on each empirical research topic. Updates could happen automatically, perhaps in real time as cumulative meta-analyses (Lau et al., 1992, Wetterslev et al., 2008, Kulinskaya &amp; Mah, 2022). When all authors of the original meta-analysis will provide code (or a chatGPT query) in an online appendix, readers can obtain updates with a few “clicks.” Only major breakthroughs in methodology will warrant a new meta-analysis.</p>
+<p>Automation due to advances in AI will enable meta-analysts to devote more of their time to the most creative parts of research, which will again increase the average quality and contribution that meta-analysis makes to collective scientific knowledge. Having undergone a period of steady and notable advancement, meta-analysis and meta-research can now lead researchers towards a broader credibility revolution in the social and medical sciences.</p>
+
+<h2 id="acknowledgments">ACKNOWLEDGMENTS</h2>
+<p>We are very grateful for the helpful advice and comments that we received from anonymous referees and the associate editor. We also wish to express our gratitude for the platform and continued support that the editors of the Journal of Economic Surveys, Les Oxley and Iris Claus, provided for the meta-analysis of economics research, in general. Irsova acknowledges support from the Czech Science Foundation (#23-05227 M). Havranek acknowledges support from the Czech Science Foundation (#21-09231S) and from NPO "Systemic Risk Institute" LX22NPO5101, funded by the European Union—Next Generation EU (Czech Ministry of Education, Youth and Sports, NPO: EXCELES). Any remaining errors or omissions are solely the responsibility of the authors.</p>
+<p>Open access publishing facilitated by Deakin University, as part of the Wiley - Deakin University agreement via the Council of Australian University Librarians.</p>
+
+<h2 id="data-availability">DATA AVAILABILITY STATEMENT</h2>
+<p>No data are analyzed in this paper. However, data from many published meta-analyses and their codes (R and Stata) for conducting modern meta-analysis can be found at <a href="/">meta-analysis.cz</a>.</p>
+
+<h2 id="orcid">ORCID</h2>
+<p>T. D. Stanley <a href="https://orcid.org/0000-0002-3205-1983">https://orcid.org/0000-0002-3205-1983</a></p>
+
+<h2 id="endnotes">ENDNOTES</h2>
+<ol class="endnotes">
+<li id="endnote-1"><p>More than 107,000 studies published in 2022 are classified as review articles in Google Scholar and contain the word “meta-analysis”. While some of them may be narrative reviews that refer to meta-analyses, many meta-analyses are not identified in this search because they are not classified as review articles. We thus consider 107,000 to represent the lower bound for the number of published meta-analyses. <a class="fnback" href="#endnote-ref-1" aria-label="Back to endnote marker 1">&#8617;</a></p></li>
+<li id="endnote-2"><p>More than 56,000 studies published in 2022 that are classified as review articles in Google Scholar and contain the word “meta-analysis” do not contain the phrase “publication bias” or “p-hacking”. Inspecting a random sample of 100 meta-analyses in more detail reveals that indeed about a half of them do not correct the data for publication bias or p-hacking. <a class="fnback" href="#endnote-ref-2" aria-label="Back to endnote marker 2">&#8617;</a></p></li>
+<li id="endnote-3"><p>It still has value to conduct a meta-analysis if the entire literature comprises, for example, only five papers. But then many standard meta-analysis (and especially meta-regression) methods recommended in these guidelines cannot be used because they require a larger sample. <a class="fnback" href="#endnote-ref-3" aria-label="Back to endnote marker 3">&#8617;</a></p></li>
+<li id="endnote-4"><p>Note that the term “fixed effects” has a different meaning in econometrics and much of the meta-analysis literature. In econometrics, a fixed-effects panel data model denotes a regression with cluster-specific dummy variables (here study-level dummies). In much of the meta-analysis literature, a fixed-effect (or common-effect) model denotes one that assumes no random heterogeneity, and outside of meta-regression typically no heterogeneity at all. The fixed-effects panel data model is more flexible than the random-effects panel data model because the latter places strong assumptions on the distribution of study-level heterogeneity terms. The random-effects panel model is thus not suitable for meta-analysis. <a class="fnback" href="#endnote-ref-4" aria-label="Back to endnote marker 4">&#8617;</a></p></li>
+</ol>
+
+<h2 id="references">REFERENCES</h2>
+<ul class="references">
+<li>Amini, S. M., &amp; Parmeter, C. F. (2012). Comparison of model averaging techniques: Assessing growth determinants. Journal of Applied Econometrics, 27(5), 870–876.</li>
+<li>Andrews, I., &amp; Kasy, &amp; M. (2019). Identification of and correction for publication bias. American Economic Review, 109(8), 2766–2794.</li>
+<li>Angeletos, G.-M., &amp; Huo, Z. (2021). Myopia and anchoring. American Economic Review, 111(4), 1166–1200.</li>
+<li>Askarov, Z., Doucouliagos, A., Doucouliagos, H., &amp; Stanley, T. D. (2023). The significance of data-sharing policy. Journal of the European Economic Association, 21(3), 1191–1226.</li>
+<li>Bajzik, J., Havranek, T., Irsova, Z., &amp; Schwarz, J. (2020). Estimating the Armington elasticity: The importance of study design and publication bias. Journal of International Economics, 127, Article 103383</li>
+<li>Bartoš, F., Maier, M., Quintana, D. S., &amp; Wagenmakers, E. J. (2022). Adjusting for publication bias in JASP and R: Selection models, PET-PEESE, and robust Bayesian meta-analysis. Advances in Methods and Practices in Psychological Science, 5(3), 1–19.</li>
+<li>Bartoš, F., Maier, M., Wagenmakers, E. J., Doucouliagos, H., &amp; Stanley, T. D. (2023a). Robust Bayesian meta-analysis: Model averaging across complementary publication bias adjustment methods. Research Synthesis Methods, 14(1), 99–116.</li>
+<li>Bartoš, F., Maier, M., Wagenmakers, E. J., Nippold, F., Doucouliagos, H., Ioannidis, J. P. A., Otte, W. M., Sladekova, M., Deresssa, T. K., Bruns, S. B., Fanelli, D., &amp; Stanley, T. D. (2023b). Footprint of publication selection bias on meta-analyses in medicine, environmental sciences, psychology, and economics. arXiv:2208.12334.</li>
+<li>Belsley, D. A., Kuh, E., &amp; Welsch, R. E. (1980). Regression diagnostics: Identifying influential data and sources of collinearity. John Wiley &amp; Sons.</li>
+<li>Bom, P. R. D., &amp; Rachinger, H. (2019). A kinked meta-regression model for publication bias correction. Research Synthesis Methods, 10(4), 497–514.</li>
+<li>Bom, P. R. D., &amp; Rachinger, H. (2020). A generalized-weights solution to sample overlap in meta-analysis. Research Synthesis Methods, 11(6), 812–832.</li>
+<li>Borenstein, M., Hedges, L. V., Higgins, J. P. T., &amp; Rothstein, H. (2021). Introduction to meta-analysis (2nd ed.). Chichester: Wiley.</li>
+<li>Brodeur, A., Carrell, S., Figlio, D., &amp; Lusher, L. (2023). Unpacking p-hacking and publication bias. American Economic Review, forthcoming.</li>
+<li>Brodeur, A., Cook, N., &amp; Heyes, A. (2020). Methods matter: P-hacking and causal inference in economics. American Economic Review, 110(11), 3634–3660.</li>
+<li>Brown, A. L., Imai, T., Vieider, F. M., &amp; Camerer, C. F. (2023). Meta-Analysis of empirical estimates of loss aversion. Journal of Economic Literature, forthcoming.</li>
+<li>Cala, P., Havranek, T., Irsova, Z., Matousek, J., &amp; Novak, J. (2022). “Financial incentives and performance: A meta-analysis of economics evidence.” CEPR discussion papers 17680, The Centre for Economic Policy Research, London. Retrieved from meta-analysis.cz/incentives</li>
+<li>Camerer, C., Dreber, A., Holzmeister, F., Ho, T. H., Huber, J., Johannesson, M., Kirchler, M., Nave, G., Nosek, B. A., Pfeiffer, T., Altmejd, A., Buttrick, N., Chan, T., Chen, Y., Forsell, E., Gampa, A., Heikensten, E., Hummer, L., Imai, T., . . . Wu, H. (2018). Evaluating the replicability of social science experiments in Nature and Science between 2010 and 2015. Nature Human Behaviour, 2(9), 637–644.</li>
+<li>Cazachevici, A., Havranek, T., &amp; Horvath, R. (2020). Remittances and economic growth: A meta-analysis. World Development, 134, Article 105021</li>
+<li>Cogley, T., &amp; Jovanovic, B. (2022). Structural breaks in an endogenous growth model. Review of Economic Studies, 89(2), 666–694.</li>
+<li>Comin, D., Lashkari, L., &amp; Mestieri, M. (2021). Structural change with long-run income and price effects. Econometrica, 89(1), 311–374.</li>
+<li>Costa-Font, J., McGuire, A., &amp; Stanley, T. D. (2013). Publication selection in health policy research: The winner’s curse hypothesis. Health Policy, 109, 78–87.</li>
+<li>Cowen, T., &amp; Tabarrok, A. T. (2023). “How to learn and teach economics with large language models, including GPT”. Retrieved from ssrn.com/abstract = 4391863 (March 2023).</li>
+<li>DellaVigna, S., &amp; Linos, E. (2022). RCTs to scale: Comprehensive evidence from two nudge units. Econometrica, 90(1), 81–116.</li>
+<li>Doucouliagos, H. (2011). How large is large? Preliminary and relative guidelines for interpreting partial correlations in economics. Working Papers 5/2011, Deakin University.</li>
+<li>Doucouliagos, C. H. (2005). ‘Publication bias in the economic freedom and economic growth literature.’ Journal of Economic Surveys, 19, 367–388.</li>
+<li>Duval, S., &amp; Tweedie, &amp; R. (2000). Trim and fill: A simple funnel-plot–based method of testing and adjusting for publication bias in meta-analysis. Biometrics, 56(2), 455–463.</li>
+<li>Efroymson, M. A. (1960). Multiple regression analysis. In A. Ralston, &amp; H. S. Wilf (Eds.), Mathematical methods for digital computers. Wiley.</li>
+<li>Egger, M., Smith, G. D., Schneider, M., &amp; Minder, C. (1997). Bias in meta-analysis detected by a simple, graphical test. British Medical Journal, 315(7109), 629–634.</li>
+<li>Ehrenbergerova, D., Bajzik, J., &amp; Havranek, T. (2023). When does monetary policy sway house prices? A meta-analysis. IMF Economic Review, 71, 538–573.</li>
+<li>Eicher, T. S., Papageorgiou, C., &amp; Raftery, A. E. (2011). Default priors and predictive performance in Bayesian model averaging, with application to growth determinants. Journal of Applied Econometrics, 26, 30–55.</li>
+<li>Elliott, G., Kudrin, N., &amp; Wuthrich, K. (2022). Detecting p-hacking. Econometrica, 90(2), 887–906.</li>
+<li>Elminejad, A., Havranek, T., Horvath, R., &amp; Irsova, Z. (2022a). Publication and identification biases in measuring the intertemporal substitution of labor supply. Charles University, Prague, Retrieved from meta-analysis.cz/ frisch</li>
+<li>Elminejad, A., Havranek, T., &amp; Irsova, &amp; Z. (2022b). Relative risk aversion: A meta-analysis. Charles University, Prague, Retrieved from meta-analysis.cz/risk</li>
+<li>Fabo, B., Jancokova, M., Kempf, E., &amp; Pastor, L. (2021). Fifty shades of QE: Comparing findings of central bankers and academics. Journal of Monetary Economics, 120, 1–20.</li>
+<li>Furukawa, C. (2019). Publication bias under aggregation frictions: theory, evidence, and a new correction method. Massachusetts Institute of Technology working paper. <a href="https://www.jeameetings.org/2019s/Gabst/1161.pdf">www.jeameetings.org/2019s/Gabst/1161.pdf</a></li>
+<li>Gechert, S., Havranek, T., Irsova, Z., &amp; Kolcunova, D. (2022). Measuring capital-labor substitution: The importance of method choices and publication bias. Review of Economic Dynamics, 45, 55–82.</li>
+<li>George, E. I. (2010). Dilution priors: Compensating for model space redundancy. In IMS collections borrowing strength: Theory powering applications–A festschrift for Lawrence D. Brown. (Vol. 6, 158–165). Institute of Mathematical Statistics.</li>
+<li>Gurevitch, J., Koricheva, J., Nakagawa, S., &amp; Stewart, G. (2018). Meta-analysis and the science of research synthesis. Nature, 555, 175–182.</li>
+<li>Detecting p-hackingen, B. E. (2007). Least squares model averaging. Econometrica, 75(4), 1175–1189.</li>
+<li>Havranek, T. (2015). Measuring intertemporal substitution: The importance of method choices and selective reporting. Journal of the European Economic Association, 13(6), 1180–1204.</li>
+<li>Havranek, T., Herman, D., &amp; Irsova, Z. (2018b). Does daylight saving save electricity? A Meta-Analysis. Energy Journal, 39(2), 35–61.</li>
+<li>Havranek, T., Horvath, R., Irsova, Z., &amp; Rusnak, M. (2015b). Cross-country heterogeneity in intertemporal substitution. Journal of International Economics, 96(1), 100–118.</li>
+<li>Havranek, T., &amp; Irsova, Z. (2011). Estimating Vertical spillovers from FDI: Why results vary and what the true effect is. Journal of International Economics, 85(2), 234–244.</li>
+<li>Havranek, T., &amp; Irsova, Z. (2017). Do borders really slash trade? A meta-analysis. IMF Economic Review, 65(2), 365–396.</li>
+<li>Havranek, T., Irsova, Z., Janda, K., &amp; Zilberman, D. (2015a). Selective reporting and the social cost of carbon. Energy Economics, 51, 364–406.</li>
+<li>Havranek, T., Irsova, Z., Laslopova, L., &amp; Zeynalova, O. (2024). Publication and attenuation biases in measuring skill substitution. The Review of Economics and Statistics, forthcoming. https://doi.org/10.1162/resta01227</li>
+<li>Havranek, T., Irsova, Z., &amp; Vlach, T. (2018a). Measuring the income elasticity of water demand: The importance of publication and endogeneity biases. Land Economics, 94(2), 259–283.</li>
+<li>Havranek, T., Irsova, Z., &amp; Zeynalova, O. (2018c). Tuition fees and university enrolment: A meta-regression analysis. Oxford Bulletin of Economics and Statistics, 80(6), 1145–1184.</li>
+<li>Havranek, T., &amp; Rusnak, M. (2013). Transmission lags of monetary policy: A meta-analysis. International Journal of Central Banking, 9(4), 39–76.</li>
+<li>Havranek, T., Stanley, T. D., Doucouliagos, H., Bom, P., Geyer-Klingeberg, J., Iwasaki, I., Reed, W. R., Rost, K., &amp; van Aert, R. C. M. (2020). Reporting guidelines for meta-analysis in economics. Journal of Economic Surveys, 34(3), 469–475.</li>
+<li>Hedges, L. V. (1984). Estimation of effect size under nonrandom sampling: The effects of censoring studies yielding statistically insignificant mean differences. Journal of Educational Statistics, 9, 61–85.</li>
+<li>Hedges, L. V. (1992). Modeling publication selection effects in meta-analysis. Statistical Science, 72(2), 246–255.</li>
+<li>Higgins, J. P. T., Thomas,J., Chandler,J., Cumpston,M., Li,T., Page, M. J., &amp; Welch,V. A. (Eds.). (2022). Cochrane handbook for systematic reviews of interventions version 6.3. cochrane, 2022. Retrieved from training.cochrane. org/handbook (updated February 2022)</li>
+<li>Hunter, J. E., &amp; Schmidt, F. L. (1990). Methods of meta-analysis: Correcting error and bias in research findings. Sage.</li>
+<li>Ioannidis, J., Stanley, T., &amp; Doucouliagos, H. (2017). The power of bias in economics research. Economic Journal, 127(605), 236–265.</li>
+<li>Ioannidis, J. P. A (2005). Contradicted and initially stronger effects in highly cited clinical research. Jama, 294, 218–228.</li>
+<li>Irsova, Z., Bom, P. R. D., Havranek, T., &amp; Rachinger, H. (2023). “Spurious precision in meta-analysis.” MetaArXiv 3qp2w, Center for Open Science. Retrieved from meta-analysis.cz/maive.</li>
+<li>Iyengar, S., &amp; Greenhouse, J. B. (1988). Selection models and the file drawer problem. Statistical Science, 3(1), 109– 117.</li>
+<li>Klein, R. A., Ratliff, K. A., Vianello, M., Adams, R., Bahník, Š., Bernstein, M. J., Bocian, K., Brandt, M. J., Brooks, B., Brumbaugh, C. C., Cemalcilar, Z., Chandler, J., Cheong, W., Davis, W. E., Devos, T., Eisner, M., Frankowska, N., Furrow, D., Galliani, E. M., . . . Nosek, B. A. (2014). Investigating variation in replicability: A ´many labs´ replication project. Social Psychology, 45(3), 142–152.</li>
+<li>Klein, R. A., Vianello, M., Hasselman, F., Adams, B. G., Adams, R. B., Alper, S., Aveyard, M., Axt, J. R., Babalola, M. T., Bahník, Š., Batra, R., Berkics, M., Bernstein, M. J., Berry, D. R., Bialobrzeska, O., Binan, E. D., Bocian, K., Brandt, M. J., Busching, R., . . . Nosek, B. A. (2018). Many labs 2: Investigating variation in replicability across samples and settings. Advances in Methods and Practices in Psychological Science, 1(4), 443–490.</li>
+<li>Koop, G., Leon-Gonzalez, R., &amp; Strachan, R. (2012). Bayesian model averaging in the instrumental variable regression model. Journal of Econometrics, 171(2), 237–250.</li>
+<li>J. Koricheva, J. Gurevitch &amp; K. Mengersen (Eds.). (2017). Handbook of meta-analysis in ecology and evolution. Princeton University Press.</li>
+<li>Kroodsma, D. A., Mayorga, J., Hochberg, T., Miller, N. A., Boerder, K., Ferretti, F., Wilson, A., Bergman, B., White, T. D., Block, B. A., Woods, P., Sullivan, B., Costello, C., &amp; Worm, B. (2018). Tracking the global footprint of fisheries. Science, 359(6378), 904–907.</li>
+<li>Kroupova, K., Havranek, T., &amp; Irsova, Z. (2022). “Student Employment and Education: A Meta-Analysis.” CEPR Discussion Papers 16550, The Centre for Economic Policy Research, London. Retrieved from meta-analysis.cz/students.</li>
+<li>Krueger, A. (2003). Economic considerations and class size. Economic Journal, 113(485), 34–63.</li>
+<li>Kulinskaya, E., &amp; Mah, E. Y. (2022). Cumulative meta-analysis: What works. Research Synthesis Methods, 13(1), 48–67.</li>
+<li>Kvarven, A., Stromland, E., &amp; Johannesson, M. (2020). Comparing meta-analyses and preregistered multiple-laboratory replication projects. Nature Human Behavior, 4, 423–434.</li>
+<li>Lau, J., Antman, E., Jimenez-Silva, J., Kupelnick, B., Mosteller, F., &amp; Chalmers, T. (1992). Cumulative meta-analysis of therapeutic trials for myocardial infarction. The New England Journal of Medicine, 327(4), 248–254.</li>
+<li>List, J., &amp; Uhlig, H. (2017). Introduction to the past, present, and future of economics: A celebration of the 125-year anniversary of the JPE and of chicago economics. Journal of Political Economy, 125(6), 1723–1727.</li>
+<li>Liu, X. (2012). Survival analysis: Models and applications (1st ed.). Higher Education Press, John Wiley &amp; Sons, Ltd.</li>
+<li>Maier, M., Bartos, F., &amp; Wagenmakers, E. J. (2023). Robust Bayesian meta-analysis: Addressing publication bias with model-averaging. Psychological Methods, 28(1), 107–122. <a href="https://doi.org/10.1037/met0000405">https://doi.org/10.1037/met0000405</a></li>
+<li>Mathur, M. B., &amp; VanderWeele, T. J. (2020). Sensitivity analysis for publication bias in meta-analyses. Journal of the Royal Statistical Society Series C, 69(5), Article 1091–1119.</li>
+<li>Matousek, J., Havranek, T., &amp; Irsova, Z. (2022). Individual discount rates: A meta-analysis of experimental evidence. Experimental Economics, 25(1), 318–358.</li>
+<li>McCloskey, D. N. (2014). Measured, unmeasured, mismeasured, and unjustified pessimism: A review essay of thomas piketty’s capitalism in the twenty first century. Erasmus Journal for Philosophy and Economics, 7(2), 73–115.</li>
+<li>McShane, B. B., Bockenholt, U., &amp; Hansen, K. T. (2016). Adjusting for publication bias in meta-analysis: An evaluation of selection methods and some cautionary notes. Perspectives on Psychological Science, 11, 730–749.</li>
+<li>Moher, D., Shamseer, L., Clarke, M., Ghersi, D., Liberati, A., Petticrew, M., Shekelle, P., &amp; Stewart, L. A. (2015). Preferred reporting items for systematic review and meta-analysis protocols (PRISMA-P) 2015 statement. Systematic Reviews, 4(1).</li>
+<li>Nakagawa, S., Noble, D. W. A., Senior, A. M., &amp; Lagisz, M. (2017). Meta-evaluation of meta-analysis: Ten appraisal questions for biologists. BMC Biology, 15(1), Article 18.</li>
+<li>Nakagawa, S., Yang, Y., Macartney, E. L., Spake, R., &amp; Lagisz, M. (2023). Quantitative evidence synthesis: A practical guide on meta-analysis, meta-regression, and publication bias tests for environmental sciences. Environmental Evidence, 12, Article 8.</li>
+<li>Neisser, C. (2021). The elasticity of taxable income: A meta-regression analysis. The Economic Journal, 131(640), 3365–3391.</li>
+<li>Nosek, B. A., Ebersole, C. R., DeHaven, A. C., &amp; Mellor, D. T. (2018). The preregistration revolution. Proceedings of the National Academy of Sciences, 115(11), 2600–2606.</li>
+<li>Oehlert, G. W. (1992). A note on the delta method. The American Statistician, 46(1), 27–29.</li>
+<li>Opatrny, M., Havranek, T., Irsova, Z., &amp; Scasny, M. (2023). Publication bias and model uncertainty in measuring the effect of class size on achievement. Working paper, Charles University, Prague. Retrieved from meta-analysis. cz/class.</li>
+<li>Open Science Collaboration. (2015). Estimating the reproducibility of psychological science. Science, 349(6251), <a href="https://www.science.org/doi/abs/10.1126/science.aac4716">https://www.science.org/doi/abs/10.1126/science.aac4716</a></li>
+<li>Page, M. J., McKenzie, J. E., Bossuyt, P. M., Boutron, I., Hoffmann, T. C., Mulrow, C. D., Shamseer, L., Tetzlaff, J. M., Akl, E. A., Brennan, S. E., Chou, R., Glanville, J., Grimshaw, J. M., Hróbjartsson, A., Lalu, M. M., Li, T., Loder, E. W., Mayo-Wilson, E., McDonald, S., . . . Moher, D. (2021). The PRISMA 2020 statement: An updated guideline for reporting systematic reviews. Bmj, 372(n71).</li>
+<li>Pustejovsky, J. M., &amp; Tipton, E. (2022). Meta-analysis with robust variance estimation: Expanding the range of working models. Prevention Science, 23, 425–438.</li>
+<li>Roodman, D., Nielsen, M. O., MacKinnon, J. G., &amp; Webb, M. D. (2019). Fast and wild: Bootstrap inference in Stata using Boottest. The Stata Journal, 19(1), 4–60.</li>
+<li>Roth, P. L., Le, H., Oh, I.-S., Van Iddekinge, C. H., &amp; Bobko, P. (2018). Using beta coefficients to impute missing correlations in meta-analysis research: Reasons for caution. Journal of Applied Psychology, 103(6), 644–658.</li>
+<li>Rothstein, H. R. (2008). Publication bias as a threat to the validity of meta-analytic results. Journal of Experimental Criminology, 4(1), 61–81.</li>
+<li>Rothstein, H. R., Sutton, A. J., &amp; Borenstein, M. (2005). Publication bias in meta-analysis. In H. R., Rothstein, A. J., Sutton, &amp; M., Borenstein (Eds.), Prevention, assessment and adjustments., John Wiley &amp; Sons, Ltd.</li>
+<li>Rusnak, M., Havranek, T., &amp; Horvath, R. (2013). How to solve the price puzzle? A meta-analysis. Journal of Money, Credit and Banking, 45(1), 37–70.</li>
+<li>Smith, G. (2018). Step away from stepwise. Journal of Big Data, 5, 32.</li>
+<li>Stanley, T. D. (2005). Beyond publication bias. Journal of Economic Surveys, 19(3), 309–345.</li>
+<li>Stanley, T. D. (2008). Meta-regression methods for detecting and estimating empirical effects in the presence of publication selection. Oxford Bulletin of Economics and Statistics, 70(1), 103–127.</li>
+<li>Stanley, T. D., &amp; Doucouliagos, H. (2012). Meta-regression analysis in economics and business. Routledge.</li>
+<li>Stanley, T. D., &amp; Doucouliagos, H. (2014). Meta-regression approximations to reduce publication selection bias. Research Synthesis Methods, 5(1), 60–78.</li>
+<li>Stanley, T. D., &amp; Doucouliagos, H. (2015). Neither fixed nor random: Weighted least squares meta-analysis. Statistics in Medicine, 34, 2116–2127.</li>
+<li>Stanley, T. D., &amp; Doucouliagos, H. (2017). Neither fixed nor random Weighted least squares meta-regression analysis. Research Synthesis Methods, 8, 19–42.</li>
+<li>Stanley, T. D., &amp; Doucouliagos, H. (2023). Correct standard errors can bias meta-analysis. Research Synthesis Methods, 14(3), 515–519. <a href="https://onlinelibrary.wiley.com/doi/full/10.1002/jrsm.1631">https://onlinelibrary.wiley.com/doi/full/10.1002/jrsm.1631</a></li>
+<li>Stanley, T. D., Doucouliagos, H., &amp; Havranek, T. (2023b). Meta-analyses of partial correlations are biased: Detection and solutions, EconStor Preprints 270940, ZBW—Leibniz Information Centre for Economics.</li>
+<li>Stanley, T. D., Doucouliagos, H., Ioannidis, J. P. A., &amp; Carter, E. (2021). Detecting publication selection bias through excess statistical significance. Research Synthesis Methods, 12, 776–795.</li>
+<li>Stanley, T. D., Ioannidis, J. P. A., Maximilian Maier, M., Doucouliagos, H., Otte, W. M., &amp; Bartoš, F. (2023). Unrestricted weighted least squares represent medical research better than random effects in 67,308 Cochrane meta-analyses. Journal of Clinical Epidemiology, 157, 53–58.</li>
+<li>Stanley, T. D., &amp; Rosenberger, R. S. (2009). Are recreation values systematically underestimated? reducing publication selection bias for benefit transfer Bulletin of Economics and Meta-Analysis. https://www.hendrix.edu/ uploadedFiles/Departments_and_Programs/Business_and_Economics/AMAES/RootnMRA.pdf</li>
+<li>Steel, M. F. (2020). Model averaging and its use in economics. Journal of Economic Literature, 58(3), 644–719.</li>
+<li>Strachan, R., &amp; Inder, B. (2004). Bayesian analysis of the error correction model. Journal of Econometrics, 123, 307–325.</li>
+<li>Valickova, P., Havranek, T., &amp; Horvath, R. (2015). Financial development and economic growth: A meta-analysis. Journal of Economic Surveys, 29(3), 506–526.</li>
+<li>van Aert, R. C., &amp; van Assen, M. (2021). Correcting for publication bias in a meta-analysis with the p-uniform* method. Tilburg University &amp; Utrecht University working paper. 10.31222/osf.io/zqjr9</li>
+<li>van Aert, R. C. M., &amp; Niemeyer, H. (2022). Publication bias. In W. O’Donohue, A. Masuda, &amp; S. Lilienfeld (Eds.), Avoiding questionable research practices in applied psychology. Springer. <a href="https://doi.org/10.1007/978-3-031-04968-2_10">https://doi.org/10.1007/978-3-031-04968-2_10</a></li>
+<li>van Assen, M. A., van Aert, R., &amp; Wicherts, J. M. (2015). Meta-analysis using effect size distributions of only statistically significant studies. Psychological Methods, 20, 293–309.</li>
+<li>Vevea, J., &amp; Hedges, L. V. (1995). A general linear model for estimating effect size in the presence of publication bias. Psychometrika, 60(3), 419–435.</li>
+<li>Wetterslev, J., Thorlund, K., Brok, J., &amp; Gluud, C. (2008). Trial sequential analysis may establish when firm evidence is reached in cumulative meta-analysis. Journal of Clinical Epidemiology, 61(1), 64–75.</li>
+<li>Yang, F., Havranek, T., Irsova, Z., &amp; Novak, J. (2023). Is research on hedge fund performance published selectively? A quantitative survey. Journal of Economic Surveys, forthcoming.</li>
+<li>Young, N. S., Ioannidis, J. P. A., &amp; Al-Ubaydli, O. (2008). Why current publication practices may distort science. PLoS Medicine, 5(10), e201.</li>
+<li>Zigraiova, D., &amp; Havranek, T. (2016). Bank competition and financial stability: Much ado about nothing? Journal of Economic Surveys, 30(5), 944–981.</li>
+<li>Zigraiova, D., Havranek, T., Irsova, Z., &amp; Novak, J. (2021). How puzzling is the forward premium puzzle? A Meta-Analysis. European Economic Review, 134, Article 103714</li>
+</ul>
+
+<h2 id="how-to-cite">How to cite this article</h2>
+<p>Irsova, Z., Doucouliagos, H., Havranek, T., &amp; Stanley, T. D. (2024). Meta-analysis of social
+science research: A practitioner’s guide. <i>Journal of Economic Surveys</i>, 38, 1547–1566.
+<a href="https://doi.org/10.1111/joes.12595">https://doi.org/10.1111/joes.12595</a></p>
+
+			</div>
+			<div class="meta">
+				<p class="links"><a href="/guidelines/" class="more">Back to the guide</a> &nbsp;&middot;&nbsp;
+<a href="/guidelines/guidelines2.pdf" class="more">Read the guide (free PDF)</a> &nbsp;&middot;&nbsp;
+<a href="/" class="more">Recent applied meta-analyses</a></p>
+			</div>
+		</div>
+	</div>
+	<!-- end content -->
+	<!-- start sidebar -->
+	<div id="sidebar">
+		<ul>
+			<li id="search">
+				<h2>Search</h2>
+				<form method="get" action="https://www.google.com/search">
+					<fieldset>
+					<input type="text" id="s" name="q" value="" aria-label="Search meta-analysis.cz" />
+					<input type="hidden" name="as_sitesearch" value="meta-analysis.cz" />
+					<input type="submit" id="x" value="Search" />
+					</fieldset>
+				</form>
+			</li>
+			<li>
+				<h2>This paper</h2>
+				<ul>
+					<li><a href="/guidelines/">Guide home page</a></li>
+					<li><a href="/guidelines/guidelines2.pdf">The guide (PDF)</a></li>
+					<li><a href="https://onlinelibrary.wiley.com/doi/full/10.1111/joes.12595">Published version</a></li>
+					<li><a href="https://www.maer-net.org/post/methods-guidelines-for-meta-analysis">Blog version</a></li>
+				</ul>
+			</li>
+			<li>
+				<h2>Methods papers</h2>
+				<ul>
+					<li><a href="/maive/">Spurious precision in meta-analysis (MAIVE)</a></li>
+					<li><a href="/outliers/">Sensitivity to outlier handling</a></li>
+					<li><a href="/correlations/">Bias in meta-analyses of correlations</a></li>
+					<li><a href="/pcc/">Partial correlation coefficients</a></li>
+				</ul>
+			</li>
+			<li>
+				<h2>Links</h2>
+				<ul>
+					<li><a href="https://www.maer-net.org/">MAER-Net</a></li>
+					<li><a href="https://campbellcollaboration.org/">Campbell Collaboration</a></li>
+					<li><a href="https://ideas.repec.org/k/metaana.html">Meta-Analysis on RePEc</a></li>
+				</ul>
+			</li>
+		</ul>
+	</div>
+	<!-- end sidebar -->
+	<div style="clear: both;">&nbsp;</div>
+</div>
+<!-- end page -->
+<footer class="site-foot">
+<p class="foot-lede"><b>meta-analysis.cz</b> collects meta-analyses in economics: the papers, the
+data behind them, and the code that produced them. It is maintained by <a href="/about/"><b>Tomas Havranek</b> and
+<b>Zuzana Irsova</b></a> at the Institute of Economic Studies, Charles University, Prague.</p>
+<p class="foot-nav"><a href="/">All meta-analyses</a> &middot;
+<a href="/results/">Headline results</a> &middot;
+<a href="/datasets/">Datasets and the pooled table</a> &middot;
+<a href="/maive/">MAIVE</a> &middot;
+<a href="/guidelines/">Practitioner&#x27;s guide</a> &middot;
+<a href="/notes/">Research notes</a> &middot;
+<a href="https://www.easymeta.org/">EasyMeta web app</a></p>
+<p class="foot-who"><b>Tomas Havranek</b> &middot; <a href="https://www.tomashavranek.cz/">tomashavranek.cz</a> &middot; <a href="https://ies.fsv.cuni.cz/contacts/institute-members/78067720">IES FSV UK</a> &middot; <a href="https://orcid.org/0000-0002-3158-2539">ORCID</a> &middot; <a href="https://scholar.google.com/citations?user=BF0BvBkAAAAJ">Google Scholar</a> &middot; <a href="https://ideas.repec.org/f/pha418.html">RePEc</a> &middot; <a href="https://www.scopus.com/authid/detail.uri?authorId=24453189000">Scopus</a> &middot; <a href="https://cepr.org/about/people/tomas-havranek">CEPR</a> &middot; <a href="https://metrics.stanford.edu/people/tomas-havranek">Stanford METRICS</a></p>
+<p class="foot-who"><b>Zuzana Irsova</b> &middot; <a href="https://www.irsova.com/">irsova.com</a> &middot; <a href="https://ies.fsv.cuni.cz/contacts/institute-members/73504033">IES FSV UK</a> &middot; <a href="https://orcid.org/0000-0002-0753-8124">ORCID</a> &middot; <a href="https://scholar.google.com/citations?user=LaHrICUAAAAJ">Google Scholar</a> &middot; <a href="https://ideas.repec.org/e/pir23.html">RePEc</a> &middot; <a href="https://www.scopus.com/authid/detail.uri?authorId=37080793200">Scopus</a> &middot; <a href="https://cepr.org/about/people/zuzana-irsova">CEPR</a> &middot; <a href="https://metrics.stanford.edu/people/zuzana-irsova">Stanford METRICS</a></p>
+<p class="foot-cite"><b>How to cite this collection:</b> Havranek, T. and Z. Irsova (2026).
+meta-analysis.cz: harmonised estimate-level data from meta-analyses in economics. Zenodo.
+<a href="https://doi.org/10.5281/zenodo.21773678">https://doi.org/10.5281/zenodo.21773678</a>.
+Individual papers carry their own citation on their own page.</p>
+<p class="foot-machine">For machines: <a href="/api/v1/datasets.json">datasets.json</a> &middot;
+<a href="/api/v1/datapackage.json">datapackage.json</a> &middot;
+<a href="/api/v1/croissant.json">croissant.json</a> &middot;
+<a href="/llms.txt">llms.txt</a> &middot; <a href="/llms-full.txt">llms-full.txt</a> &middot;
+<a href="/sitemap.xml">sitemap.xml</a></p>
+</footer>
+</body>
+</html>

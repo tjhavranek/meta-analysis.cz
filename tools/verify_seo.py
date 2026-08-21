@@ -84,6 +84,7 @@ def _cite_norm(t):
     return re.sub(r"^\s*Reference:\s*", "", " ".join(t.split()))
 
 fails = []
+new_pages = []   # pages with no HEAD copy: new, not drifted
 pages = ["index.html"] + sorted(
     f"{d}/index.html" for d in os.listdir(SITE)
     if os.path.isfile(os.path.join(SITE, d, "index.html"))
@@ -93,6 +94,17 @@ pages = ["index.html"] + sorted(
 # line it would be the one page nothing verifies.
 if os.path.isfile(os.path.join(SITE, "about", "index.html")):
     pages.append("about/index.html")
+# Sub-pages of a project, one level down: /guidelines/guide/, /maive/paper/. The listing
+# above is one level deep, so a full-text republication living under a project directory was
+# checked by nothing here -- no viewport check, no div balance, no canonical count, no JSON-LD
+# validation, no visible-text-vs-HEAD guard. It passed only because it was never opened.
+for _d in sorted(os.listdir(SITE)):
+    _dir = os.path.join(SITE, _d)
+    if not os.path.isdir(_dir) or _d in SELF_MANAGED or _d.startswith('.'):
+        continue
+    for _sub in sorted(os.listdir(_dir)):
+        if os.path.isfile(os.path.join(_dir, _sub, "index.html")):
+            pages.append(f"{_d}/{_sub}/index.html")
 
 n_ld = n_urls = 0
 for rel in pages:
@@ -100,9 +112,16 @@ for rel in pages:
     new = open(path, "rb").read().decode("utf-8")
     old = git_show(rel)
     if old is None:
-        fails.append(f"{rel}: not in git HEAD?")
-        continue
-    _o, _n = visible_text(old), visible_text(new)
+        # A page that is not in HEAD is NEW, not drifted. This guard exists to catch the
+        # generator silently rewriting visible text, and a brand-new page has no previous
+        # text to be rewritten from. Failing here would block the very first deploy of every
+        # page ever added -- the same defect this repo already hit once, when a new count
+        # refresh would have failed the first build it acted on. The page still gets every
+        # structural check below; only the drift comparison is skipped, and it says so.
+        new_pages.append(rel)
+        _o = _n = None
+    else:
+        _o, _n = visible_text(old), visible_text(new)
     # generate_seo.refresh_about_counts() rewrites /about/'s pooled-datasets numbers from
     # api/v1/datasets.json, so on the build that first picks up a new dataset the page
     # legitimately differs from HEAD. Comparing the sentence with its digits masked keeps
@@ -112,7 +131,7 @@ for rel in pages:
     if rel == "about/index.html":
         _o, _n = _counts.sub("pools N of the N published datasets", _o), \
                  _counts.sub("pools N of the N published datasets", _n)
-    if _o != _n:
+    if _o is not None and _o != _n:
         fails.append(f"{rel}: VISIBLE TEXT CHANGED")
     # STRUCTURAL: today's incident - a stray </div> closed #content early and
     # dropped the sidebar out of the page box, while every other check passed.
@@ -190,7 +209,12 @@ for rel in pages:
     # hand-written metadata outside it, which is what collided on /debate)
     m_in = re.search(r'<!-- seo-meta:start -->(.*?)<!-- seo-meta:end -->', new, re.S)
     outside = new.replace(m_in.group(0), "") if m_in else new
-    if re.search(r'name="citation_|property="og:|application/ld\+json', outside):
+    # A sub-page of a project (/guidelines/guide/, /maive/paper/) writes its own head, because
+    # generate_seo's injector walks one level and never reaches it. Demanding its metadata sit
+    # inside sentinels nothing will ever write would fail it forever. It is self-managed by
+    # construction, so the duplicate-tag checks above still apply and this one does not.
+    _is_subpage = rel.count("/") == 2 and rel.endswith("/index.html")
+    if not _is_subpage and re.search(r'name="citation_|property="og:|application/ld\+json', outside):
         fails.append(f"{rel}: metadata found OUTSIDE the seo-meta sentinel block "
                      f"(hand-written duplicate?) - move it inside or remove it")
     # COVERAGE: a page whose menu links a same-folder, non-supplement PDF must
@@ -326,6 +350,9 @@ if os.path.isfile(_est) and os.path.isfile(_pap):
                 f"override one_line in papers.json.")
 
 print(f"pages checked: {len(pages)}; JSON-LD blocks valid: {n_ld}; URLs resolved: {n_urls}")
+for _np in new_pages:
+    print(f"  .. {_np}: new page, no HEAD copy, so visible text was not diffed. Every "
+          f"structural check still applied.")
 if fails:
     print(f"\nFAILURES ({len(fails)}):")
     for f in fails[:60]:

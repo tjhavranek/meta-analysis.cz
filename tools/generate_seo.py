@@ -271,8 +271,14 @@ def build_jsonld(m):
            # journal's own terms: conventional_wisdom.pdf is Wiley's version of record, marked
            # CC BY-NC-ND on its first page, with nine other copyright holders. So the default
            # stands and papers.json may override it per paper.
-           "license": m.get("article_license")
-                      or "https://creativecommons.org/licenses/by/4.0/"}
+           # NO DEFAULT. This used to fall back to CC BY 4.0, which machine-asserted a
+           # licence the owner cannot grant on 34 of 48 papers: Crossref records Elsevier,
+           # Springer, Wiley and Sage proprietary or text-mining terms for them, and three
+           # are explicitly CC BY-NC-ND. A schema.org `license` is an offer of reuse terms
+           # to anyone who parses it, so a wrong one invites reuse the publisher never
+           # granted. Saying nothing is the honest default; article_license in papers.json
+           # carries the licence where it has actually been verified against Crossref.
+           **({"license": m["article_license"]} if m.get("article_license") else {})}
     if authors:
         art["author"] = authors
     if m["year"]:
@@ -728,6 +734,22 @@ def main():
     lastmod = lambda rel: gd.get(rel.replace(os.sep, "/"), TODAY)
     urls = [(BASE + "/", lastmod("index.html"))]
     urls += [(f"{BASE}/{p}/", lastmod(f"{p}/index.html")) for p in projects]
+    # Sub-pages of a project, one level down: /guidelines/guide/, /maive/paper/ and any
+    # future full-text republication. `projects` is a ONE-LEVEL listing, and the recursive
+    # walk below covers SELF_MANAGED sections only, so a page like this was enumerated by
+    # nothing: absent from the sitemap and from llms.txt no matter how often the generator
+    # ran, and invisible to verify_seo.py, which builds its page list the same way. A
+    # full-text republication whose whole value is being findable was reachable only by
+    # typing the URL.
+    for p in projects:
+        for sub in sorted(os.listdir(os.path.join(SITE, p))):
+            sub_index = os.path.join(SITE, p, sub, "index.html")
+            if not os.path.isfile(sub_index):
+                continue
+            with open(sub_index, encoding="utf-8") as _f:
+                if 'name="robots" content="noindex' in _f.read(2000):
+                    continue          # noindex pages do not belong in a sitemap
+            urls.append((f"{BASE}/{p}/{sub}/", lastmod(f"{p}/{sub}/index.html")))
     pdf_rels = []
     for dp, dns, fns in os.walk(SITE):
         rel_dir = os.path.relpath(dp, SITE).replace(os.sep, "/")

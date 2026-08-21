@@ -38,7 +38,8 @@
   },
   "has_meta_description": true,
   "meta_keywords": "shareholder activism, price response, value created, meta-analysis, publication bias, model averaging",
-  "one_line": "Meta-analysis of 1,973 estimates from 67 studies finds shareholder activism raises stock prices by 0% to 1.5% after correcting for publication bias."
+  "one_line": "Meta-analysis of 1,973 estimates from 67 studies finds shareholder activism raises stock prices by 0% to 1.5% after correcting for publication bias.",
+  "article_license": "https://creativecommons.org/licenses/by/4.0/"
  },
  {
   "project": "alphas",
@@ -406,7 +407,8 @@
   "figure": null,
   "has_meta_description": true,
   "meta_keywords": "correlation coefficients, meta-analysis, bias, small sample",
-  "one_line": "Simulations show UWLS+3 and PET-PEESE reduce small-sample and publication-selection bias in meta-analyses of correlations."
+  "one_line": "Simulations show UWLS+3 and PET-PEESE reduce small-sample and publication-selection bias in meta-analyses of correlations.",
+  "article_license": "https://creativecommons.org/licenses/by/4.0/"
  },
  {
   "project": "discrate",
@@ -683,7 +685,8 @@
   },
   "has_meta_description": true,
   "meta_keywords": "Cognition, exercise, meta-analysis, model uncertainty, publication bias",
-  "one_line": "Meta-meta-analysis of 2,239 estimates finds publication-bias-adjusted exercise effects on cognition are smaller than commonly reported."
+  "one_line": "Meta-meta-analysis of 2,239 estimates finds publication-bias-adjusted exercise effects on cognition are smaller than commonly reported.",
+  "article_license": "https://creativecommons.org/licenses/by/4.0/"
  },
  {
   "project": "fdi",
@@ -925,7 +928,8 @@
   "figure": null,
   "has_meta_description": true,
   "meta_keywords": "meta-analysis, publication bias, p-hacking, artificial intelligence, model uncertainty",
-  "one_line": "Step-by-step guidelines for modern meta-analysis in social sciences, covering publication bias, p-hacking, heterogeneity, and AI-assisted workflows."
+  "one_line": "Step-by-step guidelines for modern meta-analysis in social sciences, covering publication bias, p-hacking, heterogeneity, and AI-assisted workflows.",
+  "article_license": "https://creativecommons.org/licenses/by-nc-nd/4.0/"
  },
  {
   "project": "habits",
@@ -1003,7 +1007,8 @@
   "has_meta_description": true,
   "meta_keywords": "hedge funds, meta-analysis, publication bias",
   "one_line": "Quantitative survey of 1,019 hedge fund alpha estimates from 74 studies finds little evidence of publication selection bias.",
-  "citation_title": "Is research on hedge fund performance published selectively? A quantitative survey"
+  "citation_title": "Is research on hedge fund performance published selectively? A quantitative survey",
+  "article_license": "https://creativecommons.org/licenses/by/4.0/"
  },
  {
   "project": "house_prices",
@@ -1291,7 +1296,8 @@
   "has_meta_description": true,
   "meta_keywords": "Publication bias, p-hacking, selection models, meta-regression, funnel plot, inverse-variance weighting",
   "one_line": "MAIVE, an instrumental-variable estimator that corrects meta-analysis for spurious precision when standard errors are estimated and can be p-hacked.",
-  "citation_title": "Spurious Precision in Meta-Analysis of Observational Research"
+  "citation_title": "Spurious Precision in Meta-Analysis of Observational Research",
+  "article_license": "https://creativecommons.org/licenses/by/4.0/"
  },
  {
   "project": "migrant",
@@ -1357,7 +1363,8 @@
   "figure": null,
   "has_meta_description": true,
   "meta_keywords": "partial correlation coefficients, meta-analysis, bias, small sample",
-  "one_line": "Shows all partial-correlation meta-analyses are biased and proposes UWLS+3 to correct small-sample bias."
+  "one_line": "Shows all partial-correlation meta-analyses are biased and proposes UWLS+3 to correct small-sample bias.",
+  "article_license": "https://creativecommons.org/licenses/by-nc-nd/4.0/"
  },
  {
   "project": "price_puzzle",
@@ -1555,7 +1562,8 @@
   },
   "has_meta_description": true,
   "meta_keywords": "Euler equation, risk aversion, Epstein-Zin preferences, meta-analysis, publication bias, model uncertainty",
-  "one_line": "A meta-analysis of 1,021 estimates from 92 studies finds publication-bias-corrected relative risk aversion near 1 in economics and 2-7 in finance."
+  "one_line": "A meta-analysis of 1,021 estimates from 92 studies finds publication-bias-corrected relative risk aversion near 1 in economics and 2-7 in finance.",
+  "article_license": "https://creativecommons.org/licenses/by/4.0/"
  },
  {
   "project": "scc",
@@ -1735,7 +1743,8 @@
   },
   "has_meta_description": true,
   "meta_keywords": "elasticity of substitution, skilled labor, skill premium, Bayesian model averaging, meta-analysis, publication bias",
-  "one_line": "Meta-analysis finds publication bias dominates in skill substitution estimates, implying a mean elasticity of 4."
+  "one_line": "Meta-analysis finds publication bias dominates in skill substitution estimates, implying a mean elasticity of 4.",
+  "article_license": "https://creativecommons.org/licenses/by/4.0/"
  },
  {
   "project": "spillovers",
@@ -1816,7 +1825,8 @@
   },
   "has_meta_description": true,
   "meta_keywords": "Student employment, educational outcomes, meta-analysis, publication bias, Bayesian model averaging",
-  "one_line": "Meta-analysis of 861 estimates finds student employment has a negative but economically small effect on educational outcomes."
+  "one_line": "Meta-analysis of 861 estimates finds student employment has a negative but economically small effect on educational outcomes.",
+  "article_license": "https://creativecommons.org/licenses/by/4.0/"
  },
  {
   "project": "substitution",
@@ -2106,6 +2116,7 @@
   "figure": null,
   "has_meta_description": true,
   "meta_keywords": "conventional wisdom, meta-analysis, systematic review, publication bias, research revision, effect size, economics",
-  "one_line": "A systematic review of influential economics meta-analyses against the conventional wisdom they tested: after correcting for observable biases, effects are typically much closer to zero and sometimes switch sign, with a relative reduction of 45-60%."
+  "one_line": "A systematic review of influential economics meta-analyses against the conventional wisdom they tested: after correcting for observable biases, effects are typically much closer to zero and sometimes switch sign, with a relative reduction of 45-60%.",
+  "article_license": "https://creativecommons.org/licenses/by-nc-nd/4.0/"
  }
 ]
