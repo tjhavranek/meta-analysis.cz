@@ -5,10 +5,10 @@ citability, not rights. A repo-wide deposit would be 422 MB and would bury the c
 artefact among 173 PDFs and 23 replication packages. This bundle is the harmonised table,
 the index, the codebooks and the documentation: the part someone actually cites.
 
-The 44 per-dataset mirrors are left out for the same reason. They remain on the site and
+The per-dataset mirrors are left out for the same reason. They remain on the site and
 are covered by the same CC BY 4.0 grant.
 """
-import os, shutil, hashlib, json
+import os, shutil, hashlib, json, re
 HERE=os.path.dirname(os.path.abspath(__file__))
 # Build from the BUILT tree (data_layer/out), not from site/. Reading site/ made this script
 # depend on 13_publish.py having run first, and on the release where CITATION.cff and README.md
@@ -20,12 +20,12 @@ if not os.path.isdir(SITE):
     raise SystemExit("data_layer/out is missing -- run 06/08/07/10 before building the deposit")
 # The version comes from the build, never from a literal. Hardcoded "v1.0.0" meant a correct
 # 1.1.0 bundle was written into a folder claiming 1.0.0 -- and, worse, ON TOP of the maintainer's
-# archival copy of what was actually deposited at 1.0.0. If you change this folder name, change
-# the matching "v1.0.0" guard in 96_metadata.py in the SAME commit: that guard skips deposit
-# files whose path does not contain v1.0.0, so a rename silently drops the current deposit's
-# CITATION.cff, README.md and LICENSE out of the licence-wording scan.
+# archival copy of what was actually deposited at 1.0.0. 96_metadata.py derives the same version for its own deposit scan, so the two stay in step
+# without a hardcoded literal in either.
 VER=json.load(open(os.path.join(SITE,"api","v1","datasets.json"),
                    encoding="utf-8"))["harmonised_table"]["version"]
+if not re.fullmatch(r"[0-9A-Za-z.\-]+", VER):   # VER reaches rmtree; never let it traverse
+    raise SystemExit(f"refusing to build: implausible version {VER!r}")
 OUT=os.path.join(os.path.dirname(HERE),"zenodo_deposit",
                  f"meta-analysis-cz-harmonised-v{VER}")
 if os.path.isdir(OUT):

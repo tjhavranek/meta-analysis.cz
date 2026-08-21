@@ -12,7 +12,7 @@
 > `datasets.json`, so it will be `meta-analysis-cz-harmonised-v{current}` and **not** the
 > `v0.9.0-beta` named below. Take the file list, the row counts and the file sizes from the
 > freshly built folder's own `SHA256SUMS.txt`, and the dataset, row and literature counts
-> from `api/v1/datasets.json` — never from this page. Numbers written by hand here have gone
+> from `api/v1/datasets.json`, never from this page. Numbers written by hand here have gone
 > stale at every release so far, which is why they are no longer worth correcting in place.
 
 **Do NOT enable the GitHub↔Zenodo integration for `tjhavranek/meta-analysis.cz`.**

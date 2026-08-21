@@ -194,7 +194,8 @@ def _known_issues():
                 _bits.append("outside <code>[-1, 1]</code> altogether, " + _fmt(_gt)
                              + f", to |{_ab_o.max():.3f}|")
             if len(_eq):
-                _bits.append("at exactly &plusmn;1, which requires a standard error of zero: "
+                _bits.append("at exactly &plusmn;1 while carrying a positive standard error, "
+                             "which is not a coherent effect/error pair: "
                              + _fmt(_eq))
             out.append(
                 f"{len(_oob):,} estimates labelled a partial correlation take a value no "
@@ -202,9 +203,8 @@ def _known_issues():
                 "source file's own partial-correlation column, and they share one cause. "
                 "Elsewhere in that file the column reproduces <code>t / sqrt(t&sup2; + df)</code>, "
                 "and inverting it on these rows returns a degrees-of-freedom argument of zero or "
-                "below. The sample size entered the original calculation as missing, which drives "
-                "the result to &plusmn;1 and past it. We publish what the source publishes rather "
-                "than substituting our own arithmetic, so filter on "
+                "below, which no sample can have. The cause lies in the source's own calculation, "
+                "and the archive does not reconstruct it. Filter on "
                 "<code>abs(effect) &lt; 1</code> if you need strictly valid correlations. "
                 "Correcting them belongs to the original authors, not to this archive.")
 
@@ -215,8 +215,12 @@ def _known_issues():
     try:
         _cls = _pd.read_parquet(os.path.join(OUT, "data", DV, "class", "class.parquet"))
         _z = int(((_cls["pcc"] == 0) & (_cls["t_stat"].abs() > 0.01)).sum())
-    except Exception:
-        _z = 0
+    except FileNotFoundError:
+        _z = 0                    # not built yet, so the item does not apply
+    except Exception as _e:
+        # The mirror exists and will not read. Dropping the item silently would be the
+        # same self-silencing defect this function was fixed for one branch below.
+        raise SystemExit(f"known_issues: cannot read the class mirror: {_e}")
     if _z:
         out.append(f"A further {_z} rows of <code>class</code> store a partial correlation of "
                    "exactly zero beside a t-statistic that is not zero, which the same "
@@ -275,8 +279,7 @@ def _known_issues():
                            "literature built by a reshape, so it is the only one whose harmonised "
                            "rows can outnumber its source records; identical-looking rows elsewhere "
                            "in the table are identical in the source too. Correction is scheduled "
-                           "for the next data revision. "
-                           "next data revision. Estimate counts and unweighted statistics for this "
+                           "for the next data revision. Estimate counts and unweighted statistics for this "
                            "literature are affected; the caliper counts and share-below-6 published "
                            "on this page are not.")
     return out
@@ -286,9 +289,10 @@ _ki = _known_issues()
 if _ki:
     _items = "\n".join(f"<li>{x}</li>" for x in _ki)
     w("known_issues.html",
-      "<p>These defects are present in the files published here and in the archived "
-      "v1.0.0 deposit. They are documented and retained rather than silently altered or "
-      "dropped. Nothing else in the table is affected.</p>\n"
+      "<p>These defects are present in the files published here. Those in the pooled "
+      "table are also in the archived v1.0.0 deposit, which ships it; the per-dataset "
+      "mirrors are not deposited. They are documented and retained rather than silently "
+      "altered or dropped. Nothing else in the table is affected.</p>\n"
       "<ul>\n" + _items + "\n</ul>\n")
 else:
     # emit an EMPTY file rather than none, so the page inlines nothing and the box vanishes

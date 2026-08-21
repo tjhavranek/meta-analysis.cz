@@ -41,13 +41,18 @@ inst <- read.csv("https://meta-analysis.cz/data/v1/estimates_harmonised.csv")
 ```
 
 **Read the Parquet where you can, and pass `float_precision="round_trip"` where you
-cannot.** The CSV carries every value at full precision and round-trips exactly, but
-pandas' default CSV parser is not exact: it moves 9,220 of the 49,689 `t_stat` values by
-up to 1.5e-11. That is invisible almost everywhere and decisive in one place. 96 estimates
-sit within 1e-9 of |t| = 1.96, so a caliper count around that threshold comes out as
-508 below and 633 above from the Parquet, and 503 and 639 from the same CSV read at
-pandas' defaults. The Parquet is canonical. If you are counting near a threshold, use it,
-or read the CSV as:
+cannot.** The CSV is not the problem: it carries every value at full precision and
+round-trips exactly. Pandas' default CSV parser is the problem, and it is not exact. It
+moves 17,329 of the 49,689 `se` values, 10,043 `effect` values and 9,220 `t_stat` values,
+each by up to about 1.5e-11. So this applies to any column you read, not only the derived
+ones, and recomputing `effect / se` yourself does not avoid it.
+
+That is invisible almost everywhere and decisive at a threshold. 96 estimates sit within
+1e-9 of |t| = 1.96, so the caliper count around it comes out as 508 below and 633 above
+from the Parquet, 503 and 639 from the same CSV at pandas' defaults, and 506 and 634 if
+you recompute the ratio from a default-parsed CSV. The figures published on this site
+quote the Parquet. Writing the CSV with more digits does not help; it makes the default
+parse worse. The Parquet is canonical. Read the CSV as:
 
 ```python
 pd.read_csv("https://meta-analysis.cz/data/v1/estimates_harmonised.csv",
