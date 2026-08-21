@@ -35,3 +35,8 @@ data_layer/out/
 # by name, so the release is unaffected -- this only stops `git add -A` committing
 # it into a public repo.
 data_layer/codegrep_evidence.json
+
+# The hand-built Zenodo bundle. 12_zenodo_bundle.py writes it to the repo ROOT, which in
+# this layout is the live site, so an unguarded `git add -A` would publish a ~14 MB
+# duplicate of the deposit into the public tree.
+/zenodo_deposit/

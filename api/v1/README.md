@@ -227,8 +227,12 @@ arithmetically rather than by column name: the correct pair is the one where
 settles most datasets outright. Where it could not — no t-statistic column, an
 asymmetric confidence interval, a wide layout, an outcome that is itself a
 t-statistic — the mapping was taken from the paper's own published replication
-code, and `verified_by` in the harmonisation report records which file and which
-line of reasoning settled it.
+code or other documented evidence, and `verified_by` in the harmonisation report
+records which file and which line of reasoning settled it. One literature is the
+exception: for `finance_growth`, two candidate column pairs both reproduce the
+reported t-statistic, no replication code was read to break the tie, and the
+mapping is marked `arithmetic_pairing_only` in the table below rather than
+independently confirmed.
 
 ## Two products, not one
 

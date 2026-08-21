@@ -94,10 +94,17 @@ for a,b in itertools.combinations(sorted(sig),2):
 for ds,g in H.groupby("dataset"):
     un=(g["effect_units"].dropna().iloc[0] if g["effect_units"].notna().any() else "")
     if "partial correlation" in str(un).lower():
-        bad_r=int((g["effect"].abs()>1).sum())
-        if bad_r:
-            warn.append(f"{ds}: {bad_r} effect(s) outside [-1,1] but labelled a partial correlation "
-                        f"(max |{g['effect'].abs().max():.3f}|) — source coding error, must be documented")
+        # >= 1, not > 1. A correlation of exactly +/-1 beside a finite standard error is as
+        # impossible as one of 1.372, and both come from the same upstream defect: inverting
+        # pcc = t/sqrt(t^2 + df) on these rows returns df <= 0, because the sample size entered
+        # the source's own transform as missing. Testing only > 1 disclosed 2 rows and hid 73.
+        bad_r=int((g["effect"].abs()>1).sum()); at_one=int((g["effect"].abs()==1).sum())
+        if bad_r or at_one:
+            bits=[]
+            if bad_r:  bits.append(f"{bad_r} outside [-1,1] (max |{g['effect'].abs().max():.3f}|)")
+            if at_one: bits.append(f"{at_one} at exactly +/-1")
+            warn.append(f"{ds}: {' and '.join(bits)} but labelled a partial correlation "
+                        f"— source coding error, must be documented")
     n=g["n_obs"].dropna()
     if len(n) and (n<=1).any():
         warn.append(f"{ds}: {int((n<=1).sum())} rows with n_obs <= 1 — not a plausible sample size; "

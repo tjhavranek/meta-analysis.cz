@@ -177,29 +177,71 @@ def _known_issues():
     _u = _H.get("effect_units")
     if _u is not None:
         _pcc = _H[_u.astype(str).str.contains("partial correlation", case=False, na=False)]
-        _oob = _pcc[_pd.to_numeric(_pcc["effect"], errors="coerce").abs() > 1]
+        # >= 1, not > 1. An estimate of exactly +/-1 beside a finite standard error is as
+        # impossible as one of 1.372, and both are the same defect: inverting the source's own
+        # pcc = t/sqrt(t^2 + df) on these rows returns df <= 0, so the sample size entered that
+        # transform as missing. Testing only > 1 disclosed 2 rows and left 73 undisclosed.
+        _ab = _pd.to_numeric(_pcc["effect"], errors="coerce").abs()
+        _oob = _pcc[_ab >= 1]
         if len(_oob):
-            _by = _oob.groupby("dataset")["effect"].agg(["size", lambda c: c.abs().max()])
-            out.append("Some estimates labelled a partial correlation lie outside "
-                       "<code>[-1, 1]</code>, which a correlation cannot: "
-                       + "; ".join(f"<code>{e(k)}</code> ({int(r['size'])} row"
-                                   f"{'s' if int(r['size']) != 1 else ''}, max "
-                                   f"|{r.iloc[1]:.3f}|)" for k, r in _by.iterrows())
-                       + ". These come straight from the source files and are almost certainly "
-                       "coding errors in the originals. They are kept rather than silently "
-                       "altered, so anything assuming the bound must filter them out.")
+            _ab_o = _pd.to_numeric(_oob["effect"], errors="coerce").abs()
+            _gt, _eq = _oob[_ab_o > 1], _oob[_ab_o == 1]
+            _fmt = lambda d: "; ".join(
+                f"<code>{e(k)}</code> ({int(v)} row{'s' if int(v) != 1 else ''})"
+                for k, v in d.groupby("dataset").size().items())
+            _bits = []
+            if len(_gt):
+                _bits.append("outside <code>[-1, 1]</code> altogether, " + _fmt(_gt)
+                             + f", to |{_ab_o.max():.3f}|")
+            if len(_eq):
+                _bits.append("at exactly &plusmn;1, which requires a standard error of zero: "
+                             + _fmt(_eq))
+            out.append(
+                f"{len(_oob):,} estimates labelled a partial correlation take a value no "
+                "correlation can: " + ", and ".join(_bits) + ". They come straight from the "
+                "source file's own partial-correlation column, and they share one cause. "
+                "Elsewhere in that file the column reproduces <code>t / sqrt(t&sup2; + df)</code>, "
+                "and inverting it on these rows returns a degrees-of-freedom argument of zero or "
+                "below. The sample size entered the original calculation as missing, which drives "
+                "the result to &plusmn;1 and past it. We publish what the source publishes rather "
+                "than substituting our own arithmetic, so filter on "
+                "<code>abs(effect) &lt; 1</code> if you need strictly valid correlations. "
+                "Correcting them belongs to the original authors, not to this archive.")
 
     _pp = _H[_H["dataset"] == "price_puzzle"]
     if len(_pp):
         _g = _pp.groupby(["study_id", "horizon", "effect", "se"]).size()
-        if len(_g) and int(_g.min()) > 1:
-            _m = int(_g.min())
-            out.append(f"<code>price_puzzle</code> repeats every estimate {_m} times: "
-                       f"{len(_pp):,} rows where {len(_g):,} are distinct. The source file is already "
-                       "long on <code>horizon</code> while its response columns are wide, and the "
-                       "reshape did not deduplicate. A weighted average is unchanged, but any count "
-                       "of estimates, any unweighted statistic and any method treating rows as "
-                       "independent observations will be wrong for this literature.")
+        # max(), not min(). min() > 1 only fires when EVERY estimate is duplicated, which was the
+        # 0.9.0-beta 7x case. It is silent on partial duplication, so the 20 rows this release
+        # actually carries went undisclosed beneath a sentence promising nothing else was affected.
+        if len(_g) and int(_g.max()) > 1:
+            _extra = int(_g.sum() - len(_g))
+            if int(_g.min()) > 1:
+                _m = int(_g.min())
+                out.append(f"<code>price_puzzle</code> repeats every estimate {_m} times: "
+                           f"{len(_pp):,} rows where {len(_g):,} are distinct. The source file is "
+                           "already long on <code>horizon</code> while its response columns are "
+                           "wide, and the reshape did not deduplicate. A weighted average is "
+                           "unchanged, but any count of estimates, any unweighted statistic and any "
+                           "method treating rows as independent observations will be wrong for this "
+                           "literature.")
+            else:
+                out.append(f"<code>price_puzzle</code> carries {_extra} rows that duplicate another "
+                           f"row exactly: {len(_pp):,} rows where {len(_g):,} are distinct on study, "
+                           "horizon, effect and standard error. The source file is already long on "
+                           "<code>horizon</code> while its response columns are wide; the reshape "
+                           "deduplicates on every column except <code>horizon</code>, and three "
+                           "impulse responses carry one inconsistent month-code cell, so each was "
+                           "split in two before the reshape multiplied it. The source's own estimate "
+                           "identifier declares 217 impulse responses where the pipeline built 220. "
+                           "These rows correspond to no source observation. This is the only "
+                           "literature built by a reshape, so it is the only one whose harmonised "
+                           "rows can outnumber its source records; identical-looking rows elsewhere "
+                           "in the table are identical in the source too. Correction is scheduled "
+                           "for the next data revision. "
+                           "next data revision. Estimate counts and unweighted statistics for this "
+                           "literature are affected; the caliper counts and share-below-6 published "
+                           "on this page are not.")
     return out
 
 
@@ -207,8 +249,9 @@ _ki = _known_issues()
 if _ki:
     _items = "\n".join(f"<li>{x}</li>" for x in _ki)
     w("known_issues.html",
-      "<p>These defects are present in the files published here and in the archived deposit. "
-      "Each will be fixed in the next release. Nothing else in the table is affected.</p>\n"
+      "<p>These defects are present in the files published here and in the archived "
+      "v1.0.0 deposit. They are documented and retained rather than silently altered or "
+      "dropped. Nothing else in the table is affected.</p>\n"
       "<ul>\n" + _items + "\n</ul>\n")
 else:
     # emit an EMPTY file rather than none, so the page inlines nothing and the box vanishes

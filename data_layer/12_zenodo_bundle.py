@@ -8,7 +8,7 @@ the index, the codebooks and the documentation: the part someone actually cites.
 The 44 per-dataset mirrors are left out for the same reason. They remain on the site and
 are covered by the same CC BY 4.0 grant.
 """
-import os, shutil, hashlib
+import os, shutil, hashlib, json
 HERE=os.path.dirname(os.path.abspath(__file__))
 # Build from the BUILT tree (data_layer/out), not from site/. Reading site/ made this script
 # depend on 13_publish.py having run first, and on the release where CITATION.cff and README.md
@@ -18,7 +18,20 @@ HERE=os.path.dirname(os.path.abspath(__file__))
 SITE=os.path.join(HERE,"out")
 if not os.path.isdir(SITE):
     raise SystemExit("data_layer/out is missing -- run 06/08/07/10 before building the deposit")
-OUT=os.path.join(os.path.dirname(HERE),"zenodo_deposit","meta-analysis-cz-harmonised-v1.0.0")
+# The version comes from the build, never from a literal. Hardcoded "v1.0.0" meant a correct
+# 1.1.0 bundle was written into a folder claiming 1.0.0 -- and, worse, ON TOP of the maintainer's
+# archival copy of what was actually deposited at 1.0.0. If you change this folder name, change
+# the matching "v1.0.0" guard in 96_metadata.py in the SAME commit: that guard skips deposit
+# files whose path does not contain v1.0.0, so a rename silently drops the current deposit's
+# CITATION.cff, README.md and LICENSE out of the licence-wording scan.
+VER=json.load(open(os.path.join(SITE,"api","v1","datasets.json"),
+                   encoding="utf-8"))["harmonised_table"]["version"]
+OUT=os.path.join(os.path.dirname(HERE),"zenodo_deposit",
+                 f"meta-analysis-cz-harmonised-v{VER}")
+if os.path.isdir(OUT):
+    # Never merge into a previous bundle. A file dropped from the release survives on disk,
+    # is absent from SHA256SUMS.txt, and gets uploaded as an unmanifested extra.
+    shutil.rmtree(OUT)
 ITEMS=[("data/v1/estimates_harmonised.csv","estimates_harmonised.csv"),
        ("data/v1/estimates_harmonised.parquet","estimates_harmonised.parquet"),
        ("api/v1/datasets.json","datasets.json"),
@@ -35,6 +48,16 @@ for f in sorted(os.listdir(cb)):
     man.append(("codebooks/"+f,os.path.getsize(d),hashlib.sha256(open(d,"rb").read()).hexdigest()))
 with open(os.path.join(OUT,"SHA256SUMS.txt"),"w",encoding="utf-8",newline="\n") as fh:
     for n,_,h in man: fh.write(f"{h}  {n}\n")
+# Every file in the folder must appear in the manifest exactly once, and every manifest entry
+# must exist. The upload is a drag of the folder's CONTENTS, so anything on disk ships whether
+# or not it is listed -- an unmanifested file is an undeclared file in an immutable deposit.
+_disk={os.path.relpath(os.path.join(dp,f),OUT).replace(os.sep,"/")
+       for dp,_,fs in os.walk(OUT) for f in fs}-{"SHA256SUMS.txt"}
+_man={n for n,_,_ in man}
+if _disk!=_man:
+    raise SystemExit(f"bundle/manifest mismatch: on disk but unmanifested {sorted(_disk-_man)}; "
+                     f"manifested but missing {sorted(_man-_disk)}")
+
 print(f"bundle: {len(man)} files, {sum(s for _,s,_ in man)/1048576:.1f} MB -> {OUT}")
 
 # GATE. This bundle is the thing that leaves the building and becomes immutable under a DOI, so

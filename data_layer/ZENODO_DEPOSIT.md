@@ -3,7 +3,17 @@
 > **STATUS: PUBLISHED.** This deposit exists.
 > Concept DOI (cite this): **https://doi.org/10.5281/zenodo.21773678**
 > Version 0.9.0-beta: **https://doi.org/10.5281/zenodo.21773679**
+> Version 1.0.0: **https://doi.org/10.5281/zenodo.21789702**
 > The steps below describe how it was made and how to make the next version.
+
+> **READ THIS BEFORE FOLLOWING THE STEPS.** Every count and folder name below describes
+> **0.9.0-beta** and is now two releases out of date. The procedure is still right; the
+> numbers are not. `12_zenodo_bundle.py` names the folder after the version in
+> `datasets.json`, so it will be `meta-analysis-cz-harmonised-v{current}` and **not** the
+> `v0.9.0-beta` named below. Take the file list, the row counts and the file sizes from the
+> freshly built folder's own `SHA256SUMS.txt`, and the dataset, row and literature counts
+> from `api/v1/datasets.json` — never from this page. Numbers written by hand here have gone
+> stale at every release so far, which is why they are no longer worth correcting in place.
 
 **Do NOT enable the GitHub↔Zenodo integration for `tjhavranek/meta-analysis.cz`.**
 It deposits the whole repository tarball and cannot take a subset. That would place

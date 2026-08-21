@@ -194,7 +194,10 @@ for _root in _roots:
         # would hide that the live deposit needs replacing. Only the current bundle is scanned.
         if any(x in _dp for x in (".git", "node_modules", "redesign", "_seo_stash")):
             continue
-        if "zenodo_deposit" in _dp and "v1.0.0" not in _dp:
+        # "current" is read from datasets.json, never hardcoded. This said "v1.0.0" while the
+        # build produced 1.1.0, so renaming the bundle folder would have silently dropped the
+        # current deposit's CITATION.cff, README.md and LICENSE out of this scan entirely.
+        if "zenodo_deposit" in _dp and f"v{API['harmonised_table']['version']}" not in _dp:
             continue
         for _f in _fn:
             if _f not in ("CITATION.cff", "LICENSE", "README.md", ".zenodo.json"):

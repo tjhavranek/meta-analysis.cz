@@ -7,7 +7,7 @@ and referenced it from `.zenodo.json` without actually publishing it.
 
 Run in order. `09_verify.py` is the gate and must print `ALL CHECKS PASS`.
 
-**Pin the toolchain first: `pip install -r data_layer/requirements-pinned.txt`.** pandas and pyarrow both write their versions into every Parquet file, so an unpinned rebuild changes all 44 dataset checksums without changing any data.
+**Pin the toolchain first: `pip install -r data_layer/requirements-pinned.txt`.** pandas and pyarrow both write their versions into every Parquet file, so an unpinned rebuild changes all 45 dataset checksums without changing any data.
 
 | | |
 |---|---|
@@ -24,12 +24,18 @@ Run in order. `09_verify.py` is the gate and must print `ALL CHECKS PASS`.
 `overrides.json` is the important file to read. Column names in these datasets are
 unreliable — matching on them selects a t-statistic instead of the effect in one dataset and
 a functional-form dummy in another. Where the arithmetic test was not decisive, the mapping
-comes from the paper's own replication code, and every such decision is recorded there under
-`verified_by` with the evidence that settled it.
+comes from the paper's own replication code or other documented evidence, and every such
+decision is recorded there under `verified_by` with the evidence that settled it. One
+literature, `finance_growth`, has no replication-code confirmation and is marked
+`arithmetic_pairing_only`.
 
 `units.json` records what each literature's effect measures and, where the sign convention
 can be misread, a `direction_note`. Several are load-bearing: `dst` stores the impact on
-consumption, so negative means savings; `skill` and `migrant` store inverse elasticities.
+consumption, so negative means savings; `migrant` stores a **confirmed** negative inverse
+elasticity, so recover the elasticity as `-1/effect` and convert its standard error by the
+delta method. `skill` is an **open question**: two audits suspected it is also an inverse
+elasticity, but unlike `migrant` the row-wise inversion does not hold. Read `units.json`'s
+`skill` note before using that column; do not invert it on the strength of this sentence.
 
 Not published here: `out/` (a byte-identical duplicate of `/api/v1/` and `/data/v1/`) and
 `staging/` (scratch).
