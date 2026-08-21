@@ -57,9 +57,54 @@ jobs:
       # the local pre-push hook, so a push from anywhere else was unprotected by the
       # strongest verifier in the repo.
       - name: Install the data-layer's dependencies
-        run: python -m pip install --quiet pandas pyarrow
+        # PINNED, not `pip install pandas pyarrow`. pyarrow writes its version into every
+        # Parquet `created_by` and pandas into the metadata blob, so an unpinned install moves
+        # 47 of 160 output files' checksums without a single value changing -- which tells
+        # anyone who pinned a hash that the data moved when it did not. The file also pins
+        # xlrd and openpyxl, without which 06_convert fails on 12 of the 45 datasets.
+        run: python -m pip install --quiet -r data_layer/requirements-pinned.txt
       - name: Verify the data layer
         run: python data_layer/09_verify.py
+
+      # Did this push touch the data layer? 09_verify proves the tree is internally
+      # CONSISTENT; it cannot prove the tree FOLLOWS FROM its canonical inputs. A tree can be
+      # perfectly self-consistent and still stale, which is exactly what happened four times in
+      # one session when a fix landed in a source file and not in its generated copy, with every
+      # gate green each time. The rebuild below closes that, but it is scoped: a prose or styling
+      # commit must not wait on a pipeline rebuild, nor be blocked by an unrelated pipeline
+      # failure. That was the standing objection to gating on this at all.
+      - name: Did the data layer change?
+        id: dataclt
+        run: |
+          BASE="${{ github.event.before }}"
+          if [ -z "$BASE" ] || ! git cat-file -e "$BASE^{commit}" 2>/dev/null; then BASE="HEAD~1"; fi
+          if git diff --name-only "$BASE" HEAD 2>/dev/null \
+               | grep -qE '^(data_layer/|data/v1/|api/v1/)'; then
+            echo "changed=true" >> "$GITHUB_OUTPUT"
+          else
+            echo "changed=false" >> "$GITHUB_OUTPUT"
+          fi
+
+      - name: Rebuild the data layer and require zero drift
+        # BLOCKING, and deliberately so: it runs before Configure Pages, so a tree that does not
+        # reproduce from its inputs does not deploy. Measured at roughly 40 seconds, and verified
+        # byte-identical on Python 3.11 and 3.12 given the pins above -- the interpreter is not a
+        # variable here, the dependency versions are.
+        if: steps.dataclt.outputs.changed == 'true'
+        run: |
+          python data_layer/06_convert.py
+          python data_layer/08_harmonise.py
+          python data_layer/07_api.py
+          python data_layer/10_fragments.py
+          # data_layer/out/ is gitignored, so this compares a fresh build against the published
+          # tree without disturbing it. t_distribution.csv comes from build_zstat_figure.py, not
+          # from 06-10, so it is not part of this comparison.
+          diff -r --brief data_layer/out/api/v1 api/v1
+          diff -r --brief -x t_distribution.csv data_layer/out/data/v1 data/v1
+          diff --brief data_layer/out/CITATION.cff CITATION.cff
+          diff --brief data_layer/out/.zenodo.json .zenodo.json
+          diff --brief data_layer/out/LICENSE LICENSE
+
       - name: Configure Pages
         uses: actions/configure-pages@v5
       - name: Upload site artifact
