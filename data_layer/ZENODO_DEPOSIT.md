@@ -72,11 +72,14 @@ scoping into the deposit metadata.
    sha256. **Upload that one zip. Do not drag in loose files.** Every published version so
    far holds exactly one file with exactly that name, and `91_distribution.py` fetches it by
    that URL to byte-compare the live table against the deposit. Loose files, or a different
-   name, break that check permanently, because Zenodo files cannot be edited after publish.
-4. **Delete the previous version's zip from the draft.** "New version" copies the old
-   record's files into the new draft, so the draft starts out holding the 1.0.0 archive. If
-   you publish without removing it, this release ships the previous release's data beside its
-   own, permanently. **The draft must end up with exactly one file.**
+   name, break that check. Treat the release files as immutable: Zenodo does allow limited file
+   corrections for a short window after publishing, and a constrained support process after that,
+   but a deposit is not a thing to plan on editing.
+4. **Do not click "Import files".** A new-version draft is a new record and starts empty;
+   Zenodo only brings the previous version's files across if you explicitly ask it to. Whatever
+   the interface does on the day, the invariant is what matters: **before publishing, check the
+   draft contains exactly one file, the zip from step 3.** If a previous version's archive is
+   there for any reason, remove it, or this release ships the last release's data beside its own.
 5. Fill the metadata from `data_layer/zenodo.json` — title, authors with ORCIDs, description,
    keywords. Set **Licence: Creative Commons Attribution 4.0 International**.
 6. Under *Related identifiers*, add `https://meta-analysis.cz` as **is derived from**, and

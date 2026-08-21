@@ -214,7 +214,10 @@ def _known_issues():
                 "72 of the 75 belong to a single study. An unweighted regression of effect on "
                 "standard error, the form of the FAT bias test that does not down-weight them, "
                 "gives a slope of -0.216 with these rows and -0.095 without, and its "
-                "study-clustered t falls from -17.3 to -0.5. The precision-weighted form of the test, and any test clustered on study, absorbs them and is insignificant either way. "
+                "study-clustered t falls from -17.3 to -0.5. A precision-weighted FAT-PET on the "
+                "same data, also clustered on study, is insignificant either way, because "
+                "weighting by 1/se discounts exactly the rows whose standard errors are "
+                "implausible. The sensitivity is to the specification, not to clustering. "
                 "Which conclusion you reach about publication bias in this literature therefore "
                 "depends on rows the source's own formula contradicts.")
 

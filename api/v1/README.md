@@ -201,13 +201,15 @@ below zero, which no sample has. That is a restatement of the inconsistency rath
 diagnosis of its upstream cause, which is not established. Filter on `abs(effect) < 1` if you
 need strictly valid correlations.
 
-**They are concentrated, and they change a bias-test conclusion.** 72 of the 75 belong to a
-single study. An unweighted regression of effect on standard error, the form of the FAT
-publication-bias test that does not down-weight them, gives a slope of −0.216 with these rows
-and −0.095 without, with a study-clustered t of −17.3 against −0.5. The precision-weighted form
-of the test, and any test clustered on study, absorbs them and is insignificant either way. So
-what you conclude about publication bias in this literature depends on rows the source's own
-formula contradicts. Decide explicitly which form you are running.
+**They are concentrated, and publication-bias inference is not robust to them.** 72 of the 75
+belong to a single study. The sensitivity is to the *specification*, not to whether you cluster.
+An unweighted regression of `effect` on `se` with study-clustered errors — the form the paper's
+own code runs — gives a slope of −0.216 with these rows and −0.095 without, t = −17.3 against
+−0.5. A precision-weighted FAT-PET on the same data, also study-clustered, is insignificant
+either way, t = −0.68 against −0.54, because weighting by `1/se` discounts exactly the rows whose
+standard errors are implausible. Both are study-clustered; they disagree because they weight
+differently. Treat publication-bias inference for `class` as non-robust to these rows, and quote
+the specification alongside any number you report.
 
 **A further 82 `class` rows** store a partial correlation of exactly zero beside a non-zero
 t-statistic, which the same relation contradicts. Those rows are excluded from the pooled table

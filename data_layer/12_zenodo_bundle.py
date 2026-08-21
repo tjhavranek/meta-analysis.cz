@@ -117,9 +117,9 @@ print(f"gate: README.md and CITATION.cff describe {_v} ({_st}), "
 # cosmetic convention -- 91_distribution.py fetches
 #   https://zenodo.org/records/{id}/files/ZENODO-UPLOAD-meta-analysis-cz-v{ver}.zip
 # and reads estimates_harmonised.csv from the zip ROOT. Upload loose files, or name
-# the zip anything else, and that gate 404s forever, because Zenodo files are
-# immutable once published. So the script builds the archive rather than leaving the
-# maintainer to zip a folder correctly at midnight.
+# the zip anything else, and that gate breaks. Treat a published deposit as immutable
+# even though Zenodo allows limited corrections for a short window. So the script
+# builds the archive rather than leaving the maintainer to zip a folder at midnight.
 import zipfile
 ZIP = os.path.join(os.path.dirname(OUT), f"ZENODO-UPLOAD-meta-analysis-cz-v{VER}.zip")
 if os.path.exists(ZIP):
@@ -145,5 +145,5 @@ _zh = hashlib.sha256(open(ZIP, "rb").read()).hexdigest()
 print(f"\nUPLOAD THIS ONE FILE: {ZIP}")
 print(f"   {_zn} entries, {os.path.getsize(ZIP)/1048576:.1f} MB")
 print(f"   sha256 {_zh}")
-print("   In the Zenodo draft, DELETE the previous version's zip that 'New version' "
-      "carried over,\n   then upload this. The draft must end up with exactly one file.")
+print("   Upload this to the New-version draft. Do NOT click 'Import files'.")
+print("   Before publishing, check the draft holds exactly one file.")
