@@ -29,7 +29,10 @@ identifiers:
     description: "Concept DOI - always resolves to the latest version. Cite this."
   - type: doi
     value: "10.5281/zenodo.21789702"
-    description: "Version 1.0.0 specifically. Version 1.1.1 has no version DOI yet; until it is deposited, cite the concept DOI above."
+    description: "Version 1.0.0 specifically, superseded by 1.1.1."
+  - type: doi
+    value: "10.5281/zenodo.22050272"
+    description: "Version 1.1.1 specifically. Cite this in a replication package, where the exact files matter."
   - type: doi
     value: "10.5281/zenodo.21773679"
     description: "Version 0.9.0-beta, superseded by 1.0.0. Kept so existing citations of the beta still resolve; do not start new work from it."

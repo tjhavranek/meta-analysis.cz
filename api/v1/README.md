@@ -122,12 +122,11 @@ the archived deposit:
 
 > **https://doi.org/10.5281/zenodo.21773678** — cite this. It always resolves to the newest version.
 >
-> **For a replication package, where the exact files matter, cite the version DOI of the
-> release you actually used.** If you are reading this inside a Zenodo deposit, that is the
-> version DOI shown on this record's own landing page, not the concept DOI above and not
-> another version's. `https://doi.org/10.5281/zenodo.21789702` is version 1.0.0 specifically;
-> it is superseded by 1.1.1, which removes 20 `price_puzzle` rows that corresponded to no
-> source estimate.
+> **https://doi.org/10.5281/zenodo.22050272** — version 1.1.1 specifically, which is this
+> release. Cite this in a replication package, where the exact files matter.
+>
+> `https://doi.org/10.5281/zenodo.21789702` is version 1.0.0, superseded by 1.1.1, which
+> removes 20 `price_puzzle` rows that corresponded to no source estimate.
 >
 > **https://doi.org/10.5281/zenodo.21773679** is version 0.9.0-beta, now superseded — kept live so
 > existing citations of the beta still resolve, but its `price_puzzle` rows are duplicated

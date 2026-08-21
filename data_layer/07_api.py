@@ -11,8 +11,8 @@ VERSION="1.0.0"; DATA_V="v1"
 DATA_VERSION="1.1.1"; DATA_STATUS="stable"
 # The VERSION DOI, set once Zenodo minted it. None until deposited -- publishing the
 # previous version's DOI beside a new version tells a citing reader the wrong thing.
-DATA_DOI=None   # 1.1.1 not yet deposited. Cite the concept DOI until Zenodo mints
-                # the version DOI; publishing 1.0.0's here would misdate a citation.
+DATA_DOI="10.5281/zenodo.22050272"   # 1.1.1 version DOI, reserved on the Zenodo draft and embedded
+                                  # before the bundle was built, so the archived files name it.
 
 papers={p["project"]:p for p in json.load(open(os.path.join(SITE,"tools","papers.json"),encoding="utf-8"))}
 man={m["project"]:m for m in json.load(open(os.path.join(WORK,"convert_manifest.json"),encoding="utf-8"))}
@@ -589,7 +589,9 @@ cr={"@context":{"@vocab":"https://schema.org/","cr":"http://mlcommons.org/croiss
     "license":"https://creativecommons.org/licenses/by/4.0/",
     "citeAs":index["cite_as"],
     # Issued date of the Zenodo deposit (DataCite dateType "Issued" on the concept DOI).
-    "datePublished":"2026-08-04",
+    "datePublished":"2026-08-04",   # concept deposit
+    "dateModified":"2026-08-21",    # this version
+
     "keywords":["meta-analysis","publication bias","economics","effect size","research synthesis"],
     "creator":[{"@type":"Person","name":"Tomas Havranek"},{"@type":"Person","name":"Zuzana Irsova"}],
     "distribution":[_file_object(d) for d in ok]+[{
