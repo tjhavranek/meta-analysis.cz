@@ -46,7 +46,7 @@ It is generally recognized that the reported Rose effect of the euro is signific
 
 The eurozone sample is depicted in Fig. 1; this type of figure is usually called ''forest plot'' in medical research. Black dots symbolize individual estimates of $\gamma$, horizontal lines show the respective 95% confidence intervals. The traditional method of combining estimates taken from various studies is the standard fixed effects estimator^{4} which weighs each observation according to its precision; i.e., inverse standard error. The weights constructed on the basis of the inverse-variance method are symbolized by squares with gray fill in the forest plot. The pooled effect estimated by fixed effects is plotted as a vertical dashed line, the solid vertical line symbolizes no effect. Using fixed effects, the pooled estimate of the euro's $\gamma$ is very low: a mere 0.038 ($\hat{\jmath} = 3.87\%$) with the 95% confidence interval CI = (3.36, 4.39%), although it is very significant ($z$-stat. = 14.9). These results are not very useful for policy purposes, though, because---among other things starting with heterogeneity and high sensitivity to outliers---they do not account for likely publication selection; i.e., the preference of editors, referees, or researchers themselves for significant or non-negative results (more on this topic in Sect. 3).
 
-FIGURE 1 (no artwork). Forest plot of individual estimates of $\gamma$, eurozone studies
+FIGURE 1. Forest plot of individual estimates of $\gamma$, eurozone studies
 
 The forest plot of the results of non-euro studies (Fig. 4 in the Appendix) shows a different picture. The pooled fixed effects estimate is far from zero, namely $0.67$ ($\hat{\jmath} = 95.42\%$) with the 95% confidence interval CI = (88.89, 102.18%). Assuming that currency unions double trade, as, e.g., Masson (2008) does when he asseses the welfare effects of forming currency unions in Africa, thus might appear plausible in this respect.
 
@@ -74,7 +74,7 @@ $$ \widehat{\gamma}_i = \beta + \beta_0 SE_i + \mu_i, \quad i = 1,\ldots,M, $$ (
 
 where $M$ is the number of studies, $\beta$ denotes the true effect, and $\beta_0$ measures the magnitude of publication bias. However, regression (2) is evidently heteroskedastic. The measure of heteroskedasticity is the standard error of the estimate of $\gamma$, thus weighted least squares can be performed by running a simple OLS on equation (2) divided by the standard error:
 
-FIGURE 2 (no artwork). Funnel plot, all studies
+FIGURE 2. Funnel plot, all studies
 
 $$ \frac{\hat{\gamma}_i}{SE_i} = t_i = \beta_0 + \beta\left(\frac{1}{SE_i}\right) + \vartheta_i. $$ (3)
 
@@ -96,7 +96,7 @@ Type II bias can be assessed using the Galbraith plot (Galbraith 1988) that depi
 
 All three methods of detecting type I bias (Table 1) can be also used to test for the significance of the true effect beyond publication bias [recall (2)]. Specifically, running a *t*-test on the slope coefficient of (3) is denoted as the precision effect test (PET). For eurozone studies, the corresponding *t*-statistic is only 0.05. When robust or random intercept versions of this test of effect are used, the result does not change significantly.^{6} This means that, employing the meta-regression methodology, there is not even a slight trace of any true underlying Rose effect of the euro beyond publication bias---compared to the 5–10% estimate by Baldwin (2006) and 10–15% estimate by Frankel (2008a). Using meta-regression analysis and the sample of available empirical studies, there is therefore no significant aggregate effect of the euro on trade.
 
-FIGURE 3 (no artwork). Galbraith plot, eurozone studies
+FIGURE 3. Galbraith plot, eurozone studies
 
 An obvious objection to this approach arises: if the Rose effect of the euro is growing over time (Bun and Klaassen 2002; Baldwin 2006), it is questionable how one can pool together studies written in 2002, when the euro was still young, and papers published, for example, in 2008. It is a potential problem of any meta-analysis. However, as can be seen from Sect. 4, explanatory meta-regression does not find any significant relation between the results of eurozone studies and time. Also, for instance, Frankel (2008a) concludes that the euro's trade effect has stabilized after a few starting years.
 
@@ -322,7 +322,7 @@ Study Alesina et al. (2003) Rose (2000) Rose (2001) Rose (2004) Rose & van Winco
 
 −.5
 
-FIGURE 4 (no artwork). Forest plot of individual estimates of c, non-euro studies
+FIGURE 4. Forest plot of individual estimates of c, non-euro studies
 
 % ES (95% CI) Weight 1.56 (0.70, 2.42) 0.16 1.21 (0.94, 1.48) 1.58 0.74 (0.64, 0.84) 12.36 1.12 (0.88, 1.36) 2.15 0.91 (0.56, 1.26) 0.95 1.21 (0.48, 1.94) 0.23 0.29 (0.01, 0.58) 1.47 0.64 (0.48, 0.80) 4.71 0.56 (0.25, 0.87) 1.21 0.50 (0.01, 0.99) 0.49 0.54 (0.46, 0.62) 18.94 0.38 (0.18, 0.58) 3.09 0.88 (0.77, 0.98) 10.35 0.70 (0.25, 1.15) 0.58 1.38 (1.07, 1.69) 1.21 1.36 (1.01, 1.71) 0.95 0.72 (0.35, 1.08) 0.89 1.21 (0.97, 1.45) 2.15 0.91 (0.56, 1.26) 0.95 1.16 (1.02, 1.30) 6.31 0.47 (0.04, 0.90) 0.64 0.50 (−0.03, 1.03) 0.42 −0.38 (−1.41, 0.66)0.11 0.92 (0.14, 1.70) 0.19 1.22 (0.62, 1.82) 0.33 0.65 (0.55, 0.75) 12.36 1.90 (1.21, 2.59) 0.25 0.47 (−0.15, 1.09) 0.31 1.83 (1.23, 2.43) 0.33 0.51 (0.00, 1.01) 0.47 0.82 (0.29, 1.35) 0.42 0.62 (0.29, 0.95) 1.07 0.08 (−0.02, 0.18) 12.36 0.67 (0.64, 0.70) 100.00 0 .5 1 1.5 2 2.5
 

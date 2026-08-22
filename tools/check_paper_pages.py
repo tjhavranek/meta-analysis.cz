@@ -6,8 +6,11 @@
 Three things can go wrong in a conversion, and each is checkable without an opinion:
 
   * something was invented -- prose on the page that is not in the PDF;
-  * something is missing -- a table, a figure or a whole section the PDF has and the page
-    does not, which the word-count ratio and the table/figure census catch;
+  * something is missing -- a table or a figure the paper prints and the page does not,
+    which the census of table and figure NUMBERS decides exactly; and, for prose, how much
+    of the paper's distinctive vocabulary the transcript accounts for, which is a
+    proportion and not a proof. It will catch a dropped section. It will not catch a
+    dropped sentence, and nothing here claims it does;
   * something is broken -- a leftover placeholder, a citation pointing at a reference that
     is not there, a figure whose file was never written, an equation that failed to convert.
 
@@ -67,14 +70,22 @@ def check(project):
         notes.append("%d word(s) not in the text layer: %s"
                      % (invented, ", ".join(sorted(w for w in gained if re.search(r"[a-z]{3}", w)))))
 
-    # -- nothing wholesale missing. Tables and captions live outside the prose comparison,
-    #    so the ratio is never 1; a page that dropped a section falls far below its peers.
-    ratio = len(b) / max(1, sum(a.values()))
-    if ratio < 0.45:
-        fails.append("transcript holds %.0f%% of the PDF's words -- a section may be missing"
-                     % (100 * ratio))
-    elif ratio < 0.60:
-        notes.append("transcript holds %.0f%% of the PDF's words" % (100 * ratio))
+    # -- how much of the paper's distinctive vocabulary the transcript accounts for.
+    #    Total words are a poor measure: half the words in a paper are "the" and "of", and
+    #    tables supply thousands of short tokens the prose comparison never sees. Long words
+    #    are where a paper's content lives, and across the fifty-three converted papers the
+    #    share of them the transcript is missing runs from 3% to 29%. A page that dropped a
+    #    section would sit far outside that; a threshold at 45% flags it without crying wolf
+    #    at the papers whose tables are simply large.
+    long_pdf = sum(c for w, c in a.items() if len(w) >= 8)
+    long_missing = sum(c for w, c in _lost.items() if len(w) >= 8)
+    share = long_missing / max(1, long_pdf)
+    if share > 0.45:
+        fails.append("%.0f%% of the paper's long words are absent from the transcript -- "
+                     "a section may be missing" % (100 * share))
+    elif share > 0.33:
+        notes.append("%.0f%% of the paper's long words are absent (tables and figures "
+                     "account for most of it)" % (100 * share))
 
     # -- the tables and figures the paper has, the page has
     sc = scout(project, PAPERS)

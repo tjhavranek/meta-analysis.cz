@@ -65,7 +65,7 @@ def build():
 <meta http-equiv="content-type" content="text/html; charset=utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>Papers in Full</title>
-<meta name="description" content="Every meta-analysis on this site that is republished here in full: {n} papers as HTML, with their tables, figures, equations and references, readable without a PDF." />
+<meta name="description" content="Every paper on this site that is republished here in full: {n} papers as HTML, with their tables, equations and references, readable without a PDF." />
 <link href="/style.css" rel="stylesheet" type="text/css" />
 <link href="/paper.css" rel="stylesheet" type="text/css" />
 </head>
@@ -95,11 +95,16 @@ def build():
 \t\t<div class="post">
 \t\t\t<div class="entry">
 
-<p><b>{n} of the meta-analyses on this site are republished here in full</b>, as HTML rather
-than as a PDF: the whole text, the tables as tables, the figures as images, the mathematics
-as mathematics, and the references as links. They read on a phone, they are searchable, a
-screen reader can read them aloud, and a language model can quote them without guessing at a
-scanned column. Each one also keeps its PDF and its link to the version of record.</p>
+<p><b>{n} of the papers on this site are republished here in full</b>, as HTML rather than as
+a PDF: the whole text, the tables as tables, the mathematics as mathematics, and the
+references as links. They read on a phone, they are searchable, a screen reader can read them
+aloud, and a language model can quote them without guessing at a scanned column. Each one
+also keeps its PDF and its link to the version of record.</p>
+
+<p class="caveat">Figures are reproduced where the artwork could be lifted cleanly from the
+page &#8212; {figs} of them so far. Where it could not, the figure&#8217;s caption is printed on its
+own and the PDF has the picture. A caption standing alone is a gap, not a claim that the
+paper has no figure there.</p>
 
 <ul class="fulltext">
 {listed}
@@ -130,7 +135,11 @@ scanned column. Each one also keeps its PDF and its link to the version of recor
                      "name": r[1],
                      "url": "https://meta-analysis.cz%s" % r[3]} for r in rows],
     }
-    out = page.format(n=len(rows), listed=listed, footer=load_footer())
+    figs = sum(len([f for f in os.listdir(os.path.join(ROOT, r[2], "paper", "figures"))
+                    if f.endswith(".png")])
+               for r in rows
+               if os.path.isdir(os.path.join(ROOT, r[2], "paper", "figures")))
+    out = page.format(n=len(rows), listed=listed, figs=figs, footer=load_footer())
     outdir = os.path.join(ROOT, "papers")
     os.makedirs(outdir, exist_ok=True)
     with open(os.path.join(outdir, "index.html"), "w") as fh:

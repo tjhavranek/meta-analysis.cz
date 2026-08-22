@@ -825,7 +825,7 @@ Notes. Simple average represents the arithmetic mean. The fixed-effects estimato
 
 ## APPENDIX B
 
-FIGURE B1. Funnel plot of the effect of natural resources on economic growth.
+FIGURE B1 (no artwork). Funnel plot of the effect of natural resources on economic growth.
 
 TABLE 9. Tests of the true effect and publication selection—mineral resource
 

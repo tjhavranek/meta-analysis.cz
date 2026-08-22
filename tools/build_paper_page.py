@@ -93,11 +93,26 @@ def inline(text, refs_are_numbered=False, link_cites=True):
         # "d" are also roman numerals, so linking them invents anchors that do not exist.
         if not link_cites:
             return "<sup>%s</sup>" % body
-        if refs_are_numbered and re.fullmatch(r"[\d,\s–-]+", body):
+        if refs_are_numbered and re.fullmatch(r"[\d,\s\u2013\u2014-]+", body):
+            # "4-6" cites three references, so it links three times: the range's own
+            # endpoints and everything between, each to its entry.
             parts = []
             for tok in re.split(r"(,\s*)", body):
-                if re.fullmatch(r"\d+", tok.strip()):
-                    parts.append('<a href="#ref-%s">%s</a>' % (tok.strip(), tok.strip()))
+                t = tok.strip()
+                m_range = re.fullmatch(r"(\d+)\s*[\u2013\u2014-]\s*(\d+)", t)
+                if re.fullmatch(r"\d+", t):
+                    parts.append('<a href="#ref-%s">%s</a>' % (t, t))
+                elif m_range:
+                    lo, hi = int(m_range.group(1)), int(m_range.group(2))
+                    if 0 < hi - lo <= 40:
+                        inner = "".join('<a href="#ref-%d">%d</a>%s'
+                                        % (n, n, "" if n == hi else
+                                           ("&#8211;" if n == lo else ""))
+                                        for n in range(lo, hi + 1)
+                                        if n in (lo, hi))
+                        parts.append(inner)
+                    else:
+                        parts.append(html.escape(tok))
                 else:
                     parts.append(html.escape(tok))
             return '<sup class="cite">%s</sup>' % "".join(parts)
@@ -252,7 +267,8 @@ class Builder:
                     close_mode()
                 head = m.group(1).strip()
                 anchor = "sec-" + slug(head.split("|")[0].strip() or head)
-                self.w('<h3 id="%s">%s</h3>' % (anchor, inline(head, self.refs_numbered)))
+                self.w('<h3 id="%s">%s</h3>'
+                       % (anchor, inline(heading_label(head), self.refs_numbered)))
                 self.toc.append((3, anchor, head))
                 i += 1
                 continue
@@ -282,7 +298,8 @@ class Builder:
                     i += 1
                     continue
                 anchor = "sec-" + slug(head.split("|")[0].strip() or head)
-                self.w('<h2 id="%s">%s</h2>' % (anchor, inline(head, self.refs_numbered)))
+                self.w('<h2 id="%s">%s</h2>'
+                       % (anchor, inline(heading_label(head), self.refs_numbered)))
                 self.toc.append((2, anchor, head))
                 if upper.startswith("REFERENCES"):
                     self.w('<ol class="references%s">'
@@ -518,18 +535,32 @@ def build_page(project, meta, body, toc):
 
     toc_html = ""
     if len([t for t in toc if t[0] == 2]) >= 4:
+        # A sublist belongs INSIDE the item it hangs off, not beside it. Emitting it as a
+        # sibling of the <li> is invalid, and every paper with subsections had it.
         items = []
         depth = 2
+        open_li = False
         for level, anchor, head in toc:
-            label = re.sub(r"\s*\|\s*", ". ", head).strip()
-            if level == 3 and depth == 2:
-                items.append("<ol>")
-            elif level == 2 and depth == 3:
-                items.append("</ol>")
+            entry = heading_label(head)
+            link = '<a href="#%s">%s</a>' % (anchor, html.escape(entry))
+            if level == 3:
+                if depth == 2:
+                    items.append("<ol>")          # opens inside the still-unclosed <li>
+                else:
+                    items.append("</li>")
+                items.append("<li>" + link)
+            else:
+                if depth == 3:
+                    items.append("</li></ol>")
+                if open_li:
+                    items.append("</li>")
+                items.append("<li>" + link)
+                open_li = True
             depth = level
-            items.append('<li><a href="#%s">%s</a></li>' % (anchor, html.escape(label)))
         if depth == 3:
-            items.append("</ol>")
+            items.append("</li></ol>")
+        if open_li:
+            items.append("</li>")
         toc_html = ('<nav class="toc" aria-label="Contents"><h2>Contents</h2><ol>%s</ol></nav>'
                     % "".join(items))
 
@@ -601,6 +632,9 @@ def build_page(project, meta, body, toc):
 \t\t<div class="post">
 \t\t\t<div class="entry">
 
+<h1 class="paper-title">{h1}</h1>
+{byline}
+
 {attribution}
 
 {toc}
@@ -625,6 +659,10 @@ def build_page(project, meta, body, toc):
         ld=json.dumps(ld, indent=1, ensure_ascii=False),
         menu="\n\t\t\t".join(menu),
         attribution="\n".join(attribution),
+        h1=html.escape(title),
+        byline=('<p class="byline">%s</p>' % html.escape(
+            ", ".join(authors[:-1]) + (" and " if len(authors) > 1 else "") + authors[-1])
+            if authors else ""),
         toc=toc_html,
         body=body,
         footer=load_footer(),
@@ -632,6 +670,36 @@ def build_page(project, meta, body, toc):
 
 
 RE_QUOTED_TITLE = re.compile(r"[\u201c\"]([^\u201d\"]{10,300})[\u201d\"]")
+
+
+PIPE_STYLE = False        # does this journal print "3.2 | Heading"? set per paper in main()
+
+
+def heading_label(head):
+    """A section heading as the paper prints it.
+
+    The dialect writes "3.2 | Reducing bias" because Wiley sets its headings that way, with
+    a rule between the number and the title. Most journals do not, and transcribers followed
+    the dialect's example regardless, so the pipe leaked onto pages whose papers never print
+    one. Whether to keep it is decided per paper by looking at the PDF, not by taste."""
+    if PIPE_STYLE:
+        return head.strip()
+    return re.sub(r"\s*\|\s*", ". ", head).strip()
+
+
+def prints_pipe_headings(project, meta):
+    """True when the paper's own text layer sets numbered headings with a vertical rule."""
+    import subprocess
+    rel = paper_pdf(project, meta)
+    if not rel:
+        return False
+    try:
+        text = subprocess.run(["pdftotext", "-f", "1", "-l", "12",
+                               os.path.join(ROOT, project, rel), "-"],
+                              capture_output=True, text=True, check=True).stdout
+    except Exception:
+        return False
+    return len(re.findall(r"^\s*\d+(?:\.\d+)?\s*\|\s*[A-Z]", text, re.M)) >= 2
 
 
 def article_title(meta):
@@ -695,6 +763,7 @@ def main(argv):
             raise SystemExit("no transcript at %s" % src_path)
         meta = dict(papers[project])
         meta["_pdf"] = paper_pdf(project, meta)
+        globals()["PIPE_STYLE"] = prints_pipe_headings(project, meta)
         builder = Builder(project, meta)
         body = builder.build(open(src_path).read())
         if builder.abstract:

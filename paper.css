@@ -85,3 +85,8 @@
      border-bottom:1px solid var(--rule); line-height:1.5; }
 .entry ul.fulltext > li:last-child{ border-bottom:0; }
 .entry ul.fulltext .who{ font:400 var(--f-1)/1.6 var(--sans); color:var(--ink-soft); }
+
+/* The article's own title, above the attribution. The masthead names the section of the
+   site; this names the paper. */
+.entry h1.paper-title{ margin:0 0 var(--s2); font:600 var(--f3)/1.25 var(--sans); color:var(--ink); }
+.entry p.byline{ margin:0 0 var(--s5); font:400 var(--f0)/1.5 var(--sans); color:var(--ink-soft); }

@@ -184,12 +184,47 @@ Text.
 
 More.
 """)
-    check("a section heading keeps its printed pipe",
-          "<h2 id=\"sec-3\">3 | METHOD</h2>" in body, body[:200])
+    # The pipe is Wiley's rule between a heading's number and its title. Papers that do not
+    # print one must not show it, and build_paper_page decides which is which by reading the
+    # paper; with no paper in hand the test sees the default, which is to normalise it.
+    check("a heading with no pipe-printing paper reads as a number and a title",
+          "<h2 id=\"sec-3\">3. METHOD</h2>" in body, body[:200])
     check("a subsection anchor keeps the number's structure",
           'id="sec-3-2"' in body)
     check("headings are collected for the contents list",
           [t[1] for t in b.toc] == ["sec-3", "sec-3-2"])
+
+
+def test_contents_list_nests_inside_its_item():
+    # A sublist is part of the item it hangs off. Emitted as a sibling of the <li> it is
+    # invalid HTML, which is what every paper with subsections had.
+    from build_paper_page import build_page
+    toc = [(2, "sec-1", "1 | One"), (3, "sec-1-1", "1.1 | Sub"), (2, "sec-2", "2 | Two"),
+           (2, "sec-3", "3 | Three"), (2, "sec-4", "4 | Four")]
+    page = build_page("test", {"title": "T", "authors": []}, "<p>body</p>", toc)
+    nav = page[page.index('<nav class="toc"'):page.index("</nav>")]
+    check("a sublist opens inside its parent item",
+          "</a><ol>" in nav and "<li><ol>" not in nav, nav[:260])
+    check("every list item is closed",
+          nav.count("<li") == nav.count("</li>") and nav.count("<ol") == nav.count("</ol>"),
+          "li %d/%d ol %d/%d" % (nav.count("<li"), nav.count("</li>"),
+                                 nav.count("<ol"), nav.count("</ol>")))
+
+
+def test_masthead_is_the_paper_not_the_last_heading():
+    # The masthead names the paper. It was being overwritten by whatever heading the
+    # contents list happened to end on -- "ENDNOTES", "REFERENCES", a supplement title.
+    from build_paper_page import build_page
+    toc = [(2, "sec-%d" % i, "%d | Section" % i) for i in range(1, 5)]
+    toc.append((2, "sec-endnotes", "ENDNOTES"))
+    page = build_page("test", {"title": "The Paper's Own Name", "authors": []},
+                      "<p>body</p>", toc)
+    masthead = page[page.index('class="site-name"'):page.index("</p>", page.index('class="site-name"'))]
+    check("the masthead names the paper",
+          "The Paper&#x27;s Own Name" in masthead or "The Paper's Own Name" in masthead,
+          masthead)
+    check("the masthead is not the last contents entry",
+          "ENDNOTES" not in masthead, masthead)
 
 
 def test_links_are_not_nested():

@@ -3,9 +3,17 @@
 
     python3 tools/verify_transcript.py <project> [--context N] [--quiet]
 
-A transcript is prose lifted from a published paper. The one failure that matters is a
-word that changed: a dropped clause, a silently fixed typo, a number that moved a digit.
-That failure is mechanically detectable, so it should not be left to a reader's attention.
+A transcript is prose lifted from a published paper. What this catches, and gates on, is
+prose the transcript has that the paper does not: an invented sentence, a reworded clause, a
+duplicated block. That direction is decidable, because a word absent from both extractions
+of the PDF was not in the paper.
+
+The other direction is not symmetric and this tool does not pretend to decide it. A word the
+PDF has and the transcript does not is usually a table cell, an axis label, a running head or
+a fragment of mathematics -- all of which the transcript legitimately holds elsewhere or not
+at all. Those are reported, and worth reading, but they do not fail the command. For how far
+a missing SECTION can be detected, see the coverage measure in tools/check_paper_pages.py,
+which is a proportion, not a proof.
 
 This strips the transcript back to a bare word sequence, does the same to `pdftotext`
 output, and diffs the two. Everything that is legitimately not body prose -- table cells,
@@ -13,7 +21,8 @@ mathematics, figure captions, the transcript's own structural markers -- is drop
 both sides before comparing, because those are verified by eye against the page image and
 would otherwise bury the signal.
 
-Exit status is 1 if any prose word differs, so this can gate a build.
+Exit status is 1 when the transcript contains prose the PDF does not, so that can gate a
+build. Words missing in the other direction are reported without failing.
 """
 
 import difflib

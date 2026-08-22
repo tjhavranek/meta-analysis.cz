@@ -180,10 +180,41 @@ def dehyphenate(text):
     return re.sub(r"(\w)[-‐‑]\s*\n\s*([a-z])", r"\1\2", text)
 
 
+def double_spaced(lines):
+    """True when the extraction separates every line of prose with a blank one.
+
+    Some PDFs -- typically LaTeX single-column ones -- come out of pdftotext with a blank
+    line after each line of text and no indentation. Treating those blanks as paragraph
+    breaks turns every line into its own paragraph, which is what the beauty paper's page
+    looked like: a hundred one-line paragraphs where the paper has prose."""
+    body = [i for i, l in enumerate(lines) if l.strip()]
+    if len(body) < 20:
+        return False
+    singles = sum(1 for a, b in zip(body, body[1:]) if b - a == 2)
+    return singles / max(1, len(body) - 1) > 0.6
+
+
 def paragraphs(text):
     """Reflow lines into paragraphs. A new paragraph starts at a blank line, at an indent,
     or after a line that ended a sentence and left the measure short."""
     lines = text.split("\n")
+    if double_spaced(lines):
+        # Blank lines carry no information here, so paragraph boundaries come from the shape
+        # of the text: a paragraph's last line ends a sentence and stops short of the measure.
+        kept = [l for l in lines if l.strip()]
+        measure = sorted(len(l.strip()) for l in kept)[len(kept) // 2] if kept else 0
+        paras, buf = [], []
+        for line in kept:
+            t = line.strip()
+            if buf:
+                prev = buf[-1]
+                if re.search(r"[.!?]['\"\u201d)]?$", prev) and len(prev) < 0.92 * measure:
+                    paras.append(" ".join(buf))
+                    buf = []
+            buf.append(t)
+        if buf:
+            paras.append(" ".join(buf))
+        return [re.sub(r"\s{2,}", " ", p).strip() for p in paras if p.strip()]
     paras, buf = [], []
     for i, raw in enumerate(lines):
         line = raw.rstrip()
