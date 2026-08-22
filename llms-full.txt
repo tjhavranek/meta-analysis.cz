@@ -49,6 +49,7 @@ Paper: https://meta-analysis.cz/beauty/beauty.pdf
 Excluded Studies: https://meta-analysis.cz/beauty/excluded.xlsx
 Classification Details: https://meta-analysis.cz/beauty/classification.xlsx
 Replication Package: https://meta-analysis.cz/beauty/replication.zip
+Full text (HTML): https://meta-analysis.cz/beauty/paper/
 
 Abstract: Common wisdom suggests that beauty helps in the labor market. We show that two factors combine to explain away most of the mean beauty premium reported in the literature. First, correcting for publication bias reduces the premium by at least a third. Second, controlling for cognitive ability renders the premium small (mean = 1.1%; 95% CrI = -0.8%, 3.0%) for all occupations except sex workers, where appearance is a direct input. The beauty premium is similar for earnings and productivity, a fact inconsistent with discrimination based on employer tastes for beauty. We find little evidence of attenuation bias that could offset publication and omitted-variable biases. To obtain these results we collect 1,159 estimates of the beauty premium in 67 studies and codify 35 aspects that reflect estimation context. We employ recently developed techniques to account for publication bias and model uncertainty.
 
