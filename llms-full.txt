@@ -25,6 +25,7 @@ Paper: https://meta-analysis.cz/alphas/alphas.pdf
 Included Studies: https://meta-analysis.cz/alphas/studies.xlsx
 Data: https://meta-analysis.cz/alphas/alphas.xlsx
 Code: https://meta-analysis.cz/alphas/alphas.do
+Full text (HTML): https://meta-analysis.cz/alphas/paper/
 
 Abstract: We examine the ability of 34 variables to explain the variation in reported estimates of hedge fund performance. Using 1,019 estimates collected from 74 empirical studies, we identify 9 consistently relevant variables. We also quantify the impact of management and performance fees. Synthesizing this extensive empirical evidence, we show that when considering the fees and the variation in research designs, current performance implied by the best practice methodology is close to zero for all common hedge fund strategies. Our paper helps evaluate the robustness of prior propositions on hedge fund performance and reconcile some seemingly contradictory findings.
 
@@ -37,6 +38,7 @@ Additional Results: https://meta-analysis.cz/armington/appendix.pdf
 Included Studies: https://meta-analysis.cz/armington/studies.xlsx
 Data: https://meta-analysis.cz/armington/armington.xlsx
 Code: https://meta-analysis.cz/armington/armington.do
+Full text (HTML): https://meta-analysis.cz/armington/paper/
 
 Abstract: A key parameter in international economics is the elasticity of substitution between domestic and foreign goods, also called the Armington elasticity. Yet estimates vary widely. We collect 3,524 reported estimates of the elasticity, construct 32 variables that reflect the context in which researchers obtain their estimates, and examine what drives the heterogeneity in the results. To account for model uncertainty, we employ Bayesian and frequentist model averaging. To correct for publication bias, we use newly developed non-linear techniques. Our main results are threefold. First, there is publication bias against small and statistically insignificant elasticities. Second, differences in results are best explained by differences in data: aggregation, frequency, size, and dimension. Third, the elasticity implied by the literature after accounting for both publication bias and study quality lies in the range 2.5--5.1 with a median of 3.8.
 
@@ -119,6 +121,7 @@ URL: https://meta-analysis.cz/conventional_wisdom/
 Citation: Sebastian Gechert, Bianka Mey, Matej Opatrny, Tomas Havranek, T. D. Stanley, Pedro R. D. Bom, Hristos Doucouliagos, Philipp Heimberger, Zuzana Irsova, Heiko J. Rachinger (2025), “Conventional wisdom, meta-analysis, and research revision in economics.” Journal of Economic Surveys 39, 980–999.
 Published version: https://doi.org/10.1111/joes.12630
 Paper: https://meta-analysis.cz/conventional_wisdom/conventional_wisdom.pdf
+Full text (HTML): https://meta-analysis.cz/conventional_wisdom/paper/
 
 Abstract: Over the past several decades, meta-analysis has emerged as a widely accepted tool to understand economics research. Meta-analyses often challenge the established conventional wisdom of their respective fields. We systematically review a wide range of influential meta-analyses in economics and compare them to “conventional wisdom.” After correcting for observable biases, the empirical economic effects are typically much closer to zero and sometimes switch signs. Typically, the relative reduction in effect sizes is 45%–60%.
 
@@ -128,6 +131,7 @@ Citation: T. D. Stanley, Hristos Doucouliagos, and Tomas Havranek (2025): "Reduc
 Published version: https://doi.org/10.1017/rsm.2024.5
 Read the paper: https://meta-analysis.cz/correlations/correlations2.pdf
 Download the supplement (including data and code): https://osf.io/8we4b/
+Full text (HTML): https://meta-analysis.cz/correlations/paper/
 
 Abstract: Conventional meta-analyses (both fixed and random effects) of correlations are biased due to the correlation between the estimated correlation and its standard error. Simulations that are closely calibrated to match actual research conditions widely seen across correlational studies in psychology corroborate these biases and suggest two solutions: UWLS+3 and HS. UWLS+3 is a simple inverse-variance weighted average (the unrestricted weighted least squares) that adjusts the degrees of freedom and thereby reduces small-sample bias to scientific negligibility. UWLS+3 as well as the Hunter and Schmidt approach (HS) are less biased than conventional random-effects estimates of correlations and Fisher’s z, whether or not there is publication selection bias. However, publication selection bias remains a ubiquitous source of bias and false positive findings. Despite the correlation between the estimated correlation and its standard error even in the absence of any selective reporting, the precision-effect test/precision-effect estimate with standard error (PET-PEESE) nearly eradicates publication selection bias. Surprisingly, PET-PEESE keeps the rate of false positives (i.e., type I errors) within their nominal levels under the typical conditions widely seen across psychological research whether there is publication selection bias, or not.
 
@@ -151,6 +155,7 @@ Paper: https://meta-analysis.cz/discrate/discrate2.pdf
 Included Studies: https://meta-analysis.cz/discrate/studies.xlsx
 Data: https://meta-analysis.cz/discrate/discrate.dta
 Code: https://meta-analysis.cz/discrate/discrate.do
+Full text (HTML): https://meta-analysis.cz/discrate/paper/
 
 Abstract: A key parameter estimated by lab and field experiments in economics is the individual discount rate---and the results vary widely. We examine the extent to which this variance can be attributed to observable differences in methods, subject pools, and potential publication bias. To address the model uncertainty inherent to such an exercise, we employ Bayesian and frequentist model averaging. We obtain evidence consistent with publication bias against unintuitive results. The corrected mean annual discount rate is 0.33. Our findings also suggest that discount rates are independent across domains: people tend to be less patient when health is at stake compared to money. Negative framing is associated with more patience. Finally, the results of lab and field experiments differ systematically, and it also matters whether the experiment relies on students or uses broader samples of the population.
 
@@ -176,6 +181,7 @@ Examined Studies: https://meta-analysis.cz/education/search.html
 Included Studies: https://meta-analysis.cz/education/studies.xlsx
 Data: https://meta-analysis.cz/education/education.xlsx
 Code: https://meta-analysis.cz/education/education.do
+Full text (HTML): https://meta-analysis.cz/education/paper/
 
 Abstract: One of the most frequently examined relationships in education economics is the impact of tuition increases on the demand for higher education. We provide a quantitative synthesis of 443 estimates of this effect reported in 43 studies. While large negative estimates dominate the literature, we show that researchers report positive and insignificant estimates less often than they should. After correcting for this publication bias, we find that the literature is consistent with the mean tuition-enrollment elasticity being close to zero. Nevertheless, we identify substantial heterogeneity among the reported effects: for example, male students and students at private schools react strongly to changes in tuition. The results are robust to controlling for model uncertainty using both Bayesian and frequentist methods of model averaging.
 
@@ -199,6 +205,7 @@ Paper: https://meta-analysis.cz/electricity/electricity.pdf
 Online Appendix: https://meta-analysis.cz/electricity/electricity_SI.pdf
 Replication Package: https://meta-analysis.cz/electricity/replication.zip
 Data: https://meta-analysis.cz/electricity/electricity.xlsx
+Full text (HTML): https://meta-analysis.cz/electricity/paper/
 
 Abstract: Energy planners have long assumed that electricity demand will grow more price-responsive as metering, automation, and storage spread, an assumption now embedded in decarbonization plans. We test it against the empirical record: 4,720 own-price elasticity estimates from 462 studies, with data spanning 1934–2024, ranked on a single ladder of identification quality from naive regressions to randomized experiments. Three findings emerge. First, the best-identified studies find smaller responses than naive ones: the publication-bias-corrected short-run elasticity is about −0.16 (a 10% rise in the electricity price cuts consumption by under 2%), and only −0.09 among the best-identified studies, whose adjusted value is statistically indistinguishable from zero. Second, responsiveness grows with time to adjust, roughly doubling from −0.16 in the short run to −0.38 in the long run as the capital stock turns over, but this pattern has itself been stable for decades. Third, and most important, responsiveness shows no upward trend across nine decades of data; if anything, the most technology-rich settings, including time-of-use pricing, are the least price-responsive in total consumption. Prices alone have not made total electricity consumption more responsive; broader demand flexibility will have to be engineered and paid for, through enabling technology, contracts, and program design.
 
@@ -260,6 +267,7 @@ Published version: https://doi.org/10.1111/joes.12068
 Read the paper: https://meta-analysis.cz/finance_growth/finance_growth2.pdf
 Download the appendix: https://meta-analysis.cz/finance_growth/appendix.pdf
 Download the dataset: https://meta-analysis.cz/finance_growth/finance_growth.zip
+Full text (HTML): https://meta-analysis.cz/finance_growth/paper/
 
 Abstract: We analyze 1334 estimates from 67 studies that examine the effect of financial development on economic growth. Taken together, the studies imply a positive and statistically significant effect, but the individual estimates vary widely. We find that both research design and heterogeneity in the underlying effect play a role in explaining the differences in results. Studies that do not address endogeneity tend to overstate the effect of finance on growth. While the effect seems to be weaker in poor countries, the effect decreases worldwide after the 1980s. Our results also suggest that stock markets support faster economic growth than other financial intermediaries. We find little evidence of publication bias in the literature.
 
@@ -373,6 +381,7 @@ Replication Package: https://meta-analysis.cz/inflation/replication.zip
 Dataset: https://meta-analysis.cz/inflation/inflation_v34.dta
 mad-research: https://github.com/tjhavranek/mad-research
 paper-workshop: https://github.com/tjhavranek/paper-workshop
+Full text (HTML): https://meta-analysis.cz/inflation/paper/
 
 Abstract: We revisit the optimal long-run inflation rate using 777 estimates from 116 primary studies published between 1989 and 2026, the largest sample assembled to date. To our knowledge, this is among the first meta-analyses in economics whose primary-data extraction is performed end-to-end through a documented and auditable large-language-model pipeline, calibrated against a hand-coded training set and released for replication. Across publication-selection and selection-on-significance diagnostics that are applicable in this calibration-dominated corpus, the literature points to an optimum of roughly 0.6 percentage points per year, well below the two-percent targets commonly used by advanced-economy central banks. Bayesian model averaging over the full structural-moderator schema shows that cross-study variation is driven by genuine modelling choices, the choice of monetary benchmark (Friedman rule vs. laissez-faire), the transactions-frictions technology, the assumed shock structure, and the class of nominal-rigidity contract, rather than by selective reporting.
 
@@ -396,6 +405,7 @@ Replication Package: https://meta-analysis.cz/learning/replication.zip
 Data: https://meta-analysis.cz/learning/learning_loss_data.xlsx
 mad-research: https://github.com/tjhavranek/mad-research
 paper-workshop: https://github.com/tjhavranek/paper-workshop
+Full text (HTML): https://meta-analysis.cz/learning/paper/
 
 Abstract: We revisit a central estimate in the economics of education: the human-capital loss associated with COVID-19 school closures. Estimates of pandemic learning loss may be affected by publication bias, p-hacking, and the mechanical correlation between standardized effect sizes and their standard errors. We conduct a comprehensive multi-method assessment of bias by applying a wide range of correction techniques — including PET-PEESE, three-parameter selection models (3PSM), Robust Bayesian Meta-Analysis (RoBMA), Meta-Analysis Instrumental Variable Estimation (MAIVE), Right-Truncated Meta-Analysis (RTMA), and multi-bias sensitivity analysis. Our preferred specifications, RoBMA and MAIVE, rely on different assumptions yet converge on an effect size of approximately −0.12 SD, equivalent to a learning loss of about 30% of a school year. Although some methods reveal signs of publication bias and selective reporting, these findings do not explain away the central finding: the COVID-19 learning deficit is economically meaningful and statistically robust.
 
@@ -424,6 +434,7 @@ Replication Package: https://meta-analysis.cz/migrant/replication.zip
 Data: https://meta-analysis.cz/migrant/migrant.xlsx
 mad-research: https://github.com/tjhavranek/mad-research
 paper-workshop: https://github.com/tjhavranek/paper-workshop
+Full text (HTML): https://meta-analysis.cz/migrant/paper/
 
 Abstract: This paper presents the first comprehensive meta-analysis of the elasticity of substitution between native and immigrant labor, drawing on 1,091 estimates from 41 studies. We find strong evidence of selective reporting: less precise estimates are systematically associated with lower reported elasticities. Correcting for this bias using meta-regression and selection methods raises the implied elasticity from about 13 to about 22, implying about 40% less relative-wage pressure from immigration than uncorrected results suggest. Bayesian and frequentist model averaging show that heterogeneity is driven mainly by geographic scale, data granularity, and whether the sample is restricted to low-experience workers, while the choice between log mean wages and mean log wages plays a secondary role. Our best-practice estimates, which net out publication bias and prioritize the most granular data, imply an elasticity of about 17 in our baseline regional specification, lower than implied by a simple bias correction but substantially higher than the uncorrected mean.
 
@@ -468,6 +479,7 @@ Data: https://meta-analysis.cz/price_puzzle/puzzle.xls
 Robustness Checks: https://meta-analysis.cz/price_puzzle/sensitivity.pdf
 Code: https://meta-analysis.cz/price_puzzle/puzzle.do
 Excluded Studies: https://meta-analysis.cz/price_puzzle/excluded.xls
+Full text (HTML): https://meta-analysis.cz/price_puzzle/paper/
 
 Abstract: The short-run increase in prices following an unexpected tightening of monetary policy constitutes a puzzle frequently reported in empirical studies. Yet the puzzle is easy to explain away when all published models are quantitatively reviewed. We collect and examine about 1,000 point estimates of impulse responses from 70 articles that use vector autoregressions to study monetary transmission in various countries. We find that the puzzle is created by model misspecifications: especially by the omission of commodity prices, neglect of potential output, and reliance on recursive identification. Our results also suggest that the strength of monetary policy depends on the country's openness, phase of the economic cycle, and degree of central bank independence.
 
@@ -501,6 +513,7 @@ Published version: https://doi.org/10.1016/j.worlddev.2016.07.016
 Read the paper: https://meta-analysis.cz/resource_curse/resource_curse2.pdf
 Download the data: https://meta-analysis.cz/resource_curse/resource_curse.dta
 Download the code: https://meta-analysis.cz/resource_curse/resource_curse.do
+Full text (HTML): https://meta-analysis.cz/resource_curse/paper/
 
 Abstract: An important question in development studies is how natural resources richness affects long-term economic growth. No consensus answer, however, has yet emerged, with approximately 40% of empirical papers finding a negative effect, 40% finding no effect, and 20% finding a positive effect. Does the literature taken together imply the existence of the so-called natural resource curse? In a quantitative survey of 605 estimates reported in 43 studies, we find that overall support for the resource curse hypothesis is weak when potential publication bias and method heterogeneity are taken into account. Our results also suggest that four aspects of study design are especially effective in explaining the differences in results across studies: 1) controlling for institutional quality, 2) controlling for the level of investment activity, 3) distinguishing between different types of natural resources, and 4) differentiating between resource dependence and abundance.
 
@@ -513,6 +526,7 @@ Supplement: https://meta-analysis.cz/risk/appendix.pdf
 Calibration Studies: https://meta-analysis.cz/risk/calibrations.xlsx
 Data: https://meta-analysis.cz/risk/risk.dta
 Code: https://meta-analysis.cz/risk/risk.zip
+Full text (HTML): https://meta-analysis.cz/risk/paper/
 
 Abstract: Estimates of relative risk aversion vary widely, but no study has attempted to quantitatively trace the sources of the variation. We collect 1,021 estimates from 92 studies that use the consumption Euler equation to measure relative risk aversion and that disentangle it from intertemporal substitution. We show that calibrations of risk aversion are systematically larger than estimates thereof. Moreover, reported estimates are systematically larger than the underlying risk aversion because of publication bias. After correction for the bias, the literature suggests a mean risk aversion of 1 in economics and 2-7 in finance contexts. The reported estimates are driven by the characteristics of data (frequency, dimension, country, stockholding) and utility (functional form, treatment of durables). To obtain these results we use recently developed nonlinear techniques to correct for publication bias and Bayesian model averaging techniques to account for model uncertainty.
 
@@ -589,6 +603,7 @@ Web appendix: https://meta-analysis.cz/students/appendix.pdf
 Included studies: https://meta-analysis.cz/students/studies.xlsx
 Data: https://meta-analysis.cz/students/students.xlsx
 Code: https://meta-analysis.cz/students/students.do
+Full text (HTML): https://meta-analysis.cz/students/paper/
 
 Abstract: Educational outcomes have many determinants, but one that most young people can readily control is choosing whether to work while in school. Sixty-nine studies have estimated the effect, but results vary from large negative to positive estimates. We show that the results are systematically driven by context, publication bias, and treatment of endogeneity. Studies neglecting endogeneity suffer from an upward bias, which is almost fully compensated by publication selection in favor of negative estimates. Overall the literature suggests a negative but economically inconsequential mean effect. The effect is more substantive for decisions to drop out. To derive these results we collect 861 previously reported estimates together with 32 variables reflecting estimation context, use recently developed techniques to correct for publication bias, and employ Bayesian model averaging to assign a pattern to the heterogeneity in the literature.
 
@@ -611,6 +626,7 @@ Citation: Jiri Schwarz, Tomas Havranek, Zuzana Irsova, Jiri Novak (2026), “Tru
 Paper: https://meta-analysis.cz/trust/trust.pdf
 Replication Package: https://meta-analysis.cz/trust/replication.zip
 Data: https://meta-analysis.cz/trust/trust_data.csv
+Full text (HTML): https://meta-analysis.cz/trust/paper/
 
 Abstract: Reported estimates of the size premium, the tendency of smaller firms to earn higher average returns than larger firms, vary widely across studies, countries, periods, and designs. We examine whether generalized trust and rule of law help account for that heterogeneity. Small firms are more opaque and more dependent on outside finance, so the enforcement and information environment should matter more for them than for large firms. We study 1,613 reported size-slope estimates from 105 studies and 31 countries. The meta-regressions control for study design, specification, precision, publication context, and market and macro-financial conditions; Bayesian model averaging assesses uncertainty over the control set. The more stable association is with rule of law, and it runs against the intuitive expectation that better legal institutions shrink the premium: stronger rule of law is associated with more negative reported size slopes, hence larger conventional size premia. The trust association is conditional and less precisely estimated: where rule of law is weak, higher generalized trust is linked to less negative reported slopes (and thus a weaker premium), and this link fades as rule of law strengthens. Formal and informal institutions thus help organize part of the disagreement in this literature, although the analysis concerns variation in reported estimates and does not identify causal effects.
 
