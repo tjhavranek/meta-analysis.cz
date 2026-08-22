@@ -26,4 +26,7 @@ SELF_MANAGED = {
     "results",     # built by redesign/build_results_page.py; an ItemList of Question nodes.
                    # Deliberately not FAQPage: these are research findings, not frequently
                    # asked questions, and claiming that type would be a misdeclaration.
+    "papers",      # built by tools/build_fulltext_page.py; an index of the full-text
+                   # editions, so a CollectionPage rather than a 55th paper. Without this
+                   # the injector emits ScholarlyArticle and Highwire tags for a list.
 }

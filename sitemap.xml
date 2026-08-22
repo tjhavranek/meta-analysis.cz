@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-  <url><loc>https://meta-analysis.cz/</loc><lastmod>2026-08-21</lastmod></url>
+  <url><loc>https://meta-analysis.cz/</loc><lastmod>2026-08-22</lastmod></url>
   <url><loc>https://meta-analysis.cz/activism/</loc><lastmod>2026-08-21</lastmod></url>
   <url><loc>https://meta-analysis.cz/alphas/</loc><lastmod>2026-08-21</lastmod></url>
   <url><loc>https://meta-analysis.cz/armington/</loc><lastmod>2026-08-21</lastmod></url>
@@ -16,11 +16,11 @@
   <url><loc>https://meta-analysis.cz/discrate/</loc><lastmod>2026-08-21</lastmod></url>
   <url><loc>https://meta-analysis.cz/dst/</loc><lastmod>2026-08-21</lastmod></url>
   <url><loc>https://meta-analysis.cz/education/</loc><lastmod>2026-08-21</lastmod></url>
-  <url><loc>https://meta-analysis.cz/eis/</loc><lastmod>2026-08-21</lastmod></url>
+  <url><loc>https://meta-analysis.cz/eis/</loc><lastmod>2026-08-22</lastmod></url>
   <url><loc>https://meta-analysis.cz/electricity/</loc><lastmod>2026-08-21</lastmod></url>
   <url><loc>https://meta-analysis.cz/esg/</loc><lastmod>2026-08-21</lastmod></url>
   <url><loc>https://meta-analysis.cz/euro/</loc><lastmod>2026-08-21</lastmod></url>
-  <url><loc>https://meta-analysis.cz/excess_sensitivity/</loc><lastmod>2026-08-21</lastmod></url>
+  <url><loc>https://meta-analysis.cz/excess_sensitivity/</loc><lastmod>2026-08-22</lastmod></url>
   <url><loc>https://meta-analysis.cz/exercise/</loc><lastmod>2026-08-21</lastmod></url>
   <url><loc>https://meta-analysis.cz/fdi/</loc><lastmod>2026-08-22</lastmod></url>
   <url><loc>https://meta-analysis.cz/finance_growth/</loc><lastmod>2026-08-21</lastmod></url>
@@ -40,15 +40,15 @@
   <url><loc>https://meta-analysis.cz/migrant/</loc><lastmod>2026-08-21</lastmod></url>
   <url><loc>https://meta-analysis.cz/outliers/</loc><lastmod>2026-08-22</lastmod></url>
   <url><loc>https://meta-analysis.cz/pcc/</loc><lastmod>2026-08-22</lastmod></url>
-  <url><loc>https://meta-analysis.cz/pcc_survey/</loc><lastmod>2026-08-21</lastmod></url>
+  <url><loc>https://meta-analysis.cz/pcc_survey/</loc><lastmod>2026-08-22</lastmod></url>
   <url><loc>https://meta-analysis.cz/price_puzzle/</loc><lastmod>2026-08-21</lastmod></url>
-  <url><loc>https://meta-analysis.cz/reforms/</loc><lastmod>2026-08-21</lastmod></url>
+  <url><loc>https://meta-analysis.cz/reforms/</loc><lastmod>2026-08-22</lastmod></url>
   <url><loc>https://meta-analysis.cz/remittances/</loc><lastmod>2026-08-22</lastmod></url>
   <url><loc>https://meta-analysis.cz/resource_curse/</loc><lastmod>2026-08-21</lastmod></url>
   <url><loc>https://meta-analysis.cz/risk/</loc><lastmod>2026-08-21</lastmod></url>
   <url><loc>https://meta-analysis.cz/scc/</loc><lastmod>2026-08-22</lastmod></url>
   <url><loc>https://meta-analysis.cz/sigma/</loc><lastmod>2026-08-21</lastmod></url>
-  <url><loc>https://meta-analysis.cz/size/</loc><lastmod>2026-08-21</lastmod></url>
+  <url><loc>https://meta-analysis.cz/size/</loc><lastmod>2026-08-22</lastmod></url>
   <url><loc>https://meta-analysis.cz/skill/</loc><lastmod>2026-08-22</lastmod></url>
   <url><loc>https://meta-analysis.cz/spillovers/</loc><lastmod>2026-08-22</lastmod></url>
   <url><loc>https://meta-analysis.cz/students/</loc><lastmod>2026-08-21</lastmod></url>
@@ -57,6 +57,8 @@
   <url><loc>https://meta-analysis.cz/water/</loc><lastmod>2026-08-21</lastmod></url>
   <url><loc>https://meta-analysis.cz/bma/paper/</loc><lastmod>2026-08-22</lastmod></url>
   <url><loc>https://meta-analysis.cz/climate/paper/</loc><lastmod>2026-08-22</lastmod></url>
+  <url><loc>https://meta-analysis.cz/eis/paper/</loc><lastmod>2026-08-22</lastmod></url>
+  <url><loc>https://meta-analysis.cz/excess_sensitivity/paper/</loc><lastmod>2026-08-22</lastmod></url>
   <url><loc>https://meta-analysis.cz/fdi/paper/</loc><lastmod>2026-08-22</lastmod></url>
   <url><loc>https://meta-analysis.cz/gasoline/paper/</loc><lastmod>2026-08-22</lastmod></url>
   <url><loc>https://meta-analysis.cz/gasoline_price/paper/</loc><lastmod>2026-08-22</lastmod></url>
@@ -64,8 +66,11 @@
   <url><loc>https://meta-analysis.cz/maive/paper/</loc><lastmod>2026-08-22</lastmod></url>
   <url><loc>https://meta-analysis.cz/outliers/paper/</loc><lastmod>2026-08-22</lastmod></url>
   <url><loc>https://meta-analysis.cz/pcc/paper/</loc><lastmod>2026-08-22</lastmod></url>
+  <url><loc>https://meta-analysis.cz/pcc_survey/paper/</loc><lastmod>2026-08-22</lastmod></url>
+  <url><loc>https://meta-analysis.cz/reforms/paper/</loc><lastmod>2026-08-22</lastmod></url>
   <url><loc>https://meta-analysis.cz/remittances/paper/</loc><lastmod>2026-08-22</lastmod></url>
   <url><loc>https://meta-analysis.cz/scc/paper/</loc><lastmod>2026-08-22</lastmod></url>
+  <url><loc>https://meta-analysis.cz/size/paper/</loc><lastmod>2026-08-22</lastmod></url>
   <url><loc>https://meta-analysis.cz/skill/paper/</loc><lastmod>2026-08-22</lastmod></url>
   <url><loc>https://meta-analysis.cz/spillovers/paper/</loc><lastmod>2026-08-22</lastmod></url>
   <url><loc>https://meta-analysis.cz/Stockholm.pdf</loc><lastmod>2026-08-10</lastmod></url>
@@ -452,5 +457,6 @@
   <url><loc>https://meta-analysis.cz/notes/voxeu-armington/</loc><lastmod>2026-08-21</lastmod></url>
   <url><loc>https://meta-analysis.cz/notes/maer-reporting-guidelines/</loc><lastmod>2026-08-21</lastmod></url>
   <url><loc>https://meta-analysis.cz/notes/maer-methods-guidelines/</loc><lastmod>2026-08-21</lastmod></url>
+  <url><loc>https://meta-analysis.cz/papers/</loc><lastmod>2026-08-22</lastmod></url>
   <url><loc>https://meta-analysis.cz/results/</loc><lastmod>2026-08-22</lastmod></url>
 </urlset>

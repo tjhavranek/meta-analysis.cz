@@ -78,3 +78,10 @@
 .entry ol.endnotes > li:target{ background:var(--tint); }
 .entry figure{ margin:var(--s5) 0; }
 .entry figure img{ max-width:100%; height:auto; display:block; }
+
+/* /papers/, the index of the full-text editions. */
+.entry ul.fulltext{ list-style:none; margin:var(--s5) 0; padding:0; }
+.entry ul.fulltext > li{ margin:0 0 var(--s4); padding:0 0 var(--s4);
+     border-bottom:1px solid var(--rule); line-height:1.5; }
+.entry ul.fulltext > li:last-child{ border-bottom:0; }
+.entry ul.fulltext .who{ font:400 var(--f-1)/1.6 var(--sans); color:var(--ink-soft); }

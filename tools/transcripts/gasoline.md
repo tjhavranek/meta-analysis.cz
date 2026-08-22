@@ -10,6 +10,10 @@ Tomas Havranek ^{a,b,⁎}, Ondrej Kokes ^{c}
 
 ^{c} Cambridge Econometrics, United Kingdom
 
+^{☆} We are grateful to Zuzana Irsova, Karel Janda, seminar participants at Charles University, Prague, and two anonymous referees of Energy Economics for their helpful comments on previous versions of the manuscript. We thank Carol Dahl for providing us her data set with estimates of gasoline demand elasticities. We acknowledge support from the Czech Science Foundation (grant #P402/11/0948 and #15-02411S) and the Grant Agency of Charles University (grant #558713). An online appendix providing the data and the Stata code used in this paper is available at meta-analysis.cz/gasoline. The views expressed here are ours and not necessarily those of the Czech National Bank.
+
+^{⁎} Corresponding author at: Czech National Bank, Czech Republic. Tel.: +64 3 364 0549; fax: +64 3 364 0545. E-mail address: tomas.havranek@ies-prague.org (T. Havranek).
+
 JEL classification: C83, Q41
 
 ## ABSTRACT

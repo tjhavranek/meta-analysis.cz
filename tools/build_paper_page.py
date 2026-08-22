@@ -136,8 +136,12 @@ RE_H3 = re.compile(r"^###\s+(?!#)(.*)$")
 RE_H4 = re.compile(r"^####\s+(.*)$")
 RE_EQ = re.compile(r"^\$\$(.+?)\$\$\s*(?:\(([^)]+)\))?\s*$")
 RE_TABLE_CAP = re.compile(
-    r"^TABLE\s+([A-Za-z]?\d+(?:\.\d+)?[A-Za-z]?)"
+    r"^TABLE\s+([A-Za-z]?\.?\d+(?:\.\d+)?[A-Za-z]?)"
     r"(\s*\(\s*(?:continued|cont\.?)\s*\))?\s*\.\s*(.*)$", re.I)
+# An appendix table is numbered "A.1" as often as "A1", and the dot between the letter and
+# the number is not the full stop that ends the caption's number: without the optional dot
+# here, "TABLE A.1. Caption" is not a caption at all and prints as a stray paragraph above
+# an untitled table.
 # "(continued)" is written either before or after the caption's full stop, depending on who
 # transcribed it. Both mean the same thing: this is the second panel of a table too tall for
 # one printed page, not a second table with the same number.
@@ -161,6 +165,8 @@ class Builder:
         self.toc = []
         self.refs_numbered = False
         self.in_frontmatter = False
+        self._ref_seq = 0
+        self.abstract = []
 
     # -- emit helpers
     def w(self, s):
@@ -170,6 +176,8 @@ class Builder:
         if not lines:
             return
         text = " ".join(l.strip() for l in lines).strip()
+        if text and getattr(self, "_collect_abstract", False):
+            self.abstract.append(re.sub(r"[*`]", "", text))
         if text:
             # A superscript in the author block marks an affiliation, not a reference.
             self.w("<p>%s</p>" % inline(text, self.refs_numbered, not self.in_frontmatter))
@@ -205,6 +213,7 @@ class Builder:
             if mode in ("abstract", "frontmatter"):
                 self.w("</div>")
                 self.in_frontmatter = False
+                self._collect_abstract = False
             elif mode in ("references", "endnotes"):
                 self.w("</ol>")
             mode = None
@@ -265,6 +274,7 @@ class Builder:
                     self.w('<div class="abstract">')
                     self.w("<h2>Abstract</h2>")
                     mode = "abstract"
+                    self._collect_abstract = True
                     i += 1
                     continue
                 anchor = "sec-" + slug(head.split("|")[0].strip() or head)
@@ -292,7 +302,13 @@ class Builder:
                     idprefix = "ref-" if mode == "references" else "note-"
                     style = ""
                     if mode == "references" and key.isdigit():
-                        style = ' style="counter-reset:rf %d"' % (int(key) - 1)
+                        # The CSS counter already produces 1, 2, 3 ... Only a list whose
+                        # printed numbers skip needs to be told where it is, and writing the
+                        # style on every item otherwise leaves a no-op on every line.
+                        expected = self._ref_seq + 1
+                        if int(key) != expected:
+                            style = ' style="counter-reset:rf %d"' % (int(key) - 1)
+                        self._ref_seq = int(key)
                     self.w('<li id="%s%s"%s>%s</li>'
                            % (idprefix, key, style, inline(body, self.refs_numbered)))
                     i = j
@@ -408,7 +424,12 @@ class Builder:
                 raise SystemExit("%s: figure %s has no artwork at %s/paper/%s"
                                  % (self.project, num, self.project, src))
             self.w("<figure>")
-            self.w('<img src="%s" alt="Figure %s of the paper" />' % (src, html.escape(num)))
+            # The caption says what the figure shows; a placeholder alt says nothing to
+            # anyone who cannot see it.
+            alt = re.sub(r"[*`]|\$[^$]*\$", "", caption)
+            alt = re.sub(r"\s+([.,;:])", r"\1", re.sub(r"\s+", " ", alt)).strip()
+            alt = "Figure %s. %s" % (num, alt) if alt else "Figure %s" % num
+            self.w('<img src="%s" alt="%s" />' % (src, html.escape(alt[:300], quote=True)))
             self.w("<figcaption><b>Figure %s.</b> %s</figcaption>" % (
                 html.escape(num), inline(caption, self.refs_numbered)))
             self.w("</figure>")
@@ -442,7 +463,8 @@ def build_page(project, meta, body, toc):
     journal = meta.get("journal") or ""
     year = meta.get("year")
     authors = meta.get("authors") or []
-    title = meta.get("title") or project
+    label = meta.get("title") or project        # how the site files it
+    title = article_title(meta)                 # how the journal printed it
     abstract = (meta.get("abstract") or "").strip()
 
     ld = {
@@ -488,10 +510,7 @@ def build_page(project, meta, body, toc):
         cite_meta.append('<meta name="citation_pdf_url" content="https://meta-analysis.cz/%s/%s" />'
                          % (project, pdf))
 
-    desc = "The full text of %s%s" % (
-        ref.rstrip(". ") or title,
-        ", republished under CC BY 4.0." if ref else ", republished under CC BY 4.0.")
-    desc = desc[:300]
+    desc = ("The full text of %s" % (ref.rstrip(". ") or title))[:300]
 
     toc_html = ""
     if len([t for t in toc if t[0] == 2]) >= 4:
@@ -593,7 +612,7 @@ def build_page(project, meta, body, toc):
 </html>
 """.format(
         title=html.escape(title),
-        short=html.escape(title if len(title) <= 60 else title.split(":")[0]),
+        short=html.escape(label if len(label) <= 60 else label.split(":")[0]),
         desc=esc_attr(desc),
         project=project,
         cite_meta="\n".join(cite_meta),
@@ -604,6 +623,23 @@ def build_page(project, meta, body, toc):
         body=body,
         footer=load_footer(),
     )
+
+
+RE_QUOTED_TITLE = re.compile(r"[\u201c\"]([^\u201d\"]{10,300})[\u201d\"]")
+
+
+def article_title(meta):
+    """The title the article was published under, not the label this site files it by.
+
+    papers.json's "title" is the site's own name for a literature -- "A Meta-Analysis of the
+    Price Elasticity of Gasoline Demand" -- which is how the catalogue should list it and is
+    not what the journal printed. Twenty-one of the fifty-four differ. Putting the site label
+    in citation_title tells Google Scholar the paper has a title it does not have, so the
+    published title is taken from the quoted title in the reference line."""
+    m = RE_QUOTED_TITLE.search(meta.get("reference_line") or "")
+    if m:
+        return m.group(1).strip().rstrip(",.").strip()
+    return meta.get("title") or meta.get("project", "")
 
 
 def paper_pdf(project, meta):
@@ -655,6 +691,10 @@ def main(argv):
         meta["_pdf"] = paper_pdf(project, meta)
         builder = Builder(project, meta)
         body = builder.build(open(src_path).read())
+        if builder.abstract:
+            # papers.json's abstract is the site's summary of the literature; the page shows
+            # the paper's own. The metadata should say what the page says.
+            meta["abstract"] = " ".join(builder.abstract)
         page = build_page(project, meta, body, builder.toc)
         outdir = os.path.join(ROOT, project, "paper")
         os.makedirs(outdir, exist_ok=True)
