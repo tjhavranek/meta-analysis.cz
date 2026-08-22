@@ -174,10 +174,6 @@ which is smaller and keeps column types.</p>
 <pre class="usage"><code>import pandas as pd
 df = pd.read_parquet("https://meta-analysis.cz/data/v1/estimates_harmonised.parquet")</code></pre>
 
-<p>New to these files? The <a href="/datasets/example/"><b>worked example</b></a> goes from
-download to a bias-corrected estimate on one literature in ten lines of code, with every
-number on the page computed from the shipped data.</p>
-
 <p class="caveat">Raw effect levels are not comparable across literatures. An elasticity, a
 partial correlation and a dollar value per tonne of carbon all sit in the same column;
 <code>effect_units</code> records which is which. Analyse within each literature. Comparing
