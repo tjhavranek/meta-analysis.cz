@@ -27,12 +27,13 @@ import sys
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 sys.path.insert(0, os.path.join(ROOT, "tools"))
 
-from build_paper_page import paper_pdf                      # noqa: E402
+from build_paper_page import documents, page_dir, pdf_path  # noqa: E402
 from scout_paper import scout                               # noqa: E402
 from verify_transcript import (multiset_check, pdf_counts,  # noqa: E402
                                pdf_prose, transcript_prose, words)
 
 PAPERS = {p["project"]: p for p in json.load(open(os.path.join(ROOT, "tools", "papers.json")))}
+PAPERS.update(documents())
 
 
 def visible_text(page):
@@ -45,10 +46,10 @@ def visible_text(page):
 
 def check(project):
     fails, notes = [], []
-    page_path = os.path.join(ROOT, project, "paper", "index.html")
+    page_path = os.path.join(page_dir(project, PAPERS[project]), "index.html")
     tr_path = os.path.join(ROOT, "tools", "transcripts", "%s.md" % project)
     if not os.path.exists(page_path):
-        return ["no page at %s/paper/" % project], []
+        return ["no page at %s" % page_dir(project, PAPERS[project])], []
     if not os.path.exists(tr_path):
         # /maive/paper/ and /guidelines/guide/ were built by hand before the toolchain
         # existed. They are checked by eye, not by this gate.
@@ -56,7 +57,7 @@ def check(project):
 
     page = open(page_path).read()
     src = open(tr_path).read()
-    pdf = os.path.join(ROOT, project, paper_pdf(project, PAPERS[project]))
+    pdf = pdf_path(project, PAPERS[project])
 
     # -- nothing invented
     a = pdf_counts(pdf)
@@ -120,7 +121,7 @@ def check(project):
     if re.search(r"\bTODO\b", visible_text(page)):
         fails.append("the word TODO is visible on the page")
     for m in re.finditer(r'<img src="(figures/[^"]+)"', page):
-        f = os.path.join(ROOT, project, "paper", m.group(1))
+        f = os.path.join(page_dir(project, PAPERS[project]), m.group(1))
         if not os.path.exists(f):
             fails.append("missing figure file %s" % m.group(1))
         elif os.path.getsize(f) < 2000:
@@ -149,7 +150,7 @@ def main(argv):
         projects = argv
     else:
         projects = sorted(p for p in PAPERS
-                          if os.path.exists(os.path.join(ROOT, p, "paper", "index.html")))
+                          if os.path.exists(os.path.join(page_dir(p, PAPERS[p]), "index.html")))
     bad = 0
     for project in projects:
         fails, notes = check(project)

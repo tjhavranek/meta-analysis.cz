@@ -260,11 +260,13 @@ def classify(para, seen_backmatter):
 
 def draft(project, page_range=None, out=None):
     import json
-    from build_paper_page import paper_pdf
+    from build_paper_page import pdf_path
     papers = {p["project"]: p for p in json.load(open(os.path.join(ROOT, "tools", "papers.json")))}
+    from build_paper_page import documents
+    papers.update(documents())
     meta = papers[project]
-    rel = paper_pdf(project, meta)
-    pdf = os.path.join(ROOT, project, rel)
+    pdf = pdf_path(project, meta)
+    rel = os.path.relpath(pdf, ROOT)
 
     raw = pdftotext(pdf)
     pages = raw.split("\f")

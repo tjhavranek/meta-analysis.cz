@@ -1,0 +1,16 @@
+[
+  {
+    "project": "maive_supplement",
+    "slug": "maive/supplement",
+    "pdf": "maive/supplement.pdf",
+    "title": "Supplementary Information for Spurious Precision in Meta-Analysis of Observational Research",
+    "parent": "/maive/paper/",
+    "parent_label": "Spurious Precision in Meta-Analysis of Observational Research",
+    "authors": ["Zuzana Irsova", "Pedro R. D. Bom", "Tomas Havranek", "Heiko Rachinger"],
+    "year": 2025,
+    "journal": "Nature Communications",
+    "doi_or_publisher_url": "https://doi.org/10.1038/s41467-025-63261-0",
+    "reference_line": "Zuzana Irsova, Pedro R. D. Bom, Tomas Havranek, and Heiko Rachinger (2025), Supplementary Information for \"Spurious precision in meta-analysis of observational research.\" Nature Communications 16, 8454.",
+    "abstract": "The supplementary information for the MAIVE paper: the full simulation designs and their results, the empirical applications, additional simulations, twenty-nine supplementary figures and nine supplementary tables."
+  }
+]

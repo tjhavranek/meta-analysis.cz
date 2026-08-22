@@ -17,7 +17,7 @@ import sys
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 sys.path.insert(0, os.path.join(ROOT, "tools"))
 
-from build_paper_page import article_title      # noqa: E402
+from build_paper_page import article_title, documents, page_href   # noqa: E402
 
 PAPERS = {p["project"]: p for p in json.load(open(os.path.join(ROOT, "tools", "papers.json")))}
 
@@ -41,6 +41,19 @@ def editions():
     return sorted(out, key=lambda r: (-r[0], r[1].lower()))
 
 
+def hanging(href):
+    """Documents that belong to the paper at this address.
+
+    A supplement is not a paper and does not get a row of its own, but a reader who has
+    found the paper should be able to find it."""
+    out = []
+    for project, doc in sorted(documents().items()):
+        if doc.get("parent") == href:
+            out.append('<a href="%s">%s</a>'
+                       % (page_href(project, doc), html.escape(doc.get("short") or "Supplement")))
+    return out
+
+
 def entry(year, title, project, href, meta):
     authors = meta.get("authors") or []
     if len(authors) > 3:
@@ -50,8 +63,10 @@ def entry(year, title, project, href, meta):
             if authors else ""
     journal = meta.get("journal") or ""
     where = "<i>%s</i>" % html.escape(journal) if journal else "working paper"
-    return ('<li><a href="%s"><b>%s</b></a><br /><span class="who">%s &middot; %s &middot; %s</span></li>'
-            % (href, html.escape(title), html.escape(who), where, year or "n.d."))
+    extra = hanging(href)
+    tail = (" &middot; " + " &middot; ".join(extra)) if extra else ""
+    return ('<li><a href="%s"><b>%s</b></a><br /><span class="who">%s &middot; %s &middot; %s%s</span></li>'
+            % (href, html.escape(title), html.escape(who), where, year or "n.d.", tail))
 
 
 def build():
@@ -135,10 +150,11 @@ paper has no figure there.</p>
                      "name": r[1],
                      "url": "https://meta-analysis.cz%s" % r[3]} for r in rows],
     }
-    figs = sum(len([f for f in os.listdir(os.path.join(ROOT, r[2], "paper", "figures"))
-                    if f.endswith(".png")])
-               for r in rows
-               if os.path.isdir(os.path.join(ROOT, r[2], "paper", "figures")))
+    dirs = [os.path.join(ROOT, r[2], "paper", "figures") for r in rows]
+    dirs += [os.path.join(ROOT, page_href(pj, d).strip("/"), "figures")
+             for pj, d in documents().items()]
+    figs = sum(len([f for f in os.listdir(d) if f.endswith(".png")])
+               for d in dirs if os.path.isdir(d))
     out = page.format(n=len(rows), listed=listed, figs=figs, footer=load_footer())
     outdir = os.path.join(ROOT, "papers")
     os.makedirs(outdir, exist_ok=True)

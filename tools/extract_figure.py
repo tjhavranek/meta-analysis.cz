@@ -48,16 +48,17 @@ def trim(im, threshold=232, pad=8):
 def extract(project, fig, page, box, dpi=200, colours=64, pdf=None):
     import json
     sys.path.insert(0, os.path.join(ROOT, "tools"))
-    from build_paper_page import paper_pdf
+    from build_paper_page import documents, page_dir, pdf_path
     papers = {p["project"]: p for p in json.load(open(os.path.join(ROOT, "tools", "papers.json")))}
-    pdf = pdf or os.path.join(ROOT, project, paper_pdf(project, papers[project]))
+    papers.update(documents())
+    pdf = pdf or pdf_path(project, papers[project])
 
     im = render(pdf, page, dpi)
     x0, y0, x1, y1 = box
     im = im.crop((int(x0 * im.width), int(y0 * im.height),
                   int(x1 * im.width), int(y1 * im.height)))
     im = trim(im)
-    outdir = os.path.join(ROOT, project, "paper", "figures")
+    outdir = os.path.join(page_dir(project, papers[project]), "figures")
     os.makedirs(outdir, exist_ok=True)
     out = os.path.join(outdir, "fig%s.png" % fig)
     im.quantize(colours, method=Image.MEDIANCUT).save(out, optimize=True)

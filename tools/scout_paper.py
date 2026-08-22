@@ -20,8 +20,15 @@ import sys
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 sys.path.insert(0, os.path.join(ROOT, "tools"))
 
+# A supplement numbers its exhibits S1, S2, ... and the S belongs to the number: the paper
+# prints "Fig. S7", not a seventh figure in some other series.
+#
+# What follows the number decides whether this is a caption at all. A caption puts a
+# delimiter or a title after it -- "Table 3. Summary", "Fig. S7:" -- while a line-wrapped
+# cross-reference carries on with the sentence: "Figure 9 in the online appendix". Both
+# start a line, and only the next word tells them apart.
 CAPTION = re.compile(r"^\s*(T\s?A\s?B\s?L\s?E|TABLE|Table|F\s?I\s?G\s?U\s?R\s?E|FIGURE|Figure|Fig\.)"
-                     r"\s*([0-9]+[A-Za-z]?)\b", re.M)
+                     r"\s*(S?[0-9]+[A-Za-z]?)\s*(?=[.:;,\u2014\u2013-]|$|[A-Z(\[])", re.M)
 BACK = re.compile(r"^\s*(R\s?E\s?F\s?E\s?R\s?E\s?N\s?C\s?E\s?S|REFERENCES|References|Bibliography)\s*$",
                   re.M)
 EQNUM = re.compile(r"\(\s*(\d{1,2})\s*\)\s*$", re.M)
@@ -36,11 +43,10 @@ def pages_of(pdf):
 
 
 def scout(project, papers):
-    from build_paper_page import paper_pdf
-    rel = paper_pdf(project, papers[project])
-    if not rel:
+    from build_paper_page import pdf_path
+    pdf = pdf_path(project, papers[project])
+    if not pdf:
         return {"project": project, "error": "no PDF"}
-    pdf = os.path.join(ROOT, project, rel)
     n = pages_of(pdf)
     text = subprocess.run(["pdftotext", pdf, "-"], capture_output=True, text=True).stdout
     per_page = text.split("\f")
@@ -62,19 +68,43 @@ def scout(project, papers):
     # results" comes out of the text layer as "Figure 35". A number far above the rest is
     # that, not a thirty-fifth figure.
     def plausible(found):
-        nums = [int(re.sub(r"\D", "", k) or 0) for k in found]
+        """Drop a number that stands apart from the series, keep one that continues it.
+
+        The artefact this guards against is a lone stray: with figures 1 to 3 on the page,
+        a "35" is "Figure 3" with a superscript stuck to it. A ceiling near the median
+        catches that, but it also decapitates a supplement that really does print
+        twenty-nine figures. What separates the two is the gap, not the size -- a series
+        numbers its exhibits consecutively, and a glued superscript lands well clear of the
+        last real one. So walk up from the smallest and stop at the first real break."""
+        nums = sorted({int(re.sub(r"\D", "", k) or 0) for k in found})
         if not nums:
             return found
-        ceiling = max(2, sorted(nums)[len(nums) // 2] + 3)
+        ceiling = nums[0]
+        for n in nums[1:]:
+            if n > ceiling + 2:
+                break
+            ceiling = n
+        ceiling = max(2, ceiling)
         return {k: v for k, v in found.items()
                 if int(re.sub(r"\D", "", k) or 0) <= ceiling}
-    tables, figures = plausible(tables), plausible(figures)
+    def own_series(found):
+        """An S-numbered caption is this document's own only if it has no other kind.
+
+        A paper whose own tables are 1, 2, 3 and which points its reader at "Table S1" is
+        pointing outside itself, at a supplement it does not contain. A supplement numbers
+        everything S1, S2, S3 and has no other series to confuse it with."""
+        prefixed = {k for k in found if not k[:1].isdigit()}
+        if prefixed and len(prefixed) < len(found):
+            return {k: v for k, v in found.items() if k in found and k[:1].isdigit()}
+        return found
+
+    tables, figures = plausible(own_series(tables)), plausible(own_series(figures))
 
     numbered = bool(re.search(r"^\s*1\.\s+[A-Z][a-z]+,?\s", text[text.find("REFERENCES"):] or "", re.M))
     words = len(text.split())
     return {
         "project": project,
-        "pdf": rel,
+        "pdf": os.path.relpath(pdf, ROOT),
         "pages": n,
         "words": words,
         "tables": {k: v for k, v in sorted(tables.items(), key=lambda kv: kv[1])},
@@ -87,6 +117,8 @@ def scout(project, papers):
 
 def main(argv):
     papers = {p["project"]: p for p in json.load(open(os.path.join(ROOT, "tools", "papers.json")))}
+    from build_paper_page import documents
+    papers.update(documents())
     as_json = "--json" in argv
     argv = [a for a in argv if not a.startswith("--")]
     if not argv:

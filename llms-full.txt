@@ -418,7 +418,6 @@ URL: https://meta-analysis.cz/maive/
 Citation: Zuzana Irsova, Pedro Bom, Tomas Havranek, and Heiko Rachinger (2025): "Spurious Precision in Meta-Analysis of Observational Research." Nature Communications 16, 8454.
 Published version: https://doi.org/10.1038/s41467-025-63261-0
 Paper: https://meta-analysis.cz/maive/maive.pdf
-Supplement: https://meta-analysis.cz/maive/supplement.pdf
 Extension: https://meta-analysis.cz/waive_ottawa.pdf
 Blog: https://communities.springernature.com/posts/spurious-precision-in-meta-analysis
 Talk: https://youtu.be/VZNDiICI08A

@@ -27,7 +27,7 @@ sys.path.insert(0, os.path.join(ROOT, "tools"))
 
 import json                                              # noqa: E402
 from audit_figures import line_rhythm                    # noqa: E402
-from build_paper_page import paper_pdf                   # noqa: E402
+from build_paper_page import pdf_path                    # noqa: E402
 from extract_figure import extract                       # noqa: E402
 from locate_figures import lines_of, page_words          # noqa: E402
 from scout_paper import scout                            # noqa: E402
@@ -99,7 +99,7 @@ def main(argv):
     apply = "--apply" in argv
     project = [a for a in argv if not a.startswith("--")][0]
     meta = PAPERS[project]
-    pdf = os.path.join(ROOT, project, paper_pdf(project, meta))
+    pdf = pdf_path(project, meta)
     sc = scout(project, PAPERS)
     have = set()
     d = os.path.join(ROOT, project, "paper", "figures")

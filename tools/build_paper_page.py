@@ -441,9 +441,9 @@ class Builder:
     def emit_figure(self, num, caption, has_art):
         if has_art:
             src = "figures/fig%s.png" % num
-            if not os.path.exists(os.path.join(ROOT, self.project, "paper", src)):
-                raise SystemExit("%s: figure %s has no artwork at %s/paper/%s"
-                                 % (self.project, num, self.project, src))
+            if not os.path.exists(os.path.join(page_dir(self.project, self.meta), src)):
+                raise SystemExit("%s: figure %s has no artwork at %s%s"
+                                 % (self.project, num, page_href(self.project, self.meta), src))
             self.w("<figure>")
             # The caption says what the figure shows; a placeholder alt says nothing to
             # anyone who cannot see it.
@@ -488,13 +488,16 @@ def build_page(project, meta, body, toc):
     title = article_title(meta)                 # how the journal printed it
     abstract = (meta.get("abstract") or "").strip()
 
+    here = page_href(project, meta)
+    home = meta.get("parent") or "/%s/" % project
+
     ld = {
         "@context": "https://schema.org",
         "@graph": [{
             "@type": "ScholarlyArticle",
-            "@id": "https://meta-analysis.cz/%s/paper/#article" % project,
-            "mainEntityOfPage": "https://meta-analysis.cz/%s/paper/" % project,
-            "url": "https://meta-analysis.cz/%s/paper/" % project,
+            "@id": "https://meta-analysis.cz%s#article" % here,
+            "mainEntityOfPage": "https://meta-analysis.cz%s" % here,
+            "url": "https://meta-analysis.cz%s" % here,
             "headline": title,
             "name": title,
             "inLanguage": "en",
@@ -526,10 +529,10 @@ def build_page(project, meta, body, toc):
         cite_meta.append('<meta name="citation_doi" content="%s" />'
                          % esc_attr(doi.replace("https://doi.org/", "")))
 
-    pdf = meta.get("_pdf")
+    pdf = pdf_href(project, meta)
     if pdf:
-        cite_meta.append('<meta name="citation_pdf_url" content="https://meta-analysis.cz/%s/%s" />'
-                         % (project, pdf))
+        cite_meta.append('<meta name="citation_pdf_url" content="https://meta-analysis.cz%s" />'
+                         % pdf)
 
     desc = ("The full text of %s" % (ref.rstrip(". ") or title))[:300]
 
@@ -573,21 +576,24 @@ def build_page(project, meta, body, toc):
     if doi and doi.rstrip("/") not in (ref or ""):
         attr_p.append('<a href="%s">%s</a>.' % (esc_attr(doi), html.escape(doi)))
     attribution.append("<p>%s</p>" % " ".join(attr_p))
+    parent_label = meta.get("parent_label")
     links = []
     if pdf:
-        links.append('<a href="/%s/%s">Paper (PDF)</a>' % (project, pdf))
+        links.append('<a href="%s">%s (PDF)</a>' % (pdf, "Supplement" if parent_label else "Paper"))
     if doi:
         links.append('<a href="%s">Version of record</a>' % esc_attr(doi))
-    links.append('<a href="/%s/">Data and code</a>' % project)
+    links.append('<a href="%s">%s</a>' % (home, "The paper" if parent_label else "Data and code"))
     attribution.append('<p class="attr-links">%s</p>' % " &nbsp;&middot;&nbsp; ".join(links))
     attribution.append("</div>")
 
-    menu = ['<li class="current_page_item"><a href="/%s/paper/">Full text</a></li>' % project]
+    menu = ['<li class="current_page_item"><a href="%s">Full text</a></li>' % here]
     if pdf:
-        menu.append('<li><a href="/%s/%s">Paper (PDF)</a></li>' % (project, pdf))
+        menu.append('<li><a href="%s">%s (PDF)</a></li>'
+                    % (pdf, "Supplement" if parent_label else "Paper"))
     if doi:
         menu.append('<li><a href="%s">Version of record</a></li>' % esc_attr(doi))
-    menu.append('<li><a href="/%s/">Data and code</a></li>' % project)
+    menu.append('<li><a href="%s">%s</a></li>'
+                % (home, "The paper" if parent_label else "Data and code"))
     menu.append('<li><a href="/">All meta-analyses</a></li>')
 
     return """<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
@@ -599,13 +605,13 @@ def build_page(project, meta, body, toc):
 <meta name="description" content="{desc}" />
 <link href="/style.css" rel="stylesheet" type="text/css" />
 <link href="/paper.css" rel="stylesheet" type="text/css" />
-<link rel="canonical" href="https://meta-analysis.cz/{project}/paper/" />
+<link rel="canonical" href="https://meta-analysis.cz{here}" />
 {cite_meta}
 <meta property="og:site_name" content="meta-analysis.cz" />
 <meta property="og:type" content="article" />
 <meta property="og:title" content="{title} (full text)" />
 <meta property="og:description" content="{desc}" />
-<meta property="og:url" content="https://meta-analysis.cz/{project}/paper/" />
+<meta property="og:url" content="https://meta-analysis.cz{here}" />
 <script type="application/ld+json">
 {ld}
 </script>
@@ -615,8 +621,8 @@ def build_page(project, meta, body, toc):
 <!-- start header -->
 <div id="logo">
 \t<a class="masthead-home" href="/">meta-analysis.cz</a>
-\t<p class="site-name"><a href="/{project}/">{short}</a></p>
-\t<h2> <span class="mk">&raquo;</span>&nbsp;&nbsp;&nbsp; the full text</h2>
+\t<p class="site-name"><a href="{home}">{short}</a></p>
+\t<h2> <span class="mk">&raquo;</span>&nbsp;&nbsp;&nbsp; {strapline}</h2>
 </div>
 <div id="header">
 \t<div id="menu">
@@ -652,9 +658,13 @@ def build_page(project, meta, body, toc):
 </html>
 """.format(
         title=html.escape(title),
-        short=html.escape(label if len(label) <= 60 else label.split(":")[0]),
+        short=html.escape((parent_label or label) if len(parent_label or label) <= 60
+                          else (parent_label or label).split(":")[0]),
+        home=home,
+        strapline="the supplement in full" if parent_label else "the full text",
         desc=esc_attr(desc),
         project=project,
+        here=here,
         cite_meta="\n".join(cite_meta),
         ld=json.dumps(ld, indent=1, ensure_ascii=False),
         menu="\n\t\t\t".join(menu),
@@ -690,12 +700,11 @@ def heading_label(head):
 def prints_pipe_headings(project, meta):
     """True when the paper's own text layer sets numbered headings with a vertical rule."""
     import subprocess
-    rel = paper_pdf(project, meta)
-    if not rel:
+    pdf = pdf_path(project, meta)
+    if not pdf:
         return False
     try:
-        text = subprocess.run(["pdftotext", "-f", "1", "-l", "12",
-                               os.path.join(ROOT, project, rel), "-"],
+        text = subprocess.run(["pdftotext", "-f", "1", "-l", "12", pdf, "-"],
                               capture_output=True, text=True, check=True).stdout
     except Exception:
         return False
@@ -709,14 +718,40 @@ def article_title(meta):
     Price Elasticity of Gasoline Demand" -- which is how the catalogue should list it and is
     not what the journal printed. Twenty-one of the fifty-four differ. Putting the site label
     in citation_title tells Google Scholar the paper has a title it does not have, so the
-    published title is taken from the quoted title in the reference line."""
+    published title is taken from the quoted title in the reference line.
+
+    A document registered in documents.json is the exception: a supplement is cited by the
+    article it belongs to, so its reference line quotes that article's title and not its
+    own. There the registry's own title is the published one."""
+    if meta.get("parent"):
+        return meta.get("title") or meta.get("project", "")
     m = RE_QUOTED_TITLE.search(meta.get("reference_line") or "")
     if m:
         return m.group(1).strip().rstrip(",.").strip()
     return meta.get("title") or meta.get("project", "")
 
 
+def documents():
+    """Documents this site republishes that are not one of the 54 papers.
+
+    A supplement is not a paper: it has no entry in papers.json, no place in the site's
+    catalogue and no headline result, but it is a document worth reading in HTML. Keeping
+    it in its own small registry means the paper list stays what it says it is."""
+    path = os.path.join(ROOT, "tools", "documents.json")
+    if not os.path.exists(path):
+        return {}
+    return {d["project"]: d for d in json.load(open(path))}
+
+
 def paper_pdf(project, meta):
+    """The paper's PDF, named relative to <project>/.
+
+    A registered document lives beside the paper it belongs to rather than in a directory
+    of its own -- maive/supplement.pdf, not maive_supplement/supplement.pdf -- so its path
+    is given from the site root and pdf_path() is what resolves either kind."""
+    doc = documents().get(project)
+    if doc:
+        return doc["pdf"]
     for m in meta.get("menu_links") or []:
         href = (m.get("href") or "")
         if href.endswith(".pdf") and not href.startswith("http") and "appendix" not in href.lower():
@@ -726,6 +761,39 @@ def paper_pdf(project, meta):
         if os.path.exists(os.path.join(ROOT, project, cand)):
             return cand
     return None
+
+
+def pdf_path(project, meta):
+    """Where that PDF actually is on disk.
+
+    Papers keep theirs inside their own directory; documents registered in documents.json
+    give a path from the site root, because a supplement sits next to its paper."""
+    rel = paper_pdf(project, meta)
+    if not rel:
+        return None
+    if project in documents():
+        return os.path.join(ROOT, rel)
+    return os.path.join(ROOT, project, rel)
+
+
+def page_href(project, meta):
+    """Where this page lives on the site.
+
+    A paper's full text sits at /<project>/paper/. A registered document gives its own
+    slug, because a supplement belongs beside the paper it supplements rather than in a
+    directory of its own."""
+    return "/%s/" % (meta.get("slug") or "%s/paper" % project).strip("/")
+
+
+def page_dir(project, meta):
+    return os.path.join(ROOT, page_href(project, meta).strip("/"))
+
+
+def pdf_href(project, meta):
+    rel = meta.get("_pdf") or paper_pdf(project, meta)
+    if not rel:
+        return None
+    return "/%s" % rel if project in documents() else "/%s/%s" % (project, rel)
 
 
 def link_from_project_page(project):
@@ -752,6 +820,7 @@ def link_from_project_page(project):
 
 def main(argv):
     papers = {p["project"]: p for p in json.load(open(os.path.join(ROOT, "tools", "papers.json")))}
+    papers.update(documents())
     if not argv or argv[0] == "--all":
         projects = sorted(p[:-3] for p in os.listdir(TRANSCRIPTS)
                           if p.endswith(".md") and not p.endswith(".draft.md"))
@@ -771,11 +840,13 @@ def main(argv):
             # the paper's own. The metadata should say what the page says.
             meta["abstract"] = " ".join(builder.abstract)
         page = build_page(project, meta, body, builder.toc)
-        outdir = os.path.join(ROOT, project, "paper")
+        outdir = page_dir(project, meta)
         os.makedirs(outdir, exist_ok=True)
         with open(os.path.join(outdir, "index.html"), "w") as fh:
             fh.write(page)
-        linked = link_from_project_page(project)
+        # A document hangs off the page of the paper it belongs to, which may be hand-built;
+        # only a project page gets the link written into it here.
+        linked = project not in documents() and link_from_project_page(project)
         print("%-22s %6d bytes  %2d sections  %s%s" % (
             project, len(page), len(builder.toc),
             "figures " if "<figure>" in page else "",
