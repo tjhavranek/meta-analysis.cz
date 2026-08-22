@@ -1,0 +1,232 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>A Worked Example: From Download to Bias-Corrected Estimate</title>
+<meta name="keywords" content="meta-analysis, publication bias, FAT-PET, funnel asymmetry test, clustered standard errors, worked example" />
+<meta name="description" content="A complete worked example on real data from meta-analysis.cz: load the price elasticity of gasoline demand, split short run from long run, test for publication bias with FAT-PET, and read the corrected estimate. Every number computed from the shipped files." />
+<link href="/style.css" rel="stylesheet" type="text/css" />
+<link rel="canonical" href="https://meta-analysis.cz/datasets/example/" />
+<meta property="og:site_name" content="meta-analysis.cz" />
+<meta property="og:type" content="article" />
+<meta property="og:title" content="A Worked Example: From Download to Bias-Corrected Estimate" />
+<meta property="og:description" content="Load one literature from the pooled table, split what should not be pooled, run FAT-PET with study-clustered standard errors, and read the answer. Ten lines of code, every number verified against the shipped data." />
+<meta property="og:url" content="https://meta-analysis.cz/datasets/example/" />
+<script type="application/ld+json">
+{
+ "@context": "https://schema.org",
+ "@graph": [
+  {
+   "@type": "TechArticle",
+   "@id": "https://meta-analysis.cz/datasets/example/#article",
+   "mainEntityOfPage": "https://meta-analysis.cz/datasets/example/",
+   "url": "https://meta-analysis.cz/datasets/example/",
+   "headline": "A worked example: from download to bias-corrected estimate",
+   "name": "A worked example: from download to bias-corrected estimate",
+   "description": "A complete, reproducible walk through one literature from the meta-analysis.cz data: loading the price elasticity of gasoline demand, separating short-run from long-run elasticities, testing for publication bias with the funnel-asymmetry test, and interpreting the bias-corrected estimate. All numbers are computed from data release 1.1.1.",
+   "inLanguage": "en",
+   "license": "https://creativecommons.org/licenses/by/4.0/",
+   "isAccessibleForFree": true,
+   "author": [
+    {"@type": "Person", "name": "Tomas Havranek", "sameAs": "https://orcid.org/0000-0002-3158-2539"},
+    {"@type": "Person", "name": "Zuzana Irsova", "sameAs": "https://orcid.org/0000-0002-0753-8124"}
+   ],
+   "about": ["meta-analysis", "publication bias", "funnel asymmetry test", "cluster-robust inference"],
+   "isPartOf": {"@id": "https://meta-analysis.cz/#website"},
+   "isBasedOn": {
+    "@type": "Dataset",
+    "name": "meta-analysis.cz: harmonised estimate-level data from meta-analyses in economics (v1.1.1)",
+    "identifier": "https://doi.org/10.5281/zenodo.22050272"
+   }
+  }
+ ]
+}
+</script>
+</head>
+<body>
+<div id="wrapper">
+<!-- start header -->
+<div id="logo">
+	<a class="masthead-home" href="/">meta-analysis.cz</a>
+	<p class="site-name"><a href="/datasets/">Datasets</a></p>
+	<h2> <span class="mk">&raquo;</span>&nbsp;&nbsp;&nbsp; a worked example, from download to corrected estimate</h2>
+</div>
+<div id="header">
+	<div id="menu">
+		<ul>
+			<li class="current_page_item"><a href="/datasets/example/">Worked example</a></li>
+			<li><a href="/datasets/">Datasets</a></li>
+			<li><a href="/api/v1/README.md">Data documentation</a></li>
+			<li><a href="/guidelines/guide/">Practitioner&#8217;s guide</a></li>
+			<li><a href="/">All meta-analyses</a></li>
+		</ul>
+	</div>
+</div>
+<!-- end header -->
+<!-- start page -->
+<div id="page">
+	<!-- start content -->
+	<div id="content">
+		<div class="post">
+			<div class="entry">
+
+<p>This page goes from a download link to a defensible, bias-corrected estimate in about
+ten lines of code, using one literature from this site&#8217;s data: the price elasticity of
+gasoline demand. Every number printed below is computed from the shipped files of
+<a href="https://doi.org/10.5281/zenodo.22050272">data release 1.1.1</a>; paste the code and
+you will get the same numbers. The steps &#8212; look at the data, split what should not be
+pooled, test for publication bias, read the corrected estimate against the published
+paper &#8212; are the same for every literature in the
+<a href="/datasets/">table of 45 datasets</a>.</p>
+
+<h3>Step 1. Load one literature</h3>
+
+<p>Each dataset ships as a small CSV with a
+<a href="/api/v1/codebooks/gasoline_price.json">machine-readable codebook</a>. The gasoline
+literature is 202 price-elasticity estimates from 41 primary studies, collected for
+<a href="/gasoline_price/">Havranek, Irsova &amp; Janda (2012, Energy Economics)</a>:</p>
+
+<pre class="usage"><code>import pandas as pd
+d = pd.read_csv("https://meta-analysis.cz/data/v1/gasoline_price/gasoline_price.csv",
+                float_precision="round_trip")
+d.shape           # (202, 11)
+d.idstudy.nunique()   # 41 studies
+d.e.mean()        # -0.44</code></pre>
+
+<p class="alt-format">In R: <code>d &lt;- read.csv("https://meta-analysis.cz/data/v1/gasoline_price/gasoline_price.csv")</code>.
+The <code>float_precision</code> argument matters only in pandas, whose default CSV parser is
+not exactly lossless; the <a href="/data/v1/estimates_harmonised.parquet">Parquet files</a>
+sidestep the issue entirely.</p>
+
+<h3>Step 2. Split what should not be pooled</h3>
+
+<p>The mean of &#8722;0.44 is the answer to no question, because the file mixes two different
+elasticities: the codebook&#8217;s <code>longr</code> flag separates the short-run response to a
+price change from the long-run response after the vehicle stock adjusts. Pooling them
+averages two populations. Split first:</p>
+
+<pre class="usage"><code>short = d[d.longr == 0]   # 110 estimates, 30 studies, mean -0.23, median -0.19
+long_ = d[d.longr == 1]   #  92 estimates, 30 studies, mean -0.69, median -0.63</code></pre>
+
+<p class="caveat">The same trap scales up: in the site-wide
+<a href="/data/v1/estimates_harmonised.csv">pooled table</a> an elasticity, a partial
+correlation and a dollar value sit in the same <code>effect</code> column, and
+<code>effect_units</code> records which is which. Serious analysis happens within a
+literature, on the per-dataset file with its full set of moderators. The pooled table is
+for cross-literature questions &#8212; distributions of t-statistics, prevalence of
+publication bias &#8212; where the unit mixing is the point, not a bug.</p>
+
+<h3>Step 3. Test for publication bias</h3>
+
+<p>The workhorse test is a regression you can explain in one sentence: if a literature
+reports estimates regardless of their sign and significance, reported effects should not
+correlate with their standard errors; if researchers or journals prefer significant
+negative elasticities, imprecise studies will report systematically more negative numbers.
+The funnel-asymmetry and precision-effect test (FAT-PET;
+<a href="https://doi.org/10.1111/j.0950-0804.2005.00250.x">Stanley 2005</a>) runs the
+regression in its precision-weighted form, <code>t = FAT + PET&#183;(1/SE)</code>: the
+intercept measures selective reporting, and the coefficient on precision is the estimate of
+the effect corrected for it. Standard errors must be clustered by study &#8212; estimates
+from one study share data and methods and are not independent observations:</p>
+
+<pre class="usage"><code>import statsmodels.formula.api as smf
+m = smf.ols("t ~ prec", data=short).fit(cov_type="cluster",
+                                        cov_kwds={"groups": short.idstudy})
+print(m.summary())</code></pre>
+
+<pre class="usage"><code># the same in R; fixest's default small-sample adjustment matches the table exactly
+summary(fixest::feols(t ~ prec, data = short, cluster = ~idstudy))</code></pre>
+
+<div class="table-scroll">
+<table>
+<caption>FAT-PET on the gasoline price elasticity, standard errors clustered by study.
+Dependent variable: the reported t-statistic.</caption>
+<thead>
+<tr><th scope="col"></th><th scope="col">Short run</th><th scope="col">Long run</th></tr>
+</thead>
+<tbody>
+<tr><th scope="row">Estimates / studies</th><td class="num">110 / 30</td><td class="num">92 / 30</td></tr>
+<tr><th scope="row">Reported mean elasticity</th><td class="num">&#8722;0.227</td><td class="num">&#8722;0.691</td></tr>
+<tr><th scope="row">FAT: selective reporting</th><td class="num">&#8722;2.89 (0.59)</td><td class="num">&#8722;3.57 (0.81)</td></tr>
+<tr><th scope="row">PET: corrected elasticity</th><td class="num">&#8722;0.065 (0.015)</td><td class="num">&#8722;0.189 (0.111)</td></tr>
+</tbody>
+</table>
+</div>
+
+<p>The results survive the standard robustness checks. Winsorising both variables at the
+1st and 99th centiles moves nothing that matters (short-run PET stays at &#8722;0.065;
+long-run PET goes to &#8722;0.21). The small-sample cluster correction CR2 (Bell&#8211;McCaffrey, refined by
+<a href="https://doi.org/10.1080/07350015.2016.1247004">Pustejovsky &amp; Tipton 2018</a>
+and implemented in R&#8217;s <code>clubSandwich</code>) widens the standard errors moderately
+&#8212; to 0.017 for the short-run PET and 0.155 for the long-run PET &#8212; which leaves
+the short-run conclusions intact and makes the long-run corrected effect statistically
+indistinguishable from zero. With 30 clusters, that correction is worth reporting, not
+optional.</p>
+
+<h3>Step 4. Read the answer</h3>
+
+<p>Both intercepts are large and negative: the literature selectively reports negative,
+significant price elasticities, and the bias is severe by the standard yardstick, which
+reads |FAT| above 2 as severe selectivity
+(<a href="https://doi.org/10.1111/j.1467-6419.2011.00706.x">Doucouliagos &amp; Stanley
+2013</a>).
+Correcting for it cuts the short-run elasticity from a reported mean of &#8722;0.23 to
+&#8722;0.065, and the long-run from &#8722;0.69 to roughly &#8722;0.2 with a wide confidence
+band. The <a href="/gasoline_price/">published paper</a> reaches the same verdict with
+heavier machinery &#8212; mixed-effects multilevel meta-regression yields corrected
+elasticities of &#8722;0.09 and &#8722;0.31 and the abstract&#8217;s headline that published
+averages are &#8220;exaggerated twofold&#8221;. The simple two-step regression on this page
+reproduces the direction, the significance, and the order of magnitude of that correction;
+the remaining gap between PET and the paper&#8217;s preferred numbers is the estimator, and
+it is why FAT-PET is where a meta-analysis starts, not where it ends. Where to go from
+here: the <a href="/guidelines/guide/">Practitioner&#8217;s Guide</a> for the complete
+18-point checklist (heterogeneity, model averaging, p-hacking tests), and
+<a href="/maive/">MAIVE</a> for what to do when reported standard errors themselves cannot
+be trusted.</p>
+
+<p class="caveat">If you pool across literatures instead, two rules from the
+<a href="/api/v1/README.md">data documentation</a> prevent silent errors: cluster on the
+pair <code>(dataset, study_id)</code>, never on <code>study_id</code> alone &#8212; study
+identifiers restart in every literature, and the bare column would merge unrelated studies
+and collapse 2,963 clusters into 524; and deduplicate on <code>(dataset,
+estimate_id)</code>, which is unique by construction.</p>
+
+<p>All numbers on this page were computed from data release 1.1.1
+(<a href="https://doi.org/10.5281/zenodo.22050272">DOI 10.5281/zenodo.22050272</a>) with the
+code shown, and are pinned to that release: if the files above ever change, the release
+archived at Zenodo reproduces this page exactly.</p>
+
+			</div>
+		</div>
+	</div>
+	<!-- end content -->
+</div>
+<!-- end page -->
+<footer class="site-foot">
+<p class="foot-lede"><b>meta-analysis.cz</b> collects meta-analyses in economics: the papers, the
+data behind them, and the code that produced them. It is maintained by <a href="/about/"><b>Tomas Havranek</b> and
+<b>Zuzana Irsova</b></a> at the Institute of Economic Studies, Charles University, Prague.</p>
+<p class="foot-nav"><a href="/">All meta-analyses</a> &middot;
+<a href="/results/">Headline results</a> &middot;
+<a href="/datasets/">Datasets and the pooled table</a> &middot;
+<a href="/maive/">MAIVE</a> &middot;
+<a href="/guidelines/">Practitioner&#x27;s guide</a> &middot;
+<a href="/notes/">Research notes</a> &middot;
+<a href="https://www.easymeta.org/">EasyMeta web app</a></p>
+<p class="foot-who"><b>Tomas Havranek</b> &middot; <a href="https://www.tomashavranek.cz/">tomashavranek.cz</a> &middot; <a href="https://ies.fsv.cuni.cz/contacts/institute-members/78067720">IES FSV UK</a> &middot; <a href="https://orcid.org/0000-0002-3158-2539">ORCID</a> &middot; <a href="https://scholar.google.com/citations?user=BF0BvBkAAAAJ">Google Scholar</a> &middot; <a href="https://ideas.repec.org/f/pha418.html">RePEc</a> &middot; <a href="https://www.scopus.com/authid/detail.uri?authorId=24453189000">Scopus</a> &middot; <a href="https://cepr.org/about/people/tomas-havranek">CEPR</a> &middot; <a href="https://metrics.stanford.edu/people/tomas-havranek">Stanford METRICS</a></p>
+<p class="foot-who"><b>Zuzana Irsova</b> &middot; <a href="https://www.irsova.com/">irsova.com</a> &middot; <a href="https://ies.fsv.cuni.cz/contacts/institute-members/73504033">IES FSV UK</a> &middot; <a href="https://orcid.org/0000-0002-0753-8124">ORCID</a> &middot; <a href="https://scholar.google.com/citations?user=LaHrICUAAAAJ">Google Scholar</a> &middot; <a href="https://ideas.repec.org/e/pir23.html">RePEc</a> &middot; <a href="https://www.scopus.com/authid/detail.uri?authorId=37080793200">Scopus</a> &middot; <a href="https://cepr.org/about/people/zuzana-irsova">CEPR</a> &middot; <a href="https://metrics.stanford.edu/people/zuzana-irsova">Stanford METRICS</a></p>
+<p class="foot-cite"><b>How to cite this collection:</b> Havranek, T. and Z. Irsova (2026).
+meta-analysis.cz: harmonised estimate-level data from meta-analyses in economics. Zenodo.
+<a href="https://doi.org/10.5281/zenodo.21773678">https://doi.org/10.5281/zenodo.21773678</a>.
+Individual papers carry their own citation on their own page.</p>
+<p class="foot-machine">For machines: <a href="/api/v1/datasets.json">datasets.json</a> &middot;
+<a href="/api/v1/datapackage.json">datapackage.json</a> &middot;
+<a href="/api/v1/croissant.json">croissant.json</a> &middot;
+<a href="/llms.txt">llms.txt</a> &middot; <a href="/llms-full.txt">llms-full.txt</a> &middot;
+<a href="/sitemap.xml">sitemap.xml</a></p>
+<p class="foot-licence">Content on this page: <a href="https://creativecommons.org/licenses/by/4.0/">CC BY 4.0</a>.</p>
+</footer>
+</div>
+</body>
+</html>
