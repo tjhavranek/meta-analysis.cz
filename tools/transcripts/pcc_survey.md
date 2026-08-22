@@ -2,7 +2,7 @@
 
 ## FRONTMATTER
 
-T. D. Stanley^{1} · Petr Čala^{2} · Hristos Doucouliagos^{1} · Zuzana Iršová^{2,4} · Tomáš Havránek^{2,3,4}
+T. D. Stanley¹ · Petr Čala² · Hristos Doucouliagos¹ · Zuzana Iršová²,⁴ · Tomáš Havránek²,³,⁴
 
 ^{1} Deakin University
 

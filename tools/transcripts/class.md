@@ -545,143 +545,143 @@ Havranek, T., T. Stanley, H. Doucouliagos, P. Bom, J. Geyer-Klingeberg, I. Iwasa
 
 Hedges, L. V. (1992): “Modeling Publication Selection Effects in Meta-Analysis.” *Statistical Science* **72(2)**: pp. 246–255.
 
-Hedges, L. V. & W. Stock (1983): “The effects of class size: An examination of rival hypotheses.” American Educational Research Journal 20(1): pp. 63–85.
+Hedges, L. V. & W. Stock (1983): “The effects of class size: An examination of rival hypotheses.” *American Educational Research Journal* **20(1)**: pp. 63–85.
 
-Heinesen, E. (2010): “Estimating class-size effects using within-school variation in subject-specific classes.” The Economic Journal 120(545): pp. 737–760.
+Heinesen, E. (2010): “Estimating class-size effects using within-school variation in subject-specific classes.” *The Economic Journal* **120(545)**: pp. 737–760.
 
-Hojo, M. (2013): “Class-size effects in Japanese schools: A spline regression approach.” Economics Letters 120(3): pp. 583–587.
+Hojo, M. (2013): “Class-size effects in Japanese schools: A spline regression approach.” *Economics Letters* **120(3)**: pp. 583–587.
 
-Hojo, M. & T. Oshio (2012): “What factors determine student performance in East Asia? New evidence from the 2007 trends in international mathematics and science study.” Asian Economic Journal 26(4): pp. 333–357.
+Hojo, M. & T. Oshio (2012): “What factors determine student performance in East Asia? New evidence from the 2007 trends in international mathematics and science study.” *Asian Economic Journal* **26(4)**: pp. 333–357.
 
-Hojo, M. & W. Senoh (2019): “Do the disadvantaged benefit more from small classes? Evidence from a large-scale survey in Japan.” Japan and the World Economy 52(C): p. 100965.
+Hojo, M. & W. Senoh (2019): “Do the disadvantaged benefit more from small classes? Evidence from a large-scale survey in Japan.” *Japan and the World Economy* **52(C)**: p. 100965.
 
-Hoxby, C. M. (2000): “The effects of class size on student achievement: New evidence from population variation.” The Quarterly Journal of Economics 115(4): pp. 1239–1285.
+Hoxby, C. M. (2000): “The effects of class size on student achievement: New evidence from population variation.” *The Quarterly Journal of Economics* **115(4)**: pp. 1239–1285.
 
-Imai, T., T. A. Rutter, & C. F. Camerer (2021): “Meta-Analysis of Present-Bias Estimation Using Convex Time Budgets.” The Economic Journal 131(636): pp. 1788–1814.
+Imai, T., T. A. Rutter, & C. F. Camerer (2021): “Meta-Analysis of Present-Bias Estimation Using Convex Time Budgets.” *The Economic Journal* **131(636)**: pp. 1788–1814.
 
-Ioannidis, J. P., T. Stanley, H. Doucouliagos et al. (2017): “The power of bias in economics research.” The Economic Journal 127(605): pp. 236–265.
+Ioannidis, J. P., T. Stanley, H. Doucouliagos et al. (2017): “The power of bias in economics research.” *The Economic Journal* **127(605)**: pp. 236–265.
 
-Irsova, Z., P. R. D. Bom, T. Havranek, & H. Rachinger (2024): “Spurious Precision in Meta-Analysis of Observational Research.” Working paper, Charles University, Prague.
+Irsova, Z., P. R. D. Bom, T. Havranek, & H. Rachinger (2024): “Spurious Precision in Meta-Analysis of Observational Research.” *Working paper*, Charles University, Prague.
 
-Jackson, C. K. & C. L. Mackevicius (2024): “What Impacts Can We Expect from School Spending Policy? Evidence from Evaluations in the U.S.” American Economic Journal: Applied Economics 16(1): pp. 412–446.
+Jackson, C. K. & C. L. Mackevicius (2024): “What Impacts Can We Expect from School Spending Policy? Evidence from Evaluations in the U.S.” *American Economic Journal: Applied Economics* **16(1)**: pp. 412–446.
 
-Jakubowski, M. & P. Sakowski (2006): “Quasi-experimental estimates of class size effect in primary schools in Poland.” International Journal of Educational Research 45(3): pp. 202–215.
+Jakubowski, M. & P. Sakowski (2006): “Quasi-experimental estimates of class size effect in primary schools in Poland.” *International Journal of Educational Research* **45(3)**: pp. 202–215.
 
-Jepsen, C. & S. Rivkin (2009): “Class size reduction and student achievement the potential tradeoff between teacher quality and class size.” Journal of Human Resources 44(1): pp. 223–250.
+Jepsen, C. & S. Rivkin (2009): “Class size reduction and student achievement the potential tradeoff between teacher quality and class size.” *Journal of Human Resources* **44(1)**: pp. 223–250.
 
-Kara, E., M. Tonin, & M. Vlassopoulos (2021): “Class size effects in higher education: Differences across STEM and non-STEM fields.” Economics of Education Review 82(C): p. 102104.
+Kara, E., M. Tonin, & M. Vlassopoulos (2021): “Class size effects in higher education: Differences across STEM and non-STEM fields.” *Economics of Education Review* **82(C)**: p. 102104.
 
-Keane, M. & T. Neal (2023): “Instrument strength in IV estimation and inference: A guide to theory and practice.” Journal of Econometrics 235(2): pp. 1625–1653.
+Keane, M. & T. Neal (2023): “Instrument strength in IV estimation and inference: A guide to theory and practice.” *Journal of Econometrics* **235(2)**: pp. 1625–1653.
 
-Kedagni, D., K. Krishna, R. Megalokonomou, & Y. Zhao (2021): “Does class size matter? How, and at what cost?” European Economic Review 133(C): p. 103664.
+Kedagni, D., K. Krishna, R. Megalokonomou, & Y. Zhao (2021): “Does class size matter? How, and at what cost?” *European Economic Review* **133(C)**: p. 103664.
 
-Kennedy, P. E. & J. J. Siegfried (1997): “Class size and achievement in introductory economics: Evidence from the TUCE III data.” Economics of Education Review 16(4): pp. 385–394.
+Kennedy, P. E. & J. J. Siegfried (1997): “Class size and achievement in introductory economics: Evidence from the TUCE III data.” *Economics of Education Review* **16(4)**: pp. 385–394.
 
-Kokkelenberg, E. C., M. Dillon, & S. M. Christy (2008): “The effects of class size on student grades at a public university.” Economics of Education Review 27(2): pp. 221–233.
+Kokkelenberg, E. C., M. Dillon, & S. M. Christy (2008): “The effects of class size on student grades at a public university.” *Economics of Education Review* **27(2)**: pp. 221–233.
 
-Konstantopoulos, S. & T. Shen (2016): “Class size effects on mathematics achievement in Cyprus: Evidence from TIMSS.” Educational Research and Evaluation 22(1-2): pp. 86–109.
+Konstantopoulos, S. & T. Shen (2016): “Class size effects on mathematics achievement in Cyprus: Evidence from TIMSS.” *Educational Research and Evaluation* **22(1-2)**: pp. 86–109.
 
-Kraft, M. A. (2020): “Interpreting Effect Sizes of Education Interventions.” Educational Researcher 49(4): pp. 241–253.
+Kraft, M. A. (2020): “Interpreting Effect Sizes of Education Interventions.” *Educational Researcher* **49(4)**: pp. 241–253.
 
-Kranz, S. & P. Putz (2022): “Methods matter: p-hacking and publication bias in causal analysis in economics: Comment.” American Economic Review 112(9): pp. 3124–3136.
+Kranz, S. & P. Putz (2022): “Methods matter: p-hacking and publication bias in causal analysis in economics: Comment.” *American Economic Review* **112(9)**: pp. 3124–3136.
 
-Krassel, K. F. & E. Heinesen (2014): “Class-size effects in secondary school.” Education Economics 22(4): pp. 412–426.
+Krassel, K. F. & E. Heinesen (2014): “Class-size effects in secondary school.” *Education Economics* **22(4)**: pp. 412–426.
 
-Kroupova, K., T. Havranek, & Z. Irsova (2024): “Student Employment and Education: A Meta-Analysis.” Economics of Education Review 100(C).
+Kroupova, K., T. Havranek, & Z. Irsova (2024): “Student Employment and Education: A Meta-Analysis.” *Economics of Education Review* **100(C)**.
 
-Krueger, A. B. (1999): “Experimental estimates of education production functions.” The Quarterly Journal of Economics 114(2): pp. 497–532.
+Krueger, A. B. (1999): “Experimental estimates of education production functions.” *The Quarterly Journal of Economics* **114(2)**: pp. 497–532.
 
-Krueger, A. B. (2003): “Economic considerations and class size.” The Economic Journal 113(485): pp. F34–F63.
+Krueger, A. B. (2003): “Economic considerations and class size.” *The Economic Journal* **113(485)**: pp. F34–F63.
 
-Lang, K. (2025): “How Credible is the Credibility Revolution?” Journal of Labor Economics (forthcoming).
+Lang, K. (2025): “How Credible is the Credibility Revolution?” *Journal of Labor Economics* **(forthcoming)**.
 
-Leuven, E., H. Oosterbeek, & M. Rønning (2008): “Quasi-experimental estimates of the effect of class size on achievement in Norway.” The Scandinavian Journal of Economics 110(4): pp. 663–693.
+Leuven, E., H. Oosterbeek, & M. Rønning (2008): “Quasi-experimental estimates of the effect of class size on achievement in Norway.” *The Scandinavian Journal of Economics* **110(4)**: pp. 663–693.
 
-Leuven, E. & M. Ronning (2016): “Classroom grade composition and pupil achievement.” The Economic Journal 126(593): pp. 1164–1192.
+Leuven, E. & M. Ronning (2016): “Classroom grade composition and pupil achievement.” *The Economic Journal* **126(593)**: pp. 1164–1192.
 
-Levin, J. (2001): “For whom the redundant counts: A quartile regression analysis of family influence on scholastic achievement.” Empirical Economics 26(1): pp. 221–246.
+Levin, J. (2001): “For whom the redundant counts: A quartile regression analysis of family influence on scholastic achievement.” *Empirical Economics* **26(1)**: pp. 221–246.
 
-Ley, E. & M. F. Steel (2009): “On the effect of prior assumptions in Bayesian model averaging with applications to growth regression.” Journal of Applied Econometrics 24(4): pp. 651–674.
+Ley, E. & M. F. Steel (2009): “On the effect of prior assumptions in Bayesian model averaging with applications to growth regression.” *Journal of Applied Econometrics* **24(4)**: pp. 651–674.
 
-Li, W. & S. Konstantopoulos (2017): “Does class-size reduction close the achievement gap? Evidence from TIMSS 2011.” School Effectiveness and School Improvement 28(2): pp. 292–313.
+Li, W. & S. Konstantopoulos (2017): “Does class-size reduction close the achievement gap? Evidence from TIMSS 2011.” *School Effectiveness and School Improvement* **28(2)**: pp. 292–313.
 
-Lindahl, M. (2005): “Home versus school learning: A new approach to estimating the effect of class size on achievement.” Scandinavian Journal of Economics 107(2): pp. 375–394.
+Lindahl, M. (2005): “Home versus school learning: A new approach to estimating the effect of class size on achievement.” *Scandinavian Journal of Economics* **107(2)**: pp. 375–394.
 
-Mathur, M. B. (2024): “P-hacking in meta-analyses: A formalization and new meta-analytic methods.” Research Synthesis Methods 15(3): pp. 483–499.
+Mathur, M. B. (2024): “P-hacking in meta-analyses: A formalization and new meta-analytic methods.” *Research Synthesis Methods* **15(3)**: pp. 483–499.
 
-Matousek, J., T. Havranek, & Z. Irsova (2022): “Individual discount rates: a meta-analysis of experimental evidence.” Experimental Economics 25(1): pp. 318–358.
+Matousek, J., T. Havranek, & Z. Irsova (2022): “Individual discount rates: a meta-analysis of experimental evidence.” *Experimental Economics* **25(1)**: pp. 318–358.
 
-McCloskey, D. N. & S. T. Ziliak (2019): “What quantitative methods should we teach to graduate students? A comment on Swann’s Is precise econometrics an illusion?” The Journal of Economic Education 50(4): pp. 356–361.
+McCloskey, D. N. & S. T. Ziliak (2019): “What quantitative methods should we teach to graduate students? A comment on Swann’s Is precise econometrics an illusion?” *The Journal of Economic Education* **50(4)**: pp. 356–361.
 
-McKee, G., K. R. Sims, & S. G. Rivkin (2015): “Disruption, learning, and the heterogeneous benefits of smaller classes.” Empirical Economics 48(3): pp. 1267–1286.
+McKee, G., K. R. Sims, & S. G. Rivkin (2015): “Disruption, learning, and the heterogeneous benefits of smaller classes.” *Empirical Economics* **48(3)**: pp. 1267–1286.
 
-Milesi, C. & A. Gamoran (2006): “Effects of class size and instruction on kindergarten achievement.” Educational Evaluation and Policy Analysis 28(4): pp. 287–313.
+Milesi, C. & A. Gamoran (2006): “Effects of class size and instruction on kindergarten achievement.” *Educational Evaluation and Policy Analysis* **28(4)**: pp. 287–313.
 
-Mishel, L. & R. Rothstein (editors) (2002): The class size debate. Economic Policy Institute, Washington, DC.
+Mishel, L. & R. Rothstein (editors) (2002): *The class size debate*. Economic Policy Institute, Washington, DC.
 
-Nandrup, A. B. (2016): “Do class size effects differ across grades?” Education Economics 24(1): pp. 83–95.
+Nandrup, A. B. (2016): “Do class size effects differ across grades?” *Education Economics* **24(1)**: pp. 83–95.
 
-Neisser, C. (2021): “The Elasticity of Taxable Income: A Meta-Regression Analysis.” Economic Journal 131(640): pp. 3365–3391.
+Neisser, C. (2021): “The Elasticity of Taxable Income: A Meta-Regression Analysis.” *Economic Journal* **131(640)**: pp. 3365–3391.
 
-New York State Senate (2022): “NY State Senate Bill S9460.” Bill text, New York State Senate, United States.
+New York State Senate (2022): “NY State Senate Bill S9460.” *Bill text*, New York State Senate, United States.
 
-Nye, B., L. V. Hedges, & S. Konstantopoulos (2002): “Do low-achieving students benefit more from small classes? Evidence from the Tennessee class size experiment.” Educational Evaluation and Policy Analysis 24(3): pp. 201–217.
+Nye, B., L. V. Hedges, & S. Konstantopoulos (2002): “Do low-achieving students benefit more from small classes? Evidence from the Tennessee class size experiment.” *Educational Evaluation and Policy Analysis* **24(3)**: pp. 201–217.
 
-Pustejovsky, J. E. & E. Tipton (2022): “Meta-analysis with Robust Variance Estimation: Expanding the Range of Working Models.” Prevention Science 23: pp. 425–438.
+Pustejovsky, J. E. & E. Tipton (2022): “Meta-analysis with Robust Variance Estimation: Expanding the Range of Working Models.” *Prevention Science* **23**: pp. 425–438.
 
-Rivkin, S. G., E. A. Hanushek, & J. F. Kain (2005): “Teachers, schools, and academic achievement.” Econometrica 73(2): pp. 417–458.
+Rivkin, S. G., E. A. Hanushek, & J. F. Kain (2005): “Teachers, schools, and academic achievement.” *Econometrica* **73(2)**: pp. 417–458.
 
-Roodman, D., J. G. MacKinnon, M. O. Nielsen, & M. D. Webb (2018): “Fast and wild: Bootstrap inference in Stata using boottest.” Queen’s Economics Department Working Paper 1406, Department of Economics, Queen’s University, Canada: Kingston.
+Roodman, D., J. G. MacKinnon, M. O. Nielsen, & M. D. Webb (2018): “Fast and wild: Bootstrap inference in Stata using boottest.” *Queen’s Economics Department Working Paper 1406*, Department of Economics, Queen’s University, Canada: Kingston.
 
-Sandy, J. & K. Duncan (2010): “Examining the achievement test score gap between urban and suburban students.” Education Economics 18(3): pp. 297–315.
+Sandy, J. & K. Duncan (2010): “Examining the achievement test score gap between urban and suburban students.” *Education Economics* **18(3)**: pp. 297–315.
 
-Scholastic (2012): “Primary Sources 2012: America’s Teachers on the Teaching Profession.” Report, Scholastic Inc. and the Bill and Melinda Gates Foundation, New York, NY: Scholastic.
+Scholastic (2012): “Primary Sources 2012: America’s Teachers on the Teaching Profession.” *Report*, Scholastic Inc. and the Bill and Melinda Gates Foundation, New York, NY: Scholastic.
 
-Shen, T. & S. Konstantopoulos (2017): “Class size effects on reading achievement in Europe: Evidence from PIRLS.” Studies in Educational Evaluation 53(C): pp. 98–114.
+Shen, T. & S. Konstantopoulos (2017): “Class size effects on reading achievement in Europe: Evidence from PIRLS.” *Studies in Educational Evaluation* **53(C)**: pp. 98–114.
 
-Shen, T. & S. Konstantopoulos (2021): “Estimating causal effects of class size in secondary education: Evidence from TIMSS.” Research Papers in Education 36(5): pp. 507–541.
+Shen, T. & S. Konstantopoulos (2021): “Estimating causal effects of class size in secondary education: Evidence from TIMSS.” *Research Papers in Education* **36(5)**: pp. 507–541.
 
-Shen, T. & S. Konstantopoulos (2022): “Are class size and teacher characteristics associated with cognitive outcomes in early grades?” School Effectiveness and School Improvement 33(3): pp. 333–359.
+Shen, T. & S. Konstantopoulos (2022): “Are class size and teacher characteristics associated with cognitive outcomes in early grades?” *School Effectiveness and School Improvement* **33(3)**: pp. 333–359.
 
-Shin, Y. & S. W. Raudenbush (2011): “The causal effect of class size on academic achievement: Multivariate instrumental variable estimators with data missing at random.” Journal of Educational and Behavioral Statistics 36(2): pp. 154–185.
+Shin, Y. & S. W. Raudenbush (2011): “The causal effect of class size on academic achievement: Multivariate instrumental variable estimators with data missing at random.” *Journal of Educational and Behavioral Statistics* **36(2)**: pp. 154–185.
 
-Sims, D. (2008): “A strategic response to class size reduction: Combination classes and student achievement in California.” Journal of Policy Analysis and Management 27(3): pp. 457–478.
+Sims, D. (2008): “A strategic response to class size reduction: Combination classes and student achievement in California.” *Journal of Policy Analysis and Management* **27(3)**: pp. 457–478.
 
-Sims, D. P. (2009): “Crowding Peter to educate Paul: Lessons from a class size reduction externality.” Economics of Education Review 28(4): pp. 465–473.
+Sims, D. P. (2009): “Crowding Peter to educate Paul: Lessons from a class size reduction externality.” *Economics of Education Review* **28(4)**: pp. 465–473.
 
-Stanley, T. D. (2005): “Beyond publication bias.” Journal of Economic Surveys 19(3): pp. 309–345.
+Stanley, T. D. (2005): “Beyond publication bias.” *Journal of Economic Surveys* **19(3)**: pp. 309–345.
 
-Stanley, T. D. & H. Doucouliagos (2014): “Meta-regression approximations to reduce publication selection bias.” Research Synthesis Methods 5(1): pp. 60–78.
+Stanley, T. D. & H. Doucouliagos (2014): “Meta-regression approximations to reduce publication selection bias.” *Research Synthesis Methods* **5(1)**: pp. 60–78.
 
-Stanley, T. D., H. Doucouliagos, J. P. A. Ioannidis, & E. C. Carter (2021): “Detecting publication selection bias through excess statistical significance.” Research Synthesis Methods 12(6): pp. 776–795.
+Stanley, T. D., H. Doucouliagos, J. P. A. Ioannidis, & E. C. Carter (2021): “Detecting publication selection bias through excess statistical significance.” *Research Synthesis Methods* **12(6)**: pp. 776–795.
 
-Steel, M. F. (2020): “Model averaging and its use in economics.” Journal of Economic Literature 58(3): pp. 644–719.
+Steel, M. F. (2020): “Model averaging and its use in economics.” *Journal of Economic Literature* **58(3)**: pp. 644–719.
 
-Surianshah, S. (2022): “Who gains from class size reduction? Another look at Malaysia´s ”Lost Boys Phenomenon” in student achievement.” Jurnal Ekonomi Malaysia 56(3): pp. 119–143.
+Surianshah, S. (2022): “Who gains from class size reduction? Another look at Malaysia´s ”Lost Boys Phenomenon” in student achievement.” *Jurnal Ekonomi Malaysia* **56(3)**: pp. 119–143.
 
-Suryadarma, D., A. Suryahadi, S. Sumarto, & F. H. Rogers (2006): “Improving student performance in public primary schools in developing countries: Evidence from Indonesia.” Education Economics 14(4): pp. 401–429.
+Suryadarma, D., A. Suryahadi, S. Sumarto, & F. H. Rogers (2006): “Improving student performance in public primary schools in developing countries: Evidence from Indonesia.” *Education Economics* **14(4)**: pp. 401–429.
 
-Taylor, L. R. (1961): “Aggregation, variance and the mean.” Nature 189(4766): pp. 732–735.
+Taylor, L. R. (1961): “Aggregation, variance and the mean.” *Nature* **189(4766)**: pp. 732–735.
 
-Ugur, M., S. Awaworyi Churchill, & H. Luong (2020): “What do we know about R&D spillovers and productivity? Meta-analysis evidence on heterogeneity and statistical power.” Research Policy 49: p. 103866.
+Ugur, M., S. Awaworyi Churchill, & H. Luong (2020): “What do we know about R&D spillovers and productivity? Meta-analysis evidence on heterogeneity and statistical power.” *Research Policy* **49**: p. 103866.
 
-Urquiola, M. (2006): “Identifying class size effects in developing countries: Evidence from rural Bolivia.” The Review of Economics and Statistics 88(1): pp. 171–177.
+Urquiola, M. (2006): “Identifying class size effects in developing countries: Evidence from rural Bolivia.” *The Review of Economics and Statistics* **88(1)**: pp. 171–177.
 
-Urquiola, M. & E. Verhoogen (2009): “Class-size caps, sorting, and the regression-discontinuity design.” American Economic Review 99(1): pp. 179–215.
+Urquiola, M. & E. Verhoogen (2009): “Class-size caps, sorting, and the regression-discontinuity design.” *American Economic Review* **99(1)**: pp. 179–215.
 
-Vaag Iversen, J. M. & H. Bonesronning (2013): “Disadvantaged students in the early grades: Will smaller classes help them?” Education Economics 21(4): pp. 305–324.
+Vaag Iversen, J. M. & H. Bonesronning (2013): “Disadvantaged students in the early grades: Will smaller classes help them?” *Education Economics* **21(4)**: pp. 305–324.
 
-Vivalt, E. (2019): “Specification Searching and Significance Inflation Across Time, Methods and Disciplines.” Oxford Bulletin of Economics and Statistics 81(4): pp. 797–816.
+Vivalt, E. (2019): “Specification Searching and Significance Inflation Across Time, Methods and Disciplines.” *Oxford Bulletin of Economics and Statistics* **81(4)**: pp. 797–816.
 
-Whitehurst, G. J. & M. M. Chingos (2011): “Class Size: What Research Says and What it Means for State Policy.” Report 5/2011, Brown Center on Education Policy at Brookings, Washington, DC.
+Whitehurst, G. J. & M. M. Chingos (2011): “Class Size: What Research Says and What it Means for State Policy.” *Report 5/2011*, Brown Center on Education Policy at Brookings, Washington, DC.
 
-Woessmann, L. (2005a): “Educational production in East Asia: The impact of family background and schooling policies on student performance.” German Economic Review 6(3): pp. 331–353.
+Woessmann, L. (2005a): “Educational production in East Asia: The impact of family background and schooling policies on student performance.” *German Economic Review* **6(3)**: pp. 331–353.
 
-Woessmann, L. (2005b): “Educational production in Europe.” Economic Policy 20(43): pp. 446–504.
+Woessmann, L. (2005b): “Educational production in Europe.” *Economic Policy* **20(43)**: pp. 446–504.
 
-Woessmann, L. & M. West (2006): “Class-size effects in school systems around the world: Evidence from between-grade variation in TIMSS.” European Economic Review 50(3): pp. 695–736.
+Woessmann, L. & M. West (2006): “Class-size effects in school systems around the world: Evidence from between-grade variation in TIMSS.” *European Economic Review* **50(3)**: pp. 695–736.
 
-Xue, X., W. R. Reed, & A. Menclova (2020): “Social capital and health: a meta-analysis.” Journal of Health Economics 72(C): p. 102317.
+Xue, X., W. R. Reed, & A. Menclova (2020): “Social capital and health: a meta-analysis.” *Journal of Health Economics* **72(C)**: p. 102317.
 
 ## Appendices
 
@@ -689,7 +689,7 @@ Xue, X., W. R. Reed, & A. Menclova (2020): “Social capital and health: a meta-
 
 FIGURE A1. PRISMA flow diagram
 
-*Notes:* Preferred reporting items for systematic reviews and meta-analyses (PRISMA) is an evidence-based set of items for reporting in systematic reviews and meta-analyses. More details on PRISMA and reporting standards of meta-analysis in general are provided by Havranek et al. (2020). Snowballing: we download the references of the potentially eligible studies identified in step “Screening” and inspect the 100 studies most commonly cited among the 227 studies. If, based on the title and abstract, these commonly cited studies show any promise of containing empirical estimates of the class size effect, we add them to the set of potentially eligible studies. Snowballing yields 32 additional studies. Inclusion criteria: 1) the study must report an estimated empirical relationship between test scores (not, for example, total years of schooling) and class size (not, for example, a dummy variable for a “small class”); 2) the study must report standard errors or other statistics from which standard errors can be computed; 3) the study must report the standard deviations of test scores so that we can convert all estimates to a common metric. For example, we cannot use estimates from Browning & Heinesen (2007), who focus on the effect of class size on years of schooling, and from Etim et al. (2020), who use school-level data. (Note that, in the robustness check focused on partial correlation coefficients, we also include studies that violate criterion 3.) When interactions or nonlinear terms are used, we compute the corresponding marginal effect evaluated at the sample mean and recover the standard error using the delta method. The literature search was terminated on March 1, 2024. The dataset, together with R and Stata codes, is available at meta-analysis.cz/class.
+Notes: Preferred reporting items for systematic reviews and meta-analyses (PRISMA) is an evidence-based set of items for reporting in systematic reviews and meta-analyses. More details on PRISMA and reporting standards of meta-analysis in general are provided by Havranek et al. (2020). Snowballing: we download the references of the potentially eligible studies identified in step “Screening” and inspect the 100 studies most commonly cited among the 227 studies. If, based on the title and abstract, these commonly cited studies show any promise of containing empirical estimates of the class size effect, we add them to the set of potentially eligible studies. Snowballing yields 32 additional studies. Inclusion criteria: 1) the study must report an estimated empirical relationship between test scores (not, for example, total years of schooling) and class size (not, for example, a dummy variable for a “small class”); 2) the study must report standard errors or other statistics from which standard errors can be computed; 3) the study must report the standard deviations of test scores so that we can convert all estimates to a common metric. For example, we cannot use estimates from Browning & Heinesen (2007), who focus on the effect of class size on years of schooling, and from Etim et al. (2020), who use school-level data. (Note that, in the robustness check focused on partial correlation coefficients, we also include studies that violate criterion 3.) When interactions or nonlinear terms are used, we compute the corresponding marginal effect evaluated at the sample mean and recover the standard error using the delta method. The literature search was terminated on March 1, 2024. The dataset, together with R and Stata codes, is available at meta-analysis.cz/class.
 
 ## ENDNOTES
 

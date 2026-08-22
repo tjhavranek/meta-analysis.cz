@@ -17,6 +17,8 @@ import sys
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 sys.path.insert(0, os.path.join(ROOT, "tools"))
 
+from build_paper_page import article_title      # noqa: E402
+
 PAPERS = {p["project"]: p for p in json.load(open(os.path.join(ROOT, "tools", "papers.json")))}
 
 # The two pages built by hand before the toolchain existed live at their own addresses.
@@ -33,7 +35,9 @@ def editions():
             continue
         if not os.path.exists(os.path.join(ROOT, href.strip("/"), "index.html")):
             continue
-        out.append((meta.get("year") or 0, meta.get("title") or project, project, href, meta))
+        # The published title, not the site's label for the literature -- the same rule the
+        # pages themselves follow, so the index cannot disagree with what it links to.
+        out.append((meta.get("year") or 0, article_title(meta), project, href, meta))
     return sorted(out, key=lambda r: (-r[0], r[1].lower()))
 
 
