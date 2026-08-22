@@ -80,7 +80,7 @@ $$ \beta = \widehat{\beta}_1 + 2\widehat{\beta}_2 \bar{x} \qquad \mathrm{SE}(\be
 
 where $\widehat{\beta}_1$ is the estimate of the competition coefficient for the linear term, $\widehat{\beta}_2$ is the estimate of the competition coefficient for the quadratic term, $\bar{x}$ is the sample mean of the competition measure in the study, $\mathrm{SE}(\widehat{\beta}_1)$ is the standard error of the reported coefficient for the linear term, and $\mathrm{SE}(\widehat{\beta}_2)$ is the standard error of the reported coefficient for the quadratic term. The covariance term is omitted from the $\mathrm{SE}(\beta)$ formula because of the unavailability of the original data. The resulting coefficient of bank competition after linearization is subsequently transformed into the PCC in line with equations (4) and (5).
 
-FIGURE 2. Variability in the Estimated Competition Coefficients Across Individual Studies. Notes: The figure shows a box plot of the PCCs of the competition coefficient estimates [the PCCs of the $\beta$ estimates from Equation (1)] reported in individual studies. Full references for the studies included in the meta-analysis are available in the online appendix.
+FIGURE 2 (no artwork). Variability in the Estimated Competition Coefficients Across Individual Studies. Notes: The figure shows a box plot of the PCCs of the competition coefficient estimates [the PCCs of the $\beta$ estimates from Equation (1)] reported in individual studies. Full references for the studies included in the meta-analysis are available in the online appendix.
 
 Figure 2 depicts the within- and between-study dispersion in the partial correlation coefficients of the competition-stability estimates reported in the 31 studies that we examine in this meta-analysis. It is apparent that the literature is highly heterogeneous, both between and within studies. Meta-analysis will help us to formally trace the sources of this heterogeneity.
 
@@ -95,7 +95,7 @@ TABLE 1. Estimates of the Competition Effect for Different Country Groups
 | Developing and transition | 0.001 | −0.022 0.023 | −0.019 | −0.051 0.012 | 194 |
 Notes: The table presents the mean PCCs of the competition coefficient estimates [the PCCs of the $\beta$ estimates from Equation (1)] over all countries and for selected country groups. The confidence intervals around the mean are constructed using standard errors clustered at the study level. In the right-hand part of the table, the estimates are weighted by the inverse of the number of estimates reported per study.
 
-FIGURE 3. Studies Published in Journals Report Slightly Larger Estimates. Notes: The figure shows the histogram of the PCCs of the competition coefficient estimates [the PCCs of the $\beta$ estimates from Equation (1)] reported in individual studies. The solid vertical line denotes the mean of all the PCCs. The dashed lines denote the mean of the median PCCs of the estimates from the studies and the mean of the PCCs of those estimates that are reported in studies published in peer-reviewed journals, respectively.
+FIGURE 3 (no artwork). Studies Published in Journals Report Slightly Larger Estimates. Notes: The figure shows the histogram of the PCCs of the competition coefficient estimates [the PCCs of the $\beta$ estimates from Equation (1)] reported in individual studies. The solid vertical line denotes the mean of all the PCCs. The dashed lines denote the mean of the median PCCs of the estimates from the studies and the mean of the PCCs of those estimates that are reported in studies published in peer-reviewed journals, respectively.
 
 Figure 3 depicts the distribution of the partial correlation coefficients of all the competition coefficient estimates. It appears that the PCCs are symmetrically distributed around zero with a mean of −0.0009, whereas the mean of the study-level medians is also close to zero and equals 0.0099. We also report the mean of the PCCs of the estimates that are reported in studies published in peer-reviewed journals, as opposed to those reported in unpublished manuscripts. In total, 21 of the 31 studies in our sample were published in peer-reviewed journals, yielding 376 estimates of the competition coefficient. The mean for published studies is 0.0116: it appears that journals tend to report slightly larger estimates of the competition coefficient compared to the grey literature.
 
@@ -113,7 +113,7 @@ $$ \mathrm{PCC}_i = \beta_0 + \beta_1 \mathrm{SE}(\mathrm{PCC}_i) + \varepsilon_
 
 where $\mathrm{PCC}_i$ is the partial correlation coefficient of the competition coefficient estimate, $\mathrm{SE}(\mathrm{PCC}_i)$ is the standard error of the partial correlation coefficient, $\beta_0$ is the mean PCC corrected for the potential publication bias, $\beta_1$ measures the extent of publication bias, and $\varepsilon_i$ is a disturbance term. Equation (7) is commonly called the funnel asymmetry test, as it follows from rotating the axes of the funnel plot and inverting the values on the new horizontal axis so that it now shows standard errors instead of precision.^{1}
 
-FIGURE 4. Funnel Plots Do Not Suggest Strong Publication Bias. (A) All estimates and (B) median estimates from studies. Notes: In the absence of publication bias, the funnel should be symmetrical around the most precise estimates of the competition coefficient [the PCC of the $\beta$ estimate from Equation (1)]. The dashed vertical lines denote the mean of the PCCs of all the estimates in (A) and the mean of the study-level medians reported in (B).
+FIGURE 4 (no artwork). Funnel Plots Do Not Suggest Strong Publication Bias. (A) All estimates and (B) median estimates from studies. Notes: In the absence of publication bias, the funnel should be symmetrical around the most precise estimates of the competition coefficient [the PCC of the $\beta$ estimate from Equation (1)]. The dashed vertical lines denote the mean of the PCCs of all the estimates in (A) and the mean of the study-level medians reported in (B).
 
 TABLE 2. Funnel Asymmetry Tests Show Moderate Publication Bias
 
@@ -279,7 +279,7 @@ Figure 5 shows the results of the BMA exercise. The columns in the figure denote
 
 The numerical results of the BMA exercise are reported in Table 5. On the right-hand side of the table we also report the results of OLS estimation with standard errors clustered at the level of individual studies. From this 'frequentist check' we exclude the variables that prove to be irrelevant for the explanation of the variability in the literature (i.e. have PIP lower than 0.5). The OLS regression thus includes 15 variables identified by BMA to help explain the variation in the reported competition effects. Overall, OLS with clustered standard errors yields results consistent with BMA for variables with high inclusion probabilities. The signs of the variables' regression parameters are the same and the size of their parameter estimates is similar as well. Therefore, we can conclude that our results are robust to error-clustering, as BMA by definition does not cluster standard errors in the estimation. Eicher et al. (2011) provide a framework for the identification of the strength of the variables' effect in BMA. The effect of a variable is considered weak if the corresponding PIP is between 0.5 and 0.75, substantial if it is between 0.75 and 0.95, strong if it is between 0.95 and 0.99, and decisive if it exceeds 0.99.
 
-FIGURE 5. Bayesian Model Averaging – Model Inclusion. Notes: The response variable is the PCC of the estimate of the competition coefficient [the PCC of the $\beta$ estimate from Equation (1)]. All regressions are weighted by the inverse of the number of estimates reported per study. Columns denote individual models; the variables are sorted by posterior inclusion probability in descending order. Blue colour (darker in grayscale) = the variable is included and the estimated sign is positive. Red colour (lighter in grayscale) = the variable is included and the estimated sign is negative. No colour = the variable is not included in the model. The horizontal axis measures the cumulative posterior model probabilities. Numerical results of the BMA estimation are reported in Table 5. A detailed description of all the variables is available in Table 4.
+FIGURE 5 (no artwork). Bayesian Model Averaging – Model Inclusion. Notes: The response variable is the PCC of the estimate of the competition coefficient [the PCC of the $\beta$ estimate from Equation (1)]. All regressions are weighted by the inverse of the number of estimates reported per study. Columns denote individual models; the variables are sorted by posterior inclusion probability in descending order. Blue colour (darker in grayscale) = the variable is included and the estimated sign is positive. Red colour (lighter in grayscale) = the variable is included and the estimated sign is negative. No colour = the variable is not included in the model. The horizontal axis measures the cumulative posterior model probabilities. Numerical results of the BMA estimation are reported in Table 5. A detailed description of all the variables is available in Table 4.
 
 The results of our BMA exercise support the notion of the presence of publication bias (the regression coefficient on the standard error is similar to the one presented in Section 4); it seems that positive and insignificant estimates are underreported in the literature, because researchers tend to prefer results that are consistent with the competition-fragility hypothesis. Next, the larger the size of the data sample, the smaller the reported coefficient appears to be. As for country coverage, it seems that the estimates for developed countries tend to be slightly larger than those for non-OECD countries. The use of a quadratic relationship between competition and financial stability is associated with estimates that are on average 0.05 smaller, and the corresponding variable has a decisive posterior inclusion probability. Interestingly, the choice between micro and macro data in specifying the empirical exercise in primary studies does not influence the results significantly.
 
@@ -840,7 +840,7 @@ TABLE A1. Summary of BMA Estimation, Baseline Estimation
 | uniform / 17.5 | | UIP | | Av = 0.9983 |
 *Notes*: In this specification, we employ the priors suggested by Eicher *et al.* (2011) based on predictive performance: the uniform model prior (each model has the same prior probability) and the unit information prior (the prior provides the same amount of information as one observation of data).
 
-FIGURE A1. Model Size and Convergence, Baseline Estimation.
+FIGURE A1 (no artwork). Model Size and Convergence, Baseline Estimation.
 
 TABLE A2. Summary of BMA Estimation, Alternative Priors
 | Mean No. Regressors | Draws | Burnins | Time | No. Models Visited |
@@ -852,7 +852,7 @@ TABLE A2. Summary of BMA Estimation, Alternative Priors
 | random / 17.5 | | BRIC | | Av = 0.9992 |
 *Notes*: The “random” model prior refers to the beta-binomial prior used by Ley and Steel (2009): the prior model probabilities are the same for all possible model sizes. In this specification, we set Zellner’s *g* prior in line with Fernandez *et al.* (2001).
 
-FIGURE A2. Model Size and Convergence, Alternative Priors.
+FIGURE A2 (no artwork). Model Size and Convergence, Alternative Priors.
 
 TABLE A3. Summary of BMA Estimation, Unweighted Regressions
 | Mean No. Regressors | Draws | Burnins | Time | No. Models Visited |
@@ -864,7 +864,7 @@ TABLE A3. Summary of BMA Estimation, Unweighted Regressions
 | uniform / 17.5 | | UIP | | Av = 0.9983 |
 *Notes*: In this specification, we employ the priors suggested by Eicher *et al.* (2011) based on predictive performance: the uniform model prior (each model has the same prior probability) and the unit information prior (the prior provides the same amount of information as one observation of data).
 
-FIGURE A3. Model Size and Convergence, Unweighted Regressions.
+FIGURE A3 (no artwork). Model Size and Convergence, Unweighted Regressions.
 
 ## Supporting Information
 

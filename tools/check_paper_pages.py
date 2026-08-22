@@ -87,7 +87,12 @@ def check(project):
     # Which numbers, not how many: a page carrying Table 2 twice and no Table 3 has the
     # right count and the wrong contents, and the count alone cannot tell them apart.
     for label, want, got in (("table", want_t, got_t), ("figure", want_f, got_f)):
-        missing = want - set(got)
+        # A figure printed once with lettered panels -- "Figure 4. ... (A) ... (B) ..." --
+        # reads out of the text layer as both "4" and "4A". The page carrying 4 has it.
+        seen = set(got) | {n[:-1] for n in got if n[-1:].isalpha()}
+        want = {n for n in want
+                if not (n[-1:].isalpha() and n[:-1] in seen)}
+        missing = want - seen
         if missing:
             fails.append("the paper prints %s %s; the page does not"
                          % (label, ", ".join(sorted(missing))))

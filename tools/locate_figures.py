@@ -61,6 +61,46 @@ def lines_of(words, tol=3.0):
     return out
 
 
+_PAGE_CACHE = {}
+
+
+def ink(pdf, page, band):
+    """How much of a horizontal band of the page is dark. Rendered once per page."""
+    y0, y1 = band
+    if y1 - y0 < 0.02:
+        return 0.0
+    key = (pdf, page)
+    if key not in _PAGE_CACHE:
+        import tempfile
+        import numpy as np
+        from PIL import Image
+        with tempfile.TemporaryDirectory() as tmp:
+            stem = os.path.join(tmp, "p")
+            subprocess.run(["pdftoppm", "-f", str(page), "-l", str(page), "-r", "50",
+                            "-gray", "-png", pdf, stem], check=True, capture_output=True)
+            f = [x for x in os.listdir(tmp) if x.endswith(".png")][0]
+            _PAGE_CACHE[key] = np.asarray(Image.open(os.path.join(tmp, f)).convert("L"))
+    import numpy as np
+    arr = _PAGE_CACHE[key]
+    a, b = int(y0 * arr.shape[0]), int(y1 * arr.shape[0])
+    if b - a < 2:
+        return 0.0
+    dark = arr[a:b] < 200
+    # Body text is dark too, so quantity of ink cannot tell a paragraph from a plot. What
+    # a plot has and a paragraph does not is long unbroken strokes: axes, frames, rules.
+    # Score the band by how many of its rows contain one.
+    w = dark.shape[1]
+    run = np.zeros(dark.shape[0], dtype=int)
+    for row in range(dark.shape[0]):
+        d = dark[row]
+        if not d.any():
+            continue
+        idx = np.flatnonzero(np.diff(np.concatenate(([0], d.view(np.int8), [0]))))
+        if len(idx):
+            run[row] = (idx[1::2] - idx[::2]).max()
+    return float((run > 0.25 * w).sum())
+
+
 def locate(project, wanted=None):
     meta = PAPERS[project]
     pdf = os.path.join(ROOT, project, paper_pdf(project, meta))
@@ -76,9 +116,11 @@ def locate(project, wanted=None):
         # the caption line: starts with Fig/Figure and carries this number
         cap_i = None
         for i, ln in enumerate(lines):
-            head = [t[4] for t in ln[:3]]
-            if head and CAP.match(head[0].rstrip(".")) and any(
-                    t.strip(".:") == num for t in head[1:3]):
+            head = [t[4].strip() for t in ln[:4]]
+            if not head or not CAP.match(head[0].rstrip(".")):
+                continue
+            # "Fig. 1." and "Figure 1:" and "FIGURE 1 —" all name the same figure
+            if any(re.sub(r"[^\w]", "", t) == num for t in head[1:4]):
                 cap_i = i
                 break
         if cap_i is None:
@@ -101,11 +143,32 @@ def locate(project, wanted=None):
                 full = 0
             top = min(t[1] for t in ln)
             j -= 1
-        gap = 6.0
-        y0 = max(0.0, (top - gap) / h)
-        y1 = min(1.0, (cap_top - 2.0) / h)
-        if y1 - y0 < 0.04:                       # nothing between: art sits above the text
-            y0, y1 = max(0.0, y0 - 0.18), y1
+        # The running head is the topmost line of the page with a wide gap below it. A
+        # figure that fills the page otherwise swallows it.
+        included = [ln for ln in lines[:cap_i] if min(t[1] for t in ln) >= top - 0.5]
+        if included and min(t[1] for t in included[0]) < 0.08 * h:
+            # a line in the top eighth of the page, above everything else, is the running
+            # head; the artwork starts below it
+            top = max(t[3] for t in included[0]) + 10.0
+            if len(included) >= 2:
+                top = min(top, min(t[1] for t in included[1]))
+        # Some journals set the caption above the artwork and some below it, so both bands
+        # are measured and the one that actually holds ink wins. Guessing the convention
+        # from the journal would be guessing; counting dark pixels is not.
+        cap_bot = max(t[3] for t in lines[cap_i])
+        above = (max(0.0, (top - 6.0) / h), max(0.0, (cap_top - 2.0) / h))
+        below_stop = h
+        for ln in lines[cap_i + 1:]:
+            width = max(t[2] for t in ln) - min(t[0] for t in ln)
+            if width > 0.55 * measure and len(ln) > 6:
+                below_stop = min(t[1] for t in ln)
+                break
+        below = (min(1.0, (cap_bot + 2.0) / h), min(1.0, (below_stop - 4.0) / h))
+        best = max((above, below), key=lambda b: ink(pdf, page, b))
+        y0, y1 = best
+        if y1 - y0 < 0.03:
+            print("# %s fig%s: no artwork band found on page %d" % (project, num, page))
+            continue
         print("python3 tools/extract_figure.py %s %s %d %.4f %.4f %.4f %.4f"
               % (project, num, page, 0.04, y0, 0.97, y1))
 

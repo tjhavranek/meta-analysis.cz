@@ -110,6 +110,7 @@ Additional Results: https://meta-analysis.cz/competition/additional_results.pdf
 Included Studies: https://meta-analysis.cz/competition/included_studies.pdf
 Data: https://meta-analysis.cz/competition/competition.xlsx
 Code: https://meta-analysis.cz/competition/competition.do
+Full text (HTML): https://meta-analysis.cz/competition/paper/
 
 Abstract: The theoretical literature gives conflicting predictions on how bank competition should affect financial stability, and dozens of researchers have attempted to evaluate the relationship empirically. We collect 598 estimates of the competition-stability nexus reported in 31 studies and analyze the literature using meta-analysis methods. We control for 35 aspects of study design and employ Bayesian model averaging to tackle the resulting model uncertainty. Our findings suggest that the definition of financial stability and bank competition used by researchers influences their results in a systematic way. The choice of data, estimation methodology, and control variables also affects the reported coefficient. We find evidence for moderate publication bias. Taken together, the estimates reported in the literature suggest little interplay between competition and stability, even when corrected for publication bias and potential misspecifications.
 
@@ -162,6 +163,7 @@ Examined Studies: https://meta-analysis.cz/dst/search.html
 Included Studies: https://meta-analysis.cz/dst/studies.xlsx
 Data: https://meta-analysis.cz/dst/dst.xlsx
 Code: https://meta-analysis.cz/dst/dst.do
+Full text (HTML): https://meta-analysis.cz/dst/paper/
 
 Abstract: The original rationale for adopting daylight saving time (DST) was energy savings. Modern research studies, however, question the magnitude and even direction of the effect of DST on electricity consumption. Representing the first meta-analysis in this literature, we collect 162 estimates from 44 studies and find that the mean reported estimate indicates slight electricity savings: 0.34% during the days when DST applies. The literature is not affected by publication bias, but the results vary systematically depending on the exact data and methodology applied. Using Bayesian model averaging we identify the most important factors driving the heterogeneity of the reported effects: data frequency, estimation technique (simulation vs. regression), and, importantly, the latitude of the country considered. Electricity savings are larger for countries farther away from the equator, while subtropical regions consume more energy because of DST.
 
@@ -206,6 +208,7 @@ Citation: Karolina Hozova, Tomas Havranek, Zuzana Irsova (2026), “Do Female Di
 Paper: https://meta-analysis.cz/esg/esg.pdf
 Replication Package: https://meta-analysis.cz/esg/replication.zip
 Data: https://meta-analysis.cz/esg/esg_data.xlsx
+Full text (HTML): https://meta-analysis.cz/esg/paper/
 
 Abstract: Appointing more women to corporate boards is widely expected to also raise firms' environmental, social, and governance (ESG) performance. We provide the first meta-analysis of this relationship, drawing on 533 estimates from 106 studies that measure ESG performance with Bloomberg or LSEG ratings. The average reported effect of a one-percentage-point increase in board gender diversity is about 0.28 ESG points, but much of it does not survive scrutiny. Correcting for publication bias with a battery of linear and non-linear methods lowers the effect to between roughly 0.08 and 0.17 points. A best-practice estimate that also imposes sound study design puts it near 0.12 for most of the world, markedly higher for the Middle East, and essentially zero, if anything slightly negative, for the Southeast Asian markets that dominate the Asian evidence. The differences that remain across studies are systematic, driven mainly by geography and by the choice of estimation method rather than by the ESG-rating provider or the controls a study includes. Board gender diversity may be well worth pursuing on its own merits, but the evidence that it reliably raises ESG scores is weaker than the published record suggests.
 
@@ -268,6 +271,7 @@ Paper: https://meta-analysis.cz/forward/forward2.pdf
 Additional material: https://meta-analysis.cz/forward/appendix.pdf
 Data: https://meta-analysis.cz/forward/forward.dta
 Code: https://meta-analysis.cz/forward/forward.do
+Full text (HTML): https://meta-analysis.cz/forward/paper/
 
 Abstract: A key theoretical prediction in financial economics is that under risk neutrality and rational expectations a currency's forward rates should form unbiased predictors of future spot rates. Yet scores of empirical studies report negative slope coefficients from regressions of spot rates on forward rates. We collect 3,643 estimates from 91 research articles and using recently developed techniques investigate the effect of publication and misspecification biases on the reported results. Correcting for these biases yields slope coefficients in the intervals (0.23,0.45) and (0.95,1.16) for the currencies of developed and emerging countries respectively, which implies that empirical evidence is in line with the theoretical prediction for emerging economies and less puzzling than commonly thought for developed economies. Our results also suggest that the coefficients are systematically influenced by the choice of data, numeraire currency, and estimation method.
 
@@ -280,6 +284,7 @@ Appendix: https://meta-analysis.cz/frisch/appendix.pdf
 Included Studies: https://meta-analysis.cz/frisch/studies.xlsx
 Data: https://meta-analysis.cz/frisch/frisch_data.zip
 Code: https://meta-analysis.cz/frisch/frisch_code.zip
+Full text (HTML): https://meta-analysis.cz/frisch/paper/
 
 Abstract: The intertemporal substitution (Frisch) elasticity of labor supply governs how structural models predict changes in people's willingness to work in response to changes in economic conditions or government fiscal policy. We show that the mean reported estimates of the elasticity are exaggerated due to publication bias. For both the intensive and extensive margins the literature provides over 700 estimates, with a mean of 0.5 in both cases. Correcting for publication bias and emphasizing quasi-experimental evidence reduces the mean intensive margin elasticity to 0.2 and renders the extensive margin elasticity tiny. A total hours elasticity of about 0.25 is the most consistent with empirical evidence. To trace the differences in reported elasticities to differences in estimation context, we collect 23 variables reflecting study design and employ Bayesian and frequentist model averaging to address model uncertainty. On both margins the elasticity is systematically larger for women and workers near retirement, but not enough to support a total hours elasticity above 0.5.
 
@@ -379,6 +384,7 @@ Impulse Responses: https://meta-analysis.cz/lags/IRs.pdf
 Data: https://meta-analysis.cz/lags/lags.zip
 Code: https://meta-analysis.cz/lags/lags.do
 Excluded Studies: https://meta-analysis.cz/lags/excluded.xls
+Full text (HTML): https://meta-analysis.cz/lags/paper/
 
 Abstract: The transmission of monetary policy to the economy is generally thought to have long and variable lags. In this paper we quantitatively review the modern literature on monetary transmission to provide stylized facts on the average lag length and the sources of variability. We collect 67 published studies and examine when prices bottom out after monetary contraction. The average transmission lag is 29 months, and the maximum decrease in prices reaches 0.9% on average after a one-percentage-point hike in the policy rate. Transmission lags are longer in developed economies (25-50 months) than in transition economies (10-20 months). We find that the factor most effective in explaining this heterogeneity is financial development: greater financial development is associated with slower transmission. Our results also suggest that researchers who use monthly data instead of quarterly data report systematically faster transmission.
 
