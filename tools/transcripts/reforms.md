@@ -300,7 +300,7 @@ Campos, N. F. and Horvath, R. (2012). 'Reform redux: Measurement, determinants a
 
 Card, D. and Krueger, A. B. (1995). 'Time-series minimum-wage studies: a meta-analysis', *American Economic Review*, 85(2), pp. 238–243.
 
-Cerovic, B. and Nojkovic, A. (2009). 'Transition and growth: What was taught and what happened', *Economic Annals*, LIV(183), pp. 7–31.
+Cerović, B. and Nojković, A. (2009). 'Transition and growth: What was taught and what happened', *Economic Annals*, LIV(183), pp. 7–31.
 
 Christoffersen, P. and Doyle, P. (2000). 'From inflation to growth', *The Economics of Transition*, 8(2), pp. 421–451.
 

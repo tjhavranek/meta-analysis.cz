@@ -58,6 +58,18 @@ def scout(project, papers):
         if back_page is None and BACK.search(page):
             back_page = i
 
+    # A superscript glued to a cross-reference reads as a caption: "Figure 3^5 presents the
+    # results" comes out of the text layer as "Figure 35". A number far above the rest is
+    # that, not a thirty-fifth figure.
+    def plausible(found):
+        nums = [int(re.sub(r"\D", "", k) or 0) for k in found]
+        if not nums:
+            return found
+        ceiling = max(2, sorted(nums)[len(nums) // 2] + 3)
+        return {k: v for k, v in found.items()
+                if int(re.sub(r"\D", "", k) or 0) <= ceiling}
+    tables, figures = plausible(tables), plausible(figures)
+
     numbered = bool(re.search(r"^\s*1\.\s+[A-Z][a-z]+,?\s", text[text.find("REFERENCES"):] or "", re.M))
     words = len(text.split())
     return {

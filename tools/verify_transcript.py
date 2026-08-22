@@ -40,6 +40,8 @@ def normalise(text):
     text = (text.replace("’", "'").replace("‘", "'")
                 .replace("“", '"').replace("”", '"')
                 .replace("–", "-").replace("—", "-").replace("−", "-")
+                .replace("‐", "-").replace("‑", "-").replace("‒", "-")
+                .replace("\u00ad", "")            # soft hyphen, left inside words by some PDFs
                 .replace("ﬁ", "fi").replace("ﬂ", "fl").replace(" ", " "))
     text = re.sub(r"(\w)-\s*\n\s*(\w)", r"\1\2", text)   # hyphenation across a line break
     return text
@@ -106,6 +108,19 @@ def pdf_prose(pdf, first=None, last=None):
     return "\n".join(keep)
 
 
+def joined_runs(tokens, upto=3):
+    """Every run of two or three consecutive words, concatenated.
+
+    Some text layers break a word apart -- "Anglo-\u00adS axon" for "Anglo-Saxon", "1- day"
+    for "1-day" -- so the paper's own word is present only as two or three fragments in a
+    row. A transcript word that is exactly such a run is the paper's word, not a new one."""
+    out = set()
+    for n in range(2, upto + 1):
+        for i in range(len(tokens) - n + 1):
+            out.add("".join(tokens[i:i + n]))
+    return out
+
+
 def pdf_counts(pdf):
     """How many times the PDF contains each word, taking the best of both extractions.
 
@@ -119,12 +134,14 @@ def pdf_counts(pdf):
     Counts are the element-wise maximum rather than the sum, so a word stays as frequent as
     the paper actually prints it, and a word in neither extraction is still invented."""
     from collections import Counter
-    layout = Counter(words(pdf_prose(pdf)))
-    plain = Counter(words(normalise(subprocess.run(
-        ["pdftotext", pdf, "-"], capture_output=True, text=True, check=True).stdout)))
+    lay_tokens = words(pdf_prose(pdf))
+    plain_tokens = words(normalise(subprocess.run(
+        ["pdftotext", pdf, "-"], capture_output=True, text=True, check=True).stdout))
+    layout, plain = Counter(lay_tokens), Counter(plain_tokens)
     best = Counter()
     for w in set(layout) | set(plain):
         best[w] = max(layout[w], plain[w])
+    best.joined = joined_runs(lay_tokens) | joined_runs(plain_tokens)
     return best
 
 
@@ -146,8 +163,12 @@ def multiset_check(a, b):
     lost = ca - cb
     gained = cb - ca
     glued = set()
+    runs = getattr(ca, "joined", set())
     for w in gained:
         if len(w) < 4:
+            continue
+        if w in runs:                      # the paper's word, broken apart by the text layer
+            glued.add(w)
             continue
         for t in ca:
             if len(t) - len(w) in (1, 2) and (t.endswith(w) or t.startswith(w)):

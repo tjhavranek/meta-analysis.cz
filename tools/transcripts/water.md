@@ -327,6 +327,9 @@ Havranek acknowledges support from Czech Science Foundation grant #15-02411S; Ir
 
 5. On the vertical axis, the explanatory variables are ranked according to their posterior inclusion probabilities from the highest at the top to the lowest at the bottom. The horizontal axis shows the values of cumulative posterior model probability. Numerical results are reported in Table 3. All variables are described in Appendix Table A3. The results are based on the unweighted specification. The robustness check in which the specification is weighted by the number of estimates per study is consistent with the results of the unweighted specification provided in Table 3. Following the detailed reasoning of Zigraiova and Havranek (2016, 28–30), we prefer not to weight our model by the inverse of the standard error because of the many problems with this approach when study-invariant variables are included.
 
+
+6. See http://sdwebx.worldbank.org/climateportal/.
+
 ## References
 
 Agthe, Donald E., and Bruce R. Billings. 1980. “Dynamic Models of Residential Water Demand.” *Water Resources Research* 16 (3): 476–80.
@@ -349,109 +352,109 @@ Bartczak, Anna, Agnieszka Kopanska, and Jan Raczka. 2009. “Residential Water D
 
 Basani, Marcello, Jonathan Isham, and Barry Reilly. 2008. “The Determinants of Water Connection and Water Consumption: Empirical Evidence from a Cambodian Household Survey.” *World Development* 36 (5): 953–68.
 
-Billings, Bruce R. 1982. “Specification of Block Rate Price Variables in Demand Models.” Land Economics 58 (3): 386–94.
+Billings, Bruce R. 1982. “Specification of Block Rate Price Variables in Demand Models.” *Land Economics* 58 (3): 386–94.
 
-Billings, Bruce R., and Donald E. Agthe. 1980. “Price Elasticities for Water: A Case of Increasing Block Rates.” Land Economics 56 (1): 73–84.
+Billings, Bruce R., and Donald E. Agthe. 1980. “Price Elasticities for Water: A Case of Increasing Block Rates.” *Land Economics* 56 (1): 73–84.
 
 Binet, Marie-Estelle, Fabrizio Carlevaro, and Michel Paul. 2012. “Estimation of Residential Water Demand with Imprecise Price Perception.” Economics Working Paper 201233. Rennes, France: Center for Research in Economics and Management (CREM), University of Rennes, University of Caen, and CNRS.
 
-———. 2014. “Estimation of Residential Water Demand with Imperfect Price Perception.” Environmental and Resource Economics 59 (4): 561–81.
+———. 2014. “Estimation of Residential Water Demand with Imperfect Price Perception.” *Environmental and Resource Economics* 59 (4): 561–81.
 
-Carter, David W., and Walter J. Milon. 2005. “Price Knowledge in Household Demand for Utility Services.” Land Economics 81 (2): 265–83.
+Carter, David W., and Walter J. Milon. 2005. “Price Knowledge in Household Demand for Utility Services.” *Land Economics* 81 (2): 265–83.
 
-Cheesman, Jeremy, Jeff Bennett, and Tran Vo Hung Son. 2008. “Estimating Household Water Demand Using Revealed and Contingent Behaviors: Evidence from Vietnam.” Water Resources Research 44 (11): 859–63.
+Cheesman, Jeremy, Jeff Bennett, and Tran Vo Hung Son. 2008. “Estimating Household Water Demand Using Revealed and Contingent Behaviors: Evidence from Vietnam.” *Water Resources Research* 44 (11): 859–63.
 
-Chicoine, David L., Steven C. Deller, and Ganapathi Ramamurthy. 1986. “Water Demand Estimation under Block Rate Pricing: A Simultaneous Equation Approach.” Water Resources Research 22 (6): 859–63.
+Chicoine, David L., Steven C. Deller, and Ganapathi Ramamurthy. 1986. “Water Demand Estimation under Block Rate Pricing: A Simultaneous Equation Approach.” *Water Resources Research* 22 (6): 859–63.
 
 Dalhuisen, Jasper M., Raymond J. G. M. Florax, Henri L. F. M. de Groot, and Peter Nijkamp. 2001. “Price and Income Elasticities of Residential Water Demand: Why Empirical Estimates Differ.” Tinbergen Institute Discussion Paper 01-057/3. Amsterdam: Tinbergen Institute.
 
-———. 2003. “Price and Income Elasticities of Residential Water Demand: A Meta-analysis.” Land Economics 79 (2): 292–308.
+———. 2003. “Price and Income Elasticities of Residential Water Demand: A Meta-analysis.” *Land Economics* 79 (2): 292–308.
 
 Dalmas, Laurent, and Arnaud Reynaud. 2004. “Residential Water Demand in Slovak Republic.” In Econometrics Informing Natural Resources Management: Selected Empirical Analyses, Vol. 11, ed. Phoebe Koundouri, 83. Northampton, MA: Edward Elgar Publishing.
 
-Darr, Peretz, Stephen L. Feldman, and Charles S. Kamen. 1975. “Socioeconomic Factors Affecting Domestic Water Demand in Israel.” Water Resources Research 11 (6): 805–9.
+Darr, Peretz, Stephen L. Feldman, and Charles S. Kamen. 1975. “Socioeconomic Factors Affecting Domestic Water Demand in Israel.” *Water Resources Research* 11 (6): 805–9.
 
-Dharmaratna, Dinusha, and Jaai Parasnis. 2011. “Price Responsiveness of Residential, Industrial and Commercial Water Demand in Sri Lanka.” Asia Pacific Journal of Economics and Business 15 (2): 17.
+Dharmaratna, Dinusha, and Jaai Parasnis. 2011. “Price Responsiveness of Residential, Industrial and Commercial Water Demand in Sri Lanka.” *Asia Pacific Journal of Economics and Business* 15 (2): 17.
 
-Doucouliagos, Hristos, and Tom D. Stanley. 2013. “Are All Economic Facts Greatly Exaggerated? Theory Competition and Selectivity.” Journal of Economic Surveys 27 (2): 316–39.
+Doucouliagos, Hristos, and Tom D. Stanley. 2013. “Are All Economic Facts Greatly Exaggerated? Theory Competition and Selectivity.” *Journal of Economic Surveys* 27 (2): 316–39.
 
-Egger, Matthias, George Davey Smith, Martin Schneider, and Christoph Minder. 1997. “Bias in Meta-analysis Detected by a Simple, Graphical Test.” British Medical Journal 315 (7109): 629–34.
+Egger, Matthias, George Davey Smith, Martin Schneider, and Christoph Minder. 1997. “Bias in Meta-analysis Detected by a Simple, Graphical Test.” *British Medical Journal* 315 (7109): 629–34.
 
-Eicher, Theo S., Chris Papageorgiou, and Adrian E. Raftery. 2011. “Default Priors and Predictive Performance in Bayesian Model Averaging, with Application to Growth Determinants.” Journal of Applied Econometrics 26 (1): 30–55.
+Eicher, Theo S., Chris Papageorgiou, and Adrian E. Raftery. 2011. “Default Priors and Predictive Performance in Bayesian Model Averaging, with Application to Growth Determinants.” *Journal of Applied Econometrics* 26 (1): 30–55.
 
-Espey, Molly, James Espey, and Douglass W. Shaw. 1997. “Price Elasticity of Residential Demand For Water: A Meta-analysis.” Water Resources Research 33 (6): 1369–74.
+Espey, Molly, James Espey, and Douglass W. Shaw. 1997. “Price Elasticity of Residential Demand For Water: A Meta-analysis.” *Water Resources Research* 33 (6): 1369–74.
 
-Feldkircher, Martin, and Stefan Zeugner. 2012. “The Impact of Data Revisions on the Robustness of Growth Determinants: A Note on ‘Determinants of Economic Growth: Will Data Tell?’ ” Journal of Applied Econometrics 27 (4): 686–94.
+Feldkircher, Martin, and Stefan Zeugner. 2012. “The Impact of Data Revisions on the Robustness of Growth Determinants: A Note on ‘Determinants of Economic Growth: Will Data Tell?’ ” *Journal of Applied Econometrics* 27 (4): 686–94.
 
-Fenrick, Steven Andrew, and Lullit Getachew. 2012. “Estimation of the Effects of Price and Billing Frequency on Household Water Demand Using a Panel of Wisconsin Municipalities.” Applied Economics Letters 19 (14): 1373–80.
+Fenrick, Steven Andrew, and Lullit Getachew. 2012. “Estimation of the Effects of Price and Billing Frequency on Household Water Demand Using a Panel of Wisconsin Municipalities.” *Applied Economics Letters* 19 (14): 1373–80.
 
-Foster, Henry S., and Bruce R. Beattie. 1979. “Urban Residential Demand for Water in the United States.” Land Economics 55 (1): 43–58.
+Foster, Henry S., and Bruce R. Beattie. 1979. “Urban Residential Demand for Water in the United States.” *Land Economics* 55 (1): 43–58.
 
-———. 1981. “On the Specification of Price in Studies of Consumer Demand under Block Price Scheduling.” Land Economics 57 (4): 624–29.
+———. 1981. “On the Specification of Price in Studies of Consumer Demand under Block Price Scheduling.” *Land Economics* 57 (4): 624–29.
 
 Frondel, Manuel, and Frank Messner. 2008. “Price Perception and Residential Water Demand: Evidence from a German Household Panel.” Presented at the 16th Annual Conference of the European Association of Environmental and Resource Economists. Gothenburg, June 25–28.
 
-Galbraith, Rex F. 1990. “The Radial Plot: Graphical Assessment of Spread in Ages.” International Journal of Radiation Applications and Instrumentation, Part D: Nuclear Tracks and Radiation Measurements 17 (3): 207–14.
+Galbraith, Rex F. 1990. “The Radial Plot: Graphical Assessment of Spread in Ages.” *International Journal of Radiation Applications and Instrumentation, Part D: Nuclear Tracks and Radiation Measurements* 17 (3): 207–14.
 
-Garcia, Serge, and Arnaud Reynaud. 2004. “Estimating the Benefits of Efficient Water Pricing in France.” Resource and Energy Economics 26 (1): 1–25.
+Garcia, Serge, and Arnaud Reynaud. 2004. “Estimating the Benefits of Efficient Water Pricing in France.” *Resource and Energy Economics* 26 (1): 1–25.
 
-Gaudin, Sylvestre. 2005. “Using Water Bills to Reinforce Price Signals: Evidence from the USA.” Water Science and Technology: Water Supply 5 (6): 163–71.
+Gaudin, Sylvestre. 2005. “Using Water Bills to Reinforce Price Signals: Evidence from the USA.” *Water Science and Technology: Water Supply* 5 (6): 163–71.
 
-———. 2006. “Effect of Price Information on Residential Water Demand.” Applied Economics 38 (4): 383–93.
+———. 2006. “Effect of Price Information on Residential Water Demand.” *Applied Economics* 38 (4): 383–93.
 
-Gaudin, Sylvestre, Ronald C. Griffin, and Robin C. Sickles. 2001. “Demand Specification for Municipal Water Management: Evaluation of the Stone-Geary Form.” Land Economics 77 (3): 399–422.
+Gaudin, Sylvestre, Ronald C. Griffin, and Robin C. Sickles. 2001. “Demand Specification for Municipal Water Management: Evaluation of the Stone-Geary Form.” *Land Economics* 77 (3): 399–422.
 
-Gibbs, Kenneth C. 1978. “Price Variable in Residential Water Demand Models.” Water Resources Research 14 (1): 15–18.
+Gibbs, Kenneth C. 1978. “Price Variable in Residential Water Demand Models.” *Water Resources Research* 14 (1): 15–18.
 
-Griffin, Ronald C., and Chan Chang. 1990. “Pretest Analysis of Water Demand in Thirty Communities.” Water Resources Research 26 (10): 2251–55.
+Griffin, Ronald C., and Chan Chang. 1990. “Pretest Analysis of Water Demand in Thirty Communities.” *Water Resources Research* 26 (10): 2251–55.
 
 Hanemann, Michael W., and Celine Nauges. 2005. “Heterogeneous Responses to Water Conservation Programs: The Case of Residential Users in Los Angeles.” CUDARE Working Paper Series 1026. Berkeley: University of California at Berkeley, Department of Agricultural and Resource Economics and Policy.
 
-Hanke, Steve H., and Lennart de Mare. 1982. “Residential Water Demand: A Pooled, Time Series, Cross Section Study of Malmo Sweden.” Water Resources Bulletin 18 (4): 621–25.
+Hanke, Steve H., and Lennart de Mare. 1982. “Residential Water Demand: A Pooled, Time Series, Cross Section Study of Malmo Sweden.” *Water Resources Bulletin* 18 (4): 621–25.
 
-Hausman, Jerry. 1978. “Specification Tests in Econometrics.” Econometrica 46 (6): 1251–71.
+Hausman, Jerry. 1978. “Specification Tests in Econometrics.” *Econometrica* 46 (6): 1251–71.
 
-Havranek, Tomas. 2010. “Rose Effect and the Euro: Is the Magic Gone?” Review of World Economics 146 (2): 241–61.
+Havranek, Tomas. 2010. “Rose Effect and the Euro: Is the Magic Gone?” *Review of World Economics* 146 (2): 241–61.
 
-———. 2015. “Measuring Intertemporal Substitution: The Importance of Method Choices and Selective Reporting.” Journal of the European Economic Association 13 (6): 1180–1204.
+———. 2015. “Measuring Intertemporal Substitution: The Importance of Method Choices and Selective Reporting.” *Journal of the European Economic Association* 13 (6): 1180–1204.
 
-Havranek, Tomas, Dominik Herman, and Zuzana Irsova. 2018. “Does Daylight Saving Save Electricity? A Meta-Analysis.” Energy Journal 39 (2): 35–61.
+Havranek, Tomas, Dominik Herman, and Zuzana Irsova. 2018. “Does Daylight Saving Save Electricity? A Meta-Analysis.” *Energy Journal* 39 (2): 35–61.
 
-Havranek, Tomas, Roman Horvath, Zuzana Irsova, and Marek Rusnak. 2015. “Cross-Country Heterogeneity in Intertemporal Substitution.” Journal of International Economics 96 (1): 100–18.
+Havranek, Tomas, Roman Horvath, Zuzana Irsova, and Marek Rusnak. 2015. “Cross-Country Heterogeneity in Intertemporal Substitution.” *Journal of International Economics* 96 (1): 100–18.
 
-Havranek, Tomas, Roman Horvath, and Ayaz Zeynalov. 2016. “Natural Resources and Economic Growth: A Meta-analysis.” World Development 88: 134–51.
+Havranek, Tomas, Roman Horvath, and Ayaz Zeynalov. 2016. “Natural Resources and Economic Growth: A Meta-analysis.” *World Development* 88: 134–51.
 
-Havranek, Tomas, and Zuzana Irsova. 2011. “Estimating Vertical Spillovers from FDI: Why Results Vary and What the True Effect Is.” Journal of International Economics 85 (2): 234–44.
+Havranek, Tomas, and Zuzana Irsova. 2011. “Estimating Vertical Spillovers from FDI: Why Results Vary and What the True Effect Is.” *Journal of International Economics* 85 (2): 234–44.
 
-———. 2012. “Survey Article: Publication Bias in the Literature on Foreign Direct Investment Spillovers.” Journal of Development Studies 48 (10): 1375–96.
+———. 2012. “Survey Article: Publication Bias in the Literature on Foreign Direct Investment Spillovers.” *Journal of Development Studies* 48 (10): 1375–96.
 
-———. 2017. “Do Borders Really Slash Trade? A Meta-analysis.” IMF Economic Review 65 (2): 365–96.
+———. 2017. “Do Borders Really Slash Trade? A Meta-analysis.” *IMF Economic Review* 65 (2): 365–96.
 
-Havranek, Tomas, Zuzana Irsova, and Karel Janda. 2012. “Demand for Gasoline Is More Price-Inelastic than Commonly Thought.” Energy Economics 34 (1): 201–7.
+Havranek, Tomas, Zuzana Irsova, and Karel Janda. 2012. “Demand for Gasoline Is More Price-Inelastic than Commonly Thought.” *Energy Economics* 34 (1): 201–7.
 
-Havranek, Tomas, Zuzana Irsova, Karel Janda, and David Zilberman. 2015. “Selective Reporting and the Social Cost of Carbon.” Energy Economics 51: 394–406.
+Havranek, Tomas, Zuzana Irsova, Karel Janda, and David Zilberman. 2015. “Selective Reporting and the Social Cost of Carbon.” *Energy Economics* 51: 394–406.
 
-Havranek, Tomas, and Ondrej Kokes. 2015. “Income Elasticity of Gasoline Demand: A Meta-analysis.” Energy Economics 47: 77–86.
+Havranek, Tomas, and Ondrej Kokes. 2015. “Income Elasticity of Gasoline Demand: A Meta-analysis.” *Energy Economics* 47: 77–86.
 
-Havranek, Tomas, Marek Rusnak, and Anna Sokolova. 2017. “Habit Formation in Consumption: A Meta-analysis.” European Economic Review 95: 142–67.
+Havranek, Tomas, Marek Rusnak, and Anna Sokolova. 2017. “Habit Formation in Consumption: A Meta-analysis.” *European Economic Review* 95: 142–67.
 
-Hejazi, Mohamad, James Edmonds, Leon Clarke, Page Kyle, Evan Davies, Vaibhav Chaturvedi, Marshall Wise, Pralit Patel, Jiyong Eom, Katherine Calvin, et al. 2014. “Long-Term Global Water Projections Using Six Socioeconomic Scenarios in an Integrated Assessment Modeling Framework.” Technological Forecasting and Social Change 81: 205–26.
+Hejazi, Mohamad, James Edmonds, Leon Clarke, Page Kyle, Evan Davies, Vaibhav Chaturvedi, Marshall Wise, Pralit Patel, Jiyong Eom, Katherine Calvin, et al. 2014. “Long-Term Global Water Projections Using Six Socioeconomic Scenarios in an Integrated Assessment Modeling Framework.” *Technological Forecasting and Social Change* 81: 205–26.
 
 Hewitt, Julie A. 1993. “Watering Households: The Two-Error Discrete-Continuous Choice Model of Residential Water Demand.” Dissertation, University of California, Berkeley.
 
-Hewitt, Julie A., and Michael W. Hanemann. 1995. “A Discrete/Continuous Choice Approach to Residential Water Demand under Block Rate Pricing.” Land Economics 71 (2): 173–92.
+Hewitt, Julie A., and Michael W. Hanemann. 1995. “A Discrete/Continuous Choice Approach to Residential Water Demand under Block Rate Pricing.” *Land Economics* 71 (2): 173–92.
 
-Hoffmann, Mark, Andrew Worthington, and Helen Higgs. 2006. “Urban Water Demand with Fixed Volumetric Charging in a Large Municipality: The Case of Brisbane, Australia.” Australian Journal of Agricultural and Resource Economics 50 (3): 347–59.
+Hoffmann, Mark, Andrew Worthington, and Helen Higgs. 2006. “Urban Water Demand with Fixed Volumetric Charging in a Large Municipality: The Case of Brisbane, Australia.” *Australian Journal of Agricultural and Resource Economics* 50 (3): 347–59.
 
-Hoglund, Lena. 1999. “Household Demand for Water in Sweden with Implications of a Potential Tax on Water Use.” Water Resources Research 35 (12): 3853–63.
+Hoglund, Lena. 1999. “Household Demand for Water in Sweden with Implications of a Potential Tax on Water Use.” *Water Resources Research* 35 (12): 3853–63.
 
-Horn, Theara. 2011. “Welfare Effects of Access to Water Service in Cambodia.” Economics Bulletin 31 (3): 2075–89.
+Horn, Theara. 2011. “Welfare Effects of Access to Water Service in Cambodia.” *Economics Bulletin* 31 (3): 2075–89.
 
-Howe, Charles W., and F. P. Linaweaver. 1967. “The Impact of Price on Residential Water Demand and Its Relation to System Design and Price Structure.” Water Resources Research 3 (1): 13–32.
+Howe, Charles W., and F. P. Linaweaver. 1967. “The Impact of Price on Residential Water Demand and Its Relation to System Design and Price Structure.” *Water Resources Research* 3 (1): 13–32.
 
-Hussain, Intizar, Sunil Thrikawala, and Randolph Barker. 2002. “Economic Analysis of Residential, Commercial, and Industrial Uses of Water in Sri Lanka.” Water International 27 (2): 183–93.
+Hussain, Intizar, Sunil Thrikawala, and Randolph Barker. 2002. “Economic Analysis of Residential, Commercial, and Industrial Uses of Water in Sri Lanka.” *Water International* 27 (2): 183–93.
 
-Irsova, Zuzana, and Tomas Havranek. 2013. “Determinants of Horizontal Spillovers from FDI: Evidence from a Large Meta-analysis.” World Development 42: 1–15.
+Irsova, Zuzana, and Tomas Havranek. 2013. “Determinants of Horizontal Spillovers from FDI: Evidence from a Large Meta-analysis.” *World Development* 42: 1–15.
 
 Ito, Koichiro. 2013. “How Do Consumers Respond to Nonlinear Pricing? Evidence from Household Water Demand.” Working paper. Stanford, CA: Stanford University.
 
@@ -459,92 +462,92 @@ Jeffreys, Harold. 1961. Theory of Probability, 3rd ed. Oxford Classic Texts in t
 
 Jia, Lili, and Chao Bao. 2014. “Residential Fresh Water Demand in China: A Panel Data Analysis.” ZEF Working Paper 126. Bonn, Germany: Center for Development Research, University of Bonn.
 
-Jones, Vaughan C., and John R. Morris. 1984. “Instrumental Price Estimates and Residential Water Demand.” Water Resources Research 20 (2): 197–202.
+Jones, Vaughan C., and John R. Morris. 1984. “Instrumental Price Estimates and Residential Water Demand.” *Water Resources Research* 20 (2): 197–202.
 
-Lyman, Ashley R. 1992. “Peak and Off-Peak Residential Water Demand.” Water Resources Research 28 (9): 2159–67.
+Lyman, Ashley R. 1992. “Peak and Off-Peak Residential Water Demand.” *Water Resources Research* 28 (9): 2159–67.
 
-Mansur, Erin T., and Sheila M. Olmstead. 2012. “The Value of Scarce Water: Measuring the Inefficiency of Municipal Regulations.” Journal of Urban Economics 71 (3): 332–46.
+Mansur, Erin T., and Sheila M. Olmstead. 2012. “The Value of Scarce Water: Measuring the Inefficiency of Municipal Regulations.” *Journal of Urban Economics* 71 (3): 332–46.
 
-Miaou, Shaw-Pin. 1990. “A Class of Time-Series Urban Water Demand Models with Nonlinear Climatic Effects.” Water Resources Research 26 (2): 169–78.
+Miaou, Shaw-Pin. 1990. “A Class of Time-Series Urban Water Demand Models with Nonlinear Climatic Effects.” *Water Resources Research* 26 (2): 169–78.
 
-Miyawaki, Koji, Yasuhiro Omori, and Akira Hibiki. 2011. “Panel Data Analysis of Japanese Residential Water Demand Using a Discrete/Continuous Choice Approach.” Japanese Economic Review 62 (3): 365–86.
+Miyawaki, Koji, Yasuhiro Omori, and Akira Hibiki. 2011. “Panel Data Analysis of Japanese Residential Water Demand Using a Discrete/Continuous Choice Approach.” *Japanese Economic Review* 62 (3): 365–86.
 
-Moncur, James E. T. 1987. “Urban Water Pricing and Drought Management.” Water Resources Research 23 (3): 393–98.
+Moncur, James E. T. 1987. “Urban Water Pricing and Drought Management.” *Water Resources Research* 23 (3): 393–98.
 
-Monteiro, Henrique, and Catarina Roseta-Palma. 2011. “Pricing for Scarcity? An Efficiency Analysis of Increasing Block Tariffs.” Water Resources Research 47 (6): W06510, doi: 10.1029/2010WR009200.
+Monteiro, Henrique, and Catarina Roseta-Palma. 2011. “Pricing for Scarcity? An Efficiency Analysis of Increasing Block Tariffs.” *Water Resources Research* 47 (6): W06510, doi: 10.1029/2010WR009200.
 
-Musolesi, Antonio, and Mario Nosvelli. 2007. “Dynamics of Residential Water Consumption in a Panel of Italian Municipalities.” Applied Economics Letters 14 (6): 441–44.
+Musolesi, Antonio, and Mario Nosvelli. 2007. “Dynamics of Residential Water Consumption in a Panel of Italian Municipalities.” *Applied Economics Letters* 14 (6): 441–44.
 
-Mylopoulos, Yannis A., Alexandros K. Mentes, and Ioannis Theodossiou. 2004. “Modeling Residential Water Demand Using Household Data: A Cubic Approach.” Water International 29 (1): 105–13.
+Mylopoulos, Yannis A., Alexandros K. Mentes, and Ioannis Theodossiou. 2004. “Modeling Residential Water Demand Using Household Data: A Cubic Approach.” *Water International* 29 (1): 105–13.
 
-Nauges, Celine, and Jon Strand. 2007. “Estimation of Non-tap Water Demand in Central American Cities.” Resource and Energy Economics 29 (3): 165–82.
+Nauges, Celine, and Jon Strand. 2007. “Estimation of Non-tap Water Demand in Central American Cities.” *Resource and Energy Economics* 29 (3): 165–82.
 
-Nauges, Celine, and Alban Thomas. 2000. “Privately Operated Water Utilities, Municipal Price Negotiation, and Estimation of Residential Water Demand: The Case of France.” Land Economics 76 (1): 68–85.
+Nauges, Celine, and Alban Thomas. 2000. “Privately Operated Water Utilities, Municipal Price Negotiation, and Estimation of Residential Water Demand: The Case of France.” *Land Economics* 76 (1): 68–85.
 
-———. 2003. “Long-Run Study of Residential Water Consumption.” Environmental and Resource Economics 26 (1): 25–43.
+———. 2003. “Long-Run Study of Residential Water Consumption.” *Environmental and Resource Economics* 26 (1): 25–43.
 
-Nauges, Celine, and Caroline van den Berg. 2009. “Demand for Piped and Non-piped Water Supply Services: Evidence from Southwest Sri Lanka.” Environmental and Resource Economics 42 (4): 535–49.
+Nauges, Celine, and Caroline van den Berg. 2009. “Demand for Piped and Non-piped Water Supply Services: Evidence from Southwest Sri Lanka.” *Environmental and Resource Economics* 42 (4): 535–49.
 
-Nieswiadomy, Michael L. 1992. “Estimating Urban Residential Water Demand: Effects of Price Structure, Conservation, and Education.” Water Resources Research 28 (3): 609–15.
+Nieswiadomy, Michael L. 1992. “Estimating Urban Residential Water Demand: Effects of Price Structure, Conservation, and Education.” *Water Resources Research* 28 (3): 609–15.
 
-Nieswiadomy, Michael L., and Steven L. Cobb. 1993. “Impact of Pricing Structure Selectivity on Urban Water Demand.” Contemporary Economic Policy 11 (3): 101–13.
+Nieswiadomy, Michael L., and Steven L. Cobb. 1993. “Impact of Pricing Structure Selectivity on Urban Water Demand.” *Contemporary Economic Policy* 11 (3): 101–13.
 
-Nieswiadomy, Michael L., and David J. Molina. 1989. “Comparing Residential Water Estimates under Decreasing and Increasing Block Rates Using Household Data.” Land Economics 65 (3): 280–89.
+Nieswiadomy, Michael L., and David J. Molina. 1989. “Comparing Residential Water Estimates under Decreasing and Increasing Block Rates Using Household Data.” *Land Economics* 65 (3): 280–89.
 
-———. 1991. “A Note on Price Perception in Water Demand Models.” Land Economics 67 (3): 352–59.
+———. 1991. “A Note on Price Perception in Water Demand Models.” *Land Economics* 67 (3): 352–59.
 
-Olmstead, Sheila M. 2009. “Reduced-Form versus Structural Models of Water Demand under Nonlinear Prices.” Journal of Business and Economic Statistics 27 (1): 84–94.
+Olmstead, Sheila M. 2009. “Reduced-Form versus Structural Models of Water Demand under Nonlinear Prices.” *Journal of Business and Economic Statistics* 27 (1): 84–94.
 
-Olmstead, Sheila M., Michael W. Hanemann, and Robert N. Stavins. 2007. “Water Demand under Alternative Price Structures.” Journal of Environmental Economics and Management 54 (2): 181–98.
+Olmstead, Sheila M., Michael W. Hanemann, and Robert N. Stavins. 2007. “Water Demand under Alternative Price Structures.” *Journal of Environmental Economics and Management* 54 (2): 181–98.
 
-Piper, Steven. 2003. “Impact of Water Quality on Municipal Water Price and Residential Water Demand and Implications for Water Supply Benefits.” Water Resources Research 39 (5): 1127, doi:10.1029/2002WR001592, 5.
+Piper, Steven. 2003. “Impact of Water Quality on Municipal Water Price and Residential Water Demand and Implications for Water Supply Benefits.” *Water Resources Research* 39 (5): 1127, doi:10.1029/2002WR001592, 5.
 
-Polycarpou, Alexandros, and Theodoros Zachariadis. 2013. “An Econometric Analysis of Residential Water Demand in Cyprus.” Water Resources Management 27 (1): 309–17.
+Polycarpou, Alexandros, and Theodoros Zachariadis. 2013. “An Econometric Analysis of Residential Water Demand in Cyprus.” *Water Resources Management* 27 (1): 309–17.
 
-Reynaud, Arnaud, Steven Renzetti, and Michel Villeneuve. 2005. “Residential Water Demand with Endogenous Pricing: The Canadian Case.” Water Resources Research 41 (11): W11409, doi:10.1029/2005WR004195.
+Reynaud, Arnaud, Steven Renzetti, and Michel Villeneuve. 2005. “Residential Water Demand with Endogenous Pricing: The Canadian Case.” *Water Resources Research* 41 (11): W11409, doi:10.1029/2005WR004195.
 
 Rietveld, Piet, Jan Rouwendal, and Bert Zwart. 1997. “Estimating Water Demand in Urban Indonesia: A Maximum Likelihood Approach to Block Rate Pricing Data.” Discussion Paper 97-072/3. Amsterdam: Tinbergen Institute.
 
 Saleth, Maria R., and Ariel Dinar. 1997. “Satisfying Urban Thirst. Water Supply Augmentation and Pricing Policy in Hyderabad City, India.” World Bank Technical Paper 395. Washington, DC: World Bank.
 
-Schefter, John E., and Elizabeth L. David. 1985. “Estimating Residential Water Demand under Multi-part Tariffs Using Aggregate Data.” Land Economics 61 (3): 272–80.
+Schefter, John E., and Elizabeth L. David. 1985. “Estimating Residential Water Demand under Multi-part Tariffs Using Aggregate Data.” *Land Economics* 61 (3): 272–80.
 
-Schleich, Joachim, and Thomas Hillenbrand. 2009. “Determinants of Residential Water Demand in Germany.” Ecological Economics 68 (6): 1756–69.
+Schleich, Joachim, and Thomas Hillenbrand. 2009. “Determinants of Residential Water Demand in Germany.” *Ecological Economics* 68 (6): 1756–69.
 
-Sebri, Maamar. 2013. “Intergovernorate Disparities in Residential Water Demand in Tunisia: A Discrete/Continuous Choice Approach.” Journal of Environmental Planning and Management 56 (8): 1192–1211.
+Sebri, Maamar. 2013. “Intergovernorate Disparities in Residential Water Demand in Tunisia: A Discrete/Continuous Choice Approach.” *Journal of Environmental Planning and Management* 56 (8): 1192–1211.
 
-Sebri, Maamar. 2014. “A Meta-analysis of Residential Water Demand Studies.” Environment, Development, and Sustainability 16 (3): 499–520.
+Sebri, Maamar. 2014. “A Meta-analysis of Residential Water Demand Studies.” *Environment, Development, and Sustainability* 16 (3): 499–520.
 
-Shin, Jeong-Shik. 1985. “Perception of Price When Price Information Is Costly: Evidence from Residential Electricity Demand.” Review of Economics and Statistics 67 (4): 591–98.
+Shin, Jeong-Shik. 1985. “Perception of Price When Price Information Is Costly: Evidence from Residential Electricity Demand.” *Review of Economics and Statistics* 67 (4): 591–98.
 
-Stanley, Tom D. 2005. “Beyond Publication Bias.” Journal of Economic Surveys 19 (3): 309–45.
+Stanley, Tom D. 2005. “Beyond Publication Bias.” *Journal of Economic Surveys* 19 (3): 309–45.
 
 Statzu, Vania, and Elisabetta Strazzera. 2009. “Water Demand for Residential Uses in a Mediterranean Region: Econometric Analysis and Policy Implications.” Working paper. Cagliari, Italy: University of Cagliari.
 
-Strand, Jon, and Ian Walker. 2005. “Water Markets and Demand in Central American Cities.” Environment and Development Economics 10 (3): 313–35.
+Strand, Jon, and Ian Walker. 2005. “Water Markets and Demand in Central American Cities.” *Environment and Development Economics* 10 (3): 313–35.
 
-Strong, Aaron, and Kerry V. Smith. 2010. “Reconsidering the Economics of Demand Analysis with Kinked Budget Constraints.” Land Economics 86 (1): 173–90.
+Strong, Aaron, and Kerry V. Smith. 2010. “Reconsidering the Economics of Demand Analysis with Kinked Budget Constraints.” *Land Economics* 86 (1): 173–90.
 
-Tabieh, Mohammad, Amer Salman, Emad Al-Karablieh, Hussein Al-Qudah, and Hazem Al-Khatib. 2012. “The Residential Water Demand Function in Amman-Zarka Basin in Jordan.” Wulfenia Journal 19 (11): 324–33.
+Tabieh, Mohammad, Amer Salman, Emad Al-Karablieh, Hussein Al-Qudah, and Hazem Al-Khatib. 2012. “The Residential Water Demand Function in Amman-Zarka Basin in Jordan.” *Wulfenia Journal* 19 (11): 324–33.
 
-Taylor, Garth R., John R. McKean, and Robert A. Young. 2004. “Alternate Price Specifications for Estimating Residential Water Demand with Fixed Fees.” Land Economics 80 (3): 463–75.
+Taylor, Garth R., John R. McKean, and Robert A. Young. 2004. “Alternate Price Specifications for Estimating Residential Water Demand with Fixed Fees.” *Land Economics* 80 (3): 463–75.
 
-Wichman, Casey J. 2014. “Perceived Price in Residential Water Demand: Evidence from a Natural Experiment.” Journal of Economic Behavior and Organization 107 (Part A): 308–23.
+Wichman, Casey J. 2014. “Perceived Price in Residential Water Demand: Evidence from a Natural Experiment.” *Journal of Economic Behavior and Organization* 107 (Part A): 308–23.
 
-Wichman, Casey J., Laura O. Taylor, and Roger H. von Haefen. 2016. “Conservation Policies: Who Responds to Price and Who Responds to Prescription?” Journal of Environmental Economics and Management 79: 114–34.
+Wichman, Casey J., Laura O. Taylor, and Roger H. von Haefen. 2016. “Conservation Policies: Who Responds to Price and Who Responds to Prescription?” *Journal of Environmental Economics and Management* 79: 114–34.
 
-Williams, Martin. 1985. “Estimating Urban Residential Demand for Water under Alternative Price Measures.” Journal of Urban Economics 18 (2): 213–25.
+Williams, Martin. 1985. “Estimating Urban Residential Demand for Water under Alternative Price Measures.” *Journal of Urban Economics* 18 (2): 213–25.
 
-Williams, Martin, and Byung Suh. 1986. “The Demand for Urban Water by Customer Class.” Applied Economics 18 (12): 1275–89.
+Williams, Martin, and Byung Suh. 1986. “The Demand for Urban Water by Customer Class.” *Applied Economics* 18 (12): 1275–89.
 
-Wong, S. T. 1972. “A Model on Municipal Water Demand: A Case Study of Northeastern Illinois.” Land Economics 48 (1): 34–44.
+Wong, S. T. 1972. “A Model on Municipal Water Demand: A Case Study of Northeastern Illinois.” *Land Economics* 48 (1): 34–44.
 
 World Economic Forum. 2015. Global Risks 2015 Report. Technical report. Geneva: World Economic Forum.
 
-Yoo, Seung-Hoon. 2007. “Estimation of Household Tap Water Demand Function with Correction for Sample Selection Bias.” Applied Economics Letters 14 (14): 1079–82.
+Yoo, Seung-Hoon. 2007. “Estimation of Household Tap Water Demand Function with Correction for Sample Selection Bias.” *Applied Economics Letters* 14 (14): 1079–82.
 
 Younes, Ben Zaied, and Mohamed Salah Matoussi. 2011. “Residential Water Demand: A Panel Cointegration Approach and Application to Tunisia.” ERF Working Paper 656. Cairo, Egypt: Economic Research Forum.
 
-Zapata, Oscar. 2015. “More Water Please, It’s Getting Hot! The Effect of Climate on Residential Water Demand.” Water Economics and Policy 1 (3): 1550007.
+Zapata, Oscar. 2015. “More Water Please, It’s Getting Hot! The Effect of Climate on Residential Water Demand.” *Water Economics and Policy* 1 (3): 1550007.
 
-Zigraiova, Diana, and Tomas Havranek. 2016. “Bank Competition and Financial Stability: Much Ado about Nothing?” Journal of Economic Surveys 30 (5): 944–81.
+Zigraiova, Diana, and Tomas Havranek. 2016. “Bank Competition and Financial Stability: Much Ado about Nothing?” *Journal of Economic Surveys* 30 (5): 944–81.
