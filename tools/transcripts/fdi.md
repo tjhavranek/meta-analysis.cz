@@ -180,36 +180,68 @@ This work was supported by the Grantová Agentura České Republiky [19-26812X].
 
 ## REFERENCES
 
-1. Ayyagari, M., and R. Kosova. 2010. “Does FDI Facilitate Domestic Entry? Evidence from the Czech Republic.” *Review of International Economics* 18 (1): 14–29.
-2. Cuaresma, J. C., J. Fidrmuc, and M. Hake. 2014. “Demand and Supply Drivers of Foreign Currency Loans in CEECs: A Meta-Analysis.” *Economic Systems* 38 (1): 26–42.
-3. Damijan, J., M. Knell, B. Majcen, and M. Rojec 2003. “Technology Transfer through FDI in Top-10 Transition Countries: How Important are Direct Effects, Horizontal and Vertical Spillovers?” *William Davidson Institute Working Papers Series 549*. William Davidson Institute at the University of Michigan.
-4. Damijan, J., M. Rojec, B. Majcen, and M. Knell. 2013. “Impact of Firm Heterogeneity on Direct and Spillover Effects of FDI: Micro-Evidence from Ten Transition Countries.” *Journal of Comparative Economics* 41 (3): 895–922.
-5. Feldkircher, M., and S. Zeugner. 2012. “The Impact of Data Revisions on the Robustness of Growth Determinants – A Note on Determinants of Economic Growth: Will Data Tell?” *Journal of Applied Econometrics* 27 (4): 686–694.
-6. Fidrmuc, J., and I. Korhonen. 2006. “Meta-Analysis of the Business Cycle Correlation between the Euro Area and the CEECs.” *Journal of Comparative Economics* 34 (3): 518–537.
-7. Gersl, A. 2008. “Productivity, Export Performance, and Financing of the Czech Corporate Sector: The Effects of Foreign Direct Investment.” *Czech Journal of Economics and Finance* 58: 232–247.
-8. Gersl, A., I. Rubene, and T. Zumer (2007): “Foreign Direct Investment and Productivity Spillovers: Updated Evidence from Central and Eastern Europe.” *CNB Working Papers* 2007/8. Czech National Bank, Research Department.
-9. Havranek, T., D. Herman, and Z. Irsova. 2018a. “Does Daylight Saving Save Electricity? A Meta-Analysis.” *The Energy Journal* 39 (2): 35–61.
-10. Havranek, T., R. Horvath, Z. Irsova, and M. Rusnak. 2015. “Cross-Country Heterogeneity in Intertemporal Substitution.” *Journal of International Economics* 96 (1): 100–118.
-11. Havranek, T., and Z. Irsova. 2011. “Estimating Vertical Spillovers from FDI: Why Results Vary and What the True Effect Is.” *Journal of International Economics* 85 (2): 234–244.
-12. Havranek, T., and Z. Irsova. 2012. “Survey Article: Publication Bias in the Literature on Foreign Direct Investment Spillovers.” *Journal of Development Studies* 48 (10): 1375–1396.
-13. Havranek, T., and Z. Irsova. 2017. “Do Borders Really Slash Trade? A Meta-Analysis.” *IMF Economic Review* 65 (2): 365–396.
-14. Havranek, T., Z. Irsova, and K. Janda. 2012. “Demand for Gasoline Is More Price-Inelastic than Commonly Thought.” *Energy Economics* 34 (1): 201–207.
-15. Havranek, T., Z. Irsova, and T. Vlach. 2018b. “Measuring the Income Elasticity of Water Demand: The Importance of Publication and Endogeneity Biases.” *Land Economics* 94 (2): 259–283.
-16. Havranek, T., Z. Irsova, and O. Zeynalova. 2018c. “Tuition Fees and University Enrollment: A Meta-Regression Analysis.” *Oxford Bulletin of Economics and Statistics* 80 (6): 1145–1184.
-17. Havranek, T., and O. Kokes. 2015. “Income Elasticity of Gasoline Demand: A Meta-Analysis.” *Energy Economics* 47 (1): 77–86.
-18. Havranek, T., M. Rusnak, and A. Sokolova. 2017. “Habit Formation in Consumption: A Meta-Analysis.” *European Economic Review* 95 (1): 142–167.
-19. Ioannidis, J., C. Doucouliagos, and T. Stanley. 2017. “The Power of Bias in Economics Research.” *The Economic Journal* 127: F236–F265.
-20. Irsova, Z., and T. Havranek. 2013. “Determinants of Horizontal Spillovers from FDI: Evidence from a Large Meta-Analysis.” *World Development* 42 (C): 1–15.
-21. Iwasaki, I., and E. Kočenda. 2017. “Are Some Owners Better than Others in Czech Privatized Firms? Even Meta-Analysis Can’t Make Us Perfectly Sure.” *Economic Systems* 41 (4): 537–568.
-22. Iwasaki, I., and M. Tokunaga. 2016. “Technology Transfer and Spillovers from FDI in Transition Economies: A Meta-Analysis.” *Journal of Comparative Economics* 44 (4): 1086–1114.
-23. Kosova, R. 2010. “Do Foreign Firms Crowd Out Domestic Firms? Evidence from the Czech Republic.” *Review of Economics and Statistics* 92 (4): 861–881.
-24. Pavlinek, P., and P. Zizalova. 2016. “Linkages and Spillovers in Global Production Networks: Firm-Level Analysis of the Czech Automotive Industry.” *Journal of Economic Geography* 16 (2): 331–363.
-25. Raftery, A., D. Madigan, and J. Hoeting. 1997. “Bayesian Model Averaging for Linear Regression Models.” *Journal of the American Statistical Association* 92: 179–191.
-26. Stancik, J. 2007. “Horizontal and Vertical FDI Spillovers: Recent Evidence from the Czech Republic.” *CERGE-EI Working Papers* 340. Prague: Center for Economic Research and Graduate Education – Economics Institute.
-27. Stancik, J. 2009. “FDI Spillovers in the Czech Republic: Takeovers Vs. Greenfields.” *European Economy – Economic Papers 2008–2015 369, Directorate General Economic and Financial Affairs (DG ECFIN)*. European Commission.
-28. Stanley, T. 2005. “Beyond Publication Bias.” *Journal of Economic Surveys* 19 (3): 309–345.
-29. Stanley, T. 2008. “Meta-Regression Methods for Detecting and Estimating Empirical Effects in the Presence of Publication Selection.” *Oxford Bulletin of Economic and Statistics* 70 (1): 103–127.
-30. Vacek, P. (2007): “Productivity Spillovers from Foreign Direct Investment: Industry-Level Analysis. In *Essays on International Productivity Spillovers*.” Ph.D. thesis, Cornell University.
-31. Vacek, P. (2010): “Panel Data Evidence on Productivity Spillovers from Foreign Direct Investment: Firm-Level Measures of Backward and Forward Linkages.” Institute of Economic Studies Working Papers 2010/18, Charles University Prague.
-32. Valickova, P., T. Havranek, and R. Horvath. 2015. “Financial Development and Economic Growth: A Meta-Analysis.” *Journal of Economic Surveys* 29 (3): 506–526.
-33. Zigraiova, D., and T. Havranek. 2016. “Bank Competition and Financial Stability: Much Ado about Nothing?” *Journal of Economic Surveys* 30 (5): 944–981.
+Ayyagari, M., and R. Kosova. 2010. “Does FDI Facilitate Domestic Entry? Evidence from the Czech Republic.” *Review of International Economics* 18 (1): 14–29.
+
+Cuaresma, J. C., J. Fidrmuc, and M. Hake. 2014. “Demand and Supply Drivers of Foreign Currency Loans in CEECs: A Meta-Analysis.” *Economic Systems* 38 (1): 26–42.
+
+Damijan, J., M. Knell, B. Majcen, and M. Rojec 2003. “Technology Transfer through FDI in Top-10 Transition Countries: How Important are Direct Effects, Horizontal and Vertical Spillovers?” *William Davidson Institute Working Papers Series 549*. William Davidson Institute at the University of Michigan.
+
+Damijan, J., M. Rojec, B. Majcen, and M. Knell. 2013. “Impact of Firm Heterogeneity on Direct and Spillover Effects of FDI: Micro-Evidence from Ten Transition Countries.” *Journal of Comparative Economics* 41 (3): 895–922.
+
+Feldkircher, M., and S. Zeugner. 2012. “The Impact of Data Revisions on the Robustness of Growth Determinants – A Note on Determinants of Economic Growth: Will Data Tell?” *Journal of Applied Econometrics* 27 (4): 686–694.
+
+Fidrmuc, J., and I. Korhonen. 2006. “Meta-Analysis of the Business Cycle Correlation between the Euro Area and the CEECs.” *Journal of Comparative Economics* 34 (3): 518–537.
+
+Gersl, A. 2008. “Productivity, Export Performance, and Financing of the Czech Corporate Sector: The Effects of Foreign Direct Investment.” *Czech Journal of Economics and Finance* 58: 232–247.
+
+Gersl, A., I. Rubene, and T. Zumer (2007): “Foreign Direct Investment and Productivity Spillovers: Updated Evidence from Central and Eastern Europe.” *CNB Working Papers* 2007/8. Czech National Bank, Research Department.
+
+Havranek, T., D. Herman, and Z. Irsova. 2018a. “Does Daylight Saving Save Electricity? A Meta-Analysis.” *The Energy Journal* 39 (2): 35–61.
+
+Havranek, T., R. Horvath, Z. Irsova, and M. Rusnak. 2015. “Cross-Country Heterogeneity in Intertemporal Substitution.” *Journal of International Economics* 96 (1): 100–118.
+
+Havranek, T., and Z. Irsova. 2011. “Estimating Vertical Spillovers from FDI: Why Results Vary and What the True Effect Is.” *Journal of International Economics* 85 (2): 234–244.
+
+Havranek, T., and Z. Irsova. 2012. “Survey Article: Publication Bias in the Literature on Foreign Direct Investment Spillovers.” *Journal of Development Studies* 48 (10): 1375–1396.
+
+Havranek, T., and Z. Irsova. 2017. “Do Borders Really Slash Trade? A Meta-Analysis.” *IMF Economic Review* 65 (2): 365–396.
+
+Havranek, T., Z. Irsova, and K. Janda. 2012. “Demand for Gasoline Is More Price-Inelastic than Commonly Thought.” *Energy Economics* 34 (1): 201–207.
+
+Havranek, T., Z. Irsova, and T. Vlach. 2018b. “Measuring the Income Elasticity of Water Demand: The Importance of Publication and Endogeneity Biases.” *Land Economics* 94 (2): 259–283.
+
+Havranek, T., Z. Irsova, and O. Zeynalova. 2018c. “Tuition Fees and University Enrollment: A Meta-Regression Analysis.” *Oxford Bulletin of Economics and Statistics* 80 (6): 1145–1184.
+
+Havranek, T., and O. Kokes. 2015. “Income Elasticity of Gasoline Demand: A Meta-Analysis.” *Energy Economics* 47 (1): 77–86.
+
+Havranek, T., M. Rusnak, and A. Sokolova. 2017. “Habit Formation in Consumption: A Meta-Analysis.” *European Economic Review* 95 (1): 142–167.
+
+Ioannidis, J., C. Doucouliagos, and T. Stanley. 2017. “The Power of Bias in Economics Research.” *The Economic Journal* 127: F236–F265.
+
+Irsova, Z., and T. Havranek. 2013. “Determinants of Horizontal Spillovers from FDI: Evidence from a Large Meta-Analysis.” *World Development* 42 (C): 1–15.
+
+Iwasaki, I., and E. Kočenda. 2017. “Are Some Owners Better than Others in Czech Privatized Firms? Even Meta-Analysis Can’t Make Us Perfectly Sure.” *Economic Systems* 41 (4): 537–568.
+
+Iwasaki, I., and M. Tokunaga. 2016. “Technology Transfer and Spillovers from FDI in Transition Economies: A Meta-Analysis.” *Journal of Comparative Economics* 44 (4): 1086–1114.
+
+Kosova, R. 2010. “Do Foreign Firms Crowd Out Domestic Firms? Evidence from the Czech Republic.” *Review of Economics and Statistics* 92 (4): 861–881.
+
+Pavlinek, P., and P. Zizalova. 2016. “Linkages and Spillovers in Global Production Networks: Firm-Level Analysis of the Czech Automotive Industry.” *Journal of Economic Geography* 16 (2): 331–363.
+
+Raftery, A., D. Madigan, and J. Hoeting. 1997. “Bayesian Model Averaging for Linear Regression Models.” *Journal of the American Statistical Association* 92: 179–191.
+
+Stancik, J. 2007. “Horizontal and Vertical FDI Spillovers: Recent Evidence from the Czech Republic.” *CERGE-EI Working Papers* 340. Prague: Center for Economic Research and Graduate Education – Economics Institute.
+
+Stancik, J. 2009. “FDI Spillovers in the Czech Republic: Takeovers Vs. Greenfields.” *European Economy – Economic Papers 2008–2015 369, Directorate General Economic and Financial Affairs (DG ECFIN)*. European Commission.
+
+Stanley, T. 2005. “Beyond Publication Bias.” *Journal of Economic Surveys* 19 (3): 309–345.
+
+Stanley, T. 2008. “Meta-Regression Methods for Detecting and Estimating Empirical Effects in the Presence of Publication Selection.” *Oxford Bulletin of Economic and Statistics* 70 (1): 103–127.
+
+Vacek, P. (2007): “Productivity Spillovers from Foreign Direct Investment: Industry-Level Analysis. In *Essays on International Productivity Spillovers*.” Ph.D. thesis, Cornell University.
+
+Vacek, P. (2010): “Panel Data Evidence on Productivity Spillovers from Foreign Direct Investment: Firm-Level Measures of Backward and Forward Linkages.” Institute of Economic Studies Working Papers 2010/18, Charles University Prague.
+
+Valickova, P., T. Havranek, and R. Horvath. 2015. “Financial Development and Economic Growth: A Meta-Analysis.” *Journal of Economic Surveys* 29 (3): 506–526.
+
+Zigraiova, D., and T. Havranek. 2016. “Bank Competition and Financial Stability: Much Ado about Nothing?” *Journal of Economic Surveys* 30 (5): 944–981.
