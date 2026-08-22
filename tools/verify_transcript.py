@@ -53,6 +53,11 @@ def words(text):
     and any rule that trims edges keeps one of those and not the other. What is being
     checked is which words are present, so the punctuation between them is noise."""
     text = normalise(text)
+    # Hyphens are removed rather than kept or split on. A line break inside "meta-analysis"
+    # is rejoined by dehyphenation as "metaanalysis" on the PDF side while the transcript
+    # keeps "meta-analysis"; with hyphens gone both read the same, which retires a whole
+    # class of false alarm without hiding any real one.
+    text = text.replace("-", "")
     return [t.lower() for t in re.findall(r"[A-Za-z0-9]+(?:'[A-Za-z]+)?", text)]
 
 

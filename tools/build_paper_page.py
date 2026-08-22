@@ -72,7 +72,7 @@ def _mathml(tex, display=False):
     return out
 
 
-def inline(text, refs_are_numbered=False):
+def inline(text, refs_are_numbered=False, link_cites=True):
     """Escape the text, then apply the inline dialect. Math is converted first and parked
     behind placeholders so that markup characters inside a formula are never re-read."""
     parked = []
@@ -87,6 +87,10 @@ def inline(text, refs_are_numbered=False):
     # citation markers: ^{4} or ^{4,5} or ^{i}
     def cite(m):
         body = m.group(1)
+        # In the author block a superscript is an affiliation key, never a citation: "c" and
+        # "d" are also roman numerals, so linking them invents anchors that do not exist.
+        if not link_cites:
+            return "<sup>%s</sup>" % body
         if refs_are_numbered and re.fullmatch(r"[\d,\s–-]+", body):
             parts = []
             for tok in re.split(r"(,\s*)", body):
@@ -97,9 +101,15 @@ def inline(text, refs_are_numbered=False):
             return '<sup class="cite">%s</sup>' % "".join(parts)
         if re.fullmatch(r"[ivxlcdm]+", body):
             return '<sup class="cite"><a href="#note-%s">%s</a></sup>' % (body, body)
+        # References are author-year, so a bare number is an endnote marker, not a citation.
+        if re.fullmatch(r"\d+", body):
+            return '<sup class="cite"><a href="#note-%s">%s</a></sup>' % (body, body)
         return "<sup>%s</sup>" % body
 
-    text = re.sub(r"\^\{([^}]*)\}", cite, text)
+    # Parked like mathematics: a superscript marker is often a run of asterisks, and left in
+    # the stream the emphasis rules pair them across the markers ("***, **, and *" became
+    # "<sup><i><b></sup>, <sup></b></sup>, and <sup></i></sup>").
+    text = re.sub(r"\^\{([^}]*)\}", lambda m: park(cite(m)), text)
     text = re.sub(r"_\{([^}]*)\}", lambda m: "<sub>%s</sub>" % m.group(1), text)
     text = re.sub(r"\[([^\]]+)\]\((https?://[^)\s]+)\)",
                   lambda m: '<a href="%s">%s</a>' % (m.group(2), m.group(1)), text)
@@ -154,11 +164,15 @@ class Builder:
         text = " ".join(l.strip() for l in lines).strip()
         if text:
             # A superscript in the author block marks an affiliation, not a reference.
-            self.w("<p>%s</p>" % inline(text, self.refs_numbered and not self.in_frontmatter))
+            self.w("<p>%s</p>" % inline(text, self.refs_numbered, not self.in_frontmatter))
 
     def build(self, src):
-        self.refs_numbered = bool(re.search(r"^##\s+REFERENCES", src, re.M)) and bool(
-            re.search(r"^1\.\s", src, re.M))
+        # Only a "1." *inside the reference list* means the references are numbered. A paper
+        # with author-year references and numbered endnotes has a "1." too, and reading it as
+        # a reference number sends every endnote marker to a #ref- anchor that does not exist.
+        m_refs = re.search(r"^##\s+REFERENCES.*$", src, re.M)
+        self.refs_numbered = bool(m_refs) and bool(
+            re.search(r"^1\.\s", src[m_refs.end():], re.M))
         lines = src.split("\n")
         i = 0
         buf = []
@@ -243,7 +257,8 @@ class Builder:
                 self.w('<h2 id="%s">%s</h2>' % (anchor, inline(head, self.refs_numbered)))
                 self.toc.append((2, anchor, head))
                 if upper.startswith("REFERENCES"):
-                    self.w('<ol class="references">')
+                    self.w('<ol class="references%s">'
+                           % ("" if self.refs_numbered else " unnumbered"))
                     mode = "references"
                 elif upper.startswith("ENDNOTE"):
                     self.w('<ol class="endnotes">')
@@ -266,6 +281,17 @@ class Builder:
                         style = ' style="counter-reset:rf %d"' % (int(key) - 1)
                     self.w('<li id="%s%s"%s>%s</li>'
                            % (idprefix, key, style, inline(body, self.refs_numbered)))
+                    i = j
+                    continue
+                if mode == "references":
+                    # An author-year reference list carries no numbers to key an id off; the
+                    # entries are still list items, one per paragraph, not loose <p> in an <ol>.
+                    body = stripped
+                    j = i + 1
+                    while j < len(lines) and lines[j].strip() and not lines[j].strip().startswith("#"):
+                        body += " " + lines[j].strip()
+                        j += 1
+                    self.w("<li>%s</li>" % inline(body, self.refs_numbered))
                     i = j
                     continue
 
@@ -594,7 +620,8 @@ def link_from_project_page(project):
 def main(argv):
     papers = {p["project"]: p for p in json.load(open(os.path.join(ROOT, "tools", "papers.json")))}
     if not argv or argv[0] == "--all":
-        projects = sorted(p[:-3] for p in os.listdir(TRANSCRIPTS) if p.endswith(".md"))
+        projects = sorted(p[:-3] for p in os.listdir(TRANSCRIPTS)
+                          if p.endswith(".md") and not p.endswith(".draft.md"))
     else:
         projects = argv
     for project in projects:
