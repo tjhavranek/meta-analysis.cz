@@ -237,9 +237,27 @@ def draft(project, page_range=None, out=None):
 
     raw = pdftotext(pdf)
     pages = raw.split("\f")
+    plain_pages = pdftotext(pdf, layout=False).split("\f")
     if page_range:
         first, last = page_range
         pages = pages[first - 1:last]
+        plain_pages = plain_pages[first - 1:last]
+        page_offset = first
+    else:
+        page_offset = 1
+    # Layout mode is the only extraction that shows where the columns are, and on a page
+    # carrying a wide table it silently drops running text. Say so, per page, rather than
+    # let the omission travel silently into the transcript.
+    from verify_transcript import words as _norm_words
+    dropped = []
+    for k, (lay, plain) in enumerate(zip(pages, plain_pages)):
+        # Compare after the columns are split and hyphenation is undone. Before that, a word
+        # hyphenated at the end of a left-column line is followed on the same physical line by
+        # right-column text and can never rejoin, so half the vocabulary looks lost.
+        seen = {w for w in _norm_words(dehyphenate(uncolumn(lay))) if len(w) >= 4}
+        lost = sorted({w for w in _norm_words(plain) if len(w) >= 4} - seen)
+        if len(lost) >= 3:
+            dropped.append((page_offset + k, len(lost), " ".join(lost[:12])))
     pages = [uncolumn(p) for p in pages]
     pages = strip_furniture(pages)
     body = dehyphenate("\n\n".join(pages))
@@ -250,6 +268,11 @@ def draft(project, page_range=None, out=None):
            "     layer, unedited. Every <<...>> marker is work for a reader of the page image:",
            "     fill it in, then delete the marker. Run tools/verify_transcript.py when done. -->",
            ""]
+    for pageno, n, sample in dropped:
+        lines_out += ["<<TEXT LAYER: page %d prints %d word(s) that the layout extraction does "
+                      "not show at all: %s. The sentences they belong to are missing from the "
+                      "prose below -- read page %d's image and put them back.>>"
+                      % (pageno, n, sample, pageno), ""]
     n_tables = n_figs = n_eqs = 0
     for para in paragraphs(body):
         kind, payload = classify(para, False)

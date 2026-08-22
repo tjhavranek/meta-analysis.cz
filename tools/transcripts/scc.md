@@ -12,6 +12,10 @@ Tomas Havranek ^{a,b}, Zuzana Irsova ^{b}, Karel Janda ^{b,c}, David Zilberman ^
 
 ^{d} University of California, Berkeley, United States
 
+^{*} Corresponding author. E-mail address: zuzana.irsova@ies-prague.org (Z. Irsova).
+
+An online appendix with data and code is available at [http://meta-analysis.cz/scc](http://meta-analysis.cz/scc). Tomas Havranek acknowledges support from the Czech Science Foundation (grant #15-02411S); Zuzana Irsova acknowledges support from the Czech Science Foundation (grant #15-02411S) and the Grant Agency of Charles University (grant #558713); Karel Janda acknowledges support from the Czech Science Foundation (grants #P402/11/0948, #15-00036S, and #16-00027S). The research leading to these results received funding from the People Programme (Marie Curie Actions) of the European Union's Seventh Framework Programme FP7/2007-2013 under REA grant agreement number 609642. We thank Richard Tol for sending us his data set and are grateful to Jan Babecky, Nikolas Mittag, Jiri Schwarz, Diana Zigraiova, seminar participants at Charles University, and two anonymous referees of Energy Economics for their helpful comments. The views expressed here are ours and not necessarily those of our employers.
+
 JEL classification: C83, Q54
 
 ## ABSTRACT
