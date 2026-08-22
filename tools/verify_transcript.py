@@ -106,6 +106,28 @@ def pdf_prose(pdf, first=None, last=None):
     return "\n".join(keep)
 
 
+def pdf_counts(pdf):
+    """How many times the PDF contains each word, taking the best of both extractions.
+
+    Layout-preserving extraction is what the draft is built from, because it is the only
+    mode that shows where the columns are. But on a page carrying a wide table it silently
+    drops running text: a sentence printed on page 10 of the social-cost-of-carbon paper is
+    absent from the layout extraction and present in the plain one. Trusting either mode
+    alone therefore means either inventing accusations against a faithful transcript, or --
+    worse -- failing to notice a paragraph the transcript really did drop.
+
+    Counts are the element-wise maximum rather than the sum, so a word stays as frequent as
+    the paper actually prints it, and a word in neither extraction is still invented."""
+    from collections import Counter
+    layout = Counter(words(pdf_prose(pdf)))
+    plain = Counter(words(normalise(subprocess.run(
+        ["pdftotext", pdf, "-"], capture_output=True, text=True, check=True).stdout)))
+    best = Counter()
+    for w in set(layout) | set(plain):
+        best[w] = max(layout[w], plain[w])
+    return best
+
+
 def multiset_check(a, b):
     """Words the transcript lost, and words it gained, ignoring order.
 
@@ -119,7 +141,8 @@ def multiset_check(a, b):
     "Havranek^c" as "havranekc" and "^bLSE" as "blse". A transcript word that appears
     inside a PDF word with a letter or two stuck on is that word, not an invented one."""
     from collections import Counter
-    ca, cb = Counter(a), Counter(b)
+    ca = a if isinstance(a, Counter) else Counter(a)
+    cb = b if isinstance(b, Counter) else Counter(b)
     lost = ca - cb
     gained = cb - ca
     glued = set()
@@ -140,7 +163,7 @@ def report(project, pdf, transcript_path, context=6, quiet=False):
     a = words(pdf_prose(pdf))
     b = words(transcript_prose(src))
 
-    lost, gained = multiset_check(a, b)
+    lost, gained = multiset_check(pdf_counts(pdf), b)
     if not quiet:
         interesting_lost = {w: c for w, c in lost.items() if re.search(r"[a-z]{3}", w)}
         interesting_gained = {w: c for w, c in gained.items() if re.search(r"[a-z]{3}", w)}
@@ -194,9 +217,8 @@ def main(argv):
     pdf = os.path.join(ROOT, project, paper_pdf(project, papers[project]))
     transcript = os.path.join(ROOT, "tools", "transcripts", "%s.md" % project)
     problems, ratio = report(project, pdf, transcript, quiet=quiet)
-    a = words(pdf_prose(pdf))
     b = words(transcript_prose(open(transcript).read()))
-    lost, gained = multiset_check(a, b)
+    lost, gained = multiset_check(pdf_counts(pdf), b)
     invented = sum(c for w, c in gained.items() if re.search(r"[a-z]{3}", w))
     if invented:
         print("\n%s: %d prose word(s) appear in the transcript but not in the PDF"

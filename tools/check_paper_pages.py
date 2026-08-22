@@ -26,8 +26,8 @@ sys.path.insert(0, os.path.join(ROOT, "tools"))
 
 from build_paper_page import paper_pdf                      # noqa: E402
 from scout_paper import scout                               # noqa: E402
-from verify_transcript import (multiset_check, pdf_prose,   # noqa: E402
-                               transcript_prose, words)
+from verify_transcript import (multiset_check, pdf_counts,  # noqa: E402
+                               pdf_prose, transcript_prose, words)
 
 PAPERS = {p["project"]: p for p in json.load(open(os.path.join(ROOT, "tools", "papers.json")))}
 
@@ -56,7 +56,7 @@ def check(project):
     pdf = os.path.join(ROOT, project, paper_pdf(project, PAPERS[project]))
 
     # -- nothing invented
-    a = words(pdf_prose(pdf))
+    a = pdf_counts(pdf)
     b = words(transcript_prose(src))
     _lost, gained = multiset_check(a, b)
     invented = sum(c for w, c in gained.items() if re.search(r"[a-z]{3}", w))
@@ -69,7 +69,7 @@ def check(project):
 
     # -- nothing wholesale missing. Tables and captions live outside the prose comparison,
     #    so the ratio is never 1; a page that dropped a section falls far below its peers.
-    ratio = len(b) / max(1, len(a))
+    ratio = len(b) / max(1, sum(a.values()))
     if ratio < 0.45:
         fails.append("transcript holds %.0f%% of the PDF's words -- a section may be missing"
                      % (100 * ratio))
