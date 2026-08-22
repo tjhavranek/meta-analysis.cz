@@ -40,3 +40,9 @@ data_layer/codegrep_evidence.json
 # this layout is the live site, so an unguarded `git add -A` would publish a ~14 MB
 # duplicate of the deposit into the public tree.
 /zenodo_deposit/
+
+# Mechanical drafts from tools/draft_transcript.py. The finished transcript is
+# <project>.md and is committed; the .draft.md beside it is an intermediate a
+# conversion agent regenerates whenever it wants one, and several agents work on
+# the same paper at once, so committing them would just record whoever wrote last.
+tools/transcripts/*.draft.md
