@@ -75,6 +75,28 @@ Abreu, M., de Groot, H., 2005. A meta-analysis of convergence. J. Econ. Surv. 19
           '<a href="#note-1">1</a>' in body and 'href="#ref-1"' not in body)
 
 
+def test_endnotes_printed_after_the_references():
+    # Several papers close with references and then endnotes. A numbered endnote below the
+    # REFERENCES heading is not a numbered reference, and reading it as one sent every
+    # marker in the body to a #ref- anchor that was never emitted.
+    body, _ = build("""## 1 | INTRO
+
+As noted.^{1}
+
+## REFERENCES
+
+Aitken, B., Harrison, A., 1999. Do domestic firms benefit? Am. Econ. Rev. 89, 605-618.
+
+## ENDNOTES
+
+1. See Smeets (2008) for a survey.
+""")
+    check("an endnote below the references is not a reference number",
+          'href="#ref-1"' not in body, body[:300])
+    check("the marker links to the endnote instead",
+          '<a href="#note-1">1</a>' in body and 'id="note-1"' in body)
+
+
 def test_affiliation_markers_do_not_link():
     body, _ = build("""## FRONTMATTER
 

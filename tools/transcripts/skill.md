@@ -235,77 +235,150 @@ The aforementioned results hold when we control for additional 24 variables that
 
 ## REFERENCES
 
-1. Acemoglu, Daron, "Technical Change, Inequality, and the Labor Market," *Journal of Economic Literature* 40:1 (2002), 7–72. 10.1257/jel.40.1.7
-2. Amini, Shahram M., and Christopher F. Parmeter, "Comparison of Model Averaging Techniques: Assessing Growth Determinants," *Journal of Applied Econometrics* 27:5 (2012), 870–876. 10.1002/jae.2288
-3. Andrews, Isaiah, "Conditional Linear Combination Tests for Weakly Identified Models," *Econometrica* 84:6 (November 2016), 2155–2182. 10.3982/ECTA12407
-4. ——— "Valid Two-Step Identification-Robust Confidence Sets for GMM," this REVIEW 100:2 (May 2018), 337–348.
-5. Andrews, Isaiah, and Maximilian Kasy, "Identification of and Correction for Publication Bias," *American Economic Review* 109:8 (2019), 2766–2794. 10.1257/aer.20180310
-6. Andrews, Isaiah, James H. Stock, and Liyang Sun, "Weak Instruments in Instrumental Variables Regression: Theory and Practice," *Annual Review of Economics* 11:1 (August 2019), 727–753. 10.1146/annurev-economics-080218-025643
-7. Angrist, Joshua D., "The Economic Returns to Schooling in the West Bank and Gaza Strip," *The American Economic Review* 85:5 (1995), 1065–1087.
-8. Ashenfelter, Orley, Colm Harmon, and Hessel Oosterbeek, "A Review of Estimates of the Schooling/Earnings Relationship, with Tests for Publication Bias," *Labour Economics* 6:4 (November 1999), 453–470. 10.1016/S0927-5371(99)00041-X
-9. Autor, David H., "Skills, Education, and the Rise of Earnings Inequality among the 'Other 99 Percent'," *Science* 344:6186 (May 2014), 843–851. 10.1126/science.1251868
-10. Autor, David H., Lawrence F. Katz, and Melissa S. Kearney, "Trends in US Wage Inequality: Revising the Revisionists," this REVIEW 90:2 (2008), 300–323.
-11. Bajzik, Josef, Tomas Havranek, Zuzana Irsova, and Jiri Schwarz, "Estimating the Armington Elasticity: The Importance of Study Design and Publication Bias," *Journal of International Economics* 127:C (2020), 103383. 10.1016/j.jinteco.2020.103383
-12. Behar, Alberto, "The Elasticity of Substitution between Skilled and Unskilled Labor in Developing Countries Is about 2," Department of Economics, University of Oxford technical report (June 2010).
-13. Blanco-Perez, Cristina, and Abel Brodeur, "Publication Bias and Editorial Statement on Negative Findings," *The Economic Journal* 130:629 (2020), 1226–1247. 10.1093/ej/ueaa011
-14. Bom, Pedro R. D., and Heiko Rachinger, "A Kinked Meta-Regression Model for Publication Bias Correction," *Research Synthesis Methods* 10:4 (December 2019), 497–514. 10.1002/jrsm.1352
-15. Borjas, George J., "The Labor Demand Curve Is Downward Sloping: Reexamining the Impact of Immigration on the Labor Market," *The Quarterly Journal of Economics* 118:4 (2003), 1335–1374. 10.1162/003355303322552810
-16. Borjas, George J., and Lawrence F. Katz, "The Evolution of the Mexican-Born Workforce in the United States" (pp. 13–56), in George J. Borjas (ed.), *Mexican Immigration to the United States*, National Bureau of Economic Research Conference Report (University of Chicago Press, May 2007).
-17. Bound, John, Jeffrey Groen, Gabor Kezdi, and Sarah Turner, "Trade in University Training: Cross-State Variation in the Production and Stock of College-Educated Labor," *Journal of Econometrics* 121:1 (2004), 143–173. 10.1016/j.jeconom.2003.10.012
-18. Bowles, Samuel, "Aggregation of Labor Inputs in the Economics of Growth and Planning: Experiments with a Two-Level CES Function," *Journal of Political Economy* 78:1 (1970), 68–81. 10.1086/259601
-19. Bowlus, Audra J., Lance Lochner, Chris Robinson, and Eda Suleymanoglu, "Wages, Skills, and Skill-Biased Technical Change: The Canonical Model Revisited," *Journal of Human Resources* 58 (2022), 1783–1819. 10.3368/jhr.0617-8889R1
-20. Brodeur, Abel, Mathias Le, Marc Sangnier, and Yanos Zylberberg, "Star Wars: The Empirics Strike Back," *American Economic Journal: Applied Economics* 8:1 (January 2016), 1–32. 10.1257/app.20150044
-21. Brodeur, Abel, Nikolai Cook, and Anthony Heyes, "Methods Matter: P-Hacking and Causal Inference in Economics," *American Economic Review* 110:11 (2020), 3634–3660. 10.1257/aer.20190687
-22. Brown, Alexander L., Taisuke Imai, Ferdinand Vieider, and Colin F. Camerer, "Meta-Analysis of Empirical Estimates of Loss-Aversion," *Journal of Economic Literature* (2022).
-23. Bruns, Stephan B., and John P. A. Ioannidis, "*p*-Curve and *p*-Hacking in Observational Research," *PLOS One* 11:2 (2016), e0149144. 10.1371/journal.pone.0149144
-24. Cantore, Cristiano, Filippo Ferroni, and Miguel A. Leon-Ledesma, "The Dynamics of Hours Worked and Technology," *Journal of Economic Dynamics and Control* 82:C (2017), 67–82. 10.1016/j.jedc.2017.05.009
-25. Card, David, "Immigration and Inequality," *American Economic Review* 99:2 (2009), 1–21. 10.1257/aer.99.2.1
-26. Card, David, Jochen Kluve, and Andrea Weber, "What Works? A Meta Analysis of Recent Active Labor Market Program Evaluations," *Journal of the European Economic Association* 16:3 (2018), 894–931. 10.1093/jeea/jvx028
-27. Carneiro, Pedro, Kai Liu, and Kjell G. Salvanes, "The Supply of Skill and Endogenous Technical Change: Evidence from a College Expansion Reform," *Journal of European Economic Association* 21 (2022), 48–92. 10.1093/jeea/jvac032
-28. Christensen, Garret, and Edward Miguel, "Transparency, Reproducibility, and the Credibility of Economics Research," *Journal of Economic Literature* 56:3 (September 2018), 920–980. 10.1257/jel.20171350
-29. Ciccone, Antonio, and Giovanni Peri, "Long-Run Substitutability between More and Less Educated Workers: Evidence from US States, 1950–1990," this REVIEW 87:4 (2005), 652–663.
-30. Cox, Gregory, and Xiaoxia Shi, "Simple Adaptive Size-Exact Testing for Full-Vector and Subvector Inference in Moment Inequality Models," *Review of Economic Studies* 90 (2022), 201–228. 10.1093/restud/rdac015
-31. DellaVigna, Stefano, and Elizabeth Linos, "RCTs to Scale: Comprehensive Evidence from Two Nudge Units," *Econometrica* 90:1 (January 2022), 81–116. 10.3982/ECTA18709
-32. DellaVigna, Stefano, Devin Pope, and Eva Vivalt, "Predict Science to Improve Science," *Science* 366:6464 (2019), 428–429. 10.1126/science.aaz1704
-33. Doucouliagos, Chris, and Tom D. Stanley, "Are All Economic Facts Greatly Exaggerated? Theory Competition and Selectivity," *Journal of Economic Surveys* 27:2 (2013), 316–339. 10.1111/j.1467-6419.2011.00706.x
-34. Eicher, Theo S., Chris Papageorgiou, and Adrian E. Raftery, "Default Priors and Predictive Performance in Bayesian Model Averaging, with Application to Growth Determinants," *Journal of Applied Econometrics* 26:1 (2011), 30–55. 10.1002/jae.1112
-35. Elliott, Graham, Nikolay Kudrin, and Kaspar Wuthrich, "Detecting *p*-Hacking," *Econometrica* 90:2 (2022), 887–906. 10.3982/ECTA18583
-36. Feldkircher, Martin, and Stefan Zeugner, "The Impact of Data Revisions on the Robustness of Growth Determinants—A Note on Determinants of Economic Growth: Will Data Tell?" *Journal of Applied Econometrics* 27:4 (2012), 686–694. 10.1002/jae.2265
-37. Fernandez, Carmen, Eduardo Ley, and Mark F. J. Steel, "Benchmark Priors for Bayesian Model Averaging," *Journal of Econometrics* 100:2 (February 2001), 381–427. 10.1016/S0304-4076(00)00076-2
-38. Furukawa, Chishio, "Publication Bias under Aggregation Frictions: Theory, Evidence, and a New Correction Method," MIT working paper (2020).
-39. Gechert, Sebastian, Tomas Havranek, Zuzana Irsova, and Dominika Kolcunova, "Measuring Capital-Labor Substitution: The Importance of Method Choices and Publication Bias," *Review of Economic Dynamics* 45 (2022), 55–82. 10.1016/j.red.2021.05.003
-40. George, Edward I., "Dilution Priors: Compensating for Model Space Redundancy" (pp. 158–165), in *IMS Collections Borrowing Strength: Theory Powering Applications—A Festschrift for Lawrence D. Brown*, Vol. 6 (Institute of Mathematical Statistics, 2010).
-41. Gerber, Alan, and Neil Malhotra, "Do Statistical Reporting Standards Affect What Is Published? Publication Bias in Two Leading Political Science Journals," *Quarterly Journal of Political Science* 3:3 (October 2008), 313–326. 10.1561/100.00008024
-42. Griliches, Zvi, "Estimating the Returns to Schooling: Some Econometric Problems," *Econometrica* 45:1 (1977), 1–22. 10.2307/1913285
-43. Hansen, Bruce E., "Least Squares Model Averaging," *Econometrica* 75:4 (2007), 1175–1189. 10.1111/j.1468-0262.2007.00785.x
-44. Hausman, Jerry, "Mismeasured Variables in Econometric Analysis: Problems from the Right and Problems from the Left," *Journal of Economic Perspectives* 15:4 (Fall 2001), 57–67. 10.1257/jep.15.4.57
-45. Havranek, Tomas, "Measuring Intertemporal Substitution: The Importance of Method Choices and Selective Reporting," *Journal of the European Economic Association* 13:6 (2015), 1180–1204. 10.1111/jeea.12133
-46. Havranek, Tomas, Tom D. Stanley, Hristos Doucouliagos, Pedro R. D. Bom, Jerome Geyer-Klingeberg, Ichiro Iwasaki, Robert W. Reed, Katja Rost, and Robbie C. M. van Aert, "Reporting Guidelines for Meta-Analysis in Economics," *Journal of Economic Surveys* 34:3 (2020), 469–475. 10.1111/joes.12363
-47. Imai, Taisuke, Tom A. Rutter, and Colin F. Camerer, "Meta-Analysis of Present-Bias Estimation Using Convex Time Budgets," *The Economic Journal* 131:636 (2021), 1788–1814. 10.1093/ej/ueaa115
-48. Ioannidis, John P. A., Tom Stanley, and Hristos Doucouliagos, "The Power of Bias in Economics Research," *The Economic Journal* 127:605 (2017), F236–F265. 10.1111/ecoj.12461
-49. Iwasaki, Ichiro, "The Finance-Growth Nexus in Latin America and the Caribbean: A Meta-Analytic Perspective," *World Development* 149:C (2022), 105692.
-50. Jeffreys, Harold, *Theory of Probability*. Oxford Classic Texts in the Physical Sciences, 3rd ed. (Oxford: Oxford University Press, 1961).
-51. Katz, Lawrence F., and Kevin M. Murphy, "Changes in Relative Wages, 1963–1987: Supply and Demand Factors," *The Quarterly Journal of Economics* 107:1 (1992), 35–78. 10.2307/2118323
-52. Kawaguchi, Daiji, and Yuko Mori, "Why Has Wage Inequality Evolved so Differently between Japan and the US? The Role of the Supply of College-Educated Workers," *Economics of Education Review* 52:1 (2016), 29–50. 10.1016/j.econedurev.2016.01.002
-53. Kearney, Ide, "Estimating the Demand for Skilled Labour, Unskilled Labour and Clerical Workers: A Dynamic Framework," The Economic and Social Research Institute ESRI working paper 91 (December 1997).
-54. Klenow, Peter J., and Andres Rodriguez-Clare, "The Neoclassical Revival in Growth Economics: Has It Gone Too Far?" *NBER Macroeconomics Annual* 12 (January 1997), 73–114. 10.1086/654324
-55. Kranz, Sebastian, and Peter Putz, "Methods Matter: *p*-Hacking and Publication Bias in Causal Analysis in Economics: Comment," *American Economic Review* 112 (2022), 3124–3136. 10.1257/aer.20210121
-56. Ley, Eduardo, and Mark F. J. Steel, "On the Effect of Prior Assumptions in Bayesian Model Averaging with Applications to Growth Regression," *Journal of Applied Econometrics* 24:4 (2009), 651–674. 10.1002/jae.1057
-57. Matousek, Jindrich, Tomas Havranek, and Zuzana Irsova, "Individual Discount Rates: A Meta-Analysis of Experimental Evidence," *Experimental Economics* 25:1 (February 2022), 318–358. 10.1007/s10683-021-09716-9
-58. McCloskey, Deirdre N., and Stephen T. Ziliak, "What Quantitative Methods Should We Teach to Graduate Students? A Comment on Swann's 'Is Precise Econometrics an Illusion?'" *The Journal of Economic Education* 50:4 (2019), 356–361. 10.1080/00220485.2019.1654957
-59. Neisser, Carina, "The Elasticity of Taxable Income: A Meta-Regression Analysis," *Economic Journal* 131:640 (2021), 3365–3391. 10.1093/ej/ueab038
-60. Raftery, Adrian E., David Madigan, and Jennifer A. Hoeting, "Bayesian Model Averaging for Linear Regression Models," *Journal of the American Statistical Association* 92:437 (1997), 179–191. 10.1080/01621459.1997.10473615
-61. Roodman, David, James G. MacKinnon, Morten O. Nielsen, and Matthew D. Webb, "Fast and Wild: Bootstrap Inference in Stata Using Boottest," Department of Economics, Queen's University, Canada, Kingston working paper 1406 (2018).
-62. Stanley, Tom D., "Beyond Publication Bias," *Journal of Economic Surveys* 19:3 (2005), 309–345. 10.1111/j.0950-0804.2005.00250.x
-63. ——— "Meta-Regression Methods for Detecting and Estimating Empirical Effects in the Presence of Publication Selection," *Oxford Bulletin of Economics and Statistics* 70:1 (2008), 103–127. 10.1111/j.1468-0084.2007.00487.x
-64. Stanley, Tom D., and Hristos Doucouliagos, "Meta-Regression Approximations to Reduce Publication Selection Bias," *Research Synthesis Methods* 5:1 (2014), 60–78. 10.1002/jrsm.1095
-65. ——— "Neither Fixed nor Random: Weighted Least Squares Meta-Analysis," *Statistics in Medicine* 34:13 (2015), 2116–2127. 10.1002/sim.6481
-66. Stanley, Tom D., Hristos Doucouliagos, and John P. A. Ioannidis, "Retrospective Median Power, False Positive Meta-Analysis and Large-Scale Replication," *Research Synthesis Methods* 13:1 (2022), 88–108. 10.1002/jrsm.1529
-67. Stanley, Tom D., Hristos Doucouliagos, John P. A. Ioannidis, and Evan C. Carter, "Detecting Publication Selection Bias through Excess Statistical Significance," *Research Synthesis Methods* 12:6 (2021), 776–795. 10.1002/jrsm.1512
-68. Steel, Mark F. J., "Model Averaging and Its Use in Economics," *Journal of Economic Literature* 58:3 (2020), 644–719. 10.1257/jel.20191385
-69. Sun, Liyang, "Implementing Valid Two-Step Identification-Robust Confidence Sets for Linear Instrumental-Variables Models," *Stata Journal* 18:4 (December 2018), 803–825. 10.1177/1536867X1801800404
-70. Ugur, Mehmet, Sefa A. Churchill, and Hoang M. Luong, "What Do We Know about R&D Spillovers and Productivity? Meta-Analysis Evidence on Heterogeneity and Statistical Power," *Research Policy* 49:1 (2020), 103866. 10.1016/j.respol.2019.103866
-71. Verdugo, Gregory, "The Great Compression of the French Wage Structure, 1969–2008," *Labour Economics* 28:C (2014), 131–144. 10.1016/j.labeco.2014.04.009
-72. Xue, Xindong, Robert W. Reed, and Andrea Menclova, "Social Capital and Health: A Meta-Analysis," *Journal of Health Economics* 72:C (2020), 102317. 10.1016/j.jhealeco.2020.102317
-73. Zeugner, Stefan, and Martin Feldkircher, "Bayesian Model Averaging Employing Fixed and Flexible Priors: The BMS Package for R," *Journal of Statistical Software* 68:4 (2015), 1–37. 10.18637/jss.v068.i04
-74. Zigraiova, Diana, Tomas Havranek, Zuzana Irsova, and Jiri Novak, "How Puzzling Is the Forward Premium Puzzle? A Meta-Analysis," *European Economic Review* 134:C (2021), 103714. 10.1016/j.euroecorev.2021.103714
+Acemoglu, Daron, "Technical Change, Inequality, and the Labor Market," *Journal of Economic Literature* 40:1 (2002), 7–72. 10.1257/jel.40.1.7
+
+Amini, Shahram M., and Christopher F. Parmeter, "Comparison of Model Averaging Techniques: Assessing Growth Determinants," *Journal of Applied Econometrics* 27:5 (2012), 870–876. 10.1002/jae.2288
+
+Andrews, Isaiah, "Conditional Linear Combination Tests for Weakly Identified Models," *Econometrica* 84:6 (November 2016), 2155–2182. 10.3982/ECTA12407
+
+——— "Valid Two-Step Identification-Robust Confidence Sets for GMM," this REVIEW 100:2 (May 2018), 337–348.
+
+Andrews, Isaiah, and Maximilian Kasy, "Identification of and Correction for Publication Bias," *American Economic Review* 109:8 (2019), 2766–2794. 10.1257/aer.20180310
+
+Andrews, Isaiah, James H. Stock, and Liyang Sun, "Weak Instruments in Instrumental Variables Regression: Theory and Practice," *Annual Review of Economics* 11:1 (August 2019), 727–753. 10.1146/annurev-economics-080218-025643
+
+Angrist, Joshua D., "The Economic Returns to Schooling in the West Bank and Gaza Strip," *The American Economic Review* 85:5 (1995), 1065–1087.
+
+Ashenfelter, Orley, Colm Harmon, and Hessel Oosterbeek, "A Review of Estimates of the Schooling/Earnings Relationship, with Tests for Publication Bias," *Labour Economics* 6:4 (November 1999), 453–470. 10.1016/S0927-5371(99)00041-X
+
+Autor, David H., "Skills, Education, and the Rise of Earnings Inequality among the 'Other 99 Percent'," *Science* 344:6186 (May 2014), 843–851. 10.1126/science.1251868
+
+Autor, David H., Lawrence F. Katz, and Melissa S. Kearney, "Trends in US Wage Inequality: Revising the Revisionists," this REVIEW 90:2 (2008), 300–323.
+
+Bajzik, Josef, Tomas Havranek, Zuzana Irsova, and Jiri Schwarz, "Estimating the Armington Elasticity: The Importance of Study Design and Publication Bias," *Journal of International Economics* 127:C (2020), 103383. 10.1016/j.jinteco.2020.103383
+
+Behar, Alberto, "The Elasticity of Substitution between Skilled and Unskilled Labor in Developing Countries Is about 2," Department of Economics, University of Oxford technical report (June 2010).
+
+Blanco-Perez, Cristina, and Abel Brodeur, "Publication Bias and Editorial Statement on Negative Findings," *The Economic Journal* 130:629 (2020), 1226–1247. 10.1093/ej/ueaa011
+
+Bom, Pedro R. D., and Heiko Rachinger, "A Kinked Meta-Regression Model for Publication Bias Correction," *Research Synthesis Methods* 10:4 (December 2019), 497–514. 10.1002/jrsm.1352
+
+Borjas, George J., "The Labor Demand Curve Is Downward Sloping: Reexamining the Impact of Immigration on the Labor Market," *The Quarterly Journal of Economics* 118:4 (2003), 1335–1374. 10.1162/003355303322552810
+
+Borjas, George J., and Lawrence F. Katz, "The Evolution of the Mexican-Born Workforce in the United States" (pp. 13–56), in George J. Borjas (ed.), *Mexican Immigration to the United States*, National Bureau of Economic Research Conference Report (University of Chicago Press, May 2007).
+
+Bound, John, Jeffrey Groen, Gabor Kezdi, and Sarah Turner, "Trade in University Training: Cross-State Variation in the Production and Stock of College-Educated Labor," *Journal of Econometrics* 121:1 (2004), 143–173. 10.1016/j.jeconom.2003.10.012
+
+Bowles, Samuel, "Aggregation of Labor Inputs in the Economics of Growth and Planning: Experiments with a Two-Level CES Function," *Journal of Political Economy* 78:1 (1970), 68–81. 10.1086/259601
+
+Bowlus, Audra J., Lance Lochner, Chris Robinson, and Eda Suleymanoglu, "Wages, Skills, and Skill-Biased Technical Change: The Canonical Model Revisited," *Journal of Human Resources* 58 (2022), 1783–1819. 10.3368/jhr.0617-8889R1
+
+Brodeur, Abel, Mathias Le, Marc Sangnier, and Yanos Zylberberg, "Star Wars: The Empirics Strike Back," *American Economic Journal: Applied Economics* 8:1 (January 2016), 1–32. 10.1257/app.20150044
+
+Brodeur, Abel, Nikolai Cook, and Anthony Heyes, "Methods Matter: P-Hacking and Causal Inference in Economics," *American Economic Review* 110:11 (2020), 3634–3660. 10.1257/aer.20190687
+
+Brown, Alexander L., Taisuke Imai, Ferdinand Vieider, and Colin F. Camerer, "Meta-Analysis of Empirical Estimates of Loss-Aversion," *Journal of Economic Literature* (2022).
+
+Bruns, Stephan B., and John P. A. Ioannidis, "*p*-Curve and *p*-Hacking in Observational Research," *PLOS One* 11:2 (2016), e0149144. 10.1371/journal.pone.0149144
+
+Cantore, Cristiano, Filippo Ferroni, and Miguel A. Leon-Ledesma, "The Dynamics of Hours Worked and Technology," *Journal of Economic Dynamics and Control* 82:C (2017), 67–82. 10.1016/j.jedc.2017.05.009
+
+Card, David, "Immigration and Inequality," *American Economic Review* 99:2 (2009), 1–21. 10.1257/aer.99.2.1
+
+Card, David, Jochen Kluve, and Andrea Weber, "What Works? A Meta Analysis of Recent Active Labor Market Program Evaluations," *Journal of the European Economic Association* 16:3 (2018), 894–931. 10.1093/jeea/jvx028
+
+Carneiro, Pedro, Kai Liu, and Kjell G. Salvanes, "The Supply of Skill and Endogenous Technical Change: Evidence from a College Expansion Reform," *Journal of European Economic Association* 21 (2022), 48–92. 10.1093/jeea/jvac032
+
+Christensen, Garret, and Edward Miguel, "Transparency, Reproducibility, and the Credibility of Economics Research," *Journal of Economic Literature* 56:3 (September 2018), 920–980. 10.1257/jel.20171350
+
+Ciccone, Antonio, and Giovanni Peri, "Long-Run Substitutability between More and Less Educated Workers: Evidence from US States, 1950–1990," this REVIEW 87:4 (2005), 652–663.
+
+Cox, Gregory, and Xiaoxia Shi, "Simple Adaptive Size-Exact Testing for Full-Vector and Subvector Inference in Moment Inequality Models," *Review of Economic Studies* 90 (2022), 201–228. 10.1093/restud/rdac015
+
+DellaVigna, Stefano, and Elizabeth Linos, "RCTs to Scale: Comprehensive Evidence from Two Nudge Units," *Econometrica* 90:1 (January 2022), 81–116. 10.3982/ECTA18709
+
+DellaVigna, Stefano, Devin Pope, and Eva Vivalt, "Predict Science to Improve Science," *Science* 366:6464 (2019), 428–429. 10.1126/science.aaz1704
+
+Doucouliagos, Chris, and Tom D. Stanley, "Are All Economic Facts Greatly Exaggerated? Theory Competition and Selectivity," *Journal of Economic Surveys* 27:2 (2013), 316–339. 10.1111/j.1467-6419.2011.00706.x
+
+Eicher, Theo S., Chris Papageorgiou, and Adrian E. Raftery, "Default Priors and Predictive Performance in Bayesian Model Averaging, with Application to Growth Determinants," *Journal of Applied Econometrics* 26:1 (2011), 30–55. 10.1002/jae.1112
+
+Elliott, Graham, Nikolay Kudrin, and Kaspar Wuthrich, "Detecting *p*-Hacking," *Econometrica* 90:2 (2022), 887–906. 10.3982/ECTA18583
+
+Feldkircher, Martin, and Stefan Zeugner, "The Impact of Data Revisions on the Robustness of Growth Determinants—A Note on Determinants of Economic Growth: Will Data Tell?" *Journal of Applied Econometrics* 27:4 (2012), 686–694. 10.1002/jae.2265
+
+Fernandez, Carmen, Eduardo Ley, and Mark F. J. Steel, "Benchmark Priors for Bayesian Model Averaging," *Journal of Econometrics* 100:2 (February 2001), 381–427. 10.1016/S0304-4076(00)00076-2
+
+Furukawa, Chishio, "Publication Bias under Aggregation Frictions: Theory, Evidence, and a New Correction Method," MIT working paper (2020).
+
+Gechert, Sebastian, Tomas Havranek, Zuzana Irsova, and Dominika Kolcunova, "Measuring Capital-Labor Substitution: The Importance of Method Choices and Publication Bias," *Review of Economic Dynamics* 45 (2022), 55–82. 10.1016/j.red.2021.05.003
+
+George, Edward I., "Dilution Priors: Compensating for Model Space Redundancy" (pp. 158–165), in *IMS Collections Borrowing Strength: Theory Powering Applications—A Festschrift for Lawrence D. Brown*, Vol. 6 (Institute of Mathematical Statistics, 2010).
+
+Gerber, Alan, and Neil Malhotra, "Do Statistical Reporting Standards Affect What Is Published? Publication Bias in Two Leading Political Science Journals," *Quarterly Journal of Political Science* 3:3 (October 2008), 313–326. 10.1561/100.00008024
+
+Griliches, Zvi, "Estimating the Returns to Schooling: Some Econometric Problems," *Econometrica* 45:1 (1977), 1–22. 10.2307/1913285
+
+Hansen, Bruce E., "Least Squares Model Averaging," *Econometrica* 75:4 (2007), 1175–1189. 10.1111/j.1468-0262.2007.00785.x
+
+Hausman, Jerry, "Mismeasured Variables in Econometric Analysis: Problems from the Right and Problems from the Left," *Journal of Economic Perspectives* 15:4 (Fall 2001), 57–67. 10.1257/jep.15.4.57
+
+Havranek, Tomas, "Measuring Intertemporal Substitution: The Importance of Method Choices and Selective Reporting," *Journal of the European Economic Association* 13:6 (2015), 1180–1204. 10.1111/jeea.12133
+
+Havranek, Tomas, Tom D. Stanley, Hristos Doucouliagos, Pedro R. D. Bom, Jerome Geyer-Klingeberg, Ichiro Iwasaki, Robert W. Reed, Katja Rost, and Robbie C. M. van Aert, "Reporting Guidelines for Meta-Analysis in Economics," *Journal of Economic Surveys* 34:3 (2020), 469–475. 10.1111/joes.12363
+
+Imai, Taisuke, Tom A. Rutter, and Colin F. Camerer, "Meta-Analysis of Present-Bias Estimation Using Convex Time Budgets," *The Economic Journal* 131:636 (2021), 1788–1814. 10.1093/ej/ueaa115
+
+Ioannidis, John P. A., Tom Stanley, and Hristos Doucouliagos, "The Power of Bias in Economics Research," *The Economic Journal* 127:605 (2017), F236–F265. 10.1111/ecoj.12461
+
+Iwasaki, Ichiro, "The Finance-Growth Nexus in Latin America and the Caribbean: A Meta-Analytic Perspective," *World Development* 149:C (2022), 105692.
+
+Jeffreys, Harold, *Theory of Probability*. Oxford Classic Texts in the Physical Sciences, 3rd ed. (Oxford: Oxford University Press, 1961).
+
+Katz, Lawrence F., and Kevin M. Murphy, "Changes in Relative Wages, 1963–1987: Supply and Demand Factors," *The Quarterly Journal of Economics* 107:1 (1992), 35–78. 10.2307/2118323
+
+Kawaguchi, Daiji, and Yuko Mori, "Why Has Wage Inequality Evolved so Differently between Japan and the US? The Role of the Supply of College-Educated Workers," *Economics of Education Review* 52:1 (2016), 29–50. 10.1016/j.econedurev.2016.01.002
+
+Kearney, Ide, "Estimating the Demand for Skilled Labour, Unskilled Labour and Clerical Workers: A Dynamic Framework," The Economic and Social Research Institute ESRI working paper 91 (December 1997).
+
+Klenow, Peter J., and Andres Rodriguez-Clare, "The Neoclassical Revival in Growth Economics: Has It Gone Too Far?" *NBER Macroeconomics Annual* 12 (January 1997), 73–114. 10.1086/654324
+
+Kranz, Sebastian, and Peter Putz, "Methods Matter: *p*-Hacking and Publication Bias in Causal Analysis in Economics: Comment," *American Economic Review* 112 (2022), 3124–3136. 10.1257/aer.20210121
+
+Ley, Eduardo, and Mark F. J. Steel, "On the Effect of Prior Assumptions in Bayesian Model Averaging with Applications to Growth Regression," *Journal of Applied Econometrics* 24:4 (2009), 651–674. 10.1002/jae.1057
+
+Matousek, Jindrich, Tomas Havranek, and Zuzana Irsova, "Individual Discount Rates: A Meta-Analysis of Experimental Evidence," *Experimental Economics* 25:1 (February 2022), 318–358. 10.1007/s10683-021-09716-9
+
+McCloskey, Deirdre N., and Stephen T. Ziliak, "What Quantitative Methods Should We Teach to Graduate Students? A Comment on Swann's 'Is Precise Econometrics an Illusion?'" *The Journal of Economic Education* 50:4 (2019), 356–361. 10.1080/00220485.2019.1654957
+
+Neisser, Carina, "The Elasticity of Taxable Income: A Meta-Regression Analysis," *Economic Journal* 131:640 (2021), 3365–3391. 10.1093/ej/ueab038
+
+Raftery, Adrian E., David Madigan, and Jennifer A. Hoeting, "Bayesian Model Averaging for Linear Regression Models," *Journal of the American Statistical Association* 92:437 (1997), 179–191. 10.1080/01621459.1997.10473615
+
+Roodman, David, James G. MacKinnon, Morten O. Nielsen, and Matthew D. Webb, "Fast and Wild: Bootstrap Inference in Stata Using Boottest," Department of Economics, Queen's University, Canada, Kingston working paper 1406 (2018).
+
+Stanley, Tom D., "Beyond Publication Bias," *Journal of Economic Surveys* 19:3 (2005), 309–345. 10.1111/j.0950-0804.2005.00250.x
+
+——— "Meta-Regression Methods for Detecting and Estimating Empirical Effects in the Presence of Publication Selection," *Oxford Bulletin of Economics and Statistics* 70:1 (2008), 103–127. 10.1111/j.1468-0084.2007.00487.x
+
+Stanley, Tom D., and Hristos Doucouliagos, "Meta-Regression Approximations to Reduce Publication Selection Bias," *Research Synthesis Methods* 5:1 (2014), 60–78. 10.1002/jrsm.1095
+
+——— "Neither Fixed nor Random: Weighted Least Squares Meta-Analysis," *Statistics in Medicine* 34:13 (2015), 2116–2127. 10.1002/sim.6481
+
+Stanley, Tom D., Hristos Doucouliagos, and John P. A. Ioannidis, "Retrospective Median Power, False Positive Meta-Analysis and Large-Scale Replication," *Research Synthesis Methods* 13:1 (2022), 88–108. 10.1002/jrsm.1529
+
+Stanley, Tom D., Hristos Doucouliagos, John P. A. Ioannidis, and Evan C. Carter, "Detecting Publication Selection Bias through Excess Statistical Significance," *Research Synthesis Methods* 12:6 (2021), 776–795. 10.1002/jrsm.1512
+
+Steel, Mark F. J., "Model Averaging and Its Use in Economics," *Journal of Economic Literature* 58:3 (2020), 644–719. 10.1257/jel.20191385
+
+Sun, Liyang, "Implementing Valid Two-Step Identification-Robust Confidence Sets for Linear Instrumental-Variables Models," *Stata Journal* 18:4 (December 2018), 803–825. 10.1177/1536867X1801800404
+
+Ugur, Mehmet, Sefa A. Churchill, and Hoang M. Luong, "What Do We Know about R&D Spillovers and Productivity? Meta-Analysis Evidence on Heterogeneity and Statistical Power," *Research Policy* 49:1 (2020), 103866. 10.1016/j.respol.2019.103866
+
+Verdugo, Gregory, "The Great Compression of the French Wage Structure, 1969–2008," *Labour Economics* 28:C (2014), 131–144. 10.1016/j.labeco.2014.04.009
+
+Xue, Xindong, Robert W. Reed, and Andrea Menclova, "Social Capital and Health: A Meta-Analysis," *Journal of Health Economics* 72:C (2020), 102317. 10.1016/j.jhealeco.2020.102317
+
+Zeugner, Stefan, and Martin Feldkircher, "Bayesian Model Averaging Employing Fixed and Flexible Priors: The BMS Package for R," *Journal of Statistical Software* 68:4 (2015), 1–37. 10.18637/jss.v068.i04
+
+Zigraiova, Diana, Tomas Havranek, Zuzana Irsova, and Jiri Novak, "How Puzzling Is the Forward Premium Puzzle? A Meta-Analysis," *European Economic Review* 134:C (2021), 103714. 10.1016/j.euroecorev.2021.103714

@@ -170,9 +170,15 @@ class Builder:
         # Only a "1." *inside the reference list* means the references are numbered. A paper
         # with author-year references and numbered endnotes has a "1." too, and reading it as
         # a reference number sends every endnote marker to a #ref- anchor that does not exist.
+        # The list ends at the next heading: several papers print their endnotes after their
+        # references, so "somewhere below the REFERENCES line" is not the same section.
         m_refs = re.search(r"^##\s+REFERENCES.*$", src, re.M)
-        self.refs_numbered = bool(m_refs) and bool(
-            re.search(r"^1\.\s", src[m_refs.end():], re.M))
+        self.refs_numbered = False
+        if m_refs:
+            rest = src[m_refs.end():]
+            m_next = re.search(r"^##\s+", rest, re.M)
+            section = rest[:m_next.start()] if m_next else rest
+            self.refs_numbered = bool(re.search(r"^1\.\s", section, re.M))
         lines = src.split("\n")
         i = 0
         buf = []
