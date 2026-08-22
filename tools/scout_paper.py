@@ -27,8 +27,17 @@ sys.path.insert(0, os.path.join(ROOT, "tools"))
 # delimiter or a title after it -- "Table 3. Summary", "Fig. S7:" -- while a line-wrapped
 # cross-reference carries on with the sentence: "Figure 9 in the online appendix". Both
 # start a line, and only the next word tells them apart.
+#
+# A delimiter alone is not enough, because a cross-reference can also END a sentence at a
+# line start: a note closing with "... are available in Figure S3." looks like a caption
+# down to the full stop. So a delimiter must be followed by the caption's own text. A
+# number with nothing at all after it is still a caption -- some journals set the label on
+# its own line and the title beneath it.
 CAPTION = re.compile(r"^\s*(T\s?A\s?B\s?L\s?E|TABLE|Table|F\s?I\s?G\s?U\s?R\s?E|FIGURE|Figure|Fig\.)"
-                     r"\s*(S?[0-9]+[A-Za-z]?)\s*(?=[.:;,\u2014\u2013-]|$|[A-Z(\[])", re.M)
+                     r"\s*(S?[0-9]+[A-Za-z]?)"
+                     r"(?=[^\S\n]*$"
+                     r"|[^\S\n]*[.:;,\u2014\u2013-][^\S\n]*\S"
+                     r"|[^\S\n]*[A-Z(\[])", re.M)
 BACK = re.compile(r"^\s*(R\s?E\s?F\s?E\s?R\s?E\s?N\s?C\s?E\s?S|REFERENCES|References|Bibliography)\s*$",
                   re.M)
 EQNUM = re.compile(r"\(\s*(\d{1,2})\s*\)\s*$", re.M)

@@ -11,6 +11,7 @@ box rules, plotted lines -- and running prose has none. Counting rows that conta
 sorts them without anybody looking.
 """
 
+import json
 import os
 import sys
 
@@ -18,6 +19,19 @@ import numpy as np
 from PIL import Image
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+
+
+def reviewed():
+    """Crops a person has already looked at and kept.
+
+    The screen is a screen, not a proof: a sparse two-panel line plot with a row of axis
+    ticks lands between the two calibrated bands and gets called prose. Deleting it would be
+    wrong and leaving it reported forever is worse, because a standing warning is one nobody
+    reads and a real bad crop then hides behind it."""
+    path = os.path.join(ROOT, "tools", "figures_reviewed.json")
+    if not os.path.exists(path):
+        return {}
+    return {k: v for k, v in json.load(open(path)).items() if not k.startswith("_")}
 
 
 def line_rhythm(path):
@@ -52,6 +66,7 @@ def main(argv):
         projects = sorted(d for d in os.listdir(ROOT)
                           if os.path.isdir(os.path.join(ROOT, d, "paper", "figures")))
     bad = 0
+    seen = 0
     for project in projects:
         d = os.path.join(ROOT, project, "paper", "figures")
         if not os.path.isdir(d):
@@ -63,13 +78,17 @@ def main(argv):
             v, share, shape = verdict(path)
             if v == "plot":
                 continue
+            if "%s/%s" % (project, name) in reviewed():
+                seen += 1
+                continue
             bad += 1
             print("%-20s %-12s %-7s flips/100rows %4.1f  %dx%d"
                   % (project, name, v, share, shape[1], shape[0]))
             if delete:
                 os.remove(path)
-    print("\n%d crop(s) look like text rather than artwork%s"
-          % (bad, " -- deleted" if delete else ""))
+    print("\n%d crop(s) look like text rather than artwork%s%s"
+          % (bad, " -- deleted" if delete else "",
+             "; %d reviewed and kept (tools/figures_reviewed.json)" % seen if seen else ""))
     return 0
 
 

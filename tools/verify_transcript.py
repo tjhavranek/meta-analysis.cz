@@ -60,6 +60,9 @@ def normalise(text):
     # Czech it would otherwise fire on nearly every paper.
     text = "".join(c for c in unicodedata.normalize("NFKD", text)
                    if not unicodedata.combining(c))
+    # LaTeX builds an accented i by setting a DOTLESS i under the accent, so removing the
+    # accent leaves the dotless letter behind and "Brasilia" no longer matches itself.
+    text = text.replace("\u0131", "i").replace("\u0237", "j")
     return text
 
 
