@@ -53,6 +53,13 @@ def normalise(text):
                 .replace("\u00ad", "")            # soft hyphen, left inside words by some PDFs
                 .replace("ﬁ", "fi").replace("ﬂ", "fl").replace(" ", " "))
     text = re.sub(r"(\w)-\s*\n\s*(\w)", r"\1\2", text)   # hyphenation across a line break
+    # Accents are folded away. A LaTeX text layer stores "Havranek" with its acute accent as
+    # a separate glyph, so the word breaks into "havr" and "anek", while the transcript's
+    # composed character breaks it into "havr" and "nek". Neither is a transcription error
+    # and the difference is not evidence about anything; on a site whose authors are mostly
+    # Czech it would otherwise fire on nearly every paper.
+    text = "".join(c for c in unicodedata.normalize("NFKD", text)
+                   if not unicodedata.combining(c))
     return text
 
 

@@ -140,7 +140,7 @@ def try_candidates(project, num, page, candidates):
         return None
     for band in candidates:
         try:
-            path = extract(project, num, page, (0.04, band[0], 0.97, band[1]))
+            path = extract(project, num, page, (0.04, band[0], 0.97, band[1]))  # x is the full measure
         except Exception:
             continue
         v, flips, shape = verdict(path)
@@ -213,6 +213,16 @@ def locate(project, wanted=None):
         # The page number is the last thing on the page and it is not artwork. A band that
         # runs to the bottom edge swallows it, and it then sits inside the figure on the
         # web page, where it means nothing.
+        # The running head is the same kind of furniture at the other end of the page: a
+        # short line in the top eighth with a clear gap below it. A band that starts at the
+        # top edge prints the journal's own header inside the figure.
+        head = 0.04
+        if len(lines) > 1:
+            first_y = min(t[1] for t in lines[0])
+            gap = min(t[1] for t in lines[1]) - max(t[3] for t in lines[0])
+            if first_y < 0.08 * h and gap > 0.02 * h:
+                head = (max(t[3] for t in lines[0]) + 6.0) / h
+
         foot = 0.96
         for ln in reversed(lines):
             text = " ".join(t[4] for t in ln).strip()
@@ -235,7 +245,7 @@ def locate(project, wanted=None):
         # available when nothing follows the caption: if the walk found a line of prose
         # below the figure, the figure stops there, and a band that runs past it is a crop
         # of the paragraph as much as of the plot.
-        wide = [(0.04, above[1])]
+        wide = [(head, above[1])]
         if below_stop >= h:
             wide.append((below[0], foot))
         fallback = [c for c in wide if c[1] - c[0] >= 0.03]

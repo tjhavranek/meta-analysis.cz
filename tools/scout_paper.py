@@ -87,18 +87,7 @@ def scout(project, papers):
         ceiling = max(2, ceiling)
         return {k: v for k, v in found.items()
                 if int(re.sub(r"\D", "", k) or 0) <= ceiling}
-    def own_series(found):
-        """An S-numbered caption is this document's own only if it has no other kind.
-
-        A paper whose own tables are 1, 2, 3 and which points its reader at "Table S1" is
-        pointing outside itself, at a supplement it does not contain. A supplement numbers
-        everything S1, S2, S3 and has no other series to confuse it with."""
-        prefixed = {k for k in found if not k[:1].isdigit()}
-        if prefixed and len(prefixed) < len(found):
-            return {k: v for k, v in found.items() if k in found and k[:1].isdigit()}
-        return found
-
-    tables, figures = plausible(own_series(tables)), plausible(own_series(figures))
+    tables, figures = plausible(tables), plausible(figures)
 
     numbered = bool(re.search(r"^\s*1\.\s+[A-Z][a-z]+,?\s", text[text.find("REFERENCES"):] or "", re.M))
     words = len(text.split())
