@@ -39,9 +39,7 @@ block. CI calls the same command, so there is one copy of the order and not thre
 unreliable — matching on them selects a t-statistic instead of the effect in one dataset and
 a functional-form dummy in another. Where the arithmetic test was not decisive, the mapping
 comes from the paper's own replication code or other documented evidence, and every such
-decision is recorded there under `verified_by` with the evidence that settled it. One
-literature, `finance_growth`, has no replication-code confirmation and is marked
-`arithmetic_pairing_only`.
+decision is recorded there under `verified_by` with the evidence that settled it.
 
 `units.json` records what each literature's effect measures and, where the sign convention
 can be misread, a `direction_note`. Several are load-bearing: `dst` stores the impact on

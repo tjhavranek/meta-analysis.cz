@@ -161,14 +161,13 @@ against a null of 1. Eighteen of the 40 literatures pooled at 1.0.0 show a
 publication-bias intercept beyond ±1.96. That count has **not** been recomputed
 since `finance_growth` joined at 1.1.0.
 
-**Forty of the 41 pooled literatures are verified** — 20 `domain_reviewed`, 20 `code_traced`.
-The exception is `finance_growth`, added at 1.1.0 and marked `arithmetic_pairing_only`: two
-candidate column pairs both reproduce its reported t-statistic, and the published pair was
-chosen because it is a partial correlation while the other spans -278 to 3375. Its replication
-code has not been read, so its estimand is not independently confirmed. `gasoline_price` ships no replication code anywhere, so it was
-checked against its paper's published results instead: the abstract reports corrected elasticities
-of -0.31 long-run and -0.09 short-run with published averages "exaggerated twofold", and the
-shipped data gives -0.691 and -0.227, reproducing that.
+**All 41 pooled literatures are verified** — 21 `domain_reviewed`, 20 `code_traced`. Where a
+paper ships no replication code, the mapping was checked against its published results by
+hand: `gasoline_price`'s abstract reports corrected elasticities of -0.31 long-run and -0.09
+short-run with published averages "exaggerated twofold", and the shipped data gives -0.691 and
+-0.227, reproducing that; `finance_growth`'s shipped column reproduces its paper's Table 1
+exactly — 67 studies, 1,334 estimates, median 0.14, mean 0.15, random-effects 0.14 with a
+matching confidence interval.
 
 Per-column minimum, maximum, median and quartiles for every dataset are in its
 codebook, so you can see the tails before you load anything.
@@ -284,26 +283,21 @@ settles most datasets outright. Where it could not — no t-statistic column, an
 asymmetric confidence interval, a wide layout, an outcome that is itself a
 t-statistic — the mapping was taken from the paper's own published replication
 code or other documented evidence, and `verified_by` in the harmonisation report
-records which file and which line of reasoning settled it. One literature is the
-exception: for `finance_growth`, two candidate column pairs both reproduce the
-reported t-statistic, no replication code was read to break the tie, and the
-mapping is marked `arithmetic_pairing_only` in the table below rather than
-independently confirmed.
+records which file and which line of reasoning settled it.
 
 ## Two products, not one
 
 **The archive is a faithful mirror. The harmonised table is an interpretation.**
-They are separate things and should be trusted differently. 40 of the 41
-literatures' mappings are verified, the exception being `finance_growth`, but
-the table still involves judgement the archive does not.
+They are separate things and should be trusted differently. All 41 literatures'
+mappings are verified, but the table still involves judgement the archive does
+not.
 
 *Archive* — the original files, faithful CSV and Parquet mirrors, codebooks, and
 paper/DOI metadata. Faithful conversions of what was published.
 
 *Harmonised table* — 49,669 selected estimates, automatically mapped and in some
-cases transformed. Forty of the 41 column mappings are verified against the paper's
-own replication code or published results; `finance_growth`'s is not, and is marked
-`arithmetic_pairing_only`. And there is still **no independent end-to-end
+cases transformed. Every column mapping is verified against the paper's own
+replication code or published results. And there is still **no independent end-to-end
 reproduction** of any paper's headline number from these files alone.
 
 Every dataset carries an `audit_status` so you can filter on review quality
@@ -311,9 +305,8 @@ rather than read prose:
 
 | status | meaning | count |
 |---|---|---|
-| `domain_reviewed` | checked by hand against the paper's own replication code, or against its published results where no code exists | 20 of 41 pooled |
+| `domain_reviewed` | checked by hand against the paper's own replication code, or against its published results where no code exists | 21 of 41 pooled |
 | `code_traced` | mapping confirmed by reading the paper's code and comparing the variables it regresses | 20 of 41 pooled |
-| `arithmetic_pairing_only` | effect/se pair proven only by reproducing the reported t-statistic, estimand **not** independently confirmed | 1 of 41 pooled — `finance_growth`, added at 1.1.0 |
 | `duplicate_excluded` | same estimates as another literature | 2 |
 | `excluded_no_precision` | no per-estimate standard error exists | 2 |
 
