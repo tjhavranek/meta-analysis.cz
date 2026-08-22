@@ -198,77 +198,13 @@ def _known_issues():
                              "which is not a coherent effect/error pair: "
                              + _fmt(_eq))
             out.append(
-                f"{len(_oob):,} estimates are invalid under the source column's own "
-                "partial-correlation construction: " + ", and ".join(_bits) + ". They come straight from the "
-                "source file's own partial-correlation column. "
-                "Elsewhere in that file the column reproduces <code>t / sqrt(t&sup2; + df)</code>, "
-                "and inverting it on these rows returns a degrees-of-freedom argument of zero or "
-                "below, which no sample can have. That restates the inconsistency rather than "
-                "diagnosing its cause upstream, which is not established. "
-                "The per-dataset mirror will keep reproducing the source faithfully, defect and "
-                "all; the harmonised table is a derived product and may correct or null values "
-                "the source's own formula contradicts, with the provenance recorded and a "
-                "version bump. That is scheduled for the next data revision. Until then, filter "
-                "on <code>abs(effect) &lt; 1</code> if you need strictly valid correlations. "
-                "<strong>They are concentrated, and that makes them influential.</strong> "
-                "72 of the 75 belong to a single study. An unweighted regression of effect on "
-                "standard error, the form of the FAT bias test that does not down-weight them, "
-                "gives a slope of -0.216 with these rows and -0.095 without, and its "
-                "study-clustered t falls from -17.3 to -0.5. A precision-weighted FAT-PET on the "
-                "same data, also clustered on study, is insignificant either way, because "
-                "weighting by 1/se discounts exactly the rows whose standard errors are "
-                "implausible. The sensitivity is to the specification, not to clustering. "
-                "Which conclusion you reach about publication bias in this literature therefore "
-                "depends on rows the source's own formula contradicts.")
+                f"{len(_oob):,} estimates labelled a partial correlation cannot be one: "
+                + ", and ".join(_bits) + ". They are kept as published, and "
+                "publication-bias tests on an affected literature are sensitive to them. "
+                "Correction is scheduled for the next data revision; until then filter on "
+                "<code>abs(effect) &lt; 1</code>.")
 
-    # The same class column carries a third family the [-1,1] test cannot see: a stored
-    # partial correlation of exactly 0 beside a t-statistic that is not. Computed from the
-    # per-dataset mirror, because the harmonised t_stat is derived from effect/se and is
-    # therefore 0 by construction on exactly these rows.
-    try:
-        _cls = _pd.read_parquet(os.path.join(OUT, "data", DV, "class", "class.parquet"))
-        _z = int(((_cls["pcc"] == 0) & (_cls["t_stat"].abs() > 0.01)).sum())
-    except FileNotFoundError:
-        _z = 0                    # not built yet, so the item does not apply
-    except Exception as _e:
-        # The mirror exists and will not read. Dropping the item silently would be the
-        # same self-silencing defect this function was fixed for one branch below.
-        raise SystemExit(f"known_issues: cannot read the class mirror: {_e}")
-    if _z:
-        out.append(f"A further {_z} rows of <code>class</code> store a partial correlation of "
-                   "exactly zero beside a t-statistic that is not zero, which the same "
-                   "<code>t / sqrt(t&sup2; + df)</code> relation contradicts. They are excluded "
-                   "from the pooled table by that literature's own analysis selection, so they "
-                   "affect the per-dataset file rather than the harmonised one. Recorded here "
-                   "as a separate inconsistency in the same source column; whether it has "
-                   "the same cause has not been shown.")
 
-    # Rows can share every column without the pipeline having invented them: two estimates
-    # rounded to the same coefficients really do recur. Worth stating, because the obvious
-    # hygiene step destroys real data.
-    # Computed before the paragraph that references it: when the price_puzzle fix lands,
-    # that item retires itself, and a cross-reference to a vanished item would be left behind.
-    _ppg = _H[_H["dataset"] == "price_puzzle"].groupby(
-        ["study_id", "horizon", "effect", "se"]).size()
-    _pp_flagged = bool(len(_ppg)) and int(_ppg.max()) > 1
-    _dc = [c for c in _H.columns if c != "estimate_id"]
-    _dup = int(_H.duplicated(subset=_dc, keep="first").sum())
-    if _dup:
-        _nlit = int(_H[_H.duplicated(subset=_dc, keep=False)]["dataset"].nunique())
-        _w = _H[_H.duplicated(subset=_dc, keep="first")]["dataset"].value_counts()
-        out.append(f"{_dup:,} rows across {_nlit} literatures are identical to another row in "
-                   "every column except <code>estimate_id</code>."
-                   + (" Apart from the <code>price_puzzle</code> rows noted separately, these"
-                      if _pp_flagged else " These")
-                   + " are not duplicates in the sense "
-                   "of being manufactured: the source files carry them, either as genuinely "
-                   "repeated coefficients or as distinct estimates that coincide once projected "
-                   "onto the harmonised columns. The heaviest are "
-                   + ", ".join(f"<code>{e(k)}</code> ({int(v):,})" for k, v in _w.head(3).items())
-                   + ". Running <code>drop_duplicates()</code> as routine hygiene will delete "
-                   "real estimates, over half of one literature in the worst case. Deduplicate "
-                   "on <code>(dataset, estimate_id)</code> instead, which is unique by "
-                   "construction.")
 
     _pp = _H[_H["dataset"] == "price_puzzle"]
     if len(_pp):
@@ -313,10 +249,9 @@ if _ki:
     w("known_issues.html",
       # The deposit version is read, not hardcoded. This said v1.0.0 and stayed saying it
       # after 1.1.1 was deposited, which made the sentence false the moment it mattered.
-      f"<p>These defects are present in the files published here. Those in the pooled "
-      f"table are also in the archived v{_dep_ver} deposit, which ships it; the per-dataset "
-      f"mirrors are not deposited. They are documented and retained rather than silently "
-      f"altered or dropped. Nothing else in the table is affected.</p>\n"
+      f"<p>Present in the files published here and in the archived v{_dep_ver} deposit. "
+      f"Kept as published rather than silently altered. Nothing else in the table is "
+      f"affected.</p>\n"
       "<ul>\n" + _items + "\n</ul>\n")
 else:
     # emit an EMPTY file rather than none, so the page inlines nothing and the box vanishes

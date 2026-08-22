@@ -141,7 +141,9 @@ DOI will not.
 **Cluster on `(dataset, study_id)`, never on `study_id` alone.** `study_id` is unique within
 a literature, not across the table. There are 524 distinct values but 2,963 real
 literature-study pairs, so clustering on the bare column silently merges unrelated studies
-and collapses 82% of your clusters, from 2,963 to 524. On a pooled regression the standard
+and collapses 82% of your clusters, from 2,963 to 524. And if you deduplicate, do it
+on `(dataset, estimate_id)`, which is unique by construction: rows elsewhere can legitimately
+agree in every other column, so a blanket `drop_duplicates()` deletes real estimates. On a pooled regression the standard
 errors happen to come out within 1% of the correct ones, so nothing looks wrong; the damage is
 to the cluster count that cluster-robust inference depends on, and to any literature-level
 statistic where the merged studies are genuinely unrelated.
@@ -188,39 +190,15 @@ units are left as `elasticity`; that open question is recorded in `units.json`.
 
 ## Known defects in this release
 
-These are present in the files as published, here and in the archived deposit. They are
-documented and retained rather than silently altered, so anyone reproducing an analysis gets
-what we got.
+**75 `class` estimates are invalid as partial correlations**: 2 lie outside `[-1, 1]`, to
+|1.372|, and 73 sit at exactly ±1 beside a positive standard error. They are in the source
+file, 72 of them in one study, and publication-bias tests on this literature are sensitive to
+them: an unweighted regression of `effect` on `se` moves sharply when they are excluded, while
+the precision-weighted form does not. A further 82 rows of the per-dataset `class` file store a
+partial correlation of exactly zero beside a non-zero t-statistic; those do not enter the
+pooled table. Everything is kept as published; correction is scheduled for the next data
+revision. Until then, filter on `abs(effect) < 1` where you need strictly valid correlations.
 
-**75 `class` estimates are invalid under the source column's own construction.** Two lie
-outside `[-1, 1]` altogether, to |1.372|, and 73 sit at exactly ±1 while carrying a positive
-standard error. Across the rest of that file the partial-correlation column reproduces
-`t / sqrt(t² + df)`; on these rows inverting it returns a degrees-of-freedom argument at or
-below zero, which no sample has. That is a restatement of the inconsistency rather than a
-diagnosis of its upstream cause, which is not established. Filter on `abs(effect) < 1` if you
-need strictly valid correlations.
-
-**They are concentrated, and publication-bias inference is not robust to them.** 72 of the 75
-belong to a single study. The sensitivity is to the *specification*, not to whether you cluster.
-An unweighted regression of `effect` on `se` with study-clustered errors — the form the paper's
-own code runs — gives a slope of −0.216 with these rows and −0.095 without, t = −17.3 against
-−0.5. A precision-weighted FAT-PET on the same data, also study-clustered, is insignificant
-either way, t = −0.68 against −0.54, because weighting by `1/se` discounts exactly the rows whose
-standard errors are implausible. Both are study-clustered; they disagree because they weight
-differently. Treat publication-bias inference for `class` as non-robust to these rows, and quote
-the specification alongside any number you report.
-
-**A further 82 `class` rows** store a partial correlation of exactly zero beside a non-zero
-t-statistic, which the same relation contradicts. Those rows are excluded from the pooled table
-by that literature's own analysis selection, so they affect the per-dataset file rather than
-this one. Whether they share a cause with the 75 has not been shown.
-
-**1,469 rows across 38 literatures are identical to another row in every column except
-`estimate_id`.** These are not manufactured: the source files carry them, either as genuinely
-repeated coefficients or as distinct estimates that coincide once projected onto the harmonised
-columns. The heaviest are `scc` (322), `inflation` (177) and `forward` (88). Running
-`drop_duplicates()` as routine hygiene will delete real estimates — more than half of `scc`.
-Deduplicate on `(dataset, estimate_id)`, which is unique by construction.
 
 ## What is not in the harmonised table, and why
 
