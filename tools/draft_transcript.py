@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """Draft a transcript mechanically from a paper's own text layer.
 
-    python3 tools/draft_transcript.py <project> [--pages 1-12] [--force]
+    python3 tools/draft_transcript.py <project> [--pages 1-12] [--out PATH]
 
 Writes tools/transcripts/<project>.draft.md.
 
@@ -45,9 +45,101 @@ EQ_TAIL_RE = re.compile(r"\(\s*(\d{1,2}[a-z]?)\s*\)\s*$")
 MATHY = re.compile(r"[=∑√∫±≤≥≈∼×·⋅αβγδεθλμπρστφχψωΓΔΘΛΣΦΨΩ]|\b(?:ln|log|exp|max|min)\b")
 
 
-def pdftotext(pdf, layout=False):
+def pdftotext(pdf, layout=True):
     cmd = ["pdftotext"] + (["-layout"] if layout else []) + [pdf, "-"]
     return subprocess.run(cmd, capture_output=True, text=True, check=True).stdout
+
+
+def find_gutter(lines, min_share=0.80):
+    """The column gap of a two-column page, as a (start, end) character range.
+
+    In a layout-preserving extraction the gutter is the band of character positions that
+    is blank on nearly every line of the page. Finding it by counting blanks means no page
+    geometry has to be assumed, and a single-column page simply has no such band near the
+    middle."""
+    body = [l for l in lines if l.strip()]
+    if len(body) < 12:
+        return None
+    # The publisher's vertical rights strip comes out as one enormously long line. Left in,
+    # it triples the apparent width of the page and the real gutter stops looking central.
+    lengths = sorted(len(l) for l in body)
+    median = lengths[len(lengths) // 2]
+    body = [l for l in body if len(l) <= max(90, int(median * 1.4))]
+    if len(body) < 12:
+        return None
+    width = max(len(l) for l in body)
+    if width < 60:
+        return None
+    blank = [sum(1 for l in body if pos >= len(l) or l[pos] == " ") for pos in range(width)]
+    need = min_share * len(body)
+    bands, run = [], None
+    for pos, count in enumerate(blank):
+        if count >= need:
+            run = (run[0], pos) if run else (pos, pos)
+        else:
+            if run:
+                bands.append(run)
+            run = None
+    if run:
+        bands.append(run)
+    # The right margin is a blank band too, and usually a wider one, so centrality is the
+    # test and width only decides between candidates that pass it.
+    central = [(a, b) for a, b in bands
+               if 0.30 * width < (a + b) / 2 < 0.70 * width and b - a >= 2]
+    if not central:
+        return None
+    return max(central, key=lambda ab: ab[1] - ab[0])
+
+
+def uncolumn(page):
+    """Put a two-column page back into reading order: all of the left column, then all of
+    the right. Lines that cross the gutter belong to neither column -- a full-width title,
+    a table spanning the page -- and are emitted where they stand, which keeps the zones
+    around them in order."""
+    lines = page.split("\n")
+    gutter = find_gutter(lines)
+    if not gutter:
+        return page
+    start, end = gutter
+    out, left, right = [], [], []
+
+    def flush():
+        if left or right:
+            out.extend(left)
+            out.append("")
+            out.extend(right)
+            out.append("")
+        left.clear()
+        right.clear()
+
+    lo, hi = max(0, start - 8), end + 9
+    for line in lines:
+        # Text does not respect the gutter exactly: a long word or a display equation
+        # bleeds a character or two across it. So the split point is the widest run of
+        # spaces near the gutter, and only a line with no gap at all there is full-width.
+        window = line[lo:hi]
+        gaps = [(m.end() - m.start(), m.start(), m.end())
+                for m in re.finditer(r" {2,}", window)]
+        if line[start:end + 1].strip() and not gaps:
+            if line[:start].strip() and line[end + 1:].strip():
+                flush()
+                out.append(line)
+                continue
+        if gaps:
+            _, gs, ge = max(gaps)
+            cut_l, cut_r = lo + gs, lo + ge
+        else:
+            cut_l, cut_r = start, end + 1
+        l, r = line[:cut_l], line[cut_r:]
+        l, r = l.rstrip(), r.rstrip()
+        if l.strip():
+            left.append(l)
+        elif not r.strip():
+            left.append("")
+        if r.strip():
+            right.append(r)
+    flush()
+    return "\n".join(out)
 
 
 def strip_furniture(pages):
@@ -132,7 +224,7 @@ def classify(para, seen_backmatter):
     return "prose", s
 
 
-def draft(project, page_range=None):
+def draft(project, page_range=None, out=None):
     import json
     from build_paper_page import paper_pdf
     papers = {p["project"]: p for p in json.load(open(os.path.join(ROOT, "tools", "papers.json")))}
@@ -145,10 +237,11 @@ def draft(project, page_range=None):
     if page_range:
         first, last = page_range
         pages = pages[first - 1:last]
+    pages = [uncolumn(p) for p in pages]
     pages = strip_furniture(pages)
     body = dehyphenate("\n\n".join(pages))
 
-    out = ["# %s" % meta.get("title", project),
+    lines_out = ["# %s" % meta.get("title", project),
            "",
            "<!-- Drafted from %s by tools/draft_transcript.py. The prose is the PDF's own text" % rel,
            "     layer, unedited. Every <<...>> marker is work for a reader of the page image:",
@@ -160,46 +253,54 @@ def draft(project, page_range=None):
         if kind == "table":
             num, cap = payload
             n_tables += 1
-            out += ["TABLE %s. %s" % (num, cap),
+            lines_out += ["TABLE %s. %s" % (num, cap),
                     "<<TABLE %s: replace this line with the pipe table, read off the page image>>"
                     % num, ""]
         elif kind == "figure":
             num, cap = payload
             n_figs += 1
-            out += ["FIGURE %s. %s" % (num, cap),
+            lines_out += ["FIGURE %s. %s" % (num, cap),
                     "<<FIGURE %s: check the caption above is complete; extract the artwork with "
                     "tools/extract_figure.py>>" % num, ""]
         elif kind == "equation":
             n_eqs += 1
             m = EQ_TAIL_RE.search(payload)
             num = m.group(1) if m else ""
-            out += ["<<EQUATION%s from the text layer: %s>>" % (" " + num if num else "", payload),
+            lines_out += ["<<EQUATION%s from the text layer: %s>>" % (" " + num if num else "", payload),
                     "$$ %s $$%s" % ("\\text{TODO}", " (%s)" % num if num else ""), ""]
         elif kind == "heading":
             num, text = payload
             level = "###" if (num and num.count(".") >= 1) else "##"
-            out += ["%s %s" % (level, ("%s | %s" % (num, text)) if num else text), ""]
+            lines_out += ["%s %s" % (level, ("%s | %s" % (num, text)) if num else text), ""]
         elif kind == "backmatter":
-            out += ["## %s" % payload, ""]
+            lines_out += ["## %s" % payload, ""]
         else:
-            out += [payload, ""]
+            lines_out += [payload, ""]
 
-    path = os.path.join(ROOT, "tools", "transcripts", "%s.draft.md" % project)
+    path = out or os.path.join(ROOT, "tools", "transcripts", "%s.draft.md" % project)
     os.makedirs(os.path.dirname(path), exist_ok=True)
     with open(path, "w") as fh:
-        fh.write("\n".join(out).rstrip() + "\n")
+        fh.write("\n".join(lines_out).rstrip() + "\n")
     print("%-22s %s -> %s  (%d tables, %d figures, %d equations to fill)"
           % (project, rel, os.path.relpath(path, ROOT), n_tables, n_figs, n_eqs))
     return path
 
 
 if __name__ == "__main__":
-    args = [a for a in sys.argv[1:] if not a.startswith("--")]
+    argv = sys.argv[1:]
+    skip = set()
+    for i, a in enumerate(argv):
+        if a in ("--pages", "--out") and i + 1 < len(argv):
+            skip.add(i + 1)
+    args = [a for i, a in enumerate(argv) if not a.startswith("--") and i not in skip]
     rng = None
+    out = None
     for a in sys.argv[1:]:
         if a.startswith("--pages"):
             val = a.split("=", 1)[1] if "=" in a else sys.argv[sys.argv.index(a) + 1]
             first, last = val.split("-")
             rng = (int(first), int(last))
+        if a.startswith("--out"):
+            out = a.split("=", 1)[1] if "=" in a else sys.argv[sys.argv.index(a) + 1]
     for project in args:
-        draft(project, rng)
+        draft(project, rng, out)
