@@ -537,7 +537,9 @@ def build_page(project, meta, body, toc):
     attr_p = []
     if ref:
         attr_p.append(inline(ref))
-    if doi:
+    # Some reference lines already end with the DOI, and appending it again printed the
+    # same URL twice in a row.
+    if doi and doi.rstrip("/") not in (ref or ""):
         attr_p.append('<a href="%s">%s</a>.' % (esc_attr(doi), html.escape(doi)))
     attribution.append("<p>%s</p>" % " ".join(attr_p))
     links = []

@@ -226,6 +226,7 @@ Citation: Tomas Havranek (2010), "Rose Effect and the Euro: Is the Magic Gone?" 
 Published version: https://doi.org/10.1007/s10290-010-0050-1
 Read the paper: https://meta-analysis.cz/euro/euro2.pdf
 Download the dataset: https://meta-analysis.cz/euro/data.zip
+Full text (HTML): https://meta-analysis.cz/euro/paper/
 
 Abstract: This paper presents an updated meta-analysis of the effect of currency unions on trade, focusing on the euro area. Using meta-regression methods such as funnel asymmetry test, evidence for strong publication bias is found. The estimated underlying effect for currency unions other than eurozone reaches more than 60%. However, according to the meta-regression analysis, the euro's trade promoting effect corrected for publication bias is insignificant. The Rose effect literature shows signs of the economics research cycle: reported t-statistic is a quadratic concave function of publication year. Explanatory meta-regression (robust fixed effects and random effects), that can explain about 70% of the heterogeneity in the literature, suggests that results published by some authors might consistently differ from the mainstream output and that study outcomes are systematically dependent on study design (usage of panel data, short- or long-run nature, number of countries in the data set).
 
@@ -346,6 +347,7 @@ Published version: https://doi.org/10.1111/joes.12574
 Paper: https://meta-analysis.cz/hedge/hedge2.pdf
 Data: https://meta-analysis.cz/hedge/hedge.xlsx
 Code: https://meta-analysis.cz/hedge/hedge.do
+Full text (HTML): https://meta-analysis.cz/hedge/paper/
 
 Abstract: We provide the first quantitative survey of the empirical literature on hedge fund performance. We examine the impact of potential biases on the reported results. Analyses in individual studies have been plagued by fragmentation of underlying data and by limited consensus on how hedge fund performance should be measured. Using a sample of 1,019 intercept terms from regressions of hedge fund returns on risk factors (the “alphas”) collected from 74 studies published between 2001 and 2021 we show that inferences about hedge fund returns are not significantly contaminated by publication selection bias. Most of our monthly alpha estimates adjusted for the (small) bias fall within a relatively narrow range of 30 to 40 basis points. Studies that explicitly control for the potential biases in the underlying data (e.g. the backfilling bias and the survivorship bias) report lower alphas. Our results demonstrate that despite the prevalence of the publication selection bias in numerous other research settings, publication may not be selective when there is no strong a priori theoretical prediction about the sign of estimated coefficients, which may induce greater readiness to publish statistically insignificant results.
 
@@ -371,6 +373,7 @@ Appendix: https://meta-analysis.cz/incentives/appendix.pdf
 Included Studies: https://meta-analysis.cz/incentives/studies.xlsx
 Excluded Studies: https://meta-analysis.cz/incentives/excluded.xlsx
 Replication Package: https://meta-analysis.cz/incentives/replication.zip
+Full text (HTML): https://meta-analysis.cz/incentives/paper/
 
 Abstract: Economists typically model financial incentives as enhancing performance, whereas psychologists emphasize that incentives can backfire. Experimental findings are mixed. We collect 2,193 estimates from 88 economics experiments and account for 48 contextual factors. Using recent advances in correcting for publication bias and p-hacking, we find that the corrected mean effect of financial incentives on performance is close to zero across most field contexts. Laboratory settings and loss framing yield statistically significant but modest positive effects even after bias correction. Our results suggest that increasing financial rewards rarely produces large performance gains in the experimental settings most studied by economists.
 
