@@ -120,8 +120,12 @@ def inline(text, refs_are_numbered=False, link_cites=True):
     text = re.sub(r"(?<![\w/])(https?://[^\s<>)\]]+[\w/])",
                   lambda m: park('<a href="%s">%s</a>' % (m.group(1), m.group(1))), text)
     text = re.sub(r"`([^`]+)`", lambda m: "<code>%s</code>" % m.group(1), text)
-    text = re.sub(r"\*\*([^*]+)\*\*", lambda m: "<b>%s</b>" % m.group(1), text)
-    text = re.sub(r"(?<!\*)\*([^*]+)\*(?!\*)", lambda m: "<i>%s</i>" % m.group(1), text)
+    # Emphasis markers must hug their text: "*word*" is emphasis, "***, **, and *" is a
+    # significance legend. Without the rule a table note came out as interleaved empty tags,
+    # which is why transcribers started wrapping the legend in mathematics to protect it.
+    _emph = r"(?=[^*]*[A-Za-z0-9])(\S(?:[^*]*\S)?)"
+    text = re.sub(r"\*\*" + _emph + r"\*\*", lambda m: "<b>%s</b>" % m.group(1), text)
+    text = re.sub(r"(?<!\*)\*" + _emph + r"\*(?!\*)", lambda m: "<i>%s</i>" % m.group(1), text)
     text = text.replace("---", "&#8212;")
 
     for i, fragment in enumerate(parked):

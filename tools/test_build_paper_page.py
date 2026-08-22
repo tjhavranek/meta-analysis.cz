@@ -124,6 +124,17 @@ def test_emphasis_is_not_paired_across_markers():
           "<i>" not in out and "<b>" not in out, out)
 
 
+def test_significance_legend_is_not_emphasis():
+    # "***, **, and *" is what a table note calls its significance stars. Read as emphasis
+    # it becomes three interleaved empty tags, which is what the scc tables showed.
+    out = inline("***, **, and * denote significance at the 1%, 5%, and 10% levels.")
+    check("a significance legend stays literal",
+          "<b>" not in out and "<i>" not in out and "***" in out, out)
+    check("real emphasis still works",
+          inline("a *word* and **another**") == "a <i>word</i> and <b>another</b>",
+          inline("a *word* and **another**"))
+
+
 def test_tables():
     body, _ = build("""## 1 | RESULTS
 
