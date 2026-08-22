@@ -112,11 +112,26 @@ def multiset_check(a, b):
     Order is not evidence of anything: a text layer interleaves footnotes with body text
     and breaks paragraphs across columns, so a faithful transcript legitimately moves
     blocks around. What no faithful transcript does is invent a word or drop a clause, and
-    that survives reordering."""
+    that survives reordering.
+
+    One artefact is discounted, because it fires on nearly every paper and always in the
+    transcript's favour: a text layer glues a superscript to the word beside it, storing
+    "Havranek^c" as "havranekc" and "^bLSE" as "blse". A transcript word that appears
+    inside a PDF word with a letter or two stuck on is that word, not an invented one."""
     from collections import Counter
     ca, cb = Counter(a), Counter(b)
     lost = ca - cb
     gained = cb - ca
+    glued = set()
+    for w in gained:
+        if len(w) < 4:
+            continue
+        for t in ca:
+            if len(t) - len(w) in (1, 2) and (t.endswith(w) or t.startswith(w)):
+                glued.add(w)
+                break
+    for w in glued:
+        del gained[w]
     return lost, gained
 
 
