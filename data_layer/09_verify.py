@@ -148,6 +148,18 @@ for p,v in rep["projects"].items():
     if v.get("included") and p not in present:
         fail.append(f"{p}: marked included but absent from harmonised table")
 
+# The documentation publishes a publication-bias count computed from this very table. A
+# hand-computed number in published prose is one dataset revision away from being quietly
+# wrong, and a reader cannot check it, so it is recomputed here and disagreement is a
+# failure like any other.
+import subprocess as _sp
+_claim = _sp.run([sys.executable, os.path.join(os.path.dirname(os.path.abspath(__file__)),
+                                               "98_fat_claim.py")],
+                 capture_output=True, text=True)
+if _claim.returncode != 0:
+    fail.append("the publication-bias counts in api/v1/README.md no longer match the data:\n"
+                + "        " + (_claim.stdout or _claim.stderr).strip().replace("\n", "\n        "))
+
 print(f"\ndatasets in index: {idx['counts']['datasets']} | "
       f"source rows: {idx['counts']['rows_in_source_files']:,} | "
       f"analysis samples: {idx['counts']['estimates_in_analysis_samples']:,}")

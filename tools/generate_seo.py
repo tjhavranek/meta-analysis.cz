@@ -883,6 +883,9 @@ def main():
            f"parameter, the value the paper headlines, the sample it rests on, and the verbatim "
            f"sentence from the paper that each figure came from (CSV)",
            f"- [Full paper index with abstracts and file links]({BASE}/llms-full.txt): one entry per paper, for LLM ingestion",
+           f"- [Papers republished in full as HTML]({BASE}/papers/): the complete text of each "
+           f"paper -- body, tables, figures, equations and references -- readable and quotable "
+           f"without opening a PDF",
            f"- [About the site and who maintains it]({BASE}/about/): affiliations and ORCIDs",
            f"- [Sitemap]({BASE}/sitemap.xml): all pages and PDF full texts",
            f"- [Commentary and interviews]({BASE}/komentare/): op-eds, columns and interviews "
@@ -927,6 +930,13 @@ def main():
         seen_hrefs = {l["href"] for l in m["menu_links"]}
         lf += [f"{t['label']}: {t['href']}" for t in (m.get("tool_links") or [])
                if t["href"] not in seen_hrefs]
+        # The full text, where this site carries one. It is the substantive document an LLM
+        # crawler wants and it was reaching neither export -- sitemap.xml listed the nested
+        # pages, llms.txt and llms-full.txt named only the parent landing page.
+        _full = {"maive": "/maive/paper/", "guidelines": "/guidelines/guide/"}.get(
+            p, f"/{p}/paper/")
+        if os.path.isfile(os.path.join(SITE, _full.strip("/"), "index.html")):
+            lf.append(f"Full text (HTML): {BASE}{_full}")
         lf += ["", f"Abstract: {m['abstract']}", ""]
     open(os.path.join(SITE, "llms-full.txt"), "w", encoding="utf-8", newline="\n").write("\n".join(lf))
     refresh_about_counts(_api)
