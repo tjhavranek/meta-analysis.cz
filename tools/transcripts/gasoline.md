@@ -132,7 +132,7 @@ TABLE 1. An overview of previous meta-analyses.
 | Time span | 1966–1997 | 1974–1999 | 1974–2011 |
 | No. of estimates | LR price 277, LR income 245, SR price 363, SR income 345 | SR price 191, LR price 79 | SR price 110, LR price 92 |
 | Approach | OLS | Seemingly unrelated regressions | Mixed-effects, clustered OLS |
-Note: LR and SR stand for long run and short run, respectively.
+LR and SR stand for long run and short run, respectively.
 
 ### 4.1. Data set
 
@@ -170,7 +170,7 @@ TABLE 3. Test of publication bias.
 | 1/se | 0.0837^{***} (10.06) | 0.209^{***} (7.71) | 0.592^{***} (15.50) |
 | Constant | 2.997^{***} (7.97) | 1.573^{**} (1.97) | 3.032^{*} (1.77) |
 | Observations | 831 | 346 | 346 |
-Note: Response variable: *t*-statistic of the estimate of elasticity. *t*-statistics in parentheses. $^{*}$ p < .1. $^{**}$ p < .05. $^{***}$ p < .01.
+Response variable: *t*-statistic of the estimate of elasticity. *t*-statistics in parentheses. $^{*}$ p < .1. $^{**}$ p < .05. $^{***}$ p < .01.
 
 To allow judgment concerning the extent of publication bias, Doucouliagos and Stanley (2013) run Monte Carlo simulations and construct thresholds for the value of the constant in the funnel asymmetry test. By using their terminology, our short-run sample and long-run sample without vehicle stock samples exhibit "severe" publication bias, while the long-run sample with vehicle stock sample contains a "substantial" amount of bias. To estimate the true underlying effect beyond publication bias, we employ Heckman meta-regression with a quadratic relationship between the estimates of the elasticities and their standard errors; the results are summarized in Table 4. As expected, all estimates of the underlying value of the elasticity (the coefficient for 1/se) are larger than zero at the 1% level of significance: 0.0999 for the short run, 0.234 for the long run with vehicle stock, and 0.644 for the long run without vehicle stock.
 
@@ -192,7 +192,7 @@ TABLE 4. Test of the underlying elasticity beyond publication bias.
 | 1/se | 0.0999^{***} (12.47) | 0.234^{***} (9.76) | 0.644^{***} (17.38) |
 | se | −0.140 (−1.24) | −0.0501 (−0.11) | 0.965^{***} (2.73) |
 | Observations | 831 | 346 | 346 |
-Note: Response variable: *t*-statistic of the estimate of elasticity. *t*-statistics in parentheses. $^{***}$ p < .01
+Response variable: *t*-statistic of the estimate of elasticity. *t*-statistics in parentheses. $^{***}$ p < .01
 
 TABLE 5. Comparison of regression results with sample means.
 
@@ -247,7 +247,7 @@ TABLE 6. Determinants of heterogeneity in the reported long-run estimates.
 | Publication year | | | −0.124 (−1.27) |
 | Constant | 2.534^{**} (2.48) | 1.690^{**} (1.96) | 4.937^{**} (2.19) |
 | Observations | 692 | 692 | 692 |
-Note: Response variable: *t*-statistic of the estimate of elasticity. All variables expect those in italics are divided by the standard error; *t*-statistics in parentheses. ^{*} p < 0.10. ^{**} p < 0.05. ^{***} p < 0.01.
+Response variable: *t*-statistic of the estimate of elasticity. All variables expect those in italics are divided by the standard error; *t*-statistics in parentheses. ^{*} p < 0.10. ^{**} p < 0.05. ^{***} p < 0.01.
 
 Our results for the individual moderator variables suggest that approximately a third of the variables appear to be systematically important for the explanation of the differences in the reported estimates of the elasticity. The mean year of the data period is not statistically significant in any specification: we find no evidence that the elasticity would systematically change in time. In contrast, the time span of the data matters for the resulting elasticity, with studies covering longer time periods typically obtaining larger elasticities. One explanation for this finding is the potential small-sample bias. With short time series, and especially cross-sectional studies that only cover one year of data, the researcher might not be able to observe the full effect of the adjustment of consumers to changes in income. Next, our results indicate that the sampling frequency of the data used by the econometrician does not matter much for the resulting elasticity; the coefficient loses any statistical significance when controls for regional heterogeneity are added to the regression.
 

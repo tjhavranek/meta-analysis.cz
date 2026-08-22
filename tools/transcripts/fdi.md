@@ -57,7 +57,7 @@ TABLE 1. Funnel asymmetry tests show no publication bias and a zero mean spillov
 | Constant (spillover effect) | 0.00187 | −0.0445 | 0.0500 |
 |  | (0.175) | (0.0581) | (0.0721) |
 | Observations | 332 | 332 | 332 |
-Note: The dependent variable is the spillover estimate. Standard errors, clustered at the study level, are reported in parentheses. The weight in the weighted least squares is the precision of the estimates reported in primary studies. * *p* < 0.10, ** *p* < 0.05, *** *p* < 0.01
+The dependent variable is the spillover estimate. Standard errors, clustered at the study level, are reported in parentheses. The weight in the weighted least squares is the precision of the estimates reported in primary studies. * *p* < 0.10, ** *p* < 0.05, *** *p* < 0.01
 
 FIGURE 2. The funnel plot of the spillover estimates suggests no publication bias.
 
@@ -101,7 +101,7 @@ TABLE 2. Factors influencing the reported spillover estimates.
 | Pub. year | −0.127 | (0.0840) |  |  |
 | Constant | −0.704 | (0.774) | −0.202** | (0.0832) |
 | Observations | 332 |  | 332 |  |
-Note: The dependent variable is the spillover estimate. Standard errors, clustered at the study level, are reported in parentheses. The specific model is achieved by discarding variables that are jointly insignificant at the 5% level. FE = fixed effects. POLS = pooled ordinary least squares. GMM = general method of moments. * *p* < 0.10, ** *p* < 0.05, *** *p* < 0.01.
+The dependent variable is the spillover estimate. Standard errors, clustered at the study level, are reported in parentheses. The specific model is achieved by discarding variables that are jointly insignificant at the 5% level. FE = fixed effects. POLS = pooled ordinary least squares. GMM = general method of moments. * *p* < 0.10, ** *p* < 0.05, *** *p* < 0.01.
 
 We find that, ceteris paribus, studies assuming a quadratic relationship between foreign presence and domestic productivity tend to find larger spillovers. An important finding is that spillovers increase with the year of the data: newer data sets are associated with larger spillovers. The inclusion of year fixed effects and controlling for industry competition reduces the reported spillover estimates in individual studies. Joint ventures of foreign and domestic companies generate much larger positive spillovers than companies fully owned by foreign investors. It also matters how the linkages are computed: when real individual linkages are available, the reported spillovers are substantially larger than when industry-level constructs are used. Different econometric techniques yield statistically significantly different results, but the difference of about 0.1 is small in economic terms. Study citations and the impact factor of the outlet are not important for the reported spillover effects.
 

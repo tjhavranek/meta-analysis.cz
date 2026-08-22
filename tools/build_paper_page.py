@@ -31,7 +31,9 @@ Block level, one construct per line unless noted:
     TABLE 1. Caption text      table caption; the pipe table on the following lines is the table
     TABLE 1 (continued). Cap   a second panel of the same printed table
     | a | b |                  markdown pipe table (the --- separator row is required)
-    Note: ...                  a paragraph directly after a table becomes the table note
+    Note: ...                  the paragraph on the line directly after a table (no blank
+                               line between them) is that table's note, whatever it starts
+                               with. Do not add a "Note:" label the paper does not print.
 
     FIGURE 2. Caption text     figure caption; expects figures/fig2.png beside the page
     FIGURE 2 (no artwork). C   figure whose artwork is not reproduced; caption only
@@ -348,7 +350,10 @@ class Builder:
                 just_closed_table = True
                 continue
 
-            if just_closed_table and re.match(r"^(\*?Note\*?|Notes|\^?[a-z]\s)", stripped):
+            # A paragraph that follows a table with no blank line between them is that
+            # table's note, whatever word it starts with. Requiring it to start with "Note"
+            # made transcribers write a label the journal had not printed.
+            if just_closed_table:
                 j = i
                 note = []
                 while j < len(lines) and lines[j].strip():
