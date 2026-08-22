@@ -135,7 +135,11 @@ RE_H4 = re.compile(r"^####\s+(.*)$")
 RE_EQ = re.compile(r"^\$\$(.+?)\$\$\s*(?:\(([^)]+)\))?\s*$")
 RE_TABLE_CAP = re.compile(
     r"^TABLE\s+([A-Za-z]?\d+(?:\.\d+)?[A-Za-z]?)"
-    r"(?:\s*\(\s*(?:continued|cont\.?)\s*\))?\s*\.\s*(.*)$", re.I)
+    r"(\s*\(\s*(?:continued|cont\.?)\s*\))?\s*\.\s*(.*)$", re.I)
+# "(continued)" is written either before or after the caption's full stop, depending on who
+# transcribed it. Both mean the same thing: this is the second panel of a table too tall for
+# one printed page, not a second table with the same number.
+RE_CONT_LEAD = re.compile(r"^\(\s*(?:continued|cont\.?)\s*\)\s*", re.I)
 RE_FIG_CAP = re.compile(
     r"^FIGURE\s+([A-Za-z]?\d+(?:\.\d+)?[A-Za-z]?)(\s*\(no artwork\))?\s*\.\s*(.*)$", re.I)
 RE_LIST_ITEM = re.compile(r"^([0-9]+|[ivxlcdm]+)\.\s+(.*)$")
@@ -316,7 +320,11 @@ class Builder:
             m = RE_TABLE_CAP.match(stripped)
             if m:
                 flush()
-                pending_table = (m.group(1), m.group(2))
+                num, cont, cap = m.group(1), bool(m.group(2)), m.group(3)
+                if RE_CONT_LEAD.match(cap):
+                    cap = RE_CONT_LEAD.sub("", cap)
+                    cont = True
+                pending_table = (num, cap, cont)
                 i += 1
                 continue
 
@@ -365,11 +373,13 @@ class Builder:
             return
         header, rest = body[0], body[1:]
         self.w('<div class="table-scroll">')
-        self.w("<table>")
+        cont = bool(caption and len(caption) > 2 and caption[2])
+        self.w('<table%s>' % (' class="continued"' if cont else ""))
         if caption:
-            num, cap = caption
-            self.w("<caption><b>Table %s.</b> %s</caption>" % (
-                html.escape(num), inline(cap, self.refs_numbered)))
+            num, cap = caption[0], caption[1]
+            self.w("<caption><b>Table %s%s.</b> %s</caption>" % (
+                html.escape(num), " (continued)" if cont else "",
+                inline(cap, self.refs_numbered)))
         self.w("<thead><tr>%s</tr></thead>" % "".join(
             '<th scope="col">%s</th>' % inline(c, self.refs_numbered) for c in header))
         self.w("<tbody>")

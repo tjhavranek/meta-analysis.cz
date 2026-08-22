@@ -140,8 +140,9 @@ TABLE 2 (continued). Second panel.
 """)
     check("a caption is attached to its table",
           "<caption><b>Table 1.</b> A caption." in body)
-    check("a continued panel keeps its number",
-          body.count("<table>") == 2 and "<b>Table 2.</b>" in body)
+    check("a continued panel keeps its number and says it is continued",
+          body.count("<table") == 2 and "<b>Table 2 (continued).</b>" in body
+          and '<table class="continued">' in body, body[-400:])
     check("a note after a table is a table note",
           '<p class="table-note">Note: the note.</p>' in body)
     check("numeric cells are marked numeric",

@@ -78,13 +78,23 @@ def check(project):
 
     # -- the tables and figures the paper has, the page has
     sc = scout(project, PAPERS)
-    want_t, want_f = len(sc.get("tables", {})), len(sc.get("figures", {}))
-    got_t = page.count("<table>")
-    got_f = page.count("<figure>") + page.count('class="fig-inpdf"')
-    if want_t and got_t < want_t:
-        fails.append("%d tables in the paper, %d on the page" % (want_t, got_t))
-    if want_f and got_f < want_f:
-        fails.append("%d figures in the paper, %d on the page" % (want_f, got_f))
+    want_t = set(sc.get("tables", {}))
+    want_f = set(sc.get("figures", {}))
+    # A table too tall for one printed page is two panels sharing a number; the second is
+    # marked continued and is not a duplicate.
+    got_t = re.findall(r"<caption><b>Table ([A-Za-z0-9.]+)\.</b>", page)
+    got_f = re.findall(r"<b>Figure ([A-Za-z0-9.]+)\.</b>", page)
+    # Which numbers, not how many: a page carrying Table 2 twice and no Table 3 has the
+    # right count and the wrong contents, and the count alone cannot tell them apart.
+    for label, want, got in (("table", want_t, got_t), ("figure", want_f, got_f)):
+        missing = want - set(got)
+        if missing:
+            fails.append("the paper prints %s %s; the page does not"
+                         % (label, ", ".join(sorted(missing))))
+        dupes = {n for n in got if got.count(n) > 1}
+        if dupes:
+            fails.append("%s %s appears more than once on the page"
+                         % (label.capitalize(), ", ".join(sorted(dupes))))
 
     # -- nothing broken
     if "<<" in page:
