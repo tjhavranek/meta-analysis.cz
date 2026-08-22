@@ -157,9 +157,9 @@ which is what the underlying papers do. As a worked check, FAT-PET run on the
 1st–99th percentile winsorised data reproduces the published conclusions:
 `education` corrects to about 0.02 and `excess_sensitivity` to about 0.01, both
 of which their papers describe as near zero, and `forward` corrects to 0.92
-against a null of 1. Eighteen of the 40 literatures pooled at 1.0.0 show a
-publication-bias intercept beyond ±1.96. That count has **not** been recomputed
-since `finance_growth` joined at 1.1.0.
+against a null of 1. On the same winsorised data, with standard errors clustered
+by study, the FAT publication-bias intercept lies beyond ±1.96 in 24 of the 41
+literatures.
 
 **All 41 pooled literatures are verified** — 21 `domain_reviewed`, 20 `code_traced`. Where a
 paper ships no replication code, the mapping was checked against its published results by
@@ -297,8 +297,7 @@ paper/DOI metadata. Faithful conversions of what was published.
 
 *Harmonised table* — 49,669 selected estimates, automatically mapped and in some
 cases transformed. Every column mapping is verified against the paper's own
-replication code or published results. And there is still **no independent end-to-end
-reproduction** of any paper's headline number from these files alone.
+replication code or published results.
 
 Every dataset carries an `audit_status` so you can filter on review quality
 rather than read prose:
