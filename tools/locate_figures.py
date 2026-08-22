@@ -101,6 +101,35 @@ def ink(pdf, page, band):
     return float((run > 0.25 * w).sum())
 
 
+def try_candidates(project, num, page, candidates):
+    """Extract each candidate band and keep the one that is a plot rather than a paragraph.
+
+    The judgement is tools/audit_figures.py's: prose flips between inked and blank rows once
+    a line, artwork a handful of times over its height. With a test that reliable the search
+    can propose several boxes and let the test choose, instead of asking somebody to look."""
+    sys.path.insert(0, os.path.join(ROOT, "tools"))
+    from audit_figures import verdict
+    from extract_figure import extract
+    best = None
+    for band in candidates:
+        try:
+            path = extract(project, num, page, (0.04, band[0], 0.97, band[1]))
+        except Exception:
+            continue
+        v, flips, shape = verdict(path)
+        score = shape[0] * shape[1]
+        if v == "plot" and (best is None or score > best[0]):
+            best = (score, band)
+    if best is None:
+        d = os.path.join(ROOT, project, "paper", "figures", "fig%s.png" % num)
+        if os.path.exists(d):
+            os.remove(d)
+        return None
+    extract(project, num, page, (0.04, best[1][0], 0.97, best[1][1]))
+    print("%s fig%s: page %d, band %.3f-%.3f" % (project, num, page, best[1][0], best[1][1]))
+    return best
+
+
 def locate(project, wanted=None):
     meta = PAPERS[project]
     pdf = os.path.join(ROOT, project, paper_pdf(project, meta))
@@ -164,15 +193,27 @@ def locate(project, wanted=None):
                 below_stop = min(t[1] for t in ln)
                 break
         below = (min(1.0, (cap_bot + 2.0) / h), min(1.0, (below_stop - 4.0) / h))
-        best = max((above, below), key=lambda b: ink(pdf, page, b))
-        y0, y1 = best
-        if y1 - y0 < 0.03:
+        candidates = [above, below]
+        # a figure set across the full measure of a two-column page may sit above the text
+        # the walk stopped at, so try the whole upper and lower half as well
+        candidates += [(0.04, above[1]), (below[0], 0.96)]
+        candidates = [c for c in candidates if c[1] - c[0] >= 0.03]
+        if not candidates:
             print("# %s fig%s: no artwork band found on page %d" % (project, num, page))
             continue
+        if AUTO:
+            keep = try_candidates(project, num, page, candidates)
+            if keep is None:
+                print("# %s fig%s: nothing on page %d looks like artwork" % (project, num, page))
+            continue
+        y0, y1 = max(candidates, key=lambda b: ink(pdf, page, b))
         print("python3 tools/extract_figure.py %s %s %d %.4f %.4f %.4f %.4f"
               % (project, num, page, 0.04, y0, 0.97, y1))
 
 
+AUTO = False
+
 if __name__ == "__main__":
-    args = sys.argv[1:]
+    AUTO = "--auto" in sys.argv
+    args = [a for a in sys.argv[1:] if not a.startswith("--")]
     locate(args[0], set(args[1:]) or None)

@@ -88,7 +88,7 @@ FIGURE 2. Estimates vary both within and across studies. *Notes:* The figure sho
 
 FIGURE 3. Estimates vary both within and across countries. *Notes:* The figure shows a box plot of beta estimates for the currencies of individual countries. (If a euro area member country is shown in the figure, the estimate concerns its own currency prior to the adoption of the euro.) The length of each box represents the interquartile range (P25-P75), and the dividing line inside the box is the median value. The whiskers represent the highest and lowest data points within 1.5 times the range between the upper and lower quartiles. The vertical line denotes zero beta. For ease of exposition, outliers are excluded from the figure but included in all statistical tests.
 
-FIGURE 4 (no artwork). The distribution of the estimates. Notes: The figure depicts histograms of the estimated beta for all estimates (on the left) and for the difference estimates (on the right, extracted from the differences equation (Eq. 3)). The solid vertical lines indicate the mean of winsorized estimates. Extreme observations are cut from the figure but included (after winsorization for the most extreme ones) in all statistical tests.
+FIGURE 4. The distribution of the estimates. Notes: The figure depicts histograms of the estimated beta for all estimates (on the left) and for the difference estimates (on the right, extracted from the differences equation (Eq. 3)). The solid vertical lines indicate the mean of winsorized estimates. Extreme observations are cut from the figure but included (after winsorization for the most extreme ones) in all statistical tests.
 
 TABLE 1. Results for different currencies vary widely.
 

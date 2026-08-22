@@ -247,7 +247,7 @@ Figure 2 translates the interaction into the two conditional associations that m
 
 (a) Marginal effect of generalized trust over rule of law (b) Marginal effect of rule of law over generalized trust
 
-FIGURE 2 (no artwork). Marginal Effects, Baseline OLS: the Estimated Trust Association Declines with Rule of Law
+FIGURE 2. Marginal Effects, Baseline OLS: the Estimated Trust Association Declines with Rule of Law
 
 Notes: The figures report marginal effects implied by the baseline OLS interaction model. Bands are 90% confidence intervals computed from the relevant clustered covariance matrix. Support points are plotted on the zero line. Positive effects increase the reported size slope and therefore imply weaker conventional size premia; negative effects imply stronger conventional size premia.
 
