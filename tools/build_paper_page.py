@@ -111,10 +111,12 @@ def inline(text, refs_are_numbered=False, link_cites=True):
     # "<sup><i><b></sup>, <sup></b></sup>, and <sup></i></sup>").
     text = re.sub(r"\^\{([^}]*)\}", lambda m: park(cite(m)), text)
     text = re.sub(r"_\{([^}]*)\}", lambda m: "<sub>%s</sub>" % m.group(1), text)
+    # Both link rules park their output. Otherwise the bare-URL rule reads the href the
+    # markdown rule just wrote and links it again, nesting one anchor inside another.
     text = re.sub(r"\[([^\]]+)\]\((https?://[^)\s]+)\)",
-                  lambda m: '<a href="%s">%s</a>' % (m.group(2), m.group(1)), text)
+                  lambda m: park('<a href="%s">%s</a>' % (m.group(2), m.group(1))), text)
     text = re.sub(r"(?<![\w/])(https?://[^\s<>)\]]+[\w/])",
-                  lambda m: '<a href="%s">%s</a>' % (m.group(1), m.group(1)), text)
+                  lambda m: park('<a href="%s">%s</a>' % (m.group(1), m.group(1))), text)
     text = re.sub(r"`([^`]+)`", lambda m: "<code>%s</code>" % m.group(1), text)
     text = re.sub(r"\*\*([^*]+)\*\*", lambda m: "<b>%s</b>" % m.group(1), text)
     text = re.sub(r"(?<!\*)\*([^*]+)\*(?!\*)", lambda m: "<i>%s</i>" % m.group(1), text)

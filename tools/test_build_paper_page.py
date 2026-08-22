@@ -180,6 +180,16 @@ More.
           [t[1] for t in b.toc] == ["sec-3", "sec-3-2"])
 
 
+def test_links_are_not_nested():
+    # A transcript that writes a URL as its own link text matched both link rules, and the
+    # second one rewrote the href the first had just written.
+    out = inline("Available at [http://meta-analysis.cz/scc](http://meta-analysis.cz/scc).")
+    check("a link is not wrapped in another link",
+          out.count("<a ") == 1 and 'href="<a' not in out, out)
+    check("a bare URL still becomes a link",
+          '<a href="https://doi.org/10.1/x">' in inline("See https://doi.org/10.1/x for more."))
+
+
 def test_nothing_is_injected():
     body, _ = build("""## 1 | INTRO
 
