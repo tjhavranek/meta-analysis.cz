@@ -1,5 +1,4 @@
 {
- "_WARNING": "DO NOT ENABLE THE GITHUB-ZENODO INTEGRATION FOR THIS REPOSITORY. That integration deposits the ENTIRE repository tarball (~422 MB, including 173 author-copy PDFs and 23 third-party replication packages). This file describes a CURATED deposit only: the harmonised table, the dataset index, the codebooks and the documentation. Build it with data_layer/12_zenodo_bundle.py and upload manually. See data_layer/ZENODO_DEPOSIT.md. EDIT THIS FILE, data_layer/zenodo.json -- it is the canonical copy that 10_fragments publishes to /.zenodo.json. A second file named data_layer/.zenodo.json used to exist and was edited by mistake for a whole release; it has been deleted so the two can never diverge again. VERSION DOI: 10.5281/zenodo.22050272, reserved on the draft before the bundle was built. Do NOT carry 1.0.0's 21789702 here — it would attach the previous release's identifier to this one, which is the incident this file already records for the beta.",
  "title": "meta-analysis.cz: harmonised estimate-level data from meta-analyses in economics",
  "upload_type": "dataset",
  "access_right": "open",
@@ -48,6 +47,5 @@
  "notes": "Everything in this deposit is released under CC BY 4.0, as is everything on meta-analysis.cz: the datasets, their CSV and Parquet conversions, the pooled table, the codebooks, the documentation and the deposited papers. You may use, adapt and redistribute any of it for any purpose, including commercially and including as training data for machine-learning models. The only condition is credit: cite the individual paper when you use its dataset, and the collection when you use the whole.",
  "version": "1.1.1",
  "concept_doi": "10.5281/zenodo.21773678",
- "doi": "10.5281/zenodo.22050272",
- "_BUILD_COMMIT_NOTE": "The deposited zip was built from commit b611741a9f16576f6aff1049e5d93994a2f3cc64 in a clean clone, and reproduced byte for byte there and in the working tree. This identifier is a commit SHA rather than a branch because a branch moves. It is written by a metadata-only commit made after the build commit: a file cannot contain the hash of the commit containing it, and .zenodo.json is Zenodo form metadata rather than part of the uploaded zip, so setting it afterwards does not change the artifact."
+ "doi": "10.5281/zenodo.22050272"
 }

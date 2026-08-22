@@ -20,10 +20,8 @@ authors:
     given-names: Zuzana
     orcid: "https://orcid.org/0000-0002-0753-8124"
     affiliation: "Charles University, Prague"
-# The top-level doi must match the version this file declares. It was the concept DOI,
-# which always resolves to the newest release, so CFF tooling produced a citation reading
-# "Version 1.1.1" that pointed wherever 1.2.0 will later live. The concept DOI stays below,
-# labelled, and the README still recommends it for prose citation.
+# The top-level doi must be the VERSION DOI, matching `version` below; the concept DOI
+# lives under identifiers. Swapping them makes CFF tooling cite a moving target.
 doi: "10.5281/zenodo.22050272"
 version: "1.1.1"
 date-released: "2026-08-21"

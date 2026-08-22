@@ -133,7 +133,19 @@ for src,dst in (("api_readme.md", os.path.join(OUT,"api",DV,"README.md")),
                 ("zenodo.json",   os.path.join(OUT,".zenodo.json"))):
     sp=os.path.join(WORK,src)
     if os.path.exists(sp):
-        os.makedirs(os.path.dirname(dst),exist_ok=True); shutil.copy2(sp,dst)
+        os.makedirs(os.path.dirname(dst),exist_ok=True)
+        if src == "zenodo.json":
+            # The canonical file carries "_"-prefixed maintainer notes -- the integration
+            # warning, the build-commit note. They are for whoever edits the file, and the
+            # published copy at /.zenodo.json is a public URL: an internal incident log has
+            # no business being served from the site root. Zenodo ignores unknown keys, so
+            # stripping them changes nothing it reads.
+            _z=json.load(open(sp,encoding="utf-8"))
+            _z={k:v for k,v in _z.items() if not k.startswith("_")}
+            open(dst,"w",encoding="utf-8",newline="\n").write(
+                json.dumps(_z,indent=1,ensure_ascii=False)+"\n")
+        else:
+            shutil.copy2(sp,dst)
     else:
         print(f"   WARNING: canonical {src} missing from data_layer/")
 
@@ -251,7 +263,7 @@ if _ki:
       # after 1.1.1 was deposited, which made the sentence false the moment it mattered.
       f"<p>Present in the files published here and in the archived v{_dep_ver} deposit. "
       f"Kept as published rather than silently altered. Nothing else in the table is "
-      f"affected.</p>\n"
+      f"affected by these.</p>\n"
       "<ul>\n" + _items + "\n</ul>\n")
 else:
     # emit an EMPTY file rather than none, so the page inlines nothing and the box vanishes

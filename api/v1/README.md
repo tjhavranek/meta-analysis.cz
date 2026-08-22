@@ -249,9 +249,8 @@ paper's own coding, and the papers did not agree:
 
 Nothing in the harmonisation reconciles these, and the column name does not distinguish
 them, so **do not pool, rank, or regress on `citations` across literatures** without first
-checking the scale within each. The year columns had the same defect and were gated at
-1.0.0; this column is scheduled for the same treatment at the next release, which will
-null the non-count literatures rather than silently rescale them. `impact_factor` shows a
+checking the scale within each. The next data revision nulls the
+non-count literatures rather than silently rescaling them. `impact_factor` shows a
 weaker version of the same signature and is under review.
 
 - **`trust`** — from 1.0.0 this is **pooled**, but only for the 284 estimates
@@ -270,9 +269,7 @@ vertical halves of one FDI database.
 These overlaps were found by comparing the (effect, standard error) value sets
 of every pair of literatures. That check now runs on every build: a complete
 overlap fails outright, and a partial one fails too unless it has been ruled on
-explicitly. Row counts, t-statistics and reconciliation against the papers all
-looked entirely normal while the duplicates were present, which is why the
-check exists.
+explicitly.
 
 ## Column resolution
 
@@ -311,9 +308,8 @@ rather than read prose:
 
 The arithmetic test proves that two columns form a statistical pair. It cannot
 distinguish a headline estimand from a robustness one, a short-run from a
-long-run effect, or a baseline sample from a filtered one. Four of the errors
-found so far were exactly that kind, which is why the status is published rather
-than assumed away.
+long-run effect, or a baseline sample from a filtered one; `audit_status` records
+which further check settled each literature.
 
 ## Licence
 

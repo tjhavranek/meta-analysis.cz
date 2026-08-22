@@ -166,6 +166,14 @@ def build():
          f" The remaining {_n} rest on arithmetic effect/standard-error matching alone and are"
          " provisional.") if n_ap else "")
 
+    # "All N verified" when it is true; the counted frame only when something is provisional,
+    # in which case provisional_note names it. The frame must never be able to contradict the note.
+    verified_lead = (
+        f"All {counts['count_harmonised_literatures']} pooled literatures are verified:"
+        if not n_ap else
+        f"{counts['count_code_checked']} of the "
+        f"{counts['count_harmonised_literatures']} pooled literatures are verified:")
+
     known_issues = frag("known_issues")
     issues_block = (f'<div class="known-issues">\n<h2>Known issues in this release</h2>\n'
                     f'{known_issues}\n</div>\n\n') if known_issues else ""
@@ -273,8 +281,7 @@ traced back to its published dataset.</p>
 
 {issues_block}
 
-<p class="caveat">{counts['count_code_checked']} of the
-{counts['count_harmonised_literatures']} pooled literatures are verified:
+<p class="caveat">{verified_lead}
 {counts['count_domain_reviewed']} domain-reviewed against the paper's own replication code or,
 where a paper ships none, against its published results, and {counts['count_code_traced']}
 code-traced.{provisional_note} Every dataset publishes an <code>audit_status</code> saying
@@ -293,13 +300,15 @@ re-checked. For anything load-bearing, work from the original file.</p>
 <p>Each dataset is also published on its own, with all of the variables coded for its paper
 rather than the shared subset, and a codebook describing every column.</p>
 
-<p class="caveat">The Estimates column counts the rows in each published file after that
-paper's own analysis filters, which is not always the number in the paper's abstract. Usually
-the file is the analysis subset rather than the full collection; for a few literatures the
-published file is genuinely narrower than the sample behind the paper, and two contribute a
-row per impulse-response horizon. <a href="/api/v1/datasets.json">datasets.json</a> carries a
-reconciliation for every dataset where the two counts differ, including the cases that remain
-unexplained.</p>
+<p class="caveat">The Estimates column counts what each literature contributes to the pooled
+table; for the datasets that are not pooled, it counts the rows in the published file after
+the paper's own analysis filters. Neither is always the number in the paper's abstract: a
+published file is usually the analysis subset rather than the full collection, a pooled
+contribution can be smaller still where estimates overlap another literature (<code>trust</code>
+contributes the 284 rows <code>size</code> does not already carry, out of 1,613 in its file),
+and two literatures contribute a row per impulse-response horizon.
+<a href="/api/v1/datasets.json">datasets.json</a> carries both counts and a reconciliation for
+every dataset where they differ.</p>
 
 {table_caption}<div class="table-scroll">
 {table}
