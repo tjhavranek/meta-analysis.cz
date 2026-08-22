@@ -93,14 +93,19 @@ def find_gutter(lines, min_share=0.80):
 
 def uncolumn(page):
     """Put a two-column page back into reading order: all of the left column, then all of
-    the right. Lines that cross the gutter belong to neither column -- a full-width title,
-    a table spanning the page -- and are emitted where they stand, which keeps the zones
-    around them in order."""
+    the right. Lines that span the page -- a full-width title, a table across the measure --
+    are emitted where they stand, which keeps the zones around them in order.
+
+    Every line is cut in exactly one place and both halves are kept, so no character can be
+    lost in the gutter. The result is checked against the input before it is returned; if
+    anything went missing the page is handed back untouched, because a page in the wrong
+    order can be fixed by a reader and a page with a sentence deleted cannot."""
     lines = page.split("\n")
     gutter = find_gutter(lines)
     if not gutter:
         return page
     start, end = gutter
+    lo, hi = max(0, start - 8), end + 9
     out, left, right = [], [], []
 
     def flush():
@@ -112,26 +117,23 @@ def uncolumn(page):
         left.clear()
         right.clear()
 
-    lo, hi = max(0, start - 8), end + 9
     for line in lines:
         # Text does not respect the gutter exactly: a long word or a display equation
-        # bleeds a character or two across it. So the split point is the widest run of
-        # spaces near the gutter, and only a line with no gap at all there is full-width.
+        # bleeds a character or two across it, so the cut goes at the widest run of spaces
+        # near the gutter rather than at the gutter itself.
         window = line[lo:hi]
         gaps = [(m.end() - m.start(), m.start(), m.end())
                 for m in re.finditer(r" {2,}", window)]
-        if line[start:end + 1].strip() and not gaps:
-            if line[:start].strip() and line[end + 1:].strip():
+        if not gaps:
+            if line[start:end + 1].strip() and line[:start].strip() and line[end + 1:].strip():
                 flush()
-                out.append(line)
+                out.append(line)          # genuinely spans the measure
                 continue
-        if gaps:
-            _, gs, ge = max(gaps)
-            cut_l, cut_r = lo + gs, lo + ge
+            cut = start if not line[start:end + 1].strip() else end + 1
         else:
-            cut_l, cut_r = start, end + 1
-        l, r = line[:cut_l], line[cut_r:]
-        l, r = l.rstrip(), r.rstrip()
+            _, gs, ge = max(gaps)
+            cut = lo + (gs + ge) // 2
+        l, r = line[:cut].rstrip(), line[cut:].rstrip()
         if l.strip():
             left.append(l)
         elif not r.strip():
@@ -139,7 +141,10 @@ def uncolumn(page):
         if r.strip():
             right.append(r)
     flush()
-    return "\n".join(out)
+    result = "\n".join(out)
+    if sorted(result.split()) != sorted(page.split()):
+        return page
+    return result
 
 
 def strip_furniture(pages):
@@ -161,9 +166,7 @@ def strip_furniture(pages):
                 continue
             if s in repeated:
                 continue
-            if re.fullmatch(r"\d{1,4}", s):                       # a page number alone
-                continue
-            if re.fullmatch(r"[|]?\s*\d{1,4}\s*[|]?", s):
+            if re.fullmatch(r"[|]?\s*\d{1,4}\s*[|]?", s):      # a page number alone
                 continue
             # the vertical rights strip comes out as one very long unspaced run
             if len(s) > 120 and " " not in s[:60]:

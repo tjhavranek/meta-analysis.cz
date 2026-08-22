@@ -46,14 +46,14 @@ def normalise(text):
 
 
 def words(text):
+    """Letters-and-digits runs, lowercased.
+
+    Punctuation is dropped rather than trimmed, because it is where the false alarms live:
+    a superscript citation makes the PDF read "Pratt).3" against the transcript's "Pratt).",
+    and any rule that trims edges keeps one of those and not the other. What is being
+    checked is which words are present, so the punctuation between them is noise."""
     text = normalise(text)
-    text = re.sub(r"[^\w'%.,;:()\[\]/+=<>-]+", " ", text)
-    out = []
-    for tok in text.split():
-        tok = tok.strip(".,;:()[]").lower()
-        if tok:
-            out.append(tok)
-    return out
+    return [t.lower() for t in re.findall(r"[A-Za-z0-9]+(?:'[A-Za-z]+)?", text)]
 
 
 def transcript_prose(src):
@@ -84,14 +84,19 @@ def transcript_prose(src):
 
 
 def pdf_prose(pdf, first=None, last=None):
-    cmd = ["pdftotext"]
-    if first:
-        cmd += ["-f", str(first)]
-    if last:
-        cmd += ["-l", str(last)]
-    cmd += [pdf, "-"]
-    raw = subprocess.run(cmd, capture_output=True, text=True, check=True).stdout
-    raw = normalise(raw)
+    """The paper's words, extracted the same way the draft was.
+
+    This must use the column-aware path: in a plain extraction the publisher's rights
+    strip lands on the same line as body text, and dropping the strip then silently drops
+    the sentence it was sitting next to -- which makes the gate report the transcript as
+    having invented the words it faithfully kept."""
+    sys.path.insert(0, os.path.join(ROOT, "tools"))
+    from draft_transcript import pdftotext, uncolumn, strip_furniture
+    pages = pdftotext(pdf).split("\f")
+    if first or last:
+        pages = pages[(first or 1) - 1:(last or len(pages))]
+    pages = strip_furniture([uncolumn(p) for p in pages])
+    raw = normalise("\n\n".join(pages))
     keep = [l for l in raw.split("\n") if not FURNITURE.match(l)]
     return "\n".join(keep)
 

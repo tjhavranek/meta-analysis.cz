@@ -565,6 +565,28 @@ def paper_pdf(project, meta):
     return None
 
 
+def link_from_project_page(project):
+    """Put a "Read it in full" link in the project page's menu, once.
+
+    A page nobody can reach from the paper's own page is a page nobody reads, and doing
+    this by hand fifty times is fifty chances to forget one."""
+    path = os.path.join(ROOT, project, "index.html")
+    if not os.path.exists(path):
+        return False
+    src = open(path).read()
+    href = "/%s/paper/" % project
+    if href in src:
+        return False
+    m = re.search(r"(<div id=\"menu\">\s*<ul>\s*(?:<li[^>]*>.*?</li>\s*)?)", src, re.S)
+    if not m:
+        return False
+    entry = '\n\t\t\t<li><a href="%s">Read it in full</a></li>\n\t\t\t' % href
+    src = src[:m.end()].rstrip() + entry + src[m.end():].lstrip()
+    with open(path, "w") as fh:
+        fh.write(src)
+    return True
+
+
 def main(argv):
     papers = {p["project"]: p for p in json.load(open(os.path.join(ROOT, "tools", "papers.json")))}
     if not argv or argv[0] == "--all":
@@ -584,8 +606,11 @@ def main(argv):
         os.makedirs(outdir, exist_ok=True)
         with open(os.path.join(outdir, "index.html"), "w") as fh:
             fh.write(page)
-        print("%-22s %6d bytes  %2d sections  %s" % (
-            project, len(page), len(builder.toc), "figures" if "<figure>" in page else ""))
+        linked = link_from_project_page(project)
+        print("%-22s %6d bytes  %2d sections  %s%s" % (
+            project, len(page), len(builder.toc),
+            "figures " if "<figure>" in page else "",
+            "linked" if linked else ""))
 
 
 if __name__ == "__main__":

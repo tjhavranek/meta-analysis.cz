@@ -127,6 +127,13 @@ for rel in pages:
     # legitimately differs from HEAD. Comparing the sentence with its digits masked keeps
     # every other word on that page under the same guard, and the count itself is not
     # unchecked: the generator warns if the sentence stops matching its pattern at all.
+    # tools/build_paper_page.py adds one menu entry to a project page when that paper gets
+    # a full-text edition. That is a deliberate edit by a different tool, not the SEO
+    # generator rewriting prose, so the entry is masked on both sides and every other word
+    # on the page stays under the guard.
+    _readfull = re.compile(r"\s*Read it in full\s*")
+    if _o is not None:
+        _o, _n = _readfull.sub(" ", _o), _readfull.sub(" ", _n)
     _counts = re.compile(r"pools \d+ of the \d+ published datasets")
     if rel == "about/index.html":
         _o, _n = _counts.sub("pools N of the N published datasets", _o), \
