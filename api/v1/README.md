@@ -75,12 +75,9 @@ the trough, coded 99, and the peak, coded 88), and `house_prices` ships about
 seven horizons per impulse response. Check `horizon` before treating rows as
 independent. Version **1.1.1**.
 
-1.0.0 was **smaller than 0.9.0-beta while covering more**: 48,355 rows
-against 54,076. 1.1.0 added `finance_growth`, taking the table to 41 literatures,
-and 1.1.1 removed 20 `price_puzzle` rows that corresponded to no source estimate,
-leaving 49,669. The beta repeated every `price_puzzle` estimate seven times, so
-roughly one row in eight of it was a duplicate. Correcting that removed more rows
-than the one added literature and two added horizons put back.
+1.1.0 added `finance_growth`, taking the table to 41 literatures, and 1.1.1
+removed 20 `price_puzzle` rows that corresponded to no source estimate, leaving
+49,669.
 
 Core columns are present for every row: `dataset`, `study_id`, `estimate_id`,
 `effect`, `se`, `t_stat`, `precision`. The rest are harmonised moderators, and
@@ -128,9 +125,8 @@ the archived deposit:
 > `https://doi.org/10.5281/zenodo.21789702` is version 1.0.0, superseded by 1.1.1, which
 > removes 20 `price_puzzle` rows that corresponded to no source estimate.
 >
-> **https://doi.org/10.5281/zenodo.21773679** is version 0.9.0-beta, now superseded — kept live so
-> existing citations of the beta still resolve, but its `price_puzzle` rows are duplicated
-> sevenfold and its `remittances` effects are the wrong estimand. Do not start new work from it.
+> `https://doi.org/10.5281/zenodo.21773679` is version 0.9.0-beta, superseded; do not start
+> new work from it.
 
 The deposit is immutable: it holds that version's harmonised table, index,
 codebooks and documentation, with checksums. The live files here may change; the
@@ -297,9 +293,9 @@ independently confirmed.
 ## Two products, not one
 
 **The archive is a faithful mirror. The harmonised table is an interpretation.**
-They are separate things and should be trusted differently. The table is no longer
-a beta -- 40 of the 41 literatures' mappings are verified, the exception being
-`finance_growth` -- but it still involves judgement the archive does not.
+They are separate things and should be trusted differently. 40 of the 41
+literatures' mappings are verified, the exception being `finance_growth`, but
+the table still involves judgement the archive does not.
 
 *Archive* — the original files, faithful CSV and Parquet mirrors, codebooks, and
 paper/DOI metadata. Faithful conversions of what was published.
