@@ -29,6 +29,7 @@ Block level, one construct per line unless noted:
     $\\beta_1$                 inline mathematics, anywhere in a paragraph
 
     TABLE 1. Caption text      table caption; the pipe table on the following lines is the table
+    TABLE 1 (continued). Cap   a second panel of the same printed table
     | a | b |                  markdown pipe table (the --- separator row is required)
     Note: ...                  a paragraph directly after a table becomes the table note
 
@@ -120,8 +121,11 @@ RE_H2 = re.compile(r"^##\s+(?!#)(.*)$")
 RE_H3 = re.compile(r"^###\s+(?!#)(.*)$")
 RE_H4 = re.compile(r"^####\s+(.*)$")
 RE_EQ = re.compile(r"^\$\$(.+?)\$\$\s*(?:\(([^)]+)\))?\s*$")
-RE_TABLE_CAP = re.compile(r"^TABLE\s+([\w.]+)\.\s*(.*)$")
-RE_FIG_CAP = re.compile(r"^FIGURE\s+([\w.]+)(\s*\(no artwork\))?\.\s*(.*)$")
+RE_TABLE_CAP = re.compile(
+    r"^TABLE\s+([A-Za-z]?\d+(?:\.\d+)?[A-Za-z]?)"
+    r"(?:\s*\(\s*(?:continued|cont\.?)\s*\))?\s*\.\s*(.*)$", re.I)
+RE_FIG_CAP = re.compile(
+    r"^FIGURE\s+([A-Za-z]?\d+(?:\.\d+)?[A-Za-z]?)(\s*\(no artwork\))?\s*\.\s*(.*)$", re.I)
 RE_LIST_ITEM = re.compile(r"^([0-9]+|[ivxlcdm]+)\.\s+(.*)$")
 
 
