@@ -22,7 +22,29 @@ self-checks, so a broken run leaves the previous page in place.
 import csv, html, json, os, re, sys
 
 HERE = os.path.dirname(os.path.abspath(__file__))
-SITE = os.path.normpath(os.path.join(HERE, "..", "site"))
+def _resolve_site(start):
+    """Locate the site directory under either layout.
+
+    Both this repo's scripts assumed the DEVELOPMENT layout (a `site/` folder beside the
+    tools), so run from the PUBLISHED repo -- where the tools live inside the site they
+    build -- they pointed at a directory that does not exist. data_layer/_paths.py already
+    resolves both; this is the same rule for the board scripts.
+    """
+    import os as _os
+    env = _os.environ.get("SEO_SITE_DIR")
+    if env:
+        return env
+    sibling = _os.path.join(start, "site")
+    if _os.path.isdir(sibling):
+        return sibling
+    here = start
+    for _ in range(3):
+        here = _os.path.dirname(here)
+        if _os.path.isdir(_os.path.join(here, "api")) and _os.path.isdir(_os.path.join(here, "data")):
+            return here
+    return sibling
+
+SITE = _resolve_site(os.path.normpath(os.path.join(HERE, "..")))
 CSV = os.path.join(SITE, "estimates.csv")
 QUESTIONS = os.path.join(HERE, "results_questions.json")
 OUT = os.path.join(SITE, "results", "index.html")
@@ -396,8 +418,12 @@ figure came from.</p>
         problems.append("section imbalance")
     if re.search(r"\{\{|\}\}", page):
         problems.append("unsubstituted placeholder")
-    if page.count('class="result"') != len(rows):
-        problems.append(f"{page.count('class=\"result\"')} results, expected {len(rows)}")
+    n_results = page.count('class="result"')
+    if n_results != len(rows):
+        # The count is lifted out of the f-string: an f-string expression may not contain a
+        # backslash before Python 3.12, so this file did not PARSE on 3.11 and the script
+        # could not run at all, syntax error rather than a wrong number.
+        problems.append(f"{n_results} results, expected {len(rows)}")
     try:
         parsed = json.loads(jsonld)
         if parsed["numberOfItems"] != len(rows):

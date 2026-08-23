@@ -291,6 +291,28 @@ for loc in re.findall(r"<loc>(.*?)</loc>", sm):
     if lp and not os.path.isfile(lp):
         fails.append(f"sitemap: missing target {loc}")
 
+# One footer, on every page. It is duplicated by copying rather than by include, so it
+# drifts silently: the notes builder kept its own copy and dropped a link the moment it ran,
+# /guidelines/guide/ had lost the whole CC BY licence paragraph, and /conventional_wisdom/
+# was missed by the serial-comma sweep. Three different divergences, none of which any check
+# would have reported. The homepage's copy is the reference.
+_foot_re = re.compile(r'<footer class="site-foot">.*?</footer>', re.S)
+_m = _foot_re.search(open(os.path.join(SITE, "index.html"), encoding="utf-8").read())
+if not _m:
+    fails.append("the homepage has no site footer to compare against")
+else:
+    _canonical = _m.group(0)
+    for _dp, _dns, _fns in os.walk(SITE):
+        if any(x in _dp for x in (os.sep + ".git", "__pycache__")):
+            continue
+        if "index.html" not in _fns:
+            continue
+        _p = os.path.join(_dp, "index.html")
+        _mm = _foot_re.search(open(_p, encoding="utf-8").read())
+        if _mm and _mm.group(0) != _canonical:
+            fails.append("%s: site footer differs from the homepage's"
+                         % os.path.relpath(_p, SITE).replace(os.sep, "/"))
+
 # llms.txt / llms-full.txt internal URLs resolve
 for fn in ("llms.txt", "llms-full.txt"):
     txt = open(os.path.join(SITE, fn), encoding="utf-8").read()

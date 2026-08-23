@@ -311,6 +311,37 @@ distinguish a headline estimand from a robustness one, a short-run from a
 long-run effect, or a baseline sample from a filtered one; `audit_status` records
 which further check settled each literature.
 
+## `/estimates.csv`, and why the headline is prose
+
+One row per paper, fifteen columns. `project` joins to `datasets.json.id`, and
+`source_quote` carries the verbatim sentence from the paper that the figure came
+from, so every number can be traced to the words that state it.
+
+**`headline` is prose on purpose, and only one of the fifty-four rows is a bare
+number.** The others are ranges, qualitative statements, or clauses that carry
+their own conditions -- a percentage change per one-percentage-point rise,
+peaking after two years. Reducing those to a single numeric column would drop the
+conditions and read as authoritative, and the ranges are not even the same kind
+of object: one is a 95% credible interval, another a range across
+specifications, another a range of corrected means. A file named
+`estimates.csv`, on a site about publication bias, is exactly where an invented
+midpoint would be quoted back as the result.
+
+Three columns are derived mechanically and are safe to parse:
+
+| column | what it is |
+|---|---|
+| `question` | the question the paper answers, the same string `/results/` marks up as a schema.org `Question` |
+| `basis_n_estimates` | the estimate count stated in `basis`, or empty |
+| `basis_n_studies` | the study count stated in `basis`, or empty |
+
+They are named for `basis` because that is what they read. **They are not the
+dataset's row counts** and will not always match `datasets.json`: `basis` states
+what the paper's headline rests on, `n_estimates` counts rows in the published
+file, and the two differ wherever the paper's headline uses a subset. Both are
+empty wherever `basis` does not state the number unambiguously -- an approximate
+count, or a unit that is not a study, such as a meta-analysis or an experiment.
+
 ## Licence
 
 **Everything here is CC BY 4.0.** The datasets, their CSV and Parquet conversions,
