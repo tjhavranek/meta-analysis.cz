@@ -793,13 +793,22 @@ def pdf_path(project, meta):
     return os.path.join(ROOT, project, rel)
 
 
+# The two papers whose full text was written by hand before the toolchain existed, and does
+# not live at the address the convention would put it. Declared once, here, because every
+# tool that looks for a paper's page needs the same answer: tools/check_paper_pages.py had
+# its own idea and so checked neither of them, which is how /maive/paper/ pointed at a
+# deleted figure without anything noticing.
+HAND_BUILT = {"maive": "maive/paper", "guidelines": "guidelines/guide"}
+
+
 def page_href(project, meta):
     """Where this page lives on the site.
 
     A paper's full text sits at /<project>/paper/. A registered document gives its own
     slug, because a supplement belongs beside the paper it supplements rather than in a
     directory of its own."""
-    return "/%s/" % (meta.get("slug") or "%s/paper" % project).strip("/")
+    return "/%s/" % (meta.get("slug") or HAND_BUILT.get(project)
+                     or "%s/paper" % project).strip("/")
 
 
 def page_dir(project, meta):

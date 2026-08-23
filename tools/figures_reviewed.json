@@ -1,5 +1,6 @@
 {
   "_why": "Crops the plot-versus-prose screen cannot call, checked against the page image by eye and kept. Listing them here keeps the screen at zero so a NEW bad crop still stands out. Every entry names what was seen.",
   "beauty/figS3.png": "Two-panel BMA diagnostic: posterior model size distribution and posterior model probabilities. Sparse line plots with a row of axis ticks, which lifts the flip count to 2.6 -- above the 0.6-1.4 the screen calibrated on artwork and below the 3.4-7.0 it calibrated on text.",
-  "beauty/figS7.png": "The same pair of panels for the estimation with beauty penalties excluded, and the same reason."
+  "beauty/figS7.png": "The same pair of panels for the estimation with beauty penalties excluded, and the same reason.",
+  "maive/fig2.png": "Eight labelled panels (a)-(h) of bias against the correlation between the two regressors, one per estimator family. Checked against page 6 of the published article. It scores 2.8 flips per hundred rows -- the same ambiguous band as beauty's diagnostics -- and audit_figures --delete removed it on that basis in ea5e30d, which left the page pointing at a file that was not there."
 }

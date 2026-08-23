@@ -50,83 +50,89 @@ def check(project):
     tr_path = os.path.join(ROOT, "tools", "transcripts", "%s.md" % project)
     if not os.path.exists(page_path):
         return ["no page at %s" % page_dir(project, PAPERS[project])], []
-    if not os.path.exists(tr_path):
-        # /maive/paper/ and /guidelines/guide/ were built by hand before the toolchain
-        # existed. They are checked by eye, not by this gate.
-        return [], ["hand-built page, no transcript to check against"]
-
     page = open(page_path).read()
-    src = open(tr_path).read()
+    # /maive/paper/ and /guidelines/guide/ were built by hand before the toolchain existed and
+    # have no transcript, so the fidelity and census checks below cannot run on them. That
+    # used to mean NO check ran on them, which is how /maive/paper/ came to point at a figure
+    # file that had been deleted and stayed that way: a broken image on the site's flagship
+    # page, invisible to this gate because the gate returned before it looked. Everything that
+    # only needs the PAGE -- missing figures, dead citation links, placeholders, the
+    # attribution block, the JSON-LD -- runs on every page now.
+    have_transcript = os.path.exists(tr_path)
+    if not have_transcript:
+        notes.append("hand-built page, no transcript: fidelity and census checks skipped")
+    src = open(tr_path).read() if have_transcript else None
     pdf = pdf_path(project, PAPERS[project])
 
     # -- nothing invented
-    a = pdf_counts(pdf)
-    b = words(transcript_prose(src))
-    _lost, gained = multiset_check(a, b)
-    invented = sum(c for w, c in gained.items() if re.search(r"[a-z]{3}", w))
-    if invented > 6:
-        fails.append("%d prose words on the page are not in the PDF (%s)"
-                     % (invented, ", ".join(sorted(w for w in gained if re.search(r"[a-z]{3}", w))[:8])))
-    elif invented:
-        notes.append("%d word(s) not in the text layer: %s"
-                     % (invented, ", ".join(sorted(w for w in gained if re.search(r"[a-z]{3}", w)))))
+    if have_transcript:
+      a = pdf_counts(pdf)
+      b = words(transcript_prose(src))
+      _lost, gained = multiset_check(a, b)
+      invented = sum(c for w, c in gained.items() if re.search(r"[a-z]{3}", w))
+      if invented > 6:
+          fails.append("%d prose words on the page are not in the PDF (%s)"
+                       % (invented, ", ".join(sorted(w for w in gained if re.search(r"[a-z]{3}", w))[:8])))
+      elif invented:
+          notes.append("%d word(s) not in the text layer: %s"
+                       % (invented, ", ".join(sorted(w for w in gained if re.search(r"[a-z]{3}", w)))))
 
-    # -- how much of the paper's distinctive vocabulary the transcript accounts for.
-    #    Total words are a poor measure: half the words in a paper are "the" and "of", and
-    #    tables supply thousands of short tokens the prose comparison never sees. Long words
-    #    are where a paper's content lives, and across the fifty-three converted papers the
-    #    share of them the transcript is missing runs from 3% to 29%. A page that dropped a
-    #    section would sit far outside that; a threshold at 45% flags it without crying wolf
-    #    at the papers whose tables are simply large.
-    long_pdf = sum(c for w, c in a.items() if len(w) >= 8)
-    long_missing = sum(c for w, c in _lost.items() if len(w) >= 8)
-    share = long_missing / max(1, long_pdf)
-    if share > 0.45:
-        fails.append("%.0f%% of the paper's long words are absent from the transcript -- "
-                     "a section may be missing" % (100 * share))
-    elif share > 0.33:
-        notes.append("%.0f%% of the paper's long words are absent (tables and figures "
-                     "account for most of it)" % (100 * share))
+      # -- how much of the paper's distinctive vocabulary the transcript accounts for.
+      #    Total words are a poor measure: half the words in a paper are "the" and "of", and
+      #    tables supply thousands of short tokens the prose comparison never sees. Long words
+      #    are where a paper's content lives, and across the fifty-three converted papers the
+      #    share of them the transcript is missing runs from 3% to 29%. A page that dropped a
+      #    section would sit far outside that; a threshold at 45% flags it without crying wolf
+      #    at the papers whose tables are simply large.
+      long_pdf = sum(c for w, c in a.items() if len(w) >= 8)
+      long_missing = sum(c for w, c in _lost.items() if len(w) >= 8)
+      share = long_missing / max(1, long_pdf)
+      if share > 0.45:
+          fails.append("%.0f%% of the paper's long words are absent from the transcript -- "
+                       "a section may be missing" % (100 * share))
+      elif share > 0.33:
+          notes.append("%.0f%% of the paper's long words are absent (tables and figures "
+                       "account for most of it)" % (100 * share))
 
-    # -- the tables and figures the paper has, the page has
-    sc = scout(project, PAPERS)
-    want_t = set(sc.get("tables", {}))
-    want_f = set(sc.get("figures", {}))
-    # A table too tall for one printed page is two panels sharing a number; the second is
-    # marked continued and is not a duplicate.
-    got_t = re.findall(r"<caption><b>Table ([A-Za-z0-9.]+)\.</b>", page)
-    got_f = re.findall(r"<b>Figure ([A-Za-z0-9.]+)\.</b>", page)
-    # Which numbers, not how many: a page carrying Table 2 twice and no Table 3 has the
-    # right count and the wrong contents, and the count alone cannot tell them apart.
-    for label, want, got in (("table", want_t, got_t), ("figure", want_f, got_f)):
-        # A figure printed once with lettered panels -- "Figure 4. ... (A) ... (B) ..." --
-        # reads out of the text layer as both "4" and "4A". The page carrying 4 has it.
-        seen = set(got) | {n[:-1] for n in got if n[-1:].isalpha()}
-        want = {n for n in want
-                if not (n[-1:].isalpha() and n[:-1] in seen)}
-        missing = want - seen
-        if missing:
-            fails.append("the paper prints %s %s; the page does not"
-                         % (label, ", ".join(sorted(missing))))
-        dupes = {n for n in got if got.count(n) > 1}
-        if dupes:
-            fails.append("%s %s appears more than once on the page"
-                         % (label.capitalize(), ", ".join(sorted(dupes))))
+      # -- the tables and figures the paper has, the page has
+      sc = scout(project, PAPERS)
+      want_t = set(sc.get("tables", {}))
+      want_f = set(sc.get("figures", {}))
+      # A table too tall for one printed page is two panels sharing a number; the second is
+      # marked continued and is not a duplicate.
+      got_t = re.findall(r"<caption><b>Table ([A-Za-z0-9.]+)\.</b>", page)
+      got_f = re.findall(r"<b>Figure ([A-Za-z0-9.]+)\.</b>", page)
+      # Which numbers, not how many: a page carrying Table 2 twice and no Table 3 has the
+      # right count and the wrong contents, and the count alone cannot tell them apart.
+      for label, want, got in (("table", want_t, got_t), ("figure", want_f, got_f)):
+          # A figure printed once with lettered panels -- "Figure 4. ... (A) ... (B) ..." --
+          # reads out of the text layer as both "4" and "4A". The page carrying 4 has it.
+          seen = set(got) | {n[:-1] for n in got if n[-1:].isalpha()}
+          want = {n for n in want
+                  if not (n[-1:].isalpha() and n[:-1] in seen)}
+          missing = want - seen
+          if missing:
+              fails.append("the paper prints %s %s; the page does not"
+                           % (label, ", ".join(sorted(missing))))
+          dupes = {n for n in got if got.count(n) > 1}
+          if dupes:
+              fails.append("%s %s appears more than once on the page"
+                           % (label.capitalize(), ", ".join(sorted(dupes))))
 
-    # -- every table on the page is one the paper prints
-    #    A table with no caption is a fragment, not a table. Blank lines between a table's
-    #    rows used to end it, so one of beauty's tables became fifty-one tables of a single
-    #    row and the page carried 397 where the paper prints 29. The counts are equal on
-    #    every paper once the rows are read as one table, which makes the equality a fact
-    #    about the conversion rather than a coincidence, and worth failing on.
-    #    Not every table carries a numbered caption: size prints a 103-row list of studies
-    #    under an appendix HEADING, which is a real table and not a fragment. What a fragment
-    #    is, is short -- the bug produced tables of a single row -- so that is what is tested.
-    fragments = [t for t in re.findall(r"<table.*?</table>", page, re.S)
-                 if "<caption" not in t and t.count("<tr") < 3]
-    if fragments:
-        fails.append("%d table(s) have no caption and fewer than three rows -- a table's rows "
-                     "have been split into separate tables" % len(fragments))
+      # -- every table on the page is one the paper prints
+      #    A table with no caption is a fragment, not a table. Blank lines between a table's
+      #    rows used to end it, so one of beauty's tables became fifty-one tables of a single
+      #    row and the page carried 397 where the paper prints 29. The counts are equal on
+      #    every paper once the rows are read as one table, which makes the equality a fact
+      #    about the conversion rather than a coincidence, and worth failing on.
+      #    Not every table carries a numbered caption: size prints a 103-row list of studies
+      #    under an appendix HEADING, which is a real table and not a fragment. What a fragment
+      #    is, is short -- the bug produced tables of a single row -- so that is what is tested.
+      fragments = [t for t in re.findall(r"<table.*?</table>", page, re.S)
+                   if "<caption" not in t and t.count("<tr") < 3]
+      if fragments:
+          fails.append("%d table(s) have no caption and fewer than three rows -- a table's rows "
+                       "have been split into separate tables" % len(fragments))
 
     # -- nothing broken
     if "<<" in page:

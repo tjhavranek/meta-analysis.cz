@@ -22,7 +22,9 @@ from build_paper_page import article_title, documents, page_href   # noqa: E402
 PAPERS = {p["project"]: p for p in json.load(open(os.path.join(ROOT, "tools", "papers.json")))}
 
 # The two pages built by hand before the toolchain existed live at their own addresses.
-HAND_BUILT = {"maive": "/maive/paper/", "guidelines": "/guidelines/guide/"}
+# One definition, in build_paper_page.py, so this index and the checker agree with it.
+from build_paper_page import HAND_BUILT as _HB                     # noqa: E402
+HAND_BUILT = {k: "/%s/" % v for k, v in _HB.items()}
 
 
 def editions():
