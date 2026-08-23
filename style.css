@@ -1072,3 +1072,12 @@ table.catalogue li{ margin-bottom:var(--s2); font-size:var(--f-1); line-height:1
    -- the reference is what the paper wrote, this is what the site can add to it. */
 .references .on-site{ font:400 .85em/1.4 var(--sans); white-space:nowrap; }
 .references .on-site::before{ content:"\2192\00a0"; }
+
+/* A DOI matched to a reference that was printed without one. Same reasoning as .on-site
+   above: it is the site's annotation on the citation, not something the paper wrote, so it
+   is quieter than the reference it follows. It wraps, because a DOI is a long unbroken token
+   and a phone has 320px. The note that precedes such a list says where the DOIs came from --
+   an added link that does not say it was added is a small lie about the printed page. */
+.references .ref-doi{ font:400 .85em/1.4 var(--sans); overflow-wrap:anywhere; }
+.ref-note{ font:400 .85em/1.5 var(--sans); color:var(--ink-soft);
+           margin:0 0 var(--s3); max-width:var(--measure); }

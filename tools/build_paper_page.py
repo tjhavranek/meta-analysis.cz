@@ -43,6 +43,7 @@ reference list when the paper numbers its references), _{i} for a subscript, and
 em dash. Literal text is escaped; nothing in a transcript can inject markup.
 """
 
+import hashlib
 import html
 import json
 import os
@@ -194,6 +195,7 @@ class Builder:
         self.project = project
         self.meta = meta
         self.out = []
+        self._matched_refs = 0
         self.toc = []
         self.refs_numbered = False
         self.in_frontmatter = False
@@ -315,6 +317,9 @@ class Builder:
                        % (anchor, inline(heading_label(head), self.refs_numbered)))
                 self.toc.append((2, anchor, head))
                 if upper.startswith("REFERENCES"):
+                    # Filled in at the end of the render, once it is known whether any
+                    # reference on this page actually got a matched link to explain.
+                    self.w(REF_NOTE_SLOT)
                     self.w('<ol class="references%s">'
                            % ("" if self.refs_numbered else " unnumbered"))
                     mode = "references"
@@ -345,6 +350,11 @@ class Builder:
                         self._ref_seq = int(key)
                     rendered = inline(body, self.refs_numbered)
                     if mode == "references":
+                        # The matched DOI first: it is a link cites_on_site can then read,
+                        # so a reference to a paper published here reaches it either way.
+                        link = matched_doi_link(rendered)
+                        self._matched_refs += bool(link)
+                        rendered += link
                         rendered += cites_on_site(rendered, self.project)
                     self.w('<li id="%s%s"%s>%s</li>' % (idprefix, key, style, rendered))
                     i = j
@@ -358,6 +368,9 @@ class Builder:
                         body += " " + lines[j].strip()
                         j += 1
                     rendered = inline(body, self.refs_numbered)
+                    link = matched_doi_link(rendered)
+                    self._matched_refs += bool(link)
+                    rendered += link
                     self.w("<li>%s</li>" % (rendered + cites_on_site(rendered, self.project)))
                     i = j
                     continue
@@ -439,7 +452,11 @@ class Builder:
 
         flush()
         close_mode()
-        return "\n".join(self.out)
+        page = "\n".join(self.out)
+        if self._matched_refs:
+            return page.replace(REF_NOTE_SLOT, REF_NOTE)
+        # With its newline: an unfilled slot must leave no trace, not a blank line.
+        return page.replace(REF_NOTE_SLOT + "\n", "").replace(REF_NOTE_SLOT, "")
 
     def emit_table(self, rows, caption):
         cells = [[c.strip() for c in r.strip("|").split("|")] for r in rows]
@@ -886,6 +903,94 @@ def cites_on_site(rendered, project):
     return ""
 
 
+REF_NOTE_SLOT = "<!--reference-note-->"
+REF_NOTE = ('<p class="ref-note">Some entries below were printed without a link. Where a '
+            'Crossref record matches one and no other record plausibly could, its DOI is '
+            'shown; ambiguous references are left as they were printed.</p>')
+
+_REF_DOIS = None
+
+
+def reference_dois():
+    """DOIs matched to references that were printed without one.
+
+    This lives in a side file and NOT in the transcripts, on purpose. A transcript is
+    checked word by word against its PDF; writing a DOI into one would be writing text the
+    paper does not contain, and the fidelity gate would be right to fail it. The link is a
+    rendering of the reference, not part of it, so it is attached at render time."""
+    global _REF_DOIS
+    if _REF_DOIS is None:
+        path = os.path.join(ROOT, "tools", "reference_dois.json")
+        try:
+            with open(path, encoding="utf-8") as fh:
+                _REF_DOIS = json.load(fh).get("entries", {})
+        except FileNotFoundError:
+            _REF_DOIS = {}
+    return _REF_DOIS
+
+
+def reference_key(rendered):
+    """The identity of a reference is its visible text, and nothing else.
+
+    Keying on the text rather than on (paper, position) means the same reference cited by
+    six papers is matched once, and that renumbering or re-transcribing a reference list
+    drops the stale links instead of moving them onto the wrong entries."""
+    # Tags are removed, not replaced by a space: the matcher keys on exactly this string,
+    # and the two must derive it the same way or every key misses by a space.
+    text = html.unescape(re.sub(r"<[^>]+>", "", rendered))
+    return hashlib.sha1(" ".join(text.split()).encode("utf-8")).hexdigest()[:16]
+
+
+OUR_LINK = re.compile(r'\s*<a class="(?:ref-doi|on-site)"[^>]*>.*?</a>', re.S)
+
+
+def strip_our_links(fragment):
+    """Remove the links this builder appends, so re-reading a built page sees the reference
+    as it was printed. Everything that keys on a reference's text depends on this."""
+    return OUR_LINK.sub("", fragment)
+
+
+def matched_doi_link(rendered):
+    """Attach the matched DOI, if this reference has one and prints no link of its own."""
+    if "<a " in rendered:
+        return ""
+    hit = reference_dois().get(reference_key(rendered))
+    if not hit:
+        return ""
+    return (' <a class="ref-doi" rel="nofollow" href="https://doi.org/%s">%s</a>'
+            % (html.escape(hit["doi"], quote=True), html.escape(hit["doi"])))
+
+
+def attach_reference_links(path):
+    """Attach matched DOIs to a page this builder did not render.
+
+    Two pages here are written by hand rather than generated from a transcript, and their
+    reference lists are as unlinked as any other -- 158 entries between them. Rewriting the
+    list items in place gives them the same links on the same evidence. Our own links are
+    stripped first, so a re-run replaces them rather than stacking a second copy."""
+    src = open(path, encoding="utf-8").read()
+    m = re.search(r'<(ol|ul) class="references[^"]*">(.*?)</\1>', src, re.S)
+    if not m:
+        return 0
+    added = [0]
+
+    def one(mo):
+        open_tag, body = mo.group(1), strip_our_links(mo.group(2))
+        link = matched_doi_link(body)
+        added[0] += bool(link)
+        return "%s%s%s</li>" % (open_tag, body, link)
+
+    rewritten = re.sub(r"(<li[^>]*>)(.*?)</li>", one, m.group(2), flags=re.S)
+    listing = m.group(0).replace(m.group(2), rewritten, 1)
+    src = src[:m.start()] + listing + src[m.end():]
+    # With its newline, or a re-run leaves a blank line behind and the page never settles.
+    src = src.replace(REF_NOTE + "\n", "").replace(REF_NOTE, "")
+    if added[0]:
+        src = src.replace(listing, REF_NOTE + "\n" + listing, 1)
+    open(path, "w", encoding="utf-8").write(src)
+    return added[0]
+
+
 def link_from_project_page(project):
     """Put a "Read it in full" link in the project page's menu, once.
 
@@ -916,6 +1021,13 @@ def main(argv):
                           if p.endswith(".md") and not p.endswith(".draft.md"))
     else:
         projects = argv
+    if not argv or argv[0] == "--all":
+        for project, rel in sorted(HAND_BUILT.items()):
+            path = os.path.join(ROOT, rel, "index.html")
+            if os.path.exists(path):
+                print("%-22s %6d reference link(s) attached (hand-built page)"
+                      % (project, attach_reference_links(path)))
+
     for project in projects:
         src_path = os.path.join(TRANSCRIPTS, "%s.md" % project)
         if not os.path.exists(src_path):

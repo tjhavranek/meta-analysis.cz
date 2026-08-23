@@ -79,6 +79,13 @@ jobs:
       - name: Verify the headline evidence
         run: python tools/check_evidence.py
 
+      # Every DOI attached to a reference that was printed without one. The check re-applies
+      # the acceptance rule from the stored record rather than trusting the matcher's verdict,
+      # and refuses an entry whose text no longer matches a reference on the site -- so an
+      # edited reference list drops its links instead of keeping them on the wrong entries.
+      - name: Verify the matched reference DOIs
+        run: python tools/check_reference_dois.py
+
       # Did this push touch the data layer? 09_verify proves the tree is internally
       # CONSISTENT; it cannot prove the tree FOLLOWS FROM its canonical inputs. A tree can be
       # perfectly self-consistent and still stale, which is exactly what happened four times in
