@@ -1,0 +1,8 @@
+# The site builders' own dependency, pinned for the same reason the data layer's are:
+# latex2mathml turns a paper's LaTeX into MathML, and a version change would rewrite the
+# markup of every equation on the site without a single formula changing.
+#
+# It is separate from data_layer/requirements-pinned.txt because the two layers are
+# separate: the data layer needs pandas and pyarrow and does not need this, and the site
+# builders need this and not those.
+latex2mathml==3.81.0
