@@ -85,6 +85,12 @@ def online(doc, entries):
     """Re-fetch every DOI, re-run the rule, drop what fails, store what the rule needs."""
     kept, dropped = {}, []
     for n, (key, e) in enumerate(sorted(entries.items()), 1):
+        # An entry that already carries the record's authors has been through this pass. Two
+        # things follow: a re-run costs nothing, and a run cut short in the middle keeps what
+        # it verified. Three thousand fetches is an hour, and an hour is long enough to lose.
+        if "authors" in e:
+            kept[key] = e
+            continue
         rec = ((fetch("https://api.crossref.org/works/"
                       + urllib.parse.quote(e["doi"])) or {}).get("message") or {})
         if not rec or rec.get("DOI", "").lower() != e["doi"].lower():
@@ -104,14 +110,20 @@ def online(doc, entries):
                                        for au in (rec.get("author") or []) if au.get("family")}),
                 }
         if n % 50 == 0:
+            flush(doc, dict(kept, **{k: v for k, v in entries.items()
+                                     if k not in kept and k not in dict(dropped)}))
             print("  re-verified %d/%d, dropped %d" % (n, len(entries), len(dropped)), flush=True)
         time.sleep(1.1)
 
-    doc["entries"] = kept
+    flush(doc, kept)
+    return dropped
+
+
+def flush(doc, entries):
+    doc["entries"] = entries
     doc["verified_by"] = "tools/check_reference_dois.py --online"
     json.dump(doc, open(PATH, "w", encoding="utf-8"), indent=1, sort_keys=True,
               ensure_ascii=False)
-    return dropped
 
 
 def main():
