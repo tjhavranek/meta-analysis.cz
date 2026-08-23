@@ -134,6 +134,19 @@ def inline(text, refs_are_numbered=False, link_cites=True):
                   lambda m: park('<a href="%s">%s</a>' % (m.group(2), m.group(1))), text)
     text = re.sub(r"(?<![\w/])(https?://[^\s<>)\]]+[\w/])",
                   lambda m: park('<a href="%s">%s</a>' % (m.group(1), m.group(1))), text)
+    # A DOI is a link whether or not the paper printed it as one, and the reference lists
+    # carry theirs three ways: after a "doi:" label, bare, and as an https://doi.org/ URL
+    # glued to the preceding word so the bare-URL rule above could not see it. All three
+    # resolve identically. The closing character class keeps the link from swallowing the
+    # sentence's full stop, which would send the reader to a DOI that does not exist.
+    def _doi(m):
+        prefix, doi = m.group(1) or "", m.group(2)
+        if prefix.lower().startswith("http"):
+            return park('<a href="https://doi.org/%s">%s%s</a>' % (doi, prefix, doi))
+        return prefix + park('<a href="https://doi.org/%s">%s</a>' % (doi, doi))
+
+    text = re.sub(r"(doi:\s*|https?://(?:dx\.)?doi\.org/)?"
+                  r"(10\.\d{4,9}/[^\s<>\"]*[^\s<>\".,;:)\]])", _doi, text, flags=re.I)
     text = re.sub(r"`([^`]+)`", lambda m: "<code>%s</code>" % m.group(1), text)
     # Emphasis markers must hug their text: "*word*" is emphasis, "***, **, and *" is a
     # significance legend. Without the rule a table note came out as interleaved empty tags,

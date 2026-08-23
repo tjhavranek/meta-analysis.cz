@@ -112,8 +112,7 @@ def build():
 \t\t<div class="post">
 \t\t\t<div class="entry">
 
-<p><b>{lede}</b>, as HTML rather than PDF: the whole text, the tables as tables, the
-mathematics as mathematics, the references as links. Each keeps its PDF and its link to the
+<p><b>{lede}</b>, as HTML rather than PDF. Each keeps its PDF and its link to the
 version of record.</p>
 
 <p class="caveat">Figures are reproduced wherever the artwork lifted cleanly off the page
