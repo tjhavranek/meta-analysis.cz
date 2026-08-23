@@ -134,27 +134,71 @@ def _overlap_fields(proj, r):
                 overlap_kind=("identical row for row" if exact
                               else "same literature, partially overlapping collections"))
 
+def _sample_size_col(proj):
+    """The dataset's own sample-size column, as the codebook verified it.
+
+    MAIVE needs three columns and this index named two. The codebook already decides which
+    column is the estimation sample size, and decides it on the values rather than the name
+    -- rejecting a row index, a cross-section count and a log -- so the answer is taken from
+    there rather than guessed a second time here.
+
+    An explicit declaration still wins over an inference, the same way it does for the effect
+    and the standard error. overrides.json already names the sample size for the two datasets
+    whose column no name pattern was ever going to match -- learning's n_study and activism's
+    TotalObs -- and both were verified against the paper's own replication code."""
+    declared=(OVR.get(proj) or {}).get("n_obs")
+    if declared:
+        return declared, None
+    try:
+        cb=json.load(open(os.path.join(OUT,"api",DATA_V,"codebooks",f"{proj}.json"),
+                          encoding="utf-8"))
+    except Exception:
+        return None, None
+    for c in cb.get("columns",[]):
+        if c.get("inferred_role")=="n_obs" or c.get("role")=="n_obs":
+            return c["name"], None
+    # nothing verified: report what was considered and why it was refused, if anything was
+    for c in cb.get("columns",[]):
+        if c.get("not_n_obs_because"):
+            return None, "%s is not it: %s" % (c["name"], c["not_n_obs_because"])
+    return None, None
+
+
+def _with_sample_size(proj, d):
+    """Name the sample-size column beside the effect and its standard error.
+
+    Stated as absent rather than omitted when the dataset has none: nine literatures ship no
+    sample size at all, and a reader planning a MAIVE run needs to know that before opening
+    the file, not after."""
+    col,why=_sample_size_col(proj)
+    d["sample_size"]=col
+    if col is None:
+        d["sample_size_note"]=(why or "no sample-size column in this dataset; MAIVE cannot "
+                                      "be run on it without supplying one")
+    return d
+
+
 def _core_cols(proj):
     o=OVR.get(proj) or {}; r=res.get(proj) or {}
     cmp_=o.get("compute")
     if cmp_ and cmp_.get("type")=="pcc_from_t":
-        return dict(effect=f"partial correlation computed from {cmp_['t_col']} and {cmp_['df_col']}",
+        return _with_sample_size(proj, dict(effect=f"partial correlation computed from {cmp_['t_col']} and {cmp_['df_col']}",
                     standard_error=f"computed as sqrt((1-r^2)/{cmp_['df_col']})",
-                    standard_error_note="derived, not read from a column", evidence="paper's replication code")
+                    standard_error_note="derived, not read from a column", evidence="paper's replication code"))
     if cmp_ and cmp_.get("type")=="rescale_from_t":
-        return dict(effect=f"{cmp_['col']} rescaled by {cmp_.get('constant',1)} x {cmp_['factor_col']}",
+        return _with_sample_size(proj, dict(effect=f"{cmp_['col']} rescaled by {cmp_.get('constant',1)} x {cmp_['factor_col']}",
                     standard_error=f"derived as |effect/{cmp_['t_col']}|",
-                    standard_error_note="derived, not read from a column", evidence="paper's replication code")
+                    standard_error_note="derived, not read from a column", evidence="paper's replication code"))
     eff=o.get("effect") or r.get("effect")
     se=o.get("se") or (None if r.get("se_derived") else r.get("se"))
     if o.get("se_mean_of"): se="mean of "+" and ".join(o["se_mean_of"])
-    return dict(effect=eff, standard_error=se,
+    return _with_sample_size(proj, dict(effect=eff, standard_error=se,
                 standard_error_note=(r.get("se") if r.get("se_derived") and not se else None),
                 # Same trap as _audit_status: verified_by normally means the code was read,
                 # but it can record a mapping settled another way. An explicit `evidence`
                 # declaration wins, so the catalogue cannot claim a source it does not have.
                 evidence=(o.get("evidence") or
-                          ("paper's replication code" if o.get("verified_by") else r.get("evidence"))))
+                          ("paper's replication code" if o.get("verified_by") else r.get("evidence")))))
 
 def _recon_note(proj,pap):
     """Explain a gap between the abstract's count and the pooled rows.
@@ -580,10 +624,59 @@ def _record_set(d):
     return rs
 
 # MLCommons Croissant
-cr={"@context":{"@vocab":"https://schema.org/","cr":"http://mlcommons.org/croissant/",
-                "sc":"https://schema.org/","data":{"@id":"cr:data","@type":"@json"},
-                "recordSet":"cr:recordSet","field":"cr:field","fileObject":"cr:fileObject",
-                "distribution":"cr:distribution","dataType":{"@id":"cr:dataType","@type":"@vocab"}},
+# The Croissant 1.0 JSON-LD context, verbatim from the context MLCommons ships with its own
+# reference datasets (mlcommons/croissant, datasets/1.0). It is a vocabulary mapping, not prose, and it
+# has to match the standard exactly: a hand-written subset loads in a JSON parser and then
+# crashes the reference validator, which resolves terms it expects the context to define. The
+# subset this replaces defined nine of the thirty-four terms and mapped "distribution" to
+# cr:distribution, where the standard leaves it to schema.org via @vocab.
+CROISSANT_CONTEXT = {
+        "@language": "en",
+        "@vocab": "https://schema.org/",
+        "citeAs": "cr:citeAs",
+        "column": "cr:column",
+        "conformsTo": "dct:conformsTo",
+        "cr": "http://mlcommons.org/croissant/",
+        "data": {
+            "@id": "cr:data",
+            "@type": "@json"
+        },
+        "dataType": {
+            "@id": "cr:dataType",
+            "@type": "@vocab"
+        },
+        "dct": "http://purl.org/dc/terms/",
+        "examples": {
+            "@id": "cr:examples",
+            "@type": "@json"
+        },
+        "extract": "cr:extract",
+        "field": "cr:field",
+        "fileObject": "cr:fileObject",
+        "fileProperty": "cr:fileProperty",
+        "fileSet": "cr:fileSet",
+        "format": "cr:format",
+        "includes": "cr:includes",
+        "isLiveDataset": "cr:isLiveDataset",
+        "jsonPath": "cr:jsonPath",
+        "key": "cr:key",
+        "md5": "cr:md5",
+        "parentField": "cr:parentField",
+        "path": "cr:path",
+        "rai": "http://mlcommons.org/croissant/RAI/",
+        "recordSet": "cr:recordSet",
+        "references": "cr:references",
+        "regex": "cr:regex",
+        "repeated": "cr:repeated",
+        "replace": "cr:replace",
+        "sc": "https://schema.org/",
+        "separator": "cr:separator",
+        "source": "cr:source",
+        "subField": "cr:subField",
+        "transform": "cr:transform",
+        "wd": "https://www.wikidata.org/wiki/"
+    }
+cr={"@context":CROISSANT_CONTEXT,
     "@type":"sc:Dataset","conformsTo":"http://mlcommons.org/croissant/1.0",
     "name":"meta-analysis-cz",
     # the DATASET's version, not the schema's. It used to read 1.0.0 while the artefact

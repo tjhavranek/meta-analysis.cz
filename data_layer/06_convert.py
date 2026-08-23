@@ -57,11 +57,80 @@ def clean_for_parquet(df):
 
 VERIFIED_ROLES={"effect_estimate","standard_error"}   # set from the resolved mapping, not a guess
 
-def describe(df, roles):
+
+def df_like(df):
+    """The file's degrees-of-freedom column, if it has one."""
+    for c in df.columns:
+        if re.match(r"^(df|dof|deg_?free\w*|degrees_?of_?freedom)$", norm(c)):
+            v = pd.to_numeric(df[c], errors="coerce")
+            if v.notna().sum() >= 10:
+                return v
+    return None
+
+
+def is_sample_size(df, col):
+    """Whether a column that MATCHES the n_obs name pattern really is a sample size.
+
+    A name match is not enough for this particular role. Three columns in this corpus match
+    the pattern and are not sample sizes: remittances' `Obs` is the row index, exactly 1..538,
+    and its `N` is the number of countries, 1..155 -- while the estimation sample size sits in
+    `Sample`, a name the pattern never matched. n_obs is the one role whose misidentification
+    corrupts MAIVE's first stage silently rather than failing loudly, so it is asserted only
+    when the values agree.
+
+    The two tests are ones the file can answer about itself, in the same spirit as find_year
+    and find_n_obs in the harmoniser -- match on values, not on names:
+
+      * a row index is the sequence 1..n and carries no information about any sample;
+      * a sample cannot be smaller than the degrees of freedom of the regression that
+        produced the estimate, so where the file states df, the candidate must clear it.
+    """
+    v = pd.to_numeric(df[col], errors="coerce")
+    d = v.dropna()
+    if len(d) < 10:
+        return False, "fewer than ten values"
+    if (d < 0).any():
+        return False, "negative values"
+    if (d != d.round()).mean() > 0.1:
+        # A sample size is a count. The usual reason a named column is not one is that it
+        # holds the LOG of one, which the harmoniser exponentiates; saying so is more use to
+        # a reader than saying nothing.
+        return False, ("not integer-valued -- this is the log of a count (exp() of it is "
+                       "whole); the harmonised table carries the exponentiated value"
+                       if looks_log_series(d) else "not integer-valued")
+    # the row index: every row present, exactly once, 1..n
+    if len(d) == len(df) and float(d.min()) == 1 and float(d.max()) == len(df) \
+            and d.nunique() == len(df):
+        return False, "the row index: exactly 1..%d, one per row" % len(df)
+    dfree = df_like(df)
+    if dfree is not None:
+        both = pd.concat([v, dfree], axis=1).dropna()
+        if len(both) >= 10:
+            ok = (both.iloc[:, 0] >= both.iloc[:, 1]).mean()
+            if ok < 0.9:
+                return False, ("smaller than the degrees of freedom on %.0f%% of rows, so it "
+                               "is not the estimation sample size" % (100 * (1 - ok)))
+    return True, None
+
+
+def looks_log_series(d):
+    """Whether a non-integer column is plausibly the log of a count."""
+    import numpy as _np
+    if d.empty or float(d.min()) < 0 or float(d.max()) > 25:
+        return False
+    e = _np.exp(d.astype(float))
+    return bool((_np.abs(e - e.round()) < 0.51).mean() > 0.8)
+
+def describe(df, roles, rejected=None):
     cb=[]
     for c in df.columns:
         s=df[c]; e=dict(name=str(c), normalized=norm(c), dtype=str(s.dtype),
                         n_missing=int(s.isna().sum()), n_unique=int(s.nunique(dropna=True)))
+        if rejected and str(c) in rejected:
+            # The name says sample size and the values say otherwise. Recording the reason
+            # is worth more than silence: it tells a reader why the obvious column is not
+            # the one to use, and stops the next reader re-deriving it.
+            e["not_n_obs_because"]=rejected[str(c)]
         r=roles.get(str(c))
         if r:
             # `role` is asserted ONLY for columns confirmed by the arithmetic test or the
@@ -97,7 +166,7 @@ for proj in sorted(prim):
     if df is None or df.empty:
         manifest.append(dict(project=proj,status="error",reason="empty")); continue
     df=clean_for_parquet(df)
-    roles={}
+    roles={}; rejected={}
     # The OVERRIDE supersedes the resolver. Reading the resolver's guess here published
     # price_puzzle's `idauthor` as an effect_estimate, because the resolver guessed it and
     # the override (a wide->long reshape onto `res`/`se`) replaced that guess entirely.
@@ -116,7 +185,13 @@ for proj in sorted(prim):
     for c in df.columns:
         n=norm(c)
         if re.match(r"^(id_?study|study_?id|idstudy|studyid)$",n): roles.setdefault(str(c),"study_id")
-        elif re.match(r"^(n|nobs|no_?obs|n_?obs|obs|observations|sample_?size|samplesize)$",n): roles.setdefault(str(c),"n_obs")
+        # `sample` is in the pattern because remittances calls its sample size exactly that,
+        # and every candidate must then clear is_sample_size: the name proposes, the values
+        # decide. Without the value test the pattern asserts a row index as a sample size.
+        elif re.match(r"^(n|nobs|no_?obs|n_?obs|obs|observations|sample|sample_?size|samplesize)$",n):
+            ok,why=is_sample_size(df,c)
+            if ok: roles.setdefault(str(c),"n_obs")
+            else: rejected[str(c)]=why
         elif re.match(r"^(pub_?year|publication_?year|yearpub|publicationyear)$",n): roles.setdefault(str(c),"pub_year")
         elif re.match(r"^(t|t_?stat\w*|t_?value|tstats?)$",n): roles.setdefault(str(c),"t_stat")
         elif re.match(r"^(country|idcountry)$",n): roles.setdefault(str(c),"country")
@@ -128,7 +203,7 @@ for proj in sorted(prim):
     cb=os.path.join(OUT,"api","v1","codebooks"); os.makedirs(cb,exist_ok=True)
     json.dump(dict(project=proj, source_file=rec["member"], source_archive=rec["archive"],
                    source_sheet=sheet, n_rows=int(len(df)), n_columns=int(df.shape[1]),
-                   columns=describe(df,roles)),
+                   columns=describe(df,roles,rejected)),
               open(os.path.join(cb,f"{proj}.json"),"w",encoding="utf-8"), indent=1)
     manifest.append(dict(project=proj,status="ok",rows=int(len(df)),cols=int(df.shape[1]),
                          parquet_bytes=os.path.getsize(pq),

@@ -451,8 +451,7 @@
    "dtype": "float64",
    "n_missing": 11,
    "n_unique": 196,
-   "inferred_role": "n_obs",
-   "inferred_role_confidence": "name-match only, not verified",
+   "not_n_obs_because": "not integer-valued -- this is the log of a count (exp() of it is whole); the harmonised table carries the exponentiated value",
    "stats": {
     "min": 4.369448,
     "p25": 6.883463,

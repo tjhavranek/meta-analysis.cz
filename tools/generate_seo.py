@@ -514,6 +514,120 @@ def refresh_about_counts(api):
         pat.sub(f"pools {pooled} of the {total} published datasets", s, count=1))
 
 
+# -- the full text, for llms-full.txt ---------------------------------------------------
+
+_TRANSCRIPTS = os.path.join(SITE, "tools", "transcripts")
+
+# Sections the entry above already states. Repeating them would have a machine read the
+# title, the authors and the abstract twice per paper and disagree with itself on nothing.
+_SKIP_SECTIONS = {"FRONTMATTER", "ABSTRACT"}
+
+
+def _plain(md):
+    """The transcript dialect as ordinary Markdown.
+
+    The transcripts are already Markdown -- pipe tables, LaTeX between dollars, ^{n} for a
+    citation marker -- so this only has to do three things: drop the sections the entry has
+    already stated, undo the Wiley-style "3.2 | Title" heading rule, and push every heading
+    two levels down so a paper's own sections nest under its ## entry instead of colliding
+    with it."""
+    out, skipping = [], False
+    for line in md.split("\n"):
+        m = re.match(r"^(#{2,6})\s+(.*)$", line)
+        if m:
+            level, head = m.group(1), m.group(2).strip()
+            name = re.sub(r"\s*\|\s*", ". ", head).strip()
+            skipping = name.split(":")[0].strip().upper() in _SKIP_SECTIONS
+            if skipping:
+                continue
+            out.append("#" * min(6, len(level) + 2) + " " + name)
+            continue
+        if not skipping:
+            out.append(line)
+    return "\n".join(out).strip("\n")
+
+
+def _from_page(rel):
+    """The article text of a built page, for the two papers that have no transcript.
+
+    /guidelines/guide/ and /maive/paper/ were written by hand before the toolchain existed,
+    so the published HTML is the only copy of their text. Reading it back is not a second
+    source that could disagree with the page -- it IS the page."""
+    path = os.path.join(SITE, rel, "index.html")
+    if not os.path.isfile(path):
+        return None
+    with open(path, encoding="utf-8") as fh:
+        page = fh.read()
+    m = re.search(r'<div class="entry">(.*?)</div>\s*</div>\s*</div>', page, re.S)
+    body = m.group(1) if m else page
+    body = re.sub(r"<(script|style|nav)\b.*?</\1>", " ", body, flags=re.S)
+    # the contents list is navigation, not text, and it repeats every heading
+    body = re.sub(r'<(ol|ul)[^>]*class="[^"]*toc[^"]*".*?</\1>', " ", body, flags=re.S)
+    body = re.sub(r"<h([1-6])[^>]*>(.*?)</h\1>",
+                  lambda mm: "\n\n" + "#" * min(6, int(mm.group(1)) + 2) + " "
+                             + re.sub(r"<[^>]+>", "", mm.group(2)).strip() + "\n", body, flags=re.S)
+    body = re.sub(r"</(p|li|tr|div|figure|table|blockquote)>", "\n", body)
+    body = re.sub(r"<[^>]+>", " ", body)
+    body = html.unescape(body)
+    body = re.sub(r"[ \t]+", " ", body)
+    body = re.sub(r"\n{3,}", "\n\n", body)
+    body = "\n".join(l.strip() for l in body.split("\n"))
+    return _drop_sections(body) or None
+
+
+def _drop_sections(md):
+    """Remove the sections the catalogue entry above already states.
+
+    The transcript path skips FRONTMATTER and ABSTRACT before emitting; a page read back from
+    HTML has to have the same thing done to it, or every hand-built paper prints its abstract
+    twice -- once as the entry's Abstract line and once as the article's own first section."""
+    out, skipping = [], False
+    for line in md.split("\n"):
+        m = re.match(r"^(#{2,6})\s+(.*)$", line)
+        if m:
+            skipping = m.group(2).strip().split(":")[0].strip().upper() in _SKIP_SECTIONS
+            if skipping:
+                continue
+        if not skipping:
+            out.append(line)
+    return "\n".join(out).strip("\n")
+
+
+# The two hand-built pages, and where their text actually lives.
+_HAND_BUILT = {"guidelines": "guidelines/guide", "maive": "maive/paper"}
+
+
+def full_text_of(project):
+    path = os.path.join(_TRANSCRIPTS, f"{project}.md")
+    if not os.path.isfile(path):
+        rel = _HAND_BUILT.get(project)
+        return _from_page(rel) if rel else None
+    with open(path, encoding="utf-8") as fh:
+        return _plain(fh.read())
+
+
+def extra_documents():
+    """Documents this site republishes that are not one of the papers.
+
+    The practitioner's guide and the MAIVE supplement are the two things a reader most often
+    wants the substance of, and neither has an entry in papers.json to hang off."""
+    out = []
+    reg = os.path.join(SITE, "tools", "documents.json")
+    if os.path.isfile(reg):
+        with open(reg, encoding="utf-8") as fh:
+            for d in json.load(fh):
+                body = full_text_of(d["project"])
+                if not body:
+                    continue
+                head = [f"## {d['title']}", f"URL: {BASE}/{d['slug'].strip('/')}/"]
+                if d.get("reference_line"):
+                    head.append(f"Citation: {d['reference_line']}")
+                if d.get("doi_or_publisher_url"):
+                    head.append(f"Published version: {d['doi_or_publisher_url']}")
+                out.append((head + [""], body))
+    return out
+
+
 def main():
     metas = {m["project"]: m for m in json.load(open(META, encoding="utf-8"))}
     # Every surname in `authors` must appear in that paper's `reference_line`. The two are
@@ -807,6 +921,24 @@ def main():
             rel = os.path.relpath(dp, SITE).replace(os.sep, "/")
             urls.append((f"{BASE}/{rel}/", lastmod(f"{rel}/index.html")))
 
+    # The machine-readable artifacts. A sitemap is page-oriented by convention, which is why
+    # these were never in it, but Google Dataset Search and several crawlers use sitemap
+    # membership as a discovery signal -- and these are the highest-value URLs on the site.
+    # The catalogue, the two dataset descriptors, the harmonised table in both formats, the
+    # headline table and the two llms files were reachable only from prose that links them.
+    for rel in ["api/v1/datasets.json", "api/v1/datapackage.json", "api/v1/croissant.json",
+                "data/v1/estimates_harmonised.csv", "data/v1/estimates_harmonised.parquet",
+                "estimates.csv", "llms.txt", "llms-full.txt"]:
+        if os.path.isfile(os.path.join(SITE, rel)):
+            urls.append((f"{BASE}/{rel}", lastmod(rel)))
+    # One codebook per dataset: 45 URLs that document the columns of 45 files, and the only
+    # place the per-dataset column semantics are published at all.
+    cb_dir = os.path.join(SITE, "api", "v1", "codebooks")
+    if os.path.isdir(cb_dir):
+        for fn in sorted(os.listdir(cb_dir)):
+            if fn.endswith(".json"):
+                urls.append((f"{BASE}/api/v1/codebooks/{fn}", lastmod(f"api/v1/codebooks/{fn}")))
+
     sm = ['<?xml version="1.0" encoding="UTF-8"?>',
           '<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">']
     sm += [f"  <url><loc>{loc}</loc><lastmod>{lm}</lastmod></url>" for loc, lm in urls]
@@ -814,6 +946,8 @@ def main():
     open(os.path.join(SITE, "sitemap.xml"), "w", encoding="utf-8", newline="\n").write("\n".join(sm))
     print(f"sitemap: {len(urls)} URLs")
 
+    # How many papers llms-full.txt actually carries the text of, counted rather than stated.
+    _n_full = sum(1 for _p in projects if full_text_of(_p))
     lt = ["# meta-analysis.cz", "",
           "> Data, code, and papers for meta-analyses in economics and the social sciences, "
           "by Tomas Havranek and Zuzana Irsova of Charles University, Prague, and their co-authors. "
@@ -882,7 +1016,8 @@ def main():
            f"- [Headline results for every paper]({BASE}/estimates.csv): one row per paper — the "
            f"parameter, the value the paper headlines, the sample it rests on, and the verbatim "
            f"sentence from the paper that each figure came from (CSV)",
-           f"- [Full paper index with abstracts and file links]({BASE}/llms-full.txt): one entry per paper, for LLM ingestion",
+           f"- [Every paper in full text]({BASE}/llms-full.txt): the whole corpus in one file -- "
+           f"citation, links, abstract and the complete text of all {_n_full} papers, for LLM ingestion",
            f"- [Papers republished in full as HTML]({BASE}/papers/): the complete text of each "
            f"paper -- body, tables, figures, equations and references -- readable and quotable "
            f"without opening a PDF",
@@ -938,6 +1073,11 @@ def main():
         if os.path.isfile(os.path.join(SITE, _full.strip("/"), "index.html")):
             lf.append(f"Full text (HTML): {BASE}{_full}")
         lf += ["", f"Abstract: {m['abstract']}", ""]
+        body = full_text_of(p)
+        if body:
+            lf += [body, ""]
+    for doc, body in extra_documents():
+        lf += doc + [body, ""]
     open(os.path.join(SITE, "llms-full.txt"), "w", encoding="utf-8", newline="\n").write("\n".join(lf))
     refresh_about_counts(_api)
     print("wrote robots.txt, sitemap.xml, llms.txt, llms-full.txt")

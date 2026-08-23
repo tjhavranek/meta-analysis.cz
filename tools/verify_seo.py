@@ -38,7 +38,15 @@ def url_to_path(u):
     p = urllib.parse.unquote(u[len(BASE):]).lstrip("/")
     if p == "" or p.endswith("/"):
         p += "index.html"
-    return os.path.join(SITE, p.replace("/", os.sep))
+    full = os.path.join(SITE, p.replace("/", os.sep))
+    # A link written without its trailing slash still resolves: a server asked for /trust
+    # serves /trust/index.html. Papers write their data-availability statements that way --
+    # "the data are at meta-analysis.cz/trust" -- and since llms-full.txt now carries the
+    # papers' own text, those sentences are checked as if they were links. They are links,
+    # and they work; what does NOT resolve is a path naming nothing, which still fails here.
+    if os.path.isdir(full):
+        full = os.path.join(full, "index.html")
+    return full
 
 # Sections that build their own metadata layer. They are not injected into, so they
 # legitimately carry canonical/OG/JSON-LD outside the sentinel block — checking them here would

@@ -12,8 +12,7 @@
    "dtype": "int64",
    "n_missing": 0,
    "n_unique": 538,
-   "inferred_role": "n_obs",
-   "inferred_role_confidence": "name-match only, not verified",
+   "not_n_obs_because": "the row index: exactly 1..538, one per row",
    "stats": {
     "min": 1.0,
     "p25": 135.25,
@@ -311,8 +310,7 @@
    "dtype": "int64",
    "n_missing": 0,
    "n_unique": 77,
-   "inferred_role": "n_obs",
-   "inferred_role_confidence": "name-match only, not verified",
+   "not_n_obs_because": "smaller than the degrees of freedom on 96% of rows, so it is not the estimation sample size",
    "stats": {
     "min": 1.0,
     "p25": 1.0,
@@ -347,6 +345,8 @@
    "dtype": "int64",
    "n_missing": 0,
    "n_unique": 186,
+   "inferred_role": "n_obs",
+   "inferred_role_confidence": "name-match only, not verified",
    "stats": {
     "min": 6.0,
     "p25": 44.0,

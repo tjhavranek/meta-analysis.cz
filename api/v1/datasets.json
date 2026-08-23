@@ -170,7 +170,8 @@
     "effect": "Estimate rescaled by 100.0 x Multiplicator to obtain estimates in points (number)",
     "standard_error": "derived as |effect/t-stats|",
     "standard_error_note": "derived, not read from a column",
-    "evidence": "paper's replication code"
+    "evidence": "paper's replication code",
+    "sample_size": "TotalObs"
    },
    "effect_units": "percent",
    "direction_note": "Reconstructed on a comparable scale; the raw Estimate column mixes percent and decimal across studies.",
@@ -226,7 +227,8 @@
     "effect": "alpha",
     "standard_error": "se",
     "standard_error_note": null,
-    "evidence": "paper's replication code"
+    "evidence": "paper's replication code",
+    "sample_size": "sample_size"
    },
    "effect_units": "percent",
    "direction_note": "Monthly return, not annualised.",
@@ -282,7 +284,8 @@
     "effect": "armel",
     "standard_error": "se",
     "standard_error_note": null,
-    "evidence": "paper's replication code"
+    "evidence": "paper's replication code",
+    "sample_size": "nobs"
    },
    "effect_units": "elasticity",
    "direction_note": null,
@@ -338,7 +341,8 @@
     "effect": "premium",
     "standard_error": "se_premium",
     "standard_error_note": null,
-    "evidence": "paper's replication code"
+    "evidence": "paper's replication code",
+    "sample_size": "nobs"
    },
    "effect_units": "percent",
    "direction_note": null,
@@ -392,7 +396,8 @@
     "effect": "e",
     "standard_error": "se",
     "standard_error_note": null,
-    "evidence": "paper's replication code"
+    "evidence": "paper's replication code",
+    "sample_size": "nobs"
    },
    "effect_units": "elasticity",
    "direction_note": null,
@@ -447,7 +452,8 @@
     "effect": "b",
     "standard_error": "se",
     "standard_error_note": null,
-    "evidence": "paper's replication code"
+    "evidence": "paper's replication code",
+    "sample_size": "nobs"
    },
    "effect_units": "semi-elasticity",
    "direction_note": "Raw coefficient on the border dummy in a log-linear gravity model; the paper's headline reduction is a transform of it, not the raw value.",
@@ -503,7 +509,8 @@
     "effect": "pcc",
     "standard_error": "se_pcc",
     "standard_error_note": null,
-    "evidence": "paper's replication code"
+    "evidence": "paper's replication code",
+    "sample_size": "sample_size"
    },
    "effect_units": "partial correlation coefficient",
    "direction_note": null,
@@ -557,7 +564,9 @@
     "effect": "estimate",
     "standard_error": "se_low",
     "standard_error_note": null,
-    "evidence": "paper's replication code"
+    "evidence": "paper's replication code",
+    "sample_size": null,
+    "sample_size_note": "no sample-size column in this dataset; MAIVE cannot be run on it without supplying one"
    },
    "effect_units": "degrees Celsius",
    "direction_note": null,
@@ -611,7 +620,8 @@
     "effect": "PCC",
     "standard_error": "SE PCC",
     "standard_error_note": null,
-    "evidence": "paper's replication code"
+    "evidence": "paper's replication code",
+    "sample_size": "Samplesize"
    },
    "effect_units": "partial correlation coefficient",
    "direction_note": null,
@@ -666,7 +676,8 @@
     "effect": "discrate",
     "standard_error": "standard_error",
     "standard_error_note": null,
-    "evidence": "paper's replication code"
+    "evidence": "paper's replication code",
+    "sample_size": "nobs"
    },
    "effect_units": "annual discount rate",
    "direction_note": null,
@@ -721,7 +732,8 @@
     "effect": "ESTIMATE",
     "standard_error": "SE",
     "standard_error_note": null,
-    "evidence": "paper's replication code"
+    "evidence": "paper's replication code",
+    "sample_size": "N"
    },
    "effect_units": "percent",
    "direction_note": "SIGN TRAP: the stored value is the impact on electricity CONSUMPTION, so NEGATIVE means savings and is the favourable direction (median -0.40). The abstract instead frames the headline as a positive magnitude, 'slight electricity savings: 0.34%'. Taking the sign at face value inverts the finding.",
@@ -776,7 +788,8 @@
     "effect": "pcc",
     "standard_error": "pcc_se",
     "standard_error_note": null,
-    "evidence": "paper's replication code"
+    "evidence": "paper's replication code",
+    "sample_size": "no_obs"
    },
    "effect_units": "partial correlation coefficient",
    "direction_note": null,
@@ -829,7 +842,8 @@
     "effect": "eis",
     "standard_error": "se",
     "standard_error_note": null,
-    "evidence": "paper's replication code"
+    "evidence": "paper's replication code",
+    "sample_size": "obs"
    },
    "effect_units": "elasticity",
    "direction_note": null,
@@ -886,7 +900,8 @@
     "effect": "effect_M",
     "standard_error": "se",
     "standard_error_note": null,
-    "evidence": "paper's replication code"
+    "evidence": "paper's replication code",
+    "sample_size": "n_obs"
    },
    "effect_units": "elasticity",
    "direction_note": "Marshallian-equivalent price elasticity (the paper's Slutsky-converted effect_M), negative by convention. Pools short-, intermediate- and long-run estimates, which the paper analyses separately; condition on the run-length flags in the per-dataset file rather than pooling blind.",
@@ -941,7 +956,8 @@
     "effect": "estimate",
     "standard_error": "se_estimate",
     "standard_error_note": null,
-    "evidence": "paper's replication code"
+    "evidence": "paper's replication code",
+    "sample_size": "sample_size"
    },
    "effect_units": "ESG rating points",
    "direction_note": "Points on the Bloomberg/LSEG ESG scale per percentage point of board gender diversity, not a percent change.",
@@ -994,7 +1010,8 @@
     "effect": "gamma",
     "standard_error": "se",
     "standard_error_note": null,
-    "evidence": "paper's replication code"
+    "evidence": "paper's replication code",
+    "sample_size": "nobs"
    },
    "effect_units": "semi-elasticity",
    "direction_note": "Raw gravity-model coefficient on the currency-union dummy; the headline trade effect is a transform of it.",
@@ -1048,7 +1065,8 @@
     "effect": "excess",
     "standard_error": "se",
     "standard_error_note": null,
-    "evidence": "paper's replication code"
+    "evidence": "paper's replication code",
+    "sample_size": "obs"
    },
    "effect_units": "regression coefficient",
    "direction_note": null,
@@ -1103,7 +1121,9 @@
     "effect": null,
     "standard_error": null,
     "standard_error_note": null,
-    "evidence": "paper's replication code"
+    "evidence": "paper's replication code",
+    "sample_size": null,
+    "sample_size_note": "no sample-size column in this dataset; MAIVE cannot be run on it without supplying one"
    },
    "effect_units": "elasticity",
    "direction_note": "Winsorised FDI spillover elasticity (e_w). No standard error exists in the file, so this dataset supports model averaging over study characteristics but not SE-based synthesis.",
@@ -1158,7 +1178,8 @@
     "effect": "pcc",
     "standard_error": "sepcc",
     "standard_error_note": null,
-    "evidence": "Verified by hand against the paper's published results, 2026-08-22; no replication code ships with this literature, the same situation as gasoline_price. Table 1 of Valickova, Havranek and Horvath (2015, JoES 29(3):506-526) reports 67 studies, 1334 estimates, median r 0.14, simple average 0.15 (0.095-0.20), fixed-effects 0.09 (0.088-0.095), random-effects 0.14 (0.129-0.150). The shipped effect column reproduces them: 67 studies and 1334 estimates exactly, median 0.137, mean 0.1484, DerSimonian-Laird random-effects 0.1398 with CI [0.128, 0.151]; the fixed-effects average lands between the raw-scale and Fisher-z computations (0.105 and 0.084), which bracket the published 0.09 and differ only in the z-weighting the paper applied. Column identity was already settled arithmetically: pcc/sepcc reproduces the file's own t-statistic on all 1,334 rows, and the rival column equals tstat/sepcc, a precision-weighted artifact, not an effect."
+    "evidence": "Verified by hand against the paper's published results, 2026-08-22; no replication code ships with this literature, the same situation as gasoline_price. Table 1 of Valickova, Havranek and Horvath (2015, JoES 29(3):506-526) reports 67 studies, 1334 estimates, median r 0.14, simple average 0.15 (0.095-0.20), fixed-effects 0.09 (0.088-0.095), random-effects 0.14 (0.129-0.150). The shipped effect column reproduces them: 67 studies and 1334 estimates exactly, median 0.137, mean 0.1484, DerSimonian-Laird random-effects 0.1398 with CI [0.128, 0.151]; the fixed-effects average lands between the raw-scale and Fisher-z computations (0.105 and 0.084), which bracket the published 0.09 and differ only in the z-weighting the paper applied. Column identity was already settled arithmetically: pcc/sepcc reproduces the file's own t-statistic on all 1,334 rows, and the rival column equals tstat/sepcc, a precision-weighted artifact, not an effect.",
+    "sample_size": "samsize"
    },
    "effect_units": "partial correlation coefficient",
    "direction_note": "Positive means financial development is associated with higher growth.",
@@ -1214,7 +1235,8 @@
     "effect": "Coeff",
     "standard_error": "SE",
     "standard_error_note": null,
-    "evidence": "paper's replication code"
+    "evidence": "paper's replication code",
+    "sample_size": "Sample_size"
    },
    "effect_units": "regression coefficient",
    "direction_note": "The null of interest is a slope of 1, not 0. Testing against zero will mislead.",
@@ -1270,7 +1292,8 @@
     "effect": "frisch",
     "standard_error": "se",
     "standard_error_note": null,
-    "evidence": "paper's replication code"
+    "evidence": "paper's replication code",
+    "sample_size": "no_obs"
    },
    "effect_units": "elasticity",
    "direction_note": null,
@@ -1324,7 +1347,8 @@
     "effect": "e",
     "standard_error": null,
     "standard_error_note": "<derived: |e/tstat|>",
-    "evidence": "paper's replication code"
+    "evidence": "paper's replication code",
+    "sample_size": "Observations"
    },
    "effect_units": "elasticity",
    "direction_note": "Long-run income elasticity only; see the dataset note for the short-run estimates. CAUTION on n_obs: it is the file's Observations column, which init.do weights by as sqrt(Observations), but 90 of 701 rows record 1, which is not a plausible sample size and may be a missing-value code. Filter before using n_obs as a precision instrument.",
@@ -1379,7 +1403,9 @@
     "effect": "e",
     "standard_error": "se",
     "standard_error_note": null,
-    "evidence": "the paper's own published results: no replication code ships with this dataset"
+    "evidence": "the paper's own published results: no replication code ships with this dataset",
+    "sample_size": null,
+    "sample_size_note": "no sample-size column in this dataset; MAIVE cannot be run on it without supplying one"
    },
    "effect_units": "elasticity",
    "direction_note": "Negative by convention: demand falls as price rises.",
@@ -1434,7 +1460,8 @@
     "effect": "habit",
     "standard_error": "se",
     "standard_error_note": null,
-    "evidence": "paper's replication code"
+    "evidence": "paper's replication code",
+    "sample_size": "observations"
    },
    "effect_units": "habit persistence parameter",
    "direction_note": "Unitless, normally bounded by 0 (no habit) and 1 (full persistence).",
@@ -1490,7 +1517,8 @@
     "effect": "alpha",
     "standard_error": "se",
     "standard_error_note": null,
-    "evidence": "element-wise identity with the alphas dataset across all 1,019 rows; excluded as a duplicate rather than mapped from code"
+    "evidence": "element-wise identity with the alphas dataset across all 1,019 rows; excluded as a duplicate rather than mapped from code",
+    "sample_size": "sample_size"
    },
    "effect_units": "percent",
    "direction_note": "Monthly return, not annualised.",
@@ -1547,7 +1575,8 @@
     "effect": "est",
     "standard_error": "mean of SE_l and SE_u",
     "standard_error_note": null,
-    "evidence": "paper's replication code"
+    "evidence": "paper's replication code",
+    "sample_size": "nobs"
    },
    "effect_units": "semi-elasticity (proportional)",
    "direction_note": "Stored as a PROPORTION: house.do multiplies by 100 for the percentages the paper reports. Negative is the expected direction, higher policy rates lowering house prices. One row per impulse-response horizon, so rows within an IRF are not independent.",
@@ -1605,7 +1634,8 @@
     "effect": "pcc",
     "standard_error": "se_pcc",
     "standard_error_note": null,
-    "evidence": "paper's replication code"
+    "evidence": "paper's replication code",
+    "sample_size": "observations"
    },
    "effect_units": "partial correlation coefficient",
    "direction_note": "Baseline measure. Cohen's d, the paper's robustness variant, is in the per-dataset file.",
@@ -1662,7 +1692,8 @@
     "effect": "Estimate_win",
     "standard_error": "SE_win",
     "standard_error_note": null,
-    "evidence": "paper's replication code"
+    "evidence": "paper's replication code",
+    "sample_size": "Sample_Size"
    },
    "effect_units": "percentage points",
    "direction_note": null,
@@ -1716,7 +1747,8 @@
     "effect": "lags",
     "standard_error": "ci_se",
     "standard_error_note": null,
-    "evidence": "paper's replication code"
+    "evidence": "paper's replication code",
+    "sample_size": "nobs"
    },
    "effect_units": "months",
    "direction_note": "Transmission lag: months from the monetary shock to the trough of the price response (mon_bot). A duration, not a regression coefficient, so it has no sampling standard error.",
@@ -1776,7 +1808,8 @@
     "effect": "es",
     "standard_error": "se",
     "standard_error_note": null,
-    "evidence": "paper's replication code"
+    "evidence": "paper's replication code",
+    "sample_size": "n_study"
    },
    "effect_units": "standardised mean difference",
    "direction_note": "Negative values are learning LOSS.",
@@ -1832,7 +1865,8 @@
     "effect": "elasticity",
     "standard_error": "se",
     "standard_error_note": null,
-    "evidence": "paper's replication code"
+    "evidence": "paper's replication code",
+    "sample_size": "n"
    },
    "effect_units": "negative inverse elasticity",
    "direction_note": "The stored value is NOT the elasticity. It is the negative inverse: 88.8% of values are negative with median -0.050, and -1/effect has median 15.38, matching the paper's headline substitution elasticity of 13 to about 22. To recover the elasticity take -1/effect, and convert the standard error by the delta method -- se/effect^2 -- rather than using the stored se unchanged. Do NOT pool this column with the other 'elasticity' literatures. Confirmed 2026-08-04 after the Fable and Codex audits both flagged it.",
@@ -1887,7 +1921,8 @@
     "effect": "res",
     "standard_error": "se",
     "standard_error_note": null,
-    "evidence": "paper's replication code"
+    "evidence": "paper's replication code",
+    "sample_size": "nobs"
    },
    "effect_units": "proportional change in the price level",
    "direction_note": "Stored as a PROPORTION, not a percent: multiply by 100 to read as the paper does (median |effect| 0.002 = 0.2%, consistent with its reported 0.33% trough). Positive values are the puzzling price INCREASE after a monetary contraction; theory expects negative. One row per horizon.",
@@ -1942,7 +1977,8 @@
     "effect": "partial correlation computed from lib and df",
     "standard_error": "computed as sqrt((1-r^2)/df)",
     "standard_error_note": "derived, not read from a column",
-    "evidence": "paper's replication code"
+    "evidence": "paper's replication code",
+    "sample_size": "n"
    },
    "effect_units": "partial correlation coefficient",
    "direction_note": "Computed here from the reported t-statistic and degrees of freedom, following the paper's own code.",
@@ -1997,7 +2033,8 @@
     "effect": "partial correlation computed from TSTAT_L and DF",
     "standard_error": "computed as sqrt((1-r^2)/DF)",
     "standard_error_note": "derived, not read from a column",
-    "evidence": "paper's replication code"
+    "evidence": "paper's replication code",
+    "sample_size": "Sample"
    },
    "effect_units": "partial correlation coefficient",
    "direction_note": null,
@@ -2052,7 +2089,8 @@
     "effect": "PCC",
     "standard_error": "PCC_SE",
     "standard_error_note": null,
-    "evidence": "paper's replication code"
+    "evidence": "paper's replication code",
+    "sample_size": "NO_OBS"
    },
    "effect_units": "partial correlation coefficient",
    "direction_note": null,
@@ -2107,7 +2145,8 @@
     "effect": "rra",
     "standard_error": "se",
     "standard_error_note": null,
-    "evidence": "paper's replication code"
+    "evidence": "paper's replication code",
+    "sample_size": "obs"
    },
    "effect_units": "relative risk aversion coefficient",
    "direction_note": null,
@@ -2163,7 +2202,9 @@
     "effect": "scc",
     "standard_error": "stdlow",
     "standard_error_note": null,
-    "evidence": "paper's replication code"
+    "evidence": "paper's replication code",
+    "sample_size": null,
+    "sample_size_note": "no sample-size column in this dataset; MAIVE cannot be run on it without supplying one"
    },
    "effect_units": "US dollars per tonne of carbon",
    "direction_note": null,
@@ -2219,7 +2260,8 @@
     "effect": "sigma",
     "standard_error": "se",
     "standard_error_note": null,
-    "evidence": "paper's replication code"
+    "evidence": "paper's replication code",
+    "sample_size": "nobs"
    },
    "effect_units": "elasticity",
    "direction_note": null,
@@ -2274,7 +2316,8 @@
     "effect": "size",
     "standard_error": "se_calc",
     "standard_error_note": null,
-    "evidence": "paper's replication code"
+    "evidence": "paper's replication code",
+    "sample_size": "obs"
    },
    "effect_units": "percent",
    "direction_note": "Raw size-return slopes: NEGATIVE means a larger conventional size premium, i.e. small firms outperforming. The abstract states that researchers prefer estimates showing 'a negative relation between size and returns'. 76% of stored effects are negative. Do not read positive as the premium.",
@@ -2330,7 +2373,9 @@
     "effect": "elasticity",
     "standard_error": "se",
     "standard_error_note": null,
-    "evidence": "paper's replication code"
+    "evidence": "paper's replication code",
+    "sample_size": null,
+    "sample_size_note": "no sample-size column in this dataset; MAIVE cannot be run on it without supplying one"
    },
    "effect_units": "elasticity",
    "direction_note": "Stored as inverse elasticities; inversion is needed to read them as the skill-substitution elasticity. Dropping this step reverses the finding. OPEN QUESTION, not resolved: two independent audits suggested this column is an inverse elasticity, on the grounds that PET on the stored scale is 0.326 whose reciprocal 3.07 is near the paper's headline of 4. That is a PET-level inference, and it does not hold row-wise -- the stored median is 1.42 and 1/1.42 = 0.70, nowhere near 4, with only 7.9% of values negative. So the simple inversion that demonstrably applies to `migrant` does NOT apply here. Units are left as 'elasticity' because relabelling on an unverified inference would be worse than the uncertainty. Settling it needs the paper's own transformation.",
@@ -2384,7 +2429,8 @@
     "effect": "e",
     "standard_error": "se",
     "standard_error_note": null,
-    "evidence": "paper's replication code"
+    "evidence": "paper's replication code",
+    "sample_size": "nobs"
    },
    "effect_units": "elasticity",
    "direction_note": null,
@@ -2440,7 +2486,9 @@
     "effect": "pcc",
     "standard_error": "se_pcc",
     "standard_error_note": null,
-    "evidence": "paper's replication code"
+    "evidence": "paper's replication code",
+    "sample_size": null,
+    "sample_size_note": "sample_size is not it: not integer-valued -- this is the log of a count (exp() of it is whole); the harmonised table carries the exponentiated value"
    },
    "effect_units": "partial correlation coefficient",
    "direction_note": null,
@@ -2496,7 +2544,8 @@
     "effect": "eis",
     "standard_error": "se",
     "standard_error_note": null,
-    "evidence": "plausible"
+    "evidence": "plausible",
+    "sample_size": "obs"
    },
    "effect_units": "elasticity",
    "direction_note": "Elasticity of intertemporal substitution. Same 2,735 estimates as the eis dataset; this file adds country-level moderators.",
@@ -2554,7 +2603,9 @@
     "effect": "size",
     "standard_error": "se",
     "standard_error_note": null,
-    "evidence": "paper's replication code"
+    "evidence": "paper's replication code",
+    "sample_size": null,
+    "sample_size_note": "no sample-size column in this dataset; MAIVE cannot be run on it without supplying one"
    },
    "effect_units": "percent",
    "direction_note": "Raw size-return slopes: more negative means a larger conventional size premium.",
@@ -2610,7 +2661,9 @@
     "effect": "incomeelasticity",
     "standard_error": "standarderror",
     "standard_error_note": null,
-    "evidence": "paper's replication code"
+    "evidence": "paper's replication code",
+    "sample_size": null,
+    "sample_size_note": "no sample-size column in this dataset; MAIVE cannot be run on it without supplying one"
    },
    "effect_units": "elasticity",
    "direction_note": null,
