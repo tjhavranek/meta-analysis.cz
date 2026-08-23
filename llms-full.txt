@@ -16605,168 +16605,170 @@ Note that the term “fixed effects” has a different meaning in econometrics a
 
 #### REFERENCES
 
+Some entries below were printed without a link. Where a Crossref record matches one and no other record plausibly could, its DOI is shown; ambiguous references are left as they were printed.
 
-Amini, S. M., & Parmeter, C. F. (2012). Comparison of model averaging techniques: Assessing growth determinants. Journal of Applied Econometrics, 27(5), 870–876.
 
-Andrews, I., & Kasy, M. (2019). Identification of and correction for publication bias. American Economic Review, 109(8), 2766–2794.
+Amini, S. M., & Parmeter, C. F. (2012). Comparison of model averaging techniques: Assessing growth determinants. Journal of Applied Econometrics, 27(5), 870–876. 10.1002/jae.2288
 
-Angeletos, G.-M., & Huo, Z. (2021). Myopia and anchoring. American Economic Review, 111(4), 1166–1200.
+Andrews, I., & Kasy, M. (2019). Identification of and correction for publication bias. American Economic Review, 109(8), 2766–2794. 10.1257/aer.20180310
 
-Askarov, Z., Doucouliagos, A., Doucouliagos, H., & Stanley, T. D. (2023). The significance of data-sharing policy. Journal of the European Economic Association, 21(3), 1191–1226.
+Angeletos, G.-M., & Huo, Z. (2021). Myopia and anchoring. American Economic Review, 111(4), 1166–1200. 10.1257/aer.20191436
 
-Bajzik, J., Havranek, T., Irsova, Z., & Schwarz, J. (2020). Estimating the Armington elasticity: The importance of study design and publication bias. Journal of International Economics, 127, Article 103383
+Askarov, Z., Doucouliagos, A., Doucouliagos, H., & Stanley, T. D. (2023). The significance of data-sharing policy. Journal of the European Economic Association, 21(3), 1191–1226. 10.1093/jeea/jvac053
 
-Bartoš, F., Maier, M., Quintana, D. S., & Wagenmakers, E. J. (2022). Adjusting for publication bias in JASP and R: Selection models, PET-PEESE, and robust Bayesian meta-analysis. Advances in Methods and Practices in Psychological Science, 5(3), 1–19.
+Bajzik, J., Havranek, T., Irsova, Z., & Schwarz, J. (2020). Estimating the Armington elasticity: The importance of study design and publication bias. Journal of International Economics, 127, Article 103383 10.1016/j.jinteco.2020.103383
 
-Bartoš, F., Maier, M., Wagenmakers, E. J., Doucouliagos, H., & Stanley, T. D. (2023a). Robust Bayesian meta-analysis: Model averaging across complementary publication bias adjustment methods. Research Synthesis Methods, 14(1), 99–116.
+Bartoš, F., Maier, M., Quintana, D. S., & Wagenmakers, E. J. (2022). Adjusting for publication bias in JASP and R: Selection models, PET-PEESE, and robust Bayesian meta-analysis. Advances in Methods and Practices in Psychological Science, 5(3), 1–19. 10.1177/25152459221109259
+
+Bartoš, F., Maier, M., Wagenmakers, E. J., Doucouliagos, H., & Stanley, T. D. (2023a). Robust Bayesian meta-analysis: Model averaging across complementary publication bias adjustment methods. Research Synthesis Methods, 14(1), 99–116. 10.1002/jrsm.1594
 
 Bartoš, F., Maier, M., Wagenmakers, E. J., Nippold, F., Doucouliagos, H., Ioannidis, J. P. A., Otte, W. M., Sladekova, M., Deresssa, T. K., Bruns, S. B., Fanelli, D., & Stanley, T. D. (2023b). Footprint of publication selection bias on meta-analyses in medicine, environmental sciences, psychology, and economics. arXiv:2208.12334.
 
-Belsley, D. A., Kuh, E., & Welsch, R. E. (1980). Regression diagnostics: Identifying influential data and sources of collinearity. John Wiley & Sons.
+Belsley, D. A., Kuh, E., & Welsch, R. E. (1980). Regression diagnostics: Identifying influential data and sources of collinearity. John Wiley & Sons. 10.1002/0471725153
 
-Bom, P. R. D., & Rachinger, H. (2019). A kinked meta-regression model for publication bias correction. Research Synthesis Methods, 10(4), 497–514.
+Bom, P. R. D., & Rachinger, H. (2019). A kinked meta-regression model for publication bias correction. Research Synthesis Methods, 10(4), 497–514. 10.1002/jrsm.1352
 
-Bom, P. R. D., & Rachinger, H. (2020). A generalized-weights solution to sample overlap in meta-analysis. Research Synthesis Methods, 11(6), 812–832.
+Bom, P. R. D., & Rachinger, H. (2020). A generalized-weights solution to sample overlap in meta-analysis. Research Synthesis Methods, 11(6), 812–832. 10.1002/jrsm.1441
 
-Borenstein, M., Hedges, L. V., Higgins, J. P. T., & Rothstein, H. (2021). Introduction to meta-analysis (2nd ed.). Chichester: Wiley.
+Borenstein, M., Hedges, L. V., Higgins, J. P. T., & Rothstein, H. (2021). Introduction to meta-analysis (2nd ed.). Chichester: Wiley. 10.1002/9781119558378
 
 Brodeur, A., Carrell, S., Figlio, D., & Lusher, L. (2023). Unpacking p-hacking and publication bias. American Economic Review, forthcoming.
 
-Brodeur, A., Cook, N., & Heyes, A. (2020). Methods matter: P-hacking and causal inference in economics. American Economic Review, 110(11), 3634–3660.
+Brodeur, A., Cook, N., & Heyes, A. (2020). Methods matter: P-hacking and causal inference in economics. American Economic Review, 110(11), 3634–3660. 10.1257/aer.20190687
 
 Brown, A. L., Imai, T., Vieider, F. M., & Camerer, C. F. (2023). Meta-Analysis of empirical estimates of loss aversion. Journal of Economic Literature, forthcoming.
 
-Cala, P., Havranek, T., Irsova, Z., Matousek, J., & Novak, J. (2022). “Financial incentives and performance: A meta-analysis of economics evidence.” CEPR discussion papers 17680, The Centre for Economic Policy Research, London. Retrieved from meta-analysis.cz/incentives
+Cala, P., Havranek, T., Irsova, Z., Matousek, J., & Novak, J. (2022). “Financial incentives and performance: A meta-analysis of economics evidence.” CEPR discussion papers 17680, The Centre for Economic Policy Research, London. Retrieved from meta-analysis.cz/incentives 10.31222/osf.io/wbe9k
 
 Camerer, C., Dreber, A., Holzmeister, F., Ho, T. H., Huber, J., Johannesson, M., Kirchler, M., Nave, G., Nosek, B. A., Pfeiffer, T., Altmejd, A., Buttrick, N., Chan, T., Chen, Y., Forsell, E., Gampa, A., Heikensten, E., Hummer, L., Imai, T., . . . Wu, H. (2018). Evaluating the replicability of social science experiments in Nature and Science between 2010 and 2015. Nature Human Behaviour, 2(9), 637–644.
 
-Cazachevici, A., Havranek, T., & Horvath, R. (2020). Remittances and economic growth: A meta-analysis. World Development, 134, Article 105021
+Cazachevici, A., Havranek, T., & Horvath, R. (2020). Remittances and economic growth: A meta-analysis. World Development, 134, Article 105021 10.1016/j.worlddev.2020.105021
 
-Cogley, T., & Jovanovic, B. (2022). Structural breaks in an endogenous growth model. Review of Economic Studies, 89(2), 666–694.
+Cogley, T., & Jovanovic, B. (2022). Structural breaks in an endogenous growth model. Review of Economic Studies, 89(2), 666–694. 10.1093/restud/rdab045
 
-Comin, D., Lashkari, L., & Mestieri, M. (2021). Structural change with long-run income and price effects. Econometrica, 89(1), 311–374.
+Comin, D., Lashkari, L., & Mestieri, M. (2021). Structural change with long-run income and price effects. Econometrica, 89(1), 311–374. 10.3982/ecta16317
 
-Costa-Font, J., McGuire, A., & Stanley, T. D. (2013). Publication selection in health policy research: The winner’s curse hypothesis. Health Policy, 109, 78–87.
+Costa-Font, J., McGuire, A., & Stanley, T. D. (2013). Publication selection in health policy research: The winner’s curse hypothesis. Health Policy, 109, 78–87. 10.1016/j.healthpol.2012.10.015
 
-Cowen, T., & Tabarrok, A. T. (2023). “How to learn and teach economics with large language models, including GPT”. Retrieved from ssrn.com/abstract = 4391863 (March 2023).
+Cowen, T., & Tabarrok, A. T. (2023). “How to learn and teach economics with large language models, including GPT”. Retrieved from ssrn.com/abstract = 4391863 (March 2023). 10.2139/ssrn.4391863
 
-DellaVigna, S., & Linos, E. (2022). RCTs to scale: Comprehensive evidence from two nudge units. Econometrica, 90(1), 81–116.
+DellaVigna, S., & Linos, E. (2022). RCTs to scale: Comprehensive evidence from two nudge units. Econometrica, 90(1), 81–116. 10.3982/ecta18709
 
 Doucouliagos, H. (2011). How large is large? Preliminary and relative guidelines for interpreting partial correlations in economics. Working Papers 5/2011, Deakin University.
 
-Doucouliagos, C. H. (2005). ‘Publication bias in the economic freedom and economic growth literature.’ Journal of Economic Surveys, 19, 367–388.
+Doucouliagos, C. H. (2005). ‘Publication bias in the economic freedom and economic growth literature.’ Journal of Economic Surveys, 19, 367–388. 10.1111/j.0950-0804.2005.00252.x
 
-Duval, S., & Tweedie, R. (2000). Trim and fill: A simple funnel-plot–based method of testing and adjusting for publication bias in meta-analysis. Biometrics, 56(2), 455–463.
+Duval, S., & Tweedie, R. (2000). Trim and fill: A simple funnel-plot–based method of testing and adjusting for publication bias in meta-analysis. Biometrics, 56(2), 455–463. 10.1111/j.0006-341x.2000.00455.x
 
 Efroymson, M. A. (1960). Multiple regression analysis. In A. Ralston, & H. S. Wilf (Eds.), Mathematical methods for digital computers. Wiley.
 
-Egger, M., Smith, G. D., Schneider, M., & Minder, C. (1997). Bias in meta-analysis detected by a simple, graphical test. British Medical Journal, 315(7109), 629–634.
+Egger, M., Smith, G. D., Schneider, M., & Minder, C. (1997). Bias in meta-analysis detected by a simple, graphical test. British Medical Journal, 315(7109), 629–634. 10.1136/bmj.315.7109.629
 
-Ehrenbergerova, D., Bajzik, J., & Havranek, T. (2023). When does monetary policy sway house prices? A meta-analysis. IMF Economic Review, 71, 538–573.
+Ehrenbergerova, D., Bajzik, J., & Havranek, T. (2023). When does monetary policy sway house prices? A meta-analysis. IMF Economic Review, 71, 538–573. 10.1057/s41308-022-00185-5
 
-Eicher, T. S., Papageorgiou, C., & Raftery, A. E. (2011). Default priors and predictive performance in Bayesian model averaging, with application to growth determinants. Journal of Applied Econometrics, 26, 30–55.
+Eicher, T. S., Papageorgiou, C., & Raftery, A. E. (2011). Default priors and predictive performance in Bayesian model averaging, with application to growth determinants. Journal of Applied Econometrics, 26, 30–55. 10.1002/jae.1112
 
-Elliott, G., Kudrin, N., & Wuthrich, K. (2022). Detecting p-hacking. Econometrica, 90(2), 887–906.
+Elliott, G., Kudrin, N., & Wuthrich, K. (2022). Detecting p-hacking. Econometrica, 90(2), 887–906. 10.3982/ecta18583
 
 Elminejad, A., Havranek, T., Horvath, R., & Irsova, Z. (2022a). Publication and identification biases in measuring the intertemporal substitution of labor supply. Charles University, Prague, Retrieved from meta-analysis.cz/ frisch
 
-Elminejad, A., Havranek, T., & Irsova, Z. (2022b). Relative risk aversion: A meta-analysis. Charles University, Prague, Retrieved from meta-analysis.cz/risk
+Elminejad, A., Havranek, T., & Irsova, Z. (2022b). Relative risk aversion: A meta-analysis. Charles University, Prague, Retrieved from meta-analysis.cz/risk 10.31222/osf.io/b8uhe
 
-Fabo, B., Jancokova, M., Kempf, E., & Pastor, L. (2021). Fifty shades of QE: Comparing findings of central bankers and academics. Journal of Monetary Economics, 120, 1–20.
+Fabo, B., Jancokova, M., Kempf, E., & Pastor, L. (2021). Fifty shades of QE: Comparing findings of central bankers and academics. Journal of Monetary Economics, 120, 1–20. 10.2139/ssrn.3902997
 
 Furukawa, C. (2019). Publication bias under aggregation frictions: theory, evidence, and a new correction method. Massachusetts Institute of Technology working paper. www.jeameetings.org/2019s/Gabst/1161.pdf
 
-Gechert, S., Havranek, T., Irsova, Z., & Kolcunova, D. (2022). Measuring capital-labor substitution: The importance of method choices and publication bias. Review of Economic Dynamics, 45, 55–82.
+Gechert, S., Havranek, T., Irsova, Z., & Kolcunova, D. (2022). Measuring capital-labor substitution: The importance of method choices and publication bias. Review of Economic Dynamics, 45, 55–82. 10.1016/j.red.2021.05.003
 
-George, E. I. (2010). Dilution priors: Compensating for model space redundancy. In IMS collections borrowing strength: Theory powering applications–A festschrift for Lawrence D. Brown. (Vol. 6, 158–165). Institute of Mathematical Statistics.
+George, E. I. (2010). Dilution priors: Compensating for model space redundancy. In IMS collections borrowing strength: Theory powering applications–A festschrift for Lawrence D. Brown. (Vol. 6, 158–165). Institute of Mathematical Statistics. 10.1214/10-imscoll611
 
-Gurevitch, J., Koricheva, J., Nakagawa, S., & Stewart, G. (2018). Meta-analysis and the science of research synthesis. Nature, 555, 175–182.
+Gurevitch, J., Koricheva, J., Nakagawa, S., & Stewart, G. (2018). Meta-analysis and the science of research synthesis. Nature, 555, 175–182. 10.1038/nature25753
 
-Hansen, B. E. (2007). Least squares model averaging. Econometrica, 75(4), 1175–1189.
+Hansen, B. E. (2007). Least squares model averaging. Econometrica, 75(4), 1175–1189. 10.1111/j.1468-0262.2007.00785.x
 
 Havranek, T. (2015). Measuring intertemporal substitution: The importance of method choices and selective reporting. Journal of the European Economic Association, 13(6), 1180–1204.
 
-Havranek, T., Herman, D., & Irsova, Z. (2018b). Does daylight saving save electricity? A Meta-Analysis. Energy Journal, 39(2), 35–61.
+Havranek, T., Herman, D., & Irsova, Z. (2018b). Does daylight saving save electricity? A Meta-Analysis. Energy Journal, 39(2), 35–61. 10.5547/01956574.39.2.thav
 
-Havranek, T., Horvath, R., Irsova, Z., & Rusnak, M. (2015b). Cross-country heterogeneity in intertemporal substitution. Journal of International Economics, 96(1), 100–118.
+Havranek, T., Horvath, R., Irsova, Z., & Rusnak, M. (2015b). Cross-country heterogeneity in intertemporal substitution. Journal of International Economics, 96(1), 100–118. 10.1016/j.jinteco.2015.01.012
 
-Havranek, T., & Irsova, Z. (2011). Estimating Vertical spillovers from FDI: Why results vary and what the true effect is. Journal of International Economics, 85(2), 234–244.
+Havranek, T., & Irsova, Z. (2011). Estimating Vertical spillovers from FDI: Why results vary and what the true effect is. Journal of International Economics, 85(2), 234–244. 10.1016/j.jinteco.2011.07.004
 
-Havranek, T., & Irsova, Z. (2017). Do borders really slash trade? A meta-analysis. IMF Economic Review, 65(2), 365–396.
+Havranek, T., & Irsova, Z. (2017). Do borders really slash trade? A meta-analysis. IMF Economic Review, 65(2), 365–396. 10.1057/s41308-016-0001-5
 
-Havranek, T., Irsova, Z., Janda, K., & Zilberman, D. (2015a). Selective reporting and the social cost of carbon. Energy Economics, 51, 364–406.
+Havranek, T., Irsova, Z., Janda, K., & Zilberman, D. (2015a). Selective reporting and the social cost of carbon. Energy Economics, 51, 364–406. 10.1016/j.eneco.2015.08.009
 
-Havranek, T., Irsova, Z., Laslopova, L., & Zeynalova, O. (2024). Publication and attenuation biases in measuring skill substitution. The Review of Economics and Statistics, forthcoming. https://doi.org/10.1162/resta01227
+Havranek, T., Irsova, Z., Laslopova, L., & Zeynalova, O. (2024). Publication and attenuation biases in measuring skill substitution. The Review of Economics and Statistics, forthcoming. https://doi.org/10.1162/resta01227 10.1162/rest_a_01227
 
-Havranek, T., Irsova, Z., & Vlach, T. (2018a). Measuring the income elasticity of water demand: The importance of publication and endogeneity biases. Land Economics, 94(2), 259–283.
+Havranek, T., Irsova, Z., & Vlach, T. (2018a). Measuring the income elasticity of water demand: The importance of publication and endogeneity biases. Land Economics, 94(2), 259–283. 10.3368/le.94.2.259
 
-Havranek, T., Irsova, Z., & Zeynalova, O. (2018c). Tuition fees and university enrolment: A meta-regression analysis. Oxford Bulletin of Economics and Statistics, 80(6), 1145–1184.
+Havranek, T., Irsova, Z., & Zeynalova, O. (2018c). Tuition fees and university enrolment: A meta-regression analysis. Oxford Bulletin of Economics and Statistics, 80(6), 1145–1184. 10.1111/obes.12240
 
 Havranek, T., & Rusnak, M. (2013). Transmission lags of monetary policy: A meta-analysis. International Journal of Central Banking, 9(4), 39–76.
 
-Havranek, T., Stanley, T. D., Doucouliagos, H., Bom, P., Geyer-Klingeberg, J., Iwasaki, I., Reed, W. R., Rost, K., & van Aert, R. C. M. (2020). Reporting guidelines for meta-analysis in economics. Journal of Economic Surveys, 34(3), 469–475.
+Havranek, T., Stanley, T. D., Doucouliagos, H., Bom, P., Geyer-Klingeberg, J., Iwasaki, I., Reed, W. R., Rost, K., & van Aert, R. C. M. (2020). Reporting guidelines for meta-analysis in economics. Journal of Economic Surveys, 34(3), 469–475. 10.1111/joes.12363
 
 Hedges, L. V. (1984). Estimation of effect size under nonrandom sampling: The effects of censoring studies yielding statistically insignificant mean differences. Journal of Educational Statistics, 9, 61–85.
 
-Hedges, L. V. (1992). Modeling publication selection effects in meta-analysis. Statistical Science, 72(2), 246–255.
+Hedges, L. V. (1992). Modeling publication selection effects in meta-analysis. Statistical Science, 72(2), 246–255. 10.1214/ss/1177011364
 
 Higgins, J. P. T., Thomas,J., Chandler,J., Cumpston,M., Li,T., Page, M. J., & Welch,V. A. (Eds.). (2022). Cochrane handbook for systematic reviews of interventions version 6.3. cochrane, 2022. Retrieved from training.cochrane. org/handbook (updated February 2022)
 
 Hunter, J. E., & Schmidt, F. L. (1990). Methods of meta-analysis: Correcting error and bias in research findings. Sage.
 
-Ioannidis, J., Stanley, T., & Doucouliagos, H. (2017). The power of bias in economics research. Economic Journal, 127(605), 236–265.
+Ioannidis, J., Stanley, T., & Doucouliagos, H. (2017). The power of bias in economics research. Economic Journal, 127(605), 236–265. 10.1111/ecoj.12461
 
-Ioannidis, J. P. A (2005). Contradicted and initially stronger effects in highly cited clinical research. Jama, 294, 218–228.
+Ioannidis, J. P. A (2005). Contradicted and initially stronger effects in highly cited clinical research. Jama, 294, 218–228. 10.1001/jama.294.2.218
 
 Irsova, Z., Bom, P. R. D., Havranek, T., & Rachinger, H. (2023). “Spurious precision in meta-analysis.” MetaArXiv 3qp2w, Center for Open Science. Retrieved from meta-analysis.cz/maive.
 
 Iyengar, S., & Greenhouse, J. B. (1988). Selection models and the file drawer problem. Statistical Science, 3(1), 109– 117.
 
-Klein, R. A., Ratliff, K. A., Vianello, M., Adams, R., Bahník, Š., Bernstein, M. J., Bocian, K., Brandt, M. J., Brooks, B., Brumbaugh, C. C., Cemalcilar, Z., Chandler, J., Cheong, W., Davis, W. E., Devos, T., Eisner, M., Frankowska, N., Furrow, D., Galliani, E. M., . . . Nosek, B. A. (2014). Investigating variation in replicability: A ´many labs´ replication project. Social Psychology, 45(3), 142–152.
+Klein, R. A., Ratliff, K. A., Vianello, M., Adams, R., Bahník, Š., Bernstein, M. J., Bocian, K., Brandt, M. J., Brooks, B., Brumbaugh, C. C., Cemalcilar, Z., Chandler, J., Cheong, W., Davis, W. E., Devos, T., Eisner, M., Frankowska, N., Furrow, D., Galliani, E. M., . . . Nosek, B. A. (2014). Investigating variation in replicability: A ´many labs´ replication project. Social Psychology, 45(3), 142–152. 10.1027/1864-9335/a000178
 
 Klein, R. A., Vianello, M., Hasselman, F., Adams, B. G., Adams, R. B., Alper, S., Aveyard, M., Axt, J. R., Babalola, M. T., Bahník, Š., Batra, R., Berkics, M., Bernstein, M. J., Berry, D. R., Bialobrzeska, O., Binan, E. D., Bocian, K., Brandt, M. J., Busching, R., . . . Nosek, B. A. (2018). Many labs 2: Investigating variation in replicability across samples and settings. Advances in Methods and Practices in Psychological Science, 1(4), 443–490.
 
-Koop, G., Leon-Gonzalez, R., & Strachan, R. (2012). Bayesian model averaging in the instrumental variable regression model. Journal of Econometrics, 171(2), 237–250.
+Koop, G., Leon-Gonzalez, R., & Strachan, R. (2012). Bayesian model averaging in the instrumental variable regression model. Journal of Econometrics, 171(2), 237–250. 10.1016/j.jeconom.2012.06.005
 
 J. Koricheva, J. Gurevitch & K. Mengersen (Eds.). (2017). Handbook of meta-analysis in ecology and evolution. Princeton University Press.
 
-Kroodsma, D. A., Mayorga, J., Hochberg, T., Miller, N. A., Boerder, K., Ferretti, F., Wilson, A., Bergman, B., White, T. D., Block, B. A., Woods, P., Sullivan, B., Costello, C., & Worm, B. (2018). Tracking the global footprint of fisheries. Science, 359(6378), 904–907.
+Kroodsma, D. A., Mayorga, J., Hochberg, T., Miller, N. A., Boerder, K., Ferretti, F., Wilson, A., Bergman, B., White, T. D., Block, B. A., Woods, P., Sullivan, B., Costello, C., & Worm, B. (2018). Tracking the global footprint of fisheries. Science, 359(6378), 904–907. 10.1126/science.aao5646
 
 Kroupova, K., Havranek, T., & Irsova, Z. (2022). “Student Employment and Education: A Meta-Analysis.” CEPR Discussion Papers 16550, The Centre for Economic Policy Research, London. Retrieved from meta-analysis.cz/students.
 
-Krueger, A. (2003). Economic considerations and class size. Economic Journal, 113(485), 34–63.
+Krueger, A. (2003). Economic considerations and class size. Economic Journal, 113(485), 34–63. 10.1111/1468-0297.00098
 
-Kulinskaya, E., & Mah, E. Y. (2022). Cumulative meta-analysis: What works. Research Synthesis Methods, 13(1), 48–67.
+Kulinskaya, E., & Mah, E. Y. (2022). Cumulative meta-analysis: What works. Research Synthesis Methods, 13(1), 48–67. 10.1002/jrsm.1522
 
 Kvarven, A., Stromland, E., & Johannesson, M. (2020). Comparing meta-analyses and preregistered multiple-laboratory replication projects. Nature Human Behavior, 4, 423–434.
 
-Lau, J., Antman, E., Jimenez-Silva, J., Kupelnick, B., Mosteller, F., & Chalmers, T. (1992). Cumulative meta-analysis of therapeutic trials for myocardial infarction. The New England Journal of Medicine, 327(4), 248–254.
+Lau, J., Antman, E., Jimenez-Silva, J., Kupelnick, B., Mosteller, F., & Chalmers, T. (1992). Cumulative meta-analysis of therapeutic trials for myocardial infarction. The New England Journal of Medicine, 327(4), 248–254. 10.1056/nejm199207233270406
 
-List, J., & Uhlig, H. (2017). Introduction to the past, present, and future of economics: A celebration of the 125-year anniversary of the JPE and of chicago economics. Journal of Political Economy, 125(6), 1723–1727.
+List, J., & Uhlig, H. (2017). Introduction to the past, present, and future of economics: A celebration of the 125-year anniversary of the JPE and of chicago economics. Journal of Political Economy, 125(6), 1723–1727. 10.1086/694751
 
 Liu, X. (2012). Survival analysis: Models and applications (1st ed.). Higher Education Press, John Wiley & Sons, Ltd.
 
 Maier, M., Bartos, F., & Wagenmakers, E. J. (2023). Robust Bayesian meta-analysis: Addressing publication bias with model-averaging. Psychological Methods, 28(1), 107–122. https://doi.org/10.1037/met0000405
 
-Mathur, M. B., & VanderWeele, T. J. (2020). Sensitivity analysis for publication bias in meta-analyses. Journal of the Royal Statistical Society Series C, 69(5), Article 1091–1119.
+Mathur, M. B., & VanderWeele, T. J. (2020). Sensitivity analysis for publication bias in meta-analyses. Journal of the Royal Statistical Society Series C, 69(5), Article 1091–1119. 10.1111/rssc.12440
 
-Matousek, J., Havranek, T., & Irsova, Z. (2022). Individual discount rates: A meta-analysis of experimental evidence. Experimental Economics, 25(1), 318–358.
+Matousek, J., Havranek, T., & Irsova, Z. (2022). Individual discount rates: A meta-analysis of experimental evidence. Experimental Economics, 25(1), 318–358. 10.1007/s10683-021-09716-9
 
-McCloskey, D. N. (2014). Measured, unmeasured, mismeasured, and unjustified pessimism: A review essay of thomas piketty’s capitalism in the twenty first century. Erasmus Journal for Philosophy and Economics, 7(2), 73–115.
+McCloskey, D. N. (2014). Measured, unmeasured, mismeasured, and unjustified pessimism: A review essay of thomas piketty’s capitalism in the twenty first century. Erasmus Journal for Philosophy and Economics, 7(2), 73–115. 10.23941/ejpe.v7i2.170
 
-McShane, B. B., Bockenholt, U., & Hansen, K. T. (2016). Adjusting for publication bias in meta-analysis: An evaluation of selection methods and some cautionary notes. Perspectives on Psychological Science, 11, 730–749.
+McShane, B. B., Bockenholt, U., & Hansen, K. T. (2016). Adjusting for publication bias in meta-analysis: An evaluation of selection methods and some cautionary notes. Perspectives on Psychological Science, 11, 730–749. 10.1177/1745691616662243
 
-Moher, D., Shamseer, L., Clarke, M., Ghersi, D., Liberati, A., Petticrew, M., Shekelle, P., & Stewart, L. A. (2015). Preferred reporting items for systematic review and meta-analysis protocols (PRISMA-P) 2015 statement. Systematic Reviews, 4(1).
+Moher, D., Shamseer, L., Clarke, M., Ghersi, D., Liberati, A., Petticrew, M., Shekelle, P., & Stewart, L. A. (2015). Preferred reporting items for systematic review and meta-analysis protocols (PRISMA-P) 2015 statement. Systematic Reviews, 4(1). 10.1186/2046-4053-4-1
 
-Nakagawa, S., Noble, D. W. A., Senior, A. M., & Lagisz, M. (2017). Meta-evaluation of meta-analysis: Ten appraisal questions for biologists. BMC Biology, 15(1), Article 18.
+Nakagawa, S., Noble, D. W. A., Senior, A. M., & Lagisz, M. (2017). Meta-evaluation of meta-analysis: Ten appraisal questions for biologists. BMC Biology, 15(1), Article 18. 10.1186/s12915-017-0357-7
 
 Nakagawa, S., Yang, Y., Macartney, E. L., Spake, R., & Lagisz, M. (2023). Quantitative evidence synthesis: A practical guide on meta-analysis, meta-regression, and publication bias tests for environmental sciences. Environmental Evidence, 12, Article 8.
 
-Neisser, C. (2021). The elasticity of taxable income: A meta-regression analysis. The Economic Journal, 131(640), 3365–3391.
+Neisser, C. (2021). The elasticity of taxable income: A meta-regression analysis. The Economic Journal, 131(640), 3365–3391. 10.1093/ej/ueab038
 
-Nosek, B. A., Ebersole, C. R., DeHaven, A. C., & Mellor, D. T. (2018). The preregistration revolution. Proceedings of the National Academy of Sciences, 115(11), 2600–2606.
+Nosek, B. A., Ebersole, C. R., DeHaven, A. C., & Mellor, D. T. (2018). The preregistration revolution. Proceedings of the National Academy of Sciences, 115(11), 2600–2606. 10.1073/pnas.1708274114
 
-Oehlert, G. W. (1992). A note on the delta method. The American Statistician, 46(1), 27–29.
+Oehlert, G. W. (1992). A note on the delta method. The American Statistician, 46(1), 27–29. 10.1080/00031305.1992.10475842
 
 Opatrny, M., Havranek, T., Irsova, Z., & Scasny, M. (2023). Publication bias and model uncertainty in measuring the effect of class size on achievement. Working paper, Charles University, Prague. Retrieved from meta-analysis. cz/class.
 
@@ -16774,65 +16776,65 @@ Open Science Collaboration. (2015). Estimating the reproducibility of psychologi
 
 Page, M. J., McKenzie, J. E., Bossuyt, P. M., Boutron, I., Hoffmann, T. C., Mulrow, C. D., Shamseer, L., Tetzlaff, J. M., Akl, E. A., Brennan, S. E., Chou, R., Glanville, J., Grimshaw, J. M., Hróbjartsson, A., Lalu, M. M., Li, T., Loder, E. W., Mayo-Wilson, E., McDonald, S., . . . Moher, D. (2021). The PRISMA 2020 statement: An updated guideline for reporting systematic reviews. Bmj, 372(n71).
 
-Pustejovsky, J. M., & Tipton, E. (2022). Meta-analysis with robust variance estimation: Expanding the range of working models. Prevention Science, 23, 425–438.
+Pustejovsky, J. M., & Tipton, E. (2022). Meta-analysis with robust variance estimation: Expanding the range of working models. Prevention Science, 23, 425–438. 10.1007/s11121-021-01246-3
 
-Roodman, D., Nielsen, M. O., MacKinnon, J. G., & Webb, M. D. (2019). Fast and wild: Bootstrap inference in Stata using Boottest. The Stata Journal, 19(1), 4–60.
+Roodman, D., Nielsen, M. O., MacKinnon, J. G., & Webb, M. D. (2019). Fast and wild: Bootstrap inference in Stata using Boottest. The Stata Journal, 19(1), 4–60. 10.1177/1536867x19830877
 
-Roth, P. L., Le, H., Oh, I.-S., Van Iddekinge, C. H., & Bobko, P. (2018). Using beta coefficients to impute missing correlations in meta-analysis research: Reasons for caution. Journal of Applied Psychology, 103(6), 644–658.
+Roth, P. L., Le, H., Oh, I.-S., Van Iddekinge, C. H., & Bobko, P. (2018). Using beta coefficients to impute missing correlations in meta-analysis research: Reasons for caution. Journal of Applied Psychology, 103(6), 644–658. 10.1037/apl0000293
 
-Rothstein, H. R. (2008). Publication bias as a threat to the validity of meta-analytic results. Journal of Experimental Criminology, 4(1), 61–81.
+Rothstein, H. R. (2008). Publication bias as a threat to the validity of meta-analytic results. Journal of Experimental Criminology, 4(1), 61–81. 10.1007/s11292-007-9046-9
 
 Rothstein, H. R., Sutton, A. J., & Borenstein, M. (2005). Publication bias in meta-analysis. In H. R., Rothstein, A. J., Sutton, & M., Borenstein (Eds.), Prevention, assessment and adjustments., John Wiley & Sons, Ltd.
 
-Rusnak, M., Havranek, T., & Horvath, R. (2013). How to solve the price puzzle? A meta-analysis. Journal of Money, Credit and Banking, 45(1), 37–70.
+Rusnak, M., Havranek, T., & Horvath, R. (2013). How to solve the price puzzle? A meta-analysis. Journal of Money, Credit and Banking, 45(1), 37–70. 10.1111/j.1538-4616.2012.00561.x
 
-Smith, G. (2018). Step away from stepwise. Journal of Big Data, 5, 32.
+Smith, G. (2018). Step away from stepwise. Journal of Big Data, 5, 32. 10.1186/s40537-018-0143-6
 
-Stanley, T. D. (2005). Beyond publication bias. Journal of Economic Surveys, 19(3), 309–345.
+Stanley, T. D. (2005). Beyond publication bias. Journal of Economic Surveys, 19(3), 309–345. 10.1111/j.0950-0804.2005.00250.x
 
-Stanley, T. D. (2008). Meta-regression methods for detecting and estimating empirical effects in the presence of publication selection. Oxford Bulletin of Economics and Statistics, 70(1), 103–127.
+Stanley, T. D. (2008). Meta-regression methods for detecting and estimating empirical effects in the presence of publication selection. Oxford Bulletin of Economics and Statistics, 70(1), 103–127. 10.1111/j.1468-0084.2007.00487.x
 
-Stanley, T. D., & Doucouliagos, H. (2012). Meta-regression analysis in economics and business. Routledge.
+Stanley, T. D., & Doucouliagos, H. (2012). Meta-regression analysis in economics and business. Routledge. 10.4324/9780203111710
 
-Stanley, T. D., & Doucouliagos, H. (2014). Meta-regression approximations to reduce publication selection bias. Research Synthesis Methods, 5(1), 60–78.
+Stanley, T. D., & Doucouliagos, H. (2014). Meta-regression approximations to reduce publication selection bias. Research Synthesis Methods, 5(1), 60–78. 10.1002/jrsm.1095
 
-Stanley, T. D., & Doucouliagos, H. (2015). Neither fixed nor random: Weighted least squares meta-analysis. Statistics in Medicine, 34, 2116–2127.
+Stanley, T. D., & Doucouliagos, H. (2015). Neither fixed nor random: Weighted least squares meta-analysis. Statistics in Medicine, 34, 2116–2127. 10.1002/sim.6481
 
-Stanley, T. D., & Doucouliagos, H. (2017). Neither fixed nor random Weighted least squares meta-regression analysis. Research Synthesis Methods, 8, 19–42.
+Stanley, T. D., & Doucouliagos, H. (2017). Neither fixed nor random Weighted least squares meta-regression analysis. Research Synthesis Methods, 8, 19–42. 10.1002/jrsm.1211
 
 Stanley, T. D., & Doucouliagos, H. (2023). Correct standard errors can bias meta-analysis. Research Synthesis Methods, 14(3), 515–519. https://onlinelibrary.wiley.com/doi/full/10.1002/jrsm.1631
 
-Stanley, T. D., Doucouliagos, H., & Havranek, T. (2023b). Meta-analyses of partial correlations are biased: Detection and solutions, EconStor Preprints 270940, ZBW—Leibniz Information Centre for Economics.
+Stanley, T. D., Doucouliagos, H., & Havranek, T. (2023b). Meta-analyses of partial correlations are biased: Detection and solutions, EconStor Preprints 270940, ZBW—Leibniz Information Centre for Economics. 10.31222/osf.io/grcez
 
-Stanley, T. D., Doucouliagos, H., Ioannidis, J. P. A., & Carter, E. (2021). Detecting publication selection bias through excess statistical significance. Research Synthesis Methods, 12, 776–795.
+Stanley, T. D., Doucouliagos, H., Ioannidis, J. P. A., & Carter, E. (2021). Detecting publication selection bias through excess statistical significance. Research Synthesis Methods, 12, 776–795. 10.1002/jrsm.1512
 
 Stanley, T. D., Ioannidis, J. P. A., Maximilian Maier, M., Doucouliagos, H., Otte, W. M., & Bartoš, F. (2023). Unrestricted weighted least squares represent medical research better than random effects in 67,308 Cochrane meta-analyses. Journal of Clinical Epidemiology, 157, 53–58.
 
 Stanley, T. D., & Rosenberger, R. S. (2009). Are recreation values systematically underestimated? reducing publication selection bias for benefit transfer Bulletin of Economics and Meta-Analysis. https://www.hendrix.edu/ uploadedFiles/Departments_and_Programs/Business_and_Economics/AMAES/RootnMRA.pdf
 
-Steel, M. F. (2020). Model averaging and its use in economics. Journal of Economic Literature, 58(3), 644–719.
+Steel, M. F. (2020). Model averaging and its use in economics. Journal of Economic Literature, 58(3), 644–719. 10.1257/jel.20191385
 
-Strachan, R., & Inder, B. (2004). Bayesian analysis of the error correction model. Journal of Econometrics, 123, 307–325.
+Strachan, R., & Inder, B. (2004). Bayesian analysis of the error correction model. Journal of Econometrics, 123, 307–325. 10.1016/j.jeconom.2003.12.004
 
-Valickova, P., Havranek, T., & Horvath, R. (2015). Financial development and economic growth: A meta-analysis. Journal of Economic Surveys, 29(3), 506–526.
+Valickova, P., Havranek, T., & Horvath, R. (2015). Financial development and economic growth: A meta-analysis. Journal of Economic Surveys, 29(3), 506–526. 10.1111/joes.12068
 
 van Aert, R. C., & van Assen, M. (2021). Correcting for publication bias in a meta-analysis with the p-uniform* method. Tilburg University & Utrecht University working paper. 10.31222/osf.io/zqjr9
 
 van Aert, R. C. M., & Niemeyer, H. (2022). Publication bias. In W. O’Donohue, A. Masuda, & S. Lilienfeld (Eds.), Avoiding questionable research practices in applied psychology. Springer. https://doi.org/10.1007/978-3-031-04968-2_10
 
-van Assen, M. A., van Aert, R., & Wicherts, J. M. (2015). Meta-analysis using effect size distributions of only statistically significant studies. Psychological Methods, 20, 293–309.
+van Assen, M. A., van Aert, R., & Wicherts, J. M. (2015). Meta-analysis using effect size distributions of only statistically significant studies. Psychological Methods, 20, 293–309. 10.1037/met0000025
 
-Vevea, J., & Hedges, L. V. (1995). A general linear model for estimating effect size in the presence of publication bias. Psychometrika, 60(3), 419–435.
+Vevea, J., & Hedges, L. V. (1995). A general linear model for estimating effect size in the presence of publication bias. Psychometrika, 60(3), 419–435. 10.1007/bf02294384
 
-Wetterslev, J., Thorlund, K., Brok, J., & Gluud, C. (2008). Trial sequential analysis may establish when firm evidence is reached in cumulative meta-analysis. Journal of Clinical Epidemiology, 61(1), 64–75.
+Wetterslev, J., Thorlund, K., Brok, J., & Gluud, C. (2008). Trial sequential analysis may establish when firm evidence is reached in cumulative meta-analysis. Journal of Clinical Epidemiology, 61(1), 64–75. 10.1016/j.jclinepi.2007.03.013
 
-Yang, F., Havranek, T., Irsova, Z., & Novak, J. (2023). Is research on hedge fund performance published selectively? A quantitative survey. Journal of Economic Surveys, forthcoming.
+Yang, F., Havranek, T., Irsova, Z., & Novak, J. (2023). Is research on hedge fund performance published selectively? A quantitative survey. Journal of Economic Surveys, forthcoming. 10.1111/joes.12574
 
-Young, N. S., Ioannidis, J. P. A., & Al-Ubaydli, O. (2008). Why current publication practices may distort science. PLoS Medicine, 5(10), e201.
+Young, N. S., Ioannidis, J. P. A., & Al-Ubaydli, O. (2008). Why current publication practices may distort science. PLoS Medicine, 5(10), e201. 10.1371/journal.pmed.0050201
 
-Zigraiova, D., & Havranek, T. (2016). Bank competition and financial stability: Much ado about nothing? Journal of Economic Surveys, 30(5), 944–981.
+Zigraiova, D., & Havranek, T. (2016). Bank competition and financial stability: Much ado about nothing? Journal of Economic Surveys, 30(5), 944–981. 10.1111/joes.12131
 
-Zigraiova, D., Havranek, T., Irsova, Z., & Novak, J. (2021). How puzzling is the forward premium puzzle? A Meta-Analysis. European Economic Review, 134, Article 103714
+Zigraiova, D., Havranek, T., Irsova, Z., & Novak, J. (2021). How puzzling is the forward premium puzzle? A Meta-Analysis. European Economic Review, 134, Article 103714 10.1016/j.euroecorev.2021.103714
 
 
 
@@ -23388,126 +23390,128 @@ All codes used in this study have been deposited in the GitHub database at githu
 
 #### References
 
+Some entries below were printed without a link. Where a Crossref record matches one and no other record plausibly could, its DOI is shown; ambiguous references are left as they were printed.
 
-Gurevitch, J., Koricheva, J., Nakagawa, S. & Stewart, G. Meta-analysis and the science of research synthesis. Nature 555 , 175–182 (2018).
 
-Borenstein, M., Hedges, L., Higgins, J. & Rothstein, H. A basic introduction to fixed-effect and random-effects models for meta-analysis. Res. Synth. Methods 1 , 97–111 (2010).
+Gurevitch, J., Koricheva, J., Nakagawa, S. & Stewart, G. Meta-analysis and the science of research synthesis. Nature 555 , 175–182 (2018). 10.1038/nature25753
 
-Stanley, T. D. & Doucouliagos, H. Neither fixed nor random: weighted least squares meta-analysis. Stat. Med. 34 , 2116–2127 (2015).
+Borenstein, M., Hedges, L., Higgins, J. & Rothstein, H. A basic introduction to fixed-effect and random-effects models for meta-analysis. Res. Synth. Methods 1 , 97–111 (2010). 10.1002/jrsm.12
 
-Egger, M., Smith, G. D., Schneider, M. & Minder, C. Bias in meta-analysis detected by a, simple, graphical test. Br. Med. J. 315 , 629–634 (1997).
+Stanley, T. D. & Doucouliagos, H. Neither fixed nor random: weighted least squares meta-analysis. Stat. Med. 34 , 2116–2127 (2015). 10.1002/sim.6481
 
-Duval, S. & Tweedie, R. Trim and fill: a simple funnel-plot–based method of testing and adjusting for publication bias in meta-analysis. Biometrics 56 , 455–463 (2000).
+Egger, M., Smith, G. D., Schneider, M. & Minder, C. Bias in meta-analysis detected by a, simple, graphical test. Br. Med. J. 315 , 629–634 (1997). 10.1136/bmj.315.7109.629
 
-Stanley, T. D. & Doucouliagos, H. Meta-regression analysis in economics and business (Routledge, 2012).
+Duval, S. & Tweedie, R. Trim and fill: a simple funnel-plot–based method of testing and adjusting for publication bias in meta-analysis. Biometrics 56 , 455–463 (2000). 10.1111/j.0006-341x.2000.00455.x
 
-Stanley, T. D. & Doucouliagos, H. Meta-regression approximations to reduce publication selection bias. Res. Synth. Methods 5 , 60–78 (2014).
+Stanley, T. D. & Doucouliagos, H. Meta-regression analysis in economics and business (Routledge, 2012). 10.4324/9780203111710
 
-Ioannidis, J. P., Stanley, T. D. & Doucouliagos, H. The power of bias in economics research. Econ. J. 127 , F236–F265 (2017).
+Stanley, T. D. & Doucouliagos, H. Meta-regression approximations to reduce publication selection bias. Res. Synth. Methods 5 , 60–78 (2014). 10.1002/jrsm.1095
 
-Bom, P. R. D. & Rachinger, H. A kinked meta-regression model for publication bias correction. Res. Synth. Methods 10 , 497–514 (2019).
+Ioannidis, J. P., Stanley, T. D. & Doucouliagos, H. The power of bias in economics research. Econ. J. 127 , F236–F265 (2017). 10.1111/ecoj.12461
+
+Bom, P. R. D. & Rachinger, H. A kinked meta-regression model for publication bias correction. Res. Synth. Methods 10 , 497–514 (2019). 10.1002/jrsm.1352
 
 Hedges, L. Estimation of effect size under nonrandom sampling: The effects of censoring studies yielding statistically insignificant mean differences. J. Educ. Stat. 9 , 61–85 (1984).
 
 Iyengar, S. & Greenhouse, J. B. Selection models and the file drawer problem. Stat. Sci. 3 , 109–117 (1988).
 
-Hedges, L. V. Modeling publication selection effects in meta-analysis. Stat. Sci. 72 , 246–255 (1992).
+Hedges, L. V. Modeling publication selection effects in meta-analysis. Stat. Sci. 72 , 246–255 (1992). 10.1214/ss/1177011364
 
-Vevea, J. & Hedges, L. V. A general linear model for estimating effect size in the presence of publication bias. Psychometrika 60 , 419–435 (1995).
+Vevea, J. & Hedges, L. V. A general linear model for estimating effect size in the presence of publication bias. Psychometrika 60 , 419–435 (1995). 10.1007/bf02294384
 
-Andrews, I. & Kasy, M. Identification of and correction for publication bias. Am. Econ. Rev. 109 , 2766–2794 (2019).
+Andrews, I. & Kasy, M. Identification of and correction for publication bias. Am. Econ. Rev. 109 , 2766–2794 (2019). 10.1257/aer.20180310
 
 van Aert, R. C. & van Assen, M. Correcting for publication bias in a meta-analysis with the p-uniform* method. Psychonomic Bull. Rev. (2025), in press.
 
 Dal-Re, R. et al. Making prospective registration of observational research a reality. Sci. Transl. Med. 6 , 224 (2014).
 
-Bruns, S. B. & Ioannidis, J. P. p-Curve and p-hacking in observational research. PloS ONE 11 , e0149144 (2016).
+Bruns, S. B. & Ioannidis, J. P. p-Curve and p-hacking in observational research. PloS ONE 11 , e0149144 (2016). 10.1371/journal.pone.0149144
 
 Abadie, A., Athey, S., Imbens, G. W. & Wooldridge, J. M. When should you adjust standard errors for clustering? Q. J. Econ. 138 , 1–35 (2023).
 
-Cameron, A. C. & Miller, D. L. A practitioner’s guide to cluster-robust inference. J. Hum. Resour. 50 , 317–372 (2015).
+Cameron, A. C. & Miller, D. L. A practitioner’s guide to cluster-robust inference. J. Hum. Resour. 50 , 317–372 (2015). 10.3368/jhr.50.2.317
 
-Roodman, D., Nielsen, M. Ø., MacKinnon, J. G. & Webb, M. D. Fast and wild: bootstrap inference in stata using boottest. Stata J. 19 , 4–60 (2019).
+Roodman, D., Nielsen, M. Ø., MacKinnon, J. G. & Webb, M. D. Fast and wild: bootstrap inference in stata using boottest. Stata J. 19 , 4–60 (2019). 10.1177/1536867x19830877
 
 de Chaisemartin, C. & Ramirez-Cuellar, J. At what level should one cluster standard errors in paired and small-strata experiments? Am. Econ. J. Appl. Econ. 16 , 193–212 (2024).
 
-MacKinnon, J. G., Nielsen, M. O. & Webb, M. D. Cluster-robust inference: a guide to empirical practice. J. Econ. 232 , 272–299 (2023).
+MacKinnon, J. G., Nielsen, M. O. & Webb, M. D. Cluster-robust inference: a guide to empirical practice. J. Econ. 232 , 272–299 (2023). 10.1016/j.jeconom.2022.04.001
 
-White, H. A heteroskedasticity-consistent covariance matrix estimator and a direct test for heteroskedasticity. Econometrica 48 , 817–838 (1980).
+White, H. A heteroskedasticity-consistent covariance matrix estimator and a direct test for heteroskedasticity. Econometrica 48 , 817–838 (1980). 10.2307/1912934
 
-Chesher, A. & Jewitt, I. The bias of a heteroskedasticity consistent covariance matrix estimator. Econometrica 55 , 1217–1222 (1987).
+Chesher, A. & Jewitt, I. The bias of a heteroskedasticity consistent covariance matrix estimator. Econometrica 55 , 1217–1222 (1987). 10.2307/1911269
 
-Lang, K. How credible is the credibility revolution? J. Labor Econ. 43 , 635–663 (2025).
+Lang, K. How credible is the credibility revolution? J. Labor Econ. 43 , 635–663 (2025). 10.1086/732772
 
-Roth, J. Pretest with caution: event-study estimates after testing for parallel trends. Am. Econ. Rev. Insights 4 , 305–322 (2022).
+Roth, J. Pretest with caution: event-study estimates after testing for parallel trends. Am. Econ. Rev. Insights 4 , 305–322 (2022). 10.1257/aeri.20210236
 
-Keane, M. & Neal, T. Instrument strength in IV estimation and inference: a guide to theory and practice. J. Econ. 235 , 1625–1653 (2023).
+Keane, M. & Neal, T. Instrument strength in IV estimation and inference: a guide to theory and practice. J. Econ. 235 , 1625–1653 (2023). 10.1016/j.jeconom.2022.12.009
 
-Young, A. Channeling fisher: randomization tests and the statistical insignificance of seemingly significant experimental results. Q. J. Econ. 134 , 557–598 (2019).
+Young, A. Channeling fisher: randomization tests and the statistical insignificance of seemingly significant experimental results. Q. J. Econ. 134 , 557–598 (2019). 10.1093/qje/qjy029
 
-Askarov, Z., Doucouliagos, A., Doucouliagos, H. & Stanley, T. D. The significance of data-sharing policy. J. Eur. Econ. Assoc. 21 , 1191–1226 (2023).
+Askarov, Z., Doucouliagos, A., Doucouliagos, H. & Stanley, T. D. The significance of data-sharing policy. J. Eur. Econ. Assoc. 21 , 1191–1226 (2023). 10.1093/jeea/jvac053
 
-Lane, H. & Tranel, B. The Lombard sign and the role of hearing in speech. J. Speech Hearing Res. 14 , 677–709 (1971).
+Lane, H. & Tranel, B. The Lombard sign and the role of hearing in speech. J. Speech Hearing Res. 14 , 677–709 (1971). 10.1044/jshr.1404.677
 
-Taylor, L. R. Aggregation, variance and the mean. Nature 189 , 732–735 (1961).
+Taylor, L. R. Aggregation, variance and the mean. Nature 189 , 732–735 (1961). 10.1038/189732a0
 
-Stanley, T. D. & Doucouliagos, H. Neither fixed nor random: weighted least squares meta-regression. Res. Synth. Methods 8 , 19–42 (2017).
+Stanley, T. D. & Doucouliagos, H. Neither fixed nor random: weighted least squares meta-regression. Res. Synth. Methods 8 , 19–42 (2017). 10.1002/jrsm.1211
 
 Havranek, T. et al. Reporting guidelines for meta-analysis in economics. J. Econ. Surv. 34 , 469–475 (2020).
 
-Ugur, M., Awaworyi Churchill, S. & Luong, H. What do we know about R&D spillovers and productivity? Meta-analysis evidence on heterogeneity and statistical power. Res. Policy 49 , 103866 (2020).
+Ugur, M., Awaworyi Churchill, S. & Luong, H. What do we know about R&D spillovers and productivity? Meta-analysis evidence on heterogeneity and statistical power. Res. Policy 49 , 103866 (2020). 10.1016/j.respol.2019.103866
 
-Xue, X., Reed, W. R. & Menclova, A. Social capital and health: a meta-analysis. J. Health Econ. 72 , 102317 (2020).
+Xue, X., Reed, W. R. & Menclova, A. Social capital and health: a meta-analysis. J. Health Econ. 72 , 102317 (2020). 10.1016/j.jhealeco.2020.102317
 
-Neisser, C. The elasticity of taxable income: a meta-regression analysis. Econ. J. 131 , 3365–3391 (2021).
+Neisser, C. The elasticity of taxable income: a meta-regression analysis. Econ. J. 131 , 3365–3391 (2021). 10.1093/ej/ueab038
 
-Nakagawa, S., Lagisz, M. & Jennions, M. D. et al. Methods for testing publication bias in ecological and evolutionary meta-analyses. Methods Ecol. Evol. 13 , 4–21 (2022).
+Nakagawa, S., Lagisz, M. & Jennions, M. D. et al. Methods for testing publication bias in ecological and evolutionary meta-analyses. Methods Ecol. Evol. 13 , 4–21 (2022). 10.1111/2041-210x.13724
 
-Brown, A. L., Imai, T., Vieider, F. & Camerer, C. Meta-analysis of empirical estimates of loss-aversion. J. Econ. Lit. 62 , 485–516 (2024).
+Brown, A. L., Imai, T., Vieider, F. & Camerer, C. Meta-analysis of empirical estimates of loss-aversion. J. Econ. Lit. 62 , 485–516 (2024). 10.1257/jel.20221698
 
-Carter, E. C., Schonbrodt, F. D., Gervais, W. M. & Hilgard, J. Correcting for bias in psychology: a comparison of meta-analytic methods. Adv. Methods Pract. Psychological Sci. 2 , 115–144 (2019).
+Carter, E. C., Schonbrodt, F. D., Gervais, W. M. & Hilgard, J. Correcting for bias in psychology: a comparison of meta-analytic methods. Adv. Methods Pract. Psychological Sci. 2 , 115–144 (2019). 10.1177/2515245919847196
 
-Brodeur, A., Cook, N. & Heyes, A. Methods matter: P-hacking and causal inference in economics. Am. Econ. Rev. 110 , 3634–3660 (2020).
+Brodeur, A., Cook, N. & Heyes, A. Methods matter: P-hacking and causal inference in economics. Am. Econ. Rev. 110 , 3634–3660 (2020). 10.1257/aer.20190687
 
-DellaVigna, S. & Linos, E. RCTs to scale: comprehensive evidence from two nudge units. Econometrica 90 , 81–116 (2022).
+DellaVigna, S. & Linos, E. RCTs to scale: comprehensive evidence from two nudge units. Econometrica 90 , 81–116 (2022). 10.3982/ecta18709
 
-Imai, T., Rutter, T. A. & Camerer, C. F. Meta-analysis of present-bias estimation using convex time budgets. Econ. J. 131 , 1788–1814 (2021).
+Imai, T., Rutter, T. A. & Camerer, C. F. Meta-analysis of present-bias estimation using convex time budgets. Econ. J. 131 , 1788–1814 (2021). 10.1093/ej/ueaa115
 
-Gechert, S. & Heimberger, P. Do corporate tax cuts boost economic growth? Eur. Econ. Rev. 147 , 104157 (2022).
+Gechert, S. & Heimberger, P. Do corporate tax cuts boost economic growth? Eur. Econ. Rev. 147 , 104157 (2022). 10.1016/j.euroecorev.2022.104157
 
-Havranek, T., Irsova, Z., Laslopova, L. & Zeynalova, O. Publication and attenuation biases in measuring skill substitution. Rev. Econ. Stat. 106 , 1187–1200 (2024).
+Havranek, T., Irsova, Z., Laslopova, L. & Zeynalova, O. Publication and attenuation biases in measuring skill substitution. Rev. Econ. Stat. 106 , 1187–1200 (2024). 10.1162/rest_a_01227
 
-Matousek, J., Havranek, T. & Irsova, Z. Individual discount rates: a meta-analysis of experimental evidence. Exp. Econ. 25 , 318–358 (2022).
+Matousek, J., Havranek, T. & Irsova, Z. Individual discount rates: a meta-analysis of experimental evidence. Exp. Econ. 25 , 318–358 (2022). 10.1007/s10683-021-09716-9
 
-Simonsohn, U., Nelson, L. D. & Simmons, J. P. p-Curve: a key to the file-drawer. J. Exp. Psychol. Gen. 143 , 534–547 (2014).
+Simonsohn, U., Nelson, L. D. & Simmons, J. P. p-Curve: a key to the file-drawer. J. Exp. Psychol. Gen. 143 , 534–547 (2014). 10.1037/a0033242
 
 Simonsohn, U., Nelson, L. D. & Simmons, J. P. p-Curve and effect size: correcting for publication bias using only significant results. Perspect. Psychological Sci. 9 , 666–681 (2014).
 
-Assen, V. M., Aert, V. R. C. & Wicherts, J. M. Meta-analysis using effect size distributions of only statistically significant studies. Psychological Methods 20 , 293–309 (2015).
+Assen, V. M., Aert, V. R. C. & Wicherts, J. M. Meta-analysis using effect size distributions of only statistically significant studies. Psychological Methods 20 , 293–309 (2015). 10.1037/met0000025
 
-Simonsohn, U., Simmons, J. P. & Nelson, L. D. Better P-curves: making P-curve analysis more robust to, errors, fraud, and ambitious P-hacking, a Reply to Ulrich and Miller J. Exp. Psychol. Gen. 144 , 1146–1152 (2015).
+Simonsohn, U., Simmons, J. P. & Nelson, L. D. Better P-curves: making P-curve analysis more robust to, errors, fraud, and ambitious P-hacking, a Reply to Ulrich and Miller J. Exp. Psychol. Gen. 144 , 1146–1152 (2015). 10.1037/xge0000104
 
 Aert, V. R. C. & Assen, V. M. Bayesian evaluation of effect size after replicating an original study. Plos ONE 12 , e0175302 (2017).
 
 Aert, V. R. C. & Assen, V. M. Examining reproducibility in psychology: a hybrid method for combining a statistically significant original study and a replication. Behav. Res. Methods 50 , 1515–1539 (2018).
 
-Stanley, T. D. Beyond publication bias. J. Econ. Surv. 19 , 309–345 (2005).
+Stanley, T. D. Beyond publication bias. J. Econ. Surv. 19 , 309–345 (2005). 10.1111/j.0950-0804.2005.00250.x
 
-Pustejovsky, J. E. & Rodgers, M. A. Testing for funnel plot asymmetry of standardized mean differences. Res. Synth. Methods 10 , 57–71 (2019).
+Pustejovsky, J. E. & Rodgers, M. A. Testing for funnel plot asymmetry of standardized mean differences. Res. Synth. Methods 10 , 57–71 (2019). 10.1002/jrsm.1332
 
-Stanley, T. D., Doucouliagos, H. & Havranek, T. Meta-analyses of partial correlations are biased: detection and solutions. Res. Synth. Methods 15 , 313–325 (2024).
+Stanley, T. D., Doucouliagos, H. & Havranek, T. Meta-analyses of partial correlations are biased: detection and solutions. Res. Synth. Methods 15 , 313–325 (2024). 10.1002/jrsm.1704
 
 Kvarven, A., Stromland, E. & Johannesson, M. Comparing meta-analyses and preregistered multiple-laboratory replication projects. Nat. Hum. Behav. 4 , 423–434 (2020).
 
 Bartos, F. et al. Footprint of publication selection bias on meta-analyses in medicine, environmental sciences, psychology, and economics. Res. Synth. Methods 15 , 500–511 (2024).
 
-Sanchez-Meca, J. & Martin-Martinez, F. Weighting by inverse variance or by sample size in meta-analysis: a simulation study. Educ. Psychological Meas. 58 , 211–220 (1998).
+Sanchez-Meca, J. & Martin-Martinez, F. Weighting by inverse variance or by sample size in meta-analysis: a simulation study. Educ. Psychological Meas. 58 , 211–220 (1998). 10.1177/0013164498058002005
 
-Deeks, J. J., Macaskill, P. & Irwig, L. The performance of tests of publication bias and other sample size effects in systematic reviews. J. Clin. Epidemiol. 58 , 882–893 (2005).
+Deeks, J. J., Macaskill, P. & Irwig, L. The performance of tests of publication bias and other sample size effects in systematic reviews. J. Clin. Epidemiol. 58 , 882–893 (2005). 10.1016/j.jclinepi.2005.01.016
 
-Peters, J. L., Sutton, A. J., Jones, D. R., Abrams, K. R. & Rushton, L. Comparison of Two Methods to Detect Publication Bias in Meta-analysis. JAMA 295 , 676–680 (2006).
+Peters, J. L., Sutton, A. J., Jones, D. R., Abrams, K. R. & Rushton, L. Comparison of Two Methods to Detect Publication Bias in Meta-analysis. JAMA 295 , 676–680 (2006). 10.1001/jama.295.6.676
 
-Richard, D. & Riley, L. A. S. Individual participant data meta-analysis: a handbook for healthcare research (John Wiley & Sons Ltd., 2021).
+Richard, D. & Riley, L. A. S. Individual participant data meta-analysis: a handbook for healthcare research (John Wiley & Sons Ltd., 2021). 10.1002/9781119333784.ch1
 
 Irsova, Z., Bom, P. R. D., Havranek, T. & Rachinger, H. Replication materials for "Spurious precision in meta-analysis of observational research". Zenodo , https://doi.org/10.5281/zenodo.15425605 (2025).
 
