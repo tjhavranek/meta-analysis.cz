@@ -648,6 +648,9 @@ def build_page(project, meta, body, toc):
     # from here the only way to the list of them was the home page.
     menu.append('<li><a href="/papers/">Papers in full</a></li>')
     menu.append('<li><a href="/">All meta-analyses</a></li>')
+    # These pages carry no sidebar, so the search box that is on the rest of the site is not
+    # on the 55 pages with the most text to search. A menu entry is the way in from here.
+    menu.append('<li><a href="/search/">Search</a></li>')
 
     return """<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html lang="en" xmlns="http://www.w3.org/1999/xhtml">

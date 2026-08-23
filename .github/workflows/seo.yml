@@ -86,6 +86,13 @@ jobs:
       - name: Verify the matched reference DOIs
         run: python tools/check_reference_dois.py
 
+      # The site searches itself from a prebuilt index, so the index is only as true as the
+      # last time somebody rebuilt it. An index built from yesterday's pages returns pages
+      # that have moved on and misses the ones added since -- worse than no index, because
+      # it looks like it worked. This fails the build instead.
+      - name: Require the search index to match the pages it indexes
+        run: python tools/build_search_index.py --check
+
       # Did this push touch the data layer? 09_verify proves the tree is internally
       # CONSISTENT; it cannot prove the tree FOLLOWS FROM its canonical inputs. A tree can be
       # perfectly self-consistent and still stale, which is exactly what happened four times in

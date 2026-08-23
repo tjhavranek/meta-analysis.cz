@@ -1,0 +1,264 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Search</title>
+<meta name="description" content="Search every page on meta-analysis.cz &#8212; 54 papers in full, the research notes, the datasets and the guidelines. The search runs in your browser; nothing is sent anywhere." />
+<link href="/style.css" rel="stylesheet" type="text/css" />
+<link href="/paper.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="wrapper">
+<!-- start header -->
+<div id="logo">
+	<a class="masthead-home" href="/">meta-analysis.cz</a>
+	<p class="site-name"><a href="/search/">Search</a></p>
+	<h2> <span class="mk">&raquo;</span>&nbsp;&nbsp;&nbsp; every page, in your browser</h2>
+</div>
+<div id="header">
+	<div id="menu">
+		<ul>
+			<li class="current_page_item"><a href="/search/">Search</a></li>
+			<li><a href="/">All meta-analyses</a></li>
+			<li><a href="/papers/">Papers in full</a></li>
+			<li><a href="/results/">Results</a></li>
+			<li><a href="/datasets/">Datasets</a></li>
+		</ul>
+	</div>
+</div>
+<!-- end header -->
+<!-- start page -->
+<div id="page">
+	<div id="content">
+		<div class="post">
+			<div class="entry">
+
+<form id="searchform" class="sitesearch" method="get" action="/search/">
+<label for="q">Search meta-analysis.cz</label>
+<input type="search" id="q" name="q" value="" autocomplete="off"
+ placeholder="publication bias, Armington, discount rate…" />
+<button type="submit">Search</button>
+</form>
+
+<p id="searchstatus" class="searchstatus" role="status" aria-live="polite"></p>
+<ul id="results" class="results"></ul>
+
+<noscript>
+<p>This search runs in your browser, so it needs JavaScript. Without it, the
+<a href="/papers/">list of papers</a>, the <a href="/datasets/">datasets</a> and the
+<a href="/sitemap.xml">sitemap</a> are the way around the site.</p>
+</noscript>
+
+<p class="searchnote">Every word on every page of this site is indexed, including all 54
+papers in full. The index is downloaded once and searched in your browser: no query is sent
+to this site or to anyone else, and a page published a minute ago is findable a minute ago.
+It is a plain file &#8212; <a href="/api/v1/search-index.json">search-index.json</a> &#8212;
+if you would rather search it yourself.</p>
+
+			</div>
+		</div>
+	</div>
+</div>
+<!-- end page -->
+</div>
+<script>
+(function () {
+  var INDEX = "/api/v1/search-index.json";
+  var idx = null, pending = null;
+  var form = document.getElementById("searchform");
+  var box = document.getElementById("q");
+  var out = document.getElementById("results");
+  var status = document.getElementById("searchstatus");
+
+  function fold(s) {
+    return s.normalize("NFKD").replace(/[̀-ͯ]/g, "").toLowerCase();
+  }
+  function terms(q) { return fold(q).match(/[a-z][a-z0-9]+/g) || []; }
+
+  // Document ids are stored as base-36 gaps: "1f.2.9" is 51, 53, 62.
+  function ids(s) {
+    var parts = s.split("."), out = new Array(parts.length), at = 0;
+    for (var i = 0; i < parts.length; i++) { at += parseInt(parts[i], 36); out[i] = at; }
+    return out;
+  }
+
+  function load() {
+    if (pending) return pending;
+    status.textContent = "Loading the index…";
+    pending = fetch(INDEX).then(function (r) {
+      if (!r.ok) throw new Error(r.status);
+      return r.json();
+    }).then(function (j) {
+      idx = j;
+      idx.words = Object.keys(j.b).sort();
+      return j;
+    });
+    return pending;
+  }
+
+  // The last word is what the reader is still typing, so it matches as a prefix: "armin"
+  // finds Armington before the "gton" arrives. Earlier words are already finished words.
+  function postings(term, asPrefix) {
+    var hits = Object.create(null);
+    function add(word, weight) {
+      if (idx.b[word]) ids(idx.b[word]).forEach(function (d) {
+        hits[d] = Math.max(hits[d] || 0, weight);
+      });
+      // Prominent on the page, not merely present: the difference between a paper about
+      // the Armington elasticity and a paper that cites one.
+      if (idx.s[word]) ids(idx.s[word]).forEach(function (d) {
+        hits[d] = Math.max(hits[d] || 0, weight * 2.4);
+      });
+      if (idx.h[word]) ids(idx.h[word]).forEach(function (d) {
+        hits[d] = Math.max(hits[d] || 0, weight * 4);
+      });
+    }
+    if (idx.b[term] || idx.h[term]) add(term, 1);
+    if (asPrefix && term.length >= 2) {
+      var w = idx.words, lo = 0, hi = w.length;
+      while (lo < hi) { var mid = (lo + hi) >> 1; if (w[mid] < term) lo = mid + 1; else hi = mid; }
+      for (var i = lo; i < w.length && w[i].indexOf(term) === 0 && i - lo < 400; i++) {
+        // A prefix hit is weaker than the word itself, and weaker the more it added.
+        add(w[i], w[i] === term ? 1 : 0.55);
+      }
+    }
+    var df = Object.keys(hits).length;
+    return { hits: hits, idf: df ? Math.log(idx.n / df) : 0, df: df };
+  }
+
+  function search(q) {
+    var want = terms(q);
+    if (!want.length) return { rows: [], want: want, allCommon: false };
+    var scores = null, allCommon = true;
+    for (var i = 0; i < want.length; i++) {
+      if (idx.common.indexOf(want[i]) < 0) allCommon = false;
+      var p = postings(want[i], i === want.length - 1);
+      var next = Object.create(null), any = false;
+      for (var d in p.hits) {
+        if (scores === null || d in scores) {
+          next[d] = (scores === null ? 0 : scores[d]) + p.hits[d] * p.idf;
+          any = true;
+        }
+      }
+      // A word nobody has is not a reason to return nothing when it is the one still being
+      // typed; every finished word has to be somewhere.
+      if (!any && !(i === want.length - 1 && p.df === 0)) return { rows: [], want: want, allCommon: allCommon };
+      if (any) scores = next;
+    }
+    if (scores === null) return { rows: [], want: want, allCommon: allCommon };
+    var rows = Object.keys(scores).map(function (d) {
+      return { doc: idx.docs[d], score: scores[d] };
+    });
+    rows.sort(function (a, b) { return b.score - a.score || a.doc.t.localeCompare(b.doc.t); });
+    return { rows: rows, want: want, allCommon: allCommon };
+  }
+
+  function mark(text, want) {
+    var esc = document.createElement("div");
+    esc.textContent = text;
+    var s = esc.innerHTML;
+    want.forEach(function (w) {
+      if (w.length < 2) return;
+      s = s.replace(new RegExp("(" + w.replace(/[.*+?^${}()|[\]\\]/g, "\\$&") + ")", "gi"),
+                    "<mark>$1</mark>");
+    });
+    return s;
+  }
+
+  var KIND = { paper: "full text", note: "research note", data: "data", page: "" };
+
+  function section(doc, want) {
+    for (var i = 0; i < (doc.h || []).length; i++) {
+      var head = fold(doc.h[i][1]);
+      for (var j = 0; j < want.length; j++) {
+        if (head.indexOf(want[j]) >= 0) return doc.h[i];
+      }
+    }
+    return null;
+  }
+
+  function render(q) {
+    var r = search(q);
+    out.innerHTML = "";
+    if (!terms(q).length) { status.textContent = ""; return; }
+    if (!r.rows.length) {
+      status.textContent = r.allCommon
+        ? "Every page here says that. Try a word that narrows it down."
+        : "Nothing on this site matches " + q + ".";
+      return;
+    }
+    status.textContent = r.rows.length + (r.rows.length === 1 ? " page" : " pages");
+    var frag = document.createDocumentFragment();
+    r.rows.slice(0, 60).forEach(function (row) {
+      var doc = row.doc, li = document.createElement("li");
+      var sec = section(doc, r.want);
+      var href = doc.u + (sec ? "#" + sec[0] : "");
+      li.innerHTML = '<a href="' + href + '"><b>' + mark(doc.t, r.want) + "</b></a>"
+        + (KIND[doc.k] ? ' <span class="kind">' + KIND[doc.k] + "</span>" : "")
+        + (sec ? '<br /><span class="in">in ' + mark(sec[1], r.want) + "</span>" : "")
+        + '<br /><span class="sum">' + mark(doc.s, r.want) + "</span>";
+      frag.appendChild(li);
+    });
+    out.appendChild(frag);
+    if (r.rows.length > 60) {
+      var more = document.createElement("li");
+      more.className = "more";
+      more.textContent = "and " + (r.rows.length - 60) + " more, less closely matched";
+      out.appendChild(more);
+    }
+  }
+
+  var timer = null;
+  function queue() {
+    clearTimeout(timer);
+    timer = setTimeout(function () {
+      var q = box.value;
+      load().then(function () { render(q); }).catch(function () {
+        status.textContent = "The index did not load. Reload the page to try again.";
+      });
+      var url = q ? "?q=" + encodeURIComponent(q) : location.pathname;
+      history.replaceState(null, "", url);
+    }, 120);
+  }
+
+  form.addEventListener("submit", function (e) { e.preventDefault(); queue(); });
+  box.addEventListener("input", queue);
+
+  var initial = new URLSearchParams(location.search).get("q");
+  if (initial) { box.value = initial; queue(); }
+  box.focus();
+})();
+</script>
+<footer class="site-foot">
+<p class="foot-lede"><b>meta-analysis.cz</b> collects meta-analyses in economics: the papers, the
+data behind them, and the code that produced them. It is maintained by <a href="/about/"><b>Tomas Havranek</b> and
+<b>Zuzana Irsova</b></a> at the Institute of Economic Studies, Charles University, Prague.</p>
+<p class="foot-nav"><a href="/">All meta-analyses</a> &middot;
+<a href="/papers/">Papers in full</a> &middot;
+<a href="/results/">Headline results</a> &middot;
+<a href="/datasets/">Datasets and the pooled table</a> &middot;
+<a href="/maive/">MAIVE</a> &middot;
+<a href="/guidelines/">Practitioner&#x27;s guide</a> &middot;
+<a href="/notes/">Research notes</a> &middot;
+<a href="https://www.easymeta.org/">EasyMeta web app</a></p>
+<p class="foot-who"><b>Tomas Havranek</b> &middot; <a href="https://www.tomashavranek.cz/">tomashavranek.cz</a> &middot; <a href="https://ies.fsv.cuni.cz/contacts/institute-members/78067720">IES FSV UK</a> &middot; <a href="https://orcid.org/0000-0002-3158-2539">ORCID</a> &middot; <a href="https://scholar.google.com/citations?user=BF0BvBkAAAAJ">Google Scholar</a> &middot; <a href="https://ideas.repec.org/f/pha418.html">RePEc</a> &middot; <a href="https://www.scopus.com/authid/detail.uri?authorId=24453189000">Scopus</a> &middot; <a href="https://cepr.org/about/people/tomas-havranek">CEPR</a> &middot; <a href="https://metrics.stanford.edu/people/tomas-havranek">Stanford METRICS</a></p>
+<p class="foot-who"><b>Zuzana Irsova</b> &middot; <a href="https://www.irsova.com/">irsova.com</a> &middot; <a href="https://ies.fsv.cuni.cz/contacts/institute-members/73504033">IES FSV UK</a> &middot; <a href="https://orcid.org/0000-0002-0753-8124">ORCID</a> &middot; <a href="https://scholar.google.com/citations?user=LaHrICUAAAAJ">Google Scholar</a> &middot; <a href="https://ideas.repec.org/e/pir23.html">RePEc</a> &middot; <a href="https://www.scopus.com/authid/detail.uri?authorId=37080793200">Scopus</a> &middot; <a href="https://cepr.org/about/people/zuzana-irsova">CEPR</a> &middot; <a href="https://metrics.stanford.edu/people/zuzana-irsova">Stanford METRICS</a></p>
+<p class="foot-cite"><b>How to cite this collection:</b> Havranek, T. and Z. Irsova (2026).
+meta-analysis.cz: harmonised estimate-level data from meta-analyses in economics. Zenodo.
+<a href="https://doi.org/10.5281/zenodo.21773678">https://doi.org/10.5281/zenodo.21773678</a>.
+Individual papers carry their own citation on their own page.</p>
+<p class="foot-licence"><b>Licence: CC BY 4.0.</b> Everything on this site is licensed under the
+<a href="https://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0
+International Licence</a>. That covers the papers, the datasets, their CSV and Parquet conversions,
+the pooled table, the codebooks, and the documentation. You may copy, redistribute, adapt, and reuse
+any of it for any purpose, including commercial use and training machine-learning models, as long
+as you give attribution to meta-analysis.cz. You do not need to ask.</p>
+<p class="foot-machine">For machines: <a href="/api/v1/datasets.json">datasets.json</a> &middot;
+<a href="/api/v1/datapackage.json">datapackage.json</a> &middot;
+<a href="/api/v1/croissant.json">croissant.json</a> &middot;
+<a href="/llms.txt">llms.txt</a> &middot; <a href="/llms-full.txt">llms-full.txt</a> &middot;
+<a href="/sitemap.xml">sitemap.xml</a> &middot; <a href="/LICENSE">LICENSE</a></p>
+</footer>
+</body>
+</html>
