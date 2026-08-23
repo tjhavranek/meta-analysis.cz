@@ -1,6 +1,7 @@
 {
  "api": "https://api.maive.eu",
  "dataset": {
+  "circularity_r2": 0.217,
   "estimates": 3127,
   "full_text": "https://meta-analysis.cz/excess_sensitivity/paper/",
   "project": "excess_sensitivity",

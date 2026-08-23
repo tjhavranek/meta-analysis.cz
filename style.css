@@ -1152,3 +1152,6 @@ table.catalogue li{ margin-bottom:var(--s2); font-size:var(--f-1); line-height:1
   max-width:var(--measure); }
 .entry img[src$="funnel.png"]{ max-width:min(34rem,100%); height:auto; display:block;
   margin:0 0 var(--s4); }
+.entry .funnel{ max-width:44rem; margin:0 0 var(--s3); }
+.entry .figcap{ font:400 var(--f-1)/1.6 var(--sans); color:var(--ink-soft);
+  max-width:var(--measure); margin:0 0 var(--s5); }

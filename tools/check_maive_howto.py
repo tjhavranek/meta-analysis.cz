@@ -82,7 +82,20 @@ def main():
         fail(bad, "the page is not what the sidecar renders -- it has been edited by hand, "
                   "or the builder changed without a rebuild. Run build_maive_howto.py")
 
-    # 5. The artefacts the page points at have to exist.
+    # 5. RTMA ran in the direction the page claims. favorPositive defaults to true, and on a
+    #    literature of negative effects that default returns an uncorrected mean with a
+    #    deceptively tight interval -- and the only signal is a warning. So: the run must carry
+    #    no warnings, and its affirmative count must be the one the page prints.
+    rtma = runs["weak_rtma"]
+    if rtma["request_parameters"].get("favorPositive") is not True:
+        fail(bad, "the page says favorPositive true for this literature; the run did not send it")
+    warn = rtma["response"].get("warnings") or []
+    if warn:
+        fail(bad, "the RTMA run carries warnings the page does not print: %r" % warn)
+    if not isinstance(rtma["response"].get("affirmativeCount"), int):
+        fail(bad, "the RTMA run reports no affirmative count, so its direction cannot be checked")
+
+    # 6. The artefacts the page points at have to exist.
     if not os.path.exists(FUNNEL) or os.path.getsize(FUNNEL) < 10000:
         fail(bad, "maive/how-to/funnel.png is missing or truncated")
     if doc["funnel"].get("async_first_stage_f") != strong:

@@ -57,6 +57,24 @@ SETTINGS = {"modelType": "MAIVE", "useLogFirstStage": True,
             "standardErrorTreatment": "clustered_cr2", "winsorize": 0}
 
 
+def circularity_r2(d):
+    """R-squared of log(SE^2) on log(N) -- how much of the standard error is just arithmetic.
+
+    MAIVE instruments the standard error with the sample size because the standard error can
+    be manipulated and the sample size cannot. When SE is a formula in N -- as it is for a
+    partial correlation, SE = sqrt((1-r^2)/(n-2)) -- that regression is an identity, the
+    first-stage F is a tautology, and the instrument purges nothing. The page tells the reader
+    to run this on their own data before calling anything, so it had better be computed here
+    rather than asserted."""
+    import numpy as np
+    x = np.log(d.n_obs.values.astype(float))
+    y = np.log(d.se.values.astype(float) ** 2)
+    X = np.column_stack([np.ones(len(d)), x])
+    beta, *_ = np.linalg.lstsq(X, y, rcond=None)
+    resid = y - X @ beta
+    return float(1 - (resid @ resid) / ((y - y.mean()) @ (y - y.mean())))
+
+
 def rows_for(subset):
     import pandas as pd
     d = pd.read_csv(TABLE, low_memory=False)
@@ -143,6 +161,7 @@ def refresh():
             "full_text": "https://meta-analysis.cz/excess_sensitivity/paper/",
             "estimates": len(full), "studies": int(dfull.study_id.nunique()),
             "simple_mean": round(float(dfull.effect.mean()), 4),
+            "circularity_r2": round(circularity_r2(dfull), 3),
             "subset": {"filter": "method_iv == 1 and is_panel == 1",
                        "estimates": len(sub), "studies": int(dsub.study_id.nunique()),
                        "simple_mean": round(float(dsub.effect.mean()), 4)},
@@ -254,13 +273,14 @@ income: %(k)s estimates from %(studies)s studies, the whole dataset, unmodified.
 </tbody>
 </table>
 
-<p><img src="/maive/how-to/funnel.png" alt="Funnel plot of the excess-sensitivity
-literature. Hollow points are the reported standard errors, filled points the instrumented
-ones; the MAIVE fit sits well below the simple mean." width="840" height="840" /></p>
+<div class="funnel">%(funnel_svg)s</div>
 
-<p>The hollow points are what the studies reported; the filled points are what MAIVE
-instruments them to. Publication bias costs roughly half the effect. The paper's own
-correction, which also removes aggregation bias, lands at 0.11.</p>
+<p class="figcap">Hollow points are the standard errors the studies reported; filled points
+are what MAIVE instruments them to. The axis stops at the 95th percentile of reported
+standard errors (%(se_cap)s) so the cloud is visible; estimation uses every one of the
+%(k)s estimates. Publication bias costs roughly half the effect &#8212; the paper's own
+correction, which also removes aggregation bias, lands at 0.11. The API's own plot is in
+<a href="/maive/how-to/funnel.png">funnel.png</a>.</p>
 
 <h2 id="read-three-numbers">Read three numbers before the estimate</h2>
 
@@ -283,15 +303,21 @@ dimensions &#8212; and the first stage collapses to <b>F = %(sub_F)s</b>.</p>
 
 <p>MAIVE still returns a number, %(sub_maive)s (%(sub_se)s). Do not quote it. Re-run with
 <code>"computeAndersonRubin": true</code> and report the interval instead:
-<b>[%(ar_lo)s, %(ar_hi)s]</b>, which is wide and contains zero. An Anderson&#8211;Rubin
-interval inverts a test rather than being built from the point estimate, so it need not
-contain that estimate.</p>
+<b>[%(ar_lo)s, %(ar_hi)s]</b>, which is wide and contains zero.</p>
 
 <p>Then run <a href="https://www.easymeta.org/">RTMA</a> at
-<code>/v1/run-rtma</code>, which does not depend on the instrument:
-<b>&#956; = %(mu)s</b>, 95%% CI [%(mu_lo)s, %(mu_hi)s]. Check its
-<code>diagnostics</code> before quoting it &#8212; here R-hat is %(rhat)s with
-%(divergences)s divergent transitions, so the fit is sound.</p>
+<code>/v1/run-rtma</code>, which does not depend on the instrument. It must be told which
+sign the literature selects for: <code>"favorPositive": true</code> where the literature
+hunts positive estimates, as here, <code>false</code> where it hunts negative ones. The
+default is <code>true</code>, so on a literature of negative effects the default quietly
+returns an uncorrected mean with a deceptively tight interval. The tell is a warning,
+<code>"Favored direction is opposite of the pooled estimate."</code> &#8212; if you see it,
+flip the setting and run again.</p>
+
+<p><b>&#956; = %(mu)s</b>, 95%% CI [%(mu_lo)s, %(mu_hi)s], with %(affirm)s of the
+%(sub_k)s estimates affirmative and no warnings. Check the diagnostics before quoting any of
+it: R-hat at or below 1.01, effective sample size above 400, no divergent transitions
+&#8212; here %(rhat)s, %(neff)s and %(divergences)s.</p>
 
 <h2 id="p-hacking">If you suspect p-hacking</h2>
 
@@ -310,19 +336,21 @@ whose standard error is honest but whose specification was hacked &#8212; droppe
 sample cuts, outcome switching. No method that reads only effect, standard error and sample
 size can.</p>
 
-<p>It also needs a standard error that is not simply arithmetic in the sample size. For
-partial correlation coefficients, SE = &#8730;((1&#8722;r&#178;)/(n&#8722;2)) by
-construction, so regressing log SE on log <i>n</i> returns a slope of &#8722;0.5 and an
-enormous F that is a tautology rather than a strong instrument. If that regression has an
-R&#178; near 1, MAIVE has nothing to instrument away.</p>
+<p>It also needs standard errors that are not pure arithmetic in the sample size. Before
+you call the API, run one line on your own data:</p>
+
+<pre class="code"><code>summary(lm(log(se^2) ~ log(n_obs)))$r.squared</code></pre>
+
+<p>Above about 0.8, the first-stage F is measuring your metric's algebra rather than the
+strength of the instrument. Partial correlation coefficients, where
+SE = &#8730;((1&#8722;r&#178;)/(n&#8722;2)) by construction, sit at R&#178; near 1 and can
+print an F in the millions. For the literature on this page it is %(r2)s.</p>
 
 <h2 id="newer-than-the-paper">This is newer than the paper</h2>
 
 <p>The <a href="/maive/paper/">Nature Communications paper</a> runs the first stage in
 levels. The app and the API are newer, and we recommend the log first stage used
-throughout this page &#8212; <code>"useLogFirstStage": true</code>. It is not a
-cosmetic difference: on some literatures the two forms give first-stage F statistics two
-orders of magnitude apart, and levels can call a strong instrument weak. Where this page
+throughout this page &#8212; <code>"useLogFirstStage": true</code>. Where this page
 and the paper disagree, the page is the more current advice.</p>
 
 <p class="provenance">Every number here came from the API on %(retrieved)s. The requests
@@ -340,11 +368,98 @@ that produced them, and the full responses, are in
 """
 
 
+def funnel_svg(doc):
+    """The funnel, drawn here from the sidecar rather than taken from the API.
+
+    The API's own plot is honest but sized for its app: on 3,127 estimates whose standard
+    errors span three orders of magnitude, the outliers own the axis and the cloud where the
+    evidence lives is a smudge along the top. The site's own convention (the correction figure
+    on /results/) is a hand-built SVG, so this is one too: reported SE against effect, hollow;
+    instrumented SE, filled; the axis capped at the 95th percentile of the reported SEs with
+    the cap stated in the caption. Estimation uses every row; only the picture is cropped."""
+    rows = doc["_rows"]
+    si = doc["runs"]["maive"]["response"]["seInstrumented"]
+    mean = doc["dataset"]["simple_mean"]
+    maive = doc["runs"]["maive"]["response"]["effectEstimate"]
+    ses = sorted(r["se"] for r in rows)
+    se_cap = ses[int(0.95 * len(ses))]
+    effs = sorted(r["effect"] for r in rows)
+    x_lo, x_hi = effs[int(0.005 * len(effs))], effs[int(0.995 * len(effs))]
+    x_lo, x_hi = min(x_lo, -0.05), max(x_hi, 0.05)
+
+    W, H, L, T, R, B = 720, 520, 64, 18, 16, 58
+    def X(v): return L + (v - x_lo) / (x_hi - x_lo) * (W - L - R)
+    def Y(se): return T + se / se_cap * (H - T - B)
+
+    shown = dropped = 0
+    hollow, filled = [], []
+    for r, s_i in zip(rows, si):
+        if r["se"] > se_cap and s_i > se_cap:
+            dropped += 1
+            continue
+        shown += 1
+        if x_lo <= r["effect"] <= x_hi:
+            if r["se"] <= se_cap:
+                hollow.append('<circle cx="%.1f" cy="%.1f" r="2.2"/>' % (X(r["effect"]), Y(r["se"])))
+            if s_i <= se_cap:
+                filled.append('<circle cx="%.1f" cy="%.1f" r="2.2"/>' % (X(r["effect"]), Y(s_i)))
+
+    xt = []
+    import math
+    step = round((x_hi - x_lo) / 4, 1) or 0.1
+    v = math.ceil(x_lo / step) * step
+    while v <= x_hi + 1e-9:
+        xt.append('<line x1="%.1f" y1="%d" x2="%.1f" y2="%d"/>' % (X(v), H - B, X(v), H - B + 5)
+                  + '<text x="%.1f" y="%d">%.1f</text>' % (X(v), H - B + 20, v))
+        v += step
+    yt = []
+    for frac in (0, 0.25, 0.5, 0.75, 1.0):
+        se = frac * se_cap
+        yt.append('<line x1="%d" y1="%.1f" x2="%d" y2="%.1f"/>' % (L - 5, Y(se), L, Y(se))
+                  + '<text x="%d" y="%.1f">%.2f</text>' % (L - 9, Y(se) + 4, se))
+
+    return (
+        '<svg viewBox="0 0 %(W)d %(H)d" width="100%%" role="img" aria-label="Funnel plot: '
+        'reported standard errors (hollow) and MAIVE-instrumented standard errors (filled) '
+        'against effect size. The instrumented points sit higher, and the mass of the '
+        'literature leans right of the corrected estimate.">'
+        '<style>.h circle{fill:none;stroke:#5a6672;stroke-width:.8}'
+        '.f circle{fill:#1d252c;opacity:.28}'
+        '.ax line{stroke:#848e99;stroke-width:1}'
+        '.ax text{font:11px ui-sans-serif,system-ui,sans-serif;fill:#5a6672;text-anchor:middle}'
+        '.ay text{text-anchor:end}'
+        '.ref{stroke-width:1.4;fill:none}'
+        '.lab{font:12px ui-sans-serif,system-ui,sans-serif;fill:#1d252c}</style>'
+        '<line class="ref" x1="%(xm).1f" y1="%(T)d" x2="%(xm).1f" y2="%(yb)d" '
+        'stroke="#848e99" stroke-dasharray="5 4"/>'
+        '<line class="ref" x1="%(xv).1f" y1="%(T)d" x2="%(xv).1f" y2="%(yb)d" stroke="#0b4a6e"/>'
+        '<g class="h">%(hollow)s</g><g class="f">%(filled)s</g>'
+        '<g class="ax">%(xt)s<g class="ay">%(yt)s</g>'
+        '<line x1="%(L)d" y1="%(yb)d" x2="%(xr)d" y2="%(yb)d"/>'
+        '<line x1="%(L)d" y1="%(T)d" x2="%(L)d" y2="%(yb)d"/></g>'
+        '<text class="lab" x="%(xm).1f" y="%(H)d" text-anchor="middle">Effect size</text>'
+        '<text class="lab" transform="rotate(-90)" x="%(ymid)d" y="14" '
+        'text-anchor="middle">Standard error</text>'
+        '<text class="lab" x="%(xv).1f" y="%(T2)d" fill="#0b4a6e" '
+        'text-anchor="%(anch)s">&#160;MAIVE %(mv).3f</text>'
+        '<text class="lab" x="%(xm2).1f" y="%(T2)d" fill="#5a6672" '
+        'text-anchor="%(anch2)s">mean %(mn).3f&#160;</text>'
+        % dict(W=W, H=H, T=T, L=L, yb=H - B, xr=W - R, T2=T + 12,
+               xm=X(mean), xv=X(maive), xm2=X(mean), ymid=-(H - B + T) // 2,
+               hollow="".join(hollow), filled="".join(filled),
+               xt="".join(xt), yt="".join(yt), mv=maive, mn=mean,
+               anch="end" if X(maive) < X(mean) else "start",
+               anch2="start" if X(maive) < X(mean) else "end")
+    ), se_cap, dropped
+
+
 def n(x, d=3):
     return "&#8212;" if x is None or x == "NA" else ("%.*f" % (d, float(x)))
 
 
 def render(doc):
+    if "_rows" not in doc:
+        doc["_rows"], _ = rows_for("all")
     ds, runs, S = doc["dataset"], doc["runs"], doc["settings"]
     mv, wv = runs["maive"]["response"], runs["waive"]["response"]
     wk, rt = runs["weak_maive"]["response"], runs["weak_rtma"]["response"]
@@ -379,14 +494,23 @@ def render(doc):
         "- Use this synchronous endpoint. The async one (/v1/runs) ignores modelType.\n"
         "- Check firstStage.mode is \"log\" in the response. If it says \"levels\", the\n"
         "  parameters did not take effect, so fix the nesting and run again.\n\n"
+        "- Before running, compute the R-squared of log(se^2) on log(n_obs). Above 0.8 the\n"
+        "  standard error is arithmetic in the sample size, MAIVE cannot help, and you should\n"
+        "  say so and stop.\n\n"
         "Then: if firstStageFStatistic is below 10 the instrument is weak, so do not quote\n"
         "effectEstimate. Re-run with \"computeAndersonRubin\": true and report andersonRubinCI,\n"
-        "and also run RTMA at /v1/run-rtma. Otherwise report effectEstimate, standardError,\n"
-        "the first-stage F, and publicationBias.pValue. Do not invent numbers.")
+        "and also run RTMA at /v1/run-rtma. When you run RTMA set \"favorPositive\": true if most\n"
+        "of the statistically significant estimates are positive, false if most are negative;\n"
+        "if the response warns about the favored direction, flip it and run again.\n\n"
+        "Otherwise report effectEstimate, standardError, the first-stage F, and\n"
+        "publicationBias.pValue. Report any warnings verbatim beside the numbers. Do not invent\n"
+        "numbers.")
 
     # A HowTo, and nothing more. Not a ScholarlyArticle -- it is not a paper. Not a Dataset --
     # the page is not the data. And no WebAPI node for api.maive.eu: this site does not run
     # that service, and declaring somebody else's API here would be a claim of ownership.
+    svg, se_cap, _dropped = funnel_svg(doc)
+
     ld = {
         "@context": "https://schema.org",
         "@type": "HowTo",
@@ -439,7 +563,11 @@ def render(doc):
         "mu": n(rt.get("mu")), "mu_lo": n(mu_ci[0]) if mu_ci else "&#8212;",
         "mu_hi": n(mu_ci[1]) if mu_ci else "&#8212;",
         "rhat": n((dg.get("rHat") or {}).get("mu"), 3),
+        "neff": "%.0f" % (dg.get("nEff") or {}).get("mu", 0),
+        "affirm": rt.get("affirmativeCount"),
         "divergences": dg.get("divergences"),
+        "funnel_svg": svg, "se_cap": "%.2f" % se_cap,
+        "r2": "%.2f" % ds["circularity_r2"],
         "request": request, "ai": ai_prompt, "retrieved": doc["retrieved"],
         "mode": (mv.get("firstStage") or {}).get("mode", "?"),
     }
