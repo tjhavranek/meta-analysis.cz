@@ -32,9 +32,34 @@ import sys as _sys, os as _os
 _sys.path.insert(0, _os.path.dirname(_os.path.abspath(__file__)))
 from _seo_shared import SELF_MANAGED   # one definition, shared with verify_seo.py
 
+# The catalogue node every Dataset points at, built once.
 # The catalogue, keyed by project id. Used for variableMeasured on each paper's Dataset node:
 # core_columns names the columns whose meaning has actually been verified, which is the honest
 # thing to advertise. Absent catalogue => no variableMeasured, never a wrong one.
+def _catalog_doi():
+    """The Zenodo concept DOI of the collection, read rather than typed."""
+    try:
+        import json as _j
+        _p = os.path.join(SITE, "api", "v1", "datasets.json")
+        return (_j.load(open(_p, encoding="utf-8")) or {}).get("concept_doi_url") or ""
+    except Exception:
+        return ""
+
+
+_CATALOG = None
+
+
+def _catalog_node():
+    global _CATALOG
+    if _CATALOG is None:
+        _CATALOG = {"@type": "DataCatalog", "name": "meta-analysis.cz",
+                    "url": BASE + "/datasets/"}
+        _doi = _catalog_doi()
+        if _doi:
+            _CATALOG["sameAs"] = _doi
+    return _CATALOG
+
+
 def _load_datasets():
     try:
         import json as _j
@@ -345,6 +370,11 @@ def build_jsonld(m):
               "license": "https://creativecommons.org/licenses/by/4.0/",
               "usageInfo": BASE + "/LICENSE",
               "isAccessibleForFree": True,
+              # Google Dataset Search recommends catalogue membership, and it is a plain fact
+              # about this dataset: it is one entry in the collection. The DOI goes on the
+              # CATALOGUE, which is what it identifies -- no individual dataset here has a DOI
+              # of its own, and putting the collection's on each one would say otherwise.
+              "includedInDataCatalog": _catalog_node(),
               "subjectOf": {"@id": page + "#paper"}}
         if dist:
             ds["distribution"] = dist

@@ -35,11 +35,29 @@ Writes redesign/_fragments/correction_figure.html, inlined by redesign/build_res
 import csv, json, math, os, statistics, sys
 
 BASE = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
-SRC = os.path.join(BASE, "tools_seo", "correction_ratios.json")
-DATA = os.path.join(BASE, "site", "data", "v1", "estimates_harmonised.csv")
-EST = os.path.join(BASE, "site", "estimates.csv")
-QUESTIONS = os.path.join(BASE, "redesign", "results_questions.json")
-FRAG = os.path.join(BASE, "redesign", "_fragments", "correction_figure.html")
+# Either layout: in development the inputs sit at the top level, in the published repo the
+# board's own files sit beside this script. Same rule as _resolve_site in the sibling
+# scripts -- prefer the development path when it exists, otherwise look here.
+HERE = os.path.dirname(os.path.abspath(__file__))
+
+
+ROOT = os.path.dirname(BASE)          # BASE is tools/, the site root is one further up
+
+
+def _either(dev, here):
+    return dev if os.path.exists(dev) else here
+
+
+SRC = _either(os.path.join(BASE, "tools_seo", "correction_ratios.json"),
+              os.path.join(HERE, "correction_ratios.json"))
+DATA = _either(os.path.join(BASE, "site", "data", "v1", "estimates_harmonised.csv"),
+               os.path.join(ROOT, "data", "v1", "estimates_harmonised.csv"))
+EST = _either(os.path.join(BASE, "site", "estimates.csv"),
+              os.path.join(ROOT, "estimates.csv"))
+QUESTIONS = _either(os.path.join(BASE, "redesign", "results_questions.json"),
+                    os.path.join(HERE, "results_questions.json"))
+FRAG = _either(os.path.join(BASE, "redesign", "_fragments", "correction_figure.html"),
+               os.path.join(HERE, "_fragments", "correction_figure.html"))
 
 TIER_ORDER = ["range", "horizon", "table", "subsample", "ratio"]
 TIER_WORDS = {

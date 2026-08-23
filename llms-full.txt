@@ -16339,6 +16339,21 @@ The version of record is published in the Journal of Economic Surveys .
 Four reference-list entries whose author names were garbled by the journal's typesetting
 have been restored to their correct bibliographic form; the text is otherwise as published.
 
+Update — three principles of meta-analysis, as of 2026:
+
+
+Correct for publication bias. RoBMA ,
+by Bartos, Maier, and Wagenmakers.
+
+Correct for p -hacking. MAIVE , by Irsova et al., and Mathur’s RTMA .
+
+Cluster by study. CR2 standard errors ,
+by Pustejovsky and Tipton.
+
+
+The guide is as published in 2024. These are the site’s current
+three, and they are the same three stated on the home page .
+
 The guide (PDF)  ·
 DOI  ·
 Guide home page
