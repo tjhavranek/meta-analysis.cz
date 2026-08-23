@@ -957,7 +957,9 @@ def matched_doi_link(rendered):
     hit = reference_dois().get(reference_key(rendered))
     if not hit:
         return ""
-    return (' <a class="ref-doi" rel="nofollow" href="https://doi.org/%s">%s</a>'
+    # No rel="nofollow": the DOI links this site already prints in running text carry none,
+    # and a citation is the one kind of outbound link that is meant to be followed.
+    return (' <a class="ref-doi" href="https://doi.org/%s">%s</a>'
             % (html.escape(hit["doi"], quote=True), html.escape(hit["doi"])))
 
 

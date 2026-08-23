@@ -96,6 +96,30 @@ def words(s):
     return set(re.sub(r"[^a-z0-9 ]", " ", (s or "").lower()).split())
 
 
+def _year_of(node):
+    try:
+        return str((node or {}).get("date-parts", [[None]])[0][0] or "")
+    except (IndexError, TypeError):
+        return ""
+
+
+def publication_years(record):
+    """Every year the record itself says it was published.
+
+    Crossref's `issued` is the earliest date it holds, which for a journal article is
+    usually the online-first date -- while the reference cites the year it appeared in
+    print. Testing `issued` alone refused 145 references whose year the record does state,
+    one field over: Becht, Franks, Mayer and Rossi is issued 2008 and published-print 2009,
+    and the reference says 2009 because that is when it was published.
+
+    This does not loosen the test. Every year here is one the record asserts about itself,
+    and it still has to appear in the reference exactly."""
+    years = {_year_of(record.get(f))
+             for f in ("issued", "published", "published-print", "published-online")}
+    years.add(_year_of((record.get("journal-issue") or {}).get("published-print")))
+    return {y for y in years if y}
+
+
 def agrees(record, reference):
     """(title overlap, year present, author surname present) of a record against a reference."""
     title = " ".join(record.get("title") or [""])
@@ -103,15 +127,10 @@ def agrees(record, reference):
     if not tw:
         return (0.0, False, False)
     overlap = len(tw & words(reference)) / len(tw)
-    year = ""
-    try:
-        year = str((record.get("issued") or {}).get("date-parts", [[None]])[0][0] or "")
-    except (IndexError, TypeError):
-        pass
     surnames = {(a.get("family") or "").lower()
                 for a in (record.get("author") or []) if a.get("family")}
     return (overlap,
-            bool(year) and year in reference,
+            any(y in reference for y in publication_years(record)),
             any(len(s) > 2 and s in reference.lower() for s in surnames))
 
 
@@ -123,8 +142,9 @@ def match(reference, state):
     """Run the three checks against one reference. Returns the record to store."""
     rec = {"project": reference["project"], "text": reference["text"], "doi": None, "why": ""}
     query = urllib.parse.quote(reference["text"][:420])
-    res = fetch("https://api.crossref.org/works?rows=3&select=DOI,title,author,issued,score"
-                "&query.bibliographic=" + query)
+    res = fetch("https://api.crossref.org/works?rows=3&query.bibliographic=" + query
+                + "&select=DOI,title,author,score,issued,published,"
+                  "published-print,published-online")
     items = ((res or {}).get("message") or {}).get("items") or []
     if not items:
         rec["why"] = "no candidate"
@@ -158,6 +178,7 @@ def match(reference, state):
     rec["why"] = "all three checks passed"
     rec["overlap"] = round(o3, 3)
     rec["title"] = " ".join(fresh.get("title") or [""])[:200]
+    rec["years"] = sorted(publication_years(fresh))
     return rec
 
 
@@ -167,7 +188,8 @@ def write(state, references):
     Keeping the refusals is the point of keeping them: without them a re-run re-asks Crossref
     about four thousand references to rediscover the same two thousand no-candidates."""
     json.dump(state, open(STATE, "w", encoding="utf-8"), indent=0, sort_keys=True)
-    entries = {k: {"doi": v["doi"], "title": v.get("title", ""), "text": v["text"]}
+    entries = {k: {"doi": v["doi"], "title": v.get("title", ""), "text": v["text"],
+                   "years": v.get("years", [])}
                for k, v in sorted(state.items()) if v.get("doi")}
     json.dump({
         "what": "DOIs matched to references that were printed without a link.",

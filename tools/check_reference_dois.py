@@ -27,8 +27,8 @@ import time
 
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 from build_paper_page import ROOT, reference_key  # noqa: E402
-from match_reference_dois import (agrees, fetch, strict, unlinked_references,  # noqa: E402
-                                  words)
+from match_reference_dois import (agrees, fetch, publication_years, strict,  # noqa: E402
+                                  unlinked_references, words)
 import re  # noqa: E402
 import urllib.parse  # noqa: E402
 
@@ -69,11 +69,12 @@ def offline(entries, on_site):
         if overlap < 0.70:
             bad.append((key, "title overlap %.2f is below the rule's 0.70" % overlap))
             continue
-        # year and authors are present once the file has been through --online
-        if "year" in e:
-            if not e["year"] or str(e["year"]) not in text:
-                bad.append((key, "the record's year %r is not in the reference" % e.get("year")))
-                continue
+        years = e.get("years") or []
+        if years and not any(str(y) in text for y in years):
+            bad.append((key, "none of the record's years %s is in the reference" % years))
+            continue
+        # authors are present once the file has been through --online
+        if "authors" in e:
             surnames = [s for s in (e.get("authors") or []) if len(s) > 2]
             if not any(s.lower() in text.lower() for s in surnames):
                 bad.append((key, "no author surname from the record is in the reference"))
@@ -94,16 +95,11 @@ def online(doc, entries):
                 dropped.append((key, "re-fetched record fails the rule "
                                      "(overlap %.2f, year %s, author %s)" % (o, y, a)))
             else:
-                year = ""
-                try:
-                    year = str((rec.get("issued") or {}).get("date-parts", [[None]])[0][0] or "")
-                except (IndexError, TypeError):
-                    pass
                 kept[key] = {
                     "doi": e["doi"],
                     "title": " ".join(rec.get("title") or [""])[:200],
                     "text": e["text"],
-                    "year": year,
+                    "years": sorted(publication_years(rec)),
                     "authors": sorted({(au.get("family") or "")
                                        for au in (rec.get("author") or []) if au.get("family")}),
                 }
