@@ -113,9 +113,8 @@ def build():
 \t\t\t<div class="entry">
 
 <p><b>{lede}</b>, as HTML rather than PDF: the whole text, the tables as tables, the
-mathematics as mathematics, the references as links. They read on a phone, they are
-searchable, and they can be quoted without a scanned column in the way. Each keeps its PDF
-and its link to the version of record.</p>
+mathematics as mathematics, the references as links. Each keeps its PDF and its link to the
+version of record.</p>
 
 <p class="caveat">Figures are reproduced wherever the artwork lifted cleanly off the page
 &#8212; {figs} so far. Where it did not, the caption stands on its own and the PDF has the
