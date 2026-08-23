@@ -379,9 +379,26 @@ class Builder:
             if stripped.startswith("|"):
                 flush()
                 rows = []
-                while i < len(lines) and lines[i].strip().startswith("|"):
-                    rows.append(lines[i].strip())
-                    i += 1
+                # A blank line between two rows is not the end of the table. Some transcripts
+                # space their rows out, and reading a blank line as a boundary turned one of
+                # beauty's tables into fifty-one tables of a single row each -- which a screen
+                # reader announces as fifty-one tables, and which is not what the paper prints.
+                # A table ends at the first line that is neither blank nor a row; the caption
+                # of the next table is such a line, so two tables still cannot merge.
+                while i < len(lines):
+                    if lines[i].strip().startswith("|"):
+                        rows.append(lines[i].strip())
+                        i += 1
+                        continue
+                    if lines[i].strip():
+                        break
+                    j = i
+                    while j < len(lines) and not lines[j].strip():
+                        j += 1
+                    if j < len(lines) and lines[j].strip().startswith("|"):
+                        i = j
+                        continue
+                    break
                 self.emit_table(rows, pending_table)
                 pending_table = None
                 just_closed_table = True

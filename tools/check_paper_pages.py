@@ -113,6 +113,21 @@ def check(project):
             fails.append("%s %s appears more than once on the page"
                          % (label.capitalize(), ", ".join(sorted(dupes))))
 
+    # -- every table on the page is one the paper prints
+    #    A table with no caption is a fragment, not a table. Blank lines between a table's
+    #    rows used to end it, so one of beauty's tables became fifty-one tables of a single
+    #    row and the page carried 397 where the paper prints 29. The counts are equal on
+    #    every paper once the rows are read as one table, which makes the equality a fact
+    #    about the conversion rather than a coincidence, and worth failing on.
+    #    Not every table carries a numbered caption: size prints a 103-row list of studies
+    #    under an appendix HEADING, which is a real table and not a fragment. What a fragment
+    #    is, is short -- the bug produced tables of a single row -- so that is what is tested.
+    fragments = [t for t in re.findall(r"<table.*?</table>", page, re.S)
+                 if "<caption" not in t and t.count("<tr") < 3]
+    if fragments:
+        fails.append("%d table(s) have no caption and fewer than three rows -- a table's rows "
+                     "have been split into separate tables" % len(fragments))
+
     # -- nothing broken
     if "<<" in page:
         fails.append("a placeholder marker survived into the page")
