@@ -1066,3 +1066,9 @@ table.catalogue li{ margin-bottom:var(--s2); font-size:var(--f-1); line-height:1
    wide. Breaking inside a long token is unwanted almost everywhere and wanted here. This sits
    in style.css rather than paper.css because the guide loads only this file. */
 .references > li, p code, li code, td code{ overflow-wrap:break-word; word-break:break-word; }
+
+/* A reference that names another paper published here in full. It is an annotation on the
+   citation, not part of it, so it is set smaller and quieter than the reference it follows
+   -- the reference is what the paper wrote, this is what the site can add to it. */
+.references .on-site{ font:400 .85em/1.4 var(--sans); white-space:nowrap; }
+.references .on-site::before{ content:"\2192\00a0"; }

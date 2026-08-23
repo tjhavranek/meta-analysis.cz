@@ -343,8 +343,10 @@ class Builder:
                         if int(key) != expected:
                             style = ' style="counter-reset:rf %d"' % (int(key) - 1)
                         self._ref_seq = int(key)
-                    self.w('<li id="%s%s"%s>%s</li>'
-                           % (idprefix, key, style, inline(body, self.refs_numbered)))
+                    rendered = inline(body, self.refs_numbered)
+                    if mode == "references":
+                        rendered += cites_on_site(rendered, self.project)
+                    self.w('<li id="%s%s"%s>%s</li>' % (idprefix, key, style, rendered))
                     i = j
                     continue
                 if mode == "references":
@@ -355,7 +357,8 @@ class Builder:
                     while j < len(lines) and lines[j].strip() and not lines[j].strip().startswith("#"):
                         body += " " + lines[j].strip()
                         j += 1
-                    self.w("<li>%s</li>" % inline(body, self.refs_numbered))
+                    rendered = inline(body, self.refs_numbered)
+                    self.w("<li>%s</li>" % (rendered + cites_on_site(rendered, self.project)))
                     i = j
                     continue
 
@@ -836,6 +839,51 @@ def pdf_href(project, meta):
     if not rel:
         return None
     return "/%s" % rel if project in documents() else "/%s/%s" % (project, rel)
+
+
+_DOI_INDEX = None
+
+
+def doi_index():
+    """Every paper this site carries in full, keyed by its own DOI.
+
+    A registered document shares the DOI of the paper it belongs to -- the MAIVE supplement
+    carries the MAIVE article's -- so the paper wins the key. The DOI identifies the article,
+    and a reference citing it is citing the article, not the supplement."""
+    global _DOI_INDEX
+    if _DOI_INDEX is None:
+        idx = {}
+        papers = json.load(open(os.path.join(ROOT, "tools", "papers.json"), encoding="utf-8"))
+        # documents first, papers second, so a paper overwrites a document on a shared DOI
+        for meta in list(documents().values()) + papers:
+            m = re.search(r"10\.\d{4,9}/\S+", meta.get("doi_or_publisher_url") or "")
+            if m:
+                idx[m.group(0).rstrip("/").lower()] = meta["project"]
+        _DOI_INDEX = idx
+    return _DOI_INDEX
+
+
+def cites_on_site(rendered, project):
+    """If a reference names another paper published here, link it to that paper.
+
+    Exact DOI only. Matching references by title would be a guess dressed as a fact, and the
+    edges this can prove are the ones worth drawing: 63 of them across the corpus."""
+    for doi in re.findall(r'href="https://doi\.org/([^"]+)"', rendered):
+        target = doi_index().get(doi.rstrip("/").lower())
+        if target and target != project:
+            meta = dict(documents().get(target) or {})
+            if not meta:
+                for p in json.load(open(os.path.join(ROOT, "tools", "papers.json"),
+                                        encoding="utf-8")):
+                    if p["project"] == target:
+                        meta = p
+                        break
+            if not meta:
+                continue
+            href = page_href(target, meta)
+            if os.path.exists(os.path.join(ROOT, href.strip("/"), "index.html")):
+                return (' <a class="on-site" href="%s">Full text on this site</a>' % href)
+    return ""
 
 
 def link_from_project_page(project):
