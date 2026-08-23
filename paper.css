@@ -55,6 +55,15 @@
 .entry ol.references > li::before{ content:counter(rf) "."; position:absolute; left:0; top:0;
      width:1.9rem; text-align:right; font:600 var(--f-1)/1.6 var(--sans); color:var(--accent); }
 .entry ol.references > li:target{ background:var(--tint); }
+/* A URL is one word to a line-breaking algorithm, and a reference list is where the long
+   ones live: the practitioner's guide carries an 80-character link that no viewport under
+   700px can fit, so the page scrolled sideways on a phone with nothing visibly wide on it.
+   Breaking inside a long token is the one place it is wanted. Both list types are named
+   because the hand-built guide marks its references up as a ul and the rules below, which
+   only ever said ol, never applied to it. */
+.entry ol.references > li, .entry ul.references > li,
+.entry p code, .entry li code, .entry td code{ overflow-wrap:break-word; word-break:break-word; }
+
 /* Author-year references: no number in the margin, hanging indent instead */
 .entry ol.references.unnumbered > li{ padding-left:0; text-indent:-1.6rem;
      margin-left:1.6rem; }

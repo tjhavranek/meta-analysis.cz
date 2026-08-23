@@ -365,9 +365,15 @@ table.catalogue li{ margin-bottom:var(--s2); font-size:var(--f-1); line-height:1
 #content table:not(.catalogue) td{ font:400 var(--f-1)/1.4 var(--sans); padding:var(--s2) var(--s3); }
 #content table:not(.catalogue) th{ font-weight:600; color:var(--ink); }
 @media (max-width:48rem){
-  /* scroll it, never stack it -- stacking a numeric table destroys the comparison */
+  /* scroll it, never stack it -- stacking a numeric table destroys the comparison.
+     The floor is capped at the container, because a min-width wider than the space
+     available forces the PAGE to scroll sideways rather than the table: /maive/paper/
+     prints a four-column table that fits a phone comfortably, and the 34rem floor pushed
+     the whole document 100px wide at 390px. Capping costs nothing for the tables the rule
+     exists for -- a genuinely wide table is wider than 100% on its own and still scrolls
+     inside its wrapper, which is what the floor was reaching for. */
   .table-scroll{ overflow-x:auto; }
-  #content table:not(.catalogue){ min-width:34rem; }
+  #content table:not(.catalogue){ min-width:min(34rem, 100%); }
 }
 
 /* /notes/ comes from its own generator and has a byline the site CSS never styled */
@@ -1053,3 +1059,10 @@ table.catalogue li{ margin-bottom:var(--s2); font-size:var(--f-1); line-height:1
   font:400 var(--f-1)/1.5 var(--sans); color:var(--ink-soft);
 }
 .companion a{ font-size:inherit; }
+
+/* A URL is one word to a line-breaking algorithm, and a reference list is where the long ones
+   live. The practitioner's guide carries an 80-character link, and no viewport under about
+   700px could fit it: the page scrolled sideways on a phone with nothing on it that looked
+   wide. Breaking inside a long token is unwanted almost everywhere and wanted here. This sits
+   in style.css rather than paper.css because the guide loads only this file. */
+.references > li, p code, li code, td code{ overflow-wrap:break-word; word-break:break-word; }
