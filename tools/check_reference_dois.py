@@ -20,9 +20,11 @@ the offline pass is what runs in the gate afterwards, on every build, forever.
     python tools/check_reference_dois.py             # the gate
     python tools/check_reference_dois.py --online    # re-fetch, re-verify, cull, enrich
 """
+import concurrent.futures
 import json
 import os
 import sys
+import threading
 import time
 
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
@@ -81,39 +83,78 @@ def offline(entries, on_site):
     return bad
 
 
+WORKERS = 6
+
+# Crossref answers every request with the rate it is willing to serve: x-rate-limit-limit 10,
+# x-rate-limit-interval 1s for the polite pool, which the mailto in the user agent buys. Six
+# workers with no pacing ran at about thirteen a second -- over a limit the server states
+# plainly, which is not a thing to do to somebody else's free service. The gate below holds
+# the whole pool to eight starts a second no matter how many workers are added.
+RATE = 8.0
+_gate = threading.Lock()
+_next_start = [0.0]
+
+
+def paced():
+    """Block until this thread may start a request."""
+    with _gate:
+        now = time.monotonic()
+        start = max(now, _next_start[0])
+        _next_start[0] = start + 1.0 / RATE
+    if start > now:
+        time.sleep(start - now)
+
+
+def recheck(key, entry):
+    """One entry, re-fetched and re-tested. Returns (key, kept-entry or None, why-dropped)."""
+    paced()
+    rec = ((fetch("https://api.crossref.org/works/"
+                  + urllib.parse.quote(entry["doi"])) or {}).get("message") or {})
+    if not rec or rec.get("DOI", "").lower() != entry["doi"].lower():
+        return (key, None, "the DOI did not resolve to a record")
+    o, y, a = agrees(rec, entry["text"])
+    if not strict(o, y, a):
+        return (key, None, "re-fetched record fails the rule "
+                           "(overlap %.2f, year %s, author %s)" % (o, y, a))
+    return (key, {
+        "doi": entry["doi"],
+        "title": " ".join(rec.get("title") or [""])[:200],
+        "text": entry["text"],
+        "years": sorted(publication_years(rec)),
+        "authors": sorted({(au.get("family") or "")
+                           for au in (rec.get("author") or []) if au.get("family")}),
+    }, None)
+
+
 def online(doc, entries):
-    """Re-fetch every DOI, re-run the rule, drop what fails, store what the rule needs."""
-    kept, dropped = {}, []
-    for n, (key, e) in enumerate(sorted(entries.items()), 1):
-        # An entry that already carries the record's authors has been through this pass. Two
-        # things follow: a re-run costs nothing, and a run cut short in the middle keeps what
-        # it verified. Three thousand fetches is an hour, and an hour is long enough to lose.
-        if "authors" in e:
-            kept[key] = e
-            continue
-        rec = ((fetch("https://api.crossref.org/works/"
-                      + urllib.parse.quote(e["doi"])) or {}).get("message") or {})
-        if not rec or rec.get("DOI", "").lower() != e["doi"].lower():
-            dropped.append((key, "the DOI did not resolve to a record"))
-        else:
-            o, y, a = agrees(rec, e["text"])
-            if not strict(o, y, a):
-                dropped.append((key, "re-fetched record fails the rule "
-                                     "(overlap %.2f, year %s, author %s)" % (o, y, a)))
+    """Re-fetch every DOI, re-run the rule, drop what fails, store what the rule needs.
+
+    Six requests in flight against three thousand DOIs, paced to eight a second. Serially,
+    at the one a second the matcher uses, this pass takes two and a half hours; this way it
+    takes about six minutes and still stays inside the rate Crossref advertises."""
+    # An entry that already carries the record's authors has been through this pass. Two
+    # things follow: a re-run costs nothing, and a run cut short in the middle keeps what it
+    # verified rather than starting three thousand fetches over.
+    kept = {k: v for k, v in entries.items() if "authors" in v}
+    todo = sorted((k, v) for k, v in entries.items() if "authors" not in v)
+    dropped = []
+    if kept:
+        print("  %d already verified by an earlier run" % len(kept))
+
+    with concurrent.futures.ThreadPoolExecutor(max_workers=WORKERS) as pool:
+        futures = [pool.submit(recheck, k, v) for k, v in todo]
+        for n, future in enumerate(concurrent.futures.as_completed(futures), 1):
+            key, entry, why = future.result()
+            if entry is None:
+                dropped.append((key, why))
             else:
-                kept[key] = {
-                    "doi": e["doi"],
-                    "title": " ".join(rec.get("title") or [""])[:200],
-                    "text": e["text"],
-                    "years": sorted(publication_years(rec)),
-                    "authors": sorted({(au.get("family") or "")
-                                       for au in (rec.get("author") or []) if au.get("family")}),
-                }
-        if n % 50 == 0:
-            flush(doc, dict(kept, **{k: v for k, v in entries.items()
-                                     if k not in kept and k not in dict(dropped)}))
-            print("  re-verified %d/%d, dropped %d" % (n, len(entries), len(dropped)), flush=True)
-        time.sleep(1.1)
+                kept[key] = entry
+            if n % 100 == 0:
+                undecided = {k: v for k, v in todo
+                             if k not in kept and k not in dict(dropped)}
+                flush(doc, dict(kept, **undecided))
+                print("  re-verified %d/%d, dropped %d" % (n, len(todo), len(dropped)),
+                      flush=True)
 
     flush(doc, kept)
     return dropped
