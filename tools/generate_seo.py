@@ -488,16 +488,43 @@ def inject(path, block):
     open(path, "wb").write(out.encode("utf-8"))
     return True
 
+def graft_commits():
+    """The commits a shallow clone was cut at.
+
+    In a shallow clone the oldest visible commit has no parent, so git reports it as ADDING
+    every file in the tree -- 1412 of them here. Read naively that says the whole site
+    changed on the day the clone was cut, and sitemap.xml then tells every crawler exactly
+    that: 379 files here were stamped with the graft date instead of the day they last
+    changed, and the only reason the live site was right is that CI clones the full history.
+    Dating a file from a graft commit is not dating it at all."""
+    try:
+        with open(os.path.join(SITE, ".git", "shallow"), encoding="utf-8") as fh:
+            return {line.strip() for line in fh if line.strip()}
+    except OSError:
+        return set()
+
+
+def previous_lastmods():
+    """What sitemap.xml already says. Better than a guess for a file this clone cannot date."""
+    try:
+        xml = open(os.path.join(SITE, "sitemap.xml"), encoding="utf-8").read()
+    except OSError:
+        return {}
+    return dict(re.findall(r"<loc>([^<]*)</loc>\s*<lastmod>([^<]*)</lastmod>", xml))
+
+
 def git_dates():
     dates = {}
+    grafts = graft_commits()
     try:
-        out = subprocess.run(["git", "-C", SITE, "log", "--format=%cs", "--name-only"],
+        out = subprocess.run(["git", "-C", SITE, "log", "--format=%cs %H", "--name-only"],
                              capture_output=True, text=True, encoding="utf-8").stdout
-        cur = None
+        cur, grafted = None, False
         for line in out.splitlines():
-            if re.fullmatch(r"\d{4}-\d{2}-\d{2}", line.strip()):
-                cur = line.strip()
-            elif line.strip() and cur and line.strip() not in dates:
+            head = re.fullmatch(r"(\d{4}-\d{2}-\d{2}) ([0-9a-f]{7,40})", line.strip())
+            if head:
+                cur, grafted = head.group(1), head.group(2) in grafts
+            elif line.strip() and cur and line.strip() not in dates and not grafted:
                 dates[line.strip()] = cur
         st = subprocess.run(["git", "-C", SITE, "status", "--porcelain"],
                             capture_output=True, text=True, encoding="utf-8").stdout
@@ -874,7 +901,19 @@ def main():
     open(os.path.join(SITE, "robots.txt"), "w", encoding="utf-8", newline="\n").write("\n".join(rb))
 
     gd = git_dates()
-    lastmod = lambda rel: gd.get(rel.replace(os.sep, "/"), TODAY)
+    previous = previous_lastmods()
+    undated = []
+
+    def lastmod(rel):
+        rel = rel.replace(os.sep, "/")
+        if rel in gd:
+            return gd[rel]
+        # Not datable from this clone's history. What the sitemap already says is the last
+        # answer a full clone gave, and is right until the file changes again; TODAY would
+        # be a claim that it changed today.
+        undated.append(rel)
+        return previous.get(BASE + "/" + rel.replace("index.html", "").rstrip("/") + "/",
+                            previous.get(BASE + "/" + rel, TODAY))
     urls = [(BASE + "/", lastmod("index.html"))]
     urls += [(f"{BASE}/{p}/", lastmod(f"{p}/index.html")) for p in projects]
     # Sub-pages of a project, one level down: /guidelines/guide/, /maive/paper/ and any
@@ -975,6 +1014,14 @@ def main():
           '<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">']
     sm += [f"  <url><loc>{loc}</loc><lastmod>{lm}</lastmod></url>" for loc, lm in urls]
     sm.append("</urlset>\n")
+    if undated:
+        # A note, not a warning: nothing on the site is wrong, this clone just cannot see far
+        # enough back to date these files. The workflow checks out with fetch-depth 0 for
+        # exactly this reason, so the sitemap the site actually serves is dated in full.
+        NOTES.append(
+            f"sitemap: {len(undated)} file(s) could not be dated from this clone's history "
+            f"(it is shallow) — their existing lastmod was kept. The dates in a sitemap "
+            f"generated here are only as complete as the clone; CI has the full history.")
     open(os.path.join(SITE, "sitemap.xml"), "w", encoding="utf-8", newline="\n").write("\n".join(sm))
     print(f"sitemap: {len(urls)} URLs")
 
