@@ -30,6 +30,7 @@ DATA = [("06_convert.py",   "convert the source archives"),
 
 # Order matters. See the module docstring: figure BEFORE page, generate_seo LAST.
 SITE_STEPS = [("notes/build_notes.py",              "notes"),
+              ("tools/build_papers_api.py",         "the papers manifest (reads the built pages)"),
               ("tools/board/build_zstat_figure.py", "the t-statistic figure"),
               ("tools/board/build_datasets_page.py","the datasets page (inlines the figure)"),
               ("tools/generate_seo.py",             "SEO metadata (must be last)")]

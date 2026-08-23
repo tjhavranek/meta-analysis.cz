@@ -74,6 +74,7 @@
 ## Resources
 
 - [Headline results for every paper](https://meta-analysis.cz/estimates.csv): one row per paper — the parameter, the value the paper headlines, the sample it rests on, and the verbatim sentence from the paper that each figure came from (CSV)
+- [Map of the corpus](https://meta-analysis.cz/api/v1/papers.json): one small record per paper -- title, authors, DOI, full-text URL, PDF, and the sections it contains with their anchors. Fetch this first and one page after, rather than the whole corpus
 - [Every paper in full text](https://meta-analysis.cz/llms-full.txt): the whole corpus in one file -- citation, links, abstract and the complete text of all 54 papers, for LLM ingestion
 - [Papers republished in full as HTML](https://meta-analysis.cz/papers/): the complete text of each paper -- body, tables, figures, equations and references -- readable and quotable without opening a PDF
 - [About the site and who maintains it](https://meta-analysis.cz/about/): affiliations and ORCIDs

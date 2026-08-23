@@ -66,6 +66,13 @@ jobs:
       - name: Verify the data layer
         run: python data_layer/09_verify.py
 
+      # Provenance of the headline results. estimates.csv says source_quote is the sentence
+      # each headline figure came from; now that every paper is HTML that claim is checkable,
+      # and it is checked. The ten it cannot confirm are recorded with a reason in
+      # tools/evidence_exceptions.json, so this fails on a NEW one rather than on the backlog.
+      - name: Verify the headline evidence
+        run: python tools/check_evidence.py
+
       # Did this push touch the data layer? 09_verify proves the tree is internally
       # CONSISTENT; it cannot prove the tree FOLLOWS FROM its canonical inputs. A tree can be
       # perfectly self-consistent and still stale, which is exactly what happened four times in

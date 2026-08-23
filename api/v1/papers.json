@@ -1,0 +1,5414 @@
+{
+ "name": "meta-analysis.cz papers",
+ "description": "One record per paper republished in full on meta-analysis.cz: what it is, where its full text and PDF are, and the sections it contains. Fetch this first and one page after, rather than the whole corpus.",
+ "license": "https://creativecommons.org/licenses/by/4.0/",
+ "full_corpus": "https://meta-analysis.cz/llms-full.txt",
+ "count": 55,
+ "papers": [
+  {
+   "project": "activism",
+   "title": "Does Shareholder Activism Create Value? A Meta-Analysis",
+   "authors": [
+    "Josef Bajzik",
+    "Tomas Havranek",
+    "Zuzana Irsova",
+    "Jiri Novak"
+   ],
+   "year": 2025,
+   "journal": "Corporate Governance: An International Review",
+   "doi": "https://doi.org/10.1111/corg.12637",
+   "publisher_url": null,
+   "full_text_url": "https://meta-analysis.cz/activism/paper/",
+   "project_url": "https://meta-analysis.cz/activism/",
+   "pdf_url": "https://meta-analysis.cz/activism/activism2.pdf",
+   "abstract": "We conduct a meta-analysis of 1,973 estimates of stock price responses to shareholder activism reported in 67 primary studies. We document publication bias in the literature. Corrected activism effects range from 0% to 1.5%. Effects are stronger when shareholder rights are better protected and when stock markets are smaller. Markets respond more positively to activism by individual investors, confrontational activism, and activism aimed at company sale. Estimates based on longer periods, simpler risk-adjustment approaches, more recent and longer datasets, as well as those published in more reputable journals tend to be larger.",
+   "sections": [
+    {
+     "level": 2,
+     "title": "1 | Introduction",
+     "anchor": "sec-1"
+    },
+    {
+     "level": 2,
+     "title": "2 | Data Sample",
+     "anchor": "sec-2"
+    },
+    {
+     "level": 2,
+     "title": "3 | Selective Reporting",
+     "anchor": "sec-3"
+    },
+    {
+     "level": 2,
+     "title": "4 | Activism Characteristics",
+     "anchor": "sec-4"
+    },
+    {
+     "level": 3,
+     "title": "4.1 | BMA",
+     "anchor": "sec-4-1"
+    },
+    {
+     "level": 2,
+     "title": "5 | Conclusions",
+     "anchor": "sec-5"
+    },
+    {
+     "level": 2,
+     "title": "Acknowledgments",
+     "anchor": "sec-acknowledgments"
+    },
+    {
+     "level": 2,
+     "title": "Conflicts of Interest",
+     "anchor": "sec-conflicts-of-interest"
+    },
+    {
+     "level": 2,
+     "title": "Data Availability Statement",
+     "anchor": "sec-data-availability-statement"
+    },
+    {
+     "level": 2,
+     "title": "REFERENCES",
+     "anchor": "sec-references"
+    },
+    {
+     "level": 2,
+     "title": "Supporting Information",
+     "anchor": "sec-supporting-information"
+    }
+   ],
+   "headline_question": "How much do stock prices move after shareholder activism?",
+   "headline": "0% to 1.5%",
+   "headline_url": "https://meta-analysis.cz/results/#activism",
+   "data": {
+    "parquet": "https://meta-analysis.cz/data/v1/activism/activism.parquet",
+    "csv": "https://meta-analysis.cz/data/v1/activism/activism.csv",
+    "codebook": "https://meta-analysis.cz/api/v1/codebooks/activism.json"
+   },
+   "codebook_url": "https://meta-analysis.cz/api/v1/codebooks/activism.json"
+  },
+  {
+   "project": "alphas",
+   "title": "What Matters in Explaining the Variation in Hedge Fund Performance?",
+   "authors": [
+    "Fan Yang",
+    "Tomas Havranek",
+    "Zuzana Irsova",
+    "Jiri Novak"
+   ],
+   "year": 2026,
+   "journal": null,
+   "doi": null,
+   "publisher_url": null,
+   "full_text_url": "https://meta-analysis.cz/alphas/paper/",
+   "project_url": "https://meta-analysis.cz/alphas/",
+   "pdf_url": "https://meta-analysis.cz/alphas/alphas.pdf",
+   "abstract": "We examine the ability of 34 variables to explain the variation in reported estimates of hedge fund performance. Using 1,019 estimates collected from 74 empirical studies, we identify 9 consistently relevant variables. We also quantify the impact of management and performance fees. Synthesizing this extensive empirical evidence, we show that when considering the fees and the variation in research designs, current performance implied by the best practice methodology is close to zero for all common hedge fund strategies. Our paper helps evaluate the robustness of prior propositions on hedge fund performance and reconcile some seemingly contradictory findings.",
+   "sections": [
+    {
+     "level": 2,
+     "title": "1. Introduction",
+     "anchor": "sec-1--introduction"
+    },
+    {
+     "level": 2,
+     "title": "2. Literature",
+     "anchor": "sec-2--literature"
+    },
+    {
+     "level": 2,
+     "title": "ENDNOTES",
+     "anchor": "sec-endnotes"
+    },
+    {
+     "level": 2,
+     "title": "3. Data",
+     "anchor": "sec-3"
+    },
+    {
+     "level": 2,
+     "title": "ENDNOTES",
+     "anchor": "sec-endnotes"
+    },
+    {
+     "level": 2,
+     "title": "4. Results",
+     "anchor": "sec-4--results"
+    },
+    {
+     "level": 3,
+     "title": "4.1. Heterogeneity Analysis",
+     "anchor": "sec-4-1--heterogeneity-analysis"
+    },
+    {
+     "level": 3,
+     "title": "4.2. Main Regression Results",
+     "anchor": "sec-4-2--main-regression-results"
+    },
+    {
+     "level": 3,
+     "title": "4.3. Sensitivity Analysis",
+     "anchor": "sec-4-3"
+    },
+    {
+     "level": 3,
+     "title": "4.4. Best Practice Implied Estimate",
+     "anchor": "sec-4-4"
+    },
+    {
+     "level": 2,
+     "title": "5. Conclusion",
+     "anchor": "sec-5--conclusion"
+    },
+    {
+     "level": 2,
+     "title": "Funding",
+     "anchor": "sec-funding"
+    },
+    {
+     "level": 2,
+     "title": "CRediT authorship contribution statement",
+     "anchor": "sec-credit-authorship-contribution-statement"
+    },
+    {
+     "level": 2,
+     "title": "Declaration of competing interest",
+     "anchor": "sec-declaration-of-competing-interest"
+    },
+    {
+     "level": 2,
+     "title": "Data availability",
+     "anchor": "sec-data-availability"
+    },
+    {
+     "level": 2,
+     "title": "Declaration of generative AI use",
+     "anchor": "sec-declaration-of-generative-ai-use"
+    },
+    {
+     "level": 2,
+     "title": "References",
+     "anchor": "sec-references"
+    },
+    {
+     "level": 2,
+     "title": "Appendix",
+     "anchor": "sec-appendix"
+    }
+   ],
+   "headline_question": "What explains the variation in hedge fund alpha?",
+   "headline": "9 of 34 study characteristics consistently explain it, above all whether alpha is measured gross or net of fees, a gap of 0.439 percentage points a month; expected alphas under best practice are close to zero for all common strategies",
+   "headline_url": "https://meta-analysis.cz/results/#alphas",
+   "data": {
+    "parquet": "https://meta-analysis.cz/data/v1/alphas/alphas.parquet",
+    "csv": "https://meta-analysis.cz/data/v1/alphas/alphas.csv",
+    "codebook": "https://meta-analysis.cz/api/v1/codebooks/alphas.json"
+   },
+   "codebook_url": "https://meta-analysis.cz/api/v1/codebooks/alphas.json"
+  },
+  {
+   "project": "armington",
+   "title": "Estimating the Armington Elasticity: The Importance of Study Design and Publication Bias",
+   "authors": [
+    "Josef Bajzik",
+    "Tomas Havranek",
+    "Zuzana Irsova",
+    "Jiri Schwarz"
+   ],
+   "year": 2020,
+   "journal": "Journal of International Economics",
+   "doi": "https://doi.org/10.1016/j.jinteco.2020.103383",
+   "publisher_url": null,
+   "full_text_url": "https://meta-analysis.cz/armington/paper/",
+   "project_url": "https://meta-analysis.cz/armington/",
+   "pdf_url": "https://meta-analysis.cz/armington/armington2.pdf",
+   "abstract": "A key parameter in international economics is the elasticity of substitution between domestic and foreign goods, also called the Armington elasticity. Yet estimates vary widely. We collect 3,524 reported estimates of the elasticity, construct 32 variables that reflect the context in which researchers obtain their estimates, and examine what drives the heterogeneity in the results. To account for model uncertainty, we employ Bayesian and frequentist model averaging. To correct for publication bias, we use newly developed non-linear techniques. Our main results are threefold. First, there is publication bias against small and statistically insignificant elasticities. Second, differences in results are best explained by differences in data: aggregation, frequency, size, and dimension. Third, the elasticity implied by the literature after accounting for both publication bias and study quality lies in the range 2.5--5.1 with a median of 3.8.",
+   "sections": [
+    {
+     "level": 2,
+     "title": "1. Introduction",
+     "anchor": "sec-1--introduction"
+    },
+    {
+     "level": 2,
+     "title": "2. Collecting the elasticity dataset",
+     "anchor": "sec-2--collecting-the-elasticity-dataset"
+    },
+    {
+     "level": 2,
+     "title": "3. Testing for publication Bias",
+     "anchor": "sec-3--testing-for-publication-bias"
+    },
+    {
+     "level": 2,
+     "title": "4. Why elasticities vary",
+     "anchor": "sec-4--why-elasticities-vary"
+    },
+    {
+     "level": 3,
+     "title": "4.1. Potential factors explaining heterogeneity",
+     "anchor": "sec-4-1--potential-factors-explaining-heterogeneity"
+    },
+    {
+     "level": 2,
+     "title": "ENDNOTES",
+     "anchor": "sec-endnotes"
+    },
+    {
+     "level": 3,
+     "title": "4.2. Estimation",
+     "anchor": "sec-4-2--estimation"
+    },
+    {
+     "level": 3,
+     "title": "4.3. Results",
+     "anchor": "sec-4-3--results"
+    },
+    {
+     "level": 3,
+     "title": "4.4. Implied elasticity",
+     "anchor": "sec-4-4--implied-elasticity"
+    },
+    {
+     "level": 2,
+     "title": "5. Concluding remarks",
+     "anchor": "sec-5--concluding-remarks"
+    },
+    {
+     "level": 2,
+     "title": "Appendix A",
+     "anchor": "sec-appendix-a"
+    },
+    {
+     "level": 2,
+     "title": "Appendix B. Supplementary data",
+     "anchor": "sec-appendix-b--supplementary-data"
+    },
+    {
+     "level": 2,
+     "title": "REFERENCES",
+     "anchor": "sec-references"
+    }
+   ],
+   "headline_question": "What is the Armington elasticity between domestic and foreign goods?",
+   "headline": "2.5-5.1, median 3.8",
+   "headline_url": "https://meta-analysis.cz/results/#armington",
+   "data": {
+    "parquet": "https://meta-analysis.cz/data/v1/armington/armington.parquet",
+    "csv": "https://meta-analysis.cz/data/v1/armington/armington.csv",
+    "codebook": "https://meta-analysis.cz/api/v1/codebooks/armington.json"
+   },
+   "codebook_url": "https://meta-analysis.cz/api/v1/codebooks/armington.json"
+  },
+  {
+   "project": "beauty",
+   "title": "Meta-Analysis of Field Studies on Beauty and Professional Success",
+   "authors": [
+    "Zuzana Irsova",
+    "Tomas Havranek",
+    "Kseniya Bortnikova",
+    "Frantisek Bartos"
+   ],
+   "year": 2025,
+   "journal": null,
+   "doi": null,
+   "publisher_url": null,
+   "full_text_url": "https://meta-analysis.cz/beauty/paper/",
+   "project_url": "https://meta-analysis.cz/beauty/",
+   "pdf_url": "https://meta-analysis.cz/beauty/beauty.pdf",
+   "abstract": "Common wisdom suggests that beauty helps in the labor market. We show that two factors combine to explain away most of the mean beauty premium reported in the literature. First, correcting for publication bias reduces the premium by at least a third. Second, controlling for cognitive ability renders the premium small (mean = 1.1%; 95% CrI = -0.8%, 3.0%) for all occupations except sex workers, where appearance is a direct input. The beauty premium is similar for earnings and productivity, a fact inconsistent with discrimination based on employer tastes for beauty. We find little evidence of attenuation bias that could offset publication and omitted-variable biases. To obtain these results we collect 1,159 estimates of the beauty premium in 67 studies and codify 35 aspects that reflect estimation context. We employ recently developed techniques to account for publication bias and model uncertainty.",
+   "sections": [
+    {
+     "level": 2,
+     "title": "1. Introduction",
+     "anchor": "sec-1"
+    },
+    {
+     "level": 2,
+     "title": "2. Results",
+     "anchor": "sec-2"
+    },
+    {
+     "level": 3,
+     "title": "2.1. Conceptual Background",
+     "anchor": "sec-2-1"
+    },
+    {
+     "level": 3,
+     "title": "2.2. Publication Bias",
+     "anchor": "sec-2-2"
+    },
+    {
+     "level": 3,
+     "title": "2.3. Heterogeneity",
+     "anchor": "sec-2-3"
+    },
+    {
+     "level": 2,
+     "title": "3. Discussion",
+     "anchor": "sec-3"
+    },
+    {
+     "level": 2,
+     "title": "Data Availability",
+     "anchor": "sec-data-availability"
+    },
+    {
+     "level": 2,
+     "title": "Code Availability",
+     "anchor": "sec-code-availability"
+    },
+    {
+     "level": 2,
+     "title": "Acknowledgments",
+     "anchor": "sec-acknowledgments"
+    },
+    {
+     "level": 2,
+     "title": "Author Contributions Statement",
+     "anchor": "sec-author-contributions-statement"
+    },
+    {
+     "level": 2,
+     "title": "Competing Interests Statement",
+     "anchor": "sec-competing-interests-statement"
+    },
+    {
+     "level": 2,
+     "title": "4. Methods",
+     "anchor": "sec-4"
+    },
+    {
+     "level": 3,
+     "title": "4.1. Data",
+     "anchor": "sec-4-1"
+    },
+    {
+     "level": 3,
+     "title": "4.2. Publication Bias",
+     "anchor": "sec-4-2"
+    },
+    {
+     "level": 3,
+     "title": "4.3. Heterogeneity",
+     "anchor": "sec-4-3"
+    },
+    {
+     "level": 2,
+     "title": "5. Tables and Figures",
+     "anchor": "sec-5"
+    },
+    {
+     "level": 2,
+     "title": "REFERENCES",
+     "anchor": "sec-references"
+    },
+    {
+     "level": 2,
+     "title": "Supplementary Information (for Online Publication)",
+     "anchor": "sec-supplementary-information-for-online-publication"
+    }
+   ],
+   "headline_question": "How large is the beauty premium in earnings?",
+   "headline": "1.1% (95% CrI -0.8% to 3.0%)",
+   "headline_url": "https://meta-analysis.cz/results/#beauty",
+   "data": {
+    "parquet": "https://meta-analysis.cz/data/v1/beauty/beauty.parquet",
+    "csv": "https://meta-analysis.cz/data/v1/beauty/beauty.csv",
+    "codebook": "https://meta-analysis.cz/api/v1/codebooks/beauty.json"
+   },
+   "codebook_url": "https://meta-analysis.cz/api/v1/codebooks/beauty.json"
+  },
+  {
+   "project": "bma",
+   "title": "Determinants of Horizontal Spillovers from FDI: Evidence from a Large Meta-Analysis",
+   "authors": [
+    "Zuzana Irsova",
+    "Tomas Havranek"
+   ],
+   "year": 2013,
+   "journal": "World Development",
+   "doi": "https://doi.org/10.1016/j.worlddev.2012.07.001",
+   "publisher_url": null,
+   "full_text_url": "https://meta-analysis.cz/bma/paper/",
+   "project_url": "https://meta-analysis.cz/bma/",
+   "pdf_url": "https://meta-analysis.cz/bma/bma2.pdf",
+   "abstract": "The voluminous empirical research on horizontal productivity spillovers from foreign investors to domestic firms has yielded mixed results. In this paper, we collect 1205 estimates of horizontal spillovers from the literature and examine which factors influence spillover magnitude. To identify the most important determinants of spillovers among 43 collected variables, we employ Bayesian model averaging. Our results suggest that horizontal spillovers are on average zero, but that their sign and magnitude depend systematically on the characteristics of the domestic economy and foreign investors. The most important determinants are the technology gap between domestic and foreign firms and the ownership structure in investment projects. Foreign investors who form joint ventures with domestic firms and who come from countries with a modest technology edge create the largest benefits for the domestic economy.",
+   "sections": [
+    {
+     "level": 2,
+     "title": "1. INTRODUCTION",
+     "anchor": "sec-1--introduction"
+    },
+    {
+     "level": 2,
+     "title": "2. DATA SET",
+     "anchor": "sec-2--data-set"
+    },
+    {
+     "level": 2,
+     "title": "3. WHY DO SPILLOVER ESTIMATES DIFFER?",
+     "anchor": "sec-3--why-do-spillover-estimates-differ"
+    },
+    {
+     "level": 2,
+     "title": "4. META-REGRESSION RESULTS",
+     "anchor": "sec-4--meta-regression-results"
+    },
+    {
+     "level": 2,
+     "title": "5. PUBLICATION BIAS",
+     "anchor": "sec-5--publication-bias"
+    },
+    {
+     "level": 2,
+     "title": "6. CONCLUDING REMARKS",
+     "anchor": "sec-6--concluding-remarks"
+    },
+    {
+     "level": 2,
+     "title": "REFERENCES",
+     "anchor": "sec-references"
+    },
+    {
+     "level": 2,
+     "title": "APPENDIX A:. STUDIES USED IN THE META-ANALYSIS",
+     "anchor": "sec-appendix-a--studies-used-in-the-meta-analysis"
+    },
+    {
+     "level": 2,
+     "title": "APPENDIX B:. DIAGNOSTICS OF BAYESIAN MODEL AVERAGING",
+     "anchor": "sec-appendix-b--diagnostics-of-bayesian-model-averaging"
+    },
+    {
+     "level": 2,
+     "title": "ENDNOTES",
+     "anchor": "sec-endnotes"
+    }
+   ],
+   "headline_question": "What determines the size of horizontal FDI spillovers?",
+   "headline": "spillovers are zero on average but depend systematically on the technology gap and ownership structure; encouraging joint ventures with investors holding a smaller technology edge raises the average spillover by about 0.3",
+   "headline_url": "https://meta-analysis.cz/results/#bma",
+   "data": {
+    "parquet": "https://meta-analysis.cz/data/v1/bma/bma.parquet",
+    "csv": "https://meta-analysis.cz/data/v1/bma/bma.csv",
+    "codebook": "https://meta-analysis.cz/api/v1/codebooks/bma.json"
+   },
+   "codebook_url": "https://meta-analysis.cz/api/v1/codebooks/bma.json"
+  },
+  {
+   "project": "border",
+   "title": "Do Borders Really Slash Trade? A Meta-Analysis",
+   "authors": [
+    "Tomas Havranek",
+    "Zuzana Irsova"
+   ],
+   "year": 2017,
+   "journal": "IMF Economic Review",
+   "doi": "https://doi.org/10.1057/s41308-016-0001-5",
+   "publisher_url": null,
+   "full_text_url": "https://meta-analysis.cz/border/paper/",
+   "project_url": "https://meta-analysis.cz/border/",
+   "pdf_url": "https://meta-analysis.cz/border/border2.pdf",
+   "abstract": "National borders reduce trade, but most estimates of the border effect seem puzzlingly large. We show that major methodological innovations of the last decade combine to shrink the border effect to a one-third reduction in international trade flows worldwide. For the computation we collect 1,271 estimates of the border effect reported in 61 studies, codify 32 aspects of study design that may influence the estimates, and use Bayesian model averaging to take into account model uncertainty in meta-analysis. Our results suggest that methods systematically affect the estimated border effects. Especially important is the level of aggregation, measurement of internal and external distance, control for multilateral resistance, and treatment of zero trade flows. We also find that the magnitude of the border effect is associated with country characteristics, such as size and income.",
+   "sections": [
+    {
+     "level": 2,
+     "title": "Introduction",
+     "anchor": "sec-introduction"
+    },
+    {
+     "level": 2,
+     "title": "The Border Effects Dataset",
+     "anchor": "sec-the-border-effects-dataset"
+    },
+    {
+     "level": 2,
+     "title": "Publication Bias",
+     "anchor": "sec-publication-bias"
+    },
+    {
+     "level": 2,
+     "title": "Method Heterogeneity",
+     "anchor": "sec-method-heterogeneity"
+    },
+    {
+     "level": 3,
+     "title": "Variables and Estimation",
+     "anchor": "sec-variables-and-estimation"
+    },
+    {
+     "level": 3,
+     "title": "Results",
+     "anchor": "sec-results"
+    },
+    {
+     "level": 2,
+     "title": "Country Heterogeneity",
+     "anchor": "sec-country-heterogeneity"
+    },
+    {
+     "level": 2,
+     "title": "Concluding Remarks",
+     "anchor": "sec-concluding-remarks"
+    },
+    {
+     "level": 2,
+     "title": "REFERENCES",
+     "anchor": "sec-references"
+    }
+   ],
+   "headline_question": "How much do national borders reduce international trade?",
+   "headline": "one-third reduction in trade",
+   "headline_url": "https://meta-analysis.cz/results/#border",
+   "data": {
+    "parquet": "https://meta-analysis.cz/data/v1/border/border.parquet",
+    "csv": "https://meta-analysis.cz/data/v1/border/border.csv",
+    "codebook": "https://meta-analysis.cz/api/v1/codebooks/border.json"
+   },
+   "codebook_url": "https://meta-analysis.cz/api/v1/codebooks/border.json"
+  },
+  {
+   "project": "class",
+   "title": "Publication Bias and Model Uncertainty in Measuring the Effect of Class Size on Achievement",
+   "authors": [
+    "Matej Opatrny",
+    "Tomas Havranek",
+    "Zuzana Irsova",
+    "Milan Scasny"
+   ],
+   "year": 2025,
+   "journal": "Journal of Labor Economics",
+   "doi": "https://doi.org/10.1086/737989",
+   "publisher_url": null,
+   "full_text_url": "https://meta-analysis.cz/class/paper/",
+   "project_url": "https://meta-analysis.cz/class/",
+   "pdf_url": "https://meta-analysis.cz/class/class.pdf",
+   "abstract": "Class size reduction mandates are routinely justified by studies reporting positive effects on student achievement. Yet other studies report no effects, and the literature as a whole awaits correction for potential publication bias. Moreover, if identification drives results systematically, the relevance of individual studies will vary. We build a sample of 2,819 estimates collected from 66 studies and for each estimate classify 42 factors that reflect estimation context. We employ nonlinear techniques for publication bias correction and model averaging techniques to address model uncertainty. The results are consistent with little publication bias. The implied class size effect is negligible for all identification approaches except Tennessee's Student/Teacher Achievement Ratio project and for all contexts except classes of fewer than 15 students.",
+   "sections": [
+    {
+     "level": 2,
+     "title": "1. Introduction",
+     "anchor": "sec-1"
+    },
+    {
+     "level": 2,
+     "title": "2. Data",
+     "anchor": "sec-2"
+    },
+    {
+     "level": 2,
+     "title": "3. Publication Bias",
+     "anchor": "sec-3"
+    },
+    {
+     "level": 2,
+     "title": "4. Model Uncertainty",
+     "anchor": "sec-4"
+    },
+    {
+     "level": 2,
+     "title": "5. Conclusion",
+     "anchor": "sec-5"
+    },
+    {
+     "level": 2,
+     "title": "References",
+     "anchor": "sec-references"
+    },
+    {
+     "level": 2,
+     "title": "Appendices",
+     "anchor": "sec-appendices"
+    },
+    {
+     "level": 2,
+     "title": "A. Details of Literature Search",
+     "anchor": "sec-a"
+    },
+    {
+     "level": 2,
+     "title": "ENDNOTES",
+     "anchor": "sec-endnotes"
+    }
+   ],
+   "headline_question": "Does smaller class size improve student achievement?",
+   "headline": "about 0",
+   "headline_url": "https://meta-analysis.cz/results/#class",
+   "data": {
+    "parquet": "https://meta-analysis.cz/data/v1/class/class.parquet",
+    "csv": "https://meta-analysis.cz/data/v1/class/class.csv",
+    "codebook": "https://meta-analysis.cz/api/v1/codebooks/class.json"
+   },
+   "codebook_url": "https://meta-analysis.cz/api/v1/codebooks/class.json"
+  },
+  {
+   "project": "climate",
+   "title": "Publication Bias in Measuring Anthropogenic Climate Change",
+   "authors": [
+    "Dominika Reckova",
+    "Zuzana Irsova"
+   ],
+   "year": 2015,
+   "journal": "Energy and Environment",
+   "doi": "https://doi.org/10.1260/0958-305x.26.5.853",
+   "publisher_url": null,
+   "full_text_url": "https://meta-analysis.cz/climate/paper/",
+   "project_url": "https://meta-analysis.cz/climate/",
+   "pdf_url": "https://meta-analysis.cz/climate/climate2.pdf",
+   "abstract": "We present a meta-regression analysis of the relation between the concentration of carbon dioxide in the atmosphere and changes in global temperature. The relation is captured by \"climate sensitivity,\" which measures the response to a doubling of carbon dioxide concentrations compared to pre-industrial levels. Estimates of climate sensitivity play a crucial role in evaluating the impacts of climate change and constitute one of the most important inputs into the computation of the social cost of carbon, which reflects the socially optimal value of a carbon tax. Climate sensitivity has been estimated by many researchers, but their results vary significantly. We collect 48 estimates from 16 studies and analyze the literature quantitatively. We find evidence for publication selection bias: researchers tend to report preferentially large estimates of climate sensitivity. Corrected for publication bias, the bulk of the literature is consistent with climate sensitivity lying between 1.4 and 2.3 degrees Celsius.",
+   "sections": [
+    {
+     "level": 2,
+     "title": "1. INTRODUCTION",
+     "anchor": "sec-1--introduction"
+    },
+    {
+     "level": 2,
+     "title": "2. CLIMATE SENSITIVITY AND PUBLICATION BIAS",
+     "anchor": "sec-2--climate-sensitivity-and-publication-bias"
+    },
+    {
+     "level": 2,
+     "title": "3. DATA",
+     "anchor": "sec-3--data"
+    },
+    {
+     "level": 2,
+     "title": "4. GRAPHICAL TESTS OF PUBLICATION BIAS",
+     "anchor": "sec-4--graphical-tests-of-publication-bias"
+    },
+    {
+     "level": 2,
+     "title": "5. DISCUSSION OF THE RESULTS",
+     "anchor": "sec-5--discussion-of-the-results"
+    },
+    {
+     "level": 2,
+     "title": "6. CONCLUSION",
+     "anchor": "sec-6--conclusion"
+    },
+    {
+     "level": 2,
+     "title": "REFERENCES",
+     "anchor": "sec-references"
+    }
+   ],
+   "headline_question": "What does the published literature imply about climate sensitivity?",
+   "headline": "1.4-2.3 degrees Celsius",
+   "headline_url": "https://meta-analysis.cz/results/#climate",
+   "data": {
+    "parquet": "https://meta-analysis.cz/data/v1/climate/climate.parquet",
+    "csv": "https://meta-analysis.cz/data/v1/climate/climate.csv",
+    "codebook": "https://meta-analysis.cz/api/v1/codebooks/climate.json"
+   },
+   "codebook_url": "https://meta-analysis.cz/api/v1/codebooks/climate.json"
+  },
+  {
+   "project": "competition",
+   "title": "Bank Competition and Financial Stability: Much Ado About Nothing?",
+   "authors": [
+    "Diana Zigraiova",
+    "Tomas Havranek"
+   ],
+   "year": 2016,
+   "journal": "Journal of Economic Surveys",
+   "doi": "https://doi.org/10.1111/joes.12131",
+   "publisher_url": null,
+   "full_text_url": "https://meta-analysis.cz/competition/paper/",
+   "project_url": "https://meta-analysis.cz/competition/",
+   "pdf_url": "https://meta-analysis.cz/competition/competition2.pdf",
+   "abstract": "The theoretical literature gives conflicting predictions on how bank competition should affect financial stability, and dozens of researchers have attempted to evaluate the relationship empirically. We collect 598 estimates of the competition-stability nexus reported in 31 studies and analyze the literature using meta-analysis methods. We control for 35 aspects of study design and employ Bayesian model averaging to tackle the resulting model uncertainty. Our findings suggest that the definition of financial stability and bank competition used by researchers influences their results in a systematic way. The choice of data, estimation methodology, and control variables also affects the reported coefficient. We find evidence for moderate publication bias. Taken together, the estimates reported in the literature suggest little interplay between competition and stability, even when corrected for publication bias and potential misspecifications.",
+   "sections": [
+    {
+     "level": 2,
+     "title": "1. Introduction",
+     "anchor": "sec-1--introduction"
+    },
+    {
+     "level": 2,
+     "title": "2. Estimating the Effect of Bank Competition on Financial Stability",
+     "anchor": "sec-2--estimating-the-effect-of-bank-competition-on-financial-stability"
+    },
+    {
+     "level": 2,
+     "title": "3. The Dataset of Competition-Stability Estimates",
+     "anchor": "sec-3--the-dataset-of-competition-stability-estimates"
+    },
+    {
+     "level": 2,
+     "title": "4. Testing for Publication Bias",
+     "anchor": "sec-4--testing-for-publication-bias"
+    },
+    {
+     "level": 2,
+     "title": "5. Why the Reported Coefficients Vary",
+     "anchor": "sec-5--why-the-reported-coefficients-vary"
+    },
+    {
+     "level": 3,
+     "title": "5.1 Variable Description and Methodology",
+     "anchor": "sec-5-1-variable-description-and-methodology"
+    },
+    {
+     "level": 3,
+     "title": "5.2 Results",
+     "anchor": "sec-5-2-results"
+    },
+    {
+     "level": 2,
+     "title": "6. Robustness Checks",
+     "anchor": "sec-6--robustness-checks"
+    },
+    {
+     "level": 2,
+     "title": "7. Concluding Remarks",
+     "anchor": "sec-7--concluding-remarks"
+    },
+    {
+     "level": 2,
+     "title": "Acknowledgements",
+     "anchor": "sec-acknowledgements"
+    },
+    {
+     "level": 2,
+     "title": "ENDNOTES",
+     "anchor": "sec-endnotes"
+    },
+    {
+     "level": 2,
+     "title": "References",
+     "anchor": "sec-references"
+    },
+    {
+     "level": 2,
+     "title": "Appendix",
+     "anchor": "sec-appendix"
+    },
+    {
+     "level": 3,
+     "title": "BMA Diagnostics",
+     "anchor": "sec-bma-diagnostics"
+    },
+    {
+     "level": 2,
+     "title": "Supporting Information",
+     "anchor": "sec-supporting-information"
+    }
+   ],
+   "headline_question": "Does bank competition threaten financial stability?",
+   "headline": "about 0",
+   "headline_url": "https://meta-analysis.cz/results/#competition",
+   "data": {
+    "parquet": "https://meta-analysis.cz/data/v1/competition/competition.parquet",
+    "csv": "https://meta-analysis.cz/data/v1/competition/competition.csv",
+    "codebook": "https://meta-analysis.cz/api/v1/codebooks/competition.json"
+   },
+   "codebook_url": "https://meta-analysis.cz/api/v1/codebooks/competition.json"
+  },
+  {
+   "project": "conventional_wisdom",
+   "title": "Conventional wisdom, meta-analysis, and research revision in economics",
+   "authors": [
+    "Sebastian Gechert",
+    "Bianka Mey",
+    "Matej Opatrny",
+    "Tomas Havranek",
+    "T. D. Stanley",
+    "Pedro R. D. Bom",
+    "Hristos Doucouliagos",
+    "Philipp Heimberger",
+    "Zuzana Irsova",
+    "Heiko J. Rachinger"
+   ],
+   "year": 2025,
+   "journal": "Journal of Economic Surveys",
+   "doi": "https://doi.org/10.1111/joes.12630",
+   "publisher_url": null,
+   "full_text_url": "https://meta-analysis.cz/conventional_wisdom/paper/",
+   "project_url": "https://meta-analysis.cz/conventional_wisdom/",
+   "pdf_url": "https://meta-analysis.cz/conventional_wisdom/conventional_wisdom.pdf",
+   "abstract": "Over the past several decades, meta-analysis has emerged as a widely accepted tool to understand economics research. Meta-analyses often challenge the established conventional wisdom of their respective fields. We systematically review a wide range of influential meta-analyses in economics and compare them to “conventional wisdom.” After correcting for observable biases, the empirical economic effects are typically much closer to zero and sometimes switch signs. Typically, the relative reduction in effect sizes is 45%–60%.",
+   "sections": [
+    {
+     "level": 2,
+     "title": "1. INTRODUCTION",
+     "anchor": "sec-1"
+    },
+    {
+     "level": 2,
+     "title": "2. PUBLICATION SELECTION BIAS: A RENAISSANCE",
+     "anchor": "sec-2"
+    },
+    {
+     "level": 2,
+     "title": "3. DATA COLLECTION",
+     "anchor": "sec-3"
+    },
+    {
+     "level": 2,
+     "title": "4. THE GROWING RELEVANCE OF META-ANALYSIS IN ECONOMICS",
+     "anchor": "sec-4"
+    },
+    {
+     "level": 2,
+     "title": "5. QUANTIFYING RELATIVE RESEARCH REVISION BY META-ANALYSIS",
+     "anchor": "sec-5"
+    },
+    {
+     "level": 2,
+     "title": "6. CONCLUSION",
+     "anchor": "sec-6"
+    },
+    {
+     "level": 2,
+     "title": "ACKNOWLEDGMENTS",
+     "anchor": "sec-acknowledgments"
+    },
+    {
+     "level": 2,
+     "title": "ORCID",
+     "anchor": "sec-orcid"
+    },
+    {
+     "level": 2,
+     "title": "ENDNOTES",
+     "anchor": "sec-endnotes"
+    },
+    {
+     "level": 2,
+     "title": "REFERENCES",
+     "anchor": "sec-references"
+    },
+    {
+     "level": 2,
+     "title": "SUPPORTING INFORMATION",
+     "anchor": "sec-supporting-information"
+    }
+   ],
+   "headline_question": "How far do corrected meta-analytic effects move from conventional wisdom?",
+   "headline": "corrected effects are typically 45-60% smaller, much closer to zero, and sometimes switch sign",
+   "headline_url": "https://meta-analysis.cz/results/#conventional_wisdom"
+  },
+  {
+   "project": "correlations",
+   "title": "Reducing the biases of the conventional meta-analysis of correlations",
+   "authors": [
+    "T. D. Stanley",
+    "Hristos Doucouliagos",
+    "Tomas Havranek"
+   ],
+   "year": 2025,
+   "journal": "Research Synthesis Methods",
+   "doi": "https://doi.org/10.1017/rsm.2024.5",
+   "publisher_url": null,
+   "full_text_url": "https://meta-analysis.cz/correlations/paper/",
+   "project_url": "https://meta-analysis.cz/correlations/",
+   "pdf_url": "https://meta-analysis.cz/correlations/correlations2.pdf",
+   "abstract": "Conventional meta-analyses (both fixed and random effects) of correlations are biased due to the correlation between the estimated correlation and its standard error. Simulations that are closely calibrated to match actual research conditions widely seen across correlational studies in psychology corroborate these biases and suggest two solutions: UWLS+3 and HS. UWLS+3 is a simple inverse-variance weighted average (the unrestricted weighted least squares) that adjusts the degrees of freedom and thereby reduces small-sample bias to scientific negligibility. UWLS+3 as well as the Hunter and Schmidt approach (HS) are less biased than conventional random-effects estimates of correlations and Fisher's z, whether or not there is publication selection bias. However, publication selection bias remains a ubiquitous source of bias and false positive findings. Despite the correlation between the estimated correlation and its standard error even in the absence of any selective reporting, the precision-effect test/precision-effect estimate with standard error (PET-PEESE) nearly eradicates publication selection bias. Surprisingly, PET-PEESE keeps the rate of false positives (i.e., type I errors) within their nominal levels under the typical conditions widely seen across psychological research whether there is publication selection bias, or not.",
+   "sections": [
+    {
+     "level": 2,
+     "title": "Highlights",
+     "anchor": "sec-highlights"
+    },
+    {
+     "level": 2,
+     "title": "1. Introduction",
+     "anchor": "sec-1--introduction"
+    },
+    {
+     "level": 2,
+     "title": "2. Correlation and its variances",
+     "anchor": "sec-2--correlation-and-its-variances"
+    },
+    {
+     "level": 2,
+     "title": "3. Meta-analysis of correlations",
+     "anchor": "sec-3--meta-analysis-of-correlations"
+    },
+    {
+     "level": 3,
+     "title": "3.1. The unrestricted weighted least squares (UWLS) weighted average",
+     "anchor": "sec-3-1--the-unrestricted-weighted-least-squares-uwls-weighted-average"
+    },
+    {
+     "level": 3,
+     "title": "3.2. The HS approach to the meta-analysis of correlations",
+     "anchor": "sec-3-2--the-hs-approach-to-the-meta-analysis-of-correlations"
+    },
+    {
+     "level": 3,
+     "title": "3.3. Fisher's z transformation",
+     "anchor": "sec-3-3--fishers-z-transformation"
+    },
+    {
+     "level": 3,
+     "title": "3.4. PET-PEESE model of publication selection bias",
+     "anchor": "sec-3-4--pet-peese-model-of-publication-selection-bias"
+    },
+    {
+     "level": 3,
+     "title": "3.5. An illustration",
+     "anchor": "sec-3-5--an-illustration"
+    },
+    {
+     "level": 2,
+     "title": "4. Simulations",
+     "anchor": "sec-4--simulations"
+    },
+    {
+     "level": 2,
+     "title": "5. Results and discussion",
+     "anchor": "sec-5--results-and-discussion"
+    },
+    {
+     "level": 2,
+     "title": "6. Conclusions",
+     "anchor": "sec-6--conclusions"
+    },
+    {
+     "level": 2,
+     "title": "COMPETING INTEREST STATEMENT",
+     "anchor": "sec-competing-interest-statement"
+    },
+    {
+     "level": 2,
+     "title": "DATA AVAILABILITY STATEMENT",
+     "anchor": "sec-data-availability-statement"
+    },
+    {
+     "level": 2,
+     "title": "SUPPLEMENTARY MATERIAL",
+     "anchor": "sec-supplementary-material"
+    },
+    {
+     "level": 2,
+     "title": "REFERENCES",
+     "anchor": "sec-references"
+    },
+    {
+     "level": 2,
+     "title": "ENDNOTES",
+     "anchor": "sec-endnotes"
+    }
+   ],
+   "headline_question": "Are meta-analyses of correlations biased?",
+   "headline": "conventional fixed- and random-effects estimators are biased; the UWLS+3 and Hunter-Schmidt estimators correct this",
+   "headline_url": "https://meta-analysis.cz/results/#correlations"
+  },
+  {
+   "project": "debate",
+   "title": "Does Multi-Agent Debate Improve AI Feedback on Research Papers?",
+   "authors": [
+    "Tomas Havranek",
+    "Zuzana Irsova"
+   ],
+   "year": 2026,
+   "journal": null,
+   "doi": null,
+   "publisher_url": "https://arxiv.org/abs/2607.14713",
+   "full_text_url": "https://meta-analysis.cz/debate/paper/",
+   "project_url": "https://meta-analysis.cz/debate/",
+   "pdf_url": "https://meta-analysis.cz/debate/debate.pdf",
+   "abstract": null,
+   "sections": [
+    {
+     "level": 2,
+     "title": "1 Introduction",
+     "anchor": "sec-1-introduction"
+    },
+    {
+     "level": 2,
+     "title": "2 Study design and feedback configurations",
+     "anchor": "sec-2-study-design-and-feedback-configurations"
+    },
+    {
+     "level": 3,
+     "title": "2.1 Design",
+     "anchor": "sec-2-1-design"
+    },
+    {
+     "level": 3,
+     "title": "2.2 A single pass",
+     "anchor": "sec-2-2-a-single-pass"
+    },
+    {
+     "level": 3,
+     "title": "2.3 Cross-model adversarial audit",
+     "anchor": "sec-2-3-cross-model-adversarial-audit"
+    },
+    {
+     "level": 3,
+     "title": "2.4 A multi-agent workshop",
+     "anchor": "sec-2-4-a-multi-agent-workshop"
+    },
+    {
+     "level": 3,
+     "title": "2.5 Deviations from the pre-analysis plan",
+     "anchor": "sec-2-5-deviations-from-the-pre-analysis-plan"
+    },
+    {
+     "level": 2,
+     "title": "3 Data and recruitment",
+     "anchor": "sec-3-data-and-recruitment"
+    },
+    {
+     "level": 2,
+     "title": "4 Results",
+     "anchor": "sec-4-results"
+    },
+    {
+     "level": 3,
+     "title": "4.1 Author rankings",
+     "anchor": "sec-4-1-author-rankings"
+    },
+    {
+     "level": 3,
+     "title": "4.2 The cost of a report",
+     "anchor": "sec-4-2-the-cost-of-a-report"
+    },
+    {
+     "level": 3,
+     "title": "4.3 Robustness",
+     "anchor": "sec-4-3-robustness"
+    },
+    {
+     "level": 3,
+     "title": "4.4 The AI reports and the human referee",
+     "anchor": "sec-4-4-the-ai-reports-and-the-human-referee"
+    },
+    {
+     "level": 3,
+     "title": "4.5 Author–machine concordance",
+     "anchor": "sec-4-5-authormachine-concordance"
+    },
+    {
+     "level": 2,
+     "title": "5 Discussion",
+     "anchor": "sec-5-discussion"
+    },
+    {
+     "level": 2,
+     "title": "6 Conclusion",
+     "anchor": "sec-6-conclusion"
+    },
+    {
+     "level": 2,
+     "title": "A The sample",
+     "anchor": "sec-a-the-sample"
+    },
+    {
+     "level": 2,
+     "title": "ENDNOTES",
+     "anchor": "sec-endnotes"
+    },
+    {
+     "level": 2,
+     "title": "REFERENCES",
+     "anchor": "sec-references"
+    }
+   ],
+   "headline_question": "Does multi-agent AI debate improve feedback on research papers?",
+   "headline": "probably not, at least for meta-analyses in economics; authors of 44 meta-analyses preferred a single frontier-model pass to two multi-agent debate tools",
+   "headline_url": "https://meta-analysis.cz/results/#debate"
+  },
+  {
+   "project": "discrate",
+   "title": "Individual Discount Rates: A Meta-Analysis of Experimental Evidence",
+   "authors": [
+    "Jindrich Matousek",
+    "Tomas Havranek",
+    "Zuzana Irsova"
+   ],
+   "year": 2022,
+   "journal": "Experimental Economics",
+   "doi": "https://doi.org/10.1007/s10683-021-09716-9",
+   "publisher_url": null,
+   "full_text_url": "https://meta-analysis.cz/discrate/paper/",
+   "project_url": "https://meta-analysis.cz/discrate/",
+   "pdf_url": "https://meta-analysis.cz/discrate/discrate2.pdf",
+   "abstract": "A key parameter estimated by lab and field experiments in economics is the individual discount rate---and the results vary widely. We examine the extent to which this variance can be attributed to observable differences in methods, subject pools, and potential publication bias. To address the model uncertainty inherent to such an exercise, we employ Bayesian and frequentist model averaging. We obtain evidence consistent with publication bias against unintuitive results. The corrected mean annual discount rate is 0.33. Our findings also suggest that discount rates are independent across domains: people tend to be less patient when health is at stake compared to money. Negative framing is associated with more patience. Finally, the results of lab and field experiments differ systematically, and it also matters whether the experiment relies on students or uses broader samples of the population.",
+   "sections": [
+    {
+     "level": 2,
+     "title": "1. Introduction",
+     "anchor": "sec-1"
+    },
+    {
+     "level": 2,
+     "title": "2. Estimating the discount rate",
+     "anchor": "sec-2"
+    },
+    {
+     "level": 2,
+     "title": "3. The dataset",
+     "anchor": "sec-3"
+    },
+    {
+     "level": 2,
+     "title": "4 Publication bias",
+     "anchor": "sec-4-publication-bias"
+    },
+    {
+     "level": 2,
+     "title": "ENDNOTES",
+     "anchor": "sec-endnotes"
+    },
+    {
+     "level": 2,
+     "title": "5 Heterogeneity",
+     "anchor": "sec-5-heterogeneity"
+    },
+    {
+     "level": 3,
+     "title": "5.1 Variables",
+     "anchor": "sec-5-1-variables"
+    },
+    {
+     "level": 3,
+     "title": "5.2 Results",
+     "anchor": "sec-5-2-results"
+    },
+    {
+     "level": 2,
+     "title": "ENDNOTES",
+     "anchor": "sec-endnotes"
+    },
+    {
+     "level": 3,
+     "title": "5.3 Robustness checks",
+     "anchor": "sec-5-3-robustness-checks"
+    },
+    {
+     "level": 2,
+     "title": "6 Concluding remarks",
+     "anchor": "sec-6-concluding-remarks"
+    },
+    {
+     "level": 2,
+     "title": "REFERENCES",
+     "anchor": "sec-references"
+    },
+    {
+     "level": 2,
+     "title": "ENDNOTES",
+     "anchor": "sec-endnotes"
+    }
+   ],
+   "headline_question": "How impatient are people in experiments?",
+   "headline": "33% per year",
+   "headline_url": "https://meta-analysis.cz/results/#discrate",
+   "data": {
+    "parquet": "https://meta-analysis.cz/data/v1/discrate/discrate.parquet",
+    "csv": "https://meta-analysis.cz/data/v1/discrate/discrate.csv",
+    "codebook": "https://meta-analysis.cz/api/v1/codebooks/discrate.json"
+   },
+   "codebook_url": "https://meta-analysis.cz/api/v1/codebooks/discrate.json"
+  },
+  {
+   "project": "dst",
+   "title": "Does Daylight Saving Save Electricity? A Meta-Analysis",
+   "authors": [
+    "Tomas Havranek",
+    "Dominik Herman",
+    "Zuzana Irsova"
+   ],
+   "year": 2018,
+   "journal": "Energy Journal",
+   "doi": "https://doi.org/10.5547/01956574.39.2.thav",
+   "publisher_url": null,
+   "full_text_url": "https://meta-analysis.cz/dst/paper/",
+   "project_url": "https://meta-analysis.cz/dst/",
+   "pdf_url": "https://meta-analysis.cz/dst/dst2.pdf",
+   "abstract": "The original rationale for adopting daylight saving time (DST) was energy savings. Modern research studies, however, question the magnitude and even direction of the effect of DST on electricity consumption. Representing the first meta-analysis in this literature, we collect 162 estimates from 44 studies and find that the mean reported estimate indicates slight electricity savings: 0.34% during the days when DST applies. The literature is not affected by publication bias, but the results vary systematically depending on the exact data and methodology applied. Using Bayesian model averaging we identify the most important factors driving the heterogeneity of the reported effects: data frequency, estimation technique (simulation vs. regression), and, importantly, the latitude of the country considered. Electricity savings are larger for countries farther away from the equator, while subtropical regions consume more energy because of DST.",
+   "sections": [
+    {
+     "level": 2,
+     "title": "1. INTRODUCTION",
+     "anchor": "sec-1"
+    },
+    {
+     "level": 2,
+     "title": "2. DATA",
+     "anchor": "sec-2"
+    },
+    {
+     "level": 2,
+     "title": "3. Publication Bias",
+     "anchor": "sec-3"
+    },
+    {
+     "level": 2,
+     "title": "4. HETEROGENEITY OF DST ESTIMATES",
+     "anchor": "sec-4"
+    },
+    {
+     "level": 3,
+     "title": "4.1. Sources of Heterogeneity",
+     "anchor": "sec-4-1"
+    },
+    {
+     "level": 3,
+     "title": "4.2. Estimation Framework",
+     "anchor": "sec-4-2"
+    },
+    {
+     "level": 3,
+     "title": "4.3. Results",
+     "anchor": "sec-4-3"
+    },
+    {
+     "level": 2,
+     "title": "5. ROBUSTNESS CHECKS",
+     "anchor": "sec-5"
+    },
+    {
+     "level": 2,
+     "title": "6. CONCLUSION",
+     "anchor": "sec-6"
+    },
+    {
+     "level": 2,
+     "title": "ACKNOWLEDGMENTS",
+     "anchor": "sec-acknowledgments"
+    },
+    {
+     "level": 2,
+     "title": "REFERENCES",
+     "anchor": "sec-references"
+    },
+    {
+     "level": 2,
+     "title": "ENDNOTES",
+     "anchor": "sec-endnotes"
+    }
+   ],
+   "headline_question": "Does daylight saving time reduce electricity use?",
+   "headline": "essentially zero, 0.01% savings, against a 0.34% simple average of reported estimates",
+   "headline_url": "https://meta-analysis.cz/results/#dst",
+   "data": {
+    "parquet": "https://meta-analysis.cz/data/v1/dst/dst.parquet",
+    "csv": "https://meta-analysis.cz/data/v1/dst/dst.csv",
+    "codebook": "https://meta-analysis.cz/api/v1/codebooks/dst.json"
+   },
+   "codebook_url": "https://meta-analysis.cz/api/v1/codebooks/dst.json"
+  },
+  {
+   "project": "education",
+   "title": "Tuition Fees and University Enrolment: A Meta‐Regression Analysis",
+   "authors": [
+    "Tomas Havranek",
+    "Zuzana Irsova",
+    "Olesia Zeynalova"
+   ],
+   "year": 2018,
+   "journal": "Oxford Bulletin of Economics and Statistics",
+   "doi": "https://doi.org/10.1111/obes.12240",
+   "publisher_url": null,
+   "full_text_url": "https://meta-analysis.cz/education/paper/",
+   "project_url": "https://meta-analysis.cz/education/",
+   "pdf_url": "https://meta-analysis.cz/education/education2.pdf",
+   "abstract": "One of the most frequently examined relationships in education economics is the impact of tuition increases on the demand for higher education. We provide a quantitative synthesis of 443 estimates of this effect reported in 43 studies. While large negative estimates dominate the literature, we show that researchers report positive and insignificant estimates less often than they should. After correcting for this publication bias, we find that the literature is consistent with the mean tuition-enrollment elasticity being close to zero. Nevertheless, we identify substantial heterogeneity among the reported effects: for example, male students and students at private schools react strongly to changes in tuition. The results are robust to controlling for model uncertainty using both Bayesian and frequentist methods of model averaging.",
+   "sections": [
+    {
+     "level": 2,
+     "title": "I. Introduction",
+     "anchor": "sec-i--introduction"
+    },
+    {
+     "level": 2,
+     "title": "II. The data set",
+     "anchor": "sec-ii--the-data-set"
+    },
+    {
+     "level": 2,
+     "title": "III. Publication bias",
+     "anchor": "sec-iii--publication-bias"
+    },
+    {
+     "level": 2,
+     "title": "ENDNOTES",
+     "anchor": "sec-endnotes"
+    },
+    {
+     "level": 2,
+     "title": "IV. Heterogeneity",
+     "anchor": "sec-iv--heterogeneity"
+    },
+    {
+     "level": 3,
+     "title": "Variables and estimation",
+     "anchor": "sec-variables-and-estimation"
+    },
+    {
+     "level": 3,
+     "title": "Results",
+     "anchor": "sec-results"
+    },
+    {
+     "level": 2,
+     "title": "ENDNOTES",
+     "anchor": "sec-endnotes"
+    },
+    {
+     "level": 3,
+     "title": "Publication bias and estimation characteristics",
+     "anchor": "sec-publication-bias-and-estimation-characteristics"
+    },
+    {
+     "level": 3,
+     "title": "Design of the demand function",
+     "anchor": "sec-design-of-the-demand-function"
+    },
+    {
+     "level": 3,
+     "title": "Data specifications",
+     "anchor": "sec-data-specifications"
+    },
+    {
+     "level": 3,
+     "title": "Publication characteristics",
+     "anchor": "sec-publication-characteristics"
+    },
+    {
+     "level": 2,
+     "title": "V. Extensions and robustness checks",
+     "anchor": "sec-v--extensions-and-robustness-checks"
+    },
+    {
+     "level": 2,
+     "title": "VI. Concluding remarks",
+     "anchor": "sec-vi--concluding-remarks"
+    },
+    {
+     "level": 2,
+     "title": "Appendix A.",
+     "anchor": "sec-appendix-a"
+    },
+    {
+     "level": 3,
+     "title": "Supplementary statistics and diagnostics of BMA",
+     "anchor": "sec-supplementary-statistics-and-diagnostics-of-bma"
+    },
+    {
+     "level": 2,
+     "title": "Appendix B",
+     "anchor": "sec-appendix-b"
+    },
+    {
+     "level": 3,
+     "title": "Diagnostics of BMA robustness checks",
+     "anchor": "sec-diagnostics-of-bma-robustness-checks"
+    },
+    {
+     "level": 2,
+     "title": "References",
+     "anchor": "sec-references"
+    }
+   ],
+   "headline_question": "Does raising tuition reduce university enrollment?",
+   "headline": "about 0",
+   "headline_url": "https://meta-analysis.cz/results/#education",
+   "data": {
+    "parquet": "https://meta-analysis.cz/data/v1/education/education.parquet",
+    "csv": "https://meta-analysis.cz/data/v1/education/education.csv",
+    "codebook": "https://meta-analysis.cz/api/v1/codebooks/education.json"
+   },
+   "codebook_url": "https://meta-analysis.cz/api/v1/codebooks/education.json"
+  },
+  {
+   "project": "eis",
+   "title": "Measuring Intertemporal Substitution: The Importance of Method Choices and Selective Reporting",
+   "authors": [
+    "Tomas Havranek"
+   ],
+   "year": 2015,
+   "journal": "Journal of the European Economic Association",
+   "doi": "https://doi.org/10.1111/jeea.12133",
+   "publisher_url": null,
+   "full_text_url": "https://meta-analysis.cz/eis/paper/",
+   "project_url": "https://meta-analysis.cz/eis/",
+   "pdf_url": "https://meta-analysis.cz/eis/eis2.pdf",
+   "abstract": "I examine 2,735 estimates of the elasticity of intertemporal substitution in consumption (EIS) reported in 169 published studies. The literature shows strong selective reporting: researchers discard negative and insignificant estimates too often, which pulls the mean estimate up by about 0.5. The reporting bias dwarfs the effects of methods, with the exception of the choice between micro and macro data. When I correct the mean for the bias, for macro estimates I get zero, even though the reported t-statistics are on average two. The corrected mean of micro estimates of the EIS for asset holders is around 0.3-0.4. Calibrations greater than 0.8 are inconsistent with the bulk of the empirical evidence.",
+   "sections": [
+    {
+     "level": 2,
+     "title": "1. Introduction",
+     "anchor": "sec-1"
+    },
+    {
+     "level": 2,
+     "title": "2. Data",
+     "anchor": "sec-2"
+    },
+    {
+     "level": 2,
+     "title": "3. Selective Reporting",
+     "anchor": "sec-3"
+    },
+    {
+     "level": 2,
+     "title": "4. Method Choices",
+     "anchor": "sec-4"
+    },
+    {
+     "level": 2,
+     "title": "5. Conclusion",
+     "anchor": "sec-5"
+    },
+    {
+     "level": 2,
+     "title": "Appendix: Supplementary Tables",
+     "anchor": "sec-appendix-supplementary-tables"
+    },
+    {
+     "level": 2,
+     "title": "References",
+     "anchor": "sec-references"
+    },
+    {
+     "level": 2,
+     "title": "Supporting Information",
+     "anchor": "sec-supporting-information"
+    },
+    {
+     "level": 2,
+     "title": "ENDNOTES",
+     "anchor": "sec-endnotes"
+    }
+   ],
+   "headline_question": "What is the elasticity of intertemporal substitution in consumption?",
+   "headline": "0.3-0.4",
+   "headline_url": "https://meta-analysis.cz/results/#eis",
+   "data": {
+    "parquet": "https://meta-analysis.cz/data/v1/eis/eis.parquet",
+    "csv": "https://meta-analysis.cz/data/v1/eis/eis.csv",
+    "codebook": "https://meta-analysis.cz/api/v1/codebooks/eis.json"
+   },
+   "codebook_url": "https://meta-analysis.cz/api/v1/codebooks/eis.json"
+  },
+  {
+   "project": "electricity",
+   "title": "Electricity demand has not become more price-responsive despite ninety years of technological change",
+   "authors": [
+    "Peter Kudela",
+    "Tomas Havranek",
+    "Zuzana Irsova",
+    "Anna Kudelova",
+    "Vojtech Sikl"
+   ],
+   "year": 2026,
+   "journal": null,
+   "doi": null,
+   "publisher_url": null,
+   "full_text_url": "https://meta-analysis.cz/electricity/paper/",
+   "project_url": "https://meta-analysis.cz/electricity/",
+   "pdf_url": "https://meta-analysis.cz/electricity/electricity.pdf",
+   "abstract": null,
+   "sections": [
+    {
+     "level": 2,
+     "title": "1. Introduction",
+     "anchor": "sec-1"
+    },
+    {
+     "level": 2,
+     "title": "2. Data",
+     "anchor": "sec-2"
+    },
+    {
+     "level": 2,
+     "title": "3. The identification ladder",
+     "anchor": "sec-3"
+    },
+    {
+     "level": 2,
+     "title": "4. Selective reporting along the ladder",
+     "anchor": "sec-4"
+    },
+    {
+     "level": 2,
+     "title": "5. Responsiveness grows with adjustment time",
+     "anchor": "sec-5"
+    },
+    {
+     "level": 2,
+     "title": "ENDNOTES",
+     "anchor": "sec-endnotes"
+    },
+    {
+     "level": 2,
+     "title": "6. The calendar-time test",
+     "anchor": "sec-6"
+    },
+    {
+     "level": 2,
+     "title": "7. What should planners and models use",
+     "anchor": "sec-7"
+    },
+    {
+     "level": 2,
+     "title": "ENDNOTES",
+     "anchor": "sec-endnotes"
+    },
+    {
+     "level": 2,
+     "title": "8. Conclusion",
+     "anchor": "sec-8"
+    },
+    {
+     "level": 2,
+     "title": "Use of artificial intelligence",
+     "anchor": "sec-use-of-artificial-intelligence"
+    },
+    {
+     "level": 2,
+     "title": "References",
+     "anchor": "sec-references"
+    }
+   ],
+   "headline_question": "How much does electricity demand fall when prices rise?",
+   "headline": "-0.16 short run, -0.38 long run",
+   "headline_url": "https://meta-analysis.cz/results/#electricity",
+   "data": {
+    "parquet": "https://meta-analysis.cz/data/v1/electricity/electricity.parquet",
+    "csv": "https://meta-analysis.cz/data/v1/electricity/electricity.csv",
+    "codebook": "https://meta-analysis.cz/api/v1/codebooks/electricity.json"
+   },
+   "codebook_url": "https://meta-analysis.cz/api/v1/codebooks/electricity.json"
+  },
+  {
+   "project": "esg",
+   "title": "Do Female Directors Raise ESG Ratings? A Meta-Analysis",
+   "authors": [
+    "Karolina Hozova",
+    "Tomas Havranek",
+    "Zuzana Irsova"
+   ],
+   "year": 2026,
+   "journal": null,
+   "doi": null,
+   "publisher_url": null,
+   "full_text_url": "https://meta-analysis.cz/esg/paper/",
+   "project_url": "https://meta-analysis.cz/esg/",
+   "pdf_url": "https://meta-analysis.cz/esg/esg.pdf",
+   "abstract": "Appointing more women to corporate boards is widely expected to also raise firms' environmental, social, and governance (ESG) performance. We provide the first meta-analysis of this relationship, drawing on 533 estimates from 106 studies that measure ESG performance with Bloomberg or LSEG ratings. The average reported effect of a one-percentage-point increase in board gender diversity is about 0.28 ESG points, but much of it does not survive scrutiny. Correcting for publication bias with a battery of linear and non-linear methods lowers the effect to between roughly 0.08 and 0.17 points. A best-practice estimate that also imposes sound study design puts it near 0.12 for most of the world, markedly higher for the Middle East, and essentially zero, if anything slightly negative, for the Southeast Asian markets that dominate the Asian evidence. The differences that remain across studies are systematic, driven mainly by geography and by the choice of estimation method rather than by the ESG-rating provider or the controls a study includes. Board gender diversity may be well worth pursuing on its own merits, but the evidence that it reliably raises ESG scores is weaker than the published record suggests.",
+   "sections": [
+    {
+     "level": 2,
+     "title": "1 Introduction",
+     "anchor": "sec-1-introduction"
+    },
+    {
+     "level": 2,
+     "title": "2 Data",
+     "anchor": "sec-2-data"
+    },
+    {
+     "level": 2,
+     "title": "3 Publication Bias",
+     "anchor": "sec-3-publication-bias"
+    },
+    {
+     "level": 2,
+     "title": "4 Heterogeneity",
+     "anchor": "sec-4-heterogeneity"
+    },
+    {
+     "level": 2,
+     "title": "5 Conclusion",
+     "anchor": "sec-5-conclusion"
+    },
+    {
+     "level": 2,
+     "title": "References",
+     "anchor": "sec-references"
+    },
+    {
+     "level": 2,
+     "title": "Appendix A",
+     "anchor": "sec-appendix-a"
+    },
+    {
+     "level": 2,
+     "title": "Appendix B",
+     "anchor": "sec-appendix-b"
+    },
+    {
+     "level": 2,
+     "title": "Appendix C",
+     "anchor": "sec-appendix-c"
+    },
+    {
+     "level": 2,
+     "title": "Appendix D",
+     "anchor": "sec-appendix-d"
+    },
+    {
+     "level": 2,
+     "title": "ENDNOTES",
+     "anchor": "sec-endnotes"
+    }
+   ],
+   "headline_question": "Does board gender diversity improve ESG performance?",
+   "headline": "about 0.12 ESG points per 1-pp diversity increase",
+   "headline_url": "https://meta-analysis.cz/results/#esg",
+   "data": {
+    "parquet": "https://meta-analysis.cz/data/v1/esg/esg.parquet",
+    "csv": "https://meta-analysis.cz/data/v1/esg/esg.csv",
+    "codebook": "https://meta-analysis.cz/api/v1/codebooks/esg.json"
+   },
+   "codebook_url": "https://meta-analysis.cz/api/v1/codebooks/esg.json"
+  },
+  {
+   "project": "euro",
+   "title": "Rose Effect and the Euro: Is the Magic Gone?",
+   "authors": [
+    "Tomas Havranek"
+   ],
+   "year": 2010,
+   "journal": "Review of World Economics",
+   "doi": "https://doi.org/10.1007/s10290-010-0050-1",
+   "publisher_url": null,
+   "full_text_url": "https://meta-analysis.cz/euro/paper/",
+   "project_url": "https://meta-analysis.cz/euro/",
+   "pdf_url": "https://meta-analysis.cz/euro/euro2.pdf",
+   "abstract": "This paper presents an updated meta-analysis of the effect of currency unions on trade, focusing on the euro area. Using meta-regression methods such as funnel asymmetry test, evidence for strong publication bias is found. The estimated underlying effect for currency unions other than eurozone reaches more than 60%. However, according to the meta-regression analysis, the euro's trade promoting effect corrected for publication bias is insignificant. The Rose effect literature shows signs of the economics research cycle: reported t-statistic is a quadratic concave function of publication year. Explanatory meta-regression (robust fixed effects and random effects), that can explain about 70% of the heterogeneity in the literature, suggests that results published by some authors might consistently differ from the mainstream output and that study outcomes are systematically dependent on study design (usage of panel data, short- or long-run nature, number of countries in the data set).",
+   "sections": [
+    {
+     "level": 2,
+     "title": "1. Introduction",
+     "anchor": "sec-1"
+    },
+    {
+     "level": 2,
+     "title": "2. Combining the literature",
+     "anchor": "sec-2"
+    },
+    {
+     "level": 2,
+     "title": "3. Publication bias and the true effect",
+     "anchor": "sec-3"
+    },
+    {
+     "level": 2,
+     "title": "4. Explanatory meta-regression",
+     "anchor": "sec-4"
+    },
+    {
+     "level": 2,
+     "title": "ENDNOTES",
+     "anchor": "sec-endnotes"
+    },
+    {
+     "level": 2,
+     "title": "5. Conclusion",
+     "anchor": "sec-5"
+    },
+    {
+     "level": 2,
+     "title": "Appendix",
+     "anchor": "sec-appendix"
+    },
+    {
+     "level": 2,
+     "title": "References",
+     "anchor": "sec-references"
+    }
+   ],
+   "headline_question": "Does adopting the euro increase trade between member countries?",
+   "headline": "no detectable effect once publication bias is corrected, while other currency unions raise trade by more than 60%",
+   "headline_url": "https://meta-analysis.cz/results/#euro",
+   "data": {
+    "parquet": "https://meta-analysis.cz/data/v1/euro/euro.parquet",
+    "csv": "https://meta-analysis.cz/data/v1/euro/euro.csv",
+    "codebook": "https://meta-analysis.cz/api/v1/codebooks/euro.json"
+   },
+   "codebook_url": "https://meta-analysis.cz/api/v1/codebooks/euro.json"
+  },
+  {
+   "project": "excess_sensitivity",
+   "title": "Do Consumers Really Follow a Rule of Thumb? Three Thousand Estimates from 144 Studies Say `Probably Not'",
+   "authors": [
+    "Tomas Havranek",
+    "Anna Sokolova"
+   ],
+   "year": 2020,
+   "journal": "Review of Economic Dynamics",
+   "doi": "https://doi.org/10.1016/j.red.2019.05.004",
+   "publisher_url": null,
+   "full_text_url": "https://meta-analysis.cz/excess_sensitivity/paper/",
+   "project_url": "https://meta-analysis.cz/excess_sensitivity/",
+   "pdf_url": "https://meta-analysis.cz/excess_sensitivity/excess_sensitivity_2.pdf",
+   "abstract": "We show that three factors combine to explain the mean magnitude of excess sensitivity reported in studies estimating the consumption response to income changes: the use of macro data, publication bias, and liquidity constraints. When micro data are used, publication bias is corrected for, and  households under examination have substantial liquidity, the literature implies little evidence of deviations from consumption smoothing. The result holds when we control for 45 additional variables reflecting the methods employed by researchers and use Bayesian model averaging to account for model uncertainty. The estimates produced by this literature are also systematically affected by the size of the change in income and the chosen measure of consumption.",
+   "sections": [
+    {
+     "level": 2,
+     "title": "1. Introduction",
+     "anchor": "sec-1--introduction"
+    },
+    {
+     "level": 2,
+     "title": "2. Data",
+     "anchor": "sec-2--data"
+    },
+    {
+     "level": 2,
+     "title": "3. Publication bias",
+     "anchor": "sec-3--publication-bias"
+    },
+    {
+     "level": 2,
+     "title": "4. Heterogeneity",
+     "anchor": "sec-4--heterogeneity"
+    },
+    {
+     "level": 2,
+     "title": "5. Marginal propensities to consume",
+     "anchor": "sec-5--marginal-propensities-to-consume"
+    },
+    {
+     "level": 2,
+     "title": "6. Conclusion",
+     "anchor": "sec-6--conclusion"
+    },
+    {
+     "level": 2,
+     "title": "Appendix A. Description of variables",
+     "anchor": "sec-appendix-a--description-of-variables"
+    },
+    {
+     "level": 2,
+     "title": "Appendix B. Bayesian model averaging evidence",
+     "anchor": "sec-appendix-b--bayesian-model-averaging-evidence"
+    },
+    {
+     "level": 2,
+     "title": "References",
+     "anchor": "sec-references"
+    },
+    {
+     "level": 2,
+     "title": "ENDNOTES",
+     "anchor": "sec-endnotes"
+    }
+   ],
+   "headline_question": "How large is the excess sensitivity of consumption to anticipated income?",
+   "headline": "0.11, against a mean reported estimate of 0.37",
+   "headline_url": "https://meta-analysis.cz/results/#excess_sensitivity",
+   "data": {
+    "parquet": "https://meta-analysis.cz/data/v1/excess_sensitivity/excess_sensitivity.parquet",
+    "csv": "https://meta-analysis.cz/data/v1/excess_sensitivity/excess_sensitivity.csv",
+    "codebook": "https://meta-analysis.cz/api/v1/codebooks/excess_sensitivity.json"
+   },
+   "codebook_url": "https://meta-analysis.cz/api/v1/codebooks/excess_sensitivity.json"
+  },
+  {
+   "project": "exercise",
+   "title": "Effect of Exercise on Cognition, Memory, and Executive Function: A Study-Level Meta-Meta-Analysis Across Populations and Exercise Categories",
+   "authors": [
+    "Frantisek Bartos",
+    "Martina Luskova",
+    "Kseniya Bortnikova",
+    "Karolina Hozova",
+    "Klara Kantova",
+    "Zuzana Irsova",
+    "Tomas Havranek"
+   ],
+   "year": 2025,
+   "journal": null,
+   "doi": "https://doi.org/10.31234/osf.io/qr8e2_v1",
+   "publisher_url": null,
+   "full_text_url": "https://meta-analysis.cz/exercise/paper/",
+   "project_url": "https://meta-analysis.cz/exercise/",
+   "pdf_url": "https://meta-analysis.cz/exercise/exercise.pdf",
+   "abstract": "Physical exercise is widely believed to enhance cognition, yet evidence from meta-analyses remains mixed. Here we compile a study-level dataset of 2,239 effect-size estimates from 215 meta-analyses of randomized controlled trials examining the effect of exercise on general cognition, memory, and executive functions. We find strong evidence of selective reporting and large between-study heterogeneity. Analyses adjusted for publication bias reveal average effects much smaller than commonly reported (general cognition: standardized mean difference, SMD = 0.227, 95% credible interval 0.116 to 0.330; memory: SMD = 0.027, 95% credible interval 0.000 to 0.227; executive functions: SMD = 0.012, 95% credible interval 0.000 to 0.147), along with wide prediction intervals spanning both negative and positive effects. Subgroup analyses identify specific population-intervention combinations with more consistent benefits. Overall, broad claims of generalized cognitive enhancement resulting from physical exercise appear premature; the evidence supports targeted, population- and intervention-specific recommendations.",
+   "sections": [
+    {
+     "level": 2,
+     "title": "Effect of Exercise on Cognition, Memory, and Executive Function: A Study-Level Meta-Meta-Analysis Across Populations and Exercise Categories",
+     "anchor": "sec-effect-of-exercise-on-cognition-memory-and-executive-function-a-study-level-meta-meta-analysis-across-populations-and-exercise-categories"
+    },
+    {
+     "level": 2,
+     "title": "Results",
+     "anchor": "sec-results"
+    },
+    {
+     "level": 3,
+     "title": "General cognition",
+     "anchor": "sec-general-cognition"
+    },
+    {
+     "level": 3,
+     "title": "Memory",
+     "anchor": "sec-memory"
+    },
+    {
+     "level": 3,
+     "title": "Executive function",
+     "anchor": "sec-executive-function"
+    },
+    {
+     "level": 3,
+     "title": "Meta-analysis-level re-analysis",
+     "anchor": "sec-meta-analysis-level-re-analysis"
+    },
+    {
+     "level": 2,
+     "title": "Discussion",
+     "anchor": "sec-discussion"
+    },
+    {
+     "level": 2,
+     "title": "Declarations",
+     "anchor": "sec-declarations"
+    },
+    {
+     "level": 3,
+     "title": "Data Availability Statement",
+     "anchor": "sec-data-availability-statement"
+    },
+    {
+     "level": 3,
+     "title": "Funding",
+     "anchor": "sec-funding"
+    },
+    {
+     "level": 3,
+     "title": "Acknowledgments",
+     "anchor": "sec-acknowledgments"
+    },
+    {
+     "level": 3,
+     "title": "Conflict of Interest",
+     "anchor": "sec-conflict-of-interest"
+    },
+    {
+     "level": 3,
+     "title": "Contributions",
+     "anchor": "sec-contributions"
+    },
+    {
+     "level": 2,
+     "title": "Methods",
+     "anchor": "sec-methods"
+    },
+    {
+     "level": 3,
+     "title": "Literature search, inclusion, and exclusion criteria",
+     "anchor": "sec-literature-search-inclusion-and-exclusion-criteria"
+    },
+    {
+     "level": 3,
+     "title": "Data extraction",
+     "anchor": "sec-data-extraction"
+    },
+    {
+     "level": 3,
+     "title": "Statistical analysis",
+     "anchor": "sec-statistical-analysis"
+    },
+    {
+     "level": 2,
+     "title": "REFERENCES",
+     "anchor": "sec-references"
+    },
+    {
+     "level": 2,
+     "title": "Online Supplements",
+     "anchor": "sec-online-supplements"
+    }
+   ],
+   "headline_question": "Does physical exercise improve cognition?",
+   "headline": "SMD 0.227 for general cognition, 0.027 for memory and 0.012 for executive function",
+   "headline_url": "https://meta-analysis.cz/results/#exercise"
+  },
+  {
+   "project": "fdi",
+   "title": "Foreign Capital and Domestic Productivity in the Czech Republic: A Meta-Regression Analysis",
+   "authors": [
+    "Mojmir Hampl",
+    "Tomas Havranek",
+    "Zuzana Irsova"
+   ],
+   "year": 2020,
+   "journal": "Applied Economics",
+   "doi": "https://doi.org/10.1080/00036846.2020.1726864",
+   "publisher_url": null,
+   "full_text_url": "https://meta-analysis.cz/fdi/paper/",
+   "project_url": "https://meta-analysis.cz/fdi/",
+   "pdf_url": "https://meta-analysis.cz/fdi/fdi2.pdf",
+   "abstract": "We provide a quantitative synthesis of the literature studying the effect of foreign direct investment (FDI) on the productivity of locally owned firms in the Czech Republic. To this end, we collect 332 previously reported estimates and use Bayesian model averaging to address model uncertainty. We find no evidence of publication bias, i.e., no sign of selective reporting of estimates that are statistically significant and show an intuitive sign. Our results suggest that more advanced techniques yield substantially larger positive effects (FDI spillovers). When placing more weight on estimates that solve important identification problems in the literature (such as using data on existing linkages between firms instead of approximations based on input-output tables), we find that, as of 2018, a 10-percentage-point increase in foreign presence is likely to lift the productivity of domestic firms by 11%. The effect is even larger for joint ventures, reaching 19%.",
+   "sections": [
+    {
+     "level": 2,
+     "title": "I. Introduction",
+     "anchor": "sec-i--introduction"
+    },
+    {
+     "level": 2,
+     "title": "II. Data",
+     "anchor": "sec-ii--data"
+    },
+    {
+     "level": 2,
+     "title": "III. Publication bias",
+     "anchor": "sec-iii--publication-bias"
+    },
+    {
+     "level": 2,
+     "title": "IV. Heterogeneity",
+     "anchor": "sec-iv--heterogeneity"
+    },
+    {
+     "level": 2,
+     "title": "V. Bayesian model averaging",
+     "anchor": "sec-v--bayesian-model-averaging"
+    },
+    {
+     "level": 2,
+     "title": "VI. Concluding remarks",
+     "anchor": "sec-vi--concluding-remarks"
+    },
+    {
+     "level": 2,
+     "title": "Acknowledgments",
+     "anchor": "sec-acknowledgments"
+    },
+    {
+     "level": 2,
+     "title": "Disclosure statement",
+     "anchor": "sec-disclosure-statement"
+    },
+    {
+     "level": 2,
+     "title": "Funding",
+     "anchor": "sec-funding"
+    },
+    {
+     "level": 2,
+     "title": "ENDNOTES",
+     "anchor": "sec-endnotes"
+    },
+    {
+     "level": 2,
+     "title": "REFERENCES",
+     "anchor": "sec-references"
+    }
+   ],
+   "headline_question": "How much do FDI spillovers boost Czech firm productivity?",
+   "headline": "+11% productivity per 10-percentage-point rise in foreign presence",
+   "headline_url": "https://meta-analysis.cz/results/#fdi",
+   "data": {
+    "parquet": "https://meta-analysis.cz/data/v1/fdi/fdi.parquet",
+    "csv": "https://meta-analysis.cz/data/v1/fdi/fdi.csv",
+    "codebook": "https://meta-analysis.cz/api/v1/codebooks/fdi.json"
+   },
+   "codebook_url": "https://meta-analysis.cz/api/v1/codebooks/fdi.json"
+  },
+  {
+   "project": "finance_growth",
+   "title": "Financial Development and Economic Growth: A Meta-Analysis",
+   "authors": [
+    "Petra Valickova",
+    "Tomas Havranek",
+    "Roman Horvath"
+   ],
+   "year": 2015,
+   "journal": "Journal of Economic Surveys",
+   "doi": "https://doi.org/10.1111/joes.12068",
+   "publisher_url": null,
+   "full_text_url": "https://meta-analysis.cz/finance_growth/paper/",
+   "project_url": "https://meta-analysis.cz/finance_growth/",
+   "pdf_url": "https://meta-analysis.cz/finance_growth/finance_growth2.pdf",
+   "abstract": "We analyze 1334 estimates from 67 studies that examine the effect of financial development on economic growth. Taken together, the studies imply a positive and statistically significant effect, but the individual estimates vary widely. We find that both research design and heterogeneity in the underlying effect play a role in explaining the differences in results. Studies that do not address endogeneity tend to overstate the effect of finance on growth. While the effect seems to be weaker in poor countries, the effect decreases worldwide after the 1980s. Our results also suggest that stock markets support faster economic growth than other financial intermediaries. We find little evidence of publication bias in the literature.",
+   "sections": [
+    {
+     "level": 2,
+     "title": "1. Introduction",
+     "anchor": "sec-1--introduction"
+    },
+    {
+     "level": 2,
+     "title": "2. Measuring Financial Development",
+     "anchor": "sec-2--measuring-financial-development"
+    },
+    {
+     "level": 2,
+     "title": "3. The Data Set of the Effects of Finance on Growth",
+     "anchor": "sec-3--the-data-set-of-the-effects-of-finance-on-growth"
+    },
+    {
+     "level": 2,
+     "title": "4. Publication Bias",
+     "anchor": "sec-4--publication-bias"
+    },
+    {
+     "level": 2,
+     "title": "5. Multivariate Meta-Regression",
+     "anchor": "sec-5--multivariate-meta-regression"
+    },
+    {
+     "level": 2,
+     "title": "6. Conclusions",
+     "anchor": "sec-6--conclusions"
+    },
+    {
+     "level": 2,
+     "title": "Acknowledgements",
+     "anchor": "sec-acknowledgements"
+    },
+    {
+     "level": 2,
+     "title": "ENDNOTES",
+     "anchor": "sec-endnotes"
+    },
+    {
+     "level": 2,
+     "title": "REFERENCES",
+     "anchor": "sec-references"
+    }
+   ],
+   "headline_question": "Does financial development boost economic growth?",
+   "headline": "positive but widely varying; studies ignoring endogeneity overstate it, and the effect weakens after the 1980s and in poorer countries",
+   "headline_url": "https://meta-analysis.cz/results/#finance_growth",
+   "data": {
+    "parquet": "https://meta-analysis.cz/data/v1/finance_growth/finance_growth.parquet",
+    "csv": "https://meta-analysis.cz/data/v1/finance_growth/finance_growth.csv",
+    "codebook": "https://meta-analysis.cz/api/v1/codebooks/finance_growth.json"
+   },
+   "codebook_url": "https://meta-analysis.cz/api/v1/codebooks/finance_growth.json"
+  },
+  {
+   "project": "forward",
+   "title": "How Puzzling Is the Forward Premium Puzzle? A Meta-Analysis",
+   "authors": [
+    "Diana Zigraiova",
+    "Tomas Havranek",
+    "Zuzana Irsova",
+    "Jiri Novak"
+   ],
+   "year": 2021,
+   "journal": "European Economic Review",
+   "doi": "https://doi.org/10.1016/j.euroecorev.2021.103714",
+   "publisher_url": null,
+   "full_text_url": "https://meta-analysis.cz/forward/paper/",
+   "project_url": "https://meta-analysis.cz/forward/",
+   "pdf_url": "https://meta-analysis.cz/forward/forward2.pdf",
+   "abstract": "A key theoretical prediction in financial economics is that under risk neutrality and rational expectations a currency's forward rates should form unbiased predictors of future spot rates. Yet scores of empirical studies report negative slope coefficients from regressions of spot rates on forward rates, which is inconsistent with the forward rate unbiasedness hypothesis. We collect 3,643 estimates from 91 research articles and using recently developed techniques investigate the effect of publication and misspecification biases on the reported results. Correcting for these biases we estimate the slope coefficients of 0.31 and 0.98 for developed and emerging currencies respectively, which implies that empirical evidence is in line with the theoretical prediction for emerging economies and less puzzling than commonly thought for developed economies. Our results also suggest that the coefficients are systematically influenced by the choice of data, numeraire currencies, and estimation methods.",
+   "sections": [
+    {
+     "level": 2,
+     "title": "1. Introduction",
+     "anchor": "sec-1"
+    },
+    {
+     "level": 2,
+     "title": "2. Testing forward rate unbiasedness",
+     "anchor": "sec-2"
+    },
+    {
+     "level": 2,
+     "title": "3. Data",
+     "anchor": "sec-3"
+    },
+    {
+     "level": 2,
+     "title": "4. Publication bias",
+     "anchor": "sec-4"
+    },
+    {
+     "level": 2,
+     "title": "5. Heterogeneity",
+     "anchor": "sec-5"
+    },
+    {
+     "level": 3,
+     "title": "5.1. Variables",
+     "anchor": "sec-5-1"
+    },
+    {
+     "level": 3,
+     "title": "5.2. Methodology",
+     "anchor": "sec-5-2--methodology"
+    },
+    {
+     "level": 3,
+     "title": "5.3. Results",
+     "anchor": "sec-5-3--results"
+    },
+    {
+     "level": 3,
+     "title": "5.4. Implied estimates",
+     "anchor": "sec-5-4--implied-estimates"
+    },
+    {
+     "level": 2,
+     "title": "6. Conclusion",
+     "anchor": "sec-6--conclusion"
+    },
+    {
+     "level": 2,
+     "title": "Appendix A. Extensions and Robustness Checks",
+     "anchor": "sec-appendix-a--extensions-and-robustness-checks"
+    },
+    {
+     "level": 2,
+     "title": "Supplementary material",
+     "anchor": "sec-supplementary-material"
+    },
+    {
+     "level": 2,
+     "title": "References",
+     "anchor": "sec-references"
+    },
+    {
+     "level": 2,
+     "title": "ENDNOTES",
+     "anchor": "sec-endnotes"
+    }
+   ],
+   "headline_question": "Is the forward premium puzzle real in currency markets?",
+   "headline": "0.23-0.45 for developed and 0.95-1.16 for emerging currencies",
+   "headline_url": "https://meta-analysis.cz/results/#forward",
+   "data": {
+    "parquet": "https://meta-analysis.cz/data/v1/forward/forward.parquet",
+    "csv": "https://meta-analysis.cz/data/v1/forward/forward.csv",
+    "codebook": "https://meta-analysis.cz/api/v1/codebooks/forward.json"
+   },
+   "codebook_url": "https://meta-analysis.cz/api/v1/codebooks/forward.json"
+  },
+  {
+   "project": "frisch",
+   "title": "Intertemporal Substitution in Labor Supply: A Meta-Analysis",
+   "authors": [
+    "Ali Elminejad",
+    "Tomas Havranek",
+    "Roman Horvath",
+    "Zuzana Irsova"
+   ],
+   "year": 2023,
+   "journal": "Review of Economic Dynamics",
+   "doi": "https://doi.org/10.1016/j.red.2023.10.001",
+   "publisher_url": null,
+   "full_text_url": "https://meta-analysis.cz/frisch/paper/",
+   "project_url": "https://meta-analysis.cz/frisch/",
+   "pdf_url": "https://meta-analysis.cz/frisch/frisch2.pdf",
+   "abstract": "The intertemporal substitution (Frisch) elasticity of labor supply governs how structural models predict changes in people's willingness to work in response to changes in economic conditions or government fiscal policy. We show that the mean reported estimates of the elasticity are exaggerated due to publication bias. For both the intensive and extensive margins the literature provides over 700 estimates, with a mean of 0.5 in both cases. Correcting for publication bias and emphasizing quasi-experimental evidence reduces the mean intensive margin elasticity to 0.2 and renders the extensive margin elasticity tiny. A total hours elasticity of about 0.25 is the most consistent with empirical evidence. To trace the differences in reported elasticities to differences in estimation context, we collect 23 variables reflecting study design and employ Bayesian and frequentist model averaging to address model uncertainty. On both margins the elasticity is systematically larger for women and workers near retirement, but not enough to support a total hours elasticity above 0.5.",
+   "sections": [
+    {
+     "level": 2,
+     "title": "1. Introduction",
+     "anchor": "sec-1--introduction"
+    },
+    {
+     "level": 2,
+     "title": "2. Data",
+     "anchor": "sec-2--data"
+    },
+    {
+     "level": 2,
+     "title": "3. Publication bias",
+     "anchor": "sec-3--publication-bias"
+    },
+    {
+     "level": 2,
+     "title": "4. Heterogeneity",
+     "anchor": "sec-4--heterogeneity"
+    },
+    {
+     "level": 3,
+     "title": "4.1. Variables",
+     "anchor": "sec-4-1--variables"
+    },
+    {
+     "level": 3,
+     "title": "4.2. Estimation",
+     "anchor": "sec-4-2--estimation"
+    },
+    {
+     "level": 3,
+     "title": "4.3. Results",
+     "anchor": "sec-4-3--results"
+    },
+    {
+     "level": 3,
+     "title": "4.4. Implied elasticities",
+     "anchor": "sec-4-4--implied-elasticities"
+    },
+    {
+     "level": 2,
+     "title": "5. Conclusion",
+     "anchor": "sec-5--conclusion"
+    },
+    {
+     "level": 2,
+     "title": "Appendix A. Supplementary material",
+     "anchor": "sec-appendix-a--supplementary-material"
+    },
+    {
+     "level": 2,
+     "title": "REFERENCES",
+     "anchor": "sec-references"
+    },
+    {
+     "level": 2,
+     "title": "ENDNOTES",
+     "anchor": "sec-endnotes"
+    }
+   ],
+   "headline_question": "What is the Frisch elasticity of labor supply?",
+   "headline": "about 0.25 for total hours",
+   "headline_url": "https://meta-analysis.cz/results/#frisch",
+   "data": {
+    "parquet": "https://meta-analysis.cz/data/v1/frisch/frisch.parquet",
+    "csv": "https://meta-analysis.cz/data/v1/frisch/frisch.csv",
+    "codebook": "https://meta-analysis.cz/api/v1/codebooks/frisch.json"
+   },
+   "codebook_url": "https://meta-analysis.cz/api/v1/codebooks/frisch.json"
+  },
+  {
+   "project": "gasoline",
+   "title": "Income Elasticity of Gasoline Demand: A Meta-Analysis",
+   "authors": [
+    "Tomas Havranek",
+    "Ondrej Kokes"
+   ],
+   "year": 2015,
+   "journal": "Energy Economics",
+   "doi": "https://doi.org/10.1016/j.eneco.2014.11.004",
+   "publisher_url": null,
+   "full_text_url": "https://meta-analysis.cz/gasoline/paper/",
+   "project_url": "https://meta-analysis.cz/gasoline/",
+   "pdf_url": "https://meta-analysis.cz/gasoline/gasoline2.pdf",
+   "abstract": "In this paper we quantitatively synthesize empirical estimates of the income elasticity of gasoline demand reported in previous studies. The studies cover many countries and report a mean elasticity of 0.28 for the short run and 0.66 for the long run. We show, however, that these mean estimates are biased upwards because of publication bias---the tendency to suppress negative and insignificant estimates of the elasticity. We employ mixed-effects multilevel meta-regression to filter out publication bias from the literature. Our results suggest that the income elasticity of gasoline demand is on average much smaller than reported in previous surveys: the mean corrected for publication bias is 0.1 for the short run and 0.23 for the long run.",
+   "sections": [
+    {
+     "level": 2,
+     "title": "1. Introduction",
+     "anchor": "sec-1--introduction"
+    },
+    {
+     "level": 2,
+     "title": "2. Estimating the elasticity",
+     "anchor": "sec-2--estimating-the-elasticity"
+    },
+    {
+     "level": 3,
+     "title": "2.1. Static models",
+     "anchor": "sec-2-1--static-models"
+    },
+    {
+     "level": 3,
+     "title": "2.2. Dynamic models",
+     "anchor": "sec-2-2--dynamic-models"
+    },
+    {
+     "level": 3,
+     "title": "2.3. Error correction models",
+     "anchor": "sec-2-3--error-correction-models"
+    },
+    {
+     "level": 2,
+     "title": "3. Meta-analysis methodology",
+     "anchor": "sec-3--meta-analysis-methodology"
+    },
+    {
+     "level": 3,
+     "title": "3.1. Graphical approach",
+     "anchor": "sec-3-1--graphical-approach"
+    },
+    {
+     "level": 3,
+     "title": "3.2. Econometric models",
+     "anchor": "sec-3-2--econometric-models"
+    },
+    {
+     "level": 2,
+     "title": "4. Measuring publication bias",
+     "anchor": "sec-4--measuring-publication-bias"
+    },
+    {
+     "level": 3,
+     "title": "4.1. Data set",
+     "anchor": "sec-4-1--data-set"
+    },
+    {
+     "level": 3,
+     "title": "4.2. Graphical methods",
+     "anchor": "sec-4-2--graphical-methods"
+    },
+    {
+     "level": 3,
+     "title": "4.3. Meta-regression results",
+     "anchor": "sec-4-3--meta-regression-results"
+    },
+    {
+     "level": 2,
+     "title": "5. Augmented meta-regression",
+     "anchor": "sec-5--augmented-meta-regression"
+    },
+    {
+     "level": 2,
+     "title": "6. Concluding remarks",
+     "anchor": "sec-6--concluding-remarks"
+    },
+    {
+     "level": 2,
+     "title": "ENDNOTES",
+     "anchor": "sec-endnotes"
+    },
+    {
+     "level": 2,
+     "title": "REFERENCES",
+     "anchor": "sec-references"
+    }
+   ],
+   "headline_question": "How much does gasoline demand rise with income?",
+   "headline": "0.1 short run, 0.23 long run",
+   "headline_url": "https://meta-analysis.cz/results/#gasoline",
+   "data": {
+    "parquet": "https://meta-analysis.cz/data/v1/gasoline/gasoline.parquet",
+    "csv": "https://meta-analysis.cz/data/v1/gasoline/gasoline.csv",
+    "codebook": "https://meta-analysis.cz/api/v1/codebooks/gasoline.json"
+   },
+   "codebook_url": "https://meta-analysis.cz/api/v1/codebooks/gasoline.json"
+  },
+  {
+   "project": "gasoline_price",
+   "title": "Demand for Gasoline is More Price-Inelastic than Commonly Thought",
+   "authors": [
+    "Tomas Havranek",
+    "Zuzana Irsova",
+    "Karel Janda"
+   ],
+   "year": 2012,
+   "journal": "Energy Economics",
+   "doi": "https://doi.org/10.1016/j.eneco.2011.09.003",
+   "publisher_url": null,
+   "full_text_url": "https://meta-analysis.cz/gasoline_price/paper/",
+   "project_url": "https://meta-analysis.cz/gasoline_price/",
+   "pdf_url": "https://meta-analysis.cz/gasoline_price/gasoline_price2.pdf",
+   "abstract": "One of the most frequently examined statistical relationships in energy economics has been the price elasticity of gasoline demand. We conduct a quantitative survey of the estimates of elasticity reported for various countries around the world. Our meta-analysis indicates that the literature suffers from publication selection bias: insignificant or positive estimates of the price elasticity are rarely reported, although implausibly large negative estimates are reported regularly. In consequence, the average published estimates of both short- and long-run elasticities are exaggerated twofold. Using mixed-effects multilevel meta-regression, we show that after correction for publication bias the average long-run elasticity reaches -0.31 and the average short-run elasticity only -0.09.",
+   "sections": [
+    {
+     "level": 2,
+     "title": "1. Introduction",
+     "anchor": "sec-1--introduction"
+    },
+    {
+     "level": 2,
+     "title": "2. The elasticity estimates data set",
+     "anchor": "sec-2--the-elasticity-estimates-data-set"
+    },
+    {
+     "level": 2,
+     "title": "3. Meta-analysis methodology",
+     "anchor": "sec-3--meta-analysis-methodology"
+    },
+    {
+     "level": 2,
+     "title": "4. Results",
+     "anchor": "sec-4--results"
+    },
+    {
+     "level": 2,
+     "title": "5. Conclusion",
+     "anchor": "sec-5--conclusion"
+    },
+    {
+     "level": 2,
+     "title": "ENDNOTES",
+     "anchor": "sec-endnotes"
+    },
+    {
+     "level": 2,
+     "title": "REFERENCES",
+     "anchor": "sec-references"
+    }
+   ],
+   "headline_question": "How much does gasoline demand fall when prices rise?",
+   "headline": "-0.09 short run, -0.31 long run",
+   "headline_url": "https://meta-analysis.cz/results/#gasoline_price",
+   "data": {
+    "parquet": "https://meta-analysis.cz/data/v1/gasoline_price/gasoline_price.parquet",
+    "csv": "https://meta-analysis.cz/data/v1/gasoline_price/gasoline_price.csv",
+    "codebook": "https://meta-analysis.cz/api/v1/codebooks/gasoline_price.json"
+   },
+   "codebook_url": "https://meta-analysis.cz/api/v1/codebooks/gasoline_price.json"
+  },
+  {
+   "project": "guidelines",
+   "title": "Meta-Analysis of Social Science Research: A Practitioner’s Guide",
+   "authors": [
+    "Zuzana Irsova",
+    "Hristos Doucouliagos",
+    "Tomas Havranek",
+    "T. D. Stanley"
+   ],
+   "year": 2024,
+   "journal": "Journal of Economic Surveys",
+   "doi": "https://doi.org/10.1111/joes.12595",
+   "publisher_url": null,
+   "full_text_url": "https://meta-analysis.cz/guidelines/guide/",
+   "project_url": "https://meta-analysis.cz/guidelines/",
+   "pdf_url": "https://meta-analysis.cz/guidelines/guidelines2.pdf",
+   "abstract": "This article provides concise, nontechnical, step-by-step guidelines on how to conduct a modern meta-analysis, especially in social sciences. We treat publication bias, p-hacking, and systematic heterogeneity as phenomena meta-analysts must always confront. To this end, we provide concrete methodological recommendations. Meta-analysis methods have advanced notably over the last few years. Yet many meta-analyses still rely on outdated approaches, some ignoring publication bias and systematic heterogeneity. While limitations persist, recently developed techniques allow robust inference even in the face of formidable problems in the underlying empirical literature. The purpose of this paper is to summarize the state of the art in a way accessible to aspiring meta-analysts in any field. We also discuss how meta-analysts can use advances in artificial intelligence to work more efficiently.",
+   "sections": [
+    {
+     "level": 2,
+     "title": "Abstract",
+     "anchor": "abstract"
+    },
+    {
+     "level": 2,
+     "title": "Contents",
+     "anchor": "toc-heading"
+    },
+    {
+     "level": 2,
+     "title": "The eighteen guidelines",
+     "anchor": "the-eighteen-guidelines"
+    },
+    {
+     "level": 2,
+     "title": "1 INTRODUCTION",
+     "anchor": "sec-1"
+    },
+    {
+     "level": 2,
+     "title": "2 LITERATURE SEARCH",
+     "anchor": "sec-2"
+    },
+    {
+     "level": 2,
+     "title": "3 DATA COLLECTION",
+     "anchor": "sec-3"
+    },
+    {
+     "level": 2,
+     "title": "4 PUBLICATION BIAS AND P-HACKING",
+     "anchor": "sec-4"
+    },
+    {
+     "level": 3,
+     "title": "4.1 Main approaches",
+     "anchor": "sec-4-1"
+    },
+    {
+     "level": 3,
+     "title": "4.2 Important details",
+     "anchor": "sec-4-2"
+    },
+    {
+     "level": 2,
+     "title": "5 HETEROGENEITY AND IMPLIED ESTIMATES",
+     "anchor": "sec-5"
+    },
+    {
+     "level": 2,
+     "title": "6 CHECKLIST: HOW TO DO A MODERN META-ANALYSIS",
+     "anchor": "sec-6"
+    },
+    {
+     "level": 2,
+     "title": "7 CONCLUSION",
+     "anchor": "sec-7"
+    },
+    {
+     "level": 2,
+     "title": "ACKNOWLEDGMENTS",
+     "anchor": "acknowledgments"
+    },
+    {
+     "level": 2,
+     "title": "DATA AVAILABILITY STATEMENT",
+     "anchor": "data-availability"
+    },
+    {
+     "level": 2,
+     "title": "ORCID",
+     "anchor": "orcid"
+    },
+    {
+     "level": 2,
+     "title": "ENDNOTES",
+     "anchor": "endnotes"
+    },
+    {
+     "level": 2,
+     "title": "REFERENCES",
+     "anchor": "references"
+    },
+    {
+     "level": 2,
+     "title": "How to cite this article",
+     "anchor": "how-to-cite"
+    }
+   ],
+   "headline_question": "How should researchers conduct a modern meta-analysis?",
+   "headline": "a concise, nontechnical, step-by-step guide for practitioners, treating publication bias, p-hacking, and heterogeneity as problems every meta-analyst must confront",
+   "headline_url": "https://meta-analysis.cz/results/#guidelines"
+  },
+  {
+   "project": "habits",
+   "title": "Habit Formation in Consumption: A Meta-Analysis",
+   "authors": [
+    "Tomas Havranek",
+    "Marek Rusnak",
+    "Anna Sokolova"
+   ],
+   "year": 2017,
+   "journal": "European Economic Review",
+   "doi": "https://doi.org/10.1016/j.euroecorev.2017.03.009",
+   "publisher_url": null,
+   "full_text_url": "https://meta-analysis.cz/habits/paper/",
+   "project_url": "https://meta-analysis.cz/habits/",
+   "pdf_url": "https://meta-analysis.cz/habits/habits2.pdf",
+   "abstract": "We examine 597 estimates of habit formation reported in 81 published studies. The mean reported strength of habit formation equals 0.4, but the estimates vary widely both within and across studies. We use Bayesian and frequentist model averaging to assign a pattern to this variance while taking into account model uncertainty. Studies employing macro data report consistently larger estimates than micro studies: 0.6 vs. 0.1 on average. The difference remains 0.5 when we control for 30 factors that reflect the context in which researchers obtain their estimates, such as data frequency, geographical coverage, variable definition, estimation approach, and publication characteristics. We also find that evidence for habits strengthens when researchers use lower data frequencies, employ log-linear approximation of the Euler equation, and utilize open-economy DSGE models. Moreover, estimates of habits differ systematically across countries.",
+   "sections": [
+    {
+     "level": 2,
+     "title": "1. Introduction",
+     "anchor": "sec-1--introduction"
+    },
+    {
+     "level": 2,
+     "title": "2. The data set of habit formation estimates",
+     "anchor": "sec-2--the-data-set-of-habit-formation-estimates"
+    },
+    {
+     "level": 3,
+     "title": "2.1. Estimating the degree of habit formation",
+     "anchor": "sec-2-1--estimating-the-degree-of-habit-formation"
+    },
+    {
+     "level": 3,
+     "title": "2.2. Collecting estimates of γ",
+     "anchor": "sec-2-2--collecting-estimates-of-gamma"
+    },
+    {
+     "level": 2,
+     "title": "3. Why do estimates of habit formation vary?",
+     "anchor": "sec-3--why-do-estimates-of-habit-formation-vary"
+    },
+    {
+     "level": 3,
+     "title": "3.1. Explanatory variables",
+     "anchor": "sec-3-1--explanatory-variables"
+    },
+    {
+     "level": 3,
+     "title": "3.2. Estimation and results",
+     "anchor": "sec-3-2--estimation-and-results"
+    },
+    {
+     "level": 3,
+     "title": "3.3. Frequentist model averaging",
+     "anchor": "sec-3-3--frequentist-model-averaging"
+    },
+    {
+     "level": 2,
+     "title": "4. Concluding remarks",
+     "anchor": "sec-4--concluding-remarks"
+    },
+    {
+     "level": 2,
+     "title": "Appendix A. Supplementary Statistics and Analysis",
+     "anchor": "sec-appendix-a--supplementary-statistics-and-analysis"
+    },
+    {
+     "level": 3,
+     "title": "A.1. Correlation of the Variables",
+     "anchor": "sec-a-1--correlation-of-the-variables"
+    },
+    {
+     "level": 3,
+     "title": "A.2. Diagnostics of BMA",
+     "anchor": "sec-a-2--diagnostics-of-bma"
+    },
+    {
+     "level": 3,
+     "title": "A.3. Alternative Priors for BMA",
+     "anchor": "sec-a-3--alternative-priors-for-bma"
+    },
+    {
+     "level": 3,
+     "title": "A.4. Publication Bias",
+     "anchor": "sec-a-4--publication-bias"
+    },
+    {
+     "level": 2,
+     "title": "Appendix B. BMA and Model Uncertainty in Meta-Analysis",
+     "anchor": "sec-appendix-b--bma-and-model-uncertainty-in-meta-analysis"
+    },
+    {
+     "level": 2,
+     "title": "Appendix C. Studies Included in the Data Set",
+     "anchor": "sec-appendix-c--studies-included-in-the-data-set"
+    },
+    {
+     "level": 2,
+     "title": "Supplementary material",
+     "anchor": "sec-supplementary-material"
+    },
+    {
+     "level": 2,
+     "title": "References",
+     "anchor": "sec-references"
+    },
+    {
+     "level": 2,
+     "title": "ENDNOTES",
+     "anchor": "sec-endnotes"
+    }
+   ],
+   "headline_question": "How strong is habit formation in consumption?",
+   "headline": "0.4 (macro 0.6, micro 0.1)",
+   "headline_url": "https://meta-analysis.cz/results/#habits",
+   "data": {
+    "parquet": "https://meta-analysis.cz/data/v1/habits/habits.parquet",
+    "csv": "https://meta-analysis.cz/data/v1/habits/habits.csv",
+    "codebook": "https://meta-analysis.cz/api/v1/codebooks/habits.json"
+   },
+   "codebook_url": "https://meta-analysis.cz/api/v1/codebooks/habits.json"
+  },
+  {
+   "project": "hedge",
+   "title": "Is research on hedge fund performance published selectively? A quantitative survey",
+   "authors": [
+    "Fan Yang",
+    "Tomas Havranek",
+    "Zuzana Irsova",
+    "Jiri Novak"
+   ],
+   "year": 2024,
+   "journal": "Journal of Economic Surveys",
+   "doi": "https://doi.org/10.1111/joes.12574",
+   "publisher_url": null,
+   "full_text_url": "https://meta-analysis.cz/hedge/paper/",
+   "project_url": "https://meta-analysis.cz/hedge/",
+   "pdf_url": "https://meta-analysis.cz/hedge/hedge2.pdf",
+   "abstract": "We provide the first quantitative survey of the empirical literature on hedge fund performance. We examine the impact of potential biases on the reported results. Analyses in individual studies have been plagued by fragmentation of underlying data and by limited consensus on how hedge fund performance should be measured. Using a sample of 1,019 intercept terms from regressions of hedge fund returns on risk factors (the \"alphas\") collected from 74 studies published between 2001 and 2021 we show that inferences about hedge fund returns are not significantly contaminated by publication selection bias. Most of our monthly alpha estimates adjusted for the (small) bias fall within a relatively narrow range of 30 to 40 basis points. Studies that explicitly control for the potential biases in the underlying data (e.g. the backfilling bias and the survivorship bias) report lower alphas. Our results demonstrate that despite the prevalence of the publication selection bias in numerous other research settings, publication may not be selective when there is no strong a priori theoretical prediction about the sign of estimated coefficients, which may induce greater readiness to publish statistically insignificant results.",
+   "sections": [
+    {
+     "level": 2,
+     "title": "1. INTRODUCTION",
+     "anchor": "sec-1"
+    },
+    {
+     "level": 2,
+     "title": "2. LITERATURE",
+     "anchor": "sec-2"
+    },
+    {
+     "level": 3,
+     "title": "2.1. Estimating performance",
+     "anchor": "sec-2-1"
+    },
+    {
+     "level": 3,
+     "title": "2.2. Data fragmentation",
+     "anchor": "sec-2-2"
+    },
+    {
+     "level": 3,
+     "title": "2.3. Empirical findings",
+     "anchor": "sec-2-3"
+    },
+    {
+     "level": 2,
+     "title": "3. DATASET",
+     "anchor": "sec-3"
+    },
+    {
+     "level": 2,
+     "title": "4. FULL SAMPLE RESULTS",
+     "anchor": "sec-4"
+    },
+    {
+     "level": 3,
+     "title": "4.1. Funnel plot",
+     "anchor": "sec-4-1"
+    },
+    {
+     "level": 3,
+     "title": "4.2. Formal tests",
+     "anchor": "sec-4-2"
+    },
+    {
+     "level": 2,
+     "title": "5. SUBSAMPLE RESULTS",
+     "anchor": "sec-5"
+    },
+    {
+     "level": 3,
+     "title": "5.1. Survivorship and backfilling biases",
+     "anchor": "sec-5-1"
+    },
+    {
+     "level": 3,
+     "title": "5.2. Risk models",
+     "anchor": "sec-5-2"
+    },
+    {
+     "level": 3,
+     "title": "5.3. Instrumental variables",
+     "anchor": "sec-5-3"
+    },
+    {
+     "level": 3,
+     "title": "5.4. Top journals",
+     "anchor": "sec-5-4"
+    },
+    {
+     "level": 3,
+     "title": "5.5. Overview",
+     "anchor": "sec-5-5"
+    },
+    {
+     "level": 2,
+     "title": "6. CONCLUSION",
+     "anchor": "sec-6"
+    },
+    {
+     "level": 2,
+     "title": "ACKNOWLEDGMENTS",
+     "anchor": "sec-acknowledgments"
+    },
+    {
+     "level": 2,
+     "title": "DATA AVAILABILITY STATEMENT",
+     "anchor": "sec-data-availability-statement"
+    },
+    {
+     "level": 2,
+     "title": "ORCID",
+     "anchor": "sec-orcid"
+    },
+    {
+     "level": 2,
+     "title": "ENDNOTES",
+     "anchor": "sec-endnotes"
+    },
+    {
+     "level": 2,
+     "title": "REFERENCES",
+     "anchor": "sec-references"
+    },
+    {
+     "level": 2,
+     "title": "APPENDIX",
+     "anchor": "sec-appendix"
+    }
+   ],
+   "headline_question": "How much alpha do hedge funds generate?",
+   "headline": "30-40 basis points per month",
+   "headline_url": "https://meta-analysis.cz/results/#hedge",
+   "data": {
+    "parquet": "https://meta-analysis.cz/data/v1/hedge/hedge.parquet",
+    "csv": "https://meta-analysis.cz/data/v1/hedge/hedge.csv",
+    "codebook": "https://meta-analysis.cz/api/v1/codebooks/hedge.json"
+   },
+   "codebook_url": "https://meta-analysis.cz/api/v1/codebooks/hedge.json"
+  },
+  {
+   "project": "house_prices",
+   "title": "When Does Monetary Policy Sway House Prices? A Meta-Analysis",
+   "authors": [
+    "Dominika Ehrenbergerova",
+    "Josef Bajzik",
+    "Tomas Havranek"
+   ],
+   "year": 2023,
+   "journal": "IMF Economic Review",
+   "doi": "https://doi.org/10.1057/s41308-022-00185-5",
+   "publisher_url": null,
+   "full_text_url": "https://meta-analysis.cz/house_prices/paper/",
+   "project_url": "https://meta-analysis.cz/house_prices/",
+   "pdf_url": "https://meta-analysis.cz/house_prices/house_prices2.pdf",
+   "abstract": "Several central banks have leaned against the wind in the housing market by increasing the policy rate preemptively to prevent a bubble. Yet the empirical literature provides mixed results on the impact of short-term interest rates on house prices: the estimated semi-elasticities range from -12 to positive values. To assign a pattern to these differences, we collect 1,555 estimates from 37 individual studies that cover 45 countries and 72 years. We then relate the estimates to 39 characteristics of the financial system, business cycle, and estimation approach. Our main results are threefold. First, the mean reported estimate is exaggerated by publication bias, because insignificant results are underreported. Second, inclusion of controls correlated with policy rates (credit or money supply) decreases the estimated effects of policy rates on house prices. Third, the effects are stronger in countries with more developed mortgage markets and generally later in the cycle when the yield curve is flat and house prices enter an upward spiral.",
+   "sections": [
+    {
+     "level": 2,
+     "title": "1 Introduction",
+     "anchor": "sec-1-introduction"
+    },
+    {
+     "level": 2,
+     "title": "2 The Semi-Elasticity Dataset",
+     "anchor": "sec-2-the-semi-elasticity-dataset"
+    },
+    {
+     "level": 2,
+     "title": "3 Publication Bias",
+     "anchor": "sec-3-publication-bias"
+    },
+    {
+     "level": 2,
+     "title": "4 Heterogeneity",
+     "anchor": "sec-4-heterogeneity"
+    },
+    {
+     "level": 3,
+     "title": "4.1 Variables",
+     "anchor": "sec-4-1-variables"
+    },
+    {
+     "level": 3,
+     "title": "4.1.4 Publication Characteristics",
+     "anchor": "sec-4-1-4-publication-characteristics"
+    },
+    {
+     "level": 3,
+     "title": "4.1.5 Structural Heterogeneity",
+     "anchor": "sec-4-1-5-structural-heterogeneity"
+    },
+    {
+     "level": 3,
+     "title": "4.2 Estimation",
+     "anchor": "sec-4-2-estimation"
+    },
+    {
+     "level": 3,
+     "title": "4.3 Results",
+     "anchor": "sec-4-3-results"
+    },
+    {
+     "level": 3,
+     "title": "4.4 Implied Response",
+     "anchor": "sec-4-4-implied-response"
+    },
+    {
+     "level": 2,
+     "title": "5 Concluding Remarks",
+     "anchor": "sec-5-concluding-remarks"
+    },
+    {
+     "level": 2,
+     "title": "Appendix",
+     "anchor": "sec-appendix"
+    },
+    {
+     "level": 3,
+     "title": "Details of Literature Search",
+     "anchor": "sec-details-of-literature-search"
+    },
+    {
+     "level": 2,
+     "title": "References",
+     "anchor": "sec-references"
+    },
+    {
+     "level": 2,
+     "title": "ENDNOTES",
+     "anchor": "sec-endnotes"
+    }
+   ],
+   "headline_question": "How much do house prices fall after a monetary policy rate hike?",
+   "headline": "a 1.2% fall in house prices per 1-percentage-point policy rate rise, peaking after two years",
+   "headline_url": "https://meta-analysis.cz/results/#house_prices",
+   "data": {
+    "parquet": "https://meta-analysis.cz/data/v1/house_prices/house_prices.parquet",
+    "csv": "https://meta-analysis.cz/data/v1/house_prices/house_prices.csv",
+    "codebook": "https://meta-analysis.cz/api/v1/codebooks/house_prices.json"
+   },
+   "codebook_url": "https://meta-analysis.cz/api/v1/codebooks/house_prices.json"
+  },
+  {
+   "project": "incentives",
+   "title": "Financial Incentives and Performance: A Meta-Analysis of Experiments in Economics",
+   "authors": [
+    "Petr Cala",
+    "Tomas Havranek",
+    "Zuzana Irsova",
+    "Martina Luskova",
+    "Jindrich Matousek",
+    "Jiri Novak"
+   ],
+   "year": 2026,
+   "journal": "Journal of Political Economy Microeconomics",
+   "doi": "https://doi.org/10.1086/743543",
+   "publisher_url": null,
+   "full_text_url": "https://meta-analysis.cz/incentives/paper/",
+   "project_url": "https://meta-analysis.cz/incentives/",
+   "pdf_url": "https://meta-analysis.cz/incentives/incentives.pdf",
+   "abstract": "Economists typically model financial incentives as enhancing performance, whereas psychologists emphasize that incentives can backfire. Experimental findings are mixed. We collect 2,193 estimates from 88 economics experiments and account for 48 contextual factors. Using recent advances in correcting for publication bias and p-hacking, we find that the corrected mean effect of financial incentives on performance is close to zero across most field contexts. Laboratory settings and loss framing yield statistically significant but modest positive effects even after bias correction. Our results suggest that increasing financial rewards rarely produces large performance gains in the experimental settings most studied by economists.",
+   "sections": [
+    {
+     "level": 2,
+     "title": "1. Introduction",
+     "anchor": "sec-1"
+    },
+    {
+     "level": 2,
+     "title": "2. Data and Experimental Context",
+     "anchor": "sec-2"
+    },
+    {
+     "level": 2,
+     "title": "3. Publication Bias",
+     "anchor": "sec-3"
+    },
+    {
+     "level": 2,
+     "title": "4. Heterogeneity",
+     "anchor": "sec-4"
+    },
+    {
+     "level": 2,
+     "title": "5. Conclusion",
+     "anchor": "sec-5"
+    },
+    {
+     "level": 2,
+     "title": "References",
+     "anchor": "sec-references"
+    },
+    {
+     "level": 2,
+     "title": "A. Details of Literature Search",
+     "anchor": "sec-a"
+    },
+    {
+     "level": 2,
+     "title": "B. Additional Statistics and Results (for online publication)",
+     "anchor": "sec-b"
+    },
+    {
+     "level": 2,
+     "title": "ENDNOTES",
+     "anchor": "sec-endnotes"
+    }
+   ],
+   "headline_question": "Do financial incentives improve performance?",
+   "headline": "about 0",
+   "headline_url": "https://meta-analysis.cz/results/#incentives",
+   "data": {
+    "parquet": "https://meta-analysis.cz/data/v1/incentives/incentives.parquet",
+    "csv": "https://meta-analysis.cz/data/v1/incentives/incentives.csv",
+    "codebook": "https://meta-analysis.cz/api/v1/codebooks/incentives.json"
+   },
+   "codebook_url": "https://meta-analysis.cz/api/v1/codebooks/incentives.json"
+  },
+  {
+   "project": "inflation",
+   "title": "Optimal Inflation Rate: A Meta-Analysis",
+   "authors": [
+    "Matej Opatrny",
+    "Martin Opatrny",
+    "Tomas Havranek",
+    "Zuzana Irsova",
+    "Mojmir Hampl"
+   ],
+   "year": 2026,
+   "journal": null,
+   "doi": null,
+   "publisher_url": null,
+   "full_text_url": "https://meta-analysis.cz/inflation/paper/",
+   "project_url": "https://meta-analysis.cz/inflation/",
+   "pdf_url": "https://meta-analysis.cz/inflation/inflation.pdf",
+   "abstract": "We revisit the optimal long-run inflation rate using 777 estimates from 116 primary studies published between 1989 and 2026, the largest sample assembled to date. To our knowledge, this is among the first meta-analyses in economics whose primary-data extraction is performed end-to-end through a documented and auditable large-language-model pipeline, calibrated against a hand-coded training set and released for replication. Across publication-selection and selection-on-significance diagnostics that are applicable in this calibration-dominated corpus, the literature points to an optimum of roughly 0.6 percentage points per year, well below the two-percent targets commonly used by advanced-economy central banks. Bayesian model averaging over the full structural-moderator schema shows that cross-study variation is driven by genuine modelling choices, the choice of monetary benchmark (Friedman rule vs. laissez-faire), the transactions-frictions technology, the assumed shock structure, and the class of nominal-rigidity contract, rather than by selective reporting.",
+   "sections": [
+    {
+     "level": 2,
+     "title": "1. Introduction",
+     "anchor": "sec-1"
+    },
+    {
+     "level": 2,
+     "title": "2. Related literature",
+     "anchor": "sec-2"
+    },
+    {
+     "level": 2,
+     "title": "3. Methodology",
+     "anchor": "sec-3"
+    },
+    {
+     "level": 2,
+     "title": "4. Data",
+     "anchor": "sec-4"
+    },
+    {
+     "level": 2,
+     "title": "5. Results",
+     "anchor": "sec-5"
+    },
+    {
+     "level": 2,
+     "title": "ENDNOTES",
+     "anchor": "sec-endnotes"
+    },
+    {
+     "level": 2,
+     "title": "6. Discussion",
+     "anchor": "sec-6"
+    },
+    {
+     "level": 2,
+     "title": "7. Conclusion",
+     "anchor": "sec-7"
+    },
+    {
+     "level": 2,
+     "title": "Acknowledgements",
+     "anchor": "sec-acknowledgements"
+    },
+    {
+     "level": 2,
+     "title": "Data availability statement",
+     "anchor": "sec-data-availability-statement"
+    },
+    {
+     "level": 2,
+     "title": "References",
+     "anchor": "sec-references"
+    },
+    {
+     "level": 2,
+     "title": "A. PRISMA flow diagram",
+     "anchor": "sec-a"
+    },
+    {
+     "level": 2,
+     "title": "B. AI-extraction pipeline",
+     "anchor": "sec-b"
+    },
+    {
+     "level": 3,
+     "title": "B.1. Stage architecture and model assignment",
+     "anchor": "sec-b-1"
+    },
+    {
+     "level": 3,
+     "title": "B.2. Audit layers",
+     "anchor": "sec-b-2"
+    },
+    {
+     "level": 3,
+     "title": "B.3. Training corpus, cross-check, and Round-2 rerun",
+     "anchor": "sec-b-3"
+    },
+    {
+     "level": 3,
+     "title": "B.4. Reproducibility artefacts",
+     "anchor": "sec-b-4"
+    },
+    {
+     "level": 3,
+     "title": "B.5. LLM-assisted adversarial checklist",
+     "anchor": "sec-b-5"
+    },
+    {
+     "level": 3,
+     "title": "B.6. Inter-rater agreement on the seven hand-coded training papers",
+     "anchor": "sec-b-6"
+    },
+    {
+     "level": 3,
+     "title": "B.7. Mapping to MAER-Net AI-extraction guidance",
+     "anchor": "sec-b-7"
+    },
+    {
+     "level": 3,
+     "title": "B.8. Forest plot by primary study (full sample)",
+     "anchor": "sec-b-8"
+    }
+   ],
+   "headline_question": "What is the optimal long-run inflation rate?",
+   "headline": "about 0.6% per year",
+   "headline_url": "https://meta-analysis.cz/results/#inflation",
+   "data": {
+    "parquet": "https://meta-analysis.cz/data/v1/inflation/inflation.parquet",
+    "csv": "https://meta-analysis.cz/data/v1/inflation/inflation.csv",
+    "codebook": "https://meta-analysis.cz/api/v1/codebooks/inflation.json"
+   },
+   "codebook_url": "https://meta-analysis.cz/api/v1/codebooks/inflation.json"
+  },
+  {
+   "project": "lags",
+   "title": "Transmission Lags of Monetary Policy: A Meta-Analysis",
+   "authors": [
+    "Tomas Havranek",
+    "Marek Rusnak"
+   ],
+   "year": 2013,
+   "journal": "International Journal of Central Banking",
+   "doi": null,
+   "publisher_url": null,
+   "full_text_url": "https://meta-analysis.cz/lags/paper/",
+   "project_url": "https://meta-analysis.cz/lags/",
+   "pdf_url": "https://meta-analysis.cz/lags/lags2.pdf",
+   "abstract": "The transmission of monetary policy to the economy is generally thought to have long and variable lags. In this paper we quantitatively review the modern literature on monetary transmission to provide stylized facts on the average lag length and the sources of variability. We collect 67 published studies and examine when prices bottom out after monetary contraction. The average transmission lag is 29 months, and the maximum decrease in prices reaches 0.9% on average after a one-percentage-point hike in the policy rate. Transmission lags are longer in developed economies (25-50 months) than in transition economies (10-20 months). We find that the factor most effective in explaining this heterogeneity is financial development: greater financial development is associated with slower transmission. Our results also suggest that researchers who use monthly data instead of quarterly data report systematically faster transmission.",
+   "sections": [
+    {
+     "level": 2,
+     "title": "1. Introduction",
+     "anchor": "sec-1--introduction"
+    },
+    {
+     "level": 2,
+     "title": "2. Estimating the Average Lag",
+     "anchor": "sec-2--estimating-the-average-lag"
+    },
+    {
+     "level": 2,
+     "title": "3. Explaining the Differences",
+     "anchor": "sec-3--explaining-the-differences"
+    },
+    {
+     "level": 2,
+     "title": "4. Robustness Checks and Additional Results",
+     "anchor": "sec-4--robustness-checks-and-additional-results"
+    },
+    {
+     "level": 2,
+     "title": "5. Concluding Remarks",
+     "anchor": "sec-5--concluding-remarks"
+    },
+    {
+     "level": 2,
+     "title": "Appendix 1. Diagnostics of Bayesian Model Averaging",
+     "anchor": "sec-appendix-1--diagnostics-of-bayesian-model-averaging"
+    },
+    {
+     "level": 2,
+     "title": "Appendix 2. Results of Censored Regression",
+     "anchor": "sec-appendix-2--results-of-censored-regression"
+    },
+    {
+     "level": 2,
+     "title": "REFERENCES",
+     "anchor": "sec-references"
+    },
+    {
+     "level": 2,
+     "title": "ENDNOTES",
+     "anchor": "sec-endnotes"
+    }
+   ],
+   "headline_question": "How long does monetary policy take to affect prices?",
+   "headline": "29 months on average, but 25-50 months in developed economies against 10-20 in post-transition ones; the factor explaining that gap is financial development, with greater development meaning slower transmission",
+   "headline_url": "https://meta-analysis.cz/results/#lags",
+   "data": {
+    "parquet": "https://meta-analysis.cz/data/v1/lags/lags.parquet",
+    "csv": "https://meta-analysis.cz/data/v1/lags/lags.csv",
+    "codebook": "https://meta-analysis.cz/api/v1/codebooks/lags.json"
+   },
+   "codebook_url": "https://meta-analysis.cz/api/v1/codebooks/lags.json"
+  },
+  {
+   "project": "learning",
+   "title": "Publication Bias and P-Hacking in the Effect of COVID-19 on Learning",
+   "authors": [
+    "Martina Luskova",
+    "Nino Buliskeria",
+    "Ali Elminejad",
+    "Tomas Havranek",
+    "Zuzana Irsova",
+    "Stepan Jurajda",
+    "Marek Kapicka"
+   ],
+   "year": 2026,
+   "journal": null,
+   "doi": null,
+   "publisher_url": null,
+   "full_text_url": "https://meta-analysis.cz/learning/paper/",
+   "project_url": "https://meta-analysis.cz/learning/",
+   "pdf_url": "https://meta-analysis.cz/learning/learning.pdf",
+   "abstract": "We revisit a central estimate in the economics of education: the human-capital loss associated with COVID-19 school closures. Estimates of pandemic learning loss may be affected by publication bias, p-hacking, and the mechanical correlation between standardized effect sizes and their standard errors. We conduct a comprehensive multi-method assessment of bias by applying a wide range of correction techniques — including PET-PEESE, three-parameter selection models (3PSM), Robust Bayesian Meta-Analysis (RoBMA), Meta-Analysis Instrumental Variable Estimation (MAIVE), Right-Truncated Meta-Analysis (RTMA), and multi-bias sensitivity analysis. Our preferred specifications, RoBMA and MAIVE, rely on different assumptions yet converge on an effect size of approximately −0.12 SD, equivalent to a learning loss of about 30% of a school year. Although some methods reveal signs of publication bias and selective reporting, these findings do not explain away the central finding: the COVID-19 learning deficit is economically meaningful and statistically robust.",
+   "sections": [
+    {
+     "level": 2,
+     "title": "1. Introduction",
+     "anchor": "sec-1"
+    },
+    {
+     "level": 2,
+     "title": "2. Background and Data",
+     "anchor": "sec-2"
+    },
+    {
+     "level": 2,
+     "title": "3. Correcting for publication bias",
+     "anchor": "sec-3"
+    },
+    {
+     "level": 2,
+     "title": "ENDNOTES",
+     "anchor": "sec-endnotes"
+    },
+    {
+     "level": 2,
+     "title": "4 Accounting for p-hacking and multiple biases",
+     "anchor": "sec-4-accounting-for-p-hacking-and-multiple-biases"
+    },
+    {
+     "level": 2,
+     "title": "5 Conclusion",
+     "anchor": "sec-5-conclusion"
+    },
+    {
+     "level": 2,
+     "title": "Data Availability Statement",
+     "anchor": "sec-data-availability-statement"
+    },
+    {
+     "level": 2,
+     "title": "Use of Generative AI",
+     "anchor": "sec-use-of-generative-ai"
+    },
+    {
+     "level": 2,
+     "title": "References",
+     "anchor": "sec-references"
+    },
+    {
+     "level": 2,
+     "title": "6. Figures",
+     "anchor": "sec-6"
+    },
+    {
+     "level": 2,
+     "title": "7. Tables",
+     "anchor": "sec-7"
+    },
+    {
+     "level": 2,
+     "title": "Online Appendix to: Publication Bias and P-Hacking in the Effect of COVID-19 on Learning",
+     "anchor": "sec-online-appendix-to-publication-bias-and-p-hacking-in-the-effect-of-covid-19-on-learning"
+    },
+    {
+     "level": 2,
+     "title": "A. Computational Reproducibility of Betthäuser et al. (2023a)",
+     "anchor": "sec-a"
+    },
+    {
+     "level": 3,
+     "title": "A.1. Computational Reproducibility",
+     "anchor": "sec-a-1"
+    },
+    {
+     "level": 3,
+     "title": "A.2. Discrepancies Between Pre-analysis Plan and Article",
+     "anchor": "sec-a-2"
+    },
+    {
+     "level": 3,
+     "title": "A.3 Figures",
+     "anchor": "sec-a-3-figures"
+    },
+    {
+     "level": 3,
+     "title": "A.4 Tables",
+     "anchor": "sec-a-4-tables"
+    },
+    {
+     "level": 2,
+     "title": "B RTMA Implementation with Negative Affirmative Results",
+     "anchor": "sec-b-rtma-implementation-with-negative-affirmative-results"
+    },
+    {
+     "level": 2,
+     "title": "C Caliper Test and P-Curve Analysis",
+     "anchor": "sec-c-caliper-test-and-p-curve-analysis"
+    },
+    {
+     "level": 3,
+     "title": "C.1 Figures",
+     "anchor": "sec-c-1-figures"
+    },
+    {
+     "level": 3,
+     "title": "C.2 Tables",
+     "anchor": "sec-c-2-tables"
+    },
+    {
+     "level": 2,
+     "title": "D Compliance with Meta-Analysis Guidelines",
+     "anchor": "sec-d-compliance-with-meta-analysis-guidelines"
+    }
+   ],
+   "headline_question": "How much learning did students lose from COVID-19 school closures?",
+   "headline": "about -0.12 SD, roughly 30% of a school year",
+   "headline_url": "https://meta-analysis.cz/results/#learning",
+   "data": {
+    "parquet": "https://meta-analysis.cz/data/v1/learning/learning.parquet",
+    "csv": "https://meta-analysis.cz/data/v1/learning/learning.csv",
+    "codebook": "https://meta-analysis.cz/api/v1/codebooks/learning.json"
+   },
+   "codebook_url": "https://meta-analysis.cz/api/v1/codebooks/learning.json"
+  },
+  {
+   "project": "maive",
+   "title": "Spurious Precision in Meta-Analysis of Observational Research",
+   "authors": [
+    "Zuzana Irsova",
+    "Pedro Bom",
+    "Tomas Havranek",
+    "Heiko Rachinger"
+   ],
+   "year": 2025,
+   "journal": "Nature Communications",
+   "doi": "https://doi.org/10.1038/s41467-025-63261-0",
+   "publisher_url": null,
+   "full_text_url": "https://meta-analysis.cz/maive/paper/",
+   "project_url": "https://meta-analysis.cz/maive/",
+   "pdf_url": "https://meta-analysis.cz/maive/maive.pdf",
+   "abstract": "Meta-analysis upweights studies reporting lower standard errors and hence more precision. But in observational settings common to much research on human behavior, precision is not given to the researcher. Precision must be estimated, and thus can be p-hacked to achieve statistical significance. Simulations and large-scale empirical applications show that spurious precision can invalidate inverse-variance weighting and bias-correction methods based on the funnel plot. Selection models fail to solve the problem, and common cures to publication bias can become worse than the disease. We introduce an approach (Meta-Analysis Instrumental Variable Estimator, MAIVE) that addresses spurious precision and limits the resulting bias in meta-analysis.",
+   "sections": [
+    {
+     "level": 2,
+     "title": "Abstract",
+     "anchor": "abstract"
+    },
+    {
+     "level": 2,
+     "title": "Contents",
+     "anchor": "toc-heading"
+    },
+    {
+     "level": 2,
+     "title": "Introduction",
+     "anchor": "introduction"
+    },
+    {
+     "level": 2,
+     "title": "Results",
+     "anchor": "results"
+    },
+    {
+     "level": 3,
+     "title": "Mechanisms of spurious precision",
+     "anchor": "mechanisms"
+    },
+    {
+     "level": 3,
+     "title": "Formalization and conceptual framework",
+     "anchor": "formalization"
+    },
+    {
+     "level": 3,
+     "title": "Conventional meta-analysis models",
+     "anchor": "conventional-models"
+    },
+    {
+     "level": 3,
+     "title": "Meta-analysis instrumental variable estimator",
+     "anchor": "maive-estimator"
+    },
+    {
+     "level": 3,
+     "title": "Simulations",
+     "anchor": "simulations"
+    },
+    {
+     "level": 3,
+     "title": "Applications",
+     "anchor": "applications"
+    },
+    {
+     "level": 2,
+     "title": "Discussion",
+     "anchor": "discussion"
+    },
+    {
+     "level": 2,
+     "title": "Methods",
+     "anchor": "methods"
+    },
+    {
+     "level": 3,
+     "title": "Stylized selection simulation",
+     "anchor": "stylized-simulation"
+    },
+    {
+     "level": 3,
+     "title": "P-hacking simulation",
+     "anchor": "p-hacking-simulation"
+    },
+    {
+     "level": 3,
+     "title": "Application based on Kvarven et al.",
+     "anchor": "application-kvarven"
+    },
+    {
+     "level": 3,
+     "title": "Application based on Bartos et al.",
+     "anchor": "application-bartos"
+    },
+    {
+     "level": 3,
+     "title": "Reporting summary",
+     "anchor": "reporting-summary"
+    },
+    {
+     "level": 2,
+     "title": "Data availability",
+     "anchor": "data-availability"
+    },
+    {
+     "level": 2,
+     "title": "Code availability",
+     "anchor": "code-availability"
+    },
+    {
+     "level": 2,
+     "title": "References",
+     "anchor": "references"
+    },
+    {
+     "level": 2,
+     "title": "Acknowledgements",
+     "anchor": "acknowledgements"
+    },
+    {
+     "level": 2,
+     "title": "Author contributions",
+     "anchor": "author-contributions"
+    },
+    {
+     "level": 2,
+     "title": "Competing interests",
+     "anchor": "competing-interests"
+    },
+    {
+     "level": 2,
+     "title": "Additional information",
+     "anchor": "additional-information"
+    }
+   ],
+   "headline_question": "Can p-hacked precision distort meta-analysis weighting?",
+   "headline": "estimated precision can be p-hacked, which can undermine inverse-variance weighting; MAIVE instruments variance with sample size",
+   "headline_url": "https://meta-analysis.cz/results/#maive"
+  },
+  {
+   "project": "maive_supplement",
+   "title": "Supplementary Information for Spurious Precision in Meta-Analysis of Observational Research",
+   "authors": [
+    "Zuzana Irsova",
+    "Pedro R. D. Bom",
+    "Tomas Havranek",
+    "Heiko Rachinger"
+   ],
+   "year": 2025,
+   "journal": "Nature Communications",
+   "doi": "https://doi.org/10.1038/s41467-025-63261-0",
+   "publisher_url": null,
+   "full_text_url": "https://meta-analysis.cz/maive/supplement/",
+   "project_url": "https://meta-analysis.cz/maive/paper/",
+   "pdf_url": "https://meta-analysis.cz/maive/supplement.pdf",
+   "abstract": "The supplementary information for the MAIVE paper: the full simulation designs and their results, the empirical applications, additional simulations, twenty-nine supplementary figures and nine supplementary tables.",
+   "sections": [
+    {
+     "level": 2,
+     "title": "S1. Supplementary Discussion: Simulations",
+     "anchor": "sec-s1"
+    },
+    {
+     "level": 3,
+     "title": "S1.1. Benchmark Estimators",
+     "anchor": "sec-s1-1"
+    },
+    {
+     "level": 3,
+     "title": "S1.2. Meta-Analysis Instrumental Variable Estimator",
+     "anchor": "sec-s1-2"
+    },
+    {
+     "level": 3,
+     "title": "S1.3. Stylized Selection Scenario",
+     "anchor": "sec-s1-3"
+    },
+    {
+     "level": 3,
+     "title": "S1.3.2. Results",
+     "anchor": "sec-s1-3-2"
+    },
+    {
+     "level": 2,
+     "title": "S1.4. Selection Based on p-Hacking",
+     "anchor": "sec-s1-4"
+    },
+    {
+     "level": 3,
+     "title": "S1.4.1. Simulation Setup",
+     "anchor": "sec-s1-4-1"
+    },
+    {
+     "level": 3,
+     "title": "S1.4.2. Results",
+     "anchor": "sec-s1-4-2"
+    },
+    {
+     "level": 3,
+     "title": "S1.5. Additional Discussion",
+     "anchor": "sec-s1-5"
+    },
+    {
+     "level": 2,
+     "title": "S2. Supplementary Discussion: Empirical Applications",
+     "anchor": "sec-s2"
+    },
+    {
+     "level": 3,
+     "title": "S2.1. Dataset 1: Kvarven et al. (2020)",
+     "anchor": "sec-s2-1"
+    },
+    {
+     "level": 3,
+     "title": "S2.2. Dataset 2: Bartos et al. (2024)",
+     "anchor": "sec-s2-2"
+    },
+    {
+     "level": 2,
+     "title": "S3. Simulations with True Effect Heterogeneity",
+     "anchor": "sec-s3"
+    },
+    {
+     "level": 2,
+     "title": "S4. Simulations with Small Meta-Sample Sizes",
+     "anchor": "sec-s4"
+    },
+    {
+     "level": 2,
+     "title": "S5. Stylized Scenario for a Large Underlying Effect",
+     "anchor": "sec-s5"
+    },
+    {
+     "level": 2,
+     "title": "S6. Mean Squared Error (MSE) Simulation Results",
+     "anchor": "sec-s6"
+    },
+    {
+     "level": 2,
+     "title": "REFERENCES",
+     "anchor": "sec-references"
+    }
+   ]
+  },
+  {
+   "project": "migrant",
+   "title": "The Elasticity of Substitution between Native and Immigrant Labor: A Meta-Analysis",
+   "authors": [
+    "Klara Kantova",
+    "Tomas Havranek",
+    "Zuzana Irsova",
+    "Jiri Schwarz"
+   ],
+   "year": 2026,
+   "journal": null,
+   "doi": null,
+   "publisher_url": null,
+   "full_text_url": "https://meta-analysis.cz/migrant/paper/",
+   "project_url": "https://meta-analysis.cz/migrant/",
+   "pdf_url": "https://meta-analysis.cz/migrant/migrant.pdf",
+   "abstract": "This paper presents the first comprehensive meta-analysis of the elasticity of substitution between native and immigrant labor. Drawing on 1,091 estimates from 41 studies, we examine the extent to which published estimates are shaped by methodological choices and publication selection bias. We find strong evidence of selective reporting: less precise estimates are systematically associated with lower reported elasticities. Correcting for these biases using a wide array of metaregression techniques raises the mean elasticity (sigma) from an uncorrected 13 to approximately 22. Model averaging techniques reveal that data features, specifically geographic scale, data granularity, and worker experience, explain much of the heterogeneity in reported results. While the choice between log(mean wage) and mean(log wage) remains a substantial driver of variation, its impact is moderated once publication bias and modeling scale are controlled for. Our \"best practice\" estimates, which prioritize the most granular data, suggest an elasticity of approximately 17 for regional models. While publication bias masks a higher potential elasticity, rigorous research designs that isolate pure substitution effects yield a stable benchmark that is more conservative than a simple bias correction yet higher than the uncorrected mean.",
+   "sections": [
+    {
+     "level": 2,
+     "title": "1. Introduction",
+     "anchor": "sec-1"
+    },
+    {
+     "level": 2,
+     "title": "2. Data",
+     "anchor": "sec-2"
+    },
+    {
+     "level": 3,
+     "title": "2.1. Collecting the Elasticity Dataset",
+     "anchor": "sec-2-1"
+    },
+    {
+     "level": 2,
+     "title": "ENDNOTES",
+     "anchor": "sec-endnotes"
+    },
+    {
+     "level": 2,
+     "title": "3. Publication Selection Bias",
+     "anchor": "sec-3"
+    },
+    {
+     "level": 2,
+     "title": "4. Heterogeneity",
+     "anchor": "sec-4"
+    },
+    {
+     "level": 2,
+     "title": "ENDNOTES",
+     "anchor": "sec-endnotes"
+    },
+    {
+     "level": 3,
+     "title": "4.1. Best-Practice Estimate",
+     "anchor": "sec-4-1"
+    },
+    {
+     "level": 2,
+     "title": "5. Conclusion",
+     "anchor": "sec-5"
+    },
+    {
+     "level": 2,
+     "title": "ENDNOTES",
+     "anchor": "sec-endnotes"
+    },
+    {
+     "level": 2,
+     "title": "Use of Generative AI",
+     "anchor": "sec-use-of-generative-ai"
+    },
+    {
+     "level": 2,
+     "title": "REFERENCES",
+     "anchor": "sec-references"
+    },
+    {
+     "level": 2,
+     "title": "Appendix",
+     "anchor": "sec-appendix"
+    },
+    {
+     "level": 2,
+     "title": "A Data",
+     "anchor": "sec-a-data"
+    },
+    {
+     "level": 2,
+     "title": "B Heterogeneity",
+     "anchor": "sec-b-heterogeneity"
+    }
+   ],
+   "headline_question": "How substitutable are native and immigrant workers?",
+   "headline": "about 17",
+   "headline_url": "https://meta-analysis.cz/results/#migrant",
+   "data": {
+    "parquet": "https://meta-analysis.cz/data/v1/migrant/migrant.parquet",
+    "csv": "https://meta-analysis.cz/data/v1/migrant/migrant.csv",
+    "codebook": "https://meta-analysis.cz/api/v1/codebooks/migrant.json"
+   },
+   "codebook_url": "https://meta-analysis.cz/api/v1/codebooks/migrant.json"
+  },
+  {
+   "project": "outliers",
+   "title": "Do decisions about outliers and influential effects matter? Evidence from 358 behavioral science meta-analyses",
+   "authors": [
+    "Tomas Havranek",
+    "Zuzana Irsova",
+    "Martina Luskova",
+    "T. D. Stanley"
+   ],
+   "year": 2026,
+   "journal": null,
+   "doi": null,
+   "publisher_url": null,
+   "full_text_url": "https://meta-analysis.cz/outliers/paper/",
+   "project_url": "https://meta-analysis.cz/outliers/",
+   "pdf_url": "https://meta-analysis.cz/outliers/outliers.pdf",
+   "abstract": "Meta-analysts routinely face estimates that look too large or extreme. Yet, how to handle them is left to the reviewer's judgment. The methods for detecting such estimates are well known. What is missing is an informed assessment of how much alternative handling choices might change a meta-analysis' conclusions. We fill this gap by analyzing the effects of four pre-registered handling treatments across 358 behavioral science meta-analyses with at least ten estimates. Each outlier handling treatment is estimated by two estimators (random effects and unrestricted weighted least squares), and compared to the 'do-nothing' baseline on three outcomes: the pooled effect, statistical significance, and whether the effect reaches the smallest effect size of interest (|d| ≥ 0.20). Our entire analysis and comparison pipelines were pre-registered. Alternative outlier handling treatments have little effect on the meta-analysis mean as the median absolute change in Cohen's d is at most 0.047 and often much less. Yet, at least one of these four treatments in combination with one of these estimators reverses the statistical significance of 11.5% of meta-analyses and the smallest-effect-of-interest assessment in 15.9%. Winsorizing has the least effect and DFBETAS the most. Categorical changes are found almost entirely among results already close to the decision boundary; strongly significant results essentially never change. These findings give applied meta-analysts, methods specialists, and reviewers a reference point for how much this under-reported choice matters and provide yet another reason for meta-analysts to publicly pre-specify their methods and handling treatments.",
+   "sections": [
+    {
+     "level": 2,
+     "title": "1. Introduction",
+     "anchor": "sec-1"
+    },
+    {
+     "level": 2,
+     "title": "2. Data",
+     "anchor": "sec-2"
+    },
+    {
+     "level": 2,
+     "title": "3. Methods",
+     "anchor": "sec-3"
+    },
+    {
+     "level": 3,
+     "title": "3.1. Treatments",
+     "anchor": "sec-3-1"
+    },
+    {
+     "level": 3,
+     "title": "3.2. Estimators",
+     "anchor": "sec-3-2"
+    },
+    {
+     "level": 3,
+     "title": "3.3. Outcomes",
+     "anchor": "sec-3-3"
+    },
+    {
+     "level": 3,
+     "title": "3.4. 'Outlier' identification",
+     "anchor": "sec-3-4"
+    },
+    {
+     "level": 3,
+     "title": "3.5. Pre-registration and robustness",
+     "anchor": "sec-3-5"
+    },
+    {
+     "level": 2,
+     "title": "4. Results",
+     "anchor": "sec-4"
+    },
+    {
+     "level": 3,
+     "title": "4.1. How much the estimated mean effect moves",
+     "anchor": "sec-4-1"
+    },
+    {
+     "level": 3,
+     "title": "4.2. Whether the mean effect is statistically significant",
+     "anchor": "sec-4-2"
+    },
+    {
+     "level": 3,
+     "title": "4.3. Larger than the smallest effect size of interest (SESOI)",
+     "anchor": "sec-4-3"
+    },
+    {
+     "level": 3,
+     "title": "4.4. Robustness",
+     "anchor": "sec-4-4"
+    },
+    {
+     "level": 2,
+     "title": "5. Discussion",
+     "anchor": "sec-5"
+    },
+    {
+     "level": 3,
+     "title": "5.1. Implications for practice",
+     "anchor": "sec-5-1"
+    },
+    {
+     "level": 3,
+     "title": "5.2. Limitations",
+     "anchor": "sec-5-2"
+    },
+    {
+     "level": 2,
+     "title": "6. Conclusion",
+     "anchor": "sec-6"
+    },
+    {
+     "level": 2,
+     "title": "REFERENCES",
+     "anchor": "sec-references"
+    }
+   ],
+   "headline_question": "How sensitive are meta-analysis results to outlier handling?",
+   "headline": "median shift at most 0.047 (Cohen's d); significance flips in 11.5% of cases",
+   "headline_url": "https://meta-analysis.cz/results/#outliers"
+  },
+  {
+   "project": "pcc",
+   "title": "Meta-analyses of partial correlations are biased: Detection and solutions",
+   "authors": [
+    "T. D. Stanley",
+    "Hristos Doucouliagos",
+    "Tomas Havranek"
+   ],
+   "year": 2024,
+   "journal": "Research Synthesis Methods",
+   "doi": "https://doi.org/10.1002/jrsm.1704",
+   "publisher_url": null,
+   "full_text_url": "https://meta-analysis.cz/pcc/paper/",
+   "project_url": "https://meta-analysis.cz/pcc/",
+   "pdf_url": "https://meta-analysis.cz/pcc/pcc2.pdf",
+   "abstract": "We demonstrate that all meta-analyses of partial correlations are biased, and yet hundreds of meta-analyses of partial correlation coefficients (PCC) are conducted each year widely across economics, business, education, psychology, and medical research. To address these biases, we offer a new weighted average, UWLS+3. UWLS+3 is the unrestricted weighted least squares weighted average that makes an adjustment to the degrees of freedom that are used to calculate partial correlations and, by doing so, renders trivial any remaining meta-analysis bias. Our simulations also reveal that these meta-analysis biases are small-sample biases (n < 200), and a simple correction factor of (n-2)/(n-1) greatly reduces these small-sample biases. In many applications where primary studies typically have hundreds or more observations, partial correlations can be meta-analyzed in standard ways with only negligible bias. However, in other fields in the social and the medical sciences that are dominated by small samples, these meta-analysis biases are easily avoidable by our proposed methods.",
+   "sections": [
+    {
+     "level": 2,
+     "title": "Highlights",
+     "anchor": "sec-highlights"
+    },
+    {
+     "level": 2,
+     "title": "1 | INTRODUCTION",
+     "anchor": "sec-1"
+    },
+    {
+     "level": 2,
+     "title": "2 | PARTIAL CORRELATION COEFFICIENTS",
+     "anchor": "sec-2"
+    },
+    {
+     "level": 2,
+     "title": "3 | META-ANALYSIS BIAS",
+     "anchor": "sec-3"
+    },
+    {
+     "level": 3,
+     "title": "3.1 | Simulations",
+     "anchor": "sec-3-1"
+    },
+    {
+     "level": 3,
+     "title": "3.2 | Reducing meta-analysis bias to triviality",
+     "anchor": "sec-3-2"
+    },
+    {
+     "level": 3,
+     "title": "3.2.1 | Reducing meta-analysis of PCCs bias to triviality: REss",
+     "anchor": "sec-3-2-1"
+    },
+    {
+     "level": 3,
+     "title": "3.2.2 | Reducing meta-analysis of PCCs bias to triviality: UWLS+3",
+     "anchor": "sec-3-2-2"
+    },
+    {
+     "level": 3,
+     "title": "3.2.3 | Simulation findings",
+     "anchor": "sec-3-2-3"
+    },
+    {
+     "level": 3,
+     "title": "3.3 | Heterogeneity",
+     "anchor": "sec-3-3"
+    },
+    {
+     "level": 2,
+     "title": "4 | DISCUSSION",
+     "anchor": "sec-4"
+    },
+    {
+     "level": 2,
+     "title": "5 | CONCLUSION",
+     "anchor": "sec-5"
+    },
+    {
+     "level": 2,
+     "title": "AUTHOR CONTRIBUTIONS",
+     "anchor": "sec-author-contributions"
+    },
+    {
+     "level": 2,
+     "title": "ACKNOWLEDGMENTS",
+     "anchor": "sec-acknowledgments"
+    },
+    {
+     "level": 2,
+     "title": "CONFLICT OF INTEREST STATEMENT",
+     "anchor": "sec-conflict-of-interest-statement"
+    },
+    {
+     "level": 2,
+     "title": "DATA AVAILABILITY STATEMENT",
+     "anchor": "sec-data-availability-statement"
+    },
+    {
+     "level": 2,
+     "title": "ORCID",
+     "anchor": "sec-orcid"
+    },
+    {
+     "level": 2,
+     "title": "ENDNOTES",
+     "anchor": "sec-endnotes"
+    },
+    {
+     "level": 2,
+     "title": "REFERENCES",
+     "anchor": "sec-references"
+    },
+    {
+     "level": 2,
+     "title": "AUTHOR BIOGRAPHIES",
+     "anchor": "sec-author-biographies"
+    },
+    {
+     "level": 2,
+     "title": "SUPPORTING INFORMATION",
+     "anchor": "sec-supporting-information"
+    }
+   ],
+   "headline_question": "Are meta-analyses of partial correlations biased?",
+   "headline": "all such meta-analyses are biased; the UWLS+3 weighted average corrects them",
+   "headline_url": "https://meta-analysis.cz/results/#pcc"
+  },
+  {
+   "project": "pcc_survey",
+   "title": "Do methods matter in the meta-analysis of partial correlation coefficients?",
+   "authors": [
+    "T. D. Stanley",
+    "Petr Cala",
+    "Hristos Doucouliagos",
+    "Zuzana Irsova",
+    "Tomas Havranek"
+   ],
+   "year": 2026,
+   "journal": null,
+   "doi": null,
+   "publisher_url": null,
+   "full_text_url": "https://meta-analysis.cz/pcc_survey/paper/",
+   "project_url": "https://meta-analysis.cz/pcc_survey/",
+   "pdf_url": "https://meta-analysis.cz/pcc_survey/pcc_survey.pdf",
+   "abstract": "Recent studies have demonstrated that conventional meta-analyses of partial correlation coefficients (PCC) are biased. Several adjustments have been shown in simulations to reduce these small-sample biases to negligibility. While many meta-analyses of partial correlation coefficients are conducted each year across several disciplines, the practical importance of these issues remains unknown. To address this question and to offer advice for applications, we survey 172 economic meta-analyses of PCCs. We find that small-sample biases are negligible in practice. However, some publication selection biases remain. Although Fisher's z transformations have often been recommended, they reduce neither small-sample nor publication selection biases relative to conventional random effects. Both the unrestricted weighted least squares (UWLS) and the Hunter-Schmidt (HS) estimators produce smaller, arguably less biased, estimates of the mean PCC in these applications than either random effects or Fisher's z transformations. These findings offer practical guidance for any discipline that meta-analyzes partial correlations.",
+   "sections": [
+    {
+     "level": 2,
+     "title": "Highlights",
+     "anchor": "sec-highlights"
+    },
+    {
+     "level": 2,
+     "title": "Data Availability Statement:",
+     "anchor": "sec-data-availability-statement"
+    },
+    {
+     "level": 2,
+     "title": "1. INTRODUCTION",
+     "anchor": "sec-1--introduction"
+    },
+    {
+     "level": 2,
+     "title": "2. META-ANALYSIS OF PARTIAL CORRELATIONS",
+     "anchor": "sec-2--meta-analysis-of-partial-correlations"
+    },
+    {
+     "level": 2,
+     "title": "3. ALTERNATIVE META-ANALYSIS ESTIMATORS OF PCCS",
+     "anchor": "sec-3--alternative-meta-analysis-estimators-of-pccs"
+    },
+    {
+     "level": 3,
+     "title": "3.1 Fisher's z Transformations: REz & UWLSz2",
+     "anchor": "sec-3-1-fishers-z-transformations-rez-uwlsz2"
+    },
+    {
+     "level": 3,
+     "title": "3.2 The Hunter-Schmidt Approach to the Meta-Analysis of Correlations",
+     "anchor": "sec-3-2-the-hunter-schmidt-approach-to-the-meta-analysis-of-correlations"
+    },
+    {
+     "level": 3,
+     "title": "3.3 Adjustment to Degrees of Freedom: UWLS+3",
+     "anchor": "sec-3-3-adjustment-to-degrees-of-freedom-uwls-3"
+    },
+    {
+     "level": 3,
+     "title": "3.4 Asymmetric Bias Hypothesis: Comparing Alternative PCC Estimators",
+     "anchor": "sec-3-4-asymmetric-bias-hypothesis-comparing-alternative-pcc-estimators"
+    },
+    {
+     "level": 2,
+     "title": "4. AN ILLUSTRATION",
+     "anchor": "sec-4--an-illustration"
+    },
+    {
+     "level": 2,
+     "title": "5. DATA",
+     "anchor": "sec-5--data"
+    },
+    {
+     "level": 2,
+     "title": "6. RESULTS AND DISCUSSION",
+     "anchor": "sec-6--results-and-discussion"
+    },
+    {
+     "level": 2,
+     "title": "7. CONCLUSION",
+     "anchor": "sec-7--conclusion"
+    },
+    {
+     "level": 2,
+     "title": "ENDNOTES",
+     "anchor": "sec-endnotes"
+    },
+    {
+     "level": 2,
+     "title": "REFERENCES",
+     "anchor": "sec-references"
+    }
+   ],
+   "headline_question": "Does the choice of meta-analysis method change the answer for partial correlations?",
+   "headline": "small-sample biases are negligible and Fisher's z helps with neither them nor publication selection bias; UWLS and Hunter-Schmidt give smaller, arguably less biased means than random effects",
+   "headline_url": "https://meta-analysis.cz/results/#pcc_survey"
+  },
+  {
+   "project": "price_puzzle",
+   "title": "How to Solve the Price Puzzle? A Meta-Analysis",
+   "authors": [
+    "Marek Rusnak",
+    "Tomas Havranek",
+    "Roman Horvath"
+   ],
+   "year": 2013,
+   "journal": "Journal of Money, Credit and Banking",
+   "doi": "https://doi.org/10.1111/j.1538-4616.2012.00561.x",
+   "publisher_url": null,
+   "full_text_url": "https://meta-analysis.cz/price_puzzle/paper/",
+   "project_url": "https://meta-analysis.cz/price_puzzle/",
+   "pdf_url": "https://meta-analysis.cz/price_puzzle/price_puzzle2.pdf",
+   "abstract": "The short-run increase in prices following an unexpected tightening of monetary policy constitutes a puzzle frequently reported in empirical studies. Yet the puzzle is easy to explain away when all published models are quantitatively reviewed. We collect and examine about 1,000 point estimates of impulse responses from 70 articles that use vector autoregressions to study monetary transmission in various countries. We find that the puzzle is created by model misspecifications: especially by the omission of commodity prices, neglect of potential output, and reliance on recursive identification. Our results also suggest that the strength of monetary policy depends on the country's openness, phase of the economic cycle, and degree of central bank independence.",
+   "sections": [
+    {
+     "level": 2,
+     "title": "1. THE IMPULSE RESPONSES DATA SET",
+     "anchor": "sec-1--the-impulse-responses-data-set"
+    },
+    {
+     "level": 2,
+     "title": "2. COLLECTING THE PIECES OF THE PUZZLE",
+     "anchor": "sec-2--collecting-the-pieces-of-the-puzzle"
+    },
+    {
+     "level": 3,
+     "title": "2.1 Omitted Variables",
+     "anchor": "sec-2-1-omitted-variables"
+    },
+    {
+     "level": 3,
+     "title": "2.2 Identification",
+     "anchor": "sec-2-2-identification"
+    },
+    {
+     "level": 3,
+     "title": "2.3 Monetary Policy Regime",
+     "anchor": "sec-2-3-monetary-policy-regime"
+    },
+    {
+     "level": 2,
+     "title": "3. CONSEQUENCES OF PUBLICATION SELECTION",
+     "anchor": "sec-3"
+    },
+    {
+     "level": 2,
+     "title": "4. WHAT EXPLAINS HETEROGENEITY",
+     "anchor": "sec-4"
+    },
+    {
+     "level": 2,
+     "title": "ENDNOTES",
+     "anchor": "sec-endnotes"
+    },
+    {
+     "level": 2,
+     "title": "5. CONCLUSION",
+     "anchor": "sec-5--conclusion"
+    },
+    {
+     "level": 2,
+     "title": "APPENDIX A: ROBUSTNESS CHECKS",
+     "anchor": "sec-appendix-a-robustness-checks"
+    },
+    {
+     "level": 2,
+     "title": "APPENDIX B: STUDIES USED IN THE META-ANALYSIS",
+     "anchor": "sec-appendix-b-studies-used-in-the-meta-analysis"
+    },
+    {
+     "level": 2,
+     "title": "LITERATURE CITED",
+     "anchor": "sec-literature-cited"
+    }
+   ],
+   "headline_question": "Do prices rise after a monetary policy tightening?",
+   "headline": "it disappears once publication and misspecification biases are corrected, and prices fall instead, bottoming out 0.33% below baseline six months after a 1-percentage-point rate rise",
+   "headline_url": "https://meta-analysis.cz/results/#price_puzzle",
+   "data": {
+    "parquet": "https://meta-analysis.cz/data/v1/price_puzzle/price_puzzle.parquet",
+    "csv": "https://meta-analysis.cz/data/v1/price_puzzle/price_puzzle.csv",
+    "codebook": "https://meta-analysis.cz/api/v1/codebooks/price_puzzle.json"
+   },
+   "codebook_url": "https://meta-analysis.cz/api/v1/codebooks/price_puzzle.json"
+  },
+  {
+   "project": "reforms",
+   "title": "Structural Reforms and Growth in Transition: A Meta-Analysis",
+   "authors": [
+    "Jan Babecky",
+    "Tomas Havranek"
+   ],
+   "year": 2014,
+   "journal": "Economics of Transition",
+   "doi": "https://doi.org/10.1111/ecot.12029",
+   "publisher_url": null,
+   "full_text_url": "https://meta-analysis.cz/reforms/paper/",
+   "project_url": "https://meta-analysis.cz/reforms/",
+   "pdf_url": "https://meta-analysis.cz/reforms/reforms2.pdf",
+   "abstract": "The present fiscal difficulties of many countries amplify the call for structural reforms. To provide stylized facts on how reforms worked in the past, we quantitatively review 60 studies estimating the relationship between reforms and growth. These studies examine structural reforms carried out in 26 transition countries around the world. Our results show that an average reform caused substantial costs in the short run, but had strong positive effects on long-run growth. Reforms focused on external liberalization proved to be more beneficial than others in both the short and long run. The findings hold even after correction for publication bias and misspecifications present in some primary studies.",
+   "sections": [
+    {
+     "level": 2,
+     "title": "1. Introduction",
+     "anchor": "sec-1--introduction"
+    },
+    {
+     "level": 2,
+     "title": "2. Studies on reforms and growth",
+     "anchor": "sec-2--studies-on-reforms-and-growth"
+    },
+    {
+     "level": 2,
+     "title": "3. Estimating the average effect",
+     "anchor": "sec-3--estimating-the-average-effect"
+    },
+    {
+     "level": 2,
+     "title": "4. Consequences of publication bias",
+     "anchor": "sec-4--consequences-of-publication-bias"
+    },
+    {
+     "level": 2,
+     "title": "5. Consequences of heterogeneity",
+     "anchor": "sec-5--consequences-of-heterogeneity"
+    },
+    {
+     "level": 2,
+     "title": "6. Discussion of the magnitude of the reform effect",
+     "anchor": "sec-6--discussion-of-the-magnitude-of-the-reform-effect"
+    },
+    {
+     "level": 2,
+     "title": "7. Conclusion",
+     "anchor": "sec-7--conclusion"
+    },
+    {
+     "level": 2,
+     "title": "References",
+     "anchor": "sec-references"
+    },
+    {
+     "level": 2,
+     "title": "Appendix A. Results of BMA",
+     "anchor": "sec-appendix-a--results-of-bma"
+    },
+    {
+     "level": 2,
+     "title": "Appendix B. Diagnostics of BMA",
+     "anchor": "sec-appendix-b--diagnostics-of-bma"
+    },
+    {
+     "level": 2,
+     "title": "ENDNOTES",
+     "anchor": "sec-endnotes"
+    }
+   ],
+   "headline_question": "How do structural reforms affect growth in transition countries?",
+   "headline": "reforms in transition countries cost growth in the short run but raise it strongly in the long run, and that holds after correcting for publication bias",
+   "headline_url": "https://meta-analysis.cz/results/#reforms",
+   "data": {
+    "parquet": "https://meta-analysis.cz/data/v1/reforms/reforms.parquet",
+    "csv": "https://meta-analysis.cz/data/v1/reforms/reforms.csv",
+    "codebook": "https://meta-analysis.cz/api/v1/codebooks/reforms.json"
+   },
+   "codebook_url": "https://meta-analysis.cz/api/v1/codebooks/reforms.json"
+  },
+  {
+   "project": "remittances",
+   "title": "Remittances and Economic Growth: A Meta-Analysis",
+   "authors": [
+    "Alina Cazachevici",
+    "Tomas Havranek",
+    "Roman Horvath"
+   ],
+   "year": 2020,
+   "journal": "World Development",
+   "doi": "https://doi.org/10.1016/j.worlddev.2020.105021",
+   "publisher_url": null,
+   "full_text_url": "https://meta-analysis.cz/remittances/paper/",
+   "project_url": "https://meta-analysis.cz/remittances/",
+   "pdf_url": "https://meta-analysis.cz/remittances/remittances2.pdf",
+   "abstract": "Expatriate workers' remittances represent an important source of financing for low- and middle-income countries. No consensus, however, has yet emerged regarding the effect of remittances on economic growth. In a quantitative survey of 538 estimates reported in 95 studies, we find that approximately 40% of the studies report a positive effect, 40% report no effect, and 20% report a negative effect. Our results indicate publication bias in favor of positive effects. Correcting for the bias using recently developed techniques, we find that the mean effect of remittances on growth is still positive but economically small. Nevertheless, our results uncover noticeable regional differences: remittances are growth-enhancing in Asia but not in Africa. Studies that do not control for alternative sources of external finance, such as foreign aid and foreign direct investment, mismeasure the effect of remittances. Finally, time-series studies and studies ignoring endogeneity issues find systematically larger effects of remittances on growth.",
+   "sections": [
+    {
+     "level": 2,
+     "title": "1. Introduction",
+     "anchor": "sec-1--introduction"
+    },
+    {
+     "level": 2,
+     "title": "2. Measuring the effect of remittances on growth",
+     "anchor": "sec-2--measuring-the-effect-of-remittances-on-growth"
+    },
+    {
+     "level": 2,
+     "title": "3. Methodology and data",
+     "anchor": "sec-3--methodology-and-data"
+    },
+    {
+     "level": 2,
+     "title": "4. Estimating the mean effect",
+     "anchor": "sec-4--estimating-the-mean-effect"
+    },
+    {
+     "level": 2,
+     "title": "5. Consequences of publication bias",
+     "anchor": "sec-5--consequences-of-publication-bias"
+    },
+    {
+     "level": 2,
+     "title": "6. Consequences of heterogeneity",
+     "anchor": "sec-6--consequences-of-heterogeneity"
+    },
+    {
+     "level": 2,
+     "title": "7. Conclusion",
+     "anchor": "sec-7--conclusion"
+    },
+    {
+     "level": 2,
+     "title": "CRediT authorship contribution statement",
+     "anchor": "sec-credit-authorship-contribution-statement"
+    },
+    {
+     "level": 2,
+     "title": "Declaration of Competing Interest",
+     "anchor": "sec-declaration-of-competing-interest"
+    },
+    {
+     "level": 2,
+     "title": "Acknowledgements",
+     "anchor": "sec-acknowledgements"
+    },
+    {
+     "level": 2,
+     "title": "Appendix A. List of primary studies included in the meta-analysis",
+     "anchor": "sec-appendix-a--list-of-primary-studies-included-in-the-meta-analysis"
+    },
+    {
+     "level": 2,
+     "title": "Appendix B. A robustness check using a more homogenous dataset",
+     "anchor": "sec-appendix-b--a-robustness-check-using-a-more-homogenous-dataset"
+    },
+    {
+     "level": 2,
+     "title": "Appendix C. A robustness check including papers using the Granger causality approach",
+     "anchor": "sec-appendix-c--a-robustness-check-including-papers-using-the-granger-causality-approach"
+    },
+    {
+     "level": 2,
+     "title": "Appendix D. Results for short-run relationship between remittances and economic growth",
+     "anchor": "sec-appendix-d--results-for-short-run-relationship-between-remittances-and-economic-growth"
+    },
+    {
+     "level": 2,
+     "title": "Appendix E. Funnel plot for a subsample of comparable estimates",
+     "anchor": "sec-appendix-e--funnel-plot-for-a-subsample-of-comparable-estimates"
+    },
+    {
+     "level": 2,
+     "title": "Appendix F. Supplementary data",
+     "anchor": "sec-appendix-f--supplementary-data"
+    },
+    {
+     "level": 2,
+     "title": "ENDNOTES",
+     "anchor": "sec-endnotes"
+    },
+    {
+     "level": 2,
+     "title": "References",
+     "anchor": "sec-references"
+    }
+   ],
+   "headline_question": "Do remittances boost economic growth?",
+   "headline": "positive but economically small",
+   "headline_url": "https://meta-analysis.cz/results/#remittances",
+   "data": {
+    "parquet": "https://meta-analysis.cz/data/v1/remittances/remittances.parquet",
+    "csv": "https://meta-analysis.cz/data/v1/remittances/remittances.csv",
+    "codebook": "https://meta-analysis.cz/api/v1/codebooks/remittances.json"
+   },
+   "codebook_url": "https://meta-analysis.cz/api/v1/codebooks/remittances.json"
+  },
+  {
+   "project": "resource_curse",
+   "title": "Natural Resources and Economic Growth: A Meta-Analysis",
+   "authors": [
+    "Tomas Havranek",
+    "Roman Horvath",
+    "Ayaz Zeynalov"
+   ],
+   "year": 2016,
+   "journal": "World Development",
+   "doi": "https://doi.org/10.1016/j.worlddev.2016.07.016",
+   "publisher_url": null,
+   "full_text_url": "https://meta-analysis.cz/resource_curse/paper/",
+   "project_url": "https://meta-analysis.cz/resource_curse/",
+   "pdf_url": "https://meta-analysis.cz/resource_curse/resource_curse2.pdf",
+   "abstract": "An important question in development studies is how natural resources richness affects long-term economic growth. No consensus answer, however, has yet emerged, with approximately 40% of empirical papers finding a negative effect, 40% finding no effect, and 20% finding a positive effect. Does the literature taken together imply the existence of the so-called natural resource curse? In a quantitative survey of 605 estimates reported in 43 studies, we find that overall support for the resource curse hypothesis is weak when potential publication bias and method heterogeneity are taken into account. Our results also suggest that four aspects of study design are especially effective in explaining the differences in results across studies: 1) controlling for institutional quality, 2) controlling for the level of investment activity, 3) distinguishing between different types of natural resources, and 4) differentiating between resource dependence and abundance.",
+   "sections": [
+    {
+     "level": 2,
+     "title": "1. INTRODUCTION",
+     "anchor": "sec-1--introduction"
+    },
+    {
+     "level": 2,
+     "title": "2. RELATED LITERATURE",
+     "anchor": "sec-2--related-literature"
+    },
+    {
+     "level": 2,
+     "title": "3. METHODOLOGY",
+     "anchor": "sec-3--methodology"
+    },
+    {
+     "level": 2,
+     "title": "4. DATA",
+     "anchor": "sec-4--data"
+    },
+    {
+     "level": 3,
+     "title": "(a) Outcome characteristics",
+     "anchor": "sec-a-outcome-characteristics"
+    },
+    {
+     "level": 3,
+     "title": "(b) Publication characteristics",
+     "anchor": "sec-b-publication-characteristics"
+    },
+    {
+     "level": 3,
+     "title": "(c) Institutional quality",
+     "anchor": "sec-c-institutional-quality"
+    },
+    {
+     "level": 3,
+     "title": "(d) Macroeconomic conditions",
+     "anchor": "sec-d-macroeconomic-conditions"
+    },
+    {
+     "level": 3,
+     "title": "(e) The choice of the dependent variable",
+     "anchor": "sec-e-the-choice-of-the-dependent-variable"
+    },
+    {
+     "level": 3,
+     "title": "(f) The choice of the natural resource variable",
+     "anchor": "sec-f-the-choice-of-the-natural-resource-variable"
+    },
+    {
+     "level": 3,
+     "title": "(g) Dataset type",
+     "anchor": "sec-g-dataset-type"
+    },
+    {
+     "level": 3,
+     "title": "(h) Estimation method",
+     "anchor": "sec-h-estimation-method"
+    },
+    {
+     "level": 3,
+     "title": "(i) Dataset time period",
+     "anchor": "sec-i-dataset-time-period"
+    },
+    {
+     "level": 2,
+     "title": "5. PUBLICATION BIAS",
+     "anchor": "sec-5--publication-bias"
+    },
+    {
+     "level": 2,
+     "title": "6. EXPLAINING THE DIFFERENCES IN ESTIMATES",
+     "anchor": "sec-6--explaining-the-differences-in-estimates"
+    },
+    {
+     "level": 2,
+     "title": "7. CONCLUDING REMARKS",
+     "anchor": "sec-7--concluding-remarks"
+    },
+    {
+     "level": 2,
+     "title": "ENDNOTES",
+     "anchor": "sec-endnotes"
+    },
+    {
+     "level": 2,
+     "title": "REFERENCES",
+     "anchor": "sec-references"
+    },
+    {
+     "level": 2,
+     "title": "APPENDIX A",
+     "anchor": "sec-appendix-a"
+    },
+    {
+     "level": 3,
+     "title": "A.1 STUDIES INCLUDED IN THE META-ANALYSIS (ALPHABETICAL ORDER)",
+     "anchor": "sec-a-1-studies-included-in-the-meta-analysis-alphabetical-order"
+    },
+    {
+     "level": 2,
+     "title": "APPENDIX B",
+     "anchor": "sec-appendix-b"
+    }
+   ],
+   "headline_question": "Does having abundant natural resources hurt long-run economic growth?",
+   "headline": "weak support for a curse",
+   "headline_url": "https://meta-analysis.cz/results/#resource_curse",
+   "data": {
+    "parquet": "https://meta-analysis.cz/data/v1/resource_curse/resource_curse.parquet",
+    "csv": "https://meta-analysis.cz/data/v1/resource_curse/resource_curse.csv",
+    "codebook": "https://meta-analysis.cz/api/v1/codebooks/resource_curse.json"
+   },
+   "codebook_url": "https://meta-analysis.cz/api/v1/codebooks/resource_curse.json"
+  },
+  {
+   "project": "risk",
+   "title": "Relative Risk Aversion: A Meta-Analysis",
+   "authors": [
+    "Ali Elminejad",
+    "Tomas Havranek",
+    "Zuzana Irsova"
+   ],
+   "year": 2025,
+   "journal": "Journal of Economic Surveys",
+   "doi": "https://doi.org/10.1111/joes.12689",
+   "publisher_url": null,
+   "full_text_url": "https://meta-analysis.cz/risk/paper/",
+   "project_url": "https://meta-analysis.cz/risk/",
+   "pdf_url": "https://meta-analysis.cz/risk/risk2.pdf",
+   "abstract": "Estimates of relative risk aversion vary widely, but no study has attempted to quantitatively trace the sources of the variation. We collect 1,021 estimates from 92 studies that use the consumption Euler equation to measure relative risk aversion and that disentangle it from intertemporal substitution. We show that calibrations of risk aversion are systematically larger than estimates thereof. Moreover, reported estimates are systematically larger than the underlying risk aversion because of publication bias. After correction for the bias, the literature suggests a mean risk aversion of 1 in economics and 2-7 in finance contexts. The reported estimates are driven by the characteristics of data (frequency, dimension, country, stockholding) and utility (functional form, treatment of durables). To obtain these results we use recently developed nonlinear techniques to correct for publication bias and Bayesian model averaging techniques to account for model uncertainty.",
+   "sections": [
+    {
+     "level": 2,
+     "title": "1. Introduction",
+     "anchor": "sec-1"
+    },
+    {
+     "level": 2,
+     "title": "2. Data",
+     "anchor": "sec-2"
+    },
+    {
+     "level": 2,
+     "title": "3. Publication Bias",
+     "anchor": "sec-3"
+    },
+    {
+     "level": 2,
+     "title": "4. Heterogeneity",
+     "anchor": "sec-4"
+    },
+    {
+     "level": 2,
+     "title": "5. Conclusion",
+     "anchor": "sec-5"
+    },
+    {
+     "level": 2,
+     "title": "Acknowledgments",
+     "anchor": "sec-acknowledgments"
+    },
+    {
+     "level": 2,
+     "title": "Conflicts of Interest",
+     "anchor": "sec-conflicts-of-interest"
+    },
+    {
+     "level": 2,
+     "title": "Data Availability Statement",
+     "anchor": "sec-data-availability-statement"
+    },
+    {
+     "level": 2,
+     "title": "References",
+     "anchor": "sec-references"
+    },
+    {
+     "level": 2,
+     "title": "Supporting Information",
+     "anchor": "sec-supporting-information"
+    },
+    {
+     "level": 2,
+     "title": "Appendix A",
+     "anchor": "sec-appendix-a"
+    },
+    {
+     "level": 3,
+     "title": "Details of Literature Search",
+     "anchor": "sec-details-of-literature-search"
+    }
+   ],
+   "headline_question": "What is the coefficient of relative risk aversion?",
+   "headline": "1 in economics, 2-7 in finance",
+   "headline_url": "https://meta-analysis.cz/results/#risk",
+   "data": {
+    "parquet": "https://meta-analysis.cz/data/v1/risk/risk.parquet",
+    "csv": "https://meta-analysis.cz/data/v1/risk/risk.csv",
+    "codebook": "https://meta-analysis.cz/api/v1/codebooks/risk.json"
+   },
+   "codebook_url": "https://meta-analysis.cz/api/v1/codebooks/risk.json"
+  },
+  {
+   "project": "scc",
+   "title": "Selective Reporting and the Social Cost of Carbon",
+   "authors": [
+    "Tomas Havranek",
+    "Zuzana Irsova",
+    "Karel Janda",
+    "David Zilberman"
+   ],
+   "year": 2015,
+   "journal": "Energy Economics",
+   "doi": "https://doi.org/10.1016/j.eneco.2015.08.009",
+   "publisher_url": null,
+   "full_text_url": "https://meta-analysis.cz/scc/paper/",
+   "project_url": "https://meta-analysis.cz/scc/",
+   "pdf_url": "https://meta-analysis.cz/scc/scc2.pdf",
+   "abstract": "We examine potential selective reporting in the literature on the social cost of carbon (SCC) by conducting a meta-analysis of 809 estimates of the SCC reported in 101 studies. Our results indicate that estimates for which the 95% confidence interval includes zero are less likely to be reported than estimates excluding negative values of the SCC, which might create an upward bias in the literature. The evidence for selective reporting is stronger for studies published in peer-reviewed journals than for unpublished studies. We show that the findings are not driven by the asymmetry of confidence intervals surrounding the SCC and are robust to controlling for various characteristics of study design and to alternative definitions of confidence intervals. Our estimates of the mean reported SCC corrected for the selective reporting bias range between 0 and 134 USD per ton of carbon in 2010 prices for emission year 2015.",
+   "sections": [
+    {
+     "level": 2,
+     "title": "1. Introduction",
+     "anchor": "sec-1--introduction"
+    },
+    {
+     "level": 2,
+     "title": "2. Estimating the social cost of carbon",
+     "anchor": "sec-2--estimating-the-social-cost-of-carbon"
+    },
+    {
+     "level": 2,
+     "title": "3. The SCC data set",
+     "anchor": "sec-3--the-scc-data-set"
+    },
+    {
+     "level": 2,
+     "title": "4. Detecting selective reporting",
+     "anchor": "sec-4--detecting-selective-reporting"
+    },
+    {
+     "level": 2,
+     "title": "5. Meta-regression results",
+     "anchor": "sec-5--meta-regression-results"
+    },
+    {
+     "level": 2,
+     "title": "6. Robustness checks",
+     "anchor": "sec-6--robustness-checks"
+    },
+    {
+     "level": 2,
+     "title": "7. Concluding remarks",
+     "anchor": "sec-7--concluding-remarks"
+    },
+    {
+     "level": 2,
+     "title": "Appendix A. Supplementary data",
+     "anchor": "sec-appendix-a--supplementary-data"
+    },
+    {
+     "level": 2,
+     "title": "ENDNOTES",
+     "anchor": "sec-endnotes"
+    },
+    {
+     "level": 2,
+     "title": "References",
+     "anchor": "sec-references"
+    }
+   ],
+   "headline_question": "What is the social cost of carbon?",
+   "headline": "0-134 USD per metric ton of carbon",
+   "headline_url": "https://meta-analysis.cz/results/#scc",
+   "data": {
+    "parquet": "https://meta-analysis.cz/data/v1/scc/scc.parquet",
+    "csv": "https://meta-analysis.cz/data/v1/scc/scc.csv",
+    "codebook": "https://meta-analysis.cz/api/v1/codebooks/scc.json"
+   },
+   "codebook_url": "https://meta-analysis.cz/api/v1/codebooks/scc.json"
+  },
+  {
+   "project": "sigma",
+   "title": "Measuring Capital-Labor Substitution: The Importance of Method Choices and Publication Bias",
+   "authors": [
+    "Sebastian Gechert",
+    "Tomas Havranek",
+    "Zuzana Irsova",
+    "Dominika Kolcunova"
+   ],
+   "year": 2022,
+   "journal": "Review of Economic Dynamics",
+   "doi": "https://doi.org/10.1016/j.red.2021.05.003",
+   "publisher_url": null,
+   "full_text_url": "https://meta-analysis.cz/sigma/paper/",
+   "project_url": "https://meta-analysis.cz/sigma/",
+   "pdf_url": "https://meta-analysis.cz/sigma/sigma2.pdf",
+   "abstract": "We show that the large elasticity of substitution between capital and labor estimated in the literature on average, 0.9, can be explained by three factors: publication bias, use of aggregated data, and omission of the first-order condition for capital. The mean elasticity conditional on the absence of publication bias, disaggregated data, and inclusion of information from the first-order condition for capital is 0.3. To obtain this result, we collect 3,186 estimates of the elasticity reported in 121 studies, codify 71 variables that reflect the context in which researchers produce their estimates, and address model uncertainty by Bayesian and frequentist model averaging. We employ nonlinear techniques to correct for publication bias, which is responsible for at least half of the overall reduction in the mean elasticity from 0.9 to 0.3. Our findings also suggest that a failure to normalize the production function leads to a substantial upward bias in the estimated elasticity. The weight of evidence accumulated in the empirical literature emphatically rejects the Cobb-Douglas specification.",
+   "sections": [
+    {
+     "level": 2,
+     "title": "1. Introduction",
+     "anchor": "sec-1--introduction"
+    },
+    {
+     "level": 2,
+     "title": "2. Estimating the elasticity",
+     "anchor": "sec-2--estimating-the-elasticity"
+    },
+    {
+     "level": 2,
+     "title": "3. Data",
+     "anchor": "sec-3--data"
+    },
+    {
+     "level": 2,
+     "title": "4. Publication bias",
+     "anchor": "sec-4--publication-bias"
+    },
+    {
+     "level": 3,
+     "title": "4.1. Baseline methods",
+     "anchor": "sec-4-1--baseline-methods"
+    },
+    {
+     "level": 3,
+     "title": "4.2. Extensions",
+     "anchor": "sec-4-2--extensions"
+    },
+    {
+     "level": 2,
+     "title": "5. Heterogeneity",
+     "anchor": "sec-5--heterogeneity"
+    },
+    {
+     "level": 3,
+     "title": "5.1. Variables",
+     "anchor": "sec-5-1--variables"
+    },
+    {
+     "level": 3,
+     "title": "5.2. Estimation",
+     "anchor": "sec-5-2--estimation"
+    },
+    {
+     "level": 3,
+     "title": "5.3. Results",
+     "anchor": "sec-5-3--results"
+    },
+    {
+     "level": 3,
+     "title": "5.4. Economic significance and implied elasticity",
+     "anchor": "sec-5-4--economic-significance-and-implied-elasticity"
+    },
+    {
+     "level": 2,
+     "title": "6. Concluding remarks",
+     "anchor": "sec-6--concluding-remarks"
+    },
+    {
+     "level": 2,
+     "title": "Appendix A. Illustrating the effects of publication bias in a Monte Carlo simulation",
+     "anchor": "sec-appendix-a--illustrating-the-effects-of-publication-bias-in-a-monte-carlo-simulation"
+    },
+    {
+     "level": 2,
+     "title": "ENDNOTES",
+     "anchor": "sec-endnotes"
+    },
+    {
+     "level": 2,
+     "title": "References",
+     "anchor": "sec-references"
+    }
+   ],
+   "headline_question": "What is the elasticity of substitution between capital and labor?",
+   "headline": "0.3",
+   "headline_url": "https://meta-analysis.cz/results/#sigma",
+   "data": {
+    "parquet": "https://meta-analysis.cz/data/v1/sigma/sigma.parquet",
+    "csv": "https://meta-analysis.cz/data/v1/sigma/sigma.csv",
+    "codebook": "https://meta-analysis.cz/api/v1/codebooks/sigma.json"
+   },
+   "codebook_url": "https://meta-analysis.cz/api/v1/codebooks/sigma.json"
+  },
+  {
+   "project": "size",
+   "title": "Firm Size and Stock Returns: A Quantitative Survey",
+   "authors": [
+    "Anton Astakhov",
+    "Tomas Havranek",
+    "Jiri Novak"
+   ],
+   "year": 2019,
+   "journal": "Journal of Economic Surveys",
+   "doi": "https://doi.org/10.1111/joes.12335",
+   "publisher_url": null,
+   "full_text_url": "https://meta-analysis.cz/size/paper/",
+   "project_url": "https://meta-analysis.cz/size/",
+   "pdf_url": "https://meta-analysis.cz/size/size2.pdf",
+   "abstract": "A prominent factor used in most models predicting stock returns is firm size. Yet no consensus has emerged on the magnitude and stability of the size premium, with some researchers even questioning the usefulness of the factor. To take stock of the voluminous academic literature on the size premium, we collect 1,746 estimates of the effect of size on returns reported in 102 published studies and conduct the first meta-analysis on this topic. We find evidence of strong publication bias: researchers prefer to report estimates that are statistically significant and show a negative relation between size and returns, exaggerating the mean reported coefficient threefold. After correcting for the bias, we find that the literature suggests a size premium (the difference in annual stock returns on the smallest and largest capitalization quintile) of 1.72%. We also find that the premium was much larger prior to the publication of the first study on the topic. Moreover, we show that the intensity of publication bias has been decreasing over time.",
+   "sections": [
+    {
+     "level": 2,
+     "title": "1. Introduction",
+     "anchor": "sec-1--introduction"
+    },
+    {
+     "level": 2,
+     "title": "2. Related Literature",
+     "anchor": "sec-2--related-literature"
+    },
+    {
+     "level": 2,
+     "title": "3. Research Design",
+     "anchor": "sec-3--research-design"
+    },
+    {
+     "level": 3,
+     "title": "3.1 Methodology",
+     "anchor": "sec-3-1-methodology"
+    },
+    {
+     "level": 3,
+     "title": "3.2 Data Sample",
+     "anchor": "sec-3-2-data-sample"
+    },
+    {
+     "level": 2,
+     "title": "4. Results",
+     "anchor": "sec-4--results"
+    },
+    {
+     "level": 2,
+     "title": "5. Conclusion",
+     "anchor": "sec-5--conclusion"
+    },
+    {
+     "level": 2,
+     "title": "Acknowledgments",
+     "anchor": "sec-acknowledgments"
+    },
+    {
+     "level": 2,
+     "title": "ENDNOTES",
+     "anchor": "sec-endnotes"
+    },
+    {
+     "level": 2,
+     "title": "References",
+     "anchor": "sec-references"
+    },
+    {
+     "level": 2,
+     "title": "Appendix A: List of Studies Used in the Meta-Analysis",
+     "anchor": "sec-appendix-a-list-of-studies-used-in-the-meta-analysis"
+    },
+    {
+     "level": 2,
+     "title": "Appendix B: Estimating the Mediating Factors of Publication Bias: Additional Results",
+     "anchor": "sec-appendix-b-estimating-the-mediating-factors-of-publication-bias-additional-results"
+    },
+    {
+     "level": 2,
+     "title": "Appendix C: Results after Including Working Papers",
+     "anchor": "sec-appendix-c-results-after-including-working-papers"
+    }
+   ],
+   "headline_question": "How large is the size premium in stock returns?",
+   "headline": "1.72% per year",
+   "headline_url": "https://meta-analysis.cz/results/#size",
+   "data": {
+    "parquet": "https://meta-analysis.cz/data/v1/size/size.parquet",
+    "csv": "https://meta-analysis.cz/data/v1/size/size.csv",
+    "codebook": "https://meta-analysis.cz/api/v1/codebooks/size.json"
+   },
+   "codebook_url": "https://meta-analysis.cz/api/v1/codebooks/size.json"
+  },
+  {
+   "project": "skill",
+   "title": "Publication and Attenuation Biases in Measuring Skill Substitution",
+   "authors": [
+    "Tomas Havranek",
+    "Zuzana Irsova",
+    "Lubica Laslopova",
+    "Olesia Zeynalova"
+   ],
+   "year": 2024,
+   "journal": "Review of Economics and Statistics",
+   "doi": "https://doi.org/10.1162/rest_a_01227",
+   "publisher_url": null,
+   "full_text_url": "https://meta-analysis.cz/skill/paper/",
+   "project_url": "https://meta-analysis.cz/skill/",
+   "pdf_url": "https://meta-analysis.cz/skill/skill2.pdf",
+   "abstract": "A key parameter in the analysis of wage inequality is the elasticity of substitution between skilled and unskilled labor. We show that the empirical literature is consistent with both publication and attenuation bias in the estimated inverse elasticities. Publication bias, which exaggerates the mean reported inverse elasticity, dominates and results in corrected inverse elasticities closer to zero than the typically published estimates. The implied mean elasticity is 4, with a lower bound of 2. Elasticities are smaller for developing countries. To derive these results, we use nonlinear tests for publication bias and model averaging techniques that account for model uncertainty.",
+   "sections": [
+    {
+     "level": 2,
+     "title": "I. Introduction",
+     "anchor": "sec-i--introduction"
+    },
+    {
+     "level": 2,
+     "title": "II. Publication Bias",
+     "anchor": "sec-ii--publication-bias"
+    },
+    {
+     "level": 2,
+     "title": "III. Heterogeneity",
+     "anchor": "sec-iii--heterogeneity"
+    },
+    {
+     "level": 2,
+     "title": "IV. Conclusion",
+     "anchor": "sec-iv--conclusion"
+    },
+    {
+     "level": 2,
+     "title": "ENDNOTES",
+     "anchor": "sec-endnotes"
+    },
+    {
+     "level": 2,
+     "title": "REFERENCES",
+     "anchor": "sec-references"
+    }
+   ],
+   "headline_question": "How substitutable are skilled and unskilled workers?",
+   "headline": "4, with a lower bound of 2 and smaller values in developing countries",
+   "headline_url": "https://meta-analysis.cz/results/#skill",
+   "data": {
+    "parquet": "https://meta-analysis.cz/data/v1/skill/skill.parquet",
+    "csv": "https://meta-analysis.cz/data/v1/skill/skill.csv",
+    "codebook": "https://meta-analysis.cz/api/v1/codebooks/skill.json"
+   },
+   "codebook_url": "https://meta-analysis.cz/api/v1/codebooks/skill.json"
+  },
+  {
+   "project": "spillovers",
+   "title": "Estimating Vertical Spillovers from FDI: Why Results Vary and What the True Effect Is",
+   "authors": [
+    "Tomas Havranek",
+    "Zuzana Irsova"
+   ],
+   "year": 2011,
+   "journal": "Journal of International Economics",
+   "doi": "https://doi.org/10.1016/j.jinteco.2011.07.004",
+   "publisher_url": null,
+   "full_text_url": "https://meta-analysis.cz/spillovers/paper/",
+   "project_url": "https://meta-analysis.cz/spillovers/",
+   "pdf_url": "https://meta-analysis.cz/spillovers/spillovers2.pdf",
+   "abstract": "In the last decade, more than 100 researchers have examined productivity spillovers from foreign affiliates to local firms in upstream or downstream sectors. Yet results vary broadly across methods and countries. To examine these vertical spillovers in a systematic way, we collected 3,626 estimates of spillovers and reviewed the literature quantitatively. Our meta-analysis indicates that model misspecifications reduce the reported estimates and journals select relatively large estimates for publication. No selection, however, was found for working papers. Taking these biases into consideration, the average spillover to suppliers is economically significant, whereas the spillover to buyers is statistically significant but small. Greater spillovers are received by countries that have underdeveloped financial systems and are open to international trade. Greater spillovers are generated by investors who come from distant countries and have only a slight technological edge over local firms.",
+   "sections": [
+    {
+     "level": 2,
+     "title": "1. Introduction",
+     "anchor": "sec-1--introduction"
+    },
+    {
+     "level": 2,
+     "title": "2. The spillover estimates data set",
+     "anchor": "sec-2--the-spillover-estimates-data-set"
+    },
+    {
+     "level": 2,
+     "title": "3. The importance of publication bias",
+     "anchor": "sec-3--the-importance-of-publication-bias"
+    },
+    {
+     "level": 2,
+     "title": "4. What explains differences in spillover estimates",
+     "anchor": "sec-4--what-explains-differences-in-spillover-estimates"
+    },
+    {
+     "level": 3,
+     "title": "4.1. Method heterogeneity",
+     "anchor": "sec-4-1--method-heterogeneity"
+    },
+    {
+     "level": 3,
+     "title": "4.2. Structural heterogeneity",
+     "anchor": "sec-4-2--structural-heterogeneity"
+    },
+    {
+     "level": 2,
+     "title": "5. Results of the multivariate meta-regression",
+     "anchor": "sec-5--results-of-the-multivariate-meta-regression"
+    },
+    {
+     "level": 3,
+     "title": "5.1. Method heterogeneity",
+     "anchor": "sec-5-1--method-heterogeneity"
+    },
+    {
+     "level": 3,
+     "title": "5.2. Structural heterogeneity",
+     "anchor": "sec-5-2--structural-heterogeneity"
+    },
+    {
+     "level": 2,
+     "title": "6. Conclusion",
+     "anchor": "sec-6--conclusion"
+    },
+    {
+     "level": 2,
+     "title": "Acknowledgements",
+     "anchor": "sec-acknowledgements"
+    },
+    {
+     "level": 2,
+     "title": "Appendix A. Data description",
+     "anchor": "sec-appendix-a--data-description"
+    },
+    {
+     "level": 2,
+     "title": "REFERENCES",
+     "anchor": "sec-references"
+    },
+    {
+     "level": 2,
+     "title": "ENDNOTES",
+     "anchor": "sec-endnotes"
+    }
+   ],
+   "headline_question": "Do FDI spillovers benefit domestic suppliers and buyers?",
+   "headline": "about 9% higher productivity for suppliers per 10-percentage-point rise in foreign presence, small for buyers and none within the sector",
+   "headline_url": "https://meta-analysis.cz/results/#spillovers",
+   "data": {
+    "parquet": "https://meta-analysis.cz/data/v1/spillovers/spillovers.parquet",
+    "csv": "https://meta-analysis.cz/data/v1/spillovers/spillovers.csv",
+    "codebook": "https://meta-analysis.cz/api/v1/codebooks/spillovers.json"
+   },
+   "codebook_url": "https://meta-analysis.cz/api/v1/codebooks/spillovers.json"
+  },
+  {
+   "project": "students",
+   "title": "Student Employment and Education: A Meta-Analysis",
+   "authors": [
+    "Katerina Kroupova",
+    "Tomas Havranek",
+    "Zuzana Irsova"
+   ],
+   "year": 2024,
+   "journal": "Economics of Education Review",
+   "doi": "https://doi.org/10.1016/j.econedurev.2024.102539",
+   "publisher_url": null,
+   "full_text_url": "https://meta-analysis.cz/students/paper/",
+   "project_url": "https://meta-analysis.cz/students/",
+   "pdf_url": "https://meta-analysis.cz/students/students2.pdf",
+   "abstract": "Educational outcomes have many determinants, but one that most young people can readily control is choosing whether to work while in school. Sixty-nine studies have estimated the effect, but results vary from large negative to positive estimates. We show that the results are systematically driven by context, publication bias, and treatment of endogeneity. Studies neglecting endogeneity suffer from an upward bias, which is almost fully compensated by publication selection in favor of negative estimates. Overall the literature suggests a negative but economically inconsequential mean effect. The effect is more substantive for decisions to drop out. To derive these results we collect 861 previously reported estimates together with 32 variables reflecting estimation context, use recently developed techniques to correct for publication bias, and employ Bayesian model averaging to assign a pattern to the heterogeneity in the literature.",
+   "sections": [
+    {
+     "level": 2,
+     "title": "1. Introduction",
+     "anchor": "sec-1--introduction"
+    },
+    {
+     "level": 2,
+     "title": "2. Data",
+     "anchor": "sec-2--data"
+    },
+    {
+     "level": 2,
+     "title": "3. Endogeneity and publication biases",
+     "anchor": "sec-3--endogeneity-and-publication-biases"
+    },
+    {
+     "level": 3,
+     "title": "3.1. Endogeneity",
+     "anchor": "sec-3-1--endogeneity"
+    },
+    {
+     "level": 3,
+     "title": "3.2. Publication bias",
+     "anchor": "sec-3-2--publication-bias"
+    },
+    {
+     "level": 3,
+     "title": "3.3. Interaction of the biases",
+     "anchor": "sec-3-3--interaction-of-the-biases"
+    },
+    {
+     "level": 2,
+     "title": "4. Heterogeneity",
+     "anchor": "sec-4--heterogeneity"
+    },
+    {
+     "level": 2,
+     "title": "ENDNOTES",
+     "anchor": "sec-endnotes"
+    },
+    {
+     "level": 2,
+     "title": "5. Conclusion",
+     "anchor": "sec-5--conclusion"
+    },
+    {
+     "level": 2,
+     "title": "Declaration of competing interest",
+     "anchor": "sec-declaration-of-competing-interest"
+    },
+    {
+     "level": 2,
+     "title": "Data availability",
+     "anchor": "sec-data-availability"
+    },
+    {
+     "level": 2,
+     "title": "Appendix A. Supplementary data",
+     "anchor": "sec-appendix-a--supplementary-data"
+    },
+    {
+     "level": 2,
+     "title": "References",
+     "anchor": "sec-references"
+    }
+   ],
+   "headline_question": "Does working while in school hurt academic outcomes?",
+   "headline": "about 0, slightly negative",
+   "headline_url": "https://meta-analysis.cz/results/#students",
+   "data": {
+    "parquet": "https://meta-analysis.cz/data/v1/students/students.parquet",
+    "csv": "https://meta-analysis.cz/data/v1/students/students.csv",
+    "codebook": "https://meta-analysis.cz/api/v1/codebooks/students.json"
+   },
+   "codebook_url": "https://meta-analysis.cz/api/v1/codebooks/students.json"
+  },
+  {
+   "project": "substitution",
+   "title": "Cross-Country Heterogeneity in Intertemporal Substitution",
+   "authors": [
+    "Tomas Havranek",
+    "Roman Horvath",
+    "Zuzana Irsova",
+    "Marek Rusnak"
+   ],
+   "year": 2015,
+   "journal": "Journal of International Economics",
+   "doi": "https://doi.org/10.1016/j.jinteco.2015.01.012",
+   "publisher_url": null,
+   "full_text_url": "https://meta-analysis.cz/substitution/paper/",
+   "project_url": "https://meta-analysis.cz/substitution/",
+   "pdf_url": "https://meta-analysis.cz/substitution/substitution2.pdf",
+   "abstract": "We collect 2,735 estimates of the elasticity of intertemporal substitution in consumption from 169 published studies that cover 104 countries during different time periods. The estimates vary substantially from country to country, even after controlling for 30 aspects of study design. Our results suggest that income and asset market participation are the most effective factors in explaining the heterogeneity: households in rich countries and countries with high stock market participation substitute a larger fraction of consumption intertemporally in response to changes in expected asset returns. Micro-level studies that focus on sub-samples of rich households or asset holders also find systematically larger values of the elasticity.",
+   "sections": [
+    {
+     "level": 2,
+     "title": "1. Introduction",
+     "anchor": "sec-1--introduction"
+    },
+    {
+     "level": 2,
+     "title": "2. Estimates of the elasticity",
+     "anchor": "sec-2--estimates-of-the-elasticity"
+    },
+    {
+     "level": 2,
+     "title": "3. Why do the estimates differ?",
+     "anchor": "sec-3--why-do-the-estimates-differ"
+    },
+    {
+     "level": 2,
+     "title": "4. Meta-regression analysis",
+     "anchor": "sec-4--meta-regression-analysis"
+    },
+    {
+     "level": 2,
+     "title": "5. Robustness checks",
+     "anchor": "sec-5--robustness-checks"
+    },
+    {
+     "level": 2,
+     "title": "6. Concluding remarks",
+     "anchor": "sec-6--concluding-remarks"
+    },
+    {
+     "level": 2,
+     "title": "Appendix A. Summary statistics",
+     "anchor": "sec-appendix-a--summary-statistics"
+    },
+    {
+     "level": 2,
+     "title": "Appendix B. Posterior densities for BMA with no fixed variables",
+     "anchor": "sec-appendix-b--posterior-densities-for-bma-with-no-fixed-variables"
+    },
+    {
+     "level": 2,
+     "title": "Appendix C. Diagnostics of BMA",
+     "anchor": "sec-appendix-c--diagnostics-of-bma"
+    },
+    {
+     "level": 2,
+     "title": "ENDNOTES",
+     "anchor": "sec-endnotes"
+    },
+    {
+     "level": 2,
+     "title": "REFERENCES",
+     "anchor": "sec-references"
+    }
+   ],
+   "headline_question": "Why does intertemporal substitution differ across countries?",
+   "headline": "income and asset market participation are the most effective factors in explaining the cross-country heterogeneity",
+   "headline_url": "https://meta-analysis.cz/results/#substitution",
+   "data": {
+    "parquet": "https://meta-analysis.cz/data/v1/substitution/substitution.parquet",
+    "csv": "https://meta-analysis.cz/data/v1/substitution/substitution.csv",
+    "codebook": "https://meta-analysis.cz/api/v1/codebooks/substitution.json"
+   },
+   "codebook_url": "https://meta-analysis.cz/api/v1/codebooks/substitution.json"
+  },
+  {
+   "project": "trust",
+   "title": "Trust, Rule of Law, and the Size Premium: Evidence from a Meta-Analysis",
+   "authors": [
+    "Jiri Schwarz",
+    "Tomas Havranek",
+    "Zuzana Irsova",
+    "Jiri Novak"
+   ],
+   "year": 2026,
+   "journal": null,
+   "doi": null,
+   "publisher_url": null,
+   "full_text_url": "https://meta-analysis.cz/trust/paper/",
+   "project_url": "https://meta-analysis.cz/trust/",
+   "pdf_url": "https://meta-analysis.cz/trust/trust.pdf",
+   "abstract": "Reported estimates of the size premium vary widely across studies, countries, periods, and designs. We examine whether generalized trust and rule of law help account for that heterogeneity. We study 1,613 reported size-slope estimates from 105 studies and 31 countries, linking them to trust measures from the European Values Study and World Values Survey, and to rule of law from the Worldwide Governance Indicators. The meta-regressions control for study design, specification, precision, publication context, and market and macro-financial conditions; Bayesian model averaging assesses uncertainty over the control set. The more stable association is with rule of law, and it runs against the intuitive guess that better legal institutions shrink the premium: stronger rule of law is associated with more negative reported size slopes, hence larger conventional size premia, and the association survives dropping the United States. The trust association is conditional: higher generalized trust is linked to less negative reported slopes, and thus a weaker premium, where rule of law is weak, and it fades as rule of law strengthens. The conditional pattern is sign-consistent but imprecise under clustered inference and leans on the large U.S. share of the sample. Formal and informal institutions thus help organize part of the disagreement in this literature, although the analysis concerns variation in reported estimates and does not identify causal effects.",
+   "sections": [
+    {
+     "level": 2,
+     "title": "1 Introduction",
+     "anchor": "sec-1-introduction"
+    },
+    {
+     "level": 2,
+     "title": "2 Background and Hypotheses",
+     "anchor": "sec-2-background-and-hypotheses"
+    },
+    {
+     "level": 3,
+     "title": "2.1 The Size Premium and Reported Estimates",
+     "anchor": "sec-2-1-the-size-premium-and-reported-estimates"
+    },
+    {
+     "level": 3,
+     "title": "2.2 Trust as an Informal Institution",
+     "anchor": "sec-2-2-trust-as-an-informal-institution"
+    },
+    {
+     "level": 3,
+     "title": "2.3 Rule of Law as a Formal Institution",
+     "anchor": "sec-2-3-rule-of-law-as-a-formal-institution"
+    },
+    {
+     "level": 3,
+     "title": "2.4 Institutional Substitution and Testable Predictions",
+     "anchor": "sec-2-4-institutional-substitution-and-testable-predictions"
+    },
+    {
+     "level": 2,
+     "title": "3 Data and Variables",
+     "anchor": "sec-3-data-and-variables"
+    },
+    {
+     "level": 3,
+     "title": "3.1 Size-Premium Estimates and Primary-Study Specifications",
+     "anchor": "sec-3-1-size-premium-estimates-and-primary-study-specifications"
+    },
+    {
+     "level": 3,
+     "title": "3.2 Trust Measures",
+     "anchor": "sec-3-2-trust-measures"
+    },
+    {
+     "level": 3,
+     "title": "3.3 Rule of Law and Other Institutional Measures",
+     "anchor": "sec-3-3-rule-of-law-and-other-institutional-measures"
+    },
+    {
+     "level": 3,
+     "title": "3.4 Meta-Regression Moderators and Sample Construction",
+     "anchor": "sec-3-4-meta-regression-moderators-and-sample-construction"
+    },
+    {
+     "level": 2,
+     "title": "4 Empirical Strategy",
+     "anchor": "sec-4-empirical-strategy"
+    },
+    {
+     "level": 3,
+     "title": "4.1 Baseline Meta-Regression",
+     "anchor": "sec-4-1-baseline-meta-regression"
+    },
+    {
+     "level": 3,
+     "title": "4.2 Marginal-Effect Definitions",
+     "anchor": "sec-4-2-marginal-effect-definitions"
+    },
+    {
+     "level": 3,
+     "title": "4.3 Model Uncertainty",
+     "anchor": "sec-4-3-model-uncertainty"
+    },
+    {
+     "level": 2,
+     "title": "5 Results",
+     "anchor": "sec-5-results"
+    },
+    {
+     "level": 3,
+     "title": "5.1 Descriptive Heterogeneity",
+     "anchor": "sec-5-1-descriptive-heterogeneity"
+    },
+    {
+     "level": 3,
+     "title": "5.2 Baseline Institutional Meta-Regression",
+     "anchor": "sec-5-2-baseline-institutional-meta-regression"
+    },
+    {
+     "level": 3,
+     "title": "5.3 Marginal Effects and Interpretation",
+     "anchor": "sec-5-3-marginal-effects-and-interpretation"
+    },
+    {
+     "level": 3,
+     "title": "5.4 Bayesian Model Averaging",
+     "anchor": "sec-5-4-bayesian-model-averaging"
+    },
+    {
+     "level": 2,
+     "title": "6 Robustness and Diagnostics",
+     "anchor": "sec-6-robustness-and-diagnostics"
+    },
+    {
+     "level": 2,
+     "title": "ENDNOTES",
+     "anchor": "sec-endnotes"
+    },
+    {
+     "level": 2,
+     "title": "7 Discussion",
+     "anchor": "sec-7-discussion"
+    },
+    {
+     "level": 2,
+     "title": "8 Conclusion",
+     "anchor": "sec-8-conclusion"
+    },
+    {
+     "level": 2,
+     "title": "A Source Inventory and Diagnostic Support",
+     "anchor": "sec-a-source-inventory-and-diagnostic-support"
+    },
+    {
+     "level": 2,
+     "title": "B Variable Definitions",
+     "anchor": "sec-b-variable-definitions"
+    },
+    {
+     "level": 2,
+     "title": "C Additional Tables and Figures",
+     "anchor": "sec-c-additional-tables-and-figures"
+    },
+    {
+     "level": 2,
+     "title": "D Reporting and AI-Use Compliance",
+     "anchor": "sec-d-reporting-and-ai-use-compliance"
+    },
+    {
+     "level": 2,
+     "title": "REFERENCES",
+     "anchor": "sec-references"
+    }
+   ],
+   "headline_question": "Does stronger rule of law relate to a larger size premium?",
+   "headline": "stronger rule of law, larger size premium",
+   "headline_url": "https://meta-analysis.cz/results/#trust",
+   "data": {
+    "parquet": "https://meta-analysis.cz/data/v1/trust/trust.parquet",
+    "csv": "https://meta-analysis.cz/data/v1/trust/trust.csv",
+    "codebook": "https://meta-analysis.cz/api/v1/codebooks/trust.json"
+   },
+   "codebook_url": "https://meta-analysis.cz/api/v1/codebooks/trust.json"
+  },
+  {
+   "project": "water",
+   "title": "Measuring the Income Elasticity of Water Demand: The Importance of Publication and Endogeneity Biases",
+   "authors": [
+    "Tomas Havranek",
+    "Zuzana Irsova",
+    "Tomas Vlach"
+   ],
+   "year": 2018,
+   "journal": "Land Economics",
+   "doi": "https://doi.org/10.3368/le.94.2.259",
+   "publisher_url": null,
+   "full_text_url": "https://meta-analysis.cz/water/paper/",
+   "project_url": "https://meta-analysis.cz/water/",
+   "pdf_url": "https://meta-analysis.cz/water/water2.pdf",
+   "abstract": "We present the first study that examines the effects of publication selection in the literature estimating the income elasticity of water demand. Paradoxically, more affected by publication selection are the otherwise preferable estimates that control for the endogeneity. Because such estimates tend to be smaller and less precise, they are often statistically insignificant, which leads to more intense specification searching and bias. Attempting to correct simultaneously for publication and endogeneity biases, we find that the mean underlying elasticity is approximately 0.15 or less. The result is robust to controlling for 30 other characteristics of the estimates and using Bayesian model averaging to account for model uncertainty. The differences in the reported estimates are systematically driven by differences in the tariff structure, regional coverage, data granularity, and control for temperature in the demand equation.",
+   "sections": [
+    {
+     "level": 2,
+     "title": "1. Introduction",
+     "anchor": "sec-1--introduction"
+    },
+    {
+     "level": 2,
+     "title": "2. The Data Set",
+     "anchor": "sec-2--the-data-set"
+    },
+    {
+     "level": 2,
+     "title": "3. Detecting Publication Bias",
+     "anchor": "sec-3--detecting-publication-bias"
+    },
+    {
+     "level": 2,
+     "title": "4. Why Do the Estimates Vary?",
+     "anchor": "sec-4--why-do-the-estimates-vary"
+    },
+    {
+     "level": 3,
+     "title": "Variables and Estimation",
+     "anchor": "sec-variables-and-estimation"
+    },
+    {
+     "level": 3,
+     "title": "Results",
+     "anchor": "sec-results"
+    },
+    {
+     "level": 2,
+     "title": "5. Robustness Checks",
+     "anchor": "sec-5--robustness-checks"
+    },
+    {
+     "level": 2,
+     "title": "6. Concluding Remarks",
+     "anchor": "sec-6--concluding-remarks"
+    },
+    {
+     "level": 2,
+     "title": "Acknowledgments",
+     "anchor": "sec-acknowledgments"
+    },
+    {
+     "level": 2,
+     "title": "ENDNOTES",
+     "anchor": "sec-endnotes"
+    },
+    {
+     "level": 2,
+     "title": "References",
+     "anchor": "sec-references"
+    }
+   ],
+   "headline_question": "How much does water demand rise with income?",
+   "headline": "about 0.15 or less",
+   "headline_url": "https://meta-analysis.cz/results/#water",
+   "data": {
+    "parquet": "https://meta-analysis.cz/data/v1/water/water.parquet",
+    "csv": "https://meta-analysis.cz/data/v1/water/water.csv",
+    "codebook": "https://meta-analysis.cz/api/v1/codebooks/water.json"
+   },
+   "codebook_url": "https://meta-analysis.cz/api/v1/codebooks/water.json"
+  }
+ ]
+}

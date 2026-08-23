@@ -956,7 +956,8 @@ def main():
     # membership as a discovery signal -- and these are the highest-value URLs on the site.
     # The catalogue, the two dataset descriptors, the harmonised table in both formats, the
     # headline table and the two llms files were reachable only from prose that links them.
-    for rel in ["api/v1/datasets.json", "api/v1/datapackage.json", "api/v1/croissant.json",
+    for rel in ["api/v1/datasets.json", "api/v1/papers.json",
+                "api/v1/datapackage.json", "api/v1/croissant.json",
                 "data/v1/estimates_harmonised.csv", "data/v1/estimates_harmonised.parquet",
                 "estimates.csv", "llms.txt", "llms-full.txt"]:
         if os.path.isfile(os.path.join(SITE, rel)):
@@ -1046,6 +1047,9 @@ def main():
            f"- [Headline results for every paper]({BASE}/estimates.csv): one row per paper — the "
            f"parameter, the value the paper headlines, the sample it rests on, and the verbatim "
            f"sentence from the paper that each figure came from (CSV)",
+           f"- [Map of the corpus]({BASE}/api/v1/papers.json): one small record per paper -- "
+           f"title, authors, DOI, full-text URL, PDF, and the sections it contains with their "
+           f"anchors. Fetch this first and one page after, rather than the whole corpus",
            f"- [Every paper in full text]({BASE}/llms-full.txt): the whole corpus in one file -- "
            f"citation, links, abstract and the complete text of all {_n_full} papers, for LLM ingestion",
            f"- [Papers republished in full as HTML]({BASE}/papers/): the complete text of each "
