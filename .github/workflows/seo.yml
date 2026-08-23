@@ -93,6 +93,14 @@ jobs:
       - name: Require the search index to match the pages it indexes
         run: python tools/build_search_index.py --check
 
+      # /maive/how-to/ prints numbers that came from somebody else's service. The requests and
+      # the full responses are recorded in api/v1/maive-howto.json, and this proves the page is
+      # exactly what that file renders, that the settings the page teaches are the settings
+      # that ran, and that the WAIVE run is not MAIVE in disguise. Offline: it never calls the
+      # API on a push. The live re-run is a separate, weekly, non-blocking job.
+      - name: Verify the MAIVE how-to against its recorded runs
+        run: python tools/check_maive_howto.py
+
       # Did this push touch the data layer? 09_verify proves the tree is internally
       # CONSISTENT; it cannot prove the tree FOLLOWS FROM its canonical inputs. A tree can be
       # perfectly self-consistent and still stale, which is exactly what happened four times in

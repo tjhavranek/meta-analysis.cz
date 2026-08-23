@@ -236,7 +236,7 @@ The search runs in your browser; nothing is sent anywhere." />
 </div>
 <!-- end header -->
 <!-- start page -->
-<div id="page">
+<div id="page" class="single">
 \t<div id="content">
 \t\t<div class="post">
 \t\t\t<div class="entry">

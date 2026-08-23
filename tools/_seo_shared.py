@@ -26,6 +26,9 @@ SELF_MANAGED = {
     "results",     # built by redesign/build_results_page.py; an ItemList of Question nodes.
                    # Deliberately not FAQPage: these are research findings, not frequently
                    # asked questions, and claiming that type would be a misdeclaration.
+    "maive/how-to",  # built by tools/build_maive_howto.py; a how-to whose numbers come from
+                   # a live API run and are recorded in api/v1/maive-howto.json. Not a paper:
+                   # Highwire citation_* tags on it would be fabricated.
     "search",      # built by tools/build_search_page.py; a tool, not a document. It has no
                    # author, no year and no abstract, so Highwire citation_* tags would be
                    # fabricated. It is still in the sitemap -- it is a real page a reader

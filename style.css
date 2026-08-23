@@ -1115,7 +1115,40 @@ table.catalogue li{ margin-bottom:var(--s2); font-size:var(--f-1); line-height:1
    page fills, it left-aligns inside a card 40% wider than anything in it, and on a query with
    no hits the card collapses to a stub floating in the surround. Fit the shell to the content
    and let the column use it. */
-#page:has(#searchform){ max-width:46rem; }
-#page:has(#searchform) #content > .post > .entry{ max-width:none; }
+#page.single{ max-width:46rem; }
+#page.single #content > .post > .entry{ max-width:none; }
 /* An empty result list must not hold open the space a full one would. */
 .results:empty{ margin:0; }
+
+/* ---- /maive/how-to/ ------------------------------------------------------ */
+/* A tutorial is a different shape from a paper: short blocks, a code block that must be
+   copied exactly, and two small tables that are label-and-value rather than data. */
+.entry p.lede{ font:400 var(--f1)/1.5 var(--serif); color:var(--ink); margin:0 0 var(--s6); }
+.entry table.cols, .entry table.ladder{ border-collapse:collapse; margin:0 0 var(--s5);
+  width:100%; max-width:var(--measure); }
+.entry table.cols th, .entry table.ladder th{ text-align:left; vertical-align:top;
+  font:400 var(--f0)/1.5 var(--sans); color:var(--ink-soft); font-weight:400;
+  padding:var(--s2) var(--s4) var(--s2) 0; white-space:nowrap; }
+.entry table.cols td, .entry table.ladder td{ vertical-align:top; padding:var(--s2) 0;
+  font:400 var(--f0)/1.5 var(--sans); }
+.entry table.ladder th{ white-space:normal; }
+.entry table.ladder td{ font-variant-numeric:tabular-nums; }
+.entry table.ladder tr:nth-child(2) td{ font-size:1.15em; }
+.entry .se{ color:var(--ink-soft); }
+/* The code block is the page's real product: it has to survive being copied, so it scrolls
+   rather than wraps, and it never gets smart quotes. */
+.entry pre.code{ background:var(--tint); border:1px solid var(--rule); border-radius:var(--radius);
+  padding:var(--s4); overflow-x:auto; margin:0 0 var(--s5); max-width:var(--measure); }
+.entry pre.code code{ font:400 .8125rem/1.6 var(--mono,ui-monospace,SFMono-Regular,Menlo,
+  Consolas,monospace); color:var(--ink); white-space:pre; }
+/* The prompt is copied whole into a chat box, so it keeps its own line breaks and scrolls
+   rather than re-wrapping into something that reads like broken JSON. */
+.entry pre.code.prompt code{ white-space:pre; }
+.entry p.warn{ border-left:3px solid var(--accent); padding-left:var(--s4);
+  font:400 var(--f-1)/1.6 var(--sans); color:var(--ink); max-width:var(--measure);
+  margin:0 0 var(--s5); }
+.entry p.provenance{ font:400 var(--f-1)/1.6 var(--sans); color:var(--ink-soft);
+  border-top:1px solid var(--rule); padding-top:var(--s3); margin-top:var(--s6);
+  max-width:var(--measure); }
+.entry img[src$="funnel.png"]{ max-width:min(34rem,100%); height:auto; display:block;
+  margin:0 0 var(--s4); }

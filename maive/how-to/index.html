@@ -1,0 +1,229 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>How to run MAIVE</title>
+<meta name="description" content="MAIVE corrects a meta-analysis for publication bias and for p-hacking that runs through the reported standard error. It needs three columns you already have and one you may not: the sample size. A worked example on real data, with the request that produced every number." />
+<link rel="canonical" href="https://meta-analysis.cz/maive/how-to/" />
+<link href="/style.css" rel="stylesheet" type="text/css" />
+<link href="/paper.css" rel="stylesheet" type="text/css" />
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"HowTo","@id":"https://meta-analysis.cz/maive/how-to/#howto","name":"How to run MAIVE","description":"Correct a meta-analysis for publication bias and for p-hacking that runs through the reported standard error, using three columns of data and one API call.","inLanguage":"en","license":"https://creativecommons.org/licenses/by/4.0/","isBasedOn":"https://meta-analysis.cz/maive/#paper","about":{"@id":"https://meta-analysis.cz/maive/#paper"},"tool":{"@type":"SoftwareApplication","name":"EasyMeta","url":"https://www.easymeta.org/"},"step":[{"@type":"HowToStep","name":"Assemble the data","url":"https://meta-analysis.cz/maive/how-to/#what-you-need","text":"One row per estimate with effect, se and n_obs, plus study_id when a study reports more than one estimate."},{"@type":"HowToStep","name":"Run it","url":"https://meta-analysis.cz/maive/how-to/#run-it","text":"POST the rows to https://api.maive.eu/v1/run-model with the parameters nested under \"parameters\": modelType MAIVE, useLogFirstStage true, standardErrorTreatment clustered_cr2."},{"@type":"HowToStep","name":"Read three numbers before the estimate","url":"https://meta-analysis.cz/maive/how-to/#read-three-numbers","text":"firstStage.mode must be log, firstStageFStatistic at or above 10, and publicationBias.pValue says whether there was bias to correct."},{"@type":"HowToStep","name":"Handle a weak first stage","url":"https://meta-analysis.cz/maive/how-to/#weak-first-stage","text":"Below an F of 10 do not quote the point estimate: report the Anderson-Rubin interval and run RTMA as well."}]}</script>
+</head>
+<body>
+<div id="wrapper">
+<div id="logo">
+	<a class="masthead-home" href="/">meta-analysis.cz</a>
+	<p class="site-name"><a href="/maive/how-to/">How to run MAIVE</a></p>
+	<h2> <span class="mk">&raquo;</span>&nbsp;&nbsp;&nbsp; three columns and one call</h2>
+</div>
+<div id="header">
+	<div id="menu">
+		<ul>
+			<li class="current_page_item"><a href="/maive/how-to/">How to</a></li>
+			<li><a href="/maive/">MAIVE</a></li>
+			<li><a href="/maive/paper/">The paper</a></li>
+			<li><a href="https://www.easymeta.org/">EasyMeta</a></li>
+			<li><a href="/">All meta-analyses</a></li>
+		</ul>
+	</div>
+</div>
+<div id="page" class="single">
+	<div id="content">
+		<div class="post">
+			<div class="entry">
+
+<p class="lede"><b>MAIVE corrects a meta-analysis for publication bias and for the p-hacking
+that runs through reported standard errors &#8212; estimates made to look more precise than
+their samples can support.</b> It needs one column ordinary meta-analysis does not: the
+sample size behind each estimate.</p>
+
+<h2 id="what-you-need">What you need</h2>
+
+<table class="cols">
+<caption>One row per estimate.</caption>
+<tbody>
+<tr><th><code>effect</code></th><td>the reported estimate</td></tr>
+<tr><th><code>se</code></th><td>its standard error</td></tr>
+<tr><th><code>n_obs</code></th><td>the sample size behind it</td></tr>
+<tr><th><code>study_id</code></th><td>optional; add it when a study reports more than one
+estimate and MAIVE will cluster on it</td></tr>
+</tbody>
+</table>
+
+<p>Ordinary meta-analysis needs the first two. MAIVE needs the third. That is the whole
+extra ask, and it is why <a href="/datasets/">every dataset here</a> ships those column
+names.</p>
+
+<h2 id="run-it">Run it</h2>
+
+<p>The web app at <a href="https://www.easymeta.org/">easymeta.org</a> takes a spreadsheet
+and needs no code. To call it directly, POST to the free API &#8212; no key, no sign-up:</p>
+
+<pre class="code"><code>curl -s https://api.maive.eu/v1/run-model \
+  -H 'Content-Type: application/json' -d '{
+  "data": [
+    {"effect": 0.42, "se": 0.11, "n_obs": 120, "study_id": "Smith2020"},
+    {"effect": 0.31, "se": 0.06, "n_obs":  90, "study_id": "Smith2020"},
+    {"effect": 0.55, "se": 0.20, "n_obs":  45, "study_id": "Jones2019"}
+  ],
+  "parameters": {"modelType": "MAIVE", "useLogFirstStage": true,
+                 "standardErrorTreatment": "clustered_cr2"}
+}'</code></pre>
+
+<p class="warn"><b>The parameters must be nested under <code>parameters</code>.</b> Sent at
+the top level they are silently ignored: you get HTTP 200, default settings, and no warning.
+Use the synchronous endpoint above &#8212; the asynchronous one ignores
+<code>modelType</code> and runs MAIVE whatever you ask for.</p>
+
+<h2 id="ask-an-ai">Ask an AI to run it</h2>
+
+<p>Give an assistant your data and this, and check what it reports against the three numbers
+below.</p>
+
+<pre class="code prompt"><code>Run MAIVE on my data with the free EasyMeta API and report the result.
+
+POST https://api.maive.eu/v1/run-model  (no API key needed)
+  {"data": [{"effect": .., "se": .., "n_obs": .., "study_id": ".."}, ...],
+   "parameters": {"modelType": "MAIVE", "useLogFirstStage": true,
+                  "standardErrorTreatment": "clustered_cr2"}}
+
+study_id is optional; include it if a study reports several estimates.
+
+Three things that will silently give you the wrong answer:
+- Parameters MUST be nested under "parameters". At the top level they are ignored
+  and you get defaults, with HTTP 200 and no warning.
+- Use this synchronous endpoint. The async one (/v1/runs) ignores modelType.
+- Check firstStage.mode is "log" in the response. If it says "levels", the
+  parameters did not take effect, so fix the nesting and run again.
+
+Then: if firstStageFStatistic is below 10 the instrument is weak, so do not quote
+effectEstimate. Re-run with "computeAndersonRubin": true and report andersonRubinCI,
+and also run RTMA at /v1/run-rtma. Otherwise report effectEstimate, standardError,
+the first-stage F, and publicationBias.pValue. Do not invent numbers.</code></pre>
+
+<h2 id="example">A worked example</h2>
+
+<p>The <a href="/excess_sensitivity/">excess sensitivity of consumption</a> to anticipated
+income: 3,127 estimates from 144 studies, the whole dataset, unmodified.</p>
+
+<table class="ladder">
+<tbody>
+<tr><th>Simple mean of the literature</th><td>0.373</td></tr>
+<tr><th>MAIVE</th><td><b>0.195</b> <span class="se">(0.010)</span></td></tr>
+<tr><th>WAIVE</th><td>0.081 <span class="se">(0.007)</span></td></tr>
+</tbody>
+</table>
+
+<p><img src="/maive/how-to/funnel.png" alt="Funnel plot of the excess-sensitivity
+literature. Hollow points are the reported standard errors, filled points the instrumented
+ones; the MAIVE fit sits well below the simple mean." width="840" height="840" /></p>
+
+<p>The hollow points are what the studies reported; the filled points are what MAIVE
+instruments them to. Publication bias costs roughly half the effect. The paper's own
+correction, which also removes aggregation bias, lands at 0.11.</p>
+
+<h2 id="read-three-numbers">Read three numbers before the estimate</h2>
+
+<table class="cols">
+<tbody>
+<tr><th><code>firstStage.mode</code></th><td><b>log</b> &#8212; if this says
+<code>levels</code>, your parameters never took effect</td></tr>
+<tr><th><code>firstStageFStatistic</code></th><td><b>346.8</b> &#8212; below 10 the
+instrument is weak and the point estimate should not be quoted</td></tr>
+<tr><th><code>publicationBias.pValue</code></th><td><b>2e-105</b> &#8212; whether there
+was bias to correct at all</td></tr>
+</tbody>
+</table>
+
+<h2 id="weak-first-stage">If the first stage is weak</h2>
+
+<p>Restrict the same literature to instrumental-variable estimates on panel data
+&#8212; 294 estimates from 21 studies, one of the dataset's own coding
+dimensions &#8212; and the first stage collapses to <b>F = 0.85</b>.</p>
+
+<p>MAIVE still returns a number, 0.462 (0.453). Do not quote it. Re-run with
+<code>"computeAndersonRubin": true</code> and report the interval instead:
+<b>[-0.481, 1.593]</b>, which is wide and contains zero. An Anderson&#8211;Rubin
+interval inverts a test rather than being built from the point estimate, so it need not
+contain that estimate.</p>
+
+<p>Then run <a href="https://www.easymeta.org/">RTMA</a> at
+<code>/v1/run-rtma</code>, which does not depend on the instrument:
+<b>&#956; = 0.401</b>, 95% CI [0.306, 0.582]. Check its
+<code>diagnostics</code> before quoting it &#8212; here R-hat is 1.002 with
+0 divergent transitions, so the fit is sound.</p>
+
+<h2 id="p-hacking">If you suspect p-hacking</h2>
+
+<p>Send <code>"modelType": "WAIVE"</code>, which downweights estimates whose precision the
+sample size does not support: <b>0.081</b> (0.007) against MAIVE's 0.195.</p>
+
+<p>Suspect, not demonstrated: this literature shows no significant bunching of
+<i>t</i>-statistics just above 1.96 (350 against 321, p = 0.28). WAIVE is the estimator to
+reach for when you have reason to think reported precision is manufactured, not a verdict
+that it was.</p>
+
+<h2 id="limits">What this does not fix</h2>
+
+<p>MAIVE removes bias that runs through the standard error. It does not repair an estimate
+whose standard error is honest but whose specification was hacked &#8212; dropped controls,
+sample cuts, outcome switching. No method that reads only effect, standard error and sample
+size can.</p>
+
+<p>It also needs a standard error that is not simply arithmetic in the sample size. For
+partial correlation coefficients, SE = &#8730;((1&#8722;r&#178;)/(n&#8722;2)) by
+construction, so regressing log SE on log <i>n</i> returns a slope of &#8722;0.5 and an
+enormous F that is a tautology rather than a strong instrument. If that regression has an
+R&#178; near 1, MAIVE has nothing to instrument away.</p>
+
+<h2 id="newer-than-the-paper">This is newer than the paper</h2>
+
+<p>The <a href="/maive/paper/">Nature Communications paper</a> runs the first stage in
+levels. The app and the API are newer, and we recommend the log first stage used
+throughout this page &#8212; <code>"useLogFirstStage": true</code>. It is not a
+cosmetic difference: on some literatures the two forms give first-stage F statistics two
+orders of magnitude apart, and levels can call a strong instrument weak. Where this page
+and the paper disagree, the page is the more current advice.</p>
+
+<p class="provenance">Every number here came from the API on 2026-08-23. The requests
+that produced them, and the full responses, are in
+<a href="/api/v1/maive-howto.json">maive-howto.json</a>.</p>
+
+			</div>
+		</div>
+	</div>
+</div>
+</div>
+<footer class="site-foot">
+<p class="foot-lede"><b>meta-analysis.cz</b> collects meta-analyses in economics: the papers, the
+data behind them, and the code that produced them. It is maintained by <a href="/about/"><b>Tomas Havranek</b> and
+<b>Zuzana Irsova</b></a> at the Institute of Economic Studies, Charles University, Prague.</p>
+<p class="foot-nav"><a href="/">All meta-analyses</a> &middot;
+<a href="/papers/">Papers in full</a> &middot;
+<a href="/results/">Headline results</a> &middot;
+<a href="/datasets/">Datasets and the pooled table</a> &middot;
+<a href="/maive/">MAIVE</a> &middot;
+<a href="/guidelines/">Practitioner&#x27;s guide</a> &middot;
+<a href="/notes/">Research notes</a> &middot;
+<a href="https://www.easymeta.org/">EasyMeta web app</a></p>
+<p class="foot-who"><b>Tomas Havranek</b> &middot; <a href="https://www.tomashavranek.cz/">tomashavranek.cz</a> &middot; <a href="https://ies.fsv.cuni.cz/contacts/institute-members/78067720">IES FSV UK</a> &middot; <a href="https://orcid.org/0000-0002-3158-2539">ORCID</a> &middot; <a href="https://scholar.google.com/citations?user=BF0BvBkAAAAJ">Google Scholar</a> &middot; <a href="https://ideas.repec.org/f/pha418.html">RePEc</a> &middot; <a href="https://www.scopus.com/authid/detail.uri?authorId=24453189000">Scopus</a> &middot; <a href="https://cepr.org/about/people/tomas-havranek">CEPR</a> &middot; <a href="https://metrics.stanford.edu/people/tomas-havranek">Stanford METRICS</a></p>
+<p class="foot-who"><b>Zuzana Irsova</b> &middot; <a href="https://www.irsova.com/">irsova.com</a> &middot; <a href="https://ies.fsv.cuni.cz/contacts/institute-members/73504033">IES FSV UK</a> &middot; <a href="https://orcid.org/0000-0002-0753-8124">ORCID</a> &middot; <a href="https://scholar.google.com/citations?user=LaHrICUAAAAJ">Google Scholar</a> &middot; <a href="https://ideas.repec.org/e/pir23.html">RePEc</a> &middot; <a href="https://www.scopus.com/authid/detail.uri?authorId=37080793200">Scopus</a> &middot; <a href="https://cepr.org/about/people/zuzana-irsova">CEPR</a> &middot; <a href="https://metrics.stanford.edu/people/zuzana-irsova">Stanford METRICS</a></p>
+<p class="foot-cite"><b>How to cite this collection:</b> Havranek, T. and Z. Irsova (2026).
+meta-analysis.cz: harmonised estimate-level data from meta-analyses in economics. Zenodo.
+<a href="https://doi.org/10.5281/zenodo.21773678">https://doi.org/10.5281/zenodo.21773678</a>.
+Individual papers carry their own citation on their own page.</p>
+<p class="foot-licence"><b>Licence: CC BY 4.0.</b> Everything on this site is licensed under the
+<a href="https://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0
+International Licence</a>. That covers the papers, the datasets, their CSV and Parquet conversions,
+the pooled table, the codebooks, and the documentation. You may copy, redistribute, adapt, and reuse
+any of it for any purpose, including commercial use and training machine-learning models, as long
+as you give attribution to meta-analysis.cz. You do not need to ask.</p>
+<p class="foot-machine">For machines: <a href="/api/v1/datasets.json">datasets.json</a> &middot;
+<a href="/api/v1/datapackage.json">datapackage.json</a> &middot;
+<a href="/api/v1/croissant.json">croissant.json</a> &middot;
+<a href="/llms.txt">llms.txt</a> &middot; <a href="/llms-full.txt">llms-full.txt</a> &middot;
+<a href="/sitemap.xml">sitemap.xml</a> &middot; <a href="/LICENSE">LICENSE</a></p>
+</footer>
+</body>
+</html>
