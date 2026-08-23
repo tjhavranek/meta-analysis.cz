@@ -26,6 +26,10 @@ SELF_MANAGED = {
     "results",     # built by redesign/build_results_page.py; an ItemList of Question nodes.
                    # Deliberately not FAQPage: these are research findings, not frequently
                    # asked questions, and claiming that type would be a misdeclaration.
+    "search",      # built by tools/build_search_page.py; a tool, not a document. It has no
+                   # author, no year and no abstract, so Highwire citation_* tags would be
+                   # fabricated. It is still in the sitemap -- it is a real page a reader
+                   # may want -- but it is a tool, not a document, and is described as one.
     "papers",      # built by tools/build_fulltext_page.py; an index of the full-text
                    # editions, so a CollectionPage rather than a 55th paper. Without this
                    # the injector emits ScholarlyArticle and Highwire tags for a list.

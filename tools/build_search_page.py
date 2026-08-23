@@ -211,6 +211,7 @@ PAGE = """<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" \
 <meta name="description" content="Search every page on meta-analysis.cz \
 &#8212; 54 papers in full, the research notes, the datasets and the guidelines. \
 The search runs in your browser; nothing is sent anywhere." />
+<link rel="canonical" href="https://meta-analysis.cz/search/" />
 <link href="/style.css" rel="stylesheet" type="text/css" />
 <link href="/paper.css" rel="stylesheet" type="text/css" />
 </head>
