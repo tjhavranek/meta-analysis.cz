@@ -611,6 +611,9 @@ def build_page(project, meta, body, toc):
         menu.append('<li><a href="%s">Version of record</a></li>' % esc_attr(doi))
     menu.append('<li><a href="%s">%s</a></li>'
                 % (home, "The paper" if parent_label else "Data and code"))
+    # A reader who has just finished one full text is the likeliest reader of another, and
+    # from here the only way to the list of them was the home page.
+    menu.append('<li><a href="/papers/">Papers in full</a></li>')
     menu.append('<li><a href="/">All meta-analyses</a></li>')
 
     return """<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
@@ -669,8 +672,8 @@ def build_page(project, meta, body, toc):
 \t</div>
 </div>
 <!-- end page -->
-{footer}
 </div>
+{footer}
 </body>
 </html>
 """.format(

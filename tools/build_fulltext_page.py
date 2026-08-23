@@ -82,7 +82,7 @@ def build():
 <meta http-equiv="content-type" content="text/html; charset=utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>Papers in Full</title>
-<meta name="description" content="Every paper on this site that is republished here in full: {n} papers as HTML, with their tables, equations and references, readable without a PDF." />
+<meta name="description" content="{lede}: {n} papers as HTML, with their text, tables, equations and references, readable without a PDF." />
 <link href="/style.css" rel="stylesheet" type="text/css" />
 <link href="/paper.css" rel="stylesheet" type="text/css" />
 </head>
@@ -112,16 +112,14 @@ def build():
 \t\t<div class="post">
 \t\t\t<div class="entry">
 
-<p><b>{n} of the papers on this site are republished here in full</b>, as HTML rather than as
-a PDF: the whole text, the tables as tables, the mathematics as mathematics, and the
-references as links. They read on a phone, they are searchable, a screen reader can read them
-aloud, and a language model can quote them without guessing at a scanned column. Each one
-also keeps its PDF and its link to the version of record.</p>
+<p><b>{lede}</b>, as HTML rather than PDF: the whole text, the tables as tables, the
+mathematics as mathematics, the references as links. They read on a phone, they are
+searchable, and they can be quoted without a scanned column in the way. Each keeps its PDF
+and its link to the version of record.</p>
 
-<p class="caveat">Figures are reproduced where the artwork could be lifted cleanly from the
-page &#8212; {figs} of them so far. Where it could not, the figure&#8217;s caption is printed on its
-own and the PDF has the picture. A caption standing alone is a gap, not a claim that the
-paper has no figure there.</p>
+<p class="caveat">Figures are reproduced wherever the artwork lifted cleanly off the page
+&#8212; {figs} so far. Where it did not, the caption stands on its own and the PDF has the
+picture.</p>
 
 <ul class="fulltext">
 {listed}
@@ -132,8 +130,8 @@ paper has no figure there.</p>
 \t</div>
 </div>
 <!-- end page -->
-{footer}
 </div>
+{footer}
 </body>
 </html>
 """
@@ -157,7 +155,12 @@ paper has no figure there.</p>
              for pj, d in documents().items()]
     figs = sum(len([f for f in os.listdir(d) if f.endswith(".png")])
                for d in dirs if os.path.isdir(d))
-    out = page.format(n=len(rows), listed=listed, figs=figs, footer=load_footer())
+    # "All 54" only while it IS all of them. The moment a paper is added without a
+    # conversion the sentence would be false, so the page counts rather than asserts.
+    lede = ("All %d papers on this site are here in full" % len(rows)
+            if len(rows) >= len(PAPERS)
+            else "%d of the %d papers on this site are here in full" % (len(rows), len(PAPERS)))
+    out = page.format(n=len(rows), lede=lede, listed=listed, figs=figs, footer=load_footer())
     outdir = os.path.join(ROOT, "papers")
     os.makedirs(outdir, exist_ok=True)
     with open(os.path.join(outdir, "index.html"), "w") as fh:
