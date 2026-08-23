@@ -235,6 +235,7 @@ The search runs in your browser; nothing is sent anywhere." />
 \t</div>
 </div>
 <!-- end header -->
+</div>
 <!-- start page -->
 <div id="page" class="single">
 \t<div id="content">
@@ -268,7 +269,6 @@ if you would rather search it yourself.</p>
 \t</div>
 </div>
 <!-- end page -->
-</div>
 <script>%s</script>
 %s
 </body>

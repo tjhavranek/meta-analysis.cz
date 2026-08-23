@@ -213,6 +213,8 @@ request that produced every number." />
 \t\t</ul>
 \t</div>
 </div>
+</div>
+<!-- start page -->
 <div id="page" class="single">
 \t<div id="content">
 \t\t<div class="post">
@@ -360,7 +362,6 @@ that produced them, and the full responses, are in
 \t\t\t</div>
 \t\t</div>
 \t</div>
-</div>
 </div>
 %(footer)s
 </body>
