@@ -1110,3 +1110,12 @@ table.catalogue li{ margin-bottom:var(--s2); font-size:var(--f-1); line-height:1
    title. The link is already the emphasis there; the highlight is for the summary. */
 .results a mark{ background:none; }
 .searchnote{ font:400 .9em/1.6 var(--sans); color:var(--ink-soft); max-width:var(--measure); }
+
+/* The search page is one narrow column: an input and a list. In the 60rem shell every other
+   page fills, it left-aligns inside a card 40% wider than anything in it, and on a query with
+   no hits the card collapses to a stub floating in the surround. Fit the shell to the content
+   and let the column use it. */
+#page:has(#searchform){ max-width:46rem; }
+#page:has(#searchform) #content > .post > .entry{ max-width:none; }
+/* An empty result list must not hold open the space a full one would. */
+.results:empty{ margin:0; }
