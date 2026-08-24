@@ -331,10 +331,11 @@ above |z|&nbsp;=&nbsp;1.96 and %(ph_below)s just below, in windows 0.5 wide. Bun
 that is what selective reporting leaves behind, though these counts alone are too few to
 prove it.</p>
 
-<p>WAIVE, experimental, goes after it directly: it downweights estimates that report more
-precision than their sample size supports. MAIVE gives %(ph_maive)s (SE %(ph_maive_se)s),
-WAIVE %(ph_waive)s (SE %(ph_waive_se)s). MAIVE still finds an effect here; WAIVE does
-not.</p>
+<p>WAIVE, experimental, works on both channels. It downweights estimates that report more
+precision than their sample size supports, and it corrects the estimates themselves through
+PEESE, so p-hacking that moves the effect rather than the standard error is caught too.
+MAIVE gives %(ph_maive)s (SE %(ph_maive_se)s), WAIVE %(ph_waive)s (SE %(ph_waive_se)s).
+MAIVE still finds an effect here; WAIVE does not.</p>
 
 <h2 id="in-r">The same run in R</h2>
 
