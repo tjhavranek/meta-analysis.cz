@@ -10,7 +10,7 @@ p-hacking is suspected." />
 <link rel="canonical" href="https://meta-analysis.cz/maive/how-to/" />
 <link href="/style.css" rel="stylesheet" type="text/css" />
 <link href="/paper.css" rel="stylesheet" type="text/css" />
-<script type="application/ld+json">{"@context":"https://schema.org","@type":"HowTo","@id":"https://meta-analysis.cz/maive/how-to/#howto","name":"How to run MAIVE","description":"Correct a meta-analysis for publication bias and for p-hacking that operates through reported standard errors, using four columns of data and the EasyMeta app or API.","inLanguage":"en","license":"https://creativecommons.org/licenses/by/4.0/","isBasedOn":"https://meta-analysis.cz/maive/#paper","about":{"@id":"https://meta-analysis.cz/maive/#paper"},"tool":{"@type":"SoftwareApplication","name":"EasyMeta","url":"https://www.easymeta.org/"},"step":[{"@type":"HowToStep","name":"Assemble four columns","url":"https://meta-analysis.cz/maive/how-to/","text":"One row per estimate: effect, se, n_obs, and study_id when a study reports several estimates. With study_id, inference clusters on it."},{"@type":"HowToStep","name":"Run MAIVE","url":"https://meta-analysis.cz/maive/how-to/#example","text":"Upload the CSV to easymeta.org, or POST it to https://api.maive.eu/v1/run-model with parameters nested under 'parameters': modelType MAIVE, useLogFirstStage true, standardErrorTreatment bootstrap, includeStudyClustering true."},{"@type":"HowToStep","name":"Read the diagnostics before the estimate","url":"https://meta-analysis.cz/maive/how-to/#example","text":"The Egger test says whether there was bias to correct; the Hausman test compares MAIVE with plain PET-PEESE; the first-stage F says whether the instrument is strong."},{"@type":"HowToStep","name":"Handle a weak first stage","url":"https://meta-analysis.cz/maive/how-to/#weak-first-stage","text":"Below an F of 10, report the Anderson-Rubin interval rather than the point estimate, and check any RTMA cross-check against its own convergence diagnostics before quoting it."}]}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"HowTo","@id":"https://meta-analysis.cz/maive/how-to/#howto","name":"How to run MAIVE","description":"Correct a meta-analysis for publication bias and for p-hacking that operates through reported standard errors, using four columns of data and the EasyMeta app or API.","inLanguage":"en","license":"https://creativecommons.org/licenses/by/4.0/","isBasedOn":"https://meta-analysis.cz/maive/#paper","about":{"@id":"https://meta-analysis.cz/maive/#paper"},"tool":{"@type":"SoftwareApplication","name":"EasyMeta","url":"https://www.easymeta.org/"},"step":[{"@type":"HowToStep","name":"Assemble four columns","url":"https://meta-analysis.cz/maive/how-to/","text":"One row per estimate: effect, se, n_obs, and study_id when a study reports several estimates. With study_id, inference clusters on it."},{"@type":"HowToStep","name":"Run MAIVE","url":"https://meta-analysis.cz/maive/how-to/#example","text":"Upload the CSV to easymeta.org, or POST it to https://api.maive.eu/v1/run-model with parameters nested under 'parameters': modelType MAIVE, useLogFirstStage true, standardErrorTreatment bootstrap, includeStudyClustering true."},{"@type":"HowToStep","name":"Read the diagnostics before the estimate","url":"https://meta-analysis.cz/maive/how-to/#example","text":"The Egger test detects funnel asymmetry, which selective reporting produces and genuine differences between studies can too; the Hausman test compares MAIVE with plain PET-PEESE; the first-stage F says whether the instrument is strong."},{"@type":"HowToStep","name":"Handle a weak first stage","url":"https://meta-analysis.cz/maive/how-to/#weak-first-stage","text":"Below an F of 10, report the Anderson-Rubin interval rather than the point estimate, and check any RTMA cross-check against its own convergence diagnostics before quoting it."}]}</script>
 </head>
 <body>
 <div id="wrapper">
@@ -81,7 +81,7 @@ bootstrap clustered by study.</span></p>
 (p&nbsp;=&nbsp;0.002): the less precise an estimate, the larger the alpha it
 reports.</li>
 <li><b>Spurious precision.</b> The Hausman statistic is 0.79 against a critical
-value of 3.84: MAIVE and plain PET-PEESE agree here, so the test finds no sign of inflated
+value of 3.84: MAIVE and plain PET-PEESE agree here, so the test does not detect inflated
 precision, and the correction comes from the funnel asymmetry.</li>
 <li><b>Corrected effect.</b> 0.047% per month against a reported 0.33%.
 Corrected, the alpha is gone.</li>
@@ -114,7 +114,7 @@ prove it.</p>
 
 <p>WAIVE, experimental, works on both channels. It downweights estimates that report more
 precision than their sample size supports, and it corrects the estimates themselves through
-PEESE, so p-hacking that moves the effect rather than the standard error is caught too.
+PEESE, which addresses p-hacking that moves the effect rather than the standard error.
 MAIVE gives 0.185 (SE 0.036), WAIVE 0.143 (SE 0.089).
 MAIVE still finds an effect here; WAIVE does not.</p>
 

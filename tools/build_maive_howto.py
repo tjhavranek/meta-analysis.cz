@@ -299,7 +299,7 @@ bootstrap clustered by study.</span></p>
 (p&nbsp;=&nbsp;%(alpha_egger_p)s): the less precise an estimate, the larger the alpha it
 reports.</li>
 <li><b>Spurious precision.</b> The Hausman statistic is %(alpha_haus)s against a critical
-value of 3.84: MAIVE and plain PET-PEESE agree here, so the test finds no sign of inflated
+value of 3.84: MAIVE and plain PET-PEESE agree here, so the test does not detect inflated
 precision, and the correction comes from the funnel asymmetry.</li>
 <li><b>Corrected effect.</b> %(alpha_est)s%% per month against a reported %(alpha_mean)s%%.
 Corrected, the alpha is gone.</li>
@@ -332,7 +332,7 @@ prove it.</p>
 
 <p>WAIVE, experimental, works on both channels. It downweights estimates that report more
 precision than their sample size supports, and it corrects the estimates themselves through
-PEESE, so p-hacking that moves the effect rather than the standard error is caught too.
+PEESE, which addresses p-hacking that moves the effect rather than the standard error.
 MAIVE gives %(ph_maive)s (SE %(ph_maive_se)s), WAIVE %(ph_waive)s (SE %(ph_waive_se)s).
 MAIVE still finds an effect here; WAIVE does not.</p>
 
@@ -444,7 +444,8 @@ def render(doc):
                      "standardErrorTreatment bootstrap, includeStudyClustering true."},
             {"@type": "HowToStep", "name": "Read the diagnostics before the estimate",
              "url": "https://meta-analysis.cz/maive/how-to/#example",
-             "text": "The Egger test says whether there was bias to correct; the Hausman "
+             "text": "The Egger test detects funnel asymmetry, which selective reporting "
+                     "produces and genuine differences between studies can too; the Hausman "
                      "test compares MAIVE with plain PET-PEESE; the first-stage F says "
                      "whether the instrument is strong."},
             {"@type": "HowToStep", "name": "Handle a weak first stage",
