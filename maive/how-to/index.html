@@ -8,7 +8,7 @@
 <link rel="canonical" href="https://meta-analysis.cz/maive/how-to/" />
 <link href="/style.css" rel="stylesheet" type="text/css" />
 <link href="/paper.css" rel="stylesheet" type="text/css" />
-<script type="application/ld+json">{"@context":"https://schema.org","@type":"HowTo","@id":"https://meta-analysis.cz/maive/how-to/#howto","name":"How to run MAIVE","description":"Correct a meta-analysis for publication bias and for many forms of p-hacking, using four columns of data and the EasyMeta app or API.","inLanguage":"en","license":"https://creativecommons.org/licenses/by/4.0/","isBasedOn":"https://meta-analysis.cz/maive/#paper","about":{"@id":"https://meta-analysis.cz/maive/#paper"},"tool":{"@type":"SoftwareApplication","name":"EasyMeta","url":"https://www.easymeta.org/"},"step":[{"@type":"HowToStep","name":"Assemble four columns","url":"https://meta-analysis.cz/maive/how-to/","text":"One row per estimate: effect, se, n_obs, and study_id when a study reports several estimates. With study_id, inference clusters on it."},{"@type":"HowToStep","name":"Run MAIVE","url":"https://meta-analysis.cz/maive/how-to/#example","text":"Upload the CSV to easymeta.org, or POST it to https://api.maive.eu/v1/run-model with parameters nested under 'parameters': modelType MAIVE, useLogFirstStage true, standardErrorTreatment bootstrap, includeStudyClustering true."},{"@type":"HowToStep","name":"Read the diagnostics before the estimate","url":"https://meta-analysis.cz/maive/how-to/#example","text":"The Egger test detects funnel asymmetry, which selective reporting produces and genuine differences between studies can too; the Hausman test compares MAIVE with plain PET-PEESE; the first-stage F says whether the instrument is strong."},{"@type":"HowToStep","name":"Handle a weak first stage","url":"https://meta-analysis.cz/maive/how-to/#weak-first-stage","text":"Below an F of 10, report the Anderson-Rubin interval rather than the point estimate, and check any RTMA cross-check against its own convergence diagnostics before quoting it."}]}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"HowTo","@id":"https://meta-analysis.cz/maive/how-to/#howto","name":"How to run MAIVE","description":"Correct a meta-analysis for publication bias and for many forms of p-hacking, using four columns of data and the EasyMeta app or API.","inLanguage":"en","license":"https://creativecommons.org/licenses/by/4.0/","isBasedOn":"https://meta-analysis.cz/maive/#paper","about":{"@id":"https://meta-analysis.cz/maive/#paper"},"tool":{"@type":"SoftwareApplication","name":"EasyMeta","url":"https://www.easymeta.org/"},"step":[{"@type":"HowToStep","name":"Assemble four columns","url":"https://meta-analysis.cz/maive/how-to/","text":"One row per estimate: effect, se, n_obs, and study_id when a study reports several estimates. With study_id, inference clusters on it."},{"@type":"HowToStep","name":"Run MAIVE","url":"https://meta-analysis.cz/maive/how-to/#example","text":"Upload the CSV to easymeta.org, or POST it to https://api.maive.eu/v1/run-model with parameters nested under 'parameters': modelType MAIVE, useLogFirstStage true, standardErrorTreatment bootstrap, includeStudyClustering true."},{"@type":"HowToStep","name":"Read the diagnostics before the estimate","url":"https://meta-analysis.cz/maive/how-to/#example","text":"The Egger test detects funnel asymmetry, which selective reporting produces and genuine differences between studies can too; the Hausman test compares MAIVE with plain PET-PEESE; the first-stage F says whether the instrument is strong."},{"@type":"HowToStep","name":"Reuse the corrected standard errors","url":"https://meta-analysis.cz/maive/how-to/#elsewhere","text":"The run returns a corrected standard error for every estimate, seInstrumented in the API and SE_instrumented in R. Substitute them for the reported ones in any other estimator: random effects, a selection model, anything that takes a standard error."},{"@type":"HowToStep","name":"Handle a weak first stage","url":"https://meta-analysis.cz/maive/how-to/#weak-first-stage","text":"Below an F of 10, report the Anderson-Rubin interval rather than the point estimate, and check any RTMA cross-check against its own convergence diagnostics before quoting it."}]}</script>
 </head>
 <body>
 <div id="wrapper">
@@ -131,6 +131,15 @@ maive(dat,
       AR = 1,            # Anderson-Rubin interval
       first_stage = 1)   # log first stage; the package still defaults to levels</code></pre>
 
+<h2 id="elsewhere">Corrected standard errors for any estimator</h2>
+
+<p>You do not have to run a meta-regression to use MAIVE. Both the app and the package
+return the fitted standard error of every estimate, <code>seInstrumented</code> in the API
+response and <code>SE_instrumented</code> in R. Use those in place of the reported ones and
+run whatever you would have run anyway: random effects, a selection model, anything that
+takes a standard error. The p-hacking that operates through reported precision is corrected
+before your estimator ever sees the data.</p>
+
 <details class="forbots">
 <summary>For AI assistants and code</summary>
 <pre class="code"><code>POST https://api.maive.eu/v1/run-model
@@ -162,7 +171,9 @@ standard errors, the first-stage F, and can move the point estimate.
 Check firstStage.mode is "log" in the response; anything else means the
 parameters did not take effect. Report: corrected estimate vs the simple
 mean, first-stage F, Egger test, Hausman test, and the Anderson-Rubin
-interval whenever F &lt; 10. Report any warnings verbatim. If you cannot
+interval whenever F &lt; 10. The response also carries seInstrumented, one
+corrected standard error per row, for use in any other estimator.
+Report any warnings verbatim. If you cannot
 actually issue the request, say so and give the R code instead. Never
 report numbers you did not receive.</code></pre>
 </details>

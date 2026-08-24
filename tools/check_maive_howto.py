@@ -160,6 +160,15 @@ def main():
     if "picks PET when the intercept" in page and sel != "PET":
         fail("the caption says the line is straight but this run selected %r" % sel)
 
+    # 5e. The page tells readers to reuse seInstrumented in other estimators. That is only
+    #     useful advice while the field is actually there, one value per estimate.
+    si = runs["alpha_maive"]["response"].get("seInstrumented")
+    if "seInstrumented" in page and not (
+            isinstance(si, list) and len(si) == runs["alpha_maive"]["n_rows"]):
+        fail("the page points readers at seInstrumented but the response carries %s"
+             % ("no such field" if si is None else "%d of %d values"
+                % (len(si), runs["alpha_maive"]["n_rows"])))
+
     # 6. The page is exactly what the sidecar renders -- the check that catches hand edits.
     from build_maive_howto import render
     if render(doc) != page:

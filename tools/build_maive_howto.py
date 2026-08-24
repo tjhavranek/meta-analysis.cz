@@ -351,6 +351,15 @@ maive(dat,
       AR = 1,            # Anderson-Rubin interval
       first_stage = 1)   # log first stage; the package still defaults to levels</code></pre>
 
+<h2 id="elsewhere">Corrected standard errors for any estimator</h2>
+
+<p>You do not have to run a meta-regression to use MAIVE. Both the app and the package
+return the fitted standard error of every estimate, <code>seInstrumented</code> in the API
+response and <code>SE_instrumented</code> in R. Use those in place of the reported ones and
+run whatever you would have run anyway: random effects, a selection model, anything that
+takes a standard error. The p-hacking that operates through reported precision is corrected
+before your estimator ever sees the data.</p>
+
 <details class="forbots">
 <summary>For AI assistants and code</summary>
 <pre class="code"><code>POST https://api.maive.eu/v1/run-model
@@ -382,7 +391,9 @@ standard errors, the first-stage F, and can move the point estimate.
 Check firstStage.mode is "log" in the response; anything else means the
 parameters did not take effect. Report: corrected estimate vs the simple
 mean, first-stage F, Egger test, Hausman test, and the Anderson-Rubin
-interval whenever F &lt; 10. Report any warnings verbatim. If you cannot
+interval whenever F &lt; 10. The response also carries seInstrumented, one
+corrected standard error per row, for use in any other estimator.
+Report any warnings verbatim. If you cannot
 actually issue the request, say so and give the R code instead. Never
 report numbers you did not receive.</code></pre>
 </details>
@@ -440,6 +451,12 @@ def render(doc):
                      "produces and genuine differences between studies can too; the Hausman "
                      "test compares MAIVE with plain PET-PEESE; the first-stage F says "
                      "whether the instrument is strong."},
+            {"@type": "HowToStep", "name": "Reuse the corrected standard errors",
+             "url": "https://meta-analysis.cz/maive/how-to/#elsewhere",
+             "text": "The run returns a corrected standard error for every estimate, "
+                     "seInstrumented in the API and SE_instrumented in R. Substitute them "
+                     "for the reported ones in any other estimator: random effects, a "
+                     "selection model, anything that takes a standard error."},
             {"@type": "HowToStep", "name": "Handle a weak first stage",
              "url": "https://meta-analysis.cz/maive/how-to/#weak-first-stage",
              "text": "Below an F of 10, report the Anderson-Rubin interval rather than the "
