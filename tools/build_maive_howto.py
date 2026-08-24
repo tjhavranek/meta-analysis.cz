@@ -124,9 +124,6 @@ def refresh():
     esg_rows, esg_d = usable("esg")
     data["esg"] = descriptives(esg_d)
     esg = run("esg_maive", esg_rows, dict(CANON))
-    # Plain PET-PEESE on the same winsorised data: the comparison that shows what
-    # instrumenting the standard errors adds.
-    run("esg_wls", esg_rows, dict(CANON, modelType="WLS"))
 
     euro_rows, euro_d = usable("euro")
     data["euro"] = descriptives(euro_d)
@@ -267,12 +264,10 @@ clustered by study, no winsorisation.</span></p>
 <li><b>Bias test.</b> The Egger test rejects funnel symmetry
 (p&nbsp;=&nbsp;%(esg_egger_p)s): imprecise studies report systematically larger
 effects.</li>
-<li><b>Spurious precision.</b> Plain PET&#8209;PEESE, taking every reported standard error
-at face value, corrects the mean to %(wls_est)s. MAIVE, instrumenting the standard errors
-with sample size, trims it further to %(esg_est)s; the Hausman statistic is
-%(esg_haus)s against a critical value of 3.84.</li>
-<li><b>Corrected effect.</b> %(esg_est)s &#8212; publication bias accounts for about a
-third of the reported mean, and a genuine positive effect remains.</li>
+<li><b>Spurious precision.</b> The Hausman statistic is %(esg_haus)s against a critical
+value of 3.84, so the reported standard errors cannot be taken at face value: instrumenting
+them with sample size changes the answer.</li>
+<li><b>Corrected effect.</b> %(esg_est)s, against a reported mean of %(esg_mean)s.</li>
 </ul>
 
 <h2 id="weak-first-stage">If the first stage is weak</h2>
@@ -370,7 +365,7 @@ stage is now the recommended default.</p>
 
 def render(doc):
     ds, runs = doc["datasets"], doc["runs"]
-    esg, wls = runs["esg_maive"]["response"], runs["esg_wls"]["response"]
+    esg = runs["esg_maive"]["response"]
     euro = runs["euro_maive"]["response"]
     rtma = runs["euro_rtma"]["response"]
     cm, cw = runs["comp_maive"]["response"], runs["comp_waive"]["response"]
@@ -422,7 +417,6 @@ def render(doc):
         "esg_F": n(esg.get("firstStageFStatistic"), 1),
         "esg_egger_p": n(esg["publicationBias"]["pValue"], 3),
         "esg_haus": n((esg.get("hausmanTest") or {}).get("statistic"), 2),
-        "wls_est": n(wls.get("effectEstimate")),
         "euro_k": ds["euro"]["estimates"], "euro_g": ds["euro"]["studies"],
         "euro_F": n(euro.get("firstStageFStatistic"), 2),
         "euro_est": n(euro.get("effectEstimate"), 2),

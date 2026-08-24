@@ -33,7 +33,6 @@ height="840" /></p>
 <table class="nums">
 <tbody>
 <tr><th>Simple mean</th><td>%(mean)s</td></tr>
-<tr><th>Plain PET&#8209;PEESE</th><td>%(wls)s</td></tr>
 <tr><th>MAIVE</th><td><b>%(maive)s</b> (SE %(se)s)</td></tr>
 <tr><th>First&#8209;stage F</th><td>%(F)s%(Fnote)s</td></tr>
 <tr><th>Fit</th><td>%(sel)s</td></tr>
@@ -121,12 +120,12 @@ def main():
     doc = json.load(open(DATA, encoding="utf-8"))
     cards = []
     for i, c in enumerate(doc["candidates"], 1):
-        m, w = c["maive"], c["wls"]
+        m = c["maive"]
         F = m.get("firstStageFStatistic")
         eggp = (m.get("publicationBias") or {}).get("pValue")
         cards.append(CARD % {
             "rank": i, "slug": c["slug"], "title": c["title"], "what": c["what"],
-            "mean": n(c["mean"], 2), "wls": n(w.get("effectEstimate")),
+            "mean": n(c["mean"], 2),
             "maive": n(m.get("effectEstimate")), "se": n(m.get("standardError")),
             "F": n(F, 1),
             "Fnote": "" if (isinstance(F, (int, float)) and F >= 10)

@@ -53,14 +53,34 @@ variation in sample size to identify anything.</p>
 
 
 <div class="cand">
-<h2 id="hedge-asset-based">1. Hedge-fund alpha, asset-based-style models</h2>
-<p class="what">Alpha estimates from asset-based-style pricing models on cross-sectional samples -- the corner of the literature where alpha is measured against a benchmark you can actually trade. 2% winsorisation.</p>
+<h2 id="hedge-annual-nobackfill">1. Hedge-fund alpha, annual, no backfill correction</h2>
+<p class="what">Alphas reported at annual rather than monthly frequency, from studies that do not correct for backfilling bias -- the tendency of funds to enter a database with their good early years already in it. 2% winsorisation.</p>
+<p><img src="funnel-hedge-annual-nobackfill.png" alt="Funnel plot for Hedge-fund alpha, annual, no backfill correction" width="840"
+height="840" /></p>
+<table class="nums">
+<tbody>
+<tr><th>Simple mean</th><td>0.29</td></tr>
+<tr><th>MAIVE</th><td><b>0.194</b> (SE 0.037)</td></tr>
+<tr><th>First&#8209;stage F</th><td>146.6</td></tr>
+<tr><th>Fit</th><td>PEESE</td></tr>
+<tr><th>Bias test (Egger p)</th><td>0.065 <span class="warn">not significant</span></td></tr>
+<tr><th>Estimates / studies</th><td>133 from 9</td></tr>
+</tbody>
+</table>
+<p class="filter"><code>alphas: alpha_monthly == 0 and backfilling_treated == 0, winsorised at 2%</code> &middot;
+<a href="hedge-annual-nobackfill.csv">the exact CSV</a></p>
+<p class="verdict">The closest to everything asked for. The PET-PEESE rule selects PEESE, so the fit is the curve rather than the straight line; the first stage is the strongest of any candidate at F = 147; and the Hausman test rejects at 9.1 against 3.84, which is the test that says instrumenting the standard errors changes the answer. The reported mean of 0.29% per month falls to 0.19%. Two caveats: the Egger test is 0.065, just outside conventional significance, and the fitted standard errors still form visible horizontal bands because sample sizes repeat across estimates.</p>
+</div>
+
+
+<div class="cand">
+<h2 id="hedge-asset-based">2. Hedge-fund alpha, asset-based-style models</h2>
+<p class="what">Alphas from asset-based-style pricing models on cross-sectional samples -- the corner of the literature where alpha is measured against a benchmark you can actually trade. 2% winsorisation.</p>
 <p><img src="funnel-hedge-asset-based.png" alt="Funnel plot for Hedge-fund alpha, asset-based-style models" width="840"
 height="840" /></p>
 <table class="nums">
 <tbody>
 <tr><th>Simple mean</th><td>0.33</td></tr>
-<tr><th>Plain PET&#8209;PEESE</th><td>0.097</td></tr>
 <tr><th>MAIVE</th><td><b>0.045</b> (SE 0.115)</td></tr>
 <tr><th>First&#8209;stage F</th><td>59.7</td></tr>
 <tr><th>Fit</th><td>PET</td></tr>
@@ -70,19 +90,18 @@ height="840" /></p>
 </table>
 <p class="filter"><code>alphas: model_asset_based == 1 and data_cross_section == 1, winsorised at 2%</code> &middot;
 <a href="hedge-asset-based.csv">the exact CSV</a></p>
-<p class="verdict">The best of the four. A real funnel: the cloud spreads down the axis and leans right, and the correction runs one way the whole time -- 0.33% per month reported, 0.10% after plain PET-PEESE, 0.04% after MAIVE. The bias test rejects (p = 0.012) and the first stage is strong (F = 60). The fit is a straight PET line, and the Hausman test does not reject.</p>
+<p class="verdict">The only candidate whose bias test clearly rejects once standard errors are clustered by study (p = 0.012), and the correction is the largest of the three: 0.33% per month reported, 0.04% after MAIVE -- the difference between an alpha and none. The funnel is clean and sparse. Against it: the fit is a straight PET line, and the Hausman test does not reject.</p>
 </div>
 
 
 <div class="cand">
-<h2 id="esg-emerging">2. ESG and board gender diversity, emerging markets</h2>
-<p class="what">Estimates for firms in emerging markets, from studies that control for firm size. Emerging-market governance is where board-composition rules are newest and the evidence thinnest. 5% winsorisation.</p>
+<h2 id="esg-emerging">3. ESG and board gender diversity, emerging markets</h2>
+<p class="what">Estimates for firms in emerging markets, from studies that control for firm size. 5% winsorisation.</p>
 <p><img src="funnel-esg-emerging.png" alt="Funnel plot for ESG and board gender diversity, emerging markets" width="840"
 height="840" /></p>
 <table class="nums">
 <tbody>
 <tr><th>Simple mean</th><td>0.46</td></tr>
-<tr><th>Plain PET&#8209;PEESE</th><td>-0.004</td></tr>
 <tr><th>MAIVE</th><td><b>0.066</b> (SE 0.139)</td></tr>
 <tr><th>First&#8209;stage F</th><td>16.9</td></tr>
 <tr><th>Fit</th><td>PET</td></tr>
@@ -92,29 +111,7 @@ height="840" /></p>
 </table>
 <p class="filter"><code>esg: emerging == 1 and control_firm_size == 1, winsorised at 5%</code> &middot;
 <a href="esg-emerging.csv">the exact CSV</a></p>
-<p class="verdict">Keeps the ESG numbers you liked and finally has the shape: 87 estimates spread across the axis, a clear rightward lean, a reported mean of 0.46 falling to 0.07. The bias test rejects (p = 0.047). Against it: plain PET-PEESE lands slightly BELOW MAIVE, so the ladder is not monotone and the spurious-precision sentence gets harder to write.</p>
-</div>
-
-
-<div class="cand">
-<h2 id="electricity-india">3. Electricity demand in India, average-price measures</h2>
-<p class="what">Price elasticities of electricity demand in India, identified off an average-price measure. 5% winsorisation.</p>
-<p><img src="funnel-electricity-india.png" alt="Funnel plot for Electricity demand in India, average-price measures" width="840"
-height="840" /></p>
-<table class="nums">
-<tbody>
-<tr><th>Simple mean</th><td>-0.47</td></tr>
-<tr><th>Plain PET&#8209;PEESE</th><td>-0.480</td></tr>
-<tr><th>MAIVE</th><td><b>-0.558</b> (SE 0.059)</td></tr>
-<tr><th>First&#8209;stage F</th><td>18.3</td></tr>
-<tr><th>Fit</th><td>PEESE</td></tr>
-<tr><th>Bias test (Egger p)</th><td>0.163 <span class="warn">not significant</span></td></tr>
-<tr><th>Estimates / studies</th><td>64 from 12</td></tr>
-</tbody>
-</table>
-<p class="filter"><code>electricity: se_source == 'reported', average_price == 1, country == 'India', winsorised at 5%</code> &middot;
-<a href="electricity-india.csv">the exact CSV</a></p>
-<p class="verdict">The only one with the curved PEESE fit. But the cloud is a rectangular block rather than a funnel, the bias test does not reject (p = 0.16), and the correction moves away from zero.</p>
+<p class="verdict">Keeps the ESG numbers, and now has a shape: 87 estimates spread across the axis with a clear rightward lean, a reported mean of 0.46 falling to 0.07, and a bias test that rejects at 0.047. The fit is a straight line.</p>
 </div>
 
 
