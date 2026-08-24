@@ -20,7 +20,7 @@ from build_paper_page import ROOT  # noqa: E402
 SIDECAR = os.path.join(ROOT, "api", "v1", "maive-howto.json")
 PAGE = os.path.join(ROOT, "maive", "how-to", "index.html")
 FUNNEL = os.path.join(ROOT, "maive", "how-to", "funnel.png")
-CSV = os.path.join(ROOT, "maive", "how-to", "esg.csv")
+CSV = os.path.join(ROOT, "maive", "how-to", "alpha.csv")
 
 
 def main():
@@ -70,9 +70,11 @@ def main():
     ep = (runs["esg_maive"]["response"].get("publicationBias") or {}).get("pValue")
     if not isinstance(ep, (int, float)) or ep >= 0.05:
         fail("the flagship's Egger p is %r; the page says the bias test rejects" % ep)
-    if runs["esg_maive"]["response"].get("isSignificant") is not True:
-        fail("the flagship's corrected effect is not significant; the page says a genuine "
-             "effect remains")
+    # The page's closing line on the worked example is that the alpha is gone, so the
+    # corrected estimate must NOT be significant. If a future rerun makes it significant the
+    # sentence becomes false and this fails.
+    if runs["esg_maive"]["response"].get("isSignificant") is not False:
+        fail("the flagship's corrected effect is significant; the page says the alpha is gone")
 
     # 3. WAIVE must differ from MAIVE with wider uncertainty, or the card shows nothing --
     #    and identical estimates are the signature of the async endpoint's dropped modelType.
@@ -122,6 +124,27 @@ def main():
             fail("the R block passes %s but the request did not ask for the matching "
                  "setting" % arg)
 
+    # 5c. The shipped CSV must BE the winsorised data. Winsorisation is applied to the rows
+    #     rather than passed as the app's setting, because the R code on the page reads this
+    #     file and has no winsorisation argument. If the file were the raw subset, R and the
+    #     page would disagree.
+    import pandas as pd
+    shipped = pd.read_csv(CSV)
+    ds_e = ds["esg"]
+    if abs(float(shipped.effect.mean()) - ds_e["simple_mean"]) > 5e-4:
+        fail("the shipped CSV's mean effect (%.4f) is not the sidecar's (%.4f)"
+             % (shipped.effect.mean(), ds_e["simple_mean"]))
+    if ds_e.get("winsorised") and abs(ds_e["simple_mean"]
+                                      - ds_e["raw_mean_before_winsorising"]) < 1e-9:
+        fail("the sidecar says the data are winsorised but the mean did not move")
+
+    # 5d. The page says the fit is straight "on this literature". That sentence is only
+    #     right while the rule actually selects PET; if a rerun selects PEESE the paragraph
+    #     contradicts the plot beside it.
+    sel = runs["esg_maive"]["response"].get("petpeese_selected")
+    if "selects PET, so the fitted" in page and sel != "PET":
+        fail("the page says the rule selects PET but this run selected %r" % sel)
+
     # 6. The page is exactly what the sidecar renders -- the check that catches hand edits.
     from build_maive_howto import render
     if render(doc) != page:
@@ -137,9 +160,9 @@ def main():
     else:
         lines = open(CSV, encoding="utf-8").read().strip().split("\n")
         if lines[0] != "effect,se,n_obs,study_id":
-            fail("esg.csv header is not the canonical four columns")
+            fail("alpha.csv header is not the canonical four columns")
         if len(lines) - 1 != ds["esg"]["estimates"]:
-            fail("esg.csv has %d rows, sidecar says %d"
+            fail("alpha.csv has %d rows, sidecar says %d"
                  % (len(lines) - 1, ds["esg"]["estimates"]))
 
     if "--live" in sys.argv:

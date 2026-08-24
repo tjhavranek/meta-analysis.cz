@@ -39,7 +39,7 @@ UA = "meta-analysis-cz-howto/1.0 (mailto:t.havranek@gmail.com)"
 OUT_DIR = os.path.join(ROOT, "maive", "how-to")
 SIDECAR = os.path.join(ROOT, "api", "v1", "maive-howto.json")
 FUNNEL = os.path.join(OUT_DIR, "funnel.png")
-CSV_OUT = os.path.join(OUT_DIR, "esg.csv")
+CSV_OUT = os.path.join(OUT_DIR, "alpha.csv")
 TABLE = os.path.join(ROOT, "data", "v1", "estimates_harmonised.csv")
 
 # One recipe everywhere. clustered_cr2 names the small-sample correction;
@@ -47,6 +47,33 @@ TABLE = os.path.join(ROOT, "data", "v1", "estimates_harmonised.csv")
 CANON = {"modelType": "MAIVE", "maiveMethod": "PET-PEESE", "weight": "equal_weights",
          "useLogFirstStage": True, "standardErrorTreatment": "clustered_cr2",
          "includeStudyClustering": True, "winsorize": 0, "computeAndersonRubin": True}
+
+
+# The flagship is a subset of the hedge-fund alpha literature, winsorised at 2%. The
+# winsorisation is applied HERE, to the data, and the winsorised rows are what ship as the
+# CSV -- not passed as the app's winsorize setting. That is deliberate: the MAIVE R package
+# has no winsorisation argument, and the app's rule is not plain quantile clipping, so a run
+# using the setting could not be reproduced by the R code this page prints. Winsorised in the
+# data, both the API and R read identical rows and return identical numbers.
+FLAGSHIP_WINSOR = 0.02
+
+
+def flagship():
+    import numpy as np
+    import pandas as pd
+    d = pd.read_excel(os.path.join(ROOT, "alphas", "alphas.xlsx"))
+    d = d.dropna(subset=["alpha", "se", "study_id", "sample_size"])
+    d = d[(d.se > 0) & (d.sample_size > 0)]
+    d = d[(d.model_asset_based == 1) & (d.data_cross_section == 1)]
+    d = d.rename(columns={"alpha": "effect", "sample_size": "n_obs"})
+    d = d[["effect", "se", "n_obs", "study_id"]].copy()
+    raw_mean = float(d.effect.mean())
+    for c in ("effect", "se"):
+        lo, hi = np.quantile(d[c], FLAGSHIP_WINSOR), np.quantile(d[c], 1 - FLAGSHIP_WINSOR)
+        d[c] = d[c].clip(lo, hi)
+    rows = [{"effect": float(r.effect), "se": float(r.se),
+             "n_obs": int(r.n_obs), "study_id": str(r.study_id)} for r in d.itertuples()]
+    return rows, d, raw_mean
 
 
 def usable(dataset):
@@ -121,8 +148,10 @@ def refresh():
     # it before calling -- and its rule is not plain quantile clipping, so a winsorised run
     # cannot be reproduced exactly from R. Since the page ships R code that must return the
     # same numbers, the example runs on the data as published.
-    esg_rows, esg_d = usable("esg")
+    esg_rows, esg_d, raw_mean = flagship()
     data["esg"] = descriptives(esg_d)
+    data["esg"]["raw_mean_before_winsorising"] = round(raw_mean, 4)
+    data["esg"]["winsorised"] = FLAGSHIP_WINSOR
     esg = run("esg_maive", esg_rows, dict(CANON))
 
     euro_rows, euro_d = usable("euro")
@@ -157,7 +186,7 @@ def refresh():
         for r in esg_rows:
             fh.write("%s,%s,%d,%s\n" % (r["effect"], r["se"], r["n_obs"],
                                         r["study_id"].replace(",", ";")))
-    print("  esg.csv: %d rows" % len(esg_rows))
+    print("  alpha.csv: %d rows" % len(esg_rows))
 
     doc = {
         "what": "Every number on https://meta-analysis.cz/maive/how-to/, with the request "
@@ -233,7 +262,7 @@ p-hacking is suspected." />
 
 <p class="lede"><b>MAIVE corrects meta-analyses for publication bias and for the p-hacking
 that operates through reported standard errors.</b> Besides effect and standard error, it
-asks for one more column: sample size.</p>
+also asks for sample size.</p>
 
 <p><b>You will need:</b> <code>effect</code> &middot; <code>se</code> &middot;
 <code>n_obs</code> &middot; <code>study_id</code> (the latter is optional; with it,
@@ -243,17 +272,25 @@ inference uses CR2 standard errors clustered by study, by Pustejovsky and Tipton
 <a class="button quiet" href="/maive/how-to/esg.csv">Download the example data
 (CSV)</a></p>
 
-<h2 id="example">Worked example: do female directors improve ESG performance?</h2>
+<h2 id="example">Worked example: do hedge funds earn alpha?</h2>
 
-<p>Based on <a href="/esg/">%(esg_k)s estimates from %(esg_g)s studies</a>, the whole
-literature as published. The mean reported estimate is %(esg_mean)s ESG rating points.</p>
+<p><a href="/alphas/">%(esg_k)s estimates from %(esg_g)s studies</a>, restricted to
+asset-based-style models &#8212; the ones that price a fund against benchmarks you could
+actually trade &#8212; and winsorised at 2%%. The mean reported alpha is %(esg_mean)s%% per
+month.</p>
 
-<p><img src="/maive/how-to/funnel.png" alt="EasyMeta funnel plot: %(esg_k)s estimates of
-the effect of board gender diversity on ESG ratings, against precision. The cloud leans
-right as precision falls; the curved MAIVE fit lands below the simple mean." width="840"
-height="840" /></p>
+<p><img src="/maive/how-to/funnel.png" alt="EasyMeta funnel plot: %(esg_k)s hedge-fund alpha
+estimates against precision. The cloud leans right as precision falls, and the MAIVE fit
+lands near zero, well left of the simple mean." width="840" height="840" /></p>
 
-<p class="result"><b>MAIVE: %(esg_est)s (SE %(esg_se)s). First-stage F:
+<p class="aside"><b>Reading the funnel.</b> Each hollow point is a reported estimate
+plotted against its standard error, so the most precise studies sit at the top. With no
+selection the cloud would be symmetric about the true effect; here it leans right as
+precision falls, which is what the bias test picks up. The filled points are the same
+estimates carrying the standard error MAIVE fits from sample size instead of the reported
+one, and the solid line is MAIVE's fit through them.</p>
+
+<p class="result"><b>MAIVE: %(esg_est)s%% per month (SE %(esg_se)s). First-stage F:
 %(esg_F)s.</b><br />
 <span class="settings">Settings: PET&#8209;PEESE, log first stage, equal weights, CR2
 clustered by study, no winsorisation.</span></p>
@@ -262,13 +299,19 @@ clustered by study, no winsorisation.</span></p>
 
 <ul class="reading">
 <li><b>Bias test.</b> The Egger test rejects funnel symmetry
-(p&nbsp;=&nbsp;%(esg_egger_p)s): imprecise studies report systematically larger
-effects.</li>
+(p&nbsp;=&nbsp;%(esg_egger_p)s): the less precise a study, the larger the alpha it
+reports.</li>
 <li><b>Spurious precision.</b> The Hausman statistic is %(esg_haus)s against a critical
-value of 3.84, so the reported standard errors cannot be taken at face value: instrumenting
-them with sample size changes the answer.</li>
-<li><b>Corrected effect.</b> %(esg_est)s, against a reported mean of %(esg_mean)s.</li>
+value of 3.84. It does not reject here, so the reported standard errors survive the test
+and the correction is driven by publication bias rather than by inflated precision.</li>
+<li><b>Corrected effect.</b> %(esg_est)s%% per month against a reported %(esg_mean)s%%.
+Corrected, the alpha is gone.</li>
 </ul>
+
+<p class="aside">On this literature the PET&#8209;PEESE rule selects PET, so the fitted
+line is straight. That is a property of these data rather than of the method: where the
+corrected effect is clearly different from zero the rule selects PEESE and the line
+curves.</p>
 
 <h2 id="weak-first-stage">If the first stage is weak</h2>
 
@@ -280,7 +323,7 @@ identified. RTMA, by Mathur, is the natural cross-check under different assumpti
 here its sampler fails its own diagnostics (%(euro_div)s divergent transitions), so we do
 not report its interval.</p>
 
-<h2 id="p-hacking">If you suspect p-hacking</h2>
+<h2 id="p-hacking">If you suspect serious p-hacking</h2>
 
 <p>In the <a href="/competition/">bank competition&#8211;stability dataset</a> (%(comp_k)s
 estimates from %(comp_g)s studies), %(comp_above)s estimates sit just above
@@ -298,7 +341,7 @@ printed on this page.</p>
 <pre class="code"><code>install.packages("MAIVE")
 library(MAIVE)
 
-d &lt;- read.csv("https://meta-analysis.cz/maive/how-to/esg.csv")
+d &lt;- read.csv("https://meta-analysis.cz/maive/how-to/alpha.csv")
 dat &lt;- data.frame(bs = d$effect, sebs = d$se,
                   Ns = d$n_obs, study_id = d$study_id)
 
@@ -341,10 +384,6 @@ estimate vs the simple mean, first-stage F, Egger test, Hausman test,
 and the Anderson-Rubin interval whenever F &lt; 10. Report any warnings
 verbatim. Do not invent numbers.</code></pre>
 </details>
-
-<p class="aside"><b>Choosing the worked example.</b> Three alternative subsets, with
-their funnels and numbers side by side, are on the
-<a href="/maive/how-to/candidates/">candidates page</a>.</p>
 
 <p class="provenance">Computed with EasyMeta on meta-analysis.cz data v1.1.1,
 %(retrieved)s; every request and response archived in

@@ -40,7 +40,7 @@ p-hacking is suspected." />
 
 <p class="lede"><b>MAIVE corrects meta-analyses for publication bias and for the p-hacking
 that operates through reported standard errors.</b> Besides effect and standard error, it
-asks for one more column: sample size.</p>
+also asks for sample size.</p>
 
 <p><b>You will need:</b> <code>effect</code> &middot; <code>se</code> &middot;
 <code>n_obs</code> &middot; <code>study_id</code> (the latter is optional; with it,
@@ -50,18 +50,26 @@ inference uses CR2 standard errors clustered by study, by Pustejovsky and Tipton
 <a class="button quiet" href="/maive/how-to/esg.csv">Download the example data
 (CSV)</a></p>
 
-<h2 id="example">Worked example: do female directors improve ESG performance?</h2>
+<h2 id="example">Worked example: do hedge funds earn alpha?</h2>
 
-<p>Based on <a href="/esg/">533 estimates from 106 studies</a>, the whole
-literature as published. The mean reported estimate is 0.28 ESG rating points.</p>
+<p><a href="/alphas/">75 estimates from 9 studies</a>, restricted to
+asset-based-style models &#8212; the ones that price a fund against benchmarks you could
+actually trade &#8212; and winsorised at 2%. The mean reported alpha is 0.33% per
+month.</p>
 
-<p><img src="/maive/how-to/funnel.png" alt="EasyMeta funnel plot: 533 estimates of
-the effect of board gender diversity on ESG ratings, against precision. The cloud leans
-right as precision falls; the curved MAIVE fit lands below the simple mean." width="840"
-height="840" /></p>
+<p><img src="/maive/how-to/funnel.png" alt="EasyMeta funnel plot: 75 hedge-fund alpha
+estimates against precision. The cloud leans right as precision falls, and the MAIVE fit
+lands near zero, well left of the simple mean." width="840" height="840" /></p>
 
-<p class="result"><b>MAIVE: 0.185 (SE 0.037). First-stage F:
-33.0.</b><br />
+<p class="aside"><b>Reading the funnel.</b> Each hollow point is a reported estimate
+plotted against its standard error, so the most precise studies sit at the top. With no
+selection the cloud would be symmetric about the true effect; here it leans right as
+precision falls, which is what the bias test picks up. The filled points are the same
+estimates carrying the standard error MAIVE fits from sample size instead of the reported
+one, and the solid line is MAIVE's fit through them.</p>
+
+<p class="result"><b>MAIVE: 0.045% per month (SE 0.115). First-stage F:
+59.7.</b><br />
 <span class="settings">Settings: PET&#8209;PEESE, log first stage, equal weights, CR2
 clustered by study, no winsorisation.</span></p>
 
@@ -69,13 +77,19 @@ clustered by study, no winsorisation.</span></p>
 
 <ul class="reading">
 <li><b>Bias test.</b> The Egger test rejects funnel symmetry
-(p&nbsp;=&nbsp;0.016): imprecise studies report systematically larger
-effects.</li>
-<li><b>Spurious precision.</b> The Hausman statistic is 50.54 against a critical
-value of 3.84, so the reported standard errors cannot be taken at face value: instrumenting
-them with sample size changes the answer.</li>
-<li><b>Corrected effect.</b> 0.185, against a reported mean of 0.28.</li>
+(p&nbsp;=&nbsp;0.012): the less precise a study, the larger the alpha it
+reports.</li>
+<li><b>Spurious precision.</b> The Hausman statistic is 0.33 against a critical
+value of 3.84. It does not reject here, so the reported standard errors survive the test
+and the correction is driven by publication bias rather than by inflated precision.</li>
+<li><b>Corrected effect.</b> 0.045% per month against a reported 0.33%.
+Corrected, the alpha is gone.</li>
 </ul>
+
+<p class="aside">On this literature the PET&#8209;PEESE rule selects PET, so the fitted
+line is straight. That is a property of these data rather than of the method: where the
+corrected effect is clearly different from zero the rule selects PEESE and the line
+curves.</p>
 
 <h2 id="weak-first-stage">If the first stage is weak</h2>
 
@@ -87,7 +101,7 @@ identified. RTMA, by Mathur, is the natural cross-check under different assumpti
 here its sampler fails its own diagnostics (84 divergent transitions), so we do
 not report its interval.</p>
 
-<h2 id="p-hacking">If you suspect p-hacking</h2>
+<h2 id="p-hacking">If you suspect serious p-hacking</h2>
 
 <p>In the <a href="/competition/">bank competition&#8211;stability dataset</a> (598
 estimates from 31 studies), 140 estimates sit just above
@@ -105,7 +119,7 @@ printed on this page.</p>
 <pre class="code"><code>install.packages("MAIVE")
 library(MAIVE)
 
-d &lt;- read.csv("https://meta-analysis.cz/maive/how-to/esg.csv")
+d &lt;- read.csv("https://meta-analysis.cz/maive/how-to/alpha.csv")
 dat &lt;- data.frame(bs = d$effect, sebs = d$se,
                   Ns = d$n_obs, study_id = d$study_id)
 
@@ -148,10 +162,6 @@ estimate vs the simple mean, first-stage F, Egger test, Hausman test,
 and the Anderson-Rubin interval whenever F &lt; 10. Report any warnings
 verbatim. Do not invent numbers.</code></pre>
 </details>
-
-<p class="aside"><b>Choosing the worked example.</b> Three alternative subsets, with
-their funnels and numbers side by side, are on the
-<a href="/maive/how-to/candidates/">candidates page</a>.</p>
 
 <p class="provenance">Computed with EasyMeta on meta-analysis.cz data v1.1.1,
 2026-08-24; every request and response archived in
