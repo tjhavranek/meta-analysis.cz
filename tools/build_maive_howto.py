@@ -260,9 +260,8 @@ that operates through reported standard errors.</b> Besides effect and standard 
 also asks for sample size.</p>
 
 <p><b>You will need:</b> <code>effect</code> &middot; <code>se</code> &middot;
-<code>n_obs</code> &middot; <code>study_id</code> (<code>n_obs</code> is the overall sample
-size, not degrees of freedom; <code>study_id</code> is needed when a study reports several
-estimates, and inference then clusters on it)</p>
+<code>n_obs</code> &middot; <code>study_id</code> (the latter is needed when a study reports
+several estimates, and inference then clusters on it)</p>
 
 <p class="cta"><a class="button" href="https://www.easymeta.org/">Open EasyMeta</a>
 <a class="button quiet" href="/maive/how-to/alpha.csv">Download the example data
@@ -436,8 +435,7 @@ def render(doc):
             {"@type": "HowToStep", "name": "Assemble four columns",
              "url": "https://meta-analysis.cz/maive/how-to/",
              "text": "One row per estimate: effect, se, n_obs, and study_id when a study "
-                     "reports several estimates. n_obs is the overall sample size, not "
-                     "degrees of freedom. With study_id, inference clusters on it."},
+                     "reports several estimates. With study_id, inference clusters on it."},
             {"@type": "HowToStep", "name": "Run MAIVE",
              "url": "https://meta-analysis.cz/maive/how-to/#example",
              "text": "Upload the CSV to easymeta.org, or POST it to "
