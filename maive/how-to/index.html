@@ -47,44 +47,38 @@ asks for one more column: sample size.</p>
 standard errors clustered by study, by Pustejovsky and Tipton)</p>
 
 <p class="cta"><a class="button" href="https://www.easymeta.org/">Open EasyMeta</a>
-<a class="button quiet" href="/maive/how-to/education.csv">Download the example data
+<a class="button quiet" href="/maive/how-to/esg.csv">Download the example data
 (CSV)</a></p>
 
-<h2 id="example">Worked example: does tuition reduce university enrolment?</h2>
+<h2 id="example">Worked example: do female directors improve ESG performance?</h2>
 
-<p>Based on <a href="/education/">442 estimates from 43 studies</a>. The mean
-reported partial correlation is -0.171; three quarters of the estimates are
-negative.</p>
+<p>Based on <a href="/esg/">533 estimates from 106 studies</a>, the whole
+literature, winsorised at 1%. The mean reported estimate is 0.28 ESG rating
+points.</p>
 
-<p><img src="/maive/how-to/funnel.png" alt="EasyMeta funnel plot: 442
-tuition-enrolment estimates against precision. Imprecise negative estimates dominate the
-raw literature; the MAIVE fit and corrected intercept sit near zero." width="840"
+<p><img src="/maive/how-to/funnel.png" alt="EasyMeta funnel plot: 533 estimates of
+the effect of board gender diversity on ESG ratings, against precision. The cloud leans
+right as precision falls; the curved MAIVE fit lands below the simple mean." width="840"
 height="840" /></p>
 
-<p class="result"><b>MAIVE: 0.013 (SE 0.042). First-stage F:
-1,498.</b><br />
+<p class="result"><b>MAIVE: 0.179 (SE 0.032). First-stage F:
+33.3.</b><br />
 <span class="settings">Settings: PET&#8209;PEESE, log first stage, equal weights, CR2
-clustered by study, no winsorisation.</span></p>
+clustered by study, winsorised at 1%.</span></p>
 
 <p>Reading the output, as EasyMeta reports it:</p>
 
 <ul class="reading">
-<li><b>Bias test.</b> The instrumented Egger test rejects funnel symmetry
-(p&nbsp;=&nbsp;5&#215;10<sup>&#8722;8</sup>): imprecise studies report systematically more negative
-estimates.</li>
-<li><b>Spurious precision.</b> The Hausman statistic is undefined here &#8212; MAIVE and
-plain PET&#8209;PEESE nearly coincide, so the test is not informative in this
-literature.</li>
-<li><b>Corrected effect.</b> 0.013, not different from zero at the 5% level, against
-a reported mean of -0.171. Corrected, the literature says tuition does not move
-enrolment.</li>
+<li><b>Bias test.</b> The Egger test rejects funnel symmetry
+(p&nbsp;=&nbsp;0.016): imprecise studies report systematically larger
+effects.</li>
+<li><b>Spurious precision.</b> Plain PET&#8209;PEESE, taking every reported standard error
+at face value, corrects the mean to 0.214. MAIVE, instrumenting the standard errors
+with sample size, trims it further to 0.179; the Hausman statistic is
+3.13 against a critical value of 3.84.</li>
+<li><b>Corrected effect.</b> 0.179 &#8212; publication bias accounts for about a
+third of the reported mean, and a genuine positive effect remains.</li>
 </ul>
-
-<p class="aside">These effects are partial correlations, so the standard error is computed
-from the sample size and the first stage is strong by construction (R&#178; of log
-SE&#178; on log N: 0.98). A large F here is arithmetic, not evidence. MAIVE still
-corrects publication bias; the protection against spurious precision has little to bite
-on.</p>
 
 <h2 id="weak-first-stage">If the first stage is weak</h2>
 

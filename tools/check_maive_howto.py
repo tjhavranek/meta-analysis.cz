@@ -20,7 +20,7 @@ from build_paper_page import ROOT  # noqa: E402
 SIDECAR = os.path.join(ROOT, "api", "v1", "maive-howto.json")
 PAGE = os.path.join(ROOT, "maive", "how-to", "index.html")
 FUNNEL = os.path.join(ROOT, "maive", "how-to", "funnel.png")
-CSV = os.path.join(ROOT, "maive", "how-to", "education.csv")
+CSV = os.path.join(ROOT, "maive", "how-to", "esg.csv")
 
 
 def main():
@@ -36,7 +36,7 @@ def main():
     # 1. Every MAIVE-family request carried the settings the page teaches -- nested, with
     #    the clustering flag. clustered_cr2 alone does not cluster (singleton clusters), so
     #    the flag's absence would make every printed SE and F wrong while returning 200.
-    for key in ("edu_maive", "euro_maive", "comp_maive", "comp_waive"):
+    for key in ("esg_maive", "esg_wls", "euro_maive", "comp_maive", "comp_waive"):
         p = runs[key]["request_parameters"]
         if p.get("includeStudyClustering") is not True:
             fail("%s ran without includeStudyClustering -- its SEs are not clustered" % key)
@@ -45,23 +45,42 @@ def main():
         if p.get("standardErrorTreatment") != "clustered_cr2":
             fail("%s did not request the CR2 correction" % key)
         got = (runs[key]["response"].get("firstStage") or {}).get("mode")
-        if got != "log":
+        if key != "esg_wls" and got != "log":
             fail("%s ran with firstStage.mode=%r -- parameters did not take effect" % (key, got))
     if runs["comp_waive"]["request_parameters"].get("modelType") != "WAIVE":
         fail("the WAIVE run did not ask for WAIVE")
+    if runs["esg_wls"]["request_parameters"].get("modelType") != "WLS":
+        fail("the PET-PEESE comparison run did not ask for WLS")
+    # The flagship is winsorised at 1% and only the flagship: heavier winsorisation erases
+    # the MAIVE-vs-PET-PEESE gap, and the other examples are shown raw.
+    for key in ("esg_maive", "esg_wls"):
+        if runs[key]["request_parameters"].get("winsorize") != 1:
+            fail("%s is not winsorised at 1%%; the page says it is" % key)
+    for key in ("euro_maive", "comp_maive", "comp_waive"):
+        if runs[key]["request_parameters"].get("winsorize") != 0:
+            fail("%s is winsorised; the page presents it raw" % key)
+    # The gap the page prints must exist: MAIVE below plain PET-PEESE on this data.
+    ge, gw = (runs["esg_maive"]["response"].get("effectEstimate"),
+              runs["esg_wls"]["response"].get("effectEstimate"))
+    if not (isinstance(ge, (int, float)) and isinstance(gw, (int, float)) and ge < gw):
+        fail("MAIVE (%r) is not below plain PET-PEESE (%r); the spurious-precision line "
+             "is wrong" % (ge, gw))
 
     # 2. Each example is the kind of example the page claims.
-    eduF = runs["edu_maive"]["response"].get("firstStageFStatistic")
+    eduF = runs["esg_maive"]["response"].get("firstStageFStatistic")
     euroF = runs["euro_maive"]["response"].get("firstStageFStatistic")
     if not isinstance(eduF, (int, float)) or eduF < 10:
-        fail("education F is %r; the page presents it as strong" % eduF)
+        fail("the flagship F is %r; the page presents it as strong" % eduF)
     if not isinstance(euroF, (int, float)) or euroF >= 10:
         fail("euro F is %r, not below 10; the weak-first-stage card is wrong" % euroF)
     if not (runs["euro_maive"]["response"].get("andersonRubinCI") or [None])[0]:
         fail("the euro run carries no Anderson-Rubin interval")
-    ep = (runs["edu_maive"]["response"].get("publicationBias") or {}).get("pValue")
+    ep = (runs["esg_maive"]["response"].get("publicationBias") or {}).get("pValue")
     if not isinstance(ep, (int, float)) or ep >= 0.05:
-        fail("education's Egger p is %r; the page says the bias test rejects" % ep)
+        fail("the flagship's Egger p is %r; the page says the bias test rejects" % ep)
+    if runs["esg_maive"]["response"].get("isSignificant") is not True:
+        fail("the flagship's corrected effect is not significant; the page says a genuine "
+             "effect remains")
 
     # 3. WAIVE must differ from MAIVE with wider uncertainty, or the card shows nothing --
     #    and identical estimates are the signature of the async endpoint's dropped modelType.
@@ -106,16 +125,16 @@ def main():
     else:
         lines = open(CSV, encoding="utf-8").read().strip().split("\n")
         if lines[0] != "effect,se,n_obs,study_id":
-            fail("education.csv header is not the canonical four columns")
-        if len(lines) - 1 != ds["education"]["estimates"]:
-            fail("education.csv has %d rows, sidecar says %d"
-                 % (len(lines) - 1, ds["education"]["estimates"]))
+            fail("esg.csv header is not the canonical four columns")
+        if len(lines) - 1 != ds["esg"]["estimates"]:
+            fail("esg.csv has %d rows, sidecar says %d"
+                 % (len(lines) - 1, ds["esg"]["estimates"]))
 
     if "--live" in sys.argv:
         print("re-running recorded requests against %s" % doc["api"])
         from build_maive_howto import usable
         rows = {k: usable(name)[0] for k, name in
-                (("edu_maive", "education"), ("euro_maive", "euro"),
+                (("esg_maive", "esg"), ("esg_wls", "esg"), ("euro_maive", "euro"),
                  ("comp_maive", "competition"), ("comp_waive", "competition"))}
         rows["euro_rtma"] = [{"effect": r["effect"], "se": r["se"]}
                              for r in usable("euro")[0]]

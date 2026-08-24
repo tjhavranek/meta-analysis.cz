@@ -39,7 +39,7 @@ UA = "meta-analysis-cz-howto/1.0 (mailto:t.havranek@gmail.com)"
 OUT_DIR = os.path.join(ROOT, "maive", "how-to")
 SIDECAR = os.path.join(ROOT, "api", "v1", "maive-howto.json")
 FUNNEL = os.path.join(OUT_DIR, "funnel.png")
-CSV_OUT = os.path.join(OUT_DIR, "education.csv")
+CSV_OUT = os.path.join(OUT_DIR, "esg.csv")
 TABLE = os.path.join(ROOT, "data", "v1", "estimates_harmonised.csv")
 
 # One recipe everywhere. clustered_cr2 names the small-sample correction;
@@ -117,9 +117,16 @@ def refresh():
         return resp
 
     print("sync runs (the endpoint that honours modelType):")
-    edu_rows, edu_d = usable("education")
-    data["education"] = descriptives(edu_d)
-    edu = run("edu_maive", edu_rows, dict(CANON))
+    # The flagship is winsorised at 1% -- an extensive screen showed the raw funnel's axis is
+    # set by a handful of extreme standard errors (three of them imputed by the meta-analyst,
+    # not reported), while heavier winsorisation erases the very gap between MAIVE and plain
+    # PET-PEESE that the page exists to show. One percent keeps the gap and the picture.
+    esg_rows, esg_d = usable("esg")
+    data["esg"] = descriptives(esg_d)
+    esg = run("esg_maive", esg_rows, dict(CANON, winsorize=1))
+    # Plain PET-PEESE on the same winsorised data: the comparison that shows what
+    # instrumenting the standard errors adds.
+    run("esg_wls", esg_rows, dict(CANON, modelType="WLS", winsorize=1))
 
     euro_rows, euro_d = usable("euro")
     data["euro"] = descriptives(euro_d)
@@ -136,10 +143,10 @@ def refresh():
     run("comp_maive", comp_rows, dict(CANON))
     run("comp_waive", comp_rows, dict(CANON, modelType="WAIVE"))
 
-    print("async funnel (education; accepted only if async agrees with sync):")
-    plot = async_funnel(edu_rows, dict(CANON))
+    print("async funnel (flagship; accepted only if async agrees with sync):")
+    plot = async_funnel(esg_rows, dict(CANON, winsorize=1))
     for f in ("effectEstimate", "standardError", "firstStageFStatistic"):
-        if plot.get(f) != edu.get(f):
+        if plot.get(f) != esg.get(f):
             raise SystemExit("async %s=%r disagrees with sync %r -- funnel rejected"
                              % (f, plot.get(f), edu.get(f)))
     os.makedirs(OUT_DIR, exist_ok=True)
@@ -148,12 +155,14 @@ def refresh():
     print("  funnel.png %d bytes, async==sync on all headline statistics"
           % os.path.getsize(FUNNEL))
 
+    # The CSV ships raw: the reader uploads it and sets 1% winsorisation in the app, which
+    # is the point -- winsorisation is a setting, not a different dataset.
     with open(CSV_OUT, "w", encoding="utf-8", newline="\n") as fh:
         fh.write("effect,se,n_obs,study_id\n")
-        for r in edu_rows:
+        for r in esg_rows:
             fh.write("%s,%s,%d,%s\n" % (r["effect"], r["se"], r["n_obs"],
                                         r["study_id"].replace(",", ";")))
-    print("  education.csv: %d rows" % len(edu_rows))
+    print("  esg.csv: %d rows" % len(esg_rows))
 
     doc = {
         "what": "Every number on https://meta-analysis.cz/maive/how-to/, with the request "
@@ -236,44 +245,38 @@ asks for one more column: sample size.</p>
 standard errors clustered by study, by Pustejovsky and Tipton)</p>
 
 <p class="cta"><a class="button" href="https://www.easymeta.org/">Open EasyMeta</a>
-<a class="button quiet" href="/maive/how-to/education.csv">Download the example data
+<a class="button quiet" href="/maive/how-to/esg.csv">Download the example data
 (CSV)</a></p>
 
-<h2 id="example">Worked example: does tuition reduce university enrolment?</h2>
+<h2 id="example">Worked example: do female directors improve ESG performance?</h2>
 
-<p>Based on <a href="/education/">%(edu_k)s estimates from %(edu_g)s studies</a>. The mean
-reported partial correlation is %(edu_mean)s; three quarters of the estimates are
-negative.</p>
+<p>Based on <a href="/esg/">%(esg_k)s estimates from %(esg_g)s studies</a>, the whole
+literature, winsorised at 1%%. The mean reported estimate is %(esg_mean)s ESG rating
+points.</p>
 
-<p><img src="/maive/how-to/funnel.png" alt="EasyMeta funnel plot: %(edu_k)s
-tuition-enrolment estimates against precision. Imprecise negative estimates dominate the
-raw literature; the MAIVE fit and corrected intercept sit near zero." width="840"
+<p><img src="/maive/how-to/funnel.png" alt="EasyMeta funnel plot: %(esg_k)s estimates of
+the effect of board gender diversity on ESG ratings, against precision. The cloud leans
+right as precision falls; the curved MAIVE fit lands below the simple mean." width="840"
 height="840" /></p>
 
-<p class="result"><b>MAIVE: %(edu_est)s (SE %(edu_se)s). First-stage F:
-%(edu_F)s.</b><br />
+<p class="result"><b>MAIVE: %(esg_est)s (SE %(esg_se)s). First-stage F:
+%(esg_F)s.</b><br />
 <span class="settings">Settings: PET&#8209;PEESE, log first stage, equal weights, CR2
-clustered by study, no winsorisation.</span></p>
+clustered by study, winsorised at 1%%.</span></p>
 
 <p>Reading the output, as EasyMeta reports it:</p>
 
 <ul class="reading">
-<li><b>Bias test.</b> The instrumented Egger test rejects funnel symmetry
-(p&nbsp;=&nbsp;%(edu_egger_p)s): imprecise studies report systematically more negative
-estimates.</li>
-<li><b>Spurious precision.</b> The Hausman statistic is undefined here &#8212; MAIVE and
-plain PET&#8209;PEESE nearly coincide, so the test is not informative in this
-literature.</li>
-<li><b>Corrected effect.</b> %(edu_est)s, not different from zero at the 5%% level, against
-a reported mean of %(edu_mean)s. Corrected, the literature says tuition does not move
-enrolment.</li>
+<li><b>Bias test.</b> The Egger test rejects funnel symmetry
+(p&nbsp;=&nbsp;%(esg_egger_p)s): imprecise studies report systematically larger
+effects.</li>
+<li><b>Spurious precision.</b> Plain PET&#8209;PEESE, taking every reported standard error
+at face value, corrects the mean to %(wls_est)s. MAIVE, instrumenting the standard errors
+with sample size, trims it further to %(esg_est)s; the Hausman statistic is
+%(esg_haus)s against a critical value of 3.84.</li>
+<li><b>Corrected effect.</b> %(esg_est)s &#8212; publication bias accounts for about a
+third of the reported mean, and a genuine positive effect remains.</li>
 </ul>
-
-<p class="aside">These effects are partial correlations, so the standard error is computed
-from the sample size and the first stage is strong by construction (R&#178; of log
-SE&#178; on log N: %(edu_r2)s). A large F here is arithmetic, not evidence. MAIVE still
-corrects publication bias; the protection against spurious precision has little to bite
-on.</p>
 
 <h2 id="weak-first-stage">If the first stage is weak</h2>
 
@@ -344,7 +347,8 @@ stage is now the recommended default.</p>
 
 def render(doc):
     ds, runs = doc["datasets"], doc["runs"]
-    edu, euro = runs["edu_maive"]["response"], runs["euro_maive"]["response"]
+    esg, wls = runs["esg_maive"]["response"], runs["esg_wls"]["response"]
+    euro = runs["euro_maive"]["response"]
     rtma = runs["euro_rtma"]["response"]
     cm, cw = runs["comp_maive"]["response"], runs["comp_waive"]["response"]
     ar = euro.get("andersonRubinCI") or ["NA", "NA"]
@@ -389,12 +393,13 @@ def render(doc):
     return PAGE % {
         "jsonld": json.dumps(ld, ensure_ascii=False, separators=(",", ":")),
         "footer": homepage_footer(), "retrieved": doc["retrieved"],
-        "edu_k": ds["education"]["estimates"], "edu_g": ds["education"]["studies"],
-        "edu_mean": n(ds["education"]["simple_mean"]),
-        "edu_est": n(edu.get("effectEstimate")), "edu_se": n(edu.get("standardError")),
-        "edu_F": "{:,}".format(int(round(edu.get("firstStageFStatistic")))),
-        "edu_egger_p": sig1(edu["publicationBias"]["pValue"]),
-        "edu_r2": "%.2f" % ds["education"]["r2_logse2_logn"],
+        "esg_k": ds["esg"]["estimates"], "esg_g": ds["esg"]["studies"],
+        "esg_mean": n(ds["esg"]["simple_mean"], 2),
+        "esg_est": n(esg.get("effectEstimate")), "esg_se": n(esg.get("standardError")),
+        "esg_F": n(esg.get("firstStageFStatistic"), 1),
+        "esg_egger_p": n(esg["publicationBias"]["pValue"], 3),
+        "esg_haus": n((esg.get("hausmanTest") or {}).get("statistic"), 2),
+        "wls_est": n(wls.get("effectEstimate")),
         "euro_k": ds["euro"]["estimates"], "euro_g": ds["euro"]["studies"],
         "euro_F": n(euro.get("firstStageFStatistic"), 2),
         "euro_est": n(euro.get("effectEstimate"), 2),
