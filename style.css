@@ -1165,3 +1165,21 @@ table.catalogue li{ margin-bottom:var(--s2); font-size:var(--f-1); line-height:1
 .entry details.forbots summary{ cursor:pointer; font:600 var(--f-1)/1.4 var(--sans);
   color:var(--accent-dark); }
 .entry details.forbots[open] summary{ margin-bottom:var(--s3); }
+
+/* The worked-example candidates workbench: cards, each a funnel plus its numbers. */
+.entry .cand{ border-top:1px solid var(--rule); padding-top:var(--s5); margin:var(--s6) 0; }
+.entry .cand h2{ margin-top:0; }
+.entry .cand p.what{ font:400 var(--f0)/1.55 var(--sans); max-width:var(--measure);
+  margin:0 0 var(--s4); }
+.entry .cand img{ max-width:min(30rem,100%); height:auto; display:block; margin:0 0 var(--s4); }
+.entry table.nums{ border-collapse:collapse; margin:0 0 var(--s4); max-width:var(--measure); }
+.entry table.nums th{ text-align:left; font:400 var(--f-1)/1.5 var(--sans);
+  color:var(--ink-soft); font-weight:400; padding:var(--s2) var(--s5) var(--s2) 0;
+  white-space:nowrap; }
+.entry table.nums td{ font:400 var(--f-1)/1.5 var(--sans); font-variant-numeric:tabular-nums;
+  padding:var(--s2) 0; }
+.entry .warn{ color:#9c4221; }
+.entry p.filter{ margin:0 0 var(--s3); }
+.entry p.filter code{ font-size:.8125rem; color:var(--ink-soft); }
+.entry p.verdict{ font:400 var(--f-1)/1.6 var(--sans); border-left:3px solid var(--rule);
+  padding-left:var(--s4); max-width:var(--measure); margin:0 0 var(--s4); }

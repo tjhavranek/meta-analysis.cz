@@ -53,7 +53,9 @@ PROMINENT_COUNT = 4
 PROMINENT_RATE = 0.0008
 
 # Directories that are not pages a reader would want returned.
-SKIP = ("api/", "data/", "tools/", "node_modules/")
+SKIP = ("api/", "data/", "tools/", "node_modules/",
+        # a workbench for choosing the how-to's worked example, not site content
+        "maive/how-to/candidates/")
 
 
 def visible(page):
