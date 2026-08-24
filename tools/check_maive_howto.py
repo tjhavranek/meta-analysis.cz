@@ -153,6 +153,13 @@ def main():
         fail("the page mentions winsorising or trimming, but flagship() does neither; "
              "either the prose or the subset has drifted")
 
+    # 5d. The funnel caption says the line is straight "as here". True only while the rule
+    #     selects PET: a refresh that flipped to PEESE would ship a caption contradicting the
+    #     plot beside it.
+    sel = runs["alpha_maive"]["response"].get("petpeese_selected")
+    if "picks PET when the intercept" in page and sel != "PET":
+        fail("the caption says the line is straight but this run selected %r" % sel)
+
     # 6. The page is exactly what the sidecar renders -- the check that catches hand edits.
     from build_maive_howto import render
     if render(doc) != page:

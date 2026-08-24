@@ -280,7 +280,9 @@ lands near zero, well left of the simple mean." width="840" height="840" /></p>
 <p class="aside"><b>Reading the funnel.</b> Each hollow point is a reported estimate
 plotted against its standard error, so the most precise estimates sit at the top. The
 filled points are the same estimates carrying the standard error MAIVE fits from sample size
-instead of the reported one, and the solid line is MAIVE's fit through them.</p>
+instead of the reported one, and the solid line is MAIVE's fit through them. It is straight
+because the PET-PEESE rule picks PET when the intercept is not significant, as here, and the
+PEESE quadratic when it is.</p>
 
 <p class="result"><b>MAIVE: %(alpha_est)s%% per month (SE %(alpha_se)s). First-stage F:
 %(alpha_F)s.</b><br />
@@ -300,10 +302,10 @@ precision, and the correction comes from the funnel asymmetry.</li>
 Corrected, the alpha is gone.</li>
 </ul>
 
-<p class="aside">Shrinking the effect is the usual outcome. In the
+<p class="aside">Shrinking the plain PET-PEESE estimate further is the usual outcome. In the
 <a href="/maive/paper/">paper</a>, across 267 meta-analyses with a first-stage F above 10,
-MAIVE moved the corrected estimate closer to zero in 67%% of them, and in 75%% of those
-where the correction had left a significant effect.</p>
+MAIVE landed closer to zero than PET-PEESE in 67%% of them, and in 75%% of those where
+PET-PEESE was significant.</p>
 
 <h2 id="weak-first-stage">If the first stage is weak</h2>
 
