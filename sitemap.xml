@@ -28,7 +28,7 @@
   <url><loc>https://meta-analysis.cz/frisch/</loc><lastmod>2026-08-23</lastmod></url>
   <url><loc>https://meta-analysis.cz/gasoline/</loc><lastmod>2026-08-23</lastmod></url>
   <url><loc>https://meta-analysis.cz/gasoline_price/</loc><lastmod>2026-08-23</lastmod></url>
-  <url><loc>https://meta-analysis.cz/guidelines/</loc><lastmod>2026-08-23</lastmod></url>
+  <url><loc>https://meta-analysis.cz/guidelines/</loc><lastmod>2026-08-24</lastmod></url>
   <url><loc>https://meta-analysis.cz/habits/</loc><lastmod>2026-08-23</lastmod></url>
   <url><loc>https://meta-analysis.cz/hedge/</loc><lastmod>2026-08-23</lastmod></url>
   <url><loc>https://meta-analysis.cz/house_prices/</loc><lastmod>2026-08-23</lastmod></url>
@@ -82,7 +82,7 @@
   <url><loc>https://meta-analysis.cz/frisch/paper/</loc><lastmod>2026-08-23</lastmod></url>
   <url><loc>https://meta-analysis.cz/gasoline/paper/</loc><lastmod>2026-08-23</lastmod></url>
   <url><loc>https://meta-analysis.cz/gasoline_price/paper/</loc><lastmod>2026-08-23</lastmod></url>
-  <url><loc>https://meta-analysis.cz/guidelines/guide/</loc><lastmod>2026-08-23</lastmod></url>
+  <url><loc>https://meta-analysis.cz/guidelines/guide/</loc><lastmod>2026-08-24</lastmod></url>
   <url><loc>https://meta-analysis.cz/habits/paper/</loc><lastmod>2026-08-23</lastmod></url>
   <url><loc>https://meta-analysis.cz/hedge/paper/</loc><lastmod>2026-08-23</lastmod></url>
   <url><loc>https://meta-analysis.cz/house_prices/paper/</loc><lastmod>2026-08-23</lastmod></url>
@@ -508,8 +508,8 @@
   <url><loc>https://meta-analysis.cz/data/v1/estimates_harmonised.csv</loc><lastmod>2026-08-21</lastmod></url>
   <url><loc>https://meta-analysis.cz/data/v1/estimates_harmonised.parquet</loc><lastmod>2026-08-21</lastmod></url>
   <url><loc>https://meta-analysis.cz/estimates.csv</loc><lastmod>2026-08-23</lastmod></url>
-  <url><loc>https://meta-analysis.cz/llms.txt</loc><lastmod>2026-08-23</lastmod></url>
-  <url><loc>https://meta-analysis.cz/llms-full.txt</loc><lastmod>2026-08-23</lastmod></url>
+  <url><loc>https://meta-analysis.cz/llms.txt</loc><lastmod>2026-08-24</lastmod></url>
+  <url><loc>https://meta-analysis.cz/llms-full.txt</loc><lastmod>2026-08-24</lastmod></url>
   <url><loc>https://meta-analysis.cz/api/v1/codebooks/activism.json</loc><lastmod>2026-08-03</lastmod></url>
   <url><loc>https://meta-analysis.cz/api/v1/codebooks/alphas.json</loc><lastmod>2026-08-03</lastmod></url>
   <url><loc>https://meta-analysis.cz/api/v1/codebooks/armington.json</loc><lastmod>2026-08-03</lastmod></url>

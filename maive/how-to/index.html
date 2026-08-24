@@ -1,5 +1,4 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" \
-"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html lang="en" xmlns="http://www.w3.org/1999/xhtml">
 <head>
 <meta http-equiv="content-type" content="text/html; charset=utf-8" />
@@ -11,7 +10,7 @@ p-hacking is suspected." />
 <link rel="canonical" href="https://meta-analysis.cz/maive/how-to/" />
 <link href="/style.css" rel="stylesheet" type="text/css" />
 <link href="/paper.css" rel="stylesheet" type="text/css" />
-<script type="application/ld+json">{"@context":"https://schema.org","@type":"HowTo","@id":"https://meta-analysis.cz/maive/how-to/#howto","name":"How to run MAIVE","description":"Correct a meta-analysis for publication bias and for p-hacking that operates through reported standard errors, using four columns of data and the EasyMeta app or API.","inLanguage":"en","license":"https://creativecommons.org/licenses/by/4.0/","isBasedOn":"https://meta-analysis.cz/maive/#paper","about":{"@id":"https://meta-analysis.cz/maive/#paper"},"tool":{"@type":"SoftwareApplication","name":"EasyMeta","url":"https://www.easymeta.org/"},"step":[{"@type":"HowToStep","name":"Assemble four columns","url":"https://meta-analysis.cz/maive/how-to/","text":"One row per estimate: effect, se, n_obs, and study_id when a study reports several estimates. With study_id, inference uses CR2 standard errors clustered by study."},{"@type":"HowToStep","name":"Run MAIVE","url":"https://meta-analysis.cz/maive/how-to/#example","text":"Upload the CSV to easymeta.org, or POST it to https://api.maive.eu/v1/run-model with parameters nested under 'parameters': modelType MAIVE, useLogFirstStage true, standardErrorTreatment clustered_cr2, includeStudyClustering true."},{"@type":"HowToStep","name":"Read the diagnostics before the estimate","url":"https://meta-analysis.cz/maive/how-to/#example","text":"The Egger test says whether there was bias to correct; the Hausman test compares MAIVE with plain PET-PEESE; the first-stage F says whether the instrument is strong."},{"@type":"HowToStep","name":"Handle a weak first stage","url":"https://meta-analysis.cz/maive/how-to/#weak-first-stage","text":"Below an F of 10, report the Anderson-Rubin interval rather than the point estimate, and check any RTMA cross-check against its own convergence diagnostics before quoting it."}]}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"HowTo","@id":"https://meta-analysis.cz/maive/how-to/#howto","name":"How to run MAIVE","description":"Correct a meta-analysis for publication bias and for p-hacking that operates through reported standard errors, using four columns of data and the EasyMeta app or API.","inLanguage":"en","license":"https://creativecommons.org/licenses/by/4.0/","isBasedOn":"https://meta-analysis.cz/maive/#paper","about":{"@id":"https://meta-analysis.cz/maive/#paper"},"tool":{"@type":"SoftwareApplication","name":"EasyMeta","url":"https://www.easymeta.org/"},"step":[{"@type":"HowToStep","name":"Assemble four columns","url":"https://meta-analysis.cz/maive/how-to/","text":"One row per estimate: effect, se, n_obs, and study_id when a study reports several estimates. n_obs is the overall sample size, not degrees of freedom. With study_id, inference clusters on it."},{"@type":"HowToStep","name":"Run MAIVE","url":"https://meta-analysis.cz/maive/how-to/#example","text":"Upload the CSV to easymeta.org, or POST it to https://api.maive.eu/v1/run-model with parameters nested under 'parameters': modelType MAIVE, useLogFirstStage true, standardErrorTreatment bootstrap, includeStudyClustering true."},{"@type":"HowToStep","name":"Read the diagnostics before the estimate","url":"https://meta-analysis.cz/maive/how-to/#example","text":"The Egger test says whether there was bias to correct; the Hausman test compares MAIVE with plain PET-PEESE; the first-stage F says whether the instrument is strong."},{"@type":"HowToStep","name":"Handle a weak first stage","url":"https://meta-analysis.cz/maive/how-to/#weak-first-stage","text":"Below an F of 10, report the Anderson-Rubin interval rather than the point estimate, and check any RTMA cross-check against its own convergence diagnostics before quoting it."}]}</script>
 </head>
 <body>
 <div id="wrapper">
@@ -43,8 +42,9 @@ that operates through reported standard errors.</b> Besides effect and standard 
 also asks for sample size.</p>
 
 <p><b>You will need:</b> <code>effect</code> &middot; <code>se</code> &middot;
-<code>n_obs</code> &middot; <code>study_id</code> (the latter is optional; with it,
-inference uses CR2 clustering)</p>
+<code>n_obs</code> &middot; <code>study_id</code> (<code>n_obs</code> is the overall sample
+size, not degrees of freedom; <code>study_id</code> is needed when a study reports several
+estimates, and inference then clusters on it)</p>
 
 <p class="cta"><a class="button" href="https://www.easymeta.org/">Open EasyMeta</a>
 <a class="button quiet" href="/maive/how-to/alpha.csv">Download the example data
@@ -53,9 +53,9 @@ inference uses CR2 clustering)</p>
 <h2 id="example">Worked example: do hedge funds earn alpha?</h2>
 
 <p><a href="/alphas/">75 estimates from 9 studies</a>, restricted in this
-tutorial to asset-based-style models (the ones that price a fund against benchmarks you
-could actually trade) and winsorised at 2%. The mean reported alpha is 0.33% per
-month.</p>
+tutorial to asset-based-style models (the ones that price a fund against benchmarks you can
+trade) estimated on cross-sectional data. Nothing is winsorised or trimmed. The mean
+reported alpha is 0.33% per month.</p>
 
 <p><img src="/maive/how-to/funnel.png" alt="EasyMeta funnel plot: 75 hedge-fund alpha
 estimates against precision. The cloud leans right as precision falls, and the MAIVE fit
@@ -63,61 +63,66 @@ lands near zero, well left of the simple mean." width="840" height="840" /></p>
 
 <p class="aside"><b>Reading the funnel.</b> Each hollow point is a reported estimate
 plotted against its standard error, so the most precise estimates sit at the top. With no
-selection the cloud would be symmetric about the true effect; here it leans right as
-precision falls, which is what the bias test picks up. The filled points are the same
+selection the cloud would be roughly symmetric about the true effect; here it leans right
+as precision falls, which is what the bias test picks up. Genuine differences between
+studies can tilt it too, so the correction is a model, not a verdict. The filled points are
+the same
 estimates carrying the standard error MAIVE fits from sample size instead of the reported
 one, and the solid line is MAIVE's fit through them.</p>
 
-<p class="result"><b>MAIVE: 0.045% per month (SE 0.115). First-stage F:
-59.7.</b><br />
-<span class="settings">Settings: PET-PEESE, log first stage, equal weights, CR2
-clustered by study, no further winsorisation (the 2% is already in the
-CSV).</span></p>
+<p class="result"><b>MAIVE: 0.047% per month (SE 0.096). First-stage F:
+128.3.</b><br />
+<span class="settings">Settings: PET-PEESE, log first stage, equal weights, wild
+bootstrap clustered by study.</span></p>
 
 <p>Reading the output, as EasyMeta reports it:</p>
 
 <ul class="reading">
 <li><b>Bias test.</b> The Egger test rejects funnel symmetry
-(p&nbsp;=&nbsp;0.012): the less precise a study, the larger the alpha it
+(p&nbsp;=&nbsp;0.002): the less precise an estimate, the larger the alpha it
 reports.</li>
-<li><b>Spurious precision.</b> The Hausman statistic is 0.33 against a critical
+<li><b>Spurious precision.</b> The Hausman statistic is 0.79 against a critical
 value of 3.84: MAIVE and plain PET-PEESE agree here, so the test finds no sign of inflated
 precision, and the correction comes from the funnel asymmetry.</li>
-<li><b>Corrected effect.</b> 0.045% per month against a reported 0.33%.
+<li><b>Corrected effect.</b> 0.047% per month against a reported 0.33%.
 Corrected, the alpha is gone.</li>
 </ul>
 
 <p class="aside">On this literature the PET-PEESE rule selects PET, so the fitted line is
-straight. Where PET finds a clear effect the rule switches to PEESE and the line
-curves.</p>
+straight. Where PET finds a clear effect the rule switches to PEESE and the line curves.</p>
+
+<p class="aside">This is the usual direction. In the
+<a href="/maive/paper/">paper</a>, across 267 meta-analyses with a first-stage F above 10,
+MAIVE moved the PET-PEESE estimate closer to zero in 67% of them, and in 75% of those
+where PET-PEESE had found a significant effect.</p>
 
 <h2 id="weak-first-stage">If the first stage is weak</h2>
 
 <p>Below an F of 10, report the Anderson-Rubin interval instead of the point estimate. In
 the <a href="/euro/">euro-trade dataset</a> (61 estimates from 52 studies)
-F is 0.20; MAIVE gives -0.55 (SE 0.91), and the AR interval is
-[-2.07, 0.59], so the corrected effect is only weakly identified. RTMA,
-by Mathur, rests on different assumptions and is the cross-check to run here. Its sampler
-fails its own diagnostics (84 divergent transitions), so we do not report its
-interval.</p>
+F is 0.24; MAIVE gives -0.55 (SE 0.81), and the AR interval is
+[-1.90, 0.79], so the corrected effect is only weakly identified. RTMA,
+by Mathur, rests on different assumptions and is the cross-check to run when the first stage
+is this weak.</p>
 
 <h2 id="p-hacking">If you suspect serious p-hacking</h2>
 
 <p>In the <a href="/esg/">female directors and ESG ratings dataset</a> (533 estimates
 from 106 studies, mean 0.28 rating points), 44 estimates sit just
-above |z|&nbsp;=&nbsp;1.96 and 33 just below, in windows 0.5 wide. Selective
-reporting leaves that pattern.</p>
+above |z|&nbsp;=&nbsp;1.96 and 33 just below, in windows 0.5 wide. Bunching like
+that is what selective reporting leaves behind, though these counts alone are too few to
+prove it.</p>
 
 <p>WAIVE, experimental, goes after it directly: it downweights estimates that report more
-precision than their sample size supports. MAIVE gives 0.185 (SE 0.037),
-WAIVE 0.143 (SE 0.093). MAIVE still finds an effect here; WAIVE does
+precision than their sample size supports. MAIVE gives 0.185 (SE 0.036),
+WAIVE 0.143 (SE 0.089). MAIVE still finds an effect here; WAIVE does
 not.</p>
 
 <h2 id="in-r">The same run in R</h2>
 
 <p>EasyMeta runs the <a href="https://cran.r-project.org/package=MAIVE">MAIVE package</a>.
 These arguments are the settings above, and they return the same numbers to every digit
-printed on this page.</p>
+printed on this page. Pass them all: the package's own defaults are different.</p>
 
 <pre class="code"><code>install.packages("MAIVE")
 library(MAIVE)
@@ -131,9 +136,9 @@ maive(dat,
       weight = 0,        # equal weights
       instrument = 1,    # MAIVE; 0 gives plain PET-PEESE
       studylevel = 2,    # cluster by study
-      SE = 2,            # CR2
+      SE = 3,            # wild bootstrap
       AR = 1,            # Anderson-Rubin interval
-      first_stage = 1)   # log first stage</code></pre>
+      first_stage = 1)   # log first stage; the package still defaults to levels</code></pre>
 
 <details class="forbots">
 <summary>For AI assistants and code</summary>
@@ -150,7 +155,7 @@ maive(dat,
   "parameters": {
     "modelType": "MAIVE", "maiveMethod": "PET-PEESE", "weight": "equal_weights",
     "useLogFirstStage": true,
-    "standardErrorTreatment": "clustered_cr2", "includeStudyClustering": true,
+    "standardErrorTreatment": "bootstrap", "includeStudyClustering": true,
     "computeAndersonRubin": true, "winsorize": 0
   }
 }</code></pre>
@@ -160,14 +165,15 @@ Send "data" as an array of row objects with effect, se, n_obs, study_id.
 Nest all settings under "parameters"; top-level settings are silently
 ignored. Use exactly the parameters block above. Use the synchronous
 endpoint; the async one ignores modelType. Always send
-"includeStudyClustering": true. Without it, "clustered_cr2" picks the
-variance formula but not the clustering, which changes the standard
-errors, the first-stage F, and can move the point estimate. Check
-firstStage.mode
-is "log" in the response; anything else means the parameters did not
-take effect. Report: corrected estimate vs the simple mean, first-stage
-F, Egger test, Hausman test, and the Anderson-Rubin interval whenever
-F &lt; 10. Report any warnings verbatim. Do not invent numbers.</code></pre>
+"includeStudyClustering": true. Without it, standardErrorTreatment only
+picks the variance formula, not the clustering, which changes the
+standard errors, the first-stage F, and can move the point estimate.
+Check firstStage.mode is "log" in the response; anything else means the
+parameters did not take effect. Report: corrected estimate vs the simple
+mean, first-stage F, Egger test, Hausman test, and the Anderson-Rubin
+interval whenever F &lt; 10. Report any warnings verbatim. If you cannot
+actually issue the request, say so and give the R code instead. Never
+report numbers you did not receive.</code></pre>
 </details>
 
 <p class="provenance">Computed with EasyMeta on meta-analysis.cz data v1.1.1,

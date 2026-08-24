@@ -1111,6 +1111,9 @@ def main():
            f"- [Commentary and interviews]({BASE}/komentare/): op-eds, columns and interviews "
            f"(mostly Czech); machine index at {BASE}/komentare/llms.txt",
            f"- [Research notes]({BASE}/notes/): short notes on methods and papers",
+           f"- [How to run MAIVE]({BASE}/maive/how-to/): the four columns MAIVE needs, a worked "
+           f"example with every number archived at {BASE}/api/v1/maive-howto.json, the same run "
+           f"in R, and a ready request for the EasyMeta API",
            "- [EasyMeta](https://www.easymeta.org/): one-click meta-analysis web app (MAIVE, PET-PEESE, clustering)",
            "- [MAER-Net](https://www.maer-net.org/): Meta-Analysis of Economics Research Network",
            "", "## Optional", "",

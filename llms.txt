@@ -82,6 +82,7 @@
 - [Sitemap](https://meta-analysis.cz/sitemap.xml): all pages and PDF full texts
 - [Commentary and interviews](https://meta-analysis.cz/komentare/): op-eds, columns and interviews (mostly Czech); machine index at https://meta-analysis.cz/komentare/llms.txt
 - [Research notes](https://meta-analysis.cz/notes/): short notes on methods and papers
+- [How to run MAIVE](https://meta-analysis.cz/maive/how-to/): the four columns MAIVE needs, a worked example with every number archived at https://meta-analysis.cz/api/v1/maive-howto.json, the same run in R, and a ready request for the EasyMeta API
 - [EasyMeta](https://www.easymeta.org/): one-click meta-analysis web app (MAIVE, PET-PEESE, clustering)
 - [MAER-Net](https://www.maer-net.org/): Meta-Analysis of Economics Research Network
 

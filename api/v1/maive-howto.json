@@ -2,15 +2,14 @@
  "api": "https://api.maive.eu",
  "datasets": {
   "alpha": {
-   "caliper_above": 7,
-   "caliper_below": 14,
+   "caliper_above": 8,
+   "caliper_below": 13,
    "estimates": 75,
-   "r2_logse2_logn": 0.5876,
-   "raw_mean_before_winsorising": 0.3334,
+   "r2_logse2_logn": 0.587,
    "share_negative": 0.0667,
-   "simple_mean": 0.3329,
+   "simple_mean": 0.3334,
    "studies": 9,
-   "winsorised": 0.02
+   "subset": "alphas: model_asset_based == 1 and data_cross_section == 1"
   },
   "esg": {
    "caliper_above": 44,
@@ -32,11 +31,11 @@
   }
  },
  "funnel": {
-  "async_first_stage_f": 59.6598,
+  "async_first_stage_f": 128.2692,
   "file": "/maive/how-to/funnel.png",
   "from": "async MAIVE run, accepted after matching the sync run on estimate, SE and first-stage F"
  },
- "how": "tools/build_maive_howto.py --refresh. Numbers from the SYNCHRONOUS endpoint (async ignores modelType). Parameters nested under 'parameters' (top-level is silently ignored). includeStudyClustering true everywhere: clustered_cr2 alone only selects the small-sample correction, not the clustering.",
+ "how": "tools/build_maive_howto.py --refresh. Numbers from the SYNCHRONOUS endpoint (async ignores modelType). Parameters nested under 'parameters' (top-level is silently ignored). includeStudyClustering true everywhere: the SE alone only selects the small-sample correction, not the clustering.",
  "retrieved": "2026-08-24",
  "runs": {
   "alpha_maive": {
@@ -46,29 +45,41 @@
     "includeStudyClustering": true,
     "maiveMethod": "PET-PEESE",
     "modelType": "MAIVE",
-    "standardErrorTreatment": "clustered_cr2",
+    "standardErrorTreatment": "bootstrap",
     "useLogFirstStage": true,
     "weight": "equal_weights",
     "winsorize": 0
    },
    "response": {
     "andersonRubinCI": [
-     -0.0989,
-     0.0924
+     -0.1045,
+     0.1226
     ],
-    "bootCI": "NA",
-    "bootSE": "NA",
-    "effectEstimate": 0.0446,
+    "bootCI": [
+     [
+      -0.3511,
+      0.4313
+     ],
+     [
+      -1.4508,
+      3.8478
+     ]
+    ],
+    "bootSE": [
+     0.0963,
+     0.4108
+    ],
+    "effectEstimate": 0.0469,
     "firstStage": {
      "description": "log(SE^2) ~ log N; Duan smearing applied",
      "fStatisticLabel": "First-Stage F-Statistic (γ₁)",
      "mode": "log"
     },
-    "firstStageFStatistic": 59.6598,
+    "firstStageFStatistic": 128.2692,
     "hausmanTest": {
      "criticalValue": 3.8415,
      "rejectsNull": false,
-     "statistic": 0.3253
+     "statistic": 0.791
     },
     "isSignificant": false,
     "is_quadratic_fit": {
@@ -81,97 +92,97 @@
     "petpeese_selected": "PET",
     "publicationBias": {
      "eggerAndersonRubinCI": [
-      0.7781,
-      2.4701
+      0.8895,
+      2.154
      ],
      "eggerBootCI": [
-      0.2913,
-      2.3225
+      -1.4508,
+      3.8478
      ],
-     "eggerCoef": 1.3069,
-     "eggerSE": 0.5182,
+     "eggerCoef": 1.2846,
+     "eggerSE": 0.4108,
      "isSignificant": true,
-     "pValue": 0.0117
+     "pValue": 0.0018
     },
     "seInstrumented": [
-     0.1403,
-     0.4726,
-     0.7653,
-     0.2314,
-     0.7038,
-     0.1533,
-     0.1764,
-     0.1764,
-     0.1764,
-     0.1764,
-     0.1764,
-     0.1764,
-     0.2022,
-     0.2022,
-     0.2022,
-     0.2022,
-     0.2022,
-     0.2022,
-     0.2022,
-     0.2022,
-     0.1227,
-     0.157,
-     0.1227,
-     0.157,
-     0.1227,
-     0.157,
-     0.1227,
-     0.157,
-     0.1227,
-     0.157,
-     0.1227,
-     0.157,
-     0.1533,
-     0.1973,
-     0.1973,
-     0.1973,
-     0.1973,
-     0.1973,
-     0.1973,
-     0.1973,
-     0.1973,
-     0.1973,
-     0.1973,
-     0.1973,
-     0.4411,
-     0.4411,
-     0.4411,
-     0.4411,
-     0.4411,
-     0.4411,
-     0.4411,
-     0.4411,
-     0.4411,
-     0.4411,
-     0.4411,
-     0.4411,
-     0.111,
-     0.111,
-     0.111,
-     0.111,
-     0.111,
-     0.111,
-     0.111,
-     0.111,
-     0.111,
-     0.111,
-     0.111,
-     0.111,
-     0.111,
-     0.111,
-     0.111,
-     0.111,
-     0.111,
-     0.111,
-     0.111
+     0.1402,
+     0.4827,
+     0.7883,
+     0.2334,
+     0.7239,
+     0.1534,
+     0.177,
+     0.177,
+     0.177,
+     0.177,
+     0.177,
+     0.177,
+     0.2034,
+     0.2034,
+     0.2034,
+     0.2034,
+     0.2034,
+     0.2034,
+     0.2034,
+     0.2034,
+     0.1223,
+     0.1572,
+     0.1223,
+     0.1572,
+     0.1223,
+     0.1572,
+     0.1223,
+     0.1572,
+     0.1223,
+     0.1572,
+     0.1223,
+     0.1572,
+     0.1534,
+     0.1984,
+     0.1984,
+     0.1984,
+     0.1984,
+     0.1984,
+     0.1984,
+     0.1984,
+     0.1984,
+     0.1984,
+     0.1984,
+     0.1984,
+     0.4499,
+     0.4499,
+     0.4499,
+     0.4499,
+     0.4499,
+     0.4499,
+     0.4499,
+     0.4499,
+     0.4499,
+     0.4499,
+     0.4499,
+     0.4499,
+     0.1105,
+     0.1105,
+     0.1105,
+     0.1105,
+     0.1105,
+     0.1105,
+     0.1105,
+     0.1105,
+     0.1105,
+     0.1105,
+     0.1105,
+     0.1105,
+     0.1105,
+     0.1105,
+     0.1105,
+     0.1105,
+     0.1105,
+     0.1105,
+     0.1105
     ],
-    "slope_coef": 1.3069,
-    "standardError": 0.1148
+    "slope_coef": 1.2846,
+    "standardError": 0.0963
    }
   },
   "esg_maive": {
@@ -181,29 +192,41 @@
     "includeStudyClustering": true,
     "maiveMethod": "PET-PEESE",
     "modelType": "MAIVE",
-    "standardErrorTreatment": "clustered_cr2",
+    "standardErrorTreatment": "bootstrap",
     "useLogFirstStage": true,
     "weight": "equal_weights",
     "winsorize": 0
    },
    "response": {
     "andersonRubinCI": [
-     0.1241,
-     0.2621
+     0.1255,
+     0.2603
     ],
-    "bootCI": "NA",
-    "bootSE": "NA",
+    "bootCI": [
+     [
+      0.1104,
+      0.2585
+     ],
+     [
+      0.0259,
+      0.4765
+     ]
+    ],
+    "bootSE": [
+     0.0361,
+     0.0969
+    ],
     "effectEstimate": 0.1854,
     "firstStage": {
      "description": "log(SE^2) ~ log N; Duan smearing applied",
      "fStatisticLabel": "First-Stage F-Statistic (γ₁)",
      "mode": "log"
     },
-    "firstStageFStatistic": 33.013,
+    "firstStageFStatistic": 36.377,
     "hausmanTest": {
      "criticalValue": 3.8415,
      "rejectsNull": true,
-     "statistic": 50.5377
+     "statistic": 62.8809
     },
     "isSignificant": true,
     "is_quadratic_fit": {
@@ -212,21 +235,21 @@
      "slope_type": "quadratic"
     },
     "peese_se2_coef": 0.2496,
-    "peese_se2_se": 0.1008,
+    "peese_se2_se": 0.0969,
     "petpeese_selected": "PEESE",
     "publicationBias": {
      "eggerAndersonRubinCI": [
-      0.0192,
-      0.4129
+      0.0294,
+      0.4082
      ],
      "eggerBootCI": [
-      0.0535,
-      0.5261
+      0.0243,
+      0.5572
      ],
      "eggerCoef": 0.2898,
-     "eggerSE": 0.1206,
+     "eggerSE": 0.1166,
      "isSignificant": true,
-     "pValue": 0.0162
+     "pValue": 0.0129
     },
     "seInstrumented": [
      1.3728,
@@ -764,7 +787,7 @@
      0.5313
     ],
     "slope_coef": 0.2496,
-    "standardError": 0.0368
+    "standardError": 0.0361
    }
   },
   "esg_waive": {
@@ -774,29 +797,41 @@
     "includeStudyClustering": true,
     "maiveMethod": "PET-PEESE",
     "modelType": "WAIVE",
-    "standardErrorTreatment": "clustered_cr2",
+    "standardErrorTreatment": "bootstrap",
     "useLogFirstStage": true,
     "weight": "equal_weights",
     "winsorize": 0
    },
    "response": {
     "andersonRubinCI": [
-     0.0651,
-     0.2204
+     0.0687,
+     0.2167
     ],
-    "bootCI": "NA",
-    "bootSE": "NA",
+    "bootCI": [
+     [
+      -0.0281,
+      0.3115
+     ],
+     [
+      -0.2298,
+      0.6145
+     ]
+    ],
+    "bootSE": [
+     0.0892,
+     0.1929
+    ],
     "effectEstimate": 0.1427,
     "firstStage": {
      "description": "log(SE^2) ~ log N; Duan smearing applied",
      "fStatisticLabel": "First-Stage F-Statistic (γ₁)",
      "mode": "log"
     },
-    "firstStageFStatistic": 33.013,
+    "firstStageFStatistic": 36.377,
     "hausmanTest": {
      "criticalValue": 3.8415,
      "rejectsNull": false,
-     "statistic": 0.2125
+     "statistic": 0.2292
     },
     "isSignificant": false,
     "is_quadratic_fit": {
@@ -809,17 +844,17 @@
     "petpeese_selected": "PET",
     "publicationBias": {
      "eggerAndersonRubinCI": [
-      0.0493,
-      0.3822
+      0.0566,
+      0.3701
      ],
      "eggerBootCI": [
-      -0.2254,
-      0.5737
+      -0.2298,
+      0.6145
      ],
      "eggerCoef": 0.1741,
-     "eggerSE": 0.2039,
+     "eggerSE": 0.1929,
      "isSignificant": false,
-     "pValue": 0.393
+     "pValue": 0.3668
     },
     "seInstrumented": [
      1.3728,
@@ -1357,7 +1392,7 @@
      0.5313
     ],
     "slope_coef": 0.1741,
-    "standardError": 0.0932
+    "standardError": 0.0892
    }
   },
   "euro_maive": {
@@ -1367,29 +1402,41 @@
     "includeStudyClustering": true,
     "maiveMethod": "PET-PEESE",
     "modelType": "MAIVE",
-    "standardErrorTreatment": "clustered_cr2",
+    "standardErrorTreatment": "bootstrap",
     "useLogFirstStage": true,
     "weight": "equal_weights",
     "winsorize": 0
    },
    "response": {
     "andersonRubinCI": [
-     -2.0691,
-     0.5872
+     -1.8953,
+     0.7929
     ],
-    "bootCI": "NA",
-    "bootSE": "NA",
+    "bootCI": [
+     [
+      -2.7958,
+      1.7914
+     ],
+     [
+      -6.9309,
+      17.9279
+     ]
+    ],
+    "bootSE": [
+     0.8143,
+     4.3271
+    ],
     "effectEstimate": -0.5512,
     "firstStage": {
      "description": "log(SE^2) ~ log N; Duan smearing applied",
      "fStatisticLabel": "First-Stage F-Statistic (γ₁)",
      "mode": "log"
     },
-    "firstStageFStatistic": 0.1978,
+    "firstStageFStatistic": 0.2354,
     "hausmanTest": {
      "criticalValue": 3.8415,
      "rejectsNull": false,
-     "statistic": 0.7903
+     "statistic": 1.0094
     },
     "isSignificant": false,
     "is_quadratic_fit": {
@@ -1402,17 +1449,17 @@
     "petpeese_selected": "PET",
     "publicationBias": {
      "eggerAndersonRubinCI": [
-      -1.3738,
-      14.4494
+      -0.5731,
+      13.4198
      ],
      "eggerBootCI": [
-      -3.9489,
-      15.0465
+      -6.9309,
+      17.9279
      ],
      "eggerCoef": 5.5488,
-     "eggerSE": 4.8459,
+     "eggerSE": 4.3271,
      "isSignificant": false,
-     "pValue": 0.2522
+     "pValue": 0.1997
     },
     "seInstrumented": [
      0.2258,
@@ -1478,7 +1525,7 @@
      0.2207
     ],
     "slope_coef": 5.5488,
-    "standardError": 0.9107
+    "standardError": 0.8143
    }
   },
   "euro_rtma": {
@@ -1537,7 +1584,7 @@
   "includeStudyClustering": true,
   "maiveMethod": "PET-PEESE",
   "modelType": "MAIVE",
-  "standardErrorTreatment": "clustered_cr2",
+  "standardErrorTreatment": "bootstrap",
   "useLogFirstStage": true,
   "weight": "equal_weights",
   "winsorize": 0

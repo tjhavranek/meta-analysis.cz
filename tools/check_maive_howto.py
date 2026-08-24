@@ -42,8 +42,8 @@ def main():
             fail("%s ran without includeStudyClustering -- its SEs are not clustered" % key)
         if p.get("useLogFirstStage") is not True:
             fail("%s did not request the log first stage" % key)
-        if p.get("standardErrorTreatment") != "clustered_cr2":
-            fail("%s did not request the CR2 correction" % key)
+        if p.get("standardErrorTreatment") != "bootstrap":
+            fail("%s did not request the wild bootstrap" % key)
         got = (runs[key]["response"].get("firstStage") or {}).get("mode")
         if got != "log":
             fail("%s ran with firstStage.mode=%r -- parameters did not take effect" % (key, got))
@@ -92,12 +92,11 @@ def main():
         fail("the p-hacking example's log(SE^2) ~ log N R2 is %.3f; its first stage is "
              "arithmetic, not evidence" % ds["esg"]["r2_logse2_logn"])
 
-    # 4. The RTMA failure the euro card cites must actually be a failure. The count is
-    #    unstable run to run (itself a symptom), so the gate asks 'did it fail', not 'by
-    #    exactly how much'.
-    dg = runs["euro_rtma"]["response"].get("diagnostics") or {}
-    if not (dg.get("divergences") or 0) > 0:
-        fail("euro RTMA reports no divergences; the page says its sampler fails")
+    # 4. The euro card names RTMA as the cross-check for a weak first stage. The run stays
+    #    in the record so the claim is not made on nothing, but the page quotes no number
+    #    from it, so there is nothing here to hold to a value.
+    if "euro_rtma" not in runs:
+        fail("the page names RTMA as the cross-check but no RTMA run is archived")
     # 5. The caliper counts on the page must be recomputable from the shipped data.
     import pandas as pd
     d = pd.read_csv(os.path.join(ROOT, "data", "v1", "estimates_harmonised.csv"),
@@ -123,7 +122,7 @@ def main():
         "weight = 0": p.get("weight") == "equal_weights",
         "instrument = 1": p.get("modelType") == "MAIVE",
         "studylevel = 2": p.get("includeStudyClustering") is True,
-        "SE = 2": p.get("standardErrorTreatment") == "clustered_cr2",
+        "SE = 3": p.get("standardErrorTreatment") == "bootstrap",
         "AR = 1": p.get("computeAndersonRubin") is True,
         "first_stage = 1": p.get("useLogFirstStage") is True,
     }
@@ -134,19 +133,25 @@ def main():
             fail("the R block passes %s but the request did not ask for the matching "
                  "setting" % arg)
 
-    # 5c. The shipped CSV must BE the winsorised data. Winsorisation is applied to the rows
-    #     rather than passed as the app's setting, because the R code on the page reads this
-    #     file and has no winsorisation argument. If the file were the raw subset, R and the
-    #     page would disagree.
+    # 5c. The shipped CSV must BE the subset the page describes, row for row: the R code on
+    #     the page reads this file, and the page says nothing is winsorised or trimmed. Any
+    #     silent cleaning between alphas.xlsx and alpha.csv would make the prose false and
+    #     the R reproduction a coincidence.
     import pandas as pd
+    from build_maive_howto import flagship
     shipped = pd.read_csv(CSV)
-    ds_e = ds["alpha"]
-    if abs(float(shipped.effect.mean()) - ds_e["simple_mean"]) > 5e-4:
+    built = pd.DataFrame(flagship()[0])
+    if len(shipped) != len(built):
+        fail("alpha.csv has %d rows, the described subset has %d" % (len(shipped), len(built)))
+    elif abs(float(shipped.effect.sum()) - float(built.effect.sum())) > 1e-9 or \
+            abs(float(shipped.se.sum()) - float(built.se.sum())) > 1e-9:
+        fail("alpha.csv is not the subset the page describes; something cleaned the rows")
+    if abs(float(shipped.effect.mean()) - ds["alpha"]["simple_mean"]) > 5e-4:
         fail("the shipped CSV's mean effect (%.4f) is not the sidecar's (%.4f)"
-             % (shipped.effect.mean(), ds_e["simple_mean"]))
-    if ds_e.get("winsorised") and abs(ds_e["simple_mean"]
-                                      - ds_e["raw_mean_before_winsorising"]) < 1e-9:
-        fail("the sidecar says the data are winsorised but the mean did not move")
+             % (shipped.effect.mean(), ds["alpha"]["simple_mean"]))
+    if "Nothing is winsorised or trimmed" not in page:
+        fail("the page no longer states that the example data are untouched, but the gate "
+             "above only proves alpha.csv matches the described subset")
 
     # 5d. The page says the fit is straight "on this literature". That sentence is only
     #     right while the rule actually selects PET; if a rerun selects PEESE the paragraph

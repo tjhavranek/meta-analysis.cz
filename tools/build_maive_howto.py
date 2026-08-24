@@ -15,7 +15,7 @@ THE TRAPS, all verified live and all invisible in a 200 response:
 2. The async endpoint ignores modelType and runs MAIVE whatever is asked. Numbers therefore
    come from the sync endpoint only; the funnel exists only on async, so it is fetched from
    an async MAIVE run and accepted only if async and sync agree on the headline statistics.
-3. "standardErrorTreatment": "clustered_cr2" alone does NOT cluster by study -- it only
+3. standardErrorTreatment alone does NOT cluster by study -- it only
    picks the small-sample correction, and without "includeStudyClustering": true every
    estimate is its own cluster (MAIVE's validation.r builds g = seq_len(M)). The flag
    changes the standard errors, the first-stage F, and -- because PET-vs-PEESE selection
@@ -42,24 +42,21 @@ FUNNEL = os.path.join(OUT_DIR, "funnel.png")
 CSV_OUT = os.path.join(OUT_DIR, "alpha.csv")
 TABLE = os.path.join(ROOT, "data", "v1", "estimates_harmonised.csv")
 
-# One recipe everywhere. clustered_cr2 names the small-sample correction;
+# One recipe everywhere. standardErrorTreatment names the variance estimator;
 # includeStudyClustering is what actually clusters by study_id. Both, always.
+# bootstrap is the cluster wild bootstrap, which is guideline 14 on this site below 40
+# studies: the worked example has nine. It is SE = 3 in the MAIVE R package, and the two
+# agree to every printed digit.
 CANON = {"modelType": "MAIVE", "maiveMethod": "PET-PEESE", "weight": "equal_weights",
-         "useLogFirstStage": True, "standardErrorTreatment": "clustered_cr2",
+         "useLogFirstStage": True, "standardErrorTreatment": "bootstrap",
          "includeStudyClustering": True, "winsorize": 0, "computeAndersonRubin": True}
 
 
-# The flagship is a subset of the hedge-fund alpha literature, winsorised at 2%. The
-# winsorisation is applied HERE, to the data, and the winsorised rows are what ship as the
-# CSV -- not passed as the app's winsorize setting. That is deliberate: the MAIVE R package
-# has no winsorisation argument, and the app's rule is not plain quantile clipping, so a run
-# using the setting could not be reproduced by the R code this page prints. Winsorised in the
-# data, both the API and R read identical rows and return identical numbers.
-FLAGSHIP_WINSOR = 0.02
-
-
+# The flagship is a subset of the hedge-fund alpha literature: asset-based-style pricing
+# models estimated on cross-sectional samples. Both filters are on the page, because a reader
+# starting from alphas.xlsx has to be able to rebuild these 75 rows. Nothing is winsorised,
+# trimmed or otherwise cleaned: the alphas paper does not winsorise, and neither does this.
 def flagship():
-    import numpy as np
     import pandas as pd
     d = pd.read_excel(os.path.join(ROOT, "alphas", "alphas.xlsx"))
     d = d.dropna(subset=["alpha", "se", "study_id", "sample_size"])
@@ -67,13 +64,9 @@ def flagship():
     d = d[(d.model_asset_based == 1) & (d.data_cross_section == 1)]
     d = d.rename(columns={"alpha": "effect", "sample_size": "n_obs"})
     d = d[["effect", "se", "n_obs", "study_id"]].copy()
-    raw_mean = float(d.effect.mean())
-    for c in ("effect", "se"):
-        lo, hi = np.quantile(d[c], FLAGSHIP_WINSOR), np.quantile(d[c], 1 - FLAGSHIP_WINSOR)
-        d[c] = d[c].clip(lo, hi)
     rows = [{"effect": float(r.effect), "se": float(r.se),
              "n_obs": int(r.n_obs), "study_id": str(r.study_id)} for r in d.itertuples()]
-    return rows, d, raw_mean
+    return rows, d
 
 
 def usable(dataset):
@@ -144,14 +137,13 @@ def refresh():
         return resp
 
     print("sync runs (the endpoint that honours modelType):")
-    # Not winsorised. The MAIVE R package has no winsorisation argument -- the app applies
-    # it before calling -- and its rule is not plain quantile clipping, so a winsorised run
-    # cannot be reproduced exactly from R. Since the page ships R code that must return the
-    # same numbers, the example runs on the data as published.
-    alpha_rows, alpha_d, raw_mean = flagship()
+    # No run uses the app's winsorize setting. The MAIVE R package has no winsorisation
+    # argument -- the app applies its own rule before calling -- and that rule is not plain
+    # quantile clipping, so a run using it could not be reproduced by the R code this page
+    # prints. Everything here runs on the data as published.
+    alpha_rows, alpha_d = flagship()
     data["alpha"] = descriptives(alpha_d)
-    data["alpha"]["raw_mean_before_winsorising"] = round(raw_mean, 4)
-    data["alpha"]["winsorised"] = FLAGSHIP_WINSOR
+    data["alpha"]["subset"] = "alphas: model_asset_based == 1 and data_cross_section == 1"
     alpha = run("alpha_maive", alpha_rows, dict(CANON))
 
     euro_rows, euro_d = usable("euro")
@@ -196,7 +188,7 @@ def refresh():
                 "that produced it.",
         "how": "tools/build_maive_howto.py --refresh. Numbers from the SYNCHRONOUS endpoint "
                "(async ignores modelType). Parameters nested under 'parameters' (top-level "
-               "is silently ignored). includeStudyClustering true everywhere: clustered_cr2 "
+               "is silently ignored). includeStudyClustering true everywhere: the SE "
                "alone only selects the small-sample correction, not the clustering.",
         "api": API, "retrieved": datetime.date.today().isoformat(),
         "datasets": data, "settings": CANON, "runs": runs,
@@ -223,7 +215,7 @@ def n(x, d=3):
     return "NA" if x is None or x == "NA" else ("%.*f" % (d, float(x)))
 
 
-PAGE = """<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" \\
+PAGE = """<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" \
 "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html lang="en" xmlns="http://www.w3.org/1999/xhtml">
 <head>
@@ -268,8 +260,9 @@ that operates through reported standard errors.</b> Besides effect and standard 
 also asks for sample size.</p>
 
 <p><b>You will need:</b> <code>effect</code> &middot; <code>se</code> &middot;
-<code>n_obs</code> &middot; <code>study_id</code> (the latter is optional; with it,
-inference uses CR2 clustering)</p>
+<code>n_obs</code> &middot; <code>study_id</code> (<code>n_obs</code> is the overall sample
+size, not degrees of freedom; <code>study_id</code> is needed when a study reports several
+estimates, and inference then clusters on it)</p>
 
 <p class="cta"><a class="button" href="https://www.easymeta.org/">Open EasyMeta</a>
 <a class="button quiet" href="/maive/how-to/alpha.csv">Download the example data
@@ -278,9 +271,9 @@ inference uses CR2 clustering)</p>
 <h2 id="example">Worked example: do hedge funds earn alpha?</h2>
 
 <p><a href="/alphas/">%(alpha_k)s estimates from %(alpha_g)s studies</a>, restricted in this
-tutorial to asset-based-style models (the ones that price a fund against benchmarks you
-could actually trade) and winsorised at 2%%. The mean reported alpha is %(alpha_mean)s%% per
-month.</p>
+tutorial to asset-based-style models (the ones that price a fund against benchmarks you can
+trade) estimated on cross-sectional data. Nothing is winsorised or trimmed. The mean
+reported alpha is %(alpha_mean)s%% per month.</p>
 
 <p><img src="/maive/how-to/funnel.png" alt="EasyMeta funnel plot: %(alpha_k)s hedge-fund alpha
 estimates against precision. The cloud leans right as precision falls, and the MAIVE fit
@@ -288,22 +281,23 @@ lands near zero, well left of the simple mean." width="840" height="840" /></p>
 
 <p class="aside"><b>Reading the funnel.</b> Each hollow point is a reported estimate
 plotted against its standard error, so the most precise estimates sit at the top. With no
-selection the cloud would be symmetric about the true effect; here it leans right as
-precision falls, which is what the bias test picks up. The filled points are the same
+selection the cloud would be roughly symmetric about the true effect; here it leans right
+as precision falls, which is what the bias test picks up. Genuine differences between
+studies can tilt it too, so the correction is a model, not a verdict. The filled points are
+the same
 estimates carrying the standard error MAIVE fits from sample size instead of the reported
 one, and the solid line is MAIVE's fit through them.</p>
 
 <p class="result"><b>MAIVE: %(alpha_est)s%% per month (SE %(alpha_se)s). First-stage F:
 %(alpha_F)s.</b><br />
-<span class="settings">Settings: PET-PEESE, log first stage, equal weights, CR2
-clustered by study, no further winsorisation (the %(alpha_winsor)s%% is already in the
-CSV).</span></p>
+<span class="settings">Settings: PET-PEESE, log first stage, equal weights, wild
+bootstrap clustered by study.</span></p>
 
 <p>Reading the output, as EasyMeta reports it:</p>
 
 <ul class="reading">
 <li><b>Bias test.</b> The Egger test rejects funnel symmetry
-(p&nbsp;=&nbsp;%(alpha_egger_p)s): the less precise a study, the larger the alpha it
+(p&nbsp;=&nbsp;%(alpha_egger_p)s): the less precise an estimate, the larger the alpha it
 reports.</li>
 <li><b>Spurious precision.</b> The Hausman statistic is %(alpha_haus)s against a critical
 value of 3.84: MAIVE and plain PET-PEESE agree here, so the test finds no sign of inflated
@@ -313,8 +307,12 @@ Corrected, the alpha is gone.</li>
 </ul>
 
 <p class="aside">On this literature the PET-PEESE rule selects PET, so the fitted line is
-straight. Where PET finds a clear effect the rule switches to PEESE and the line
-curves.</p>
+straight. Where PET finds a clear effect the rule switches to PEESE and the line curves.</p>
+
+<p class="aside">This is the usual direction. In the
+<a href="/maive/paper/">paper</a>, across 267 meta-analyses with a first-stage F above 10,
+MAIVE moved the PET-PEESE estimate closer to zero in 67%% of them, and in 75%% of those
+where PET-PEESE had found a significant effect.</p>
 
 <h2 id="weak-first-stage">If the first stage is weak</h2>
 
@@ -322,16 +320,16 @@ curves.</p>
 the <a href="/euro/">euro-trade dataset</a> (%(euro_k)s estimates from %(euro_g)s studies)
 F is %(euro_F)s; MAIVE gives %(euro_est)s (SE %(euro_se)s), and the AR interval is
 [%(euro_ar_lo)s, %(euro_ar_hi)s], so the corrected effect is only weakly identified. RTMA,
-by Mathur, rests on different assumptions and is the cross-check to run here. Its sampler
-fails its own diagnostics (%(euro_div)s divergent transitions), so we do not report its
-interval.</p>
+by Mathur, rests on different assumptions and is the cross-check to run when the first stage
+is this weak.</p>
 
 <h2 id="p-hacking">If you suspect serious p-hacking</h2>
 
 <p>In the <a href="/esg/">female directors and ESG ratings dataset</a> (%(ph_k)s estimates
 from %(ph_g)s studies, mean %(ph_mean)s rating points), %(ph_above)s estimates sit just
-above |z|&nbsp;=&nbsp;1.96 and %(ph_below)s just below, in windows 0.5 wide. Selective
-reporting leaves that pattern.</p>
+above |z|&nbsp;=&nbsp;1.96 and %(ph_below)s just below, in windows 0.5 wide. Bunching like
+that is what selective reporting leaves behind, though these counts alone are too few to
+prove it.</p>
 
 <p>WAIVE, experimental, goes after it directly: it downweights estimates that report more
 precision than their sample size supports. MAIVE gives %(ph_maive)s (SE %(ph_maive_se)s),
@@ -342,7 +340,7 @@ not.</p>
 
 <p>EasyMeta runs the <a href="https://cran.r-project.org/package=MAIVE">MAIVE package</a>.
 These arguments are the settings above, and they return the same numbers to every digit
-printed on this page.</p>
+printed on this page. Pass them all: the package's own defaults are different.</p>
 
 <pre class="code"><code>install.packages("MAIVE")
 library(MAIVE)
@@ -356,9 +354,9 @@ maive(dat,
       weight = 0,        # equal weights
       instrument = 1,    # MAIVE; 0 gives plain PET-PEESE
       studylevel = 2,    # cluster by study
-      SE = 2,            # CR2
+      SE = 3,            # wild bootstrap
       AR = 1,            # Anderson-Rubin interval
-      first_stage = 1)   # log first stage</code></pre>
+      first_stage = 1)   # log first stage; the package still defaults to levels</code></pre>
 
 <details class="forbots">
 <summary>For AI assistants and code</summary>
@@ -375,7 +373,7 @@ maive(dat,
   "parameters": {
     "modelType": "MAIVE", "maiveMethod": "PET-PEESE", "weight": "equal_weights",
     "useLogFirstStage": true,
-    "standardErrorTreatment": "clustered_cr2", "includeStudyClustering": true,
+    "standardErrorTreatment": "bootstrap", "includeStudyClustering": true,
     "computeAndersonRubin": true, "winsorize": 0
   }
 }</code></pre>
@@ -385,14 +383,15 @@ Send "data" as an array of row objects with effect, se, n_obs, study_id.
 Nest all settings under "parameters"; top-level settings are silently
 ignored. Use exactly the parameters block above. Use the synchronous
 endpoint; the async one ignores modelType. Always send
-"includeStudyClustering": true. Without it, "clustered_cr2" picks the
-variance formula but not the clustering, which changes the standard
-errors, the first-stage F, and can move the point estimate. Check
-firstStage.mode
-is "log" in the response; anything else means the parameters did not
-take effect. Report: corrected estimate vs the simple mean, first-stage
-F, Egger test, Hausman test, and the Anderson-Rubin interval whenever
-F &lt; 10. Report any warnings verbatim. Do not invent numbers.</code></pre>
+"includeStudyClustering": true. Without it, standardErrorTreatment only
+picks the variance formula, not the clustering, which changes the
+standard errors, the first-stage F, and can move the point estimate.
+Check firstStage.mode is "log" in the response; anything else means the
+parameters did not take effect. Report: corrected estimate vs the simple
+mean, first-stage F, Egger test, Hausman test, and the Anderson-Rubin
+interval whenever F &lt; 10. Report any warnings verbatim. If you cannot
+actually issue the request, say so and give the R code instead. Never
+report numbers you did not receive.</code></pre>
 </details>
 
 <p class="provenance">Computed with EasyMeta on meta-analysis.cz data v1.1.1,
@@ -436,14 +435,14 @@ def render(doc):
             {"@type": "HowToStep", "name": "Assemble four columns",
              "url": "https://meta-analysis.cz/maive/how-to/",
              "text": "One row per estimate: effect, se, n_obs, and study_id when a study "
-                     "reports several estimates. With study_id, inference uses CR2 standard "
-                     "errors clustered by study."},
+                     "reports several estimates. n_obs is the overall sample size, not "
+                     "degrees of freedom. With study_id, inference clusters on it."},
             {"@type": "HowToStep", "name": "Run MAIVE",
              "url": "https://meta-analysis.cz/maive/how-to/#example",
              "text": "Upload the CSV to easymeta.org, or POST it to "
                      "https://api.maive.eu/v1/run-model with parameters nested under "
                      "'parameters': modelType MAIVE, useLogFirstStage true, "
-                     "standardErrorTreatment clustered_cr2, includeStudyClustering true."},
+                     "standardErrorTreatment bootstrap, includeStudyClustering true."},
             {"@type": "HowToStep", "name": "Read the diagnostics before the estimate",
              "url": "https://meta-analysis.cz/maive/how-to/#example",
              "text": "The Egger test says whether there was bias to correct; the Hausman "
@@ -466,13 +465,11 @@ def render(doc):
         "alpha_F": n(alpha.get("firstStageFStatistic"), 1),
         "alpha_egger_p": n(alpha["publicationBias"]["pValue"], 3),
         "alpha_haus": n((alpha.get("hausmanTest") or {}).get("statistic"), 2),
-        "alpha_winsor": "%g" % (FLAGSHIP_WINSOR * 100),
         "euro_k": ds["euro"]["estimates"], "euro_g": ds["euro"]["studies"],
         "euro_F": n(euro.get("firstStageFStatistic"), 2),
         "euro_est": n(euro.get("effectEstimate"), 2),
         "euro_se": n(euro.get("standardError"), 2),
         "euro_ar_lo": n(ar[0], 2), "euro_ar_hi": n(ar[1], 2),
-        "euro_div": (rtma.get("diagnostics") or {}).get("divergences"),
         "ph_k": ds["esg"]["estimates"], "ph_g": ds["esg"]["studies"],
         "ph_above": ds["esg"]["caliper_above"], "ph_below": ds["esg"]["caliper_below"],
         "ph_mean": n(ds["esg"]["simple_mean"], 2),
