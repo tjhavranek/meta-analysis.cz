@@ -1,21 +1,16 @@
 """Check that /maive/how-to/ still says what the API actually returned.
 
-Numbers on this site are computed and checked, never asserted. This page's numbers come from
-somebody else's service, so "checked" has to mean something slightly different here: the
-sidecar api/v1/maive-howto.json records the exact request and the full response, and this
-gate proves the page agrees with the sidecar and that the sidecar's runs were the runs the
-page claims they were.
-
-Offline by default -- it runs on every push and never touches the network. With --live it
-re-POSTs the recorded requests and reports any number that has moved, which is a weekly job
-and must never block a deploy: EasyMeta improving its estimator is not this site breaking.
+The sidecar api/v1/maive-howto.json records every request and response; the page renders
+from it. This gate proves, offline on every push: the page is exactly what the sidecar
+renders, the settings the page teaches are the settings that ran, each example is the kind
+of example the page says it is, and the artefacts the page links exist. With --live it
+re-runs the recorded requests and reports drift; that is a weekly job, never a deploy gate.
 
     python tools/check_maive_howto.py          # the gate
     python tools/check_maive_howto.py --live   # re-run against the API and diff
 """
 import json
 import os
-import re
 import subprocess
 import sys
 
@@ -25,108 +20,122 @@ from build_paper_page import ROOT  # noqa: E402
 SIDECAR = os.path.join(ROOT, "api", "v1", "maive-howto.json")
 PAGE = os.path.join(ROOT, "maive", "how-to", "index.html")
 FUNNEL = os.path.join(ROOT, "maive", "how-to", "funnel.png")
-
-
-def fail(msgs, m):
-    msgs.append(m)
+CSV = os.path.join(ROOT, "maive", "how-to", "education.csv")
 
 
 def main():
     bad = []
+    fail = bad.append
     if not os.path.exists(SIDECAR):
-        print("no sidecar at api/v1/maive-howto.json; run build_maive_howto.py --refresh")
+        print("no sidecar; run build_maive_howto.py --refresh")
         return 1
     doc = json.load(open(SIDECAR, encoding="utf-8"))
-    runs = doc["runs"]
+    runs, ds = doc["runs"], doc["datasets"]
     page = open(PAGE, encoding="utf-8").read()
 
-    # 1. The settings the page teaches are the settings that ran. A dropped parameter returns
-    #    HTTP 200 and default behaviour, so the only proof is the echo in the response.
-    for key in ("maive", "waive", "weak_maive"):
+    # 1. Every MAIVE-family request carried the settings the page teaches -- nested, with
+    #    the clustering flag. clustered_cr2 alone does not cluster (singleton clusters), so
+    #    the flag's absence would make every printed SE and F wrong while returning 200.
+    for key in ("edu_maive", "euro_maive", "comp_maive", "comp_waive"):
+        p = runs[key]["request_parameters"]
+        if p.get("includeStudyClustering") is not True:
+            fail("%s ran without includeStudyClustering -- its SEs are not clustered" % key)
+        if p.get("useLogFirstStage") is not True:
+            fail("%s did not request the log first stage" % key)
+        if p.get("standardErrorTreatment") != "clustered_cr2":
+            fail("%s did not request the CR2 correction" % key)
         got = (runs[key]["response"].get("firstStage") or {}).get("mode")
         if got != "log":
-            fail(bad, "%s ran with firstStage.mode=%r, not 'log' -- the parameters did not "
-                      "take effect" % (key, got))
-        sent = runs[key]["request_parameters"]
-        if sent.get("useLogFirstStage") is not True:
-            fail(bad, "%s did not request useLogFirstStage" % key)
-        if sent.get("standardErrorTreatment") != "clustered_cr2":
-            fail(bad, "%s did not request CR2 standard errors" % key)
-    if runs["waive"]["request_parameters"].get("modelType") != "WAIVE":
-        fail(bad, "the WAIVE run did not ask for WAIVE")
+            fail("%s ran with firstStage.mode=%r -- parameters did not take effect" % (key, got))
+    if runs["comp_waive"]["request_parameters"].get("modelType") != "WAIVE":
+        fail("the WAIVE run did not ask for WAIVE")
 
-    # 2. The two branches of the page must actually be the two branches it describes.
-    strong = runs["maive"]["response"].get("firstStageFStatistic")
-    weak = runs["weak_maive"]["response"].get("firstStageFStatistic")
-    if not isinstance(strong, (int, float)) or strong < 10:
-        fail(bad, "the worked example's first-stage F is %r; the page calls it strong" % strong)
-    if not isinstance(weak, (int, float)) or weak >= 10:
-        fail(bad, "the weak-first-stage example's F is %r, which is not below 10" % weak)
-    if runs["weak_maive"]["request_parameters"].get("computeAndersonRubin") is not True:
-        fail(bad, "the weak-first-stage run did not request an Anderson-Rubin interval")
+    # 2. Each example is the kind of example the page claims.
+    eduF = runs["edu_maive"]["response"].get("firstStageFStatistic")
+    euroF = runs["euro_maive"]["response"].get("firstStageFStatistic")
+    if not isinstance(eduF, (int, float)) or eduF < 10:
+        fail("education F is %r; the page presents it as strong" % eduF)
+    if not isinstance(euroF, (int, float)) or euroF >= 10:
+        fail("euro F is %r, not below 10; the weak-first-stage card is wrong" % euroF)
+    if not (runs["euro_maive"]["response"].get("andersonRubinCI") or [None])[0]:
+        fail("the euro run carries no Anderson-Rubin interval")
+    ep = (runs["edu_maive"]["response"].get("publicationBias") or {}).get("pValue")
+    if not isinstance(ep, (int, float)) or ep >= 0.05:
+        fail("education's Egger p is %r; the page says the bias test rejects" % ep)
 
-    # 3. WAIVE must differ from MAIVE, or the section demonstrates nothing. This also catches
-    #    the async endpoint's habit of returning MAIVE for a WAIVE request.
-    mv = runs["maive"]["response"].get("effectEstimate")
-    wv = runs["waive"]["response"].get("effectEstimate")
-    if mv == wv:
-        fail(bad, "WAIVE returned MAIVE's estimate (%r) -- the run went to the async "
-                  "endpoint, which ignores modelType" % mv)
+    # 3. WAIVE must differ from MAIVE with wider uncertainty, or the card shows nothing --
+    #    and identical estimates are the signature of the async endpoint's dropped modelType.
+    cm, cw = runs["comp_maive"]["response"], runs["comp_waive"]["response"]
+    if cm.get("effectEstimate") == cw.get("effectEstimate"):
+        fail("WAIVE returned MAIVE's estimate -- modelType was dropped somewhere")
+    if not (cw.get("standardError") or 0) > (cm.get("standardError") or 1):
+        fail("WAIVE's SE is not wider than MAIVE's; 'less precision' would be false")
 
-    # 4. The page must be exactly what the sidecar renders. Checking that each printed
-    #    number appears SOMEWHERE in the sidecar is too weak -- a hand-edited 0.195 to 0.421
-    #    passed, because 0.421 happened to be a bootstrap bound. Re-rendering is the whole
-    #    check: any edit to the page that the sidecar does not imply fails here.
+    # 4. The RTMA failure the euro card cites must actually be a failure. The count is
+    #    unstable run to run (itself a symptom), so the gate asks 'did it fail', not 'by
+    #    exactly how much'.
+    dg = runs["euro_rtma"]["response"].get("diagnostics") or {}
+    if not (dg.get("divergences") or 0) > 0:
+        fail("euro RTMA reports no divergences; the page says its sampler fails")
+    # 5. The caliper counts on the page must be recomputable from the shipped data.
+    import pandas as pd
+    d = pd.read_csv(os.path.join(ROOT, "data", "v1", "estimates_harmonised.csv"),
+                    low_memory=False)
+    g = d[d.dataset == "competition"].dropna(subset=["effect", "se", "n_obs"])
+    g = g[(g.se > 0) & (g.n_obs > 0)]
+    t = abs(g.effect / g.se)
+    above = int(((t >= 1.96) & (t < 2.46)).sum())
+    below = int(((t >= 1.46) & (t < 1.96)).sum())
+    if (above, below) != (ds["competition"]["caliper_above"], ds["competition"]["caliper_below"]):
+        fail("competition caliper counts %r do not recompute from the data (%d, %d)"
+             % ((ds["competition"]["caliper_above"], ds["competition"]["caliper_below"]),
+                above, below))
+
+    # 6. The page is exactly what the sidecar renders -- the check that catches hand edits.
     from build_maive_howto import render
     if render(doc) != page:
-        fail(bad, "the page is not what the sidecar renders -- it has been edited by hand, "
-                  "or the builder changed without a rebuild. Run build_maive_howto.py")
+        fail("the page is not what the sidecar renders; run build_maive_howto.py")
 
-    # 5. RTMA ran in the direction the page claims. favorPositive defaults to true, and on a
-    #    literature of negative effects that default returns an uncorrected mean with a
-    #    deceptively tight interval -- and the only signal is a warning. So: the run must carry
-    #    no warnings, and its affirmative count must be the one the page prints.
-    rtma = runs["weak_rtma"]
-    if rtma["request_parameters"].get("favorPositive") is not True:
-        fail(bad, "the page says favorPositive true for this literature; the run did not send it")
-    warn = rtma["response"].get("warnings") or []
-    if warn:
-        fail(bad, "the RTMA run carries warnings the page does not print: %r" % warn)
-    if not isinstance(rtma["response"].get("affirmativeCount"), int):
-        fail(bad, "the RTMA run reports no affirmative count, so its direction cannot be checked")
-
-    # 6. The artefacts the page points at have to exist.
+    # 7. The artefacts the page links must exist and agree.
     if not os.path.exists(FUNNEL) or os.path.getsize(FUNNEL) < 10000:
-        fail(bad, "maive/how-to/funnel.png is missing or truncated")
-    if doc["funnel"].get("async_first_stage_f") != strong:
-        fail(bad, "the funnel's run and the page's run disagree on the first-stage F "
-                  "(%r vs %r); the plot may not be the plot of these numbers"
-                  % (doc["funnel"].get("async_first_stage_f"), strong))
+        fail("funnel.png missing or truncated")
+    if doc["funnel"].get("async_first_stage_f") != eduF:
+        fail("the funnel's run and the page's run disagree on F -- wrong plot")
+    if not os.path.exists(CSV):
+        fail("education.csv missing")
+    else:
+        lines = open(CSV, encoding="utf-8").read().strip().split("\n")
+        if lines[0] != "effect,se,n_obs,study_id":
+            fail("education.csv header is not the canonical four columns")
+        if len(lines) - 1 != ds["education"]["estimates"]:
+            fail("education.csv has %d rows, sidecar says %d"
+                 % (len(lines) - 1, ds["education"]["estimates"]))
 
     if "--live" in sys.argv:
-        print("re-running the recorded requests against %s" % doc["api"])
-        import pandas as pd  # noqa: F401  (only needed for the live path's data rebuild)
-        sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
-        from build_maive_howto import rows_for
-        full, _ = rows_for("all")
-        sub, _ = rows_for("iv_panel")
-        data = {"maive": full, "waive": full, "weak_maive": sub, "weak_rtma": sub}
+        print("re-running recorded requests against %s" % doc["api"])
+        from build_maive_howto import usable
+        rows = {k: usable(name)[0] for k, name in
+                (("edu_maive", "education"), ("euro_maive", "euro"),
+                 ("comp_maive", "competition"), ("comp_waive", "competition"))}
+        rows["euro_rtma"] = [{"effect": r["effect"], "se": r["se"]}
+                             for r in usable("euro")[0]]
         for key, r in runs.items():
             path = "/v1/run-rtma" if key.endswith("rtma") else "/v1/run-model"
-            body = {"data": data[key], "parameters": r["request_parameters"]}
             out = subprocess.run(["curl", "-sS", "--max-time", "170",
-                                  "https://api.maive.eu" + path, "-H",
-                                  "Content-Type: application/json", "--data-binary", "@-"],
-                                 input=json.dumps(body), capture_output=True, text=True)
+                                  doc["api"] + path, "-H", "Content-Type: application/json",
+                                  "--data-binary", "@-"],
+                                 input=json.dumps({"data": rows[key],
+                                                   "parameters": r["request_parameters"]}),
+                                 capture_output=True, text=True)
             try:
                 fresh = json.loads(out.stdout)
             except ValueError:
                 print("  %-12s UNREACHABLE" % key)
                 continue
-            for field in ("effectEstimate", "standardError", "firstStageFStatistic", "mu"):
-                was, now = r["response"].get(field), fresh.get(field)
+            for f in ("effectEstimate", "standardError", "firstStageFStatistic", "mu"):
+                was, now = r["response"].get(f), fresh.get(f)
                 if was is not None and now is not None and was != now:
-                    print("  %-12s %s moved: %s -> %s" % (key, field, was, now))
+                    print("  %-12s %s moved: %s -> %s" % (key, f, was, now))
             print("  %-12s checked" % key)
 
     for b in bad:

@@ -1124,16 +1124,6 @@ table.catalogue li{ margin-bottom:var(--s2); font-size:var(--f-1); line-height:1
 /* A tutorial is a different shape from a paper: short blocks, a code block that must be
    copied exactly, and two small tables that are label-and-value rather than data. */
 .entry p.lede{ font:400 var(--f1)/1.5 var(--serif); color:var(--ink); margin:0 0 var(--s6); }
-.entry table.cols, .entry table.ladder{ border-collapse:collapse; margin:0 0 var(--s5);
-  width:100%; max-width:var(--measure); }
-.entry table.cols th, .entry table.ladder th{ text-align:left; vertical-align:top;
-  font:400 var(--f0)/1.5 var(--sans); color:var(--ink-soft); font-weight:400;
-  padding:var(--s2) var(--s4) var(--s2) 0; white-space:nowrap; }
-.entry table.cols td, .entry table.ladder td{ vertical-align:top; padding:var(--s2) 0;
-  font:400 var(--f0)/1.5 var(--sans); }
-.entry table.ladder th{ white-space:normal; }
-.entry table.ladder td{ font-variant-numeric:tabular-nums; }
-.entry table.ladder tr:nth-child(2) td{ font-size:1.15em; }
 .entry .se{ color:var(--ink-soft); }
 /* The code block is the page's real product: it has to survive being copied, so it scrolls
    rather than wraps, and it never gets smart quotes. */
@@ -1144,9 +1134,6 @@ table.catalogue li{ margin-bottom:var(--s2); font-size:var(--f-1); line-height:1
 /* The prompt is copied whole into a chat box, so it keeps its own line breaks and scrolls
    rather than re-wrapping into something that reads like broken JSON. */
 .entry pre.code.prompt code{ white-space:pre; }
-.entry p.warn{ border-left:3px solid var(--accent); padding-left:var(--s4);
-  font:400 var(--f-1)/1.6 var(--sans); color:var(--ink); max-width:var(--measure);
-  margin:0 0 var(--s5); }
 .entry p.provenance{ font:400 var(--f-1)/1.6 var(--sans); color:var(--ink-soft);
   border-top:1px solid var(--rule); padding-top:var(--s3); margin-top:var(--s6);
   max-width:var(--measure); }
@@ -1155,3 +1142,26 @@ table.catalogue li{ margin-bottom:var(--s2); font-size:var(--f-1); line-height:1
 .entry .funnel{ max-width:44rem; margin:0 0 var(--s3); }
 .entry .figcap{ font:400 var(--f-1)/1.6 var(--sans); color:var(--ink-soft);
   max-width:var(--measure); margin:0 0 var(--s5); }
+
+/* How-to page additions: two buttons, a result card, the reading list, a details block. */
+.entry p.cta{ margin:0 0 var(--s6); }
+.entry a.button{ display:inline-block; padding:var(--s3) var(--s5); margin:0 var(--s2) var(--s2) 0;
+  font:600 var(--f-1)/1 var(--sans); color:var(--paper); background:var(--accent-dark);
+  border-radius:var(--radius); text-decoration:none; }
+.entry a.button:hover{ background:var(--accent); }
+.entry a.button.quiet{ color:var(--accent-dark); background:none;
+  border:1px solid var(--control); }
+.entry a.button.quiet:hover{ color:var(--paper); background:var(--accent-dark); }
+.entry p.result{ border-left:3px solid var(--accent); padding-left:var(--s4);
+  font:400 var(--f1)/1.5 var(--sans); max-width:var(--measure); margin:0 0 var(--s5); }
+.entry p.result .settings{ font:400 var(--f-1)/1.5 var(--sans); color:var(--ink-soft); }
+.entry ul.reading{ list-style:none; margin:0 0 var(--s5); padding:0; max-width:var(--measure); }
+.entry ul.reading > li{ margin:0 0 var(--s3); font:400 var(--f0)/1.55 var(--sans); }
+.entry p.aside{ font:400 var(--f-1)/1.6 var(--sans); color:var(--ink-soft);
+  max-width:var(--measure); margin:0 0 var(--s6); }
+/* The machine block is collapsed: the page is for a person reading it; the person pasting
+   into an assistant opens it once. */
+.entry details.forbots{ margin:var(--s6) 0; max-width:var(--measure); }
+.entry details.forbots summary{ cursor:pointer; font:600 var(--f-1)/1.4 var(--sans);
+  color:var(--accent-dark); }
+.entry details.forbots[open] summary{ margin-bottom:var(--s3); }
