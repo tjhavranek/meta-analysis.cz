@@ -51,12 +51,12 @@ def main():
         fail("the WAIVE run did not ask for WAIVE")
     if runs["esg_wls"]["request_parameters"].get("modelType") != "WLS":
         fail("the PET-PEESE comparison run did not ask for WLS")
-    # The flagship is winsorised at 1% and only the flagship: heavier winsorisation erases
-    # the MAIVE-vs-PET-PEESE gap, and the other examples are shown raw.
-    for key in ("esg_maive", "esg_wls"):
-        if runs[key]["request_parameters"].get("winsorize") != 1:
-            fail("%s is not winsorised at 1%%; the page says it is" % key)
-    for key in ("euro_maive", "comp_maive", "comp_waive"):
+    # Nothing is winsorised. The page ships R code that must return the same numbers, and
+    # the MAIVE package has no winsorisation argument -- the app applies its own rule before
+    # calling, and that rule is not plain quantile clipping, so a winsorised run cannot be
+    # reproduced from R. Verified: unwinsorised, R matches the API to every printed digit;
+    # winsorised at 1%, the first-stage F drifts (33.24 in R against 33.27 from the app).
+    for key in ("esg_maive", "esg_wls", "euro_maive", "comp_maive", "comp_waive"):
         if runs[key]["request_parameters"].get("winsorize") != 0:
             fail("%s is winsorised; the page presents it raw" % key)
     # The gap the page prints must exist: MAIVE below plain PET-PEESE on this data.
@@ -109,6 +109,26 @@ def main():
         fail("competition caliper counts %r do not recompute from the data (%d, %d)"
              % ((ds["competition"]["caliper_above"], ds["competition"]["caliper_below"]),
                 above, below))
+
+    # 5b. The R block must encode the same recipe the API requests used. A reader who runs
+    #     it has to land on the numbers beside it, so the mapping is checked rather than
+    #     trusted: MAIVE package arguments against the API's parameter names.
+    p = runs["esg_maive"]["request_parameters"]
+    r_expected = {
+        "method = 3": p.get("maiveMethod") == "PET-PEESE",
+        "weight = 0": p.get("weight") == "equal_weights",
+        "instrument = 1": p.get("modelType") == "MAIVE",
+        "studylevel = 2": p.get("includeStudyClustering") is True,
+        "SE = 2": p.get("standardErrorTreatment") == "clustered_cr2",
+        "AR = 1": p.get("computeAndersonRubin") is True,
+        "first_stage = 1": p.get("useLogFirstStage") is True,
+    }
+    for arg, agrees in r_expected.items():
+        if arg not in page:
+            fail("the R block does not pass %s" % arg)
+        elif not agrees:
+            fail("the R block passes %s but the request did not ask for the matching "
+                 "setting" % arg)
 
     # 6. The page is exactly what the sidecar renders -- the check that catches hand edits.
     from build_maive_howto import render

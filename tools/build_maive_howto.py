@@ -117,16 +117,16 @@ def refresh():
         return resp
 
     print("sync runs (the endpoint that honours modelType):")
-    # The flagship is winsorised at 1% -- an extensive screen showed the raw funnel's axis is
-    # set by a handful of extreme standard errors (three of them imputed by the meta-analyst,
-    # not reported), while heavier winsorisation erases the very gap between MAIVE and plain
-    # PET-PEESE that the page exists to show. One percent keeps the gap and the picture.
+    # Not winsorised. The MAIVE R package has no winsorisation argument -- the app applies
+    # it before calling -- and its rule is not plain quantile clipping, so a winsorised run
+    # cannot be reproduced exactly from R. Since the page ships R code that must return the
+    # same numbers, the example runs on the data as published.
     esg_rows, esg_d = usable("esg")
     data["esg"] = descriptives(esg_d)
-    esg = run("esg_maive", esg_rows, dict(CANON, winsorize=1))
+    esg = run("esg_maive", esg_rows, dict(CANON))
     # Plain PET-PEESE on the same winsorised data: the comparison that shows what
     # instrumenting the standard errors adds.
-    run("esg_wls", esg_rows, dict(CANON, modelType="WLS", winsorize=1))
+    run("esg_wls", esg_rows, dict(CANON, modelType="WLS"))
 
     euro_rows, euro_d = usable("euro")
     data["euro"] = descriptives(euro_d)
@@ -144,7 +144,7 @@ def refresh():
     run("comp_waive", comp_rows, dict(CANON, modelType="WAIVE"))
 
     print("async funnel (flagship; accepted only if async agrees with sync):")
-    plot = async_funnel(esg_rows, dict(CANON, winsorize=1))
+    plot = async_funnel(esg_rows, dict(CANON))
     for f in ("effectEstimate", "standardError", "firstStageFStatistic"):
         if plot.get(f) != esg.get(f):
             raise SystemExit("async %s=%r disagrees with sync %r -- funnel rejected"
@@ -155,8 +155,6 @@ def refresh():
     print("  funnel.png %d bytes, async==sync on all headline statistics"
           % os.path.getsize(FUNNEL))
 
-    # The CSV ships raw: the reader uploads it and sets 1% winsorisation in the app, which
-    # is the point -- winsorisation is a setting, not a different dataset.
     with open(CSV_OUT, "w", encoding="utf-8", newline="\n") as fh:
         fh.write("effect,se,n_obs,study_id\n")
         for r in esg_rows:
@@ -251,8 +249,7 @@ standard errors clustered by study, by Pustejovsky and Tipton)</p>
 <h2 id="example">Worked example: do female directors improve ESG performance?</h2>
 
 <p>Based on <a href="/esg/">%(esg_k)s estimates from %(esg_g)s studies</a>, the whole
-literature, winsorised at 1%%. The mean reported estimate is %(esg_mean)s ESG rating
-points.</p>
+literature as published. The mean reported estimate is %(esg_mean)s ESG rating points.</p>
 
 <p><img src="/maive/how-to/funnel.png" alt="EasyMeta funnel plot: %(esg_k)s estimates of
 the effect of board gender diversity on ESG ratings, against precision. The cloud leans
@@ -262,7 +259,7 @@ height="840" /></p>
 <p class="result"><b>MAIVE: %(esg_est)s (SE %(esg_se)s). First-stage F:
 %(esg_F)s.</b><br />
 <span class="settings">Settings: PET&#8209;PEESE, log first stage, equal weights, CR2
-clustered by study, winsorised at 1%%.</span></p>
+clustered by study, no winsorisation.</span></p>
 
 <p>Reading the output, as EasyMeta reports it:</p>
 
@@ -296,6 +293,28 @@ estimates from %(comp_g)s studies), %(comp_above)s estimates sit just above
 reporting, not proof of it. WAIVE, experimental, downweights estimates whose precision
 their sample size does not support: %(waive_est)s (SE %(waive_se)s) against MAIVE's
 %(comp_est)s (SE %(comp_se)s). Less precision, same conclusion: no clear effect.</p>
+
+<h2 id="in-r">The same run in R</h2>
+
+<p>EasyMeta runs the <a href="https://cran.r-project.org/package=MAIVE">MAIVE package</a>.
+These arguments are the settings above, and they return the same numbers to every digit
+printed on this page.</p>
+
+<pre class="code"><code>install.packages("MAIVE")
+library(MAIVE)
+
+d &lt;- read.csv("https://meta-analysis.cz/maive/how-to/esg.csv")
+dat &lt;- data.frame(bs = d$effect, sebs = d$se,
+                  Ns = d$n_obs, study_id = d$study_id)
+
+maive(dat,
+      method = 3,        # PET-PEESE
+      weight = 0,        # equal weights
+      instrument = 1,    # MAIVE; 0 gives plain PET-PEESE
+      studylevel = 2,    # cluster by study
+      SE = 2,            # CR2
+      AR = 1,            # Anderson-Rubin interval
+      first_stage = 1)   # log first stage</code></pre>
 
 <details class="forbots">
 <summary>For AI assistants and code</summary>

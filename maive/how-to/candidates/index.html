@@ -47,7 +47,28 @@ variation in sample size to identify anything.</p>
 
 
 <div class="cand">
-<h2 id="hedge-asset-based">1. Hedge-fund alpha, asset-based-style models</h2>
+<h2 id="gasoline-ols-ts">1. Gasoline demand, OLS time-series estimates</h2>
+<p class="what">Income elasticities of gasoline demand, from studies estimating them by OLS on time-series data. One estimator, one data type: the restriction is a sentence.</p>
+<p><img src="funnel-gasoline-ols-ts.png" alt="Funnel plot for Gasoline demand, OLS time-series estimates" width="840"
+height="840" /></p>
+<table class="nums">
+<tbody>
+<tr><th>Simple mean</th><td>0.85</td></tr>
+<tr><th>Plain PET&#8209;PEESE</th><td>0.839</td></tr>
+<tr><th>MAIVE</th><td><b>0.331</b> (SE 0.183)</td></tr>
+<tr><th>First&#8209;stage F</th><td>11.4</td></tr>
+<tr><th>Fit</th><td>PET</td></tr>
+<tr><th>Bias test (Egger p)</th><td>0.014</td></tr>
+<tr><th>Estimates / studies</th><td>166 from 34</td></tr>
+</tbody>
+</table>
+<p class="filter"><code>gasoline (gas_income_revision.dta): ols == 1 and Timeseries == 1</code></p>
+<p class="verdict">The clearest demonstration of what MAIVE adds. Ordinary PET-PEESE barely moves the literature -- 0.84 reported, 0.84 corrected -- while MAIVE cuts it to 0.33, and the Hausman test rejects at 15.5 against a critical value of 3.84, so the spurious-precision test has something to say for once. The bias test rejects too. Against it: the fitted standard errors bunch into a horizontal band, so the filled cloud is flatter than the demo's, the fit is a straight PET line, and F = 11.4 clears 10 without much room.</p>
+</div>
+
+
+<div class="cand">
+<h2 id="hedge-asset-based">2. Hedge-fund alpha, asset-based-style models</h2>
 <p class="what">Estimates of hedge-fund alpha from asset-based-style pricing models, on cross-sectional samples. Asset-based-style models price funds off observable asset returns rather than statistical factors, so this is the one corner of the literature where alpha is measured against a benchmark you can actually trade.</p>
 <p><img src="funnel-hedge-asset-based.png" alt="Funnel plot for Hedge-fund alpha, asset-based-style models" width="840"
 height="840" /></p>
@@ -68,7 +89,7 @@ height="840" /></p>
 
 
 <div class="cand">
-<h2 id="electricity-india">2. Electricity demand in India, average-price measures</h2>
+<h2 id="electricity-india">3. Electricity demand in India, average-price measures</h2>
 <p class="what">Price elasticities of electricity demand in India, from studies that identify the elasticity off an average-price measure. India is the case where subsidised, politically set tariffs are supposed to leave demand unresponsive.</p>
 <p><img src="funnel-electricity-india.png" alt="Funnel plot for Electricity demand in India, average-price measures" width="840"
 height="840" /></p>
@@ -89,7 +110,7 @@ height="840" /></p>
 
 
 <div class="cand">
-<h2 id="beauty-us-skilled">3. The beauty premium for high-skilled US workers</h2>
+<h2 id="beauty-us-skilled">4. The beauty premium for high-skilled US workers</h2>
 <p class="what">Estimates of the wage premium to physical attractiveness among high-skilled workers in the United States -- lawyers, academics, executives -- where the argument over whether beauty signals productivity or is simple discrimination is actually contested.</p>
 <p><img src="funnel-beauty-us-skilled.png" alt="Funnel plot for The beauty premium for high-skilled US workers" width="840"
 height="840" /></p>

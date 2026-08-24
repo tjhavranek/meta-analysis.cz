@@ -53,18 +53,17 @@ standard errors clustered by study, by Pustejovsky and Tipton)</p>
 <h2 id="example">Worked example: do female directors improve ESG performance?</h2>
 
 <p>Based on <a href="/esg/">533 estimates from 106 studies</a>, the whole
-literature, winsorised at 1%. The mean reported estimate is 0.28 ESG rating
-points.</p>
+literature as published. The mean reported estimate is 0.28 ESG rating points.</p>
 
 <p><img src="/maive/how-to/funnel.png" alt="EasyMeta funnel plot: 533 estimates of
 the effect of board gender diversity on ESG ratings, against precision. The cloud leans
 right as precision falls; the curved MAIVE fit lands below the simple mean." width="840"
 height="840" /></p>
 
-<p class="result"><b>MAIVE: 0.179 (SE 0.032). First-stage F:
-33.3.</b><br />
+<p class="result"><b>MAIVE: 0.185 (SE 0.037). First-stage F:
+33.0.</b><br />
 <span class="settings">Settings: PET&#8209;PEESE, log first stage, equal weights, CR2
-clustered by study, winsorised at 1%.</span></p>
+clustered by study, no winsorisation.</span></p>
 
 <p>Reading the output, as EasyMeta reports it:</p>
 
@@ -73,10 +72,10 @@ clustered by study, winsorised at 1%.</span></p>
 (p&nbsp;=&nbsp;0.016): imprecise studies report systematically larger
 effects.</li>
 <li><b>Spurious precision.</b> Plain PET&#8209;PEESE, taking every reported standard error
-at face value, corrects the mean to 0.214. MAIVE, instrumenting the standard errors
-with sample size, trims it further to 0.179; the Hausman statistic is
-3.13 against a critical value of 3.84.</li>
-<li><b>Corrected effect.</b> 0.179 &#8212; publication bias accounts for about a
+at face value, corrects the mean to 0.273. MAIVE, instrumenting the standard errors
+with sample size, trims it further to 0.185; the Hausman statistic is
+50.54 against a critical value of 3.84.</li>
+<li><b>Corrected effect.</b> 0.185 &#8212; publication bias accounts for about a
 third of the reported mean, and a genuine positive effect remains.</li>
 </ul>
 
@@ -98,6 +97,28 @@ estimates from 31 studies), 140 estimates sit just above
 reporting, not proof of it. WAIVE, experimental, downweights estimates whose precision
 their sample size does not support: -0.033 (SE 0.060) against MAIVE's
 -0.013 (SE 0.020). Less precision, same conclusion: no clear effect.</p>
+
+<h2 id="in-r">The same run in R</h2>
+
+<p>EasyMeta runs the <a href="https://cran.r-project.org/package=MAIVE">MAIVE package</a>.
+These arguments are the settings above, and they return the same numbers to every digit
+printed on this page.</p>
+
+<pre class="code"><code>install.packages("MAIVE")
+library(MAIVE)
+
+d &lt;- read.csv("https://meta-analysis.cz/maive/how-to/esg.csv")
+dat &lt;- data.frame(bs = d$effect, sebs = d$se,
+                  Ns = d$n_obs, study_id = d$study_id)
+
+maive(dat,
+      method = 3,        # PET-PEESE
+      weight = 0,        # equal weights
+      instrument = 1,    # MAIVE; 0 gives plain PET-PEESE
+      studylevel = 2,    # cluster by study
+      SE = 2,            # CR2
+      AR = 1,            # Anderson-Rubin interval
+      first_stage = 1)   # log first stage</code></pre>
 
 <details class="forbots">
 <summary>For AI assistants and code</summary>
