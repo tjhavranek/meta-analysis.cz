@@ -121,14 +121,17 @@ d &lt;- read.csv("https://meta-analysis.cz/maive/how-to/alpha.csv")
 dat &lt;- data.frame(bs = d$effect, sebs = d$se,
                   Ns = d$n_obs, study_id = d$study_id)
 
-maive(dat,
-      method = 3,        # PET-PEESE
-      weight = 0,        # equal weights
-      instrument = 1,    # MAIVE; 0 gives plain PET-PEESE
-      studylevel = 2,    # cluster by study
-      SE = 3,            # wild bootstrap
-      AR = 1,            # Anderson-Rubin interval
-      first_stage = 1)   # log first stage; the package still defaults to levels</code></pre>
+fit &lt;- maive(dat,
+             method = 3,        # PET-PEESE
+             weight = 0,        # equal weights
+             instrument = 1,    # MAIVE; 0 gives plain PET-PEESE
+             studylevel = 2,    # cluster by study
+             SE = 3,            # wild bootstrap
+             AR = 1,            # Anderson-Rubin interval
+             first_stage = 1)   # log first stage; package defaults to levels
+
+fit$beta                 # corrected estimate, and fit$SE its standard error
+fit$SE_instrumented      # one corrected standard error per estimate</code></pre>
 
 <h2 id="elsewhere">Corrected standard errors for any estimator</h2>
 
