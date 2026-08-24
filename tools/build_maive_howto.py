@@ -314,7 +314,7 @@ the <a href="/euro/">euro-trade dataset</a> (%(euro_k)s estimates from %(euro_g)
 F is %(euro_F)s; MAIVE gives %(euro_est)s (SE %(euro_se)s), and the AR interval is
 [%(euro_ar_lo)s, %(euro_ar_hi)s], so the corrected effect is only weakly identified. RTMA,
 by Mathur, rests on different assumptions and is the cross-check to run when the first stage
-is this weak.</p>
+is this weak. EasyMeta runs it too.</p>
 
 <h2 id="p-hacking">If you suspect serious p-hacking</h2>
 
@@ -399,6 +399,9 @@ Report any warnings verbatim. If you cannot
 actually issue the request, say so and give the R code instead. Never
 report numbers you did not receive.</code></pre>
 </details>
+
+<p class="aside">MAIVE is not tied to PET-PEESE. EasyMeta will apply the same correction to
+PET, PEESE or the endogenous kink model, and it also runs weighted least squares.</p>
 
 <p class="provenance">Computed with EasyMeta on meta-analysis.cz data v1.1.1,
 %(retrieved)s; every request and response archived in
