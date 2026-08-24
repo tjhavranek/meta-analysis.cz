@@ -321,8 +321,7 @@ is this weak.</p>
 <p>In the <a href="/esg/">female directors and ESG ratings dataset</a> (%(ph_k)s estimates
 from %(ph_g)s studies, mean %(ph_mean)s rating points), %(ph_above)s estimates sit just
 above |z|&nbsp;=&nbsp;1.96 and %(ph_below)s just below, in windows 0.5 wide. Bunching like
-that is what selective reporting leaves behind, though these counts alone are too few to
-prove it.</p>
+that is what selective reporting leaves behind.</p>
 
 <p>WAIVE, an experimental option in EasyMeta, is the more aggressive correction: it
 additionally downweights estimates that look too precise for their sample size.
