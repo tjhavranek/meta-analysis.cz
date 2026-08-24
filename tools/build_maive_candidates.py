@@ -21,7 +21,7 @@ OUT_DIR = os.path.join(ROOT, "maive", "how-to", "candidates")
 
 
 def n(x, d=3):
-    return "&#8212;" if x is None or x == "NA" else ("%.*f" % (d, float(x)))
+    return "NA" if x is None or x == "NA" else ("%.*f" % (d, float(x)))
 
 
 CARD = """
@@ -34,7 +34,7 @@ height="840" /></p>
 <tbody>
 <tr><th>Simple mean</th><td>%(mean)s</td></tr>
 <tr><th>MAIVE</th><td><b>%(maive)s</b> (SE %(se)s)</td></tr>
-<tr><th>First&#8209;stage F</th><td>%(F)s%(Fnote)s</td></tr>
+<tr><th>First-stage F</th><td>%(F)s%(Fnote)s</td></tr>
 <tr><th>Fit</th><td>%(sel)s</td></tr>
 <tr><th>Bias test (Egger p)</th><td>%(eggp)s%(eggnote)s</td></tr>
 <tr><th>Estimates / studies</th><td>%(k)s from %(studies)s</td></tr>
@@ -83,19 +83,19 @@ PAGE = """<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" \
 
 <p class="lede">Candidates for the worked example on <a href="/maive/how-to/">How to run
 MAIVE</a>. Every funnel below is the plot EasyMeta returns for that subset, under the
-same recipe the page teaches: PET&#8209;PEESE, log first stage, equal weights, CR2
+same recipe the page teaches: PET-PEESE, log first stage, equal weights, CR2
 clustered by study.</p>
 
 <p class="aside">Winsorisation is applied to the data here, not passed as a setting: the
 shipped CSV is what was analysed. That matters because the MAIVE R package has no
 winsorisation argument, so a run that used the app's own setting could not be reproduced in
-R, while these can &#8212; the R code on the how-to page returns these numbers from these
+R, while these can: the R code on the how-to page returns these numbers from these
 files.</p>
 
 <p class="aside">What a good example needs, and why these were hard to find. The estimates
 have to be spread no wider than their own standard errors, or the cloud is a flat band
 instead of a triangle. The sample sizes have to vary a lot, or MAIVE's fitted standard
-errors &#8212; the filled points &#8212; collapse into a horizontal line. The first stage
+errors, the filled points, collapse into a horizontal line. The first stage
 has to be strong. And there has to be real asymmetry to correct. Those pull against each
 other: the subsets homogeneous enough to look like a funnel tend to have too little
 variation in sample size to identify anything.</p>
@@ -130,7 +130,7 @@ def main():
             "F": n(F, 1),
             "Fnote": "" if (isinstance(F, (int, float)) and F >= 10)
                      else ' <span class="warn">below 10</span>',
-            "sel": m.get("petpeese_selected") or "&#8212;",
+            "sel": m.get("petpeese_selected") or "NA",
             "eggp": n(eggp, 3),
             "eggnote": "" if (isinstance(eggp, (int, float)) and eggp < 0.05)
                        else ' <span class="warn">not significant</span>',

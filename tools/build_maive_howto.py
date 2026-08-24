@@ -148,11 +148,11 @@ def refresh():
     # it before calling -- and its rule is not plain quantile clipping, so a winsorised run
     # cannot be reproduced exactly from R. Since the page ships R code that must return the
     # same numbers, the example runs on the data as published.
-    esg_rows, esg_d, raw_mean = flagship()
-    data["esg"] = descriptives(esg_d)
-    data["esg"]["raw_mean_before_winsorising"] = round(raw_mean, 4)
-    data["esg"]["winsorised"] = FLAGSHIP_WINSOR
-    esg = run("esg_maive", esg_rows, dict(CANON))
+    alpha_rows, alpha_d, raw_mean = flagship()
+    data["alpha"] = descriptives(alpha_d)
+    data["alpha"]["raw_mean_before_winsorising"] = round(raw_mean, 4)
+    data["alpha"]["winsorised"] = FLAGSHIP_WINSOR
+    alpha = run("alpha_maive", alpha_rows, dict(CANON))
 
     euro_rows, euro_d = usable("euro")
     data["euro"] = descriptives(euro_d)
@@ -164,17 +164,20 @@ def refresh():
         {"favorPositive": True, "alphaSelect": 0.05, "ciLevel": 0.95, "seed": 2025},
         "/v1/run-rtma")
 
-    comp_rows, comp_d = usable("competition")
-    data["competition"] = descriptives(comp_d)
-    run("comp_maive", comp_rows, dict(CANON))
-    run("comp_waive", comp_rows, dict(CANON, modelType="WAIVE"))
+    # The p-hacking example needs a first stage that is evidence, not arithmetic:
+    # in partial-correlation literatures SE is a function of N by construction, so
+    # log(SE^2) ~ log N fits perfectly and WAIVE has nothing left to find.
+    esg_rows, esg_d = usable("esg")
+    data["esg"] = descriptives(esg_d)
+    run("esg_maive", esg_rows, dict(CANON))
+    run("esg_waive", esg_rows, dict(CANON, modelType="WAIVE"))
 
     print("async funnel (flagship; accepted only if async agrees with sync):")
-    plot = async_funnel(esg_rows, dict(CANON))
+    plot = async_funnel(alpha_rows, dict(CANON))
     for f in ("effectEstimate", "standardError", "firstStageFStatistic"):
-        if plot.get(f) != esg.get(f):
+        if plot.get(f) != alpha.get(f):
             raise SystemExit("async %s=%r disagrees with sync %r -- funnel rejected"
-                             % (f, plot.get(f), edu.get(f)))
+                             % (f, plot.get(f), alpha.get(f)))
     os.makedirs(OUT_DIR, exist_ok=True)
     img = plot.get("funnelPlot") or ""
     open(FUNNEL, "wb").write(base64.b64decode(img.split(",")[-1]))
@@ -183,10 +186,10 @@ def refresh():
 
     with open(CSV_OUT, "w", encoding="utf-8", newline="\n") as fh:
         fh.write("effect,se,n_obs,study_id\n")
-        for r in esg_rows:
+        for r in alpha_rows:
             fh.write("%s,%s,%d,%s\n" % (r["effect"], r["se"], r["n_obs"],
                                         r["study_id"].replace(",", ";")))
-    print("  alpha.csv: %d rows" % len(esg_rows))
+    print("  alpha.csv: %d rows" % len(alpha_rows))
 
     doc = {
         "what": "Every number on https://meta-analysis.cz/maive/how-to/, with the request "
@@ -217,7 +220,7 @@ def sig1(x):
 
 
 def n(x, d=3):
-    return "&#8212;" if x is None or x == "NA" else ("%.*f" % (d, float(x)))
+    return "NA" if x is None or x == "NA" else ("%.*f" % (d, float(x)))
 
 
 PAGE = """<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" \\
@@ -269,68 +272,71 @@ also asks for sample size.</p>
 inference uses CR2 standard errors clustered by study, by Pustejovsky and Tipton)</p>
 
 <p class="cta"><a class="button" href="https://www.easymeta.org/">Open EasyMeta</a>
-<a class="button quiet" href="/maive/how-to/esg.csv">Download the example data
+<a class="button quiet" href="/maive/how-to/alpha.csv">Download the example data
 (CSV)</a></p>
 
 <h2 id="example">Worked example: do hedge funds earn alpha?</h2>
 
-<p><a href="/alphas/">%(esg_k)s estimates from %(esg_g)s studies</a>, restricted to
-asset-based-style models &#8212; the ones that price a fund against benchmarks you could
-actually trade &#8212; and winsorised at 2%%. The mean reported alpha is %(esg_mean)s%% per
+<p><a href="/alphas/">%(alpha_k)s estimates from %(alpha_g)s studies</a>, restricted in this
+tutorial to asset-based-style models (the ones that price a fund against benchmarks you
+could actually trade) and winsorised at 2%%. The mean reported alpha is %(alpha_mean)s%% per
 month.</p>
 
-<p><img src="/maive/how-to/funnel.png" alt="EasyMeta funnel plot: %(esg_k)s hedge-fund alpha
+<p><img src="/maive/how-to/funnel.png" alt="EasyMeta funnel plot: %(alpha_k)s hedge-fund alpha
 estimates against precision. The cloud leans right as precision falls, and the MAIVE fit
 lands near zero, well left of the simple mean." width="840" height="840" /></p>
 
 <p class="aside"><b>Reading the funnel.</b> Each hollow point is a reported estimate
-plotted against its standard error, so the most precise studies sit at the top. With no
+plotted against its standard error, so the most precise estimates sit at the top. With no
 selection the cloud would be symmetric about the true effect; here it leans right as
 precision falls, which is what the bias test picks up. The filled points are the same
 estimates carrying the standard error MAIVE fits from sample size instead of the reported
 one, and the solid line is MAIVE's fit through them.</p>
 
-<p class="result"><b>MAIVE: %(esg_est)s%% per month (SE %(esg_se)s). First-stage F:
-%(esg_F)s.</b><br />
-<span class="settings">Settings: PET&#8209;PEESE, log first stage, equal weights, CR2
-clustered by study, no winsorisation.</span></p>
+<p class="result"><b>MAIVE: %(alpha_est)s%% per month (SE %(alpha_se)s). First-stage F:
+%(alpha_F)s.</b><br />
+<span class="settings">Settings: PET-PEESE, log first stage, equal weights, CR2
+clustered by study, no further winsorisation (the %(alpha_winsor)s%% is already in the
+CSV).</span></p>
 
 <p>Reading the output, as EasyMeta reports it:</p>
 
 <ul class="reading">
 <li><b>Bias test.</b> The Egger test rejects funnel symmetry
-(p&nbsp;=&nbsp;%(esg_egger_p)s): the less precise a study, the larger the alpha it
+(p&nbsp;=&nbsp;%(alpha_egger_p)s): the less precise a study, the larger the alpha it
 reports.</li>
-<li><b>Spurious precision.</b> The Hausman statistic is %(esg_haus)s against a critical
-value of 3.84. It does not reject here, so the reported standard errors survive the test
-and the correction is driven by publication bias rather than by inflated precision.</li>
-<li><b>Corrected effect.</b> %(esg_est)s%% per month against a reported %(esg_mean)s%%.
+<li><b>Spurious precision.</b> The Hausman statistic is %(alpha_haus)s against a critical
+value of 3.84: MAIVE and plain PET-PEESE agree here, so the test finds no sign of inflated
+precision, and the correction comes from the funnel asymmetry.</li>
+<li><b>Corrected effect.</b> %(alpha_est)s%% per month against a reported %(alpha_mean)s%%.
 Corrected, the alpha is gone.</li>
 </ul>
 
-<p class="aside">On this literature the PET&#8209;PEESE rule selects PET, so the fitted
-line is straight. That is a property of these data rather than of the method: where the
-corrected effect is clearly different from zero the rule selects PEESE and the line
+<p class="aside">On this literature the PET-PEESE rule selects PET, so the fitted line is
+straight. Where PET finds a clear effect the rule switches to PEESE and the line
 curves.</p>
 
 <h2 id="weak-first-stage">If the first stage is weak</h2>
 
-<p>Below F of 10, do not rest on the point estimate; report the Anderson&#8211;Rubin
-interval. In the <a href="/euro/">euro&#8211;trade dataset</a> (%(euro_k)s estimates from
-%(euro_g)s studies) F is %(euro_F)s; MAIVE gives %(euro_est)s (SE %(euro_se)s), and the AR
-interval is [%(euro_ar_lo)s, %(euro_ar_hi)s] &#8212; the corrected effect is not
-identified. RTMA, by Mathur, is the natural cross-check under different assumptions, but
-here its sampler fails its own diagnostics (%(euro_div)s divergent transitions), so we do
-not report its interval.</p>
+<p>Below an F of 10, report the Anderson-Rubin interval instead of the point estimate. In
+the <a href="/euro/">euro-trade dataset</a> (%(euro_k)s estimates from %(euro_g)s studies)
+F is %(euro_F)s; MAIVE gives %(euro_est)s (SE %(euro_se)s), and the AR interval is
+[%(euro_ar_lo)s, %(euro_ar_hi)s], so the corrected effect is only weakly identified. RTMA,
+by Mathur, rests on different assumptions and is the cross-check to run here. Its sampler
+fails its own diagnostics (%(euro_div)s divergent transitions), so we do not report its
+interval.</p>
 
 <h2 id="p-hacking">If you suspect serious p-hacking</h2>
 
-<p>In the <a href="/competition/">bank competition&#8211;stability dataset</a> (%(comp_k)s
-estimates from %(comp_g)s studies), %(comp_above)s estimates sit just above
-|z|&nbsp;=&nbsp;1.96 against %(comp_below)s just below &#8212; consistent with selective
-reporting, not proof of it. WAIVE, experimental, downweights estimates whose precision
-their sample size does not support: %(waive_est)s (SE %(waive_se)s) against MAIVE's
-%(comp_est)s (SE %(comp_se)s). Less precision, same conclusion: no clear effect.</p>
+<p>In the <a href="/esg/">female directors and ESG ratings dataset</a> (%(ph_k)s estimates
+from %(ph_g)s studies, mean %(ph_mean)s rating points), %(ph_above)s estimates sit just
+above |z|&nbsp;=&nbsp;1.96 and %(ph_below)s just below, in windows 0.5 wide. Selective
+reporting leaves that pattern.</p>
+
+<p>WAIVE, experimental, goes after it directly: it downweights estimates that report more
+precision than their sample size supports. MAIVE gives %(ph_maive)s (SE %(ph_maive_se)s),
+WAIVE %(ph_waive)s (SE %(ph_waive_se)s). MAIVE still finds an effect here; WAIVE does
+not.</p>
 
 <h2 id="in-r">The same run in R</h2>
 
@@ -359,8 +365,12 @@ maive(dat,
 <pre class="code"><code>POST https://api.maive.eu/v1/run-model
 {
   "data": [
-    {"effect": -0.11, "se": 0.04, "n_obs": 1200, "study_id": "S1"},
-    {"effect": -0.05, "se": 0.09, "n_obs": 310,  "study_id": "S2"}
+    {"effect": 0.49,   "se": 0.2438, "n_obs": 152, "study_id": "1"},
+    {"effect": 0.89,   "se": 0.6416, "n_obs": 33,  "study_id": "1"},
+    {"effect": 0.93,   "se": 0.6416, "n_obs": 18,  "study_id": "1"},
+    {"effect": 0.46,   "se": 0.1575, "n_obs": 81,  "study_id": "1"},
+    {"effect": 0.04,   "se": 0.2,    "n_obs": 20,  "study_id": "1"},
+    {"effect": 0.0658, "se": 0.0445, "n_obs": 136, "study_id": "20"}
   ],
   "parameters": {
     "modelType": "MAIVE", "maiveMethod": "PET-PEESE", "weight": "equal_weights",
@@ -370,19 +380,19 @@ maive(dat,
   }
 }</code></pre>
 <p>Prompt to paste into an assistant:</p>
-<pre class="code prompt"><code>Run MAIVE on my data via the EasyMeta API (api.maive.eu/v1/run-model).
+<pre class="code prompt"><code>Run MAIVE on my data via the EasyMeta API (POST api.maive.eu/v1/run-model).
 Send "data" as an array of row objects with effect, se, n_obs, study_id.
-Nest all settings under "parameters" -- top-level settings are silently
-ignored. Use the synchronous endpoint; the async one ignores modelType.
-When estimates are nested within studies, send "includeStudyClustering":
-true -- "standardErrorTreatment": "clustered_cr2" alone only picks the
-variance formula, not the clustering, and omitting the flag changes the
-standard errors, the first-stage F, and can move the PET-PEESE point
-estimate itself. Check firstStage.mode is "log" in the response; if it
-says "levels", the parameters did not take effect. Report: corrected
-estimate vs the simple mean, first-stage F, Egger test, Hausman test,
-and the Anderson-Rubin interval whenever F &lt; 10. Report any warnings
-verbatim. Do not invent numbers.</code></pre>
+Nest all settings under "parameters"; top-level settings are silently
+ignored. Use exactly the parameters block above. Use the synchronous
+endpoint; the async one ignores modelType. Always send
+"includeStudyClustering": true. Without it, "clustered_cr2" picks the
+variance formula but not the clustering, which changes the standard
+errors, the first-stage F, and can move the point estimate. Check
+firstStage.mode
+is "log" in the response; anything else means the parameters did not
+take effect. Report: corrected estimate vs the simple mean, first-stage
+F, Egger test, Hausman test, and the Anderson-Rubin interval whenever
+F &lt; 10. Report any warnings verbatim. Do not invent numbers.</code></pre>
 </details>
 
 <p class="provenance">Computed with EasyMeta on meta-analysis.cz data v1.1.1,
@@ -404,10 +414,10 @@ stage is now the recommended default.</p>
 
 def render(doc):
     ds, runs = doc["datasets"], doc["runs"]
-    esg = runs["esg_maive"]["response"]
+    alpha = runs["alpha_maive"]["response"]
     euro = runs["euro_maive"]["response"]
     rtma = runs["euro_rtma"]["response"]
-    cm, cw = runs["comp_maive"]["response"], runs["comp_waive"]["response"]
+    em, ew = runs["esg_maive"]["response"], runs["esg_waive"]["response"]
     ar = euro.get("andersonRubinCI") or ["NA", "NA"]
 
     ld = {
@@ -450,23 +460,24 @@ def render(doc):
     return PAGE % {
         "jsonld": json.dumps(ld, ensure_ascii=False, separators=(",", ":")),
         "footer": homepage_footer(), "retrieved": doc["retrieved"],
-        "esg_k": ds["esg"]["estimates"], "esg_g": ds["esg"]["studies"],
-        "esg_mean": n(ds["esg"]["simple_mean"], 2),
-        "esg_est": n(esg.get("effectEstimate")), "esg_se": n(esg.get("standardError")),
-        "esg_F": n(esg.get("firstStageFStatistic"), 1),
-        "esg_egger_p": n(esg["publicationBias"]["pValue"], 3),
-        "esg_haus": n((esg.get("hausmanTest") or {}).get("statistic"), 2),
+        "alpha_k": ds["alpha"]["estimates"], "alpha_g": ds["alpha"]["studies"],
+        "alpha_mean": n(ds["alpha"]["simple_mean"], 2),
+        "alpha_est": n(alpha.get("effectEstimate")), "alpha_se": n(alpha.get("standardError")),
+        "alpha_F": n(alpha.get("firstStageFStatistic"), 1),
+        "alpha_egger_p": n(alpha["publicationBias"]["pValue"], 3),
+        "alpha_haus": n((alpha.get("hausmanTest") or {}).get("statistic"), 2),
+        "alpha_winsor": "%g" % (FLAGSHIP_WINSOR * 100),
         "euro_k": ds["euro"]["estimates"], "euro_g": ds["euro"]["studies"],
         "euro_F": n(euro.get("firstStageFStatistic"), 2),
         "euro_est": n(euro.get("effectEstimate"), 2),
         "euro_se": n(euro.get("standardError"), 2),
         "euro_ar_lo": n(ar[0], 2), "euro_ar_hi": n(ar[1], 2),
         "euro_div": (rtma.get("diagnostics") or {}).get("divergences"),
-        "comp_k": ds["competition"]["estimates"], "comp_g": ds["competition"]["studies"],
-        "comp_above": ds["competition"]["caliper_above"],
-        "comp_below": ds["competition"]["caliper_below"],
-        "comp_est": n(cm.get("effectEstimate")), "comp_se": n(cm.get("standardError")),
-        "waive_est": n(cw.get("effectEstimate")), "waive_se": n(cw.get("standardError")),
+        "ph_k": ds["esg"]["estimates"], "ph_g": ds["esg"]["studies"],
+        "ph_above": ds["esg"]["caliper_above"], "ph_below": ds["esg"]["caliper_below"],
+        "ph_mean": n(ds["esg"]["simple_mean"], 2),
+        "ph_maive": n(em.get("effectEstimate"), 3), "ph_maive_se": n(em.get("standardError"), 3),
+        "ph_waive": n(ew.get("effectEstimate"), 3), "ph_waive_se": n(ew.get("standardError"), 3),
     }
 
 

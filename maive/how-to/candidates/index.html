@@ -34,19 +34,19 @@
 
 <p class="lede">Candidates for the worked example on <a href="/maive/how-to/">How to run
 MAIVE</a>. Every funnel below is the plot EasyMeta returns for that subset, under the
-same recipe the page teaches: PET&#8209;PEESE, log first stage, equal weights, CR2
+same recipe the page teaches: PET-PEESE, log first stage, equal weights, CR2
 clustered by study.</p>
 
 <p class="aside">Winsorisation is applied to the data here, not passed as a setting: the
 shipped CSV is what was analysed. That matters because the MAIVE R package has no
 winsorisation argument, so a run that used the app's own setting could not be reproduced in
-R, while these can &#8212; the R code on the how-to page returns these numbers from these
+R, while these can: the R code on the how-to page returns these numbers from these
 files.</p>
 
 <p class="aside">What a good example needs, and why these were hard to find. The estimates
 have to be spread no wider than their own standard errors, or the cloud is a flat band
 instead of a triangle. The sample sizes have to vary a lot, or MAIVE's fitted standard
-errors &#8212; the filled points &#8212; collapse into a horizontal line. The first stage
+errors, the filled points, collapse into a horizontal line. The first stage
 has to be strong. And there has to be real asymmetry to correct. Those pull against each
 other: the subsets homogeneous enough to look like a funnel tend to have too little
 variation in sample size to identify anything.</p>
@@ -61,7 +61,7 @@ height="840" /></p>
 <tbody>
 <tr><th>Simple mean</th><td>0.29</td></tr>
 <tr><th>MAIVE</th><td><b>0.194</b> (SE 0.037)</td></tr>
-<tr><th>First&#8209;stage F</th><td>146.6</td></tr>
+<tr><th>First-stage F</th><td>146.6</td></tr>
 <tr><th>Fit</th><td>PEESE</td></tr>
 <tr><th>Bias test (Egger p)</th><td>0.065 <span class="warn">not significant</span></td></tr>
 <tr><th>Estimates / studies</th><td>133 from 9</td></tr>
@@ -82,7 +82,7 @@ height="840" /></p>
 <tbody>
 <tr><th>Simple mean</th><td>0.33</td></tr>
 <tr><th>MAIVE</th><td><b>0.045</b> (SE 0.115)</td></tr>
-<tr><th>First&#8209;stage F</th><td>59.7</td></tr>
+<tr><th>First-stage F</th><td>59.7</td></tr>
 <tr><th>Fit</th><td>PET</td></tr>
 <tr><th>Bias test (Egger p)</th><td>0.012</td></tr>
 <tr><th>Estimates / studies</th><td>75 from 9</td></tr>
@@ -103,7 +103,7 @@ height="840" /></p>
 <tbody>
 <tr><th>Simple mean</th><td>0.46</td></tr>
 <tr><th>MAIVE</th><td><b>0.066</b> (SE 0.139)</td></tr>
-<tr><th>First&#8209;stage F</th><td>16.9</td></tr>
+<tr><th>First-stage F</th><td>16.9</td></tr>
 <tr><th>Fit</th><td>PET</td></tr>
 <tr><th>Bias test (Egger p)</th><td>0.047</td></tr>
 <tr><th>Estimates / studies</th><td>87 from 23</td></tr>

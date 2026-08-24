@@ -208,8 +208,8 @@ PAGE = """<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" \
 <meta http-equiv="content-type" content="text/html; charset=utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>Search</title>
-<meta name="description" content="Search every page on meta-analysis.cz \
-&#8212; 54 papers in full, the research notes, the datasets and the guidelines. \
+<meta name="description" content="Search every page on meta-analysis.cz: \
+54 papers in full, the research notes, the datasets and the guidelines. \
 The search runs in your browser; nothing is sent anywhere." />
 <link rel="canonical" href="https://meta-analysis.cz/search/" />
 <link href="/style.css" rel="stylesheet" type="text/css" />
@@ -261,8 +261,8 @@ The search runs in your browser; nothing is sent anywhere." />
 <p class="searchnote">Every word on every page of this site is indexed, including all 54
 papers in full. The index is downloaded once and searched in your browser: no query is sent
 to this site or to anyone else, and a page published a minute ago is findable a minute ago.
-It is a plain file &#8212; <a href="/api/v1/search-index.json">search-index.json</a> &#8212;
-if you would rather search it yourself.</p>
+It is a plain file, <a href="/api/v1/search-index.json">search-index.json</a>, if you would
+rather search it yourself.</p>
 
 \t\t\t</div>
 \t\t</div>
