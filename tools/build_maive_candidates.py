@@ -41,7 +41,8 @@ height="840" /></p>
 <tr><th>Estimates / studies</th><td>%(k)s from %(studies)s</td></tr>
 </tbody>
 </table>
-<p class="filter"><code>%(filter)s</code></p>
+<p class="filter"><code>%(filter)s</code> &middot;
+<a href="%(slug)s.csv">the exact CSV</a></p>
 <p class="verdict">%(verdict)s</p>
 </div>
 """
@@ -85,6 +86,12 @@ PAGE = """<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" \
 MAIVE</a>. Every funnel below is the plot EasyMeta returns for that subset, under the
 same recipe the page teaches: PET&#8209;PEESE, log first stage, equal weights, CR2
 clustered by study.</p>
+
+<p class="aside">Winsorisation is applied to the data here, not passed as a setting: the
+shipped CSV is what was analysed. That matters because the MAIVE R package has no
+winsorisation argument, so a run that used the app's own setting could not be reproduced in
+R, while these can &#8212; the R code on the how-to page returns these numbers from these
+files.</p>
 
 <p class="aside">What a good example needs, and why these were hard to find. The estimates
 have to be spread no wider than their own standard errors, or the cloud is a flat band

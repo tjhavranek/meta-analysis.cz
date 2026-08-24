@@ -238,9 +238,9 @@ p-hacking is suspected." />
 that operates through reported standard errors.</b> Besides effect and standard error, it
 asks for one more column: sample size.</p>
 
-<p><b>Your data:</b> <code>effect</code> &middot; <code>se</code> &middot;
-<code>n_obs</code> &middot; <code>study_id</code> (optional; with it, inference uses CR2
-standard errors clustered by study, by Pustejovsky and Tipton)</p>
+<p><b>You will need:</b> <code>effect</code> &middot; <code>se</code> &middot;
+<code>n_obs</code> &middot; <code>study_id</code> (the latter is optional; with it,
+inference uses CR2 standard errors clustered by study, by Pustejovsky and Tipton)</p>
 
 <p class="cta"><a class="button" href="https://www.easymeta.org/">Open EasyMeta</a>
 <a class="button quiet" href="/maive/how-to/esg.csv">Download the example data

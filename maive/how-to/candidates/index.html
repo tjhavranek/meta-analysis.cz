@@ -37,6 +37,12 @@ MAIVE</a>. Every funnel below is the plot EasyMeta returns for that subset, unde
 same recipe the page teaches: PET&#8209;PEESE, log first stage, equal weights, CR2
 clustered by study.</p>
 
+<p class="aside">Winsorisation is applied to the data here, not passed as a setting: the
+shipped CSV is what was analysed. That matters because the MAIVE R package has no
+winsorisation argument, so a run that used the app's own setting could not be reproduced in
+R, while these can &#8212; the R code on the how-to page returns these numbers from these
+files.</p>
+
 <p class="aside">What a good example needs, and why these were hard to find. The estimates
 have to be spread no wider than their own standard errors, or the cloud is a flat band
 instead of a triangle. The sample sizes have to vary a lot, or MAIVE's fitted standard
@@ -47,86 +53,68 @@ variation in sample size to identify anything.</p>
 
 
 <div class="cand">
-<h2 id="gasoline-ols-ts">1. Gasoline demand, OLS time-series estimates</h2>
-<p class="what">Income elasticities of gasoline demand, from studies estimating them by OLS on time-series data. One estimator, one data type: the restriction is a sentence.</p>
-<p><img src="funnel-gasoline-ols-ts.png" alt="Funnel plot for Gasoline demand, OLS time-series estimates" width="840"
-height="840" /></p>
-<table class="nums">
-<tbody>
-<tr><th>Simple mean</th><td>0.85</td></tr>
-<tr><th>Plain PET&#8209;PEESE</th><td>0.839</td></tr>
-<tr><th>MAIVE</th><td><b>0.331</b> (SE 0.183)</td></tr>
-<tr><th>First&#8209;stage F</th><td>11.4</td></tr>
-<tr><th>Fit</th><td>PET</td></tr>
-<tr><th>Bias test (Egger p)</th><td>0.014</td></tr>
-<tr><th>Estimates / studies</th><td>166 from 34</td></tr>
-</tbody>
-</table>
-<p class="filter"><code>gasoline (gas_income_revision.dta): ols == 1 and Timeseries == 1</code></p>
-<p class="verdict">The clearest demonstration of what MAIVE adds. Ordinary PET-PEESE barely moves the literature -- 0.84 reported, 0.84 corrected -- while MAIVE cuts it to 0.33, and the Hausman test rejects at 15.5 against a critical value of 3.84, so the spurious-precision test has something to say for once. The bias test rejects too. Against it: the fitted standard errors bunch into a horizontal band, so the filled cloud is flatter than the demo's, the fit is a straight PET line, and F = 11.4 clears 10 without much room.</p>
-</div>
-
-
-<div class="cand">
-<h2 id="hedge-asset-based">2. Hedge-fund alpha, asset-based-style models</h2>
-<p class="what">Estimates of hedge-fund alpha from asset-based-style pricing models, on cross-sectional samples. Asset-based-style models price funds off observable asset returns rather than statistical factors, so this is the one corner of the literature where alpha is measured against a benchmark you can actually trade.</p>
+<h2 id="hedge-asset-based">1. Hedge-fund alpha, asset-based-style models</h2>
+<p class="what">Alpha estimates from asset-based-style pricing models on cross-sectional samples -- the corner of the literature where alpha is measured against a benchmark you can actually trade. 2% winsorisation.</p>
 <p><img src="funnel-hedge-asset-based.png" alt="Funnel plot for Hedge-fund alpha, asset-based-style models" width="840"
 height="840" /></p>
 <table class="nums">
 <tbody>
 <tr><th>Simple mean</th><td>0.33</td></tr>
-<tr><th>Plain PET&#8209;PEESE</th><td>0.108</td></tr>
-<tr><th>MAIVE</th><td><b>0.047</b> (SE 0.116)</td></tr>
-<tr><th>First&#8209;stage F</th><td>71.8</td></tr>
+<tr><th>Plain PET&#8209;PEESE</th><td>0.097</td></tr>
+<tr><th>MAIVE</th><td><b>0.045</b> (SE 0.115)</td></tr>
+<tr><th>First&#8209;stage F</th><td>59.7</td></tr>
 <tr><th>Fit</th><td>PET</td></tr>
-<tr><th>Bias test (Egger p)</th><td>0.014</td></tr>
+<tr><th>Bias test (Egger p)</th><td>0.012</td></tr>
 <tr><th>Estimates / studies</th><td>75 from 9</td></tr>
 </tbody>
 </table>
-<p class="filter"><code>alphas: model_asset_based == 1 and data_cross_section == 1</code></p>
-<p class="verdict">The only candidate where the bias test rejects (Egger p = 0.014), and the correction is dramatic: a reported mean of 0.33% per month falls to 0.05%, which is the difference between a real alpha and none. First stage is the second strongest of any candidate. The fit is a straight PET line rather than a curve.</p>
+<p class="filter"><code>alphas: model_asset_based == 1 and data_cross_section == 1, winsorised at 2%</code> &middot;
+<a href="hedge-asset-based.csv">the exact CSV</a></p>
+<p class="verdict">The best of the four. A real funnel: the cloud spreads down the axis and leans right, and the correction runs one way the whole time -- 0.33% per month reported, 0.10% after plain PET-PEESE, 0.04% after MAIVE. The bias test rejects (p = 0.012) and the first stage is strong (F = 60). The fit is a straight PET line, and the Hausman test does not reject.</p>
+</div>
+
+
+<div class="cand">
+<h2 id="esg-emerging">2. ESG and board gender diversity, emerging markets</h2>
+<p class="what">Estimates for firms in emerging markets, from studies that control for firm size. Emerging-market governance is where board-composition rules are newest and the evidence thinnest. 5% winsorisation.</p>
+<p><img src="funnel-esg-emerging.png" alt="Funnel plot for ESG and board gender diversity, emerging markets" width="840"
+height="840" /></p>
+<table class="nums">
+<tbody>
+<tr><th>Simple mean</th><td>0.46</td></tr>
+<tr><th>Plain PET&#8209;PEESE</th><td>-0.004</td></tr>
+<tr><th>MAIVE</th><td><b>0.066</b> (SE 0.139)</td></tr>
+<tr><th>First&#8209;stage F</th><td>16.9</td></tr>
+<tr><th>Fit</th><td>PET</td></tr>
+<tr><th>Bias test (Egger p)</th><td>0.047</td></tr>
+<tr><th>Estimates / studies</th><td>87 from 23</td></tr>
+</tbody>
+</table>
+<p class="filter"><code>esg: emerging == 1 and control_firm_size == 1, winsorised at 5%</code> &middot;
+<a href="esg-emerging.csv">the exact CSV</a></p>
+<p class="verdict">Keeps the ESG numbers you liked and finally has the shape: 87 estimates spread across the axis, a clear rightward lean, a reported mean of 0.46 falling to 0.07. The bias test rejects (p = 0.047). Against it: plain PET-PEESE lands slightly BELOW MAIVE, so the ladder is not monotone and the spurious-precision sentence gets harder to write.</p>
 </div>
 
 
 <div class="cand">
 <h2 id="electricity-india">3. Electricity demand in India, average-price measures</h2>
-<p class="what">Price elasticities of electricity demand in India, from studies that identify the elasticity off an average-price measure. India is the case where subsidised, politically set tariffs are supposed to leave demand unresponsive.</p>
+<p class="what">Price elasticities of electricity demand in India, identified off an average-price measure. 5% winsorisation.</p>
 <p><img src="funnel-electricity-india.png" alt="Funnel plot for Electricity demand in India, average-price measures" width="840"
 height="840" /></p>
 <table class="nums">
 <tbody>
-<tr><th>Simple mean</th><td>-0.49</td></tr>
-<tr><th>Plain PET&#8209;PEESE</th><td>-0.470</td></tr>
-<tr><th>MAIVE</th><td><b>-0.574</b> (SE 0.054)</td></tr>
-<tr><th>First&#8209;stage F</th><td>20.6</td></tr>
+<tr><th>Simple mean</th><td>-0.47</td></tr>
+<tr><th>Plain PET&#8209;PEESE</th><td>-0.480</td></tr>
+<tr><th>MAIVE</th><td><b>-0.558</b> (SE 0.059)</td></tr>
+<tr><th>First&#8209;stage F</th><td>18.3</td></tr>
 <tr><th>Fit</th><td>PEESE</td></tr>
-<tr><th>Bias test (Egger p)</th><td>0.203 <span class="warn">not significant</span></td></tr>
+<tr><th>Bias test (Egger p)</th><td>0.163 <span class="warn">not significant</span></td></tr>
 <tr><th>Estimates / studies</th><td>64 from 12</td></tr>
 </tbody>
 </table>
-<p class="filter"><code>electricity: se_source == 'reported', average_price == 1, country == 'India'</code></p>
-<p class="verdict">PEESE is selected, so the fit visibly curves, and the largest standard error is the 95th percentile -- no single point stretches the axis. But the bias test does not reject (p = 0.20), and the correction moves the estimate away from zero rather than towards it, which is the harder story to tell first.</p>
-</div>
-
-
-<div class="cand">
-<h2 id="beauty-us-skilled">4. The beauty premium for high-skilled US workers</h2>
-<p class="what">Estimates of the wage premium to physical attractiveness among high-skilled workers in the United States -- lawyers, academics, executives -- where the argument over whether beauty signals productivity or is simple discrimination is actually contested.</p>
-<p><img src="funnel-beauty-us-skilled.png" alt="Funnel plot for The beauty premium for high-skilled US workers" width="840"
-height="840" /></p>
-<table class="nums">
-<tbody>
-<tr><th>Simple mean</th><td>3.45</td></tr>
-<tr><th>Plain PET&#8209;PEESE</th><td>2.830</td></tr>
-<tr><th>MAIVE</th><td><b>3.154</b> (SE 0.735)</td></tr>
-<tr><th>First&#8209;stage F</th><td>105.6</td></tr>
-<tr><th>Fit</th><td>PEESE</td></tr>
-<tr><th>Bias test (Egger p)</th><td>0.376 <span class="warn">not significant</span></td></tr>
-<tr><th>Estimates / studies</th><td>208 from 15</td></tr>
-</tbody>
-</table>
-<p class="filter"><code>beauty: high_skilled_workers == 1 and country == 'United States'</code></p>
-<p class="verdict">The strongest first stage in the whole search (F = 106) and a curved PEESE fit, on 208 estimates from 15 studies. Against it: once standard errors are clustered by study the asymmetry is no longer significant (p = 0.38), so the page could not say there was bias to correct.</p>
+<p class="filter"><code>electricity: se_source == 'reported', average_price == 1, country == 'India', winsorised at 5%</code> &middot;
+<a href="electricity-india.csv">the exact CSV</a></p>
+<p class="verdict">The only one with the curved PEESE fit. But the cloud is a rectangular block rather than a funnel, the bias test does not reject (p = 0.16), and the correction moves away from zero.</p>
 </div>
 
 
