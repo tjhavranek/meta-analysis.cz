@@ -222,8 +222,8 @@ PAGE = """<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" \
 <meta http-equiv="content-type" content="text/html; charset=utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>How to run MAIVE</title>
-<meta name="description" content="Run MAIVE in EasyMeta on real data: the four columns it \\
-needs, a worked example with the funnel, and what to do when the first stage is weak or \\
+<meta name="description" content="Run MAIVE in EasyMeta on real data: the four columns it \
+needs, a worked example with the funnel, and what to do when the first stage is weak or \
 p-hacking is suspected." />
 <link rel="canonical" href="https://meta-analysis.cz/maive/how-to/" />
 <link href="/style.css" rel="stylesheet" type="text/css" />
@@ -255,9 +255,8 @@ p-hacking is suspected." />
 \t\t<div class="post">
 \t\t\t<div class="entry">
 
-<p class="lede"><b>MAIVE corrects meta-analyses for publication bias and for the p-hacking
-that operates through reported standard errors.</b> Besides effect and standard error, it
-also asks for sample size.</p>
+<p class="lede"><b>MAIVE corrects meta-analyses for publication bias and for many forms of
+p-hacking.</b> Besides effect and standard error, it also asks for sample size.</p>
 
 <p><b>You will need:</b> <code>effect</code> &middot; <code>se</code> &middot;
 <code>n_obs</code> &middot; <code>study_id</code> (the latter is needed when a study reports
@@ -415,9 +414,8 @@ def render(doc):
         "@context": "https://schema.org", "@type": "HowTo",
         "@id": "https://meta-analysis.cz/maive/how-to/#howto",
         "name": "How to run MAIVE",
-        "description": "Correct a meta-analysis for publication bias and for p-hacking that "
-                       "operates through reported standard errors, using four columns of "
-                       "data and the EasyMeta app or API.",
+        "description": "Correct a meta-analysis for publication bias and for many forms of "
+                       "p-hacking, using four columns of data and the EasyMeta app or API.",
         "inLanguage": "en", "license": "https://creativecommons.org/licenses/by/4.0/",
         "isBasedOn": "https://meta-analysis.cz/maive/#paper",
         "about": {"@id": "https://meta-analysis.cz/maive/#paper"},
