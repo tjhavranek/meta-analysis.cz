@@ -271,21 +271,17 @@ several estimates, and inference then clusters on it)</p>
 
 <p><a href="/alphas/">%(alpha_k)s estimates from %(alpha_g)s studies</a>, restricted in this
 tutorial to asset-based-style models (the ones that price a fund against benchmarks you can
-trade) estimated on cross-sectional data. Nothing is winsorised or trimmed. The mean
-reported alpha is %(alpha_mean)s%% per month.</p>
+trade) estimated on cross-sectional data. The mean reported alpha is %(alpha_mean)s%% per
+month.</p>
 
 <p><img src="/maive/how-to/funnel.png" alt="EasyMeta funnel plot: %(alpha_k)s hedge-fund alpha
 estimates against precision. The cloud leans right as precision falls, and the MAIVE fit
 lands near zero, well left of the simple mean." width="840" height="840" /></p>
 
 <p class="aside"><b>Reading the funnel.</b> Each hollow point is a reported estimate
-plotted against its standard error, so the most precise estimates sit at the top. With no
-selection the cloud would be roughly symmetric about the true effect; here it leans right
-as precision falls, which is what the bias test picks up. Genuine differences between
-studies can tilt it too, so the correction is a model, not a verdict. The filled points are
-the same
-estimates carrying the standard error MAIVE fits from sample size instead of the reported
-one, and the solid line is MAIVE's fit through them.</p>
+plotted against its standard error, so the most precise estimates sit at the top. The
+filled points are the same estimates carrying the standard error MAIVE fits from sample size
+instead of the reported one, and the solid line is MAIVE's fit through them.</p>
 
 <p class="result"><b>MAIVE: %(alpha_est)s%% per month (SE %(alpha_se)s). First-stage F:
 %(alpha_F)s.</b><br />
@@ -305,13 +301,10 @@ precision, and the correction comes from the funnel asymmetry.</li>
 Corrected, the alpha is gone.</li>
 </ul>
 
-<p class="aside">This is the usual direction. In the
+<p class="aside">Shrinking the effect is the usual outcome. In the
 <a href="/maive/paper/">paper</a>, across 267 meta-analyses with a first-stage F above 10,
-MAIVE moved the PET-PEESE estimate closer to zero in 67%% of them, and in 75%% of those
-where PET-PEESE had found a significant effect.</p>
-
-<p class="aside">On this literature the PET-PEESE rule selects PET, so the fitted line is
-straight. Where PET finds a clear effect the rule switches to PEESE and the line curves.</p>
+MAIVE moved the corrected estimate closer to zero in 67%% of them, and in 75%% of those
+where the correction had left a significant effect.</p>
 
 <h2 id="weak-first-stage">If the first stage is weak</h2>
 
@@ -330,9 +323,8 @@ above |z|&nbsp;=&nbsp;1.96 and %(ph_below)s just below, in windows 0.5 wide. Bun
 that is what selective reporting leaves behind, though these counts alone are too few to
 prove it.</p>
 
-<p>WAIVE, experimental, works on both channels. It downweights estimates that report more
-precision than their sample size supports, and it corrects the estimates themselves through
-PEESE, which addresses p-hacking that moves the effect rather than the standard error.
+<p>WAIVE, an experimental option in EasyMeta, is the more aggressive correction: it
+additionally downweights estimates that look too precise for their sample size.
 MAIVE gives %(ph_maive)s (SE %(ph_maive_se)s), WAIVE %(ph_waive)s (SE %(ph_waive_se)s).
 MAIVE still finds an effect here; WAIVE does not.</p>
 
@@ -340,7 +332,7 @@ MAIVE still finds an effect here; WAIVE does not.</p>
 
 <p>EasyMeta runs the <a href="https://cran.r-project.org/package=MAIVE">MAIVE package</a>.
 These arguments are the settings above, and they return the same numbers to every digit
-printed on this page. Pass them all: the package's own defaults are different.</p>
+printed on this page.</p>
 
 <pre class="code"><code>install.packages("MAIVE")
 library(MAIVE)

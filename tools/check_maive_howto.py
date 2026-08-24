@@ -149,16 +149,9 @@ def main():
     if abs(float(shipped.effect.mean()) - ds["alpha"]["simple_mean"]) > 5e-4:
         fail("the shipped CSV's mean effect (%.4f) is not the sidecar's (%.4f)"
              % (shipped.effect.mean(), ds["alpha"]["simple_mean"]))
-    if "Nothing is winsorised or trimmed" not in page:
-        fail("the page no longer states that the example data are untouched, but the gate "
-             "above only proves alpha.csv matches the described subset")
-
-    # 5d. The page says the fit is straight "on this literature". That sentence is only
-    #     right while the rule actually selects PET; if a rerun selects PEESE the paragraph
-    #     contradicts the plot beside it.
-    sel = runs["alpha_maive"]["response"].get("petpeese_selected")
-    if "selects PET, so the fitted" in page and sel != "PET":
-        fail("the page says the rule selects PET but this run selected %r" % sel)
+    if "winsoris" in page or "trimmed" in page:
+        fail("the page mentions winsorising or trimming, but flagship() does neither; "
+             "either the prose or the subset has drifted")
 
     # 6. The page is exactly what the sidecar renders -- the check that catches hand edits.
     from build_maive_howto import render
