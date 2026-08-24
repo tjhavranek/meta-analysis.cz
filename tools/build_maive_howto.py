@@ -269,7 +269,7 @@ also asks for sample size.</p>
 
 <p><b>You will need:</b> <code>effect</code> &middot; <code>se</code> &middot;
 <code>n_obs</code> &middot; <code>study_id</code> (the latter is optional; with it,
-inference uses CR2 standard errors clustered by study, by Pustejovsky and Tipton)</p>
+inference uses CR2 clustering)</p>
 
 <p class="cta"><a class="button" href="https://www.easymeta.org/">Open EasyMeta</a>
 <a class="button quiet" href="/maive/how-to/alpha.csv">Download the example data
