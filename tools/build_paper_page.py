@@ -723,6 +723,7 @@ def build_page(project, meta, body, toc):
 \t</div>
 </div>
 <!-- end header -->
+</div>
 <!-- start page -->
 <div id="page">
 \t<div id="content">
@@ -743,7 +744,6 @@ def build_page(project, meta, body, toc):
 \t</div>
 </div>
 <!-- end page -->
-</div>
 {footer}
 </body>
 </html>
