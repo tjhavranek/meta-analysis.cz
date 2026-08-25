@@ -200,6 +200,12 @@ class Builder:
         self.refs_numbered = False
         self.in_frontmatter = False
         self._ref_seq = 0
+        # Every id emitted on the page, so a repeated one gets a suffix instead of a twin.
+        # Papers print an endnote block per PDF page, so both the section anchor and the
+        # note numbers repeat within one document.
+        self._anchors = {}
+        # Endnote <li> collected from every "## ENDNOTES" block, emitted once at the end.
+        self._endnotes = []
         self.abstract = []
 
     # -- emit helpers
@@ -248,7 +254,7 @@ class Builder:
                 self.w("</div>")
                 self.in_frontmatter = False
                 self._collect_abstract = False
-            elif mode in ("references", "endnotes"):
+            elif mode == "references":
                 self.w("</ol>")
             mode = None
 
@@ -313,6 +319,11 @@ class Builder:
                     i += 1
                     continue
                 anchor = "sec-" + slug(head.split("|")[0].strip() or head)
+                if anchor in self._anchors:
+                    self._anchors[anchor] += 1
+                    anchor = "%s-%d" % (anchor, self._anchors[anchor])
+                else:
+                    self._anchors[anchor] = 1
                 self.w('<h2 id="%s">%s</h2>'
                        % (anchor, inline(heading_label(head), self.refs_numbered)))
                 self.toc.append((2, anchor, head))
@@ -324,7 +335,12 @@ class Builder:
                            % ("" if self.refs_numbered else " unnumbered"))
                     mode = "references"
                 elif upper.startswith("ENDNOTE"):
-                    self.w('<ol class="endnotes">')
+                    # Buffered, not emitted: see _endnotes.
+                    self.out.pop()           # the <h2> just written
+                    self.toc.pop()
+                    self._anchors[anchor] -= 1
+                    if not self._anchors[anchor]:
+                        del self._anchors[anchor]
                     mode = "endnotes"
                 i += 1
                 continue
@@ -356,7 +372,17 @@ class Builder:
                         self._matched_refs += bool(link)
                         rendered += link
                         rendered += cites_on_site(rendered, self.project)
-                    self.w('<li id="%s%s"%s>%s</li>' % (idprefix, key, style, rendered))
+                    lid = "%s%s" % (idprefix, key)
+                    if lid in self._anchors:
+                        self._anchors[lid] += 1
+                        lid = "%s-%d" % (lid, self._anchors[lid])
+                    else:
+                        self._anchors[lid] = 1
+                    item = '<li id="%s"%s>%s</li>' % (lid, style, rendered)
+                    if mode == "endnotes":
+                        self._endnotes.append(item)
+                    else:
+                        self.w(item)
                     i = j
                     continue
                 if mode == "references":
@@ -452,7 +478,16 @@ class Builder:
 
         flush()
         close_mode()
-        page = "\n".join(self.out)
+        if self._endnotes:
+            # One section, at the end, in the order the notes were met. The transcripts carry
+            # a block per PDF page; inline they cut the running text, sometimes mid-word.
+            self.w('<h2 id="sec-endnotes">ENDNOTES</h2>')
+            self.toc.append((2, "sec-endnotes", "ENDNOTES"))
+            self.w('<ol class="endnotes">')
+            for item in self._endnotes:
+                self.w(item)
+            self.w("</ol>")
+        page = rejoin_hyphens("\n".join(self.out))
         if self._matched_refs:
             return page.replace(REF_NOTE_SLOT, REF_NOTE)
         # With its newline: an unfilled slot must leave no trace, not a blank line.
@@ -904,6 +939,31 @@ def cites_on_site(rendered, project):
             if os.path.exists(os.path.join(ROOT, href.strip("/"), "index.html")):
                 return (' <a class="on-site" href="%s">Full text on this site</a>' % href)
     return ""
+
+
+RE_HYPHEN_SPLIT = re.compile(r'([A-Za-z]{2,})-</p>\n<p>([a-z]{2,})')
+
+
+def rejoin_hyphens(page):
+    """A word broken by a PDF page break arrives as two paragraphs, "under-" then
+    "perform". Join them, and let the document decide the hyphen: if the closed form occurs
+    elsewhere in this paper it was a line break ("underperform"), and if the hyphenated form
+    occurs it was a compound ("fixed-effects"). Anything the paper does not settle is left
+    exactly as transcribed."""
+    text = re.sub(r"<[^>]+>", " ", page).lower()
+
+    def decide(m):
+        a, b = m.group(1), m.group(2)
+        closed, hyphen = (a + b).lower(), (a + "-" + b).lower()
+        n_closed = len(re.findall(r"\b%s" % re.escape(closed), text))
+        n_hyphen = len(re.findall(r"\b%s" % re.escape(hyphen), text))
+        if n_closed and not n_hyphen:
+            return a + b
+        if n_hyphen and not n_closed:
+            return a + "-" + b
+        return m.group(0)
+
+    return RE_HYPHEN_SPLIT.sub(decide, page)
 
 
 REF_NOTE_SLOT = "<!--reference-note-->"

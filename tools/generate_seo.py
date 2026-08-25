@@ -1012,6 +1012,24 @@ def main():
 
     sm = ['<?xml version="1.0" encoding="UTF-8"?>',
           '<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">']
+    # A path can be reached twice: /maive/how-to/ is both a project subpage and SELF_MANAGED.
+    # First entry wins, order preserved.
+    seen = set()
+    urls = [u for u in urls if not (u[0] in seen or seen.add(u[0]))]
+
+    # A sitemap should offer canonical URLs only. The komentare copies of the cross-posted
+    # notes point their canonical at /notes/<slug>/, so submitting both makes Search Console
+    # report every one of them as a duplicate that was not the chosen canonical.
+    def disowns_itself(loc):
+        rel = loc[len(BASE):].strip("/")
+        path = os.path.join(SITE, rel, "index.html") if rel else os.path.join(SITE, "index.html")
+        if not os.path.exists(path):
+            return False
+        m = re.search(r'<link rel="canonical" href="([^"]+)"',
+                      open(path, encoding="utf-8").read())
+        return bool(m) and m.group(1).rstrip("/") != loc.rstrip("/")
+
+    urls = [u for u in urls if not disowns_itself(u[0])]
     sm += [f"  <url><loc>{loc}</loc><lastmod>{lm}</lastmod></url>" for loc, lm in urls]
     sm.append("</urlset>\n")
     if undated:

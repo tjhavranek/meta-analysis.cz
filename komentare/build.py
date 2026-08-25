@@ -455,7 +455,7 @@ def shell(title, desc, canonical, jsonld, body, active, extra_head="", lang="cs"
 <meta property="og:locale" content="{"en_GB" if lang == "en" else "cs_CZ"}" />
 <meta property="og:title" content="{esc(title)}" />
 <meta property="og:description" content="{esc(desc)}" />
-<meta property="og:url" content="{canonical}" />
+<meta property="og:url" content="{canonical_link or canonical}" />
 {extra_head}<script type="application/ld+json">
 {json.dumps(jsonld, indent=1, ensure_ascii=False)}
 </script>
