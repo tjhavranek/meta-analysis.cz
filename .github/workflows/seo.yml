@@ -111,7 +111,9 @@ jobs:
       # This class of checker has caught real user-facing failures (a missing figure,
       # fragmented tables); it passes clean in about four minutes.
       - name: Verify the 55 full-text pages
-        run: python tools/check_paper_pages.py
+        run: |
+          sudo apt-get update -qq && sudo apt-get install -y -qq poppler-utils
+          python tools/check_paper_pages.py
 
       # Did this push touch the data layer? 09_verify proves the tree is internally
       # CONSISTENT; it cannot prove the tree FOLLOWS FROM its canonical inputs. A tree can be
