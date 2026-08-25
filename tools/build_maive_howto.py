@@ -267,10 +267,6 @@ p-hacking.</b> Besides effect and standard error, it also asks for sample size.<
 <code>n_obs</code> &middot; <code>study_id</code> (the latter is needed when a study reports
 several estimates, and inference then clusters on it)</p>
 
-<p class="aside">MAIVE instruments the standard error with sample size, so it assumes sample
-size was not itself chosen from the expected effect. Where it was, as in studies powered for a
-target effect, the instrument is invalid and MAIVE offers no advantage over plain PET-PEESE.</p>
-
 <p class="cta"><a class="button" href="https://www.easymeta.org/">Open EasyMeta</a>
 <a class="button quiet" href="/maive/how-to/alpha.csv">Download the example data
 (CSV)</a></p>
