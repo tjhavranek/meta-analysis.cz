@@ -475,14 +475,14 @@
    "name": "category",
    "normalized": "category",
    "dtype": "str",
-   "n_missing": 0,
-   "n_unique": 70,
+   "n_missing": 2698,
+   "n_unique": 69,
    "top_values": [
-    "",
     "NCP goods, kind of non-durables",
     "Medical care",
     "Transportation",
-    "Clothing"
+    "Clothing",
+    "Utilities"
    ]
   },
   {

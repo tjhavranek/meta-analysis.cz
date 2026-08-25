@@ -169,7 +169,7 @@
   "status": "ok",
   "rows": 3127,
   "cols": 75,
-  "parquet_bytes": 132510,
+  "parquet_bytes": 132503,
   "csv_bytes": 765010,
   "source": "excess.dta",
   "sheet": null
@@ -239,7 +239,7 @@
   "status": "ok",
   "rows": 606,
   "cols": 41,
-  "parquet_bytes": 42179,
+  "parquet_bytes": 42299,
   "csv_bytes": 108802,
   "source": "habit.dta",
   "sheet": null
@@ -259,7 +259,7 @@
   "status": "ok",
   "rows": 1785,
   "cols": 123,
-  "parquet_bytes": 263825,
+  "parquet_bytes": 264165,
   "csv_bytes": 1920684,
   "source": "house.dta",
   "sheet": null
@@ -279,7 +279,7 @@
   "status": "ok",
   "rows": 885,
   "cols": 179,
-  "parquet_bytes": 235269,
+  "parquet_bytes": 237322,
   "csv_bytes": 1399628,
   "source": "inflation_v34.dta",
   "sheet": null
@@ -359,7 +359,7 @@
   "status": "ok",
   "rows": 605,
   "cols": 112,
-  "parquet_bytes": 203262,
+  "parquet_bytes": 203376,
   "csv_bytes": 464555,
   "source": "resource_curse.dta",
   "sheet": null
@@ -399,7 +399,7 @@
   "status": "ok",
   "rows": 1746,
   "cols": 407,
-  "parquet_bytes": 303065,
+  "parquet_bytes": 303115,
   "csv_bytes": 1799055,
   "source": "size.dta",
   "sheet": null

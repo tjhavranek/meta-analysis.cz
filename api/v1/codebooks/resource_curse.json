@@ -349,14 +349,14 @@
    "name": "INST_TYPE",
    "normalized": "inst_type",
    "dtype": "str",
-   "n_missing": 0,
-   "n_unique": 28,
+   "n_missing": 157,
+   "n_unique": 27,
    "top_values": [
-    "",
     "rule of law",
     "ICRG",
     "Polity",
-    "gov.effect"
+    "gov.effect",
+    "RL01"
    ]
   },
   {
@@ -742,14 +742,14 @@
    "name": "LITERATURE",
    "normalized": "literature",
    "dtype": "str",
-   "n_missing": 0,
-   "n_unique": 43,
+   "n_missing": 563,
+   "n_unique": 42,
    "top_values": [
-    "",
     "Jeffrey D. Sachs & Andrew M. Warner, 1995. \"Natural Resource Abundance and Economic Growth,\" NBER Working Papers 5398, National Bureau of Economic Research, Inc.",
     "Gylfason, Thorvaldur, 1999. \"Exports, Inflation and Growth,\" World Development, Elsevier, vol. 27(6), pages 1031-1057, June.",
     "Gylfason, Thorvaldur, 2001. \"Natural resources, education, and economic development,\" European Economic Review, Elsevier, vol. 45(4-6), pages 847-859, May.",
-    "Hodler, Roland, 2006. \"The curse of natural resources in fractionalized countries,\" European Economic Review, Elsevier, vol. 50(6), pages 1367-1386, August."
+    "Hodler, Roland, 2006. \"The curse of natural resources in fractionalized countries,\" European Economic Review, Elsevier, vol. 50(6), pages 1367-1386, August.",
+    "Brunnschweiler, Christa N., 2008. \"Cursing the Blessings? Natural Resource Abundance, Institutions, and Economic Growth,\" World Development, Elsevier, vol. 36(3), pages 399-419, March."
    ]
   },
   {

@@ -135,14 +135,14 @@
    "name": "location",
    "normalized": "location",
    "dtype": "str",
-   "n_missing": 0,
-   "n_unique": 93,
+   "n_missing": 126,
+   "n_unique": 92,
    "top_values": [
-    "",
     "12",
     "34-35",
     "37-38",
-    "41-42"
+    "41-42",
+    "39-40"
    ]
   },
   {
@@ -183,14 +183,14 @@
    "name": "Model",
    "normalized": "model",
    "dtype": "str",
-   "n_missing": 0,
-   "n_unique": 10,
+   "n_missing": 126,
+   "n_unique": 9,
    "top_values": [
     "VAR",
-    "",
     "LBVAR",
     "SVAR",
-    "VECM"
+    "VECM",
+    "SVAR - VECM"
    ]
   },
   {
@@ -213,8 +213,8 @@
    "name": "brackets",
    "normalized": "brackets",
    "dtype": "str",
-   "n_missing": 0,
-   "n_unique": 9,
+   "n_missing": 63,
+   "n_unique": 8,
    "top_values": [
     "1SE",
     "68",
@@ -277,22 +277,22 @@
    "name": "Transmission_lags",
    "normalized": "transmission_lags",
    "dtype": "str",
-   "n_missing": 0,
-   "n_unique": 57,
+   "n_missing": 238,
+   "n_unique": 56,
    "top_values": [
     "20 quarters",
     "25 quarters",
     "24 quarters",
-    "",
-    "48M"
+    "48M",
+    "30 quarters"
    ]
   },
   {
    "name": "Journal",
    "normalized": "journal",
    "dtype": "str",
-   "n_missing": 0,
-   "n_unique": 36,
+   "n_missing": 2,
+   "n_unique": 35,
    "top_values": [
     "DNB Workig Paper",
     "Swiss National Bank",
@@ -570,28 +570,28 @@
    "name": "Start_orig",
    "normalized": "start_orig",
    "dtype": "str",
-   "n_missing": 0,
-   "n_unique": 56,
+   "n_missing": 102,
+   "n_unique": 55,
    "top_values": [
     "1986",
     "1979.3",
     "1980.1",
-    "",
-    "1987.4"
+    "1987.4",
+    "1975.1"
    ]
   },
   {
    "name": "End_orig",
    "normalized": "end_orig",
    "dtype": "str",
-   "n_missing": 0,
-   "n_unique": 43,
+   "n_missing": 102,
+   "n_unique": 42,
    "top_values": [
     "2007",
     "1998.4",
     "2008",
     "2008.4",
-    ""
+    "2006.4"
    ]
   },
   {
@@ -712,14 +712,14 @@
    "name": "list_of_vars",
    "normalized": "list_of_vars",
    "dtype": "str",
-   "n_missing": 0,
-   "n_unique": 45,
+   "n_missing": 228,
+   "n_unique": 44,
    "top_values": [
     "CPI, interest rate, real GDP, property prices, equity prices. Except for the interest rate, all variables are in logarithms.",
-    "",
     "CPI, interest rate, real GDP, property prices, real credit",
     "? Large scale; 143 macro variables, including 21 housing vars (for various regions??)",
-    "xt = (p, gdp; i;m; rental; house; flat; office; industry; s)"
+    "xt = (p, gdp; i;m; rental; house; flat; office; industry; s)",
+    "(i) real total private consumption, (ii) the consumer price index (CPI); (iii) real house prices (deflated using the CPI); (iv) the 3-month nominal interest rate, and (v) the real effective exchange rate."
    ]
   },
   {
@@ -1048,14 +1048,14 @@
    "name": "hpi_def",
    "normalized": "hpi_def",
    "dtype": "str",
-   "n_missing": 0,
-   "n_unique": 62,
+   "n_missing": 249,
+   "n_unique": 61,
    "top_values": [
     "real HP",
-    "",
     "Mix",
     "Residental property prices",
-    "single family ecisting houses sales prices?, real, deflated by personal cons exp defl"
+    "single family ecisting houses sales prices?, real, deflated by personal cons exp defl",
+    "real house price"
    ]
   },
   {
@@ -1079,42 +1079,42 @@
    "name": "hpi_source",
    "normalized": "hpi_source",
    "dtype": "str",
-   "n_missing": 0,
-   "n_unique": 51,
+   "n_missing": 276,
+   "n_unique": 50,
    "top_values": [
     "BIS, IMF",
-    "",
     "OECD",
     "BIS",
-    "National Asscociation of Realtors"
+    "National Asscociation of Realtors",
+    "flats per sqm"
    ]
   },
   {
    "name": "ir_def",
    "normalized": "ir_def",
    "dtype": "str",
-   "n_missing": 0,
-   "n_unique": 36,
+   "n_missing": 689,
+   "n_unique": 35,
    "top_values": [
-    "",
     "three-month interbank rate, three-month Treasury bill rate, three-month commercial paper rate, three-month EURIBOR rate; All interest rates are from the OECD's MEI",
     "three-month interbank rate, three-month Treasury bill rate, three-month commercial paper rate, three-month EURIBOR rate",
     "FF rate",
-    "the three-month target libor rate"
+    "the three-month target libor rate",
+    "3-month nominal interest rate"
    ]
   },
   {
    "name": "regimes",
    "normalized": "regimes",
    "dtype": "str",
-   "n_missing": 0,
-   "n_unique": 9,
+   "n_missing": 293,
+   "n_unique": 8,
    "top_values": [
     "0",
-    "",
     "1",
     "2 (fin crisis / normal time",
-    "parameter uncertainty"
+    "parameter uncertainty",
+    "high IMF index"
    ]
   },
   {
@@ -1307,11 +1307,10 @@
    "name": "LevVAR",
    "normalized": "levvar",
    "dtype": "str",
-   "n_missing": 0,
-   "n_unique": 4,
+   "n_missing": 552,
+   "n_unique": 3,
    "top_values": [
     "0",
-    "",
     "1",
     "1 probably"
    ]
@@ -1320,11 +1319,10 @@
    "name": "LogVAR",
    "normalized": "logvar",
    "dtype": "str",
-   "n_missing": 0,
-   "n_unique": 4,
+   "n_missing": 235,
+   "n_unique": 3,
    "top_values": [
     "1",
-    "",
     "?",
     "0"
    ]
@@ -1435,14 +1433,14 @@
    "name": "other_ident",
    "normalized": "other_ident",
    "dtype": "str",
-   "n_missing": 0,
-   "n_unique": 17,
+   "n_missing": 641,
+   "n_unique": 16,
    "top_values": [
     "0",
-    "",
     "recursive",
     "short and long run restrictions (King)",
-    "contemporaneous, non-recursive, Elbourne (2008)"
+    "contemporaneous, non-recursive, Elbourne (2008)",
+    "long run and short run restrictions - asi - permanent and transitory shocks, transitory: recursive"
    ]
   },
   {
@@ -1498,10 +1496,9 @@
    "name": "city",
    "normalized": "city",
    "dtype": "str",
-   "n_missing": 0,
-   "n_unique": 2,
+   "n_missing": 1773,
+   "n_unique": 1,
    "top_values": [
-    "",
     "10 major metropolitan areas"
    ]
   },
@@ -1509,24 +1506,23 @@
    "name": "housing_type",
    "normalized": "housing_type",
    "dtype": "str",
-   "n_missing": 0,
-   "n_unique": 11,
+   "n_missing": 1474,
+   "n_unique": 10,
    "top_values": [
-    "",
     "type of housing that is included (single family houses, flats or all types), whether existing dwellings or new dwellings are considered, whether prices are per dwelling or per square meter, and the region (urban, non-urban or both) where the data is collected",
     "rental; house; flat; office; industry",
     "one-family houses",
-    "rent index, index with of residential construction cost"
+    "rent index, index with of residential construction cost",
+    "All-size house price "
    ]
   },
   {
    "name": "developed",
    "normalized": "developed",
    "dtype": "str",
-   "n_missing": 0,
-   "n_unique": 2,
+   "n_missing": 1722,
+   "n_unique": 1,
    "top_values": [
-    "",
     "several industrialized countries"
    ]
   },
@@ -1534,56 +1530,56 @@
    "name": "comment",
    "normalized": "comment",
    "dtype": "str",
-   "n_missing": 0,
-   "n_unique": 50,
+   "n_missing": 1020,
+   "n_unique": 49,
    "top_values": [
-    "",
     "panel VAR",
     "Stock and Watson (2005) dataset",
     "common trend model",
-    "unclear whether in logs"
+    "unclear whether in logs",
+    "sample and model uncertainty"
    ]
   },
   {
    "name": "comment_1",
    "normalized": "comment_1",
    "dtype": "str",
-   "n_missing": 0,
-   "n_unique": 14,
+   "n_missing": 1675,
+   "n_unique": 13,
    "top_values": [
-    "",
     "v modelu interest rate i mortgage rate; \u0161oky jsou d\u011blan\u00e9 takt\u00e9\u017e na interest rate i mortgage rate",
     "mean-group estimator",
     "v modelu je interest rate I mortgage rate a jejich vz\u00e1jemn\u00e9 \u0161oky",
-    "mean-group estimator,"
+    "mean-group estimator,",
+    "fixed-effect estimator"
    ]
   },
   {
    "name": "comment_2",
    "normalized": "comment_2",
    "dtype": "str",
-   "n_missing": 0,
-   "n_unique": 6,
+   "n_missing": 1395,
+   "n_unique": 5,
    "top_values": [
-    "",
     "bootstrap",
     "house",
     "flat",
-    "response in %"
+    "response in %",
+    "Monte Carlo Integration"
    ]
   },
   {
    "name": "concat",
    "normalized": "concat",
    "dtype": "str",
-   "n_missing": 0,
-   "n_unique": 142,
+   "n_missing": 227,
+   "n_unique": 141,
    "top_values": [
-    "",
     "Switzerland19872008",
     "19 countries, Calza19802008",
     "Italy19702008",
-    "South Africa19752009"
+    "South Africa19752009",
+    "20 OECD countries, Jannsen19842016"
    ]
   },
   {

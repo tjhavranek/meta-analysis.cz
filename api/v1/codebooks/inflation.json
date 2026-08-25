@@ -44,8 +44,8 @@
    "name": "Title",
    "normalized": "title",
    "dtype": "str",
-   "n_missing": 0,
-   "n_unique": 130,
+   "n_missing": 3,
+   "n_unique": 129,
    "top_values": [
     "Optimal long-run inflation with occasionally binding financial constraints",
     "Revisiting the optimal inflation rate with downward nominal wage rigidity: The role of heterogeneity",
@@ -72,8 +72,8 @@
    "name": "Author_Affiliation",
    "normalized": "author_affiliation",
    "dtype": "str",
-   "n_missing": 0,
-   "n_unique": 116,
+   "n_missing": 3,
+   "n_unique": 115,
    "top_values": [
     "Texas Tech University",
     "International Monetary Fund",
@@ -86,14 +86,14 @@
    "name": "Journal_Name",
    "normalized": "journal_name",
    "dtype": "str",
-   "n_missing": 0,
-   "n_unique": 45,
+   "n_missing": 143,
+   "n_unique": 44,
    "top_values": [
-    "",
     "Journal of Monetary Economics",
     "Journal of Economic Dynamics & Control",
     "Journal of Money, Credit and Banking",
-    "European Economic Review"
+    "European Economic Review",
+    "Review of Economic Dynamics"
    ]
   },
   {
@@ -132,36 +132,33 @@
    "name": "Model_Class",
    "normalized": "model_class",
    "dtype": "str",
-   "n_missing": 0,
-   "n_unique": 2,
+   "n_missing": 18,
+   "n_unique": 1,
    "top_values": [
-    "DSGE",
-    ""
+    "DSGE"
    ]
   },
   {
    "name": "Model_Paradigm",
    "normalized": "model_paradigm",
    "dtype": "str",
-   "n_missing": 0,
-   "n_unique": 2,
+   "n_missing": 24,
+   "n_unique": 1,
    "top_values": [
-    "New Keynesian",
-    ""
+    "New Keynesian"
    ]
   },
   {
    "name": "Publication_Status",
    "normalized": "publication_status",
    "dtype": "str",
-   "n_missing": 0,
-   "n_unique": 5,
+   "n_missing": 3,
+   "n_unique": 4,
    "top_values": [
     "published",
     "working_paper",
     "NBER_WP",
-    "preprint",
-    ""
+    "preprint"
    ]
   },
   {
@@ -185,8 +182,8 @@
    "name": "Augmentation_Description",
    "normalized": "augmentation_description",
    "dtype": "str",
-   "n_missing": 0,
-   "n_unique": 129,
+   "n_missing": 5,
+   "n_unique": 128,
    "top_values": [
     "New Keynesian model with occasionally binding collateral constraints on intermediate-good firms hiring labor. Entrepreneurs face hold-up problem requiring collateral to back wage payments. Financial friction arises from constraint that hiring l",
     "New Keynesian DSGE model with heterogeneous workers differing in labor productivity, asymmetric wage adjustment costs capturing downward nominal wage rigidity (DNWR), Calvo price stickiness with non-zero steady-state inflation, job changes with",
@@ -199,14 +196,14 @@
    "name": "Augmentation_Category",
    "normalized": "augmentation_category",
    "dtype": "str",
-   "n_missing": 0,
-   "n_unique": 8,
+   "n_missing": 479,
+   "n_unique": 7,
    "top_values": [
-    "",
     "fiscal_policy",
     "financial_frictions",
     "heterogeneous_agents",
-    "labor_market_frictions"
+    "labor_market_frictions",
+    "ZLB"
    ]
   },
   {
@@ -298,22 +295,22 @@
    "name": "HH_Maximization_Type",
    "normalized": "hh_maximization_type",
    "dtype": "str",
-   "n_missing": 0,
-   "n_unique": 7,
+   "n_missing": 14,
+   "n_unique": 6,
    "top_values": [
     "expected utility",
-    "",
     "recursive utility",
     "Epstein-Zin recursive utility",
-    "recursive non-expected utility with ambiguity aversion"
+    "recursive non-expected utility with ambiguity aversion",
+    "intertemporal utility maximization"
    ]
   },
   {
    "name": "HH_Maximized_Vars",
    "normalized": "hh_maximized_vars",
    "dtype": "str",
-   "n_missing": 0,
-   "n_unique": 50,
+   "n_missing": 14,
+   "n_unique": 49,
    "top_values": [
     "consumption, labor",
     "consumption, leisure",
@@ -326,8 +323,8 @@
    "name": "Producer_Type",
    "normalized": "producer_type",
    "dtype": "str",
-   "n_missing": 0,
-   "n_unique": 55,
+   "n_missing": 22,
+   "n_unique": 54,
    "top_values": [
     "intermediate firms, final firms",
     "intermediate goods firms, final goods firms",
@@ -340,14 +337,14 @@
    "name": "Producer_Assumption",
    "normalized": "producer_assumption",
    "dtype": "str",
-   "n_missing": 0,
-   "n_unique": 110,
+   "n_missing": 22,
+   "n_unique": 109,
    "top_values": [
     "intermediate firms: monopolistic competition with Calvo pricing; final firms: perfect competition with CES aggregation",
     "intermediate firms: monopolistic competition with Calvo pricing; final firms: perfect competition with Dixit-Stiglitz aggregation",
     "intermediate-good firms: linear production in labor, face collateral constraint on hiring; final-good firms: monopolistic competition, Rotemberg quadratic price adjustment costs",
     "intermediate firms: monopolistic competition with Calvo pricing; final firms: perfect competition",
-    ""
+    "intermediate firms: monopolistic competition with Rotemberg price adjustment costs; final firms: perfect competition"
    ]
   },
   {
@@ -371,14 +368,14 @@
    "name": "Other_Agent_Assumptions",
    "normalized": "other_agent_assumptions",
    "dtype": "str",
-   "n_missing": 0,
-   "n_unique": 30,
+   "n_missing": 633,
+   "n_unique": 29,
    "top_values": [
-    "",
     "labor unions set wages subject to Calvo wage stickiness",
     "Entrepreneurs: more impatient than households (additional discount factor delta), accumulate net worth via share purchases, remit profits to households lump-sum",
     "Central bank follows Taylor rule responding to inflation and output gap",
-    "Labor union supplies labor monopolistically to a continuum of labor markets with Calvo wage setting and indexation to past inflation"
+    "Labor union supplies labor monopolistically to a continuum of labor markets with Calvo wage setting and indexation to past inflation",
+    "financial intermediary providing working capital loans to firms for all variable inputs"
    ]
   },
   {
@@ -402,28 +399,27 @@
    "name": "Country",
    "normalized": "country",
    "dtype": "str",
-   "n_missing": 0,
-   "n_unique": 14,
+   "n_missing": 72,
+   "n_unique": 13,
    "inferred_role": "country",
    "inferred_role_confidence": "name-match only, not verified",
    "top_values": [
     "US",
-    "",
     "euro area",
     "US and EA",
-    "Euro Area"
+    "Euro Area",
+    "small open economy"
    ]
   },
   {
    "name": "Calibration_Frequency",
    "normalized": "calibration_frequency",
    "dtype": "str",
-   "n_missing": 0,
-   "n_unique": 4,
+   "n_missing": 39,
+   "n_unique": 3,
    "top_values": [
     "Q",
     "A",
-    "",
     "M"
    ]
   },
@@ -431,8 +427,8 @@
    "name": "Nominal_Friction_Type",
    "normalized": "nominal_friction_type",
    "dtype": "str",
-   "n_missing": 0,
-   "n_unique": 9,
+   "n_missing": 12,
+   "n_unique": 8,
    "top_values": [
     "Calvo_prices",
     "Rotemberg_prices",
@@ -445,8 +441,8 @@
    "name": "Wage_Rigidity_Type",
    "normalized": "wage_rigidity_type",
    "dtype": "str",
-   "n_missing": 0,
-   "n_unique": 9,
+   "n_missing": 14,
+   "n_unique": 8,
    "top_values": [
     "none",
     "Calvo_wages",
@@ -459,8 +455,8 @@
    "name": "Money_Demand_Tech",
    "normalized": "money_demand_tech",
    "dtype": "str",
-   "n_missing": 0,
-   "n_unique": 6,
+   "n_missing": 20,
+   "n_unique": 5,
    "top_values": [
     "cashless",
     "MIU",
@@ -473,11 +469,10 @@
    "name": "Indexation_Type",
    "normalized": "indexation_type",
    "dtype": "str",
-   "n_missing": 0,
-   "n_unique": 5,
+   "n_missing": 129,
+   "n_unique": 4,
    "top_values": [
     "none",
-    "",
     "past_inflation",
     "hybrid",
     "trend_inflation"
@@ -747,14 +742,14 @@
    "name": "Results_Table",
    "normalized": "results_table",
    "dtype": "str",
-   "n_missing": 0,
-   "n_unique": 354,
+   "n_missing": 29,
+   "n_unique": 353,
    "top_values": [
     "Table 2",
-    "",
     "Table 5 p.32",
     "Table 3",
-    "Table 5 p.26"
+    "Table 5 p.26",
+    "Table 2 p.17"
    ]
   },
   {
@@ -777,11 +772,10 @@
    "name": "Inflation_Unit",
    "normalized": "inflation_unit",
    "dtype": "str",
-   "n_missing": 0,
-   "n_unique": 5,
+   "n_missing": 91,
+   "n_unique": 4,
    "top_values": [
     "annual_pct",
-    "",
     "quarterly_pct",
     "monthly_pct",
     "unknown"
@@ -791,12 +785,11 @@
    "name": "Horizon",
    "normalized": "horizon",
    "dtype": "str",
-   "n_missing": 0,
-   "n_unique": 3,
+   "n_missing": 18,
+   "n_unique": 2,
    "top_values": [
     "long_run",
-    "short_run",
-    ""
+    "short_run"
    ]
   },
   {
@@ -882,14 +875,14 @@
    "name": "Reason_for_Preferred",
    "normalized": "reason_for_preferred",
    "dtype": "str",
-   "n_missing": 0,
-   "n_unique": 131,
+   "n_missing": 755,
+   "n_unique": 130,
    "top_values": [
-    "",
     "Authors emphasize this as the main result for optimal inflation with DNWR and no money demand motive",
     "Authors describe as the main finding of the article - full model with all frictions",
     "Benchmark calibration with TFP shock, main result discussed throughout paper",
-    "Authors describe this as the most expanded model with all frictions; used as benchmark for welfare analyses in Table 4"
+    "Authors describe this as the most expanded model with all frictions; used as benchmark for welfare analyses in Table 4",
+    "Authors describe this as the key quantitative result for optimal policy response to binding ZLB shocks in Section 5.2"
    ]
   },
   {
@@ -912,10 +905,9 @@
    "name": "SE_Derivation",
    "normalized": "se_derivation",
    "dtype": "str",
-   "n_missing": 0,
-   "n_unique": 2,
+   "n_missing": 870,
+   "n_unique": 1,
    "top_values": [
-    "",
     "from_CI"
    ]
   },
@@ -969,40 +961,39 @@
    "name": "Shock_Type",
    "normalized": "shock_type",
    "dtype": "str",
-   "n_missing": 0,
-   "n_unique": 10,
+   "n_missing": 257,
+   "n_unique": 9,
    "top_values": [
     "Multiple",
-    "",
     "TFP",
     "Risk_premium",
-    "Cost_push"
+    "Cost_push",
+    "Markup"
    ]
   },
   {
    "name": "Welfare_Criterion",
    "normalized": "welfare_criterion",
    "dtype": "str",
-   "n_missing": 0,
-   "n_unique": 6,
+   "n_missing": 79,
+   "n_unique": 5,
    "top_values": [
     "unconditional",
-    "",
     "second_order_approx",
     "conditional_efficient_SS",
-    "consumption_equivalent"
+    "consumption_equivalent",
+    "first_order_approx"
    ]
   },
   {
    "name": "Steady_State_Type",
    "normalized": "steady_state_type",
    "dtype": "str",
-   "n_missing": 0,
-   "n_unique": 4,
+   "n_missing": 8,
+   "n_unique": 3,
    "top_values": [
     "stochastic",
     "deterministic",
-    "",
     "transition"
    ]
   },
@@ -1088,24 +1079,22 @@
    "name": "Estimator_Type",
    "normalized": "estimator_type",
    "dtype": "str",
-   "n_missing": 0,
-   "n_unique": 4,
+   "n_missing": 1,
+   "n_unique": 3,
    "top_values": [
     "calibration",
     "Bayesian",
-    "GMM",
-    ""
+    "GMM"
    ]
   },
   {
    "name": "Impact_Factor_Source",
    "normalized": "impact_factor_source",
    "dtype": "str",
-   "n_missing": 0,
-   "n_unique": 2,
+   "n_missing": 17,
+   "n_unique": 1,
    "top_values": [
-    "OpenAlex_2yr_mean_citedness",
-    ""
+    "OpenAlex_2yr_mean_citedness"
    ]
   },
   {
@@ -1155,10 +1144,9 @@
    "name": "Outlier_Flag",
    "normalized": "outlier_flag",
    "dtype": "str",
-   "n_missing": 0,
-   "n_unique": 3,
+   "n_missing": 879,
+   "n_unique": 2,
    "top_values": [
-    "",
     "legit_high_inflation: Cooley-Hansen 1989 high-inflation steady state",
     "extreme_value"
    ]
@@ -1167,10 +1155,9 @@
    "name": "Manual_Review_Required",
    "normalized": "manual_review_required",
    "dtype": "str",
-   "n_missing": 0,
-   "n_unique": 2,
+   "n_missing": 884,
+   "n_unique": 1,
    "top_values": [
-    "",
     "Kollmann 2008 row 5: value 13.24 is SD of inflation, not optimal \u03c0 \u2014 exclude or relabel"
    ]
   },

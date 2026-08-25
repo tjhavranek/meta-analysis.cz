@@ -48,11 +48,22 @@ def clean_for_parquet(df):
         else: seen[n]=0
         cols.append(n)
     df.columns=cols
-    for c in df.columns:                                  # object -> numeric where clean, else str
+    # object -> numeric where clean, else str. Unchanged: this is what has always run for
+    # the Excel-sourced files, and dropping it would turn real numeric columns into text.
+    for c in df.columns:
         if df[c].dtype==object:
             num=pd.to_numeric(df[c],errors="coerce")
             if num.notna().sum()>=0.95*df[c].notna().sum() and df[c].notna().sum()>0: df[c]=num
             else: df[c]=df[c].astype(str).replace({"nan":None,"None":None,"":None})
+        elif str(df[c].dtype)=="str":
+            # pandas 3 reads text as dtype "str", not "object", so the guard above never saw
+            # the Stata-sourced columns and their string-missing ("" in the .dta) stayed in
+            # the Parquet while a CSV reader saw NaN. Normalise the missing values only: the
+            # numeric coercion above is deliberately not applied here, because at its 95%
+            # threshold it silently turns the other 5% into NaN, which on size alone would
+            # destroy 153 real values across industry, trim3, penny_stock, size_quint and
+            # comment4.
+            df[c]=df[c].where(~df[c].isin(["", "nan", "None"]), None)
     return df
 
 VERIFIED_ROLES={"effect_estimate","standard_error"}   # set from the resolved mapping, not a guess

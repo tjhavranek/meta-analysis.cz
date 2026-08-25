@@ -124,14 +124,14 @@
    "name": "size_other_comment",
    "normalized": "size_other_comment",
    "dtype": "str",
-   "n_missing": 0,
-   "n_unique": 16,
+   "n_missing": 1624,
+   "n_unique": 15,
    "top_values": [
-    "",
     "relative to average market value of all securities",
     "rank of the portfolio",
     "the time-series average of the natural log of the ratio ofthe portfolio\u0092s market capitalization at the beginning of the month to the totalmarket capitalization",
-    "size relative to local market"
+    "size relative to local market",
+    "time average of lnMV of each portfolio oveer the whole period"
    ]
   },
   {
@@ -206,16 +206,16 @@
    "name": "tstat_type_comment",
    "normalized": "tstat_type_comment",
    "dtype": "str",
-   "n_missing": 0,
-   "n_unique": 8,
+   "n_missing": 1638,
+   "n_unique": 7,
    "inferred_role": "t_stat",
    "inferred_role_confidence": "name-match only, not verified",
    "top_values": [
-    "",
     "autocorrelation-adjusted",
     "standard errors are corrected as per Shanken (1992)",
     "adj. for autocorrelation as in Cooper, Gulen, Schill (2008)",
-    "0"
+    "0",
+    "adjusted for serial autocorrelation and heteroscedasticity"
    ]
   },
   {
@@ -6712,10 +6712,9 @@
    "name": "PE",
    "normalized": "pe",
    "dtype": "str",
-   "n_missing": 0,
-   "n_unique": 2,
+   "n_missing": 1745,
+   "n_unique": 1,
    "top_values": [
-    "",
     "x"
    ]
   },

@@ -597,14 +597,14 @@
    "name": "matched",
    "normalized": "matched",
    "dtype": "str",
-   "n_missing": 0,
-   "n_unique": 57,
+   "n_missing": 453,
+   "n_unique": 56,
    "top_values": [
-    "",
     "Output, inflation, interest rate",
     " output, inflation, changes in import price,  nominal interest rates,  terms of trade, nominal exchange rate",
     "real GDP, real consumption, the GDP deflator, real investment, the real wage, and labor productivity, real profits,  growth rate of M2, interest rate",
-    "Real output, consumption,  real wage, hours worked, interest rate, investment, inflation"
+    "Real output, consumption,  real wage, hours worked, interest rate, investment, inflation",
+    "log real private output,  inflation rate,nominal interest rate and  log real output gap"
    ]
   },
   {
@@ -627,14 +627,14 @@
    "name": "observables",
    "normalized": "observables",
    "dtype": "str",
-   "n_missing": 0,
-   "n_unique": 54,
+   "n_missing": 453,
+   "n_unique": 53,
    "top_values": [
-    "",
     "Output, inflation, interest rate",
     " output, inflation, changes in import price,  nominal interest rates,  terms of trade, nominal exchange rate",
     "real GDP, real consumption, the GDP deflator, real investment, the real wage, and labor productivity, real profits,  growth rate of M2, interest rate",
-    "Real output, consumption,  real wage, hours worked, interest rate, investment, inflation"
+    "Real output, consumption,  real wage, hours worked, interest rate, investment, inflation",
+    "log real private output,  inflation rate,nominal interest rate and  log real output gap"
    ]
   },
   {
