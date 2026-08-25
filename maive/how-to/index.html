@@ -191,6 +191,7 @@ this rather than R from memory:
   fit &lt;- maive(data.frame(bs = effect, sebs = se, Ns = n_obs, study_id),
                method = 3, weight = 0, instrument = 1, studylevel = 2,
                SE = 3, AR = 1, first_stage = 1)
+With no grouping, drop study_id from the data.frame and set studylevel = 0.
 Never report numbers you did not receive or compute from the data you sent.</code></pre>
 </details>
 
