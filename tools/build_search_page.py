@@ -126,14 +126,17 @@ SCRIPT = r"""
 
   function mark(text, want) {
     var esc = document.createElement("div");
-    esc.textContent = text;
-    var s = esc.innerHTML;
-    want.forEach(function (w) {
-      if (w.length < 2) return;
-      s = s.replace(new RegExp("(" + w.replace(/[.*+?^${}()|[\]\\]/g, "\\$&") + ")", "gi"),
-                    "<mark>$1</mark>");
-    });
-    return s;
+    function escHtml(t) { esc.textContent = t; return esc.innerHTML; }
+    // Split the RAW text on the terms, escape each piece, wrap the hits. Escaping first
+    // and matching after let a term land inside an entity ("mp" inside &amp;), and a
+    // per-term loop re-ran replace over its own inserted tags.
+    var words = want.filter(function (w) { return w.length >= 2; })
+      .sort(function (a, b) { return b.length - a.length; })
+      .map(function (w) { return w.replace(/[.*+?^${}()|[\]\\]/g, "\\$&"); });
+    if (!words.length) return escHtml(text);
+    return text.split(new RegExp("(" + words.join("|") + ")", "gi"))
+      .map(function (p, i) { return i % 2 ? "<mark>" + escHtml(p) + "</mark>" : escHtml(p); })
+      .join("");
   }
 
   var KIND = { paper: "full text", note: "research note", data: "data", page: "" };
@@ -212,6 +215,11 @@ PAGE = """<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" \
 54 papers in full, the research notes, the datasets and the guidelines. \
 The search runs in your browser; nothing is sent anywhere." />
 <link rel="canonical" href="https://meta-analysis.cz/search/" />
+<meta property="og:site_name" content="meta-analysis.cz" />
+<meta property="og:type" content="website" />
+<meta property="og:title" content="Search meta-analysis.cz" />
+<meta property="og:description" content="Full-text search over the site: 54 papers in full, the research notes, the datasets and the guidelines." />
+<meta property="og:url" content="https://meta-analysis.cz/search/" />
 <link href="/style.css" rel="stylesheet" type="text/css" />
 <link href="/paper.css" rel="stylesheet" type="text/css" />
 </head>

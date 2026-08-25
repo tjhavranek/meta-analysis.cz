@@ -38,6 +38,7 @@ def sections(path):
 def build():
     papers = {p["project"]: p for p in json.load(
         open(os.path.join(ROOT, "tools", "papers.json"), encoding="utf-8"))}
+    paper_projects = set(papers)
     papers.update(documents())
     try:
         cat = {d["id"]: d for d in json.load(
@@ -58,6 +59,7 @@ def build():
         doi = (meta.get("doi_or_publisher_url") or "")
         rec = {
             "project": proj,
+            "document_type": "paper" if proj in paper_projects else "supplement",
             "title": article_title(meta),
             "authors": meta.get("authors") or [],
             "year": meta.get("year"),
@@ -82,20 +84,36 @@ def build():
             rec["codebook_url"] = files.get("codebook")
         records.append(rec)
 
+    n_papers = sum(1 for r in records if r["document_type"] == "paper")
     out = {
         "name": "meta-analysis.cz papers",
-        "description": ("One record per paper republished in full on meta-analysis.cz: what it "
-                        "is, where its full text and PDF are, and the sections it contains. "
-                        "Fetch this first and one page after, rather than the whole corpus."),
+        "description": ("One record per full-text document on meta-analysis.cz: %d papers "
+                        "plus the MAIVE supplement, each with its full text, PDF and section "
+                        "map. Fetch this first and one page after, rather than the whole "
+                        "corpus." % n_papers),
         "license": "https://creativecommons.org/licenses/by/4.0/",
         "full_corpus": BASE + "/llms-full.txt",
         "count": len(records),
+        "paper_count": n_papers,
+        "supplement_count": len(records) - n_papers,
         "papers": records,
     }
+    for r in records:
+        ids = [x.get("anchor") for x in r["sections"] if x.get("anchor")]
+        dup = {i for i in ids if ids.count(i) > 1}
+        if dup:
+            raise SystemExit("papers.json: duplicate section anchors in %s: %s"
+                             % (r["project"], sorted(dup)))
     path = os.path.join(ROOT, "api", "v1", "papers.json")
+    fresh = json.dumps(out, indent=1, ensure_ascii=False) + "\n"
+    if "--check" in sys.argv:
+        on_disk = open(path, encoding="utf-8").read() if os.path.exists(path) else ""
+        if on_disk != fresh:
+            raise SystemExit("papers.json is stale: rebuild with tools/build_papers_api.py")
+        print("papers.json: matches a fresh build (%d documents)" % len(records))
+        return
     with open(path, "w", encoding="utf-8") as fh:
-        json.dump(out, fh, indent=1, ensure_ascii=False)
-        fh.write("\n")
+        fh.write(fresh)
     secs = sum(len(r["sections"]) for r in records)
     print("api/v1/papers.json: %d papers, %d sections, %d with a headline question"
           % (len(records), secs, sum(1 for r in records if r.get("headline_question"))))

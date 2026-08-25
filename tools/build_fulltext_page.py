@@ -83,6 +83,13 @@ def build():
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>Papers in Full</title>
 <meta name="description" content="{lede}: {n} papers as HTML, with their text, tables, equations and references, readable without a PDF." />
+<link rel="canonical" href="https://meta-analysis.cz/papers/" />
+<meta property="og:site_name" content="meta-analysis.cz" />
+<meta property="og:type" content="website" />
+<meta property="og:title" content="Papers in Full" />
+<meta property="og:description" content="{lede}: {n} papers as HTML, with their text, tables, equations and references, readable without a PDF." />
+<meta property="og:url" content="https://meta-analysis.cz/papers/" />
+<script type="application/ld+json">{jsonld}</script>
 <link href="/style.css" rel="stylesheet" type="text/css" />
 <link href="/paper.css" rel="stylesheet" type="text/css" />
 </head>
@@ -91,7 +98,7 @@ def build():
 <!-- start header -->
 <div id="logo">
 \t<a class="masthead-home" href="/">meta-analysis.cz</a>
-\t<p class="site-name"><a href="/papers/">Papers in full</a></p>
+\t<h1 class="site-name"><a href="/papers/">Papers in full</a></h1>
 \t<h2> <span class="mk">&raquo;</span>&nbsp;&nbsp;&nbsp; read them without a PDF</h2>
 </div>
 <div id="header">
@@ -134,9 +141,10 @@ picture.</p>
 </html>
 """
     from build_paper_page import load_footer
-    # Kept for reference: tools/generate_seo.py writes the canonical URL, the Open Graph
-    # tags and the JSON-LD for every page it manages, and this is one of them.
-    _ld_handled_by_generate_seo = {
+    # The page is SELF_MANAGED: this builder owns its head, and this block is embedded in it.
+    # An earlier comment claimed generate_seo would write it; it never did, and /papers/ was
+    # the one page of the site with a bare head.
+    ld = {
         "@context": "https://schema.org",
         "@type": "CollectionPage",
         "@id": "https://meta-analysis.cz/papers/#page",
@@ -148,17 +156,22 @@ picture.</p>
                      "name": r[1],
                      "url": "https://meta-analysis.cz%s" % r[3]} for r in rows],
     }
-    dirs = [os.path.join(ROOT, r[2], "paper", "figures") for r in rows]
-    dirs += [os.path.join(ROOT, page_href(pj, d).strip("/"), "figures")
-             for pj, d in documents().items()]
-    figs = sum(len([f for f in os.listdir(d) if f.endswith(".png")])
-               for d in dirs if os.path.isdir(d))
+    # The sentence on the page is about the papers it lists, so the count is what those
+    # pages actually show: <figure> elements in the built HTML. Counting directory PNGs
+    # silently swept in the MAIVE supplement's 29 and orphaned files, which is how the
+    # page came to claim 227 where a reader can count 198.
+    figs = 0
+    for r in rows:
+        built = os.path.join(ROOT, r[3].strip("/"), "index.html")
+        if os.path.exists(built):
+            figs += open(built, encoding="utf-8").read().count("<figure")
     # "All 54" only while it IS all of them. The moment a paper is added without a
     # conversion the sentence would be false, so the page counts rather than asserts.
     lede = ("All %d papers on this site are here in full" % len(rows)
             if len(rows) >= len(PAPERS)
             else "%d of the %d papers on this site are here in full" % (len(rows), len(PAPERS)))
-    out = page.format(n=len(rows), lede=lede, listed=listed, figs=figs, footer=load_footer())
+    out = page.format(n=len(rows), lede=lede, listed=listed, figs=figs, footer=load_footer(),
+                      jsonld=json.dumps(ld, ensure_ascii=False, separators=(",", ":")))
     outdir = os.path.join(ROOT, "papers")
     os.makedirs(outdir, exist_ok=True)
     with open(os.path.join(outdir, "index.html"), "w") as fh:

@@ -108,9 +108,23 @@ AUTHOR_IDS = {
     "zuzana havrankova": "https://orcid.org/0000-0002-0753-8124",
 }
 
+# The canonical entities live on the homepage graph. Every author node that names one of
+# the two owners points at them, so a machine sees one Tomas across papers, datasets,
+# notes and the Czech archive instead of dozens of disconnected Person objects.
+CANONICAL_PERSON = {
+    "tomas havranek": BASE + "/#th",
+    "t havranek": BASE + "/#th",
+    "zuzana irsova": BASE + "/#zi",
+    "zuzana havrankova": BASE + "/#zi",
+    "zuzana irsova havrankova": BASE + "/#zi",
+}
+
+
 def person(name):
     p = {"@type": "Person", "name": name}
     key = re.sub(r"[^a-z ]", "", (name or "").lower()).strip()
+    if key in CANONICAL_PERSON:
+        p["@id"] = CANONICAL_PERSON[key]
     if key in AUTHOR_IDS:
         p["sameAs"] = AUTHOR_IDS[key]
     return p
@@ -774,15 +788,14 @@ def main():
          # hockey player, and cs.wikipedia's undisambiguated title is a disambiguation
          # page listing three men — never link either.
          "publisher": {"@type": "Person", "@id": BASE + "/#th", "name": "Tomas Havranek",
-                       "alternateName": ["Tomáš Havránek"],
+                       "alternateName": ["Tomáš Havránek", "T. Havranek"],
                        # /about/ states the rank in prose and in its own Person node; the
                        # homepage node merges with it on @id, so it carries the same jobTitle.
                        "jobTitle": "Professor of Economics",
                        "affiliation": {"@type": "Organization", "name": "Charles University, Prague"},
                        "url": "https://www.tomashavranek.cz",
                        "sameAs": ["https://orcid.org/0000-0002-3158-2539",
-                                  "https://www.wikidata.org/entity/Q41800151",
-                                  "https://openalex.org/A5086665090"]},
+                                  "https://www.wikidata.org/entity/Q41800151"]},
          "contributor": [
              {"@id": BASE + "/#th"},
              {"@type": "Person", "@id": BASE + "/#zi", "name": "Zuzana Irsova",
@@ -796,8 +809,7 @@ def main():
               "affiliation": {"@type": "Organization", "name": "Charles University, Prague"},
               "url": "https://www.irsova.com",
               "sameAs": ["https://orcid.org/0000-0002-0753-8124",
-                         "https://www.wikidata.org/entity/Q41799025",
-                         "https://openalex.org/A5072893157"]}]},
+                         "https://www.wikidata.org/entity/Q41799025"]}]},
         # One creator on the list, not an author array repeated across 52 ListItems: the Person
         # nodes are already defined above, so a reference costs nothing and says the same thing.
         # (Site audit, 2026-08-04: the list carried only url and name per paper.)
@@ -809,7 +821,7 @@ def main():
         '<meta property="og:site_name" content="meta-analysis.cz" />',
         '<meta property="og:type" content="website" />',
         '<meta property="og:title" content="Meta-Analysis in Economics and Social Sciences" />',
-        '<meta property="og:description" content="Data and codes for papers on meta-analysis '
+        '<meta property="og:description" content="Data and code for papers on meta-analysis '
         'and research synthesis in economics and the social sciences, by Tomas Havranek, '
         'Zuzana Irsova of Charles University, Prague, and their co-authors" />',
         f'<meta property="og:url" content="{BASE}/" />',
@@ -1116,8 +1128,9 @@ def main():
            f"- [Map of the corpus]({BASE}/api/v1/papers.json): one small record per paper -- "
            f"title, authors, DOI, full-text URL, PDF, and the sections it contains with their "
            f"anchors. Fetch this first and one page after, rather than the whole corpus",
-           f"- [Search index]({BASE}/api/v1/search-index.json): every word on the site and the "
-           f"pages containing it, which is what {BASE}/search/ runs on. Useful if you would "
+           f"- [Search index]({BASE}/api/v1/search-index.json): the site's vocabulary and the "
+           f"pages each word appears on (a short list of ubiquitous words is dropped), which "
+           f"is what {BASE}/search/ runs on. Useful if you would "
            f"rather find the two pages that answer a question than read all {_n_full}",
            f"- [Every paper in full text]({BASE}/llms-full.txt): the whole corpus in one file -- "
            f"citation, links, abstract and the complete text of all {_n_full} papers, for LLM ingestion",

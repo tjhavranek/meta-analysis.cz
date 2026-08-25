@@ -386,6 +386,13 @@ if os.path.isfile(_est) and os.path.isfile(_pap):
                 f"{sorted(_preferred)}. This is what the abstract-first heuristic gets wrong; "
                 f"override one_line in papers.json.")
 
+# /results/ got its OpenGraph block by hand: its builder lives only on the owner's
+# machine, so a rebuild there can silently drop the tags. This is the tripwire.
+_res = open(os.path.join(SITE, "results", "index.html"), encoding="utf-8").read()
+if 'property="og:title"' not in _res:
+    fails.append("results/index.html: OpenGraph block missing (dropped by a rebuild? "
+                 "port the og: lines into the results builder)")
+
 print(f"pages checked: {len(pages)}; JSON-LD blocks valid: {n_ld}; URLs resolved: {n_urls}")
 for _np in new_pages:
     print(f"  .. {_np}: new page, no HEAD copy, so visible text was not diffed. Every "

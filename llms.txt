@@ -75,7 +75,7 @@
 
 - [Headline results for every paper](https://meta-analysis.cz/estimates.csv): one row per paper — the parameter, the value the paper headlines, the sample it rests on, and the verbatim sentence from the paper that each figure came from (CSV)
 - [Map of the corpus](https://meta-analysis.cz/api/v1/papers.json): one small record per paper -- title, authors, DOI, full-text URL, PDF, and the sections it contains with their anchors. Fetch this first and one page after, rather than the whole corpus
-- [Search index](https://meta-analysis.cz/api/v1/search-index.json): every word on the site and the pages containing it, which is what https://meta-analysis.cz/search/ runs on. Useful if you would rather find the two pages that answer a question than read all 54
+- [Search index](https://meta-analysis.cz/api/v1/search-index.json): the site's vocabulary and the pages each word appears on (a short list of ubiquitous words is dropped), which is what https://meta-analysis.cz/search/ runs on. Useful if you would rather find the two pages that answer a question than read all 54
 - [Every paper in full text](https://meta-analysis.cz/llms-full.txt): the whole corpus in one file -- citation, links, abstract and the complete text of all 54 papers, for LLM ingestion
 - [Papers republished in full as HTML](https://meta-analysis.cz/papers/): the complete text of each paper -- body, tables, figures, equations and references -- readable and quotable without opening a PDF
 - [About the site and who maintains it](https://meta-analysis.cz/about/): affiliations and ORCIDs

@@ -33,6 +33,13 @@ SITE = "https://meta-analysis.cz"
 _FOOTER = None
 
 
+# The site-wide canonical Person entities, keyed by ORCID. An author node carrying one of
+# these ORCIDs is one of the two owners and points at the shared entity.
+CANON_ID = {
+    "https://orcid.org/0000-0002-3158-2539": "https://meta-analysis.cz/#th",
+    "https://orcid.org/0000-0002-0753-8124": "https://meta-analysis.cz/#zi",
+}
+
 def load_footer():
     """Take the footer from the homepage, so the site has ONE footer.
 
@@ -261,6 +268,7 @@ def build_note(cfg, note):
             # co-authors outside the two of us do not all have an ORCID on file; emit the
             # Person without sameAs rather than dropping the credit or crashing the build
             "author": [{"@type": "Person", "name": a["name"],
+                        **({"@id": CANON_ID[a["orcid"]]} if a.get("orcid") in CANON_ID else {}),
                         **({"sameAs": a["orcid"]} if a.get("orcid") else {})}
                        for a in authors],
             "publisher": {"@type": "Organization", "name": "meta-analysis.cz", "url": SITE},

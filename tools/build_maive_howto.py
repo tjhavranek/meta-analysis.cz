@@ -231,6 +231,11 @@ PAGE = """<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" \
 needs, a worked example with the funnel, and what to do when the first stage is weak or \
 p-hacking is suspected." />
 <link rel="canonical" href="https://meta-analysis.cz/maive/how-to/" />
+<meta property="og:site_name" content="meta-analysis.cz" />
+<meta property="og:type" content="website" />
+<meta property="og:title" content="How to run MAIVE" />
+<meta property="og:description" content="Run MAIVE in EasyMeta on real data: the four columns it needs, a worked example with the funnel, and what to do when the first stage is weak or p-hacking is suspected." />
+<meta property="og:url" content="https://meta-analysis.cz/maive/how-to/" />
 <link href="/style.css" rel="stylesheet" type="text/css" />
 <link href="/paper.css" rel="stylesheet" type="text/css" />
 <script type="application/ld+json">%(jsonld)s</script>

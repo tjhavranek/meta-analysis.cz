@@ -59,6 +59,12 @@ from pathlib import Path
 KDIR = Path(__file__).resolve().parent
 ROOT = KDIR.parent
 SITE = "https://meta-analysis.cz"
+# The canonical Person entities on the site root, keyed by ORCID. Every author node for
+# the two owners points there, joining the Czech archive to the English research graph.
+CANON_ID = {
+    "https://orcid.org/0000-0002-3158-2539": f"{SITE}/#th",
+    "https://orcid.org/0000-0002-0753-8124": f"{SITE}/#zi",
+}
 BASE = f"{SITE}/komentare"      # absolute: canonical, og:url, JSON-LD
 PATH = "/komentare"             # root-relative: every internal link and asset
 
@@ -668,8 +674,12 @@ def write_item(a):
         "@type": ("Article" if (is_iv or is_pr or unpub or is_report)
                   else "OpinionNewsArticle"),
         "@id": canonical + "#article",
-        "mainEntityOfPage": canonical,
-        "url": canonical,
+        # A mirrored post's master copy lives at /notes/. The canonical link and og:url
+        # already say so; the structured data has to agree, or a corpus reader counts the
+        # same text as two works. The local @id stays, and sameAs names the master.
+        "mainEntityOfPage": canonical_link or canonical,
+        "url": canonical_link or canonical,
+        **({"sameAs": canonical_link} if canonical_link else {}),
         "headline": a["headline"],
         "inLanguage": lang,
         ("dateCreated" if unpub else "datePublished"): a["date"],
@@ -680,7 +690,9 @@ def write_item(a):
         node["creativeWorkStatus"] = "Unpublished"
     else:
         node["publisher"] = {"@type": "Organization", "name": a["outlet"]}
-    persons = [{k: v for k, v in (("@type", "Person"), ("name", n),
+    persons = [{k: v for k, v in (("@type", "Person"),
+                                  ("@id", CANON_ID.get(ORCIDS.get(n))),
+                                  ("name", n),
                                   ("sameAs", ORCIDS.get(n))) if v} for n in names]
     if is_iv:
         node["about"] = persons
@@ -875,7 +887,7 @@ def write_index(items, key=None):
 
     person = {
         "@type": "Person",
-        "@id": f"{BASE}/#author",
+        "@id": f"{SITE}/#th",
         "name": AUTHOR,
         "givenName": "Tomáš", "familyName": "Havránek",
         "jobTitle": "profesor ekonomie",
@@ -904,7 +916,7 @@ def write_index(items, key=None):
     # publishes under, which is how a crawler connects "Irsova" to "Havránková".
     person_zi = {
         "@type": "Person",
-        "@id": f"{BASE}/#author-zi",
+        "@id": f"{SITE}/#zi",
         "name": "Zuzana Iršová Havránková",
         "givenName": "Zuzana", "familyName": "Havránková",
         "alternateName": ["Zuzana Havránková", "Zuzana Iršová", "Zuzana Irsová",
@@ -931,7 +943,7 @@ def write_index(items, key=None):
         "name": f"{title} — {SITE_AUTHORS}",
         "description": desc,
         "inLanguage": sec["lang"] if sec else "cs",
-        "about": [{"@id": f"{BASE}/#author"}, {"@id": f"{BASE}/#author-zi"}],
+        "about": [{"@id": f"{SITE}/#th"}, {"@id": f"{SITE}/#zi"}],
         # These share the per-page node's @id, so anything merging the graph would end up
         # with dateCreated from the page AND datePublished from here on one entity. An
         # unpublished draft must carry the same date field in both places.
@@ -1112,7 +1124,9 @@ def write_machine_readable(items, social=()):
          f"({len(items) + n_social} záznamů celkem), "
          f"{items[-1]['date'][:4]}–{items[0]['date'][:4]}. "
          "Plné znění každého textu je na uvedené adrese; zdrojový Markdown položek "
-         "je v /komentare/src/ (příspěvky ze sítí zdrojový soubor nemají).", ""]
+         "je v /komentare/src/ (příspěvky ze sítí zdrojový soubor nemají). "
+         "Licence: CC BY 4.0, jako vše na meta-analysis.cz; u převzatých textů "
+         "uveďte i původní vydání.", ""]
     for k, sec in SECTIONS.items():
         sel = [a for a in items if a["category"] == k]
         if not sel:
@@ -1178,6 +1192,9 @@ def write_machine_readable(items, social=()):
                                       or a.get("unpublished")))
                 else {"original_url": a.get("url", "")}),
              "text_status": text_status(a)}
+        if a.get("mirror"):
+            # the master copy of a cross-posted English note lives at /notes/
+            d["canonical_url"] = f"{SITE}/notes/{a['mirror']}/"
         if a.get("perex"):
             d["standfirst"] = a["perex"]
             d["standfirst_note"] = "Written by the original outlet, not by the author."
@@ -1248,8 +1265,8 @@ def write_machine_readable(items, social=()):
              "also_published_as": ["Zuzana Havránková", "Zuzana Iršová", "Zuzana Irsova"],
              "affiliation": "Institut ekonomických studií, FSV Univerzita Karlova"},
         ],
-        "license": "Texty jsou majetkem autora a původních vydavatelů; "
-                   "archiv slouží ke čtení a citaci s uvedením původního zdroje.",
+        "license": "https://creativecommons.org/licenses/by/4.0/",
+        "license_note": "CC BY 4.0; u převzatých textů uveďte i původní vydání.",
         "count": len(docs),
         "generated_from": ["komentare/src/*.md", "komentare/social-posts.json"],
         "items": docs,
@@ -1646,7 +1663,7 @@ def write_socials_page():
                               if p.get("datetime") else p["date"]),
             "inLanguage": lang,
             "url": canon,
-            "author": {"@type": "Person", "name": "Zuzana Havránková",
+            "author": {"@type": "Person", "@id": f"{SITE}/#zi", "name": "Zuzana Havránková",
                        "sameAs": ORCIDS["Zuzana Havránková"]},
             "text": p["text"],
         }
@@ -1793,14 +1810,13 @@ def write_data_page(items, social=()):
          "inLanguage": "cs",
              "isAccessibleForFree": True,
              "creator": [
-                 {"@type": "Person", "name": AUTHOR, "identifier": ORCIDS[AUTHOR]},
-                 {"@type": "Person", "name": "Zuzana Iršová Havránková",
+                 {"@type": "Person", "@id": f"{SITE}/#th", "name": AUTHOR,
+                  "identifier": ORCIDS[AUTHOR]},
+                 {"@type": "Person", "@id": f"{SITE}/#zi", "name": "Zuzana Iršová Havránková",
                   "identifier": ORCIDS["Zuzana Havránková"]},
              ],
              "temporalCoverage": f"{_span(items, social)}",
-             "conditionsOfAccess": ("Texty jsou majetkem autorů a původních vydavatelů; "
-                                    "archiv slouží ke čtení a citaci s uvedením původního "
-                                    "zdroje."),
+             "license": "https://creativecommons.org/licenses/by/4.0/",
              "distribution": [
                  {"@type": "DataDownload", "name": "corpus.jsonl",
                   "encodingFormat": "application/x-ndjson",

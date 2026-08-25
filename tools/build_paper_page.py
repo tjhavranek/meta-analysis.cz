@@ -549,6 +549,26 @@ class Builder:
 FOOTER = None
 
 
+
+_CANONICAL_PERSON = {
+    "tomas havranek": ("https://meta-analysis.cz/#th", "https://orcid.org/0000-0002-3158-2539"),
+    "t havranek": ("https://meta-analysis.cz/#th", "https://orcid.org/0000-0002-3158-2539"),
+    "zuzana irsova": ("https://meta-analysis.cz/#zi", "https://orcid.org/0000-0002-0753-8124"),
+    "zuzana havrankova": ("https://meta-analysis.cz/#zi", "https://orcid.org/0000-0002-0753-8124"),
+    "zuzana irsova havrankova": ("https://meta-analysis.cz/#zi", "https://orcid.org/0000-0002-0753-8124"),
+}
+
+
+def _person_node(name):
+    """Same mapping as generate_seo.person(): the two owners point at the canonical
+    entities, every other co-author stays a bare named Person."""
+    key = re.sub(r"[^a-z ]", "", (name or "").lower()).strip()
+    hit = _CANONICAL_PERSON.get(key)
+    if hit:
+        return {"@type": "Person", "@id": hit[0], "name": name, "sameAs": hit[1]}
+    return {"@type": "Person", "name": name}
+
+
 def load_footer():
     """Take the footer from a page that already has it, so one footer exists on the site."""
     global FOOTER
@@ -588,7 +608,7 @@ def build_page(project, meta, body, toc):
             "inLanguage": "en",
             "license": "https://creativecommons.org/licenses/by/4.0/",
             "isAccessibleForFree": True,
-            "author": [{"@type": "Person", "name": a} for a in authors],
+            "author": [_person_node(a) for a in authors],
             "isPartOf": {"@id": "https://meta-analysis.cz/#website"},
         }]
     }
@@ -658,7 +678,7 @@ def build_page(project, meta, body, toc):
         attr_p.append(inline(ref))
     # Some reference lines already end with the DOI, and appending it again printed the
     # same URL twice in a row.
-    if doi and doi.rstrip("/") not in (ref or ""):
+    if doi and doi.rstrip("/").replace("https://", "") not in (ref or ""):
         attr_p.append('<a href="%s">%s</a>.' % (esc_attr(doi), html.escape(doi)))
     attribution.append("<p>%s</p>" % " ".join(attr_p))
     parent_label = meta.get("parent_label")

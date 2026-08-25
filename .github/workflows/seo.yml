@@ -101,6 +101,18 @@ jobs:
       - name: Verify the MAIVE how-to against its recorded runs
         run: python tools/check_maive_howto.py
 
+      # papers.json is the map AI agents are told to fetch first. It went stale once: it
+      # carried section anchors from before the endnotes repair, with a clean CI. This
+      # rebuilds it in memory and fails on any drift or duplicate anchor.
+      - name: Verify api/v1/papers.json against a fresh build
+        run: python tools/build_papers_api.py --check
+
+      # The full-text corpus itself: figures, tables, fragment links, MathML, coverage.
+      # This class of checker has caught real user-facing failures (a missing figure,
+      # fragmented tables); it passes clean in about four minutes.
+      - name: Verify the 55 full-text pages
+        run: python tools/check_paper_pages.py
+
       # Did this push touch the data layer? 09_verify proves the tree is internally
       # CONSISTENT; it cannot prove the tree FOLLOWS FROM its canonical inputs. A tree can be
       # perfectly self-consistent and still stale, which is exactly what happened four times in

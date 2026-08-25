@@ -6,6 +6,11 @@
 <title>Search</title>
 <meta name="description" content="Search every page on meta-analysis.cz: 54 papers in full, the research notes, the datasets and the guidelines. The search runs in your browser; nothing is sent anywhere." />
 <link rel="canonical" href="https://meta-analysis.cz/search/" />
+<meta property="og:site_name" content="meta-analysis.cz" />
+<meta property="og:type" content="website" />
+<meta property="og:title" content="Search meta-analysis.cz" />
+<meta property="og:description" content="Full-text search over the site: 54 papers in full, the research notes, the datasets and the guidelines." />
+<meta property="og:url" content="https://meta-analysis.cz/search/" />
 <link href="/style.css" rel="stylesheet" type="text/css" />
 <link href="/paper.css" rel="stylesheet" type="text/css" />
 </head>
@@ -157,14 +162,17 @@ rather search it yourself.</p>
 
   function mark(text, want) {
     var esc = document.createElement("div");
-    esc.textContent = text;
-    var s = esc.innerHTML;
-    want.forEach(function (w) {
-      if (w.length < 2) return;
-      s = s.replace(new RegExp("(" + w.replace(/[.*+?^${}()|[\]\\]/g, "\\$&") + ")", "gi"),
-                    "<mark>$1</mark>");
-    });
-    return s;
+    function escHtml(t) { esc.textContent = t; return esc.innerHTML; }
+    // Split the RAW text on the terms, escape each piece, wrap the hits. Escaping first
+    // and matching after let a term land inside an entity ("mp" inside &amp;), and a
+    // per-term loop re-ran replace over its own inserted tags.
+    var words = want.filter(function (w) { return w.length >= 2; })
+      .sort(function (a, b) { return b.length - a.length; })
+      .map(function (w) { return w.replace(/[.*+?^${}()|[\]\\]/g, "\\$&"); });
+    if (!words.length) return escHtml(text);
+    return text.split(new RegExp("(" + words.join("|") + ")", "gi"))
+      .map(function (p, i) { return i % 2 ? "<mark>" + escHtml(p) + "</mark>" : escHtml(p); })
+      .join("");
   }
 
   var KIND = { paper: "full text", note: "research note", data: "data", page: "" };
@@ -243,8 +251,8 @@ data behind them, and the code that produced them. It is maintained by <a href="
 <a href="/guidelines/">Practitioner&#x27;s guide</a> &middot;
 <a href="/notes/">Research notes</a> &middot;
 <a href="https://www.easymeta.org/">EasyMeta web app</a></p>
-<p class="foot-who"><b>Tomas Havranek</b> &middot; <a href="https://www.tomashavranek.cz/">tomashavranek.cz</a> &middot; <a href="https://ies.fsv.cuni.cz/contacts/institute-members/78067720">IES FSV UK</a> &middot; <a href="https://orcid.org/0000-0002-3158-2539">ORCID</a> &middot; <a href="https://scholar.google.com/citations?user=BF0BvBkAAAAJ">Google Scholar</a> &middot; <a href="https://ideas.repec.org/f/pha418.html">RePEc</a> &middot; <a href="https://www.scopus.com/authid/detail.uri?authorId=24453189000">Scopus</a> &middot; <a href="https://cepr.org/about/people/tomas-havranek">CEPR</a> &middot; <a href="https://metrics.stanford.edu/people/tomas-havranek">Stanford METRICS</a></p>
-<p class="foot-who"><b>Zuzana Irsova</b> &middot; <a href="https://www.irsova.com/">irsova.com</a> &middot; <a href="https://ies.fsv.cuni.cz/contacts/institute-members/73504033">IES FSV UK</a> &middot; <a href="https://orcid.org/0000-0002-0753-8124">ORCID</a> &middot; <a href="https://scholar.google.com/citations?user=LaHrICUAAAAJ">Google Scholar</a> &middot; <a href="https://ideas.repec.org/e/pir23.html">RePEc</a> &middot; <a href="https://www.scopus.com/authid/detail.uri?authorId=37080793200">Scopus</a> &middot; <a href="https://cepr.org/about/people/zuzana-irsova">CEPR</a> &middot; <a href="https://metrics.stanford.edu/people/zuzana-irsova">Stanford METRICS</a></p>
+<p class="foot-who"><b>Tomas Havranek</b> &middot; <a href="https://www.tomashavranek.cz/">tomashavranek.cz</a> &middot; <a href="https://ies.fsv.cuni.cz/en/contacts/institute-members/78067720">IES FSV UK</a> &middot; <a href="https://orcid.org/0000-0002-3158-2539">ORCID</a> &middot; <a href="https://scholar.google.com/citations?user=BF0BvBkAAAAJ">Google Scholar</a> &middot; <a href="https://ideas.repec.org/f/pha418.html">RePEc</a> &middot; <a href="https://www.scopus.com/authid/detail.uri?authorId=24453189000">Scopus</a> &middot; <a href="https://cepr.org/about/people/tomas-havranek">CEPR</a> &middot; <a href="https://metrics.stanford.edu/people/tomas-havranek">Stanford METRICS</a></p>
+<p class="foot-who"><b>Zuzana Irsova</b> &middot; <a href="https://www.irsova.com/">irsova.com</a> &middot; <a href="https://ies.fsv.cuni.cz/en/contacts/institute-members/73504033">IES FSV UK</a> &middot; <a href="https://orcid.org/0000-0002-0753-8124">ORCID</a> &middot; <a href="https://scholar.google.com/citations?user=LaHrICUAAAAJ">Google Scholar</a> &middot; <a href="https://ideas.repec.org/e/pir23.html">RePEc</a> &middot; <a href="https://www.scopus.com/authid/detail.uri?authorId=37080793200">Scopus</a> &middot; <a href="https://cepr.org/about/people/zuzana-irsova">CEPR</a> &middot; <a href="https://metrics.stanford.edu/people/zuzana-irsova">Stanford METRICS</a></p>
 <p class="foot-cite"><b>How to cite this collection:</b> Havranek, T. and Z. Irsova (2026).
 meta-analysis.cz: harmonised estimate-level data from meta-analyses in economics. Zenodo.
 <a href="https://doi.org/10.5281/zenodo.21773678">https://doi.org/10.5281/zenodo.21773678</a>.

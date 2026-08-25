@@ -470,7 +470,7 @@ FIGURE S29. MSE: $p$-hacking selection, positive effect ($\alpha_1 = 1$), variou
 3. Pustejovsky JE, Rodgers MA. Testing for funnel plot asymmetry of standardized mean differences. *Research Synthesis Methods* 2019; 10(1): 57–71.
 4. Rodgers MA, Pustejovsky JE. Evaluating meta-analytic methods to detect selective reporting in the presence of dependent effect sizes. *Psychological Methods* 2021; 26(2): 141–160.
 5. Andrews I, Kasy M. Identification of and correction for publication bias. *American Economic Review* 2019; 109(8): 2766–2794.
-6. Kvarven A, Stromland E, Johannesson M. Identification of and Correction for Publication Bias: Comment. MetaArXiv dh87m, Center for Open Science, doi: 10.31219/osf.io/dh87m; 2019.
+6. Kvarven A, Stromland E, Johannesson M. Identification of and Correction for Publication Bias: Comment. MetaArXiv dh87m, Center for Open Science, doi: 10.31222/osf.io/dh87m; 2019.
 7. Hong S, Reed WR. Using Monte Carlo experiments to select meta-analytic estimators. *Research Synthesis Methods* 2021; 12(2): 192–215.
 8. Mathur MB, VanderWeele TJ. Sensitivity analysis for publication bias in meta-analyses. *Journal of the Royal Statistical Society Series C* 2020; 69(5): 10911119.
 9. Mathur MB. Sensitivity analysis for p-hacking in meta-analyses. Quantitative Sciences Unit and Department of Pediatrics, Stanford University, working paper, doi: 10.31219/osf.io/ezjsx; 2022.
@@ -515,7 +515,7 @@ FIGURE S29. MSE: $p$-hacking selection, positive effect ($\alpha_1 = 1$), variou
 48. Stanley TD, Doucouliagos H. Meta-regression approximations to reduce publication selection bias. *Research Synthesis Methods* 2014; 5(1): 60–78.
 49. Bom PRD, Rachinger H. A generalized-weights solution to sample overlap in meta-analysis. *Research Synthesis Methods* 2020; 11(6): 812–832.
 50. Joshi M, Pustejovsky JE, Beretvas SN. Cluster wild bootstrapping to handle dependent effect sizes in meta-analysis with a small number of studies. *Research Synthesis Methods* 2022; 13(4): 457–477.
-51. Pustejovsky JE, Tipton E. Meta-Analysis with Robust Variance Estimation: Expanding the Range of Working Models. MetaArXiv vyfcj, Center for Open Science, doi: 10.31219/osf.io/vyfcj; 2020.
+51. Pustejovsky JE, Tipton E. Meta-Analysis with Robust Variance Estimation: Expanding the Range of Working Models. MetaArXiv vyfcj, Center for Open Science, doi: 10.31222/osf.io/vyfcj; 2020.
 52. Vembye M, Pustejovsky J, Pigott T. Power Approximations for Overall Average Effects in Meta-Analysis With Dependent Effect Sizes. *Journal of Educational and Behavioral Statistics* 2023; 48(1): 70–102.
 53. Ioannidis JP, Stanley TD, Doucouliagos H. The Power of Bias in Economics Research. *The Economic Journal* 2017; 127(605): F236–F265.
 54. Hausman JA. Specification Tests in Econometrics. *Econometrica* 1978; 46(6): 1251–1271.
