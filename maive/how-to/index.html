@@ -161,26 +161,41 @@ before your estimator ever sees the data.</p>
     "computeAndersonRubin": true, "winsorize": 0
   }
 }</code></pre>
+<p class="aside">Those are the first six of the 75 rows in
+<a href="/maive/how-to/alpha.csv">alpha.csv</a>; send all of them to get the numbers above.</p>
 <p>Prompt to paste into an assistant:</p>
 <pre class="code prompt"><code>Run MAIVE on my data via the EasyMeta API (POST api.maive.eu/v1/run-model).
-Send "data" as an array of row objects with effect, se, n_obs, study_id.
-Nest all settings under "parameters"; top-level settings are silently
-ignored. Nest exactly this: {"modelType": "MAIVE", "maiveMethod":
-"PET-PEESE", "weight": "equal_weights", "useLogFirstStage": true,
-"standardErrorTreatment": "bootstrap", "includeStudyClustering": true,
-"computeAndersonRubin": true, "winsorize": 0}. Use the synchronous
-endpoint; the async one ignores modelType. Always send
-"includeStudyClustering": true. Without it, standardErrorTreatment only
-picks the variance formula, not the clustering, which changes the
-standard errors, the first-stage F, and can move the point estimate.
-Check firstStage.mode is "log" in the response; anything else means the
-parameters did not take effect. Report: corrected estimate vs the simple
-mean, first-stage F, Egger test, Hausman test, and the Anderson-Rubin
-interval whenever F &lt; 10. The response also carries seInstrumented, one
-corrected standard error per row, for use in any other estimator.
-Report any warnings verbatim. If you cannot
-actually issue the request, say so and give the R code instead. Never
-report numbers you did not receive.</code></pre>
+Send "data" as row objects with effect, se and n_obs. n_obs is the total
+sample size behind the estimate, not degrees of freedom; never guess it or
+back it out of the standard error. Add study_id only where several estimates
+come from one primary study: keep the real grouping, never invent it, and ask
+if the grouping is unclear. Giving every row its own study_id is rejected.
+
+Nest exactly this under "parameters":
+{"modelType": "MAIVE", "maiveMethod": "PET-PEESE", "weight": "equal_weights",
+"useLogFirstStage": true, "standardErrorTreatment": "bootstrap",
+"includeStudyClustering": true, "computeAndersonRubin": true, "winsorize": 0}.
+Top-level settings are silently ignored. Use the synchronous endpoint; the
+async one ignores modelType. includeStudyClustering is what clusters;
+standardErrorTreatment alone only picks the variance formula, and dropping the
+flag changes the standard errors and the F without any error. Check
+firstStage.mode is "log" in the response; anything else means the settings did
+not take effect.
+
+Read effectEstimate, standardError, firstStageFStatistic, publicationBias,
+hausmanTest, andersonRubinCI and seInstrumented from the response, and compute
+the simple mean from the effects you sent. Report the corrected estimate
+against that mean, the first-stage F, the Egger and Hausman tests, and the
+Anderson-Rubin interval whenever F &lt; 10, where the point estimate is weakly
+identified and inference belongs on that interval instead. A Hausman test that
+does not reject is not evidence that the reported standard errors are sound.
+Report any warnings verbatim. If you cannot issue the request, say so and hand
+the user this, rather than R written from memory:
+  library(MAIVE)
+  fit &lt;- maive(data.frame(bs = effect, sebs = se, Ns = n_obs, study_id),
+               method = 3, weight = 0, instrument = 1, studylevel = 2,
+               SE = 3, AR = 1, first_stage = 1)
+Never report numbers you did not receive or compute from the data you sent.</code></pre>
 </details>
 
 <p class="aside">MAIVE is not tied to PET-PEESE. EasyMeta will apply the same correction to
