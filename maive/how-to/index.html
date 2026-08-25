@@ -42,6 +42,10 @@ p-hacking.</b> Besides effect and standard error, it also asks for sample size.<
 <code>n_obs</code> &middot; <code>study_id</code> (the latter is needed when a study reports
 several estimates, and inference then clusters on it)</p>
 
+<p class="aside">MAIVE instruments the standard error with sample size, so it assumes sample
+size was not itself chosen from the expected effect. Where it was, as in studies powered for a
+target effect, the instrument is invalid and MAIVE offers no advantage over plain PET-PEESE.</p>
+
 <p class="cta"><a class="button" href="https://www.easymeta.org/">Open EasyMeta</a>
 <a class="button quiet" href="/maive/how-to/alpha.csv">Download the example data
 (CSV)</a></p>
@@ -168,29 +172,26 @@ before your estimator ever sees the data.</p>
 Send "data" as row objects with effect, se and n_obs. n_obs is the total
 sample size behind the estimate, not degrees of freedom; never guess it or
 back it out of the standard error. Add study_id only where several estimates
-come from one primary study: keep the real grouping, never invent it, and ask
-if the grouping is unclear. Giving every row its own study_id is rejected.
+come from one primary study: never invent it, and ask if the grouping is
+unclear. Giving every row its own study_id is rejected.
 
 Nest exactly this under "parameters":
 {"modelType": "MAIVE", "maiveMethod": "PET-PEESE", "weight": "equal_weights",
 "useLogFirstStage": true, "standardErrorTreatment": "bootstrap",
 "includeStudyClustering": true, "computeAndersonRubin": true, "winsorize": 0}.
-Top-level settings are silently ignored. Use the synchronous endpoint; the
-async one ignores modelType. includeStudyClustering is what clusters;
-standardErrorTreatment alone only picks the variance formula, and dropping the
-flag changes the standard errors and the F without any error. Check
-firstStage.mode is "log" in the response; anything else means the settings did
-not take effect.
+Top-level settings are silently ignored. Use the synchronous endpoint.
+includeStudyClustering is what clusters; dropping it changes the standard
+errors and the F without any error. Check firstStage.mode is "log" in the
+response; anything else means the settings did not take effect.
 
 Read effectEstimate, standardError, firstStageFStatistic, publicationBias,
 hausmanTest, andersonRubinCI and seInstrumented from the response, and compute
 the simple mean from the effects you sent. Report the corrected estimate
 against that mean, the first-stage F, the Egger and Hausman tests, and the
-Anderson-Rubin interval whenever F &lt; 10, where the point estimate is weakly
-identified and inference belongs on that interval instead. A Hausman test that
-does not reject is not evidence that the reported standard errors are sound.
-Report any warnings verbatim. If you cannot issue the request, say so and hand
-the user this, rather than R written from memory:
+Anderson-Rubin interval whenever F &lt; 10, in place of the point estimate. A
+Hausman test that does not reject is not evidence that the reported standard
+errors are sound. Report any warnings verbatim. If you cannot issue the
+request, say so and hand the user this, rather than R written from memory:
   library(MAIVE)
   fit &lt;- maive(data.frame(bs = effect, sebs = se, Ns = n_obs, study_id),
                method = 3, weight = 0, instrument = 1, studylevel = 2,
