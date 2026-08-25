@@ -184,6 +184,22 @@ def main():
     else:
         fail("the sidecar records no example_rows, so the API example cannot be checked")
 
+    # 5g. The page carries the maive() call twice: the visible R block, and again inside the
+    #     paste-prompt, which has to stand alone because the fallback fires exactly when the
+    #     assistant cannot fetch this page. Two copies drift, so hold them to each other.
+    import re as _re
+    calls = _re.findall(r"maive\(.*?first_stage\s*=\s*\d+\)", page, _re.S)
+    if len(calls) < 2:
+        fail("expected the maive() call in both the R block and the prompt, found %d"
+             % len(calls))
+    else:
+        args = [dict(_re.findall(r"(\w+)\s*=\s*(\d+)", c)) for c in calls[:2]]
+        keys = ("method", "weight", "instrument", "studylevel", "SE", "AR", "first_stage")
+        for k in keys:
+            if args[0].get(k) != args[1].get(k):
+                fail("the two maive() calls disagree on %s: %r vs %r"
+                     % (k, args[0].get(k), args[1].get(k)))
+
     # 6. The page is exactly what the sidecar renders -- the check that catches hand edits.
     from build_maive_howto import render
     if render(doc) != page:

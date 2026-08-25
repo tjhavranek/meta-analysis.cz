@@ -141,7 +141,11 @@ run whatever you would have run anyway: random effects, a selection model, anyth
 takes a standard error. The p-hacking that operates through reported precision is corrected
 before your estimator ever sees the data.</p>
 
-<details class="forbots">
+<p>Using an AI assistant? Attach your spreadsheet and say: "Run MAIVE on this dataset,
+following the protocol at https://meta-analysis.cz/maive/how-to/#ai." If your assistant
+cannot read links, open the block below and paste the protocol instead.</p>
+
+<details class="forbots" id="ai">
 <summary>For AI assistants and code</summary>
 <pre class="code"><code>POST https://api.maive.eu/v1/run-model
 {
@@ -162,7 +166,7 @@ before your estimator ever sees the data.</p>
 }</code></pre>
 <p class="aside">Those are the first six of the 75 rows in
 <a href="/maive/how-to/alpha.csv">alpha.csv</a>; send all of them to get the numbers above.</p>
-<p>Prompt to paste:</p>
+<p>Full protocol, if your assistant cannot read links:</p>
 <pre class="code prompt"><code>Run MAIVE on my data via the EasyMeta API (POST api.maive.eu/v1/run-model).
 Send "data" as row objects with effect, se and n_obs. n_obs is the total
 sample size behind the estimate, not degrees of freedom; never guess it or
