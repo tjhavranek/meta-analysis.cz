@@ -279,8 +279,8 @@
   "status": "ok",
   "rows": 885,
   "cols": 179,
-  "parquet_bytes": 237322,
-  "csv_bytes": 1399628,
+  "parquet_bytes": 237308,
+  "csv_bytes": 1399622,
   "source": "inflation_v34.dta",
   "sheet": null
  },

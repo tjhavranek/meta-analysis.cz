@@ -1165,14 +1165,13 @@
    "name": "Affiliation_Class",
    "normalized": "affiliation_class",
    "dtype": "str",
-   "n_missing": 0,
-   "n_unique": 5,
+   "n_missing": 3,
+   "n_unique": 4,
    "top_values": [
     "university",
     "central_bank",
     "mixed",
-    "other",
-    "NA"
+    "other"
    ]
   },
   {

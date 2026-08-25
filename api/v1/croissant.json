@@ -322,8 +322,8 @@
    "name": "inflation.parquet",
    "contentUrl": "https://meta-analysis.cz/data/v1/inflation/inflation.parquet",
    "encodingFormat": "application/vnd.apache.parquet",
-   "sha256": "cf66dbc586cc7a18a21b85627d8c92a20604817055ec72db391b6abdc84e0f8f",
-   "contentSize": "237322"
+   "sha256": "427ba5da031b7156cf5b46ff48de682882e3d6a0d4ee03fb6ba056d34a094c22",
+   "contentSize": "237308"
   },
   {
    "@type": "cr:FileObject",
