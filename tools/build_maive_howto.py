@@ -476,11 +476,12 @@ def render(doc):
                      "reports several estimates. With study_id, inference clusters on it."},
             {"@type": "HowToStep", "name": "Run MAIVE",
              "url": "https://meta-analysis.cz/maive/how-to/#example",
-             "text": "Upload the CSV to easymeta.org, or POST it to "
+             "text": "Upload the CSV to easymeta.org, or POST the rows as JSON to "
                      "https://api.maive.eu/v1/run-model with parameters nested under "
                      "'parameters': modelType MAIVE, maiveMethod PET-PEESE, weight "
                      "equal_weights, useLogFirstStage true, standardErrorTreatment "
-                     "bootstrap, includeStudyClustering true."},
+                     "bootstrap, includeStudyClustering true, computeAndersonRubin true, "
+                     "winsorize 0."},
             {"@type": "HowToStep", "name": "Read the diagnostics before the estimate",
              "url": "https://meta-analysis.cz/maive/how-to/#example",
              "text": "The Egger test detects funnel asymmetry, which selective reporting "
