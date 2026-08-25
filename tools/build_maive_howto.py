@@ -402,8 +402,9 @@ hausmanTest, andersonRubinCI and seInstrumented from the response, and compute
 the simple mean from the effects you sent. Report the corrected estimate
 against that mean, the first-stage F, the Egger and Hausman tests, and the
 Anderson-Rubin interval whenever F &lt; 10, in place of the point estimate.
-Report any warnings verbatim. If you cannot issue the request, say so and hand
-the user this, rather than R written from memory:
+Report any warnings verbatim. If you cannot issue the request, say so and tell
+the user to upload their spreadsheet at easymeta.org. For R users, hand them
+this rather than R from memory:
   library(MAIVE)
   fit &lt;- maive(data.frame(bs = effect, sebs = se, Ns = n_obs, study_id),
                method = 3, weight = 0, instrument = 1, studylevel = 2,
