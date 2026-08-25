@@ -418,7 +418,8 @@ Never report numbers you did not receive or compute from the data you sent.</cod
 </details>
 
 <p class="aside">MAIVE is not tied to PET-PEESE. EasyMeta will apply the same correction to
-PET, PEESE or the endogenous kink model, and it also runs weighted least squares.</p>
+PET, PEESE or the endogenous kink model, and it also runs weighted least squares and
+RTMA.</p>
 
 <p class="provenance">Computed with EasyMeta on meta-analysis.cz data v1.1.1,
 %(retrieved)s; every request and response archived in
