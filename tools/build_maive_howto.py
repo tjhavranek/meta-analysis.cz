@@ -289,10 +289,9 @@ instead of the reported one, and the solid line is MAIVE's fit through them. It 
 because the PET-PEESE rule picks PET when the intercept is not significant, as here, and the
 PEESE quadratic when it is.</p>
 
-<p class="result"><b>MAIVE: %(alpha_est)s%% per month (SE %(alpha_se)s). First-stage F:
-%(alpha_F)s.</b><br />
-<span class="settings">Settings: PET-PEESE, log first stage, equal weights, wild
-bootstrap clustered by study.</span></p>
+<p class="result"><b>MAIVE: %(alpha_est)s%% per month (SE %(alpha_se)s).</b><br />
+<span class="settings">First-stage F: %(alpha_F)s. Settings: PET-PEESE, log first stage,
+equal weights, wild bootstrap clustered by study.</span></p>
 
 <p>Reading the output, as EasyMeta reports it:</p>
 
