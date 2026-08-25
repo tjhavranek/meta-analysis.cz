@@ -169,6 +169,21 @@ def main():
              % ("no such field" if si is None else "%d of %d values"
                 % (len(si), runs["alpha_maive"]["n_rows"])))
 
+    # 5f. Every row printed in the API example must be a real row of the shipped CSV. These
+    #     were once typed by hand and went stale the moment the data stopped being winsorised:
+    #     two different estimates ended up sharing one standard error, the 2% cap. Rounded to
+    #     the 4 places the page prints, each example row must appear in alpha.csv.
+    if doc.get("example_rows"):
+        have = {(round(float(r["effect"]), 4), round(float(r["se"]), 4),
+                 int(float(r["n_obs"])), str(r["study_id"])) for r in shipped.to_dict("records")}
+        for r in doc["example_rows"]:
+            key = (round(float(r["effect"]), 4), round(float(r["se"]), 4),
+                   int(float(r["n_obs"])), str(r["study_id"]))
+            if key not in have:
+                fail("API example row %s is not in alpha.csv" % (key,))
+    else:
+        fail("the sidecar records no example_rows, so the API example cannot be checked")
+
     # 6. The page is exactly what the sidecar renders -- the check that catches hand edits.
     from build_maive_howto import render
     if render(doc) != page:

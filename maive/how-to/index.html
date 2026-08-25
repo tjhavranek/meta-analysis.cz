@@ -8,7 +8,7 @@
 <link rel="canonical" href="https://meta-analysis.cz/maive/how-to/" />
 <link href="/style.css" rel="stylesheet" type="text/css" />
 <link href="/paper.css" rel="stylesheet" type="text/css" />
-<script type="application/ld+json">{"@context":"https://schema.org","@type":"HowTo","@id":"https://meta-analysis.cz/maive/how-to/#howto","name":"How to run MAIVE","description":"Correct a meta-analysis for publication bias and for many forms of p-hacking, using four columns of data and the EasyMeta app or API.","inLanguage":"en","license":"https://creativecommons.org/licenses/by/4.0/","isBasedOn":"https://meta-analysis.cz/maive/#paper","about":{"@id":"https://meta-analysis.cz/maive/#paper"},"tool":{"@type":"SoftwareApplication","name":"EasyMeta","url":"https://www.easymeta.org/"},"step":[{"@type":"HowToStep","name":"Assemble four columns","url":"https://meta-analysis.cz/maive/how-to/","text":"One row per estimate: effect, se, n_obs, and study_id when a study reports several estimates. With study_id, inference clusters on it."},{"@type":"HowToStep","name":"Run MAIVE","url":"https://meta-analysis.cz/maive/how-to/#example","text":"Upload the CSV to easymeta.org, or POST it to https://api.maive.eu/v1/run-model with parameters nested under 'parameters': modelType MAIVE, useLogFirstStage true, standardErrorTreatment bootstrap, includeStudyClustering true."},{"@type":"HowToStep","name":"Read the diagnostics before the estimate","url":"https://meta-analysis.cz/maive/how-to/#example","text":"The Egger test detects funnel asymmetry, which selective reporting produces and genuine differences between studies can too; the Hausman test compares MAIVE with plain PET-PEESE; the first-stage F says whether the instrument is strong."},{"@type":"HowToStep","name":"Reuse the corrected standard errors","url":"https://meta-analysis.cz/maive/how-to/#elsewhere","text":"The run returns a corrected standard error for every estimate, seInstrumented in the API and SE_instrumented in R. Substitute them for the reported ones in any other estimator: random effects, a selection model, anything that takes a standard error."},{"@type":"HowToStep","name":"Handle a weak first stage","url":"https://meta-analysis.cz/maive/how-to/#weak-first-stage","text":"Below an F of 10, report the Anderson-Rubin interval rather than the point estimate, and check any RTMA cross-check against its own convergence diagnostics before quoting it."}]}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"HowTo","@id":"https://meta-analysis.cz/maive/how-to/#howto","name":"How to run MAIVE","description":"Correct a meta-analysis for publication bias and for many forms of p-hacking, using four columns of data and the EasyMeta app or API.","inLanguage":"en","license":"https://creativecommons.org/licenses/by/4.0/","isBasedOn":"https://meta-analysis.cz/maive/#paper","about":{"@id":"https://meta-analysis.cz/maive/#paper"},"tool":{"@type":"SoftwareApplication","name":"EasyMeta","url":"https://www.easymeta.org/"},"step":[{"@type":"HowToStep","name":"Assemble four columns","url":"https://meta-analysis.cz/maive/how-to/","text":"One row per estimate: effect, se, n_obs, and study_id when a study reports several estimates. With study_id, inference clusters on it."},{"@type":"HowToStep","name":"Run MAIVE","url":"https://meta-analysis.cz/maive/how-to/#example","text":"Upload the CSV to easymeta.org, or POST it to https://api.maive.eu/v1/run-model with parameters nested under 'parameters': modelType MAIVE, maiveMethod PET-PEESE, weight equal_weights, useLogFirstStage true, standardErrorTreatment bootstrap, includeStudyClustering true."},{"@type":"HowToStep","name":"Read the diagnostics before the estimate","url":"https://meta-analysis.cz/maive/how-to/#example","text":"The Egger test detects funnel asymmetry, which selective reporting produces and genuine differences between studies can too; the Hausman test compares MAIVE with plain PET-PEESE; the first-stage F says whether the instrument is strong."},{"@type":"HowToStep","name":"Reuse the corrected standard errors","url":"https://meta-analysis.cz/maive/how-to/#elsewhere","text":"The run returns a corrected standard error for every estimate, seInstrumented in the API and SE_instrumented in R. Substitute them for the reported ones in any other estimator: random effects, a selection model, anything that takes a standard error."},{"@type":"HowToStep","name":"Handle a weak first stage","url":"https://meta-analysis.cz/maive/how-to/#weak-first-stage","text":"Below an F of 10, report the Anderson-Rubin interval rather than the point estimate, and check any RTMA cross-check against its own convergence diagnostics before quoting it."}]}</script>
 </head>
 <body>
 <div id="wrapper">
@@ -54,7 +54,7 @@ trade) estimated on cross-sectional data. The mean reported alpha is 0.33% per
 month.</p>
 
 <p><img src="/maive/how-to/funnel.png" alt="EasyMeta funnel plot: 75 hedge-fund alpha
-estimates against precision. The cloud leans right as precision falls, and the MAIVE fit
+estimates against their standard errors. The cloud leans right as precision falls, and the MAIVE fit
 lands near zero, well left of the simple mean." width="840" height="840" /></p>
 
 <p class="aside"><b>Reading the funnel.</b> Each hollow point is a reported estimate
@@ -148,11 +148,11 @@ before your estimator ever sees the data.</p>
 {
   "data": [
     {"effect": 0.49,   "se": 0.2438, "n_obs": 152, "study_id": "1"},
-    {"effect": 0.89,   "se": 0.6416, "n_obs": 33,  "study_id": "1"},
-    {"effect": 0.93,   "se": 0.6416, "n_obs": 18,  "study_id": "1"},
+    {"effect": 0.89,   "se": 0.7236, "n_obs": 33,  "study_id": "1"},
+    {"effect": 0.93,   "se": 0.7381, "n_obs": 18,  "study_id": "1"},
     {"effect": 0.46,   "se": 0.1575, "n_obs": 81,  "study_id": "1"},
     {"effect": 0.04,   "se": 0.2,    "n_obs": 20,  "study_id": "1"},
-    {"effect": 0.0658, "se": 0.0445, "n_obs": 136, "study_id": "20"}
+    {"effect": 0.0658, "se": 0.0383, "n_obs": 136, "study_id": "20"}
   ],
   "parameters": {
     "modelType": "MAIVE", "maiveMethod": "PET-PEESE", "weight": "equal_weights",
@@ -165,7 +165,10 @@ before your estimator ever sees the data.</p>
 <pre class="code prompt"><code>Run MAIVE on my data via the EasyMeta API (POST api.maive.eu/v1/run-model).
 Send "data" as an array of row objects with effect, se, n_obs, study_id.
 Nest all settings under "parameters"; top-level settings are silently
-ignored. Use exactly the parameters block above. Use the synchronous
+ignored. Nest exactly this: {"modelType": "MAIVE", "maiveMethod":
+"PET-PEESE", "weight": "equal_weights", "useLogFirstStage": true,
+"standardErrorTreatment": "bootstrap", "includeStudyClustering": true,
+"computeAndersonRubin": true, "winsorize": 0}. Use the synchronous
 endpoint; the async one ignores modelType. Always send
 "includeStudyClustering": true. Without it, standardErrorTreatment only
 picks the variance formula, not the clustering, which changes the
@@ -184,7 +187,7 @@ report numbers you did not receive.</code></pre>
 PET, PEESE or the endogenous kink model, and it also runs weighted least squares.</p>
 
 <p class="provenance">Computed with EasyMeta on meta-analysis.cz data v1.1.1,
-2026-08-24; every request and response archived in
+2026-08-25; every request and response archived in
 <a href="/api/v1/maive-howto.json">maive-howto.json</a>. The EasyMeta implementation is
 newer than the <a href="/maive/paper/">2025 Nature Communications paper</a>: the log first
 stage is now the recommended default.</p>

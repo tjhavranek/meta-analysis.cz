@@ -30,13 +30,51 @@
    "studies": 52
   }
  },
+ "example_rows": [
+  {
+   "effect": 0.49,
+   "n_obs": 152,
+   "se": 0.2437810945273632,
+   "study_id": "1"
+  },
+  {
+   "effect": 0.89,
+   "n_obs": 33,
+   "se": 0.7235772357723578,
+   "study_id": "1"
+  },
+  {
+   "effect": 0.93,
+   "n_obs": 18,
+   "se": 0.7380952380952381,
+   "study_id": "1"
+  },
+  {
+   "effect": 0.46,
+   "n_obs": 81,
+   "se": 0.15753424657534248,
+   "study_id": "1"
+  },
+  {
+   "effect": 0.04,
+   "n_obs": 20,
+   "se": 0.19999999999999998,
+   "study_id": "1"
+  },
+  {
+   "effect": 0.06583333333333334,
+   "n_obs": 136,
+   "se": 0.03827519379844962,
+   "study_id": "20"
+  }
+ ],
  "funnel": {
   "async_first_stage_f": 128.2692,
   "file": "/maive/how-to/funnel.png",
   "from": "async MAIVE run, accepted after matching the sync run on estimate, SE and first-stage F"
  },
  "how": "tools/build_maive_howto.py --refresh. Numbers from the SYNCHRONOUS endpoint (async ignores modelType). Parameters nested under 'parameters' (top-level is silently ignored). includeStudyClustering true everywhere: the SE alone only selects the small-sample correction, not the clustering.",
- "retrieved": "2026-08-24",
+ "retrieved": "2026-08-25",
  "runs": {
   "alpha_maive": {
    "n_rows": 75,

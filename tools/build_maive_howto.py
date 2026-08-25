@@ -149,9 +149,11 @@ def refresh():
     euro_rows, euro_d = usable("euro")
     data["euro"] = descriptives(euro_d)
     run("euro_maive", euro_rows, dict(CANON))
-    # RTMA on euro exists in the record to substantiate ONE sentence: that its sampler fails
-    # its own diagnostics here. Its interval is deliberately not on the page. favorPositive
-    # true because this literature's mean and selection direction are positive.
+    # RTMA on euro is archived as evidence for naming it as the weak-first-stage cross-check,
+    # not for any number: the page quotes none of it. Worth knowing when reading the record:
+    # this run has 84 divergent transitions and R-hat near 1.05, so its posterior should not be
+    # quoted from here without rerunning. favorPositive true because this literature's mean and
+    # selection direction are positive.
     run("euro_rtma", [{"effect": r["effect"], "se": r["se"]} for r in euro_rows],
         {"favorPositive": True, "alphaSelect": 0.05, "ciLevel": 0.95, "seed": 2025},
         "/v1/run-rtma")
@@ -190,6 +192,9 @@ def refresh():
                "(async ignores modelType). Parameters nested under 'parameters' (top-level "
                "is silently ignored). includeStudyClustering true everywhere: the SE "
                "alone only selects the small-sample correction, not the clustering.",
+        # The rows printed in the API example. Recorded so the page cannot drift from the
+        # CSV it ships: they are real rows, not illustrative ones.
+        "example_rows": alpha_rows[:5] + [r for r in alpha_rows if r["study_id"] == "20"][:1],
         "api": API, "retrieved": datetime.date.today().isoformat(),
         "datasets": data, "settings": CANON, "runs": runs,
         "funnel": {"file": "/maive/how-to/funnel.png",
@@ -274,7 +279,7 @@ trade) estimated on cross-sectional data. The mean reported alpha is %(alpha_mea
 month.</p>
 
 <p><img src="/maive/how-to/funnel.png" alt="EasyMeta funnel plot: %(alpha_k)s hedge-fund alpha
-estimates against precision. The cloud leans right as precision falls, and the MAIVE fit
+estimates against their standard errors. The cloud leans right as precision falls, and the MAIVE fit
 lands near zero, well left of the simple mean." width="840" height="840" /></p>
 
 <p class="aside"><b>Reading the funnel.</b> Each hollow point is a reported estimate
@@ -366,14 +371,7 @@ before your estimator ever sees the data.</p>
 <summary>For AI assistants and code</summary>
 <pre class="code"><code>POST https://api.maive.eu/v1/run-model
 {
-  "data": [
-    {"effect": 0.49,   "se": 0.2438, "n_obs": 152, "study_id": "1"},
-    {"effect": 0.89,   "se": 0.6416, "n_obs": 33,  "study_id": "1"},
-    {"effect": 0.93,   "se": 0.6416, "n_obs": 18,  "study_id": "1"},
-    {"effect": 0.46,   "se": 0.1575, "n_obs": 81,  "study_id": "1"},
-    {"effect": 0.04,   "se": 0.2,    "n_obs": 20,  "study_id": "1"},
-    {"effect": 0.0658, "se": 0.0445, "n_obs": 136, "study_id": "20"}
-  ],
+%(example_rows)s
   "parameters": {
     "modelType": "MAIVE", "maiveMethod": "PET-PEESE", "weight": "equal_weights",
     "useLogFirstStage": true,
@@ -385,7 +383,10 @@ before your estimator ever sees the data.</p>
 <pre class="code prompt"><code>Run MAIVE on my data via the EasyMeta API (POST api.maive.eu/v1/run-model).
 Send "data" as an array of row objects with effect, se, n_obs, study_id.
 Nest all settings under "parameters"; top-level settings are silently
-ignored. Use exactly the parameters block above. Use the synchronous
+ignored. Nest exactly this: {"modelType": "MAIVE", "maiveMethod":
+"PET-PEESE", "weight": "equal_weights", "useLogFirstStage": true,
+"standardErrorTreatment": "bootstrap", "includeStudyClustering": true,
+"computeAndersonRubin": true, "winsorize": 0}. Use the synchronous
 endpoint; the async one ignores modelType. Always send
 "includeStudyClustering": true. Without it, standardErrorTreatment only
 picks the variance formula, not the clustering, which changes the
@@ -420,6 +421,19 @@ stage is now the recommended default.</p>
 """
 
 
+def example_rows(rows):
+    """The "data" array in the API example, rendered from rows that actually ship in
+    alpha.csv. Standard errors are printed to 4 places, which is what a reader retyping
+    the example needs; the CSV carries full precision."""
+    out = []
+    for r in rows:
+        out.append('    {"effect": %-7s "se": %-7s "n_obs": %-4s "study_id": "%s"},'
+                   % ("%g," % round(r["effect"], 4), "%g," % round(r["se"], 4),
+                      "%d," % int(r["n_obs"]), r["study_id"]))
+    out[-1] = out[-1].rstrip(",")
+    return '  "data": [\n' + "\n".join(out) + "\n  ],"
+
+
 def render(doc):
     ds, runs = doc["datasets"], doc["runs"]
     alpha = runs["alpha_maive"]["response"]
@@ -448,8 +462,9 @@ def render(doc):
              "url": "https://meta-analysis.cz/maive/how-to/#example",
              "text": "Upload the CSV to easymeta.org, or POST it to "
                      "https://api.maive.eu/v1/run-model with parameters nested under "
-                     "'parameters': modelType MAIVE, useLogFirstStage true, "
-                     "standardErrorTreatment bootstrap, includeStudyClustering true."},
+                     "'parameters': modelType MAIVE, maiveMethod PET-PEESE, weight "
+                     "equal_weights, useLogFirstStage true, standardErrorTreatment "
+                     "bootstrap, includeStudyClustering true."},
             {"@type": "HowToStep", "name": "Read the diagnostics before the estimate",
              "url": "https://meta-analysis.cz/maive/how-to/#example",
              "text": "The Egger test detects funnel asymmetry, which selective reporting "
@@ -471,6 +486,7 @@ def render(doc):
     }
 
     return PAGE % {
+        "example_rows": example_rows(doc["example_rows"]),
         "jsonld": json.dumps(ld, ensure_ascii=False, separators=(",", ":")),
         "footer": homepage_footer(), "retrieved": doc["retrieved"],
         "alpha_k": ds["alpha"]["estimates"], "alpha_g": ds["alpha"]["studies"],
