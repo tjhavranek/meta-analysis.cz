@@ -380,7 +380,7 @@ before your estimator ever sees the data.</p>
 }</code></pre>
 <p class="aside">Those are the first six of the 75 rows in
 <a href="/maive/how-to/alpha.csv">alpha.csv</a>; send all of them to get the numbers above.</p>
-<p>Prompt to paste into an assistant:</p>
+<p>Prompt to paste:</p>
 <pre class="code prompt"><code>Run MAIVE on my data via the EasyMeta API (POST api.maive.eu/v1/run-model).
 Send "data" as row objects with effect, se and n_obs. n_obs is the total
 sample size behind the estimate, not degrees of freedom; never guess it or
