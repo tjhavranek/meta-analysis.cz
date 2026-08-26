@@ -2,7 +2,7 @@
 
 Publicistika Tomáše Havránka a Zuzany Havránkové: komentáře pro celostátní média, sloupky pro litomyšlskou Lilii, rozhovory, stanoviska poradce bankovní rady ČNB a kratší příspěvky ze sítí. Texty jsou zde archivovány v plném znění s odkazem na původní vydání.
 
-Tento soubor obsahuje text všech textových položek (197 z celkem 215), u naprosté většiny v plném znění; výjimkou jsou položky označené v index.json jako publisher_excerpt (2), kde je uložena jen volně dostupná ukázka, a author_manuscript (19), kde jde o autorskou verzi, která se může lišit od otištěné. Zbývající položky jsou audio a video, které archiv vede pouze odkazem, a v tomto souboru nejsou; jejich metadata najdete v index.json a corpus.jsonl. Samostatně jsou vedeny kratší příspěvky ze sociálních sítí (24), psané převážně anglicky. Mají vlastní stránku https://meta-analysis.cz/komentare/posts/ a v index.json i corpus.jsonl jsou označeny jako genre=social_post.
+Tento soubor obsahuje text všech textových položek (198 z celkem 216), u naprosté většiny v plném znění; výjimkou jsou položky označené v index.json jako publisher_excerpt (2), kde je uložena jen volně dostupná ukázka, a author_manuscript (19), kde jde o autorskou verzi, která se může lišit od otištěné. Zbývající položky jsou audio a video, které archiv vede pouze odkazem, a v tomto souboru nejsou; jejich metadata najdete v index.json a corpus.jsonl. Samostatně jsou vedeny kratší příspěvky ze sociálních sítí (24), psané převážně anglicky. Mají vlastní stránku https://meta-analysis.cz/komentare/posts/ a v index.json i corpus.jsonl jsou označeny jako genre=social_post.
 
 ---
 
@@ -6754,6 +6754,58 @@ Nenuťme centrální banku zachraňovat státní finance. Ale měli bychom jí u
 
 ---
 
+## Nedokončené stanovisko k 4. situační zprávě 2019: nejistota v trajektorii sazeb
+
+*Česká národní banka, 22. května 2019. Tomáš Havránek.*
+
+*Nevyšlo. Stanovisko bylo psáno pro jednání bankovní rady ČNB, ale nebylo předloženo; uvedené datum je datum poslední úpravy.*
+
+Zdroj: https://meta-analysis.cz/komentare/cnb-stanovisko-poradce-4sz-2019/
+
+Stanovisko k situační zprávě o hospodářském a měnovém vývoji se skládá ze dvou částí: (i) vyjádření z pohledu dosahování cíle cenové stability zpracované jmenovitě poradcem člena bankovní rady či ve výjimečných případech zástupcem sekce finanční stability (část I) a (ii) vyjádření zpracované sekcí finanční stability, v němž je uplatněn také pohled dosahování cíle finanční stability (část II).
+
+## Vyjádření z pohledu dosahování cíle cenové stability
+
+Zpracoval Tomáš Havránek.
+
+## I.1 Měnověpolitické rozhodnutí
+
+*[Tuto část autor nenapsal.]*
+
+## I.2 Vyjádření k vyznění situační zprávy a k prognóze: role nejistoty v trajektorii sazeb
+
+Podle platné prognózy existuje 50% pravděpodobnost, že ve druhém čtvrtletí 2020 budeme mít repo sazbu pod úrovní 1,4 %, nebo naopak nad úrovní 2,5 %. Jinými slovy, prognóza vidí jen poloviční šanci, že do roka dojde méně než ke dvěma změnám sazeb na stejnou stranu. V této části stanoviska vznáším dva argumenty: zaprvé, nejistota kolem budoucí trajektorie sazeb je ještě větší, než indikuje náš vějířový graf (ze kterého odečítám čísla uvedená výše). Zadruhé, vzhledem k tak velké nejistotě nejsou pro dnešní rozhodování relevantní pohyby mediánu predikce sazeb ve středním a dlouhém období o pár desetinek.
+
+Ad argument 1: jak je vypočítána pravděpodobnost uvedená na začátku minulého odstavce? Náš vějířový graf, který je nejdůležitějším prvkem Zprávy o inflaci a tiskové konference po měnověpolitickém jednání, je sestrojen tak, že budoucí nejistotu odhaduje na základě minulých odchylek prognózy. To je intuitivní a logické (v našem případě to ani jinak nejde), nicméně skutečnou nejistotu to podhodnocuje. Takto sestrojený vějířový graf totiž nebere v úvahu expertní úpravy, které do modelu vstupují vždy nově a u kterých nedokážeme intervaly spolehlivosti určit – v této souvislosti lze třeba zmínit dlouhodobé dohady o tom, jak správně modelovat trajektorii kurzu, která s trajektorií sazeb tvoří spojené nádoby.
+
+Vějířový graf by také ideálně měl vystihovat nejistotu, která je spojena s předpoklady o chování lidí a firem (bayesovský přístup). Předpokládáme například, že lidé silně reagují na změnu úrokových sazeb, ale ve skutečnosti nevíme, jak velká jejich reakce je. Klíčový vliv tohoto parametru na výsledky běžného novokeynesiánského modelu jsem ilustroval v prosincovém stanovisku. Nyní pro podobnou ilustraci zvolím další parametr: míru tvorby zvyků ve spotřebě. Jedná se o jeden z přínosů psychologie (konkrétně Kahnemana a Tverského) do ekonomie. Zjednodušeně řečeno, je-li tvorba zvyků nulová, užitek člověk záleží pouze na jeho dnešní spotřebě. Je-li naopak tvorba zvyků rovna jedné, užitek záleží jen na rozdílu mezi současnou a minulou spotřebou (člověk je zcela zvyklý na nějakou životní úroveň a z ničeho menšího nemá užitek). Mezi 0 a 1 máme různé intenzity zvyku, se kterými dává model různé výsledky:
+
+*Graf 1: Úprava jednoho parametru značně mění výsledky modelu*
+
+Pro simulaci používám nejznámější novokeynesiánský model, Smets a Wouters (2007). Po elasticitě mezičasové substituce (prosincové stanovisko) nyní tedy dostáváme další parametr, jehož velikost zásadně ovlivňuje modelovou dynamiku spotřeby. Vzhledem k důležitosti tohoto parametru je logické očekávat, že na jeho velikosti bude v profesi panovat shoda. S kolegy jsme posbírali 597 odhadů tvorby zvyku z 81 studií a výsledek, publikovaný v European Economic Review (Havránek a kol., 2017), je následující:
+
+*Graf 2: Rigorózní literaturou lze odůvodnit libovolnou velikost parametru od 0 do 1*
+
+Graf by vypadal podobně nejasně, kdybychom se zaměřili na jednotlivé země. Vzhledem k tomu, že model g3 je kalibrovaný, a nikoli odhadovaný (tedy za „zvyk“ musíme dosadit natvrdo konkrétní číslo, nikoli bayesovský prior s nejistotou danou rozptylem odhadů v literatuře), neexistuje analytický způsob, jakým je možné tuto nejistotu, která přímo ovlivňuje nejistotu ohledně transmise, zachytit ve vějířovém grafu. Navíc takto dosazovat musíme celou řadu parametrů a jejich velikost se může v čase měnit (ruku v ruce třeba s finanční gramotností), takže jednotlivé nejistoty se násobí a skutečné intervaly spolehlivosti explodují.
+
+Ad argument 2: Vysoká nejistota kolem středního a dlouhého období prognózy má přímočaré dopady pro měnověpolitické rozhodování v situaci, kdy bankovní rada vyhlazuje doporučení prognózy (tedy např. nezvýší úrokové sazby s vědomím, že by je musela za další dvě jednání opět snížit). Zatímco pro toto jednání je vodítko již dané (prognóza je konzistentní s průměrnou repo sazbou za 3. čtvrtletí ve výši 2,2 %, tedy zhruba s jedním hikem oproti současnému stavu), pro další čtvrtletí bude prognóza revidována a může se měnit hodně. Koneckonců v listopadu roku 2018 jsme překonali 90% horní interval spolehlivosti u projekce sazeb z květnové prognózy (kdyby to bylo stejné i u letošní květnové prognózy, měli bychom v listopadu repo na 3 %). Pokles implikované sazby na 2,1 % pro první čtvrtletí 2020 a 2,0 % pro druhé čtvrtletí je tedy nemateriální a neměl by ovlivňovat dnešní rozhodování.
+
+Nicméně vyhlazování doporučení prognózy je vlastně vyhlazováním na druhou: model již svoje vlastní doporučení (podle modelu optimálním sazby v danou chvíli pro budoucí dosahování inflačního cíle) vyhlazuje s ohledem na minulé vyhlazování bankovní rady. S nadsázkou (ale modelově správně) lze konstatovat, že budeme-li tímto způsobem vyhlazovat vyhlazenou trajektorii, rovnovážným stavem budou neměnné sazby. Přitom hlavní výhodou měnové politiky je právě rychlost reakce. Výhodnost aktivnější měnové politiky je také zdůrazněna nejnovější třídou makroekonomických modelů, kterým se věnuji v další části stanoviska.
+
+## I.3 Tematický komentář k situační zprávě: G3+ a chování spotřebitelů
+
+*[Tuto část autor nenapsal. Zůstaly po ní jen popisky dvou grafů: „Graf 3: V modelu HANK je transmise slabší a pomalejší než v RANK“ a „Graf 4: Nižší elasticita substituce mezi kapitálem a prací znamená slabší transmisi“.]*
+
+## I.4 Dílčí připomínky a otázky
+
+*[Tuto část autor nenapsal.]*
+
+## I.5 Reference
+
+*[Tuto část autor nenapsal.]*
+
+---
+
 ## Dálnice D35: zpoždění zabíjí
 
 *Lilie, květen 2019. Tomáš Havránek.*
@@ -6992,7 +7044,7 @@ Stanovisko k situační zprávě o hospodářském a měnovém vývoji se sklád
 
 ## I. Vyjádření z pohledu dosahování cíle cenové stability
 
-Zpracoval Tomáš Havránek. (Děkuji Michalu Frantovi, Aleši Michlovi a Jiřímu Schwarzovi za diskuze. Odpovědnost za vyznění je moje.)
+Zpracoval Tomáš Havránek.[1]
 
 ## I.1 Měnověpolitické rozhodnutí
 
@@ -7059,6 +7111,10 @@ Závěrem: dostupná data o klientských sazbách končí říjnem 2018. Za list
 - Havranek, T. & Horvath, R. & Irsova, Z. & Rusnak, M. (2015): “Cross-Country Heterogeneity in Intertemporal Substitution,” Journal of International Economics 96(1), 100-118.
 - Kaplan, G. & Moll, B. & Violante, G. (2018): “Monetary Policy According to HANK,” American Economic Review 108(3), 697-743.
 - Smets, F. & Wouters, R. (2007): “Shocks and Frictions in US Business Cycles: A Bayesian DSGE Approach,” American Economic Review 97(3), 586-606.
+
+## Poznámky
+
+[1] Děkuji Michalu Frantovi, Aleši Michlovi a Jiřímu Schwarzovi za diskuze. Odpovědnost za vyznění je moje.
 
 ---
 
@@ -7431,6 +7487,8 @@ Proto si ho s dvojící kolegů sama vytvořila a nepřímo se tak zapojila do v
 *Česká národní banka, 25. září 2017. Tomáš Havránek.*
 
 Zdroj: https://www.cnb.cz/export/sites/cnb/cs/menova-politika/.galleries/br_zapisy_z_jednani/2017/download/stanoviska_2017_06.pdf
+
+STANOVISKO K 6. SZ[1]
 
 ## 1. Měnověpolitické doporučení
 
@@ -7822,6 +7880,8 @@ Zdroj: https://www.cnb.cz/export/sites/cnb/cs/menova-politika/.galleries/br_zapi
 
 STANOVISKO K 6. SZ[1]
 
+##
+
 ## 1. Doporučení
 
 Období od představení 5. SZ se neslo ve znamení mírně nepříznivých informací z reálné ekonomiky: nižší než prognózovaná dynamika mezd, spotřeby domácností a fixních investic za druhé čtvrtletí a slabé údaje za červenec ohledně maloobchodních tržeb, zahraničního obchodu a průmyslové výroby. Samotný růst HDP byl sice oproti prognóze vyšší, ale jen vlivem nižšího růstu dovozu a menšího poklesu zásob. Skutečná dynamika ekonomiky ve druhém čtvrtletí je však zřejmě podhodnocena metodou očištění o počet kalendářních dnů, zatímco červencová data jsou tažena dolů vlivem celozávodních dovolených. Za důležité považuji, že se opakovaně naplňuje prognóza inflace. ECB navíc zatím nediskutuje o prodloužení programu nákupu aktiv. Stejně jako 6. SZ tak hodnotím rizika srpnové prognózy jako vyrovnaná a domnívám se, že podmínky relevantní pro termín exitu se nezměnily. Doporučuji tedy neměnit nastavení sazeb ani parametrů kurzového závazku. V tomto stanovisku třemi způsoby ukazuji, že dostupné informace o dopadech kvantitativního uvolňování a z derivátového trhu naznačují mírnější posílení koruny po exitu, než předpokládá prognóza, a to i po promítnutí efektů spekulací z tohoto měsíce.
@@ -7832,6 +7892,8 @@ Tyto úvahy implikují, že za současných okolností není vhodné prodlužova
 
 Z toho také vyplývá, že v současné situaci považuji za nevhodné zavedení statutárních záporných sazeb, které by sice omezily spekulace, ale tím jen odsunuly problém posilování koruny do doby po exitu v souvislosti s normalizací sazeb. Důležité segmenty finančního trhu již fungují de facto za podmínek (často docela hlubokých) záporných úrokových měr, což je důsledek kombinace záporných sazeb a kvantitativního uvolňování ECB a kurzového závazku ČNB. Statutární záporné sazby v řádu několika desítek bazických bodů by tedy mnoho nevyřešily. V dlouhodobém pohledu však tak optimistický nejsem a obávám se, že záporným sazbám se budeme vyhýbat obtížně.[2] V posledních dvou dekádách celosvětově klesají neutrální úrokové míry, přičemž v eurozóně jsou již nyní záporné (Holston a kol., 2016). Za takových podmínek budeme na nulovou hranici sazeb narážet při většině recesí. Jakkoli je kurzový závazek velmi efektivní, není zcela flexibilní a je otázka, zda k němu bude vhodné přistupovat opakovaně. Zajímavým aspektem současné situace je, že máme možnost sledovat fungování v praxi záporných sazeb v ČR včetně řady jejich vedlejších efektů. V příštích letech by také mělo docházet k rychlejšímu zvyšování podílu bezhotovostních transakcí v souvislosti se stále větším využíváním bezkontaktních platebních karet a dalších inovací.
 
+##
+
 ## 2. Stínové sazby
 
 Model g3 používá stínové sazby Euribor k zachycení efektů nestandardní měnové politiky v eurozóně. Jistou nekonzistenci vidím v tom, že tyto stínové sazby jsou v podmínce nekryté úrokové parity porovnávány s oficiálními (nestínovými) sazbami Pribor, ačkoli dodávání korunové likvidity v rámci kurzového závazku ČNB také představuje formu kvantitativního uvolňování, a „referenční“ sazby Pribor tak neodrážejí skutečnou míru uvolnění měnové politiky. Pro konstrukci stávající stínové sazby ECB je navíc použita extrapolace z modelu NiGEM, který se spoléhá na odhady dopadů nekonvenčních politik na HDP, které jsou samy o sobě zatíženy nejistotou. Mnohem častěji bývají ve světě používány stínové sazby sestavené na základě výnosové křivky,[3] jejichž odhady pro ČR prezentuji v tomto stanovisku.
@@ -7841,11 +7903,13 @@ Nejznámější metoda výpočtu stínových sazeb je prezentována v článku W
 K výpočtu používám data sestrojená v rámci projektu Dvořák a kol. (2016), která jsou založena na údajích systému MtS (resp. BCPP) a která vykazují menší chybovost, tj. přítomnost dat s nereálnou cenou, oproti Bloombergu nebo Reuters Datastream. Navíc užívání bezkupónové křivky přímo z Bloombergu/Datastreamu naráží na 1) neexistenci hodnoty pro některé potřebné splatnosti, 2) nedostatečnou délku časových řad, zejména pro delší splatnosti a 3) nedostatečnou transparenci ohledně metodologie, která je při jejich konstrukci užívána a která může mít nezanedbatelný vliv na výsledné hodnoty. Model pro výpočet stínové sazby v tomto stanovisku používá dynamickou dvoufaktorovou specifikaci Nelson a Siegel (1987) a je odhadnut pomocí iterovaného rozšířeného Kalmanova filtru.
 
 *Graf 1: Stínová sazba ČNB*
+
 Graf 1 ukazuje, že odhadnutá stínová sazba do roku 2012 relativně dobře kopíruje hlavní měnověpolitickou sazbu (epizoda podstřelení v roce 2002 může souviset s tehdejšími intervencemi). Tříměsíční Pribor přibližně odpovídá stínové i nestínové repo sazbě do roku 2008, od té doby je výrazně nad nimi a od roku 2012 přestává být jakkoli informativní co do míry uvolněnosti měnové politiky měřené stínovou sazbou. Samotná stínová sazba se do záporu noří již v roce 2012, snad v souvislosti s tvorbou očekávání na další uvolnění a přelivy dopadů měnové politiky ECB, které postupně stlačily výnosy českých vládních dluhopisů. Stínová sazba zůstává na mírně záporných úrovních až do spuštění kurzového závazku, načež prudce klesá a v září 2016 již dosahuje −8 %.
 
 Takto hluboce záporná hodnota se zdá překvapivá, zejména v porovnání s relativně lehce zápornou stínovou sazbou ECB spočtenou z NiGEMu a aktuálně používanou v prognóze, nicméně stínová sazba ECB prezentovaná samotným Krippnerem (graf 2) je v současnosti podobně hluboce záporná, jen mírně výše (stále však pod −7 %). Odhady Wu a Xia (2016) jsou nyní pro ECB také velmi hluboce záporné. V grafu 2 je dobře vidět vliv očekávání na stínovou sazbu: ve druhém čtvrtletí loňského roku rostly přechodně, ale významně výnosy dluhopisů zemí eurozóny jako reakce na sérii optimistických zpráv ohledně inflace a z reálné ekonomiky, což snížilo očekávání dalšího uvolnění měnové politiky ze strany ECB. To se odrazilo v přechodném zvýšení stínové sazby jako měřítka celkové uvolněnosti měnové politiky, kterou by v absenci efektivní dolní hranice odrážela hlavní měnověpolitická sazba.
 
 *Graf 2: Stínová sazba ECB (výpočet L. Krippnera, RBNZ)*
+
 Obecně analýza v této části indikuje, že úrokový diferenciál měřený stínovými sazbami má opačné znaménko, než předpokládá model g3, a tedy stínová sazba je více záporná v případě ČNB než ECB.[5] To odráží skutečnost, že udržování kurzového závazku dorovnává jakékoli uvolnění měnové politiky ze strany ECB (což vlastně reflektuje měnové trilema), přitom samotné ustavení závazku a možná také dodatečné nákupy eur v reakci na spekulativní útoky uvolňují tuzemskou měnovou politiku nad rámec uvolnění doručeného ECB, zejména díky snižování výnosu dluhopisů a dalších úrokových měr. Stínová sazba ČNB se nachází pod stínovou sazbou ECB právě od loňského léta, kdy k první takové spekulaci došlo.
 
 ## 3. Úrokový diferenciál
@@ -7853,25 +7917,12 @@ Obecně analýza v této části indikuje, že úrokový diferenciál měřený 
 Jakkoli mohou být stínové sazby v určitých situacích užitečným analytickým nástrojem, jedná se o akademickou konstrukci a nikoli o skutečné úrokové míry, za které by tržní aktéři mohli obchodovat. Nabízí se tak otázka, zda by v podmínce úrokové parity neměly být srovnávány reálně obchodovatelné úrokové míry. Pro ECB lze jednoduše použít tříměsíční (nestínový) Euribor, protože mezibankovní trh na jeho bázi v eurozóně stále určitým způsobem funguje, ale problém nastává u českých sazeb, jelikož Pribor je de facto mrtvá sazba. Efektivní výnos na mezní korunu investovanou ze zahraničí je dokonce nižší než depo/repo sazba ČNB, a to ze čtyř důvodů: 1) tržní aktéři vnímají určité riziko, že ČNB zavede statutární záporné sazby, a snaží se vyhnout dlouhodobějším úložkám na účtech, 2) regulace vede k limitům na protistranu a pro mnoho investorů je bezpečnější zakoupit nějaké aktivum, typicky vládní dluhopis nebo pokladniční poukázku, namísto úložky na účtu, 3) domácí banky příliš nechtějí přijímat další likviditu kvůli navyšování bilance, což jim zhoršuje ukazatele typu ROA, 4) pro řadu investorů a spekulantů je komplikované spravovat korunovou likviditu, a tak využívají měnových derivátů, při kterých jsou prostředky na čas převedeny do eur či dolarů. Protože díky existenci kurzového závazku nejsou forwardové kurzy typicky slabší než 27 CZK/EUR, je implikovaný korunový výnos z takové operace záporný.
 
 *Graf 3: Tříměsíční Euribor a implikovaná korunová sazba*
-‐0.1
-
-‐0.15
-
-‐0.2
-
-‐0.25
-
-‐0.3
-
-‐0.35
-
-‐0.4
-
-‐0.45
 
 ‐0.5 leden 16 únor 16 březen 16 Euribor 3M duben 16 květen 16 červen 16 červenec 16 srpen 16 týdenní klouzavý průměr 3M implikované CZK sazby září 16
 
 Graf 3 ukazuje, že neexistuje velký diferenciál mezi Euriborem a implikovanou korunovou sazbou (zde používám týdenní klouzavý průměr z toho důvodu, že forwardový kurz, a tedy i z něho odvozená implikovaná sazba, je dosti volatilní). Po většinu letošního roku je implikovaný tříměsíční korunový výnos dokonce více záporný než tříměsíční Euribor. Záporný implikovaný výnos se potom přelévá do dalších oblastí finančního trhu, kde pozorujeme například výrazně záporné úrokové sazby ze státních dluhopisů. Anekdotická evidence také naznačuje, že ačkoli tříměsíční poptávkové ceny kótované v Bloombergu jsou kladné, chce-li jedna banka u druhé peníze skutečně uložit, reálně nabídnutý úrok bývá záporný (snadno kolem −0.3 %). Ani tento pohled tedy nenaznačuje, že by ve skutečnosti existoval významný kladný diferenciál mezi korunovými a eurovými sazbami. K podobnému závěru vede i jednoduché srovnání výnosu českých a např. rakouských vládních dluhopisů, a diferenciál předpokládaný prognózou v efektivní výši plus 1,8 p. b. (nestínový Pribor vs. stínový Euribor podle NiGEMu) je tak podle mého názoru řádově nadhodnocený.
+
+##
 
 ## 4. Forwardové kurzy
 
@@ -7880,46 +7931,52 @@ Takzvaná hypotéza nevychýlenosti (unbiasedness hypothesis) tvrdí, že nejlep
 27.04 27.02 27 26.98 26.96 26.94 26.92 26.9 26.88 26.86 26.84 26.82 září 16
 
 *Graf 4: Forwardová křivka CZK/EUR*
+
 "tvrdý" závazek
 
 "měkký" závazek leden 17 duben 17 červenec 17 říjen 17 únor 18 květen 18 srpen 18
 
 Graf 4 ukazuje, že trh očekává jisté posílení kurzu po vypršení „tvrdého“ závazku (tedy na začátku ledna 2017), ale nečeká žádnou reakci na vypršení „měkkého“ závazku (polovina roku 2017). Vzhledem k formulaci závazku (konec roku, polovina roku) má největší smysl zkoumat forwardovou křivku ze začátku měsíce, aby se několikaměsíční forward vztahoval také k začátku měsíce, kdy je nejdříve možné ze závazku vystoupit; graf se vztahuje k začátku září. Nicméně forwardová křivka má takový tvar po většinu letošního roku: například křivka ze začátku června by ukázala stejný obrázek, tedy posílení kurzu v lednu 2017 a žádný skok v polovině roku 2017. Nejedná se tedy o žádnou novinku, která by se objevila až v září.[6]
 
-*Graf 5: Dvouletý forward CZK/EUR*
+*Graf 5: Dvouletý forward CZK/EUR
+
 Očekávané posílení je velmi malé a vyniká pouze ve srovnání s ještě menším dodatečným posílením v horizontu 2 let, které směrovalo na začátku září někam k hodnotě 26,85. Letošní vývoj dvouletého forwardu zachycuje graf 5, ze kterého je vidět, že se v průměru pohybuje kolem 26,80; v první polovině roku měl tendenci oslabovat, v září v reakci na spekulace posílil na zhruba 26,60. Takto silný byl již před rokem, pak se však po odeznění spekulací postupně vrátil k 26,80, a je tedy dost možné, že podobný vývoj budeme pozorovat i letos. Moje interpretace forwardové křivky je taková, že určitý segment trhu očekává opuštění flooru ihned po vypršení tvrdého závazku, což je také v souladu s anekdotickou evidencí.
 
-Budoucí posílení kurzu implikované forwardy je mírné buď proto, že trh předpokládá jen slabý posun kurzu po opuštění závazku, nebo že na opuštění závazku spekuluje jen malá část tržních aktérů. První z těchto hypotéz dodává kredibilitu skutečnost, že ani dvouletý forward nenaznačuje výrazné posílení koruny, dokonce ani v průběhu zářijové spekulační vlny – přitom drtivá většina tržních aktérů počítá s tím, že do dvou let dojde k exitu (viz například zářijové Inflační očekávání finančního trhu). Tato tržní očekávání měřená forwardovými cenami navíc docela dobře odpovídají průměrným odhadům nominálního rovnovážného kurzu z dílny sekce měnové, které jsou pro současné čtvrtletí na úrovni 26,85 a pro konec 2017 na úrovni 26,60.[7] Nejsou však konzistentní s modelem g3, který čeká posílení pod hranici 26 CZK/EUR – resp. konkrétně nejsou v souladu s modelovým očekáváním strmého růstu sazeb, který přispívá k silnějšímu kurzu koruny na horizontu prognózy.
+Budoucí posílení kurzu implikované forwardy je mírné buď proto, že trh předpokládá jen slabý posun kurzu po opuštění závazku, nebo že na opuštění závazku spekuluje jen malá část tržních aktérů. První z těchto hypotéz dodává kredibilitu skutečnost, že ani dvouletý forward nenaznačuje výrazné posílení koruny, dokonce ani v průběhu zářijové spekulační vlny – přitom drtivá většina tržních aktérů počítá s tím, že do dvou let dojde k exitu (viz například zářijové Inflační očekávání finančního trhu). Tato tržní očekávání měřená forwardovými cenami navíc docela dobře odpovídají průměrným odhadům nominálního rovnovážného kurzu z dílny sekce měnové, které jsou pro současné čtvrtletí na úrovni 26,85 a pro konec 2017 na úrovni 26,60.7 Nejsou však konzistentní s modelem g3, který čeká posílení pod hranici 26 CZK/EUR – resp. konkrétně nejsou v souladu s modelovým očekáváním strmého růstu sazeb, který přispívá k silnějšímu kurzu koruny na horizontu prognózy.
+
+##
 
 ## 5. Dílčí poznámky a otázky k SZ
 
- Objem vyplacených mezd v reálném vyjádření rostl ve druhém čtvrtletí meziročně o poznání rychleji než spotřeba (5,6 % oproti 2,2 %). Může být tento rozdíl částečně vysvětlen hypotézou permanentního důchodu? Sám model g3, na rozdíl například od jádrového modelu Ministerstva financí, nepředpokládá existenci spotřebitelů, kteří by utráceli pevně danou část svého současného příjmu (tzv. „rule of thumb“ spotřebitelé, již buď neoptimalizují spotřebu, nebo ji nemohou vyhlazovat z důvodu kreditních omezení). Dostupná empirická literatura ukazuje, že model g3 je v tomto ohledu specifikován správně, protože hypotéza permanentního důchodu je rozumná první aproximace reálného chování spotřebitelů (Havránek a Sokolova, 2016).
+• Objem vyplacených mezd v reálném vyjádření rostl ve druhém čtvrtletí meziročně o poznání rychleji než spotřeba (5,6 % oproti 2,2 %). Může být tento rozdíl částečně vysvětlen hypotézou permanentního důchodu? Sám model g3, na rozdíl například od jádrového modelu Ministerstva financí, nepředpokládá existenci spotřebitelů, kteří by utráceli pevně danou část svého současného příjmu (tzv. „rule of thumb“ spotřebitelé, již buď neoptimalizují spotřebu, nebo ji nemohou vyhlazovat z důvodu kreditních omezení). Dostupná empirická literatura ukazuje, že model g3 je v tomto ohledu specifikován správně, protože hypotéza permanentního důchodu je rozumná první aproximace reálného chování spotřebitelů (Havránek a Sokolova, 2016).
 
- Podobně jako toto stanovisko dává i SZ rovnítko mezi forwardovou/futures křivku a tržní výhled cen, avšak pro komodity namísto měnového kurzu. Hypotéza nevychýlenosti ale u komodit neplatí. Futures křivka samozřejmě také obsahuje element predikce budoucí spotové ceny, ale silně ji ovlivňují následující faktory: 1) náklady na skladování a pojištění, 2) tzv. convenience yield, 3) další fyzické vlastnosti komodity a 4) převažující poptávka po zajištění od producentů komodity nad poptávkou po zajištění od odběratelů komodity (což je Keynesovo vysvětlení backwardace), díky které futures ceny podhodnocují budoucí spotové ceny.
+• Podobně jako toto stanovisko dává i SZ rovnítko mezi forwardovou/futures křivku a tržní výhled cen, avšak pro komodity namísto měnového kurzu. Hypotéza nevychýlenosti ale u komodit neplatí. Futures křivka samozřejmě také obsahuje element predikce budoucí spotové ceny, ale silně ji ovlivňují následující faktory: 1) náklady na skladování a pojištění, 2) tzv. convenience yield, 3) další fyzické vlastnosti komodity a 4) převažující poptávka po zajištění od producentů komodity nad poptávkou po zajištění od odběratelů komodity (což je Keynesovo vysvětlení backwardace), díky které futures ceny podhodnocují budoucí spotové ceny.
 
- Oceňuji práci na boxu o vlivu počtu pracovních dní na dynamiku HDP, který nakonec nebyl zařazen do SZ. Uvažuje-li sekce měnová o zahrnutí kalendářních vlivů do prognózy, přimlouvám se za to, aby technika očištění nebyla lineární, ale aby umožňovala klesající mezní efekt dodatečných dnů nad rámec čtvrtletního průměru.
+• Oceňuji práci na boxu o vlivu počtu pracovních dní na dynamiku HDP, který nakonec nebyl zařazen do SZ. Uvažuje-li sekce měnová o zahrnutí kalendářních vlivů do prognózy, přimlouvám se za to, aby technika očištění nebyla lineární, ale aby umožňovala klesající mezní efekt dodatečných dnů nad rámec čtvrtletního průměru.
 
 Jinými slovy, je-li v prvním čtvrtletí o jeden pracovní den více než průměr, zatímco ve druhém to je o tři dny více než průměr, čekal bych, že velikost očištění bude v případě druhého čtvrtletí méně než trojnásobek očištění v prvním čtvrtletí. Důvodem je skutečnost, že spotřebu a množství vykonané práce budou kromě samotného počtu odpracovaných hodin ovlivňovat také pravidelné měsíční platby a termíny.
 
- Maloobchodní tržby a průmyslová výroba zaznamenaly v červenci meziroční propad. Zajímalo by mě, proč má metoda sezónního očištění na první pohled větší dopad na tržby (po očištění prakticky na úrovni HP trendu, výkyv je téměř zcela vyrovnán) než průmyslovou výrobu (hluboce pod HP trendem); viz přílohy 9 a 10 v SZ. Meziroční propad průmyslové výroby, a to i v sezonně očištěném vyjádření, byl v červenci nejvýraznější za posledních 80 měsíců. Je nepravděpodobné, že celý tento pokles mohou vysvětlit celozávodní dovolené. Co znamená vyjádření, že ho vysvětlují „do značné míry“ (str. 2)? Tento dopad by mělo být možné odhadnout, podobně jak tomu je u efektu očištění o kalendářní vlivy.
+• Maloobchodní tržby a průmyslová výroba zaznamenaly v červenci meziroční propad. Zajímalo by mě, proč má metoda sezónního očištění na první pohled větší dopad na tržby (po očištění prakticky na úrovni HP trendu, výkyv je téměř zcela vyrovnán) než průmyslovou výrobu (hluboce pod HP trendem); viz přílohy 9 a 10 v SZ. Meziroční propad průmyslové výroby, a to i v sezonně očištěném vyjádření, byl v červenci nejvýraznější za posledních 80 měsíců. Je nepravděpodobné, že celý tento pokles mohou vysvětlit celozávodní dovolené. Co znamená vyjádření, že ho vysvětlují „do značné míry“ (str. 2)? Tento dopad by mělo být možné odhadnout, podobně jak tomu je u efektu očištění o kalendářní vlivy.
 
- Jistou nekonzistenci vidím v tom, že prognóza přebírá pro predikci kurzu USD/EUR údaj z Consensus Forecast, zatímco pro predikci ceny ropy používá futures křivku (popsáno na str. 7 v SZ). Jak jsem již zmínil, forwardové kurzy měn představují skutečně obchodované kontrakty, takže dává smysl věřit jim více než odhadům analytiků. Hypotéza nevychýlenosti naopak neplatí u komodit, takže bych čekal spíše obrácené využití zdrojů dat pro tyto predikce.
+• Jistou nekonzistenci vidím v tom, že prognóza přebírá pro predikci kurzu USD/EUR údaj z Consensus Forecast, zatímco pro predikci ceny ropy používá futures křivku (popsáno na str. 7 v SZ). Jak jsem již zmínil, forwardové kurzy měn představují skutečně obchodované kontrakty, takže dává smysl věřit jim více než odhadům analytiků. Hypotéza nevychýlenosti naopak neplatí u komodit, takže bych čekal spíše obrácené využití zdrojů dat pro tyto predikce.
 
- Nejsem si jist, zda je zapotřebí věnovat v SZ tolik prostoru sazbě Pribor, když se v podstatě nejedná o obchodovanou sazbu a její relevance je v současné situaci nejasná. Na ušetřeném prostoru by mohly být diskutovány např. implikované sazby (viz část 3 stanoviska), které bývaly doposud obvykle jen krátce zmíněny v MPD.
+• Nejsem si jist, zda je zapotřebí věnovat v SZ tolik prostoru sazbě Pribor, když se v podstatě nejedná o obchodovanou sazbu a její relevance je v současné situaci nejasná. Na ušetřeném prostoru by mohly být diskutovány např. implikované sazby (viz část 3 stanoviska), které bývaly doposud obvykle jen krátce zmíněny v MPD.
 
- S blížícím se exitem bych v SZ přivítal analýzy porovnávající nárůst bilance ČNB a ECB v době od spuštění kurzového závazku a potenciální implikace pro budoucí vývoj kurzu koruny (například ve formě neveřejného boxu). Přivítal bych také větší využívání a interpretaci forwardové křivky kurzu (viz část 4 tohoto stanoviska).
+• S blížícím se exitem bych v SZ přivítal analýzy porovnávající nárůst bilance ČNB a ECB v době od spuštění kurzového závazku a potenciální implikace pro budoucí vývoj kurzu koruny (například ve formě neveřejného boxu). Přivítal bych také větší využívání a interpretaci forwardové křivky kurzu (viz část 4 tohoto stanoviska).
 
- Ve druhém grafu v příloze 12 (úrokový diferenciál) je chybně označena legenda. Graf také ilustruje podle mého názoru nerealistický předpoklad prognózy ohledně nárůstu diferenciálu až na 2,5 %, který je pravděpodobně tažen předpokladem vyšší neutrální úrokové míry v ČR než v eurozóně, kde je neutrální míra dle nejlepší dostupné evidence (Holston a kol., 2016) nyní záporná a kterou odráží tržní výhled Euriboru.
+• Ve druhém grafu v příloze 12 (úrokový diferenciál) je chybně označena legenda. Graf také ilustruje podle mého názoru nerealistický předpoklad prognózy ohledně nárůstu diferenciálu až na 2,5 %, který je pravděpodobně tažen předpokladem vyšší neutrální úrokové míry v ČR než v eurozóně, kde je neutrální míra dle nejlepší dostupné evidence (Holston a kol., 2016) nyní záporná a kterou odráží tržní výhled Euriboru.
 
-Reference
+## Reference
 
-Dvořák, M., Komárek, L., Komárková, Z., Ters, K., a Urban, Y. (2016): „Longer Term Yield Decomposition: An Analysis of the Czech Government Yield Curve,“ běžící výzkumný projekt ČNB C7/16.
-
-Fama, E. (1984): „Forward and Spot Exchange Rates, “ Journal of Monetary Economics 14, 319-38. Havránek, T., Sokolova, A. (2016): „Do Consumers Really Follow a Rule of Thumb? Three Thousand Estimates from 130 Studies Say ‘Probably Not’, “ ČNB working paper před oponenturou. Holston, K., Laubach, T., a Williams, J. (2016): „Measuring the Natural Rate of Interest: International Trends and Determinants,“ FRBSF Working Paper 2016-11. Krippner, L. (2015): „A Comment on Wu and Xia and the Case for Two-Factor Shadow Short Rates,“ CAMA
-
-Working Paper 48/2015. Nelson, C. and Siegel, A. (1987): „Parsimonious modelling of yield curves,“ Journal of Business 60(4), 473-489. Wu, J. a Xia, F. (2016): „Measuring the Macroeconomic Impact of Monetary Policy at the Zero Lower Bound,“
-
-Journal of Money, Credit, and Banking, 48(2-3), 253-291.
+- Dvořák, M., Komárek, L., Komárková, Z., Ters, K., a Urban, Y. (2016): „Longer Term Yield Decomposition: An Analysis of the Czech Government Yield Curve,“ běžící výzkumný projekt ČNB C7/16.
+- Fama, E. (1984): „Forward and Spot Exchange Rates, “ Journal of Monetary Economics 14, 319-38.
+- Havránek, T., Sokolova, A. (2016): „Do Consumers Really Follow a Rule of Thumb? Three Thousand Estimates from 130 Studies Say ‘Probably Not’, “ ČNB working paper před oponenturou.
+- Holston, K., Laubach, T., a Williams, J. (2016): „Measuring the Natural Rate of Interest: International Trends and Determinants,“ FRBSF Working Paper 2016-11.
+- Krippner, L. (2015): „A Comment on Wu and Xia and the Case for Two-Factor Shadow Short Rates,“ CAMA
+- Working Paper 48/2015.
+- Nelson, C. and Siegel, A. (1987): „Parsimonious modelling of yield curves,“ Journal of Business 60(4), 473-489.
+- Wu, J. a Xia, F. (2016): „Measuring the Macroeconomic Impact of Monetary Policy at the Zero Lower Bound,“
+- Journal of Money, Credit, and Banking, 48(2-3), 253-291.
 
 ## Poznámky
 
@@ -7947,9 +8004,11 @@ Zdroj: https://www.cnb.cz/export/sites/cnb/cs/menova-politika/.galleries/br_zapi
 
 STANOVISKO K 2. SZ[1]
 
+##
+
 ## 1. Doporučení
 
-Od představení prognózy v 1. SZ došlo ke kumulaci řady protiinflačních vlivů (nižší pozorovaná inflace včetně jádrové, nižší růst HDP, nižší výhledy těchto proměnných v eurozóně). Druhá situační zpráva prezentuje aktualizovaný scénář prognózy, ve kterém jsou tak výhledy všech klíčových proměnných posunuty níže. Souhlasím s obecným vyzněním SZ, ačkoli jsem před jejím přečtením intuitivně očekával, že revize výhledu inflace směrem dolů bude ještě výraznější. I tak je prognózovaná měnověpolitická inflace na horizontu měnové politiky zřetelně pod cílem (1,[3] % − 1,8 %). Byla by ještě trochu níže, kdyby na ni už nezačínal působit vyšší výhled ceny ropy, způsobený primárně diskuzí o omezení těžby, což představuje nabídkový šok. Za normálních okolností bych tedy doporučil nejméně jedno snížení repo sazby. Potřeba uvolnění měnových podmínek však není tak velká, aby vedla k nutnosti nyní riskovat vedlejší účinky záporných sazeb nebo posunovat hladinu kurzového závazku. Další prodlužování termínu exitu se mi v současné situaci nejeví jako efektivní způsob uvolňování měnových podmínek. Nezbývá mi tedy než doporučit ponechání sazeb, hladiny kurzového závazku i termínu nejbližšího možného ukončení závazku na současných hodnotách.
+Od představení prognózy v 1. SZ došlo ke kumulaci řady protiinflačních vlivů (nižší pozorovaná inflace včetně jádrové, nižší růst HDP, nižší výhledy těchto proměnných v eurozóně). Druhá situační zpráva prezentuje aktualizovaný scénář prognózy, ve kterém jsou tak výhledy všech klíčových proměnných posunuty níže. Souhlasím s obecným vyzněním SZ, ačkoli jsem před jejím přečtením intuitivně očekával, že revize výhledu inflace směrem dolů bude ještě výraznější. I tak je prognózovaná měnověpolitická inflace na horizontu měnové politiky zřetelně pod cílem (1,3 % − 1,8 %). Byla by ještě trochu níže, kdyby na ni už nezačínal působit vyšší výhled ceny ropy, způsobený primárně diskuzí o omezení těžby, což představuje nabídkový šok. Za normálních okolností bych tedy doporučil nejméně jedno snížení repo sazby. Potřeba uvolnění měnových podmínek však není tak velká, aby vedla k nutnosti nyní riskovat vedlejší účinky záporných sazeb nebo posunovat hladinu kurzového závazku. Další prodlužování termínu exitu se mi v současné situaci nejeví jako efektivní způsob uvolňování měnových podmínek. Nezbývá mi tedy než doporučit ponechání sazeb, hladiny kurzového závazku i termínu nejbližšího možného ukončení závazku na současných hodnotách.
 
 Ve zbytku stanoviska se věnuji úvahám spojeným s exitem z kurzového závazku. Nyní se mi zdá nepravděpodobné, že bez dodatečných opatření bude možné závazek opustit v polovině roku 2017. Při zahájení intervencí bylo plánováno, že k exitu dojde v souvislosti s výrazným přestřelením cíle (až na 3 %), které by zaručilo, že kurzový závazek nebude muset být brzy po exitu obnoven. V současné době naopak pozorujeme na horizontu prognózy podstřelení cíle. Důležitější než aktuální přestřelení v okamžiku exitu je sice očekávání budoucího přestřelení v okamžiku exitu za předpokladu, že by k exitu nedošlo (díky zpoždění transmise měnové politiky, které je ovšem v případě kurzového kanálu kratší, snad jen půl roku). I tak ale očekávání „natlakovaného inflačního papiňáku“ v polovině roku 2017 může být do značné míry dáno předpokladem znatelného růstu stínového EURIBORu v daném roce, o kterém nejsem přesvědčen (viz moje 2. dílčí připomínka k SZ). Přitom exit v polovině roku 2017 považuji za žádoucí, neboť v současném režimu nejsme schopni jemně vyhlazovat vývoj ekonomiky, což odráží i moje doporučení v prvním odstavci. Odklad exitu tedy sám o sobě představuje náklad, neboť oddaluje návrat k používání jemnějšího nástroje.
 
@@ -7959,6 +8018,8 @@ V části 3 diskutuji mezinárodní zkušenosti s použitím záporných sazeb a
 
 Druhý základní způsob, jak zvýšit pravděpodobnost exitu v polovině příštího roku, je namísto uvolnění měnových podmínek zavést podpůrné opatření, které by omezilo potenciální posilování koruny po exitu: to nazývám „japonský scénář“ záporných sazeb. Ten předpokládá, že záporné sazby fungují zejména přes kurzový kanál. Všechny existující rezervy jsou vyňaty ze záporného úročení; záporné sazby by se vztahovaly pouze na nové rezervy (efektivně na spekulativní kapitál ze zahraničí). Takové opatření by bylo vhodné zavést nejpozději půl roku před plánovaným exitem – zavedení současně s exitem nedoporučuji, protože by zvýšilo obecnou nejistotu ihned po opuštění závazku. Na konci části 3 také diskutuji, jak je možné vyhnout se většině legislativních problémů spojených se zápornou sazbou japonského typu. Protože by se jednalo o opatření, které tuzemské subjekty příliš nepostihne, bylo by vhodné sazbu stanovit dostatečně nízko, aby odradila krátkodobé spekulanty (alespoň tak, aby byl vyrovnán úrokový diferenciál vůči eurozóně). V části 4 se zabývám efektivním dolním limitem sazeb pro ČR, který se dle mého názoru nachází v intervalu (−2 %, −1 %).
 
+##
+
 ## 2. Dopady kurzového závazku na reálnou ekonomiku
 
 Vliv kurzového závazku nelze odhadovat klasickou regresní analýzou, protože k tomu bychom museli mít k dispozici větší počet centrálních bank, které se k takovému kroku v podobné situaci uchýlily. Rozumnější je porovnat vývoj před začátkem intervencí a v jejich průběhu mezi ČR a zeměmi, které jsou ČR jinak podobné (např. Slovensko). Takový kvalitativní přístup nám však neumožňuje exaktně odhadnout efekt závazku a nedává nám ani informaci o přesnosti odhadu. Kompromisem mezi oběma přístupy je synthetic control method, která začala být používána v posledních letech v politologii (např. Abadie a spol., 2015: ekonomické náklady znovusjednocení Německa). Cílem je sestrojit hypotetický (kontrafaktuální) vývoj ekonomiky ČR v absenci kurzového závazku. Za tímto záměrem nejprve odhadneme, jaký vážený průměr proměnných a zemí nejlépe vystihuje ekonomický vývoj ČR v předintervenčním období. Rozdíl mezi skutečně pozorovaným vývojem ekonomiky a hypotetickým vývojem, který je založen na váženém průměru vývoje ekonomik zemí, které kurzový závazek neuplatnily, představuje efekt intervencí. Tuto metodu již použil Jan Brůha ve stanovisku k 8. SZ 2015 pro výpočet vlivu kurzového závazku na inflaci, který činí asi 2 procentní body. Zde se zaměřuji na reálné proměnné a používám data od počátku roku 2005 do konce roku 2015.
@@ -7966,8 +8027,12 @@ Vliv kurzového závazku nelze odhadovat klasickou regresní analýzou, protože
 V grafu 1 pozorujeme, že hypotetický vývoj růstu HDP bez intervencí (přerušovaná čára) by se v období kurzového závazku pohyboval pod skutečně pozorovanou hodnotou, přičemž rozdíl se v čase zvětšuje. V roce 2014 ještě efekt není statisticky významný, ale pro rok 2015 již můžeme s 95% jistotou vyloučit, že by se jednalo o náhodnou odchylku.[2] Odhadovaný příspěvek kurzového závazku pro rok 2015 dosahuje téměř 2 p. b. Tento efekt bude nadhodnocen v případě, že ČR dočerpávala evropské fondy intenzivněji než okolní země. Na druhou stranu je vidět, že v období na začátku intervencí je pozorovaný růst HDP níže, než by odpovídalo vývoji v okolních zemích – snad proto, že fiskální politika byla předtím v ČR mimořádně restriktivní, nebo že už se země blížila situaci deflační spirály (nominální mzdy v roce 2013 přestaly růst). Navíc je hypotetický vývoj HDP sestaven převážně na základě vývoje zemí eurozóny, jejichž ekonomiky byly podpořeny nestandardní měnovou politikou ECB. To všechno může odhadovaný efekt kurzového závazku naopak podhodnocovat.
 
 *Graf 1: Vliv kurzového závazku na růst HDP*
+
 *Graf 2: Vliv kurzového závazku na nezaměstnanost*
+
 Lépe můžeme vliv kurzového závazku pozorovat na vývoji obecné míry nezaměstnanosti (graf 2), která je méně ovlivňována jednorázovými faktory typu změn spotřebních daní. Kdyby nedošlo k oslabení koruny, nezaměstnanost by v letech 2014 a 2015 klesala, ale mnohem pozvolněji: na konci minulého roku už rozdíl dosahoval téměř dvou procentních bodů, v přepočtu asi 100 tisíc pracovních míst. V předintervenčním období přitom hypotetická nezaměstnanost (vážený průměr ostatních zemí) velmi dobře vystihuje skutečnou nezaměstnanost. Můžeme tedy vyloučit, že by se jednalo o náhodnou odchylku. Je evidentní, že vedle přímého dopadu na dovozní ceny má kurzový závazek robustní, ale zpožděný vliv na reálnou ekonomiku, a skrze tlaky na růst mezd tak postupně přispívá ke zvyšování jádrové inflace.
+
+##
 
 ## 3. Zkušenosti se zápornými sazbami
 
@@ -7977,7 +8042,7 @@ Maďarsko Magyar Nemzeti Bank snížila depozitní sazbu do záporu (−0,05 %) 
 
 Japonsko Bank of Japan rozhodla o zavedení záporných sazeb v lednu 2016, přičemž opatření vstoupilo v platnost v polovině února. Záporná sazba (nyní −0,1 %) se vztahuje pouze na dodatečné dobrovolné rezervy uložené u centrální banky; stávající rezervy jsou úročeny kladnou sazbou (0,1 %) a na povinné rezervy se vztahuje nulová sazba. Důvodem tohoto opatření je obava o ziskovost bank: díky třístupňovému systému úročení rezerv budou komerční banky bez větších problémů schopny poskytovat nezáporné sazby na vkladových účtech domácností, aniž by byly výrazně postiženy marže bank. Pokud by se záporná sazba vztahovala na všechny rezervy, hrozila by zvýšená substituce od elektronických peněz k hotovosti, mimo jiné proto, že v Japonsku je hotovost stále používána ve velké míře a (na rozdíl od většiny ostatních zemí, které záporné sazby zavedly) mnoho obchodů platební karty nepřijímá.
 
-Zajímavý aspekt zavedení záporných sazeb v Japonsku je poplatek, který centrální banka stanovuje komerčním bankám za kumulativní čistý výběr hotovosti. Zvýší-li se „výrazně“ držba hotovosti dané banky, odpovídající částka bude odečtena z rezerv, které jsou úročeny nezápornou sazbou (Bank of Japan, 2016). Tento systém není jasně specifikován a snad se jedná pouze o „blufování“ ze strany Bank of Japan, aby preventivně zabránila velkým výběrům hotovosti. Záměrem každopádně je, aby banky vnímaly držbu hotovosti nejméně stejně nákladnou jako držbu elektronických jenů. Ačkoli je zatím brzy na hodnocení dopadů zavedení záporných sazeb v Japonsku, anekdotická evidence naznačuje určitý růst poptávky po hotovosti: prodej domácích sejfů se oproti stejnému období loňského roku zdvojnásobil (Hongo a Inada, 2016). Důvodem může být ne zcela jasná komunikace Bank of Japan ohledně záporných sazeb, což způsobuje nejistotu u domácností. V průzkumu Bloomberg (2016) je 73 % dotázaných ekonomů skeptických ohledně efektivity záporných sazeb v Japonsku. Tito ekonomové zároveň odhadují, že měnověpolitická sazba v této zemi dále klesne na −0,3 %; guvernér Kuroda navíc nedávno prohlásil, že si umí představit sazbu na úrovni −0,[5] %.
+Zajímavý aspekt zavedení záporných sazeb v Japonsku je poplatek, který centrální banka stanovuje komerčním bankám za kumulativní čistý výběr hotovosti. Zvýší-li se „výrazně“ držba hotovosti dané banky, odpovídající částka bude odečtena z rezerv, které jsou úročeny nezápornou sazbou (Bank of Japan, 2016). Tento systém není jasně specifikován a snad se jedná pouze o „blufování“ ze strany Bank of Japan, aby preventivně zabránila velkým výběrům hotovosti. Záměrem každopádně je, aby banky vnímaly držbu hotovosti nejméně stejně nákladnou jako držbu elektronických jenů. Ačkoli je zatím brzy na hodnocení dopadů zavedení záporných sazeb v Japonsku, anekdotická evidence naznačuje určitý růst poptávky po hotovosti: prodej domácích sejfů se oproti stejnému období loňského roku zdvojnásobil (Hongo a Inada, 2016). Důvodem může být ne zcela jasná komunikace Bank of Japan ohledně záporných sazeb, což způsobuje nejistotu u domácností. V průzkumu Bloomberg (2016) je 73 % dotázaných ekonomů skeptických ohledně efektivity záporných sazeb v Japonsku. Tito ekonomové zároveň odhadují, že měnověpolitická sazba v této zemi dále klesne na −0,3 %; guvernér Kuroda navíc nedávno prohlásil, že si umí představit sazbu na úrovni −0,5 %.
 
 Norsko Norges Bank nebývá uváděna v seznamech centrálních bank, které používají záporné sazby, ačkoli její systém je do jisté míry podobný tomu, který používá Bank of Japan: rezervy u centrální banky nesou kladný úrok do určitého limitu; po překročení tohoto limitu je aplikována záporná sazba (−0,5 %). Toto opatření bylo zavedeno v září 2015 a motivem bylo povzbudit banky, aby si více půjčovaly mezi sebou a nenechávaly přebytečné rezervy na svém účtu u centrální banky (Norges Bank, 2015). Daný záměr byl do značné míry splněn, když objem nadlimitních rezerv po zavedení záporných sazeb poklesl o dvě třetiny. Komerční banky také samy uvádějí, že se nyní velmi snaží vyhnout ukládání přebytečných rezerv u Norges Bank; úrokové míry na mezibankovním trhu jsou stále kladné. Průzkum Bloomberg (2016) nehodnotil účinnost záporných sazeb v Norsku.
 
@@ -7985,27 +8050,31 @@ Norsko Norges Bank nebývá uváděna v seznamech centrálních bank, které pou
 
 Švédsko Riksbank krátce experimentovala s mírně zápornou depozitní sazbou již v letech 2009 a 2010. Po téměř čtyřech letech kladných sazeb byla depozitní sazba znovu snížena pod nulu v září 2014. Na začátku roku 2015 byla do minusu sražena i základní měnověpolitická sazba, která nyní dosahuje −0,5 % (depozitní sazba je dokonce −1,25 %). Podobně jako v případě Švýcarska došlo k relativně bezproblémové transmisi do úrokových měr na finančním trhu. Objevily se legislativní problémy, například v souvislosti s tím, když kvůli záporným sazbám musel držitel dluhopisu s plovoucí sazbou platit emitentovi. Klientské sazby na úvěrech klesají v tandemu s repo sazbou, ale úroky na vkladech podle očekávání neklesají pod nulu. Klíčový rozdíl zkušenosti Riksbank oproti ostatním centrálním bankám, které záporné sazby zavedly, je skutečnost, že od začátku pracuje s negativními sazbami jako standardním nástrojem měnové politiky: tvrdí, že dopady snižování sazeb v záporném teritoriu jsou podobné jako snižování sazeb v teritoriu kladném (Alsterlind a spol., 2015). Většina ekonomů (59 %) dotazových v průzkumu Bloomberg (2016) tento optimismus nesdílí a opatření hodnotí negativně. Tito ekonomové se také shodují, že sazba Riksbank již dosáhla svého dna.
 
-Eurozóna Zápornou depozitní sazbu zavedla ECB v červnu 2014; nyní dosahuje −0,[4] %. Pokles sazby se přenesl standardním způsobem do úrokových měr peněžního trhu i dlouhodobějších sazeb, přičemž nedošlo k výrazným změnám likvidity či volatility ani jiným významnějším problémům fungování finančního trhu (Jackson, 2015). Před zavedením záporných sazeb panovaly obavy, zda toto opatření nesníží výpůjčky komerčních bank od centrální banky: komerční banky by se mohly snažit snížit riziko, že budou potřebovat u centrální banky uložit dodatečné rezervy úročené negativní sazbou (Coeuré, 2014). Tyto obavy se však nenaplnily a k poklesu výpůjček nedošlo. Ačkoli oslabení eura nebylo explicitním cílem zavedení záporných úrokových sazeb, měna od té doby silně oslabila. Jeden z mála empirických článků na toto téma, Khayat (2015), ukazuje, že politika záporných sazeb měla za následek značný depreciační tlak na euro. Podle studie JP Morgan (citované v Melin, 2016) nelze pozorovat žádné známky toho, že by banky v eurozóně hromadily hotovost, a transmise záporných měnověpolitických sazeb do klientských sazeb je silná. Většina ekonomů (58 %) však podle průzkumu Bloomberg (2016) efektivitu tohoto opatření hodnotí negativně, ačkoli očekává další snížení sazeb na −0,5 %.
+Eurozóna Zápornou depozitní sazbu zavedla ECB v červnu 2014; nyní dosahuje −0,4 %. Pokles sazby se přenesl standardním způsobem do úrokových měr peněžního trhu i dlouhodobějších sazeb, přičemž nedošlo k výrazným změnám likvidity či volatility ani jiným významnějším problémům fungování finančního trhu (Jackson, 2015). Před zavedením záporných sazeb panovaly obavy, zda toto opatření nesníží výpůjčky komerčních bank od centrální banky: komerční banky by se mohly snažit snížit riziko, že budou potřebovat u centrální banky uložit dodatečné rezervy úročené negativní sazbou (Coeuré, 2014). Tyto obavy se však nenaplnily a k poklesu výpůjček nedošlo. Ačkoli oslabení eura nebylo explicitním cílem zavedení záporných úrokových sazeb, měna od té doby silně oslabila. Jeden z mála empirických článků na toto téma, Khayat (2015), ukazuje, že politika záporných sazeb měla za následek značný depreciační tlak na euro. Podle studie JP Morgan (citované v Melin, 2016) nelze pozorovat žádné známky toho, že by banky v eurozóně hromadily hotovost, a transmise záporných měnověpolitických sazeb do klientských sazeb je silná. Většina ekonomů (58 %) však podle průzkumu Bloomberg (2016) efektivitu tohoto opatření hodnotí negativně, ačkoli očekává další snížení sazeb na −0,5 %.
 
 Dánsko Nejdelší zkušenost se zápornými úrokovými sazbami má Danmarks Nationalbank, která je aplikuje s krátkou přestávkou již od poloviny roku 2012. Depozitní sazba dosáhla na začátku loňského roku −0.75 %, což byla nejnižší hodnota pro rozhodující měnověpolitickou sazbu na světě spolu se Swiss National Bank. Letos však Danmarks Nationalbank sazbu mírně zvýšila na −0,65 %, a tvoří tak výjimku v klubu záporných sazeb (ostatní banky vyjadřují připravenost snížit sazbu ještě více do záporu). Transmise měnověpolitických sazeb do klientských sazeb byla v Dánsku rychlá, ale nesymetrická, neboť sazby na vklady pro domácnosti jsou nezáporné. Firmy a institucionální investoři jsou však běžně vystaveni záporným sazbám (Jensen a Spange, 2015). Navzdory tomu se nijak zvlášť nezvýšila poptávka po hotovosti. Úrokové sazby u hypoték s krátkou fixací klesly minulý rok pod nulu, což způsobilo technické a legislativní problémy (Danmarsk Nationalbank, 2015). Důsledkem je tlak na ziskovost bank, a centrální banka tak několikrát zvýšila limit rezerv, pro něž je aplikována nulová sazba (podobně jako v Japonsku či Švýcarsku). Dánsko muselo také řešit případy firem, které se snažily uhradit co nejvyšší daňové zálohy, aby na přeplatcích získaly nulovou úrokovou sazbu. Drtivá většina ekonomů (90 %) však hodnotí dánskou zkušenost se zápornými sazbami pozitivně (Bloomberg, 2016), přičemž další snížení měnověpolitické sazby nejsou očekávána.
 
 Implikace pro ČR Z mezinárodních zkušeností vyplývá, že existuje několik scénářů použití záporných sazeb. První extrémní formou je „švédský scénář“, ve kterém jsou záporným sazbám vystaveny všechny rezervy komerčních bank u centrální banky. To má smysl v případě, kdy centrální banka věří, že transmise změn záporných sazeb působí přes všechny standardní kanály měnové politiky. Navíc je nutné, aby v zemi neexistoval výrazný přebytek likvidity. Jsou-li rezervy příliš velké, vytvoří záporné sazby silný tlak na ziskové marže bank, a tedy problémy s finanční stabilitou. Druhou krajní variantou je „japonský scénář“, ve kterém jsou dosavadní rezervy v průměrné výši pro každou banku nadále úročeny nezápornou sazbou, a záporná sazba se vztahuje pouze na nové rezervy. Ziskové marže bank jsou tak chráněny a záporné sazby působí převážně pouze přes kurzový kanál, pro který je důležitá sazba na mezní uložený jen. Poslední variantou je „dánský scénář“, lineární kombinace předchozích přístupů, kde je pouze určité procento rezerv úročeno zápornou sazbou. Takový přístup umožní bankám, aby ponechaly nezáporné sazby na běžných a menších spořicích účtech pro domácnosti, aniž by to mělo negativní dopady na marže bank. Dánský scénář má smysl v případě, kdy centrální banka věří ve standardní transmisi záporných sazeb, ale část této transmise (zhruba danou procentem rezerv, které jsou chráněny před zápornou sazbou) raději obětuje ve prospěch finanční stability.
 
-Tyto scénáře se tedy liší procentem rezerv, které jsou vyňaty z úročení zápornými sazbami. Nastavení tohoto parametru je pro každou zemi individuální; obecně je parametr vedle důvěry ve fungování záporných sazeb funkcí dvou faktorů: i) míry využívání hotovosti a ii) přebytku likvidity, který můžeme vyjádřit jako podíl rezerv na HDP. Parametr je rostoucí v míře využívání hotovosti, neboť v ekonomikách založených na hotovosti je nutné, aby velká část vkladů domácností byla chráněna před zápornými sazbami (jinak hrozí skladování hotovosti „pod matrací“). Parametr je také rostoucí v přebytku likvidity, protože nákladem bank je součin záporné sazby a objemu rezerv. Větší náklady znamenají větší tlaky na ziskovou marži a mohou banky motivovat k hledání alternativních zdrojů příjmů. Proto zřejmě vzrostly ve Švýcarsku, kde je množství rezerv obrovské, sazby na hypotékách. Za nepřekročitelnou dolní hranici diskutovaného parametru pro ČR považuji 20 %, což zhruba odpovídá objemu rezerv, který by bankám umožnil ponechat nezáporné sazby na běžných účtech ve výši jediné průměrné měsíční mzdy na jednoho dospělého obyvatele. Pokud bychom chtěli kvantitativně vyrovnat dopad záporných sazeb na hospodaření bank, který je pozorován v Dánsku, museli bychom ze záporného úročení vyjmout téměř 80 % rezerv (vzhledem k většímu přebytku likvidity v ČR). Zde už se ale blížíme japonskému scénáři.3
+Tyto scénáře se tedy liší procentem rezerv, které jsou vyňaty z úročení zápornými sazbami. Nastavení tohoto parametru je pro každou zemi individuální; obecně je parametr vedle důvěry ve fungování záporných sazeb funkcí dvou faktorů: i) míry využívání hotovosti a ii) přebytku likvidity, který můžeme vyjádřit jako podíl rezerv na HDP. Parametr je rostoucí v míře využívání hotovosti, neboť v ekonomikách založených na hotovosti je nutné, aby velká část vkladů domácností byla chráněna před zápornými sazbami (jinak hrozí skladování hotovosti „pod matrací“). Parametr je také rostoucí v přebytku likvidity, protože nákladem bank je součin záporné sazby a objemu rezerv. Větší náklady znamenají větší tlaky na ziskovou marži a mohou banky motivovat k hledání alternativních zdrojů příjmů. Proto zřejmě vzrostly ve Švýcarsku, kde je množství rezerv obrovské, sazby na hypotékách. Za nepřekročitelnou dolní hranici diskutovaného parametru pro ČR považuji 20 %, což zhruba odpovídá objemu rezerv, který by bankám umožnil ponechat nezáporné sazby na běžných účtech ve výši jediné průměrné měsíční mzdy na jednoho dospělého obyvatele. Pokud bychom chtěli kvantitativně vyrovnat dopad záporných sazeb na hospodaření bank, který je pozorován v Dánsku, museli bychom ze záporného úročení vyjmout téměř 80 % rezerv (vzhledem k většímu přebytku likvidity v ČR). Zde už se ale blížíme japonskému scénáři.[3]
 
 V případě využití japonského scénáře je zřejmě možné vyhnout se legislativním problémům spojeným se snížením depo a repo sazby do záporu. Tyto sazby by zůstaly na technické nule, ale přístup do depa i repa by byl pro každou banku omezen např. na úrovni průměrných rezerv za poslední rok (případně na nějakém násobku povinných minimálních rezerv, které jsou stejně pro každou banku počítány). Nad tuto hranici, která by v případě potřeby mohla v čase růst v souvislosti s růstem ekonomiky, by banky měly možnost ukládat přebytečné rezervy např. na účet povinných minimálních rezerv. Tyto přebytečné rezervy by byly úročeny novou, zápornou sazbou, podobně jako je tomu u „reserve rate“ v Norsku; tuto subvariantu by tak bylo možné označit za „norskou“. Zápornou sazbu však nelze z legislativních důvodů uvalit na samotné povinné minimální rezervy.
+
+##
 
 ## 4. Efektivní dolní hranice sazeb
 
 Potenciál využití záporných sazeb je omezen hranicí, po jejímž překročení bude pro účastníky trhu výhodnější držet své peněžní zůstatky v hotovosti než na bankovním účtu. Tuto hranici lze zhruba spočítat na základě nákladů za skladování, transport a pojištění bankovek a také za ztrátu pohodlnosti spojenou s bezhotovostními transakcemi. Odhady nákladů na skladování a transport se pohybují v rozmezí 0,2 až 1 % (Jackson, 2015) a liší se mezi zeměmi zejména podle toho, jaká je dostupná nejvyšší denominace bankovky: vyšší denominace umožňuje skladovat a přepravovat menší fyzický objem hotovosti. Odhady u dolní hranice zmíněného intervalu náležejí zemím typu Švýcarsko (tisícifranková bankovka) a Singapur (tisícidolarová bankovka je často užívána; oficiálně je v oběhu i bankovka o hodnotě 10 000 singapurských dolarů). Nejvyšší denominace bankovky v ČR je v reálném vyjádření pětkrát nižší než ve Švýcarsku, ale hodnota nákladů v ČR nebude dosahovat pětinásobku švýcarské hodnoty, neboť při skladování a přepravě hotovosti vznikají fixní náklady (navíc existuje mnoho zemí s menší maximální denominací). Protože nemám k dispozici lepší odhad, budu uvažovat střední hodnotu zmíněného intervalu, tedy 0,6 %. Náklady za pojištění můžeme aproximovat pomocí nákladů na pojištění zlata, které dosahují nejméně 0,25 % ročně a nebudou záležet na denominaci bankovek (Witmer a Yang, 2015). Pokud navíc poptávka po hotovosti roste rychle, potenciál nabídky skladování, dopravy a pojištění reaguje se zpožděním (nabídka není zcela elastická), takže ceny těchto služeb rostou. Dohromady se tak dostáváme k 1 %.
 
-Náklady za ztrátu pohodlnosti spojenou s bezhotovostními platbami lze zhruba odhadnout na základě poplatků za transakce provedené platebními kartami, které dosahují cca. 0,5 až 3 % ročně (Keohane, 2015). Zde mi přijde realistické uvažovat spíše dolní hranici tohoto intervalu: skutečné náklady v procentuálním vyjádření budou klesat s velikostí transakce. Domnívám se tedy, že celkové náklady příležitosti držby hotovosti ve srovnání s elektronickými penězi se pohybují kolem 1,5 %. Příbuzný koncept, který může být použit k odhadu efektivní dolní hranice sazeb, jsou společenské náklady držby hotovosti. Pokud je mi známo, odhad pro ČR není k dispozici, ale průměr pro země eurozóny je 2,3 % (Schmiedel a spol., 2012). Toto číslo je obecně nižší v zemích, kde je hotovost relativně více používána,4 a proto se domnívám, že i tento ukazatel bude pro ČR nižší a konzistentní s předchozím odhadem 1,5 %. Ačkoli se jedná o hrubý odhad „podle palce“, považuji za docela pravděpodobné, že skutečný dolní limit se bude nacházet v intervalu (−2 %, −1 %), zejména při využití japonského scénáře.
+Náklady za ztrátu pohodlnosti spojenou s bezhotovostními platbami lze zhruba odhadnout na základě poplatků za transakce provedené platebními kartami, které dosahují cca. 0,5 až 3 % ročně (Keohane, 2015). Zde mi přijde realistické uvažovat spíše dolní hranici tohoto intervalu: skutečné náklady v procentuálním vyjádření budou klesat s velikostí transakce. Domnívám se tedy, že celkové náklady příležitosti držby hotovosti ve srovnání s elektronickými penězi se pohybují kolem 1,5 %. Příbuzný koncept, který může být použit k odhadu efektivní dolní hranice sazeb, jsou společenské náklady držby hotovosti. Pokud je mi známo, odhad pro ČR není k dispozici, ale průměr pro země eurozóny je 2,3 % (Schmiedel a spol., 2012). Toto číslo je obecně nižší v zemích, kde je hotovost relativně více používána,[4] a proto se domnívám, že i tento ukazatel bude pro ČR nižší a konzistentní s předchozím odhadem 1,5 %. Ačkoli se jedná o hrubý odhad „podle palce“, považuji za docela pravděpodobné, že skutečný dolní limit se bude nacházet v intervalu (−2 %, −1 %), zejména při využití japonského scénáře.
 
 Záleží také na délce období, po které je ekonomika záporným sazbám vystavena: postupem času motivace k substituci z elektronických peněz do hotovosti stoupá (Bean, 2013). V praxi jsme však mohli pozorovat hluboce záporné sazby ve Švýcarsku a Dánsku (−0,75 %) po relativně dlouhou dobu, aniž by v těchto zemích došlo k výraznému zvýšení poptávky po hotovosti. Jak jsem již uvedl výše, náklady na skladování a přepravu hotovosti jsou navíc ve Švýcarsku zřejmě nižší než ve většině ostatních zemí. Domnívám se tedy, že efektivní dolní hranice sazeb leží i v dlouhodobém vyjádření pod −1 %. Studie JP Morgan (citovaná v Melin, 2016) dokonce odhaduje, že sazby v eurozóně mohou sestoupit až na −4,5 %.
 
 V dosavadní diskuzi spodní hranice sazeb jsem předpokládal, že centrální banka nezavede žádná opatření, která by penalizovala substituci z elektronických peněz do hotovosti. Taková opatření si však lze snadno představit a v praxi je pozorujeme: například poplatek, který Bank of Japan hodlá účtovat bankám za kumulativní čisté výběry hotovosti. To by mohlo časem vést ke zvýšení poplatků za výběr hotovosti pro klienty bank. Jakkoli se toto opatření zdá intuitivní, domnívám se, že může způsobit řadu problémů. Efektivně dojde k vytvoření směnného kurzu mezi elektronickými penězi a hotovostí, kde hotovost bude dražší, protože bude nákladnější ji získat. Mnoho menších obchodů v Japonsku nyní přijímá pouze hotovost, a pokud by hodnota hotovosti vůči elektronickým penězům stoupla nad paritu, počet takových obchodů by se mohl ještě zvýšit. Bude-li větší množství transakcí prováděno v hotovosti, transmise záporných sazeb do ekonomiky bude neefektivní a celé opatření může navíc vyvolat dodatečné deflační tlaky skrze zvyšování hodnoty papírové měny, která by sloužila jako primární platidlo.
 
-Řešením může být paradoxně zcela opačný přístup, který je propagován v článcích Kimball (2015) a Argwall a Kimball (2015): stanovení poplatku za uložení hotovosti u centrální banky a prémie za výběr hotovosti. Poplatek by byl stanoven tak, aby se kumulativně za rok vyrovnal aktuální měnověpolitické záporné sazbě. Došlo by tím pádem ke snížení hodnoty hotovosti ve srovnání s elektronickými penězi. Toto opatření by zřejmě časem muselo být doprovázeno změnou definice legálního platidla, kterým by nově byly elektronické peníze: podobně jako kdysi opuštění zlatého standardu by se nyní jednalo o přechod z „papírového standardu“ na standard elektronický.5 Obchody by nakonec měly mít možnost stanovit rozdílné ceny pro platbu hotovostí a platebními kartami a nemusely by být povinny hotovost přijímat. Výhodou takového řešení je, že by umožnilo odstranění dolní hranice sazeb, aniž by došlo k radikálním změnám finančního systému (typu zrušení hotovosti; Buiter, 2015).
+Řešením může být paradoxně zcela opačný přístup, který je propagován v článcích Kimball (2015) a Argwall a Kimball (2015): stanovení poplatku za uložení hotovosti u centrální banky a prémie za výběr hotovosti. Poplatek by byl stanoven tak, aby se kumulativně za rok vyrovnal aktuální měnověpolitické záporné sazbě. Došlo by tím pádem ke snížení hodnoty hotovosti ve srovnání s elektronickými penězi. Toto opatření by zřejmě časem muselo být doprovázeno změnou definice legálního platidla, kterým by nově byly elektronické peníze: podobně jako kdysi opuštění zlatého standardu by se nyní jednalo o přechod z „papírového standardu“ na standard elektronický.[5] Obchody by nakonec měly mít možnost stanovit rozdílné ceny pro platbu hotovostí a platebními kartami a nemusely by být povinny hotovost přijímat. Výhodou takového řešení je, že by umožnilo odstranění dolní hranice sazeb, aniž by došlo k radikálním změnám finančního systému (typu zrušení hotovosti; Buiter, 2015).
+
+##
 
 ## 5. Dílčí poznámky a otázky k SZ
 
@@ -8021,35 +8090,36 @@ V dosavadní diskuzi spodní hranice sazeb jsem předpokládal, že centrální 
 
 • Oceňuji oba boxy, které situační zprávu oživují. Doporučuji do budoucna používat „duhovou“ verzi Beveridgovy křivky z boxu 1 v hlavním textu SZ.
 
-Reference
+## Reference
 
-Abadie, A., Diamond, A. a Hainmueller, J., 2015: “Comparative Politics and the Synthetic Control Method,” American Journal of Political Science 59(2), 495-510.
-
-Agarwal, R. a Kimball, M., 2015: “Breaking Through the Zero Lower Bound,” IMF Working Papers 15/224. Alsterlind, J., Armelius, H., Forsman, D., Jönsson, B. a Wretman, A., 2015: “How Far Can the Repo Rate Be Cut?”
-
-Economic Commentary 11/2015, Sveriges Riksbank. Bank of Japan, 2016: “Introduction of ‘Quantitative and Qualitative Monetary Easing with’ a Negative Interest Rate,”
-
-oznámení 29.1.2016, www.boj.or.jp/en/announcements/release_2016/k160129a.pdf. Bean, C., 2013: “Note on Negative Interest Rates for Treasury Committee,” Bank of England. Bloomberg, 2016: “Here’s What Economists Think about Negative Policy Rates,” Bloomberg Benchmark 19. února, www.bloomberg.com/news/articles/2016-02-19/here-s-what-economists-think-about-negative-policy-rates. Buiter, W., 2015: “It’s Time to Remove the Lower Bound on Interest Rates and Here’s the How-To,” prezentace na konferenci Removing the Zero Lower Bound on Interest Rates, Londýn, 18.5.2015. Coeuré, B., 2014: “Life Below Zero: Learning about Negative Interest Rates,” projev na ECB’s Money Market
-
-Contact Group, 9.9.2014. Danmarks Nationalbank, 2015: “Negative Interest Rates and their Impact on Credit Institutions’ Earnings.” Financial
-
-Stability 1/2015. Havránek, T., Iršová, Z. a Lešanovská, J., 2016: “Bank Efficiency and Interest Rate Pass-Through: Evidence from
-
-Czech Loan Products,” Economic Modelling 54(1), 153-169. Hongo, J. a Inada, M., 2016: “Japanese Seeking a Place to Stash Cash Start Snapping up Safes,” Wall Street Journal, 22.2., www.wsj.com/articles/japanese-seeking-a-place-to-stash-cash-start-snapping-up-safes-1456136223. Jackson, H., 2015: “The International Experience with Negative Policy Rates,” Discussion Paper 15/13, Bank of
-
-Canada. Jensen, C. M. a Spange, M., 2015: “Interest Rate Pass-Through and the Demand for Cash at Negative Interest Rates.”
-
-Danmarks Nationalbank. Monetary Review 2/2015. Keohane, D., 2015: “Negative Rates and Gesell Taxes: How Low Are We Talking Here?” FT Alphaville, 2.2.2015.
-
-ftalphaville.ft.com/2015/02/02/2103032/negative-rates-and-gesell-taxes-how-low-are-we-talking-here/. Khayat, A., 2015: “Negative Policy Rates, Banking Flows and Exchange Rates,” Working Paper 38/2015, Aix-
-
-Marseille School of Economics. Kimball, M., 2015: “Negative Interest Rate Policy as Conventional Monetary Policy,” National Institute Economic
-
-Review 234(1), 5-14. Melin, M., 2016: “Negative Interest Rates Could Go As Low As 4.5%: JPMorgan Shocker,” Value Walk 10.2.2016, www.valuewalk.com/2016/02/jpmorgan-negative-interest-rates/. Norges Bank, 2015: “Monetary Policy Report 4/2015,” prosinec 2015. Schmiedel, H., Kostova, G. a Ruttenberg, W., 2012: “The Social and Private Costs of Retail Payment Instruments: A
-
-European Perspective,” European Central Bank, Occasional Paper Series 137. Witmer, J. a Yang, J., 2015: “Estimating Canada’s Effective Lower Bound,” Staff Analytical Note 2/2015, Bank of
-
-Canada.
+- Abadie, A., Diamond, A. a Hainmueller, J., 2015: “Comparative Politics and the Synthetic Control Method,” American Journal of Political Science 59(2), 495-510.
+- Agarwal, R. a Kimball, M., 2015: “Breaking Through the Zero Lower Bound,” IMF Working Papers 15/224.
+- Alsterlind, J., Armelius, H., Forsman, D., Jönsson, B. a Wretman, A., 2015: “How Far Can the Repo Rate Be Cut?”
+- Economic Commentary 11/2015, Sveriges Riksbank. Bank of Japan, 2016: “Introduction of ‘Quantitative and Qualitative Monetary Easing with’ a Negative Interest Rate,”
+- oznámení 29.1.2016, www.boj.or.jp/en/announcements/release_2016/k160129a.pdf.
+- Bean, C., 2013: “Note on Negative Interest Rates for Treasury Committee,” Bank of England. Bloomberg, 2016: “Here’s What Economists Think about Negative Policy Rates,” Bloomberg Benchmark 19. února, www.bloomberg.com/news/articles/2016-02-19/here-s-what-economists-think-about-negative-policy-rates.
+- Buiter, W., 2015: “It’s Time to Remove the Lower Bound on Interest Rates and Here’s the How-To,” prezentace na konferenci Removing the Zero Lower Bound on Interest Rates, Londýn, 18.5.2015.
+- Coeuré, B., 2014: “Life Below Zero: Learning about Negative Interest Rates,” projev na ECB’s Money Market
+- Contact Group, 9.9.2014. Danmarks Nationalbank, 2015: “Negative Interest Rates and their Impact on Credit Institutions’ Earnings.” Financial
+- Stability 1/2015.
+- Havránek, T., Iršová, Z. a Lešanovská, J., 2016: “Bank Efficiency and Interest Rate Pass-Through: Evidence from
+- Czech Loan Products,” Economic Modelling 54(1), 153-169.
+- Hongo, J. a Inada, M., 2016: “Japanese Seeking a Place to Stash Cash Start Snapping up Safes,” Wall Street Journal, 22.2., www.wsj.com/articles/japanese-seeking-a-place-to-stash-cash-start-snapping-up-safes-1456136223.
+- Jackson, H., 2015: “The International Experience with Negative Policy Rates,” Discussion Paper 15/13, Bank of
+- Canada.
+- Jensen, C. M. a Spange, M., 2015: “Interest Rate Pass-Through and the Demand for Cash at Negative Interest Rates.”
+- Danmarks Nationalbank. Monetary Review 2/2015.
+- Keohane, D., 2015: “Negative Rates and Gesell Taxes: How Low Are We Talking Here?” FT Alphaville, 2.2.2015.
+- ftalphaville.ft.com/2015/02/02/2103032/negative-rates-and-gesell-taxes-how-low-are-we-talking-here/.
+- Khayat, A., 2015: “Negative Policy Rates, Banking Flows and Exchange Rates,” Working Paper 38/2015, Aix-
+- Marseille School of Economics.
+- Kimball, M., 2015: “Negative Interest Rate Policy as Conventional Monetary Policy,” National Institute Economic
+- Review 234(1), 5-14.
+- Melin, M., 2016: “Negative Interest Rates Could Go As Low As 4.5%: JPMorgan Shocker,” Value Walk 10.2.2016, www.valuewalk.com/2016/02/jpmorgan-negative-interest-rates/. Norges Bank, 2015: “Monetary Policy Report 4/2015,” prosinec 2015.
+- Schmiedel, H., Kostova, G. a Ruttenberg, W., 2012: “The Social and Private Costs of Retail Payment Instruments: A
+- European Perspective,” European Central Bank, Occasional Paper Series 137.
+- Witmer, J. a Yang, J., 2015: “Estimating Canada’s Effective Lower Bound,” Staff Analytical Note 2/2015, Bank of
+- Canada.
 
 ## Poznámky
 

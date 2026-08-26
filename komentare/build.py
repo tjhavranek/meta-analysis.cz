@@ -693,7 +693,12 @@ def write_item(a):
         **({"sameAs": canonical_link} if canonical_link else {}),
         "headline": a["headline"],
         "inLanguage": lang,
-        ("dateCreated" if unpub else "datePublished"): a["date"],
+        # An advisor opinion was written on `date` and released by the institution on
+        # `released`, years later. datePublished = date asserted the CNB published it
+        # the day he typed it, which the record's own note denies.
+        **({"dateCreated": a["date"], "datePublished": a["released"]}
+           if (not unpub and a.get("genre") == "advisor_opinion" and a.get("released"))
+           else {("dateCreated" if unpub else "datePublished"): a["date"]}),
         "isAccessibleForFree": True,
         "articleSection": SECTIONS[a["category"]]["title"],
     }
@@ -786,21 +791,39 @@ def write_item(a):
         # "Poprvé vyšlo" would be a plain lie. Say what actually happened, and give the
         # issue it was written for as an intention rather than a publication date.
         where = OUTLET_IN.get(a["outlet"], f'v médiu {a["outlet"]}')
-        prov = ((f'Never published. Written for the {cs_date(a["date"], a.get("date_precision"), lang)} '
-                 f'issue of {esc(a["outlet"])}; the date is therefore the intended one, '
-                 f'not a date of publication. ' if en else
-                 f'Nevyšlo. Text byl napsán pro vydání '
-                 f'{cs_date(a["date"], a.get("date_precision"), lang)} '
-                 f'{where}; datum je tedy zamýšlené, nikoli datum otištění. ')
-                + f'{esc(a["unpublished"])}')
+        # "Written for the issue of" is the wording for a column that missed its
+        # print date. An advisor opinion was written for a Bank Board MEETING, was
+        # never submitted, and its date is the day the author last worked on it.
+        if a.get("genre") == "advisor_opinion":
+            prov = ((f'Never published. Written for a meeting of the CNB Bank Board and never submitted; the date is the day it was last worked on, not a date of publication. '
+                     if en else
+                     f'Nevyšlo. Stanovisko bylo psáno pro jednání bankovní rady ČNB, ale nebylo předloženo; uvedené datum je datum poslední úpravy, nikoli datum vydání. ')
+                    + f'{esc(a["unpublished"])}')
+        else:
+          prov = ((f'Never published. Written for the {cs_date(a["date"], a.get("date_precision"), lang)} '
+                   f'issue of {esc(a["outlet"])}; the date is therefore the intended one, '
+                   f'not a date of publication. ' if en else
+                   f'Nevyšlo. Text byl napsán pro vydání '
+                   f'{cs_date(a["date"], a.get("date_precision"), lang)} '
+                   f'{where}; datum je tedy zamýšlené, nikoli datum otištění. ')
+                  + f'{esc(a["unpublished"])}')
     else:
         where = OUTLET_IN.get(a["outlet"], f'v médiu {a["outlet"]}')
         # An outlet named with an apposition ("v Lilii, měsíčníku města Litomyšle")
         # has to close it before the date, or the sentence runs "…města Litomyšle
         # červenec 2017", which is not Czech. Outlets without a comma read fine as is.
         sep = ", " if "," in where else " "
-        prov = ((f'First published in {esc(a["outlet"])}, ' if en
-                 else f'Poprvé vyšlo {where}{sep}')
+        # An advisor opinion was WRITTEN on the record's date and released by the
+        # institution years later, once its six-year restricted access lapsed.
+        # "Poprvé vyšlo … 29. března 2016" asserted publication on the writing day,
+        # contradicting the record's own note and the manifest's definition of
+        # institutional_record. `released:` carries the actual release date.
+        if a.get("genre") == "advisor_opinion" and a.get("released"):
+            prov = ((f'Written {cs_date(a["date"], a.get("date_precision"), lang)} as an opinion for the CNB Bank Board and carrying six years of restricted access; the CNB released it {cs_date(a["released"], None, lang)}. ' if en else
+                     f'Napsáno {cs_date(a["date"], a.get("date_precision"), lang)} jako stanovisko pro bankovní radu ČNB, s šestiletou lhůtou omezeného přístupu; ČNB dokument zveřejnila {cs_date(a["released"], None, lang)}. '))
+        else:
+          prov = ((f'First published in {esc(a["outlet"])}, ' if en
+                   else f'Poprvé vyšlo {where}{sep}')
                 + f'{cs_date(a["date"], a.get("date_precision"), lang)}.'
                 # url_label matters when the link is not a permalink: the school's
                 # "Školní úspěchy" is a rolling feed, so "Původní vydání" would promise
@@ -831,7 +854,11 @@ def write_item(a):
     if _figfiles:
         node["image"] = [f"{SITE}{PATH}/item-img/{f}" for f in _figfiles]
 
-    note = f'<div class="provenance"><p>{esc(a["body_note"])}</p></div>\n' if a.get("body_note") else ""
+    # The note is authored prose and routinely carries a link to a hosted PDF or to a
+    # sibling record. Escaping it without running the inline markdown pass shipped the
+    # raw "[text](url)" to the reader on every record that used one.
+    note = (f'<div class="provenance"><p>{_inline(a["body_note"])}</p></div>\n'
+            if a.get("body_note") else "")
     # The reader has to know this was never printed BEFORE reading it as a column, not
     # in the provenance line under the last paragraph. The full story stays down there.
     flag = ((f'      <p class="unpublished-flag">Correspondence &mdash; not a published text.</p>\n'
@@ -865,12 +892,13 @@ def write_item(a):
     head = (f'<meta property="og:type" content="article" />\n'
             + "".join(f'<meta name="author" content="{esc(n)}" />\n' for n in names)
             # only for things that actually appeared; see `unpub` above
-            # Month precision has to survive here too. The JSON-LD was fixed to say
+            # Month precision has to survive here too, and an advisor opinion's
+            # publication date is the institution's release, not the writing day.
             # "2026-07"; this tag went on asserting "2026-07-01", a day nobody knows,
             # to every crawler that reads meta tags rather than the graph.
             + ("" if unpub else
                f'<meta property="article:published_time" content='
-               f'"{a["date"][:7] if a.get("date_precision") == "month" else a["date"]}"'
+               f'"{a.get("released") or (a["date"][:7] if a.get("date_precision") == "month" else a["date"])}"'
                f' />\n')
             # plain-text source of this page, for anything that would rather not parse HTML
             + f'<link rel="alternate" type="text/markdown" '
@@ -1055,6 +1083,9 @@ def write_feed(items, social=()):
                      f' day it was sent.</em></p>' + chr(10) if _en else
                      f'<p><em>Korespondence, nikoli publikovaný text. Uvedené datum'
                      f' je datum odeslání.</em></p>' + chr(10)) + body)
+        elif a.get("unpublished") and a.get("genre") == "advisor_opinion":
+            body = ('<p><em>Nevyšlo. Stanovisko bylo psáno pro jednání bankovní rady ČNB, ale nebylo předloženo; uvedené datum je datum poslední úpravy.</em></p>'
+                    + chr(10) + body)
         elif a.get("unpublished"):
             body = (f'<p><em>Nevyšlo. Text byl napsán pro otištění '
                     f'{OUTLET_IN.get(a["outlet"], "v " + a["outlet"])}; uvedené datum '
@@ -1077,7 +1108,11 @@ def write_feed(items, social=()):
         # reviews called that wrong, and they are right: an archive that states an
         # invariant should not carry a documented exception to it. Readers fall back to
         # feed order, and the item body opens by saying it was never published.
-        _pub = ("" if _never else f'<pubDate>{rfc822(a["date"])}</pubDate>' + chr(10) + "      ")
+        # pubDate is a publication date. For an advisor opinion that is the day the
+        # institution released it, not the day it was written.
+        _pub = ("" if _never else
+                f'<pubDate>{rfc822(a.get("released") or a["date"])}</pubDate>'
+                + chr(10) + "      ")
         it.append((a["date"], f"""    <item>
       <title>{esc(a["headline"])}</title>
       <link>{url}</link>
@@ -1329,6 +1364,9 @@ def write_machine_readable(items, social=()):
         if a.get("genre") == "correspondence":
             A += [f"*Korespondence, nikoli publikovaný text. "
                   f"Uvedené datum je datum odeslání.*", ""]
+        elif a.get("unpublished") and a.get("genre") == "advisor_opinion":
+            A += ["*Nevyšlo. Stanovisko bylo psáno pro jednání bankovní rady ČNB,"
+                  " ale nebylo předloženo; uvedené datum je datum poslední úpravy.*", ""]
         elif a.get("unpublished"):
             A += [f"*Nevyšlo. Text byl napsán pro otištění "
                   f"{OUTLET_IN.get(a['outlet'], 'v ' + a['outlet'])}; uvedené datum "
@@ -2067,12 +2105,33 @@ def check():
             _og = re.search(r'property="og:url" content="([^"]+)"', t)
             if _og and _og.group(1) != _href:
                 fails.append(f"{p}: og:url {_og.group(1)} != canonical {_href}")
-            for _key in ("mainEntityOfPage", "url"):
-                _v = d.get(_key)
-                if isinstance(_v, dict):
-                    _v = _v.get("@id") or _v.get("url")
-                if isinstance(_v, str) and _v != _href:
-                    fails.append(f"{p}: JSON-LD {_key} {_v} != canonical {_href}")
+            # Every page emits {"@context": ..., "@graph": [...]}, so reading these keys
+            # off the top level found nothing and the comparison silently passed on all
+            # 228 pages. Walk the graph nodes for the article itself.
+            _nodes = d.get("@graph") if isinstance(d.get("@graph"), list) else [d]
+            _seen = 0
+            for _n in _nodes:
+                if not isinstance(_n, dict):
+                    continue
+                if not str(_n.get("@type", "")).endswith(("Article", "Posting")):
+                    continue
+                for _key in ("mainEntityOfPage", "url"):
+                    _v = _n.get(_key)
+                    if isinstance(_v, dict):
+                        _v = _v.get("@id") or _v.get("url")
+                    if isinstance(_v, str):
+                        _seen += 1
+                        if _v != _href:
+                            fails.append(
+                                f"{p}: JSON-LD {_key} {_v} != canonical {_href}")
+            # Hub, section and data pages carry no article node and have nothing to
+            # compare. Demand the comparison exactly where an article node exists --
+            # that also catches an article node that has lost its url entirely.
+            _isart = any(isinstance(_n, dict)
+                         and str(_n.get("@type", "")).endswith(("Article", "Posting"))
+                         for _n in _nodes)
+            if _isart and not _seen:
+                fails.append(f"{p}: no JSON-LD url to compare against the canonical")
         ml = re.search(r'<html lang="([a-z]+)"', t)
         if not ml:
             fails.append(f"{p}: no lang")

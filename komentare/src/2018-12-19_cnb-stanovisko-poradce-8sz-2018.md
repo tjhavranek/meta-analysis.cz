@@ -5,6 +5,7 @@ outlet: "Česká národní banka"
 url: "https://www.cnb.cz/export/sites/cnb/cs/menova-politika/.galleries/br_zapisy_z_jednani/2018/download/stanoviska_2018_08.pdf"
 date: "2018-12-19"
 headline: "Stanovisko poradce k 8. situační zprávě 2018"
+released: "2025-01-31"
 byline: "Tomáš Havránek"
 genre: "advisor_opinion"
 body_note: "Napsáno ve funkci poradce bankovní rady ČNB; dokument nesl šestiletou lhůtu omezeného přístupu a ČNB jej zveřejnila v lednu 2025. Zde je v plném znění část I, stanovisko poradce. Původní dokument obsahuje i stanovisko sekce finanční stability (část II), které je v [hostovaném PDF](/komentare/files/cnb-stanoviska-8sz-2018.pdf) i v původním dokumentu na webu ČNB."
@@ -16,7 +17,7 @@ Stanovisko k situační zprávě o hospodářském a měnovém vývoji se sklád
 
 ## I. Vyjádření z pohledu dosahování cíle cenové stability
 
-Zpracoval Tomáš Havránek. (Děkuji Michalu Frantovi, Aleši Michlovi a Jiřímu Schwarzovi za diskuze. Odpovědnost za vyznění je moje.)
+Zpracoval Tomáš Havránek.[1]
 
 ## I.1 Měnověpolitické rozhodnutí
 
@@ -83,3 +84,7 @@ Závěrem: dostupná data o klientských sazbách končí říjnem 2018. Za list
 - Havranek, T. & Horvath, R. & Irsova, Z. & Rusnak, M. (2015): “Cross-Country Heterogeneity in Intertemporal Substitution,” Journal of International Economics 96(1), 100-118.
 - Kaplan, G. & Moll, B. & Violante, G. (2018): “Monetary Policy According to HANK,” American Economic Review 108(3), 697-743.
 - Smets, F. & Wouters, R. (2007): “Shocks and Frictions in US Business Cycles: A Bayesian DSGE Approach,” American Economic Review 97(3), 586-606.
+
+## Poznámky
+
+[1] Děkuji Michalu Frantovi, Aleši Michlovi a Jiřímu Schwarzovi za diskuze. Odpovědnost za vyznění je moje.

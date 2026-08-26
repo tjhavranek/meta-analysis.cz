@@ -4,16 +4,19 @@ media: "text"
 outlet: "Česká národní banka"
 url: "https://www.cnb.cz/export/sites/cnb/cs/menova-politika/.galleries/br_zapisy_z_jednani/2016/download/stanovisko_poradce_2016_06.pdf"
 date: "2016-09-26"
+released: "2023-01-30"
 headline: "Stanovisko poradce k 6. situační zprávě 2016"
 byline: "Tomáš Havránek"
 genre: "advisor_opinion"
-word_count: "3534"
-body_note: "Napsáno ve funkci poradce bankovní rady ČNB, projednáno bankovní radou 29. září 2016. Dokument nesl šestiletou lhůtu omezeného přístupu a ČNB jej zveřejnila 30. ledna 2023. Na rozdíl od pozdějších ročníků jde celý o vlastní materiál poradce — titulní list uvádí „Vlastní materiál" v rozsahu všech stran — stanovisko sekce finanční stability zde tedy není. Text je převeden z [hostovaného PDF](/komentare/files/cnb-stanovisko-6sz-2016.pdf); grafy zůstávají jen v něm. Číslované poznámky pod čarou jsou shromážděny na konci."
+word_count: "3540"
+body_note: "Napsáno ve funkci poradce bankovní rady ČNB, projednáno bankovní radou 29. září 2016. Dokument nesl šestiletou lhůtu omezeného přístupu a ČNB jej zveřejnila 30. ledna 2023. Že jde celý o vlastní text poradce, dokládá podpis „Vypracoval: Tomáš Havránek“ a srovnání s pozdějšími ročníky: od roku 2017 nesou stanoviska navíc vyjádření sekce finanční stability, které zde není. Text je převeden z [hostovaného PDF](/komentare/files/cnb-stanovisko-6sz-2016.pdf); grafy zůstávají jen v něm. Číslované poznámky pod čarou jsou shromážděny na konci."
 ---
 
 # Stanovisko poradce k 6. situační zprávě 2016
 
 STANOVISKO K 6. SZ[1]
+
+##
 
 ## 1. Doporučení
 
@@ -25,6 +28,8 @@ Tyto úvahy implikují, že za současných okolností není vhodné prodlužova
 
 Z toho také vyplývá, že v současné situaci považuji za nevhodné zavedení statutárních záporných sazeb, které by sice omezily spekulace, ale tím jen odsunuly problém posilování koruny do doby po exitu v souvislosti s normalizací sazeb. Důležité segmenty finančního trhu již fungují de facto za podmínek (často docela hlubokých) záporných úrokových měr, což je důsledek kombinace záporných sazeb a kvantitativního uvolňování ECB a kurzového závazku ČNB. Statutární záporné sazby v řádu několika desítek bazických bodů by tedy mnoho nevyřešily. V dlouhodobém pohledu však tak optimistický nejsem a obávám se, že záporným sazbám se budeme vyhýbat obtížně.[2] V posledních dvou dekádách celosvětově klesají neutrální úrokové míry, přičemž v eurozóně jsou již nyní záporné (Holston a kol., 2016). Za takových podmínek budeme na nulovou hranici sazeb narážet při většině recesí. Jakkoli je kurzový závazek velmi efektivní, není zcela flexibilní a je otázka, zda k němu bude vhodné přistupovat opakovaně. Zajímavým aspektem současné situace je, že máme možnost sledovat fungování v praxi záporných sazeb v ČR včetně řady jejich vedlejších efektů. V příštích letech by také mělo docházet k rychlejšímu zvyšování podílu bezhotovostních transakcí v souvislosti se stále větším využíváním bezkontaktních platebních karet a dalších inovací.
 
+##
+
 ## 2. Stínové sazby
 
 Model g3 používá stínové sazby Euribor k zachycení efektů nestandardní měnové politiky v eurozóně. Jistou nekonzistenci vidím v tom, že tyto stínové sazby jsou v podmínce nekryté úrokové parity porovnávány s oficiálními (nestínovými) sazbami Pribor, ačkoli dodávání korunové likvidity v rámci kurzového závazku ČNB také představuje formu kvantitativního uvolňování, a „referenční“ sazby Pribor tak neodrážejí skutečnou míru uvolnění měnové politiky. Pro konstrukci stávající stínové sazby ECB je navíc použita extrapolace z modelu NiGEM, který se spoléhá na odhady dopadů nekonvenčních politik na HDP, které jsou samy o sobě zatíženy nejistotou. Mnohem častěji bývají ve světě používány stínové sazby sestavené na základě výnosové křivky,[3] jejichž odhady pro ČR prezentuji v tomto stanovisku.
@@ -34,11 +39,13 @@ Nejznámější metoda výpočtu stínových sazeb je prezentována v článku W
 K výpočtu používám data sestrojená v rámci projektu Dvořák a kol. (2016), která jsou založena na údajích systému MtS (resp. BCPP) a která vykazují menší chybovost, tj. přítomnost dat s nereálnou cenou, oproti Bloombergu nebo Reuters Datastream. Navíc užívání bezkupónové křivky přímo z Bloombergu/Datastreamu naráží na 1) neexistenci hodnoty pro některé potřebné splatnosti, 2) nedostatečnou délku časových řad, zejména pro delší splatnosti a 3) nedostatečnou transparenci ohledně metodologie, která je při jejich konstrukci užívána a která může mít nezanedbatelný vliv na výsledné hodnoty. Model pro výpočet stínové sazby v tomto stanovisku používá dynamickou dvoufaktorovou specifikaci Nelson a Siegel (1987) a je odhadnut pomocí iterovaného rozšířeného Kalmanova filtru.
 
 *Graf 1: Stínová sazba ČNB*
+
 Graf 1 ukazuje, že odhadnutá stínová sazba do roku 2012 relativně dobře kopíruje hlavní měnověpolitickou sazbu (epizoda podstřelení v roce 2002 může souviset s tehdejšími intervencemi). Tříměsíční Pribor přibližně odpovídá stínové i nestínové repo sazbě do roku 2008, od té doby je výrazně nad nimi a od roku 2012 přestává být jakkoli informativní co do míry uvolněnosti měnové politiky měřené stínovou sazbou. Samotná stínová sazba se do záporu noří již v roce 2012, snad v souvislosti s tvorbou očekávání na další uvolnění a přelivy dopadů měnové politiky ECB, které postupně stlačily výnosy českých vládních dluhopisů. Stínová sazba zůstává na mírně záporných úrovních až do spuštění kurzového závazku, načež prudce klesá a v září 2016 již dosahuje −8 %.
 
 Takto hluboce záporná hodnota se zdá překvapivá, zejména v porovnání s relativně lehce zápornou stínovou sazbou ECB spočtenou z NiGEMu a aktuálně používanou v prognóze, nicméně stínová sazba ECB prezentovaná samotným Krippnerem (graf 2) je v současnosti podobně hluboce záporná, jen mírně výše (stále však pod −7 %). Odhady Wu a Xia (2016) jsou nyní pro ECB také velmi hluboce záporné. V grafu 2 je dobře vidět vliv očekávání na stínovou sazbu: ve druhém čtvrtletí loňského roku rostly přechodně, ale významně výnosy dluhopisů zemí eurozóny jako reakce na sérii optimistických zpráv ohledně inflace a z reálné ekonomiky, což snížilo očekávání dalšího uvolnění měnové politiky ze strany ECB. To se odrazilo v přechodném zvýšení stínové sazby jako měřítka celkové uvolněnosti měnové politiky, kterou by v absenci efektivní dolní hranice odrážela hlavní měnověpolitická sazba.
 
 *Graf 2: Stínová sazba ECB (výpočet L. Krippnera, RBNZ)*
+
 Obecně analýza v této části indikuje, že úrokový diferenciál měřený stínovými sazbami má opačné znaménko, než předpokládá model g3, a tedy stínová sazba je více záporná v případě ČNB než ECB.[5] To odráží skutečnost, že udržování kurzového závazku dorovnává jakékoli uvolnění měnové politiky ze strany ECB (což vlastně reflektuje měnové trilema), přitom samotné ustavení závazku a možná také dodatečné nákupy eur v reakci na spekulativní útoky uvolňují tuzemskou měnovou politiku nad rámec uvolnění doručeného ECB, zejména díky snižování výnosu dluhopisů a dalších úrokových měr. Stínová sazba ČNB se nachází pod stínovou sazbou ECB právě od loňského léta, kdy k první takové spekulaci došlo.
 
 ## 3. Úrokový diferenciál
@@ -46,25 +53,12 @@ Obecně analýza v této části indikuje, že úrokový diferenciál měřený 
 Jakkoli mohou být stínové sazby v určitých situacích užitečným analytickým nástrojem, jedná se o akademickou konstrukci a nikoli o skutečné úrokové míry, za které by tržní aktéři mohli obchodovat. Nabízí se tak otázka, zda by v podmínce úrokové parity neměly být srovnávány reálně obchodovatelné úrokové míry. Pro ECB lze jednoduše použít tříměsíční (nestínový) Euribor, protože mezibankovní trh na jeho bázi v eurozóně stále určitým způsobem funguje, ale problém nastává u českých sazeb, jelikož Pribor je de facto mrtvá sazba. Efektivní výnos na mezní korunu investovanou ze zahraničí je dokonce nižší než depo/repo sazba ČNB, a to ze čtyř důvodů: 1) tržní aktéři vnímají určité riziko, že ČNB zavede statutární záporné sazby, a snaží se vyhnout dlouhodobějším úložkám na účtech, 2) regulace vede k limitům na protistranu a pro mnoho investorů je bezpečnější zakoupit nějaké aktivum, typicky vládní dluhopis nebo pokladniční poukázku, namísto úložky na účtu, 3) domácí banky příliš nechtějí přijímat další likviditu kvůli navyšování bilance, což jim zhoršuje ukazatele typu ROA, 4) pro řadu investorů a spekulantů je komplikované spravovat korunovou likviditu, a tak využívají měnových derivátů, při kterých jsou prostředky na čas převedeny do eur či dolarů. Protože díky existenci kurzového závazku nejsou forwardové kurzy typicky slabší než 27 CZK/EUR, je implikovaný korunový výnos z takové operace záporný.
 
 *Graf 3: Tříměsíční Euribor a implikovaná korunová sazba*
-‐0.1
-
-‐0.15
-
-‐0.2
-
-‐0.25
-
-‐0.3
-
-‐0.35
-
-‐0.4
-
-‐0.45
 
 ‐0.5 leden 16 únor 16 březen 16 Euribor 3M duben 16 květen 16 červen 16 červenec 16 srpen 16 týdenní klouzavý průměr 3M implikované CZK sazby září 16
 
 Graf 3 ukazuje, že neexistuje velký diferenciál mezi Euriborem a implikovanou korunovou sazbou (zde používám týdenní klouzavý průměr z toho důvodu, že forwardový kurz, a tedy i z něho odvozená implikovaná sazba, je dosti volatilní). Po většinu letošního roku je implikovaný tříměsíční korunový výnos dokonce více záporný než tříměsíční Euribor. Záporný implikovaný výnos se potom přelévá do dalších oblastí finančního trhu, kde pozorujeme například výrazně záporné úrokové sazby ze státních dluhopisů. Anekdotická evidence také naznačuje, že ačkoli tříměsíční poptávkové ceny kótované v Bloombergu jsou kladné, chce-li jedna banka u druhé peníze skutečně uložit, reálně nabídnutý úrok bývá záporný (snadno kolem −0.3 %). Ani tento pohled tedy nenaznačuje, že by ve skutečnosti existoval významný kladný diferenciál mezi korunovými a eurovými sazbami. K podobnému závěru vede i jednoduché srovnání výnosu českých a např. rakouských vládních dluhopisů, a diferenciál předpokládaný prognózou v efektivní výši plus 1,8 p. b. (nestínový Pribor vs. stínový Euribor podle NiGEMu) je tak podle mého názoru řádově nadhodnocený.
+
+##
 
 ## 4. Forwardové kurzy
 
@@ -73,46 +67,52 @@ Takzvaná hypotéza nevychýlenosti (unbiasedness hypothesis) tvrdí, že nejlep
 27.04 27.02 27 26.98 26.96 26.94 26.92 26.9 26.88 26.86 26.84 26.82 září 16
 
 *Graf 4: Forwardová křivka CZK/EUR*
+
 "tvrdý" závazek
 
 "měkký" závazek leden 17 duben 17 červenec 17 říjen 17 únor 18 květen 18 srpen 18
 
 Graf 4 ukazuje, že trh očekává jisté posílení kurzu po vypršení „tvrdého“ závazku (tedy na začátku ledna 2017), ale nečeká žádnou reakci na vypršení „měkkého“ závazku (polovina roku 2017). Vzhledem k formulaci závazku (konec roku, polovina roku) má největší smysl zkoumat forwardovou křivku ze začátku měsíce, aby se několikaměsíční forward vztahoval také k začátku měsíce, kdy je nejdříve možné ze závazku vystoupit; graf se vztahuje k začátku září. Nicméně forwardová křivka má takový tvar po většinu letošního roku: například křivka ze začátku června by ukázala stejný obrázek, tedy posílení kurzu v lednu 2017 a žádný skok v polovině roku 2017. Nejedná se tedy o žádnou novinku, která by se objevila až v září.[6]
 
-*Graf 5: Dvouletý forward CZK/EUR*
+*Graf 5: Dvouletý forward CZK/EUR
+
 Očekávané posílení je velmi malé a vyniká pouze ve srovnání s ještě menším dodatečným posílením v horizontu 2 let, které směrovalo na začátku září někam k hodnotě 26,85. Letošní vývoj dvouletého forwardu zachycuje graf 5, ze kterého je vidět, že se v průměru pohybuje kolem 26,80; v první polovině roku měl tendenci oslabovat, v září v reakci na spekulace posílil na zhruba 26,60. Takto silný byl již před rokem, pak se však po odeznění spekulací postupně vrátil k 26,80, a je tedy dost možné, že podobný vývoj budeme pozorovat i letos. Moje interpretace forwardové křivky je taková, že určitý segment trhu očekává opuštění flooru ihned po vypršení tvrdého závazku, což je také v souladu s anekdotickou evidencí.
 
-Budoucí posílení kurzu implikované forwardy je mírné buď proto, že trh předpokládá jen slabý posun kurzu po opuštění závazku, nebo že na opuštění závazku spekuluje jen malá část tržních aktérů. První z těchto hypotéz dodává kredibilitu skutečnost, že ani dvouletý forward nenaznačuje výrazné posílení koruny, dokonce ani v průběhu zářijové spekulační vlny – přitom drtivá většina tržních aktérů počítá s tím, že do dvou let dojde k exitu (viz například zářijové Inflační očekávání finančního trhu). Tato tržní očekávání měřená forwardovými cenami navíc docela dobře odpovídají průměrným odhadům nominálního rovnovážného kurzu z dílny sekce měnové, které jsou pro současné čtvrtletí na úrovni 26,85 a pro konec 2017 na úrovni 26,60.[7] Nejsou však konzistentní s modelem g3, který čeká posílení pod hranici 26 CZK/EUR – resp. konkrétně nejsou v souladu s modelovým očekáváním strmého růstu sazeb, který přispívá k silnějšímu kurzu koruny na horizontu prognózy.
+Budoucí posílení kurzu implikované forwardy je mírné buď proto, že trh předpokládá jen slabý posun kurzu po opuštění závazku, nebo že na opuštění závazku spekuluje jen malá část tržních aktérů. První z těchto hypotéz dodává kredibilitu skutečnost, že ani dvouletý forward nenaznačuje výrazné posílení koruny, dokonce ani v průběhu zářijové spekulační vlny – přitom drtivá většina tržních aktérů počítá s tím, že do dvou let dojde k exitu (viz například zářijové Inflační očekávání finančního trhu). Tato tržní očekávání měřená forwardovými cenami navíc docela dobře odpovídají průměrným odhadům nominálního rovnovážného kurzu z dílny sekce měnové, které jsou pro současné čtvrtletí na úrovni 26,85 a pro konec 2017 na úrovni 26,60.7 Nejsou však konzistentní s modelem g3, který čeká posílení pod hranici 26 CZK/EUR – resp. konkrétně nejsou v souladu s modelovým očekáváním strmého růstu sazeb, který přispívá k silnějšímu kurzu koruny na horizontu prognózy.
+
+##
 
 ## 5. Dílčí poznámky a otázky k SZ
 
- Objem vyplacených mezd v reálném vyjádření rostl ve druhém čtvrtletí meziročně o poznání rychleji než spotřeba (5,6 % oproti 2,2 %). Může být tento rozdíl částečně vysvětlen hypotézou permanentního důchodu? Sám model g3, na rozdíl například od jádrového modelu Ministerstva financí, nepředpokládá existenci spotřebitelů, kteří by utráceli pevně danou část svého současného příjmu (tzv. „rule of thumb“ spotřebitelé, již buď neoptimalizují spotřebu, nebo ji nemohou vyhlazovat z důvodu kreditních omezení). Dostupná empirická literatura ukazuje, že model g3 je v tomto ohledu specifikován správně, protože hypotéza permanentního důchodu je rozumná první aproximace reálného chování spotřebitelů (Havránek a Sokolova, 2016).
+• Objem vyplacených mezd v reálném vyjádření rostl ve druhém čtvrtletí meziročně o poznání rychleji než spotřeba (5,6 % oproti 2,2 %). Může být tento rozdíl částečně vysvětlen hypotézou permanentního důchodu? Sám model g3, na rozdíl například od jádrového modelu Ministerstva financí, nepředpokládá existenci spotřebitelů, kteří by utráceli pevně danou část svého současného příjmu (tzv. „rule of thumb“ spotřebitelé, již buď neoptimalizují spotřebu, nebo ji nemohou vyhlazovat z důvodu kreditních omezení). Dostupná empirická literatura ukazuje, že model g3 je v tomto ohledu specifikován správně, protože hypotéza permanentního důchodu je rozumná první aproximace reálného chování spotřebitelů (Havránek a Sokolova, 2016).
 
- Podobně jako toto stanovisko dává i SZ rovnítko mezi forwardovou/futures křivku a tržní výhled cen, avšak pro komodity namísto měnového kurzu. Hypotéza nevychýlenosti ale u komodit neplatí. Futures křivka samozřejmě také obsahuje element predikce budoucí spotové ceny, ale silně ji ovlivňují následující faktory: 1) náklady na skladování a pojištění, 2) tzv. convenience yield, 3) další fyzické vlastnosti komodity a 4) převažující poptávka po zajištění od producentů komodity nad poptávkou po zajištění od odběratelů komodity (což je Keynesovo vysvětlení backwardace), díky které futures ceny podhodnocují budoucí spotové ceny.
+• Podobně jako toto stanovisko dává i SZ rovnítko mezi forwardovou/futures křivku a tržní výhled cen, avšak pro komodity namísto měnového kurzu. Hypotéza nevychýlenosti ale u komodit neplatí. Futures křivka samozřejmě také obsahuje element predikce budoucí spotové ceny, ale silně ji ovlivňují následující faktory: 1) náklady na skladování a pojištění, 2) tzv. convenience yield, 3) další fyzické vlastnosti komodity a 4) převažující poptávka po zajištění od producentů komodity nad poptávkou po zajištění od odběratelů komodity (což je Keynesovo vysvětlení backwardace), díky které futures ceny podhodnocují budoucí spotové ceny.
 
- Oceňuji práci na boxu o vlivu počtu pracovních dní na dynamiku HDP, který nakonec nebyl zařazen do SZ. Uvažuje-li sekce měnová o zahrnutí kalendářních vlivů do prognózy, přimlouvám se za to, aby technika očištění nebyla lineární, ale aby umožňovala klesající mezní efekt dodatečných dnů nad rámec čtvrtletního průměru.
+• Oceňuji práci na boxu o vlivu počtu pracovních dní na dynamiku HDP, který nakonec nebyl zařazen do SZ. Uvažuje-li sekce měnová o zahrnutí kalendářních vlivů do prognózy, přimlouvám se za to, aby technika očištění nebyla lineární, ale aby umožňovala klesající mezní efekt dodatečných dnů nad rámec čtvrtletního průměru.
 
 Jinými slovy, je-li v prvním čtvrtletí o jeden pracovní den více než průměr, zatímco ve druhém to je o tři dny více než průměr, čekal bych, že velikost očištění bude v případě druhého čtvrtletí méně než trojnásobek očištění v prvním čtvrtletí. Důvodem je skutečnost, že spotřebu a množství vykonané práce budou kromě samotného počtu odpracovaných hodin ovlivňovat také pravidelné měsíční platby a termíny.
 
- Maloobchodní tržby a průmyslová výroba zaznamenaly v červenci meziroční propad. Zajímalo by mě, proč má metoda sezónního očištění na první pohled větší dopad na tržby (po očištění prakticky na úrovni HP trendu, výkyv je téměř zcela vyrovnán) než průmyslovou výrobu (hluboce pod HP trendem); viz přílohy 9 a 10 v SZ. Meziroční propad průmyslové výroby, a to i v sezonně očištěném vyjádření, byl v červenci nejvýraznější za posledních 80 měsíců. Je nepravděpodobné, že celý tento pokles mohou vysvětlit celozávodní dovolené. Co znamená vyjádření, že ho vysvětlují „do značné míry“ (str. 2)? Tento dopad by mělo být možné odhadnout, podobně jak tomu je u efektu očištění o kalendářní vlivy.
+• Maloobchodní tržby a průmyslová výroba zaznamenaly v červenci meziroční propad. Zajímalo by mě, proč má metoda sezónního očištění na první pohled větší dopad na tržby (po očištění prakticky na úrovni HP trendu, výkyv je téměř zcela vyrovnán) než průmyslovou výrobu (hluboce pod HP trendem); viz přílohy 9 a 10 v SZ. Meziroční propad průmyslové výroby, a to i v sezonně očištěném vyjádření, byl v červenci nejvýraznější za posledních 80 měsíců. Je nepravděpodobné, že celý tento pokles mohou vysvětlit celozávodní dovolené. Co znamená vyjádření, že ho vysvětlují „do značné míry“ (str. 2)? Tento dopad by mělo být možné odhadnout, podobně jak tomu je u efektu očištění o kalendářní vlivy.
 
- Jistou nekonzistenci vidím v tom, že prognóza přebírá pro predikci kurzu USD/EUR údaj z Consensus Forecast, zatímco pro predikci ceny ropy používá futures křivku (popsáno na str. 7 v SZ). Jak jsem již zmínil, forwardové kurzy měn představují skutečně obchodované kontrakty, takže dává smysl věřit jim více než odhadům analytiků. Hypotéza nevychýlenosti naopak neplatí u komodit, takže bych čekal spíše obrácené využití zdrojů dat pro tyto predikce.
+• Jistou nekonzistenci vidím v tom, že prognóza přebírá pro predikci kurzu USD/EUR údaj z Consensus Forecast, zatímco pro predikci ceny ropy používá futures křivku (popsáno na str. 7 v SZ). Jak jsem již zmínil, forwardové kurzy měn představují skutečně obchodované kontrakty, takže dává smysl věřit jim více než odhadům analytiků. Hypotéza nevychýlenosti naopak neplatí u komodit, takže bych čekal spíše obrácené využití zdrojů dat pro tyto predikce.
 
- Nejsem si jist, zda je zapotřebí věnovat v SZ tolik prostoru sazbě Pribor, když se v podstatě nejedná o obchodovanou sazbu a její relevance je v současné situaci nejasná. Na ušetřeném prostoru by mohly být diskutovány např. implikované sazby (viz část 3 stanoviska), které bývaly doposud obvykle jen krátce zmíněny v MPD.
+• Nejsem si jist, zda je zapotřebí věnovat v SZ tolik prostoru sazbě Pribor, když se v podstatě nejedná o obchodovanou sazbu a její relevance je v současné situaci nejasná. Na ušetřeném prostoru by mohly být diskutovány např. implikované sazby (viz část 3 stanoviska), které bývaly doposud obvykle jen krátce zmíněny v MPD.
 
- S blížícím se exitem bych v SZ přivítal analýzy porovnávající nárůst bilance ČNB a ECB v době od spuštění kurzového závazku a potenciální implikace pro budoucí vývoj kurzu koruny (například ve formě neveřejného boxu). Přivítal bych také větší využívání a interpretaci forwardové křivky kurzu (viz část 4 tohoto stanoviska).
+• S blížícím se exitem bych v SZ přivítal analýzy porovnávající nárůst bilance ČNB a ECB v době od spuštění kurzového závazku a potenciální implikace pro budoucí vývoj kurzu koruny (například ve formě neveřejného boxu). Přivítal bych také větší využívání a interpretaci forwardové křivky kurzu (viz část 4 tohoto stanoviska).
 
- Ve druhém grafu v příloze 12 (úrokový diferenciál) je chybně označena legenda. Graf také ilustruje podle mého názoru nerealistický předpoklad prognózy ohledně nárůstu diferenciálu až na 2,5 %, který je pravděpodobně tažen předpokladem vyšší neutrální úrokové míry v ČR než v eurozóně, kde je neutrální míra dle nejlepší dostupné evidence (Holston a kol., 2016) nyní záporná a kterou odráží tržní výhled Euriboru.
+• Ve druhém grafu v příloze 12 (úrokový diferenciál) je chybně označena legenda. Graf také ilustruje podle mého názoru nerealistický předpoklad prognózy ohledně nárůstu diferenciálu až na 2,5 %, který je pravděpodobně tažen předpokladem vyšší neutrální úrokové míry v ČR než v eurozóně, kde je neutrální míra dle nejlepší dostupné evidence (Holston a kol., 2016) nyní záporná a kterou odráží tržní výhled Euriboru.
 
-Reference
+## Reference
 
-Dvořák, M., Komárek, L., Komárková, Z., Ters, K., a Urban, Y. (2016): „Longer Term Yield Decomposition: An Analysis of the Czech Government Yield Curve,“ běžící výzkumný projekt ČNB C7/16.
-
-Fama, E. (1984): „Forward and Spot Exchange Rates, “ Journal of Monetary Economics 14, 319-38. Havránek, T., Sokolova, A. (2016): „Do Consumers Really Follow a Rule of Thumb? Three Thousand Estimates from 130 Studies Say ‘Probably Not’, “ ČNB working paper před oponenturou. Holston, K., Laubach, T., a Williams, J. (2016): „Measuring the Natural Rate of Interest: International Trends and Determinants,“ FRBSF Working Paper 2016-11. Krippner, L. (2015): „A Comment on Wu and Xia and the Case for Two-Factor Shadow Short Rates,“ CAMA
-
-Working Paper 48/2015. Nelson, C. and Siegel, A. (1987): „Parsimonious modelling of yield curves,“ Journal of Business 60(4), 473-489. Wu, J. a Xia, F. (2016): „Measuring the Macroeconomic Impact of Monetary Policy at the Zero Lower Bound,“
-
-Journal of Money, Credit, and Banking, 48(2-3), 253-291.
+- Dvořák, M., Komárek, L., Komárková, Z., Ters, K., a Urban, Y. (2016): „Longer Term Yield Decomposition: An Analysis of the Czech Government Yield Curve,“ běžící výzkumný projekt ČNB C7/16.
+- Fama, E. (1984): „Forward and Spot Exchange Rates, “ Journal of Monetary Economics 14, 319-38.
+- Havránek, T., Sokolova, A. (2016): „Do Consumers Really Follow a Rule of Thumb? Three Thousand Estimates from 130 Studies Say ‘Probably Not’, “ ČNB working paper před oponenturou.
+- Holston, K., Laubach, T., a Williams, J. (2016): „Measuring the Natural Rate of Interest: International Trends and Determinants,“ FRBSF Working Paper 2016-11.
+- Krippner, L. (2015): „A Comment on Wu and Xia and the Case for Two-Factor Shadow Short Rates,“ CAMA
+- Working Paper 48/2015.
+- Nelson, C. and Siegel, A. (1987): „Parsimonious modelling of yield curves,“ Journal of Business 60(4), 473-489.
+- Wu, J. a Xia, F. (2016): „Measuring the Macroeconomic Impact of Monetary Policy at the Zero Lower Bound,“
+- Journal of Money, Credit, and Banking, 48(2-3), 253-291.
 
 ## Poznámky
 
