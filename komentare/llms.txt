@@ -2,7 +2,7 @@
 
 > Publicistika Tomáše Havránka a Zuzany Havránkové: komentáře pro celostátní média, sloupky pro litomyšlskou Lilii, rozhovory, stanoviska poradce bankovní rady ČNB a kratší příspěvky ze sítí. Texty jsou zde archivovány v plném znění s odkazem na původní vydání.
 
-Publicistika: 216 položek a 24 kratších příspěvků ze sítí (240 záznamů celkem), 2014–2026. Plné znění každého textu je na uvedené adrese; zdrojový Markdown položek je v /komentare/src/ (příspěvky ze sítí zdrojový soubor nemají). Licence: CC BY 4.0, jako vše na meta-analysis.cz; u převzatých textů uveďte i původní vydání.
+Publicistika: 215 položek a 24 kratších příspěvků ze sítí (239 záznamů celkem), 2014–2026. Plné znění každého textu je na uvedené adrese; zdrojový Markdown položek je v /komentare/src/ (příspěvky ze sítí zdrojový soubor nemají). Licence: CC BY 4.0, jako vše na meta-analysis.cz; u převzatých textů uveďte i původní vydání.
 
 ## Celostátní komentáře
 
@@ -80,7 +80,6 @@ Komentáře a sloupky pro celostátní média — měnová politika, inflace, ve
 - [Stromy, to je ekonomická odpověď na sucho](https://meta-analysis.cz/komentare/hn-stromy-sucho/) — Hospodářské noviny (autorská verze, ne otištěné znění), 5. května 2020
 - [Konec Cobbovy-Douglasovy produkční funkce?](https://meta-analysis.cz/komentare/cnb-cobb-douglas/) — ČNB cnBlog, 30. dubna 2020
 - [Jak přicházíme o sto miliard korun ročně](https://meta-analysis.cz/komentare/hn-sto-miliard-rocne/) — Hospodářské noviny (autorská verze, ne otištěné znění), 11. září 2019
-- [Nedokončené stanovisko k 4. situační zprávě 2019: nejistota v trajektorii sazeb](https://meta-analysis.cz/komentare/cnb-stanovisko-poradce-4sz-2019/) — Česká národní banka (nevyšlo), 22. května 2019
 - [Stanovisko poradce k 8. situační zprávě 2018](https://meta-analysis.cz/komentare/cnb-stanovisko-poradce-8sz-2018/) — Česká národní banka, 19. prosince 2018
 - [Nejlepší využití kryptoměn – baterie?](https://meta-analysis.cz/komentare/forbes-next-kryptomeny-baterie/) — Forbes NEXT, 22. března 2018
 - [Drahoš a Zeman mají stejnou šanci na zvolení](https://meta-analysis.cz/komentare/zi-tz-prezidentske-volby/) — KdoVyhrajeVolby.cz, 8. listopadu 2017
