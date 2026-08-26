@@ -1,8 +1,8 @@
 # Komentáře — Tomáš Havránek, Zuzana Havránková
 
-> Publicistika Tomáše Havránka a Zuzany Havránkové: komentáře pro celostátní média, sloupky pro litomyšlskou Lilii, rozhovory a kratší příspěvky ze sítí. Texty jsou zde archivovány v plném znění s odkazem na původní vydání.
+> Publicistika Tomáše Havránka a Zuzany Havránkové: komentáře pro celostátní média, sloupky pro litomyšlskou Lilii, rozhovory, stanoviska poradce bankovní rady ČNB a kratší příspěvky ze sítí. Texty jsou zde archivovány v plném znění s odkazem na původní vydání.
 
-Publicistika: 211 položek a 24 kratších příspěvků ze sítí (235 záznamů celkem), 2014–2026. Plné znění každého textu je na uvedené adrese; zdrojový Markdown položek je v /komentare/src/ (příspěvky ze sítí zdrojový soubor nemají). Licence: CC BY 4.0, jako vše na meta-analysis.cz; u převzatých textů uveďte i původní vydání.
+Publicistika: 213 položek a 24 kratších příspěvků ze sítí (237 záznamů celkem), 2014–2026. Plné znění každého textu je na uvedené adrese; zdrojový Markdown položek je v /komentare/src/ (příspěvky ze sítí zdrojový soubor nemají). Licence: CC BY 4.0, jako vše na meta-analysis.cz; u převzatých textů uveďte i původní vydání.
 
 ## Celostátní komentáře
 
@@ -209,6 +209,13 @@ Rozhovory pro česká média. U audio a video rozhovorů uvádíme pouze odkaz n
 - [Dvanáct otázek Hospodářských novin k modelu KdoVyhrajeVolby.cz](https://meta-analysis.cz/komentare/zi-kdovyhrajevolby-otazky-hn/) — KdoVyhrajeVolby.cz, září 2017
 - [Česká ekonomka předvídá volby podle úspěšných Američanů. Její systém stojí i na kurzech sázkařů](https://meta-analysis.cz/komentare/zi-hn-predvida-volby/) — Hospodářské noviny (jen ukázka, zbytek je za paywallem), 29. srpna 2017
 - [Z mateřské zamíří rovnou do Berkeley](https://meta-analysis.cz/komentare/zi-iv-hn-berkeley/) — Hospodářské noviny (autorská verze, ne otištěné znění), 27. ledna 2014
+
+## Stanoviska pro ČNB
+
+Stanoviska poradce bankovní rady k situačním zprávám o hospodářském a měnovém vývoji, napsaná ve funkci poradce bankovní rady ČNB (2015–2019). ČNB je zveřejňuje po uplynutí šestileté lhůty omezeného přístupu; zde jsou v plném znění s odkazem na původní dokument.
+
+- [Stanovisko poradce k 8. situační zprávě 2018](https://meta-analysis.cz/komentare/cnb-stanovisko-poradce-8sz/) — Česká národní banka, 19. prosince 2018
+- [Stanovisko poradce k 6. situační zprávě 2017](https://meta-analysis.cz/komentare/cnb-stanovisko-poradce-6sz/) — Česká národní banka, 25. září 2017
 
 ## In English
 

@@ -115,6 +115,14 @@ SECTIONS = {
              "na původní zdroj.",
         lang="cs",
     ),
+    "cnb": dict(
+        title="Stanoviska pro ČNB",
+        short="ČNB",
+        desc="Stanoviska poradce bankovní rady k situačním zprávám o hospodářském a "
+             "měnovém vývoji, napsaná ve funkci poradce bankovní rady ČNB (2015–2019). "
+             "ČNB je zveřejňuje po uplynutí šestileté lhůty omezeného přístupu; zde jsou "
+             "v plném znění s odkazem na původní dokument.",
+    ),
     "english": dict(
         title="In English",
         short="English",
@@ -127,7 +135,8 @@ for _k, _v in SECTIONS.items():
     _v.setdefault("lang", "cs")
 
 HUB_DESC = ("Publicistika Tomáše Havránka a Zuzany Havránkové: komentáře pro celostátní média, sloupky pro "
-            "litomyšlskou Lilii, rozhovory a kratší příspěvky ze sítí. Texty jsou zde "
+            "litomyšlskou Lilii, rozhovory, stanoviska poradce bankovní rady ČNB "
+            "a kratší příspěvky ze sítí. Texty jsou zde "
             "archivovány v plném znění s odkazem na původní vydání.")
 # What the reader sees first. The sentence about full text and original sources is true
 # and worth saying to a crawler, but it delays the actual list, so it stays in HUB_DESC
@@ -1964,8 +1973,10 @@ def main():
     # named here or the orphan sweep below would delete it on every rebuild.
     # "posts" and "social-img" are generated the same way "data" is — not backed by a
     # slug — so they must be named here or the sweep below deletes them every rebuild.
+    # "files" holds hosted documents (the CNB advisor-opinion PDFs); static, not
+    # slug-backed, so the sweep must spare it like the other generated directories.
     live = ({a["slug"] for a in items if a["media"] == "text"} | set(SECTIONS)
-            | {"data", "posts", "ze-siti", "social-img", "item-img"})
+            | {"data", "posts", "ze-siti", "social-img", "item-img", "files"})
     orphans = [d for d in KDIR.iterdir()
                if d.is_dir() and d.name not in live and d.name not in ("src", "__pycache__")]
     for d in orphans:
