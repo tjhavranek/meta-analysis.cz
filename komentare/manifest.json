@@ -4,9 +4,9 @@
  "newest_record": "2026-08-10",
  "temporal_coverage": "2014-01-27/2026-08-10",
  "records": {
-  "total": 237,
+  "total": 239,
   "by_text_status": {
-   "published_full_text": 192,
+   "published_full_text": 194,
    "correspondence": 4,
    "author_manuscript": 19,
    "link_only": 18,
@@ -14,7 +14,7 @@
    "publisher_excerpt": 2
   },
   "by_section": {
-   "Celostátní komentáře": 81,
+   "Celostátní komentáře": 83,
    "Litomyšlské sloupky": 60,
    "Rozhovory": 52,
    "In English": 20,
@@ -39,28 +39,28 @@
  "files": {
   "corpus.jsonl": {
    "url": "https://meta-analysis.cz/komentare/corpus.jsonl",
-   "bytes": 1415595,
-   "sha256": "a5e24217baf383fbe82a9b82dd983c8a0feb2320c34d1375a611a07c62ce50f7"
+   "bytes": 1482620,
+   "sha256": "942feca759a599bad51c18c65816b5ab3df35215e48042af6f44dda474426614"
   },
   "index.json": {
    "url": "https://meta-analysis.cz/komentare/index.json",
-   "bytes": 1434223,
-   "sha256": "e8d280c71c3dd74d66a91eb6c5d45be39e524db112c09df230ca3a4f8d853be4"
+   "bytes": 1501388,
+   "sha256": "6aec79f40d68e284326a2d72c765c971d954aaf9db527896d444666f44f0f16d"
   },
   "all.md": {
    "url": "https://meta-analysis.cz/komentare/all.md",
-   "bytes": 1240792,
-   "sha256": "2891e1ea625c861f67fb30195cfd709cbaae96ed478c2e3f5f1c8b8afc4a1143"
+   "bytes": 1306496,
+   "sha256": "be471dbd87632850afc5d6feea3c3bc60900e51b16f2dcaa65e542c70716f31e"
   },
   "llms.txt": {
    "url": "https://meta-analysis.cz/komentare/llms.txt",
-   "bytes": 44501,
-   "sha256": "c7f22209f6f1dcb17201fdf607826f51269a3779fab72390e6684d38636381a2"
+   "bytes": 44847,
+   "sha256": "572b7c259ad0369da8f697fecb0948df1956bb6a051eb5733295fbc87a97a14b"
   },
   "feed.xml": {
    "url": "https://meta-analysis.cz/komentare/feed.xml",
-   "bytes": 1392929,
-   "sha256": "7a267d0b23b7708b5f9fe35dd20a126ec3b3a0d3c6f670767116bee83983fce7"
+   "bytes": 1460186,
+   "sha256": "cacba9b0bf11f97d3742caa667dbcf1619ec7f4145b92a2b680b81f076a79124"
   }
  },
  "generated_from": [

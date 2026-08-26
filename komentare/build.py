@@ -365,6 +365,13 @@ def md_to_html(md):
                and not re.match(r"^\s*\d+[.)]\s+", lines[i])):
             para.append(lines[i].strip())
             i += 1
+        # A line that matched no branch above and is also excluded here -- a bare "##", a
+        # lone "-", a hashtag -- left `para` empty and `i` unmoved: an infinite loop that
+        # hung the whole build with no error and no output. It cost a debugging round when
+        # a converted CNB document happened to contain one. Always make progress.
+        if not para:
+            para.append(lines[i].strip())
+            i += 1
         out.append(f"<p>{_inline(' '.join(para))}</p>")
     return "\n".join(out)
 
