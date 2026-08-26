@@ -1,11 +1,12 @@
 ---
-category: "cnb"
+category: "celostatni"
 media: "text"
 outlet: "Česká národní banka"
 url: "https://www.cnb.cz/export/sites/cnb/cs/menova-politika/.galleries/br_zapisy_z_jednani/2017/download/stanoviska_2017_06.pdf"
 date: "2017-09-25"
 headline: "Stanovisko poradce k 6. situační zprávě 2017"
 byline: "Tomáš Havránek"
+genre: "advisor_opinion"
 body_note: "Napsáno ve funkci poradce bankovní rady ČNB; dokument nesl šestiletou lhůtu omezeného přístupu a ČNB jej zveřejnila v lednu 2024. Zde je v plném znění část I, stanovisko poradce. Původní dokument obsahuje i stanovisko samostatného odboru finanční stability (část II), které je v [hostovaném PDF](/komentare/files/cnb-stanoviska-6sz-2017.pdf) i v původním dokumentu na webu ČNB."
 ---
 

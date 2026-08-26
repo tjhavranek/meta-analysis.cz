@@ -1,11 +1,12 @@
 ---
-category: "cnb"
+category: "celostatni"
 media: "text"
 outlet: "Česká národní banka"
 url: "https://www.cnb.cz/export/sites/cnb/cs/menova-politika/.galleries/br_zapisy_z_jednani/2018/download/stanoviska_2018_08.pdf"
 date: "2018-12-19"
 headline: "Stanovisko poradce k 8. situační zprávě 2018"
 byline: "Tomáš Havránek"
+genre: "advisor_opinion"
 body_note: "Napsáno ve funkci poradce bankovní rady ČNB; dokument nesl šestiletou lhůtu omezeného přístupu a ČNB jej zveřejnila v lednu 2025. Zde je v plném znění část I, stanovisko poradce. Původní dokument obsahuje i stanovisko sekce finanční stability (část II), které je v [hostovaném PDF](/komentare/files/cnb-stanoviska-8sz-2018.pdf) i v původním dokumentu na webu ČNB."
 ---
 

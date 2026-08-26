@@ -6,7 +6,7 @@ Publicistika: 213 položek a 24 kratších příspěvků ze sítí (237 záznam�
 
 ## Celostátní komentáře
 
-Komentáře a sloupky pro celostátní média — měnová politika, inflace, veřejné finance, důchody a ceny energií.
+Komentáře a sloupky pro celostátní média — měnová politika, inflace, veřejné finance, důchody a ceny energií. Patří sem i stanoviska poradce bankovní rady ČNB k situačním zprávám, která ČNB zveřejňuje po uplynutí šestileté lhůty omezeného přístupu, a dopisy, které nikde nevyšly.
 
 - [Očima byznysu: Nemovitosti jsou pro většinu Čechů špatná investice](https://meta-analysis.cz/komentare/sz-nemovitosti/) — Seznam Zprávy, 1. června 2026
 - [Japonský vládní dluh: katastrofa, nebo vlastně chytrý byznys?](https://meta-analysis.cz/komentare/japonsky-vladni-dluh/) — Seznam Zprávy, 9. dubna 2026
@@ -80,8 +80,10 @@ Komentáře a sloupky pro celostátní média — měnová politika, inflace, ve
 - [Stromy, to je ekonomická odpověď na sucho](https://meta-analysis.cz/komentare/hn-stromy-sucho/) — Hospodářské noviny (autorská verze, ne otištěné znění), 5. května 2020
 - [Konec Cobbovy-Douglasovy produkční funkce?](https://meta-analysis.cz/komentare/cnb-cobb-douglas/) — ČNB cnBlog, 30. dubna 2020
 - [Jak přicházíme o sto miliard korun ročně](https://meta-analysis.cz/komentare/hn-sto-miliard-rocne/) — Hospodářské noviny (autorská verze, ne otištěné znění), 11. září 2019
+- [Stanovisko poradce k 8. situační zprávě 2018](https://meta-analysis.cz/komentare/cnb-stanovisko-poradce-8sz/) — Česká národní banka, 19. prosince 2018
 - [Nejlepší využití kryptoměn – baterie?](https://meta-analysis.cz/komentare/forbes-next-kryptomeny-baterie/) — Forbes NEXT, 22. března 2018
 - [Drahoš a Zeman mají stejnou šanci na zvolení](https://meta-analysis.cz/komentare/zi-tz-prezidentske-volby/) — KdoVyhrajeVolby.cz, 8. listopadu 2017
+- [Stanovisko poradce k 6. situační zprávě 2017](https://meta-analysis.cz/komentare/cnb-stanovisko-poradce-6sz/) — Česká národní banka, 25. září 2017
 - [KdoVyhrajeVolby.cz: Do sněmovny se může dostat rekordní počet stran](https://meta-analysis.cz/komentare/zi-tz-projekce-mandatu/) — KdoVyhrajeVolby.cz, 6. září 2017
 - [Vědci z Univerzity Karlovy vyvinuli volební model, který denně počítá aktuální preference](https://meta-analysis.cz/komentare/zi-tz-agregator-preferenci/) — KdoVyhrajeVolby.cz, 25. srpna 2017
 - [Nerovnost neroste](https://meta-analysis.cz/komentare/cnb-nerovnost-neroste/) — ČNB cnBlog, 15. května 2017
@@ -209,13 +211,6 @@ Rozhovory pro česká média. U audio a video rozhovorů uvádíme pouze odkaz n
 - [Dvanáct otázek Hospodářských novin k modelu KdoVyhrajeVolby.cz](https://meta-analysis.cz/komentare/zi-kdovyhrajevolby-otazky-hn/) — KdoVyhrajeVolby.cz, září 2017
 - [Česká ekonomka předvídá volby podle úspěšných Američanů. Její systém stojí i na kurzech sázkařů](https://meta-analysis.cz/komentare/zi-hn-predvida-volby/) — Hospodářské noviny (jen ukázka, zbytek je za paywallem), 29. srpna 2017
 - [Z mateřské zamíří rovnou do Berkeley](https://meta-analysis.cz/komentare/zi-iv-hn-berkeley/) — Hospodářské noviny (autorská verze, ne otištěné znění), 27. ledna 2014
-
-## Stanoviska pro ČNB
-
-Stanoviska poradce bankovní rady k situačním zprávám o hospodářském a měnovém vývoji, napsaná ve funkci poradce bankovní rady ČNB (2015–2019). ČNB je zveřejňuje po uplynutí šestileté lhůty omezeného přístupu; zde jsou v plném znění s odkazem na původní dokument.
-
-- [Stanovisko poradce k 8. situační zprávě 2018](https://meta-analysis.cz/komentare/cnb-stanovisko-poradce-8sz/) — Česká národní banka, 19. prosince 2018
-- [Stanovisko poradce k 6. situační zprávě 2017](https://meta-analysis.cz/komentare/cnb-stanovisko-poradce-6sz/) — Česká národní banka, 25. září 2017
 
 ## In English
 

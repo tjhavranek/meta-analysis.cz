@@ -14,10 +14,9 @@
    "publisher_excerpt": 2
   },
   "by_section": {
-   "Celostátní komentáře": 79,
+   "Celostátní komentáře": 81,
    "Litomyšlské sloupky": 60,
    "Rozhovory": 52,
-   "Stanoviska pro ČNB": 2,
    "In English": 20,
    "Posts (ze sítí)": 24
   }
@@ -34,18 +33,19 @@
   "editorial": "an outlet's editor stood between the author and the reader",
   "self_published": "posted by the author, with no outlet editing it",
   "unpublished": "never printed anywhere, so no editor and no publication date",
-  "correspondence": "sent to named recipients rather than published; no editor stood between the author and the reader"
+  "correspondence": "sent to named recipients rather than published; no editor stood between the author and the reader",
+  "institutional_record": "written inside an institution as an internal document and released later by that institution as a record of its own proceedings; no outlet editor stood between the author and the reader, and the publication date is the institution's release, not the writing"
  },
  "files": {
   "corpus.jsonl": {
    "url": "https://meta-analysis.cz/komentare/corpus.jsonl",
-   "bytes": 1415493,
-   "sha256": "a03b103e3639aa3b605c11977638e93c870a798af4dc0f5853d30153d42da91a"
+   "bytes": 1415595,
+   "sha256": "a5e24217baf383fbe82a9b82dd983c8a0feb2320c34d1375a611a07c62ce50f7"
   },
   "index.json": {
    "url": "https://meta-analysis.cz/komentare/index.json",
-   "bytes": 1434115,
-   "sha256": "98da6c30b8e7d187911bd0fdbb28e7434679141cd6353a442375d87a30f30a81"
+   "bytes": 1434223,
+   "sha256": "e8d280c71c3dd74d66a91eb6c5d45be39e524db112c09df230ca3a4f8d853be4"
   },
   "all.md": {
    "url": "https://meta-analysis.cz/komentare/all.md",
@@ -54,13 +54,13 @@
   },
   "llms.txt": {
    "url": "https://meta-analysis.cz/komentare/llms.txt",
-   "bytes": 44630,
-   "sha256": "08d355e67a5a184d12d8d34bf720f4708adb8b57968c4b32a6a6282c436ca8c8"
+   "bytes": 44501,
+   "sha256": "c7f22209f6f1dcb17201fdf607826f51269a3779fab72390e6684d38636381a2"
   },
   "feed.xml": {
    "url": "https://meta-analysis.cz/komentare/feed.xml",
-   "bytes": 1392919,
-   "sha256": "b6488bfbf7bbb28f97ee02808d75b9084bbb8fd3a3dfd2c8d54e43cb5fa348da"
+   "bytes": 1392929,
+   "sha256": "7a267d0b23b7708b5f9fe35dd20a126ec3b3a0d3c6f670767116bee83983fce7"
   }
  },
  "generated_from": [

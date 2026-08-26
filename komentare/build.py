@@ -99,7 +99,10 @@ SECTIONS = {
         title="Celostátní komentáře",
         short="Celostátní",
         desc="Komentáře a sloupky pro celostátní média — měnová politika, inflace, "
-             "veřejné finance, důchody a ceny energií.",
+             "veřejné finance, důchody a ceny energií. Patří sem i stanoviska "
+             "poradce bankovní rady ČNB k situačním zprávám, která ČNB zveřejňuje "
+             "po uplynutí šestileté lhůty omezeného přístupu, a dopisy, které "
+             "nikde nevyšly.",
     ),
     "litomysl": dict(
         title="Litomyšlské sloupky",
@@ -114,14 +117,6 @@ SECTIONS = {
         desc="Rozhovory pro česká média. U audio a video rozhovorů uvádíme pouze odkaz "
              "na původní zdroj.",
         lang="cs",
-    ),
-    "cnb": dict(
-        title="Stanoviska pro ČNB",
-        short="ČNB",
-        desc="Stanoviska poradce bankovní rady k situačním zprávám o hospodářském a "
-             "měnovém vývoji, napsaná ve funkci poradce bankovní rady ČNB (2015–2019). "
-             "ČNB je zveřejňuje po uplynutí šestileté lhůty omezeného přístupu; zde jsou "
-             "v plném znění s odkazem na původní dokument.",
     ),
     "english": dict(
         title="In English",
@@ -1228,8 +1223,15 @@ def write_machine_readable(items, social=()):
                            for i, f in enumerate(_imgs)]
         # "editorial" claims an editor stood between the author and the reader. For a
         # piece that was written, submitted and then never printed, no editor ever did.
+        # "editorial" claims an outlet's editor stood between the author and the
+        # reader. That is false for the ČNB advisor opinions: they were written as
+        # internal Bank Board documents and the ČNB released them verbatim, years
+        # later, as a record of its own proceedings. None of the other three values
+        # fits either — the author did not post them, and they were published.
         d["provenance"] = ("correspondence" if a.get("genre") == "correspondence" else
                            "unpublished" if a.get("unpublished") else
+                           "institutional_record"
+                           if a.get("genre") == "advisor_opinion" else
                            "self_published"
                            if (SELF_PUBLISHED.search(a["outlet"])
                                or a.get("genre") == "press_release") else "editorial")
@@ -1384,6 +1386,11 @@ def write_machine_readable(items, social=()):
             "unpublished": "never printed anywhere, so no editor and no publication date",
             "correspondence": "sent to named recipients rather than published; no editor "
                          "stood between the author and the reader",
+            "institutional_record": "written inside an institution as an internal "
+                         "document and released later by that institution as a record of "
+                         "its own proceedings; no outlet editor stood between the author "
+                         "and the reader, and the publication date is the institution's "
+                         "release, not the writing",
         },
         "files": files,
         "generated_from": ["komentare/src/*.md", "komentare/social-posts.json"],
