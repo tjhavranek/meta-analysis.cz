@@ -2055,6 +2055,24 @@ def check():
         for tag in ('property="og:title"', 'property="og:url"'):
             if t.count(tag) > 1:
                 fails.append(f"{p}: duplicate {tag}")
+        # Counting the tags said nothing about what they point AT. That mattered once
+        # `mirror:` started sending a record's canonical to /notes/: a canonical aimed at
+        # the wrong page is invisible to a count, and og:url or the JSON-LD drifting away
+        # from it is exactly the disagreement this archive exists not to have.
+        _can = re.search(r'<link rel="canonical" href="([^"]+)"', t)
+        if not _can:
+            fails.append(f"{p}: canonical tag has no href")
+        else:
+            _href = _can.group(1)
+            _og = re.search(r'property="og:url" content="([^"]+)"', t)
+            if _og and _og.group(1) != _href:
+                fails.append(f"{p}: og:url {_og.group(1)} != canonical {_href}")
+            for _key in ("mainEntityOfPage", "url"):
+                _v = d.get(_key)
+                if isinstance(_v, dict):
+                    _v = _v.get("@id") or _v.get("url")
+                if isinstance(_v, str) and _v != _href:
+                    fails.append(f"{p}: JSON-LD {_key} {_v} != canonical {_href}")
         ml = re.search(r'<html lang="([a-z]+)"', t)
         if not ml:
             fails.append(f"{p}: no lang")
