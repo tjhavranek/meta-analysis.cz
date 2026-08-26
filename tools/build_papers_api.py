@@ -4,7 +4,7 @@
     python3 tools/build_papers_api.py
 
 llms-full.txt carries the whole corpus, 5.4 MB of it, which is the right artifact for
-ingesting everything and the wrong one for deciding what to read. This is the map: 54 cheap
+ingesting everything and the wrong one for deciding what to read. This is the map: one cheap record per paper, small
 records naming what each paper is, where its full text lives, and what sections it has, so a
 reader that wants one section can fetch one page instead of the corpus.
 

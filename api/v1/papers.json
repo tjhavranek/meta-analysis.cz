@@ -1,10 +1,10 @@
 {
  "name": "meta-analysis.cz papers",
- "description": "One record per full-text document on meta-analysis.cz: 54 papers plus the MAIVE supplement, each with its full text, PDF and section map. Fetch this first and one page after, rather than the whole corpus.",
+ "description": "One record per full-text document on meta-analysis.cz: 55 papers plus the MAIVE supplement, each with its full text, PDF and section map. Fetch this first and one page after, rather than the whole corpus.",
  "license": "https://creativecommons.org/licenses/by/4.0/",
  "full_corpus": "https://meta-analysis.cz/llms-full.txt",
- "count": 55,
- "paper_count": 54,
+ "count": 56,
+ "paper_count": 55,
  "supplement_count": 1,
  "papers": [
   {
@@ -4333,6 +4333,85 @@
     "codebook": "https://meta-analysis.cz/api/v1/codebooks/remittances.json"
    },
    "codebook_url": "https://meta-analysis.cz/api/v1/codebooks/remittances.json"
+  },
+  {
+   "project": "reporting",
+   "document_type": "paper",
+   "title": "Reporting Guidelines for Meta-Analysis in Economics",
+   "authors": [
+    "Tomas Havranek",
+    "T. D. Stanley",
+    "Hristos Doucouliagos",
+    "Pedro Bom",
+    "Jerome Geyer-Klingeberg",
+    "Ichiro Iwasaki",
+    "W. Robert Reed",
+    "Katja Rost",
+    "R. C. M. van Aert"
+   ],
+   "year": 2020,
+   "journal": "Journal of Economic Surveys",
+   "doi": "https://doi.org/10.1111/joes.12363",
+   "publisher_url": null,
+   "full_text_url": "https://meta-analysis.cz/guidelines/reporting/",
+   "project_url": "https://meta-analysis.cz/guidelines/",
+   "pdf_url": "https://meta-analysis.cz/guidelines/reporting2020.pdf",
+   "abstract": "Meta-analysis has become the conventional approach to synthesizing the results of empirical economics research. To further improve the transparency and replicability of the reported results and to raise the quality of meta-analyses, the Meta-Analysis of Economics Research Network has updated the reporting guidelines that were published by this Journal in 2013. Future meta-analyses in economics will be expected to follow these updated guidelines or give valid reasons why a meta-analysis should deviate from them.",
+   "sections": [
+    {
+     "level": 2,
+     "title": "1. Introduction",
+     "anchor": "sec-1"
+    },
+    {
+     "level": 2,
+     "title": "2. Reporting Guidelines for Meta-Analyses in Economics",
+     "anchor": "sec-2"
+    },
+    {
+     "level": 3,
+     "title": "2.1. Research Questions and Effect Size",
+     "anchor": "sec-2-1"
+    },
+    {
+     "level": 3,
+     "title": "2.2. Research Literature Searching, Compilation, and Coding",
+     "anchor": "sec-2-2"
+    },
+    {
+     "level": 3,
+     "title": "2.3. Modeling Issues",
+     "anchor": "sec-2-3"
+    },
+    {
+     "level": 3,
+     "title": "2.4. Further Reporting and Interpretation",
+     "anchor": "sec-2-4"
+    },
+    {
+     "level": 2,
+     "title": "3. Discussion",
+     "anchor": "sec-3"
+    },
+    {
+     "level": 2,
+     "title": "Acknowledgements",
+     "anchor": "sec-acknowledgements"
+    },
+    {
+     "level": 2,
+     "title": "Notes",
+     "anchor": "sec-endnotes"
+    },
+    {
+     "level": 2,
+     "title": "References",
+     "anchor": "sec-references"
+    }
+   ],
+   "headline_question": "What should a meta-analysis in economics report?",
+   "headline": "the MAER-Net guidelines on what every meta-analysis in economics should report, from search and coding to publication bias and replication",
+   "headline_url": "https://meta-analysis.cz/results/#reporting"
   },
   {
    "project": "resource_curse",

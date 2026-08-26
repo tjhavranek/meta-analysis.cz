@@ -664,8 +664,9 @@ def _drop_sections(md):
     return "\n".join(out).strip("\n")
 
 
-# The two hand-built pages, and where their text actually lives.
-_HAND_BUILT = {"guidelines": "guidelines/guide", "maive": "maive/paper"}
+# The hand-built pages, and where their text actually lives.
+_HAND_BUILT = {"guidelines": "guidelines/guide", "maive": "maive/paper",
+               "reporting": "guidelines/reporting"}
 
 
 def full_text_of(project):
@@ -761,9 +762,15 @@ def main():
             merged[proj] = base
             WARNINGS.append(f"{proj}: not in tools/papers.json — covered mechanically "
                             f"(no Scholar tags); ask your AI assistant to enrich papers.json")
-    stale = sorted(set(metas) - set(projects))
+    # An entry with a "parent" lives under another project's landing (the 2020 reporting
+    # guidelines under /guidelines/), so the absence of its own folder is by design.
+    stale = sorted(p2 for p2 in set(metas) - set(projects) if not metas[p2].get("parent"))
     for s in stale:
         WARNINGS.append(f"papers.json entry '{s}' has no folder on disk (stale?)")
+    for s in sorted(p2 for p2 in set(metas) - set(projects)
+                    if metas[p2].get("parent") and p2 not in _HAND_BUILT):
+        WARNINGS.append(f"papers.json entry '{s}' has a parent but no _HAND_BUILT mapping, "
+                        f"so it reaches neither llms.txt nor llms-full.txt")
 
     ok = sum(inject(os.path.join(SITE, p, "index.html"), head_block(merged[p])) for p in projects)
     print(f"injected head block into {ok}/{len(projects)} project pages")
@@ -1056,7 +1063,13 @@ def main():
     print(f"sitemap: {len(urls)} URLs")
 
     # How many papers llms-full.txt actually carries the text of, counted rather than stated.
-    _n_full = sum(1 for _p in projects if full_text_of(_p))
+    # Entries filed under another project's landing (the 2020 reporting guidelines under
+    # /guidelines/) have no top-level folder, so `projects` never sees them; they are papers
+    # all the same and both exports carry them.
+    _parented = sorted(p2 for p2 in set(metas) - set(projects)
+                       if metas[p2].get("parent") and p2 in _HAND_BUILT)
+    _n_full = sum(1 for _p in projects if full_text_of(_p)) \
+        + sum(1 for _p in _parented if full_text_of(_p))
     lt = ["# meta-analysis.cz", "",
           "> Data, code, and papers for meta-analyses in economics and the social sciences, "
           "by Tomas Havranek and Zuzana Irsova of Charles University, Prague, and their co-authors. "
@@ -1087,6 +1100,9 @@ def main():
             line += f' Published as "{pub}".'
         return line
     lt += [_llms_line(p) for p in projects]
+    lt += [f"- [{metas[p].get('title') or p}]({BASE}/{_HAND_BUILT[p]}/): "
+           f"{metas[p].get('one_line') or metas[p].get('abstract') or ''}".rstrip(": ")
+           for p in _parented]
     _api = {}
     try:
         _api = json.load(open(os.path.join(SITE, "api", "v1", "datasets.json"), encoding="utf-8"))
@@ -1192,6 +1208,22 @@ def main():
         if os.path.isfile(os.path.join(SITE, _full.strip("/"), "index.html")):
             lf.append(f"Full text (HTML): {BASE}{_full}")
         lf += ["", f"Abstract: {m['abstract']}", ""]
+        body = full_text_of(p)
+        if body:
+            lf += [body, ""]
+    # Papers filed under another project's landing, in the same shape as the loop above.
+    for p in _parented:
+        m = metas[p]
+        lf += [f"## {m.get('title') or p}", f"URL: {BASE}/{_HAND_BUILT[p]}/"]
+        if m.get("reference_line"):
+            lf.append(f"Citation: {m['reference_line']}")
+        if m.get("doi_or_publisher_url"):
+            lf.append(f"Published version: {m['doi_or_publisher_url']}")
+        if m.get("pdf") and os.path.isfile(os.path.join(SITE, m["pdf"])):
+            lf.append(f"Paper (PDF): {BASE}/{m['pdf']}")
+        if m.get("abstract"):
+            lf += ["", f"Abstract: {m['abstract']}"]
+        lf.append("")
         body = full_text_of(p)
         if body:
             lf += [body, ""]

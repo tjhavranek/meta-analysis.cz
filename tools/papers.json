@@ -2115,5 +2115,32 @@
   "has_meta_description": true,
   "meta_keywords": "conventional wisdom, meta-analysis, systematic review, publication bias, research revision, effect size, economics",
   "one_line": "A systematic review of influential economics meta-analyses against the conventional wisdom they tested: after correcting for observable biases, effects are typically much closer to zero and sometimes switch sign, with a relative reduction of 45-60%."
+ },
+ {
+  "project": "reporting",
+  "title": "Reporting Guidelines for Meta-Analysis in Economics",
+  "literature": "Reporting Guidelines for Meta-Analysis",
+  "abstract": "Meta-analysis has become the conventional approach to synthesizing the results of empirical economics research. To further improve the transparency and replicability of the reported results and to raise the quality of meta-analyses, the Meta-Analysis of Economics Research Network has updated the reporting guidelines that were published by this Journal in 2013. Future meta-analyses in economics will be expected to follow these updated guidelines or give valid reasons why a meta-analysis should deviate from them.",
+  "reference_line": "Tomas Havranek, T. D. Stanley, Hristos Doucouliagos, Pedro Bom, Jerome Geyer-Klingeberg, Ichiro Iwasaki, W. Robert Reed, Katja Rost, and R. C. M. van Aert (2020): \"Reporting Guidelines for Meta-Analysis in Economics.\" Journal of Economic Surveys 34(3): 469-475. doi.org/10.1111/joes.12363",
+  "authors": [
+   "Tomas Havranek",
+   "T. D. Stanley",
+   "Hristos Doucouliagos",
+   "Pedro Bom",
+   "Jerome Geyer-Klingeberg",
+   "Ichiro Iwasaki",
+   "W. Robert Reed",
+   "Katja Rost",
+   "R. C. M. van Aert"
+  ],
+  "year": 2020,
+  "journal": "Journal of Economic Surveys",
+  "doi_or_publisher_url": "https://doi.org/10.1111/joes.12363",
+  "parent": "/guidelines/",
+  "pdf": "guidelines/reporting2020.pdf",
+  "figure": null,
+  "has_meta_description": true,
+  "meta_keywords": "meta-analysis, reporting guidelines, publication bias, meta-regression, MAER-Net",
+  "one_line": "The MAER-Net reporting guidelines for meta-analysis in economics: what every meta-analysis should report, from search and coding to publication bias and replication."
  }
 ]

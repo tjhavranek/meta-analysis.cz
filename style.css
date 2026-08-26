@@ -942,7 +942,7 @@ table.catalogue li{ margin-bottom:var(--s2); font-size:var(--f-1); line-height:1
    line, so on a phone it read as a rendering fault rather than a signal. */
 .z .a{ font-size:var(--f0); color:var(--ink-soft); }
 
-/* the 54 sentences: collapsed for readers, present for everything else */
+/* the result sentences: collapsed for readers, present for everything else */
 .post.estimates .sentences{
   margin-top:var(--s7); padding-top:var(--s5); border-top:1px solid var(--rule);
 }

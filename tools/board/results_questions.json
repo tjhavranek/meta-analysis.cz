@@ -250,6 +250,11 @@
   "short": "meta-analysis guidelines"
  },
  {
+  "project": "reporting",
+  "question": "What should a meta-analysis in economics report?",
+  "short": "reporting standards"
+ },
+ {
   "project": "outliers",
   "question": "How sensitive are meta-analysis results to outlier handling?",
   "short": "outlier sensitivity"

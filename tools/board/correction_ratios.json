@@ -393,6 +393,10 @@
    "why": "'positive but economically small' gives no scalar"
   },
   {
+   "project": "reporting",
+   "why": "reporting guidelines, not a meta-analysis; no corrected mean to compare"
+  },
+  {
    "project": "resource_curse",
    "why": "'weak support for a curse' gives no scalar"
   },

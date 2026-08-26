@@ -232,7 +232,7 @@ def published_title(p):
 
     papers.json carries two names on purpose: `title` is a DISPLAY string written to match
     what someone would type into a search box, and it becomes the page's <title>; where it
-    differs from what the journal printed, `citation_title` holds the real one. 21 of the 54
+    differs from what the journal printed, `citation_title` holds the real one. 21 of the 55
     differ. In THIS file every `title` we emit sits inside a record that means "the paper" --
     beside its authors, its journal and its DOI -- so it has to be the published one. A record
     that pairs an invented title with a real DOI is a claim about the literature, not a label,

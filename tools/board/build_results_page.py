@@ -304,6 +304,11 @@ def build(check=False):
 {jsonld}
 </script>
 <link rel="canonical" href="https://meta-analysis.cz/results/" />
+<meta property="og:site_name" content="meta-analysis.cz" />
+<meta property="og:type" content="website" />
+<meta property="og:title" content="Headline results from {len(rows)} papers on meta-analysis in economics" />
+<meta property="og:description" content="One answer per paper: {len(rows)} headline findings, corrected for publication bias where the paper reports a corrected estimate." />
+<meta property="og:url" content="https://meta-analysis.cz/results/" />
 <!-- seo-meta:start -->
 <!-- seo-meta:end -->
 </head>
@@ -322,6 +327,7 @@ def build(check=False):
 \t\t\t<li><a href="/datasets/">Datasets</a></li>
 \t\t\t<li><a href="/guidelines/">Guidelines</a></li>
 \t\t\t<li><a href="/maive/">MAIVE</a></li>
+\t\t\t<li><a href="/search/">Search</a></li>
 \t\t</ul>
 \t</div>
 </div>

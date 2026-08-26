@@ -34151,6 +34151,338 @@ Zapata, Oscar. 2015. “More Water Please, It’s Getting Hot! The Effect of Cli
 
 Zigraiova, Diana, and Tomas Havranek. 2016. “Bank Competition and Financial Stability: Much Ado about Nothing?” *Journal of Economic Surveys* 30 (5): 944–81.
 
+## Reporting Guidelines for Meta-Analysis in Economics
+URL: https://meta-analysis.cz/guidelines/reporting/
+Citation: Tomas Havranek, T. D. Stanley, Hristos Doucouliagos, Pedro Bom, Jerome Geyer-Klingeberg, Ichiro Iwasaki, W. Robert Reed, Katja Rost, and R. C. M. van Aert (2020): "Reporting Guidelines for Meta-Analysis in Economics." Journal of Economic Surveys 34(3): 469-475. doi.org/10.1111/joes.12363
+Published version: https://doi.org/10.1111/joes.12363
+Paper (PDF): https://meta-analysis.cz/guidelines/reporting2020.pdf
+
+Abstract: Meta-analysis has become the conventional approach to synthesizing the results of empirical economics research. To further improve the transparency and replicability of the reported results and to raise the quality of meta-analyses, the Meta-Analysis of Economics Research Network has updated the reporting guidelines that were published by this Journal in 2013. Future meta-analyses in economics will be expected to follow these updated guidelines or give valid reasons why a meta-analysis should deviate from them.
+
+Tomáš Havránek, T. D. Stanley, Hristos Doucouliagos, Pedro Bom,
+Jerome Geyer-Klingeberg, Ichiro Iwasaki, W. Robert Reed, Katja Rost, and R. C. M. van Aert
+(2020): "Reporting Guidelines for Meta-Analysis in Economics." Journal of Economic Surveys
+34(3), 469-475. doi.org/10.1111/joes.12363 .
+Republished here in full; the version of
+record is free access at Wiley. Superseded in 2026 by the
+AI update of the same guidelines.
+
+
+
+#### 1. Introduction
+
+Seven years ago, the Journal of Economic Surveys published the first guidelines for
+conducting meta-analysis in economics (Stanley et al., 2013). Since that time, economists
+have embraced meta-analysis as a conventional tool for research synthesis, and more than
+2000 new meta-analyses have been conducted, according to the Research Papers in Economics
+database (https://econpapers.repec.org/). Research studies published in the most eminent economics
+journals and structural models employed by central banks now routinely rely on previously
+published meta-analyses to summarize the existing evidence in the field and to provide
+information for the calibration of key economic parameters (e.g., Constantinides, 2017;
+Leeper et al., 2017; Lusardi et al., 2017; Benigno and Fornaro, 2018; Heathcote and Perri,
+2018; Auclert, 2019). A growing number of economics meta-analyses have reached the mark of
+500 or more citations, examples include Stanley and Jarrell (1989), Gorg and Strobl (2001),
+Stanley (2001), Woodward and Wui (2001), Zelmer (2003), Weichselbaumer and Winter-Ebmer
+(2005), Rose and Stanley (2005), and Doucouliagos and Ulubasoglu (2008). In 2019, the
+American Economic Review published its first full paper that focuses on meta-analysis and
+publication bias (Andrews and Kasy, 2019).
+
+The last 7 years have also witnessed the development of many novel meta-analysis models,
+with special emphasis on publication and misspecification biases. New techniques include
+the weighted average of adequately powered estimates by Ioannidis et al. (2017) and Stanley
+and Doucouliagos (2017), unrestricted weighted least squares by Stanley and Doucouliagos
+(2015, 2017), the selection model by Andrews and Kasy (2019), the p-uniform* model by van
+Aert and van Assen (2019), the endogenous kink model by Bom and Rachinger (2019), and the
+stem-based estimator by Furukawa (2020). The use of model averaging techniques, both
+Bayesian and frequentist, has become common (e.g., Havranek et al., 2015; Havranek and
+Irsova, 2017; Havranek et al., 2018a; Havranek et al., 2018b). Several important
+contributions have assessed the incidence and impact of publication bias and p-hacking in
+economics (Brodeur et al., 2016; Bruns and Ioannidis, 2016; Ioannidis et al., 2017; Brodeur
+et al., 2018; Christensen and Miguel, 2018), and attention has turned to journal editorial
+policies (Blanco-Perez and Brodeur, 2020). In response, the American Economic Review now
+discourages the use of eye-catchers (e.g., *, **, and ***) to signal statistical
+significance.
+
+While the number of published meta-analyses has risen exponentially, the diversity among
+them has increased as well. Some meta-analyses still rely only on some dozen(s) of
+observations; yet, it is not uncommon to encounter analyses that employ thousands of
+estimates and hundreds of thousands of data points. For example, Xue et al. (2019) identify
+12,778 estimates on social capital and health from 470 studies, and Gechert et al. (2019)
+collect 71 variables to explain heterogeneity among the reported estimates of the
+elasticity of substitution between capital and labor. Other meta-analyses focus on
+experimental economic results instead of the findings from observational econometric
+studies (e.g., Zelmer, 2003; Imai and Camerer, 2019). While diversity in available data and
+methods is necessary and enriching, it can also obscure potential abuse of meta-analysis in
+economics (Nelson and Kennedy, 2009). To avoid misuse in light of recent advances in
+meta-analysis, members of Meta-Analysis of Economics Research Network (MAER-Net) believes
+that it is time to update its reporting guidelines and thereby to raise the minimum quality
+standards for this important and rapidly growing field. This update focuses on, in
+particular, the following issues: robustness checks for publication bias, outlier and
+leverage identification, economic significance, model averaging, the transformations of
+reported coefficients, the PRISMA flow diagram (Moher et al., 2009), and the availability
+of data and code for replication.
+
+Meta-analysis is the systematic review and quantitative synthesis of empirical economic
+evidence on a given hypothesis, phenomenon, or effect. It seeks both to summarize and
+explain the wide, often disparate, variation routinely found among reported econometric
+results (Stanley, 2001). Although other guidelines for conducting and reporting
+meta-analyses have been offered (Stroup et al., 2000; Higgins and Green, 2017; Appelbaum et
+al., 2018), none other than Stanley et al. (2013) have explicitly considered the type of
+empirical evidence typically found in applied econometric research. MAER-Net believes that
+it is appropriate to offer up-to-date guidelines for reporting meta-analyses and to serve
+as minimal standards for academic journals. The editorial board of the Journal of Economic
+Surveys will expect that all meta-analyses fulfill these updated reporting requirements or
+give valid reasons why meta-analysts deviate from them.
+
+MAER-Net recommends that all meta-analyses and meta-regression analyses in economics
+should comply with the following reporting protocols.
+
+#### 2. Reporting Guidelines for Meta-Analyses in Economics
+
+Research papers that conduct meta-analysis in economics should include the points
+detailed below.
+
+##### 2.1. Research Questions and Effect Size
+
+
+A clear statement of the specific economic theories, hypotheses, or effects studied.
+
+A precise definition of how effects are measured (the "effect size") and their standard
+errors or other proxies for precision, accompanied by any relevant formulas if
+transformations are made.
+
+An explicit description about how measured effects are comparable, including any
+methods or formulas used to standardize or convert them to a common metric.
+
+
+
+##### 2.2. Research Literature Searching, Compilation, and Coding
+
+
+A full report of how the research literature was searched. This report should include:
+
+the exact databases or other sources used;
+
+the precise combination of keywords employed; and
+
+the date that the search was completed.
+
+
+
+A full disclosure of the rules for study (or effect size) inclusion/exclusion. This
+should be accompanied by a PRISMA flow diagram. [1]
+
+A statement addressing who searched, read, and coded the research literature. Two or
+more reviewers should code the relevant research and disclose a measure of their
+agreement.
+
+A complete list of the information coded for each study or estimate. At a minimum, we
+recommend that reviewers conducting a meta-analysis code:
+
+the estimated effect size;
+
+its standard error, when feasible, and the degrees of freedom (or sample size);
+
+
+
+Reviewers conducting a meta-regression analysis also need to code:
+
+variables that distinguish which type of econometric model, methods, and techniques
+were employed;
+
+dummy (i.e., 0/1) variables for the omission of theoretically relevant variables in the
+research study investigated;
+
+empirical setting (e.g., region, market, and industry);
+
+data types (panel, cross-sectional, time series, ...);
+
+alternative ways that effects were measured and reported before being converted to a
+common effect size;
+
+year of the data used and/or publication year;
+
+type of publication (journal, working paper, book chapter, etc.); and
+
+the primary study, publication, and/or dataset from which an observation is drawn.
+
+
+
+The rule or method used to identify outliers, leverage, or influence points when
+omitted.
+
+
+
+##### 2.3. Modeling Issues
+
+
+A table displaying definitions of all the coded variables along with their descriptive
+statistics (means and standard deviations).
+
+A fully reported meta-regression analysis, along with the exact strategy used to
+simplify it (e.g., Bayesian or frequentist model averaging, general-to-specific, etc.).
+
+An investigation of publication, selection, and misspecification biases unless these
+biases can reasonably be expected to be absent. When suspected, these should be controlled
+for in subsequent meta-regression models.
+
+Methods to accommodate heteroscedasticity (e.g., inverse-variance weights) and
+dependence across estimates, such as within-study dependence (e.g., clustered or
+bootstrapped standard errors and panel or multilevel meta-regression models).
+
+
+
+##### 2.4. Further Reporting and Interpretation
+
+
+Graph(s) of the effect sizes, such as funnel graphs, forest plots, or other statistical
+displays of data.
+
+Robustness checks for meta-regression models and publication bias methods.
+
+A discussion of the economic (or practical) significance of the main findings.
+
+"Best practice" estimate(s) and sensible variations from them. [2]
+
+A statement about sharing the data or link to its public posting along with the codes
+of the core analyses.
+
+
+
+#### 3. Discussion
+
+Not all meta-analyses in economics will nicely fit into the above list of recommended
+guidelines. For example, meta-analyses of economic experiments may not be able to conduct
+meta-regression due to the limited numbers of experiments or to code all of the moderator
+variables listed above. Again, exceptions to these guidelines may be acceptable when
+accompanied by a suitable rationale.
+
+A further qualification made by the 2013 MAER-Net reporting guidelines remains
+relevant:
+
+With one exception, MAER-Net has come to a clear consensus about these
+reporting guidelines. The requirement to have two reviewers code all the relevant research
+has received the most comment and discussion. As economists, we all are acutely aware of
+the tradeoff between the improved quality that the second coder will likely add (through
+catching mistakes and resolving ambiguities) and the increased cost (in weeks of highly
+skilled professional labor). We understand that the highest standards of scientific rigor
+demand at least two highly knowledgeable researchers code the relevant research base.
+Nonetheless, MAER-Net does not wish to prohibit Ph.D. students and researchers at
+resource-challenged institutions from employing this important tool to understand their
+areas of research. To finesse these opposing concerns, the above statement is sufficiently
+broad to encompass a second reviewer randomly checking a substantial proportion of the
+research literature if their coding protocol is stated explicitly and justified.
+
+These guidelines are not meant to express the last words about how best to conduct
+meta-analysis in economics. Rather, we support all efforts to raise the quality of
+meta-analyses. The above reporting protocols represent a floor for scientific rigor,
+replicability, and quality that we hope will be surpassed by most meta-analyses (Stanley et
+al., 2013, p. 393).
+
+#### Acknowledgements
+
+We thank the participants of MAER-Net's Greenwich University Colloquium, October 11-12,
+2019, and everyone who contributed to the online discussion of these reporting guidelines.
+Havranek acknowledges support from the Czech Science Foundation (grant no. 19-26812X). Reed
+acknowledges support from the Czech Science Foundation (grant no. 18-02513S).
+
+#### Notes
+
+
+The PRISMA flow diagram shows the details of information flow in each stage
+of literature search in meta-analysis, including the number of studies identified,
+screened, and deemed eligible (for details, see Moher et al., 2009).
+
+Meta-regression estimates map conditional estimates of effect. To provide
+specific estimates, professional judgment must be used to substitute "best practice" values
+into the estimated meta-regression for the independent variables (Stanley and Doucouliagos,
+2012, pp. 98–99).
+
+
+
+#### References
+
+
+Andrews, I. and Kasy, M. (2019) Identification of and correction for publication bias. American Economic Review 109(8): 2766–2794.
+
+Appelbaum, M., Cooper, H., Kline, R.B., Mayo-Wilson, E., Nezu, A.M. and Rao, S.M. (2018) Journal article reporting standards for quantitative research in psychology: the APA Publications and Communications Board task force report. American Psychologist 73(1): 3–25.
+
+Auclert, A. (2019) Monetary policy and the redistribution channel. American Economic Review 109(6): 2333–2367.
+
+Benigno, G. and Fornaro, L. (2018) Stagnation traps. Review of Economic Studies 85(3): 1425–1470.
+
+Blanco-Perez, C. and Brodeur, A. (2020) Publication bias and editorial statement on negative findings. Economic Journal forthcoming.
+
+Bom, P. and Rachinger, H. (2019) A kinked meta-regression model for publication bias correction. Research Synthesis Methods 10(4): 497–514.
+
+Brodeur, A., Cook, N. and Heyes, A. (2018) Methods matter: P-hacking and causal inference in economics. IZA Discussion Papers 11796.
+
+Brodeur, A., Lé, M., Sangnier, M. and Zylberberg, Y. (2016) Star wars: the empirics strike back. American Economic Journal: Applied Economics 8(1): 1–32.
+
+Bruns, S. and Ioannidis, J. (2016) p-curve and p-hacking in observational research. PLoS One 11(2): e0149144.
+
+Christensen, G. and Miguel, E. (2018) Transparency, reproducibility, and the credibility of economics research. Journal of Economic Literature 56(3): 920–980.
+
+Constantinides, G. (2017) Asset pricing: models and empirical evidence. Journal of Political Economy 125(6): 1782–1790.
+
+Doucouliagos, H. and Ulubaşoğlu, M. (2008) Democracy and economic growth: a meta-analysis. American Journal of Political Science 52(1): 61–83.
+
+Furukawa, C. (2020) Publication bias under aggregation frictions: from communication model to new correction method. MIT, mimeo.
+
+Gechert, S., Havranek, T., Irsova, Z. and Kolcunova, D. (2019) Death to the Cobb–Douglas production function. FMM Working Paper 51–2019, IMK at the Hans Boeckler Foundation, Macroeconomic Policy Institute.
+
+Gorg, H. and Strobl, E. (2001) Multinational companies and productivity spillovers: a meta-analysis. Economic Journal 111(475): 723–739.
+
+Havranek, T., Herman, D. and Irsova, Z. (2018a) Does daylight saving save electricity? A meta-analysis. Energy Journal 39(2): 35–61.
+
+Havranek, T., Horvath, R., Irsova, Z. and Rusnak, M. (2015) Cross-country heterogeneity in intertemporal substitution. Journal of International Economics 96(1): 100–118.
+
+Havranek, T. and Irsova, Z. (2017) Do borders really slash trade? A meta-analysis. IMF Economic Review 65(2): 365–396.
+
+Havranek, T., Irsova, Z. and Zeynalova, O. (2018b) Tuition fees and university enrolment: a meta-regression analysis. Oxford Bulletin of Economics and Statistics 80(6): 1145–1184.
+
+Heathcote, J. and Perri, F. (2018) Wealth and volatility. Review of Economic Studies 85(4): 2173–2213.
+
+Higgins, J.P.T. and Green, S. (eds) (2017) Cochrane Handbook for Systematic Reviews of Interventions. Chichester: John Wiley and Sons.
+
+Imai, T. and Camerer, C.F. (2019) A large-scale, interdisciplinary meta-analysis on behavioral economics parameters. OSF Pre-analysis plan. https://osf.io/8kzjm/ accessed Jan 4, 2010.
+
+Ioannidis, J.P.A., Stanley, T.D. and Doucouliagos, H. (2017) The power of bias in economics research. Economic Journal 127(605): 236–265.
+
+Leeper, E., Traum, N. and Walker, T.B. (2017) Clearing up the fiscal multiplier morass. American Economic Review 107(8): 2409–2454.
+
+Lusardi, A., Michaud, P. and Mitchell, O.S. (2017) Optimal financial knowledge and wealth inequality. Journal of Political Economy 125(2): 431–477.
+
+Moher, D., Liberati, A., Tetzlaff, J. and Altman, D.G. (2009) Preferred reporting items for systematic reviews and meta-analyses: the PRISMA statement. PLoS Medicine 6(7): e1000097.
+
+Nelson, J. and Kennedy, P. (2009) The use (and abuse) of meta-analysis in environmental and natural resource economics: an assessment. Environmental & Resource Economics 42(3): 345–377.
+
+Rose, A.K. and Stanley, T.D. (2005) A meta-analysis of the effect of common currencies on international trade. Journal of Economic Surveys 19(3): 347–365.
+
+Stanley, T.D. (2001) Wheat from chaff: meta-analysis as quantitative literature review. Journal of Economic Perspectives 15(3): 131–150.
+
+Stanley, T.D. and Doucouliagos, H. (2012) Meta-Regression Analysis in Economics and Business. Oxford: Routledge.
+
+Stanley, T.D. and Doucouliagos, H. (2015) Neither fixed nor random: weighted least squares meta-analysis. Statistics in Medicine 34: 2116–2127.
+
+Stanley, T.D. and Doucouliagos, H. (2017) Neither fixed nor random weighted least squares meta-regression analysis. Research Synthesis Methods 8: 19–42.
+
+Stanley, T.D., Doucouliagos, H., Giles, M., Heckemeyer, J., Johnston, R.J., Laroche, P., Nelson, J.P., Paldam, M., Poot, J., Pugh, G., Rosenberger, R.S. and Rost, K. (2013) Meta-analysis of economics research reporting guidelines. Journal of Economic Surveys 27(2): 390–394.
+
+Stanley, T.D. and Jarrell, S.B. (1989) Meta-regression analysis: a quantitative method of literature surveys. Journal of Economic Surveys 3: 161–170.
+
+Stroup, D.F., Berlin, J.A., Morton, S.C., Olkin, I., Williamson, G.D., Rennie, D., Moher, D., Becker, B.J., Sipe, T.A. and Thacker, S.B. (2000) Meta-analysis of observational studies in epidemiology: a proposal for reporting. Journal of American Medical Association 283: 2008–2012.
+
+van Aert, R.C.M. and van Assen, M.A.L.M. (2019) Correcting for publication bias in a meta-analysis with the p-uniform* method. MetaArXiv Preprint.
+
+Weichselbaumer, D. and Winter-Ebmer, R. (2005) A meta-analysis of the international gender wage gap. Journal of Economic Surveys 19(3): 479–511.
+
+Woodward, R.T. and Wui, Y. (2001) The economic value of wetland services: a meta-analysis. Ecological Economics 37(2): 257–270.
+
+Xue, X., Reed, W.R. and Menclova, A.K. (2019) Social capital and health: a meta-analysis. Working Papers in Economics 19/18, University of Canterbury, Department of Economics and Finance.
+
+Zelmer, J. (2003) Linear public goods experiments: a meta-analysis. Experimental Economics 6(3): 299–310.
+
 ## Supplementary Information for Spurious Precision in Meta-Analysis of Observational Research
 URL: https://meta-analysis.cz/maive/supplement/
 Citation: Zuzana Irsova, Pedro R. D. Bom, Tomas Havranek, and Heiko Rachinger (2025), Supplementary Information for "Spurious precision in meta-analysis of observational research." Nature Communications 16, 8454.

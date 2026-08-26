@@ -311,8 +311,8 @@ def build(check=False):
     for r in out:
         if r["tier"] != "exact":
             tier_counts[r["tier"]] = tier_counts.get(r["tier"], 0) + 1
-    NOLIT = {"correlations", "guidelines", "maive", "outliers", "pcc", "pcc_survey",
-             "conventional_wisdom", "debate"}
+    NOLIT = {"correlations", "guidelines", "reporting", "maive", "outliers", "pcc",
+             "pcc_survey", "conventional_wisdom", "debate"}
     n_nolit = len([e for e in spec["excluded"] if e["project"] in NOLIT])
 
     # The caption had grown to hold the comparator rule, the sensitivity check, the ring

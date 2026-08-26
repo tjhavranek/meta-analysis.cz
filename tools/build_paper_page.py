@@ -827,7 +827,7 @@ def article_title(meta):
 
     papers.json's "title" is the site's own name for a literature -- "A Meta-Analysis of the
     Price Elasticity of Gasoline Demand" -- which is how the catalogue should list it and is
-    not what the journal printed. Twenty-one of the fifty-four differ. Putting the site label
+    not what the journal printed. Twenty-one of the fifty-five differ. Putting the site label
     in citation_title tells Google Scholar the paper has a title it does not have, so the
     published title is taken from the quoted title in the reference line.
 
@@ -843,7 +843,7 @@ def article_title(meta):
 
 
 def documents():
-    """Documents this site republishes that are not one of the 54 papers.
+    """Documents this site republishes that are not one of the papers.
 
     A supplement is not a paper: it has no entry in papers.json, no place in the site's
     catalogue and no headline result, but it is a document worth reading in HTML. Keeping
@@ -863,6 +863,10 @@ def paper_pdf(project, meta):
     doc = documents().get(project)
     if doc:
         return doc["pdf"]
+    # A paper filed under another project's landing (papers.json "parent") has no folder of
+    # its own, so its entry names the PDF from the site root, like a registered document.
+    if meta.get("parent") and meta.get("pdf"):
+        return meta["pdf"]
     for m in meta.get("menu_links") or []:
         href = (m.get("href") or "")
         if href.endswith(".pdf") and not href.startswith("http") and "appendix" not in href.lower():
@@ -882,7 +886,7 @@ def pdf_path(project, meta):
     rel = paper_pdf(project, meta)
     if not rel:
         return None
-    if project in documents():
+    if project in documents() or meta.get("parent"):
         return os.path.join(ROOT, rel)
     return os.path.join(ROOT, project, rel)
 
@@ -892,7 +896,8 @@ def pdf_path(project, meta):
 # tool that looks for a paper's page needs the same answer: tools/check_paper_pages.py had
 # its own idea and so checked neither of them, which is how /maive/paper/ pointed at a
 # deleted figure without anything noticing.
-HAND_BUILT = {"maive": "maive/paper", "guidelines": "guidelines/guide"}
+HAND_BUILT = {"maive": "maive/paper", "guidelines": "guidelines/guide",
+              "reporting": "guidelines/reporting"}
 
 
 def page_href(project, meta):
@@ -913,7 +918,9 @@ def pdf_href(project, meta):
     rel = meta.get("_pdf") or paper_pdf(project, meta)
     if not rel:
         return None
-    return "/%s" % rel if project in documents() else "/%s/%s" % (project, rel)
+    if project in documents() or meta.get("parent"):
+        return "/%s" % rel
+    return "/%s/%s" % (project, rel)
 
 
 _DOI_INDEX = None
