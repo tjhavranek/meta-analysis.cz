@@ -5581,7 +5581,7 @@ van Rooij, M., and de Haan, J. 2016. Will Helicopter Money be Spent? New evidenc
 
 ## Class Size and Student Achievement: A Meta-Analysis
 URL: https://meta-analysis.cz/class/
-Citation: Matej Opatrny, Tomas Havranek, Zuzana Irsova, Milan Scasny (2025), "Publication Bias and Model Uncertainty in Measuring the Effect of Class Size on Achievement." Journal of Labor Economics.
+Citation: Matej Opatrny, Tomas Havranek, Zuzana Irsova, Milan Scasny (2026), "Publication Bias and Model Uncertainty in Measuring the Effect of Class Size on Achievement." Journal of Labor Economics.
 Published version: https://doi.org/10.1086/737989
 Paper: https://meta-analysis.cz/class/class.pdf
 Supplement: https://meta-analysis.cz/class/appendix.pdf

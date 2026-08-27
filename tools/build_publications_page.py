@@ -62,11 +62,18 @@ def citation(r):
         bits.append(author_line(r["authors"]))
     elif r.get("n_authors"):
         bits.append(f"{r['n_authors']} authors")
+    # "Journal 45(3), 135-155": the volume carries the issue in parentheses, the way a
+    # reference list writes it. Nature Communications and its kind number articles rather
+    # than pages, and cite as "16, 8454", so an article number sits in the page slot.
     where = r["venue"]
     if r.get("volume"):
         where += f" {r['volume']}"
+        if r.get("issue"):
+            where += f"({r['issue']})"
     if r.get("page"):
         where += f", {r['page']}"
+    elif r.get("article_number"):
+        where += f", {r['article_number']}"
     return bits, where
 
 

@@ -5,6 +5,7 @@
    "year": 2026,
    "venue": "Journal of Political Economy Microeconomics",
    "volume": null,
+   "issue": null,
    "page": null,
    "doi": "10.1086/743543",
    "authors": [
@@ -24,6 +25,7 @@
    "year": 2026,
    "venue": "Journal of Economic Surveys",
    "volume": null,
+   "issue": null,
    "page": null,
    "doi": "10.1111/joes.70105",
    "authors": [
@@ -46,10 +48,29 @@
    "type": "journal-article"
   },
   {
+   "title": "Publication Bias and Model Uncertainty in Measuring the Effect of Class Size on Achievement",
+   "year": 2026,
+   "venue": "Journal of Labor Economics",
+   "volume": null,
+   "issue": null,
+   "page": null,
+   "doi": "10.1086/737989",
+   "authors": [
+    "Matej Opatrny",
+    "Tomas Havranek",
+    "Zuzana Irsova",
+    "Milan Scasny"
+   ],
+   "n_authors": 4,
+   "project": "class",
+   "type": "journal-article"
+  },
+  {
    "title": "Reporting Guidelines for Meta-Analysis in Economics—Updated for AI",
    "year": 2026,
    "venue": "Journal of Economic Surveys",
    "volume": null,
+   "issue": null,
    "page": null,
    "doi": "10.1111/joes.70116",
    "authors": [
@@ -76,6 +97,7 @@
    "year": 2026,
    "venue": "Nature",
    "volume": "652",
+   "issue": "8108",
    "page": "151-156",
    "doi": "10.1038/s41586-026-10251-x",
    "authors": [
@@ -436,6 +458,7 @@
    "year": 2025,
    "venue": "Journal of Economic Surveys",
    "volume": "39",
+   "issue": "3",
    "page": "980-999",
    "doi": "10.1111/joes.12630",
    "authors": [
@@ -459,6 +482,7 @@
    "year": 2025,
    "venue": "Corporate Governance: An International Review",
    "volume": "33",
+   "issue": "5",
    "page": "1039-1061",
    "doi": "10.1111/corg.12637",
    "authors": [
@@ -472,27 +496,11 @@
    "type": "journal-article"
   },
   {
-   "title": "Publication Bias and Model Uncertainty in Measuring the Effect of Class Size on Achievement",
-   "year": 2025,
-   "venue": "Journal of Labor Economics",
-   "volume": null,
-   "page": null,
-   "doi": "10.1086/737989",
-   "authors": [
-    "Matej Opatrny",
-    "Tomas Havranek",
-    "Zuzana Irsova",
-    "Milan Scasny"
-   ],
-   "n_authors": 4,
-   "project": "class",
-   "type": "journal-article"
-  },
-  {
    "title": "Reducing the biases of the conventional meta-analysis of correlations",
    "year": 2025,
    "venue": "Research Synthesis Methods",
    "volume": "16",
+   "issue": "1",
    "page": "42-59",
    "doi": "10.1017/rsm.2024.5",
    "authors": [
@@ -509,6 +517,7 @@
    "year": 2025,
    "venue": "Journal of Economic Surveys",
    "volume": "39",
+   "issue": "5",
    "page": "2315-2333",
    "doi": "10.1111/joes.12689",
    "authors": [
@@ -525,6 +534,7 @@
    "year": 2025,
    "venue": "Nature Communications",
    "volume": "16",
+   "issue": "1",
    "page": null,
    "doi": "10.1038/s41467-025-63261-0",
    "authors": [
@@ -535,13 +545,15 @@
    ],
    "n_authors": 4,
    "project": "maive",
-   "type": "journal-article"
+   "type": "journal-article",
+   "article_number": "8454"
   },
   {
    "title": "Is research on hedge fund performance published selectively? A quantitative survey",
    "year": 2024,
    "venue": "Journal of Economic Surveys",
    "volume": "38",
+   "issue": "4",
    "page": "1085-1131",
    "doi": "10.1111/joes.12574",
    "authors": [
@@ -559,6 +571,7 @@
    "year": 2024,
    "venue": "Research Synthesis Methods",
    "volume": "15",
+   "issue": "2",
    "page": "313-325",
    "doi": "10.1002/jrsm.1704",
    "authors": [
@@ -575,6 +588,7 @@
    "year": 2024,
    "venue": "Journal of Economic Surveys",
    "volume": "38",
+   "issue": "5",
    "page": "1547-1566",
    "doi": "10.1111/joes.12595",
    "authors": [
@@ -592,6 +606,7 @@
    "year": 2024,
    "venue": "Review of Economics and Statistics",
    "volume": "106",
+   "issue": "5",
    "page": "1187-1200",
    "doi": "10.1162/rest_a_01227",
    "authors": [
@@ -609,6 +624,7 @@
    "year": 2024,
    "venue": "Economics of Education Review",
    "volume": "100",
+   "issue": null,
    "page": "102539",
    "doi": "10.1016/j.econedurev.2024.102539",
    "authors": [
@@ -625,6 +641,7 @@
    "year": 2023,
    "venue": "Review of Economic Dynamics",
    "volume": "51",
+   "issue": null,
    "page": "1095-1113",
    "doi": "10.1016/j.red.2023.10.001",
    "authors": [
@@ -642,6 +659,7 @@
    "year": 2023,
    "venue": "IMF Economic Review",
    "volume": "71",
+   "issue": "2",
    "page": "538-573",
    "doi": "10.1057/s41308-022-00185-5",
    "authors": [
@@ -658,6 +676,7 @@
    "year": 2022,
    "venue": "Experimental Economics",
    "volume": "25",
+   "issue": "1",
    "page": "318-358",
    "doi": "10.1007/s10683-021-09716-9",
    "authors": [
@@ -674,6 +693,7 @@
    "year": 2022,
    "venue": "Review of Economic Dynamics",
    "volume": "45",
+   "issue": null,
    "page": "55-82",
    "doi": "10.1016/j.red.2021.05.003",
    "authors": [
@@ -691,6 +711,7 @@
    "year": 2021,
    "venue": "Tourism Economics",
    "volume": "27",
+   "issue": "1",
    "page": "129-148",
    "doi": "10.1177/1354816619879584",
    "authors": [
@@ -706,6 +727,7 @@
    "year": 2021,
    "venue": "European Economic Review",
    "volume": "134",
+   "issue": null,
    "page": "103714",
    "doi": "10.1016/j.euroecorev.2021.103714",
    "authors": [
@@ -723,6 +745,7 @@
    "year": 2020,
    "venue": "Comparative Economic Studies",
    "volume": "62",
+   "issue": "1",
    "page": "49-68",
    "doi": "10.1057/s41294-019-00092-1",
    "authors": [
@@ -738,6 +761,7 @@
    "year": 2020,
    "venue": "Review of Economic Dynamics",
    "volume": "35",
+   "issue": null,
    "page": "97-122",
    "doi": "10.1016/j.red.2019.05.004",
    "authors": [
@@ -753,6 +777,7 @@
    "year": 2020,
    "venue": "Energy Policy",
    "volume": "137",
+   "issue": null,
    "page": "111146",
    "doi": "10.1016/j.enpol.2019.111146",
    "authors": [
@@ -770,6 +795,7 @@
    "year": 2020,
    "venue": "Journal of International Economics",
    "volume": "127",
+   "issue": null,
    "page": "103383",
    "doi": "10.1016/j.jinteco.2020.103383",
    "authors": [
@@ -787,6 +813,7 @@
    "year": 2020,
    "venue": "Applied Economics",
    "volume": "52",
+   "issue": "18",
    "page": "1949-1958",
    "doi": "10.1080/00036846.2020.1726864",
    "authors": [
@@ -803,6 +830,7 @@
    "year": 2020,
    "venue": "World Development",
    "volume": "134",
+   "issue": null,
    "page": "105021",
    "doi": "10.1016/j.worlddev.2020.105021",
    "authors": [
@@ -819,6 +847,7 @@
    "year": 2020,
    "venue": "Journal of Economic Surveys",
    "volume": "34",
+   "issue": "3",
    "page": "469-475",
    "doi": "10.1111/joes.12363",
    "authors": [
@@ -841,6 +870,7 @@
    "year": 2019,
    "venue": "Journal of Economic Surveys",
    "volume": "33",
+   "issue": "5",
    "page": "1463-1492",
    "doi": "10.1111/joes.12335",
    "authors": [
@@ -857,6 +887,7 @@
    "year": 2018,
    "venue": "The Energy Journal",
    "volume": "39",
+   "issue": "2",
    "page": "35-61",
    "doi": "10.5547/01956574.39.2.thav",
    "authors": [
@@ -872,8 +903,9 @@
    "title": "Estimating the effective lower bound on the Czech national bank’s policy rate",
    "year": 2018,
    "venue": "Finance a Uver - Czech Journal of Economics and Finance",
-   "volume": null,
-   "page": null,
+   "volume": "68",
+   "issue": "6",
+   "page": "550-577",
    "doi": "",
    "authors": [
     "Dominika Kolcunova",
@@ -888,6 +920,7 @@
    "year": 2018,
    "venue": "Land Economics",
    "volume": "94",
+   "issue": "2",
    "page": "259-283",
    "doi": "10.3368/le.94.2.259",
    "authors": [
@@ -904,6 +937,7 @@
    "year": 2018,
    "venue": "Oxford Bulletin of Economics and Statistics",
    "volume": "80",
+   "issue": "6",
    "page": "1145-1184",
    "doi": "10.1111/obes.12240",
    "authors": [
@@ -920,6 +954,7 @@
    "year": 2017,
    "venue": "IMF Economic Review",
    "volume": "65",
+   "issue": "2",
    "page": "365-396",
    "doi": "10.1057/s41308-016-0001-5",
    "authors": [
@@ -935,6 +970,7 @@
    "year": 2017,
    "venue": "European Economic Review",
    "volume": "95",
+   "issue": null,
    "page": "142-167",
    "doi": "10.1016/j.euroecorev.2017.03.009",
    "authors": [
@@ -951,6 +987,7 @@
    "year": 2017,
    "venue": "Economic Modelling",
    "volume": "60",
+   "issue": null,
    "page": "108-121",
    "doi": "10.1016/j.econmod.2016.08.025",
    "authors": [
@@ -966,6 +1003,7 @@
    "year": 2016,
    "venue": "Journal of Economic Surveys",
    "volume": "30",
+   "issue": "5",
    "page": "944-981",
    "doi": "10.1111/joes.12131",
    "authors": [
@@ -981,6 +1019,7 @@
    "year": 2016,
    "venue": "Economic Modelling",
    "volume": "54",
+   "issue": null,
    "page": "153-169",
    "doi": "10.1016/j.econmod.2016.01.004",
    "authors": [
@@ -997,6 +1036,7 @@
    "year": 2016,
    "venue": "Applied Economics",
    "volume": "48",
+   "issue": "60",
    "page": "5866-5881",
    "doi": "10.1080/00036846.2016.1186796",
    "authors": [
@@ -1013,6 +1053,7 @@
    "year": 2016,
    "venue": "World Development",
    "volume": "88",
+   "issue": null,
    "page": "134-151",
    "doi": "10.1016/j.worlddev.2016.07.016",
    "authors": [
@@ -1029,6 +1070,7 @@
    "year": 2015,
    "venue": "Journal of International Economics",
    "volume": "96",
+   "issue": "1",
    "page": "100-118",
    "doi": "10.1016/j.jinteco.2015.01.012",
    "authors": [
@@ -1046,6 +1088,7 @@
    "year": 2015,
    "venue": "Journal of Economic Surveys",
    "volume": "29",
+   "issue": "3",
    "page": "506-526",
    "doi": "10.1111/joes.12068",
    "authors": [
@@ -1062,6 +1105,7 @@
    "year": 2015,
    "venue": "Energy Economics",
    "volume": "47",
+   "issue": null,
    "page": "77-86",
    "doi": "10.1016/j.eneco.2014.11.004",
    "authors": [
@@ -1077,6 +1121,7 @@
    "year": 2015,
    "venue": "Journal of the European Economic Association",
    "volume": "13",
+   "issue": "6",
    "page": "1180-1204",
    "doi": "10.1111/jeea.12133",
    "authors": [
@@ -1091,6 +1136,7 @@
    "year": 2015,
    "venue": "Energy Economics",
    "volume": "51",
+   "issue": null,
    "page": "394-406",
    "doi": "10.1016/j.eneco.2015.08.009",
    "authors": [
@@ -1108,6 +1154,7 @@
    "year": 2014,
    "venue": "Politicka Ekonomie",
    "volume": "62",
+   "issue": "3",
    "page": "366-382",
    "doi": "10.18267/j.polek.956",
    "authors": [
@@ -1123,6 +1170,7 @@
    "year": 2014,
    "venue": "Journal of Financial Stability",
    "volume": "15",
+   "issue": null,
    "page": "1-17",
    "doi": "10.1016/j.jfs.2014.07.001",
    "authors": [
@@ -1142,6 +1190,7 @@
    "year": 2014,
    "venue": "Economics of Transition",
    "volume": "22",
+   "issue": "1",
    "page": "13-42",
    "doi": "10.1111/ecot.12029",
    "authors": [
@@ -1156,8 +1205,9 @@
    "title": "A meta-analysis of bank efficiency measurement in transitional countries",
    "year": 2013,
    "venue": "Transformations in Business and Economics",
-   "volume": null,
-   "page": null,
+   "volume": "12",
+   "issue": "2",
+   "page": "163-183",
    "doi": "",
    "authors": [
     "Zuzana Irsova",
@@ -1172,6 +1222,7 @@
    "year": 2013,
    "venue": "Transition Studies Review",
    "volume": "20",
+   "issue": "1",
    "page": "1-17",
    "doi": "10.1007/s11300-013-0270-x",
    "authors": [
@@ -1187,6 +1238,7 @@
    "year": 2013,
    "venue": "World Development",
    "volume": "42",
+   "issue": null,
    "page": "1-15",
    "doi": "10.1016/j.worlddev.2012.07.001",
    "authors": [
@@ -1202,6 +1254,7 @@
    "year": 2013,
    "venue": "Journal of Money, Credit and Banking",
    "volume": "45",
+   "issue": "1",
    "page": "37-70",
    "doi": "10.1111/j.1538-4616.2012.00561.x",
    "authors": [
@@ -1218,6 +1271,7 @@
    "year": 2013,
    "venue": "Journal of International Money and Finance",
    "volume": "35",
+   "issue": null,
    "page": "1-19",
    "doi": "10.1016/j.jimonfin.2013.01.001",
    "authors": [
@@ -1236,8 +1290,9 @@
    "title": "Transmission lags of monetary policy: A meta-analysis",
    "year": 2013,
    "venue": "International Journal of Central Banking",
-   "volume": null,
-   "page": null,
+   "volume": "9",
+   "issue": "4",
+   "page": "39-75",
    "doi": "",
    "authors": [
     "Tomas Havranek",
@@ -1252,6 +1307,7 @@
    "year": 2012,
    "venue": "Energy Economics",
    "volume": "34",
+   "issue": "1",
    "page": "201-207",
    "doi": "10.1016/j.eneco.2011.09.003",
    "authors": [
@@ -1268,6 +1324,7 @@
    "year": 2012,
    "venue": "Economic Change and Restructuring",
    "volume": "45",
+   "issue": "3",
    "page": "135-155",
    "doi": "10.1007/s10644-011-9106-z",
    "authors": [
@@ -1284,6 +1341,7 @@
    "year": 2012,
    "venue": "Journal of Development Studies",
    "volume": "48",
+   "issue": "10",
    "page": "1375-1396",
    "doi": "10.1080/00220388.2012.685721",
    "authors": [
@@ -1299,6 +1357,7 @@
    "year": 2011,
    "venue": "Transition Studies Review",
    "volume": "18",
+   "issue": "2",
    "page": "230-270",
    "doi": "10.1007/s11300-011-0197-z",
    "authors": [
@@ -1314,6 +1373,7 @@
    "year": 2011,
    "venue": "Journal of International Economics",
    "volume": "85",
+   "issue": "2",
    "page": "234-244",
    "doi": "10.1016/j.jinteco.2011.07.004",
    "authors": [
@@ -1329,6 +1389,7 @@
    "year": 2010,
    "venue": "Prague Economic Papers",
    "volume": "19",
+   "issue": "4",
    "page": "307-328",
    "doi": "10.18267/j.pep.379",
    "authors": [
@@ -1343,8 +1404,9 @@
    "title": "Meta-analysis of intra-industry FDI spillovers: Updated evidence",
    "year": 2010,
    "venue": "Finance a Uver - Czech Journal of Economics and Finance",
-   "volume": null,
-   "page": null,
+   "volume": "60",
+   "issue": "2",
+   "page": "151-174",
    "doi": "",
    "authors": [
     "Tomas Havranek",
@@ -1358,8 +1420,9 @@
    "title": "On the Intensity of International Subsidy Competition for FDI",
    "year": 2010,
    "venue": "Theoretical and Applied Economics",
-   "volume": null,
-   "page": null,
+   "volume": "17",
+   "issue": "2",
+   "page": "25-54",
    "doi": "",
    "authors": [
     "Tomas Havranek",
@@ -1374,6 +1437,7 @@
    "year": 2010,
    "venue": "Review of World Economics",
    "volume": "146",
+   "issue": "2",
    "page": "241-261",
    "doi": "10.1007/s10290-010-0050-1",
    "authors": [
@@ -1388,6 +1452,7 @@
    "year": 2009,
    "venue": "Prague Economic Papers",
    "volume": "18",
+   "issue": "2",
    "page": "131-155",
    "doi": "10.18267/j.pep.346",
    "authors": [
@@ -1404,6 +1469,7 @@
    "year": 2026,
    "venue": "Journal of Political Economy Microeconomics",
    "volume": null,
+   "issue": null,
    "page": null,
    "doi": "10.1086/743543",
    "authors": [
@@ -1423,6 +1489,7 @@
    "year": 2026,
    "venue": "Journal of Economic Surveys",
    "volume": null,
+   "issue": null,
    "page": null,
    "doi": "10.1111/joes.70105",
    "authors": [
@@ -1445,10 +1512,29 @@
    "type": "journal-article"
   },
   {
+   "title": "Publication Bias and Model Uncertainty in Measuring the Effect of Class Size on Achievement",
+   "year": 2026,
+   "venue": "Journal of Labor Economics",
+   "volume": null,
+   "issue": null,
+   "page": null,
+   "doi": "10.1086/737989",
+   "authors": [
+    "Matej Opatrny",
+    "Tomas Havranek",
+    "Zuzana Irsova",
+    "Milan Scasny"
+   ],
+   "n_authors": null,
+   "project": "class",
+   "type": "journal-article"
+  },
+  {
    "title": "Reporting Guidelines for Meta-Analysis in Economics—Updated for AI",
    "year": 2026,
    "venue": "Journal of Economic Surveys",
    "volume": null,
+   "issue": null,
    "page": null,
    "doi": "10.1111/joes.70116",
    "authors": [
@@ -1475,6 +1561,7 @@
    "year": 2026,
    "venue": "Nature",
    "volume": "652",
+   "issue": "8108",
    "page": "151-156",
    "doi": "10.1038/s41586-026-10251-x",
    "authors": [
@@ -1835,6 +1922,7 @@
    "year": 2025,
    "venue": "Journal of Economic Surveys",
    "volume": "39",
+   "issue": "3",
    "page": "980-999",
    "doi": "10.1111/joes.12630",
    "authors": [
@@ -1858,6 +1946,7 @@
    "year": 2025,
    "venue": "Corporate Governance: An International Review",
    "volume": "33",
+   "issue": "5",
    "page": "1039-1061",
    "doi": "10.1111/corg.12637",
    "authors": [
@@ -1871,27 +1960,11 @@
    "type": "journal-article"
   },
   {
-   "title": "Publication Bias and Model Uncertainty in Measuring the Effect of Class Size on Achievement",
-   "year": 2025,
-   "venue": "Journal of Labor Economics",
-   "volume": null,
-   "page": null,
-   "doi": "10.1086/737989",
-   "authors": [
-    "Matej Opatrny",
-    "Tomas Havranek",
-    "Zuzana Irsova",
-    "Milan Scasny"
-   ],
-   "n_authors": null,
-   "project": "class",
-   "type": "journal-article"
-  },
-  {
    "title": "Relative Risk Aversion: A Meta-Analysis",
    "year": 2025,
    "venue": "Journal of Economic Surveys",
    "volume": "39",
+   "issue": "5",
    "page": "2315-2333",
    "doi": "10.1111/joes.12689",
    "authors": [
@@ -1908,6 +1981,7 @@
    "year": 2025,
    "venue": "Nature Communications",
    "volume": "16",
+   "issue": "1",
    "page": null,
    "doi": "10.1038/s41467-025-63261-0",
    "authors": [
@@ -1918,13 +1992,15 @@
    ],
    "n_authors": null,
    "project": "maive",
-   "type": "journal-article"
+   "type": "journal-article",
+   "article_number": "8454"
   },
   {
    "title": "Is research on hedge fund performance published selectively? A quantitative survey",
    "year": 2024,
    "venue": "Journal of Economic Surveys",
    "volume": "38",
+   "issue": "4",
    "page": "1085-1131",
    "doi": "10.1111/joes.12574",
    "authors": [
@@ -1942,6 +2018,7 @@
    "year": 2024,
    "venue": "Journal of Economic Surveys",
    "volume": "38",
+   "issue": "5",
    "page": "1547-1566",
    "doi": "10.1111/joes.12595",
    "authors": [
@@ -1959,6 +2036,7 @@
    "year": 2024,
    "venue": "Review of Economics and Statistics",
    "volume": "106",
+   "issue": "5",
    "page": "1187-1200",
    "doi": "10.1162/rest_a_01227",
    "authors": [
@@ -1976,6 +2054,7 @@
    "year": 2024,
    "venue": "Economics of Education Review",
    "volume": "100",
+   "issue": null,
    "page": "102539",
    "doi": "10.1016/j.econedurev.2024.102539",
    "authors": [
@@ -1992,6 +2071,7 @@
    "year": 2023,
    "venue": "Review of Economic Dynamics",
    "volume": "51",
+   "issue": null,
    "page": "1095-1113",
    "doi": "10.1016/j.red.2023.10.001",
    "authors": [
@@ -2009,6 +2089,7 @@
    "year": 2022,
    "venue": "Experimental Economics",
    "volume": "25",
+   "issue": "1",
    "page": "318-358",
    "doi": "10.1007/s10683-021-09716-9",
    "authors": [
@@ -2025,6 +2106,7 @@
    "year": 2022,
    "venue": "Review of Economic Dynamics",
    "volume": "45",
+   "issue": null,
    "page": "55-82",
    "doi": "10.1016/j.red.2021.05.003",
    "authors": [
@@ -2042,6 +2124,7 @@
    "year": 2021,
    "venue": "European Economic Review",
    "volume": "134",
+   "issue": null,
    "page": "103714",
    "doi": "10.1016/j.euroecorev.2021.103714",
    "authors": [
@@ -2059,6 +2142,7 @@
    "year": 2020,
    "venue": "Energy Policy",
    "volume": "137",
+   "issue": null,
    "page": "111146",
    "doi": "10.1016/j.enpol.2019.111146",
    "authors": [
@@ -2076,6 +2160,7 @@
    "year": 2020,
    "venue": "Journal of International Economics",
    "volume": "127",
+   "issue": null,
    "page": "103383",
    "doi": "10.1016/j.jinteco.2020.103383",
    "authors": [
@@ -2093,6 +2178,7 @@
    "year": 2020,
    "venue": "Applied Economics",
    "volume": "52",
+   "issue": "18",
    "page": "1949-1958",
    "doi": "10.1080/00036846.2020.1726864",
    "authors": [
@@ -2109,6 +2195,7 @@
    "year": 2018,
    "venue": "The Energy Journal",
    "volume": "39",
+   "issue": "2",
    "page": "35-61",
    "doi": "10.5547/01956574.39.2.thav",
    "authors": [
@@ -2125,6 +2212,7 @@
    "year": 2018,
    "venue": "Land Economics",
    "volume": "94",
+   "issue": "2",
    "page": "259-283",
    "doi": "10.3368/le.94.2.259",
    "authors": [
@@ -2141,6 +2229,7 @@
    "year": 2018,
    "venue": "Oxford Bulletin of Economics and Statistics",
    "volume": "80",
+   "issue": "6",
    "page": "1145-1184",
    "doi": "10.1111/obes.12240",
    "authors": [
@@ -2157,6 +2246,7 @@
    "year": 2017,
    "venue": "IMF Economic Review",
    "volume": "65",
+   "issue": "2",
    "page": "365-396",
    "doi": "10.1057/s41308-016-0001-5",
    "authors": [
@@ -2172,6 +2262,7 @@
    "year": 2016,
    "venue": "Economic Modelling",
    "volume": "54",
+   "issue": null,
    "page": "153-169",
    "doi": "10.1016/j.econmod.2016.01.004",
    "authors": [
@@ -2188,6 +2279,7 @@
    "year": 2016,
    "venue": "Applied Economics",
    "volume": "48",
+   "issue": "60",
    "page": "5866-5881",
    "doi": "10.1080/00036846.2016.1186796",
    "authors": [
@@ -2204,6 +2296,7 @@
    "year": 2015,
    "venue": "Journal of International Economics",
    "volume": "96",
+   "issue": "1",
    "page": "100-118",
    "doi": "10.1016/j.jinteco.2015.01.012",
    "authors": [
@@ -2221,6 +2314,7 @@
    "year": 2015,
    "venue": "Energy & Environment",
    "volume": "26",
+   "issue": "5",
    "page": "853-862",
    "doi": "10.1260/0958-305x.26.5.853",
    "authors": [
@@ -2236,6 +2330,7 @@
    "year": 2015,
    "venue": "Energy Economics",
    "volume": "51",
+   "issue": null,
    "page": "394-406",
    "doi": "10.1016/j.eneco.2015.08.009",
    "authors": [
@@ -2252,8 +2347,9 @@
    "title": "A meta-analysis of bank efficiency measurement in transitional countries",
    "year": 2013,
    "venue": "Transformations in Business and Economics",
-   "volume": null,
-   "page": null,
+   "volume": "12",
+   "issue": "2",
+   "page": "163-183",
    "doi": "",
    "authors": [
     "Zuzana Irsova",
@@ -2268,6 +2364,7 @@
    "year": 2013,
    "venue": "Transition Studies Review",
    "volume": "20",
+   "issue": "1",
    "page": "1-17",
    "doi": "10.1007/s11300-013-0270-x",
    "authors": [
@@ -2283,6 +2380,7 @@
    "year": 2013,
    "venue": "World Development",
    "volume": "42",
+   "issue": null,
    "page": "1-15",
    "doi": "10.1016/j.worlddev.2012.07.001",
    "authors": [
@@ -2298,6 +2396,7 @@
    "year": 2012,
    "venue": "Energy Economics",
    "volume": "34",
+   "issue": "1",
    "page": "201-207",
    "doi": "10.1016/j.eneco.2011.09.003",
    "authors": [
@@ -2314,6 +2413,7 @@
    "year": 2012,
    "venue": "Journal of Development Studies",
    "volume": "48",
+   "issue": "10",
    "page": "1375-1396",
    "doi": "10.1080/00220388.2012.685721",
    "authors": [
@@ -2329,6 +2429,7 @@
    "year": 2011,
    "venue": "Transition Studies Review",
    "volume": "18",
+   "issue": "2",
    "page": "230-270",
    "doi": "10.1007/s11300-011-0197-z",
    "authors": [
@@ -2344,6 +2445,7 @@
    "year": 2011,
    "venue": "Journal of International Economics",
    "volume": "85",
+   "issue": "2",
    "page": "234-244",
    "doi": "10.1016/j.jinteco.2011.07.004",
    "authors": [
@@ -2359,6 +2461,7 @@
    "year": 2010,
    "venue": "Prague Economic Papers",
    "volume": "19",
+   "issue": "4",
    "page": "307-328",
    "doi": "10.18267/j.pep.379",
    "authors": [
@@ -2373,8 +2476,9 @@
    "title": "Meta-analysis of intra-industry FDI spillovers: Updated evidence",
    "year": 2010,
    "venue": "Finance a Uver - Czech Journal of Economics and Finance",
-   "volume": null,
-   "page": null,
+   "volume": "60",
+   "issue": "2",
+   "page": "151-174",
    "doi": "",
    "authors": [
     "Tomas Havranek",
@@ -2388,8 +2492,9 @@
    "title": "On the Intensity of International Subsidy Competition for FDI",
    "year": 2010,
    "venue": "Theoretical and Applied Economics",
-   "volume": null,
-   "page": null,
+   "volume": "17",
+   "issue": "2",
+   "page": "25-54",
    "doi": "",
    "authors": [
     "Tomas Havranek",

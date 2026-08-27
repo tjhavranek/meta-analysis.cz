@@ -8,7 +8,7 @@ headline: "Stanovisko poradce k 8. situační zprávě 2018"
 released: "2025-01-31"
 byline: "Tomáš Havránek"
 genre: "advisor_opinion"
-body_note: "Napsáno ve funkci poradce bankovní rady ČNB; dokument nesl šestiletou lhůtu omezeného přístupu a ČNB jej zveřejnila v lednu 2025. Zde je v plném znění část I, stanovisko poradce. Původní dokument obsahuje i stanovisko sekce finanční stability (část II), které je v [hostovaném PDF](/komentare/files/cnb-stanoviska-8sz-2018.pdf) i v původním dokumentu na webu ČNB."
+body_note: "Napsáno ve funkci poradce bankovní rady ČNB; dokument nesl šestiletou lhůtu omezeného přístupu a ČNB jej zveřejnila v lednu 2025. Zde je v plném znění část I, stanovisko poradce. Původní dokument obsahuje i stanovisko sekce finanční stability (část II), které je v [hostovaném PDF](/komentare/files/cnb-stanoviska-8sz-2018.pdf) i v původním dokumentu na webu ČNB. Anglický překlad: [Advisor's Opinion on Situation Report No. 8, 2018](/komentare/cnb-advisor-opinion-8sz-2018/)."
 ---
 
 # Stanovisko poradce k 8. situační zprávě 2018
