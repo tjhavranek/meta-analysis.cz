@@ -67,6 +67,15 @@ def entry(year, title, project, href, meta):
     journal = meta.get("journal") or ""
     where = "<i>%s</i>" % html.escape(journal) if journal else "working paper"
     extra = hanging(href)
+    # A paper can be published without THIS text being the published version. The page serves
+    # the working paper and says so; the list must still say the research is published, and
+    # where, or a reader scanning it takes "working paper" to mean unpublished. It goes after
+    # the year, so the year belongs to the text on the page and not to the article.
+    pub = meta.get("published_as") or {}
+    if pub.get("journal"):
+        extra = extra + ['published as <a href="%s"><i>%s</i> %s</a>'
+                         % (html.escape(pub.get("doi") or "", quote=True),
+                            html.escape(pub["journal"]), html.escape(str(pub.get("year") or "")))]
     tail = (" &middot; " + " &middot; ".join(extra)) if extra else ""
     return ('<li><a href="%s"><b>%s</b></a><br /><span class="who">%s &middot; %s &middot; %s%s</span></li>'
             % (href, html.escape(title), html.escape(who), where, year or "n.d.", tail))
