@@ -6,7 +6,7 @@ url: "https://www.maer-net.org/post/death-to-the-cobb-douglas-production-functio
 date: "2019-09-25"
 headline: "Death to the Cobb-Douglas Production Function!"
 mirror: "maer-cobb-douglas"
-byline: "Sebastian Gechert, Tomáš Havránek, Zuzana Irsova, Dominika Kolcunová"
+byline: "Sebastian Gechert, Tomas Havranek, Zuzana Irsova, Dominika Kolcunova"
 word_count: "1626"
 ---
 

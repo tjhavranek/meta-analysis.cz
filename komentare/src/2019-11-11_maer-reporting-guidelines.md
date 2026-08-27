@@ -6,7 +6,7 @@ url: "https://www.maer-net.org/post/revision-of-reporting-guidelines"
 date: "2019-11-11"
 headline: "Revision of Reporting Guidelines"
 mirror: "maer-reporting-guidelines"
-byline: "Tomáš Havránek"
+byline: "Tomas Havranek"
 word_count: "781"
 ---
 

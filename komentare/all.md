@@ -8,7 +8,7 @@ Tento soubor obsahuje text všech textových položek (201 z celkem 219), u napr
 
 ## Two new pre-registered papers: outlier decisions in meta-analysis and AI feedback on meta-analyses
 
-*MAER-Net, 27. července 2026. Tomáš Havránek.*
+*MAER-Net, 27. července 2026. Tomas Havranek.*
 
 Zdroj: https://www.maer-net.org/post/two-new-pre-registered-papers-outlier-decisions-in-meta-analysis-and-ai-feedback-on-meta
 
@@ -36,7 +36,7 @@ Comments are welcome!!
 
 ## Results of the AI report ranking experiment
 
-*the 47 authors who took part in the experiment, 16. července 2026. Tomáš Havránek, Zuzana Irsova.*
+*the 47 authors who took part in the experiment, 16. července 2026. Tomas Havranek, Zuzana Irsova.*
 
 *Korespondence, nikoli publikovaný text. Uvedené datum je datum odeslání.*
 
@@ -244,7 +244,7 @@ Vody pod nohama máme dost. Stromů nad hlavou bychom mohli mít víc.
 
 ## Stress-testing research with AI, now super easy and fully automated
 
-*MAER-Net, 31. května 2026. Tomáš Havránek.*
+*MAER-Net, 31. května 2026. Tomas Havranek.*
 
 Zdroj: https://www.maer-net.org/post/stress-testing-research-with-ai-now-super-easy-and-fully-automated
 
@@ -602,7 +602,7 @@ Ako som spomínala, ten odliv mozgov je pre Slovensko fatálny a rozdelenie fede
 
 ## Stress-Testing Meta-Research with AI Duels
 
-*MAER-Net, 12. prosince 2025. Zuzana Irsova, Tomáš Havránek.*
+*MAER-Net, 12. prosince 2025. Zuzana Irsova, Tomas Havranek.*
 
 Zdroj: https://www.maer-net.org/post/ai_duel
 
@@ -649,7 +649,7 @@ MAIVE is also available in the [EasyMeta.org](https://www.easymeta.org) web app,
 
 👉 Nature Communications article: [https://www.nature.com/articles/s41467-025-63261-0](https://www.nature.com/articles/s41467-025-63261-0)
 
-Many thanks to **Petr Čala** for preparing the CRAN release and building the EasyMeta interface.
+Many thanks to **Petr Cala** for preparing the CRAN release and building the EasyMeta interface.
 
 ---
 
@@ -667,7 +667,7 @@ Naše jízda turnajem skončila až ve finále, kde jsme napodruhé už nevyzrá
 
 ## Highlights from the 2025 MAER-Net Colloquium in Ottawa
 
-*MAER-Net, 31. října 2025. Tom Stanley, Sebastian Gechert, Jerome Geyer-Klingeberg, Tomáš Havránek.*
+*MAER-Net, 31. října 2025. Tom Stanley, Sebastian Gechert, Jerome Geyer-Klingeberg, Tomas Havranek.*
 
 Zdroj: https://www.maer-net.org/post/highlights-from-the-2025-maer-net-colloquium-in-ottawa
 
@@ -911,7 +911,7 @@ We hope this tool will lower entry barriers to modern meta-analysis for students
 
 We'd be very grateful if you could use your favorite social network to share this tool with colleagues, students, or collaborators who might find it useful. And please let us know about any errors, missing features, or ideas for improvement — we'll keep refining the app based on your feedback. Together we can make bias correction in meta-analysis more accessible.
 
-Special thanks to **Petr Čala** for creating the app, and to **Heiko Rachinger** and **Pedro Bom** for developing the R package that powers it.
+Special thanks to **Petr Cala** for creating the app, and to **Heiko Rachinger** and **Pedro Bom** for developing the R package that powers it.
 
 👉 Try a demo at [EasyMeta.org/demo](https://www.spuriousprecision.com/demo)
 
@@ -1293,7 +1293,7 @@ Ekonomka, která je zvyklá pracovat s fakty, a která díky tomu urazila dlouho
 
 ## AI Tools for Meta-Analysis
 
-*MAER-Net, 30. července 2025. Tomáš Havránek.*
+*MAER-Net, 30. července 2025. Tomas Havranek.*
 
 Zdroj: https://www.maer-net.org/post/ai-tools-for-meta-analysis
 
@@ -1359,7 +1359,7 @@ Zřejmě se dožijeme opakování českého inflačního fiaska z let 2021-2023,
 
 ## New Challenges for Meta-Analysis: Attenuation Bias, P-Hacking, Preferred Estimates
 
-*MAER-Net, 7. července 2025. Tomáš Havránek.*
+*MAER-Net, 7. července 2025. Tomas Havranek.*
 
 Zdroj: https://www.maer-net.org/post/new-challenges-for-meta-analysis-attenuation-bias-p-hacking-preferred-estimates
 
@@ -2548,7 +2548,7 @@ The guidelines are brief and non-technical, so please read them if you are inter
 
 **Multiple estimates per study**. Collect all available estimates and use clustering/bootstrapping. Beware [sample overlap](https://onlinelibrary.wiley.com/doi/abs/10.1002/jrsm.1441). You can base a robustness check on the estimates that researchers prefer. You can also introduce a robustness check that focuses on one (random or median) estimate per study.
 
-**Correction techniques**. Always correct for potential publication bias or p-hacking. Use at least one model based on the funnel plot (such as PET-PEESE) and one selection model (such as 3PSM). Both families of correction techniques have quite different assumptions. Recently, Bartoš et al. (2023) have offered a model average across both families of publication selection bias corrections and models without any selection bias. Bartoš et al. offer easy to use software, JASP: ([https://fbartos.github.io/RoBMA/](https://fbartos.github.io/RoBMA/)) to calculate RoBMA-PSMA. Also, there are a number of video and [published tutorials](https://journals.sagepub.com/doi/full/10.1177/25152459221109259) that provide step-by-step guidance. Additionally, you can also use our new [MAIVE technique](https://meta-analysis.cz/maive/), which allows for spurious precision.
+**Correction techniques**. Always correct for potential publication bias or p-hacking. Use at least one model based on the funnel plot (such as PET-PEESE) and one selection model (such as 3PSM). Both families of correction techniques have quite different assumptions. Recently, Bartos et al. (2023) have offered a model average across both families of publication selection bias corrections and models without any selection bias. Bartos et al. offer easy to use software, JASP: ([https://fbartos.github.io/RoBMA/](https://fbartos.github.io/RoBMA/)) to calculate RoBMA-PSMA. Also, there are a number of video and [published tutorials](https://journals.sagepub.com/doi/full/10.1177/25152459221109259) that provide step-by-step guidance. Additionally, you can also use our new [MAIVE technique](https://meta-analysis.cz/maive/), which allows for spurious precision.
 
 **Bayesian approaches**. You don't have to be a convinced Bayesian to recognize the advantages of Bayesian model averaging techniques, both when it comes to [correcting for publication bias](https://fbartos.github.io/RoBMA/) (as described above) and explaining [heterogeneity](https://www.maer-net.org/post/model-averaging). When using Bayesian model averaging to explain heterogeneity, it is useful to add a dilution prior to address collinearity.
 
@@ -3532,7 +3532,7 @@ Profesor ekonomie na Univerzitě Karlově, výzkumník v Centru analýz hospodá
 
 ## Spurious Precision in Meta-Analysis
 
-*MAER-Net, 16. února 2023. Zuzana Irsova, Pedro R. D. Bom, Tomáš Havránek, Heiko Rachinger.*
+*MAER-Net, 16. února 2023. Zuzana Irsova, Pedro R. D. Bom, Tomas Havranek, Heiko Rachinger.*
 
 Zdroj: https://www.maer-net.org/post/maive
 
@@ -3705,7 +3705,7 @@ Spurious precision, while plausibly destructive, is surmounted by adjusting funn
 
 ## How financial incentives affect performance
 
-*VoxEU / CEPR, 13. února 2023. Tomáš Havránek, Zuzana Irsova.*
+*VoxEU / CEPR, 13. února 2023. Tomas Havranek, Zuzana Irsova.*
 
 Zdroj: https://cepr.org/voxeu/columns/how-financial-incentives-affect-performance
 
@@ -6355,7 +6355,7 @@ Tomáš procestoval svět, a jak říká, nejlepší je to stejně v Litomyšli.
 
 ## Armington elasticity and international trade models: Fifty years on
 
-*VoxEU / CEPR, 23. září 2020. Tomáš Havránek, Zuzana Irsova.*
+*VoxEU / CEPR, 23. září 2020. Tomas Havranek, Zuzana Irsova.*
 
 Zdroj: https://cepr.org/voxeu/columns/armington-elasticity-and-international-trade-models-fifty-years
 
@@ -6593,7 +6593,7 @@ Z dětství si pamatuji smrtelnou nehodu kluka na kole u Prokopa. Když tam jdu 
 
 ## Revision of Reporting Guidelines
 
-*MAER-Net, 11. listopadu 2019. Tomáš Havránek.*
+*MAER-Net, 11. listopadu 2019. Tomas Havranek.*
 
 Zdroj: https://www.maer-net.org/post/revision-of-reporting-guidelines
 
@@ -6662,7 +6662,7 @@ Děkuji za to, jak skvěle funguje litomyšlská mobilní aplikace pro podáván
 
 ## Death to the Cobb-Douglas Production Function!
 
-*MAER-Net, 25. září 2019. Sebastian Gechert, Tomáš Havránek, Zuzana Irsova, Dominika Kolcunová.*
+*MAER-Net, 25. září 2019. Sebastian Gechert, Tomas Havranek, Zuzana Irsova, Dominika Kolcunova.*
 
 Zdroj: https://www.maer-net.org/post/death-to-the-cobb-douglas-production-function
 
@@ -6812,7 +6812,7 @@ Je to vážně lepší, než postavit rovnou sjezd, který nám teď všichni na
 
 ## Why Model Averaging Is Useful in Meta-Analysis
 
-*MAER-Net, 27. února 2019. Tomáš Havránek.*
+*MAER-Net, 27. února 2019. Tomas Havranek.*
 
 Zdroj: https://www.maer-net.org/post/model-averaging
 
@@ -7316,7 +7316,7 @@ Když je to tak výhodné, proč jsme to už dávno nepostavili? Podzemní parko
 
 ## Natural resources and economic growth: the research evidence
 
-*GlobalDev Blog, 13. února 2018. Tomáš Havránek, Roman Horváth.*
+*GlobalDev Blog, 13. února 2018. Tomas Havranek, Roman Horvath.*
 
 Zdroj: https://globaldev.blog/natural-resources-and-economic-growth-research-evidence/
 
@@ -7376,7 +7376,7 @@ Rádi bychom tímto způsobem poděkovali všem, kteří se podíleli na přípr
 
 ## Daylight saving saves no energy
 
-*VoxEU / CEPR, 2. prosince 2017. Dominik Herman, Zuzana Irsova, Tomáš Havránek.*
+*VoxEU / CEPR, 2. prosince 2017. Dominik Herman, Zuzana Irsova, Tomas Havranek.*
 
 Zdroj: https://cepr.org/voxeu/columns/daylight-saving-saves-no-energy
 
@@ -7848,7 +7848,7 @@ While there is no need to write ourselves into the textbooks of central banking 
 
 ## Headline inflation measures shouldn't ignore costs of home ownership
 
-*VoxEU / CEPR, 12. září 2017. Tomáš Havránek, Mojmír Hampl.*
+*VoxEU / CEPR, 12. září 2017. Tomas Havranek, Mojmir Hampl.*
 
 Zdroj: https://cepr.org/voxeu/columns/headline-inflation-measures-shouldnt-ignore-costs-home-ownership
 

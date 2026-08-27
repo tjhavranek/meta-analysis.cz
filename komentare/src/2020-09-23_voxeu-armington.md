@@ -6,7 +6,7 @@ url: "https://cepr.org/voxeu/columns/armington-elasticity-and-international-trad
 date: "2020-09-23"
 headline: "Armington elasticity and international trade models: Fifty years on"
 mirror: "voxeu-armington"
-byline: "Tomáš Havránek, Zuzana Irsova"
+byline: "Tomas Havranek, Zuzana Irsova"
 word_count: "1419"
 ---
 

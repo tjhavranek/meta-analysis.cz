@@ -26,4 +26,4 @@ MAIVE is also available in the [EasyMeta.org](https://www.easymeta.org) web app,
 
 👉 Nature Communications article: [https://www.nature.com/articles/s41467-025-63261-0](https://www.nature.com/articles/s41467-025-63261-0)
 
-Many thanks to **Petr Čala** for preparing the CRAN release and building the EasyMeta interface.
+Many thanks to **Petr Cala** for preparing the CRAN release and building the EasyMeta interface.

@@ -6,7 +6,7 @@ url: "https://www.maer-net.org/post/two-new-pre-registered-papers-outlier-decisi
 date: "2026-07-27"
 headline: "Two new pre-registered papers: outlier decisions in meta-analysis and AI feedback on meta-analyses"
 mirror: "maer-two-pre-registered-papers"
-byline: "Tomáš Havránek"
+byline: "Tomas Havranek"
 word_count: "332"
 images: "2026-07_outliers-table3.png|2026-07_debate-cost-vs-rank.png"
 image_alt: "Two-panel table. Panel A, statistical significance at two-sided p below 0.05, gives for random effects, UWLS and pooled each of four outlier treatments — drop-extreme, studentized residual above 3, winsorize 5/95, and DFBETAS above 2 over the square root of k — with the number of results turning significant, the number turning non-significant, and the combined percentage. Discordance runs from 2.23 percent for winsorizing under UWLS to 6.42 percent for DFBETAS under UWLS; at least one treatment changes significance in 7.7 percent of results, 55 of 715. Panel B repeats the layout for whether the effect reaches the smallest effect size of interest, absolute pooled d of at least 0.20: winsorizing changes the fewest, 1.68 to 1.96 percent, and DFBETAS the most, up to 7.54 percent; at least one treatment changes this in 10.3 percent of results, 74 of 715.|Scatter plot with error bars. Author mean rank, where 1 is most useful, runs down an inverted vertical axis; tokens per paper run along a logarithmic horizontal axis. The single pass is both best and cheapest, at a mean rank near 1.6 and roughly 25 thousand tokens, with an interval from about 1.4 to 1.8. mad-research sits near 2.25 at roughly 250 thousand tokens and paper-workshop near 2.15 at about 800 thousand tokens; the intervals of the two multi-agent tools overlap each other but not the single pass."

@@ -6,7 +6,7 @@ url: "https://cepr.org/voxeu/columns/headline-inflation-measures-shouldnt-ignore
 date: "2017-09-12"
 headline: "Headline inflation measures shouldn't ignore costs of home ownership"
 mirror: "voxeu-home-ownership"
-byline: "Tomáš Havránek, Mojmír Hampl"
+byline: "Tomas Havranek, Mojmir Hampl"
 word_count: "1218"
 ---
 

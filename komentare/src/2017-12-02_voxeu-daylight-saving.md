@@ -6,7 +6,7 @@ url: "https://cepr.org/voxeu/columns/daylight-saving-saves-no-energy"
 date: "2017-12-02"
 headline: "Daylight saving saves no energy"
 mirror: "voxeu-daylight-saving"
-byline: "Dominik Herman, Zuzana Irsova, Tomáš Havránek"
+byline: "Dominik Herman, Zuzana Irsova, Tomas Havranek"
 word_count: "992"
 ---
 

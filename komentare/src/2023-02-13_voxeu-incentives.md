@@ -6,7 +6,7 @@ url: "https://cepr.org/voxeu/columns/how-financial-incentives-affect-performance
 date: "2023-02-13"
 headline: "How financial incentives affect performance"
 mirror: "voxeu-incentives"
-byline: "Tomáš Havránek, Zuzana Irsova"
+byline: "Tomas Havranek, Zuzana Irsova"
 word_count: "1346"
 ---
 
