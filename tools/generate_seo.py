@@ -49,6 +49,21 @@ def _catalog_doi():
 _CATALOG = None
 
 
+_CATALOGUED = None
+
+
+def _catalogued():
+    """The dataset ids api/v1/datasets.json actually carries."""
+    global _CATALOGUED
+    if _CATALOGUED is None:
+        try:
+            with open(os.path.join(SITE, "api", "v1", "datasets.json"), encoding="utf-8") as fh:
+                _CATALOGUED = {d["id"] for d in json.load(fh).get("datasets", [])}
+        except Exception:
+            _CATALOGUED = set()
+    return _CATALOGUED
+
+
 def _catalog_node():
     global _CATALOG
     if _CATALOG is None:
@@ -387,12 +402,17 @@ def build_jsonld(m):
               "license": "https://creativecommons.org/licenses/by/4.0/",
               "usageInfo": BASE + "/LICENSE",
               "isAccessibleForFree": True,
-              # Google Dataset Search recommends catalogue membership, and it is a plain fact
-              # about this dataset: it is one entry in the collection. The DOI goes on the
-              # CATALOGUE, which is what it identifies -- no individual dataset here has a DOI
-              # of its own, and putting the collection's on each one would say otherwise.
-              "includedInDataCatalog": _catalog_node(),
               "subjectOf": {"@id": page + "#paper"}}
+        # Google Dataset Search recommends catalogue membership, and for a pooled
+        # meta-analysis dataset it is a plain fact: it is one entry in the collection. It is
+        # NOT a fact about the applied papers added later, whose data and code sit on the
+        # site but are not in api/v1/datasets.json and not in the Zenodo deposit. Claiming
+        # otherwise told a machine that eight datasets were inside a catalogue and a DOI
+        # that do not contain them. Membership is now asserted only where the catalogue
+        # agrees. The DOI goes on the CATALOGUE, which is what it identifies -- no
+        # individual dataset here has a DOI of its own.
+        if proj in _catalogued():
+            ds["includedInDataCatalog"] = _catalog_node()
         if dist:
             ds["distribution"] = dist
         if ext_landing:

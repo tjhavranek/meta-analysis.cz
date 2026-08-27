@@ -2,7 +2,7 @@
 
 > Publicistika Tomáše Havránka a Zuzany Havránkové: komentáře pro celostátní média, sloupky pro litomyšlskou Lilii, rozhovory, stanoviska poradce bankovní rady ČNB a kratší příspěvky ze sítí. Texty jsou zde archivovány v plném znění s odkazem na původní vydání.
 
-Publicistika: 216 položek a 24 kratších příspěvků ze sítí (240 záznamů celkem), 2014–2026. Plné znění každého textu je na uvedené adrese; zdrojový Markdown položek je v /komentare/src/ (příspěvky ze sítí zdrojový soubor nemají). Licence: CC BY 4.0, jako vše na meta-analysis.cz; u převzatých textů uveďte i původní vydání.
+Publicistika: 219 položek a 24 kratších příspěvků ze sítí (243 záznamů celkem), 2014–2026. Plné znění každého textu je na uvedené adrese; zdrojový Markdown položek je v /komentare/src/ (příspěvky ze sítí zdrojový soubor nemají). Licence: CC BY 4.0, jako vše na meta-analysis.cz; u převzatých textů uveďte i původní vydání.
 
 ## Celostátní komentáře
 
@@ -216,7 +216,7 @@ Rozhovory pro česká média. U audio a video rozhovorů uvádíme pouze odkaz n
 
 ## In English
 
-Columns and commentary written in English — policy pieces for VoxEU/CEPR and posts on meta-analysis methods for MAER-Net.
+Columns and commentary written in English — policy pieces for VoxEU/CEPR, posts on meta-analysis methods for MAER-Net, and English translations of the advisor's opinions written for the Bank Board of the Czech National Bank.
 
 - [Two new pre-registered papers: outlier decisions in meta-analysis and AI feedback on meta-analyses](https://meta-analysis.cz/komentare/maer-two-pre-registered-papers/) — MAER-Net, 27. července 2026
 - [Results of the AI report ranking experiment](https://meta-analysis.cz/komentare/debate-vysledky-experimentu-autorum/) — the 47 authors who took part in the experiment (korespondence, nepublikováno), 16. července 2026
@@ -238,7 +238,10 @@ Columns and commentary written in English — policy pieces for VoxEU/CEPR and p
 - [Advisor's Opinion on Situation Report No. 8, 2018](https://meta-analysis.cz/komentare/cnb-advisor-opinion-8sz-2018/) — Czech National Bank, 19. prosince 2018
 - [Natural resources and economic growth: the research evidence](https://meta-analysis.cz/komentare/globaldev-natural-resources/) — GlobalDev Blog, 13. února 2018
 - [Daylight saving saves no energy](https://meta-analysis.cz/komentare/voxeu-daylight-saving/) — VoxEU / CEPR, 2. prosince 2017
+- [Advisor's Opinion on Situation Report No. 6, 2017](https://meta-analysis.cz/komentare/cnb-advisor-opinion-6sz-2017/) — Czech National Bank, 25. září 2017
 - [Headline inflation measures shouldn't ignore costs of home ownership](https://meta-analysis.cz/komentare/voxeu-home-ownership/) — VoxEU / CEPR, 12. září 2017
+- [Advisor's Opinion on Situation Report No. 6, 2016](https://meta-analysis.cz/komentare/cnb-advisor-opinion-6sz-2016/) — Czech National Bank, 26. září 2016
+- [Advisor's Opinion on Situation Report No. 2, 2016](https://meta-analysis.cz/komentare/cnb-advisor-opinion-2sz-2016/) — Czech National Bank, 29. března 2016
 
 ## Posts (ze sítí)
 

@@ -8,7 +8,8 @@ headline: "Stanovisko poradce k 6. situační zprávě 2017"
 released: "2024-01-31"
 byline: "Tomáš Havránek"
 genre: "advisor_opinion"
-body_note: "Napsáno ve funkci poradce bankovní rady ČNB; dokument nesl šestiletou lhůtu omezeného přístupu a ČNB jej zveřejnila v lednu 2024. Zde je v plném znění část I, stanovisko poradce. Původní dokument obsahuje i stanovisko samostatného odboru finanční stability (část II), které je v [hostovaném PDF](/komentare/files/cnb-stanoviska-6sz-2017.pdf) i v původním dokumentu na webu ČNB."
+translation: "cnb-advisor-opinion-6sz-2017"
+body_note: "Napsáno ve funkci poradce bankovní rady ČNB; dokument nesl šestiletou lhůtu omezeného přístupu a ČNB jej zveřejnila v lednu 2024. Zde je v plném znění část I, stanovisko poradce. Původní dokument obsahuje i stanovisko samostatného odboru finanční stability (část II), které je v [hostovaném PDF](/komentare/files/cnb-stanoviska-6sz-2017.pdf) i v původním dokumentu na webu ČNB. Anglický překlad: [Advisor's Opinion on Situation Report No. 6, 2017](/komentare/cnb-advisor-opinion-6sz-2017/)."
 ---
 
 # Stanovisko poradce k 6. situační zprávě 2017

@@ -1298,14 +1298,8 @@
    "project": "crisis_ews",
    "document_type": "paper",
    "version": "working_paper",
-   "version_note": null,
-   "published_as": {
-    "journal": "Journal of Financial Stability",
-    "year": 2014,
-    "doi": "https://doi.org/10.1016/j.jfs.2014.07.001",
-    "title": "Banking, debt, and currency crises in developed countries: Stylized facts and early warning indicators",
-    "project": "crisis_jfs"
-   },
+   "version_note": "It is ECB Working Paper 1485, the earlier and differently titled version; the citation above is the published article, whose full text is at [/crisis_jfs/](https://meta-analysis.cz/crisis_jfs/).",
+   "published_as": null,
    "title": "Banking, debt, and currency crises: Early warning indicators for developed countries",
    "authors": [
     "Jan Babecky",
@@ -1315,10 +1309,10 @@
     "Katerina Smidkova",
     "Borek Vasicek"
    ],
-   "year": 2012,
-   "journal": null,
-   "doi": null,
-   "publisher_url": "https://www.ecb.europa.eu/pub/pdf/scpwps/ecbwp1485.pdf",
+   "year": 2014,
+   "journal": "Journal of Financial Stability",
+   "doi": "https://doi.org/10.1016/j.jfs.2014.07.001",
+   "publisher_url": null,
    "full_text_url": "https://meta-analysis.cz/crisis_ews/paper/",
    "project_url": "https://meta-analysis.cz/crisis_ews/",
    "pdf_url": "https://meta-analysis.cz/crisis_ews/crisis_ews.pdf",

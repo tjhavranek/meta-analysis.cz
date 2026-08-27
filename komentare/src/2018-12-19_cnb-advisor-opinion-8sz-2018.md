@@ -6,14 +6,16 @@ url: "https://www.cnb.cz/export/sites/cnb/cs/menova-politika/.galleries/br_zapis
 date: "2018-12-19"
 headline: "Advisor's Opinion on Situation Report No. 8, 2018"
 released: "2025-01-31"
+byline: "Tomas Havranek"
 genre: "advisor_opinion"
+translated: "2026-08-27"
 translation: "cnb-stanovisko-poradce-8sz-2018"
 body_note: "An English translation of the Czech original, which remains the record of what was written: [Stanovisko poradce k 8. situační zprávě 2018](/komentare/cnb-stanovisko-poradce-8sz-2018/). Part I, the advisor's opinion, is here in full. The original document also carries Part II, prepared by the Financial Stability Department, which is in the [hosted PDF](/komentare/files/cnb-stanoviska-8sz-2018.pdf) and in the document on the CNB site. The four charts stay in the PDF. Numbered footnotes are collected at the end."
 ---
 
 # Advisor's Opinion on Situation Report No. 8, 2018
 
-The opinion on the Situation Report on economic and monetary developments consists of two parts: (i) an assessment against the price stability objective, written and signed by an advisor to a Bank Board member or, in exceptional cases, by a representative of the Financial Stability Department (Part I), and (ii) an assessment prepared by the Financial Stability Department, which brings in the financial stability objective as well (Part II).
+The opinion on the Situation Report on economic and monetary developments consists of two parts: (i) an assessment against the price stability objective, written, under his or her own name, by an advisor to a Bank Board member or, in exceptional cases, by a representative of the Financial Stability Department (Part I), and (ii) an assessment prepared by the Financial Stability Department, which brings in the financial stability objective as well (Part II).
 
 ## I. Assessment against the price stability objective
 
@@ -43,7 +45,7 @@ In the chart I consider only the forecasts published after the end of the exchan
 
 This asymmetry matters for the policy recommendations we build on the forecasts. By our rule of thumb, an average error of CZK 0.5 in the next quarter (propagated onward) means that at the time of the decision on each Situation Report there was, on average, room for two more “hikes” beyond what the forecast then recommended.
 
-That room exists now as well. What matters for today's decision is that the forecast assumes an average exchange rate of CZK 25.1 to the euro in the first quarter of 2019. Given market developments, however, such an outcome looks unlikely. And the distortion associated with the koruna weakening at the end of the year is not very pronounced this time. That is partly thanks to the activity of the National Bank of Slovakia and the Bank of Israel, which exploit the arbitrage, intervene in FX swaps, and indirectly help the koruna appreciate. In January, then, we cannot expect the koruna to strengthen as the end-of-year effect expires. If anything, the sensitivity scenario is materializing, and it calls for a rate increase of as much as 50 basis points. In any case, with one standard “hike” we cannot go wrong.
+That room exists now as well. What matters for today's decision is that the forecast assumes an average exchange rate of CZK 25.1 to the euro in the first quarter of 2019. Given market developments, however, such an outcome looks unlikely. And the distortion associated with the koruna weakening at the end of the year is not very pronounced this time. That is partly thanks to the activity of the National Bank of Slovakia and the Bank of Israel, which exploit arbitrage opportunities, intervene in FX swaps, and indirectly help the koruna appreciate. In January, then, we cannot expect the koruna to strengthen as the end-of-year effect expires. If anything, the sensitivity scenario is materializing, and it calls for a rate increase of as much as 50 basis points. In any case, with one standard “hike” we cannot go wrong.
 
 ## I.3 Thematic comment on the Situation Report
 
@@ -69,14 +71,14 @@ To conclude: the available data on client rates end in October 2018. For Novembe
 
 ## I.4 Specific comments and questions
 
-- The eighth Situation Report is exceptionally well written and clear.
+- Situation Report No. 8 is exceptionally well written and clear.
 - This opinion is not a critique of the g3 model; it ranks among the best DSGE models for open economies in the world, and we are rightly proud of it. It was calibrated as a whole so that its impulse responses match reality. But shouldn't the individual parameters have an economic interpretation? If they do not, and the calibrated elasticity of intertemporal substitution, for example, does not match observed consumer behavior, does the model really have microeconomic foundations? Was it not fully calibrated back before the crisis? And might the economy's responses today therefore differ from the model's dynamics? Of course, kicking DSGE models is fashionable in macroeconomics these days. I, by contrast, think they are a useful tool. Lately, though, their limitations have been showing more too.
 - One limitation described in this opinion is the exchange rate forecast. Based on the arguments in section I.2 above, the yellow triangle for the exchange rate in the GRIP risk chart of this small Situation Report should lie roughly in the middle of the upper right quadrant, not near the origin. I propose extending the expert adjustments to the entire forecast horizon, so that the exchange rate forecast is driven less by the model dynamics and more by information from the market. As the persistently low rates on household savings show, arbitrage between savings accounts and the repo rate does not work fully even in the domestic market. No wonder, then, that the arbitrage in the FX market through the UIP condition assumed by the model does not work fully either. In any case, the consensus in financial econometrics is that few models can beat a random walk at forecasting the exchange rate.
 - Another limitation is that g3 does not work with client rates in the consumption equation. It is probably not feasible to replace PRIBOR with another rate there, even though PRIBOR is not very relevant for consumption (see Chart 1 at the beginning of this opinion). But could we build a small satellite model, perhaps just by tying the key variables together with identities, that would work with client rates (and perhaps also with bond yields for the FX market, which, incidentally, are below the 3M PRIBOR even at considerably longer maturities, see p. 27 of the Report) and in future provide a “sanity check” for our core DSGE model?
 - Chapter III.6.1 on transmission reads too optimistically to me. Only the last sentence touches on the problems in transmission (which, after all, affect half of aggregate demand).
 - Average wage growth in the public sector keeps surprising us on the upside; the latest figure is 12% year on year. The forecast says this pace will moderate to 4% by 2020 (p. 22). What is the logic of this moderation? Parliamentary elections are due in at most 2.8 years, and the entire horizon of our fiscal forecast (p. 26) shows that “the resources will be there”. True, the model works primarily with wages in market sectors, but higher disposable income will raise inflation even if its source is public money.
 - The strength of current wage pressures is better conveyed by the growth of the wage bill and of the median wage (both growing at close to 10%; p. 22) than by the growth of the average wage. Employment is still rising, and firms are hiring mostly employees paid below the average, which holds measured average wage growth down. Once employment growth stops, the average wage will grow faster for purely statistical reasons.
-- We already have monthly data from the Land Registry on transaction prices of houses and apartments. The October figures suggested a return to double-digit annual growth, so this series could also help us in the argumentation around the approval of the amendment to the CNB Act. When will it be possible to construct the CPIH index on a monthly basis? Can we make it in time for the next big Situation Report, where we publish this index?
+- We already have monthly data from the Land Registry on transaction prices of houses and apartments. The October figures suggested a return to double-digit annual growth, so this series could also help us make the case for approving the amendment to the CNB Act. When will it be possible to construct the CPIH index on a monthly basis? Can we make it in time for the next big Situation Report, where we publish this index?
 
 ## I.5 References
 

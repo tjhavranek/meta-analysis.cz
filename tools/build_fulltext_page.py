@@ -71,10 +71,17 @@ def entry(year, title, project, href, meta):
             if authors else ""
     journal = meta.get("journal") or ""
     where = "<i>%s</i>" % html.escape(journal) if journal else "working paper"
-    # Say which version the reader will get. The working paper already reads as one; an
-    # accepted manuscript looked exactly like the fifty-three versions of record.
-    if (meta.get("version") or "") == "accepted_manuscript":
-        where += " (accepted manuscript)"
+    # Say which version the reader will get. Without this every row looks like a version
+    # of record, and two rows can carry the same journal and year: the JFS article and the
+    # ECB working paper behind it are separate texts, both listed, and the citation on both
+    # is the JFS one, so the journal line alone cannot tell them apart.
+    VERSION_LABEL = {"accepted_manuscript": "accepted manuscript",
+                     "working_paper": "working paper",
+                     "corrected_manuscript": "corrected manuscript"}
+    _label = VERSION_LABEL.get(meta.get("version") or "")
+    # not when the journal is absent: "working paper (working paper)" reads as a stutter
+    if _label and journal:
+        where += " (%s)" % _label
     extra = hanging(href)
     # A paper can be published without THIS text being the published version. The page serves
     # the working paper and says so; the list must still say the research is published, and
@@ -169,7 +176,11 @@ picture.</p>
         "@id": "https://meta-analysis.cz/papers/#page",
         "url": "https://meta-analysis.cz/papers/",
         "name": "Papers in Full",
-        "description": "Meta-analyses republished in full as HTML on meta-analysis.cz.",
+        # Not "meta-analyses": hasPart below carries the guidelines, the reporting
+        # standards and the applied papers, none of which is a meta-analysis. A parser
+        # reads this line before it reads the list it describes.
+        "description": "Research papers and methodological guidance carried in full "
+                       "as HTML on meta-analysis.cz.",
         "isPartOf": {"@id": "https://meta-analysis.cz/#website"},
         "hasPart": [{"@type": "ScholarlyArticle",
                      "name": r[1],

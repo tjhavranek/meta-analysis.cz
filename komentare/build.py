@@ -121,8 +121,9 @@ SECTIONS = {
     "english": dict(
         title="In English",
         short="English",
-        desc="Columns and commentary written in English — policy pieces for VoxEU/CEPR "
-             "and posts on meta-analysis methods for MAER-Net.",
+        desc="Columns and commentary written in English — policy pieces for VoxEU/CEPR, "
+             "posts on meta-analysis methods for MAER-Net, and English translations of the "
+             "advisor's opinions written for the Bank Board of the Czech National Bank.",
         lang="en",
     ),
 }
@@ -703,9 +704,32 @@ def write_item(a):
         "isAccessibleForFree": True,
         "articleSection": SECTIONS[a["category"]]["title"],
     }
+    # A translation is a different work from the thing it translates, and the dates and the
+    # publisher belong to whichever one they describe. Left alone, the English page inherited
+    # the Czech original's: publisher "Czech National Bank" with datePublished on the day the
+    # CNB released the CZECH memo, which told any machine reading only the structured data
+    # that the bank had published an official English version that day. It did not; this
+    # archive translated it. `translated:` is the date the ENGLISH work went up here.
+    _orig = BY_SLUG.get(a.get("translation") or "")
+    _is_tr = bool(_orig and a.get("translated"))
+    if _is_tr:
+        node["datePublished"] = a["translated"]
+        node["dateCreated"] = a["translated"]
+        _o_lang = _orig.get("lang") or SECTIONS[_orig["category"]]["lang"]
+        node["translationOfWork"] = {
+            "@type": "CreativeWork",
+            "@id": f"{BASE}/{_orig['slug']}/#article",
+            "url": f"{BASE}/{_orig['slug']}/",
+            "name": _orig["headline"],
+            "inLanguage": _o_lang,
+            **({"dateCreated": _orig["date"], "datePublished": _orig["released"]}
+               if _orig.get("released") else {"datePublished": _orig["date"]}),
+            **({"publisher": {"@type": "Organization", "name": _orig["outlet"]}}
+               if _orig.get("outlet") else {}),
+        }
     if unpub:
         node["creativeWorkStatus"] = "Unpublished"
-    else:
+    elif not _is_tr:
         node["publisher"] = {"@type": "Organization", "name": a["outlet"]}
     persons = [{k: v for k, v in (("@type", "Person"),
                                   ("@id", CANON_ID.get(ORCIDS.get(n))),
@@ -899,7 +923,7 @@ def write_item(a):
             # to every crawler that reads meta tags rather than the graph.
             + ("" if unpub else
                f'<meta property="article:published_time" content='
-               f'"{a.get("released") or (a["date"][:7] if a.get("date_precision") == "month" else a["date"])}"'
+               f'"{a.get("translated") or a.get("released") or (a["date"][:7] if a.get("date_precision") == "month" else a["date"])}"'
                f' />\n')
             # plain-text source of this page, for anything that would rather not parse HTML
             + f'<link rel="alternate" type="text/markdown" '

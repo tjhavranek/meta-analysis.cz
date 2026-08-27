@@ -9,7 +9,8 @@ headline: "Stanovisko poradce k 6. situační zprávě 2016"
 byline: "Tomáš Havránek"
 genre: "advisor_opinion"
 word_count: "3540"
-body_note: "Napsáno ve funkci poradce bankovní rady ČNB, projednáno bankovní radou 29. září 2016. Dokument nesl šestiletou lhůtu omezeného přístupu a ČNB jej zveřejnila 30. ledna 2023. Že jde celý o vlastní text poradce, dokládá podpis „Vypracoval: Tomáš Havránek“ a srovnání s pozdějšími ročníky: od roku 2017 nesou stanoviska navíc vyjádření sekce finanční stability, které zde není. Text je převeden z [hostovaného PDF](/komentare/files/cnb-stanovisko-6sz-2016.pdf); grafy zůstávají jen v něm. Číslované poznámky pod čarou jsou shromážděny na konci."
+translation: "cnb-advisor-opinion-6sz-2016"
+body_note: "Napsáno ve funkci poradce bankovní rady ČNB, projednáno bankovní radou 29. září 2016. Dokument nesl šestiletou lhůtu omezeného přístupu a ČNB jej zveřejnila 30. ledna 2023. Že jde celý o vlastní text poradce, dokládá podpis „Vypracoval: Tomáš Havránek“ a srovnání s pozdějšími ročníky: od roku 2017 nesou stanoviska navíc vyjádření sekce finanční stability, které zde není. Text je převeden z [hostovaného PDF](/komentare/files/cnb-stanovisko-6sz-2016.pdf); grafy zůstávají jen v něm. Číslované poznámky pod čarou jsou shromážděny na konci. Anglický překlad: [Advisor's Opinion on Situation Report No. 6, 2016](/komentare/cnb-advisor-opinion-6sz-2016/)."
 ---
 
 # Stanovisko poradce k 6. situační zprávě 2016
@@ -74,7 +75,7 @@ Takzvaná hypotéza nevychýlenosti (unbiasedness hypothesis) tvrdí, že nejlep
 
 Graf 4 ukazuje, že trh očekává jisté posílení kurzu po vypršení „tvrdého“ závazku (tedy na začátku ledna 2017), ale nečeká žádnou reakci na vypršení „měkkého“ závazku (polovina roku 2017). Vzhledem k formulaci závazku (konec roku, polovina roku) má největší smysl zkoumat forwardovou křivku ze začátku měsíce, aby se několikaměsíční forward vztahoval také k začátku měsíce, kdy je nejdříve možné ze závazku vystoupit; graf se vztahuje k začátku září. Nicméně forwardová křivka má takový tvar po většinu letošního roku: například křivka ze začátku června by ukázala stejný obrázek, tedy posílení kurzu v lednu 2017 a žádný skok v polovině roku 2017. Nejedná se tedy o žádnou novinku, která by se objevila až v září.[6]
 
-*Graf 5: Dvouletý forward CZK/EUR
+*Graf 5: Dvouletý forward CZK/EUR*
 
 Očekávané posílení je velmi malé a vyniká pouze ve srovnání s ještě menším dodatečným posílením v horizontu 2 let, které směrovalo na začátku září někam k hodnotě 26,85. Letošní vývoj dvouletého forwardu zachycuje graf 5, ze kterého je vidět, že se v průměru pohybuje kolem 26,80; v první polovině roku měl tendenci oslabovat, v září v reakci na spekulace posílil na zhruba 26,60. Takto silný byl již před rokem, pak se však po odeznění spekulací postupně vrátil k 26,80, a je tedy dost možné, že podobný vývoj budeme pozorovat i letos. Moje interpretace forwardové křivky je taková, že určitý segment trhu očekává opuštění flooru ihned po vypršení tvrdého závazku, což je také v souladu s anekdotickou evidencí.
 

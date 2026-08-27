@@ -1002,6 +1002,12 @@ def article_title(meta):
     own. There the registry's own title is the published one."""
     if meta.get("parent"):
         return meta.get("title") or meta.get("project", "")
+    # An entry may cite one paper while serving an earlier, differently titled version of
+    # it, on the owner's instruction. Taking the title out of that citation would put the
+    # published paper's name above text that is not it, so such an entry names its own
+    # title and says which is which in its version_note.
+    if meta.get("served_title"):
+        return meta["served_title"]
     m = RE_QUOTED_TITLE.search(meta.get("reference_line") or "")
     if m:
         return m.group(1).strip().rstrip(",.").strip()
