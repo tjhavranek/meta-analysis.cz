@@ -628,7 +628,7 @@
   "title": "A Meta-Analysis of the Excess Sensitivity of Consumption to Anticipated Income Changes",
   "literature": "Excess Sensitivity of Consumption",
   "abstract": "We show that three factors combine to explain the mean magnitude of excess sensitivity reported in studies estimating the consumption response to income changes: the use of macro data, publication bias, and liquidity constraints. When micro data are used, publication bias is corrected for, and  households under examination have substantial liquidity, the literature implies little evidence of deviations from consumption smoothing. The result holds when we control for 45 additional variables reflecting the methods employed by researchers and use Bayesian model averaging to account for model uncertainty. The estimates produced by this literature are also systematically affected by the size of the change in income and the chosen measure of consumption.",
-  "reference_line": "Tomas Havranek & Anna Sokolova (2020), \"Do Consumers Really Follow a Rule of Thumb? Three Thousand Estimates from 144 Studies Say `Probably Not'.\" Review of Economic Dynamics 35(1), 97-122.",
+  "reference_line": "Tomas Havranek & Anna Sokolova (2020), \"Do Consumers Really Follow a Rule of Thumb? Three Thousand Estimates from 144 Studies Say `Probably Not'.\" Review of Economic Dynamics 35, 97-122.",
   "authors": [
    "Tomas Havranek",
    "Anna Sokolova"
@@ -2263,7 +2263,7 @@
    }
   ],
   "version": "accepted_manuscript",
-  "version_note": "Four typographical errors that the journal's copy-editor caught are corrected here. The appendix tables are the ones the authors wrote: the published article moves the confidence intervals to the publisher's online supplement, and prints no table at all for the weekly and crisis-subsample estimates. The [accepted manuscript](https://meta-analysis.cz/contagion/contagion_manuscript.pdf) they come from is here too; the PDF above is the published article.",
+  "version_note": "Four typographical errors that the journal's copy-editor caught are corrected here. The appendix tables are the ones the authors wrote, and there are more of them than the journal printed: the published article stops at Table 11, leaving out the subsidiary-to-subsidiary weekly estimates and both crisis-subsample tables, and moving the confidence intervals to the publisher's online supplement. The [accepted manuscript](https://meta-analysis.cz/contagion/contagion_manuscript.pdf) they come from is here too; the PDF above is the published article.",
   "transcript_pdf": "contagion_manuscript.pdf"
  },
  {
@@ -2344,7 +2344,7 @@
    }
   ],
   "version": "corrected_manuscript",
-  "version_note": "The corrections the journal made in copy-editing are folded in here, among them the annual savings figure in Section 5.2, and the tables carry the numbering of the version of record. The reference list keeps the authors' own style, as in the [accepted manuscript](https://meta-analysis.cz/dst_slovakia/dst_slovakia_manuscript.pdf); the PDF above is the published article.",
+  "version_note": "The corrections the journal made in copy-editing are folded in here, among them the annual savings figure in Section 5.2, and the tables carry the numbering of the version of record. Citation style and footnote numbering follow the [accepted manuscript](https://meta-analysis.cz/dst_slovakia/dst_slovakia_manuscript.pdf), which is here too; the PDF above is the published article.",
   "transcript_pdf": "dst_slovakia_manuscript.pdf"
  },
  {
@@ -2352,10 +2352,10 @@
   "title": "Estimating the Effective Lower Bound on the Czech National Bank's Policy Rate",
   "literature": "The Effective Lower Bound on Policy Rates",
   "abstract": "This paper focuses on the estimation of the effective lower bound on the Czech National Bank’s policy rate. The effective lower bound is determined by the value below which holding and using cash would be preferable to holding deposits with negative yields. This bound is approximated on the basis of the storage, insurance and transportation costs of cash and the loss of convenience associated with cashless payments. This estimate is complemented by a calculation based on interest charges reflecting the impact of negative rates on banks’ profitability. Overall we get a mean of slightly below −1%, approximately in the interval (−2.0%, −0.4%). In addition, by means of a vector autoregression we show that the potential of negative rates is not sufficient to deliver monetary policy easing similar in its effects to the impact of the exchange rate commitment during the years 2013–2017.",
-  "reference_line": "Tomas Havranek, Dominika Kolcunova (2018), \"Estimating the Effective Lower Bound on the Czech National Bank's Policy Rate.\" Czech Journal of Economics and Finance 68(6): 550-577.",
+  "reference_line": "Dominika Kolcunova, Tomas Havranek (2018), \"Estimating the Effective Lower Bound on the Czech National Bank's Policy Rate.\" Czech Journal of Economics and Finance 68(6): 550-577.",
   "authors": [
-   "Tomas Havranek",
-   "Dominika Kolcunova"
+   "Dominika Kolcunova",
+   "Tomas Havranek"
   ],
   "year": 2018,
   "journal": "Czech Journal of Economics and Finance",

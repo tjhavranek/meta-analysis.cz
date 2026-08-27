@@ -329,13 +329,13 @@ excluded=[dict(id=d["id"], reason=d.get("reason"), paper=d.get("paper"),
 # the site serves. Keep the id equal to the project that hosts the file.
 excluded += [
   dict(id="spillovers_bias",
-       reason="study-level, not estimate-level: 57 rows, one per study",
+       reason="study-level, not estimate-level: 56 studies, one row each",
        paper=dict(title="Survey Article: Publication Bias in the Literature on Foreign "
                         "Direct Investment Spillovers",
                   page_title="Publication Bias in FDI Spillovers",
                   url=f"{BASE}/spillovers_bias/"),
-       excluded_because=("the second-stage data behind the paper: one row per study, "
-                         "carrying each study's publication-bias measure and the "
+       excluded_because=("the second-stage data behind the paper: one row for each of the "
+                         "56 studies, carrying its publication-bias measure and the "
                          "characteristics used to explain it, so it has no effect or "
                          "standard error column and cannot join an estimate-level table. "
                          "The estimates themselves are the FDI spillovers literature, "

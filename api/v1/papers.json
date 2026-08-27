@@ -922,7 +922,7 @@
    "project": "contagion",
    "document_type": "paper",
    "version": "accepted_manuscript",
-   "version_note": "Four typographical errors that the journal's copy-editor caught are corrected here. The appendix tables are the ones the authors wrote: the published article moves the confidence intervals to the publisher's online supplement, and prints no table at all for the weekly and crisis-subsample estimates. The [accepted manuscript](https://meta-analysis.cz/contagion/contagion_manuscript.pdf) they come from is here too; the PDF above is the published article.",
+   "version_note": "Four typographical errors that the journal's copy-editor caught are corrected here. The appendix tables are the ones the authors wrote, and there are more of them than the journal printed: the published article stops at Table 11, leaving out the subsidiary-to-subsidiary weekly estimates and both crisis-subsample tables, and moving the confidence intervals to the publisher's online supplement. The [accepted manuscript](https://meta-analysis.cz/contagion/contagion_manuscript.pdf) they come from is here too; the PDF above is the published article.",
    "published_as": null,
    "title": "The sources of contagion risk in a banking sector with foreign ownership",
    "authors": [
@@ -1795,7 +1795,7 @@
    "project": "dst_slovakia",
    "document_type": "paper",
    "version": "corrected_manuscript",
-   "version_note": "The corrections the journal made in copy-editing are folded in here, among them the annual savings figure in Section 5.2, and the tables carry the numbering of the version of record. The reference list keeps the authors' own style, as in the [accepted manuscript](https://meta-analysis.cz/dst_slovakia/dst_slovakia_manuscript.pdf); the PDF above is the published article.",
+   "version_note": "The corrections the journal made in copy-editing are folded in here, among them the annual savings figure in Section 5.2, and the tables carry the numbering of the version of record. Citation style and footnote numbering follow the [accepted manuscript](https://meta-analysis.cz/dst_slovakia/dst_slovakia_manuscript.pdf), which is here too; the PDF above is the published article.",
    "published_as": null,
    "title": "Does daylight saving time save electricity? Evidence from Slovakia",
    "authors": [
@@ -2085,8 +2085,8 @@
    "published_as": null,
    "title": "Estimating the Effective Lower Bound on the Czech National Bank's Policy Rate",
    "authors": [
-    "Tomas Havranek",
-    "Dominika Kolcunova"
+    "Dominika Kolcunova",
+    "Tomas Havranek"
    ],
    "year": 2018,
    "journal": "Czech Journal of Economics and Finance",

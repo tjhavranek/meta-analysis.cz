@@ -761,7 +761,7 @@
    "year": 2020,
    "venue": "Review of Economic Dynamics",
    "volume": "35",
-   "issue": "1",
+   "issue": null,
    "page": "97-122",
    "doi": "10.1016/j.red.2019.05.004",
    "authors": [
@@ -908,10 +908,10 @@
    "page": "550-577",
    "doi": "",
    "authors": [
-    "Tomas Havranek",
-    "Dominika Kolcunova"
+    "Dominika Kolcunova",
+    "Tomas Havranek"
    ],
-   "n_authors": null,
+   "n_authors": 2,
    "project": "elb",
    "type": "no-doi"
   },
@@ -1161,7 +1161,7 @@
     "Tomas Havranek",
     "Jana Sedlarikova"
    ],
-   "n_authors": null,
+   "n_authors": 2,
    "project": null,
    "type": "journal-article"
   },
@@ -1298,7 +1298,7 @@
     "Tomas Havranek",
     "Marek Rusnak"
    ],
-   "n_authors": null,
+   "n_authors": 2,
    "project": "lags",
    "type": "no-doi"
   },
@@ -1412,7 +1412,7 @@
     "Tomas Havranek",
     "Zuzana Irsova"
    ],
-   "n_authors": null,
+   "n_authors": 2,
    "project": null,
    "type": "no-doi"
   },
@@ -1458,7 +1458,7 @@
    "authors": [
     "Tomas Havranek"
    ],
-   "n_authors": null,
+   "n_authors": 1,
    "project": null,
    "type": "journal-article"
   }
@@ -1507,7 +1507,7 @@
     "Heiko J. Rachinger",
     "T. D. Stanley"
    ],
-   "n_authors": null,
+   "n_authors": 13,
    "project": "guai",
    "type": "journal-article"
   },
@@ -1525,7 +1525,7 @@
     "Zuzana Irsova",
     "Milan Scasny"
    ],
-   "n_authors": null,
+   "n_authors": 4,
    "project": "class",
    "type": "journal-article"
   },
@@ -1552,7 +1552,7 @@
     "Heiko J. Rachinger",
     "T. D. Stanley"
    ],
-   "n_authors": null,
+   "n_authors": 13,
    "project": "reporting_ai",
    "type": "journal-article"
   },
@@ -1913,7 +1913,7 @@
     "Ziwei Zhao",
     "Yaolang Zhong"
    ],
-   "n_authors": null,
+   "n_authors": 347,
    "project": null,
    "type": "journal-article"
   },
@@ -1937,7 +1937,7 @@
     "Zuzana Irsova",
     "Heiko J. Rachinger"
    ],
-   "n_authors": null,
+   "n_authors": 10,
    "project": "conventional_wisdom",
    "type": "journal-article"
   },
@@ -1955,7 +1955,7 @@
     "Zuzana Irsova",
     "Jiri Novak"
    ],
-   "n_authors": null,
+   "n_authors": 4,
    "project": "activism",
    "type": "journal-article"
   },
@@ -1972,7 +1972,7 @@
     "Tomas Havranek",
     "Zuzana Irsova"
    ],
-   "n_authors": null,
+   "n_authors": 3,
    "project": "risk",
    "type": "journal-article"
   },
@@ -1990,7 +1990,7 @@
     "Tomas Havranek",
     "Heiko Rachinger"
    ],
-   "n_authors": null,
+   "n_authors": 4,
    "project": "maive",
    "type": "journal-article",
    "article_number": "8454"
@@ -2009,7 +2009,7 @@
     "Zuzana Irsova",
     "Jiri Novak"
    ],
-   "n_authors": null,
+   "n_authors": 4,
    "project": "hedge",
    "type": "journal-article"
   },
@@ -2027,7 +2027,7 @@
     "Tomas Havranek",
     "T. D. Stanley"
    ],
-   "n_authors": null,
+   "n_authors": 4,
    "project": "guidelines",
    "type": "journal-article"
   },
@@ -2045,7 +2045,7 @@
     "Lubica Laslopova",
     "Olesia Zeynalova"
    ],
-   "n_authors": null,
+   "n_authors": 4,
    "project": "skill",
    "type": "journal-article"
   },
@@ -2062,7 +2062,7 @@
     "Tomas Havranek",
     "Zuzana Irsova"
    ],
-   "n_authors": null,
+   "n_authors": 3,
    "project": "students",
    "type": "journal-article"
   },
@@ -2080,7 +2080,7 @@
     "Roman Horvath",
     "Zuzana Irsova"
    ],
-   "n_authors": null,
+   "n_authors": 4,
    "project": "frisch",
    "type": "journal-article"
   },
@@ -2097,7 +2097,7 @@
     "Tomas Havranek",
     "Zuzana Irsova"
    ],
-   "n_authors": null,
+   "n_authors": 3,
    "project": "discrate",
    "type": "journal-article"
   },
@@ -2115,7 +2115,7 @@
     "Zuzana Irsova",
     "Dominika Kolcunova"
    ],
-   "n_authors": null,
+   "n_authors": 4,
    "project": "sigma",
    "type": "journal-article"
   },
@@ -2133,7 +2133,7 @@
     "Zuzana Irsova",
     "Jiri Novak"
    ],
-   "n_authors": null,
+   "n_authors": 4,
    "project": "forward",
    "type": "journal-article"
   },
@@ -2151,7 +2151,7 @@
     "Dominik Herman",
     "Zuzana Irsova"
    ],
-   "n_authors": null,
+   "n_authors": 4,
    "project": "dst_slovakia",
    "type": "journal-article"
   },
@@ -2169,7 +2169,7 @@
     "Zuzana Irsova",
     "Jiri Schwarz"
    ],
-   "n_authors": null,
+   "n_authors": 4,
    "project": "armington",
    "type": "journal-article"
   },
@@ -2186,7 +2186,7 @@
     "Tomas Havranek",
     "Zuzana Irsova"
    ],
-   "n_authors": null,
+   "n_authors": 3,
    "project": "fdi",
    "type": "journal-article"
   },
@@ -2203,7 +2203,7 @@
     "Dominik Herman",
     "Zuzana Irsova"
    ],
-   "n_authors": null,
+   "n_authors": 3,
    "project": "dst",
    "type": "journal-article"
   },
@@ -2220,7 +2220,7 @@
     "Zuzana Irsova",
     "Tomas Vlach"
    ],
-   "n_authors": null,
+   "n_authors": 3,
    "project": "water",
    "type": "journal-article"
   },
@@ -2237,7 +2237,7 @@
     "Zuzana Irsova",
     "Olesia Zeynalova"
    ],
-   "n_authors": null,
+   "n_authors": 3,
    "project": "education",
    "type": "journal-article"
   },
@@ -2253,7 +2253,7 @@
     "Tomas Havranek",
     "Zuzana Irsova"
    ],
-   "n_authors": null,
+   "n_authors": 2,
    "project": "border",
    "type": "journal-article"
   },
@@ -2270,7 +2270,7 @@
     "Zuzana Irsova",
     "Jitka Lesanovska"
    ],
-   "n_authors": null,
+   "n_authors": 3,
    "project": null,
    "type": "journal-article"
   },
@@ -2287,7 +2287,7 @@
     "Zuzana Irsova",
     "Jiri Schwarz"
    ],
-   "n_authors": null,
+   "n_authors": 3,
    "project": null,
    "type": "journal-article"
   },
@@ -2305,7 +2305,7 @@
     "Zuzana Irsova",
     "Marek Rusnak"
    ],
-   "n_authors": null,
+   "n_authors": 4,
    "project": "substitution",
    "type": "journal-article"
   },
@@ -2321,7 +2321,7 @@
     "Dominika Reckova",
     "Zuzana Irsova"
    ],
-   "n_authors": null,
+   "n_authors": 2,
    "project": "climate",
    "type": "journal-article"
   },
@@ -2339,7 +2339,7 @@
     "Karel Janda",
     "David Zilberman"
    ],
-   "n_authors": null,
+   "n_authors": 4,
    "project": "scc",
    "type": "journal-article"
   },
@@ -2355,7 +2355,7 @@
     "Zuzana Irsova",
     "Tomas Havranek"
    ],
-   "n_authors": null,
+   "n_authors": 2,
    "project": null,
    "type": "no-doi"
   },
@@ -2371,7 +2371,7 @@
     "Tomas Havranek",
     "Zuzana Irsova"
    ],
-   "n_authors": null,
+   "n_authors": 2,
    "project": null,
    "type": "journal-article"
   },
@@ -2387,7 +2387,7 @@
     "Zuzana Irsova",
     "Tomas Havranek"
    ],
-   "n_authors": null,
+   "n_authors": 2,
    "project": "bma",
    "type": "journal-article"
   },
@@ -2404,7 +2404,7 @@
     "Zuzana Irsova",
     "Karel Janda"
    ],
-   "n_authors": null,
+   "n_authors": 3,
    "project": "gasoline_price",
    "type": "journal-article"
   },
@@ -2420,7 +2420,7 @@
     "Tomas Havranek",
     "Zuzana Irsova"
    ],
-   "n_authors": null,
+   "n_authors": 2,
    "project": "spillovers_bias",
    "type": "journal-article"
   },
@@ -2436,7 +2436,7 @@
     "Zuzana Irsova",
     "Tomas Havranek"
    ],
-   "n_authors": null,
+   "n_authors": 2,
    "project": null,
    "type": "journal-article"
   },
@@ -2452,7 +2452,7 @@
     "Tomas Havranek",
     "Zuzana Irsova"
    ],
-   "n_authors": null,
+   "n_authors": 2,
    "project": "spillovers",
    "type": "journal-article"
   },
@@ -2468,7 +2468,7 @@
     "Zuzana Irsova",
     "Tomas Havranek"
    ],
-   "n_authors": null,
+   "n_authors": 2,
    "project": null,
    "type": "journal-article"
   },
@@ -2484,7 +2484,7 @@
     "Tomas Havranek",
     "Zuzana Irsova"
    ],
-   "n_authors": null,
+   "n_authors": 2,
    "project": null,
    "type": "no-doi"
   },
@@ -2500,7 +2500,7 @@
     "Tomas Havranek",
     "Zuzana Irsova"
    ],
-   "n_authors": null,
+   "n_authors": 2,
    "project": null,
    "type": "no-doi"
   }
