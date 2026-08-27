@@ -405,6 +405,10 @@
    "why": "'9% higher productivity per 10-percentage-point rise in foreign presence' is not the elasticity the effect column holds"
   },
   {
+   "project": "spillovers_bias",
+   "why": "a quantitative survey of publication selection itself; its headline is about the literature's selection, not a corrected effect"
+  },
+  {
    "project": "students",
    "why": "corrected about zero against a mean partial correlation of -0.017, already negligible: same problem as competition"
   },

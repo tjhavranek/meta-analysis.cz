@@ -102,6 +102,11 @@ pages = ["index.html"] + sorted(
 # line it would be the one page nothing verifies.
 if os.path.isfile(os.path.join(SITE, "about", "index.html")):
     pages.append("about/index.html")
+# Same for the two publication lists: self-managed so the injector leaves them alone, but
+# every structural check below still applies.
+for _pub in ("publications/index.html", "publications/irsova/index.html"):
+    if os.path.isfile(os.path.join(SITE, _pub)):
+        pages.append(_pub)
 # Sub-pages of a project, one level down: /guidelines/guide/, /maive/paper/. The listing
 # above is one level deep, so a full-text republication living under a project directory was
 # checked by nothing here -- no viewport check, no div balance, no canonical count, no JSON-LD

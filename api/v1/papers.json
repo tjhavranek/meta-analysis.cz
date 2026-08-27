@@ -1,10 +1,10 @@
 {
  "name": "meta-analysis.cz papers",
- "description": "One record per full-text document on meta-analysis.cz: 55 papers plus the MAIVE supplement, each with its full text, PDF and section map. Fetch this first and one page after, rather than the whole corpus.",
+ "description": "One record per full-text document on meta-analysis.cz: 62 papers plus the MAIVE supplement, each with its full text, PDF and section map. Fetch this first and one page after, rather than the whole corpus.",
  "license": "https://creativecommons.org/licenses/by/4.0/",
  "full_corpus": "https://meta-analysis.cz/llms-full.txt",
- "count": 56,
- "paper_count": 55,
+ "count": 63,
+ "paper_count": 62,
  "supplement_count": 1,
  "papers": [
   {
@@ -574,6 +574,80 @@
    "codebook_url": "https://meta-analysis.cz/api/v1/codebooks/border.json"
   },
   {
+   "project": "cbequity",
+   "document_type": "paper",
+   "title": "Central Bank Equity as an Instrument of Monetary Policy",
+   "authors": [
+    "Mojmir Hampl",
+    "Tomas Havranek"
+   ],
+   "year": 2020,
+   "journal": "Comparative Economic Studies",
+   "doi": "https://doi.org/10.1057/s41294-019-00092-1",
+   "publisher_url": null,
+   "full_text_url": "https://meta-analysis.cz/cbequity/paper/",
+   "project_url": "https://meta-analysis.cz/cbequity/",
+   "pdf_url": "https://meta-analysis.cz/cbequity/cbequity.pdf",
+   "abstract": "We examine the use of central bank equity as an unconventional monetary policy tool. In this setting, a central bank employs digital currency to transfer digital cash to each household, thus supporting consumption directly when needed. The asset side of the central bank's balance sheet remains unchanged, and the creation of new digital cash is offset by a decrease in central bank equity. The central bank thus incurs an immediate loss but does not take on any additional risks for its future income statements. We address several objections to this policy, paying particular attention to the claim that weakening the financial strength of the central bank endangers long-term price stability. Through a meta-analysis of 176 estimates reported previously in the literature, we find that central bank financial strength has not historically correlated with inflation performance.",
+   "sections": [
+    {
+     "level": 2,
+     "title": "Introduction",
+     "anchor": "sec-introduction"
+    },
+    {
+     "level": 2,
+     "title": "Central Bank Financial Strength and Price Stability: A Meta-analysis",
+     "anchor": "sec-central-bank-financial-strength-and-price-stability-a-meta-analysis"
+    },
+    {
+     "level": 2,
+     "title": "Bolstering Financial Strength with Private Shareholding",
+     "anchor": "sec-bolstering-financial-strength-with-private-shareholding"
+    },
+    {
+     "level": 2,
+     "title": "Using Central Bank Equity to Directly Support Consumption",
+     "anchor": "sec-using-central-bank-equity-to-directly-support-consumption"
+    },
+    {
+     "level": 3,
+     "title": "Stability",
+     "anchor": "sec-stability"
+    },
+    {
+     "level": 3,
+     "title": "Independence",
+     "anchor": "sec-independence"
+    },
+    {
+     "level": 3,
+     "title": "Authority",
+     "anchor": "sec-authority"
+    },
+    {
+     "level": 3,
+     "title": "Efficiency",
+     "anchor": "sec-efficiency"
+    },
+    {
+     "level": 2,
+     "title": "Concluding Remarks",
+     "anchor": "sec-concluding-remarks"
+    },
+    {
+     "level": 2,
+     "title": "REFERENCES",
+     "anchor": "sec-references"
+    },
+    {
+     "level": 2,
+     "title": "ENDNOTES",
+     "anchor": "sec-endnotes"
+    }
+   ]
+  },
+  {
    "project": "class",
    "document_type": "paper",
    "title": "Publication Bias and Model Uncertainty in Measuring the Effect of Class Size on Achievement",
@@ -815,6 +889,180 @@
    "codebook_url": "https://meta-analysis.cz/api/v1/codebooks/competition.json"
   },
   {
+   "project": "contagion",
+   "document_type": "paper",
+   "title": "The sources of contagion risk in a banking sector with foreign ownership",
+   "authors": [
+    "Tomas Fiala",
+    "Tomas Havranek"
+   ],
+   "year": 2017,
+   "journal": "Economic Modelling",
+   "doi": "https://doi.org/10.1016/j.econmod.2016.08.025",
+   "publisher_url": null,
+   "full_text_url": "https://meta-analysis.cz/contagion/paper/",
+   "project_url": "https://meta-analysis.cz/contagion/",
+   "pdf_url": "https://meta-analysis.cz/contagion/contagion.pdf",
+   "abstract": "Foreign-dominated banking sectors, such as those prevalent in Central and Eastern Europe, are susceptible to two major sources of systemic risk: (i) linkages between local banks, and (ii) linkages between a foreign parent bank and its local subsidiary. During and after the global financial crisis, the second source of risk has been stressed by local regulators. Using a nonparametric method based on extreme value theory, we analyze interdependencies in downward risk in the banking sectors of the Czech Republic, Poland, Slovakia, and Turkey during 1994–2013. We find that the risk of contagion from a foreign parent bank to its local subsidiary is substantially smaller than the risk between two local banks.",
+   "sections": [
+    {
+     "level": 2,
+     "title": "1. Introduction",
+     "anchor": "sec-1"
+    },
+    {
+     "level": 2,
+     "title": "2. Related Literature",
+     "anchor": "sec-2"
+    },
+    {
+     "level": 2,
+     "title": "3. Economic Background",
+     "anchor": "sec-3"
+    },
+    {
+     "level": 3,
+     "title": "3.1. Subsidiary-to-subsidiary linkages",
+     "anchor": "sec-3-1"
+    },
+    {
+     "level": 3,
+     "title": "3.2. Parent-to-subsidiary linkages",
+     "anchor": "sec-3-2"
+    },
+    {
+     "level": 2,
+     "title": "4. Modeling Systemic Risk",
+     "anchor": "sec-4"
+    },
+    {
+     "level": 3,
+     "title": "4.1. Dependence beyond correlation",
+     "anchor": "sec-4-1"
+    },
+    {
+     "level": 3,
+     "title": "4.2. Statistical model",
+     "anchor": "sec-4-2"
+    },
+    {
+     "level": 3,
+     "title": "4.2.1. Subsidiary-to-subsidiary dependence",
+     "anchor": "sec-4-2-1"
+    },
+    {
+     "level": 3,
+     "title": "4.2.2. Parent-to-subsidiary dependence",
+     "anchor": "sec-4-2-2"
+    },
+    {
+     "level": 3,
+     "title": "4.2.3. Systemic risk",
+     "anchor": "sec-4-2-3"
+    },
+    {
+     "level": 2,
+     "title": "5. Estimation and Data",
+     "anchor": "sec-5"
+    },
+    {
+     "level": 3,
+     "title": "5.1. Estimation",
+     "anchor": "sec-5-1"
+    },
+    {
+     "level": 3,
+     "title": "5.2. Data",
+     "anchor": "sec-5-2"
+    },
+    {
+     "level": 2,
+     "title": "6. Results",
+     "anchor": "sec-6"
+    },
+    {
+     "level": 3,
+     "title": "6.1. Subsidiary-to-subsidiary estimates",
+     "anchor": "sec-6-1"
+    },
+    {
+     "level": 3,
+     "title": "6.2. Parent-to-subsidiary estimates",
+     "anchor": "sec-6-2"
+    },
+    {
+     "level": 2,
+     "title": "7. Conclusion",
+     "anchor": "sec-7"
+    },
+    {
+     "level": 2,
+     "title": "References",
+     "anchor": "sec-references"
+    },
+    {
+     "level": 2,
+     "title": "A. Acronyms of Bank Names",
+     "anchor": "sec-a"
+    },
+    {
+     "level": 2,
+     "title": "B. Additional Simulation and Example",
+     "anchor": "sec-b"
+    },
+    {
+     "level": 2,
+     "title": "C. Extensions and Robustness Checks",
+     "anchor": "sec-c"
+    },
+    {
+     "level": 3,
+     "title": "C.1. Subsidiary-to-market estimates",
+     "anchor": "sec-c-1"
+    },
+    {
+     "level": 3,
+     "title": "C.2. Risk-adjusted returns",
+     "anchor": "sec-c-2"
+    },
+    {
+     "level": 3,
+     "title": "C.3. Weakly returns",
+     "anchor": "sec-c-3"
+    },
+    {
+     "level": 3,
+     "title": "C.4. Crisis period",
+     "anchor": "sec-c-4"
+    },
+    {
+     "level": 2,
+     "title": "D. Confidence Intervals (For Online Publication)",
+     "anchor": "sec-d"
+    },
+    {
+     "level": 3,
+     "title": "D.1. Risk-adjusted returns",
+     "anchor": "sec-d-1"
+    },
+    {
+     "level": 3,
+     "title": "D.2. Weekly data",
+     "anchor": "sec-d-2"
+    },
+    {
+     "level": 3,
+     "title": "D.3. Financial crisis subsample",
+     "anchor": "sec-d-3"
+    },
+    {
+     "level": 2,
+     "title": "ENDNOTES",
+     "anchor": "sec-endnotes"
+    }
+   ]
+  },
+  {
    "project": "conventional_wisdom",
    "document_type": "paper",
    "title": "Conventional wisdom, meta-analysis, and research revision in economics",
@@ -1006,6 +1254,99 @@
    "headline_question": "Are meta-analyses of correlations biased?",
    "headline": "conventional fixed- and random-effects estimators are biased; the UWLS+3 and Hunter-Schmidt estimators correct this",
    "headline_url": "https://meta-analysis.cz/results/#correlations"
+  },
+  {
+   "project": "crisis_ews",
+   "document_type": "paper",
+   "title": "Banking, debt, and currency crises: Early warning indicators for developed countries",
+   "authors": [
+    "Jan Babecky",
+    "Tomas Havranek",
+    "Jakub Mateju",
+    "Marek Rusnak",
+    "Katerina Smidkova",
+    "Borek Vasicek"
+   ],
+   "year": 2012,
+   "journal": null,
+   "doi": null,
+   "publisher_url": "https://www.ecb.europa.eu/pub/pdf/scpwps/ecbwp1485.pdf",
+   "full_text_url": "https://meta-analysis.cz/crisis_ews/paper/",
+   "project_url": "https://meta-analysis.cz/crisis_ews/",
+   "pdf_url": "https://meta-analysis.cz/crisis_ews/crisis_ews.pdf",
+   "abstract": "We construct and explore a new quarterly dataset covering crisis episodes in 40 developed countries over 1970–2010. First, we examine stylized facts of banking, debt, and currency crises. Banking turmoil was most frequent in developed economies. Using panel vector autoregression, we confirm that currency and debt crises are typically preceded by banking crises, but not vice versa. Banking crises are also the most costly in terms of the overall output loss, and output takes about six years to recover. Second, we try to identify early warning indicators of crises specific to developed economies, accounting for model uncertainty by means of Bayesian model averaging. Our results suggest that onsets of banking and currency crises tend to be preceded by booms in economic activity. In particular, we find that growth of domestic private credit, increasing FDI inflows, rising money market rates as well as increasing world GDP and inflation were common leading indicators of banking crises. Currency crisis onsets were typically preceded by rising money market rates, but also by worsening government balances and falling central bank reserves. Early warning indicators of debt crisis are difficult to uncover due to the low occurrence of such episodes in our dataset. Finally, employing a signaling approach we show that using a composite early warning index increases the usefulness of the model when compared to using the best single indicator (domestic private credit). JEL Codes: C33, E44, E58, F47, G01.",
+   "sections": [
+    {
+     "level": 2,
+     "title": "NONTECHNICAL SUMMARY",
+     "anchor": "sec-nontechnical-summary"
+    },
+    {
+     "level": 2,
+     "title": "1. Introduction",
+     "anchor": "sec-1"
+    },
+    {
+     "level": 2,
+     "title": "2. New Quarterly Database of Economic Crises in Developed Economies",
+     "anchor": "sec-2"
+    },
+    {
+     "level": 2,
+     "title": "3. Banking, Debt, and Currency Crises in Developed Countries: Stylized Facts",
+     "anchor": "sec-3"
+    },
+    {
+     "level": 2,
+     "title": "4. Early Warning Indicators of Banking and Currency Crises",
+     "anchor": "sec-4"
+    },
+    {
+     "level": 2,
+     "title": "5. Signaling Analysis",
+     "anchor": "sec-5"
+    },
+    {
+     "level": 2,
+     "title": "6. Concluding Remarks",
+     "anchor": "sec-6"
+    },
+    {
+     "level": 2,
+     "title": "REFERENCES",
+     "anchor": "sec-references"
+    },
+    {
+     "level": 2,
+     "title": "ANNEX I. Data",
+     "anchor": "sec-annex-i--data"
+    },
+    {
+     "level": 3,
+     "title": "I.1. List of countries",
+     "anchor": "sec-i-1--list-of-countries"
+    },
+    {
+     "level": 3,
+     "title": "I.2. Sources and definition of crises",
+     "anchor": "sec-i-2--sources-and-definition-of-crises"
+    },
+    {
+     "level": 3,
+     "title": "I.3. Variables, transformations, and data sources",
+     "anchor": "sec-i-3--variables-transformations-and-data-sources"
+    },
+    {
+     "level": 3,
+     "title": "I.4. Robustness check with limited dependent variable models",
+     "anchor": "sec-i-4--robustness-check-with-limited-dependent-variable-models"
+    },
+    {
+     "level": 2,
+     "title": "ENDNOTES",
+     "anchor": "sec-endnotes"
+    }
+   ]
   },
   {
    "project": "debate",
@@ -1298,6 +1639,92 @@
    "codebook_url": "https://meta-analysis.cz/api/v1/codebooks/dst.json"
   },
   {
+   "project": "dst_slovakia",
+   "document_type": "paper",
+   "title": "Does daylight saving time save electricity? Evidence from Slovakia",
+   "authors": [
+    "Peter Kudela",
+    "Tomas Havranek",
+    "Dominik Herman",
+    "Zuzana Irsova"
+   ],
+   "year": 2020,
+   "journal": "Energy Policy",
+   "doi": "https://doi.org/10.1016/j.enpol.2019.111146",
+   "publisher_url": null,
+   "full_text_url": "https://meta-analysis.cz/dst_slovakia/paper/",
+   "project_url": "https://meta-analysis.cz/dst_slovakia/",
+   "pdf_url": "https://meta-analysis.cz/dst_slovakia/dst_slovakia.pdf",
+   "abstract": "The European Union has recently decided to stop the policy of biannual clock changes in 2021. One reason is that the original rationale for the policy, energy savings, is not supported by a large portion of recent empirical studies. Whether the new permanent time will be standard time or the former daylight saving time has not been decided. Evidence on energy savings from daylight saving time is country-specific, and each country may choose its own time. We examine the effects of the policy in a country for which no studies on daylight saving exist, Slovakia. Using hourly data from the 2010–2017 period, we apply a difference-in-differences approach and estimate energy savings to equal 1% of annual electricity consumption. Alternatively, extrapolating the effect from the results of a previous meta-analysis on different countries, for Slovakia we obtain a smaller estimate, unlikely to exceed 0.5%. Moreover, our findings suggest that daylight saving time smooths the electricity demand curve.",
+   "sections": [
+    {
+     "level": 2,
+     "title": "1. Introduction",
+     "anchor": "sec-1"
+    },
+    {
+     "level": 2,
+     "title": "2. Related Literature and Electricity Market in Slovakia",
+     "anchor": "sec-2"
+    },
+    {
+     "level": 2,
+     "title": "3. Data",
+     "anchor": "sec-3"
+    },
+    {
+     "level": 2,
+     "title": "4. Research Design",
+     "anchor": "sec-4"
+    },
+    {
+     "level": 2,
+     "title": "5. Results",
+     "anchor": "sec-5"
+    },
+    {
+     "level": 3,
+     "title": "5.1. Benchmark Estimation",
+     "anchor": "sec-5-1"
+    },
+    {
+     "level": 3,
+     "title": "5.2. Robustness Checks",
+     "anchor": "sec-5-2"
+    },
+    {
+     "level": 3,
+     "title": "5.3. Meta-Analysis Estimate",
+     "anchor": "sec-5-3"
+    },
+    {
+     "level": 3,
+     "title": "5.4. Hourly Effects",
+     "anchor": "sec-5-4"
+    },
+    {
+     "level": 2,
+     "title": "6. Conclusion",
+     "anchor": "sec-6"
+    },
+    {
+     "level": 2,
+     "title": "References",
+     "anchor": "sec-references"
+    },
+    {
+     "level": 2,
+     "title": "A. Appendix",
+     "anchor": "sec-a"
+    },
+    {
+     "level": 2,
+     "title": "ENDNOTES",
+     "anchor": "sec-endnotes"
+    }
+   ]
+  },
+  {
    "project": "education",
    "document_type": "paper",
    "title": "Tuition Fees and University Enrolment: A Meta‐Regression Analysis",
@@ -1487,6 +1914,115 @@
     "codebook": "https://meta-analysis.cz/api/v1/codebooks/eis.json"
    },
    "codebook_url": "https://meta-analysis.cz/api/v1/codebooks/eis.json"
+  },
+  {
+   "project": "elb",
+   "document_type": "paper",
+   "title": "Estimating the Effective Lower Bound on the Czech National Bank's Policy Rate",
+   "authors": [
+    "Dominika Kolcunova",
+    "Tomas Havranek"
+   ],
+   "year": 2018,
+   "journal": "Czech Journal of Economics and Finance",
+   "doi": null,
+   "publisher_url": "https://journal.fsv.cuni.cz/mag/article/show/id/1422",
+   "full_text_url": "https://meta-analysis.cz/elb/paper/",
+   "project_url": "https://meta-analysis.cz/elb/",
+   "pdf_url": "https://meta-analysis.cz/elb/elb.pdf",
+   "abstract": "This paper focuses on the estimation of the effective lower bound on the Czech National Bank’s policy rate. The effective lower bound is determined by the value below which holding and using cash would be preferable to holding deposits with negative yields. This bound is approximated on the basis of the storage, insurance and transportation costs of cash and the loss of convenience associated with cashless payments. This estimate is complemented by a calculation based on interest charges reflecting the impact of negative rates on banks’ profitability. Overall we get a mean of slightly below −1%, approximately in the interval (−2.0%, −0.4%). In addition, by means of a vector autoregression we show that the potential of negative rates is not sufficient to deliver monetary policy easing similar in its effects to the impact of the exchange rate commitment during the years 2013–2017.",
+   "sections": [
+    {
+     "level": 2,
+     "title": "1. Introduction",
+     "anchor": "sec-1"
+    },
+    {
+     "level": 2,
+     "title": "2. Related Literature and the International Experience",
+     "anchor": "sec-2"
+    },
+    {
+     "level": 2,
+     "title": "3. Negative Rates in the Czech Market",
+     "anchor": "sec-3"
+    },
+    {
+     "level": 2,
+     "title": "4. Effective Lower Bound Estimate",
+     "anchor": "sec-4"
+    },
+    {
+     "level": 3,
+     "title": "4.1. Storage, Transport and Insurance Costs",
+     "anchor": "sec-4-1"
+    },
+    {
+     "level": 3,
+     "title": "4.2. Loss of Convenience",
+     "anchor": "sec-4-2"
+    },
+    {
+     "level": 3,
+     "title": "4.2.1. Interchange Fees",
+     "anchor": "sec-4-2-1"
+    },
+    {
+     "level": 3,
+     "title": "4.2.2. Social Costs of Different Payment Instruments",
+     "anchor": "sec-4-2-2"
+    },
+    {
+     "level": 3,
+     "title": "4.3. Direct Costs of Negative Rates",
+     "anchor": "sec-4-3"
+    },
+    {
+     "level": 3,
+     "title": "4.4. Technical and Legal Problems with Negative Rates",
+     "anchor": "sec-4-4"
+    },
+    {
+     "level": 3,
+     "title": "4.5. Summary",
+     "anchor": "sec-4-5"
+    },
+    {
+     "level": 2,
+     "title": "5. Comparison of the Potential of Negative Interest Rates with the CNB’s Exchange Rate Commitment",
+     "anchor": "sec-5"
+    },
+    {
+     "level": 2,
+     "title": "6. Conclusion",
+     "anchor": "sec-6"
+    },
+    {
+     "level": 2,
+     "title": "REFERENCES",
+     "anchor": "sec-references"
+    },
+    {
+     "level": 2,
+     "title": "APPENDIX",
+     "anchor": "sec-appendix"
+    },
+    {
+     "level": 3,
+     "title": "A1. VAR analysis",
+     "anchor": "sec-a1"
+    },
+    {
+     "level": 3,
+     "title": "A2. TVAR analysis",
+     "anchor": "sec-a2"
+    },
+    {
+     "level": 2,
+     "title": "ENDNOTES",
+     "anchor": "sec-endnotes"
+    }
+   ]
   },
   {
    "project": "electricity",
@@ -3212,6 +3748,124 @@
     "codebook": "https://meta-analysis.cz/api/v1/codebooks/lags.json"
    },
    "codebook_url": "https://meta-analysis.cz/api/v1/codebooks/lags.json"
+  },
+  {
+   "project": "leading_indicators",
+   "document_type": "paper",
+   "title": "Leading indicators of crisis incidence: Evidence from developed countries",
+   "authors": [
+    "Jan Babecky",
+    "Tomas Havranek",
+    "Jakub Mateju",
+    "Marek Rusnak",
+    "Katerina Smidkova",
+    "Borek Vasicek"
+   ],
+   "year": 2013,
+   "journal": "Journal of International Money and Finance",
+   "doi": "https://doi.org/10.1016/j.jimonfin.2013.01.001",
+   "publisher_url": null,
+   "full_text_url": "https://meta-analysis.cz/leading_indicators/paper/",
+   "project_url": "https://meta-analysis.cz/leading_indicators/",
+   "pdf_url": "https://meta-analysis.cz/leading_indicators/leading_indicators.pdf",
+   "abstract": "We examine which indicators are most useful in explaining the cost of economic crises in EU and OECD countries between 1970 and 2010. To define the dependent variable we combine a measure of costs to the economy, which consists of the output and employment loss and the fiscal deficit, with a database of crisis occurrence designed specifically for this task. We take into account model uncertainty in two steps. First, for each potential leading indicator we select the relevant prediction horizon by using panel vector autoregression. Second, we identify the most useful leading indicators with Bayesian model averaging. Our results suggest that domestic housing prices, share prices, and credit growth, and some global variables, such as private credit, constitute important sources of risk.",
+   "sections": [
+    {
+     "level": 2,
+     "title": "1. Introduction",
+     "anchor": "sec-1"
+    },
+    {
+     "level": 2,
+     "title": "2. Early warning literature: lessons and challenges",
+     "anchor": "sec-2"
+    },
+    {
+     "level": 3,
+     "title": "2.1. Costly events",
+     "anchor": "sec-2-1"
+    },
+    {
+     "level": 3,
+     "title": "2.2. Countries in the sample",
+     "anchor": "sec-2-2"
+    },
+    {
+     "level": 3,
+     "title": "2.3. Potential leading indicators",
+     "anchor": "sec-2-3"
+    },
+    {
+     "level": 3,
+     "title": "2.4. Time lags",
+     "anchor": "sec-2-4"
+    },
+    {
+     "level": 3,
+     "title": "2.5. Early warning indicators",
+     "anchor": "sec-2-5"
+    },
+    {
+     "level": 2,
+     "title": "3. Data set and stylized facts",
+     "anchor": "sec-3"
+    },
+    {
+     "level": 3,
+     "title": "3.1. Index of real costs conditional on crisis occurrence",
+     "anchor": "sec-3-1"
+    },
+    {
+     "level": 3,
+     "title": "3.2. Leading indicators",
+     "anchor": "sec-3-2"
+    },
+    {
+     "level": 2,
+     "title": "4. Estimation and results",
+     "anchor": "sec-4"
+    },
+    {
+     "level": 3,
+     "title": "4.1. Selection of optimal lags",
+     "anchor": "sec-4-1"
+    },
+    {
+     "level": 3,
+     "title": "4.2. Addressing model uncertainty",
+     "anchor": "sec-4-2"
+    },
+    {
+     "level": 3,
+     "title": "4.3. Robustness checks",
+     "anchor": "sec-4-3"
+    },
+    {
+     "level": 2,
+     "title": "5. Concluding remarks",
+     "anchor": "sec-5"
+    },
+    {
+     "level": 2,
+     "title": "Acknowledgments",
+     "anchor": "sec-acknowledgments"
+    },
+    {
+     "level": 2,
+     "title": "Appendix A. Data",
+     "anchor": "sec-appendix-a--data"
+    },
+    {
+     "level": 2,
+     "title": "REFERENCES",
+     "anchor": "sec-references"
+    },
+    {
+     "level": 2,
+     "title": "ENDNOTES",
+     "anchor": "sec-endnotes"
+    }
+   ]
   },
   {
    "project": "learning",
@@ -5072,6 +5726,73 @@
     "codebook": "https://meta-analysis.cz/api/v1/codebooks/spillovers.json"
    },
    "codebook_url": "https://meta-analysis.cz/api/v1/codebooks/spillovers.json"
+  },
+  {
+   "project": "spillovers_bias",
+   "document_type": "paper",
+   "title": "Survey Article: Publication Bias in the Literature on Foreign Direct Investment Spillovers",
+   "authors": [
+    "Tomas Havranek",
+    "Zuzana Irsova"
+   ],
+   "year": 2012,
+   "journal": "Journal of Development Studies",
+   "doi": "https://doi.org/10.1080/00220388.2012.685721",
+   "publisher_url": null,
+   "full_text_url": "https://meta-analysis.cz/spillovers_bias/paper/",
+   "project_url": "https://meta-analysis.cz/spillovers_bias/",
+   "pdf_url": "https://meta-analysis.cz/spillovers_bias/spillovers_bias.pdf",
+   "abstract": "In this article we conduct a large quantitative survey of the literature on horizontal and vertical spillovers from foreign direct investment (FDI). We create a unique database of spillover estimates for each country examined in the literature. Next, we estimate the average effect corrected for publication selection bias (the preferential selection of positive and significant estimates for publication). Our results suggest that an average reported estimate of backward spillovers is statistically significant. Publication selection is evident only among studies published in peer-reviewed journals, and only among the estimates that authors consider most important. Authors with small data sets engage in more publication selection. The intensity of selection in the literature decreases over time, which supports the economics-research-cycle hypothesis.",
+   "sections": [
+    {
+     "level": 2,
+     "title": "I. INTRODUCTION",
+     "anchor": "sec-i"
+    },
+    {
+     "level": 2,
+     "title": "II. MEASURING PRODUCTIVITY SPILLOVERS",
+     "anchor": "sec-ii"
+    },
+    {
+     "level": 2,
+     "title": "III. STUDIES ON SPILLOVERS FROM FDI",
+     "anchor": "sec-iii"
+    },
+    {
+     "level": 2,
+     "title": "IV. QUANTIFYING PUBLICATION BIAS",
+     "anchor": "sec-iv"
+    },
+    {
+     "level": 2,
+     "title": "V. DETERMINANTS OF PUBLICATION SELECTION",
+     "anchor": "sec-v"
+    },
+    {
+     "level": 2,
+     "title": "VI. CONCLUSION",
+     "anchor": "sec-vi"
+    },
+    {
+     "level": 2,
+     "title": "References",
+     "anchor": "sec-references"
+    },
+    {
+     "level": 2,
+     "title": "APPENDIX",
+     "anchor": "sec-appendix"
+    },
+    {
+     "level": 2,
+     "title": "ENDNOTES",
+     "anchor": "sec-endnotes"
+    }
+   ],
+   "headline_question": "Is the FDI spillover literature affected by publication bias?",
+   "headline": "publication selection appears only in peer-reviewed journals and only among the estimates authors call most important, and its intensity falls over time",
+   "headline_url": "https://meta-analysis.cz/results/#spillovers_bias"
   },
   {
    "project": "students",

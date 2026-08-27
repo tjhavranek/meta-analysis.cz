@@ -1138,7 +1138,8 @@ def main():
            f"- [API documentation]({BASE}/api/v1/README.md): endpoints, usage, licence, and what "
            f"is deliberately not in the harmonised table",
            "", "## Resources", "",
-           f"- [Headline results for every paper]({BASE}/estimates.csv): one row per paper — the "
+           f"- [Headline results, one per meta-analysis]({BASE}/estimates.csv): one row per "
+           f"meta-analysis — the "
            f"parameter, the value the paper headlines, the sample it rests on, and the verbatim "
            f"sentence from the paper that each figure came from (CSV)",
            f"- [Map of the corpus]({BASE}/api/v1/papers.json): one small record per paper -- "
@@ -1153,6 +1154,9 @@ def main():
            f"- [Papers republished in full as HTML]({BASE}/papers/): the complete text of each "
            f"paper -- body, tables, figures, equations and references -- readable and quotable "
            f"without opening a PDF",
+           f"- [Complete publication lists]({BASE}/publications/): every journal article by "
+           f"Tomas Havranek, and at {BASE}/publications/irsova/ every one by Zuzana Irsova, "
+           f"with DOIs and a link to the full text where this site carries it",
            f"- [About the site and who maintains it]({BASE}/about/): affiliations and ORCIDs",
            f"- [Sitemap]({BASE}/sitemap.xml): all pages and PDF full texts",
            f"- [Commentary and interviews]({BASE}/komentare/): op-eds, columns and interviews "

@@ -313,11 +313,11 @@ which further check settled each literature.
 
 ## `/estimates.csv`, and why the headline is prose
 
-One row per paper, fifteen columns. `project` joins to `datasets.json.id`, and
+One row per meta-analysis, fifteen columns. `project` joins to `datasets.json.id`, and
 `source_quote` carries the verbatim sentence from the paper that the figure came
 from, so every number can be traced to the words that state it.
 
-**`headline` is prose on purpose, and only one of the fifty-five rows is a bare
+**`headline` is prose on purpose, and only one of the fifty-six rows is a bare
 number.** The others are ranges, qualitative statements, or clauses that carry
 their own conditions -- a percentage change per one-percentage-point rise,
 peaking after two years. Reducing those to a single numeric column would drop the

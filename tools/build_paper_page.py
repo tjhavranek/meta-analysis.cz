@@ -75,7 +75,7 @@ def _mathml(tex, display=False):
     return out
 
 
-def inline(text, refs_are_numbered=False, link_cites=True):
+def inline(text, refs_are_numbered=False, link_cites=True, in_table=False):
     """Escape the text, then apply the inline dialect. Math is converted first and parked
     behind placeholders so that markup characters inside a formula are never re-read."""
     parked = []
@@ -93,6 +93,23 @@ def inline(text, refs_are_numbered=False, link_cites=True):
         # In the author block a superscript is an affiliation key, never a citation: "c" and
         # "d" are also roman numerals, so linking them invents anchors that do not exist.
         if not link_cites:
+            return "<sup>%s</sup>" % body
+        # Inside a table, a single letter is the key of a table footnote -- the "a", "b", "c"
+        # that the Notes line under the table explains -- and never a citation. Left to the
+        # roman-numeral rule below, "c" is 100 and links to an endnote #note-c that no paper
+        # has, which check_paper_pages fails as a citation link pointing at nothing. Same
+        # reasoning as the author block above, applied where the other keys live. A numbered
+        # citation in a table cell is real and still links; only the bare letter is exempt.
+        if in_table and re.fullmatch(r"[A-Za-z]", body):
+            return "<sup>%s</sup>" % body
+        # And in a paper whose references are author-year, a BARE NUMBER inside a table is
+        # not an endnote marker either. It is the exponent of R^2, the 2 of J/cm^2, or the
+        # table's own footnote key -- three things that all read as "2" and none of which
+        # points at an endnote. Outside a table the same superscript really is the endnote
+        # marker, which is why this is scoped to tables and not to the paper. Where the
+        # references ARE numbered, a number in a table cell is a citation and still links:
+        # sixty-seven of them do, and they are untouched.
+        if in_table and not refs_are_numbered and re.fullmatch(r"\d+", body):
             return "<sup>%s</sup>" % body
         if refs_are_numbered and re.fullmatch(r"[\d,\s\u2013\u2014-]+", body):
             # "4-6" cites three references, so it links three times: the range's own
@@ -131,7 +148,7 @@ def inline(text, refs_are_numbered=False, link_cites=True):
     text = re.sub(r"_\{([^}]*)\}", lambda m: "<sub>%s</sub>" % m.group(1), text)
     # Both link rules park their output. Otherwise the bare-URL rule reads the href the
     # markdown rule just wrote and links it again, nesting one anchor inside another.
-    text = re.sub(r"\[([^\]]+)\]\((https?://[^)\s]+)\)",
+    text = re.sub(r"\[([^\]]+)\]\(((?:https?://|mailto:)[^)\s]+)\)",
                   lambda m: park('<a href="%s">%s</a>' % (m.group(2), m.group(1))), text)
     text = re.sub(r"(?<![\w/])(https?://[^\s<>)\]]+[\w/])",
                   lambda m: park('<a href="%s">%s</a>' % (m.group(1), m.group(1))), text)
@@ -179,8 +196,14 @@ RE_TABLE_CAP = re.compile(
 # transcribed it. Both mean the same thing: this is the second panel of a table too tall for
 # one printed page, not a second table with the same number.
 RE_CONT_LEAD = re.compile(r"^\(\s*(?:continued|cont\.?)\s*\)\s*", re.I)
+# The same shape as RE_TABLE_CAP above, and for the same reason: an appendix figure is
+# numbered "I.4.1" or "A.1" as often as "A1", and without the optional dot and the repeated
+# dotted parts such a caption is not a caption at all -- it prints as a stray paragraph and
+# the artwork beside it is never emitted. verify_transcript cannot see this, because the
+# caption text IS in the paper either way.
 RE_FIG_CAP = re.compile(
-    r"^FIGURE\s+([A-Za-z]?\d+(?:\.\d+)?[A-Za-z]?)(\s*\(no artwork\))?\s*\.\s*(.*)$", re.I)
+    r"^FIGURE\s+([A-Za-z]{0,3}\.?\d+(?:\.\d+)*[A-Za-z]?)(\s*\(no artwork\))?\s*\.\s*(.*)$",
+    re.I)
 RE_LIST_ITEM = re.compile(r"^([0-9]+|[ivxlcdm]+)\.\s+(.*)$")
 
 
@@ -468,7 +491,8 @@ class Builder:
                 while j < len(lines) and lines[j].strip():
                     note.append(lines[j].strip())
                     j += 1
-                self.w('<p class="table-note">%s</p>' % inline(" ".join(note), self.refs_numbered))
+                self.w('<p class="table-note">%s</p>'
+                   % inline(" ".join(note), self.refs_numbered, in_table=True))
                 i = j
                 just_closed_table = False
                 continue
@@ -508,7 +532,8 @@ class Builder:
                 html.escape(num), " (continued)" if cont else "",
                 inline(cap, self.refs_numbered)))
         self.w("<thead><tr>%s</tr></thead>" % "".join(
-            '<th scope="col">%s</th>' % inline(c, self.refs_numbered) for c in header))
+            '<th scope="col">%s</th>' % inline(c, self.refs_numbered, in_table=True)
+            for c in header))
         self.w("<tbody>")
         for r in rest:
             tds = []
@@ -516,10 +541,12 @@ class Builder:
                 numeric = bool(re.fullmatch(r"[\s−–<>=.,%\d()+-]*", c)) and any(
                     ch.isdigit() for ch in c)
                 if k == 0:
-                    tds.append('<th scope="row">%s</th>' % inline(c, self.refs_numbered))
+                    tds.append('<th scope="row">%s</th>'
+                               % inline(c, self.refs_numbered, in_table=True))
                 else:
                     tds.append('<td%s>%s</td>' % (' class="num"' if numeric else "",
-                                                  inline(c, self.refs_numbered)))
+                                                  inline(c, self.refs_numbered,
+                                                         in_table=True)))
             self.w("<tr>%s</tr>" % "".join(tds))
         self.w("</tbody></table></div>")
 
@@ -581,6 +608,12 @@ def load_footer():
 
 def esc_attr(s):
     return html.escape(s or "", quote=True)
+
+
+def _doi_label(meta):
+    """A working paper has no version of record; its link goes to the working paper itself."""
+    return ("Working paper" if (meta.get("version") or "").lower() == "working_paper"
+            else "Version of record")
 
 
 def build_page(project, meta, body, toc):
@@ -680,13 +713,22 @@ def build_page(project, meta, body, toc):
     # same URL twice in a row.
     if doi and doi.rstrip("/").replace("https://", "") not in (ref or ""):
         attr_p.append('<a href="%s">%s</a>.' % (esc_attr(doi), html.escape(doi)))
+    # What the reader is actually being handed. A page that serves an accepted manuscript or
+    # a working paper must not let the citation above imply the publisher's typeset article:
+    # the two can differ in the numbers, and on one paper in this corpus they did.
+    _v = (meta.get("version") or "record").lower()
+    if _v == "accepted_manuscript":
+        attr_p.append("The text here is the accepted manuscript, before the publisher's "
+                      "copy-editing and typesetting; cite the version of record.")
+    elif _v == "working_paper":
+        attr_p.append("The text here is the working paper.")
     attribution.append("<p>%s</p>" % " ".join(attr_p))
     parent_label = meta.get("parent_label")
     links = []
     if pdf:
         links.append('<a href="%s">%s (PDF)</a>' % (pdf, "Supplement" if parent_label else "Paper"))
     if doi:
-        links.append('<a href="%s">Version of record</a>' % esc_attr(doi))
+        links.append('<a href="%s">%s</a>' % (esc_attr(doi), _doi_label(meta)))
     links.append('<a href="%s">%s</a>' % (home, "The paper" if parent_label else "Data and code"))
     attribution.append('<p class="attr-links">%s</p>' % " &nbsp;&middot;&nbsp; ".join(links))
     attribution.append("</div>")
@@ -696,7 +738,7 @@ def build_page(project, meta, body, toc):
         menu.append('<li><a href="%s">%s (PDF)</a></li>'
                     % (pdf, "Supplement" if parent_label else "Paper"))
     if doi:
-        menu.append('<li><a href="%s">Version of record</a></li>' % esc_attr(doi))
+        menu.append('<li><a href="%s">%s</a></li>' % (esc_attr(doi), _doi_label(meta)))
     menu.append('<li><a href="%s">%s</a></li>'
                 % (home, "The paper" if parent_label else "Data and code"))
     # A reader who has just finished one full text is the likeliest reader of another, and

@@ -227,6 +227,10 @@
   "conventional_wisdom": {
    "value": "45–60% smaller, sometimes sign-flipped",
    "zero": false
+  },
+  "spillovers_bias": {
+   "value": "only in journals, and only for the estimates authors stress",
+   "zero": false
   }
  }
 }

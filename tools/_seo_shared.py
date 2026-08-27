@@ -33,6 +33,10 @@ SELF_MANAGED = {
                    # author, no year and no abstract, so Highwire citation_* tags would be
                    # fabricated. It is still in the sitemap -- it is a real page a reader
                    # may want -- but it is a tool, not a document, and is described as one.
+    "publications",  # built by tools/build_publications_page.py; a bibliography of other
+                   # people's articles as much as of this site's. It has no author, year or
+                   # abstract of its own, so Highwire citation_* tags on it would be
+                   # fabricated, and the injector would emit ScholarlyArticle for a list.
     "papers",      # built by tools/build_fulltext_page.py; an index of the full-text
                    # editions, so a CollectionPage rather than a 55th paper. Without this
                    # the injector emits ScholarlyArticle and Highwire tags for a list.

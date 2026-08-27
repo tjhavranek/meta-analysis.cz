@@ -2142,5 +2142,216 @@
   "has_meta_description": true,
   "meta_keywords": "meta-analysis, reporting guidelines, publication bias, meta-regression, MAER-Net",
   "one_line": "The MAER-Net reporting guidelines for meta-analysis in economics: what every meta-analysis should report, from search and coding to publication bias and replication."
+ },
+ {
+  "project": "cbequity",
+  "title": "Central Bank Equity as an Instrument of Monetary Policy",
+  "literature": "Central Bank Equity and Monetary Policy",
+  "abstract": "We examine the use of central bank equity as an unconventional monetary policy tool. In this setting, a central bank employs digital currency to transfer digital cash to each household, thus supporting consumption directly when needed. The asset side of the central bank's balance sheet remains unchanged, and the creation of new digital cash is offset by a decrease in central bank equity. The central bank thus incurs an immediate loss but does not take on any additional risks for its future income statements. We address several objections to this policy, paying particular attention to the claim that weakening the financial strength of the central bank endangers long-term price stability. Through a meta-analysis of 176 estimates reported previously in the literature, we find that central bank financial strength has not historically correlated with inflation performance.",
+  "reference_line": "Mojmir Hampl, Tomas Havranek (2020), \"Central Bank Equity as an Instrument of Monetary Policy.\" Comparative Economic Studies 62: 49-68.",
+  "authors": [
+   "Mojmir Hampl",
+   "Tomas Havranek"
+  ],
+  "year": 2020,
+  "journal": "Comparative Economic Studies",
+  "doi_or_publisher_url": "https://doi.org/10.1057/s41294-019-00092-1",
+  "one_line": "Central bank equity as an unconventional policy tool, with a meta-analysis of 176 estimates finding that central bank financial strength has not historically correlated with inflation.",
+  "meta_keywords": "Central bank equity, Inflation, Seigniorage, Monetary policy, Helicopter money, Central bank digital currency",
+  "menu_links": [
+   {
+    "label": "Paper",
+    "href": "cbequity.pdf"
+   },
+   {
+    "label": "Data",
+    "href": "CBFS.xlsx"
+   },
+   {
+    "label": "Code",
+    "href": "code.txt"
+   }
+  ]
+ },
+ {
+  "project": "contagion",
+  "title": "The sources of contagion risk in a banking sector with foreign ownership",
+  "literature": "Contagion Risk with Foreign Bank Ownership",
+  "abstract": "Foreign-dominated banking sectors, such as those prevalent in Central and Eastern Europe, are susceptible to two major sources of systemic risk: (i) linkages between local banks, and (ii) linkages between a foreign parent bank and its local subsidiary. During and after the global financial crisis, the second source of risk has been stressed by local regulators. Using a nonparametric method based on extreme value theory, we analyze interdependencies in downward risk in the banking sectors of the Czech Republic, Poland, Slovakia, and Turkey during 1994–2013. We find that the risk of contagion from a foreign parent bank to its local subsidiary is substantially smaller than the risk between two local banks.",
+  "reference_line": "Tomas Fiala, Tomas Havranek (2017), \"The sources of contagion risk in a banking sector with foreign ownership.\" Economic Modelling 60: 108-121.",
+  "authors": [
+   "Tomas Fiala",
+   "Tomas Havranek"
+  ],
+  "year": 2017,
+  "journal": "Economic Modelling",
+  "doi_or_publisher_url": "https://doi.org/10.1016/j.econmod.2016.08.025",
+  "one_line": "Extreme-value analysis of the Czech, Polish, Slovak and Turkish banking sectors from 1994 to 2013 finds contagion risk from a foreign parent bank to its subsidiary is substantially smaller than between two local banks.",
+  "meta_keywords": "systemic risk, extreme value theory, financial stability, Central and Eastern Europe, banking, parent-subsidiary relationship",
+  "menu_links": [
+   {
+    "label": "Paper",
+    "href": "contagion.pdf"
+   },
+   {
+    "label": "Data",
+    "href": "Data_table.xls"
+   },
+   {
+    "label": "Bank data",
+    "href": "160216_Bankscope.xlsx"
+   }
+  ],
+  "version": "accepted_manuscript"
+ },
+ {
+  "project": "crisis_ews",
+  "title": "Banking, debt, and currency crises: Early warning indicators for developed countries",
+  "literature": "Early Warning Indicators of Crises",
+  "abstract": "We construct and explore a new quarterly dataset covering crisis episodes in 40 developed countries over 1970–2010. First, we examine stylized facts of banking, debt, and currency crises. Banking turmoil was most frequent in developed economies. Using panel vector autoregression, we confirm that currency and debt crises are typically preceded by banking crises, but not vice versa. Banking crises are also the most costly in terms of the overall output loss, and output takes about six years to recover. Second, we try to identify early warning indicators of crises specific to developed economies, accounting for model uncertainty by means of Bayesian model averaging. Our results suggest that onsets of banking and currency crises tend to be preceded by booms in economic activity. In particular, we find that growth of domestic private credit, increasing FDI inflows, rising money market rates as well as increasing world GDP and inflation were common leading indicators of banking crises. Currency crisis onsets were typically preceded by rising money market rates, but also by worsening government balances and falling central bank reserves. Early warning indicators of debt crisis are difficult to uncover due to the low occurrence of such episodes in our dataset. Finally, employing a signaling approach we show that using a composite early warning index increases the usefulness of the model when compared to using the best single indicator (domestic private credit). JEL Codes: C33, E44, E58, F47, G01.",
+  "reference_line": "Jan Babecky, Tomas Havranek, Jakub Mateju, Marek Rusnak, Katerina Smidkova, Borek Vasicek (2012), \"Banking, debt, and currency crises: Early warning indicators for developed countries.\" ECB Working Paper Series No. 1485.",
+  "authors": [
+   "Jan Babecky",
+   "Tomas Havranek",
+   "Jakub Mateju",
+   "Marek Rusnak",
+   "Katerina Smidkova",
+   "Borek Vasicek"
+  ],
+  "year": 2012,
+  "journal": null,
+  "doi_or_publisher_url": "https://www.ecb.europa.eu/pub/pdf/scpwps/ecbwp1485.pdf",
+  "one_line": "A new quarterly dataset of banking, debt and currency crises in 40 developed countries from 1970 to 2010: banking crises usually come first, cost the most, and follow booms in credit and activity. A later and substantially different version was published in the Journal of Financial Stability in 2014 (doi.org/10.1016/j.jfs.2014.07.001).",
+  "meta_keywords": "Early warning indicators, Bayesian model averaging, macro-prudential policies",
+  "menu_links": [
+   {
+    "label": "Paper",
+    "href": "crisis_ews.pdf"
+   },
+   {
+    "label": "Crisis database",
+    "href": "/ews/crises_database.xls"
+   },
+   {
+    "label": "Crisis coding",
+    "href": "/ews/cdec40_40_at_least_two.xls"
+   }
+  ],
+  "version": "working_paper"
+ },
+ {
+  "project": "dst_slovakia",
+  "title": "Does daylight saving time save electricity? Evidence from Slovakia",
+  "literature": "Daylight Saving Time and Electricity in Slovakia",
+  "abstract": "The European Union has recently decided to stop the policy of biannual clock changes in 2021. One reason is that the original rationale for the policy, energy savings, is not supported by a large portion of recent empirical studies. Whether the new permanent time will be standard time or the former daylight saving time has not been decided. Evidence on energy savings from daylight saving time is country-specific, and each country may choose its own time. We examine the effects of the policy in a country for which no studies on daylight saving exist, Slovakia. Using hourly data from the 2010–2017 period, we apply a difference-in-differences approach and estimate energy savings to equal 1% of annual electricity consumption. Alternatively, extrapolating the effect from the results of a previous meta-analysis on different countries, for Slovakia we obtain a smaller estimate, unlikely to exceed 0.5%. Moreover, our findings suggest that daylight saving time smooths the electricity demand curve.",
+  "reference_line": "Peter Kudela, Tomas Havranek, Dominik Herman, Zuzana Irsova (2020), \"Does daylight saving time save electricity? Evidence from Slovakia.\" Energy Policy 137: 111146.",
+  "authors": [
+   "Peter Kudela",
+   "Tomas Havranek",
+   "Dominik Herman",
+   "Zuzana Irsova"
+  ],
+  "year": 2020,
+  "journal": "Energy Policy",
+  "doi_or_publisher_url": "https://doi.org/10.1016/j.enpol.2019.111146",
+  "one_line": "Hourly Slovak data for 2010-2017 put the electricity savings from daylight saving time at 1% of annual consumption, or below 0.5% when extrapolated from a meta-analysis of other countries.",
+  "meta_keywords": "Daylight saving time, electricity consumption, energy savings, peak demand, Slovakia",
+  "menu_links": [
+   {
+    "label": "Paper",
+    "href": "dst_slovakia.pdf"
+   },
+   {
+    "label": "Data",
+    "href": "price.xlsx"
+   },
+   {
+    "label": "Code",
+    "href": "code.R"
+   }
+  ],
+  "version": "accepted_manuscript"
+ },
+ {
+  "project": "elb",
+  "title": "Estimating the Effective Lower Bound on the Czech National Bank's Policy Rate",
+  "literature": "The Effective Lower Bound on Policy Rates",
+  "abstract": "This paper focuses on the estimation of the effective lower bound on the Czech National Bank’s policy rate. The effective lower bound is determined by the value below which holding and using cash would be preferable to holding deposits with negative yields. This bound is approximated on the basis of the storage, insurance and transportation costs of cash and the loss of convenience associated with cashless payments. This estimate is complemented by a calculation based on interest charges reflecting the impact of negative rates on banks’ profitability. Overall we get a mean of slightly below −1%, approximately in the interval (−2.0%, −0.4%). In addition, by means of a vector autoregression we show that the potential of negative rates is not sufficient to deliver monetary policy easing similar in its effects to the impact of the exchange rate commitment during the years 2013–2017.",
+  "reference_line": "Dominika Kolcunova, Tomas Havranek (2018), \"Estimating the Effective Lower Bound on the Czech National Bank's Policy Rate.\" Czech Journal of Economics and Finance 68(6): 550-577.",
+  "authors": [
+   "Dominika Kolcunova",
+   "Tomas Havranek"
+  ],
+  "year": 2018,
+  "journal": "Czech Journal of Economics and Finance",
+  "doi_or_publisher_url": "https://journal.fsv.cuni.cz/mag/article/show/id/1422",
+  "one_line": "The effective lower bound on the Czech National Bank's policy rate is estimated at slightly below -1%, in the interval (-2.0%, -0.4%), and negative rates alone would not have matched the exchange rate commitment.",
+  "meta_keywords": "effective lower bound, zero lower bound, negative interest rates, costs of cash, transmission of monetary policy",
+  "menu_links": [
+   {
+    "label": "Paper",
+    "href": "elb.pdf"
+   }
+  ]
+ },
+ {
+  "project": "leading_indicators",
+  "title": "Leading indicators of crisis incidence: Evidence from developed countries",
+  "literature": "Leading Indicators of Crisis Incidence",
+  "abstract": "We examine which indicators are most useful in explaining the cost of economic crises in EU and OECD countries between 1970 and 2010. To define the dependent variable we combine a measure of costs to the economy, which consists of the output and employment loss and the fiscal deficit, with a database of crisis occurrence designed specifically for this task. We take into account model uncertainty in two steps. First, for each potential leading indicator we select the relevant prediction horizon by using panel vector autoregression. Second, we identify the most useful leading indicators with Bayesian model averaging. Our results suggest that domestic housing prices, share prices, and credit growth, and some global variables, such as private credit, constitute important sources of risk.",
+  "reference_line": "Jan Babecky, Tomas Havranek, Jakub Mateju, Marek Rusnak, Katerina Smidkova, Borek Vasicek (2013), \"Leading indicators of crisis incidence: Evidence from developed countries.\" Journal of International Money and Finance 35: 1-19.",
+  "authors": [
+   "Jan Babecky",
+   "Tomas Havranek",
+   "Jakub Mateju",
+   "Marek Rusnak",
+   "Katerina Smidkova",
+   "Borek Vasicek"
+  ],
+  "year": 2013,
+  "journal": "Journal of International Money and Finance",
+  "doi_or_publisher_url": "https://doi.org/10.1016/j.jimonfin.2013.01.001",
+  "one_line": "Bayesian model averaging over crises in EU and OECD countries from 1970 to 2010 identifies domestic housing prices, share prices and credit growth as the leading indicators of what a crisis costs.",
+  "meta_keywords": "Early warning indicators, Bayesian model averaging, Panel VAR, Dynamic panel, Crises",
+  "menu_links": [
+   {
+    "label": "Paper",
+    "href": "leading_indicators.pdf"
+   },
+   {
+    "label": "Crisis database",
+    "href": "/ews/crises_database.xls"
+   }
+  ]
+ },
+ {
+  "project": "spillovers_bias",
+  "title": "Survey Article: Publication Bias in the Literature on Foreign Direct Investment Spillovers",
+  "literature": "Publication Bias in FDI Spillovers",
+  "abstract": "In this article we conduct a large quantitative survey of the literature on horizontal and vertical spillovers from foreign direct investment (FDI). We create a unique database of spillover estimates for each country examined in the literature. Next, we estimate the average effect corrected for publication selection bias (the preferential selection of positive and significant estimates for publication). Our results suggest that an average reported estimate of backward spillovers is statistically significant. Publication selection is evident only among studies published in peer-reviewed journals, and only among the estimates that authors consider most important. Authors with small data sets engage in more publication selection. The intensity of selection in the literature decreases over time, which supports the economics-research-cycle hypothesis.",
+  "reference_line": "Tomas Havranek, Zuzana Irsova (2012), \"Survey Article: Publication Bias in the Literature on Foreign Direct Investment Spillovers.\" Journal of Development Studies 48(10): 1375-1396.",
+  "authors": [
+   "Tomas Havranek",
+   "Zuzana Irsova"
+  ],
+  "year": 2012,
+  "journal": "Journal of Development Studies",
+  "doi_or_publisher_url": "https://doi.org/10.1080/00220388.2012.685721",
+  "one_line": "A quantitative survey of 3,626 estimates from 57 studies of FDI spillovers: publication selection appears only in peer-reviewed journals, only among the estimates authors call most important, and weakens over time.",
+  "meta_keywords": "FDI spillovers, publication selection bias, meta-analysis, foreign direct investment, quantitative survey",
+  "menu_links": [
+   {
+    "label": "Paper",
+    "href": "spillovers_bias.pdf"
+   },
+   {
+    "label": "Data",
+    "href": "data2.xls"
+   },
+   {
+    "label": "Code",
+    "href": "Stata_program.do"
+   }
+  ]
  }
 ]

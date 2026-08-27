@@ -156,11 +156,21 @@ def pdf_counts(pdf):
     lay_tokens = words(pdf_prose(pdf))
     plain_tokens = words(normalise(subprocess.run(
         ["pdftotext", pdf, "-"], capture_output=True, text=True, check=True).stdout))
-    layout, plain = Counter(lay_tokens), Counter(plain_tokens)
+    # A third reading, in content-stream order. Both modes above read a two-column page
+    # geometrically, and on a two-column REFERENCE list they interleave the columns: an entry
+    # broken across a line has the other column's text spliced between its halves, so words
+    # like "Papanikolaou" exist in the paper and in neither extraction. -raw follows the order
+    # the PDF actually stores, which puts each entry back together. Without it a faithful
+    # transcript of a two-column accepted manuscript is accused of inventing its own
+    # bibliography.
+    raw_tokens = words(normalise(subprocess.run(
+        ["pdftotext", "-raw", pdf, "-"], capture_output=True, text=True, check=True).stdout))
+    layout, plain, raw = Counter(lay_tokens), Counter(plain_tokens), Counter(raw_tokens)
     best = Counter()
-    for w in set(layout) | set(plain):
-        best[w] = max(layout[w], plain[w])
-    best.joined = joined_runs(lay_tokens) | joined_runs(plain_tokens)
+    for w in set(layout) | set(plain) | set(raw):
+        best[w] = max(layout[w], plain[w], raw[w])
+    best.joined = (joined_runs(lay_tokens) | joined_runs(plain_tokens)
+                   | joined_runs(raw_tokens))
     return best
 
 

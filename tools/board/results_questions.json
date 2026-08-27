@@ -273,5 +273,10 @@
   "project": "conventional_wisdom",
   "question": "How far do corrected meta-analytic effects move from conventional wisdom?",
   "short": "conventional wisdom"
+ },
+ {
+  "project": "spillovers_bias",
+  "question": "Is the FDI spillover literature affected by publication bias?",
+  "short": "publication bias in the fdi spillover li"
  }
 ]

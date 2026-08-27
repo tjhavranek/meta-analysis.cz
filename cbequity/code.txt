@@ -1,0 +1,31 @@
+xtset idstudy
+gen invsqrtnobs = 1/sqrt(nobs)
+
+sum r, detail
+mean r
+sum r if good==1, detail
+mean r if good==1
+sum t, detail
+sum t if t<-1.96
+sum t if t<0
+sum t if t>1.96
+
+scatter precr r, msize(*.5) msymbol(Oh)
+
+eststo: reg r ser, vce(bootstrap, seed(22))
+eststo: xtreg r ser, fe vce(bootstrap, seed(22))
+eststo: reg r ser [pweight=invperstudy], vce(robust)
+eststo: reg r ser [pweight=prec], vce(robust)
+eststo: ivreg2 r (ser=invsqrtnobs), robust
+esttab using fat.rtf, replace se star(* 0.10 ** 0.05 *** 0.01)
+eststo clear
+
+eststo: reg r ser if good==1, vce(bootstrap, seed(22))
+eststo: xtreg r ser if good==1, fe vce(bootstrap, seed(22))
+eststo: reg r ser [pweight=invperstudy] if good==1, vce(robust)
+eststo: reg r ser [pweight=prec] if good==1, vce(robust)
+eststo: ivreg2 r (ser=invsqrtnobs) if good==1, robust
+esttab using fat2.rtf, replace se star(* 0.10 ** 0.05 *** 0.01)
+eststo clear
+
+
