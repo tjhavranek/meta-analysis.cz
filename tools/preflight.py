@@ -109,6 +109,11 @@ def deployed():
     url, want, rel = _witness()
     if url:
         print(f"witness for this commit: {rel}")
+    else:
+        # Real for a commit that only touches tools, the data pipeline or the workflow:
+        # nothing a reader fetches changed, so freshness cannot be observed from outside.
+        # Say it, rather than print a pass that looks like more than it is.
+        print("this commit changes no file the site serves, so only health can be checked")
     for attempt in range(1, 13):
         r = subprocess.run(f"{py} {SMOKE}", shell=True, cwd=ROOT,
                            capture_output=True, text=True)
