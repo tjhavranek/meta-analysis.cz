@@ -17,6 +17,15 @@ refuses to run if it finds a `run:` step it does not recognise, which is what tu
 
 --fast skips the two slow steps (the full-text page checker, about four minutes,
 and the data layer rebuild, about forty seconds). Never push on --fast alone.
+
+--deployed is the OTHER half of the lesson, and the half that actually cost a night.
+A push is not a deploy. When the workflow fails, the commit sits on main and the site
+keeps serving the previous revision, with nothing in the tree to say so. Run this after
+pushing; it waits for Pages and then asks the live domain, cache-busted, whether what
+is served matches what was pushed. Do not report work as live without it. Note that
+api.github.com is blocked from this environment, so the run's own status has to come
+from the GitHub MCP tool rather than curl -- silently, a poll of the API here returns
+403 forever and looks exactly like a run that never finishes.
 """
 import os, re, shutil, subprocess, sys, time
 
@@ -37,6 +46,7 @@ IGNORE = re.compile(
 PY312 = shutil.which("python3.12")
 
 SLOW = ("check_paper_pages", "rebuild.py")
+SMOKE = "tools/smoke_live.py"
 
 # Gates that should run here even if the workflow does not have them yet. Empty is the
 # healthy state: anything listed here is a gap in CI, not a local extra, and belongs in
@@ -66,7 +76,26 @@ def ci_commands():
     return cmds, unknown
 
 
+def deployed():
+    """Ask the live domain whether it is serving what was pushed."""
+    py = PY312 or "python3"
+    for attempt in range(1, 13):
+        r = subprocess.run(f"{py} {SMOKE}", shell=True, cwd=ROOT,
+                           capture_output=True, text=True)
+        if r.returncode == 0:
+            print((r.stdout or "").strip() or "live site matches what was pushed")
+            return 0
+        print(f"attempt {attempt}: not live yet ({(r.stdout or r.stderr).strip().splitlines()[-1:] })")
+        if attempt < 12:
+            time.sleep(45)
+    print("the live site still does not match after nine minutes.\n"
+          "Check the workflow run: a failed gate means the commit never deployed.")
+    return 1
+
+
 def main():
+    if "--deployed" in sys.argv:
+        return deployed()
     fast = "--fast" in sys.argv
     if not PY312:
         print("WARNING: python3.12 not found. CI runs 3.12 and komentare/build.py needs it;\n"
