@@ -38,7 +38,8 @@
   },
   "has_meta_description": true,
   "meta_keywords": "shareholder activism, price response, value created, meta-analysis, publication bias, model averaging",
-  "one_line": "Meta-analysis of 1,973 estimates from 67 studies finds shareholder activism raises stock prices by 0% to 1.5% after correcting for publication bias."
+  "one_line": "Meta-analysis of 1,973 estimates from 67 studies finds shareholder activism raises stock prices by 0% to 1.5% after correcting for publication bias.",
+  "version": "record"
  },
  {
   "project": "alphas",
@@ -80,7 +81,8 @@
   "has_meta_description": true,
   "meta_keywords": "Hedge funds, alpha, fees, meta-analysis, model uncertainty",
   "one_line": "Meta-analysis of 1,019 estimates from 74 studies identifies which factors explain the variation in hedge fund performance; net performance is near zero.",
-  "citation_title": "What Matters in Explaining the Variation in Hedge Fund Performance?"
+  "citation_title": "What Matters in Explaining the Variation in Hedge Fund Performance?",
+  "version": "record"
  },
  {
   "project": "armington",
@@ -126,7 +128,8 @@
   "has_meta_description": true,
   "meta_keywords": "Armington, trade elasticity, elasticity of substitution, Bayesian model averaging, meta-analysis, publication bias",
   "one_line": "Meta-analysis of 3,524 estimates finds the Armington trade elasticity is 2.5-5.1 after correcting for publication bias.",
-  "citation_title": "Estimating the Armington Elasticity: The Importance of Study Design and Publication Bias"
+  "citation_title": "Estimating the Armington Elasticity: The Importance of Study Design and Publication Bias",
+  "version": "record"
  },
  {
   "project": "beauty",
@@ -168,7 +171,8 @@
   "has_meta_description": true,
   "meta_keywords": "Beauty premium, productivity, meta-analysis, model uncertainty, publication bias",
   "one_line": "A meta-analysis of 1,159 estimates: the beauty premium in earnings and productivity is small once publication bias and cognitive ability are addressed.",
-  "citation_title": "Meta-Analysis of Field Studies on Beauty and Professional Success"
+  "citation_title": "Meta-Analysis of Field Studies on Beauty and Professional Success",
+  "version": "record"
  },
  {
   "project": "bma",
@@ -205,7 +209,8 @@
   "has_meta_description": true,
   "meta_keywords": "foreign direct investment, productivity, spillovers, meta-analysis, determinants",
   "one_line": "Meta-analysis of 1205 estimates finds horizontal FDI spillovers average zero, shaped by technology gap and ownership structure.",
-  "citation_title": "Determinants of Horizontal Spillovers from FDI: Evidence from a Large Meta-Analysis"
+  "citation_title": "Determinants of Horizontal Spillovers from FDI: Evidence from a Large Meta-Analysis",
+  "version": "record"
  },
  {
   "project": "border",
@@ -252,7 +257,8 @@
   },
   "has_meta_description": true,
   "meta_keywords": "border effect, international trade, gravity model, Bayesian model averaging, meta-analysis",
-  "one_line": "Meta-analysis of 1,271 estimates from 61 studies finds methodological choices shrink the true border effect on trade."
+  "one_line": "Meta-analysis of 1,271 estimates from 61 studies finds methodological choices shrink the true border effect on trade.",
+  "version": "record"
  },
  {
   "project": "class",
@@ -298,7 +304,8 @@
   "has_meta_description": true,
   "meta_keywords": "Class size, student learning, meta-analysis, publication bias, Bayesian model averaging",
   "one_line": "A meta-analysis of 2,819 estimates from 66 studies finds little publication bias and a negligible class size effect on student achievement.",
-  "citation_title": "Publication Bias and Model Uncertainty in Measuring the Effect of Class Size on Achievement"
+  "citation_title": "Publication Bias and Model Uncertainty in Measuring the Effect of Class Size on Achievement",
+  "version": "record"
  },
  {
   "project": "climate",
@@ -334,7 +341,8 @@
   "figure": null,
   "has_meta_description": true,
   "meta_keywords": "Climate sensitivity, publication selection bias, meta-analysis",
-  "one_line": "Meta-analysis of 48 estimates finds publication bias inflates climate sensitivity; corrected range is 1.4-2.3°C."
+  "one_line": "Meta-analysis of 48 estimates finds publication bias inflates climate sensitivity; corrected range is 1.4-2.3°C.",
+  "version": "record"
  },
  {
   "project": "competition",
@@ -377,7 +385,8 @@
   },
   "has_meta_description": true,
   "meta_keywords": "Bayesian model averaging, bank competition, financial stability, publication selection bias, meta-analysis",
-  "one_line": "A meta-analysis of 598 estimates from 31 studies finding little relationship between bank competition and financial stability."
+  "one_line": "A meta-analysis of 598 estimates from 31 studies finding little relationship between bank competition and financial stability.",
+  "version": "record"
  },
  {
   "project": "correlations",
@@ -406,7 +415,8 @@
   "figure": null,
   "has_meta_description": true,
   "meta_keywords": "correlation coefficients, meta-analysis, bias, small sample",
-  "one_line": "Simulations show UWLS+3 and PET-PEESE reduce small-sample and publication-selection bias in meta-analyses of correlations."
+  "one_line": "Simulations show UWLS+3 and PET-PEESE reduce small-sample and publication-selection bias in meta-analyses of correlations.",
+  "version": "record"
  },
  {
   "project": "discrate",
@@ -446,7 +456,8 @@
   },
   "has_meta_description": true,
   "meta_keywords": "discount rate, experiments, Bayesian model averaging, meta-analysis, publication bias",
-  "one_line": "Meta-analysis of experimental discount-rate estimates finds publication bias and a corrected mean annual rate of 0.33."
+  "one_line": "Meta-analysis of experimental discount-rate estimates finds publication bias and a corrected mean annual rate of 0.33.",
+  "version": "record"
  },
  {
   "project": "dst",
@@ -490,7 +501,8 @@
   },
   "has_meta_description": true,
   "meta_keywords": "Daylight saving time, energy savings, Bayesian model averaging, meta-analysis, publication bias",
-  "one_line": "A meta-analysis of 162 estimates from 44 studies finds daylight saving time saves essentially no electricity: 0.01% after correction, against a 0.34% simple average of reported estimates."
+  "one_line": "A meta-analysis of 162 estimates from 44 studies finds daylight saving time saves essentially no electricity: 0.01% after correction, against a 0.34% simple average of reported estimates.",
+  "version": "record"
  },
  {
   "project": "education",
@@ -535,7 +547,8 @@
   "has_meta_description": true,
   "meta_keywords": "demand for higher education, tuition, enrollment, model averaging, Bayesian model averaging, meta-analysis, publication bias",
   "one_line": "Meta-analysis of 443 estimates finds the tuition-enrollment elasticity is near zero once publication bias is corrected.",
-  "citation_title": "Tuition Fees and University Enrolment: A Meta-Regression Analysis"
+  "citation_title": "Tuition Fees and University Enrolment: A Meta-Regression Analysis",
+  "version": "record"
  },
  {
   "project": "eis",
@@ -578,7 +591,8 @@
   "has_meta_description": true,
   "meta_keywords": "Elasticity of intertemporal substitution, coefficient of relative risk aversion, consumption, meta-analysis, publication bias",
   "one_line": "Meta-analysis of 2,735 EIS estimates finds strong selective reporting inflates the elasticity of intertemporal substitution.",
-  "citation_title": "Measuring Intertemporal Substitution: The Importance of Method Choices and Selective Reporting"
+  "citation_title": "Measuring Intertemporal Substitution: The Importance of Method Choices and Selective Reporting",
+  "version": "record"
  },
  {
   "project": "euro",
@@ -606,7 +620,8 @@
   "has_meta_description": true,
   "meta_keywords": "Euro, trade, meta-analysis, publication bias",
   "one_line": "Meta-analysis finds the euro's trade-promoting effect is insignificant once publication bias is corrected for.",
-  "citation_title": "Rose Effect and the Euro: Is the Magic Gone?"
+  "citation_title": "Rose Effect and the Euro: Is the Magic Gone?",
+  "version": "record"
  },
  {
   "project": "excess_sensitivity",
@@ -647,7 +662,8 @@
   "has_meta_description": true,
   "meta_keywords": "Excess sensitivity, consumption, income, Euler equation, meta-analysis, publication bias",
   "one_line": "Meta-analysis of 144 studies finds little excess sensitivity of consumption once micro data, publication bias, and liquidity constraints are addressed.",
-  "citation_title": "Do Consumers Really Follow a Rule of Thumb? Three Thousand Estimates from 144 Studies Say 'Probably Not'"
+  "citation_title": "Do Consumers Really Follow a Rule of Thumb? Three Thousand Estimates from 144 Studies Say 'Probably Not'",
+  "version": "record"
  },
  {
   "project": "exercise",
@@ -683,7 +699,8 @@
   },
   "has_meta_description": true,
   "meta_keywords": "Cognition, exercise, meta-analysis, model uncertainty, publication bias",
-  "one_line": "Meta-meta-analysis of 2,239 estimates finds publication-bias-adjusted exercise effects on cognition are smaller than commonly reported."
+  "one_line": "Meta-meta-analysis of 2,239 estimates finds publication-bias-adjusted exercise effects on cognition are smaller than commonly reported.",
+  "version": "record"
  },
  {
   "project": "fdi",
@@ -712,7 +729,8 @@
   "figure": null,
   "has_meta_description": true,
   "meta_keywords": "FDI, productivity spillovers, Czech Republic, Bayesian model averaging, meta-analysis, publication bias",
-  "one_line": "Meta-analysis of 332 estimates finds FDI spillovers raise Czech domestic firm productivity, larger for joint ventures."
+  "one_line": "Meta-analysis of 332 estimates finds FDI spillovers raise Czech domestic firm productivity, larger for joint ventures.",
+  "version": "record"
  },
  {
   "project": "finance_growth",
@@ -745,7 +763,8 @@
   "figure": null,
   "has_meta_description": true,
   "meta_keywords": "finance, development, growth, meta-analysis",
-  "one_line": "A meta-analysis of 1334 estimates from 67 studies finds financial development has a positive, heterogeneous effect on economic growth."
+  "one_line": "A meta-analysis of 1334 estimates from 67 studies finds financial development has a positive, heterogeneous effect on economic growth.",
+  "version": "record"
  },
  {
   "project": "forward",
@@ -786,7 +805,8 @@
   },
   "has_meta_description": true,
   "meta_keywords": "forward premium, forward rate unbiasedness, forward discount, Bayesian model averaging, meta-analysis, publication bias",
-  "one_line": "Meta-analysis of 3,643 estimates from 91 studies finds forward rate unbiasedness holds better than commonly thought once biases are corrected."
+  "one_line": "Meta-analysis of 3,643 estimates from 91 studies finds forward rate unbiasedness holds better than commonly thought once biases are corrected.",
+  "version": "record"
  },
  {
   "project": "frisch",
@@ -832,7 +852,8 @@
   "has_meta_description": true,
   "meta_keywords": "Frisch elasticity, labor supply, extensive margin, meta-analysis, publication bias, Bayesian model averaging",
   "one_line": "Meta-analysis of over 700 estimates finds publication bias inflates the Frisch labor supply elasticity, with a corrected total hours elasticity near 0.25.",
-  "citation_title": "Intertemporal Substitution in Labor Supply: A Meta-Analysis"
+  "citation_title": "Intertemporal Substitution in Labor Supply: A Meta-Analysis",
+  "version": "record"
  },
  {
   "project": "gasoline",
@@ -861,7 +882,8 @@
   "has_meta_description": true,
   "meta_keywords": "Gasoline demand, income elasticity, meta-analysis, publication bias",
   "one_line": "Meta-regression corrects for publication bias, finding gasoline demand income elasticity of 0.1 short run and 0.23 long run.",
-  "citation_title": "Income Elasticity of Gasoline Demand: A Meta-Analysis"
+  "citation_title": "Income Elasticity of Gasoline Demand: A Meta-Analysis",
+  "version": "record"
  },
  {
   "project": "gasoline_price",
@@ -891,7 +913,8 @@
   "has_meta_description": true,
   "meta_keywords": "Gasoline demand, price elasticity, meta-analysis, publication bias",
   "one_line": "Meta-analysis shows published gasoline demand elasticities are exaggerated twofold due to publication selection bias.",
-  "citation_title": "Demand for Gasoline is More Price-Inelastic than Commonly Thought"
+  "citation_title": "Demand for Gasoline is More Price-Inelastic than Commonly Thought",
+  "version": "record"
  },
  {
   "project": "guidelines",
@@ -929,7 +952,8 @@
   "figure": null,
   "has_meta_description": true,
   "meta_keywords": "meta-analysis, publication bias, p-hacking, artificial intelligence, model uncertainty",
-  "one_line": "Step-by-step guidelines for modern meta-analysis in social sciences, covering publication bias, p-hacking, heterogeneity, and AI-assisted workflows."
+  "one_line": "Step-by-step guidelines for modern meta-analysis in social sciences, covering publication bias, p-hacking, heterogeneity, and AI-assisted workflows.",
+  "version": "record"
  },
  {
   "project": "habits",
@@ -969,7 +993,8 @@
   },
   "has_meta_description": true,
   "meta_keywords": "Bayesian model averaging, habit formation, habit persistence, consumption, publication selection bias, meta-analysis",
-  "one_line": "Meta-analysis of 597 estimates finds habit formation averages 0.4, with macro data yielding larger estimates than micro data."
+  "one_line": "Meta-analysis of 597 estimates finds habit formation averages 0.4, with macro data yielding larger estimates than micro data.",
+  "version": "record"
  },
  {
   "project": "hedge",
@@ -1007,7 +1032,8 @@
   "has_meta_description": true,
   "meta_keywords": "hedge funds, meta-analysis, publication bias",
   "one_line": "Quantitative survey of 1,019 hedge fund alpha estimates from 74 studies finds little evidence of publication selection bias.",
-  "citation_title": "Is research on hedge fund performance published selectively? A quantitative survey"
+  "citation_title": "Is research on hedge fund performance published selectively? A quantitative survey",
+  "version": "record"
  },
  {
   "project": "house_prices",
@@ -1051,7 +1077,8 @@
   },
   "has_meta_description": true,
   "meta_keywords": "Interest rates, house prices, monetary policy transmission, meta-analysis, publication bias, Bayesian model averaging",
-  "one_line": "A meta-analysis of 1,555 estimates from 37 studies across 45 countries finds publication bias exaggerates the effect of interest rates on house prices."
+  "one_line": "A meta-analysis of 1,555 estimates from 37 studies across 45 countries finds publication bias exaggerates the effect of interest rates on house prices.",
+  "version": "record"
  },
  {
   "project": "incentives",
@@ -1098,7 +1125,8 @@
   },
   "has_meta_description": true,
   "meta_keywords": "Incentives, experiments, meta-analysis, model uncertainty, publication bias",
-  "one_line": "Meta-analysis of 2,193 estimates finds financial incentives have near-zero corrected effect on performance in most field settings."
+  "one_line": "Meta-analysis of 2,193 estimates finds financial incentives have near-zero corrected effect on performance in most field settings.",
+  "version": "record"
  },
  {
   "project": "inflation",
@@ -1144,7 +1172,8 @@
   },
   "has_meta_description": true,
   "meta_keywords": "Optimal inflation, meta-analysis, New Keynesian models, publication bias, Bayesian model averaging, measurement error, large language models",
-  "one_line": "Meta-analysis of 777 estimates from 116 studies finds an optimal long-run inflation rate near 0.6% per year, below common two-percent central-bank targets."
+  "one_line": "Meta-analysis of 777 estimates from 116 studies finds an optimal long-run inflation rate near 0.6% per year, below common two-percent central-bank targets.",
+  "version": "record"
  },
  {
   "project": "lags",
@@ -1184,7 +1213,8 @@
   "figure": null,
   "has_meta_description": true,
   "meta_keywords": "Monetary policy transmission, Meta-analysis, Vector autoregressions",
-  "one_line": "A meta-analysis of 67 studies finds monetary policy transmission lags average 29 months, longer in developed than transition economies."
+  "one_line": "A meta-analysis of 67 studies finds monetary policy transmission lags average 29 months, longer in developed than transition economies.",
+  "version": "record"
  },
  {
   "project": "learning",
@@ -1233,7 +1263,8 @@
   "has_meta_description": true,
   "meta_keywords": "COVID-19, learning loss, pandemic, meta-analysis, publication bias, p-hacking, RoBMA, MAIVE, education",
   "one_line": "Meta-analysis of COVID-19 learning loss: bias-corrected RoBMA and MAIVE estimates converge on about -0.12 SD, roughly 30% of a school year.",
-  "citation_title": "Publication Bias and P-Hacking in the Effect of COVID-19 on Learning"
+  "citation_title": "Publication Bias and P-Hacking in the Effect of COVID-19 on Learning",
+  "version": "record"
  },
  {
   "project": "maive",
@@ -1299,7 +1330,8 @@
   "has_meta_description": true,
   "meta_keywords": "Publication bias, p-hacking, selection models, meta-regression, funnel plot, inverse-variance weighting",
   "one_line": "MAIVE, an instrumental-variable estimator that corrects meta-analysis for spurious precision when standard errors are estimated and can be p-hacked.",
-  "citation_title": "Spurious Precision in Meta-Analysis of Observational Research"
+  "citation_title": "Spurious Precision in Meta-Analysis of Observational Research",
+  "version": "record"
  },
  {
   "project": "migrant",
@@ -1332,7 +1364,8 @@
   },
   "has_meta_description": true,
   "meta_keywords": "labor, wages, migrants, meta-analysis, model uncertainty, publication bias",
-  "one_line": "Meta-analysis of 1,091 estimates finds native-immigrant labor substitution elasticity of about 17 under best practice, against an uncorrected mean of 13."
+  "one_line": "Meta-analysis of 1,091 estimates finds native-immigrant labor substitution elasticity of about 17 under best practice, against an uncorrected mean of 13.",
+  "version": "record"
  },
  {
   "project": "pcc",
@@ -1365,7 +1398,8 @@
   "figure": null,
   "has_meta_description": true,
   "meta_keywords": "partial correlation coefficients, meta-analysis, bias, small sample",
-  "one_line": "Shows all partial-correlation meta-analyses are biased and proposes UWLS+3 to correct small-sample bias."
+  "one_line": "Shows all partial-correlation meta-analyses are biased and proposes UWLS+3 to correct small-sample bias.",
+  "version": "record"
  },
  {
   "project": "price_puzzle",
@@ -1410,7 +1444,8 @@
   "figure": null,
   "has_meta_description": true,
   "meta_keywords": "Monetary policy transmission, Price puzzle, Meta-analysis, Publication selection bias",
-  "one_line": "Meta-analysis of 1,000 VAR estimates shows the price puzzle stems from model misspecification, not a true price effect."
+  "one_line": "Meta-analysis of 1,000 VAR estimates shows the price puzzle stems from model misspecification, not a true price effect.",
+  "version": "record"
  },
  {
   "project": "reforms",
@@ -1447,7 +1482,8 @@
   "has_meta_description": true,
   "meta_keywords": "structural reforms, economic growth, transition economies, meta-analysis, publication bias",
   "one_line": "Meta-analysis of 60 studies finds structural reforms in transition countries carry short-run costs but strong long-run growth benefits.",
-  "citation_title": "Structural Reforms and Growth in Transition: A Meta-Analysis"
+  "citation_title": "Structural Reforms and Growth in Transition: A Meta-Analysis",
+  "version": "record"
  },
  {
   "project": "remittances",
@@ -1483,7 +1519,8 @@
   },
   "has_meta_description": true,
   "meta_keywords": "remittances, economic growth, Bayesian model averaging, meta-analysis, publication bias",
-  "one_line": "Meta-analysis of 538 estimates finds remittances have a small positive, publication-bias-corrected effect on growth, stronger in Asia than Africa."
+  "one_line": "Meta-analysis of 538 estimates finds remittances have a small positive, publication-bias-corrected effect on growth, stronger in Asia than Africa.",
+  "version": "record"
  },
  {
   "project": "resource_curse",
@@ -1519,7 +1556,8 @@
   },
   "has_meta_description": true,
   "meta_keywords": "Natural resources, economic growth, institutions, meta-analysis",
-  "one_line": "Meta-analysis of 605 estimates finds weak support for the resource curse once publication bias and methods are addressed."
+  "one_line": "Meta-analysis of 605 estimates finds weak support for the resource curse once publication bias and methods are addressed.",
+  "version": "record"
  },
  {
   "project": "risk",
@@ -1563,7 +1601,8 @@
   },
   "has_meta_description": true,
   "meta_keywords": "Euler equation, risk aversion, Epstein-Zin preferences, meta-analysis, publication bias, model uncertainty",
-  "one_line": "A meta-analysis of 1,021 estimates from 92 studies finds publication-bias-corrected relative risk aversion near 1 in economics and 2-7 in finance."
+  "one_line": "A meta-analysis of 1,021 estimates from 92 studies finds publication-bias-corrected relative risk aversion near 1 in economics and 2-7 in finance.",
+  "version": "record"
  },
  {
   "project": "scc",
@@ -1608,7 +1647,8 @@
   },
   "has_meta_description": true,
   "meta_keywords": "Social cost of carbon, climate policy, global warming, integrated assessment models, meta-analysis, publication bias",
-  "one_line": "Meta-analysis of 809 SCC estimates from 101 studies finds selective reporting creates an upward bias, especially in peer-reviewed journals."
+  "one_line": "Meta-analysis of 809 SCC estimates from 101 studies finds selective reporting creates an upward bias, especially in peer-reviewed journals.",
+  "version": "record"
  },
  {
   "project": "sigma",
@@ -1657,7 +1697,8 @@
   },
   "has_meta_description": true,
   "meta_keywords": "capital, labor, elasticity of substitution, Bayesian model averaging, meta-analysis, publication bias",
-  "one_line": "Meta-analysis of 3,186 estimates from 121 studies finds the capital-labor elasticity of substitution is 0.3, far below the literature's average of 0.9."
+  "one_line": "Meta-analysis of 3,186 estimates from 121 studies finds the capital-labor elasticity of substitution is 0.3, far below the literature's average of 0.9.",
+  "version": "record"
  },
  {
   "project": "size",
@@ -1698,7 +1739,8 @@
   "has_meta_description": true,
   "meta_keywords": "size, stock, asset pricing, meta-analysis, publication bias",
   "one_line": "First meta-analysis of the size premium finds strong publication bias and a corrected effect of 1.72% in annual returns.",
-  "citation_title": "Firm Size and Stock Returns: A Quantitative Survey"
+  "citation_title": "Firm Size and Stock Returns: A Quantitative Survey",
+  "version": "record"
  },
  {
   "project": "skill",
@@ -1743,7 +1785,8 @@
   },
   "has_meta_description": true,
   "meta_keywords": "elasticity of substitution, skilled labor, skill premium, Bayesian model averaging, meta-analysis, publication bias",
-  "one_line": "Meta-analysis finds publication bias dominates in skill substitution estimates, implying a mean elasticity of 4."
+  "one_line": "Meta-analysis finds publication bias dominates in skill substitution estimates, implying a mean elasticity of 4.",
+  "version": "record"
  },
  {
   "project": "spillovers",
@@ -1780,7 +1823,8 @@
   "has_meta_description": true,
   "meta_keywords": "foreign direct investment, productivity, spillovers, meta-analysis, publication selection bias",
   "one_line": "A meta-analysis of 3,626 estimates finds vertical FDI spillovers to suppliers are economically significant but spillovers to buyers small.",
-  "citation_title": "Estimating Vertical Spillovers from FDI: Why Results Vary and What the True Effect Is"
+  "citation_title": "Estimating Vertical Spillovers from FDI: Why Results Vary and What the True Effect Is",
+  "version": "record"
  },
  {
   "project": "students",
@@ -1824,7 +1868,8 @@
   },
   "has_meta_description": true,
   "meta_keywords": "Student employment, educational outcomes, meta-analysis, publication bias, Bayesian model averaging",
-  "one_line": "Meta-analysis of 861 estimates finds student employment has a negative but economically small effect on educational outcomes."
+  "one_line": "Meta-analysis of 861 estimates finds student employment has a negative but economically small effect on educational outcomes.",
+  "version": "record"
  },
  {
   "project": "substitution",
@@ -1870,7 +1915,8 @@
   "has_meta_description": true,
   "meta_keywords": "Elasticity of intertemporal substitution, coefficient of relative risk aversion, consumption, meta-analysis, Bayesian model averaging",
   "one_line": "Meta-analysis of 2,735 estimates across 104 countries links intertemporal substitution to income and stock market participation.",
-  "citation_title": "Cross-Country Heterogeneity in Intertemporal Substitution"
+  "citation_title": "Cross-Country Heterogeneity in Intertemporal Substitution",
+  "version": "record"
  },
  {
   "project": "water",
@@ -1919,7 +1965,8 @@
   "has_meta_description": true,
   "meta_keywords": "water demand, income elasticity, Bayesian model averaging, meta-analysis, publication bias",
   "one_line": "A meta-analysis finds publication and endogeneity biases inflate reported income elasticities of water demand, with a true elasticity near 0.15.",
-  "citation_title": "Measuring the Income Elasticity of Water Demand: The Importance of Publication and Endogeneity Biases"
+  "citation_title": "Measuring the Income Elasticity of Water Demand: The Importance of Publication and Endogeneity Biases",
+  "version": "record"
  },
  {
   "project": "esg",
@@ -1939,7 +1986,8 @@
   "figure": null,
   "has_meta_description": false,
   "meta_keywords": null,
-  "one_line": "Meta-analysis of 533 estimates from 106 studies on whether female board directors raise corporate ESG ratings."
+  "one_line": "Meta-analysis of 533 estimates from 106 studies on whether female board directors raise corporate ESG ratings.",
+  "version": "record"
  },
  {
   "project": "electricity",
@@ -1962,7 +2010,8 @@
   "has_meta_description": false,
   "meta_keywords": null,
   "one_line": "Meta-analysis of the price elasticity of electricity demand: no increase in price responsiveness despite ninety years of technological change.",
-  "citation_title": "Electricity demand has not become more price-responsive despite ninety years of technological change"
+  "citation_title": "Electricity demand has not become more price-responsive despite ninety years of technological change",
+  "version": "record"
  },
  {
   "project": "debate",
@@ -1982,7 +2031,8 @@
   "has_meta_description": false,
   "meta_keywords": null,
   "one_line": "Preregistered evaluation of whether multi-agent AI debate improves the quality of AI-generated feedback on research papers.",
-  "dataset_doi": "10.5281/zenodo.21273528"
+  "dataset_doi": "10.5281/zenodo.21273528",
+  "version": "record"
  },
  {
   "project": "trust",
@@ -2016,7 +2066,8 @@
   },
   "has_meta_description": true,
   "meta_keywords": "size premium, firm size, stock returns, trust, rule of law, institutions, meta-analysis, Bayesian model averaging, asset pricing",
-  "one_line": "Meta-analysis of 1,613 reported size-premium estimates from 105 studies on how generalized trust and rule of law explain the disagreement across markets."
+  "one_line": "Meta-analysis of 1,613 reported size-premium estimates from 105 studies on how generalized trust and rule of law explain the disagreement across markets.",
+  "version": "record"
  },
  {
   "project": "outliers",
@@ -2051,7 +2102,8 @@
   "has_meta_description": true,
   "meta_keywords": "outliers, influence diagnostics, DFBETAS, winsorizing, studentized residuals, meta-analysis, publication bias, robustness, pre-registration, behavioral science",
   "one_line": "Pre-registered analysis of 358 behavioral science meta-analyses: alternative outlier and influence handling treatments barely move the mean but reverse statistical significance in 11.5% of cases.",
-  "dataset_doi": "10.5281/zenodo.21216506"
+  "dataset_doi": "10.5281/zenodo.21216506",
+  "version": "record"
  },
  {
   "project": "pcc_survey",
@@ -2082,7 +2134,8 @@
   "figure": null,
   "has_meta_description": true,
   "meta_keywords": "partial correlation coefficient, PCC, meta-analysis, UWLS, Hunter-Schmidt, random effects, Fisher's z, publication selection bias, small-sample bias, research synthesis",
-  "one_line": "A survey of 172 economics meta-analyses covering 63,730 partial correlations from 6,191 papers: small-sample biases are negligible in practice, Fisher's z reduces neither small-sample nor publication selection bias, and UWLS and Hunter-Schmidt give smaller mean estimates than random effects."
+  "one_line": "A survey of 172 economics meta-analyses covering 63,730 partial correlations from 6,191 papers: small-sample biases are negligible in practice, Fisher's z reduces neither small-sample nor publication selection bias, and UWLS and Hunter-Schmidt give smaller mean estimates than random effects.",
+  "version": "record"
  },
  {
   "project": "conventional_wisdom",
@@ -2114,7 +2167,8 @@
   "figure": null,
   "has_meta_description": true,
   "meta_keywords": "conventional wisdom, meta-analysis, systematic review, publication bias, research revision, effect size, economics",
-  "one_line": "A systematic review of influential economics meta-analyses against the conventional wisdom they tested: after correcting for observable biases, effects are typically much closer to zero and sometimes switch sign, with a relative reduction of 45-60%."
+  "one_line": "A systematic review of influential economics meta-analyses against the conventional wisdom they tested: after correcting for observable biases, effects are typically much closer to zero and sometimes switch sign, with a relative reduction of 45-60%.",
+  "version": "record"
  },
  {
   "project": "reporting",
@@ -2141,7 +2195,8 @@
   "figure": null,
   "has_meta_description": true,
   "meta_keywords": "meta-analysis, reporting guidelines, publication bias, meta-regression, MAER-Net",
-  "one_line": "The MAER-Net reporting guidelines for meta-analysis in economics: what every meta-analysis should report, from search and coding to publication bias and replication."
+  "one_line": "The MAER-Net reporting guidelines for meta-analysis in economics: what every meta-analysis should report, from search and coding to publication bias and replication.",
+  "version": "record"
  },
  {
   "project": "cbequity",
@@ -2171,7 +2226,8 @@
     "label": "Code",
     "href": "code.txt"
    }
-  ]
+  ],
+  "version": "record"
  },
  {
   "project": "contagion",
@@ -2301,7 +2357,8 @@
     "label": "Paper",
     "href": "elb.pdf"
    }
-  ]
+  ],
+  "version": "record"
  },
  {
   "project": "leading_indicators",
@@ -2331,7 +2388,8 @@
     "label": "Crisis database",
     "href": "/ews/crises_database.xls"
    }
-  ]
+  ],
+  "version": "record"
  },
  {
   "project": "spillovers_bias",
@@ -2361,7 +2419,8 @@
     "label": "Code",
     "href": "Stata_program.do"
    }
-  ]
+  ],
+  "version": "record"
  },
  {
   "project": "crisis_jfs",
@@ -2401,7 +2460,8 @@
    "title": "Banking, debt, and currency crises: Early warning indicators for developed countries",
    "series": "ECB Working Paper Series No. 1485",
    "year": 2012
-  }
+  },
+  "version": "record"
  },
  {
   "project": "guai",
@@ -2434,7 +2494,8 @@
   "has_meta_description": true,
   "meta_keywords": "artificial intelligence, meta-analysis, AI disclosure, research transparency, MAER-Net",
   "one_line": "The MAER-Net principles for using AI in a meta-analysis: humans lead, humans are accountable, humans audit the AI's decisions, and any substantive AI use is disclosed.",
-  "home_label": "Guidelines home"
+  "home_label": "Guidelines home",
+  "version": "record"
  },
  {
   "project": "reporting_ai",
@@ -2468,6 +2529,7 @@
   "has_meta_description": true,
   "meta_keywords": "reporting guidelines, meta-analysis, artificial intelligence, AI disclosure, MAER-Net",
   "one_line": "The MAER-Net reporting checklist for meta-analysis in economics, updated for AI: what to report at every stage, and what to disclose when an AI did part of the work.",
-  "earlier_version": "reporting"
+  "earlier_version": "reporting",
+  "version": "record"
  }
 ]

@@ -35,6 +35,28 @@ def sections(path):
     return out
 
 
+VERSIONS = {"record", "accepted_manuscript", "working_paper", "corrected_manuscript"}
+
+
+def _version(proj, meta):
+    """Which version of itself this page serves. Declared, never assumed.
+
+    This used to be `meta.get("version") or "record"`, so an entry that said nothing was
+    reported to every API consumer as the version of record. One of them was not: the page
+    had been corrected away from the PDF it links, its entry left `version` unset, and the
+    API asserted the opposite of what the page's own visible note said. A supplement has no
+    version of its own and is exempt; everything in papers.json must declare one.
+    """
+    v = meta.get("version")
+    if v in VERSIONS:
+        return v
+    if v is None and meta.get("parent_label"):
+        return "record"
+    raise SystemExit(f"{proj}: version is {v!r}; papers.json must declare one of "
+                     f"{sorted(VERSIONS)}. A missing value used to mean 'record', which "
+                     f"is an assumption this file is no longer allowed to make.")
+
+
 def build():
     papers = {p["project"]: p for p in json.load(
         open(os.path.join(ROOT, "tools", "papers.json"), encoding="utf-8"))}
@@ -62,7 +84,7 @@ def build():
             "document_type": "paper" if proj in paper_projects else "supplement",
             # Which version of itself the full text is. The HTML says so in visible text and
             # in its citation tags; an API consumer was left to assume the version of record.
-            "version": meta.get("version") or "record",
+            "version": _version(proj, meta),
             # ... and the sentence the page shows a reader when "record" or "accepted
             # manuscript" is true but not the whole truth. It reached the HTML and
             # llms-full.txt and stopped there, so the one caveat that tells a consumer the
