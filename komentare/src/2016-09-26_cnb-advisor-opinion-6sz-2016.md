@@ -101,14 +101,19 @@ In other words, if the first quarter has one working day more than the average w
 ## References
 
 - Dvorak, M., Komarek, L., Komarkova, Z., Ters, K., and Urban, Y. (2016): "Longer Term Yield Decomposition: An Analysis of the Czech Government Yield Curve," ongoing CNB research project C7/16.
+
 - Fama, E. (1984): "Forward and Spot Exchange Rates," Journal of Monetary Economics 14, 319-38.
+
 - Havranek, T., Sokolova, A. (2016): "Do Consumers Really Follow a Rule of Thumb? Three Thousand Estimates from 130 Studies Say 'Probably Not'," CNB working paper, not yet refereed.
+
 - Holston, K., Laubach, T., and Williams, J. (2016): "Measuring the Natural Rate of Interest: International Trends and Determinants," FRBSF Working Paper 2016-11.
-- Krippner, L. (2015): "A Comment on Wu and Xia and the Case for Two-Factor Shadow Short Rates," CAMA
-- Working Paper 48/2015.
+
+- Krippner, L. (2015): "A Comment on Wu and Xia and the Case for Two-Factor Shadow Short Rates," CAMA Working Paper 48/2015.
+
 - Nelson, C. and Siegel, A. (1987): "Parsimonious modelling of yield curves," Journal of Business 60(4), 473-489.
-- Wu, J. and Xia, F. (2016): "Measuring the Macroeconomic Impact of Monetary Policy at the Zero Lower Bound,"
-- Journal of Money, Credit, and Banking, 48(2-3), 253-291.
+
+- Wu, J. and Xia, F. (2016): "Measuring the Macroeconomic Impact of Monetary Policy at the Zero Lower Bound," Journal of Money, Credit, and Banking, 48(2-3), 253-291.
+
 
 ## Notes
 

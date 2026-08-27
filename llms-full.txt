@@ -36606,9 +36606,7 @@ We are grateful to Joze Damijan, Ziliang L. Deng, Adam Gersl, Galina Hale, Chida
 
 Aitken, B.J. and Harrison, A.E. (1999) Do domestic firms benefit from foreign direct investment? Evidence from Venezuela. American Economic Review, 89(3), pp. 605–618.
 
-Atallah Murra, S. (2006) Revaluando la transmision de spillovers de la IED: Un estudio de productividad para Colombia.
-
-Revista Desarrollo y Sociedad, 57(1), pp. 163–213.
+Atallah Murra, S. (2006) Revaluando la transmision de spillovers de la IED: Un estudio de productividad para Colombia. Revista Desarrollo y Sociedad, 57(1), pp. 163–213.
 
 Barrios, S., Görg, H. and Strobl, E. (2009) Spillovers through backward linkages from multinationals: measurement matters! IZA Discussion Papers, 4477 (Institute for the Study of Labor).
 
@@ -36624,9 +36622,7 @@ Blalock, G. and Gertler, P.J. (2008) Welfare gains from foreign direct investmen
 
 Blalock, G. and Simon, D.H. (2009) Do all firms benefit equally from downstream FDI? The moderating effect of local suppliers’ capabilities on productivity gains. Journal of International Business Studies, 40(7), pp. 1095–1112.
 
-Blomstrom, M. and Kokko, A. (1998) Multinational corporations and spillovers. Journal of Economic Surveys, 12(3), pp.
-
-247–77.
+Blomstrom, M. and Kokko, A. (1998) Multinational corporations and spillovers. Journal of Economic Surveys, 12(3), pp. 247–77.
 
 Blyde, J., Kugler, M. and Stein, E. (2004) Exporting vs. outsourcing by MNC subsidiaries: which determines FDI spillovers? Discussion Paper Series in Economics and Econometrics, 0411 (Economics Division, School of Social Sciences, University of Southampton).
 
@@ -36636,7 +36632,7 @@ Card, D. and Krueger, A.B. (1995) Time-series minimum-wage studies: a meta-analy
 
 Chang, S.J., Chung, J. and Xu, D. (2007) FDI and technology spillovers in China. CEI Working Paper Series, 2007–7 (Center for Economic Institutions, Institute of Economic Research, Hitotsubashi University).
 
-Crespo, N., Fontoura, M.P. and Proenc¸ a, I. (2009) FDI spillovers at regional level: evidence from Portugal. Papers in Regional Science, 88(3), pp. 591–607.
+Crespo, N., Fontoura, M.P. and Proença, I. (2009) FDI spillovers at regional level: evidence from Portugal. Papers in Regional Science, 88(3), pp. 591–607.
 
 Damijan, J.P., Knell, M., Majcen, B. and Rojec, M. (2003) Technology transfer through FDI in top 10 transition countries: how important are direct effects, horizontal and vertical spillovers? William Davidson Institute Working Papers Series, 549 (William Davidson Institute at the University of Michigan, Stephen M. Ross Business School).
 
@@ -36648,109 +36644,61 @@ Doucouliagos, H. and Stanley, T.D. (2009) Publication selection bias in minimum-
 
 Doucouliagos, H. and Stanley, T.D. (2012) Are all economic facts greatly exaggerated? Theory competition and selectivity. Journal of Economic Surveys (forthcoming).
 
-Egger, M., Smith, G.D., Scheider, M. and Minder, C. (1997) Bias in meta-analysis detected by a simple, graphical test.
-
-British Medical Journal, 316, pp. 320–246.
+Egger, M., Smith, G.D., Scheider, M. and Minder, C. (1997) Bias in meta-analysis detected by a simple, graphical test. British Medical Journal, 316, pp. 320–246.
 
 Feld, L.P. and Heckemeyer, J.H. (2011) FDI and taxation: a meta-study. Journal of Economic Surveys, 25(2), pp. 233–272.
 
-Fernandes, A.M. and Paunov, C. (2008) Foreign direct investment in services and manufacturing productivity growth:
+Fernandes, A.M. and Paunov, C. (2008) Foreign direct investment in services and manufacturing productivity growth: evidence for Chile. Policy Research Working Paper Series, 4730 (The World Bank).
 
-evidence for Chile. Policy Research Working Paper Series, 4730 (The World Bank).
+Gersl, A. (2008) Productivity, export performance, and financing of the Czech corporate sector: the effects of foreign direct investment. Czech Journal of Economics and Finance, 58(05-06), pp. 232–247.
 
-Gersl, A. (2008) Productivity, export performance, and financing of the Czech corporate sector: the effects of foreign
+Gersl, A., Rubene, I. and Zumer, T. (2007) Foreign direct investment and productivity spillovers: updated evidence from central and eastern Europe. Czech National Bank Working Papers, 2007/08 (Czech National Bank).
 
-direct investment. Czech Journal of Economics and Finance, 58(05-06), pp. 232–247.
+Girma, S. and Wakelin, K. (2007) Local productivity spillovers from foreign direct investment in the UK electronics industry. Regional Science and Urban Economics, 37(3), pp. 399–412.
 
-Gersl, A., Rubene, I. and Zumer, T. (2007) Foreign direct investment and productivity spillovers: updated evidence from
+Girma, S. and Gong, Y. (2008) FDI, linkages and the efficiency of state-owned enterprises in China. Journal of Development Studies, 44(5), pp. 728–749.
 
-central and eastern Europe. Czech National Bank Working Papers, 2007/08 (Czech National Bank).
+Girma, S., Görg, H. and Pisu, M. (2008) Exporting, linkages and productivity spillovers from foreign direct investment. Canadian Journal of Economics, 41(1), pp. 320–340.
 
-Girma, S. and Wakelin, K. (2007) Local productivity spillovers from foreign direct investment in the UK electronics
+Goldfarb, R.S. (1995) The economist–as–audience needs a methodology of plausible inference. Journal of Economic Methodology, 2(2), pp. 201–222.
 
-industry. Regional Science and Urban Economics, 37(3), pp. 399–412.
+Gonçalves, J. (2005) Empresas estrangeiras e transbordamentos de produtividade na ind’ustria Brasileira: 1997–2000. BNDES (Rio de Janeiro).
 
-Girma, S. and Gong, Y. (2008) FDI, linkages and the efficiency of state-owned enterprises in China. Journal of
+Görg, H. and Strobl, E. (2001) Multinational companies and productivity spillovers: a meta-analysis. The Economic Journal, 111(475), pp. F723–39
 
-Development Studies, 44(5), pp. 728–749.
+Görg, H. and Greenaway, D. (2004) Much ado about nothing? Do domestic firms really benefit from foreign direct investment? World Bank Research Observer, 19(2), pp. 171–197.
 
-Girma, S., Görg, H. and Pisu, M. (2008) Exporting, linkages and productivity spillovers from foreign direct investment.
-
-Canadian Journal of Economics, 41(1), pp. 320–340.
-
-Goldfarb, R.S. (1995) The economist–as–audience needs a methodology of plausible inference. Journal of Economic
-
-Methodology, 2(2), pp. 201–222.
-
-Gonçalves, J. (2005) Empresas estrangeiras e transbordamentos de produtividade na ind’ustria Brasileira: 1997–2000.
-
-BNDES (Rio de Janeiro).
-
-Görg, H. and Strobl, E. (2001) Multinational companies and productivity spillovers: a meta-analysis. The Economic
-
-Journal, 111(475), pp. F723–39 Görg, H. and Greenaway, D. (2004) Much ado about nothing? Do domestic firms really benefit from foreign direct
-
-investment? World Bank Research Observer, 19(2), pp. 171–197.
-
-Gorodnichenko, Y., Svejnar, J. and Terrell, K. (2007) When does FDI have positive spillovers? Evidence from 17
-
-emerging market economies. CEPR Discussion Papers, 6546 (Centre for Economic Policy Research).
+Gorodnichenko, Y., Svejnar, J. and Terrell, K. (2007) When does FDI have positive spillovers? Evidence from 17 emerging market economies. CEPR Discussion Papers, 6546 (Centre for Economic Policy Research).
 
 Hagemejer, J. and Kolasa, M. (2008) Internationalization and economic performance of enterprises: evidence from firm-level data. National Bank of Poland Working Papers, 51 (National Bank of Poland).
 
-Hale, G., Long, C., Moran, T. and Miura, H. (2010) Where to find positive productivity spillovers from FDI in China:
-
-disaggregated analysis. Working papers (Federal Reserve Bank of San Francisco).
+Hale, G., Long, C., Moran, T. and Miura, H. (2010) Where to find positive productivity spillovers from FDI in China: disaggregated analysis. Working papers (Federal Reserve Bank of San Francisco).
 
 Halpern, L. and Muraközy, B. (2007) Does distance matter in spillover? Economics of Transition, 15, pp. 781–805.
 
-Haskel, J.E., Pereira, S.C. and Slaughter, M.J. (2007) Does inward foreign direct investment boost the productivity of
-
-domestic firms? The Review of Economics and Statistics, 89(3), pp. 482–496.
+Haskel, J.E., Pereira, S.C. and Slaughter, M.J. (2007) Does inward foreign direct investment boost the productivity of domestic firms? The Review of Economics and Statistics, 89(3), pp. 482–496.
 
 Havranek, T. (2010) Rose effect and the euro: is the magic gone? Review of World Economics, 146(2), pp. 241–261.
 
-Havranek, T. and Irsova, Z. (2010) Which foreigners are worth wooing? A meta-analysis of vertical spillovers from FDI.
+Havranek, T. and Irsova, Z. (2010) Which foreigners are worth wooing? A meta-analysis of vertical spillovers from FDI. Czech National Bank Working Papers, 2010/03 (Czech National Bank).
 
-Czech National Bank Working Papers, 2010/03 (Czech National Bank).
+Havranek, T. and Irsova, Z. (2011) Estimating vertical spillovers from FDI: why results vary and what the true effect is. Journal of International Economics, 85(2), pp. 234–244.
 
-Havranek, T. and Irsova, Z. (2011) Estimating vertical spillovers from FDI: why results vary and what the true effect is.
+Havranek, T., Irsova, Z. and Janda, K. (2012) Demand for gasoline is more price-inelastic than commonly thought. Energy Economics, 34(1), pp. 201–207.
 
-Journal of International Economics, 85(2), pp. 234–244.
+Jabbour, L. and Mucchielli, J.L. (2007) Technology transfer through vertical linkages: the case of the Spanish manufacturing industry. Journal of Applied Economics, 10(1), pp. 115–136.
 
-Havranek, T., Irsova, Z. and Janda, K. (2012) Demand for gasoline is more price-inelastic than commonly thought.
+Javorcik, B.S. (2004) Does foreign direct investment increase the productivity of domestic firms? In search of spillovers through backward linkages. American Economic Review, 94(3), pp. 605–627.
 
-Energy Economics, 34(1), pp. 201–207.
+Javorcik, B.S. and Spatareanu, M. (2008) To share or not to share: does local participation matter for spillovers from foreign direct investment? Journal of Development Economics, 85(1-2), pp. 194–217.
 
-Jabbour, L. and Mucchielli, J.L. (2007) Technology transfer through vertical linkages: the case of the Spanish
+Javorcik, B.S., Saggi, K. and Spatareanu, M. (2004) Does it matter where you come from? Vertical spillovers from foreign direct investment and the nationality of investors. Policy Research Working Paper Series, 3449 (The World Bank).
 
-manufacturing industry. Journal of Applied Economics, 10(1), pp. 115–136.
+Jordaan, J.A. (2008) Regional foreign participation and externalities: new empirical evidence from Mexican regions. Environment and Planning A, 40(12), pp. 2948–2969.
 
-Javorcik, B.S. (2004) Does foreign direct investment increase the productivity of domestic firms? In search of spillovers
+Keller, W. (2009) International trade, foreign direct investment, and technology spillovers. NBER Working Papers, 15442 (National Bureau of Economic Research).
 
-through backward linkages. American Economic Review, 94(3), pp. 605–627.
-
-Javorcik, B.S. and Spatareanu, M. (2008) To share or not to share: does local participation matter for spillovers from
-
-foreign direct investment? Journal of Development Economics, 85(1-2), pp. 194–217.
-
-Javorcik, B.S., Saggi, K. and Spatareanu, M. (2004) Does it matter where you come from? Vertical spillovers from foreign
-
-direct investment and the nationality of investors. Policy Research Working Paper Series, 3449 (The World Bank).
-
-Jordaan, J.A. (2008) Regional foreign participation and externalities: new empirical evidence from Mexican regions.
-
-Environment and Planning A, 40(12), pp. 2948–2969.
-
-Keller, W. (2009) International trade, foreign direct investment, and technology spillovers. NBER Working Papers, 15442
-
-(National Bureau of Economic Research).
-
-Kolasa, M. (2008) How does FDI inflow affect productivity of domestic firms? The role of horizontal and vertical
-
-spillovers, absorptive capacity and competition. Journal of International Trade and Economic Development, 17(1), pp.
-
-155–173.
+Kolasa, M. (2008) How does FDI inflow affect productivity of domestic firms? The role of horizontal and vertical spillovers, absorptive capacity and competition. Journal of International Trade and Economic Development, 17(1), pp. 155–173.
 
 Kugler, M. (2006) Spillovers from foreign direct investment: within or between industries? Journal of Development Economics, 80(2), pp. 444–477.
 
@@ -36772,13 +36720,9 @@ Managi, S. and Bwalya, S. M. (2010) Foreign direct investment and technology spi
 
 Merlevede, B. and Schoors, K. (2005) Conditional spillovers from FDI within and between sectors: evidence from Romania. Orebro University Working Papers (Sweden).
 
-Merlevede, B. and Schoors, K. (2007) FDI and the consequences: towards more complete capture of spillover effects.
+Merlevede, B. and Schoors, K. (2007) FDI and the consequences: towards more complete capture of spillover effects. William Davidson Institute Working Papers Series, 886 (William Davidson Institute at the University of Michigan, Stephen M. Ross Business School).
 
-William Davidson Institute Working Papers Series, 886 (William Davidson Institute at the University of Michigan, Stephen M. Ross Business School).
-
-Merlevede, B. and Schoors, K. (2009) Openness, competition, technology and FDI spillovers: evidence from Romania.
-
-Working Paper, 42 (Forum for Research in Empirical International Trade).
+Merlevede, B. and Schoors, K. (2009) Openness, competition, technology and FDI spillovers: evidence from Romania. Working Paper, 42 (Forum for Research in Empirical International Trade).
 
 Meyer, K.E. and Sinani, E. (2009) When and where does foreign direct investment generate positive spillovers? A meta-analysis. Journal of International Business Studies, 40(7), pp. 1075–1094.
 
@@ -36808,13 +36752,9 @@ Stanley, T.D. (2001) Wheat from chaff: meta-analysis as quantitative literature 
 
 Stanley, T.D. (2005) Beyond publication bias. Journal of Economic Surveys, 19(3), pp. 309–345.
 
-Stanley, T.D. (2008) Meta-regression methods for detecting and estimating empirical effects in the presence of publication
+Stanley, T.D. (2008) Meta-regression methods for detecting and estimating empirical effects in the presence of publication selection. Oxford Bulletin of Economics and Statistics, 70(1), pp. 103–127.
 
-selection. Oxford Bulletin of Economics and Statistics, 70(1), pp. 103–127.
-
-Stanley, T. and Doucouliagos, H. (2007) Identifying and correcting publication selection bias in the efficiency-wage
-
-literature: Heckman meta-regression. Deakin University Economics Series, 2007/11 (Deakin University, Faculty of Business and Law, School of Accounting, Economics and Finance).
+Stanley, T. and Doucouliagos, H. (2007) Identifying and correcting publication selection bias in the efficiency-wage literature: Heckman meta-regression. Deakin University Economics Series, 2007/11 (Deakin University, Faculty of Business and Law, School of Accounting, Economics and Finance).
 
 Stanley, T. and Doucouliagos, H. (2010) Picture this: a simple graph that reveals much ado about research. Journal of Economic Surveys, 24(1), pp. 170–191.
 

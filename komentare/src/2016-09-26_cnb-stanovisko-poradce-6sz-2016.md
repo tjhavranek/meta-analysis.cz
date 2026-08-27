@@ -8,7 +8,7 @@ released: "2023-01-30"
 headline: "Stanovisko poradce k 6. situační zprávě 2016"
 byline: "Tomáš Havránek"
 genre: "advisor_opinion"
-word_count: "3480"
+word_count: "3478"
 translation: "cnb-advisor-opinion-6sz-2016"
 images: "cnb-6sz-2016-graf1.png | cnb-6sz-2016-graf2.png | cnb-6sz-2016-graf3.png | cnb-6sz-2016-graf4.png | cnb-6sz-2016-graf5.png"
 image_alt: "Spojnicový graf sazeb ČNB od roku 2002 do roku 2016: odhadnutá stínová sazba proti PRIBORu 3M, dvoutýdenní repo sazbě, diskontní a lombardní sazbě. Do roku 2012 stínová sazba kopíruje repo sazbu, poté klesá až k −8 procentům. Vyznačeno je období nulové dolní meze a období kurzového závazku. | Spojnicový graf sazeb ECB od roku 2002 do roku 2016: odhadnutá stínová sazba proti depozitní facilitě, hlavní refinanční operaci a EURIBORu 3M. Stínová sazba se od roku 2012 odpoutává směrem dolů a končí kolem −7 procent. Vyznačeno je období nulové dolní meze. | Spojnicový graf od ledna do září 2016: tříměsíční Euribor klesá plynule z −0,13 na −0,30 procenta, týdenní klouzavý průměr implikované korunové sazby kolísá kolem něj v pásmu −0,18 až −0,41 procenta. | Spojnicový graf forwardové křivky CZK/EUR od září 2016 do srpna 2018: kurz klesá z 27,02 na 26,84, se svislicemi u konce „tvrdého“ závazku v lednu 2017 a „měkkého“ závazku v polovině roku 2017. | Spojnicový graf dvouletého forwardu CZK/EUR od ledna do září 2016: hodnoty kolísají mezi 26,63 a necelými 27,00, kolem srpna se drží u 26,83 a na konci období prudce klesají pod 26,63."
@@ -101,14 +101,19 @@ Jinými slovy, je-li v prvním čtvrtletí o jeden pracovní den více než prů
 ## Reference
 
 - Dvořák, M., Komárek, L., Komárková, Z., Ters, K., a Urban, Y. (2016): „Longer Term Yield Decomposition: An Analysis of the Czech Government Yield Curve,“ běžící výzkumný projekt ČNB C7/16.
+
 - Fama, E. (1984): „Forward and Spot Exchange Rates, “ Journal of Monetary Economics 14, 319-38.
+
 - Havránek, T., Sokolova, A. (2016): „Do Consumers Really Follow a Rule of Thumb? Three Thousand Estimates from 130 Studies Say ‘Probably Not’, “ ČNB working paper před oponenturou.
+
 - Holston, K., Laubach, T., a Williams, J. (2016): „Measuring the Natural Rate of Interest: International Trends and Determinants,“ FRBSF Working Paper 2016-11.
-- Krippner, L. (2015): „A Comment on Wu and Xia and the Case for Two-Factor Shadow Short Rates,“ CAMA
-- Working Paper 48/2015.
+
+- Krippner, L. (2015): „A Comment on Wu and Xia and the Case for Two-Factor Shadow Short Rates,“ CAMA Working Paper 48/2015.
+
 - Nelson, C. and Siegel, A. (1987): „Parsimonious modelling of yield curves,“ Journal of Business 60(4), 473-489.
-- Wu, J. a Xia, F. (2016): „Measuring the Macroeconomic Impact of Monetary Policy at the Zero Lower Bound,“
-- Journal of Money, Credit, and Banking, 48(2-3), 253-291.
+
+- Wu, J. a Xia, F. (2016): „Measuring the Macroeconomic Impact of Monetary Policy at the Zero Lower Bound,“ Journal of Money, Credit, and Banking, 48(2-3), 253-291.
+
 
 ## Poznámky
 

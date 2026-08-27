@@ -8,7 +8,7 @@ released: "2023-01-30"
 headline: "Stanovisko poradce k 2. situační zprávě 2016"
 byline: "Tomáš Havránek"
 genre: "advisor_opinion"
-word_count: "5179"
+word_count: "5170"
 translation: "cnb-advisor-opinion-2sz-2016"
 images: "cnb-2sz-2016-graf1.png | cnb-2sz-2016-graf2.png"
 image_alt: "Spojnicový graf sezónně očištěného růstu HDP od 3. čtvrtletí 2005 do 3. čtvrtletí 2015: skutečná data za Českou republiku proti syntetické kontrole s 95% intervalem spolehlivosti, svislice vyznačuje zavedení kurzového závazku na konci roku 2013. | Spojnicový graf nezaměstnanosti od 3. čtvrtletí 2005 do 3. čtvrtletí 2015: skutečná data za Českou republiku proti syntetické kontrole s 95% intervalem spolehlivosti, svislice vyznačuje zavedení kurzového závazku na konci roku 2013."
@@ -109,33 +109,45 @@ V dosavadní diskuzi spodní hranice sazeb jsem předpokládal, že centrální 
 ## Reference
 
 - Abadie, A., Diamond, A. a Hainmueller, J., 2015: “Comparative Politics and the Synthetic Control Method,” American Journal of Political Science 59(2), 495-510.
+
 - Agarwal, R. a Kimball, M., 2015: “Breaking Through the Zero Lower Bound,” IMF Working Papers 15/224.
-- Alsterlind, J., Armelius, H., Forsman, D., Jönsson, B. a Wretman, A., 2015: “How Far Can the Repo Rate Be Cut?”
-- Economic Commentary 11/2015, Sveriges Riksbank. Bank of Japan, 2016: “Introduction of ‘Quantitative and Qualitative Monetary Easing with’ a Negative Interest Rate,”
-- oznámení 29.1.2016, www.boj.or.jp/en/announcements/release_2016/k160129a.pdf.
-- Bean, C., 2013: “Note on Negative Interest Rates for Treasury Committee,” Bank of England. Bloomberg, 2016: “Here’s What Economists Think about Negative Policy Rates,” Bloomberg Benchmark 19. února, www.bloomberg.com/news/articles/2016-02-19/here-s-what-economists-think-about-negative-policy-rates.
+
+- Alsterlind, J., Armelius, H., Forsman, D., Jönsson, B. a Wretman, A., 2015: “How Far Can the Repo Rate Be Cut?” Economic Commentary 11/2015, Sveriges Riksbank.
+
+- Bank of Japan, 2016: “Introduction of ‘Quantitative and Qualitative Monetary Easing with’ a Negative Interest Rate,” oznámení 29.1.2016, www.boj.or.jp/en/announcements/release_2016/k160129a.pdf.
+
+- Bean, C., 2013: “Note on Negative Interest Rates for Treasury Committee,” Bank of England.
+
+- Bloomberg, 2016: “Here’s What Economists Think about Negative Policy Rates,” Bloomberg Benchmark 19. února, www.bloomberg.com/news/articles/2016-02-19/here-s-what-economists-think-about-negative-policy-rates.
+
 - Buiter, W., 2015: “It’s Time to Remove the Lower Bound on Interest Rates and Here’s the How-To,” prezentace na konferenci Removing the Zero Lower Bound on Interest Rates, Londýn, 18.5.2015.
-- Coeuré, B., 2014: “Life Below Zero: Learning about Negative Interest Rates,” projev na ECB’s Money Market
-- Contact Group, 9.9.2014. Danmarks Nationalbank, 2015: “Negative Interest Rates and their Impact on Credit Institutions’ Earnings.” Financial
-- Stability 1/2015.
-- Havránek, T., Iršová, Z. a Lešanovská, J., 2016: “Bank Efficiency and Interest Rate Pass-Through: Evidence from
-- Czech Loan Products,” Economic Modelling 54(1), 153-169.
+
+- Coeuré, B., 2014: “Life Below Zero: Learning about Negative Interest Rates,” projev na ECB’s Money Market Contact Group, 9.9.2014.
+
+- Danmarks Nationalbank, 2015: “Negative Interest Rates and their Impact on Credit Institutions’ Earnings.” Financial Stability 1/2015.
+
+- Havránek, T., Iršová, Z. a Lešanovská, J., 2016: “Bank Efficiency and Interest Rate Pass-Through: Evidence from Czech Loan Products,” Economic Modelling 54(1), 153-169.
+
 - Hongo, J. a Inada, M., 2016: “Japanese Seeking a Place to Stash Cash Start Snapping up Safes,” Wall Street Journal, 22.2., www.wsj.com/articles/japanese-seeking-a-place-to-stash-cash-start-snapping-up-safes-1456136223.
-- Jackson, H., 2015: “The International Experience with Negative Policy Rates,” Discussion Paper 15/13, Bank of
-- Canada.
-- Jensen, C. M. a Spange, M., 2015: “Interest Rate Pass-Through and the Demand for Cash at Negative Interest Rates.”
-- Danmarks Nationalbank. Monetary Review 2/2015.
-- Keohane, D., 2015: “Negative Rates and Gesell Taxes: How Low Are We Talking Here?” FT Alphaville, 2.2.2015.
-- ftalphaville.ft.com/2015/02/02/2103032/negative-rates-and-gesell-taxes-how-low-are-we-talking-here/.
-- Khayat, A., 2015: “Negative Policy Rates, Banking Flows and Exchange Rates,” Working Paper 38/2015, Aix-
-- Marseille School of Economics.
-- Kimball, M., 2015: “Negative Interest Rate Policy as Conventional Monetary Policy,” National Institute Economic
-- Review 234(1), 5-14.
-- Melin, M., 2016: “Negative Interest Rates Could Go As Low As 4.5%: JPMorgan Shocker,” Value Walk 10.2.2016, www.valuewalk.com/2016/02/jpmorgan-negative-interest-rates/. Norges Bank, 2015: “Monetary Policy Report 4/2015,” prosinec 2015.
-- Schmiedel, H., Kostova, G. a Ruttenberg, W., 2012: “The Social and Private Costs of Retail Payment Instruments: A
-- European Perspective,” European Central Bank, Occasional Paper Series 137.
-- Witmer, J. a Yang, J., 2015: “Estimating Canada’s Effective Lower Bound,” Staff Analytical Note 2/2015, Bank of
-- Canada.
+
+- Jackson, H., 2015: “The International Experience with Negative Policy Rates,” Discussion Paper 15/13, Bank of Canada.
+
+- Jensen, C. M. a Spange, M., 2015: “Interest Rate Pass-Through and the Demand for Cash at Negative Interest Rates.” Danmarks Nationalbank. Monetary Review 2/2015.
+
+- Keohane, D., 2015: “Negative Rates and Gesell Taxes: How Low Are We Talking Here?” FT Alphaville, 2.2.2015. ftalphaville.ft.com/2015/02/02/2103032/negative-rates-and-gesell-taxes-how-low-are-we-talking-here/.
+
+- Khayat, A., 2015: “Negative Policy Rates, Banking Flows and Exchange Rates,” Working Paper 38/2015, Aix-Marseille School of Economics.
+
+- Kimball, M., 2015: “Negative Interest Rate Policy as Conventional Monetary Policy,” National Institute Economic Review 234(1), 5-14.
+
+- Melin, M., 2016: “Negative Interest Rates Could Go As Low As 4.5%: JPMorgan Shocker,” Value Walk 10.2.2016, www.valuewalk.com/2016/02/jpmorgan-negative-interest-rates/.
+
+- Norges Bank, 2015: “Monetary Policy Report 4/2015,” prosinec 2015.
+
+- Schmiedel, H., Kostova, G. a Ruttenberg, W., 2012: “The Social and Private Costs of Retail Payment Instruments: A European Perspective,” European Central Bank, Occasional Paper Series 137.
+
+- Witmer, J. a Yang, J., 2015: “Estimating Canada’s Effective Lower Bound,” Staff Analytical Note 2/2015, Bank of Canada.
+
 
 ## Poznámky
 
