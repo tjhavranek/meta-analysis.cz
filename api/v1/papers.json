@@ -1,10 +1,10 @@
 {
  "name": "meta-analysis.cz papers",
- "description": "One record per full-text document on meta-analysis.cz: 62 papers plus the MAIVE supplement, each with its full text, PDF and section map. Fetch this first and one page after, rather than the whole corpus.",
+ "description": "One record per full-text document on meta-analysis.cz: 63 papers plus the MAIVE supplement, each with its full text, PDF and section map. Fetch this first and one page after, rather than the whole corpus.",
  "license": "https://creativecommons.org/licenses/by/4.0/",
  "full_corpus": "https://meta-analysis.cz/llms-full.txt",
- "count": 63,
- "paper_count": 62,
+ "count": 64,
+ "paper_count": 63,
  "supplement_count": 1,
  "papers": [
   {
@@ -1289,7 +1289,8 @@
     "journal": "Journal of Financial Stability",
     "year": 2014,
     "doi": "https://doi.org/10.1016/j.jfs.2014.07.001",
-    "title": "Banking, debt, and currency crises in developed countries: Stylized facts and early warning indicators"
+    "title": "Banking, debt, and currency crises in developed countries: Stylized facts and early warning indicators",
+    "project": "crisis_jfs"
    },
    "title": "Banking, debt, and currency crises: Early warning indicators for developed countries",
    "authors": [
@@ -1373,6 +1374,101 @@
      "level": 3,
      "title": "I.4. Robustness check with limited dependent variable models",
      "anchor": "sec-i-4--robustness-check-with-limited-dependent-variable-models"
+    },
+    {
+     "level": 2,
+     "title": "ENDNOTES",
+     "anchor": "sec-endnotes"
+    }
+   ]
+  },
+  {
+   "project": "crisis_jfs",
+   "document_type": "paper",
+   "version": "record",
+   "published_as": null,
+   "title": "Banking, debt, and currency crises in developed countries: Stylized facts and early warning indicators",
+   "authors": [
+    "Jan Babecky",
+    "Tomas Havranek",
+    "Jakub Mateju",
+    "Marek Rusnak",
+    "Katerina Smidkova",
+    "Borek Vasicek"
+   ],
+   "year": 2014,
+   "journal": "Journal of Financial Stability",
+   "doi": "https://doi.org/10.1016/j.jfs.2014.07.001",
+   "publisher_url": null,
+   "full_text_url": "https://meta-analysis.cz/crisis_jfs/paper/",
+   "project_url": "https://meta-analysis.cz/crisis_jfs/",
+   "pdf_url": "https://meta-analysis.cz/crisis_jfs/crisis_jfs.pdf",
+   "abstract": "We construct and explore a new quarterly dataset covering crisis episodes in 40 developed countries over 1970–2010. First, we present stylized facts on banking, debt, and currency crises. Using panel vector autoregression we find that banking and debt crises are interrelated and both typically precede currency crises, but not vice versa. Banking crises are the most costly in terms of the overall output loss, and output takes about six years to recover. Second, on a reduced sample we try to identify early warning indicators of crises specific to developed economies, accounting for model uncertainty by means of Bayesian model averaging. The most consistent result across the various specifications and time horizons is that significant growth of domestic private credit precedes banking crises, while rising money market rates and global corporate spreads are also leading indicators worth monitoring. For currency crises, we also corroborate the role of rising domestic private credit and money market rates and detect the relevance of domestic currency overvaluation. The role of other indicators differs according to the type of crisis and the warning horizon selected, but it mostly seems easier to find reliable predictors at a horizon shorter than two years. Early warning indicators of debt crises are difficult to uncover due to the low occurrence of such episodes in our dataset. We also employ a signaling approach to derive the threshold value for the best single indicator (domestic private credit), and finally we provide a composite early warning index that further increases the usefulness of the model.",
+   "sections": [
+    {
+     "level": 2,
+     "title": "1. Introduction",
+     "anchor": "sec-1"
+    },
+    {
+     "level": 2,
+     "title": "2. New quarterly database of economic crises in developed economies",
+     "anchor": "sec-2"
+    },
+    {
+     "level": 2,
+     "title": "3. Banking, debt, and currency crises in developed countries: stylized facts",
+     "anchor": "sec-3"
+    },
+    {
+     "level": 2,
+     "title": "4. Early warning indicators of banking and currency crises",
+     "anchor": "sec-4"
+    },
+    {
+     "level": 2,
+     "title": "5. Signaling analysis",
+     "anchor": "sec-5"
+    },
+    {
+     "level": 2,
+     "title": "6. Concluding remarks",
+     "anchor": "sec-6"
+    },
+    {
+     "level": 2,
+     "title": "Acknowledgements",
+     "anchor": "sec-acknowledgements"
+    },
+    {
+     "level": 2,
+     "title": "Annex I. Data",
+     "anchor": "sec-annex-i--data"
+    },
+    {
+     "level": 3,
+     "title": "I.1. List of countries",
+     "anchor": "sec-i-1"
+    },
+    {
+     "level": 3,
+     "title": "I.2. Sources and definition of crises",
+     "anchor": "sec-i-2"
+    },
+    {
+     "level": 3,
+     "title": "I.3. Variables, transformations, and data sources",
+     "anchor": "sec-i-3"
+    },
+    {
+     "level": 3,
+     "title": "I.4. Robustness check with limited dependent variable models",
+     "anchor": "sec-i-4"
+    },
+    {
+     "level": 2,
+     "title": "REFERENCES",
+     "anchor": "sec-references"
     },
     {
      "level": 2,

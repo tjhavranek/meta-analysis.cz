@@ -2242,13 +2242,14 @@
    "journal": "Journal of Financial Stability",
    "year": 2014,
    "doi": "https://doi.org/10.1016/j.jfs.2014.07.001",
-   "title": "Banking, debt, and currency crises in developed countries: Stylized facts and early warning indicators"
+   "title": "Banking, debt, and currency crises in developed countries: Stylized facts and early warning indicators",
+   "project": "crisis_jfs"
   }
  },
  {
   "project": "dst_slovakia",
   "title": "Does daylight saving time save electricity? Evidence from Slovakia",
-  "literature": "Daylight Saving and Electricity Use",
+  "literature": "Daylight Saving in Slovakia",
   "abstract": "The European Union has recently decided to stop the policy of biannual clock changes in 2021. One reason is that the original rationale for the policy, energy savings, is not supported by a large portion of recent empirical studies. Whether the new permanent time will be standard time or the former daylight saving time has not been decided. Evidence on energy savings from daylight saving time is country-specific, and each country may choose its own time. We examine the effects of the policy in a country for which no studies on daylight saving exist, Slovakia. Using hourly data from the 2010–2017 period, we apply a difference-in-differences approach and estimate energy savings to equal 1% of annual electricity consumption. Alternatively, extrapolating the effect from the results of a previous meta-analysis on different countries, for Slovakia we obtain a smaller estimate, unlikely to exceed 0.5%. Moreover, our findings suggest that daylight saving time smooths the electricity demand curve.",
   "reference_line": "Peter Kudela, Tomas Havranek, Dominik Herman, Zuzana Irsova (2020), \"Does daylight saving time save electricity? Evidence from Slovakia.\" Energy Policy 137: 111146.",
   "authors": [
@@ -2359,5 +2360,45 @@
     "href": "Stata_program.do"
    }
   ]
+ },
+ {
+  "project": "crisis_jfs",
+  "title": "Banking, debt, and currency crises in developed countries: Stylized facts and early warning indicators",
+  "literature": "Crises in Developed Countries",
+  "abstract": "We construct and explore a new quarterly dataset covering crisis episodes in 40 developed countries over 1970–2010. First, we present stylized facts on banking, debt, and currency crises. Using panel vector autoregression we find that banking and debt crises are interrelated and both typically precede currency crises, but not vice versa. Banking crises are the most costly in terms of the overall output loss, and output takes about six years to recover. Second, on a reduced sample we try to identify early warning indicators of crises specific to developed economies, accounting for model uncertainty by means of Bayesian model averaging. The most consistent result across the various specifications and time horizons is that significant growth of domestic private credit precedes banking crises, while rising money market rates and global corporate spreads are also leading indicators worth monitoring. For currency crises, we also corroborate the role of rising domestic private credit and money market rates and detect the relevance of domestic currency overvaluation. The role of other indicators differs according to the type of crisis and the warning horizon selected, but it mostly seems easier to find reliable predictors at a horizon shorter than two years. Early warning indicators of debt crises are difficult to uncover due to the low occurrence of such episodes in our dataset. We also employ a signaling approach to derive the threshold value for the best single indicator (domestic private credit), and finally we provide a composite early warning index that further increases the usefulness of the model.",
+  "reference_line": "Jan Babecky, Tomas Havranek, Jakub Mateju, Marek Rusnak, Katerina Smidkova, Borek Vasicek (2014), \"Banking, debt, and currency crises in developed countries: Stylized facts and early warning indicators.\" Journal of Financial Stability 15: 1-17.",
+  "authors": [
+   "Jan Babecky",
+   "Tomas Havranek",
+   "Jakub Mateju",
+   "Marek Rusnak",
+   "Katerina Smidkova",
+   "Borek Vasicek"
+  ],
+  "year": 2014,
+  "journal": "Journal of Financial Stability",
+  "doi_or_publisher_url": "https://doi.org/10.1016/j.jfs.2014.07.001",
+  "menu_links": [
+   {
+    "label": "Paper",
+    "href": "crisis_jfs.pdf"
+   },
+   {
+    "label": "Crisis database",
+    "href": "/ews/crises_database.xls"
+   },
+   {
+    "label": "Crisis coding",
+    "href": "/ews/cdec40_40_at_least_two.xls"
+   }
+  ],
+  "one_line": "A quarterly dataset of banking, debt and currency crises in 40 developed countries from 1970 to 2010: banking crises usually come first and cost the most, and booms in credit and activity precede them.",
+  "meta_keywords": "early warning indicators, banking crises, currency crises, debt crises, Bayesian model averaging, macroprudential policy",
+  "earlier_version": {
+   "project": "crisis_ews",
+   "title": "Banking, debt, and currency crises: Early warning indicators for developed countries",
+   "series": "ECB Working Paper Series No. 1485",
+   "year": 2012
+  }
  }
 ]
