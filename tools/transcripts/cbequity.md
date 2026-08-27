@@ -4,6 +4,14 @@
 
 Mojmir Hampl^{1,2} · Tomas Havranek^{3,4}
 
+^{1}LSE Systemic Risk Center, London, UK
+
+^{2}Faculty of Management and Economics, Tomas Bata University, Zlin, Czech Republic
+
+^{3}Czech National Bank, Prague, Czech Republic
+
+^{4}Faculty of Social Sciences, Charles University, Prague, Czech Republic
+
 © Association for Comparative Economic Studies 2019
 
 ## ABSTRACT

@@ -162,6 +162,9 @@ def encode(ids):
 def main():
     pages = []
     for dirpath, dirnames, filenames in os.walk(ROOT):
+        # sorted: os.walk yields directories in filesystem order, so an
+        # unsorted descent makes this generator's output machine-dependent
+        dirnames.sort(); filenames.sort()
         dirnames[:] = [d for d in dirnames if not d.startswith(".")]
         if "index.html" not in filenames:
             continue

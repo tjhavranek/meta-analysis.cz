@@ -10,7 +10,7 @@ byline: "Tomas Havranek"
 genre: "advisor_opinion"
 translated: "2026-08-27"
 translation: "cnb-stanovisko-poradce-6sz-2017"
-body_note: "An English translation of the Czech original, which remains the record of what was written: [Stanovisko poradce k 6. situační zprávě 2017](/komentare/cnb-stanovisko-poradce-6sz-2017/). Part I, the advisor's opinion, is here in full. The original document also carries Part II, prepared by the Financial Stability Department, which is in the [hosted PDF](/komentare/files/cnb-stanoviska-6sz-2017.pdf) and in the document on the CNB site. Numbered footnotes are collected at the end."
+body_note: "An English translation of the Czech original, which remains the record of what was written: [Stanovisko poradce k 6. situační zprávě 2017](/komentare/cnb-stanovisko-poradce-6sz-2017/). The advisor's opinion is here in full. The original document also carries an opinion from the CNB's independent Financial Stability Division, which is in the [hosted PDF](/komentare/files/cnb-stanoviska-6sz-2017.pdf) and in the document on the CNB site. Numbered footnotes are collected at the end."
 ---
 
 # Advisor's Opinion on Situation Report No. 6, 2017

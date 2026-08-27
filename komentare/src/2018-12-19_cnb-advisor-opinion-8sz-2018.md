@@ -92,4 +92,4 @@ To conclude: the available data on client rates end in October 2018. For Novembe
 
 ## Notes
 
-[1] I thank Michal Franta, Ales Michl, and Jiri Schwarz for discussion. The views here are mine alone.
+[1] I thank Michal Franta, Ales Michl, and Jiri Schwarz for discussion. The responsibility for its message is mine.

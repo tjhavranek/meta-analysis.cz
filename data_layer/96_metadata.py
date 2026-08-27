@@ -189,6 +189,9 @@ _roots = {OUT, os.path.dirname(os.path.dirname(os.path.abspath(__file__)))}
 _seen, _bad = 0, []
 for _root in _roots:
     for _dp, _dn, _fn in os.walk(_root):
+        # sorted: os.walk yields directories in filesystem order, so an
+        # unsorted descent makes this generator's output machine-dependent
+        _dn.sort(); _fn.sort()
         # Skip prior-version deposit folders: they are the RECORD of what was uploaded then,
         # and 0.9.0-beta genuinely shipped the pre-reversal wording. Rewriting history there
         # would hide that the live deposit needs replacing. Only the current bundle is scanned.

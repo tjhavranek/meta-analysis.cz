@@ -7148,7 +7148,7 @@ To conclude: the available data on client rates end in October 2018. For Novembe
 
 ## Notes
 
-[1] I thank Michal Franta, Ales Michl, and Jiri Schwarz for discussion. The views here are mine alone.
+[1] I thank Michal Franta, Ales Michl, and Jiri Schwarz for discussion. The responsibility for its message is mine.
 
 ---
 
@@ -8136,7 +8136,7 @@ Graf 4 ukazuje, že trh očekává jisté posílení kurzu po vypršení „tvrd
 
 Očekávané posílení je velmi malé a vyniká pouze ve srovnání s ještě menším dodatečným posílením v horizontu 2 let, které směrovalo na začátku září někam k hodnotě 26,85. Letošní vývoj dvouletého forwardu zachycuje graf 5, ze kterého je vidět, že se v průměru pohybuje kolem 26,80; v první polovině roku měl tendenci oslabovat, v září v reakci na spekulace posílil na zhruba 26,60. Takto silný byl již před rokem, pak se však po odeznění spekulací postupně vrátil k 26,80, a je tedy dost možné, že podobný vývoj budeme pozorovat i letos. Moje interpretace forwardové křivky je taková, že určitý segment trhu očekává opuštění flooru ihned po vypršení tvrdého závazku, což je také v souladu s anekdotickou evidencí.
 
-Budoucí posílení kurzu implikované forwardy je mírné buď proto, že trh předpokládá jen slabý posun kurzu po opuštění závazku, nebo že na opuštění závazku spekuluje jen malá část tržních aktérů. První z těchto hypotéz dodává kredibilitu skutečnost, že ani dvouletý forward nenaznačuje výrazné posílení koruny, dokonce ani v průběhu zářijové spekulační vlny – přitom drtivá většina tržních aktérů počítá s tím, že do dvou let dojde k exitu (viz například zářijové Inflační očekávání finančního trhu). Tato tržní očekávání měřená forwardovými cenami navíc docela dobře odpovídají průměrným odhadům nominálního rovnovážného kurzu z dílny sekce měnové, které jsou pro současné čtvrtletí na úrovni 26,85 a pro konec 2017 na úrovni 26,60.7 Nejsou však konzistentní s modelem g3, který čeká posílení pod hranici 26 CZK/EUR – resp. konkrétně nejsou v souladu s modelovým očekáváním strmého růstu sazeb, který přispívá k silnějšímu kurzu koruny na horizontu prognózy.
+Budoucí posílení kurzu implikované forwardy je mírné buď proto, že trh předpokládá jen slabý posun kurzu po opuštění závazku, nebo že na opuštění závazku spekuluje jen malá část tržních aktérů. První z těchto hypotéz dodává kredibilitu skutečnost, že ani dvouletý forward nenaznačuje výrazné posílení koruny, dokonce ani v průběhu zářijové spekulační vlny – přitom drtivá většina tržních aktérů počítá s tím, že do dvou let dojde k exitu (viz například zářijové Inflační očekávání finančního trhu). Tato tržní očekávání měřená forwardovými cenami navíc docela dobře odpovídají průměrným odhadům nominálního rovnovážného kurzu z dílny sekce měnové, které jsou pro současné čtvrtletí na úrovni 26,85 a pro konec 2017 na úrovni 26,60.[7] Nejsou však konzistentní s modelem g3, který čeká posílení pod hranici 26 CZK/EUR – resp. konkrétně nejsou v souladu s modelovým očekáváním strmého růstu sazeb, který přispívá k silnějšímu kurzu koruny na horizontu prognózy.
 
 ##
 

@@ -215,6 +215,7 @@ def build():
 \t\t\t<li><a href="/results/">Headline results</a></li>
 \t\t\t<li><a href="/api/v1/README.md">API</a></li>
 \t\t\t<li><a href="/LICENSE">Licence</a></li>
+\t\t\t<li><a href="/search/">Search</a></li>
 \t\t</ul>
 \t</div>
 </div>
@@ -395,8 +396,11 @@ packages, are on the <a href="/">main catalogue</a>.</div>
                         f"stale from the previous release")
     if live_doi and live_doi not in page:
         problems.append("datasets.json has a version DOI the page does not carry")
+    # /search/ is in this list because it was in the served page and NOT in the nav
+    # literal above: a rebuild would have silently deleted the link, and nothing
+    # would have noticed.
     for must in ("/data/v1/estimates_harmonised.csv", "/api/v1/datasets.json",
-                 "/api/v1/README.md", "/LICENSE"):
+                 "/api/v1/README.md", "/LICENSE", "/search/"):
         if f'href="{must}"' not in page:
             problems.append(f"required link missing: {must}")
     if os.path.exists(os.path.join(SITE, "api", "index.html")) or \

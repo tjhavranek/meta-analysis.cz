@@ -214,8 +214,11 @@ picture.</p>
     _other = len(rows) - _meta
     composition = (("%d are meta-analyses and meta-research, each answering a question on "
                     "<a href=\"/results/\">Headline results</a>. The other %d carry no "
-                    "headline result of their own: the MAER-Net guidelines and reporting "
-                    "standards, and applied work in banking, monetary policy and energy.")
+                    # Not the guidelines and the reporting standards: both of those DO
+                    # have headline rows in estimates.csv. The two without are the 2026
+                    # MAER-Net notes on AI.
+                    "headline result of their own: the two 2026 MAER-Net notes on AI, "
+                    "and applied work in banking, monetary policy and energy.")
                    % (_meta, _other)) if _other > 0 else ""
     out = page.format(n=len(rows), lede=lede, listed=listed, figs=figs, footer=load_footer(),
                       composition=composition,

@@ -63,6 +63,9 @@ def differences():
                 out.append(dst)
             continue
         for root, _, files in os.walk(s):
+            # sorted: os.walk yields directories in filesystem order, so an
+            # unsorted descent makes this generator's output machine-dependent
+            _.sort(); files.sort()
             for f in files:
                 if skip and f == skip:
                     continue
@@ -77,6 +80,9 @@ def publish():
     """Copy the rebuild over the published tree. Nothing else moves files here."""
     n = 0
     for root, _, files in os.walk(OUT):
+        # sorted: os.walk yields directories in filesystem order, so an
+        # unsorted descent makes this generator's output machine-dependent
+        _.sort(); files.sort()
         for f in files:
             a = os.path.join(root, f)
             b = os.path.join(SITE, os.path.relpath(a, OUT))

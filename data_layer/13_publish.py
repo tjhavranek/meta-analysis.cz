@@ -39,6 +39,9 @@ SKIP_NAMES = {"codegrep_evidence.json"}          # scratch side-output, not part
 def copy_tree(src, dst, label, name_filter=None):
     moved, same = [], 0
     for root, dirs, files in os.walk(src):
+        # sorted: os.walk yields directories in filesystem order, so an
+        # unsorted descent makes this generator's output machine-dependent
+        dirs.sort(); files.sort()
         dirs[:] = [d for d in dirs if d not in SKIP_DIRS]
         rel = os.path.relpath(root, src)
         for f in sorted(files):

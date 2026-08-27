@@ -308,6 +308,9 @@ if not _m:
 else:
     _canonical = _m.group(0)
     for _dp, _dns, _fns in os.walk(SITE):
+        # sorted: os.walk yields directories in filesystem order, so an
+        # unsorted descent makes this generator's output machine-dependent
+        _dns.sort(); _fns.sort()
         if any(x in _dp for x in (os.sep + ".git", "__pycache__")):
             continue
         if "index.html" not in _fns:

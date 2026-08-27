@@ -1008,6 +1008,9 @@ def main():
             urls.append((f"{BASE}/{p}/{sub}/", lastmod(f"{p}/{sub}/index.html")))
     pdf_rels = []
     for dp, dns, fns in os.walk(SITE):
+        # sorted: os.walk yields directories in filesystem order, so an
+        # unsorted descent makes this generator's output machine-dependent
+        dns.sort(); fns.sort()
         rel_dir = os.path.relpath(dp, SITE).replace(os.sep, "/")
         top = rel_dir.split("/")[0]
         if top in (".git", ".github", "conference", "tools"):
@@ -1053,6 +1056,9 @@ def main():
             continue
         urls.append((f"{BASE}/{sec}/", lastmod(f"{sec}/index.html")))
         for dp, dns, fns in os.walk(sec_dir):
+            # sorted: os.walk yields directories in filesystem order, so an
+            # unsorted descent makes this generator's output machine-dependent
+            dns.sort(); fns.sort()
             dns[:] = [d for d in dns if d not in ("src", "__pycache__")]
             if dp == sec_dir or "index.html" not in fns:
                 continue

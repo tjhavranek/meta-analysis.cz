@@ -18,6 +18,12 @@ import sys
 
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 from build_paper_page import ROOT  # noqa: E402
+from build_fulltext_page import editions  # noqa: E402
+
+# The count was written out three times by hand and went stale the day the 64th
+# paper landed: the page claimed 63 while /papers/ and llms.txt said 65. Derive it
+# from the same list /papers/ builds itself from.
+N_PAPERS = len(editions())
 
 OUT = os.path.join(ROOT, "search", "index.html")
 
@@ -212,13 +218,13 @@ PAGE = """<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" \
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>Search</title>
 <meta name="description" content="Search every page on meta-analysis.cz: \
-63 papers in full, the research notes, the datasets and the guidelines. \
+{N_PAPERS} papers in full, the research notes, the datasets and the guidelines. \
 The search runs in your browser; nothing is sent anywhere." />
 <link rel="canonical" href="https://meta-analysis.cz/search/" />
 <meta property="og:site_name" content="meta-analysis.cz" />
 <meta property="og:type" content="website" />
 <meta property="og:title" content="Search meta-analysis.cz" />
-<meta property="og:description" content="Full-text search over the site: 63 papers in full, the research notes, the datasets and the guidelines." />
+<meta property="og:description" content="Full-text search over the site: {N_PAPERS} papers in full, the research notes, the datasets and the guidelines." />
 <meta property="og:url" content="https://meta-analysis.cz/search/" />
 <link href="/style.css" rel="stylesheet" type="text/css" />
 <link href="/paper.css" rel="stylesheet" type="text/css" />
@@ -266,7 +272,7 @@ The search runs in your browser; nothing is sent anywhere." />
 <a href="/sitemap.xml">sitemap</a> are the way around the site.</p>
 </noscript>
 
-<p class="searchnote">Every word on every page of this site is indexed, including all 63
+<p class="searchnote">Every word on every page of this site is indexed, including all {N_PAPERS}
 papers in full. The index is downloaded once and searched in your browser: no query is sent
 to this site or to anyone else, and a page published a minute ago is findable a minute ago.
 It is a plain file, <a href="/api/v1/search-index.json">search-index.json</a>, if you would
@@ -286,7 +292,7 @@ rather search it yourself.</p>
 
 def main():
     os.makedirs(os.path.dirname(OUT), exist_ok=True)
-    page = PAGE % (SCRIPT, homepage_footer())
+    page = (PAGE % (SCRIPT, homepage_footer())).replace("{N_PAPERS}", str(N_PAPERS))
     open(OUT, "w", encoding="utf-8").write(page)
     print("search/index.html: %d bytes" % len(page))
     return 0
