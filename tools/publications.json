@@ -1,6 +1,25 @@
 {
  "havranek": [
   {
+   "title": "Financial Incentives and Performance: A Meta-Analysis of Experiments in Economics",
+   "year": 2026,
+   "venue": "Journal of Political Economy Microeconomics",
+   "volume": null,
+   "page": null,
+   "doi": "10.1086/743543",
+   "authors": [
+    "Petr Cala",
+    "Tomas Havranek",
+    "Zuzana Irsova",
+    "Martina Luskova",
+    "Jindrich Matousek",
+    "Jiri Novak"
+   ],
+   "n_authors": 6,
+   "project": "incentives",
+   "type": "journal-article"
+  },
+  {
    "title": "Guidance for the Use of AI in the Meta‐Analysis of Economics Research",
    "year": 2026,
    "venue": "Journal of Economic Surveys",
@@ -685,6 +704,21 @@
    "type": "journal-article"
   },
   {
+   "title": "Central Bank Equity as an Instrument of Monetary Policy",
+   "year": 2020,
+   "venue": "Comparative Economic Studies",
+   "volume": "62",
+   "page": "49-68",
+   "doi": "10.1057/s41294-019-00092-1",
+   "authors": [
+    "Mojmir Hampl",
+    "Tomas Havranek"
+   ],
+   "n_authors": 2,
+   "project": null,
+   "type": "journal-article"
+  },
+  {
    "title": "Do consumers really follow a rule of thumb? Three thousand estimates from 144 studies say “probably not”",
    "year": 2020,
    "venue": "Review of Economic Dynamics",
@@ -766,7 +800,7 @@
    "type": "journal-article"
   },
   {
-   "title": "REPORTING GUIDELINES FOR META‐ANALYSIS IN ECONOMICS",
+   "title": "Reporting Guidelines for Meta-Analysis in Economics",
    "year": 2020,
    "venue": "Journal of Economic Surveys",
    "volume": "34",
@@ -788,22 +822,7 @@
    "type": "journal-article"
   },
   {
-   "title": "Central Bank Equity as an Instrument of Monetary Policy",
-   "year": 2020,
-   "venue": "Comparative Economic Studies",
-   "volume": "62",
-   "page": "49-68",
-   "doi": "10.1057/s41294-019-00092-1",
-   "authors": [
-    "Mojmir Hampl",
-    "Tomas Havranek"
-   ],
-   "n_authors": 2,
-   "project": null,
-   "type": "journal-article"
-  },
-  {
-   "title": "FIRM SIZE AND STOCK RETURNS: A QUANTITATIVE SURVEY",
+   "title": "Firm Size and Stock Returns: A Quantitative Survey",
    "year": 2019,
    "venue": "Journal of Economic Surveys",
    "volume": "33",
@@ -991,7 +1010,7 @@
    "type": "journal-article"
   },
   {
-   "title": "BANK COMPETITION AND FINANCIAL STABILITY: MUCH ADO ABOUT NOTHING?",
+   "title": "Bank Competition and Financial Stability: Much Ado About Nothing?",
    "year": 2015,
    "venue": "Journal of Economic Surveys",
    "volume": "30",
@@ -1377,6 +1396,25 @@
   }
  ],
  "irsova": [
+  {
+   "title": "Financial Incentives and Performance: A Meta-Analysis of Experiments in Economics",
+   "year": 2026,
+   "venue": "Journal of Political Economy Microeconomics",
+   "volume": null,
+   "page": null,
+   "doi": "10.1086/743543",
+   "authors": [
+    "Petr Cala",
+    "Tomas Havranek",
+    "Zuzana Irsova",
+    "Martina Luskova",
+    "Jindrich Matousek",
+    "Jiri Novak"
+   ],
+   "n_authors": 6,
+   "project": "incentives",
+   "type": "journal-article"
+  },
   {
    "title": "Guidance for the Use of AI in the Meta-Analysis of Economics Research",
    "year": 2026,
@@ -2176,7 +2214,7 @@
    "type": "journal-article"
   },
   {
-   "title": "PUBLICATION BIAS IN MEASURING ANTHROPOGENIC CLIMATE CHANGE",
+   "title": "Publication Bias in Measuring Anthropogenic Climate Change",
    "year": 2015,
    "venue": "Energy &amp; Environment",
    "volume": "26",
@@ -2208,7 +2246,7 @@
    "type": "journal-article"
   },
   {
-   "title": "A META-ANALYSIS OF BANK EFFICIENCY MEASUREMENT IN TRANSITIONAL COUNTRIES",
+   "title": "A Meta-Analysis of Bank Efficiency Measurement in Transitional Countries",
    "year": 2013,
    "venue": "TRANSFORMATIONS IN BUSINESS & ECONOMICS",
    "volume": null,
@@ -2311,7 +2349,7 @@
    "type": "journal-article"
   },
   {
-   "title": "MEASURING BANK EFFICIENCY: A META-REGRESSION ANALYSIS",
+   "title": "Measuring Bank Efficiency: A Meta-Regression Analysis",
    "year": 2010,
    "venue": "Prague Economic Papers",
    "volume": "19",

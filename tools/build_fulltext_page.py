@@ -9,6 +9,7 @@ points at. Regenerate it whenever a conversion lands; it is derived, not written
 """
 
 import html
+import csv
 import json
 import os
 import re
@@ -120,8 +121,8 @@ def build():
 \t\t<div class="post">
 \t\t\t<div class="entry">
 
-<p><b>{lede}</b>, as HTML rather than PDF. Each keeps its PDF and its link to the
-version of record.</p>
+<p><b>{lede}</b>, as HTML rather than PDF. Each keeps its PDF and, where the paper has
+one, its link to the version of record. {composition}</p>
 
 <p class="caveat">Figures are reproduced wherever the artwork lifted cleanly off the page
 &#8212; {figs} so far. Where it did not, the caption stands on its own and the PDF has the
@@ -170,7 +171,18 @@ picture.</p>
     lede = ("All %d papers on this site are here in full" % len(rows)
             if len(rows) >= len(PAPERS)
             else "%d of the %d papers on this site are here in full" % (len(rows), len(PAPERS)))
+    # What the list is made of. Six of these are not meta-analyses -- the applied work from
+    # the authors' central-banking years -- and a page that says only "papers" leaves a reader
+    # to discover that by clicking. The number is derived from estimates.csv, which is one row
+    # per meta-analysis, so it cannot drift from what /results/ shows.
+    _meta = sum(1 for _r in csv.DictReader(open(os.path.join(ROOT, "estimates.csv"),
+                                                encoding="utf-8")))
+    _other = len(rows) - _meta
+    composition = (("%d answer a question on <a href=\"/results/\">Headline results</a>; the "
+                    "other %d are applied work in banking, monetary policy and energy.")
+                   % (_meta, _other)) if _other > 0 else ""
     out = page.format(n=len(rows), lede=lede, listed=listed, figs=figs, footer=load_footer(),
+                      composition=composition,
                       jsonld=json.dumps(ld, ensure_ascii=False, separators=(",", ":")))
     outdir = os.path.join(ROOT, "papers")
     os.makedirs(outdir, exist_ok=True)

@@ -263,7 +263,7 @@
   <url><loc>https://meta-analysis.cz/forward/forward.pdf</loc><lastmod>2026-06-25</lastmod></url>
   <url><loc>https://meta-analysis.cz/forward/forward2.pdf</loc><lastmod>2026-06-25</lastmod></url>
   <url><loc>https://meta-analysis.cz/pcc_survey/pcc_survey.pdf</loc><lastmod>2026-08-05</lastmod></url>
-  <url><loc>https://meta-analysis.cz/about/</loc><lastmod>2026-08-25</lastmod></url>
+  <url><loc>https://meta-analysis.cz/about/</loc><lastmod>2026-08-27</lastmod></url>
   <url><loc>https://meta-analysis.cz/datasets/</loc><lastmod>2026-08-25</lastmod></url>
   <url><loc>https://meta-analysis.cz/komentare/</loc><lastmod>2026-08-26</lastmod></url>
   <url><loc>https://meta-analysis.cz/komentare/lockdowny-zkratme-prazdniny/</loc><lastmod>2026-08-25</lastmod></url>
@@ -508,14 +508,14 @@
   <url><loc>https://meta-analysis.cz/notes/voxeu-armington/</loc><lastmod>2026-08-25</lastmod></url>
   <url><loc>https://meta-analysis.cz/notes/maer-reporting-guidelines/</loc><lastmod>2026-08-25</lastmod></url>
   <url><loc>https://meta-analysis.cz/notes/maer-methods-guidelines/</loc><lastmod>2026-08-25</lastmod></url>
-  <url><loc>https://meta-analysis.cz/papers/</loc><lastmod>2026-08-26</lastmod></url>
+  <url><loc>https://meta-analysis.cz/papers/</loc><lastmod>2026-08-27</lastmod></url>
   <url><loc>https://meta-analysis.cz/publications/</loc><lastmod>2026-08-27</lastmod></url>
   <url><loc>https://meta-analysis.cz/publications/irsova/</loc><lastmod>2026-08-27</lastmod></url>
-  <url><loc>https://meta-analysis.cz/results/</loc><lastmod>2026-08-26</lastmod></url>
-  <url><loc>https://meta-analysis.cz/search/</loc><lastmod>2026-08-26</lastmod></url>
+  <url><loc>https://meta-analysis.cz/results/</loc><lastmod>2026-08-27</lastmod></url>
+  <url><loc>https://meta-analysis.cz/search/</loc><lastmod>2026-08-27</lastmod></url>
   <url><loc>https://meta-analysis.cz/api/v1/datasets.json</loc><lastmod>2026-08-23</lastmod></url>
-  <url><loc>https://meta-analysis.cz/api/v1/papers.json</loc><lastmod>2026-08-26</lastmod></url>
-  <url><loc>https://meta-analysis.cz/api/v1/search-index.json</loc><lastmod>2026-08-26</lastmod></url>
+  <url><loc>https://meta-analysis.cz/api/v1/papers.json</loc><lastmod>2026-08-27</lastmod></url>
+  <url><loc>https://meta-analysis.cz/api/v1/search-index.json</loc><lastmod>2026-08-27</lastmod></url>
   <url><loc>https://meta-analysis.cz/api/v1/datapackage.json</loc><lastmod>2026-08-21</lastmod></url>
   <url><loc>https://meta-analysis.cz/api/v1/croissant.json</loc><lastmod>2026-08-25</lastmod></url>
   <url><loc>https://meta-analysis.cz/data/v1/estimates_harmonised.csv</loc><lastmod>2026-08-21</lastmod></url>
