@@ -2202,7 +2202,8 @@
     "href": "160216_Bankscope.xlsx"
    }
   ],
-  "version": "accepted_manuscript"
+  "version": "accepted_manuscript",
+  "version_note": "Four typographical errors that the journal's copy-editor caught are corrected here. The appendix tables are the ones the authors wrote: the published article moves the confidence intervals to the publisher's online supplement, and prints no table at all for the weekly and crisis-subsample estimates."
  },
  {
   "project": "crisis_ews",
@@ -2277,7 +2278,8 @@
     "href": "code.R"
    }
   ],
-  "version": "accepted_manuscript"
+  "version": null,
+  "version_note": "The corrections the journal made in copy-editing are folded in here, among them the annual savings figure in Section 5.2, and the tables carry the numbering of the version of record. The reference list keeps the authors' own style."
  },
  {
   "project": "elb",

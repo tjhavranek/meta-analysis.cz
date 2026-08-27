@@ -821,6 +821,12 @@ def build_page(project, meta, body, toc):
                       "copy-editing and typesetting; cite the version of record.")
     elif _v == "working_paper":
         attr_p.append("The text here is the working paper.")
+    # Sometimes "accepted manuscript" is true but not the whole truth. On contagion the
+    # accepted manuscript carries twenty appendix tables the published article does not
+    # print at all, so a reader told only "cite the version of record" would go looking
+    # for numbers that are not there. A paper that needs a sentence of its own supplies it.
+    if meta.get("version_note"):
+        attr_p.append(inline(meta["version_note"]))
     attribution.append("<p>%s</p>" % " ".join(attr_p))
     parent_label = meta.get("parent_label")
     links = []

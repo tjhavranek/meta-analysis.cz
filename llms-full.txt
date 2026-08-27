@@ -7332,7 +7332,7 @@ We find that the threat of contagion between local banks and their foreign owner
 
 The contribution of our analysis in comparison with previous research is threefold. First, our paper is the first to focus on the relationship between foreign parent banks and their local subsidiaries and compare the risks of contagion from ailing parents to healthy daughters with the relationships between individual banks in the local market. Second, few studies have analyzed systemic risk in Central and Eastern Europe (the rare examples include, for instance, Arvai et al. 2009; Cihak et al. 2007). Third, we employ modern techniques well-suited to the examination of interdependencies in downside risk between banks (Slijkerman et al. 2013).
 
-Our results also point to much weaker co-movement of extreme losses in stock prices between a local bank and its foreign owner than between local banks. This finding seems to contrast with a relatively large literature on stock market comovements in Central and Eastern Europe. For example, Horvath and Petrovski (2013) conclude that stock markets in the Czech Republic, Hungary, and Poland are heavily correlated with those in Western Europe. Gjika and Horvath (2013) report a high level of market integration between the Czech Republic, Hungary, and Poland and the euro area. The analysis of Syllignakis and Kouretas (2011) shows similar results. Our findings are different because we use a more flexible, non-parametric method that focuses on large outlying shocks in financial markets. This method captures extreme dependence a allows for heavy tails. Thus, we measure effects the previous studies did not capture.
+Our results also point to much weaker co-movement of extreme losses in stock prices between a local bank and its foreign owner than between local banks. This finding seems to contrast with a relatively large literature on stock market comovements in Central and Eastern Europe. For example, Horvath and Petrovski (2013) conclude that stock markets in the Czech Republic, Hungary, and Poland are heavily correlated with those in Western Europe. Gjika and Horvath (2013) report a high level of market integration between the Czech Republic, Hungary, and Poland and the euro area. The analysis of Syllignakis and Kouretas (2011) shows similar results. Our findings are different because we use a more flexible, non-parametric method that focuses on large outlying shocks in financial markets. This method captures extreme dependence and allows for heavy tails. Thus, we measure effects the previous studies did not capture.
 
 The remainder of the paper is organized as follows: Section 2 discusses related literature, Section 3 provides the economic rationale of our analysis, Section 4 explains the model based on extreme value theory, Section 5 describes estimation methods and data, and Section 6 discusses the results. Section 7 concludes the paper. Appendix A shows the acronyms of the bank names used in the paper, Appendix B provides additional simulation results, Appendix C contains several robustness checks, and Appendix D provides confidence intervals around our central estimates.
 
@@ -7352,7 +7352,7 @@ A comparatively larger literature is devoted to stock market comovements. Focusi
 
 Focusing more on the methodological aspect,^{3} it is worth noting the paper by Chollete et al. (2012), who employ both the correlation and the tail dependence measure, which is similar to ours, to data from G5 countries, east Asia, and Latin America. They find that correlations and extreme dependence deliver different risk management signals. Thus, the authors conclude that the finding of correlation complexity and potential heavy tails supports the reasons for using robust dependence measures in risk management, which is what we attempt to do in this paper. The authors also find that regions show contagion risk at various times and downside dependence is also always largest for the region with largest returns.
 
-Furthermore, examining data from the US and Western Europe, Rodríguez-Moreno and Peña (2012) conclude that the CDS-based measures are superior to measures based on stock market prices. Important contribution are the models of Lehar (2005) and the ΔCoVaR model of Adrian and Brunnermeier (2008). Nevetheless, these two models substantially differ from the technique we use in this paper. Lehar's model is based on option pricing. ΔCoVaR, on the other hand, measures the contribution of an individual institution to the overall systemic risk, whereas our technique does not condition on the fall of a specific institution, i.e., ours captures the overall fragility. Moreover, ΔCoVaR suffers from disadvantages inherent to VaR models, see, for example, Kuester et al. (2006) or Daníelsson (2002). Girardi and Tolga Ergün (2013) use Multivariate GARCH to estimate modified CoVaR. Employing the US data, they find that "depository institutions were the largest contributors to systemic risk, followed by broker-dealers, insurance companies, and non-depository institutions" and that "[s]ystemic risk of all industry groups increased substantially prior to the crisis."
+Furthermore, examining data from the US and Western Europe, Rodríguez-Moreno and Peña (2012) conclude that the CDS-based measures are superior to measures based on stock market prices. Important contribution are the models of Lehar (2005) and the ΔCoVaR model of Adrian and Brunnermeier (2008). Nevertheless, these two models substantially differ from the technique we use in this paper. Lehar's model is based on option pricing. ΔCoVaR, on the other hand, measures the contribution of an individual institution to the overall systemic risk, whereas our technique does not condition on the fall of a specific institution, i.e., ours captures the overall fragility. Moreover, ΔCoVaR suffers from disadvantages inherent to VaR models, see, for example, Kuester et al. (2006) or Daníelsson (2002). Girardi and Tolga Ergün (2013) use Multivariate GARCH to estimate modified CoVaR. Employing the US data, they find that "depository institutions were the largest contributors to systemic risk, followed by broker-dealers, insurance companies, and non-depository institutions" and that "[s]ystemic risk of all industry groups increased substantially prior to the crisis."
 
 Moreover, there is a vast literature that uses correlation to capture the dependence between banks for other regions than CEE. Patro et al. (2013) use stock return correlations among financial institutions as an indicator of systemic risk. On a sample of twenty two largest bank holding companies and investment banks in the US they find a growing trend in stock return correlation among banks, which leads them to conclude that the systemic risk in the banking system has increased. Similarly, Huang et al. (2012) examine twenty two major banks in Asia and the Pacific using a method hinging on correlation, and Puzanova and Düllmann (2013), who study a panel of several dozen of the world's major commercial banks. These studies do not contain any CEE bank.
 
@@ -7631,7 +7631,7 @@ In the terminology of de Vries (2005), the latter result implies that the potent
 
 ##### 6.2. Parent-to-subsidiary estimates
 
-For each local bank we compute the dependence between the bank (subsidiary) and its parent bank. We only use the data for the period after the subsidiary was acquired by the foreign owner. The dates of acquisition are determined based on annual reports and other official sources of information. Recall that for BNP Paribas PL, BZW, and Denizbank we compute the dependence for the the former parents. An overview of the dates of foreign acquisition is provided in Table 4. The sources for the dates of acquisition are the annual reports of the corresponding local banks.
+For each local bank we compute the dependence between the bank (subsidiary) and its parent bank. We only use the data for the period after the subsidiary was acquired by the foreign owner. The dates of acquisition are determined based on annual reports and other official sources of information. Recall that for BNP Paribas PL, BZW, and Denizbank we compute the dependence for the former parents. An overview of the dates of foreign acquisition is provided in Table 4. The sources for the dates of acquisition are the annual reports of the corresponding local banks.
 
 TABLE 4. Dates of acquisition of banks analyzed.
 
@@ -7671,7 +7671,7 @@ TABLE 5. Parent-to-subsidiary dependence.
 | | BNP | TEBNK | 1.057 | 1.051 | 1.074 | 1.078 | 2116 |
 | Average | | | 1.048 | 1.045 | 1.053 | 1.057 | |
 
-We test for systemic differences between contagion among local banks and contagion from foreign owners to local banks using non-parametric Wilcoxon (1945) rank sum tests. The null hypothesis is that both samples were drawn form identical distribution; the alternative is that the means are different. We reject the null hypothesis for all levels of $t$ at the 5% significance level. We therefore conclude that the difference between the two sources of risk is statistically significant.
+We test for systemic differences between contagion among local banks and contagion from foreign owners to local banks using non-parametric Wilcoxon (1945) rank sum tests. The null hypothesis is that both samples were drawn from identical distribution; the alternative is that the means are different. We reject the null hypothesis for all levels of $t$ at the 5% significance level. We therefore conclude that the difference between the two sources of risk is statistically significant.
 
 We find that the potential for a systemic breakdown between a parent and its subsidiary is on average approximately half compared to that between subsidiaries within a country, and that the difference is statistically significant. The result has two potential explanations. First, the finding can be attributed to successful attempts by regulators to protect local banks under their jurisdiction from capital and liquidity outflows. Second, the result suggests that investors perceive some risks as specific to Central and Eastern European countries. Nevertheless, it is unclear to what proportion the effect above can be attributed to regulatory policies and to what extend to investors' perception of country-specific risks.
 
@@ -12522,7 +12522,7 @@ Only one known estimate of the electricity savings from DST in Slovakia exists: 
 
 to be strongly dependent on latitude. Moreover, the patterns of national demand for electricity change over time as new technologies penetrate European markets (Bossmann & Staffell, 2015). Electronic home appliances with stand-by modes, energy-efficient light bulbs, the transition to electric heating systems, increasing occurrence of air-conditioning, smart-homes, and even electronic cars are changing the national load curves.^{1} The discussions of DST in the EU is even more problematic since, legally, the EU regulatory bodies cannot oblige a member state to select a dedicated time zone.
 
-In recent years, following increasing economic growth and standards of living after entering the European Union, Slovakia recorded an increase in the demand for electricity—the net consumption was over 30 TWh in 2018 (Table 1). Overall energy consumption has also increased; thus, any tool for energy conservation and greenhouse gas emissions reduction is relevant. The electricity mix, however, is focused on indigenous energy sources and low-carbon technologies, such as nuclear energy (54% of the electricity generated in 2017) and renewable sources (26% of the electricity generated in 2017, of which 17% is hydro power), with the remaining 20% of energy obtained from fossil fuels (SEPS, 2017). Since 2005, the Slovak electricity market has undergone full liberalization. In 2009, Slovakia joined a market coupling project with the Czech Republic: Hungary and Romania later joined in 2012 and 2014, respectively. Market coupling resulted in more efficient utilization of cross-border capacities, which currently amount to a respectable 40% of the generating capacity (IEA, 2018). Table 1 shows that the electricity production deficit in Slovakia is being covered from imported volumes. Net imports, however, do not generally cover supply limitations but rather regional business opportunities (IEA, 2018). The upcoming finalization of two units of the nuclear plant Mochovce will cover approximately 26% of the Slovak national electricity consumption (and will reduce the high carbon-intense production from coal and imports), amounting to approximately 7 billion tons of CO2 emissions (Janda, 2018).
+In recent years, following increasing economic growth and standards of living after entering the European Union, Slovakia recorded an increase in the demand for electricity—the net consumption was over 30 TWh in 2018 (Table 1). Overall energy consumption has also increased; thus, any tool for energy conservation and greenhouse gas emissions reduction is relevant. The electricity mix, however, is focused on indigenous energy sources and low-carbon technologies, such as nuclear energy (54% of the electricity generated in 2017) and renewable sources (26% of the electricity generated in 2017, of which 17% is hydro power), with the remaining 20% of energy obtained from fossil fuels (SEPS, 2017). Since 2005, the Slovak electricity market has undergone full liberalization. In 2009, Slovakia joined a market coupling project with the Czech Republic: Hungary and Romania later joined in 2012 and 2014, respectively. Market coupling resulted in more efficient utilization of cross-border capacities, which currently amount to a respectable 40% of the generating capacity (IEA, 2018b). Table 1 shows that the electricity production deficit in Slovakia is being covered from imported volumes. Net imports, however, do not generally cover supply limitations but rather regional business opportunities (IEA, 2018b). The upcoming finalization of two units of the nuclear plant Mochovce will cover approximately 26% of the Slovak national electricity consumption (and will reduce the high carbon-intense production from coal and imports), amounting to approximately 7 billion tons of CO2 emissions (Janda, 2018).
 
 Liberalization of the market made wholesale and retail open for competition. Retail prices, however, are regulated by a price cap for all households and small enterprises. Household consumption has increased over time at a pace similar to that of overall consumption: the share of households has remained steady at 20% of overall consumption. Still, it is safe to assume that
 
@@ -12541,7 +12541,7 @@ TABLE 1. Electricity production deficit covered by imports
 | *Transportation [%]* | *2* | *2* | *2* | *2* | *2* | *2* | *2* | *2* |
 Notes: Numbers in TWh taken from SEPS (2019). Sectoral distribution of consumption in percentages (in italics) taken from SOSR (2019).
 
-the price cap discourages, to some extent, energy-efficient behavior. Moreover, market coupling is responsible for the decrease in price volatility (Janda, 2018), even though IEA (2018) reports Slovakia to have comparatively higher electricity prices than neighboring countries, especially in the industrial sector. IEA (2018) suggests a number of policy improvements to increase efficiency in energy consumption and to support competition in the market. This becomes highly relevant given the dominant trend of increasing electricity consumption in Slovakia, which according to the prognosis of SEPS (2018), has an average year-on-year growth of 1.3%, for an estimated consumption of 33.8 TWh in 2025.
+the price cap discourages, to some extent, energy-efficient behavior. Moreover, market coupling is responsible for the decrease in price volatility (Janda, 2018), even though IEA (2018b) reports Slovakia to have comparatively higher electricity prices than neighboring countries, especially in the industrial sector. IEA (2018b) suggests a number of policy improvements to increase efficiency in energy consumption and to support competition in the market. This becomes highly relevant given the dominant trend of increasing electricity consumption in Slovakia, which according to the prognosis of SEPS (2018), has an average year-on-year growth of 1.3%, for an estimated consumption of 33.8 TWh in 2025.
 
 #### 3. Data
 
@@ -12587,7 +12587,7 @@ month (decreasing in summer regardless of DST policy), jumps on non-working days
 
 Table 2 provides the descriptive statistics for the final set of data used in this analysis: electricity Consumption with hourly granularity, the hourly amount of Cooling degrees and
 
-Heating degrees, macro variables such as Electricity price and Oil Price, and hourly data on weather conditions such as Humidity, Air Pressure, Sunlight, Precipitation, sun Radiation, and Temperature. Given the data availability for other explanatory variables, we obtain hourly aggregate electricity Consumption for Slovakia for the period between April 1st, 2010, and July 31th, 2017 (downloaded from ENTSO-E, 2017). Data are collected in Central European Time, which means the last Sunday in March has 23 hours and the last Sunday in October has 25 hours. The time zone is important in order to match local temperature and pricing with the time stamp used in the ENTSO-E database.
+Heating degrees, macro variables such as Electricity price and Oil Price, and hourly data on weather conditions such as Humidity, Air Pressure, Sunlight, Precipitation, sun Radiation, and Temperature. With regard to the data availability of other explanatory variables, we obtain hourly aggregate electricity Consumption for Slovakia for the period between April 1st, 2010, and July 31th, 2017 (downloaded from ENTSO-E, 2017). Data are collected in Central European Time, which means the last Sunday in March has 23 hours and the last Sunday in October has 25 hours. The time zone is important in order to match local temperature and pricing with the time stamp used in the ENTSO-E database.
 
 #### 4. Research Design
 
@@ -12629,7 +12629,7 @@ Previous research has noted that the DST effect is not constant throughout the d
 
 $$ \log(\text{Consumption})_{hd} = \beta_0 + \beta_1 DST_{hd} + \beta_2 Treatment_{hd} + \gamma' Hours * (DST * Treatment, Temperature)_{hd} + \delta' \text{Weather variables}_{hd} + \varphi' (\text{Cyclicity, Holidays, Weekend, Seasonality})_{hd} + \epsilon' \text{Price variables}_{hd} + u_{hd}, $$ (3)
 
-where $DST_d$ is a dummy variable equal to 1 when DST policy is active at hour h of day d and $Treatment_{hd}$ is a dummy variable equal to 1 if the hour h of day d belongs to the treatment group. $\gamma'_{DST} Hours * DST_{hd} * Treatment_{hd}$ is representation of $\gamma^1_{DST}(hour_1 * DST_{hd} * Treatment_{hd}) + \gamma^2_{DST}(hour_2 * DST_{hd} * Treatment_{hd}) + \cdots + \gamma^{24}_{DST}(hour_{24} * DST_{hd} * Treatment_{hd})$ and variables $hour_1, \ldots, hour_{24}$ are dummy variables for each hour of the day. The definition of variable $\gamma'_{Temp} Hours * Temperature_{hd}$ follows the same logic and represents the interactions between the temperature and the dummy variables for an hour. The rest of the variables follow (2). To avoid loosing too many degrees of freedom, and given that temperature is generally considered to be one of the most important explanatory variables in DST models, we do not
+where $DST_d$ is a dummy variable equal to 1 when DST policy is active at hour h of day d and $Treatment_{hd}$ is a dummy variable equal to 1 if the hour h of day d belongs to the treatment group. $\gamma'_{DST} Hours * DST_{hd} * Treatment_{hd}$ is representation of $\gamma^1_{DST}(hour_1 * DST_{hd} * Treatment_{hd}) + \gamma^2_{DST}(hour_2 * DST_{hd} * Treatment_{hd}) + \cdots + \gamma^{24}_{DST}(hour_{24} * DST_{hd} * Treatment_{hd})$ and variables $hour_1, \ldots, hour_{24}$ are dummy variables for each hour of the day. The definition of variable $\gamma'_{Temp} Hours * Temperature_{hd}$ follows the same logic and represents the interactions between the temperature and the dummy variables for an hour. The rest of the variables follow (2). To avoid losing too many degrees of freedom, and given that temperature is generally considered to be one of the most important explanatory variables in DST models, we do not
 
 include interactions of hours with explanatory variables other than Temperature. The variables of interest are given by the interaction terms of $Hours * DST_{hd} * Treatment_{hd}$, which represent the percentage change in electricity consumption for a specific hour of the day due to the DST policy if every other control factor is held constant.
 
@@ -12637,7 +12637,7 @@ include interactions of hours with explanatory variables other than Temperature.
 
 ##### 5.1. Benchmark Estimation
 
-The first step in our analysis is to assess the validity of the chosen model. Given that our models suffer from both heteroskedasticity and serial correlation, we use standard errors robust to both heteroskedasticity and serial correlation with a lag of 24 (Verbeek, 2008; Mirza & Bergland, 2011). Second, given that the stationarity assumption does not hold for the variable Oil price, we drop the variable to avoid spurious regression. The results of our benchmark model using control hours from 11 AM to 1 PM can be found in Table 3. The estimates of the DST effect (coefficient of the variable DST * Treatment) suggest a decrease in electricity consumption in Slovakia of between 1.3% and 1.6% during the days when DST is applied, depending on how the relationship between temperature and consumption is modeled. In Slovakia, DST applies for 210 days of the year; thus, the yearly DST effect on electricity consumption amounts up to 0.9% (= 1.3(1.6)% ∗ 210/365) of energy savings in terms of yearly electricity consumption. These results are fairly consistent with the estimates from Bergland & Mirza (2017), which suggest a reduction in consumption due to DST of approximately 1%. Apart from the effect of the DST policy on consumption, a few other relationships should be discussed. The coefficient of the variable Treatment suggests that during our chosen control hours, consumption is lower, regardless of the DST policy (largely because the peaks in electricity consumption occur in the morning and in the evening).
+The first step in our analysis is to assess the validity of the chosen model. Given that our models suffer from both heteroskedasticity and serial correlation, we use standard errors robust to both heteroskedasticity and serial correlation with a lag of 24 (Verbeek, 2008; Mirza & Bergland, 2011). Second, given that the stationarity assumption does not hold for the variable Oil price, we drop the variable to avoid spurious regression. The results of our benchmark model using control hours from 11 AM to 1 PM can be found in Table 3. The estimates of the DST effect (coefficient of the variable DST * Treatment) suggest a decrease in electricity consumption in Slovakia of between 1.3% and 1.6% during the days when DST is applied, depending on how the relationship between temperature and consumption is modeled. In Slovakia, DST applies for 210 days of the year; thus, the yearly DST effect on electricity consumption amounts up to 0.9% (= 1.6% ∗ 210/365) of energy savings as a portion of yearly electricity consumption. These results are fairly consistent with the estimates from Bergland & Mirza (2017), which suggest a reduction in consumption due to DST of approximately 1%. Apart from the effect of the DST policy on consumption, a few other relationships should be discussed. The coefficient of the variable Treatment suggests that during our chosen control hours, consumption is lower, regardless of the DST policy (largely because the peaks in electricity consumption occur in the morning and in the evening).
 
 Deviations from the base temperature (Heating and Cooling degrees) increase consumption, which, as Kellogg & Wolff (2008) state, is consistent with the effects of heating (when the temperature is below 18 degrees Celsius) and air-conditioning (when the temperature is above 18 degrees Celsius). Kotchen & Grant (2011) find the change in consumption greater for cooling than heating in Indiana, which is in contradiction to what we found for the Slovak data set---
 
@@ -12783,19 +12783,19 @@ The variables capturing general weather conditions (including temperature) are m
 
 Electricity consumption on Holidays and Weekends is lower, consistent with the findings of Kellogg & Wolff (2007) and Kandel (2007). It follows that during non-working days, people sleep longer, and the morning increase in demand is mitigated by fewer morning activities. We also find that electricity consumption is reduced during the summer (the coefficient for Summer is negative), and the DST policy is believed to play a role here: in the morning, the sun rises early enough for people to wake up in natural daylight, while in the evening, an extra hour of sunlight is provided. As soon as there are no early morning benefits, as happens when DST is prolonged to early spring or later autumn months, the argument looses its power (Kellogg &
 
-Wolff, 2008). Similar reasoning applies to the coefficient of DST, which is active mostly during the summer: the coefficient represents the percentage difference in electricity consumption between the period of active and non-active DST policy use. The coefficient Electricity Price suggests positive partial correlation with consumption. However, it is most likely the result of endogeneity as the price is set to be highest value during the peak of electricity consumption. The variable could also be capturing seasonality or trend over and beyond other variables in the model due to possibly lower short-term demand flexibility of our data. To check whether our reliance on selected explanatory variables drives our conclusions, we calculate several robustness checks adapting the benchmark model to different assumptions about the best model design.
+Wolff, 2008). Similar reasoning applies to the coefficient of DST, which is active mostly during the summer: the coefficient represents the percentage difference in electricity consumption between the period of active and non-active DST policy use. The coefficient Electricity Price suggests positive partial correlation with consumption. However, it is most likely the result of endogeneity as the price is set to be highest during the peak of electricity consumption. The variable could also be capturing seasonality or trend over and beyond other variables in the model due to possibly lower short-term demand flexibility of our data. To check whether our reliance on selected explanatory variables drives our conclusions, we calculate several robustness checks adapting the benchmark model to different assumptions about the best model design.
 
 ##### 5.2. Robustness Checks
 
-To validate the conclusions discussed in the previous subsection, we provide five more specifications addressing the impact of different structural changes to the baseline models captured by Table 3. The model adjustment concerns three major issues: the alternative definition of Heating degrees and Cooling degrees, the alternative definition of Seasonality and Cyclicity, and the usage of the Electricity price variable inside the model. Given that cooling and heating were repeatedly shown to change non-linearly with temperature (Bushnell & Mansur, 2005; Kellogg & Wolff, 2008), we construct a specification employing the squared variables of Heating degrees and Cooling degrees. The first model of Table 9 captures the adjustment resulting in a lower DST estimate of 1.4% of savings when DST is applied (i.e., 0.9% annually). Although some empirical evidence suggests that the non-linear pattern is less pronounced in colder countries such as Slovakia (see, for example, Bessec & Fouquau, 2008), it perseveres in our sample and is robustly significant for the cooling efforts related to electricity consumption.
+To validate the conclusions discussed in the previous subsection, we provide five more specifications addressing the impact of different structural changes to the baseline models captured by Table 3. The model adjustment concerns three major issues: the alternative definition of Heating degrees and Cooling degrees, the alternative definition of Seasonality and Cyclicity, and the usage of the Electricity price variable inside the model. Given that cooling and heating were repeatedly shown to change non-linearly with temperature (Bushnell & Mansur, 2005; Kellogg & Wolff, 2008), we construct a specification employing the squared variables of Heating degrees and Cooling degrees. The first model of Table 8 captures the adjustment resulting in a lower DST estimate of 1.4% of savings when DST is applied (i.e., 0.8% annually). Although some empirical evidence suggests that the non-linear pattern is less pronounced in colder countries such as Slovakia (see, for example, Bessec & Fouquau, 2008), it perseveres in our sample and is robustly significant for the cooling efforts related to electricity consumption.
 
-Second, it can be the case that for some temperature interval neither heating nor cooling is necessary. In that case, the base temperature of 18°C would be different for both cooling and heating efforts. For the second specification of Table 9, we redefine Cooling degrees as $\max\{Temperature - 21^\circ C, 0\}$, and Heating degrees as $\max\{15^\circ C - Temperature, 0\}$. The choice of the interval 15, 21 of no electricity utilization for heating/cooling follows the temperature extremes of the indicative heating and cooling season in Slovakia (Lieskovsky et al., 2019, provide monthly ranges for the seasons’ duration). The range also roughly corresponds to the inflection
+Second, it can be the case that for some temperature interval neither heating nor cooling is necessary. In that case, the base temperature of 18°C would be different for both cooling and heating efforts. For the second specification of Table 8, we redefine Cooling degrees as $\max\{Temperature - 21^\circ C, 0\}$, and Heating degrees as $\max\{15^\circ C - Temperature, 0\}$. The choice of the interval 15, 21 of no electricity utilization for heating/cooling follows the temperature extremes of the indicative heating and cooling season in Slovakia (Lieskovsky et al., 2019, provide monthly ranges for the seasons’ duration). The range also roughly corresponds to the inflection
 
-points on the consumption-temperature curve throughout the day in our data set (displayed at noon in Figure 1). The resulting DST effect decreases to 1.4% again, and the additional assumption of non-linearity in the heating/cooling efforts (not reported in Table 9) in this case does not change the economic or statistical significance of the estimated DST effect.
+points on the consumption-temperature curve throughout the day in our data set (displayed at noon in Figure 1). The resulting DST effect decreases to 1.4% in days when DST is applied again, and the additional assumption of non-linearity in the heating/cooling efforts (not reported in Table 8) in this case does not change the economic or statistical significance of the estimated DST effect.
 
-Our representation of the seasonal or cyclical annual patterns includes months, summer, and a simple sinusoidal function capturing a possible residue in the annual pattern. A cyclical component of the electricity consumption may be, however, extracted from the data by a straightforward application of both the sine and cosine functions. Such application is often considered parsimonious relative to the use of many monthly dummies (Bergland & Mirza, 2017), it can better locate the consumption peaks, and increases the number of degrees of freedom compared to our baseline estimation. The third and fourth specification of Table 9 show the sensitivity of our baseline models when seasonalities and cyclicalities shaping the annual patterns are defined solely by trigonometric functions. In this case the DST effect rises to 1.9% of savings from the policy when DST is applied (i.e., to 1.1% of annual electricity consumption).
+Our representation of the seasonal or cyclical annual patterns includes months, summer, and a simple sinusoidal function capturing a possible residue in the annual pattern. A cyclical component of the electricity consumption may be, however, extracted from the data by a straightforward application of both the sine and cosine functions. Such application is often considered parsimonious relative to the use of many monthly dummies (Bergland & Mirza, 2017), it can better locate the consumption peaks, and increases the number of degrees of freedom compared to our baseline estimation. The third and fourth specification of Table 8 show the sensitivity of our baseline models when seasonalities and cyclicalities shaping the annual patterns are defined solely by trigonometric functions. In this case the DST effect rises to 1.9% of savings from the policy when DST is applied (i.e., to 1.1% of annual electricity consumption).
 
-We do not have any strong instrument at disposal to account for the endogeneity the Electricity price variable most probably brings to our estimation. The price variable is likely associated with seasonality (high consumption periods are associated with high prices). Therefore, we analyze the sensitivity of our estimated DST effect to an estimate stemming from a model without Electricity price.^{3} Discarding the variable from our baseline does not change the value of the DST effect (thus is not reported in Table 9). Our final specification in Model 5 of Table 9, however, shows what happens when all possible changes to the baseline are applied cumulatively: the model ignores Electricity price, uses redefined Heating degrees and Cooling degrees with their squared values, and employs trigonometric functions instead of Seasonality dummies. The resulting DST effect amounts to 2% of savings when DST is applied, equivalent to 1.2% of annual savings on total electricity consumption—very close to our baseline estimate of 1% with a similar and small standard error.
+We do not have any strong instrument at disposal to account for the endogeneity the Electricity price variable most probably brings to our estimation. The price variable is likely associated with seasonality (high consumption periods are associated with high prices). Therefore, we analyze the sensitivity of our estimated DST effect to an estimate stemming from a model without Electricity price.^{3} Discarding the variable from our baseline does not change the value of the DST effect (thus is not reported in Table 8). Our final specification in Model 5 of Table 8, however, shows what happens when all possible changes to the baseline are applied cumulatively: the model ignores Electricity price, uses redefined Heating degrees and Cooling degrees with their squared values, and employs trigonometric functions instead of Seasonality dummies. The resulting DST effect amounts to 2% of savings when DST is applied, equivalent to 1.2% of annual savings on total electricity consumption—very close to our baseline estimate of 1% with a similar and small standard error.
 
 Previous studies using the “equivalent day normalization technique” on electricity consumption used the same set of control hours that, by common sense, should be unaffected by the DST policy. As a final robustness check, we show in Table 4 how the different sets of control
 
@@ -12813,7 +12813,7 @@ hours and different approaches to capturing the effects of temperature could aff
 
 ##### 5.3. Meta-Analysis Estimate
 
-To confront the empirical estimates of Table 4 and Table 9 with broader evidence based on international data, we employ the study of Havranek et al. (2018a) and replicate their best-practice approach to estimate the DST effect based on the literature covering the last 40 years of research. The data set in Havranek et al. (2018a) codes 162 independent estimates of the DST effect from various studies, their statistical measures of precision, and different aspects of study design, including method and publication characteristics. To show a systematic dependence between the DST effects and study design, the authors use state-of-the-art techniques to estimate the meta-regression, taking into account the publication bias often present in the economic literature (Havranek & Irsova, 2010; Babecky & Havranek, 2014; Havranek & Irsova,
+To confront the empirical estimates of Tables 4 and 8 with broader evidence based on international data, we employ the study of Havranek et al. (2018a) and replicate their best-practice approach to estimate the DST effect based on the literature covering the last 40 years of research. The data set in Havranek et al. (2018a) codes 162 independent estimates of the DST effect from various studies, their statistical measures of precision, and different aspects of study design, including method and publication characteristics. To show a systematic dependence between the DST effects and study design, the authors use state-of-the-art techniques to estimate the meta-regression, taking into account the publication bias often present in the economic literature (Havranek & Irsova, 2010; Babecky & Havranek, 2014; Havranek & Irsova,
 
 2017; Havranek et al., 2018b,c). We take the results of this estimation (posterior means from the Bayesian Model Averaging model of Havranek et al., 2018a, from Table 5 on p. 49) and the best-practice specification of Havranek et al. (2018a) to remain consistent with their estimates.
 
@@ -12837,7 +12837,7 @@ Notes: The figure shows the distribution of the DST effect on electricity consum
 
 show that the increase in morning consumption exceeds any savings and that the overall DST effect is an increase in consumption. The policy impact becomes especially important when no production capacity is available to meet the increased peak demand. Given that Slovakia has large generating capacity, the policy effects should not create additional installation expenses but could result in lower generation costs. Figure 3 indicates a reduction in peak electricity consumption during the morning and evening hours after the policy change but also an increase in electricity consumption during the rest of the day.
 
-The estimation of (3) in Table 8 corresponds to such policy impacts: the largest energy savings occur during evening peak hours from 5PM to 8PM and range from 0.6% to almost 3% of hourly consumption. Another peak occurs in the morning from 5AM to 7AM and ranges between 0.5% and 1.5% savings. Similar patterns are observed in previous studies; see, for example, Mirza & Bergland (2011) and Verdejo et al. (2016). On the other hand, an increase in electricity demand occurs at night between 9PM and 12PM, and the cost reaches 1.3% of electricity consumption. The early morning hours bring small changes in the magnitude of the effect and are statistically insignificant. The summary of the DST impact of individual hours can be found in Figure 4.
+The estimation of (3) in Table 9 corresponds to such policy impacts: the largest energy savings occur during evening peak hours from 5PM to 8PM and range from 0.6% to almost 3% of hourly consumption. Another peak occurs in the morning from 5AM to 7AM and ranges between 0.5% and 1.5% savings. Similar patterns are observed in previous studies; see, for example, Mirza & Bergland (2011) and Verdejo et al. (2016). On the other hand, an increase in electricity demand occurs at night between 9PM and 12PM, and the cost reaches 1.3% of electricity consumption. The early morning hours bring small changes in the magnitude of the effect and are statistically insignificant. The summary of the DST impact of individual hours can be found in Figure 4.
 
 TABLE 6. Financial savings from reduced household consumption
 
@@ -12854,7 +12854,7 @@ Notes: The table presents a valuation for the DST estimate of our benchmark mode
 
 Our preferred estimate from the difference-in-difference analysis indicates that the DST effect on electricity consumption in Slovakia reaches 1.6% (Table 3), while the synthetic estimate based on the study of Havranek et al. (2018a) indicates an effect of no more than 0.9% for the period when the DST policy is active (corresponding to the range between 0.5% and 1% of annual savings). In Table 6, we estimate the welfare effect stemming from decreased consumption due to DST based on these two estimates. We use ENTSO-E (2017) data to estimate the portion of electricity consumption saved and the yearly residential electricity prices (retrieved from Eurostat, 2019) for the period of 2010–2016. Although the assumption that the energy savings are created only for households is strong, we want to show the maximum possible savings. This price includes the production costs of electricity, network costs, taxes and levies. The valuation of Table 6 shows savings between 120 GWh and 250 GWh, which translates between EUR 2M and EUR 4M of financial benefit. Since a common Slovak household annually consumes approximately 20 MWh (SPP, 2017), the energy savings could be compared to the total energy consumption of 6,000 to 13,000 households per year.
 
-#### 6. Conclusion
+#### 6. Conclusion and policy implications
 
 The daylight saving time policy in Europe was originally introduced for the purpose of energy savings. Recent academic evidence, such as Hill et al. (2010), Bergland & Mirza (2017), and Havranek et al. (2018a), suggests the unified policy across the European Union has different impacts on the electricity consumption of its member states. This paper provides the first comprehensive analysis of the DST effects on electricity consumption in Slovakia. Using 2010–2017
 
@@ -12862,7 +12862,7 @@ hourly electricity load data and accounting for different weather conditions, ma
 
 We also observe that the DST effect varies throughout the day. The decrease in demand for electricity due to the policy occurs mostly during the early morning hours and early evening hours, amounting to, during some hours, almost 3% of electricity consumption when the policy is applied. The forenoon hours tend to be impacted the least, while the largest costs due to the policy are observed before midnight, reaching 1.6% of consumption when the policy is applied. The DST policy decreases peak consumption during the early morning and early evening hours and does not present any additional constraint on generating capacity. An important positive effect of the policy is thus redistributing consumption more evenly during the day. The overall annual effect of 0.5%–1% of savings on electricity consumption corresponds to the total annual energy consumption of approximately 6,000 to 13,000 Slovak households. The direct benefits of the DST policy thus bring significant economic savings of about 2 to 4mEUR annually (based on the 2016 energy savings from DST of about 140GWh).
 
-Often excluded from the analysis of DST are indirect benefits of the policy. Such an indirect benefit comes in the form of carbon abatement and can be calculated using the concept of the social cost of carbon. Social cost of carbon represents the dollar value of total damages from emitting one ton of carbon dioxide into the atmosphere (see, for example, Havranek et al., 2015). In terms of emissions saved from electricity generation due to DST, 140GWh amounts to approximately 35kt of CO2 (or 48kt of CO2eq, based on the national emission factors for consumed energy published by IEA, 2018). Using the authoritative estimate of the social cost of carbon by Pindyck (2019), the social savings due to the use of DST are about 0.9—1.5 mEUR, which represents approximately a half of the direct savings from the lower electricity consumption.
+Often excluded from the analysis of DST are indirect benefits of the policy. Such an indirect benefit comes in the form of carbon abatement and can be calculated using the concept of the social cost of carbon. Social cost of carbon represents the dollar value of total damages from emitting one ton of carbon dioxide into the atmosphere (see, for example, Havranek et al., 2015). In terms of emissions saved from electricity generation due to DST, 140GWh amounts to approximately 35kt of CO2 (or 48kt of CO2eq, based on the national emission factors for consumed energy published by IEA, 2018a). Using the authoritative estimate of the social cost of carbon by Pindyck (2019), the social savings due to the use of DST are about 0.9—1.5 mEUR, which represents approximately a half of the direct savings from the lower electricity consumption.
 
 This estimate of indirect benefits could still be viewed as a conservative one. The effects of the DST policy are limited to marginal changes in domestic consumption in certain hours of the day in a certain period of the year; it may be the case that the marginal change in emissions are different from the national average. Unfortunately, for Slovakia there are no data revealing the marginal technology in the different hours and seasons. In Slovakia, as is the case elsewhere, changes in the intra-day load curve due to the DST policy probably affect the fuel mix used for the electricity generation. The electricity saved from smoothing the peak demand comes from the sources where electricity is available on short notice (i.e., the emission-heavy coal or gas power plants). If the electricity savings came from the coal power plants only, for example, the amount of saved emissions could be as much as 113kt of CO2, which translates to social benefits of at least 2.8 mEUR.
 
@@ -12978,9 +12978,9 @@ HMSO (1970): Review of British Standard Time. Command 4512 Series. Her Majesty�
 
 Holland, N. & J. Hinze (2000): “Daylight savings time changes and construction accidents.” Journal of Construction Engineering and Management 126(5): pp. 404–406.
 
-IEA (2018): “Emissions factors.” IEA Statistics 2018 edition, International Energy Agency.
+IEA (2018a): “Emissions factors.” IEA Statistics 2018 edition, International Energy Agency.
 
-IEA (2018): “Energy policies of IEA countries: Slovak Republic 2018 review.” Technical report, International Energy Agency.
+IEA (2018b): “Energy policies of IEA countries: Slovak Republic 2018 review.” Technical report, International Energy Agency.
 
 Janda, K. (2018): “Slovak electricity market and the price merit order effect of photovoltaics.” Energy Policy 122: p. 551–562.
 
@@ -13105,7 +13105,149 @@ TABLE 7. Validity of control hours
 | Hour 14 | -0.027^{**} | 0.012 |
 Notes: The table presents a validation test for the correct group of control hours (insignificance indicates that the hour is not affected by the DST policy). Test follows (1) with the pair of variables Temperature and Temperature squared. The specification with the pair of variables Cooling degrees and Heating degrees does not change the conclusions of the test. To account for potential heteroskedasticity and serial correlation, we follow Verbeek (2008) and use heteroskedasticity and autocorrelation consistent (HAC) standard errors (SE) with 24 lags. ∗p<0.1; ∗∗p<0.05; ∗∗∗p<0.01.
 
-TABLE 8. Hourly DST effects using different groups of control hours
+TABLE 8. Robustness checks to benchmark models using different model specifications
+
+| Variable | Model 1 using C/H squared | Model 2 using new C/H | Model 3 using sin/cos | Model 4 using sin/cos | Model 5 using new C/H sq, sin, cos, no price |
+| --- | --- | --- | --- | --- | --- |
+| Constant | 7.723∗∗∗ | 7.729∗∗∗ | 7.750∗∗∗ | 7.710∗∗∗ | 8.131∗∗∗ |
+|  | (0.068) | (0.067) | (0.077) | (0.068) | (0.076) |
+| *DST* | -0.015∗∗ | -0.013∗ | -0.039∗∗∗ | -0.034∗∗∗ | -0.028∗∗∗ |
+|  | (0.005) | (0.005) | (0.003) | (0.003) | (0.003) |
+| *Treatment* | -0.133∗∗∗ | -0.133∗∗∗ | -0.136∗∗∗ | -0.138∗∗∗ | -0.170∗∗∗ |
+|  | (0.002) | (0.002) | (0.002) | (0.002) | (0.002) |
+| DST * Treatment | -0.0138∗∗∗ | -0.0141∗∗∗ | -0.0178∗∗∗ | -0.0188∗∗∗ | -0.0201∗∗∗ |
+|  | (0.001) | (0.001) | (0.001) | (0.001) | (0.001) |
+| *Temperature variables* |  |  |  |  |  |
+| Temperature |  |  | -0.005∗∗∗ |  |  |
+|  |  |  | (0.0003) |  |  |
+| Temperature squared |  |  | 0.00009∗∗∗ |  |  |
+|  |  |  | (0.00001) |  |  |
+| Heating degrees | 0.002∗∗∗ | 0.004∗∗∗ |  | 0.005∗∗∗ | 0.007∗∗∗ |
+|  | (0.0003) | (0.0002) |  | (0.0002) | (0.0004) |
+| Heating degrees squared | 0.0001∗∗∗ |  |  |  | -0.00003 |
+|  | (0.00001) |  |  |  | (0.00002) |
+| Cooling degrees | -0.0001 | 0.003∗∗∗ |  | 0.0006∗ | -0.004∗∗∗ |
+|  | (0.0005) | (0.0003) |  | (0.0003) | (0.001) |
+| Cooling degrees squared | 0.0002∗∗∗ |  |  |  | 0.0007∗∗∗ |
+|  | (0.00004) |  |  |  | (0.0001) |
+| *Weather variables* |  |  |  |  |  |
+| Humidity | 0.00004 | 0.000004 | -0.00006 | -0.00004 | 0.0001 |
+|  | (0.0001) | (0.0001) | (0.00007) | (0.00006) | (0.0001) |
+| Air pressure | -0.00003 | -0.00003 | -0.00003 | -0.00002 | 0.000001 |
+|  | (0.00004) | (0.00004) | (0.00005) | (0.00004) | (0.0001) |
+| Sunlight | -0.001∗∗∗ | -0.0006∗∗∗ | -0.0005∗∗∗ | -0.0005∗∗∗ | -0.001∗∗∗ |
+|  | (0.00004) | (0.00004) | (0.00004) | (0.00004) | (0.00004) |
+| Precipitation | 0.003∗∗∗ | 0.004∗∗∗ | 0.003∗∗ | 0.003∗∗ | 0.001 |
+|  | (0.001) | (0.0008) | (0.001) | (0.001) | (0.001) |
+| Radiation | 0.0001∗∗∗ | 0.00005∗∗∗ | 0.00001 | -0.00002 | -0.00004∗∗ |
+|  | (0.00001) | (0.00001) | (0.00001) | (0.00001) | (0.00001) |
+| *Price variable* |  |  |  |  |  |
+| Electricity price | 0.002∗∗∗ | 0.002∗∗∗ | 0.002∗∗∗ | 0.002∗∗∗ |  |
+|  | (0.00007) | (0.00007) | (0.00009) | (0.00008) |  |
+| *Holidays* | -0.068∗∗∗ | -0.068∗∗∗ | -0.071∗∗∗ | -0.072∗∗∗ | -0.092∗∗∗ |
+|  | (0.005) | (0.005) | (0.007) | (0.005) | (0.007) |
+| *Weekend* | -0.077∗∗∗ | -0.076∗∗∗ | -0.076∗∗∗ | -0.076∗∗∗ | -0.100∗∗∗ |
+|  | (0.002) | (0.002) | (0.002) | (0.002) | (0.001) |
+| *Cyclicity (sin)* | 0.0001∗∗∗ | 0.0001∗∗∗ | 0.0001∗∗∗ | 0.0001∗∗∗ | 0.00003∗ |
+|  | (0.00002) | (0.00002) | (0.00001) | (0.00001) | (0.00001) |
+| *Cyclicity (cos)* |  |  | 0.00004∗∗∗ | 0.00003∗∗∗ | -0.000004 |
+|  |  |  | (0.00001) | (0.00001) | (0.00001) |
+| *Seasonality* |  |  |  |  |  |
+| Summer | -0.005∗ | -0.005∗ |  |  |  |
+|  | (0.002) | (0.002) |  |  |  |
+| January | 0.070∗∗∗ | 0.067∗∗∗ |  |  |  |
+|  | (0.007) | (0.007) |  |  |  |
+| February | 0.078∗∗∗ | 0.076∗∗∗ |  |  |  |
+|  | (0.007) | (0.007) |  |  |  |
+| March | 0.062∗∗∗ | 0.059∗∗∗ |  |  |  |
+|  | (0.007) | (0.006) |  |  |  |
+| April | 0.025∗∗∗ | 0.022∗∗∗ |  |  |  |
+|  | (0.004) | (0.004) |  |  |  |
+| May | 0.006 | 0.006 |  |  |  |
+|  | (0.004) | (0.004) |  |  |  |
+| June | 0.010∗∗∗ | 0.010∗∗∗ |  |  |  |
+|  | (0.003) | (0.003) |  |  |  |
+| July | -0.0004 | -0.001 |  |  |  |
+|  | (0.003) | (0.003) |  |  |  |
+| September | 0.029∗∗∗ | 0.028∗∗∗ |  |  |  |
+|  | (0.003) | (0.003) |  |  |  |
+| October | 0.057∗∗∗ | 0.055∗∗∗ |  |  |  |
+|  | (0.004) | (0.004) |  |  |  |
+| November | 0.060∗∗∗ | 0.057∗∗∗ |  |  |  |
+|  | (0.006) | (0.006) |  |  |  |
+| December | 0.063∗∗∗ | 0.060∗∗∗ |  |  |  |
+|  | (0.007) | (0.007) |  |  |  |
+| Year 2010 | -0.064∗∗∗ | -0.064∗∗∗ | -0.063∗∗∗ | -0.064∗∗∗ | -0.058∗∗∗ |
+|  | (0.003) | (0.003) | (0.004) | (0.003) | (0.003) |
+| Year 2011 | -0.069∗∗∗ | -0.069∗∗∗ | -0.064∗∗∗ | -0.066∗∗∗ | -0.052∗∗∗ |
+
+TABLE 8 (continued). Robustness checks to benchmark models using different model specifications
+
+| Variable | Model 1 using C/H sq | Model 2 using new C/H | Model 3 using sin/cos | Model 4 using sin/cos | Model 5 using new C/H sq, sin, cos, no price |
+| --- | --- | --- | --- | --- | --- |
+|  | (0.003) | (0.003) | (0.004) | (0.003) | (0.003) |
+| Year 2012 | -0.054∗∗∗ | -0.054∗∗∗ | -0.049∗∗∗ | -0.051∗∗∗ | -0.051∗∗∗ |
+|  | (0.003) | (0.003) | (0.003) | (0.003) | (0.003) |
+| Year 2013 | -0.045∗∗∗ | -0.046∗∗∗ | -0.040∗∗∗ | -0.042∗∗∗ | -0.053∗∗∗ |
+|  | (0.003) | (0.003) | (0.003) | (0.003) | (0.003) |
+| Year 2014 | -0.057∗∗∗ | -0.057∗∗∗ | -0.051∗∗∗ | -0.052∗∗∗ | -0.069∗∗∗ |
+|  | (0.003) | (0.003) | (0.004) | (0.003) | (0.003) |
+| Year 2015 | -0.030∗∗∗ | -0.030∗∗∗ | -0.023∗∗∗ | -0.026∗∗∗ | -0.044∗∗∗ |
+|  | (0.003) | (0.003) | (0.003) | (0.003) | (0.003) |
+| Year 2016 | -0.011∗∗∗ | -0.012∗∗∗ | -0.005 | -0.008∗∗∗ | -0.032∗∗∗ |
+|  | (0.003) | (0.003) | (0.003) | (0.003) | (0.003) |
+| Hour 1 | -0.034∗∗∗ | -0.033∗∗∗ | -0.034∗∗∗ | -0.034∗∗∗ | -0.040∗∗∗ |
+|  | (0.0004) | (0.0004) | (0.0004) | (0.001) | (0.0003) |
+| Hour 2 | -0.072∗∗∗ | -0.072∗∗∗ | -0.072∗∗∗ | -0.072∗∗∗ | -0.084∗∗∗ |
+|  | (0.001) | (0.001) | (0.001) | (0.001) | (0.001) |
+| Hour 3 | -0.092∗∗∗ | -0.092∗∗∗ | -0.092∗∗∗ | -0.093∗∗∗ | -0.108∗∗∗ |
+|  | (0.001) | (0.001) | (0.001) | (0.001) | (0.001) |
+| Hour 4 | -0.092∗∗∗ | -0.091∗∗∗ | -0.092∗∗∗ | -0.093∗∗∗ | -0.111∗∗∗ |
+|  | (0.001) | (0.001) | (0.001) | (0.001) | (0.001) |
+| Hour 5 | -0.079∗∗∗ | -0.079∗∗∗ | -0.080∗∗∗ | -0.081∗∗∗ | -0.098∗∗∗ |
+|  | (0.001) | (0.001) | (0.001) | (0.001) | (0.001) |
+| Hour 6 | -0.055∗∗∗ | -0.055∗∗∗ | -0.056∗∗∗ | -0.057∗∗∗ | -0.069∗∗∗ |
+|  | (0.001) | (0.001) | (0.001) | (0.001) | (0.001) |
+| Hour 7 | 0.022∗∗∗ | 0.022∗∗∗ | 0.020∗∗∗ | 0.020∗∗∗ | 0.024∗∗∗ |
+|  | (0.001) | (0.001) | (0.001) | (0.001) | (0.001) |
+| Hour 8 | 0.065∗∗∗ | 0.065∗∗∗ | 0.063∗∗∗ | 0.064∗∗∗ | 0.085∗∗∗ |
+|  | (0.002) | (0.002) | (0.002) | (0.002) | (0.002) |
+| Hour 9 | 0.103∗∗∗ | 0.103∗∗∗ | 0.102∗∗∗ | 0.103∗∗∗ | 0.133∗∗∗ |
+|  | (0.002) | (0.002) | (0.002) | (0.002) | (0.001) |
+| Hour 10 | 0.131∗∗∗ | 0.131∗∗∗ | 0.131∗∗∗ | 0.133∗∗∗ | 0.167∗∗∗ |
+|  | (0.002) | (0.002) | (0.002) | (0.002) | (0.001) |
+| Hour 11 | -0.003∗∗∗ | -0.003∗∗∗ | -0.006∗∗∗ | -0.006∗∗∗ | -0.005∗∗∗ |
+|  | (0.001) | (0.001) | (0.001) | (0.001) | (0.001) |
+| Hour 12 | 0.003∗∗∗ | 0.003∗∗∗ | 0.001∗ | 0.001∗∗ | 0.004∗∗∗ |
+|  | (0.0005) | (0.0005) | (0.0004) | (0.001) | (0.001) |
+| Hour 14 | 0.136∗∗∗ | 0.136∗∗∗ | 0.142∗∗∗ | 0.144∗∗∗ | 0.174∗∗∗ |
+|  | (0.002) | (0.002) | (0.002) | (0.002) | (0.002) |
+| Hour 15 | 0.124∗∗∗ | 0.124∗∗∗ | 0.131∗∗∗ | 0.132∗∗∗ | 0.159∗∗∗ |
+|  | (0.002) | (0.002) | (0.002) | (0.002) | (0.002) |
+| Hour 16 | 0.115∗∗∗ | 0.115∗∗∗ | 0.121∗∗∗ | 0.122∗∗∗ | 0.148∗∗∗ |
+|  | (0.002) | (0.002) | (0.002) | (0.002) | (0.002) |
+| Hour 17 | 0.115∗∗∗ | 0.114∗∗∗ | 0.121∗∗∗ | 0.121∗∗∗ | 0.148∗∗∗ |
+|  | (0.002) | (0.002) | (0.002) | (0.002) | (0.001) |
+| Hour 18 | 0.108∗∗∗ | 0.108∗∗∗ | 0.113∗∗∗ | 0.113∗∗∗ | 0.147∗∗∗ |
+|  | (0.002) | (0.002) | (0.002) | (0.002) | (0.001) |
+| Hour 19 | 0.102∗∗∗ | 0.101∗∗∗ | 0.106∗∗∗ | 0.105∗∗∗ | 0.144∗∗∗ |
+|  | (0.002) | (0.002) | (0.002) | (0.002) | (0.001) |
+| Hour 20 | 0.108∗∗∗ | 0.107∗∗∗ | 0.110∗∗∗ | 0.110∗∗∗ | 0.149∗∗∗ |
+|  | (0.002) | (0.002) | (0.002) | (0.002) | (0.001) |
+| Hour 21 | 0.110∗∗∗ | 0.109∗∗∗ | 0.111∗∗∗ | 0.111∗∗∗ | 0.144∗∗∗ |
+|  | (0.001) | (0.001) | (0.002) | (0.001) | (0.001) |
+| Hour 22 | 0.080∗∗∗ | 0.080∗∗∗ | 0.081∗∗∗ | 0.081∗∗∗ | 0.101∗∗∗ |
+|  | (0.001) | (0.001) | (0.001) | (0.001) | (0.001) |
+| Hour 23 | 0.037∗∗∗ | 0.037∗∗∗ | 0.037∗∗∗ | 0.037∗∗∗ | 0.050∗∗∗ |
+|  | (0.001) | (0.001) | (0.001) | (0.001) | (0.0003) |
+| Observations | 63,427 | 63,427 | 63,427 | 63,427 | 63,427 |
+| R^{2} | 0.904 | 0.904 | 0.893 | 0.895 | 0.867 |
+| Adjusted R^{2} | 0.904 | 0.903 | 0.893 | 0.894 | 0.867 |
+| Residual Std. Error | 0.042 | 0.042 | 0.044 | 0.044 | 0.049 |
+| F Statistic | 10,430∗∗∗ | 10,790∗∗∗ | 11,970∗∗∗ | 12,210∗∗∗ | 9,185∗∗∗ |
+Notes: The table presents the results of difference-in-differences regression of (2) with five different adjustments. In Model 1, instead of Temperature and its square we use Cooling degrees, defined as $\max\{Temperature-18^\circ C,0\}$, and Heating degrees, defined as $\max\{18^\circ C-Temperature,0\}$, and their squared values to account for possible non-linearity in heating and cooling habits. In Model 2, we assume there is an interval in which heating and cooling does not consume electricity and redefine Cooling degrees as $\max\{Temperature-21^\circ C,0\}$, and Heating degrees as $\max\{15^\circ C-Temperature,0\}$. In Model 3, we eliminate the annual seasonality variables and redefine the annual cycle using sine and cosine annual functional, and estimate the model with Temperature and Temperature squared variables. We do the same in Model 4 but include the original Heating degrees and Cooling degrees. In Model 5, we eliminate Electricity price variable from (2), and incorporate the assumptions of Model 1, Model 2, and Model 4 together. HAC-robust standard errors in parentheses. ^{*}p<0.1; ^{**}p<0.05; ^{***}p<0.01.
+
+TABLE 9. Hourly DST effects using different groups of control hours
 
 | Variable | Benchmark control hours 11, 12, 13 | Control hours 24, 1, 2, 12, 13, 14 | Control hours 12, 13, 14 | Control hours 24, 1, 2 |
 | --- | --- | --- | --- | --- |
@@ -13181,7 +13323,7 @@ TABLE 8. Hourly DST effects using different groups of control hours
 |  | (0.00001) | (0.00001) | (0.00001) | (0.00001) |
 | *Weekend* | −0.076∗∗∗ | −0.074∗∗∗ | −0.076∗∗∗ | −0.076∗∗∗ |
 
-TABLE 8 (continued). Hourly DST effects using different groups of control hours
+TABLE 9 (continued). Hourly DST effects using different groups of control hours
 
 | Variable | Benchmark control hours 11, 12, 13 | Control hours 24, 1, 2, 12, 13, 14 | Control hours 12, 13, 14 | Control hours 24, 1, 2 |
 | --- | --- | --- | --- | --- |
@@ -13262,7 +13404,7 @@ TABLE 8 (continued). Hourly DST effects using different groups of control hours
 | Hour 18 | 0.125∗∗∗ | 0.089∗∗∗ | 0.125∗∗∗ | 0.002 |
 |  | (0.002) | (0.002) | (0.002) | (0.001) |
 
-TABLE 8 (continued). Hourly DST effects using different groups of control hours
+TABLE 9 (continued). Hourly DST effects using different groups of control hours
 
 | Variable | Benchmark control hours 11, 12, 13 | Control hours 24, 1, 2, 12, 13, 14 | Control hours 12, 13, 14 | Control hours 24, 1, 2 |
 | --- | --- | --- | --- | --- |
@@ -13327,148 +13469,6 @@ TABLE 8 (continued). Hourly DST effects using different groups of control hours
 |  | (0.0002) | (0.0002) | (0.0002) | (0.0002) |
 | Observations | 63,427 | 63,427 | 63,427 | 63,427 |
 Notes: The table presents the results of difference-in-differences regression of the hourly demand model in (3). HAC-robust standard errors in parentheses. ^{*}p<0.1; ^{**}p<0.05; ^{***}p<0.01.
-
-TABLE 9. Robustness checks to Table 3 using different model specifications
-
-| Variable | Model 1 using C/H squared | Model 2 using new C/H | Model 3 using sin/cos | Model 4 using sin/cos | Model 5 using new C/H sq, sin, cos, no price |
-| --- | --- | --- | --- | --- | --- |
-| Constant | 7.723∗∗∗ | 7.729∗∗∗ | 7.750∗∗∗ | 7.710∗∗∗ | 8.131∗∗∗ |
-|  | (0.068) | (0.067) | (0.077) | (0.068) | (0.076) |
-| *DST* | -0.015∗∗ | -0.013∗ | -0.039∗∗∗ | -0.034∗∗∗ | -0.028∗∗∗ |
-|  | (0.005) | (0.005) | (0.003) | (0.003) | (0.003) |
-| *Treatment* | -0.133∗∗∗ | -0.133∗∗∗ | -0.136∗∗∗ | -0.138∗∗∗ | -0.170∗∗∗ |
-|  | (0.002) | (0.002) | (0.002) | (0.002) | (0.002) |
-| DST * Treatment | -0.0138∗∗∗ | -0.0141∗∗∗ | -0.0178∗∗∗ | -0.0188∗∗∗ | -0.0201∗∗∗ |
-|  | (0.001) | (0.001) | (0.001) | (0.001) | (0.001) |
-| *Temperature variables* |  |  |  |  |  |
-| Temperature |  |  | -0.005∗∗∗ |  |  |
-|  |  |  | (0.0003) |  |  |
-| Temperature squared |  |  | 0.00009∗∗∗ |  |  |
-|  |  |  | (0.00001) |  |  |
-| Heating degrees | 0.002∗∗∗ | 0.004∗∗∗ |  | 0.005∗∗∗ | 0.007∗∗∗ |
-|  | (0.0003) | (0.0002) |  | (0.0002) | (0.0004) |
-| Heating degrees squared | 0.0001∗∗∗ |  |  |  | -0.00003 |
-|  | (0.00001) |  |  |  | (0.00002) |
-| Cooling degrees | -0.0001 | 0.003∗∗∗ |  | 0.0006∗ | -0.004∗∗∗ |
-|  | (0.0005) | (0.0003) |  | (0.0003) | (0.001) |
-| Cooling degrees squared | 0.0002∗∗∗ |  |  |  | 0.0007∗∗∗ |
-|  | (0.00004) |  |  |  | (0.0001) |
-| *Weather variables* |  |  |  |  |  |
-| Humidity | 0.00004 | 0.000004 | -0.00006 | -0.00004 | 0.0001 |
-|  | (0.0001) | (0.0001) | (0.00007) | (0.00006) | (0.0001) |
-| Air pressure | -0.00003 | -0.00003 | -0.00003 | -0.00002 | 0.000001 |
-|  | (0.00004) | (0.00004) | (0.00005) | (0.00004) | (0.0001) |
-| Sunlight | -0.001∗∗∗ | -0.0006∗∗∗ | -0.0005∗∗∗ | -0.0005∗∗∗ | -0.001∗∗∗ |
-|  | (0.00004) | (0.00004) | (0.00004) | (0.00004) | (0.00004) |
-| Precipitation | 0.003∗∗∗ | 0.004∗∗∗ | 0.003∗∗ | 0.003∗∗ | 0.001 |
-|  | (0.001) | (0.0008) | (0.001) | (0.001) | (0.001) |
-| Radiation | 0.0001∗∗∗ | 0.00005∗∗∗ | 0.00001 | -0.00002 | -0.00004∗∗ |
-|  | (0.00001) | (0.00001) | (0.00001) | (0.00001) | (0.00001) |
-| *Price variable* |  |  |  |  |  |
-| Electricity price | 0.002∗∗∗ | 0.002∗∗∗ | 0.002∗∗∗ | 0.002∗∗∗ |  |
-|  | (0.00007) | (0.00007) | (0.00009) | (0.00008) |  |
-| *Holidays* | -0.068∗∗∗ | -0.068∗∗∗ | -0.071∗∗∗ | -0.072∗∗∗ | -0.092∗∗∗ |
-|  | (0.005) | (0.005) | (0.007) | (0.005) | (0.007) |
-| *Weekend* | -0.077∗∗∗ | -0.076∗∗∗ | -0.076∗∗∗ | -0.076∗∗∗ | -0.100∗∗∗ |
-|  | (0.002) | (0.002) | (0.002) | (0.002) | (0.001) |
-| *Cyclicity (sin)* | 0.0001∗∗∗ | 0.0001∗∗∗ | 0.0001∗∗∗ | 0.0001∗∗∗ | 0.00003∗ |
-|  | (0.00002) | (0.00002) | (0.00001) | (0.00001) | (0.00001) |
-| *Cyclicity (cos)* |  |  | 0.00004∗∗∗ | 0.00003∗∗∗ | -0.000004 |
-|  |  |  | (0.00001) | (0.00001) | (0.00001) |
-| *Seasonality* |  |  |  |  |  |
-| Summer | -0.005∗ | -0.005∗ |  |  |  |
-|  | (0.002) | (0.002) |  |  |  |
-| January | 0.070∗∗∗ | 0.067∗∗∗ |  |  |  |
-|  | (0.007) | (0.007) |  |  |  |
-| February | 0.078∗∗∗ | 0.076∗∗∗ |  |  |  |
-|  | (0.007) | (0.007) |  |  |  |
-| March | 0.062∗∗∗ | 0.059∗∗∗ |  |  |  |
-|  | (0.007) | (0.006) |  |  |  |
-| April | 0.025∗∗∗ | 0.022∗∗∗ |  |  |  |
-|  | (0.004) | (0.004) |  |  |  |
-| May | 0.006 | 0.006 |  |  |  |
-|  | (0.004) | (0.004) |  |  |  |
-| June | 0.010∗∗∗ | 0.010∗∗∗ |  |  |  |
-|  | (0.003) | (0.003) |  |  |  |
-| July | -0.0004 | -0.001 |  |  |  |
-|  | (0.003) | (0.003) |  |  |  |
-| September | 0.029∗∗∗ | 0.028∗∗∗ |  |  |  |
-|  | (0.003) | (0.003) |  |  |  |
-| October | 0.057∗∗∗ | 0.055∗∗∗ |  |  |  |
-|  | (0.004) | (0.004) |  |  |  |
-| November | 0.060∗∗∗ | 0.057∗∗∗ |  |  |  |
-|  | (0.006) | (0.006) |  |  |  |
-| December | 0.063∗∗∗ | 0.060∗∗∗ |  |  |  |
-|  | (0.007) | (0.007) |  |  |  |
-| Year 2010 | -0.064∗∗∗ | -0.064∗∗∗ | -0.063∗∗∗ | -0.064∗∗∗ | -0.058∗∗∗ |
-|  | (0.003) | (0.003) | (0.004) | (0.003) | (0.003) |
-| Year 2011 | -0.069∗∗∗ | -0.069∗∗∗ | -0.064∗∗∗ | -0.066∗∗∗ | -0.052∗∗∗ |
-
-TABLE 9 (continued). Robustness checks to Table 3 using different model specifications
-
-| Variable | Model 1 using C/H sq | Model 2 using new C/H | Model 3 using sin/cos | Model 4 using sin/cos | Model 5 using new C/H sq, sin, cos, no price |
-| --- | --- | --- | --- | --- | --- |
-|  | (0.003) | (0.003) | (0.004) | (0.003) | (0.003) |
-| Year 2012 | -0.054∗∗∗ | -0.054∗∗∗ | -0.049∗∗∗ | -0.051∗∗∗ | -0.051∗∗∗ |
-|  | (0.003) | (0.003) | (0.003) | (0.003) | (0.003) |
-| Year 2013 | -0.045∗∗∗ | -0.046∗∗∗ | -0.040∗∗∗ | -0.042∗∗∗ | -0.053∗∗∗ |
-|  | (0.003) | (0.003) | (0.003) | (0.003) | (0.003) |
-| Year 2014 | -0.057∗∗∗ | -0.057∗∗∗ | -0.051∗∗∗ | -0.052∗∗∗ | -0.069∗∗∗ |
-|  | (0.003) | (0.003) | (0.004) | (0.003) | (0.003) |
-| Year 2015 | -0.030∗∗∗ | -0.030∗∗∗ | -0.023∗∗∗ | -0.026∗∗∗ | -0.044∗∗∗ |
-|  | (0.003) | (0.003) | (0.003) | (0.003) | (0.003) |
-| Year 2016 | -0.011∗∗∗ | -0.012∗∗∗ | -0.005 | -0.008∗∗∗ | -0.032∗∗∗ |
-|  | (0.003) | (0.003) | (0.003) | (0.003) | (0.003) |
-| Hour 1 | -0.034∗∗∗ | -0.033∗∗∗ | -0.034∗∗∗ | -0.034∗∗∗ | -0.040∗∗∗ |
-|  | (0.0004) | (0.0004) | (0.0004) | (0.001) | (0.0003) |
-| Hour 2 | -0.072∗∗∗ | -0.072∗∗∗ | -0.072∗∗∗ | -0.072∗∗∗ | -0.084∗∗∗ |
-|  | (0.001) | (0.001) | (0.001) | (0.001) | (0.001) |
-| Hour 3 | -0.092∗∗∗ | -0.092∗∗∗ | -0.092∗∗∗ | -0.093∗∗∗ | -0.108∗∗∗ |
-|  | (0.001) | (0.001) | (0.001) | (0.001) | (0.001) |
-| Hour 4 | -0.092∗∗∗ | -0.091∗∗∗ | -0.092∗∗∗ | -0.093∗∗∗ | -0.111∗∗∗ |
-|  | (0.001) | (0.001) | (0.001) | (0.001) | (0.001) |
-| Hour 5 | -0.079∗∗∗ | -0.079∗∗∗ | -0.080∗∗∗ | -0.081∗∗∗ | -0.098∗∗∗ |
-|  | (0.001) | (0.001) | (0.001) | (0.001) | (0.001) |
-| Hour 6 | -0.055∗∗∗ | -0.055∗∗∗ | -0.056∗∗∗ | -0.057∗∗∗ | -0.069∗∗∗ |
-|  | (0.001) | (0.001) | (0.001) | (0.001) | (0.001) |
-| Hour 7 | 0.022∗∗∗ | 0.022∗∗∗ | 0.020∗∗∗ | 0.020∗∗∗ | 0.024∗∗∗ |
-|  | (0.001) | (0.001) | (0.001) | (0.001) | (0.001) |
-| Hour 8 | 0.065∗∗∗ | 0.065∗∗∗ | 0.063∗∗∗ | 0.064∗∗∗ | 0.085∗∗∗ |
-|  | (0.002) | (0.002) | (0.002) | (0.002) | (0.002) |
-| Hour 9 | 0.103∗∗∗ | 0.103∗∗∗ | 0.102∗∗∗ | 0.103∗∗∗ | 0.133∗∗∗ |
-|  | (0.002) | (0.002) | (0.002) | (0.002) | (0.001) |
-| Hour 10 | 0.131∗∗∗ | 0.131∗∗∗ | 0.131∗∗∗ | 0.133∗∗∗ | 0.167∗∗∗ |
-|  | (0.002) | (0.002) | (0.002) | (0.002) | (0.001) |
-| Hour 11 | -0.003∗∗∗ | -0.003∗∗∗ | -0.006∗∗∗ | -0.006∗∗∗ | -0.005∗∗∗ |
-|  | (0.001) | (0.001) | (0.001) | (0.001) | (0.001) |
-| Hour 12 | 0.003∗∗∗ | 0.003∗∗∗ | 0.001∗ | 0.001∗∗ | 0.004∗∗∗ |
-|  | (0.0005) | (0.0005) | (0.0004) | (0.001) | (0.001) |
-| Hour 14 | 0.136∗∗∗ | 0.136∗∗∗ | 0.142∗∗∗ | 0.144∗∗∗ | 0.174∗∗∗ |
-|  | (0.002) | (0.002) | (0.002) | (0.002) | (0.002) |
-| Hour 15 | 0.124∗∗∗ | 0.124∗∗∗ | 0.131∗∗∗ | 0.132∗∗∗ | 0.159∗∗∗ |
-|  | (0.002) | (0.002) | (0.002) | (0.002) | (0.002) |
-| Hour 16 | 0.115∗∗∗ | 0.115∗∗∗ | 0.121∗∗∗ | 0.122∗∗∗ | 0.148∗∗∗ |
-|  | (0.002) | (0.002) | (0.002) | (0.002) | (0.002) |
-| Hour 17 | 0.115∗∗∗ | 0.114∗∗∗ | 0.121∗∗∗ | 0.121∗∗∗ | 0.148∗∗∗ |
-|  | (0.002) | (0.002) | (0.002) | (0.002) | (0.001) |
-| Hour 18 | 0.108∗∗∗ | 0.108∗∗∗ | 0.113∗∗∗ | 0.113∗∗∗ | 0.147∗∗∗ |
-|  | (0.002) | (0.002) | (0.002) | (0.002) | (0.001) |
-| Hour 19 | 0.102∗∗∗ | 0.101∗∗∗ | 0.106∗∗∗ | 0.105∗∗∗ | 0.144∗∗∗ |
-|  | (0.002) | (0.002) | (0.002) | (0.002) | (0.001) |
-| Hour 20 | 0.108∗∗∗ | 0.107∗∗∗ | 0.110∗∗∗ | 0.110∗∗∗ | 0.149∗∗∗ |
-|  | (0.002) | (0.002) | (0.002) | (0.002) | (0.001) |
-| Hour 21 | 0.110∗∗∗ | 0.109∗∗∗ | 0.111∗∗∗ | 0.111∗∗∗ | 0.144∗∗∗ |
-|  | (0.001) | (0.001) | (0.002) | (0.001) | (0.001) |
-| Hour 22 | 0.080∗∗∗ | 0.080∗∗∗ | 0.081∗∗∗ | 0.081∗∗∗ | 0.101∗∗∗ |
-|  | (0.001) | (0.001) | (0.001) | (0.001) | (0.001) |
-| Hour 23 | 0.037∗∗∗ | 0.037∗∗∗ | 0.037∗∗∗ | 0.037∗∗∗ | 0.050∗∗∗ |
-|  | (0.001) | (0.001) | (0.001) | (0.001) | (0.0003) |
-| Observations | 63,427 | 63,427 | 63,427 | 63,427 | 63,427 |
-| R^{2} | 0.904 | 0.904 | 0.893 | 0.895 | 0.867 |
-| Adjusted R^{2} | 0.904 | 0.903 | 0.893 | 0.894 | 0.867 |
-| Residual Std. Error | 0.042 | 0.042 | 0.044 | 0.044 | 0.049 |
-| F Statistic | 10,430∗∗∗ | 10,790∗∗∗ | 11,970∗∗∗ | 12,210∗∗∗ | 9,185∗∗∗ |
-Notes: The table presents the results of difference-in-differences regression of (2) with five different adjustments. In Model 1, instead of Temperature and its square we use Cooling degrees, defined as $\max\{Temperature-18^\circ C,0\}$, and Heating degrees, defined as $\max\{18^\circ C-Temperature,0\}$, and their squared values to account for possible non-linearity in heating and cooling habits. In Model 2, we assume there is an interval in which heating and cooling does not consume electricity and redefine Cooling degrees as $\max\{Temperature-21^\circ C,0\}$, and Heating degrees as $\max\{15^\circ C-Temperature,0\}$. In Model 3, we eliminate the annual seasonality variables and redefine the annual cycle using sine and cosine annual functional, and estimate the model with Temperature and Temperature squared variables. We do the same in Model 4 but include the original Heating degrees and Cooling degrees. In Model 5, we eliminate Electricity price variable from (2), and incorporate the assumptions of Model 1, Model 2, and Model 4 together. HAC-robust standard errors in parentheses. ^{*}p<0.1; ^{**}p<0.05; ^{***}p<0.01.
 
 TABLE 10. Studies estimating various impacts of the daylight saving time policy
 
