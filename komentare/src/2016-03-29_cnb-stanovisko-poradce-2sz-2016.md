@@ -10,7 +10,10 @@ byline: "Tomáš Havránek"
 genre: "advisor_opinion"
 word_count: "5179"
 translation: "cnb-advisor-opinion-2sz-2016"
-body_note: "Napsáno ve funkci poradce bankovní rady ČNB, projednáno bankovní radou 31. března 2016. Dokument nesl šestiletou lhůtu omezeného přístupu a ČNB jej zveřejnila 30. ledna 2023. Že jde celý o vlastní text poradce, dokládá podpis „Vypracoval: Tomáš Havránek“ a srovnání s pozdějšími ročníky: od roku 2017 nesou stanoviska navíc vyjádření sekce finanční stability, které zde není. Text je převeden z [hostovaného PDF](/komentare/files/cnb-stanovisko-2sz-2016.pdf); grafy zůstávají jen v něm. Číslované poznámky pod čarou jsou shromážděny na konci. Anglický překlad: [Advisor's Opinion on Situation Report No. 2, 2016](/komentare/cnb-advisor-opinion-2sz-2016/)."
+images: "cnb-2sz-2016-graf1.png | cnb-2sz-2016-graf2.png"
+image_alt: "Spojnicový graf sezónně očištěného růstu HDP od 3. čtvrtletí 2005 do 3. čtvrtletí 2015: skutečná data za Českou republiku proti syntetické kontrole s 95% intervalem spolehlivosti, svislice vyznačuje zavedení kurzového závazku na konci roku 2013. | Spojnicový graf nezaměstnanosti od 3. čtvrtletí 2005 do 3. čtvrtletí 2015: skutečná data za Českou republiku proti syntetické kontrole s 95% intervalem spolehlivosti, svislice vyznačuje zavedení kurzového závazku na konci roku 2013."
+image_figure: "1 | 2"
+body_note: "Napsáno ve funkci poradce bankovní rady ČNB, projednáno bankovní radou 31. března 2016. Dokument nesl šestiletou lhůtu omezeného přístupu a ČNB jej zveřejnila 30. ledna 2023. Že jde celý o vlastní text poradce, dokládá podpis „Vypracoval: Tomáš Havránek“ a srovnání s pozdějšími ročníky: od roku 2017 nesou stanoviska navíc vyjádření sekce finanční stability, které zde není. Text i grafy jsou převzaty z [hostovaného PDF](/komentare/files/cnb-stanovisko-2sz-2016.pdf). Číslované poznámky pod čarou jsou shromážděny na konci. Anglický překlad: [Advisor's Opinion on Situation Report No. 2, 2016](/komentare/cnb-advisor-opinion-2sz-2016/)."
 ---
 
 # Stanovisko poradce k 2. situační zprávě 2016

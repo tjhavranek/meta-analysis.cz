@@ -121,7 +121,7 @@ SECTIONS = {
     "english": dict(
         title="In English",
         short="English",
-        desc="Columns and commentary written in English — policy pieces for VoxEU/CEPR, "
+        desc="Columns and commentary written in English: policy pieces for VoxEU/CEPR, "
              "posts on meta-analysis methods for MAER-Net, and English translations of the "
              "advisor's opinions written for the Bank Board of the Czech National Bank.",
         lang="en",
@@ -290,11 +290,20 @@ def _inline(t):
     return t
 
 
-def md_to_html(md):
+def md_to_html(md, figs=None):
     out, lines, i = [], (md or "").replace("\r\n", "\n").split("\n"), 0
     while i < len(lines):
         line = lines[i].rstrip()
         if not line.strip():
+            i += 1
+            continue
+        # A chart caption becomes the figure it captions, in place. Without this the
+        # charts sat in a block after the text, far from the paragraph that reads
+        # "Chart 3 shows that...", or stayed in the PDF and not on the page at all.
+        fm = FIG_CAPTION.match(line.strip()) if figs else None
+        if fm and fm.group(2) in figs:
+            f, alt = figs[fm.group(2)]
+            out.append(figure_html(f, alt, fm.group(1)))
             i += 1
             continue
         m = re.match(r"^(#{2,4})\s+(.*)$", line)
@@ -768,7 +777,7 @@ def write_item(a):
         node["audio"] = {"@type": "AudioObject", "contentUrl": a["audio_url"],
                          "name": a["headline"]}
 
-    body_html = fix_quotes(md_to_html(a["body"]))
+    body_html = fix_quotes(md_to_html(a["body"], item_figures(a)))
     plain = re.sub(r"\s+", " ", re.sub(r"<[^>]+>", " ", body_html)).strip()
     desc = a.get("perex") or ((plain[:190].rsplit(" ", 1)[0] + "…") if len(plain) > 190 else plain)
     node["description"] = desc
@@ -1617,6 +1626,51 @@ def _split(v):
     return [x.strip() for x in (v or "").split("|") if x.strip()]
 
 
+# A chart caption as the source files carry it: "Graf 1: ..." or "*Graf 1: ...*" in the
+# Czech records, "Chart 1. ..." in the English ones. The number is what binds a caption to
+# its image, so a figure cannot silently land under the wrong chart.
+FIG_CAPTION = re.compile(r"^\*?((?:Graf|Chart)\s+(\d+)\s*[.:]\s*.+?)\*?$")
+
+
+def figure_html(f, alt, caption):
+    """One chart, set inline where its caption stands in the text."""
+    wh = _img_size(KDIR / "item-img" / f)
+    dim = f' width="{wh[0]}" height="{wh[1]}"' if wh else ""
+    return (f'<figure class="item-fig">'
+            f'<img src="{PATH}/item-img/{esc(f)}" alt="{esc(alt)}"'
+            f' loading="lazy" decoding="async"{dim}>'
+            f'<figcaption>{_inline(caption)}</figcaption></figure>')
+
+
+def item_figures(a):
+    """Charts bound to the caption they belong under, by number.
+
+    `image_figure` names the chart number of each entry in `images`, in the same order.
+    Items that carry photographs rather than charts leave it out and keep the old
+    behaviour: the figures are appended after the text, not woven into it."""
+    nums = _split(a.get("image_figure"))
+    if not nums:
+        return {}
+    files, alts = _split(a.get("images")), _split(a.get("image_alt"))
+    if not (len(nums) == len(files) == len(alts)):
+        sys.exit(f"error: {a['file']} has {len(files)} images, {len(alts)} alt texts "
+                 f"and {len(nums)} figure numbers; the three must agree")
+    out = {}
+    for n, f, alt in zip(nums, files, alts):
+        if not (KDIR / "item-img" / f).exists():
+            sys.exit(f"error: {a['file']} references a missing image: {f}")
+        out[n] = (f, alt)
+    # A number with no caption in the body would place nothing, silently. Every declared
+    # chart has to have somewhere to go.
+    have = {m.group(2) for line in (a["body"] or "").split("\n")
+            for m in [FIG_CAPTION.match(line.strip())] if m}
+    missing = [n for n in out if n not in have]
+    if missing:
+        sys.exit(f"error: {a['file']} declares figure(s) {', '.join(missing)}, "
+                 f"but the body has no caption for them")
+    return out
+
+
 def item_images(a):
     """Figures published alongside the text — the map, the photograph. Returns HTML.
 
@@ -1626,6 +1680,10 @@ def item_images(a):
     files, alts = _split(a.get("images")), _split(a.get("image_alt"))
     if not files:
         return "", []
+    # Charts placed inline by item_figures still belong in the page's image
+    # list for the machine layer, but must not be appended a second time.
+    if _split(a.get("image_figure")):
+        return "", files
     if len(files) != len(alts):
         sys.exit(f"error: {a['file']} has {len(files)} images but {len(alts)} alt texts")
     creds = _split(a.get("image_credit"))

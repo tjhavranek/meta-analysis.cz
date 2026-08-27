@@ -10,7 +10,10 @@ byline: "Tomas Havranek"
 genre: "advisor_opinion"
 translated: "2026-08-27"
 translation: "cnb-stanovisko-poradce-8sz-2018"
-body_note: "An English translation of the Czech original, which remains the record of what was written: [Stanovisko poradce k 8. situační zprávě 2018](/komentare/cnb-stanovisko-poradce-8sz-2018/). Part I, the advisor's opinion, is here in full. The original document also carries Part II, prepared by the Financial Stability Department, which is in the [hosted PDF](/komentare/files/cnb-stanoviska-8sz-2018.pdf) and in the document on the CNB site. The four charts stay in the PDF. Numbered footnotes are collected at the end."
+images: "cnb-8sz-2018-graf1.png | cnb-8sz-2018-graf2.png | cnb-8sz-2018-graf3.png | cnb-8sz-2018-graf4.png"
+image_alt: "Line chart from April 2017 to October 2018: the effective rate for consumption stays flat near 1.6 percent while the three-month PRIBOR rises from 0.3 to 1.75 percent. | Line chart of the CZK/EUR rate by Situation Report from the third of 2017 to the seventh of 2018: the observed rate lies above the forecast in six consecutive Situation Reports, the gap marked by an arrow. | Chart of the model response of consumption to a one percentage point increase in the policy rate over the following eighteen quarters, five curves for an elasticity of intertemporal substitution from 0.1 to 1.5; the higher the elasticity, the deeper and faster the fall in consumption. | Line chart from April 2017 to October 2018: the rate on savings falls from 0.36 to 0.33 percent on the left axis, and the rate on consumer loans from 9.3 to 8.4 percent on the right axis."
+image_figure: "1 | 2 | 3 | 4"
+body_note: "An English translation of the Czech original, which remains the record of what was written: [Stanovisko poradce k 8. situační zprávě 2018](/komentare/cnb-stanovisko-poradce-8sz-2018/). Part I, the advisor's opinion, is here in full. The original document also carries Part II, prepared by the Financial Stability Department, which is in the [hosted PDF](/komentare/files/cnb-stanoviska-8sz-2018.pdf) and in the document on the CNB site. Numbered footnotes are collected at the end."
 ---
 
 # Advisor's Opinion on Situation Report No. 8, 2018

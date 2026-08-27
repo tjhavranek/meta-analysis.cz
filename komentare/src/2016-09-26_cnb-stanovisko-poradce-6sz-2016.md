@@ -8,9 +8,12 @@ released: "2023-01-30"
 headline: "Stanovisko poradce k 6. situační zprávě 2016"
 byline: "Tomáš Havránek"
 genre: "advisor_opinion"
-word_count: "3540"
+word_count: "3480"
 translation: "cnb-advisor-opinion-6sz-2016"
-body_note: "Napsáno ve funkci poradce bankovní rady ČNB, projednáno bankovní radou 29. září 2016. Dokument nesl šestiletou lhůtu omezeného přístupu a ČNB jej zveřejnila 30. ledna 2023. Že jde celý o vlastní text poradce, dokládá podpis „Vypracoval: Tomáš Havránek“ a srovnání s pozdějšími ročníky: od roku 2017 nesou stanoviska navíc vyjádření sekce finanční stability, které zde není. Text je převeden z [hostovaného PDF](/komentare/files/cnb-stanovisko-6sz-2016.pdf); grafy zůstávají jen v něm. Číslované poznámky pod čarou jsou shromážděny na konci. Anglický překlad: [Advisor's Opinion on Situation Report No. 6, 2016](/komentare/cnb-advisor-opinion-6sz-2016/)."
+images: "cnb-6sz-2016-graf1.png | cnb-6sz-2016-graf2.png | cnb-6sz-2016-graf3.png | cnb-6sz-2016-graf4.png | cnb-6sz-2016-graf5.png"
+image_alt: "Spojnicový graf sazeb ČNB od roku 2002 do roku 2016: odhadnutá stínová sazba proti PRIBORu 3M, dvoutýdenní repo sazbě, diskontní a lombardní sazbě. Do roku 2012 stínová sazba kopíruje repo sazbu, poté klesá až k −8 procentům. Vyznačeno je období nulové dolní meze a období kurzového závazku. | Spojnicový graf sazeb ECB od roku 2002 do roku 2016: odhadnutá stínová sazba proti depozitní facilitě, hlavní refinanční operaci a EURIBORu 3M. Stínová sazba se od roku 2012 odpoutává směrem dolů a končí kolem −7 procent. Vyznačeno je období nulové dolní meze. | Spojnicový graf od ledna do září 2016: tříměsíční Euribor klesá plynule z −0,13 na −0,30 procenta, týdenní klouzavý průměr implikované korunové sazby kolísá kolem něj v pásmu −0,18 až −0,41 procenta. | Spojnicový graf forwardové křivky CZK/EUR od září 2016 do srpna 2018: kurz klesá z 27,02 na 26,84, se svislicemi u konce „tvrdého“ závazku v lednu 2017 a „měkkého“ závazku v polovině roku 2017. | Spojnicový graf dvouletého forwardu CZK/EUR od ledna do září 2016: hodnoty kolísají mezi 26,63 a necelými 27,00, kolem srpna se drží u 26,83 a na konci období prudce klesají pod 26,63."
+image_figure: "1 | 2 | 3 | 4 | 5"
+body_note: "Napsáno ve funkci poradce bankovní rady ČNB, projednáno bankovní radou 29. září 2016. Dokument nesl šestiletou lhůtu omezeného přístupu a ČNB jej zveřejnila 30. ledna 2023. Že jde celý o vlastní text poradce, dokládá podpis „Vypracoval: Tomáš Havránek“ a srovnání s pozdějšími ročníky: od roku 2017 nesou stanoviska navíc vyjádření sekce finanční stability, které zde není. Text i grafy jsou převzaty z [hostovaného PDF](/komentare/files/cnb-stanovisko-6sz-2016.pdf). Číslované poznámky pod čarou jsou shromážděny na konci. Anglický překlad: [Advisor's Opinion on Situation Report No. 6, 2016](/komentare/cnb-advisor-opinion-6sz-2016/)."
 ---
 
 # Stanovisko poradce k 6. situační zprávě 2016
@@ -55,8 +58,6 @@ Jakkoli mohou být stínové sazby v určitých situacích užitečným analytic
 
 *Graf 3: Tříměsíční Euribor a implikovaná korunová sazba*
 
-‐0.5 leden 16 únor 16 březen 16 Euribor 3M duben 16 květen 16 červen 16 červenec 16 srpen 16 týdenní klouzavý průměr 3M implikované CZK sazby září 16
-
 Graf 3 ukazuje, že neexistuje velký diferenciál mezi Euriborem a implikovanou korunovou sazbou (zde používám týdenní klouzavý průměr z toho důvodu, že forwardový kurz, a tedy i z něho odvozená implikovaná sazba, je dosti volatilní). Po většinu letošního roku je implikovaný tříměsíční korunový výnos dokonce více záporný než tříměsíční Euribor. Záporný implikovaný výnos se potom přelévá do dalších oblastí finančního trhu, kde pozorujeme například výrazně záporné úrokové sazby ze státních dluhopisů. Anekdotická evidence také naznačuje, že ačkoli tříměsíční poptávkové ceny kótované v Bloombergu jsou kladné, chce-li jedna banka u druhé peníze skutečně uložit, reálně nabídnutý úrok bývá záporný (snadno kolem −0.3 %). Ani tento pohled tedy nenaznačuje, že by ve skutečnosti existoval významný kladný diferenciál mezi korunovými a eurovými sazbami. K podobnému závěru vede i jednoduché srovnání výnosu českých a např. rakouských vládních dluhopisů, a diferenciál předpokládaný prognózou v efektivní výši plus 1,8 p. b. (nestínový Pribor vs. stínový Euribor podle NiGEMu) je tak podle mého názoru řádově nadhodnocený.
 
 ##
@@ -65,13 +66,7 @@ Graf 3 ukazuje, že neexistuje velký diferenciál mezi Euriborem a implikovanou
 
 Takzvaná hypotéza nevychýlenosti (unbiasedness hypothesis) tvrdí, že nejlepším odhadem budoucího spotového kurzu je současný forwardový kurz (Fama, 1984). Empirická evidence pro tuto hypotézu je smíšená, nicméně forwardy jsou podložené skutečnými obchody, takže mám tendenci věřit jim více než odhadům analytiků, kteří do předpovědi nevkládají vlastní finance (různé odhady „férového kurzu“ v rozmezí 22−26). Teoreticky by měla cena forwardu odrážet i efekt chybějící protistrany, což může pomoci vysvětlit, proč je forward slabší než kurz na prognóze. Věří-li trh v průměru, že koruna do dvou let posílí na 26 CZK/EUR, měl by se dvouletý forward obchodovat poblíž této hladiny. Kdyby navzdory tomuto očekávání stál forward třeba 26,60, bude obchodník na forwardovém trhu nakupovat korunu a realizuje solidní zisk. Celá forwardová křivka nám potom poskytuje zajímavé informace o očekávání trhu ohledně vývoje kurzu koruny v následujících měsících a letech. V této části používám poptávkové (bid) ceny, tedy náklady na forwardový nákup korun.
 
-27.04 27.02 27 26.98 26.96 26.94 26.92 26.9 26.88 26.86 26.84 26.82 září 16
-
 *Graf 4: Forwardová křivka CZK/EUR*
-
-"tvrdý" závazek
-
-"měkký" závazek leden 17 duben 17 červenec 17 říjen 17 únor 18 květen 18 srpen 18
 
 Graf 4 ukazuje, že trh očekává jisté posílení kurzu po vypršení „tvrdého“ závazku (tedy na začátku ledna 2017), ale nečeká žádnou reakci na vypršení „měkkého“ závazku (polovina roku 2017). Vzhledem k formulaci závazku (konec roku, polovina roku) má největší smysl zkoumat forwardovou křivku ze začátku měsíce, aby se několikaměsíční forward vztahoval také k začátku měsíce, kdy je nejdříve možné ze závazku vystoupit; graf se vztahuje k začátku září. Nicméně forwardová křivka má takový tvar po většinu letošního roku: například křivka ze začátku června by ukázala stejný obrázek, tedy posílení kurzu v lednu 2017 a žádný skok v polovině roku 2017. Nejedná se tedy o žádnou novinku, která by se objevila až v září.[6]
 

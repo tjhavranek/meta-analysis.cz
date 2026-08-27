@@ -10,7 +10,10 @@ byline: "Tomas Havranek"
 genre: "advisor_opinion"
 translated: "2026-08-27"
 translation: "cnb-stanovisko-poradce-6sz-2016"
-body_note: "An English translation of the Czech original, which remains the record of what was written: [Stanovisko poradce k 6. situační zprávě 2016](/komentare/cnb-stanovisko-poradce-6sz-2016/). The document is the advisor's opinion in full; unlike the later years it carries no separate financial stability part. The five charts stay in the [hosted PDF](/komentare/files/cnb-stanovisko-6sz-2016.pdf). Numbered footnotes are collected at the end."
+images: "cnb-6sz-2016-graf1.png | cnb-6sz-2016-graf2.png | cnb-6sz-2016-graf3.png | cnb-6sz-2016-graf4.png | cnb-6sz-2016-graf5.png"
+image_alt: "Line chart of CNB rates from 2002 to 2016: the estimated shadow rate against the 3M PRIBOR, the two-week repo rate, the discount rate and the Lombard rate. Until 2012 the shadow rate tracks the repo rate, then falls to about minus 8 percent. The zero lower bound period and the exchange rate commitment period are shaded. | Line chart of ECB rates from 2002 to 2016: the estimated shadow rate against the deposit facility, the main refinancing operations rate and the 3M EURIBOR. From 2012 the shadow rate breaks away downward and ends near minus 7 percent. The zero lower bound period is shaded. | Line chart from January to September 2016: the three-month Euribor falls steadily from minus 0.13 to minus 0.30 percent, while the weekly moving average of the implied koruna rate fluctuates around it between minus 0.18 and minus 0.41 percent. | Line chart of the CZK/EUR forward curve from September 2016 to August 2018: the rate declines from 27.02 to 26.84, with vertical lines at the end of the hard commitment in January 2017 and the soft commitment in mid-2017. | Line chart of the two-year CZK/EUR forward from January to September 2016: values fluctuate between 26.63 and just under 27.00, hold near 26.83 around August, and fall sharply below 26.63 at the end of the period."
+image_figure: "1 | 2 | 3 | 4 | 5"
+body_note: "An English translation of the Czech original, which remains the record of what was written: [Stanovisko poradce k 6. situační zprávě 2016](/komentare/cnb-stanovisko-poradce-6sz-2016/). The document is the advisor's opinion in full; unlike the later years it carries no separate financial stability part. The text and the five charts are both taken from the [hosted PDF](/komentare/files/cnb-stanovisko-6sz-2016.pdf). Numbered footnotes are collected at the end."
 ---
 
 # Advisor's Opinion on Situation Report No. 6, 2016
@@ -55,8 +58,6 @@ However useful shadow rates may be as an analytical tool in certain situations, 
 
 *Chart 3: The three-month Euribor and the implied koruna rate*
 
-−0.5 January 16 February 16 March 16 Euribor 3M April 16 May 16 June 16 July 16 August 16 weekly moving average of the 3M implied CZK rate September 16
-
 Chart 3 shows that there is no large differential between Euribor and the implied koruna rate (here I use a weekly moving average because the forward exchange rate, and hence the implied rate derived from it, is quite volatile). For most of this year, the implied three-month koruna yield has actually been more negative than the three-month Euribor. The negative implied yield then spills over into other areas of the financial market, where we observe, for example, markedly negative interest rates on government bonds. Anecdotal evidence also suggests that although the three-month bid prices quoted on Bloomberg are positive, when one bank actually wants to deposit money with another, the rate actually offered tends to be negative (easily around −0.3%). So this view, too, does not suggest that any significant positive differential between koruna and euro rates really exists. A simple comparison of the yields on Czech and, say, Austrian government bonds leads to a similar conclusion, and the differential assumed by the forecast, effectively plus 1.8 percentage points (non-shadow PRIBOR vs. shadow Euribor according to NiGEM), is thus in my view overstated by an order of magnitude.
 
 ##
@@ -65,13 +66,7 @@ Chart 3 shows that there is no large differential between Euribor and the implie
 
 The so-called unbiasedness hypothesis holds that the best estimate of the future spot exchange rate is the current forward rate (Fama, 1984). The empirical evidence for this hypothesis is mixed, but forwards are backed by real trades, so I tend to trust them more than the estimates of analysts who put none of their own money into the prediction (various estimates of the "fair exchange rate" ranging between 22 and 26). In theory, the price of a forward should also reflect the effect of a missing counterparty, which may help explain why the forward is weaker than the exchange rate in the forecast. If the market on average believes the koruna will appreciate to 26 CZK/EUR within two years, the two-year forward should trade near that level. If, despite that expectation, the forward cost, say, 26.60, a trader in the forward market would buy the koruna and realize a solid profit. The whole forward curve then gives us interesting information about market expectations for the path of the koruna in the months and years ahead. In this section I use bid prices, that is, the cost of a forward purchase of korunas.
 
-27.04 27.02 27 26.98 26.96 26.94 26.92 26.9 26.88 26.86 26.84 26.82 September 16
-
 *Chart 4: The CZK/EUR forward curve*
-
-the "hard" commitment
-
-the "soft" commitment January 17 April 17 July 17 October 17 February 18 May 18 August 18
 
 Chart 4 shows that the market expects some appreciation after the expiry of the "hard" commitment (that is, at the beginning of January 2017), but expects no reaction to the expiry of the "soft" commitment (mid-2017). Given the wording of the commitment (end of the year, middle of the year), it makes most sense to examine the forward curve from the beginning of a month, so that a forward several months out also refers to the beginning of a month, the earliest point at which the commitment can be exited; the chart refers to the beginning of September. The forward curve has had this shape for most of this year, though: a curve from the beginning of June, for example, would show the same picture, appreciation in January 2017 and no jump in mid-2017. So this is nothing new that first appeared in September.[6]
 

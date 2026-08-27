@@ -8116,8 +8116,6 @@ Jakkoli mohou být stínové sazby v určitých situacích užitečným analytic
 
 *Graf 3: Tříměsíční Euribor a implikovaná korunová sazba*
 
-‐0.5 leden 16 únor 16 březen 16 Euribor 3M duben 16 květen 16 červen 16 červenec 16 srpen 16 týdenní klouzavý průměr 3M implikované CZK sazby září 16
-
 Graf 3 ukazuje, že neexistuje velký diferenciál mezi Euriborem a implikovanou korunovou sazbou (zde používám týdenní klouzavý průměr z toho důvodu, že forwardový kurz, a tedy i z něho odvozená implikovaná sazba, je dosti volatilní). Po většinu letošního roku je implikovaný tříměsíční korunový výnos dokonce více záporný než tříměsíční Euribor. Záporný implikovaný výnos se potom přelévá do dalších oblastí finančního trhu, kde pozorujeme například výrazně záporné úrokové sazby ze státních dluhopisů. Anekdotická evidence také naznačuje, že ačkoli tříměsíční poptávkové ceny kótované v Bloombergu jsou kladné, chce-li jedna banka u druhé peníze skutečně uložit, reálně nabídnutý úrok bývá záporný (snadno kolem −0.3 %). Ani tento pohled tedy nenaznačuje, že by ve skutečnosti existoval významný kladný diferenciál mezi korunovými a eurovými sazbami. K podobnému závěru vede i jednoduché srovnání výnosu českých a např. rakouských vládních dluhopisů, a diferenciál předpokládaný prognózou v efektivní výši plus 1,8 p. b. (nestínový Pribor vs. stínový Euribor podle NiGEMu) je tak podle mého názoru řádově nadhodnocený.
 
 ##
@@ -8126,13 +8124,7 @@ Graf 3 ukazuje, že neexistuje velký diferenciál mezi Euriborem a implikovanou
 
 Takzvaná hypotéza nevychýlenosti (unbiasedness hypothesis) tvrdí, že nejlepším odhadem budoucího spotového kurzu je současný forwardový kurz (Fama, 1984). Empirická evidence pro tuto hypotézu je smíšená, nicméně forwardy jsou podložené skutečnými obchody, takže mám tendenci věřit jim více než odhadům analytiků, kteří do předpovědi nevkládají vlastní finance (různé odhady „férového kurzu“ v rozmezí 22−26). Teoreticky by měla cena forwardu odrážet i efekt chybějící protistrany, což může pomoci vysvětlit, proč je forward slabší než kurz na prognóze. Věří-li trh v průměru, že koruna do dvou let posílí na 26 CZK/EUR, měl by se dvouletý forward obchodovat poblíž této hladiny. Kdyby navzdory tomuto očekávání stál forward třeba 26,60, bude obchodník na forwardovém trhu nakupovat korunu a realizuje solidní zisk. Celá forwardová křivka nám potom poskytuje zajímavé informace o očekávání trhu ohledně vývoje kurzu koruny v následujících měsících a letech. V této části používám poptávkové (bid) ceny, tedy náklady na forwardový nákup korun.
 
-27.04 27.02 27 26.98 26.96 26.94 26.92 26.9 26.88 26.86 26.84 26.82 září 16
-
 *Graf 4: Forwardová křivka CZK/EUR*
-
-"tvrdý" závazek
-
-"měkký" závazek leden 17 duben 17 červenec 17 říjen 17 únor 18 květen 18 srpen 18
 
 Graf 4 ukazuje, že trh očekává jisté posílení kurzu po vypršení „tvrdého“ závazku (tedy na začátku ledna 2017), ale nečeká žádnou reakci na vypršení „měkkého“ závazku (polovina roku 2017). Vzhledem k formulaci závazku (konec roku, polovina roku) má největší smysl zkoumat forwardovou křivku ze začátku měsíce, aby se několikaměsíční forward vztahoval také k začátku měsíce, kdy je nejdříve možné ze závazku vystoupit; graf se vztahuje k začátku září. Nicméně forwardová křivka má takový tvar po většinu letošního roku: například křivka ze začátku června by ukázala stejný obrázek, tedy posílení kurzu v lednu 2017 a žádný skok v polovině roku 2017. Nejedná se tedy o žádnou novinku, která by se objevila až v září.[6]
 
@@ -8240,8 +8232,6 @@ However useful shadow rates may be as an analytical tool in certain situations, 
 
 *Chart 3: The three-month Euribor and the implied koruna rate*
 
-−0.5 January 16 February 16 March 16 Euribor 3M April 16 May 16 June 16 July 16 August 16 weekly moving average of the 3M implied CZK rate September 16
-
 Chart 3 shows that there is no large differential between Euribor and the implied koruna rate (here I use a weekly moving average because the forward exchange rate, and hence the implied rate derived from it, is quite volatile). For most of this year, the implied three-month koruna yield has actually been more negative than the three-month Euribor. The negative implied yield then spills over into other areas of the financial market, where we observe, for example, markedly negative interest rates on government bonds. Anecdotal evidence also suggests that although the three-month bid prices quoted on Bloomberg are positive, when one bank actually wants to deposit money with another, the rate actually offered tends to be negative (easily around −0.3%). So this view, too, does not suggest that any significant positive differential between koruna and euro rates really exists. A simple comparison of the yields on Czech and, say, Austrian government bonds leads to a similar conclusion, and the differential assumed by the forecast, effectively plus 1.8 percentage points (non-shadow PRIBOR vs. shadow Euribor according to NiGEM), is thus in my view overstated by an order of magnitude.
 
 ##
@@ -8250,13 +8240,7 @@ Chart 3 shows that there is no large differential between Euribor and the implie
 
 The so-called unbiasedness hypothesis holds that the best estimate of the future spot exchange rate is the current forward rate (Fama, 1984). The empirical evidence for this hypothesis is mixed, but forwards are backed by real trades, so I tend to trust them more than the estimates of analysts who put none of their own money into the prediction (various estimates of the "fair exchange rate" ranging between 22 and 26). In theory, the price of a forward should also reflect the effect of a missing counterparty, which may help explain why the forward is weaker than the exchange rate in the forecast. If the market on average believes the koruna will appreciate to 26 CZK/EUR within two years, the two-year forward should trade near that level. If, despite that expectation, the forward cost, say, 26.60, a trader in the forward market would buy the koruna and realize a solid profit. The whole forward curve then gives us interesting information about market expectations for the path of the koruna in the months and years ahead. In this section I use bid prices, that is, the cost of a forward purchase of korunas.
 
-27.04 27.02 27 26.98 26.96 26.94 26.92 26.9 26.88 26.86 26.84 26.82 September 16
-
 *Chart 4: The CZK/EUR forward curve*
-
-the "hard" commitment
-
-the "soft" commitment January 17 April 17 July 17 October 17 February 18 May 18 August 18
 
 Chart 4 shows that the market expects some appreciation after the expiry of the "hard" commitment (that is, at the beginning of January 2017), but expects no reaction to the expiry of the "soft" commitment (mid-2017). Given the wording of the commitment (end of the year, middle of the year), it makes most sense to examine the forward curve from the beginning of a month, so that a forward several months out also refers to the beginning of a month, the earliest point at which the commitment can be exited; the chart refers to the beginning of September. The forward curve has had this shape for most of this year, though: a curve from the beginning of June, for example, would show the same picture, appreciation in January 2017 and no jump in mid-2017. So this is nothing new that first appeared in September.[6]
 

@@ -10,7 +10,10 @@ byline: "Tomas Havranek"
 genre: "advisor_opinion"
 translated: "2026-08-27"
 translation: "cnb-stanovisko-poradce-2sz-2016"
-body_note: "An English translation of the Czech original, which remains the record of what was written: [Stanovisko poradce k 2. situační zprávě 2016](/komentare/cnb-stanovisko-poradce-2sz-2016/). The document is the advisor's opinion in full; unlike the later years it carries no separate financial stability part. The two charts stay in the [hosted PDF](/komentare/files/cnb-stanovisko-2sz-2016.pdf). Numbered footnotes are collected at the end."
+images: "cnb-2sz-2016-graf1.png | cnb-2sz-2016-graf2.png"
+image_alt: "Line chart of seasonally adjusted GDP growth from 2005q3 to 2015q3: actual Czech data against a synthetic control with a 95% confidence interval, a vertical line marking the introduction of the exchange rate commitment at the end of 2013. | Line chart of unemployment from 2005q3 to 2015q3: actual Czech data against a synthetic control with a 95% confidence interval, a vertical line marking the introduction of the exchange rate commitment at the end of 2013."
+image_figure: "1 | 2"
+body_note: "An English translation of the Czech original, which remains the record of what was written: [Stanovisko poradce k 2. situační zprávě 2016](/komentare/cnb-stanovisko-poradce-2sz-2016/). The document is the advisor's opinion in full; unlike the later years it carries no separate financial stability part. The text and the two charts are both taken from the [hosted PDF](/komentare/files/cnb-stanovisko-2sz-2016.pdf). Numbered footnotes are collected at the end."
 ---
 
 # Advisor's Opinion on Situation Report No. 2, 2016
