@@ -2378,7 +2378,32 @@ def check():
     return 1 if fails else 0
 
 
+def check_fresh():
+    """Is what is on disk what a fresh build produces?
+
+    check() below validates the SHAPE of each page: its JSON-LD parses, its counts add
+    up. It said OK with a stale komentare/english/index.html and a stale llms.txt on
+    disk, because neither is an item page and nothing compared their bytes to anything.
+    A category page or an llms.txt that no longer matches its own sources can therefore
+    ship. Build, then compare: the build is idempotent, so any file whose bytes move is
+    a file that was committed stale."""
+    # everything the build writes; not the hand-kept inputs beside them
+    def generated():
+        skip = ("src", "files", "item-img")
+        return sorted(f for f in KDIR.rglob("*")
+                      if f.is_file() and not set(skip) & set(f.parts)
+                      and f.suffix in (".html", ".txt", ".xml", ".md", ".json", ".jsonl"))
+    before = {f: f.read_bytes() for f in generated()}
+    main()
+    drift = [f for f in generated() if before.get(f) != f.read_bytes()]
+    for f in drift:
+        print(f"  FAIL {f.relative_to(KDIR.parent)}: not what a fresh build produces")
+    if drift:
+        print(f"{len(drift)} stale file(s); run: python komentare/build.py")
+    return 1 if drift else 0
+
+
 if __name__ == "__main__":
     if "--check" in sys.argv:
-        sys.exit(check())
+        sys.exit(check_fresh() | check())
     main()

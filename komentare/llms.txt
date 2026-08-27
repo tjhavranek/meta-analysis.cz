@@ -216,7 +216,7 @@ Rozhovory pro česká média. U audio a video rozhovorů uvádíme pouze odkaz n
 
 ## In English
 
-Columns and commentary written in English — policy pieces for VoxEU/CEPR, posts on meta-analysis methods for MAER-Net, and English translations of the advisor's opinions written for the Bank Board of the Czech National Bank.
+Columns and commentary written in English: policy pieces for VoxEU/CEPR, posts on meta-analysis methods for MAER-Net, and English translations of the advisor's opinions written for the Bank Board of the Czech National Bank.
 
 - [Two new pre-registered papers: outlier decisions in meta-analysis and AI feedback on meta-analyses](https://meta-analysis.cz/komentare/maer-two-pre-registered-papers/) — MAER-Net, 27. července 2026
 - [Results of the AI report ranking experiment](https://meta-analysis.cz/komentare/debate-vysledky-experimentu-autorum/) — the 47 authors who took part in the experiment (korespondence, nepublikováno), 16. července 2026
