@@ -7070,6 +7070,8 @@ Závěrem: dostupná data o klientských sazbách končí říjnem 2018. Za list
 
 *Czech National Bank, 19. prosince 2018. Tomas Havranek.*
 
+*English translation made for this archive, published 2026-08-27. The record is the Czech original: „Stanovisko poradce k 8. situační zprávě 2018“, https://meta-analysis.cz/komentare/cnb-stanovisko-poradce-8sz-2018/.*
+
 Zdroj: https://www.cnb.cz/export/sites/cnb/cs/menova-politika/.galleries/br_zapisy_z_jednani/2018/download/stanoviska_2018_08.pdf
 
 The opinion on the Situation Report on economic and monetary developments consists of two parts: (i) an assessment against the price stability objective, written, under his or her own name, by an advisor to a Bank Board member or, in exceptional cases, by a representative of the Financial Stability Department (Part I), and (ii) an assessment prepared by the Financial Stability Department, which brings in the financial stability objective as well (Part II).
@@ -7684,6 +7686,8 @@ Jakkoli není potřebné zapisovat se do učebnic centrálního bankovnictví t�
 
 *Czech National Bank, 25. září 2017. Tomas Havranek.*
 
+*English translation made for this archive, published 2026-08-27. The record is the Czech original: „Stanovisko poradce k 6. situační zprávě 2017“, https://meta-analysis.cz/komentare/cnb-stanovisko-poradce-6sz-2017/.*
+
 Zdroj: https://www.cnb.cz/export/sites/cnb/cs/menova-politika/.galleries/br_zapisy_z_jednani/2017/download/stanoviska_2017_06.pdf
 
 OPINION ON SITUATION REPORT NO. 6[1]
@@ -8190,6 +8194,8 @@ Jinými slovy, je-li v prvním čtvrtletí o jeden pracovní den více než prů
 
 *Czech National Bank, 26. září 2016. Tomas Havranek.*
 
+*English translation made for this archive, published 2026-08-27. The record is the Czech original: „Stanovisko poradce k 6. situační zprávě 2016“, https://meta-analysis.cz/komentare/cnb-stanovisko-poradce-6sz-2016/.*
+
 Zdroj: https://www.cnb.cz/export/sites/cnb/cs/menova-politika/.galleries/br_zapisy_z_jednani/2016/download/stanovisko_poradce_2016_06.pdf
 
 OPINION ON SITUATION REPORT NO. 6[1]
@@ -8444,6 +8450,8 @@ V dosavadní diskuzi spodní hranice sazeb jsem předpokládal, že centrální 
 ## Advisor's Opinion on Situation Report No. 2, 2016
 
 *Czech National Bank, 29. března 2016. Tomas Havranek.*
+
+*English translation made for this archive, published 2026-08-27. The record is the Czech original: „Stanovisko poradce k 2. situační zprávě 2016“, https://meta-analysis.cz/komentare/cnb-stanovisko-poradce-2sz-2016/.*
 
 Zdroj: https://www.cnb.cz/export/sites/cnb/cs/menova-politika/.galleries/br_zapisy_z_jednani/2016/download/stanovisko_poradce_2016_02.pdf
 

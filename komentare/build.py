@@ -306,6 +306,13 @@ def md_to_html(md, figs=None):
             out.append(figure_html(f, alt, fm.group(1)))
             i += 1
             continue
+        # A hashes-only line: the PDF extraction left one wherever the document had a
+        # section break with no heading text. It matched no branch below and fell through
+        # to the paragraph rule, so nine pages printed a literal "##" and carried it into
+        # their own meta description. It is a separator, not content.
+        if re.fullmatch(r"#{1,6}", line.strip()):
+            i += 1
+            continue
         m = re.match(r"^(#{2,4})\s+(.*)$", line)
         if m:
             lvl = min(len(m.group(1)), 4)
@@ -738,7 +745,13 @@ def write_item(a):
         }
     if unpub:
         node["creativeWorkStatus"] = "Unpublished"
-    elif not _is_tr:
+    elif _is_tr:
+        # The translation is this archive's work; the outlet published the original
+        # and is named as its publisher inside translationOfWork above. Leaving this
+        # empty stated the negative but never the positive.
+        node["publisher"] = {"@type": "Organization", "name": "meta-analysis.cz",
+                             "url": SITE + "/"}
+    else:
         node["publisher"] = {"@type": "Organization", "name": a["outlet"]}
     persons = [{k: v for k, v in (("@type", "Person"),
                                   ("@id", CANON_ID.get(ORCIDS.get(n))),
@@ -1164,8 +1177,12 @@ def write_feed(items, social=()):
         # feed order, and the item body opens by saying it was never published.
         # pubDate is a publication date. For an advisor opinion that is the day the
         # institution released it, not the day it was written.
+        # A translation is published when THIS archive published it. Dating it to the
+        # institution's release of the Czech original put the English text in the feed
+        # three years before it was written.
         _pub = ("" if _never else
-                f'<pubDate>{rfc822(a.get("released") or a["date"])}</pubDate>'
+                f'<pubDate>{rfc822(a.get("translated") or a.get("released") or a["date"])}'
+                f'</pubDate>'
                 + chr(10) + "      ")
         it.append((a["date"], f"""    <item>
       <title>{esc(a["headline"])}</title>
@@ -1304,6 +1321,18 @@ def write_machine_readable(items, social=()):
             d["audio_url"] = a["audio_url"]
         if a.get("issue"):
             d["issue"] = a["issue"]
+        # index.json and corpus.jsonl are read on their own, without the page's JSON-LD.
+        # Carrying only outlet: "Czech National Bank" told a consumer the CNB had
+        # published an English text it never published.
+        _orig = BY_SLUG.get(a.get("translation") or "")
+        if _orig and a.get("translated"):
+            d["translation_of"] = {"url": f"{BASE}/{_orig['slug']}/",
+                                   "title": _orig["headline"],
+                                   "language": _orig.get("lang")
+                                               or SECTIONS[_orig["category"]]["lang"]}
+            d["translated"] = a["translated"]
+            d["outlet_note"] = ("The outlet published the original; this English "
+                                "translation was made for this archive.")
         if a["media"] == "text":
             d["url"] = f"{BASE}/{a['slug']}/"
             d["source_markdown"] = f"{BASE}/src/{a['file']}"
@@ -1415,6 +1444,14 @@ def write_machine_readable(items, social=()):
                  if a.get("interviewer") else "")
               + f". {', '.join(people(a.get('byline')))}.*", ""]
         # this file is the one an AI is most likely to ingest whole
+        # The byline above names the outlet that published the ORIGINAL. On a translation
+        # that reads as if the outlet had published this English text, which is the one
+        # thing the per-page metadata is careful never to say.
+        _tr_of = BY_SLUG.get(a.get("translation") or "")
+        if _tr_of and a.get("translated"):
+            A += [f"*English translation made for this archive, published "
+                  f"{a['translated']}. The record is the Czech original: "
+                  f"„{_tr_of['headline']}“, {BASE}/{_tr_of['slug']}/.*", ""]
         if a.get("genre") == "correspondence":
             A += [f"*Korespondence, nikoli publikovaný text. "
                   f"Uvedené datum je datum odeslání.*", ""]
