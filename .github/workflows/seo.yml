@@ -107,6 +107,17 @@ jobs:
       - name: Verify api/v1/papers.json against a fresh build
         run: python tools/build_papers_api.py --check
 
+      # The two publication lists are generated from tools/publications.json and were
+      # gated only by hand, which is how a row once carried the wrong year and a full-text
+      # link belonging to a different paper: a title was matched on a 45-character prefix,
+      # and "Reporting Guidelines for Meta-Analysis in Economics" is a prefix of the 2026
+      # "...Updated for AI". The builder now audits before it writes (order, duplicate
+      # DOIs, links justified by DOI or WHOLE title, years agreeing with the site, no
+      # empty author list, and the two lists agreeing about any paper on both), and
+      # --check additionally refuses a page that is stale against publications.json.
+      - name: Verify the publication lists against a fresh build
+        run: python tools/build_publications_page.py --check
+
       # The full-text corpus itself: figures, tables, fragment links, MathML, coverage.
       # This class of checker has caught real user-facing failures (a missing figure,
       # fragmented tables); it passes clean in about four minutes.
