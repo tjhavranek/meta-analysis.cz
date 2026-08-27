@@ -27,7 +27,7 @@ api.github.com is blocked from this environment, so the run's own status has to 
 from the GitHub MCP tool rather than curl -- silently, a poll of the API here returns
 403 forever and looks exactly like a run that never finishes.
 """
-import os, re, shutil, subprocess, sys, time
+import hashlib, os, re, shutil, subprocess, sys, time, urllib.request
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 WORKFLOW = os.path.join(ROOT, ".github", "workflows", "seo.yml")
@@ -76,20 +76,65 @@ def ci_commands():
     return cmds, unknown
 
 
+def _witness():
+    """A file changed by HEAD that the live site serves, and its expected bytes.
+
+    smoke_live.py answers "is the site healthy", not "is THIS commit live". It checks
+    invariants -- dataset counts, the data version -- and a commit that changes neither
+    passes it while the site still serves the previous revision. That is the exact
+    mistake this whole flag exists to stop, and it made it once. So --deployed also
+    compares one real file from this commit against what the domain returns.
+    """
+    changed = subprocess.run("git diff-tree --no-commit-id --name-only -r HEAD",
+                             shell=True, cwd=ROOT, capture_output=True, text=True).stdout.split()
+    for rel in changed:
+        if rel.startswith(("tools/", "data_layer/", ".github/")) or rel.endswith(".py"):
+            continue        # not served, or served but not what a reader sees
+        path = os.path.join(ROOT, rel)
+        if not os.path.isfile(path):
+            continue
+        url = "/" + rel
+        if rel.endswith("/index.html"):
+            url = "/" + rel[: -len("index.html")]
+        elif rel == "index.html":
+            url = "/"
+        with open(path, "rb") as fh:
+            return url, hashlib.sha256(fh.read()).hexdigest(), rel
+    return None, None, None
+
+
 def deployed():
     """Ask the live domain whether it is serving what was pushed."""
     py = PY312 or "python3"
+    url, want, rel = _witness()
+    if url:
+        print(f"witness for this commit: {rel}")
     for attempt in range(1, 13):
         r = subprocess.run(f"{py} {SMOKE}", shell=True, cwd=ROOT,
                            capture_output=True, text=True)
-        if r.returncode == 0:
-            print((r.stdout or "").strip() or "live site matches what was pushed")
+        healthy = r.returncode == 0
+        fresh = True
+        if healthy and url:
+            try:
+                req = urllib.request.Request(
+                    f"https://meta-analysis.cz{url}?cb={attempt}-{os.getpid()}",
+                    headers={"Cache-Control": "no-cache", "Pragma": "no-cache"})
+                got = hashlib.sha256(urllib.request.urlopen(req, timeout=30).read()).hexdigest()
+                fresh = got == want
+            except Exception as e:
+                fresh, got = False, f"({e})"
+        if healthy and fresh:
+            print((r.stdout or "").strip())
+            if url:
+                print(f"and {rel} on the live domain is byte-identical to this commit")
             return 0
-        print(f"attempt {attempt}: not live yet ({(r.stdout or r.stderr).strip().splitlines()[-1:] })")
+        why = "site not healthy" if not healthy else f"{rel} served is not this commit's"
+        print(f"attempt {attempt}: not live yet, {why}")
         if attempt < 12:
             time.sleep(45)
-    print("the live site still does not match after nine minutes.\n"
-          "Check the workflow run: a failed gate means the commit never deployed.")
+    print("\nthe live site still does not match after nine minutes.\n"
+          "Check the workflow run: a failed gate means the commit never deployed.\n"
+          "api.github.com is blocked here, so read the run through the GitHub MCP tool.")
     return 1
 
 
