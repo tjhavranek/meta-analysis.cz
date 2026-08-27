@@ -1014,7 +1014,7 @@
   "title": "When Does Monetary Policy Sway House Prices? A Meta-Analysis",
   "literature": "Monetary Policy and House Prices",
   "abstract": "Several central banks have leaned against the wind in the housing market by increasing the policy rate preemptively to prevent a bubble. Yet the empirical literature provides mixed results on the impact of short-term interest rates on house prices: the estimated semi-elasticities range from -12 to positive values. To assign a pattern to these differences, we collect 1,555 estimates from 37 individual studies that cover 45 countries and 72 years. We then relate the estimates to 39 characteristics of the financial system, business cycle, and estimation approach. Our main results are threefold. First, the mean reported estimate is exaggerated by publication bias, because insignificant results are underreported. Second, inclusion of controls correlated with policy rates (credit or money supply) decreases the estimated effects of policy rates on house prices. Third, the effects are stronger in countries with more developed mortgage markets and generally later in the cycle when the yield curve is flat and house prices enter an upward spiral.",
-  "reference_line": "Dominika Ehrenbergerova, Josef Bajzik, Tomas Havranek (2023), \"When Does Monetary Policy Sway House Prices? A Meta-Analysis.\" IMF Economic Review 71, 538-573.",
+  "reference_line": "Dominika Ehrenbergerova, Josef Bajzik, Tomas Havranek (2023), \"When Does Monetary Policy Sway House Prices? A Meta-Analysis.\" IMF Economic Review 71(2), 538-573.",
   "authors": [
    "Dominika Ehrenbergerova",
    "Josef Bajzik",
@@ -1151,7 +1151,7 @@
   "title": "Transmission Lags of Monetary Policy: A Meta-Analysis",
   "literature": "Transmission Lags of Monetary Policy",
   "abstract": "The transmission of monetary policy to the economy is generally thought to have long and variable lags. In this paper we quantitatively review the modern literature on monetary transmission to provide stylized facts on the average lag length and the sources of variability. We collect 67 published studies and examine when prices bottom out after monetary contraction. The average transmission lag is 29 months, and the maximum decrease in prices reaches 0.9% on average after a one-percentage-point hike in the policy rate. Transmission lags are longer in developed economies (25-50 months) than in transition economies (10-20 months). We find that the factor most effective in explaining this heterogeneity is financial development: greater financial development is associated with slower transmission. Our results also suggest that researchers who use monthly data instead of quarterly data report systematically faster transmission.",
-  "reference_line": "Tomas Havranek & Marek Rusnak (2013), \"Transmission Lags of Monetary Policy: A Meta-Analysis.\" International Journal of Central Banking 9(4), pp. 39-76.",
+  "reference_line": "Tomas Havranek & Marek Rusnak (2013), \"Transmission Lags of Monetary Policy: A Meta-Analysis.\" International Journal of Central Banking 9(4), pp. 39-75.",
   "authors": [
    "Tomas Havranek",
    "Marek Rusnak"
@@ -1339,7 +1339,7 @@
   "title": "Meta-analyses of partial correlations are biased: Detection and solutions",
   "literature": "Bias in Meta-Analyses of Partial Correlations",
   "abstract": "We demonstrate that all meta-analyses of partial correlations are biased, and yet hundreds of meta-analyses of partial correlation coefficients (PCC) are conducted each year widely across economics, business, education, psychology, and medical research. To address these biases, we offer a new weighted average, UWLS+3. UWLS+3 is the unrestricted weighted least squares weighted average that makes an adjustment to the degrees of freedom that are used to calculate partial correlations and, by doing so, renders trivial any remaining meta-analysis bias. Our simulations also reveal that these meta-analysis biases are small-sample biases (n < 200), and a simple correction factor of (n-2)/(n-1) greatly reduces these small-sample biases. In many applications where primary studies typically have hundreds or more observations, partial correlations can be meta-analyzed in standard ways with only negligible bias. However, in other fields in the social and the medical sciences that are dominated by small samples, these meta-analysis biases are easily avoidable by our proposed methods.",
-  "reference_line": "T. D. Stanley, Hristos Doucouliagos, and Tomas Havranek (2024): \"Meta-analyses of partial correlations are biased: Detection and solutions.\" Research Synthesis Methods 15: 313-325.",
+  "reference_line": "T. D. Stanley, Hristos Doucouliagos, and Tomas Havranek (2024): \"Meta-analyses of partial correlations are biased: Detection and solutions.\" Research Synthesis Methods 15(2): 313-325.",
   "authors": [
    "T. D. Stanley",
    "Hristos Doucouliagos",
@@ -2089,7 +2089,7 @@
   "title": "Conventional wisdom, meta-analysis, and research revision in economics",
   "literature": "Conventional Wisdom and Meta-Analysis",
   "abstract": "Over the past several decades, meta-analysis has emerged as a widely accepted tool to understand economics research. Meta-analyses often challenge the established conventional wisdom of their respective fields. We systematically review a wide range of influential meta-analyses in economics and compare them to “conventional wisdom.” After correcting for observable biases, the empirical economic effects are typically much closer to zero and sometimes switch signs. Typically, the relative reduction in effect sizes is 45%–60%.",
-  "reference_line": "Sebastian Gechert, Bianka Mey, Matej Opatrny, Tomas Havranek, T. D. Stanley, Pedro R. D. Bom, Hristos Doucouliagos, Philipp Heimberger, Zuzana Irsova, Heiko J. Rachinger (2025), “Conventional wisdom, meta-analysis, and research revision in economics.” Journal of Economic Surveys 39, 980-999. 10.1111/joes.12630",
+  "reference_line": "Sebastian Gechert, Bianka Mey, Matej Opatrny, Tomas Havranek, T. D. Stanley, Pedro R. D. Bom, Hristos Doucouliagos, Philipp Heimberger, Zuzana Irsova, Heiko J. Rachinger (2025), “Conventional wisdom, meta-analysis, and research revision in economics.” Journal of Economic Surveys 39(3), 980-999. 10.1111/joes.12630",
   "authors": [
    "Sebastian Gechert",
    "Bianka Mey",
@@ -2148,7 +2148,7 @@
   "title": "Central Bank Equity as an Instrument of Monetary Policy",
   "literature": "Central Bank Equity and Monetary Policy",
   "abstract": "We examine the use of central bank equity as an unconventional monetary policy tool. In this setting, a central bank employs digital currency to transfer digital cash to each household, thus supporting consumption directly when needed. The asset side of the central bank's balance sheet remains unchanged, and the creation of new digital cash is offset by a decrease in central bank equity. The central bank thus incurs an immediate loss but does not take on any additional risks for its future income statements. We address several objections to this policy, paying particular attention to the claim that weakening the financial strength of the central bank endangers long-term price stability. Through a meta-analysis of 176 estimates reported previously in the literature, we find that central bank financial strength has not historically correlated with inflation performance.",
-  "reference_line": "Mojmir Hampl, Tomas Havranek (2020), \"Central Bank Equity as an Instrument of Monetary Policy.\" Comparative Economic Studies 62: 49-68.",
+  "reference_line": "Mojmir Hampl, Tomas Havranek (2020), \"Central Bank Equity as an Instrument of Monetary Policy.\" Comparative Economic Studies 62(1): 49-68.",
   "authors": [
    "Mojmir Hampl",
    "Tomas Havranek"
@@ -2433,5 +2433,39 @@
   "meta_keywords": "artificial intelligence, meta-analysis, AI disclosure, research transparency, MAER-Net",
   "one_line": "The MAER-Net principles for using AI in a meta-analysis: humans lead, humans are accountable, humans audit the AI's decisions, and any substantive AI use is disclosed.",
   "home_label": "Guidelines home"
+ },
+ {
+  "project": "reporting_ai",
+  "title": "Reporting Guidelines for Meta-Analysis in Economics—Updated for AI",
+  "literature": "Reporting Guidelines Updated for AI",
+  "abstract": "Meta-analysis is how science takes stock of its vast research output. The advent of increasingly capable artificial intelligence (AI) promises an unprecedented ability to identify and synthesize relevant research and its findings. In this document, the meta-analysis of economics research network (MAER-Net) updates existing Reporting Guidelines to be consistent with community-driven best practices for the responsible use and disclosure of AI-assistance in meta-analysis research. This update is meant to further improve the transparency, replicability, and quality of meta-analyses by building upon the 2020 and 2013 Reporting Guidelines published by this Journal. Cook et al. (2026) describe the guiding principles behind the update. Future meta-analyses, whether or not they use AI, are expected to follow these updated guidelines or to be prepared to give reasons if they deviate from them.",
+  "reference_line": "Nikolai Cook, Frantisek Bartos, Pedro R. D. Bom, Sebastian Gechert, Klara Kantova, Jerome Geyer-Klingeberg, Tomas Havranek, Zuzana Irsova, Martina Luskova, Matej Opatrny, Franz Prante, Heiko J. Rachinger, and T. D. Stanley (2026): \"Reporting Guidelines for Meta-Analysis in Economics—Updated for AI.\" Journal of Economic Surveys, forthcoming. doi.org/10.1111/joes.70116",
+  "authors": [
+   "Nikolai Cook",
+   "Frantisek Bartos",
+   "Pedro R. D. Bom",
+   "Sebastian Gechert",
+   "Klara Kantova",
+   "Jerome Geyer-Klingeberg",
+   "Tomas Havranek",
+   "Zuzana Irsova",
+   "Martina Luskova",
+   "Matej Opatrny",
+   "Franz Prante",
+   "Heiko J. Rachinger",
+   "T. D. Stanley"
+  ],
+  "year": 2026,
+  "journal": "Journal of Economic Surveys",
+  "doi_or_publisher_url": "https://doi.org/10.1111/joes.70116",
+  "parent": "/guidelines/",
+  "slug": "guidelines/reporting-ai",
+  "home_label": "Guidelines home",
+  "pdf": "guidelines/reporting2026.pdf",
+  "figure": null,
+  "has_meta_description": true,
+  "meta_keywords": "reporting guidelines, meta-analysis, artificial intelligence, AI disclosure, MAER-Net",
+  "one_line": "The MAER-Net reporting checklist for meta-analysis in economics, updated for AI: what to report at every stage, and what to disclose when an AI did part of the work.",
+  "earlier_version": "reporting"
  }
 ]

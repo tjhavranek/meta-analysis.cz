@@ -1,10 +1,10 @@
 {
  "name": "meta-analysis.cz papers",
- "description": "One record per full-text document on meta-analysis.cz: 64 papers plus the MAIVE supplement, each with its full text, PDF and section map. Fetch this first and one page after, rather than the whole corpus.",
+ "description": "One record per full-text document on meta-analysis.cz: 65 papers plus the MAIVE supplement, each with its full text, PDF and section map. Fetch this first and one page after, rather than the whole corpus.",
  "license": "https://creativecommons.org/licenses/by/4.0/",
  "full_corpus": "https://meta-analysis.cz/llms-full.txt",
- "count": 65,
- "paper_count": 64,
+ "count": 66,
+ "paper_count": 65,
  "supplement_count": 1,
  "papers": [
   {
@@ -5351,6 +5351,88 @@
    "headline_question": "What should a meta-analysis in economics report?",
    "headline": "the MAER-Net guidelines on what every meta-analysis in economics should report, from search and coding to publication bias and replication",
    "headline_url": "https://meta-analysis.cz/results/#reporting"
+  },
+  {
+   "project": "reporting_ai",
+   "document_type": "paper",
+   "version": "record",
+   "published_as": null,
+   "title": "Reporting Guidelines for Meta-Analysis in Economics—Updated for AI",
+   "authors": [
+    "Nikolai Cook",
+    "Frantisek Bartos",
+    "Pedro R. D. Bom",
+    "Sebastian Gechert",
+    "Klara Kantova",
+    "Jerome Geyer-Klingeberg",
+    "Tomas Havranek",
+    "Zuzana Irsova",
+    "Martina Luskova",
+    "Matej Opatrny",
+    "Franz Prante",
+    "Heiko J. Rachinger",
+    "T. D. Stanley"
+   ],
+   "year": 2026,
+   "journal": "Journal of Economic Surveys",
+   "doi": "https://doi.org/10.1111/joes.70116",
+   "publisher_url": null,
+   "full_text_url": "https://meta-analysis.cz/guidelines/reporting-ai/",
+   "project_url": "https://meta-analysis.cz/guidelines/reporting-ai/",
+   "pdf_url": "https://meta-analysis.cz/guidelines/reporting2026.pdf",
+   "abstract": "Meta-analysis is how science takes stock of its vast research output. The advent of increasingly capable artificial intelligence (AI) promises an unprecedented ability to identify and synthesize relevant research and its findings. In this document, the meta-analysis of economics research network (MAER-Net) updates existing Reporting Guidelines to be consistent with community-driven best practices for the responsible use and disclosure of AI-assistance in meta-analysis research. This update is meant to further improve the transparency, replicability, and quality of meta-analyses by building upon the 2020 and 2013 Reporting Guidelines published by this Journal. Cook et al. (2026) describe the guiding principles behind the update. Future meta-analyses, whether or not they use AI, are expected to follow these updated guidelines or to be prepared to give reasons if they deviate from them.",
+   "sections": [
+    {
+     "level": 2,
+     "title": "1. Introduction",
+     "anchor": "sec-1"
+    },
+    {
+     "level": 2,
+     "title": "2. Reporting Guidelines for Meta-Analyses in Economics",
+     "anchor": "sec-2"
+    },
+    {
+     "level": 3,
+     "title": "2.1. Research Questions and Effect Size",
+     "anchor": "sec-2-1"
+    },
+    {
+     "level": 3,
+     "title": "2.2. Searching, Screening, and Coding of Primary Studies",
+     "anchor": "sec-2-2"
+    },
+    {
+     "level": 3,
+     "title": "2.3. Meta-Analyses and Meta-Regression",
+     "anchor": "sec-2-3"
+    },
+    {
+     "level": 3,
+     "title": "2.4. Further Reporting and Interpretation",
+     "anchor": "sec-2-4"
+    },
+    {
+     "level": 2,
+     "title": "3. Discussion",
+     "anchor": "sec-3"
+    },
+    {
+     "level": 2,
+     "title": "ACKNOWLEDGMENTS",
+     "anchor": "sec-acknowledgments"
+    },
+    {
+     "level": 2,
+     "title": "REFERENCES",
+     "anchor": "sec-references"
+    },
+    {
+     "level": 2,
+     "title": "ENDNOTES",
+     "anchor": "sec-endnotes"
+    }
+   ]
   },
   {
    "project": "resource_curse",

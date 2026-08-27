@@ -89,7 +89,7 @@
     "T. D. Stanley"
    ],
    "n_authors": 13,
-   "project": null,
+   "project": "reporting_ai",
    "type": "journal-article"
   },
   {
@@ -761,7 +761,7 @@
    "year": 2020,
    "venue": "Review of Economic Dynamics",
    "volume": "35",
-   "issue": null,
+   "issue": "1",
    "page": "97-122",
    "doi": "10.1016/j.red.2019.05.004",
    "authors": [
@@ -1553,7 +1553,7 @@
     "T. D. Stanley"
    ],
    "n_authors": null,
-   "project": null,
+   "project": "reporting_ai",
    "type": "journal-article"
   },
   {
@@ -2357,7 +2357,7 @@
    ],
    "n_authors": null,
    "project": null,
-   "type": "journal-article"
+   "type": "no-doi"
   },
   {
    "title": "Determinants of Bank Performance in Transition Countries: A Data Envelopment Analysis",
@@ -2486,7 +2486,7 @@
    ],
    "n_authors": null,
    "project": null,
-   "type": "journal-article"
+   "type": "no-doi"
   },
   {
    "title": "On the Intensity of International Subsidy Competition for FDI",

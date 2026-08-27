@@ -2,7 +2,7 @@
 
 ## FRONTMATTER
 
-Nikolai Cook^{1} | František Bartoš^{2} | Pedro R. D. Bom^{3} | Sebastian Gechert^{4} | Klára Kantová^{5} | Jerome Geyer-Klingeberg^{6} | Tomáš Havránek^{5,7,8} | Zuzana Irsova^{5,9,8} | Martina Luskova^{5} | Matěj Opatrný^{5} | Franz Prante^{4} | Heiko J. Rachinger^{10} | T. D. Stanley^{11}
+Nikolai Cook^{1} | Frantisek Bartos^{2} | Pedro R. D. Bom^{3} | Sebastian Gechert^{4} | Klara Kantova^{5} | Jerome Geyer-Klingeberg^{6} | Tomas Havranek^{5,7,8} | Zuzana Irsova^{5,9,8} | Martina Luskova^{5} | Matej Opatrny^{5} | Franz Prante^{4} | Heiko J. Rachinger^{10} | T. D. Stanley^{11}
 
 ^{1}Wilfrid Laurier University, Waterloo, Ontario, Canada
 
@@ -34,13 +34,13 @@ Nikolai Cook^{1} | František Bartoš^{2} | Pedro R. D. Bom^{3} | Sebastian Gech
 
 Meta-analysis is how science takes stock of its vast research output. The advent of increasingly capable artificial intelligence (AI) promises an unprecedented ability to identify and synthesize relevant research and its findings. In this document, the meta-analysis of economics research network (MAER-Net) updates existing Reporting Guidelines to be consistent with community-driven best practices for the responsible use and disclosure of AI-assistance in meta-analysis research. This update is meant to further improve the transparency, replicability, and quality of meta-analyses by building upon the 2020 and 2013 Reporting Guidelines published by this Journal. Cook et al. (2026) describe the guiding principles behind the update. Future meta-analyses, whether or not they use AI, are expected to follow these updated guidelines or to be prepared to give reasons if they deviate from them.
 
-## KEYWORDS: artificial intelligence | meta-analysis | meta-regression | research methods | reporting standards
+## KEYWORDS: artificial intelligence, meta-analysis, meta-regression, research methods, reporting standards
 
 ## 1 | Introduction
 
-Twelve years ago, *Journal of Economic Surveys* published the first Reporting Guidelines for Meta-Analysis in Economics (Stanley et al. 2013). Seven years later, the Reporting Guidelines were updated in Havránek et al. (2020), following numerous methodological advances in the field of meta-analysis (Stanley and Doucouliagos 2015;2017; Ioannidis et al. 2017; Andrews and Kasy 2019; Van Aert et al. 2019; Bom and Rachinger 2019; Furukawa 2019) and the impressive attention garnered by many meta-analyses in economics; examples with more than 1000 citations include Stanley (2001); Gorg and Strobl (2001); Woodward and Wui (2001); Weichselbaumer and Winter-Ebmer (2005), and Doucouliagos and Ulubaşoğlu (2008).^{1}
+Twelve years ago, *Journal of Economic Surveys* published the first Reporting Guidelines for Meta-Analysis in Economics (Stanley et al. 2013). Seven years later, the Reporting Guidelines were updated in Havranek et al. (2020), following numerous methodological advances in the field of meta-analysis (Stanley and Doucouliagos 2015;2017; Ioannidis et al. 2017; Andrews and Kasy 2019; Van Aert et al. 2019; Bom and Rachinger 2019; Furukawa 2019) and the impressive attention garnered by many meta-analyses in economics; examples with more than 1000 citations include Stanley (2001); Gorg and Strobl (2001); Woodward and Wui (2001); Weichselbaumer and Winter-Ebmer (2005), and Doucouliagos and Ulubaşoğlu (2008).^{1}
 
-In the five years since that update, there have been further methodological advancements in meta-analysis (examples include the Meta-Analysis Instrumental Variable Estimator and the broader easymeta.org tool (Irsova et al. 2025), the Proportion of Statistically Significant Test (Stanley et al. 2021), and a robust Bayesian model averaging approach to publication bias (Bartoš et al. 2023)), while a practitioner’s guide for meta-analysis of social science research (Irsova et al. 2024), and more influential meta-analyses have been published (Cazachevici et al. 2020; Xue et al. 2020; Imai et al. 2021; Taye et al. 2021; Brown et al. 2024; Havranek et al. 2024; Jackson and Mackevicius 2024; Antinyan and Asatryan 2025; Cala et al. 2026; Opatrny et al. 2026; Cohen and Ganong 2026).
+In the five years since that update, there have been further methodological advancements in meta-analysis (examples include the Meta-Analysis Instrumental Variable Estimator and the broader easymeta.org tool (Irsova et al. 2025), the Proportion of Statistically Significant Test (Stanley et al. 2021), and a robust Bayesian model averaging approach to publication bias (Bartos et al. 2023)), while a practitioner’s guide for meta-analysis of social science research (Irsova et al. 2024), and more influential meta-analyses have been published (Cazachevici et al. 2020; Xue et al. 2020; Imai et al. 2021; Taye et al. 2021; Brown et al. 2024; Havranek et al. 2024; Jackson and Mackevicius 2024; Antinyan and Asatryan 2025; Cala et al. 2026; Opatrny et al. 2026; Cohen and Ganong 2026).
 
 At the same time, the rapidly improving capabilities of artificial intelligence (AI), and in particular large language models (LLMs), now promise to revolutionize meta-analysis by replacing relatively scarce and highly-skilled labor with relatively inexpensive computing capital.^{2} Meta-analysis tasks that could take multiple human researchers weeks to complete can now be completed by an AI in minutes.^{3} This promise, however, must be embraced with great caution. Concerns include: AI-hallucinated or fabricated data (Emsley 2023), AI-generated primary studies (Elali and Rachid 2023), non-replicability (Ghahramani 2015; Brown et al. 2020), and non-transparency due to undisclosed AI use. For example, if undisclosed and unverified, a LLM might systematically exclude studies based on unknown criteria, potentially introducing selection bias in the resulting meta-analytic estimates. These guidelines are meant to help avoid careless applications of AI, which threaten the validity and quality of meta-analysis in economics research.
 
@@ -59,49 +59,81 @@ Research papers that conduct meta-analysis in economics should include the point
 ### 2.1 | Research Questions and Effect Size
 
 - A clear statement of the specific economic theories, hypotheses, or effects studied.
+
 - A precise definition of how effects are measured (the “effect size”) and their standard errors or other proxies for precision, accompanied by any relevant formulas if transformations are made.
+
 - An explicit description about how measured effects are comparable, including any methods or formulas used to standardize or convert them to a common metric.
+
 - *If AI assisted in formulating the research question or hypothesis, this should be disclosed.*
 
 ### 2.2 | Searching, Screening, and Coding of Primary Studies
 
 - A full report of how the research literature was searched. This report should include:
+
   - the exact databases or other sources used;
+
   - the precise combination of keywords employed; and
+
   - the date that the search was completed.
+
   - *If AI was used during any part of the literature search, compilation, or coding, this should be disclosed.*
+
   - *Where AI-assisted discovery tools were used, their exportable search logs should be shared in replication materials.*
+
 - A full disclosure of the rules for study (or effect size) inclusion/exclusion. This should be accompanied by a PRISMA flow diagram. *If an AI is used for screening, the human should audit a reasonable number or proportion of inclusions/exclusions and report the false-negative rate, with a default for “reasonable” as 10 percent or 100 records, whichever is larger. Particularly well-performing AI may require less auditing. In such cases, authors should briefly justify the reduced audit by reporting human-AI agreement (the ratio of human-AI matches to records reviewed) so that readers can judge whether the lower level of human verification is warranted.* Audits can be strengthened by independent second-pass review, including adversarial, dual-model workflows under human supervision (Irsova and Havranek 2026).
+
 - A statement addressing who searched, read, and coded the research literature. Two or more reviewers should code the relevant research and disclose a measure of their agreement. *An AI may be used as a substitute for one or both of the reviewers, however, this must be disclosed. A human should code a reasonable amount or proportion (10 percent or 20 studies by default, particularly well-performing AI may require less auditing) and any discrepancies between an AI and human reviewer should be disclosed, along with a statistical reliability metric such as Cohen’s $\kappa$.*
+
 - A complete list of the information coded for each study or estimate. At a minimum, we recommend that reviewers conducting a meta-analysis code:
+
   - the estimated effect size;
+
   - its standard error, when feasible, and the degrees of freedom (or sample size);
+
   - *dummy (i.e., 0/1) variable that the estimate was reviewed by a human.*
+
 - Reviewers conducting a meta-regression analysis also need to code:
+
   - variables that distinguish which type of econometric model, methods, and techniques were employed;
+
   - dummy (i.e., 0/1) variables for the omission of theoretically relevant variables in the research study investigated;
+
   - empirical setting (e.g., region, market, and industry);
+
   - data types (panel, cross-sectional, time series,...);
+
   - alternative ways that effects were measured and reported before being converted to a common effect size;
+
   - year of the data used and/or publication year;
+
   - type of publication (journal, working paper, book chapter, etc.);
+
   - the primary study, publication, and/or dataset from which an observation is drawn; and
+
 - The rule or method used to identify outliers, leverage, or influence points when omitted.
 
 ### 2.3 | Meta-Analyses and Meta-Regression
 
 - A table displaying definitions of all the coded variables along with their descriptive statistics (means and standard deviations) *and, if applicable, proportion coded by AI.*
+
 - A fully reported meta-regression analysis, along with the exact strategy used to simplify it (e.g., Bayesian or frequentist model averaging, general-to-specific, etc.).
+
 - An investigation of publication, selection, and misspecification biases unless these biases can reasonably be expected to be absent. When suspected, these should be controlled for in subsequent meta-regression models.
+
 - Methods to accommodate heteroscedasticity (e.g., inverse-variance weights) and dependence across estimates, such as within-study dependence (e.g., clustered or bootstrapped standard errors and panel or multilevel meta-regression models).
 
 ### 2.4 | Further Reporting and Interpretation
 
 - Graph(s) of the effect sizes, such as funnel graphs, forest plots, or other statistical displays of data. *If produced by AI without the researcher, this is disclosed in the figure’s caption: “Figure produced by AI.” ‘Produced by AI’ refers to outputs generated end-to-end by AI without human validation or the re-running of the analyses.*
+
 - Robustness checks for meta-regression models and publication bias methods. *Where AI contributed to any graphical or statistical outputs, authors should note whether the AI performed only formatting or visualization tasks, or whether it influenced analytic choices (such as bandwidths, model specifications, or weighting schemes). This distinction helps readers assess whether AI played a role in shaping the underlying evidence or only its presentation.*
+
 - A discussion of the economic (or practical) significance of the main findings.
+
 - “Best practice” estimate(s) and sensible variations from them.
+
 - *Where AI tools are used, replication materials should specify the AI model and version, dates of use, and any prompts, templates, or settings that materially influenced screening, coding, or analysis, enabling others to approximate the original AI-assisted workflow.*
+
 - A statement about sharing the data or link to its public posting along with the codes of the core analyses*, and, if applicable, sufficient details for a researcher to apply AI tools to replicate the meta-analysis results.*
 
 ## 3 | Discussion
@@ -114,7 +146,7 @@ With one exception, MAER-Net has come to a clear consensus about these reporting
 
 Similarly, MAER-Net does not wish to prohibit anyone from applying AI in their meta-analyses. When using AI to code the relevant research, we as economists recognize the tradeoff between cost and quality that may change over time as AI-tools develop. The above statement that exceptions to these guidelines are acceptable when accompanied by a suitable rationale is considered sufficiently broad to allow the community’s best practices to evolve over time.^{6}
 
-These guidelines are not meant to express the last words about how best to conduct meta-analysis in economics. Rather, we support all efforts to raise the quality, transparency, and replicability of meta-analysis. There is further useful guidance for what is best practice in applying meta-analysis in economics in Nelson and Kennedy (2009), Stanley and Doucouliagos (2012), and most recently in Irsova et al. (2024). This AI-update to the Reporting Guidelines represents a floor for scientific rigor, replicability, and quality that we hope will be surpassed by most meta-analyses (Stanley et al. 2013; Havránek et al. 2020).
+These guidelines are not meant to express the last words about how best to conduct meta-analysis in economics. Rather, we support all efforts to raise the quality, transparency, and replicability of meta-analysis. There is further useful guidance for what is best practice in applying meta-analysis in economics in Nelson and Kennedy (2009), Stanley and Doucouliagos (2012), and most recently in Irsova et al. (2024). This AI-update to the Reporting Guidelines represents a floor for scientific rigor, replicability, and quality that we hope will be surpassed by most meta-analyses (Stanley et al. 2013; Havranek et al. 2020).
 
 Finally, researchers remain responsible for the ethical use of AI and for protecting fairness, privacy, and scholarly integrity.
 
@@ -144,7 +176,7 @@ Andrews, I., and M. Kasy. 2019. “Identification of and Correction for Publicat
 
 Antinyan, A., and Z. Asatryan. 2025. “Nudging for Tax Compliance: A Meta-Analysis.” *Economic Journal* 135: 1033–1068.
 
-Bartoš, F., M. Maier, E.-J. Wagenmakers, H. Doucouliagos, and T. Stanley. 2023. “Robust Bayesian Meta-Analysis: Model-Averaging Across Complementary Publication Bias Adjustment Methods.” *Research Synthesis Methods* 14: 99–116.
+Bartos, F., M. Maier, E.-J. Wagenmakers, H. Doucouliagos, and T. Stanley. 2023. “Robust Bayesian Meta-Analysis: Model-Averaging Across Complementary Publication Bias Adjustment Methods.” *Research Synthesis Methods* 14: 99–116.
 
 Bom, P. R., and H. Rachinger. 2019. “A Kinked Meta-Regression Model for Publication Bias Correction.” *Research Synthesis Methods* 10: 497–514.
 
@@ -160,7 +192,7 @@ Cazachevici, A., T. Havranek, and R. Horvath. 2020. “Remittances and Economic 
 
 Cohen, J. P., and P. Ganong. 2026. “Disemployment Effects of Unemployment Insurance: A Meta-Analysis.” *American Economic Review: Insights* 8: 1–18.
 
-Cook, N., F. Bartoš, P. R. D. Bom, et al. 2026. “Guidance for the Use of AI in the Meta-Analysis of Economics Research.”*Journal of Economic Surveys* Forthcoming.
+Cook, N., F. Bartos, P. R. D. Bom, et al. 2026. “Guidance for the Use of AI in the Meta-Analysis of Economics Research.”*Journal of Economic Surveys* Forthcoming.
 
 Doucouliagos, H., and M. A. Ulubaşoğlu. 2008. “Democracy and Economic Growth: A Meta-Analysis.” *American Journal of Political Science* 52: 61–83.
 
@@ -180,7 +212,7 @@ Hagendorff, T. 2020. “The Ethics of AI Ethics: An Evaluation of Guidelines.”
 
 Havranek, T., Z. Irsova, L. Laslopova, and O. Zeynalova. 2024. “Publication and Attenuation Biases in Measuring Skill Substitution.” *Review of Economics and Statistics* 106: 1187–1200.
 
-Havránek, T., T. D. Stanley, H. Doucouliagos, et al. 2020. “Reporting Guidelines for Meta-Analysis in Economics.” *Journal of Economic Surveys* 34: 469–475.
+Havranek, T., T. D. Stanley, H. Doucouliagos, et al. 2020. “Reporting Guidelines for Meta-Analysis in Economics.” *Journal of Economic Surveys* 34: 469–475.
 
 Hernandez-Boussard, T., S. Bozkurt, J. P. Ioannidis, and N. H. Shah. 2020. “MINIMAR (MINimum Information for Medical AI Reporting): Developing Reporting Standards for Artificial Intelligence in Health Care.” *Journal of the American Medical Informatics Association* 27: 2011–2015.
 
@@ -208,7 +240,7 @@ Lu, Y., and Y. Zhou. 2021. “A Review on the Economics of Artificial Intelligen
 
 Nelson, J. P., and P. E. Kennedy. 2009. “The Use (and Abuse) of Meta-Analysis in Environmental and Natural Resource Economics: An Assessment.” *Environmental and Resource Economics* 42: 345–377.
 
-Opatrny, M., T. Havránek, Z. Irsova, and M. Scasny. 2026. “Publication Bias and Model Uncertainty in Measuring the Effect of Class Size on Achievement.”*Journal of Labor Economics* Forthcoming.
+Opatrny, M., T. Havranek, Z. Irsova, and M. Scasny. 2026. “Publication Bias and Model Uncertainty in Measuring the Effect of Class Size on Achievement.”*Journal of Labor Economics* Forthcoming.
 
 Page, M. J., J. E. McKenzie, P. M. Bossuyt, et al. 2021. “The PRISMA 2020 Statement: An Updated Guideline for Reporting Systematic Reviews.”*BMJ* 372.
 

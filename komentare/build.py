@@ -994,10 +994,18 @@ def write_index(items, key=None):
              # Month precision has to be stated the same way the item page states it, or
              # one @id carries two different dates and 2026-07-01 asserts a day nobody
              # knows. Likewise the status: a reference to a never-published text must not
-             # look like a reference to a published one.
-             ("dateCreated" if (a.get("unpublished") or a.get("genre") == "correspondence")
-              else "datePublished"): (a["date"][:7]
-                                      if a.get("date_precision") == "month" else a["date"])},
+             # look like a reference to a published one. An advisor opinion was written
+             # on `date` and released by the CNB years later, so this node has to split
+             # the two exactly as the item page does: the listing used to assert
+             # datePublished = the writing day on the very @id whose page says otherwise.
+             **({"dateCreated": a["date"], "datePublished": a["released"]}
+                if (not (a.get("unpublished") or a.get("genre") == "correspondence")
+                    and a.get("genre") == "advisor_opinion" and a.get("released"))
+                else {("dateCreated"
+                       if (a.get("unpublished") or a.get("genre") == "correspondence")
+                       else "datePublished"): (a["date"][:7]
+                                               if a.get("date_precision") == "month"
+                                               else a["date"])})},
             **({"creativeWorkStatus": "Unpublished"}
                if (a.get("unpublished") or a.get("genre") == "correspondence") else {})
         ) for a in sel],

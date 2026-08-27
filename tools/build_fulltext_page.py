@@ -31,7 +31,12 @@ HAND_BUILT = {k: "/%s/" % v for k, v in _HB.items()}
 def editions():
     out = []
     for project, meta in PAPERS.items():
-        href = HAND_BUILT.get(project)
+        # A paper's own `slug` is the address it actually lives at, and the only reason
+        # HAND_BUILT still exists is the three pages that predate that field. Asking
+        # HAND_BUILT alone silently dropped the 2026 guidelines from this index while
+        # they were in papers.json, the API, llms.txt, the sitemap, the search index and
+        # both publication lists, so /papers/ said 63 when the site carried 64.
+        href = HAND_BUILT.get(project) or (meta.get("slug") and "/%s/" % meta["slug"].strip("/"))
         if href is None and os.path.exists(os.path.join(ROOT, project, "paper", "index.html")):
             href = "/%s/paper/" % project
         if href is None:
@@ -184,16 +189,22 @@ picture.</p>
     lede = ("All %d papers on this site are here in full" % len(rows)
             if len(rows) >= len(PAPERS)
             else "%d of the %d papers on this site are here in full" % (len(rows), len(PAPERS)))
-    # What the list is made of. Six of these are not meta-analyses -- the applied work from
-    # the authors' central-banking years -- and a page that says only "papers" leaves a reader
-    # to discover that by clicking. The number is derived from estimates.csv, which is one row
-    # per meta-analysis, so it cannot drift from what /results/ shows.
+    # What the list is made of. A page that says only "papers" leaves a reader to discover
+    # by clicking that some of them are not meta-analyses. The number is derived from
+    # estimates.csv, so it cannot drift from what /results/ shows -- but that is the ONLY
+    # thing it means. The sentence used to call the remainder "not meta-analyses: applied
+    # work in banking, monetary policy and energy", which was wrong three times over once
+    # the list grew: cbequity contains a meta-analysis of 176 estimates and says so 29
+    # times on its own page, and the two 2026 MAER-Net documents are neither applied work
+    # nor about banking. Membership in estimates.csv means one thing, a headline result of
+    # the paper's own, so that is what the sentence now says.
     _meta = sum(1 for _r in csv.DictReader(open(os.path.join(ROOT, "estimates.csv"),
                                                 encoding="utf-8")))
     _other = len(rows) - _meta
     composition = (("%d are meta-analyses and meta-research, each answering a question on "
-                    "<a href=\"/results/\">Headline results</a>. The other %d are not "
-                    "meta-analyses: applied work in banking, monetary policy and energy.")
+                    "<a href=\"/results/\">Headline results</a>. The other %d carry no "
+                    "headline result of their own: the MAER-Net guidelines and reporting "
+                    "standards, and applied work in banking, monetary policy and energy.")
                    % (_meta, _other)) if _other > 0 else ""
     out = page.format(n=len(rows), lede=lede, listed=listed, figs=figs, footer=load_footer(),
                       composition=composition,

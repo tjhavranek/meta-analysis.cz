@@ -4,8 +4,8 @@
     python3 tools/build_publications_page.py [--check]
 
 One dataset, two pages: a complete journal bibliography for each of the two people who run
-this site. Their records overlap almost entirely -- of Zuzana Irsova's thirty-seven articles,
-thirty-six are co-authored with Tomas Havranek -- and that is what a bibliography of a research
+this site. Their records overlap almost entirely -- all but one of Zuzana Irsova's articles are
+co-authored with Tomas Havranek -- and that is what a bibliography of a research
 pair looks like. Each page is that person's own record, so the joint work appears on both,
 exactly as it does on their ORCID profiles. A page built by subtracting one from the other
 would say something false about how the work was done.
@@ -253,7 +253,8 @@ def audit(data):
         if len(pair) < 2:
             continue
         (w0, a), (w1, b) = pair[0], pair[1]
-        for f in ("title", "year", "venue", "volume", "page", "project", "authors"):
+        for f in ("title", "year", "venue", "volume", "issue", "page", "article_number",
+                  "project", "authors", "type"):
             if a.get(f) != b.get(f):
                 problems.append(f"{doi}: {f} differs between the {w0} and {w1} lists "
                                 f"({a.get(f)!r} vs {b.get(f)!r})")

@@ -28,6 +28,8 @@ Block level, one construct per line unless noted:
     $$ \\alpha_1 = ... $$ (7)  display equation, optional printed number in trailing parens
     $\\beta_1$                 inline mathematics, anywhere in a paragraph
 
+    - item                     a list item; two extra spaces of indent nests it under the
+      - nested item            item above. Blank lines between items are allowed.
     TABLE 1. Caption text      table caption; the pipe table on the following lines is the table
     TABLE 1 (continued). Cap   a second panel of the same printed table
     | a | b |                  markdown pipe table (the --- separator row is required)
@@ -201,6 +203,7 @@ RE_CONT_LEAD = re.compile(r"^\(\s*(?:continued|cont\.?)\s*\)\s*", re.I)
 # dotted parts such a caption is not a caption at all -- it prints as a stray paragraph and
 # the artwork beside it is never emitted. verify_transcript cannot see this, because the
 # caption text IS in the paper either way.
+RE_LI = re.compile(r"^(\s*)-\s+(.+)$")
 RE_FIG_CAP = re.compile(
     r"^FIGURE\s+([A-Za-z]{0,3}\.?\d+(?:\.\d+)*[A-Za-z]?)(\s*\(no artwork\))?\s*\.\s*(.*)$",
     re.I)
@@ -497,6 +500,42 @@ class Builder:
                 just_closed_table = False
                 continue
 
+            # A markdown list. The 2026 reporting guidelines are a checklist: half the
+            # paper is bullets and many carry sub-bullets, and until this branch existed
+            # the builder had no list construct at all, so they ran together into one
+            # paragraph with literal "- " markers. Blank lines between items are allowed:
+            # a list ends at the first non-blank line that is not an item, or at a heading.
+            mli = RE_LI.match(line)
+            if mli and mode not in ("references", "endnotes"):
+                flush()
+                items = []
+                while i < len(lines):
+                    ln = lines[i]
+                    if not ln.strip():
+                        j = i + 1
+                        while j < len(lines) and not lines[j].strip():
+                            j += 1
+                        if j < len(lines) and RE_LI.match(lines[j]):
+                            i = j
+                            continue
+                        break
+                    m_li = RE_LI.match(ln)
+                    if m_li:
+                        items.append((len(m_li.group(1)), m_li.group(2).strip()))
+                        i += 1
+                        continue
+                    # a wrapped continuation of the item above, but never a heading,
+                    # a table row or a caption
+                    if items and not ln.lstrip().startswith(("#", "|")) \
+                            and not RE_FIG_CAP.match(ln.strip()) \
+                            and not RE_TABLE_CAP.match(ln.strip()):
+                        items[-1] = (items[-1][0], items[-1][1] + " " + ln.strip())
+                        i += 1
+                        continue
+                    break
+                self.emit_list(items)
+                continue
+
             buf.append(line)
             i += 1
 
@@ -516,6 +555,43 @@ class Builder:
             return page.replace(REF_NOTE_SLOT, REF_NOTE)
         # With its newline: an unfilled slot must leave no trace, not a blank line.
         return page.replace(REF_NOTE_SLOT + "\n", "").replace(REF_NOTE_SLOT, "")
+
+    def emit_list(self, items):
+        """Render a markdown list, nesting on indentation.
+
+        Each item is (indent, text); the distinct indents are ranked, so any consistent
+        indentation works and the transcript does not have to guess the builder's unit. A
+        nested list is emitted inside its parent's open <li>, which is where it belongs:
+        as a sibling of the <li> it would be invalid, and a screen reader would announce
+        the sub-items as a separate list rather than as part of the item above them.
+        """
+        if not items:
+            return
+        rank = {d: n for n, d in enumerate(sorted({d for d, _ in items}))}
+        depth, open_li = 0, []
+        for d, text in items:
+            n = rank[d]
+            while depth > n + 1:
+                if open_li[-1]:
+                    self.w("</li>")
+                self.w("</ul>")
+                open_li.pop()
+                depth -= 1
+            if depth == n + 1 and open_li[n]:
+                self.w("</li>")
+                open_li[n] = False
+            while depth < n + 1:
+                self.w("<ul>")
+                open_li.append(False)
+                depth += 1
+            self.w("<li>%s" % inline(text, self.refs_numbered, not self.in_frontmatter))
+            open_li[n] = True
+        while depth:
+            if open_li[-1]:
+                self.w("</li>")
+            self.w("</ul>")
+            open_li.pop()
+            depth -= 1
 
     def emit_table(self, rows, caption):
         cells = [[c.strip() for c in r.strip("|").split("|")] for r in rows]
