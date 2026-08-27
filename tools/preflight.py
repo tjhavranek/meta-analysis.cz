@@ -76,64 +76,80 @@ def ci_commands():
     return cmds, unknown
 
 
-def _witness():
-    """A file changed by HEAD that the live site serves, and its expected bytes.
+def _witnesses(depth=12, most=6):
+    """Served files whose bytes should now be live, newest commits first.
+
+    Two ways this went wrong before it looked like this.
 
     smoke_live.py answers "is the site healthy", not "is THIS commit live". It checks
-    invariants -- dataset counts, the data version -- and a commit that changes neither
-    passes it while the site still serves the previous revision. That is the exact
-    mistake this whole flag exists to stop, and it made it once. So --deployed also
-    compares one real file from this commit against what the domain returns.
+    invariants, and a commit that moves none of them passes while the domain still
+    serves the previous revision.
+
+    And looking only at HEAD is not enough either. When a deploy FAILS, the next commit
+    carries the failed one's content too, so a tools-only HEAD reports "nothing to
+    witness" while a page's worth of undeployed work sits in front of it. That happened
+    the first time this function was used in anger. So walk back a few commits and
+    collect what the site serves, not just what HEAD touched: anything still undeployed
+    from an earlier failure shows up as a mismatch here.
     """
-    changed = subprocess.run("git diff-tree --no-commit-id --name-only -r HEAD",
-                             shell=True, cwd=ROOT, capture_output=True, text=True).stdout.split()
-    for rel in changed:
-        if rel.startswith(("tools/", "data_layer/", ".github/")) or rel.endswith(".py"):
-            continue        # not served, or served but not what a reader sees
-        path = os.path.join(ROOT, rel)
-        if not os.path.isfile(path):
-            continue
-        url = "/" + rel
-        if rel.endswith("/index.html"):
-            url = "/" + rel[: -len("index.html")]
-        elif rel == "index.html":
-            url = "/"
-        with open(path, "rb") as fh:
-            return url, hashlib.sha256(fh.read()).hexdigest(), rel
-    return None, None, None
+    out, seen = [], set()
+    for n in range(depth):
+        changed = subprocess.run(
+            f"git diff-tree --no-commit-id --name-only -r HEAD~{n}",
+            shell=True, cwd=ROOT, capture_output=True, text=True).stdout.split()
+        for rel in changed:
+            if rel in seen or rel.startswith(("tools/", "data_layer/", ".github/")) \
+                    or rel.endswith(".py"):
+                continue
+            path = os.path.join(ROOT, rel)
+            if not os.path.isfile(path):
+                continue
+            seen.add(rel)
+            url = "/" + rel
+            if rel.endswith("/index.html"):
+                url = "/" + rel[: -len("index.html")]
+            elif rel == "index.html":
+                url = "/"
+            with open(path, "rb") as fh:
+                out.append((url, hashlib.sha256(fh.read()).hexdigest(), rel))
+            if len(out) >= most:
+                return out
+    return out
 
 
 def deployed():
     """Ask the live domain whether it is serving what was pushed."""
     py = PY312 or "python3"
-    url, want, rel = _witness()
-    if url:
-        print(f"witness for this commit: {rel}")
+    wits = _witnesses()
+    if wits:
+        print("witnesses: " + ", ".join(r for _, _, r in wits))
     else:
-        # Real for a commit that only touches tools, the data pipeline or the workflow:
-        # nothing a reader fetches changed, so freshness cannot be observed from outside.
-        # Say it, rather than print a pass that looks like more than it is.
-        print("this commit changes no file the site serves, so only health can be checked")
+        # Real only if nothing a reader fetches has changed in a dozen commits.
+        print("no recently changed file is served, so only health can be checked")
     for attempt in range(1, 13):
         r = subprocess.run(f"{py} {SMOKE}", shell=True, cwd=ROOT,
                            capture_output=True, text=True)
         healthy = r.returncode == 0
-        fresh = True
-        if healthy and url:
-            try:
-                req = urllib.request.Request(
-                    f"https://meta-analysis.cz{url}?cb={attempt}-{os.getpid()}",
-                    headers={"Cache-Control": "no-cache", "Pragma": "no-cache"})
-                got = hashlib.sha256(urllib.request.urlopen(req, timeout=30).read()).hexdigest()
-                fresh = got == want
-            except Exception as e:
-                fresh, got = False, f"({e})"
-        if healthy and fresh:
+        stale = []
+        if healthy:
+            for url, want, rel in wits:
+                try:
+                    req = urllib.request.Request(
+                        f"https://meta-analysis.cz{url}?cb={attempt}-{os.getpid()}",
+                        headers={"Cache-Control": "no-cache", "Pragma": "no-cache"})
+                    got = hashlib.sha256(
+                        urllib.request.urlopen(req, timeout=30).read()).hexdigest()
+                except Exception:
+                    got = None
+                if got != want:
+                    stale.append(rel)
+        if healthy and not stale:
             print((r.stdout or "").strip())
-            if url:
-                print(f"and {rel} on the live domain is byte-identical to this commit")
+            if wits:
+                print(f"and all {len(wits)} witness file(s) on the live domain are "
+                      f"byte-identical to this checkout")
             return 0
-        why = "site not healthy" if not healthy else f"{rel} served is not this commit's"
+        why = "site not healthy" if not healthy else "served copies differ: " + ", ".join(stale[:3])
         print(f"attempt {attempt}: not live yet, {why}")
         if attempt < 12:
             time.sleep(45)
