@@ -20,7 +20,7 @@
    "type": "journal-article"
   },
   {
-   "title": "Guidance for the Use of AI in the Meta‐Analysis of Economics Research",
+   "title": "Guidance for the Use of AI in the Meta-Analysis of Economics Research",
    "year": 2026,
    "venue": "Journal of Economic Surveys",
    "volume": null,
@@ -46,8 +46,8 @@
    "type": "journal-article"
   },
   {
-   "title": "Reporting Guidelines for Meta‐Analysis in Economics—Updated for AI",
-   "year": 2026,
+   "title": "Reporting Guidelines for Meta-Analysis in Economics—Updated for AI",
+   "year": 2020,
    "venue": "Journal of Economic Surveys",
    "volume": null,
    "page": null,
@@ -68,7 +68,7 @@
     "T. D. Stanley"
    ],
    "n_authors": 13,
-   "project": null,
+   "project": "reporting",
    "type": "journal-article"
   },
   {
@@ -482,7 +482,7 @@
    "type": "journal-article"
   },
   {
-   "title": "Relative Risk Aversion: A Meta‐Analysis",
+   "title": "Relative Risk Aversion: A Meta-Analysis",
    "year": 2025,
    "venue": "Journal of Economic Surveys",
    "volume": "39",
@@ -516,7 +516,7 @@
   },
   {
    "title": "Conventional wisdom, meta-analysis, and research revision in economics",
-   "year": 2024,
+   "year": 2025,
    "venue": "Journal of Economic Surveys",
    "volume": "39",
    "page": "980-999",
@@ -538,7 +538,7 @@
    "type": "journal-article"
   },
   {
-   "title": "Meta‐analyses of partial correlations are biased: Detection and solutions",
+   "title": "Meta-analyses of partial correlations are biased: Detection and solutions",
    "year": 2024,
    "venue": "Research Synthesis Methods",
    "volume": "15",
@@ -605,7 +605,7 @@
   },
   {
    "title": "Is research on hedge fund performance published selectively? A quantitative survey",
-   "year": 2023,
+   "year": 2024,
    "venue": "Journal of Economic Surveys",
    "volume": "38",
    "page": "1085-1131",
@@ -621,8 +621,8 @@
    "type": "journal-article"
   },
   {
-   "title": "Meta‐analysis of social science research: A practitioner's guide",
-   "year": 2023,
+   "title": "Meta-analysis of social science research: A practitioner's guide",
+   "year": 2024,
    "venue": "Journal of Economic Surveys",
    "volume": "38",
    "page": "1547-1566",
@@ -672,7 +672,7 @@
   },
   {
    "title": "When Does Monetary Policy Sway House Prices? A Meta-Analysis",
-   "year": 2022,
+   "year": 2023,
    "venue": "IMF Economic Review",
    "volume": "71",
    "page": "538-573",
@@ -715,7 +715,7 @@
     "Tomas Havranek"
    ],
    "n_authors": 2,
-   "project": null,
+   "project": "cbequity",
    "type": "journal-article"
   },
   {
@@ -747,11 +747,11 @@
     "Zuzana Irsova"
    ],
    "n_authors": 4,
-   "project": null,
+   "project": "dst_slovakia",
    "type": "journal-article"
   },
   {
-   "title": "Estimating the Armington elasticity: The importance of study design and publication Bias",
+   "title": "Estimating the Armington elasticity: The importance of study design and publication bias",
    "year": 2020,
    "venue": "Journal of International Economics",
    "volume": "127",
@@ -880,7 +880,7 @@
     "Tomas Havranek"
    ],
    "n_authors": null,
-   "project": null,
+   "project": "elb",
    "type": "no-doi"
   },
   {
@@ -943,7 +943,7 @@
     "Tomas Havranek"
    ],
    "n_authors": 2,
-   "project": null,
+   "project": "contagion",
    "type": "journal-article"
   },
   {
@@ -964,7 +964,7 @@
   },
   {
    "title": "Do Borders Really Slash Trade? A Meta-Analysis",
-   "year": 2016,
+   "year": 2017,
    "venue": "IMF Economic Review",
    "volume": "65",
    "page": "365-396",
@@ -1011,7 +1011,7 @@
   },
   {
    "title": "Bank Competition and Financial Stability: Much Ado About Nothing?",
-   "year": 2015,
+   "year": 2016,
    "venue": "Journal of Economic Surveys",
    "volume": "30",
    "page": "944-981",
@@ -1088,7 +1088,7 @@
    "type": "journal-article"
   },
   {
-   "title": "A meta-analysis of the income elasticity of money demand,Meta-analýza duchodové elasticity poptávky po penezích",
+   "title": "A meta-analysis of the income elasticity of money demand",
    "year": 2014,
    "venue": "Politicka Ekonomie",
    "volume": "62",
@@ -1104,7 +1104,7 @@
   },
   {
    "title": "Banking, debt, and currency crises in developed countries: Stylized facts and early warning indicators",
-   "year": 2014,
+   "year": 2012,
    "venue": "Journal of Financial Stability",
    "volume": "15",
    "page": "1-17",
@@ -1118,12 +1118,12 @@
     "Borek Vasicek"
    ],
    "n_authors": 6,
-   "project": null,
+   "project": "crisis_ews",
    "type": "journal-article"
   },
   {
    "title": "Financial development and economic growth: A meta-analysis",
-   "year": 2014,
+   "year": 2015,
    "venue": "Journal of Economic Surveys",
    "volume": "29",
    "page": "506-526",
@@ -1190,9 +1190,9 @@
    "page": "37-70",
    "doi": "10.1111/j.1538-4616.2012.00561.x",
    "authors": [
-    "MAREK RUSNAK",
-    "TOMAS HAVRANEK",
-    "ROMAN HORVATH"
+    "Marek Rusnak",
+    "Tomas Havranek",
+    "Roman Horvath"
    ],
    "n_authors": 3,
    "project": "price_puzzle",
@@ -1214,12 +1214,12 @@
     "Borek Vasicek"
    ],
    "n_authors": 6,
-   "project": null,
+   "project": "leading_indicators",
    "type": "journal-article"
   },
   {
-   "title": "Structural reforms and growth in transition: A meta-analysis Structural reforms and growth in transition Babecky and Havranek",
-   "year": 2013,
+   "title": "Structural reforms and growth in transition: A meta-analysis",
+   "year": 2014,
    "venue": "Economics of Transition",
    "volume": "22",
    "page": "13-42",
@@ -1275,7 +1275,7 @@
     "Zuzana Irsova"
    ],
    "n_authors": 2,
-   "project": null,
+   "project": "spillovers_bias",
    "type": "journal-article"
   },
   {
@@ -1443,7 +1443,7 @@
   },
   {
    "title": "Reporting Guidelines for Meta-Analysis in Economics-Updated for AI",
-   "year": 2026,
+   "year": 2020,
    "venue": "Journal of Economic Surveys",
    "volume": null,
    "page": null,
@@ -1464,7 +1464,7 @@
     "T. D. Stanley"
    ],
    "n_authors": null,
-   "project": null,
+   "project": "reporting",
    "type": "journal-article"
   },
   {
@@ -1862,7 +1862,7 @@
    "type": "journal-article"
   },
   {
-   "title": "Relative Risk Aversion: A Meta‐Analysis",
+   "title": "Relative Risk Aversion: A Meta-Analysis",
    "year": 2025,
    "venue": "Journal of Economic Surveys",
    "volume": "39",
@@ -1896,7 +1896,7 @@
   },
   {
    "title": "Conventional wisdom, meta-analysis, and research revision in economics",
-   "year": 2024,
+   "year": 2025,
    "venue": "Journal of Economic Surveys",
    "volume": "39",
    "page": "980-999",
@@ -1969,7 +1969,7 @@
   },
   {
    "title": "Is research on hedge fund performance published selectively? A quantitative survey",
-   "year": 2023,
+   "year": 2024,
    "venue": "Journal of Economic Surveys",
    "volume": "38",
    "page": "1085-1131",
@@ -1986,7 +1986,7 @@
   },
   {
    "title": "Meta-analysis of social science research: A practitioner's guide",
-   "year": 2023,
+   "year": 2024,
    "venue": "Journal of Economic Surveys",
    "volume": "38",
    "page": "1547-1566",
@@ -2065,7 +2065,7 @@
     "Zuzana Irsova"
    ],
    "n_authors": null,
-   "project": null,
+   "project": "dst_slovakia",
    "type": "journal-article"
   },
   {
@@ -2167,7 +2167,7 @@
   },
   {
    "title": "Do Borders Really Slash Trade? A Meta-Analysis",
-   "year": 2016,
+   "year": 2017,
    "venue": "IMF Economic Review",
    "volume": "65",
    "page": "365-396",
@@ -2216,7 +2216,7 @@
   {
    "title": "Publication Bias in Measuring Anthropogenic Climate Change",
    "year": 2015,
-   "venue": "Energy &amp; Environment",
+   "venue": "Energy & Environment",
    "volume": "26",
    "page": "853-862",
    "doi": "10.1260/0958-305x.26.5.853",
@@ -2248,7 +2248,7 @@
   {
    "title": "A Meta-Analysis of Bank Efficiency Measurement in Transitional Countries",
    "year": 2013,
-   "venue": "TRANSFORMATIONS IN BUSINESS & ECONOMICS",
+   "venue": "Transformations In Business & Economics",
    "volume": null,
    "page": null,
    "doi": "",
@@ -2315,7 +2315,7 @@
     "Zuzana Irsova"
    ],
    "n_authors": null,
-   "project": null,
+   "project": "spillovers_bias",
    "type": "journal-article"
   },
   {
@@ -2366,7 +2366,7 @@
   {
    "title": "Meta-Analysis of Intra-Industry FDI Spillovers: Updated Evidence",
    "year": 2010,
-   "venue": "FINANCE A UVER-CZECH JOURNAL OF ECONOMICS AND FINANCE",
+   "venue": "Finance A Uver-Czech Journal Of Economics And Finance",
    "volume": null,
    "page": null,
    "doi": "",

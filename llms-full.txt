@@ -9565,7 +9565,7 @@ Crisis coding: https://meta-analysis.cz/ews/cdec40_40_at_least_two.xls
 Working paper at the ECB: https://www.ecb.europa.eu/pub/pdf/scpwps/ecbwp1485.pdf
 Full text (HTML): https://meta-analysis.cz/crisis_ews/paper/
 
-Abstract: We construct and explore a new quarterly dataset covering crisis episodes in 40 developed countries over 1970–2010. First, we examine stylized facts of banking, debt, and currency crises. Banking turmoil was most frequent in developed economies. Using panel vector autoregression, we confirm that currency and debt crises are typically preceded by banking crises, but not vice versa. Banking crises are also the most costly in terms of the overall output loss, and output takes about six years to recover. Second, we try to identify early warning indicators of crises specific to developed economies, accounting for model uncertainty by means of Bayesian model averaging. Our results suggest that onsets of banking and currency crises tend to be preceded by booms in economic activity. In particular, we find that growth of domestic private credit, increasing FDI inflows, rising money market rates as well as increasing world GDP and inflation were common leading indicators of banking crises. Currency crisis onsets were typically preceded by rising money market rates, but also by worsening government balances and falling central bank reserves. Early warning indicators of debt crisis are difficult to uncover due to the low occurrence of such episodes in our dataset. Finally, employing a signaling approach we show that using a composite early warning index increases the usefulness of the model when compared to using the best single indicator (domestic private credit). JEL Codes: C33, E44, E58, F47, G01.
+Abstract: We construct and explore a new quarterly dataset covering crisis episodes in 40 developed countries over 1970–2010. First, we examine stylized facts of banking, debt, and currency crises. Banking turmoil was most frequent in developed economies. Using panel vector autoregression, we confirm that currency and debt crises are typically preceded by banking crises, but not vice versa. Banking crises are also the most costly in terms of the overall output loss, and output takes about six years to recover. Second, we try to identify early warning indicators of crises specific to developed economies, accounting for model uncertainty by means of Bayesian model averaging. Our results suggest that onsets of banking and currency crises tend to be preceded by booms in economic activity. In particular, we find that growth of domestic private credit, increasing FDI inflows, rising money market rates as well as increasing world GDP and inflation were common leading indicators of banking crises. Currency crisis onsets were typically preceded by rising money market rates, but also by worsening government balances and falling central bank reserves. Early warning indicators of debt crisis are difficult to uncover due to the low occurrence of such episodes in our dataset. Finally, employing a signaling approach we show that using a composite early warning index increases the usefulness of the model when compared to using the best single indicator (domestic private credit).
 
 # Banking, debt, and currency crises: Early warning indicators for developed countries
 
@@ -39375,6 +39375,8 @@ into the estimated meta-regression for the independent variables (Stanley and Do
 
 #### References
 
+Some entries below were printed without a link. Where a Crossref record matches one and no other record plausibly could, its DOI is shown; ambiguous references are left as they were printed.
+
 
 Andrews, I. and Kasy, M. (2019) Identification of and correction for publication bias. American Economic Review 109(8): 2766–2794.
 
@@ -39406,11 +39408,11 @@ Gechert, S., Havranek, T., Irsova, Z. and Kolcunova, D. (2019) Death to the Cobb
 
 Gorg, H. and Strobl, E. (2001) Multinational companies and productivity spillovers: a meta-analysis. Economic Journal 111(475): 723–739.
 
-Havranek, T., Herman, D. and Irsova, Z. (2018a) Does daylight saving save electricity? A meta-analysis. Energy Journal 39(2): 35–61.
+Havranek, T., Herman, D. and Irsova, Z. (2018a) Does daylight saving save electricity? A meta-analysis. Energy Journal 39(2): 35–61. 10.5547/01956574.39.2.thav
 
 Havranek, T., Horvath, R., Irsova, Z. and Rusnak, M. (2015) Cross-country heterogeneity in intertemporal substitution. Journal of International Economics 96(1): 100–118.
 
-Havranek, T. and Irsova, Z. (2017) Do borders really slash trade? A meta-analysis. IMF Economic Review 65(2): 365–396.
+Havranek, T. and Irsova, Z. (2017) Do borders really slash trade? A meta-analysis. IMF Economic Review 65(2): 365–396. 10.1057/s41308-016-0001-5
 
 Havranek, T., Irsova, Z. and Zeynalova, O. (2018b) Tuition fees and university enrolment: a meta-regression analysis. Oxford Bulletin of Economics and Statistics 80(6): 1145–1184.
 
@@ -39432,7 +39434,7 @@ Nelson, J. and Kennedy, P. (2009) The use (and abuse) of meta-analysis in enviro
 
 Rose, A.K. and Stanley, T.D. (2005) A meta-analysis of the effect of common currencies on international trade. Journal of Economic Surveys 19(3): 347–365.
 
-Stanley, T.D. (2001) Wheat from chaff: meta-analysis as quantitative literature review. Journal of Economic Perspectives 15(3): 131–150.
+Stanley, T.D. (2001) Wheat from chaff: meta-analysis as quantitative literature review. Journal of Economic Perspectives 15(3): 131–150. 10.1257/jep.15.3.131
 
 Stanley, T.D. and Doucouliagos, H. (2012) Meta-Regression Analysis in Economics and Business. Oxford: Routledge.
 

@@ -314,9 +314,16 @@ else:
             continue
         _p = os.path.join(_dp, "index.html")
         _mm = _foot_re.search(open(_p, encoding="utf-8").read())
-        if _mm and _mm.group(0) != _canonical:
-            fails.append("%s: site footer differs from the homepage's"
-                         % os.path.relpath(_p, SITE).replace(os.sep, "/"))
+        # A page with NO footer used to pass here: the check only fired when it found one to
+        # compare. Seven pages shipped without a footer that way. Absence is the same defect
+        # as divergence, and is now reported as one.
+        _rel = os.path.relpath(_p, SITE).replace(os.sep, "/")
+        # /komentare/ is a section in Czech with its own <footer class="foot">, built and
+        # checked by komentare/build.py. Everything else carries the site footer.
+        if not _mm and not _rel.startswith("komentare/"):
+            fails.append("%s: no site footer at all" % _rel)
+        elif _mm and _mm.group(0) != _canonical:
+            fails.append("%s: site footer differs from the homepage's" % _rel)
 
 # llms.txt / llms-full.txt internal URLs resolve
 for fn in ("llms.txt", "llms-full.txt"):

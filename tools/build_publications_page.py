@@ -49,7 +49,9 @@ AUTHOR_CAP = 8
 
 
 def author_line(names):
-    if len(names) <= AUTHOR_CAP:
+    # One name over the cap is not worth a truncation notice: "and 1 others" is not English,
+    # and printing the name is shorter than saying it was withheld.
+    if len(names) <= AUTHOR_CAP + 1:
         return ", ".join(names)
     return ", ".join(names[:AUTHOR_CAP]) + f", and {len(names) - AUTHOR_CAP} others"
 
@@ -155,6 +157,7 @@ def page(key, records, all_data):
 <title>Publications &#8212; {E(p['name'])}</title>
 <meta name="description" content="The complete journal publication record of {E(p['name'])}: {len(records)} articles, {n_full} of them republished in full text on this site." />
 <link href="/style.css" rel="stylesheet" type="text/css" />
+<link href="/paper.css" rel="stylesheet" type="text/css" />
 <!-- seo-meta:start -->
 <link rel="canonical" href="{BASE}/{p['slug']}/" />
 <meta property="og:site_name" content="meta-analysis.cz" />
@@ -198,7 +201,7 @@ here in full text. Working papers and preprints are not listed separately: where
 been published, the published version is what appears. The other half of this site's work is
 <a href="/{other['slug']}/">{E(other['name'])}'s publication list</a>.</p>
 
-<ol class="fulltext publist">
+<ol class="publist">
 {chr(10).join(item(r) for r in records)}
 </ol>
 {tab}{tab}{tab}</div>

@@ -610,6 +610,16 @@ def esc_attr(s):
     return html.escape(s or "", quote=True)
 
 
+def _short_title(parent_label, label, meta):
+    base = parent_label or label
+    if len(base) <= 60:
+        return base
+    lit = (meta.get("literature") or "").strip()
+    if parent_label or not lit:
+        return base.split(":")[0]
+    return lit if len(lit) <= 60 else lit.split(":")[0]
+
+
 def _doi_label(meta):
     """A working paper has no version of record; its link goes to the working paper itself."""
     return ("Working paper" if (meta.get("version") or "").lower() == "working_paper"
@@ -811,8 +821,11 @@ def build_page(project, meta, body, toc):
 </html>
 """.format(
         title=html.escape(title),
-        short=html.escape((parent_label or label) if len(parent_label or label) <= 60
-                          else (parent_label or label).split(":")[0]),
+        # The masthead names the paper in a few words. Cutting a long title at its first
+        # colon gives "Survey Article" for one of them, which names nothing: papers.json
+        # already carries the site's own short name for the literature, so use that before
+        # falling back to the cut.
+        short=html.escape(_short_title(parent_label, label, meta)),
         home=home,
         strapline="the supplement in full" if parent_label else "the full text",
         desc=esc_attr(desc),
