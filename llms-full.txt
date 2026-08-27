@@ -9558,7 +9558,8 @@ xiv. An illustrative example comes from Kivikangas' et al.^{46} meta-analysis of
 ## Banking, debt, and currency crises: Early warning indicators for developed countries
 URL: https://meta-analysis.cz/crisis_ews/
 Citation: Jan Babecky, Tomas Havranek, Jakub Mateju, Marek Rusnak, Katerina Smidkova, Borek Vasicek (2012), "Banking, debt, and currency crises: Early warning indicators for developed countries." ECB Working Paper Series No. 1485.
-Published version: https://www.ecb.europa.eu/pub/pdf/scpwps/ecbwp1485.pdf
+Working paper: https://www.ecb.europa.eu/pub/pdf/scpwps/ecbwp1485.pdf
+Published as: "Banking, debt, and currency crises in developed countries: Stylized facts and early warning indicators" Journal of Financial Stability 2014. https://doi.org/10.1016/j.jfs.2014.07.001
 Paper: https://meta-analysis.cz/crisis_ews/crisis_ews.pdf
 Crisis database: https://meta-analysis.cz/ews/crises_database.xls
 Crisis coding: https://meta-analysis.cz/ews/cdec40_40_at_least_two.xls

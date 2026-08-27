@@ -135,7 +135,10 @@ REF_VIP = [
     re.compile(r"(?P<vol>\d+)\s*\(\s*(?P<iss>[\dA-Za-z\-]+)\s*\)\s*[:,]?\s*(?:pp?\.?\s*)?(?P<fp>\d+)\s*[-–—]\s*(?P<lp>\d+)"),
     re.compile(r"(?P<vol>\d+)\s*\(\s*(?P<iss>[\dA-Za-z\-]+)\s*\)\s*[:,]?\s*(?:pp?\.?\s*)?(?P<fp>\d+)"),
     re.compile(r"(?<![.\d])(?P<vol>\d{1,3})\s*[:,]\s*(?:pp?\.?\s*)?(?P<fp>\d+)\s*[-–—]\s*(?P<lp>\d+)"),
-    re.compile(r"(?<![.\d])(?P<vol>\d{1,3}),\s*(?P<fp>\d{4,7})\b"),  # article-number journals
+    # Article-number journals: Energy Policy prints "137: 111146" where World Development
+    # prints "134, 105021". Matching only the comma left one paper on this site with no
+    # volume and no page in its citation tags at all.
+    re.compile(r"(?<![.\d])(?P<vol>\d{1,3})\s*[:,]\s*(?P<fp>\d{4,7})\b"),
 ]
 
 def parse_ref(ref):
@@ -441,6 +444,17 @@ def highwire_tags(m):
                        ("fp", "citation_firstpage"), ("lp", "citation_lastpage")):
             if vip.get(k):
                 tags.append(f'<meta name="{tag}" content="{vip[k]}" />')
+    elif (m.get("version") or "") == "working_paper" and m["reference_line"]:
+        # The series and number ARE the record for a working paper. Without them Google
+        # Scholar clusters on title and PDF alone and invents a document sourced only from
+        # this domain, losing the ECB's own identity for it.
+        _mm = re.search(r"([A-Z][^.\"]*?(?:Working Paper|Discussion Paper)[^.\"]*?)"
+                        r"\s*(?:No\.?\s*)?(\d+)", m["reference_line"])
+        if _mm:
+            tags.append('<meta name="citation_technical_report_institution" content="%s" />'
+                        % esc(_mm.group(1).strip().rstrip(",")))
+            tags.append('<meta name="citation_technical_report_number" content="%s" />'
+                        % esc(_mm.group(2)))
     elif m["reference_line"] and "Charles University" in m["reference_line"]:
         tags.append('<meta name="citation_technical_report_institution" content="Charles University, Prague" />')
     doi = extract_doi(m["doi_or_publisher_url"])
@@ -744,7 +758,11 @@ def main():
             m = dict(base)   # title/abstract/menu/figure/keywords from CURRENT page
             for k in ("authors", "journal", "one_line", "doi_or_publisher_url",
                       "dataset_doi", "dataset_license", "license", "article_license",
-                      "citation_title", "pending_files"):
+                      "citation_title", "pending_files",
+                      # which version of itself a page serves, and the article a working
+                      # paper was published as: both are facts about the document, and the
+                      # exports were saying the opposite without them
+                      "version", "published_as"):
                 if s.get(k):
                     m[k] = s[k]
             if not m["abstract"] or len(m["abstract"]) < 80:
@@ -1194,8 +1212,17 @@ def main():
         # tell which is meant. The DOI form wins; the menu's copy is dropped.
         emitted_labels = set()
         if m["doi_or_publisher_url"]:
-            lf.append(f"Published version: {m['doi_or_publisher_url']}")
-            emitted_labels.add("published version")
+            # A working paper has no published version; its own URL is the working paper.
+            # Calling it "Published version" here contradicted the page, and left the article
+            # it was actually published as out of the export entirely.
+            _wp = (m.get("version") or "") == "working_paper"
+            lf.append(f"{'Working paper' if _wp else 'Published version'}: "
+                      f"{m['doi_or_publisher_url']}")
+            emitted_labels.add("working paper" if _wp else "published version")
+        _pub = m.get("published_as") or {}
+        if _pub.get("doi"):
+            lf.append(f"Published as: \"{_pub.get('title','')}\" "
+                      f"{_pub.get('journal','')} {_pub.get('year','')}. {_pub['doi']}")
         lf += [f"{l['label']}: {absurl(p, l['href'])}" for l in m["menu_links"]
                if (l["href"].startswith(("http://", "https://"))
                    or local_exists(p, l["href"]))

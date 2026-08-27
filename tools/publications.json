@@ -1345,7 +1345,7 @@
    "venue": "Finance a Uver - Czech Journal of Economics and Finance",
    "volume": null,
    "page": null,
-   "doi": "10.2139/ssrn.1140707",
+   "doi": "",
    "authors": [
     "Tomas Havranek",
     "Zuzana Irsova"
@@ -2364,13 +2364,16 @@
    "type": "journal-article"
   },
   {
-   "title": "Meta-Analysis of Intra-Industry FDI Spillovers: Updated Evidence",
+   "title": "Meta-analysis of intra-industry FDI spillovers: Updated evidence",
    "year": 2010,
-   "venue": "Finance A Uver-Czech Journal Of Economics And Finance",
+   "venue": "Finance a Uver - Czech Journal of Economics and Finance",
    "volume": null,
    "page": null,
    "doi": "",
-   "authors": [],
+   "authors": [
+    "Tomas Havranek",
+    "Zuzana Irsova"
+   ],
    "n_authors": null,
    "project": null,
    "type": "journal-article"

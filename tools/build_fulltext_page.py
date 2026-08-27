@@ -66,6 +66,10 @@ def entry(year, title, project, href, meta):
             if authors else ""
     journal = meta.get("journal") or ""
     where = "<i>%s</i>" % html.escape(journal) if journal else "working paper"
+    # Say which version the reader will get. The working paper already reads as one; an
+    # accepted manuscript looked exactly like the fifty-three versions of record.
+    if (meta.get("version") or "") == "accepted_manuscript":
+        where += " (accepted manuscript)"
     extra = hanging(href)
     # A paper can be published without THIS text being the published version. The page serves
     # the working paper and says so; the list must still say the research is published, and

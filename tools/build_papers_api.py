@@ -60,6 +60,12 @@ def build():
         rec = {
             "project": proj,
             "document_type": "paper" if proj in paper_projects else "supplement",
+            # Which version of itself the full text is. The HTML says so in visible text and
+            # in its citation tags; an API consumer was left to assume the version of record.
+            "version": meta.get("version") or "record",
+            # And, for a working paper, the article it was published as: a consumer that
+            # cannot see this counts the two as one document or cites the wrong one.
+            "published_as": meta.get("published_as") or None,
             "title": article_title(meta),
             "authors": meta.get("authors") or [],
             "year": meta.get("year"),
@@ -67,7 +73,11 @@ def build():
             "doi": doi if doi.startswith("https://doi.org/") else None,
             "publisher_url": doi if doi and not doi.startswith("https://doi.org/") else None,
             "full_text_url": BASE + page_href(proj, meta),
-            "project_url": (BASE + (meta.get("parent") or "/%s/" % proj)),
+            # A paper filed under another project's landing shares that landing with the
+            # paper it is filed under, so project_url would hand a consumer the OTHER
+            # paper's DOI and pages. Its own page is the honest answer.
+            "project_url": (BASE + (page_href(proj, meta) if meta.get("parent")
+                                    else "/%s/" % proj)),
             "pdf_url": (BASE + pdf_href(proj, meta)) if pdf_href(proj, meta) else None,
             "abstract": (meta.get("abstract") or "") or None,
             "sections": sections(page),

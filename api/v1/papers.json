@@ -10,6 +10,8 @@
   {
    "project": "activism",
    "document_type": "paper",
+   "version": "record",
+   "published_as": null,
    "title": "Does Shareholder Activism Create Value? A Meta-Analysis",
    "authors": [
     "Josef Bajzik",
@@ -95,6 +97,8 @@
   {
    "project": "alphas",
    "document_type": "paper",
+   "version": "record",
+   "published_as": null,
    "title": "What Matters in Explaining the Variation in Hedge Fund Performance?",
    "authors": [
     "Fan Yang",
@@ -210,6 +214,8 @@
   {
    "project": "armington",
    "document_type": "paper",
+   "version": "record",
+   "published_as": null,
    "title": "Estimating the Armington Elasticity: The Importance of Study Design and Publication Bias",
    "authors": [
     "Josef Bajzik",
@@ -305,6 +311,8 @@
   {
    "project": "beauty",
    "document_type": "paper",
+   "version": "record",
+   "published_as": null,
    "title": "Meta-Analysis of Field Studies on Beauty and Professional Success",
    "authors": [
     "Zuzana Irsova",
@@ -425,6 +433,8 @@
   {
    "project": "bma",
    "document_type": "paper",
+   "version": "record",
+   "published_as": null,
    "title": "Determinants of Horizontal Spillovers from FDI: Evidence from a Large Meta-Analysis",
    "authors": [
     "Zuzana Irsova",
@@ -503,6 +513,8 @@
   {
    "project": "border",
    "document_type": "paper",
+   "version": "record",
+   "published_as": null,
    "title": "Do Borders Really Slash Trade? A Meta-Analysis",
    "authors": [
     "Tomas Havranek",
@@ -576,6 +588,8 @@
   {
    "project": "cbequity",
    "document_type": "paper",
+   "version": "record",
+   "published_as": null,
    "title": "Central Bank Equity as an Instrument of Monetary Policy",
    "authors": [
     "Mojmir Hampl",
@@ -650,6 +664,8 @@
   {
    "project": "class",
    "document_type": "paper",
+   "version": "record",
+   "published_as": null,
    "title": "Publication Bias and Model Uncertainty in Measuring the Effect of Class Size on Achievement",
    "authors": [
     "Matej Opatrny",
@@ -725,6 +741,8 @@
   {
    "project": "climate",
    "document_type": "paper",
+   "version": "record",
+   "published_as": null,
    "title": "Publication Bias in Measuring Anthropogenic Climate Change",
    "authors": [
     "Dominika Reckova",
@@ -788,6 +806,8 @@
   {
    "project": "competition",
    "document_type": "paper",
+   "version": "record",
+   "published_as": null,
    "title": "Bank Competition and Financial Stability: Much Ado About Nothing?",
    "authors": [
     "Diana Zigraiova",
@@ -891,6 +911,8 @@
   {
    "project": "contagion",
    "document_type": "paper",
+   "version": "accepted_manuscript",
+   "published_as": null,
    "title": "The sources of contagion risk in a banking sector with foreign ownership",
    "authors": [
     "Tomas Fiala",
@@ -1065,6 +1087,8 @@
   {
    "project": "conventional_wisdom",
    "document_type": "paper",
+   "version": "record",
+   "published_as": null,
    "title": "Conventional wisdom, meta-analysis, and research revision in economics",
    "authors": [
     "Sebastian Gechert",
@@ -1150,6 +1174,8 @@
   {
    "project": "correlations",
    "document_type": "paper",
+   "version": "record",
+   "published_as": null,
    "title": "Reducing the biases of the conventional meta-analysis of correlations",
    "authors": [
     "T. D. Stanley",
@@ -1258,6 +1284,13 @@
   {
    "project": "crisis_ews",
    "document_type": "paper",
+   "version": "working_paper",
+   "published_as": {
+    "journal": "Journal of Financial Stability",
+    "year": 2014,
+    "doi": "https://doi.org/10.1016/j.jfs.2014.07.001",
+    "title": "Banking, debt, and currency crises in developed countries: Stylized facts and early warning indicators"
+   },
    "title": "Banking, debt, and currency crises: Early warning indicators for developed countries",
    "authors": [
     "Jan Babecky",
@@ -1351,6 +1384,8 @@
   {
    "project": "debate",
    "document_type": "paper",
+   "version": "record",
+   "published_as": null,
    "title": "Does Multi-Agent Debate Improve AI Feedback on Research Papers?",
    "authors": [
     "Tomas Havranek",
@@ -1468,6 +1503,8 @@
   {
    "project": "discrate",
    "document_type": "paper",
+   "version": "record",
+   "published_as": null,
    "title": "Individual Discount Rates: A Meta-Analysis of Experimental Evidence",
    "authors": [
     "Jindrich Matousek",
@@ -1552,6 +1589,8 @@
   {
    "project": "dst",
    "document_type": "paper",
+   "version": "record",
+   "published_as": null,
    "title": "Does Daylight Saving Save Electricity? A Meta-Analysis",
    "authors": [
     "Tomas Havranek",
@@ -1641,6 +1680,8 @@
   {
    "project": "dst_slovakia",
    "document_type": "paper",
+   "version": "accepted_manuscript",
+   "published_as": null,
    "title": "Does daylight saving time save electricity? Evidence from Slovakia",
    "authors": [
     "Peter Kudela",
@@ -1727,6 +1768,8 @@
   {
    "project": "education",
    "document_type": "paper",
+   "version": "record",
+   "published_as": null,
    "title": "Tuition Fees and University Enrolment: A Meta‐Regression Analysis",
    "authors": [
     "Tomas Havranek",
@@ -1846,6 +1889,8 @@
   {
    "project": "eis",
    "document_type": "paper",
+   "version": "record",
+   "published_as": null,
    "title": "Measuring Intertemporal Substitution: The Importance of Method Choices and Selective Reporting",
    "authors": [
     "Tomas Havranek"
@@ -1918,6 +1963,8 @@
   {
    "project": "elb",
    "document_type": "paper",
+   "version": "record",
+   "published_as": null,
    "title": "Estimating the Effective Lower Bound on the Czech National Bank's Policy Rate",
    "authors": [
     "Dominika Kolcunova",
@@ -2027,6 +2074,8 @@
   {
    "project": "electricity",
    "document_type": "paper",
+   "version": "record",
+   "published_as": null,
    "title": "Electricity demand has not become more price-responsive despite ninety years of technological change",
    "authors": [
     "Peter Kudela",
@@ -2113,6 +2162,8 @@
   {
    "project": "esg",
    "document_type": "paper",
+   "version": "record",
+   "published_as": null,
    "title": "Do Female Directors Raise ESG Ratings? A Meta-Analysis",
    "authors": [
     "Karolina Hozova",
@@ -2197,6 +2248,8 @@
   {
    "project": "euro",
    "document_type": "paper",
+   "version": "record",
+   "published_as": null,
    "title": "Rose Effect and the Euro: Is the Magic Gone?",
    "authors": [
     "Tomas Havranek"
@@ -2264,6 +2317,8 @@
   {
    "project": "excess_sensitivity",
    "document_type": "paper",
+   "version": "record",
+   "published_as": null,
    "title": "Do Consumers Really Follow a Rule of Thumb? Three Thousand Estimates from 144 Studies Say `Probably Not'",
    "authors": [
     "Tomas Havranek",
@@ -2342,6 +2397,8 @@
   {
    "project": "exercise",
    "document_type": "paper",
+   "version": "record",
+   "published_as": null,
    "title": "Effect of Exercise on Cognition, Memory, and Executive Function: A Study-Level Meta-Meta-Analysis Across Populations and Exercise Categories",
    "authors": [
     "Frantisek Bartos",
@@ -2464,6 +2521,8 @@
   {
    "project": "fdi",
    "document_type": "paper",
+   "version": "record",
+   "published_as": null,
    "title": "Foreign Capital and Domestic Productivity in the Czech Republic: A Meta-Regression Analysis",
    "authors": [
     "Mojmir Hampl",
@@ -2548,6 +2607,8 @@
   {
    "project": "finance_growth",
    "document_type": "paper",
+   "version": "record",
+   "published_as": null,
    "title": "Financial Development and Economic Growth: A Meta-Analysis",
    "authors": [
     "Petra Valickova",
@@ -2622,6 +2683,8 @@
   {
    "project": "forward",
    "document_type": "paper",
+   "version": "record",
+   "published_as": null,
    "title": "How Puzzling Is the Forward Premium Puzzle? A Meta-Analysis",
    "authors": [
     "Diana Zigraiova",
@@ -2722,6 +2785,8 @@
   {
    "project": "frisch",
    "document_type": "paper",
+   "version": "record",
+   "published_as": null,
    "title": "Intertemporal Substitution in Labor Supply: A Meta-Analysis",
    "authors": [
     "Ali Elminejad",
@@ -2812,6 +2877,8 @@
   {
    "project": "gasoline",
    "document_type": "paper",
+   "version": "record",
+   "published_as": null,
    "title": "Income Elasticity of Gasoline Demand: A Meta-Analysis",
    "authors": [
     "Tomas Havranek",
@@ -2920,6 +2987,8 @@
   {
    "project": "gasoline_price",
    "document_type": "paper",
+   "version": "record",
+   "published_as": null,
    "title": "Demand for Gasoline is More Price-Inelastic than Commonly Thought",
    "authors": [
     "Tomas Havranek",
@@ -2984,6 +3053,8 @@
   {
    "project": "guidelines",
    "document_type": "paper",
+   "version": "record",
+   "published_as": null,
    "title": "Meta-Analysis of Social Science Research: A Practitioner’s Guide",
    "authors": [
     "Zuzana Irsova",
@@ -3098,6 +3169,8 @@
   {
    "project": "habits",
    "document_type": "paper",
+   "version": "record",
+   "published_as": null,
    "title": "Habit Formation in Consumption: A Meta-Analysis",
    "authors": [
     "Tomas Havranek",
@@ -3222,6 +3295,8 @@
   {
    "project": "hedge",
    "document_type": "paper",
+   "version": "record",
+   "published_as": null,
    "title": "Is research on hedge fund performance published selectively? A quantitative survey",
    "authors": [
     "Fan Yang",
@@ -3362,6 +3437,8 @@
   {
    "project": "house_prices",
    "document_type": "paper",
+   "version": "record",
+   "published_as": null,
    "title": "When Does Monetary Policy Sway House Prices? A Meta-Analysis",
    "authors": [
     "Dominika Ehrenbergerova",
@@ -3466,6 +3543,8 @@
   {
    "project": "incentives",
    "document_type": "paper",
+   "version": "record",
+   "published_as": null,
    "title": "Financial Incentives and Performance: A Meta-Analysis of Experiments in Economics",
    "authors": [
     "Petr Cala",
@@ -3543,6 +3622,8 @@
   {
    "project": "inflation",
    "document_type": "paper",
+   "version": "record",
+   "published_as": null,
    "title": "Optimal Inflation Rate: A Meta-Analysis",
    "authors": [
     "Matej Opatrny",
@@ -3679,6 +3760,8 @@
   {
    "project": "lags",
    "document_type": "paper",
+   "version": "record",
+   "published_as": null,
    "title": "Transmission Lags of Monetary Policy: A Meta-Analysis",
    "authors": [
     "Tomas Havranek",
@@ -3752,6 +3835,8 @@
   {
    "project": "leading_indicators",
    "document_type": "paper",
+   "version": "record",
+   "published_as": null,
    "title": "Leading indicators of crisis incidence: Evidence from developed countries",
    "authors": [
     "Jan Babecky",
@@ -3870,6 +3955,8 @@
   {
    "project": "learning",
    "document_type": "paper",
+   "version": "record",
+   "published_as": null,
    "title": "Publication Bias and P-Hacking in the Effect of COVID-19 on Learning",
    "authors": [
     "Martina Luskova",
@@ -4013,6 +4100,8 @@
   {
    "project": "maive",
    "document_type": "paper",
+   "version": "record",
+   "published_as": null,
    "title": "Spurious Precision in Meta-Analysis of Observational Research",
    "authors": [
     "Zuzana Irsova",
@@ -4157,6 +4246,8 @@
   {
    "project": "maive_supplement",
    "document_type": "supplement",
+   "version": "record",
+   "published_as": null,
    "title": "Supplementary Information for Spurious Precision in Meta-Analysis of Observational Research",
    "authors": [
     "Zuzana Irsova",
@@ -4169,7 +4260,7 @@
    "doi": "https://doi.org/10.1038/s41467-025-63261-0",
    "publisher_url": null,
    "full_text_url": "https://meta-analysis.cz/maive/supplement/",
-   "project_url": "https://meta-analysis.cz/maive/paper/",
+   "project_url": "https://meta-analysis.cz/maive/supplement/",
    "pdf_url": "https://meta-analysis.cz/maive/supplement.pdf",
    "abstract": "The supplementary information for the MAIVE paper: the full simulation designs and their results, the empirical applications, additional simulations, twenty-nine supplementary figures and nine supplementary tables.",
    "sections": [
@@ -4263,6 +4354,8 @@
   {
    "project": "migrant",
    "document_type": "paper",
+   "version": "record",
+   "published_as": null,
    "title": "The Elasticity of Substitution between Native and Immigrant Labor: A Meta-Analysis",
    "authors": [
     "Klara Kantova",
@@ -4358,6 +4451,8 @@
   {
    "project": "outliers",
    "document_type": "paper",
+   "version": "record",
+   "published_as": null,
    "title": "Do decisions about outliers and influential effects matter? Evidence from 358 behavioral science meta-analyses",
    "authors": [
     "Tomas Havranek",
@@ -4472,6 +4567,8 @@
   {
    "project": "pcc",
    "document_type": "paper",
+   "version": "record",
+   "published_as": null,
    "title": "Meta-analyses of partial correlations are biased: Detection and solutions",
    "authors": [
     "T. D. Stanley",
@@ -4600,6 +4697,8 @@
   {
    "project": "pcc_survey",
    "document_type": "paper",
+   "version": "record",
+   "published_as": null,
    "title": "Do methods matter in the meta-analysis of partial correlation coefficients?",
    "authors": [
     "T. D. Stanley",
@@ -4700,6 +4799,8 @@
   {
    "project": "price_puzzle",
    "document_type": "paper",
+   "version": "record",
+   "published_as": null,
    "title": "How to Solve the Price Puzzle? A Meta-Analysis",
    "authors": [
     "Marek Rusnak",
@@ -4789,6 +4890,8 @@
   {
    "project": "reforms",
    "document_type": "paper",
+   "version": "record",
+   "published_as": null,
    "title": "Structural Reforms and Growth in Transition: A Meta-Analysis",
    "authors": [
     "Jan Babecky",
@@ -4872,6 +4975,8 @@
   {
    "project": "remittances",
    "document_type": "paper",
+   "version": "record",
+   "published_as": null,
    "title": "Remittances and Economic Growth: A Meta-Analysis",
    "authors": [
     "Alina Cazachevici",
@@ -4991,6 +5096,8 @@
   {
    "project": "reporting",
    "document_type": "paper",
+   "version": "record",
+   "published_as": null,
    "title": "Reporting Guidelines for Meta-Analysis in Economics",
    "authors": [
     "Tomas Havranek",
@@ -5008,7 +5115,7 @@
    "doi": "https://doi.org/10.1111/joes.12363",
    "publisher_url": null,
    "full_text_url": "https://meta-analysis.cz/guidelines/reporting/",
-   "project_url": "https://meta-analysis.cz/guidelines/",
+   "project_url": "https://meta-analysis.cz/guidelines/reporting/",
    "pdf_url": "https://meta-analysis.cz/guidelines/reporting2020.pdf",
    "abstract": "Meta-analysis has become the conventional approach to synthesizing the results of empirical economics research. To further improve the transparency and replicability of the reported results and to raise the quality of meta-analyses, the Meta-Analysis of Economics Research Network has updated the reporting guidelines that were published by this Journal in 2013. Future meta-analyses in economics will be expected to follow these updated guidelines or give valid reasons why a meta-analysis should deviate from them.",
    "sections": [
@@ -5070,6 +5177,8 @@
   {
    "project": "resource_curse",
    "document_type": "paper",
+   "version": "record",
+   "published_as": null,
    "title": "Natural Resources and Economic Growth: A Meta-Analysis",
    "authors": [
     "Tomas Havranek",
@@ -5204,6 +5313,8 @@
   {
    "project": "risk",
    "document_type": "paper",
+   "version": "record",
+   "published_as": null,
    "title": "Relative Risk Aversion: A Meta-Analysis",
    "authors": [
     "Ali Elminejad",
@@ -5293,6 +5404,8 @@
   {
    "project": "scc",
    "document_type": "paper",
+   "version": "record",
+   "published_as": null,
    "title": "Selective Reporting and the Social Cost of Carbon",
    "authors": [
     "Tomas Havranek",
@@ -5373,6 +5486,8 @@
   {
    "project": "sigma",
    "document_type": "paper",
+   "version": "record",
+   "published_as": null,
    "title": "Measuring Capital-Labor Substitution: The Importance of Method Choices and Publication Bias",
    "authors": [
     "Sebastian Gechert",
@@ -5478,6 +5593,8 @@
   {
    "project": "size",
    "document_type": "paper",
+   "version": "record",
+   "published_as": null,
    "title": "Firm Size and Stock Returns: A Quantitative Survey",
    "authors": [
     "Anton Astakhov",
@@ -5572,6 +5689,8 @@
   {
    "project": "skill",
    "document_type": "paper",
+   "version": "record",
+   "published_as": null,
    "title": "Publication and Attenuation Biases in Measuring Skill Substitution",
    "authors": [
     "Tomas Havranek",
@@ -5632,6 +5751,8 @@
   {
    "project": "spillovers",
    "document_type": "paper",
+   "version": "record",
+   "published_as": null,
    "title": "Estimating Vertical Spillovers from FDI: Why Results Vary and What the True Effect Is",
    "authors": [
     "Tomas Havranek",
@@ -5730,6 +5851,8 @@
   {
    "project": "spillovers_bias",
    "document_type": "paper",
+   "version": "record",
+   "published_as": null,
    "title": "Survey Article: Publication Bias in the Literature on Foreign Direct Investment Spillovers",
    "authors": [
     "Tomas Havranek",
@@ -5797,6 +5920,8 @@
   {
    "project": "students",
    "document_type": "paper",
+   "version": "record",
+   "published_as": null,
    "title": "Student Employment and Education: A Meta-Analysis",
    "authors": [
     "Katerina Kroupova",
@@ -5891,6 +6016,8 @@
   {
    "project": "substitution",
    "document_type": "paper",
+   "version": "record",
+   "published_as": null,
    "title": "Cross-Country Heterogeneity in Intertemporal Substitution",
    "authors": [
     "Tomas Havranek",
@@ -5976,6 +6103,8 @@
   {
    "project": "trust",
    "document_type": "paper",
+   "version": "record",
+   "published_as": null,
    "title": "Trust, Rule of Law, and the Size Premium: Evidence from a Meta-Analysis",
    "authors": [
     "Jiri Schwarz",
@@ -6151,6 +6280,8 @@
   {
    "project": "water",
    "document_type": "paper",
+   "version": "record",
+   "published_as": null,
    "title": "Measuring the Income Elasticity of Water Demand: The Importance of Publication and Endogeneity Biases",
    "authors": [
     "Tomas Havranek",

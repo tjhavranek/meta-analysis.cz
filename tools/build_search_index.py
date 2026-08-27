@@ -106,7 +106,30 @@ def canonical_of(page, url):
     return m.group(1).rstrip("/") + "/" if m.group(1) != "/" else "/"
 
 
+def _full_text_urls():
+    """Where the site's full texts actually live, asked of papers.json rather than guessed
+    from the URL. The suffix rule below knows /paper/, /supplement/ and /guide/; a paper
+    filed under another project's landing has none of them, and /guidelines/reporting/ was
+    classified as an ordinary page the day it was published."""
+    import sys as _sys
+    _sys.path.insert(0, os.path.join(ROOT, "tools"))
+    try:
+        from build_paper_page import page_href
+        return {page_href(e["project"], e) for e in
+                json.load(open(os.path.join(ROOT, "tools", "papers.json"), encoding="utf-8"))}
+    except Exception:
+        return set()
+
+
+_FULL_TEXT = None
+
+
 def kind_of(url):
+    global _FULL_TEXT
+    if _FULL_TEXT is None:
+        _FULL_TEXT = _full_text_urls()
+    if url in _FULL_TEXT:
+        return "paper"
     if url.endswith(("/paper/", "/supplement/", "/guide/")):
         return "paper"
     if url.startswith("/notes/"):
