@@ -1044,6 +1044,23 @@ def paper_pdf(project, meta):
     return None
 
 
+def transcript_pdf_path(project, meta):
+    """The PDF the transcript was made FROM, which is not always the one the page links.
+
+    A page may serve the published article as its "Paper (PDF)" while its HTML follows the
+    accepted manuscript -- contagion does, because twenty of its appendix tables exist only
+    in the manuscript. Checking fidelity against the published PDF would then report a page
+    that is faithful to its source as a page full of invented text, and the honest way to
+    silence that is to name the real source, not to loosen the check.
+    """
+    rel = meta.get("transcript_pdf")
+    if not rel:
+        return pdf_path(project, meta)
+    if project in documents() or meta.get("parent"):
+        return os.path.join(ROOT, rel)
+    return os.path.join(ROOT, project, rel)
+
+
 def pdf_path(project, meta):
     """Where that PDF actually is on disk.
 

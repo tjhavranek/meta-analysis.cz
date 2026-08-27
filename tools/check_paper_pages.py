@@ -27,7 +27,7 @@ import sys
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 sys.path.insert(0, os.path.join(ROOT, "tools"))
 
-from build_paper_page import documents, page_dir, pdf_path  # noqa: E402
+from build_paper_page import documents, page_dir, transcript_pdf_path  # noqa: E402
 from scout_paper import scout                               # noqa: E402
 from verify_transcript import (multiset_check, pdf_counts,  # noqa: E402
                                pdf_prose, transcript_prose, words)
@@ -62,7 +62,7 @@ def check(project):
     if not have_transcript:
         notes.append("hand-built page, no transcript: fidelity and census checks skipped")
     src = open(tr_path).read() if have_transcript else None
-    pdf = pdf_path(project, PAPERS[project])
+    pdf = transcript_pdf_path(project, PAPERS[project])
 
     # -- nothing invented
     if have_transcript:

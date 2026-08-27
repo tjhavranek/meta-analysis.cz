@@ -7310,6 +7310,7 @@ URL: https://meta-analysis.cz/contagion/
 Citation: Tomas Fiala, Tomas Havranek (2017), "The sources of contagion risk in a banking sector with foreign ownership." Economic Modelling 60: 108-121.
 Published version: https://doi.org/10.1016/j.econmod.2016.08.025
 Paper: https://meta-analysis.cz/contagion/contagion.pdf
+Accepted manuscript: https://meta-analysis.cz/contagion/contagion_manuscript.pdf
 Data: https://meta-analysis.cz/contagion/Data_table.xls
 Bank data: https://meta-analysis.cz/contagion/160216_Bankscope.xlsx
 Full text (HTML): https://meta-analysis.cz/contagion/paper/
@@ -12486,6 +12487,7 @@ URL: https://meta-analysis.cz/dst_slovakia/
 Citation: Peter Kudela, Tomas Havranek, Dominik Herman, Zuzana Irsova (2020), "Does daylight saving time save electricity? Evidence from Slovakia." Energy Policy 137: 111146.
 Published version: https://doi.org/10.1016/j.enpol.2019.111146
 Paper: https://meta-analysis.cz/dst_slovakia/dst_slovakia.pdf
+Accepted manuscript: https://meta-analysis.cz/dst_slovakia/dst_slovakia_manuscript.pdf
 Data: https://meta-analysis.cz/dst_slovakia/price.xlsx
 Code: https://meta-analysis.cz/dst_slovakia/code.R
 Full text (HTML): https://meta-analysis.cz/dst_slovakia/paper/
@@ -14789,7 +14791,7 @@ Data and do files
 
 ## Estimating the Effective Lower Bound on the Czech National Bank's Policy Rate
 URL: https://meta-analysis.cz/elb/
-Citation: Dominika Kolcunova, Tomas Havranek (2018), "Estimating the Effective Lower Bound on the Czech National Bank's Policy Rate." Czech Journal of Economics and Finance 68(6): 550-577.
+Citation: Tomas Havranek, Dominika Kolcunova (2018), "Estimating the Effective Lower Bound on the Czech National Bank's Policy Rate." Czech Journal of Economics and Finance 68(6): 550-577.
 Published version: https://journal.fsv.cuni.cz/mag/article/show/id/1422
 Paper: https://meta-analysis.cz/elb/elb.pdf
 Full text (HTML): https://meta-analysis.cz/elb/paper/

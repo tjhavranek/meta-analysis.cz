@@ -27,7 +27,7 @@
    "zero": false
   },
   "price_puzzle": {
-   "value": "no — once biases are corrected, prices fall",
+   "value": "no: once biases are corrected, prices fall",
    "zero": false
   },
   "lags": {
@@ -220,7 +220,7 @@
    "zero": false
   },
   "pcc_survey": {
-   "value": "yes — UWLS and Hunter-Schmidt give smaller means than random effects",
+   "value": "yes: UWLS and Hunter-Schmidt give smaller means than random effects",
    "zero": false,
    "tail": "arguably less biased; small-sample biases are negligible and Fisher's z helps with neither them nor publication selection"
   },

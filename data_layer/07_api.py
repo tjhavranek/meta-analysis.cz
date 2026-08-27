@@ -322,6 +322,24 @@ for proj in sorted(man):
 excluded=[dict(id=d["id"], reason=d.get("reason"), paper=d.get("paper"),
                excluded_because="examined and not an estimate-level dataset")
           for d in datasets if not d.get("n_estimates")]
+# Files this site publishes that the pipeline never sees, because they are not
+# estimate-level and so were never inventoried. A reader who finds one on a paper page
+# and then cannot find it in the catalogue has no way to tell whether it was considered
+# and set aside or simply missed. Named here so the catalogue accounts for everything
+# the site serves. Keep the id equal to the project that hosts the file.
+excluded += [
+  dict(id="spillovers_bias",
+       reason="study-level, not estimate-level: 57 rows, one per study",
+       paper=dict(title="Survey Article: Publication Bias in the Literature on Foreign "
+                        "Direct Investment Spillovers",
+                  page_title="Publication Bias in FDI Spillovers",
+                  url=f"{BASE}/spillovers_bias/"),
+       excluded_because=("the second-stage data behind the paper: one row per study, "
+                         "carrying each study's publication-bias measure and the "
+                         "characteristics used to explain it, so it has no effect or "
+                         "standard error column and cannot join an estimate-level table. "
+                         "The estimates themselves are the FDI spillovers literature, "
+                         "pooled under 'spillovers'."))]
 datasets=[d for d in datasets if d.get("n_estimates")]
 ok=datasets
 # No $schema key: there is no JSON Schema document for this index, and the URL that

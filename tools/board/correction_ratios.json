@@ -14,7 +14,7 @@
    "mean": -0.34,
    "mean_from": "paper",
    "corrected_quote": "The resulting global estimate is -0.01%, quite distant from -0.34%, the simple average effect reported in the literature.",
-   "note": "the paper states both numbers in one sentence Its best-practice figure is a synthetic study: the paper evaluates its model at the literature's preferred values — recent data, more observations, better-cited outlets. That is the construction these authors use and the one behind Gechert et al.'s corrected column, and it is the paper's own headline conclusion."
+   "note": "the paper states both numbers in one sentence Its best-practice figure is a synthetic study: the paper evaluates its model at the literature's preferred values: recent data, more observations, better-cited outlets. That is the construction these authors use and the one behind Gechert et al.'s corrected column, and it is the paper's own headline conclusion."
   },
   {
    "project": "excess_sensitivity",
@@ -146,7 +146,7 @@
    "corrected_quote": "The overall mean semi-elasticity is 1.76, which translates into a border effect of 5.8-almost four times smaller than the border effect based on the sample mean of the semi-elasticities reported in the literature.",
    "corrected_locator": "border2.pdf p.22 (IMF Economic Review 65(2), p.386), Section 5 'Best Practice'; same value in the 'All countries' row",
    "mean_quote": "Table 1, 'Border Effects Differ Across Countries', p.372, last row: All countries | 1,271 | 3.03 (unweighted mean)",
-   "note": "Same units as the shipped column (semi-elasticity, the same 1,271 estimates). Excluded before because the site quotes the paper's 'one-third reduction in trade' sentence, which is a different transform -- but the paper states the semi-elasticity pair itself. Its best-practice figure is a synthetic study: the paper evaluates its model at the literature's preferred values — recent data, more observations, better-cited outlets. That is the construction these authors use and the one behind Gechert et al.'s corrected column, and it is the paper's own headline conclusion."
+   "note": "Same units as the shipped column (semi-elasticity, the same 1,271 estimates). Excluded before because the site quotes the paper's 'one-third reduction in trade' sentence, which is a different transform -- but the paper states the semi-elasticity pair itself. Its best-practice figure is a synthetic study: the paper evaluates its model at the literature's preferred values: recent data, more observations, better-cited outlets. That is the construction these authors use and the one behind Gechert et al.'s corrected column, and it is the paper's own headline conclusion."
   },
   {
    "project": "climate",
@@ -288,17 +288,17 @@
    "quote_source": "pdf",
    "tier": "table",
    "units": "partial correlation coefficient",
-   "approximation": "The paper's headline is verbal — an 'authentic positive link' — so the number here is the FAT-PET effect from its Table 2 rather than a figure it puts in the abstract.",
+   "approximation": "The paper's headline is verbal, an 'authentic positive link', so the number here is the FAT-PET effect from its Table 2 rather than a figure it puts in the abstract.",
    "corrected_quote": "The statistically significant estimate of beta indicates that the literature identifies, on average, an authentic link between financial development and economic growth.",
    "corrected_locator": "finance_growth2.pdf p.8, Table 2: 1/SE_r (Effect) 0.199*** (0.018), 1,334 estimates from 67 studies",
    "mean_quote": "Simple average r 0.15 (0.095, 0.20)",
-   "note": "An UPWARD row, and the same construction as the included eis row: a FAT-PET intercept against the literature's own simple average. The earlier exclusion called the answer narrative, which was wrong — both numbers are tabulated."
+   "note": "An UPWARD row, and the same construction as the included eis row: a FAT-PET intercept against the literature's own simple average. The earlier exclusion called the answer narrative, which was wrong: both numbers are tabulated."
   }
  ],
  "excluded": [
   {
    "project": "alphas",
-   "why": "its best-practice value conditions on the sample MAXIMUM data year because the paper is explicitly answering what a hedge fund earns NOW, for a current investment decision — an estimand shift riding a real decline over time, not a correction of the same quantity, and its interval (-0.393, 0.235) spans zero. The same literature is already in the figure as `hedge`, against the identical 0.36 comparator; two rows on one literature at -7% and -78% would be incoherent. (An earlier reason here said Table 4 gives nine values and not one. That was wrong: its first row, All strategies -0.079, is a single pooled value.)"
+   "why": "its best-practice value conditions on the sample MAXIMUM data year because the paper is explicitly answering what a hedge fund earns NOW, for a current investment decision: an estimand shift riding a real decline over time, not a correction of the same quantity, and its interval (-0.393, 0.235) spans zero. The same literature is already in the figure as `hedge`, against the identical 0.36 comparator; two rows on one literature at -7% and -78% would be incoherent. (An earlier reason here said Table 4 gives nine values and not one. That was wrong: its first row, All strategies -0.079, is a single pooled value.)"
   },
   {
    "project": "bma",
@@ -386,7 +386,7 @@
   },
   {
    "project": "reforms",
-   "why": "the paper does state best-practice values, -0.38 short run and 0.27 long run, against simple means of -0.052 and 0.146 — so the earlier reason ('a narrative answer') was wrong and is corrected here. It stays out because the two horizons move in OPPOSITE directions, and every horizon row in this figure rests on the other horizon moving the same way. The short-run pair alone would enter at about +631%, seven times a borderline simple mean, and would dominate the axis on its own."
+   "why": "the paper does state best-practice values, -0.38 short run and 0.27 long run, against simple means of -0.052 and 0.146: so the earlier reason ('a narrative answer') was wrong and is corrected here. It stays out because the two horizons move in OPPOSITE directions, and every horizon row in this figure rests on the other horizon moving the same way. The short-run pair alone would enter at about +631%, seven times a borderline simple mean, and would dominate the axis on its own."
   },
   {
    "project": "remittances",

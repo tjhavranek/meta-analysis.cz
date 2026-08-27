@@ -265,8 +265,8 @@ def main(argv):
     papers = {p["project"]: p for p in json.load(open(os.path.join(ROOT, "tools", "papers.json")))}
     from build_paper_page import documents
     papers.update(documents())
-    from build_paper_page import pdf_path
-    pdf = pdf_path(project, papers[project])
+    from build_paper_page import transcript_pdf_path
+    pdf = transcript_pdf_path(project, papers[project])
     transcript = os.path.join(ROOT, "tools", "transcripts", "%s.md" % project)
     problems, ratio = report(project, pdf, transcript, quiet=quiet)
     b = words(transcript_prose(open(transcript).read()))

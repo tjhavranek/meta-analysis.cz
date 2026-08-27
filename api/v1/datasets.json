@@ -134,6 +134,16 @@
     "url": "https://meta-analysis.cz/pcc/"
    },
    "excluded_because": "examined and not an estimate-level dataset"
+  },
+  {
+   "id": "spillovers_bias",
+   "reason": "study-level, not estimate-level: 57 rows, one per study",
+   "paper": {
+    "title": "Survey Article: Publication Bias in the Literature on Foreign Direct Investment Spillovers",
+    "page_title": "Publication Bias in FDI Spillovers",
+    "url": "https://meta-analysis.cz/spillovers_bias/"
+   },
+   "excluded_because": "the second-stage data behind the paper: one row per study, carrying each study's publication-bias measure and the characteristics used to explain it, so it has no effect or standard error column and cannot join an estimate-level table. The estimates themselves are the FDI spillovers literature, pooled under 'spillovers'."
   }
  ],
  "datasets": [
