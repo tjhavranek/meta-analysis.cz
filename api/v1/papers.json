@@ -11,6 +11,7 @@
    "project": "activism",
    "document_type": "paper",
    "version": "record",
+   "version_note": null,
    "published_as": null,
    "title": "Does Shareholder Activism Create Value? A Meta-Analysis",
    "authors": [
@@ -98,6 +99,7 @@
    "project": "alphas",
    "document_type": "paper",
    "version": "record",
+   "version_note": null,
    "published_as": null,
    "title": "What Matters in Explaining the Variation in Hedge Fund Performance?",
    "authors": [
@@ -215,6 +217,7 @@
    "project": "armington",
    "document_type": "paper",
    "version": "record",
+   "version_note": null,
    "published_as": null,
    "title": "Estimating the Armington Elasticity: The Importance of Study Design and Publication Bias",
    "authors": [
@@ -312,6 +315,7 @@
    "project": "beauty",
    "document_type": "paper",
    "version": "record",
+   "version_note": null,
    "published_as": null,
    "title": "Meta-Analysis of Field Studies on Beauty and Professional Success",
    "authors": [
@@ -434,6 +438,7 @@
    "project": "bma",
    "document_type": "paper",
    "version": "record",
+   "version_note": null,
    "published_as": null,
    "title": "Determinants of Horizontal Spillovers from FDI: Evidence from a Large Meta-Analysis",
    "authors": [
@@ -514,6 +519,7 @@
    "project": "border",
    "document_type": "paper",
    "version": "record",
+   "version_note": null,
    "published_as": null,
    "title": "Do Borders Really Slash Trade? A Meta-Analysis",
    "authors": [
@@ -589,6 +595,7 @@
    "project": "cbequity",
    "document_type": "paper",
    "version": "record",
+   "version_note": null,
    "published_as": null,
    "title": "Central Bank Equity as an Instrument of Monetary Policy",
    "authors": [
@@ -665,6 +672,7 @@
    "project": "class",
    "document_type": "paper",
    "version": "record",
+   "version_note": null,
    "published_as": null,
    "title": "Publication Bias and Model Uncertainty in Measuring the Effect of Class Size on Achievement",
    "authors": [
@@ -742,6 +750,7 @@
    "project": "climate",
    "document_type": "paper",
    "version": "record",
+   "version_note": null,
    "published_as": null,
    "title": "Publication Bias in Measuring Anthropogenic Climate Change",
    "authors": [
@@ -807,6 +816,7 @@
    "project": "competition",
    "document_type": "paper",
    "version": "record",
+   "version_note": null,
    "published_as": null,
    "title": "Bank Competition and Financial Stability: Much Ado About Nothing?",
    "authors": [
@@ -912,6 +922,7 @@
    "project": "contagion",
    "document_type": "paper",
    "version": "accepted_manuscript",
+   "version_note": "Four typographical errors that the journal's copy-editor caught are corrected here. The appendix tables are the ones the authors wrote: the published article moves the confidence intervals to the publisher's online supplement, and prints no table at all for the weekly and crisis-subsample estimates.",
    "published_as": null,
    "title": "The sources of contagion risk in a banking sector with foreign ownership",
    "authors": [
@@ -1088,6 +1099,7 @@
    "project": "conventional_wisdom",
    "document_type": "paper",
    "version": "record",
+   "version_note": null,
    "published_as": null,
    "title": "Conventional wisdom, meta-analysis, and research revision in economics",
    "authors": [
@@ -1175,6 +1187,7 @@
    "project": "correlations",
    "document_type": "paper",
    "version": "record",
+   "version_note": null,
    "published_as": null,
    "title": "Reducing the biases of the conventional meta-analysis of correlations",
    "authors": [
@@ -1285,6 +1298,7 @@
    "project": "crisis_ews",
    "document_type": "paper",
    "version": "working_paper",
+   "version_note": null,
    "published_as": {
     "journal": "Journal of Financial Stability",
     "year": 2014,
@@ -1386,6 +1400,7 @@
    "project": "crisis_jfs",
    "document_type": "paper",
    "version": "record",
+   "version_note": null,
    "published_as": null,
    "title": "Banking, debt, and currency crises in developed countries: Stylized facts and early warning indicators",
    "authors": [
@@ -1481,6 +1496,7 @@
    "project": "debate",
    "document_type": "paper",
    "version": "record",
+   "version_note": null,
    "published_as": null,
    "title": "Does Multi-Agent Debate Improve AI Feedback on Research Papers?",
    "authors": [
@@ -1600,6 +1616,7 @@
    "project": "discrate",
    "document_type": "paper",
    "version": "record",
+   "version_note": null,
    "published_as": null,
    "title": "Individual Discount Rates: A Meta-Analysis of Experimental Evidence",
    "authors": [
@@ -1686,6 +1703,7 @@
    "project": "dst",
    "document_type": "paper",
    "version": "record",
+   "version_note": null,
    "published_as": null,
    "title": "Does Daylight Saving Save Electricity? A Meta-Analysis",
    "authors": [
@@ -1776,7 +1794,8 @@
   {
    "project": "dst_slovakia",
    "document_type": "paper",
-   "version": "record",
+   "version": "corrected_manuscript",
+   "version_note": "The corrections the journal made in copy-editing are folded in here, among them the annual savings figure in Section 5.2, and the tables carry the numbering of the version of record. The PDF linked above is the accepted manuscript and predates those corrections; the reference list keeps the authors' own style.",
    "published_as": null,
    "title": "Does daylight saving time save electricity? Evidence from Slovakia",
    "authors": [
@@ -1865,6 +1884,7 @@
    "project": "education",
    "document_type": "paper",
    "version": "record",
+   "version_note": null,
    "published_as": null,
    "title": "Tuition Fees and University Enrolment: A Meta‐Regression Analysis",
    "authors": [
@@ -1986,6 +2006,7 @@
    "project": "eis",
    "document_type": "paper",
    "version": "record",
+   "version_note": null,
    "published_as": null,
    "title": "Measuring Intertemporal Substitution: The Importance of Method Choices and Selective Reporting",
    "authors": [
@@ -2060,6 +2081,7 @@
    "project": "elb",
    "document_type": "paper",
    "version": "record",
+   "version_note": null,
    "published_as": null,
    "title": "Estimating the Effective Lower Bound on the Czech National Bank's Policy Rate",
    "authors": [
@@ -2171,6 +2193,7 @@
    "project": "electricity",
    "document_type": "paper",
    "version": "record",
+   "version_note": null,
    "published_as": null,
    "title": "Electricity demand has not become more price-responsive despite ninety years of technological change",
    "authors": [
@@ -2259,6 +2282,7 @@
    "project": "esg",
    "document_type": "paper",
    "version": "record",
+   "version_note": null,
    "published_as": null,
    "title": "Do Female Directors Raise ESG Ratings? A Meta-Analysis",
    "authors": [
@@ -2345,6 +2369,7 @@
    "project": "euro",
    "document_type": "paper",
    "version": "record",
+   "version_note": null,
    "published_as": null,
    "title": "Rose Effect and the Euro: Is the Magic Gone?",
    "authors": [
@@ -2414,6 +2439,7 @@
    "project": "excess_sensitivity",
    "document_type": "paper",
    "version": "record",
+   "version_note": null,
    "published_as": null,
    "title": "Do Consumers Really Follow a Rule of Thumb? Three Thousand Estimates from 144 Studies Say `Probably Not'",
    "authors": [
@@ -2494,6 +2520,7 @@
    "project": "exercise",
    "document_type": "paper",
    "version": "record",
+   "version_note": null,
    "published_as": null,
    "title": "Effect of Exercise on Cognition, Memory, and Executive Function: A Study-Level Meta-Meta-Analysis Across Populations and Exercise Categories",
    "authors": [
@@ -2618,6 +2645,7 @@
    "project": "fdi",
    "document_type": "paper",
    "version": "record",
+   "version_note": null,
    "published_as": null,
    "title": "Foreign Capital and Domestic Productivity in the Czech Republic: A Meta-Regression Analysis",
    "authors": [
@@ -2704,6 +2732,7 @@
    "project": "finance_growth",
    "document_type": "paper",
    "version": "record",
+   "version_note": null,
    "published_as": null,
    "title": "Financial Development and Economic Growth: A Meta-Analysis",
    "authors": [
@@ -2780,6 +2809,7 @@
    "project": "forward",
    "document_type": "paper",
    "version": "record",
+   "version_note": null,
    "published_as": null,
    "title": "How Puzzling Is the Forward Premium Puzzle? A Meta-Analysis",
    "authors": [
@@ -2882,6 +2912,7 @@
    "project": "frisch",
    "document_type": "paper",
    "version": "record",
+   "version_note": null,
    "published_as": null,
    "title": "Intertemporal Substitution in Labor Supply: A Meta-Analysis",
    "authors": [
@@ -2974,6 +3005,7 @@
    "project": "gasoline",
    "document_type": "paper",
    "version": "record",
+   "version_note": null,
    "published_as": null,
    "title": "Income Elasticity of Gasoline Demand: A Meta-Analysis",
    "authors": [
@@ -3084,6 +3116,7 @@
    "project": "gasoline_price",
    "document_type": "paper",
    "version": "record",
+   "version_note": null,
    "published_as": null,
    "title": "Demand for Gasoline is More Price-Inelastic than Commonly Thought",
    "authors": [
@@ -3150,6 +3183,7 @@
    "project": "guai",
    "document_type": "paper",
    "version": "record",
+   "version_note": null,
    "published_as": null,
    "title": "Guidance for the Use of AI in the Meta-Analysis of Economics Research",
    "authors": [
@@ -3232,6 +3266,7 @@
    "project": "guidelines",
    "document_type": "paper",
    "version": "record",
+   "version_note": null,
    "published_as": null,
    "title": "Meta-Analysis of Social Science Research: A Practitioner’s Guide",
    "authors": [
@@ -3348,6 +3383,7 @@
    "project": "habits",
    "document_type": "paper",
    "version": "record",
+   "version_note": null,
    "published_as": null,
    "title": "Habit Formation in Consumption: A Meta-Analysis",
    "authors": [
@@ -3474,6 +3510,7 @@
    "project": "hedge",
    "document_type": "paper",
    "version": "record",
+   "version_note": null,
    "published_as": null,
    "title": "Is research on hedge fund performance published selectively? A quantitative survey",
    "authors": [
@@ -3616,6 +3653,7 @@
    "project": "house_prices",
    "document_type": "paper",
    "version": "record",
+   "version_note": null,
    "published_as": null,
    "title": "When Does Monetary Policy Sway House Prices? A Meta-Analysis",
    "authors": [
@@ -3722,6 +3760,7 @@
    "project": "incentives",
    "document_type": "paper",
    "version": "record",
+   "version_note": null,
    "published_as": null,
    "title": "Financial Incentives and Performance: A Meta-Analysis of Experiments in Economics",
    "authors": [
@@ -3801,6 +3840,7 @@
    "project": "inflation",
    "document_type": "paper",
    "version": "record",
+   "version_note": null,
    "published_as": null,
    "title": "Optimal Inflation Rate: A Meta-Analysis",
    "authors": [
@@ -3939,6 +3979,7 @@
    "project": "lags",
    "document_type": "paper",
    "version": "record",
+   "version_note": null,
    "published_as": null,
    "title": "Transmission Lags of Monetary Policy: A Meta-Analysis",
    "authors": [
@@ -4014,6 +4055,7 @@
    "project": "leading_indicators",
    "document_type": "paper",
    "version": "record",
+   "version_note": null,
    "published_as": null,
    "title": "Leading indicators of crisis incidence: Evidence from developed countries",
    "authors": [
@@ -4134,6 +4176,7 @@
    "project": "learning",
    "document_type": "paper",
    "version": "record",
+   "version_note": null,
    "published_as": null,
    "title": "Publication Bias and P-Hacking in the Effect of COVID-19 on Learning",
    "authors": [
@@ -4279,6 +4322,7 @@
    "project": "maive",
    "document_type": "paper",
    "version": "record",
+   "version_note": null,
    "published_as": null,
    "title": "Spurious Precision in Meta-Analysis of Observational Research",
    "authors": [
@@ -4425,6 +4469,7 @@
    "project": "maive_supplement",
    "document_type": "supplement",
    "version": "record",
+   "version_note": null,
    "published_as": null,
    "title": "Supplementary Information for Spurious Precision in Meta-Analysis of Observational Research",
    "authors": [
@@ -4533,6 +4578,7 @@
    "project": "migrant",
    "document_type": "paper",
    "version": "record",
+   "version_note": null,
    "published_as": null,
    "title": "The Elasticity of Substitution between Native and Immigrant Labor: A Meta-Analysis",
    "authors": [
@@ -4630,6 +4676,7 @@
    "project": "outliers",
    "document_type": "paper",
    "version": "record",
+   "version_note": null,
    "published_as": null,
    "title": "Do decisions about outliers and influential effects matter? Evidence from 358 behavioral science meta-analyses",
    "authors": [
@@ -4746,6 +4793,7 @@
    "project": "pcc",
    "document_type": "paper",
    "version": "record",
+   "version_note": null,
    "published_as": null,
    "title": "Meta-analyses of partial correlations are biased: Detection and solutions",
    "authors": [
@@ -4876,6 +4924,7 @@
    "project": "pcc_survey",
    "document_type": "paper",
    "version": "record",
+   "version_note": null,
    "published_as": null,
    "title": "Do methods matter in the meta-analysis of partial correlation coefficients?",
    "authors": [
@@ -4978,6 +5027,7 @@
    "project": "price_puzzle",
    "document_type": "paper",
    "version": "record",
+   "version_note": null,
    "published_as": null,
    "title": "How to Solve the Price Puzzle? A Meta-Analysis",
    "authors": [
@@ -5069,6 +5119,7 @@
    "project": "reforms",
    "document_type": "paper",
    "version": "record",
+   "version_note": null,
    "published_as": null,
    "title": "Structural Reforms and Growth in Transition: A Meta-Analysis",
    "authors": [
@@ -5154,6 +5205,7 @@
    "project": "remittances",
    "document_type": "paper",
    "version": "record",
+   "version_note": null,
    "published_as": null,
    "title": "Remittances and Economic Growth: A Meta-Analysis",
    "authors": [
@@ -5275,6 +5327,7 @@
    "project": "reporting",
    "document_type": "paper",
    "version": "record",
+   "version_note": null,
    "published_as": null,
    "title": "Reporting Guidelines for Meta-Analysis in Economics",
    "authors": [
@@ -5356,6 +5409,7 @@
    "project": "reporting_ai",
    "document_type": "paper",
    "version": "record",
+   "version_note": null,
    "published_as": null,
    "title": "Reporting Guidelines for Meta-Analysis in Economics—Updated for AI",
    "authors": [
@@ -5438,6 +5492,7 @@
    "project": "resource_curse",
    "document_type": "paper",
    "version": "record",
+   "version_note": null,
    "published_as": null,
    "title": "Natural Resources and Economic Growth: A Meta-Analysis",
    "authors": [
@@ -5574,6 +5629,7 @@
    "project": "risk",
    "document_type": "paper",
    "version": "record",
+   "version_note": null,
    "published_as": null,
    "title": "Relative Risk Aversion: A Meta-Analysis",
    "authors": [
@@ -5665,6 +5721,7 @@
    "project": "scc",
    "document_type": "paper",
    "version": "record",
+   "version_note": null,
    "published_as": null,
    "title": "Selective Reporting and the Social Cost of Carbon",
    "authors": [
@@ -5747,6 +5804,7 @@
    "project": "sigma",
    "document_type": "paper",
    "version": "record",
+   "version_note": null,
    "published_as": null,
    "title": "Measuring Capital-Labor Substitution: The Importance of Method Choices and Publication Bias",
    "authors": [
@@ -5854,6 +5912,7 @@
    "project": "size",
    "document_type": "paper",
    "version": "record",
+   "version_note": null,
    "published_as": null,
    "title": "Firm Size and Stock Returns: A Quantitative Survey",
    "authors": [
@@ -5950,6 +6009,7 @@
    "project": "skill",
    "document_type": "paper",
    "version": "record",
+   "version_note": null,
    "published_as": null,
    "title": "Publication and Attenuation Biases in Measuring Skill Substitution",
    "authors": [
@@ -6012,6 +6072,7 @@
    "project": "spillovers",
    "document_type": "paper",
    "version": "record",
+   "version_note": null,
    "published_as": null,
    "title": "Estimating Vertical Spillovers from FDI: Why Results Vary and What the True Effect Is",
    "authors": [
@@ -6112,6 +6173,7 @@
    "project": "spillovers_bias",
    "document_type": "paper",
    "version": "record",
+   "version_note": null,
    "published_as": null,
    "title": "Survey Article: Publication Bias in the Literature on Foreign Direct Investment Spillovers",
    "authors": [
@@ -6181,6 +6243,7 @@
    "project": "students",
    "document_type": "paper",
    "version": "record",
+   "version_note": null,
    "published_as": null,
    "title": "Student Employment and Education: A Meta-Analysis",
    "authors": [
@@ -6277,6 +6340,7 @@
    "project": "substitution",
    "document_type": "paper",
    "version": "record",
+   "version_note": null,
    "published_as": null,
    "title": "Cross-Country Heterogeneity in Intertemporal Substitution",
    "authors": [
@@ -6364,6 +6428,7 @@
    "project": "trust",
    "document_type": "paper",
    "version": "record",
+   "version_note": null,
    "published_as": null,
    "title": "Trust, Rule of Law, and the Size Premium: Evidence from a Meta-Analysis",
    "authors": [
@@ -6541,6 +6606,7 @@
    "project": "water",
    "document_type": "paper",
    "version": "record",
+   "version_note": null,
    "published_as": null,
    "title": "Measuring the Income Elasticity of Water Demand: The Importance of Publication and Endogeneity Biases",
    "authors": [

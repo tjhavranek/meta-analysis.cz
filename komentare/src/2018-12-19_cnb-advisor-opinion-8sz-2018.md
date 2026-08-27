@@ -7,6 +7,7 @@ date: "2018-12-19"
 headline: "Advisor's Opinion on Situation Report No. 8, 2018"
 released: "2025-01-31"
 genre: "advisor_opinion"
+translation: "cnb-stanovisko-poradce-8sz-2018"
 body_note: "An English translation of the Czech original, which remains the record of what was written: [Stanovisko poradce k 8. situační zprávě 2018](/komentare/cnb-stanovisko-poradce-8sz-2018/). Part I, the advisor's opinion, is here in full. The original document also carries Part II, prepared by the Financial Stability Department, which is in the [hosted PDF](/komentare/files/cnb-stanoviska-8sz-2018.pdf) and in the document on the CNB site. The four charts stay in the PDF. Numbered footnotes are collected at the end."
 ---
 

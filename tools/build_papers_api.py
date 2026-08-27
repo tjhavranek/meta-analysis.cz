@@ -63,6 +63,11 @@ def build():
             # Which version of itself the full text is. The HTML says so in visible text and
             # in its citation tags; an API consumer was left to assume the version of record.
             "version": meta.get("version") or "record",
+            # ... and the sentence the page shows a reader when "record" or "accepted
+            # manuscript" is true but not the whole truth. It reached the HTML and
+            # llms-full.txt and stopped there, so the one caveat that tells a consumer the
+            # linked PDF is not what the HTML says was invisible to every machine reader.
+            "version_note": meta.get("version_note") or None,
             # And, for a working paper, the article it was published as: a consumer that
             # cannot see this counts the two as one document or cites the wrong one.
             "published_as": meta.get("published_as") or None,

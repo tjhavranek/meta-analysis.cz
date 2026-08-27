@@ -47,6 +47,7 @@
 .entry .fig-inpdf{ padding:var(--s4); background:var(--canvas); border:1px solid var(--rule);
      border-radius:var(--radius); font:400 var(--f-1)/1.6 var(--sans); color:var(--ink-soft); }
 .entry .fig-inpdf p{ margin:0; font:400 var(--f-1)/1.6 var(--sans); }
+.entry .fig-inpdf .fig-where{ font-style:italic; }
 .entry figure figcaption{ font:400 var(--f-1)/1.6 var(--sans); color:var(--ink-soft); }
 .entry ol.references{ list-style:none; margin:0 0 var(--s5); padding:0; counter-reset:rf; }
 .entry ol.references > li{ counter-increment:rf; position:relative;

@@ -180,6 +180,7 @@ SELF_PUBLISHED = re.compile(
 # headlines carried by more than one item; filled in main(). Such items always show
 # their byline so that two rows never render as the same link text.
 DUP_HEADLINES = set()
+BY_SLUG = {}
 
 # How complete the stored text is. Derived from the item's own provenance note so
 # that no source file has to repeat it, and so the machine-readable corpus never
@@ -903,6 +904,18 @@ def write_item(a):
             # plain-text source of this page, for anything that would rather not parse HTML
             + f'<link rel="alternate" type="text/markdown" '
               f'href="{PATH}/src/{esc(a["file"])}" title="Zdrojový text (Markdown)" />\n')
+
+    # A translation and its original are the same document in two languages. They linked
+    # each other in prose, which a reader follows and a search engine does not: without
+    # hreflang the two look like duplicates competing with one another. `translation:`
+    # names the other slug; the pair is declared from both sides, and each page also
+    # names itself, which the specification requires.
+    other = BY_SLUG.get(a.get("translation") or "")
+    if other:
+        o_lang = other.get("lang") or SECTIONS[other["category"]]["lang"]
+        head += (f'<link rel="alternate" hreflang="{lang}" href="{canonical}" />\n'
+                 f'<link rel="alternate" hreflang="{o_lang}" '
+                 f'href="{BASE}/{esc(other["slug"])}/" />\n')
 
     # some pieces share a printed headline — two letters under one title, or an item
     # inside a shared rubric. Disambiguate the <title> so search results are distinct.
@@ -2024,6 +2037,14 @@ def main():
 
     heads = [a["headline"] for a in items]
     DUP_HEADLINES.update(h for h in heads if heads.count(h) > 1)
+
+    BY_SLUG.update({a["slug"]: a for a in items})
+    # `translation:` has to be declared from both sides, or one page would claim a pair
+    # the other does not, which is worse than no hreflang at all.
+    for a in items:
+        t = a.get("translation")
+        if t and BY_SLUG.get(t, {}).get("translation") != a["slug"]:
+            sys.exit(f"error: {a['slug']} says translation: {t}, but {t} does not say so back")
 
     items.sort(key=lambda a: (a["date"], a["headline"]), reverse=True)
 

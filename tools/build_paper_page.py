@@ -643,8 +643,15 @@ class Builder:
                 html.escape(num), inline(caption, self.refs_numbered)))
             self.w("</figure>")
         else:
-            self.w('<div class="fig-inpdf"><p><b>Figure %s.</b> %s</p></div>' % (
-                html.escape(num), inline(caption, self.refs_numbered)))
+            # A caption with no artwork under it reads as a figure that failed to load.
+            # It is not: the plot was not extracted, and it is in the PDF this page links.
+            # 128 blocks across 29 pages said nothing at all about that, leaving the
+            # reader to guess whether the page was broken. Say it in real text rather than
+            # a CSS pseudo-element, so it reaches llms-full.txt and a screen reader too.
+            here = ' <span class="fig-where">The figure is in the PDF.</span>' \
+                if pdf_href(self.project, self.meta) else ""
+            self.w('<div class="fig-inpdf"><p><b>Figure %s.</b> %s%s</p></div>' % (
+                html.escape(num), inline(caption, self.refs_numbered), here))
 
 
 # ---------------------------------------------------------------- page shell
@@ -762,6 +769,16 @@ def build_page(project, meta, body, toc):
         cite_meta.append('<meta name="citation_publication_date" content="%s" />' % year)
     if journal:
         cite_meta.append('<meta name="citation_journal_title" content="%s" />' % esc_attr(journal))
+        # The landing page carries volume, issue and pages; this page carried only the
+        # title and the DOI. Two self-canonical pages with the same title and DOI, and
+        # the one holding the actual article was the bibliographically thinner of the
+        # two. Same parse as generate_seo, so the two pages cannot disagree.
+        from generate_seo import parse_ref
+        _vip = parse_ref(ref)
+        for _k, _tag in (("vol", "citation_volume"), ("iss", "citation_issue"),
+                         ("fp", "citation_firstpage"), ("lp", "citation_lastpage")):
+            if _vip.get(_k):
+                cite_meta.append('<meta name="%s" content="%s" />' % (_tag, _vip[_k]))
     if doi.startswith("https://doi.org/"):
         cite_meta.append('<meta name="citation_doi" content="%s" />'
                          % esc_attr(doi.replace("https://doi.org/", "")))

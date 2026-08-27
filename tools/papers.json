@@ -2278,8 +2278,8 @@
     "href": "code.R"
    }
   ],
-  "version": null,
-  "version_note": "The corrections the journal made in copy-editing are folded in here, among them the annual savings figure in Section 5.2, and the tables carry the numbering of the version of record. The reference list keeps the authors' own style."
+  "version": "corrected_manuscript",
+  "version_note": "The corrections the journal made in copy-editing are folded in here, among them the annual savings figure in Section 5.2, and the tables carry the numbering of the version of record. The PDF linked above is the accepted manuscript and predates those corrections; the reference list keeps the authors' own style."
  },
  {
   "project": "elb",
