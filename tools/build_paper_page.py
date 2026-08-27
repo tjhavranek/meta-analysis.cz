@@ -610,6 +610,19 @@ def esc_attr(s):
     return html.escape(s or "", quote=True)
 
 
+def _home_label(meta, parent_label):
+    """What to call the link back to the paper's own landing page.
+
+    "Data and code" is right for a meta-analysis, whose landing carries exactly that.
+    It is wrong for a document filed under another project's landing: the MAER-Net
+    guidelines sit under /guidelines/, which is the practitioner's guide, and has
+    neither data nor code for them. Such an entry names the link itself.
+    """
+    if meta.get("home_label"):
+        return meta["home_label"]
+    return "The paper" if parent_label else "Data and code"
+
+
 def _short_title(parent_label, label, meta):
     base = parent_label or label
     if len(base) <= 60:
@@ -739,7 +752,7 @@ def build_page(project, meta, body, toc):
         links.append('<a href="%s">%s (PDF)</a>' % (pdf, "Supplement" if parent_label else "Paper"))
     if doi:
         links.append('<a href="%s">%s</a>' % (esc_attr(doi), _doi_label(meta)))
-    links.append('<a href="%s">%s</a>' % (home, "The paper" if parent_label else "Data and code"))
+    links.append('<a href="%s">%s</a>' % (home, _home_label(meta, parent_label)))
     attribution.append('<p class="attr-links">%s</p>' % " &nbsp;&middot;&nbsp; ".join(links))
     attribution.append("</div>")
 
@@ -749,8 +762,7 @@ def build_page(project, meta, body, toc):
                     % (pdf, "Supplement" if parent_label else "Paper"))
     if doi:
         menu.append('<li><a href="%s">%s</a></li>' % (esc_attr(doi), _doi_label(meta)))
-    menu.append('<li><a href="%s">%s</a></li>'
-                % (home, "The paper" if parent_label else "Data and code"))
+    menu.append('<li><a href="%s">%s</a></li>' % (home, _home_label(meta, parent_label)))
     # A reader who has just finished one full text is the likeliest reader of another, and
     # from here the only way to the list of them was the home page.
     menu.append('<li><a href="/papers/">Papers in full</a></li>')

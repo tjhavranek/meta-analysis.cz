@@ -679,8 +679,25 @@ def _drop_sections(md):
 
 
 # The hand-built pages, and where their text actually lives.
-_HAND_BUILT = {"guidelines": "guidelines/guide", "maive": "maive/paper",
-               "reporting": "guidelines/reporting"}
+# Where a paper's page actually lives when it is not at /<project>/paper/. The three
+# below predate the `slug` field and have no entry to read it from; everything since
+# declares its own slug in papers.json, and a new one must not have to be added here as
+# well. It was: adding the 2026 guidelines produced a page that reached neither llms.txt
+# nor llms-full.txt, and only a generator warning caught it.
+def _hand_built():
+    out = {"guidelines": "guidelines/guide", "maive": "maive/paper",
+           "reporting": "guidelines/reporting"}
+    try:
+        with open(os.path.join(SITE, "tools", "papers.json"), encoding="utf-8") as fh:
+            for e in json.load(fh):
+                if e.get("slug"):
+                    out.setdefault(e["project"], e["slug"].strip("/"))
+    except Exception:
+        pass
+    return out
+
+
+_HAND_BUILT = _hand_built()
 
 
 def full_text_of(project):

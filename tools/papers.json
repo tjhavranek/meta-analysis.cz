@@ -2400,5 +2400,38 @@
    "series": "ECB Working Paper Series No. 1485",
    "year": 2012
   }
+ },
+ {
+  "project": "guai",
+  "title": "Guidance for the Use of AI in the Meta-Analysis of Economics Research",
+  "literature": "Guidance for the Use of AI in Meta-Analysis",
+  "abstract": "Meta-analysis is widely accepted to be the most rigorous and objective approach to the synthesis, interpretation, and understanding of findings from specific areas of empirical economics research. With the advent of increasingly capable generative artificial intelligence and AI’s potential to transform the practice of meta-analysis, the Meta-Analysis of Economics Research Network (MAER-Net) has adopted this set of principles. These principles are meant to provide guidance to meta-researchers, as well as editors and reviewers, in the use of AI in meta-analysis of economics research. Future meta-analyses that employ AI are expected to embody these guiding principles and to follow the associated Reporting Guidelines for Meta-Analysis in Economics - Updated for AI (Cook et al. 2026).",
+  "reference_line": "Nikolai Cook, Frantisek Bartos, Pedro R. D. Bom, Sebastian Gechert, Klara Kantova, Jerome Geyer-Klingeberg, Tomas Havranek, Zuzana Irsova, Martina Luskova, Matej Opatrny, Franz Prante, Heiko J. Rachinger, and T. D. Stanley (2026): \"Guidance for the Use of AI in the Meta-Analysis of Economics Research.\" Journal of Economic Surveys, forthcoming. doi.org/10.1111/joes.70105",
+  "authors": [
+   "Nikolai Cook",
+   "Frantisek Bartos",
+   "Pedro R. D. Bom",
+   "Sebastian Gechert",
+   "Klara Kantova",
+   "Jerome Geyer-Klingeberg",
+   "Tomas Havranek",
+   "Zuzana Irsova",
+   "Martina Luskova",
+   "Matej Opatrny",
+   "Franz Prante",
+   "Heiko J. Rachinger",
+   "T. D. Stanley"
+  ],
+  "year": 2026,
+  "journal": "Journal of Economic Surveys",
+  "doi_or_publisher_url": "https://doi.org/10.1111/joes.70105",
+  "parent": "/guidelines/",
+  "slug": "guidelines/ai",
+  "pdf": "guidelines/guidance2026.pdf",
+  "figure": null,
+  "has_meta_description": true,
+  "meta_keywords": "artificial intelligence, meta-analysis, AI disclosure, research transparency, MAER-Net",
+  "one_line": "The MAER-Net principles for using AI in a meta-analysis: humans lead, humans are accountable, humans audit the AI's decisions, and any substantive AI use is disclosed.",
+  "home_label": "Guidelines home"
  }
 ]

@@ -1,10 +1,10 @@
 {
  "name": "meta-analysis.cz papers",
- "description": "One record per full-text document on meta-analysis.cz: 63 papers plus the MAIVE supplement, each with its full text, PDF and section map. Fetch this first and one page after, rather than the whole corpus.",
+ "description": "One record per full-text document on meta-analysis.cz: 64 papers plus the MAIVE supplement, each with its full text, PDF and section map. Fetch this first and one page after, rather than the whole corpus.",
  "license": "https://creativecommons.org/licenses/by/4.0/",
  "full_corpus": "https://meta-analysis.cz/llms-full.txt",
- "count": 64,
- "paper_count": 63,
+ "count": 65,
+ "paper_count": 64,
  "supplement_count": 1,
  "papers": [
   {
@@ -3145,6 +3145,88 @@
     "codebook": "https://meta-analysis.cz/api/v1/codebooks/gasoline_price.json"
    },
    "codebook_url": "https://meta-analysis.cz/api/v1/codebooks/gasoline_price.json"
+  },
+  {
+   "project": "guai",
+   "document_type": "paper",
+   "version": "record",
+   "published_as": null,
+   "title": "Guidance for the Use of AI in the Meta-Analysis of Economics Research",
+   "authors": [
+    "Nikolai Cook",
+    "Frantisek Bartos",
+    "Pedro R. D. Bom",
+    "Sebastian Gechert",
+    "Klara Kantova",
+    "Jerome Geyer-Klingeberg",
+    "Tomas Havranek",
+    "Zuzana Irsova",
+    "Martina Luskova",
+    "Matej Opatrny",
+    "Franz Prante",
+    "Heiko J. Rachinger",
+    "T. D. Stanley"
+   ],
+   "year": 2026,
+   "journal": "Journal of Economic Surveys",
+   "doi": "https://doi.org/10.1111/joes.70105",
+   "publisher_url": null,
+   "full_text_url": "https://meta-analysis.cz/guidelines/ai/",
+   "project_url": "https://meta-analysis.cz/guidelines/ai/",
+   "pdf_url": "https://meta-analysis.cz/guidelines/guidance2026.pdf",
+   "abstract": "Meta-analysis is widely accepted to be the most rigorous and objective approach to the synthesis, interpretation, and understanding of findings from specific areas of empirical economics research. With the advent of increasingly capable generative artificial intelligence and AI’s potential to transform the practice of meta-analysis, the Meta-Analysis of Economics Research Network (MAER-Net) has adopted this set of principles. These principles are meant to provide guidance to meta-researchers, as well as editors and reviewers, in the use of AI in meta-analysis of economics research. Future meta-analyses that employ AI are expected to embody these guiding principles and to follow the associated Reporting Guidelines for Meta-Analysis in Economics - Updated for AI (Cook et al. 2026).",
+   "sections": [
+    {
+     "level": 2,
+     "title": "1. Introduction",
+     "anchor": "sec-1"
+    },
+    {
+     "level": 2,
+     "title": "2. Guiding Principles",
+     "anchor": "sec-2"
+    },
+    {
+     "level": 3,
+     "title": "2.1. Human Leadership",
+     "anchor": "sec-2-1"
+    },
+    {
+     "level": 3,
+     "title": "2.2. Human Accountability",
+     "anchor": "sec-2-2"
+    },
+    {
+     "level": 3,
+     "title": "2.3. Human Auditing",
+     "anchor": "sec-2-3"
+    },
+    {
+     "level": 3,
+     "title": "2.4. Human Disclosure",
+     "anchor": "sec-2-4"
+    },
+    {
+     "level": 2,
+     "title": "3. Discussion",
+     "anchor": "sec-3"
+    },
+    {
+     "level": 2,
+     "title": "ACKNOWLEDGMENTS",
+     "anchor": "sec-acknowledgments"
+    },
+    {
+     "level": 2,
+     "title": "REFERENCES",
+     "anchor": "sec-references"
+    },
+    {
+     "level": 2,
+     "title": "ENDNOTES",
+     "anchor": "sec-endnotes"
+    }
+   ]
   },
   {
    "project": "guidelines",
