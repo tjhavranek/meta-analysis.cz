@@ -27,7 +27,8 @@ import sys
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 sys.path.insert(0, os.path.join(ROOT, "tools"))
 
-from build_paper_page import documents, page_dir, transcript_pdf_path  # noqa: E402
+from build_paper_page import (documents, page_dir, transcript_pdf_path,  # noqa: E402
+                              transcript_pdf_paths)
 from scout_paper import scout                               # noqa: E402
 from verify_transcript import (multiset_check, pdf_counts,  # noqa: E402
                                pdf_prose, transcript_prose, words)
@@ -63,10 +64,13 @@ def check(project):
         notes.append("hand-built page, no transcript: fidelity and census checks skipped")
     src = open(tr_path).read() if have_transcript else None
     pdf = transcript_pdf_path(project, PAPERS[project])
+    pdfs = transcript_pdf_paths(project, PAPERS[project])
 
     # -- nothing invented
     if have_transcript:
-      a = pdf_counts(pdf)
+      a = pdf_counts(pdfs[0])
+      for _extra in pdfs[1:]:
+          a = a | pdf_counts(_extra)      # a word in either hosted PDF is not invented
       b = words(transcript_prose(src))
       _lost, gained = multiset_check(a, b)
       invented = sum(c for w, c in gained.items() if re.search(r"[a-z]{3}", w))

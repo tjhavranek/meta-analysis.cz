@@ -179,7 +179,14 @@ def main():
         for c in failed:
             print("   " + c)
         return 1
-    print("every gate CI runs passes here" + (" (slow gates skipped)" if fast else ""))
+    if fast:
+        # I pushed on --fast once and CI rejected it on check_paper_pages, which --fast
+        # skips. The docstring already said not to; a docstring is not in front of you at
+        # the moment you decide to push.
+        print("NOT ENOUGH TO PUSH ON: --fast skipped " + ", ".join(SLOW) +
+              ".\n  Run tools/preflight.py with no arguments before pushing.")
+        return 0
+    print("every gate CI runs passes here")
     return 0
 
 

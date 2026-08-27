@@ -1061,6 +1061,23 @@ def transcript_pdf_path(project, meta):
     return os.path.join(ROOT, project, rel)
 
 
+def transcript_pdf_paths(project, meta):
+    """Every document this page's text is drawn from.
+
+    Usually one. But dst_slovakia follows the PUBLISHED article for its numbers and table
+    numbering while keeping the MANUSCRIPT's citation style, and both PDFs are hosted on
+    the page. Checked against either alone it looks unfaithful: against the manuscript the
+    journal's corrections read as invented, against the published article the reference
+    list does. A word is invented only if it appears in neither.
+    """
+    out, seen = [], set()
+    for p in (transcript_pdf_path(project, meta), pdf_path(project, meta)):
+        if p and os.path.isfile(p) and p not in seen:
+            seen.add(p)
+            out.append(p)
+    return out
+
+
 def pdf_path(project, meta):
     """Where that PDF actually is on disk.
 
