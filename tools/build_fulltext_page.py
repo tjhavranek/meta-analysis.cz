@@ -178,8 +178,9 @@ picture.</p>
     _meta = sum(1 for _r in csv.DictReader(open(os.path.join(ROOT, "estimates.csv"),
                                                 encoding="utf-8")))
     _other = len(rows) - _meta
-    composition = (("%d answer a question on <a href=\"/results/\">Headline results</a>; the "
-                    "other %d are applied work in banking, monetary policy and energy.")
+    composition = (("%d are meta-analyses and meta-research, each answering a question on "
+                    "<a href=\"/results/\">Headline results</a>. The other %d are not "
+                    "meta-analyses: applied work in banking, monetary policy and energy.")
                    % (_meta, _other)) if _other > 0 else ""
     out = page.format(n=len(rows), lede=lede, listed=listed, figs=figs, footer=load_footer(),
                       composition=composition,
