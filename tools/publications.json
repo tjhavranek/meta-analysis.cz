@@ -47,7 +47,7 @@
   },
   {
    "title": "Reporting Guidelines for Meta-Analysis in Economics—Updated for AI",
-   "year": 2020,
+   "year": 2026,
    "venue": "Journal of Economic Surveys",
    "volume": null,
    "page": null,
@@ -68,7 +68,7 @@
     "T. D. Stanley"
    ],
    "n_authors": 13,
-   "project": "reporting",
+   "project": null,
    "type": "journal-article"
   },
   {
@@ -432,6 +432,29 @@
    "type": "journal-article"
   },
   {
+   "title": "Conventional wisdom, meta-analysis, and research revision in economics",
+   "year": 2025,
+   "venue": "Journal of Economic Surveys",
+   "volume": "39",
+   "page": "980-999",
+   "doi": "10.1111/joes.12630",
+   "authors": [
+    "Sebastian Gechert",
+    "Bianka Mey",
+    "Matej Opatrny",
+    "Tomas Havranek",
+    "T. D. Stanley",
+    "Pedro R. D. Bom",
+    "Hristos Doucouliagos",
+    "Philipp Heimberger",
+    "Zuzana Irsova",
+    "Heiko J. Rachinger"
+   ],
+   "n_authors": 10,
+   "project": "conventional_wisdom",
+   "type": "journal-article"
+  },
+  {
    "title": "Does Shareholder Activism Create Value? A Meta-Analysis",
    "year": 2025,
    "venue": "Corporate Governance: An International Review",
@@ -515,26 +538,20 @@
    "type": "journal-article"
   },
   {
-   "title": "Conventional wisdom, meta-analysis, and research revision in economics",
-   "year": 2025,
+   "title": "Is research on hedge fund performance published selectively? A quantitative survey",
+   "year": 2024,
    "venue": "Journal of Economic Surveys",
-   "volume": "39",
-   "page": "980-999",
-   "doi": "10.1111/joes.12630",
+   "volume": "38",
+   "page": "1085-1131",
+   "doi": "10.1111/joes.12574",
    "authors": [
-    "Sebastian Gechert",
-    "Bianka Mey",
-    "Matej Opatrny",
+    "Fan Yang",
     "Tomas Havranek",
-    "T. D. Stanley",
-    "Pedro R. D. Bom",
-    "Hristos Doucouliagos",
-    "Philipp Heimberger",
     "Zuzana Irsova",
-    "Heiko J. Rachinger"
+    "Jiri Novak"
    ],
-   "n_authors": 10,
-   "project": "conventional_wisdom",
+   "n_authors": 4,
+   "project": "hedge",
    "type": "journal-article"
   },
   {
@@ -551,6 +568,23 @@
    ],
    "n_authors": 3,
    "project": "pcc",
+   "type": "journal-article"
+  },
+  {
+   "title": "Meta-analysis of social science research: A practitioner's guide",
+   "year": 2024,
+   "venue": "Journal of Economic Surveys",
+   "volume": "38",
+   "page": "1547-1566",
+   "doi": "10.1111/joes.12595",
+   "authors": [
+    "Zuzana Irsova",
+    "Hristos Doucouliagos",
+    "Tomas Havranek",
+    "T. D. Stanley"
+   ],
+   "n_authors": 4,
+   "project": "guidelines",
    "type": "journal-article"
   },
   {
@@ -604,37 +638,19 @@
    "type": "journal-article"
   },
   {
-   "title": "Is research on hedge fund performance published selectively? A quantitative survey",
-   "year": 2024,
-   "venue": "Journal of Economic Surveys",
-   "volume": "38",
-   "page": "1085-1131",
-   "doi": "10.1111/joes.12574",
+   "title": "When Does Monetary Policy Sway House Prices? A Meta-Analysis",
+   "year": 2023,
+   "venue": "IMF Economic Review",
+   "volume": "71",
+   "page": "538-573",
+   "doi": "10.1057/s41308-022-00185-5",
    "authors": [
-    "Fan Yang",
-    "Tomas Havranek",
-    "Zuzana Irsova",
-    "Jiri Novak"
+    "Dominika Ehrenbergerova",
+    "Josef Bajzik",
+    "Tomas Havranek"
    ],
-   "n_authors": 4,
-   "project": "hedge",
-   "type": "journal-article"
-  },
-  {
-   "title": "Meta-analysis of social science research: A practitioner's guide",
-   "year": 2024,
-   "venue": "Journal of Economic Surveys",
-   "volume": "38",
-   "page": "1547-1566",
-   "doi": "10.1111/joes.12595",
-   "authors": [
-    "Zuzana Irsova",
-    "Hristos Doucouliagos",
-    "Tomas Havranek",
-    "T. D. Stanley"
-   ],
-   "n_authors": 4,
-   "project": "guidelines",
+   "n_authors": 3,
+   "project": "house_prices",
    "type": "journal-article"
   },
   {
@@ -671,19 +687,18 @@
    "type": "journal-article"
   },
   {
-   "title": "When Does Monetary Policy Sway House Prices? A Meta-Analysis",
-   "year": 2023,
-   "venue": "IMF Economic Review",
-   "volume": "71",
-   "page": "538-573",
-   "doi": "10.1057/s41308-022-00185-5",
+   "title": "Forecasting tourist arrivals: Google Trends meets mixed-frequency data",
+   "year": 2021,
+   "venue": "Tourism Economics",
+   "volume": "27",
+   "page": "129-148",
+   "doi": "10.1177/1354816619879584",
    "authors": [
-    "Dominika Ehrenbergerova",
-    "Josef Bajzik",
-    "Tomas Havranek"
+    "Tomas Havranek",
+    "Ayaz Zeynalov"
    ],
-   "n_authors": 3,
-   "project": "house_prices",
+   "n_authors": 2,
+   "project": null,
    "type": "journal-article"
   },
   {
@@ -838,21 +853,6 @@
    "type": "journal-article"
   },
   {
-   "title": "Forecasting tourist arrivals: Google Trends meets mixed-frequency data",
-   "year": 2019,
-   "venue": "Tourism Economics",
-   "volume": "27",
-   "page": "129-148",
-   "doi": "10.1177/1354816619879584",
-   "authors": [
-    "Tomas Havranek",
-    "Ayaz Zeynalov"
-   ],
-   "n_authors": 2,
-   "project": null,
-   "type": "journal-article"
-  },
-  {
    "title": "Does Daylight Saving Save Electricity? A Meta-Analysis",
    "year": 2018,
    "venue": "The Energy Journal",
@@ -884,7 +884,7 @@
    "type": "no-doi"
   },
   {
-   "title": "Measuring the income elasticity of water demand: The importance of publication and endogeneity biases",
+   "title": "Measuring the Income Elasticity of Water Demand: The Importance of Publication and Endogeneity Biases",
    "year": 2018,
    "venue": "Land Economics",
    "volume": "94",
@@ -913,6 +913,21 @@
    ],
    "n_authors": 3,
    "project": "education",
+   "type": "journal-article"
+  },
+  {
+   "title": "Do Borders Really Slash Trade? A Meta-Analysis",
+   "year": 2017,
+   "venue": "IMF Economic Review",
+   "volume": "65",
+   "page": "365-396",
+   "doi": "10.1057/s41308-016-0001-5",
+   "authors": [
+    "Tomas Havranek",
+    "Zuzana Irsova"
+   ],
+   "n_authors": 2,
+   "project": "border",
    "type": "journal-article"
   },
   {
@@ -947,6 +962,21 @@
    "type": "journal-article"
   },
   {
+   "title": "Bank Competition and Financial Stability: Much Ado About Nothing?",
+   "year": 2016,
+   "venue": "Journal of Economic Surveys",
+   "volume": "30",
+   "page": "944-981",
+   "doi": "10.1111/joes.12131",
+   "authors": [
+    "Diana Zigraiova",
+    "Tomas Havranek"
+   ],
+   "n_authors": 2,
+   "project": "competition",
+   "type": "journal-article"
+  },
+  {
    "title": "Bank efficiency and interest rate pass-through: Evidence from Czech loan products",
    "year": 2016,
    "venue": "Economic Modelling",
@@ -960,21 +990,6 @@
    ],
    "n_authors": 3,
    "project": null,
-   "type": "journal-article"
-  },
-  {
-   "title": "Do Borders Really Slash Trade? A Meta-Analysis",
-   "year": 2017,
-   "venue": "IMF Economic Review",
-   "volume": "65",
-   "page": "365-396",
-   "doi": "10.1057/s41308-016-0001-5",
-   "authors": [
-    "Tomas Havranek",
-    "Zuzana Irsova"
-   ],
-   "n_authors": 2,
-   "project": "border",
    "type": "journal-article"
   },
   {
@@ -1010,21 +1025,6 @@
    "type": "journal-article"
   },
   {
-   "title": "Bank Competition and Financial Stability: Much Ado About Nothing?",
-   "year": 2016,
-   "venue": "Journal of Economic Surveys",
-   "volume": "30",
-   "page": "944-981",
-   "doi": "10.1111/joes.12131",
-   "authors": [
-    "Diana Zigraiova",
-    "Tomas Havranek"
-   ],
-   "n_authors": 2,
-   "project": "competition",
-   "type": "journal-article"
-  },
-  {
    "title": "Cross-country heterogeneity in intertemporal substitution",
    "year": 2015,
    "venue": "Journal of International Economics",
@@ -1039,6 +1039,22 @@
    ],
    "n_authors": 4,
    "project": "substitution",
+   "type": "journal-article"
+  },
+  {
+   "title": "Financial development and economic growth: A meta-analysis",
+   "year": 2015,
+   "venue": "Journal of Economic Surveys",
+   "volume": "29",
+   "page": "506-526",
+   "doi": "10.1111/joes.12068",
+   "authors": [
+    "Petra Valickova",
+    "Tomas Havranek",
+    "Roman Horvath"
+   ],
+   "n_authors": 3,
+   "project": "finance_growth",
    "type": "journal-article"
   },
   {
@@ -1100,11 +1116,11 @@
    ],
    "n_authors": null,
    "project": null,
-   "type": "no-doi"
+   "type": "journal-article"
   },
   {
    "title": "Banking, debt, and currency crises in developed countries: Stylized facts and early warning indicators",
-   "year": 2012,
+   "year": 2014,
    "venue": "Journal of Financial Stability",
    "volume": "15",
    "page": "1-17",
@@ -1122,19 +1138,18 @@
    "type": "journal-article"
   },
   {
-   "title": "Financial development and economic growth: A meta-analysis",
-   "year": 2015,
-   "venue": "Journal of Economic Surveys",
-   "volume": "29",
-   "page": "506-526",
-   "doi": "10.1111/joes.12068",
+   "title": "Structural reforms and growth in transition: A meta-analysis",
+   "year": 2014,
+   "venue": "Economics of Transition",
+   "volume": "22",
+   "page": "13-42",
+   "doi": "10.1111/ecot.12029",
    "authors": [
-    "Petra Valickova",
-    "Tomas Havranek",
-    "Roman Horvath"
+    "Jan Babecky",
+    "Tomas Havranek"
    ],
-   "n_authors": 3,
-   "project": "finance_growth",
+   "n_authors": 2,
+   "project": "reforms",
    "type": "journal-article"
   },
   {
@@ -1148,7 +1163,7 @@
     "Zuzana Irsova",
     "Tomas Havranek"
    ],
-   "n_authors": null,
+   "n_authors": 2,
    "project": null,
    "type": "no-doi"
   },
@@ -1218,21 +1233,6 @@
    "type": "journal-article"
   },
   {
-   "title": "Structural reforms and growth in transition: A meta-analysis",
-   "year": 2014,
-   "venue": "Economics of Transition",
-   "volume": "22",
-   "page": "13-42",
-   "doi": "10.1111/ecot.12029",
-   "authors": [
-    "Jan Babecky",
-    "Tomas Havranek"
-   ],
-   "n_authors": 2,
-   "project": "reforms",
-   "type": "journal-article"
-  },
-  {
    "title": "Transmission lags of monetary policy: A meta-analysis",
    "year": 2013,
    "venue": "International Journal of Central Banking",
@@ -1261,6 +1261,22 @@
    ],
    "n_authors": 3,
    "project": "gasoline_price",
+   "type": "journal-article"
+  },
+  {
+   "title": "Monetary transmission and the financial sector in the Czech Republic",
+   "year": 2012,
+   "venue": "Economic Change and Restructuring",
+   "volume": "45",
+   "page": "135-155",
+   "doi": "10.1007/s10644-011-9106-z",
+   "authors": [
+    "Tomas Havranek",
+    "Roman Horvath",
+    "Jakub Mateju"
+   ],
+   "n_authors": 3,
+   "project": null,
    "type": "journal-article"
   },
   {
@@ -1309,23 +1325,7 @@
    "type": "journal-article"
   },
   {
-   "title": "Monetary transmission and the financial sector in the Czech Republic",
-   "year": 2011,
-   "venue": "Economic Change and Restructuring",
-   "volume": "45",
-   "page": "135-155",
-   "doi": "10.1007/s10644-011-9106-z",
-   "authors": [
-    "Tomas Havranek",
-    "Roman Horvath",
-    "Jakub Mateju"
-   ],
-   "n_authors": 3,
-   "project": null,
-   "type": "journal-article"
-  },
-  {
-   "title": "Measuring bank efficiency: A meta-regression analysis",
+   "title": "Measuring Bank Efficiency: A Meta-Regression Analysis",
    "year": 2010,
    "venue": "Prague Economic Papers",
    "volume": "19",
@@ -1335,9 +1335,9 @@
     "Zuzana Irsova",
     "Tomas Havranek"
    ],
-   "n_authors": null,
+   "n_authors": 2,
    "project": null,
-   "type": "no-doi"
+   "type": "journal-article"
   },
   {
    "title": "Meta-analysis of intra-industry FDI spillovers: Updated evidence",
@@ -1361,8 +1361,11 @@
    "volume": null,
    "page": null,
    "doi": "",
-   "authors": [],
-   "n_authors": null,
+   "authors": [
+    "Tomas Havranek",
+    "Zuzana Irsova"
+   ],
+   "n_authors": 2,
    "project": null,
    "type": "no-doi"
   },
@@ -1392,7 +1395,7 @@
    ],
    "n_authors": null,
    "project": null,
-   "type": "no-doi"
+   "type": "journal-article"
   }
  ],
  "irsova": [
@@ -1442,8 +1445,8 @@
    "type": "journal-article"
   },
   {
-   "title": "Reporting Guidelines for Meta-Analysis in Economics-Updated for AI",
-   "year": 2020,
+   "title": "Reporting Guidelines for Meta-Analysis in Economics—Updated for AI",
+   "year": 2026,
    "venue": "Journal of Economic Surveys",
    "volume": null,
    "page": null,
@@ -1464,7 +1467,7 @@
     "T. D. Stanley"
    ],
    "n_authors": null,
-   "project": "reporting",
+   "project": null,
    "type": "journal-article"
   },
   {
@@ -1828,6 +1831,29 @@
    "type": "journal-article"
   },
   {
+   "title": "Conventional wisdom, meta-analysis, and research revision in economics",
+   "year": 2025,
+   "venue": "Journal of Economic Surveys",
+   "volume": "39",
+   "page": "980-999",
+   "doi": "10.1111/joes.12630",
+   "authors": [
+    "Sebastian Gechert",
+    "Bianka Mey",
+    "Matej Opatrny",
+    "Tomas Havranek",
+    "T. D. Stanley",
+    "Pedro R. D. Bom",
+    "Hristos Doucouliagos",
+    "Philipp Heimberger",
+    "Zuzana Irsova",
+    "Heiko J. Rachinger"
+   ],
+   "n_authors": null,
+   "project": "conventional_wisdom",
+   "type": "journal-article"
+  },
+  {
    "title": "Does Shareholder Activism Create Value? A Meta-Analysis",
    "year": 2025,
    "venue": "Corporate Governance: An International Review",
@@ -1895,26 +1921,37 @@
    "type": "journal-article"
   },
   {
-   "title": "Conventional wisdom, meta-analysis, and research revision in economics",
-   "year": 2025,
+   "title": "Is research on hedge fund performance published selectively? A quantitative survey",
+   "year": 2024,
    "venue": "Journal of Economic Surveys",
-   "volume": "39",
-   "page": "980-999",
-   "doi": "10.1111/joes.12630",
+   "volume": "38",
+   "page": "1085-1131",
+   "doi": "10.1111/joes.12574",
    "authors": [
-    "Sebastian Gechert",
-    "Bianka Mey",
-    "Matej Opatrny",
+    "Fan Yang",
     "Tomas Havranek",
-    "T. D. Stanley",
-    "Pedro R. D. Bom",
-    "Hristos Doucouliagos",
-    "Philipp Heimberger",
     "Zuzana Irsova",
-    "Heiko J. Rachinger"
+    "Jiri Novak"
    ],
    "n_authors": null,
-   "project": "conventional_wisdom",
+   "project": "hedge",
+   "type": "journal-article"
+  },
+  {
+   "title": "Meta-analysis of social science research: A practitioner's guide",
+   "year": 2024,
+   "venue": "Journal of Economic Surveys",
+   "volume": "38",
+   "page": "1547-1566",
+   "doi": "10.1111/joes.12595",
+   "authors": [
+    "Zuzana Irsova",
+    "Hristos Doucouliagos",
+    "Tomas Havranek",
+    "T. D. Stanley"
+   ],
+   "n_authors": null,
+   "project": "guidelines",
    "type": "journal-article"
   },
   {
@@ -1965,40 +2002,6 @@
    ],
    "n_authors": null,
    "project": "frisch",
-   "type": "journal-article"
-  },
-  {
-   "title": "Is research on hedge fund performance published selectively? A quantitative survey",
-   "year": 2024,
-   "venue": "Journal of Economic Surveys",
-   "volume": "38",
-   "page": "1085-1131",
-   "doi": "10.1111/joes.12574",
-   "authors": [
-    "Fan Yang",
-    "Tomas Havranek",
-    "Zuzana Irsova",
-    "Jiri Novak"
-   ],
-   "n_authors": null,
-   "project": "hedge",
-   "type": "journal-article"
-  },
-  {
-   "title": "Meta-analysis of social science research: A practitioner's guide",
-   "year": 2024,
-   "venue": "Journal of Economic Surveys",
-   "volume": "38",
-   "page": "1547-1566",
-   "doi": "10.1111/joes.12595",
-   "authors": [
-    "Zuzana Irsova",
-    "Hristos Doucouliagos",
-    "Tomas Havranek",
-    "T. D. Stanley"
-   ],
-   "n_authors": null,
-   "project": "guidelines",
    "type": "journal-article"
   },
   {
@@ -2150,6 +2153,21 @@
    "type": "journal-article"
   },
   {
+   "title": "Do Borders Really Slash Trade? A Meta-Analysis",
+   "year": 2017,
+   "venue": "IMF Economic Review",
+   "volume": "65",
+   "page": "365-396",
+   "doi": "10.1057/s41308-016-0001-5",
+   "authors": [
+    "Tomas Havranek",
+    "Zuzana Irsova"
+   ],
+   "n_authors": null,
+   "project": "border",
+   "type": "journal-article"
+  },
+  {
    "title": "Bank efficiency and interest rate pass-through: Evidence from Czech loan products",
    "year": 2016,
    "venue": "Economic Modelling",
@@ -2163,21 +2181,6 @@
    ],
    "n_authors": null,
    "project": null,
-   "type": "journal-article"
-  },
-  {
-   "title": "Do Borders Really Slash Trade? A Meta-Analysis",
-   "year": 2017,
-   "venue": "IMF Economic Review",
-   "volume": "65",
-   "page": "365-396",
-   "doi": "10.1057/s41308-016-0001-5",
-   "authors": [
-    "Tomas Havranek",
-    "Zuzana Irsova"
-   ],
-   "n_authors": null,
-   "project": "border",
    "type": "journal-article"
   },
   {
@@ -2246,13 +2249,16 @@
    "type": "journal-article"
   },
   {
-   "title": "A Meta-Analysis of Bank Efficiency Measurement in Transitional Countries",
+   "title": "A meta-analysis of bank efficiency measurement in transitional countries",
    "year": 2013,
-   "venue": "Transformations In Business & Economics",
+   "venue": "Transformations in Business and Economics",
    "volume": null,
    "page": null,
    "doi": "",
-   "authors": [],
+   "authors": [
+    "Zuzana Irsova",
+    "Tomas Havranek"
+   ],
    "n_authors": null,
    "project": null,
    "type": "journal-article"
@@ -2377,6 +2383,21 @@
    "n_authors": null,
    "project": null,
    "type": "journal-article"
+  },
+  {
+   "title": "On the Intensity of International Subsidy Competition for FDI",
+   "year": 2010,
+   "venue": "Theoretical and Applied Economics",
+   "volume": null,
+   "page": null,
+   "doi": "",
+   "authors": [
+    "Tomas Havranek",
+    "Zuzana Irsova"
+   ],
+   "n_authors": null,
+   "project": null,
+   "type": "no-doi"
   }
  ]
 }

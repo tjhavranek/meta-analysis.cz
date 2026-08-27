@@ -155,7 +155,7 @@ def page(key, records, all_data):
 <meta http-equiv="content-type" content="text/html; charset=utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>Publications &#8212; {E(p['name'])}</title>
-<meta name="description" content="The complete journal publication record of {E(p['name'])}: {len(records)} articles, {n_full} of them republished in full text on this site." />
+<meta name="description" content="The complete journal publication record of {E(p['name'])}: {len(records)} articles, {n_full} of them with the full text on this site." />
 <link href="/style.css" rel="stylesheet" type="text/css" />
 <link href="/paper.css" rel="stylesheet" type="text/css" />
 <!-- seo-meta:start -->
@@ -163,7 +163,7 @@ def page(key, records, all_data):
 <meta property="og:site_name" content="meta-analysis.cz" />
 <meta property="og:type" content="website" />
 <meta property="og:title" content="Publications &#8212; {E(p['name'])}" />
-<meta property="og:description" content="Every journal article by {E(p['name'])}: {len(records)} of them, {n_full} republished in full text on this site." />
+<meta property="og:description" content="Every journal article by {E(p['name'])}: {len(records)} of them, {n_full} with the full text on this site." />
 <meta property="og:url" content="{BASE}/{p['slug']}/" />
 <script type="application/ld+json">
 {jsonld(p, records)}
@@ -196,8 +196,8 @@ def page(key, records, all_data):
 {tab}{tab}{tab}<h1 class="title">Publications</h1>
 {tab}{tab}{tab}<div class="entry">
 <p>{E(p['blurb'])} {len(records)} journal articles by {E(p['name'])}
-(<a href="https://orcid.org/{p['orcid']}">ORCID {p['orcid']}</a>), {n_full} of them republished
-here in full text. Working papers and preprints are not listed separately: where a paper has
+(<a href="https://orcid.org/{p['orcid']}">ORCID {p['orcid']}</a>), {n_full} of them with
+the full text here. Working papers and preprints are not listed separately: where a paper has
 been published, the published version is what appears. The other half of this site's work is
 <a href="/{other['slug']}/">{E(other['name'])}'s publication list</a>.</p>
 
@@ -214,9 +214,74 @@ been published, the published version is what appears. The other half of this si
 """
 
 
+def audit(data):
+    """Refuse to publish a list that contradicts the site or itself.
+
+    Two rows once carried the 2020 guidelines' year and full-text link because a title match
+    was made on a 45-character prefix, and "Reporting Guidelines for Meta-Analysis in
+    Economics" is a prefix of "... in Economics-Updated for AI". A prefix is not an identity.
+    Every link here must be justified by the paper's own DOI, or by its whole title."""
+    import re
+    papers = json.load(open(PAPERS, encoding="utf-8"))
+    nd = lambda x: (x or "").lower().replace("https://doi.org/", "").rstrip("/")
+    tk = lambda t: re.sub(r"[^a-z0-9]", "", (t or "").lower())
+    by_doi = {nd(e.get("doi_or_publisher_url")): e for e in papers
+              if e.get("doi_or_publisher_url")}
+    titles = {}
+    for e in papers:
+        titles.setdefault(tk(e.get("title")), e)
+        m = re.search(r'"([^"]+)"', e.get("reference_line") or "")
+        if m:
+            titles.setdefault(tk(m.group(1)), e)
+    problems = []
+    # The same paper appears on both lists whenever the two are coauthors. It must appear
+    # the same way: one list once carried it with an empty author list and a different
+    # journal name, and the page rendered that row with no authors at all.
+    by_pair = {}
+    for who, rows in data.items():
+        for r in rows:
+            if r.get("doi"):
+                by_pair.setdefault(r["doi"], []).append((who, r))
+    for doi, pair in by_pair.items():
+        if len(pair) < 2:
+            continue
+        (w0, a), (w1, b) = pair[0], pair[1]
+        for f in ("title", "year", "venue", "volume", "page", "project", "authors"):
+            if a.get(f) != b.get(f):
+                problems.append(f"{doi}: {f} differs between the {w0} and {w1} lists "
+                                f"({a.get(f)!r} vs {b.get(f)!r})")
+    for who, rows in data.items():
+        for r in rows:
+            if not r.get("authors"):
+                problems.append(f"{who}: {r['title'][:60]!r} has no authors")
+    for who, rows in data.items():
+        years = [r["year"] for r in rows]
+        if years != sorted(years, reverse=True):
+            problems.append(f"{who}: not in newest-first order")
+        seen = set()
+        for r in rows:
+            if r.get("doi"):
+                if r["doi"] in seen:
+                    problems.append(f"{who}: {r['doi']} listed twice")
+                seen.add(r["doi"])
+            if not r.get("project"):
+                continue
+            e = by_doi.get(nd(r.get("doi"))) or titles.get(tk(r["title"]))
+            if not e or e["project"] != r["project"]:
+                problems.append(f"{who}: {r['title'][:60]!r} links /{r['project']}/ but no "
+                                f"DOI or whole-title match says so")
+            elif e.get("year") and r["year"] != e["year"] and nd(r.get("doi")) == \
+                    nd(e.get("doi_or_publisher_url")):
+                problems.append(f"{who}: {r['title'][:50]!r} says {r['year']}, the site says "
+                                f"{e['year']}")
+    if problems:
+        sys.exit("publications.json disagrees with the site:\n  " + "\n  ".join(problems))
+
+
 def main():
     check = "--check" in sys.argv
     data = json.load(open(DATA, encoding="utf-8"))
+    audit(data)
     wrote = []
     for key, person in PEOPLE.items():
         records = data[key]
