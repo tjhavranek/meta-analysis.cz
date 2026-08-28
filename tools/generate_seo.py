@@ -734,14 +734,13 @@ def _drop_sections(md):
 
 
 # The hand-built pages, and where their text actually lives.
-# Where a paper's page actually lives when it is not at /<project>/paper/. The three
+# Where a paper's page actually lives when it is not at /<project>/paper/. The two
 # below predate the `slug` field and have no entry to read it from; everything since
 # declares its own slug in papers.json, and a new one must not have to be added here as
 # well. It was: adding the 2026 guidelines produced a page that reached neither llms.txt
 # nor llms-full.txt, and only a generator warning caught it.
 def _hand_built():
-    out = {"guidelines": "guidelines/guide", "maive": "maive/paper",
-           "reporting": "guidelines/reporting"}
+    out = {"guidelines": "guidelines/guide", "reporting": "guidelines/reporting"}
     try:
         with open(os.path.join(SITE, "tools", "papers.json"), encoding="utf-8") as fh:
             for e in json.load(fh):
@@ -1217,7 +1216,9 @@ def main():
         # an absent value must produce no claim, not a claim with a placeholder in it.
         _ver = _api["harmonised_table"]["version"]
         _vd = (f" Version {_ver} specifically is DOI {_api['doi']}." if _api.get("doi")
-               else f" Version {_ver} is the current release; cite the concept DOI and name the version.")
+               else f" Version {_ver} is the current release and is NOT yet deposited, so the"
+                    f" concept DOI resolves to the previous version; cite the concept DOI and"
+                    f" name the version you used.")
         lt += [f"- **Archived and citable**: {_api['concept_doi_url']} (DOI {_api['concept_doi']}) — "
                f"the concept DOI, which always resolves to the newest version.{_vd} "
                f"Cite the collection AND the individual paper whose data you use."]

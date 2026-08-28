@@ -43,7 +43,7 @@ inst <- read.csv("https://meta-analysis.cz/data/v1/estimates_harmonised.csv")
 **Read the Parquet where you can, and pass `float_precision="round_trip"` where you
 cannot.** The CSV is not the problem: it carries every value at full precision and
 round-trips exactly. Pandas' default CSV parser is the problem, and it is not exact. It
-moves 17,310 of the 49,669 `se` values, 10,026 `effect` values and 9,213 `t_stat` values,
+moves 17,468 of the 49,845 `se` values, 10,159 `effect` values and 9,246 `t_stat` values,
 each by up to about 1.5e-11. So this applies to any column you read, not only the derived
 ones, and recomputing `effect / se` yourself does not avoid it.
 
@@ -248,9 +248,9 @@ estimates twice and present one literature as two independent ones:
 **Dataset IDs are not literature families.** The catalogue counts *contributing dataset
 IDs*. Two of them describe the same literature: `trust` is a later, separate collection of
 the size-premium literature that `size` also covers, which is why only the 284 estimates
-`size` does not already carry are pooled. So "41 literatures" means 41 contributing dataset
-IDs, not 41 independent bodies of evidence: `trust` and `size` cover the same size-premium
-literature, so the 41 IDs represent at most 40 literature families. Treat those two as one
+`size` does not already carry are pooled. So "42 literatures" means 42 contributing dataset
+IDs, not 42 independent bodies of evidence: `trust` and `size` cover the same size-premium
+literature, so the 42 IDs represent at most 41 literature families. Treat those two as one
 family in any analysis that assumes independence.
 
 **Several pooled columns are literature-local.** `study_id` and `estimate_id` are unique
@@ -309,14 +309,14 @@ records which file and which line of reasoning settled it.
 ## Two products, not one
 
 **The archive is a faithful mirror. The harmonised table is an interpretation.**
-They are separate things and should be trusted differently. All 41 literatures'
+They are separate things and should be trusted differently. All 42 literatures'
 mappings are verified, but the table still involves judgement the archive does
 not.
 
 *Archive* — the original files, faithful CSV and Parquet mirrors, codebooks, and
 paper/DOI metadata. Faithful conversions of what was published.
 
-*Harmonised table* — 49,669 selected estimates, automatically mapped and in some
+*Harmonised table* — 49,845 selected estimates, automatically mapped and in some
 cases transformed. Every column mapping is verified against the paper's own
 replication code or published results.
 
@@ -325,8 +325,8 @@ rather than read prose:
 
 | status | meaning | count |
 |---|---|---|
-| `domain_reviewed` | checked by hand against the paper's own replication code, or against its published results where no code exists | 21 of 41 pooled |
-| `code_traced` | mapping confirmed by reading the paper's code and comparing the variables it regresses | 20 of 41 pooled |
+| `domain_reviewed` | checked by hand against the paper's own replication code, or against its published results where no code exists | 22 of 42 pooled |
+| `code_traced` | mapping confirmed by reading the paper's code and comparing the variables it regresses | 20 of 42 pooled |
 | `duplicate_excluded` | same estimates as another literature | 2 |
 | `excluded_no_precision` | no per-estimate standard error exists | 2 |
 

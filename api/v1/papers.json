@@ -4327,7 +4327,7 @@
    "project": "maive",
    "document_type": "paper",
    "version": "record",
-   "version_note": null,
+   "version_note": "The text follows the version of record, section by section. The introduction carries no heading in the published article; the heading here exists so that the section can be linked. Two slips in the published text, “true effect values of 0 a 1” in the Methods and “althought” in the notes to Table 3, are kept as printed. All three figures are reproduced from the published article.",
    "published_as": null,
    "title": "Spurious precision in meta-analysis of observational research",
    "authors": [
@@ -4347,123 +4347,113 @@
    "sections": [
     {
      "level": 2,
-     "title": "Abstract",
-     "anchor": "abstract"
-    },
-    {
-     "level": 2,
-     "title": "Contents",
-     "anchor": "toc-heading"
-    },
-    {
-     "level": 2,
      "title": "Introduction",
-     "anchor": "introduction"
+     "anchor": "sec-introduction"
     },
     {
      "level": 2,
      "title": "Results",
-     "anchor": "results"
+     "anchor": "sec-results"
     },
     {
      "level": 3,
      "title": "Mechanisms of spurious precision",
-     "anchor": "mechanisms"
+     "anchor": "sec-mechanisms-of-spurious-precision"
     },
     {
      "level": 3,
      "title": "Formalization and conceptual framework",
-     "anchor": "formalization"
+     "anchor": "sec-formalization-and-conceptual-framework"
     },
     {
      "level": 3,
      "title": "Conventional meta-analysis models",
-     "anchor": "conventional-models"
+     "anchor": "sec-conventional-meta-analysis-models"
     },
     {
      "level": 3,
      "title": "Meta-analysis instrumental variable estimator",
-     "anchor": "maive-estimator"
+     "anchor": "sec-meta-analysis-instrumental-variable-estimator"
     },
     {
      "level": 3,
      "title": "Simulations",
-     "anchor": "simulations"
+     "anchor": "sec-simulations"
     },
     {
      "level": 3,
      "title": "Applications",
-     "anchor": "applications"
+     "anchor": "sec-applications"
     },
     {
      "level": 2,
      "title": "Discussion",
-     "anchor": "discussion"
+     "anchor": "sec-discussion"
     },
     {
      "level": 2,
      "title": "Methods",
-     "anchor": "methods"
+     "anchor": "sec-methods"
     },
     {
      "level": 3,
      "title": "Stylized selection simulation",
-     "anchor": "stylized-simulation"
+     "anchor": "sec-stylized-selection-simulation"
     },
     {
      "level": 3,
      "title": "P-hacking simulation",
-     "anchor": "p-hacking-simulation"
+     "anchor": "sec-p-hacking-simulation"
     },
     {
      "level": 3,
      "title": "Application based on Kvarven et al.",
-     "anchor": "application-kvarven"
+     "anchor": "sec-application-based-on-kvarven-et-al"
     },
     {
      "level": 3,
      "title": "Application based on Bartos et al.",
-     "anchor": "application-bartos"
+     "anchor": "sec-application-based-on-bartos-et-al"
     },
     {
      "level": 3,
      "title": "Reporting summary",
-     "anchor": "reporting-summary"
+     "anchor": "sec-reporting-summary"
     },
     {
      "level": 2,
      "title": "Data availability",
-     "anchor": "data-availability"
+     "anchor": "sec-data-availability"
     },
     {
      "level": 2,
      "title": "Code availability",
-     "anchor": "code-availability"
+     "anchor": "sec-code-availability"
     },
     {
      "level": 2,
-     "title": "References",
-     "anchor": "references"
+     "title": "REFERENCES",
+     "anchor": "sec-references"
     },
     {
      "level": 2,
      "title": "Acknowledgements",
-     "anchor": "acknowledgements"
+     "anchor": "sec-acknowledgements"
     },
     {
      "level": 2,
      "title": "Author contributions",
-     "anchor": "author-contributions"
+     "anchor": "sec-author-contributions"
     },
     {
      "level": 2,
      "title": "Competing interests",
-     "anchor": "competing-interests"
+     "anchor": "sec-competing-interests"
     },
     {
      "level": 2,
      "title": "Additional information",
-     "anchor": "additional-information"
+     "anchor": "sec-additional-information"
     }
    ],
    "headline_question": "Can p-hacked precision distort meta-analysis weighting?",

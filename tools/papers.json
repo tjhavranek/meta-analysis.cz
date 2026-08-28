@@ -1332,7 +1332,9 @@
   "meta_keywords": "Publication bias, p-hacking, selection models, meta-regression, funnel plot, inverse-variance weighting",
   "one_line": "MAIVE, an instrumental-variable estimator that corrects meta-analysis for spurious precision when standard errors are estimated and can be p-hacked.",
   "citation_title": "Spurious precision in meta-analysis of observational research",
-  "version": "record"
+  "served_title": "Spurious precision in meta-analysis of observational research",
+  "version": "record",
+  "version_note": "The text follows the version of record, section by section. The introduction carries no heading in the published article; the heading here exists so that the section can be linked. Two slips in the published text, “true effect values of 0 a 1” in the Methods and “althought” in the notes to Table 3, are kept as printed. All three figures are reproduced from the published article."
  },
  {
   "project": "migrant",

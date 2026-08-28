@@ -98,7 +98,10 @@ def transcript_prose(src):
                 continue
         if not s or s.startswith("#") or s.startswith("$$"):
             continue
-        if re.match(r"^(TABLE|FIGURE)\s", s):
+        # ALT lines are alternative text for a figure, written for this edition by someone
+        # who looked at the artwork. They are not the paper's prose and must not be checked
+        # against it, any more than a caption label is.
+        if re.match(r"^(TABLE|FIGURE|ALT)\s", s):
             continue
         s = re.sub(r"\$[^$]*\$", " ", s)               # inline mathematics
         s = re.sub(r"\[([^\]]+)\]\([^)]*\)", r"\1", s)  # links keep their text

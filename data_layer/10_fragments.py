@@ -261,7 +261,14 @@ if _ki:
     w("known_issues.html",
       # The deposit version is read, not hardcoded. This said v1.0.0 and stayed saying it
       # after 1.1.1 was deposited, which made the sentence false the moment it mattered.
-      f"<p>Present in the files published here and in the archived v{_dep_ver} deposit. "
+      # And it read the SERVED version, which is not the deposited one between a data
+      # revision and its upload: with 1.2.0 live and undeposited the sentence sent a reader
+      # to an "archived v1.2.0 deposit" that does not exist. api["doi"] is null in exactly
+      # that window, so it is what decides whether the clause can be said at all.
+      (f"<p>Present in the files published here and in the archived v{_dep_ver} deposit. "
+       if api.get("doi") else
+       f"<p>Present in the files published here. Version {_dep_ver} is not yet deposited, "
+       f"so the newest archive is the previous release. ") +
       f"Kept as published rather than silently altered. Nothing else in the table is "
       f"affected by these.</p>\n"
       "<ul>\n" + _items + "\n</ul>\n")

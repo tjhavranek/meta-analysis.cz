@@ -37,6 +37,9 @@ Block level, one construct per line unless noted:
                                line between them) is that table's note, whatever it starts
                                with. Do not add a "Note:" label the paper does not print.
 
+    ALT 2. Description         alternative text for FIGURE 2, written ABOVE that line. A
+                               caption names the finding; alt describes the picture. Optional:
+                               without one the caption is used.
     FIGURE 2. Caption text     figure caption; expects figures/fig2.png beside the page
     FIGURE 2 (no artwork). C   figure whose artwork is not reproduced; caption only
 
@@ -93,6 +96,13 @@ def inline(text, refs_are_numbered=False, link_cites=True, in_table=False):
     text = text.replace("\\$", "\x00USD\x00")
     text = re.sub(r"\$([^$]+)\$", lambda m: park(_mathml(m.group(1))), text)
     text = text.replace("\x00USD\x00", "$")
+    # A backslash escapes a character the dialect would otherwise read as markup. The MAIVE
+    # paper needs two of these: it names a method "p-uniform*" and writes "|MAIVE| > |PET-PEESE|"
+    # in a table, and without an escape the asterisks pair up into emphasis and the bars split
+    # the cell. Escaped here, after math and before html.escape, so the character is literal
+    # text from that point on and no later rule can see it.
+    for _ch in "*|_^":
+        text = text.replace("\\" + _ch, park(html.escape(_ch)))
     text = html.escape(text, quote=False)
 
     # citation markers: ^{4} or ^{4,5} or ^{i}
@@ -168,7 +178,9 @@ def inline(text, refs_are_numbered=False, link_cites=True, in_table=False):
     text = re.sub(r"_\{([^}]*)\}", lambda m: "<sub>%s</sub>" % m.group(1), text)
     # Both link rules park their output. Otherwise the bare-URL rule reads the href the
     # markdown rule just wrote and links it again, nesting one anchor inside another.
-    text = re.sub(r"\[([^\]]+)\]\(((?:https?://|mailto:)[^)\s]+)\)",
+    # A site-relative target is a link too. The pattern took only http(s) and mailto, so
+    # "[meta-analysis.cz/maive](/maive/)" printed its own markdown on the page.
+    text = re.sub(r"\[([^\]]+)\]\(((?:https?://|mailto:|/|\#)[^)\s]+)\)",
                   lambda m: park('<a href="%s">%s</a>' % (m.group(2), m.group(1))), text)
     def _trim_doi(d):
         """Drop sentence punctuation from the end of a DOI, but not the DOI's own brackets.
@@ -311,6 +323,8 @@ RE_LI = re.compile(r"^(\s*)-\s+(.+)$")
 RE_FIG_CAP = re.compile(
     r"^FIGURE\s+([A-Za-z]{0,3}\.?\d+(?:\.\d+)*[A-Za-z]?)(\s*\(no artwork\))?\s*\.\s*(.*)$",
     re.I)
+RE_FIG_ALT = re.compile(
+    r"^ALT\s+([A-Za-z]{0,3}\.?\d+(?:\.\d+)*[A-Za-z]?)\s*\.\s*(.+)$", re.I)
 RE_LIST_ITEM = re.compile(r"^([0-9]+|[ivxlcdm]+)\.\s+(.*)$")
 
 
@@ -334,6 +348,10 @@ class Builder:
         # Papers print an endnote block per PDF page, so both the section anchor and the
         # note numbers repeat within one document.
         self._anchors = {}
+        # ALT: lines collected from the transcript, keyed by figure number. A caption names
+        # the finding; alt has to describe the picture, and only a person who has looked at
+        # the artwork can write that. Optional -- without one the caption is used.
+        self.fig_alt = {}
         # Endnote <li> collected from every "## ENDNOTES" block, emitted once at the end.
         self._endnotes = []
         self.abstract = []
@@ -552,6 +570,15 @@ class Builder:
                 i += 1
                 continue
 
+            # "ALT 2. text" -- alternative text for FIGURE 2, written above it. It has to
+            # come BEFORE the figure line, because the figure is emitted the moment that line
+            # is read. Naming the number rather than relying on position keeps a transcript
+            # readable and makes a misplaced ALT a no-op rather than a wrong description.
+            _m = RE_FIG_ALT.match(stripped)
+            if _m:
+                self.fig_alt[_m.group(1)] = _m.group(2).strip()
+                i += 1
+                continue
             m = RE_FIG_CAP.match(stripped)
             if m:
                 flush()
@@ -698,11 +725,49 @@ class Builder:
             depth -= 1
 
     def emit_table(self, rows, caption):
-        cells = [[c.strip() for c in r.strip("|").split("|")] for r in rows]
+        # A cell may CONTAIN a pipe: the MAIVE paper writes "|MAIVE| > |PET-PEESE|" for
+        # absolute values. "\|" is that pipe, and the split has to step over it, or one cell
+        # becomes five and the row no longer lines up with its header.
+        def _tick(c):
+            """A lone checkmark is a yes, and a screen reader should hear one.
+
+            The MAIVE paper's Table 1 marks seven estimators against three properties with a
+            checkmark and nothing else, so read aloud it is "Simple average, blank, blank,
+            blank". The glyph stays exactly as printed; the word is added for assistive
+            technology only, in the .vh class paper.css already carries.
+
+            "checked" rather than "yes" on purpose. It describes the MARK, which is true in
+            any table; "yes" describes an answer, and learning's Table A1 has columns headed
+            Fully, Partial and No, where a tick under the last would be read out as "No,
+            yes"."""
+            return c + '<span class="vh"> checked</span>' if c.strip() in ("\u2713", "&#10003;") else c
+
+        def _cells(r):
+            return [c.strip().replace("\x00PIPE\x00", "\\|")
+                    for c in r.replace("\\|", "\x00PIPE\x00").strip("|").split("|")]
+        cells = [_cells(r) for r in rows]
         body = [r for r in cells if not all(re.fullmatch(r":?-{2,}:?", c or "-") for c in r)]
         if not body:
             return
         header, rest = body[0], body[1:]
+        width = max(len(r) for r in body)
+        # A SECOND header row: full width, first cell empty, sitting directly under a header
+        # that is narrower than the table. Table 3 of the MAIVE paper prints "All effect
+        # sizes / PET-PEESE significant" over "Absolute / % / Absolute / %"; without this the
+        # sub-header became an ordinary data row and the group labels sat over the wrong
+        # columns.
+        header2 = None
+        if (rest and len(header) < width and len(rest[0]) == width
+                and not rest[0][0].strip()):
+            header2, rest = rest[0], rest[1:]
+        # A row with ONE cell in a wider table is a row-group header, not a one-cell row:
+        # "(a) All meta-analyses", "(b) Meta-analyses with F > 10".
+        def _span(cells, n):
+            """colspan for each cell of a short header row, spread over the real width."""
+            if len(cells) == n or len(cells) < 2:
+                return [1] * len(cells)
+            each = (n - 1) // (len(cells) - 1)
+            return [1] + [each] * (len(cells) - 1)
         self.w('<div class="table-scroll">')
         cont = bool(caption and len(caption) > 2 and caption[2])
         self.w('<table%s>' % (' class="continued"' if cont else ""))
@@ -711,11 +776,22 @@ class Builder:
             self.w("<caption><b>Table %s%s.</b> %s</caption>" % (
                 html.escape(num), " (continued)" if cont else "",
                 inline(cap, self.refs_numbered)))
-        self.w("<thead><tr>%s</tr></thead>" % "".join(
-            '<th scope="col">%s</th>' % inline(c, self.refs_numbered, in_table=True)
-            for c in header))
+        _sp = _span(header, width)
+        _thead = "<tr>%s</tr>" % "".join(
+            '<th scope="col"%s>%s</th>' % ((' colspan="%d"' % w) if w > 1 else "",
+                                           inline(c, self.refs_numbered, in_table=True))
+            for c, w in zip(header, _sp))
+        if header2:
+            _thead += "<tr>%s</tr>" % "".join(
+                '<th scope="col">%s</th>' % inline(c, self.refs_numbered, in_table=True)
+                for c in header2)
+        self.w("<thead>%s</thead>" % _thead)
         self.w("<tbody>")
         for r in rest:
+            if len(r) == 1 and width > 1:
+                self.w('<tr><th scope="rowgroup" colspan="%d">%s</th></tr>'
+                       % (width, inline(r[0], self.refs_numbered, in_table=True)))
+                continue
             tds = []
             for k, c in enumerate(r):
                 numeric = bool(re.fullmatch(r"[\s−–<>=.,%\d()+-]*", c)) and any(
@@ -725,8 +801,8 @@ class Builder:
                                % inline(c, self.refs_numbered, in_table=True))
                 else:
                     tds.append('<td%s>%s</td>' % (' class="num"' if numeric else "",
-                                                  inline(c, self.refs_numbered,
-                                                         in_table=True)))
+                                                  _tick(inline(c, self.refs_numbered,
+                                                               in_table=True))))
             self.w("<tr>%s</tr>" % "".join(tds))
         self.w("</tbody></table></div>")
 
@@ -738,11 +814,23 @@ class Builder:
                                  % (self.project, num, page_href(self.project, self.meta), src))
             self.w("<figure>")
             # The caption says what the figure shows; a placeholder alt says nothing to
-            # anyone who cannot see it.
-            alt = re.sub(r"[*`]|\$[^$]*\$", "", caption)
-            alt = re.sub(r"\s+([.,;:])", r"\1", re.sub(r"\s+", " ", alt)).strip()
-            alt = "Figure %s. %s" % (num, alt) if alt else "Figure %s" % num
-            self.w('<img src="%s" alt="%s" />' % (src, html.escape(alt[:300], quote=True)))
+            # anyone who cannot see it. An ALT: line in the transcript beats the caption,
+            # because a caption names the finding while alt has to describe the picture.
+            alt = self.fig_alt.pop(num, None)
+            if not alt:
+                alt = re.sub(r"[*`]|\$[^$]*\$", "", caption)
+                # ^{56} is a citation marker, not something to read out. It was reaching the
+                # alt text verbatim.
+                alt = re.sub(r"[\^_]\{[^}]*\}", "", alt)
+                # The NOTES belong to the visible caption, not to the alt: they explain the
+                # figure to someone who can see it. Cutting them keeps alt to the description
+                # and stops the 300-character cap landing mid-word, which it did on 96 images.
+                alt = re.split(r"\s(?:Notes?|Source):\s", alt, maxsplit=1)[0]
+                alt = re.sub(r"\s+([.,;:])", r"\1", re.sub(r"\s+", " ", alt)).strip()
+                alt = "Figure %s. %s" % (num, alt) if alt else "Figure %s" % num
+                if len(alt) > 300:                      # still long: break on a word
+                    alt = alt[:300].rsplit(" ", 1)[0].rstrip(",;:") + "..."
+            self.w('<img src="%s" alt="%s" />' % (src, html.escape(alt, quote=True)))
             self.w("<figcaption><b>Figure %s.</b> %s</figcaption>" % (
                 html.escape(num), inline(caption, self.refs_numbered)))
             self.w("</figure>")
@@ -787,7 +875,10 @@ def load_footer():
     """Take the footer from a page that already has it, so one footer exists on the site."""
     global FOOTER
     if FOOTER is None:
-        src = open(os.path.join(ROOT, "maive", "paper", "index.html")).read()
+        # NOT maive/paper: that page is now generated by this very script, so reading the
+        # footer out of it would read whatever the previous run wrote and could carry a stale
+        # footer forward silently. guidelines/guide is hand-maintained and stays put.
+        src = open(os.path.join(ROOT, "guidelines", "guide", "index.html")).read()
         m = re.search(r"<footer class=\"site-foot\">.*?</footer>", src, re.S)
         FOOTER = m.group(0)
     return FOOTER
@@ -996,6 +1087,15 @@ def build_page(project, meta, body, toc):
     if doi:
         menu.append('<li><a href="%s">%s</a></li>' % (esc_attr(doi), _doi_label(meta)))
     menu.append('<li><a href="%s">%s</a></li>' % (home, _home_label(meta, parent_label)))
+    # A registered supplement is linked FROM the paper it belongs to. The link already runs
+    # the other way, and on this paper the text sends the reader across constantly -- "In the
+    # Supplementary Information (S1, S3-S6) we report the results" -- so making them go back
+    # to the project page to find it is a detour the page can spare them.
+    if not parent_label:
+        for _slug, _doc in sorted(documents().items()):
+            if (_doc.get("parent") or "").rstrip("/") == here.rstrip("/"):
+                menu.append('<li><a href="/%s/">Supplement</a></li>'
+                            % (_doc.get("slug") or _slug).strip("/"))
     # A reader who has just finished one full text is the likeliest reader of another, and
     # from here the only way to the list of them was the home page.
     menu.append('<li><a href="/papers/">Papers in full</a></li>')
@@ -1236,8 +1336,12 @@ def pdf_path(project, meta):
 # tool that looks for a paper's page needs the same answer: tools/check_paper_pages.py had
 # its own idea and so checked neither of them, which is how /maive/paper/ pointed at a
 # deleted figure without anything noticing.
-HAND_BUILT = {"maive": "maive/paper", "guidelines": "guidelines/guide",
-              "reporting": "guidelines/reporting"}
+# maive left this table when its transcript was written: /maive/paper/ is now generated from
+# tools/transcripts/maive.md like every other paper, so check_paper_pages.py compares it
+# against maive.pdf instead of skipping it as hand-built. Its address does not change, which
+# is why it keeps an entry -- the page lives at /maive/paper/, which the convention already
+# gives it, so no slug override is needed.
+HAND_BUILT = {"guidelines": "guidelines/guide", "reporting": "guidelines/reporting"}
 
 
 def page_href(project, meta):
