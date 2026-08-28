@@ -30,7 +30,7 @@
 /* A long inline equation is the one piece of a paper that no container bounds: a
    display equation sits in .eqbody, which scrolls, but an inline one ran 833px wide
    mid-sentence and took the whole page sideways on a phone. It scrolls in place. */
-.entry math.inl{ display:inline-block; max-width:100%; overflow-x:auto;
+.entry math.inl{ display:inline-block; max-width:calc(100vw - 3rem); overflow-x:auto;
                  vertical-align:middle; }
 .entry .eqn .eqno{ flex:0 0 auto; font:400 var(--f-1)/1.6 var(--sans); color:var(--ink-soft); }
 .entry math{ font-size:1.05em; }

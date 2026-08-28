@@ -337,9 +337,16 @@ def build_jsonld(m):
                       or "https://creativecommons.org/licenses/by/4.0/"}
     if authors:
         art["author"] = authors
+    _tr_year = (m.get("technical_report") or {}).get("year")
     if m["year"]:
-        art["datePublished"] = str(m["year"])
-    if m["journal"]:
+        # The citation year is the article's, by the owner's choice. The date on THIS
+        # document is the working paper's own: ECB 1485 is October 2012.
+        art["datePublished"] = str(_tr_year or m["year"])
+    # Same rule as the Highwire tags above: a page serving the working paper must not
+    # be modelled as the journal article. JSON-LD is the format crawlers prefer, so
+    # gating only the meta tags left the claim standing where it counts most.
+    _wp = (m.get("version") or "record").lower() == "working_paper"
+    if m["journal"] and not _wp:
         part = {"@type": "Periodical", "name": m["journal"]}
         if vip.get("vol"):
             part = {"@type": "PublicationVolume", "volumeNumber": vip["vol"], "isPartOf": part}
@@ -353,8 +360,13 @@ def build_jsonld(m):
     if m["doi_or_publisher_url"]:
         art["sameAs"] = m["doi_or_publisher_url"]
         doi = extract_doi(m["doi_or_publisher_url"])
-        if doi:
+        # sameAs is "another URL for this thing"; identifier says it IS that DOI.
+        # For a working paper the DOI belongs to the article it became, not to it.
+        if doi and not _wp:
             art["identifier"] = {"@type": "PropertyValue", "propertyID": "DOI", "value": doi}
+        if _wp:
+            del art["sameAs"]
+            art["isBasedOn"] = m["doi_or_publisher_url"]
     if m.get("license"):
         art["license"] = m["license"]
     if m["meta_keywords"]:
@@ -456,7 +468,8 @@ def highwire_tags(m):
     tags = [f'<meta name="citation_title" content="{esc(m.get("citation_title") or m["title"])}" />']
     for a in m["authors"]:
         tags.append(f'<meta name="citation_author" content="{esc(a)}" />')
-    tags.append(f'<meta name="citation_publication_date" content="{m["year"]}" />')
+    tags.append('<meta name="citation_publication_date" content="%s" />'
+                % ((m.get("technical_report") or {}).get("year") or m["year"]))
     vip = parse_ref(m["reference_line"])
     # Only when THIS page serves the article. crisis_ews serves ECB Working Paper 1485
     # under its own title while citing the Journal of Financial Stability article the

@@ -277,4 +277,6 @@ main { padding: 2.75rem 0 4rem; }
 
 /* Reference lists carry bare URLs with no spaces in them. One of them was wider than
    a phone screen and scrolled the whole page sideways. */
-.prose p, .prose li{ overflow-wrap:anywhere; }
+.prose p, .prose li,
+.provenance p,          /* the source line carries a bare URL */
+.posts p, .post p{ overflow-wrap:anywhere; }

@@ -758,25 +758,33 @@ def build_page(project, meta, body, toc):
         }]
     }
     art = ld["@graph"][0]
+    # Computed here rather than beside the citation tags below: the JSON-LD needs it
+    # first, and it was the JSON-LD that kept marrying the working paper to the
+    # article's DOI after the meta tags stopped.
+    _wp = (meta.get("version") or "record").lower() == "working_paper"
     if abstract:
         art["abstract"] = abstract
+    _tr_year = (meta.get("technical_report") or {}).get("year")
     if year:
-        art["datePublished"] = str(year)
-    if journal:
+        art["datePublished"] = str(_tr_year or year)
+    if journal and not _wp:
         art["isPartOf"] = {"@type": "Periodical", "name": journal}
     if doi.startswith("https://doi.org/"):
-        art["sameAs"] = doi
-        art["identifier"] = {"@type": "PropertyValue", "propertyID": "DOI",
-                             "value": doi.replace("https://doi.org/", "")}
+        if _wp:
+            art["isBasedOn"] = doi
+        else:
+            art["sameAs"] = doi
+            art["identifier"] = {"@type": "PropertyValue", "propertyID": "DOI",
+                                 "value": doi.replace("https://doi.org/", "")}
 
     cite_meta = ['<meta name="citation_title" content="%s" />' % esc_attr(title)]
     cite_meta += ['<meta name="citation_author" content="%s" />' % esc_attr(a) for a in authors]
     if year:
-        cite_meta.append('<meta name="citation_publication_date" content="%s" />' % year)
+        cite_meta.append('<meta name="citation_publication_date" content="%s" />'
+                         % (_tr_year or year))
     # Same gate as generate_seo: a page serving the working paper must not be tagged
     # as the journal article whose citation it carries, or Scholar reads two
     # differently titled documents as one record at one DOI.
-    _wp = (meta.get("version") or "record").lower() == "working_paper"
     if _wp and meta.get("technical_report"):
         _tr = meta["technical_report"]
         cite_meta.append('<meta name="citation_technical_report_institution" content="%s" />'
