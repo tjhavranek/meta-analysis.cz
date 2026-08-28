@@ -16780,7 +16780,7 @@ Yamarik, S., & Ghosh, S. (2005). A sensitivity analysis of the gravity model. *T
 
 ## A Meta-Analysis of the Excess Sensitivity of Consumption to Anticipated Income Changes
 URL: https://meta-analysis.cz/excess_sensitivity/
-Citation: Tomas Havranek & Anna Sokolova (2020), "Do Consumers Really Follow a Rule of Thumb? Three Thousand Estimates from 144 Studies Say `Probably Not'." Review of Economic Dynamics 35, 97-122.
+Citation: Tomas Havranek & Anna Sokolova (2020), "Do Consumers Really Follow a Rule of Thumb? Three Thousand Estimates from 144 Studies Say ‘Probably Not’." Review of Economic Dynamics 35, 97-122.
 Published version: https://doi.org/10.1016/j.red.2019.05.004
 Paper: https://meta-analysis.cz/excess_sensitivity/excess_sensitivity_2.pdf
 Additional Results: https://meta-analysis.cz/excess_sensitivity/appendix.pdf
