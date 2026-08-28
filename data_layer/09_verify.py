@@ -1,4 +1,5 @@
 """Verification gate. Must print ALL CHECKS PASS before anything is published."""
+import html as html_mod
 import json, os, re, sys, warnings; warnings.filterwarnings("ignore")
 import numpy as np, pandas as pd
 import os, sys
@@ -41,6 +42,71 @@ for d in idx["datasets"]:
         fail.append(f"{d['id']}: source_file 404s ({rel})")
     if d.get("source_member") and not rel.lower().endswith(".zip"):
         fail.append(f"{d['id']}: source_member set but source_file is not a zip ({rel})")
+
+# 1c. every paper URL the catalogue advertises is a page that exists, and its page_title is
+# that page's actual <title>. The HTML gates check the HTML; nothing checked the machine layer,
+# and three defects lived there at once: excluded_resources pointed at /ews/, a directory with
+# no index.html, so the catalogue's only dead link was the one handle that record had; and
+# spillovers_bias carried a page_title no page on the site uses. A consumer keying either
+# field against the site fails silently.
+_TITLE_RE = re.compile(r"<title>(.*?)</title>", re.S | re.I)
+for d in idx["datasets"] + idx.get("excluded_resources", []):
+    pap = d.get("paper") or {}
+    u = pap.get("url")
+    if not u:
+        continue
+    if not u.startswith(BASE + "/"):
+        fail.append(f"{d['id']}: paper.url is not on this site ({u})")
+        continue
+    page = os.path.join(SITE, u[len(BASE) + 1:].replace("/", os.sep), "index.html")
+    if not os.path.isfile(page):
+        fail.append(f"{d['id']}: paper.url has no page ({u})")
+        continue
+    if pap.get("page_title"):
+        m = _TITLE_RE.search(open(page, encoding="utf-8", errors="replace").read())
+        got = html_mod.unescape(re.sub(r"\s+", " ", m.group(1)).strip()) if m else None
+        if got and got != pap["page_title"]:
+            fail.append("%s: page_title is not the page's <title>\n"
+                        "        record: %s\n        page:   %s" % (d["id"], pap["page_title"], got))
+
+# 1d. one DOI, one title. The pages emit citation_title and api/v1/papers.json carries its own,
+# and they were allowed to disagree on the two flagship papers, so a crawler got two title
+# strings for one DOI -- the defect 517a121 set out to close, still open one layer down.
+_pj = os.path.join(OUT, "api", DV, "papers.json")
+if os.path.isfile(_pj):
+    _pp = json.load(open(_pj, encoding="utf-8"))
+    _pp = _pp.get("papers", _pp) if isinstance(_pp, dict) else _pp
+    # Two records may share a DOI on purpose, and then they are not two titles for one
+    # document. A SUPPLEMENT is cited by the article it belongs to, so it carries that
+    # article's DOI and its own name. A WORKING PAPER entry cites the article it became --
+    # crisis_ews and crisis_jfs both carry the JFS DOI, on the owner's instruction to keep
+    # both pages -- and names its own, earlier title, with a version_note saying which is
+    # which. Neither is the defect this looks for: one PUBLISHED record, two title strings.
+    _by_doi = {}
+    for r in _pp:
+        if not (r.get("doi") and r.get("title")):
+            continue
+        if (r.get("document_type") not in (None, "paper")
+                or r.get("parent") or r.get("parent_label")
+                or r.get("version") == "working_paper"):
+            continue
+        _by_doi.setdefault(r["doi"], set()).add(r["title"])
+    for _d, _ts in _by_doi.items():
+        if len(_ts) > 1:
+            fail.append("two titles for one DOI in papers.json (%s): %s" % (_d, " | ".join(sorted(_ts))))
+    for r in _pp:
+        _page = r.get("full_text_url") or ""
+        if not (r.get("doi") and _page.startswith(BASE + "/")):
+            continue
+        _f = os.path.join(SITE, _page[len(BASE) + 1:].replace("/", os.sep), "index.html")
+        if not os.path.isfile(_f):
+            continue
+        _m = re.search(r'name="citation_title" content="([^"]*)"',
+                       open(_f, encoding="utf-8", errors="replace").read())
+        if _m and html_mod.unescape(_m.group(1)) != r["title"]:
+            fail.append("%s: papers.json title and the page's citation_title differ\n"
+                        "        api:  %s\n        page: %s"
+                        % (r.get("project"), r["title"], html_mod.unescape(_m.group(1))))
 
 # 2. no index.html anywhere under api/ or data/  (generate_seo.py would ingest it as a paper)
 for root in ("api","data"):
@@ -107,8 +173,9 @@ for ds,g in H.groupby("dataset"):
                         f"— source coding error, must be documented")
     n=g["n_obs"].dropna()
     if len(n) and (n<=1).any():
-        warn.append(f"{ds}: {int((n<=1).sum())} rows with n_obs <= 1 — not a plausible sample size; "
-                    f"n_obs may be mis-mapped or carry a missing-value code")
+        warn.append(f"{ds}: {int((n<=1).sum())} rows with n_obs <= 1 — not a plausible sample "
+                    f"size on its face; check this dataset's sample_size_note and direction_note "
+                    f"in datasets.json, which say what the column is, before assuming a defect")
 
 # 4d. A direction_note that contradicts the data it describes. The `size` note claimed
 # positive meant the premium while 76% of its effects are negative, and the note on the
