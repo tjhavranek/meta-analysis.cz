@@ -18,9 +18,33 @@ import sys
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 sys.path.insert(0, os.path.join(ROOT, "tools"))
 
-from build_paper_page import article_title, documents, page_href   # noqa: E402
+from build_paper_page import article_title, documents, page_href, venue_line  # noqa: E402
 
 PAPERS = {p["project"]: p for p in json.load(open(os.path.join(ROOT, "tools", "papers.json")))}
+
+
+def _published_in():
+    """Volume, issue and pages for each paper, by DOI, out of the publication lists.
+
+    papers.json says which journal a paper is in and not where in it. That is enough for a
+    row that reads "Journal, 2026" -- until the row also has to say the text on the page is
+    the author's manuscript, at which point a journal and a bare year look like a paper that
+    has been accepted and not yet appeared. Volume and pages are what say otherwise, and
+    publications.json already has them for every article that has any: the six it does not
+    cover are the four still forthcoming and the two without a DOI to match on, which have
+    no volume to print. Matched on DOI rather than on title, because a title is written twice
+    and a DOI once."""
+    out = {}
+    path = os.path.join(ROOT, "tools", "publications.json")
+    for records in json.load(open(path, encoding="utf-8")).values():
+        for r in records:
+            doi = (r.get("doi") or "").strip().lower()
+            if doi and (r.get("volume") or r.get("page") or r.get("article_number")):
+                out.setdefault(doi, r)
+    return out
+
+
+PUBLISHED_IN = _published_in()
 
 # The two pages built by hand before the toolchain existed live at their own addresses.
 # One definition, in build_paper_page.py, so this index and the checker agree with it.
@@ -70,12 +94,22 @@ def entry(year, title, project, href, meta):
         who = ", ".join(authors[:-1]) + (" and " if len(authors) > 1 else "") + authors[-1] \
             if authors else ""
     journal = meta.get("journal") or ""
+    if journal:
+        _m = re.search(r"10\.\d{4,9}/\S+", (meta.get("doi_or_publisher_url") or "").lower())
+        _r = PUBLISHED_IN.get(_m.group(0)) if _m else None
+        journal = venue_line(journal, _r.get("volume"), _r.get("issue"),
+                             _r.get("page"), _r.get("article_number")) if _r else journal
     where = "<i>%s</i>" % html.escape(journal) if journal else "working paper"
     # Say which version the reader will get. Without this every row looks like a version
     # of record, and two rows can carry the same journal and year: the JFS article and the
     # ECB working paper behind it are separate texts, both listed, and the citation on both
     # is the JFS one, so the journal line alone cannot tell them apart.
-    VERSION_LABEL = {"accepted_manuscript": "accepted manuscript",
+    # "accepted manuscript" is the right name for the text and the wrong label for this
+    # column: next to a journal and a year it reads as the article's STATUS -- accepted,
+    # not yet out -- which is how the Nature reproduction came to look unpublished on a
+    # row whose whole point was that it is published. The other two labels cannot be read
+    # that way. This one names the text instead of the stage it was accepted at.
+    VERSION_LABEL = {"accepted_manuscript": "author's manuscript",
                      "working_paper": "working paper",
                      "corrected_manuscript": "corrected manuscript"}
     _label = VERSION_LABEL.get(meta.get("version") or "")

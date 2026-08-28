@@ -1371,6 +1371,27 @@ def author_line(names, cap=AUTHOR_CAP, trigger=None):
     return ", ".join(names[:cap]) + ", and %d others" % (len(names) - cap)
 
 
+def venue_line(venue, volume=None, issue=None, page=None, article_number=None):
+    """"Journal 45(3), 135-155": where an article appeared, as a reference list writes it.
+
+    The volume carries the issue in parentheses. Nature Communications and its kind number
+    articles rather than pages and cite as "16, 8454", so an article number takes the page
+    slot. Defined here because two pages print this and they must agree: /publications/ had
+    it and /papers/ did not, which left the Nature reproduction reading as a journal and a
+    year next to the words "accepted manuscript" -- published work that looked forthcoming.
+    """
+    out = venue or ""
+    if volume:
+        out += " %s" % volume
+        if issue:
+            out += "(%s)" % issue
+    if page:
+        out += ", %s" % page
+    elif article_number:
+        out += ", %s" % article_number
+    return out
+
+
 def page_href(project, meta):
     """Where this page lives on the site.
 
