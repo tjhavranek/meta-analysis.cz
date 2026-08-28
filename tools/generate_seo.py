@@ -440,7 +440,12 @@ def build_jsonld(m):
         # 190-character sentence in as a variable name, in the field Google Dataset Search
         # reads to learn what the file measures.
         _cc = (_DATASETS.get(proj) or {}).get("core_columns") or {}
-        _COLS = ("effect", "standard_error")
+        # sample_size joins the two: it is a real column name, not prose, and it is the
+        # third column MAIVE needs -- the site's own how-to says so. Naming only two here
+        # while datasets.json named three meant the field Google Dataset Search reads
+        # under-described every file. The prose keys stay out by the same whitelist:
+        # `standard_error_note` and `sample_size_note` are sentences ABOUT the mapping.
+        _COLS = ("effect", "standard_error", "sample_size")
         _vm = [{"@type": "PropertyValue", "name": _cc[k], "description": k.replace("_", " ")}
                for k in _COLS if _cc.get(k)]
         if _vm:
