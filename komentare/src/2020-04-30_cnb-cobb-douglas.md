@@ -1,7 +1,7 @@
 ---
 category: "celostatni"
 media: "text"
-outlet: "ČNB cnBlog"
+outlet: "čnBlog"
 url: "https://www.cnb.cz/cs/o_cnb/cnblog/Konec-Cobbovy-Douglasovy-produkcni-funkce"
 date: "2020-04-30"
 headline: "Konec Cobbovy-Douglasovy produkční funkce?"

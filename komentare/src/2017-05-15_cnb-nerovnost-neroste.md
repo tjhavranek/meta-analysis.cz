@@ -1,7 +1,7 @@
 ---
 category: "celostatni"
 media: "text"
-outlet: "ČNB cnBlog"
+outlet: "čnBlog"
 url: "https://www.cnb.cz/cs/o_cnb/cnblog/Nerovnost-neroste"
 date: "2017-05-15"
 headline: "Nerovnost neroste"

@@ -867,7 +867,7 @@ def write_item(a):
         # institutional_record. `released:` carries the actual release date.
         if a.get("genre") == "advisor_opinion" and a.get("released"):
             prov = ((f'Written {cs_date(a["date"], a.get("date_precision"), lang)} as an opinion for the CNB Bank Board and carrying six years of restricted access; the CNB released it {cs_date(a["released"], None, lang)}. ' if en else
-                     f'Napsáno {cs_date(a["date"], a.get("date_precision"), lang)} jako stanovisko pro bankovní radu ČNB, s šestiletou lhůtou omezeného přístupu; ČNB dokument zveřejnila {cs_date(a["released"], None, lang)}. '))
+                     f'Napsáno {cs_date(a["date"], a.get("date_precision"), lang)} jako stanovisko pro bankovní radu ČNB, se šestiletou lhůtou omezeného přístupu; ČNB dokument zveřejnila {cs_date(a["released"], None, lang)}. '))
         else:
           prov = ((f'First published in {esc(a["outlet"])}, ' if en
                    else f'Poprvé vyšlo {where}{sep}')

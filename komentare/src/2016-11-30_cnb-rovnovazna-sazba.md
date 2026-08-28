@@ -1,7 +1,7 @@
 ---
 category: "celostatni"
 media: "text"
-outlet: "ČNB cnBlog"
+outlet: "čnBlog"
 url: "https://www.cnb.cz/cs/o_cnb/cnblog/Proc-nizke-urokove-miry-nevedou-nutne-k-prehrivani-ekonomiky-role-rovnovazne-sazby-v-menove-politice"
 date: "2016-11-30"
 headline: "Proč nízké úrokové míry nevedou nutně k přehřívání ekonomiky"

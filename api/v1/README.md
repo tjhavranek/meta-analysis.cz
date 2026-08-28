@@ -244,7 +244,8 @@ the columns harmonised by definition and arithmetic, not merely by name.
 paper's own coding, and the papers did not agree:
 
 - most literatures carry a raw count (`size` reaches 15,628);
-- nine carry a log, with maxima between 4 and 10;
+- eight carry a log, with maxima between 4 and 10 (`students` falls in that band too,
+  but it is the standardised regressor below, not a log);
 - `students` carries a standardised regressor, which is why 26 of its values are negative.
 
 Nothing in the harmonisation reconciles these, and the column name does not distinguish

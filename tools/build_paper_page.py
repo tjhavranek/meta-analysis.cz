@@ -86,7 +86,13 @@ def inline(text, refs_are_numbered=False, link_cites=True, in_table=False):
         parked.append(fragment)
         return _PLACEHOLDER.format(len(parked) - 1)
 
+    # A literal dollar sign in prose pairs with the next one and swallows everything
+    # between: education has "$100 tuition increase ... at -0.7 per $100" and 44 words
+    # of its literature review became one MathML blob with the spaces stripped out.
+    # "\\$" is a literal dollar and never opens math.
+    text = text.replace("\\$", "\x00USD\x00")
     text = re.sub(r"\$([^$]+)\$", lambda m: park(_mathml(m.group(1))), text)
+    text = text.replace("\x00USD\x00", "$")
     text = html.escape(text, quote=False)
 
     # citation markers: ^{4} or ^{4,5} or ^{i}

@@ -1,7 +1,7 @@
 ---
 category: "celostatni"
 media: "text"
-outlet: "ČNB cnBlog"
+outlet: "čnBlog"
 url: "https://www.cnb.cz/cs/o_cnb/cnblog/Kurzovy-zavazek-a-past-stredniho-prijmu"
 date: "2016-12-12"
 headline: "Kurzový závazek a past středního příjmu"
