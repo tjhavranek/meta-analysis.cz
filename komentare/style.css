@@ -274,3 +274,7 @@ main { padding: 2.75rem 0 4rem; }
 .about-links .who::after { content: ""; }
 .latest-post { margin: 0.5rem 0 0; font-size: 0.92rem; color: var(--muted);
                max-width: var(--measure); }
+
+/* Reference lists carry bare URLs with no spaces in them. One of them was wider than
+   a phone screen and scrolled the whole page sideways. */
+.prose p, .prose li{ overflow-wrap:anywhere; }

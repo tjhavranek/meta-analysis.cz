@@ -81,7 +81,7 @@
   <url><loc>https://meta-analysis.cz/debate/paper/</loc><lastmod>2026-08-27</lastmod></url>
   <url><loc>https://meta-analysis.cz/discrate/paper/</loc><lastmod>2026-08-27</lastmod></url>
   <url><loc>https://meta-analysis.cz/dst/paper/</loc><lastmod>2026-08-27</lastmod></url>
-  <url><loc>https://meta-analysis.cz/dst_slovakia/paper/</loc><lastmod>2026-08-27</lastmod></url>
+  <url><loc>https://meta-analysis.cz/dst_slovakia/paper/</loc><lastmod>2026-08-28</lastmod></url>
   <url><loc>https://meta-analysis.cz/education/paper/</loc><lastmod>2026-08-27</lastmod></url>
   <url><loc>https://meta-analysis.cz/eis/paper/</loc><lastmod>2026-08-27</lastmod></url>
   <url><loc>https://meta-analysis.cz/elb/paper/</loc><lastmod>2026-08-27</lastmod></url>
@@ -274,7 +274,7 @@
   <url><loc>https://meta-analysis.cz/water/water2.pdf</loc><lastmod>2026-06-25</lastmod></url>
   <url><loc>https://meta-analysis.cz/about/</loc><lastmod>2026-08-27</lastmod></url>
   <url><loc>https://meta-analysis.cz/datasets/</loc><lastmod>2026-08-27</lastmod></url>
-  <url><loc>https://meta-analysis.cz/komentare/</loc><lastmod>2026-08-27</lastmod></url>
+  <url><loc>https://meta-analysis.cz/komentare/</loc><lastmod>2026-08-28</lastmod></url>
   <url><loc>https://meta-analysis.cz/komentare/babis-stamiliardy-cnb-nezavislost/</loc><lastmod>2026-08-25</lastmod></url>
   <url><loc>https://meta-analysis.cz/komentare/celostatni/</loc><lastmod>2026-08-27</lastmod></url>
   <url><loc>https://meta-analysis.cz/komentare/cesko-skvela-teorie-slaba-praxe/</loc><lastmod>2026-08-25</lastmod></url>
@@ -308,7 +308,7 @@
   <url><loc>https://meta-analysis.cz/komentare/e15-vyssi-sazby/</loc><lastmod>2026-08-25</lastmod></url>
   <url><loc>https://meta-analysis.cz/komentare/e15-zvysovani-uroku/</loc><lastmod>2026-08-25</lastmod></url>
   <url><loc>https://meta-analysis.cz/komentare/ekonomie-co-cist-a-sledovat/</loc><lastmod>2026-08-25</lastmod></url>
-  <url><loc>https://meta-analysis.cz/komentare/english/</loc><lastmod>2026-08-27</lastmod></url>
+  <url><loc>https://meta-analysis.cz/komentare/english/</loc><lastmod>2026-08-28</lastmod></url>
   <url><loc>https://meta-analysis.cz/komentare/era-levnych-penez-roky-setreni/</loc><lastmod>2026-08-25</lastmod></url>
   <url><loc>https://meta-analysis.cz/komentare/forbes-next-kryptomeny-baterie/</loc><lastmod>2026-08-25</lastmod></url>
   <url><loc>https://meta-analysis.cz/komentare/gacr-akcie-vychazeji-nejlepe/</loc><lastmod>2026-08-25</lastmod></url>
@@ -528,14 +528,14 @@
   <url><loc>https://meta-analysis.cz/search/</loc><lastmod>2026-08-27</lastmod></url>
   <url><loc>https://meta-analysis.cz/api/v1/datasets.json</loc><lastmod>2026-08-27</lastmod></url>
   <url><loc>https://meta-analysis.cz/api/v1/papers.json</loc><lastmod>2026-08-27</lastmod></url>
-  <url><loc>https://meta-analysis.cz/api/v1/search-index.json</loc><lastmod>2026-08-27</lastmod></url>
+  <url><loc>https://meta-analysis.cz/api/v1/search-index.json</loc><lastmod>2026-08-28</lastmod></url>
   <url><loc>https://meta-analysis.cz/api/v1/datapackage.json</loc><lastmod>2026-08-21</lastmod></url>
   <url><loc>https://meta-analysis.cz/api/v1/croissant.json</loc><lastmod>2026-08-25</lastmod></url>
   <url><loc>https://meta-analysis.cz/data/v1/estimates_harmonised.csv</loc><lastmod>2026-08-21</lastmod></url>
   <url><loc>https://meta-analysis.cz/data/v1/estimates_harmonised.parquet</loc><lastmod>2026-08-21</lastmod></url>
   <url><loc>https://meta-analysis.cz/estimates.csv</loc><lastmod>2026-08-27</lastmod></url>
   <url><loc>https://meta-analysis.cz/llms.txt</loc><lastmod>2026-08-27</lastmod></url>
-  <url><loc>https://meta-analysis.cz/llms-full.txt</loc><lastmod>2026-08-27</lastmod></url>
+  <url><loc>https://meta-analysis.cz/llms-full.txt</loc><lastmod>2026-08-28</lastmod></url>
   <url><loc>https://meta-analysis.cz/api/v1/codebooks/activism.json</loc><lastmod>2026-08-03</lastmod></url>
   <url><loc>https://meta-analysis.cz/api/v1/codebooks/alphas.json</loc><lastmod>2026-08-03</lastmod></url>
   <url><loc>https://meta-analysis.cz/api/v1/codebooks/armington.json</loc><lastmod>2026-08-03</lastmod></url>

@@ -34,18 +34,19 @@
   "self_published": "posted by the author, with no outlet editing it",
   "unpublished": "never printed anywhere, so no editor and no publication date",
   "correspondence": "sent to named recipients rather than published; no editor stood between the author and the reader",
+  "archive_translation": "an English translation of a Czech document, made for this archive and published by it; the original and its own provenance are linked from the record",
   "institutional_record": "written inside an institution as an internal document and released later by that institution as a record of its own proceedings; no outlet editor stood between the author and the reader, and the publication date is the institution's release, not the writing"
  },
  "files": {
   "corpus.jsonl": {
    "url": "https://meta-analysis.cz/komentare/corpus.jsonl",
-   "bytes": 1613350,
-   "sha256": "fa68f63185ff2c585ac7c95b6605dc41b6f072a79955d4bd7d55615595f9fb86"
+   "bytes": 1613346,
+   "sha256": "79c00227a04e169cda1c2f6040023cf4c7fc7c1b535a5cef8e61eed273d7a8e7"
   },
   "index.json": {
    "url": "https://meta-analysis.cz/komentare/index.json",
-   "bytes": 1632990,
-   "sha256": "a470da7aaaaa6e160dbb5c790eea5cc9616416dc1b55317162e69f2e99d01c58"
+   "bytes": 1632986,
+   "sha256": "31642e97ea570c6189a91546252865ad9d1ff9171a1d3bed7a4bd9103b642587"
   },
   "all.md": {
    "url": "https://meta-analysis.cz/komentare/all.md",

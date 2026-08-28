@@ -1057,7 +1057,12 @@ def write_index(items, key=None):
              # on `date` and released by the CNB years later, so this node has to split
              # the two exactly as the item page does: the listing used to assert
              # datePublished = the writing day on the very @id whose page says otherwise.
-             **({"dateCreated": a["date"], "datePublished": a["released"]}
+             # A translation is its own work, published here, not by the institution
+             # that released the original. Without this branch the listing asserted
+             # the CNB's Czech release date on the very @id whose page says 2026.
+             **({"dateCreated": a["translated"], "datePublished": a["translated"]}
+                if (a.get("translated") and BY_SLUG.get(a.get("translation") or ""))
+                else {"dateCreated": a["date"], "datePublished": a["released"]}
                 if (not (a.get("unpublished") or a.get("genre") == "correspondence")
                     and a.get("genre") == "advisor_opinion" and a.get("released"))
                 else {("dateCreated"
@@ -1353,8 +1358,13 @@ def write_machine_readable(items, social=()):
         # internal Bank Board documents and the ČNB released them verbatim, years
         # later, as a record of its own proceedings. None of the other three values
         # fits either — the author did not post them, and they were published.
+        # A translation made for this archive is not the institution's own record:
+        # the CNB released the Czech document, and never this English text.
         d["provenance"] = ("correspondence" if a.get("genre") == "correspondence" else
                            "unpublished" if a.get("unpublished") else
+                           "archive_translation"
+                           if (a.get("translated")
+                               and BY_SLUG.get(a.get("translation") or "")) else
                            "institutional_record"
                            if a.get("genre") == "advisor_opinion" else
                            "self_published"
@@ -1522,6 +1532,9 @@ def write_machine_readable(items, social=()):
             "unpublished": "never printed anywhere, so no editor and no publication date",
             "correspondence": "sent to named recipients rather than published; no editor "
                          "stood between the author and the reader",
+            "archive_translation": "an English translation of a Czech document, made "
+                         "for this archive and published by it; the original and its "
+                         "own provenance are linked from the record",
             "institutional_record": "written inside an institution as an internal "
                          "document and released later by that institution as a record of "
                          "its own proceedings; no outlet editor stood between the author "

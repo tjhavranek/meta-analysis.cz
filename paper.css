@@ -27,6 +27,11 @@
    its own box rather than widening the page. */
 .entry .eqn{ display:flex; align-items:center; gap:var(--s4); margin:var(--s5) 0; }
 .entry .eqn .eqbody{ flex:1 1 auto; min-width:0; overflow-x:auto; padding:var(--s1) 0; }
+/* A long inline equation is the one piece of a paper that no container bounds: a
+   display equation sits in .eqbody, which scrolls, but an inline one ran 833px wide
+   mid-sentence and took the whole page sideways on a phone. It scrolls in place. */
+.entry math.inl{ display:inline-block; max-width:100%; overflow-x:auto;
+                 vertical-align:middle; }
 .entry .eqn .eqno{ flex:0 0 auto; font:400 var(--f-1)/1.6 var(--sans); color:var(--ink-soft); }
 .entry math{ font-size:1.05em; }
 .entry math.inl{ font-size:1em; }
