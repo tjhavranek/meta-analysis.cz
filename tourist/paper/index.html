@@ -1,0 +1,603 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Forecasting Tourist Arrivals: Google Trends Meets Mixed Frequency Data (full text)</title>
+<meta name="description" content="The full text of Tomas Havranek, Ayaz Zeynalov (2021), &quot;Forecasting tourist arrivals: Google Trends meets mixed-frequency data.&quot; Tourism Economics 27(1): 129-148. doi.org/10.1177/1354816619879584" />
+<link href="/style.css" rel="stylesheet" type="text/css" />
+<link href="/paper.css" rel="stylesheet" type="text/css" />
+<link rel="canonical" href="https://meta-analysis.cz/tourist/paper/" />
+<meta name="citation_title" content="Forecasting Tourist Arrivals: Google Trends Meets Mixed Frequency Data" />
+<meta name="citation_author" content="Tomas Havranek" />
+<meta name="citation_author" content="Ayaz Zeynalov" />
+<meta name="citation_publication_date" content="2018" />
+<meta name="citation_technical_report_institution" content="Munich Personal RePEc Archive" />
+<meta name="citation_technical_report_number" content="90205" />
+<meta name="citation_pdf_url" content="https://meta-analysis.cz/tourist/tourist.pdf" />
+<meta property="og:site_name" content="meta-analysis.cz" />
+<meta property="og:type" content="article" />
+<meta property="og:title" content="Forecasting Tourist Arrivals: Google Trends Meets Mixed Frequency Data (full text)" />
+<meta property="og:description" content="The full text of Tomas Havranek, Ayaz Zeynalov (2021), &quot;Forecasting tourist arrivals: Google Trends meets mixed-frequency data.&quot; Tourism Economics 27(1): 129-148. doi.org/10.1177/1354816619879584" />
+<meta property="og:url" content="https://meta-analysis.cz/tourist/paper/" />
+<script type="application/ld+json">
+{
+ "@context": "https://schema.org",
+ "@graph": [
+  {
+   "@type": "ScholarlyArticle",
+   "@id": "https://meta-analysis.cz/tourist/paper/#article",
+   "mainEntityOfPage": "https://meta-analysis.cz/tourist/paper/",
+   "url": "https://meta-analysis.cz/tourist/paper/",
+   "headline": "Forecasting Tourist Arrivals: Google Trends Meets Mixed Frequency Data",
+   "name": "Forecasting Tourist Arrivals: Google Trends Meets Mixed Frequency Data",
+   "inLanguage": "en",
+   "license": "https://creativecommons.org/licenses/by/4.0/",
+   "isAccessibleForFree": true,
+   "author": [
+    {
+     "@type": "Person",
+     "@id": "https://meta-analysis.cz/#th",
+     "name": "Tomas Havranek",
+     "sameAs": "https://orcid.org/0000-0002-3158-2539"
+    },
+    {
+     "@type": "Person",
+     "name": "Ayaz Zeynalov"
+    }
+   ],
+   "isPartOf": {
+    "@id": "https://meta-analysis.cz/#website"
+   },
+   "abstract": "In this paper, we examine the usefulness of Google Trends data in predicting monthly tourist arrivals and overnight stays in Prague during the period between January 2010 and December 2016. We offer two contributions. First, we analyze whether Google Trends provides significant forecasting improvements over models without search data. Second, we assess whether a high-frequency variable (weekly Google Trends) is more useful for accurate forecasting than a low-frequency variable (monthly tourist arrivals) using Mixed-data sampling (MIDAS). Our results stress the potential of Google Trends to offer more accurate prediction in the context of tourism: we find that Google Trends information, both two months and one week ahead of arrivals, is useful for predicting the actual number of tourist arrivals. The MIDAS forecasting model that employs weekly Google Trends data outperforms models using monthly Google Trends data and models without Google Trends data.",
+   "datePublished": "2018",
+   "isBasedOn": "https://doi.org/10.1177/1354816619879584"
+  }
+ ]
+}
+</script>
+</head>
+<body>
+<div id="wrapper">
+<!-- start header -->
+<div id="logo">
+	<a class="masthead-home" href="/">meta-analysis.cz</a>
+	<p class="site-name"><a href="/tourist/">Forecasting Tourist Arrivals with Google Trends</a></p>
+	<h2> <span class="mk">&raquo;</span>&nbsp;&nbsp;&nbsp; the full text</h2>
+</div>
+<div id="header">
+	<div id="menu">
+		<ul>
+			<li class="current_page_item"><a href="/tourist/paper/">Full text</a></li>
+			<li><a href="/tourist/tourist.pdf">Paper (PDF)</a></li>
+			<li><a href="https://doi.org/10.1177/1354816619879584">Published version</a></li>
+			<li><a href="/tourist/">Data and code</a></li>
+			<li><a href="/papers/">Papers in full</a></li>
+			<li><a href="/">All meta-analyses</a></li>
+			<li><a href="/search/">Search</a></li>
+		</ul>
+	</div>
+</div>
+<!-- end header -->
+</div>
+<!-- start page -->
+<div id="page">
+	<div id="content">
+		<div class="post">
+			<div class="entry">
+
+<h1 class="paper-title">Forecasting Tourist Arrivals: Google Trends Meets Mixed Frequency Data</h1>
+<p class="byline">Tomas Havranek and Ayaz Zeynalov</p>
+
+<div class="attribution">
+<p>Tomas Havranek, Ayaz Zeynalov (2021), "Forecasting tourist arrivals: Google Trends meets mixed-frequency data." Tourism Economics 27(1): 129-148. doi.org/<a href="https://doi.org/10.1177/1354816619879584">10.1177/1354816619879584</a> The text here is the working paper. It is the working paper of November 2018, the fullest version of this article that is openly available; the version of record is behind the publisher's paywall. Its abstract and the published one differ only in copy-editing, and the working paper prints the title in title case.</p>
+<p class="attr-links"><a href="/tourist/tourist.pdf">Paper (PDF)</a> &nbsp;&middot;&nbsp; <a href="https://doi.org/10.1177/1354816619879584">Published version</a> &nbsp;&middot;&nbsp; <a href="/tourist/">Data and code</a></p>
+</div>
+
+<nav class="toc" aria-label="Contents"><h2>Contents</h2><ol><li><a href="#sec-1">1. Introduction</a></li><li><a href="#sec-2">2. Literature Review</a></li><li><a href="#sec-3">3. Methodology and Data</a><ol><li><a href="#sec-3-1">3.1. Methodology</a></li><li><a href="#sec-3-2">3.2. Data and descriptive statistics</a></li></ol></li><li><a href="#sec-4">4. Results</a></li><li><a href="#sec-5">5. Concluding Remarks</a></li><li><a href="#sec-appendix">Appendix</a></li><li><a href="#sec-references">REFERENCES</a></li><li><a href="#sec-endnotes">ENDNOTES</a></li></ol></nav>
+
+<div class="frontmatter">
+<p>Tomas Havranek<sup>a,b</sup> and Ayaz Zeynalov<sup>c</sup></p>
+<p><sup>a</sup>Czech National Bank. <sup>b</sup>Charles University, Prague. <sup>c</sup>University of Economics, Prague.</p>
+<p>November 22, 2018</p>
+</div>
+<div class="abstract">
+<h2>Abstract</h2>
+<p>In this paper, we examine the usefulness of Google Trends data in predicting monthly tourist arrivals and overnight stays in Prague during the period between January 2010 and December 2016. We offer two contributions. First, we analyze whether Google Trends provides significant forecasting improvements over models without search data. Second, we assess whether a high-frequency variable (weekly Google Trends) is more useful for accurate forecasting than a low-frequency variable (monthly tourist arrivals) using Mixed-data sampling (MIDAS). Our results stress the potential of Google Trends to offer more accurate prediction in the context of tourism: we find that Google Trends information, both two months and one week ahead of arrivals, is useful for predicting the actual number of tourist arrivals. The MIDAS forecasting model that employs weekly Google Trends data outperforms models using monthly Google Trends data and models without Google Trends data.</p>
+</div>
+<p class="keywords"><b>Keywords:</b> Google trends, mixed-frequency data, forecasting, tourism. JEL Codes: C53, L83, Z32</p>
+<h2 id="sec-1">1. Introduction</h2>
+<p>People reveal useful information about their needs, wants, interests, and concerns through their internet search histories. This information may be the best explanation for Google's success, as Google search has rapidly increased the quantity of publicly accessible and usable information. That what people search for today is predictive of what they have done recently or will do in the near future is a reasonable assumption.</p>
+<p>Several studies have focused on search data to assess their relationship with current consumer behavior for prediction purposes (Askitas and Zimmermann, 2009; Hong, 2011; Choi and Varian, 2012, among others). For example, Choi and Varian (2012) examine internet searches to evaluate the nowcasting potential of Google Trends using different economic indicators, such as unemployment claims, automobile sales, tourist journeys, and consumer confidence. The authors claim that Google Trends might not be informative for future predictions; nevertheless, they find that it is a useful tool for "predicting the present".</p>
+<p>Several studies have suggested that Google trends data are a valuable economic indicator. Researchers have emphasized that Google Trends has strong potential for assessing unemployment rate changes in Germany (Askitas and Zimmermann, 2009), France (Fondeur and Karame, 2013), Visegrad countries (Pavlicek and Kristoufek, 2015), the UK (Smith, 2016) and the US (D'Amuri and Marcucci, 2017). Goel et al. (2010) examine, among other things, the relationship between the use of search engines and real estate sales, as well as disease prevalence. Other researchers have tested whether the Google Trends Automotive Index can improve predictions of car sales in Chile (Carriere-Swallow and Labbe, 2013) and in Germany (Fantazzini and Toktamysova, 2015), have developed forecasts of the real oil price using Google search results (Fantazzini and Fomichev, 2014), have stressed that Google Flu Trends data can follow the path of an outbreak using United States data from 2003 to 2009 (Dukic et al., 2012). Dergiades et al. (2018) proposed corrections in terms of language bias and the platform bias of search engines to improve the predictive power of forecasting. The authors conclude that an adjusted search engine index related to different languages and different sources increases forecasting performance compared to the non-adjusted index.</p>
+<p>This study is an attempt to evaluate the nexus between Google Trends and tourist arrivals in Prague during the period 2010-2016. Predicting tourist arrivals and overnight stays can not only play a pivot role in the business market and for policy makers but also assist with the development of the methodology used in the literature on tourism. The main objective of this paper is to identify whether Google Trends has value added in predicting tourist demand while making the following contributions to the field: First, the paper is focused on a possible connection between internet searching and tourist arrivals in real time. Google Trends has potential for the business market to define nowcasting tourist activities and to avoid months of waiting to obtain information on tourist arrivals from the state statistics department. Second, this paper provides a step-by-step procedure for tourist forecast modeling while avoiding same-frequency modeling. Mixed-data sampling (MIDAS) enables us to estimate models that explain a low-frequency variable by means of high-frequency variables and their lags.</p>
+<p>The rest of this paper is organized as follows. Section 2 discusses the literature on tourist arrival forecasting and Google Trends. Section 3 discusses the methodology and data sampling. Section 4 presents the empirical results on MIDAS models applied to tourist arrivals and overnight stays. Section 5 concludes. Robustness checks are presented in the Appendix.</p>
+<h2 id="sec-2">2. Literature Review</h2>
+<p>Tourism forecasting has been the focus of many studies. Researchers have analyzed tourist demand using two price indices from origin and destination countries to evaluate the forecasting performance of tourist preferences based on tourist arrivals to Spain (Gonzalez and Moral, 1995) and have developed forecasting models based on different time series methods using tourist flows from China, South Korea, the UK and the USA to Hong Kong (Song et al., 2011). Researchers have used different time series models to assess the determinants of tourist arrivals (Athanasopoulos et al., 2011; Akin, 2015) and have proposed artificial neural network (ANN) methods (Hadavandi et al., 2011; Claveria and Torra, 2014). The main objective of Claveria and Torra (2014)'s study was to determine which method provided the most accurate information on tourist number; they found that autoregressive integrated moving average (ARIMA) models outperformed self-exciting threshold autoregressive (SETAR) and ANN models. A meta-analysis in this literature performed by Peng et al. (2014) claims that the choice of forecasting method is the main reason for contradictory results among studies.</p>
+<p>The usefulness of Google Trends data to predict tourism has also been examined previously. Bangwayo-Skeete and Skeete (2015) suggest that Google search volume provides advantages for tourism demand forecasting for Caribbean destinations. Researchers have argued that Google Trends, as a concurrent indicator, could promote more precise forecasting in Switzerland (Siliverstovs and Wochner, 2017) and that a strong correlation exists between hotel visitors and Google search queries in Puerto Rico (Rivera, 2016). Park et al. (2017) focus on short-term forecasting of tourist outflows from South Korea to Japan. They claim that Google Trends data not only improve the precision of tourism demand forecasting but also that the out-of-sample forecasting performance outperforms in-sample forecasting with Google Trends.</p>
+<p>Prague is one of the most popular destinations on the European continent, with more than 6 million foreign visitors annually, accounting for up to 15 million overnight stays. Tourism makes a major contribution to Prague's economic development: tourism accounts for 9% of GDP and provides employment for approximately 17% of the working population in the service sector.<sup class="cite"><a href="#note-1">1</a></sup> Therefore, accurate forecasts of tourism volume play a major role in tourism planning, as forecasts enable destinations to predict infrastructure development needs.</p>
+<p>Google Trends provides free, vast and almost real-time information but has some disadvantages. First, Google shows only absolute data, providing an index that is relative to all searches. Second, internet users might type similar words when searching for different topics or different words when searching for the same topic. Third, web search queries are related to personal characteristics, such as education, income, and age. Clearly, data from Google searches are imperfect; however, because Google Trends provides one of the best real-time information databases, it has the potential to act as a leading indicator.</p>
+<p>The MIDAS method proposed by Ghysels et al. (2006) was further developed by Andreou et al. (2010), who introduced a new decomposition for MIDAS regression. Empirical studies in the MIDAS literature have analyzed the dynamics of microstructure noise and volatility (Ghysels et al., 2007), GDP growth forecasting (Ghysels and Wright, 2009; Andreou et al., 2012), nowcasting and quarterly GDP growth forecasting in the euro area (Kuzin et al., 2011), and stock market volatility and macroeconomic activity (Engle et al., 2013; Girardin and Joyeux, 2013). Gotz et al. (2014) developed an alternative mixed-frequency error-correction model for non-stationary variables sampled at different frequencies that are possibly co-integrated. Co-integrated MIDAS has been also introduced by Miller (2016) focusing on efficient estimation of the co-integrating vector of model with a low-frequency and high-frequency series. MIDAS is a method for estimating and forecasting the impact of high-frequency variable(s) on low-frequency dependent variables that can avoid the traditional requirement that variables have the same frequency. MIDAS uses a distributed lag of polynomials to ensure parsimonious specifications for handling series sampled at different frequencies.</p>
+<p>This paper analyzes the eligibility of Google search data for forecasting tourist arrivals and overnight stays in Prague and reports whether weekly Google Trends data can potentially improve forecasting performance when used with MIDAS regression. First, the study investigates whether Google Trends offers significant forecasting improvements. Second, it assesses whether a higher-frequency explanatory variable leads to more accurate forecasting by comparing weekly and monthly Google Trends data using MIDAS regression.</p>
+<h2 id="sec-3">3. Methodology and Data</h2>
+<h3 id="sec-3-1">3.1. Methodology</h3>
+<p>This study considers how to obtain better forecasts of tourist arrivals and overnight stays by using MIDAS and aims to detect whether Google search queries can provide insight into tourism prediction for Prague tourist arrivals and overnight stays. Forecasting methodology begins with choosing a baseline model with meaningful predictive power. Then, the baseline model is run both with and without Google data to analyze whether Google can improve tourist arrival forecasting.</p>
+<p>The MIDAS methodology was proposed by Ghysels et al. (2007) and developed by Andreou et al. (2010). Andreou et al. (2010) introduce a new decomposition of the conditional mean into two different parts: an aggregated term based on equal or flat weights and a nonlinear term, which involves weighted, higher-order differences of a high-frequency process. Gotz et al. (2014) and Miller (2016) developed mixed-frequency error-correction model. MIDAS was used to study tourism data by Bangwayo-Skeete and Skeete (2015), who emphasized that Google Trends information on tourists offers substantial benefits to forecasters: MIDAS outperformed other methods using a dataset containing monthly tourist arrivals from the US, Canada and the UK to five destinations in the Caribbean.</p>
+<p>The methodology in this study follows Ghysels et al. (2007) and Andreou et al. (2010) and has been organized specifically for this study:</p>
+<div class="eqn"><div class="eqbody"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mrow><msub><mrow><mi mathvariant="normal">t</mi><mi mathvariant="normal">o</mi><mi mathvariant="normal">u</mi><mi mathvariant="normal">r</mi><mi mathvariant="normal">i</mi><mi mathvariant="normal">s</mi><mi mathvariant="normal">t</mi></mrow><mi>t</mi></msub><mo>&#x0003D;</mo><mi>&#x003B1;</mi><mo>&#x0002B;</mo><msubsup><mo>&#x02211;</mo><mrow><mi>i</mi><mo>&#x0003D;</mo><mn>1</mn></mrow><mrow><mi>n</mi></mrow></msubsup><msub><mi>&#x003B2;</mi><mi>i</mi></msub><msup><mi>L</mi><mi>i</mi></msup><msub><mrow><mi mathvariant="normal">t</mi><mi mathvariant="normal">o</mi><mi mathvariant="normal">u</mi><mi mathvariant="normal">r</mi><mi mathvariant="normal">i</mi><mi mathvariant="normal">s</mi><mi mathvariant="normal">t</mi></mrow><mi>t</mi></msub><mo>&#x0002B;</mo><mi>&#x003B3;</mi><msubsup><mo>&#x02211;</mo><mrow><mi>i</mi><mo>&#x0003D;</mo><mn>1</mn></mrow><mrow><mi>w</mi></mrow></msubsup><mi>B</mi><mo stretchy="false">&#x00028;</mo><mi>k</mi><mi>;</mi><mi>&#x003B8;</mi><mo stretchy="false">&#x00029;</mo><msup><mi>L</mi><mrow><mi>k</mi><mo>&#x0002F;</mo><mi>w</mi></mrow></msup><msubsup><mrow><mi mathvariant="normal">g</mi><mi mathvariant="normal">o</mi><mi mathvariant="normal">o</mi><mi mathvariant="normal">g</mi><mi mathvariant="normal">l</mi><mi mathvariant="normal">e</mi></mrow><mi>t</mi><mrow><mo stretchy="false">&#x00028;</mo><mi>w</mi><mo stretchy="false">&#x00029;</mo></mrow></msubsup><mo>&#x0002B;</mo><msubsup><mi>&#x003F5;</mi><mi>t</mi><mrow><mo stretchy="false">&#x00028;</mo><mi>w</mi><mo stretchy="false">&#x00029;</mo></mrow></msubsup></mrow></math></div><div class="eqno">(1)</div></div>
+<p>for <math class="inl" xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>t</mi><mo>&#x0003D;</mo><mn>1</mn><mo>&#x0002C;</mo><mo>&#x0002E;</mo><mo>&#x0002E;</mo><mo>&#x0002E;</mo><mo>&#x0002C;</mo><mi>T</mi></mrow></math>, where the function <math class="inl" xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>B</mi><mo stretchy="false">&#x00028;</mo><mi>k</mi><mi>;</mi><mi>&#x003B8;</mi><mo stretchy="false">&#x00029;</mo></mrow></math> is a polynomial specification that determines the weights for temporal aggregation. <math class="inl" xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><msup><mi>L</mi><mrow><mi>k</mi><mo>&#x0002F;</mo><mi>w</mi></mrow></msup></mrow></math> represents a lag operator, such as <math class="inl" xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><msup><mi>L</mi><mrow><mi>k</mi><mo>&#x0002F;</mo><mi>w</mi></mrow></msup><msub><mrow><mi mathvariant="normal">g</mi><mi mathvariant="normal">o</mi><mi mathvariant="normal">o</mi><mi mathvariant="normal">g</mi><mi mathvariant="normal">l</mi><mi mathvariant="normal">e</mi></mrow><mi>t</mi></msub><mo>&#x0003D;</mo><msubsup><mrow><mi mathvariant="normal">g</mi><mi mathvariant="normal">o</mi><mi mathvariant="normal">o</mi><mi mathvariant="normal">g</mi><mi mathvariant="normal">l</mi><mi mathvariant="normal">e</mi></mrow><mrow><mi>t</mi><mo>&#x02212;</mo><mi>k</mi><mo>&#x0002F;</mo><mi>w</mi></mrow><mrow><mo stretchy="false">&#x00028;</mo><mi>w</mi><mo stretchy="false">&#x00029;</mo></mrow></msubsup></mrow></math>. In the model, <math class="inl" xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><msub><mrow><mi mathvariant="normal">t</mi><mi mathvariant="normal">o</mi><mi mathvariant="normal">u</mi><mi mathvariant="normal">r</mi><mi mathvariant="normal">i</mi><mi mathvariant="normal">s</mi><mi mathvariant="normal">t</mi></mrow><mi>t</mi></msub></mrow></math> represents a low-frequency dependent variable, and <math class="inl" xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><msub><mrow><mi mathvariant="normal">g</mi><mi mathvariant="normal">o</mi><mi mathvariant="normal">o</mi><mi mathvariant="normal">g</mi><mi mathvariant="normal">l</mi><mi mathvariant="normal">e</mi></mrow><mi>t</mi></msub></mrow></math> represents a high-frequency independent variable. <math class="inl" xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>L</mi></mrow></math> is a polynomial lag operator. <math class="inl" xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><msubsup><mrow><mi mathvariant="normal">g</mi><mi mathvariant="normal">o</mi><mi mathvariant="normal">o</mi><mi mathvariant="normal">g</mi><mi mathvariant="normal">l</mi><mi mathvariant="normal">e</mi></mrow><mi>t</mi><mrow><mo stretchy="false">&#x00028;</mo><mi>w</mi><mo stretchy="false">&#x00029;</mo></mrow></msubsup></mrow></math> is observed <math class="inl" xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>w</mi></mrow></math> times in the same period (weekly, <math class="inl" xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>w</mi><mo>&#x0003D;</mo><mn>4</mn></mrow></math>). <math class="inl" xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>&#x003B2;</mi></mrow></math> represents the effect of lag values of tourist arrivals, and <math class="inl" xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>&#x003B3;</mi></mrow></math> represents the effect of <math class="inl" xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><msub><mrow><mi mathvariant="normal">g</mi><mi mathvariant="normal">o</mi><mi mathvariant="normal">o</mi><mi mathvariant="normal">g</mi><mi mathvariant="normal">l</mi><mi mathvariant="normal">e</mi></mrow><mi>t</mi></msub></mrow></math> search.</p>
+<p>The parameterization of the weighting function is one of the main contributions of MIDAS regression. Ghysels et al. (2007) propose two different parameterizations. The first is</p>
+<div class="eqn"><div class="eqbody"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mrow><mi>B</mi><mo stretchy="false">&#x00028;</mo><mi>k</mi><mi>;</mi><mi>&#x003B8;</mi><mo stretchy="false">&#x00029;</mo><mo>&#x0003D;</mo><mfrac><mrow><msup><mi>e</mi><mrow><msub><mi>&#x003B8;</mi><mn>1</mn></msub><mi>k</mi><mo>&#x0002B;</mo><mo>&#x0002E;</mo><mo>&#x0002E;</mo><mo>&#x0002E;</mo><mo>&#x0002B;</mo><msub><mi>&#x003B8;</mi><mi>Q</mi></msub><msup><mi>k</mi><mi>Q</mi></msup></mrow></msup></mrow><mrow><msubsup><mo>&#x02211;</mo><mrow><mi>k</mi><mo>&#x0003D;</mo><mn>1</mn></mrow><mrow><mi>w</mi></mrow></msubsup><msup><mi>e</mi><mrow><msub><mi>&#x003B8;</mi><mn>1</mn></msub><mi>k</mi><mo>&#x0002B;</mo><mo>&#x0002E;</mo><mo>&#x0002E;</mo><mo>&#x0002E;</mo><mo>&#x0002B;</mo><msub><mi>&#x003B8;</mi><mi>Q</mi></msub><msup><mi>k</mi><mi>Q</mi></msup></mrow></msup></mrow></mfrac></mrow></math></div><div class="eqno">(2)</div></div>
+<p>which suggests an exponential Almon specification (Almon, 1965). Ghysels et al. (2006) uses functional form (2) with two parameters (<math class="inl" xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>&#x003B8;</mi><mo>&#x0003D;</mo><mo stretchy="false">[</mo><msub><mi>&#x003B8;</mi><mn>1</mn></msub><mi>;</mi><msub><mi>&#x003B8;</mi><mn>2</mn></msub><mo stretchy="false">]</mo></mrow></math>). The specification gives equal weights when <math class="inl" xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><msub><mi>&#x003B8;</mi><mn>1</mn></msub><mo>&#x0003D;</mo><msub><mi>&#x003B8;</mi><mn>2</mn></msub><mo>&#x0003D;</mo><mn>0</mn></mrow></math>; otherwise, the weights can decline rapidly or slowly with the number of lags. The rate of decline determined by the number of lags is included in the model. The exponential function of weight can produce hump shapes, and a decreasing weight is guaranteed as long as <math class="inl" xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><msub><mi>&#x003B8;</mi><mn>2</mn></msub><mo>&#x02264;</mo><mn>0</mn></mrow></math>.</p>
+<p>The second parameterization is a Beta formulation:</p>
+<div class="eqn"><div class="eqbody"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mrow><mi>B</mi><mo stretchy="false">&#x00028;</mo><mi>k</mi><mi>;</mi><msub><mi>&#x003B8;</mi><mn>1</mn></msub><mo>&#x0002C;</mo><msub><mi>&#x003B8;</mi><mn>2</mn></msub><mo stretchy="false">&#x00029;</mo><mo>&#x0003D;</mo><mfrac><mrow><mi>f</mi><mo stretchy="false">&#x00028;</mo><mi>k</mi><mo>&#x0002F;</mo><mi>w</mi><mo>&#x0002C;</mo><msub><mi>&#x003B8;</mi><mn>1</mn></msub><mi>;</mi><msub><mi>&#x003B8;</mi><mn>2</mn></msub><mo stretchy="false">&#x00029;</mo></mrow><mrow><msubsup><mo>&#x02211;</mo><mrow><mi>k</mi><mo>&#x0003D;</mo><mn>1</mn></mrow><mrow><mi>w</mi></mrow></msubsup><mi>f</mi><mo stretchy="false">&#x00028;</mo><mi>k</mi><mo>&#x0002F;</mo><mi>w</mi><mo>&#x0002C;</mo><msub><mi>&#x003B8;</mi><mn>1</mn></msub><mi>;</mi><msub><mi>&#x003B8;</mi><mn>2</mn></msub><mo stretchy="false">&#x00029;</mo></mrow></mfrac></mrow></math></div><div class="eqno">(3)</div></div>
+<p>where</p>
+<div class="eqn"><div class="eqbody"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mrow><mi>f</mi><mo stretchy="false">&#x00028;</mo><mi>i</mi><mo>&#x0002C;</mo><msub><mi>&#x003B8;</mi><mn>1</mn></msub><mi>;</mi><msub><mi>&#x003B8;</mi><mn>2</mn></msub><mo stretchy="false">&#x00029;</mo><mo>&#x0003D;</mo><msup><mi>i</mi><mrow><msub><mi>&#x003B8;</mi><mn>1</mn></msub><mo>&#x02212;</mo><mn>1</mn></mrow></msup><mo stretchy="false">&#x00028;</mo><mn>1</mn><mo>&#x02212;</mo><mi>i</mi><msup><mo stretchy="false">&#x00029;</mo><mrow><mo stretchy="false">&#x00028;</mo><msub><mi>&#x003B8;</mi><mn>2</mn></msub><mo>&#x02212;</mo><mn>1</mn><mo stretchy="false">&#x00029;</mo></mrow></msup><mfrac><mrow><mi>&#x00393;</mi><mo stretchy="false">&#x00028;</mo><msub><mi>&#x003B8;</mi><mn>1</mn></msub><mo>&#x0002B;</mo><msub><mi>&#x003B8;</mi><mn>2</mn></msub><mo stretchy="false">&#x00029;</mo></mrow><mrow><mi>&#x00393;</mi><mo stretchy="false">&#x00028;</mo><msub><mi>&#x003B8;</mi><mn>1</mn></msub><mo stretchy="false">&#x00029;</mo><mi>&#x00393;</mi><mo stretchy="false">&#x00028;</mo><msub><mi>&#x003B8;</mi><mn>2</mn></msub><mo stretchy="false">&#x00029;</mo></mrow></mfrac></mrow></math></div><div class="eqno">(4)</div></div>
+<p><math class="inl" xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><msub><mi>&#x003B8;</mi><mn>1</mn></msub></mrow></math> and <math class="inl" xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><msub><mi>&#x003B8;</mi><mn>2</mn></msub></mrow></math> are hyperparameters governing the shape of the weighting function, and</p>
+<div class="eqn"><div class="eqbody"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mrow><mi>&#x00393;</mi><mo stretchy="false">&#x00028;</mo><msub><mi>&#x003B8;</mi><mi>p</mi></msub><mo stretchy="false">&#x00029;</mo><mo>&#x0003D;</mo><msubsup><mo>&#x0222B;</mo><mn>0</mn><mrow><mo>&#x0221E;</mo></mrow></msubsup><msup><mi>e</mi><mrow><mo>&#x02212;</mo><mi>i</mi></mrow></msup><msup><mi>i</mi><mrow><msub><mi>&#x003B8;</mi><mi>p</mi></msub><mo>&#x02212;</mo><mn>1</mn></mrow></msup><mi>d</mi><mi>i</mi></mrow></math></div><div class="eqno">(5)</div></div>
+<p>is the standard gamma function. The Beta specification also gives equal weights when <math class="inl" xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><msub><mi>&#x003B8;</mi><mn>1</mn></msub><mo>&#x0003D;</mo><msub><mi>&#x003B8;</mi><mn>2</mn></msub><mo>&#x0003D;</mo><mn>0</mn></mrow></math>. The rate of weight decline determines how the lags are included in the model, as in the Almon case. The weight slowly declines while <math class="inl" xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><msub><mi>&#x003B8;</mi><mn>1</mn></msub><mo>&#x0003D;</mo><mn>1</mn></mrow></math> and <math class="inl" xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><msub><mi>&#x003B8;</mi><mn>2</mn></msub><mo>&#x0003E;</mo><mn>1</mn></mrow></math>. As <math class="inl" xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><msub><mi>&#x003B8;</mi><mn>2</mn></msub></mrow></math> increases, the weight declines rapidly.</p>
+<p>Evaluation of the quality of a forecast requires the forecast values to be compared to actual values and values from alternative models. The Diebold-Mariano test compares two forecasting models to determine whether they have equal predictive accuracy or one model is more accurate. The Diebold-Mariano test is described as</p>
+<div class="eqn"><div class="eqbody"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mrow><mi>D</mi><mi>M</mi><mo>&#x0003D;</mo><mfrac><mrow><mover><mrow><mi>d</mi></mrow><mo stretchy="false">&#x0007E;</mo></mover></mrow><mrow><msub><mi>s</mi><mi>d</mi></msub></mrow></mfrac></mrow></math></div><div class="eqno">(6)</div></div>
+<p>where <math class="inl" xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mover><mrow><mi>d</mi></mrow><mo stretchy="false">&#x0007E;</mo></mover></mrow></math> and <math class="inl" xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><msub><mi>s</mi><mi>d</mi></msub></mrow></math> are the mean and sample standard deviation of <math class="inl" xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>d</mi></mrow></math>. <math class="inl" xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>d</mi></mrow></math> estimates</p>
+<div class="eqn"><div class="eqbody"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mrow><mi>d</mi><mo>&#x0003D;</mo><msub><mi>&#x003F5;</mi><mn>1</mn></msub><mo>&#x02212;</mo><msub><mi>&#x003F5;</mi><mn>2</mn></msub></mrow></math></div><div class="eqno">(7)</div></div>
+<p>where <math class="inl" xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><msub><mi>&#x003F5;</mi><mi>i</mi></msub></mrow></math> represents either a squared or absolute difference between the forecast and the actual values of two models (<math class="inl" xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>i</mi><mo>&#x0003D;</mo><mn>1</mn><mo>&#x0002C;</mo><mn>2</mn></mrow></math>). We concentrate on the absolute values, defined as <math class="inl" xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><msub><mi>&#x003F5;</mi><mi>i</mi></msub><mo>&#x0003D;</mo><mo stretchy="false">&#x0007C;</mo><msub><mover accent="true"><mrow><mi>y</mi></mrow><mo>&#x0005E;</mo></mover><mi>i</mi></msub><mo>&#x02212;</mo><msub><mi>y</mi><mi>i</mi></msub><mo stretchy="false">&#x0007C;</mo></mrow></math>, where <math class="inl" xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><msub><mover accent="true"><mrow><mi>y</mi></mrow><mo>&#x0005E;</mo></mover><mi>i</mi></msub></mrow></math> represents the forecast value and <math class="inl" xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><msub><mi>y</mi><mi>i</mi></msub></mrow></math> represents the observed real value. The null hypothesis of the Diebold-Mariano test is that both forecasts have the same accuracy; the alternative hypothesis is that Model 2 (Google Trends model) is more accurate than the baseline model (Model without Google Trends).</p>
+<h3 id="sec-3-2">3.2. Data and descriptive statistics</h3>
+<p>Monthly data of tourist arrivals and overnight stays from different countries to Prague from January 2010 to December 2016 were obtained from the Czech Statistical Office and Prague Immigration Department. Search volume histories related to the search terms "flights to Prague" and "hotels in Prague" were collected from Google Trends.</p>
+<p>The weekly and monthly data series from Google Trends cover the same period. Google Trends measures how often a particular search-term is entered relative to the total Google search-volume across various countries (regions) and in various languages. Trends adjust search data to make comparisons: each data point is divided by the total number of searches for the geography and time range. The resulting numbers are then scaled to a range of 0 to 100 based on the topic's proportion to all searches on all topics.</p>
+<figure>
+<img src="figures/fig1.png" alt="A chart of monthly tourist arrivals to Prague from 2010 to 2016 on the left axis, in thousands, with the monthly Google search index on the right axis. Both lines rise across the period and share the same seasonal swing, peaking each summer." />
+<figcaption><b>Figure 1.</b> Monthly tourist arrivals to Prague and monthly Google searches for Prague. Source: Author's estimation, Google Trends and Czech Statistical Office. Left side represents the number of tourist, right side represents Google Trends.</figcaption>
+</figure>
+<figure>
+<img src="figures/fig2.png" alt="The same chart drawn for monthly overnight stays in Prague against the monthly Google search index, the two series again rising together and moving in step through each year&#x27;s seasonal peak." />
+<figcaption><b>Figure 2.</b> Monthly overnight stays in Prague and monthly Google searches for Prague. Source: Author's estimation, Google Trends and Czech Statistical Office. Left side represents the number of tourist, right side represents Google Trends.</figcaption>
+</figure>
+<p>Figures 1 and 2 show monthly tourist arrivals and overnight stays and, respectively, monthly Google search results. Visual inspection of the figures indicates a strong correlation between monthly tourist arrivals and overnight stays. Both time series show an upward trend and seasonal variation. Multiple methods are available for time series forecasting based on trends and seasonality. The natural logarithm of year-on-year growth has been used to eliminate both linear trends and seasonal variation.</p>
+<figure>
+<img src="figures/fig3.png" alt="Monthly tourist arrivals to Prague plotted against the weekly Google search index, the weekly series showing the same seasonal shape at a finer resolution." />
+<figcaption><b>Figure 3.</b> Monthly tourist arrivals to Prague and weekly Google searches for Prague. Source: Author's estimation, Google Trends and Czech Statistical Office. Left side represents the number of tourist, right side represents Google Trends.</figcaption>
+</figure>
+<figure>
+<img src="figures/fig4.png" alt="Monthly overnight stays in Prague plotted against the weekly Google search index, the two moving together through each year&#x27;s seasonal peak." />
+<figcaption><b>Figure 4.</b> Monthly overnight stays in Prague and weekly Google searches for Prague. Source: Author's estimation, Google Trends and Czech Statistical Office. Left side represents the number of tourist, right side represents Google Trends.</figcaption>
+</figure>
+<p>Figures 3 and 4 show monthly tourist arrivals and overnight stays and, respectively, weekly Google search results. Both overnight stays and weekly Google search results show an upward trend and seasonal variation, as well. Although a few outliers are observed, an overall close association is clear. These visual assessments provide support for investigating and developing models to analyze whether Google Trends can improve forecasting and prediction of tourist arrivals to Prague.</p>
+<p>Tables 1 and 2 present descriptive statistics of tourist arrivals and overnight stays in Prague by country of origin between January 2010 and December 2016. The tables show the top ten countries, which have a substantial impact on tourist arrivals and overnight stays in Prague. These ten countries account for 64% of all tourist arrivals (Table 1) and 62.5% of overnight stays (Table 2) in Prague. During this period, Germany, Russia and the USA are the top three countries in both series. China and South Korea present considerable upward trends for both tourist arrivals and overnight stays in Prague.</p>
+<p>Additionally, this study applies the augmented Dickey-Fuller (ADF) test, the Phillips-Perron (PP) test, and the Kwiatkowski-Phillips-Schmidt-Shin (KPSS) test to assess the unit root hypothesis. The ADF and PP methods test the unit root hypothesis in the level values of tourist arrivals and overnight stays (Table 3) and the difference value (Table 4), and the KPSS method tests for stationarity in both the true and differenced values (Tables 3 and 4).</p>
+<p>As in Table 3, for most countries of origin, we cannot reject the null hypothesis of a unit root at the 5% level. Similar results are obtained for the KPSS test, where the null hypothesis of stationarity is rejected in most cases. When the tests are applied to the logarithmic difference of individual time series (Table 4), the null of nonstationarity is strongly rejected in most cases. For the KPSS test, we cannot reject the null hypothesis of a unit root at the 5% level.</p>
+<div class="table-scroll">
+<table>
+<caption><b>Table 1.</b> Descriptive analysis of monthly tourist arrivals by countries</caption>
+<thead><tr><th scope="col">Country</th><th scope="col">Mean</th><th scope="col">SD</th><th scope="col">Min</th><th scope="col">Max</th></tr></thead>
+<tbody>
+<tr><th scope="row">Monthly total</th><td class="num">487152.50</td><td class="num">125436.20</td><td class="num">220329</td><td class="num">741900</td></tr>
+<tr><th scope="row">Germany</th><td class="num">59804.11</td><td class="num">18682.81</td><td class="num">21402</td><td class="num">97292</td></tr>
+<tr><th scope="row">Russia</th><td class="num">32241.35</td><td class="num">11337.70</td><td class="num">8966</td><td class="num">62742</td></tr>
+<tr><th scope="row">USA</th><td class="num">29904.94</td><td class="num">15031.51</td><td class="num">6875</td><td class="num">61637</td></tr>
+<tr><th scope="row">UK</th><td class="num">27939.21</td><td class="num">5735.94</td><td class="num">14377</td><td class="num">40716</td></tr>
+<tr><th scope="row">Italy</th><td class="num">24400.92</td><td class="num">9174.48</td><td class="num">11715</td><td class="num">43163</td></tr>
+<tr><th scope="row">France</th><td class="num">18618.32</td><td class="num">4296.31</td><td class="num">8401</td><td class="num">27490</td></tr>
+<tr><th scope="row">Slovakia</th><td class="num">16479.82</td><td class="num">4981.66</td><td class="num">6489</td><td class="num">27600</td></tr>
+<tr><th scope="row">Poland</th><td class="num">14688.13</td><td class="num">6105.52</td><td class="num">4212</td><td class="num">28246</td></tr>
+<tr><th scope="row">China</th><td class="num">10884.94</td><td class="num">7149.15</td><td class="num">1515</td><td class="num">29390</td></tr>
+<tr><th scope="row">South Korea</th><td class="num">9986.29</td><td class="num">6506.87</td><td class="num">1528</td><td class="num">28582</td></tr>
+<tr><th scope="row">Others</th><td class="num">175844.80</td><td class="num">55457.10</td><td class="num">68354</td><td class="num">308403</td></tr>
+</tbody></table></div>
+<p class="table-note">Source: Author's estimation.</p>
+<div class="table-scroll">
+<table>
+<caption><b>Table 2.</b> Descriptive analysis of monthly overnight stays by countries</caption>
+<thead><tr><th scope="col">Country</th><th scope="col">Mean</th><th scope="col">SD</th><th scope="col">Min</th><th scope="col">Max</th></tr></thead>
+<tbody>
+<tr><th scope="row">Monthly total</th><td class="num">1199376.00</td><td class="num">304189.60</td><td class="num">528122</td><td class="num">1826220</td></tr>
+<tr><th scope="row">Germany</th><td class="num">141091.61</td><td class="num">47406.31</td><td class="num">49201</td><td class="num">235804</td></tr>
+<tr><th scope="row">Russia</th><td class="num">129391.30</td><td class="num">49948.31</td><td class="num">36216</td><td class="num">269878</td></tr>
+<tr><th scope="row">USA</th><td class="num">73905.63</td><td class="num">36767.10</td><td class="num">16752</td><td class="num">150320</td></tr>
+<tr><th scope="row">UK</th><td class="num">69880.68</td><td class="num">15795.89</td><td class="num">34391</td><td class="num">107953</td></tr>
+<tr><th scope="row">Italy</th><td class="num">70228.39</td><td class="num">30671.20</td><td class="num">31510</td><td class="num">136985</td></tr>
+<tr><th scope="row">France</th><td class="num">48679.69</td><td class="num">12687.98</td><td class="num">21125</td><td class="num">76212</td></tr>
+<tr><th scope="row">Slovakia</th><td class="num">31344.48</td><td class="num">9997.55</td><td class="num">12033</td><td class="num">59799</td></tr>
+<tr><th scope="row">Poland</th><td class="num">29115.83</td><td class="num">12817.48</td><td class="num">8309</td><td class="num">61846</td></tr>
+<tr><th scope="row">China</th><td class="num">19487.88</td><td class="num">12925.09</td><td class="num">2834</td><td class="num">56167</td></tr>
+<tr><th scope="row">South Korea</th><td class="num">16943.52</td><td class="num">11191.83</td><td class="num">2978</td><td class="num">52099</td></tr>
+<tr><th scope="row">Others</th><td class="num">449190.00</td><td class="num">148345.90</td><td class="num">171762</td><td class="num">794039</td></tr>
+</tbody></table></div>
+<p class="table-note">Source: Author's estimation.</p>
+<div class="table-scroll">
+<table>
+<caption><b>Table 3.</b> Unit root tests for tourist arrivals and overnight stays - test for I(0)</caption>
+<thead><tr><th scope="col">Country</th><th scope="col">Tourist arrivals</th><th scope="col"></th><th scope="col"></th><th scope="col">Overnight stays</th><th scope="col"></th><th scope="col"></th></tr></thead>
+<tbody>
+<tr><th scope="row"></th><td>ADF</td><td>PP</td><td>KPSS</td><td>ADF</td><td>PP</td><td>KPSS</td></tr>
+<tr><th scope="row">Total</th><td class="num">1.81</td><td class="num">-3.73</td><td class="num">0.89</td><td class="num">0.08</td><td class="num">-4.09</td><td class="num">0.66</td></tr>
+<tr><th scope="row">Germany</th><td class="num">1.08</td><td class="num">-4.97</td><td class="num">0.74</td><td class="num">0.90</td><td class="num">-5.08</td><td class="num">0.56</td></tr>
+<tr><th scope="row">Russia</th><td class="num">-1.25</td><td class="num">-4.95</td><td class="num">0.30</td><td class="num">-1.12</td><td class="num">-5.59</td><td class="num">0.33</td></tr>
+<tr><th scope="row">USA</th><td class="num">0.09</td><td class="num">-3.77</td><td class="num">0.56</td><td class="num">0.15</td><td class="num">-3.85</td><td class="num">0.47</td></tr>
+<tr><th scope="row">UK</th><td class="num">2.13</td><td class="num">-3.92</td><td class="num">0.93</td><td class="num">2.00</td><td class="num">-4.17</td><td class="num">0.89</td></tr>
+<tr><th scope="row">Italy</th><td class="num">-1.28</td><td class="num">-11.70</td><td class="num">0.36</td><td class="num">-1.38</td><td class="num">-13.48</td><td class="num">0.16</td></tr>
+<tr><th scope="row">France</th><td class="num">-2.54</td><td class="num">-6.14</td><td class="num">0.12</td><td class="num">-1.52</td><td class="num">-6.83</td><td class="num">0.06</td></tr>
+<tr><th scope="row">Slovakia</th><td class="num">1.59</td><td class="num">-1.99</td><td class="num">1.24</td><td class="num">2.12</td><td class="num">-2.46</td><td class="num">1.19</td></tr>
+<tr><th scope="row">Poland</th><td class="num">1.71</td><td class="num">-4.04</td><td class="num">0.45</td><td class="num">1.85</td><td class="num">-4.02</td><td class="num">0.38</td></tr>
+<tr><th scope="row">China</th><td class="num">1.13</td><td class="num">-2.89</td><td class="num">1.01</td><td class="num">1.45</td><td class="num">-2.93</td><td class="num">0.99</td></tr>
+<tr><th scope="row">South Korea</th><td class="num">2.33</td><td class="num">-2.27</td><td class="num">1.06</td><td class="num">4.56</td><td class="num">-2.22</td><td class="num">1.09</td></tr>
+<tr><th scope="row">Others</th><td class="num">3.20</td><td class="num">-3.95</td><td class="num">0.65</td><td class="num">2.52</td><td class="num">-4.05</td><td class="num">0.50</td></tr>
+</tbody></table></div>
+<p class="table-note">Source: Author's estimation. The estimation represents the monthly data for January 2010 - December 2016. Tests for unit roots: ADF &#8212; augmented (Dickey and Fuller, 1979) test, the 5% critical value is -2.90; PP - (Phillips and Perron, 1988) test, the 5% critical value is -2.89. Test of stationarity: KPSS &#8212; (Kwiatkowski et al., 1992) test, the 5% critical value is 0.46.</p>
+<div class="table-scroll">
+<table>
+<caption><b>Table 4.</b> Unit root tests for tourist arrivals and overnight stays - test for I(1)</caption>
+<thead><tr><th scope="col">Country</th><th scope="col">Tourist arrivals</th><th scope="col"></th><th scope="col"></th><th scope="col">Overnight stays</th><th scope="col"></th><th scope="col"></th></tr></thead>
+<tbody>
+<tr><th scope="row"></th><td>ADF</td><td>PP</td><td>KPSS</td><td>ADF</td><td>PP</td><td>KPSS</td></tr>
+<tr><th scope="row">Total</th><td class="num">-4.05</td><td class="num">-7.72</td><td class="num">0.35</td><td class="num">-3.78</td><td class="num">-6.90</td><td class="num">0.09</td></tr>
+<tr><th scope="row">Germany</th><td class="num">-4.52</td><td class="num">-10.63</td><td class="num">0.37</td><td class="num">-4.16</td><td class="num">-10.01</td><td class="num">0.34</td></tr>
+<tr><th scope="row">Russia</th><td class="num">-2.43</td><td class="num">-2.43</td><td class="num">0.70</td><td class="num">-2.46</td><td class="num">-2.22</td><td class="num">0.73</td></tr>
+<tr><th scope="row">USA</th><td class="num">-4.22</td><td class="num">-4.10</td><td class="num">0.13</td><td class="num">-3.76</td><td class="num">-3.76</td><td class="num">0.14</td></tr>
+<tr><th scope="row">UK</th><td class="num">-3.79</td><td class="num">-3.52</td><td class="num">0.63</td><td class="num">-2.48</td><td class="num">-2.96</td><td class="num">0.66</td></tr>
+<tr><th scope="row">Italy</th><td class="num">-7.28</td><td class="num">-7.27</td><td class="num">0.08</td><td class="num">-7.27</td><td class="num">-7.27</td><td class="num">0.07</td></tr>
+<tr><th scope="row">France</th><td class="num">-2.67</td><td class="num">-5.92</td><td class="num">0.28</td><td class="num">-2.77</td><td class="num">-6.11</td><td class="num">0.26</td></tr>
+<tr><th scope="row">Slovakia</th><td class="num">-6.33</td><td class="num">-6.37</td><td class="num">0.31</td><td class="num">-5.59</td><td class="num">-5.66</td><td class="num">0.48</td></tr>
+<tr><th scope="row">Poland</th><td class="num">-6.83</td><td class="num">-6.91</td><td class="num">0.47</td><td class="num">-6.36</td><td class="num">-6.52</td><td class="num">0.54</td></tr>
+<tr><th scope="row">China</th><td class="num">-4.14</td><td class="num">-4.20</td><td class="num">0.27</td><td class="num">-4.31</td><td class="num">-4.17</td><td class="num">0.33</td></tr>
+<tr><th scope="row">South Korea</th><td class="num">-3.81</td><td class="num">-3.84</td><td class="num">0.73</td><td class="num">-1.91</td><td class="num">-3.55</td><td class="num">0.82</td></tr>
+<tr><th scope="row">Others</th><td class="num">-7.77</td><td class="num">-7.89</td><td class="num">0.95</td><td class="num">-3.72</td><td class="num">-6.42</td><td class="num">0.629</td></tr>
+</tbody></table></div>
+<p class="table-note">Notes: Author's estimation. The estimation represents the monthly data for January 2010 - December 2016. Tests for unit roots: ADF &#8212; augmented (Dickey and Fuller, 1979) test, the 5% critical value is -2.90; PP - (Phillips and Perron, 1988) test, the 5% critical value is -2.89. Test of stationarity: KPSS &#8212; (Kwiatkowski et al., 1992) test, the 5% critical value is 0.46.</p>
+<h2 id="sec-4">4. Results</h2>
+<div class="table-scroll">
+<table>
+<caption><b>Table 5.</b> MIDAS model estimates of tourist arrivals: January 2010 - December 2016</caption>
+<thead><tr><th scope="col"></th><th scope="col">Weekly Google Search</th><th scope="col"></th><th scope="col"></th><th scope="col">Monthly Google</th><th scope="col">Without Google</th></tr></thead>
+<tbody>
+<tr><th scope="row"></th><td>Beta coeff</td><td>Exp coeff</td><td>Almon coeff</td><td>ARIMA</td><td>ARIMA</td></tr>
+<tr><th scope="row">DLTOURIST(-1)</th><td class="num">0.066</td><td class="num">0.042</td><td class="num">0.135</td><td class="num">0.079                    0.114</td></tr>
+<tr><th scope="row"></th><td class="num">(0.142)</td><td class="num">(0.139)</td><td class="num">(0.147)</td><td class="num">(0.127)                 (0.133)</td></tr>
+<tr><th scope="row">DLTOURIST(-2)</th><td>0.280**</td><td>0.269**</td><td>0.262**</td><td>0.214*                 0.335**</td></tr>
+<tr><th scope="row"></th><td class="num">(0.137)</td><td class="num">(0.124)</td><td class="num">(0.134)</td><td class="num">(0.123)                 (0.126)</td></tr>
+<tr><th scope="row">DLTOURIST(-3)</th><td class="num">-0.148</td><td class="num">-0.156</td><td class="num">-0.160</td><td>-0.252*                  -0.132</td></tr>
+<tr><th scope="row"></th><td class="num">(0.139)</td><td class="num">(0.130)</td><td class="num">(0.137)</td><td class="num">(0.127)                 (0.132)</td></tr>
+<tr><th scope="row">DLTOURIST(-12)</th><td>-0.270**</td><td>-0.276**</td><td>-0.289**</td><td>-0.252**                  -0.169</td></tr>
+<tr><th scope="row"></th><td class="num">(0.129)</td><td class="num">(0.122)</td><td class="num">(0.130)</td><td class="num">(0.116)                 (0.122)</td></tr>
+<tr><th scope="row">Weekly Google</th><td>1.049**</td><td>1.133***</td><td>1.090***</td><td></td></tr>
+<tr><th scope="row"></th><td class="num">(0.447)</td><td class="num">(0.401)</td><td class="num">(0.140)</td><td></td></tr>
+<tr><th scope="row">BETA01</th><td>1.076***</td><td class="num">-1.720</td><td>1.825**</td><td></td></tr>
+<tr><th scope="row"></th><td class="num">(0.081)</td><td class="num">(4.172)</td><td class="num">(0.758)</td><td></td></tr>
+<tr><th scope="row">BETA02</th><td>20.000***</td><td class="num">0.000</td><td>-0.808**</td><td></td></tr>
+<tr><th scope="row"></th><td class="num">(0.002)</td><td class="num">(0.847)</td><td class="num">(0.379)</td><td></td></tr>
+<tr><th scope="row">BETA03</th><td class="num">-0.037</td><td></td><td>0.074*</td><td></td></tr>
+<tr><th scope="row"></th><td class="num">(0.086)</td><td></td><td class="num">(0.037)</td><td></td></tr>
+<tr><th scope="row">Monthly Google (-1)</th><td></td><td></td><td></td><td class="num">-0.738</td></tr>
+<tr><th scope="row"></th><td></td><td></td><td></td><td class="num">(0.622)</td></tr>
+<tr><th scope="row">Monthly Google (-2)</th><td></td><td></td><td></td><td>1.783***</td></tr>
+<tr><th scope="row"></th><td></td><td></td><td></td><td class="num">(0.632)</td></tr>
+<tr><th scope="row">CONSTANT</th><td class="num">-0.403</td><td class="num">-0.448</td><td class="num">-0.457</td><td class="num">-0.438</td><td>0.290***</td></tr>
+<tr><th scope="row"></th><td class="num">(0.298)</td><td class="num">(0.275)</td><td class="num">(0.977)</td><td class="num">(0.279)</td><td class="num">(0.080)</td></tr>
+</tbody></table></div>
+<p class="table-note">Notes: The dependent variable is the natural logarithm of tourist arrivals year-on-year change; the estimated equation is <math class="inl" xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>&#x00394;</mi><mi>log</mi><mo stretchy="false">&#x00028;</mo><msub><mrow><mi mathvariant="normal">t</mi><mi mathvariant="normal">o</mi><mi mathvariant="normal">u</mi><mi mathvariant="normal">r</mi><mi mathvariant="normal">i</mi><mi mathvariant="normal">s</mi><mi mathvariant="normal">t</mi></mrow><mi>t</mi></msub><mo stretchy="false">&#x00029;</mo><mo>&#x0003D;</mo><mi>&#x003B1;</mi><mo>&#x0002B;</mo><msubsup><mo>&#x02211;</mo><mrow><mi>i</mi><mo>&#x0003D;</mo><mn>1</mn></mrow><mrow><mi>n</mi></mrow></msubsup><msub><mi>&#x003B2;</mi><mi>i</mi></msub><msup><mi>L</mi><mi>i</mi></msup><mi>&#x00394;</mi><mi>log</mi><mo stretchy="false">&#x00028;</mo><msub><mrow><mi mathvariant="normal">t</mi><mi mathvariant="normal">o</mi><mi mathvariant="normal">u</mi><mi mathvariant="normal">r</mi><mi mathvariant="normal">i</mi><mi mathvariant="normal">s</mi><mi mathvariant="normal">t</mi></mrow><mi>t</mi></msub><mo stretchy="false">&#x00029;</mo><mo>&#x0002B;</mo><mi>&#x003B3;</mi><msubsup><mo>&#x02211;</mo><mrow><mi>i</mi><mo>&#x0003D;</mo><mn>1</mn></mrow><mrow><mi>m</mi></mrow></msubsup><mi>W</mi><mo stretchy="false">&#x00028;</mo><mi>k</mi><mi>;</mi><mi>&#x003B8;</mi><mo stretchy="false">&#x00029;</mo><msup><mi>L</mi><mrow><mi>k</mi><mo>&#x0002F;</mo><mi>m</mi></mrow></msup><mi>&#x00394;</mi><mi>log</mi><mo stretchy="false">&#x00028;</mo><msubsup><mrow><mi mathvariant="normal">g</mi><mi mathvariant="normal">o</mi><mi mathvariant="normal">o</mi><mi mathvariant="normal">g</mi><mi mathvariant="normal">l</mi><mi mathvariant="normal">e</mi></mrow><mi>t</mi><mrow><mo stretchy="false">&#x00028;</mo><mi>m</mi><mo stretchy="false">&#x00029;</mo></mrow></msubsup><mo stretchy="false">&#x00029;</mo><mo>&#x0002B;</mo><msubsup><mi>&#x003F5;</mi><mi>t</mi><mrow><mo stretchy="false">&#x00028;</mo><mi>m</mi><mo stretchy="false">&#x00029;</mo></mrow></msubsup></mrow></math>. Columns (2)-(4) represent weekly Google data, and Column (5) represents monthly Google data. Column (6) represents the ARIMA model without Google trends information. Column (2) represents MIDAS with a beta weight function. Column (3) represents MIDAS with an exponential weight function. Column (4) represents the Almon formulation. Column (5) represents the ARIMA(1,1,1) results with monthly data. ***, **, and * denote statistical significance at the 1%, 5%, and 10% levels, respectively.</p>
+<p>Table 5 presents results for 3 different weighted weekly MIDAS regressions, monthly Google data, and a model without Google trends information. The results confirm that two and twelve months ahead are significantly correlated with changes in tourist arrivals. To illustrate, tourist arrivals data are monthly, while our Google Trends information is weekly. We use 8 lags (weeks) of Google Trends to explain each month of tourist arrivals. The estimation uses the 8 weeks up to, and including, the three weeks of the corresponding month. One week ahead has a significant impact on tourist arrivals. The other lags are not presented here. These results are comparable to those obtained by (Bangwayo-Skeete and Skeete, 2015), (Siliverstovs and Wochner, 2017) and (Park et al., 2017), who found evidence that Google Trends information offers significant benefits for tourist forecasting.</p>
+<div class="table-scroll">
+<table>
+<caption><b>Table 6.</b> MIDAS models estimates of overnight stays: January 2010 - December 2016</caption>
+<thead><tr><th scope="col"></th><th scope="col">Weekly Google Search</th><th scope="col"></th><th scope="col"></th><th scope="col">Monthly Google</th><th scope="col">Without Google</th></tr></thead>
+<tbody>
+<tr><th scope="row"></th><td>Beta coeff</td><td>Exp coeff</td><td>Almon coeff</td><td>ARIMA</td><td>ARIMA</td></tr>
+<tr><th scope="row">DLTOURIST(-1)</th><td class="num">0.175</td><td class="num">0.140</td><td class="num">0.233</td><td class="num">0.186                  0.181</td></tr>
+<tr><th scope="row"></th><td class="num">(0.128)</td><td class="num">(0.128)</td><td class="num">(0.144)</td><td class="num">(0.121)               (0.128)</td></tr>
+<tr><th scope="row">DLTOURIST(-2)</th><td>0.319**</td><td>0.306**</td><td>0.321***</td><td>0.298**              0.335***</td></tr>
+<tr><th scope="row"></th><td class="num">(0.122)</td><td class="num">(0.123)</td><td class="num">(0.130)</td><td class="num">(0.116)               (0.122)</td></tr>
+<tr><th scope="row">DLTOURIST(-3)</th><td class="num">-0.162</td><td class="num">-0.177</td><td class="num">-0.181</td><td>-0.262**                -0.189</td></tr>
+<tr><th scope="row"></th><td class="num">(0.125)</td><td class="num">(0.125)</td><td class="num">(0.133)</td><td class="num">(0.121)               (0.127)</td></tr>
+<tr><th scope="row">DLTOURIST(-12)</th><td>-0.333***</td><td>-0.318**</td><td>-0.323***</td><td>-0.289**              -0.254**</td></tr>
+<tr><th scope="row"></th><td class="num">(0.119)</td><td class="num">(0.120)</td><td class="num">(0.125)</td><td class="num">(0.111)               (0.117)</td></tr>
+<tr><th scope="row">Weekly Google</th><td class="num">1.759</td><td>2.422**</td><td>1.843**</td><td></td></tr>
+<tr><th scope="row"></th><td class="num">(1.179)</td><td class="num">(1.124)</td><td class="num">(0.951)</td><td></td></tr>
+<tr><th scope="row">BETA01</th><td>1.020***</td><td class="num">27.609</td><td>6.030***</td><td></td></tr>
+<tr><th scope="row"></th><td class="num">(0.067)</td><td class="num">(29.423)</td><td class="num">(2.220)</td><td></td></tr>
+<tr><th scope="row">BETA02</th><td class="num">3.265</td><td class="num">-9.458</td><td>-2.779**</td><td></td></tr>
+<tr><th scope="row"></th><td class="num">(5.047)</td><td class="num">(14.475)</td><td class="num">(1.108)</td><td></td></tr>
+<tr><th scope="row">BETA03</th><td>-0.140***</td><td></td><td>0.256**</td><td></td></tr>
+<tr><th scope="row"></th><td class="num">(0.035)</td><td></td><td class="num">(0.108)</td><td></td></tr>
+<tr><th scope="row">Monthly Google (-1)</th><td></td><td></td><td></td><td>-3.337*</td></tr>
+<tr><th scope="row"></th><td></td><td></td><td></td><td class="num">(1.793)</td></tr>
+<tr><th scope="row">Monthly Google (-2)</th><td></td><td></td><td></td><td>5.243***</td></tr>
+<tr><th scope="row"></th><td></td><td></td><td></td><td class="num">(1.797)</td></tr>
+<tr><th scope="row">CONSTANT</th><td class="num">-0.643</td><td class="num">-1.104</td><td class="num">-0.959</td><td class="num">-0.868</td><td>0.59***</td></tr>
+<tr><th scope="row"></th><td class="num">(0.843)</td><td class="num">(0.801)</td><td class="num">(0.900)</td><td class="num">(0.793)</td><td class="num">(0.158)</td></tr>
+</tbody></table></div>
+<p class="table-note">Notes: The dependent variable is the natural logarithm of overnight stays year-on-year change; the estimated equation is <math class="inl" xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>&#x00394;</mi><mi>log</mi><mo stretchy="false">&#x00028;</mo><msub><mrow><mi mathvariant="normal">o</mi><mi mathvariant="normal">v</mi><mi mathvariant="normal">e</mi><mi mathvariant="normal">r</mi><mi mathvariant="normal">n</mi><mi mathvariant="normal">i</mi><mi mathvariant="normal">g</mi><mi mathvariant="normal">h</mi><mi mathvariant="normal">t</mi></mrow><mi>t</mi></msub><mo stretchy="false">&#x00029;</mo><mo>&#x0003D;</mo><mi>&#x003B1;</mi><mo>&#x0002B;</mo><msubsup><mo>&#x02211;</mo><mrow><mi>i</mi><mo>&#x0003D;</mo><mn>1</mn></mrow><mrow><mi>n</mi></mrow></msubsup><msub><mi>&#x003B2;</mi><mi>i</mi></msub><msup><mi>L</mi><mi>i</mi></msup><mi>&#x00394;</mi><mi>log</mi><mo stretchy="false">&#x00028;</mo><msub><mrow><mi mathvariant="normal">o</mi><mi mathvariant="normal">v</mi><mi mathvariant="normal">e</mi><mi mathvariant="normal">r</mi><mi mathvariant="normal">n</mi><mi mathvariant="normal">i</mi><mi mathvariant="normal">g</mi><mi mathvariant="normal">h</mi><mi mathvariant="normal">t</mi></mrow><mi>t</mi></msub><mo stretchy="false">&#x00029;</mo><mo>&#x0002B;</mo><mi>&#x003B3;</mi><msubsup><mo>&#x02211;</mo><mrow><mi>i</mi><mo>&#x0003D;</mo><mn>1</mn></mrow><mrow><mi>w</mi></mrow></msubsup><mi>W</mi><mo stretchy="false">&#x00028;</mo><mi>k</mi><mi>;</mi><mi>&#x003B8;</mi><mo stretchy="false">&#x00029;</mo><msup><mi>L</mi><mrow><mi>k</mi><mo>&#x0002F;</mo><mi>w</mi></mrow></msup><mi>&#x00394;</mi><mi>log</mi><mo stretchy="false">&#x00028;</mo><msubsup><mrow><mi mathvariant="normal">g</mi><mi mathvariant="normal">o</mi><mi mathvariant="normal">o</mi><mi mathvariant="normal">g</mi><mi mathvariant="normal">l</mi><mi mathvariant="normal">e</mi></mrow><mi>t</mi><mrow><mo stretchy="false">&#x00028;</mo><mi>w</mi><mo stretchy="false">&#x00029;</mo></mrow></msubsup><mo stretchy="false">&#x00029;</mo><mo>&#x0002B;</mo><msubsup><mi>&#x003F5;</mi><mi>t</mi><mrow><mo stretchy="false">&#x00028;</mo><mi>w</mi><mo stretchy="false">&#x00029;</mo></mrow></msubsup></mrow></math>. Columns (2)-(4) represent weekly Google data, and Column (5) represents monthly Google data. Column (2) represents MIDAS with a beta weight function. Column (3) represents MIDAS with an Almon weight function, and Column (4) represents the step formulation. Column (5) represents ARIMA for results monthly data. ***, **, and * denote statistical significance at the 1%, 5%, and 10% levels, respectively.</p>
+<p>Monthly Google regression is performed with an ARIMA(1,1,1) model. The results indicate that data from two months ahead of arrivals are useful for assessing the actual number of tourist arrivals. Monthly data provide valuable insight into the understanding of tourist arrivals to Prague. The results confirm that carefully identified web search activity indices, such as Google Trends information, encompass early signals that can assist considerably in the prediction of tourists arrivals in Prague two months ahead.</p>
+<p>The results for overnight stays in Prague are similar to those for tourist arrivals (Table 6). Additionally, both one and two months ahead, Google monthly data convey useful predictive content for overnight stays. While tourist arrivals correspond to international visitors entering the country and include both tourists and same-day, non-resident visitors, overnight stays refer to the number of nights spent by non-resident tourists in accommodation establishments. Tourist arrivals concern all tourism activity, with overnight stays being particularly important for hotels and hostels.</p>
+<p>The top three countries of origin for tourist arrivals and overnight stays were selected to ensure the robustness of the MIDAS results using weekly Google trends information. German tourist arrivals and overnight stays in Prague present similar results to the benchmark model result (see Appendix, Table A1). All three country models with weekly Google Trends information performed better than their corresponding baseline models during the same prediction period (see Appendix). The results for Russia and the UK also indicate that data from one month ahead on tourist arrivals and overnight stays have a significant correlation with current tourists inbound, and MIDAS weekly Google Trends model frameworks perform better than other baseline models (Table A2, Table A3).</p>
+<div class="table-scroll">
+<table>
+<caption><b>Table 7.</b> Forecasting evaluations of MIDAS estimates of tourist arrivals and overnight stays</caption>
+<thead><tr><th scope="col"></th><th scope="col">RMSFE</th><th scope="col">MAE</th><th scope="col">MAPE</th><th scope="col">SMAPE</th><th scope="col">Theil's U</th></tr></thead>
+<tbody>
+<tr><th scope="rowgroup" colspan="6">Part A: Tourist Arrivals</th></tr>
+<tr><th scope="row">MIDAS-Beta</th><td class="num">15718.42</td><td class="num">13011.24</td><td class="num">58.24</td><td class="num">36.90</td><td class="num">0.19</td></tr>
+<tr><th scope="row">MIDAS-Exp</th><td class="num">16142.47</td><td class="num">13223.80</td><td class="num">59.43</td><td class="num">37.09</td><td class="num">0.19</td></tr>
+<tr><th scope="row">MIDAS-Almon</th><td>15077.63*</td><td>12270.19*</td><td>55.87*</td><td>35.08*</td><td>0.18*</td></tr>
+<tr><th scope="row">Monthly-Google</th><td class="num">18426.94</td><td class="num">14859.77</td><td class="num">57.95</td><td class="num">40.39</td><td class="num">0.22</td></tr>
+<tr><th scope="row">Without-Google</th><td class="num">19368.91</td><td class="num">15272.02</td><td class="num">57.05</td><td class="num">41.43</td><td class="num">0.25</td></tr>
+<tr><th scope="row">Mean</th><td class="num">16129.36</td><td class="num">13166.85</td><td class="num">56.85</td><td class="num">37.02</td><td class="num">0.20</td></tr>
+<tr><th scope="row">MSE</th><td class="num">16125.15</td><td class="num">13131.82</td><td class="num">56.75</td><td class="num">36.94</td><td class="num">0.20</td></tr>
+<tr><th scope="rowgroup" colspan="6">Part B: Overnight stays</th></tr>
+<tr><th scope="row">MIDAS-Beta</th><td>57650.78*</td><td>44641.69*</td><td class="num">124.11</td><td>64.41*</td><td class="num">0.34</td></tr>
+<tr><th scope="row">MIDAS-Exp</th><td class="num">59185.03</td><td class="num">45020.40</td><td class="num">123.65</td><td class="num">63.37</td><td class="num">0.34</td></tr>
+<tr><th scope="row">MIDAS-Almon</th><td class="num">58197.61</td><td class="num">45517.45</td><td class="num">124.78</td><td class="num">66.57</td><td>0.33*</td></tr>
+<tr><th scope="row">Monthly-Google</th><td class="num">63678.66</td><td class="num">48874.18</td><td class="num">111.31</td><td class="num">66.78</td><td class="num">0.36</td></tr>
+<tr><th scope="row">Without-Google</th><td class="num">65173.31</td><td class="num">48782.67</td><td>103.44*</td><td class="num">67.88</td><td class="num">0.40</td></tr>
+<tr><th scope="row">Mean</th><td class="num">58850.05</td><td>44027.4o</td><td class="num">115.13</td><td class="num">62.68</td><td class="num">0.35</td></tr>
+<tr><th scope="row">MSE</th><td class="num">58857.74</td><td class="num">44035.83</td><td class="num">115.08</td><td class="num">62.68</td><td class="num">0.35</td></tr>
+</tbody></table></div>
+<p class="table-note">Notes: The MIDAS models represent weekly Google data with different weighting functions. The Monthly-Google model represents regressions with monthly Google data, and the Without-Google model represents the result without Google trends information. Column (2) presents the root mean squared forecast error (RMSFE) results, Column (3) presents the mean absolute error (MAE) results, Column (4) presents the mean absolute percentage error (MAPE) results, Column (5) presents the symmetric MAPE results, and Column(6) presents Theil's U Statistics. MSE represents the mean standard error. * denotes the most accurate forecasting model.</p>
+<p>Next, an out-of-sample forecast evaluation was performed to assess the forecasting accuracy for each model. Thus, for all models, in-sample estimations were performed from January 2010 to May 2014, and out-of-sample forecasting was performed for June 2014 to December 2016.</p>
+<p>The most common methods used to determine forecasting accuracy are functions of the forecasting error. The root mean squared forecast error (RMSFE) and mean absolute percentage error (MAPE) were used to assess the forecasting ability of MIDAS using weekly Google Trends data. The results are shown in Table 7. Lower MAPE and RMSE values indicate that weekly MIDAS forecasting methods offer better forecasting performance than the model with monthly Google Trends informaiton and the model without Google Trends information. The usefulness of a forecasting model must be evaluated based on the out-of-sample forecasting performance. The results show that the MIDAS-Almon weekly Google model of tourist arrivals performs better than the other models (Part A, Table 7). The MIDAS-Almon model has the lowest forecasting error in terms of all metrics - RMSFE, MAPE, MAE. For the overnight stay results, while MIDAS-Beta has the lowest RMSFE and MAE, the model without Google Trends has a lower MAPE (Part B, Table 7).</p>
+<p>Figures 5 and 6 show the forecasting evaluations using different MIDAS regressions for tourist arrivals and overnight stays. For tourist arrivals, MIDAS-Almon is the best forecasting model (see Figure 5), whereas MIDAS-Beta is the best forecasting model for overnight stays (see Figure 6).</p>
+<figure>
+<img src="figures/fig5.png" alt="A chart from 2013 to 2016 of the actual month-on-month change in tourist arrivals, DTOURIST, shown as a swinging blue line, with the forecasts of the MIDAS-Beta, MIDAS-Exp and MIDAS-Almon models, the monthly-Google and without-Google models, the simple mean and the mean square error drawn over it. The forecast lines stay in a narrow band while the actual series swings far above and below it." />
+<figcaption><b>Figure 5.</b> Forecasting tourist arrivals in Prague by MIDAS estimates: Jan, 2012 - Dec, 2016. Notes: Lines represent the forecasting results from different models. DTOURIST represents the change in tourist arrivals. The most accurate forecasting method is MIDAS-Almon.</figcaption>
+</figure>
+<figure>
+<img src="figures/fig6.png" alt="The same chart drawn for overnight stays: the actual change, DOVERNIGHT, swings widely while the forecast lines of the same eight models stay in a narrow band." />
+<figcaption><b>Figure 6.</b> Forecasting overnight stays in Prague by MIDAS estimates: Jan, 2012 - Dec, 2016. Notes: Lines represent the forecasting results from different models. DTOURIST represents the change in tourist arrivals. The most accurate forecasting method is MIDAS-Almon.</figcaption>
+</figure>
+<div class="table-scroll">
+<table>
+<caption><b>Table 8.</b> Forecasting Evaluations - Diebold &amp; Mariano Test</caption>
+<thead><tr><th scope="col">w/o Google Trends</th><th scope="col">Model with Google</th><th scope="col"></th><th scope="col"></th><th scope="col">Monthly Google</th></tr></thead>
+<tbody>
+<tr><th scope="row">ARIMA</th><td>MIDAS-Beta</td><td>MIDAS-Exp</td><td>MIDAS-Almon</td><td>ARIMA</td></tr>
+<tr><th scope="row">Tourist arrivals</th><td>4.61***</td><td>4.63***</td><td>4.83***</td><td>4.32***</td></tr>
+<tr><th scope="row">Overnight stays</th><td>4.45***</td><td>4.83***</td><td>5.01***</td><td>4.07***</td></tr>
+</tbody></table></div>
+<p class="table-note">Notes: The training sample is from the period of January 2012 - June 2014, and the evaluation sample is from July 2014 - December 2016. The Diebold-Mariano test compares the baseline model without Google Trends with the Google Trends models. The null hypothesis is that both forecasts have the same accuracy; the alternative hypothesis is that the Google Trends model is more accurate than the model without Google Trends information.</p>
+<p>In summary, the model with weekly Google Trends information performed better than the models with monthly Google Trend information and models without Google Trends information. Therefore, we can conclude that weekly Google data improves the forecasting performance for both tourist arrivals and overnight stays in Prague.</p>
+<h2 id="sec-5">5. Concluding Remarks</h2>
+<p>The main objective of this study is to perform accurate nowcasting and forecasting of tourist arrivals and overnight stays in Prague. The accurate forecasting of tourism trends is important due to the rapidly growing volume of tourism relative to other sectors of the economy, both in Prague and globally. Internet searches play an increasingly important role in tourism and in assessing tourism consumption dynamics. This fact has inspired our evaluation of the impact of Google Trends searches on Prague tourist arrivals and overnight stays using MIDAS, which allows us to relax the assumption of a common frequency for all time series.</p>
+<p>Three different weighted MIDAS models using weekly data, ARIMA(1,1,1) with Monthly Google Trends information, and a model without the informative variable were evaluated. The main objective was to assess whether Google Trends information provides significant benefits to the evaluation and forecasting of tourist arrivals and overnight stays in Prague and whether models with higher-frequency data (weekly data) outperform models that rely on a single data frequency.</p>
+<p>Our results highlight the strong potential of Google Trends to improve forecasting power in the case of tourism. MIDAS allows the evaluation of series with different frequencies, such as weekly Google Trends information and monthly tourist data. The MIDAS-Beta model for tourist arrivals and the weekly MIDAS-Almon model for overnight stays outperformed the models using monthly Google Trends information and the model without Google Trends information. The results confirm that using data from Google searches enriches the information set available for policy makers and business entrepreneurs operating in the tourism sector. The accurate forecasting of tourist arrivals and overnight stays plays a vital role due to their enormous impact on economic growth in tourism-dependent destinations.</p>
+<p>A caveat of our approach is in order: the MIDAS approach is still in the development stage. A challenging question to be considered in future research is whether the MIDAS algorithm can be optimized to further improve forecasting performance.</p>
+<h2 id="sec-appendix">Appendix</h2>
+<div class="table-scroll">
+<table>
+<caption><b>Table A1.</b> MIDAS models estimates in tourism inbound from Germany to Prague</caption>
+<thead><tr><th scope="col">Tourist arrivals</th><th scope="col">Weekly Google Search</th><th scope="col"></th><th scope="col"></th><th scope="col">Monthly Google</th><th scope="col">Without Google</th></tr></thead>
+<tbody>
+<tr><th scope="row"></th><td>Beta coeff</td><td>Almon coeff</td><td>Step coeff</td><td>ARIMA</td><td>ARIMA</td></tr>
+<tr><th scope="row">DTOURIST(-1)</th><td class="num">-0.151</td><td class="num">-0.216</td><td class="num">-0.117</td><td class="num">-0.161                 -0.167</td></tr>
+<tr><th scope="row"></th><td class="num">(0.129)</td><td class="num">(0.131)</td><td class="num">(0.131)</td><td class="num">( 0.144)                (0.132)</td></tr>
+<tr><th scope="row">DTOURIST(-2)</th><td>0.342**</td><td>0.350**</td><td>0.324**</td><td>0.405***               0.453***</td></tr>
+<tr><th scope="row"></th><td class="num">(0.124)</td><td class="num">(0.133)</td><td class="num">(0.125)</td><td class="num">(0.135)                (0.122)</td></tr>
+<tr><th scope="row">DTOURIST(-3)</th><td class="num">0.137</td><td class="num">0.127</td><td class="num">0.108</td><td class="num">0.155                  0.180</td></tr>
+<tr><th scope="row"></th><td class="num">(0.127)</td><td class="num">(0.135)</td><td class="num">(0.129)</td><td class="num">(0.138)                (0.132)</td></tr>
+<tr><th scope="row">DTOURIST(-12)</th><td>-0.355**</td><td>-0.275**</td><td>-0.344***</td><td>-0.280**               -0.254**</td></tr>
+<tr><th scope="row"></th><td class="num">(0.115)</td><td class="num">(0.118)</td><td class="num">(0.115)</td><td class="num">(0.124)                (0.120)</td></tr>
+<tr><th scope="row">Weekly Google</th><td>144.374*</td><td>151.835**</td><td>89.874***</td><td></td></tr>
+<tr><th scope="row"></th><td class="num">(72.546)</td><td class="num">(69.269)</td><td class="num">(26.944)</td><td></td></tr>
+<tr><th scope="row">BETA01</th><td>0.977***</td><td class="num">-20.274</td><td>-54.677**</td><td></td></tr>
+<tr><th scope="row"></th><td class="num">(0.042)</td><td class="num">(36.201)</td><td class="num">(27.228)</td><td></td></tr>
+<tr><th scope="row">BETA02</th><td class="num">3.107</td><td class="num">0.001</td><td class="num">-7.410</td><td></td></tr>
+<tr><th scope="row"></th><td class="num">(3.142)</td><td class="num">(0.002)</td><td class="num">(7.909)</td><td></td></tr>
+<tr><th scope="row">BETA03</th><td>-0.080***</td><td></td><td></td><td></td></tr>
+<tr><th scope="row"></th><td class="num">(0.024)</td><td></td><td></td><td></td></tr>
+<tr><th scope="row">Monthly Google (-1)</th><td></td><td></td><td></td><td class="num">-23.571</td></tr>
+<tr><th scope="row"></th><td></td><td></td><td></td><td class="num">(110.468)</td></tr>
+<tr><th scope="row">Monthly Google (-2)</th><td></td><td></td><td></td><td class="num">72.660</td></tr>
+<tr><th scope="row"></th><td></td><td></td><td></td><td class="num">(107.626)</td></tr>
+<tr><th scope="row">CONSTANT</th><td class="num">-5.164</td><td class="num">-5.363</td><td class="num">-4.257</td><td class="num">-4.142               2.988</td></tr>
+<tr><th scope="row"></th><td class="num">(4.172)</td><td class="num">(4.02)</td><td class="num">(4.177)</td><td class="num">(4.395)              (1.215)</td></tr>
+<tr><th scope="rowgroup" colspan="6">Overnight Stays</th></tr>
+<tr><th scope="row">DTOURIST(-1)</th><td class="num">-0.082</td><td class="num">-0.134</td><td class="num">-0.182</td><td class="num">-0.125</td><td class="num">-0.117</td></tr>
+<tr><th scope="row"></th><td class="num">(0.140)</td><td class="num">(0.121)</td><td class="num">(0.136)</td><td class="num">(0.138)</td><td class="num">(0.129)</td></tr>
+<tr><th scope="row">DTOURIST(-2)</th><td>0.386***</td><td>0.396***</td><td>0.488***</td><td>0.454***</td><td>0.500***</td></tr>
+<tr><th scope="row"></th><td class="num">(0.135)</td><td class="num">(0.117)</td><td class="num">(0.127)</td><td class="num">(0.128)</td><td class="num">(0.116)</td></tr>
+<tr><th scope="row">DTOURIST(-3)</th><td class="num">0.142</td><td class="num">0.103</td><td class="num">0.126</td><td class="num">0.164</td><td class="num">0.188</td></tr>
+<tr><th scope="row"></th><td class="num">(0.135)</td><td class="num">0(.125)</td><td class="num">(0.140)</td><td class="num">(0.134)</td><td class="num">(0.129)</td></tr>
+<tr><th scope="row">DTOURIST(-12)</th><td>-0.358***</td><td>-0.393***</td><td>52.723**</td><td>-0.327**</td><td>-0.303**</td></tr>
+<tr><th scope="row"></th><td class="num">(0.124)</td><td class="num">(0.116)</td><td class="num">(86.212)</td><td class="num">(0.123)</td><td class="num">(0.119)</td></tr>
+<tr><th scope="row">Weekly Google</th><td class="num">266.271</td><td>501.238***</td><td class="num">77.588</td><td></td><td></td></tr>
+<tr><th scope="row"></th><td class="num">(199.440)</td><td class="num">(155.273)</td><td class="num">(118.454)</td><td></td><td></td></tr>
+<tr><th scope="row">BETA01</th><td class="num">-0.535</td><td class="num">-25.017</td><td class="num">-297.355</td><td></td><td></td></tr>
+<tr><th scope="row"></th><td class="num">2.757</td><td class="num">55.769</td><td class="num">407.039</td><td></td><td></td></tr>
+<tr><th scope="row">BETA02</th><td class="num">-0.507</td><td class="num">0.012</td><td class="num">-24.453</td><td></td><td></td></tr>
+<tr><th scope="row"></th><td class="num">2.719</td><td class="num">13.651</td><td class="num">47.032</td><td></td><td></td></tr>
+<tr><th scope="row">BETA03</th><td class="num">-0.084</td><td></td><td></td><td></td><td></td></tr>
+<tr><th scope="row"></th><td class="num">0.036</td><td></td><td></td><td></td><td></td></tr>
+<tr><th scope="row">Monthly Google (-1)</th><td></td><td></td><td></td><td class="num">-251.534</td><td></td></tr>
+<tr><th scope="row"></th><td></td><td></td><td></td><td class="num">(281.237)</td><td></td></tr>
+<tr><th scope="row">Monthly Google (-2)</th><td></td><td></td><td></td><td class="num">153.515</td><td></td></tr>
+<tr><th scope="row"></th><td></td><td></td><td></td><td class="num">(273.631)</td><td></td></tr>
+<tr><th scope="row">CONSTANT</th><td>-8.859***</td><td>-2.307***</td><td class="num">-6.735</td><td class="num">-4.079</td><td>5.863**</td></tr>
+<tr><th scope="row"></th><td class="num">(1.669)</td><td class="num">(0.939)</td><td class="num">(11.721)</td><td class="num">(11.461)</td><td class="num">(2.723)</td></tr>
+</tbody></table></div>
+<p class="table-note">Notes: The dependent variables are the natural logarithm of tourist arrivals and overnight stays year-on-year changes. Columns (2)-(4) represent weekly Google data, Column (5) represents monthly Google data, and Column (6) represents the ARIMA model without Google trends information. ***, **, and * denote statistical significance at the 1%, 5%, and 10% levels, respectively.</p>
+<div class="table-scroll">
+<table>
+<caption><b>Table A2.</b> MIDAS models estimates of tourism inbound from Russia to Prague</caption>
+<thead><tr><th scope="col">Tourist arrivals</th><th scope="col">Weekly Google Search</th><th scope="col"></th><th scope="col"></th><th scope="col">Monthly Google</th><th scope="col">Without Google</th></tr></thead>
+<tbody>
+<tr><th scope="row"></th><td>Beta coeff</td><td>Almon coeff</td><td>Step coeff</td><td>ARIMA</td><td>ARIMA</td></tr>
+<tr><th scope="row">DLTOURIST(-1)</th><td>0.420***</td><td>0.456***</td><td>0.453***</td><td>0.373***</td><td>0.583***</td></tr>
+<tr><th scope="row"></th><td class="num">(0.131)</td><td class="num">(0.133)</td><td class="num">(0.128)</td><td class="num">(0.125)</td><td class="num">(0.129)</td></tr>
+<tr><th scope="row">DLTOURIST(-2)</th><td class="num">0.019</td><td class="num">0.122</td><td class="num">0.027</td><td class="num">0.137</td><td class="num">0.196</td></tr>
+<tr><th scope="row"></th><td class="num">(0.151)</td><td class="num">(0.148)</td><td class="num">(0.144)</td><td class="num">(0.133)</td><td class="num">(0.150)</td></tr>
+<tr><th scope="row">DLTOURIST(-3)</th><td class="num">0.190</td><td class="num">0.188</td><td class="num">0.181</td><td class="num">0.136</td><td>0.233*</td></tr>
+<tr><th scope="row"></th><td class="num">(0.127)</td><td class="num">(0.134)</td><td class="num">(0.124)</td><td class="num">(0.122)</td><td class="num">(0.137)</td></tr>
+<tr><th scope="row">DLTOURIST(-12)</th><td>-0.422***</td><td>-0.322***</td><td>-0.406***</td><td>-0.439***</td><td>-0.199**</td></tr>
+<tr><th scope="row"></th><td class="num">(0.100)</td><td class="num">(0.096)</td><td class="num">(0.098)</td><td class="num">(0.096)</td><td class="num">(0.085)</td></tr>
+<tr><th scope="row">Weekly Google</th><td>468.134***</td><td>284.092***</td><td>105.806***</td><td></td><td></td></tr>
+<tr><th scope="row"></th><td class="num">(123.086)</td><td class="num">(102.596)</td><td class="num">(37.937)</td><td></td><td></td></tr>
+<tr><th scope="row">BETA01</th><td class="num">-0.438</td><td class="num">-2.021</td><td class="num">-47.214</td><td></td><td></td></tr>
+<tr><th scope="row"></th><td class="num">(24.451)</td><td class="num">(4.196)</td><td class="num">(49.837)</td><td></td><td></td></tr>
+<tr><th scope="row">BETA02</th><td class="num">-0.413</td><td class="num">0.000</td><td>133.611**</td><td></td><td></td></tr>
+<tr><th scope="row"></th><td class="num">(24.451)</td><td class="num">(0.001)</td><td class="num">(64.874)</td><td></td><td></td></tr>
+<tr><th scope="row">BETA03</th><td class="num">0.028</td><td></td><td></td><td></td><td></td></tr>
+<tr><th scope="row"></th><td class="num">( 0.077)</td><td></td><td></td><td></td><td></td></tr>
+<tr><th scope="row">Monthly Google (-1)</th><td></td><td></td><td></td><td>483.969**</td><td></td></tr>
+<tr><th scope="row"></th><td></td><td></td><td></td><td class="num">(184.484)</td><td></td></tr>
+<tr><th scope="row">Monthly Google (-2)</th><td></td><td></td><td></td><td class="num">284.899</td><td></td></tr>
+<tr><th scope="row"></th><td></td><td></td><td></td><td class="num">(183.975)</td><td></td></tr>
+<tr><th scope="row">CONSTANT</th><td>-2.368***</td><td>-1.440***</td><td>-2.251***</td><td>-2.019***</td><td class="num">0.873</td></tr>
+<tr><th scope="row"></th><td class="num">(0.631)</td><td class="num">(0.528)</td><td class="num">(0.611)</td><td class="num">(0.483)</td><td class="num">(0.711)</td></tr>
+<tr><th scope="row"></th><td>Wee</td><td>kly Google Sear</td><td>ch</td><td>Monthly Google</td><td>Without Google</td></tr>
+<tr><th scope="rowgroup" colspan="6">Overnight Stays</th></tr>
+<tr><th scope="row">DLTOURIST(-1)</th><td>0.466***</td><td>0.485***</td><td>0.495***</td><td>0.392***</td><td>0.623***</td></tr>
+<tr><th scope="row"></th><td class="num">(0.138)</td><td class="num">( 0.135)</td><td class="num">(0.134)</td><td class="num">(0.129)</td><td class="num">(0.132)</td></tr>
+<tr><th scope="row">DLTOURIST(-2)</th><td class="num">0.168</td><td class="num">0.166</td><td class="num">0.062</td><td class="num">0.168</td><td class="num">0.230</td></tr>
+<tr><th scope="row"></th><td class="num">(0.152)</td><td class="num">(0.154)</td><td class="num">(0.150)</td><td class="num">(0.136)</td><td class="num">(0.155)</td></tr>
+<tr><th scope="row">DLTOURIST(-3)</th><td class="num">0.086</td><td class="num">0.087</td><td class="num">0.093</td><td class="num">0.051</td><td class="num">0.118</td></tr>
+<tr><th scope="row"></th><td class="num">( 0.144)</td><td class="num">( 0.140)</td><td class="num">(0.129)</td><td class="num">(0.125)</td><td class="num">(0.142)</td></tr>
+<tr><th scope="row">DLTOURIST(-12)</th><td>-0.280**</td><td>-0.271***</td><td>-0.343***</td><td>-0.412***</td><td>-0.152*</td></tr>
+<tr><th scope="row"></th><td class="num">(0.122)</td><td class="num">(0.095)</td><td class="num">(0.098)</td><td class="num">(0.099)</td><td class="num">(0.087)</td></tr>
+<tr><th scope="row">Weekly Google</th><td>1269.535**</td><td>1201.694***</td><td>417.137**</td><td></td><td></td></tr>
+<tr><th scope="row"></th><td class="num">(601.374)</td><td class="num">(413.059)</td><td class="num">(165.583)</td><td></td><td></td></tr>
+<tr><th scope="row">BETA01</th><td>1.000***</td><td class="num">26.993</td><td class="num">-210.580</td><td></td><td></td></tr>
+<tr><th scope="row"></th><td class="num">(0.255)</td><td class="num">(99.930)</td><td class="num">(220.677)</td><td></td><td></td></tr>
+<tr><th scope="row">BETA02</th><td>20.000***</td><td class="num">-9.139</td><td>572.430**</td><td></td><td></td></tr>
+<tr><th scope="row"></th><td class="num">( 0.006)</td><td class="num">( 32.644)</td><td class="num">(285.244)</td><td></td><td></td></tr>
+<tr><th scope="row">BETA03</th><td class="num">0.198</td><td></td><td></td><td></td><td></td></tr>
+<tr><th scope="row"></th><td class="num">(1.727)</td><td></td><td></td><td></td><td></td></tr>
+<tr><th scope="row">Monthly Google (-1)</th><td></td><td></td><td></td><td>1976.908**</td><td></td></tr>
+<tr><th scope="row"></th><td></td><td></td><td></td><td class="num">(791.296)</td><td></td></tr>
+<tr><th scope="row">Monthly Google (-2)</th><td></td><td></td><td></td><td>1395.206*</td><td></td></tr>
+<tr><th scope="row"></th><td></td><td></td><td></td><td class="num">(810.783)</td><td></td></tr>
+<tr><th scope="row">CONSTANT</th><td>-6.589**</td><td>-6.214***</td><td>-9.111***</td><td>-9.013***</td><td class="num">-0.164</td></tr>
+<tr><th scope="row"></th><td class="num">(3.227)</td><td class="num">(2.144)</td><td class="num">(2.593)</td><td class="num">(2.108)</td><td class="num">(0.315)</td></tr>
+</tbody></table></div>
+<p class="table-note">Notes: The dependent variables are the natural logarithm of tourist arrivals and overnight stays year-on-year changes. Columns (2)-(4) represent weekly Google data, Column (5) represents monthly Google data, and Column (6) represents the ARIMA model without Google trends information. ***, **, and * denote statistical significance at the 1%, 5%, and 10% levels, respectively.</p>
+<div class="table-scroll">
+<table>
+<caption><b>Table A3.</b> MIDAS models estimates of tourism inbound from UK to Prague</caption>
+<thead><tr><th scope="col">Tourist arrivals</th><th scope="col">Weekly Google Search</th><th scope="col"></th><th scope="col"></th><th scope="col">Monthly Google</th><th scope="col">Without Google</th></tr></thead>
+<tbody>
+<tr><th scope="row"></th><td>Beta coeff</td><td>Almon coeff</td><td>Step coeff</td><td>ARIMA</td><td>ARIMA</td></tr>
+<tr><th scope="row">DLTOURIST(-1)</th><td>0.231*</td><td class="num">0.215</td><td>0.226*</td><td class="num">0.207</td><td>0.266**</td></tr>
+<tr><th scope="row"></th><td class="num">(0.137)</td><td class="num">(0.136)</td><td class="num">(0.134)</td><td class="num">(0.132)</td><td class="num">(0.132)</td></tr>
+<tr><th scope="row">DLTOURIST(-2)</th><td class="num">-0.080</td><td class="num">-0.063</td><td class="num">-0.060</td><td class="num">-0.063</td><td class="num">-0.025</td></tr>
+<tr><th scope="row"></th><td class="num">(0.146)</td><td class="num">(0.140)</td><td class="num">(0.144)</td><td class="num">(0.134)</td><td class="num">(0.137)</td></tr>
+<tr><th scope="row">DLTOURIST(-3)</th><td class="num">0.101</td><td class="num">0.141</td><td class="num">0.095</td><td class="num">0.096</td><td class="num">0.161</td></tr>
+<tr><th scope="row"></th><td class="num">(0.116)</td><td class="num">(0.112)</td><td class="num">(0.116)</td><td class="num">(0.112)</td><td class="num">(0.110)</td></tr>
+<tr><th scope="row">DLTOURIST(-12)</th><td>-0.161*</td><td>-0.166*</td><td>-0.163*</td><td>-0.180**</td><td class="num">-0.086</td></tr>
+<tr><th scope="row"></th><td class="num">(0.090)</td><td class="num">(0.088)</td><td class="num">(0.090)</td><td class="num">(0.088)</td><td class="num">(0.079)</td></tr>
+<tr><th scope="row">Weekly Google</th><td>95.894*</td><td>80.856*</td><td class="num">7.385</td><td></td><td></td></tr>
+<tr><th scope="row"></th><td class="num">(51.801)</td><td class="num">(41.438)</td><td class="num">(15.318)</td><td></td><td></td></tr>
+<tr><th scope="row">BETA01</th><td class="num">3.246</td><td class="num">-23.578</td><td class="num">23.063</td><td></td><td></td></tr>
+<tr><th scope="row"></th><td class="num">(3.065)</td><td class="num">(16.098)</td><td class="num">(17.742)</td><td></td><td></td></tr>
+<tr><th scope="row">BETA02</th><td class="num">3.885</td><td class="num">0.000</td><td class="num">-35.266</td><td></td><td></td></tr>
+<tr><th scope="row"></th><td class="num">(3.899)</td><td class="num">(0.001)</td><td class="num">(75.574)</td><td></td><td></td></tr>
+<tr><th scope="row">BETA03</th><td>-0.185**</td><td></td><td></td><td></td><td></td></tr>
+<tr><th scope="row"></th><td class="num">(0.076)</td><td></td><td></td><td></td><td></td></tr>
+<tr><th scope="row">Monthly Google (-1)</th><td></td><td></td><td></td><td class="num">41.498</td><td></td></tr>
+<tr><th scope="row"></th><td></td><td></td><td></td><td class="num">(36.177)</td><td></td></tr>
+<tr><th scope="row">Monthly Google (-2)</th><td></td><td></td><td></td><td class="num">23.888</td><td></td></tr>
+<tr><th scope="row"></th><td></td><td></td><td></td><td class="num">(35.955)</td><td></td></tr>
+<tr><th scope="row">CONSTANT</th><td class="num">-2.714</td><td class="num">-2.009</td><td class="num">-2.296</td><td class="num">-2.714</td><td>1.469***</td></tr>
+<tr><th scope="rowgroup" colspan="6">Overnight Stays</th></tr>
+<tr><th scope="row">DLTOURIST(-1)</th><td>0.336**</td><td>0.306**</td><td>0.332**</td><td>0.319**</td><td>0.347***</td></tr>
+<tr><th scope="row"></th><td class="num">(0.137)</td><td class="num">(0.137)</td><td class="num">(0.134)</td><td class="num">(0.132)</td><td class="num">(0.130)</td></tr>
+<tr><th scope="row">DLTOURIST(-2)</th><td class="num">0.166</td><td class="num">0.151</td><td class="num">0.158</td><td class="num">0.144</td><td class="num">0.186</td></tr>
+<tr><th scope="row"></th><td class="num">(0.152)</td><td class="num">(0.150)</td><td class="num">(0.149)</td><td class="num">(0.139)</td><td class="num">(0.137)</td></tr>
+<tr><th scope="row">DLTOURIST(-3)</th><td class="num">0.138</td><td class="num">0.166</td><td class="num">0.117</td><td class="num">0.118</td><td class="num">0.165</td></tr>
+<tr><th scope="row"></th><td class="num">(0.116)</td><td class="num">(0.114)</td><td class="num">(0.118)</td><td class="num">(0.115)</td><td class="num">(0.111)</td></tr>
+<tr><th scope="row">DLTOURIST(-12)</th><td>-0.088*</td><td class="num">-0.122</td><td class="num">-0.098</td><td class="num">-0.123</td><td class="num">-0.042</td></tr>
+<tr><th scope="row"></th><td class="num">(0.095)</td><td class="num">(0.089)</td><td class="num">(0.093)</td><td class="num">(0.090)</td><td class="num">(0.072)</td></tr>
+<tr><th scope="row">Weekly Google</th><td>163.171**</td><td>183.293*</td><td>44.949**</td><td></td><td></td></tr>
+<tr><th scope="row"></th><td class="num">(60.695)</td><td class="num">(101.691)</td><td class="num">(21.118)</td><td></td><td></td></tr>
+<tr><th scope="row">BETA01</th><td>8.400**</td><td class="num">-22.710</td><td class="num">58.500</td><td></td><td></td></tr>
+<tr><th scope="row"></th><td class="num">(3.836)</td><td class="num">(60319.490)</td><td class="num">(47.676)</td><td></td><td></td></tr>
+<tr><th scope="row">BETA02</th><td>19.999***</td><td class="num">0.000</td><td class="num">-97.531</td><td></td><td></td></tr>
+<tr><th scope="row"></th><td class="num">(0.002)</td><td class="num">(1141.485)</td><td class="num">(201.535)</td><td></td><td></td></tr>
+<tr><th scope="row">BETA03</th><td>-0.175*</td><td></td><td></td><td></td><td></td></tr>
+<tr><th scope="row"></th><td class="num">(0.101)</td><td></td><td></td><td></td><td></td></tr>
+<tr><th scope="row">Monthly Google (-1)</th><td></td><td></td><td></td><td class="num">103.521</td><td></td></tr>
+<tr><th scope="row"></th><td></td><td></td><td></td><td class="num">(100.012)</td><td></td></tr>
+<tr><th scope="row">Monthly Google (-2)</th><td></td><td></td><td></td><td class="num">37.673</td><td></td></tr>
+<tr><th scope="row"></th><td></td><td></td><td></td><td class="num">(98.787)</td><td></td></tr>
+<tr><th scope="row">CONSTANT</th><td class="num">-5.031</td><td class="num">-5.826</td><td class="num">-4.710</td><td class="num">-6.958</td><td>2.124**</td></tr>
+<tr><th scope="row"></th><td class="num">(6.997)</td><td class="num">(5.328)</td><td class="num">(7.183)</td><td class="num">(6.162)</td><td class="num">(0.987)</td></tr>
+</tbody></table></div>
+<p class="table-note">Notes: The dependent variables are the natural logarithm of tourist arrivals and overnight stays year-on-year changes; the estimated equation is <math class="inl" xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>&#x00394;</mi><mi>log</mi><mo stretchy="false">&#x00028;</mo><msub><mrow><mi mathvariant="normal">t</mi><mi mathvariant="normal">o</mi><mi mathvariant="normal">u</mi><mi mathvariant="normal">r</mi><mi mathvariant="normal">i</mi><mi mathvariant="normal">s</mi><mi mathvariant="normal">t</mi></mrow><mi>t</mi></msub><mo stretchy="false">&#x00029;</mo><mo>&#x0003D;</mo><mi>&#x003B1;</mi><mo>&#x0002B;</mo><msubsup><mo>&#x02211;</mo><mrow><mi>i</mi><mo>&#x0003D;</mo><mn>1</mn></mrow><mrow><mi>n</mi></mrow></msubsup><msub><mi>&#x003B2;</mi><mi>i</mi></msub><msup><mi>L</mi><mi>i</mi></msup><mi>&#x00394;</mi><mi>log</mi><mo stretchy="false">&#x00028;</mo><msub><mrow><mi mathvariant="normal">t</mi><mi mathvariant="normal">o</mi><mi mathvariant="normal">u</mi><mi mathvariant="normal">r</mi><mi mathvariant="normal">i</mi><mi mathvariant="normal">s</mi><mi mathvariant="normal">t</mi></mrow><mi>t</mi></msub><mo stretchy="false">&#x00029;</mo><mo>&#x0002B;</mo><mi>&#x003B3;</mi><msubsup><mo>&#x02211;</mo><mrow><mi>i</mi><mo>&#x0003D;</mo><mn>1</mn></mrow><mrow><mi>w</mi></mrow></msubsup><mi>W</mi><mo stretchy="false">&#x00028;</mo><mi>k</mi><mi>;</mi><mi>&#x003B8;</mi><mo stretchy="false">&#x00029;</mo><msup><mi>L</mi><mrow><mi>k</mi><mo>&#x0002F;</mo><mi>w</mi></mrow></msup><mi>&#x00394;</mi><mi>log</mi><mo stretchy="false">&#x00028;</mo><msubsup><mrow><mi mathvariant="normal">g</mi><mi mathvariant="normal">o</mi><mi mathvariant="normal">o</mi><mi mathvariant="normal">g</mi><mi mathvariant="normal">l</mi><mi mathvariant="normal">e</mi></mrow><mi>t</mi><mrow><mo stretchy="false">&#x00028;</mo><mi>w</mi><mo stretchy="false">&#x00029;</mo></mrow></msubsup><mo stretchy="false">&#x00029;</mo><mo>&#x0002B;</mo><msubsup><mi>&#x003F5;</mi><mi>t</mi><mrow><mo stretchy="false">&#x00028;</mo><mi>w</mi><mo stretchy="false">&#x00029;</mo></mrow></msubsup></mrow></math>. Columns (2)-(4) represent weekly Google data, Column (5) represents monthly Google data, and Column (6) represents the ARIMA model without Google trends information. Column (2) represents MIDAS with a beta weight function. Column (3) represents MIDAS with an exponential weight function. Column (4) represents the Almon formulation. Column (5) represents the ARIMA(1,1,1) results with monthly data. ***, **, and * denote statistical significance at the 1%, 5%, and 10% levels, respectively.</p>
+<h2 id="sec-references">REFERENCES</h2>
+<ol class="references unnumbered">
+<li>Akin, M. (2015). A novel approach to model selection in tourism demand modeling. Tourism Management, 48(C):64 – 72.</li>
+<li>Almon, S. (1965). The distributed lag between capital appropriations and expenditures. Econometrica: Journal of the Econometric Society, pages 178–196.</li>
+<li>Andreou, E., Ghysels, E., and Kourtellos, A. (2010). Regression models with mixed sampling frequencies. Journal of Econometrics, 158(2):246–261.</li>
+<li>Andreou, E., Ghysels, E., and Kourtellos, A. (2012). Forecasting with mixed-frequency data. In The Oxford Handbook of Economic Forecasting. Oxford University Press.</li>
+<li>Askitas, N. and Zimmermann, K. F. (2009). Google Econometrics and Unemployment Forecasting. Applied Economics Quarterly (formerly: Konjunkturpolitik), Duncker &amp; Humblot, Berlin, 55(2):107– 120.</li>
+<li>Athanasopoulos, G., Hyndman, R. J., Song, H., and Wu, D. C. (2011). The tourism forecasting competition. International Journal of Forecasting, 27(3):822–844.</li>
+<li>Bangwayo-Skeete, P. F. and Skeete, R. W. (2015). Can google data improve the forecasting performance of tourist arrivals? mixed-data sampling approach. Tourism Management, 46(C):454 – 464.</li>
+<li>Carriere-Swallow, Y. and Labbe, F. (2013). Nowcasting with Google Trends in an Emerging Market. Journal of Forecasting, 32(4):289–298.</li>
+<li>Choi, H. and Varian, H. (2012). Predicting the Present with Google Trends. The Economic Record, 88(1):2–9.</li>
+<li>Claveria, O. and Torra, S. (2014). Forecasting tourism demand to catalonia: Neural networks vs. time series models. Economic Modelling, 36(C):220 – 228.</li>
+<li>D’Amuri, F. and Marcucci, J. (2017). The predictive power of google searches in forecasting us unemployment. International Journal of Forecasting, 33(4):801 – 816.</li>
+<li>Dergiades, T., Mavragani, E., and Pan, B. (2018). Google trends and tourists’ arrivals: Emerging biases and proposed corrections. Tourism Management, 66:108 – 120.</li>
+<li>Dickey, D. A. and Fuller, W. A. (1979). Distribution of the estimators for autoregressive time series with a unit root. Journal of the American statistical association, 74(366a):427–431.</li>
+<li>Dukic, V., Lopes, H. F., and Polson, N. G. (2012). Tracking Epidemics With Google Flu Trends Data and a State-Space SEIR Model. Journal of the American Statistical Association, 107(500):1410–1426.</li>
+<li>Engle, R. F., Ghysels, E., and Sohn, B. (2013). Stock market volatility and macroeconomic fundamentals. The Review of Economics and Statistics, 95(3):776–797.</li>
+<li>Fantazzini, D. and Fomichev, N. (2014). Forecasting the real price of oil using online search data. International Journal of Computational Economics and Econometrics, 4(1/2):4–31.</li>
+<li>Fantazzini, D. and Toktamysova, Z. (2015). Forecasting german car sales using google data and multivariate models. International Journal of Production Economics, 170:97 – 135.</li>
+<li>Fondeur, Y. and Karamé, F. (2013). Can Google data help predict French youth unemployment? Economic Modelling, 30(C):117–125.</li>
+<li>Ghysels, E., Santa-Clara, P., and Valkanov, R. (2006). Predicting volatility: getting the most out of return data sampled at different frequencies. Journal of Econometrics, 131(1):59–95.</li>
+<li>Ghysels, E., Sinko, A., and Valkanov, R. (2007). Midas regressions: Further results and new directions. Econometric Reviews, 26(1):53–90.</li>
+<li>Ghysels, E. and Wright, J. H. (2009). Forecasting Professional Forecasters. Journal of Business &amp; Economic Statistics, 27(4):504–516.</li>
+<li>Girardin, E. and Joyeux, R. (2013). Macro fundamentals as a source of stock market volatility in china: A garch-midas approach. Economic Modelling, 34(Supplement C):59 – 68.</li>
+<li>Goel, S., Hofman, J., Lehaie, S., Pennock, D. M., and Watts, D. J. (2010). Predicting consumer behavior with Web search. Proceedings of the National Academy of Sciences of the United States of America, 107(41):486–490.</li>
+<li>Gonzalez, P. and Moral, P. (1995). An analysis of the international tourism demand in Spain. International Journal of Forecasting, 11(2):233–251.</li>
+<li>Götz, T. B., Hecq, A., and Urbain, J.-P. (2014). Forecasting mixed-frequency time series with ecm-midas models. Journal of Forecasting, 33(3):198–213.</li>
+<li>Hadavandi, E., Ghanbari, A., Shahanaghi, K., and Abbasian-Naghneh, S. (2011). Tourist arrival forecasting by evolutionary fuzzy systems. Tourism Management, 32(5):1196 – 1203.</li>
+<li>Hong, W.-C. (2011). Electric load forecasting by seasonal recurrent SVR (support vector regression) with chaotic artificial bee colony algorithm. Energy, 36(9):5568–5578.</li>
+<li>Kuzin, V., Marcellino, M., and Schumacher, C. (2011). Midas vs. mixed-frequency var: Nowcasting gdp in the euro area. International Journal of Forecasting, 27(2):529 – 542.</li>
+<li>Kwiatkowski, D., Phillips, P. C., Schmidt, P., and Shin, Y. (1992). Testing the null hypothesis of stationarity against the alternative of a unit root: How sure are we that economic time series have a unit root? Journal of Econometrics, 54(1):159–178.</li>
+<li>Miller, J. I. (2016). Conditionally efficient estimation of long-run relationships using mixed-frequency time series. Econometric Reviews, 35(6):1142–1171.</li>
+<li>Park, S., Lee, J., and Song, W. (2017). Short-term forecasting of japanese tourist inflow to south korea using google trends data. Journal of Travel &amp; Tourism Marketing, 34(3):357 – 368.</li>
+<li>Pavlicek, J. and Kristoufek, L. (2015). Nowcasting unemployment rates with google searches: Evidence from the visegrad group countries. PloS one, 10(5):e0127084.</li>
+<li>Peng, B., Song, H., and Crouch, G. I. (2014). A meta-analysis of international tourism demand forecasting and implications for practice. Tourism Management, 45(Supplement C):181 – 193.</li>
+<li>Phillips, P. C. B. and Perron, P. (1988). Testing for a unit root in time series regression. Biometrika, 75(2):335–346.</li>
+<li>Rivera, R. (2016). A dynamic linear model to forecast hotel registrations in puerto rico using google trends data. Tourism Management, 57(Supplement C):12 – 20.</li>
+<li>Siliverstovs, B. A. and Wochner, D. S. (2017). Google trends and reality: Do the proportions match?: Appraising the informational value of online search behavior: Evidence from swiss tourism regions. Journal of Economic Behavior &amp; Organization.</li>
+<li>Smith, P. (2016). Google’s midas touch: Predicting uk unemployment with internet search data. Journal of Forecasting, 35(3):263–284.</li>
+<li>Song, H., Li, G., Witt, S. F., and Athanasopoulos, G. (2011). Forecasting tourist arrivals using time-varying parameter structural time series models. International Journal of Forecasting, 27(3):855–869.</li>
+</ol>
+<h2 id="sec-endnotes">ENDNOTES</h2>
+<ol class="endnotes">
+<li id="note-1">The statistical data are from the Czech Statistical Office: Public database, Tourist Figures in 2016, <a href="https://www.czso.cz/csu/czso/tourism.ekon">https://www.czso.cz/csu/czso/tourism.ekon</a></li>
+</ol>
+
+			</div>
+		</div>
+	</div>
+</div>
+<!-- end page -->
+<footer class="site-foot">
+<p class="foot-lede"><b>meta-analysis.cz</b> collects meta-analyses in economics: the papers, the
+data behind them, and the code that produced them. It is maintained by <a href="/about/"><b>Tomas Havranek</b> and
+<b>Zuzana Irsova</b></a> at the Institute of Economic Studies, Charles University, Prague.</p>
+<p class="foot-nav"><a href="/">All meta-analyses</a> &middot;
+<a href="/papers/">Papers in full</a> &middot;
+<a href="/results/">Headline results</a> &middot;
+<a href="/datasets/">Datasets and the pooled table</a> &middot;
+<a href="/maive/">MAIVE</a> &middot;
+<a href="/guidelines/">Practitioner&#x27;s guide</a> &middot;
+<a href="/notes/">Research notes</a> &middot;
+<a href="https://www.easymeta.org/">EasyMeta web app</a></p>
+<p class="foot-who"><b>Tomas Havranek</b> &middot; <a href="https://www.tomashavranek.cz/">tomashavranek.cz</a> &middot; <a href="https://ies.fsv.cuni.cz/en/contacts/institute-members/78067720">IES FSV UK</a> &middot; <a href="https://orcid.org/0000-0002-3158-2539">ORCID</a> &middot; <a href="https://scholar.google.com/citations?user=BF0BvBkAAAAJ">Google Scholar</a> &middot; <a href="https://ideas.repec.org/f/pha418.html">RePEc</a> &middot; <a href="https://www.scopus.com/authid/detail.uri?authorId=24453189000">Scopus</a> &middot; <a href="https://cepr.org/about/people/tomas-havranek">CEPR</a> &middot; <a href="https://metrics.stanford.edu/people/tomas-havranek">Stanford METRICS</a></p>
+<p class="foot-who"><b>Zuzana Irsova</b> &middot; <a href="https://www.irsova.com/">irsova.com</a> &middot; <a href="https://ies.fsv.cuni.cz/en/contacts/institute-members/73504033">IES FSV UK</a> &middot; <a href="https://orcid.org/0000-0002-0753-8124">ORCID</a> &middot; <a href="https://scholar.google.com/citations?user=LaHrICUAAAAJ">Google Scholar</a> &middot; <a href="https://ideas.repec.org/e/pir23.html">RePEc</a> &middot; <a href="https://www.scopus.com/authid/detail.uri?authorId=37080793200">Scopus</a> &middot; <a href="https://cepr.org/about/people/zuzana-irsova">CEPR</a> &middot; <a href="https://metrics.stanford.edu/people/zuzana-irsova">Stanford METRICS</a></p>
+<p class="foot-cite"><b>How to cite this collection:</b> Havranek, T. and Z. Irsova (2026).
+meta-analysis.cz: harmonised estimate-level data from meta-analyses in economics. Zenodo.
+<a href="https://doi.org/10.5281/zenodo.21773678">https://doi.org/10.5281/zenodo.21773678</a>.
+Individual papers carry their own citation on their own page.</p>
+<p class="foot-licence"><b>Licence: CC BY 4.0.</b> Everything on this site is licensed under the
+<a href="https://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0
+International Licence</a>. That covers the papers, the datasets, their CSV and Parquet conversions,
+the pooled table, the codebooks, and the documentation. You may copy, redistribute, adapt, and reuse
+any of it for any purpose, including commercial use and training machine-learning models, as long
+as you give attribution to meta-analysis.cz. You do not need to ask.</p>
+<p class="foot-machine">For machines: <a href="/api/v1/datasets.json">datasets.json</a> &middot;
+<a href="/api/v1/datapackage.json">datapackage.json</a> &middot;
+<a href="/api/v1/croissant.json">croissant.json</a> &middot;
+<a href="/llms.txt">llms.txt</a> &middot; <a href="/llms-full.txt">llms-full.txt</a> &middot;
+<a href="/sitemap.xml">sitemap.xml</a> &middot; <a href="/LICENSE">LICENSE</a></p>
+</footer>
+</body>
+</html>

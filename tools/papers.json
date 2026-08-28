@@ -2937,5 +2937,73 @@
    "13": "ED9",
    "14": "ED10"
   }
+ },
+ {
+  "project": "tourist",
+  "title": "Forecasting Tourist Arrivals: Google Trends Meets Mixed Frequency Data",
+  "literature": "Forecasting Tourist Arrivals with Google Trends",
+  "abstract": "In this paper, we examine the usefulness of Google Trends data in predicting monthly tourist arrivals and overnight stays in Prague during the period between January 2010 and December 2016. We offer two contributions. First, we analyze whether Google Trends provides significant forecasting improvements over models without search data. Second, we assess whether a high-frequency variable (weekly Google Trends) is more useful for accurate forecasting than a low-frequency variable (monthly tourist arrivals) using Mixed-data sampling (MIDAS). Our results stress the potential of Google Trends to offer more accurate prediction in the context of tourism: we find that Google Trends information, both two months and one week ahead of arrivals, is useful for predicting the actual number of tourist arrivals. The MIDAS forecasting model that employs weekly Google Trends data outperforms models using monthly Google Trends data and models without Google Trends data.",
+  "reference_line": "Tomas Havranek, Ayaz Zeynalov (2021), \"Forecasting tourist arrivals: Google Trends meets mixed-frequency data.\" Tourism Economics 27(1): 129-148. doi.org/10.1177/1354816619879584",
+  "authors": [
+   "Tomas Havranek",
+   "Ayaz Zeynalov"
+  ],
+  "year": 2021,
+  "journal": "Tourism Economics",
+  "doi_or_publisher_url": "https://doi.org/10.1177/1354816619879584",
+  "one_line": "Weekly Google searches for flights and hotels, fed to a mixed-frequency MIDAS model, forecast monthly tourist arrivals and overnight stays in Prague better than monthly search data or than no search data at all.",
+  "meta_keywords": "Google trends, mixed-frequency data, MIDAS, forecasting, tourism, tourist arrivals, Prague",
+  "menu_links": [
+   {
+    "label": "Paper",
+    "href": "tourist.pdf"
+   },
+   {
+    "label": "Published version",
+    "href": "https://doi.org/10.1177/1354816619879584"
+   }
+  ],
+  "version": "working_paper",
+  "served_title": "Forecasting Tourist Arrivals: Google Trends Meets Mixed Frequency Data",
+  "version_note": "It is the working paper of November 2018, the fullest version of this article that is openly available; the version of record is behind the publisher's paywall. Its abstract and the published one differ only in copy-editing, and the working paper prints the title in title case.",
+  "technical_report": {
+   "institution": "Munich Personal RePEc Archive",
+   "number": 90205,
+   "year": 2018
+  }
+ },
+ {
+  "project": "taxrev",
+  "title": "Dynamic Elasticities of Tax Revenue: Evidence from the Czech Republic",
+  "literature": "Dynamic Elasticities of Tax Revenue",
+  "abstract": "Tax revenue elasticities with respect to tax bases are key parameters for the modeling of public finances. Yet the existing studies estimating these elasticities for post-transition countries disregard the effects of tax reforms on tax revenue, which renders their estimates inconsistent. We use a unique data set from the Czech Republic to account for the effects of reforms and estimate both short- and long-run tax revenue elasticities. Our results suggest that the long-run elasticities are 1.4 for wage tax, 0.9 for value added tax, 1.7 for profit tax, and 1 for social security contributions. The adjustment process for value added tax and social security contributions is fast, but for the remaining two categories it is important to distinguish between the short- and long-run elasticities: the initial response of revenue to changes in the bases is weak. In the case of wage tax it takes half a year for the elasticity to surpass unity.",
+  "reference_line": "Tomas Havranek, Zuzana Irsova, Jiri Schwarz (2016), \"Dynamic elasticities of tax revenue: evidence from the Czech Republic.\" Applied Economics 48(60): 5866-5881. doi.org/10.1080/00036846.2016.1186796",
+  "authors": [
+   "Tomas Havranek",
+   "Zuzana Irsova",
+   "Jiri Schwarz"
+  ],
+  "year": 2016,
+  "journal": "Applied Economics",
+  "doi_or_publisher_url": "https://doi.org/10.1080/00036846.2016.1186796",
+  "one_line": "Czech tax revenue adjusted for the effects of reforms gives long-run elasticities of 1.4 for wage tax, 0.9 for value added tax, 1.7 for profit tax and 1 for social security contributions, with wage tax taking half a year to reach unity.",
+  "meta_keywords": "tax revenue elasticity, error correction model, tax base, tax reforms, Czech Republic, fiscal policy",
+  "menu_links": [
+   {
+    "label": "Paper",
+    "href": "taxrev.pdf"
+   },
+   {
+    "label": "Published version",
+    "href": "https://doi.org/10.1080/00036846.2016.1186796"
+   }
+  ],
+  "version": "working_paper",
+  "version_note": "It is Czech National Bank Working Paper 8/2015, the openly available version; the version of record is behind the publisher's paywall. The working paper carries a Czech abstract and a nontechnical summary, which the journal article does not.",
+  "technical_report": {
+   "institution": "Czech National Bank Working Paper Series",
+   "number": "8/2015",
+   "year": 2015
+  }
  }
 ]
