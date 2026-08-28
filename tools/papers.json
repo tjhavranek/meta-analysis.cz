@@ -2301,7 +2301,11 @@
   ],
   "version": "working_paper",
   "version_note": "It is ECB Working Paper 1485, the earlier and differently titled version; the citation above is the published article, whose full text is at [/crisis_jfs/](https://meta-analysis.cz/crisis_jfs/).",
-  "served_title": "Banking, debt, and currency crises: Early warning indicators for developed countries"
+  "served_title": "Banking, debt, and currency crises: Early warning indicators for developed countries",
+  "technical_report": {
+   "institution": "European Central Bank Working Paper Series",
+   "number": 1485
+  }
  },
  {
   "project": "dst_slovakia",

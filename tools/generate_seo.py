@@ -458,18 +458,32 @@ def highwire_tags(m):
         tags.append(f'<meta name="citation_author" content="{esc(a)}" />')
     tags.append(f'<meta name="citation_publication_date" content="{m["year"]}" />')
     vip = parse_ref(m["reference_line"])
-    if m["journal"]:
+    # Only when THIS page serves the article. crisis_ews serves ECB Working Paper 1485
+    # under its own title while citing the Journal of Financial Stability article the
+    # research became: tagging it citation_journal_title + volume + pages told Scholar
+    # that a differently titled document is that article, at that DOI, on two pages.
+    if m["journal"] and (m.get("version") or "record").lower() != "working_paper":
         tags.append(f'<meta name="citation_journal_title" content="{esc(m["journal"])}" />')
         for k, tag in (("vol", "citation_volume"), ("iss", "citation_issue"),
                        ("fp", "citation_firstpage"), ("lp", "citation_lastpage")):
             if vip.get(k):
                 tags.append(f'<meta name="{tag}" content="{vip[k]}" />')
-    elif (m.get("version") or "") == "working_paper" and m["reference_line"]:
+    elif (m.get("version") or "") == "working_paper" and (m.get("technical_report") or m["reference_line"]):
         # The series and number ARE the record for a working paper. Without them Google
         # Scholar clusters on title and PDF alone and invents a document sourced only from
         # this domain, losing the ECB's own identity for it.
-        _mm = re.search(r"([A-Z][^.\"]*?(?:Working Paper|Discussion Paper)[^.\"]*?)"
-                        r"\s*(?:No\.?\s*)?(\d+)", m["reference_line"])
+        # An entry may state the series outright; the citation line is the published
+        # article for a working paper whose research appeared elsewhere, and carries
+        # no series to find.
+        _tr = m.get("technical_report") or {}
+        _mm = (None if _tr else
+               re.search(r"([A-Z][^.\"]*?(?:Working Paper|Discussion Paper)[^.\"]*?)"
+                         r"\s*(?:No\.?\s*)?(\d+)", m["reference_line"]))
+        if _tr:
+            tags.append('<meta name="citation_technical_report_institution" content="%s" />'
+                        % esc(_tr["institution"]))
+            tags.append('<meta name="citation_technical_report_number" content="%s" />'
+                        % esc(str(_tr["number"])))
         if _mm:
             tags.append('<meta name="citation_technical_report_institution" content="%s" />'
                         % esc(_mm.group(1).strip().rstrip(",")))
@@ -478,7 +492,10 @@ def highwire_tags(m):
     elif m["reference_line"] and "Charles University" in m["reference_line"]:
         tags.append('<meta name="citation_technical_report_institution" content="Charles University, Prague" />')
     doi = extract_doi(m["doi_or_publisher_url"])
-    if doi:
+    # The DOI belongs to the published article. On a page serving the working paper
+    # it would say this document IS that article, which is what the journal tags
+    # above were already saying.
+    if doi and (m.get("version") or "record").lower() != "working_paper":
         tags.append(f'<meta name="citation_doi" content="{doi}" />')
     main_pdf = classify_links(m)[0]
     if main_pdf:
@@ -799,7 +816,7 @@ def main():
                       # which version of itself a page serves, and the article a working
                       # paper was published as: both are facts about the document, and the
                       # exports were saying the opposite without them
-                      "version", "published_as"):
+                      "version", "published_as", "technical_report"):
                 if s.get(k):
                     m[k] = s[k]
             if not m["abstract"] or len(m["abstract"]) < 80:
@@ -1255,10 +1272,12 @@ def main():
         # tell which is meant. The DOI form wins; the menu's copy is dropped.
         emitted_labels = set()
         if m["doi_or_publisher_url"]:
-            # A working paper has no published version; its own URL is the working paper.
-            # Calling it "Published version" here contradicted the page, and left the article
-            # it was actually published as out of the export entirely.
-            _wp = (m.get("version") or "") == "working_paper"
+            # A working paper usually links its own URL, and calling that "Published
+            # version" contradicted the page. But crisis_ews links the DOI of the article
+            # its research became, and labelling THAT "Working paper" put the same DOI in
+            # the export twice under opposite names. The label follows the link.
+            _wp = ((m.get("version") or "") == "working_paper"
+                   and "doi.org/" not in (m["doi_or_publisher_url"] or ""))
             lf.append(f"{'Working paper' if _wp else 'Published version'}: "
                       f"{m['doi_or_publisher_url']}")
             emitted_labels.add("working paper" if _wp else "published version")

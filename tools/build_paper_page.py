@@ -717,9 +717,15 @@ def _short_title(parent_label, label, meta):
 
 
 def _doi_label(meta):
-    """A working paper has no version of record; its link goes to the working paper itself."""
-    return ("Working paper" if (meta.get("version") or "").lower() == "working_paper"
-            else "Version of record")
+    """What the link actually opens, not what the page happens to serve.
+
+    A working paper whose research was published later still links the published
+    article by its DOI, and calling that link "Working paper" sent the reader to the
+    version of record under the opposite name."""
+    url = meta.get("doi_or_publisher_url") or ""
+    if (meta.get("version") or "").lower() == "working_paper":
+        return "Published version" if "doi.org/" in url else "Working paper"
+    return "Version of record"
 
 
 def build_page(project, meta, body, toc):
@@ -767,7 +773,17 @@ def build_page(project, meta, body, toc):
     cite_meta += ['<meta name="citation_author" content="%s" />' % esc_attr(a) for a in authors]
     if year:
         cite_meta.append('<meta name="citation_publication_date" content="%s" />' % year)
-    if journal:
+    # Same gate as generate_seo: a page serving the working paper must not be tagged
+    # as the journal article whose citation it carries, or Scholar reads two
+    # differently titled documents as one record at one DOI.
+    _wp = (meta.get("version") or "record").lower() == "working_paper"
+    if _wp and meta.get("technical_report"):
+        _tr = meta["technical_report"]
+        cite_meta.append('<meta name="citation_technical_report_institution" content="%s" />'
+                         % esc_attr(_tr["institution"]))
+        cite_meta.append('<meta name="citation_technical_report_number" content="%s" />'
+                         % esc_attr(str(_tr["number"])))
+    if journal and not _wp:
         cite_meta.append('<meta name="citation_journal_title" content="%s" />' % esc_attr(journal))
         # The landing page carries volume, issue and pages; this page carried only the
         # title and the DOI. Two self-canonical pages with the same title and DOI, and
@@ -779,7 +795,7 @@ def build_page(project, meta, body, toc):
                          ("fp", "citation_firstpage"), ("lp", "citation_lastpage")):
             if _vip.get(_k):
                 cite_meta.append('<meta name="%s" content="%s" />' % (_tag, _vip[_k]))
-    if doi.startswith("https://doi.org/"):
+    if doi.startswith("https://doi.org/") and not _wp:
         cite_meta.append('<meta name="citation_doi" content="%s" />'
                          % esc_attr(doi.replace("https://doi.org/", "")))
 
