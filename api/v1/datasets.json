@@ -119,7 +119,7 @@
    "id": "maive",
    "reason": "Bartos et al. cross-field archive (external), not a Havranek literature",
    "paper": {
-    "title": "Spurious Precision in Meta-Analysis of Observational Research",
+    "title": "Spurious precision in meta-analysis of observational research",
     "page_title": "Meta-Analysis Instrumental Variable Estimator",
     "url": "https://meta-analysis.cz/maive/"
    },
@@ -769,7 +769,7 @@
   {
    "id": "education",
    "paper": {
-    "title": "Tuition Fees and University Enrolment: A Meta-Regression Analysis",
+    "title": "Tuition Fees and University Enrolment: A Meta‐Regression Analysis",
     "page_title": "Publication Bias in Measuring the Impact of Tuition on Enrollment",
     "literature": "Tuition and Demand for Higher Education",
     "authors": [
@@ -1047,7 +1047,7 @@
   {
    "id": "excess_sensitivity",
    "paper": {
-    "title": "Do Consumers Really Follow a Rule of Thumb? Three Thousand Estimates from 144 Studies Say 'Probably Not'",
+    "title": "Do Consumers Really Follow a Rule of Thumb? Three Thousand Estimates from 144 Studies Say ‘Probably Not’",
     "page_title": "A Meta-Analysis of the Excess Sensitivity of Consumption to Anticipated Income Changes",
     "literature": "Excess Sensitivity of Consumption",
     "authors": [

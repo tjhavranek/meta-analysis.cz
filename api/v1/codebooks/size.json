@@ -189,8 +189,7 @@
    "dtype": "int8",
    "n_missing": 0,
    "n_unique": 2,
-   "inferred_role": "t_stat",
-   "inferred_role_confidence": "name-match only, not verified",
+   "not_t_stat_because": "two or fewer distinct values: a flag, not a statistic",
    "stats": {
     "min": 0.0,
     "p25": 0.0,
@@ -208,8 +207,7 @@
    "dtype": "str",
    "n_missing": 1638,
    "n_unique": 7,
-   "inferred_role": "t_stat",
-   "inferred_role_confidence": "name-match only, not verified",
+   "not_t_stat_because": "not numeric",
    "top_values": [
     "autocorrelation-adjusted",
     "standard errors are corrected as per Shanken (1992)",

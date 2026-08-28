@@ -95,6 +95,18 @@ def inline(text, refs_are_numbered=False, link_cites=True, in_table=False):
         # In the author block a superscript is an affiliation key, never a citation: "c" and
         # "d" are also roman numerals, so linking them invents anchors that do not exist.
         if not link_cites:
+            # A paper keys its affiliations EITHER by letter or by number, never both.
+            # So a number mixed in among letters is not an affiliation: crisis_jfs
+            # writes "^{a,b,1}" and its note 1 reads "In memoriam", which nothing
+            # pointed at. Where the keys are all numeric they ARE the affiliations
+            # (cbequity is "^{1,2}"), and linking them would send the reader to
+            # unrelated endnotes.
+            parts = [x.strip() for x in body.split(",")]
+            if (any(x.isdigit() for x in parts)
+                    and any(x.isalpha() for x in parts)):
+                out = [('<a href="#note-%s">%s</a>' % (x, x)) if x.isdigit() else x
+                       for x in parts]
+                return "<sup>%s</sup>" % ",".join(out)
             return "<sup>%s</sup>" % body
         # Inside a table, a single letter is the key of a table footnote -- the "a", "b", "c"
         # that the Notes line under the table explains -- and never a citation. Left to the
@@ -762,15 +774,21 @@ def build_page(project, meta, body, toc):
     # first, and it was the JSON-LD that kept marrying the working paper to the
     # article's DOI after the meta tags stopped.
     _wp = (meta.get("version") or "record").lower() == "working_paper"
+    # A supplement is not the article: it carries the article's DOI so a reader can
+    # reach it, but claiming that DOI as its own identifier under the supplement's own
+    # title gives one DOI two titles, which is the same defect as the working paper.
+    _suppl = bool(meta.get("parent_label"))
     if abstract:
         art["abstract"] = abstract
     _tr_year = (meta.get("technical_report") or {}).get("year")
     if year:
         art["datePublished"] = str(_tr_year or year)
-    if journal and not _wp:
+    if journal and not (_wp or _suppl):
         art["isPartOf"] = {"@type": "Periodical", "name": journal}
+    elif _suppl and meta.get("parent"):
+        art["isPartOf"] = {"@id": "https://meta-analysis.cz%s#article" % meta["parent"]}
     if doi.startswith("https://doi.org/"):
-        if _wp:
+        if _wp or _suppl:
             art["isBasedOn"] = doi
         else:
             art["sameAs"] = doi
@@ -803,7 +821,7 @@ def build_page(project, meta, body, toc):
                          ("fp", "citation_firstpage"), ("lp", "citation_lastpage")):
             if _vip.get(_k):
                 cite_meta.append('<meta name="%s" content="%s" />' % (_tag, _vip[_k]))
-    if doi.startswith("https://doi.org/") and not _wp:
+    if doi.startswith("https://doi.org/") and not (_wp or _suppl):
         cite_meta.append('<meta name="citation_doi" content="%s" />'
                          % esc_attr(doi.replace("https://doi.org/", "")))
 

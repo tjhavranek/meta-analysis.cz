@@ -10076,9 +10076,7 @@ Abstract: We construct and explore a new quarterly dataset covering crisis episo
 
 #### 1. Introduction
 
-Although the literature on crises and early warning is extensive, the research on the occurrence and early warning indicators of economic crises in developed countries is still relatively thin.
-
-Nevertheless, recent experience has demonstrated the relevance of the topic for developed economies. Our paper presents stylized facts on crisis occurrence and establishes which early warning indicators are relevant for developed countries by utilizing a new quarterly data set and by employing an advanced technique to overcome model uncertainty.
+Although the literature on crises and early warning is extensive, the research on the occurrence and early warning indicators of economic crises in developed countries is still relatively thin. Nevertheless, recent experience has demonstrated the relevance of the topic for developed economies. Our paper presents stylized facts on crisis occurrence and establishes which early warning indicators are relevant for developed countries by utilizing a new quarterly data set and by employing an advanced technique to overcome model uncertainty.
 
 The literature on crises has traditionally been focused on emerging markets (Frankel and Rose, 1996; Kaminsky et al., 1998; Kaminsky and Reinhart, 1999, among others). More recently, large samples of countries, including both developing and developed economies, have been explored (Rose and Spiegel, 2011; Frankel and Saravelos, 2012). While currency crises were the subject of investigation in the pioneering studies, the recent literature has tried to encompass more types of costly events, including various types of banking and debt crises (Laeven and Valencia, 2012; Levy-Yeyati and Panizza, 2011; Reinhart and Rogoff, 2011).
 

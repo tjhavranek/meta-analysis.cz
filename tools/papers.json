@@ -547,7 +547,7 @@
   "has_meta_description": true,
   "meta_keywords": "demand for higher education, tuition, enrollment, model averaging, Bayesian model averaging, meta-analysis, publication bias",
   "one_line": "Meta-analysis of 443 estimates finds the tuition-enrollment elasticity is near zero once publication bias is corrected.",
-  "citation_title": "Tuition Fees and University Enrolment: A Meta-Regression Analysis",
+  "citation_title": "Tuition Fees and University Enrolment: A Meta‐Regression Analysis",
   "version": "record"
  },
  {
@@ -628,7 +628,7 @@
   "title": "A Meta-Analysis of the Excess Sensitivity of Consumption to Anticipated Income Changes",
   "literature": "Excess Sensitivity of Consumption",
   "abstract": "We show that three factors combine to explain the mean magnitude of excess sensitivity reported in studies estimating the consumption response to income changes: the use of macro data, publication bias, and liquidity constraints. When micro data are used, publication bias is corrected for, and  households under examination have substantial liquidity, the literature implies little evidence of deviations from consumption smoothing. The result holds when we control for 45 additional variables reflecting the methods employed by researchers and use Bayesian model averaging to account for model uncertainty. The estimates produced by this literature are also systematically affected by the size of the change in income and the chosen measure of consumption.",
-  "reference_line": "Tomas Havranek & Anna Sokolova (2020), \"Do Consumers Really Follow a Rule of Thumb? Three Thousand Estimates from 144 Studies Say `Probably Not'.\" Review of Economic Dynamics 35, 97-122.",
+  "reference_line": "Tomas Havranek & Anna Sokolova (2020), \"Do Consumers Really Follow a Rule of Thumb? Three Thousand Estimates from 144 Studies Say ‘Probably Not’.\" Review of Economic Dynamics 35, 97-122.",
   "authors": [
    "Tomas Havranek",
    "Anna Sokolova"
@@ -662,7 +662,7 @@
   "has_meta_description": true,
   "meta_keywords": "Excess sensitivity, consumption, income, Euler equation, meta-analysis, publication bias",
   "one_line": "Meta-analysis of 144 studies finds little excess sensitivity of consumption once micro data, publication bias, and liquidity constraints are addressed.",
-  "citation_title": "Do Consumers Really Follow a Rule of Thumb? Three Thousand Estimates from 144 Studies Say 'Probably Not'",
+  "citation_title": "Do Consumers Really Follow a Rule of Thumb? Three Thousand Estimates from 144 Studies Say ‘Probably Not’",
   "version": "record"
  },
  {
@@ -953,7 +953,8 @@
   "has_meta_description": true,
   "meta_keywords": "meta-analysis, publication bias, p-hacking, artificial intelligence, model uncertainty",
   "one_line": "Step-by-step guidelines for modern meta-analysis in social sciences, covering publication bias, p-hacking, heterogeneity, and AI-assisted workflows.",
-  "version": "record"
+  "version": "record",
+  "citation_title": "Meta-analysis of social science research: A practitioner’s guide"
  },
  {
   "project": "habits",
@@ -1330,7 +1331,7 @@
   "has_meta_description": true,
   "meta_keywords": "Publication bias, p-hacking, selection models, meta-regression, funnel plot, inverse-variance weighting",
   "one_line": "MAIVE, an instrumental-variable estimator that corrects meta-analysis for spurious precision when standard errors are estimated and can be p-hacked.",
-  "citation_title": "Spurious Precision in Meta-Analysis of Observational Research",
+  "citation_title": "Spurious precision in meta-analysis of observational research",
   "version": "record"
  },
  {

@@ -122,8 +122,7 @@
    "dtype": "str",
    "n_missing": 0,
    "n_unique": 57,
-   "inferred_role": "t_stat",
-   "inferred_role_confidence": "name-match only, not verified",
+   "not_t_stat_because": "not numeric",
    "top_values": [
     ".",
     "-2",

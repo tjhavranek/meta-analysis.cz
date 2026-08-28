@@ -149,7 +149,9 @@ def describe(df, roles, rejected=None):
             # The name says sample size and the values say otherwise. Recording the reason
             # is worth more than silence: it tells a reader why the obvious column is not
             # the one to use, and stops the next reader re-deriving it.
-            e["not_n_obs_because"]=rejected[str(c)]
+            # the key names the role the column was proposed for and refused, so a
+            # t_stat rejection does not read as an n_obs one
+            e[rejected[str(c)][0]]=rejected[str(c)][1]
         r=roles.get(str(c))
         if r:
             # `role` is asserted ONLY for columns confirmed by the arithmetic test or the
@@ -210,9 +212,20 @@ for proj in sorted(prim):
         elif re.match(r"^(n|nobs|no_?obs|n_?obs|obs|observations|sample|sample_?size|samplesize)$",n):
             ok,why=is_sample_size(df,c)
             if ok: roles.setdefault(str(c),"n_obs")
-            else: rejected[str(c)]=why
+            else: rejected[str(c)]=("not_n_obs_because", why)
         elif re.match(r"^(pub_?year|publication_?year|yearpub|publicationyear)$",n): roles.setdefault(str(c),"pub_year")
-        elif re.match(r"^(t|t_?stat\w*|t_?value|tstats?)$",n): roles.setdefault(str(c),"t_stat")
+        # The name proposes, the values decide -- the same rule n_obs already follows.
+        # "tstat_adj" is a 0/1 flag saying whether the t was adjusted and
+        # "tstat_type_comment" is free text naming the adjustment; both matched the
+        # name pattern and were published as t-statistics.
+        elif re.match(r"^(t|t_?stat\w*|t_?value|tstats?)$",n):
+            _s = df[c]
+            if pd.api.types.is_numeric_dtype(_s) and _s.dropna().nunique() > 2:
+                roles.setdefault(str(c),"t_stat")
+            else:
+                rejected[str(c)] = ("not_t_stat_because",
+                                    "not numeric" if not pd.api.types.is_numeric_dtype(_s)
+                                    else "two or fewer distinct values: a flag, not a statistic")
         elif re.match(r"^(country|idcountry)$",n): roles.setdefault(str(c),"country")
     d=os.path.join(OUT,"data","v1",proj); os.makedirs(d,exist_ok=True)
     pq=os.path.join(d,f"{proj}.parquet"); df.to_parquet(pq,index=False,compression="snappy")
