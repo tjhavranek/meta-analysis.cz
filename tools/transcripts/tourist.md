@@ -1,9 +1,11 @@
 # Forecasting Tourist Arrivals: Google Trends Meets Mixed Frequency Data
 
 ## FRONTMATTER
-Tomas Havranek^{a,b} and Ayaz Zeynalov^{c}
+Tomas Havranek^{a,b} and Ayaz Zeynalov^{*c}
 
 ^{a}Czech National Bank. ^{b}Charles University, Prague. ^{c}University of Economics, Prague.
+
+^{*}Corresponding author: Jan Masaryk Centre of International Studies, Faculty of International Relations, University of Economics, Prague, W. Churchilla 4, 130 67 Prague-3, Czech Republic. e-mail: ayaz.zeynalov@vse.com.
 
 November 22, 2018
 
@@ -104,7 +106,13 @@ Tables 1 and 2 present descriptive statistics of tourist arrivals and overnight 
 
 Additionally, this study applies the augmented Dickey-Fuller (ADF) test, the Phillips-Perron (PP) test, and the Kwiatkowski-Phillips-Schmidt-Shin (KPSS) test to assess the unit root hypothesis. The ADF and PP methods test the unit root hypothesis in the level values of tourist arrivals and overnight stays (Table 3) and the difference value (Table 4), and the KPSS method tests for stationarity in both the true and differenced values (Tables 3 and 4).
 
-As in Table 3, for most countries of origin, we cannot reject the null hypothesis of a unit root at the 5% level. Similar results are obtained for the KPSS test, where the null hypothesis of stationarity is rejected in most cases. When the tests are applied to the logarithmic difference of individual time series (Table 4), the null of nonstationarity is strongly rejected in most cases. For the KPSS test, we cannot reject the null hypothesis of a unit root at the 5% level.
+As in Table 3, for most countries of origin, we cannot reject the null hypothesis of a unit root at the 5% level. Similar results are obtained for the KPSS test, where the null hypothesis of stationarity is rejected in most cases. When the tests are applied to the logarithmic difference of individual time series (Table 4), the null of nonstationarity is strongly rejected in most cases. For the KPSS test, we cannot reject the null hypothesis of a unit root at the 5% level for any country. These results imply that differencing is required in most cases and prove the importance of deseasonalizing and detrending tourist arrivals and overnight stays before modeling and forecasting.
+
+An adjusted MIDAS model is:
+
+$$ \Delta\log(\mathrm{tourist}_t) = \alpha + \sum_{i=1}^{n} \beta_i L^i \Delta\log(\mathrm{tourist}_t) + \gamma \sum_{i=1}^{w} W(k;\theta) L^{k/w} \Delta\log(\mathrm{google}^{(w)}_t) + \epsilon^{(w)}_t $$ (8)
+
+for $t = 1, ..., T$, and $w = 1, .., 4$. The dependent variable is the natural logarithm of tourist arrivals year-on-year change. The function $W(k;\theta)$ is a polynomial specification that determines the weights for temporal aggregation, such as Beta, Exponential or Almon. $L^i$ is a polynomial lag operator of tourist arrivals, and $L^{k/w}$ represents a lag operator of the high-frequency independent variable $\mathrm{google}^{(w)}_t$. $\beta$ represents the effect of the lag values of year-on-year change of tourist arrivals, and $\gamma$ represents the effect of the high-frequency variable $\mathrm{google}^{(w)}_t$.
 
 TABLE 1. Descriptive analysis of monthly tourist arrivals by countries
 
@@ -182,19 +190,21 @@ Notes: Author's estimation. The estimation represents the monthly data for Janua
 
 ## 4 | Results
 
+MIDAS models of tourist arrivals and overnight stays in Prague are presented in this section. Official statistical data of overnight stays and tourist arrivals were used to assess the forecasting performance of weekly Google MIDAS regression models. All models were estimated using data from January 2010 to December 2016 and weekly Google Trends information.
+
 TABLE 5. MIDAS model estimates of tourist arrivals: January 2010 - December 2016
 
 | | Weekly Google Search | | | Monthly Google | Without Google |
 |---|---|---|---|---|---|
 | | Beta coeff | Exp coeff | Almon coeff | ARIMA | ARIMA |
-| DLTOURIST(-1) | 0.066 | 0.042 | 0.135 | 0.079                    0.114 |
-|  | (0.142) | (0.139) | (0.147) | (0.127)                 (0.133) |
-| DLTOURIST(-2) | 0.280** | 0.269** | 0.262** | 0.214*                 0.335** |
-|  | (0.137) | (0.124) | (0.134) | (0.123)                 (0.126) |
-| DLTOURIST(-3) | -0.148 | -0.156 | -0.160 | -0.252*                  -0.132 |
-|  | (0.139) | (0.130) | (0.137) | (0.127)                 (0.132) |
-| DLTOURIST(-12) | -0.270** | -0.276** | -0.289** | -0.252**                  -0.169 |
-|  | (0.129) | (0.122) | (0.130) | (0.116)                 (0.122) |
+| DLTOURIST(-1) | 0.066 | 0.042 | 0.135 | 0.079 | 0.114 |
+|  | (0.142) | (0.139) | (0.147) | (0.127) | (0.133) |
+| DLTOURIST(-2) | 0.280** | 0.269** | 0.262** | 0.214* | 0.335** |
+|  | (0.137) | (0.124) | (0.134) | (0.123) | (0.126) |
+| DLTOURIST(-3) | -0.148 | -0.156 | -0.160 | -0.252* | -0.132 |
+|  | (0.139) | (0.130) | (0.137) | (0.127) | (0.132) |
+| DLTOURIST(-12) | -0.270** | -0.276** | -0.289** | -0.252** | -0.169 |
+|  | (0.129) | (0.122) | (0.130) | (0.116) | (0.122) |
 | Weekly Google | 1.049** | 1.133*** | 1.090*** |  |
 |  | (0.447) | (0.401) | (0.140) |  |
 | BETA01 | 1.076*** | -1.720 | 1.825** |  |
@@ -218,14 +228,14 @@ TABLE 6. MIDAS models estimates of overnight stays: January 2010 - December 2016
 | | Weekly Google Search | | | Monthly Google | Without Google |
 |---|---|---|---|---|---|
 | | Beta coeff | Exp coeff | Almon coeff | ARIMA | ARIMA |
-| DLTOURIST(-1) | 0.175 | 0.140 | 0.233 | 0.186                  0.181 |
-|  | (0.128) | (0.128) | (0.144) | (0.121)               (0.128) |
-| DLTOURIST(-2) | 0.319** | 0.306** | 0.321*** | 0.298**              0.335*** |
-|  | (0.122) | (0.123) | (0.130) | (0.116)               (0.122) |
-| DLTOURIST(-3) | -0.162 | -0.177 | -0.181 | -0.262**                -0.189 |
-|  | (0.125) | (0.125) | (0.133) | (0.121)               (0.127) |
-| DLTOURIST(-12) | -0.333*** | -0.318** | -0.323*** | -0.289**              -0.254** |
-|  | (0.119) | (0.120) | (0.125) | (0.111)               (0.117) |
+| DLTOURIST(-1) | 0.175 | 0.140 | 0.233 | 0.186 | 0.181 |
+|  | (0.128) | (0.128) | (0.144) | (0.121) | (0.128) |
+| DLTOURIST(-2) | 0.319** | 0.306** | 0.321*** | 0.298** | 0.335*** |
+|  | (0.122) | (0.123) | (0.130) | (0.116) | (0.122) |
+| DLTOURIST(-3) | -0.162 | -0.177 | -0.181 | -0.262** | -0.189 |
+|  | (0.125) | (0.125) | (0.133) | (0.121) | (0.127) |
+| DLTOURIST(-12) | -0.333*** | -0.318** | -0.323*** | -0.289** | -0.254** |
+|  | (0.119) | (0.120) | (0.125) | (0.111) | (0.117) |
 | Weekly Google | 1.759 | 2.422** | 1.843** |  |
 |  | (1.179) | (1.124) | (0.951) |  |
 | BETA01 | 1.020*** | 27.609 | 6.030*** |  |
@@ -276,11 +286,13 @@ The most common methods used to determine forecasting accuracy are functions of 
 
 Figures 5 and 6 show the forecasting evaluations using different MIDAS regressions for tourist arrivals and overnight stays. For tourist arrivals, MIDAS-Almon is the best forecasting model (see Figure 5), whereas MIDAS-Beta is the best forecasting model for overnight stays (see Figure 6).
 
-ALT 5. A chart from 2013 to 2016 of the actual month-on-month change in tourist arrivals, DTOURIST, shown as a swinging blue line, with the forecasts of the MIDAS-Beta, MIDAS-Exp and MIDAS-Almon models, the monthly-Google and without-Google models, the simple mean and the mean square error drawn over it. The forecast lines stay in a narrow band while the actual series swings far above and below it.
+ALT 5. A chart from 2013 to 2016 of the actual year-on-year change in tourist arrivals, DTOURIST, shown as a swinging blue line, with the forecasts of the MIDAS-Beta, MIDAS-Exp and MIDAS-Almon models, the monthly-Google and without-Google models, the simple mean and the mean square error drawn over it. The forecast lines stay in a narrow band while the actual series swings far above and below it.
 FIGURE 5. Forecasting tourist arrivals in Prague by MIDAS estimates: Jan, 2012 - Dec, 2016. Notes: Lines represent the forecasting results from different models. DTOURIST represents the change in tourist arrivals. The most accurate forecasting method is MIDAS-Almon.
 
-ALT 6. The same chart drawn for overnight stays: the actual change, DOVERNIGHT, swings widely while the forecast lines of the same eight models stay in a narrow band.
+ALT 6. The same chart drawn for overnight stays: the actual year-on-year change, DOVERNIGHT, swings widely while the seven forecast lines stay in a narrow band.
 FIGURE 6. Forecasting overnight stays in Prague by MIDAS estimates: Jan, 2012 - Dec, 2016. Notes: Lines represent the forecasting results from different models. DTOURIST represents the change in tourist arrivals. The most accurate forecasting method is MIDAS-Almon.
+
+The values of the Diebold-Mariano test are based on the absolute values of the out-of-sample period of July 2014 - December 2016. The positive significant values indicate that the MIDAS forecasting models are statistically more accurate than the competing models without Google Trends. The null hypothesis is that both forecasts have the same accuracy. Model 2 (Google Trends model) is more accurate than the baseline model (Model without Google trends). All models reject the null hypothesis; therefore, the Google Trends models are more accurate than the baseline model (Table 8).
 
 TABLE 8. Forecasting Evaluations - Diebold & Mariano Test
 
@@ -309,14 +321,14 @@ TABLE A1. MIDAS models estimates in tourism inbound from Germany to Prague
 | Tourist arrivals | Weekly Google Search | | | Monthly Google | Without Google |
 |---|---|---|---|---|---|
 | | Beta coeff | Almon coeff | Step coeff | ARIMA | ARIMA |
-| DTOURIST(-1) | -0.151 | -0.216 | -0.117 | -0.161                 -0.167 |
+| DTOURIST(-1) | -0.151 | -0.216 | -0.117 | -0.161 | -0.167 |
 |  | (0.129) | (0.131) | (0.131) | ( 0.144)                (0.132) |
-| DTOURIST(-2) | 0.342** | 0.350** | 0.324** | 0.405***               0.453*** |
-|  | (0.124) | (0.133) | (0.125) | (0.135)                (0.122) |
-| DTOURIST(-3) | 0.137 | 0.127 | 0.108 | 0.155                  0.180 |
-|  | (0.127) | (0.135) | (0.129) | (0.138)                (0.132) |
-| DTOURIST(-12) | -0.355** | -0.275** | -0.344*** | -0.280**               -0.254** |
-|  | (0.115) | (0.118) | (0.115) | (0.124)                (0.120) |
+| DTOURIST(-2) | 0.342** | 0.350** | 0.324** | 0.405*** | 0.453*** |
+|  | (0.124) | (0.133) | (0.125) | (0.135) | (0.122) |
+| DTOURIST(-3) | 0.137 | 0.127 | 0.108 | 0.155 | 0.180 |
+|  | (0.127) | (0.135) | (0.129) | (0.138) | (0.132) |
+| DTOURIST(-12) | -0.355** | -0.275** | -0.344*** | -0.280** | -0.254** |
+|  | (0.115) | (0.118) | (0.115) | (0.124) | (0.120) |
 | Weekly Google | 144.374* | 151.835** | 89.874*** |  |
 |  | (72.546) | (69.269) | (26.944) |  |
 | BETA01 | 0.977*** | -20.274 | -54.677** |  |
@@ -329,9 +341,10 @@ TABLE A1. MIDAS models estimates in tourism inbound from Germany to Prague
 |  |  |  |  | (110.468) |
 | Monthly Google (-2) |  |  |  | 72.660 |
 |  |  |  |  | (107.626) |
-| CONSTANT | -5.164 | -5.363 | -4.257 | -4.142               2.988 |
-|  | (4.172) | (4.02) | (4.177) | (4.395)              (1.215) |
+| CONSTANT | -5.164 | -5.363 | -4.257 | -4.142 | 2.988 |
+|  | (4.172) | (4.02) | (4.177) | (4.395) | (1.215) |
 | Overnight Stays |
+| | Beta coeff | Almon coeff | Step coeff | ARIMA | ARIMA |
 | DTOURIST(-1) | -0.082 | -0.134 | -0.182 | -0.125 | -0.117 |
 |  | (0.140) | (0.121) | (0.136) | (0.138) | (0.129) |
 | DTOURIST(-2) | 0.386*** | 0.396*** | 0.488*** | 0.454*** | 0.500*** |
@@ -383,8 +396,9 @@ TABLE A2. MIDAS models estimates of tourism inbound from Russia to Prague
 |  |  |  |  | (183.975) |  |
 | CONSTANT | -2.368*** | -1.440*** | -2.251*** | -2.019*** | 0.873 |
 |  | (0.631) | (0.528) | (0.611) | (0.483) | (0.711) |
-|  | Wee | kly Google Sear | ch | Monthly Google | Without Google |
+|  | Weekly Google Search | | | Monthly Google | Without Google |
 | Overnight Stays |
+| | Beta coeff | Almon coeff | Step coeff | ARIMA | ARIMA |
 | DLTOURIST(-1) | 0.466*** | 0.485*** | 0.495*** | 0.392*** | 0.623*** |
 |  | (0.138) | ( 0.135) | (0.134) | (0.129) | (0.132) |
 | DLTOURIST(-2) | 0.168 | 0.166 | 0.062 | 0.168 | 0.230 |
@@ -407,7 +421,7 @@ TABLE A2. MIDAS models estimates of tourism inbound from Russia to Prague
 |  |  |  |  | (810.783) |  |
 | CONSTANT | -6.589** | -6.214*** | -9.111*** | -9.013*** | -0.164 |
 |  | (3.227) | (2.144) | (2.593) | (2.108) | (0.315) |
-Notes: The dependent variables are the natural logarithm of tourist arrivals and overnight stays year-on-year changes. Columns (2)-(4) represent weekly Google data, Column (5) represents monthly Google data, and Column (6) represents the ARIMA model without Google trends information. \*\*\*, \*\*, and \* denote statistical significance at the 1%, 5%, and 10% levels, respectively.
+Notes: The dependent variables are the natural logarithm of tourist arrivals and overnight stays year-on-year changes; the estimated equation is $\Delta\log(\mathrm{tourist}_t) = \alpha + \sum_{i=1}^{n}\beta_i L^i \Delta\log(\mathrm{tourist}_t) + \gamma \sum_{i=1}^{w} W(k;\theta) L^{k/w} \Delta\log(\mathrm{google}_t^{(w)}) + \epsilon_t^{(w)}$. Columns (2)-(4) represent weekly Google data, Column (5) represents monthly Google data, and Column (6) represents the ARIMA model without Google trends information. Column (2) represents MIDAS with a beta weight function. Column (3) represents MIDAS with an exponential weight function. Column (4) represents the Almon formulation. Column (5) represents the ARIMA(1,1,1) results with monthly data. \*\*\*, \*\*, and \* denote statistical significance at the 1%, 5%, and 10% levels, respectively.
 
 TABLE A3. MIDAS models estimates of tourism inbound from UK to Prague
 
@@ -435,7 +449,10 @@ TABLE A3. MIDAS models estimates of tourism inbound from UK to Prague
 | Monthly Google (-2) |  |  |  | 23.888 |  |
 |  |  |  |  | (35.955) |  |
 | CONSTANT | -2.714 | -2.009 | -2.296 | -2.714 | 1.469*** |
+|  | (2.275) | (1.827) | (2.284) | (1.971) | (0.436) |
+|  | Weekly Google Search | | | Monthly Google | Without Google |
 | Overnight Stays |
+| | Beta coeff | Almon coeff | Step coeff | ARIMA | ARIMA |
 | DLTOURIST(-1) | 0.336** | 0.306** | 0.332** | 0.319** | 0.347*** |
 |  | (0.137) | (0.137) | (0.134) | (0.132) | (0.130) |
 | DLTOURIST(-2) | 0.166 | 0.151 | 0.158 | 0.144 | 0.186 |

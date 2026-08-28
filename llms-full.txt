@@ -29077,7 +29077,7 @@ Several studies have estimated the interest rate pass-through mechanism in the C
 
 #### 3. Data
 
-The computations in this paper are based on bank-level data and data on money market rates covering the period between January 2004 and December 2013, where the starting date is given by the availability of most bank-specific data that we need for the analysis. The main data set covers 52 banks1 and is obtained from the Czech National Bank’s internal databases. For the analysis of interest rate pass-through we use monetary statistics data regarding the interest rates charged on new loans and paid on deposits; for the analysis of cost efficiency and determinants of banks’ pricing policies we use a regulatory data set which consists of data from bank balance sheets, income statements, and capital adequacy information. The money market data include Czech interbank interest rates, interest rate swaps, and Czech government bond rates obtained from Bloomberg.
+The computations in this paper are based on bank-level data and data on money market rates covering the period between January 2004 and December 2013, where the starting date is given by the availability of most bank-specific data that we need for the analysis. The main data set covers 52 banks^{1} and is obtained from the Czech National Bank’s internal databases. For the analysis of interest rate pass-through we use monetary statistics data regarding the interest rates charged on new loans and paid on deposits; for the analysis of cost efficiency and determinants of banks’ pricing policies we use a regulatory data set which consists of data from bank balance sheets, income statements, and capital adequacy information. The money market data include Czech interbank interest rates, interest rate swaps, and Czech government bond rates obtained from Bloomberg.
 
 TABLE 1. Categories of Bank Products
 
@@ -29095,7 +29095,7 @@ TABLE 1. Categories of Bank Products
 | Overnight deposits | Deposits from clients with a withdrawal term up to 1 day |
 | Term deposits | Deposits from clients with a withdrawal term more than 1 day |
 
-The bank-level data on new loans display a monthly frequency, and loans in foreign currencies are excluded from the computations.^{2} We follow Horvath and Podpiera (2012) in the differentiation of several loan product categories and summarize them in Table 1. With respect to the product type of a loan, we assume four basic categories: small corporate loans up to CZK 30 million and large corporate loans above CZK 30 million provided to firms, and mortgages3 and consumer loans provided to households.4 Corporate loans are further divided with respect to interest rate fixation into the following categories: “floating interest rate loans” represented by loans with truly floating rates and those with rates fixed for up to 1 year; and “fixed interest rate loans” with rates fixed for more than 1 year. To analyze the interest rate pass-through mechanism from market rates to bank deposit rates, we additionally collect information on bank deposits and distinguish overnight deposits from term deposits.
+The bank-level data on new loans display a monthly frequency, and loans in foreign currencies are excluded from the computations.^{2} We follow Horvath and Podpiera (2012) in the differentiation of several loan product categories and summarize them in Table 1. With respect to the product type of a loan, we assume four basic categories: small corporate loans up to CZK 30 million and large corporate loans above CZK 30 million provided to firms, and mortgages^{3} and consumer loans provided to households.^{4} Corporate loans are further divided with respect to interest rate fixation into the following categories: “floating interest rate loans” represented by loans with truly floating rates and those with rates fixed for up to 1 year; and “fixed interest rate loans” with rates fixed for more than 1 year. To analyze the interest rate pass-through mechanism from market rates to bank deposit rates, we additionally collect information on bank deposits and distinguish overnight deposits from term deposits.
 
 The bank-level information used for the computation of efficiency scores results in a highly unbalanced data set. Table B1 in Appendix B shows the summary statistics of the variables that we use to estimate the stochastic frontier. The definition of output and input prices employed in the cost function follows the intermediation approach explained by (Berger and Humphrey, 1997). We assume three distinct types of outputs: commercial loans, inter-bank loans, and securities; three inputs: fixed assets, borrowed funds, and labor; and one netput: equity capital. Total costs are defined as the sum of interest and non-interest expenses. The cost function further includes a time trend and inefficiency covariates, some of which also serve as potential determinants of interest rate pass-through (see Table 2 for more details).
 
@@ -29123,13 +29123,13 @@ We employ the error-correction model framework to examine how financial market i
 
 Because we work with product- and bank-level data, we estimate the model using dynamic heterogeneous panel techniques; our most flexible estimator is the mean group estimator (Pesaran and Smith, 1995), which allows each regression coefficient to vary across banks. Pesaran and Smith (1995) show that the traditional panel estimators, such as fixed effects, which restrict all coefficients except intercepts to be equal across panels, may easily yield inconsistent results. The mean group estimator can be described in the following way:
 
-$$ \Delta\mathrm{bank\ rate}^k_{i,t} = \alpha^k_i \Delta\mathrm{market\ rate}^k_t + \beta^k_i \Delta\mathrm{bank\ rate}^k_{i,t-1} + \gamma^k_i (\mathrm{bank\ rate}^k_{i,t-1} - \delta^k_i \mathrm{market\ rate}_{t-1} - \mu^k_i) + \varepsilon_{i,t} $$ (1)
+$$ \Delta\mathrm{bank\ rate}^k_{i,t} = \alpha^k_i \Delta\mathrm{market\ rate}^k_t + \beta^k_i \Delta\mathrm{bank\ rate}^k_{i,t-1} + \gamma^k_i (\mathrm{bank\ rate}^k_{i,t-1} - \delta^k_i \mathrm{market\ rate}^k_{t-1} - \mu^k_i) + \varepsilon^k_{i,t}, $$ (1)
 
 where ∆bank rateki,t = bank rateki,t − bank rateki,t−1 stands for the change in bank i’s rate on product k between months t − 1 and t (due to data limitations we use a maximum of one lag in all estimations of the pass-through mechanism), ∆market ratetk is the change in the corresponding financial market interest rate in period t for product k, α k measures the short-term pass-through of the market rate to bank i’s rate for product k, ∆bank rateki,t−1 is the change in the bank rate in the previous month, βik captures persistence in bank rate changes, δik denotes the long-term equilibrium pass-through coefficient, µik is the mean markup (spread) over the market rate, γik denotes the speed of adjustment, and εki,t is a disturbance term. The mean adjustment lag at which the market rates are fully passed through to the bank rates can be computed as (δ − α)/γ (Hendry, 1995).
 
 The mean group estimator is very flexible, but Pesaran et al. (1999) show that a compromise between traditional estimators (restricting all slope coefficients to be equal) and the mean group estimator can be the preferred choice under certain conditions. They introduce the so-called pooled mean group estimator, which allows the short-run coefficients to vary across panels, but restricts the long-term equilibrium relationship to be the same for all banks. The pooled mean group estimator is often more efficient than the mean group estimator, and the advantage gets significant when the number of panels in the data set is relatively small, which is the case with Czech data. We specify the pooled mean group estimator as follows:
 
-$$ \Delta\mathrm{bank\ rate}^k_{i,t} = \alpha^k_i \Delta\mathrm{market\ rate}^k_t + \beta^k_i \Delta\mathrm{bank\ rate}^k_{i,t-1} + \gamma^k_i (\mathrm{bank\ rate}^k_{i,t-1} - \delta^k \mathrm{market\ rate}_{t-1} - \mu^k) + \varepsilon_{i,t} $$ (2)
+$$ \Delta\mathrm{bank\ rate}^k_{i,t} = \alpha^k_i \Delta\mathrm{market\ rate}^k_t + \beta^k_i \Delta\mathrm{bank\ rate}^k_{i,t-1} + \gamma^k_i (\mathrm{bank\ rate}^k_{i,t-1} - \delta^k \mathrm{market\ rate}^k_{t-1} - \mu^k) + \varepsilon^k_{i,t}. $$ (2)
 
 A qualification of this methodology is in order: the method assumes spreads that are constant across the time period under examination. If, however, spreads increase gradually, the estimated long-run pass-through might be biased. Consider, for example, the case of the Czech economy during the financial crisis, when risk aversion (and thus spreads) was rising, while market rates were decreasing. A failure of client rates to react to a decrease in market rates might thus be associated with rising spreads, not with a lack of pass-through. Nevertheless, the spreads rose quite steeply after the fall of Lehman Brothers and did not continue to increase during the rest of the period, so we expect the potential bias to be modest.
 
@@ -29148,7 +29148,7 @@ TABLE 3. Correlations Between Product Rates and Financial Market Rates
 | Mortgages | 0.280 | 0.295 | 0.300 | 0.305 | 0.309 |
 | Consumer loans | -0.018 | -0.012 | -0.010 | -0.009 | -0.010 |
 | Deposit rates |  |  |  |  |  |
-| Overnight deposits | **0.202** | 0.202 | 0.201 | 0.199 | 0.196 |
+| Overnight deposits | 0.202 | **0.202** | 0.201 | 0.199 | 0.196 |
 | Term deposits | 0.491 | 0.514 | 0.524 | **0.524** | 0.520 |
 
 TABLE 3 (continued). Correlations Between Product Rates and Financial Market Rates
@@ -29170,7 +29170,7 @@ Notes: Averaged over the banks in the sample; the largest correlations for each 
 
 The correlations, computed as mean values across individual banks’ correlation coefficients, are shown in Table 3: the results are intuitive. Regarding small loans (under CZK 30 million) provided to non-financial companies with either flexible rates or fixed rates for up to one year, we find that the most promising cost of funds is the 6-month PRIBOR (the correlation coefficient is 0.544). In contrast, for small loans with rates fixed for a longer period than one year the market rate with the highest correlation is the rate on the 10-year Czech government bond (but the correlation is lower than in the previous case: only 0.273). The results are very similar when we consider large loans (above CZK 30 million) instead of small loans. The 6-month PRIBOR is the corresponding rate for loans with floating or short fixed rates, and the correlation is 0.716. For longer fixations the most promising cost of funds is captured by the yield on the 10-year government bond (correlation 0.276). Concerning household products, we find that mortgage rates are associated the most with yields on the 10-year government bond, which is again intuitive; the correlation is 0.379. In contrast, we fail to find any financial market rate that shows a statistically significant correlation with the rate on consumer loans. The largest correlation is again with the rate on the 10-year government bond, but the correlation coefficient of 0.01 is negligible. It follows that using Czech data we cannot pursue a reasonable analysis of the pass-through of market rates to consumer loans; consumer loan rates seem to be driven by factors other than market interest rates. Next, we turn to deposit rates. Rates on overnight deposits are correlated the most with the 1-month PRIBOR (correlation 0.202), while the mean rate on term deposits is driven by the 6-month PRIBOR (correlation 0.524). These results are consistent with a similar correlation analysis for Czech data presented in Kucharcukova et al. (2013).
 
-Because our intention is to use the error-correction model framework, we need to make sure that our time series are indeed non-stationary and that the product rates are cointegrated with the corresponding market rates. To test for non-stationarity we employ Fisher’s unit root test (Maddala and Wu, 1999), which allows for the examination of unbalanced panel data; the results suggest that for each of the product rates in our sample and the corresponding market rates with the largest correlation coefficients we cannot reject the null hypothesis of non-stationarity. Next, to test for cointegration we resort to the Pedroni (1999) residual test, which can also handle unbalanced panel data (the results are not reported in full, but are available on request). We reject the null hypothesis of no cointegration for each pair of product and market interest rates with the exception of consumer loans—but we have already noted that the correlation between the rate on consumer loans and any of the financial market rates is negligible; therefore, we will not evaluate the pass-through mechanism for consumer loan rates.5
+Because our intention is to use the error-correction model framework, we need to make sure that our time series are indeed non-stationary and that the product rates are cointegrated with the corresponding market rates. To test for non-stationarity we employ Fisher’s unit root test (Maddala and Wu, 1999), which allows for the examination of unbalanced panel data; the results suggest that for each of the product rates in our sample and the corresponding market rates with the largest correlation coefficients we cannot reject the null hypothesis of non-stationarity. Next, to test for cointegration we resort to the Pedroni (1999) residual test, which can also handle unbalanced panel data (the results are not reported in full, but are available on request). We reject the null hypothesis of no cointegration for each pair of product and market interest rates with the exception of consumer loans—but we have already noted that the correlation between the rate on consumer loans and any of the financial market rates is negligible; therefore, we will not evaluate the pass-through mechanism for consumer loan rates.^{5}
 
 To choose between the mean group estimator and the pooled mean group estimator we employ the Hausman test and evaluate whether the assumption of homogeneity of the long-term coefficients holds across banks. The hypothesis cannot be rejected at the 5% level, and we thus opt for the pooled mean group estimator, which is more efficient, and report the corresponding results in the main body of the manuscript. In Appendix A we present the results of the mean group estimator (Table A1 and Table A2), from which we would draw similar conclusions. While we prefer the pooled mean group estimator for the evaluation of the pass-through mechanism, the mean group estimator is necessary for the next step of our analysis (determinants of pricing policies), because for that we need to extract bank-level coefficients for each aspect of interest rate pass-through, including the long-term equilibrium relationship, which is restricted to be the same across banks by the pooled mean group estimator.
 
@@ -29226,7 +29226,7 @@ In general, our results are consistent with the notion that banks tightened thei
 
 #### 5. Cost Efficiency
 
-Operational efficiency can theoretically be one of the most important determinants of a bank’s pricing policy. Multiple studies on interest rate pass-through take this bank characteristic into account but only consider the traditional accounting ratios as proxies for efficiency (see, for example, Mau-dos and Fernandez de Guevara, 2004; de Graeve et al., 2007; Gambacorta, 2008). Following Schlter et al. (2012), we employ frontier analysis tools to estimate cost efficiency and use it to examine heterogeneity in interest rate pass-through. Frontier efficiency is a relative measure telling us how close a specific bank’s cost is to what the best-practice bank’s cost would be if both were producing the same output under the same conditions. Because the frontier efficiency scores are deprived of market price effects and other exogenous factors that may influence the observed performance of banks, we consider frontier efficiency to be more suitable for the ranking of institutions than the traditional accounting ratios. The simple ratios relate only one input to one output and ignore relative prices between inputs; the benefits of the frontier approach are described in detail, for example, by Hanousek et al. (2015); Podpiera et al. (2007).
+Operational efficiency can theoretically be one of the most important determinants of a bank’s pricing policy. Multiple studies on interest rate pass-through take this bank characteristic into account but only consider the traditional accounting ratios as proxies for efficiency (see, for example, Maudos and Fernandez de Guevara, 2004; de Graeve et al., 2007; Gambacorta, 2008). Following Schlter et al. (2012), we employ frontier analysis tools to estimate cost efficiency and use it to examine heterogeneity in interest rate pass-through. Frontier efficiency is a relative measure telling us how close a specific bank’s cost is to what the best-practice bank’s cost would be if both were producing the same output under the same conditions. Because the frontier efficiency scores are deprived of market price effects and other exogenous factors that may influence the observed performance of banks, we consider frontier efficiency to be more suitable for the ranking of institutions than the traditional accounting ratios. The simple ratios relate only one input to one output and ignore relative prices between inputs; the benefits of the frontier approach are described in detail, for example, by Hanousek et al. (2015); Podpiera et al. (2007).
 
 The most common frontier tools used to estimate banking efficiency are the statistical stochastic frontier approach (SFA) and deterministic data envelopment analysis (DEA). Some of the advantages of SFA over DEA are that SFA accounts for statistical noise and can be used to conduct the conventional tests of hypotheses, while DEA lacks parameters suitable for economic interpretation. DEA can also be influenced by outliers to a larger extent than SFA. On the other hand, in SFA one needs to specify the assumed distribution of the inefficiency term and the functional form for the production function. To capture cost efficiency more comprehensively and check the robustness of our results, we evaluate the efficiency scores of the Czech banking sector using both the SFA and DEA approaches.
 
@@ -29244,7 +29244,7 @@ $$ \min \theta $$ (4)
 
 $$ \mathrm{s.t.}\ \sum_{i=1}^{n} \lambda_i x_{ki} - \theta x_k \leq 0\ \forall k, \quad \sum_{i=1}^{n} \lambda_i y_{ji} - y_j \geq 0\ \forall j, \quad \lambda_i \geq 0\ \forall i, $$
 
-where θ is the technical efficiency score, λi are dual variables, y ji stands for the j-th output of the i-th bank, and xki is the k-th input of the i-th bank. We use the original model of Charnes-Cooper, which assumes constant returns to scale (all the banks in the sample are subject to the same regulatory background). The input-oriented DEA model roughly corresponds to cost minimization: improvement in efficiency happens through proportional expansion of output quantities without quantitatively changing the inputs used. The solution to the optimization problem would be defined as the solution to the optimization problem of min∑m           ∗ k=1 wk xk for a technical efficiency program defined in (4), and economic efficiency would be defined as ∑m           ∗ k=1 (wki xki )/(wki xki ).
+where θ is the technical efficiency score, λi are dual variables, y ji stands for the j-th output of the i-th bank, and xki is the k-th input of the i-th bank. We use the original model of Charnes-Cooper, which assumes constant returns to scale (all the banks in the sample are subject to the same regulatory background). The input-oriented DEA model roughly corresponds to cost minimization: improvement in efficiency happens through proportional expansion of output quantities without quantitatively changing the inputs used. The solution to the optimization problem would be defined as the solution to the optimization problem of $\min \sum_{k=1}^{m} w_k x^*_k$ for a technical efficiency program defined in (4), and economic efficiency would be defined as $\sum_{k=1}^{m} (w_{ki} x^*_{ki})/(w_{ki} x_{ki})$.
 
 DEA applied to panel data must be estimated using a balanced panel. Since we have to adjust our data set for DEA estimation (the original data set is heavily unbalanced), the DEA efficiency scores only serve as a robustness check of the baseline SFA estimates (the summary statistics in Table B2 for the annual data used for DEA and the summary statistics in Table B1 for the annualized data used for SFA are fairly similar). Figure B1 also shows that the values of the two efficiency scores exhibit a similar trend throughout the time period we examine, although SFA suggests more improvement in cost efficiency after the financial crisis.
 
@@ -29258,19 +29258,19 @@ An important aspect of methodology not addressed by previous studies on the dete
 
 To investigate the bank-level differences in the strength of the long-term pass-through we estimate the following regression:
 
-$$ \mathrm{long\text{-}term\ PT}_{ijk}/SE_{ijk} = \alpha_0 + \alpha_1 \mathrm{efficiency}_{ij}/SE_{ijk} + \alpha_2 \mathrm{liquidity}_{ij}/SE_{ijk} + \alpha_3 \mathrm{capital\ adequacy}_{ij}/SE_{ijk} + \alpha_4 \mathrm{credit\ risk}_{ij}/SE_{ijk} + \alpha_5 \mathrm{bank\ size}_{ij}/SE_{ijk} + \alpha_6 \mathrm{deposits}_{ij}/SE_{ijk} + \alpha_7 \mathrm{post\text{-}crisis}_j/SE_{ijk} + \alpha_8 \mathrm{deposits\ LTPT}_{ij}/SE_{ijk} + \sum \alpha_{9k} \mathrm{product}_k + \varepsilon_{ijk}, $$ (5)
+$$ \mathrm{long\text{-}term\ PT}_{ijk}/SE_{ijk} = \alpha_0 + \alpha_1 \mathrm{efficiency}_{ij}/SE_{ijk} + \alpha_2 \mathrm{liquidity}_{ij}/SE_{ijk} + \alpha_3 \mathrm{capital\ adequacy}_{ij}/SE_{ijk} + \alpha_4 \mathrm{credit\ risk}_{ij}/SE_{ijk} + \alpha_5 \mathrm{bank\ size}_{ij}/SE_{ijk} + \alpha_6 \mathrm{deposits}_{ij}/SE_{ijk} + \alpha_7 \mathrm{post\text{-}crisis}_j/SE_{ijk} + \alpha_8 \mathrm{deposits\ LTPT}_{ij}/SE_{ijk} + \sum_{k=1}^{4} \alpha^k_9 \mathrm{product}_k + \varepsilon_{ijk}, $$ (5)
 
-where SEi jk denotes the standard error of the estimate of the long-term pass-through for bank i, period j, and product k. The definitions of bank-level characteristics liquidity, capital adequacy, credit risk, bank size, and deposits are available in section 3: these are standard control variables used for the explanation of heterogeneity in bank pricing policies in several studies (see, for example, de Graeve et al., 2007; Horvath and Podpiera, 2012). The efficiency variable is estimated according to the approach described in section 5; in our baseline estimation we use efficiency scores obtained by employing stochastic frontier analysis, but use scores from data envelopment analysis as a robustness check. To increase the number of degrees of freedom in our regressions, we include estimates of the pass-through coefficients both before and after the financial crisis (denoted by period j, which equals 0 for pre-crisis periods and 1 for post-crisis periods). The corresponding dummy variable (post-crisis) controls for changes in the strength of the long-term pass-through since the crisis.^{6} We also include among the explanatory variables the long-term pass-through coefficients for overnight deposits estimated for each bank: because deposits serve as a source of financing for loans, the way market rates are passed through to deposit rates for each bank may influence the pass-through mechanisms for loan products as well.7 Finally, in section 4 we estimate the pass-through coefficients separately for various loan products, so in (5) we add a set of dummy variables corresponding to each loan category. Standard errors in all regressions in this section are clustered at the bank level to reflect the fact that most of our explanatory variables are defined at the bank level—if we omitted clustering we would exaggerate the precision of our estimates.
+where SEi jk denotes the standard error of the estimate of the long-term pass-through for bank i, period j, and product k. The definitions of bank-level characteristics liquidity, capital adequacy, credit risk, bank size, and deposits are available in section 3: these are standard control variables used for the explanation of heterogeneity in bank pricing policies in several studies (see, for example, de Graeve et al., 2007; Horvath and Podpiera, 2012). The efficiency variable is estimated according to the approach described in section 5; in our baseline estimation we use efficiency scores obtained by employing stochastic frontier analysis, but use scores from data envelopment analysis as a robustness check. To increase the number of degrees of freedom in our regressions, we include estimates of the pass-through coefficients both before and after the financial crisis (denoted by period j, which equals 0 for pre-crisis periods and 1 for post-crisis periods). The corresponding dummy variable (post-crisis) controls for changes in the strength of the long-term pass-through since the crisis.^{6} We also include among the explanatory variables the long-term pass-through coefficients for overnight deposits estimated for each bank: because deposits serve as a source of financing for loans, the way market rates are passed through to deposit rates for each bank may influence the pass-through mechanisms for loan products as well.^{7} Finally, in section 4 we estimate the pass-through coefficients separately for various loan products, so in (5) we add a set of dummy variables corresponding to each loan category. Standard errors in all regressions in this section are clustered at the bank level to reflect the fact that most of our explanatory variables are defined at the bank level—if we omitted clustering we would exaggerate the precision of our estimates.
 
 We specify a similar weighted-least-squares regression for the mean adjustment lag:
 
-$$ \mathrm{adjustment\ lag}_{ijk}/SE_{ijk} = \alpha_0 + \alpha_1 \mathrm{efficiency}_{ij}/SE_{ijk} + \alpha_2 \mathrm{liquidity}_{ij}/SE_{ijk} + \alpha_3 \mathrm{capital\ adequacy}_{ij}/SE_{ijk} + \alpha_4 \mathrm{credit\ risk}_{ij}/SE_{ijk} + \alpha_5 \mathrm{bank\ size}_{ij}/SE_{ijk} + \alpha_6 \mathrm{deposits}_{ij}/SE_{ijk} + \alpha_7 \mathrm{post\text{-}crisis}_j/SE_{ijk} + \alpha_8 \mathrm{deposits\ adj.\ lag}_{ij}/SE_{ijk} + \sum \alpha_{9k} \mathrm{product}_k + \varepsilon_{ijk}, $$ (6)
+$$ \mathrm{adjustment\ lag}_{ijk}/SE_{ijk} = \alpha_0 + \alpha_1 \mathrm{efficiency}_{ij}/SE_{ijk} + \alpha_2 \mathrm{liquidity}_{ij}/SE_{ijk} + \alpha_3 \mathrm{capital\ adequacy}_{ij}/SE_{ijk} + \alpha_4 \mathrm{credit\ risk}_{ij}/SE_{ijk} + \alpha_5 \mathrm{bank\ size}_{ij}/SE_{ijk} + \alpha_6 \mathrm{deposits}_{ij}/SE_{ijk} + \alpha_7 \mathrm{post\text{-}crisis}_j/SE_{ijk} + \alpha_8 \mathrm{deposits\ adj.\ lag}_{ij}/SE_{ijk} + \sum_{k=1}^{4} \alpha^k_9 \mathrm{product}_k + \varepsilon_{ijk}, $$ (6)
 
 where SEi jk denotes the standard error of the estimate of the adjustment lag for bank i, period j, and product k (the standard error is approximate and estimated using the delta method). Similarly to the previous case we include the corresponding pass-through coefficient for deposits.
 
 Finally, we estimate an analogous regression for the spread:
 
-$$ \mathrm{spread\ (markup)}_{ijk}/SE_{ijk} = \alpha_0 + \alpha_1 \mathrm{efficiency}_{ij}/SE_{ijk} + \alpha_2 \mathrm{liquidity}_{ij}/SE_{ijk} + \alpha_3 \mathrm{cap.\ adequacy}_{ij}/SE_{ijk} + \alpha_4 \mathrm{credit\ risk}_{ij}/SE_{ijk} + \alpha_5 \mathrm{bank\ size}_{ij}/SE_{ijk} + \alpha_6 \mathrm{deposits}_{ij}/SE_{ijk} + \alpha_7 \mathrm{post\text{-}crisis}_j/SE_{ijk} + \alpha_8 \mathrm{deposits\ spread}_{ij}/SE_{ijk} + \sum \alpha_{9k} \mathrm{product}_k + \varepsilon_{ijk}, $$ (7)
+$$ \mathrm{spread\ (markup)}_{ijk}/SE_{ijk} = \alpha_0 + \alpha_1 \mathrm{efficiency}_{ij}/SE_{ijk} + \alpha_2 \mathrm{liquidity}_{ij}/SE_{ijk} + \alpha_3 \mathrm{cap.\ adequacy}_{ij}/SE_{ijk} + \alpha_4 \mathrm{credit\ risk}_{ij}/SE_{ijk} + \alpha_5 \mathrm{bank\ size}_{ij}/SE_{ijk} + \alpha_6 \mathrm{deposits}_{ij}/SE_{ijk} + \alpha_7 \mathrm{post\text{-}crisis}_j/SE_{ijk} + \alpha_8 \mathrm{deposits\ spread}_{ij}/SE_{ijk} + \sum_{k=1}^{4} \alpha^k_9 \mathrm{product}_k + \varepsilon_{ijk}, $$ (7)
 
 where SEi jk denotes the standard error of the estimate of the spread for bank i, period j, and product k. The variable deposits spread denotes the mean spread between the deposit rate and the corresponding market rate for each bank. Our hypothesis is that banks that offer larger spreads on deposits (more attractive rates for depositors) tend to engage in riskier behavior and provide loan products with a higher markup.
 
@@ -29285,7 +29285,7 @@ In contrast, banks’ cost efficiency seems to matter for the mean adjustment la
 
 The right-hand part of Figure 2 contains evidence of the relation between the pass-through coefficients for loan products and the pass-through coefficients for deposits for individual banks. Because deposits serve as a source of financing for loans provided by banks, we hypothesize that the pass-through mechanism for loans should be associated with that for deposits: more complete long-term pass-through from market rates to deposit rates should translate to more complete long-term pass-through for loans, longer adjustment lags for deposits should be associated with longer lags for loans, and banks that provide high spreads on deposits with respect to the corresponding financial market rate should charge higher markups on loan products. In each panel we divide banks into two groups according to their pass-through behavior for deposits. For example, in the top panel there are two groups: banks with long-term pass-through smaller than median long-term pass-through and banks with long-term pass-through exceeding the median. Nevertheless, we observe little relation between the equilibrium strength of pass-through for deposits and loans.
 
-The mean adjustment lag, on the other hand, seems to be often similar for loan and deposit products. Values of the adjustment lag for loan products larger than four months only occur for banks that also display slow adjustment of deposit rates to changes in the market rate. While there are some
+The mean adjustment lag, on the other hand, seems to be often similar for loan and deposit products. Values of the adjustment lag for loan products larger than four months only occur for banks that also display slow adjustment of deposit rates to changes in the market rate. While there are some exceptions (slow adjustment for deposits sometimes occurs simultaneously with fast transmission for loans), the mean adjustment lag corresponding to loan products is about twice as large for banks displaying slow adjustment of deposit rates than for banks with fast adjustment of deposit rates. Finally, the bottom panel of the figure shows that high spreads for deposit rates are associated with high markups for loan rates, which might suggest that banks engaged in risky lending behavior tend to offer attractive rates for depositors (CNB, 2014).
 
 ALT 2. Six panels of box plots. The left column splits banks by cost efficiency and the right by the strength of their pass-through to deposit rates; the rows are the long-term pass-through to loan rates, the adjustment lag of loan rates, and the spread on loan rates. The clearest separation is in the middle-left panel, where more efficient banks show longer adjustment lags.
 FIGURE 2. Selected Determinants of Pass-Through to Loan Rates. Notes: IRPT = interest rate pass-through. PT = pass-through. Banks are divided to two groups by comparing their corresponding values to the median. The variables on the horizontal axes are winsorized using the 5% threshold for both tails. Adjustment lag is in months; spread is in percentage points.
@@ -29339,9 +29339,9 @@ TABLE 7. Determinants of Interest Rate Pass-Through, DEA Used
 Notes: Standard errors, reported in parentheses, are clustered at the bank level. The regressions are estimated using weighted least squares, with the precision of the pass-through estimates (the inverse of the estimates’ standard errors) taken as the weight. The dependent variable is winsorized using the 5% threshold for both tails. DEA = data envelopment analysis. LTPT = long-term pass-through. \* denotes statistical significance at the 10% level, \*\* at the 5% level, and \*\*\* at the 1% level.
 
 
-Our results corroborate profound changes in the interest rate pass-through mechanism during the crisis, which we have already discussed in section 4. The dummy variable corresponding to the post-crisis period is statistically significant in all specifications at the 5% level. The pass-through of financial market rates to bank loan rates weakens dramatically: when bank-level characteristics are controlled for, the estimated change in the long-term pass-through coefficient approaches one, which would translate an almost complete pass-through before the crisis to no significant pass-through after the crisis for an average loan product.9 Moreover, adjustment lags shorten after the crisis, which suggests that although the long-term relationship between market and bank rates gets weaker, the adjustment between the short- and long-run reaction gets faster: banks change their rates more frequently. Spreads (markups) increase after the crisis, which reflects elevated risk aversion of individual banks.
+Our results corroborate profound changes in the interest rate pass-through mechanism during the crisis, which we have already discussed in section 4. The dummy variable corresponding to the post-crisis period is statistically significant in all specifications at the 5% level. The pass-through of financial market rates to bank loan rates weakens dramatically: when bank-level characteristics are controlled for, the estimated change in the long-term pass-through coefficient approaches one, which would translate an almost complete pass-through before the crisis to no significant pass-through after the crisis for an average loan product.^{9} Moreover, adjustment lags shorten after the crisis, which suggests that although the long-term relationship between market and bank rates gets weaker, the adjustment between the short- and long-run reaction gets faster: banks change their rates more frequently. Spreads (markups) increase after the crisis, which reflects elevated risk aversion of individual banks.
 
-Our findings concerning the impact of the financial crisis contrast with the results of Illes and Lombardi (2013),^{9} who find little change in the interest rate pass-through for major economies. Hristov et al. (2014), on the other hand, using fresher data, show that the pass-through has become significantly distorted in the euro area since 2008, which is consistent with our results for the same period and Czech data. Hansen and Welz (2011) examine Swedish data and report results in between those of Illes and Lombardi (2013) and Hristov et al. (2014): in Sweden the crisis has not affected interest rate pass-through for products with short maturities, but has distorted pass-through to lending rates at longer maturities.
+Our findings concerning the impact of the financial crisis contrast with the results of Illes and Lombardi (2013), who find little change in the interest rate pass-through for major economies. Hristov et al. (2014), on the other hand, using fresher data, show that the pass-through has become significantly distorted in the euro area since 2008, which is consistent with our results for the same period and Czech data. Hansen and Welz (2011) examine Swedish data and report results in between those of Illes and Lombardi (2013) and Hristov et al. (2014): in Sweden the crisis has not affected interest rate pass-through for products with short maturities, but has distorted pass-through to lending rates at longer maturities.
 
 Concerning the effect of banks’ cost efficiency, we fail to confirm the intuition and observation from Figure 2 that more efficient banks tend to charge lower markups. The relationship does not hold when other bank-specific characteristics are controlled for, and it does not matter for the results whether efficiency scores are computed using stochastic frontier analysis or data envelopment analysis. Our results also show no relation between cost efficiency and long-term pass-through. In contrast, the regression analysis confirms the notion that more efficient banks tend to exhibit longer adjustment lags, changing rates less frequently, and thus smoothing the rates for their clients. The result, which holds for both stochastic frontier analysis and data envelopment analysis, is in line with the findings of Schlter et al. (2012), the only other study (to our knowledge) that examines determinants of pricing policies using non-simplified measures of cost efficiency.
 
@@ -29351,7 +29351,7 @@ Our results show that the pass-through mechanism for deposits at the bank level 
 
 We explore the interest rate pass-through mechanism in the Czech banking sector using product-level data for both before and after the financial crisis. We find strong and almost complete long-term pass-through from financial market rates to the rates that banks charge their clients before the crisis, but document a substantial deterioration of pass-through after the crisis (with the exception of mortgage rates). This result is consistent with the findings of Hristov et al. (2014) for the euro area, who show that the pass-through mechanism has become significantly distorted after 2008. Next, we find a relationship between bank pricing policies for deposits and loans: banks that offer large spreads between the deposit rate and the corresponding money market rate tend to charge high loan markups to their clients. We are not aware of any previous study examining this particular relationship, but the results are in line with anecdotal evidence, as banks offering generous deposit rates tend to be involved in the riskier segment of the loan market. Finally, our results suggest that banks’ cost efficiency is not significantly related to loan markups, which contrasts with the results of Schlter et al. (2012) for German banks. Similarly to Schlter et al. (2012), however, we find that more cost-efficient banks tend to smooth loan rates.
 
-The two most closely related studies to ours are Horvath and Podpiera (2012), who study the interest-rate pass through using Czech data, and Schlter et al. (2012), who, to our knowledge, present the only available analysis that relates the strength and speed of pass-through to properly computed efficiency scores. In contrast to Schlter et al. (2012), we use statistical techniques suited for heterogeneous panels: the mean group estimator (Pesaran and Smith, 1995) and the pooled mean group estimator (Pesaran et al., 1999), and employ both stochastic frontier analysis and data envelopment analysis to compute efficiency scores. In contrast to Horvath and Podpiera (2012), we use efficiency
+The two most closely related studies to ours are Horvath and Podpiera (2012), who study the interest-rate pass through using Czech data, and Schlter et al. (2012), who, to our knowledge, present the only available analysis that relates the strength and speed of pass-through to properly computed efficiency scores. In contrast to Schlter et al. (2012), we use statistical techniques suited for heterogeneous panels: the mean group estimator (Pesaran and Smith, 1995) and the pooled mean group estimator (Pesaran et al., 1999), and employ both stochastic frontier analysis and data envelopment analysis to compute efficiency scores. In contrast to Horvath and Podpiera (2012), we use efficiency scores instead of simple accounting ratios as a proxy for cost efficiency and cluster standard errors at the bank level when examining the determinants of pricing policies. Due to data limitations and omission of clustering, Horvath and Podpiera (2012) effectively work with less than 15 degrees of freedom in their main analysis, but report standard errors corresponding to about 40 degrees of freedom, which is likely to exaggerate the statistical significance of their results (they do not cluster standard errors). Indeed, our results differ from theirs to a large extent. In contrast to both papers, we examine pass-through both before and after the crisis and use weighted least squares estimation in which the precision of the bank-level pass-through coefficients is taken as the weight.
 
 Our focus in this paper is the change in interest rate pass-through during the crisis, the effect of banks’ cost efficiency on bank pricing policies, and the relation between pass-through to deposit rates and pass-through to loan rates. There are many further aspects of interest rate pass-through that can be analyzed but that we do not address. For example, van Leuvensteijn et al. (2013) show that bank competition decreases spreads, and Becker et al. (2012) document asymmetries in the pass-through mechanism (depending on whether financial market rates increase or decrease). We leave the examination of these relationships in the Czech banking sector for future research when more data are available, especially hikes in the monetary policy rate after the crisis.
 
@@ -29389,7 +29389,7 @@ Hainz, C., R. Horvath, and M. Hlavacek (2014): “The interest rate spreads in t
 
 Hanousek, J., E. Koda, and A. Shamshur (2015): “Corporate efficiency in Europe.” Journal of Corporate Finance, 32(C):24–40.
 
-Hansen, N.-J. H. and P. Welz (2011): “Interest Rate Pass-through During the Global Financial Crisis: The Case of Sweden.” OECD Economics Department Working Papers 855, OECD Publishing. Bank Efficiency and Interest Rate Pass-Through: Evidence from Czech Loan Products 25
+Hansen, N.-J. H. and P. Welz (2011): “Interest Rate Pass-through During the Global Financial Crisis: The Case of Sweden.” OECD Economics Department Working Papers 855, OECD Publishing.
 
 Havranek, T. (2015): “Measuring Intertemporal Substitution: The Importance of Method Choices and Selective Reporting.” Journal of the European Economic Association, 13(6): 1180–1204.
 
@@ -29426,8 +29426,6 @@ Kumbhakar, S. C. and A. Lozano-Vivas (2000): Stochastic Frontier Analysis. Cambr
 Maddala, G. S. and S. Wu (1999): “A Comparative Study of Unit Root Tests with Panel Data and a New Simple Test.” Oxford Bulletin of Economics and Statistics, 61(0):631–52.
 
 Maudos, J. and J. Fernandez de Guevara (2004): “Factors explaining the interest margin in the banking sectors of the European Union.” Journal of Banking & Finance, 28(9):2259– 2281.
-
-26 Tomáš Havránek, Zuzana Iršová, and Jitka Lešanovská
 
 Meeusen, W. and J. van den Broeck (1977): “Efficiency Estimation from Cobb-Douglas Production Functions with Composed Error.” International Economic Review, 18(2):435–44.
 
@@ -29595,10 +29593,10 @@ TABLE B3. Correlations Between Frontier Efficiencies and Traditional Efficiency 
 | Return on equity | -0.41 | -0.36 | -0.18 | -0.20 | 0.75 | 1 |
 Notes: Pearson simple correlation and Spearman rank-order correlation between different measures of cost efficiency.
 
-ALT B1. Box plots of the estimated frontier efficiency scores for each year from 2004 to 2013, one box per year for the SFA scores and one for the DEA scores, with medians, interquartile ranges, whiskers and outlying points.
+ALT B1. Box plots of the estimated frontier efficiency scores for each year from 2004 to 2013, one box per year for the SFA scores and one for the DEA scores, with medians, interquartile ranges, whiskers and outlying points. The DEA boxes sit near 0.75 and barely move across the ten years; the SFA boxes sit near 0.3, are much wider, and drift slowly upwards.
 FIGURE B1. Development of the Estimated Frontier Efficiencies During 2004–2013. Notes: The box shows interquartile range (P25–P75) with median highlighted. Whiskers cover the interval from (P25−1.5· interquartile range) to (P75+1.5· interquartile range) if such estimates exist. The dots show the remaining (outlying) estimates.
 
-ALT B2. Two kernel density curves of the estimated efficiency scores between 0 and 1, one for the SFA scores and one for the DEA scores; the SFA density is concentrated at high scores while the DEA density is flatter and reaches further down the scale.
+ALT B2. Two kernel density curves of the estimated efficiency scores between 0 and 1, one for the SFA scores and one for the DEA scores; the DEA density is a tall peak at about 0.75 to 0.8 while the SFA density is flat and spread across the lower part of the scale.
 FIGURE B2. Kernel Density Function of the Estimated Frontier Efficiencies
 
 #### ENDNOTES
@@ -38892,7 +38890,7 @@ Our estimation yields intuitive and relatively tight estimates of the long-run e
 
 #### 1. Introduction
 
-Tax revenue elasticities are crucial parameters for both the fiscal and monetary authorities in every economy for three reasons. First, the elasticities are necessary for forecasting government revenue based on macroeconomic predictions. Second, both commonly used methods of cyclical adjustment of public finances, the European Commission method and the European System of Central Banks method, employ estimates of tax revenue elasticities in order to split the public budget balance into its cyclical and structural part. Third, the calculation of tax multipliers depends crucially on the values of tax elasticities (Mertens and Ravn, 2014). Despite their importance, tax revenue elasticities are often not estimated but only calibrated, especially for emerging and transition economies. Either the calibration is based on the ratio of the marginal to the average tax rate, or, for some tax categories, the elasticity is assumed to equal one.1
+Tax revenue elasticities are crucial parameters for both the fiscal and monetary authorities in every economy for three reasons. First, the elasticities are necessary for forecasting government revenue based on macroeconomic predictions. Second, both commonly used methods of cyclical adjustment of public finances, the European Commission method and the European System of Central Banks method, employ estimates of tax revenue elasticities in order to split the public budget balance into its cyclical and structural part. Third, the calculation of tax multipliers depends crucially on the values of tax elasticities (Mertens and Ravn, 2014). Despite their importance, tax revenue elasticities are often not estimated but only calibrated, especially for emerging and transition economies. Either the calibration is based on the ratio of the marginal to the average tax rate, or, for some tax categories, the elasticity is assumed to equal one.^{1}
 
 The recent literature that employs data from developed countries offers a clear picture of the best practice approach in the estimation of tax revenue elasticities: researchers compute short- and long-run elasticities simultaneously using revenue data adjusted for the effects of tax reforms and tax policy changes (Koester and Priesmeier, 2012). The dynamic nature of the relationships in question, amplified by, among other things, lags in tax collection or tax optimization over short periods, can render purely short-run elasticities that are misleading for practical purposes. On the other hand, focusing solely on long-run elasticities prohibits us from taking into account the process of adjustment to tax base shocks (Bruce et al., 2006).
 
@@ -38922,14 +38920,14 @@ To sum up, the estimates of tax elasticities can vary significantly, depending o
 
 For the calculation of revenue elasticities with respect to their tax bases we focus on the three most important tax categories: wage tax, profit tax, and value added tax; additionally, we include social security contributions—these are not considered taxes under Czech law, but constitute a large fraction of government revenue and function like taxes de facto. Wage tax, called personal income tax in the Czech Republic, probably changed the most over the observed period 1995–2013. Up until 2007 it was levied with progressive tax rates, initially with six tax brackets. The number of tax brackets gradually decreased to four by 2001. In 2008, a proportional flat tax (including a non-taxable minimum income) was introduced, which further decreased the progressivity of the tax system.
 
-ALT 1. A stacked bar chart of Czech tax revenue from 1998 to 2013, each year split between value added tax, profit tax, wage tax, social security contributions and other revenue. The four main categories account for about 90% of the total throughout, and their shares change little across the period.
+ALT 1. A stacked bar chart of Czech tax revenue from 1998 to 2013, each year split between value added tax, profit tax, wage tax, social security contributions and other revenue. Other revenue is about 60% of the total in 1998 and falls to under 10% from 2000 on, after which the four named categories hold their shares almost unchanged: social security a little over 40%, value added tax about 20%, and wage tax and profit tax between them.
 FIGURE 1. The Composition of Czech Tax Revenue in %
 
 Profit tax, called corporate income tax, was levied at a proportional and gradually decreasing rate over the whole observed period (from 41% in 1995 to 19% since 2010). Value added tax had two rates over the whole observed period: the general rate went from 22% to 19% and back to 21%, whereas the reduced rate rose gradually from 5% to 15%. Figure 1 shows that the tax categories included in our analysis constitute about 90% of all tax revenue and social security contributions in recent years. The remaining part of tax revenue comes mostly from excise tax and a couple of other minor categories, such as property tax.
 
 The literature review in the previous section reveals that a large number of empirical studies on tax elasticities do not adjust tax revenue for the effects of discretionary tax reforms. Therefore, such estimates do not fulfill the ceteris paribus condition crucial for correct identification of the elasticity coefficients and should be called “tax buoyancy” instead. An important drawback of buoyancy is that its usability for macroeconomic predictions of tax revenues and the cyclical adjustment of public budget balances is significantly reduced. This observation holds especially for transition and developing countries, where the availability of both ex ante and ex post estimates of the impacts that tax reforms have on tax revenue is scarce compared to developed Western economies with a longer tradition of policy appraisal. In fact, we were not able to find a single empirical study focused on Central and Eastern European countries that estimated policy-neutral tax revenue elasticities.
 
-ALT 2. Four step-like lines from 1995 to 2013 showing the cumulative effect of tax reforms on each revenue category as a percentage of adjusted revenue. Value added tax climbs to about +42% by 2013, while wage tax and profit tax fall to about -36% and -60%; social security contributions move least.
+ALT 2. Four step-like lines from 1995 to 2013 showing the cumulative effect of tax reforms on each revenue category as a percentage of adjusted revenue. All four end at zero in 2013. Value added tax starts at about +42% and steps down; profit tax starts at about -60% and wage tax at about -37%, both stepping up; social security contributions sit near -5% for most of the period and move least.
 FIGURE 2. The Cumulative Effects of Tax Reforms in % of Adjusted Revenues
 
 Figure 2 shows the cumulative effects of tax reforms, which we use to adjust the revenue data and construct policy-neutral time series.^{2} For example, a reform of value added tax coming into effect in 2004 caused a permanent increase in revenue. Using a slightly modified version of the proportional adjustment method (Prest, 1962) utilized by, for example, Koester and Priesmeier (2012) and Wolswijk (2009), we correspondingly increase all preceding periods by assuming that the permanent effects of a tax reform change proportionally with the corresponding tax revenue. In the case of a policy change temporarily increasing profit tax revenue in 2010, nothing gets propagated either into the future, or into the past. Figure 2 reveals that if all the tax changes up to 2013 had been introduced in 1995, the value added tax revenue would have been almost 42% higher that year.
@@ -38938,7 +38936,7 @@ In contrast, wage tax and profit tax revenue would have been 36% and 60% lower, 
 
 Our inputs for the calculation of adjusted tax revenue data come from the Czech National Bank, where they constitute a set of information used for fiscal projections in the central bank’s core prediction model. The data are mostly based on ex ante predictions of the impacts of policy changes taken from the documents accompanying draft bills sent to the Parliament of the Czech Republic. Sometimes, though, they correspond to ex post estimates further adjusted by the Czech National Bank’s experts to fit the realized impacts of fiscal reforms.
 
-ALT 3. Four lines from 1995 to 2013 giving the ratio of adjusted tax revenue to its base, in per cent, for each category. Wage tax and profit tax rise until about 2005 and are flat after it, profit tax being the most volatile; value added tax declines slowly across the whole period.
+ALT 3. Four lines from 1995 to 2013 giving the ratio of adjusted tax revenue to its base, in per cent, for each category. Social security contributions run flat at about 47%, the highest of the four. Value added tax declines slowly from about 16.5% to about 14.5%. Wage tax rises from about 7% to about 11%. Profit tax is the most volatile, rising from about 11% in 1999 to between 17% and 20% after 2004.
 FIGURE 3. The Ratio of Adjusted Tax Revenues to Their Bases in %
 
 Quarterly data on tax revenue are obtained from the Ministry of Finance of the Czech Republic. Value added tax and corporate income tax are used in the same form as provided by the Ministry, but we exclude tax paid by self-employed individuals on the basis of yearly tax returns from the total personal income tax. The reasons for the exclusion are twofold: first, we are interested in wage tax, and self-employed individuals do not earn wages. Second, the excluded subcategory of personal income tax revenue is highly volatile and seems to be divided into quarters only by statistical approximation. Unfortunately, due to the unavailability of more disaggregated data, it was impossible to exclude other income not directly connected to wages but subject to personal income tax, such as capital income and lease income—but these categories do not constitute an important share of households’ income. Due to the unavailability of accrual data at the required level of disaggregation, all tax revenue data are cash-based. This is especially problematic for the profit tax category, where a tax liability may be settled with a lag of up to two years, creating a sizable disparity between accrual and cash-based revenue accounting. Social security contributions data are obtained from the Czech Statistical Office and are the only revenue category calculated on an accrual basis.
@@ -39007,8 +39005,7 @@ TABLE 1. The Adjustment of Tax Revenue to Shocks to the Tax Base (Baseline Estim
 |  | (0.0309) | (0.0414) | (0.125) | (0.0194) |
 | 2008 reform | -0.0241\*\* | -0.0241 | -0.0511 | 0.00156 |
 |  | (0.00916) | (0.0234) | (0.0546) | (0.00768) |
-| (χ2) |  |  |  |  |
-| Autocorrelation | 0.101 | 0.648 | 0.719 | 0.835 |
+| Autocorrelation ($\chi^2$) | 0.101 | 0.648 | 0.719 | 0.835 |
 | Observations | 73 | 73 | 57 | 58 |
 Notes: The response variable is tax revenue for the long-run estimation and growth of tax revenue for the short-run estimation. The long-run specification is estimated by dynamic OLS with the Newey-West correction for standard errors (heteroscedasticity and autocorrelation-robust up to lag 4); the additional controls included in the dynamic OLS (lags and leads of the tax base) are not reported for ease of exposition. Also unreported is the constant, which is included in both the short- and long-run estimation. The regressions for value added tax additionally include unreported interactions of quarterly dummies and a dummy variable break, which equals one for all observations occurring after the last quarter of 2003 (a major change in reporting value added tax revenue in the Czech Republic). The short-run specification is estimated with OLS, and we report the $\chi^2$ statistic for Durbin's alternative test of autocorrelation in this specification (in all cases we do not reject the null hypothesis of no autocorrelation). Residual_LR denotes residuals from the long-run equation. Reform denotes a dummy variable that equals one for observations occurring after the last quarter of 2007 (the implementation of a major tax reform in the Czech Republic).
 
@@ -39036,7 +39033,7 @@ FIGURE 7. The Impulse Response of Social Security Contributions. Notes: The soli
 
 In this paper we use an error correction model to estimate short-run and long-run tax revenue elasticities in the Czech Republic with respect to the corresponding tax bases. We focus on four categories of government revenue: value added tax, wage tax, profit tax, and social security contributions; and use a unique data set of tax revenue adjusted for the effects of tax reforms and tax policy changes covering the period from 1995 to 2013 on a quarterly basis.
 
-Concerning value added tax, we would intuitively expect the revenue elasticity to equal one. Nevertheless, our estimated long-run elasticity of 0.9 is plausible as well, given that the share of housing- related expenditure (which has been either subject to a reduced tax rate or exempted from value added tax altogether during the whole observed period) in our tax base has been steadily increasing since 1995, and doubled by 2013. Moreover, anecdotal evidence suggests that value added tax collection can be plagued by tax evasion, which may also help explain why the elasticity lies slightly below unity.
+Concerning value added tax, we would intuitively expect the revenue elasticity to equal one. Nevertheless, our estimated long-run elasticity of 0.9 is plausible as well, given that the share of housing-related expenditure (which has been either subject to a reduced tax rate or exempted from value added tax altogether during the whole observed period) in our tax base has been steadily increasing since 1995, and doubled by 2013. Moreover, anecdotal evidence suggests that value added tax collection can be plagued by tax evasion, which may also help explain why the elasticity lies slightly below unity.
 
 Our estimate of the long-run wage tax revenue elasticity, 1.4, is consistent with the progressivity of personal income tax in the Czech Republic. Nevertheless, the short-run elasticity only equals 0.3 and the adjustment process appears to be relatively slow: it takes two quarters for the elasticity to reach unity, and even after a year the elasticity still remains significantly below its equilibrium long-run value. One potential explanation for the collection lag might be the additional tax revenue from tax returns (submitted by April for the previous calendar year), which might be particularly significant if the person holds two or more jobs. Especially in the case of wage tax elasticity, therefore, the dynamics seem to be crucial and have to be taken into account in order to model the behavior of tax revenues correctly. In general, the estimates of revenue elasticities concerning both value added and wage tax are broadly comparable with those found in the existing literature. An issue related to wage tax elasticity is the elasticity of social security contributions, which we estimate to be close to 1: in other words, revenue from social security contributions reacts one-to-one to changes in the corresponding tax base.
 
@@ -39080,9 +39077,7 @@ Kremer, J., C. Rodrigues Braz, T. Brosens, G. Langenus, S. Momigliano, and M. Sp
 
 Machado, R. and J. Zuloeta (2012): “The Impact of the Business Cycle on Elasticities of Tax Revenue in Latin America.” IDB Working Paper Series No. IDB-WP-340, Inter-American Development Bank.
 
-Masih, A. M. M. and R. Masih (1999): “Is a significant socio-economic structural change a pre-requisite for ‘initial’ fertility decline in the LDCs? Evidence from Thailand based on a multivariate cointegration/vector error correction mode.” Journal of Population Economics,
-
-18 Tomáš Havránek, Zuzana Iršová, and Jiˇrí Schwarz 12(3):463–487.
+Masih, A. M. M. and R. Masih (1999): “Is a significant socio-economic structural change a pre-requisite for ‘initial’ fertility decline in the LDCs? Evidence from Thailand based on a multivariate cointegration/vector error correction mode.” Journal of Population Economics, 12(3):463–487.
 
 Mertens, K. and M. O. Ravn (2014): “A reconciliation of SVAR and narrative estimates of tax multipliers.” Journal of Monetary Economics, 68(S):S1–S19.
 
@@ -39103,7 +39098,7 @@ Wolswijk, G. (2009): “The Short- and Long-Run Tax Revenue Response to Changes 
 #### Appendix A: Supplementary Material and Robustness Checks
 
 ALT A1. A scatter of the quarter-on-quarter percentage change in reported value added tax revenue from 1995 to 2013, each point labelled by its quarter. Before 2004 the four quarters occupy distinct bands; after the change in reporting they rearrange, which is the break the estimation allows for.
-FIGURE A1. The Seasonal Pattern of Reported Value Added Tax Revenue
+FIGURE A1. The Seasonal Pattern of Reported Value Added Tax Revenue. Notes: The numbers indicate quarters and depict the quarter-on-quarter percentage change. There is a clear break visible in the seasonal pattern in 2004; the revenue seems to be more evenly distributed across the quarters since then.
 
 TABLE A1. The Adjustment of Tax Revenue to Shocks to the Tax Base (Seasonally Adjusted)
 
@@ -39123,10 +39118,9 @@ TABLE A1. The Adjustment of Tax Revenue to Shocks to the Tax Base (Seasonally Ad
 |  | (0.111) | (0.176) | (0.188) | (0.145) |
 | 2008 reform | -0.0146 | -0.00349 | -0.0494 | -0.00466 |
 |  | (0.00961) | (0.0228) | (0.0541) | (0.00596) |
-| (χ2) |  |  |  |  |
-| Autocorrelation | 0.765 | 0.319 | 1.483 | 1.979 |
+| Autocorrelation ($\chi^2$) | 0.765 | 0.319 | 1.483 | 1.979 |
 | Observations | 73 | 73 | 57 | 58 |
-Notes: The response variable is tax revenue for the long-run estimation and growth of tax revenue for the short-run estimation. The data are seasonally adjusted and the specifications do not include quarterly dummies.
+Notes: The response variable is tax revenue for the long-run estimation and growth of tax revenue for the short-run estimation. The long-run specification is estimated by dynamic OLS with the Newey-West correction for standard errors (heteroscedasticity and autocorrelation-robust up to lag 4); the additional controls included in the dynamic OLS (lags and leads of the tax base) are not reported for ease of exposition. The short-run specification is estimated with OLS, and we report the $\chi^2$ statistic for Durbin's alternative test of autocorrelation in this specification (in all cases we do not reject the null hypothesis of no autocorrelation). Residual_LR denotes residuals from the long-run equation. Reform denotes a dummy variable that equals one for observations occurring after the last quarter of 2007 (the implementation of a major tax reform in the Czech Republic).
 
 TABLE A2. The Adjustment of Tax Revenue to Shocks to the Tax Base (No Quarterly Dummies)
 
@@ -39146,10 +39140,9 @@ TABLE A2. The Adjustment of Tax Revenue to Shocks to the Tax Base (No Quarterly 
 |  | (0.259) | (0.205) | (0.212) | (0.124) |
 | 2008 reform | -0.0207 | 0.0218 | -0.0433 | -0.0118\* |
 |  | (0.0258) | (0.0342) | (0.0727) | (0.00661) |
-| (χ2) | 11.215∗∗∗ | 27.027∗∗∗ |  |  |
-| Autocorrelation |  |  | 0.013 | 0.234 |
+| Autocorrelation ($\chi^2$) | 11.215\*\*\* | 27.027\*\*\* | 0.013 | 0.234 |
 | Observations | 73 | 73 | 57 | 58 |
-Notes: The response variable is tax revenue for the long-run estimation and growth of tax revenue for the short-run estimation. The specifications do not include quarterly dummies.
+Notes: The response variable is tax revenue for the long-run estimation and growth of tax revenue for the short-run estimation. The long-run specification is estimated by dynamic OLS with the Newey-West correction for standard errors (heteroscedasticity and autocorrelation-robust up to lag 4); the additional controls included in the dynamic OLS (lags and leads of the tax base) are not reported for ease of exposition. The short-run specification is estimated with OLS, and we report the $\chi^2$ statistic for Durbin's alternative test of autocorrelation in this specification. Residual_LR denotes residuals from the long-run equation. Reform denotes a dummy variable that equals one for observations occurring after the last quarter of 2007 (the implementation of a major tax reform in the Czech Republic).
 
 TABLE A3. Stationarity and Cointegration Tests
 
@@ -39276,7 +39269,13 @@ Tables 1 and 2 present descriptive statistics of tourist arrivals and overnight 
 
 Additionally, this study applies the augmented Dickey-Fuller (ADF) test, the Phillips-Perron (PP) test, and the Kwiatkowski-Phillips-Schmidt-Shin (KPSS) test to assess the unit root hypothesis. The ADF and PP methods test the unit root hypothesis in the level values of tourist arrivals and overnight stays (Table 3) and the difference value (Table 4), and the KPSS method tests for stationarity in both the true and differenced values (Tables 3 and 4).
 
-As in Table 3, for most countries of origin, we cannot reject the null hypothesis of a unit root at the 5% level. Similar results are obtained for the KPSS test, where the null hypothesis of stationarity is rejected in most cases. When the tests are applied to the logarithmic difference of individual time series (Table 4), the null of nonstationarity is strongly rejected in most cases. For the KPSS test, we cannot reject the null hypothesis of a unit root at the 5% level.
+As in Table 3, for most countries of origin, we cannot reject the null hypothesis of a unit root at the 5% level. Similar results are obtained for the KPSS test, where the null hypothesis of stationarity is rejected in most cases. When the tests are applied to the logarithmic difference of individual time series (Table 4), the null of nonstationarity is strongly rejected in most cases. For the KPSS test, we cannot reject the null hypothesis of a unit root at the 5% level for any country. These results imply that differencing is required in most cases and prove the importance of deseasonalizing and detrending tourist arrivals and overnight stays before modeling and forecasting.
+
+An adjusted MIDAS model is:
+
+$$ \Delta\log(\mathrm{tourist}_t) = \alpha + \sum_{i=1}^{n} \beta_i L^i \Delta\log(\mathrm{tourist}_t) + \gamma \sum_{i=1}^{w} W(k;\theta) L^{k/w} \Delta\log(\mathrm{google}^{(w)}_t) + \epsilon^{(w)}_t $$ (8)
+
+for $t = 1, ..., T$, and $w = 1, .., 4$. The dependent variable is the natural logarithm of tourist arrivals year-on-year change. The function $W(k;\theta)$ is a polynomial specification that determines the weights for temporal aggregation, such as Beta, Exponential or Almon. $L^i$ is a polynomial lag operator of tourist arrivals, and $L^{k/w}$ represents a lag operator of the high-frequency independent variable $\mathrm{google}^{(w)}_t$. $\beta$ represents the effect of the lag values of year-on-year change of tourist arrivals, and $\gamma$ represents the effect of the high-frequency variable $\mathrm{google}^{(w)}_t$.
 
 TABLE 1. Descriptive analysis of monthly tourist arrivals by countries
 
@@ -39354,19 +39353,21 @@ Notes: Author's estimation. The estimation represents the monthly data for Janua
 
 #### 4. Results
 
+MIDAS models of tourist arrivals and overnight stays in Prague are presented in this section. Official statistical data of overnight stays and tourist arrivals were used to assess the forecasting performance of weekly Google MIDAS regression models. All models were estimated using data from January 2010 to December 2016 and weekly Google Trends information.
+
 TABLE 5. MIDAS model estimates of tourist arrivals: January 2010 - December 2016
 
 | | Weekly Google Search | | | Monthly Google | Without Google |
 |---|---|---|---|---|---|
 | | Beta coeff | Exp coeff | Almon coeff | ARIMA | ARIMA |
-| DLTOURIST(-1) | 0.066 | 0.042 | 0.135 | 0.079                    0.114 |
-|  | (0.142) | (0.139) | (0.147) | (0.127)                 (0.133) |
-| DLTOURIST(-2) | 0.280** | 0.269** | 0.262** | 0.214*                 0.335** |
-|  | (0.137) | (0.124) | (0.134) | (0.123)                 (0.126) |
-| DLTOURIST(-3) | -0.148 | -0.156 | -0.160 | -0.252*                  -0.132 |
-|  | (0.139) | (0.130) | (0.137) | (0.127)                 (0.132) |
-| DLTOURIST(-12) | -0.270** | -0.276** | -0.289** | -0.252**                  -0.169 |
-|  | (0.129) | (0.122) | (0.130) | (0.116)                 (0.122) |
+| DLTOURIST(-1) | 0.066 | 0.042 | 0.135 | 0.079 | 0.114 |
+|  | (0.142) | (0.139) | (0.147) | (0.127) | (0.133) |
+| DLTOURIST(-2) | 0.280** | 0.269** | 0.262** | 0.214* | 0.335** |
+|  | (0.137) | (0.124) | (0.134) | (0.123) | (0.126) |
+| DLTOURIST(-3) | -0.148 | -0.156 | -0.160 | -0.252* | -0.132 |
+|  | (0.139) | (0.130) | (0.137) | (0.127) | (0.132) |
+| DLTOURIST(-12) | -0.270** | -0.276** | -0.289** | -0.252** | -0.169 |
+|  | (0.129) | (0.122) | (0.130) | (0.116) | (0.122) |
 | Weekly Google | 1.049** | 1.133*** | 1.090*** |  |
 |  | (0.447) | (0.401) | (0.140) |  |
 | BETA01 | 1.076*** | -1.720 | 1.825** |  |
@@ -39390,14 +39391,14 @@ TABLE 6. MIDAS models estimates of overnight stays: January 2010 - December 2016
 | | Weekly Google Search | | | Monthly Google | Without Google |
 |---|---|---|---|---|---|
 | | Beta coeff | Exp coeff | Almon coeff | ARIMA | ARIMA |
-| DLTOURIST(-1) | 0.175 | 0.140 | 0.233 | 0.186                  0.181 |
-|  | (0.128) | (0.128) | (0.144) | (0.121)               (0.128) |
-| DLTOURIST(-2) | 0.319** | 0.306** | 0.321*** | 0.298**              0.335*** |
-|  | (0.122) | (0.123) | (0.130) | (0.116)               (0.122) |
-| DLTOURIST(-3) | -0.162 | -0.177 | -0.181 | -0.262**                -0.189 |
-|  | (0.125) | (0.125) | (0.133) | (0.121)               (0.127) |
-| DLTOURIST(-12) | -0.333*** | -0.318** | -0.323*** | -0.289**              -0.254** |
-|  | (0.119) | (0.120) | (0.125) | (0.111)               (0.117) |
+| DLTOURIST(-1) | 0.175 | 0.140 | 0.233 | 0.186 | 0.181 |
+|  | (0.128) | (0.128) | (0.144) | (0.121) | (0.128) |
+| DLTOURIST(-2) | 0.319** | 0.306** | 0.321*** | 0.298** | 0.335*** |
+|  | (0.122) | (0.123) | (0.130) | (0.116) | (0.122) |
+| DLTOURIST(-3) | -0.162 | -0.177 | -0.181 | -0.262** | -0.189 |
+|  | (0.125) | (0.125) | (0.133) | (0.121) | (0.127) |
+| DLTOURIST(-12) | -0.333*** | -0.318** | -0.323*** | -0.289** | -0.254** |
+|  | (0.119) | (0.120) | (0.125) | (0.111) | (0.117) |
 | Weekly Google | 1.759 | 2.422** | 1.843** |  |
 |  | (1.179) | (1.124) | (0.951) |  |
 | BETA01 | 1.020*** | 27.609 | 6.030*** |  |
@@ -39448,11 +39449,13 @@ The most common methods used to determine forecasting accuracy are functions of 
 
 Figures 5 and 6 show the forecasting evaluations using different MIDAS regressions for tourist arrivals and overnight stays. For tourist arrivals, MIDAS-Almon is the best forecasting model (see Figure 5), whereas MIDAS-Beta is the best forecasting model for overnight stays (see Figure 6).
 
-ALT 5. A chart from 2013 to 2016 of the actual month-on-month change in tourist arrivals, DTOURIST, shown as a swinging blue line, with the forecasts of the MIDAS-Beta, MIDAS-Exp and MIDAS-Almon models, the monthly-Google and without-Google models, the simple mean and the mean square error drawn over it. The forecast lines stay in a narrow band while the actual series swings far above and below it.
+ALT 5. A chart from 2013 to 2016 of the actual year-on-year change in tourist arrivals, DTOURIST, shown as a swinging blue line, with the forecasts of the MIDAS-Beta, MIDAS-Exp and MIDAS-Almon models, the monthly-Google and without-Google models, the simple mean and the mean square error drawn over it. The forecast lines stay in a narrow band while the actual series swings far above and below it.
 FIGURE 5. Forecasting tourist arrivals in Prague by MIDAS estimates: Jan, 2012 - Dec, 2016. Notes: Lines represent the forecasting results from different models. DTOURIST represents the change in tourist arrivals. The most accurate forecasting method is MIDAS-Almon.
 
-ALT 6. The same chart drawn for overnight stays: the actual change, DOVERNIGHT, swings widely while the forecast lines of the same eight models stay in a narrow band.
+ALT 6. The same chart drawn for overnight stays: the actual year-on-year change, DOVERNIGHT, swings widely while the seven forecast lines stay in a narrow band.
 FIGURE 6. Forecasting overnight stays in Prague by MIDAS estimates: Jan, 2012 - Dec, 2016. Notes: Lines represent the forecasting results from different models. DTOURIST represents the change in tourist arrivals. The most accurate forecasting method is MIDAS-Almon.
+
+The values of the Diebold-Mariano test are based on the absolute values of the out-of-sample period of July 2014 - December 2016. The positive significant values indicate that the MIDAS forecasting models are statistically more accurate than the competing models without Google Trends. The null hypothesis is that both forecasts have the same accuracy. Model 2 (Google Trends model) is more accurate than the baseline model (Model without Google trends). All models reject the null hypothesis; therefore, the Google Trends models are more accurate than the baseline model (Table 8).
 
 TABLE 8. Forecasting Evaluations - Diebold & Mariano Test
 
@@ -39481,14 +39484,14 @@ TABLE A1. MIDAS models estimates in tourism inbound from Germany to Prague
 | Tourist arrivals | Weekly Google Search | | | Monthly Google | Without Google |
 |---|---|---|---|---|---|
 | | Beta coeff | Almon coeff | Step coeff | ARIMA | ARIMA |
-| DTOURIST(-1) | -0.151 | -0.216 | -0.117 | -0.161                 -0.167 |
+| DTOURIST(-1) | -0.151 | -0.216 | -0.117 | -0.161 | -0.167 |
 |  | (0.129) | (0.131) | (0.131) | ( 0.144)                (0.132) |
-| DTOURIST(-2) | 0.342** | 0.350** | 0.324** | 0.405***               0.453*** |
-|  | (0.124) | (0.133) | (0.125) | (0.135)                (0.122) |
-| DTOURIST(-3) | 0.137 | 0.127 | 0.108 | 0.155                  0.180 |
-|  | (0.127) | (0.135) | (0.129) | (0.138)                (0.132) |
-| DTOURIST(-12) | -0.355** | -0.275** | -0.344*** | -0.280**               -0.254** |
-|  | (0.115) | (0.118) | (0.115) | (0.124)                (0.120) |
+| DTOURIST(-2) | 0.342** | 0.350** | 0.324** | 0.405*** | 0.453*** |
+|  | (0.124) | (0.133) | (0.125) | (0.135) | (0.122) |
+| DTOURIST(-3) | 0.137 | 0.127 | 0.108 | 0.155 | 0.180 |
+|  | (0.127) | (0.135) | (0.129) | (0.138) | (0.132) |
+| DTOURIST(-12) | -0.355** | -0.275** | -0.344*** | -0.280** | -0.254** |
+|  | (0.115) | (0.118) | (0.115) | (0.124) | (0.120) |
 | Weekly Google | 144.374* | 151.835** | 89.874*** |  |
 |  | (72.546) | (69.269) | (26.944) |  |
 | BETA01 | 0.977*** | -20.274 | -54.677** |  |
@@ -39501,9 +39504,10 @@ TABLE A1. MIDAS models estimates in tourism inbound from Germany to Prague
 |  |  |  |  | (110.468) |
 | Monthly Google (-2) |  |  |  | 72.660 |
 |  |  |  |  | (107.626) |
-| CONSTANT | -5.164 | -5.363 | -4.257 | -4.142               2.988 |
-|  | (4.172) | (4.02) | (4.177) | (4.395)              (1.215) |
+| CONSTANT | -5.164 | -5.363 | -4.257 | -4.142 | 2.988 |
+|  | (4.172) | (4.02) | (4.177) | (4.395) | (1.215) |
 | Overnight Stays |
+| | Beta coeff | Almon coeff | Step coeff | ARIMA | ARIMA |
 | DTOURIST(-1) | -0.082 | -0.134 | -0.182 | -0.125 | -0.117 |
 |  | (0.140) | (0.121) | (0.136) | (0.138) | (0.129) |
 | DTOURIST(-2) | 0.386*** | 0.396*** | 0.488*** | 0.454*** | 0.500*** |
@@ -39555,8 +39559,9 @@ TABLE A2. MIDAS models estimates of tourism inbound from Russia to Prague
 |  |  |  |  | (183.975) |  |
 | CONSTANT | -2.368*** | -1.440*** | -2.251*** | -2.019*** | 0.873 |
 |  | (0.631) | (0.528) | (0.611) | (0.483) | (0.711) |
-|  | Wee | kly Google Sear | ch | Monthly Google | Without Google |
+|  | Weekly Google Search | | | Monthly Google | Without Google |
 | Overnight Stays |
+| | Beta coeff | Almon coeff | Step coeff | ARIMA | ARIMA |
 | DLTOURIST(-1) | 0.466*** | 0.485*** | 0.495*** | 0.392*** | 0.623*** |
 |  | (0.138) | ( 0.135) | (0.134) | (0.129) | (0.132) |
 | DLTOURIST(-2) | 0.168 | 0.166 | 0.062 | 0.168 | 0.230 |
@@ -39579,7 +39584,7 @@ TABLE A2. MIDAS models estimates of tourism inbound from Russia to Prague
 |  |  |  |  | (810.783) |  |
 | CONSTANT | -6.589** | -6.214*** | -9.111*** | -9.013*** | -0.164 |
 |  | (3.227) | (2.144) | (2.593) | (2.108) | (0.315) |
-Notes: The dependent variables are the natural logarithm of tourist arrivals and overnight stays year-on-year changes. Columns (2)-(4) represent weekly Google data, Column (5) represents monthly Google data, and Column (6) represents the ARIMA model without Google trends information. \*\*\*, \*\*, and \* denote statistical significance at the 1%, 5%, and 10% levels, respectively.
+Notes: The dependent variables are the natural logarithm of tourist arrivals and overnight stays year-on-year changes; the estimated equation is $\Delta\log(\mathrm{tourist}_t) = \alpha + \sum_{i=1}^{n}\beta_i L^i \Delta\log(\mathrm{tourist}_t) + \gamma \sum_{i=1}^{w} W(k;\theta) L^{k/w} \Delta\log(\mathrm{google}_t^{(w)}) + \epsilon_t^{(w)}$. Columns (2)-(4) represent weekly Google data, Column (5) represents monthly Google data, and Column (6) represents the ARIMA model without Google trends information. Column (2) represents MIDAS with a beta weight function. Column (3) represents MIDAS with an exponential weight function. Column (4) represents the Almon formulation. Column (5) represents the ARIMA(1,1,1) results with monthly data. \*\*\*, \*\*, and \* denote statistical significance at the 1%, 5%, and 10% levels, respectively.
 
 TABLE A3. MIDAS models estimates of tourism inbound from UK to Prague
 
@@ -39607,7 +39612,10 @@ TABLE A3. MIDAS models estimates of tourism inbound from UK to Prague
 | Monthly Google (-2) |  |  |  | 23.888 |  |
 |  |  |  |  | (35.955) |  |
 | CONSTANT | -2.714 | -2.009 | -2.296 | -2.714 | 1.469*** |
+|  | (2.275) | (1.827) | (2.284) | (1.971) | (0.436) |
+|  | Weekly Google Search | | | Monthly Google | Without Google |
 | Overnight Stays |
+| | Beta coeff | Almon coeff | Step coeff | ARIMA | ARIMA |
 | DLTOURIST(-1) | 0.336** | 0.306** | 0.332** | 0.319** | 0.347*** |
 |  | (0.137) | (0.137) | (0.134) | (0.132) | (0.130) |
 | DLTOURIST(-2) | 0.166 | 0.151 | 0.158 | 0.144 | 0.186 |
@@ -39813,7 +39821,7 @@ FIGURE 1. The Evolution of the Financial Series Used in the VAR Analysis
 
 Figure 1 shows the evolution of the financial variables over time. The volume of total credit was slowly but steadily declining during the late 1990s and early 2000s, reflecting the prudent behavior of Czech banks in the late 1990s associated with the restructuring of the Czech banking industry (Bárta and Singer, 2006). In the same period, the ratios of loan loss provisions and non-performing loans to total loans peaked, before falling after the banking sector consolidated. Soon after, the ratio of liquid assets began to soar. Then, in 2003, the volume of credit started rising, embarking on a world-wide upward trend fuelled by a stable macroeconomic environment and low interest rates. At the same time, loan loss provisions and non-performing loans fell to historical lows. Bank liquidity stabilized in that period, before modestly declining in connection with the recent global financial crisis. We can see that the Czech banking sector has remained largely stable during the crisis period and the credit risk or liquidity risk measures were much better than during the bank consolidation around 2000. The PX index closely follows foreign equity prices and peaks in the second half of 2007.
 
-All this is also summarized in the Financial Stance series, which is constructed as the first principal component of all the financial series described above.1 This joint indicator of financial soundness catches up in the early 2000s, grows steadily later on, peaks in the second half of 2007 before the financial crisis, and remains at broadly the same level afterwards.
+All this is also summarized in the Financial Stance series, which is constructed as the first principal component of all the financial series described above.^{1} This joint indicator of financial soundness catches up in the early 2000s, grows steadily later on, peaks in the second half of 2007 before the financial crisis, and remains at broadly the same level afterwards.
 
 #### 4. Results
 
@@ -39880,7 +39888,7 @@ FIGURE 8. The Effect of the Stock Market on Czech GDP and Prices and the Effect 
 
 ###### Financial Stance Indicator
 
-The financial stance indicator is calculated as the first principal component linear combination of all the financial variables used above, capturing 70% of the sample variation. Prior to the calculation of the principal component, the variables are transformed in such a way that the increase in the resulting indicator represents an improvement in the overall financial stance.2 The first principal component is significantly correlated with the simple average of the transformed variables (the correlation coefficient is 0.99).
+The financial stance indicator is calculated as the first principal component linear combination of all the financial variables used above, capturing 70% of the sample variation. Prior to the calculation of the principal component, the variables are transformed in such a way that the increase in the resulting indicator represents an improvement in the overall financial stance.^{2} The first principal component is significantly correlated with the simple average of the transformed variables (the correlation coefficient is 0.99).
 
 According to our results, an improved financial stance fuels economic growth, but its effect on prices is found to be statistically insignificant. A monetary restriction leads to a significant fall in the financial stance throughout the first year, with a bottom effect after 6 months. This suggests that although the typical transmission lag of monetary policy to the real economy is about 1– 2 years, the effect on many financial variables is rather faster and peaks in about half a year.
 
@@ -39898,9 +39906,9 @@ Therefore, we have three out-of-sample periods over which we compare the one to 
 The performance of the various models in forecasting GDP and CPI inflation is examined. The baseline results are presented in Figures 8–9 (the forecasting performance is averaged over three samples – 2006:8–2007:8, 2007:8–2008:8, and 2008:8–2009:8, as explained above). The stock market index is found to improve the GDP forecast for the entire forecasting horizon. The same goes for the share of non-performing loans and bank liquidity two quarters ahead. The size of the contribution of the stock market index for GDP forecasting is substantial and ranges from 25 to 50%. As regards prices, loan loss provisions, credit, and the stock market index are found to contribute to better predictability of prices for the entire forecasting horizon, although the contribution of the stock market index is rather marginal. The size of the contribution of the two former variables is about 10% on average. The results of the forecasting performance of the macro-finance models differ a lot between the forecasts of GDP and inflation. Credit and loan loss provisions improve the forecast of prices, but not the forecast of GDP.
 
 ALT 10. A line chart of the relative mean squared error of the GDP forecast against a forecast horizon of one to four quarters, one line per financial variable. The px index line lies below one throughout, between about 0.5 and 0.75. Liquidity is just under one at the first two horizons and just over one afterwards. Non-performing loans rise from about 0.75 to about 1.4, loan loss provisions run between about 1.1 and 1.6, and credit is highest, between about 1.7 and 2.6.
-FIGURE 10. Do Financial Variables Improve the Forecast of GDP? Note: The forecasting performance of the VAR models with individual financial variables is compared to that of the VAR model with macroeconomic variables only. Values of the relative mean square error below one indicate that the financial variable improves the forecasts of prices.
+FIGURE 10. Do Financial Variables Improve the Forecast of GDP? Note: The forecasting performance of the VAR models with individual financial variables is compared to that of the VAR model with macroeconomic variables only. Values of the relative mean square error below one indicate that the financial variable improves the forecasts of GDP.
 
-ALT 11. A line chart of the relative mean squared error of the price-level forecast against a forecast horizon of one to twelve months, one line per financial variable. After the first month the lines cluster tightly between about 0.8 and 1.1: loan loss provisions and credit sit below one from the third month on, while non-performing loans and liquidity sit just above it. The px index runs close to one throughout.
+ALT 11. A line chart of the relative mean squared error of the price-level forecast against a forecast horizon of one to twelve months, one line per financial variable. The first month is the outlier: loan loss provisions start at 0.3 and liquidity at 1.68. From the second month on the lines cluster between about 0.8 and 1.1. Credit stays just below one throughout and loan loss provisions fall away to about 0.8 by the twelfth month, while non-performing loans sit just above one; liquidity and the px index run close to the line and cross it more than once.
 FIGURE 11. Do Financial Variables Improve the Forecast of Prices? Note: The forecasting performance of the VAR models with individual financial variables is compared to that of the VAR model with macroeconomic variables only. Values of the relative mean square error below one indicate that the financial variable improves the forecasts of prices.
 
 It has to be emphasized that these results are to a large extent driven by the fact that we are trying to forecast out of sample over the rather turbulent years 2007–2009. When we restrict our forecasts to 2006:8–2007:8, i.e., the period before the financial crisis, liquidity, non-performing loans, and the PX index consistently improve the forecasts for both GDP and inflation. In the 2007:8–2008:8 period, non-performing loans, liquidity, and the PX still help to improve the forecasts of GDP, but the results become mixed for inflation. This may be due to the external food and oil-price shocks hitting the economy in late 2007. See the Appendix for forecast performance comparisons in the three one-year periods separately.
@@ -39985,21 +39993,21 @@ Zha, T. (1999): “Block Recursion and Structural Vector Autoregressions.” Jou
 
 ##### GDP
 
-ALT A1. A line chart of relative mean squared error against a forecast horizon of one to four quarters. The px index and non-performing loans lie between about 0.5 and 0.9, liquidity just below one, credit between 1.2 and 1.5, and loan loss provisions highest, between about 1.55 and 2.45.
+ALT A1. A line chart of relative mean squared error against a forecast horizon of one to four quarters. The px index and non-performing loans lie between about 0.5 and 0.9. Liquidity runs just under 0.9 for the first three quarters and rises to about 1.1 at the fourth. Credit runs between 1.2 and 1.5, and loan loss provisions highest, between about 1.55 and 2.5.
 FIGURE A1. Forecast performance compared to the purely macroeconomic model (1-year forecast of GDP, VAR 1999:1 - 2006:7)
 
 ALT A2. A line chart of relative mean squared error against a forecast horizon of one to four quarters. Non-performing loans and the px index run between about 0.5 and 0.8, liquidity between 0.85 and 1, loan loss provisions between 1.25 and 1.45, and credit between 1.95 and 2.4.
 FIGURE A2. Forecast performance compared to the purely macroeconomic model (1-year forecast of GDP, VAR 1999:1 - 2007:7)
 
-ALT A3. A line chart of relative mean squared error against a forecast horizon of one to four quarters, with the vertical axis running to five. The px index stays at or below one. Liquidity and non-performing loans start above the top of the axis and fall to about 1.1 and 1.6. Credit also starts off the axis and settles between 2.2 and 2.5. Loan loss provisions run near one.
+ALT A3. A line chart of relative mean squared error against a forecast horizon of one to four quarters, with the vertical axis running to five. The px index stays at or below one. Liquidity and non-performing loans start above the top of the axis and fall to about 1.1 and 1.6. Credit also starts off the axis and settles between 2.2 and 2.5. Loan loss provisions start near 0.2 and then run at about one.
 FIGURE A3. Forecast performance compared to the purely macroeconomic model (1-year forecast of GDP, VAR 1999:1 - 2008:7)
 
 ##### Prices
 
-ALT A4. A line chart of relative mean squared error against a forecast horizon of one to twelve months. Loan loss provisions rise to about 3.3 in the second month and stay above two for the rest of the horizon. Liquidity, non-performing loans and the px index settle between about 0.6 and one, and credit runs just above one.
+ALT A4. A line chart of relative mean squared error against a forecast horizon of one to twelve months. Loan loss provisions start near zero, spike to about 3.3 in the second month, run between 2.1 and 2.4 through the ninth and fall to about 1.5 by the twelfth. Liquidity starts at 4 and non-performing loans at 2.3; both drop below one at the second month and from there they, and the px index, run between about 0.6 and one. Credit runs just above one throughout.
 FIGURE A4. Forecast performance compared to the purely macroeconomic model (1-year forecast of price level, VAR 1999:1 - 2006:7)
 
-ALT A5. A line chart of relative mean squared error against a forecast horizon of one to twelve months. Loan loss provisions start near 0.2 and rise to about 0.75. Credit runs just under 0.9. The px index runs at about one. Liquidity falls from 1.4 towards one, and non-performing loans run between 1.1 and 1.3.
+ALT A5. A line chart of relative mean squared error against a forecast horizon of one to twelve months. Loan loss provisions start near 0.3, dip to about 0.2 and climb to about 0.75. Credit runs just under 0.9. The px index runs at about one. Liquidity falls from 1.4 towards one, and non-performing loans start just below one and then run between 1.1 and 1.3.
 FIGURE A5. Forecast performance compared to the purely macroeconomic model (1-year forecast of price level, VAR 1999:1 - 2007:7)
 
 ALT A6. A line chart of relative mean squared error against a forecast horizon of one to twelve months, with the vertical axis running to five. Credit falls to about 0.6 and then climbs to 4.8 by the twelfth month. Liquidity, loan loss provisions and non-performing loans stay between about 0.5 and 1.2 after the second month. The px index rises from near zero to about 1.45.
