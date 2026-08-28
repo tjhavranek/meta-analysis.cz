@@ -211,9 +211,19 @@ def main():
     postings = {w: encode(ids) for w, ids in body.items() if len(ids) <= cap}
     strong_postings = {w: encode(ids) for w, ids in strong.items()
                        if w in postings and ids}
-    head_postings = {w: encode(ids) for w, ids in titles.items() if len(ids) <= cap}
     dropped = sorted((w for w, ids in body.items() if len(ids) > cap),
                      key=lambda w: -len(body[w]))
+    # A word omitted as too common has to be omitted from the HEADING index as well, or the
+    # query still matches -- just not on the pages it appears on most. "havranek" is on
+    # nearly every page, so it is dropped from b and s, but it sits in 329 page TITLES, all
+    # of them komentare posts that end "-- Tomas Havranek". Searching this site for its own
+    # author's name therefore returned 185 Czech opinion columns and no paper, dataset or
+    # publications page, silently, while "irsova" (below the cap) behaved normally. The
+    # client already says the right thing when every term is common -- "Every page here says
+    # that. Try a word that narrows it down." -- and could not reach it while `h` still had
+    # postings to serve.
+    head_postings = {w: encode(ids) for w, ids in titles.items()
+                     if len(ids) <= cap and w not in set(dropped)}
 
     payload = json.dumps({
             "what": "The index meta-analysis.cz searches itself with.",

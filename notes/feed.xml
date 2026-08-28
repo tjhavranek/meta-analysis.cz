@@ -344,7 +344,7 @@ Two practical points I would emphasize (my personal opinion), beyond the reporti
 </p>
 
 <p>
-2️⃣ These guidelines intentionally do not recommend any particular methodology. We do so in our 2024 method guidelines (https://onlinelibrary.wiley.com/doi/full/10.1111/joes.12595). Brief update: I think the baseline meta-analysis technique is now Robust Bayesian Meta-Analysis (RoBMA) by Frantisek Bartos, Maximilian Maier, and Eric-Jan Wagenmakers -- a principled way to average over various bias-correction methods. But these methods don't address p-hacking, so RoBMA should be complemented with MAIVE (easy to apply via <a href="https://easymeta.org">https://easymeta.org</a>) and RTMA (Maya Mathur).
+2️⃣ These guidelines intentionally do not recommend any particular methodology. We do so in our 2024 method guidelines (<a href="https://onlinelibrary.wiley.com/doi/full/10.1111/joes.12595">https://onlinelibrary.wiley.com/doi/full/10.1111/joes.12595</a>). Brief update: I think the baseline meta-analysis technique is now Robust Bayesian Meta-Analysis (RoBMA) by Frantisek Bartos, Maximilian Maier, and Eric-Jan Wagenmakers -- a principled way to average over various bias-correction methods. But these methods don't address p-hacking, so RoBMA should be complemented with MAIVE (easy to apply via <a href="https://easymeta.org">https://easymeta.org</a>) and RTMA (Maya Mathur).
 </p>
 
 <p>

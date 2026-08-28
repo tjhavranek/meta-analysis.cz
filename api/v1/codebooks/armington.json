@@ -198,7 +198,7 @@
    "dtype": "int64",
    "n_missing": 0,
    "n_unique": 34,
-   "not_n_obs_because": "the dataset's sample size is `total`, verified against the paper; see verified_by in the dataset record",
+   "not_n_obs_because": "constant within study and equal to that study's row count, so it counts the ESTIMATES the study reports, not the observations it used -- and the dataset's sample size is `total`, verified against the paper; see verified_by in the dataset record",
    "stats": {
     "min": 2.0,
     "p25": 81.0,

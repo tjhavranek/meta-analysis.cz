@@ -562,7 +562,7 @@ Baillie, R.T., Chang, S.S., 2011. Carry trades, momentum trading and the forward
 
 Baillie, R.T., Kiliç, R., 2006. Do asymmetric and nonlinear adjustments explain the forward premium anomaly? J Int Money Finance 25 (1), 22–47. doi:10.1016/j.jimonfin.2005.10.002.
 
-Bajzik, J., Havranek, T., Irsova, Z., Schwarz, J., 2020. Estimating the armington elasticity: The importance of study design and publication bias. J. Int. Econ. 127 (C), 103383. doi:10.1016/j.jinteco.2020.10.
+Bajzik, J., Havranek, T., Irsova, Z., Schwarz, J., 2020. Estimating the armington elasticity: The importance of study design and publication bias. J. Int. Econ. 127 (C), 103383. doi:10.1016/j.jinteco.2020.103383.
 
 Bansal, R., Dahlquist, M., 2000. The forward premium puzzle: Different tales from developed and emerging economies. J. Int. Econ. 51 (1), 115–144.
 
@@ -592,7 +592,7 @@ Chiang, T.C., 1988. The forward rate as a predictor of the future spot rate–A 
 
 Chinn, M., Meredith, G., 2004. Monetary policy and long-horizon uncovered interest parity. IMF Staff Papers 51 (3), 409–430.
 
-Cho, D., Chun, S., 2019. Can structural changes in the persistence of the forward premium explain the forward premium anomaly? Journal of International Financial Markets, Institutions and Money 58 (C), 225–235. doi:10.1016/j.intfin.2018.11.
+Cho, D., Chun, S., 2019. Can structural changes in the persistence of the forward premium explain the forward premium anomaly? Journal of International Financial Markets, Institutions and Money 58 (C), 225–235. doi:10.1016/j.intfin.2018.11.003.
 
 Christensen, G., Miguel, E., 2018. Transparency, reproducibility, and the credibility of economics research. J. Econ. Lit. 56 (3), 920–980.
 
@@ -638,7 +638,7 @@ Goodhart, C., 1988. The foreign exchange market: A random walk with a dragging a
 
 Goodhart, C.A.E., McMahon, P.C., Ngama, Y.L., 1997. Why does the spot-Forward discount fail to predict changes in future spot rates. International Journal of Finance & Economics 2 (2), 121–129.
 
-Grossmann, A., Lee, A.A., Simpson, M.W., 2014. Forward premium anomaly of the british pound and the euro. International Review of Financial Analysis 34 (C), 140–156. doi:10.1016/j.irfa.2014.05.01.
+Grossmann, A., Lee, A.A., Simpson, M.W., 2014. Forward premium anomaly of the british pound and the euro. International Review of Financial Analysis 34 (C), 140–156. doi:10.1016/j.irfa.2014.05.013.
 
 Haab, D.R., Nitschka, T., 2020. Carry trade and forward premium puzzle from the perspective of a safe?haven currency. Review of International Economics 28 (2), 376–394. doi:10.1111/roie.12455.
 
@@ -646,9 +646,9 @@ Hai, W., Mark, N.C., Wu, Y., 1997. Understanding spot and forward exchange rate 
 
 Hall, S.G., Kenjegaliev, A., Swamy, P.A.V.B., Tavlas, G.S., 2013. The forward rate premium puzzle: A case of misspecification? Studies in Nonlinear Dynamics & Econometrics 17 (3), 265–279.
 
-Hampl, M., Havranek, T., 2020. Central bank equity as an instrument of monetary policy. Comp. Econ. Stud. 62 (1), 49–68. doi:10.1057/s41294-019-00092-.
+Hampl, M., Havranek, T., 2020. Central bank equity as an instrument of monetary policy. Comp. Econ. Stud. 62 (1), 49–68. doi:10.1057/s41294-019-00092-1.
 
-Hampl, M., Havranek, T., Irsova, Z., 2020. Foreign capital and domestic productivity in the czech republic: A meta-regression analysis. Appl. Econ. 52 (18), 1949–1958. doi:10.1080/00036846.2020.172.
+Hampl, M., Havranek, T., Irsova, Z., 2020. Foreign capital and domestic productivity in the czech republic: A meta-regression analysis. Appl. Econ. 52 (18), 1949–1958. doi:10.1080/00036846.2020.1726864.
 
 Hansen, B.E., 2007. Least squares model averaging. Econometrica 75 (4), 1175–1189.
 
@@ -666,13 +666,13 @@ Havranek, T., Irsova, Z., 2010. Meta-Analysis of intra-Industry FDI spillovers: 
 
 Havranek, T., Irsova, Z., 2017. Do borders really slash trade? a meta-Analysis. IMF Economic Review 65 (2), 365–396.
 
-Havranek, T., Irsova, Z., Janda, K., Zilberman, D., 2015. Selective reporting and the social cost of carbon. Energy Econ. 51 (C), 394–406. doi:10.1016/j.eneco.2015.08.0.
+Havranek, T., Irsova, Z., Janda, K., Zilberman, D., 2015. Selective reporting and the social cost of carbon. Energy Econ. 51 (C), 394–406. doi:10.1016/j.eneco.2015.08.009.
 
 Havranek, T., Irsova, Z., Vlach, T., 2018. Measuring the income elasticity of water demand: The importance of publication and endogeneity biases. Land Econ. 94 (2), 259–283. doi:10.3368/le.94.2.259.
 
 Havranek, T., Irsova, Z., Zeynalova, O., 2018. Tuition fees and university enrolment: A meta-Regression analysis. Oxf Bull Econ Stat 80 (6), 1145–1184. doi:10.1111/obes.12240.
 
-Havranek, T., Kokes, O., 2015. Income elasticity of gasoline demand: A meta-analysis. Energy Econ. 47 (C), 77–86. doi:10.1016/j.eneco.2014.11.0.
+Havranek, T., Kokes, O., 2015. Income elasticity of gasoline demand: A meta-analysis. Energy Econ. 47 (C), 77–86. doi:10.1016/j.eneco.2014.11.004.
 
 Havranek, T., Rusnak, M., 2013. Transmission lags of monetary policy: A meta-Analysis. International Journal of Central Banking 9 (4), 39–76.
 
@@ -690,7 +690,7 @@ Ioannidis, J.P.A., Stanley, T.D., Doucouliagos, H., 2017. The power of bias in e
 
 Irsova, Z., Havranek, T., 2010. Measuring bank efficiency: A Meta-Regression analysis. Prague Economic Papers 2010 (4), 307–328. doi:10.18267/j.pep.379.
 
-Irsova, Z., Havranek, T., 2013. Determinants of horizontal spillovers from FDI: Evidence from a large meta-Analysis. World Dev. 42 (C), 1–15. doi:10.1016/j.worlddev.2012.0.
+Irsova, Z., Havranek, T., 2013. Determinants of horizontal spillovers from FDI: Evidence from a large meta-Analysis. World Dev. 42 (C), 1–15. doi:10.1016/j.worlddev.2012.07.001.
 
 Jeffreys, H., 1961. Theory of probability (3rd edn). Oxford University Press.
 
@@ -702,7 +702,7 @@ Kim, S.-H., Moon, S., Velasco, C., 2017. Delayed overshooting: Is it an ’80s p
 
 Kolcunova, D., Havranek, T., 2018. Estimating the effective lower bound on the czech national Bank’s policy rate. Czech Journal of Economics and Finance 68 (6), 550–577.
 
-Kumar, V., 2020. Liquidity shocks: A new solution to the forward premium puzzle. Econ. Model 91 (C), 445–454. doi:10.1016/j.econmod.2020.06.
+Kumar, V., 2020. Liquidity shocks: A new solution to the forward premium puzzle. Econ. Model 91 (C), 445–454. doi:10.1016/j.econmod.2020.06.006.
 
 Ley, E., Steel, M.F., 2009. On the effect of prior assumptions in bayesian model averaging with applications to growth regression. Applied Econometrics 24, 651–674.
 
@@ -722,13 +722,13 @@ Mussa, M., 1979. Empirical regularities in the behavior of exchange rates and th
 
 Nadal De Simone, F., Razzak, W., 1999. Nominal Exchange Rates and Nominal Interest Rate Differentials. IMF Working Papers. International Monetary Fund.
 
-Park, C., Park, S., 2017. Can monetary policy cause the uncovered interest parity puzzle? Japan World Econ. 41 (C), 34–44. doi:10.1016/j.japwor.2016.12.
+Park, C., Park, S., 2017. Can monetary policy cause the uncovered interest parity puzzle? Japan World Econ. 41 (C), 34–44. doi:10.1016/j.japwor.2016.12.001.
 
 Pippenger, J., 2011. The solution to the forward-bias puzzle. Journal of International Financial Markets, Institutions and Money 21 (2), 296–304.
 
 Razzak, W.A., 2002. The forward rate unbiasedness hypothesis revisited. International Journal of Finance & Economics 7 (4), 293–308.
 
-Reed, J.R., 2019. The forward premium puzzle and markov-switching adaptive learning. J. Macroecon. 59 (C), 1–17. doi:10.1016/j.jmacro.2018.10.
+Reed, J.R., 2019. The forward premium puzzle and markov-switching adaptive learning. J. Macroecon. 59 (C), 1–17. doi:10.1016/j.jmacro.2018.10.005.
 
 Rusnak, M., Havranek, T., Horvath, R., 2013. How to solve the price puzzle? a meta-Analysis. Journal of Money, Credit and Banking 45 (1), 37–70. doi:10.1111/j.1538-4616.2012.00561.x.
 
@@ -752,15 +752,15 @@ Stanley, T.D., Jarrell, S.B., Doucouliagos, H., 2010. Could it be better to disc
 
 Steel, M.F.J., 2020. Model averaging and its use in economics. J. Econ. Lit. 58 (3), 644–719.
 
-Ugur, M., Churchill, S.A., Luong, H.M., 2020. What do we know about r&d spillovers and productivity? meta-analysis evidence on heterogeneity and statistical power. Res. Policy 49 (1). doi:10.1016/j.respol.2019.103.
+Ugur, M., Churchill, S.A., Luong, H.M., 2020. What do we know about r&d spillovers and productivity? meta-analysis evidence on heterogeneity and statistical power. Res. Policy 49 (1). doi:10.1016/j.respol.2019.103866.
 
 Valickova, P., Havranek, T., Horvath, R., 2015. Financial development and economic growth: A meta-Analysis. J. Econ. Surv. 29 (3), 506–526.
 
 Wolf, C.C.P., 1987. Forward foreign exchange rates, expected spot rates, and premia: A Signal-Extraction approach. Journal of Finance 42 (2), 395–406.
 
-Xue, X., Reed, W.R., Menclova, A., 2020. Social capital and health: A meta-analysis. J. Health Econ. 72 (C). doi:10.1016/j.jhealeco.2020.1.
+Xue, X., Reed, W.R., Menclova, A., 2020. Social capital and health: A meta-analysis. J. Health Econ. 72 (C). doi:10.1016/j.jhealeco.2020.102317.
 
-Yu, J., 2013. A sentiment-based explanation of the forward premium puzzle. J. Monet. Econ. 60 (4), 474–491. doi:10.1016/j.jmoneco.2013.04.
+Yu, J., 2013. A sentiment-based explanation of the forward premium puzzle. J. Monet. Econ. 60 (4), 474–491. doi:10.1016/j.jmoneco.2013.04.001.
 
 Zhou, S., Kutan, A.M., 2005. Does the forward premium anomaly depend on the sample period used or on the sign of the premium? International Review of Economics & Finance 14 (1), 17–25. doi:10.1016/j.iref.2003.06.002.
 

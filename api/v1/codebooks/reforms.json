@@ -12,7 +12,7 @@
    "dtype": "int64",
    "n_missing": 0,
    "n_unique": 456,
-   "not_n_obs_because": "the dataset's sample size is `n`, verified against the paper; see verified_by in the dataset record",
+   "not_n_obs_because": "smaller than the degrees of freedom on 25% of rows, so it is not the estimation sample size -- and the dataset's sample size is `n`, verified against the paper; see verified_by in the dataset record",
    "stats": {
     "min": 1.0,
     "p25": 114.75,

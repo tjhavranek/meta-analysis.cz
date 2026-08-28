@@ -8,10 +8,15 @@ OUT=os.path.join(WORK,"out"); BASE="https://meta-analysis.cz"
 VERSION="1.0.0"; DATA_V="v1"
 # The DATA artefact's version, in ONE place. It was hardcoded in four, which is how a
 # consumer once saw the Croissant record say 1.0.0 while the table said 0.9.0-beta.
-DATA_VERSION="1.1.1"; DATA_STATUS="stable"
+DATA_VERSION="1.1.2"; DATA_STATUS="stable"
 # The VERSION DOI, set once Zenodo minted it. None until deposited -- publishing the
 # previous version's DOI beside a new version tells a citing reader the wrong thing.
-DATA_DOI="10.5281/zenodo.22050272"   # 1.1.1 version DOI, reserved on the Zenodo draft and embedded
+# NULL until 1.1.2 is deposited. 1.1.2 corrects n_obs on 4,614 rows -- armington was
+# publishing its per-study estimate count as the sample size and migrant likewise -- so the
+# served table is no longer the one archived under 1.1.1's DOI, 10.5281/zenodo.22050272.
+# Carrying that DOI here would tell a citing reader the corrected table is the archived one.
+# Reserve a DOI on the Zenodo draft, put it here, then build the bundle: see ZENODO_DEPOSIT.md.
+DATA_DOI=None
                                   # before the bundle was built, so the archived files name it.
 
 papers={p["project"]:p for p in json.load(open(os.path.join(SITE,"tools","papers.json"),encoding="utf-8"))}
@@ -141,6 +146,20 @@ def _overlap_fields(proj, r):
                 excluded_to_avoid_double_counting=exact,
                 overlap_kind=("identical row for row" if exact
                               else "same literature, partially overlapping collections"))
+
+# A project's own directory is the natural page URL, but it is not always a page. `ews` has
+# no index.html: the two crisis-database files it holds are published and documented on
+# /crisis_ews/, and /ews/ serves only the files. The catalogue advertised https://.../ews/
+# as that record's URL and it 404ed -- the one dead link on an otherwise fully-resolving API
+# surface, and the record's title fields are null, so the URL was a reader's only handle.
+PAGE_OF = {"ews": "crisis_ews"}
+
+
+def _page_url(proj):
+    """The page that documents a project, or None if the site has none."""
+    p = PAGE_OF.get(proj, proj)
+    return f"{BASE}/{p}/" if os.path.isfile(os.path.join(SITE, p, "index.html")) else None
+
 
 def _sample_size_col(proj):
     """The dataset's own sample-size column, as the codebook verified it.
@@ -279,7 +298,7 @@ for proj in sorted(man):
     if m["status"]!="ok":
         datasets.append(dict(id=proj,status=m["status"],reason=m.get("reason"),
                              paper=dict(title=published_title(pap),page_title=pap.get("title"),
-                                        url=f"{BASE}/{proj}/"))); continue
+                                        url=_page_url(proj)))); continue
     d=dict(
       id=proj,
       # Three names, and each column takes the one it means. `title` is what the journal
@@ -289,7 +308,7 @@ for proj in sorted(man):
       paper=dict(title=published_title(pap), page_title=pap.get("title"),
                  literature=pap.get("literature") or pap.get("title"),
                  authors=pap.get("authors"), year=pap.get("year"),
-                 journal=pap.get("journal"), doi=doi_of(pap), url=f"{BASE}/{proj}/"),
+                 journal=pap.get("journal"), doi=doi_of(pap), url=_page_url(proj)),
       description=pap.get("one_line") or None,
       n_estimates=m["rows"], n_variables=m["cols"],
       # m["rows"] is rows in the published FILE. Where two papers share one file
@@ -362,7 +381,8 @@ excluded += [
        reason="study-level, not estimate-level: 56 studies, one row each",
        paper=dict(title="Survey Article: Publication Bias in the Literature on Foreign "
                         "Direct Investment Spillovers",
-                  page_title="Publication Bias in FDI Spillovers",
+                  page_title="Survey Article: Publication Bias in the Literature on "
+                             "Foreign Direct Investment Spillovers",
                   url=f"{BASE}/spillovers_bias/"),
        excluded_because=("the second-stage data behind the paper: one row for each of the "
                          "56 studies, carrying its publication-bias measure and the "
@@ -372,8 +392,10 @@ excluded += [
                          "pooled under 'spillovers'.")),
   dict(id="cbequity",
        reason="estimate-level and eligible, but not yet in a released version of the table",
-       paper=dict(title="Does Central Bank Financial Strength Matter for Inflation? "
-                        "An Empirical Analysis",
+       # NOT "Does Central Bank Financial Strength Matter for Inflation?" -- that is
+       # Benecka, Holub, Kadlcakova and Kubicova (2012), a paper in THIS paper's own
+       # reference list. paper.title is the field attribution joins on.
+       paper=dict(title="Central Bank Equity as an Instrument of Monetary Policy",
                   page_title="Central Bank Equity as an Instrument of Monetary Policy",
                   url=f"{BASE}/cbequity/"),
        excluded_because=("the one entry here that is NOT excluded on the merits. CBFS.xlsx is a "
@@ -441,7 +463,12 @@ index=dict(
   doi=DATA_DOI, doi_url=(f"https://doi.org/{DATA_DOI}" if DATA_DOI else None),
   concept_doi="10.5281/zenodo.21773678", concept_doi_url="https://doi.org/10.5281/zenodo.21773678",
   doi_note=("Cite the CONCEPT DOI in prose - it always resolves to the newest version. "
-            "Cite the version DOI in a replication package, where you need the exact files."),
+            "Cite the version DOI in a replication package, where you need the exact files."
+            if DATA_DOI else
+            "Cite the CONCEPT DOI: it always resolves to the newest archived version. This "
+            "table, %s, is not yet deposited, so it has no version DOI and the newest deposit "
+            "is the previous version. A replication package needing these exact files should "
+            "cite the concept DOI and record the date." % DATA_VERSION),
   endpoints={
     "datasets":f"{BASE}/api/{DATA_V}/datasets.json",
     "codebook":f"{BASE}/api/{DATA_V}/codebooks/{{id}}.json",

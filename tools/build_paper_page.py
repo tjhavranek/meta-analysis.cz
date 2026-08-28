@@ -170,21 +170,107 @@ def inline(text, refs_are_numbered=False, link_cites=True, in_table=False):
     # markdown rule just wrote and links it again, nesting one anchor inside another.
     text = re.sub(r"\[([^\]]+)\]\(((?:https?://|mailto:)[^)\s]+)\)",
                   lambda m: park('<a href="%s">%s</a>' % (m.group(2), m.group(1))), text)
-    text = re.sub(r"(?<![\w/])(https?://[^\s<>)\]]+[\w/])",
-                  lambda m: park('<a href="%s">%s</a>' % (m.group(1), m.group(1))), text)
+    def _trim_doi(d):
+        """Drop sentence punctuation from the end of a DOI, but not the DOI's own brackets.
+
+        The old closing class simply forbade ")" so the link stopped at the opening bracket:
+        13 old-style Elsevier DOIs across four pages linked to 10.1016/0304-405X(93 and the
+        rest of the identifier sat outside the anchor, reading correctly and resolving to a
+        "DOI Not Found" page. A bracket that CLOSES one the DOI already opened belongs to it;
+        an unmatched one is the sentence's.
+        """
+        while d:
+            c = d[-1]
+            if c in ".,;:":
+                d = d[:-1]; continue
+            if c in ")]":
+                opener = "(" if c == ")" else "["
+                if d.count(opener) >= d.count(c):
+                    break
+                d = d[:-1]; continue
+            break
+        return d
+
+    # A DOI a publisher MISPRINTED, and what it should be. Only entries whose replacement
+    # was confirmed against Crossref and then confirmed to resolve belong here, and only
+    # where the misprint is in the printed page itself, so the transcript is faithful and the
+    # link is the only thing that can be repaired. A one-character slip is not decidable by
+    # rule the way an escaped slash or a doubled prefix is, which is why these are listed
+    # rather than derived. A sweep of all 2,435 DOIs linked on this site found exactly these
+    # two dead, both in alphas' reference list, both printed the same way in alphas.pdf:
+    #   s11408-011-0178-5  Crossref gives -0180-z for "Funds of hedge funds: performance,
+    #                      risk and capital formation", Financial Markets and Portfolio
+    #                      Management, the reference the entry names.
+    #   978-3-030-63706-1  the Springer book "The Regulation of Hedge Funds"; its chapters
+    #                      are 978-3-030-63706-4_2, _6, _7, so the book DOI ends -4.
+    DOI_MISPRINTS = {
+        "10.1007/s11408-011-0178-5": "10.1007/s11408-011-0180-z",
+        "10.1007/978-3-030-63706-1": "10.1007/978-3-030-63706-4",
+    }
+
+    def _doi_href(doi):
+        r"""The resolving form of a DOI whose printed form does not resolve.
+
+        Three reference lists on this site print a DOI the PUBLISHER got wrong, and the
+        transcripts reproduce the printed page faithfully. Rewriting the visible text would
+        make the page disagree with the paper it reproduces; leaving the link broken serves
+        nobody. So the printed string stays and only the href is repaired, for two defects
+        that are decidable rather than guessed:
+
+          * a slash written as the LaTeX escape \/ , or its URL-encoded form %5C%2F
+            (exercise carries both: 10.1177%5C%2F25152459211031256);
+          * a doubled prefix, where a whole second DOI follows the first prefix's slash
+            (exercise prints 10.1016/10.1257/app.20150044 for an AEJ:Applied paper).
+
+        Both corrected forms were confirmed to resolve. Anything else is left alone.
+        """
+        h = doi.replace("%5C%2F", "/").replace("%5c%2f", "/").replace("\\/", "/")
+        m2 = re.match(r"10\.\d{4,9}/(10\.\d{4,9}/.+)$", h)
+        h = m2.group(1) if m2 else h
+        return DOI_MISPRINTS.get(h, h)
+
+    # The bare-URL rule stays AHEAD of the DOI rule. It has to: a publisher URL contains a
+    # DOI ("https://onlinelibrary.wiley.com/doi/10.1111/joes.12574"), and letting the DOI
+    # rule see it first extracts the identifier out of the middle of the URL and leaves the
+    # rest mangled. What it did wrong was forbid ")" in its character class, so
+    # https://doi.org/10.1016/0304-405X(93)90023-5 linked only .../0304-405X(93 -- 13 such
+    # links across four pages resolved to a "DOI Not Found" page while reading correctly on
+    # screen. It now takes the brackets and trims only the ones the sentence owns, and it
+    # repairs a doi.org href the same way the DOI rule does.
+    def _url(m):
+        raw = m.group(1)
+        u = _trim_doi(raw)
+        tail = raw[len(u):]
+        mm = re.match(r"(?:https?://)(?:dx\.)?doi\.org/(10\..+)$", u, re.I)
+        href = ("https://doi.org/" + _doi_href(mm.group(1))) if mm else u
+        return park('<a href="%s">%s</a>' % (href, u)) + tail
+
+    text = re.sub(r"(?<![\w/])(https?://[^\s<>\]]+[\w/)])", _url, text)
     # A DOI is a link whether or not the paper printed it as one, and the reference lists
     # carry theirs three ways: after a "doi:" label, bare, and as an https://doi.org/ URL
     # glued to the preceding word so the bare-URL rule above could not see it. All three
     # resolve identically. The closing character class keeps the link from swallowing the
     # sentence's full stop, which would send the reader to a DOI that does not exist.
     def _doi(m):
-        prefix, doi = m.group(1) or "", m.group(2)
+        prefix, raw = m.group(1) or "", m.group(2)
+        doi = _trim_doi(raw)
+        # Whatever the trim removed is the sentence's punctuation, not the DOI's, and it has
+        # to go back on the PAGE after the anchor. Dropping it deleted the closing bracket of
+        # "(https://doi.org/10.17605/OSF.IO/97CMV)" from three papers -- the character was
+        # trimmed from the link, which was right, and from the visible text, which was not.
+        tail = raw[len(doi):]
+        href = _doi_href(doi)
         if prefix.lower().startswith("http"):
-            return park('<a href="https://doi.org/%s">%s%s</a>' % (doi, prefix, doi))
-        return prefix + park('<a href="https://doi.org/%s">%s</a>' % (doi, doi))
+            return park('<a href="https://doi.org/%s">%s%s</a>' % (href, prefix, doi)) + tail
+        return prefix + park('<a href="https://doi.org/%s">%s</a>' % (href, doi)) + tail
 
+    # The separator after the prefix is usually "/", but exercise prints one DOI whose
+    # slash is the URL-encoded LaTeX escape %5C%2F with no literal slash anywhere, so a
+    # pattern demanding "/" did not recognise it as a DOI at all and left it to the bare-URL
+    # rule. _doi_href turns the escape back into a slash for the link.
     text = re.sub(r"(doi:\s*|https?://(?:dx\.)?doi\.org/)?"
-                  r"(10\.\d{4,9}/[^\s<>\"]*[^\s<>\".,;:)\]])", _doi, text, flags=re.I)
+                  r"(10\.\d{4,9}(?:/|%5C%2F|\\/)[^\s<>\"]*[^\s<>\".,;:\]])",
+                  _doi, text, flags=re.I)
     text = re.sub(r"`([^`]+)`", lambda m: "<code>%s</code>" % m.group(1), text)
     # Emphasis markers must hug their text: "*word*" is emphasis, "***, **, and *" is a
     # significance legend. Without the rule a table note came out as interleaved empty tags,

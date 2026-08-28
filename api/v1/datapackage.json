@@ -1,9 +1,9 @@
 {
  "profile": "tabular-data-package",
  "name": "meta-analysis-cz",
- "version": "1.1.1",
+ "version": "1.1.2",
  "api_version": "1.0.0",
- "data_version": "1.1.1",
+ "data_version": "1.1.2",
  "title": "meta-analysis.cz estimate-level datasets",
  "licenses": [
   {
@@ -15243,7 +15243,7 @@
      {
       "name": "n_obs",
       "type": "number",
-      "description": "The number of observations in the PRIMARY study's own regression — the sample behind that one estimate, not the number of estimates and not any meta-analysis count — expressed always as a count. The source column was chosen by the shape of its values rather than by its name: integral columns with a plausible median are preferred, a log-stored sample size is exponentiated (students) and the result rounded, and a column that is really a row ordinal is rejected. This is the column MAIVE instruments precision with, and three things break that use. 90 of gasoline's 701 rows record n_obs = 1, which is a missing-value code rather than a sample size; six pooled literatures (climate, gasoline_price, scc, skill, trust, water) carry none at all; and coverage inside a literature can be far thinner than the 93.6% headline suggests — inflation has 20 values for 702 rows, alphas 979 of 1,019, frisch 516 of 532. Names genuinely lie here: reforms' `obs` and remittances' `Obs` are strictly increasing row ordinals, and the per-source codebooks label every n_obs role as 'name-match only, not verified'."
+      "description": "The number of observations in the PRIMARY study's own regression -- the sample behind that one estimate, not the number of estimates and not any meta-analysis count -- expressed always as a count. The source column was chosen by the shape of its values rather than by its name: integral columns with a plausible median are preferred, a log-stored sample size is exponentiated (students) and the result rounded, a column that is really a row ordinal is rejected, and so is one that is constant within a study and equal to that study's row count, because such a column counts the estimates the study reports rather than the observations behind them (armington and migrant both had one). Where the dataset names its sample size outright, that declaration wins over any name match, and the per-source codebook marks it `role: n_obs` rather than `inferred_role`; seven columns are verified that way today. This is the column MAIVE instruments precision with, and three things bear on that use. Seven pooled literatures (climate, gasoline_price, migrant, scc, skill, trust, water) carry no sample size at all. Coverage inside a literature can be far thinner than the 91.4% headline suggests -- inflation has 20 values for 702 rows, alphas 979 of 1,019, frisch 516 of 532. And gasoline's column needs reading before use: 90 of its 701 rows record 1, which is not a missing-value code but a correct count of time periods, because `Observations` there equals the time span times the data frequency on 100.0% of rows and those 90 are single-year cross sections whose real sample is the number of units, which the file never records. Names genuinely lie here: remittances' `Obs` is the row index, exactly 1..538, and reforms' `obs` falls below the file's own degrees of freedom on a quarter of its rows."
      },
      {
       "name": "df",

@@ -201,10 +201,11 @@ def describe(df, roles, rejected=None, declared=()):
             # The test is on the COLUMN, not the role. It used to be on the role, via a set
             # holding effect_estimate and standard_error -- which was the same thing for those
             # two, since they are only ever set from the override or the resolved mapping, but
-            # it left the three sample sizes that overrides.json names outright (learning's
-            # n_study, activism's TotalObs, armington's total) showing NO role at all, while a
+            # it left the four sample sizes that overrides.json names outright (learning's
+            # n_study, activism's TotalObs, armington's total and finance_growth's samsize)
+            # showing NO role at all, while a
             # merely name-matched one showed "inferred_role: name-match only". Exactly backwards:
-            # those three are the ones checked against the papers' own code and tables.
+            # those four are the ones checked against the papers' own code and tables.
             verified = str(c) in declared or r in VERIFIED_ROLES
             e["role" if verified else "inferred_role"]=r
             if not verified:
@@ -264,19 +265,22 @@ for proj in sorted(prim):
         # and every candidate must then clear is_sample_size: the name proposes, the values
         # decide. Without the value test the pattern asserts a row index as a sample size.
         elif re.match(r"^(n|nobs|no_?obs|n_?obs|obs|observations|sample|sample_?size|samplesize)$",n):
+            ok,why=is_sample_size(df,c)
             if declared and str(c) not in declared and ov.get("n_obs"):
                 # The dataset names its sample size outright, and it is not this column. A
                 # declaration displaces the guess rather than sitting beside it: finance_growth
                 # published `n` as an inferred n_obs while overrides.json named `samsize`, on
                 # the strength of the paper's own Table 1, so the codebook offered a reader two
                 # sample sizes and no way to choose.
-                rejected[str(c)]=("not_n_obs_because",
-                                  "the dataset's sample size is `%s`, verified against the "
-                                  "paper; see verified_by in the dataset record" % ov["n_obs"])
-            else:
-                ok,why=is_sample_size(df,c)
-                if ok: roles.setdefault(str(c),"n_obs")
-                else: rejected[str(c)]=("not_n_obs_because", why)
+                # The value test still runs, and its answer is kept when it has one. Reporting
+                # the displacement ALONE lost the better reason: remittances' `Obs` and reforms'
+                # `obs` are demonstrably row ordinals, and "the sample size is elsewhere" tells
+                # a reader far less than "this column is the row index".
+                r_ = ("the dataset's sample size is `%s`, verified against the paper; see "
+                      "verified_by in the dataset record" % ov["n_obs"])
+                rejected[str(c)]=("not_n_obs_because", r_ if ok else "%s -- and %s" % (why, r_))
+            elif ok: roles.setdefault(str(c),"n_obs")
+            else: rejected[str(c)]=("not_n_obs_because", why)
         elif re.match(r"^(pub_?year|publication_?year|yearpub|publicationyear)$",n): roles.setdefault(str(c),"pub_year")
         # The name proposes, the values decide -- the same rule n_obs already follows.
         # "tstat_adj" is a 0/1 flag saying whether the t was adjusted and

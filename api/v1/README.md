@@ -73,11 +73,14 @@ from 41 literatures**. Rows are not always independent estimates — `price_puzz
 carries one row per impulse response per horizon (the five month horizons plus
 the trough, coded 99, and the peak, coded 88), and `house_prices` ships about
 seven horizons per impulse response. Check `horizon` before treating rows as
-independent. Version **1.1.1**.
+independent. Version **1.1.2**.
 
 1.1.0 added `finance_growth`, taking the table to 41 literatures, and 1.1.1
 removed 20 `price_puzzle` rows that corresponded to no source estimate, leaving
-49,669.
+49,669. 1.1.2 changes no row count: it corrects `n_obs` on 4,614 rows, where
+`armington` and `migrant` were publishing the number of ESTIMATES a study
+reports as its sample size. `armington` now carries the paper's own data-size
+variable and `migrant`, which ships no sample size at all, carries none.
 
 Core columns are present for every row: `dataset`, `study_id`, `estimate_id`,
 `effect`, `se`, `t_stat`, `precision`. The rest are harmonised moderators, and
@@ -119,8 +122,12 @@ the archived deposit:
 
 > **https://doi.org/10.5281/zenodo.21773678** — cite this. It always resolves to the newest version.
 >
-> **https://doi.org/10.5281/zenodo.22050272** — version 1.1.1 specifically, which is this
-> release. Cite this in a replication package, where the exact files matter.
+> **Version 1.1.2, the table served here, is not yet deposited and so has no version DOI.**
+> A replication package needing these exact files should cite the concept DOI above and
+> record the date it was fetched.
+>
+> `https://doi.org/10.5281/zenodo.22050272` is version 1.1.1, the newest deposit. It differs
+> from what is served here: 1.1.2 corrects `n_obs` on 4,614 rows.
 >
 > `https://doi.org/10.5281/zenodo.21789702` is version 1.0.0, superseded by 1.1.1, which
 > removes 20 `price_puzzle` rows that corresponded to no source estimate.
@@ -143,6 +150,19 @@ agree in every other column, so a blanket `drop_duplicates()` deletes real estim
 errors happen to come out within 1% of the correct ones, so nothing looks wrong; the damage is
 to the cluster count that cluster-robust inference depends on, and to any literature-level
 statistic where the merged studies are genuinely unrelated.
+
+**Three literatures have fewer `study_id` values than they have studies, so those 2,963 pairs
+are 20 short of the truth.** Where a source file carries no column whose NAME matches
+`study_id`/`idstudy`, the harmoniser factorises the study label instead, and a label is the
+author string: two papers by the same authors become one study. It affects `euro` (52 values
+for 61 studies — the paper says "there are 61 studies", one estimate each), `resource_curse`
+(36 for the 43 its page reports, so Sachs and Warner 1995, 1997 and 2001 are one study) and
+`activism` (38 where the source numbers 42 articles in the analysis sample). Every other
+literature takes its `study_id` from a real identifier column and is unaffected. If your
+inference depends on the cluster count in one of those three, take the study identifier from
+the per-dataset file — `id` and `study` in euro, `ID` in resource_curse, `ArticleNo` in
+activism — rather than from the pooled column. The harmoniser will prefer those columns at the
+next data revision; the pooled values are not changed underneath a published version.
 
 These are real published estimates, and several literatures are heavy-tailed.
 The `eis` file, for instance, runs from −10,000 to 100,000 with standard errors

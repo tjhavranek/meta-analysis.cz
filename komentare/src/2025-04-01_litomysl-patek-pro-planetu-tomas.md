@@ -9,7 +9,7 @@ headline: "„Pátek pro planetu“ ve školní jídelně planetě nepomůže a 
 byline: "Tomáš Havránek"
 source: "image"
 word_count: "410"
-body_note: "Rubrika DOPISY ČTENÁŘŮ. Na stránce jsou pod jedním společným titulkem vytištěny dva samostatné dopisy: první je podepsán Zuzana Havránková, druhý (tento) Tomáš Havránek. Titulek je v tisku uveden pouze jednou, nad oběma texty."
+body_note: "Rubrika DOPISY ČTENÁŘŮ. Na stránce jsou pod jedním společným titulkem vytištěny dva samostatné dopisy: první je podepsán Zuzanou Havránkovou, druhý (tento) Tomášem Havránkem. Titulek je v tisku uveden pouze jednou, nad oběma texty."
 title_suffix: "Tomáš Havránek"
 ---
 

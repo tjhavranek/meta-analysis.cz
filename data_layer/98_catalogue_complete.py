@@ -4,12 +4,16 @@ Every other check here asks whether the data IN the catalogue is right. None ask
 anything was MISSING from it, and that gap is invisible by construction: a file nobody
 inventoried produces no inconsistency, because it is not there to be inconsistent with.
 
-It bit four paper folders. cbequity, contagion and dst_slovakia were added after the
+It bit three paper folders. cbequity, contagion and dst_slovakia were added after the
 inventory was last built, and data_layer/rebuild.py deliberately starts at 06 -- the
 discovery steps 01-05 write curated state and are not part of the blessed order -- so the
-files they ship never entered any surface. cbequity/CBFS.xlsx is a complete 176-estimate
-meta-analysis, and the catalogue said nothing about it at all: a reader who found it on the
-paper page had no way to tell whether it had been considered and set aside or simply missed.
+files they ship never entered any surface. (A fourth folder, spillovers_bias, had missed the
+inventory the same way, but it was already named in excluded_resources by hand, so the
+catalogue was never silent about it and this gate would never have fired on it.)
+
+cbequity/CBFS.xlsx is a complete 176-estimate meta-analysis, and the catalogue said nothing
+about it at all: a reader who found it on the paper page had no way to tell whether it had
+been considered and set aside or simply missed.
 
 So this scans the SITE ITSELF rather than the stored inventory, which is the point -- a stale
 inventory is exactly the failure being checked for. Names only, no parsing: the question is

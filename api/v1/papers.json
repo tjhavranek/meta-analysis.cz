@@ -1309,7 +1309,12 @@
     "Katerina Smidkova",
     "Borek Vasicek"
    ],
-   "year": 2014,
+   "year": 2012,
+   "technical_report": {
+    "institution": "European Central Bank Working Paper Series",
+    "number": 1485,
+    "year": 2012
+   },
    "journal": "Journal of Financial Stability",
    "doi": "https://doi.org/10.1016/j.jfs.2014.07.001",
    "publisher_url": null,
@@ -3262,7 +3267,7 @@
    "version": "record",
    "version_note": null,
    "published_as": null,
-   "title": "Meta-Analysis of Social Science Research: A Practitioner’s Guide",
+   "title": "Meta-analysis of social science research: A practitioner’s guide",
    "authors": [
     "Zuzana Irsova",
     "Hristos Doucouliagos",
@@ -4318,7 +4323,7 @@
    "version": "record",
    "version_note": null,
    "published_as": null,
-   "title": "Spurious Precision in Meta-Analysis of Observational Research",
+   "title": "Spurious precision in meta-analysis of observational research",
    "authors": [
     "Zuzana Irsova",
     "Pedro Bom",

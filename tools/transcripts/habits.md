@@ -764,13 +764,13 @@ Havranek, T., Horvath, R., Irsova, Z., Rusnak, M., 2015. Cross-country heterogen
 
 Havranek, T., Irsova, Z., 2011. Estimating vertical spillovers from FDI: why results vary and what the true effect is. J. Int. Econ. 85 (2), 234–244. doi:10.1016/j.jinteco.2011.07.004.
 
-Havranek, T., Irsova, Z., 2012. Survey article: publication bias in the literature on foreign direct investment spillovers. J. Dev. Stud. 48 (10), 1375–1396. doi:10.1080/00220388.2012.685.
+Havranek, T., Irsova, Z., 2012. Survey article: publication bias in the literature on foreign direct investment spillovers. J. Dev. Stud. 48 (10), 1375–1396. doi:10.1080/00220388.2012.685721.
 
 Havranek, T., Irsova, Z., 2017. Do borders really slash trade? A meta-analysis. IMF Econ. Rev. (forthcoming).
 
-Havranek, T., Irsova, Z., Janda, K., 2012. Demand for gasoline is more price-inelastic than commonly thought. Energy Econ. 34 (1), 201–207. doi:10.1016/j.eneco.2011.09.0.
+Havranek, T., Irsova, Z., Janda, K., 2012. Demand for gasoline is more price-inelastic than commonly thought. Energy Econ. 34 (1), 201–207. doi:10.1016/j.eneco.2011.09.003.
 
-Havranek, T., Irsova, Z., Janda, K., Zilberman, D., 2015. Selective reporting and the social cost of carbon. Energy Econ. 51 (C), 394–406. doi:10.1016/j.eneco.2015.08.0.
+Havranek, T., Irsova, Z., Janda, K., Zilberman, D., 2015. Selective reporting and the social cost of carbon. Energy Econ. 51 (C), 394–406. doi:10.1016/j.eneco.2015.08.009.
 
 Havranek, T., Sokolova, A., 2016. Do Consumers Really Follow a Rule of Thumb? Three Thousand Estimates from 130 Studies Say 'Probably Not'. Working paper 8/2016. Czech National Bank.
 
@@ -780,7 +780,7 @@ Heaton, J., 1995. An empirical investigation of asset pricing with temporally de
 
 Ioannidis, J.P.A., Stanley, T.D., Doucouliagos, H., 2017. The power of bias in economics research. Econ. J. (forthcoming).
 
-Irsova, Z., Havranek, T., 2013. Determinants of horizontal spillovers from FDI: evidence from a large meta-analysis. World Dev. 42 (C), 1–15. doi:10.1016/j.worlddev.2012.0.
+Irsova, Z., Havranek, T., 2013. Determinants of horizontal spillovers from FDI: evidence from a large meta-analysis. World Dev. 42 (C), 1–15. doi:10.1016/j.worlddev.2012.07.001.
 
 Jeffreys, H., 1961. Theory of Probability. Clarendon Press, Oxford.
 
@@ -824,7 +824,7 @@ Ravn, M., Schmitt-Grohé, S., Uribe, M., 2006. Deep habits. Rev. Econ. Stud. 73 
 
 Rozen, K., 2010. Foundations of intrinsic habit formation. Econometrica 78 (4), 1341–1373.
 
-Rustichini, A., Siconolfi, P., 2014. Dynamic theory of preferences: habit formation and taste for variety. J. Math. Econ. 55 (C), 55–68. doi:10.1016/j.jmateco.2014.10.
+Rustichini, A., Siconolfi, P., 2014. Dynamic theory of preferences: habit formation and taste for variety. J. Math. Econ. 55 (C), 55–68. doi:10.1016/j.jmateco.2014.10.002.
 
 Sala-I-Martin, X., Doppelhofer, G., Miller, R.I., 2004. Determinants of long-term growth: a Bayesian averaging of classical estimates (BACE) approach. Am. Econ. Rev. 94 (4), 813–835.
 

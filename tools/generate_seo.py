@@ -953,11 +953,15 @@ def main():
                 "url": BASE + "/datasets/",
                 # Connect the page to the archived deposit. Without this a machine cannot
                 # tell that the DOI and this catalogue describe the same thing.
+                # The version DOI is null between a data revision and its deposit. Listing it
+                # anyway emitted "value": null into the catalogue's identifier list, which is a
+                # claim that this catalogue has a DOI whose value is nothing. Absent means
+                # absent: the concept DOI still resolves to the newest archived version.
                 **({"identifier": [
                         {"@type": "PropertyValue", "propertyID": "DOI", "value": api["concept_doi"],
-                         "description": "Concept DOI - always resolves to the latest version"},
-                        {"@type": "PropertyValue", "propertyID": "DOI", "value": api["doi"],
-                         "description": "This version"}],
+                         "description": "Concept DOI - always resolves to the latest version"}]
+                       + ([{"@type": "PropertyValue", "propertyID": "DOI", "value": api["doi"],
+                            "description": "This version"}] if api.get("doi") else []),
                     "sameAs": api["concept_doi_url"]} if api.get("concept_doi") else {}),
                 # Correct HERE and only here: a DataCatalog describes the COMPILATION, which
                 # is precisely what CC BY 4.0 covers. usageInfo carries the full scoping.

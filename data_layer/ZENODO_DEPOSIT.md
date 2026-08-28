@@ -4,7 +4,15 @@
 > Concept DOI (cite this): **https://doi.org/10.5281/zenodo.21773678**
 > Version 0.9.0-beta: **https://doi.org/10.5281/zenodo.21773679**
 > Version 1.0.0: **https://doi.org/10.5281/zenodo.21789702**
-> Version 1.1.1: **https://doi.org/10.5281/zenodo.22050272** — current, deposited 2026-08-21.
+> Version 1.1.1: **https://doi.org/10.5281/zenodo.22050272** — deposited 2026-08-21.
+>
+> **A DEPOSIT IS PENDING.** The site now serves data version **1.1.2**, which corrects
+> `n_obs` on 4,614 rows: armington and migrant were publishing the number of ESTIMATES a
+> study reports as its sample size, which silently corrupts MAIVE's first stage. 1.1.2 has
+> no version DOI yet, and `DATA_DOI` in `07_api.py` is None so that nothing claims 1.1.1's
+> identifier for it. To close this: reserve a DOI on a new Zenodo draft, put it in
+> `DATA_DOI` and in `data_layer/zenodo.json`, set `version` there and in
+> `data_layer/citation.cff` to 1.1.2, rebuild, then build and upload the bundle.
 >
 > Zenodo strips punctuation from uploaded filenames: the 1.1.1 archive is stored as
 > `ZENODOUPLOADmetaanalysisczv1.1.1.zip`, not the hyphenated name it was uploaded under,

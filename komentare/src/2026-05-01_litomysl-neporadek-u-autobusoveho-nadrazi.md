@@ -9,7 +9,7 @@ headline: "Nepořádek u autobusového nádraží"
 byline: "Tomáš Havránek"
 source: "image"
 word_count: "416"
-body_note: "Rubrika DOPISY ČTENÁŘŮ. Na téže stránce následuje samostatná odpověď „Nepořádek u autobusového nádraží - odpověď“ podepsaná Eva Beňová (není přepsána, jiný autor)."
+body_note: "Rubrika DOPISY ČTENÁŘŮ. Na téže stránce následuje samostatná odpověď „Nepořádek u autobusového nádraží - odpověď“ podepsaná Evou Beňovou (není přepsána, jiný autor)."
 ---
 
 # Nepořádek u autobusového nádraží

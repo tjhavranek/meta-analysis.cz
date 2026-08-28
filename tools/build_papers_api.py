@@ -93,9 +93,25 @@ def build():
             # And, for a working paper, the article it was published as: a consumer that
             # cannot see this counts the two as one document or cites the wrong one.
             "published_as": meta.get("published_as") or None,
-            "title": article_title(meta),
+            # The journal's own string when the entry declares one, and only here. The pages
+            # emit `citation_title` in their citation tags -- what Google Scholar reads -- while
+            # this record took the reference line's quoted copy, and the two differ in case on
+            # the two flagship papers, so one DOI carried two title strings in the machine
+            # layer: the defect 517a121 closed on the pages and not here. Visible text is left
+            # alone deliberately; /papers/ and each page's Reference and BibTeX blocks keep the
+            # site's own casing, which is the owner's to change, not this file's.
+            "title": meta.get("citation_title") or article_title(meta),
             "authors": meta.get("authors") or [],
-            "year": meta.get("year"),
+            # A working paper's YEAR is the working paper's, not the article's. papers.json
+            # carries a `technical_report` block for exactly this case and build_paper_page
+            # already reads it -- the page's citation_publication_date says 2012 and names ECB
+            # Working Paper 1485 -- while this file did not, so the API record paired the
+            # working paper's title with the article's 2014 and contradicted its own page.
+            # journal and doi stay: version_note says in words that they describe the article
+            # this became, and published_as carries it.
+            **({"year": (meta.get("technical_report") or {}).get("year") or meta.get("year"),
+                "technical_report": meta.get("technical_report")}
+               if meta.get("technical_report") else {"year": meta.get("year")}),
             "journal": meta.get("journal"),
             "doi": doi if doi.startswith("https://doi.org/") else None,
             "publisher_url": doi if doi and not doi.startswith("https://doi.org/") else None,

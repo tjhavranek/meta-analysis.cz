@@ -2,7 +2,7 @@
  "name": "meta-analysis.cz data API",
  "version": "1.0.0",
  "api_version": "1.0.0",
- "data_version": "1.1.1",
+ "data_version": "1.1.2",
  "version_note": "version and api_version describe this INTERFACE. data_version describes the harmonised table, and is what croissant.json reports. They move independently.",
  "description": "Estimate-level datasets from meta-analyses in economics and the social sciences, with the hand-coded study characteristics collected for each paper.",
  "license": {
@@ -14,11 +14,11 @@
   "machine_readable": true
  },
  "cite_as": "Havranek, T. and Z. Irsova (2026). meta-analysis.cz: harmonised estimate-level data from meta-analyses in economics. Zenodo. https://doi.org/10.5281/zenodo.21773678",
- "doi": "10.5281/zenodo.22050272",
- "doi_url": "https://doi.org/10.5281/zenodo.22050272",
+ "doi": null,
+ "doi_url": null,
  "concept_doi": "10.5281/zenodo.21773678",
  "concept_doi_url": "https://doi.org/10.5281/zenodo.21773678",
- "doi_note": "Cite the CONCEPT DOI in prose - it always resolves to the newest version. Cite the version DOI in a replication package, where you need the exact files.",
+ "doi_note": "Cite the CONCEPT DOI: it always resolves to the newest archived version. This table, 1.1.2, is not yet deposited, so it has no version DOI and the newest deposit is the previous version. A replication package needing these exact files should cite the concept DOI and record the date.",
  "endpoints": {
   "datasets": "https://meta-analysis.cz/api/v1/datasets.json",
   "codebook": "https://meta-analysis.cz/api/v1/codebooks/{id}.json",
@@ -38,7 +38,7 @@
   "counts_explained": "rows_in_source_files counts every row of the 45 converted files. estimates_in_analysis_samples applies each paper's own filters and is what the catalogue table shows. estimates_in_harmonised_table additionally drops literatures that duplicate another exactly, overlap one already included, or lack per-estimate precision."
  },
  "harmonised_table": {
-  "version": "1.1.1",
+  "version": "1.1.2",
   "status": "stable",
   "n_rows": 49669,
   "n_literatures": 41,
@@ -111,7 +111,7 @@
    "paper": {
     "title": null,
     "page_title": null,
-    "url": "https://meta-analysis.cz/ews/"
+    "url": "https://meta-analysis.cz/crisis_ews/"
    },
    "excluded_because": "examined and not an estimate-level dataset"
   },
@@ -140,7 +140,7 @@
    "reason": "study-level, not estimate-level: 56 studies, one row each",
    "paper": {
     "title": "Survey Article: Publication Bias in the Literature on Foreign Direct Investment Spillovers",
-    "page_title": "Publication Bias in FDI Spillovers",
+    "page_title": "Survey Article: Publication Bias in the Literature on Foreign Direct Investment Spillovers",
     "url": "https://meta-analysis.cz/spillovers_bias/"
    },
    "excluded_because": "the second-stage data behind the paper: one row for each of the 56 studies, carrying its publication-bias measure and the characteristics used to explain it, so it has no effect or standard error column and cannot join an estimate-level table. The estimates themselves are the FDI spillovers literature, pooled under 'spillovers'."
@@ -149,7 +149,7 @@
    "id": "cbequity",
    "reason": "estimate-level and eligible, but not yet in a released version of the table",
    "paper": {
-    "title": "Does Central Bank Financial Strength Matter for Inflation? An Empirical Analysis",
+    "title": "Central Bank Equity as an Instrument of Monetary Policy",
     "page_title": "Central Bank Equity as an Instrument of Monetary Policy",
     "url": "https://meta-analysis.cz/cbequity/"
    },

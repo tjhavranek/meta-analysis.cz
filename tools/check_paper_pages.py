@@ -157,6 +157,22 @@ def check(project):
     if broken:
         fails.append("%d citation link(s) point at nothing: %s"
                      % (len(broken), ", ".join(sorted(broken)[:6])))
+    # A DOI link that cannot resolve is broken in the same way a dead citation link is, and
+    # it fails silently: the identifier reads correctly on screen while the anchor points at
+    # a "DOI Not Found" page. A sweep of all 2,435 DOIs this site links found 19 dead, and
+    # every one was malformed in a way visible without asking the network -- which is what
+    # makes it checkable in a gate. Live resolution is not checked here; 2,435 network calls
+    # do not belong in a build.
+    for href in {html.unescape(h) for h in re.findall(r'href="https://doi\.org/([^"]+)"', page)}:
+        why = None
+        if href.count("(") != href.count(")"):
+            why = "unbalanced brackets -- the link stops at the DOI's own bracket"
+        elif re.match(r"10\.\d{4,9}/10\.\d{4,9}/", href):
+            why = "a doubled prefix"
+        elif "%5C" in href.upper() or "\\" in href:
+            why = "an unresolved escape sequence"
+        if why:
+            fails.append("DOI link https://doi.org/%s has %s" % (href, why))
     if 'class="attribution"' not in page:
         fails.append("no attribution block")
     for blob in re.findall(r'<script type="application/ld\+json">(.*?)</script>', page, re.S):

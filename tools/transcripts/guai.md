@@ -142,7 +142,7 @@ Luitse, D., and W. Denkena. 2021. “The Great Transformer: Examining the Role o
 
 Mullins, J. 2025. “A Structural Meta-Analysis of Welfare Reform Experiments and their Impacts on Children.” *Journal of Political Economy* 134, no. 1: 435–477.
 
-Opatrny, M., T. Havranek, Z. Havránková, and M. Scasny. Forthcoming. “Publication Bias and Model Uncertainty in Measuring the Effect of Class Size on Achievement.” Journal of Labor Economics.
+Opatrny, M., T. Havranek, Z. Havrankova, and M. Scasny. Forthcoming. “Publication Bias and Model Uncertainty in Measuring the Effect of Class Size on Achievement.” Journal of Labor Economics.
 
 Stanley, T. D., and H. Doucouliagos. 2012. *Meta-Regression Analysis in Economics and Business* Routledge.
 

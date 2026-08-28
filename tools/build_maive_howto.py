@@ -325,7 +325,7 @@ PET-PEESE was significant.</p>
 <h2 id="weak-first-stage">If the first stage is weak</h2>
 
 <p>Below an F of 10, report the Anderson-Rubin interval instead of the point estimate. In
-the <a href="/euro/">euro-trade dataset</a> (%(euro_k)s estimates from %(euro_g)s studies)
+the <a href="/euro/">euro-trade dataset</a> (%(euro_k)s estimates)
 F is %(euro_F)s; MAIVE gives %(euro_est)s (SE %(euro_se)s), and the AR interval is
 [%(euro_ar_lo)s, %(euro_ar_hi)s], so the corrected effect is only weakly identified. RTMA,
 by Mathur, rests on different assumptions and is the cross-check to run when the first stage
@@ -521,7 +521,13 @@ def render(doc):
         "alpha_F": n(alpha.get("firstStageFStatistic"), 1),
         "alpha_egger_p": n(alpha["publicationBias"]["pValue"], 3),
         "alpha_haus": n((alpha.get("hausmanTest") or {}).get("statistic"), 2),
-        "euro_k": ds["euro"]["estimates"], "euro_g": ds["euro"]["studies"],
+        # No study count for euro. The pooled table's study_id is factorised from the author
+        # label where no id column matches its name pattern, so euro's 61 studies -- one
+        # estimate each, and 61 is what the paper states -- come through as 52. The run below
+        # clusters on that same study_id, so the page stays exactly reproducible from the
+        # pooled table; what it must not do is report 52 as a fact about the literature.
+        # The mechanism is recorded in api/v1/README.md and is fixed at the next data revision.
+        "euro_k": ds["euro"]["estimates"],
         "euro_F": n(euro.get("firstStageFStatistic"), 2),
         "euro_est": n(euro.get("effectEstimate"), 2),
         "euro_se": n(euro.get("standardError"), 2),
