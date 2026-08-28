@@ -97,7 +97,7 @@ def entry(year, title, project, href, meta):
             % (href, html.escape(title), html.escape(who), where, year or "n.d.", tail))
 
 
-def build():
+def build(check=False):
     rows = editions()
     listed = "\n".join(entry(*r) for r in rows)
     journals = len({r[4].get("journal") for r in rows if r[4].get("journal")})
@@ -216,19 +216,34 @@ picture.</p>
                     "<a href=\"/results/\">Headline results</a>. The other %d carry no "
                     # Not the guidelines and the reporting standards: both of those DO
                     # have headline rows in estimates.csv. The two without are the 2026
-                    # MAER-Net notes on AI.
-                    "headline result of their own: the two 2026 MAER-Net notes on AI, "
-                    "and applied work in banking, monetary policy and energy.")
+                    # MAER-Net notes on AI. The reproduction is named separately because it
+                    # is neither: it is not a note on AI, and a reproduction of 110 studies
+                    # across economics and political science is not applied work in banking,
+                    # monetary policy or energy. A sentence that enumerates has to enumerate
+                    # everything, or the reader counts the categories and comes up short.
+                    "headline result of their own: the two 2026 MAER-Net notes on AI, a "
+                    "mass reproduction of 110 published studies, and applied work in "
+                    "banking, monetary policy and energy.")
                    % (_meta, _other)) if _other > 0 else ""
     out = page.format(n=len(rows), lede=lede, listed=listed, figs=figs, footer=load_footer(),
                       composition=composition,
                       jsonld=json.dumps(ld, ensure_ascii=False, separators=(",", ":")))
     outdir = os.path.join(ROOT, "papers")
+    dest = os.path.join(outdir, "index.html")
+    # /papers/ is linked from the footer of every page on the site, and nothing was checking
+    # it: adding a paper left it a page short, and the sentence naming what the papers WITHOUT
+    # a headline result are stayed behind the list it describes. Both happened. So the builder
+    # answers --check like the other generated pages do, and CI asks it.
+    if check:
+        if not os.path.exists(dest) or open(dest, encoding="utf-8").read() != out:
+            sys.exit("papers/index.html is stale: rebuild with tools/build_fulltext_page.py")
+        print("papers/index.html matches a fresh build")
+        return
     os.makedirs(outdir, exist_ok=True)
-    with open(os.path.join(outdir, "index.html"), "w") as fh:
+    with open(dest, "w") as fh:
         fh.write(out)
     print("papers/index.html: %d full-text editions across %d journals" % (len(rows), journals))
 
 
 if __name__ == "__main__":
-    build()
+    build(check="--check" in sys.argv)

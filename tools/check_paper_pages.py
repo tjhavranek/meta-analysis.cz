@@ -102,6 +102,14 @@ def check(project):
       sc = scout(project, PAPERS)
       want_t = set(sc.get("tables", {}))
       want_f = set(sc.get("figures", {}))
+      # A paper can number one figure twice. reproducibility's manuscript floats its extended
+      # data as "Fig. 5" through "Fig. 14" while its own body text calls the same pictures
+      # "Extended Data Figure 1" through "10", and a reader following a cross-reference needs
+      # the label the text uses, not the one the float carries. The page therefore serves them
+      # as ED1..ED10, and papers.json says which float number that is, so this census still
+      # compares the paper's figures against the page's rather than being switched off.
+      alias = (PAPERS[project].get("figure_labels") or {})
+      want_f = {alias.get(n, n) for n in want_f}
       # A table too tall for one printed page is two panels sharing a number; the second is
       # marked continued and is not a duplicate.
       got_t = re.findall(r"<caption><b>Table ([A-Za-z0-9.]+)\.</b>", page)

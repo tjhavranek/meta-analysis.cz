@@ -1,0 +1,3350 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+<title>Reproducibility and Robustness of Economics and Political Science Research</title>
+<meta name="keywords" content="reproducibility, robustness, replication, research credibility, replication games, data and code sharing, publication bias, economics, political science" />
+<meta name="description" content="A 347-author reproduction of 110 articles in twelve leading economics and political science journals: more than 85% of claims were computationally reproducible, 72% of significant estimates stayed significant under re-analysis, and the median reproduced effect was 99% of the published one." />
+<link href="/style.css" rel="stylesheet" type="text/css" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<!-- seo-meta:start -->
+<link rel="canonical" href="https://meta-analysis.cz/reproducibility/" />
+<meta name="citation_title" content="Reproducibility and Robustness of Economics and Political Science Research" />
+<meta name="citation_author" content="Abel Brodeur" />
+<meta name="citation_author" content="Derek Mikola" />
+<meta name="citation_author" content="Nikolai Cook" />
+<meta name="citation_author" content="Lenka Fiala" />
+<meta name="citation_author" content="Thomas Brailey" />
+<meta name="citation_author" content="Ryan Briggs" />
+<meta name="citation_author" content="Alexandra de Gendre" />
+<meta name="citation_author" content="Yannick Dupraz" />
+<meta name="citation_author" content="Jacopo Gabani" />
+<meta name="citation_author" content="Romain Gauriot" />
+<meta name="citation_author" content="Joanne Haddad" />
+<meta name="citation_author" content="Goncalo Lima" />
+<meta name="citation_author" content="Jorg Ankel-Peters" />
+<meta name="citation_author" content="Anna Dreber" />
+<meta name="citation_author" content="Douglas Campbell" />
+<meta name="citation_author" content="Lamis Kattan" />
+<meta name="citation_author" content="Diego Marino Fages" />
+<meta name="citation_author" content="Fabian Mierisch" />
+<meta name="citation_author" content="Pu Sun" />
+<meta name="citation_author" content="Taylor Wright" />
+<meta name="citation_author" content="Marie Connolly" />
+<meta name="citation_author" content="Fernando Hoces de la Guardia" />
+<meta name="citation_author" content="Magnus Johannesson" />
+<meta name="citation_author" content="Edward Miguel" />
+<meta name="citation_author" content="Lars Vilhuber" />
+<meta name="citation_author" content="Alejandro Abarca" />
+<meta name="citation_author" content="Mahesh Acharya" />
+<meta name="citation_author" content="Sossou Simplice Adjisse" />
+<meta name="citation_author" content="Ahwaz Akhtar" />
+<meta name="citation_author" content="Eduardo Alberto Ramirez Lizardi" />
+<meta name="citation_author" content="Sabina Albrecht" />
+<meta name="citation_author" content="Synøve Nygaard Andersen" />
+<meta name="citation_author" content="Zubaria Andlib" />
+<meta name="citation_author" content="Falak Arrora" />
+<meta name="citation_author" content="Thomas Ash" />
+<meta name="citation_author" content="Etienne Bacher" />
+<meta name="citation_author" content="Sebastian Bachler" />
+<meta name="citation_author" content="Felix Bacon" />
+<meta name="citation_author" content="Manuel Bagues" />
+<meta name="citation_author" content="Timea Balogh" />
+<meta name="citation_author" content="Alisher Batmanov" />
+<meta name="citation_author" content="Mara Barschkett" />
+<meta name="citation_author" content="Barıs Kaan Basdil" />
+<meta name="citation_author" content="Jaromir Baxa" />
+<meta name="citation_author" content="Sascha O. Becker" />
+<meta name="citation_author" content="Monica Beeder" />
+<meta name="citation_author" content="Louis-Philippe Beland" />
+<meta name="citation_author" content="Abdel-Hamid Bello" />
+<meta name="citation_author" content="Daniel Benenson Markovits" />
+<meta name="citation_author" content="Grant Benjamin" />
+<meta name="citation_author" content="Thomas Bergeron" />
+<meta name="citation_author" content="Moussa P. Blimpo" />
+<meta name="citation_author" content="Marco Binetti" />
+<meta name="citation_author" content="Carl Bonander" />
+<meta name="citation_author" content="Joseph Bonneau" />
+<meta name="citation_author" content="Endre Borbath" />
+<meta name="citation_author" content="Nicolai Borgen" />
+<meta name="citation_author" content="Solveig Topstad Borgen" />
+<meta name="citation_author" content="Jonathan Borowsky" />
+<meta name="citation_author" content="Elisa Brini" />
+<meta name="citation_author" content="Myriam Brown" />
+<meta name="citation_author" content="Martin Brun" />
+<meta name="citation_author" content="Stephan Bruns" />
+<meta name="citation_author" content="Nino Buliskeria" />
+<meta name="citation_author" content="Andrea Calef" />
+<meta name="citation_author" content="Alistair Cameron" />
+<meta name="citation_author" content="Pamela Campa" />
+<meta name="citation_author" content="Santiago Campos-Rodriguez" />
+<meta name="citation_author" content="Giulio Giacomo Cantone" />
+<meta name="citation_author" content="Fenella Carpena" />
+<meta name="citation_author" content="Perry Jess Carter" />
+<meta name="citation_author" content="Paul Castaneda Dower" />
+<meta name="citation_author" content="Ondrej Castek" />
+<meta name="citation_author" content="Jill Caviglia-Harris" />
+<meta name="citation_author" content="Gabriella Chauca Strand" />
+<meta name="citation_author" content="Shi Chen" />
+<meta name="citation_author" content="Sya In Chzhen" />
+<meta name="citation_author" content="Jong Chung" />
+<meta name="citation_author" content="Jason Collins" />
+<meta name="citation_author" content="Alexander Coppock" />
+<meta name="citation_author" content="Hugo Cordeau" />
+<meta name="citation_author" content="Ben Couillard" />
+<meta name="citation_author" content="Jonathan Crechet" />
+<meta name="citation_author" content="Lorenzo Crippa" />
+<meta name="citation_author" content="Jing Cui" />
+<meta name="citation_author" content="Christian Czymara" />
+<meta name="citation_author" content="Haley Daarstad" />
+<meta name="citation_author" content="Danh Chi Dao" />
+<meta name="citation_author" content="Daniel Dao" />
+<meta name="citation_author" content="Marco David Schmandt" />
+<meta name="citation_author" content="Astrid de Linde" />
+<meta name="citation_author" content="Lucas De Melo" />
+<meta name="citation_author" content="Lachlan Deer" />
+<meta name="citation_author" content="Micole De Vera" />
+<meta name="citation_author" content="Velichka Dimitrova" />
+<meta name="citation_author" content="Jan Fabian Dollbaum" />
+<meta name="citation_author" content="Jan Matti Dollbaum" />
+<meta name="citation_author" content="Michael Donnelly" />
+<meta name="citation_author" content="Luu Duc Toan Huynh" />
+<meta name="citation_author" content="Tsvetomira Dumbalska" />
+<meta name="citation_author" content="Jamie Duncan" />
+<meta name="citation_author" content="Kiet Tuan Duong" />
+<meta name="citation_author" content="Thibaut Duprey" />
+<meta name="citation_author" content="Christoph Dworschak" />
+<meta name="citation_author" content="Sigmund Ellingsrud" />
+<meta name="citation_author" content="Ali Elminejad" />
+<meta name="citation_author" content="Yasmine Eissa" />
+<meta name="citation_author" content="Andrea Erhart" />
+<meta name="citation_author" content="Giulian Etingin-Frati" />
+<meta name="citation_author" content="Elaheh Fatemipour" />
+<meta name="citation_author" content="Alexa Federice" />
+<meta name="citation_author" content="Jan Feld" />
+<meta name="citation_author" content="Guidon Fenig" />
+<meta name="citation_author" content="Mojtaba Firouzjaeiangalougah" />
+<meta name="citation_author" content="Erlend Fleisje" />
+<meta name="citation_author" content="Alexandre Fortier-Chouinard" />
+<meta name="citation_author" content="Julia Francesca Engel" />
+<meta name="citation_author" content="Nadjim Frechet" />
+<meta name="citation_author" content="Reid Fortier" />
+<meta name="citation_author" content="Tilman Fries" />
+<meta name="citation_author" content="Michael James Frith" />
+<meta name="citation_author" content="Thomas Galipeau" />
+<meta name="citation_author" content="Sebastian Gallegos" />
+<meta name="citation_author" content="Areez Gangji" />
+<meta name="citation_author" content="Xiaoying Gao" />
+<meta name="citation_author" content="Cloe Garnache" />
+<meta name="citation_author" content="Attila Gaspar" />
+<meta name="citation_author" content="Evelina Gavrilova" />
+<meta name="citation_author" content="Arijit Ghosh" />
+<meta name="citation_author" content="Garreth Gibney" />
+<meta name="citation_author" content="Grant Gibson" />
+<meta name="citation_author" content="Geir Godager" />
+<meta name="citation_author" content="Leonard Goff" />
+<meta name="citation_author" content="Da Gong" />
+<meta name="citation_author" content="Javier Gonzalez" />
+<meta name="citation_author" content="Jeremy D. Gretton" />
+<meta name="citation_author" content="Cristina Griffa" />
+<meta name="citation_author" content="Idaliya Grigoryeva" />
+<meta name="citation_author" content="Maja Grøtting" />
+<meta name="citation_author" content="Eric Guntermann" />
+<meta name="citation_author" content="Jiaqi Guo" />
+<meta name="citation_author" content="Alexi Gugushvili" />
+<meta name="citation_author" content="Hooman Habibnia" />
+<meta name="citation_author" content="Sonja Haffner" />
+<meta name="citation_author" content="Jonathan D. Hall" />
+<meta name="citation_author" content="Olle Hammar" />
+<meta name="citation_author" content="Amund Hanson Kordt" />
+<meta name="citation_author" content="Barry Hashimoto" />
+<meta name="citation_author" content="Jonathan S. Hartley" />
+<meta name="citation_author" content="Carina I. Hausladen" />
+<meta name="citation_author" content="Tomas Havranek" />
+<meta name="citation_author" content="Harry He" />
+<meta name="citation_author" content="Matthew Hepplewhite" />
+<meta name="citation_author" content="Mario Herrera-Rodriguez" />
+<meta name="citation_author" content="Felix Heuer" />
+<meta name="citation_author" content="Anthony Heyes" />
+<meta name="citation_author" content="Anson T. Y. Ho" />
+<meta name="citation_author" content="Jonathan Holmes" />
+<meta name="citation_author" content="Armando Holzknecht" />
+<meta name="citation_author" content="Yu-Hsiang Dexter Hsu" />
+<meta name="citation_author" content="Shiang-Hung Hu" />
+<meta name="citation_author" content="Yu-Shiuan Huang" />
+<meta name="citation_author" content="Mathias Huebener" />
+<meta name="citation_author" content="Christoph Huber" />
+<meta name="citation_author" content="Kim P. Huynh" />
+<meta name="citation_author" content="Zuzana Irsova" />
+<meta name="citation_author" content="Ozan Isler" />
+<meta name="citation_author" content="Niklas Jakobsson" />
+<meta name="citation_author" content="Raphael Jananji" />
+<meta name="citation_author" content="Tharaka A. Jayalath" />
+<meta name="citation_author" content="Michael Jetter" />
+<meta name="citation_author" content="Jenny John" />
+<meta name="citation_author" content="Rachel Joy Forshaw" />
+<meta name="citation_author" content="Felipe Juan" />
+<meta name="citation_author" content="Valon Kadriu" />
+<meta name="citation_author" content="Sunny Karim" />
+<meta name="citation_author" content="Edmund Kelly" />
+<meta name="citation_author" content="Duy Khanh Hoang Dang" />
+<meta name="citation_author" content="Tazia Khushboo" />
+<meta name="citation_author" content="Jin Kim" />
+<meta name="citation_author" content="Gustav Kjellsson" />
+<meta name="citation_author" content="Anders Kjelsrud" />
+<meta name="citation_author" content="Andreas Kotsadam" />
+<meta name="citation_author" content="Jori Korpershoek" />
+<meta name="citation_author" content="Lewis Krashinsky" />
+<meta name="citation_author" content="Suranjana Kundu" />
+<meta name="citation_author" content="Alexander Kustov" />
+<meta name="citation_author" content="Nurlan Lalayev" />
+<meta name="citation_author" content="Audree Langlois" />
+<meta name="citation_author" content="Jill Laufer" />
+<meta name="citation_author" content="Blake Lee-Whiting" />
+<meta name="citation_author" content="Andreas Leibing" />
+<meta name="citation_author" content="Gabriel Lenz" />
+<meta name="citation_author" content="Joel Levin" />
+<meta name="citation_author" content="Peng Li" />
+<meta name="citation_author" content="Tongzhe Li" />
+<meta name="citation_author" content="Yuchen Lin" />
+<meta name="citation_author" content="Ariel Listo" />
+<meta name="citation_author" content="Dan Liu" />
+<meta name="citation_author" content="Xuewen Lu" />
+<meta name="citation_author" content="Elvina Lukmanova" />
+<meta name="citation_author" content="Alex Luscombe" />
+<meta name="citation_author" content="Lester R. Lusher" />
+<meta name="citation_author" content="Ke Lyu" />
+<meta name="citation_author" content="Hai Ma" />
+<meta name="citation_author" content="Nicolas Mader" />
+<meta name="citation_author" content="Clifton Makate" />
+<meta name="citation_author" content="Alice Malmberg" />
+<meta name="citation_author" content="Adit Maitra" />
+<meta name="citation_author" content="Marco Mandas" />
+<meta name="citation_author" content="Jan Marcus" />
+<meta name="citation_author" content="Shushanik Margaryan" />
+<meta name="citation_author" content="Lili Mark" />
+<meta name="citation_author" content="Andres Martignano" />
+<meta name="citation_author" content="Abigail Marsh" />
+<meta name="citation_author" content="Isabella Masetto" />
+<meta name="citation_author" content="Anthony McCanny" />
+<meta name="citation_author" content="Emma McManus" />
+<meta name="citation_author" content="Ryan McWay" />
+<meta name="citation_author" content="Lennard Metson" />
+<meta name="citation_author" content="Jonas Minet Kinge" />
+<meta name="citation_author" content="Sumit Mishra" />
+<meta name="citation_author" content="Myra Mohnen" />
+<meta name="citation_author" content="Jakob Moeller" />
+<meta name="citation_author" content="Rosalie Montambeault" />
+<meta name="citation_author" content="Sebastien Montpetit" />
+<meta name="citation_author" content="Louis-Philippe Morin" />
+<meta name="citation_author" content="Todd Morris" />
+<meta name="citation_author" content="Scott Moser" />
+<meta name="citation_author" content="Fabio Yoshio Suguri Motoki" />
+<meta name="citation_author" content="Lucija Muehlenbachs" />
+<meta name="citation_author" content="Andreea Musulan" />
+<meta name="citation_author" content="Marco Musumeci" />
+<meta name="citation_author" content="Munirul Nabin" />
+<meta name="citation_author" content="Karim Nchare" />
+<meta name="citation_author" content="Florian Neubauer" />
+<meta name="citation_author" content="Quan M. P. Nguyen" />
+<meta name="citation_author" content="Tuan Nguyen" />
+<meta name="citation_author" content="Viet Nguyen-Tien" />
+<meta name="citation_author" content="Ali Niazi" />
+<meta name="citation_author" content="Giorgi Nikolaishvili" />
+<meta name="citation_author" content="Ardyn Nordstrom" />
+<meta name="citation_author" content="Patrick Nuß" />
+<meta name="citation_author" content="Angela Odermatt" />
+<meta name="citation_author" content="Matt Olson" />
+<meta name="citation_author" content="Henning Øien" />
+<meta name="citation_author" content="Tim Olkers" />
+<meta name="citation_author" content="Miquel Oliver i Vert" />
+<meta name="citation_author" content="Emre Oral" />
+<meta name="citation_author" content="Christian Oswald" />
+<meta name="citation_author" content="Ali Ousman" />
+<meta name="citation_author" content="Omer Ozak" />
+<meta name="citation_author" content="Shubham Pandey" />
+<meta name="citation_author" content="Alexandre Pavlov" />
+<meta name="citation_author" content="Martino Pelli" />
+<meta name="citation_author" content="Romeo Penheiro" />
+<meta name="citation_author" content="RyuGyung Park" />
+<meta name="citation_author" content="Eva Perez Martel" />
+<meta name="citation_author" content="Tereza Petrovicova" />
+<meta name="citation_author" content="Linh Phan" />
+<meta name="citation_author" content="Alexa Prettyman" />
+<meta name="citation_author" content="Jakub Prochazka" />
+<meta name="citation_author" content="Aqila Putri" />
+<meta name="citation_author" content="Julian Quandt" />
+<meta name="citation_author" content="Kangyu Qiu" />
+<meta name="citation_author" content="Loan Quynh Thi Nguyen" />
+<meta name="citation_author" content="Andaleeb Rahman" />
+<meta name="citation_author" content="Carson H. Rea" />
+<meta name="citation_author" content="Adam Reiremo" />
+<meta name="citation_author" content="Laetitia Renee" />
+<meta name="citation_author" content="Joseph Richardson" />
+<meta name="citation_author" content="Nicholas Rivers" />
+<meta name="citation_author" content="Bruno Rodrigues" />
+<meta name="citation_author" content="William Roelofs" />
+<meta name="citation_author" content="Tobias Roemer" />
+<meta name="citation_author" content="Ole Rogeberg" />
+<meta name="citation_author" content="Julian Rose" />
+<meta name="citation_author" content="Andrew Roskos-Ewoldsen" />
+<meta name="citation_author" content="Paul Rosmer" />
+<meta name="citation_author" content="Barbara Sabada" />
+<meta name="citation_author" content="Soodeh Saberian" />
+<meta name="citation_author" content="Nicolas Salamanca" />
+<meta name="citation_author" content="Georg Sator" />
+<meta name="citation_author" content="Daniel Scates" />
+<meta name="citation_author" content="Elmar Schluter" />
+<meta name="citation_author" content="Cameron Sells" />
+<meta name="citation_author" content="Sharmi Sen" />
+<meta name="citation_author" content="Ritika Sethi" />
+<meta name="citation_author" content="Anna Shcherbiak" />
+<meta name="citation_author" content="Moyosore Sogaolu" />
+<meta name="citation_author" content="Matt Soosalu" />
+<meta name="citation_author" content="Erik Ø. Sørensen" />
+<meta name="citation_author" content="Manali Sovani" />
+<meta name="citation_author" content="Noah Spencer" />
+<meta name="citation_author" content="Stefan Staubli" />
+<meta name="citation_author" content="Renske Stans" />
+<meta name="citation_author" content="Anya Stewart" />
+<meta name="citation_author" content="Felix Stips" />
+<meta name="citation_author" content="Kieran Stockley" />
+<meta name="citation_author" content="Stephenson Strobel" />
+<meta name="citation_author" content="Ethan Struby" />
+<meta name="citation_author" content="John P. Tang" />
+<meta name="citation_author" content="Idil Tanrisever" />
+<meta name="citation_author" content="Thomas Tao Yang" />
+<meta name="citation_author" content="Ipek Tastan" />
+<meta name="citation_author" content="Dejan Tatic" />
+<meta name="citation_author" content="Benjamin Tatlow" />
+<meta name="citation_author" content="Feraud Tchuisseu Seuyong" />
+<meta name="citation_author" content="Remi Theriault" />
+<meta name="citation_author" content="Vincent Thivierge" />
+<meta name="citation_author" content="Wenjie Tian" />
+<meta name="citation_author" content="Filip-Mihai Toma" />
+<meta name="citation_author" content="Maddalena Totarelli" />
+<meta name="citation_author" content="Van-Anh Tran" />
+<meta name="citation_author" content="Hung Truong" />
+<meta name="citation_author" content="Nikita Tsoy" />
+<meta name="citation_author" content="Kerem Tuzcuoglu" />
+<meta name="citation_author" content="Diego Ubfal" />
+<meta name="citation_author" content="Laura Villalobos" />
+<meta name="citation_author" content="Julian Walterskirchen" />
+<meta name="citation_author" content="Joseph Tao-yi Wang" />
+<meta name="citation_author" content="Vasudha Wattal" />
+<meta name="citation_author" content="Matthew D. Webb" />
+<meta name="citation_author" content="Bryan S. Weber" />
+<meta name="citation_author" content="Reinhard Weisser" />
+<meta name="citation_author" content="Wei-Chien Weng" />
+<meta name="citation_author" content="Christian Westheide" />
+<meta name="citation_author" content="Kimberly White" />
+<meta name="citation_author" content="Jacob Winter" />
+<meta name="citation_author" content="Timo Wochner" />
+<meta name="citation_author" content="Matt Woerman" />
+<meta name="citation_author" content="Jared Wong" />
+<meta name="citation_author" content="Ritchie Woodard" />
+<meta name="citation_author" content="Marcin Wronski" />
+<meta name="citation_author" content="Myra Yazbeck" />
+<meta name="citation_author" content="Gustav Chung Yang" />
+<meta name="citation_author" content="Luther Yap" />
+<meta name="citation_author" content="Kareman Yassin" />
+<meta name="citation_author" content="Hao Ye" />
+<meta name="citation_author" content="Jin Young Yoon" />
+<meta name="citation_author" content="Chris Yurris" />
+<meta name="citation_author" content="Tahreen Zahra" />
+<meta name="citation_author" content="Mirela Zaneva" />
+<meta name="citation_author" content="Aline Zayat" />
+<meta name="citation_author" content="Jonathan Zhang" />
+<meta name="citation_author" content="Ziwei Zhao" />
+<meta name="citation_author" content="Yaolang Zhong" />
+<meta name="citation_publication_date" content="2026" />
+<meta name="citation_journal_title" content="Nature" />
+<meta name="citation_volume" content="652" />
+<meta name="citation_issue" content="8108" />
+<meta name="citation_firstpage" content="151" />
+<meta name="citation_lastpage" content="156" />
+<meta name="citation_doi" content="10.1038/s41586-026-10251-x" />
+<meta name="citation_pdf_url" content="https://meta-analysis.cz/reproducibility/reproducibility.pdf" />
+<meta property="og:site_name" content="meta-analysis.cz" />
+<meta property="og:type" content="article" />
+<meta property="og:title" content="Reproducibility and Robustness of Economics and Political Science Research" />
+<meta property="og:description" content="A 347-author reproduction of 110 articles in twelve leading economics and political science journals: more than 85% of claims were computationally reproducible, 72% of significant estimates stayed significant under re-analysis, and the median reproduced effect was 99% of the published one." />
+<meta property="og:url" content="https://meta-analysis.cz/reproducibility/" />
+<meta property="og:image" content="https://meta-analysis.cz/reproducibility/reproducibility.png" />
+<meta property="og:image:alt" content="Reproducibility and Robustness of Economics and Political Science Research" />
+<script type="application/ld+json">
+{
+ "@context": "https://schema.org",
+ "@graph": [
+  {
+   "@type": "ScholarlyArticle",
+   "@id": "https://meta-analysis.cz/reproducibility/#paper",
+   "mainEntityOfPage": "https://meta-analysis.cz/reproducibility/",
+   "url": "https://meta-analysis.cz/reproducibility/",
+   "headline": "Reproducibility and Robustness of Economics and Political Science Research",
+   "name": "Reproducibility and Robustness of Economics and Political Science Research",
+   "abstract": "This systematic and large-scale reproduction effort tests the reproducibility and robustness of economics and political science, contributing to a growing literature on research credibility and self-correction in science. We reproduced original analyses and conducted robustness checks of 110 articles recently published in leading economics and political science journals, all of which have mandatory data and code sharing policies. We found that over 85% of published claims were computationally reproducible. In robustness checks, our re-analyses led to 72% of statistically significant estimates to remain significant and in the same direction, and the median reproduced effect size is (nearly) the same as the originally published effect size (that is, 99% of the published effect size). Additionally, six independent research teams examined 12 pre-specified hypotheses about determinants of robustness. Research teams with more experience found lower levels of robustness, and robustness correlated with neither author characteristics nor data availability.",
+   "inLanguage": "en",
+   "license": "https://creativecommons.org/licenses/by/4.0/",
+   "author": [
+    {
+     "@type": "Person",
+     "name": "Abel Brodeur"
+    },
+    {
+     "@type": "Person",
+     "name": "Derek Mikola"
+    },
+    {
+     "@type": "Person",
+     "name": "Nikolai Cook"
+    },
+    {
+     "@type": "Person",
+     "name": "Lenka Fiala"
+    },
+    {
+     "@type": "Person",
+     "name": "Thomas Brailey"
+    },
+    {
+     "@type": "Person",
+     "name": "Ryan Briggs"
+    },
+    {
+     "@type": "Person",
+     "name": "Alexandra de Gendre"
+    },
+    {
+     "@type": "Person",
+     "name": "Yannick Dupraz"
+    },
+    {
+     "@type": "Person",
+     "name": "Jacopo Gabani"
+    },
+    {
+     "@type": "Person",
+     "name": "Romain Gauriot"
+    },
+    {
+     "@type": "Person",
+     "name": "Joanne Haddad"
+    },
+    {
+     "@type": "Person",
+     "name": "Goncalo Lima"
+    },
+    {
+     "@type": "Person",
+     "name": "Jorg Ankel-Peters"
+    },
+    {
+     "@type": "Person",
+     "name": "Anna Dreber"
+    },
+    {
+     "@type": "Person",
+     "name": "Douglas Campbell"
+    },
+    {
+     "@type": "Person",
+     "name": "Lamis Kattan"
+    },
+    {
+     "@type": "Person",
+     "name": "Diego Marino Fages"
+    },
+    {
+     "@type": "Person",
+     "name": "Fabian Mierisch"
+    },
+    {
+     "@type": "Person",
+     "name": "Pu Sun"
+    },
+    {
+     "@type": "Person",
+     "name": "Taylor Wright"
+    },
+    {
+     "@type": "Person",
+     "name": "Marie Connolly"
+    },
+    {
+     "@type": "Person",
+     "name": "Fernando Hoces de la Guardia"
+    },
+    {
+     "@type": "Person",
+     "name": "Magnus Johannesson"
+    },
+    {
+     "@type": "Person",
+     "name": "Edward Miguel"
+    },
+    {
+     "@type": "Person",
+     "name": "Lars Vilhuber"
+    },
+    {
+     "@type": "Person",
+     "name": "Alejandro Abarca"
+    },
+    {
+     "@type": "Person",
+     "name": "Mahesh Acharya"
+    },
+    {
+     "@type": "Person",
+     "name": "Sossou Simplice Adjisse"
+    },
+    {
+     "@type": "Person",
+     "name": "Ahwaz Akhtar"
+    },
+    {
+     "@type": "Person",
+     "name": "Eduardo Alberto Ramirez Lizardi"
+    },
+    {
+     "@type": "Person",
+     "name": "Sabina Albrecht"
+    },
+    {
+     "@type": "Person",
+     "name": "Synøve Nygaard Andersen"
+    },
+    {
+     "@type": "Person",
+     "name": "Zubaria Andlib"
+    },
+    {
+     "@type": "Person",
+     "name": "Falak Arrora"
+    },
+    {
+     "@type": "Person",
+     "name": "Thomas Ash"
+    },
+    {
+     "@type": "Person",
+     "name": "Etienne Bacher"
+    },
+    {
+     "@type": "Person",
+     "name": "Sebastian Bachler"
+    },
+    {
+     "@type": "Person",
+     "name": "Felix Bacon"
+    },
+    {
+     "@type": "Person",
+     "name": "Manuel Bagues"
+    },
+    {
+     "@type": "Person",
+     "name": "Timea Balogh"
+    },
+    {
+     "@type": "Person",
+     "name": "Alisher Batmanov"
+    },
+    {
+     "@type": "Person",
+     "name": "Mara Barschkett"
+    },
+    {
+     "@type": "Person",
+     "name": "Barıs Kaan Basdil"
+    },
+    {
+     "@type": "Person",
+     "name": "Jaromir Baxa"
+    },
+    {
+     "@type": "Person",
+     "name": "Sascha O. Becker"
+    },
+    {
+     "@type": "Person",
+     "name": "Monica Beeder"
+    },
+    {
+     "@type": "Person",
+     "name": "Louis-Philippe Beland"
+    },
+    {
+     "@type": "Person",
+     "name": "Abdel-Hamid Bello"
+    },
+    {
+     "@type": "Person",
+     "name": "Daniel Benenson Markovits"
+    },
+    {
+     "@type": "Person",
+     "name": "Grant Benjamin"
+    },
+    {
+     "@type": "Person",
+     "name": "Thomas Bergeron"
+    },
+    {
+     "@type": "Person",
+     "name": "Moussa P. Blimpo"
+    },
+    {
+     "@type": "Person",
+     "name": "Marco Binetti"
+    },
+    {
+     "@type": "Person",
+     "name": "Carl Bonander"
+    },
+    {
+     "@type": "Person",
+     "name": "Joseph Bonneau"
+    },
+    {
+     "@type": "Person",
+     "name": "Endre Borbath"
+    },
+    {
+     "@type": "Person",
+     "name": "Nicolai Borgen"
+    },
+    {
+     "@type": "Person",
+     "name": "Solveig Topstad Borgen"
+    },
+    {
+     "@type": "Person",
+     "name": "Jonathan Borowsky"
+    },
+    {
+     "@type": "Person",
+     "name": "Elisa Brini"
+    },
+    {
+     "@type": "Person",
+     "name": "Myriam Brown"
+    },
+    {
+     "@type": "Person",
+     "name": "Martin Brun"
+    },
+    {
+     "@type": "Person",
+     "name": "Stephan Bruns"
+    },
+    {
+     "@type": "Person",
+     "name": "Nino Buliskeria"
+    },
+    {
+     "@type": "Person",
+     "name": "Andrea Calef"
+    },
+    {
+     "@type": "Person",
+     "name": "Alistair Cameron"
+    },
+    {
+     "@type": "Person",
+     "name": "Pamela Campa"
+    },
+    {
+     "@type": "Person",
+     "name": "Santiago Campos-Rodriguez"
+    },
+    {
+     "@type": "Person",
+     "name": "Giulio Giacomo Cantone"
+    },
+    {
+     "@type": "Person",
+     "name": "Fenella Carpena"
+    },
+    {
+     "@type": "Person",
+     "name": "Perry Jess Carter"
+    },
+    {
+     "@type": "Person",
+     "name": "Paul Castaneda Dower"
+    },
+    {
+     "@type": "Person",
+     "name": "Ondrej Castek"
+    },
+    {
+     "@type": "Person",
+     "name": "Jill Caviglia-Harris"
+    },
+    {
+     "@type": "Person",
+     "name": "Gabriella Chauca Strand"
+    },
+    {
+     "@type": "Person",
+     "name": "Shi Chen"
+    },
+    {
+     "@type": "Person",
+     "name": "Sya In Chzhen"
+    },
+    {
+     "@type": "Person",
+     "name": "Jong Chung"
+    },
+    {
+     "@type": "Person",
+     "name": "Jason Collins"
+    },
+    {
+     "@type": "Person",
+     "name": "Alexander Coppock"
+    },
+    {
+     "@type": "Person",
+     "name": "Hugo Cordeau"
+    },
+    {
+     "@type": "Person",
+     "name": "Ben Couillard"
+    },
+    {
+     "@type": "Person",
+     "name": "Jonathan Crechet"
+    },
+    {
+     "@type": "Person",
+     "name": "Lorenzo Crippa"
+    },
+    {
+     "@type": "Person",
+     "name": "Jing Cui"
+    },
+    {
+     "@type": "Person",
+     "name": "Christian Czymara"
+    },
+    {
+     "@type": "Person",
+     "name": "Haley Daarstad"
+    },
+    {
+     "@type": "Person",
+     "name": "Danh Chi Dao"
+    },
+    {
+     "@type": "Person",
+     "name": "Daniel Dao"
+    },
+    {
+     "@type": "Person",
+     "name": "Marco David Schmandt"
+    },
+    {
+     "@type": "Person",
+     "name": "Astrid de Linde"
+    },
+    {
+     "@type": "Person",
+     "name": "Lucas De Melo"
+    },
+    {
+     "@type": "Person",
+     "name": "Lachlan Deer"
+    },
+    {
+     "@type": "Person",
+     "name": "Micole De Vera"
+    },
+    {
+     "@type": "Person",
+     "name": "Velichka Dimitrova"
+    },
+    {
+     "@type": "Person",
+     "name": "Jan Fabian Dollbaum"
+    },
+    {
+     "@type": "Person",
+     "name": "Jan Matti Dollbaum"
+    },
+    {
+     "@type": "Person",
+     "name": "Michael Donnelly"
+    },
+    {
+     "@type": "Person",
+     "name": "Luu Duc Toan Huynh"
+    },
+    {
+     "@type": "Person",
+     "name": "Tsvetomira Dumbalska"
+    },
+    {
+     "@type": "Person",
+     "name": "Jamie Duncan"
+    },
+    {
+     "@type": "Person",
+     "name": "Kiet Tuan Duong"
+    },
+    {
+     "@type": "Person",
+     "name": "Thibaut Duprey"
+    },
+    {
+     "@type": "Person",
+     "name": "Christoph Dworschak"
+    },
+    {
+     "@type": "Person",
+     "name": "Sigmund Ellingsrud"
+    },
+    {
+     "@type": "Person",
+     "name": "Ali Elminejad"
+    },
+    {
+     "@type": "Person",
+     "name": "Yasmine Eissa"
+    },
+    {
+     "@type": "Person",
+     "name": "Andrea Erhart"
+    },
+    {
+     "@type": "Person",
+     "name": "Giulian Etingin-Frati"
+    },
+    {
+     "@type": "Person",
+     "name": "Elaheh Fatemipour"
+    },
+    {
+     "@type": "Person",
+     "name": "Alexa Federice"
+    },
+    {
+     "@type": "Person",
+     "name": "Jan Feld"
+    },
+    {
+     "@type": "Person",
+     "name": "Guidon Fenig"
+    },
+    {
+     "@type": "Person",
+     "name": "Mojtaba Firouzjaeiangalougah"
+    },
+    {
+     "@type": "Person",
+     "name": "Erlend Fleisje"
+    },
+    {
+     "@type": "Person",
+     "name": "Alexandre Fortier-Chouinard"
+    },
+    {
+     "@type": "Person",
+     "name": "Julia Francesca Engel"
+    },
+    {
+     "@type": "Person",
+     "name": "Nadjim Frechet"
+    },
+    {
+     "@type": "Person",
+     "name": "Reid Fortier"
+    },
+    {
+     "@type": "Person",
+     "name": "Tilman Fries"
+    },
+    {
+     "@type": "Person",
+     "name": "Michael James Frith"
+    },
+    {
+     "@type": "Person",
+     "name": "Thomas Galipeau"
+    },
+    {
+     "@type": "Person",
+     "name": "Sebastian Gallegos"
+    },
+    {
+     "@type": "Person",
+     "name": "Areez Gangji"
+    },
+    {
+     "@type": "Person",
+     "name": "Xiaoying Gao"
+    },
+    {
+     "@type": "Person",
+     "name": "Cloe Garnache"
+    },
+    {
+     "@type": "Person",
+     "name": "Attila Gaspar"
+    },
+    {
+     "@type": "Person",
+     "name": "Evelina Gavrilova"
+    },
+    {
+     "@type": "Person",
+     "name": "Arijit Ghosh"
+    },
+    {
+     "@type": "Person",
+     "name": "Garreth Gibney"
+    },
+    {
+     "@type": "Person",
+     "name": "Grant Gibson"
+    },
+    {
+     "@type": "Person",
+     "name": "Geir Godager"
+    },
+    {
+     "@type": "Person",
+     "name": "Leonard Goff"
+    },
+    {
+     "@type": "Person",
+     "name": "Da Gong"
+    },
+    {
+     "@type": "Person",
+     "name": "Javier Gonzalez"
+    },
+    {
+     "@type": "Person",
+     "name": "Jeremy D. Gretton"
+    },
+    {
+     "@type": "Person",
+     "name": "Cristina Griffa"
+    },
+    {
+     "@type": "Person",
+     "name": "Idaliya Grigoryeva"
+    },
+    {
+     "@type": "Person",
+     "name": "Maja Grøtting"
+    },
+    {
+     "@type": "Person",
+     "name": "Eric Guntermann"
+    },
+    {
+     "@type": "Person",
+     "name": "Jiaqi Guo"
+    },
+    {
+     "@type": "Person",
+     "name": "Alexi Gugushvili"
+    },
+    {
+     "@type": "Person",
+     "name": "Hooman Habibnia"
+    },
+    {
+     "@type": "Person",
+     "name": "Sonja Haffner"
+    },
+    {
+     "@type": "Person",
+     "name": "Jonathan D. Hall"
+    },
+    {
+     "@type": "Person",
+     "name": "Olle Hammar"
+    },
+    {
+     "@type": "Person",
+     "name": "Amund Hanson Kordt"
+    },
+    {
+     "@type": "Person",
+     "name": "Barry Hashimoto"
+    },
+    {
+     "@type": "Person",
+     "name": "Jonathan S. Hartley"
+    },
+    {
+     "@type": "Person",
+     "name": "Carina I. Hausladen"
+    },
+    {
+     "@type": "Person",
+     "name": "Tomas Havranek",
+     "@id": "https://meta-analysis.cz/#th",
+     "sameAs": "https://orcid.org/0000-0002-3158-2539"
+    },
+    {
+     "@type": "Person",
+     "name": "Harry He"
+    },
+    {
+     "@type": "Person",
+     "name": "Matthew Hepplewhite"
+    },
+    {
+     "@type": "Person",
+     "name": "Mario Herrera-Rodriguez"
+    },
+    {
+     "@type": "Person",
+     "name": "Felix Heuer"
+    },
+    {
+     "@type": "Person",
+     "name": "Anthony Heyes"
+    },
+    {
+     "@type": "Person",
+     "name": "Anson T. Y. Ho"
+    },
+    {
+     "@type": "Person",
+     "name": "Jonathan Holmes"
+    },
+    {
+     "@type": "Person",
+     "name": "Armando Holzknecht"
+    },
+    {
+     "@type": "Person",
+     "name": "Yu-Hsiang Dexter Hsu"
+    },
+    {
+     "@type": "Person",
+     "name": "Shiang-Hung Hu"
+    },
+    {
+     "@type": "Person",
+     "name": "Yu-Shiuan Huang"
+    },
+    {
+     "@type": "Person",
+     "name": "Mathias Huebener"
+    },
+    {
+     "@type": "Person",
+     "name": "Christoph Huber"
+    },
+    {
+     "@type": "Person",
+     "name": "Kim P. Huynh"
+    },
+    {
+     "@type": "Person",
+     "name": "Zuzana Irsova",
+     "@id": "https://meta-analysis.cz/#zi",
+     "sameAs": "https://orcid.org/0000-0002-0753-8124"
+    },
+    {
+     "@type": "Person",
+     "name": "Ozan Isler"
+    },
+    {
+     "@type": "Person",
+     "name": "Niklas Jakobsson"
+    },
+    {
+     "@type": "Person",
+     "name": "Raphael Jananji"
+    },
+    {
+     "@type": "Person",
+     "name": "Tharaka A. Jayalath"
+    },
+    {
+     "@type": "Person",
+     "name": "Michael Jetter"
+    },
+    {
+     "@type": "Person",
+     "name": "Jenny John"
+    },
+    {
+     "@type": "Person",
+     "name": "Rachel Joy Forshaw"
+    },
+    {
+     "@type": "Person",
+     "name": "Felipe Juan"
+    },
+    {
+     "@type": "Person",
+     "name": "Valon Kadriu"
+    },
+    {
+     "@type": "Person",
+     "name": "Sunny Karim"
+    },
+    {
+     "@type": "Person",
+     "name": "Edmund Kelly"
+    },
+    {
+     "@type": "Person",
+     "name": "Duy Khanh Hoang Dang"
+    },
+    {
+     "@type": "Person",
+     "name": "Tazia Khushboo"
+    },
+    {
+     "@type": "Person",
+     "name": "Jin Kim"
+    },
+    {
+     "@type": "Person",
+     "name": "Gustav Kjellsson"
+    },
+    {
+     "@type": "Person",
+     "name": "Anders Kjelsrud"
+    },
+    {
+     "@type": "Person",
+     "name": "Andreas Kotsadam"
+    },
+    {
+     "@type": "Person",
+     "name": "Jori Korpershoek"
+    },
+    {
+     "@type": "Person",
+     "name": "Lewis Krashinsky"
+    },
+    {
+     "@type": "Person",
+     "name": "Suranjana Kundu"
+    },
+    {
+     "@type": "Person",
+     "name": "Alexander Kustov"
+    },
+    {
+     "@type": "Person",
+     "name": "Nurlan Lalayev"
+    },
+    {
+     "@type": "Person",
+     "name": "Audree Langlois"
+    },
+    {
+     "@type": "Person",
+     "name": "Jill Laufer"
+    },
+    {
+     "@type": "Person",
+     "name": "Blake Lee-Whiting"
+    },
+    {
+     "@type": "Person",
+     "name": "Andreas Leibing"
+    },
+    {
+     "@type": "Person",
+     "name": "Gabriel Lenz"
+    },
+    {
+     "@type": "Person",
+     "name": "Joel Levin"
+    },
+    {
+     "@type": "Person",
+     "name": "Peng Li"
+    },
+    {
+     "@type": "Person",
+     "name": "Tongzhe Li"
+    },
+    {
+     "@type": "Person",
+     "name": "Yuchen Lin"
+    },
+    {
+     "@type": "Person",
+     "name": "Ariel Listo"
+    },
+    {
+     "@type": "Person",
+     "name": "Dan Liu"
+    },
+    {
+     "@type": "Person",
+     "name": "Xuewen Lu"
+    },
+    {
+     "@type": "Person",
+     "name": "Elvina Lukmanova"
+    },
+    {
+     "@type": "Person",
+     "name": "Alex Luscombe"
+    },
+    {
+     "@type": "Person",
+     "name": "Lester R. Lusher"
+    },
+    {
+     "@type": "Person",
+     "name": "Ke Lyu"
+    },
+    {
+     "@type": "Person",
+     "name": "Hai Ma"
+    },
+    {
+     "@type": "Person",
+     "name": "Nicolas Mader"
+    },
+    {
+     "@type": "Person",
+     "name": "Clifton Makate"
+    },
+    {
+     "@type": "Person",
+     "name": "Alice Malmberg"
+    },
+    {
+     "@type": "Person",
+     "name": "Adit Maitra"
+    },
+    {
+     "@type": "Person",
+     "name": "Marco Mandas"
+    },
+    {
+     "@type": "Person",
+     "name": "Jan Marcus"
+    },
+    {
+     "@type": "Person",
+     "name": "Shushanik Margaryan"
+    },
+    {
+     "@type": "Person",
+     "name": "Lili Mark"
+    },
+    {
+     "@type": "Person",
+     "name": "Andres Martignano"
+    },
+    {
+     "@type": "Person",
+     "name": "Abigail Marsh"
+    },
+    {
+     "@type": "Person",
+     "name": "Isabella Masetto"
+    },
+    {
+     "@type": "Person",
+     "name": "Anthony McCanny"
+    },
+    {
+     "@type": "Person",
+     "name": "Emma McManus"
+    },
+    {
+     "@type": "Person",
+     "name": "Ryan McWay"
+    },
+    {
+     "@type": "Person",
+     "name": "Lennard Metson"
+    },
+    {
+     "@type": "Person",
+     "name": "Jonas Minet Kinge"
+    },
+    {
+     "@type": "Person",
+     "name": "Sumit Mishra"
+    },
+    {
+     "@type": "Person",
+     "name": "Myra Mohnen"
+    },
+    {
+     "@type": "Person",
+     "name": "Jakob Moeller"
+    },
+    {
+     "@type": "Person",
+     "name": "Rosalie Montambeault"
+    },
+    {
+     "@type": "Person",
+     "name": "Sebastien Montpetit"
+    },
+    {
+     "@type": "Person",
+     "name": "Louis-Philippe Morin"
+    },
+    {
+     "@type": "Person",
+     "name": "Todd Morris"
+    },
+    {
+     "@type": "Person",
+     "name": "Scott Moser"
+    },
+    {
+     "@type": "Person",
+     "name": "Fabio Yoshio Suguri Motoki"
+    },
+    {
+     "@type": "Person",
+     "name": "Lucija Muehlenbachs"
+    },
+    {
+     "@type": "Person",
+     "name": "Andreea Musulan"
+    },
+    {
+     "@type": "Person",
+     "name": "Marco Musumeci"
+    },
+    {
+     "@type": "Person",
+     "name": "Munirul Nabin"
+    },
+    {
+     "@type": "Person",
+     "name": "Karim Nchare"
+    },
+    {
+     "@type": "Person",
+     "name": "Florian Neubauer"
+    },
+    {
+     "@type": "Person",
+     "name": "Quan M. P. Nguyen"
+    },
+    {
+     "@type": "Person",
+     "name": "Tuan Nguyen"
+    },
+    {
+     "@type": "Person",
+     "name": "Viet Nguyen-Tien"
+    },
+    {
+     "@type": "Person",
+     "name": "Ali Niazi"
+    },
+    {
+     "@type": "Person",
+     "name": "Giorgi Nikolaishvili"
+    },
+    {
+     "@type": "Person",
+     "name": "Ardyn Nordstrom"
+    },
+    {
+     "@type": "Person",
+     "name": "Patrick Nuß"
+    },
+    {
+     "@type": "Person",
+     "name": "Angela Odermatt"
+    },
+    {
+     "@type": "Person",
+     "name": "Matt Olson"
+    },
+    {
+     "@type": "Person",
+     "name": "Henning Øien"
+    },
+    {
+     "@type": "Person",
+     "name": "Tim Olkers"
+    },
+    {
+     "@type": "Person",
+     "name": "Miquel Oliver i Vert"
+    },
+    {
+     "@type": "Person",
+     "name": "Emre Oral"
+    },
+    {
+     "@type": "Person",
+     "name": "Christian Oswald"
+    },
+    {
+     "@type": "Person",
+     "name": "Ali Ousman"
+    },
+    {
+     "@type": "Person",
+     "name": "Omer Ozak"
+    },
+    {
+     "@type": "Person",
+     "name": "Shubham Pandey"
+    },
+    {
+     "@type": "Person",
+     "name": "Alexandre Pavlov"
+    },
+    {
+     "@type": "Person",
+     "name": "Martino Pelli"
+    },
+    {
+     "@type": "Person",
+     "name": "Romeo Penheiro"
+    },
+    {
+     "@type": "Person",
+     "name": "RyuGyung Park"
+    },
+    {
+     "@type": "Person",
+     "name": "Eva Perez Martel"
+    },
+    {
+     "@type": "Person",
+     "name": "Tereza Petrovicova"
+    },
+    {
+     "@type": "Person",
+     "name": "Linh Phan"
+    },
+    {
+     "@type": "Person",
+     "name": "Alexa Prettyman"
+    },
+    {
+     "@type": "Person",
+     "name": "Jakub Prochazka"
+    },
+    {
+     "@type": "Person",
+     "name": "Aqila Putri"
+    },
+    {
+     "@type": "Person",
+     "name": "Julian Quandt"
+    },
+    {
+     "@type": "Person",
+     "name": "Kangyu Qiu"
+    },
+    {
+     "@type": "Person",
+     "name": "Loan Quynh Thi Nguyen"
+    },
+    {
+     "@type": "Person",
+     "name": "Andaleeb Rahman"
+    },
+    {
+     "@type": "Person",
+     "name": "Carson H. Rea"
+    },
+    {
+     "@type": "Person",
+     "name": "Adam Reiremo"
+    },
+    {
+     "@type": "Person",
+     "name": "Laetitia Renee"
+    },
+    {
+     "@type": "Person",
+     "name": "Joseph Richardson"
+    },
+    {
+     "@type": "Person",
+     "name": "Nicholas Rivers"
+    },
+    {
+     "@type": "Person",
+     "name": "Bruno Rodrigues"
+    },
+    {
+     "@type": "Person",
+     "name": "William Roelofs"
+    },
+    {
+     "@type": "Person",
+     "name": "Tobias Roemer"
+    },
+    {
+     "@type": "Person",
+     "name": "Ole Rogeberg"
+    },
+    {
+     "@type": "Person",
+     "name": "Julian Rose"
+    },
+    {
+     "@type": "Person",
+     "name": "Andrew Roskos-Ewoldsen"
+    },
+    {
+     "@type": "Person",
+     "name": "Paul Rosmer"
+    },
+    {
+     "@type": "Person",
+     "name": "Barbara Sabada"
+    },
+    {
+     "@type": "Person",
+     "name": "Soodeh Saberian"
+    },
+    {
+     "@type": "Person",
+     "name": "Nicolas Salamanca"
+    },
+    {
+     "@type": "Person",
+     "name": "Georg Sator"
+    },
+    {
+     "@type": "Person",
+     "name": "Daniel Scates"
+    },
+    {
+     "@type": "Person",
+     "name": "Elmar Schluter"
+    },
+    {
+     "@type": "Person",
+     "name": "Cameron Sells"
+    },
+    {
+     "@type": "Person",
+     "name": "Sharmi Sen"
+    },
+    {
+     "@type": "Person",
+     "name": "Ritika Sethi"
+    },
+    {
+     "@type": "Person",
+     "name": "Anna Shcherbiak"
+    },
+    {
+     "@type": "Person",
+     "name": "Moyosore Sogaolu"
+    },
+    {
+     "@type": "Person",
+     "name": "Matt Soosalu"
+    },
+    {
+     "@type": "Person",
+     "name": "Erik Ø. Sørensen"
+    },
+    {
+     "@type": "Person",
+     "name": "Manali Sovani"
+    },
+    {
+     "@type": "Person",
+     "name": "Noah Spencer"
+    },
+    {
+     "@type": "Person",
+     "name": "Stefan Staubli"
+    },
+    {
+     "@type": "Person",
+     "name": "Renske Stans"
+    },
+    {
+     "@type": "Person",
+     "name": "Anya Stewart"
+    },
+    {
+     "@type": "Person",
+     "name": "Felix Stips"
+    },
+    {
+     "@type": "Person",
+     "name": "Kieran Stockley"
+    },
+    {
+     "@type": "Person",
+     "name": "Stephenson Strobel"
+    },
+    {
+     "@type": "Person",
+     "name": "Ethan Struby"
+    },
+    {
+     "@type": "Person",
+     "name": "John P. Tang"
+    },
+    {
+     "@type": "Person",
+     "name": "Idil Tanrisever"
+    },
+    {
+     "@type": "Person",
+     "name": "Thomas Tao Yang"
+    },
+    {
+     "@type": "Person",
+     "name": "Ipek Tastan"
+    },
+    {
+     "@type": "Person",
+     "name": "Dejan Tatic"
+    },
+    {
+     "@type": "Person",
+     "name": "Benjamin Tatlow"
+    },
+    {
+     "@type": "Person",
+     "name": "Feraud Tchuisseu Seuyong"
+    },
+    {
+     "@type": "Person",
+     "name": "Remi Theriault"
+    },
+    {
+     "@type": "Person",
+     "name": "Vincent Thivierge"
+    },
+    {
+     "@type": "Person",
+     "name": "Wenjie Tian"
+    },
+    {
+     "@type": "Person",
+     "name": "Filip-Mihai Toma"
+    },
+    {
+     "@type": "Person",
+     "name": "Maddalena Totarelli"
+    },
+    {
+     "@type": "Person",
+     "name": "Van-Anh Tran"
+    },
+    {
+     "@type": "Person",
+     "name": "Hung Truong"
+    },
+    {
+     "@type": "Person",
+     "name": "Nikita Tsoy"
+    },
+    {
+     "@type": "Person",
+     "name": "Kerem Tuzcuoglu"
+    },
+    {
+     "@type": "Person",
+     "name": "Diego Ubfal"
+    },
+    {
+     "@type": "Person",
+     "name": "Laura Villalobos"
+    },
+    {
+     "@type": "Person",
+     "name": "Julian Walterskirchen"
+    },
+    {
+     "@type": "Person",
+     "name": "Joseph Tao-yi Wang"
+    },
+    {
+     "@type": "Person",
+     "name": "Vasudha Wattal"
+    },
+    {
+     "@type": "Person",
+     "name": "Matthew D. Webb"
+    },
+    {
+     "@type": "Person",
+     "name": "Bryan S. Weber"
+    },
+    {
+     "@type": "Person",
+     "name": "Reinhard Weisser"
+    },
+    {
+     "@type": "Person",
+     "name": "Wei-Chien Weng"
+    },
+    {
+     "@type": "Person",
+     "name": "Christian Westheide"
+    },
+    {
+     "@type": "Person",
+     "name": "Kimberly White"
+    },
+    {
+     "@type": "Person",
+     "name": "Jacob Winter"
+    },
+    {
+     "@type": "Person",
+     "name": "Timo Wochner"
+    },
+    {
+     "@type": "Person",
+     "name": "Matt Woerman"
+    },
+    {
+     "@type": "Person",
+     "name": "Jared Wong"
+    },
+    {
+     "@type": "Person",
+     "name": "Ritchie Woodard"
+    },
+    {
+     "@type": "Person",
+     "name": "Marcin Wronski"
+    },
+    {
+     "@type": "Person",
+     "name": "Myra Yazbeck"
+    },
+    {
+     "@type": "Person",
+     "name": "Gustav Chung Yang"
+    },
+    {
+     "@type": "Person",
+     "name": "Luther Yap"
+    },
+    {
+     "@type": "Person",
+     "name": "Kareman Yassin"
+    },
+    {
+     "@type": "Person",
+     "name": "Hao Ye"
+    },
+    {
+     "@type": "Person",
+     "name": "Jin Young Yoon"
+    },
+    {
+     "@type": "Person",
+     "name": "Chris Yurris"
+    },
+    {
+     "@type": "Person",
+     "name": "Tahreen Zahra"
+    },
+    {
+     "@type": "Person",
+     "name": "Mirela Zaneva"
+    },
+    {
+     "@type": "Person",
+     "name": "Aline Zayat"
+    },
+    {
+     "@type": "Person",
+     "name": "Jonathan Zhang"
+    },
+    {
+     "@type": "Person",
+     "name": "Ziwei Zhao"
+    },
+    {
+     "@type": "Person",
+     "name": "Yaolang Zhong"
+    }
+   ],
+   "datePublished": "2026",
+   "isPartOf": {
+    "@type": "PublicationIssue",
+    "issueNumber": "8108",
+    "isPartOf": {
+     "@type": "PublicationVolume",
+     "volumeNumber": "652",
+     "isPartOf": {
+      "@type": "Periodical",
+      "name": "Nature"
+     }
+    }
+   },
+   "pageStart": "151",
+   "pageEnd": "156",
+   "sameAs": "https://doi.org/10.1038/s41586-026-10251-x",
+   "identifier": {
+    "@type": "PropertyValue",
+    "propertyID": "DOI",
+    "value": "10.1038/s41586-026-10251-x"
+   },
+   "keywords": "reproducibility, robustness, replication, research credibility, replication games, data and code sharing, publication bias, economics, political science",
+   "image": "https://meta-analysis.cz/reproducibility/reproducibility.png",
+   "encoding": [
+    {
+     "@type": "MediaObject",
+     "name": "Paper",
+     "contentUrl": "https://meta-analysis.cz/reproducibility/reproducibility.pdf",
+     "encodingFormat": "application/pdf"
+    }
+   ]
+  },
+  {
+   "@type": "Dataset",
+   "@id": "https://meta-analysis.cz/reproducibility/#dataset",
+   "name": "Data and code for: Reproducibility and Robustness of Economics and Political Science Research",
+   "description": "Dataset and replication files for the study. This systematic and large-scale reproduction effort tests the reproducibility and robustness of economics and political science, contributing to a growing literature on research credibility and self-correction in science. We reproduced original analyses and conducted robustness checks of 110 articles recently published in leading economics and political science journals, all of which have mandatory data and code sharing policies. We found that over 85% of published claims were computationally reproducible. In robustness checks, our re-analyses led to 72% of statistically significant estimates to remain significant and in the same direction, and the median reproduced effect size is (nearly) the same as the originally published effect size (that is, 99% of the published effect size). Additionally, six independent research teams examined 12 pre-specified hypotheses about determinants of robustness. Research teams with more experience found lower levels of robustness, and robustness correlated with neither author characteristics nor data availability.",
+   "url": "https://meta-analysis.cz/reproducibility/",
+   "isAccessibleForFree": true,
+   "inLanguage": "en",
+   "license": "https://creativecommons.org/licenses/by/4.0/",
+   "usageInfo": "https://meta-analysis.cz/LICENSE",
+   "subjectOf": {
+    "@id": "https://meta-analysis.cz/reproducibility/#paper"
+   },
+   "sameAs": [
+    "https://doi.org/10.5281/zenodo.17792605",
+    "https://i4replication.org/"
+   ],
+   "creator": [
+    {
+     "@type": "Person",
+     "name": "Abel Brodeur"
+    },
+    {
+     "@type": "Person",
+     "name": "Derek Mikola"
+    },
+    {
+     "@type": "Person",
+     "name": "Nikolai Cook"
+    },
+    {
+     "@type": "Person",
+     "name": "Lenka Fiala"
+    },
+    {
+     "@type": "Person",
+     "name": "Thomas Brailey"
+    },
+    {
+     "@type": "Person",
+     "name": "Ryan Briggs"
+    },
+    {
+     "@type": "Person",
+     "name": "Alexandra de Gendre"
+    },
+    {
+     "@type": "Person",
+     "name": "Yannick Dupraz"
+    },
+    {
+     "@type": "Person",
+     "name": "Jacopo Gabani"
+    },
+    {
+     "@type": "Person",
+     "name": "Romain Gauriot"
+    },
+    {
+     "@type": "Person",
+     "name": "Joanne Haddad"
+    },
+    {
+     "@type": "Person",
+     "name": "Goncalo Lima"
+    },
+    {
+     "@type": "Person",
+     "name": "Jorg Ankel-Peters"
+    },
+    {
+     "@type": "Person",
+     "name": "Anna Dreber"
+    },
+    {
+     "@type": "Person",
+     "name": "Douglas Campbell"
+    },
+    {
+     "@type": "Person",
+     "name": "Lamis Kattan"
+    },
+    {
+     "@type": "Person",
+     "name": "Diego Marino Fages"
+    },
+    {
+     "@type": "Person",
+     "name": "Fabian Mierisch"
+    },
+    {
+     "@type": "Person",
+     "name": "Pu Sun"
+    },
+    {
+     "@type": "Person",
+     "name": "Taylor Wright"
+    },
+    {
+     "@type": "Person",
+     "name": "Marie Connolly"
+    },
+    {
+     "@type": "Person",
+     "name": "Fernando Hoces de la Guardia"
+    },
+    {
+     "@type": "Person",
+     "name": "Magnus Johannesson"
+    },
+    {
+     "@type": "Person",
+     "name": "Edward Miguel"
+    },
+    {
+     "@type": "Person",
+     "name": "Lars Vilhuber"
+    },
+    {
+     "@type": "Person",
+     "name": "Alejandro Abarca"
+    },
+    {
+     "@type": "Person",
+     "name": "Mahesh Acharya"
+    },
+    {
+     "@type": "Person",
+     "name": "Sossou Simplice Adjisse"
+    },
+    {
+     "@type": "Person",
+     "name": "Ahwaz Akhtar"
+    },
+    {
+     "@type": "Person",
+     "name": "Eduardo Alberto Ramirez Lizardi"
+    },
+    {
+     "@type": "Person",
+     "name": "Sabina Albrecht"
+    },
+    {
+     "@type": "Person",
+     "name": "Synøve Nygaard Andersen"
+    },
+    {
+     "@type": "Person",
+     "name": "Zubaria Andlib"
+    },
+    {
+     "@type": "Person",
+     "name": "Falak Arrora"
+    },
+    {
+     "@type": "Person",
+     "name": "Thomas Ash"
+    },
+    {
+     "@type": "Person",
+     "name": "Etienne Bacher"
+    },
+    {
+     "@type": "Person",
+     "name": "Sebastian Bachler"
+    },
+    {
+     "@type": "Person",
+     "name": "Felix Bacon"
+    },
+    {
+     "@type": "Person",
+     "name": "Manuel Bagues"
+    },
+    {
+     "@type": "Person",
+     "name": "Timea Balogh"
+    },
+    {
+     "@type": "Person",
+     "name": "Alisher Batmanov"
+    },
+    {
+     "@type": "Person",
+     "name": "Mara Barschkett"
+    },
+    {
+     "@type": "Person",
+     "name": "Barıs Kaan Basdil"
+    },
+    {
+     "@type": "Person",
+     "name": "Jaromir Baxa"
+    },
+    {
+     "@type": "Person",
+     "name": "Sascha O. Becker"
+    },
+    {
+     "@type": "Person",
+     "name": "Monica Beeder"
+    },
+    {
+     "@type": "Person",
+     "name": "Louis-Philippe Beland"
+    },
+    {
+     "@type": "Person",
+     "name": "Abdel-Hamid Bello"
+    },
+    {
+     "@type": "Person",
+     "name": "Daniel Benenson Markovits"
+    },
+    {
+     "@type": "Person",
+     "name": "Grant Benjamin"
+    },
+    {
+     "@type": "Person",
+     "name": "Thomas Bergeron"
+    },
+    {
+     "@type": "Person",
+     "name": "Moussa P. Blimpo"
+    },
+    {
+     "@type": "Person",
+     "name": "Marco Binetti"
+    },
+    {
+     "@type": "Person",
+     "name": "Carl Bonander"
+    },
+    {
+     "@type": "Person",
+     "name": "Joseph Bonneau"
+    },
+    {
+     "@type": "Person",
+     "name": "Endre Borbath"
+    },
+    {
+     "@type": "Person",
+     "name": "Nicolai Borgen"
+    },
+    {
+     "@type": "Person",
+     "name": "Solveig Topstad Borgen"
+    },
+    {
+     "@type": "Person",
+     "name": "Jonathan Borowsky"
+    },
+    {
+     "@type": "Person",
+     "name": "Elisa Brini"
+    },
+    {
+     "@type": "Person",
+     "name": "Myriam Brown"
+    },
+    {
+     "@type": "Person",
+     "name": "Martin Brun"
+    },
+    {
+     "@type": "Person",
+     "name": "Stephan Bruns"
+    },
+    {
+     "@type": "Person",
+     "name": "Nino Buliskeria"
+    },
+    {
+     "@type": "Person",
+     "name": "Andrea Calef"
+    },
+    {
+     "@type": "Person",
+     "name": "Alistair Cameron"
+    },
+    {
+     "@type": "Person",
+     "name": "Pamela Campa"
+    },
+    {
+     "@type": "Person",
+     "name": "Santiago Campos-Rodriguez"
+    },
+    {
+     "@type": "Person",
+     "name": "Giulio Giacomo Cantone"
+    },
+    {
+     "@type": "Person",
+     "name": "Fenella Carpena"
+    },
+    {
+     "@type": "Person",
+     "name": "Perry Jess Carter"
+    },
+    {
+     "@type": "Person",
+     "name": "Paul Castaneda Dower"
+    },
+    {
+     "@type": "Person",
+     "name": "Ondrej Castek"
+    },
+    {
+     "@type": "Person",
+     "name": "Jill Caviglia-Harris"
+    },
+    {
+     "@type": "Person",
+     "name": "Gabriella Chauca Strand"
+    },
+    {
+     "@type": "Person",
+     "name": "Shi Chen"
+    },
+    {
+     "@type": "Person",
+     "name": "Sya In Chzhen"
+    },
+    {
+     "@type": "Person",
+     "name": "Jong Chung"
+    },
+    {
+     "@type": "Person",
+     "name": "Jason Collins"
+    },
+    {
+     "@type": "Person",
+     "name": "Alexander Coppock"
+    },
+    {
+     "@type": "Person",
+     "name": "Hugo Cordeau"
+    },
+    {
+     "@type": "Person",
+     "name": "Ben Couillard"
+    },
+    {
+     "@type": "Person",
+     "name": "Jonathan Crechet"
+    },
+    {
+     "@type": "Person",
+     "name": "Lorenzo Crippa"
+    },
+    {
+     "@type": "Person",
+     "name": "Jing Cui"
+    },
+    {
+     "@type": "Person",
+     "name": "Christian Czymara"
+    },
+    {
+     "@type": "Person",
+     "name": "Haley Daarstad"
+    },
+    {
+     "@type": "Person",
+     "name": "Danh Chi Dao"
+    },
+    {
+     "@type": "Person",
+     "name": "Daniel Dao"
+    },
+    {
+     "@type": "Person",
+     "name": "Marco David Schmandt"
+    },
+    {
+     "@type": "Person",
+     "name": "Astrid de Linde"
+    },
+    {
+     "@type": "Person",
+     "name": "Lucas De Melo"
+    },
+    {
+     "@type": "Person",
+     "name": "Lachlan Deer"
+    },
+    {
+     "@type": "Person",
+     "name": "Micole De Vera"
+    },
+    {
+     "@type": "Person",
+     "name": "Velichka Dimitrova"
+    },
+    {
+     "@type": "Person",
+     "name": "Jan Fabian Dollbaum"
+    },
+    {
+     "@type": "Person",
+     "name": "Jan Matti Dollbaum"
+    },
+    {
+     "@type": "Person",
+     "name": "Michael Donnelly"
+    },
+    {
+     "@type": "Person",
+     "name": "Luu Duc Toan Huynh"
+    },
+    {
+     "@type": "Person",
+     "name": "Tsvetomira Dumbalska"
+    },
+    {
+     "@type": "Person",
+     "name": "Jamie Duncan"
+    },
+    {
+     "@type": "Person",
+     "name": "Kiet Tuan Duong"
+    },
+    {
+     "@type": "Person",
+     "name": "Thibaut Duprey"
+    },
+    {
+     "@type": "Person",
+     "name": "Christoph Dworschak"
+    },
+    {
+     "@type": "Person",
+     "name": "Sigmund Ellingsrud"
+    },
+    {
+     "@type": "Person",
+     "name": "Ali Elminejad"
+    },
+    {
+     "@type": "Person",
+     "name": "Yasmine Eissa"
+    },
+    {
+     "@type": "Person",
+     "name": "Andrea Erhart"
+    },
+    {
+     "@type": "Person",
+     "name": "Giulian Etingin-Frati"
+    },
+    {
+     "@type": "Person",
+     "name": "Elaheh Fatemipour"
+    },
+    {
+     "@type": "Person",
+     "name": "Alexa Federice"
+    },
+    {
+     "@type": "Person",
+     "name": "Jan Feld"
+    },
+    {
+     "@type": "Person",
+     "name": "Guidon Fenig"
+    },
+    {
+     "@type": "Person",
+     "name": "Mojtaba Firouzjaeiangalougah"
+    },
+    {
+     "@type": "Person",
+     "name": "Erlend Fleisje"
+    },
+    {
+     "@type": "Person",
+     "name": "Alexandre Fortier-Chouinard"
+    },
+    {
+     "@type": "Person",
+     "name": "Julia Francesca Engel"
+    },
+    {
+     "@type": "Person",
+     "name": "Nadjim Frechet"
+    },
+    {
+     "@type": "Person",
+     "name": "Reid Fortier"
+    },
+    {
+     "@type": "Person",
+     "name": "Tilman Fries"
+    },
+    {
+     "@type": "Person",
+     "name": "Michael James Frith"
+    },
+    {
+     "@type": "Person",
+     "name": "Thomas Galipeau"
+    },
+    {
+     "@type": "Person",
+     "name": "Sebastian Gallegos"
+    },
+    {
+     "@type": "Person",
+     "name": "Areez Gangji"
+    },
+    {
+     "@type": "Person",
+     "name": "Xiaoying Gao"
+    },
+    {
+     "@type": "Person",
+     "name": "Cloe Garnache"
+    },
+    {
+     "@type": "Person",
+     "name": "Attila Gaspar"
+    },
+    {
+     "@type": "Person",
+     "name": "Evelina Gavrilova"
+    },
+    {
+     "@type": "Person",
+     "name": "Arijit Ghosh"
+    },
+    {
+     "@type": "Person",
+     "name": "Garreth Gibney"
+    },
+    {
+     "@type": "Person",
+     "name": "Grant Gibson"
+    },
+    {
+     "@type": "Person",
+     "name": "Geir Godager"
+    },
+    {
+     "@type": "Person",
+     "name": "Leonard Goff"
+    },
+    {
+     "@type": "Person",
+     "name": "Da Gong"
+    },
+    {
+     "@type": "Person",
+     "name": "Javier Gonzalez"
+    },
+    {
+     "@type": "Person",
+     "name": "Jeremy D. Gretton"
+    },
+    {
+     "@type": "Person",
+     "name": "Cristina Griffa"
+    },
+    {
+     "@type": "Person",
+     "name": "Idaliya Grigoryeva"
+    },
+    {
+     "@type": "Person",
+     "name": "Maja Grøtting"
+    },
+    {
+     "@type": "Person",
+     "name": "Eric Guntermann"
+    },
+    {
+     "@type": "Person",
+     "name": "Jiaqi Guo"
+    },
+    {
+     "@type": "Person",
+     "name": "Alexi Gugushvili"
+    },
+    {
+     "@type": "Person",
+     "name": "Hooman Habibnia"
+    },
+    {
+     "@type": "Person",
+     "name": "Sonja Haffner"
+    },
+    {
+     "@type": "Person",
+     "name": "Jonathan D. Hall"
+    },
+    {
+     "@type": "Person",
+     "name": "Olle Hammar"
+    },
+    {
+     "@type": "Person",
+     "name": "Amund Hanson Kordt"
+    },
+    {
+     "@type": "Person",
+     "name": "Barry Hashimoto"
+    },
+    {
+     "@type": "Person",
+     "name": "Jonathan S. Hartley"
+    },
+    {
+     "@type": "Person",
+     "name": "Carina I. Hausladen"
+    },
+    {
+     "@type": "Person",
+     "name": "Tomas Havranek",
+     "@id": "https://meta-analysis.cz/#th",
+     "sameAs": "https://orcid.org/0000-0002-3158-2539"
+    },
+    {
+     "@type": "Person",
+     "name": "Harry He"
+    },
+    {
+     "@type": "Person",
+     "name": "Matthew Hepplewhite"
+    },
+    {
+     "@type": "Person",
+     "name": "Mario Herrera-Rodriguez"
+    },
+    {
+     "@type": "Person",
+     "name": "Felix Heuer"
+    },
+    {
+     "@type": "Person",
+     "name": "Anthony Heyes"
+    },
+    {
+     "@type": "Person",
+     "name": "Anson T. Y. Ho"
+    },
+    {
+     "@type": "Person",
+     "name": "Jonathan Holmes"
+    },
+    {
+     "@type": "Person",
+     "name": "Armando Holzknecht"
+    },
+    {
+     "@type": "Person",
+     "name": "Yu-Hsiang Dexter Hsu"
+    },
+    {
+     "@type": "Person",
+     "name": "Shiang-Hung Hu"
+    },
+    {
+     "@type": "Person",
+     "name": "Yu-Shiuan Huang"
+    },
+    {
+     "@type": "Person",
+     "name": "Mathias Huebener"
+    },
+    {
+     "@type": "Person",
+     "name": "Christoph Huber"
+    },
+    {
+     "@type": "Person",
+     "name": "Kim P. Huynh"
+    },
+    {
+     "@type": "Person",
+     "name": "Zuzana Irsova",
+     "@id": "https://meta-analysis.cz/#zi",
+     "sameAs": "https://orcid.org/0000-0002-0753-8124"
+    },
+    {
+     "@type": "Person",
+     "name": "Ozan Isler"
+    },
+    {
+     "@type": "Person",
+     "name": "Niklas Jakobsson"
+    },
+    {
+     "@type": "Person",
+     "name": "Raphael Jananji"
+    },
+    {
+     "@type": "Person",
+     "name": "Tharaka A. Jayalath"
+    },
+    {
+     "@type": "Person",
+     "name": "Michael Jetter"
+    },
+    {
+     "@type": "Person",
+     "name": "Jenny John"
+    },
+    {
+     "@type": "Person",
+     "name": "Rachel Joy Forshaw"
+    },
+    {
+     "@type": "Person",
+     "name": "Felipe Juan"
+    },
+    {
+     "@type": "Person",
+     "name": "Valon Kadriu"
+    },
+    {
+     "@type": "Person",
+     "name": "Sunny Karim"
+    },
+    {
+     "@type": "Person",
+     "name": "Edmund Kelly"
+    },
+    {
+     "@type": "Person",
+     "name": "Duy Khanh Hoang Dang"
+    },
+    {
+     "@type": "Person",
+     "name": "Tazia Khushboo"
+    },
+    {
+     "@type": "Person",
+     "name": "Jin Kim"
+    },
+    {
+     "@type": "Person",
+     "name": "Gustav Kjellsson"
+    },
+    {
+     "@type": "Person",
+     "name": "Anders Kjelsrud"
+    },
+    {
+     "@type": "Person",
+     "name": "Andreas Kotsadam"
+    },
+    {
+     "@type": "Person",
+     "name": "Jori Korpershoek"
+    },
+    {
+     "@type": "Person",
+     "name": "Lewis Krashinsky"
+    },
+    {
+     "@type": "Person",
+     "name": "Suranjana Kundu"
+    },
+    {
+     "@type": "Person",
+     "name": "Alexander Kustov"
+    },
+    {
+     "@type": "Person",
+     "name": "Nurlan Lalayev"
+    },
+    {
+     "@type": "Person",
+     "name": "Audree Langlois"
+    },
+    {
+     "@type": "Person",
+     "name": "Jill Laufer"
+    },
+    {
+     "@type": "Person",
+     "name": "Blake Lee-Whiting"
+    },
+    {
+     "@type": "Person",
+     "name": "Andreas Leibing"
+    },
+    {
+     "@type": "Person",
+     "name": "Gabriel Lenz"
+    },
+    {
+     "@type": "Person",
+     "name": "Joel Levin"
+    },
+    {
+     "@type": "Person",
+     "name": "Peng Li"
+    },
+    {
+     "@type": "Person",
+     "name": "Tongzhe Li"
+    },
+    {
+     "@type": "Person",
+     "name": "Yuchen Lin"
+    },
+    {
+     "@type": "Person",
+     "name": "Ariel Listo"
+    },
+    {
+     "@type": "Person",
+     "name": "Dan Liu"
+    },
+    {
+     "@type": "Person",
+     "name": "Xuewen Lu"
+    },
+    {
+     "@type": "Person",
+     "name": "Elvina Lukmanova"
+    },
+    {
+     "@type": "Person",
+     "name": "Alex Luscombe"
+    },
+    {
+     "@type": "Person",
+     "name": "Lester R. Lusher"
+    },
+    {
+     "@type": "Person",
+     "name": "Ke Lyu"
+    },
+    {
+     "@type": "Person",
+     "name": "Hai Ma"
+    },
+    {
+     "@type": "Person",
+     "name": "Nicolas Mader"
+    },
+    {
+     "@type": "Person",
+     "name": "Clifton Makate"
+    },
+    {
+     "@type": "Person",
+     "name": "Alice Malmberg"
+    },
+    {
+     "@type": "Person",
+     "name": "Adit Maitra"
+    },
+    {
+     "@type": "Person",
+     "name": "Marco Mandas"
+    },
+    {
+     "@type": "Person",
+     "name": "Jan Marcus"
+    },
+    {
+     "@type": "Person",
+     "name": "Shushanik Margaryan"
+    },
+    {
+     "@type": "Person",
+     "name": "Lili Mark"
+    },
+    {
+     "@type": "Person",
+     "name": "Andres Martignano"
+    },
+    {
+     "@type": "Person",
+     "name": "Abigail Marsh"
+    },
+    {
+     "@type": "Person",
+     "name": "Isabella Masetto"
+    },
+    {
+     "@type": "Person",
+     "name": "Anthony McCanny"
+    },
+    {
+     "@type": "Person",
+     "name": "Emma McManus"
+    },
+    {
+     "@type": "Person",
+     "name": "Ryan McWay"
+    },
+    {
+     "@type": "Person",
+     "name": "Lennard Metson"
+    },
+    {
+     "@type": "Person",
+     "name": "Jonas Minet Kinge"
+    },
+    {
+     "@type": "Person",
+     "name": "Sumit Mishra"
+    },
+    {
+     "@type": "Person",
+     "name": "Myra Mohnen"
+    },
+    {
+     "@type": "Person",
+     "name": "Jakob Moeller"
+    },
+    {
+     "@type": "Person",
+     "name": "Rosalie Montambeault"
+    },
+    {
+     "@type": "Person",
+     "name": "Sebastien Montpetit"
+    },
+    {
+     "@type": "Person",
+     "name": "Louis-Philippe Morin"
+    },
+    {
+     "@type": "Person",
+     "name": "Todd Morris"
+    },
+    {
+     "@type": "Person",
+     "name": "Scott Moser"
+    },
+    {
+     "@type": "Person",
+     "name": "Fabio Yoshio Suguri Motoki"
+    },
+    {
+     "@type": "Person",
+     "name": "Lucija Muehlenbachs"
+    },
+    {
+     "@type": "Person",
+     "name": "Andreea Musulan"
+    },
+    {
+     "@type": "Person",
+     "name": "Marco Musumeci"
+    },
+    {
+     "@type": "Person",
+     "name": "Munirul Nabin"
+    },
+    {
+     "@type": "Person",
+     "name": "Karim Nchare"
+    },
+    {
+     "@type": "Person",
+     "name": "Florian Neubauer"
+    },
+    {
+     "@type": "Person",
+     "name": "Quan M. P. Nguyen"
+    },
+    {
+     "@type": "Person",
+     "name": "Tuan Nguyen"
+    },
+    {
+     "@type": "Person",
+     "name": "Viet Nguyen-Tien"
+    },
+    {
+     "@type": "Person",
+     "name": "Ali Niazi"
+    },
+    {
+     "@type": "Person",
+     "name": "Giorgi Nikolaishvili"
+    },
+    {
+     "@type": "Person",
+     "name": "Ardyn Nordstrom"
+    },
+    {
+     "@type": "Person",
+     "name": "Patrick Nuß"
+    },
+    {
+     "@type": "Person",
+     "name": "Angela Odermatt"
+    },
+    {
+     "@type": "Person",
+     "name": "Matt Olson"
+    },
+    {
+     "@type": "Person",
+     "name": "Henning Øien"
+    },
+    {
+     "@type": "Person",
+     "name": "Tim Olkers"
+    },
+    {
+     "@type": "Person",
+     "name": "Miquel Oliver i Vert"
+    },
+    {
+     "@type": "Person",
+     "name": "Emre Oral"
+    },
+    {
+     "@type": "Person",
+     "name": "Christian Oswald"
+    },
+    {
+     "@type": "Person",
+     "name": "Ali Ousman"
+    },
+    {
+     "@type": "Person",
+     "name": "Omer Ozak"
+    },
+    {
+     "@type": "Person",
+     "name": "Shubham Pandey"
+    },
+    {
+     "@type": "Person",
+     "name": "Alexandre Pavlov"
+    },
+    {
+     "@type": "Person",
+     "name": "Martino Pelli"
+    },
+    {
+     "@type": "Person",
+     "name": "Romeo Penheiro"
+    },
+    {
+     "@type": "Person",
+     "name": "RyuGyung Park"
+    },
+    {
+     "@type": "Person",
+     "name": "Eva Perez Martel"
+    },
+    {
+     "@type": "Person",
+     "name": "Tereza Petrovicova"
+    },
+    {
+     "@type": "Person",
+     "name": "Linh Phan"
+    },
+    {
+     "@type": "Person",
+     "name": "Alexa Prettyman"
+    },
+    {
+     "@type": "Person",
+     "name": "Jakub Prochazka"
+    },
+    {
+     "@type": "Person",
+     "name": "Aqila Putri"
+    },
+    {
+     "@type": "Person",
+     "name": "Julian Quandt"
+    },
+    {
+     "@type": "Person",
+     "name": "Kangyu Qiu"
+    },
+    {
+     "@type": "Person",
+     "name": "Loan Quynh Thi Nguyen"
+    },
+    {
+     "@type": "Person",
+     "name": "Andaleeb Rahman"
+    },
+    {
+     "@type": "Person",
+     "name": "Carson H. Rea"
+    },
+    {
+     "@type": "Person",
+     "name": "Adam Reiremo"
+    },
+    {
+     "@type": "Person",
+     "name": "Laetitia Renee"
+    },
+    {
+     "@type": "Person",
+     "name": "Joseph Richardson"
+    },
+    {
+     "@type": "Person",
+     "name": "Nicholas Rivers"
+    },
+    {
+     "@type": "Person",
+     "name": "Bruno Rodrigues"
+    },
+    {
+     "@type": "Person",
+     "name": "William Roelofs"
+    },
+    {
+     "@type": "Person",
+     "name": "Tobias Roemer"
+    },
+    {
+     "@type": "Person",
+     "name": "Ole Rogeberg"
+    },
+    {
+     "@type": "Person",
+     "name": "Julian Rose"
+    },
+    {
+     "@type": "Person",
+     "name": "Andrew Roskos-Ewoldsen"
+    },
+    {
+     "@type": "Person",
+     "name": "Paul Rosmer"
+    },
+    {
+     "@type": "Person",
+     "name": "Barbara Sabada"
+    },
+    {
+     "@type": "Person",
+     "name": "Soodeh Saberian"
+    },
+    {
+     "@type": "Person",
+     "name": "Nicolas Salamanca"
+    },
+    {
+     "@type": "Person",
+     "name": "Georg Sator"
+    },
+    {
+     "@type": "Person",
+     "name": "Daniel Scates"
+    },
+    {
+     "@type": "Person",
+     "name": "Elmar Schluter"
+    },
+    {
+     "@type": "Person",
+     "name": "Cameron Sells"
+    },
+    {
+     "@type": "Person",
+     "name": "Sharmi Sen"
+    },
+    {
+     "@type": "Person",
+     "name": "Ritika Sethi"
+    },
+    {
+     "@type": "Person",
+     "name": "Anna Shcherbiak"
+    },
+    {
+     "@type": "Person",
+     "name": "Moyosore Sogaolu"
+    },
+    {
+     "@type": "Person",
+     "name": "Matt Soosalu"
+    },
+    {
+     "@type": "Person",
+     "name": "Erik Ø. Sørensen"
+    },
+    {
+     "@type": "Person",
+     "name": "Manali Sovani"
+    },
+    {
+     "@type": "Person",
+     "name": "Noah Spencer"
+    },
+    {
+     "@type": "Person",
+     "name": "Stefan Staubli"
+    },
+    {
+     "@type": "Person",
+     "name": "Renske Stans"
+    },
+    {
+     "@type": "Person",
+     "name": "Anya Stewart"
+    },
+    {
+     "@type": "Person",
+     "name": "Felix Stips"
+    },
+    {
+     "@type": "Person",
+     "name": "Kieran Stockley"
+    },
+    {
+     "@type": "Person",
+     "name": "Stephenson Strobel"
+    },
+    {
+     "@type": "Person",
+     "name": "Ethan Struby"
+    },
+    {
+     "@type": "Person",
+     "name": "John P. Tang"
+    },
+    {
+     "@type": "Person",
+     "name": "Idil Tanrisever"
+    },
+    {
+     "@type": "Person",
+     "name": "Thomas Tao Yang"
+    },
+    {
+     "@type": "Person",
+     "name": "Ipek Tastan"
+    },
+    {
+     "@type": "Person",
+     "name": "Dejan Tatic"
+    },
+    {
+     "@type": "Person",
+     "name": "Benjamin Tatlow"
+    },
+    {
+     "@type": "Person",
+     "name": "Feraud Tchuisseu Seuyong"
+    },
+    {
+     "@type": "Person",
+     "name": "Remi Theriault"
+    },
+    {
+     "@type": "Person",
+     "name": "Vincent Thivierge"
+    },
+    {
+     "@type": "Person",
+     "name": "Wenjie Tian"
+    },
+    {
+     "@type": "Person",
+     "name": "Filip-Mihai Toma"
+    },
+    {
+     "@type": "Person",
+     "name": "Maddalena Totarelli"
+    },
+    {
+     "@type": "Person",
+     "name": "Van-Anh Tran"
+    },
+    {
+     "@type": "Person",
+     "name": "Hung Truong"
+    },
+    {
+     "@type": "Person",
+     "name": "Nikita Tsoy"
+    },
+    {
+     "@type": "Person",
+     "name": "Kerem Tuzcuoglu"
+    },
+    {
+     "@type": "Person",
+     "name": "Diego Ubfal"
+    },
+    {
+     "@type": "Person",
+     "name": "Laura Villalobos"
+    },
+    {
+     "@type": "Person",
+     "name": "Julian Walterskirchen"
+    },
+    {
+     "@type": "Person",
+     "name": "Joseph Tao-yi Wang"
+    },
+    {
+     "@type": "Person",
+     "name": "Vasudha Wattal"
+    },
+    {
+     "@type": "Person",
+     "name": "Matthew D. Webb"
+    },
+    {
+     "@type": "Person",
+     "name": "Bryan S. Weber"
+    },
+    {
+     "@type": "Person",
+     "name": "Reinhard Weisser"
+    },
+    {
+     "@type": "Person",
+     "name": "Wei-Chien Weng"
+    },
+    {
+     "@type": "Person",
+     "name": "Christian Westheide"
+    },
+    {
+     "@type": "Person",
+     "name": "Kimberly White"
+    },
+    {
+     "@type": "Person",
+     "name": "Jacob Winter"
+    },
+    {
+     "@type": "Person",
+     "name": "Timo Wochner"
+    },
+    {
+     "@type": "Person",
+     "name": "Matt Woerman"
+    },
+    {
+     "@type": "Person",
+     "name": "Jared Wong"
+    },
+    {
+     "@type": "Person",
+     "name": "Ritchie Woodard"
+    },
+    {
+     "@type": "Person",
+     "name": "Marcin Wronski"
+    },
+    {
+     "@type": "Person",
+     "name": "Myra Yazbeck"
+    },
+    {
+     "@type": "Person",
+     "name": "Gustav Chung Yang"
+    },
+    {
+     "@type": "Person",
+     "name": "Luther Yap"
+    },
+    {
+     "@type": "Person",
+     "name": "Kareman Yassin"
+    },
+    {
+     "@type": "Person",
+     "name": "Hao Ye"
+    },
+    {
+     "@type": "Person",
+     "name": "Jin Young Yoon"
+    },
+    {
+     "@type": "Person",
+     "name": "Chris Yurris"
+    },
+    {
+     "@type": "Person",
+     "name": "Tahreen Zahra"
+    },
+    {
+     "@type": "Person",
+     "name": "Mirela Zaneva"
+    },
+    {
+     "@type": "Person",
+     "name": "Aline Zayat"
+    },
+    {
+     "@type": "Person",
+     "name": "Jonathan Zhang"
+    },
+    {
+     "@type": "Person",
+     "name": "Ziwei Zhao"
+    },
+    {
+     "@type": "Person",
+     "name": "Yaolang Zhong"
+    }
+   ],
+   "citation": "Abel Brodeur, Derek Mikola, Nikolai Cook, and 344 others (2026), \"Reproducibility and robustness of economics and political science research.\" Nature 652(8108): 151-156.",
+   "keywords": "reproducibility, robustness, replication, research credibility, replication games, data and code sharing, publication bias, economics, political science"
+  }
+ ]
+}
+</script>
+<!-- seo-meta:end -->
+</head>
+<body>
+<div id="wrapper">
+<!-- start header -->
+<div id="logo">
+	<a class="masthead-home" href="/">meta-analysis.cz</a>
+	<h1><a href="reproducibility.pdf" class="title-link">Reproducibility and Robustness</a></h1>
+	<h2> <span class="mk">&raquo;</span>&nbsp;&nbsp;&nbsp; 110 articles reproduced by 347 researchers</h2>
+</div>
+<div id="header">
+	<div id="menu">
+		<ul>
+			<li class="current_page_item"><a href="reproducibility.pdf">Paper</a></li>
+			<li><a href="/reproducibility/paper/">Read it in full</a></li>
+			<li><a href="https://doi.org/10.1038/s41586-026-10251-x">Published version</a></li>
+			<li><a href="https://doi.org/10.5281/zenodo.17792605">Data and code</a></li>
+			<li><a href="https://i4replication.org/">Institute for Replication</a></li>
+		</ul>
+	</div>
+</div>
+<!-- end header -->
+</div>
+<!-- start page -->
+<div id="page">
+	<!-- start content -->
+	<div id="content">
+		<div class="post">
+			<h2 class="title">Abstract</h2>
+			<div class="entry">
+<abstract>
+This systematic and large-scale reproduction effort tests the reproducibility and robustness of economics and political science, contributing to a growing literature on research credibility and self-correction in science. We reproduced original analyses and conducted robustness checks of 110 articles recently published in leading economics and political science journals, all of which have mandatory data and code sharing policies. We found that over 85% of published claims were computationally reproducible. In robustness checks, our re-analyses led to 72% of statistically significant estimates to remain significant and in the same direction, and the median reproduced effect size is (nearly) the same as the originally published effect size (that is, 99% of the published effect size). Additionally, six independent research teams examined 12 pre-specified hypotheses about determinants of robustness. Research teams with more experience found lower levels of robustness, and robustness correlated with neither author characteristics nor data availability.
+</abstract>
+
+<figure><img src="reproducibility.png" alt="Robustness rates by type of re-analysis, for originally significant and originally insignificant estimates, in the full sample and in the economics and political science subsamples" width="968" height="570" /><figcaption>Fig: Robustness rates by type of re-analysis. Left panel, originally significant estimates; right panel, originally insignificant ones.</figcaption></figure>
+
+<p>Two of this site&#x27;s authors, Tomas Havranek and Zuzana Irsova, are among the 347. The
+full text on this site is the author&#x27;s accepted manuscript, which the London School of
+Economics deposited under a Creative Commons Attribution licence; it is the fullest version
+of the article that is openly available.</p>
+
+<p class="ref"><b>Reference:</b> Abel Brodeur, Derek Mikola, Nikolai Cook, and 344 others (2026), &quot;Reproducibility and robustness of economics and political science research.&quot; Nature 652(8108): 151-156. <a href="https://doi.org/10.1038/s41586-026-10251-x">doi.org/10.1038/s41586-026-10251-x</a></p>
+
+			</div>
+			<div class="meta">
+				<p class="links"><a href="/reproducibility/paper/" class="more">Read the paper</a> </p>
+			</div>
+<!-- paper-extras:start -->
+<div class="extras">
+<div class="extra" id="cite">
+<h3>How to cite</h3>
+<p class="ref">Abel Brodeur, Derek Mikola, Nikolai Cook, and 344 others (2026), &quot;Reproducibility and robustness of economics and political science research.&quot; Nature 652(8108): 151-156. <a href="https://doi.org/10.1038/s41586-026-10251-x">doi.org/10.1038/s41586-026-10251-x</a></p>
+<details><summary>BibTeX</summary>
+<pre>@article{brodeur2026reproducibility,
+  author  = {Abel Brodeur and Derek Mikola and Nikolai Cook and others},
+  title   = {Reproducibility and robustness of economics and political science research},
+  journal = {Nature},
+  volume  = {652},
+  number  = {8108},
+  pages   = {151--156},
+  year    = {2026},
+  doi     = {10.1038/s41586-026-10251-x},
+}</pre>
+</details>
+</div>
+</div>
+<!-- paper-extras:end -->
+		</div>
+	</div>
+	<!-- end content -->
+<div id="sidebar">
+<ul>
+<li id="search">
+<h2>Search</h2>
+<form method="get" action="/search/">
+<fieldset>
+<input type="text" id="s" name="q" value="" aria-label="Search meta-analysis.cz" />
+<input type="submit" id="x" value="Search" />
+</fieldset>
+</form>
+</li>
+</ul>
+</div>
+<!-- end sidebar -->
+<div style="clear: both;">&nbsp;</div>
+</div>
+<!-- end page -->
+<footer class="site-foot">
+<p class="foot-lede"><b>meta-analysis.cz</b> collects meta-analyses in economics: the papers, the
+data behind them, and the code that produced them. It is maintained by <a href="/about/"><b>Tomas Havranek</b> and
+<b>Zuzana Irsova</b></a> at the Institute of Economic Studies, Charles University, Prague.</p>
+<p class="foot-nav"><a href="/">All meta-analyses</a> &middot;
+<a href="/papers/">Papers in full</a> &middot;
+<a href="/results/">Headline results</a> &middot;
+<a href="/datasets/">Datasets and the pooled table</a> &middot;
+<a href="/maive/">MAIVE</a> &middot;
+<a href="/guidelines/">Practitioner&#x27;s guide</a> &middot;
+<a href="/notes/">Research notes</a> &middot;
+<a href="https://www.easymeta.org/">EasyMeta web app</a></p>
+<p class="foot-who"><b>Tomas Havranek</b> &middot; <a href="https://www.tomashavranek.cz/">tomashavranek.cz</a> &middot; <a href="https://ies.fsv.cuni.cz/en/contacts/institute-members/78067720">IES FSV UK</a> &middot; <a href="https://orcid.org/0000-0002-3158-2539">ORCID</a> &middot; <a href="https://scholar.google.com/citations?user=BF0BvBkAAAAJ">Google Scholar</a> &middot; <a href="https://ideas.repec.org/f/pha418.html">RePEc</a> &middot; <a href="https://www.scopus.com/authid/detail.uri?authorId=24453189000">Scopus</a> &middot; <a href="https://cepr.org/about/people/tomas-havranek">CEPR</a> &middot; <a href="https://metrics.stanford.edu/people/tomas-havranek">Stanford METRICS</a></p>
+<p class="foot-who"><b>Zuzana Irsova</b> &middot; <a href="https://www.irsova.com/">irsova.com</a> &middot; <a href="https://ies.fsv.cuni.cz/en/contacts/institute-members/73504033">IES FSV UK</a> &middot; <a href="https://orcid.org/0000-0002-0753-8124">ORCID</a> &middot; <a href="https://scholar.google.com/citations?user=LaHrICUAAAAJ">Google Scholar</a> &middot; <a href="https://ideas.repec.org/e/pir23.html">RePEc</a> &middot; <a href="https://www.scopus.com/authid/detail.uri?authorId=37080793200">Scopus</a> &middot; <a href="https://cepr.org/about/people/zuzana-irsova">CEPR</a> &middot; <a href="https://metrics.stanford.edu/people/zuzana-irsova">Stanford METRICS</a></p>
+<p class="foot-cite"><b>How to cite this collection:</b> Havranek, T. and Z. Irsova (2026).
+meta-analysis.cz: harmonised estimate-level data from meta-analyses in economics. Zenodo.
+<a href="https://doi.org/10.5281/zenodo.21773678">https://doi.org/10.5281/zenodo.21773678</a>.
+Individual papers carry their own citation on their own page.</p>
+<p class="foot-licence"><b>Licence: CC BY 4.0.</b> Everything on this site is licensed under the
+<a href="https://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0
+International Licence</a>. That covers the papers, the datasets, their CSV and Parquet conversions,
+the pooled table, the codebooks, and the documentation. You may copy, redistribute, adapt, and reuse
+any of it for any purpose, including commercial use and training machine-learning models, as long
+as you give attribution to meta-analysis.cz. You do not need to ask.</p>
+<p class="foot-machine">For machines: <a href="/api/v1/datasets.json">datasets.json</a> &middot;
+<a href="/api/v1/datapackage.json">datapackage.json</a> &middot;
+<a href="/api/v1/croissant.json">croissant.json</a> &middot;
+<a href="/llms.txt">llms.txt</a> &middot; <a href="/llms-full.txt">llms-full.txt</a> &middot;
+<a href="/sitemap.xml">sitemap.xml</a> &middot; <a href="/LICENSE">LICENSE</a></p>
+</footer>
+</body>
+</html>

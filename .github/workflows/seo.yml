@@ -118,6 +118,13 @@ jobs:
       - name: Verify the publication lists against a fresh build
         run: python tools/build_publications_page.py --check
 
+      # /papers/ is the site's index of the full-text editions, linked from every footer,
+      # and nothing was gating it: it goes one paper short the moment a paper is added, and
+      # the sentence describing which papers carry no headline result stays behind the list
+      # it describes. Both happened before this gate existed.
+      - name: Verify /papers/ against a fresh build
+        run: python tools/build_fulltext_page.py --check
+
       # The full-text corpus itself: figures, tables, fragment links, MathML, coverage.
       # This class of checker has caught real user-facing failures (a missing figure,
       # fragmented tables); it passes clean in about four minutes.

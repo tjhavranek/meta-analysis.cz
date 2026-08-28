@@ -44,16 +44,9 @@ PEOPLE = {
 }
 
 
-# A 347-author consortium paper would otherwise print a page of names.
-AUTHOR_CAP = 8
-
-
-def author_line(names):
-    # One name over the cap is not worth a truncation notice: "and 1 others" is not English,
-    # and printing the name is shorter than saying it was withheld.
-    if len(names) <= AUTHOR_CAP + 1:
-        return ", ".join(names)
-    return ", ".join(names[:AUTHOR_CAP]) + f", and {len(names) - AUTHOR_CAP} others"
+# One definition, in build_paper_page.py, so a paper's byline and its entry in these lists
+# abbreviate a long author list identically.
+from build_paper_page import AUTHOR_CAP, author_line  # noqa: E402,F401
 
 
 def citation(r):
@@ -162,7 +155,7 @@ def page(key, records, all_data):
 <meta http-equiv="content-type" content="text/html; charset=utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>Publications &#8212; {E(p['name'])}</title>
-<meta name="description" content="The complete journal publication record of {E(p['name'])}: {len(records)} articles, {n_full} of them with the full text on this site." />
+<meta name="description" content="The complete journal publication record of {E(p['name'])}: {len(records)} articles, {n_full} of them with the full text on this site as HTML." />
 <link href="/style.css" rel="stylesheet" type="text/css" />
 <link href="/paper.css" rel="stylesheet" type="text/css" />
 <!-- seo-meta:start -->
@@ -170,7 +163,7 @@ def page(key, records, all_data):
 <meta property="og:site_name" content="meta-analysis.cz" />
 <meta property="og:type" content="website" />
 <meta property="og:title" content="Publications &#8212; {E(p['name'])}" />
-<meta property="og:description" content="Every journal article by {E(p['name'])}: {len(records)} of them, {n_full} with the full text on this site." />
+<meta property="og:description" content="Every journal article by {E(p['name'])}: {len(records)} of them, {n_full} with the full text on this site as HTML." />
 <meta property="og:url" content="{BASE}/{p['slug']}/" />
 <script type="application/ld+json">
 {jsonld(p, records)}
@@ -204,7 +197,7 @@ def page(key, records, all_data):
 {tab}{tab}{tab}<div class="entry">
 <p>{E(p['blurb'])} {len(records)} journal articles by {E(p['name'])}
 (<a href="https://orcid.org/{p['orcid']}">ORCID {p['orcid']}</a>), {n_full} of them with
-the full text here. Working papers and preprints are not listed separately: where a paper has
+the full text here as HTML. Working papers and preprints are not listed separately: where a paper has
 been published, the published version is what appears. The other half of this site's work is
 <a href="/{other['slug']}/">{E(other['name'])}'s publication list</a>.</p>
 
@@ -304,7 +297,7 @@ def main():
         os.makedirs(os.path.dirname(out), exist_ok=True)
         open(out, "w", encoding="utf-8", newline="\n").write(body)
         wrote.append(f"{person['slug']}/index.html: {len(records)} articles, "
-                     f"{sum(1 for r in records if r['project'])} with full text here")
+                     f"{sum(1 for r in records if r['project'])} with full text here as HTML")
     print("\n".join(wrote) if wrote else "publications pages match a fresh build")
 
 

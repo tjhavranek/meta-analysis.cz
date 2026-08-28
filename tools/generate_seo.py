@@ -796,7 +796,23 @@ def main():
         ref = m.get("reference_line") or ""
         if not ref:
             continue
-        for full in (m.get("authors") or []):
+        # A consortium paper cites a few names and a count: reproducibility has 347 authors
+        # and its citation line ends "and 344 others". Demanding all 347 surnames there would
+        # demand a citation nobody writes, so where the line says how many it left out, only
+        # the ones it names are checked -- and those are still checked exactly. How many the
+        # line names is its own business and need not match how many the publication lists
+        # print; what matters is that the arithmetic adds up, so a count that would leave
+        # nothing to check is a broken citation line, and is reported rather than obeyed.
+        named = m.get("authors") or []
+        _left_out = re.search(r"\band (\d+) others\b", ref)
+        if _left_out:
+            _keep = len(named) - int(_left_out.group(1))
+            if _keep < 1:
+                WARNINGS.append(
+                    f"{proj}: reference_line leaves out {_left_out.group(1)} of the "
+                    f"{len(named)} authors, which would name none of them")
+            named = named[:max(0, _keep)]
+        for full in named:
             surname = full.split()[-1]
             if surname and surname not in ref:
                 WARNINGS.append(

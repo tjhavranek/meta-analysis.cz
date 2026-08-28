@@ -1181,8 +1181,13 @@ def build_page(project, meta, body, toc):
         menu="\n\t\t\t".join(menu),
         attribution="\n".join(attribution),
         h1=html.escape(title),
+        # Under the cap the byline reads as a sentence, with "and" before the last name.
+        # Over it the list is abbreviated the way the publication pages abbreviate it, and
+        # the page still carries every name: the paper's own author list is a section of it.
         byline=('<p class="byline">%s</p>' % html.escape(
-            ", ".join(authors[:-1]) + (" and " if len(authors) > 1 else "") + authors[-1])
+            ", ".join(authors[:-1]) + (" and " if len(authors) > 1 else "") + authors[-1]
+            if len(authors) <= BYLINE_TRIGGER
+            else author_line(authors, trigger=BYLINE_TRIGGER))
             if authors else ""),
         toc=toc_html,
         body=body,
@@ -1342,6 +1347,28 @@ def pdf_path(project, meta):
 # is why it keeps an entry -- the page lives at /maive/paper/, which the convention already
 # gives it, so no slug override is needed.
 HAND_BUILT = {"guidelines": "guidelines/guide", "reporting": "guidelines/reporting"}
+
+
+# A 347-author consortium paper would otherwise print a page of names -- reproducibility's
+# byline ran to 5,669 characters, a wall between the title and the abstract's first sentence.
+# How many names to keep and when to start dropping any are separate questions. In a dense
+# publication list, abbreviating at nine keeps the entry to a line. A paper's own byline is
+# the paper's byline: the same threshold cut Zuzana Irsova from conventional_wisdom's ten
+# authors and three names from the AI guidelines' thirteen, so there nothing is dropped until
+# the list is longer than any group of collaborators writes -- and then it drops to the same
+# eight names, because a consortium byline abbreviated is a consortium byline either way. A
+# paper's reference_line abbreviates on its own account and need not stop at eight: the
+# reproducibility citation names three and says "and 344 others".
+AUTHOR_CAP = 8
+BYLINE_TRIGGER = 30
+
+
+def author_line(names, cap=AUTHOR_CAP, trigger=None):
+    # One name over the cap is not worth a truncation notice: "and 1 others" is not English,
+    # and printing the name is shorter than saying it was withheld.
+    if len(names) <= (trigger if trigger is not None else cap + 1):
+        return ", ".join(names)
+    return ", ".join(names[:cap]) + ", and %d others" % (len(names) - cap)
 
 
 def page_href(project, meta):
