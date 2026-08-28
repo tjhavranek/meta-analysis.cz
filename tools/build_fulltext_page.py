@@ -104,12 +104,14 @@ def entry(year, title, project, href, meta):
     # of record, and two rows can carry the same journal and year: the JFS article and the
     # ECB working paper behind it are separate texts, both listed, and the citation on both
     # is the JFS one, so the journal line alone cannot tell them apart.
-    # "accepted manuscript" is the right name for the text and the wrong label for this
-    # column: next to a journal and a year it reads as the article's STATUS -- accepted,
-    # not yet out -- which is how the Nature reproduction came to look unpublished on a
-    # row whose whole point was that it is published. The other two labels cannot be read
-    # that way. This one names the text instead of the stage it was accepted at.
-    VERSION_LABEL = {"accepted_manuscript": "author's manuscript",
+    # "accepted manuscript" is a term of art -- after peer review, before the publisher's
+    # copy-editing -- and no vaguer phrase will do: "author's manuscript" would cover the
+    # submitted version and a preprint too, which is the distinction this site spends its
+    # version notes on. It was briefly replaced because next to a journal and a bare year
+    # it reads as the article's STATUS, and the Nature reproduction came to look
+    # forthcoming on a row whose point was that it is published. The volume and pages the
+    # row now carries are what settle that; the label can go back to being exact.
+    VERSION_LABEL = {"accepted_manuscript": "accepted manuscript",
                      "working_paper": "working paper",
                      "corrected_manuscript": "corrected manuscript"}
     _label = VERSION_LABEL.get(meta.get("version") or "")
