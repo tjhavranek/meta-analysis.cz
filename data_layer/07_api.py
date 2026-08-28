@@ -8,11 +8,12 @@ OUT=os.path.join(WORK,"out"); BASE="https://meta-analysis.cz"
 VERSION="1.0.0"; DATA_V="v1"
 # The DATA artefact's version, in ONE place. It was hardcoded in four, which is how a
 # consumer once saw the Croissant record say 1.0.0 while the table said 0.9.0-beta.
-DATA_VERSION="1.1.2"; DATA_STATUS="stable"
+DATA_VERSION="1.2.0"; DATA_STATUS="stable"
 # The VERSION DOI, set once Zenodo minted it. None until deposited -- publishing the
 # previous version's DOI beside a new version tells a citing reader the wrong thing.
-# NULL until 1.1.2 is deposited. 1.1.2 corrects n_obs on 4,614 rows -- armington was
-# publishing its per-study estimate count as the sample size and migrant likewise -- so the
+# NULL until 1.2.0 is deposited. Two changes since the 1.1.1 archive: n_obs corrected on
+# 4,614 rows -- armington was publishing its per-study estimate count as the sample size and
+# migrant likewise -- and cbequity added as the 46th dataset and 42nd pooled literature. So the
 # served table is no longer the one archived under 1.1.1's DOI, 10.5281/zenodo.22050272.
 # Carrying that DOI here would tell a citing reader the corrected table is the archived one.
 # Reserve a DOI on the Zenodo draft, put it here, then build the bundle: see ZENODO_DEPOSIT.md.
@@ -390,23 +391,6 @@ excluded += [
                          "standard error column and cannot join an estimate-level table. "
                          "The estimates themselves are the FDI spillovers literature, "
                          "pooled under 'spillovers'.")),
-  dict(id="cbequity",
-       reason="estimate-level and eligible, but not yet in a released version of the table",
-       # NOT "Does Central Bank Financial Strength Matter for Inflation?" -- that is
-       # Benecka, Holub, Kadlcakova and Kubicova (2012), a paper in THIS paper's own
-       # reference list. paper.title is the field attribution joins on.
-       paper=dict(title="Central Bank Equity as an Instrument of Monetary Policy",
-                  page_title="Central Bank Equity as an Instrument of Monetary Policy",
-                  url=f"{BASE}/cbequity/"),
-       excluded_because=("the one entry here that is NOT excluded on the merits. CBFS.xlsx is a "
-                         "proper estimate-level meta-analysis dataset -- 176 estimates from 9 "
-                         "studies, with idstudy, e, se and nobs, and e/se reproduces the file's "
-                         "own t on 100% of rows -- matching the paper's own '176 estimates from "
-                         "nine studies'. It is absent because the paper was added after the "
-                         "1.1.1 harmonised table was built and deposited. Pooling it changes the "
-                         "table, which means a data version and a new archived deposit, so it "
-                         "waits for the next release rather than being added under 1.1.1's DOI. "
-                         "Named here so the catalogue does not simply stay silent about it.")),
   dict(id="contagion",
        reason="primary market and balance-sheet data, not extracted estimates",
        paper=dict(title="The sources of contagion risk in a banking sector with foreign ownership",

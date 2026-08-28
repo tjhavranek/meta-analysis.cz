@@ -833,6 +833,53 @@
   "aux": false,
   "score": 13.254
  },
+ "cbequity": {
+  "project": "cbequity",
+  "source": "loose",
+  "archive": null,
+  "member": "CBFS.xlsx",
+  "ext": ".xlsx",
+  "rows": 176,
+  "ncols": 11,
+  "sheet": "data",
+  "columns": [
+   "id",
+   "idstudy",
+   "e",
+   "se",
+   "t",
+   "nobs",
+   "good",
+   "r",
+   "ser",
+   "precr",
+   "invperstudy"
+  ],
+  "bytes": 29243,
+  "roles": {
+   "study_id": [
+    "idstudy"
+   ],
+   "se": [
+    "se",
+    "ser"
+   ],
+   "t_stat": [
+    "t"
+   ],
+   "n_obs": [
+    "nobs"
+   ]
+  },
+  "se_cols": [
+   "se",
+   "ser"
+  ],
+  "effect": null,
+  "effect_how": null,
+  "aux": false,
+  "score": null
+ },
  "class": {
   "project": "class",
   "source": "loose",

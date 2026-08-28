@@ -1,27 +1,6 @@
----
-category: "english"
-media: "text"
-outlet: "Czech National Bank"
-url: "https://www.cnb.cz/export/sites/cnb/cs/menova-politika/.galleries/br_zapisy_z_jednani/2016/download/stanovisko_poradce_2016_02.pdf"
-date: "2016-03-29"
-headline: "Advisor's Opinion on Situation Report No. 2, 2016"
-mirror: "cnb-advisor-opinion-2sz-2016"
-released: "2023-01-30"
-byline: "Tomas Havranek"
-genre: "advisor_opinion"
-translated: "2026-08-27"
-translation: "cnb-stanovisko-poradce-2sz-2016"
-images: "cnb-2sz-2016-graf1.png | cnb-2sz-2016-graf2.png"
-image_alt: "Line chart of seasonally adjusted GDP growth from 2005q3 to 2015q3: actual Czech data against a synthetic control with a 95% confidence interval, a vertical line marking the introduction of the exchange rate commitment at the end of 2013. | Line chart of unemployment from 2005q3 to 2015q3: actual Czech data against a synthetic control with a 95% confidence interval, a vertical line marking the introduction of the exchange rate commitment at the end of 2013."
-image_figure: "1 | 2"
-body_note: "An English translation of the Czech original, which remains the record of what was written: [Stanovisko poradce k 2. situační zprávě 2016](/komentare/cnb-stanovisko-poradce-2sz-2016/). The document is the advisor's opinion in full; unlike the later years it carries no separate financial stability part. The text and the two charts are both taken from the [hosted PDF](/komentare/files/cnb-stanovisko-2sz-2016.pdf). Numbered footnotes are collected at the end."
----
-
-# Advisor's Opinion on Situation Report No. 2, 2016
+<p class="byline">Written for the Bank Board of the <a href="https://www.cnb.cz/export/sites/cnb/cs/menova-politika/.galleries/br_zapisy_z_jednani/2016/download/stanovisko_poradce_2016_02.pdf" rel="external">Czech National Bank</a>, 29 March 2016, and released by the Bank in January 2023. This is an English translation; the Czech original remains the record of what was written: <a href="https://meta-analysis.cz/komentare/cnb-stanovisko-poradce-2sz-2016/">/komentare/cnb-stanovisko-poradce-2sz-2016/</a>. Archived with the rest of our writing at <a href="https://meta-analysis.cz/komentare/cnb-advisor-opinion-2sz-2016/">/komentare/cnb-advisor-opinion-2sz-2016/</a>.</p>
 
 OPINION ON SITUATION REPORT NO. 2[1]
-
-##
 
 ## 1. Recommendation
 
@@ -35,21 +14,17 @@ In section 3 I discuss the international experience with the use of negative rat
 
 The second basic way of raising the probability of an exit in the middle of next year is, instead of easing monetary conditions, to introduce a supporting measure that would limit potential appreciation of the koruna after the exit: this I call the “Japanese scenario” of negative rates. It assumes that negative rates work mainly through the exchange rate channel. All existing reserves are exempt from negative remuneration; negative rates would apply only to new reserves (effectively to speculative capital from abroad). Such a measure would best be introduced at the latest half a year before the planned exit; I do not recommend introducing it simultaneously with the exit, because that would raise general uncertainty immediately after the commitment is abandoned. At the end of section 3 I also discuss how most of the legislative problems associated with a Japanese-type negative rate can be avoided. Since this would be a measure that does not much affect domestic entities, it would be appropriate to set the rate low enough to deter short-term speculators (at least enough to offset the interest rate differential against the euro area). In section 4 I take up the effective lower bound on rates for the Czech Republic, which in my view lies in the interval (−2%, −1%).
 
-##
-
 ## 2. Effects of the exchange rate commitment on the real economy
 
 The effect of the exchange rate commitment cannot be estimated by classical regression analysis, because for that we would need a larger number of central banks that had resorted to such a step in a similar situation. It is more sensible to compare developments before the start of the interventions and during them between the Czech Republic and countries that are otherwise similar to it (e.g. Slovakia). Such a qualitative approach, however, does not allow us to estimate the effect of the commitment exactly, nor does it give us any information about the precision of the estimate. A compromise between the two approaches is the synthetic control method, which has come into use in recent years in political science (e.g. Abadie et al., 2015: the economic costs of German reunification). The aim is to construct a hypothetical (counterfactual) path of the Czech economy in the absence of the exchange rate commitment. To that end, we first estimate what weighted average of variables and countries best captures the Czech Republic's economic development in the pre-intervention period. The difference between the actually observed development of the economy and the hypothetical path, based on the weighted average of developments in the economies of countries that did not apply an exchange rate commitment, represents the effect of the interventions. Jan Bruha already used this method in the opinion on Situation Report No. 8, 2015 to calculate the effect of the exchange rate commitment on inflation, which comes to about 2 percentage points. Here I focus on real variables and use data from the beginning of 2005 to the end of 2015.
 
 In Chart 1 we observe that the hypothetical path of GDP growth without the interventions (the dashed line) would have run below the actually observed value during the exchange rate commitment, with the gap widening over time. In 2014 the effect is not yet statistically significant, but for 2015 we can already rule out with 95% confidence that it is a random deviation.[2] The estimated contribution of the exchange rate commitment for 2015 reaches almost 2 percentage points. This effect will be overstated if the Czech Republic was drawing down its remaining European funds more intensively than the surrounding countries. On the other hand, it is apparent that in the period at the start of the interventions observed GDP growth is lower than would correspond to developments in the surrounding countries, perhaps because fiscal policy in the Czech Republic had previously been exceptionally restrictive, or because the country was already approaching a deflationary spiral (nominal wages stopped growing in 2013). In addition, the hypothetical GDP path is constructed mostly from the developments of euro area countries, whose economies were supported by the ECB's unconventional monetary policy. All of this may, on the contrary, understate the estimated effect of the exchange rate commitment.
 
-*Chart 1: The effect of the exchange rate commitment on GDP growth*
+<figure class="item-fig"><img src="/komentare/item-img/cnb-2sz-2016-graf1.png" alt="Line chart of seasonally adjusted GDP growth from 2005q3 to 2015q3: actual Czech data against a synthetic control with a 95% confidence interval, a vertical line marking the introduction of the exchange rate commitment at the end of 2013." loading="lazy" decoding="async" width="990" height="693"><figcaption>Chart 1: The effect of the exchange rate commitment on GDP growth</figcaption></figure>
 
-*Chart 2: The effect of the exchange rate commitment on unemployment*
+<figure class="item-fig"><img src="/komentare/item-img/cnb-2sz-2016-graf2.png" alt="Line chart of unemployment from 2005q3 to 2015q3: actual Czech data against a synthetic control with a 95% confidence interval, a vertical line marking the introduction of the exchange rate commitment at the end of 2013." loading="lazy" decoding="async" width="990" height="690"><figcaption>Chart 2: The effect of the exchange rate commitment on unemployment</figcaption></figure>
 
 The effect of the exchange rate commitment can be seen better in the general unemployment rate (Chart 2), which is less affected by one-off factors such as changes in excise taxes. Had the koruna not been weakened, unemployment would have fallen in 2014 and 2015, but much more gradually: at the end of last year the gap already reached almost two percentage points, or about 100 thousand jobs. In the pre-intervention period, meanwhile, hypothetical unemployment (the weighted average of the other countries) captures actual unemployment very well. We can therefore rule out that this is a random deviation. It is evident that, alongside its direct impact on import prices, the exchange rate commitment has a robust but delayed effect on the real economy, and through pressure for wage growth it thus gradually contributes to rising core inflation.
-
-##
 
 ## 3. Experience with negative rates
 
@@ -77,8 +52,6 @@ These scenarios thus differ in the percentage of reserves exempted from negative
 
 If the Japanese scenario is used, it is apparently possible to avoid the legislative problems associated with cutting the deposit and repo rates into negative territory. These rates would stay at technical zero, but each bank's access to both the deposit facility and repos would be capped, for example at the level of its average reserves over the past year (or possibly at some multiple of required minimum reserves, which are calculated for each bank anyway). Above this threshold, which could if needed rise over time in line with the growth of the economy, banks would have the option of placing excess reserves, for example, in their required minimum reserves account. These excess reserves would bear a new, negative rate, much like the “reserve rate” in Norway; this subvariant could thus be labeled “Norwegian”. For legislative reasons, however, a negative rate cannot be imposed on required minimum reserves themselves.
 
-##
-
 ## 4. The effective lower bound on rates
 
 The potential for using negative rates is limited by a bound beyond which market participants will find it more advantageous to hold their money balances in cash than in a bank account. This bound can be roughly calculated from the costs of storing, transporting, and insuring banknotes and also of the loss of convenience associated with cashless transactions. Estimates of the costs of storage and transport range from 0.2 to 1% (Jackson, 2015) and differ across countries mainly according to the highest banknote denomination available: a higher denomination makes it possible to store and transport a smaller physical volume of cash. The estimates at the lower edge of that interval belong to countries like Switzerland (the thousand-franc note) and Singapore (the thousand-dollar note is in frequent use; officially, a 10,000 Singapore dollar note is in circulation as well). The highest banknote denomination in the Czech Republic is five times lower in real terms than in Switzerland, but the Czech costs will not reach five times the Swiss value, since storing and transporting cash involves fixed costs (and there are many countries with a smaller maximum denomination). Lacking a better estimate, I will consider the midpoint of the interval mentioned above, that is, 0.6%. Insurance costs can be approximated by the cost of insuring gold, which comes to at least 0.25% a year and will not depend on banknote denomination (Witmer and Yang, 2015). If, in addition, the demand for cash grows quickly, the supply capacity for storage, transport, and insurance responds with a lag (supply is not fully elastic), so the prices of these services rise. Together this brings us to 1%.
@@ -90,8 +63,6 @@ The length of the period for which the economy is exposed to negative rates also
 In the discussion of the lower bound on rates so far, I have assumed that the central bank introduces no measures penalizing substitution from electronic money into cash. Such measures are easy to imagine, though, and we observe them in practice: for example the fee the Bank of Japan intends to charge banks for cumulative net cash withdrawals. This could in time lead to higher cash withdrawal fees for bank clients. However intuitive the measure seems, I believe it can cause a number of problems. In effect, an exchange rate is created between electronic money and cash, with cash the more expensive of the two because it is more costly to obtain. Many smaller shops in Japan currently accept only cash, and if the value of cash against electronic money rose above parity, the number of such shops could rise further. If a larger share of transactions is carried out in cash, the transmission of negative rates into the economy will be ineffective, and the whole measure may in addition generate extra deflationary pressure through the rising value of the paper currency, which would serve as the primary means of payment.
 
 Paradoxically, the solution may be the exact opposite approach, advocated in the articles Kimball (2015) and Agarwal and Kimball (2015): setting a fee for depositing cash at the central bank and a premium for withdrawing cash. The fee would be set so that, cumulatively over a year, it matches the current negative monetary policy rate. The value of cash would thereby fall relative to electronic money. In time, this measure would presumably have to be accompanied by a change in the definition of legal tender, which would newly be electronic money: much as with the abandonment of the gold standard long ago, this would now be a transition from the “paper standard” to an electronic one.[5] Shops should eventually have the option of setting different prices for payment in cash and by payment card, and they would no longer be obliged to accept cash. The advantage of such a solution is that it would allow the lower bound on rates to be removed without radical changes to the financial system (such as the abolition of cash; Buiter, 2015).
-
-##
 
 ## 5. Specific comments and questions on the Report
 
@@ -148,7 +119,6 @@ Paradoxically, the solution may be the exact opposite approach, advocated in the
 - Schmiedel, H., Kostova, G. and Ruttenberg, W., 2012: “The Social and Private Costs of Retail Payment Instruments: A European Perspective,” European Central Bank, Occasional Paper Series 137.
 
 - Witmer, J. and Yang, J., 2015: “Estimating Canada’s Effective Lower Bound,” Staff Analytical Note 2/2015, Bank of Canada.
-
 
 ## Notes
 

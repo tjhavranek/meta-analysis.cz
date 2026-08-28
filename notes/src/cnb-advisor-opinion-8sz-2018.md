@@ -1,23 +1,4 @@
----
-category: "english"
-media: "text"
-outlet: "Czech National Bank"
-url: "https://www.cnb.cz/export/sites/cnb/cs/menova-politika/.galleries/br_zapisy_z_jednani/2018/download/stanoviska_2018_08.pdf"
-date: "2018-12-19"
-headline: "Advisor's Opinion on Situation Report No. 8, 2018"
-mirror: "cnb-advisor-opinion-8sz-2018"
-released: "2025-01-31"
-byline: "Tomas Havranek"
-genre: "advisor_opinion"
-translated: "2026-08-27"
-translation: "cnb-stanovisko-poradce-8sz-2018"
-images: "cnb-8sz-2018-graf1.png | cnb-8sz-2018-graf2.png | cnb-8sz-2018-graf3.png | cnb-8sz-2018-graf4.png"
-image_alt: "Line chart from April 2017 to October 2018: the effective rate for consumption stays flat near 1.6 percent while the three-month PRIBOR rises from 0.3 to 1.75 percent. | Line chart of the CZK/EUR rate by Situation Report from the third of 2017 to the seventh of 2018: the observed rate lies above the forecast in six consecutive Situation Reports, the gap marked by an arrow. | Chart of the model response of consumption to a one percentage point increase in the policy rate over the following eighteen quarters, five curves for an elasticity of intertemporal substitution from 0.1 to 1.5; the higher the elasticity, the deeper and faster the fall in consumption. | Line chart from April 2017 to October 2018: the rate on savings falls from 0.36 to 0.33 percent on the left axis, and the rate on consumer loans from 9.3 to 8.4 percent on the right axis."
-image_figure: "1 | 2 | 3 | 4"
-body_note: "An English translation of the Czech original, which remains the record of what was written: [Stanovisko poradce k 8. situační zprávě 2018](/komentare/cnb-stanovisko-poradce-8sz-2018/). Part I, the advisor's opinion, is here in full. The original document also carries Part II, prepared by the Financial Stability Department, which is in the [hosted PDF](/komentare/files/cnb-stanoviska-8sz-2018.pdf) and in the document on the CNB site. Numbered footnotes are collected at the end."
----
-
-# Advisor's Opinion on Situation Report No. 8, 2018
+<p class="byline">Written for the Bank Board of the <a href="https://www.cnb.cz/export/sites/cnb/cs/menova-politika/.galleries/br_zapisy_z_jednani/2018/download/stanoviska_2018_08.pdf" rel="external">Czech National Bank</a>, 19 December 2018, and released by the Bank in January 2025. This is an English translation; the Czech original remains the record of what was written: <a href="https://meta-analysis.cz/komentare/cnb-stanovisko-poradce-8sz-2018/">/komentare/cnb-stanovisko-poradce-8sz-2018/</a>. Archived with the rest of our writing at <a href="https://meta-analysis.cz/komentare/cnb-advisor-opinion-8sz-2018/">/komentare/cnb-advisor-opinion-8sz-2018/</a>.</p>
 
 The opinion on the Situation Report on economic and monetary developments consists of two parts: (i) an assessment against the price stability objective, written, under his or her own name, by an advisor to a Bank Board member or, in exceptional cases, by a representative of the Financial Stability Department (Part I), and (ii) an assessment prepared by the Financial Stability Department, which brings in the financial stability objective as well (Part II).
 
@@ -29,7 +10,7 @@ Written by Tomas Havranek.[1]
 
 I will start this opinion unconventionally, with a chart:
 
-Chart 1. The model interest rate is rising fast, client rates for consumers are not
+<figure class="item-fig"><img src="/komentare/item-img/cnb-8sz-2018-graf1.png" alt="Line chart from April 2017 to October 2018: the effective rate for consumption stays flat near 1.6 percent while the three-month PRIBOR rises from 0.3 to 1.75 percent." loading="lazy" decoding="async" width="1084" height="623"><figcaption>Chart 1. The model interest rate is rising fast, client rates for consumers are not</figcaption></figure>
 
 The chart compares PRIBOR, to which our model consumer in g3 responds, with the effective client rate the average consumer actually faces (I explain the construction of the effective rate in section I.3). The model does not see client rates. If it saw how slowly they respond to changes in our repo rate, it would imply a faster increase in rates toward normal levels. Consumption makes up roughly half of aggregate demand, so without an increase in the effective interest rate on consumption, domestic inflationary pressures are not being damped as they should be. A further technical argument for continuing to raise rates is that the relationship between consumption and interest rates (even in effective terms) is apparently weaker than assumed by our model, and indeed by most other DSGE models. I also discuss this empirical relationship in more detail in section I.3.
 
@@ -43,7 +24,7 @@ Forecasting the exchange rate is hard (many econometrician colleagues would say 
 
 What we should want from a model, though, is that its errors not be systematic. Our g3 forecast errors for the exchange rate are systematic, as the following chart shows. In it I plot the forecast from each Situation Report for the following quarter and compare it with the actual average for that quarter (the actual exchange rate for the first quarter of 2019 is thus naturally missing from the chart):
 
-Chart 2. Our model systematically forecasts the koruna too strong against the euro in the following quarter
+<figure class="item-fig"><img src="/komentare/item-img/cnb-8sz-2018-graf2.png" alt="Line chart of the CZK/EUR rate by Situation Report from the third of 2017 to the seventh of 2018: the observed rate lies above the forecast in six consecutive Situation Reports, the gap marked by an arrow." loading="lazy" decoding="async" width="1043" height="640"><figcaption>Chart 2. Our model systematically forecasts the koruna too strong against the euro in the following quarter</figcaption></figure>
 
 In the chart I consider only the forecasts published after the end of the exchange rate commitment, all of which erred in the same direction, by half a koruna on average. The pre-exit forecasts, by contrast, assumed that the end of the commitment would come later than April 2017, and therefore had the exchange rate for the following quarter fixed at CZK 27 to the euro. Since the exit came earlier, those few forecasts briefly understated the koruna's strength, for technical reasons. But this has nothing to do with the model's performance, good or bad, as an exchange rate predictor, and it does not stand up as an argument for the symmetry of the model.
 
@@ -55,7 +36,7 @@ That room exists now as well. What matters for today's decision is that the fore
 
 Household consumption is the most important component of aggregate demand through which monetary policy affects inflation. In our g3 model, as in most DSGE models used in central banks (unlike some models with heterogeneous agents, e.g. Kaplan et al., 2018), monetary policy acts on consumption mainly through intertemporal substitution. Put simply: when real rates rise, consumers will want to save more and borrow less. The parameter that governs the relationship between rates and consumption in the model is the elasticity of intertemporal substitution. It is the crucial parameter, and it drives the main outputs of DSGE models:
 
-Chart 3. The elasticity of substitution (EIS) determines the model response of consumption to a change in rates
+<figure class="item-fig"><img src="/komentare/item-img/cnb-8sz-2018-graf3.png" alt="Chart of the model response of consumption to a one percentage point increase in the policy rate over the following eighteen quarters, five curves for an elasticity of intertemporal substitution from 0.1 to 1.5; the higher the elasticity, the deeper and faster the fall in consumption." loading="lazy" decoding="async" width="1067" height="623"><figcaption>Chart 3. The elasticity of substitution (EIS) determines the model response of consumption to a change in rates</figcaption></figure>
 
 The larger the elasticity, the larger and faster the response of consumption to rate changes. For technical reasons, the simulation in the chart above does not use the g3 model but the world's best-known DSGE model, Smets and Wouters (2007), which is built for a closed economy. The effect of the elasticity is presumably similar in our case, but this cannot be verified directly, because the g3 model uses a logarithmic utility function (in which the elasticity cannot be changed; it is fixed at 1). The simplification of assuming a logarithmic utility function is quite common around the world, much like the assumption of a Cobb-Douglas production function.
 
@@ -65,7 +46,7 @@ All in all, then, it seems unlikely that the elasticity of substitution for the 
 
 Another question about the model transmission is the definition of the word “rates”. Our model has the 3M PRIBOR in the consumption equation, but a consumer can neither borrow nor deposit anything at that rate. Households face client rates, to which they then respond directly through intertemporal substitution or, as Kaplan et al. (2018) stress, indirectly through changes in income. Unlike PRIBOR, however, client rates on total deposits and on consumer loans have been falling since the exit:
 
-Chart 4. The client rates most relevant for consumption have been falling since the exit
+<figure class="item-fig"><img src="/komentare/item-img/cnb-8sz-2018-graf4.png" alt="Line chart from April 2017 to October 2018: the rate on savings falls from 0.36 to 0.33 percent on the left axis, and the rate on consumer loans from 9.3 to 8.4 percent on the right axis." loading="lazy" decoding="async" width="1071" height="604"><figcaption>Chart 4. The client rates most relevant for consumption have been falling since the exit</figcaption></figure>
 
 Both indicators are close to their all-time lows. Should we also count mortgage interest among the rates relevant for consumption? Mortgage rates are rising, which may change the picture (though they are also rising on account of the tightening of macroprudential policy, not just monetary policy). I lean toward yes, since housing costs can in many cases be regarded as consumption, as Mojmir Hampl has repeatedly argued. The size of the mortgage payment affects household consumption behavior, as many of us observe from our own experience.
 

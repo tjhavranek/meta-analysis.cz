@@ -2,7 +2,7 @@
  "name": "meta-analysis.cz data API",
  "version": "1.0.0",
  "api_version": "1.0.0",
- "data_version": "1.1.2",
+ "data_version": "1.2.0",
  "version_note": "version and api_version describe this INTERFACE. data_version describes the harmonised table, and is what croissant.json reports. They move independently.",
  "description": "Estimate-level datasets from meta-analyses in economics and the social sciences, with the hand-coded study characteristics collected for each paper.",
  "license": {
@@ -18,7 +18,7 @@
  "doi_url": null,
  "concept_doi": "10.5281/zenodo.21773678",
  "concept_doi_url": "https://doi.org/10.5281/zenodo.21773678",
- "doi_note": "Cite the CONCEPT DOI: it always resolves to the newest archived version. This table, 1.1.2, is not yet deposited, so it has no version DOI and the newest deposit is the previous version. A replication package needing these exact files should cite the concept DOI and record the date.",
+ "doi_note": "Cite the CONCEPT DOI: it always resolves to the newest archived version. This table, 1.2.0, is not yet deposited, so it has no version DOI and the newest deposit is the previous version. A replication package needing these exact files should cite the concept DOI and record the date.",
  "endpoints": {
   "datasets": "https://meta-analysis.cz/api/v1/datasets.json",
   "codebook": "https://meta-analysis.cz/api/v1/codebooks/{id}.json",
@@ -29,19 +29,19 @@
   "headline_estimates": "https://meta-analysis.cz/estimates.csv"
  },
  "counts": {
-  "datasets": 45,
-  "rows_in_source_files": 66683,
-  "estimates_in_analysis_samples": 55274,
-  "estimates_in_harmonised_table": 49669,
-  "literatures_in_harmonised_table": 41,
-  "in_harmonised_table": 41,
-  "counts_explained": "rows_in_source_files counts every row of the 45 converted files. estimates_in_analysis_samples applies each paper's own filters and is what the catalogue table shows. estimates_in_harmonised_table additionally drops literatures that duplicate another exactly, overlap one already included, or lack per-estimate precision."
+  "datasets": 46,
+  "rows_in_source_files": 66859,
+  "estimates_in_analysis_samples": 55450,
+  "estimates_in_harmonised_table": 49845,
+  "literatures_in_harmonised_table": 42,
+  "in_harmonised_table": 42,
+  "counts_explained": "rows_in_source_files counts every row of the 46 converted files. estimates_in_analysis_samples applies each paper's own filters and is what the catalogue table shows. estimates_in_harmonised_table additionally drops literatures that duplicate another exactly, overlap one already included, or lack per-estimate precision."
  },
  "harmonised_table": {
-  "version": "1.1.2",
+  "version": "1.2.0",
   "status": "stable",
-  "n_rows": 49669,
-  "n_literatures": 41,
+  "n_rows": 49845,
+  "n_literatures": 42,
   "columns": [
    "dataset",
    "study_id",
@@ -144,16 +144,6 @@
     "url": "https://meta-analysis.cz/spillovers_bias/"
    },
    "excluded_because": "the second-stage data behind the paper: one row for each of the 56 studies, carrying its publication-bias measure and the characteristics used to explain it, so it has no effect or standard error column and cannot join an estimate-level table. The estimates themselves are the FDI spillovers literature, pooled under 'spillovers'."
-  },
-  {
-   "id": "cbequity",
-   "reason": "estimate-level and eligible, but not yet in a released version of the table",
-   "paper": {
-    "title": "Central Bank Equity as an Instrument of Monetary Policy",
-    "page_title": "Central Bank Equity as an Instrument of Monetary Policy",
-    "url": "https://meta-analysis.cz/cbequity/"
-   },
-   "excluded_because": "the one entry here that is NOT excluded on the merits. CBFS.xlsx is a proper estimate-level meta-analysis dataset -- 176 estimates from 9 studies, with idstudy, e, se and nobs, and e/se reproduces the file's own t on 100% of rows -- matching the paper's own '176 estimates from nine studies'. It is absent because the paper was added after the 1.1.1 harmonised table was built and deposited. Pooling it changes the table, which means a data version and a new archived deposit, so it waits for the next release rather than being added under 1.1.1's DOI. Named here so the catalogue does not simply stay silent about it."
   },
   {
    "id": "contagion",
@@ -515,6 +505,61 @@
    "rights_note": "CC BY 4.0. Free to use, adapt, and redistribute, including commercially and including as training data. The only condition is credit: cite the paper named in this entry.",
    "max_precision_weight_share": 0.0223,
    "audit_status": "code_traced"
+  },
+  {
+   "id": "cbequity",
+   "paper": {
+    "title": "Central Bank Equity as an Instrument of Monetary Policy",
+    "page_title": "Central Bank Equity as an Instrument of Monetary Policy",
+    "literature": "Central Bank Equity and Monetary Policy",
+    "authors": [
+     "Mojmir Hampl",
+     "Tomas Havranek"
+    ],
+    "year": 2020,
+    "journal": "Comparative Economic Studies",
+    "doi": "https://doi.org/10.1057/s41294-019-00092-1",
+    "url": "https://meta-analysis.cz/cbequity/"
+   },
+   "description": "Central bank equity as an unconventional policy tool, with a meta-analysis of 176 estimates finding that central bank financial strength has not historically correlated with inflation.",
+   "n_estimates": 176,
+   "n_variables": 11,
+   "n_estimates_in_literature": 176,
+   "source_file": "https://meta-analysis.cz/cbequity/CBFS.xlsx",
+   "source_member": null,
+   "source_sheet": "data",
+   "files": {
+    "parquet": "https://meta-analysis.cz/data/v1/cbequity/cbequity.parquet",
+    "csv": "https://meta-analysis.cz/data/v1/cbequity/cbequity.csv",
+    "codebook": "https://meta-analysis.cz/api/v1/codebooks/cbequity.json"
+   },
+   "core_columns": {
+    "effect": "r",
+    "standard_error": "ser",
+    "standard_error_note": null,
+    "evidence": "paper's replication code",
+    "sample_size": "nobs"
+   },
+   "effect_units": "partial correlation coefficient",
+   "direction_note": null,
+   "column_mapping_verified_by": "code.txt is the paper's replication code and it regresses ONLY the partial correlation: `reg r ser`, `xtreg r ser, fe`, the two weighted variants, and `ivreg2 r (ser=invsqrtnobs)`, with `sum r` and `mean r` for the descriptives. The raw pair e/se is what the primary studies reported and runs over different dependent variables, so it is not comparable across studies -- the same situation as remittances -- and the paper says so: 'We use the partial correlation coefficient'. The published numbers reproduce exactly from r: mean -0.1391 and median -0.1262 against the paper's -0.14 and -0.13, and on the comparable subset (good==1, 146 estimates) mean -0.1219 and median -0.1175 against its -0.12 for both. Internal checks corroborate the file: e/se reproduces its own t on 100% of the 176 rows, and precr equals 1/ser on 100%. 176 estimates from 9 studies, matching the paper's '176 estimates from nine studies'. n_obs=nobs: integral, no nulls, 31 to 813.",
+   "in_harmonised_table": true,
+   "reconciliation": {
+    "n_estimates_reported_in_paper": 176,
+    "n_rows_in_harmonised_table": 176,
+    "note": "matches the paper exactly"
+   },
+   "excluded_from_harmonised_because": null,
+   "duplicate_of": null,
+   "overlaps_with": null,
+   "same_literature_as": null,
+   "excluded_to_avoid_double_counting": false,
+   "shares_source_file_with": null,
+   "rights_status": "cc-by-4.0",
+   "license_url": "https://creativecommons.org/licenses/by/4.0/",
+   "rights_note": "CC BY 4.0. Free to use, adapt, and redistribute, including commercially and including as training data. The only condition is credit: cite the paper named in this entry.",
+   "max_precision_weight_share": 0.0126,
+   "audit_status": "domain_reviewed"
   },
   {
    "id": "class",

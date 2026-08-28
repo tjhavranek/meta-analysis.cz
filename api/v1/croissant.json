@@ -48,8 +48,8 @@
  "@type": "sc:Dataset",
  "conformsTo": "http://mlcommons.org/croissant/1.0",
  "name": "meta-analysis-cz",
- "version": "1.1.2",
- "description": "Estimate-level data from meta-analyses in economics and the social sciences. 45 datasets containing 66,683 converted source rows and 55,274 estimates in the papers' analysis samples, each with the hand-coded study and design characteristics collected for the original paper. LICENCE: everything here is CC BY 4.0, including the underlying research data. Free to use, adapt, and redistribute, including commercially and as training data for machine-learning models. Credit is the only condition: cite the collection and the paper whose dataset you used.",
+ "version": "1.2.0",
+ "description": "Estimate-level data from meta-analyses in economics and the social sciences. 46 datasets containing 66,859 converted source rows and 55,450 estimates in the papers' analysis samples, each with the hand-coded study and design characteristics collected for the original paper. LICENCE: everything here is CC BY 4.0, including the underlying research data. Free to use, adapt, and redistribute, including commercially and as training data for machine-learning models. Credit is the only condition: cite the collection and the paper whose dataset you used.",
  "url": "https://meta-analysis.cz",
  "license": "https://creativecommons.org/licenses/by/4.0/",
  "citeAs": "Havranek, T. and Z. Irsova (2026). meta-analysis.cz: harmonised estimate-level data from meta-analyses in economics. Zenodo. https://doi.org/10.5281/zenodo.21773678",
@@ -126,6 +126,15 @@
    "encodingFormat": "application/vnd.apache.parquet",
    "sha256": "e457c7359d967504540e0e3df542a8f72b22b767589419312f38f19601b429fb",
    "contentSize": "82429"
+  },
+  {
+   "@type": "cr:FileObject",
+   "@id": "cbequity.parquet",
+   "name": "cbequity.parquet",
+   "contentUrl": "https://meta-analysis.cz/data/v1/cbequity/cbequity.parquet",
+   "encodingFormat": "application/vnd.apache.parquet",
+   "sha256": "b8698356ff01ec34d1cd576c54f17e570d9e8c645fe2e2c6508dd7e2286e2ef0",
+   "contentSize": "16201"
   },
   {
    "@type": "cr:FileObject",
@@ -485,8 +494,8 @@
    "description": "DERIVED AGGREGATE VIEW of the per-dataset files above, reshaped to a common schema. Rows are not additional to them.",
    "contentUrl": "https://meta-analysis.cz/data/v1/estimates_harmonised.csv",
    "encodingFormat": "text/csv",
-   "sha256": "1ddd31edc25ca3e6e4385f36703aff2709cae4776c00532d27deab6de37cc7ec",
-   "contentSize": "11474703"
+   "sha256": "cdf79f7203fd8a7644346e2535d7622e22fe0aefa4938784ca3f6cc9eda03f8b",
+   "contentSize": "11506087"
   },
   {
    "@type": "cr:FileObject",
@@ -495,8 +504,8 @@
    "description": "The same derived aggregate view, as Parquet.",
    "contentUrl": "https://meta-analysis.cz/data/v1/estimates_harmonised.parquet",
    "encodingFormat": "application/vnd.apache.parquet",
-   "sha256": "396ad2e2874ff271d17d8566d6b7b39dc18da972f7284868b8f472626dc2f52f",
-   "contentSize": "1776792"
+   "sha256": "f56e80e02d503a66986a072e29fc0b491ab082bb452b2dacd530586b54ed9b8d",
+   "contentSize": "1776148"
   }
  ],
  "recordSet": [
@@ -8049,6 +8058,172 @@
       },
       "extract": {
        "column": "ruleoflaw"
+      }
+     }
+    }
+   ]
+  },
+  {
+   "@type": "cr:RecordSet",
+   "@id": "cbequity",
+   "name": "cbequity",
+   "description": "Central Bank Equity as an Instrument of Monetary Policy",
+   "isBasedOn": "https://doi.org/10.1057/s41294-019-00092-1",
+   "field": [
+    {
+     "@type": "cr:Field",
+     "@id": "cbequity/id",
+     "name": "id",
+     "dataType": "sc:Integer",
+     "source": {
+      "fileObject": {
+       "@id": "cbequity.parquet"
+      },
+      "extract": {
+       "column": "id"
+      }
+     }
+    },
+    {
+     "@type": "cr:Field",
+     "@id": "cbequity/idstudy",
+     "name": "idstudy",
+     "dataType": "sc:Integer",
+     "source": {
+      "fileObject": {
+       "@id": "cbequity.parquet"
+      },
+      "extract": {
+       "column": "idstudy"
+      }
+     }
+    },
+    {
+     "@type": "cr:Field",
+     "@id": "cbequity/e",
+     "name": "e",
+     "dataType": "sc:Float",
+     "source": {
+      "fileObject": {
+       "@id": "cbequity.parquet"
+      },
+      "extract": {
+       "column": "e"
+      }
+     }
+    },
+    {
+     "@type": "cr:Field",
+     "@id": "cbequity/se",
+     "name": "se",
+     "dataType": "sc:Float",
+     "source": {
+      "fileObject": {
+       "@id": "cbequity.parquet"
+      },
+      "extract": {
+       "column": "se"
+      }
+     }
+    },
+    {
+     "@type": "cr:Field",
+     "@id": "cbequity/t",
+     "name": "t",
+     "dataType": "sc:Float",
+     "source": {
+      "fileObject": {
+       "@id": "cbequity.parquet"
+      },
+      "extract": {
+       "column": "t"
+      }
+     }
+    },
+    {
+     "@type": "cr:Field",
+     "@id": "cbequity/nobs",
+     "name": "nobs",
+     "dataType": "sc:Integer",
+     "source": {
+      "fileObject": {
+       "@id": "cbequity.parquet"
+      },
+      "extract": {
+       "column": "nobs"
+      }
+     },
+     "description": "verified role: n_obs"
+    },
+    {
+     "@type": "cr:Field",
+     "@id": "cbequity/good",
+     "name": "good",
+     "dataType": "sc:Integer",
+     "source": {
+      "fileObject": {
+       "@id": "cbequity.parquet"
+      },
+      "extract": {
+       "column": "good"
+      }
+     }
+    },
+    {
+     "@type": "cr:Field",
+     "@id": "cbequity/r",
+     "name": "r",
+     "dataType": "sc:Float",
+     "source": {
+      "fileObject": {
+       "@id": "cbequity.parquet"
+      },
+      "extract": {
+       "column": "r"
+      }
+     },
+     "description": "verified role: effect_estimate"
+    },
+    {
+     "@type": "cr:Field",
+     "@id": "cbequity/ser",
+     "name": "ser",
+     "dataType": "sc:Float",
+     "source": {
+      "fileObject": {
+       "@id": "cbequity.parquet"
+      },
+      "extract": {
+       "column": "ser"
+      }
+     },
+     "description": "verified role: standard_error"
+    },
+    {
+     "@type": "cr:Field",
+     "@id": "cbequity/precr",
+     "name": "precr",
+     "dataType": "sc:Float",
+     "source": {
+      "fileObject": {
+       "@id": "cbequity.parquet"
+      },
+      "extract": {
+       "column": "precr"
+      }
+     }
+    },
+    {
+     "@type": "cr:Field",
+     "@id": "cbequity/invperstudy",
+     "name": "invperstudy",
+     "dataType": "sc:Integer",
+     "source": {
+      "fileObject": {
+       "@id": "cbequity.parquet"
+      },
+      "extract": {
+       "column": "invperstudy"
       }
      }
     }

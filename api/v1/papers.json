@@ -666,7 +666,13 @@
      "title": "ENDNOTES",
      "anchor": "sec-endnotes"
     }
-   ]
+   ],
+   "data": {
+    "parquet": "https://meta-analysis.cz/data/v1/cbequity/cbequity.parquet",
+    "csv": "https://meta-analysis.cz/data/v1/cbequity/cbequity.csv",
+    "codebook": "https://meta-analysis.cz/api/v1/codebooks/cbequity.json"
+   },
+   "codebook_url": "https://meta-analysis.cz/api/v1/codebooks/cbequity.json"
   },
   {
    "project": "class",

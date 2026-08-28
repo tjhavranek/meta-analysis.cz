@@ -1,9 +1,9 @@
 {
  "profile": "tabular-data-package",
  "name": "meta-analysis-cz",
- "version": "1.1.2",
+ "version": "1.2.0",
  "api_version": "1.0.0",
- "data_version": "1.1.2",
+ "data_version": "1.2.0",
  "title": "meta-analysis.cz estimate-level datasets",
  "licenses": [
   {
@@ -2319,6 +2319,79 @@
     {
      "title": "Do Borders Really Slash Trade? A Meta-Analysis",
      "path": "https://doi.org/10.1057/s41308-016-0001-5"
+    }
+   ],
+   "description": "Format conversion of the dataset published with this paper. CC BY 4.0; cite the paper."
+  },
+  {
+   "name": "cbequity",
+   "path": "https://meta-analysis.cz/data/v1/cbequity/cbequity.csv",
+   "format": "csv",
+   "profile": "tabular-data-resource",
+   "mediatype": "text/csv",
+   "schema": {
+    "fields": [
+     {
+      "name": "id",
+      "type": "number"
+     },
+     {
+      "name": "idstudy",
+      "type": "number"
+     },
+     {
+      "name": "e",
+      "type": "number"
+     },
+     {
+      "name": "se",
+      "type": "number"
+     },
+     {
+      "name": "t",
+      "type": "number"
+     },
+     {
+      "name": "nobs",
+      "type": "number",
+      "description": "n_obs"
+     },
+     {
+      "name": "good",
+      "type": "number"
+     },
+     {
+      "name": "r",
+      "type": "number",
+      "description": "effect_estimate"
+     },
+     {
+      "name": "ser",
+      "type": "number",
+      "description": "standard_error"
+     },
+     {
+      "name": "precr",
+      "type": "number"
+     },
+     {
+      "name": "invperstudy",
+      "type": "number"
+     }
+    ]
+   },
+   "title": "Central Bank Equity as an Instrument of Monetary Policy",
+   "licenses": [
+    {
+     "name": "CC-BY-4.0",
+     "path": "https://creativecommons.org/licenses/by/4.0/"
+    }
+   ],
+   "rights_status": "cc-by-4.0",
+   "sources": [
+    {
+     "title": "Central Bank Equity as an Instrument of Monetary Policy",
+     "path": "https://doi.org/10.1057/s41294-019-00092-1"
     }
    ],
    "description": "Format conversion of the dataset published with this paper. CC BY 4.0; cite the paper."

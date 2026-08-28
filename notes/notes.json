@@ -1,7 +1,7 @@
 {
  "notes_title": "Research notes",
  "notes_tagline": "methods, tools, and findings",
- "notes_description": "Research writing by Tomas Havranek and Zuzana Irsova, first published at MAER-Net, VoxEU, Springer Nature Research Communities and elsewhere, collected here with a link to each original.",
+ "notes_description": "Research writing by Tomas Havranek and Zuzana Irsova, first published at MAER-Net, VoxEU, Springer Nature Research Communities, the Czech National Bank and elsewhere, collected here with a link to each original.",
  "notes_keywords": [
   "economics",
   "research methods",
@@ -1227,6 +1227,161 @@
     {
      "label": "VoxEU / CEPR",
      "url": "https://cepr.org/voxeu/columns/headline-inflation-measures-shouldnt-ignore-costs-home-ownership"
+    }
+   ]
+  },
+  {
+   "slug": "cnb-advisor-opinion-2sz-2016",
+   "title": "Advisor's opinion to the CNB Bank Board: Situation Report No. 2, 2016",
+   "date": "2016-03-29",
+   "summary": "A synthetic control built from countries that ran no exchange rate commitment puts its contribution to Czech GDP growth at almost 2 percentage points in 2015, and its effect on unemployment at a gap of nearly 2 points, about 100 thousand jobs. The opinion then works through the experience of the seven central banks then using negative rates and where the effective lower bound actually lies. Written for the Bank Board in March 2016, released by the Bank in 2023.",
+   "topics": [
+    "monetary policy",
+    "economics"
+   ],
+   "keywords": [
+    "exchange rate commitment",
+    "synthetic control",
+    "negative interest rates",
+    "effective lower bound",
+    "monetary policy",
+    "Czech National Bank"
+   ],
+   "authors": [
+    {
+     "name": "Tomas Havranek",
+     "orcid": "https://orcid.org/0000-0002-3158-2539"
+    }
+   ],
+   "links": [
+    {
+     "label": "Original document (Czech National Bank)",
+     "url": "https://www.cnb.cz/export/sites/cnb/cs/menova-politika/.galleries/br_zapisy_z_jednani/2016/download/stanovisko_poradce_2016_02.pdf"
+    },
+    {
+     "label": "Original document (PDF)",
+     "url": "https://meta-analysis.cz/komentare/files/cnb-stanovisko-2sz-2016.pdf"
+    },
+    {
+     "label": "Czech original",
+     "url": "https://meta-analysis.cz/komentare/cnb-stanovisko-poradce-2sz-2016/"
+    }
+   ]
+  },
+  {
+   "slug": "cnb-advisor-opinion-6sz-2016",
+   "title": "Advisor's opinion to the CNB Bank Board: Situation Report No. 6, 2016",
+   "date": "2016-09-26",
+   "summary": "Shadow rate estimates put the effective stance of Czech policy near minus 8 percent and the ECB's near minus 7, far below either published rate. The opinion reads the interest rate differential and the koruna forward curve for what the market expected of the exit from the exchange rate commitment. Written for the Bank Board in September 2016, released by the Bank in 2023.",
+   "topics": [
+    "monetary policy",
+    "economics"
+   ],
+   "keywords": [
+    "shadow rate",
+    "exchange rate commitment",
+    "negative interest rates",
+    "interest rate differential",
+    "forward exchange rates",
+    "monetary policy",
+    "Czech National Bank"
+   ],
+   "authors": [
+    {
+     "name": "Tomas Havranek",
+     "orcid": "https://orcid.org/0000-0002-3158-2539"
+    }
+   ],
+   "links": [
+    {
+     "label": "Original document (Czech National Bank)",
+     "url": "https://www.cnb.cz/export/sites/cnb/cs/menova-politika/.galleries/br_zapisy_z_jednani/2016/download/stanovisko_poradce_2016_06.pdf"
+    },
+    {
+     "label": "Original document (PDF)",
+     "url": "https://meta-analysis.cz/komentare/files/cnb-stanovisko-6sz-2016.pdf"
+    },
+    {
+     "label": "Czech original",
+     "url": "https://meta-analysis.cz/komentare/cnb-stanovisko-poradce-6sz-2016/"
+    }
+   ]
+  },
+  {
+   "slug": "cnb-advisor-opinion-6sz-2017",
+   "title": "Advisor's opinion to the CNB Bank Board: Situation Report No. 6, 2017",
+   "date": "2017-09-25",
+   "summary": "Recessions have needed about 5.5 percentage points of easing on average, so raising rates at every other meeting would not rebuild that cushion until 2023. The opinion argues for a steeper path while conditions are favorable, then sets out what is left when the cushion runs out: forward guidance, direct support of consumption, a bonus for cash withdrawals, and what each would mean for the inflation target. Written for the Bank Board in September 2017, released by the Bank in 2024.",
+   "topics": [
+    "monetary policy",
+    "economics"
+   ],
+   "keywords": [
+    "interest rates",
+    "effective lower bound",
+    "recession",
+    "forward guidance",
+    "helicopter money",
+    "monetary policy",
+    "Czech National Bank"
+   ],
+   "authors": [
+    {
+     "name": "Tomas Havranek",
+     "orcid": "https://orcid.org/0000-0002-3158-2539"
+    }
+   ],
+   "links": [
+    {
+     "label": "Original document (Czech National Bank)",
+     "url": "https://www.cnb.cz/export/sites/cnb/cs/menova-politika/.galleries/br_zapisy_z_jednani/2017/download/stanoviska_2017_06.pdf"
+    },
+    {
+     "label": "Original document (PDF)",
+     "url": "https://meta-analysis.cz/komentare/files/cnb-stanoviska-6sz-2017.pdf"
+    },
+    {
+     "label": "Czech original",
+     "url": "https://meta-analysis.cz/komentare/cnb-stanovisko-poradce-6sz-2017/"
+    }
+   ]
+  },
+  {
+   "slug": "cnb-advisor-opinion-8sz-2018",
+   "title": "Advisor's opinion to the CNB Bank Board: Situation Report No. 8, 2018",
+   "date": "2018-12-19",
+   "summary": "Rate increases were not reaching households: the effective rate on consumption stayed flat near 1.6 percent while the three-month PRIBOR rose from 0.3 to 1.75. The thematic comment traces the gap to a low elasticity of intertemporal substitution, and notes that the koruna came in weaker than forecast in six consecutive Situation Reports. Written for the Bank Board in December 2018, released by the Bank in 2025.",
+   "topics": [
+    "monetary policy",
+    "economics"
+   ],
+   "keywords": [
+    "monetary transmission",
+    "elasticity of intertemporal substitution",
+    "interest rates",
+    "exchange rate forecast",
+    "PRIBOR",
+    "monetary policy",
+    "Czech National Bank"
+   ],
+   "authors": [
+    {
+     "name": "Tomas Havranek",
+     "orcid": "https://orcid.org/0000-0002-3158-2539"
+    }
+   ],
+   "links": [
+    {
+     "label": "Original document (Czech National Bank)",
+     "url": "https://www.cnb.cz/export/sites/cnb/cs/menova-politika/.galleries/br_zapisy_z_jednani/2018/download/stanoviska_2018_08.pdf"
+    },
+    {
+     "label": "Original document (PDF)",
+     "url": "https://meta-analysis.cz/komentare/files/cnb-stanoviska-8sz-2018.pdf"
+    },
+    {
+     "label": "Czech original",
+     "url": "https://meta-analysis.cz/komentare/cnb-stanovisko-poradce-8sz-2018/"
     }
    ]
   }

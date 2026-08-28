@@ -1,6 +1,6 @@
 {
- "n_rows": 49669,
- "n_datasets": 41,
+ "n_rows": 49845,
+ "n_datasets": 42,
  "columns": [
   "dataset",
   "study_id",
@@ -122,6 +122,19 @@
    "direction_note": "Raw coefficient on the border dummy in a log-linear gravity model; the paper's headline reduction is a transform of it, not the raw value.",
    "n_studies": 61,
    "moderators": 12
+  },
+  "cbequity": {
+   "included": true,
+   "n": 176,
+   "effect": "r",
+   "se": "ser",
+   "se_is_derived": false,
+   "n_obs_col": null,
+   "n_obs_from_log": false,
+   "units": null,
+   "direction_note": null,
+   "n_studies": 9,
+   "moderators": 3
   },
   "class": {
    "included": true,

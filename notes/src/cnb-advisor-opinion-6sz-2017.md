@@ -1,20 +1,4 @@
----
-category: "english"
-media: "text"
-outlet: "Czech National Bank"
-url: "https://www.cnb.cz/export/sites/cnb/cs/menova-politika/.galleries/br_zapisy_z_jednani/2017/download/stanoviska_2017_06.pdf"
-date: "2017-09-25"
-headline: "Advisor's Opinion on Situation Report No. 6, 2017"
-mirror: "cnb-advisor-opinion-6sz-2017"
-released: "2024-01-31"
-byline: "Tomas Havranek"
-genre: "advisor_opinion"
-translated: "2026-08-27"
-translation: "cnb-stanovisko-poradce-6sz-2017"
-body_note: "An English translation of the Czech original, which remains the record of what was written: [Stanovisko poradce k 6. situační zprávě 2017](/komentare/cnb-stanovisko-poradce-6sz-2017/). The advisor's opinion is here in full. The original document also carries an opinion from the CNB's independent Financial Stability Division, which is in the [hosted PDF](/komentare/files/cnb-stanoviska-6sz-2017.pdf) and in the document on the CNB site. Numbered footnotes are collected at the end."
----
-
-# Advisor's Opinion on Situation Report No. 6, 2017
+<p class="byline">Written for the Bank Board of the <a href="https://www.cnb.cz/export/sites/cnb/cs/menova-politika/.galleries/br_zapisy_z_jednani/2017/download/stanoviska_2017_06.pdf" rel="external">Czech National Bank</a>, 25 September 2017, and released by the Bank in January 2024. This is an English translation; the Czech original remains the record of what was written: <a href="https://meta-analysis.cz/komentare/cnb-stanovisko-poradce-6sz-2017/">/komentare/cnb-stanovisko-poradce-6sz-2017/</a>. Archived with the rest of our writing at <a href="https://meta-analysis.cz/komentare/cnb-advisor-opinion-6sz-2017/">/komentare/cnb-advisor-opinion-6sz-2017/</a>.</p>
 
 OPINION ON SITUATION REPORT NO. 6[1]
 

@@ -68,19 +68,22 @@ curl -s https://meta-analysis.cz/api/v1/datasets.json | jq '.datasets[] | {id, n
 
 ## The harmonised table
 
-One row per harmonised **observation**, pooled across literatures: **49,669 rows
-from 41 literatures**. Rows are not always independent estimates — `price_puzzle`
+One row per harmonised **observation**, pooled across literatures: **49,845 rows
+from 42 literatures**. Rows are not always independent estimates — `price_puzzle`
 carries one row per impulse response per horizon (the five month horizons plus
 the trough, coded 99, and the peak, coded 88), and `house_prices` ships about
 seven horizons per impulse response. Check `horizon` before treating rows as
-independent. Version **1.1.2**.
+independent. Version **1.2.0**.
 
 1.1.0 added `finance_growth`, taking the table to 41 literatures, and 1.1.1
 removed 20 `price_puzzle` rows that corresponded to no source estimate, leaving
-49,669. 1.1.2 changes no row count: it corrects `n_obs` on 4,614 rows, where
+49,669. 1.2.0 does two things. It corrects `n_obs` on 4,614 rows, where
 `armington` and `migrant` were publishing the number of ESTIMATES a study
-reports as its sample size. `armington` now carries the paper's own data-size
-variable and `migrant`, which ships no sample size at all, carries none.
+reports as its sample size: `armington` now carries the paper's own data-size
+variable and `migrant`, which ships no sample size at all, carries none. And it
+adds `cbequity` — 176 partial correlations from 9 studies on whether central
+bank financial strength matters for inflation — taking the table to 42
+literatures and 49,845 rows.
 
 Core columns are present for every row: `dataset`, `study_id`, `estimate_id`,
 `effect`, `se`, `t_stat`, `precision`. The rest are harmonised moderators, and
@@ -122,12 +125,12 @@ the archived deposit:
 
 > **https://doi.org/10.5281/zenodo.21773678** — cite this. It always resolves to the newest version.
 >
-> **Version 1.1.2, the table served here, is not yet deposited and so has no version DOI.**
+> **Version 1.2.0, the table served here, is not yet deposited and so has no version DOI.**
 > A replication package needing these exact files should cite the concept DOI above and
 > record the date it was fetched.
 >
 > `https://doi.org/10.5281/zenodo.22050272` is version 1.1.1, the newest deposit. It differs
-> from what is served here: 1.1.2 corrects `n_obs` on 4,614 rows.
+> from what is served here: 1.2.0 corrects `n_obs` on 4,614 rows and adds `cbequity`.
 >
 > `https://doi.org/10.5281/zenodo.21789702` is version 1.0.0, superseded by 1.1.1, which
 > removes 20 `price_puzzle` rows that corresponded to no source estimate.
@@ -178,10 +181,10 @@ which is what the underlying papers do. As a worked check, FAT-PET run on the
 `education` corrects to about 0.02 and `excess_sensitivity` to about 0.01, both
 of which their papers describe as near zero, and `forward` corrects to 0.92
 against a null of 1. On the same winsorised data, with standard errors clustered
-by study, the FAT publication-bias intercept lies beyond ±1.96 in 24 of the 41
+by study, the FAT publication-bias intercept lies beyond ±1.96 in 25 of the 42
 literatures.
 
-**All 41 pooled literatures are verified** — 21 `domain_reviewed`, 20 `code_traced`. Where a
+**All 42 pooled literatures are verified** — 22 `domain_reviewed`, 20 `code_traced`. Where a
 paper ships no replication code, the mapping was checked against its published results by
 hand: `gasoline_price`'s abstract reports corrected elasticities of -0.31 long-run and -0.09
 short-run with published averages "exaggerated twofold", and the shipped data gives -0.691 and

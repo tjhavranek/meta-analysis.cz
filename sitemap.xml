@@ -7,7 +7,7 @@
   <url><loc>https://meta-analysis.cz/beauty/</loc><lastmod>2026-08-28</lastmod></url>
   <url><loc>https://meta-analysis.cz/bma/</loc><lastmod>2026-08-28</lastmod></url>
   <url><loc>https://meta-analysis.cz/border/</loc><lastmod>2026-08-28</lastmod></url>
-  <url><loc>https://meta-analysis.cz/cbequity/</loc><lastmod>2026-08-27</lastmod></url>
+  <url><loc>https://meta-analysis.cz/cbequity/</loc><lastmod>2026-08-28</lastmod></url>
   <url><loc>https://meta-analysis.cz/class/</loc><lastmod>2026-08-28</lastmod></url>
   <url><loc>https://meta-analysis.cz/climate/</loc><lastmod>2026-08-28</lastmod></url>
   <url><loc>https://meta-analysis.cz/competition/</loc><lastmod>2026-08-28</lastmod></url>
@@ -272,17 +272,13 @@
   <url><loc>https://meta-analysis.cz/trust/trust.pdf</loc><lastmod>2026-08-11</lastmod></url>
   <url><loc>https://meta-analysis.cz/water/appendix.pdf</loc><lastmod>2026-06-25</lastmod></url>
   <url><loc>https://meta-analysis.cz/water/water2.pdf</loc><lastmod>2026-06-25</lastmod></url>
-  <url><loc>https://meta-analysis.cz/about/</loc><lastmod>2026-08-27</lastmod></url>
+  <url><loc>https://meta-analysis.cz/about/</loc><lastmod>2026-08-28</lastmod></url>
   <url><loc>https://meta-analysis.cz/datasets/</loc><lastmod>2026-08-28</lastmod></url>
   <url><loc>https://meta-analysis.cz/komentare/</loc><lastmod>2026-08-28</lastmod></url>
   <url><loc>https://meta-analysis.cz/komentare/babis-stamiliardy-cnb-nezavislost/</loc><lastmod>2026-08-25</lastmod></url>
   <url><loc>https://meta-analysis.cz/komentare/celostatni/</loc><lastmod>2026-08-28</lastmod></url>
   <url><loc>https://meta-analysis.cz/komentare/cesko-skvela-teorie-slaba-praxe/</loc><lastmod>2026-08-25</lastmod></url>
   <url><loc>https://meta-analysis.cz/komentare/cesky-dluh-nikdy-neklesal-rychleji-co/</loc><lastmod>2026-08-25</lastmod></url>
-  <url><loc>https://meta-analysis.cz/komentare/cnb-advisor-opinion-2sz-2016/</loc><lastmod>2026-08-28</lastmod></url>
-  <url><loc>https://meta-analysis.cz/komentare/cnb-advisor-opinion-6sz-2016/</loc><lastmod>2026-08-27</lastmod></url>
-  <url><loc>https://meta-analysis.cz/komentare/cnb-advisor-opinion-6sz-2017/</loc><lastmod>2026-08-27</lastmod></url>
-  <url><loc>https://meta-analysis.cz/komentare/cnb-advisor-opinion-8sz-2018/</loc><lastmod>2026-08-27</lastmod></url>
   <url><loc>https://meta-analysis.cz/komentare/cnb-cobb-douglas/</loc><lastmod>2026-08-28</lastmod></url>
   <url><loc>https://meta-analysis.cz/komentare/cnb-financni-gramotnost-sprava-aktiv/</loc><lastmod>2026-08-25</lastmod></url>
   <url><loc>https://meta-analysis.cz/komentare/cnb-konecne-ukazala-odvahu-muze-pomoci/</loc><lastmod>2026-08-25</lastmod></url>
@@ -487,12 +483,16 @@
   <url><loc>https://meta-analysis.cz/komentare/zmizi-inflace-sama-od-sebe/</loc><lastmod>2026-08-25</lastmod></url>
   <url><loc>https://meta-analysis.cz/komentare/zruseni-eet-pretrelo-ekonomiku/</loc><lastmod>2026-08-25</lastmod></url>
   <url><loc>https://meta-analysis.cz/komentare/zvyseni-uroku-cenovou-stabilitu-nezajisti/</loc><lastmod>2026-08-25</lastmod></url>
-  <url><loc>https://meta-analysis.cz/notes/</loc><lastmod>2026-08-25</lastmod></url>
+  <url><loc>https://meta-analysis.cz/notes/</loc><lastmod>2026-08-28</lastmod></url>
   <url><loc>https://meta-analysis.cz/notes/a-panel-of-experts-for-your-paper/</loc><lastmod>2026-08-25</lastmod></url>
   <url><loc>https://meta-analysis.cz/notes/a-tool-for-your-erc-proposal/</loc><lastmod>2026-08-25</lastmod></url>
   <url><loc>https://meta-analysis.cz/notes/brodeur-team-reproducibility-numbers/</loc><lastmod>2026-08-25</lastmod></url>
   <url><loc>https://meta-analysis.cz/notes/browser-tool-for-publication-bias/</loc><lastmod>2026-08-25</lastmod></url>
   <url><loc>https://meta-analysis.cz/notes/claude-code-with-codex-stress-test/</loc><lastmod>2026-08-25</lastmod></url>
+  <url><loc>https://meta-analysis.cz/notes/cnb-advisor-opinion-2sz-2016/</loc><lastmod>2026-08-28</lastmod></url>
+  <url><loc>https://meta-analysis.cz/notes/cnb-advisor-opinion-6sz-2016/</loc><lastmod>2026-08-28</lastmod></url>
+  <url><loc>https://meta-analysis.cz/notes/cnb-advisor-opinion-6sz-2017/</loc><lastmod>2026-08-28</lastmod></url>
+  <url><loc>https://meta-analysis.cz/notes/cnb-advisor-opinion-8sz-2018/</loc><lastmod>2026-08-28</lastmod></url>
   <url><loc>https://meta-analysis.cz/notes/correcting-for-p-hacking-too/</loc><lastmod>2026-08-25</lastmod></url>
   <url><loc>https://meta-analysis.cz/notes/do-outlier-decisions-matter/</loc><lastmod>2026-08-25</lastmod></url>
   <url><loc>https://meta-analysis.cz/notes/financial-incentives-performance/</loc><lastmod>2026-08-25</lastmod></url>
@@ -542,6 +542,7 @@
   <url><loc>https://meta-analysis.cz/api/v1/codebooks/beauty.json</loc><lastmod>2026-08-03</lastmod></url>
   <url><loc>https://meta-analysis.cz/api/v1/codebooks/bma.json</loc><lastmod>2026-08-03</lastmod></url>
   <url><loc>https://meta-analysis.cz/api/v1/codebooks/border.json</loc><lastmod>2026-08-03</lastmod></url>
+  <url><loc>https://meta-analysis.cz/api/v1/codebooks/cbequity.json</loc><lastmod>2026-08-28</lastmod></url>
   <url><loc>https://meta-analysis.cz/api/v1/codebooks/class.json</loc><lastmod>2026-08-03</lastmod></url>
   <url><loc>https://meta-analysis.cz/api/v1/codebooks/climate.json</loc><lastmod>2026-08-03</lastmod></url>
   <url><loc>https://meta-analysis.cz/api/v1/codebooks/competition.json</loc><lastmod>2026-08-03</lastmod></url>

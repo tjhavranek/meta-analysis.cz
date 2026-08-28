@@ -60,6 +60,16 @@
   "sheet": null
  },
  {
+  "project": "cbequity",
+  "status": "ok",
+  "rows": 176,
+  "cols": 11,
+  "parquet_bytes": 16201,
+  "csv_bytes": 18763,
+  "source": "CBFS.xlsx",
+  "sheet": "data"
+ },
+ {
   "project": "class",
   "status": "ok",
   "rows": 2906,
