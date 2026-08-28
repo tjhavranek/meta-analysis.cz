@@ -19,7 +19,7 @@ People reveal useful information about their needs, wants, interests, and concer
 
 Several studies have focused on search data to assess their relationship with current consumer behavior for prediction purposes (Askitas and Zimmermann, 2009; Hong, 2011; Choi and Varian, 2012, among others). For example, Choi and Varian (2012) examine internet searches to evaluate the nowcasting potential of Google Trends using different economic indicators, such as unemployment claims, automobile sales, tourist journeys, and consumer confidence. The authors claim that Google Trends might not be informative for future predictions; nevertheless, they find that it is a useful tool for "predicting the present".
 
-Several studies have suggested that Google trends data are a valuable economic indicator. Researchers have emphasized that Google Trends has strong potential for assessing unemployment rate changes in Germany (Askitas and Zimmermann, 2009), France (Fondeur and Karame, 2013), Visegrad countries (Pavlicek and Kristoufek, 2015), the UK (Smith, 2016) and the US (D'Amuri and Marcucci, 2017). Goel et al. (2010) examine, among other things, the relationship between the use of search engines and real estate sales, as well as disease prevalence. Other researchers have tested whether the Google Trends Automotive Index can improve predictions of car sales in Chile (Carriere-Swallow and Labbe, 2013) and in Germany (Fantazzini and Toktamysova, 2015), have developed forecasts of the real oil price using Google search results (Fantazzini and Fomichev, 2014), have stressed that Google Flu Trends data can follow the path of an outbreak using United States data from 2003 to 2009 (Dukic et al., 2012). Dergiades et al. (2018) proposed corrections in terms of language bias and the platform bias of search engines to improve the predictive power of forecasting. The authors conclude that an adjusted search engine index related to different languages and different sources increases forecasting performance compared to the non-adjusted index.
+Several studies have suggested that Google trends data are a valuable economic indicator. Researchers have emphasized that Google Trends has strong potential for assessing unemployment rate changes in Germany (Askitas and Zimmermann, 2009), France (Fondeur and Karamé, 2013), Visegrad countries (Pavlicek and Kristoufek, 2015), the UK (Smith, 2016) and the US (D'Amuri and Marcucci, 2017). Goel et al. (2010) examine, among other things, the relationship between the use of search engines and real estate sales, as well as disease prevalence. Other researchers have tested whether the Google Trends Automotive Index can improve predictions of car sales in Chile (Carriere-Swallow and Labbe, 2013) and in Germany (Fantazzini and Toktamysova, 2015), have developed forecasts of the real oil price using Google search results (Fantazzini and Fomichev, 2014), have stressed that Google Flu Trends data can follow the path of an outbreak using United States data from 2003 to 2009 (Dukic et al., 2012). Dergiades et al. (2018) proposed corrections in terms of language bias and the platform bias of search engines to improve the predictive power of forecasting. The authors conclude that an adjusted search engine index related to different languages and different sources increases forecasting performance compared to the non-adjusted index.
 
 This study is an attempt to evaluate the nexus between Google Trends and tourist arrivals in Prague during the period 2010-2016. Predicting tourist arrivals and overnight stays can not only play a pivot role in the business market and for policy makers but also assist with the development of the methodology used in the literature on tourism. The main objective of this paper is to identify whether Google Trends has value added in predicting tourist demand while making the following contributions to the field: First, the paper is focused on a possible connection between internet searching and tourist arrivals in real time. Google Trends has potential for the business market to define nowcasting tourist activities and to avoid months of waiting to obtain information on tourist arrivals from the state statistics department. Second, this paper provides a step-by-step procedure for tourist forecast modeling while avoiding same-frequency modeling. Mixed-data sampling (MIDAS) enables us to estimate models that explain a low-frequency variable by means of high-frequency variables and their lags.
 
@@ -30,11 +30,11 @@ Tourism forecasting has been the focus of many studies. Researchers have analyze
 
 The usefulness of Google Trends data to predict tourism has also been examined previously. Bangwayo-Skeete and Skeete (2015) suggest that Google search volume provides advantages for tourism demand forecasting for Caribbean destinations. Researchers have argued that Google Trends, as a concurrent indicator, could promote more precise forecasting in Switzerland (Siliverstovs and Wochner, 2017) and that a strong correlation exists between hotel visitors and Google search queries in Puerto Rico (Rivera, 2016). Park et al. (2017) focus on short-term forecasting of tourist outflows from South Korea to Japan. They claim that Google Trends data not only improve the precision of tourism demand forecasting but also that the out-of-sample forecasting performance outperforms in-sample forecasting with Google Trends.
 
-Prague is one of the most popular destinations on the European continent, with more than 6 million foreign visitors annually, accounting for up to 15 million overnight stays. Tourism makes a major contribution to Prague's economic development: tourism accounts for 9% of GDP and provides employment for approximately 17% of the working population in the service sector.^{1} Therefore, accurate forecasts of tourism volume play a major role in tourism planning, as forecasts enable destinations to predict infrastructure development needs.
+Prague is one of the most popular destinations on the European continent, with more than 6 million foreign visitors annually, accounting for up to 15 million overnight stays. Tourism makes a major contribution to Prague's economic development: tourism accounts for 9% of GDP and provides employment for approximately 17% of the working population in the service sector^{1}. Therefore, accurate forecasts of tourism volume play a major role in tourism planning, as forecasts enable destinations to predict infrastructure development needs.
 
 Google Trends provides free, vast and almost real-time information but has some disadvantages. First, Google shows only absolute data, providing an index that is relative to all searches. Second, internet users might type similar words when searching for different topics or different words when searching for the same topic. Third, web search queries are related to personal characteristics, such as education, income, and age. Clearly, data from Google searches are imperfect; however, because Google Trends provides one of the best real-time information databases, it has the potential to act as a leading indicator.
 
-The MIDAS method proposed by Ghysels et al. (2006) was further developed by Andreou et al. (2010), who introduced a new decomposition for MIDAS regression. Empirical studies in the MIDAS literature have analyzed the dynamics of microstructure noise and volatility (Ghysels et al., 2007), GDP growth forecasting (Ghysels and Wright, 2009; Andreou et al., 2012), nowcasting and quarterly GDP growth forecasting in the euro area (Kuzin et al., 2011), and stock market volatility and macroeconomic activity (Engle et al., 2013; Girardin and Joyeux, 2013). Gotz et al. (2014) developed an alternative mixed-frequency error-correction model for non-stationary variables sampled at different frequencies that are possibly co-integrated. Co-integrated MIDAS has been also introduced by Miller (2016) focusing on efficient estimation of the co-integrating vector of model with a low-frequency and high-frequency series. MIDAS is a method for estimating and forecasting the impact of high-frequency variable(s) on low-frequency dependent variables that can avoid the traditional requirement that variables have the same frequency. MIDAS uses a distributed lag of polynomials to ensure parsimonious specifications for handling series sampled at different frequencies.
+The MIDAS method proposed by Ghysels et al. (2006) was further developed by Andreou et al. (2010), who introduced a new decomposition for MIDAS regression. Empirical studies in the MIDAS literature have analyzed the dynamics of microstructure noise and volatility (Ghysels et al., 2007), GDP growth forecasting (Ghysels and Wright, 2009; Andreou et al., 2012), nowcasting and quarterly GDP growth forecasting in the euro area (Kuzin et al., 2011), and stock market volatility and macroeconomic activity (Engle et al., 2013; Girardin and Joyeux, 2013). Götz et al. (2014) developed an alternative mixed-frequency error-correction model for non-stationary variables sampled at different frequencies that are possibly co-integrated. Co-integrated MIDAS has been also introduced by Miller (2016) focusing on efficient estimation of the co-integrating vector of model with a low-frequency and high-frequency series. MIDAS is a method for estimating and forecasting the impact of high-frequency variable(s) on low-frequency dependent variables that can avoid the traditional requirement that variables have the same frequency. MIDAS uses a distributed lag of polynomials to ensure parsimonious specifications for handling series sampled at different frequencies.
 
 This paper analyzes the eligibility of Google search data for forecasting tourist arrivals and overnight stays in Prague and reports whether weekly Google Trends data can potentially improve forecasting performance when used with MIDAS regression. First, the study investigates whether Google Trends offers significant forecasting improvements. Second, it assesses whether a higher-frequency explanatory variable leads to more accurate forecasting by comparing weekly and monthly Google Trends data using MIDAS regression.
 
@@ -43,7 +43,7 @@ This paper analyzes the eligibility of Google search data for forecasting touris
 ### 3.1 | Methodology
 This study considers how to obtain better forecasts of tourist arrivals and overnight stays by using MIDAS and aims to detect whether Google search queries can provide insight into tourism prediction for Prague tourist arrivals and overnight stays. Forecasting methodology begins with choosing a baseline model with meaningful predictive power. Then, the baseline model is run both with and without Google data to analyze whether Google can improve tourist arrival forecasting.
 
-The MIDAS methodology was proposed by Ghysels et al. (2007) and developed by Andreou et al. (2010). Andreou et al. (2010) introduce a new decomposition of the conditional mean into two different parts: an aggregated term based on equal or flat weights and a nonlinear term, which involves weighted, higher-order differences of a high-frequency process. Gotz et al. (2014) and Miller (2016) developed mixed-frequency error-correction model. MIDAS was used to study tourism data by Bangwayo-Skeete and Skeete (2015), who emphasized that Google Trends information on tourists offers substantial benefits to forecasters: MIDAS outperformed other methods using a dataset containing monthly tourist arrivals from the US, Canada and the UK to five destinations in the Caribbean.
+The MIDAS methodology was proposed by Ghysels et al. (2007) and developed by Andreou et al. (2010). Andreou et al. (2010) introduce a new decomposition of the conditional mean into two different parts: an aggregated term based on equal or flat weights and a nonlinear term, which involves weighted, higher-order differences of a high-frequency process. Götz et al. (2014) and Miller (2016) developed mixed-frequency error-correction model. MIDAS was used to study tourism data by Bangwayo-Skeete and Skeete (2015), who emphasized that Google Trends information on tourists offers substantial benefits to forecasters: MIDAS outperformed other methods using a dataset containing monthly tourist arrivals from the US, Canada and the UK to five destinations in the Caribbean.
 
 The methodology in this study follows Ghysels et al. (2007) and Andreou et al. (2010) and has been organized specifically for this study:
 
@@ -53,7 +53,7 @@ for $t = 1, ..., T$, where the function $B(k;\theta)$ is a polynomial specificat
 
 The parameterization of the weighting function is one of the main contributions of MIDAS regression. Ghysels et al. (2007) propose two different parameterizations. The first is
 
-$$ B(k;\theta) = \frac{e^{\theta_1 k + ... + \theta_Q k^Q}}{\sum_{k=1}^{w} e^{\theta_1 k + ... + \theta_Q k^Q}} $$ (2)
+$$ B(k;\theta) = \frac{\epsilon^{\theta_1 k + ... + \theta_Q k^Q}}{\sum_{k=1}^{w} \epsilon^{\theta_1 k + ... + \theta_Q k^Q}} $$ (2)
 
 which suggests an exponential Almon specification (Almon, 1965). Ghysels et al. (2006) uses functional form (2) with two parameters ($\theta = [\theta_1; \theta_2]$). The specification gives equal weights when $\theta_1 = \theta_2 = 0$; otherwise, the weights can decline rapidly or slowly with the number of lags. The rate of decline determined by the number of lags is included in the model. The exponential function of weight can produce hump shapes, and a decreasing weight is guaranteed as long as $\theta_2 \leq 0$.
 
@@ -67,7 +67,7 @@ $$ f(i, \theta_1; \theta_2) = i^{\theta_1 - 1}(1-i)^{(\theta_2 - 1)} \frac{\Gamm
 
 $\theta_1$ and $\theta_2$ are hyperparameters governing the shape of the weighting function, and
 
-$$ \Gamma(\theta_p) = \int_0^{\infty} e^{-i} i^{\theta_p - 1} di $$ (5)
+$$ \Gamma(\theta_p) = \int_0^{\infty} \epsilon^{-i} i^{\theta_p - 1} di $$ (5)
 
 is the standard gamma function. The Beta specification also gives equal weights when $\theta_1 = \theta_2 = 0$. The rate of weight decline determines how the lags are included in the model, as in the Almon case. The weight slowly declines while $\theta_1 = 1$ and $\theta_2 > 1$. As $\theta_2$ increases, the weight declines rapidly.
 
@@ -322,7 +322,7 @@ TABLE A1. MIDAS models estimates in tourism inbound from Germany to Prague
 |---|---|---|---|---|---|
 | | Beta coeff | Almon coeff | Step coeff | ARIMA | ARIMA |
 | DTOURIST(-1) | -0.151 | -0.216 | -0.117 | -0.161 | -0.167 |
-|  | (0.129) | (0.131) | (0.131) | ( 0.144)                (0.132) |
+|  | (0.129) | (0.131) | (0.131) | ( 0.144) | (0.132) |
 | DTOURIST(-2) | 0.342** | 0.350** | 0.324** | 0.405*** | 0.453*** |
 |  | (0.124) | (0.133) | (0.125) | (0.135) | (0.122) |
 | DTOURIST(-3) | 0.137 | 0.127 | 0.108 | 0.155 | 0.180 |
@@ -344,7 +344,6 @@ TABLE A1. MIDAS models estimates in tourism inbound from Germany to Prague
 | CONSTANT | -5.164 | -5.363 | -4.257 | -4.142 | 2.988 |
 |  | (4.172) | (4.02) | (4.177) | (4.395) | (1.215) |
 | Overnight Stays |
-| | Beta coeff | Almon coeff | Step coeff | ARIMA | ARIMA |
 | DTOURIST(-1) | -0.082 | -0.134 | -0.182 | -0.125 | -0.117 |
 |  | (0.140) | (0.121) | (0.136) | (0.138) | (0.129) |
 | DTOURIST(-2) | 0.386*** | 0.396*** | 0.488*** | 0.454*** | 0.500*** |
@@ -396,9 +395,7 @@ TABLE A2. MIDAS models estimates of tourism inbound from Russia to Prague
 |  |  |  |  | (183.975) |  |
 | CONSTANT | -2.368*** | -1.440*** | -2.251*** | -2.019*** | 0.873 |
 |  | (0.631) | (0.528) | (0.611) | (0.483) | (0.711) |
-|  | Weekly Google Search | | | Monthly Google | Without Google |
 | Overnight Stays |
-| | Beta coeff | Almon coeff | Step coeff | ARIMA | ARIMA |
 | DLTOURIST(-1) | 0.466*** | 0.485*** | 0.495*** | 0.392*** | 0.623*** |
 |  | (0.138) | ( 0.135) | (0.134) | (0.129) | (0.132) |
 | DLTOURIST(-2) | 0.168 | 0.166 | 0.062 | 0.168 | 0.230 |
@@ -450,9 +447,7 @@ TABLE A3. MIDAS models estimates of tourism inbound from UK to Prague
 |  |  |  |  | (35.955) |  |
 | CONSTANT | -2.714 | -2.009 | -2.296 | -2.714 | 1.469*** |
 |  | (2.275) | (1.827) | (2.284) | (1.971) | (0.436) |
-|  | Weekly Google Search | | | Monthly Google | Without Google |
 | Overnight Stays |
-| | Beta coeff | Almon coeff | Step coeff | ARIMA | ARIMA |
 | DLTOURIST(-1) | 0.336** | 0.306** | 0.332** | 0.319** | 0.347*** |
 |  | (0.137) | (0.137) | (0.134) | (0.132) | (0.130) |
 | DLTOURIST(-2) | 0.166 | 0.151 | 0.158 | 0.144 | 0.186 |
