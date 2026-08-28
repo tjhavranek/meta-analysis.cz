@@ -1,10 +1,10 @@
 {
  "name": "meta-analysis.cz papers",
- "description": "One record per full-text document on meta-analysis.cz: 68 papers plus the MAIVE supplement, each with its full text, PDF and section map. Fetch this first and one page after, rather than the whole corpus.",
+ "description": "One record per full-text document on meta-analysis.cz: 70 papers plus the MAIVE supplement, each with its full text, PDF and section map. Fetch this first and one page after, rather than the whole corpus.",
  "license": "https://creativecommons.org/licenses/by/4.0/",
  "full_corpus": "https://meta-analysis.cz/llms-full.txt",
- "count": 69,
- "paper_count": 68,
+ "count": 71,
+ "paper_count": 70,
  "supplement_count": 1,
  "papers": [
   {
@@ -4785,6 +4785,99 @@
    "headline_url": "https://meta-analysis.cz/results/#outliers"
   },
   {
+   "project": "passthrough",
+   "document_type": "paper",
+   "version": "working_paper",
+   "version_note": "It is Czech National Bank Working Paper 9/2015, the openly available version; the version of record is behind the publisher's paywall. The working paper carries a Czech abstract and a nontechnical summary, which the journal article does not, its title page prints \"Pass-Trough\" for \"Pass-Through\", and its typesetting drops the accents from several names in the reference list, which are reproduced as printed.",
+   "published_as": null,
+   "title": "Bank efficiency and interest rate pass-through: Evidence from Czech loan products",
+   "authors": [
+    "Tomas Havranek",
+    "Zuzana Irsova",
+    "Jitka Lesanovska"
+   ],
+   "year": 2015,
+   "technical_report": {
+    "institution": "Czech National Bank Working Paper Series",
+    "number": "9/2015",
+    "year": 2015
+   },
+   "journal": "Economic Modelling",
+   "doi": "https://doi.org/10.1016/j.econmod.2016.01.004",
+   "publisher_url": null,
+   "full_text_url": "https://meta-analysis.cz/passthrough/paper/",
+   "project_url": "https://meta-analysis.cz/passthrough/",
+   "pdf_url": "https://meta-analysis.cz/passthrough/passthrough.pdf",
+   "abstract": "An important component of monetary policy transmission is the pass-through from financial market interest rates, directly influenced or targeted by central banks, to the rates that banks charge firms and households. Yet the available evidence on the strength and speed of the pass-through is mixed and varies across countries, time periods, and even individual banks. We examine the pass-through mechanism using a unique data set of Czech loan and deposit products and focus on bank-level determinants of pricing policies, especially cost efficiency, which we estimate employing both stochastic frontier and data envelopment analysis. Our main results are threefold: First, the long-term pass-through was close to complete for most products before the financial crisis, but has weakened considerably afterward. Second, banks that provide high rates for deposits usually charge high loan markups. Third, cost-efficient banks tend to delay responses to changes in the market rate, smoothing loan rates for their clients.",
+   "sections": [
+    {
+     "level": 2,
+     "title": "Abstrakt",
+     "anchor": "sec-abstrakt"
+    },
+    {
+     "level": 2,
+     "title": "Nontechnical Summary",
+     "anchor": "sec-nontechnical-summary"
+    },
+    {
+     "level": 2,
+     "title": "1. Introduction",
+     "anchor": "sec-1"
+    },
+    {
+     "level": 2,
+     "title": "2. Related Literature",
+     "anchor": "sec-2"
+    },
+    {
+     "level": 2,
+     "title": "3. Data",
+     "anchor": "sec-3"
+    },
+    {
+     "level": 2,
+     "title": "4. Pass-Through Estimation",
+     "anchor": "sec-4"
+    },
+    {
+     "level": 2,
+     "title": "5. Cost Efficiency",
+     "anchor": "sec-5"
+    },
+    {
+     "level": 2,
+     "title": "6. Determinants of Pricing Policies",
+     "anchor": "sec-6"
+    },
+    {
+     "level": 2,
+     "title": "7. Concluding Remarks",
+     "anchor": "sec-7"
+    },
+    {
+     "level": 2,
+     "title": "REFERENCES",
+     "anchor": "sec-references"
+    },
+    {
+     "level": 2,
+     "title": "Appendix A: Robustness Checks",
+     "anchor": "sec-appendix-a-robustness-checks"
+    },
+    {
+     "level": 2,
+     "title": "Appendix B: Details of Efficiency Analysis",
+     "anchor": "sec-appendix-b-details-of-efficiency-analysis"
+    },
+    {
+     "level": 2,
+     "title": "ENDNOTES",
+     "anchor": "sec-endnotes"
+    }
+   ]
+  },
+  {
    "project": "pcc",
    "document_type": "paper",
    "version": "record",
@@ -7068,6 +7161,109 @@
      "level": 2,
      "title": "REFERENCES",
      "anchor": "sec-references"
+    },
+    {
+     "level": 2,
+     "title": "ENDNOTES",
+     "anchor": "sec-endnotes"
+    }
+   ]
+  },
+  {
+   "project": "transmission",
+   "document_type": "paper",
+   "version": "working_paper",
+   "version_note": "It is Czech National Bank Working Paper 6/2010, the openly available version, published two years later under a different title; the version of record is behind the publisher's paywall. The working paper carries a nontechnical summary, which the journal article does not. Its cross-references to the impulse-response figures are one behind the figures themselves -- the text that says \"Figure 1\" points at Figure 2, and so on -- and are reproduced as printed. The appendix charts, which the working paper prints unnumbered, are numbered A1 to A6 here so the page can refer to them.",
+   "published_as": null,
+   "title": "Do Financial Variables Help Predict Macroeconomic Environment? The Case of the Czech Republic",
+   "authors": [
+    "Tomas Havranek",
+    "Roman Horvath",
+    "Jakub Mateju"
+   ],
+   "year": 2010,
+   "technical_report": {
+    "institution": "Czech National Bank Working Paper Series",
+    "number": "6/2010",
+    "year": 2010
+   },
+   "journal": "Economic Change and Restructuring",
+   "doi": "https://doi.org/10.1007/s10644-011-9106-z",
+   "publisher_url": null,
+   "full_text_url": "https://meta-analysis.cz/transmission/paper/",
+   "project_url": "https://meta-analysis.cz/transmission/",
+   "pdf_url": "https://meta-analysis.cz/transmission/transmission.pdf",
+   "abstract": "In this paper, we 1) examine the interactions of financial variables and the macroeconomy within the block-restriction vector autoregression model and 2) evaluate to what extent the financial variables improve the forecasts of GDP growth and inflation. For this reason, various financial variables are examined, including those unexplored in previous literature, such as the share of liquid assets in the banking industry and the loan loss provision rate. Our results suggest that financial variables have a systematic and statistically significant effect on macroeconomic fluctuations. In terms of forecast evaluation, financial variables in general seem to improve the forecast of macroeconomic variables, but the predictive performance of individual financial variables varies over time, in particular during the 2008-2009 crisis.",
+   "sections": [
+    {
+     "level": 2,
+     "title": "Nontechnical Summary",
+     "anchor": "sec-nontechnical-summary"
+    },
+    {
+     "level": 2,
+     "title": "1. Introduction",
+     "anchor": "sec-1"
+    },
+    {
+     "level": 2,
+     "title": "2. Related Literature",
+     "anchor": "sec-2"
+    },
+    {
+     "level": 2,
+     "title": "3. Estimation Methodology and Data",
+     "anchor": "sec-3"
+    },
+    {
+     "level": 3,
+     "title": "Data",
+     "anchor": "sec-data"
+    },
+    {
+     "level": 3,
+     "title": "Financial Series Description",
+     "anchor": "sec-financial-series-description"
+    },
+    {
+     "level": 2,
+     "title": "4. Results",
+     "anchor": "sec-4"
+    },
+    {
+     "level": 3,
+     "title": "4.1. Estimation of Block-Restriction VAR Models: Impulse Response Analysis",
+     "anchor": "sec-4-1"
+    },
+    {
+     "level": 3,
+     "title": "4.2. Comparison of Forecasting Performance",
+     "anchor": "sec-4-2"
+    },
+    {
+     "level": 2,
+     "title": "5. Concluding Remarks",
+     "anchor": "sec-5"
+    },
+    {
+     "level": 2,
+     "title": "REFERENCES",
+     "anchor": "sec-references"
+    },
+    {
+     "level": 2,
+     "title": "Appendix: Comparison of Forecasting Performance in Three One-Year Periods Separately",
+     "anchor": "sec-appendix-comparison-of-forecasting-performance-in-three-one-year-periods-separately"
+    },
+    {
+     "level": 3,
+     "title": "GDP",
+     "anchor": "sec-gdp"
+    },
+    {
+     "level": 3,
+     "title": "Prices",
+     "anchor": "sec-prices"
     },
     {
      "level": 2,

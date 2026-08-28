@@ -3005,5 +3005,74 @@
    "number": "8/2015",
    "year": 2015
   }
+ },
+ {
+  "project": "passthrough",
+  "title": "Bank Efficiency and Interest Rate Pass-Through: Evidence from Czech Loan Products",
+  "literature": "Bank Efficiency and Interest Rate Pass-Through",
+  "abstract": "An important component of monetary policy transmission is the pass-through from financial market interest rates, directly influenced or targeted by central banks, to the rates that banks charge firms and households. Yet the available evidence on the strength and speed of the pass-through is mixed and varies across countries, time periods, and even individual banks. We examine the pass-through mechanism using a unique data set of Czech loan and deposit products and focus on bank-level determinants of pricing policies, especially cost efficiency, which we estimate employing both stochastic frontier and data envelopment analysis. Our main results are threefold: First, the long-term pass-through was close to complete for most products before the financial crisis, but has weakened considerably afterward. Second, banks that provide high rates for deposits usually charge high loan markups. Third, cost-efficient banks tend to delay responses to changes in the market rate, smoothing loan rates for their clients.",
+  "reference_line": "Tomas Havranek, Zuzana Irsova, Jitka Lesanovska (2016), \"Bank efficiency and interest rate pass-through: Evidence from Czech loan products.\" Economic Modelling 54: 153-169. doi.org/10.1016/j.econmod.2016.01.004",
+  "authors": [
+   "Tomas Havranek",
+   "Zuzana Irsova",
+   "Jitka Lesanovska"
+  ],
+  "year": 2016,
+  "journal": "Economic Modelling",
+  "doi_or_publisher_url": "https://doi.org/10.1016/j.econmod.2016.01.004",
+  "one_line": "Czech loan and deposit products show a pass-through from market rates that was close to complete before the financial crisis and much weaker after it; banks paying high deposit rates charge high loan markups, and cost-efficient banks delay their responses, smoothing rates for clients.",
+  "meta_keywords": "interest rate pass-through, bank efficiency, cost efficiency, stochastic frontier analysis, data envelopment analysis, monetary transmission, Czech Republic",
+  "menu_links": [
+   {
+    "label": "Paper",
+    "href": "passthrough.pdf"
+   },
+   {
+    "label": "Published version",
+    "href": "https://doi.org/10.1016/j.econmod.2016.01.004"
+   }
+  ],
+  "version": "working_paper",
+  "version_note": "It is Czech National Bank Working Paper 9/2015, the openly available version; the version of record is behind the publisher's paywall. The working paper carries a Czech abstract and a nontechnical summary, which the journal article does not, its title page prints \"Pass-Trough\" for \"Pass-Through\", and its typesetting drops the accents from several names in the reference list, which are reproduced as printed.",
+  "technical_report": {
+   "institution": "Czech National Bank Working Paper Series",
+   "number": "9/2015",
+   "year": 2015
+  }
+ },
+ {
+  "project": "transmission",
+  "title": "Monetary Transmission and the Financial Sector in the Czech Republic",
+  "literature": "Financial Variables and the Macroeconomy",
+  "abstract": "In this paper, we 1) examine the interactions of financial variables and the macroeconomy within the block-restriction vector autoregression model and 2) evaluate to what extent the financial variables improve the forecasts of GDP growth and inflation. For this reason, various financial variables are examined, including those unexplored in previous literature, such as the share of liquid assets in the banking industry and the loan loss provision rate. Our results suggest that financial variables have a systematic and statistically significant effect on macroeconomic fluctuations. In terms of forecast evaluation, financial variables in general seem to improve the forecast of macroeconomic variables, but the predictive performance of individual financial variables varies over time, in particular during the 2008-2009 crisis.",
+  "reference_line": "Tomas Havranek, Roman Horvath, Jakub Mateju (2012), \"Monetary transmission and the financial sector in the Czech Republic.\" Economic Change and Restructuring 45(3): 135-155. doi.org/10.1007/s10644-011-9106-z",
+  "authors": [
+   "Tomas Havranek",
+   "Roman Horvath",
+   "Jakub Mateju"
+  ],
+  "year": 2012,
+  "journal": "Economic Change and Restructuring",
+  "doi_or_publisher_url": "https://doi.org/10.1007/s10644-011-9106-z",
+  "one_line": "Bank liquidity, loan loss provisions, non-performing loans, credit and the Prague stock index all move with Czech GDP and prices, and adding them to a block-restriction VAR usually sharpens the forecast; only the stock index does so in every period, including the crisis.",
+  "meta_keywords": "monetary transmission, financial variables, forecasting, vector autoregression, bank liquidity, loan loss provisions, non-performing loans, Czech Republic",
+  "menu_links": [
+   {
+    "label": "Paper",
+    "href": "transmission.pdf"
+   },
+   {
+    "label": "Published version",
+    "href": "https://doi.org/10.1007/s10644-011-9106-z"
+   }
+  ],
+  "version": "working_paper",
+  "version_note": "It is Czech National Bank Working Paper 6/2010, the openly available version, published two years later under a different title; the version of record is behind the publisher's paywall. The working paper carries a nontechnical summary, which the journal article does not. Its cross-references to the impulse-response figures are one behind the figures themselves -- the text that says \"Figure 1\" points at Figure 2, and so on -- and are reproduced as printed. The appendix charts, which the working paper prints unnumbered, are numbered A1 to A6 here so the page can refer to them.",
+  "served_title": "Do Financial Variables Help Predict Macroeconomic Environment? The Case of the Czech Republic",
+  "technical_report": {
+   "institution": "Czech National Bank Working Paper Series",
+   "number": "6/2010",
+   "year": 2010
+  }
  }
 ]
