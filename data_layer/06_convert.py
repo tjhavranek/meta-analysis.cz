@@ -87,6 +87,44 @@ def df_like(df):
     return None
 
 
+def study_col(df):
+    """The file's study identifier, if it has one."""
+    for c in df.columns:
+        if re.match(r"^(id_?study|study_?id|idstudy|studyid)$", norm(c)):
+            return c
+    return None
+
+
+def counts_estimates(df, v):
+    """Whether a candidate sample size is really the count of ESTIMATES the study reports.
+
+    A meta-analysis file routinely carries, per study, the number of estimates collected from
+    it -- and calls it `nobs` or `n`. The name matches the sample-size pattern and every other
+    test here passes: it is a positive integer, it is not the row index, and no df column
+    contradicts it. Yet feeding it to MAIVE as N instruments precision with how many results a
+    study happened to report, which is not a sample size at all.
+
+    The file answers this about itself. The count of a study's estimates is constant within
+    that study and equals the number of rows the study occupies. A genuine sample size is
+    constant within a study too, but has no reason to equal its row count. Across this corpus
+    the separation is total: armington's `nobs` matches its row count on 88% of studies and
+    migrant's `n` on 100%, while the next highest of the other 30 candidates is 4%.
+
+    The same rule is applied a second time in 08_harmonise.find_n_obs; the two stages pick the
+    column independently and must not disagree.
+    """
+    sid = study_col(df)
+    if sid is None:
+        return False
+    d = pd.DataFrame({"s": df[sid].astype(str), "v": v}).dropna()
+    if d.empty or d["s"].nunique() < 5:
+        return False
+    if not d.groupby("s")["v"].nunique().eq(1).all():
+        return False
+    g = d.groupby("s").agg(v=("v", "first"), k=("v", "size"))
+    return bool((g["v"] == g["k"]).mean() >= 0.75)
+
+
 def is_sample_size(df, col):
     """Whether a column that MATCHES the n_obs name pattern really is a sample size.
 
@@ -121,6 +159,9 @@ def is_sample_size(df, col):
     if len(d) == len(df) and float(d.min()) == 1 and float(d.max()) == len(df) \
             and d.nunique() == len(df):
         return False, "the row index: exactly 1..%d, one per row" % len(df)
+    if counts_estimates(df, v):
+        return False, ("constant within study and equal to that study's row count, so it "
+                       "counts the ESTIMATES the study reports, not the observations it used")
     dfree = df_like(df)
     if dfree is not None:
         both = pd.concat([v, dfree], axis=1).dropna()
@@ -140,7 +181,7 @@ def looks_log_series(d):
     e = _np.exp(d.astype(float))
     return bool((_np.abs(e - e.round()) < 0.51).mean() > 0.8)
 
-def describe(df, roles, rejected=None):
+def describe(df, roles, rejected=None, declared=()):
     cb=[]
     for c in df.columns:
         s=df[c]; e=dict(name=str(c), normalized=norm(c), dtype=str(s.dtype),
@@ -157,8 +198,16 @@ def describe(df, roles, rejected=None):
             # `role` is asserted ONLY for columns confirmed by the arithmetic test or the
             # paper's replication code. Everything else is a NAME-BASED GUESS and is labelled
             # as such: price_puzzle's idauthor was being published as an effect_estimate.
-            e["role" if r in VERIFIED_ROLES else "inferred_role"]=r
-            if r not in VERIFIED_ROLES:
+            # The test is on the COLUMN, not the role. It used to be on the role, via a set
+            # holding effect_estimate and standard_error -- which was the same thing for those
+            # two, since they are only ever set from the override or the resolved mapping, but
+            # it left the three sample sizes that overrides.json names outright (learning's
+            # n_study, activism's TotalObs, armington's total) showing NO role at all, while a
+            # merely name-matched one showed "inferred_role: name-match only". Exactly backwards:
+            # those three are the ones checked against the papers' own code and tables.
+            verified = str(c) in declared or r in VERIFIED_ROLES
+            e["role" if verified else "inferred_role"]=r
+            if not verified:
                 e["inferred_role_confidence"]="name-match only, not verified"
         if pd.api.types.is_numeric_dtype(s) and s.notna().any():
             d=s.dropna().astype(float)
@@ -187,7 +236,7 @@ for proj in sorted(prim):
     if df is None or df.empty:
         manifest.append(dict(project=proj,status="error",reason="empty")); continue
     df=clean_for_parquet(df)
-    roles={}; rejected={}
+    roles={}; rejected={}; declared=set()
     # The OVERRIDE supersedes the resolver. Reading the resolver's guess here published
     # price_puzzle's `idauthor` as an effect_estimate, because the resolver guessed it and
     # the override (a wide->long reshape onto `res`/`se`) replaced that guess entirely.
@@ -199,10 +248,15 @@ for proj in sorted(prim):
         eff=ov.get("effect") or (r.get("effect") if r.get("status")=="ok" else None)
         se=ov.get("se") or (None if r.get("se_derived") else
                             (r.get("se") if r.get("status")=="ok" else None))
-        if eff in df.columns: roles[eff]="effect_estimate"
-        if se in df.columns: roles[se]="standard_error"
+        if eff in df.columns: roles[eff]="effect_estimate"; declared.add(str(eff))
+        if se in df.columns: roles[se]="standard_error"; declared.add(str(se))
         for c in (ov.get("se_mean_of") or []):
-            if c in df.columns: roles[c]="standard_error"
+            if c in df.columns: roles[c]="standard_error"; declared.add(str(c))
+    # overrides.json names the sample size for the datasets whose column no name pattern was
+    # ever going to match, each one checked against the paper. A declaration outranks the
+    # name-and-value test below, exactly as it does for the effect and the standard error.
+    if (ov.get("n_obs") or "") in df.columns:
+        roles[ov["n_obs"]]="n_obs"; declared.add(str(ov["n_obs"]))
     for c in df.columns:
         n=norm(c)
         if re.match(r"^(id_?study|study_?id|idstudy|studyid)$",n): roles.setdefault(str(c),"study_id")
@@ -210,9 +264,19 @@ for proj in sorted(prim):
         # and every candidate must then clear is_sample_size: the name proposes, the values
         # decide. Without the value test the pattern asserts a row index as a sample size.
         elif re.match(r"^(n|nobs|no_?obs|n_?obs|obs|observations|sample|sample_?size|samplesize)$",n):
-            ok,why=is_sample_size(df,c)
-            if ok: roles.setdefault(str(c),"n_obs")
-            else: rejected[str(c)]=("not_n_obs_because", why)
+            if declared and str(c) not in declared and ov.get("n_obs"):
+                # The dataset names its sample size outright, and it is not this column. A
+                # declaration displaces the guess rather than sitting beside it: finance_growth
+                # published `n` as an inferred n_obs while overrides.json named `samsize`, on
+                # the strength of the paper's own Table 1, so the codebook offered a reader two
+                # sample sizes and no way to choose.
+                rejected[str(c)]=("not_n_obs_because",
+                                  "the dataset's sample size is `%s`, verified against the "
+                                  "paper; see verified_by in the dataset record" % ov["n_obs"])
+            else:
+                ok,why=is_sample_size(df,c)
+                if ok: roles.setdefault(str(c),"n_obs")
+                else: rejected[str(c)]=("not_n_obs_because", why)
         elif re.match(r"^(pub_?year|publication_?year|yearpub|publicationyear)$",n): roles.setdefault(str(c),"pub_year")
         # The name proposes, the values decide -- the same rule n_obs already follows.
         # "tstat_adj" is a 0/1 flag saying whether the t was adjusted and
@@ -235,7 +299,7 @@ for proj in sorted(prim):
     cb=os.path.join(OUT,"api","v1","codebooks"); os.makedirs(cb,exist_ok=True)
     json.dump(dict(project=proj, source_file=rec["member"], source_archive=rec["archive"],
                    source_sheet=sheet, n_rows=int(len(df)), n_columns=int(df.shape[1]),
-                   columns=describe(df,roles,rejected)),
+                   columns=describe(df,roles,rejected,declared)),
               open(os.path.join(cb,f"{proj}.json"),"w",encoding="utf-8"), indent=1)
     manifest.append(dict(project=proj,status="ok",rows=int(len(df)),cols=int(df.shape[1]),
                          parquet_bytes=os.path.getsize(pq),

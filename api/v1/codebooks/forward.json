@@ -744,7 +744,7 @@
    "dtype": "float64",
    "n_missing": 0,
    "n_unique": 19,
-   "not_n_obs_because": "not integer-valued -- this is the log of a count (exp() of it is whole); the harmonised table carries the exponentiated value",
+   "not_n_obs_because": "the dataset's sample size is `Sample_size`, verified against the paper; see verified_by in the dataset record",
    "stats": {
     "min": 0.0,
     "p25": 0.0,
@@ -761,8 +761,7 @@
    "dtype": "float64",
    "n_missing": 0,
    "n_unique": 387,
-   "inferred_role": "n_obs",
-   "inferred_role_confidence": "name-match only, not verified",
+   "role": "n_obs",
    "stats": {
     "min": 2.0,
     "p25": 93.0,

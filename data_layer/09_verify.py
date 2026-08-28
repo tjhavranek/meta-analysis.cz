@@ -160,6 +160,16 @@ if _claim.returncode != 0:
     fail.append("the publication-bias counts in api/v1/README.md no longer match the data:\n"
                 + "        " + (_claim.stdout or _claim.stderr).strip().replace("\n", "\n        "))
 
+# Nothing else here asks whether the catalogue is COMPLETE -- every other check tests the
+# data that is present. A file no surface names produces no inconsistency, so it can only be
+# caught by scanning the site itself. Same delegation as the claim check above.
+_cat = _sp.run([sys.executable, os.path.join(os.path.dirname(os.path.abspath(__file__)),
+                                             "98_catalogue_complete.py")],
+               capture_output=True, text=True)
+if _cat.returncode != 0:
+    fail.append("the catalogue does not account for every file the site serves:\n"
+                + "        " + (_cat.stdout or _cat.stderr).strip().replace("\n", "\n        "))
+
 print(f"\ndatasets in index: {idx['counts']['datasets']} | "
       f"source rows: {idx['counts']['rows_in_source_files']:,} | "
       f"analysis samples: {idx['counts']['estimates_in_analysis_samples']:,}")

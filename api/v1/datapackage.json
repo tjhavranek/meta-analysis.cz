@@ -501,7 +501,8 @@
      },
      {
       "name": "TotalObs",
-      "type": "number"
+      "type": "number",
+      "description": "n_obs"
      },
      {
       "name": "Daily",
@@ -1313,7 +1314,8 @@
      },
      {
       "name": "total",
-      "type": "number"
+      "type": "number",
+      "description": "n_obs"
      },
      {
       "name": "midyear",
@@ -5095,7 +5097,8 @@
      },
      {
       "name": "samsize",
-      "type": "number"
+      "type": "number",
+      "description": "n_obs"
      },
      {
       "name": "ln_samsize",
@@ -5811,7 +5814,8 @@
      },
      {
       "name": "Sample_size",
-      "type": "number"
+      "type": "number",
+      "description": "n_obs"
      },
      {
       "name": "Sample_year",
@@ -9021,7 +9025,8 @@
      },
      {
       "name": "n_study",
-      "type": "number"
+      "type": "number",
+      "description": "n_obs"
      },
      {
       "name": "es",
@@ -9991,7 +9996,8 @@
      },
      {
       "name": "n",
-      "type": "number"
+      "type": "number",
+      "description": "n_obs"
      },
      {
       "name": "k",
@@ -10245,7 +10251,8 @@
      },
      {
       "name": "Sample",
-      "type": "number"
+      "type": "number",
+      "description": "n_obs"
      },
      {
       "name": "Rem",

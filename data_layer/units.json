@@ -77,7 +77,7 @@
  },
  "gasoline": {
   "units": "elasticity",
-  "direction_note": "Long-run income elasticity only; see the dataset note for the short-run estimates. CAUTION on n_obs: it is the file's Observations column, which init.do weights by as sqrt(Observations), but 90 of 701 rows record 1, which is not a plausible sample size and may be a missing-value code. Filter before using n_obs as a precision instrument."
+  "direction_note": "Long-run income elasticity only; see the dataset note for the short-run estimates. CAUTION on n_obs: it is the file's Observations column, and init.do does weight by sqrt(Observations), but the column counts TIME PERIODS rather than observations. Observations equals Timespan x the data frequency (1, 4 or 12 for annual, quarterly and monthly) on 100.0% of all 701 rows, exactly, so it carries no cross-sectional dimension at all. That makes it the estimation sample size for a single-series time-series study and an undercount for anything pooled across units. The 90 rows recording 1 are single-year cross sections -- Timespan 1, Start equal to End, Cross_section set on 89 of them -- where the real sample is the number of units and the file never records it. They are NOT a missing-value code, which is what an earlier version of this note supposed. Check Cross_section and the frequency dummies before using n_obs here as a precision instrument."
  },
  "gasoline_price": {
   "units": "elasticity",

@@ -198,8 +198,7 @@
    "dtype": "int64",
    "n_missing": 0,
    "n_unique": 34,
-   "inferred_role": "n_obs",
-   "inferred_role_confidence": "name-match only, not verified",
+   "not_n_obs_because": "the dataset's sample size is `total`, verified against the paper; see verified_by in the dataset record",
    "stats": {
     "min": 2.0,
     "p25": 81.0,
@@ -1133,6 +1132,7 @@
    "dtype": "int64",
    "n_missing": 0,
    "n_unique": 481,
+   "role": "n_obs",
    "stats": {
     "min": 6.0,
     "p25": 28.0,

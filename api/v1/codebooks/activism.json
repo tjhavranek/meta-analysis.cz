@@ -1946,6 +1946,7 @@
    "dtype": "float64",
    "n_missing": 1,
    "n_unique": 246,
+   "role": "n_obs",
    "stats": {
     "min": 2.0,
     "p25": 27.0,

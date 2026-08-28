@@ -98,6 +98,30 @@ def find_year(df, pat):
     return None
 
 
+def counts_estimates(df, v):
+    """Whether a candidate sample size is really the count of ESTIMATES the study reports.
+
+    The same test 06_convert.is_sample_size applies, applied again here because the two stages
+    pick the column independently: a meta-analysis file often stores, per study, how many
+    estimates were collected from it, under a name the sample-size pattern matches (`nobs`,
+    `n`). Such a column is constant within its study AND equals that study's row count; a real
+    sample size has no reason to. See the fuller note in 06_convert.
+    """
+    sid = None
+    for c in df.columns:
+        if re.match(r"^(id_?study|study_?id|idstudy|studyid)$", norm(c)):
+            sid = c; break
+    if sid is None:
+        return False
+    d = pd.DataFrame({"s": df[sid].astype(str), "v": v}).dropna()
+    if d.empty or d["s"].nunique() < 5:
+        return False
+    if not d.groupby("s")["v"].nunique().eq(1).all():
+        return False
+    g = d.groupby("s").agg(v=("v", "first"), k=("v", "size"))
+    return bool((g["v"] == g["k"]).mean() >= 0.75)
+
+
 def find_n_obs(df, pat):
     """Pick the primary-study sample size, not a log of it.
 
@@ -111,6 +135,9 @@ def find_n_obs(df, pat):
         if not re.match(pat, norm(c)): continue
         s=pd.to_numeric(df[c],errors="coerce")
         if s.notna().sum()<10: continue
+        # dropped here rather than in the `counts` filter below, so the last-resort fallback
+        # at the end of this function cannot hand back the very column that was refused
+        if counts_estimates(df,s): continue
         cands.append((c,s))
     if not cands: return None,False
     counts=[(c,s) for c,s in cands if not looks_log(s)

@@ -144,6 +144,36 @@
     "url": "https://meta-analysis.cz/spillovers_bias/"
    },
    "excluded_because": "the second-stage data behind the paper: one row for each of the 56 studies, carrying its publication-bias measure and the characteristics used to explain it, so it has no effect or standard error column and cannot join an estimate-level table. The estimates themselves are the FDI spillovers literature, pooled under 'spillovers'."
+  },
+  {
+   "id": "cbequity",
+   "reason": "estimate-level and eligible, but not yet in a released version of the table",
+   "paper": {
+    "title": "Does Central Bank Financial Strength Matter for Inflation? An Empirical Analysis",
+    "page_title": "Central Bank Equity as an Instrument of Monetary Policy",
+    "url": "https://meta-analysis.cz/cbequity/"
+   },
+   "excluded_because": "the one entry here that is NOT excluded on the merits. CBFS.xlsx is a proper estimate-level meta-analysis dataset -- 176 estimates from 9 studies, with idstudy, e, se and nobs, and e/se reproduces the file's own t on 100% of rows -- matching the paper's own '176 estimates from nine studies'. It is absent because the paper was added after the 1.1.1 harmonised table was built and deposited. Pooling it changes the table, which means a data version and a new archived deposit, so it waits for the next release rather than being added under 1.1.1's DOI. Named here so the catalogue does not simply stay silent about it."
+  },
+  {
+   "id": "contagion",
+   "reason": "primary market and balance-sheet data, not extracted estimates",
+   "paper": {
+    "title": "The sources of contagion risk in a banking sector with foreign ownership",
+    "page_title": "The sources of contagion risk in a banking sector with foreign ownership",
+    "url": "https://meta-analysis.cz/contagion/"
+   },
+   "excluded_because": "two files, neither of them a meta-analysis. Data_table.xls holds 1,385 rows of dated per-bank loss returns and 160216_Bankscope.xlsx holds Bankscope balance-sheet series (total assets, net income and the rest) for 31 banks over 2000-2015. These are the inputs the paper estimates FROM, not estimates collected from a literature, so they carry no effect or standard error and cannot join an estimate-level table."
+  },
+  {
+   "id": "dst_slovakia",
+   "reason": "primary market data, not extracted estimates",
+   "paper": {
+    "title": "Does daylight saving time save electricity? Evidence from Slovakia",
+    "page_title": "Does daylight saving time save electricity? Evidence from Slovakia",
+    "url": "https://meta-analysis.cz/dst_slovakia/"
+   },
+   "excluded_because": "price.xlsx is 64,296 hourly electricity spot prices in two series, the Slovak and the Czech, which the paper uses as an input. A price series is not a collection of estimates: no study identifier, no effect, no standard error."
   }
  ],
  "datasets": [
@@ -295,11 +325,11 @@
     "standard_error": "se",
     "standard_error_note": null,
     "evidence": "paper's replication code",
-    "sample_size": "nobs"
+    "sample_size": "total"
    },
    "effect_units": "elasticity",
    "direction_note": null,
-   "column_mapping_verified_by": "armington.do lines 94-96 run the headline FAT-PET on the WINSORISED pair: `ivreg2 armel_w se_w, cluster(idstudy idcountry)`. The paper's equation (1) is sigma_ij = sigma_0 + delta*SE(sigma_ij) + mu_ij, and it states it winsorises at the 2.5% level (mean 1.53 -> 1.45, which armel/armel_w reproduce: 1.531 -> 1.454).",
+   "column_mapping_verified_by": "armington.do lines 94-96 run the headline FAT-PET on the WINSORISED pair: `ivreg2 armel_w se_w, cluster(idstudy idcountry)`. The paper's equation (1) is sigma_ij = sigma_0 + delta*SE(sigma_ij) + mu_ij, and it states it winsorises at the 2.5% level (mean 1.53 -> 1.45, which armel/armel_w reproduce: 1.531 -> 1.454). n_obs=total, NOT nobs. Both are integral and free of nulls, and the name pattern matches only `nobs` -- but `nobs` is constant within a study and equals that study's row count on 88% of studies, i.e. it counts the estimates collected FROM the study. The paper's own Table A.1 settles what the sample size is: `Data size -- the logarithm of the total number of observations used to estimate the elasticity`, reported with mean 4.72 and sd 2.06. ltotal = log(total) to 5e-06 across all 3,524 rows, and on the long-run subsample the paper analyses (srun==0, 2,968 rows) ltotal has mean 4.72 and sd 2.06 exactly. So `total` is the estimation sample size: 6 to 419,640, integral, no nulls.",
    "in_harmonised_table": true,
    "reconciliation": {
     "n_estimates_reported_in_paper": 3524,
@@ -1361,7 +1391,7 @@
     "sample_size": "Observations"
    },
    "effect_units": "elasticity",
-   "direction_note": "Long-run income elasticity only; see the dataset note for the short-run estimates. CAUTION on n_obs: it is the file's Observations column, which init.do weights by as sqrt(Observations), but 90 of 701 rows record 1, which is not a plausible sample size and may be a missing-value code. Filter before using n_obs as a precision instrument.",
+   "direction_note": "Long-run income elasticity only; see the dataset note for the short-run estimates. CAUTION on n_obs: it is the file's Observations column, and init.do does weight by sqrt(Observations), but the column counts TIME PERIODS rather than observations. Observations equals Timespan x the data frequency (1, 4 or 12 for annual, quarterly and monthly) on 100.0% of all 701 rows, exactly, so it carries no cross-sectional dimension at all. That makes it the estimation sample size for a single-series time-series study and an undercount for anything pooled across units. The 90 rows recording 1 are single-year cross sections -- Timespan 1, Start equal to End, Cross_section set on 89 of them -- where the real sample is the number of units and the file never records it. They are NOT a missing-value code, which is what an earlier version of this note supposed. Check Cross_section and the frequency dummies before using n_obs here as a precision instrument.",
    "column_mapping_verified_by": "init.do generates se as abs(e/tstat), which is reproduced here. gas_income_revision.dta's 'e' equals mra-data.dta's Ystat exactly (n=701, mean 0.6589), matching the abstract's long-run figure.",
    "in_harmonised_table": true,
    "reconciliation": {
@@ -1876,7 +1906,8 @@
     "standard_error": "se",
     "standard_error_note": null,
     "evidence": "paper's replication code",
-    "sample_size": "n"
+    "sample_size": null,
+    "sample_size_note": "n is not it: constant within study and equal to that study's row count, so it counts the ESTIMATES the study reports, not the observations it used; this dataset therefore has no sample size at all, and MAIVE cannot be run on it without supplying one"
    },
    "effect_units": "negative inverse elasticity",
    "direction_note": "The stored value is NOT the elasticity. It is the negative inverse: 88.8% of values are negative with median -0.050, and -1/effect has median 15.38, matching the paper's headline substitution elasticity of 13 to about 22. To recover the elasticity take -1/effect, and convert the standard error by the delta method -- se/effect^2 -- rather than using the stored se unchanged. Do NOT pool this column with the other 'elasticity' literatures. Confirmed 2026-08-04 after the Fable and Codex audits both flagged it.",
@@ -1928,9 +1959,9 @@
     "codebook": "https://meta-analysis.cz/api/v1/codebooks/price_puzzle.json"
    },
    "core_columns": {
-    "effect": "res",
-    "standard_error": "se",
-    "standard_error_note": null,
+    "effect": "res, reshaped long from the per-horizon columns M3R, M6R, M12R, M18R, M36R, MBR, MPR",
+    "standard_error": "se, from the matching SE3, SE6, SE12, SE18, SE36, SEB, SEP",
+    "standard_error_note": "read from a column, but only after the wide-to-long reshape",
     "evidence": "paper's replication code",
     "sample_size": "nobs"
    },
@@ -2498,7 +2529,7 @@
     "standard_error_note": null,
     "evidence": "paper's replication code",
     "sample_size": null,
-    "sample_size_note": "sample_size is not it: not integer-valued -- this is the log of a count (exp() of it is whole); the harmonised table carries the exponentiated value"
+    "sample_size_note": "sample_size is not it: not integer-valued -- this is the log of a count (exp() of it is whole); the harmonised table carries the exponentiated value; MAIVE can still be run from the pooled table"
    },
    "effect_units": "partial correlation coefficient",
    "direction_note": null,

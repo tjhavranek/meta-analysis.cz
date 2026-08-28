@@ -30,6 +30,14 @@ import pandas as _pd
 try: _H=_pd.read_parquet(os.path.join(OUT,"data",DATA_V,"estimates_harmonised.parquet"))
 except Exception: _H=None
 _NH=(_H.groupby("dataset").size().to_dict() if _H is not None else {})
+# Whether the POOLED table ends up with a sample size for a literature, which is not the same
+# question as whether the source file has a column named like one. students' `sample_size` is
+# the LOG of a count, so it is refused here and exponentiated by the harmoniser: the dataset
+# record must say the column is not the sample size AND that MAIVE can still be run from the
+# pooled file. migrant is the opposite case and has to say the opposite.
+_HAS_N=({k: bool(v) for k, v in
+         _H.groupby("dataset")["n_obs"].apply(lambda s: s.notna().any()).to_dict().items()}
+        if _H is not None and "n_obs" in _H.columns else {})
 
 
 def _weight_share():
@@ -173,8 +181,14 @@ def _with_sample_size(proj, d):
     col,why=_sample_size_col(proj)
     d["sample_size"]=col
     if col is None:
-        d["sample_size_note"]=(why or "no sample-size column in this dataset; MAIVE cannot "
-                                      "be run on it without supplying one")
+        if not why:
+            d["sample_size_note"]=("no sample-size column in this dataset; MAIVE cannot "
+                                   "be run on it without supplying one")
+        elif _HAS_N.get(proj):
+            d["sample_size_note"]=why + "; MAIVE can still be run from the pooled table"
+        else:
+            d["sample_size_note"]=(why + "; this dataset therefore has no sample size at all, "
+                                         "and MAIVE cannot be run on it without supplying one")
     return d
 
 
@@ -189,6 +203,22 @@ def _core_cols(proj):
         return _with_sample_size(proj, dict(effect=f"{cmp_['col']} rescaled by {cmp_.get('constant',1)} x {cmp_['factor_col']}",
                     standard_error=f"derived as |effect/{cmp_['t_col']}|",
                     standard_error_note="derived, not read from a column", evidence="paper's replication code"))
+    rl=o.get("reshape_long")
+    if rl and rl.get("pairs"):
+        # The reshape BUILDS the pair, so naming the built columns here sent a reader to two
+        # columns the linked file does not contain: price_puzzle's record said the effect was
+        # `res` and the standard error `se`, and puzzle.xls has neither -- it is wide, holding
+        # one response/standard-error pair per horizon. Name the source columns instead, the
+        # way the two `compute` branches above name theirs.
+        return _with_sample_size(proj, dict(
+            effect="%s, reshaped long from the per-%s columns %s" % (
+                rl["effect_name"], rl["id_col"],
+                ", ".join(str(pr[1]) for pr in rl["pairs"])),
+            standard_error="%s, from the matching %s" % (
+                rl["se_name"], ", ".join(str(pr[2]) for pr in rl["pairs"])),
+            standard_error_note="read from a column, but only after the wide-to-long reshape",
+            evidence=(o.get("evidence") or
+                      ("paper's replication code" if o.get("verified_by") else r.get("evidence")))))
     eff=o.get("effect") or r.get("effect")
     se=o.get("se") or (None if r.get("se_derived") else r.get("se"))
     if o.get("se_mean_of"): se="mean of "+" and ".join(o["se_mean_of"])
@@ -339,7 +369,42 @@ excluded += [
                          "characteristics used to explain it, so it has no effect or "
                          "standard error column and cannot join an estimate-level table. "
                          "The estimates themselves are the FDI spillovers literature, "
-                         "pooled under 'spillovers'."))]
+                         "pooled under 'spillovers'.")),
+  dict(id="cbequity",
+       reason="estimate-level and eligible, but not yet in a released version of the table",
+       paper=dict(title="Does Central Bank Financial Strength Matter for Inflation? "
+                        "An Empirical Analysis",
+                  page_title="Central Bank Equity as an Instrument of Monetary Policy",
+                  url=f"{BASE}/cbequity/"),
+       excluded_because=("the one entry here that is NOT excluded on the merits. CBFS.xlsx is a "
+                         "proper estimate-level meta-analysis dataset -- 176 estimates from 9 "
+                         "studies, with idstudy, e, se and nobs, and e/se reproduces the file's "
+                         "own t on 100% of rows -- matching the paper's own '176 estimates from "
+                         "nine studies'. It is absent because the paper was added after the "
+                         "1.1.1 harmonised table was built and deposited. Pooling it changes the "
+                         "table, which means a data version and a new archived deposit, so it "
+                         "waits for the next release rather than being added under 1.1.1's DOI. "
+                         "Named here so the catalogue does not simply stay silent about it.")),
+  dict(id="contagion",
+       reason="primary market and balance-sheet data, not extracted estimates",
+       paper=dict(title="The sources of contagion risk in a banking sector with foreign ownership",
+                  page_title="The sources of contagion risk in a banking sector with foreign ownership",
+                  url=f"{BASE}/contagion/"),
+       excluded_because=("two files, neither of them a meta-analysis. Data_table.xls holds 1,385 "
+                         "rows of dated per-bank loss returns and 160216_Bankscope.xlsx holds "
+                         "Bankscope balance-sheet series (total assets, net income and the rest) "
+                         "for 31 banks over 2000-2015. These are the inputs the paper estimates "
+                         "FROM, not estimates collected from a literature, so they carry no "
+                         "effect or standard error and cannot join an estimate-level table.")),
+  dict(id="dst_slovakia",
+       reason="primary market data, not extracted estimates",
+       paper=dict(title="Does daylight saving time save electricity? Evidence from Slovakia",
+                  page_title="Does daylight saving time save electricity? Evidence from Slovakia",
+                  url=f"{BASE}/dst_slovakia/"),
+       excluded_because=("price.xlsx is 64,296 hourly electricity spot prices in two series, the "
+                         "Slovak and the Czech, which the paper uses as an input. A price series "
+                         "is not a collection of estimates: no study identifier, no effect, no "
+                         "standard error."))]
 datasets=[d for d in datasets if d.get("n_estimates")]
 ok=datasets
 # No $schema key: there is no JSON Schema document for this index, and the URL that

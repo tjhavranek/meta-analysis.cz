@@ -485,8 +485,8 @@
    "description": "DERIVED AGGREGATE VIEW of the per-dataset files above, reshaped to a common schema. Rows are not additional to them.",
    "contentUrl": "https://meta-analysis.cz/data/v1/estimates_harmonised.csv",
    "encodingFormat": "text/csv",
-   "sha256": "7b41b4f4eafb317f38df52ab8b10bd35ab4716ad5fd68d99f0fc1ceb9739eb0f",
-   "contentSize": "11479720"
+   "sha256": "1ddd31edc25ca3e6e4385f36703aff2709cae4776c00532d27deab6de37cc7ec",
+   "contentSize": "11474703"
   },
   {
    "@type": "cr:FileObject",
@@ -495,8 +495,8 @@
    "description": "The same derived aggregate view, as Parquet.",
    "contentUrl": "https://meta-analysis.cz/data/v1/estimates_harmonised.parquet",
    "encodingFormat": "application/vnd.apache.parquet",
-   "sha256": "983915f7cb5c620384ad5838dc56e7b3b6e71c84ab737c9b04693c8397d01d70",
-   "contentSize": "1772099"
+   "sha256": "396ad2e2874ff271d17d8566d6b7b39dc18da972f7284868b8f472626dc2f52f",
+   "contentSize": "1776792"
   }
  ],
  "recordSet": [
@@ -2185,7 +2185,8 @@
       "extract": {
        "column": "TotalObs"
       }
-     }
+     },
+     "description": "verified role: n_obs"
     },
     {
      "@type": "cr:Field",
@@ -4852,7 +4853,8 @@
       "extract": {
        "column": "total"
       }
-     }
+     },
+     "description": "verified role: n_obs"
     },
     {
      "@type": "cr:Field",
@@ -16699,7 +16701,8 @@
       "extract": {
        "column": "samsize"
       }
-     }
+     },
+     "description": "verified role: n_obs"
     },
     {
      "@type": "cr:Field",
@@ -19118,7 +19121,8 @@
       "extract": {
        "column": "Sample_size"
       }
-     }
+     },
+     "description": "verified role: n_obs"
     },
     {
      "@type": "cr:Field",
@@ -29485,7 +29489,8 @@
       "extract": {
        "column": "n_study"
       }
-     }
+     },
+     "description": "verified role: n_obs"
     },
     {
      "@type": "cr:Field",
@@ -32623,7 +32628,8 @@
       "extract": {
        "column": "n"
       }
-     }
+     },
+     "description": "verified role: n_obs"
     },
     {
      "@type": "cr:Field",
@@ -33430,7 +33436,8 @@
       "extract": {
        "column": "Sample"
       }
-     }
+     },
+     "description": "verified role: n_obs"
     },
     {
      "@type": "cr:Field",

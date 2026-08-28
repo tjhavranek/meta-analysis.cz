@@ -125,6 +125,7 @@
    "dtype": "int64",
    "n_missing": 0,
    "n_unique": 213,
+   "role": "n_obs",
    "stats": {
     "min": 275.0,
     "p25": 9443.0,
