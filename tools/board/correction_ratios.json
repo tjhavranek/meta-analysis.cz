@@ -293,6 +293,48 @@
    "corrected_locator": "finance_growth2.pdf p.8, Table 2: 1/SE_r (Effect) 0.199*** (0.018), 1,334 estimates from 67 studies",
    "mean_quote": "Simple average r 0.15 (0.095, 0.20)",
    "note": "An UPWARD row, and the same construction as the included eis row: a FAT-PET intercept against the literature's own simple average. The earlier exclusion called the answer narrative, which was wrong: both numbers are tabulated."
+  },
+  {
+   "project": "class",
+   "corrected": -0.21,
+   "mean": -0.25,
+   "mean_from": "paper",
+   "quote_source": "pdf",
+   "tier": "table",
+   "units": "normalised class-size effect, hundredths of a standard deviation per one-student increase, on both sides of the ratio",
+   "approximation": "The paper's headline answer is verbal -- the effect is negligible except in Tennessee's STAR experiment and in classes under 15 -- so the number here is Table 8's overall corrected mean rather than a figure from the abstract. Table 8 is a synthetic study evaluated at a zero standard error and the preferred treatment of endogeneity. Its confidence interval, (-1.38, 0.97), is about twelve times the size of the move.",
+   "corrected_quote": "Table 8, Overall corrected mean: -0.21, 95% confidence interval (-1.38, 0.97).",
+   "mean_quote": "Table 2, All estimates: mean -0.25, 95% confidence interval (-0.34, -0.17), 2,434 estimates.",
+   "corrected_locator": "class.pdf Table 8; the comparator is Table 2, row 'All estimates'",
+   "note": "Excluded before with 'one reviewer accepted it and a second refuted it; it stays out until that is settled'. A third reading settled it: both numbers are stated, in the same normalisation, over the same 2,434 estimates. The width of the interval is a caveat for the tooltip, and uncertainty is not an eligibility test anywhere else in this figure."
+  },
+  {
+   "project": "exercise",
+   "corrected": 0.227,
+   "mean": 0.474,
+   "mean_from": "paper",
+   "quote_source": "pdf",
+   "tier": "subsample",
+   "units": "standardised mean difference, general cognition, on both sides of the ratio",
+   "approximation": "General cognition is the first of the paper's three outcomes and the one its abstract leads with; memory and executive function are corrected further, by about -94% and -97%, so leading with general cognition understates the correction rather than choosing the friendly number. The paper adds that the corrected pooled value 'is of little value due to the extreme between-study heterogeneity' -- its prediction interval runs from -1.052 to 1.500.",
+   "corrected_quote": "general cognition: standardized mean difference, SMD, = 0.227, 95% credible interval 0.116 to 0.330.",
+   "mean_quote": "A three-level publication bias-unadjusted Bayesian model-averaged (BMA) meta-analysis reproduced an overall effect size estimate (SMD = 0.474 [0.410, 0.537]).",
+   "corrected_locator": "exercise.pdf, abstract and Results; both values are for the same 835 effect sizes from 82 meta-analyses",
+   "note": "The correction is what this figure measures, and the authors' warning is about how much weight to put on either pooled number, not about whether the correction happened. Every dot here is a pooled estimate; the warning belongs in the tooltip, which carries it."
+  },
+  {
+   "project": "reforms",
+   "corrected": -0.38,
+   "mean": -0.052,
+   "mean_from": "paper",
+   "quote_source": "pdf",
+   "tier": "horizon",
+   "units": "partial correlation coefficient, short run, on both sides of the ratio",
+   "approximation": "The short run is the horizon the paper leads with. The long run moves the same way, from 0.146 to 0.27, about +85%, so the choice of horizon does not decide the direction. The comparator, -0.052, is itself small, which is why a move to -0.38 reads as +631%: this dot is drawn off the scale at the right-hand edge and its exact value is in this note.",
+   "corrected_quote": "the best-practice estimate of the effect of reforms on growth for the short run reaches -0.38, and the long-run effect reaches 0.27; both are statistically significant at the 5% level.",
+   "mean_quote": "Table 2, Simple average: short run -0.052, 95% confidence interval (-0.084, -0.021); long run 0.146, (0.118, 0.173).",
+   "corrected_locator": "reforms2.pdf Table 2 for the simple averages and the best-practice discussion that follows it",
+   "note": "Excluded before because 'the two horizons move in OPPOSITE directions'. They do not, under the index this figure plots: in absolute magnitude the short run moves +631% and the long run +85%, both away from zero. The old reason applied signed direction to a rule that is direction-blind, and it is corrected here."
   }
  ],
  "excluded": [
@@ -303,10 +345,6 @@
   {
    "project": "bma",
    "why": "corrected about zero against a mean of 0.012, already negligible"
-  },
-  {
-   "project": "class",
-   "why": "the corrected -0.21 against a mean of -0.25 is a 16% move whose confidence interval (-1.38, 0.97) swamps it, and the headline carries subsample carve-outs (Tennessee STAR, classes under 15). One reviewer accepted it and a second refuted it; it stays out until that is settled"
   },
   {
    "project": "competition",
@@ -327,10 +365,6 @@
   {
    "project": "euro",
    "why": "the corrected effect is 'insignificant'. Insignificance is not a point estimate, and coding it as 0 would manufacture a -100% bar out of a significance test"
-  },
-  {
-   "project": "exercise",
-   "why": "a pooled corrected estimate exists (SMD 0.227 against an unadjusted 0.474) but the paper calls it 'of little value due to the extreme between-study heterogeneity' in the same sentence. A number its own authors demote is not a headline this figure may borrow"
   },
   {
    "project": "fdi",
@@ -354,7 +388,7 @@
   },
   {
    "project": "incentives",
-   "why": "the best-practice mean 0.031 against a stated mean of 0.051 looks clean, and the units are the identical partial correlation on the identical 1,252 estimates -- but the direction does not survive the comparator test: the median gives +40% and an inverse-variance mean +78%, both upward, on a column that is fully commensurate. Every other included row agrees in direction across all four comparators. Excluded under the direction-disagreement clause, not for its size"
+   "why": "the paper states a matched pair, a raw mean partial correlation of 0.051 against Table 5’s mean best practice of 0.031, a 39% move toward zero. It stays out on the direction clause and only that: on the same commensurate column the literature’s median is 0.0221 and its inverse-variance mean 0.0174, so both of those put 0.031 ABOVE the comparator, +40% and +78%. Two defensible comparators disagreeing about which way the number moved is the case this rule declines to plot"
   },
   {
    "project": "inflation",
@@ -385,12 +419,8 @@
    "why": "the paper does give a number, a 0.33% maximum price fall, but it is a peak response against an average in the data and the sign flips, so the ratio would not mean what the figure means"
   },
   {
-   "project": "reforms",
-   "why": "the paper does state best-practice values, -0.38 short run and 0.27 long run, against simple means of -0.052 and 0.146: so the earlier reason ('a narrative answer') was wrong and is corrected here. It stays out because the two horizons move in OPPOSITE directions, and every horizon row in this figure rests on the other horizon moving the same way. The short-run pair alone would enter at about +631%, seven times a borderline simple mean, and would dominate the axis on its own."
-  },
-  {
    "project": "remittances",
-   "why": "'positive but economically small' gives no scalar"
+   "why": "recorded before as ‘positive but economically small gives no scalar’, which is not what the paper does: Table 3 states an uncorrected mean of 0.103 and four bias-corrected long-run values, 0.025, 0.042, 0.036 and 0.121. It stays out because those four straddle the comparator — three below it and the Andrews-Kasy estimate above it — and the paper names no preferred one, so a midpoint would invent a central value the authors declined to give"
   },
   {
    "project": "reporting",

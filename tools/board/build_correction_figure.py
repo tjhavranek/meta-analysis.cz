@@ -168,7 +168,13 @@ def build(check=False):
                     "title": qs.get(p, {}).get("short") or rows[p].get("parameter") or p})
 
     out.sort(key=lambda r: r["rev"])
-    down = [r for r in out if r["rev"] < 0]
+    # A revision of exactly 0% is neither toward zero nor away from it. Counting it as
+    # "away", which `len(out) - len(down)` did, would report a paper whose corrected value
+    # equals its comparator as having moved away from zero.
+    EPS = 1e-9
+    down = [r for r in out if r["rev"] < -EPS]
+    up = [r for r in out if r["rev"] > EPS]
+    flat = [r for r in out if abs(r["rev"]) <= EPS]
     med = statistics.median([r["rev"] for r in out])
 
     if check:
@@ -188,11 +194,21 @@ def build(check=False):
     # evenly, because colour intensity cannot tell -35% from -70% and position can. The
     # colour is still there and still means direction; it now reinforces the position
     # instead of carrying the whole message alone.
+    # One paper moved +631%. Letting the axis reach it would stretch the scale six times
+    # and collapse the other twenty-seven dots into a smudge at the left, so the axis holds
+    # the range the bulk of the papers live in and anything past it is drawn at the edge,
+    # marked as off scale, with its exact value in the tooltip, the caption and the <desc>.
+    # Dropping the paper instead would let the drawing decide the evidence.
     revs = [r["rev"] for r in out]
     lo = min(min(revs), 0.0)
     hi = max(max(revs), 0.0)
     lo = math.floor(lo / 25.0) * 25.0
     hi = math.ceil(hi / 25.0) * 25.0
+    CAP = 150.0
+    offscale = [r for r in out if r["rev"] > CAP]
+    if offscale:
+        hi = max(CAP, math.ceil(max((r["rev"] for r in out if r["rev"] <= CAP),
+                                    default=CAP) / 25.0) * 25.0)
     L, RM, W = 34, 34, 760   # room for the outermost tick label
     plot = W - L - RM
     X = lambda v: L + (v - lo) / (hi - lo) * plot
@@ -204,14 +220,17 @@ def build(check=False):
          '<title id="cf-t">What correction and best practice did to each number</title>',
          f'<desc id="cf-d">One dot per meta-analysis, placed by how far its corrected or '
          f'best-practice estimate sits from the average estimate that literature reported. '
-         f'{len(down)} of the {len(out)} moved toward zero and {len(out) - len(down)} away '
-         f'from it; the median revision is {med:+.0f}%.</desc>']
+         f'{len(down)} of the {len(out)} moved toward zero and {len(up)} away '
+         f'from it; the median revision is {med:+.0f}%.'
+         + (" " + " ".join(f'{r["title"]} moved {r["rev"]:+.0f}%, beyond the right-hand end '
+                           f'of the scale.' for r in offscale) if offscale else "")
+         + '</desc>']
 
     # lay the dots out first: the two vertical guides have to clear the tallest stack, and
     # how tall that is depends on how many papers cluster at the same revision
     placed, lanes = [], []
     for r in sorted(out, key=lambda r: r["rev"]):
-        x = X(r["rev"])
+        x = X(min(r["rev"], hi))
         lane = 0
         while lane < len(lanes) and lanes[lane] > x - 2 * R - 1:
             lane += 1
@@ -220,7 +239,14 @@ def build(check=False):
         else:
             lanes[lane] = x
         placed.append((r, x, AX - R - 3 - lane * (2 * R + 3)))
+    # an off-scale dot sits at the end of the axis, where a reader would otherwise take it
+    # for a dot AT the end of the axis. A chevron pointing off the edge says it continues.
+    arrows = [(x, y) for r, x, y in placed if r["rev"] > hi]
     top = min(y for _, _, y in placed) - R
+    for ax_, ay_ in arrows:
+        p.append(f'<path d="M {ax_ + R + 4:.1f} {ay_ - 5:.1f} l 5 5 l -5 5" fill="none" '
+                 f'stroke="var(--rv-up)" stroke-width="2" stroke-linecap="round" '
+                 f'stroke-linejoin="round"/>')
 
     # ticks every 25%, labelled every 50, plus the zero line the whole figure hangs on
     t = lo
@@ -253,6 +279,10 @@ def build(check=False):
         else:
             tip = (f'{r["title"]}. Reported estimates average {r["mean"]:.3g}; '
                    f'corrected or best practice {r["corrected"]:g}. {r["rev"]:+.0f}%.')
+        if r["rev"] > hi:
+            tip = (f'{r["title"]}. Reported estimates average {r["mean"]:.3g}; '
+                   f'corrected or best practice {r["corrected"]:g}. {r["rev"]:+.0f}%, '
+                   f'drawn at the edge because it is off the scale.')
         if r["tier"] != "exact" and r.get("approximation"):
             tip += " " + r["approximation"]
         p.append(f'<a href="#{E(r["project"])}"><title>{E(tip)}</title>')
@@ -306,7 +336,7 @@ def build(check=False):
     alt_up = sum(1 for x in alt if x > 0)
     n_paper = sum(1 for r in out if r.get("mean_from") == "paper")
     n_approx = sum(1 for r in out if r["tier"] != "exact")
-    n_up = len(out) - len(down)
+    n_up = len(up)
     tier_counts = {}
     for r in out:
         if r["tier"] != "exact":
@@ -329,7 +359,10 @@ def build(check=False):
         + (f'<b>All {len(out)} moved toward zero</b>; ' if len(down) == len(out) else
            f'<b>{len(down)} of the {len(out)}</b> moved toward zero and <b>{n_up}</b> away from '
            'it. ')
+        + (f'<b>{len(flat)}</b> did not move. ' if flat else '')
         + f'The median revision is <b>{med:+.0f}%</b>. '
+        + (''.join(f'{r["title"]} is drawn at the right-hand edge: its <b>{r["rev"]:+.0f}%</b> '
+                   f'is off the scale. ' for r in offscale) if offscale else '')
         + (f'The {n_approx} drawn as rings are approximate pairs. ' if n_approx else '')
         + 'Vertical position carries no meaning. The dots are stacked only to keep them apart.'
         '<details class="figmethod"><summary>How this figure is built, and which papers it '
