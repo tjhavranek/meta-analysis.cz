@@ -203,10 +203,6 @@
    "value": "confront publication bias, p-hacking, and heterogeneity",
    "zero": false
   },
-  "reporting": {
-   "value": "its search, data, methods, and bias tests, in full",
-   "zero": false
-  },
   "outliers": {
    "value": "median shift at most 0.047 Cohen's d; 11.5% flip significance",
    "zero": false

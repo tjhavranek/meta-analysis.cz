@@ -182,8 +182,8 @@ def build(check=False):
 \t\t<div class="post">
 \t\t\t<div class="entry">
 
-<p><b>{lede}</b>, in HTML alongside the PDF. Each page carries the PDF too and, where the
-paper has one, a link to the version of record. {composition}</p>
+<p><b>{lede}</b>, in HTML alongside the PDF. Where the paper has one, the page also links
+the version of record. {composition}</p>
 
 <p class="caveat">Figures are reproduced wherever the artwork lifted cleanly off the page
 &#8212; {figs} so far. Where it did not, the caption stands on its own and the PDF has the
@@ -248,22 +248,13 @@ picture.</p>
     _meta = sum(1 for _r in csv.DictReader(open(os.path.join(ROOT, "estimates.csv"),
                                                 encoding="utf-8")))
     _other = len(rows) - _meta
-    composition = (("%d are meta-analyses and meta-research, each answering a question on "
-                    "<a href=\"/results/\">Headline results</a> \u2014 the "
-                    "<a href=\"/guidelines/guide/\">practitioner\u2019s guide</a> and the 2020 "
-                    "<a href=\"/guidelines/reporting/\">MAER-Net reporting guidelines</a> among "
-                    "them. The other %d "
-                    # Not the guidelines and the reporting standards: both of those DO
-                    # have headline rows in estimates.csv. The two without are the 2026
-                    # MAER-Net notes on AI. The reproduction is named separately because it
-                    # is neither: it is not a note on AI, and a reproduction of 110 studies
-                    # across economics and political science is not applied work in banking,
-                    # monetary policy or energy. A sentence that enumerates has to enumerate
-                    # everything, or the reader counts the categories and comes up short.
-                    "include the two 2026 MAER-Net notes on AI, a mass reproduction of 110 "
-                    "published studies, a retrospective on six meta-analyses and the lessons "
-                    "they left behind, and applied work in banking, monetary policy, public "
-                    "finance, and energy.")
+    composition = (("%d answer a question on <a href=\"/results/\">Headline results</a>. The "
+                    # Three categories, not a field list. The old sentence named the fields
+                    # the applied papers cover, and every addition made it wrong again: it
+                    # had to gain public finance, then tourism. Naming what a paper IS
+                    # survives the next addition; naming what it is ABOUT does not.
+                    "other %d are methods guidance, a mass reproduction of 110 published "
+                    "studies, and applied research.")
                    % (_meta, _other)) if _other > 0 else ""
     out = page.format(n=len(rows), lede=lede, listed=listed, figs=figs, footer=load_footer(),
                       composition=composition,

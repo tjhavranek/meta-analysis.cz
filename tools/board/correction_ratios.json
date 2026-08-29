@@ -423,10 +423,6 @@
    "why": "recorded before as ‘positive but economically small gives no scalar’, which is not what the paper does: Table 3 states an uncorrected mean of 0.103 and four bias-corrected long-run values, 0.025, 0.042, 0.036 and 0.121. It stays out because those four straddle the comparator — three below it and the Andrews-Kasy estimate above it — and the paper names no preferred one, so a midpoint would invent a central value the authors declined to give"
   },
   {
-   "project": "reporting",
-   "why": "reporting guidelines, not a meta-analysis; no corrected mean to compare"
-  },
-  {
    "project": "resource_curse",
    "why": "'weak support for a curse' gives no scalar"
   },
