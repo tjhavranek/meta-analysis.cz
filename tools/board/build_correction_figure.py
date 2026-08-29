@@ -63,7 +63,7 @@ CODEBOOKS = _either(os.path.join(BASE, "site", "api", "v1", "codebooks"),
                     os.path.join(ROOT, "api", "v1", "codebooks"))
 
 TIER_ORDER = ["range", "horizon", "table", "subsample", "ratio",
-              "method_median", "pooled", "data_mean", "benchmark"]
+              "method_median", "pooled", "data_mean", "benchmark", "illustration"]
 TIER_WORDS = {
     "range": "the central value of a range, or an upper bound",
     "horizon": "the horizon the paper leads with",
@@ -76,6 +76,8 @@ TIER_WORDS = {
     "data_mean": "a comparator computed from the released estimates, because the paper "
                  "pools none itself",
     "benchmark": "a canonical value the paper itself names, in place of a reported mean",
+    "illustration": "the worked example a methods paper applies its correction to, rather "
+                    "than a literature of its own",
 }
 
 E = lambda s: (str(s).replace("&", "&amp;").replace("<", "&lt;").replace(">", "&gt;")
@@ -134,7 +136,18 @@ def build(check=False):
     # The caption says every paper that did not qualify is written down with its reason. That
     # was false once -- 41 papers did not qualify and 27 were listed -- so it is now a build
     # gate rather than a promise.
-    accounted = {r["project"] for r in spec["rows"]} | {e["project"] for e in spec["excluded"]}
+    plotted = {r["project"] for r in spec["rows"]}
+    left_out = {e["project"] for e in spec["excluded"]}
+    # Moving a paper between the two lists is a two-step edit, and leaving it in both passed
+    # the coverage gate silently while the totals stopped adding up.
+    both = sorted(plotted & left_out)
+    if both:
+        sys.exit("correction_ratios.json both plots and excludes: " + ", ".join(both))
+    if len(spec["rows"]) + len(spec["excluded"]) != len(rows):
+        sys.exit("correction_ratios.json has %d rows and %d exclusions, which is not the %d "
+                 "papers in estimates.csv" % (len(spec["rows"]), len(spec["excluded"]),
+                                              len(rows)))
+    accounted = plotted | left_out
     unaccounted = sorted(set(rows) - accounted)
     if unaccounted:
         sys.exit("correction_ratios.json accounts for neither including nor excluding: "
@@ -470,20 +483,30 @@ def build(check=False):
            'it. ')
         + (f'<b>{len(flat)}</b> did not move. ' if flat else '')
         + f'The median revision is <b>{med:+.0f}%</b>. '
-        + (''.join(f'{r["title"]} is drawn at the right-hand edge: its <b>{r["rev"]:+.0f}%</b> '
-                   f'is off the scale. ' for r in offscale) if offscale else '')
-        + (f'The {n_approx} drawn as rings are approximate pairs. ' if n_approx else '')
-        + (f'The <b>{len(flipped)}</b> drawn with an outline are the ones where the correction '
-           f'also <b>reversed the sign</b> ('
-           + ", ".join(E(r["title"]) for r in flipped)
-           + '), which a magnitude axis cannot show. ' if flipped else '')
-        + (f'In {len(small)} of the {len(out)} both the reported and the corrected level are '
-           f'economically negligible, so a large percentage is a large relative change from a '
-           f'small base ('
-           + ", ".join(E(r["title"]) for r in small) + '). ' if small else '')
-        + 'Vertical position carries no meaning. The dots are stacked only to keep them apart.'
+        + (f'<b>{len(offscale)}</b> sit at the right-hand edge, past the end of the scale; '
+           if offscale else '')
+        + (f'<b>{n_approx}</b> rings mark an approximate pair; ' if n_approx else '')
+        + (f'<b>{len(flipped)}</b> outlines mark a correction that also reversed the sign. '
+           if flipped else '')
+        + 'Hover any dot for its own numbers, and open the note below for the rest.'
         '<details class="figmethod"><summary>How this figure is built, and which papers it '
         'leaves out</summary>'
+        + (''.join(f'<p><b>{E(r["title"])}</b> is drawn at the right-hand edge because its '
+                   f'<b>{r["rev"]:+.0f}%</b> is past the end of the scale.</p>'
+                   for r in offscale) if offscale else '')
+        + (f'<p><b>Where the sign reversed.</b> In {len(flipped)} the correction did not only '
+           'change the size of the number, it changed its direction: '
+           + ", ".join(E(r["title"]) for r in flipped)
+           + '. An axis of magnitudes cannot show that, so those dots are drawn with an '
+             'outline and say so when you hover them.</p>' if flipped else '')
+        + (f'<p><b>Where the base is small.</b> In {len(small)} of the {len(out)} both the '
+           'reported and the corrected level are economically negligible in the paper&rsquo;s '
+           'own terms ('
+           + ", ".join(E(r["title"]) for r in small)
+           + '), so a large percentage is a large relative change from a small base rather '
+             'than a large effect.</p>' if small else '')
+        + '<p>Vertical position carries no meaning. The dots are stacked only to keep them '
+          'apart.</p>'
         '<p>The index is <i>(|corrected| &minus; |mean|) / |mean|</i>, the same relative revision '
         'as Table 3 of <a href="/conventional_wisdom/">Gechert et al. (2025)</a>, which applies '
         'it to 24 literatures mostly by other researchers.</p>'

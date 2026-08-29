@@ -337,7 +337,7 @@
    "corrected_quote": "the best-practice estimate of the effect of reforms on growth for the short run reaches -0.38, and the long-run effect reaches 0.27; both are statistically significant at the 5% level.",
    "mean_quote": "Table 2, Simple average: short run -0.052, 95% confidence interval (-0.084, -0.021); long run 0.146, (0.118, 0.173).",
    "corrected_locator": "reforms2.pdf Table 2 for the simple averages and the best-practice discussion that follows it",
-   "note": "Excluded before because 'the two horizons move in OPPOSITE directions'. They do not, under the index this figure plots: in absolute magnitude the short run moves +631% and the long run +85%, both away from zero. The old reason applied signed direction to a rule that is direction-blind, and it is corrected here."
+   "note": "Excluded before because 'the two horizons move in OPPOSITE directions'. They do not, under the index this figure plots: in absolute magnitude the short run moves +631% and the long run +85%, both away from zero. The old reason applied signed direction to a rule that is direction-blind, and it is corrected here. Re-read for the off-scale check: the move is not an artefact of the best-practice construction. Table 3 puts the short-run effect beyond publication bias at -0.394 under all three estimators, and the paper says the best-practice figure of -0.38 is 'virtually no change compared with the case when we only corrected the simple average for publication bias'. Correcting for selection alone moves -0.052 to -0.394; conditioning on best practice moves it back a little. The paper's own reading is that this turns the short-run cost of reform from negligible into 'strong' on Doucouliagos's guidelines."
   },
   {
    "project": "lags",
@@ -474,19 +474,6 @@
    "corrected_locator": "euro2.pdf p.8 Table 1; the comparator 0.038 is on p.4"
   },
   {
-   "project": "fdi",
-   "corrected": 1.1,
-   "mean": -0.118804,
-   "mean_from": "codebook",
-   "mean_column": "e_w",
-   "tier": "data_mean",
-   "approximation": "the paper prints a mean for each of the three spillover channels and none for the pooling it actually analyses, so the comparator is the average of all 332 released estimates on the common effect column; the column is winsorised at 5% by the authors, not at 1% by this builder",
-   "corrected_quote": "Using these findings (which are also robust to the model uncertainty problem because we deploy Bayesian model averaging), we compute the spillover value implied by the best practice methodology in the literature for the year 2018. The result is 1.1 overall, implying that a 10-percentage-point increase in foreign presence increases domestic productivity by 11%.",
-   "note": "excluded before for a units problem that does not exist: 11% per 10 percentage points is a semi-elasticity of 1.1, the same quantity as the column. The real difficulty was the comparator, because the paper reports -0.10 horizontal, -0.16 backward and -0.09 forward and then says the three are similar enough to analyse jointly, without printing the joint mean. The comparator is therefore computed, from the released e_w column, all 332 rows, no missing values. The sign changes and the result is far off the scale; both are disclosed on the dot rather than used to delete it. The paper's own countervailing sentence belongs with the dot: 'On average, the reported spillovers seem to be zero, even after controlling for potential publication selection bias.' The 1.1 is best practice evaluated for the year 2018, which is what the row plots and what the paper concludes.",
-   "quote_source": "pdf",
-   "corrected_locator": "fdi2.pdf, Conclusion; the comparator is the mean of column e_w in /api/v1/codebooks/fdi.json, computed at build time from the 332 released estimates"
-  },
-  {
    "project": "remittances",
    "corrected": 0.039,
    "corrected_from": "method_median",
@@ -516,6 +503,19 @@
    "note": "excluded before because the four corrected values straddle the comparator and the paper names no preferred one, so a midpoint would invent a central value the authors declined to give. It enters now under a stated rule rather than a judgement: where a paper reports several correction methods, prefers none, and they agree on the substantive conclusion, the median of them is used and every one is listed. All four here are positive and all four are described by the paper as economically small, which is the agreement the rule requires. The tooltip and this note carry all four. The paper certifies the agreement the median rule requires: 'once the correction for publication bias is performed, the underlying effect of remittances on economic growth is small in all of the methodological approaches: none passes Doucouliagos's bar for a medium effect.'",
    "quote_source": "pdf",
    "corrected_locator": "remittances2.pdf, Table 3 and the paragraph that reads it; the comparator 0.103 is Table 1, row 'Simple Average', long-term column, 469 estimates"
+  },
+  {
+   "project": "correlations",
+   "corrected": 0.05,
+   "mean": 0.128,
+   "mean_from": "paper",
+   "tier": "illustration",
+   "approximation": "the worked example the paper applies its estimator to, an external psychology meta-analysis of earnings potential and romantic evaluations, rather than a literature of the paper's own; Hunter and Schmidt corroborates it at 0.047",
+   "mean_quote": "Conventional random-effects estimate the correlation of the earnings potential of the target on women's romantic evaluations as: 0.128; 95% CI (0.092, 0.164), k = 73.",
+   "corrected_quote": "On the other hand, UWLS+3 reduces the RE estimate by over 60%: 0.050, 95% CI (0.022, 0.078). That is, UWLS+3 reduces a small correlation to a trivial one by Cohen's benchmarks.",
+   "note": "excluded before as 'a methods paper about converting effects to partial correlations; no literature effect to correct'. Too broad: section 3.5 is a worked example with a conventional estimate and the paper's own focal correction for the same 73 correlations, and the paper states the revision itself, 'over 60%'. UWLS+3 is the estimator the paper introduces and recommends, not the smallest one available. The literature is external and appears nowhere else on this site, so nothing is counted twice; the ring says the dot is an illustration rather than a literature of the authors' own.",
+   "quote_source": "pdf",
+   "corrected_locator": "correlations/paper/, section 3.5 'An illustration'; both numbers are in the same two paragraphs, and the source meta-analysis is Eastwick et al. (2014)"
   }
  ],
  "excluded": [
@@ -530,10 +530,6 @@
   {
    "project": "conventional_wisdom",
    "why": "a review of 24 other meta-analyses, not a meta-analysis of one literature; its own revision figure is on its page"
-  },
-  {
-   "project": "correlations",
-   "why": "a methods paper about converting effects to partial correlations; no literature effect to correct"
   },
   {
    "project": "debate",
@@ -561,7 +557,7 @@
   },
   {
    "project": "pcc_survey",
-   "why": "a survey of estimators, not a meta-analysis of one literature"
+   "why": "a cross-literature aggregate that would count the corpus twice. Its Table 1 does give a pair, a median random-effects estimate of 0.087 against a median UWLS of 0.061 across 172 economics meta-analyses, and the paper states the revision itself: 'UWLS's median is 30% smaller than RE's.' But those 172 include partial-correlation meta-analyses that already have their own dots here, so plotting it would be plotting a summary of the figure inside the figure. That is the ground on which `conventional_wisdom` is excluded, and it has to apply to both or neither. Both medians are also medians across meta-analyses rather than means within one, which no other row is."
   },
   {
    "project": "resource_curse",
@@ -578,6 +574,10 @@
   {
    "project": "trust",
    "why": "the paper declines to estimate the quantity this figure plots, and says so: 'We do not fit a full selection model, because the target is the institutional moderators of reported slopes, not the bias-corrected mean size premium.' Its headline is which institutions move the premium, not a level."
+  },
+  {
+   "project": "fdi",
+   "why": "the corrected value is not a correction of the same quantity. To reach 1.1 the paper plugs the year of the data in at 2018, and says why: 'in order to estimate current effects - assuming the trend that we see in the literature has continued to this day'. Data year carries a coefficient of 0.150 with a posterior inclusion probability at one, so most of the distance from the released estimates' average of -0.119 is a time trend rather than a bias correction, and the comparator pools every data year in the sample. That is the same estimand shift on which `alphas` is excluded, and the paper's own conclusion about the literature points the other way: 'On average, the reported spillovers seem to be zero, even after controlling for potential publication selection bias.' The row was briefly in the figure at +826%; re-reading the paper took it back out."
   }
  ]
 }
