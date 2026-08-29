@@ -8,4 +8,4 @@ Below is the skill, open and free. You give it your paper, ideally with the data
 
 [https://github.com/tjhavranek/paper-workshop](https://github.com/tjhavranek/paper-workshop)
 
-<figure><img src="https://meta-analysis.cz/komentare/social-img/2026-06-10_p6_1.jpeg" alt="Screenshot of a page headed CRUCIBLE, the paper-workshop skill: a panel of leading experts assembled for one specific paper, arguing it out from rival schools and then rebuilding it themselves, re-running the author's code. It promises a tracked redline, a clean draft and a replication package." /></figure>
+<figure><img src="https://meta-analysis.cz/komentare/social-img/2026-06-10_p6_1.jpeg" alt="Screenshot of a page headed CRUCIBLE, the paper-workshop skill: a panel of leading experts assembled for one specific paper, arguing it out from rival schools and then rebuilding it themselves, re-running the author's code. It promises a tracked redline, a clean draft, and a replication package." /></figure>

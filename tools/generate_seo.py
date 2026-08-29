@@ -1197,7 +1197,7 @@ def main():
           "> **Licence: everything on this site is CC BY 4.0** "
            "(https://creativecommons.org/licenses/by/4.0/) — the papers, the datasets, their "
            "CSV and Parquet conversions, the pooled table, the codebooks, and this "
-           "documentation. You may use, adapt and redistribute any of it, including "
+           "documentation. You may use, adapt, and redistribute any of it, including "
            "commercially and including as training data for machine-learning models. The only "
            "condition is attribution: cite the source paper for a dataset, and the collection "
            "as DOI 10.5281/zenodo.21773678.", "", "## Papers", ""]
@@ -1245,13 +1245,13 @@ def main():
            f"- [Harmonised estimate-level table]({BASE}/data/v1/estimates_harmonised.csv): all "
            f"literatures pooled into one table, one row per harmonised observation (some "
            f"literatures contribute one row per impulse-response horizon), with effect, standard error, "
-           f"t-statistic, sample size and shared study characteristics "
+           f"t-statistic, sample size, and shared study characteristics "
            # the maturity label is DERIVED; it read "; beta)" beside a link to the 1.0.0 file
            f"(also [Parquet]({BASE}/data/v1/estimates_harmonised.parquet); version "
            f"{_api['harmonised_table']['version']})",
            f"- [Per-dataset files]({BASE}/api/v1/datapackage.json): each dataset also published "
            f"individually as Parquet and CSV, with a column-level codebook giving every variable's "
-           f"type, missingness and summary statistics — all URLs listed in datasets.json",
+           f"type, missingness, and summary statistics — all URLs listed in datasets.json",
            f"- [API documentation]({BASE}/api/v1/README.md): endpoints, usage, licence, and what "
            f"is deliberately not in the harmonised table",
            "", "## Resources", "",
@@ -1267,16 +1267,16 @@ def main():
            f"is what {BASE}/search/ runs on. Useful if you would "
            f"rather find the two pages that answer a question than read all {_n_full}",
            f"- [Every paper in full text]({BASE}/llms-full.txt): the whole corpus in one file -- "
-           f"citation, links, abstract and the complete text of all {_n_full} papers, for LLM ingestion",
+           f"citation, links, abstract, and the complete text of all {_n_full} papers, for LLM ingestion",
            f"- [Papers republished in full as HTML]({BASE}/papers/): the complete text of each "
-           f"paper -- body, tables, figures, equations and references -- readable and quotable "
+           f"paper -- body, tables, figures, equations, and references -- readable and quotable "
            f"without opening a PDF",
            f"- [Complete publication lists]({BASE}/publications/): every journal article by "
            f"Tomas Havranek, and at {BASE}/publications/irsova/ every one by Zuzana Irsova, "
            f"with DOIs and a link to the full text where this site carries it",
            f"- [About the site and who maintains it]({BASE}/about/): affiliations and ORCIDs",
            f"- [Sitemap]({BASE}/sitemap.xml): all pages and PDF full texts",
-           f"- [Commentary and interviews]({BASE}/komentare/): op-eds, columns and interviews "
+           f"- [Commentary and interviews]({BASE}/komentare/): op-eds, columns, and interviews "
            f"(mostly Czech); machine index at {BASE}/komentare/llms.txt",
            f"- [Research notes]({BASE}/notes/): short notes on methods and papers",
            f"- [How to run MAIVE]({BASE}/maive/how-to/): the four columns MAIVE needs, a worked "

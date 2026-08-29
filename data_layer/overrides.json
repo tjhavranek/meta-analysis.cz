@@ -128,7 +128,7 @@
  },
  "fdi": {
   "exclude": true,
-  "reason": "no per-estimate precision exists: the file has no standard error, t-statistic, weight or inverse-SE column, so SE-based synthesis is impossible",
+  "reason": "no per-estimate precision exists: the file has no standard error, t-statistic, weight, or inverse-SE column, so SE-based synthesis is impossible",
   "verified_by": "spillovers.R uses e_w (winsorized spillover elasticity) as the response in a Bayesian model averaging regression over moderators; the zip contains only that script and the data. No_of_firms is a log-scaled moderator, not a recoverable N",
   "note": "still fully usable for model averaging over study characteristics, as in the original paper; it is only the effect/SE table it cannot join"
  },
@@ -167,7 +167,7 @@
  "hedge": {
   "alias_of": "alphas",
   "reason": "same 1,019 estimates as the alphas project",
-  "verified_by": "effect, se and study_id are element-wise identical across all 1,019 rows; a pairwise scan of the (effect,se) value multiset over all 41 literatures found this as the only remaining duplicate pair",
+  "verified_by": "effect, se, and study_id are element-wise identical across all 1,019 rows; a pairwise scan of the (effect,se) value multiset over all 41 literatures found this as the only remaining duplicate pair",
   "note": "Two papers on one dataset. 'alphas' is kept because it fills 10 harmonised moderators against hedge's 7, and hedge's set is a strict subset, so nothing is lost. CITE the published version for these estimates: Is research on hedge fund performance published selectively? A quantitative survey, Journal of Economic Surveys 2024 (DOI on the hedge dataset entry). The hedge file remains published in full as its own dataset.",
   "evidence": "element-wise identity with the alphas dataset across all 1,019 rows; excluded as a duplicate rather than mapped from code"
  },
@@ -290,7 +290,7 @@
   "verified_by": "The paper's own replication code regresses pcc_w/se_pcc_w @ class.do:737 -- a winsorised copy of this pair, built inside the script from the raw columns. The published file carries only the raw columns, so they are what the harmonised table can offer. Found mechanically by 93_codegrep.py."
  },
  "dst": {
-  "verified_by": "dst.do labels ESTIMATE 'Estimate of the DST impact (in %)' and runs 'ivreg2 ESTIMATE SE, cluster(...)' as its main FAT-PET regression. 101 of 162 rows have ESTIMATE, SE, TSTAT and PRECISION jointly non-null; the other 61 have all four blank, so the loss is a genuinely unreported standard error, not a column choice."
+  "verified_by": "dst.do labels ESTIMATE 'Estimate of the DST impact (in %)' and runs 'ivreg2 ESTIMATE SE, cluster(...)' as its main FAT-PET regression. 101 of 162 rows have ESTIMATE, SE, TSTAT, and PRECISION jointly non-null; the other 61 have all four blank, so the loss is a genuinely unreported standard error, not a column choice."
  },
  "excess_sensitivity": {
   "verified_by": "excess.do lines 14-15: 'gen prec=1/se' and 'gen tstat=excess/se', used through the funnel-asymmetry regressions (e.g. 'ivreg2 excess se if micro==1'). All 3,127 rows carry both. The separate mpc/mpc_se pair is a different estimand and is excluded by the paper's own BMA export."

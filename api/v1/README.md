@@ -95,7 +95,7 @@ ones. Check for nulls rather than assuming.
 software expects it, not as independent information — it carries nothing `se`
 does not, and weighting by both would double-count.
 
-Provenance travels with every row. `source_file`, `effect_col` and `se_col` name
+Provenance travels with every row. `source_file`, `effect_col`, and `se_col` name
 the file and the exact columns each value came from, so any number can be traced
 back to the published dataset and checked. `se_is_derived` marks rows whose
 standard error was reconstructed rather than read directly (from a reported
@@ -139,7 +139,7 @@ the archived deposit:
 > new work from it.
 
 The deposit is immutable: it holds that version's harmonised table, index,
-codebooks and documentation, with checksums. The live files here may change; the
+codebooks, and documentation, with checksums. The live files here may change; the
 DOI will not.
 
 ## Before you pool
@@ -192,7 +192,7 @@ short-run with published averages "exaggerated twofold", and the shipped data gi
 exactly — 67 studies, 1,334 estimates, median 0.14, mean 0.15, random-effects 0.14 with a
 matching confidence interval.
 
-Per-column minimum, maximum, median and quartiles for every dataset are in its
+Per-column minimum, maximum, median, and quartiles for every dataset are in its
 codebook, so you can see the tails before you load anything.
 
 One more thing worth knowing if you use `n_obs` as an instrument, as MAIVE does:
@@ -226,7 +226,7 @@ effect/standard-error table, and the reason is recorded for each in
 
 **No per-estimate precision exists:**
 
-- **`fdi`** — no standard error, t-statistic or weight anywhere in the file.
+- **`fdi`** — no standard error, t-statistic, or weight anywhere in the file.
   Model averaging over its moderators still works; that is what the paper does.
 - **`lags`** — its outcome is a transmission lag in months, which has no
   sampling standard error.
@@ -369,10 +369,10 @@ count, or a unit that is not a study, such as a meta-analysis or an experiment.
 ## Licence
 
 **Everything here is CC BY 4.0.** The datasets, their CSV and Parquet conversions,
-the harmonised table, the index, the codebooks, this documentation and the papers
+the harmonised table, the index, the codebooks, this documentation, and the papers
 themselves.
 
-You may use, adapt and redistribute any of it, for any purpose, including
+You may use, adapt, and redistribute any of it, for any purpose, including
 commercially and **including as training data for machine-learning models**. You
 do not need to ask. Every dataset in `datasets.json` carries
 `rights_status: cc-by-4.0` and a `license_url`, so nothing here requires a

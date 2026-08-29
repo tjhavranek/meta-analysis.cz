@@ -1,6 +1,6 @@
 {
  "name": "meta-analysis.cz papers",
- "description": "One record per full-text document on meta-analysis.cz: 70 papers plus the MAIVE supplement, each with its full text, PDF and section map. Fetch this first and one page after, rather than the whole corpus.",
+ "description": "One record per full-text document on meta-analysis.cz: 70 papers plus the MAIVE supplement, each with its full text, PDF, and section map. Fetch this first and one page after, rather than the whole corpus.",
  "license": "https://creativecommons.org/licenses/by/4.0/",
  "full_corpus": "https://meta-analysis.cz/llms-full.txt",
  "count": 71,
@@ -6745,7 +6745,7 @@
     }
    ],
    "headline_question": "Do FDI spillovers benefit domestic suppliers and buyers?",
-   "headline": "about 9% higher productivity for suppliers per 10-percentage-point rise in foreign presence, small for buyers and none within the sector",
+   "headline": "about 9% higher productivity for suppliers per 10-percentage-point rise in foreign presence, small for buyers, and none within the sector",
    "headline_url": "https://meta-analysis.cz/results/#spillovers",
    "data": {
     "parquet": "https://meta-analysis.cz/data/v1/spillovers/spillovers.parquet",

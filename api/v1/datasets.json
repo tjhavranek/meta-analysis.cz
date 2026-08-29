@@ -10,7 +10,7 @@
   "url": "https://creativecommons.org/licenses/by/4.0/",
   "terms": "https://meta-analysis.cz/LICENSE",
   "applies_to": "everything on this site",
-  "note": "Everything here is CC BY 4.0: the research datasets, their CSV and Parquet conversions, the harmonised table, the index, the codebooks, the documentation and the deposited PDFs. Free to use, adapt, and redistribute, including commercially and including as training data for machine-learning models. The only condition is credit: cite the collection, and cite the paper whose dataset you used.",
+  "note": "Everything here is CC BY 4.0: the research datasets, their CSV and Parquet conversions, the harmonised table, the index, the codebooks, the documentation, and the deposited PDFs. Free to use, adapt, and redistribute, including commercially and including as training data for machine-learning models. The only condition is credit: cite the collection, and cite the paper whose dataset you used.",
   "machine_readable": true
  },
  "cite_as": "Havranek, T. and Z. Irsova (2026). meta-analysis.cz: harmonised estimate-level data from meta-analyses in economics. Zenodo. https://doi.org/10.5281/zenodo.21773678",
@@ -91,13 +91,13 @@
    "One row per harmonised OBSERVATION, pooled across literatures. Some literatures contribute several horizon-specific observations per underlying estimate: price_puzzle reshapes wide impulse-response columns into one row per horizon, and house_prices ships ~7 horizons per impulse response. Do not treat rows as independent estimates without checking `horizon`.",
    "Raw effect levels are not comparable across literatures; see effect_units. Analyse within each literature. Comparing across them needs an explicitly standardised measure, and relative changes are meaningful only where the baseline is safely away from zero.",
    "Moderator columns are populated only where the source dataset recorded them; check for nulls.",
-   "source_file, effect_col and se_col identify the origin of every value, so any row can be traced to the published dataset and checked.",
+   "source_file, effect_col, and se_col identify the origin of every value, so any row can be traced to the published dataset and checked.",
    "se_is_derived marks rows whose standard error was reconstructed rather than read directly.",
    "Column mappings were resolved arithmetically (effect/se must reproduce the reported t-statistic) and, where that was not decisive, taken from the paper's own replication code.",
    "The harmonisation may still be revised. For a reference that does not move, cite the archived deposit https://doi.org/10.5281/zenodo.21773678 , the concept DOI, which always resolves to the newest archived version and carries checksums."
   ],
   "excluded": {
-   "fdi": "no per-estimate precision exists: the file has no standard error, t-statistic, weight or inverse-SE column, so SE-based synthesis is impossible",
+   "fdi": "no per-estimate precision exists: the file has no standard error, t-statistic, weight, or inverse-SE column, so SE-based synthesis is impossible",
    "hedge": "duplicate of alphas: identical estimates, row for row",
    "lags": "outcome is the transmission lag (mon_bot, months to the price trough); it has no sampling standard error, so it cannot enter an effect/SE table",
    "substitution": "duplicate of eis: identical estimates, row for row"
@@ -822,7 +822,7 @@
    },
    "effect_units": "percent",
    "direction_note": "SIGN TRAP: the stored value is the impact on electricity CONSUMPTION, so NEGATIVE means savings and is the favourable direction (median -0.40). The abstract instead frames the headline as a positive magnitude, 'slight electricity savings: 0.34%'. Taking the sign at face value inverts the finding.",
-   "column_mapping_verified_by": "dst.do labels ESTIMATE 'Estimate of the DST impact (in %)' and runs 'ivreg2 ESTIMATE SE, cluster(...)' as its main FAT-PET regression. 101 of 162 rows have ESTIMATE, SE, TSTAT and PRECISION jointly non-null; the other 61 have all four blank, so the loss is a genuinely unreported standard error, not a column choice.",
+   "column_mapping_verified_by": "dst.do labels ESTIMATE 'Estimate of the DST impact (in %)' and runs 'ivreg2 ESTIMATE SE, cluster(...)' as its main FAT-PET regression. 101 of 162 rows have ESTIMATE, SE, TSTAT, and PRECISION jointly non-null; the other 61 have all four blank, so the loss is a genuinely unreported standard error, not a column choice.",
    "in_harmonised_table": true,
    "reconciliation": {
     "n_estimates_reported_in_paper": 162,
@@ -1219,7 +1219,7 @@
     "n_rows_in_harmonised_table": null,
     "note": null
    },
-   "excluded_from_harmonised_because": "no per-estimate precision exists: the file has no standard error, t-statistic, weight or inverse-SE column, so SE-based synthesis is impossible",
+   "excluded_from_harmonised_because": "no per-estimate precision exists: the file has no standard error, t-statistic, weight, or inverse-SE column, so SE-based synthesis is impossible",
    "duplicate_of": null,
    "overlaps_with": null,
    "same_literature_as": null,
@@ -1436,7 +1436,7 @@
     "sample_size": "Observations"
    },
    "effect_units": "elasticity",
-   "direction_note": "Long-run income elasticity only; see the dataset note for the short-run estimates. CAUTION on n_obs: it is the file's Observations column, and init.do does weight by sqrt(Observations), but the column counts TIME PERIODS rather than observations. Observations equals Timespan x the data frequency (1, 4 or 12 for annual, quarterly and monthly) on 100.0% of all 701 rows, exactly, so it carries no cross-sectional dimension at all. That makes it the estimation sample size for a single-series time-series study and an undercount for anything pooled across units. The 90 rows recording 1 are single-year cross sections -- Timespan 1, Start equal to End, Cross_section set on 89 of them -- where the real sample is the number of units and the file never records it. They are NOT a missing-value code, which is what an earlier version of this note supposed. Check Cross_section and the frequency dummies before using n_obs here as a precision instrument.",
+   "direction_note": "Long-run income elasticity only; see the dataset note for the short-run estimates. CAUTION on n_obs: it is the file's Observations column, and init.do does weight by sqrt(Observations), but the column counts TIME PERIODS rather than observations. Observations equals Timespan x the data frequency (1, 4, or 12 for annual, quarterly, and monthly) on 100.0% of all 701 rows, exactly, so it carries no cross-sectional dimension at all. That makes it the estimation sample size for a single-series time-series study and an undercount for anything pooled across units. The 90 rows recording 1 are single-year cross sections -- Timespan 1, Start equal to End, Cross_section set on 89 of them -- where the real sample is the number of units and the file never records it. They are NOT a missing-value code, which is what an earlier version of this note supposed. Check Cross_section and the frequency dummies before using n_obs here as a precision instrument.",
    "column_mapping_verified_by": "init.do generates se as abs(e/tstat), which is reproduced here. gas_income_revision.dta's 'e' equals mra-data.dta's Ystat exactly (n=701, mean 0.6589), matching the abstract's long-run figure.",
    "in_harmonised_table": true,
    "reconciliation": {
@@ -1607,7 +1607,7 @@
    },
    "effect_units": "percent",
    "direction_note": "Monthly return, not annualised.",
-   "column_mapping_verified_by": "effect, se and study_id are element-wise identical across all 1,019 rows; a pairwise scan of the (effect,se) value multiset over all 41 literatures found this as the only remaining duplicate pair",
+   "column_mapping_verified_by": "effect, se, and study_id are element-wise identical across all 1,019 rows; a pairwise scan of the (effect,se) value multiset over all 41 literatures found this as the only remaining duplicate pair",
    "in_harmonised_table": false,
    "reconciliation": {
     "n_estimates_reported_in_paper": null,

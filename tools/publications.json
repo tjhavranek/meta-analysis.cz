@@ -913,7 +913,8 @@
    ],
    "n_authors": 2,
    "project": "elb",
-   "type": "no-doi"
+   "type": "no-doi",
+   "url": "https://journal.fsv.cuni.cz/mag/article/show/id/1422"
   },
   {
    "title": "Measuring the Income Elasticity of Water Demand: The Importance of Publication and Endogeneity Biases",
@@ -1215,7 +1216,8 @@
    ],
    "n_authors": 2,
    "project": null,
-   "type": "no-doi"
+   "type": "no-doi",
+   "url": "https://www.transformations.knf.vu.lt/29/article/amet"
   },
   {
    "title": "Determinants of Bank Performance in Transition Countries: A Data Envelopment Analysis",
@@ -1300,7 +1302,8 @@
    ],
    "n_authors": 2,
    "project": "lags",
-   "type": "no-doi"
+   "type": "no-doi",
+   "url": "https://www.ijcb.org/journal/v9n4/transmission-lags-monetary-policy-meta-analysis"
   },
   {
    "title": "Demand for gasoline is more price-inelastic than commonly thought",
@@ -1414,7 +1417,8 @@
    ],
    "n_authors": 2,
    "project": null,
-   "type": "no-doi"
+   "type": "no-doi",
+   "url": "https://journal.fsv.cuni.cz/mag/article/show/id/1184"
   },
   {
    "title": "On the Intensity of International Subsidy Competition for FDI",
@@ -1430,7 +1434,8 @@
    ],
    "n_authors": 2,
    "project": null,
-   "type": "no-doi"
+   "type": "no-doi",
+   "url": "https://ideas.repec.org/a/agr/journl/v2(543)y2010i2(543)p25-54.html"
   },
   {
    "title": "Rose effect and the euro: Is the magic gone?",
@@ -2357,7 +2362,8 @@
    ],
    "n_authors": 2,
    "project": null,
-   "type": "no-doi"
+   "type": "no-doi",
+   "url": "https://www.transformations.knf.vu.lt/29/article/amet"
   },
   {
    "title": "Determinants of Bank Performance in Transition Countries: A Data Envelopment Analysis",
@@ -2486,7 +2492,8 @@
    ],
    "n_authors": 2,
    "project": null,
-   "type": "no-doi"
+   "type": "no-doi",
+   "url": "https://journal.fsv.cuni.cz/mag/article/show/id/1184"
   },
   {
    "title": "On the Intensity of International Subsidy Competition for FDI",
@@ -2502,7 +2509,8 @@
    ],
    "n_authors": 2,
    "project": null,
-   "type": "no-doi"
+   "type": "no-doi",
+   "url": "https://ideas.repec.org/a/agr/journl/v2(543)y2010i2(543)p25-54.html"
   }
  ]
 }

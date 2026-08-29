@@ -4,7 +4,7 @@
     <title>Research notes</title>
     <link>https://meta-analysis.cz/notes/</link>
     <atom:link href="https://meta-analysis.cz/notes/feed.xml" rel="self" type="application/rss+xml" />
-    <description>Research writing by Tomas Havranek and Zuzana Irsova, first published at MAER-Net, VoxEU, Springer Nature Research Communities, the Czech National Bank and elsewhere, collected here with a link to each original.</description>
+    <description>Research writing by Tomas Havranek and Zuzana Irsova, first published at MAER-Net, VoxEU, Springer Nature Research Communities, the Czech National Bank, and elsewhere, collected here with a link to each original.</description>
     <language>en</language>
     <lastBuildDate>Mon, 10 Aug 2026 00:00:00 +0000</lastBuildDate>
     <item>
@@ -247,7 +247,7 @@ Below is the skill, open and free. You give it your paper, ideally with the data
 <a href="https://github.com/tjhavranek/paper-workshop">https://github.com/tjhavranek/paper-workshop</a>
 </p>
 
-<figure><img src="https://meta-analysis.cz/komentare/social-img/2026-06-10_p6_1.jpeg" alt="Screenshot of a page headed CRUCIBLE, the paper-workshop skill: a panel of leading experts assembled for one specific paper, arguing it out from rival schools and then rebuilding it themselves, re-running the author's code. It promises a tracked redline, a clean draft and a replication package." /></figure>]]></content:encoded>
+<figure><img src="https://meta-analysis.cz/komentare/social-img/2026-06-10_p6_1.jpeg" alt="Screenshot of a page headed CRUCIBLE, the paper-workshop skill: a panel of leading experts assembled for one specific paper, arguing it out from rival schools and then rebuilding it themselves, re-running the author's code. It promises a tracked redline, a clean draft, and a replication package." /></figure>]]></content:encoded>
     </item>
     <item>
       <title>Stress-testing research with AI, now super easy and fully automated</title>

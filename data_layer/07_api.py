@@ -433,7 +433,7 @@ index=dict(
     terms=f"{BASE}/LICENSE",
     applies_to="everything on this site",
     note=("Everything here is CC BY 4.0: the research datasets, their CSV and Parquet "
-          "conversions, the harmonised table, the index, the codebooks, the documentation "
+          "conversions, the harmonised table, the index, the codebooks, the documentation, "
           "and the deposited PDFs. Free to use, adapt, and redistribute, including commercially "
           "and including as training data for machine-learning models. The only condition is "
           "credit: cite the collection, and cite the paper whose dataset you used."),
@@ -490,7 +490,7 @@ index=dict(
       "each literature. Comparing across them needs an explicitly standardised measure, and "
       "relative changes are meaningful only where the baseline is safely away from zero.",
       "Moderator columns are populated only where the source dataset recorded them; check for nulls.",
-      "source_file, effect_col and se_col identify the origin of every value, so any row can be "
+      "source_file, effect_col, and se_col identify the origin of every value, so any row can be "
       "traced to the published dataset and checked.",
       "se_is_derived marks rows whose standard error was reconstructed rather than read directly.",
       "Column mappings were resolved arithmetically (effect/se must reproduce the reported "

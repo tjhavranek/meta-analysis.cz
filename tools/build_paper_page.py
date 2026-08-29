@@ -895,10 +895,32 @@ def _home_label(meta, parent_label):
     It is wrong for a document filed under another project's landing: the MAER-Net
     guidelines sit under /guidelines/, which is the practitioner's guide, and has
     neither data nor code for them. Such an entry names the link itself.
+
+    And it was wrong for the applied papers, whose landings carry a PDF and nothing else.
+    /tourist/, /taxrev/, /passthrough/ and /transmission/ each hold an index, a PDF and a
+    social image; the label promised a reader data and code that are not there. The label
+    is now read off the directory rather than assumed: a landing that serves a data or code
+    file says so, and one that does not is called what it is.
     """
     if meta.get("home_label"):
         return meta["home_label"]
-    return "The paper" if parent_label else "Data and code"
+    if parent_label:
+        return "The paper"
+    return "Data and code" if _has_data_or_code(meta) else "Paper page"
+
+
+DATA_CODE_EXT = (".xlsx", ".xls", ".csv", ".do", ".R", ".r", ".py", ".dta", ".zip", ".ipynb")
+
+
+def _has_data_or_code(meta):
+    """Whether this paper's landing directory actually serves a data or code file."""
+    d = os.path.join(ROOT, (meta.get("project") or "").strip("/"))
+    if not os.path.isdir(d):
+        return False
+    for f in os.listdir(d):
+        if f.endswith(DATA_CODE_EXT):
+            return True
+    return False
 
 
 def _short_title(parent_label, label, meta):
@@ -1013,7 +1035,24 @@ def build_page(project, meta, body, toc):
         cite_meta.append('<meta name="citation_pdf_url" content="https://meta-analysis.cz%s" />'
                          % pdf)
 
-    desc = ("The full text of %s" % (ref.rstrip(". ") or title))[:300]
+    # The description a search engine and a social card show. It used to say "The full text
+    # of <reference line>" on every page, and the reference line is the PUBLISHED article.
+    # On a page that serves a working paper or a manuscript that is a contradiction the
+    # reader can see: /transmission/paper/ served the 2010 CNB working paper under its own
+    # title while the snippet announced the full text of a 2012 journal article with a
+    # different one. The snippet now says which document this is, the way the visible
+    # attribution and the citation tags already do.
+    _dv = (meta.get("version") or "record").lower()
+    _cite = ref.rstrip(". ") or title
+    if _dv == "working_paper":
+        desc = "Full text of the working paper behind %s" % _cite
+    elif _dv == "accepted_manuscript":
+        desc = "Full text of the accepted manuscript of %s" % _cite
+    elif _dv == "corrected_manuscript":
+        desc = "Full text of the corrected manuscript of %s" % _cite
+    else:
+        desc = "The full text of %s" % _cite
+    desc = desc[:300]
 
     toc_html = ""
     if len([t for t in toc if t[0] == 2]) >= 4:

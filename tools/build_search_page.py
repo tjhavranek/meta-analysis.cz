@@ -218,13 +218,13 @@ PAGE = """<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" \
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>Search</title>
 <meta name="description" content="Search every page on meta-analysis.cz: \
-{N_PAPERS} papers in full, the research notes, the datasets and the guidelines. \
+{N_PAPERS} papers in full, the research notes, the datasets, and the guidelines. \
 The search runs in your browser; nothing is sent anywhere." />
 <link rel="canonical" href="https://meta-analysis.cz/search/" />
 <meta property="og:site_name" content="meta-analysis.cz" />
 <meta property="og:type" content="website" />
 <meta property="og:title" content="Search meta-analysis.cz" />
-<meta property="og:description" content="Full-text search over the site: {N_PAPERS} papers in full, the research notes, the datasets and the guidelines." />
+<meta property="og:description" content="Full-text search over the site: {N_PAPERS} papers in full, the research notes, the datasets, and the guidelines." />
 <meta property="og:url" content="https://meta-analysis.cz/search/" />
 <link href="/style.css" rel="stylesheet" type="text/css" />
 <link href="/paper.css" rel="stylesheet" type="text/css" />

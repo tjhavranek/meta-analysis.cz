@@ -144,12 +144,12 @@ def build(check=False):
 <meta http-equiv="content-type" content="text/html; charset=utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>Papers in Full</title>
-<meta name="description" content="{lede}: {n} papers as HTML, with their text, tables, equations and references, readable without a PDF." />
+<meta name="description" content="{lede}: {n} papers as HTML, with their text, tables, equations, and references, readable without a PDF." />
 <link rel="canonical" href="https://meta-analysis.cz/papers/" />
 <meta property="og:site_name" content="meta-analysis.cz" />
 <meta property="og:type" content="website" />
 <meta property="og:title" content="Papers in Full" />
-<meta property="og:description" content="{lede}: {n} papers as HTML, with their text, tables, equations and references, readable without a PDF." />
+<meta property="og:description" content="{lede}: {n} papers as HTML, with their text, tables, equations, and references, readable without a PDF." />
 <meta property="og:url" content="https://meta-analysis.cz/papers/" />
 <script type="application/ld+json">{jsonld}</script>
 <link href="/style.css" rel="stylesheet" type="text/css" />
@@ -182,8 +182,8 @@ def build(check=False):
 \t\t<div class="post">
 \t\t\t<div class="entry">
 
-<p><b>{lede}</b>, as HTML rather than PDF. Each keeps its PDF and, where the paper has
-one, its link to the version of record. {composition}</p>
+<p><b>{lede}</b>, in HTML alongside the PDF. Each page carries the PDF too and, where the
+paper has one, a link to the version of record. {composition}</p>
 
 <p class="caveat">Figures are reproduced wherever the artwork lifted cleanly off the page
 &#8212; {figs} so far. Where it did not, the caption stands on its own and the PDF has the
@@ -249,7 +249,10 @@ picture.</p>
                                                 encoding="utf-8")))
     _other = len(rows) - _meta
     composition = (("%d are meta-analyses and meta-research, each answering a question on "
-                    "<a href=\"/results/\">Headline results</a>. The other %d carry no "
+                    "<a href=\"/results/\">Headline results</a> \u2014 the "
+                    "<a href=\"/guidelines/guide/\">practitioner\u2019s guide</a> and the 2020 "
+                    "<a href=\"/guidelines/reporting/\">MAER-Net reporting guidelines</a> among "
+                    "them. The other %d "
                     # Not the guidelines and the reporting standards: both of those DO
                     # have headline rows in estimates.csv. The two without are the 2026
                     # MAER-Net notes on AI. The reproduction is named separately because it
@@ -257,9 +260,9 @@ picture.</p>
                     # across economics and political science is not applied work in banking,
                     # monetary policy or energy. A sentence that enumerates has to enumerate
                     # everything, or the reader counts the categories and comes up short.
-                    "headline result of their own: the two 2026 MAER-Net notes on AI, a "
-                    "mass reproduction of 110 published studies, and applied work in "
-                    "banking, monetary policy and energy.")
+                    "include the two 2026 MAER-Net notes on AI, a mass reproduction of 110 "
+                    "published studies, and applied work in banking, monetary policy, public "
+                    "finance, and energy.")
                    % (_meta, _other)) if _other > 0 else ""
     out = page.format(n=len(rows), lede=lede, listed=listed, figs=figs, footer=load_footer(),
                       composition=composition,

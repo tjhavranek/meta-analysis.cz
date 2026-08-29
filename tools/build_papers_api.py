@@ -141,7 +141,7 @@ def build():
     out = {
         "name": "meta-analysis.cz papers",
         "description": ("One record per full-text document on meta-analysis.cz: %d papers "
-                        "plus the MAIVE supplement, each with its full text, PDF and section "
+                        "plus the MAIVE supplement, each with its full text, PDF, and section "
                         "map. Fetch this first and one page after, rather than the whole "
                         "corpus." % n_papers),
         "license": "https://creativecommons.org/licenses/by/4.0/",

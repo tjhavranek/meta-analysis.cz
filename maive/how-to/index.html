@@ -175,7 +175,7 @@ before your estimator ever sees the data.</p>
 <a href="/maive/how-to/alpha.csv">alpha.csv</a>; send all of them to get the numbers above.</p>
 <p>Full protocol, if your assistant cannot read links:</p>
 <pre class="code prompt"><code>Run MAIVE on my data via the EasyMeta API (POST api.maive.eu/v1/run-model).
-Send "data" as row objects with effect, se and n_obs. n_obs is the total
+Send "data" as row objects with effect, se, and n_obs. n_obs is the total
 sample size behind the estimate, not degrees of freedom; never guess it or
 back it out of the standard error. Add study_id only where several estimates
 come from one primary study: never invent it, and ask if the grouping is
@@ -191,7 +191,7 @@ errors and the F without any error. Check firstStage.mode is "log" in the
 response; anything else means the settings did not take effect.
 
 Read effectEstimate, standardError, firstStageFStatistic, publicationBias,
-hausmanTest, andersonRubinCI and seInstrumented from the response, and compute
+hausmanTest, andersonRubinCI, and seInstrumented from the response, and compute
 the simple mean from the effects you sent. Report the corrected estimate
 against that mean, the first-stage F, the Egger and Hausman tests, and the
 Anderson-Rubin interval whenever F &lt; 10, in place of the point estimate.
@@ -207,7 +207,7 @@ Never report numbers you did not receive or compute from the data you sent.</cod
 </details>
 
 <p class="aside">MAIVE is not tied to PET-PEESE. EasyMeta will apply the same correction to
-PET, PEESE or the endogenous kink model, and it also runs weighted least squares and
+PET, PEESE, or the endogenous kink model, and it also runs weighted least squares and
 RTMA.</p>
 
 <p class="provenance">Computed with EasyMeta on meta-analysis.cz data v1.1.1,

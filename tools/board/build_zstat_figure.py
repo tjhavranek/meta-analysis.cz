@@ -229,7 +229,7 @@ def build(check=False):
         'threshold: at 1.645 and at 2.576 the count falls as they are crossed instead of '
         'jumping. What the picture shows is the '
         'shape of the distribution; it does not measure p-hacking. Selective reporting, '
-        'specification search and genuinely large effects all leave marks here, and '
+        'specification search, and genuinely large effects all leave marks here, and '
         'estimates are clustered within studies. The bin counts are in '
         '<a href="/data/v1/t_distribution.csv">t_distribution.csv</a>.</p>')
 

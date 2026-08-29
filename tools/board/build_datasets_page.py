@@ -245,7 +245,7 @@ def build():
 empirical meta-analyses on this site, each in a standard format.</p>
 
 <p><b>There are two products here.</b> The <i>archive</i> publishes each paper's original
-file with automatic CSV and Parquet conversions, a codebook and a DOI. The <i>harmonised
+file with automatic CSV and Parquet conversions, a codebook, and a DOI. The <i>harmonised
 table</i> pools those datasets into one file with a common set of columns, so they can be
 compared across literatures{harmonised_maturity}. For one paper's data use the archive; to
 work across literatures use the harmonised table, and read its caveats below.</p>
@@ -269,7 +269,7 @@ which is smaller and keeps column types.</p>
 df = pd.read_parquet("https://meta-analysis.cz/data/v1/estimates_harmonised.parquet")</code></pre>
 
 <p class="caveat">Raw effect levels are not comparable across literatures. An elasticity, a
-partial correlation and a dollar value per tonne of carbon all sit in the same column;
+partial correlation, and a dollar value per tonne of carbon all sit in the same column;
 <code>effect_units</code> records which is which. Analyse within each literature. Comparing
 across them needs an explicitly standardised measure, and relative changes are meaningful only
 where the baseline is safely away from zero.</p>
@@ -324,10 +324,21 @@ every dataset where they differ.</p>
 <h2>Machine-readable</h2>
 
 <p>The whole collection is available as JSON: an
-<a href="/api/v1/datasets.json">index of every dataset</a> with paper, DOI, file URLs and
+<a href="/api/v1/datasets.json">index of every dataset</a> with paper, DOI, file URLs, and
 column roles, a <a href="/api/v1/datapackage.json">Frictionless data package</a>, and a
 <a href="/api/v1/croissant.json">Croissant record</a>. Full documentation is in the
 <a href="/api/v1/README.md">API README</a>.</p>
+
+<h2>Who else has used these datasets</h2>
+
+<p>Slichter and Tran ask whether better journals publish better estimates, and answer with
+14,387 published estimates from 24 literatures. Eleven of those literatures are datasets from
+this page &#8212; more than half the estimates. Their finding is that within a literature the
+mean and variance of published estimates have little or no correlation with journal rank: the
+chance that an estimate drawn from a top journal is closer to the truth than one drawn from a
+mid-ranked journal is about 51%, a coin flip. The paper is accepted at the
+<i>Journal of Political Economy: Microeconomics</i>; until it appears there, it is
+<a href="https://www.iza.org/publications/dp/17960">IZA Discussion Paper 17960</a>.</p>
 
 <h2>Licence and citation</h2>
 
@@ -337,7 +348,7 @@ BY 4.0</a></strong>, including for training, provided you give credit.
 is in the footer of every page.</p>
 
 <p><strong>Each dataset was assembled for a specific paper. When you use one, cite that
-paper.</strong> The index carries every paper's title, authors and DOI. That is how attribution
+paper.</strong> The index carries every paper’s title, authors, and DOI. That is how attribution
 under CC BY is satisfied here.</p>
 
 <p>The Zenodo identifier in that footer is the concept DOI: it always resolves to the newest

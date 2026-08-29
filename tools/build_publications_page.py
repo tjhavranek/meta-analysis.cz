@@ -72,6 +72,13 @@ def item(r):
     links = []
     if r["doi"]:
         links.append(f'<a href="https://doi.org/{E(r["doi"])}">doi</a>')
+    # Five of these articles have no DOI at all: two Czech Journal of Economics and Finance
+    # papers, the International Journal of Central Banking one, Transformations in Business
+    # and Economics, and Theoretical and Applied Economics. None of those journals deposits
+    # with Crossref, and the SSRN preprint DOI that a search turns up is a different document
+    # from the article. The publisher's own page for the article is the honest substitute.
+    elif r.get("url"):
+        links.append(f'<a href="{E(r["url"])}">publisher</a>')
     if r["project"]:
         links.append(f'<a href="{site_url(r["project"])}">full text on this site</a>')
     if links:
@@ -128,7 +135,8 @@ def jsonld(person, records):
             {"@type": "ScholarlyArticle", "name": r["title"],
              **({"datePublished": str(r["year"])} if r["year"] else {}),
              **({"isPartOf": {"@type": "Periodical", "name": r["venue"]}} if r["venue"] else {}),
-             **({"sameAs": f"https://doi.org/{r['doi']}"} if r["doi"] else {}),
+             **({"sameAs": f"https://doi.org/{r['doi']}"} if r["doi"]
+                else {"sameAs": r["url"]} if r.get("url") else {}),
              **({"url": site_url(r["project"])} if r["project"] else {})}
             for r in records],
     }, indent=1, ensure_ascii=False)

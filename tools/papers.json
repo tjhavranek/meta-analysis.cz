@@ -2245,7 +2245,7 @@
   "year": 2017,
   "journal": "Economic Modelling",
   "doi_or_publisher_url": "https://doi.org/10.1016/j.econmod.2016.08.025",
-  "one_line": "Extreme-value analysis of the Czech, Polish, Slovak and Turkish banking sectors from 1994 to 2013 finds contagion risk from a foreign parent bank to its subsidiary is substantially smaller than between two local banks.",
+  "one_line": "Extreme-value analysis of the Czech, Polish, Slovak, and Turkish banking sectors from 1994 to 2013 finds contagion risk from a foreign parent bank to its subsidiary is substantially smaller than between two local banks.",
   "meta_keywords": "systemic risk, extreme value theory, financial stability, Central and Eastern Europe, banking, parent-subsidiary relationship",
   "menu_links": [
    {
@@ -2286,7 +2286,7 @@
   "year": 2014,
   "journal": "Journal of Financial Stability",
   "doi_or_publisher_url": "https://doi.org/10.1016/j.jfs.2014.07.001",
-  "one_line": "A new quarterly dataset of banking, debt and currency crises in 40 developed countries from 1970 to 2010: banking crises usually come first, cost the most, and follow booms in credit and activity. A later and substantially different version was published in the Journal of Financial Stability in 2014 (doi.org/10.1016/j.jfs.2014.07.001).",
+  "one_line": "A new quarterly dataset of banking, debt, and currency crises in 40 developed countries from 1970 to 2010: banking crises usually come first, cost the most, and follow booms in credit and activity. A later and substantially different version was published in the Journal of Financial Stability in 2014 (doi.org/10.1016/j.jfs.2014.07.001).",
   "meta_keywords": "Early warning indicators, Bayesian model averaging, macro-prudential policies",
   "menu_links": [
    {
@@ -2390,7 +2390,7 @@
   "year": 2013,
   "journal": "Journal of International Money and Finance",
   "doi_or_publisher_url": "https://doi.org/10.1016/j.jimonfin.2013.01.001",
-  "one_line": "Bayesian model averaging over crises in EU and OECD countries from 1970 to 2010 identifies domestic housing prices, share prices and credit growth as the leading indicators of what a crisis costs.",
+  "one_line": "Bayesian model averaging over crises in EU and OECD countries from 1970 to 2010 identifies domestic housing prices, share prices, and credit growth as the leading indicators of what a crisis costs.",
   "meta_keywords": "Early warning indicators, Bayesian model averaging, Panel VAR, Dynamic panel, Crises",
   "menu_links": [
    {
@@ -2466,7 +2466,7 @@
     "href": "/ews/cdec40_40_at_least_two.xls"
    }
   ],
-  "one_line": "A quarterly dataset of banking, debt and currency crises in 40 developed countries from 1970 to 2010: banking crises usually come first and cost the most, and booms in credit and activity precede them.",
+  "one_line": "A quarterly dataset of banking, debt, and currency crises in 40 developed countries from 1970 to 2010: banking crises usually come first and cost the most, and booms in credit and activity precede them.",
   "meta_keywords": "early warning indicators, banking crises, currency crises, debt crises, Bayesian model averaging, macroprudential policy",
   "earlier_version": {
    "project": "crisis_ews",
@@ -3054,7 +3054,7 @@
   "year": 2012,
   "journal": "Economic Change and Restructuring",
   "doi_or_publisher_url": "https://doi.org/10.1007/s10644-011-9106-z",
-  "one_line": "Bank liquidity, loan loss provisions, non-performing loans, credit and the Prague stock index all move with Czech GDP and prices, and adding them to a block-restriction VAR usually sharpens the forecast; only the stock index does so in every period, including the crisis.",
+  "one_line": "Bank liquidity, loan loss provisions, non-performing loans, credit, and the Prague stock index all move with Czech GDP and prices, and adding them to a block-restriction VAR usually sharpens the forecast; only the stock index does so in every period, including the crisis.",
   "meta_keywords": "monetary transmission, financial variables, forecasting, vector autoregression, bank liquidity, loan loss provisions, non-performing loans, Czech Republic",
   "menu_links": [
    {
