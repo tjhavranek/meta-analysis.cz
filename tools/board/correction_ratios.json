@@ -3,7 +3,7 @@
  "rule": {
   "include": "the paper states, in its own words, a single corrected or best-practice value for ONE clearly defined estimand -- the whole literature where it gives one, otherwise a named horizon or subsample -- AND a comparator for that same estimand in the same units and the same transform: either the paper's own uncorrected/reported mean, or a value commensurate with its estimate-level effect column. Anything narrower than the whole literature, or read off a table rather than the headline, or taken as the central value of a range or an upper bound, is admitted under `tier` and drawn as a ring with a note saying so.",
   "comparator": "the paper's own stated mean if it states one -- it is the published comparator and the authors chose it -- otherwise the 1%-winsorised mean of the estimate-level data",
-  "exclude": "ranges, several values for different horizons or subsamples, narrative answers, a different estimand, units that do not match, a headline value that is not itself a correction, a second row on a literature already represented, and any case where two defensible comparators disagree about the DIRECTION. Note what is NOT excluded: a best-practice figure computed as a synthetic study at the literature's preferred values. That is how these papers construct best practice and how Gechert et al. build their corrected column; excluding it would remove most papers' own headline conclusions. The rows concerned say so in their notes.",
+  "exclude": "ranges, several values for different horizons or subsamples, narrative answers, a different estimand, units that do not match, a headline value that is not itself a correction, a second row on a literature already represented, and any case where two defensible comparators disagree about the DIRECTION. \"Defensible comparator\" means one of the two the comparator clause names, the paper's own stated mean or the winsorised mean of the estimate-level data -- not any statistic that can be computed from the column. Reading it loosely kept `incentives` out on a median and an inverse-variance mean, while the two comparators the rule actually names agreed to three decimals. Note what is NOT excluded: a best-practice figure computed as a synthetic study at the literature's preferred values. That is how these papers construct best practice and how Gechert et al. build their corrected column; excluding it would remove most papers' own headline conclusions. The rows concerned say so in their notes.",
   "direction_blind": "The rule was rewritten after an adversarial review found that every paper whose correction moved the number AWAY from zero had landed in the excluded set. Nothing in the rule refers to the sign of the revision, and `migrant` (+69%) and `armington` (+144%) are in the figure because the rule admits them, not despite it. If a future paper moves up, it appears.",
   "verbal_zero": "A paper that says its corrected effect is 'about zero', 'negligible' or 'insignificant' without giving a number does NOT enter as 0. Coding a verbal hedge as an exact zero forces exactly -100% and would have put four such papers at the extreme of the figure. Insignificance is not a point estimate."
  },
@@ -335,6 +335,50 @@
    "mean_quote": "Table 2, Simple average: short run -0.052, 95% confidence interval (-0.084, -0.021); long run 0.146, (0.118, 0.173).",
    "corrected_locator": "reforms2.pdf Table 2 for the simple averages and the best-practice discussion that follows it",
    "note": "Excluded before because 'the two horizons move in OPPOSITE directions'. They do not, under the index this figure plots: in absolute magnitude the short run moves +631% and the long run +85%, both away from zero. The old reason applied signed direction to a rule that is direction-blind, and it is corrected here."
+  },
+  {
+   "project": "lags",
+   "corrected": 29.2,
+   "mean": 33.5,
+   "mean_from": "paper",
+   "corrected_quote": "The average transmission lag implied by our definition of the ideal study is 29.2 months, which is less than the simple average by approximately 4 months.",
+   "note": "the paper states both sides in one sentence. Its best-practice figure is the synthetic ideal study the rule admits: the BMA results evaluated at best-practice methodology and maximum publication characteristics, everything else at sample means. The comparator, 33.5 months, is the simple average of all 198 collected transmission lags. This was recorded as excluded for 'no estimate-level data on this site and no stated pair'. The first half is true and stops mattering once the comparator comes from the paper rather than from the data; the second half was simply wrong.",
+   "quote_source": "pdf",
+   "corrected_locator": "lags2.pdf p.18, the ideal-study paragraph after Table 5; the comparator 33.5 is on p.6 and in Table 2, row 'Estimates from all Impulse Responses', 198 observations"
+  },
+  {
+   "project": "house_prices",
+   "corrected": -1.2,
+   "mean": -1.2,
+   "mean_from": "paper",
+   "corrected_quote": "The mean maximum corrected semi-elasticity is −1.2, which suggests, in practical terms, insufficiently strong transmission of monetary policy to house prices",
+   "note": "both numbers are the two-year peak of the impulse response, so the pair is commensurate: this was excluded before as 'a peak against an average', which was wrong, because the paper states its own simple uncorrected mean OF THAT PEAK, −1.2%. The two offset exactly at the precision the paper reports. That is the paper's own finding rather than an artefact: correcting for publication bias alone moves the response to −0.23%, an 81% move toward zero, and conditioning on best practice moves it back. Table 3's baseline row puts the precise corrected peak at −1.154 at the eight-quarter horizon, so a reader working from the table rather than the text would see −4% instead of 0%; both readings say the number did not move.",
+   "quote_source": "pdf",
+   "corrected_locator": "house_prices2.pdf p.26, the paragraph reading Table 3; the comparator is on p.14, '−0.23% after two years compared to the simple uncorrected mean estimate of −1.2%'"
+  },
+  {
+   "project": "spillovers",
+   "corrected": 0.94,
+   "mean": 0.88,
+   "mean_from": "paper",
+   "tier": "subsample",
+   "approximation": "backward spillovers, the channel the paper's best-practice exercise is built on, rather than all three channels its abstract reports",
+   "corrected_quote": "Such defined best-practice estimate of the underlying semi-elasticity, e0, reaches 0.94 and is significant at the 1% level with the 95% confidence interval (0.66, 1.21).",
+   "note": "this was excluded on the ground that '9% higher productivity per 10-percentage-point rise in foreign presence' is not the elasticity the effect column holds. The units objection dissolves once the comparator comes from the paper: 9% per 10 percentage points IS a semi-elasticity of 0.9, and the paper prints the precise best-practice value, 0.94, against its own arithmetic average of all published backward-spillover estimates, 0.88. The same paper also reports a publication-bias-corrected 0.178 against that same 0.88, a fivefold exaggeration and an 80% move toward zero. The row plots the best-practice value because that is the paper's headline and what the rule prefers, and because house_prices is read the same way: publication-bias correction shrinks the number and best practice moves it back.",
+   "quote_source": "pdf",
+   "corrected_locator": "spillovers2.pdf p.7, the best-practice paragraph in Section 4; the comparator 0.88 is on p.4, 'The arithmetic average of all published estimates of backward spillovers is 0.88'"
+  },
+  {
+   "project": "incentives",
+   "corrected": 0.031,
+   "mean": 0.051,
+   "mean_from": "paper",
+   "tier": "table",
+   "approximation": "both numbers are read off tables rather than the abstract: best practice from Table 5, the comparator from Table 1's unweighted mean of all 1,252 estimates. The running text rounds the corrected value to 0.03",
+   "corrected_quote": "The overall mean incentive-performance effect based on our definition of “best practice” described above is 0.03.",
+   "note": "this was excluded on the direction clause, on the ground that the literature's median (0.0221) and its inverse-variance mean (0.0174) put the corrected 0.031 ABOVE the comparator while the paper's own mean puts it below. That was a misreading of the rule. The comparator clause names exactly two candidates, the paper's own stated mean and the 1%-winsorised mean of the estimate-level data, and here they agree to three decimals: the paper states 0.051 and the shipped data winsorise to 0.0508. A median and an inverse-variance mean are neither of those. Nothing disagrees, and the row goes in at -39%.",
+   "quote_source": "pdf",
+   "corrected_locator": "incentives.pdf p.31 for the prose and p.30 Table 5, row 'Mean best practice', 0.031 with 95% confidence interval (-0.034, 0.095); the comparator 0.051 is on p.11 and in Table 1 on p.10, row 'All estimates', unweighted, 1,252 estimates"
   }
  ],
  "excluded": [
@@ -368,11 +412,11 @@
   },
   {
    "project": "fdi",
-   "why": "the corrected value is not in the units of its own estimate-level column, the same problem as spillovers"
+   "why": "the correction flips the sign, and the figure's axis cannot say that. The paper reports three mean spillovers, all negative -- −0.10 horizontal, −0.16 backward, −0.09 forward -- and no single pooled comparator, while its best-practice value for 2018 is +1.1. A ratio of magnitudes across a sign flip does not mean what this figure means. (The earlier reason here, that the corrected value is not in the units of the estimate-level column, was wrong on both counts: 11% per 10 percentage points is a semi-elasticity of 1.1, and spillovers, the paper it pointed at, is now in the figure.)"
   },
   {
    "project": "forward",
-   "why": "two ranges, developed and emerging currencies"
+   "why": "two subsample intervals and a sign flip. Correction yields (0.23, 0.45) for developed and (0.95, 1.16) for emerging currencies, with no pooled value, and the reported mean slope is negative in both the literature as a whole and the developed-currency subsample. Choosing one subsample would be arbitrary, and comparing magnitudes across a sign flip would not mean what this figure means."
   },
   {
    "project": "guidelines",
@@ -383,20 +427,8 @@
    "why": "the headline 0.4 is the MEAN REPORTED estimate, not a corrected one -- its own caveat says 'with no correction for publication bias'. Plotting it would invert the figure's meaning."
   },
   {
-   "project": "house_prices",
-   "why": "the corrected -1.2% is the mean MAXIMUM of an impulse response; the estimate-level column holds average semi-elasticities. A peak against an average is not a ratio. Its own caveat records an upward move: publication-bias correction alone gives 0.23%, best practice offsets it back to 1.2%"
-  },
-  {
-   "project": "incentives",
-   "why": "the paper states a matched pair, a raw mean partial correlation of 0.051 against Table 5’s mean best practice of 0.031, a 39% move toward zero. It stays out on the direction clause and only that: on the same commensurate column the literature’s median is 0.0221 and its inverse-variance mean 0.0174, so both of those put 0.031 ABOVE the comparator, +40% and +78%. Two defensible comparators disagreeing about which way the number moved is the case this rule declines to plot"
-  },
-  {
    "project": "inflation",
    "why": "the headline 0.6 is not a correction: the paper calls it 'the paper-level average of these two polar cases over the actual composition of the literature', and finds that cross-study variation is driven by real modelling choices rather than by selective reporting, demoting its funnel intercepts to diagnostics. Excluded on the same ground as habits"
-  },
-  {
-   "project": "lags",
-   "why": "no estimate-level data on this site and no stated pair"
   },
   {
    "project": "maive",
@@ -424,15 +456,11 @@
   },
   {
    "project": "resource_curse",
-   "why": "'weak support for a curse' gives no scalar"
-  },
-  {
-   "project": "spillovers",
-   "why": "'9% higher productivity per 10-percentage-point rise in foreign presence' is not the elasticity the effect column holds"
+   "why": "four corrected values that disagree about the sign. Table 3 gives constants of +0.026, +0.038, −0.589 and −0.133 against a simple mean partial correlation of −0.078, and the paper names no preferred one, concluding only that support for the curse is weak. (Recorded before as 'gives no scalar', which understated the problem: it gives four.)"
   },
   {
    "project": "spillovers_bias",
-   "why": "a quantitative survey of publication selection itself; its headline is about the literature's selection, not a corrected effect"
+   "why": "the same 3,626 estimates are already in the figure as `spillovers`, and one literature gets one dot. This paper does state a pair -- a publication-bias-corrected backward spillover of 0.12 against a simple average of 1.14 for estimates in high-quality journals, an 89% move toward zero -- but plotting it beside `spillovers` at +7% would put the same literature in the figure twice with opposite answers, which is the ground on which `alphas` is excluded. The two differ because this paper corrects for publication bias alone while its companion also conditions on best practice; the `spillovers` note records both."
   },
   {
    "project": "students",
@@ -444,7 +472,7 @@
   },
   {
    "project": "trust",
-   "why": "a narrative answer about moderators, not a level"
+   "why": "the paper declines to estimate the quantity this figure plots, and says so: 'We do not fit a full selection model, because the target is the institutional moderators of reported slopes, not the bias-corrected mean size premium.' Its headline is which institutions move the premium, not a level."
   }
  ]
 }
