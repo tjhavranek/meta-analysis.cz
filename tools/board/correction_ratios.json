@@ -358,13 +358,15 @@
   },
   {
    "project": "house_prices",
-   "corrected": -1.2,
+   "corrected": -1.154,
    "mean": -1.2,
    "mean_from": "paper",
    "corrected_quote": "The mean maximum corrected semi-elasticity is −1.2, which suggests, in practical terms, insufficiently strong transmission of monetary policy to house prices",
-   "note": "both numbers are the two-year peak of the impulse response, so the pair is commensurate: this was excluded before as 'a peak against an average', which was wrong, because the paper states its own simple uncorrected mean OF THAT PEAK, −1.2%. The two offset exactly at the precision the paper reports. That is the paper's own finding rather than an artefact: correcting for publication bias alone moves the response to −0.23%, an 81% move toward zero, and conditioning on best practice moves it back. Table 3's baseline row puts the precise corrected peak at −1.154 at the eight-quarter horizon, so a reader working from the table rather than the text would see −4% instead of 0%; both readings say the number did not move.",
+   "note": "both numbers are the two-year peak of the impulse response, so the pair is commensurate: this was excluded once as 'a peak against an average', which was wrong, because the paper states its own simple uncorrected mean OF THAT PEAK, -1.2%. It then sat in the figure at exactly 0%, because the paper rounds its corrected peak to -1.2 as well. That was an artefact of the rounding, and the direction is settled by Table 3, whose baseline row prints the corrected response at every horizon: -0.710, -0.716, -0.935, -1.154, -1.000, -0.714. The maximum is -1.154 at eight quarters, so the correction moves the number toward zero, by about 4% against a comparator that is itself only printed to one decimal. The released data cannot settle it any more precisely: house.dta is at a different normalisation from the paper's mean impulse response, and its estimates at the eight-quarter horizon average -0.31 rather than -1.2, so the paper's printed numbers are the only source for both sides. What the paper is doing is worth keeping in view: correcting for publication bias alone moves the two-year response to -0.23%, an 81% move toward zero, and conditioning on best practice moves it nearly all the way back.",
    "quote_source": "pdf",
-   "corrected_locator": "house_prices2.pdf p.26, the paragraph reading Table 3; the comparator is on p.14, '−0.23% after two years compared to the simple uncorrected mean estimate of −1.2%'"
+   "corrected_locator": "house_prices2.pdf p.26, Table 3, first row 'Agnostic on control variables (baseline)', eight-quarter column, -1.154, and the paragraph that reads it; the comparator is on p.14, '-0.23% after two years compared to the simple uncorrected mean estimate of -1.2%', and again in the note to Table 1, 'The mean uncorrected effect at the 8-quarter horizon was -1.2'",
+   "tier": "table",
+   "approximation": "the corrected value is Table 3's baseline row at the eight-quarter horizon, -1.154, which the paper's prose rounds to -1.2; the comparator is printed to one decimal only, so the revision is somewhere between about 0 and -8%"
   },
   {
    "project": "spillovers",

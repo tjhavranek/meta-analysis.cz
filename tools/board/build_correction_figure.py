@@ -534,20 +534,16 @@ def build(check=False):
     caption = (
         '<figcaption class="table-note">'
         '<b>What meta-analysis did to the number.</b> '
-        'One dot per meta-analysis, placed by how far its corrected or best-practice estimate '
-        'sits from the mean the literature reported. <b>Red</b>: smaller <i>in absolute '
-        'magnitude</i>. <b>Green</b>: larger. '
-        + (f'<b>All {len(out)} moved toward zero</b>; ' if len(down) == len(out) else
-           f'<b>{len(down)} of the {len(out)}</b> moved toward zero and <b>{n_up}</b> away from '
-           'it. ')
+        f'<b>{len(out)} of the {n_all} papers here</b> state both a mean the literature '
+        'reported and a corrected or best-practice value for it. One dot each, placed by how '
+        'far the second sits from the first. <b>Red</b>: smaller <i>in absolute magnitude</i>. '
+        '<b>Green</b>: larger. '
+        + (f'<b>All {len(out)} moved toward zero</b>. ' if len(down) == len(out) else
+           f'<b>{len(down)} moved toward zero, {n_up} away</b> from it. ')
         + (f'<b>{len(flat)}</b> did not move. ' if flat else '')
         + f'The median revision is <b>{med:+.0f}%</b>. '
-        + (f'<b>{len(offscale)}</b> sit at the right-hand edge, past the end of the scale; '
-           if offscale else '')
-        + (f'<b>{n_approx}</b> rings mark an approximate pair; ' if n_approx else '')
-        + (f'<b>{len(flipped)}</b> outlines mark a correction that also reversed the sign. '
-           if flipped else '')
-        + 'Hover any dot for its own numbers, and open the note below for the rest.'
+        + 'Hover a dot for its own numbers. The note below says how the figure is built, '
+          'which papers it leaves out, and what the rings and outlines mean.'
         '<details class="figmethod"><summary>How this figure is built, and which papers it '
         'leaves out</summary>'
         + (''.join(f'<p><b>{E(r["title"])}</b> is drawn at the right-hand edge because its '
@@ -558,6 +554,9 @@ def build(check=False):
            + ", ".join(E(r["title"]) for r in flipped)
            + '. An axis of magnitudes cannot show that, so those dots are drawn with an '
              'outline and say so when you hover them.</p>' if flipped else '')
+        + (f'<p><b>{n_approx} of the {len(out)} are drawn as a ring</b> rather than a solid '
+           'dot. A ring means the pair is approximate in a stated way; hover it and it says '
+           'which.</p>' if n_approx else '')
         + (f'<p><b>Where the base is small.</b> In {len(small)} of the {len(out)} both the '
            'reported and the corrected level are economically negligible in the paper&rsquo;s '
            'own terms ('
