@@ -186,6 +186,12 @@ def build(check=False):
             if abs(got - corrected) > 1e-9:
                 sys.exit(f"{p}: the spec says corrected {corrected:g} but the median of the "
                          f"methods it lists is {got:g}")
+            # The corrected hierarchy admits a median only where the methods agree on the
+            # substantive conclusion. Enforced here rather than left to prose: resource_curse
+            # reports +0.026, +0.038, -0.589 and -0.133 and would fail this line.
+            if any(v * got < 0 for v in vals):
+                sys.exit(f"{p}: the correction methods do not agree on the sign, so their "
+                         f"median is not a corrected value this figure can plot")
             corrected = got
         mean_from = r.get("mean_from")
         if mean_from == "ratio":
@@ -217,10 +223,14 @@ def build(check=False):
                 if abs(mean - r.get("mean", mean)) > 5e-6:
                     sys.exit(f"{p}: the spec says mean {r['mean']:g} but the codebook column "
                              f"{col} averages {mean:g}")
-            else:
+            elif mean_from in (None, "data"):
                 if p not in effects:
                     sys.exit(f"{p}: no estimate-level data, so no comparator can be computed")
                 mean = winsorised_mean(effects[p])
+            else:
+                # A typo in mean_from used to fall through to the data branch and quietly plot
+                # a comparator nobody asked for.
+                sys.exit(f"{p}: unknown mean_from {mean_from!r}")
             if abs(mean) < 1e-9:
                 sys.exit(f"{p}: the comparator is zero; the ratio is undefined")
             rev = (abs(corrected) - abs(mean)) / abs(mean) * 100.0
@@ -352,17 +362,25 @@ def build(check=False):
         mag = min(abs(r["rev"]), 100.0) / 100.0
         op = 0.30 + 0.70 * mag
         fill = "var(--rv-down)" if r["rev"] < 0 else "var(--rv-up)"
+        # What the comparator IS depends on which rung of the hierarchy it came from, and a
+        # tooltip that says "reported estimates average" over a pooled estimate or a policy
+        # benchmark asserts the opposite of the ring beside it.
+        LEAD = {"pooled": "The paper's own uncorrected pooled estimate is",
+                "benchmark": "The benchmark the paper names is",
+                "codebook": "The released estimates average"}
+        lead = LEAD.get(r.get("mean_from"), "Reported estimates average")
         if r["mean"] is None:
             tip = f'{r["title"]}. The paper states the revision itself: {r["rev"]:+.0f}%.'
         else:
-            tip = (f'{r["title"]}. Reported estimates average {r["mean"]:.3g}; '
+            tip = (f'{r["title"]}. {lead} {r["mean"]:.3g}; '
                    f'corrected or best practice {r["corrected"]:g}. {r["rev"]:+.0f}%.')
         if r["rev"] > hi:
-            tip = (f'{r["title"]}. Reported estimates average {r["mean"]:.3g}; '
+            tip = (f'{r["title"]}. {lead} {r["mean"]:.3g}; '
                    f'corrected or best practice {r["corrected"]:g}. {r["rev"]:+.0f}%, '
                    f'drawn at the edge because it is off the scale.')
         if r["tier"] != "exact" and r.get("approximation"):
-            tip += " " + r["approximation"]
+            ap = r["approximation"].strip()
+            tip += " " + ap + ("" if ap.endswith((".", "!", "?")) else ".")
         if r.get("flipped"):
             tip += (f' The sign changed, from {r["mean"]:.3g} to {r["corrected"]:g}, which the '
                     f'axis cannot show: only the change in absolute magnitude is plotted.')
@@ -459,7 +477,7 @@ def build(check=False):
            f'also <b>reversed the sign</b> ('
            + ", ".join(E(r["title"]) for r in flipped)
            + '), which a magnitude axis cannot show. ' if flipped else '')
-        + (f'In {len(small)} of them both the reported and the corrected level are '
+        + (f'In {len(small)} of the {len(out)} both the reported and the corrected level are '
            f'economically negligible, so a large percentage is a large relative change from a '
            f'small base ('
            + ", ".join(E(r["title"]) for r in small) + '). ' if small else '')
