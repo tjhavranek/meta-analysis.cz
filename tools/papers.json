@@ -3074,5 +3074,30 @@
    "number": "6/2010",
    "year": 2010
   }
+ },
+ {
+  "project": "lessons",
+  "title": "Meta-Regression Analysis in Economics: Lessons Learned",
+  "literature": "Lessons from Six Meta-Analyses",
+  "abstract": "In this paper I provide a non-technical summary of six papers on macroeconomics, international economics, and energy economics. All the papers are tied together by the use of meta-regression analysis, which is essential for the derivation of robust policy-relevant conclusions from often conflicting results presented in the empirical literature. I use meta-analysis to quantitatively synthesize the reported research results on various topics; the technique has been known and applied in medical science for many decades, but only spread to economics in the 1990s. For each topic I correct the literature for publication selection bias and filter out the effect of various misspecifications present in some primary studies.",
+  "reference_line": "Zuzana Irsova (2016): “Meta-Regression Analysis in Economics: Lessons Learned.” Biatec 24(1): 13-17.",
+  "authors": [
+   "Zuzana Irsova"
+  ],
+  "year": 2016,
+  "journal": "Biatec",
+  "volume": 24,
+  "issue": 1,
+  "page": "13-17",
+  "doi_or_publisher_url": "https://nbs.sk/publikacie/biatec-odborny-bankovy-casopis/rocnik-2016/biatec-c-1-2016/",
+  "parent": "/guidelines/",
+  "slug": "guidelines/lessons",
+  "pdf": "guidelines/lessons2016.pdf",
+  "figure": null,
+  "has_meta_description": true,
+  "meta_keywords": "meta-regression analysis, publication bias, best practice, Bayesian model averaging, funnel asymmetry test, dissertation",
+  "one_line": "Six meta-analyses in one article, and the practical lessons behind them: which studies to include, how to test for publication bias, how to choose variables, and where judgment still enters.",
+  "home_label": "Guidelines home",
+  "version": "record"
  }
 ]

@@ -261,7 +261,8 @@ picture.</p>
                     # monetary policy or energy. A sentence that enumerates has to enumerate
                     # everything, or the reader counts the categories and comes up short.
                     "include the two 2026 MAER-Net notes on AI, a mass reproduction of 110 "
-                    "published studies, and applied work in banking, monetary policy, public "
+                    "published studies, a retrospective on six meta-analyses and the lessons "
+                    "they left behind, and applied work in banking, monetary policy, public "
                     "finance, and energy.")
                    % (_meta, _other)) if _other > 0 else ""
     out = page.format(n=len(rows), lede=lede, listed=listed, figs=figs, footer=load_footer(),

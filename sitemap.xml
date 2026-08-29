@@ -18,10 +18,10 @@
   <url><loc>https://meta-analysis.cz/crisis_jfs/</loc><lastmod>2026-08-29</lastmod></url>
   <url><loc>https://meta-analysis.cz/debate/</loc><lastmod>2026-08-27</lastmod></url>
   <url><loc>https://meta-analysis.cz/discrate/</loc><lastmod>2026-08-28</lastmod></url>
-  <url><loc>https://meta-analysis.cz/dst/</loc><lastmod>2026-08-28</lastmod></url>
+  <url><loc>https://meta-analysis.cz/dst/</loc><lastmod>2026-08-29</lastmod></url>
   <url><loc>https://meta-analysis.cz/dst_slovakia/</loc><lastmod>2026-08-27</lastmod></url>
   <url><loc>https://meta-analysis.cz/education/</loc><lastmod>2026-08-28</lastmod></url>
-  <url><loc>https://meta-analysis.cz/eis/</loc><lastmod>2026-08-28</lastmod></url>
+  <url><loc>https://meta-analysis.cz/eis/</loc><lastmod>2026-08-29</lastmod></url>
   <url><loc>https://meta-analysis.cz/elb/</loc><lastmod>2026-08-27</lastmod></url>
   <url><loc>https://meta-analysis.cz/electricity/</loc><lastmod>2026-08-28</lastmod></url>
   <url><loc>https://meta-analysis.cz/esg/</loc><lastmod>2026-08-28</lastmod></url>
@@ -34,7 +34,7 @@
   <url><loc>https://meta-analysis.cz/frisch/</loc><lastmod>2026-08-28</lastmod></url>
   <url><loc>https://meta-analysis.cz/gasoline/</loc><lastmod>2026-08-28</lastmod></url>
   <url><loc>https://meta-analysis.cz/gasoline_price/</loc><lastmod>2026-08-27</lastmod></url>
-  <url><loc>https://meta-analysis.cz/guidelines/</loc><lastmod>2026-08-28</lastmod></url>
+  <url><loc>https://meta-analysis.cz/guidelines/</loc><lastmod>2026-08-29</lastmod></url>
   <url><loc>https://meta-analysis.cz/habits/</loc><lastmod>2026-08-28</lastmod></url>
   <url><loc>https://meta-analysis.cz/hedge/</loc><lastmod>2026-08-28</lastmod></url>
   <url><loc>https://meta-analysis.cz/house_prices/</loc><lastmod>2026-08-28</lastmod></url>
@@ -103,6 +103,7 @@
   <url><loc>https://meta-analysis.cz/gasoline_price/paper/</loc><lastmod>2026-08-28</lastmod></url>
   <url><loc>https://meta-analysis.cz/guidelines/ai/</loc><lastmod>2026-08-28</lastmod></url>
   <url><loc>https://meta-analysis.cz/guidelines/guide/</loc><lastmod>2026-08-25</lastmod></url>
+  <url><loc>https://meta-analysis.cz/guidelines/lessons/</loc><lastmod>2026-08-29</lastmod></url>
   <url><loc>https://meta-analysis.cz/guidelines/reporting/</loc><lastmod>2026-08-27</lastmod></url>
   <url><loc>https://meta-analysis.cz/guidelines/reporting-ai/</loc><lastmod>2026-08-27</lastmod></url>
   <url><loc>https://meta-analysis.cz/habits/paper/</loc><lastmod>2026-08-28</lastmod></url>
@@ -213,6 +214,7 @@
   <url><loc>https://meta-analysis.cz/guidelines/guidance2026.pdf</loc><lastmod>2026-08-27</lastmod></url>
   <url><loc>https://meta-analysis.cz/guidelines/guide.pdf</loc><lastmod>2026-06-25</lastmod></url>
   <url><loc>https://meta-analysis.cz/guidelines/guidelines2.pdf</loc><lastmod>2026-06-25</lastmod></url>
+  <url><loc>https://meta-analysis.cz/guidelines/lessons2016.pdf</loc><lastmod>2026-08-29</lastmod></url>
   <url><loc>https://meta-analysis.cz/guidelines/reporting2020.pdf</loc><lastmod>2026-08-26</lastmod></url>
   <url><loc>https://meta-analysis.cz/guidelines/reporting2026.pdf</loc><lastmod>2026-08-27</lastmod></url>
   <url><loc>https://meta-analysis.cz/habits/appendix.pdf</loc><lastmod>2026-06-25</lastmod></url>
@@ -550,7 +552,7 @@
   <url><loc>https://meta-analysis.cz/data/v1/estimates_harmonised.parquet</loc><lastmod>2026-08-28</lastmod></url>
   <url><loc>https://meta-analysis.cz/estimates.csv</loc><lastmod>2026-08-29</lastmod></url>
   <url><loc>https://meta-analysis.cz/llms.txt</loc><lastmod>2026-08-29</lastmod></url>
-  <url><loc>https://meta-analysis.cz/llms-full.txt</loc><lastmod>2026-08-28</lastmod></url>
+  <url><loc>https://meta-analysis.cz/llms-full.txt</loc><lastmod>2026-08-29</lastmod></url>
   <url><loc>https://meta-analysis.cz/api/v1/codebooks/activism.json</loc><lastmod>2026-08-28</lastmod></url>
   <url><loc>https://meta-analysis.cz/api/v1/codebooks/alphas.json</loc><lastmod>2026-08-03</lastmod></url>
   <url><loc>https://meta-analysis.cz/api/v1/codebooks/armington.json</loc><lastmod>2026-08-28</lastmod></url>

@@ -1,10 +1,10 @@
 {
  "name": "meta-analysis.cz papers",
- "description": "One record per full-text document on meta-analysis.cz: 70 papers plus the MAIVE supplement, each with its full text, PDF, and section map. Fetch this first and one page after, rather than the whole corpus.",
+ "description": "One record per full-text document on meta-analysis.cz: 71 papers plus the MAIVE supplement, each with its full text, PDF, and section map. Fetch this first and one page after, rather than the whole corpus.",
  "license": "https://creativecommons.org/licenses/by/4.0/",
  "full_corpus": "https://meta-analysis.cz/llms-full.txt",
- "count": 71,
- "paper_count": 70,
+ "count": 72,
+ "paper_count": 71,
  "supplement_count": 1,
  "papers": [
   {
@@ -4322,6 +4322,82 @@
     "codebook": "https://meta-analysis.cz/api/v1/codebooks/learning.json"
    },
    "codebook_url": "https://meta-analysis.cz/api/v1/codebooks/learning.json"
+  },
+  {
+   "project": "lessons",
+   "document_type": "paper",
+   "version": "record",
+   "version_note": null,
+   "published_as": null,
+   "title": "Meta-Regression Analysis in Economics: Lessons Learned",
+   "authors": [
+    "Zuzana Irsova"
+   ],
+   "year": 2016,
+   "journal": "Biatec",
+   "doi": null,
+   "publisher_url": "https://nbs.sk/publikacie/biatec-odborny-bankovy-casopis/rocnik-2016/biatec-c-1-2016/",
+   "full_text_url": "https://meta-analysis.cz/guidelines/lessons/",
+   "project_url": "https://meta-analysis.cz/guidelines/lessons/",
+   "pdf_url": "https://meta-analysis.cz/guidelines/lessons2016.pdf",
+   "abstract": "In this paper I provide a non-technical summary of six papers on macroeconomics, international economics, and energy economics. All the papers are tied together by the use of meta-regression analysis, which is essential for the derivation of robust policy-relevant conclusions from often conflicting results presented in the empirical literature. I use meta-analysis to quantitatively synthesize the reported research results on various topics; the technique has been known and applied in medical science for many decades, but only spread to economics in the 1990s. For each topic I correct the literature for publication selection bias and filter out the effect of various misspecifications present in some primary studies.",
+   "sections": [
+    {
+     "level": 2,
+     "title": "1. Introduction",
+     "anchor": "sec-1"
+    },
+    {
+     "level": 2,
+     "title": "2. Empirical Applications of Meta-Analysis in Economics",
+     "anchor": "sec-2"
+    },
+    {
+     "level": 3,
+     "title": "2.1. Do Borders Really Slash Trade? A Meta-Analysis",
+     "anchor": "sec-2-1"
+    },
+    {
+     "level": 3,
+     "title": "2.2. A Meta-Analysis of Intra-Industry FDI Spillovers",
+     "anchor": "sec-2-2"
+    },
+    {
+     "level": 3,
+     "title": "2.3. Demand for Gasoline Is More Price-Inelastic than Commonly Thought",
+     "anchor": "sec-2-3"
+    },
+    {
+     "level": 3,
+     "title": "2.4. Publication Bias in the Literature on FDI Spillovers",
+     "anchor": "sec-2-4"
+    },
+    {
+     "level": 3,
+     "title": "2.5. Cross-Country Heterogeneity in Intertemporal Substitution",
+     "anchor": "sec-2-5"
+    },
+    {
+     "level": 3,
+     "title": "2.6. Selective Reporting and the Social Cost of Carbon",
+     "anchor": "sec-2-6"
+    },
+    {
+     "level": 2,
+     "title": "3. Conclusion: Lessons Learned",
+     "anchor": "sec-3"
+    },
+    {
+     "level": 2,
+     "title": "REFERENCES",
+     "anchor": "sec-references"
+    },
+    {
+     "level": 2,
+     "title": "ENDNOTES",
+     "anchor": "sec-endnotes"
+    }
+   ]
   },
   {
    "project": "maive",
