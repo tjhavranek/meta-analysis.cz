@@ -260,10 +260,16 @@ picture.</p>
     composition = (("%d answer a question on <a href=\"/results/\">Headline results</a>. The "
                     # Three categories, not a field list. The old sentence named the fields
                     # the applied papers cover, and every addition made it wrong again: it
-                    # had to gain public finance, then tourism. Naming what a paper IS
-                    # survives the next addition; naming what it is ABOUT does not.
+                    # had to gain public finance, then tourism. The last group is described
+                    # by what it studies -- an economy, a market, an institution -- and NOT
+                    # as "not meta-analysis", which was tried and is false: cbequity carries
+                    # a meta-analysis of 176 estimates and dst_slovakia extrapolates its
+                    # headline from one. What puts a paper in this group is having no
+                    # headline result of its own, which is a fact about its subject rather
+                    # than about its method.
                     "other %d are methods guidance, a mass reproduction of 110 published "
-                    "studies, and applied research.")
+                    "studies, and applied work on particular economies, markets, and "
+                    "institutions.")
                    % (_meta, _other)) if _other > 0 else ""
     out = page.format(n=len(rows), lede=lede, listed=listed, figs=figs, footer=load_footer(),
                       composition=composition,
