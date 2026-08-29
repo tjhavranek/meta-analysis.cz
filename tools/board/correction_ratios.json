@@ -1,11 +1,14 @@
 {
- "_readme": "One row per paper on meta-analysis.cz whose own headline states a SINGLE bias-corrected or best-practice value in the SAME units as that literature's estimate-level `effect` column. `corrected` is that value, read off the paper; `corrected_quote` is the sentence it comes from, verbatim from estimates.csv `source_quote`. `mean` is what the reported estimates average to: the paper's own stated simple mean where it gives one (preferred -- it is the published comparator and the authors chose it), otherwise the 1%-winsorised mean of that literature's `effect` column in site/data/v1/estimates_harmonised.csv, computed by build_correction_figure.py and never typed here. The revision is (|corrected| - |mean|) / |mean|, the same relative index as Table 3 of Gechert et al. (2025), which is his own paper. The rule is DIRECTION-BLIND and was rewritten to be so after an adversarial review; see `rule.direction_blind`. Exclusions are listed with their reason and are part of the record: the figure's caption states how many papers qualified and why the rest did not.",
+ "_readme": "One row per paper on meta-analysis.cz whose own headline states a SINGLE bias-corrected or best-practice value in the SAME units as that literature's estimate-level `effect` column. `corrected` is that value, read off the paper; `corrected_quote` is the sentence it comes from, verbatim from estimates.csv `source_quote`. `mean` is what the reported estimates average to: the paper's own stated simple mean where it gives one (preferred -- it is the published comparator and the authors chose it), otherwise the 1%-winsorised mean of that literature's `effect` column in site/data/v1/estimates_harmonised.csv, computed by build_correction_figure.py and never typed here. The revision is (|corrected| - |mean|) / |mean|, the same relative index as Table 3 of Gechert et al. (2025), which is his own paper. The rule is DIRECTION-BLIND and was rewritten to be so after an adversarial review; see `rule.direction_blind`, and `rule.sign_change` for the related point that a reversal of sign is disclosed rather than excluded. `rule.comparator` and `rule.corrected` are ordered hierarchies: the first option that exists in the paper wins, and anything below the first rung is drawn as a ring. Exclusions are listed with their reason and are part of the record: the figure's caption states how many papers qualified and why the rest did not.",
  "rule": {
   "include": "the paper states, in its own words, a single corrected or best-practice value for ONE clearly defined estimand -- the whole literature where it gives one, otherwise a named horizon or subsample -- AND a comparator for that same estimand in the same units and the same transform: either the paper's own uncorrected/reported mean, or a value commensurate with its estimate-level effect column. Anything narrower than the whole literature, or read off a table rather than the headline, or taken as the central value of a range or an upper bound, is admitted under `tier` and drawn as a ring with a note saying so.",
-  "comparator": "the paper's own stated mean if it states one -- it is the published comparator and the authors chose it -- otherwise the 1%-winsorised mean of the estimate-level data",
+  "comparator": "a fixed order, first one that exists wins. (1) the paper's own simple or raw mean for the same estimand, units, transform and horizon -- it is the published comparator and the authors chose it; (2) failing that, the paper's own uncorrected POOLED estimate of exactly that estimand, quoted; (3) failing that, the 1%-winsorised mean of the estimate-level data released here, or the mean of the released source column read from that dataset's codebook where the harmonised table does not carry the literature; (4) only where a paper reports none of those, the canonical value the paper ITSELF names as the number its field had been working with. Never import a benchmark from outside the paper merely to create a row. Anything but (1) is drawn as a ring and has to quote the sentence its comparator comes from.",
   "exclude": "ranges, several values for different horizons or subsamples, narrative answers, a different estimand, units that do not match, a headline value that is not itself a correction, a second row on a literature already represented, and any case where two defensible comparators disagree about the DIRECTION. \"Defensible comparator\" means one of the two the comparator clause names, the paper's own stated mean or the winsorised mean of the estimate-level data -- not any statistic that can be computed from the column. Reading it loosely kept `incentives` out on a median and an inverse-variance mean, while the two comparators the rule actually names agreed to three decimals. Note what is NOT excluded: a best-practice figure computed as a synthetic study at the literature's preferred values. That is how these papers construct best practice and how Gechert et al. build their corrected column; excluding it would remove most papers' own headline conclusions. The rows concerned say so in their notes.",
   "direction_blind": "The rule was rewritten after an adversarial review found that every paper whose correction moved the number AWAY from zero had landed in the excluded set. Nothing in the rule refers to the sign of the revision, and `migrant` (+69%) and `armington` (+144%) are in the figure because the rule admits them, not despite it. If a future paper moves up, it appears.",
-  "verbal_zero": "A paper that says its corrected effect is 'about zero', 'negligible' or 'insignificant' without giving a number does NOT enter as 0. Coding a verbal hedge as an exact zero forces exactly -100% and would have put four such papers at the extreme of the figure. Insignificance is not a point estimate."
+  "verbal_zero": "A paper that says its corrected effect is 'about zero', 'negligible' or 'insignificant' without giving a number does NOT enter as 0. Coding a verbal hedge as an exact zero forces exactly -100% and would have put four such papers at the extreme of the figure. Insignificance is not a point estimate.",
+  "corrected": "a fixed order too. (1) the corrected or best-practice point estimate the paper says it prefers; (2) a paper-stated corrected or best-practice value for the whole literature, or for the horizon or subsample the paper leads with; (3) where a paper reports several correction methods, prefers none of them, and they agree on the substantive conclusion, the MEDIAN of those methods, with every method listed in the row and the median computed by the builder rather than typed; (4) where the methods disagree about the sign or the substantive conclusion, exclude. Never convert 'insignificant', 'negligible', 'about zero' or 'unbiased' into a number the paper did not report.",
+  "sign_change": "A reversal of sign is NOT an exclusion. The plotted index is defined on absolute magnitudes and exists either way; deleting such rows would be a second way of letting the rule decide the finding, which is the error the direction-blind rewrite was meant to end. Instead the builder detects `mean * corrected < 0`, draws that dot outlined, and names it in the caption, the tooltip and the SVG description, because the one thing a magnitude axis cannot say is that the number changed sign. `forward` is the case that matters: its magnitude moves 1.5% while its sign goes from -0.602 to +0.611.",
+  "small_base": "Where both the reported and the corrected level are economically negligible in the paper's own terms, a large percentage is a large relative change from a small base and says less than it looks. Such a row carries `small_base` and says why in `approximation`; the builder refuses to plot it otherwise, and the caption names them. This is disclosure, not exclusion. A comparator that is a statistical zero in its own right is a different matter and stays out: `bma`'s simple mean is 0.002."
  },
  "rows": [
   {
@@ -379,6 +382,141 @@
    "note": "this was excluded on the direction clause, on the ground that the literature's median (0.0221) and its inverse-variance mean (0.0174) put the corrected 0.031 ABOVE the comparator while the paper's own mean puts it below. That was a misreading of the rule. The comparator clause names exactly two candidates, the paper's own stated mean and the 1%-winsorised mean of the estimate-level data, and here they agree to three decimals: the paper states 0.051 and the shipped data winsorise to 0.0508. A median and an inverse-variance mean are neither of those. Nothing disagrees, and the row goes in at -39%.",
    "quote_source": "pdf",
    "corrected_locator": "incentives.pdf p.31 for the prose and p.30 Table 5, row 'Mean best practice', 0.031 with 95% confidence interval (-0.034, 0.095); the comparator 0.051 is on p.11 and in Table 1 on p.14, row 'All estimates', unweighted, 1,252 estimates"
+  },
+  {
+   "project": "competition",
+   "corrected": 0.022,
+   "mean": -0.012,
+   "mean_from": "paper",
+   "tier": "table",
+   "small_base": true,
+   "approximation": "both sides are the paper's weighted all-country construction, read from Table 1 and Table 6, and both levels are far below the boundary between a zero and a small partial correlation",
+   "corrected_quote": "Table 6, Best-Practice Estimates of The Competition Coefficient, weighted: All countries 0.022 (95% CI -0.022, 0.066), Diff. 0.034",
+   "note": "excluded before against a comparator of -0.0002, the winsorised mean of the released column. That broke the comparator rule, which prefers the paper's own stated mean: Table 1 gives a weighted all-country mean of -0.012 and Table 6 prints the difference from it, 0.034, explicitly. The pairing is weighted against weighted. The unweighted pair, -0.001 against 0.038, is the same story with a denominator that is a statistical zero, which is why the weighted construction is the one used. The sign changes and both levels are negligible; the row says so twice.",
+   "quote_source": "pdf",
+   "corrected_locator": "competition2.pdf p.21 Table 6, row 'All countries', weighted column; the comparator -0.012 is p.7 Table 1, row 'All', weighted mean, 598 estimates"
+  },
+  {
+   "project": "students",
+   "corrected": -0.038,
+   "mean": -0.017,
+   "mean_from": "paper",
+   "tier": "table",
+   "small_base": true,
+   "approximation": "the best-practice value is Table 6's overall row rather than an abstract scalar, and both levels sit below the paper's own boundary between a zero and a small partial correlation",
+   "corrected_quote": "Table 6, Overall effect -0.038 (95% CI -0.079, 0.003); the table's note reads: the table presents the mean partial correlation coefficients implied by the Bayesian model averaging exercise and our definition of best practice",
+   "note": "excluded before as 'corrected about zero against a mean of -0.017, already negligible'. That is an interpretation of the levels, not a clause of the rule: the pair is the paper's own stated simple mean against its own stated best-practice value, in the same units, for the whole literature. It is a useful row precisely because better methodology made the estimate larger rather than smaller. Both levels remain negligible and the row is flagged for it.",
+   "quote_source": "pdf",
+   "corrected_locator": "students2.pdf p.14 Table 6, row 'Overall effect'; the comparator -0.017 is on p.4, 'The mean partial correlation coefficient is -0.017'"
+  },
+  {
+   "project": "price_puzzle",
+   "corrected": -0.331,
+   "mean": -0.067,
+   "mean_from": "paper",
+   "tier": "horizon",
+   "approximation": "six months, the horizon at which the paper's best-practice response bottoms out and the one its abstract leads with; both numbers are that horizon",
+   "corrected_quote": "Table 5, Consequences of misspecifications: Best practice -0.157 (3 months), -0.331 (6 months), -0.225 (12), -0.155 (18), -0.116 (36)",
+   "note": "excluded before on the ground that the corrected six-month peak could only be paired with the uncorrected maximum at thirty-six months. That was wrong: Table 3 prints the raw mean response at every horizon, including -0.067 at six months, so a same-horizon pair exists. Six months is the horizon the paper leads with, because that is where its best-practice response bottoms out; the raw average response never bottoms out inside the window at all. At thirty-six months the same comparison runs the other way, -0.116 against -0.561, a 79% move toward zero. Both are in the paper and the horizon is the whole of the difference between them, which is why the row is ringed as a horizon.",
+   "quote_source": "pdf",
+   "corrected_locator": "price_puzzle2.pdf p.24 Table 5, row 'Best practice', 6-month column; the comparator -0.067 is p.17 Table 3, row 'Response (6M)', mean"
+  },
+  {
+   "project": "forward",
+   "corrected": 0.611,
+   "mean": -0.602,
+   "mean_from": "paper",
+   "tier": "table",
+   "approximation": "the fixed-effects funnel-asymmetry estimate the paper says it prefers, read from Table 2 rather than from the abstract, which reports intervals by currency group",
+   "corrected_quote": "Table 2, Panel A: FAT-PET, Mean beyond bias (1/SE) FE 0.611, WLS 0.605, IV 0.332; and: We prefer including dummy variables for each study, which controls for unobserved study-level characteristics that can be related to quality; the resulting specification is labeled \\u201cFE\\u201d for fixed",
+   "note": "excluded before because the correction flips the sign. The rule is direction-blind and the index is defined on magnitudes, so a sign reversal is information to disclose rather than grounds to delete a row; the dot is drawn outlined and the reversal is named in the caption, the tooltip and the description. This row is the reason that matters: the magnitude barely moves, +1.5%, while the sign goes from -0.602 to +0.611 and the forward premium puzzle stops being a puzzle. The plotted percentage is the least interesting thing about it, and the figure now says so.",
+   "quote_source": "pdf",
+   "corrected_locator": "forward2.pdf p.10 Table 2 Panel A, FE column, 'Mean beyond bias', and the preceding paragraph; the comparator -0.602 is p.8 Table 1, row 'All estimates', unweighted mean over 2,989 estimates"
+  },
+  {
+   "project": "inflation",
+   "corrected": 0.61,
+   "mean": 2.0,
+   "mean_from": "benchmark",
+   "tier": "benchmark",
+   "mean_quote": "The two-percent target has become the most widely shared feature of the global monetary system.",
+   "approximation": "the comparator is not a mean of reported estimates but the two-percent target the paper itself names as the number the field works with",
+   "corrected_quote": "Our preferred headline is 0.61 percent per year, taken from the simple mean of authors' preferred specifications (one row per study, paper-clustered standard errors, 116 clusters, 95% confidence interval [0.25, 0.97]).",
+   "note": "excluded before because 0.61 is the literature's own simple mean and not a correction of it, which is true and is why this row's comparator is not a reported mean. It is the two-percent target, which the paper names as the benchmark its field had been working with and against which it reports its result. The paper's own caveat belongs with the dot: measurement error in published price indices could close, widen or reverse the gap, and the caliper test finds no bunching at two percent, so this is a synthesis landing below a policy norm rather than a bias correction.",
+   "quote_source": "pdf",
+   "corrected_locator": "inflation.pdf, Discussion; the two-percent benchmark is named in the Introduction"
+  },
+  {
+   "project": "euro",
+   "corrected": 0.00899,
+   "corrected_from": "method_median",
+   "methods": [
+    {
+     "name": "FAT-PET",
+     "value": 0.000667
+    },
+    {
+     "name": "ROBUST",
+     "value": 0.0265
+    },
+    {
+     "name": "RIM",
+     "value": 0.00899
+    }
+   ],
+   "mean": 0.038,
+   "mean_from": "pooled",
+   "tier": "method_median",
+   "mean_quote": "Using fixed effects, the pooled estimate of the euro's gamma is very low: a mere 0.038 with the 95% confidence interval CI = (3.36, 4.39%), although it is very significant (z-stat. = 14.9).",
+   "approximation": "the comparator is the paper's own uncorrected fixed-effects pool, because it prints no simple mean of euro-only estimates, and the corrected value is the median of the three correction methods it reports, none of which it prefers",
+   "corrected_quote": "Table 1, Tests of publication bias and the true effect, eurozone studies: prec (effect) FAT-PET 0.000667 (0.05), ROBUST 0.0265 (1.52), RIM 0.00899 (0.90)",
+   "note": "excluded before as a verbal zero. Table 1 does print corrected point values, three of them, so the reason had to be the comparator instead, and the released column here mixes eurozone with other currency unions and so measures a different thing. The paper's own uncorrected pooled estimate for exactly the eurozone, 0.038, is the honest comparator. The median of the three methods is 0.00899, which is one of them, RIM, and not an interpolation. All three are statistically insignificant and all three carry the same conclusion, which is what makes a median admissible here; the paper contrasts them with the 5 to 10 percent and 10 to 15 percent figures the literature had been quoting.",
+   "quote_source": "pdf",
+   "corrected_locator": "euro2.pdf p.8 Table 1; the comparator 0.038 is on p.4"
+  },
+  {
+   "project": "fdi",
+   "corrected": 1.1,
+   "mean": -0.118804,
+   "mean_from": "codebook",
+   "mean_column": "e_w",
+   "tier": "data_mean",
+   "approximation": "the paper prints a mean for each of the three spillover channels and none for the pooling it actually analyses, so the comparator is the average of all 332 released estimates on the common effect column",
+   "corrected_quote": "Using these findings (which are also robust to the model uncertainty problem because we deploy Bayesian model averaging), we compute the spillover value implied by the best practice methodology in the literature for the year 2018. The result is 1.1 overall, implying that a 10-percentage-point increase in foreign presence increases domestic productivity by 11%.",
+   "note": "excluded before for a units problem that does not exist: 11% per 10 percentage points is a semi-elasticity of 1.1, the same quantity as the column. The real difficulty was the comparator, because the paper reports -0.10 horizontal, -0.16 backward and -0.09 forward and then says the three are similar enough to analyse jointly, without printing the joint mean. The comparator is therefore computed, from the released e_w column, all 332 rows, no missing values. The sign changes and the result is far off the scale; both are disclosed on the dot rather than used to delete it.",
+   "quote_source": "pdf",
+   "corrected_locator": "fdi2.pdf, Conclusion; the comparator is the mean of column e_w in /api/v1/codebooks/fdi.json, computed at build time from the 332 released estimates"
+  },
+  {
+   "project": "remittances",
+   "corrected": 0.039,
+   "corrected_from": "method_median",
+   "methods": [
+    {
+     "name": "Top10",
+     "value": 0.025
+    },
+    {
+     "name": "WAAP",
+     "value": 0.042
+    },
+    {
+     "name": "Andrews and Kasy",
+     "value": 0.121
+    },
+    {
+     "name": "stem-based",
+     "value": 0.036
+    }
+   ],
+   "mean": 0.103,
+   "mean_from": "paper",
+   "tier": "method_median",
+   "approximation": "the median of the four correction methods the paper reports, none of which it prefers; the Andrews and Kasy estimate lies above the uncorrected mean and the other three below it",
+   "corrected_quote": "Table 3, Alternative approaches to correcting for publication bias: Top 10 0.025, WAAP 0.042, A&K 0.121, Stem-based bias correction model 0.036, Uncorrected mean 0.103",
+   "note": "excluded before because the four corrected values straddle the comparator and the paper names no preferred one, so a midpoint would invent a central value the authors declined to give. It enters now under a stated rule rather than a judgement: where a paper reports several correction methods, prefers none, and they agree on the substantive conclusion, the median of them is used and every one is listed. All four here are positive and all four are described by the paper as economically small, which is the agreement the rule requires. The tooltip and this note carry all four.",
+   "quote_source": "pdf",
+   "corrected_locator": "remittances2.pdf, Table 3 and the paragraph that reads it; the comparator 0.103 is Table 1, row 'Simple Average', long-term column, 469 estimates"
   }
  ],
  "excluded": [
@@ -388,11 +526,7 @@
   },
   {
    "project": "bma",
-   "why": "corrected about zero against a mean of 0.012, already negligible"
-  },
-  {
-   "project": "competition",
-   "why": "corrected about zero against a mean of -0.0002, itself zero to three decimals: a ratio of two zeros carries no information"
+   "why": "the comparator is a statistical zero and there is no distinct corrected value to plot against it. The paper's simple mean of the 1,199 horizontal spillover estimates is 0.002, 'not significantly different from zero at any conventional level' in its own words, and its inverse-variance pool is 0.017, 'far from values at which the spillover effect could be considered important'. Neither is a bias correction, and dividing by 0.002 would manufacture a bar of several hundred percent out of two numbers the paper calls indistinguishable from nothing. This is the line `small_base` does not cross."
   },
   {
    "project": "conventional_wisdom",
@@ -407,28 +541,12 @@
    "why": "a randomised experiment on feedback, not a meta-analysis with a corrected mean"
   },
   {
-   "project": "euro",
-   "why": "no comparator in the same units. Table 1 does print a corrected point value for the eurozone, 0.000667 with a t-statistic of 0.05 over 28 studies, so 'insignificance is not a point estimate' is not by itself the reason. The reason is that the paper states no simple mean of euro-only estimates -- its 'Overall 0.04' is an inverse-variance pool, which is neither comparator the rule names -- and the effect column on this site mixes eurozone with other currency-union estimates, so a mean computed from it would be a different estimand."
-  },
-  {
-   "project": "fdi",
-   "why": "the correction flips the sign, and the figure's axis cannot say that. The paper reports three mean spillovers, all negative -- −0.10 horizontal, −0.16 backward, −0.09 forward -- and no single pooled comparator, while its best-practice value for 2018 is +1.1. A ratio of magnitudes across a sign flip does not mean what this figure means. (The earlier reason here, that the corrected value is not in the units of the estimate-level column, was wrong on both counts: 11% per 10 percentage points is a semi-elasticity of 1.1, and spillovers, the paper it pointed at, is now in the figure.)"
-  },
-  {
-   "project": "forward",
-   "why": "the correction flips the sign. Correction yields (0.23, 0.45) for developed and (0.95, 1.16) for emerging currencies, and the pooled corrected values the body reports run from 0.3 to 0.8 depending on the technique -- all positive, against a reported mean slope that is negative both overall and for the advanced-currency subsample. A ratio of magnitudes across a sign flip does not mean what this figure means, and the paper names no single preferred pooled value in any case."
-  },
-  {
    "project": "guidelines",
    "why": "the practitioner's guide: a methods text, not a meta-analysis"
   },
   {
    "project": "habits",
    "why": "the headline 0.4 is the MEAN REPORTED estimate, not a corrected one -- its own caveat says 'with no correction for publication bias'. Plotting it would invert the figure's meaning."
-  },
-  {
-   "project": "inflation",
-   "why": "the headline 0.6 is not a correction: the paper calls it 'the paper-level average of these two polar cases over the actual composition of the literature', and finds that cross-study variation is driven by real modelling choices rather than by selective reporting, demoting its funnel intercepts to diagnostics. Excluded on the same ground as habits"
   },
   {
    "project": "maive",
@@ -447,24 +565,12 @@
    "why": "a survey of estimators, not a meta-analysis of one literature"
   },
   {
-   "project": "price_puzzle",
-   "why": "two defensible pairings that are 38 points apart, and no principled way to choose. The paper states both a corrected scalar, a maximum price fall of 0.33% six months after the shock, and an uncorrected one, an average response reaching 0.56% after 36 months. But those are different horizons, and the uncorrected 0.56% is not a peak at all: the paper says of it that 'the response shows no sign of bottoming out', so it is censored at the edge of the window. Max against max gives -41%; pairing at a common 36-month horizon against Table 5's best practice gives -79%. (Recorded before as 'a peak response against an average in the data and the sign flips'. Both halves were wrong: the paper states its own average, not one computed from the data, and neither of its two scalars changes sign.)"
-  },
-  {
-   "project": "remittances",
-   "why": "recorded before as ‘positive but economically small gives no scalar’, which is not what the paper does: Table 3 states an uncorrected mean of 0.103 and four bias-corrected long-run values, 0.025, 0.042, 0.036 and 0.121. It stays out because those four straddle the comparator — three below it and the Andrews-Kasy estimate above it — and the paper names no preferred one, so a midpoint would invent a central value the authors declined to give"
-  },
-  {
    "project": "resource_curse",
    "why": "four corrected values that disagree about the sign. Table 3 gives constants of +0.026, +0.038, −0.589 and −0.133 against a simple mean partial correlation of −0.078, and the paper names no preferred one, concluding only that support for the curse is weak. (Recorded before as 'gives no scalar', which understated the problem: it gives four.)"
   },
   {
    "project": "spillovers_bias",
    "why": "the same 3,626 estimates are already in the figure as `spillovers`, and one literature gets one dot. This paper does state a pair -- a publication-bias-corrected backward spillover of 0.12 against a simple average of 1.14 for estimates in high-quality journals, an 89% move toward zero -- but plotting it beside `spillovers` at +7% would put the same literature in the figure twice with opposite answers, which is the ground on which `alphas` is excluded. The two differ because this paper corrects for publication bias alone while its companion also conditions on best practice; the `spillovers` note records both."
-  },
-  {
-   "project": "students",
-   "why": "corrected about zero against a mean partial correlation of -0.017, already negligible: same problem as competition"
   },
   {
    "project": "substitution",

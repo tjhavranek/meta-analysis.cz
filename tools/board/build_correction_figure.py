@@ -59,13 +59,23 @@ QUESTIONS = _either(os.path.join(BASE, "redesign", "results_questions.json"),
 FRAG = _either(os.path.join(BASE, "redesign", "_fragments", "correction_figure.html"),
                os.path.join(HERE, "_fragments", "correction_figure.html"))
 
-TIER_ORDER = ["range", "horizon", "table", "subsample", "ratio"]
+CODEBOOKS = _either(os.path.join(BASE, "site", "api", "v1", "codebooks"),
+                    os.path.join(ROOT, "api", "v1", "codebooks"))
+
+TIER_ORDER = ["range", "horizon", "table", "subsample", "ratio",
+              "method_median", "pooled", "data_mean", "benchmark"]
 TIER_WORDS = {
     "range": "the central value of a range, or an upper bound",
     "horizon": "the horizon the paper leads with",
     "table": "a number read from a results table where the headline is verbal",
     "subsample": "the subsample the paper leads with",
     "ratio": "a revision the paper states directly rather than as two levels",
+    "method_median": "the median of the correction methods the paper reports, where it "
+                     "prefers none of them",
+    "pooled": "the paper's own uncorrected pooled estimate, where it prints no simple mean",
+    "data_mean": "a comparator computed from the released estimates, because the paper "
+                 "pools none itself",
+    "benchmark": "a canonical value the paper itself names, in place of a reported mean",
 }
 
 E = lambda s: (str(s).replace("&", "&amp;").replace("<", "&lt;").replace(">", "&gt;")
@@ -77,6 +87,27 @@ def winsorised_mean(values, p=0.01):
     n = len(v)
     lo, hi = v[int(p * (n - 1))], v[int((1 - p) * (n - 1))]
     return statistics.mean(min(max(x, lo), hi) for x in v)
+
+
+def codebook_mean(project, column):
+    """The mean of one released column, read from the published codebook.
+
+    Not every literature reaches the harmonised table -- it keeps only estimates that report
+    a usable standard error, and a few datasets report none -- but every one of them has a
+    codebook, generated from the source file and served at /api/v1/codebooks/. Reading the
+    mean from there keeps the promise the file makes elsewhere: a comparator is either quoted
+    from the paper or computed, never typed into the spec by hand."""
+    path = os.path.join(CODEBOOKS, "%s.json" % project)
+    if not os.path.isfile(path):
+        sys.exit("%s: no codebook at %s" % (project, path))
+    book = json.load(open(path, encoding="utf-8"))
+    for col in book.get("columns", []):
+        if col.get("name") == column or col.get("normalized") == column:
+            if col.get("n_missing"):
+                sys.exit("%s: codebook column %s has missing values; its mean would rest on "
+                         "a subset" % (project, column))
+            return col["stats"]["mean"], book.get("n_rows")
+    sys.exit("%s: codebook has no column %r" % (project, column))
 
 
 def load_effects():
@@ -143,7 +174,21 @@ def build(check=False):
         elif not (r.get("approximation") or "").strip():
             sys.exit(f"{p}: tier '{tier}' is drawn as a ring, so it needs an `approximation` "
                      f"note saying what is approximate about the pair")
-        if r.get("mean_from") == "ratio":
+        # A corrected value the paper reports several ways and prefers none of: the median of
+        # the methods it does report. Computed here rather than typed, so the spec can list
+        # every method and the file cannot quietly drift from the number that is plotted.
+        corrected = r["corrected"]
+        if r.get("corrected_from") == "method_median":
+            vals = [m["value"] for m in (r.get("methods") or [])]
+            if len(vals) < 3:
+                sys.exit(f"{p}: a method median needs at least three reported methods")
+            got = statistics.median(vals)
+            if abs(got - corrected) > 1e-9:
+                sys.exit(f"{p}: the spec says corrected {corrected:g} but the median of the "
+                         f"methods it lists is {got:g}")
+            corrected = got
+        mean_from = r.get("mean_from")
+        if mean_from == "ratio":
             # the paper states the revision itself ("exaggerates the mean reported estimate
             # twofold"), so there is nothing to divide -- and nothing to get wrong either
             rev = r["revision_pct"]
@@ -151,18 +196,41 @@ def build(check=False):
                 sys.exit(f"{p}: mean_from is 'ratio' but no revision_pct is given")
             mean = None
         else:
-            if r.get("mean_from") == "paper":
+            if mean_from in ("paper", "pooled", "benchmark"):
+                # quoted from the paper: its own simple mean, its own uncorrected pooled
+                # summary, or the canonical value it names when it reports neither
                 mean = r["mean"]
                 if mean is None:
-                    sys.exit(f"{p}: mean_from is 'paper' but no mean is given")
+                    sys.exit(f"{p}: mean_from is {mean_from!r} but no mean is given")
+                if mean_from != "paper" and not (r.get("mean_quote") or "").strip():
+                    # `paper` is the ordinary case and its provenance is in the note. A pooled
+                    # estimate or a canonical benchmark is not the comparator a reader expects,
+                    # so each of those has to quote the sentence it came from.
+                    sys.exit(f"{p}: mean_from is {mean_from!r}, so the comparator has to carry "
+                             f"a `mean_quote` -- it is not the default, and a reader has to be "
+                             f"able to find it in the paper")
+            elif mean_from == "codebook":
+                col = (r.get("mean_column") or "").strip()
+                if not col:
+                    sys.exit(f"{p}: mean_from is 'codebook' but no `mean_column` is named")
+                mean, n_rows = codebook_mean(p, col)
+                if abs(mean - r.get("mean", mean)) > 5e-6:
+                    sys.exit(f"{p}: the spec says mean {r['mean']:g} but the codebook column "
+                             f"{col} averages {mean:g}")
             else:
                 if p not in effects:
                     sys.exit(f"{p}: no estimate-level data, so no comparator can be computed")
                 mean = winsorised_mean(effects[p])
             if abs(mean) < 1e-9:
                 sys.exit(f"{p}: the comparator is zero; the ratio is undefined")
-            rev = (abs(r["corrected"]) - abs(mean)) / abs(mean) * 100.0
-        out.append({**r, "mean": mean, "rev": rev, "tier": r.get("tier", "exact"),
+            rev = (abs(corrected) - abs(mean)) / abs(mean) * 100.0
+        # Two facts a magnitude axis cannot carry, so they are carried in words instead.
+        flipped = mean is not None and mean * corrected < 0
+        if r.get("small_base") and not (r.get("approximation") or "").strip():
+            sys.exit(f"{p}: small_base rows must say in `approximation` why both levels are "
+                     f"negligible, or the percentage is all a reader sees")
+        out.append({**r, "corrected": corrected, "mean": mean, "rev": rev,
+                    "tier": r.get("tier", "exact"), "flipped": flipped,
                     "n": len(effects.get(p, [])),
                     "question": qs.get(p, {}).get("question", ""),
                     "title": qs.get(p, {}).get("short") or rows[p].get("parameter") or p})
@@ -175,12 +243,19 @@ def build(check=False):
     down = [r for r in out if r["rev"] < -EPS]
     up = [r for r in out if r["rev"] > EPS]
     flat = [r for r in out if abs(r["rev"]) <= EPS]
+    # A sign reversal is the one thing a magnitude axis is structurally unable to say. It is
+    # not a reason to drop the row -- the plotted index exists either way -- but it has to be
+    # said in words, on the dot, in the tooltip, in the caption and in the description.
+    flipped = [r for r in out if r.get("flipped")]
+    small = [r for r in out if r.get("small_base")]
     med = statistics.median([r["rev"] for r in out])
 
     if check:
         print(f"{len(out)} of {n_all} papers qualify; median revision {med:+.0f}%")
         for r in out:
-            src = {"paper": "paper", "ratio": "stated ratio"}.get(
+            src = {"paper": "paper mean", "ratio": "stated ratio",
+                   "pooled": "paper pooled", "benchmark": "benchmark",
+                   "codebook": f"codebook {r.get('mean_column')}"}.get(
                 r.get("mean_from"), f"data n={r['n']}")
             m = "     --" if r["mean"] is None else f"{r['mean']:9.4g}"
             c = "  --" if r["corrected"] is None else f"{r['corrected']:g}"
@@ -217,13 +292,16 @@ def build(check=False):
 
     p = [f'<svg viewBox="0 0 {W} {H}" width="100%" role="img" '
          f'aria-labelledby="cf-t cf-d" class="cfig">',
-         '<title id="cf-t">What correction and best practice did to each number</title>',
+         '<title id="cf-t">What meta-analysis did to each number</title>',
          f'<desc id="cf-d">One dot per meta-analysis, placed by how far its corrected or '
          f'best-practice estimate sits from the average estimate that literature reported. '
          f'{len(down)} of the {len(out)} moved toward zero and {len(up)} away '
          f'from it; the median revision is {med:+.0f}%.'
          + (" " + " ".join(f'{r["title"]} moved {r["rev"]:+.0f}%, beyond the right-hand end '
                            f'of the scale.' for r in offscale) if offscale else "")
+         + (' In ' + str(len(flipped)) + ' the correction also reversed the sign, which this '
+            'axis cannot show: ' + ", ".join(r["title"] for r in flipped) + '.'
+            if flipped else "")
          + '</desc>']
 
     # lay the dots out first: the two vertical guides have to clear the tallest stack, and
@@ -285,11 +363,22 @@ def build(check=False):
                    f'drawn at the edge because it is off the scale.')
         if r["tier"] != "exact" and r.get("approximation"):
             tip += " " + r["approximation"]
+        if r.get("flipped"):
+            tip += (f' The sign changed, from {r["mean"]:.3g} to {r["corrected"]:g}, which the '
+                    f'axis cannot show: only the change in absolute magnitude is plotted.')
+        if r.get("small_base"):
+            tip += (' Both levels are economically negligible, so the percentage is a large '
+                    'relative change from a small base.')
         p.append(f'<a href="#{E(r["project"])}"><title>{E(tip)}</title>')
         # an invisible target twice the dot: 18 user-units is a small thing to hit with a thumb
         p.append(f'<circle cx="{x:.1f}" cy="{y:.1f}" r="{R * 2}" fill="transparent"/>')
         p.append(f'<circle cx="{x:.1f}" cy="{y:.1f}" r="{R}" fill="{fill}" '
                  f'fill-opacity="{op:.2f}"/>')
+        if r.get("flipped"):
+            # a dot whose sign reversed is drawn outlined, so that the rows the axis cannot
+            # describe are the ones a reader can pick out without reading a tooltip
+            p.append(f'<circle cx="{x:.1f}" cy="{y:.1f}" r="{R}" fill="none" '
+                     f'stroke="var(--ink)" stroke-width="1.6"/>')
         if r["tier"] != "exact":
             # a ring, not a disc: the approximate rows have to be tellable apart at a glance,
             # or the caption's count of them is the only thing standing between a reader and
@@ -299,9 +388,9 @@ def build(check=False):
         p.append("</a>")
 
     p.append(f'<text x="{L}" y="{AX + 40}" text-anchor="start" class="cfa">'
-             f'correction shrinks the effect</text>')
+             f'smaller than the comparator</text>')
     p.append(f'<text x="{W - RM}" y="{AX + 40}" text-anchor="end" class="cfa">'
-             f'correction enlarges it</text>')
+             f'larger than the comparator</text>')
     p.append("</svg>")
     # The two labels above the plot sit on a baseline at `top - 12`, so a viewBox starting at
     # `top - 20` left 8 units of headroom for a 15px cap height: both "median -51%" and "no
@@ -335,6 +424,8 @@ def build(check=False):
     alt_med = statistics.median(alt)
     alt_up = sum(1 for x in alt if x > 0)
     n_paper = sum(1 for r in out if r.get("mean_from") == "paper")
+    n_computed = sum(1 for r in out
+                     if r.get("mean_from") in (None, "data", "codebook"))
     n_approx = sum(1 for r in out if r["tier"] != "exact")
     n_up = len(up)
     tier_counts = {}
@@ -352,7 +443,7 @@ def build(check=False):
     # every crawler and every text corpus -- unlike a <script>, which they discard.
     caption = (
         '<figcaption class="table-note">'
-        '<b>What correction and best practice did to the number.</b> '
+        '<b>What meta-analysis did to the number.</b> '
         'One dot per meta-analysis, placed by how far its corrected or best-practice estimate '
         'sits from the mean the literature reported. <b>Red</b>: smaller <i>in absolute '
         'magnitude</i>. <b>Green</b>: larger. '
@@ -364,24 +455,34 @@ def build(check=False):
         + (''.join(f'{r["title"]} is drawn at the right-hand edge: its <b>{r["rev"]:+.0f}%</b> '
                    f'is off the scale. ' for r in offscale) if offscale else '')
         + (f'The {n_approx} drawn as rings are approximate pairs. ' if n_approx else '')
+        + (f'The <b>{len(flipped)}</b> drawn with an outline are the ones where the correction '
+           f'also <b>reversed the sign</b> ('
+           + ", ".join(E(r["title"]) for r in flipped)
+           + '), which a magnitude axis cannot show. ' if flipped else '')
+        + (f'In {len(small)} of them both the reported and the corrected level are '
+           f'economically negligible, so a large percentage is a large relative change from a '
+           f'small base ('
+           + ", ".join(E(r["title"]) for r in small) + '). ' if small else '')
         + 'Vertical position carries no meaning. The dots are stacked only to keep them apart.'
         '<details class="figmethod"><summary>How this figure is built, and which papers it '
         'leaves out</summary>'
         '<p>The index is <i>(|corrected| &minus; |mean|) / |mean|</i>, the same relative revision '
         'as Table 3 of <a href="/conventional_wisdom/">Gechert et al. (2025)</a>, which applies '
         'it to 24 literatures mostly by other researchers.</p>'
-        f'<p>The comparator is the paper&rsquo;s own uncorrected mean wherever it states '
-        f'one, which {n_paper} of the {len(out)} do. Otherwise it is the average of that '
-        'literature&rsquo;s estimates in the data on this site, winsorised at 1%. The '
-        'paper&rsquo;s own number is preferred because the harmonised table keeps only '
-        'estimates that '
-        'report a usable standard error, so a mean computed from it can rest on a subset of what '
-        'the paper analysed.</p>'
-        f'<p>If you distrust means, there is a second reading. {n_alt} of the {len(out)} '
-        f'comparators are computed here instead of quoted from a paper, and those are '
-        f'winsorised means. Use the median '
-        f'of those literatures&rsquo; estimates instead and the overall median revision becomes '
-        f'{alt_med:+.0f}%'
+        f'<p><b>The comparator</b> is chosen by a fixed order, and the first one that exists '
+        f'wins. The paper&rsquo;s own uncorrected mean for the same quantity, which '
+        f'{n_paper} of the {len(out)} state. Failing that, the paper&rsquo;s own uncorrected '
+        'pooled estimate of it. Failing that, the average of that literature&rsquo;s estimates '
+        'as released here, winsorised at 1%. And only where a paper reports none of those, the '
+        'canonical value the paper itself names as the number its field had been working with. '
+        'The paper&rsquo;s own figure comes first because the harmonised table keeps only '
+        'estimates that report a usable standard error, so a mean computed from it can rest on '
+        'a subset of what the paper analysed.</p>'
+        f'<p>If you distrust means, there is a second reading. {n_computed} of the '
+        f'{len(out)} comparators are computed here rather than quoted from a paper. For the '
+        f'{n_alt} of those taken from the harmonised table they are winsorised means; use the '
+        f'median of those literatures&rsquo; estimates instead and the overall median revision '
+        f'becomes {alt_med:+.0f}%'
         + (f', with the number moving upward unchanged at {n_up}. ' if alt_up == n_up else
            f', and {alt_up} of the {len(out)} move upward rather than {n_up}. ')
         + 'The swap is confined to those rows on purpose: where a paper states its own mean, its '
@@ -396,11 +497,11 @@ def build(check=False):
         f'{n_nolit} have no single literature effect to correct: methods papers, an '
         'experiment, and the review that supplies the companion figure. The rest answer in words '
         'rather than a number, or give a headline that is not a correction at all, or sit '
-        'against a comparator so near zero that the ratio is noise, or state several corrected '
-        'values that disagree with each other or that can only be paired across mismatched '
-        'horizons. Two are out because the correction flips the sign, and a ratio of magnitudes '
-        'across a sign flip would not mean what this figure means; and a literature that already '
-        'has a dot does not get a second one. '
+        'against a comparator so near zero that the ratio is undefined, or report correction '
+        'methods that disagree with each other about the sign; and a literature that already '
+        'has a dot does not get a second one. A reversal of sign is <i>not</i> a reason to '
+        'leave a paper out: the index exists either way, and those rows are drawn outlined and '
+        'named above instead. '
         'The rule takes no account of which way a paper moved, and every one of those '
         f'{n_all - len(out)} is written down with its reason, individually, in '
         '<a href="/tools/board/correction_ratios.json">correction_ratios.json</a>.</p>'
