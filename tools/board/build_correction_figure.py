@@ -546,38 +546,53 @@ def build(check=False):
           'which papers it leaves out, and what the rings and outlines mean.'
         '<details class="figmethod"><summary>How this figure is built, and which papers it '
         'leaves out</summary>'
-        + (''.join(f'<p><b>{E(r["title"])}</b> is drawn at the right-hand edge because its '
-                   f'<b>{r["rev"]:+.0f}%</b> is past the end of the scale.</p>'
-                   for r in offscale) if offscale else '')
-        + (f'<p><b>Where the sign reversed.</b> In {len(flipped)} the correction did not only '
-           'change the size of the number, it changed its direction: '
-           + ", ".join(E(r["title"]) for r in flipped)
-           + '. An axis of magnitudes cannot show that, so those dots are drawn with an '
-             'outline and say so when you hover them.</p>' if flipped else '')
-        + (f'<p><b>{n_approx} of the {len(out)} are drawn as a ring</b> rather than a solid '
-           'dot. A ring means the pair is approximate in a stated way; hover it and it says '
-           'which.</p>' if n_approx else '')
-        + (f'<p><b>Where the base is small.</b> In {len(small)} of the {len(out)} both the '
-           'reported and the corrected level are economically negligible in the paper&rsquo;s '
-           'own terms ('
-           + ", ".join(E(r["title"]) for r in small)
-           + '), so a large percentage is a large relative change from a small base rather '
-             'than a large effect.</p>' if small else '')
-        + '<p>Vertical position carries no meaning. The dots are stacked only to keep them '
-          'apart.</p>'
-        '<p>The index is <i>(|corrected| &minus; |mean|) / |mean|</i>, the same relative revision '
-        'as Table 3 of <a href="/conventional_wisdom/">Gechert et al. (2025)</a>, which applies '
-        'it to 24 literatures mostly by other researchers.</p>'
-        f'<p><b>The comparator</b> is chosen by a fixed order, and the first one that exists '
-        f'wins. The paper&rsquo;s own uncorrected mean for the same quantity, which '
-        f'{n_paper} of the {len(out)} state. Failing that, the paper&rsquo;s own uncorrected '
-        'pooled estimate of it. Failing that, the average of that literature&rsquo;s estimates '
-        'as released here, winsorised at 1%. And only where a paper reports none of those, the '
-        'canonical value the paper itself names as the number its field had been working with. '
-        'The paper&rsquo;s own figure comes first because the harmonised table keeps only '
-        'estimates that report a usable standard error, so a mean computed from it can rest on '
-        'a subset of what the paper analysed.</p>'
-        f'<p>If you distrust means, there is a second reading. {n_computed} of the '
+
+        '<p><b>What is plotted.</b> Each dot is one literature. The horizontal position is '
+        '<i>(|corrected| &minus; |mean|) / |mean|</i>: how far the corrected or best-practice '
+        'estimate sits from the uncorrected one, as a fraction of the uncorrected one, in '
+        'absolute magnitude. Zero means the correction left the size of the number alone; '
+        '&minus;50% means it halved it; +100% means it doubled it. It is the same relative '
+        'revision as Table 3 of <a href="/conventional_wisdom/">Gechert et al. (2025)</a>, '
+        'which applies it to 24 literatures mostly by other researchers. Vertical position '
+        'carries no meaning: the dots are stacked only to keep them apart.</p>'
+
+        f'<p><b>Where the uncorrected number comes from.</b> The comparator is chosen by a fixed '
+        f'order, and the first one that exists wins. The paper&rsquo;s own uncorrected mean for '
+        f'the same quantity, which {n_paper} of the {len(out)} state. Failing that, the '
+        'paper&rsquo;s own uncorrected pooled estimate of it. Failing that, the average of that '
+        'literature&rsquo;s estimates as released here, winsorised at 1%. And only where a paper '
+        'reports none of those, the canonical value the paper itself names as the number its '
+        'field had been working with. The paper&rsquo;s own figure comes first because the '
+        'harmonised table keeps only estimates that report a usable standard error, so a mean '
+        'computed from it can rest on a subset of what the paper analysed.</p>'
+
+        '<p><b>Where the corrected number comes from.</b> Several of these papers do not simply '
+        'average their estimates. They evaluate their model at the literature&rsquo;s preferred '
+        'values, for recent data, more observations, and better-cited outlets, and report that '
+        'as the figure a careful study would have produced. It is the construction these authors '
+        'use, it is what Gechert et al.&rsquo;s corrected column is built from, and in each case '
+        'it is the paper&rsquo;s own headline conclusion. The rows concerned name it in the '
+        'spec. Most of these papers correct with estimators that shrink toward zero; what the '
+        'figure adds is the size of each move.</p>'
+
+        '<p><b>What the marks mean.</b> A solid dot is a pair both of whose numbers the paper '
+        'states for the same quantity. A ring is a pair that is approximate in a stated way, and '
+        'hovering it says which way. An outline means the correction did not only change the '
+        'size of the number but its direction, which an axis of magnitudes cannot show.</p>'
+
+        + f'<p><b>{len(out)} of the {n_all} papers qualify.</b> Of the other {n_all - len(out)}, '
+        f'{n_nolit} have no single literature effect to correct: methods papers, an '
+        'experiment, and the review that supplies the companion figure. The rest answer in words '
+        'rather than a number, or give a headline that is not a correction at all, or reach it '
+        'by projecting the estimand beyond the sample rather than correcting it, or sit '
+        'against a comparator so near zero that the ratio is undefined, or report correction '
+        'methods that disagree with each other about the sign; and a literature that already '
+        'has a dot does not get a second one. A reversal of sign is <i>not</i> a reason to '
+        'leave a paper out. The rule takes no account of which way a paper moved, and every one '
+        f'of those {n_all - len(out)} is written down with its reason, individually, in '
+        '<a href="/tools/board/correction_ratios.json">correction_ratios.json</a>.</p>'
+
+        + f'<p><b>If you distrust means</b>, there is a second reading. {n_computed} of the '
         f'{len(out)} comparators are computed here rather than quoted from a paper. For the '
         f'{n_alt} of those taken from the harmonised table they are winsorised means; use the '
         f'median of those literatures&rsquo; estimates instead and the overall median revision '
@@ -588,33 +603,27 @@ def build(check=False):
         'corrected value need not be in the same units as the estimate column at all, so a '
         'median taken from that column would not be a comparator. The check covers only the '
         'estimates this site holds, under the same standard-error selection.</p>'
+
+        + (f'<p><b>Off the scale.</b> {len(offscale)} of the dots are drawn at the right-hand '
+           'edge because their revisions run past the end of it: '
+           + ", ".join(f'{E(r["title"])} at <b>{r["rev"]:+.0f}%</b>' for r in offscale)
+           + '.</p>' if offscale else '')
+        + (f'<p><b>Where the sign reversed.</b> In {len(flipped)} the correction changed the '
+           'direction of the number as well as its size: '
+           + ", ".join(E(r["title"]) for r in flipped)
+           + '. Those dots are drawn with an outline and say so when you hover them.</p>'
+           if flipped else '')
         + (f'<p><b>The {n_approx} rings</b> are pairs that are approximate in a stated way: '
            + ", ".join(TIER_WORDS[t] + f" ({tier_counts[t]})" for t in TIER_ORDER
                        if tier_counts.get(t))
            + '. Hover a ring and it says which.</p>' if n_approx else '')
-        + f'<p><b>{len(out)} of the {n_all} papers qualify.</b> Of the other {n_all - len(out)}, '
-        f'{n_nolit} have no single literature effect to correct: methods papers, an '
-        'experiment, and the review that supplies the companion figure. The rest answer in words '
-        'rather than a number, or give a headline that is not a correction at all, or reach it '
-        'by projecting the estimand beyond the sample rather than correcting it, or sit '
-        'against a comparator so near zero that the ratio is undefined, or report correction '
-        'methods that disagree with each other about the sign; and a literature that already '
-        'has a dot does not get a second one. A reversal of sign is <i>not</i> a reason to '
-        'leave a paper out: the index exists either way, and those rows are drawn outlined and '
-        'named above instead. '
-        'The rule takes no account of which way a paper moved, and every one of those '
-        f'{n_all - len(out)} is written down with its reason, individually, in '
-        '<a href="/tools/board/correction_ratios.json">correction_ratios.json</a>.</p>'
-        '<p><b>What best practice means here.</b> Several of these papers do not simply '
-        'average their estimates. They evaluate their model at the literature&rsquo;s '
-        'preferred values, for recent data, more observations, and better-cited outlets, '
-        'and report that as the figure a careful study would have produced. It is the '
-        'construction these authors use, it is what Gechert et al.&rsquo;s corrected '
-        'column is built from, and in each case it is the paper&rsquo;s own headline '
-        'conclusion. The rows concerned name it in the spec.</p>'
-        '<p>Most of these papers correct with estimators that shrink toward zero. What the figure '
-        'adds is the size of each move.</p>'
-        '</details></figcaption>')
+        + (f'<p><b>Where the base is small.</b> In {len(small)} of the {len(out)} both the '
+           'reported and the corrected level are economically negligible in the paper&rsquo;s '
+           'own terms ('
+           + ", ".join(E(r["title"]) for r in small)
+           + '), so a large percentage is a large relative change from a small base rather '
+             'than a large effect.</p>' if small else '')
+        + '</details></figcaption>')
 
     os.makedirs(os.path.dirname(FRAG), exist_ok=True)
     # The drawing scrolls; the caption does not. Without the wrapper the SVG scales its
