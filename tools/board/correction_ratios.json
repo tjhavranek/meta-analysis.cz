@@ -531,16 +531,60 @@
    "note": "excluded before as 'a methods paper about converting effects to partial correlations; no literature effect to correct'. Too broad: section 3.5 is a worked example with a conventional estimate and the paper's own focal correction for the same 73 correlations, and the paper states the revision itself, 'over 60%'. UWLS+3 is the estimator the paper introduces and recommends, not the smallest one available. The literature is external and appears nowhere else on this site, so nothing is counted twice; the ring says the dot is an illustration rather than a literature of the authors' own. The comparator is the conventional random-effects pooled estimate rather than a simple mean, so the row sits on the second rung of the comparator hierarchy and quotes the sentence it comes from.",
    "quote_source": "pdf",
    "corrected_locator": "correlations/paper/, section 3.5 'An illustration'; both numbers are in the same two paragraphs, and the source meta-analysis is Eastwick et al. (2014)"
+  },
+  {
+   "project": "bma",
+   "corrected": 0.021,
+   "mean": -0.002,
+   "mean_from": "paper",
+   "verbal_zero": true,
+   "small_base": true,
+   "tier": "unmoved",
+   "quote_source": "pdf",
+   "quote_kind": "table",
+   "corrected_locator": "Table 4, Test of publication bias, study fixed effects column: Constant 0.021, standard error 0.015, p = 0.150",
+   "corrected_quote": "Constant 0.021 0.015 0.150",
+   "mean_quote": "The simple mean of the remaining estimates is -0.002, not significantly different from zero at any conventional level.",
+   "mean_quote_kind": "sentence",
+   "approximation": "Neither number is distinguishable from zero: the simple mean of -0.002 is not significant at any conventional level, and the bias-corrected constant of 0.021 has p = 0.150, as does the publication-bias term itself. The paper's own conclusion is that horizontal spillovers are on average zero, and correcting for selection does not change that",
+   "note": "the owner's ruling: the correction leaves this literature where it was, at zero. Dividing 0.021 by 0.002 would report +950%, which is a property of the denominator rather than a finding, so the row is plotted as no change and marked small_base. The paper declines a best-practice definition on principle: 'If we excluded studies that do not correspond to a particular definition of best practice, we would greatly increase the subjectivity of our analysis.'"
+  },
+  {
+   "project": "habits",
+   "corrected": 0.4,
+   "mean": 0.4,
+   "mean_from": "paper",
+   "verbal_zero": true,
+   "tier": "unmoved",
+   "quote_source": "pdf",
+   "quote_kind": "sentence",
+   "corrected_locator": "Appendix A.4, Publication Bias, closing paragraph, and the abstract for the mean of 0.4",
+   "corrected_quote": "we find little evidence of any systematic bias resulting from this selection",
+   "mean_quote": "The mean reported strength of habit formation equals 0.4",
+   "mean_quote_kind": "sentence",
+   "approximation": "The paper tests for publication bias and reports finding none that matters: the funnel plots 'show little signs of asymmetry (especially compared to other fields of empirical economics)' and the formal tests find 'little evidence of any systematic bias'. Its corrected value is therefore the 0.4 it reports, and the correction moves nothing",
+   "note": "the owner's ruling: the difference is zero. Recorded here rather than left out, because a literature the correction leaves alone is a result this figure should show, not a gap in it. The 0.4 is the mean reported estimate; the paper states no separate corrected scalar because its own tests say none is needed."
+  },
+  {
+   "project": "resource_curse",
+   "corrected": 0.026,
+   "mean": -0.078,
+   "mean_from": "paper",
+   "tier": "table",
+   "quote_source": "pdf",
+   "quote_kind": "table",
+   "corrected_locator": "Table 3, Tests of the true effect and publication selection, Panel A, clustered OLS column: Constant (true effect) 0.026, t = 1.69, p = 0.099",
+   "corrected_quote": "Constant (true effect) 0.026",
+   "mean_quote": "The arithmetic mean yields a partial correlation coefficient of -0.078 with a 95% confidence interval",
+   "mean_quote_kind": "sentence",
+   "approximation": "The paper reports four constants across four estimators and names no preferred one: 0.026 (clustered OLS), 0.038 (instrumental variables), and two from its fixed and mixed effects specifications. This row plots the first, the clustered OLS column of Table 3, which is the specification the paper leads with; the instrumental-variables column would give a similar move and the other two would not",
+   "note": "the owner's ruling on which of the four constants to plot. The comparator is the simple average partial correlation of -0.078 from Table 2. The correction removes the curse and reverses its sign, which is the paper's own conclusion in words: support for the resource curse is weak once publication bias and method heterogeneity are taken into account."
   }
  ],
  "excluded": [
   {
    "project": "alphas",
    "why": "the same hedge fund performance literature is already in the figure as `hedge`, against the identical 0.36 comparator, and one literature gets one dot. Two rows on it at -7% and -78% would be incoherent. (Earlier reasons here rested on its best-practice value conditioning on the sample maximum data year. That is close to the ground on which fdi is excluded, but it is not the ground here: the duplicate literature decides it, and dst, border and lags are admitted on within-sample constructions of the same family.)"
-  },
-  {
-   "project": "bma",
-   "why": "the paper declines the exercise this figure plots and says why. It reports a corrected constant, 0.021 with p = 0.150, but it also finds no publication bias in the horizontal spillover literature and refuses a best-practice definition: 'If we excluded studies that do not correspond to a particular definition of best practice, we would greatly increase the subjectivity of our analysis.' Its simple mean, 0.002, is in any case an unusable denominator, and its inverse-variance pool, 0.017, is 'far from values at which the spillover effect could be considered important'. Where competition and students each print a best-practice value their authors stand behind, this paper prints one it declines to stand behind."
   },
   {
    "project": "conventional_wisdom",
@@ -553,10 +597,6 @@
   {
    "project": "guidelines",
    "why": "the practitioner's guide: a methods text, not a meta-analysis"
-  },
-  {
-   "project": "habits",
-   "why": "the headline 0.4 is the MEAN REPORTED estimate, not a corrected one -- its own caveat says 'with no correction for publication bias'. Plotting it would invert the figure's meaning."
   },
   {
    "project": "maive",
@@ -573,10 +613,6 @@
   {
    "project": "pcc_survey",
    "why": "a cross-literature aggregate that demonstrably counts this figure's own dots twice. Its Table 1 does give a pair, a median random-effects estimate of 0.087 against a median UWLS of 0.061 across 172 economics meta-analyses, and the paper states the revision itself: 'UWLS's median is 30% smaller than RE's.' But its released data names those 172, and two of them are rows in this figure: Valickova, Havranek and Horvath on financial development and growth, plotted here as finance_growth, and Zigraiova and Havranek on bank competition and stability, plotted here as competition. Plotting it would be plotting a summary of the figure inside the figure, which is the ground on which `conventional_wisdom` is excluded, and it has to apply to both or neither. Its own worked illustration, on ICT and growth, is out on a further ground: the paper refuses the inference, saying 'We make no inference about the true unconditional average PCC of ICT.' Both medians are also medians across meta-analyses rather than means within one, which no other row is."
-  },
-  {
-   "project": "resource_curse",
-   "why": "four corrected values that disagree about the sign. Table 3 gives constants of +0.026, +0.038, −0.589 and −0.133 against a simple mean partial correlation of −0.078, and the paper names no preferred one, concluding only that support for the curse is weak. (Recorded before as 'gives no scalar', which understated the problem: it gives four.)"
   },
   {
    "project": "spillovers_bias",

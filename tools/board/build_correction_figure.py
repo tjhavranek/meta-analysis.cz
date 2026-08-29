@@ -63,8 +63,10 @@ CODEBOOKS = _either(os.path.join(BASE, "site", "api", "v1", "codebooks"),
                     os.path.join(ROOT, "api", "v1", "codebooks"))
 
 TIER_ORDER = ["range", "horizon", "table", "subsample", "ratio",
-              "method_median", "pooled", "data_mean", "benchmark", "illustration"]
+              "method_median", "pooled", "data_mean", "benchmark", "illustration", "unmoved"]
 TIER_WORDS = {
+    "unmoved": "a literature whose own test finds no publication bias to correct, so the "
+               "corrected value is the reported one",
     "range": "the central value of a range, or an upper bound",
     "horizon": "the horizon the paper leads with",
     "table": "a number read from a results table where the headline is verbal",
@@ -306,8 +308,23 @@ def build(check=False):
             if abs(mean) < 1e-9:
                 sys.exit(f"{p}: the comparator is zero; the ratio is undefined")
             rev = (abs(corrected) - abs(mean)) / abs(mean) * 100.0
+        # A literature whose own publication-bias test comes back empty has nothing to correct,
+        # so the honest revision is zero however the two printed numbers happen to divide. The
+        # flag exists because the alternative -- dividing a near-zero corrected constant by a
+        # near-zero simple mean -- reports a percentage that is an artefact of the denominator
+        # and not a finding. It is not a licence to zero out an inconvenient ratio: the row
+        # still has to quote the sentence in which the paper reports finding no bias.
+        if r.get("verbal_zero"):
+            if not (r.get("approximation") or "").strip():
+                sys.exit(f"{p}: a verbal_zero row must say in `approximation` why the paper "
+                         f"reports nothing to correct")
+            rev = 0.0
         # Two facts a magnitude axis cannot carry, so they are carried in words instead.
-        flipped = mean is not None and mean * corrected < 0
+        # A verbal_zero row asserts that neither number is distinguishable from zero, so the
+        # arithmetic sign that separates them is noise. Calling that a sign reversal would
+        # contradict the row's own claim on the same dot.
+        flipped = (mean is not None and mean * corrected < 0
+                   and not r.get("verbal_zero"))
         if r.get("small_base") and not (r.get("approximation") or "").strip():
             sys.exit(f"{p}: small_base rows must say in `approximation` why both levels are "
                      f"negligible, or the percentage is all a reader sees")
@@ -443,6 +460,10 @@ def build(check=False):
         lead = LEAD.get(r.get("mean_from"), "Reported estimates average")
         if r["mean"] is None:
             tip = f'{r["title"]}. The paper states the revision itself: {r["rev"]:+.0f}%.'
+        elif r.get("verbal_zero"):
+            tip = (f'{r["title"]}. {lead} {r["mean"]:.3g}; corrected or best practice '
+                   f'{r["corrected"]:g}. The paper reports no publication bias worth '
+                   f'correcting, so the figure plots no change.')
         else:
             tip = (f'{r["title"]}. {lead} {r["mean"]:.3g}; '
                    f'corrected or best practice {r["corrected"]:g}. {r["rev"]:+.0f}%.')
