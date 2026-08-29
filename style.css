@@ -1195,3 +1195,13 @@ table.catalogue li{ margin-bottom:var(--s2); font-size:var(--f-1); line-height:1
 .entry p.filter code{ font-size:.8125rem; color:var(--ink-soft); }
 .entry p.verdict{ font:400 var(--f-1)/1.6 var(--sans); border-left:3px solid var(--rule);
   padding-left:var(--s4); max-width:var(--measure); margin:0 0 var(--s4); }
+
+/* .entry ul.uses -- the record of institutional use on /impact/. One document per row, so the
+   rows must read as continuous prose rather than as a nav list: same serif and size as the
+   paragraphs around them, hanging indent so the institution name starts each row cleanly. */
+.entry ul.uses{ list-style:none; margin:0 0 var(--s4); padding:0; max-width:var(--measure); }
+.entry ul.uses > li{
+  margin:0 0 var(--s3); padding:0 0 0 1.1em; text-indent:-1.1em;
+  font:inherit; line-height:1.65;
+}
+.entry ul.uses > li::before{ content:"\203A\00a0"; color:var(--ink-soft); }

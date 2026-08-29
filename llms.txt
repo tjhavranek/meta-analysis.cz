@@ -97,6 +97,7 @@
 - [Papers republished in full as HTML](https://meta-analysis.cz/papers/): the complete text of each paper -- body, tables, figures, equations, and references -- readable and quotable without opening a PDF
 - [Complete publication lists](https://meta-analysis.cz/publications/): every journal article by Tomas Havranek, and at https://meta-analysis.cz/publications/irsova/ every one by Zuzana Irsova, with DOIs and a link to the full text where this site carries it
 - [About the site and who maintains it](https://meta-analysis.cz/about/): affiliations and ORCIDs
+- [How this work has been used](https://meta-analysis.cz/impact/): who has reused the datasets, who has cited the papers, and which institutions have used them, with a source named for every claim
 - [Sitemap](https://meta-analysis.cz/sitemap.xml): all pages and PDF full texts
 - [Commentary and interviews](https://meta-analysis.cz/komentare/): op-eds, columns, and interviews (mostly Czech); machine index at https://meta-analysis.cz/komentare/llms.txt
 - [Research notes](https://meta-analysis.cz/notes/): short notes on methods and papers

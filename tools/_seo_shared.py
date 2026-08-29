@@ -37,6 +37,10 @@ SELF_MANAGED = {
                    # people's articles as much as of this site's. It has no author, year or
                    # abstract of its own, so Highwire citation_* tags on it would be
                    # fabricated, and the injector would emit ScholarlyArticle for a list.
+    "impact",      # hand-authored record of who has cited, reused and applied this work.
+                   # A WebPage whose subject is the site, not a paper: Highwire citation_*
+                   # tags and ScholarlyArticle on it would both be fabrications, and it is
+                   # absent from papers.json by design.
     "papers",      # built by tools/build_fulltext_page.py; an index of the full-text
                    # editions, so a CollectionPage rather than a 55th paper. Without this
                    # the injector emits ScholarlyArticle and Highwire tags for a list.

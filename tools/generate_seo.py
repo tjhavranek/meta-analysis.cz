@@ -1275,6 +1275,9 @@ def main():
            f"Tomas Havranek, and at {BASE}/publications/irsova/ every one by Zuzana Irsova, "
            f"with DOIs and a link to the full text where this site carries it",
            f"- [About the site and who maintains it]({BASE}/about/): affiliations and ORCIDs",
+           f"- [How this work has been used]({BASE}/impact/): who has reused the datasets, who "
+           f"has cited the papers, and which institutions have used them, with a source named "
+           f"for every claim",
            f"- [Sitemap]({BASE}/sitemap.xml): all pages and PDF full texts",
            f"- [Commentary and interviews]({BASE}/komentare/): op-eds, columns, and interviews "
            f"(mostly Czech); machine index at {BASE}/komentare/llms.txt",
