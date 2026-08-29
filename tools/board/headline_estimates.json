@@ -479,15 +479,6 @@
   "lead": ""
  },
  {
-  "project": "reporting",
-  "parameter": "Reporting standards for meta-analysis in economics",
-  "headline": "the MAER-Net guidelines on what every meta-analysis in economics should report, from search and coding to publication bias and replication",
-  "evidence": "",
-  "basis": "",
-  "caveat": "",
-  "field": "Meta-research methods"
- },
- {
   "project": "outliers",
   "parameter": "Sensitivity of meta-analysis results to outlier handling",
   "headline": "median shift at most 0.047 (Cohen's d); significance flips in 11.5% of cases",

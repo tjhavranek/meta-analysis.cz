@@ -341,7 +341,7 @@ def build(check=False):
     for r in out:
         if r["tier"] != "exact":
             tier_counts[r["tier"]] = tier_counts.get(r["tier"], 0) + 1
-    NOLIT = {"correlations", "guidelines", "reporting", "maive", "outliers", "pcc",
+    NOLIT = {"correlations", "guidelines", "maive", "outliers", "pcc",
              "pcc_survey", "conventional_wisdom", "debate"}
     n_nolit = len([e for e in spec["excluded"] if e["project"] in NOLIT])
 
