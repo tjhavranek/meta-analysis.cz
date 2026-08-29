@@ -344,7 +344,7 @@
    "corrected_quote": "The average transmission lag implied by our definition of the ideal study is 29.2 months, which is less than the simple average by approximately 4 months.",
    "note": "the paper states both sides in one sentence. Its best-practice figure is the synthetic ideal study the rule admits: the BMA results evaluated at best-practice methodology and maximum publication characteristics, everything else at sample means. The comparator, 33.5 months, is the simple average of all 198 collected transmission lags. This was recorded as excluded for 'no estimate-level data on this site and no stated pair'. The first half is true and stops mattering once the comparator comes from the paper rather than from the data; the second half was simply wrong.",
    "quote_source": "pdf",
-   "corrected_locator": "lags2.pdf p.18, the ideal-study paragraph after Table 5; the comparator 33.5 is on p.6 and in Table 2, row 'Estimates from all Impulse Responses', 198 observations"
+   "corrected_locator": "lags2.pdf p.18, the ideal-study paragraph after Table 5; the comparator 33.5 is on p.6 and in Table 2 on p.7, row 'Estimates from all Impulse Responses', 198 observations"
   },
   {
    "project": "house_prices",
@@ -366,7 +366,7 @@
    "corrected_quote": "Such defined best-practice estimate of the underlying semi-elasticity, e0, reaches 0.94 and is significant at the 1% level with the 95% confidence interval (0.66, 1.21).",
    "note": "this was excluded on the ground that '9% higher productivity per 10-percentage-point rise in foreign presence' is not the elasticity the effect column holds. The units objection dissolves once the comparator comes from the paper: 9% per 10 percentage points IS a semi-elasticity of 0.9, and the paper prints the precise best-practice value, 0.94, against its own arithmetic average of all published backward-spillover estimates, 0.88. The same paper also reports a publication-bias-corrected 0.178 against that same 0.88, a fivefold exaggeration and an 80% move toward zero. The row plots the best-practice value because that is the paper's headline and what the rule prefers, and because house_prices is read the same way: publication-bias correction shrinks the number and best practice moves it back.",
    "quote_source": "pdf",
-   "corrected_locator": "spillovers2.pdf p.7, the best-practice paragraph in Section 4; the comparator 0.88 is on p.4, 'The arithmetic average of all published estimates of backward spillovers is 0.88'"
+   "corrected_locator": "spillovers2.pdf p.7, the best-practice paragraph in Section 5, 'Results of the multivariate meta-regression'; the comparator 0.88 is on p.4, 'The arithmetic average of all published estimates of backward spillovers is 0.88'"
   },
   {
    "project": "incentives",
@@ -378,7 +378,7 @@
    "corrected_quote": "The overall mean incentive-performance effect based on our definition of “best practice” described above is 0.03.",
    "note": "this was excluded on the direction clause, on the ground that the literature's median (0.0221) and its inverse-variance mean (0.0174) put the corrected 0.031 ABOVE the comparator while the paper's own mean puts it below. That was a misreading of the rule. The comparator clause names exactly two candidates, the paper's own stated mean and the 1%-winsorised mean of the estimate-level data, and here they agree to three decimals: the paper states 0.051 and the shipped data winsorise to 0.0508. A median and an inverse-variance mean are neither of those. Nothing disagrees, and the row goes in at -39%.",
    "quote_source": "pdf",
-   "corrected_locator": "incentives.pdf p.31 for the prose and p.30 Table 5, row 'Mean best practice', 0.031 with 95% confidence interval (-0.034, 0.095); the comparator 0.051 is on p.11 and in Table 1 on p.10, row 'All estimates', unweighted, 1,252 estimates"
+   "corrected_locator": "incentives.pdf p.31 for the prose and p.30 Table 5, row 'Mean best practice', 0.031 with 95% confidence interval (-0.034, 0.095); the comparator 0.051 is on p.11 and in Table 1 on p.14, row 'All estimates', unweighted, 1,252 estimates"
   }
  ],
  "excluded": [
@@ -408,7 +408,7 @@
   },
   {
    "project": "euro",
-   "why": "the corrected effect is 'insignificant'. Insignificance is not a point estimate, and coding it as 0 would manufacture a -100% bar out of a significance test"
+   "why": "no comparator in the same units. Table 1 does print a corrected point value for the eurozone, 0.000667 with a t-statistic of 0.05 over 28 studies, so 'insignificance is not a point estimate' is not by itself the reason. The reason is that the paper states no simple mean of euro-only estimates -- its 'Overall 0.04' is an inverse-variance pool, which is neither comparator the rule names -- and the effect column on this site mixes eurozone with other currency-union estimates, so a mean computed from it would be a different estimand."
   },
   {
    "project": "fdi",
@@ -416,7 +416,7 @@
   },
   {
    "project": "forward",
-   "why": "two subsample intervals and a sign flip. Correction yields (0.23, 0.45) for developed and (0.95, 1.16) for emerging currencies, with no pooled value, and the reported mean slope is negative in both the literature as a whole and the developed-currency subsample. Choosing one subsample would be arbitrary, and comparing magnitudes across a sign flip would not mean what this figure means."
+   "why": "the correction flips the sign. Correction yields (0.23, 0.45) for developed and (0.95, 1.16) for emerging currencies, and the pooled corrected values the body reports run from 0.3 to 0.8 depending on the technique -- all positive, against a reported mean slope that is negative both overall and for the advanced-currency subsample. A ratio of magnitudes across a sign flip does not mean what this figure means, and the paper names no single preferred pooled value in any case."
   },
   {
    "project": "guidelines",
@@ -448,7 +448,7 @@
   },
   {
    "project": "price_puzzle",
-   "why": "the paper does give a number, a 0.33% maximum price fall, but it is a peak response against an average in the data and the sign flips, so the ratio would not mean what the figure means"
+   "why": "two defensible pairings that are 38 points apart, and no principled way to choose. The paper states both a corrected scalar, a maximum price fall of 0.33% six months after the shock, and an uncorrected one, an average response reaching 0.56% after 36 months. But those are different horizons, and the uncorrected 0.56% is not a peak at all: the paper says of it that 'the response shows no sign of bottoming out', so it is censored at the edge of the window. Max against max gives -41%; pairing at a common 36-month horizon against Table 5's best practice gives -79%. (Recorded before as 'a peak response against an average in the data and the sign flips'. Both halves were wrong: the paper states its own average, not one computed from the data, and neither of its two scalars changes sign.)"
   },
   {
    "project": "remittances",
@@ -468,7 +468,7 @@
   },
   {
    "project": "substitution",
-   "why": "no stated corrected scalar and no comparable mean"
+   "why": "the same 2,735 estimates are already in the figure as `eis`, and one literature gets one dot. Independently, this paper states no corrected scalar: its headline is which country characteristics explain the heterogeneity, not a level."
   },
   {
    "project": "trust",
