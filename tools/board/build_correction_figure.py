@@ -32,7 +32,7 @@ Table 3 in Gechert et al. (2025), his own paper, already on this site at
 
 Writes redesign/_fragments/correction_figure.html, inlined by redesign/build_results_page.py.
 """
-import csv, json, math, os, statistics, sys
+import csv, json, math, os, re, statistics, sys
 
 BASE = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 # Either layout: in development the inputs sit at the top level, in the published repo the
@@ -112,6 +112,61 @@ def codebook_mean(project, column):
     sys.exit("%s: codebook has no column %r" % (project, column))
 
 
+_PAGE_TEXT = {}
+
+
+def _page_text(project, meta_slug=None):
+    """The full text of a paper as this site serves it, flattened for matching."""
+    if project in _PAGE_TEXT:
+        return _PAGE_TEXT[project]
+    import html as _h
+    out = None
+    for rel in ((meta_slug + "/index.html",) if meta_slug else ()) + (
+            "%s/paper/index.html" % project,):
+        path = os.path.join(ROOT, rel)
+        if os.path.isfile(path):
+            raw = open(path, encoding="utf-8").read()
+            raw = re.sub(r"<(script|style|head)\b.*?</\1>", " ", raw, flags=re.S)
+            out = _h.unescape(re.sub(r"<[^>]+>", " ", raw))
+            break
+    _PAGE_TEXT[project] = out
+    return out
+
+
+def _norm_quote(s):
+    """Drop everything a transcription can legitimately differ on: spacing, the shape of a
+    dash or a quote mark, subscripts written as plain digits."""
+    return re.sub(r"[^a-z0-9]", "", s.lower())
+
+
+def check_quote(project, quote, kind):
+    """A quote the spec calls a sentence has to be findable in the paper as this site serves it.
+
+    This exists because it was not caught by review: a corrected_quote sat in this file for a
+    day reading "the best-practice estimate of the effect of reforms on growth for the short run
+    reaches -0.38", a sentence that appears nowhere in that paper. The numbers in it were right
+    and the paraphrase was fair, which is exactly why nobody noticed. The readme promises these
+    are verbatim, so the promise is now a build step. Quotes assembled from a results table
+    declare `quote_kind: "table"` and are exempt, because a table read into a sentence is not a
+    sentence the paper contains."""
+    if kind == "table":
+        return
+    text = _page_text(project)
+    if text is None:                       # no full text on this site to check against
+        return
+    hay = _norm_quote(text)
+    # An ellipsis in a quote is an elision the reader can see. Each side of it still has to be
+    # in the paper, and in order.
+    at = 0
+    for part in [x for x in quote.split("...") if _norm_quote(x)]:
+        i = hay.find(_norm_quote(part), at)
+        if i < 0:
+            sys.exit("%s: this quote is not in the paper as this site serves it. Either quote "
+                     "the paper's own words, or declare it 'table' if it is assembled from a "
+                     "results table.\n  %s" % (project, part.strip()[:120]))
+        at = i + len(_norm_quote(part))
+
+
 def load_effects():
     out = {}
     with open(DATA, encoding="utf-8") as fh:
@@ -173,6 +228,10 @@ def build(check=False):
         elif len((r.get("corrected_locator") or "").strip()) < 12:
             sys.exit(f"{p}: quote_source is 'pdf', so corrected_locator must say where in the "
                      f"paper the number is, precisely enough for a reader to check it")
+        check_quote(p, r.get("corrected_quote") or "", r.get("quote_kind", "sentence"))
+        if r.get("mean_quote"):
+            check_quote(p, r["mean_quote"], r.get("mean_quote_kind",
+                                                  r.get("quote_kind", "sentence")))
         # A row drawn as a solid disc claims its pair is exact, so the number a reader sees has
         # to be findable in the sentence quoted beside it. A row that cannot meet that is
         # approximate by definition, and then it owes the reader a note saying what is
@@ -463,7 +522,7 @@ def build(check=False):
     for r in out:
         if r["tier"] != "exact":
             tier_counts[r["tier"]] = tier_counts.get(r["tier"], 0) + 1
-    NOLIT = {"correlations", "guidelines", "maive", "outliers", "pcc",
+    NOLIT = {"guidelines", "maive", "outliers", "pcc",
              "pcc_survey", "conventional_wisdom", "debate"}
     n_nolit = len([e for e in spec["excluded"] if e["project"] in NOLIT])
 
@@ -537,7 +596,8 @@ def build(check=False):
         + f'<p><b>{len(out)} of the {n_all} papers qualify.</b> Of the other {n_all - len(out)}, '
         f'{n_nolit} have no single literature effect to correct: methods papers, an '
         'experiment, and the review that supplies the companion figure. The rest answer in words '
-        'rather than a number, or give a headline that is not a correction at all, or sit '
+        'rather than a number, or give a headline that is not a correction at all, or reach it '
+        'by projecting the estimand beyond the sample rather than correcting it, or sit '
         'against a comparator so near zero that the ratio is undefined, or report correction '
         'methods that disagree with each other about the sign; and a literature that already '
         'has a dot does not get a second one. A reversal of sign is <i>not</i> a reason to '
