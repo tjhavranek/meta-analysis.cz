@@ -62,8 +62,8 @@ FRAG = _either(os.path.join(BASE, "redesign", "_fragments", "correction_figure.h
 CODEBOOKS = _either(os.path.join(BASE, "site", "api", "v1", "codebooks"),
                     os.path.join(ROOT, "api", "v1", "codebooks"))
 
-TIER_ORDER = ["range", "horizon", "table", "subsample", "ratio",
-              "method_median", "pooled", "data_mean", "benchmark", "illustration", "unmoved"]
+TIER_ORDER = ["range", "horizon", "table", "subsample", "ratio", "method_median", "pooled",
+              "data_mean", "benchmark", "illustration", "projection", "unmoved"]
 TIER_WORDS = {
     "unmoved": "a literature whose own test finds no publication bias to correct, so the "
                "corrected value is the reported one",
@@ -77,6 +77,8 @@ TIER_WORDS = {
     "pooled": "the paper's own uncorrected pooled estimate, where it prints no simple mean",
     "data_mean": "a comparator computed from the released estimates, because the paper "
                  "pools none itself",
+    "projection": "a best-practice value the paper evaluates at a preferred data year later "
+                  "than any vintage in its own sample",
     "benchmark": "a canonical value the paper itself names, in place of a reported mean",
     "illustration": "the worked example a methods paper applies its correction to, rather "
                     "than a literature of its own",

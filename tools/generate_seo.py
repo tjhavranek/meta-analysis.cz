@@ -885,8 +885,8 @@ def main():
     home_graph = {"@context": "https://schema.org", "@graph": [
         {"@type": "WebSite", "@id": BASE + "/#website", "url": BASE + "/",
          "name": "meta-analysis.cz",
-         "alternateName": "Meta-Analysis in Economics and Social Sciences",
-         "description": "Data, code, and papers for meta-analyses in economics and the social sciences, by Tomas Havranek and Zuzana Irsova of Charles University, Prague, and their co-authors.",
+         "alternateName": "Meta-Analysis: Methods, Data, and Code",
+         "description": "Methods, data, and code for meta-analysis in any field: MAIVE, the practitioner's guide, and the datasets and estimation code behind every paper here. By Tomas Havranek and Zuzana Irsova of Charles University, Prague, and their co-authors.",
          # publisher stays singular: one person runs the domain. But 35 of the 52 papers
          # collected here are hers, and a graph that never names her leaves a search
          # engine or a model no way to connect this body of work to her at all. She is a
@@ -932,10 +932,11 @@ def main():
         f'<link rel="canonical" href="{BASE}/" />',
         '<meta property="og:site_name" content="meta-analysis.cz" />',
         '<meta property="og:type" content="website" />',
-        '<meta property="og:title" content="Meta-Analysis in Economics and Social Sciences" />',
-        '<meta property="og:description" content="Data and code for papers on meta-analysis '
-        'and research synthesis in economics and the social sciences, by Tomas Havranek, '
-        'Zuzana Irsova of Charles University, Prague, and their co-authors" />',
+        '<meta property="og:title" content="Meta-Analysis: Methods, Data, and Code" />',
+        '<meta property="og:description" content="Methods, data, and code for meta-analysis in '
+        'any field: MAIVE, the practitioner&#8217;s guide, and the datasets and estimation code '
+        'behind every paper here, by Tomas Havranek, Zuzana Irsova of Charles University, Prague, '
+        'and their co-authors" />',
         f'<meta property="og:url" content="{BASE}/" />',
 
         '<script type="application/ld+json">\n' + jdump(home_graph) + "\n</script>"]) + "\n"

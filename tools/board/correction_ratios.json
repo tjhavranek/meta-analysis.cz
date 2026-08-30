@@ -579,6 +579,20 @@
    "mean_quote_kind": "sentence",
    "approximation": "The paper reports four constants across four estimators and names no preferred one: 0.026 (clustered OLS), 0.038 (instrumental variables), and two from its fixed and mixed effects specifications. This row plots the first, the clustered OLS column of Table 3, which is the specification the paper leads with; the instrumental-variables column would give a similar move and the other two would not",
    "note": "the owner's ruling on which of the four constants to plot. The comparator is the simple average partial correlation of -0.078 from Table 2. The correction removes the curse and reverses its sign, which is the paper's own conclusion in words: support for the resource curse is weak once publication bias and method heterogeneity are taken into account."
+  },
+  {
+   "project": "fdi",
+   "corrected": 1.1,
+   "mean": -0.118804,
+   "mean_from": "codebook",
+   "mean_column": "e_w",
+   "tier": "projection",
+   "quote_source": "pdf",
+   "quote_kind": "sentence",
+   "corrected_locator": "Section VI, Concluding remarks: 'we compute the spillover value implied by the best practice methodology in the literature for the year 2018. The result is 1.1 overall'",
+   "corrected_quote": "we compute the spillover value implied by the best practice methodology in the literature for the year 2018. The result is 1.1 overall",
+   "approximation": "The corrected value is the paper's best-practice construction, but it is evaluated at a data year of 2018, later than any vintage in its own sample: 'for the year of the data, we plug in 2018 in order to estimate current effects, assuming the trend that we see in the literature has continued to this day'. The comparator pools every data year the sample actually contains, so part of this move is the projection forward rather than the correction itself. The paper's own summary of the literature points the other way: 'on average, the reported spillovers seem to be zero, even after controlling for potential publication selection bias'",
+   "note": "the owner's ruling. The paper states no single simple mean over its 332 estimates, only category means of -0.1, -0.16 and -0.09 for horizontal, backward and forward spillovers, so the comparator is the mean of the winsorised effect column the paper itself released, e_w, over all 332 rows. This literature is not in the harmonised table because the file carries no standard error, so the comparator is read from the published codebook instead. Data year is one of the variables the paper finds matters, with a coefficient of 0.150 in the general model and 0.135 in the specific one; its posterior inclusion probability in the Bayesian model averaging is 0.144, and the paper says of it and three others that 'the posterior inclusion probabilities fall short of 50%'."
   }
  ],
  "excluded": [
@@ -625,10 +639,6 @@
   {
    "project": "trust",
    "why": "the paper declines to estimate the quantity this figure plots, and says so: 'We do not fit a full selection model, because the target is the institutional moderators of reported slopes, not the bias-corrected mean size premium.' Its headline is which institutions move the premium, not a level."
-  },
-  {
-   "project": "fdi",
-   "why": "the corrected value is reached by projecting outside the sample, so it is not a correction of the quantity the comparator measures. To get 1.1 the paper plugs the year of the data in at 2018, and says why: 'in order to estimate current effects - assuming the trend that we see in the literature has continued to this day'. Data year is one of the variables the paper finds important, with a coefficient of 0.150 in the general model and 0.135 in the specific one, and the comparator, the average of all 332 released estimates, pools every data year the sample actually contains. That is what separates this from the best-practice constructions dst, border and lags are admitted on: those condition on preferred values WITHIN the sample, this one extrapolates a trend beyond it. The paper's own conclusion about the literature points the other way as well: 'On average, the reported spillovers seem to be zero, even after controlling for potential publication selection bias.' The row was briefly in the figure at +826%; re-reading the paper took it back out. (An earlier version of this reason said Data year has a posterior inclusion probability of one. It does not: in the Bayesian model averaging its PIP is 0.144, and the paper says of it and three others that 'the posterior inclusion probabilities fall short of 50%'. The 0.150 is a regression coefficient, not a PIP.)"
   }
  ]
 }
