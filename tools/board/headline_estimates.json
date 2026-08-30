@@ -116,7 +116,7 @@
  {
   "project": "exercise",
   "parameter": "Effect of physical exercise on cognition",
-  "headline": "SMD 0.227 for general cognition, 0.027 for memory and 0.012 for executive function",
+  "headline": "SMD 0.227 for general cognition, but essentially nothing for memory or executive function, 0.027 and 0.012",
   "evidence": "Analyses adjusted for publication bias reveal average effects much smaller than commonly reported (general cognition: standardized mean difference, SMD = 0.227, 95% credible interval 0.116 to 0.330; memory: SMD = 0.027, 95% credible interval 0.000 to 0.227; executive functions: SMD = 0.012, 95% credible interval 0.000 to 0.147), along with wide prediction intervals spanning both negative and positive effects.",
   "basis": "2,239 effect-size estimates from 215 meta-analyses",
   "caveat": "wide prediction intervals spanning negative and positive effects",
@@ -429,8 +429,8 @@
  {
   "project": "alphas",
   "parameter": "Variation in hedge fund alphas",
-  "headline": "9 of 34 study characteristics consistently explain it, above all whether alpha is measured gross or net of fees, a gap of 0.439 percentage points a month; expected alphas under best practice are close to zero for all common strategies",
-  "evidence": "We document that 9 out of the 34 characteristics we analyze are consistently relevant to explain the variation in the reported estimates. ... when considering the fees and the variation in research designs, the current estimates of expected alphas implied by the best practice methodology are close to zero for all common hedge fund strategies.",
+  "headline": "9 of 34 study characteristics consistently explain it. Reported alphas have fallen steadily over time, and they depend on which database supplied the returns, higher from CISDM and lower the more databases a study combines. Measuring alpha net of fees rather than gross costs a further 0.439 percentage points a month, and expected alphas under best practice are close to zero for all common strategies",
+  "evidence": "We document that 9 out of the 34 characteristics we analyze are consistently relevant to explain the variation in the reported estimates. ... we observe a strong downward trend in the reported alphas over time. ... based on more source databases, and (vi) based on data sourced from databases other than the Morningstar Center for International Securities and Derivatives Markets database (CISDM). ... monthly alphas reported on a net-of-fee basis are, on average, 0.439 percentage points lower than alphas based on gross returns. ... the current estimates of expected alphas implied by the best practice methodology are close to zero for all common hedge fund strategies.",
   "basis": "1,019 estimates from 74 studies",
   "caveat": null,
   "field": "Financial economics",

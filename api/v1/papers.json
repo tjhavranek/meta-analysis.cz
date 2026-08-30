@@ -204,7 +204,7 @@
     }
    ],
    "headline_question": "What explains the variation in hedge fund alpha?",
-   "headline": "9 of 34 study characteristics consistently explain it, above all whether alpha is measured gross or net of fees, a gap of 0.439 percentage points a month; expected alphas under best practice are close to zero for all common strategies",
+   "headline": "9 of 34 study characteristics consistently explain it. Reported alphas have fallen steadily over time, and they depend on which database supplied the returns, higher from CISDM and lower the more databases a study combines. Measuring alpha net of fees rather than gross costs a further 0.439 percentage points a month, and expected alphas under best practice are close to zero for all common strategies",
    "headline_url": "https://meta-analysis.cz/results/#alphas",
    "data": {
     "parquet": "https://meta-analysis.cz/data/v1/alphas/alphas.parquet",
@@ -2643,7 +2643,7 @@
     }
    ],
    "headline_question": "Does physical exercise improve cognition?",
-   "headline": "SMD 0.227 for general cognition, 0.027 for memory and 0.012 for executive function",
+   "headline": "SMD 0.227 for general cognition, but essentially nothing for memory or executive function, 0.027 and 0.012",
    "headline_url": "https://meta-analysis.cz/results/#exercise"
   },
   {

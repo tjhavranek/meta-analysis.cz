@@ -51,7 +51,7 @@
    "zero": true
   },
   "exercise": {
-   "value": "SMD 0.227 general cognition, 0.027 memory, 0.012 executive",
+   "value": "0.227 for general cognition, nothing for memory or executive function",
    "zero": false
   },
   "habits": {
@@ -186,9 +186,9 @@
    "zero": false
   },
   "alphas": {
-   "value": "whether alpha is gross or net of fees",
+   "value": "the year and the database, not only the fees",
    "zero": false,
-   "tail": "the largest of the 9 study characteristics out of 34 that consistently explain the variation; a gap of 0.439 percentage points a month"
+   "tail": "reported alphas have fallen over time and differ by data vendor; measuring net of fees costs a further 0.439 percentage points a month, leaving expected alphas near zero"
   },
   "correlations": {
    "value": "yes, the conventional ones",
