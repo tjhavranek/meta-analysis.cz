@@ -63,6 +63,35 @@ Economy: Microeconomics</i>; the current version is
 <a href="https://docs.iza.org/dp17960.pdf">IZA Discussion Paper 17960</a>. Neither author has any
 connection to this project.</p>
 
+<p>Dimitrije Ruzic builds a paper on one column of
+<a href="/sigma/">the capital-labor substitution dataset</a>. It records, for each of 121 studies,
+whether the elasticity was identified from the first-order condition for labor or the one for
+capital, and the two sides differ: a mean of 0.85 from labor prices against 0.45 from capital
+prices. Ruzic argues the gap is real rather than an artefact, because external inputs substitute
+more readily for labor than for capital, and confirms it from a second source, the US integrated
+production accounts for 1963 to 2016. He also disagrees with the meta-analysis itself: where it
+puts the true elasticity nearer the capital-side estimates, he argues the two sides identify
+different things
+(<a href="https://doi.org/10.1162/rest.a.1833"><i>Review of Economics and Statistics</i></a>,
+2026).</p>
+
+<p>Samangi Bandaranayake, Kuntal Das, and Robert Reed replicate
+<a href="/competition/">the bank competition meta-analysis of Zigraiova and Havranek</a> four
+ways: from the data and code,
+by recoding every study from scratch, by extending it to 35 studies it did not include, and under
+a different estimator. &#8220;Our analysis strongly confirms Z&amp;H&#8217;s main finding that
+competition in the banking sector has an economically negligible effect on financial stability
+&#8230; Most impressively, we confirm their finding even when we analyse a completely independent
+set of 35 studies not included in Z&amp;H&#8217;s meta-analysis&#8221;
+(<a href="https://doi.org/10.1111/joes.12352"><i>Journal of Economic Surveys</i></a>, 2020). Their
+own data deposit records where the estimates came from: its description field is this site&#8217;s
+address for that literature.</p>
+
+<p><a href="/students/">The student employment dataset</a> ships with
+<a href="https://cran.r-project.org/package=RoBMA">RoBMA</a>, the Bayesian model-averaging package
+for meta-analysis on CRAN, as one of its worked examples: 881 estimates from 69 studies, with
+meta-analysis.cz given as the source.</p>
+
 <h3>Academic use</h3>
 
 <p>The papers are cited for different reasons: a benchmark value, a bias-corrected estimate,
@@ -96,6 +125,20 @@ plot in its 2016 lecture on intertemporal labor supply,
 <a href="https://eml.berkeley.edu/~webfac/card/e250a_f16/lecture5-2016.pdf">Lecture 5 of Economics
 250A</a>. Five of these authors are Nobel laureates: Sargent, Johnson, Stiglitz, Kremer, and
 Card.</p>
+
+<p>Papers on what artificial intelligence will do to growth need a value for the elasticity of
+substitution between capital and labor, because values above one would let capital replace labor
+without limit. <a href="/sigma/">The capital-labor meta-analysis</a> puts it well below one.
+Charles Jones and Christopher Tonetti take it as their upper
+bound in <a href="https://web.stanford.edu/~chadj/JonesTonetti_Automation.pdf">Past Automation and
+Future A.I.</a>: &#8220;the meta analysis of Gechert et al. (2022) finds a mean estimate of 0.3
+&#8230; We therefore choose &#963; = 0.2, smaller than all these estimates.&#8221; Philip Trammell
+and Anton Korinek open <a href="https://www.nber.org/papers/w31815">Economic Growth under
+Transformative AI</a> with the same restriction: &#8220;today, labor and capital are at least weakly gross
+complements: their elasticity of substitution is not greater than one.&#8221; Tomohiro Hirano and
+Alexis Akira Toda cite it for the same reason in
+<a href="https://doi.org/10.1086/732528">Bubble Necessity Theorem</a>, <i>Journal of Political
+Economy</i> 133(1).</p>
 
 <p>Eric Leeper, Nora Traum, and Todd Walker check their own
 estimates against <a href="/habits/">the habit-formation meta-analysis</a> in
