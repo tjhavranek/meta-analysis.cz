@@ -743,7 +743,7 @@
     }
    ],
    "headline_question": "Does smaller class size improve student achievement?",
-   "headline": "about 0",
+   "headline": "close to zero",
    "headline_url": "https://meta-analysis.cz/results/#class",
    "data": {
     "parquet": "https://meta-analysis.cz/data/v1/class/class.parquet",
@@ -915,7 +915,7 @@
     }
    ],
    "headline_question": "Does bank competition threaten financial stability?",
-   "headline": "about 0",
+   "headline": "close to zero",
    "headline_url": "https://meta-analysis.cz/results/#competition",
    "data": {
     "parquet": "https://meta-analysis.cz/data/v1/competition/competition.parquet",
@@ -1998,7 +1998,7 @@
     }
    ],
    "headline_question": "Does raising tuition reduce university enrollment?",
-   "headline": "about 0",
+   "headline": "close to zero",
    "headline_url": "https://meta-analysis.cz/results/#education",
    "data": {
     "parquet": "https://meta-analysis.cz/data/v1/education/education.parquet",
@@ -3832,7 +3832,7 @@
     }
    ],
    "headline_question": "Do financial incentives improve performance?",
-   "headline": "about 0",
+   "headline": "close to zero",
    "headline_url": "https://meta-analysis.cz/results/#incentives",
    "data": {
     "parquet": "https://meta-analysis.cz/data/v1/incentives/incentives.parquet",
@@ -6985,7 +6985,7 @@
     }
    ],
    "headline_question": "Does working while in school hurt academic outcomes?",
-   "headline": "about 0, slightly negative",
+   "headline": "negative but economically inconsequential",
    "headline_url": "https://meta-analysis.cz/results/#students",
    "data": {
     "parquet": "https://meta-analysis.cz/data/v1/students/students.parquet",

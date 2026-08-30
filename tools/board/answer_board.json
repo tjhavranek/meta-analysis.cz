@@ -47,7 +47,7 @@
    "zero": false
   },
   "incentives": {
-   "value": "about 0",
+   "value": "close to zero",
    "zero": true
   },
   "exercise": {
@@ -124,11 +124,11 @@
    "zero": false
   },
   "class": {
-   "value": "about 0",
+   "value": "close to zero",
    "zero": true
   },
   "students": {
-   "value": "about 0, slightly negative",
+   "value": "negative but inconsequential",
    "zero": true
   },
   "migrant": {
@@ -150,11 +150,11 @@
    "tail": "roughly 30% of a school year"
   },
   "education": {
-   "value": "about 0",
+   "value": "close to zero",
    "zero": true
   },
   "competition": {
-   "value": "about 0",
+   "value": "close to zero",
    "zero": true
   },
   "esg": {

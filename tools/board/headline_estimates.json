@@ -106,11 +106,12 @@
  {
   "project": "incentives",
   "parameter": "Effect of financial incentives on performance",
-  "headline": "about 0",
+  "headline": "close to zero",
   "evidence": "Using recent advances in correcting for publication bias and p-hacking, we find that the corrected mean effect of financial incentives on performance is close to zero across most field contexts.",
   "basis": "2,193 estimates from 88 economics experiments",
   "caveat": "field contexts; lab and loss framing modestly positive",
-  "field": "Micro and experimental economics"
+  "field": "Micro and experimental economics",
+  "lead": "corrected for publication bias,"
  },
  {
   "project": "exercise",
@@ -291,7 +292,7 @@
  {
   "project": "class",
   "parameter": "Effect of class size on student achievement",
-  "headline": "about 0",
+  "headline": "close to zero",
   "evidence": "The implied class size effect is negligible for all identification approaches except Tennessee's Student/Teacher Achievement Ratio project and for all contexts except classes of fewer than 15 students.",
   "basis": "2,819 estimates from 66 studies",
   "caveat": "except in the STAR experiment and classes under 15 students",
@@ -300,7 +301,7 @@
  {
   "project": "students",
   "parameter": "Effect of working while in school on educational outcomes",
-  "headline": "about 0, slightly negative",
+  "headline": "negative but economically inconsequential",
   "evidence": "Overall the literature suggests a negative but economically inconsequential mean effect.",
   "basis": "861 estimates from 69 studies",
   "caveat": "more substantive for dropout decisions",
@@ -345,20 +346,22 @@
  {
   "project": "education",
   "parameter": "Tuition-enrollment elasticity (effect of tuition on university enrollment)",
-  "headline": "about 0",
+  "headline": "close to zero",
   "evidence": "After correcting for this publication bias, we find that the literature is consistent with the mean tuition-enrollment elasticity being close to zero.",
   "basis": "443 estimates from 43 studies",
-  "caveat": null,
-  "field": "Labor and education economics"
+  "caveat": "raising tuition barely changes enrollment",
+  "field": "Labor and education economics",
+  "lead": "corrected for publication bias,"
  },
  {
   "project": "competition",
   "parameter": "Effect of bank competition on financial stability",
-  "headline": "about 0",
+  "headline": "close to zero",
   "evidence": "Taken together, the estimates reported in the literature suggest little interplay between competition and stability, even when corrected for publication bias and potential misspecifications.",
   "basis": "598 estimates from 31 studies",
-  "caveat": null,
-  "field": "Financial economics"
+  "caveat": "little interplay between competition and stability",
+  "field": "Financial economics",
+  "lead": "corrected for publication bias,"
  },
  {
   "project": "esg",
