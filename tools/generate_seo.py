@@ -1187,10 +1187,11 @@ def main():
     _n_full = sum(1 for _p in projects if full_text_of(_p)) \
         + sum(1 for _p in _parented if full_text_of(_p))
     lt = ["# meta-analysis.cz", "",
-          "> Data, code, and papers for meta-analyses in economics and the social sciences, "
-          "by Tomas Havranek and Zuzana Irsova of Charles University, Prague, and their co-authors. "
-          "Each paper page links the full-text PDF "
-          "and, for most papers, the dataset and estimation code.", "",
+          "> Methods, data, code, and papers for meta-analysis, by Tomas Havranek and "
+          "Zuzana Irsova of Charles University, Prague, and their co-authors. The applied corpus "
+          "is mainly economics and the social sciences; the methods and tools, among them MAIVE, "
+          "are for use in any field. Each paper page links the full-text PDF and, for most "
+          "papers, the dataset and estimation code.", "",
           "> Maintained by Tomas Havranek (in Czech Tomáš Havránek) and "
           "Zuzana Irsova (Zuzana Iršová, earlier work indexed as Zuzana Havránková) at the "
           "Institute of Economic Studies, Charles University, Prague. "
@@ -1293,8 +1294,9 @@ def main():
     open(os.path.join(SITE, "llms.txt"), "w", encoding="utf-8", newline="\n").write("\n".join(lt))
 
     lf = ["# meta-analysis.cz — full paper index", "",
-          "Site: https://meta-analysis.cz/ — Data, code, and papers for meta-analyses in economics",
-          "and the social sciences (Charles University, Prague). By Tomas Havranek",
+          "Site: https://meta-analysis.cz/ — Methods, data, code, and papers for meta-analysis",
+          "(Charles University, Prague); the applied corpus is mainly economics and the social",
+          "sciences, the methods are for any field. By Tomas Havranek",
           "(ORCID 0000-0002-3158-2539), Zuzana Irsova (ORCID 0000-0002-0753-8124), and coauthors.", "",
           "LICENCE: everything on this site is CC BY 4.0 "
           "(https://creativecommons.org/licenses/by/4.0/) - the papers, the datasets, their CSV and "
