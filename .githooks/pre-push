@@ -17,7 +17,34 @@ cd "$(git rev-parse --show-toplevel)" || exit 1
 PY=$(command -v python || command -v python3) || { echo "pre-push: python not found; skipping checks"; exit 0; }
 [ -f tools/generate_seo.py ] || exit 0   # not the site repo layout; nothing to check
 
+# CI runs on Linux, where Python reads and writes UTF-8 by default. On a Windows
+# checkout the default is cp1252, and three of the checks below die decoding a page
+# that CI reads without complaint. UTF-8 mode removes that whole class of
+# environment-only difference; on Linux it changes nothing.
+export PYTHONUTF8=1
+export PYTHONIOENCODING=utf-8
+
 fail() { echo ""; echo "PUSH BLOCKED: $1"; echo ""; exit 1; }
+
+# Run one of CI's verifiers and stop the push if it fails. Skipped cleanly when the
+# script is absent, so this hook keeps working if the repo layout changes.
+run_check() {  # run_check <label> <script> [args...]
+  label=$1; shift
+  [ -f "$1" ] || return 0
+  echo "pre-push: $label"
+  if ! "$PY" "$@" > /tmp/_seo_step.log 2>&1; then
+    sed -n '1,25p' /tmp/_seo_step.log
+    fail "$* failed. CI runs exactly this and would go red, and the site would not deploy."
+  fi
+}
+
+# CI's first step. Catches a syntax error before anything slower runs. Called directly
+# rather than through run_check, whose "is it a file" guard would see "-m" and skip.
+echo "pre-push: syntax-checking the tools..."
+if ! "$PY" -m py_compile tools/generate_seo.py tools/verify_seo.py komentare/build.py > /tmp/_seo_step.log 2>&1; then
+  sed -n '1,25p' /tmp/_seo_step.log
+  fail "a tool does not compile. CI runs this first and would go red."
+fi
 
 # The generator both writes the page blocks and enriches tools/papers.json from
 # the pages, so a first run can leave input for a second. Iterate to a fixed
@@ -86,6 +113,34 @@ if printf '%s\n' "$PUSHING" | grep -qE '^(data_layer/|api/|data/|CITATION\.cff|\
       fail "data_layer/rebuild.py failed; the data layer cannot be rebuilt from its inputs."
     fi
   fi
+fi
+
+# The site builders' own verifiers. CI runs all of these and any one of them turns the
+# run red, but the hook never ran a single one -- which is why red runs kept arriving
+# from pushes that passed every local check. They need the pinned latex2mathml; if it is
+# missing the hook says so rather than pretending the tree was checked.
+if "$PY" -c "import latex2mathml" >/dev/null 2>&1; then
+  run_check "verifying the headline evidence..."            tools/check_evidence.py
+  run_check "verifying the matched reference DOIs..."       tools/check_reference_dois.py
+  run_check "checking the search index against the pages..." tools/build_search_index.py --check
+  run_check "verifying the MAIVE how-to..."                 tools/check_maive_howto.py
+  run_check "checking api/v1/papers.json..."                tools/build_papers_api.py --check
+  run_check "checking the publication lists..."             tools/build_publications_page.py --check
+  run_check "checking /papers/..."                          tools/build_fulltext_page.py --check
+
+  # The full-text gate reads the PDFs. CI installs poppler-utils; a Windows checkout
+  # usually finds Xpdf's pdftotext on PATH instead, which emits Latin-1 where poppler
+  # emits UTF-8. The extraction then fails to decode and the check reports a fault that
+  # does not exist in CI, so run it only against poppler and say so when it is skipped.
+  if [ -f tools/check_paper_pages.py ]; then
+    if pdftotext -v 2>&1 | grep -qi poppler; then
+      run_check "verifying the full-text pages (slow)..."   tools/check_paper_pages.py
+    else
+      echo "pre-push: full-text page check SKIPPED (needs poppler's pdftotext; this machine has $(pdftotext -v 2>&1 | head -1 | cut -c1-40))"
+    fi
+  fi
+else
+  echo "pre-push: site-builder checks SKIPPED (latex2mathml missing: python -m pip install -r tools/requirements-pinned.txt)"
 fi
 
 echo "pre-push: verifying..."
