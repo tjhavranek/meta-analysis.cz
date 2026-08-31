@@ -82,7 +82,7 @@
 
 ## Data
 
-- **Archived and citable**: https://doi.org/10.5281/zenodo.21773678 (DOI 10.5281/zenodo.21773678) — the concept DOI, which always resolves to the newest version. Version 1.2.0 is the current release and is NOT yet deposited, so the concept DOI resolves to the previous version; cite the concept DOI and name the version you used. Cite the collection AND the individual paper whose data you use.
+- **Archived and citable**: https://doi.org/10.5281/zenodo.21773678 (DOI 10.5281/zenodo.21773678) — the concept DOI, which always resolves to the newest version. Version 1.2.0 specifically is DOI 10.5281/zenodo.22212666. Cite the collection AND the individual paper whose data you use.
 - [Dataset index / data API](https://meta-analysis.cz/api/v1/datasets.json): every dataset on this site as machine-readable JSON — paper, DOI, row counts, file URLs, and which columns hold the effect estimate and its standard error
 - [Harmonised estimate-level table](https://meta-analysis.cz/data/v1/estimates_harmonised.csv): all literatures pooled into one table, one row per harmonised observation (some literatures contribute one row per impulse-response horizon), with effect, standard error, t-statistic, sample size, and shared study characteristics (also [Parquet](https://meta-analysis.cz/data/v1/estimates_harmonised.parquet); version 1.2.0)
 - [Per-dataset files](https://meta-analysis.cz/api/v1/datapackage.json): each dataset also published individually as Parquet and CSV, with a column-level codebook giving every variable's type, missingness, and summary statistics — all URLs listed in datasets.json
