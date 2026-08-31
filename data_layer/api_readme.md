@@ -125,12 +125,11 @@ the archived deposit:
 
 > **https://doi.org/10.5281/zenodo.21773678** — cite this. It always resolves to the newest version.
 >
-> **Version 1.2.0, the table served here, is not yet deposited and so has no version DOI.**
-> A replication package needing these exact files should cite the concept DOI above and
-> record the date it was fetched.
+> `https://doi.org/10.5281/zenodo.22212666` is version 1.2.0, the table served here and the newest
+> deposit. Cite this one in a replication package, where the exact files matter.
 >
-> `https://doi.org/10.5281/zenodo.22050272` is version 1.1.1, the newest deposit. It differs
-> from what is served here: 1.2.0 corrects `n_obs` on 4,614 rows and adds `cbequity`.
+> `https://doi.org/10.5281/zenodo.22050272` is version 1.1.1, superseded. It differs from what
+> is served here: 1.2.0 corrects `n_obs` on 4,614 rows and adds `cbequity`.
 >
 > `https://doi.org/10.5281/zenodo.21789702` is version 1.0.0, superseded by 1.1.1, which
 > removes 20 `price_puzzle` rows that corresponded to no source estimate.

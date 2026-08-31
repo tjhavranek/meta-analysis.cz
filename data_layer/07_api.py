@@ -11,13 +11,12 @@ VERSION="1.0.0"; DATA_V="v1"
 DATA_VERSION="1.2.0"; DATA_STATUS="stable"
 # The VERSION DOI, set once Zenodo minted it. None until deposited -- publishing the
 # previous version's DOI beside a new version tells a citing reader the wrong thing.
-# NULL until 1.2.0 is deposited. Two changes since the 1.1.1 archive: n_obs corrected on
-# 4,614 rows -- armington was publishing its per-study estimate count as the sample size and
-# migrant likewise -- and cbequity added as the 46th dataset and 42nd pooled literature. So the
-# served table is no longer the one archived under 1.1.1's DOI, 10.5281/zenodo.22050272.
-# Carrying that DOI here would tell a citing reader the corrected table is the archived one.
-# Reserve a DOI on the Zenodo draft, put it here, then build the bundle: see ZENODO_DEPOSIT.md.
-DATA_DOI=None
+# Reserved on the 1.2.0 draft before the bundle was built, so the archived CITATION.cff
+# inside the zip names the identifier the record is published under. 1.2.0 corrects n_obs
+# on 4,614 rows -- armington and migrant were publishing a study's estimate count as its
+# sample size, which corrupts MAIVE's first stage -- and adds cbequity as the 46th dataset
+# and 42nd pooled literature. 1.1.1 is 10.5281/zenodo.22050272 and is superseded.
+DATA_DOI="10.5281/zenodo.22212666"
                                   # before the bundle was built, so the archived files name it.
 
 papers={p["project"]:p for p in json.load(open(os.path.join(SITE,"tools","papers.json"),encoding="utf-8"))}
