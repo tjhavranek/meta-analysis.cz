@@ -47,8 +47,18 @@ fi
 # advertised URLs, parquet/csv agreement. It was never wired in, so the strongest verifier
 # in the repo ran only when someone remembered. Only for changes that touch the data layer,
 # and skipped cleanly if its dependencies are absent (CI has no pandas).
-if git diff --cached --name-only HEAD 2>/dev/null | grep -qE '^(data_layer/|api/|data/|CITATION\.cff|\.zenodo\.json|LICENSE)' ||
-   git diff --name-only HEAD 2>/dev/null | grep -qE '^(data_layer/|api/|data/|CITATION\.cff|\.zenodo\.json|LICENSE)'; then
+# What is actually being pushed. At pre-push time the work is already COMMITTED, so
+# "git diff HEAD" and "git diff --cached HEAD" are both empty and this gate never fired.
+# That is exactly how the .zenodo.json drift in 01b3bbb0 reached CI: the commit changed
+# data_layer/zenodo.json, the condition saw nothing, and the run went red. Compare against
+# the upstream branch instead, keeping the working-tree checks as a fallback for the case
+# where this is run with changes still uncommitted.
+UPSTREAM=$(git rev-parse --abbrev-ref --symbolic-full-name '@{upstream}' 2>/dev/null || echo origin/main)
+PUSHING=$( { git diff --name-only "$UPSTREAM...HEAD" 2>/dev/null
+             git diff --name-only HEAD 2>/dev/null
+             git diff --cached --name-only HEAD 2>/dev/null; } | sort -u )
+
+if printf '%s\n' "$PUSHING" | grep -qE '^(data_layer/|api/|data/|CITATION\.cff|\.zenodo\.json|LICENSE)'; then
   if [ -f data_layer/09_verify.py ] && "$PY" -c "import pandas, pyarrow" >/dev/null 2>&1; then
     echo "pre-push: running the data-layer gate (09_verify.py)..."
     if ! "$PY" data_layer/09_verify.py > /tmp/_dl_verify.log 2>&1; then
@@ -61,6 +71,20 @@ if git diff --cached --name-only HEAD 2>/dev/null | grep -qE '^(data_layer/|api/
     tail -1 /tmp/_dl_verify.log
   else
     echo "pre-push: data-layer gate skipped (pandas/pyarrow not available)"
+  fi
+
+  # CI runs "rebuild.py --check --data" and fails on ANY drift between the published
+  # files and what the inputs produce. Regenerate here instead of running its --check:
+  # that check compares raw bytes and reports ~46 false positives on a Windows checkout
+  # (CRLF) which Linux CI never sees. Rebuilding lets real drift surface as an ordinary
+  # git diff, which is line-ending aware, and the "must be committed" test at the end of
+  # this hook then blocks the push.
+  if [ -f data_layer/rebuild.py ] && "$PY" -c "import pandas, pyarrow" >/dev/null 2>&1; then
+    echo "pre-push: rebuilding the data layer (same as CI)..."
+    if ! "$PY" data_layer/rebuild.py --data > /tmp/_dl_rebuild.log 2>&1; then
+      sed -n '1,30p' /tmp/_dl_rebuild.log
+      fail "data_layer/rebuild.py failed; the data layer cannot be rebuilt from its inputs."
+    fi
   fi
 fi
 
