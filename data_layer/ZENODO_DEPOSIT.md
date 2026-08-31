@@ -1,23 +1,32 @@
 # Zenodo deposit — what to upload, and what must never be uploaded
 
-> **STATUS: PUBLISHED.** This deposit exists.
+> **STATUS: PUBLISHED, AND UP TO DATE.** The deposit matches what the site serves.
 > Concept DOI (cite this): **https://doi.org/10.5281/zenodo.21773678**
 > Version 0.9.0-beta: **https://doi.org/10.5281/zenodo.21773679**
 > Version 1.0.0: **https://doi.org/10.5281/zenodo.21789702**
 > Version 1.1.1: **https://doi.org/10.5281/zenodo.22050272** — deposited 2026-08-21.
+> Version 1.2.0: **https://doi.org/10.5281/zenodo.22212666** — deposited 2026-08-31, built
+> from commit `a15b1dc9c4f3de9bc35890a0c68645e88ed466d2`.
 >
-> **A DEPOSIT IS PENDING.** The site now serves data version **1.2.0**, which does two
-> things: it corrects `n_obs` on 4,614 rows (armington and migrant were publishing the number
-> of ESTIMATES a study reports as its sample size, which silently corrupts MAIVE's first
-> stage), and it adds `cbequity`, 176 partial correlations from 9 studies, as the 46th
-> dataset and 42nd pooled literature. 1.2.0 has no version DOI yet, and `DATA_DOI` in
-> `07_api.py` is None so that nothing claims 1.1.1's identifier for it. To close this:
-> reserve a DOI on a new Zenodo draft, put it in `DATA_DOI` and in `data_layer/zenodo.json`,
-> set `version` there and in `data_layer/citation.cff` to 1.2.0, rebuild, then build and
-> upload the bundle.
+> 1.2.0 corrects `n_obs` on 4,614 rows (armington and migrant were publishing the number of
+> ESTIMATES a study reports as its sample size, which silently corrupts MAIVE's first stage)
+> and adds `cbequity`, 176 partial correlations from 9 studies, as the 46th dataset and 42nd
+> pooled literature.
 >
-> Zenodo strips punctuation from uploaded filenames: the 1.1.1 archive is stored as
-> `ZENODOUPLOADmetaanalysisczv1.1.1.zip`, not the hyphenated name it was uploaded under,
+> **What the 1.2.0 release taught, for whoever does the next one.** Reserve the DOI on the
+> draft BEFORE building the bundle. `CITATION.cff` ships inside the zip, so its `doi:` and
+> `version:` have to be right at build time; nothing can be corrected afterwards. The
+> bundle builder enforces this and refuses to write the zip until `datasets.json` carries a
+> version DOI and `CITATION.cff` states the release's version and counts, which is what you
+> want. Two files are hand-written and nothing regenerates them:
+> `data_layer/citation.cff` and `data_layer/zenodo.json`. Four places carry the DOI:
+> those two, `DATA_DOI` in `07_api.py`, and the `DEPOSITS` map in `91_distribution.py`.
+> Miss the last and the distribution check silently stops comparing.
+> Run `data_layer/rebuild.py` in FULL, not `--data`: the site builders write
+> `datasets/index.html` and `llms.txt`, and those carry the deposit sentence too.
+>
+> Zenodo strips punctuation from uploaded filenames: the archives are stored as
+> `ZENODOUPLOADmetaanalysisczv1.2.0.zip`, not the hyphenated name they were uploaded under,
 > and a published file cannot be renamed. Never construct that URL; ask the record.
 > The steps below describe how it was made and how to make the next version.
 
