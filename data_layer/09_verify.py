@@ -11,9 +11,16 @@ from _paths import WORK, SITE
 # usable from the pre-push hook, which runs the published copy, and means it checks what
 # will actually be served rather than a staging directory.
 OUT=os.path.join(WORK,"out")
-if not os.path.isdir(OUT):
-    OUT=SITE
 DV="v1"; BASE="https://meta-analysis.cz"
+# Test for the artefact, not the directory. rebuild.py clears out/ with
+# shutil.rmtree(..., ignore_errors=True); this repo lives in Dropbox, which holds file
+# handles, so the removal partially fails and leaves an EMPTY out/ behind. An isdir test
+# then selects that empty directory and the gate dies on FileNotFoundError loading
+# datasets.json -- which blocked the pre-push hook twice on 2026-09-01 and never shows up
+# in CI, because a fresh checkout has no out/ at all. An empty out/ is a sync artefact,
+# not a staging directory.
+if not os.path.isfile(os.path.join(OUT,"api",DV,"datasets.json")):
+    OUT=SITE
 
 fail=[]; warn=[]
 

@@ -1301,7 +1301,7 @@ def documents():
     path = os.path.join(ROOT, "tools", "documents.json")
     if not os.path.exists(path):
         return {}
-    return {d["project"]: d for d in json.load(open(path))}
+    return {d["project"]: d for d in json.load(open(path, encoding="utf-8"))}
 
 
 def paper_pdf(project, meta):
@@ -1622,7 +1622,7 @@ def link_from_project_page(project):
     path = os.path.join(ROOT, project, "index.html")
     if not os.path.exists(path):
         return False
-    src = open(path).read()
+    src = open(path, encoding="utf-8").read()
     href = "/%s/paper/" % project
     if href in src:
         return False
@@ -1659,7 +1659,7 @@ def main(argv):
         meta["_pdf"] = paper_pdf(project, meta)
         globals()["PIPE_STYLE"] = prints_pipe_headings(project, meta)
         builder = Builder(project, meta)
-        body = builder.build(open(src_path).read())
+        body = builder.build(open(src_path, encoding="utf-8").read())
         if builder.abstract:
             # papers.json's abstract is the site's summary of the literature; the page shows
             # the paper's own. The metadata should say what the page says.

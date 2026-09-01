@@ -34,7 +34,7 @@ def clean(text):
 
 
 def stitch(project):
-    parts = [clean(open(p).read()) for p in spans(project)]
+    parts = [clean(open(p, encoding="utf-8").read()) for p in spans(project)]
     if not parts:
         return None
     body = parts[0]

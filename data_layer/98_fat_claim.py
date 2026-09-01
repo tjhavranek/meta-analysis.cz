@@ -86,7 +86,7 @@ def main():
             iid_beyond += 1
 
     total = len(pets)
-    text = open(README).read()
+    text = open(README, encoding="utf-8").read()
     m = re.search(r"beyond ±?1\.96 in (\d+) of the (\d+)\s*\n?\s*literatures", text)
     if not m:
         print("could not find the claim in api/v1/README.md")

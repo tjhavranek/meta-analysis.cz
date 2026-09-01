@@ -31,7 +31,7 @@ def reviewed():
     path = os.path.join(ROOT, "tools", "figures_reviewed.json")
     if not os.path.exists(path):
         return {}
-    return {k: v for k, v in json.load(open(path)).items() if not k.startswith("_")}
+    return {k: v for k, v in json.load(open(path, encoding="utf-8")).items() if not k.startswith("_")}
 
 
 def line_rhythm(path):

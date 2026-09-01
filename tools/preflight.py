@@ -44,6 +44,19 @@ IGNORE = re.compile(
 # 3.11 rejects, so a 3.11 default here reports a syntax error CI will never see. Use the
 # interpreter CI uses, and say so if it is missing rather than testing the wrong thing.
 PY312 = shutil.which("python3.12")
+# Falling back to the name "python3" picks whatever that resolves to, which on Windows
+# is a different install from the one running this script even when both are 3.14: the
+# user-site path differs, so imports that work under `python` fail under `python3` and
+# preflight reports failures CI will never see. sys.executable is always the
+# interpreter the caller chose.
+FALLBACK = sys.executable or "python3"
+
+# CI runs on Linux, where the default text encoding is UTF-8, so a generator that opens a
+# repository file without naming an encoding still reads it correctly there. On Windows
+# the default is cp1252 and the same call raises UnicodeDecodeError on any file with a
+# non-ASCII byte -- which is most of them here, given the Czech names and the maths.
+# preflight exists to run exactly what CI runs, so it gives the children CI's encoding.
+CI_ENV = dict(os.environ, PYTHONUTF8="1", PYTHONIOENCODING="utf-8")
 
 SLOW = ("check_paper_pages", "rebuild.py")
 SMOKE = "tools/smoke_live.py"
@@ -68,7 +81,7 @@ def ci_commands():
             if IGNORE.search(line):
                 continue
             if line.startswith("python "):
-                cmds.append(line.replace("python ", (PY312 or "python3") + " ", 1))
+                cmds.append(line.replace("python ", (PY312 or FALLBACK) + " ", 1))
             elif "python" in line:
                 cmds.append(line)
             else:
@@ -117,9 +130,23 @@ def _witnesses(depth=12, most=6):
     return out
 
 
+def _pdftotext_flavour():
+    """The first line of `pdftotext -v`, or a note that it is absent."""
+    try:
+        out = subprocess.run(["pdftotext", "-v"], capture_output=True, text=True,
+                             errors="replace")
+        return ((out.stdout or "") + (out.stderr or "")).strip().splitlines()[0][:40]
+    except (OSError, IndexError):
+        return "no pdftotext on PATH"
+
+
+def _has_poppler():
+    return "poppler" in _pdftotext_flavour().lower()
+
+
 def deployed():
     """Ask the live domain whether it is serving what was pushed."""
-    py = PY312 or "python3"
+    py = PY312 or FALLBACK
     wits = _witnesses()
     if wits:
         print("witnesses: " + ", ".join(r for _, _, r in wits))
@@ -171,9 +198,19 @@ def main():
         print("preflight does not recognise these workflow lines; check them by hand:")
         for u in unknown[:10]:
             print("   " + u)
-    for c in (c.format(py=PY312 or "python3") for c in EXTRA):
+    for c in (c.format(py=PY312 or FALLBACK) for c in EXTRA):
         if c not in cmds:
             cmds.append(c)
+    # Parity with .githooks/pre-push, which already does this. The full-text gate reads the
+    # PDFs; CI installs poppler-utils, while a Windows checkout usually finds Xpdf's pdftotext
+    # on PATH instead, and Xpdf emits Latin-1 where poppler emits UTF-8. The extraction then
+    # fails to decode and preflight reports a fault CI will never see -- which breaks
+    # preflight's whole contract of running exactly what CI runs. Skip it, and say so.
+    if not _has_poppler():
+        cmds = [c for c in cmds if "check_paper_pages" not in c]
+        print("NOTE: full-text page check skipped (needs poppler's pdftotext; this machine has "
+              + _pdftotext_flavour() + "). CI runs it.")
+        print()
     if fast:
         cmds = [c for c in cmds if not any(s in c for s in SLOW)]
 
@@ -181,7 +218,8 @@ def main():
     failed = []
     for c in cmds:
         t0 = time.time()
-        r = subprocess.run(c, shell=True, cwd=ROOT, capture_output=True, text=True)
+        r = subprocess.run(c, shell=True, cwd=ROOT, capture_output=True, text=True,
+                           errors="replace", env=CI_ENV)
         tail = (r.stdout or r.stderr).strip().splitlines()
         mark = "ok  " if r.returncode == 0 else "FAIL"
         print(f"{mark} {time.time()-t0:6.1f}s  {c}")

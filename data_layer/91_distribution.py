@@ -17,7 +17,11 @@ from _paths import WORK, SITE
 import numpy as np, pandas as pd
 
 OUT = os.path.join(WORK, "out")
-if not os.path.isdir(OUT):
+# An EMPTY out/ is a Dropbox artefact, not a staging directory: rebuild.py clears it
+# with shutil.rmtree(..., ignore_errors=True) and the sync holds handles, so removal
+# partially fails. Test for the artefact, not the directory, or this selects the empty
+# one and dies on FileNotFoundError. CI never sees it: a fresh checkout has no out/.
+if not os.path.isfile(os.path.join(OUT, "api", "v1", "datasets.json")):
     OUT = SITE
 DV = os.path.join(OUT, "data", "v1")
 fails = []

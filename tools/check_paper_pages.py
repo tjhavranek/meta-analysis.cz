@@ -51,7 +51,7 @@ def check(project):
     tr_path = os.path.join(ROOT, "tools", "transcripts", "%s.md" % project)
     if not os.path.exists(page_path):
         return ["no page at %s" % page_dir(project, PAPERS[project])], []
-    page = open(page_path).read()
+    page = open(page_path, encoding="utf-8").read()
     # /maive/paper/ and /guidelines/guide/ were built by hand before the toolchain existed and
     # have no transcript, so the fidelity and census checks below cannot run on them. That
     # used to mean NO check ran on them, which is how /maive/paper/ came to point at a figure
@@ -62,7 +62,7 @@ def check(project):
     have_transcript = os.path.exists(tr_path)
     if not have_transcript:
         notes.append("hand-built page, no transcript: fidelity and census checks skipped")
-    src = open(tr_path).read() if have_transcript else None
+    src = open(tr_path, encoding="utf-8").read() if have_transcript else None
     pdf = transcript_pdf_path(project, PAPERS[project])
     pdfs = transcript_pdf_paths(project, PAPERS[project])
 

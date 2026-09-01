@@ -212,7 +212,7 @@ def multiset_check(a, b):
 
 
 def report(project, pdf, transcript_path, context=6, quiet=False):
-    src = open(transcript_path).read()
+    src = open(transcript_path, encoding="utf-8").read()
     a = words(pdf_prose(pdf))
     b = words(transcript_prose(src))
 
@@ -272,7 +272,7 @@ def main(argv):
     pdf = transcript_pdf_path(project, papers[project])
     transcript = os.path.join(ROOT, "tools", "transcripts", "%s.md" % project)
     problems, ratio = report(project, pdf, transcript, quiet=quiet)
-    b = words(transcript_prose(open(transcript).read()))
+    b = words(transcript_prose(open(transcript, encoding="utf-8").read()))
     lost, gained = multiset_check(pdf_counts(pdf), b)
     invented = sum(c for w, c in gained.items() if re.search(r"[a-z]{3}", w))
     if invented:
