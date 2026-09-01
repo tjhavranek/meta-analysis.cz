@@ -39,7 +39,7 @@ def page_words(pdf, page):
     # regular expressions rather than a parser that is entitled to refuse it.
     xml = subprocess.run(["pdftotext", "-bbox", "-f", str(page), "-l", str(page), pdf, "-"],
                          capture_output=True, text=True, check=True,
-                         errors="replace").stdout
+                         encoding="utf-8", errors="replace").stdout
     m = re.search(r'<page width="([\d.]+)" height="([\d.]+)"', xml)
     if not m:
         return 0, 0, []

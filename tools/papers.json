@@ -390,6 +390,7 @@
  },
  {
   "project": "correlations",
+  "home_label": "Data and code",
   "title": "Reducing the biases of the conventional meta-analysis of correlations",
   "literature": "Bias in Meta-Analyses of Correlations",
   "abstract": "Conventional meta-analyses (both fixed and random effects) of correlations are biased due to the correlation between the estimated correlation and its standard error. Simulations that are closely calibrated to match actual research conditions widely seen across correlational studies in psychology corroborate these biases and suggest two solutions: UWLS+3 and HS. UWLS+3 is a simple inverse-variance weighted average (the unrestricted weighted least squares) that adjusts the degrees of freedom and thereby reduces small-sample bias to scientific negligibility. UWLS+3 as well as the Hunter and Schmidt approach (HS) are less biased than conventional random-effects estimates of correlations and Fisher's z, whether or not there is publication selection bias. However, publication selection bias remains a ubiquitous source of bias and false positive findings. Despite the correlation between the estimated correlation and its standard error even in the absence of any selective reporting, the precision-effect test/precision-effect estimate with standard error (PET-PEESE) nearly eradicates publication selection bias. Surprisingly, PET-PEESE keeps the rate of false positives (i.e., type I errors) within their nominal levels under the typical conditions widely seen across psychological research whether there is publication selection bias, or not.",
@@ -667,6 +668,7 @@
  },
  {
   "project": "exercise",
+  "home_label": "Data and code",
   "title": "Effect of Exercise on Cognition, Memory, and Executive Function: A Study-Level Meta-Meta-Analysis Across Populations and Exercise Categories",
   "literature": "Exercise and Cognition",
   "abstract": "Physical exercise is widely believed to enhance cognition, yet evidence from meta-analyses remains mixed. Here we compile a study-level dataset of 2,239 effect-size estimates from 215 meta-analyses of randomized controlled trials examining the effect of exercise on general cognition, memory, and executive functions. We find strong evidence of selective reporting and large between-study heterogeneity. Analyses adjusted for publication bias reveal average effects much smaller than commonly reported (general cognition: standardized mean difference, SMD = 0.227, 95% credible interval 0.116 to 0.330; memory: SMD = 0.027, 95% credible interval 0.000 to 0.227; executive functions: SMD = 0.012, 95% credible interval 0.000 to 0.147), along with wide prediction intervals spanning both negative and positive effects. Subgroup analyses identify specific population-intervention combinations with more consistent benefits. Overall, broad claims of generalized cognitive enhancement resulting from physical exercise appear premature; the evidence supports targeted, population- and intervention-specific recommendations.",
@@ -2018,6 +2020,7 @@
  },
  {
   "project": "debate",
+  "home_label": "Data and code",
   "title": "Does Multi-Agent Debate Improve AI Feedback on Research Papers?",
   "literature": "Does Multi-Agent Debate Help?",
   "abstract": "",
@@ -2074,6 +2077,7 @@
  },
  {
   "project": "outliers",
+  "home_label": "Data and code",
   "title": "Do decisions about outliers and influential effects matter? Evidence from 358 behavioral science meta-analyses",
   "literature": "Outlier and Influence Handling",
   "abstract": "Meta-analysts routinely face estimates that look too large or extreme. Yet, how to handle them is left to the reviewer's judgment. The methods for detecting such estimates are well known. What is missing is an informed assessment of how much alternative handling choices might change a meta-analysis' conclusions. We fill this gap by analyzing the effects of four pre-registered handling treatments across 358 behavioral science meta-analyses with at least ten estimates. Each outlier handling treatment is estimated by two estimators (random effects and unrestricted weighted least squares), and compared to the 'do-nothing' baseline on three outcomes: the pooled effect, statistical significance, and whether the effect reaches the smallest effect size of interest (|d| ≥ 0.20). Our entire analysis and comparison pipelines were pre-registered. Alternative outlier handling treatments have little effect on the meta-analysis mean as the median absolute change in Cohen's d is at most 0.047 and often much less. Yet, at least one of these four treatments in combination with one of these estimators reverses the statistical significance of 11.5% of meta-analyses and the smallest-effect-of-interest assessment in 15.9%. Winsorizing has the least effect and DFBETAS the most. Categorical changes are found almost entirely among results already close to the decision boundary; strongly significant results essentially never change. These findings give applied meta-analysts, methods specialists, and reviewers a reference point for how much this under-reported choice matters and provide yet another reason for meta-analysts to publicly pre-specify their methods and handling treatments.",
@@ -2110,6 +2114,7 @@
  },
  {
   "project": "pcc_survey",
+  "home_label": "Data and code",
   "title": "Do methods matter in the meta-analysis of partial correlation coefficients?",
   "literature": "Do Methods Matter for Partial Correlations?",
   "abstract": "Recent studies have demonstrated that conventional meta-analyses of partial correlation coefficients (PCC) are biased. Several adjustments have been shown in simulations to reduce these small-sample biases to negligibility. While many meta-analyses of partial correlation coefficients are conducted each year across several disciplines, the practical importance of these issues remains unknown. To address this question and to offer advice for applications, we survey 172 economic meta-analyses of PCCs. We find that small-sample biases are negligible in practice. However, some publication selection biases remain. Although Fisher's z transformations have often been recommended, they reduce neither small-sample nor publication selection biases relative to conventional random effects. Both the unrestricted weighted least squares (UWLS) and the Hunter-Schmidt (HS) estimators produce smaller, arguably less biased, estimates of the mean PCC in these applications than either random effects or Fisher's z transformations. These findings offer practical guidance for any discipline that meta-analyzes partial correlations.",
@@ -2142,6 +2147,7 @@
  },
  {
   "project": "conventional_wisdom",
+  "home_label": "Data and code",
   "title": "Conventional wisdom, meta-analysis, and research revision in economics",
   "literature": "Conventional Wisdom and Meta-Analysis",
   "abstract": "Over the past several decades, meta-analysis has emerged as a widely accepted tool to understand economics research. Meta-analyses often challenge the established conventional wisdom of their respective fields. We systematically review a wide range of influential meta-analyses in economics and compare them to “conventional wisdom.” After correcting for observable biases, the empirical economic effects are typically much closer to zero and sometimes switch signs. Typically, the relative reduction in effect sizes is 45%–60%.",
@@ -2352,6 +2358,7 @@
  },
  {
   "project": "elb",
+  "home_label": "Data and code",
   "title": "Estimating the Effective Lower Bound on the Czech National Bank's Policy Rate",
   "literature": "The Effective Lower Bound on Policy Rates",
   "abstract": "This paper focuses on the estimation of the effective lower bound on the Czech National Bank’s policy rate. The effective lower bound is determined by the value below which holding and using cash would be preferable to holding deposits with negative yields. This bound is approximated on the basis of the storage, insurance and transportation costs of cash and the loss of convenience associated with cashless payments. This estimate is complemented by a calculation based on interest charges reflecting the impact of negative rates on banks’ profitability. Overall we get a mean of slightly below −1%, approximately in the interval (−2.0%, −0.4%). In addition, by means of a vector autoregression we show that the potential of negative rates is not sufficient to deliver monetary policy easing similar in its effects to the impact of the exchange rate commitment during the years 2013–2017.",
@@ -2375,6 +2382,7 @@
  },
  {
   "project": "leading_indicators",
+  "home_label": "Data and code",
   "title": "Leading indicators of crisis incidence: Evidence from developed countries",
   "literature": "Leading Indicators of Crisis Incidence",
   "abstract": "We examine which indicators are most useful in explaining the cost of economic crises in EU and OECD countries between 1970 and 2010. To define the dependent variable we combine a measure of costs to the economy, which consists of the output and employment loss and the fiscal deficit, with a database of crisis occurrence designed specifically for this task. We take into account model uncertainty in two steps. First, for each potential leading indicator we select the relevant prediction horizon by using panel vector autoregression. Second, we identify the most useful leading indicators with Bayesian model averaging. Our results suggest that domestic housing prices, share prices, and credit growth, and some global variables, such as private credit, constitute important sources of risk.",
@@ -2437,6 +2445,7 @@
  },
  {
   "project": "crisis_jfs",
+  "home_label": "Data and code",
   "title": "Banking, debt, and currency crises in developed countries: Stylized facts and early warning indicators",
   "literature": "Crises in Developed Countries",
   "abstract": "We construct and explore a new quarterly dataset covering crisis episodes in 40 developed countries over 1970–2010. First, we present stylized facts on banking, debt, and currency crises. Using panel vector autoregression we find that banking and debt crises are interrelated and both typically precede currency crises, but not vice versa. Banking crises are the most costly in terms of the overall output loss, and output takes about six years to recover. Second, on a reduced sample we try to identify early warning indicators of crises specific to developed economies, accounting for model uncertainty by means of Bayesian model averaging. The most consistent result across the various specifications and time horizons is that significant growth of domestic private credit precedes banking crises, while rising money market rates and global corporate spreads are also leading indicators worth monitoring. For currency crises, we also corroborate the role of rising domestic private credit and money market rates and detect the relevance of domestic currency overvaluation. The role of other indicators differs according to the type of crisis and the warning horizon selected, but it mostly seems easier to find reliable predictors at a horizon shorter than two years. Early warning indicators of debt crises are difficult to uncover due to the low occurrence of such episodes in our dataset. We also employ a signaling approach to derive the threshold value for the best single indicator (domestic private credit), and finally we provide a composite early warning index that further increases the usefulness of the model.",

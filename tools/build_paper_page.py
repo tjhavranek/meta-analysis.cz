@@ -946,16 +946,48 @@ def _doi_label(meta):
     return "Version of record"
 
 
+# What a social card actually needs, rather than what merely counts as an image.
+# 600x315 is the large-card threshold the major platforms use; below it they fall back to
+# a small square thumbnail cropped out of the middle. The aspect bounds exist because they
+# crop to roughly 1.91:1: a tall portrait loses the axis labels and legend along the
+# bottom, and a 6:1 strip survives only as a band across its own middle.
+CARD_MIN_W, CARD_MIN_H = 600, 315
+# Cropping a 3:1 image to 1.91:1 still keeps about two thirds of its width, and a wide
+# two-panel chart survives that. A 6:1 strip does not. The bounds are set where the
+# picture stops being readable, not at the platforms' ideal shape, because a merely wide
+# chart is still far better than no picture at all.
+CARD_MIN_RATIO, CARD_MAX_RATIO = 0.8, 3.0
+
+# An alt written for a screen reader sitting mid-document can lean on the sentence around
+# it. A card description stands alone in a feed, so the ones that trail off, that lost
+# their maths to the converter, or that carry a publisher's boilerplate are worse than the
+# paper's own title. Each pattern below is a real example from this site.
+_BAD_ALT = re.compile(
+    r",,|\(\)|\bof,|\[Colour figure|wileyonlinelibrary|\bshows\b.*\bdistribution$", re.I)
+
+
+def _usable_alt(alt):
+    """Whether this alt reads as a complete description on its own."""
+    a = html.unescape(alt or "").strip()
+    return bool(a) and a.endswith((".", "!", "?")) and not _BAD_ALT.search(a)
+
+
 def card_image(project, meta, body):
     """The figure a link to this page should show when it is shared, or None.
 
     The landing pages have picked one this way for a while; the full-text pages never
     did, so every one of them shared as a bare text card -- on the pages carrying the
-    actual papers, which are the ones worth sharing. The 200x200 floor is the one most
-    platforms enforce, and generate_seo learned why it matters when a fallback to the
-    58-pixel navigation gradient rendered every share as a blue smear. Ten of these
-    pages embed no figure at all and keep the text card, because a text card beats a
-    misleading one.
+    actual papers, which are the ones worth sharing.
+
+    The size and shape test is the point of this function, not a formality. A first pass
+    used the 200x200 floor the landing pages mention and it selected, for /inflation/,
+    a 1273x212 sliver that is not a figure at all: a mis-cropped strip showing the tail
+    of a bibliography entry and the heading "A PRISMA flow diagram", under an alt that
+    confidently described a flow diagram. generate_seo already records the same lesson
+    from the other direction, when a fallback to the 58-pixel navigation gradient made
+    every share render as a blue smear. A text card beats a misleading one, so a page
+    whose figures do not clear the bar keeps the text card; thirteen embed no figure at
+    all and never had the option.
     """
     d = page_dir(project, meta)
     for m in re.finditer(r'<img src="(figures/[^"]+)"[^>]*?alt="([^"]*)"', body):
@@ -963,12 +995,15 @@ def card_image(project, meta, body):
             with open(os.path.join(d, m.group(1)), "rb") as fh:
                 head = fh.read(24)
         except OSError:
-            continue                       # written later in the run, or not written yet
+            continue                       # emit_figure already refuses missing artwork
         if head[:8] != bytes((137, 80, 78, 71, 13, 10, 26, 10)) or head[12:16] != b"IHDR":
             continue
         w, h = struct.unpack(">II", head[16:24])
-        if w >= 200 and h >= 200:
-            return m.group(1), m.group(2)
+        if w < CARD_MIN_W or h < CARD_MIN_H:
+            continue
+        if not (CARD_MIN_RATIO <= w / h <= CARD_MAX_RATIO):
+            continue
+        return m.group(1), (m.group(2) if _usable_alt(m.group(2)) else ""), w, h
     return None
 
 
@@ -1003,6 +1038,11 @@ def build_page(project, meta, body, toc):
         }]
     }
     art = ld["@graph"][0]
+    # The landing pages put the same figure in their ScholarlyArticle graph; these did
+    # not, so the structured data described an article with no image while the head
+    # advertised one two lines above.
+    if _card:
+        art["image"] = "https://meta-analysis.cz%s%s" % (here, _card[0])
     # Computed here rather than beside the citation tags below: the JSON-LD needs it
     # first, and it was the JSON-LD that kept marrying the working paper to the
     # article's DOI after the meta tags stopped.
@@ -1244,14 +1284,20 @@ def build_page(project, meta, body, toc):
         project=project,
         here=here,
         cite_meta="\n".join(cite_meta),
+        # Dimensions are emitted because without them a platform scraping the URL for the
+        # first time has to fetch the image before it can decide to show a card, and
+        # commonly renders the first share with no picture at all.
         og_image=("\n"
                   '<meta property="og:image" content="https://meta-analysis.cz%s%s" />\n'
+                  '<meta property="og:image:width" content="%d" />\n'
+                  '<meta property="og:image:height" content="%d" />\n'
                   '<meta property="og:image:alt" content="%s" />'
                   # the alt is lifted off the <img>, where it is already escaped, so it
                   # has to be unescaped before esc_attr runs or an apostrophe reaches a
                   # social card as the literal text &amp;#x27;. The title fallback is raw
                   # and must not be unescaped, hence the unescape inside the or.
-                  % (here, _card[0], esc_attr(html.unescape(_card[1]) or title))) if _card else "",
+                  % (here, _card[0], _card[2], _card[3],
+                     esc_attr(html.unescape(_card[1]) or title))) if _card else "",
         ld=json.dumps(ld, indent=1, ensure_ascii=False),
         menu="\n\t\t\t".join(menu),
         attribution="\n".join(attribution),
@@ -1297,7 +1343,7 @@ def prints_pipe_headings(project, meta):
     try:
         text = subprocess.run(["pdftotext", "-f", "1", "-l", "12", pdf, "-"],
                               capture_output=True, text=True, check=True,
-                              errors="replace").stdout or ""
+                              encoding="utf-8", errors="replace").stdout or ""
     except Exception:
         return False
     return len(re.findall(r"^\s*\d+(?:\.\d+)?\s*\|\s*[A-Z]", text, re.M)) >= 2
@@ -1704,7 +1750,13 @@ def main(argv):
         page = build_page(project, meta, body, builder.toc)
         outdir = page_dir(project, meta)
         os.makedirs(outdir, exist_ok=True)
-        with open(os.path.join(outdir, "index.html"), "w") as fh:
+        # This writes all 72 full-text pages, and it is the one writer that kept the
+        # platform default. On Linux that is UTF-8 and LF; on Windows it is cp1252, which
+        # cannot encode the maths these pages carry, and CRLF, which rewrites every line
+        # of every page it touches. That is where the line-ending churn came from that
+        # made git list unchanged pages as modified and put 91 false dates in the sitemap.
+        with open(os.path.join(outdir, "index.html"), "w",
+                  encoding="utf-8", newline="\n") as fh:
             fh.write(page)
         # A document hangs off the page of the paper it belongs to, which may be hand-built;
         # only a project page gets the link written into it here.

@@ -159,7 +159,7 @@ def pdf_counts(pdf):
     lay_tokens = words(pdf_prose(pdf))
     plain_tokens = words(normalise(subprocess.run(
         ["pdftotext", pdf, "-"], capture_output=True, text=True, check=True,
-        errors="replace").stdout))
+        encoding="utf-8", errors="replace").stdout))
     # A third reading, in content-stream order. Both modes above read a two-column page
     # geometrically, and on a two-column REFERENCE list they interleave the columns: an entry
     # broken across a line has the other column's text spliced between its halves, so words
@@ -169,7 +169,7 @@ def pdf_counts(pdf):
     # bibliography.
     raw_tokens = words(normalise(subprocess.run(
         ["pdftotext", "-raw", pdf, "-"], capture_output=True, text=True, check=True,
-        errors="replace").stdout))
+        encoding="utf-8", errors="replace").stdout))
     layout, plain, raw = Counter(lay_tokens), Counter(plain_tokens), Counter(raw_tokens)
     best = Counter()
     for w in set(layout) | set(plain) | set(raw):

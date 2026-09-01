@@ -48,7 +48,7 @@ MATHY = re.compile(r"[=∑√∫±≤≥≈∼×·⋅αβγδεθλμπρστφ�
 def pdftotext(pdf, layout=True):
     cmd = ["pdftotext"] + (["-layout"] if layout else []) + [pdf, "-"]
     return subprocess.run(cmd, capture_output=True, text=True, check=True,
-                          errors="replace").stdout
+                          encoding="utf-8", errors="replace").stdout
 
 
 def find_gutter(lines, min_share=0.80):
