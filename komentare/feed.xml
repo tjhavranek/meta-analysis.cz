@@ -6,7 +6,17 @@
     <atom:link href="https://meta-analysis.cz/komentare/feed.xml" rel="self" type="application/rss+xml" />
     <description>Publicistika Tomáše Havránka a Zuzany Havránkové: komentáře pro celostátní média, sloupky pro litomyšlskou Lilii, rozhovory a kratší příspěvky ze sítí, v plném znění.</description>
     <language>cs</language>
-    <lastBuildDate>Mon, 10 Aug 2026 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 01 Sep 2026 00:00:00 +0000</lastBuildDate>
+    <item>
+      <title>A few weeks ago, our research website meta-analysis.cz was hacked (thank you, AI!).</title>
+      <link>https://meta-analysis.cz/komentare/posts/2026-09-01-rebuilding-meta-analysis-cz/</link>
+      <guid isPermaLink="true">https://meta-analysis.cz/komentare/posts/2026-09-01-rebuilding-meta-analysis-cz/</guid>
+      <pubDate>Tue, 01 Sep 2026 00:00:00 +0000</pubDate>
+      <category>Posts (ze sítí)</category>
+      <dc:language>en</dc:language>
+      <source url="https://www.linkedin.com/feed/update/urn%3Ali%3Ashare%3A7500512259765448705">LinkedIn</source>
+      <content:encoded><![CDATA[<p>A few weeks ago, our research website meta-analysis.cz was hacked (thank you, AI!).</p><p>It was our fault: we hadn&#x27;t changed the site in a major way since 2015 and had little security. Prior to the hack, we were still uploading files by FTP for individual papers. We had no central backup.</p><p>Fortunately, Claude Code and Codex (thank you, AI!) proved very effective at reconstructing the site from old copies on the Wayback Machine and scattered files on our hard drives.</p><p>In the end, the hack was a blessing in disguise. Now we have the website on GitHub, the datasets are archived on Zenodo with a DOI, and we can edit everything much more easily. This also made it much easier for us to integrate meta-analysis.cz with EasyMeta.org, which is a web-based tool for meta-analysis (including correction for p-hacking).</p><p>It also turns out that AI agents are very good at converting PDFs into clean HTML, so now we provide an HTML version of all our papers, plus of course complete data and code, and more.</p><p>So, for example, if you want to run MAIVE (a meta-analysis technique that corrects for p-hacking), you can just ask your AI assistant: &quot;Run MAIVE on this dataset, following the protocol at meta-analysis.cz&quot;</p><p>Anything broken, or anything we could improve?</p><p>Links in the first comment.</p>]]></content:encoded>
+    </item>
     <item>
       <title>🔎 New in the Journal of Political Economy Microeconomics: a meta-analysis of the effect of financial…</title>
       <link>https://meta-analysis.cz/komentare/posts/2026-08-10-financial-incentives-and-performance/</link>
