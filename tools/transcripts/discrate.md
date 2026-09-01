@@ -737,5 +737,3 @@ Zigraiova, D., Havranek, T., Irsova, Z., & Novak, J. (2021). How puzzling is the
 3. The point of the first switch to option B gives a measure of the upper bound of her discount rate. We assume linear utility here for simplicity and discuss relaxing of this assumption later.
 
 4. The oldest paper we use is Hausman (1979), which is not an experiment in the strict sense but is still based on real choices. The paper estimates discount rates from trade-offs between upfront capital costs and future savings of operating costs, looking at purchasing decisions of air conditioners.
-
-10. Recent evidence on this problem is provided by Depositario et al. (2009).

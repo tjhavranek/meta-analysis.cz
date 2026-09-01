@@ -496,7 +496,7 @@ Ioannidis, J.P., Stanley, T.D., Doucouliagos, H., 2017. The power of bias in eco
 
 Irsova, Z., Bom, P.R.D., Havranek, T., Rachinger, H., 2023. Spurious Precision in Meta-Analysis. CEPR Discussion Papers 17927. Centre for Economic Policy Research.
 
-Irsova, Z., Doucouliagos, H., Havranek, T., Stanley, T., 2024. Meta-analysis of social science research: a practitioner’s guide. Journal of Economic Surveys (forthcom- ing).
+Irsova, Z., Doucouliagos, H., Havranek, T., Stanley, T., 2024. Meta-analysis of social science research: a practitioner’s guide. Journal of Economic Surveys (forthcoming).
 
 Karabarbounis, M., 2016. A road map for efficiently taxing heterogeneous agents. American Economic Journal: Macroeconomics 8 (2), 182–214.
 

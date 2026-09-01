@@ -93,7 +93,7 @@ def stitch(project):
             + "\n" + "\n".join(t for t in trailing if t.strip())
     body = re.sub(r"\n{3,}", "\n\n", body)
     out = os.path.join(ROOT, "tools", "transcripts", "%s.md" % project)
-    with open(out, "w") as fh:
+    with open(out, "w", encoding="utf-8", newline="\n") as fh:
         fh.write(body.strip("\n") + "\n")
     return len(parts), len(body.split())
 

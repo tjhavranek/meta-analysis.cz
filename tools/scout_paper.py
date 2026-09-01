@@ -57,7 +57,8 @@ def scout(project, papers):
     if not pdf:
         return {"project": project, "error": "no PDF"}
     n = pages_of(pdf)
-    text = subprocess.run(["pdftotext", pdf, "-"], capture_output=True, text=True).stdout
+    text = subprocess.run(["pdftotext", pdf, "-"], capture_output=True, text=True,
+                          errors="replace").stdout or ""
     per_page = text.split("\f")
 
     tables, figures, eqpages, back_page = {}, {}, [], None

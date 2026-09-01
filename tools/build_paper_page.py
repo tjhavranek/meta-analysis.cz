@@ -1260,7 +1260,8 @@ def prints_pipe_headings(project, meta):
         return False
     try:
         text = subprocess.run(["pdftotext", "-f", "1", "-l", "12", pdf, "-"],
-                              capture_output=True, text=True, check=True).stdout
+                              capture_output=True, text=True, check=True,
+                              errors="replace").stdout or ""
     except Exception:
         return False
     return len(re.findall(r"^\s*\d+(?:\.\d+)?\s*\|\s*[A-Z]", text, re.M)) >= 2
@@ -1631,7 +1632,7 @@ def link_from_project_page(project):
         return False
     entry = '\n\t\t\t<li><a href="%s">Read it in full</a></li>\n\t\t\t' % href
     src = src[:m.end()].rstrip() + entry + src[m.end():].lstrip()
-    with open(path, "w") as fh:
+    with open(path, "w", encoding="utf-8", newline="\n") as fh:
         fh.write(src)
     return True
 

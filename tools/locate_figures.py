@@ -38,7 +38,8 @@ def page_words(pdf, page):
     # Poppler writes XHTML with entities it does not declare, so the document is read with
     # regular expressions rather than a parser that is entitled to refuse it.
     xml = subprocess.run(["pdftotext", "-bbox", "-f", str(page), "-l", str(page), pdf, "-"],
-                         capture_output=True, text=True, check=True).stdout
+                         capture_output=True, text=True, check=True,
+                         errors="replace").stdout
     m = re.search(r'<page width="([\d.]+)" height="([\d.]+)"', xml)
     if not m:
         return 0, 0, []

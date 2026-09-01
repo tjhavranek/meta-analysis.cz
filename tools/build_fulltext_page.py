@@ -286,7 +286,7 @@ picture.</p>
         print("papers/index.html matches a fresh build")
         return
     os.makedirs(outdir, exist_ok=True)
-    with open(dest, "w") as fh:
+    with open(dest, "w", encoding="utf-8", newline="\n") as fh:
         fh.write(out)
     print("papers/index.html: %d full-text editions across %d journals" % (len(rows), journals))
 

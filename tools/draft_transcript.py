@@ -47,7 +47,8 @@ MATHY = re.compile(r"[=∑√∫±≤≥≈∼×·⋅αβγδεθλμπρστφ�
 
 def pdftotext(pdf, layout=True):
     cmd = ["pdftotext"] + (["-layout"] if layout else []) + [pdf, "-"]
-    return subprocess.run(cmd, capture_output=True, text=True, check=True).stdout
+    return subprocess.run(cmd, capture_output=True, text=True, check=True,
+                          errors="replace").stdout
 
 
 def find_gutter(lines, min_share=0.80):
@@ -338,7 +339,7 @@ def draft(project, page_range=None, out=None):
 
     path = out or os.path.join(ROOT, "tools", "transcripts", "%s.draft.md" % project)
     os.makedirs(os.path.dirname(path), exist_ok=True)
-    with open(path, "w") as fh:
+    with open(path, "w", encoding="utf-8", newline="\n") as fh:
         fh.write("\n".join(lines_out).rstrip() + "\n")
     print("%-22s %s -> %s  (%d tables, %d figures, %d equations to fill)"
           % (project, rel, os.path.relpath(path, ROOT), n_tables, n_figs, n_eqs))

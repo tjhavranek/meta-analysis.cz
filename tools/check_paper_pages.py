@@ -30,7 +30,8 @@ sys.path.insert(0, os.path.join(ROOT, "tools"))
 from build_paper_page import (documents, page_dir, transcript_pdf_path,  # noqa: E402
                               transcript_pdf_paths)
 from scout_paper import scout                               # noqa: E402
-from verify_transcript import (multiset_check, pdf_counts,  # noqa: E402
+from verify_transcript import (multiset_check, multiset_check_strict,  # noqa: E402
+                               pdf_counts,
                                pdf_prose, transcript_prose, words)
 
 PAPERS = {p["project"]: p for p in json.load(open(os.path.join(ROOT, "tools", "papers.json")))}
@@ -70,7 +71,14 @@ def check(project):
     if have_transcript:
       a = pdf_counts(pdfs[0])
       for _extra in pdfs[1:]:
-          a = a | pdf_counts(_extra)      # a word in either hosted PDF is not invented
+          more = pdf_counts(_extra)
+          merged = a | more               # a word in either hosted PDF is not invented
+          # Counter.__or__ returns a plain Counter, dropping the `joined` set pdf_counts
+          # attaches -- so on the two papers that draw on more than one PDF, contagion and
+          # dst_slovakia, the run-together discount silently stopped applying and the gate
+          # was stricter there than anywhere else. Carry it across the union.
+          merged.joined = getattr(a, "joined", set()) | getattr(more, "joined", set())
+          a = merged
       b = words(transcript_prose(src))
       _lost, gained = multiset_check(a, b)
       invented = sum(c for w, c in gained.items() if re.search(r"[a-z]{3}", w))
@@ -80,6 +88,21 @@ def check(project):
       elif invented:
           notes.append("%d word(s) not in the text layer: %s"
                        % (invented, ", ".join(sorted(w for w in gained if re.search(r"[a-z]{3}", w)))))
+
+      # The shipped rule forgives by membership and never consumes a count, so one glued
+      # token absolves every surplus copy of a word; it also treats a two-letter surplus as
+      # glue, which is where meaning inversions hide (significant riding in on
+      # insignificant). multiset_check_strict repairs both. It does NOT gate yet: it prints
+      # the difference so the delta can be sized under CI's poppler before anything is
+      # tightened, because a stricter rule that reds CI is not shippable. Flip the gate once
+      # this line stops appearing.
+      _l2, g2 = multiset_check_strict(a, b)
+      strict = sum(c for w, c in g2.items() if re.search(r"[a-z]{3}", w))
+      if strict > invented:
+          _new = sorted(set(w for w in g2 if re.search(r"[a-z]{3}", w))
+                        - set(w for w in gained if re.search(r"[a-z]{3}", w)))
+          notes.append("strict fidelity (report-only, not gating): %d vs %d; newly flagged: %s"
+                       % (strict, invented, ", ".join(_new[:10]) or "(count only)"))
 
       # -- how much of the paper's distinctive vocabulary the transcript accounts for.
       #    Total words are a poor measure: half the words in a paper are "the" and "of", and

@@ -158,7 +158,8 @@ def pdf_counts(pdf):
     from collections import Counter
     lay_tokens = words(pdf_prose(pdf))
     plain_tokens = words(normalise(subprocess.run(
-        ["pdftotext", pdf, "-"], capture_output=True, text=True, check=True).stdout))
+        ["pdftotext", pdf, "-"], capture_output=True, text=True, check=True,
+        errors="replace").stdout))
     # A third reading, in content-stream order. Both modes above read a two-column page
     # geometrically, and on a two-column REFERENCE list they interleave the columns: an entry
     # broken across a line has the other column's text spliced between its halves, so words
@@ -167,7 +168,8 @@ def pdf_counts(pdf):
     # transcript of a two-column accepted manuscript is accused of inventing its own
     # bibliography.
     raw_tokens = words(normalise(subprocess.run(
-        ["pdftotext", "-raw", pdf, "-"], capture_output=True, text=True, check=True).stdout))
+        ["pdftotext", "-raw", pdf, "-"], capture_output=True, text=True, check=True,
+        errors="replace").stdout))
     layout, plain, raw = Counter(lay_tokens), Counter(plain_tokens), Counter(raw_tokens)
     best = Counter()
     for w in set(layout) | set(plain) | set(raw):
@@ -210,6 +212,65 @@ def multiset_check(a, b):
         del gained[w]
     return lost, gained
 
+
+def _glue_ok(extra):
+    """Is this surplus a superscript the text layer glued on, or a different word?
+
+    One character of any kind is glue: the footnote marks this corpus actually carries are
+    single letters and single digits, "Havranek^c" stored as havranekc. Two digits is glue
+    too, because footnote numbering reaches double figures. Two LETTERS is where the meaning
+    inversions live -- in+significant, st+ability, crash+es -- so two letters is not glue.
+    """
+    return len(extra) == 1 or (len(extra) == 2 and extra.isdigit())
+
+
+def multiset_check_strict(a, b):
+    """multiset_check with the two repairs, kept beside it rather than replacing it.
+
+    The shipped rule forgives by MEMBERSHIP: `for t in ca` tests that some longer PDF word
+    exists and never decrements, so one glued token forgives every surplus copy of a word,
+    however many. This version gives each container a budget -- the count by which the PDF
+    exceeds the transcript -- and consumes it as it forgives, so a single glued byline cannot
+    absolve twenty invented occurrences.
+
+    It also requires the surplus characters to look like glue rather than morphology, which
+    is what stops "significant" riding in on "insignificant".
+
+    NOT the gate. check_paper_pages.py runs this alongside the shipped rule and reports the
+    difference, so the delta under CI's poppler can be measured before anything is tightened.
+    """
+    from collections import Counter
+    ca = a if isinstance(a, Counter) else Counter(a)
+    cb = b if isinstance(b, Counter) else Counter(b)
+    lost, gained = ca - cb, cb - ca
+    runs = getattr(ca, "joined", set())
+    budget = Counter(lost)
+    for w in sorted(gained):
+        if len(w) < 4:
+            continue
+        if w in runs:
+            del gained[w]
+            continue
+        need = gained[w]
+        for t in sorted(budget):
+            if need <= 0:
+                break
+            if budget[t] <= 0 or len(t) <= len(w):
+                continue
+            if t.endswith(w) and _glue_ok(t[:len(t) - len(w)]):
+                pass
+            elif t.startswith(w) and _glue_ok(t[len(w):]):
+                pass
+            else:
+                continue
+            take = min(need, budget[t])
+            budget[t] -= take
+            need -= take
+        if need <= 0:
+            del gained[w]
+        else:
+            gained[w] = need
+    return lost, gained
 
 def report(project, pdf, transcript_path, context=6, quiet=False):
     src = open(transcript_path, encoding="utf-8").read()
