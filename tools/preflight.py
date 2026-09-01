@@ -109,7 +109,8 @@ def _witnesses(depth=12, most=6):
     for n in range(depth):
         changed = subprocess.run(
             f"git diff-tree --no-commit-id --name-only -r HEAD~{n}",
-            shell=True, cwd=ROOT, capture_output=True, text=True).stdout.split()
+            shell=True, cwd=ROOT, capture_output=True, text=True,
+            encoding="utf-8", errors="replace").stdout.split()
         for rel in changed:
             if rel in seen or rel.startswith(("tools/", "data_layer/", ".github/")) \
                     or rel.endswith(".py"):
@@ -155,7 +156,8 @@ def deployed():
         print("no recently changed file is served, so only health can be checked")
     for attempt in range(1, 13):
         r = subprocess.run(f"{py} {SMOKE}", shell=True, cwd=ROOT,
-                           capture_output=True, text=True)
+                           capture_output=True, text=True, encoding="utf-8",
+                           errors="replace", env=CI_ENV)
         healthy = r.returncode == 0
         stale = []
         if healthy:
