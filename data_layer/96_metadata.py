@@ -317,12 +317,33 @@ _CLAIMS = re.compile(
     r"|\bBeta:\s"                                                # "Beta: the harmonisation..."
     r"|\bbeing\s+a\s+beta\b",                                    # "Being a beta, ..."
     re.I | re.M)
+# llms-full.txt carries the full text of every paper, so most of it is not the site talking.
+# Two of those texts say "is beta estimated from (1)" and "is a Beta formulation", which are
+# statistics, not maturity claims, and the check has no business editing a republished paper to
+# quiet itself. Everything from a paper's `Abstract:` line to the next `## ` heading is
+# reproduced rather than authored here, so it is blanked before the scan -- blanked with spaces
+# rather than cut, so the offsets the context snippet uses still point at the right place. What
+# stays in scope is what the site actually writes: the header, and each paper's link block.
+_REPRODUCED = re.compile(r"^Abstract:.*?(?=^## |\Z)", re.M | re.S)
+
+
+def _authored(path, text):
+    if os.path.basename(path) != "llms-full.txt":
+        return text
+    out = list(text)
+    for m in _REPRODUCED.finditer(text):
+        for i in range(m.start(), m.end()):
+            if out[i] != "\n":
+                out[i] = " "
+    return "".join(out)
+
+
 _beta_bad = []
 if API["harmonised_table"].get("status") != "beta":
     for _f in _SURFACES:
         if not os.path.isfile(_f):
             continue
-        _t = open(_f, encoding="utf-8", errors="replace").read()
+        _t = _authored(_f, open(_f, encoding="utf-8", errors="replace").read())
         for _m in _CLAIMS.finditer(_t):
             _ctx = _t[max(0, _m.start() - 60):_m.end() + 60]
             if "0.9.0" in _ctx:
