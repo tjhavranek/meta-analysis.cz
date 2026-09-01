@@ -49,7 +49,7 @@ def extract(project, fig, page, box, dpi=200, colours=64, pdf=None):
     import json
     sys.path.insert(0, os.path.join(ROOT, "tools"))
     from build_paper_page import documents, page_dir, pdf_path
-    papers = {p["project"]: p for p in json.load(open(os.path.join(ROOT, "tools", "papers.json")))}
+    papers = {p["project"]: p for p in json.load(open(os.path.join(ROOT, "tools", "papers.json"), encoding="utf-8"))}
     papers.update(documents())
     pdf = pdf or pdf_path(project, papers[project])
 

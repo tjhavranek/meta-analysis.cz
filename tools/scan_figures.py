@@ -32,7 +32,7 @@ from extract_figure import extract                       # noqa: E402
 from locate_figures import lines_of, page_words          # noqa: E402
 from scout_paper import scout                            # noqa: E402
 
-PAPERS = {p["project"]: p for p in json.load(open(os.path.join(ROOT, "tools", "papers.json")))}
+PAPERS = {p["project"]: p for p in json.load(open(os.path.join(ROOT, "tools", "papers.json"), encoding="utf-8"))}
 CAP = re.compile(r"^(FIG|Fig|FIGURE|Figure)\.?$")
 
 

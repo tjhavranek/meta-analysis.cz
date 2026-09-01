@@ -326,7 +326,7 @@ def main(argv):
     project = argv[0]
     sys.path.insert(0, os.path.join(ROOT, "tools"))
     import json
-    papers = {p["project"]: p for p in json.load(open(os.path.join(ROOT, "tools", "papers.json")))}
+    papers = {p["project"]: p for p in json.load(open(os.path.join(ROOT, "tools", "papers.json"), encoding="utf-8"))}
     from build_paper_page import documents
     papers.update(documents())
     from build_paper_page import transcript_pdf_path

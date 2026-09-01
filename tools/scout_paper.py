@@ -115,7 +115,7 @@ def scout(project, papers):
 
 
 def main(argv):
-    papers = {p["project"]: p for p in json.load(open(os.path.join(ROOT, "tools", "papers.json")))}
+    papers = {p["project"]: p for p in json.load(open(os.path.join(ROOT, "tools", "papers.json"), encoding="utf-8"))}
     from build_paper_page import documents
     papers.update(documents())
     as_json = "--json" in argv

@@ -34,7 +34,7 @@ from verify_transcript import (multiset_check, multiset_check_strict,  # noqa: E
                                pdf_counts,
                                pdf_prose, transcript_prose, words)
 
-PAPERS = {p["project"]: p for p in json.load(open(os.path.join(ROOT, "tools", "papers.json")))}
+PAPERS = {p["project"]: p for p in json.load(open(os.path.join(ROOT, "tools", "papers.json"), encoding="utf-8"))}
 PAPERS.update(documents())
 
 

@@ -20,7 +20,7 @@ sys.path.insert(0, os.path.join(ROOT, "tools"))
 
 from build_paper_page import article_title, documents, page_href, venue_line  # noqa: E402
 
-PAPERS = {p["project"]: p for p in json.load(open(os.path.join(ROOT, "tools", "papers.json")))}
+PAPERS = {p["project"]: p for p in json.load(open(os.path.join(ROOT, "tools", "papers.json"), encoding="utf-8"))}
 
 
 def _published_in():

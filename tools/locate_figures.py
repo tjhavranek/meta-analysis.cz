@@ -28,7 +28,7 @@ sys.path.insert(0, os.path.join(ROOT, "tools"))
 from build_paper_page import pdf_path                  # noqa: E402
 from scout_paper import scout                          # noqa: E402
 
-PAPERS = {p["project"]: p for p in json.load(open(os.path.join(ROOT, "tools", "papers.json")))}
+PAPERS = {p["project"]: p for p in json.load(open(os.path.join(ROOT, "tools", "papers.json"), encoding="utf-8"))}
 from build_paper_page import documents, page_dir           # noqa: E402
 PAPERS.update(documents())
 CAP = re.compile(r"^(FIG|Fig|FIGURE|Figure)\.?$")

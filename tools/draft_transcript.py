@@ -262,7 +262,7 @@ def classify(para, seen_backmatter):
 def draft(project, page_range=None, out=None):
     import json
     from build_paper_page import pdf_path
-    papers = {p["project"]: p for p in json.load(open(os.path.join(ROOT, "tools", "papers.json")))}
+    papers = {p["project"]: p for p in json.load(open(os.path.join(ROOT, "tools", "papers.json"), encoding="utf-8"))}
     from build_paper_page import documents
     papers.update(documents())
     meta = papers[project]
