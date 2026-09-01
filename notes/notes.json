@@ -1389,7 +1389,7 @@
    "slug": "rebuilding-meta-analysis-cz",
    "title": "The site was hacked, so we rebuilt it",
    "date": "2026-09-01",
-   "summary": "meta-analysis.cz had barely changed since 2015, was updated over FTP and had no central backup, and it was hacked. Claude Code and Codex reconstructed it from Wayback Machine copies and scattered local files. The site now lives on GitHub, the datasets are archived on Zenodo with a DOI, every paper has an HTML full text alongside its data and code, and MAIVE runs through EasyMeta.org.",
+   "summary": "meta-analysis.cz had barely changed since 2015, was updated over FTP and had no central backup, and it was hacked. Claude Code and Codex reconstructed it from Wayback Machine copies and scattered local files. The site now lives on GitHub, the whole dataset of 50 thousand estimates from 42 literatures is archived on Zenodo with a DOI, every paper has an HTML full text alongside its data and code, and MAIVE runs through EasyMeta.org.",
    "topics": [
     "AI and research",
     "research tools"

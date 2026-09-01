@@ -5,7 +5,7 @@
 <meta http-equiv="content-type" content="text/html; charset=utf-8" />
 <title>The site was hacked, so we rebuilt it</title>
 <meta name="keywords" content="meta-analysis.cz, website reconstruction, AI agents, reproducibility, open data, Zenodo, MAIVE, EasyMeta" />
-<meta name="description" content="meta-analysis.cz had barely changed since 2015, was updated over FTP and had no central backup, and it was hacked. Claude Code and Codex reconstructed it from Wayback Machine copies and scattered local files. The site now lives on GitHub, the datasets are archived on Zenodo with a DOI, every paper has an HTML full text alongside its data and code, and MAIVE runs through EasyMeta.org." />
+<meta name="description" content="meta-analysis.cz had barely changed since 2015, was updated over FTP and had no central backup, and it was hacked. Claude Code and Codex reconstructed it from Wayback Machine copies and scattered local files. The site now lives on GitHub, the whole dataset of 50 thousand estimates from 42 literatures is archived on Zenodo with a DOI, every paper has an HTML full text alongside its data and code, and MAIVE runs through EasyMeta.org." />
 <link href="/style.css" rel="stylesheet" type="text/css" />
 <link rel="alternate" type="application/rss+xml" title="Research notes" href="https://meta-analysis.cz/notes/feed.xml" />
 
@@ -17,7 +17,7 @@
 <meta property="og:site_name" content="meta-analysis.cz" />
 <meta property="og:type" content="article" />
 <meta property="og:title" content="The site was hacked, so we rebuilt it" />
-<meta property="og:description" content="meta-analysis.cz had barely changed since 2015, was updated over FTP and had no central backup, and it was hacked. Claude Code and Codex reconstructed it from Wayback Machine copies and scattered local files. The site now lives on GitHub, the datasets are archived on Zenodo with a DOI, every paper has an HTML full text alongside its data and code, and MAIVE runs through EasyMeta.org." />
+<meta property="og:description" content="meta-analysis.cz had barely changed since 2015, was updated over FTP and had no central backup, and it was hacked. Claude Code and Codex reconstructed it from Wayback Machine copies and scattered local files. The site now lives on GitHub, the whole dataset of 50 thousand estimates from 42 literatures is archived on Zenodo with a DOI, every paper has an HTML full text alongside its data and code, and MAIVE runs through EasyMeta.org." />
 <meta property="og:url" content="https://meta-analysis.cz/notes/rebuilding-meta-analysis-cz/" />
 <script type="application/ld+json">
 {
@@ -30,8 +30,8 @@
    "url": "https://meta-analysis.cz/notes/rebuilding-meta-analysis-cz/",
    "headline": "The site was hacked, so we rebuilt it",
    "name": "The site was hacked, so we rebuilt it",
-   "abstract": "meta-analysis.cz had barely changed since 2015, was updated over FTP and had no central backup, and it was hacked. Claude Code and Codex reconstructed it from Wayback Machine copies and scattered local files. The site now lives on GitHub, the datasets are archived on Zenodo with a DOI, every paper has an HTML full text alongside its data and code, and MAIVE runs through EasyMeta.org.",
-   "description": "meta-analysis.cz had barely changed since 2015, was updated over FTP and had no central backup, and it was hacked. Claude Code and Codex reconstructed it from Wayback Machine copies and scattered local files. The site now lives on GitHub, the datasets are archived on Zenodo with a DOI, every paper has an HTML full text alongside its data and code, and MAIVE runs through EasyMeta.org.",
+   "abstract": "meta-analysis.cz had barely changed since 2015, was updated over FTP and had no central backup, and it was hacked. Claude Code and Codex reconstructed it from Wayback Machine copies and scattered local files. The site now lives on GitHub, the whole dataset of 50 thousand estimates from 42 literatures is archived on Zenodo with a DOI, every paper has an HTML full text alongside its data and code, and MAIVE runs through EasyMeta.org.",
+   "description": "meta-analysis.cz had barely changed since 2015, was updated over FTP and had no central backup, and it was hacked. Claude Code and Codex reconstructed it from Wayback Machine copies and scattered local files. The site now lives on GitHub, the whole dataset of 50 thousand estimates from 42 literatures is archived on Zenodo with a DOI, every paper has an HTML full text alongside its data and code, and MAIVE runs through EasyMeta.org.",
    "inLanguage": "en",
    "datePublished": "2026-09-01",
    "dateModified": "2026-09-01",
@@ -120,7 +120,7 @@ Fortunately, Claude Code and Codex (thank you, AI!) proved very effective at rec
 </p>
 
 <p>
-In the end, the hack was a blessing in disguise. Now we have the website on GitHub, the datasets are archived on Zenodo with a DOI, and we can edit everything much more easily. This also made it much easier for us to integrate meta-analysis.cz with EasyMeta.org, which is a web-based tool for meta-analysis (including correction for p-hacking).
+In the end, the hack was a blessing in disguise. Now we have the website on GitHub, the datasets are archived on Zenodo with a DOI, and we can edit everything much more easily. This also made it much easier for us to integrate meta-analysis.cz with <a href="https://www.easymeta.org/">EasyMeta.org</a>, which is a web-based tool for meta-analysis (including correction for p-hacking).
 </p>
 
 <p>
@@ -128,24 +128,14 @@ It also turns out that AI agents are very good at converting PDFs into clean HTM
 </p>
 
 <p>
-So, for example, if you want to run MAIVE (a meta-analysis technique that corrects for p-hacking), you can just ask your AI assistant: "Run MAIVE on this dataset, following the protocol at meta-analysis.cz"
+So, for example, if you want to run <a href="/maive/">MAIVE</a> (a meta-analysis technique that corrects for p-hacking), you can just ask your AI assistant: "Run MAIVE on this dataset, following the protocol at meta-analysis.cz"
 </p>
 
 <p>
 Anything broken, or anything we could improve?
 </p>
 
-<p>
-The entire dataset, 50 thousand estimates from 42 literatures, is available here: <a href="https://meta-analysis.cz/datasets/">https://meta-analysis.cz/datasets/</a>
-</p>
-
-<p>
-All results are summarized here: <a href="https://meta-analysis.cz/results/">https://meta-analysis.cz/results/</a>
-</p>
-
-<p>
-And finally integration with EasyMeta.org: <a href="https://meta-analysis.cz/maive/how-to/">https://meta-analysis.cz/maive/how-to/</a>
-</p>
+<figure><img src="https://meta-analysis.cz/komentare/social-img/2026-09-01_p1_1.png" alt="The “One file, every literature” panel from meta-analysis.cz: 49,845 estimate-level rows from 42 literatures in one table. Two histograms of absolute t-statistics. The left panel spans 0 to 6, peaks at 1,671 in the lowest bin and declines steadily, with a blue line marking 1.96 and dashed lines at 1.645 and 2.576. The right panel magnifies a 0.5-wide caliper from 1.71 to 2.21 on its own scale, where the bins above 1.96 are highlighted in blue and the tallest holds 646 estimates." /></figure>
 			</div>
 			<div class="meta">
 				<p class="links"><a href="/notes/" class="more">All notes</a> &nbsp;&middot;&nbsp; <a href="/" class="more">More meta from Prague</a></p>
