@@ -135,7 +135,7 @@ TABLE 1 (Continued). Relevance and characteristics of 24 selected meta-studies.
 *Abbreviations*: SJR, SCImago Journal Rank; RIS, Resurchify Impact Score as of the year 2021.
 *Source*: https://www.resurchify.com/ranking
 
-FIGURE 1 (no artwork). Multi-year averages of characteristics of 72 pre-selected meta-analyses. [Colour figure can be viewed at wileyonlinelibrary.com] Notes: The figure shows trends of the multi-year averages of the characteristics of the 72 pre-selected meta-studies. (a) Multi-year averages (based on publication year of the meta-study) of the number of primary studies and observations included per meta-study. (b) Multi-year averages of the impact factors of journals where meta-analyses were published, according to the SCImago Journal Rank (SJR) and the Resurchify Impact Score (RIS). Source: https://www.resurchify.com/ranking
+FIGURE 1. Multi-year averages of characteristics of 72 pre-selected meta-analyses. [Colour figure can be viewed at wileyonlinelibrary.com] Notes: The figure shows trends of the multi-year averages of the characteristics of the 72 pre-selected meta-studies. (a) Multi-year averages (based on publication year of the meta-study) of the number of primary studies and observations included per meta-study. (b) Multi-year averages of the impact factors of journals where meta-analyses were published, according to the SCImago Journal Rank (SJR) and the Resurchify Impact Score (RIS). Source: https://www.resurchify.com/ranking
 
 attracted, as well as recent impact factors and rankings of the respective journals in which they are published.
 

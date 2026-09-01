@@ -594,11 +594,11 @@ D. Žigraiova and T. Havránek. Bank competition and financial stability: Much a
 
 ## Appendix A
 
-FIGURE A1 (no artwork). PRISMA flow diagram
+FIGURE A1. PRISMA flow diagram
 
 Notes: The figure presents the PRISMA flow diagram for the study-selection procedure (Iršová et al., 2024; Page et al., 2021; Stanley et al., 2013). Studies are identified in Google Scholar because it searches the full text of articles rather than just titles, abstracts, and keywords. The following query is used: **"Board" AND "Gender" AND "Diversity" AND "ESG" AND ("Disclosure" OR "Score" OR "Performance")**. The initial search in May 2024 returned more than 22,800 records, of which we screen the first 500 by relevance ranking. Backward snowballing is then performed by compiling the 100 most frequently cited works among the included studies. The search was closed on December 16, 2024, when we ran a further Google Scholar query restricted to 2024 to capture articles published between May and December. Whenever a study had a plausible chance of containing usable estimates, its full text was read and assessed. The complete dataset is available in the online appendix at https://meta-analysis.cz/esg.
 
-FIGURE A2 (no artwork). Variation of estimates within and across countries
+FIGURE A2. Variation of estimates within and across countries
 
 Notes: The figure shows a box plot of the estimated effects within the interquartile range. The inner box line indicates the median. The whiskers extend to the most extreme values within 1.5 times the interquartile range.
 
@@ -647,11 +647,11 @@ Notes: Estimates from the interacted FAT-PET regression $E_{is} = \beta_0 + \bet
 
 ## Appendix C
 
-FIGURE C1 (no artwork). Correlations between potential predictors of heterogeneity
+FIGURE C1. Correlations between potential predictors of heterogeneity
 
 Notes: The figure displays correlation coefficients for variables used in heterogeneity analysis.
 
-FIGURE C2 (no artwork). Model size and convergence for the baseline BMA
+FIGURE C2. Model size and convergence for the baseline BMA
 
 (a) Posterior model size and model probabilities  (b) Cumulative posterior model probability
 

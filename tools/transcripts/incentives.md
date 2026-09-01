@@ -757,15 +757,15 @@ Zeugner, S. & M. Feldkircher (2015): “Bayesian model averaging employing fixed
 
 ## A | Details of Literature Search
 
-FIGURE A1 (no artwork). PRISMA flow diagram for the baseline dataset
+FIGURE A1. PRISMA flow diagram for the baseline dataset
 
 Notes: We use the following query in Google Scholar: (‘‘financial reward’’ OR ‘‘financial incentive’’ OR ‘‘money’’ OR ‘‘monetary’’) AND (‘‘performance’’ OR ‘‘motivation’’ OR ‘‘effort’’) AND ‘‘experiment’’ AND (‘‘estimate’’ or ‘‘empirical’’). Note that Google Scholar provides fulltext search, not only the search of the title, abstract and keywords. We screen the first 1,000 records retrieved from Google Scholar based on their relevance ranking. In the screening stage, we restrict attention to studies published in the top 50 economics journals according to the discounted recursive impact factor in RePEc. We also exclude studies that, based on their title and abstract, clearly do not contain any estimates of the effect of financial incentives on performance. If a study appears to have even a minimal likelihood of reporting relevant empirical estimates, we retrieve the full text and assess it in detail during the eligibility stage. The search was concluded on February 14, 2025. The list of included studies is provided in Table A1; the full dataset, along with a list of the 163 studies excluded at the eligibility stage (including reasons for exclusion), is available in the online appendix at meta-analysis.cz/incentives. PRISMA = Preferred Reporting Items for Systematic Reviews and Meta-Analyses. More details on PRISMA and reporting standards of economics meta-analyses in general are provided by Havranek *et al.* (2020).
 
-FIGURE A2 (no artwork). PRISMA flow diagram for the expanded dataset (Cohen's d)
+FIGURE A2. PRISMA flow diagram for the expanded dataset (Cohen's d)
 
 Notes: We use the following query in Google Scholar: (‘‘financial reward’’ OR ‘‘financial incentive’’ OR ‘‘money’’ OR ‘‘monetary’’) AND (‘‘performance’’ OR ‘‘motivation’’ OR ‘‘effort’’) AND ‘‘experiment’’ AND (‘‘estimate’’ or ‘‘empirical’’). Note that Google Scholar provides fulltext search, not only the search of the title, abstract and keywords. We screen the first 2,000 records retrieved from Google Scholar based on their relevance ranking. (Google Scholar limits each search to the first 1,000 results, so we split the search by publication year: before 2015 and 2015 or later.) In the screening stage, we restrict attention to studies published in the top 50 economics journals according to the discounted recursive impact factor in RePEc. We also exclude studies that, based on their title and abstract, clearly do not contain any estimates of the effect of financial incentives on performance. If a study appears to have even a minimal likelihood of reporting relevant empirical estimates, we retrieve the full text and assess it in detail during the eligibility stage. Next, we conduct backward snowballing: for each study included via the Google Scholar search, we extract its list of references. We then identify the 100 studies most frequently cited across the included literature and inspect them for additional relevant estimates. The search was concluded on February 14, 2025. The list of included studies is provided in Table A1; the full dataset, along with a list of the 318 studies excluded at the eligibility stage (including reasons for exclusion), is available in the online appendix at meta-analysis.cz/incentives. PRISMA = Preferred Reporting Items for Systematic Reviews and Meta-Analyses. More details on PRISMA and reporting standards of economics meta-analyses in general are provided by Havranek et al. (2020).
 
-FIGURE A3 (no artwork). PRISMA flow diagram for working papers
+FIGURE A3. PRISMA flow diagram for working papers
 
 Notes: We use the following query in Google Scholar: (‘‘financial reward’’ OR ‘‘financial incentive’’ OR ‘‘money’’ OR ‘‘monetary’’) AND (‘‘performance’’ OR ‘‘motivation’’ OR ‘‘effort’’) AND ‘‘experiment’’ AND (‘‘estimate’’ or ‘‘empirical’’) AND (‘‘economics’’ OR ‘‘finance’’) working paper. Note that the term working paper operates as a soft preference rather than a strict filter: the resulting set therefore includes discussion papers, proceedings, dissertations, and repository preprints in addition to items labeled “working paper.” Note also that Google Scholar provides fulltext search, not only the search of the title, abstract and keywords. We screen the first 1,000 records retrieved from Google Scholar based on their relevance ranking. In the screening stage we exclude studies that, based on their title and abstract, clearly do not contain any estimates of the effect of financial incentives on performance. If a study appears to have even a minimal likelihood of reporting relevant empirical estimates, we retrieve the full text and assess it in detail during the eligibility stage. Here we only include studies that were unpublished as of February 14, 2025. The list of included studies is provided in Table A1; the full dataset, along with a list of the 281 studies excluded at the eligibility stage (including reasons for exclusion), is available in the online appendix at meta-analysis.cz/incentives. PRISMA = Preferred Reporting Items for Systematic Reviews and Meta-Analyses. More details on PRISMA and reporting standards of economics meta-analyses in general are provided by Havranek et al. (2020).
 
@@ -807,11 +807,11 @@ Notes: Studies without ⋆ or † are included in the baseline dataset; ⋆ deno
 
 ## B | Additional Statistics and Results (for online publication)
 
-FIGURE B1 (no artwork). No systematic differences in results across countries
+FIGURE B1. No systematic differences in results across countries
 
 Notes: See notes to Figure 3.
 
-FIGURE B2 (no artwork). Correlation matrix for regression variables
+FIGURE B2. Correlation matrix for regression variables
 
 Note: The figure shows correlation coefficients for variables described in Table 3. Blue color (dark in grayscale) indicates positive correlation, while red color (light in grayscale) indicates negative correlation.
 
@@ -833,7 +833,7 @@ Building on this, Benabou & Tirole (2003) develop a formal model in which agents
 
 Taken together, these models show that crowding-out is not merely a psychological concept but has been rigorously formalized in economic theory. They emphasize the importance of considering unintended consequences of extrinsic rewards, particularly when intrinsic motivation plays a key role.
 
-FIGURE B3 (no artwork). The distribution of *t*-statistics peaks at zero
+FIGURE B3. The distribution of *t*-statistics peaks at zero
 
 Notes: The figure represents the distribution of t-statistics corresponding to the effect of financial incentives on performance reported in the literature. Vertical lines represent zero and critical values associated with statistical significance at the 5% level.
 
@@ -890,19 +890,19 @@ TABLE B2. Summary statistics for Cohen's d (expanded dataset and working papers)
 | Preferred estimates | 157 | 0.130 | 0.087 | 0.174 | 0.098 | 0.055 | 0.141 |
 Notes: The table summarizes Cohen's d coefficients corresponding to the estimated effects of financial incentives on performance reported in individual studies. Preferred estimates are those emphasized by the authors of individual studies.
 
-FIGURE B4 (no artwork). Histogram for the expanded dataset
+FIGURE B4. Histogram for the expanded dataset
 
 Notes: The figure depicts a histogram of Cohen's d coefficients corresponding to the estimated effects of financial incentives on performance reported in individual studies. The vertical line denotes the sample mean. Outliers are excluded from the figure for ease of exposition but included in all statistical tests.
 
-FIGURE B5 (no artwork). Funnel plot for the expanded dataset
+FIGURE B5. Funnel plot for the expanded dataset
 
 Notes: The figure shows Cohen's d coefficients corresponding to the estimated effects of financial incentives on performance reported in individual studies. The vertical line denotes the sample mean. In the absence of publication bias, the funnel should be symmetrical around the most precise estimates, and the mean should align with those most precise estimates.
 
-FIGURE B6 (no artwork). Histogram for working papers
+FIGURE B6. Histogram for working papers
 
 Notes: The figure depicts a histogram of the partial correlation coefficients corresponding to the estimated effects of financial incentives on performance reported in individual working papers. The vertical line denotes the sample mean. Outliers are excluded from the figure for ease of exposition but included in all statistical tests.
 
-FIGURE B7 (no artwork). Funnel plot for working papers
+FIGURE B7. Funnel plot for working papers
 
 Notes: See notes to Figure B5.
 

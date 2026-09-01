@@ -118,7 +118,7 @@ $$ \text{t} = (.61)\ (986.5) $$
 
 That is, numerical analysis reveals a near perfect inverse relationship of UWLS' biases to degrees of freedom, $\left(\frac{1}{df_i}\right)$, explaining over 99.99% of the variation in UWLS's bias ($R^2 \approx$ 99.999%) and leaving only a negligible random error. Note also that UWLS's bias shrinks virtually to zero asymptotically (i.e., as $n \to \infty$), 95% CI = (−0.000030; 0.000053). This near perfect fit demonstrates that these are small-sample biases and suggests that a modification to the degrees of freedom may correct these biases.
 
-FIGURE 1 (no artwork). Biases of random-effects (RE) and the unrestricted weighted least squares (UWLS). *RE2bias* is RE's bias across 10,000 replications that use the conventional MA variance, $S_2^2$, from Equation (3). *UWLS1bias* is UWLS' bias across 10,000 replications that use $S_1^2$ from Equation (2).
+FIGURE 1. Biases of random-effects (RE) and the unrestricted weighted least squares (UWLS). *RE2bias* is RE's bias across 10,000 replications that use the conventional MA variance, $S_2^2$, from Equation (3). *UWLS1bias* is UWLS' bias across 10,000 replications that use $S_1^2$ from Equation (2).
 
 Figure 1 also reveals a very close relationship of RE's bias with inverse $df$, although its fit is not nearly as close as UWLS'.^{ii} RE's standard error of the estimate, which is the typical deviation of these biases from their predicted values, is 38 times larger than UWLS'. We focus on adjusting UWLS' degrees of freedom (giving UWLS_{+3}) rather than adjusting RE because we find that UWLS_{+3} has smaller biases and better statistical properties than adjusting RE.^{17} In part, this is due to the fact that RE must first estimate the heterogeneity variance before an estimate of mean effect can be calculated and thereby creates an additional source of variation and sampling error that UWLS does not have. Furthermore, any small-sample correction to RE is more biased than any of the alternative weighted averages in the presence of PSB just as RE is widely known to be more biased than UWLS when there is PSB.^{10–12} Below, we show that UWLS_{+3}, can reduce these small-sample biases to scientific triviality.
 
@@ -220,7 +220,7 @@ where the second lines report the t-values of the intercept (PET) and slope coef
 
 Consistent with this interpretation, observe that the largest sample estimates are all quite small. For example, there are only two studies that are adequately powered (power ≥ 80%), when power is computed using UWLS_{+3} as the estimate of the population mean correlation. These two studies are at the top of the funnel (Figure 2) and have correlations = {−0.06, 0}; thus, the most reliable and informative studies in this area of research find no evidence of a positive correlation between perceived earning potential and women's romantic inclinations. Considerations of power alone make the random-effects estimate dubious.^{29} Greater resilience to PBS is perhaps HS and UWLS_{+3}'s most important property in application. We turn next to simulations that show this to be a general property of both UWLS_{+3} and HS.
 
-FIGURE 2 (no artwork). A plot of the earnings-romance correlations, r, for women against their precision, 1/$S_1$, on the vertical axis. Source: Eastwick et al.^{33}
+FIGURE 2. A plot of the earnings-romance correlations, r, for women against their precision, 1/$S_1$, on the vertical axis. Source: Eastwick et al.^{33}
 
 ## 4. Simulations
 

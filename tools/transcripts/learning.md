@@ -286,7 +286,7 @@ FIGURE 6. Significance funnel plot
 
 Notes: The figure displays a significance funnel plot following Mathur and VanderWeele (2020). Orange points are affirmative estimates; gray points are non-affirmative. The gray diamond is the fixed-effects mean among non-affirmative estimates (0.021), corresponding to the MAN worst-case benchmark reported in Panel A of Table 4. The black diamond is the precision-weighted pooled mean across all 291 estimates ($\hat{\mu}_{IVW} = -0.245$); it lies more negative than the Panel A equal-weighted mean of −0.126 because inverse-variance weighting gives disproportionate influence to large, high-precision studies.
 
-FIGURE 7 (no artwork). Distribution of z-scores.
+FIGURE 7. Distribution of z-scores.
 
 Note: The figure shows the distribution of z-scores, $y_i/se_i$, in the original dataset. The dashed vertical lines mark $z = -1.96$ and $z = +1.96$, the conventional 5% two-sided significance thresholds.
 
@@ -302,7 +302,7 @@ FIGURE 9. DFBETAS influence diagnostics for intercept.
 
 Notes: The figure displays DFBETAS values for all 291 estimates, measuring the change in the pooled random-effects estimate when each observation is omitted in turn. The horizontal lines mark the sample-size-adjusted threshold $\pm 2/\sqrt{n} = \pm 0.117$. Eleven estimates exceed the threshold; excluding them moves the pooled estimate from −0.124 to −0.116.
 
-FIGURE 10 (no artwork). Diagnostic q-q plot
+FIGURE 10. Diagnostic q-q plot
 
 Notes: The figure displays the RTMA diagnostic Q-Q plot, comparing the fitted CDF of published non-affirmative estimates (horizontal axis) with their empirical CDF (vertical axis). Points lying on the 45-degree line indicate good model fit. Deviations in the upper tail suggest the truncated normal model fits the lower quantiles well but captures the upper tail less accurately, consistent with the mechanical distortion introduced by standardizing estimates as Cohen's *d*.
 
@@ -416,13 +416,13 @@ The pre-analysis plan describes the data synthesis strategy but does not specify
 
 ### A.3 Figures
 
-FIGURE A1 (no artwork). Publication bias: distribution of $z$-scores. Notes: The figure displays a visual test for publication bias based on the distribution of the $z$-scores. (a) shows the original, and (b) is the reproduction. There is no difference between the two.
+FIGURE A1. Publication bias: distribution of $z$-scores. Notes: The figure displays a visual test for publication bias based on the distribution of the $z$-scores. (a) shows the original, and (b) is the reproduction. There is no difference between the two.
 
-FIGURE A2 (no artwork). Forest plot. Notes: The figure displays a forest plot of 42 included studies. The effects are expressed as Cohen's *d* weighted by the inverse of variance using the random effects model. (a) shows the original, and (b) is the reproduction. We reproduced the Blainey and Hannay 2021a effect size as −0.06, while the original article reports −0.05. The confidence intervals are the same, possibly due to rounding.
+FIGURE A2. Forest plot. Notes: The figure displays a forest plot of 42 included studies. The effects are expressed as Cohen's *d* weighted by the inverse of variance using the random effects model. (a) shows the original, and (b) is the reproduction. We reproduced the Blainey and Hannay 2021a effect size as −0.06, while the original article reports −0.05. The confidence intervals are the same, possibly due to rounding.
 
-FIGURE A3 (no artwork). Estimates of COVID-19 learning deficits in time. Notes: The figure displays estimates of COVID-19 learning deficit. The horizontal axis shows the time of the estimate, and the vertical axis presents the estimates expressed as Cohen's *d*. Countries are in color scale. The slope coefficient of a trend line estimated using OLS with standard errors clustered at the study level is not statistically different from 0. (a) shows the original, and (b) is the reproduction. See Table A2 for details.
+FIGURE A3. Estimates of COVID-19 learning deficits in time. Notes: The figure displays estimates of COVID-19 learning deficit. The horizontal axis shows the time of the estimate, and the vertical axis presents the estimates expressed as Cohen's *d*. Countries are in color scale. The slope coefficient of a trend line estimated using OLS with standard errors clustered at the study level is not statistically different from 0. (a) shows the original, and (b) is the reproduction. See Table A2 for details.
 
-FIGURE A4 (no artwork). Variation in estimates of COVID-19 learning deficits. Notes: The figure displays variation in estimates of COVID-19 learning deficit for school subjects (mathematics and reading), level of education, and socio-economic inequality. (a) shows the original, and (b) is the reproduction. No differences between the two. See Table A3 for details.
+FIGURE A4. Variation in estimates of COVID-19 learning deficits. Notes: The figure displays variation in estimates of COVID-19 learning deficit for school subjects (mathematics and reading), level of education, and socio-economic inequality. (a) shows the original, and (b) is the reproduction. No differences between the two. See Table A3 for details.
 
 ### A.4 Tables
 
@@ -495,9 +495,9 @@ We also attempted a p-curve analysis following Simonsohn et al. (2014), which te
 
 ### C.1 Figures
 
-FIGURE C1 (no artwork). Caliper test for excess bunching around the significance threshold $z = -1.96$. Notes: Shaded regions indicate the ±0.10 caliper window. Red bars denote estimates inside the threshold (significant); blue bars denote estimates outside (non-significant).
+FIGURE C1. Caliper test for excess bunching around the significance threshold $z = -1.96$. Notes: Shaded regions indicate the ±0.10 caliper window. Red bars denote estimates inside the threshold (significant); blue bars denote estimates outside (non-significant).
 
-FIGURE C2 (no artwork). *P*-curve distribution. Notes: The grey bar denotes *p*-values that underflow numerically to zero ($n = 61$). The dominance of the [.00, .01) bin reflects the extremely large sample sizes in the literature rather than the evidential strength of individual studies.
+FIGURE C2. *P*-curve distribution. Notes: The grey bar denotes *p*-values that underflow numerically to zero ($n = 61$). The dominance of the [.00, .01) bin reflects the extremely large sample sizes in the literature rather than the evidential strength of individual studies.
 
 ### C.2 Tables
 

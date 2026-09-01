@@ -406,7 +406,7 @@ TABLE A1. Summary of BMA estimation.
 | Av= 0.9983 |  |  |  |
 Notes: In this specification we employ the priors suggested by Eicher et al. (2011) based on the predictive performance: the uniform model prior (each model has the same prior probability) and the unit information prior (the prior provides the same amount of information as one observation of the data).
 
-FIGURE A2 (no artwork). Model size and convergence.
+FIGURE A2. Model size and convergence.
 
 ### A.3. Alternative Priors for BMA
 

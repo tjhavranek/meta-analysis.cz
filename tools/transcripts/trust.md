@@ -255,7 +255,7 @@ Panel (b) shows the complementary marginal effect of rule of law. This associati
 
 Figure 3 summarizes the same pattern as a joint institutional surface, holding the other controls fixed. The lowest fitted institutional contributions appear where rule of law is high and trust is moderate or high, which corresponds to more negative reported size slopes and hence larger conventional size premia. The positive trust contribution is concentrated in weaker-rule-of-law settings and declines as the formal legal environment improves. The plot displays the interaction over the observed support; it does not map the total size premium in each country.
 
-FIGURE 3 (no artwork). The Fitted Institutional Contribution Is Most Negative Where Rule of Law Is High
+FIGURE 3. The Fitted Institutional Contribution Is Most Negative Where Rule of Law Is High
 
 Notes: The figure isolates the fitted contribution of the generalized-trust, rule-of-law, and interaction terms from the baseline OLS regression. It is not the total fitted size slope. Points show observed combinations of trust and rule of law.
 

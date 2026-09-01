@@ -409,7 +409,7 @@ Three qualifications of our results are in order. First, the 3524 estimates that
 
 ## Appendix A
 
-FIGURE A1 (no artwork). Estimates vary both within and across studies (Alaouze et al., 1977; Bilgic et al., 2002; Corbo and Osbat, 2013; Gibson, 2003; Ivanova, 2005; Kawashima and Sari, 2010; Lachler, 1984; Lundmark and Shahrammehr, 2011a; Lundmark and Shahrammehr, 2011b; Nganou, 2005; Reinert and Shiells, 1991; Sauquet et al., 2011; Shiells and Reinert, 1993; Turner et al., 2012; Warr and Lapiz, 1994; Welsch, 2006).
+FIGURE A1. Estimates vary both within and across studies (Alaouze et al., 1977; Bilgic et al., 2002; Corbo and Osbat, 2013; Gibson, 2003; Ivanova, 2005; Kawashima and Sari, 2010; Lachler, 1984; Lundmark and Shahrammehr, 2011a; Lundmark and Shahrammehr, 2011b; Nganou, 2005; Reinert and Shiells, 1991; Sauquet et al., 2011; Shiells and Reinert, 1993; Turner et al., 2012; Warr and Lapiz, 1994; Welsch, 2006).
 
 *Notes:* The figure shows a box plot of the estimates of the Armington elasticity reported in individual studies. The length of each box represents the interquartile range (P25-P75), and the dividing line inside the box is the median value. The whiskers represent the highest and lowest data points within 1.5 times the range between the upper and lower quartiles. Outliers are excluded from the figure. The solid vertical line denotes unity.
 
@@ -480,7 +480,7 @@ TABLE A2. Potential mediating factors of publication bias.
 | Observations | 2968 | 2968 | 2968 | 2968 | 2968 | 2968 |
 *Notes:* The response variable is an estimate of the long-run Armington elasticity. Standard errors are clustered at the study and country level. Variables interacted with the standard error (Impact factor, Citations, Published, Data disaggregation) are also included separately but the coefficients are not reported.
 
-FIGURE A2 (no artwork). Estimates vary both within and across countries.
+FIGURE A2. Estimates vary both within and across countries.
 
 *Notes:* The figure shows a box plot of the estimates of the Armington elasticity reported for individual countries. The length of each box represents the interquartile range (P25-P75), and the dividing line inside the box is the median value. The whiskers represent the highest and lowest data points within 1.5 times the range between the upper and lower quartiles. Outliers are excluded from the figure. The solid vertical line denotes unity.
 

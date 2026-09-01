@@ -75,22 +75,41 @@ def caption_rects(page):
             if not title and len(norm.strip()) > 22:
                 continue
             label = re.sub(r"[\s.]", "", m.group(1))
-            out.setdefault(label, fitz.Rect(line["bbox"]))
+            # Take the whole caption BLOCK, not just the line the label is on. A caption
+            # that wraps leaves its tail outside the barrier, and /electricity/'s Figure 2
+            # came out with the words "experimental benchmark" stranded above the plot.
+            rect = fitz.Rect(line["bbox"])
+            for other in b.get("lines", []):
+                orect = fitz.Rect(other["bbox"])
+                if orect.y0 >= rect.y0 - 1:
+                    rect |= orect
+            out.setdefault(label, rect)
     return out
 
 
 def drawing_bands(page, bar_rows=None):
     """Contiguous vertical bands where the page draws, widest x-extent of each."""
+    # Anything living entirely in the page's top or bottom margin is furniture: a rule under
+    # a running head, a folio, or -- on the Wiley papers -- the journal's masthead logo,
+    # which is a raster and so counted as artwork and dragged the whole masthead into
+    # /hedge/'s PRISMA diagram.
+    head_y = page.rect.y0 + page.rect.height * 0.075
+    foot_y = page.rect.y1 - page.rect.height * 0.055
+
+    def furniture(r):
+        return r.y1 <= head_y or r.y0 >= foot_y
+
     rects = []
     for d in page.get_drawings():
         r = d["rect"]
-        if r.is_empty or r.is_infinite:
+        if r.is_empty or r.is_infinite or furniture(r):
             continue
         rects.append(r)
     for img in page.get_images(full=True):
         try:
             for r in page.get_image_rects(img[0]):
-                rects.append(r)
+                if not furniture(r):
+                    rects.append(r)
         except Exception:
             pass
     if not rects:
@@ -230,6 +249,14 @@ def grow_to_labels(page, rect, caption):
                 if len(text) > 80:
                     continue
             grown |= lr
+    # Hard stop at the notes block. Excluding the notes LINE was not enough: the padding
+    # added afterwards reached a few points back into it and sliced the tops off its
+    # letters, so a dozen figures came out with a half-height line of "Notes: The figure
+    # depicts..." along the bottom, which reads as a broken image.
+    if stop_below < page.rect.y1:
+        grown.y1 = min(grown.y1, stop_below - PAD - 2)
+    if stop_above > page.rect.y0:
+        grown.y0 = max(grown.y0, stop_above + PAD + 2)
     return grown
 
 
@@ -254,12 +281,19 @@ def find(project, wanted=None):
                     # the band whose edge is nearest the caption, above or below
                     best, bestd = None, 1e9
                     for rect, n in bands:
-                        d = min(abs(rect.y0 - crect.y1), abs(crect.y0 - rect.y1))
-                        if rect.intersects(crect):
+                        # Vertical distance only. A caption is always beside its artwork
+                        # horizontally, and asking for a 2-D intersection missed captions
+                        # that sit level with a plot but outside its x-range -- which is
+                        # why /learning/'s A1 and /esg/'s A1 found nothing while both a
+                        # caption and a band sat on the page.
+                        if rect.y0 - 2 <= crect.y0 <= rect.y1 + 2 or \
+                                rect.y0 - 2 <= crect.y1 <= rect.y1 + 2:
                             d = 0
+                        else:
+                            d = min(abs(rect.y0 - crect.y1), abs(crect.y0 - rect.y1))
                         if d < bestd:
                             best, bestd = (rect, n), d
-                    if not best or bestd > 140:
+                    if not best or bestd > 230:
                         continue
                     rect = grow_to_labels(page, best[0], crect)
                     rect = fitz.Rect(max(page.rect.x0, rect.x0 - PAD),
@@ -288,6 +322,36 @@ def find(project, wanted=None):
     return [best[k] for k in sorted(best)]
 
 
+def text_rotation(page, rect):
+    """0, 90 or 270: how far the text inside this crop is turned from upright.
+
+    A landscape figure on a portrait page is printed on its side, and a crop of it comes out
+    sideways -- /learning/'s A1 is two histograms lying on their backs. PyMuPDF reports a
+    writing direction per line, so the figure's own labels say which way is up.
+    """
+    votes = {}
+    r = fitz.Rect(*rect)
+    for b in page.get_text("dict")["blocks"]:
+        for line in b.get("lines", []):
+            if not r.intersects(fitz.Rect(line["bbox"])):
+                continue
+            dx, dy = line.get("dir", (1, 0))
+            n = len("".join(s["text"] for s in line["spans"]).strip())
+            if abs(dx) > 0.7:
+                votes["up"] = votes.get("up", 0) + n
+            elif dy < -0.7:
+                votes[90] = votes.get(90, 0) + n
+            elif dy > 0.7:
+                votes[270] = votes.get(270, 0) + n
+    if not votes:
+        return 0
+    best = max(votes, key=votes.get)
+    # only turn it when the sideways text clearly dominates
+    if best == "up" or votes[best] < 2 * votes.get("up", 0):
+        return 0
+    return best
+
+
 def render(job, dpi=200):
     doc = fitz.open(job["pdf"])
     try:
@@ -297,6 +361,14 @@ def render(job, dpi=200):
         os.makedirs(out, exist_ok=True)
         path = os.path.join(out, "fig%s.png" % job["fig"])
         pix.save(path)
+        # Turn a sideways figure upright. Rotating the saved image rather than the clip
+        # keeps the crop arithmetic in page coordinates, where it is easy to reason about.
+        angle = text_rotation(page, job["rect"])
+        if angle:
+            from PIL import Image as _I
+            im = _I.open(path)
+            im.rotate(-90 if angle == 90 else 90, expand=True).save(path)
+            return path, im.height, im.width
         return path, pix.width, pix.height
     finally:
         doc.close()

@@ -130,7 +130,7 @@ TABLE 1. Summary statistics for different subsets of the literature
 | Top 5 journals | 64 | -0.04 | 26.0 | -0.05 | -0.03 | -0.04 | 26.3 | -0.05 | -0.03 |
 Notes: The exact definition of the variables is available in Table B1. Weighted = coefficients are weighted by the inverse of the number of estimates reported per study. The column $\sigma$ depicts implied elasticity computed as $\sigma = -1/mean$ using the coefficient values prior to rounding. Thus, it may not perfectly correspond to the rounded mean values presented in the table. $N$ is the number of observations per sample. No winsorization needed.
 
-FIGURE 1 (no artwork). Box plot of negative inverse elasticity across studies
+FIGURE 1. Box plot of negative inverse elasticity across studies
 
 Notes: $-1/\sigma = \theta$, i.e., the reported coefficient. The length of each box represents the interquartile range (P25–P75), and the dividing line inside the box is the median value. The whiskers represent the highest and lowest data points within 1.5 times the range between the upper and lower quartiles. The dots show the outlying estimates with extreme values stacked at the values denoted as "outliers". The red vertical line presents the unweighted mean of all reported coefficients ($-0.075$).
 
@@ -142,7 +142,7 @@ A funnel plot, developed by Egger et al. (1997), is a scatter diagram that plots
 
 Figure 2 reveals noticeable asymmetry, with a longer left tail suggesting that studies reporting more negative coefficients are overrepresented. The gap between the simple mean of the coefficients ($-0.075$, implying $\sigma \approx 13.3$) and the Unrestricted Weighted Least Squares (UWLS) coefficient ($-0.047$, implying $\sigma \approx 21.3$) is indicative of selective reporting. Following Stanley et al. (2023), we use the UWLS as a robust benchmark for the precision-weighted average. The precision-weighted average is meaningfully smaller in magnitude than the unweighted average, suggesting that the most negative results are concentrated among the least precise coefficients. However, because graphical interpretations and simple weighting can only be indicative of the underlying selection process, we employ formal meta-regression techniques to quantify the extent of publication selection bias and recover a bias-corrected coefficient, which serves as the basis for our implied elasticity estimates.
 
-FIGURE 2 (no artwork). Funnel plot suggests asymmetry among coefficients
+FIGURE 2. Funnel plot suggests asymmetry among coefficients
 
 Notes: The vertical lines represent the unweighted arithmetic mean of the estimates ($-0.0749$) and the precision-weighted average ($-0.0470$), calculated via Unrestricted Weighted Least Squares (UWLS). SE denotes the standard error. For visual clarity, the plot excludes 26 outlying estimates with values below $-0.5$.
 
@@ -519,11 +519,11 @@ TABLE A1. Studies included in the meta-analysis
 | Romiti et al. (2011) | Sharpe & Bollinger (2020) | Signorelli (2024) |
 | Wei et al. (2016) | Wei et al. (2019) |  |
 
-FIGURE A1 (no artwork). PRISMA diagram
+FIGURE A1. PRISMA diagram
 
 Figure A2 shows a box plot of the coefficient, the negative inverse elasticity ($-1/\sigma$), across countries, revealing that the UK has the least substitutability, while Switzerland has the highest. However, the UK estimate is based on a single study and should be treated with caution. The corresponding summary statistics are quantified in Table A2.
 
-FIGURE A2 (no artwork). Box plot of negative inverse elasticity across countries Notes: The length of each box represents the interquartile range (P25-P75), and the dividing line inside the box is the median value. The whiskers represent the highest and lowest data points within 1.5 times the range between the upper and lower quartiles. The dots show the outlying estimates with extreme values stacked at the values denoted as "outliers". The red vertical line presents the unweighted mean of all estimates (−0.075).
+FIGURE A2. Box plot of negative inverse elasticity across countries Notes: The length of each box represents the interquartile range (P25-P75), and the dividing line inside the box is the median value. The whiskers represent the highest and lowest data points within 1.5 times the range between the upper and lower quartiles. The dots show the outlying estimates with extreme values stacked at the values denoted as "outliers". The red vertical line presents the unweighted mean of all estimates (−0.075).
 
 TABLE A2. Summary statistics for different countries
 
@@ -677,34 +677,34 @@ TABLE B3. Robustness of BMA results across different uniform-model priors
 | Observations | 1,087 |  |  |  |  |  |  |  |  |  |  |  |
 *Notes:* PIP = Posterior Inclusion Probability. SD = Standard Deviation. Results reflect Bayesian Model Averaging using uniform-model priors under four alternative *g*-prior formulations: UIP, BRIC, hyper-*g*, and EBL. For definitions of included covariates, see Table B1. *Number of cells*, *citations*, and *publication year* enter in logarithms.
 
-FIGURE B1 (no artwork). BMA: UIP and random priors
+FIGURE B1. BMA: UIP and random priors
 
-FIGURE B2 (no artwork). BMA: UIP and uniform priors
+FIGURE B2. BMA: UIP and uniform priors
 
-FIGURE B3 (no artwork). BMA: hyper-g and random priors
+FIGURE B3. BMA: hyper-g and random priors
 
-FIGURE B4 (no artwork). BMA: hyper-g and uniform priors
+FIGURE B4. BMA: hyper-g and uniform priors
 
-FIGURE B5 (no artwork). BMA: EBL and random priors
+FIGURE B5. BMA: EBL and random priors
 
-FIGURE B6 (no artwork). BMA: EBL and uniform priors
+FIGURE B6. BMA: EBL and uniform priors
 
-FIGURE B7 (no artwork). BMA: BRIC and random priors
+FIGURE B7. BMA: BRIC and random priors
 
-FIGURE B8 (no artwork). BMA: BRIC and uniform priors
+FIGURE B8. BMA: BRIC and uniform priors
 
-FIGURE B9 (no artwork). UIP and random priors
+FIGURE B9. UIP and random priors
 
-FIGURE B10 (no artwork). UIP and uniform priors
+FIGURE B10. UIP and uniform priors
 
-FIGURE B11 (no artwork). hyper-g and random priors
+FIGURE B11. hyper-g and random priors
 
-FIGURE B12 (no artwork). hyper-g and uniform priors
+FIGURE B12. hyper-g and uniform priors
 
-FIGURE B13 (no artwork). EBL and random priors
+FIGURE B13. EBL and random priors
 
-FIGURE B14 (no artwork). EBL and uniform priors
+FIGURE B14. EBL and uniform priors
 
-FIGURE B15 (no artwork). BRIC and random priors
+FIGURE B15. BRIC and random priors
 
-FIGURE B16 (no artwork). BRIC and uniform priors
+FIGURE B16. BRIC and uniform priors

@@ -840,7 +840,7 @@ TABLE A1. Summary of BMA Estimation, Baseline Estimation
 | uniform / 17.5 | | UIP | | Av = 0.9983 |
 *Notes*: In this specification, we employ the priors suggested by Eicher *et al.* (2011) based on predictive performance: the uniform model prior (each model has the same prior probability) and the unit information prior (the prior provides the same amount of information as one observation of data).
 
-FIGURE A1 (no artwork). Model Size and Convergence, Baseline Estimation.
+FIGURE A1. Model Size and Convergence, Baseline Estimation.
 
 TABLE A2. Summary of BMA Estimation, Alternative Priors
 | Mean No. Regressors | Draws | Burnins | Time | No. Models Visited |

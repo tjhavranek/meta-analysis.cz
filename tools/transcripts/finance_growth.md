@@ -115,7 +115,7 @@ A typical graphical method used to examine possible publication bias is the so-c
 
 Though the cloud of observations in Figure 1 resembles an inverted funnel, a closer visual inspection suggests an imbalance in the reported effects, as the right-hand side of the funnel appears to be heavier. This finding suggests that positive estimates may be preferably selected for publication. However, visual methods are subjective, and therefore, in the remainder of the section, we focus on formal methods of detection of and correction for publication bias. We follow, among others, Stanley and Doucouliagos (2010), who regress the estimated effect size on its standard error:
 
-FIGURE 1 (no artwork). A Funnel Plot of the Effect of Finance on Growth.
+FIGURE 1. A Funnel Plot of the Effect of Finance on Growth.
 
 $$ r_{ij} = \beta_0 + \beta_1 SEr_{ij} + \mu_{ij}; \; j = 1, \ldots, N; \; i = 1, \ldots, S $$ (5)
 

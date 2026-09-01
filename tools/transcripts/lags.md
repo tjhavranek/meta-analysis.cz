@@ -80,7 +80,7 @@ Researchers often discuss the number of months to the maximum decrease in prices
 
 Figure 2 depicts the kernel density plot of the collected estimates; the figure demonstrates that the transmission lags taken from hump-shaped impulse responses are, on average, substantially shorter than the lags taken from strictly decreasing impulse response functions. Numerical details on summary statistics are reported in table 2. The average of all collected transmission lags is 33.5 months, but the average reaches 49.1 months for transmission lags taken from strictly decreasing impulse responses and 18.2 months for hump-shaped impulse responses. In other words, the decrease in prices following a monetary contraction becomes the strongest, on average, after two years and three quarters. Our data also suggest that the average magnitude of the maximum decrease in prices following a 1-percentage-point increase in the policy rate is 0.9 percent (for a detailed meta-analysis of the strength of monetary transmission at different horizons, see Rusnak, Havranek, and Horvath 2013).
 
-FIGURE 2 (no artwork). Kernel Density of the Estimated Transmission Lags. Notes: The figure is constructed using the Epanechnikov kernel function. The solid vertical line denotes the average number of months to the maximum decrease in prices taken from all the impulse responses. The dashed line on the left denotes the average taken from the hump-shaped impulse responses. The dashed line on the right denotes the average taken from the strictly decreasing impulse response functions.
+FIGURE 2. Kernel Density of the Estimated Transmission Lags. Notes: The figure is constructed using the Epanechnikov kernel function. The solid vertical line denotes the average number of months to the maximum decrease in prices taken from all the impulse responses. The dashed line on the left denotes the average taken from the hump-shaped impulse responses. The dashed line on the right denotes the average taken from the strictly decreasing impulse response functions.
 
 TABLE 2. Summary Statistics of the Estimated Transmission Lags
 
@@ -344,7 +344,7 @@ TABLE 9. Summary of BMA Estimation (baseline model)
 | Av. = 0.995 | | | |
 **Note:** UIP = unit information prior, PMP = posterior model probability.
 
-FIGURE 6 (no artwork). Model Size and Convergence (baseline model)
+FIGURE 6. Model Size and Convergence (baseline model)
 
 TABLE 10. Summary of BMA Estimation (hump-shaped impulse responses)
 
@@ -359,7 +359,7 @@ TABLE 10. Summary of BMA Estimation (hump-shaped impulse responses)
 | Av. = 0.9901 | | | |
 **Note:** UIP = unit information prior, PMP = posterior model probability.
 
-FIGURE 7 (no artwork). Model Size and Convergence (hump-shaped impulse responses)
+FIGURE 7. Model Size and Convergence (hump-shaped impulse responses)
 
 TABLE 11. Summary of BMA Estimation (time to −0.1 percent decrease in prices)
 
@@ -374,7 +374,7 @@ TABLE 11. Summary of BMA Estimation (time to −0.1 percent decrease in prices)
 | Av. = 0.9943 | | | |
 **Note:** UIP = unit information prior, PMP = posterior model probability.
 
-FIGURE 8 (no artwork). Model Size and Convergence (time to –0.1 percent decrease in prices)
+FIGURE 8. Model Size and Convergence (time to –0.1 percent decrease in prices)
 
 ## Appendix 2. Results of Censored Regression
 

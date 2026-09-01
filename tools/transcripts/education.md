@@ -482,19 +482,19 @@ TABLE A1. Summary of main BMA estimation
 
 FIGURE A1 (no artwork). Estimates of the tuition–enrolment nexus vary within and across studies *Notes*: The figure shows a box plot of the partial correlation coefficients capturing the relationship between tuition and the demand for higher education reported in individual studies.
 
-FIGURE A2 (no artwork). Estimates of the elasticity vary across different countries *Notes*: The figure shows a box plot of the partial correlation coefficients capturing the relationship between tuition and the demand for higher education reported for individual countries.
+FIGURE A2. Estimates of the elasticity vary across different countries *Notes*: The figure shows a box plot of the partial correlation coefficients capturing the relationship between tuition and the demand for higher education reported for individual countries.
 
-FIGURE A3 (no artwork). Posterior coefficient distributions for the most important characteristics *Notes*: The figure depicts the densities of the regression parameters from Table 5 with the highest posterior inclusion probabilities.
+FIGURE A3. Posterior coefficient distributions for the most important characteristics *Notes*: The figure depicts the densities of the regression parameters from Table 5 with the highest posterior inclusion probabilities.
 
-FIGURE A4 (no artwork). Model size and convergence of main BMA estimation *Notes*: The figure depicts the posterior model size distribution and the posterior model probabilities of the BMA exercise reported in Table 5.
+FIGURE A4. Model size and convergence of main BMA estimation *Notes*: The figure depicts the posterior model size distribution and the posterior model probabilities of the BMA exercise reported in Table 5.
 
-FIGURE A5 (no artwork). Correlations between the variables from Table 5 *Notes*: The figure depicts the correlation coefficients between variables included in the benchmark BMA exercise from Table 5. The definition and summary statistics of the variables can be found in Table 4.
+FIGURE A5. Correlations between the variables from Table 5 *Notes*: The figure depicts the correlation coefficients between variables included in the benchmark BMA exercise from Table 5. The definition and summary statistics of the variables can be found in Table 4.
 
 ## Appendix B
 
 ### Diagnostics of BMA robustness checks
 
-FIGURE B1 (no artwork). Model inclusion in Bayesian model averaging (BMA) – *Different BMA priors* specification *Notes*: The figure depicts the results of the BMA related to *different BMA priors* specification reported in Table 7.
+FIGURE B1. Model inclusion in Bayesian model averaging (BMA) – *Different BMA priors* specification *Notes*: The figure depicts the results of the BMA related to *different BMA priors* specification reported in Table 7.
 
 TABLE B1. Summary of BMA estimation – Different BMA priors specification
 
@@ -507,7 +507,7 @@ TABLE B1. Summary of BMA estimation – Different BMA priors specification
 | Random | BRIC | Av = 0.9977 | | |
 *Notes*: We employ the ‘random’ model prior, which refers to the beta-binomial prior advocated by Ley and Steel (2009); Zellner’s g prior is set according to Fernandez *et al.* (2001). The results of this Bayesian model averaging (BMA) exercise are reported in Table 5 (*different BMA priors* specification).
 
-FIGURE B2 (no artwork). Model inclusion in Bayesian model averaging (BMA) – *Precision-weighted data* specification *Notes*: The figure depicts the results of the BMA related to *precision-weighted* data specification reported in Table 7.
+FIGURE B2. Model inclusion in Bayesian model averaging (BMA) – *Precision-weighted data* specification *Notes*: The figure depicts the results of the BMA related to *precision-weighted* data specification reported in Table 7.
 
 TABLE B2. Summary of BMA estimation – Precision-weighted data specification
 

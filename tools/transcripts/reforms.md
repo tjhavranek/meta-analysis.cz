@@ -583,7 +583,7 @@ TABLE B1. Summary of BMA estimation (short run)
 
 Notes: The 'random' model prior refers to the beta-binomial prior advocated by Ley and Steel (2009): prior model probabilities are the same for all possible models; in other words, we do not *a priori* prefer any particular model size. We set the Zellner's *g* prior following Fernandez *et al.* (2001).
 
-FIGURE B1 (no artwork). Model size and convergence (short run)
+FIGURE B1. Model size and convergence (short run)
 
 TABLE B2. Summary of BMA estimation (long run)
 
@@ -599,7 +599,7 @@ TABLE B2. Summary of BMA estimation (long run)
 
 Notes: The 'random' model prior refers to the beta-binomial prior advocated by Ley and Steel (2009): prior model probabilities are the same for all possible models; in other words, we do not *a priori* prefer any particular model size. We set the Zellner's *g* prior following Fernandez *et al.* (2001).
 
-FIGURE B2 (no artwork). Model size and convergence (long run)
+FIGURE B2. Model size and convergence (long run)
 
 ## ENDNOTES
 
