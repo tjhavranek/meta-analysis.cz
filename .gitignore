@@ -46,3 +46,14 @@ data_layer/codegrep_evidence.json
 # conversion agent regenerates whenever it wants one, and several agents work on
 # the same paper at once, so committing them would just record whoever wrote last.
 tools/transcripts/*.draft.md
+
+# Dropbox writes a "conflicted copy" beside any file edited on two machines, and this
+# tree lives in Dropbox. Each one is a stale duplicate sitting next to the real page, so
+# an unguarded `git add -A` would publish an old copy of /about/ at a public URL. Two are
+# in the tree right now. Tracked files are unaffected by .gitignore, so this cannot drop
+# anything the site actually serves.
+*conflicted copy*
+
+# pdftotext dumps left beside a paper by a conversion agent. The /*.txt rule above only
+# reaches the repo root; these land in the paper's own folder (discrate/discrate.pdf.txt).
+*.pdf.txt

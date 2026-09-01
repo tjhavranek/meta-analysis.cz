@@ -611,9 +611,19 @@ def git_dates():
                 dates[line.strip()] = cur
         st = subprocess.run(["git", "-C", SITE, "status", "--porcelain"],
                             capture_output=True, text=True, encoding="utf-8").stdout
+        # A locally modified file is dated TODAY -- but on a clone with core.autocrlf=true
+        # `status` also lists every regenerated file whose only difference is its line
+        # endings, and dating those TODAY tells crawlers that a hundred pages changed when
+        # none of them did. That shipped once, was corrected by hand, and came straight
+        # back the next day, so it is fixed here rather than by remembering to work on a
+        # clean tree. `git diff` normalises line endings and so sees only real content;
+        # an untracked file has no committed version to diff against and is new either way.
+        real = set(subprocess.run(["git", "-C", SITE, "diff", "--name-only", "HEAD"],
+                                  capture_output=True, text=True,
+                                  encoding="utf-8").stdout.split())
         for line in st.splitlines():
             p = line[3:].strip().strip('"')
-            if p:
+            if p and (line.startswith("??") or p in real):
                 dates[p] = TODAY
     except Exception as e:
         print("git dates unavailable:", e)

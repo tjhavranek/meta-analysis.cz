@@ -53,6 +53,7 @@ import html
 import json
 import os
 import re
+import struct
 import sys
 
 from latex2mathml.converter import convert as tex_to_mathml
@@ -945,6 +946,32 @@ def _doi_label(meta):
     return "Version of record"
 
 
+def card_image(project, meta, body):
+    """The figure a link to this page should show when it is shared, or None.
+
+    The landing pages have picked one this way for a while; the full-text pages never
+    did, so every one of them shared as a bare text card -- on the pages carrying the
+    actual papers, which are the ones worth sharing. The 200x200 floor is the one most
+    platforms enforce, and generate_seo learned why it matters when a fallback to the
+    58-pixel navigation gradient rendered every share as a blue smear. Ten of these
+    pages embed no figure at all and keep the text card, because a text card beats a
+    misleading one.
+    """
+    d = page_dir(project, meta)
+    for m in re.finditer(r'<img src="(figures/[^"]+)"[^>]*?alt="([^"]*)"', body):
+        try:
+            with open(os.path.join(d, m.group(1)), "rb") as fh:
+                head = fh.read(24)
+        except OSError:
+            continue                       # written later in the run, or not written yet
+        if head[:8] != bytes((137, 80, 78, 71, 13, 10, 26, 10)) or head[12:16] != b"IHDR":
+            continue
+        w, h = struct.unpack(">II", head[16:24])
+        if w >= 200 and h >= 200:
+            return m.group(1), m.group(2)
+    return None
+
+
 def build_page(project, meta, body, toc):
     ref = meta.get("reference_line") or ""
     doi = meta.get("doi_or_publisher_url") or ""
@@ -957,6 +984,7 @@ def build_page(project, meta, body, toc):
 
     here = page_href(project, meta)
     home = meta.get("parent") or "/%s/" % project
+    _card = card_image(project, meta, body)
 
     ld = {
         "@context": "https://schema.org",
@@ -1158,7 +1186,7 @@ def build_page(project, meta, body, toc):
 <meta property="og:type" content="article" />
 <meta property="og:title" content="{title} (full text)" />
 <meta property="og:description" content="{desc}" />
-<meta property="og:url" content="https://meta-analysis.cz{here}" />
+<meta property="og:url" content="https://meta-analysis.cz{here}" />{og_image}
 <script type="application/ld+json">
 {ld}
 </script>
@@ -1216,6 +1244,14 @@ def build_page(project, meta, body, toc):
         project=project,
         here=here,
         cite_meta="\n".join(cite_meta),
+        og_image=("\n"
+                  '<meta property="og:image" content="https://meta-analysis.cz%s%s" />\n'
+                  '<meta property="og:image:alt" content="%s" />'
+                  # the alt is lifted off the <img>, where it is already escaped, so it
+                  # has to be unescaped before esc_attr runs or an apostrophe reaches a
+                  # social card as the literal text &amp;#x27;. The title fallback is raw
+                  # and must not be unescaped, hence the unescape inside the or.
+                  % (here, _card[0], esc_attr(html.unescape(_card[1]) or title))) if _card else "",
         ld=json.dumps(ld, indent=1, ensure_ascii=False),
         menu="\n\t\t\t".join(menu),
         attribution="\n".join(attribution),
