@@ -312,7 +312,7 @@ def build_note(cfg, note):
     )
     out = NOTES_DIR / slug
     out.mkdir(exist_ok=True)
-    (out / "index.html").write_text(page, encoding="utf-8")
+    (out / "index.html").write_text(page, encoding="utf-8", newline="\n")
     return canonical
 
 
@@ -360,7 +360,7 @@ def build_index(cfg, notes):
         byline=f'\t\t\t<p class="byline">{cfg["notes_description"]}</p>',
         body="\n".join(rows) if rows else "<p>No notes yet.</p>", sidebar=sidebar(cfg),
     )
-    (NOTES_DIR / "index.html").write_text(page, encoding="utf-8")
+    (NOTES_DIR / "index.html").write_text(page, encoding="utf-8", newline="\n")
 
 
 def build_feed(cfg, notes):
@@ -389,7 +389,7 @@ def build_feed(cfg, notes):
   </channel>
 </rss>
 """
-    (NOTES_DIR / "feed.xml").write_text(feed, encoding="utf-8")
+    (NOTES_DIR / "feed.xml").write_text(feed, encoding="utf-8", newline="\n")
 
 
 def main():

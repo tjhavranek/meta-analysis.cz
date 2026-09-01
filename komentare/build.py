@@ -973,7 +973,7 @@ def write_item(a):
                  body, a["category"], head, lang, canonical_link)
     d = KDIR / a["slug"]
     d.mkdir(exist_ok=True)
-    (d / "index.html").write_text(page, encoding="utf-8")
+    (d / "index.html").write_text(page, encoding="utf-8", newline="\n")
 
 
 def write_index(items, key=None):
@@ -1139,7 +1139,7 @@ def write_index(items, key=None):
         page = page.replace("</body>", SCRIPT + "</body>")
     d = KDIR if not key else KDIR / key
     d.mkdir(exist_ok=True)
-    (d / "index.html").write_text(page, encoding="utf-8")
+    (d / "index.html").write_text(page, encoding="utf-8", newline="\n")
 
 
 def write_feed(items, social=()):
@@ -1228,7 +1228,7 @@ def write_feed(items, social=()):
 {chr(10).join(it)}
   </channel>
 </rss>
-""", encoding="utf-8")
+""", encoding="utf-8", newline="\n")
 
 
 def write_machine_readable(items, social=()):
@@ -1294,7 +1294,7 @@ def write_machine_readable(items, social=()):
           f"- [RSS]({BASE}/feed.xml)",
           f"- [Strojově čitelný index (JSON)]({BASE}/index.json)",
           f"- [Všechny texty v jednom souboru]({BASE}/all.md)", ""]
-    (KDIR / "llms.txt").write_text(chr(10).join(L), encoding="utf-8")
+    (KDIR / "llms.txt").write_text(chr(10).join(L), encoding="utf-8", newline="\n")
 
     # --- index.json -----------------------------------------------------------
     docs = []
@@ -1416,7 +1416,7 @@ def write_machine_readable(items, social=()):
         "count": len(docs),
         "generated_from": ["komentare/src/*.md", "komentare/social-posts.json"],
         "items": docs,
-    }, ensure_ascii=False, indent=1), encoding="utf-8")
+    }, ensure_ascii=False, indent=1), encoding="utf-8", newline="\n")
 
     # --- corpus.jsonl ---------------------------------------------------------
     # The same records, one self-contained JSON object per line. This is what data
@@ -1424,7 +1424,7 @@ def write_machine_readable(items, social=()):
     # corpus in memory, and one malformed line cannot spoil the rest of the file.
     (KDIR / "corpus.jsonl").write_text(
         "".join(json.dumps(d, ensure_ascii=False) + chr(10) for d in docs),
-        encoding="utf-8")
+        encoding="utf-8", newline="\n")
 
     # --- all.md ---------------------------------------------------------------
     A = [f"# Komentáře — {SITE_AUTHORS}", "", HUB_DESC, "",
@@ -1474,7 +1474,7 @@ def write_machine_readable(items, social=()):
                   f"je zamýšlené, nikoli datum otištění.*", ""]
         A += [f"Zdroj: {a.get('url') or BASE + '/' + a['slug'] + '/'}", "",
               a["body"], "", "---", ""]
-    (KDIR / "all.md").write_text(chr(10).join(A), encoding="utf-8")
+    (KDIR / "all.md").write_text(chr(10).join(A), encoding="utf-8", newline="\n")
 
     # --- manifest.json --------------------------------------------------------
     # An inventory a consumer can verify against: how many records of each kind,
@@ -1543,7 +1543,7 @@ def write_machine_readable(items, social=()):
         },
         "files": files,
         "generated_from": ["komentare/src/*.md", "komentare/social-posts.json"],
-    }, ensure_ascii=False, indent=1), encoding="utf-8")
+    }, ensure_ascii=False, indent=1), encoding="utf-8", newline="\n")
 
     return len([a for a in items if a["media"] == "text"])
 
@@ -1920,7 +1920,7 @@ def write_socials_page():
         d.mkdir(parents=True, exist_ok=True)
         (d / "index.html").write_text(
             shell(ptitle, _post_desc(p["text"]), canon, pjson, pbody, "posts", lang=lang),
-            encoding="utf-8")
+            encoding="utf-8", newline="\n")
 
     jsonld = {"@context": "https://schema.org", "@graph": [
         {"@type": "CollectionPage", "@id": f"{BASE}/posts/#collection",
@@ -1949,7 +1949,7 @@ def write_socials_page():
     (out / "index.html").write_text(
         shell("Posts — Zuzana Irsova Havrankova", SOCIAL_DESC, f"{BASE}/posts/", jsonld, body,
               "posts", lang="en"),
-        encoding="utf-8")
+        encoding="utf-8", newline="\n")
     # The section was briefly live at /ze-siti/. Leave a redirect so that address, and
     # anything that captured it, still lands in the right place.
     old = KDIR / "ze-siti"
@@ -1965,7 +1965,7 @@ def write_socials_page():
         '<meta name="robots" content="noindex,follow">\n'
         f'<meta http-equiv="refresh" content="0; url={BASE}/posts/">\n'
         f'<p>This page has moved to <a href="{BASE}/posts/">{BASE}/posts/</a>.</p>\n',
-        encoding="utf-8")
+        encoding="utf-8", newline="\n")
     # main()'s orphan sweep only looks at top-level directories, and posts/ is on its
     # keep-list, so nothing would ever remove a stale posts/<slug>/. generate_seo.py
     # builds the sitemap from the filesystem, so a renamed slug would otherwise be
@@ -2077,7 +2077,7 @@ def write_data_page(items, social=()):
                  "corpus.jsonl, index.json, all.md a manifest s kontrolními součty.",
                  f"{BASE}/data/", jsonld, body, "", lang="cs")
     (KDIR / "data").mkdir(exist_ok=True)
-    (KDIR / "data" / "index.html").write_text(page, encoding="utf-8")
+    (KDIR / "data" / "index.html").write_text(page, encoding="utf-8", newline="\n")
 
 
 def write_src_index(items):
@@ -2130,7 +2130,7 @@ def write_src_index(items):
 </body>
 </html>
 """
-    (KDIR / "src" / "index.html").write_text(page, encoding="utf-8")
+    (KDIR / "src" / "index.html").write_text(page, encoding="utf-8", newline="\n")
     return len(rows)
 
 
@@ -2152,7 +2152,7 @@ def _retired_update_sitemap(items):
     rows = [f'  <url><loc>{u}</loc><lastmod>{items[0]["date"]}</lastmod></url>' for u in urls]
     rows += [f'  <url><loc>{BASE}/{a["slug"]}/</loc><lastmod>{a["date"]}</lastmod></url>'
              for a in items if a["media"] == "text"]
-    sm.write_text(t.replace("</urlset>", "\n".join(rows) + "\n</urlset>"), encoding="utf-8")
+    sm.write_text(t.replace("</urlset>", "\n".join(rows) + "\n</urlset>"), encoding="utf-8", newline="\n")
     return len(rows)
 
 
