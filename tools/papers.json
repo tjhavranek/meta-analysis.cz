@@ -2147,7 +2147,6 @@
  },
  {
   "project": "conventional_wisdom",
-  "home_label": "Data and code",
   "title": "Conventional wisdom, meta-analysis, and research revision in economics",
   "literature": "Conventional Wisdom and Meta-Analysis",
   "abstract": "Over the past several decades, meta-analysis has emerged as a widely accepted tool to understand economics research. Meta-analyses often challenge the established conventional wisdom of their respective fields. We systematically review a wide range of influential meta-analyses in economics and compare them to “conventional wisdom.” After correcting for observable biases, the empirical economic effects are typically much closer to zero and sometimes switch signs. Typically, the relative reduction in effect sizes is 45%–60%.",
@@ -2358,7 +2357,6 @@
  },
  {
   "project": "elb",
-  "home_label": "Data and code",
   "title": "Estimating the Effective Lower Bound on the Czech National Bank's Policy Rate",
   "literature": "The Effective Lower Bound on Policy Rates",
   "abstract": "This paper focuses on the estimation of the effective lower bound on the Czech National Bank’s policy rate. The effective lower bound is determined by the value below which holding and using cash would be preferable to holding deposits with negative yields. This bound is approximated on the basis of the storage, insurance and transportation costs of cash and the loss of convenience associated with cashless payments. This estimate is complemented by a calculation based on interest charges reflecting the impact of negative rates on banks’ profitability. Overall we get a mean of slightly below −1%, approximately in the interval (−2.0%, −0.4%). In addition, by means of a vector autoregression we show that the potential of negative rates is not sufficient to deliver monetary policy easing similar in its effects to the impact of the exchange rate commitment during the years 2013–2017.",
