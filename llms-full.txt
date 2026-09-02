@@ -11571,6 +11571,10 @@ Our results also have broad implications for future experimental research on dis
 
 The online version contains supplementary material available at https://doi.org/10.1007/s10683-021-09716-9.
 
+#### Acknowledgements
+
+We are grateful to the editors, Marie Claire Villleval and Roberto A. Weber, and two anonymous referees for helpful comments. An online appendix with data and code is available at meta-analysis.cz/discrate. Matousek acknowledges support from the Czech Science Foundation (grant #21-09231S) and Charles University (project Primus/17/HUM/16). Havranek and Irsova acknowledge support from the Czech Science Foundation (grant #19-26812X).
+
 #### REFERENCES
 
 Abdellaoui, M., Attema, A., & Bleichrodt, H. (2010). Intertemporal trade-offs for gains and losses: An experimental measurement of discounted utility. *The Economic Journal, 120*(545), 845–866.
@@ -33151,6 +33155,10 @@ In terms of policy implications, the focus on improving institutions in developi
 1. Note that given our focus on the natural resource curse, we study the literature primarily examining point-source non-renewable resources---those extracted from a narrow geographic or economic base, as well as primary exports as a percentage of GDP, GNP, or total exports.
 
 2. We thank an anonymous referee for pointing out this interpretation.
+
+#### Acknowledgements
+
+An online appendix with data and code is available at meta-analysis.cz/resource curse. We thank three anonymous referees, Oxana Babecka Kucharcukova, Ichiro Iwasaki, Elissaios Papyrakis, and seminar participants at CERGE-EI and Czech National Bank for their helpful comments. Havranek acknowledges support from the Czech Science Foundation (grant #16-00027S). Horvath acknowledges support from the Czech Science Foundation (grant #15-02411S). Zeynalov acknowledges support from the CERGE-EI Foundation under a program of the Global Development Network (GDN). The research leading to these results received funding from the People Programme (Marie Curie Actions) of the European Union's Seventh Framework Programme FP7/2007-2013 under REA grant agreement number 609642. All opinions expressed here are those of the authors and have not been endorsed by CERGE-EI, the GDN, or the Czech National Bank.
 
 #### REFERENCES
 

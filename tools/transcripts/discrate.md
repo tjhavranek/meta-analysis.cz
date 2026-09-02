@@ -372,6 +372,10 @@ Our results also have broad implications for future experimental research on dis
 
 The online version contains supplementary material available at https://doi.org/10.1007/s10683-021-09716-9.
 
+## Acknowledgements
+
+We are grateful to the editors, Marie Claire Villleval and Roberto A. Weber, and two anonymous referees for helpful comments. An online appendix with data and code is available at meta-analysis.cz/discrate. Matousek acknowledges support from the Czech Science Foundation (grant #21-09231S) and Charles University (project Primus/17/HUM/16). Havranek and Irsova acknowledge support from the Czech Science Foundation (grant #19-26812X).
+
 ## REFERENCES
 
 Abdellaoui, M., Attema, A., & Bleichrodt, H. (2010). Intertemporal trade-offs for gains and losses: An experimental measurement of discounted utility. *The Economic Journal, 120*(545), 845–866.
