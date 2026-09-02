@@ -534,7 +534,7 @@ TABLE A3. Summary of BMA estimation, all countries.
 | Av = 0.9996 |  |  |  |
 Notes: The “random” model prior refers to the beta-binomial prior advocated by Ley and Steel (2009): prior model probabilities are the same for all possible model sizes. We set the Zellner's g-prior following Fernandez et al. (2001).
 
-FIGURE A3. Model size and convergence, BMA with all countries.
+FIGURE A3 (no artwork). Model size and convergence, BMA with all countries.
 
 TABLE A4. Summary of BMA estimation, core countries.
 
@@ -549,7 +549,7 @@ TABLE A4. Summary of BMA estimation, core countries.
 | Av = 0.9996 |  |  |  |
 Notes: The “random” model prior refers to the beta-binomial prior advocated by Ley and Steel (2009): prior model probabilities are the same for all possible model sizes. We set the Zellner's g-prior following Fernandez et al. (2001).
 
-FIGURE A4. Model size and convergence, BMA with core countries.
+FIGURE A4 (no artwork). Model size and convergence, BMA with core countries.
 
 TABLE A5. Summary of BMA estimation, no fixed variables.
 
@@ -564,7 +564,7 @@ TABLE A5. Summary of BMA estimation, no fixed variables.
 | Av = 0.9996 |  |  |  |
 Notes: The “random” model prior refers to the beta-binomial prior advocated by Ley and Steel (2009): prior model probabilities are the same for all possible model sizes. We set the Zellner's g-prior following Fernandez et al. (2001).
 
-FIGURE A5. Model size and convergence, BMA with no fixed variables.
+FIGURE A5 (no artwork). Model size and convergence, BMA with no fixed variables.
 
 TABLE A6. Summary of BMA estimation, priors according to Eicher et al. (2011).
 
@@ -579,7 +579,7 @@ TABLE A6. Summary of BMA estimation, priors according to Eicher et al. (2011).
 | Av = 0.9996 |  |  |  |
 Notes: In this specification we employ the priors suggested by Eicher et al. (2011), who recommend using the uniform model prior (each model has the same prior probability) and the unit information prior (the prior provides the same amount of information as one observation).
 
-FIGURE A6. Model size and convergence, BMA with priors according to Eicher et al. (2011).
+FIGURE A6 (no artwork). Model size and convergence, BMA with priors according to Eicher et al. (2011).
 
 TABLE A7. Summary of BMA estimation, hyper-*g* prior.
 
@@ -594,7 +594,7 @@ TABLE A7. Summary of BMA estimation, hyper-*g* prior.
 | Av = 0.93 |  |  |  |
 Notes: In this specification we employ the hyper-g prior suggested by Liang et al. (2008), who recommend using a Beta prior on the shrinkage factor.
 
-FIGURE A7. Model size and convergence, hyper-g prior.
+FIGURE A7 (no artwork). Model size and convergence, hyper-g prior.
 
 TABLE A8. Summary of BMA estimation, alternative proxies.
 
@@ -609,7 +609,7 @@ TABLE A8. Summary of BMA estimation, alternative proxies.
 | Av = 0.9996 |  |  |  |
 Notes: The “random” model prior refers to the beta-binomial prior advocated by Ley and Steel (2009): prior model probabilities are the same for all possible model sizes. We set the Zellner's g-prior following Fernandez et al. (2001).
 
-FIGURE A8. Model size and convergence, BMA with alternative proxies.
+FIGURE A8 (no artwork). Model size and convergence, BMA with alternative proxies.
 
 TABLE A9. Summary of BMA estimation, an alternative definition of outliers.
 
@@ -624,7 +624,7 @@ TABLE A9. Summary of BMA estimation, an alternative definition of outliers.
 | Av = 0.9995 |  |  |  |
 Notes: The “random” model prior refers to the beta-binomial prior advocated by Ley and Steel (2009): prior model probabilities are the same for all possible model sizes. We set the Zellner's g-prior following Fernandez et al. (2001).
 
-FIGURE A9. Model size and convergence, an alternative definition of outliers.
+FIGURE A9 (no artwork). Model size and convergence, an alternative definition of outliers.
 
 ## ENDNOTES
 

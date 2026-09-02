@@ -2017,7 +2017,7 @@ Three qualifications of our results are in order. First, the 3524 estimates that
 
 #### Appendix A
 
-FIGURE A1. Estimates vary both within and across studies (Alaouze et al., 1977; Bilgic et al., 2002; Corbo and Osbat, 2013; Gibson, 2003; Ivanova, 2005; Kawashima and Sari, 2010; Lachler, 1984; Lundmark and Shahrammehr, 2011a; Lundmark and Shahrammehr, 2011b; Nganou, 2005; Reinert and Shiells, 1991; Sauquet et al., 2011; Shiells and Reinert, 1993; Turner et al., 2012; Warr and Lapiz, 1994; Welsch, 2006).
+FIGURE A1 (no artwork). Estimates vary both within and across studies (Alaouze et al., 1977; Bilgic et al., 2002; Corbo and Osbat, 2013; Gibson, 2003; Ivanova, 2005; Kawashima and Sari, 2010; Lachler, 1984; Lundmark and Shahrammehr, 2011a; Lundmark and Shahrammehr, 2011b; Nganou, 2005; Reinert and Shiells, 1991; Sauquet et al., 2011; Shiells and Reinert, 1993; Turner et al., 2012; Warr and Lapiz, 1994; Welsch, 2006).
 
 *Notes:* The figure shows a box plot of the estimates of the Armington elasticity reported in individual studies. The length of each box represents the interquartile range (P25-P75), and the dividing line inside the box is the median value. The whiskers represent the highest and lowest data points within 1.5 times the range between the upper and lower quartiles. Outliers are excluded from the figure. The solid vertical line denotes unity.
 
@@ -2088,7 +2088,7 @@ TABLE A2. Potential mediating factors of publication bias.
 | Observations | 2968 | 2968 | 2968 | 2968 | 2968 | 2968 |
 *Notes:* The response variable is an estimate of the long-run Armington elasticity. Standard errors are clustered at the study and country level. Variables interacted with the standard error (Impact factor, Citations, Published, Data disaggregation) are also included separately but the coefficients are not reported.
 
-FIGURE A2. Estimates vary both within and across countries.
+FIGURE A2 (no artwork). Estimates vary both within and across countries.
 
 *Notes:* The figure shows a box plot of the estimates of the Armington elasticity reported for individual countries. The length of each box represents the interquartile range (P25-P75), and the dividing line inside the box is the median value. The whiskers represent the highest and lowest data points within 1.5 times the range between the upper and lower quartiles. Outliers are excluded from the figure. The solid vertical line denotes unity.
 
@@ -4694,7 +4694,7 @@ TABLE 6. Summary of BMA estimation
 | Av = 0.9995 |  |  |  |
 Note: The "random" model prior refers to the beta-binomial prior advocated by Ley and Steel (2009): prior model probabilities are the same for all possible models; in other words, we do not *a priori* prefer any particular model size. We set the Zellner's *g* prior following Fernandez et al. (2001a).
 
-FIGURE B1. Model size and convergence.
+FIGURE B1 (no artwork). Model size and convergence.
 
 #### ENDNOTES
 
@@ -16192,11 +16192,11 @@ Notes: Estimates from the interacted FAT-PET regression $E_{is} = \beta_0 + \bet
 
 #### Appendix C
 
-FIGURE C1. Correlations between potential predictors of heterogeneity
+FIGURE C1 (no artwork). Correlations between potential predictors of heterogeneity
 
 Notes: The figure displays correlation coefficients for variables used in heterogeneity analysis.
 
-FIGURE C2. Model size and convergence for the baseline BMA
+FIGURE C2 (no artwork). Model size and convergence for the baseline BMA
 
 (a) Posterior model size and model probabilities  (b) Cumulative posterior model probability
 
@@ -16604,7 +16604,7 @@ precision of the estimate (1/SE)
 
 −1 −.5 0 .5 1 corrected estimate of gamma
 
-FIGURE 5. Funnel plot corrected for publication bias, all studies
+FIGURE 5 (no artwork). Funnel plot corrected for publication bias, all studies
 
 #### References
 
@@ -19010,7 +19010,7 @@ The funnel plot in Fig. A1 suggests some asymmetry, which can be explained by sm
 
 Another issue that warrants attention is our treatment of outliers. Some of the reported estimates are clearly implausible, larger than 50 in the absolute value. We have made sure these estimates are coded properly from the primary studies, and in several cases we have contacted the authors of these studies and asked them for details on these estimates. Most of these estimates come from data on the currencies of developing countries, where much more noise is present than in the data on developed countries. Because we attempt to include all estimates, we collect the extreme ones as well. In our baseline estimation we prefer to winsorize the extreme values of the reported standard errors and the magnitude of the beta. We believe that winsorization has two main benefits relative to data trimming. First, because it is symmetrical, winsorization preserves the median and in many cases also the mean of the underlying dataset. Data trimming at specific values often leads to significant changes in both statistics. Second, winsorization uses all the observations. For example, an estimate of beta that equals 50 cannot plausibly be used in a meta-analysis at face value, because it would hugely distort basic statistics such as the mean and standard deviation and also any regression result. But we still find it useful to preserve the information that the estimate exists and is large. Such a preservation is achieved by winsorizing, though of course the winsorization level is subjective. We choose our winsorization level (5%) as the smallest adjustment of outliers after which the results stabilize (that is, a 6% or 10% level would bring very similar outcomes). In other words, we prefer not to put much weight on results that would crucially rely on a few influential estimates.
 
-FIGURE A1. A funnel plot and histogram for level estimates Notes: The figure represents funnel plot (on the right) and histogram (on the left) of the estimates extracted from the level equation (Eq. 2). In the absence of publication bias the scatter plot should resemble an inverted funnel that is symmetrical around the most precise estimates. Logarithmic scale is used to depict precision (the vertical axis of the funnel plot). Outlying observations are cut from the figure for ease of exposition but included in all statistical tests. The solid vertical line in the histogram shows the mean from the winsorized estimates of beta from the level specification.
+FIGURE A1 (no artwork). A funnel plot and histogram for level estimates Notes: The figure represents funnel plot (on the right) and histogram (on the left) of the estimates extracted from the level equation (Eq. 2). In the absence of publication bias the scatter plot should resemble an inverted funnel that is symmetrical around the most precise estimates. Logarithmic scale is used to depict precision (the vertical axis of the funnel plot). Outlying observations are cut from the figure for ease of exposition but included in all statistical tests. The solid vertical line in the histogram shows the mean from the winsorized estimates of beta from the level specification.
 
 TABLE A1. Tests of publication bias (level estimates).
 
@@ -19039,7 +19039,7 @@ In contrast, the difference estimates display two peaks, one at zero and the oth
 
 In Table A2 we examine how our results regarding publication bias change when we abandon winsorizing and rely instead on conservative trimming of the most extreme outliers. We still observe the principle that guided us regarding the choice of the winsorization threshold: we want to trim as few observations as possible in order for our results to stabilize. That is, for our final threshold it holds that if we trim more outliers, our results will not change qualitatively (or will be stronger). We proceed in two steps. First, we focus on the threshold for the magnitude of the reported beta. The threshold at which our results stabilize is 6, which means that we omit all estimates larger than 6 in the absolute value. Such estimates are considered implausible by the bulk of the literature, so we see little harm in doing so. Second, we
 
-FIGURE A2. Funnel plots and histograms including more extreme observations Notes: The figure depicts funnels and histograms with outlying values liberally included. To be specific, all reported values of precision are shown. We still cut the most extreme estimates of beta (which sometimes surpass 50 in absolute value), because their inclusion would make the figures illegible. The horizontal lines in histograms depict mean reported betas (without winsorization).
+FIGURE A2 (no artwork). Funnel plots and histograms including more extreme observations Notes: The figure depicts funnels and histograms with outlying values liberally included. To be specific, all reported values of precision are shown. We still cut the most extreme estimates of beta (which sometimes surpass 50 in absolute value), because their inclusion would make the figures illegible. The horizontal lines in histograms depict mean reported betas (without winsorization).
 
 TABLE A2. Tests of publication bias (trimmed dataset, no winsorization).
 
@@ -22153,7 +22153,7 @@ The vertical line in Figure 3 denotes the unconditional sample mean of monthly a
 
 Figure 4 visualizes the distribution of alpha estimates reported in the individual primary studies. The boxes represent the interquartile range between percentile 25 and percentile 75 and the vertical line inside each box denotes the median value for a given study. The whiskers represent
 
-FIGURE 4. Alphas in primary studies. [Colour figure can be viewed at wileyonlinelibrary.com] Note: The figure shows the distribution of alpha coefficients across the individual primary studies (sorted alphabetically). For each study, the box represents the interquartile range (P25–P75), and the dividing line inside the box shows the median value. The whiskers represent the highest and lowest data points within 1.5 times the range between the upper and lower quartiles. The solid red vertical line denotes the sample mean; the dashed gray vertical line denotes zero. For ease of exposition, outliers are excluded from the figure but included in all statistical tests.
+FIGURE 4 (no artwork). Alphas in primary studies. [Colour figure can be viewed at wileyonlinelibrary.com] Note: The figure shows the distribution of alpha coefficients across the individual primary studies (sorted alphabetically). For each study, the box represents the interquartile range (P25–P75), and the dividing line inside the box shows the median value. The whiskers represent the highest and lowest data points within 1.5 times the range between the upper and lower quartiles. The solid red vertical line denotes the sample mean; the dashed gray vertical line denotes zero. For ease of exposition, outliers are excluded from the figure but included in all statistical tests.
 
 the highest and lowest data points within 1.5 times the range between the upper and lower quartiles. Consistent with the preliminary indication in Figure 3, also the pattern depicted in Figure 4 shows that the individual studies differ greatly in the dispersion of reported alpha coefficients. For most studies, the interquartile ranges cross the vertical line representing the unconditional sample mean of 0.36%. However, there are some studies with interquartile ranges not overlapping with the unconditional sample mean. In fact, some of them are fully below zero. Furthermore, we observe that some studies exhibit rather wide interquartile ranges exceeding one percentage point. This suggests that even within some studies, the reported coefficients vary greatly. The substantial heterogeneity of alpha estimates reported in primary studies further underscores the importance of conducting a quantitative survey that aggregates these diverse results and corrects them for potential biases.
 
@@ -22967,7 +22967,7 @@ Zigraiova, D., Havranek, T., Irsova, Z., & Novak, J. (2021). How puzzling is the
 
 #### APPENDIX
 
-FIGURE A1. Distribution of *t*-statistics. [Colour figure can be viewed at wileyonlinelibrary.com] Note: The figure represents the distribution of *t*-statistics of the reported estimates of the alpha. Red lines represent critical value of 1.96 associated with significance at the 5% level and the value of 0 associated with changing the sign of the estimate. We exclude estimates with large *t*-statistics from the figure for ease of exposition but include them in statistical tests.
+FIGURE A1 (no artwork). Distribution of *t*-statistics. [Colour figure can be viewed at wileyonlinelibrary.com] Note: The figure represents the distribution of *t*-statistics of the reported estimates of the alpha. Red lines represent critical value of 1.96 associated with significance at the 5% level and the value of 0 associated with changing the sign of the estimate. We exclude estimates with large *t*-statistics from the figure for ease of exposition but include them in statistical tests.
 
 FIGURE A2. Histograms for subsamples. [Colour figure can be viewed at wileyonlinelibrary.com] Note: The figure depicts funnel plots of the reported alphas divided based on the treatment of biases, the implementation of methods (IV = instrumental variables) and models, and the quality of journals in finance. The solid vertical line denotes the sample mean; the dashed vertical line denotes the null alpha.
 
@@ -25218,7 +25218,7 @@ Notes: *Panel A* reports sample statistics for the analysis dataset of 777 estim
 
 Panel B of Table 3 describes the marginal distribution of the optimum across the four affiliation classes. The row-level pooled means differ little. The central-bank versus university gap is +0.028 pp/year ($p = 0.96$, study-clustered) and the joint Wald test on the three between-class contrasts cannot reject zero ($p = 0.24$); at the paper level the author-preferred-row Welch contrast is $-0.21$ pp/year ($p = 0.63$). The share of estimates falling inside the [1.5, 2.5] window around the policy target is 16.8% for central-bank rows against 15.2% for university rows. These comparisons are unconditional: they pool estimates across very different model structures and calibrations. Because the affiliation classes are unbalanced on the structural moderators used in the literature (e.g. whether the Friedman rule applies, whether a cashless benchmark is imposed, the form of real-balance frictions, and standard calibration choices), the raw Panel B gap mixes a true affiliation effect with composition. The institutional-advocacy question is therefore properly a conditional question and is answered by the BMA of Section 5.
 
-FIGURE 1. Distribution of reported optimal inflation rates. Notes: Histogram of 777 estimates of the optimal long-run inflation rate in percent per year, winsorised at the fifth and ninety-fifth percentiles before plotting. Native vector graphic produced by Stata 18. The vertical red line marks zero measured inflation (price stability); the dashed orange line marks the two-percent central-bank target. The dotted black line is the sample median. The distribution is visibly bimodal, with one mode clustered near zero and a second mode clustered around two percent.
+FIGURE 1 (no artwork). Distribution of reported optimal inflation rates. Notes: Histogram of 777 estimates of the optimal long-run inflation rate in percent per year, winsorised at the fifth and ninety-fifth percentiles before plotting. Native vector graphic produced by Stata 18. The vertical red line marks zero measured inflation (price stability); the dashed orange line marks the two-percent central-bank target. The dotted black line is the sample median. The distribution is visibly bimodal, with one mode clustered near zero and a second mode clustered around two percent.
 
 Figure 1 plots the histogram of the pooled estimates. The distribution is heavy-tailed on both sides and visibly bimodal, with one cluster of estimates close to zero (capturing studies that support the Friedman rule or small positive optima) and a second cluster around two percent (capturing studies aligned with the policy target). The within-study dispersion is frequently as large as the between-study dispersion. The same pattern has been documented in earlier meta-analyses of structural macroeconomic parameters (Elminejad et al., 2023; Havranek et al., 2015; Zigraiova & Havranek, 2016) and in applied micro-economics (Opatrny et al., 2026), and it justifies the collection of the full set of reported numbers rather than a single “preferred” value per paper (Havranek et al., 2020; Stanley & Doucouliagos, 2012).
 
@@ -27373,7 +27373,7 @@ FIGURE 6. Significance funnel plot
 
 Notes: The figure displays a significance funnel plot following Mathur and VanderWeele (2020). Orange points are affirmative estimates; gray points are non-affirmative. The gray diamond is the fixed-effects mean among non-affirmative estimates (0.021), corresponding to the MAN worst-case benchmark reported in Panel A of Table 4. The black diamond is the precision-weighted pooled mean across all 291 estimates ($\hat{\mu}_{IVW} = -0.245$); it lies more negative than the Panel A equal-weighted mean of −0.126 because inverse-variance weighting gives disproportionate influence to large, high-precision studies.
 
-FIGURE 7. Distribution of z-scores.
+FIGURE 7 (no artwork). Distribution of z-scores.
 
 Note: The figure shows the distribution of z-scores, $y_i/se_i$, in the original dataset. The dashed vertical lines mark $z = -1.96$ and $z = +1.96$, the conventional 5% two-sided significance thresholds.
 
@@ -27582,7 +27582,7 @@ We also attempted a p-curve analysis following Simonsohn et al. (2014), which te
 
 ##### C.1 Figures
 
-FIGURE C1. Caliper test for excess bunching around the significance threshold $z = -1.96$. Notes: Shaded regions indicate the ±0.10 caliper window. Red bars denote estimates inside the threshold (significant); blue bars denote estimates outside (non-significant).
+FIGURE C1 (no artwork). Caliper test for excess bunching around the significance threshold $z = -1.96$. Notes: Shaded regions indicate the ±0.10 caliper window. Red bars denote estimates inside the threshold (significant); blue bars denote estimates outside (non-significant).
 
 FIGURE C2. *P*-curve distribution. Notes: The grey bar denotes *p*-values that underflow numerically to zero ($n = 61$). The dominance of the [.00, .01) bin reflects the extremely large sample sizes in the literature rather than the evidential strength of individual studies.
 
@@ -28181,7 +28181,7 @@ TABLE 1. Summary statistics for different subsets of the literature
 | Top 5 journals | 64 | -0.04 | 26.0 | -0.05 | -0.03 | -0.04 | 26.3 | -0.05 | -0.03 |
 Notes: The exact definition of the variables is available in Table B1. Weighted = coefficients are weighted by the inverse of the number of estimates reported per study. The column $\sigma$ depicts implied elasticity computed as $\sigma = -1/mean$ using the coefficient values prior to rounding. Thus, it may not perfectly correspond to the rounded mean values presented in the table. $N$ is the number of observations per sample. No winsorization needed.
 
-FIGURE 1. Box plot of negative inverse elasticity across studies
+FIGURE 1 (no artwork). Box plot of negative inverse elasticity across studies
 
 Notes: $-1/\sigma = \theta$, i.e., the reported coefficient. The length of each box represents the interquartile range (P25–P75), and the dividing line inside the box is the median value. The whiskers represent the highest and lowest data points within 1.5 times the range between the upper and lower quartiles. The dots show the outlying estimates with extreme values stacked at the values denoted as "outliers". The red vertical line presents the unweighted mean of all reported coefficients ($-0.075$).
 
@@ -28193,7 +28193,7 @@ A funnel plot, developed by Egger et al. (1997), is a scatter diagram that plots
 
 Figure 2 reveals noticeable asymmetry, with a longer left tail suggesting that studies reporting more negative coefficients are overrepresented. The gap between the simple mean of the coefficients ($-0.075$, implying $\sigma \approx 13.3$) and the Unrestricted Weighted Least Squares (UWLS) coefficient ($-0.047$, implying $\sigma \approx 21.3$) is indicative of selective reporting. Following Stanley et al. (2023), we use the UWLS as a robust benchmark for the precision-weighted average. The precision-weighted average is meaningfully smaller in magnitude than the unweighted average, suggesting that the most negative results are concentrated among the least precise coefficients. However, because graphical interpretations and simple weighting can only be indicative of the underlying selection process, we employ formal meta-regression techniques to quantify the extent of publication selection bias and recover a bias-corrected coefficient, which serves as the basis for our implied elasticity estimates.
 
-FIGURE 2. Funnel plot suggests asymmetry among coefficients
+FIGURE 2 (no artwork). Funnel plot suggests asymmetry among coefficients
 
 Notes: The vertical lines represent the unweighted arithmetic mean of the estimates ($-0.0749$) and the precision-weighted average ($-0.0470$), calculated via Unrestricted Weighted Least Squares (UWLS). SE denotes the standard error. For visual clarity, the plot excludes 26 outlying estimates with values below $-0.5$.
 
@@ -28574,7 +28574,7 @@ FIGURE A1. PRISMA diagram
 
 Figure A2 shows a box plot of the coefficient, the negative inverse elasticity ($-1/\sigma$), across countries, revealing that the UK has the least substitutability, while Switzerland has the highest. However, the UK estimate is based on a single study and should be treated with caution. The corresponding summary statistics are quantified in Table A2.
 
-FIGURE A2. Box plot of negative inverse elasticity across countries Notes: The length of each box represents the interquartile range (P25-P75), and the dividing line inside the box is the median value. The whiskers represent the highest and lowest data points within 1.5 times the range between the upper and lower quartiles. The dots show the outlying estimates with extreme values stacked at the values denoted as "outliers". The red vertical line presents the unweighted mean of all estimates (−0.075).
+FIGURE A2 (no artwork). Box plot of negative inverse elasticity across countries Notes: The length of each box represents the interquartile range (P25-P75), and the dividing line inside the box is the median value. The whiskers represent the highest and lowest data points within 1.5 times the range between the upper and lower quartiles. The dots show the outlying estimates with extreme values stacked at the values denoted as "outliers". The red vertical line presents the unweighted mean of all estimates (−0.075).
 
 TABLE A2. Summary statistics for different countries
 
@@ -33704,11 +33704,11 @@ Economists expect that most people are risk-averse, and hence that the mean coef
 
 The process leading to publication bias is not necessarily detrimental to science, and certainly it does not need to involve any ulterior motives on the part of the researchers. In many cases it will improve the inference of an individual study if it does not focus on negative or insignificant estimates of relative risk aversion. After all, these estimates are likely to be caused by sampling error, random heterogeneity, or some problems in data or methods. But, as implied by the calibrations described in the Introduction, quite often researchers need large estimates of risk aversion to fit their models. Imprecise and large estimates are therefore likely to be treated more favorably, and more likely to be reported, than imprecise and small estimates. Thus, at the level of the entire literature, a bias arises that exaggerates the true mean effect.
 
-FIGURE 2. Estimates of risk aversion vary both across and within studies. Note: The length of each box represents the interquartile range (P25–P75), and the dividing line inside the box is the median value. The whiskers represent the highest and lowest data points within 1.5 times the range between the upper and lower quartiles. For ease of exposition, outliers are excluded from the figure but included in all statistical tests.
+FIGURE 2 (no artwork). Estimates of risk aversion vary both across and within studies. Note: The length of each box represents the interquartile range (P25–P75), and the dividing line inside the box is the median value. The whiskers represent the highest and lowest data points within 1.5 times the range between the upper and lower quartiles. For ease of exposition, outliers are excluded from the figure but included in all statistical tests.
 
 How to test and correct for publication bias? All existing methods for the identification and reduction of publication bias have their limitations. The histogram of the estimates shown in Figure 1 does not really help, though it suggests that the bias is not universal: Some negative estimates of risk aversion do appear in the literature. A neat way to measure publication bias is to compare the results of original studies and pre-registered replications (Kvarven et al. 2020), the latter being unlikely to suffer from much bias. But there are no pre-registered replications of studies estimating relative risk aversion from the Euler equation; in general, pre-registration is most efficient in the experimental literature where researchers cannot inspect their data prior to pre-registration (Olken 2015). To correct for the bias, we thus rely on techniques traditionally used by medical researchers and new methods recently developed by econometricians and psychologists.
 
-FIGURE 3. The funnel plot suggests publication bias. Note: In the absence of publication bias (and any small-sample and heterogeneity-related biases), the plot should form a symmetrical inverted funnel. Outliers are excluded from the figure for ease of exposition but included in all tests. The vertical line denotes the value of 1. [Colour figure can be viewed at wileyonlinelibrary.com]
+FIGURE 3 (no artwork). The funnel plot suggests publication bias. Note: In the absence of publication bias (and any small-sample and heterogeneity-related biases), the plot should form a symmetrical inverted funnel. Outliers are excluded from the figure for ease of exposition but included in all tests. The vertical line denotes the value of 1. [Colour figure can be viewed at wileyonlinelibrary.com]
 
 The starting point is a visual examination of the so-called funnel plot, often used in medical research (Egger et al. 1997; Stanley and Doucouliagos 2010). The funnel plot, Figure 3, is a scatter plot of point estimates on the horizontal axis and the estimates' precision (reciprocal of the standard error) on the vertical axis. In the absence of systematic heterogeneity, which will be examined in the next section, the most precise estimates should be close to the underlying mean coefficient of relative risk aversion. As precision decreases, the estimates should be more widely dispersed around the true mean value. Because in the absence of publication bias, all estimates have the same chance of being reported, the funnel will be symmetrical: All imprecise estimates are published, both those that are negative and those that are huge and positive. Figure 3 shows that, first, the funnel is asymmetric, which is consistent with publication bias among the reported estimates of risk aversion. Second, the most precise estimates are concentrated around 1 (represented by the vertical line).
 
@@ -33833,7 +33833,7 @@ Because we have so many variables, we need to use methods that account for model
 
 The results of Bayesian model averaging are summarized graphically in Figure 4; more details are available in the Supplement (Table D1 and Figure D2). The horizontal axis denotes cumulative posterior model probabilities: the weights received by each model. The most informative individual models, denoted by columns, therefore, are depicted on the left. Variables are sorted by posterior inclusion probability (the sum of posterior model probabilities of all models in which the variable is included) in descending order. This ordering means that the variables most useful in explaining the variation in estimated risk aversion are depicted at the top of the figure. The single most important variable is the standard error, which corroborates our previous results concerning publication bias: The correlation between estimates and standard errors cannot be explained by heterogeneity, and publication bias thus remains the most plausible explanation. In total, there are eight variables with posterior inclusion probability above 0.5, which means that these variables are systematically related to the published coefficients of relative risk aversion. The results of Bayesian model averaging can be sensitive to the priors used, but Figure 5 shows that posterior inclusion probabilities do not change much when we apply alternative priors sometimes used in the literature (see also Table D2).
 
-FIGURE 4. Model inclusion in Bayesian model averaging. Note: The response variable is the reported estimate of relative risk aversion; all estimates that we collect are derived from specifications that separate risk aversion from intertemporal substitution. The columns denote individual models; variables are sorted by posterior inclusion probability in descending order. The horizontal axis denotes cumulative posterior model probabilities. The estimation is based on the agnostic unit information prior recommended by Eicher et al. (2011) and the dilution prior suggested by George (2010), which takes collinearity into account. Blue color (darker in grayscale) = the variable has a positive estimated sign. Red color (lighter in grayscale) = the variable has a negative estimated sign. No color = the variable is excluded from the given model. Table 4 presents a detailed description of the variables. The numerical results are reported in Table 5.
+FIGURE 4 (no artwork). Model inclusion in Bayesian model averaging. Note: The response variable is the reported estimate of relative risk aversion; all estimates that we collect are derived from specifications that separate risk aversion from intertemporal substitution. The columns denote individual models; variables are sorted by posterior inclusion probability in descending order. The horizontal axis denotes cumulative posterior model probabilities. The estimation is based on the agnostic unit information prior recommended by Eicher et al. (2011) and the dilution prior suggested by George (2010), which takes collinearity into account. Blue color (darker in grayscale) = the variable has a positive estimated sign. Red color (lighter in grayscale) = the variable has a negative estimated sign. No color = the variable is excluded from the given model. Table 4 presents a detailed description of the variables. The numerical results are reported in Table 5.
 
 The numerical results of Bayesian model averaging are reported in the left-hand part of Table 5. The right-hand part shows a simple frequentist robustness check, in which we run ordinary least squares using only the variables with posterior inclusion probability above 0.5 in Bayesian model averaging. The robustness check is broadly consistent with the results of Bayesian model averaging, but finds borderline statistical significance for several of the variables. The point estimates, however, are similar and suggest large effects of these characteristics. We find that even if we control for estimation context, finance journals tend to report coefficients of relative risk aversion substantially larger than economics journals: by about 6. Another intuitive result is that stockholders are less risk-averse than nonstockholders. Again the difference in relative risk aversion is about 6. Next, we find that the results are driven by data and estimation characteristics: data dimension (cross-section vs. time series vs. panel data), data frequency (monthly vs. quarterly vs. annual), regional coverage (US vs. other countries), the specification of the utility function (Epstein–Zin vs. other approaches), and treatment of durables (separability vs. nonseparability). The het-
 
@@ -34239,7 +34239,7 @@ Additional supporting information can be found online in the Supporting Informat
 
 ##### Details of Literature Search
 
-FIGURE A1. PRISMA flow diagram. Note: We use the following query in Google Scholar: "relative risk aversion" AND estimate AND ("recursive utility" OR Epstein-Zin). Note that Google Scholar provides fulltext search, not only the search of the title, abstract, and keywords; consequently, our query is very general. For the dataset of calibrations, we use the same query but replace estimate with calibration; here we inspect the studies by the order in which they are returned by Google Scholar and stop once we reach 200 usable calibration studies. The search for both estimates and calibrations was terminated on May 16, 2022. The list of the 92 studies included in the meta-analysis is available in Table A1; the list of calibration studies is available in an online appendix at meta-analysis.cz/risk. All estimates and calibrations in our sample separate risk aversion from intertemporal substitution. More details on PRISMA and reporting standards of meta-analysis in general are provided by Havranek et al. (2020). PRISMA, Preferred Reporting Items for Systematic Reviews and Meta-Analyses.
+FIGURE A1 (no artwork). PRISMA flow diagram. Note: We use the following query in Google Scholar: "relative risk aversion" AND estimate AND ("recursive utility" OR Epstein-Zin). Note that Google Scholar provides fulltext search, not only the search of the title, abstract, and keywords; consequently, our query is very general. For the dataset of calibrations, we use the same query but replace estimate with calibration; here we inspect the studies by the order in which they are returned by Google Scholar and stop once we reach 200 usable calibration studies. The search for both estimates and calibrations was terminated on May 16, 2022. The list of the 92 studies included in the meta-analysis is available in Table A1; the list of calibration studies is available in an online appendix at meta-analysis.cz/risk. All estimates and calibrations in our sample separate risk aversion from intertemporal substitution. More details on PRISMA and reporting standards of meta-analysis in general are provided by Havranek et al. (2020). PRISMA, Preferred Reporting Items for Systematic Reviews and Meta-Analyses.
 
 TABLE A1. Studies included in the meta-analysis
 
@@ -38605,7 +38605,7 @@ TABLE A3. Summary of BMA estimation, all countries.
 | Av = 0.9996 |  |  |  |
 Notes: The “random” model prior refers to the beta-binomial prior advocated by Ley and Steel (2009): prior model probabilities are the same for all possible model sizes. We set the Zellner's g-prior following Fernandez et al. (2001).
 
-FIGURE A3. Model size and convergence, BMA with all countries.
+FIGURE A3 (no artwork). Model size and convergence, BMA with all countries.
 
 TABLE A4. Summary of BMA estimation, core countries.
 
@@ -38620,7 +38620,7 @@ TABLE A4. Summary of BMA estimation, core countries.
 | Av = 0.9996 |  |  |  |
 Notes: The “random” model prior refers to the beta-binomial prior advocated by Ley and Steel (2009): prior model probabilities are the same for all possible model sizes. We set the Zellner's g-prior following Fernandez et al. (2001).
 
-FIGURE A4. Model size and convergence, BMA with core countries.
+FIGURE A4 (no artwork). Model size and convergence, BMA with core countries.
 
 TABLE A5. Summary of BMA estimation, no fixed variables.
 
@@ -38635,7 +38635,7 @@ TABLE A5. Summary of BMA estimation, no fixed variables.
 | Av = 0.9996 |  |  |  |
 Notes: The “random” model prior refers to the beta-binomial prior advocated by Ley and Steel (2009): prior model probabilities are the same for all possible model sizes. We set the Zellner's g-prior following Fernandez et al. (2001).
 
-FIGURE A5. Model size and convergence, BMA with no fixed variables.
+FIGURE A5 (no artwork). Model size and convergence, BMA with no fixed variables.
 
 TABLE A6. Summary of BMA estimation, priors according to Eicher et al. (2011).
 
@@ -38650,7 +38650,7 @@ TABLE A6. Summary of BMA estimation, priors according to Eicher et al. (2011).
 | Av = 0.9996 |  |  |  |
 Notes: In this specification we employ the priors suggested by Eicher et al. (2011), who recommend using the uniform model prior (each model has the same prior probability) and the unit information prior (the prior provides the same amount of information as one observation).
 
-FIGURE A6. Model size and convergence, BMA with priors according to Eicher et al. (2011).
+FIGURE A6 (no artwork). Model size and convergence, BMA with priors according to Eicher et al. (2011).
 
 TABLE A7. Summary of BMA estimation, hyper-*g* prior.
 
@@ -38665,7 +38665,7 @@ TABLE A7. Summary of BMA estimation, hyper-*g* prior.
 | Av = 0.93 |  |  |  |
 Notes: In this specification we employ the hyper-g prior suggested by Liang et al. (2008), who recommend using a Beta prior on the shrinkage factor.
 
-FIGURE A7. Model size and convergence, hyper-g prior.
+FIGURE A7 (no artwork). Model size and convergence, hyper-g prior.
 
 TABLE A8. Summary of BMA estimation, alternative proxies.
 
@@ -38680,7 +38680,7 @@ TABLE A8. Summary of BMA estimation, alternative proxies.
 | Av = 0.9996 |  |  |  |
 Notes: The “random” model prior refers to the beta-binomial prior advocated by Ley and Steel (2009): prior model probabilities are the same for all possible model sizes. We set the Zellner's g-prior following Fernandez et al. (2001).
 
-FIGURE A8. Model size and convergence, BMA with alternative proxies.
+FIGURE A8 (no artwork). Model size and convergence, BMA with alternative proxies.
 
 TABLE A9. Summary of BMA estimation, an alternative definition of outliers.
 
@@ -38695,7 +38695,7 @@ TABLE A9. Summary of BMA estimation, an alternative definition of outliers.
 | Av = 0.9995 |  |  |  |
 Notes: The “random” model prior refers to the beta-binomial prior advocated by Ley and Steel (2009): prior model probabilities are the same for all possible model sizes. We set the Zellner's g-prior following Fernandez et al. (2001).
 
-FIGURE A9. Model size and convergence, an alternative definition of outliers.
+FIGURE A9 (no artwork). Model size and convergence, an alternative definition of outliers.
 
 #### ENDNOTES
 

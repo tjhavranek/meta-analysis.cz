@@ -87,6 +87,76 @@ def caption_rects(page):
     return out
 
 
+def column_width(page):
+    """The width of a line of body text on this page, not the width of the page.
+
+    Every prose test here compared a line against the PAGE width, which is right for a
+    single-column paper and wrong for the two-column ones. On students and substitution a
+    full column line is 0.42 of the page, under every threshold, so a whole column of body
+    text counted as neither prose nor a barrier and was cropped into the figure.
+    """
+    widths = []
+    for b in page.get_text("dict")["blocks"]:
+        for line in b.get("lines", []):
+            t = "".join(s["text"] for s in line["spans"]).strip()
+            if len(t) > 40:
+                widths.append(fitz.Rect(line["bbox"]).width)
+    if not widths:
+        return page.rect.width
+    widths.sort()
+    return widths[int(0.9 * (len(widths) - 1))]
+
+
+def dominant_column(rects, gutter=25.0, ratio=5.0):
+    """Keep the x-cluster that holds nearly all the drawing, if there is one.
+
+    Returns the rects unchanged unless a single cluster holds `ratio` times more marks than
+    everything else together, which is the case that matters: one stray rule in the next
+    column against a whole chart.
+    """
+    if len(rects) < 6:
+        return rects
+    order = sorted(rects, key=lambda r: r.x0)
+    groups, cur, edge = [], [order[0]], order[0].x1
+    for r in order[1:]:
+        if r.x0 - edge > gutter:
+            groups.append(cur)
+            cur, edge = [r], r.x1
+        else:
+            cur.append(r)
+            edge = max(edge, r.x1)
+    groups.append(cur)
+    if len(groups) < 2:
+        return rects
+    groups.sort(key=len, reverse=True)
+    rest = sum(len(g) for g in groups[1:])
+    return groups[0] if rest and len(groups[0]) >= ratio * rest else rects
+
+
+def table_like(rects, rect):
+    """Whether a band of drawing is a table's rules rather than artwork.
+
+    A table is drawn as a few long horizontal lines and nothing else. A chart has axes too,
+    but it also has the marks that carry the data: bars, points, curves. Counting what is
+    NOT a rule separates them. This matters because a caption takes the nearest band, and on
+    lags page 26 the caption sits between Table 9 and Figure 6 with the table 32 points away
+    and the plot 38, so /lags/ published its Table 9 as "Figure 6".
+    """
+    if not rects:
+        return False
+    def is_rule(r):
+        # A rule is a line: thin in one direction, whatever its length. Requiring it to
+        # span a quarter of the band missed lags' column rules, which are one cell tall
+        # (15 points) inside a 120-point table, so the table went on reading as a plot.
+        return r.height <= 2.5 or r.width <= 2.5
+
+    rules = sum(1 for r in rects if is_rule(r))
+    marks = len(rects) - rules
+    # A chart has axes too, but its data marks far outnumber its rules; a table is nearly
+    # all rules, with at most a box per row.
+    return rules >= 3 and marks <= rules
+
+
 def drawing_bands(page, bar_rows=None):
     """Contiguous vertical bands where the page draws, widest x-extent of each."""
     # Anything living entirely in the page's top or bottom margin is furniture: a rule under
@@ -103,7 +173,10 @@ def drawing_bands(page, bar_rows=None):
     rects = []
     for d in page.get_drawings():
         r = d["rect"]
-        if r.is_empty or r.is_infinite or furniture(r):
+        # NOT r.is_empty: a vertical line has zero width and PyMuPDF calls that empty, so
+        # this was throwing away every vertical rule on every page -- a table's column
+        # separators and a chart's y-axis alike. Only a point or an infinite box is useless.
+        if r.is_infinite or (r.width <= 0 and r.height <= 0) or furniture(r):
             continue
         # A single filled rectangle covering a quarter of the page is a background panel,
         # not artwork. /class/'s Figure 5 sits on one covering 41% of the page, and taking
@@ -136,8 +209,15 @@ def drawing_bands(page, bar_rows=None):
     bands.append(cur)
     boxes = []
     for b in bands:
-        boxes.append([fitz.Rect(min(r.x0 for r in b), min(r.y0 for r in b),
-                                max(r.x1 for r in b), max(r.y1 for r in b)), len(b)])
+        # Narrow the band to the dominant column of ink. A band is grouped by rows only, so
+        # on a two-column page a single stray drawing in the other column -- the rule of a
+        # displayed equation, in students' case -- stretches it across the page and the
+        # crop then takes the neighbouring text with it. Where one x-cluster holds nearly
+        # all the marks, that cluster is the artwork.
+        b = dominant_column(b)
+        rect = fitz.Rect(min(r.x0 for r in b), min(r.y0 for r in b),
+                         max(r.x1 for r in b), max(r.y1 for r in b))
+        boxes.append([rect, len(b), list(b)])
 
     # A flow diagram is boxes joined by arrows, and the blank between two of its rows can
     # be wider than the gap that separates two different objects. /inflation/'s PRISMA
@@ -148,31 +228,35 @@ def drawing_bands(page, bar_rows=None):
     # caption barrier is the load-bearing one. Without it /students/'s Figure 2 merged
     # straight through its own caption and notes and swallowed Figure 3 as well, which is
     # a worse failure than the clipping this merge exists to fix.
+    colw = column_width(page)
     prose_rows = list(bar_rows or [])
     for b in page.get_text("dict")["blocks"]:
         for line in b.get("lines", []):
             t = "".join(s["text"] for s in line["spans"]).strip()
             lr = fitz.Rect(line["bbox"])
-            if len(t) > 80 and lr.width > 0.45 * page.rect.width:
+            if len(t) > 60 and lr.width > 0.80 * colw:
                 prose_rows.append((lr.y0, lr.y1))
             elif re.match(r"^(?:FIGURE|Figure|Fig\.|F\s*I\s*G\s*U\s*R\s*E|TABLE|Table)\b", t):
                 prose_rows.append((lr.y0, lr.y1))
 
     merged = []
-    for rect, n in boxes:
+    for rect, n, tbl in boxes:
         if merged:
-            prev, pn = merged[-1]
+            prev, pn, ptbl = merged[-1]
             blocked = any(prev.y1 - 2 < y1 and y0 < rect.y0 + 2 for y0, y1 in prose_rows)
             overlap = min(prev.x1, rect.x1) - max(prev.x0, rect.x0)
             if (not blocked and rect.y0 - prev.y1 < 90
                     and overlap > 0.3 * min(prev.width, rect.width)):
-                merged[-1] = [fitz.Rect(prev) | rect, pn + n]
+                merged[-1] = [fitz.Rect(prev) | rect, pn + n, ptbl + tbl]
                 continue
-        merged.append([rect, n])
+        merged.append([rect, n, tbl])
     out = []
-    for rect, n in merged:
+    for rect, n, tbl in merged:
         if rect.height >= MIN_H and rect.height / page.rect.height >= MIN_FRAC:
-            out.append((rect, n))
+            # Judge table-or-artwork on the WHOLE merged band. Deciding per fragment and
+            # combining with "and" meant one small non-table piece cleared the flag, which
+            # is how lags' Table 9 kept winning its caption.
+            out.append((rect, n, table_like(tbl, rect)))
     return out
 
 
@@ -184,6 +268,17 @@ def grow_to_labels(page, rect, caption):
     caption itself and anything at or beyond the caption, which is where the figure ends.
     """
     grown = fitz.Rect(rect)
+    colw = column_width(page)
+    # Blocks of running prose, so the side-growth below can refuse them. On a two-column
+    # page the neighbouring column sits within reach of the artwork and satisfies every
+    # test for an axis label, which is how students' figures came out with a whole column
+    # of body text printed beside the chart.
+    prose_blocks = []
+    for _b in page.get_text("dict")["blocks"]:
+        _lines = _b.get("lines", [])
+        if any(len("".join(sp["text"] for sp in ln["spans"]).strip()) > 60
+               and fitz.Rect(ln["bbox"]).width > 0.80 * colw for ln in _lines):
+            prose_blocks.append(fitz.Rect(_b["bbox"]))
     # Where the notes under (or over) the artwork begin. Only the FIRST line of that block
     # says "Notes:"; its continuation lines are ordinary short prose and were being taken
     # for axis labels, so the crop kept two lines of the note and sliced the third. Treat
@@ -224,6 +319,8 @@ def grow_to_labels(page, rect, caption):
             # immediately to either side and spans the artwork vertically.
             beside = (abs(rect.x0 - lr.x1) < 34 or abs(lr.x0 - rect.x1) < 34) and \
                      lr.y1 > rect.y0 - 6 and lr.y0 < rect.y1 + 6
+            if beside and any(pb.intersects(lr) for pb in prose_blocks):
+                beside = False        # that is the next column, not this figure's scale
             overlap = min(lr.x1, rect.x1) - max(lr.x0, rect.x0)
             if overlap <= 0.35 * min(lr.width, rect.width) and not beside:
                 continue
@@ -282,12 +379,27 @@ def find(project, wanted=None):
                 bands = drawing_bands(page, [(r.y0, r.y1) for r in caps.values()])
                 if not bands:
                     continue
+                # Assign captions to bands ONE TO ONE while there are bands to go round.
+                # Taking each caption's nearest band independently let two captions claim
+                # the same drawing: on /education/'s page the box plot is 37 points from
+                # its caption and the four-panel grid below is 36, so Figure A2 was given
+                # A3's grid and A3's own band went unused. A caption sits beside its own
+                # figure, so competing claims are settled by which one is closer.
+                claimed = (assign_by_convention(caps, bands, wanted)
+                           or assign(caps, bands, wanted))
+
                 for num, crect in caps.items():
                     if wanted and num not in wanted:
                         continue
                     # the band whose edge is nearest the caption, above or below
                     best, bestd = None, 1e9
-                    for rect, n in bands:
+                    if num in claimed:
+                        rect, n, _t = bands[claimed[num]]
+                        # _dist already treats a caption that overlaps the band vertically
+                        # as distance zero, which is the sideways-figure case; recomputing
+                        # it here with a 2-D intersection lost esg's A1 and learning's A1.
+                        best, bestd = (rect, n), _dist(rect, crect)
+                    for rect, n, _t in ([] if best else bands):
                         # Vertical distance only. A caption is always beside its artwork
                         # horizontally, and asking for a 2-D intersection missed captions
                         # that sit level with a plot but outside its x-range -- which is
@@ -319,6 +431,8 @@ def find(project, wanted=None):
                     jobs.append(dict(project=project, fig=num, pdf=pdf, page=pno,
                                      rect=[round(v, 1) for v in rect],
                                      ops=best[1], gap=round(bestd, 1),
+                                     caption_x=round(crect.x0, 1),
+                                     caption_y=round(crect.y0, 1),
                                      frac=round(rect.height / page.rect.height, 3)))
         finally:
             doc.close()
@@ -327,7 +441,144 @@ def find(project, wanted=None):
     for j in jobs:
         if j["fig"] not in best or j["gap"] < best[j["fig"]]["gap"]:
             best[j["fig"]] = j
-    return [best[k] for k in sorted(best)]
+    return split_shared_bands(list(best.values()))
+
+
+def _dist(rect, crect):
+    if rect.y0 - 2 <= crect.y0 <= rect.y1 + 2 or rect.y0 - 2 <= crect.y1 <= rect.y1 + 2:
+        return 0.0
+    return min(abs(rect.y0 - crect.y1), abs(crect.y0 - rect.y1))
+
+
+def assign_by_convention(caps, bands, wanted):
+    """Assign captions to bands using the page's own caption convention.
+
+    A page is consistent about where it puts captions: /migrant/'s appendix sets them under
+    each figure, /electricity/ sets them over. Deciding per caption instead produced two
+    wrong answers at once -- /education/'s Figure A2 took the grid below it rather than the
+    box plot above, because the grid was one point nearer.
+
+    So score the whole page both ways and keep the better. Several captions may then land on
+    one band, which on /migrant/'s 2x2 pages is exactly right: the band is a ROW of two
+    figures, and split_shared_bands cuts it into columns by caption x.
+    """
+    # Score EVERY caption on the page, not just the ones asked for. The competition for a
+    # band is between all of them, so filtering first changes the answer: asking for
+    # education's A2 alone gave it A3's grid, while asking for A2 and A3 together gave the
+    # right one -- and rerunning a single figure is exactly how a fix gets applied.
+    names = list(caps)
+    if not names or not bands:
+        return {}
+
+    def score(below):
+        # below=True: the caption sits under its figure, so look for a band ABOVE it
+        out, total = {}, 0.0
+        for n in names:
+            c = caps[n]
+            cands = []
+            for bi, (r, _, _t) in enumerate(bands):
+                # A sideways figure has a sideways caption, whose box then sits INSIDE the
+                # drawing's band rather than above or below it. /esg/'s A1 and /learning/'s
+                # A1 are both like that, and requiring a side lost them entirely.
+                # A table's rules are drawings too, and on lags page 26 the table is
+                # nearer the caption than the plot. A Figure caption should not own one
+                # unless there is nothing else on the page.
+                penalty = 400.0 if bands[bi][2] else 0.0
+                if r.y0 <= c.y0 and c.y1 <= r.y1:
+                    cands.append((penalty, bi))
+                    continue
+                d = (c.y0 - r.y1) if below else (r.y0 - c.y1)
+                if d >= -2:
+                    cands.append((max(d, 0.0) + penalty, bi))
+            if not cands:
+                return None, 1e18
+            d, bi = min(cands)
+            if d > 230 + (400.0 if bands[bi][2] else 0.0):
+                return None, 1e18
+            out[n], total = bi, total + d
+        return out, total
+
+    a, sa = score(True)
+    b, sb = score(False)
+    if a is None and b is None:
+        return {}
+    return a if (b is None or sa <= sb) else b
+
+
+def assign(caps, bands, wanted):
+    """Match captions to bands one-to-one, minimising total distance.
+
+    Taking the nearest band per caption independently is not enough, and choosing greedily
+    in distance order is not either: on /education/'s page Figure A2's caption is 36 points
+    from A3's grid and 37 from its own box plot, so the greedy pass spends the grid on A2
+    and leaves A3 with a band 451 points away, which is no assignment at all. Costing the
+    whole arrangement picks 37 + 38 over 36 + 451.
+
+    Pages here have a handful of figures, so the arrangements can simply be enumerated.
+    Above that it falls back to nearest-first, which is what it always did.
+    """
+    import itertools
+    names = list(caps)
+    if not names or not bands:
+        return {}
+    cost = {(n, bi): _dist(bands[bi][0], caps[n]) + (400.0 if bands[bi][2] else 0.0)
+        for n in names
+            for bi in range(len(bands))}
+    k = min(len(names), len(bands))
+    if len(names) <= 6 and len(bands) <= 6:
+        best, bestsum = None, None
+        for combo in itertools.permutations(range(len(bands)), k):
+            for pick in itertools.combinations(range(len(names)), k):
+                tot = sum(cost[(names[pick[i]], combo[i])] for i in range(k))
+                if bestsum is None or tot < bestsum:
+                    bestsum = tot
+                    best = {names[pick[i]]: combo[i] for i in range(k)}
+        return {n: bi for n, bi in (best or {}).items() if cost[(n, bi)] <= 230}
+    out, used = {}, set()
+    for dist, n, bi in sorted((cost[(n, bi)], n, bi) for n in names
+                              for bi in range(len(bands))):
+        if n in out or bi in used or dist > 230:
+            continue
+        out[n], _ = bi, used.add(bi)
+    return out
+
+
+def split_shared_bands(jobs):
+    """Give each figure its own half when two captions picked the same drawing.
+
+    A paper that prints two figures side by side, or one above the other, puts both
+    captions beside a single block of drawing, and the nearest-band rule then hands both
+    of them the same crop. Twelve figures on this site were published that way: migrant's
+    B1 and B2 were one image showing both, and so on through B15/B16.
+
+    Which way to cut is in the captions themselves. Side-by-side captions differ in x, so
+    the figures are columns; stacked captions differ in y, so they are rows. Order the
+    captions along that axis and give each an equal share, because a figure and its own
+    caption line up on it.
+    """
+    by_band = {}
+    for j in jobs:
+        key = (j["pdf"], j["page"], tuple(round(v) for v in j["rect"]))
+        by_band.setdefault(key, []).append(j)
+    for key, group in by_band.items():
+        if len(group) < 2:
+            continue
+        x0, y0, x1, y1 = key[2]
+        cx = [j["caption_x"] for j in group]
+        cy = [j["caption_y"] for j in group]
+        horizontal = (max(cx) - min(cx)) >= (max(cy) - min(cy))
+        group.sort(key=lambda j: j["caption_x"] if horizontal else j["caption_y"])
+        n = len(group)
+        for i, j in enumerate(group):
+            if horizontal:
+                w = (x1 - x0) / n
+                j["rect"] = [x0 + i * w, y0, x0 + (i + 1) * w, y1]
+            else:
+                h = (y1 - y0) / n
+                j["rect"] = [x0, y0 + i * h, x1, y0 + (i + 1) * h]
+            j["shared"] = n
+    return [j for k in sorted({j["fig"] for j in jobs})
+            for j in jobs if j["fig"] == k]
 
 
 def crop_baked_notes(path):
@@ -404,6 +655,7 @@ def clear_of_text(page, rect, band):
     """
     head_y = page.rect.y0 + page.rect.height * 0.11
     foot_y = page.rect.y1 - page.rect.height * 0.07
+    colw = column_width(page)
     out = fitz.Rect(rect)
     for b in page.get_text("dict")["blocks"]:
         # A paragraph's LAST line is short, and judging lines one at a time let those
@@ -411,8 +663,8 @@ def clear_of_text(page, rect, band):
         # the tail of the paragraph above it. If any line of a block is full-measure prose,
         # every line of that block is prose.
         block_is_prose = any(
-            len("".join(s["text"] for s in ln["spans"]).strip()) > 80
-            and fitz.Rect(ln["bbox"]).width > 0.35 * page.rect.width
+            len("".join(s["text"] for s in ln["spans"]).strip()) > 60
+            and fitz.Rect(ln["bbox"]).width > 0.80 * colw
             for ln in b.get("lines", []))
         for line in b.get("lines", []):
             t = "".join(s["text"] for s in line["spans"]).strip()
@@ -430,6 +682,10 @@ def clear_of_text(page, rect, band):
                 out.y0 = min(lr.y1 + 2, band.y0)
             elif lr.y0 >= band.y1 and out.y1 > lr.y0:        # sits below it
                 out.y1 = max(lr.y0 - 2, band.y1)
+            elif prose and lr.x1 <= band.x0 and out.x0 < lr.x1:   # the column to its left
+                out.x0 = min(lr.x1 + 2, band.x0)
+            elif prose and lr.x0 >= band.x1 and out.x1 > lr.x0:   # or to its right
+                out.x1 = max(lr.x0 - 2, band.x1)
     return out
 
 
