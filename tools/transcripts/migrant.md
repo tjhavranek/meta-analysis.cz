@@ -128,7 +128,7 @@ TABLE 1. Summary statistics for different subsets of the literature
 | Top 5 journals | 64 | -0.04 | 26.0 | -0.05 | -0.03 | -0.04 | 26.3 | -0.05 | -0.03 |
 Notes: The exact definition of the variables is available in Table B1. Weighted = coefficients are weighted by the inverse of the number of estimates reported per study. The column $\sigma$ depicts implied elasticity computed as $\sigma = -1/mean$ using the coefficient values prior to rounding. Thus, it may not perfectly correspond to the rounded mean values presented in the table. $N$ is the number of observations per sample. No winsorization needed.
 
-FIGURE 1 (no artwork). Box plot of negative inverse elasticity across studies
+FIGURE 1. Box plot of negative inverse elasticity across studies
 
 Notes: $-1/\sigma = \theta$, i.e., the reported coefficient. The length of each box represents the interquartile range (P25–P75), and the dividing line inside the box is the median value. The whiskers represent the highest and lowest data points within 1.5 times the range between the upper and lower quartiles. The dots show the outlying estimates with extreme values stacked at the values denoted as "outliers". The red vertical line presents the unweighted mean of all reported coefficients ($-0.075$).
 
@@ -140,7 +140,7 @@ A funnel plot, developed by Egger et al. (1997), is a scatter diagram that plots
 
 Figure 2 reveals noticeable asymmetry, with a longer left tail suggesting that studies reporting more negative coefficients are overrepresented. The gap between the simple mean of the coefficients ($-0.075$, implying $\sigma \approx 13.3$) and the Unrestricted Weighted Least Squares (UWLS) coefficient ($-0.047$, implying $\sigma \approx 21.3$) is indicative of selective reporting. Following Stanley et al. (2023), we use the UWLS as a robust benchmark for the precision-weighted average. The precision-weighted average is meaningfully smaller in magnitude than the unweighted average, suggesting that the most negative results are concentrated among the least precise coefficients. However, because graphical interpretations and simple weighting can only be indicative of the underlying selection process, we employ formal meta-regression techniques to quantify the extent of publication selection bias and recover a bias-corrected coefficient, which serves as the basis for our implied elasticity estimates.
 
-FIGURE 2 (no artwork). Funnel plot suggests asymmetry among coefficients
+FIGURE 2. Funnel plot suggests asymmetry among coefficients
 
 Notes: The vertical lines represent the unweighted arithmetic mean of the estimates ($-0.0749$) and the precision-weighted average ($-0.0470$), calculated via Unrestricted Weighted Least Squares (UWLS). SE denotes the standard error. For visual clarity, the plot excludes 26 outlying estimates with values below $-0.5$.
 

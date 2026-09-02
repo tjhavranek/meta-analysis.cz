@@ -133,6 +133,26 @@ def dominant_column(rects, gutter=25.0, ratio=5.0):
     return groups[0] if rest and len(groups[0]) >= ratio * rest else rects
 
 
+def has_curve(drawings):
+    """True if anything here is drawn as a many-segment path, i.e. a plotted line.
+
+    A table is straight rules and nothing else. A chart of a flat series is ALSO mostly
+    straight lines with few marks, which made substitution's convergence panels read as
+    tables and cost them their captions. What separates them is that the chart contains a
+    path with many segments in it; a rule has one or two.
+    """
+    for d in drawings or ():
+        if d is None:
+            # a raster's rectangle has no drawing record; an embedded image is artwork
+            return True
+        if len(d.get("items") or ()) > 12:
+            return True
+        for it in (d.get("items") or ()):
+            if it and it[0] == "c":          # a bezier: no table draws one
+                return True
+    return False
+
+
 def table_like(rects, rect):
     """Whether a band of drawing is a table's rules rather than artwork.
 
@@ -170,6 +190,7 @@ def drawing_bands(page, bar_rows=None):
         return r.y1 <= head_y or r.y0 >= foot_y
 
     parea = (page.rect.width * page.rect.height) or 1.0
+    owner = {}
     rects = []
     for d in page.get_drawings():
         r = d["rect"]
@@ -185,6 +206,7 @@ def drawing_bands(page, bar_rows=None):
         if d.get("type") == "f" and (r.width * r.height) / parea > 0.25:
             continue
         rects.append(r)
+        owner[id(r)] = d
     for img in page.get_images(full=True):
         try:
             for r in page.get_image_rects(img[0]):
@@ -256,7 +278,9 @@ def drawing_bands(page, bar_rows=None):
             # Judge table-or-artwork on the WHOLE merged band. Deciding per fragment and
             # combining with "and" meant one small non-table piece cleared the flag, which
             # is how lags' Table 9 kept winning its caption.
-            out.append((rect, n, table_like(tbl, rect)))
+            drawings = [owner.get(id(r)) for r in tbl]
+            out.append((rect, n,
+                        table_like(tbl, rect) and not has_curve(drawings)))
     return out
 
 
@@ -422,11 +446,27 @@ def find(project, wanted=None):
                     # Stop cleanly at any caption on the page, its own included. The pad
                     # above was reaching into the caption line and slicing the tops off its
                     # letters, which looks like a broken image rather than a tight crop.
+                    # A caption is never part of the artwork, so the crop stops at it even
+                    # where the drawing band runs on past it -- which happens whenever a
+                    # background panel or an axis rule is drawn the full height of the
+                    # float. Requiring the caption to sit clear of the band, as this once
+                    # did, let it through on /risk/'s Figures 3 and 4, /bma/'s B1 and
+                    # /migrant/'s A2, each of which shipped with a strip of its own caption
+                    # baked into the picture.
+                    mid = 0.5 * (best[0].y0 + best[0].y1)
                     for cr in caps.values():
-                        if cr.y1 <= best[0].y0 and rect.y0 < cr.y1:
-                            rect.y0 = min(cr.y1 + 2, best[0].y0)
-                        elif cr.y0 >= best[0].y1 and rect.y1 > cr.y0:
-                            rect.y1 = max(cr.y0 - 2, best[0].y1)
+                        if caption_rotation(page, cr) not in (0, None):
+                            continue          # a sideways caption sits beside the artwork
+                        if cr.x1 < rect.x0 or cr.x0 > rect.x1:
+                            continue          # a caption in the other column
+                        if cr.y1 <= mid:
+                            edge = cr.y1 + 2
+                            if edge < rect.y1 - 40:
+                                rect.y0 = max(rect.y0, edge)
+                        elif cr.y0 >= mid:
+                            edge = cr.y0 - 2
+                            if edge > rect.y0 + 40:
+                                rect.y1 = min(rect.y1, edge)
                     rect = clear_of_text(page, rect, best[0])
                     jobs.append(dict(project=project, fig=num, pdf=pdf, page=pno,
                                      rect=[round(v, 1) for v in rect],
@@ -620,25 +660,56 @@ def crop_baked_notes(path):
     return True
 
 
-def pixel_rotation(path):
-    """90 if the image's own text runs sideways, else 0.
+# A bitmap can be saved on its side and then placed in an upright float. The page says
+# upright, the placement matrix says upright, and the picture is still sideways, because it
+# was sideways before it ever reached the PDF. Nothing in the file records that, so the one
+# figure in this corpus where it happens is written down here, confirmed by eye. It replaces
+# a pixel test that tried to infer it -- which axis of the image flips between ink and blank
+# more often -- and that test put six upright figures on their sides before it was removed:
+# a box plot with study names set vertically looks, to it, exactly like a rotated page.
+SIDEWAYS_BITMAP = {("armington", "4"): 90}
 
-    text_rotation() asks the page, which settles it whenever the labels are real text. When
-    the figure is a single raster with everything baked in, the page has nothing to say, so
-    ask the pixels: a stack of text lines flips between inked and blank rows many times over
-    and along its writing direction hardly at all, so the axis with far more flips is across
-    the lines.
+
+def raster_rotation(page, rect):
+    """How the biggest image inside the crop is placed, or None if the crop has no image.
+
+    A placed image carries the matrix that puts it on the page, and a quarter turn shows up
+    there exactly: the diagonal terms go to zero and the off-diagonal ones do the work. This
+    is a fact recorded in the file, not an inference.
     """
-    from PIL import Image
-    import numpy as np
-    dark = np.asarray(Image.open(path).convert("L")) < 170
-    if dark.shape[0] < 40 or dark.shape[1] < 40:
+    r = fitz.Rect(*rect)
+    best, area = None, 0.0
+    for im in page.get_image_info():
+        hit = fitz.Rect(im["bbox"]) & r
+        if not hit.is_empty and hit.get_area() > area:
+            best, area = im, hit.get_area()
+    if best is None or area < 0.5 * (r.get_area() or 1):
+        return None
+    a, b, c, d = best["transform"][:4]
+    if abs(a) > abs(b) and abs(d) > abs(c):
         return 0
-    rows = dark.any(axis=1).astype(np.int8)
-    cols = dark.any(axis=0).astype(np.int8)
-    rf = np.abs(np.diff(rows)).sum() / len(rows)
-    cf = np.abs(np.diff(cols)).sum() / len(cols)
-    return 90 if cf > max(3 * rf, 0.01) else 0
+    return 90 if b < 0 else 270
+
+
+def caption_rotation(page, crect):
+    """Which way the figure's own caption runs, or None if there is no caption to read.
+
+    The caption belongs to the float, so a figure printed sideways carries its caption
+    sideways with it. That makes the caption the plainest statement of the float's
+    orientation the page has, and unlike the artwork it is always real text.
+    """
+    if crect is None:
+        return None
+    votes = {}
+    for b in page.get_text("dict")["blocks"]:
+        for line in b.get("lines", []):
+            if not fitz.Rect(crect).intersects(fitz.Rect(line["bbox"])):
+                continue
+            dx, dy = line.get("dir", (1, 0))
+            n = len("".join(s["text"] for s in line["spans"]).strip())
+            key = 0 if abs(dx) > 0.7 else (90 if dy < -0.7 else 270)
+            votes[key] = votes.get(key, 0) + n
+    return max(votes, key=votes.get) if votes else None
 
 
 def clear_of_text(page, rect, band):
@@ -711,7 +782,11 @@ def text_rotation(page, rect):
             elif dy > 0.7:
                 votes[270] = votes.get(270, 0) + n
     if not votes:
-        return 0
+        # None, not 0: the page has no text here to judge by, which is a different answer
+        # from "the text here is upright" and the only case where the pixel test should get
+        # a say. Returning 0 for both let the pixel test overrule perfectly upright figures
+        # -- it turned /risk/'s Figure 2 on its side, and five others with it.
+        return None
     best = max(votes, key=votes.get)
     # only turn it when the sideways text clearly dominates
     if best == "up" or votes[best] < 2 * votes.get("up", 0):
@@ -731,7 +806,24 @@ def render(job, dpi=200):
         # Order matters: read the rotation BEFORE cutting anything off. On a raster figure
         # the sideways notes column carries most of the evidence for which way is up, so
         # cropping it first leaves nothing to judge by.
-        angle = text_rotation(page, job["rect"]) or pixel_rotation(path)
+        #
+        # Everything consulted here is recorded in the PDF. An earlier version fell back to
+        # a pixel test -- which axis of the image flips between ink and blank more often --
+        # and it was wrong far more often than it was right: it turned /risk/'s Figure 2,
+        # /education/'s A1 and four others onto their sides, because a box plot with study
+        # names set vertically looks, to that test, exactly like a page printed sideways.
+        # In order of how directly each one answers the question. The figure's own labels
+        # settle it whenever they are real text; a figure drawn entirely in vector strokes
+        # has none, and then the file still records how its bitmap was placed and which way
+        # its caption runs, both of which turn with the float.
+        angle = SIDEWAYS_BITMAP.get((job["project"], job["fig"]))
+        if angle is None:
+            angle = text_rotation(page, job["rect"])
+        if angle is None:
+            angle = raster_rotation(page, job["rect"])
+        if angle is None:
+            angle = caption_rotation(page, caption_rects(page).get(job["fig"]))
+        angle = angle or 0
         crop_baked_notes(path)
         if angle:
             from PIL import Image as _I

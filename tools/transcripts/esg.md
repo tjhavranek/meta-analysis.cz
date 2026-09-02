@@ -647,7 +647,7 @@ Notes: Estimates from the interacted FAT-PET regression $E_{is} = \beta_0 + \bet
 
 ## Appendix C
 
-FIGURE C1 (no artwork). Correlations between potential predictors of heterogeneity
+FIGURE C1. Correlations between potential predictors of heterogeneity
 
 Notes: The figure displays correlation coefficients for variables used in heterogeneity analysis.
 

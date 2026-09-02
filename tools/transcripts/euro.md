@@ -332,7 +332,7 @@ precision of the estimate (1/SE)
 
 −1 −.5 0 .5 1 corrected estimate of gamma
 
-FIGURE 5 (no artwork). Funnel plot corrected for publication bias, all studies
+FIGURE 5. Funnel plot corrected for publication bias, all studies
 
 ## References
 

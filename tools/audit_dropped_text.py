@@ -88,6 +88,41 @@ def splices(raw, before, after):
     return not re.search(r"[.!?:;]|\n\s*\n", m.group("join"))
 
 
+FLOAT = re.compile(r"^\s*(table|figure|fig\.|appendix|notes?|source|panel|references|"
+                   r"acknowledg|supplementary|keywords|jel|annex)\b", re.I)
+
+
+def is_float(verbatim):
+    """Whether a block is a table or figure the transcript renders in its own right.
+
+    These dominate what the block channel reports and none of them is a defect: a table's
+    body is not prose the page lost, it is prose the page never carried as prose. Two marks
+    give them away -- the paper's own label at the start of the block, and a density of
+    numbers no paragraph reaches.
+    """
+    if FLOAT.match(verbatim):
+        return True
+    toks = verbatim.split()
+    return bool(toks) and sum(1 for t in toks if re.search(r"\d", t)) > 0.18 * len(toks)
+
+
+def elsewhere(flat, run):
+    """Whether this run is in the transcript after all, somewhere the alignment did not look.
+
+    A transcript does not follow the PDF's reading order: it gathers footnotes into endnotes
+    and moves a table out of the middle of a paragraph. The alignment is a single pass, so
+    anything moved reads as deleted here and inserted there, and every large block it
+    reported this way turned out to be present -- an entire section of /incentives/ among
+    them. Taking a phrase from the middle of the run and looking for it in the whole
+    transcript settles it: found means moved, not lost.
+    """
+    if len(run) < 12:
+        return False
+    mid = len(run) // 2
+    probe = " ".join(run[max(0, mid - 6):mid + 6])
+    return probe in flat
+
+
 def pdf_words(pdfs):
     """Lower-cased words, plus the source text and each word's offset into it.
 
@@ -122,8 +157,9 @@ def audit(project, minrun):
     b = [w.lower() for w in WORD.findall(raw)]
     if not a or not b:
         return None
+    flat = " ".join(b)
     sm = difflib.SequenceMatcher(a=a, b=b, autojunk=False)
-    hits = []
+    hits, blocks = [], []
     for tag, i1, i2, j1, j2 in sm.get_opcodes():
         if tag not in ("delete", "replace") or (i2 - i1) < minrun:
             continue
@@ -139,6 +175,16 @@ def audit(project, minrun):
         # renders tables as tables and drops page furniture on purpose, so those are
         # expected and huge. What matters is a CLAUSE lost mid-sentence.
         if (i2 - i1) > 60:
+            # Too big to be a lost clause, but a lost PARAGRAPH looks exactly like this and
+            # would otherwise never be reported. It cannot be found by the splice test,
+            # because a whole paragraph goes missing between two complete sentences. So it
+            # is collected separately, on the weaker evidence that it reads as prose, and
+            # reported for a human to look at rather than repaired.
+            v = re.sub(r"\s+", " ", src[spans[i1][0]:spans[i2 - 1][1]]).strip()
+            if (reads_as_prose(a[i1:i2]) and not elsewhere(flat, a[i1:i2])
+                    and not is_float(v)):
+                blocks.append({"n": i2 - i1, "before": before, "after": after,
+                               "verbatim": v})
             continue
         # The test that separates damage from an intended omission: does the transcript
         # now run the two sides together WITHOUT a sentence boundary? "Panel (b) in" +
@@ -154,8 +200,9 @@ def audit(project, minrun):
         hits.append({"n": i2 - i1, "dropped": " ".join(run)[:200], "verbatim": verbatim,
                      "before": before, "after": after})
     hits.sort(key=lambda h: -h["n"])
+    blocks.sort(key=lambda h: -h["n"])
     return {"project": project, "pdf_words": len(a), "transcript_words": len(b),
-            "hits": hits}
+            "hits": hits, "blocks": blocks}
 
 
 def main(argv):
@@ -166,17 +213,18 @@ def main(argv):
         i = argv.index("--json"); jpath = argv[i + 1]; argv = argv[:i] + argv[i + 2:]
     projects = argv or sorted(p for p in PAPERS
                               if os.path.exists(os.path.join(TRANSCRIPTS, "%s.md" % p)))
-    out, total = [], 0
+    out, total, big = [], 0, 0
     for p in projects:
         try:
             r = audit(p, minrun)
         except Exception as exc:
             print("%-22s ERROR %s" % (p, str(exc)[:60]))
             continue
-        if not r or not r["hits"]:
+        if not r or not (r["hits"] or r["blocks"]):
             continue
         out.append(r)
         total += len(r["hits"])
+        big += len(r["blocks"])
     out.sort(key=lambda r: -len(r["hits"]))
     print("%d paper(s) with a dropped run of %d+ words inside prose; %d run(s) total\n"
           % (len(out), minrun, total))
@@ -186,6 +234,18 @@ def main(argv):
             print("     %d words missing between %r and %r" % (h["n"], h["before"][-46:],
                                                                h["after"][:46]))
             print("        dropped: %s" % h["dropped"][:150])
+    if big:
+        print("\n%d block(s) of 60+ words that read as prose, for a human to look at.\n"
+              "A lost clause splices two sentences and can be repaired mechanically; a lost\n"
+              "PARAGRAPH falls between two whole sentences and cannot, so these are only\n"
+              "reported. Most are legitimate: an abstract the page carries once, a footnote,\n"
+              "a table note. Read them against the transcript before concluding anything.\n"
+              % big)
+        for r in out:
+            for h in r["blocks"][:3]:
+                print("%-22s %d words between %r and %r" % (r["project"], h["n"],
+                                                            h["before"][-40:], h["after"][:40]))
+                print("        %s" % h["verbatim"][:160])
     if jpath:
         json.dump(out, open(jpath, "w", encoding="utf-8"), indent=1)
         print("\nwritten to %s" % jpath)

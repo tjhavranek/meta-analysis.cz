@@ -493,7 +493,7 @@ We also attempted a p-curve analysis following Simonsohn et al. (2014), which te
 
 ### C.1 Figures
 
-FIGURE C1 (no artwork). Caliper test for excess bunching around the significance threshold $z = -1.96$. Notes: Shaded regions indicate the ±0.10 caliper window. Red bars denote estimates inside the threshold (significant); blue bars denote estimates outside (non-significant).
+FIGURE C1. Caliper test for excess bunching around the significance threshold $z = -1.96$. Notes: Shaded regions indicate the ±0.10 caliper window. Red bars denote estimates inside the threshold (significant); blue bars denote estimates outside (non-significant).
 
 FIGURE C2. *P*-curve distribution. Notes: The grey bar denotes *p*-values that underflow numerically to zero ($n = 61$). The dominance of the [.00, .01) bin reflects the extremely large sample sizes in the literature rather than the evidential strength of individual studies.
 
