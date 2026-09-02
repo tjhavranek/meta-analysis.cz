@@ -1830,7 +1830,7 @@ We use unweighted data to estimate the baseline but later provide weighted alter
 
 Fig. 4 visualizes the results of Bayesian model averaging. The columns of the figure denote the individual regression models, and the column width indicates the posterior model probability. The columns are sorted by posterior model probability from left to right. The rows of the figure denote individual variables included in each model. The variables are ordered by their posterior inclusion probability from top to bottom in descending order. If a variable is excluded from the model, the corresponding cell is left blank. Otherwise, the blue color (darker in grayscale) indicates a positive sign of the variable's coefficient in the particular model; the red color (lighter in grayscale) indicates a negative sign. Fig. 4 shows that approximately half of our variables are included in the best models, and the signs of these variables are robust across specifications.
 
-FIGURE 4 (no artwork). Model inclusion in Bayesian model averaging.
+FIGURE 4. Model inclusion in Bayesian model averaging.
 
 Notes: The figure depicts the results of Bayesian model averaging with the unit information prior recommended by Eicher et al. (2011) and dilution prior suggested by George (2010), which addresses collinearity. On the vertical axis, the explanatory variables are ranked according to their posterior inclusion probabilities from the highest at the top to the lowest at the bottom. The horizontal axis shows the values of the cumulative posterior model probability for each model ranked from the highest on the left to the lowest on the right. All variables are described in Table A.1. Numerical results are reported in Table 3. The blue color (darker in grayscale) means that the estimated parameter of the corresponding explanatory variable is positive. The red color (lighter in grayscale) indicates that the estimated parameter is negative. No color denotes that the corresponding explanatory variable is not included in the model. The robustness checks in which the specification is weighted by the number of estimates reported per study and by the standard error of the estimate are provided in Table B2 in the online appendix at meta-analysis.cz/armington. Detailed diagnostics are provided in Table B1 and Fig. B1 in the online appendix.
 
@@ -5934,7 +5934,7 @@ TABLE 7. Why estimates of the class size effect vary
 | Observations | 2,434 | | | 2,434 | | |
 Notes: The response variable is the estimate of the effect of class size on achievement normalized to represent the change in hundredths of a standard deviation in test scores corresponding to an increase in class size by one student. SE = standard error, P. mean = posterior mean, P. SD = posterior standard deviation, PIP = posterior inclusion probability. In the left-hand part of the table we employ Bayesian model averaging (BMA) using the g-prior and model prior recommended by Eicher *et al.* (2011) and additionally the dilution prior suggested by George (2010). The specification in the right-hand part of the table employs ordinary least squares (OLS) using variables with at least 50% PIP in BMA. The posterior mean in Bayesian model averaging (or alternatively the estimated coefficient in the frequentist model) denotes the marginal effect of a study characteristic on the effect reported in the literature. For a detailed description of all the variables see Table 6; for details on the BMA procedure see Table B7 and Figure B6 in Online Appendix B.
 
-FIGURE 5 (no artwork). Posterior coefficient distributions for selected variables
+FIGURE 5. Posterior coefficient distributions for selected variables
 
 Notes: The figure depicts the posterior coefficient distributions of the regression coefficients corresponding to selected variables in the baseline BMA estimation. For instance, the coefficient corresponding to *STAR experiment* is negative and substantially far from zero in all models irrespective of other variables being included or ignored.
 
@@ -6710,7 +6710,7 @@ Figure 5 shows the results of the BMA exercise. The columns in the figure denote
 
 The numerical results of the BMA exercise are reported in Table 5. On the right-hand side of the table we also report the results of OLS estimation with standard errors clustered at the level of individual studies. From this 'frequentist check' we exclude the variables that prove to be irrelevant for the explanation of the variability in the literature (i.e. have PIP lower than 0.5). The OLS regression thus includes 15 variables identified by BMA to help explain the variation in the reported competition effects. Overall, OLS with clustered standard errors yields results consistent with BMA for variables with high inclusion probabilities. The signs of the variables' regression parameters are the same and the size of their parameter estimates is similar as well. Therefore, we can conclude that our results are robust to error-clustering, as BMA by definition does not cluster standard errors in the estimation. Eicher et al. (2011) provide a framework for the identification of the strength of the variables' effect in BMA. The effect of a variable is considered weak if the corresponding PIP is between 0.5 and 0.75, substantial if it is between 0.75 and 0.95, strong if it is between 0.95 and 0.99, and decisive if it exceeds 0.99.
 
-FIGURE 5 (no artwork). Bayesian Model Averaging – Model Inclusion. Notes: The response variable is the PCC of the estimate of the competition coefficient [the PCC of the $\beta$ estimate from Equation (1)]. All regressions are weighted by the inverse of the number of estimates reported per study. Columns denote individual models; the variables are sorted by posterior inclusion probability in descending order. Blue colour (darker in grayscale) = the variable is included and the estimated sign is positive. Red colour (lighter in grayscale) = the variable is included and the estimated sign is negative. No colour = the variable is not included in the model. The horizontal axis measures the cumulative posterior model probabilities. Numerical results of the BMA estimation are reported in Table 5. A detailed description of all the variables is available in Table 4.
+FIGURE 5. Bayesian Model Averaging – Model Inclusion. Notes: The response variable is the PCC of the estimate of the competition coefficient [the PCC of the $\beta$ estimate from Equation (1)]. All regressions are weighted by the inverse of the number of estimates reported per study. Columns denote individual models; the variables are sorted by posterior inclusion probability in descending order. Blue colour (darker in grayscale) = the variable is included and the estimated sign is positive. Red colour (lighter in grayscale) = the variable is included and the estimated sign is negative. No colour = the variable is not included in the model. The horizontal axis measures the cumulative posterior model probabilities. Numerical results of the BMA estimation are reported in Table 5. A detailed description of all the variables is available in Table 4.
 
 The results of our BMA exercise support the notion of the presence of publication bias (the regression coefficient on the standard error is similar to the one presented in Section 4); it seems that positive and insignificant estimates are underreported in the literature, because researchers tend to prefer results that are consistent with the competition-fragility hypothesis. Next, the larger the size of the data sample, the smaller the reported coefficient appears to be. As for country coverage, it seems that the estimates for developed countries tend to be slightly larger than those for non-OECD countries. The use of a quadratic relationship between competition and financial stability is associated with estimates that are on average 0.05 smaller, and the corresponding variable has a decisive posterior inclusion probability. Interestingly, the choice between micro and macro data in specifying the empirical exercise in primary studies does not influence the results significantly.
 
@@ -7283,7 +7283,7 @@ TABLE A2. Summary of BMA Estimation, Alternative Priors
 | random / 17.5 | | BRIC | | Av = 0.9992 |
 *Notes*: The “random” model prior refers to the beta-binomial prior used by Ley and Steel (2009): the prior model probabilities are the same for all possible model sizes. In this specification, we set Zellner’s *g* prior in line with Fernandez *et al.* (2001).
 
-FIGURE A2 (no artwork). Model Size and Convergence, Alternative Priors.
+FIGURE A2. Model Size and Convergence, Alternative Priors.
 
 TABLE A3. Summary of BMA Estimation, Unweighted Regressions
 | Mean No. Regressors | Draws | Burnins | Time | No. Models Visited |
@@ -7295,7 +7295,7 @@ TABLE A3. Summary of BMA Estimation, Unweighted Regressions
 | uniform / 17.5 | | UIP | | Av = 0.9983 |
 *Notes*: In this specification, we employ the priors suggested by Eicher *et al.* (2011) based on predictive performance: the uniform model prior (each model has the same prior probability) and the unit information prior (the prior provides the same amount of information as one observation of data).
 
-FIGURE A3 (no artwork). Model Size and Convergence, Unweighted Regressions.
+FIGURE A3. Model Size and Convergence, Unweighted Regressions.
 
 #### Supporting Information
 
@@ -13996,7 +13996,7 @@ TABLE A1. Summary of main BMA estimation
 | Uniform | UIP | Av = 0.9977 | | |
 *Notes*: We employ the priors suggested by Eicher *et al.* (2011), who recommend using the uniform model prior (each model has the same prior probability) and the unit information prior (the prior provides the same amount of information as one observation in the data). The results of this Bayesian model averaging (BMA) exercise are reported in Table 5.
 
-FIGURE A1 (no artwork). Estimates of the tuition–enrolment nexus vary within and across studies *Notes*: The figure shows a box plot of the partial correlation coefficients capturing the relationship between tuition and the demand for higher education reported in individual studies.
+FIGURE A1. Estimates of the tuition–enrolment nexus vary within and across studies *Notes*: The figure shows a box plot of the partial correlation coefficients capturing the relationship between tuition and the demand for higher education reported in individual studies.
 
 FIGURE A2. Estimates of the elasticity vary across different countries *Notes*: The figure shows a box plot of the partial correlation coefficients capturing the relationship between tuition and the demand for higher education reported for individual countries.
 

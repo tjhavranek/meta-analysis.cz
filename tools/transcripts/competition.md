@@ -279,7 +279,7 @@ Figure 5 shows the results of the BMA exercise. The columns in the figure denote
 
 The numerical results of the BMA exercise are reported in Table 5. On the right-hand side of the table we also report the results of OLS estimation with standard errors clustered at the level of individual studies. From this 'frequentist check' we exclude the variables that prove to be irrelevant for the explanation of the variability in the literature (i.e. have PIP lower than 0.5). The OLS regression thus includes 15 variables identified by BMA to help explain the variation in the reported competition effects. Overall, OLS with clustered standard errors yields results consistent with BMA for variables with high inclusion probabilities. The signs of the variables' regression parameters are the same and the size of their parameter estimates is similar as well. Therefore, we can conclude that our results are robust to error-clustering, as BMA by definition does not cluster standard errors in the estimation. Eicher et al. (2011) provide a framework for the identification of the strength of the variables' effect in BMA. The effect of a variable is considered weak if the corresponding PIP is between 0.5 and 0.75, substantial if it is between 0.75 and 0.95, strong if it is between 0.95 and 0.99, and decisive if it exceeds 0.99.
 
-FIGURE 5 (no artwork). Bayesian Model Averaging – Model Inclusion. Notes: The response variable is the PCC of the estimate of the competition coefficient [the PCC of the $\beta$ estimate from Equation (1)]. All regressions are weighted by the inverse of the number of estimates reported per study. Columns denote individual models; the variables are sorted by posterior inclusion probability in descending order. Blue colour (darker in grayscale) = the variable is included and the estimated sign is positive. Red colour (lighter in grayscale) = the variable is included and the estimated sign is negative. No colour = the variable is not included in the model. The horizontal axis measures the cumulative posterior model probabilities. Numerical results of the BMA estimation are reported in Table 5. A detailed description of all the variables is available in Table 4.
+FIGURE 5. Bayesian Model Averaging – Model Inclusion. Notes: The response variable is the PCC of the estimate of the competition coefficient [the PCC of the $\beta$ estimate from Equation (1)]. All regressions are weighted by the inverse of the number of estimates reported per study. Columns denote individual models; the variables are sorted by posterior inclusion probability in descending order. Blue colour (darker in grayscale) = the variable is included and the estimated sign is positive. Red colour (lighter in grayscale) = the variable is included and the estimated sign is negative. No colour = the variable is not included in the model. The horizontal axis measures the cumulative posterior model probabilities. Numerical results of the BMA estimation are reported in Table 5. A detailed description of all the variables is available in Table 4.
 
 The results of our BMA exercise support the notion of the presence of publication bias (the regression coefficient on the standard error is similar to the one presented in Section 4); it seems that positive and insignificant estimates are underreported in the literature, because researchers tend to prefer results that are consistent with the competition-fragility hypothesis. Next, the larger the size of the data sample, the smaller the reported coefficient appears to be. As for country coverage, it seems that the estimates for developed countries tend to be slightly larger than those for non-OECD countries. The use of a quadratic relationship between competition and financial stability is associated with estimates that are on average 0.05 smaller, and the corresponding variable has a decisive posterior inclusion probability. Interestingly, the choice between micro and macro data in specifying the empirical exercise in primary studies does not influence the results significantly.
 
@@ -852,7 +852,7 @@ TABLE A2. Summary of BMA Estimation, Alternative Priors
 | random / 17.5 | | BRIC | | Av = 0.9992 |
 *Notes*: The “random” model prior refers to the beta-binomial prior used by Ley and Steel (2009): the prior model probabilities are the same for all possible model sizes. In this specification, we set Zellner’s *g* prior in line with Fernandez *et al.* (2001).
 
-FIGURE A2 (no artwork). Model Size and Convergence, Alternative Priors.
+FIGURE A2. Model Size and Convergence, Alternative Priors.
 
 TABLE A3. Summary of BMA Estimation, Unweighted Regressions
 | Mean No. Regressors | Draws | Burnins | Time | No. Models Visited |
@@ -864,7 +864,7 @@ TABLE A3. Summary of BMA Estimation, Unweighted Regressions
 | uniform / 17.5 | | UIP | | Av = 0.9983 |
 *Notes*: In this specification, we employ the priors suggested by Eicher *et al.* (2011) based on predictive performance: the uniform model prior (each model has the same prior probability) and the unit information prior (the prior provides the same amount of information as one observation of data).
 
-FIGURE A3 (no artwork). Model Size and Convergence, Unweighted Regressions.
+FIGURE A3. Model Size and Convergence, Unweighted Regressions.
 
 ## Supporting Information
 

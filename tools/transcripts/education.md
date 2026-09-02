@@ -480,7 +480,7 @@ TABLE A1. Summary of main BMA estimation
 | Uniform | UIP | Av = 0.9977 | | |
 *Notes*: We employ the priors suggested by Eicher *et al.* (2011), who recommend using the uniform model prior (each model has the same prior probability) and the unit information prior (the prior provides the same amount of information as one observation in the data). The results of this Bayesian model averaging (BMA) exercise are reported in Table 5.
 
-FIGURE A1 (no artwork). Estimates of the tuition–enrolment nexus vary within and across studies *Notes*: The figure shows a box plot of the partial correlation coefficients capturing the relationship between tuition and the demand for higher education reported in individual studies.
+FIGURE A1. Estimates of the tuition–enrolment nexus vary within and across studies *Notes*: The figure shows a box plot of the partial correlation coefficients capturing the relationship between tuition and the demand for higher education reported in individual studies.
 
 FIGURE A2. Estimates of the elasticity vary across different countries *Notes*: The figure shows a box plot of the partial correlation coefficients capturing the relationship between tuition and the demand for higher education reported for individual countries.
 

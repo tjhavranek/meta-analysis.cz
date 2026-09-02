@@ -99,10 +99,17 @@ def drawing_bands(page, bar_rows=None):
     def furniture(r):
         return r.y1 <= head_y or r.y0 >= foot_y
 
+    parea = (page.rect.width * page.rect.height) or 1.0
     rects = []
     for d in page.get_drawings():
         r = d["rect"]
         if r.is_empty or r.is_infinite or furniture(r):
+            continue
+        # A single filled rectangle covering a quarter of the page is a background panel,
+        # not artwork. /class/'s Figure 5 sits on one covering 41% of the page, and taking
+        # it for the drawing made the band swallow the figure's notes and the paragraph
+        # after them. Real artwork of that size is built from many marks, not one fill.
+        if d.get("type") == "f" and (r.width * r.height) / parea > 0.25:
             continue
         rects.append(r)
     for img in page.get_images(full=True):
@@ -308,6 +315,7 @@ def find(project, wanted=None):
                             rect.y0 = min(cr.y1 + 2, best[0].y0)
                         elif cr.y0 >= best[0].y1 and rect.y1 > cr.y0:
                             rect.y1 = max(cr.y0 - 2, best[0].y1)
+                    rect = clear_of_text(page, rect, best[0])
                     jobs.append(dict(project=project, fig=num, pdf=pdf, page=pno,
                                      rect=[round(v, 1) for v in rect],
                                      ops=best[1], gap=round(bestd, 1),
@@ -320,6 +328,109 @@ def find(project, wanted=None):
         if j["fig"] not in best or j["gap"] < best[j["fig"]]["gap"]:
             best[j["fig"]] = j
     return [best[k] for k in sorted(best)]
+
+
+def crop_baked_notes(path):
+    """Cut a notes column off a figure whose text is baked into the image.
+
+    /armington/'s Figure 4 is a single raster: a landscape heatmap laid sideways on the
+    page with its own notes paragraph printed down the side, all inside the image. There is
+    no text layer to exclude and no transform to read, so the page-level rules cannot see
+    any of it. What the pixels do show is structure: the plot is in colour, and to its right
+    sit the axis values, a blank stripe, and then a block of black text.
+
+    So cut at the SECOND blank stripe past the colour -- keeping the axis values, dropping
+    the notes -- and only when a stripe is actually there. Returns True if it cropped.
+    """
+    from PIL import Image
+    import numpy as np
+    im = Image.open(path).convert("RGB")
+    a = np.asarray(im)
+    ink = (a.min(axis=2) < 170).mean(axis=0)
+    sat = np.asarray(im.convert("HSV"))[:, :, 1]
+    colour = (sat > 60).mean(axis=0)
+    xs = np.flatnonzero(colour > 0.02)
+    if not len(xs) or xs.max() > im.width * 0.92:
+        return False                       # no distinct colour region, or it fills the frame
+    stripes, run = [], None
+    for x in range(int(xs.max()), im.width):
+        if ink[x] < 0.004:
+            run = (run[0], x) if run else (x, x)
+        elif run:
+            if run[1] - run[0] >= 6:
+                stripes.append(run)
+            run = None
+    if len(stripes) < 2:
+        return False                       # nothing but the plot out there
+    cut = stripes[1][1]
+    if cut > im.width * 0.95:
+        return False                       # the "notes" are the frame edge, not a block
+    im.crop((0, 0, cut, im.height)).save(path)
+    return True
+
+
+def pixel_rotation(path):
+    """90 if the image's own text runs sideways, else 0.
+
+    text_rotation() asks the page, which settles it whenever the labels are real text. When
+    the figure is a single raster with everything baked in, the page has nothing to say, so
+    ask the pixels: a stack of text lines flips between inked and blank rows many times over
+    and along its writing direction hardly at all, so the axis with far more flips is across
+    the lines.
+    """
+    from PIL import Image
+    import numpy as np
+    dark = np.asarray(Image.open(path).convert("L")) < 170
+    if dark.shape[0] < 40 or dark.shape[1] < 40:
+        return 0
+    rows = dark.any(axis=1).astype(np.int8)
+    cols = dark.any(axis=0).astype(np.int8)
+    rf = np.abs(np.diff(rows)).sum() / len(rows)
+    cf = np.abs(np.diff(cols)).sum() / len(cols)
+    return 90 if cf > max(3 * rf, 0.01) else 0
+
+
+def clear_of_text(page, rect, band):
+    """Pull the crop's edges back off any running head or line of body prose.
+
+    The padding and the label growth both work outwards from the artwork, and where a plot
+    begins a few points under the running head or the previous paragraph they reach into it
+    and slice its letters in half. A crop with the top half of "BANK COMPETITION AND
+    FINANCIAL STABILITY" along its top edge reads as a broken image.
+
+    Only the padding is given up: the edges never move inside the drawing itself, so a
+    figure genuinely butted against the text keeps its artwork and its defect, and the
+    reviewer sees it rather than a silently cropped plot.
+    """
+    head_y = page.rect.y0 + page.rect.height * 0.11
+    foot_y = page.rect.y1 - page.rect.height * 0.07
+    out = fitz.Rect(rect)
+    for b in page.get_text("dict")["blocks"]:
+        # A paragraph's LAST line is short, and judging lines one at a time let those
+        # through: competition's Figure A2 kept "Fernandez et al. (2001)." across its top,
+        # the tail of the paragraph above it. If any line of a block is full-measure prose,
+        # every line of that block is prose.
+        block_is_prose = any(
+            len("".join(s["text"] for s in ln["spans"]).strip()) > 80
+            and fitz.Rect(ln["bbox"]).width > 0.35 * page.rect.width
+            for ln in b.get("lines", []))
+        for line in b.get("lines", []):
+            t = "".join(s["text"] for s in line["spans"]).strip()
+            if not t:
+                continue
+            lr = fitz.Rect(line["bbox"])
+            running = lr.y1 <= head_y or lr.y0 >= foot_y
+            prose = block_is_prose
+            notes = bool(re.match(r"^(Notes?|Sources?)\s*[:.]", t))
+            if not (running or prose or notes):
+                continue
+            if not out.intersects(lr):
+                continue
+            if lr.y1 <= band.y0 and out.y0 < lr.y1:          # sits above the artwork
+                out.y0 = min(lr.y1 + 2, band.y0)
+            elif lr.y0 >= band.y1 and out.y1 > lr.y0:        # sits below it
+                out.y1 = max(lr.y0 - 2, band.y1)
+    return out
 
 
 def text_rotation(page, rect):
@@ -361,9 +472,11 @@ def render(job, dpi=200):
         os.makedirs(out, exist_ok=True)
         path = os.path.join(out, "fig%s.png" % job["fig"])
         pix.save(path)
-        # Turn a sideways figure upright. Rotating the saved image rather than the clip
-        # keeps the crop arithmetic in page coordinates, where it is easy to reason about.
-        angle = text_rotation(page, job["rect"])
+        # Order matters: read the rotation BEFORE cutting anything off. On a raster figure
+        # the sideways notes column carries most of the evidence for which way is up, so
+        # cropping it first leaves nothing to judge by.
+        angle = text_rotation(page, job["rect"]) or pixel_rotation(path)
+        crop_baked_notes(path)
         if angle:
             from PIL import Image as _I
             im = _I.open(path)

@@ -364,7 +364,7 @@ TABLE 7. Why estimates of the class size effect vary
 | Observations | 2,434 | | | 2,434 | | |
 Notes: The response variable is the estimate of the effect of class size on achievement normalized to represent the change in hundredths of a standard deviation in test scores corresponding to an increase in class size by one student. SE = standard error, P. mean = posterior mean, P. SD = posterior standard deviation, PIP = posterior inclusion probability. In the left-hand part of the table we employ Bayesian model averaging (BMA) using the g-prior and model prior recommended by Eicher *et al.* (2011) and additionally the dilution prior suggested by George (2010). The specification in the right-hand part of the table employs ordinary least squares (OLS) using variables with at least 50% PIP in BMA. The posterior mean in Bayesian model averaging (or alternatively the estimated coefficient in the frequentist model) denotes the marginal effect of a study characteristic on the effect reported in the literature. For a detailed description of all the variables see Table 6; for details on the BMA procedure see Table B7 and Figure B6 in Online Appendix B.
 
-FIGURE 5 (no artwork). Posterior coefficient distributions for selected variables
+FIGURE 5. Posterior coefficient distributions for selected variables
 
 Notes: The figure depicts the posterior coefficient distributions of the regression coefficients corresponding to selected variables in the baseline BMA estimation. For instance, the coefficient corresponding to *STAR experiment* is negative and substantially far from zero in all models irrespective of other variables being included or ignored.
 
