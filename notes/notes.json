@@ -60,1052 +60,23 @@
  ],
  "notes": [
   {
-   "slug": "cnb-advisor-opinion-2sz-2016",
-   "title": "Advisor's opinion to the CNB Bank Board: Situation Report No. 2, 2016",
-   "date": "2016-03-29",
-   "summary": "A synthetic control built from countries that ran no exchange rate commitment puts its contribution to Czech GDP growth at almost 2 percentage points in 2015, and its effect on unemployment at a gap of nearly 2 points, about 100 thousand jobs. The opinion then works through the experience of the seven central banks then using negative rates and where the effective lower bound actually lies. Written for the Bank Board in March 2016, released by the Bank in 2023.",
-   "topics": [
-    "monetary policy",
-    "economics"
-   ],
-   "keywords": [
-    "exchange rate commitment",
-    "synthetic control",
-    "negative interest rates",
-    "effective lower bound",
-    "monetary policy",
-    "Czech National Bank"
-   ],
-   "authors": [
-    {
-     "name": "Tomas Havranek",
-     "orcid": "https://orcid.org/0000-0002-3158-2539"
-    }
-   ],
-   "links": [
-    {
-     "label": "Original document (Czech National Bank)",
-     "url": "https://www.cnb.cz/export/sites/cnb/cs/menova-politika/.galleries/br_zapisy_z_jednani/2016/download/stanovisko_poradce_2016_02.pdf"
-    },
-    {
-     "label": "Original document (PDF)",
-     "url": "https://meta-analysis.cz/komentare/files/cnb-stanovisko-2sz-2016.pdf"
-    },
-    {
-     "label": "Czech original",
-     "url": "https://meta-analysis.cz/komentare/cnb-stanovisko-poradce-2sz-2016/"
-    }
-   ]
-  },
-  {
-   "slug": "cnb-advisor-opinion-6sz-2016",
-   "title": "Advisor's opinion to the CNB Bank Board: Situation Report No. 6, 2016",
-   "date": "2016-09-26",
-   "summary": "Shadow rate estimates put the effective stance of Czech policy near minus 8 percent and the ECB's near minus 7, far below either published rate. The opinion reads the interest rate differential and the koruna forward curve for what the market expected of the exit from the exchange rate commitment. Written for the Bank Board in September 2016, released by the Bank in 2023.",
-   "topics": [
-    "monetary policy",
-    "economics"
-   ],
-   "keywords": [
-    "shadow rate",
-    "exchange rate commitment",
-    "negative interest rates",
-    "interest rate differential",
-    "forward exchange rates",
-    "monetary policy",
-    "Czech National Bank"
-   ],
-   "authors": [
-    {
-     "name": "Tomas Havranek",
-     "orcid": "https://orcid.org/0000-0002-3158-2539"
-    }
-   ],
-   "links": [
-    {
-     "label": "Original document (Czech National Bank)",
-     "url": "https://www.cnb.cz/export/sites/cnb/cs/menova-politika/.galleries/br_zapisy_z_jednani/2016/download/stanovisko_poradce_2016_06.pdf"
-    },
-    {
-     "label": "Original document (PDF)",
-     "url": "https://meta-analysis.cz/komentare/files/cnb-stanovisko-6sz-2016.pdf"
-    },
-    {
-     "label": "Czech original",
-     "url": "https://meta-analysis.cz/komentare/cnb-stanovisko-poradce-6sz-2016/"
-    }
-   ]
-  },
-  {
-   "slug": "voxeu-home-ownership",
-   "title": "Headline inflation measures shouldn't ignore costs of home ownership",
-   "date": "2017-09-12",
-   "summary": "Excluding owner-occupied housing costs from the EU's harmonised index of consumer prices leaves out what most people experience as inflation; including imputed rents, as the US and Japan already do, would make Eurozone monetary policy more countercyclical.",
-   "topics": [
-    "economics"
-   ],
-   "keywords": [
-    "inflation measurement",
-    "home ownership",
-    "HICP",
-    "monetary policy",
-    "imputed rent"
-   ],
-   "venue": "VoxEU / CEPR",
-   "authors": [
-    {
-     "name": "Tomas Havranek",
-     "orcid": "https://orcid.org/0000-0002-3158-2539"
-    },
-    {
-     "name": "Mojmir Hampl"
-    }
-   ],
-   "links": [],
-   "syndicated": [
-    {
-     "label": "VoxEU / CEPR",
-     "url": "https://cepr.org/voxeu/columns/headline-inflation-measures-shouldnt-ignore-costs-home-ownership"
-    }
-   ]
-  },
-  {
-   "slug": "cnb-advisor-opinion-6sz-2017",
-   "title": "Advisor's opinion to the CNB Bank Board: Situation Report No. 6, 2017",
-   "date": "2017-09-25",
-   "summary": "Recessions have needed about 5.5 percentage points of easing on average, so raising rates at every other meeting would not rebuild that cushion until 2023. The opinion argues for a steeper path while conditions are favorable, then sets out what is left when the cushion runs out: forward guidance, direct support of consumption, a bonus for cash withdrawals, and what each would mean for the inflation target. Written for the Bank Board in September 2017, released by the Bank in 2024.",
-   "topics": [
-    "monetary policy",
-    "economics"
-   ],
-   "keywords": [
-    "interest rates",
-    "effective lower bound",
-    "recession",
-    "forward guidance",
-    "helicopter money",
-    "monetary policy",
-    "Czech National Bank"
-   ],
-   "authors": [
-    {
-     "name": "Tomas Havranek",
-     "orcid": "https://orcid.org/0000-0002-3158-2539"
-    }
-   ],
-   "links": [
-    {
-     "label": "Original document (Czech National Bank)",
-     "url": "https://www.cnb.cz/export/sites/cnb/cs/menova-politika/.galleries/br_zapisy_z_jednani/2017/download/stanoviska_2017_06.pdf"
-    },
-    {
-     "label": "Original document (PDF)",
-     "url": "https://meta-analysis.cz/komentare/files/cnb-stanoviska-6sz-2017.pdf"
-    },
-    {
-     "label": "Czech original",
-     "url": "https://meta-analysis.cz/komentare/cnb-stanovisko-poradce-6sz-2017/"
-    }
-   ]
-  },
-  {
-   "slug": "voxeu-daylight-saving",
-   "title": "Daylight saving saves no energy",
-   "date": "2017-12-02",
-   "summary": "A meta-analysis of 162 estimates from 44 studies finds no publication bias and an essentially zero average effect of daylight saving time on energy consumption, with even the best case, Norway, saving only about 0.3% of annual energy use.",
-   "topics": [
-    "meta-analysis methods",
-    "economics"
-   ],
-   "keywords": [
-    "daylight saving time",
-    "energy consumption",
-    "meta-analysis",
-    "publication bias",
-    "best-practice estimates"
-   ],
-   "venue": "VoxEU / CEPR",
-   "authors": [
-    {
-     "name": "Dominik Herman"
-    },
-    {
-     "name": "Zuzana Irsova",
-     "orcid": "https://orcid.org/0000-0002-0753-8124"
-    },
-    {
-     "name": "Tomas Havranek",
-     "orcid": "https://orcid.org/0000-0002-3158-2539"
-    }
-   ],
-   "links": [],
-   "syndicated": [
-    {
-     "label": "VoxEU / CEPR",
-     "url": "https://cepr.org/voxeu/columns/daylight-saving-saves-no-energy"
-    }
-   ]
-  },
-  {
-   "slug": "globaldev-natural-resources",
-   "title": "Natural resources and economic growth: the research evidence",
-   "date": "2018-02-13",
-   "summary": "A review of more than 40 studies on natural resources and economic growth finds only very weak support for a resource curse once publication bias and method heterogeneity are accounted for, with the effect strongly dependent on the quality of a country's institutions.",
-   "topics": [
-    "meta-analysis methods",
-    "economics"
-   ],
-   "keywords": [
-    "natural resource curse",
-    "economic growth",
-    "meta-analysis",
-    "institutions",
-    "publication bias"
-   ],
-   "venue": "GlobalDev Blog",
-   "authors": [
-    {
-     "name": "Tomas Havranek",
-     "orcid": "https://orcid.org/0000-0002-3158-2539"
-    },
-    {
-     "name": "Roman Horvath"
-    }
-   ],
-   "links": [],
-   "syndicated": [
-    {
-     "label": "GlobalDev Blog",
-     "url": "https://globaldev.blog/natural-resources-and-economic-growth-research-evidence/"
-    }
-   ]
-  },
-  {
-   "slug": "cnb-advisor-opinion-8sz-2018",
-   "title": "Advisor's opinion to the CNB Bank Board: Situation Report No. 8, 2018",
-   "date": "2018-12-19",
-   "summary": "Rate increases were barely reaching households: the effective rate on consumption, which the model does not see, rose 0.1 percentage point since the exit while PRIBOR rose 1.5. The thematic comment is a separate argument: that the CNB's g3 model overstates how fast consumption responds to rates, because it fixes the elasticity of intertemporal substitution at 1 where the literature, 2,735 estimates from 169 studies, puts it near a third. Written for the Bank Board in December 2018, released by the Bank in 2025.",
-   "topics": [
-    "monetary policy",
-    "economics"
-   ],
-   "keywords": [
-    "monetary transmission",
-    "elasticity of intertemporal substitution",
-    "interest rates",
-    "exchange rate forecast",
-    "PRIBOR",
-    "monetary policy",
-    "Czech National Bank"
-   ],
-   "authors": [
-    {
-     "name": "Tomas Havranek",
-     "orcid": "https://orcid.org/0000-0002-3158-2539"
-    }
-   ],
-   "links": [
-    {
-     "label": "Original document (Czech National Bank)",
-     "url": "https://www.cnb.cz/export/sites/cnb/cs/menova-politika/.galleries/br_zapisy_z_jednani/2018/download/stanoviska_2018_08.pdf"
-    },
-    {
-     "label": "Original document (PDF)",
-     "url": "https://meta-analysis.cz/komentare/files/cnb-stanoviska-8sz-2018.pdf"
-    },
-    {
-     "label": "Czech original",
-     "url": "https://meta-analysis.cz/komentare/cnb-stanovisko-poradce-8sz-2018/"
-    }
-   ]
-  },
-  {
-   "slug": "maer-model-averaging",
-   "title": "Why Model Averaging Is Useful in Meta-Analysis",
-   "date": "2019-02-27",
-   "summary": "Run a regression with more than a handful of candidate variables and the question is which ones belong in the baseline. Model averaging answers it by weighting many specifications rather than picking one, and it is what we use for meta-regression.",
-   "topics": [
-    "meta-analysis methods"
-   ],
-   "keywords": [
-    "model averaging",
-    "model uncertainty",
-    "Bayesian model averaging",
-    "meta-regression"
-   ],
-   "venue": "MAER-Net",
-   "authors": [
-    {
-     "name": "Tomas Havranek",
-     "orcid": "https://orcid.org/0000-0002-3158-2539"
-    }
-   ],
-   "links": [],
-   "syndicated": [
-    {
-     "label": "MAER-Net",
-     "url": "https://www.maer-net.org/post/model-averaging"
-    }
-   ]
-  },
-  {
-   "slug": "maer-cobb-douglas",
-   "title": "Death to the Cobb-Douglas Production Function!",
-   "date": "2019-09-25",
-   "summary": "A meta-analysis of 3,186 estimates from 121 studies finds a mean capital-labor elasticity of substitution of 0.9, close to the Cobb-Douglas value of 1, but correcting for publication bias, data aggregation, and omitted first-order conditions lowers the recommended calibration to 0.3.",
-   "topics": [
-    "meta-analysis methods",
-    "economics"
-   ],
-   "keywords": [
-    "elasticity of substitution",
-    "Cobb-Douglas",
-    "meta-analysis",
-    "publication bias",
-    "capital-labor substitution"
-   ],
-   "venue": "MAER-Net",
-   "authors": [
-    {
-     "name": "Sebastian Gechert"
-    },
-    {
-     "name": "Tomas Havranek",
-     "orcid": "https://orcid.org/0000-0002-3158-2539"
-    },
-    {
-     "name": "Zuzana Irsova",
-     "orcid": "https://orcid.org/0000-0002-0753-8124"
-    },
-    {
-     "name": "Dominika Kolcunova"
-    }
-   ],
-   "links": [],
-   "syndicated": [
-    {
-     "label": "MAER-Net",
-     "url": "https://www.maer-net.org/post/death-to-the-cobb-douglas-production-function"
-    }
-   ]
-  },
-  {
-   "slug": "maer-reporting-guidelines",
-   "title": "Revision of Reporting Guidelines",
-   "date": "2019-11-11",
-   "summary": "Seven years on from the current reporting guidelines for meta-analysis in economics, I offer 12 subjective recommendations I miss in them, and ask MAER-Net to argue about the list before anyone drafts a revision.",
-   "topics": [
-    "meta-analysis methods"
-   ],
-   "keywords": [
-    "reporting guidelines",
-    "meta-analysis",
-    "MAER-Net",
-    "publication bias",
-    "robustness checks"
-   ],
-   "venue": "MAER-Net",
-   "authors": [
-    {
-     "name": "Tomas Havranek",
-     "orcid": "https://orcid.org/0000-0002-3158-2539"
-    }
-   ],
-   "links": [],
-   "syndicated": [
-    {
-     "label": "MAER-Net",
-     "url": "https://www.maer-net.org/post/revision-of-reporting-guidelines"
-    }
-   ]
-  },
-  {
-   "slug": "voxeu-armington",
-   "title": "Armington elasticity and international trade models: Fifty years on",
-   "date": "2020-09-23",
-   "summary": "A meta-analysis of 3,524 estimates of the Armington elasticity of substitution between domestic and foreign goods, corrected for publication bias, implies a range of 2.5-5.1 with a median of 3.8, equivalent to a trade cost elasticity of 2.8.",
-   "topics": [
-    "meta-analysis methods",
-    "economics"
-   ],
-   "keywords": [
-    "Armington elasticity",
-    "international trade",
-    "elasticity of substitution",
-    "meta-analysis",
-    "publication bias"
-   ],
-   "venue": "VoxEU / CEPR",
-   "authors": [
-    {
-     "name": "Josef Bajzik"
-    },
-    {
-     "name": "Tomas Havranek",
-     "orcid": "https://orcid.org/0000-0002-3158-2539"
-    },
-    {
-     "name": "Zuzana Irsova",
-     "orcid": "https://orcid.org/0000-0002-0753-8124"
-    },
-    {
-     "name": "Jiri Schwarz"
-    }
-   ],
-   "links": [],
-   "syndicated": [
-    {
-     "label": "VoxEU / CEPR",
-     "url": "https://cepr.org/voxeu/columns/armington-elasticity-and-international-trade-models-fifty-years"
-    }
-   ]
-  },
-  {
-   "slug": "voxeu-incentives",
-   "title": "How financial incentives affect performance",
-   "date": "2023-02-13",
-   "summary": "A meta-analysis of experimental economics studies finds the effect of financial incentives on performance is negligible across field-experiment contexts once publication bias and experimental context are accounted for, which suggests money-based nudges may be less effective than commonly thought.",
-   "topics": [
-    "meta-analysis methods",
-    "economics"
-   ],
-   "keywords": [
-    "financial incentives",
-    "performance",
-    "meta-analysis",
-    "publication bias",
-    "motivation crowding"
-   ],
-   "venue": "VoxEU / CEPR",
-   "authors": [
-    {
-     "name": "Petr Cala"
-    },
-    {
-     "name": "Tomas Havranek",
-     "orcid": "https://orcid.org/0000-0002-3158-2539"
-    },
-    {
-     "name": "Zuzana Irsova",
-     "orcid": "https://orcid.org/0000-0002-0753-8124"
-    },
-    {
-     "name": "Jindrich Matousek"
-    },
-    {
-     "name": "Jiri Novak"
-    }
-   ],
-   "links": [],
-   "syndicated": [
-    {
-     "label": "VoxEU / CEPR",
-     "url": "https://cepr.org/voxeu/columns/how-financial-incentives-affect-performance"
-    }
-   ]
-  },
-  {
-   "slug": "maer-spurious-precision",
-   "title": "Spurious precision in meta-analysis: introducing MAIVE",
-   "date": "2023-02-16",
-   "summary": "Meta-analysis gives more weight to studies that report smaller standard errors, but precision is estimated, not given, and can be p-hacked. Cures for publication bias can then be worse than the disease, so we introduce MAIVE, which instruments reported precision with sample size.",
-   "topics": [
-    "meta-analysis methods",
-    "publication bias"
-   ],
-   "keywords": [
-    "MAIVE",
-    "spurious precision",
-    "p-hacking",
-    "inverse-variance weighting",
-    "publication bias",
-    "instrumental variable"
-   ],
-   "venue": "MAER-Net",
-   "authors": [
-    {
-     "name": "Zuzana Irsova",
-     "orcid": "https://orcid.org/0000-0002-0753-8124"
-    },
-    {
-     "name": "Pedro R. D. Bom"
-    },
-    {
-     "name": "Tomas Havranek",
-     "orcid": "https://orcid.org/0000-0002-3158-2539"
-    },
-    {
-     "name": "Heiko Rachinger"
-    }
-   ],
-   "links": [],
-   "syndicated": [
-    {
-     "label": "MAER-Net",
-     "url": "https://www.maer-net.org/post/maive"
-    }
-   ]
-  },
-  {
-   "slug": "maer-methods-guidelines",
-   "title": "Methods Guidelines for Meta-Analysis",
-   "date": "2023-11-27",
-   "summary": "Our methods guidelines are out in the Journal of Economic Surveys. Here I pick the seven issues I personally find most important: choosing a topic, comparability, study quality, multiple estimates per study, correction techniques, Bayesian approaches, and the implied best-practice estimate.",
-   "topics": [
-    "meta-analysis methods"
-   ],
-   "keywords": [
-    "meta-analysis methods",
-    "guidelines",
-    "Journal of Economic Surveys",
-    "model averaging",
-    "publication bias correction"
-   ],
-   "venue": "MAER-Net",
-   "authors": [
-    {
-     "name": "Zuzana Irsova",
-     "orcid": "https://orcid.org/0000-0002-0753-8124"
-    }
-   ],
-   "links": [],
-   "syndicated": [
-    {
-     "label": "MAER-Net",
-     "url": "https://www.maer-net.org/post/methods-guidelines-for-meta-analysis"
-    }
-   ]
-  },
-  {
-   "slug": "maer-new-challenges",
-   "title": "New Challenges for Meta-Analysis: Attenuation Bias, P-Hacking, Preferred Estimates",
-   "date": "2025-07-07",
-   "summary": "Our recent meta-analyses highlight three issues for the field: attenuation bias can rival publication bias in distorting results; new methods like MAIVE address p-hacking more effectively; and author preferred estimates may systematically differ from others.",
-   "topics": [
-    "meta-analysis methods",
-    "publication bias"
-   ],
-   "keywords": [
-    "attenuation bias",
-    "p-hacking",
-    "preferred estimates",
-    "MAIVE",
-    "publication bias"
-   ],
-   "venue": "MAER-Net",
-   "authors": [
-    {
-     "name": "Tomas Havranek",
-     "orcid": "https://orcid.org/0000-0002-3158-2539"
-    }
-   ],
-   "links": [],
-   "syndicated": [
-    {
-     "label": "MAER-Net",
-     "url": "https://www.maer-net.org/post/new-challenges-for-meta-analysis-attenuation-bias-p-hacking-preferred-estimates"
-    }
-   ]
-  },
-  {
-   "slug": "maer-ai-tools",
-   "title": "AI Tools for Meta-Analysis",
-   "date": "2025-07-30",
-   "summary": "I think AI tools have now reached the point where they can save real time in literature search and data collection. Here is what worked for me in mid-2025, mostly in ChatGPT, and where a competent human still has to check carefully what the AI returns.",
-   "topics": [
-    "AI and research",
-    "meta-analysis methods"
-   ],
-   "keywords": [
-    "AI tools",
-    "literature search",
-    "data collection",
-    "meta-analysis",
-    "ChatGPT"
-   ],
-   "venue": "MAER-Net",
-   "authors": [
-    {
-     "name": "Tomas Havranek",
-     "orcid": "https://orcid.org/0000-0002-3158-2539"
-    }
-   ],
-   "links": [],
-   "syndicated": [
-    {
-     "label": "MAER-Net",
-     "url": "https://www.maer-net.org/post/ai-tools-for-meta-analysis"
-    }
-   ]
-  },
-  {
-   "slug": "springer-spurious-precision",
-   "title": "Spurious precision in meta-analysis: why we built MAIVE",
-   "date": "2025-09-27",
-   "summary": "Meta-analyses give more weight to precise studies. But what if the reported precision is spurious? We introduce MAIVE, a new estimator that tackles this problem.",
-   "topics": [
-    "meta-analysis methods",
-    "publication bias"
-   ],
-   "keywords": [
-    "MAIVE",
-    "spurious precision",
-    "publication bias",
-    "funnel plot",
-    "instrumental variable"
-   ],
-   "venue": "Springer Nature Research Communities",
-   "authors": [
-    {
-     "name": "Zuzana Irsova",
-     "orcid": "https://orcid.org/0000-0002-0753-8124"
-    }
-   ],
-   "links": [],
-   "syndicated": [
-    {
-     "label": "Springer Nature Research Communities",
-     "url": "https://communities.springernature.com/posts/spurious-precision-in-meta-analysis"
-    }
-   ]
-  },
-  {
-   "slug": "maer-easymeta",
-   "title": "Bias Correction Made Easy: A Web App for Meta-Analysis at EasyMeta.org",
-   "date": "2025-09-27",
-   "summary": "Run MAIVE, PET-PEESE, and EK with one click, no coding, no installation.",
-   "topics": [
-    "meta-analysis methods",
-    "research tools"
-   ],
-   "keywords": [
-    "MAIVE",
-    "PET-PEESE",
-    "endogenous kink",
-    "web app",
-    "meta-analysis",
-    "bias correction"
-   ],
-   "venue": "MAER-Net",
-   "authors": [
-    {
-     "name": "Zuzana Irsova",
-     "orcid": "https://orcid.org/0000-0002-0753-8124"
-    }
-   ],
-   "links": [],
-   "syndicated": [
-    {
-     "label": "MAER-Net",
-     "url": "https://www.maer-net.org/post/bias-correction-made-easy-a-web-app-for-meta-analysis-at-easymeta-org"
-    }
-   ]
-  },
-  {
-   "slug": "spurious-precision-nature-communications",
-   "title": "Spurious precision in meta-analysis, published in Nature Communications",
-   "date": "2025-10-26",
-   "summary": "Nature Communications has published the MAIVE paper, showing that meta-analyses can be misled when a study's reported precision reflects method choices rather than real evidence strength, and introducing a correction, MAIVE, for this bias.",
-   "topics": [
-    "meta-analysis methods",
-    "publication bias"
-   ],
-   "keywords": [
-    "MAIVE",
-    "spurious precision",
-    "Nature Communications",
-    "publication bias",
-    "meta-analysis"
-   ],
-   "venue": "LinkedIn",
-   "authors": [
-    {
-     "name": "Zuzana Irsova",
-     "orcid": "https://orcid.org/0000-0002-0753-8124"
-    }
-   ],
-   "links": [],
-   "syndicated": [
-    {
-     "label": "LinkedIn",
-     "url": "https://www.linkedin.com/feed/update/urn%3Ali%3Ashare%3A7388172095639265282"
-    }
-   ]
-  },
-  {
-   "slug": "maer-ottawa-colloquium",
-   "title": "Highlights from the 2025 MAER-Net Colloquium in Ottawa",
-   "date": "2025-10-31",
-   "summary": "The 2025 MAER-Net Colloquium in Ottawa was a great success: Abel Brodeur received the Founders' Medal, Shinichi Nakagawa and Andrew Gelman gave the keynotes, and in 2026 we move to Chemnitz.",
-   "topics": [
-    "meta-analysis methods"
-   ],
-   "keywords": [
-    "MAER-Net",
-    "colloquium",
-    "Ottawa",
-    "Founders' Medal",
-    "conference report"
-   ],
-   "venue": "MAER-Net",
-   "authors": [
-    {
-     "name": "Tom Stanley"
-    },
-    {
-     "name": "Sebastian Gechert"
-    },
-    {
-     "name": "Jerome Geyer-Klingeberg"
-    },
-    {
-     "name": "Tomas Havranek",
-     "orcid": "https://orcid.org/0000-0002-3158-2539"
-    }
-   ],
-   "links": [],
-   "syndicated": [
-    {
-     "label": "MAER-Net",
-     "url": "https://www.maer-net.org/post/highlights-from-the-2025-maer-net-colloquium-in-ottawa"
-    }
-   ]
-  },
-  {
-   "slug": "maer-maive-cran",
-   "title": "MAIVE Is Now on CRAN",
-   "date": "2025-12-10",
-   "summary": "MAIVE, the bias-correction estimator for meta-analysis published in Nature Communications, is now installable directly from CRAN, alongside the existing EasyMeta.org web app that runs MAIVE, PET-PEESE, and the endogenous kink model with one click.",
-   "topics": [
-    "meta-analysis methods",
-    "research tools"
-   ],
-   "keywords": [
-    "MAIVE",
-    "CRAN",
-    "R package",
-    "meta-analysis",
-    "bias correction"
-   ],
-   "venue": "MAER-Net",
-   "authors": [
-    {
-     "name": "Zuzana Irsova",
-     "orcid": "https://orcid.org/0000-0002-0753-8124"
-    }
-   ],
-   "links": [],
-   "syndicated": [
-    {
-     "label": "MAER-Net",
-     "url": "https://www.maer-net.org/post/maive-is-now-on-cran"
-    },
-    {
-     "label": "LinkedIn",
-     "url": "https://www.linkedin.com/feed/update/urn%3Ali%3Ashare%3A7404420382004539392"
-    }
-   ]
-  },
-  {
-   "slug": "maer-ai-duels",
-   "title": "Stress-Testing Meta-Research with AI Duels",
-   "date": "2025-12-12",
-   "summary": "The Research Audit Protocol coordinates ChatGPT and Gemini in a structured, human-in-the-loop duel of anchor assessment, adversarial probing, and synthesis, illustrated with a case study auditing the proposed WAIVE idea against the MAIVE framework.",
-   "topics": [
-    "AI and research",
-    "meta-analysis methods"
-   ],
-   "keywords": [
-    "research audit protocol",
-    "multi-agent debate",
-    "MAIVE",
-    "WAIVE",
-    "meta-analysis"
-   ],
-   "venue": "MAER-Net",
-   "authors": [
-    {
-     "name": "Zuzana Irsova",
-     "orcid": "https://orcid.org/0000-0002-0753-8124"
-    },
-    {
-     "name": "Tomas Havranek",
-     "orcid": "https://orcid.org/0000-0002-3158-2539"
-    }
-   ],
-   "links": [],
-   "syndicated": [
-    {
-     "label": "MAER-Net",
-     "url": "https://www.maer-net.org/post/ai_duel"
-    },
-    {
-     "label": "LinkedIn",
-     "url": "https://www.linkedin.com/feed/update/urn%3Ali%3Ashare%3A7405164270306504704"
-    }
-   ]
-  },
-  {
-   "slug": "browser-tool-for-publication-bias",
-   "title": "A browser tool for correcting publication bias",
-   "date": "2026-01-27",
-   "summary": "EasyMeta.org lets researchers upload a dataset and run bias corrections, including MAIVE and PET-PEESE, directly in the browser, with clustering options and exportable R code, and no installation or coding required.",
-   "topics": [
-    "research tools",
-    "publication bias"
-   ],
-   "keywords": [
-    "EasyMeta",
-    "MAIVE",
-    "PET-PEESE",
-    "research tools",
-    "publication bias"
-   ],
-   "venue": "LinkedIn",
-   "authors": [
-    {
-     "name": "Zuzana Irsova",
-     "orcid": "https://orcid.org/0000-0002-0753-8124"
-    }
-   ],
-   "links": [],
-   "syndicated": [
-    {
-     "label": "LinkedIn",
-     "url": "https://www.linkedin.com/feed/update/urn%3Ali%3AugcPost%3A7421813900372918272"
-    }
-   ]
-  },
-  {
-   "slug": "correcting-for-p-hacking-too",
-   "title": "Meta-analysis should correct for p-hacking too",
-   "date": "2026-03-09",
-   "summary": "Corrections for publication bias assume individually unbiased estimates, an assumption p-hacking violates. The Nature Communications MAIVE paper shows that under some forms of p-hacking, classical publication-bias corrections can be more biased than a simple average.",
-   "topics": [
-    "meta-analysis methods",
-    "publication bias"
-   ],
-   "keywords": [
-    "p-hacking",
-    "MAIVE",
-    "RTMA",
-    "publication bias",
-    "meta-analysis"
-   ],
-   "venue": "LinkedIn",
-   "authors": [
-    {
-     "name": "Zuzana Irsova",
-     "orcid": "https://orcid.org/0000-0002-0753-8124"
-    }
-   ],
-   "links": [],
-   "syndicated": [
-    {
-     "label": "LinkedIn",
-     "url": "https://www.linkedin.com/feed/update/urn%3Ali%3Ashare%3A7436800791929151488"
-    }
-   ]
-  },
-  {
-   "slug": "four-models-debating-works-better",
-   "title": "Four AI models debating works better than two",
-   "date": "2026-03-19",
-   "summary": "An updated research audit protocol (MAD v2.0) runs ChatGPT, Claude, Gemini, and Grok through independent critique, cross-examination, and a final synthesis, using copy-paste prompts with no coding required, or full automation via API frameworks. A pre-registered experiment four months later put this to a test of a different shape: authors of 44 meta-analyses ranked a single pass by one frontier model above two multi-agent debate tools.",
+   "slug": "maer-rebuilding-meta-analysis-cz",
+   "title": "Rebuilding meta-analysis.cz: what is on it now",
+   "date": "2026-09-02",
+   "summary": "The site was rebuilt after a hack, and what came back is different: all 71 papers in full HTML with their tables and 412 figures, 46 datasets as CSV and Parquet, a pooled table of 49,845 estimate-level rows from 42 meta-analyses archived on Zenodo, and an llms.txt, JSON API and Croissant descriptors so an assistant can read the site and run MAIVE from the protocol it finds there.",
    "topics": [
     "AI and research",
     "research tools"
    ],
    "keywords": [
-    "multi-agent debate",
-    "research audit protocol",
-    "AI and research",
-    "stress testing"
-   ],
-   "venue": "LinkedIn",
-   "authors": [
-    {
-     "name": "Zuzana Irsova",
-     "orcid": "https://orcid.org/0000-0002-0753-8124"
-    }
-   ],
-   "links": [],
-   "syndicated": [
-    {
-     "label": "LinkedIn",
-     "url": "https://www.linkedin.com/feed/update/urn%3Ali%3Ashare%3A7440296636783960064"
-    }
-   ]
-  },
-  {
-   "slug": "brodeur-team-reproducibility-numbers",
-   "title": "A caveat on the Brodeur team's Nature reproducibility study",
-   "date": "2026-04-02",
-   "summary": "A short comment on the Nature reproducibility study I co-authored: the numbers look good, but the papers replicated came from journals that already mandate data and code sharing. Share your data and code, and pre-register.",
-   "topics": [
-    "economics",
-    "research tools"
-   ],
-   "keywords": [
+    "meta-analysis.cz",
+    "open data",
+    "full text",
+    "Zenodo",
+    "MAIVE",
+    "llms.txt",
     "reproducibility",
-    "replication",
-    "economics research",
-    "data sharing",
-    "pre-registration"
-   ],
-   "venue": "LinkedIn",
-   "authors": [
-    {
-     "name": "Zuzana Irsova",
-     "orcid": "https://orcid.org/0000-0002-0753-8124"
-    }
-   ],
-   "links": [],
-   "syndicated": [
-    {
-     "label": "LinkedIn",
-     "url": "https://www.linkedin.com/feed/update/urn%3Ali%3Ashare%3A7445392769788968960"
-    }
-   ]
-  },
-  {
-   "slug": "note-in-journal-of-economic-surveys",
-   "title": "New guidance on using AI in meta-analysis",
-   "date": "2026-04-22",
-   "summary": "A note in the Journal of Economic Surveys sets a floor for AI use in meta-analysis: humans lead and remain accountable, AI cannot be an author, at least 10% of screening records and 10% of coded studies are audited by hand (or 100 and 20, whichever is larger), and anything that shapes the results is disclosed, with prompts and model versions saved.",
-   "topics": [
-    "AI and research",
-    "meta-analysis methods"
-   ],
-   "keywords": [
-    "AI and research",
-    "meta-analysis guidance",
-    "peer review",
-    "research integrity"
-   ],
-   "venue": "LinkedIn",
-   "authors": [
-    {
-     "name": "Zuzana Irsova",
-     "orcid": "https://orcid.org/0000-0002-0753-8124"
-    }
-   ],
-   "links": [],
-   "syndicated": [
-    {
-     "label": "LinkedIn",
-     "url": "https://www.linkedin.com/feed/update/urn%3Ali%3Ashare%3A7452590050799853568"
-    }
-   ]
-  },
-  {
-   "slug": "redoing-a-meta-analysis-from-scratch",
-   "title": "Pre-registering a full redo of the beauty premium meta-analysis",
-   "date": "2026-04-28",
-   "summary": "We are redoing our meta-analysis of beauty and professional success from scratch: pre-registered, with a librarian-designed search, dual screening and coding checks. It doubles as a natural experiment on our own earlier work.",
-   "topics": [
-    "meta-analysis methods",
-    "research tools"
-   ],
-   "keywords": [
-    "beauty premium",
-    "pre-registration",
-    "systematic review",
-    "meta-analysis",
-    "publication bias"
-   ],
-   "venue": "LinkedIn",
-   "authors": [
-    {
-     "name": "Zuzana Irsova",
-     "orcid": "https://orcid.org/0000-0002-0753-8124"
-    }
-   ],
-   "links": [],
-   "syndicated": [
-    {
-     "label": "LinkedIn",
-     "url": "https://www.linkedin.com/feed/update/urn%3Ali%3Ashare%3A7454914753266692097"
-    }
-   ]
-  },
-  {
-   "slug": "reporting-guidelines-updated-for-ai",
-   "title": "Reporting guidelines for meta-analysis, updated for AI",
-   "date": "2026-05-13",
-   "summary": "The Journal of Economic Surveys has published updated reporting guidelines for meta-analysis in economics, this time addressing AI use in search, screening, and coding, with a personal recommendation to combine RoBMA with MAIVE and RTMA.",
-   "topics": [
-    "meta-analysis methods",
-    "AI and research"
-   ],
-   "keywords": [
-    "reporting guidelines",
-    "AI and research",
-    "RoBMA",
-    "MAIVE",
-    "meta-analysis"
-   ],
-   "venue": "LinkedIn",
-   "authors": [
-    {
-     "name": "Zuzana Irsova",
-     "orcid": "https://orcid.org/0000-0002-0753-8124"
-    }
-   ],
-   "links": [],
-   "syndicated": [
-    {
-     "label": "LinkedIn",
-     "url": "https://www.linkedin.com/feed/update/urn%3Ali%3Ashare%3A7460202147213791232"
-    }
-   ]
-  },
-  {
-   "slug": "claude-code-with-codex-stress-test",
-   "title": "Claude Code can call Codex to stress-test its own work",
-   "date": "2026-05-30",
-   "summary": "A Claude Code skill can call OpenAI's Codex to stress-test its own work, letting researchers switch between the two tools or fall back to one when the other hits its usage limit.",
-   "topics": [
-    "AI and research",
-    "research tools"
-   ],
-   "keywords": [
-    "Claude Code",
-    "Codex",
-    "multi-agent debate",
-    "research tools",
-    "stress testing"
-   ],
-   "venue": "LinkedIn",
-   "authors": [
-    {
-     "name": "Zuzana Irsova",
-     "orcid": "https://orcid.org/0000-0002-0753-8124"
-    }
-   ],
-   "links": [],
-   "syndicated": [
-    {
-     "label": "LinkedIn",
-     "url": "https://www.linkedin.com/feed/update/urn%3Ali%3Ashare%3A7466382253208645634"
-    }
-   ]
-  },
-  {
-   "slug": "maer-stress-testing",
-   "title": "Stress-testing research with AI, now super easy and fully automated",
-   "date": "2026-05-31",
-   "summary": "The research-stress-testing protocol is now automated as a Claude Code skill: describe a task in one sentence, and Claude calls OpenAI's Codex to run critique and synthesis rounds and returns a memo with the full debate trail.",
-   "topics": [
-    "AI and research",
-    "research tools"
-   ],
-   "keywords": [
-    "multi-agent debate",
-    "Claude Code",
-    "Codex",
-    "stress testing",
-    "research audit"
+    "AI agents"
    ],
    "venue": "MAER-Net",
    "authors": [
@@ -1114,100 +85,47 @@
      "orcid": "https://orcid.org/0000-0002-3158-2539"
     }
    ],
-   "links": [],
+   "links": [
+    {
+     "label": "All 71 papers in full",
+     "url": "https://meta-analysis.cz/papers/"
+    },
+    {
+     "label": "All datasets",
+     "url": "https://meta-analysis.cz/datasets/"
+    },
+    {
+     "label": "Running MAIVE",
+     "url": "https://meta-analysis.cz/maive/how-to/"
+    }
+   ],
    "syndicated": [
     {
      "label": "MAER-Net",
-     "url": "https://www.maer-net.org/post/stress-testing-research-with-ai-now-super-easy-and-fully-automated"
+     "url": "https://www.maer-net.org/post/rebuilding-meta-analysis-cz-what-is-on-it-now"
     }
    ]
   },
   {
-   "slug": "a-panel-of-experts-for-your-paper",
-   "title": "A simulated expert panel that stress-tests and rebuilds your paper",
-   "date": "2026-06-10",
-   "summary": "The paper-workshop Claude Code skill assembles a simulated panel of experts to stress-test a research paper, then rebuilds it in tracked changes with a replication package, re-running the author's Stata and R code.",
-   "topics": [
-    "research tools",
-    "peer review"
-   ],
-   "keywords": [
-    "paper-workshop",
-    "Claude Code",
-    "research tools",
-    "replication",
-    "peer review"
-   ],
-   "venue": "LinkedIn",
-   "authors": [
-    {
-     "name": "Zuzana Irsova",
-     "orcid": "https://orcid.org/0000-0002-0753-8124"
-    }
-   ],
-   "links": [],
-   "syndicated": [
-    {
-     "label": "LinkedIn",
-     "url": "https://www.linkedin.com/feed/update/urn%3Ali%3Ashare%3A7470445147063803904"
-    }
-   ]
-  },
-  {
-   "slug": "a-tool-for-your-erc-proposal",
-   "title": "An AI tool for checking your ERC proposal",
-   "date": "2026-06-23",
-   "summary": "A tool checks an ERC draft against the official evaluation criteria and flags the routine weak spots, so the easy problems are cleared before you ask colleagues to read it. It does not replace human review.",
-   "topics": [
-    "research tools",
-    "peer review"
-   ],
-   "keywords": [
-    "ERC proposals",
-    "AI feedback",
-    "grant writing",
-    "research tools",
-    "peer review"
-   ],
-   "venue": "LinkedIn",
-   "authors": [
-    {
-     "name": "Zuzana Irsova",
-     "orcid": "https://orcid.org/0000-0002-0753-8124"
-    }
-   ],
-   "links": [],
-   "syndicated": [
-    {
-     "label": "LinkedIn",
-     "url": "https://www.linkedin.com/feed/update/urn%3Ali%3Ashare%3A7475160943409135616"
-    }
-   ]
-  },
-  {
-   "slug": "multi-agent-debate-ai-feedback",
-   "title": "What 44 meta-analysis authors said about AI feedback",
-   "date": "2026-07-16",
-   "updated": "2026-07-21",
-   "summary": "Probably not, at least for economics meta-analyses. Authors of 44 meta-analyses ranked three blinded AI reports on their own paper; a single prompt beat two multi-agent debate tools, one of which spent thirty times the tokens.",
+   "slug": "rebuilding-meta-analysis-cz",
+   "title": "The site was hacked, so we rebuilt it",
+   "date": "2026-09-01",
+   "summary": "meta-analysis.cz had barely changed since 2015, was updated over FTP and had no central backup, and it was hacked. Claude Code and Codex reconstructed it from Wayback Machine copies and scattered local files. The site now lives on GitHub, the whole dataset of 50 thousand estimates from 42 literatures is archived on Zenodo with a DOI, every paper has an HTML full text alongside its data and code, and MAIVE runs through EasyMeta.org.",
    "topics": [
     "AI and research",
-    "peer review"
+    "research tools"
    ],
    "keywords": [
-    "AI feedback",
-    "multi-agent debate",
-    "LLM-as-a-judge",
-    "peer review",
-    "meta-analysis",
-    "pre-registration",
-    "test-time compute"
+    "meta-analysis.cz",
+    "website reconstruction",
+    "AI agents",
+    "reproducibility",
+    "open data",
+    "Zenodo",
+    "MAIVE",
+    "EasyMeta"
    ],
    "authors": [
-    {
-     "name": "Tomas Havranek",
-     "orcid": "https://orcid.org/0000-0002-3158-2539"
-    },
     {
      "name": "Zuzana Irsova",
      "orcid": "https://orcid.org/0000-0002-0753-8124"
@@ -1215,99 +133,22 @@
    ],
    "links": [
     {
-     "label": "Paper (PDF)",
-     "url": "https://meta-analysis.cz/debate/debate.pdf"
+     "label": "All datasets",
+     "url": "https://meta-analysis.cz/datasets/"
     },
     {
-     "label": "Project page",
-     "url": "https://meta-analysis.cz/debate/"
+     "label": "Results",
+     "url": "https://meta-analysis.cz/results/"
     },
     {
-     "label": "arXiv: 2607.14713",
-     "url": "https://arxiv.org/abs/2607.14713"
-    },
-    {
-     "label": "Pre-registration (OSF)",
-     "url": "https://doi.org/10.17605/OSF.IO/E6XGW"
-    },
-    {
-     "label": "Online supplement (OSF)",
-     "url": "https://osf.io/7nfyb"
-    },
-    {
-     "label": "Replication package (Zenodo)",
-     "url": "https://doi.org/10.5281/zenodo.21273528"
+     "label": "Running MAIVE with EasyMeta",
+     "url": "https://meta-analysis.cz/maive/how-to/"
     }
    ],
-   "syndicated": [
-    {
-     "label": "Bluesky",
-     "url": "https://bsky.app/profile/irsova.bsky.social"
-    },
-    {
-     "label": "LinkedIn",
-     "url": "https://www.linkedin.com/feed/update/urn%3Ali%3AugcPost%3A7483554931325542401"
-    }
-   ]
-  },
-  {
-   "slug": "do-outlier-decisions-matter",
-   "title": "Do outlier treatment decisions matter in meta-analysis?",
-   "date": "2026-07-25",
-   "summary": "Recomputing 358 behavioral science meta-analyses under five outlier treatments leaves most conclusions standing, but in 11.5% of them at least one treatment changes statistical significance and in 15.9% it changes whether the effect clears a smallest effect size of interest; winsorizing changes conclusions least, DFBETAS most.",
-   "topics": [
-    "meta-analysis methods"
-   ],
-   "keywords": [
-    "outlier treatments",
-    "meta-analysis",
-    "pre-registration",
-    "DFBETAS",
-    "winsorizing"
-   ],
-   "venue": "LinkedIn",
-   "authors": [
-    {
-     "name": "Zuzana Irsova",
-     "orcid": "https://orcid.org/0000-0002-0753-8124"
-    }
-   ],
-   "links": [],
    "syndicated": [
     {
      "label": "LinkedIn",
-     "url": "https://www.linkedin.com/posts/zuzanairsova_so-how-much-do-different-outlier-treatments-activity-7486767472440827905-HD5D"
-    }
-   ]
-  },
-  {
-   "slug": "maer-two-pre-registered-papers",
-   "title": "Two new pre-registered papers: outlier decisions in meta-analysis and AI feedback on meta-analyses",
-   "date": "2026-07-27",
-   "summary": "Two pre-registered papers are announced: recomputing 358 behavioral science meta-analyses under five outlier treatments changes conclusions in up to 15.9% of cases, and authors of 44 economics meta-analyses rank a single blinded AI pass above two multi-agent debate tools.",
-   "topics": [
-    "meta-analysis methods",
-    "AI and research"
-   ],
-   "keywords": [
-    "outlier treatments",
-    "meta-analysis",
-    "multi-agent debate",
-    "AI feedback",
-    "pre-registration"
-   ],
-   "venue": "MAER-Net",
-   "authors": [
-    {
-     "name": "Tomas Havranek",
-     "orcid": "https://orcid.org/0000-0002-3158-2539"
-    }
-   ],
-   "links": [],
-   "syndicated": [
-    {
-     "label": "MAER-Net",
-     "url": "https://www.maer-net.org/post/two-new-pre-registered-papers-outlier-decisions-in-meta-analysis-and-ai-feedback-on-meta"
+     "url": "https://www.linkedin.com/posts/zuzanairsova_a-few-weeks-ago-our-research-website-meta-analysiscz-activity-7500512261006897152-G4sV"
     }
    ]
   },
@@ -1386,25 +227,90 @@
    ]
   },
   {
-   "slug": "rebuilding-meta-analysis-cz",
-   "title": "The site was hacked, so we rebuilt it",
-   "date": "2026-09-01",
-   "summary": "meta-analysis.cz had barely changed since 2015, was updated over FTP and had no central backup, and it was hacked. Claude Code and Codex reconstructed it from Wayback Machine copies and scattered local files. The site now lives on GitHub, the whole dataset of 50 thousand estimates from 42 literatures is archived on Zenodo with a DOI, every paper has an HTML full text alongside its data and code, and MAIVE runs through EasyMeta.org.",
+   "slug": "maer-two-pre-registered-papers",
+   "title": "Two new pre-registered papers: outlier decisions in meta-analysis and AI feedback on meta-analyses",
+   "date": "2026-07-27",
+   "summary": "Two pre-registered papers are announced: recomputing 358 behavioral science meta-analyses under five outlier treatments changes conclusions in up to 15.9% of cases, and authors of 44 economics meta-analyses rank a single blinded AI pass above two multi-agent debate tools.",
    "topics": [
-    "AI and research",
-    "research tools"
+    "meta-analysis methods",
+    "AI and research"
    ],
    "keywords": [
-    "meta-analysis.cz",
-    "website reconstruction",
-    "AI agents",
-    "reproducibility",
-    "open data",
-    "Zenodo",
-    "MAIVE",
-    "EasyMeta"
+    "outlier treatments",
+    "meta-analysis",
+    "multi-agent debate",
+    "AI feedback",
+    "pre-registration"
+   ],
+   "venue": "MAER-Net",
+   "authors": [
+    {
+     "name": "Tomas Havranek",
+     "orcid": "https://orcid.org/0000-0002-3158-2539"
+    }
+   ],
+   "links": [],
+   "syndicated": [
+    {
+     "label": "MAER-Net",
+     "url": "https://www.maer-net.org/post/two-new-pre-registered-papers-outlier-decisions-in-meta-analysis-and-ai-feedback-on-meta"
+    }
+   ]
+  },
+  {
+   "slug": "do-outlier-decisions-matter",
+   "title": "Do outlier treatment decisions matter in meta-analysis?",
+   "date": "2026-07-25",
+   "summary": "Recomputing 358 behavioral science meta-analyses under five outlier treatments leaves most conclusions standing, but in 11.5% of them at least one treatment changes statistical significance and in 15.9% it changes whether the effect clears a smallest effect size of interest; winsorizing changes conclusions least, DFBETAS most.",
+   "topics": [
+    "meta-analysis methods"
+   ],
+   "keywords": [
+    "outlier treatments",
+    "meta-analysis",
+    "pre-registration",
+    "DFBETAS",
+    "winsorizing"
+   ],
+   "venue": "LinkedIn",
+   "authors": [
+    {
+     "name": "Zuzana Irsova",
+     "orcid": "https://orcid.org/0000-0002-0753-8124"
+    }
+   ],
+   "links": [],
+   "syndicated": [
+    {
+     "label": "LinkedIn",
+     "url": "https://www.linkedin.com/posts/zuzanairsova_so-how-much-do-different-outlier-treatments-activity-7486767472440827905-HD5D"
+    }
+   ]
+  },
+  {
+   "slug": "multi-agent-debate-ai-feedback",
+   "title": "What 44 meta-analysis authors said about AI feedback",
+   "date": "2026-07-16",
+   "updated": "2026-07-21",
+   "summary": "Probably not, at least for economics meta-analyses. Authors of 44 meta-analyses ranked three blinded AI reports on their own paper; a single prompt beat two multi-agent debate tools, one of which spent thirty times the tokens.",
+   "topics": [
+    "AI and research",
+    "peer review"
+   ],
+   "keywords": [
+    "AI feedback",
+    "multi-agent debate",
+    "LLM-as-a-judge",
+    "peer review",
+    "meta-analysis",
+    "pre-registration",
+    "test-time compute"
    ],
    "authors": [
+    {
+     "name": "Tomas Havranek",
+     "orcid": "https://orcid.org/0000-0002-3158-2539"
+    },
     {
      "name": "Zuzana Irsova",
      "orcid": "https://orcid.org/0000-0002-0753-8124"
@@ -1412,22 +318,1163 @@
    ],
    "links": [
     {
-     "label": "All datasets",
-     "url": "https://meta-analysis.cz/datasets/"
+     "label": "Paper (PDF)",
+     "url": "https://meta-analysis.cz/debate/debate.pdf"
     },
     {
-     "label": "Results",
-     "url": "https://meta-analysis.cz/results/"
+     "label": "Project page",
+     "url": "https://meta-analysis.cz/debate/"
     },
     {
-     "label": "Running MAIVE with EasyMeta",
-     "url": "https://meta-analysis.cz/maive/how-to/"
+     "label": "arXiv: 2607.14713",
+     "url": "https://arxiv.org/abs/2607.14713"
+    },
+    {
+     "label": "Pre-registration (OSF)",
+     "url": "https://doi.org/10.17605/OSF.IO/E6XGW"
+    },
+    {
+     "label": "Online supplement (OSF)",
+     "url": "https://osf.io/7nfyb"
+    },
+    {
+     "label": "Replication package (Zenodo)",
+     "url": "https://doi.org/10.5281/zenodo.21273528"
     }
    ],
    "syndicated": [
     {
+     "label": "Bluesky",
+     "url": "https://bsky.app/profile/irsova.bsky.social"
+    },
+    {
      "label": "LinkedIn",
-     "url": "https://www.linkedin.com/posts/zuzanairsova_a-few-weeks-ago-our-research-website-meta-analysiscz-activity-7500512261006897152-G4sV"
+     "url": "https://www.linkedin.com/feed/update/urn%3Ali%3AugcPost%3A7483554931325542401"
+    }
+   ]
+  },
+  {
+   "slug": "a-tool-for-your-erc-proposal",
+   "title": "An AI tool for checking your ERC proposal",
+   "date": "2026-06-23",
+   "summary": "A tool checks an ERC draft against the official evaluation criteria and flags the routine weak spots, so the easy problems are cleared before you ask colleagues to read it. It does not replace human review.",
+   "topics": [
+    "research tools",
+    "peer review"
+   ],
+   "keywords": [
+    "ERC proposals",
+    "AI feedback",
+    "grant writing",
+    "research tools",
+    "peer review"
+   ],
+   "venue": "LinkedIn",
+   "authors": [
+    {
+     "name": "Zuzana Irsova",
+     "orcid": "https://orcid.org/0000-0002-0753-8124"
+    }
+   ],
+   "links": [],
+   "syndicated": [
+    {
+     "label": "LinkedIn",
+     "url": "https://www.linkedin.com/feed/update/urn%3Ali%3Ashare%3A7475160943409135616"
+    }
+   ]
+  },
+  {
+   "slug": "a-panel-of-experts-for-your-paper",
+   "title": "A simulated expert panel that stress-tests and rebuilds your paper",
+   "date": "2026-06-10",
+   "summary": "The paper-workshop Claude Code skill assembles a simulated panel of experts to stress-test a research paper, then rebuilds it in tracked changes with a replication package, re-running the author's Stata and R code.",
+   "topics": [
+    "research tools",
+    "peer review"
+   ],
+   "keywords": [
+    "paper-workshop",
+    "Claude Code",
+    "research tools",
+    "replication",
+    "peer review"
+   ],
+   "venue": "LinkedIn",
+   "authors": [
+    {
+     "name": "Zuzana Irsova",
+     "orcid": "https://orcid.org/0000-0002-0753-8124"
+    }
+   ],
+   "links": [],
+   "syndicated": [
+    {
+     "label": "LinkedIn",
+     "url": "https://www.linkedin.com/feed/update/urn%3Ali%3Ashare%3A7470445147063803904"
+    }
+   ]
+  },
+  {
+   "slug": "maer-stress-testing",
+   "title": "Stress-testing research with AI, now super easy and fully automated",
+   "date": "2026-05-31",
+   "summary": "The research-stress-testing protocol is now automated as a Claude Code skill: describe a task in one sentence, and Claude calls OpenAI's Codex to run critique and synthesis rounds and returns a memo with the full debate trail.",
+   "topics": [
+    "AI and research",
+    "research tools"
+   ],
+   "keywords": [
+    "multi-agent debate",
+    "Claude Code",
+    "Codex",
+    "stress testing",
+    "research audit"
+   ],
+   "venue": "MAER-Net",
+   "authors": [
+    {
+     "name": "Tomas Havranek",
+     "orcid": "https://orcid.org/0000-0002-3158-2539"
+    }
+   ],
+   "links": [],
+   "syndicated": [
+    {
+     "label": "MAER-Net",
+     "url": "https://www.maer-net.org/post/stress-testing-research-with-ai-now-super-easy-and-fully-automated"
+    }
+   ]
+  },
+  {
+   "slug": "claude-code-with-codex-stress-test",
+   "title": "Claude Code can call Codex to stress-test its own work",
+   "date": "2026-05-30",
+   "summary": "A Claude Code skill can call OpenAI's Codex to stress-test its own work, letting researchers switch between the two tools or fall back to one when the other hits its usage limit.",
+   "topics": [
+    "AI and research",
+    "research tools"
+   ],
+   "keywords": [
+    "Claude Code",
+    "Codex",
+    "multi-agent debate",
+    "research tools",
+    "stress testing"
+   ],
+   "venue": "LinkedIn",
+   "authors": [
+    {
+     "name": "Zuzana Irsova",
+     "orcid": "https://orcid.org/0000-0002-0753-8124"
+    }
+   ],
+   "links": [],
+   "syndicated": [
+    {
+     "label": "LinkedIn",
+     "url": "https://www.linkedin.com/feed/update/urn%3Ali%3Ashare%3A7466382253208645634"
+    }
+   ]
+  },
+  {
+   "slug": "reporting-guidelines-updated-for-ai",
+   "title": "Reporting guidelines for meta-analysis, updated for AI",
+   "date": "2026-05-13",
+   "summary": "The Journal of Economic Surveys has published updated reporting guidelines for meta-analysis in economics, this time addressing AI use in search, screening, and coding, with a personal recommendation to combine RoBMA with MAIVE and RTMA.",
+   "topics": [
+    "meta-analysis methods",
+    "AI and research"
+   ],
+   "keywords": [
+    "reporting guidelines",
+    "AI and research",
+    "RoBMA",
+    "MAIVE",
+    "meta-analysis"
+   ],
+   "venue": "LinkedIn",
+   "authors": [
+    {
+     "name": "Zuzana Irsova",
+     "orcid": "https://orcid.org/0000-0002-0753-8124"
+    }
+   ],
+   "links": [],
+   "syndicated": [
+    {
+     "label": "LinkedIn",
+     "url": "https://www.linkedin.com/feed/update/urn%3Ali%3Ashare%3A7460202147213791232"
+    }
+   ]
+  },
+  {
+   "slug": "redoing-a-meta-analysis-from-scratch",
+   "title": "Pre-registering a full redo of the beauty premium meta-analysis",
+   "date": "2026-04-28",
+   "summary": "We are redoing our meta-analysis of beauty and professional success from scratch: pre-registered, with a librarian-designed search, dual screening and coding checks. It doubles as a natural experiment on our own earlier work.",
+   "topics": [
+    "meta-analysis methods",
+    "research tools"
+   ],
+   "keywords": [
+    "beauty premium",
+    "pre-registration",
+    "systematic review",
+    "meta-analysis",
+    "publication bias"
+   ],
+   "venue": "LinkedIn",
+   "authors": [
+    {
+     "name": "Zuzana Irsova",
+     "orcid": "https://orcid.org/0000-0002-0753-8124"
+    }
+   ],
+   "links": [],
+   "syndicated": [
+    {
+     "label": "LinkedIn",
+     "url": "https://www.linkedin.com/feed/update/urn%3Ali%3Ashare%3A7454914753266692097"
+    }
+   ]
+  },
+  {
+   "slug": "note-in-journal-of-economic-surveys",
+   "title": "New guidance on using AI in meta-analysis",
+   "date": "2026-04-22",
+   "summary": "A note in the Journal of Economic Surveys sets a floor for AI use in meta-analysis: humans lead and remain accountable, AI cannot be an author, at least 10% of screening records and 10% of coded studies are audited by hand (or 100 and 20, whichever is larger), and anything that shapes the results is disclosed, with prompts and model versions saved.",
+   "topics": [
+    "AI and research",
+    "meta-analysis methods"
+   ],
+   "keywords": [
+    "AI and research",
+    "meta-analysis guidance",
+    "peer review",
+    "research integrity"
+   ],
+   "venue": "LinkedIn",
+   "authors": [
+    {
+     "name": "Zuzana Irsova",
+     "orcid": "https://orcid.org/0000-0002-0753-8124"
+    }
+   ],
+   "links": [],
+   "syndicated": [
+    {
+     "label": "LinkedIn",
+     "url": "https://www.linkedin.com/feed/update/urn%3Ali%3Ashare%3A7452590050799853568"
+    }
+   ]
+  },
+  {
+   "slug": "brodeur-team-reproducibility-numbers",
+   "title": "A caveat on the Brodeur team's Nature reproducibility study",
+   "date": "2026-04-02",
+   "summary": "A short comment on the Nature reproducibility study I co-authored: the numbers look good, but the papers replicated came from journals that already mandate data and code sharing. Share your data and code, and pre-register.",
+   "topics": [
+    "economics",
+    "research tools"
+   ],
+   "keywords": [
+    "reproducibility",
+    "replication",
+    "economics research",
+    "data sharing",
+    "pre-registration"
+   ],
+   "venue": "LinkedIn",
+   "authors": [
+    {
+     "name": "Zuzana Irsova",
+     "orcid": "https://orcid.org/0000-0002-0753-8124"
+    }
+   ],
+   "links": [],
+   "syndicated": [
+    {
+     "label": "LinkedIn",
+     "url": "https://www.linkedin.com/feed/update/urn%3Ali%3Ashare%3A7445392769788968960"
+    }
+   ]
+  },
+  {
+   "slug": "four-models-debating-works-better",
+   "title": "Four AI models debating works better than two",
+   "date": "2026-03-19",
+   "summary": "An updated research audit protocol (MAD v2.0) runs ChatGPT, Claude, Gemini, and Grok through independent critique, cross-examination, and a final synthesis, using copy-paste prompts with no coding required, or full automation via API frameworks. A pre-registered experiment four months later put this to a test of a different shape: authors of 44 meta-analyses ranked a single pass by one frontier model above two multi-agent debate tools.",
+   "topics": [
+    "AI and research",
+    "research tools"
+   ],
+   "keywords": [
+    "multi-agent debate",
+    "research audit protocol",
+    "AI and research",
+    "stress testing"
+   ],
+   "venue": "LinkedIn",
+   "authors": [
+    {
+     "name": "Zuzana Irsova",
+     "orcid": "https://orcid.org/0000-0002-0753-8124"
+    }
+   ],
+   "links": [],
+   "syndicated": [
+    {
+     "label": "LinkedIn",
+     "url": "https://www.linkedin.com/feed/update/urn%3Ali%3Ashare%3A7440296636783960064"
+    }
+   ]
+  },
+  {
+   "slug": "correcting-for-p-hacking-too",
+   "title": "Meta-analysis should correct for p-hacking too",
+   "date": "2026-03-09",
+   "summary": "Corrections for publication bias assume individually unbiased estimates, an assumption p-hacking violates. The Nature Communications MAIVE paper shows that under some forms of p-hacking, classical publication-bias corrections can be more biased than a simple average.",
+   "topics": [
+    "meta-analysis methods",
+    "publication bias"
+   ],
+   "keywords": [
+    "p-hacking",
+    "MAIVE",
+    "RTMA",
+    "publication bias",
+    "meta-analysis"
+   ],
+   "venue": "LinkedIn",
+   "authors": [
+    {
+     "name": "Zuzana Irsova",
+     "orcid": "https://orcid.org/0000-0002-0753-8124"
+    }
+   ],
+   "links": [],
+   "syndicated": [
+    {
+     "label": "LinkedIn",
+     "url": "https://www.linkedin.com/feed/update/urn%3Ali%3Ashare%3A7436800791929151488"
+    }
+   ]
+  },
+  {
+   "slug": "browser-tool-for-publication-bias",
+   "title": "A browser tool for correcting publication bias",
+   "date": "2026-01-27",
+   "summary": "EasyMeta.org lets researchers upload a dataset and run bias corrections, including MAIVE and PET-PEESE, directly in the browser, with clustering options and exportable R code, and no installation or coding required.",
+   "topics": [
+    "research tools",
+    "publication bias"
+   ],
+   "keywords": [
+    "EasyMeta",
+    "MAIVE",
+    "PET-PEESE",
+    "research tools",
+    "publication bias"
+   ],
+   "venue": "LinkedIn",
+   "authors": [
+    {
+     "name": "Zuzana Irsova",
+     "orcid": "https://orcid.org/0000-0002-0753-8124"
+    }
+   ],
+   "links": [],
+   "syndicated": [
+    {
+     "label": "LinkedIn",
+     "url": "https://www.linkedin.com/feed/update/urn%3Ali%3AugcPost%3A7421813900372918272"
+    }
+   ]
+  },
+  {
+   "slug": "maer-ai-duels",
+   "title": "Stress-Testing Meta-Research with AI Duels",
+   "date": "2025-12-12",
+   "summary": "The Research Audit Protocol coordinates ChatGPT and Gemini in a structured, human-in-the-loop duel of anchor assessment, adversarial probing, and synthesis, illustrated with a case study auditing the proposed WAIVE idea against the MAIVE framework.",
+   "topics": [
+    "AI and research",
+    "meta-analysis methods"
+   ],
+   "keywords": [
+    "research audit protocol",
+    "multi-agent debate",
+    "MAIVE",
+    "WAIVE",
+    "meta-analysis"
+   ],
+   "venue": "MAER-Net",
+   "authors": [
+    {
+     "name": "Zuzana Irsova",
+     "orcid": "https://orcid.org/0000-0002-0753-8124"
+    },
+    {
+     "name": "Tomas Havranek",
+     "orcid": "https://orcid.org/0000-0002-3158-2539"
+    }
+   ],
+   "links": [],
+   "syndicated": [
+    {
+     "label": "MAER-Net",
+     "url": "https://www.maer-net.org/post/ai_duel"
+    },
+    {
+     "label": "LinkedIn",
+     "url": "https://www.linkedin.com/feed/update/urn%3Ali%3Ashare%3A7405164270306504704"
+    }
+   ]
+  },
+  {
+   "slug": "maer-maive-cran",
+   "title": "MAIVE Is Now on CRAN",
+   "date": "2025-12-10",
+   "summary": "MAIVE, the bias-correction estimator for meta-analysis published in Nature Communications, is now installable directly from CRAN, alongside the existing EasyMeta.org web app that runs MAIVE, PET-PEESE, and the endogenous kink model with one click.",
+   "topics": [
+    "meta-analysis methods",
+    "research tools"
+   ],
+   "keywords": [
+    "MAIVE",
+    "CRAN",
+    "R package",
+    "meta-analysis",
+    "bias correction"
+   ],
+   "venue": "MAER-Net",
+   "authors": [
+    {
+     "name": "Zuzana Irsova",
+     "orcid": "https://orcid.org/0000-0002-0753-8124"
+    }
+   ],
+   "links": [],
+   "syndicated": [
+    {
+     "label": "MAER-Net",
+     "url": "https://www.maer-net.org/post/maive-is-now-on-cran"
+    },
+    {
+     "label": "LinkedIn",
+     "url": "https://www.linkedin.com/feed/update/urn%3Ali%3Ashare%3A7404420382004539392"
+    }
+   ]
+  },
+  {
+   "slug": "maer-ottawa-colloquium",
+   "title": "Highlights from the 2025 MAER-Net Colloquium in Ottawa",
+   "date": "2025-10-31",
+   "summary": "The 2025 MAER-Net Colloquium in Ottawa was a great success: Abel Brodeur received the Founders' Medal, Shinichi Nakagawa and Andrew Gelman gave the keynotes, and in 2026 we move to Chemnitz.",
+   "topics": [
+    "meta-analysis methods"
+   ],
+   "keywords": [
+    "MAER-Net",
+    "colloquium",
+    "Ottawa",
+    "Founders' Medal",
+    "conference report"
+   ],
+   "venue": "MAER-Net",
+   "authors": [
+    {
+     "name": "Tom Stanley"
+    },
+    {
+     "name": "Sebastian Gechert"
+    },
+    {
+     "name": "Jerome Geyer-Klingeberg"
+    },
+    {
+     "name": "Tomas Havranek",
+     "orcid": "https://orcid.org/0000-0002-3158-2539"
+    }
+   ],
+   "links": [],
+   "syndicated": [
+    {
+     "label": "MAER-Net",
+     "url": "https://www.maer-net.org/post/highlights-from-the-2025-maer-net-colloquium-in-ottawa"
+    }
+   ]
+  },
+  {
+   "slug": "spurious-precision-nature-communications",
+   "title": "Spurious precision in meta-analysis, published in Nature Communications",
+   "date": "2025-10-26",
+   "summary": "Nature Communications has published the MAIVE paper, showing that meta-analyses can be misled when a study's reported precision reflects method choices rather than real evidence strength, and introducing a correction, MAIVE, for this bias.",
+   "topics": [
+    "meta-analysis methods",
+    "publication bias"
+   ],
+   "keywords": [
+    "MAIVE",
+    "spurious precision",
+    "Nature Communications",
+    "publication bias",
+    "meta-analysis"
+   ],
+   "venue": "LinkedIn",
+   "authors": [
+    {
+     "name": "Zuzana Irsova",
+     "orcid": "https://orcid.org/0000-0002-0753-8124"
+    }
+   ],
+   "links": [],
+   "syndicated": [
+    {
+     "label": "LinkedIn",
+     "url": "https://www.linkedin.com/feed/update/urn%3Ali%3Ashare%3A7388172095639265282"
+    }
+   ]
+  },
+  {
+   "slug": "springer-spurious-precision",
+   "title": "Spurious precision in meta-analysis: why we built MAIVE",
+   "date": "2025-09-27",
+   "summary": "Meta-analyses give more weight to precise studies. But what if the reported precision is spurious? We introduce MAIVE, a new estimator that tackles this problem.",
+   "topics": [
+    "meta-analysis methods",
+    "publication bias"
+   ],
+   "keywords": [
+    "MAIVE",
+    "spurious precision",
+    "publication bias",
+    "funnel plot",
+    "instrumental variable"
+   ],
+   "venue": "Springer Nature Research Communities",
+   "authors": [
+    {
+     "name": "Zuzana Irsova",
+     "orcid": "https://orcid.org/0000-0002-0753-8124"
+    }
+   ],
+   "links": [],
+   "syndicated": [
+    {
+     "label": "Springer Nature Research Communities",
+     "url": "https://communities.springernature.com/posts/spurious-precision-in-meta-analysis"
+    }
+   ]
+  },
+  {
+   "slug": "maer-easymeta",
+   "title": "Bias Correction Made Easy: A Web App for Meta-Analysis at EasyMeta.org",
+   "date": "2025-09-27",
+   "summary": "Run MAIVE, PET-PEESE, and EK with one click, no coding, no installation.",
+   "topics": [
+    "meta-analysis methods",
+    "research tools"
+   ],
+   "keywords": [
+    "MAIVE",
+    "PET-PEESE",
+    "endogenous kink",
+    "web app",
+    "meta-analysis",
+    "bias correction"
+   ],
+   "venue": "MAER-Net",
+   "authors": [
+    {
+     "name": "Zuzana Irsova",
+     "orcid": "https://orcid.org/0000-0002-0753-8124"
+    }
+   ],
+   "links": [],
+   "syndicated": [
+    {
+     "label": "MAER-Net",
+     "url": "https://www.maer-net.org/post/bias-correction-made-easy-a-web-app-for-meta-analysis-at-easymeta-org"
+    }
+   ]
+  },
+  {
+   "slug": "maer-ai-tools",
+   "title": "AI Tools for Meta-Analysis",
+   "date": "2025-07-30",
+   "summary": "I think AI tools have now reached the point where they can save real time in literature search and data collection. Here is what worked for me in mid-2025, mostly in ChatGPT, and where a competent human still has to check carefully what the AI returns.",
+   "topics": [
+    "AI and research",
+    "meta-analysis methods"
+   ],
+   "keywords": [
+    "AI tools",
+    "literature search",
+    "data collection",
+    "meta-analysis",
+    "ChatGPT"
+   ],
+   "venue": "MAER-Net",
+   "authors": [
+    {
+     "name": "Tomas Havranek",
+     "orcid": "https://orcid.org/0000-0002-3158-2539"
+    }
+   ],
+   "links": [],
+   "syndicated": [
+    {
+     "label": "MAER-Net",
+     "url": "https://www.maer-net.org/post/ai-tools-for-meta-analysis"
+    }
+   ]
+  },
+  {
+   "slug": "maer-new-challenges",
+   "title": "New Challenges for Meta-Analysis: Attenuation Bias, P-Hacking, Preferred Estimates",
+   "date": "2025-07-07",
+   "summary": "Our recent meta-analyses highlight three issues for the field: attenuation bias can rival publication bias in distorting results; new methods like MAIVE address p-hacking more effectively; and author preferred estimates may systematically differ from others.",
+   "topics": [
+    "meta-analysis methods",
+    "publication bias"
+   ],
+   "keywords": [
+    "attenuation bias",
+    "p-hacking",
+    "preferred estimates",
+    "MAIVE",
+    "publication bias"
+   ],
+   "venue": "MAER-Net",
+   "authors": [
+    {
+     "name": "Tomas Havranek",
+     "orcid": "https://orcid.org/0000-0002-3158-2539"
+    }
+   ],
+   "links": [],
+   "syndicated": [
+    {
+     "label": "MAER-Net",
+     "url": "https://www.maer-net.org/post/new-challenges-for-meta-analysis-attenuation-bias-p-hacking-preferred-estimates"
+    }
+   ]
+  },
+  {
+   "slug": "maer-methods-guidelines",
+   "title": "Methods Guidelines for Meta-Analysis",
+   "date": "2023-11-27",
+   "summary": "Our methods guidelines are out in the Journal of Economic Surveys. Here I pick the seven issues I personally find most important: choosing a topic, comparability, study quality, multiple estimates per study, correction techniques, Bayesian approaches, and the implied best-practice estimate.",
+   "topics": [
+    "meta-analysis methods"
+   ],
+   "keywords": [
+    "meta-analysis methods",
+    "guidelines",
+    "Journal of Economic Surveys",
+    "model averaging",
+    "publication bias correction"
+   ],
+   "venue": "MAER-Net",
+   "authors": [
+    {
+     "name": "Zuzana Irsova",
+     "orcid": "https://orcid.org/0000-0002-0753-8124"
+    }
+   ],
+   "links": [],
+   "syndicated": [
+    {
+     "label": "MAER-Net",
+     "url": "https://www.maer-net.org/post/methods-guidelines-for-meta-analysis"
+    }
+   ]
+  },
+  {
+   "slug": "maer-spurious-precision",
+   "title": "Spurious precision in meta-analysis: introducing MAIVE",
+   "date": "2023-02-16",
+   "summary": "Meta-analysis gives more weight to studies that report smaller standard errors, but precision is estimated, not given, and can be p-hacked. Cures for publication bias can then be worse than the disease, so we introduce MAIVE, which instruments reported precision with sample size.",
+   "topics": [
+    "meta-analysis methods",
+    "publication bias"
+   ],
+   "keywords": [
+    "MAIVE",
+    "spurious precision",
+    "p-hacking",
+    "inverse-variance weighting",
+    "publication bias",
+    "instrumental variable"
+   ],
+   "venue": "MAER-Net",
+   "authors": [
+    {
+     "name": "Zuzana Irsova",
+     "orcid": "https://orcid.org/0000-0002-0753-8124"
+    },
+    {
+     "name": "Pedro R. D. Bom"
+    },
+    {
+     "name": "Tomas Havranek",
+     "orcid": "https://orcid.org/0000-0002-3158-2539"
+    },
+    {
+     "name": "Heiko Rachinger"
+    }
+   ],
+   "links": [],
+   "syndicated": [
+    {
+     "label": "MAER-Net",
+     "url": "https://www.maer-net.org/post/maive"
+    }
+   ]
+  },
+  {
+   "slug": "voxeu-incentives",
+   "title": "How financial incentives affect performance",
+   "date": "2023-02-13",
+   "summary": "A meta-analysis of experimental economics studies finds the effect of financial incentives on performance is negligible across field-experiment contexts once publication bias and experimental context are accounted for, which suggests money-based nudges may be less effective than commonly thought.",
+   "topics": [
+    "meta-analysis methods",
+    "economics"
+   ],
+   "keywords": [
+    "financial incentives",
+    "performance",
+    "meta-analysis",
+    "publication bias",
+    "motivation crowding"
+   ],
+   "venue": "VoxEU / CEPR",
+   "authors": [
+    {
+     "name": "Petr Cala"
+    },
+    {
+     "name": "Tomas Havranek",
+     "orcid": "https://orcid.org/0000-0002-3158-2539"
+    },
+    {
+     "name": "Zuzana Irsova",
+     "orcid": "https://orcid.org/0000-0002-0753-8124"
+    },
+    {
+     "name": "Jindrich Matousek"
+    },
+    {
+     "name": "Jiri Novak"
+    }
+   ],
+   "links": [],
+   "syndicated": [
+    {
+     "label": "VoxEU / CEPR",
+     "url": "https://cepr.org/voxeu/columns/how-financial-incentives-affect-performance"
+    }
+   ]
+  },
+  {
+   "slug": "voxeu-armington",
+   "title": "Armington elasticity and international trade models: Fifty years on",
+   "date": "2020-09-23",
+   "summary": "A meta-analysis of 3,524 estimates of the Armington elasticity of substitution between domestic and foreign goods, corrected for publication bias, implies a range of 2.5-5.1 with a median of 3.8, equivalent to a trade cost elasticity of 2.8.",
+   "topics": [
+    "meta-analysis methods",
+    "economics"
+   ],
+   "keywords": [
+    "Armington elasticity",
+    "international trade",
+    "elasticity of substitution",
+    "meta-analysis",
+    "publication bias"
+   ],
+   "venue": "VoxEU / CEPR",
+   "authors": [
+    {
+     "name": "Josef Bajzik"
+    },
+    {
+     "name": "Tomas Havranek",
+     "orcid": "https://orcid.org/0000-0002-3158-2539"
+    },
+    {
+     "name": "Zuzana Irsova",
+     "orcid": "https://orcid.org/0000-0002-0753-8124"
+    },
+    {
+     "name": "Jiri Schwarz"
+    }
+   ],
+   "links": [],
+   "syndicated": [
+    {
+     "label": "VoxEU / CEPR",
+     "url": "https://cepr.org/voxeu/columns/armington-elasticity-and-international-trade-models-fifty-years"
+    }
+   ]
+  },
+  {
+   "slug": "maer-reporting-guidelines",
+   "title": "Revision of Reporting Guidelines",
+   "date": "2019-11-11",
+   "summary": "Seven years on from the current reporting guidelines for meta-analysis in economics, I offer 12 subjective recommendations I miss in them, and ask MAER-Net to argue about the list before anyone drafts a revision.",
+   "topics": [
+    "meta-analysis methods"
+   ],
+   "keywords": [
+    "reporting guidelines",
+    "meta-analysis",
+    "MAER-Net",
+    "publication bias",
+    "robustness checks"
+   ],
+   "venue": "MAER-Net",
+   "authors": [
+    {
+     "name": "Tomas Havranek",
+     "orcid": "https://orcid.org/0000-0002-3158-2539"
+    }
+   ],
+   "links": [],
+   "syndicated": [
+    {
+     "label": "MAER-Net",
+     "url": "https://www.maer-net.org/post/revision-of-reporting-guidelines"
+    }
+   ]
+  },
+  {
+   "slug": "maer-cobb-douglas",
+   "title": "Death to the Cobb-Douglas Production Function!",
+   "date": "2019-09-25",
+   "summary": "A meta-analysis of 3,186 estimates from 121 studies finds a mean capital-labor elasticity of substitution of 0.9, close to the Cobb-Douglas value of 1, but correcting for publication bias, data aggregation, and omitted first-order conditions lowers the recommended calibration to 0.3.",
+   "topics": [
+    "meta-analysis methods",
+    "economics"
+   ],
+   "keywords": [
+    "elasticity of substitution",
+    "Cobb-Douglas",
+    "meta-analysis",
+    "publication bias",
+    "capital-labor substitution"
+   ],
+   "venue": "MAER-Net",
+   "authors": [
+    {
+     "name": "Sebastian Gechert"
+    },
+    {
+     "name": "Tomas Havranek",
+     "orcid": "https://orcid.org/0000-0002-3158-2539"
+    },
+    {
+     "name": "Zuzana Irsova",
+     "orcid": "https://orcid.org/0000-0002-0753-8124"
+    },
+    {
+     "name": "Dominika Kolcunova"
+    }
+   ],
+   "links": [],
+   "syndicated": [
+    {
+     "label": "MAER-Net",
+     "url": "https://www.maer-net.org/post/death-to-the-cobb-douglas-production-function"
+    }
+   ]
+  },
+  {
+   "slug": "maer-model-averaging",
+   "title": "Why Model Averaging Is Useful in Meta-Analysis",
+   "date": "2019-02-27",
+   "summary": "Run a regression with more than a handful of candidate variables and the question is which ones belong in the baseline. Model averaging answers it by weighting many specifications rather than picking one, and it is what we use for meta-regression.",
+   "topics": [
+    "meta-analysis methods"
+   ],
+   "keywords": [
+    "model averaging",
+    "model uncertainty",
+    "Bayesian model averaging",
+    "meta-regression"
+   ],
+   "venue": "MAER-Net",
+   "authors": [
+    {
+     "name": "Tomas Havranek",
+     "orcid": "https://orcid.org/0000-0002-3158-2539"
+    }
+   ],
+   "links": [],
+   "syndicated": [
+    {
+     "label": "MAER-Net",
+     "url": "https://www.maer-net.org/post/model-averaging"
+    }
+   ]
+  },
+  {
+   "slug": "cnb-advisor-opinion-8sz-2018",
+   "title": "Advisor's opinion to the CNB Bank Board: Situation Report No. 8, 2018",
+   "date": "2018-12-19",
+   "summary": "Rate increases were barely reaching households: the effective rate on consumption, which the model does not see, rose 0.1 percentage point since the exit while PRIBOR rose 1.5. The thematic comment is a separate argument: that the CNB's g3 model overstates how fast consumption responds to rates, because it fixes the elasticity of intertemporal substitution at 1 where the literature, 2,735 estimates from 169 studies, puts it near a third. Written for the Bank Board in December 2018, released by the Bank in 2025.",
+   "topics": [
+    "monetary policy",
+    "economics"
+   ],
+   "keywords": [
+    "monetary transmission",
+    "elasticity of intertemporal substitution",
+    "interest rates",
+    "exchange rate forecast",
+    "PRIBOR",
+    "monetary policy",
+    "Czech National Bank"
+   ],
+   "authors": [
+    {
+     "name": "Tomas Havranek",
+     "orcid": "https://orcid.org/0000-0002-3158-2539"
+    }
+   ],
+   "links": [
+    {
+     "label": "Original document (Czech National Bank)",
+     "url": "https://www.cnb.cz/export/sites/cnb/cs/menova-politika/.galleries/br_zapisy_z_jednani/2018/download/stanoviska_2018_08.pdf"
+    },
+    {
+     "label": "Original document (PDF)",
+     "url": "https://meta-analysis.cz/komentare/files/cnb-stanoviska-8sz-2018.pdf"
+    },
+    {
+     "label": "Czech original",
+     "url": "https://meta-analysis.cz/komentare/cnb-stanovisko-poradce-8sz-2018/"
+    }
+   ]
+  },
+  {
+   "slug": "globaldev-natural-resources",
+   "title": "Natural resources and economic growth: the research evidence",
+   "date": "2018-02-13",
+   "summary": "A review of more than 40 studies on natural resources and economic growth finds only very weak support for a resource curse once publication bias and method heterogeneity are accounted for, with the effect strongly dependent on the quality of a country's institutions.",
+   "topics": [
+    "meta-analysis methods",
+    "economics"
+   ],
+   "keywords": [
+    "natural resource curse",
+    "economic growth",
+    "meta-analysis",
+    "institutions",
+    "publication bias"
+   ],
+   "venue": "GlobalDev Blog",
+   "authors": [
+    {
+     "name": "Tomas Havranek",
+     "orcid": "https://orcid.org/0000-0002-3158-2539"
+    },
+    {
+     "name": "Roman Horvath"
+    }
+   ],
+   "links": [],
+   "syndicated": [
+    {
+     "label": "GlobalDev Blog",
+     "url": "https://globaldev.blog/natural-resources-and-economic-growth-research-evidence/"
+    }
+   ]
+  },
+  {
+   "slug": "voxeu-daylight-saving",
+   "title": "Daylight saving saves no energy",
+   "date": "2017-12-02",
+   "summary": "A meta-analysis of 162 estimates from 44 studies finds no publication bias and an essentially zero average effect of daylight saving time on energy consumption, with even the best case, Norway, saving only about 0.3% of annual energy use.",
+   "topics": [
+    "meta-analysis methods",
+    "economics"
+   ],
+   "keywords": [
+    "daylight saving time",
+    "energy consumption",
+    "meta-analysis",
+    "publication bias",
+    "best-practice estimates"
+   ],
+   "venue": "VoxEU / CEPR",
+   "authors": [
+    {
+     "name": "Dominik Herman"
+    },
+    {
+     "name": "Zuzana Irsova",
+     "orcid": "https://orcid.org/0000-0002-0753-8124"
+    },
+    {
+     "name": "Tomas Havranek",
+     "orcid": "https://orcid.org/0000-0002-3158-2539"
+    }
+   ],
+   "links": [],
+   "syndicated": [
+    {
+     "label": "VoxEU / CEPR",
+     "url": "https://cepr.org/voxeu/columns/daylight-saving-saves-no-energy"
+    }
+   ]
+  },
+  {
+   "slug": "cnb-advisor-opinion-6sz-2017",
+   "title": "Advisor's opinion to the CNB Bank Board: Situation Report No. 6, 2017",
+   "date": "2017-09-25",
+   "summary": "Recessions have needed about 5.5 percentage points of easing on average, so raising rates at every other meeting would not rebuild that cushion until 2023. The opinion argues for a steeper path while conditions are favorable, then sets out what is left when the cushion runs out: forward guidance, direct support of consumption, a bonus for cash withdrawals, and what each would mean for the inflation target. Written for the Bank Board in September 2017, released by the Bank in 2024.",
+   "topics": [
+    "monetary policy",
+    "economics"
+   ],
+   "keywords": [
+    "interest rates",
+    "effective lower bound",
+    "recession",
+    "forward guidance",
+    "helicopter money",
+    "monetary policy",
+    "Czech National Bank"
+   ],
+   "authors": [
+    {
+     "name": "Tomas Havranek",
+     "orcid": "https://orcid.org/0000-0002-3158-2539"
+    }
+   ],
+   "links": [
+    {
+     "label": "Original document (Czech National Bank)",
+     "url": "https://www.cnb.cz/export/sites/cnb/cs/menova-politika/.galleries/br_zapisy_z_jednani/2017/download/stanoviska_2017_06.pdf"
+    },
+    {
+     "label": "Original document (PDF)",
+     "url": "https://meta-analysis.cz/komentare/files/cnb-stanoviska-6sz-2017.pdf"
+    },
+    {
+     "label": "Czech original",
+     "url": "https://meta-analysis.cz/komentare/cnb-stanovisko-poradce-6sz-2017/"
+    }
+   ]
+  },
+  {
+   "slug": "voxeu-home-ownership",
+   "title": "Headline inflation measures shouldn't ignore costs of home ownership",
+   "date": "2017-09-12",
+   "summary": "Excluding owner-occupied housing costs from the EU's harmonised index of consumer prices leaves out what most people experience as inflation; including imputed rents, as the US and Japan already do, would make Eurozone monetary policy more countercyclical.",
+   "topics": [
+    "economics"
+   ],
+   "keywords": [
+    "inflation measurement",
+    "home ownership",
+    "HICP",
+    "monetary policy",
+    "imputed rent"
+   ],
+   "venue": "VoxEU / CEPR",
+   "authors": [
+    {
+     "name": "Tomas Havranek",
+     "orcid": "https://orcid.org/0000-0002-3158-2539"
+    },
+    {
+     "name": "Mojmir Hampl"
+    }
+   ],
+   "links": [],
+   "syndicated": [
+    {
+     "label": "VoxEU / CEPR",
+     "url": "https://cepr.org/voxeu/columns/headline-inflation-measures-shouldnt-ignore-costs-home-ownership"
+    }
+   ]
+  },
+  {
+   "slug": "cnb-advisor-opinion-6sz-2016",
+   "title": "Advisor's opinion to the CNB Bank Board: Situation Report No. 6, 2016",
+   "date": "2016-09-26",
+   "summary": "Shadow rate estimates put the effective stance of Czech policy near minus 8 percent and the ECB's near minus 7, far below either published rate. The opinion reads the interest rate differential and the koruna forward curve for what the market expected of the exit from the exchange rate commitment. Written for the Bank Board in September 2016, released by the Bank in 2023.",
+   "topics": [
+    "monetary policy",
+    "economics"
+   ],
+   "keywords": [
+    "shadow rate",
+    "exchange rate commitment",
+    "negative interest rates",
+    "interest rate differential",
+    "forward exchange rates",
+    "monetary policy",
+    "Czech National Bank"
+   ],
+   "authors": [
+    {
+     "name": "Tomas Havranek",
+     "orcid": "https://orcid.org/0000-0002-3158-2539"
+    }
+   ],
+   "links": [
+    {
+     "label": "Original document (Czech National Bank)",
+     "url": "https://www.cnb.cz/export/sites/cnb/cs/menova-politika/.galleries/br_zapisy_z_jednani/2016/download/stanovisko_poradce_2016_06.pdf"
+    },
+    {
+     "label": "Original document (PDF)",
+     "url": "https://meta-analysis.cz/komentare/files/cnb-stanovisko-6sz-2016.pdf"
+    },
+    {
+     "label": "Czech original",
+     "url": "https://meta-analysis.cz/komentare/cnb-stanovisko-poradce-6sz-2016/"
+    }
+   ]
+  },
+  {
+   "slug": "cnb-advisor-opinion-2sz-2016",
+   "title": "Advisor's opinion to the CNB Bank Board: Situation Report No. 2, 2016",
+   "date": "2016-03-29",
+   "summary": "A synthetic control built from countries that ran no exchange rate commitment puts its contribution to Czech GDP growth at almost 2 percentage points in 2015, and its effect on unemployment at a gap of nearly 2 points, about 100 thousand jobs. The opinion then works through the experience of the seven central banks then using negative rates and where the effective lower bound actually lies. Written for the Bank Board in March 2016, released by the Bank in 2023.",
+   "topics": [
+    "monetary policy",
+    "economics"
+   ],
+   "keywords": [
+    "exchange rate commitment",
+    "synthetic control",
+    "negative interest rates",
+    "effective lower bound",
+    "monetary policy",
+    "Czech National Bank"
+   ],
+   "authors": [
+    {
+     "name": "Tomas Havranek",
+     "orcid": "https://orcid.org/0000-0002-3158-2539"
+    }
+   ],
+   "links": [
+    {
+     "label": "Original document (Czech National Bank)",
+     "url": "https://www.cnb.cz/export/sites/cnb/cs/menova-politika/.galleries/br_zapisy_z_jednani/2016/download/stanovisko_poradce_2016_02.pdf"
+    },
+    {
+     "label": "Original document (PDF)",
+     "url": "https://meta-analysis.cz/komentare/files/cnb-stanovisko-2sz-2016.pdf"
+    },
+    {
+     "label": "Czech original",
+     "url": "https://meta-analysis.cz/komentare/cnb-stanovisko-poradce-2sz-2016/"
     }
    ]
   }

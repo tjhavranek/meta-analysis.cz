@@ -46,8 +46,14 @@ COMPARE = [("api/v1", "api/v1", None),
 
 def run(script, what):
     print(f"  -> {script}  ({what})", flush=True)
+    # Ask the child for UTF-8 and decode it as UTF-8. Without both halves a step that
+    # prints an em dash brings down the reader thread on Windows: the child writes it in
+    # the console codepage and the parent reads it as UTF-8. That failure is silent about
+    # which step produced it, and it loses the output that would have said so.
+    env = dict(os.environ, PYTHONIOENCODING="utf-8", PYTHONUTF8="1")
     r = subprocess.run([sys.executable, os.path.join(SITE, script)],
-                       cwd=SITE, capture_output=True, text=True)
+                       cwd=SITE, capture_output=True, env=env,
+                       encoding="utf-8", errors="replace")
     if r.returncode:
         sys.stdout.write(r.stdout[-4000:]); sys.stderr.write(r.stderr[-4000:])
         sys.exit(f"FAILED: {script} exited {r.returncode}")

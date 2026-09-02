@@ -15,3 +15,5 @@ So, for example, if you want to run [MAIVE](/maive/) (a meta-analysis technique 
 Anything broken, or anything we could improve?
 
 <figure><img src="https://meta-analysis.cz/komentare/social-img/2026-09-01_p1_1.png" alt="The “One file, every literature” panel from meta-analysis.cz: 49,845 estimate-level rows from 42 literatures in one table. Two histograms of absolute t-statistics. The left panel spans 0 to 6, peaks at 1,671 in the lowest bin and declines overall, with a blue line marking 1.96 and dashed lines at 1.645 and 2.576. The right panel magnifies a 0.5-wide caliper from 1.71 to 2.21 on its own scale, where the bins above 1.96 are highlighted in blue and the tallest holds 646 estimates." /></figure>
+
+<p class="byline">A fuller account of what the rebuilt site now carries, written for MAER-Net on 2 September 2026, is at <a href="https://meta-analysis.cz/notes/maer-rebuilding-meta-analysis-cz/">Rebuilding meta-analysis.cz: what is on it now</a>.</p>

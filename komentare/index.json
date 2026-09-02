@@ -21,12 +21,36 @@
  ],
  "license": "https://creativecommons.org/licenses/by/4.0/",
  "license_note": "CC BY 4.0; u převzatých textů uveďte i původní vydání.",
- "count": 244,
+ "count": 245,
  "generated_from": [
   "komentare/src/*.md",
   "komentare/social-posts.json"
  ],
  "items": [
+  {
+   "id": "maer-rebuilding-meta-analysis-cz",
+   "title": "Rebuilding meta-analysis.cz: what is on it now",
+   "date": "2026-09-02",
+   "date_precision": "day",
+   "section": "In English",
+   "category": "english",
+   "language": "en",
+   "outlet": "MAER-Net",
+   "authors": [
+    "Tomas Havranek"
+   ],
+   "media": "text",
+   "original_url": "https://www.maer-net.org/post/rebuilding-meta-analysis-cz-what-is-on-it-now",
+   "text_status": "published_full_text",
+   "canonical_url": "https://meta-analysis.cz/notes/maer-rebuilding-meta-analysis-cz/",
+   "standfirst": "What the rebuilt site now carries: 71 papers in full HTML, 46 datasets with a pooled table of 49,845 estimates, and an interface machines can read.",
+   "standfirst_note": "Written by the original outlet, not by the author.",
+   "url": "https://meta-analysis.cz/komentare/maer-rebuilding-meta-analysis-cz/",
+   "source_markdown": "https://meta-analysis.cz/komentare/src/2026-09-02_maer-rebuilding-meta-analysis-cz.md",
+   "word_count": 714,
+   "text": "This summer our website [meta-analysis.cz](https://meta-analysis.cz/) was hacked (thank you, AI!). It was our own fault. We hadn't changed the site in any serious way since 2015 and were still uploading files by FTP, one paper at a time. There was no central backup.\n\nRebuilding it by hand would have taken months. Instead we reconstructed it with Claude Code and Codex (thank you, AI!), working from old copies on the Wayback Machine and whatever we could still find on our hard drives. That took a few days. Cleaning up afterwards took a few weeks, and that's what this post is about, because the site we ended up with is quite different from the one we lost. Some of it may be useful to MAER-Net members.\n\n**The papers are readable as web pages.** All 71 papers on the site are now there [in full as HTML](https://meta-analysis.cz/papers/), with the tables and 412 of the figures. A PDF is awkward on a phone and useless in a search box, and a language model reading one has to guess at column boundaries (it often gets a two-column layout wrong). Converting them was more work than we expected. AI agents pull text out of a PDF well, but they will also drop a clause at a page break, or hand you a table with two columns interleaved. So every page is gated against its PDF before it can go live: nothing on the page that isn't in the paper, every table and figure the paper prints present on the page, and an alarm when too much of the paper's vocabulary goes missing. Where the artwork wouldn't lift cleanly off the page, the caption stands alone and the picture stays in the PDF.\n\n**The data are in one place, and in more than one format.** There are [46 datasets](https://meta-analysis.cz/datasets/), each as CSV and Parquet, with a codebook for every one. On top of those we built a pooled table: 49,845 estimate-level rows from 42 of our meta-analyses on a single grid. The effect, the standard error, the t-statistic and the precision sit in the same columns under the same names, and the sample size is there wherever the original paper reported one (it's missing entirely for seven of the 42, which matters if you plan to run MAIVE across all of them). It's convenient when you want to test a method against many literatures at once. The pooled table, the dataset index and the codebooks are also archived on Zenodo under a versioned DOI, so a replication package can cite version 1.2.0 and get exactly those files. The per-paper datasets stay on the site.\n\n**The site is built to be read by machines as well as people.** There's an llms.txt giving the structure and an llms-full.txt carrying the whole corpus as plain text, a JSON API for the papers and the search index, and Croissant and Data Package descriptors for the data. None of this is exotic. It just means you can point an assistant at the site and get a real answer instead of a summary of the front page.\n\nThat last part has a payoff we didn't anticipate. If you want to run MAIVE, our estimator that corrects for p-hacking as well as publication bias, you no longer need to install anything or read a vignette first. You can say to your AI assistant:\n\n> Run MAIVE on this dataset, following the protocol at meta-analysis.cz\n\nand it will find [the how-to page](https://meta-analysis.cz/maive/how-to/) and follow it. If you'd rather click than prompt, the same methods are at [EasyMeta.org](https://www.easymeta.org/), together with PET-PEESE and the endogenous kink model.\n\nThe homepage now also states the three principles we'd defend as today's defaults, with a link to the method behind each. Correct for publication bias (RoBMA, by Bartos, Maier and Wagenmakers). Correct for p-hacking (MAIVE, by Irsova et al., and Mathur's RTMA). Cluster by study (CR2 standard errors, by Pustejovsky and Tipton).\n\nThanks to Zuzana Irsova for most of the decisions about what the site should contain, and to everyone who sent corrections after the first version went up.\n\nIf you find something broken, a number that doesn't match the paper it came from, or a figure cropped wrongly, please tell us. Readers have already caught several such things. Anything else we could improve?",
+   "provenance": "self_published"
+  },
   {
    "id": "maer-two-pre-registered-papers",
    "title": "Two new pre-registered papers: outlier decisions in meta-analysis and AI feedback on meta-analyses",

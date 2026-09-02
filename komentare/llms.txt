@@ -2,7 +2,7 @@
 
 > Publicistika Tomáše Havránka a Zuzany Havránkové: komentáře pro celostátní média, sloupky pro litomyšlskou Lilii, rozhovory, stanoviska poradce bankovní rady ČNB a kratší příspěvky ze sítí. Texty jsou zde archivovány v plném znění s odkazem na původní vydání.
 
-Publicistika: 219 položek a 25 kratších příspěvků ze sítí (244 záznamů celkem), 2014–2026. Plné znění každého textu je na uvedené adrese; zdrojový Markdown položek je v /komentare/src/ (příspěvky ze sítí zdrojový soubor nemají). Licence: CC BY 4.0, jako vše na meta-analysis.cz; u převzatých textů uveďte i původní vydání.
+Publicistika: 220 položek a 25 kratších příspěvků ze sítí (245 záznamů celkem), 2014–2026. Plné znění každého textu je na uvedené adrese; zdrojový Markdown položek je v /komentare/src/ (příspěvky ze sítí zdrojový soubor nemají). Licence: CC BY 4.0, jako vše na meta-analysis.cz; u převzatých textů uveďte i původní vydání.
 
 ## Celostátní komentáře
 
@@ -218,6 +218,7 @@ Rozhovory pro česká média. U audio a video rozhovorů uvádíme pouze odkaz n
 
 Columns and commentary written in English: policy pieces for VoxEU/CEPR, posts on meta-analysis methods for MAER-Net, and English translations of the advisor's opinions written for the Bank Board of the Czech National Bank.
 
+- [Rebuilding meta-analysis.cz: what is on it now](https://meta-analysis.cz/komentare/maer-rebuilding-meta-analysis-cz/) — MAER-Net, 2. září 2026
 - [Two new pre-registered papers: outlier decisions in meta-analysis and AI feedback on meta-analyses](https://meta-analysis.cz/komentare/maer-two-pre-registered-papers/) — MAER-Net, 27. července 2026
 - [Results of the AI report ranking experiment](https://meta-analysis.cz/komentare/debate-vysledky-experimentu-autorum/) — the 47 authors who took part in the experiment (korespondence, nepublikováno), 16. července 2026
 - [Stress-testing research with AI, now super easy and fully automated](https://meta-analysis.cz/komentare/maer-stress-testing/) — MAER-Net, 31. května 2026

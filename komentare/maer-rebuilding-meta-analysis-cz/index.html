@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Rebuilding meta-analysis.cz: what is on it now — Tomas Havranek</title>
+<meta name="description" content="What the rebuilt site now carries: 71 papers in full HTML, 46 datasets with a pooled table of 49,845 estimates, and an interface machines can read." />
+<link rel="stylesheet" href="/komentare/style.css" />
+<link rel="canonical" href="https://meta-analysis.cz/notes/maer-rebuilding-meta-analysis-cz/" />
+<link rel="alternate" type="application/rss+xml" title="Komentáře — Tomáš Havránek, Zuzana Havránková" href="/komentare/feed.xml" />
+<meta property="og:site_name" content="Komentáře — Tomáš Havránek, Zuzana Havránková" />
+<meta property="og:locale" content="en_GB" />
+<meta property="og:title" content="Rebuilding meta-analysis.cz: what is on it now — Tomas Havranek" />
+<meta property="og:description" content="What the rebuilt site now carries: 71 papers in full HTML, 46 datasets with a pooled table of 49,845 estimates, and an interface machines can read." />
+<meta property="og:url" content="https://meta-analysis.cz/notes/maer-rebuilding-meta-analysis-cz/" />
+<meta property="og:type" content="article" />
+<meta name="author" content="Tomas Havranek" />
+<meta property="article:published_time" content="2026-09-02" />
+<link rel="alternate" type="text/markdown" href="/komentare/src/2026-09-02_maer-rebuilding-meta-analysis-cz.md" title="Zdrojový text (Markdown)" />
+<script type="application/ld+json">
+{
+ "@context": "https://schema.org",
+ "@graph": [
+  {
+   "@type": "OpinionNewsArticle",
+   "@id": "https://meta-analysis.cz/komentare/maer-rebuilding-meta-analysis-cz/#article",
+   "mainEntityOfPage": "https://meta-analysis.cz/notes/maer-rebuilding-meta-analysis-cz/",
+   "url": "https://meta-analysis.cz/notes/maer-rebuilding-meta-analysis-cz/",
+   "sameAs": "https://meta-analysis.cz/notes/maer-rebuilding-meta-analysis-cz/",
+   "headline": "Rebuilding meta-analysis.cz: what is on it now",
+   "inLanguage": "en",
+   "datePublished": "2026-09-02",
+   "isAccessibleForFree": true,
+   "articleSection": "In English",
+   "publisher": {
+    "@type": "Organization",
+    "name": "MAER-Net"
+   },
+   "author": [
+    {
+     "@type": "Person",
+     "@id": "https://meta-analysis.cz/#th",
+     "name": "Tomas Havranek",
+     "sameAs": "https://orcid.org/0000-0002-3158-2539"
+    }
+   ],
+   "isBasedOn": "https://www.maer-net.org/post/rebuilding-meta-analysis-cz-what-is-on-it-now",
+   "description": "What the rebuilt site now carries: 71 papers in full HTML, 46 datasets with a pooled table of 49,845 estimates, and an interface machines can read.",
+   "abstract": "What the rebuilt site now carries: 71 papers in full HTML, 46 datasets with a pooled table of 49,845 estimates, and an interface machines can read."
+  }
+ ]
+}
+</script>
+<script>document.documentElement.className+=" has-js";</script>
+</head>
+<body>
+<header class="masthead">
+  <div class="wrap">
+    <p class="site-name"><a href="/komentare/">Komentáře<small>Tomáš Havránek, Zuzana Iršová Havránková</small></a></p>
+    <nav class="nav"><a href="/komentare/celostatni/" lang="cs">Celostátní</a><a href="/komentare/litomysl/" lang="cs">Litomyšl</a><a href="/komentare/rozhovory/" lang="cs">Rozhovory</a><a href="/komentare/english/" aria-current="page">English</a><a href="/komentare/posts/">Posts</a></nav>
+  </div>
+</header>
+<main>
+  <div class="wrap">
+    <article>
+      <div class="article-head">
+        <h1>Rebuilding meta-analysis.cz: what is on it now</h1>
+        <div class="byline"><span>2 September 2026</span><span>MAER-Net</span><span>Tomas Havranek</span></div>
+      </div>
+      <p class="perex">What the rebuilt site now carries: 71 papers in full HTML, 46 datasets with a pooled table of 49,845 estimates, and an interface machines can read.</p>
+      <div class="prose reading">
+<p>This summer our website <a href="https://meta-analysis.cz/">meta-analysis.cz</a> was hacked (thank you, AI!). It was our own fault. We hadn't changed the site in any serious way since 2015 and were still uploading files by FTP, one paper at a time. There was no central backup.</p>
+<p>Rebuilding it by hand would have taken months. Instead we reconstructed it with Claude Code and Codex (thank you, AI!), working from old copies on the Wayback Machine and whatever we could still find on our hard drives. That took a few days. Cleaning up afterwards took a few weeks, and that's what this post is about, because the site we ended up with is quite different from the one we lost. Some of it may be useful to MAER-Net members.</p>
+<p><strong>The papers are readable as web pages.</strong> All 71 papers on the site are now there <a href="https://meta-analysis.cz/papers/">in full as HTML</a>, with the tables and 412 of the figures. A PDF is awkward on a phone and useless in a search box, and a language model reading one has to guess at column boundaries (it often gets a two-column layout wrong). Converting them was more work than we expected. AI agents pull text out of a PDF well, but they will also drop a clause at a page break, or hand you a table with two columns interleaved. So every page is gated against its PDF before it can go live: nothing on the page that isn't in the paper, every table and figure the paper prints present on the page, and an alarm when too much of the paper's vocabulary goes missing. Where the artwork wouldn't lift cleanly off the page, the caption stands alone and the picture stays in the PDF.</p>
+<p><strong>The data are in one place, and in more than one format.</strong> There are <a href="https://meta-analysis.cz/datasets/">46 datasets</a>, each as CSV and Parquet, with a codebook for every one. On top of those we built a pooled table: 49,845 estimate-level rows from 42 of our meta-analyses on a single grid. The effect, the standard error, the t-statistic and the precision sit in the same columns under the same names, and the sample size is there wherever the original paper reported one (it's missing entirely for seven of the 42, which matters if you plan to run MAIVE across all of them). It's convenient when you want to test a method against many literatures at once. The pooled table, the dataset index and the codebooks are also archived on Zenodo under a versioned DOI, so a replication package can cite version 1.2.0 and get exactly those files. The per-paper datasets stay on the site.</p>
+<p><strong>The site is built to be read by machines as well as people.</strong> There's an llms.txt giving the structure and an llms-full.txt carrying the whole corpus as plain text, a JSON API for the papers and the search index, and Croissant and Data Package descriptors for the data. None of this is exotic. It just means you can point an assistant at the site and get a real answer instead of a summary of the front page.</p>
+<p>That last part has a payoff we didn't anticipate. If you want to run MAIVE, our estimator that corrects for p-hacking as well as publication bias, you no longer need to install anything or read a vignette first. You can say to your AI assistant:</p>
+<blockquote><p>Run MAIVE on this dataset, following the protocol at meta-analysis.cz</p></blockquote>
+<p>and it will find <a href="https://meta-analysis.cz/maive/how-to/">the how-to page</a> and follow it. If you'd rather click than prompt, the same methods are at <a href="https://www.easymeta.org/">EasyMeta.org</a>, together with PET-PEESE and the endogenous kink model.</p>
+<p>The homepage now also states the three principles we'd defend as today's defaults, with a link to the method behind each. Correct for publication bias (RoBMA, by Bartos, Maier and Wagenmakers). Correct for p-hacking (MAIVE, by Irsova et al., and Mathur's RTMA). Cluster by study (CR2 standard errors, by Pustejovsky and Tipton).</p>
+<p>Thanks to Zuzana Irsova for most of the decisions about what the site should contain, and to everyone who sent corrections after the first version went up.</p>
+<p>If you find something broken, a number that doesn't match the paper it came from, or a figure cropped wrongly, please tell us. Readers have already caught several such things. Anything else we could improve?</p>
+      </div>
+      <div class="provenance"><p>First published in MAER-Net, 2 September 2026. <a href="https://www.maer-net.org/post/rebuilding-meta-analysis-cz-what-is-on-it-now" rel="external">Original publication</a>.</p></div>
+      <nav class="pager">
+        <a href="/komentare/english/">← In English</a>
+        <a href="/komentare/">All texts</a>
+      </nav>
+    </article>
+  </div>
+</main>
+<footer class="foot">
+  <div class="wrap about">
+    <p class="about-bio"><strong>Tomáš Havránek</strong> is Professor of Economics at the Institute of Economic Studies, Charles University, Prague. He works on monetary policy, meta-analysis and meta-research, and was an adviser to the Vice-Governor and the Board of the Czech National Bank. He is a Research Affiliate at CEPR (London) and at Stanford METRICS.</p><p class="about-bio"><strong>Zuzana Havránková</strong> is Professor of Economics at the same institute. She works on meta-analysis and meta-research, labour economics and international economics, and is an affiliate researcher at Stanford METRICS. She publishes in English as Zuzana Irsova.</p><p class="about-bio">This section archives their published commentary, columns and interviews.</p>
+    <ul class="about-links">
+      <li class="who">Tomáš Havránek</li>
+      <li><a href="https://www.tomashavranek.cz/">tomashavranek.cz</a></li>
+      <li><a href="https://ies.fsv.cuni.cz/en/contacts/institute-members/78067720">IES FSV UK</a></li>
+      <li><a href="https://orcid.org/0000-0002-3158-2539">ORCID</a></li>
+      <li><a href="https://scholar.google.com/citations?user=BF0BvBkAAAAJ">Google Scholar</a></li>
+      <li><a href="https://ideas.repec.org/f/pha418.html">RePEc</a></li>
+      <li><a href="https://www.scopus.com/authid/detail.uri?authorId=24453189000">Scopus</a></li>
+      <li><a href="https://cepr.org/about/people/tomas-havranek">CEPR</a></li>
+      <li><a href="https://metrics.stanford.edu/people/tomas-havranek">Stanford METRICS</a></li>
+    </ul>
+    <ul class="about-links">
+      <li class="who">Zuzana Iršová Havránková</li>
+      <li><a href="https://www.irsova.com/">irsova.com</a></li>
+      <li><a href="https://ies.fsv.cuni.cz/en/contacts/institute-members/73504033">IES FSV UK</a></li>
+      <li><a href="https://orcid.org/0000-0002-0753-8124">ORCID</a></li>
+      <li><a href="https://scholar.google.com/citations?user=LaHrICUAAAAJ">Google Scholar</a></li>
+      <li><a href="https://ideas.repec.org/e/pir23.html">RePEc</a></li>
+      <li><a href="https://www.scopus.com/authid/detail.uri?authorId=37080793200">Scopus</a></li>
+      <li><a href="https://cepr.org/about/people/zuzana-irsova">CEPR</a></li>
+      <li><a href="https://metrics.stanford.edu/people/zuzana-irsova">Stanford METRICS</a></li>
+    </ul>
+    <ul class="about-links">
+      <li class="who">Projects</li>
+      <li><a href="https://meta-analysis.cz/">meta-analysis.cz</a></li>
+      <li><a href="https://zrusme-inflaci.cz/">Zrušme inflaci</a></li>
+      <li><a href="/komentare/feed.xml">RSS</a></li>
+    </ul>
+    <p class="about-machine" lang="en">For machines:
+      <a href="/komentare/data/">the corpus</a> (JSONL, JSON, Markdown, checksums) ·
+      <a href="/komentare/llms.txt">llms.txt</a> ·
+      <a href="/komentare/index.json">index.json</a> (metadata for every item, full text where available) ·
+      <a href="/komentare/all.md">all.md</a> (every text in one file) ·
+      <a href="/komentare/feed.xml">RSS</a>. The Markdown source of each item is in
+      <a href="/komentare/src/">/komentare/src/</a>. Text and metadata may be freely
+      indexed, quoted and used for research, with attribution to the original outlet.</p>
+  </div>
+</footer>
+</body>
+</html>
