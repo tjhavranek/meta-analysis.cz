@@ -154,8 +154,8 @@
   "status": "ok",
   "rows": 533,
   "cols": 65,
-  "parquet_bytes": 85978,
-  "csv_bytes": 320613,
+  "parquet_bytes": 85952,
+  "csv_bytes": 320610,
   "source": "esg_data.xlsx",
   "sheet": "Data"
  },

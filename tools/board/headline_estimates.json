@@ -367,9 +367,9 @@
   "project": "esg",
   "parameter": "Effect of board gender diversity on ESG performance",
   "headline": "about 0.12 ESG points per 1-pp diversity increase",
-  "evidence": "A best-practice estimate that also imposes sound study design puts it near 0.12 for most of the world, markedly higher for the Middle East, and essentially zero, if anything slightly negative, for the Southeast Asian markets that dominate the Asian evidence.",
+  "evidence": "A best-practice estimate that also imposes sound study design puts it near 0.12 for most of the world, markedly higher for the Middle East, and near −0.11 for the Southeast Asian markets that dominate the Asian evidence.",
   "basis": "533 estimates from 106 studies",
-  "caveat": "higher in the Middle East, about zero in Southeast Asia",
+  "caveat": "higher in the Middle East, about −0.11 in Southeast Asia",
   "field": "Financial economics"
  },
  {

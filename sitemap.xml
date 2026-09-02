@@ -24,7 +24,7 @@
   <url><loc>https://meta-analysis.cz/eis/</loc><lastmod>2026-08-30</lastmod></url>
   <url><loc>https://meta-analysis.cz/elb/</loc><lastmod>2026-08-30</lastmod></url>
   <url><loc>https://meta-analysis.cz/electricity/</loc><lastmod>2026-08-30</lastmod></url>
-  <url><loc>https://meta-analysis.cz/esg/</loc><lastmod>2026-08-30</lastmod></url>
+  <url><loc>https://meta-analysis.cz/esg/</loc><lastmod>2026-09-02</lastmod></url>
   <url><loc>https://meta-analysis.cz/euro/</loc><lastmod>2026-08-30</lastmod></url>
   <url><loc>https://meta-analysis.cz/excess_sensitivity/</loc><lastmod>2026-08-30</lastmod></url>
   <url><loc>https://meta-analysis.cz/exercise/</loc><lastmod>2026-08-30</lastmod></url>
@@ -190,7 +190,7 @@
   <url><loc>https://meta-analysis.cz/elb/elb.pdf</loc><lastmod>2026-08-27</lastmod></url>
   <url><loc>https://meta-analysis.cz/electricity/electricity.pdf</loc><lastmod>2026-07-23</lastmod></url>
   <url><loc>https://meta-analysis.cz/electricity/electricity_SI.pdf</loc><lastmod>2026-07-23</lastmod></url>
-  <url><loc>https://meta-analysis.cz/esg/esg.pdf</loc><lastmod>2026-07-23</lastmod></url>
+  <url><loc>https://meta-analysis.cz/esg/esg.pdf</loc><lastmod>2026-09-02</lastmod></url>
   <url><loc>https://meta-analysis.cz/euro/euro.pdf</loc><lastmod>2026-06-25</lastmod></url>
   <url><loc>https://meta-analysis.cz/euro/euro2.pdf</loc><lastmod>2026-06-25</lastmod></url>
   <url><loc>https://meta-analysis.cz/excess_sensitivity/appendix.pdf</loc><lastmod>2026-06-25</lastmod></url>
@@ -547,13 +547,13 @@
   <url><loc>https://meta-analysis.cz/results/</loc><lastmod>2026-08-30</lastmod></url>
   <url><loc>https://meta-analysis.cz/search/</loc><lastmod>2026-08-30</lastmod></url>
   <url><loc>https://meta-analysis.cz/api/v1/datasets.json</loc><lastmod>2026-08-31</lastmod></url>
-  <url><loc>https://meta-analysis.cz/api/v1/papers.json</loc><lastmod>2026-08-30</lastmod></url>
+  <url><loc>https://meta-analysis.cz/api/v1/papers.json</loc><lastmod>2026-09-02</lastmod></url>
   <url><loc>https://meta-analysis.cz/api/v1/search-index.json</loc><lastmod>2026-09-02</lastmod></url>
   <url><loc>https://meta-analysis.cz/api/v1/datapackage.json</loc><lastmod>2026-08-28</lastmod></url>
-  <url><loc>https://meta-analysis.cz/api/v1/croissant.json</loc><lastmod>2026-08-28</lastmod></url>
-  <url><loc>https://meta-analysis.cz/data/v1/estimates_harmonised.csv</loc><lastmod>2026-08-28</lastmod></url>
-  <url><loc>https://meta-analysis.cz/data/v1/estimates_harmonised.parquet</loc><lastmod>2026-08-28</lastmod></url>
-  <url><loc>https://meta-analysis.cz/estimates.csv</loc><lastmod>2026-08-30</lastmod></url>
+  <url><loc>https://meta-analysis.cz/api/v1/croissant.json</loc><lastmod>2026-09-02</lastmod></url>
+  <url><loc>https://meta-analysis.cz/data/v1/estimates_harmonised.csv</loc><lastmod>2026-09-02</lastmod></url>
+  <url><loc>https://meta-analysis.cz/data/v1/estimates_harmonised.parquet</loc><lastmod>2026-09-02</lastmod></url>
+  <url><loc>https://meta-analysis.cz/estimates.csv</loc><lastmod>2026-09-02</lastmod></url>
   <url><loc>https://meta-analysis.cz/llms.txt</loc><lastmod>2026-08-31</lastmod></url>
   <url><loc>https://meta-analysis.cz/llms-full.txt</loc><lastmod>2026-09-02</lastmod></url>
   <url><loc>https://meta-analysis.cz/api/v1/codebooks/activism.json</loc><lastmod>2026-08-28</lastmod></url>
@@ -571,7 +571,7 @@
   <url><loc>https://meta-analysis.cz/api/v1/codebooks/education.json</loc><lastmod>2026-08-03</lastmod></url>
   <url><loc>https://meta-analysis.cz/api/v1/codebooks/eis.json</loc><lastmod>2026-08-03</lastmod></url>
   <url><loc>https://meta-analysis.cz/api/v1/codebooks/electricity.json</loc><lastmod>2026-08-03</lastmod></url>
-  <url><loc>https://meta-analysis.cz/api/v1/codebooks/esg.json</loc><lastmod>2026-08-03</lastmod></url>
+  <url><loc>https://meta-analysis.cz/api/v1/codebooks/esg.json</loc><lastmod>2026-09-02</lastmod></url>
   <url><loc>https://meta-analysis.cz/api/v1/codebooks/euro.json</loc><lastmod>2026-08-03</lastmod></url>
   <url><loc>https://meta-analysis.cz/api/v1/codebooks/excess_sensitivity.json</loc><lastmod>2026-08-25</lastmod></url>
   <url><loc>https://meta-analysis.cz/api/v1/codebooks/fdi.json</loc><lastmod>2026-08-03</lastmod></url>

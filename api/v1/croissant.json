@@ -214,8 +214,8 @@
    "name": "esg.parquet",
    "contentUrl": "https://meta-analysis.cz/data/v1/esg/esg.parquet",
    "encodingFormat": "application/vnd.apache.parquet",
-   "sha256": "5f1ca4c2848b243c17c4e049ebb08741095b3214962373ddd1eaf710b8368b7a",
-   "contentSize": "85978"
+   "sha256": "b6036a343da42efeb76c9593b9aa76f7a15fe4e5d5c4c2fb28a42a1e0c1efd88",
+   "contentSize": "85952"
   },
   {
    "@type": "cr:FileObject",
@@ -494,8 +494,8 @@
    "description": "DERIVED AGGREGATE VIEW of the per-dataset files above, reshaped to a common schema. Rows are not additional to them.",
    "contentUrl": "https://meta-analysis.cz/data/v1/estimates_harmonised.csv",
    "encodingFormat": "text/csv",
-   "sha256": "cdf79f7203fd8a7644346e2535d7622e22fe0aefa4938784ca3f6cc9eda03f8b",
-   "contentSize": "11506087"
+   "sha256": "4d6cf12480e39aacecb55a91310a39b3b4ddc7defcf1fc5177b7589990c5eedc",
+   "contentSize": "11506084"
   },
   {
    "@type": "cr:FileObject",
@@ -504,8 +504,8 @@
    "description": "The same derived aggregate view, as Parquet.",
    "contentUrl": "https://meta-analysis.cz/data/v1/estimates_harmonised.parquet",
    "encodingFormat": "application/vnd.apache.parquet",
-   "sha256": "f56e80e02d503a66986a072e29fc0b491ab082bb452b2dacd530586b54ed9b8d",
-   "contentSize": "1776148"
+   "sha256": "61bd6ae98e1141459cc5c49450f4bc99c8d9b718b840b606f19a362ad6b85f57",
+   "contentSize": "1776147"
   }
  ],
  "recordSet": [

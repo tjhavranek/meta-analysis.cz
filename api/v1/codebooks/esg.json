@@ -849,13 +849,13 @@
    "inferred_role": "pub_year",
    "inferred_role_confidence": "name-match only, not verified",
    "stats": {
-    "min": 2014.0,
+    "min": 2013.0,
     "p25": 2022.0,
     "median": 2023.0,
     "p75": 2024.0,
     "max": 2024.0,
-    "mean": 2022.677298,
-    "sd": 1.567105
+    "mean": 2022.675422,
+    "sd": 1.578073
    }
   },
   {
@@ -865,13 +865,13 @@
    "n_missing": 0,
    "n_unique": 11,
    "stats": {
-    "min": 7.607878,
+    "min": 7.607381,
     "p25": 7.611842,
     "median": 7.612337,
     "p75": 7.612831,
     "max": 7.612831,
-    "mean": 7.612177,
-    "sd": 0.000775
+    "mean": 7.612176,
+    "sd": 0.000781
    }
   },
   {
