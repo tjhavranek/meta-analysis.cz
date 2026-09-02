@@ -81,6 +81,20 @@ def _mathml(tex, display=False):
     return out
 
 
+def math_as_text(text):
+    r"""Inline math as the characters it reads as, for places that take text and not markup.
+
+    The contents list escapes whatever it is handed, so MathML would print as tags there.
+    Handing it the source instead printed a heading in /habits/ as "2.2. Collecting
+    estimates of $\gamma$", while the heading itself, one screen below, read correctly.
+    Converting and then taking the text content gives that heading its own gamma, out of
+    the same converter, rather than a second table of symbols to keep in step with it.
+    """
+    def one(m):
+        return html.unescape(re.sub(r"<[^>]+>", "", _mathml(m.group(1))))
+    return re.sub(r"\$([^$]+)\$", one, text)
+
+
 def inline(text, refs_are_numbered=False, link_cites=True, in_table=False):
     """Escape the text, then apply the inline dialect. Math is converted first and parked
     behind placeholders so that markup characters inside a formula are never re-read."""
@@ -1131,7 +1145,7 @@ def build_page(project, meta, body, toc):
         depth = 2
         open_li = False
         for level, anchor, head in toc:
-            entry = heading_label(head)
+            entry = math_as_text(heading_label(head))
             link = '<a href="#%s">%s</a>' % (anchor, html.escape(entry))
             if level == 3:
                 if depth == 2:
