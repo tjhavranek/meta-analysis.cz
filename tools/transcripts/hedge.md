@@ -924,8 +924,6 @@ Vrontos, S. D., Vrontos, I. D., & Giamouridis, D. (2008). Hedge fund pricing and
 
 Zigraiova, D., Havranek, T., Irsova, Z., & Novak, J. (2021). How puzzling is the forward premium puzzle? A meta-analysis. *European Economic Review*, *134*(C), 103714.
 
-**How to cite this article:** Yang, F., Havranek, T., Irsova, Z., & Novak, J. (2024). Is research on hedge fund performance published selectively? A quantitative survey. *Journal of Economic Surveys*, *38*, 1085–1131. https://doi.org/10.1111/joes.12574
-
 ## APPENDIX
 
 FIGURE A1 (no artwork). Distribution of *t*-statistics. [Colour figure can be viewed at wileyonlinelibrary.com] Note: The figure represents the distribution of *t*-statistics of the reported estimates of the alpha. Red lines represent critical value of 1.96 associated with significance at the 5% level and the value of 0 associated with changing the sign of the estimate. We exclude estimates with large *t*-statistics from the figure for ease of exposition but include them in statistical tests.
