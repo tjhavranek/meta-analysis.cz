@@ -69,9 +69,9 @@
   <url><loc>https://meta-analysis.cz/trust/</loc><lastmod>2026-08-31</lastmod></url>
   <url><loc>https://meta-analysis.cz/water/</loc><lastmod>2026-08-30</lastmod></url>
   <url><loc>https://meta-analysis.cz/activism/paper/</loc><lastmod>2026-09-01</lastmod></url>
-  <url><loc>https://meta-analysis.cz/alphas/paper/</loc><lastmod>2026-09-01</lastmod></url>
+  <url><loc>https://meta-analysis.cz/alphas/paper/</loc><lastmod>2026-09-02</lastmod></url>
   <url><loc>https://meta-analysis.cz/armington/paper/</loc><lastmod>2026-09-02</lastmod></url>
-  <url><loc>https://meta-analysis.cz/beauty/paper/</loc><lastmod>2026-09-01</lastmod></url>
+  <url><loc>https://meta-analysis.cz/beauty/paper/</loc><lastmod>2026-09-02</lastmod></url>
   <url><loc>https://meta-analysis.cz/bma/paper/</loc><lastmod>2026-09-01</lastmod></url>
   <url><loc>https://meta-analysis.cz/border/paper/</loc><lastmod>2026-09-01</lastmod></url>
   <url><loc>https://meta-analysis.cz/cbequity/paper/</loc><lastmod>2026-09-01</lastmod></url>
@@ -548,7 +548,7 @@
   <url><loc>https://meta-analysis.cz/search/</loc><lastmod>2026-08-30</lastmod></url>
   <url><loc>https://meta-analysis.cz/api/v1/datasets.json</loc><lastmod>2026-08-31</lastmod></url>
   <url><loc>https://meta-analysis.cz/api/v1/papers.json</loc><lastmod>2026-08-30</lastmod></url>
-  <url><loc>https://meta-analysis.cz/api/v1/search-index.json</loc><lastmod>2026-09-01</lastmod></url>
+  <url><loc>https://meta-analysis.cz/api/v1/search-index.json</loc><lastmod>2026-09-02</lastmod></url>
   <url><loc>https://meta-analysis.cz/api/v1/datapackage.json</loc><lastmod>2026-08-28</lastmod></url>
   <url><loc>https://meta-analysis.cz/api/v1/croissant.json</loc><lastmod>2026-08-28</lastmod></url>
   <url><loc>https://meta-analysis.cz/data/v1/estimates_harmonised.csv</loc><lastmod>2026-08-28</lastmod></url>

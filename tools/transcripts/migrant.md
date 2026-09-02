@@ -72,7 +72,7 @@ The overall mean of the reported coefficients ($-1/\sigma$) in our sample is $-0
 
 The choice of dependent variable transformation, specifically the log of mean wages versus the mean of log wages, represents a significant methodological divide in the literature. Theoretically, due to Jensen's Inequality, $E[\log(X)] \leq \log(E[X])$, using the log of mean wages may overstate the wage impact of immigration by downplaying within-group variation, potentially leading to a downward bias in the estimated elasticity of substitution.^{5} This choice is central to the debate between Borjas et al. (2012) and Ottaviano & Peri (2012), where the transformation is argued to be a primary driver of differing elasticity estimates. While we revisit this debate formally in our heterogeneity analysis, our data suggest that this technical choice is often bundled with other methodological preferences. Specifically, the "Borjas vs. Ottaviano" divergence likely stems from a broader modeling philosophy, where the preference for national-level structural models often coincides with specific wage definitions, rather than the wage transformation in isolation.
 
-Figure 1 shows a box plot of the reported coefficients across individual studies, sorted by publication year, illustrating variations across studies (variation across countries is depicted in Figure A2 and the summary statistics in Table A2). Notably, studies by Wei et al. (2016) and Wei et al. (2019) focus on farm workers, explaining their distinct reported coefficients. The distinctiveness in these coefficients arises from the specific na-
+Figure 1 shows a box plot of the reported coefficients across individual studies, sorted by publication year, illustrating variations across studies (variation across countries is depicted in Figure A2 and the summary statistics in Table A2). Notably, studies by Wei et al. (2016) and Wei et al. (2019) focus on farm workers, explaining their distinct reported coefficients. The distinctiveness in these coefficients arises from the specific nature of farm work, which often involves labor-intensive tasks requiring particular physical endurance and skills typically found among younger workers (Wei et al., 2016, 2019).
 
 ## ENDNOTES
 
@@ -81,8 +81,6 @@ Figure 1 shows a box plot of the reported coefficients across individual studies
 3. Unlike Table 1, which covers all 1,091 collected estimates, the summary statistics in Table B1 are computed on the 1,087 observations used in the heterogeneity analysis. Four estimates from one multi-country study are excluded there because country-specific moderators, such as the immigrant share, cannot be assigned to them (see Section 4).
 4. The column $\sigma$ in Table 1 depicts the implied elasticity computed as $\sigma = -1/mean$ using the coefficient values prior to rounding.
 5. In practical terms, the difference is very small when wage dispersion within a cell is low, but it becomes economically meaningful as dispersion rises. For example, the gap is about 0.5% at low dispersion (with the coefficient of variation $CV = 0.1$), around 3% at moderate dispersion ($CV = 0.25$), and can exceed 10% when dispersion is high ($CV = 0.5$).
-
-ture of farm work, which often involves labor-intensive tasks requiring particular physical endurance and skills typically found among younger workers (Wei et al., 2016, 2019).
 
 TABLE 1. Summary statistics for different subsets of the literature
 

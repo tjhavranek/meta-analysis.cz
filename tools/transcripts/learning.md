@@ -70,14 +70,12 @@ In the extreme case where affirmative studies are infinitely more likely to be p
 
 #### Selection ratio sensitivity.
 
-Following Mathur and VanderWeele (2020), Mathur (2024b), we use a four-fold selection ratio as an illustrative benchmark, where affirmative studies are assumed to be four times more likely to be published than non-affirmative ones. Under this assumption, both the fixed- and random-effects estimates retain the negative sign of the uncorrected mean (Table 4, Panel A, Columns 2 and 3). The fixed-
+Following Mathur and VanderWeele (2020), Mathur (2024b), we use a four-fold selection ratio as an illustrative benchmark, where affirmative studies are assumed to be four times more likely to be published than non-affirmative ones. Under this assumption, both the fixed- and random-effects estimates retain the negative sign of the uncorrected mean (Table 4, Panel A, Columns 2 and 3). The fixed-effects estimate is larger in magnitude, at −0.206, while the robust random-effects estimate is smaller, at −0.068, reflecting its adjustment for heterogeneity and clustering of estimates within studies. Thus, even under a relatively strong assumed degree of selective publication, the corrected estimates continue to indicate learning losses, although their magnitude depends on how heterogeneity and within-study clustering are handled. The range between these estimates also contains our preferred bias-corrected estimates from RoBMA (−0.118) and MAIVE (−0.119, reported in Section 4), suggesting that those estimates are consistent with a moderate rather than worst-case degree of selective publication.
 
 ## ENDNOTES
 1. Influence diagnostics require a standard random-effects model; we use the REML estimate ($\hat{\mu} = -0.124$).
 2. In Figures A2 through A4 and Figure 6, most coefficient estimates are negative, as expected. We account for the negative sign and adjust model specifications accordingly, assuming one-directional selection that favors negative, statistically significant estimates, using a two-sided significance threshold of $\alpha = 0.05$ (i.e. $z < -1.96$).
 3. Mathur (2024b) shows that MAN remains conservative under p-hacking when p-hacking favors affirmative outcomes, because it places no weight on affirmative estimates, which are the estimates favored by such selection.
-
-effects estimate is larger in magnitude, at −0.206, while the robust random-effects estimate is smaller, at −0.068, reflecting its adjustment for heterogeneity and clustering of estimates within studies. Thus, even under a relatively strong assumed degree of selective publication, the corrected estimates continue to indicate learning losses, although their magnitude depends on how heterogeneity and within-study clustering are handled. The range between these estimates also contains our preferred bias-corrected estimates from RoBMA (−0.118) and MAIVE (−0.119, reported in Section 4), suggesting that those estimates are consistent with a moderate rather than worst-case degree of selective publication.
 
 #### s-Value.
 
