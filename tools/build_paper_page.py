@@ -82,17 +82,23 @@ def _mathml(tex, display=False):
 
 
 def math_as_text(text):
-    r"""Inline math as the characters it reads as, for places that take text and not markup.
+    r"""A heading as the characters it reads as, for places that take text and not markup.
 
-    The contents list escapes whatever it is handed, so MathML would print as tags there.
-    Handing it the source instead printed a heading in /habits/ as "2.2. Collecting
-    estimates of $\gamma$", while the heading itself, one screen below, read correctly.
-    Converting and then taking the text content gives that heading its own gamma, out of
-    the same converter, rather than a second table of symbols to keep in step with it.
+    The contents list escapes whatever it is handed, so the markup a heading carries would
+    print as itself there. It did: /habits/ listed "2.2. Collecting estimates of $\gamma$",
+    /pcc/ listed "RE_{ss}" and "UWLS_{+3}", and /pcc_survey/ listed "Fisher's *z*
+    Transformations: *REz* & *UWLSz*^{2}" -- each of them one screen above the heading that
+    rendered correctly. Maths goes through the same converter the heading uses and then
+    loses its tags; the rest keep their content and lose their markers, which is what the
+    heading does to them too.
     """
     def one(m):
         return html.unescape(re.sub(r"<[^>]+>", "", _mathml(m.group(1))))
-    return re.sub(r"\$([^$]+)\$", one, text)
+    text = re.sub(r"\$([^$]+)\$", one, text)
+    text = re.sub(r"[_^]\{([^}]*)\}", r"\1", text)
+    text = re.sub(r"\*\*([^*]+)\*\*", r"\1", text)
+    text = re.sub(r"(?<!\*)\*([^*]+)\*(?!\*)", r"\1", text)
+    return text
 
 
 def inline(text, refs_are_numbered=False, link_cites=True, in_table=False):
@@ -189,7 +195,18 @@ def inline(text, refs_are_numbered=False, link_cites=True, in_table=False):
     # Parked like mathematics: a superscript marker is often a run of asterisks, and left in
     # the stream the emphasis rules pair them across the markers ("***, **, and *" became
     # "<sup><i><b></sup>, <sup></b></sup>, and <sup></i></sup>").
-    text = re.sub(r"\^\{([^}]*)\}", lambda m: park(cite(m)), text)
+    # A raised number after a VARIABLE is a power, not a reference. Where the references are
+    # numbered the two look identical to this rule, and /maive/ printed "R squared" and
+    # "sigma squared" as links to reference 2. What separates them is what they follow: a
+    # citation attaches to the end of a word or a bracket ("Bartos et al.^{56}",
+    # "(PET-PEESE)^{7}"), an exponent to a lone symbol ("sigma^{2}", "*I*^{2}").
+    _power_after = re.compile(r"(?:\*[A-Za-z][A-Za-z0-9]{0,2}\*|[Ͱ-Ͽ])\s*$")
+
+    def sup_or_cite(m):
+        return park("<sup>%s</sup>" % m.group(1)
+                    if _power_after.search(m.string[:m.start()]) else cite(m))
+
+    text = re.sub(r"\^\{([^}]*)\}", sup_or_cite, text)
     text = re.sub(r"_\{([^}]*)\}", lambda m: "<sub>%s</sub>" % m.group(1), text)
     # Both link rules park their output. Otherwise the bare-URL rule reads the href the
     # markdown rule just wrote and links it again, nesting one anchor inside another.
