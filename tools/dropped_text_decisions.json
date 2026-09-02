@@ -1,0 +1,920 @@
+{
+ "what": "Adjudication of every candidate from tools/audit_dropped_text.py, 2026-09-02.",
+ "why": "The audit reports runs of prose the transcript lost against its PDF. Most are not defects: a transcript leaves out footnotes that it carries in its endnotes, notes belonging to a table rendered elsewhere, and page furniture. Each candidate was read against the transcript and decided individually; this records those decisions so they can be re-examined rather than taken on trust.",
+ "restored": [
+  {
+   "project": "beauty",
+   "id": 0,
+   "verdict": "restore",
+   "reason": "Genuine mid-sentence drop -- this is the exact canonical example the audit tooling's own docstring cites. Transcript line 68 currently reads '...the key feature of the funnel plot. Panel (b) in Large imprecise estimates are much more common than small...', which does not parse. The PDF has 'Panel (b) in Figure 3 suggests that, for the literature on the beauty effect, the funnel plot is not symmetrical. Large imprecise estimates are much more common than small...'. Restoring the verbatim clause repairs the sentence.",
+   "dropped_text": "Figure 3 suggests that, for the literature on the beauty effect, the funnel plot is not symmetrical",
+   "transcript_before": "the funnel plot panel b in"
+  }
+ ],
+ "skipped": [
+  {
+   "project": "alphas",
+   "id": 0,
+   "verdict": "skip",
+   "reason": "This is a table note. The verbatim text ('...affects the best-practice alpha estimate both in absolute terms and as a percentage... The right panel shows the corresponding change... from its sample minimum to its sample maximum') is the Notes line for Table 5, already present in the transcript almost verbatim at that table's Notes paragraph. Tables and their notes are rendered separately; nothing is missing from the reader's perspective.",
+   "dropped_text": "estimate both in absolute terms and as a percentage of the best-practice estimate. The right panel shows the corresponding change in the best-practice alpha estimate resulting from changing the value of the explanatory variable from its sam",
+   "transcript_before": "explanatory variable affects the best-practice alpha"
+  },
+  {
+   "project": "alphas",
+   "id": 1,
+   "verdict": "skip",
+   "reason": "Figure 1 (Figure 1: Articles on hedge fund performance) plus its Note caption, inserted mid-page-break by the PDF extractor between 'estimation' and 'methodologies'. The transcript's actual sentence ('prior studies also employ various estimation methodologies. This heterogeneity may matter for...') already reads complete and grammatical without it.",
+   "dropped_text": "method- 2 Figure 1: Articles on hedge fund performance 20 15 10 The Number of Studies 5 0 1995 2000 2005 2010 Year 2015 2020 Note: The figure shows the number of research articles on hedge funds published in five leading finance journals, i",
+   "transcript_before": "prior studies also employ various estimation"
+  },
+  {
+   "project": "alphas",
+   "id": 2,
+   "verdict": "skip",
+   "reason": "Figure 2 (Are markets getting more efficient?) plus the start of its own 'Note: the vertical axis shows...' caption. Pure figure/caption content; before+after already parse fine as a complete sentence.",
+   "dropped_text": "Figure 2: Are markets getting more efficient? 1.5 1 .5 Median estimate of the alpha 0 -.5 1990 1995 2000 2005 Median year of data used by a study",
+   "transcript_before": "observed changes in hedge fund performance"
+  },
+  {
+   "project": "alphas",
+   "id": 3,
+   "verdict": "skip",
+   "reason": "Figure 3 (Distribution of alpha estimates) plus the start of its caption/notes ('reported in prior literature. Notes: ...'). Figure and caption content, correctly omitted.",
+   "dropped_text": "Figure 3: Distribution of alpha estimates 100 80 60 Frequency 40 20 0 -2 -1 0 0.36 1 2 Estimate of the alpha",
+   "transcript_before": "of the population of alpha estimates"
+  },
+  {
+   "project": "armington",
+   "id": 0,
+   "verdict": "skip",
+   "reason": "Verbatim is a figure caption ('Fig. 2. ... Notes: The vertical axis measures...'). Confirmed in transcript: the figure caption is already present in full (as its own line), and the surrounding body sentence already reads fine without it — '...identification of import demand elasticities. On the other hand, Hillberry and Hummels (2013) also note that...'",
+   "dropped_text": "Fig. 2. The mean and variance of reported elasticities increase over time. Notes: The vertical axis measures median estimates of the Armington elasticity reported in individual studies. The horizontal axis measures the median year of the da",
+   "transcript_before": "of import demand elasticities on the"
+  },
+  {
+   "project": "bma",
+   "id": 0,
+   "verdict": "skip",
+   "reason": "Figure 1 caption plus journal running head ('4 WORLD DEVELOPMENT'). Transcript line 63 already reads complete: '...the standard deviation drops by two thirds. We thus continue in the analysis with a narrower set...'",
+   "dropped_text": "Figure 1. Country heterogeneity in the estimates of horizontal spillovers for Europe. 4 WORLD DEVELOPMENT",
+   "transcript_before": "deviation drops by two thirds we"
+  },
+  {
+   "project": "cbequity",
+   "id": 0,
+   "verdict": "skip",
+   "reason": "Figure caption (Fig. 2 funnel-plot note), rendered separately from body text.",
+   "dropped_text": "Central Bank Equity as an Instrument of Monetary Policy Fig.2Funnel plot. Note: In the absence of publication bias, the estimates should form a symmetrical inverted funnel. Negative estimates denote that researchers find central bank financ",
+   "transcript_before": "when the corrected mean effect approaches"
+  },
+  {
+   "project": "cbequity",
+   "id": 1,
+   "verdict": "skip",
+   "reason": "Footnote 1 (accounting practices) inline-interleaved at the marker, plus a running-head fragment ('M. Hampl, T. Havranek'). Footnote text is already present in full in the transcript's endnotes, and the body sentence 'the methodology employed in these studies; readers interested in a such a treatment will want to inspect...' already reads fine without it.",
+   "dropped_text": "Accounting practices vary across central banks. For example, the US Federal Reserve classifies losses as a \"deferred asset\" so that capital does not fall (not technically, anyway). Conceptually we see no difference. M. Hampl, T. Havranek",
+   "transcript_before": "methodology employed in these studies readers"
+  },
+  {
+   "project": "cbequity",
+   "id": 2,
+   "verdict": "skip",
+   "reason": "Footnote 5, already present in full in the transcript's endnotes. Body sentence 'no underlying relation between central bank financial strength and inflation performance. Studies with low precision tend to select...' already reads fine.",
+   "dropped_text": "One can argue that Del Negro and Sims (2015) offer a step in this direction. When economic agents find that",
+   "transcript_before": "central bank financial strength and inflation"
+  },
+  {
+   "project": "cbequity",
+   "id": 3,
+   "verdict": "skip",
+   "reason": "Journal running head ('Central Bank Equity as an Instrument of Monetary Policy') recurring at a page break. Body sentence '...tapering the drops off as the economy recovers and inflation reappears.' already reads fine.",
+   "dropped_text": "Central Bank Equity as an Instrument of Monetary Policy",
+   "transcript_before": "the drops off as the economy"
+  },
+  {
+   "project": "cbequity",
+   "id": 4,
+   "verdict": "skip",
+   "reason": "Same running-head boilerplate at a page break. Body sentence '...South African Reserve Bank, Central Bank of Turkey, and of course the US Federal Reserve.' already reads fine.",
+   "dropped_text": "Central Bank Equity as an Instrument of Monetary Policy",
+   "transcript_before": "bank south african reserve bank central"
+  },
+  {
+   "project": "cbequity",
+   "id": 5,
+   "verdict": "skip",
+   "reason": "Same running-head boilerplate. Body sentence '...we would not recommend its deployment, for example, in 2016 Europe—even though...' already reads fine.",
+   "dropped_text": "Central Bank Equity as an Instrument of Monetary Policy",
+   "transcript_before": "and we would not recommend its"
+  },
+  {
+   "project": "class",
+   "id": 0,
+   "verdict": "skip",
+   "reason": "Transcript already reads fine: '...comply with the first two but not the third criterion; in that case we recompute the reported effects to partial correlation coefficients.' Verbatim ('These rules of thumb apply to Cohen's d... an effect size defined as a response to a specific change...') is footnote 1's content (attached to 'large.^{1}' one sentence earlier), interleaved by PDF extraction order, not a missing clause in this sentence.",
+   "dropped_text": "These rules of thumb apply to Cohen's d. In the context of the class size literature, we believe that an effect size defined as a response to a specific change in the number of students is easier to interpret. If the effects in our meta-ana",
+   "transcript_before": "not the third criterion in that"
+  },
+  {
+   "project": "contagion",
+   "id": 0,
+   "verdict": "skip",
+   "reason": "Transcript already reads fine: 'is subject to the three following risk components. Banks face the global...' is a complete sentence followed by a new one; verbatim is a footnote (superscript 10, 'This is an advantage compared to other techniques like CoVaR...') interleaved by PDF extraction, not missing body prose.",
+   "dropped_text": "footnote continued) and b, see Hartmann et al. (2004). 10 This is an advantage compared to other techniques like CoVaR (Adrian and Brunnermeier, 2008) which condition on a specific bank failure",
+   "transcript_before": "is subject to the three following"
+  },
+  {
+   "project": "contagion",
+   "id": 1,
+   "verdict": "skip",
+   "reason": "Transcript already reads fine: '...we explain how systemic failures can spread from a parent bank to its subsidiaries.' is complete and grammatical (ends with footnote marker ^4). Verbatim ('As we stressed in the introduction, we use the methodology of Slijkerman et al...') is that footnote's text.",
+   "dropped_text": "As we stressed in the introduction, we use the methodology of Slijkerman et al. (2013). Their paper is, however, focused on economically different issues",
+   "transcript_before": "we explain how systemic failures can"
+  },
+  {
+   "project": "contagion",
+   "id": 2,
+   "verdict": "skip",
+   "reason": "Transcript already reads fine: 'evaluate the robustness of our results. We emphasize that the model works with *loss* returns; that is, the losses are modeled as positive numbers.' Verbatim ('We need at least two such banks...') is unrelated footnote content interleaved by extraction order, not a missing clause in this sentence.",
+   "dropped_text": "We need at least two such banks in a given country so that we can construct the subsidiary-to-subsidiary pair",
+   "transcript_before": "of our results we emphasize that"
+  },
+  {
+   "project": "contagion",
+   "id": 3,
+   "verdict": "skip",
+   "reason": "Verbatim ('comparisons by ranking methods. Biom. Bull. 1, 80-83. Zhou, C., 2010. Are') is a bibliography/reference-list entry, explicitly excluded.",
+   "dropped_text": "comparisons by ranking methods. Biom. Bull. 1, 80-83. Zhou, C., 2010. Are",
+   "transcript_before": "so that it accounts for individual"
+  },
+  {
+   "project": "crisis_ews",
+   "id": 0,
+   "verdict": "skip",
+   "reason": "Footnote 6 inline-interleaved at the marker, already present in full in the transcript's endnotes. Body sentence 'Mishkin (1997) points out important differences between developed and emerging economics in terms of the causes and propagation of crises.' already reads fine.",
+   "dropped_text": "The crisis duration also corresponds to the frequency of crisis occurrence: the share of episodes of banking crises identified is 16% of all observations, while the figures for currency crises and debt crises are 5.2% and 1.3%, respectively",
+   "transcript_before": "mishkin points out important differences between"
+  },
+  {
+   "project": "crisis_ews",
+   "id": 1,
+   "verdict": "skip",
+   "reason": "Footnote 7, already present in full in the endnotes. Body sentence 'Leaven and Valencia (2012) argue that it is actually a curse of advanced economies to rely too much on...' already reads fine.",
+   "dropped_text": "The cumulative effect is similar to Leaven and Valencia (2012), who report an output loss of 26% for emerging countries and 33% for developed countries, and to Frydl (1999), who reports an average output loss of",
+   "transcript_before": "and valencia argue that it is"
+  },
+  {
+   "project": "crisis_ews",
+   "id": 2,
+   "verdict": "skip",
+   "reason": "Footnote 9, already present in full in the endnotes. Body sentence '...potential early warning indicators X. The number K of potential explanatory variables yields 2^K potential models.' already reads fine.",
+   "dropped_text": "Notice that our subsequent examination of the early warning indicators is not a real-time analysis due to publication lags of the data",
+   "transcript_before": "early warning indicators the number of"
+  },
+  {
+   "project": "crisis_jfs",
+   "id": 0,
+   "verdict": "skip",
+   "reason": "Alignment artifact: the transcript already contains \"The most consistent result across the various specifications and time horizons is that [significant growth of/rising] domestic private credit precedes...\" intact at two locations (intro and conclusion); before/after were paired across these two separate occurrences. The verbatim text is footnote 30 (comparison to Alessi and Detken 2011), already present verbatim in the transcript's ENDNOTES section.",
+   "dropped_text": "Our results are not directly comparable with those of Alessi and Detken (2011), who report maximum usefulness values of around 0.20-0.25 for � = 0.5. A few differences in our approach are noteworthy. Alessi and Detken (2011) predict asset b",
+   "transcript_before": "consistent result across the various specifications"
+  },
+  {
+   "project": "crisis_jfs",
+   "id": 1,
+   "verdict": "skip",
+   "reason": "Verbatim is a figure caption/note (\"Fig. 11. Noise-to-signal ratio... Note: The noise-to-signal ratio...\"). Also an alignment artifact — the transcript already reads \"That is, even if the ratio of domestic private credit to GDP only exceeds its trend trajectory...\" fully intact with no gap at that location.",
+   "dropped_text": "Fig. 11. Noise-to-signal ratio, loss function value, and usefulness. Note: The noise-to-signal ratio and the value of the loss function are reported for the composite early warning indicator. Usefulness is reported for both the composite in",
+   "transcript_before": "that is even if the ratio"
+  },
+  {
+   "project": "crisis_jfs",
+   "id": 2,
+   "verdict": "skip",
+   "reason": "Alignment artifact: the transcript already reads \"...the probability that a given variable is included in the regression. It is referred to as the posterior inclusion probability (PIP)...\" fully intact with no gap. The verbatim (Hungary/Greece/Ireland debt crisis episodes) belongs elsewhere and was mismatched here.",
+   "dropped_text": "Indeed, the only episodes of debt crisis onset in the reduced sample are Hungary (2008), Greece (2010), and Ireland",
+   "transcript_before": "probability that a given variable is"
+  },
+  {
+   "project": "debate",
+   "id": 0,
+   "verdict": "skip",
+   "reason": "Verbatim spans the tail of a table note (line 355) and the start of a footnote/References section (line 363, 'every figure reported here is for the light run.' already complete); the 'after' fragment continues into bibliography entries. Both are excluded categories.",
+   "dropped_text": "window. \"No ranking\" includes non-response and one explicit decline, not identified in the table. The 28 external papers all appear in the Journal of Economic Surveys, either in a published issue or online first. 22 References",
+   "transcript_before": "figure reported here is for the"
+  },
+  {
+   "project": "discrate",
+   "id": 0,
+   "verdict": "skip",
+   "reason": "Footnote 8 inline-interleaved at the marker, plus a page-break running-head/page-number fragment ('J. Matousek et al', '338'). Footnote already present in full in the endnotes; body sentence '...irrespective of the number of variables included in the model. Such intuitive priors are agnostic...' already reads fine.",
+   "dropped_text": "If the matrix of explanatory variables X contains K potential variables, this means estimating 2K variable combinations, i.e., 2K models. This estimation results in 222 = 4, 194, 304 models in our case. 1 3 338 J. Matousek et al",
+   "transcript_before": "probability irrespective of the number of"
+  },
+  {
+   "project": "dst",
+   "id": 0,
+   "verdict": "skip",
+   "reason": "Verbatim is the Figure 5 note text ('In the absence of publication bias, the funnel should be symmetrical...'), confirmed present verbatim in transcript.md line 129 as the actual figure caption. Figure caption, not body prose to restore.",
+   "dropped_text": "effect. In the absence of publication bias, the funnel should be symmetrical around the most precise estimates of the DST effect on electricity savings. The dashed vertical line denotes the mean of the estimates. Outliers are excluded from ",
+   "transcript_before": "insignificant publication bias in the dst"
+  },
+  {
+   "project": "dst",
+   "id": 1,
+   "verdict": "skip",
+   "reason": "Verbatim ('Notes: The figure depicts a funnel plot of the estimates of') is the opening of the same Figure 5 caption, already rendered at transcript.md line 129. Figure caption.",
+   "dropped_text": "Notes: The figure depicts a funnel plot of the estimates of",
+   "transcript_before": "our conclusion of insignificant publication bias"
+  },
+  {
+   "project": "dst",
+   "id": 2,
+   "verdict": "skip",
+   "reason": "Checked transcript.md line 127: the sentence 'In Table 3 we show that various versions of this test corroborate our conclusion of insignificant publication bias in the DST literature' is already present in full and grammatical. Before+after already join into this exact complete sentence; the flagged verbatim text is an alignment artifact from elsewhere in the PDF, not a real gap.",
+   "dropped_text": "DST savings result from simulations, and thus the ratio",
+   "transcript_before": "we show that various versions of"
+  },
+  {
+   "project": "dst_slovakia",
+   "id": 0,
+   "verdict": "skip",
+   "reason": "Verbatim is a figure caption and the chart's axis labels/tick values (\"Figure 2: ... 3600 3400 3200... Hour of a day\") — figure furniture, not body prose.",
+   "dropped_text": "Consumption (inMWh) Figure 2: Largest difference in consumption before and after the DST change probably occurs in the evening hours 3600 3400 3200 3000 2800 2600 :LWKRXW'67 :LWK'67 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 2",
+   "transcript_before": "or the pair of variables cooling"
+  },
+  {
+   "project": "education",
+   "id": 0,
+   "verdict": "skip",
+   "reason": "Verbatim is a figure-legend fragment ('Blue colour = ... positive. Red colour = ... negative') describing a BMA heat map. Checked transcript ENDNOTES section (endnote 4): the full sentence 'it is important to mention the potential snob effect related to the price of education and anticipated in the discussion of Table 2' is already present verbatim there in full — nothing is actually missing, the gap is just a figure caption sitting between two mentions of the same footnote marker in the PDF's raw layout.",
+   "dropped_text": "the cumulative posterior model probability. Blue colour (darker in grayscale) = the estimated parameter of a corresponding explanatory variable is positive. Red colour (lighter in grayscale) = the estimated parameter of a corresponding expl",
+   "transcript_before": "effect related to the price of"
+  },
+  {
+   "project": "education",
+   "id": 1,
+   "verdict": "skip",
+   "reason": "Verbatim is figure-caption text ('explanatory variables are ranked according to their posterior inclusion probabilities...'). Same underlying sentence confirmed already complete in the transcript's endnote 4.",
+   "dropped_text": "explanatory variables are ranked according to their posterior inclusion probabilities from the highest at the top",
+   "transcript_before": "it is important to mention the"
+  },
+  {
+   "project": "education",
+   "id": 2,
+   "verdict": "skip",
+   "reason": "Continuation of the same figure caption ('...lowest at the bottom. The horizontal axis shows the values...'). Figure caption; endnote 4 already reads in full without it.",
+   "dropped_text": "lowest at the bottom. The horizontal axis shows the values",
+   "transcript_before": "potential snob effect related to the"
+  },
+  {
+   "project": "elb",
+   "id": 0,
+   "verdict": "skip",
+   "reason": "Journal running-head boilerplate ('Finance a úvěr-Czech Journal of Economics and Finance, 68, 2018, no...'), plus a citation to an EU regulation. Page-footer furniture, not body prose; before+after also already reads as one continuous clause.",
+   "dropped_text": "Regulation (EU) 2015/751 of the European Parliament and of the Council of 29 April 2015. 562 Finance a �vr-Czech Journal of Economics and Finance, 68, 2018, no",
+   "transcript_before": "the difference between the costs of"
+  },
+  {
+   "project": "elb",
+   "id": 1,
+   "verdict": "skip",
+   "reason": "Same running-head boilerplate ('Finance a úvěr-Czech Journal of Economics and Finance, 68, 2018, no'). Before+after already joins into one continuous clause without it.",
+   "dropped_text": "Finance a �vr-Czech Journal of Economics and Finance, 68, 2018, no",
+   "transcript_before": "literature lacks the proper research explicitly"
+  },
+  {
+   "project": "elb",
+   "id": 2,
+   "verdict": "skip",
+   "reason": "Same running-head boilerplate again. Page-footer furniture repeated at a third page break.",
+   "dropped_text": "Finance a �vr-Czech Journal of Economics and Finance, 68, 2018, no",
+   "transcript_before": "no economically or statistically significant effect"
+  },
+  {
+   "project": "electricity",
+   "id": 0,
+   "verdict": "skip",
+   "reason": "Footnote misalignment artifact, not a real gap. The verbatim text ('The other thin-cluster cell...stays firmly n[egative]') is already present verbatim as Endnote 1 (line 127 of the transcript). In the PDF the footnote text is interleaved mid-paragraph right after the footnote marker ^1, which is what confuses the word-alignment; the transcript correctly relocated it to the endnotes section. The before+after join ('...caveat rather than resolving it: dropping any one of...') is itself already a complete, correct sentence at line 93 -- nothing is missing there.",
+   "dropped_text": "The other thin-cluster cell the analysis leans on, the most recent long-run data decade (Figure 3, 2010s onward, 9 studies), is robust in the opposite direction: its bias-corrected mean, if anything more elastic than the -0.29 to -0.47 era ",
+   "transcript_before": "leave-one-study-out sharpens this caveat rather than"
+  },
+  {
+   "project": "electricity",
+   "id": 1,
+   "verdict": "skip",
+   "reason": "Table note, already present. This verbatim text ('long-run cell before 1976 has 51 estimates...') is the Table 3 note, verbatim at line 136 of the transcript ('Notes: Bias-corrected (PET) elasticity...'). Reading order in the PDF interleaves the table note into the body text, producing a spurious gap; nothing was actually dropped.",
+   "dropped_text": "long-run cell before 1976 has 51 estimates from 12 studies but is imprecisely estimated (a wide interval) and is suppressed. The intermediate run varies non-monotonically across eras; the short- and long-run values in",
+   "transcript_before": "stock the other thin-cluster cell the"
+  },
+  {
+   "project": "electricity",
+   "id": 2,
+   "verdict": "skip",
+   "reason": "Same Table 3 note as id 1 (a further slice of the identical already-present text at line 136). Table note, not missing prose.",
+   "dropped_text": "statistically distinguishable from the earliest era shown (for the long run this baseline is 1976-90, because the 1975 long-run cell is suppressed as imprecise), and no horizon exhibits",
+   "transcript_before": "the recent long-run response is not"
+  },
+  {
+   "project": "electricity",
+   "id": 3,
+   "verdict": "skip",
+   "reason": "Same Table 3 note again (line 136), a third slice of already-present table-note text.",
+   "dropped_text": "monotone rise toward the present. These era comparisons are imprecise and should be read as a limit on power rather than as evidence of exact stability",
+   "transcript_before": "recent long-run response is not a"
+  },
+  {
+   "project": "electricity",
+   "id": 4,
+   "verdict": "skip",
+   "reason": "Footnote already present. Verbatim ('controls one block at a time (data clock alone, then') matches Endnote 2 verbatim at line 207. The before+after join ('...precise enough to bound change, the record does more than fail to...') is already a complete correct sentence at line 171 -- the gap is a footnote-position alignment artifact, not a real omission.",
+   "dropped_text": "controls one block at a time (data clock alone, then",
+   "transcript_before": "precise enough to bound change the"
+  },
+  {
+   "project": "esg",
+   "id": 0,
+   "verdict": "skip",
+   "reason": "Endnote 1 is already present in full elsewhere in the transcript, and the body sentence 'We report these intervals for completeness but, given the weak first stage, do not base any conclusion on MAIVE's point estimate.' already reads fine. The proposed verbatim text is unrelated content from an AI-disclosure table on a different page — inserting it here would not repair anything, it would corrupt the sentence.",
+   "dropped_text": "check raised was adjudicated by the authors against the primary study, and the resulting corrections are logged cell by cell in Data/CHANGELOG.md. AI did",
+   "transcript_before": "intervals for completeness but given the"
+  },
+  {
+   "project": "esg",
+   "id": 1,
+   "verdict": "skip",
+   "reason": "Same endnote 1, already complete in the transcript ('...do not base any conclusion on MAIVE's point estimate.'). Nothing broken at this point.",
+   "dropped_text": "analytical choice, such as a specification, weighting scheme, or prior",
+   "transcript_before": "first stage do not base any"
+  },
+  {
+   "project": "euro",
+   "id": 0,
+   "verdict": "skip",
+   "reason": "Contains footnote 6 text ('Other robustness checks are available from the author upon request...'), Figure 3 (Galbraith plot), and running head/page number ('123 Rose effect and the euro 249'). Checked transcript line 101: 'it is questionable how one can pool together studies written in 2002, when the euro was still young, and papers published, for example, in 2008' is already complete and grammatical.",
+   "dropped_text": "Other robustness checks are available from the author upon request or in the working paper version of this article. 123 Rose effect and the euro 249 10 5 0 t-statistic (if the true effect = 0.05) -5 -10 -15 0 50 100 150 200 250 precision of",
+   "transcript_before": "the euro was still young and"
+  },
+  {
+   "project": "euro",
+   "id": 1,
+   "verdict": "skip",
+   "reason": "This is footnote 5 (about the LR test being conservative, citing Rabe-Hesketh and Skrondal 2008) plus running head/page furniture ('123 248 T. Havránek'). Transcript line 83 already reads as a complete sentence: '...at the 5% level of significance implies that publication bias presents, in our opinion, a serious problem for the literature on the euro's Rose effect.'",
+   "dropped_text": "As Rabe-Hesketh and Skrondal (2008, p. 159) note, the LR test is conservative in this case and the correct p-value can be obtained by dividing the original LR p-value by 2. 123 248 T. Havra�nek Table 1 Tests of",
+   "transcript_before": "the level of significance implies that"
+  },
+  {
+   "project": "euro",
+   "id": 2,
+   "verdict": "skip",
+   "reason": "A citation aside ('For an excellent introduction to the methodology of meta-analysis... see Stanley (2001)') plus running head ('Rose effect and the euro'), sitting between two halves of an already-complete sentence at transcript line 27: '...search for the true Rose effect beyond publication bias. In Sect. 4, the explanatory MRA is conducted.'",
+   "dropped_text": "For an excellent introduction to the methodology of meta-analysis and its application in economics, see Stanley (2001). 123 Rose effect and the euro",
+   "transcript_before": "search for the true rose effect"
+  },
+  {
+   "project": "excess_sensitivity",
+   "id": 0,
+   "verdict": "skip",
+   "reason": "Verbatim ('T. Havranek, A. Sokolova / Review of Economic Dynamics') is a journal running head. Before+after already reads fine: '...most important study aspects in our BMA exercise, aside from the three...'",
+   "dropped_text": "T. Havranek, A. Sokolova / Review of Economic Dynamics",
+   "transcript_before": "most important study aspects in our"
+  },
+  {
+   "project": "forward",
+   "id": 0,
+   "verdict": "skip",
+   "reason": "Verbatim is journal running-head boilerplate (\"D. Zigraiova, T. Havranek, Z. Irsova et al. European Economic Review 134 (2021) 103714\") plus a figure caption (\"Fig. 1... Notes: The horizontal axis denotes...\").",
+   "dropped_text": "D. Zigraiova, T. Havranek, Z. Irsova et al. European Economic Review 134 (2021) 103714 Fig. 1. Do estimates of increase with time? Notes: The horizontal axis denotes the year when the first version of the paper appeared in Google Scholar. T",
+   "transcript_before": "that run millions of different regressions"
+  },
+  {
+   "project": "forward",
+   "id": 1,
+   "verdict": "skip",
+   "reason": "Verbatim is a table/variable-definition list of currency dummies (\"=1 if German mark is used. =1 if French franc is used...\"). Before+after already reads as a complete, grammatical clause on its own (\"that studies of higher quality are published on average in better outlets\") and the two phrases sit immediately adjacent in the transcript with no real gap.",
+   "dropped_text": "used. =1 if emerging-economy currencies are used. =1 if German mark is used. =1 if French franc is used. =1 if British pound is used. =1 if Italian lira is used. =1 if Japanese yen is used. =1 if Swiss franc is used. =1 if euro is used. =1 ",
+   "transcript_before": "that studies of higher quality are"
+  },
+  {
+   "project": "frisch",
+   "id": 0,
+   "verdict": "skip",
+   "reason": "Verbatim is journal running head ('A. Elminejad, T. Havranek, R. Horvath et al. Review of Economic Dynamics...') plus a figure note about winsorizing outliers. Before+after already reads fine: '...couple of outliers on both sides of the distribution so we winsorize...'",
+   "dropped_text": "A. Elminejad, T. Havranek, R. Horvath et al. Review of Economic Dynamics 51 (2023) 1095-1113 Notes: The solid line denotes the sample mean (0.48); the dashed line denotes the sample median (0.35). Estimates smaller than -1 and larger than 3",
+   "transcript_before": "couple of outliers on both sides"
+  },
+  {
+   "project": "frisch",
+   "id": 1,
+   "verdict": "skip",
+   "reason": "Same running-head pattern plus a figure note ('Notes: The vertical lines show the values of t-statistics...'). Figure caption/boilerplate, not body prose.",
+   "dropped_text": "A. Elminejad, T. Havranek, R. Horvath et al. Review of Economic Dynamics 51 (2023) 1095-1113 Notes: The vertical lines show the values of t-statistics associated with changing the sign and achieving statistical significance at the 5% level,",
+   "transcript_before": "that quasi-experimental data are often examined"
+  },
+  {
+   "project": "gasoline",
+   "id": 0,
+   "verdict": "skip",
+   "reason": "Verbatim is a free-standing sentence about Espey (1998) that does not fit grammatically at this join point. Transcript body already reads complete and grammatical without it: '...allow the researcher to filter out the effects of individual cross-sectional units and also provide more opportunities to tackle endogeneity in gasoline demand.'",
+   "dropped_text": "Nevertheless, it is worth noting that Espey (1998) focuses on explaining the heterogeneity in the estimates, not on the mean value of the elasticity",
+   "transcript_before": "the effects of individual cross-sectional units"
+  },
+  {
+   "project": "gasoline_price",
+   "id": 0,
+   "verdict": "skip",
+   "reason": "Footnote already present elsewhere. 'We thank an anonymous reviewer for pointing out this problem' is Endnote 2, verbatim at line 219. The before+after join ('...such a case the triangle would lose its upper part. Regression (1) would yield...') is already a complete, correct sentence at line 135 -- nothing is actually missing there.",
+   "dropped_text": "We thank an anonymous reviewer for pointing out this problem",
+   "transcript_before": "such a case the triangle would"
+  },
+  {
+   "project": "habits",
+   "id": 0,
+   "verdict": "skip",
+   "reason": "A citation sentence about a different topic (Havranek and Sokolova 2016 on consumption Euler equations) plus running head ('162 T. Havranek et al. / European Economic Review'), a page-break artifact. Transcript line 473 already reads complete and grammatical: '...median estimates reported in the studies against their precision. The plots show little signs of asymmetry (especially compared to other fields of empirical economics), but both 0 and 1...'",
+   "dropped_text": "In a similar vein, Havranek and Sokolova (2016) identify publication bias in the literature on the excess sensitivity of consumption growth to anticipated income changes. 162 T. Havranek et al. / European Economic Review",
+   "transcript_before": "studies against their precision the plots"
+  },
+  {
+   "project": "house_prices",
+   "id": 0,
+   "verdict": "skip",
+   "reason": "Verbatim is journal front-matter/author-bio boilerplate ('researcher at the Czech National Bank... Her research interests include...'), interleaved into the extracted text stream at a page break; the surrounding endnote sentence ('...we stick to the number of building permits as a house supply proxy often used in the literature...') is already complete and grammatical in the transcript's ENDNOTES section.",
+   "dropped_text": "researcher at the Czech National Bank and the Institute of Economic Studies, Charles University, Prague. Her research interests include monetary policy, financial stability, macroprudential policy, and quantitative research synthesis. She h",
+   "transcript_before": "number of building permits as a"
+  },
+  {
+   "project": "house_prices",
+   "id": 1,
+   "verdict": "skip",
+   "reason": "Verbatim ('Though such impulse response functions can still be explained... see Galí (2014) and Galí and Gambetti (2015). 546 D. Ehrenbergerova et al') is endnote 5 text plus a running head/page-header artifact -- footnote content and journal boilerplate, already present verbatim in the transcript's ENDNOTES section.",
+   "dropped_text": "Though such impulse response functions can still be explained, for example, by the theory of rational bubbles, see Gal� (2014) and Gal� and Gambetti (2015). 546 D. Ehrenbergerova et al",
+   "transcript_before": "is it a valuable principle that"
+  },
+  {
+   "project": "house_prices",
+   "id": 2,
+   "verdict": "skip",
+   "reason": "Verbatim ('such publishing agreement and applicable law. Dominika Ehrenbergerova is') is copyright/publishing-agreement boilerplate plus the start of an author bio -- journal front-matter, not body prose. The surrounding sentence ('we stick to the number of building permits as a house supply...') is already complete in the transcript.",
+   "dropped_text": "such publishing agreement and applicable law. Dominika Ehrenbergerova is",
+   "transcript_before": "we stick to the number of"
+  },
+  {
+   "project": "incentives",
+   "id": 0,
+   "verdict": "skip",
+   "reason": "Verbatim is a table note (\"Notes: Panel A/B... OLS = ordinary least squares, FE = study fixed effects...\") describing regression table columns. Table notes are rendered separately.",
+   "dropped_text": "parentheses. OLS = ordinary least squares, FE = study fixed effects, BE = study between effects, Study = weighted by the inverse of the number of estimates reported per study, Precision = weighted by the inverse of the estimate's standard e",
+   "transcript_before": "on meta-analysis and publication bias in"
+  },
+  {
+   "project": "incentives",
+   "id": 1,
+   "verdict": "skip",
+   "reason": "Verbatim continues the same table note (explains instrument, Anderson-Rubin CI, P-uniform* method) — table apparatus, not body prose.",
+   "dropped_text": "an instrument for the standard error. In curly brackets we show the Anderson-Rubin 95% confidence interval. P-uniform* = the method by van Aert & van Assen (2025), where L denotes the statistic of the publication bias test; the correspondin",
+   "transcript_before": "transformation to standardized coefficients such as"
+  },
+  {
+   "project": "incentives",
+   "id": 2,
+   "verdict": "skip",
+   "reason": "Verbatim is a table note (\"Notes: Panel A: Results of regression Dis = ...\") giving the regression specification for a results table.",
+   "dropped_text": "First-stage robust F-stat Observations 2,701 1,252 1,252 Notes: Panel A: Results of regression Dis = D0 + SE(Dis) + is, where Dis denotes Cohen's d coefficient corresponding to the i-th estimate from the s-th study",
+   "transcript_before": "the broader definition of publication bias"
+  },
+  {
+   "project": "incentives",
+   "id": 3,
+   "verdict": "skip",
+   "reason": "Verbatim matches ENDNOTES footnote 5 in the transcript almost verbatim (\"Another, more technical source of endogeneity is the transformation to standardized coefficients such as partial correlations, which introduces a mechanical correlation... MAIVE accounts for this problem as well.\"), already present in the document's endnotes section.",
+   "dropped_text": "results--in partial correlations, which introduces a mechanical correlation between estimates and standard errors (Stanley et al., 2024, 2025). MAIVE accounts for this problem as well",
+   "transcript_before": "which editors or referees prefer certain"
+  },
+  {
+   "project": "incentives",
+   "id": 4,
+   "verdict": "skip",
+   "reason": "Verbatim is more of the same table note (defines SE(Dis), clustering) — table apparatus, not running prose.",
+   "dropped_text": "SE(Dis) denotes its standard error. The standard errors of the regression parameters are clustered at the study level",
+   "transcript_before": "broader definition of publication bias and"
+  },
+  {
+   "project": "incentives",
+   "id": 5,
+   "verdict": "skip",
+   "reason": "Verbatim is a table header/title row (\"tests for the baseline dataset... Panel A: Linear techniques OLS FE BE Study Precision\") — table content.",
+   "dropped_text": "tests for the baseline dataset (Cohen's d) Panel A: Linear techniques OLS FE BE Study Precision",
+   "transcript_before": "the definition the term publication bias"
+  },
+  {
+   "project": "lags",
+   "id": 0,
+   "verdict": "skip",
+   "reason": "Transcript already reads fine: 'The developed country with the fastest transmission of monetary policy actions is Italy: the corresponding transmission lag reaches 26.6 months.' Verbatim ('The definition of the two groups is somewhat problematic... Czech Republic... considered a developed economy by the World Bank since 2006...') is footnote 1's content (attached to 'post-transition economies.^{1}' in the prior sentence), not part of this sentence.",
+   "dropped_text": "The definition of the two groups is somewhat problematic. The Czech Republic, for example, has been considered a developed economy by the World Bank since 2006. We include the country in the second group because pre-2006 time series constit",
+   "transcript_before": "transmission of monetary policy actions is"
+  },
+  {
+   "project": "leading_indicators",
+   "id": 0,
+   "verdict": "skip",
+   "reason": "Transcript line 63 already reads complete: '...reduce the risk of missing important potential indicators from our analysis by adding potential leading indicators, such as the total tax burden...'. Verbatim is an unrelated footnote (line 472) about definitions of 'developed' economy.",
+   "dropped_text": "There are alternative definitions of a `developed' economy. For the sake of simplicity, we consider all EU and OECD members as of 2011. It follows that some countries graduated from the emerging or transition into the developed economy cate",
+   "transcript_before": "important potential indicators from our analysis"
+  },
+  {
+   "project": "learning",
+   "id": 0,
+   "verdict": "skip",
+   "reason": "Verbatim (numbered '(1)...; and (2)...' questions about the multi-bias framework) is footnote 8 content, keyed to the '^{8}' marker in the transcript. Transcript body already reads fine: '...allow internal bias to differ by study design, for example by assigning different bias parameters to randomized and non-randomized studies. Because we do not have complete information...'",
+   "dropped_text": "For a given severity of internal bias across studies and of publication bias, how much could the results change?\"; and (2) \"For a given severity of publication bias, how severe would internal bias have to be, hypothetically, to attenuate th",
+   "transcript_before": "assigning different bias parameters to randomized"
+  },
+  {
+   "project": "learning",
+   "id": 1,
+   "verdict": "skip",
+   "reason": "Verbatim (numbered assumptions about affirmative/non-affirmative internal bias values) is footnote 9 content, keyed to the '^{9}' marker in the transcript. Transcript body already reads fine: '...moves toward the MAIVE and RoBMA estimates rather than toward the smaller RTMA estimate. We therefore interpret...'",
+   "dropped_text": "Here we assume: (1) affirmative studies are four times more likely to be published than nonaffirmative studies; and (2) affirmative studies have a mean internal bias of 0.05, and (3) nonaffirmative studies have a mean internal bias of 0.01,",
+   "transcript_before": "and robma estimates rather than toward"
+  },
+  {
+   "project": "migrant",
+   "id": 0,
+   "verdict": "skip",
+   "reason": "Footnote 2, already present in full in the endnotes. Body sentence '...used in the structural estimation, which represents the product of education and experience groups...' already reads fine.",
+   "dropped_text": "The counts sum to more than 41 because three studies use both measures",
+   "transcript_before": "the structural estimation which represents the"
+  },
+  {
+   "project": "passthrough",
+   "id": 0,
+   "verdict": "skip",
+   "reason": "Bibliography-entry fragments ('Exchange rate dynamics and its effect on macroeconomic volatility...', 'Labour market modelling within...') -- reference-list titles, not body prose. The before+after text is itself already present verbatim and complete at line 582 of the transcript (Endnote 2: '...housing sector in the Czech Republic, where they have an almost zero share...'); nothing is actually missing from that sentence.",
+   "dropped_text": "Exchange rate dynamics and its effect on macroeconomic volatility in selected CEE countries Labour market modelling within",
+   "transcript_before": "housing sector in the czech republic"
+  },
+  {
+   "project": "passthrough",
+   "id": 1,
+   "verdict": "skip",
+   "reason": "Table-note duplicate. Verbatim ('period 2004:01-2008:08 by the mean group estimator (Pesaran and Smith, 1995); standard errors are shown') matches the recurring Table notes already present at lines 449/468 etc. The surrounding before+after sentence is itself already complete and correct at line 582; this is a footnote/table-note position alignment artifact.",
+   "dropped_text": "period 2004:01-2008:08 by the mean group estimator (Pesaran and Smith, 1995); standard errors are shown",
+   "transcript_before": "foreign currency are negligible for the"
+  },
+  {
+   "project": "pcc",
+   "id": 0,
+   "verdict": "skip",
+   "reason": "Verbatim is a section heading (\"3.2.2 | Reducing meta-analysis of PCCs bias to triviality\") with its equation-label fragment (UWLS−UWLS+3); the transcript already carries this as its own \"### 3.2.2 | ...\" heading just before the following paragraph.",
+   "dropped_text": "UWLS--UWLS+3. 3.2.2 | Reducing meta-analysis of PCCs bias to triviality",
+   "transcript_before": "to adjust degrees of freedom for"
+  },
+  {
+   "project": "pcc_survey",
+   "id": 0,
+   "verdict": "skip",
+   "reason": "Checked transcript.md line 113: 'HS avoids any dependence arising from the weights being dependent on the estimated effect sizes and thereby their sampling errors' is already present in full and grammatical, matching before+after exactly. The flagged verbatim ('We thank an anonymous reviewer for suggesting...') is Footnote 2 (line 221), a different location and itself an excluded footnote.",
+   "dropped_text": "We thank an anonymous reviewer for suggesting that we report the UWLS version of using Fisher's z transformation. It proves to be, arguably, the best approach in practice--see below",
+   "transcript_before": "dependence arising from the weights being"
+  },
+  {
+   "project": "price_puzzle",
+   "id": 0,
+   "verdict": "skip",
+   "reason": "A Table 3 variable-description fragment ('The number of years of the data used') caught between footnote 4's text due to page layout. Transcript already has footnote 4 complete: '...pattern of publication bias very similar to that presented in Table 2. These robustness checks are available in the online appendix.'",
+   "dropped_text": "used The number of years of the data used",
+   "transcript_before": "in table these robustness checks are"
+  },
+  {
+   "project": "price_puzzle",
+   "id": 1,
+   "verdict": "skip",
+   "reason": "The paper's own running head/title ('How to Solve the Price Puzzle? A Meta-Analysis') inserted between the frontmatter author-name line and the affiliation line. Confirmed in transcript lines 3 and 5 — this is title-page boilerplate, not body prose.",
+   "dropped_text": "How to Solve the Price Puzzle? A Meta-Analysis",
+   "transcript_before": "rusnak tomas havranek and roman horvath"
+  },
+  {
+   "project": "reforms",
+   "id": 0,
+   "verdict": "skip",
+   "reason": "Verbatim is the journal running head/copyright boilerplate ('The Authors Economics of Transition (c) 2013 The European Bank for Reconstruction and Development...') repeated as page furniture. Before+after already reads fine: '...misspecifications in some primary studies the remainder of the article is organized...'",
+   "dropped_text": "Authors Economics of Transition � 2013 The European Bank for Reconstruction and Development Structural Reforms and Growth in Transition 15 The",
+   "transcript_before": "misspecifications in some primary studies the"
+  },
+  {
+   "project": "reforms",
+   "id": 1,
+   "verdict": "skip",
+   "reason": "Same running-head/copyright boilerplate. Before+after already parses fine: '...literature on the effects of foreign direct investment on the productivity of...'",
+   "dropped_text": "The Authors Economics of Transition � 2013 The European Bank for Reconstruction and Development Structural Reforms and Growth in Transition",
+   "transcript_before": "literature on the effects of foreign"
+  },
+  {
+   "project": "reforms",
+   "id": 2,
+   "verdict": "skip",
+   "reason": "Running-head/copyright boilerplate with page number ('16 Babecky and Havranek'). Before+after reads fine: '...work with yearly data and the average number of countries in panels...'",
+   "dropped_text": "Authors Economics of Transition � 2013 The European Bank for Reconstruction and Development 16 Babecky and Havranek the",
+   "transcript_before": "work with yearly data and the"
+  },
+  {
+   "project": "reforms",
+   "id": 3,
+   "verdict": "skip",
+   "reason": "Running-head/copyright boilerplate ('26 Babecky and Havranek'). Before+after already grammatical: '...the estimate of the underlying reform effect now becomes conditional on the...'",
+   "dropped_text": "The Authors Economics of Transition � 2013 The European Bank for Reconstruction and Development 26 Babecky and Havranek",
+   "transcript_before": "the estimate of the underlying reform"
+  },
+  {
+   "project": "reforms",
+   "id": 4,
+   "verdict": "skip",
+   "reason": "Running-head/copyright boilerplate ('30 Babecky and Havranek'). Before+after reads fine: '...indicates improvement in the characteristic in question but is not necessarily proportional...'",
+   "dropped_text": "The Authors Economics of Transition � 2013 The European Bank for Reconstruction and Development 30 Babecky and Havranek",
+   "transcript_before": "indicates improvement in the characteristic in"
+  },
+  {
+   "project": "reforms",
+   "id": 5,
+   "verdict": "skip",
+   "reason": "Running-head/copyright boilerplate ('32 Babecky and Havranek'). Before+after reads fine: '...removing trade and capital account controls affects growth and the interactions among...'",
+   "dropped_text": "The Authors Economics of Transition � 2013 The European Bank for Reconstruction and Development 32 Babecky and Havranek",
+   "transcript_before": "removing trade and capital account controls"
+  },
+  {
+   "project": "remittances",
+   "id": 0,
+   "verdict": "skip",
+   "reason": "Transcript already reads fine: 'Our intention here is not to provide a detailed review of estimation methodology; for a detailed survey, we refer the reader to Yang (2011).' Verbatim ('Important recent contributions on publication bias in economics include Brodeur...') is footnote content interleaved by extraction, not a missing clause here.",
+   "dropped_text": "Important recent contributions on publication bias in economics include Brodeur, L�, Sangnier, and Zylberberg (2016), Ioannidis et al. (2017), Brodeur, Cook, and Heyes (2018), Christensen and Miguel (2018), Andrews and Kasy (2019), and Furu",
+   "transcript_before": "intention here is not to provide"
+  },
+  {
+   "project": "remittances",
+   "id": 1,
+   "verdict": "skip",
+   "reason": "Transcript already reads fine: '...implies that the variable entails a positive effect, i.e. it causes that the estimated effect of remittances on economic growth in primary studies is larger.' Verbatim ('We use the Markov Chain Monte Carlo algorithm...') is footnote 10's text (attached earlier in the same paragraph to 'Feldkircher and Zeugner (2009)^{10}'), not part of this sentence.",
+   "dropped_text": "We use the Markov Chain Monte Carlo algorithm provided by the package to walk through model space and employ 2 million iterations with 1 million burn-ins to achieve convergence",
+   "transcript_before": "effect i e it causes that"
+  },
+  {
+   "project": "resource_curse",
+   "id": 0,
+   "verdict": "skip",
+   "reason": "False-positive alignment artifact: the aligner matched across an intervening table (rendered separately). Checked transcript directly — both halves are already present in full: section (e) ends '...level of income as the dependent variable.' (line ~101) and section (f) heading 'The choice of the natural resource variable' plus 'The studies differ in the proxies they employ for natural resources...' (lines 156-158) both already exist verbatim. Nothing is actually missing.",
+   "dropped_text": "variable. (f) The choice of the natural resource",
+   "transcript_before": "level of income as the dependent"
+  },
+  {
+   "project": "sigma",
+   "id": 0,
+   "verdict": "skip",
+   "reason": "Verbatim is a figure Notes block mixed with journal running head ('S. Gechert... Review of Economic Dynamics... Notes: The figure shows...') -- explicitly excluded as a figure caption/boilerplate.",
+   "dropped_text": "S. Gechert, T. Havranek, Z. Irsova et al. Review of Economic Dynamics 45 (2022) 55-82 Notes: The figure shows simulated impulse responses of the labor share to a laboraugmenting technology shock. We use the model developed by Cantore et al.",
+   "transcript_before": "in fig based on the model"
+  },
+  {
+   "project": "sigma",
+   "id": 1,
+   "verdict": "skip",
+   "reason": "Verbatim is a figure Notes block mixed with journal running head -- explicitly excluded as a figure caption/boilerplate.",
+   "dropped_text": "S. Gechert, T. Havranek, Z. Irsova et al. Review of Economic Dynamics 45 (2022) 55-82 Notes: A detailed description of the variables is available in the online appendix. Fig. 8. Estimation form matters for the reported elasticities",
+   "transcript_before": "capital foc for the capital-labor ratio"
+  },
+  {
+   "project": "skill",
+   "id": 0,
+   "verdict": "skip",
+   "reason": "Footnote 2, already present in full in the endnotes. Body sentence '...they share the strong assumption that publication selection is a linear function of the standard error...' already reads fine.",
+   "dropped_text": "We report only the probability related to the -1.96 threshold for negative inverse estimates; some of the remaining groups (especially positive estimates of the negative inverse elasticity) have a limited number of observations",
+   "transcript_before": "publication selection is a linear function"
+  },
+  {
+   "project": "skill",
+   "id": 1,
+   "verdict": "skip",
+   "reason": "Footnote 5, already present in full in the endnotes. Body sentence '...which means that with IV less effort is needed to obtain plausible estimates for publication.' already reads fine.",
+   "dropped_text": "Our findings also contrast those of Brodeur et al. (2020), who find that",
+   "transcript_before": "ols estimates which means that with"
+  },
+  {
+   "project": "spillovers",
+   "id": 0,
+   "verdict": "skip",
+   "reason": "Transcript line 57 already reads complete: '...many researchers use more variables for the same type of spillover in one regression. For example, Javorcik (2004a) separately examines...'. Verbatim is an unrelated acknowledgments footnote.",
+   "dropped_text": "We are grateful to Joze Damijan, Ziliang L. Deng, Adam Gersl, Galina Hale, Chidambaran Iyer, Molly Lesher, Marcella Nicolini, Pavel Vacek, and Katja Zajc-Kejzar for sending additional data, or explaining the details of their methodology, or",
+   "transcript_before": "same type of spillover in one"
+  },
+  {
+   "project": "spillovers",
+   "id": 1,
+   "verdict": "skip",
+   "reason": "Transcript line 136 already reads complete: 'e0 represents the true effect, corrected for publication bias, in the reference case...'. Verbatim is an unrelated sentence plus journal running head.",
+   "dropped_text": "More discussion of publication bias, including additional evidence and robustness checks, is available in the working-paper version of this article (Havranek and Irsova, 2010). 238 T. Havranek, Z. Irsova / Journal of International Economics",
+   "transcript_before": "estimates and represents the true effect"
+  },
+  {
+   "project": "spillovers",
+   "id": 2,
+   "verdict": "skip",
+   "reason": "Transcript line 268 already reads complete: 'If journals select these estimates for their good practice and not for positive signs, the funnel plot would be symmetrical.' Verbatim is an unrelated sentence about the 'full definition of best practice'.",
+   "dropped_text": "It is not feasible to use the full definition of best practice because only a small fraction of estimates comply with the full definition",
+   "transcript_before": "good practice if journals select these"
+  },
+  {
+   "project": "spillovers",
+   "id": 3,
+   "verdict": "skip",
+   "reason": "Transcript line 49 already reads complete: '...could not have used the recently developed meta-analysis methods and did not attempt to estimate...'. Verbatim is an unrelated reference to Smeets/Keller surveys.",
+   "dropped_text": "See Smeets (2008) and Keller (2009) for recent surveys of the broader literature on international technology diffusion",
+   "transcript_before": "have used the recently developed meta-analysis"
+  },
+  {
+   "project": "spillovers_bias",
+   "id": 0,
+   "verdict": "skip",
+   "reason": "Table content (Table 2 title, garbled sqrt-symbol rendering, and row labels 'log number of observations Constant Observations Studi[es]'), rendered separately from the transcript's table representation. The surrounding sentence already reads correctly across the gap: '...the bottom portion should be wide). In' (line 133) joins with 'sum, the cloud of the estimates should resemble an inverted funnel' (line 148) to form 'In sum, the cloud of the estimates...' -- a complete, correct sentence.",
+   "dropped_text": "Table 2. Test of publication bias following Go� rg and Strobl (2001) pffiffiffiffiffiffiffiffiffiffiffiffiffiffiffiffiffiffiffiffiffiffiffiffiffiffiffiffiffiffiffiffiffiffiffiffiffiffiffiffiffiffiffiffiffi log number of observations Constan",
+   "transcript_before": "bottom portion should be wide in"
+  },
+  {
+   "project": "students",
+   "id": 0,
+   "verdict": "skip",
+   "reason": "Verbatim is journal running-head boilerplate (\"K. Kroupova et al. Economics of Education Review 100 (2024) 102539\") plus a figure caption (\"Fig. 4. Selected patterns in the data. Notes: The figure depicts...\").",
+   "dropped_text": "K. Kroupova et al. Economics of Education Review 100 (2024) 102539 Fig. 4. Selected patterns in the data. Notes: The figure depicts, for different subsets of data, histograms of partial correlation coefficients reflecting the estimated rela",
+   "transcript_before": "least two observations for each student"
+  },
+  {
+   "project": "students",
+   "id": 1,
+   "verdict": "skip",
+   "reason": "Alignment artifact: the transcript already reads \"...structure of the data (panel vs. cross-section), employment intensity (high vs. low), country (Germany vs. others)...\" fully intact with no gap. The verbatim (an ENDNOTES citation list plus a running head) is already present elsewhere in the document's endnotes.",
+   "dropped_text": "For recent papers on publication selection bias in economics see Brodeur et al. (2020, 2016), Bruns and Ioannidis (2016), Havranek (2015), and Imai et al. (2021). Economics of Education Review",
+   "transcript_before": "of the data panel vs cross-section"
+  },
+  {
+   "project": "substitution",
+   "id": 0,
+   "verdict": "skip",
+   "reason": "Transcript line 133 already reads complete: '...display a significantly smaller EIS, which is in line with Mankiw and Zeldes (1991)...'. Verbatim text is from an unrelated sentence about the 'quasipanel' variable elsewhere in the paper; alignment artifact.",
+   "dropped_text": "The insignificance of the variable quasipanel suggests that the difference between micro studies that rely on cross-sectional variation and micro studies that use time-series variation is not important per se; what matters is the length of ",
+   "transcript_before": "a significantly smaller eis which is"
+  },
+  {
+   "project": "substitution",
+   "id": 1,
+   "verdict": "skip",
+   "reason": "Transcript line 632 (footnote 2) already reads complete: 'Appendix B provides the figure for the case when the country-level variables are not fixed but treated the same way as method variables.' Verbatim belongs to a different passage about Fig. 6/distributions.",
+   "dropped_text": "depicts the distribution of the regression parameters encountered in different regressions (with different subsets of the remaining variables on the right-hand side; country and method variables are treated symmetrically). Fig. 6 in Section",
+   "transcript_before": "series appendix b provides the figure"
+  },
+  {
+   "project": "substitution",
+   "id": 2,
+   "verdict": "skip",
+   "reason": "Transcript line 403 already reads complete: 'We find that households in countries with higher income per capita and higher stock market participation show larger values of the EIS.' Verbatim is an unrelated footnote about Doppelhofer and Weeks.",
+   "dropped_text": "As far as we know, the only paper that deals with robust estimation within the BMA setting is Doppelhofer and Weeks",
+   "transcript_before": "we find that households in countries"
+  },
+  {
+   "project": "substitution",
+   "id": 3,
+   "verdict": "skip",
+   "reason": "Transcript line 634 (footnote 4) already reads complete: 'As far as we know, the only paper that deals with robust estimation within the BMA setting is Doppelhofer and Weeks (2011).' Verbatim is unrelated distribution-density text.",
+   "dropped_text": "densities of the regression parameters encountered in different regressions (with different subsets of the remaining variables on the right-hand side; country",
+   "transcript_before": "deals with robust estimation within the"
+  },
+  {
+   "project": "substitution",
+   "id": 4,
+   "verdict": "skip",
+   "reason": "Transcript line 293 already reads complete: '...is now lower than in the previous case, but still implies an important effect...'. Verbatim is an unrelated figure-note fragment.",
+   "dropped_text": "figure depicts the distribution of the regression parameters encountered in different regressions (with different subsets of control variables",
+   "transcript_before": "is now lower than in the"
+  },
+  {
+   "project": "substitution",
+   "id": 5,
+   "verdict": "skip",
+   "reason": "Transcript line 291 already reads complete: '...the interpretation of the posterior inclusion probability by Kass and Raftery (1995). Moreover, in the frequentist check...'. Verbatim is an unrelated sentence about PIP=1 for country characteristics.",
+   "dropped_text": "Country characteristics are always included in all models of the BMA, so that their PIP equals one",
+   "transcript_before": "the interpretation of the posterior inclusion"
+  },
+  {
+   "project": "substitution",
+   "id": 6,
+   "verdict": "skip",
+   "reason": "Transcript line 293 already reads complete: '...implies an important effect on the estimated EIS: an increase in stock market participation of 10 percentage points...'. Verbatim is an unrelated Appendix B description.",
+   "dropped_text": "Appendix B depicts the distribution for the case when country variables are not a priori included",
+   "transcript_before": "the estimated eis an increase in"
+  },
+  {
+   "project": "substitution",
+   "id": 7,
+   "verdict": "skip",
+   "reason": "Transcript line 291 already reads complete: 'Moreover, in the frequentist check the variable is statistically significant at the 1% level.' Verbatim is unrelated methodology text about PIP thresholds.",
+   "dropped_text": "we only include method characteristics with PIP N0.5. Standard errors in",
+   "transcript_before": "raftery moreover in the frequentist check"
+  },
+  {
+   "project": "taxrev",
+   "id": 0,
+   "verdict": "skip",
+   "reason": "Transcript line 42 already reads complete: '...the definition of tax bases, and the method we use to adjust tax revenue for the effects of tax reforms.' Verbatim is an unrelated footnote about calibration vs. econometric estimation.",
+   "dropped_text": "It is important to note that sometimes calibration of elasticities can provide benefits over econometric estimation. For example, with the short time series available for many transition countries, it might be infeasible to account for pote",
+   "transcript_before": "the definition of tax bases and"
+  },
+  {
+   "project": "taxrev",
+   "id": 1,
+   "verdict": "skip",
+   "reason": "Transcript line 304 (footnote 1) already reads complete: '...calibration of elasticities can provide benefits over econometric estimation. For example, with the short time series available for many transition countries, it might be infeasible...'. Verbatim (Appendix heading/figure) is unrelated boilerplate.",
+   "dropped_text": "Czech Republic 19 Appendix A: Supplementary Material and Robustness Checks Figure A1: The Seasonal Pattern of Reported Value Added Tax Revenue 40 20 0 Quarter-on-quarter percentage change 2 3 2 4 2 2 4 4 4 24 4 4 4 442444 22 2 2 2 2 2 4 34 ",
+   "transcript_before": "econometric estimation for example with the"
+  },
+  {
+   "project": "taxrev",
+   "id": 2,
+   "verdict": "skip",
+   "reason": "Transcript lines 109-111 already connect as intended: '...In the second stage we also test for [table] potential remaining autocorrelation, but do not find any...'. Verbatim is a running-head title, pure boilerplate.",
+   "dropped_text": "Dynamic Elasticities of Tax Revenue: Evidence from the Czech Republic",
+   "transcript_before": "second stage we also test for"
+  },
+  {
+   "project": "transmission",
+   "id": 0,
+   "verdict": "skip",
+   "reason": "The paper's own running head/title ('Do Financial Variables Help Predict Macroeconomic Environment? The Case of the Czech Republic') inserted before Figure 1 due to a page break. Transcript line 102 already reads complete: '...fuelled by a stable macroeconomic environment and low interest rates. At the same time, loan loss provisions and non-performing loans fell to historical lows.'",
+   "dropped_text": "Do Financial Variables Help Predict Macroeconomic Environment? The Case of the Czech Republic",
+   "transcript_before": "by a stable macroeconomic environment and"
+  },
+  {
+   "project": "trust",
+   "id": 0,
+   "verdict": "skip",
+   "reason": "Verbatim ('...its complete-case sample contains 1,649 estimates from 105 studies and 42 countries') is a Table 5 note (transcript.md line 327), and separately the before/after location is Endnote 2 (line 333: '...checked against the package's native output before using the retained covariance terms to form the marginal-effect intervals'), which already reads complete and is itself a footnote. Both the true location (a footnote) and the flagged verbatim (a table note) are excluded categories.",
+   "dropped_text": "same qualitative result. Because this reduced specification omits several controls with missing observations, its complete-case sample contains 1,649 estimates from 105 studies and 42 countries",
+   "transcript_before": "package's native output before using the"
+  },
+  {
+   "project": "trust",
+   "id": 1,
+   "verdict": "skip",
+   "reason": "Verbatim ('(a) Marginal effect of generalized trust over rule of law (b) Marginal effect of rule of law over generalized trust') is a figure panel-label caption, confirmed present verbatim at transcript.md line 248. The actual prose sentence at line 254 ('...excludes zero over much of the observed trust support: approximately from -0.35 to 1.89 with study-clustered inference...') is already complete and grammatical in the transcript.",
+   "dropped_text": "a) Marginal effect of generalized trust over rule of law (b) Marginal effect of rule of law over generalized trust",
+   "transcript_before": "negative over much of the trust"
+  },
+  {
+   "project": "water",
+   "id": 0,
+   "verdict": "skip",
+   "reason": "Gap is footnote 1/2 text (search-URL note + figure-axis explanation) interrupting a hyphenated word ('vari-'/'ation'). Transcript line already reads complete and grammatical: '...reveals the presence of substantial within- and between-study variation. Consequently, for each estimate we collect...' Footnote content, not body prose.",
+   "dropped_text": "vari- 1The search query is available online at meta-analysis.cz/ water; data and code are available in a technical appendix at meta-analysis.cz/water. 2The figure shows a box plot of the estimates of the income elasticity of water demand re",
+   "transcript_before": "presence of substantial within- and between-study"
+  },
+  {
+   "project": "water",
+   "id": 1,
+   "verdict": "skip",
+   "reason": "Gap is a figure note (footnote 5, explaining the PIP axis of a BMA plot) interrupting the hyphenated word 'prob-/probability'. Figure-caption/footnote material, not running body prose; nothing broken.",
+   "dropped_text": "prob- 5On the vertical axis, the explanatory variables are ranked according to their posterior inclusion probabilities from the highest at the top to the lowest at the bottom. The horizontal axis shows the values of cumulative posterior mod",
+   "transcript_before": "and are sorted by posterior inclusion"
+  },
+  {
+   "project": "water",
+   "id": 2,
+   "verdict": "skip",
+   "reason": "Verbatim is a journal running head + figure title/caption ('Land Economics May 2018 Figure 1 Estimates of the Elasticity...'). Page furniture/caption, not body prose.",
+   "dropped_text": "Land Economics May 2018 Figure 1 Estimates of the Elasticity Vary within and across Studies",
+   "transcript_before": "income elasticity in developed countries may"
+  },
+  {
+   "project": "water",
+   "id": 3,
+   "verdict": "skip",
+   "reason": "Verbatim is the article's running head ('Havranek, Irsova, and Vlach: Biases in Water Demand Research'). Journal boilerplate.",
+   "dropped_text": "Havranek, Irsova, and Vlach: Biases in Water Demand Research",
+   "transcript_before": "should be given the properties of"
+  },
+  {
+   "project": "water",
+   "id": 4,
+   "verdict": "skip",
+   "reason": "Same running head repeated at a different page break. Journal boilerplate.",
+   "dropped_text": "Havranek, Irsova, and Vlach: Biases in Water Demand Research",
+   "transcript_before": "in income than the rest of"
+  },
+  {
+   "project": "water",
+   "id": 5,
+   "verdict": "skip",
+   "reason": "Same running head again; adjacent 'after' text also leads into a reference-list entry. Journal boilerplate.",
+   "dropped_text": "Havranek, Irsova, and Vlach: Biases in Water Demand Research",
+   "transcript_before": "demand and implications for water supply"
+  }
+ ]
+}
