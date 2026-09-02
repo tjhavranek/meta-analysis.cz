@@ -426,127 +426,248 @@ Supplementary material related to this article can be found online at https://do
 ## References
 
 Andrews, I., & Kasy, M. (2019). Identification of and correction for publication bias. American Economic Review, 109(8), 2766–2794.
+
 Apel, R., Bushway, S. D., Paternoster, R., Brame, R., & Sweeten, G. (2008). Using state child labor laws to identify the causal effect of youth employment on deviant behavior and academic achievement. Journal of Quantitative Criminology, 24(4), 337–362.
+
 Applegate, C., & Daly, A. (2006). The impact of paid work on the academic performance of students: A case study from the University of Canberra. Australian Journal of Education, 50(2), 155–166.
+
 Arano, K., & Parker, C. (2008). How does employment affect academic performance among college students? Journal of Economic Insight, 34(2), 65–82.
+
 Astakhov, A., Havranek, T., & Novak, J. (2019). Firm size and stock returns: A quantitative survey. Journal of Economic Surveys, 33(5), 1463–1492.
+
 Auers, D., Rostoks, T., & Smith, K. (2007). Flipping burgers or flipping pages? Student employment and academic attainment in post-Soviet Latvia. Communist and Post-Communist Studies, 40(4), 477–491.
+
 Baert, S., Marx, I., Neyt, B., Belle, E. V., & Casteren, J. V. (2018). Student employment and academic performance: an empirical exploration of the primary orientation theory. Applied Economics Letters, 25(8), 547–552.
+
 Baert, S., Neyt, B., Omey, E., & Verhaest, D. (2017). Student work, educational achievement, and later employment: A dynamic approach. IZA Discussion Papers 11127, Institute of Labor Economics (IZA), Bonn.
+
 Beerkens, M., Magi, E., & Lill, L. (2011). University studies as a side job: Causes and consequences of massive student employment in Estonia. Higher Education, 61(6), 679–692.
+
 Beffy, M., Fougere, D., & Maurel, A. (2013). The effect of college employment on graduation: Evidence from France. CEPR Discussion Papers 9565, C.E.P.R. Discussion Papers.
 BLS (2020). Bureau of Labor Statistics news releases. Various years, retrieved from https://www.bls.gov/bls/newsrels.htm.
+
 Body, K. M.-D., Bonnal, L., & Giret, J.-F. (2014). Does student employment really impact academic achievement? The case of France. Applied Economics, 46(25), 3061–3073.
+
 Bom, P. R. D., & Rachinger, H. (2019). A kinked meta-regression model for publication bias correction. Research Synthesis Methods, 10(4), 497–514.
+
 Bozick, R. (2007). Making it through the first year of college: The role of students’ economic resources, employment, and living arrangements. Sociology of Education, 80(3), 261–285.
+
 Brodeur, A., Cook, N., & Heyes, A. (2020). Methods matter: P-hacking and causal inference in economics. American Economic Review, 110(11), 3634–3660.
+
 Brodeur, A., Le, M., Sangnier, M., & Zylberberg, Y. (2016). Star wars: The empirics strike back. American Economic Journal: Applied Economics, 8(1), 1–32.
+
 Bruns, S. B., & Ioannidis, J. P. A. (2016). P-curve and p-hacking in observational research. PloS ONE, 11(2), Article e0149144.
+
 Buscha, F., Maurel, A., Page, L., & Speckesser, S. (2012). The effect of employment while in high school on educational attainment: A conditional difference-in-differences approach. Oxford Bulletin of Economics and Statistics, 74(3), 380–396.
+
 Callender, C. (2008). The impact of term-time employment on higher education students’ academic attainment and achievement. Journal of Education Policy, 23(4), 359–377.
+
 Canabal, M. E. (1998). College student degree of participation in the labor force: Determinants and relationship to school performance. College Student Journal, 32(4), 597–605.
+
 Card, D., & Krueger, A. B. (1995). Time-series minimum-wage studies: A meta-analysis. The American Economic Review, 85(2), 238–243.
+
 Carneiro, P. M., & Heckman, J. J. (2003). Human capital policy. IZA Discussion Papers 821, Institute of Labor Economics (IZA), Bonn.
+
 Carr, R. V., Wright, J. D., & Brody, C. J. (1996). Effects of high school work experience a decade later: Evidence from the National Longitudinal Survey. Sociology of Education, 69(1), 66–81.
+
 Choi, Y. (2018). Student employment and persistence: Evidence of effect heterogeneity of student employment on college dropout. Research in Higher Education, 59(1), 88–107.
+
 Dadgar, M. (2012). The academic consequences of employment for students enrolled in community college. CCRC Working Paper 46, Community College Research Center.
+
 D’Amico, R. (1984). Does employment during high school impair academic progress? Sociology of Education, 57(3), 152–164.
+
 Darolia, R. (2014). Working (and studying) day and night: Heterogeneous effects of working on the academic performance of full-time and part-time students. Economics of Education Review, 38(C), 38–50.
+
 DeSimone, J. S. (2006). Academic performance and part-time employment among high school seniors. The BE Journal of Economic Analysis & Policy, 6(1), 1–36.
+
 DeSimone, J. S. (2008). The impact of employment during school on college student academic performance. NBER Working Papers 14006, National Bureau of Economic Research, Inc.
+
 Doucouliagos, H. (2011). How large is large? Preliminary and relative guidelines for interpreting partial correlations in economics. Working Papers 5/2011, Deakin University.
+
 Dustmann, C., & van Soest, A. (2007). Part-time work, school success and school leaving. Empirical Economics, 32(2), 277–299.
+
 Eckstein, Z., & Wolpin, K. I. (1999). Why youths drop out of high school: The impact of preferences, opportunities, and abilities. Econometrica, 67(6), 1295–1339.
+
 Egger, M., Smith, G. D., Schneider, M., & Minder, C. (1997). Bias in meta-analysis detected by a simple, graphical test. BMJ, 315(7109), 629–634.
+
 Ehrenberg, R. G., & Sherman, D. R. (1987). Employment while in college, academic achievement, and postcollege outcomes: A summary of results. Journal of Human Resources, 22(1), 1–23.
+
 Ehrenbergerova, D., Bajzik, J., & Havranek, T. (2023). When does monetary policy sway house prices? A meta-analysis. IMF Economic Review, 71(2), 538–573.
+
 Eicher, T. S., Papageorgiou, C., & Raftery, A. E. (2011). Default priors and predictive performance in Bayesian model averaging, with application to growth determinants. Journal of Applied Econometrics, 26(1), 30–55.
+
 Elminejad, A., Havranek, T., Horvath, R., & Irsova, Z. (2023). Intertemporal substitution in labor supply: A meta-analysis. Review of Economic Dynamics, 51, 1095–1113.
+
 Furukawa, C. (2021). Publication bias under aggregation frictions: Theory, evidence, and a new correction method. Working paper, MIT.
+
 George, E. I. (2010). Dilution priors: Compensating for model space redundancy. Vol. 6, In IMS collections borrowing strength: theory powering applications – a festschrift for lawrence d. brown (pp. 158–165). Institute of Mathematical Statistics.
+
 Gleason, P. M. (1993). College student employment, academic progress, and postcollege labor market success. Journal of Student Financial Aid, 23(2), 5–14.
+
 Havranek, T. (2015). Measuring intertemporal substitution: The importance of method choices and selective reporting. Journal of the European Economic Association, 13(6), 1180–1204.
+
 Havranek, T., & Irsova, Z. (2010). Meta-analysis of intra-industry FDI spillovers: Updated evidence. Czech Journal of Economics and Finance, 60(2), 151–174.
+
 Havranek, T., Irsova, Z., Laslopova, L., & Zeynalova, O. (2024). Publication and attenuation biases in measuring skill substitution. The Review of Economics and Statistics, in press.
+
 Havranek, T., Stanley, T. D., Doucouliagos, H., Bom, P., Geyer-Klingeberg, J., Iwasaki, I., Reed, W. R., Rost, K., & van Aert, R. C. M. (2020). Reporting guidelines for meta-analysis in economics. Journal of Economic Surveys, 34(3), 469–475.
+
 Hawkins, C. A., Smith, M. L., Hawkins, R. C., II, & Grant, D. (2005). The relationships among hours employed, perceived work interference, and grades as reported by undergraduate social work students. Journal of Social Work Education, 41(1), 13–27.
+
 Holford, A. (2020). Youth employment, academic performance and labour market outcomes: Production functions and policy effects. Labour Economics, 63(C), art. 101806.
+
 Hovdhaugen, E. (2015). Working while studying: The impact of term-time employment on dropout rates. Journal of Education and Work, 28(6), 631–651.
+
 Hwang, J.-K. (2013). Employment and student performance in Principles of Economics. International Review of Economics Education, 13(C), 26–30.
+
 Imai, T., Rutter, T. A., & Camerer, C. F. (2021). Meta-analysis of present-bias estimation using convex time budgets. The Economic Journal, 131(636), 1788–1814.
+
 Ioannidis, J. P., Stanley, T. D., & Doucouliagos, H. (2017). The power of bias in economics research. The Economic Journal, 127(605), F236–F265.
+
 Irsova, Z., Bom, P. R. D., Havranek, T., & Rachinger, H. (2023). Spurious precision in meta-analysis. CEPR Discussion Papers 17927, Centre for Economic Policy Research.
+
 Irsova, Z., Doucouliagos, H., Havranek, T., & Stanley, T. D. (2024). Meta-analysis of social science research: A practitioner’s guide. Journal of Economic Surveys, in press.
+
 Irsova, Z., & Havranek, T. (2010). Measuring bank efficiency: A meta-regression analysis. Prague Economic Papers, 2010(4), 307–328.
+
 Jaquess, S. N. (1984). The influence of part-time employment and study habits and attitudes on academic performance of high school juniors (Ph.D. thesis), The University of Oklahoma, 152 pages.
+
 Jeffreys, H. (1961). Theory of Probability, In Oxford classic texts in the physical sciences, (3rd ed.). Oxford: Oxford University Press.
+
 Joensen, J. S. (2009). Academic and labor market success: The impact of student employment, abilities, and preferences (Ph.D. thesis), Stockholm School of Economics, 71 pages.
+
 Jones, C. M., Green, J. P., & Higson, H. E. (2017). Do work placements improve final year academic performance or do high-calibre students choose to do work placements? Studies in Higher Education, 42(6), 976–992.
+
 Jones, R., & Sloane, P. (2005). Students and term-time employment. Report for the Economic Research Unit, Welsh Assembly Government, University of Wales, Swansea, Welsh Economy Labour Markets Evaluation Research Centre, Department of Economics.
+
 Kalenkoski, C., & Pabilonia, S. (2010). Parental transfers, student achievement, and the labor supply of college students. Journal of Population Economics, 23(2), 469–496.
+
 Kohen, A. I., Nestel, G., & Karmas, C. (1978). Factors affecting individual persistence rates in undergraduate college programs. American Educational Research Journal, 15(2), 233–252.
+
 Kouliavtsev, M. (2013). The Impact of employment and extracurricular involvement on undergraduates’ performance in a business statistics course. Journal of Economics and Economic Education Research, 14(3), 53–66.
 Le Barbanchon, T., Ubfal, D., & Araya, F. (2023). The effects of working while in school: Evidence from employment lotteries. American Economic Journal: Applied Economics, 15(1), 383–410.
+
 Lee, C., & Orazem, P. F. (2010). High school employment, school performance, and college entry. Economics of Education Review, 29(1), 29–39.
+
 Lee, J. C., & Staff, J. (2007). When work matters: The varying impact of work intensity on high school dropout. Sociology of Education, 80(2), 158–178.
+
 Leos-Urbel, J. (2014). What is a summer job worth? The impact of summer youth employment on academic outcomes. Journal of Policy Analysis and Management, 33(4), 891–911.
+
 Maloney, T., & Parau, A. (2004). The effects of in-school and in-tertiary employment on academic achievement and labour market transitions: Evidence from the Christchurch Health and Development Study. New Zealand Department of Labour Research Paper, New Zealand Department of Labour.
+
 Manthei, R. J., & Gilmore, A. (2005). The effect of paid employment on university students’ lives. Education + Training, 47(3), 202–215.
+
 Marsh, H. W., & Kleitman, S. (2005). Consequences of employment during high school: Character building, subversion of academic goals, or a threshold? American Educational Research Journal, 42(2), 331–369.
+
 Matousek, J., Havranek, T., & Irsova, Z. (2022). Individual discount rates: a meta-analysis of experimental evidence. Experimental Economics, 25(1), 318–358.
+
 McCoy, S., & Smyth, E. (2007). So much to do, so little time: part-time employment among secondary students in Ireland. Work, Employment and Society, 21(2), 227–246.
+
 McKechnie, J., Dunleavy, K., & Hobbs, S. (2005). Student employment and its educational impact: a Scottish study. Scottish Educational Review, 37(1), 58–67.
+
 McKenzie, K., & Schweitzer, R. (2001). Who succeeds at university? Factors predicting academic performance in first year Australian university students. Higher Education Research & Development, 20(1), 21–33.
+
 McNeal, R. B. (1997). Are students being pulled out of high school? The effect of adolescent employment on dropping out. Sociology of Education, 70(3), 206–220.
+
 McVicar, D., & McKee, B. (2002). Part-time work during post-compulsory education and examination performance: Help or hindrance? Scottish Journal of Political Economy, 49(4), 393–406.
+
 Montmarquette, C., Viennot-Briot, N., & Dagenais, M. (2007). Dropout, school performance, and working while in school. The Review of Economics and Statistics, 89(4), 752–760.
+
 Moulin, S., Doray, P., Laplante, B., & Street, M. C. (2013). Work intensity and non-completion of university: Longitudinal approach and causal inference. Journal of Education and Work, 26(3), 333–356.
+
 Newman, S. C. (1942). Employment problems of college students. In Studies in education, Washington, DC: American Council on Public Affairs, 158 pages.
+
 Neyt, B., Omey, E., Verhaest, D., & Baert, S. (2019). Does student work really affect educational outcomes? A review of the literature. Journal of Economic Surveys, 33(3), 896–921.
+
 Oettinger, G. S. (1999). Does high school employment affect high school academic performance? ILR Review, 53(1), 136–151.
+
 Parent, D. (2006). Work while in high school in Canada: Its labour market and educational attainment effects. Canadian Journal of Economics/Revue Canadienne d’Economique, 39(4), 1125–1150.
+
 Paul, H. (1982). The impact of outside employment on student achievement in macroeconomic principles. The Journal of Economic Education, 13(2), 51–56.
+
 Post, D., & Pong, S.-l. (2000). Employment during middle school: The effects on academic achievement in the US and abroad. Educational Evaluation and Policy Analysis, 22(3), 273–298.
+
 Raftery, A. E. (1995). Bayesian model selection in social research. Sociological Methodology, 25(C), 111–163.
+
 Richardson, J. J., Kemp, S., Malinen, S., & Haultain, S. A. (2013). The academic achievement of students in a New Zealand university: Does it pay to work? Journal of Further and Higher Education, 37(6), 864–882.
+
 Riggert, S. C., Boyle, M., Petrosko, J. M., Ash, D., & Rude-Parkins, C. (2006). Student employment and higher education: Empiricism and contradiction. Review of Educational Research, 76(1), 63–92.
+
 Rochford, C., Connolly, M., & Drennan, J. (2009). Paid part-time employment and academic performance of undergraduate nursing students. Nurse Education Today, 29(6), 601–606.
+
 Roezer, J., & van de Werfhorst, H. G. (2020). Three worlds of vocational education: Specialized and general craftsmanship in France, Germany, and The Netherlands. European Sociological Review, 36(5), 780–797.
+
 Roodman, D., Nielsen, M. Ø., MacKinnon, J. G., & Webb, M. D. (2019). Fast and wild: Bootstrap inference in stata using boottest. The Stata Journal, 19(1), 4–60.
+
 Rothstein, D. S. (2007). High school employment and youths’ academic achievement. Journal of Human Resources, 42(1), 194–213.
+
 Ruhm, C. J. (1997). Is high school employment consumption or investment? Journal of Labor Economics, 15(4), 735–776.
+
 Sabia, J. J. (2009). School-year employment and academic performance of young adolescents. Economics of Education Review, 28(2), 268–276.
+
 Salamonson, Y., & Andrew, S. (2006). Academic performance in nursing students: Influence of part-time employment, age and ethnicity. Journal of Advanced Nursing, 55(3), 342–349.
+
 Savoca, M. (2016). Campus employment as a high-impact practice: relationship to academic success and persistence of first-generation college students (Ph.D. thesis), Colorado State University, 126 pages.
+
 Schoenhals, M., Tienda, M., & Schneider, B. (1998). The educational and personal consequences of adolescent employment. Social Forces, 77(2), 723–761.
+
 Scott-Clayton, J., & Minaya, V. (2016). Should student employment be subsidized? Conditional counterfactuals and the outcomes of work-study participation. Economics of Education Review, 52(C), 1–18.
+
 Simon, H., Diaz, J. M. C., & Costa, J. L. C. (2017). Analysis of university student employment and its impact on academic performance. Electronic Journal of Research in Educational Psychology, 15(2), 281–306.
+
 Singh, K., Chang, M., & Dika, S. (2007). Effects of part-time work on school achievement during high school. The Journal of Educational Research, 101(1), 12–23.
+
 Sprietsma, M. (2015). Student employment: Advantage or handicap for academic achievement?. ZEW Discussion Papers 085/2015, ZEW - Leibniz Centre for European Economic Research.
+
 Staff, J., & Mortimer, J. T. (2007). Educational and work strategies from adolescence to early adulthood: Consequences for educational attainment. Social Forces, 85(3), 1169–1194.
+
 Staff, J., Schulenberg, J. E., & Bachman, J. G. (2010). Adolescent work intensity, school performance, and academic engagement. Sociology of Education, 83(3), 183–200.
+
 Stanley, T. (2001). Wheat from chaff: Meta-analysis as quantitative literature review. Journal of Economic Perspectives, 15(3), 131–150.
+
 Stanley, T. D. (2005). Beyond publication bias. Journal of Economic Surveys, 19(3), 309–345.
+
 Stanley, T. (2008). Meta-regression methods for detecting and estimating empirical effects in the presence of publication selection. Oxford Bulletin of Economics and Statistics, 70(1), 103–127.
+
 Stanley, T. D., Doucouliagos, H., & Havranek, T. (2024a). Meta-analyses of partial correlations are biased: Detection and solutions. Research Synthesis Methods, in press.
+
 Stanley, T. D., Doucouliagos, H., & Havranek, T. (2024b). Reducing the biases of the conventional meta-analysis of correlations. Research Synthesis Methods, in press.
+
 Steel, L. (1991). Early work experience among white and non-white youths: Implications for subsequent enrollment and employment. Youth & Society, 22(4), 419–447.
+
 Steel, M. F. J. (2020). Model averaging and its use in economics. Journal of Economic Literature, 58(3), 644–719.
+
 Steinberg, L. D., Greenberger, E., Garduque, L., & McAuliffe, S. (1982). High school students in the labor force: Some costs and benefits to schooling and learning. Educational Evaluation and Policy Analysis, 4(3), 363–372.
+
 Stinebrickner, R., & Stinebrickner, T. R. (2003). Working during school and academic performance. Journal of Labor Economics, 21(2), 473–491.
+
 Theune, K. (2015). The working status of students and time to degree at German universities. Higher Education, 70(4), 725–752.
+
 Tienda, M., & Ahituv, A. (1996). Ethnic differences in school departure: Does youth employment promote or undermine educational attainment? In G. L. Mangum, & S. L. Mangum (Eds.), of heart and mind: social policy essays in honor of sar a. levitan (pp. 93–110). Kalamazoo, Michigan: Upjohn Institute for Employment Research.
+
 Torres, V., Gross, J. P., & Dadashova, A. (2010). Traditional-age students becoming at-risk: Does working threaten college students’ academic success? Journal of College Student Retention: Research, Theory & Practice, 12(1), 51–68.
+
 Trockel, M. T., Barnes, M. D., & Egget, D. L. (2000). Health-related variables and academic performance among first-year college students: Implications for sleep and other behaviors. Journal of American College Health, 49(3), 125–131.
+
 Tyler, J. H. (2003). Using state child labor laws to identify the effect of school-year work on high school achievement. Journal of Labor Economics, 21(2), 353–380.
 van Aert, R. C., & van Assen, M. (2021). Correcting for publication bias in a meta-analysis with the p-uniform* method. Working paper, Tilburg University & Utrecht University.
+
 Wang, H., Kong, M., Shan, W., & Vong, S. K. (2010). The effects of doing part-time jobs on college student academic performance and social life in a Chinese society. Journal of Education and Work, 23(1), 79–94.
+
 Warren, J. R., & Cataldi, E. F. (2006). A historical perspective on high school students’ paid employment and its association with high school dropout. Sociological Forum, 21(1), 113–143.
+
 Warren, J. R., & Lee, J. C. (2003). The impact of adolescent employment on high school dropout: Differences by individual and labor-market characteristics. Social Science Research, 32(1), 98–128.
+
 Warren, J. R., LePore, P. C., & Mare, R. D. (2000). Employment during high school: Consequences for students’ grades in academic courses. American Educational Research Journal, 37(4), 943–969.
+
 Wenz, M., & Yu, W.-C. (2010). Term-time employment and the academic performance of undergraduates. Journal of Education Finance, 35(4), 358–373.
+
 Yanbarisova, D. (2015). The effects of student employment on academic performance in Tatarstan higher education institutions. Russian Education & Society, 57(6), 459–482.
+
 Yang, F., Havranek, T., Irsova, Z., & Novak, J. (2024). Is research on hedge fund performance published selectively? A quantitative survey. Journal of Economic Surveys, in press.
+
 Zeugner, S. (2011). Bayesian model averaging with BMS. Tutorial to the R-package BMS 1e30, European Center for Advanced Research in Economics.
+
 Zeugner, S., & Feldkircher, M. (2009). Benchmark priors revisited: On adaptive shrinkage and the supermodel effect in Bayesian model averaging. IMF Working Paper 9/202, International Monetary Fund.
+
 Zhang, G., & Johnston, C. (2010). Employment and the academic performance of undergraduate business students. Southwestern Business Administration Journal, 10(2), 54–83.

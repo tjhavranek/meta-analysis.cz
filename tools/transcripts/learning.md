@@ -380,7 +380,7 @@ TABLE 4. Correcting for publication bias, additional specifications
 | Effect beyond bias | 0.021^{*} | −0.206^{***} | −0.068^{***} |  |
 |  | (0.012) | (< 0.001) | (0.015) |  |
 | Observations | 41 | 291 | 291 |  |
-| Panel B: Publication bias required to explain away the results | ***coef*=0** | ***coef*=0.01** | ***coef*=0.05** |  |
+| Panel B: Publication bias required to explain away the results | *coef* =0 | *coef* =0.01 | *coef* =0.05 |  |
 | Estimate's *s*-value | 29.60 | 60.65 | no amount |  |
 | CI *s*-value | 8.31 | 10.46 | no amount |  |
 | Observations | 291 | 291 | 291 |  |

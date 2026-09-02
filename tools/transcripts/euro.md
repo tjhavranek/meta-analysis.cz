@@ -160,29 +160,7 @@ TABLE 3. Explanatory meta-regression analysis
 | $\tau$ |  |  | 0.0316 |
 Meta-response variable: tstat for FIXED and ROBUST, gamma for RANDOM. ROBUST: Iteratively re-weighted least squares version of FIXED. *t*-statistics in parentheses (Huber–White heteroskedasticity-robust for FIXED). Variables *prec*, *rose*, *nitsch*, *baldwin*, *denardis*, *taglioni*, *euro*, *shortrun*, *countries*, and *impact* are assumed to influence the estimates of $\gamma$ directly. Variables *panel*, *year*, and *year2* are assumed to influence publication bias. ^{***}, ^{**}, and ^{*} denote significance at the level of 1, 5, and 10%, respectively
 
-Regression described in column 1 of Table 3 is not very well specified, however. Condition number is high (75) indicating possible multicollinearity, Ramsey's RESET rejects the null hypothesis [$F_{(3,45)} = 4.42$, $p < 0.05$], only normality is not rejected [skewness-kurtosis test: $\chi^2_{(2)} = 1.36$, $p > 0.05$]; nevertheless, the model would pass all specification tests if variables *panel*, *year*, and *year2* were excluded. It is apparent that fixed effects MRA was able to model a significant portion of the heterogeneity inside the sample---note the high $R^2$s: 0.73 and 0.83 for fixed effects and their robust version, respectively.^{8} Nevertheless, a lot of heterogeneity still remains unexplained. Testing $H_0: \sigma^2_0 = 1$ (fixed effects MRA explains heterogeneity
-
-## ENDNOTES
-1. For an excellent introduction to the methodology of meta-analysis and its application in economics, see Stanley (2001).
-
-2. There is an obvious trade-off between the representativeness and the robustness of the data: selecting representative estimates increases the threat of mistakes and data contamination. For this reason, we employ robust estimation methods wherever possible.
-
-3. The exact search query used in RePEc was (((currency | monetary) ? union) | euro) ? trade ? (effect | rose) ? estimate, abstract search since 2002. The ‘‘old’’ Rose and Stanley (2005) data were updated—for example, many of the then working papers have been published in a journal since 2005 and their estimates might have slightly changed.
-
-4. Note that ‘‘fixed’’ and ‘‘random’’ effects estimators in meta-analysis do not correspond to the standard use of these terms in panel data econometrics. For a more detailed explanation, see Abreu et al. (2005) and Sutton et al. (2000).
-
-
-5. As Rabe-Hesketh and Skrondal (2008, p. 159) note, the LR test is conservative in this case and the correct *p*-value can be obtained by dividing the original LR *p*-value by 2.
-
-6. Other robustness checks are available from the author upon request or in the working paper version of this article.
-
-7. A predictable pattern of novelty and fashion in economics; initial path-breaking results are confirmed by other highly significant estimates, but as the time passes, skeptical results become preferable (Goldfarb 1995; Stanley et al. 2008).
-
-8. However, because these are weighted least squares versions of the original equation, $R^2$s have to be recomputed to reflect the actual determination of the estimates of $\gamma$. For example, in the case of the robust specification, the corrected $R^2$ reaches 0.68.
-
-Rose effect and the euro 253
-
-well) yields v2(60) = 276, p \ 0.001; for column 1, therefore, H0 is rejected—the result is qualitatively the same also for the robust specification.
+Regression described in column 1 of Table 3 is not very well specified, however. Condition number is high (75) indicating possible multicollinearity, Ramsey's RESET rejects the null hypothesis [$F_{(3,45)} = 4.42$, $p < 0.05$], only normality is not rejected [skewness-kurtosis test: $\chi^2_{(2)} = 1.36$, $p > 0.05$]; nevertheless, the model would pass all specification tests if variables *panel*, *year*, and *year2* were excluded. It is apparent that fixed effects MRA was able to model a significant portion of the heterogeneity inside the sample---note the high $R^2$s: 0.73 and 0.83 for fixed effects and their robust version, respectively.^{8} Nevertheless, a lot of heterogeneity still remains unexplained. Testing $H_0: \sigma^2_0 = 1$ (fixed effects MRA explains heterogeneity well) yields v2(60) = 276, p \ 0.001; for column 1, therefore, H0 is rejected—the result is qualitatively the same also for the robust specification.
 
 When this is the case, random effects explanatory MRA might be preferable (see, e.g., Abreu et al. 2005):9 X J X K cbi ¼ i0 þ hj Sji SEi þ dk Zki þ ki þ qi ; ð6Þ j¼1 k¼1
 
@@ -497,3 +475,22 @@ Thom, R., & Walsh, B. (2002). The effect of a currency union on trade: Lessons f
 Tsangarides, C. G., Ewenczyk, P., & Hulej, M. (2006). *Stylized facts on bilateral trade and currency unions: Implications for Africa*. (IMF Working Paper 06/31). Washington, DC: International Monetary Fund.
 
 Yamarik, S., & Ghosh, S. (2005). A sensitivity analysis of the gravity model. *The International Trade Journal, 19*, 83–126.
+
+
+## ENDNOTES
+1. For an excellent introduction to the methodology of meta-analysis and its application in economics, see Stanley (2001).
+
+2. There is an obvious trade-off between the representativeness and the robustness of the data: selecting representative estimates increases the threat of mistakes and data contamination. For this reason, we employ robust estimation methods wherever possible.
+
+3. The exact search query used in RePEc was (((currency | monetary) ? union) | euro) ? trade ? (effect | rose) ? estimate, abstract search since 2002. The ‘‘old’’ Rose and Stanley (2005) data were updated—for example, many of the then working papers have been published in a journal since 2005 and their estimates might have slightly changed.
+
+4. Note that ‘‘fixed’’ and ‘‘random’’ effects estimators in meta-analysis do not correspond to the standard use of these terms in panel data econometrics. For a more detailed explanation, see Abreu et al. (2005) and Sutton et al. (2000).
+
+
+5. As Rabe-Hesketh and Skrondal (2008, p. 159) note, the LR test is conservative in this case and the correct *p*-value can be obtained by dividing the original LR *p*-value by 2.
+
+6. Other robustness checks are available from the author upon request or in the working paper version of this article.
+
+7. A predictable pattern of novelty and fashion in economics; initial path-breaking results are confirmed by other highly significant estimates, but as the time passes, skeptical results become preferable (Goldfarb 1995; Stanley et al. 2008).
+
+8. However, because these are weighted least squares versions of the original equation, $R^2$s have to be recomputed to reflect the actual determination of the estimates of $\gamma$. For example, in the case of the robust specification, the corrected $R^2$ reaches 0.68.

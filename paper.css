@@ -30,8 +30,17 @@
 /* A long inline equation is the one piece of a paper that no container bounds: a
    display equation sits in .eqbody, which scrolls, but an inline one ran 833px wide
    mid-sentence and took the whole page sideways on a phone. It scrolls in place. */
+/* overflow-x:auto on its own is not free here. A box that scrolls on one axis and is
+   `visible` on the other is not expressible, so overflow-y computed to auto too, and an
+   inline-block sized to MathML metrics overflows itself by a fraction of a pixel often
+   enough that the browser then drew a scrollbar. Beside a single letter that is a piece
+   of furniture next to every gamma on the page: /sigma/ carries 108 inline formulas,
+   /outliers/ 105. Pinning the other axis and hiding the scrollbar keeps the long-equation
+   behaviour this rule exists for, without the chrome on the short ones. */
 .entry math.inl{ display:inline-block; max-width:calc(100vw - 3rem); overflow-x:auto;
-                 vertical-align:middle; }
+                 overflow-y:hidden; vertical-align:middle;
+                 scrollbar-width:none; -ms-overflow-style:none; }
+.entry math.inl::-webkit-scrollbar{ width:0; height:0; }
 .entry .eqn .eqno{ flex:0 0 auto; font:400 var(--f-1)/1.6 var(--sans); color:var(--ink-soft); }
 .entry math{ font-size:1.05em; }
 .entry math.inl{ font-size:1em; }

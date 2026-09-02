@@ -302,7 +302,12 @@ def inline(text, refs_are_numbered=False, link_cites=True, in_table=False):
     # Emphasis markers must hug their text: "*word*" is emphasis, "***, **, and *" is a
     # significance legend. Without the rule a table note came out as interleaved empty tags,
     # which is why transcribers started wrapping the legend in mathematics to protect it.
-    _emph = r"(?=[^*]*[A-Za-z0-9])(\S(?:[^*]*\S)?)"
+    # The emphasised run may not begin or end on an asterisk. Allowing it to end on one let
+    # the opening "**" of "*, **, and *** denote significance" pair with the last star of
+    # the "***", so /size/ printed its own legend as "*, , and *" in five table notes: the
+    # note defined symbols it had just swallowed. The comment above is about the other
+    # ordering, "***, **, and *", which this rule already handled.
+    _emph = r"(?=[^*]*[A-Za-z0-9])([^*\s](?:[^*]*[^*\s])?)"
     text = re.sub(r"\*\*" + _emph + r"\*\*", lambda m: "<b>%s</b>" % m.group(1), text)
     text = re.sub(r"(?<!\*)\*" + _emph + r"\*(?!\*)", lambda m: "<i>%s</i>" % m.group(1), text)
     text = text.replace("---", "&#8212;")
