@@ -573,14 +573,14 @@ def build(check=False):
     caption = (
         '<figcaption class="table-note">'
         '<b>What meta-analysis did to the number.</b> '
-        f'<b>{len(out)} of the {n_all} papers here can be compared this way</b>: the '
+        f'{len(out)} of the {n_all} papers here can be compared this way: the '
         'average of the estimates a literature reports, against the paper&rsquo;s own '
         'corrected estimate. '
-        '<b>Red</b>: smaller <i>in absolute magnitude</i>. <b>Green</b>: larger. '
-        + (f'<b>All {len(out)} moved toward zero</b>. ' if len(down) == len(out) else
-           f'<b>{len(down)} moved toward zero, {n_up} away</b> from it. ')
-        + (f'<b>{len(flat)}</b> did not move. ' if flat else '')
-        + f'The median revision is <b>{med:+.0f}%</b>. '
+        'Red: smaller <i>in absolute magnitude</i>. Green: larger. '
+        + (f'All {len(out)} moved toward zero. ' if len(down) == len(out) else
+           f'{len(down)} moved toward zero, {n_up} away from it. ')
+        + (f'{len(flat)} did not move. ' if flat else '')
+        + f'The median revision is {med:+.0f}%. '
         + 'Hover a dot for its own numbers.'
         '<details class="figmethod"><summary>How this figure is built, what the rings and '
         'outlines mean, and which papers it leaves out</summary>'
