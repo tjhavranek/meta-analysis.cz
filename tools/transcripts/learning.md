@@ -284,7 +284,7 @@ FIGURE 6. Significance funnel plot
 
 Notes: The figure displays a significance funnel plot following Mathur and VanderWeele (2020). Orange points are affirmative estimates; gray points are non-affirmative. The gray diamond is the fixed-effects mean among non-affirmative estimates (0.021), corresponding to the MAN worst-case benchmark reported in Panel A of Table 4. The black diamond is the precision-weighted pooled mean across all 291 estimates ($\hat{\mu}_{IVW} = -0.245$); it lies more negative than the Panel A equal-weighted mean of −0.126 because inverse-variance weighting gives disproportionate influence to large, high-precision studies.
 
-FIGURE 7 (no artwork). Distribution of z-scores.
+FIGURE 7. Distribution of z-scores.
 
 Note: The figure shows the distribution of z-scores, $y_i/se_i$, in the original dataset. The dashed vertical lines mark $z = -1.96$ and $z = +1.96$, the conventional 5% two-sided significance thresholds.
 

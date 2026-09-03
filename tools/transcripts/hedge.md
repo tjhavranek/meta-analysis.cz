@@ -926,7 +926,7 @@ Zigraiova, D., Havranek, T., Irsova, Z., & Novak, J. (2021). How puzzling is the
 
 ## APPENDIX
 
-FIGURE A1 (no artwork). Distribution of *t*-statistics. [Colour figure can be viewed at wileyonlinelibrary.com] Note: The figure represents the distribution of *t*-statistics of the reported estimates of the alpha. Red lines represent critical value of 1.96 associated with significance at the 5% level and the value of 0 associated with changing the sign of the estimate. We exclude estimates with large *t*-statistics from the figure for ease of exposition but include them in statistical tests.
+FIGURE A1. Distribution of *t*-statistics. [Colour figure can be viewed at wileyonlinelibrary.com] Note: The figure represents the distribution of *t*-statistics of the reported estimates of the alpha. Red lines represent critical value of 1.96 associated with significance at the 5% level and the value of 0 associated with changing the sign of the estimate. We exclude estimates with large *t*-statistics from the figure for ease of exposition but include them in statistical tests.
 
 FIGURE A2. Histograms for subsamples. [Colour figure can be viewed at wileyonlinelibrary.com] Note: The figure depicts funnel plots of the reported alphas divided based on the treatment of biases, the implementation of methods (IV = instrumental variables) and models, and the quality of journals in finance. The solid vertical line denotes the sample mean; the dashed vertical line denotes the null alpha.
 

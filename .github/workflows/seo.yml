@@ -133,6 +133,14 @@ jobs:
           sudo apt-get update -qq && sudo apt-get install -y -qq poppler-utils
           python tools/check_paper_pages.py
 
+      # Sentences the conversion cut in half. The fidelity checker above cannot see these:
+      # every word is present and none is invented, so a paragraph that stops mid-clause
+      # passes it. Three separate hand audits found this class and none of them found all of
+      # it. The screen reads tools/continuity_reviewed.json, where every kept boundary names
+      # what its source page prints, and fails on anything not in that list.
+      - name: Check paragraph continuity
+        run: python tools/audit_continuity.py
+
       # Did this push touch the data layer? 09_verify proves the tree is internally
       # CONSISTENT; it cannot prove the tree FOLLOWS FROM its canonical inputs. A tree can be
       # perfectly self-consistent and still stale, which is exactly what happened four times in

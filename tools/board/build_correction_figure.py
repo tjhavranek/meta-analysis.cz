@@ -395,7 +395,7 @@ def build(check=False):
          f'aria-labelledby="cf-t cf-d" class="cfig">',
          '<title id="cf-t">What meta-analysis did to each number</title>',
          f'<desc id="cf-d">One dot per meta-analysis, placed by how far its corrected or '
-         f'best-practice estimate sits from the average estimate that literature reported. '
+         f'best-practice estimate sits from the uncorrected number for that literature. '
          f'{len(down)} of the {len(out)} moved toward zero and {len(up)} away '
          f'from it; the median revision is {med:+.0f}%.'
          + (" " + " ".join(f'{r["title"]} moved {r["rev"]:+.0f}%, beyond the right-hand end '
@@ -501,9 +501,9 @@ def build(check=False):
         p.append("</a>")
 
     p.append(f'<text x="{L}" y="{AX + 40}" text-anchor="start" class="cfa">'
-             f'smaller than the comparator</text>')
+             f'smaller after correction</text>')
     p.append(f'<text x="{W - RM}" y="{AX + 40}" text-anchor="end" class="cfa">'
-             f'larger than the comparator</text>')
+             f'larger after correction</text>')
     p.append("</svg>")
     # The two labels above the plot sit on a baseline at `top - 12`, so a viewBox starting at
     # `top - 20` left 8 units of headroom for a 15px cap height: both "median -51%" and "no
@@ -579,8 +579,9 @@ def build(check=False):
         'which applies it to 24 literatures mostly by other researchers. Vertical position '
         'carries no meaning: the dots are stacked only to keep them apart.</p>'
 
-        f'<p><b>Where the uncorrected number comes from.</b> The comparator is chosen by a fixed '
-        f'order, and the first one that exists wins. The paper&rsquo;s own uncorrected mean for '
+        f'<p><b>Where the uncorrected number comes from.</b> The comparator is the uncorrected '
+        f'number. It is chosen by a fixed order, and the first one that exists wins. The '
+        f'paper&rsquo;s own uncorrected mean for '
         f'the same quantity, which {n_paper} of the {len(out)} state. Failing that, the '
         'paper&rsquo;s own uncorrected pooled estimate of it. Failing that, the average of that '
         'literature&rsquo;s estimates as released here, winsorised at 1%. And only where a paper '

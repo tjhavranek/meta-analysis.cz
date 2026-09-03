@@ -229,13 +229,11 @@ Notes: In billions of local currency, except for Japan (trillions).
 Averages over periods of the negative interest rate policy, for Denmark only since 2015/01
 Source: National central banks, author’s calculations.
 
-This can be also interpreted as the ceteris paribus changes in the return on assets (ROA) when interest expense changes. In other words, a ratio of interest expenses for banks stemming from negative interest rates to total assets equal to, say 0.03%, means that by imposing negative rates (in comparison to a zero interest rates), the ROA is reduced by 3bps.^{8} Lacking better evidence, in accordance with Barr et al. (2016) we will take the Switzerland case, i.e. a change in ROA of 3 bps not causing any disruptions or flight to cash, as the best possible value to calibrate the ELB. Using this value as a limit, we calculate the interest rate that would lead to the same change in ROA in the Czech Republic. However, we also provide a sensitivity analysis and calculate the respective interest rates that would lead to a change in ROA of 1, 5 and 10 bps (Table 5). We use monthly data on monetary statistics over the period 2013-
+This can be also interpreted as the ceteris paribus changes in the return on assets (ROA) when interest expense changes. In other words, a ratio of interest expenses for banks stemming from negative interest rates to total assets equal to, say 0.03%, means that by imposing negative rates (in comparison to a zero interest rates), the ROA is reduced by 3bps.^{8} Lacking better evidence, in accordance with Barr et al. (2016) we will take the Switzerland case, i.e. a change in ROA of 3 bps not causing any disruptions or flight to cash, as the best possible value to calibrate the ELB. Using this value as a limit, we calculate the interest rate that would lead to the same change in ROA in the Czech Republic. However, we also provide a sensitivity analysis and calculate the respective interest rates that would lead to a change in ROA of 1, 5 and 10 bps (Table 5). We use monthly data on monetary statistics over the period 2013-2016, which are available from the CNB’s ARAD database (Table 4).
 
 ## ENDNOTES
 
 8. ROA = net income/total assets = (revenues - interest expenses - other expenses)/total assets. Holding other things constant, with the change in interest expenses, ROA changes by −Δ(interest expense)/total assets.
-
-2016, which are available from the CNB’s ARAD database (Table 4).
 
 TABLE 4. Monetary Statistics, Czech Republic
 

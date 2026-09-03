@@ -651,7 +651,7 @@ FIGURE C1. Correlations between potential predictors of heterogeneity
 
 Notes: The figure displays correlation coefficients for variables used in heterogeneity analysis.
 
-FIGURE C2 (no artwork). Model size and convergence for the baseline BMA
+FIGURE C2. Model size and convergence for the baseline BMA
 
 (a) Posterior model size and model probabilities  (b) Cumulative posterior model probability
 

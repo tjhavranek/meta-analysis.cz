@@ -162,9 +162,11 @@ Meta-response variable: tstat for FIXED and ROBUST, gamma for RANDOM. ROBUST: It
 
 Regression described in column 1 of Table 3 is not very well specified, however. Condition number is high (75) indicating possible multicollinearity, Ramsey's RESET rejects the null hypothesis [$F_{(3,45)} = 4.42$, $p < 0.05$], only normality is not rejected [skewness-kurtosis test: $\chi^2_{(2)} = 1.36$, $p > 0.05$]; nevertheless, the model would pass all specification tests if variables *panel*, *year*, and *year2* were excluded. It is apparent that fixed effects MRA was able to model a significant portion of the heterogeneity inside the sample---note the high $R^2$s: 0.73 and 0.83 for fixed effects and their robust version, respectively.^{8} Nevertheless, a lot of heterogeneity still remains unexplained. Testing $H_0: \sigma^2_0 = 1$ (fixed effects MRA explains heterogeneity well) yields v2(60) = 276, p \ 0.001; for column 1, therefore, H0 is rejected—the result is qualitatively the same also for the robust specification.
 
-When this is the case, random effects explanatory MRA might be preferable (see, e.g., Abreu et al. 2005):9 X J X K cbi ¼ i0 þ hj Sji SEi þ dk Zki þ ki þ qi ; ð6Þ j¼1 k¼1
+When this is the case, random effects explanatory MRA might be preferable (see, e.g., Abreu et al. 2005):^{9}
 
-where ki stands for a normal disturbance term with standard deviations assumed to be equal to SEi, and qi is a normal disturbance term with unknown variance s2 assumed equal across all studies. This between-study variance is estimated using the restricted maximum likelihood method; t-values are computed employing the Knapp and Hartung (2003) modification. The results of random effects MRA are summarized in the third column of Table 3; there are much less significant explanatory variables than in the previous two specifications.
+$$ \widehat{\gamma}_i = \iota_0 + \sum_{j=1}^{J} \theta_j S_{ji} SE_i + \sum_{k=1}^{K} \delta_k Z_{ki} + \lambda_i + \rho_i, $$ (6)
+
+where $\lambda_i$ stands for a normal disturbance term with standard deviations assumed to be equal to $SE_i$, and $\rho_i$ is a normal disturbance term with unknown variance $\tau^2$ assumed equal across all studies. This between-study variance is estimated using the restricted maximum likelihood method; t-values are computed employing the Knapp and Hartung (2003) modification. The results of random effects MRA are summarized in the third column of Table 3; there are much less significant explanatory variables than in the previous two specifications.
 
 It is clear from the conducted tests that explanatory meta-regression is as sensitive to method and specification changes as any other field of empirical research. The most important meta-explanatory variables are those that are found significant by all specifications in both fixed and random effects meta-regression (effect on bc is shown in parentheses): studies on the eurozone (-), Rose’s coauthorship (?), number of countries in the data set (-), and usage of panel data (?). Some other variables are significant using fixed effects explanatory MRA and its robust version at the same time: short-run nature of the study (?), Baldwin’s coauthorship (-), and impact factor (-).
 
@@ -172,11 +174,7 @@ The negative sign for studies on the eurozone was expected and is in accordance 
 
 ## 5 | Conclusion
 
-Empirical literature on the trade effect of currency unions is heterogeneous to a large extent. Studies estimating the trade effect of the euro find on average much smaller effects than articles concentrating on other currency unions. The present Monte Carlo experiments suggest that random effects MRA is preferable if heterogeneity is caused by non-constant effect size variance or differences in the true underlying effect across studies. However, when heterogeneity arises due to omitted variable bias—which is realistic in economics—fixed effects estimators should be relied upon (Koetse et al. 2010). For this reason, fixed effects MRA is interpreted here as well along with random effects.
-
-254 T. Havránek
-
-meta-analysis shows that it is more appropriate to consider these two groups separately in a search for the underlying ‘‘true’’ effect.
+Empirical literature on the trade effect of currency unions is heterogeneous to a large extent. Studies estimating the trade effect of the euro find on average much smaller effects than articles concentrating on other currency unions. The present meta-analysis shows that it is more appropriate to consider these two groups separately in a search for the underlying ‘‘true’’ effect.
 
 Evidence of publication selection—i.e., preference towards statistically significant and positively biased results—is robust among papers on eurozone and much stronger than for non-euro studies. Narrative literature reviews discussing the trade effect of the euro that do not take publication selection into account are hence vulnerable to a substantial upward bias. Meta-regression methods show that, beyond publication bias, there is a significant and huge Rose effect of the currency unions other than euro, more than 60%; but no effect at all for the euro area. The absence of an economically important true effect is so robust that even some possible mistakes in the process of choosing the authors’ preferred estimates cannot significantly change the outcome.
 
@@ -296,19 +294,7 @@ TABLE 5 (continued). Acronyms of regression variables
 | postwar | = 1 if postwar data are used |
 | impact | Impact factor of the journal where the study was published. Journals without an impact factor obtain weights corresponding to 50% of the lowest impact factor in this sample. Working papers by NBER, ECB, European Commission, CESifo, and CEPR obtain 25%. Other unpublished manuscripts get 12.5%. |
 
-Study Alesina et al. (2003) Rose (2000) Rose (2001) Rose (2004) Rose & van Wincoop (2001) Rose & Engel (2002) Estevadeordal et al. (2003) Subramanian & Wei (2007) Saiki (2002) Levi Yeyati (2003) Tsangarides et al. (2006) Smith (2002) Adam & Cobham (2007) Melitz (2001) Melitz (2008) Frankel & Rose (2002) Lopez−Cordova & Meissner (2003) de Sousa & Lochard (2003) Shirono (2008) Flandreau & Maurel (2005) Baxter & Kouparitsas (2006) Klein (2005) Pakko & Wall (2001) Honohan (2001) Kenen (2002) Glick & Rose (2002) Barro & Tenreyro (2007) Tenreyro (2001) Yamarik & Ghosh (2005) Persson (2001) Nitsch (2002b) Nitsch (2002a) Bomberger (2002) Overall (I−squared = 91.1%, p = 0.000)
-
-−.5
-
-FIGURE 4. Forest plot of individual estimates of c, non-euro studies
-
-% ES (95% CI) Weight 1.56 (0.70, 2.42) 0.16 1.21 (0.94, 1.48) 1.58 0.74 (0.64, 0.84) 12.36 1.12 (0.88, 1.36) 2.15 0.91 (0.56, 1.26) 0.95 1.21 (0.48, 1.94) 0.23 0.29 (0.01, 0.58) 1.47 0.64 (0.48, 0.80) 4.71 0.56 (0.25, 0.87) 1.21 0.50 (0.01, 0.99) 0.49 0.54 (0.46, 0.62) 18.94 0.38 (0.18, 0.58) 3.09 0.88 (0.77, 0.98) 10.35 0.70 (0.25, 1.15) 0.58 1.38 (1.07, 1.69) 1.21 1.36 (1.01, 1.71) 0.95 0.72 (0.35, 1.08) 0.89 1.21 (0.97, 1.45) 2.15 0.91 (0.56, 1.26) 0.95 1.16 (1.02, 1.30) 6.31 0.47 (0.04, 0.90) 0.64 0.50 (−0.03, 1.03) 0.42 −0.38 (−1.41, 0.66)0.11 0.92 (0.14, 1.70) 0.19 1.22 (0.62, 1.82) 0.33 0.65 (0.55, 0.75) 12.36 1.90 (1.21, 2.59) 0.25 0.47 (−0.15, 1.09) 0.31 1.83 (1.23, 2.43) 0.33 0.51 (0.00, 1.01) 0.47 0.82 (0.29, 1.35) 0.42 0.62 (0.29, 0.95) 1.07 0.08 (−0.02, 0.18) 12.36 0.67 (0.64, 0.70) 100.00 0 .5 1 1.5 2 2.5
-
-258 T. Havránek
-
-precision of the estimate (1/SE)
-
-−1 −.5 0 .5 1 corrected estimate of gamma
+FIGURE 4. Forest plot of individual estimates of $\gamma$, non-euro studies
 
 FIGURE 5. Funnel plot corrected for publication bias, all studies
 
@@ -494,3 +480,5 @@ Yamarik, S., & Ghosh, S. (2005). A sensitivity analysis of the gravity model. *T
 7. A predictable pattern of novelty and fashion in economics; initial path-breaking results are confirmed by other highly significant estimates, but as the time passes, skeptical results become preferable (Goldfarb 1995; Stanley et al. 2008).
 
 8. However, because these are weighted least squares versions of the original equation, $R^2$s have to be recomputed to reflect the actual determination of the estimates of $\gamma$. For example, in the case of the robust specification, the corrected $R^2$ reaches 0.68.
+
+9. Monte Carlo experiments suggest that random effects MRA is preferable if heterogeneity is caused by non-constant effect size variance or differences in the true underlying effect across studies. However, when heterogeneity arises due to omitted variable bias—which is realistic in economics—fixed effects estimators should be relied upon (Koetse et al. 2010). For this reason, fixed effects MRA is interpreted here as well along with random effects.

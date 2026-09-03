@@ -478,7 +478,7 @@ TABLE A2. Potential mediating factors of publication bias.
 | Observations | 2968 | 2968 | 2968 | 2968 | 2968 | 2968 |
 *Notes:* The response variable is an estimate of the long-run Armington elasticity. Standard errors are clustered at the study and country level. Variables interacted with the standard error (Impact factor, Citations, Published, Data disaggregation) are also included separately but the coefficients are not reported.
 
-FIGURE A2 (no artwork). Estimates vary both within and across countries.
+FIGURE A2. Estimates vary both within and across countries.
 
 *Notes:* The figure shows a box plot of the estimates of the Armington elasticity reported for individual countries. The length of each box represents the interquartile range (P25-P75), and the dividing line inside the box is the median value. The whiskers represent the highest and lowest data points within 1.5 times the range between the upper and lower quartiles. Outliers are excluded from the figure. The solid vertical line denotes unity.
 

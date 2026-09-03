@@ -521,7 +521,7 @@ FIGURE A1. PRISMA diagram
 
 Figure A2 shows a box plot of the coefficient, the negative inverse elasticity ($-1/\sigma$), across countries, revealing that the UK has the least substitutability, while Switzerland has the highest. However, the UK estimate is based on a single study and should be treated with caution. The corresponding summary statistics are quantified in Table A2.
 
-FIGURE A2 (no artwork). Box plot of negative inverse elasticity across countries Notes: The length of each box represents the interquartile range (P25-P75), and the dividing line inside the box is the median value. The whiskers represent the highest and lowest data points within 1.5 times the range between the upper and lower quartiles. The dots show the outlying estimates with extreme values stacked at the values denoted as "outliers". The red vertical line presents the unweighted mean of all estimates (−0.075).
+FIGURE A2. Box plot of negative inverse elasticity across countries Notes: The length of each box represents the interquartile range (P25-P75), and the dividing line inside the box is the median value. The whiskers represent the highest and lowest data points within 1.5 times the range between the upper and lower quartiles. The dots show the outlying estimates with extreme values stacked at the values denoted as "outliers". The red vertical line presents the unweighted mean of all estimates (−0.075).
 
 TABLE A2. Summary statistics for different countries
 
