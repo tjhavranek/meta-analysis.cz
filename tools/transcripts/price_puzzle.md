@@ -174,13 +174,15 @@ Notes: Standard errors in parentheses. Response variable: the approximated $t$-s
 
 The impulse response function corrected for publication bias is depicted in Figure 4: it exhibits the price puzzle. In the short run prices increase, but in the medium run they decrease and bottom out 18 months after the tightening. The maximum decrease in the price level, however, is negligible: only 0.02%. Compared to the average response reported in Figure 2, now the function shifts upward—especially in the long run, because publication bias is filtered out. Figure 4 would be our best estimate of the underlying impulse response if all heterogeneity between studies was random; the estimate is unconditional on the characteristics of the countries examined and on the methodology used. In the next section we relax the assumption of random heterogeneity and explain the differences in the reported estimates. In particular, we are interested in the average impulse response conditional on best-practice methodology.
 
-FIGURE 4. Impulse Response Corrected for Publication Bias Exhibits the Puzzle. Note: Confidence bands are constructed as +/− one standard error.
+FIGURE 4. Impulse Response Corrected for Publication Bias Exhibits the Puzzle.
+Note: Confidence bands are constructed as +/− one standard error.
 
 ## 4 | WHAT EXPLAINS HETEROGENEITY
 
 As motivation for the empirical investigation of structural heterogeneity consider Figure 5, which depicts the differences in monetary transmission among selected countries. We use a simple random-effects meta-analysis to compute impulse-response functions. Simple meta-analysis weights each estimate by its precision and adds an estimate-specific random effect; it does not correct for publication bias. We use simple meta-analysis for estimation by countries since it requires fewer degrees of freedom than meta-regression. Figure 5 shows that the impulse responses for the United States, the United Kingdom, and Japan exhibit the price puzzle, but that monetary transmission in euro area countries seems to work intuitively and prices decline soon after a tightening. Nevertheless, a part of these differences may arise from the use of diverse methods since some countries are examined only in a few studies.
 
-FIGURE 5. Aggregate Impulse Responses for Selected Countries Suggest Heterogeneity. Note: Confidence bands are constructed as +/− one standard error.
+FIGURE 5. Aggregate Impulse Responses for Selected Countries Suggest Heterogeneity.
+Note: Confidence bands are constructed as +/− one standard error.
 
 To account for heterogeneity we extend the meta-regression (5) to the following multivariate version:
 
@@ -339,7 +341,8 @@ Our results suggest that authors affiliated with central banks report less power
 
 The multivariate meta-regression corroborates the evidence for publication selection reported in Section 3. The intercept, a measure of publication bias, is statistically significant for the 12-, 18-, and 36-month horizons. The estimate of the true effect in the multivariate model, however, is not simply represented by the regression coefficient for $1/SE$, but is conditional on the variables capturing heterogeneity. In order to estimate the true effect we need to choose the preferred values of the explanatory variables, thus defining some sort of best practice; in this way we create a synthetic study with ideal parameters. A suitably defined best-practice estimation can filter out misspecification bias from the literature, although the approach is subjective since different researchers may have different opinions on what constitutes best practice.
 
-FIGURE 6. Impulse Response Implied by Best Practice: No Price Puzzle. Note: Confidence bands are constructed as +/− one standard error.
+FIGURE 6. Impulse Response Implied by Best Practice: No Price Puzzle.
+Note: Confidence bands are constructed as +/− one standard error.
 
 We define best practice by selecting methodology characteristics based on the discussion in Section 2: we prefer the output gap over GDP as a measure of economic activity, nonrecursive identification over Cholesky decomposition, data covering a single monetary policy regime over mixing more regimes, and the inclusion of commodity prices and foreign variables instead of omitting them. In addition, we prefer Bayesian estimation since overparameterization can be a problem even for systems of modest size (Banbura, Giannone, and Reichlin 2010). We insert sample maximums for the number of observations, the year of the data, and the number of endogenous variables. Country-specific variables and dummy variables for central bankers and policymakers are set to their sample means. Similar to the previous section, the estimate of the impulse response is corrected for funnel plot asymmetry (i.e., for publication bias or any other bias contributing to the asymmetry, such as small-sample bias).
 

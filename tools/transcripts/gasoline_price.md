@@ -124,11 +124,13 @@ where *usdata* is a dummy variable that equals one if the primary study uses dat
 
 Fig. 2 depicts funnel plots for the estimates of short- and long-run price elasticities of gasoline demand. The funnels are heavily asymmetrical: the right-hand part of the funnels is almost completely missing, hence we have a good reason to believe that publication selection bias in this literature is strong. The estimates with the highest precision are negative but small in magnitude, positive estimates are almost never published, while imprecise negative estimates are published regularly—therefore the average reported estimate is likely to be biased downwards.
 
-FIGURE 2. Funnel plot of the estimated elasticities. Notes: In the absence of publication bias the funnel should be symmetrical around the most precise estimates of elasticities. This funnel is asymmetrical, which suggests that positive estimates are not reported, even though we should observe a few of them in the literature due to the laws of chance.
+FIGURE 2. Funnel plot of the estimated elasticities.
+Notes: In the absence of publication bias the funnel should be symmetrical around the most precise estimates of elasticities. This funnel is asymmetrical, which suggests that positive estimates are not reported, even though we should observe a few of them in the literature due to the laws of chance.
 
 The formal test of publication bias, described by regression (1), follows directly from the funnel plot—hence, it is often called the funnel asymmetry test. We illustrate the transition from the funnel plot to the funnel asymmetry test in Fig. 3. In this scatter plot the size of the estimates of elasticities is depicted on the vertical axis; the horizontal axis measures the standard errors of the estimates. (Compared with the funnel plot, the axes are switched and the values on the new horizontal axis are inverted.) For the short-run elasticities, a few estimates with extremely large standard errors are cut from the figure so that the overall pattern can be seen. Now, if we interpret Fig. 3 as a regression relationship, we get Eq. (1).
 
-FIGURE 3. Visualization of the funnel asymmetry test. Notes: The solid lines denote the combinations of the estimates of elasticities and their standard errors for which the t-statistic in the absolute value equals two. The dashed line denotes a linear fit of the points [that is, regression (1) or, in other words, the funnel asymmetry test]; its negative slope suggests publication bias.
+FIGURE 3. Visualization of the funnel asymmetry test.
+Notes: The solid lines denote the combinations of the estimates of elasticities and their standard errors for which the t-statistic in the absolute value equals two. The dashed line denotes a linear fit of the points [that is, regression (1) or, in other words, the funnel asymmetry test]; its negative slope suggests publication bias.
 
 Nevertheless, in regression (1) publication bias is only related to the standard error and, thus, seemingly only to statistical significance. It remains to be shown that this test captures both sources of publication bias: the one stemming from the selection of the significant estimates (type II bias in the terminology of Stanley, 2005) and the one stemming from the selection of the estimates with an intuitive sign (type I bias). The suitability of the funnel asymmetry test to filter out both sources of publication bias is often stated in the meta-analysis literature (for instance, Doucouliagos and Paldam, 2009), but rarely discussed in detail.^{2}
 
@@ -153,7 +155,6 @@ TABLE 3. Test of publication bias.
 | | (0.0111) | (0.0393) | (0.0152) | (0.111) |
 | Observations | 110 | 92 | 110 | 92 |
 | Likelihood-ratio test ($\chi^2$) | 21.78^{***} | 19.71^{***} | | |
-
 Notes: Standard errors, clustered at the study level for OLS, in parentheses. Null hypothesis for the likelihood-ratio test: no between-study heterogeneity (that is, the mixed-effects multilevel model has no benefit over OLS). ^{***}, ^{**}, and ^{*} denote significance at the 1%, 5%, and 10% levels.
 
 As expected after examining the funnel plots, the meta-regression identifies downward publication bias, significant at the 1% level for all specifications. In all cases the intensity of publication bias, $\beta_0$, is also larger than two in the absolute value. According to Doucouliagos and Stanley (2008), such magnitude of publication bias is considered "severe" and signals serious selection efforts: if the true elasticity was zero and only significantly negative estimates were reported, the estimated coefficient for publication bias would approach two, the most commonly used critical value of the *t*-statistic. Publication bias in this literature is hence strong enough to produce a significant average estimate of the effect even if there was none in reality.
@@ -171,7 +172,6 @@ TABLE 4. Test of the true elasticity beyond publication bias.
 | | (2.094) | (2.668) | (2.558) | (3.054) |
 | Observations | 110 | 92 | 110 | 92 |
 | Likelihood-ratio test ($\chi^2$) | 37.28^{***} | 34.45^{***} | | |
-
 Notes: Standard errors, clustered at the study level for OLS, in parentheses. Null hypothesis for the likelihood-ratio test: no between-study heterogeneity (that is, the mixed-effects multilevel model has no benefit over OLS). ^{***}, ^{**}, and ^{*} denote significance at the 1%, 5%, and 10% levels.
 
 After correcting for publication bias, our best estimate indicates that the mean short-run elasticity reaches −0.09 with a 95% confidence interval (−0.12, −0.07). The corrected estimate of the long-run elasticity reaches −0.31 with a 95% confidence interval (−0.38, −0.25). This sharply contrasts to the simple uncorrected averages amounting to −0.23 and −0.69: publication bias exaggerates the average reported elasticity more than twofold. For instance, concerning the short-run elasticity, only 18 out of the 110 estimates we collected are smaller in the absolute value than the true average effect (−0.09). Therefore as much as 74 positive (or negative but insignificant) estimates of the short-run price elasticity of gasoline were likely not reported because of publication selection. In other words, about 40% of all estimated elasticities may be put into the "file drawer."
@@ -197,7 +197,6 @@ TABLE 5. Multivariate meta-regression.
 | | (73.80) | (78.42) | (97.30) | (94.37) |
 | Observations | 110 | 92 | 110 | 92 |
 | Test of joint significance | 3.47 | 18.26^{***} | 0.94 | 3.70^{**} |
-
 Notes: Standard errors, clustered at the study level for OLS, in parentheses. Null hypothesis for the test of joint significance: $\alpha_1 = \alpha_2 = \alpha_3 = 0$ [see regression (5)]; Wald test is used for the mixed-effects model, F-test for OLS. ^{***}, ^{**}, and ^{*} denote significance at the 1%, 5%, and 10% levels.
 
 ## 5. Conclusion

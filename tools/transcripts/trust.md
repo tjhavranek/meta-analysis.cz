@@ -220,7 +220,6 @@ The dispersion is economically meaningful: a more negative reported coefficient 
 The clearest pattern in the data is that stronger rule of law goes with a larger conventional size premium across much of the relevant trust support (Table 3): the rule-of-law coefficient is negative and conventionally informative under both study- and country-clustered inference. This is consistent with formalization, disclosure, and risk-pricing channels, and with the possibility that better legal systems make small-firm risks more visible.
 
 FIGURE 1. Reported Size Slopes Vary Widely across Countries
-
 Notes: The figure shows the distribution of 1/99 winsorized reported size slopes in the preferred complete-case sample for countries with at least five estimates. Countries are ordered by their median winsorized size slope. Outlier points are not drawn, but all country observations enter the box summaries. More negative slopes imply larger conventional size premia.
 
 The trust interaction corresponds to the substitution hypothesis. Its negative sign means that the trust association declines as rule of law rises. The marginal effect of trust combines the trust coefficient with the interaction at each level of rule of law, so Figure 2 provides the substantive interpretation. The interaction coefficient itself is imprecise: the study-clustered *p*-value is 0.138, and the country-clustered *p*-value is 0.139.
@@ -248,7 +247,6 @@ Figure 2 translates the interaction into the two conditional associations that m
 (a) Marginal effect of generalized trust over rule of law (b) Marginal effect of rule of law over generalized trust
 
 FIGURE 2. Marginal Effects, Baseline OLS: the Estimated Trust Association Declines with Rule of Law
-
 Notes: The figures report marginal effects implied by the baseline OLS interaction model. Bands are 90% confidence intervals computed from the relevant clustered covariance matrix. Support points are plotted on the zero line. Positive effects increase the reported size slope and therefore imply weaker conventional size premia; negative effects imply stronger conventional size premia.
 
 Panel (b) shows the complementary marginal effect of rule of law. This association is more consistently negative. The rule-of-law effect becomes more negative as generalized trust rises, and the 90% confidence band excludes zero over much of the observed trust support: approximately from −0.35 to 1.89 with study-clustered inference and from −0.48 to 1.89 with country-clustered inference. Because negative effects make the reported size slope more negative, this pattern implies a stronger conventional size premium in higher-rule-of-law environments over most of the relevant trust range. This finding is not the simple claim that all better institutions reduce the size premium. Rather, the evidence suggests that generalized trust and formal legal quality enter the reported size-premium literature in a conditional way: the trust association is concentrated in weak-formal-institution settings, while the rule-of-law association is more visible across the main support of the trust index.
@@ -256,7 +254,6 @@ Panel (b) shows the complementary marginal effect of rule of law. This associati
 Figure 3 summarizes the same pattern as a joint institutional surface, holding the other controls fixed. The lowest fitted institutional contributions appear where rule of law is high and trust is moderate or high, which corresponds to more negative reported size slopes and hence larger conventional size premia. The positive trust contribution is concentrated in weaker-rule-of-law settings and declines as the formal legal environment improves. The plot displays the interaction over the observed support; it does not map the total size premium in each country.
 
 FIGURE 3. The Fitted Institutional Contribution Is Most Negative Where Rule of Law Is High
-
 Notes: The figure isolates the fitted contribution of the generalized-trust, rule-of-law, and interaction terms from the baseline OLS regression. It is not the total fitted size slope. Points show observed combinations of trust and rule of law.
 
 ### 5.4 Bayesian Model Averaging
@@ -275,7 +272,6 @@ Notes: The table reports primary MCMC-frequency BMA posterior summaries. The ins
 The BMA posterior means carry the same signs as the OLS point estimates: positive for trust, negative for rule of law and for the interaction. The 90% posterior intervals for all three institutional terms exclude zero under the reported BMA specification. Because these are model-averaged posterior intervals that treat the 1,613 estimates as independent observations, they leave the clustered-inference limitations unresolved. Figure 4 reports the corresponding posterior marginal effects. The posterior trust marginal effect is positive over lower rule-of-law values, approximately from −1.29 to 0.84, and fades around the high-rule-of-law mass of the sample. The posterior rule-of-law marginal effect is negative over much of the trust support, approximately from −0.52 to 1.89. Appendix Table 11 reports the full OLS and BMA coefficient summaries, and Appendix Figure 5 shows the broader model-averaged coefficient pattern.
 
 FIGURE 4. Marginal Effects, Bayesian Model Averaging: the Sign Pattern Persists under Control-Set Uncertainty
-
 Notes: The figures report posterior marginal effects implied by the baseline Bayesian model-averaging interaction specification. Bands are 90% posterior intervals computed from model-averaged posterior covariance terms. Support points are plotted on the zero line. Positive effects increase the reported size slope and therefore imply weaker conventional size premia; negative effects imply stronger conventional size premia.
 
 Stepping back from the BMA exercise, the remainder of this section summarizes the results as a whole. Reported size-premium estimates are not organized by a simple additive story in which all favorable institutions move the premium in the same direction. Rule of law is the more stable finding: its association with the reported size slope holds under both clusterings. The trust finding is less stable: trust is positively associated with the slope mainly where rule of law is low, which implies a weaker premium in weaker formal-institutional settings. The BMA exercise is useful because it preserves this sign pattern under control-set uncertainty; it does not remove the sample-dependence and clustering uncertainty that remain visible in OLS.
@@ -411,6 +407,7 @@ TABLE 6 (continued).
 | Eleswarapu, V. R., & Reinganum, M. R. (1993). The seasonal behavior of the liquidity premium in asset pricing. *Journal of Financial Economics*, *34*(3), 373–386 | 24 |
 | Kim, D. (1997). A reexamination of firm size, book-to-market, and earnings price in the cross-section of expected stock returns. *The Journal of Financial and Quantitative Analysis*, *32*(4), 463–489 | 24 |
 
+TABLE 6 (continued). Studies Represented in the Final Analysis Sample, Ranked by Contributed Estimates
 | Reference | Included estimates |
 | --- | --- |
 | George, T. J., & Hwang, C.-Y. (2010). A resolution of the distress risk and leverage puzzles in the cross section of stock returns. *Journal of Financial Economics*, *96*(1), 56–79 | 22 |
@@ -429,6 +426,7 @@ TABLE 6 (continued).
 | Brennan, M. J., Chordia, T., Subrahmanyam, A., & Tong, Q. (2012). Sell-order liquidity and the cross-section of expected stock returns. *Journal of Financial Economics*, *105*(3), 523–541 | 20 |
 | Chan, K. C., & Chen, N.-F. (1988). An unconditional asset-pricing test and the role of firm size as an instrumental variable for risk. *The Journal of Finance*, *43*(2), 309–325 | 19 |
 
+TABLE 6 (continued). Studies Represented in the Final Analysis Sample, Ranked by Contributed Estimates
 | Reference | Included estimates |
 | --- | --- |
 | Burlacu, R., Fontaine, P., Jimenez-Garcès, S., & Seasholes, M. S. (2012). Risk and the cross section of stock returns. *Journal of Financial Economics*, *105*(3), 511–522 | 19 |
@@ -539,7 +537,6 @@ Notes: Continuous controls are transformed as described in Section 3.4. Relative
 ## C Additional Tables and Figures
 
 FIGURE 5. Bayesian Model-Averaged Coefficient Summary
-
 Notes: The figure is the model-inclusion plot of the `BMS` package. Columns are sampled models ordered by cumulative posterior model probability, rows are variables ordered by posterior inclusion probability, and the plot title reports the number of distinct models the sampler retained. Blue marks inclusion with a positive coefficient, red marks inclusion with a negative coefficient, and white marks exclusion. Institutional terms are forced into every sampled model by design; posterior inclusion probabilities for the remaining controls reflect model uncertainty over the control set.
 
 TABLE 11. Full Baseline OLS and BMA Meta-Regression (All Controls)

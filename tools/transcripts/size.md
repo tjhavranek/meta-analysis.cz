@@ -178,7 +178,6 @@ TABLE 2. Size Effects for Different Subsets of Data.
 Despite the issues described above, the initial results in Tables 1 and 2 indicate not only strong evidence of the negative size effect as reported in the literature, but also its clear heterogeneity. We further investigate the issue of the underlying size effect in the following section, especially in relation to publication selection bias.
 
 FIGURE 1. The Funnel Plot. [Colour figure can be viewed at wileyonlinelibrary.com]
-
 Notes: The solid vertical line displays the sample mean; the dashed vertical line displays the sample median. Because of the presence of extreme observations for both size and precision, both variables are trimmed for better visibility.
 
 ## 4. Results

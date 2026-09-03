@@ -135,7 +135,8 @@ TABLE 1 (Continued). Relevance and characteristics of 24 selected meta-studies.
 *Abbreviations*: SJR, SCImago Journal Rank; RIS, Resurchify Impact Score as of the year 2021.
 *Source*: https://www.resurchify.com/ranking
 
-FIGURE 1. Multi-year averages of characteristics of 72 pre-selected meta-analyses. [Colour figure can be viewed at wileyonlinelibrary.com] Notes: The figure shows trends of the multi-year averages of the characteristics of the 72 pre-selected meta-studies. (a) Multi-year averages (based on publication year of the meta-study) of the number of primary studies and observations included per meta-study. (b) Multi-year averages of the impact factors of journals where meta-analyses were published, according to the SCImago Journal Rank (SJR) and the Resurchify Impact Score (RIS). Source: https://www.resurchify.com/ranking
+FIGURE 1. Multi-year averages of characteristics of 72 pre-selected meta-analyses. [Colour figure can be viewed at wileyonlinelibrary.com]
+Notes: The figure shows trends of the multi-year averages of the characteristics of the 72 pre-selected meta-studies. (a) Multi-year averages (based on publication year of the meta-study) of the number of primary studies and observations included per meta-study. (b) Multi-year averages of the impact factors of journals where meta-analyses were published, according to the SCImago Journal Rank (SJR) and the Resurchify Impact Score (RIS). Source: https://www.resurchify.com/ranking
 
 The following broad picture emerges: meta-analyses have covered many important topics in economics, and they provide well-cited benchmark estimates for their respective fields. While they were less popular in economics about 20 years ago, many of them have been published in top-tier journals in recent years. With the strong turn towards empirical evaluation in economics (Angrist & Pischke, 2010; Angrist et al., 2017; Paldam, 2021) and the exploding number of available primary empirical studies, the demand for quantitative summaries has increased. At the same time, the meta-datasets have grown substantially over the years, pointing to the tremendous workload required to produce high-quality meta-analyses.
 
@@ -204,7 +205,6 @@ TABLE 2 (Continued).
 | Reynaud and Lanzanova (2017) | Egan et al. (2009) | +: ecosystem services increase valuation of lakes | 153 | [n/a] | 315 | 153 | yes |
 | Rose and Stanley (2005) | Rose (2000) | +: currency unions increase trade | 1.20 | 1.15 | 0.86 | 0.39 | yes |
 | Vooren et al. (2019) | Heckman et al. (1999) | +: ALMP improve labor market outcomes (long run) | 0.03 | 0.10 | 0.02 | 0.004 | yes |
-
 Note: The table compares the findings of the 24 selected meta-analyses with those from a reference study in the respective field and the conventional wisdom estimate from GPT-4.
 
 TABLE 3. Relative research revision (R3) indices.
@@ -237,7 +237,6 @@ TABLE 3. Relative research revision (R3) indices.
 | Vooren et al. (2019) | −87% | −96% | −80% |
 | **Median** | **−62%** | **−60%** | **−50%** |
 | **Mean** | **−61%** | **−53%** | **−46%** |
-
 Note: The table presents the calculations of the three relative research revision (R3) indices for the 24 final meta-analyses according to the information in Table 2.
 
 (ii) Alternatively, we also asked an AI, specifically the large language model (LLM) GPT-4^{3}, for a best possible point estimate of the parameters of interest in our 24 meta-studies. The generic question to the AI for each of the 24 fields reads as follows:

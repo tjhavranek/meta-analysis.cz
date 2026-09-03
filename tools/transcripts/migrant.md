@@ -131,7 +131,6 @@ TABLE 1. Summary statistics for different subsets of the literature
 Notes: The exact definition of the variables is available in Table B1. Weighted = coefficients are weighted by the inverse of the number of estimates reported per study. The column $\sigma$ depicts implied elasticity computed as $\sigma = -1/mean$ using the coefficient values prior to rounding. Thus, it may not perfectly correspond to the rounded mean values presented in the table. $N$ is the number of observations per sample. No winsorization needed.
 
 FIGURE 1. Box plot of negative inverse elasticity across studies
-
 Notes: $-1/\sigma = \theta$, i.e., the reported coefficient. The length of each box represents the interquartile range (P25–P75), and the dividing line inside the box is the median value. The whiskers represent the highest and lowest data points within 1.5 times the range between the upper and lower quartiles. The dots show the outlying estimates with extreme values stacked at the values denoted as "outliers". The red vertical line presents the unweighted mean of all reported coefficients ($-0.075$).
 
 ## 3 | Publication Selection Bias
@@ -143,7 +142,6 @@ A funnel plot, developed by Egger et al. (1997), is a scatter diagram that plots
 Figure 2 reveals noticeable asymmetry, with a longer left tail suggesting that studies reporting more negative coefficients are overrepresented. The gap between the simple mean of the coefficients ($-0.075$, implying $\sigma \approx 13.3$) and the Unrestricted Weighted Least Squares (UWLS) coefficient ($-0.047$, implying $\sigma \approx 21.3$) is indicative of selective reporting. Following Stanley et al. (2023), we use the UWLS as a robust benchmark for the precision-weighted average. The precision-weighted average is meaningfully smaller in magnitude than the unweighted average, suggesting that the most negative results are concentrated among the least precise coefficients. However, because graphical interpretations and simple weighting can only be indicative of the underlying selection process, we employ formal meta-regression techniques to quantify the extent of publication selection bias and recover a bias-corrected coefficient, which serves as the basis for our implied elasticity estimates.
 
 FIGURE 2. Funnel plot suggests asymmetry among coefficients
-
 Notes: The vertical lines represent the unweighted arithmetic mean of the estimates ($-0.0749$) and the precision-weighted average ($-0.0470$), calculated via Unrestricted Weighted Least Squares (UWLS). SE denotes the standard error. For visual clarity, the plot excludes 26 outlying estimates with values below $-0.5$.
 
 To assess and accommodate this pattern more formally, we perform meta-regression models based on the relationship between reported coefficients and their standard errors (Stanley, 2008). The baseline Funnel Asymmetry Test (FAT) and Precision-Effect Test (PET) are specified as:
@@ -209,13 +207,11 @@ TABLE 3. Characteristics used to explain heterogeneity
 | Structural variation | All workers, High level of experience, Low level of experience, High level of education, Low level of education, Top 6 languages, Male, Female, Immigrant population |
 | Estimation characteristics | Log of mean wages, Annual wage, Monthly wage, Daily wage, Hourly wage, National, OLS Time fixed effects, Person fixed effects, Skill fixed effects |
 | Publication characteristics | Impact factor, Citations, Published, Top 5 journals, Publication year |
-
 Notes: Details on each variable, including definition and summary statistics, are available in Table B1.
 
 To account for model uncertainty, we estimate both BMA and FMA models, using the coefficient (i.e., $\theta = -1/\sigma$) as the dependent variable. We implement BMA using the Unit Information Prior (UIP) for the $g$-prior (UIP centers the $g$-prior around zero with a variance equal to the number of observations) and a uniform prior over model space as the baseline specification. This combination follows common practice in economic meta-analyses (Eicher *et al.*, 2011; Havránek *et al.*, 2020). It is parsimonious because the baseline prior is simple and transparent, yet flexible because BMA still compares many alternative combinations of moderators and weights them by the data. To ensure robustness, we perform a series of additional estimations using alternative $g$-prior settings, namely the benchmark BRIC prior (Fernández *et al.*, 2001), the empirical Bayes local (EBL) prior (Feldkircher & Zeugner, 2009), and the hyper-$g$ prior (Liang *et al.*, 2008), combined with both uniform and random model priors. The results of these robustness checks are consistent with the baseline model and are presented in Appendix B (specifically in Table B2 and Table B3, and visually confirmed in Figures B1–B16).^{9} All BMA specifications were estimated using Markov Chain Monte Carlo (MCMC) sampling with 3 million iterations (after a 1 million burn-in), and the full model space was explored up to 10,000 models. Figure 3 shows posterior inclusion probabilities (PIPs) across all variables, while Table 4 reports corresponding coefficient estimates.
 
 FIGURE 3. Model inclusion in Bayesian model averaging
-
 Notes: The response variable is the reported coefficient ($-1/\sigma$). Columns denote individual models; variables are sorted by posterior inclusion probability in descending order. The horizontal axis denotes cumulative posterior model probabilities. Blue color (positive sign) indicates that the variable is associated with a less negative coefficient, implying a higher elasticity of substitution. Red color (negative sign) indicates a more negative coefficient, implying a lower elasticity. No color = the variable is not included in the model. Numerical results of the BMA exercise are reported in Table 4, detailed description of all variables is available in Table B1.
 
 TABLE 4. Why do estimates of the elasticity of substitution differ?
@@ -257,7 +253,6 @@ TABLE 4. Why do estimates of the elasticity of substitution differ?
 | Publication year | 0.06 | -0.25 | 1.32 | -3.39 | 3.62 | 0.35 |
 | Studies | | 40 | | | 40 | |
 | Observations | | 1,087 | | | 1,087 | |
-
 Notes: PIP = posterior inclusion probability. For the interpretation of the posterior inclusion probability, we follow the guidelines offered by Kass & Raftery (1995) to be able to evaluate the importance of each explanatory variable: $0.5 < PIP < 0.75$: weak effect, $0.75 < PIP < 0.95$: substantial effect, $0.95 < PIP < 0.99$: strong effect, $0.99 < PIP$: decisive effect. SD = standard deviation. The table shows unconditional moments for BMA. *Number of cells*, *citations*, and *publication year* enter in logarithms. Detailed description of all variables is available in Table B1.
 
 First, we clarify how to interpret the dependent variable used in our analysis. All estimates in our dataset are coded as the negative inverse of the elasticity of substitution ($\theta = -1/\sigma$). As a result, a more negative value of $\theta$ indicates a lower elasticity ($\sigma$), meaning weaker substitutability between native and immigrant labor. Conversely, values closer to zero (less negative) imply higher elasticity and thus greater substitutability.
@@ -297,7 +292,6 @@ TABLE 5. Best-practice estimates of the native-immigrant substitution elasticity
 | *Regional + mean of log wages* | | | |
 | Full-time only | -0.03 | [-0.09, 0.02] | 29.4 |
 | All workers (incl. part-time) | -0.08 | [-0.14, -0.02] | 12.5 |
-
 Notes: Details on each variable, including definitions and summary statistics, are available in Table B1. The baseline estimate (in bold) evaluates worker and market characteristics at their sample means: gender (*male* at 0.41, *female* at 0.09), experience (*low level of experience* at 0.07), and immigrant share (*immigrant population* at 0.09). To represent best practice, we condition on the estimate coming from a published study (dummy set to 1), assume maximum data granularity (*log number of cells* set to 3.9, with dummies for annual data and hourly wages set to 1), and set citation impact to its sample maximum (*log citations per year* set to 2.7). The baseline holds the worker sample composition at its mean (*all workers* at 0.55), while the bottom panel explicitly toggles this condition. We also assume the underlying primary estimates control for person and skill fixed effects (respective dummies set to 1). Standard errors are clustered at the study level.
 
 The results are summarized in Table 5. Our best-practice estimates reflect the highest levels of data granularity (annual frequency and hourly wages). As shown in our previous analysis, these settings systematically yield more conservative elasticity estimates than a simple correction for publication bias would suggest. By conditioning on study-design features associated with more detailed labor-market measurement, the best-practice estimate provides a middle ground: it corrects for the downward bias of the raw sample mean (13.3) but avoids the potentially inflated estimates (which generally exceed 22) found when correcting for bias without conditioning on study-design features. In our baseline regional specification (shown in bold), using the mean of log wages and representing the average labor force composition, the predicted coefficient is $-0.06$, which yields an implied elasticity ($\sigma$) of approximately 17. When toggling the geographic scale to a national level, the coefficient shifts to $-0.12$ ($\sigma \approx 8$), confirming that geographic scale is one of the primary drivers of the variation in the literature. Consistent with concerns raised by Borjas *et al.* (2012) about Jensen's inequality and the construction of cell-level wages, using the log of mean wages consistently yields more negative estimates (lower $\sigma$) than the mean of log wages baseline.
@@ -523,7 +517,8 @@ FIGURE A1. PRISMA diagram
 
 Figure A2 shows a box plot of the coefficient, the negative inverse elasticity ($-1/\sigma$), across countries, revealing that the UK has the least substitutability, while Switzerland has the highest. However, the UK estimate is based on a single study and should be treated with caution. The corresponding summary statistics are quantified in Table A2.
 
-FIGURE A2. Box plot of negative inverse elasticity across countries Notes: The length of each box represents the interquartile range (P25-P75), and the dividing line inside the box is the median value. The whiskers represent the highest and lowest data points within 1.5 times the range between the upper and lower quartiles. The dots show the outlying estimates with extreme values stacked at the values denoted as "outliers". The red vertical line presents the unweighted mean of all estimates (−0.075).
+FIGURE A2. Box plot of negative inverse elasticity across countries
+Notes: The length of each box represents the interquartile range (P25-P75), and the dividing line inside the box is the median value. The whiskers represent the highest and lowest data points within 1.5 times the range between the upper and lower quartiles. The dots show the outlying estimates with extreme values stacked at the values denoted as "outliers". The red vertical line presents the unweighted mean of all estimates (−0.075).
 
 TABLE A2. Summary statistics for different countries
 
@@ -579,6 +574,7 @@ TABLE B1 (continued). Description and summary statistics of regression variables
 | ^{*} Annual wage | = 1 if the study uses annual wages to examine the elasticity of substitution. | 0.09 | 0.28 | 0.09 |
 | ^{*} Monthly wage | = 1 if the study uses monthly wages to examine the elasticity of substitution. | 0.10 | 0.30 | 0.08 |
 
+TABLE B1 (continued). Description and summary statistics of regression variables
 | Variable | Description | Mean | SD | WM |
 | --- | --- | --- | --- | --- |
 | Weekly wage | = 1 if the study uses weekly wages to examine the elasticity of substitution. | 0.45 | 0.50 | 0.38 |
@@ -595,6 +591,7 @@ TABLE B1 (continued). Description and summary statistics of regression variables
 | ^{*} Published | =1 if a study is published in a peer-reviewed journal, reference category; = 0 if a study is in a form of working paper or PhD Thesis. | 0.72 | 0.45 | 0.75 |
 | Unpublished old | = 1 if a working paper has remained unpublished for more than 10 years. | 0.22 | 0.42 | 0.15 |
 
+TABLE B1 (continued). Description and summary statistics of regression variables
 | Variable | Description | Mean | SD | WM |
 | --- | --- | --- | --- | --- |
 | ^{*} Top 5 journals | = 1 if a study published in the top 5 economic journals. | 0.06 | 0.24 | 0.13 |

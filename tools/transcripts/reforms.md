@@ -95,7 +95,6 @@ where $r$ denotes the partial correlation coefficient corresponding to the effec
 We illustrate the collected reform effects, converted to partial correlation coefficients, in Figure 1. The figure depicts reform effects on the horizontal axis and the number of degrees of freedom used in the estimation (which can be thought of as a measure of estimation precision) on the vertical axis. Such a figure is usually called the funnel plot: if all estimates measure the same effect, the most precise ones will be concentrated near the underlying reform effect, while the imprecise ones will be widely dispersed. Therefore, the cloud of the estimates should form an inverted funnel with the tip pointing up at the underlying reform effect. Nevertheless, the funnel depicted in Figure 1 apparently has two peaks, which suggests heterogeneity; in other words, the collected estimates seem to cover two distinct effects.
 
 FIGURE 1. Reforms hurt in the short run, but spur long-run growth
-
 Notes: The figure shows a scatter plot of all reported estimates of the reform effect. The vertical axis measures the number of degrees of freedom available for estimation in each model. The dashed lines denote averages of the 10 estimates with the most degrees of freedom for the short and long run.
 
 TABLE 2. Estimating the average reform effect
@@ -129,7 +128,6 @@ To test for publication bias, the funnel plot introduced in the previous section
 The funnels depicted in Figure 2 are relatively symmetrical when compared to funnels typically reported in economics meta-analyses (Doucouliagos and Stanley, 2013), but some signs of publication bias are still present. Both funnels are a little skewed; to the right for the short-run effect and to the left for the long-run effect. The simple averages are smaller in absolute value than the values of estimates with the highest precision. The funnels thus present some evidence for a slight preference for positive results in the case of the reported short-run effects and for negative results in the case of the long-run effects. Moreover, the funnel corresponding to the short-run effects seems to be relatively hollow, suggesting publication bias against insignificant results. But since the visual test of publication bias is inevitably subjective, more formal analysis is necessary to ascertain whether the bias is important.
 
 FIGURE 2. Funnel plots suggest slight publication bias
-
 Notes: The dashed lines denote averages of all reported estimates for the short and long run. In the absence of publication bias, the funnels should be symmetrical with respect to the line representing the average estimate.
 
 The formal test of publication bias builds on Card and Krueger (1995) and Egger *et al.* (1997): in the absence of publication bias, the estimated size of the partial correlation coefficient should not be correlated with its standard error. If, in contrast, estimates of the reform effect are selected for publication because of their significance or sign, the relationship will become significant. This idea is formalized by the following regression:
@@ -225,13 +223,11 @@ The results of the BMA estimation for the short and long run are reported graphi
 Some variables are important (i.e. have the posterior inclusion probability higher than 50 percent) for the estimates of the reform effect in both the short and long run. These are *lie* (a dummy variable capturing the type of the reform index, namely external liberalization), entering with a positive sign and *lags* (a dummy variable capturing whether both contemporaneous and lagged reform variables are used in the model) entering with a negative sign. Moreover, these variables affect the estimates of the short- and long-run reform effect in the same direction. Some other variables are important either only for the short-run estimates (e.g. *comb*, a dummy variable reflecting whether a combination of the EBRD and World Bank indices is used) or only for the long-run estimates (e.g. *tspan*, the number of years included in the dataset), and some do not seem to be important at all.
 
 FIGURE 3. Bayesian model averaging, model inclusion (short run)
-
 Notes: Response variable: the effect of reforms on economic growth in the short run (partial correlation coefficient). The acronyms of explanatory variables are explained in Table 4. Columns denote individual models; variables are sorted by posterior inclusion probability in descending order. Darker shading = the variable is included and the estimated sign is positive. Lighter shading = the variable is included and the estimated sign is negative. No colour = the variable is not included in the model. The horizontal axis measures cumulative posterior model probabilities.
 
 Our intention is to use the results concerning the sources of heterogeneity to improve our estimate of the underlying reform effect ($r_0$). Instead of selecting one of the regressions (columns in Figures 3 and 4) and building our analysis on this specification, BMA uses the weighted average of all regressions; the numerical details on the weighted average of the coefficients for each variable are reported in Tables A1 and A2 in Appendix A. To estimate the underlying reform effect, we need to select the preferred value for each explanatory variable and plug it into Equation (7), using the regression coefficients given by BMA (the coefficients for variables with a low posterior inclusion probability are very close to zero). In other words, from the literature we create a synthetic model with best-practice methodology, the largest dataset and maximum quality characteristics.
 
 FIGURE 4. Bayesian model averaging, model inclusion (long run)
-
 Notes: Response variable: the effect of reforms on economic growth in the long run (partial correlation coefficient). The acronyms of explanatory variables are explained in Table 4. Columns denote individual models; variables are sorted by posterior inclusion probability in descending order. Darker shading = the variable is included and the estimated sign is positive. Lighter shading = the variable is included and the estimated sign is negative. No colour = the variable is not included in the model. The horizontal axis measures cumulative posterior model probabilities.
 
 Of course, the authors of primary studies have different views on how best practice in this literature should appear, but some aspects of methodology would be preferred by most evaluators. We prefer panel-data models over cross-sectional models (i.e. we plug in value 1 for the corresponding dummy variable), models explicitly addressing endogeneity and models employing country-level fixed effects. We prefer the study to use data on the reform index from both the World Bank and the EBRD and to take into account internal, external, privatization and banking reform components (not only a subset of those). We prefer models controlling for time dynamics, initial conditions, stabilization, inflation, institutional development and factors of production. We also plug in sample maxima for the number of types of control for initial conditions, the number of types of control for stabilization, the number of types of control for institutional development and the number of types of control for factors of production. Finally, we prefer studies published in peer-reviewed journals and plug in sample maximum for the number of citations. All other variables are set to sample means.
@@ -574,7 +570,6 @@ TABLE B1. Summary of BMA estimation (short run)
 | 0.9998 | 245 | random | BRIC |
 | *Shrinkage-Stats* | | | |
 | Av = 0.9989 | | | |
-
 Notes: The 'random' model prior refers to the beta-binomial prior advocated by Ley and Steel (2009): prior model probabilities are the same for all possible models; in other words, we do not *a priori* prefer any particular model size. We set the Zellner's *g* prior following Fernandez *et al.* (2001).
 
 FIGURE B1. Model size and convergence (short run)
@@ -590,7 +585,6 @@ TABLE B2. Summary of BMA estimation (long run)
 | 0.9998 | 292 | random | BRIC |
 | *Shrinkage-Stats* | | | |
 | Av = 0.9991 | | | |
-
 Notes: The 'random' model prior refers to the beta-binomial prior advocated by Ley and Steel (2009): prior model probabilities are the same for all possible models; in other words, we do not *a priori* prefer any particular model size. We set the Zellner's *g* prior following Fernandez *et al.* (2001).
 
 FIGURE B2. Model size and convergence (long run)

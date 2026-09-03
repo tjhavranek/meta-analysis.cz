@@ -88,7 +88,8 @@ The IRC used in our analysis is obtained as a simple average of three standardiz
 
 Next, in order to minimize the impact of the business cycle, we focus on the IRC conditional on crisis occurrence (IRCCOI). Our primary interest in examining the continuous index of real costs lies in exploiting as much variation in the data as possible. However, by construction, the IRC may also capture cyclical activity not necessarily related to economic crises. In order to explore the behavior of the IRC following the occurrence of systemic events only, we make use of the COI based on the binary database of economic crisis occurrence described in a companion paper (Babecky et al., 2012). This database contains information on the occurrence of banking, currency, and debt crises. The COI takes value 0 when no crisis occurred and 1 when a crisis (any of the types mentioned above) occurred. The resulting dependent variable, the IRCCOI, captures real costs within two years after each crisis occurrence. This horizon was selected because our companion paper (Babecky et al., 2012) and related literature confirm that economic crises affect the real economy mostly within two years after their occurrence.
 
-FIGURE 1. IRC and IRCCOI indices. Note: IRC is the index of real costs. IRCCOI_8 is the index of real costs within 8 quarters after crisis occurrence. An increase in the indices is associated with higher costs to the real economy.
+FIGURE 1. IRC and IRCCOI indices.
+Note: IRC is the index of real costs. IRCCOI_8 is the index of real costs within 8 quarters after crisis occurrence. An increase in the indices is associated with higher costs to the real economy.
 
 Fig. 1 illustrates the original IRC (dashed line) and the resulting IRCCOI (solid line) on the examples of the United States and the United Kingdom.^{6}
 
@@ -353,7 +354,8 @@ TABLE A2. Variables, transformations, and data sources.
 | 30 | yieldcurve | Long term bond yield – money market interest rate | None | National central banks |
 Note: All variables (except housing prices) were downloaded from Datastream. The variables are listed in alphabetical order.
 
-FIGURE A1. Overview of the IRC and IRCCOI indices for EU and OECD countries, 1970–2010, quarterly. Note: IRC is the index of real costs. IRCCOI_8 is the index of real costs within 8 quarters after crisis occurrence. An increase in the indices is associated with higher costs to the real economy. Detailed figures for each country are available in the online appendix at [http://ies.fsv.cuni.cz/en/node/372](http://ies.fsv.cuni.cz/en/node/372).
+FIGURE A1. Overview of the IRC and IRCCOI indices for EU and OECD countries, 1970–2010, quarterly.
+Note: IRC is the index of real costs. IRCCOI_8 is the index of real costs within 8 quarters after crisis occurrence. An increase in the indices is associated with higher costs to the real economy. Detailed figures for each country are available in the online appendix at [http://ies.fsv.cuni.cz/en/node/372](http://ies.fsv.cuni.cz/en/node/372).
 
 ## REFERENCES
 

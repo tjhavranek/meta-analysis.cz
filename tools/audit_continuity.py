@@ -49,6 +49,12 @@ REVIEWED = os.path.join(ROOT, "tools", "continuity_reviewed.json")
 # Blocks that are not running prose, recognised by their first characters.
 RE_HEADING = re.compile(r"^#")
 RE_TABLE_ROW = re.compile(r"^\|")
+# An exhibit's note is not running prose. It routinely ends without a full stop -- "...but
+# included in all statistical tests" -- because that is how the journal sets it, and it is
+# followed by the next body paragraph, which is exactly the shape of a cut sentence. Once
+# figure notes moved out of the caption line and onto their own line, where the fidelity
+# checker can see them, eleven of these appeared at once. They are notes, not fragments.
+RE_NOTE_LINE = re.compile(r"^(Notes?|Source):\s")
 # Captions are shouted in the dialect -- "TABLE 2." and "FIGURE 4." -- and the shouting is
 # what tells them apart from a sentence that merely opens "Table 2 provides ...". Matching
 # case-insensitively read one of /dst_slovakia/'s cut sentences as a caption and hid it.
@@ -123,6 +129,8 @@ def blocks(path):
             out.append(("heading", s, i + 1))
         elif RE_TABLE_ROW.match(s):
             out.append(("table", s, i + 1))
+        elif RE_NOTE_LINE.match(s):
+            out.append(("note", s, i + 1))
         elif RE_CAPTION.match(s):
             out.append(("caption", s, i + 1))
         elif RE_LIST.match(raw):

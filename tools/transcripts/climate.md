@@ -50,9 +50,11 @@ FIGURE 1. The kernel density of climate sensitivity estimates
 
 Figure 2 depicts the funnel plot for the estimate of climate sensitivity using the standard error constructed with the lower tail of the confidence interval, and Figure 3 shows the same using the construction with the upper tail. The funnels are heavily asymmetrical: the left-hand side of the funnels is almost completely missing; hence we have good reason to believe that publication selection bias is strong in this literature.
 
-FIGURE 2. Funnel plot of the estimated CS. Notes: This figure excludes the single most precise estimate from the data set to zoom in on the relationship.
+FIGURE 2. Funnel plot of the estimated CS.
+Notes: This figure excludes the single most precise estimate from the data set to zoom in on the relationship.
 
-FIGURE 3. Funnel plot of the estimated climate sensitivities with the use of $Se_{up}$. Notes: In the absence of publication bias, the funnel plot should be symmetrical around the most precise estimates of climate sensitivities.
+FIGURE 3. Funnel plot of the estimated climate sensitivities with the use of $Se_{up}$.
+Notes: In the absence of publication bias, the funnel plot should be symmetrical around the most precise estimates of climate sensitivities.
 
 In Figure 2 the dotted lines pick out climate sensitivity with magnitudes 1, 2, and 3, while the dashed line represents precision 2 (that is, standard error 0.5). With increasing precision the estimates converge to climate sensitivity 1. Most of the estimates lie between 2 and 4, with quite low precision between 0.6 and 2. The most precise estimates differ in magnitude: one of them predicts climate sensitivity at around 3.5, while four predict it between 1 and 2. Although the magnitude of the climate sensitivity estimates varies, Figure 2 clearly displays the relationship between the estimates and their precision: the higher the precision, the lower the estimate of climate sensitivity. In the absence of publication bias these figures should look like an inverted funnel. However, Figure 2 depicts only the right-hand side of the inverted funnel and the left-hand side is completely missing, indicating publication bias.
 

@@ -361,6 +361,7 @@ RE_LI = re.compile(r"^(\s*)-\s+(.+)$")
 RE_FIG_CAP = re.compile(
     r"^FIGURE\s+([A-Za-z]{0,3}\.?\d+(?:\.\d+)*[A-Za-z]?)(\s*\(no artwork\))?\s*\.\s*(.*)$",
     re.I)
+RE_FIG_NOTE = re.compile(r"^(Notes?|Source):\s")
 RE_FIG_ALT = re.compile(
     r"^ALT\s+([A-Za-z]{0,3}\.?\d+(?:\.\d+)*[A-Za-z]?)\s*\.\s*(.+)$", re.I)
 RE_LIST_ITEM = re.compile(r"^([0-9]+|[ivxlcdm]+)\.\s+(.*)$")
@@ -624,6 +625,20 @@ class Builder:
                 self.emit_figure(*pending_fig)
                 pending_fig = None
                 i += 1
+                # The paragraph on the line DIRECTLY under a figure caption is that
+                # figure's note, exactly as for a table. It has to stay a line of its own
+                # rather than ride on the caption, because verify_transcript's prose
+                # extractor drops every line starting FIGURE/TABLE/ALT: a note carried on
+                # the caption line is never compared against the PDF again. Kept separate
+                # it is still checked, and .fig-note (already in paper.css, and until now
+                # never emitted) sets it as the small print it is instead of body prose.
+                if i < len(lines) and RE_FIG_NOTE.match(lines[i].strip()):
+                    note = []
+                    while i < len(lines) and lines[i].strip():
+                        note.append(lines[i].strip())
+                        i += 1
+                    self.w('<p class="fig-note">%s</p>'
+                           % inline(" ".join(note), self.refs_numbered))
                 continue
 
             if stripped.startswith("|"):

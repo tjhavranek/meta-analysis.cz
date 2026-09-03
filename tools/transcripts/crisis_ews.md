@@ -165,15 +165,12 @@ Therefore, it seems that at longer horizons the most useful indicators relate to
 Indeed, Reinhart and Rogoff (2011) argue that banking crises are driven by private sector defaults, which are in turn driven by excessive private credit growth. Unlike these papers, our results indicate that banking crises occur during the expansion phase (FDI inflows, increasing money market rates) rather than as the economy enters recession (domestic GDP does not enter the set of most significant crisis indicators with any sign). We do not find a significant role for domestic inflation and share prices. In addition, we find that some leading indicators are of a global rather than local nature (world inflation and GDP growth). This seems to be related to the fact that the developed countries in our sample are more integrated into global markets.
 
 FIGURE 6. Bayesian model averaging: early warning indicators of banking crisis onset, horizon within 4 quarters.
-
 Note: Rows = potential early warning indicators. Columns = best models according to marginal likelihood, ordered from left. Full cell = variable included in model, blue = positive sign, red = negative sign.
 
 FIGURE 7. Bayesian model averaging: early warning indicators of banking crisis onset, horizon from 5 to 8 quarters.
-
 Note: Rows = potential early warning indicators. Columns = best models according to marginal likelihood, ordered from left. Full cell = variable included in model, blue = positive sign, red = negative sign.
 
 FIGURE 8. Bayesian model averaging: early warning indicators of banking crisis onset, horizon from 9 to 12 quarters.
-
 Note: Rows = potential early warning indicators. Columns = best models according to marginal likelihood, ordered from left. Full cell = variable included in model, blue = positive sign, red = negative sign.
 
 The results for the onset of currency crises are reported in Figures 9–11. We can see that the set of leading indicators of currency crises differ from that of banking crises. At a horizon of up to 4 quarters, the main predictors of currency crises are a worsening government balance, falling central bank reserves, an increasing money market rate, and rising household debt. We again note the puzzling effect of low government debt, which may be a spurious relationship related to low short-term dynamics and the presence of a trend for most countries in the sample. Increasing household debt and a rising money market rate are consistent with the hypothesis that currency crises, like banking crises, are preceded by economic expansions. On the other hand, these developments are possible consequences of ongoing banking turmoil (as noted in Figure 4, banking crises seem to precede currency crises), like a deteriorating government balance, which pops up as another leading indicator of currency crises. Falling central bank reserves seem to indicate an effort by the domestic monetary authority to support the domestic currency, or an inability to do so, and this finding is consistent with the original finding of Kaminsky et al. (1998) and Kaminsky and Reinhart (1999). Unlike them, we find no significant role for the real exchange rate and domestic inflation.^{13}
@@ -183,15 +180,12 @@ When looking at the horizon of between 5 and 8 quarters, the reasonable indicato
 At the horizon of between 9 and 12 quarters, the terms of trade appear as an additional indicator, though with a somewhat counterintuitive sign, possibly resulting from cyclical behavior of trade prices.
 
 FIGURE 9. Bayesian model averaging: early warning indicators of currency crisis onset, horizon within 4 quarters.
-
 Note: Rows = potential early warning indicators. Columns = best models according to marginal likelihood, ordered from left. Full cell = variable included in model, blue = positive sign, red = negative sign.
 
 FIGURE 10. Bayesian model averaging: early warning indicators of currency crisis onset, horizon from 5 to 8 quarters.
-
 Note: Rows = potential early warning indicators. Columns = best models according to marginal likelihood, ordered from left. Full cell = variable included in model, blue = positive sign, red = negative sign.
 
 FIGURE 11. Bayesian model averaging: early warning indicators of currency crisis onset, horizon from 9 to 12 quarters.
-
 Note: Rows = potential early warning indicators. Columns = best models according to marginal likelihood, ordered from left. Full cell = variable included in model, blue = positive sign, red = negative sign.
 
 We are aware of the limitations of applying OLS estimation for models with binary dependent variables. However, alternative estimation methods such as logit or probit models have their own limitations when the distributional assumptions do not hold, for example in the presence of heteroscedasticity (which is the case of our data series despite a relatively homogeneous panel consisting of developed countries). In Annex I.4, drawing on the example of early warning indicators of banking crisis onset (horizon within four quarters), we provide a robustness check using BMA for a limited dependent variable as well as panel regression results with a linear probability model and logit. The results do not alter substantially. All the variables that were identified above (according to the PIP) keep their sign and significance.
@@ -222,13 +216,11 @@ $$ \min\{(1-\theta); \theta\} - L(\theta) $$
 If the usefulness is positive, there is a positive benefit of using the proposed early warning mechanism. For every value of the relative preference weight *θ*, we find the optimal trigger value of the early warning indicator by minimizing the loss function. If the indicator exceeds the trigger value, a signal is issued (and a policy response executed). When the policy maker has a relatively low preference for the loss from missed crises (low *θ*), the optimal trigger value is high, as is the share of missed crises. Increasing the preference weight *θ* of missed crises, the optimal trigger falls and the initially low share of false alarms is traded off against the share of missed crises. Figure 12 shows the share of Type I errors (missed crises) versus Type II errors (false alarms) along with the optimal trigger values of the early warning indicator constructed as a simple sum of nine standardized variables selected within the BMA framework (with PIP > 0.5). These include domestic private credit, FDI inflow, world inflation, the money market rate, world GDP, the trade balance, openness (the trade-to-GDP ratio), the real effective exchange rate, and the government balance. For comparison we also draw the optimal trigger based only on the best performing variable, namely, the ratio of domestic private credit to GDP. Although the combination of different variables delivers better performance in terms of usefulness as defined above, the use of a single variable provides a better interpretation. In particular, assuming an equal preference weight between false alarms and missed crises (θ = 0.5) Figure 12 shows that the threshold value for domestic private credit growth (as a deviation from the HP trend) is close to 2%. That is, if the ratio of domestic private credit to GDP deviates by more than 2% from its trend value, policy makers should apply macroprudential instruments in order to avoid a future banking crisis.
 
 FIGURE 12. Policy makers' trade-off between missed crises and false alarms
-
 Note: The share of missed crises and false alarms and the optimal value of the trigger are reported for the composite early warning indicator consisting of the sum of the standardized nine most robust indicators according to the BMA analysis. For comparison, the optimal value of the trigger based only on the single best performing indicator (the ratio of domestic private credit to GDP) is provided.
 
 Finally, Figure 13 shows the noise-to-signal ratio and the value of the loss function, along with the usefulness of both the single indicator of domestic private credit and the composite indicator computed as the sum of the nine 'best' variables according to the BMA analysis (with PIP > 0.5). By construction, usefulness achieves its maximum when false alarms and missing crises are viewed as equally harmful (*θ = 0.5*). The usefulness of the single indicator of domestic private credit is around 15%, while the composite indicator reaches a value above 0.20, meaning that it is possible to avoid over 20% of the loss arising from missing crises and false alarms by using the early warning indicator. We conclude that using the composite early warning index reduces the loss by around 5% in comparison to the best single-variable indicators.
 
 FIGURE 13. Noise-to-signal ratio, loss function value, and usefulness
-
 Note: The noise-to-signal ratio and the value of loss function are reported for the composite early warning indicator. Usefulness is reported for both the composite indicator and the single indicator of domestic private credit
 
 Alessi and Detken (2011) report similar usefulness values of around 0.2–0.25 for the same preference parameter *θ*. A few differences in our approach are noteworthy. First, Alessi and Detken (2011) predict asset booms, while we aim at early warnings of crises. Also, we study early warnings of the *onset* of a crisis within 4 quarters. Second, we use a broader group of countries. Therefore, the results are not directly comparable.
@@ -471,7 +463,6 @@ Note: The variables in rows 1–30 (except housing prices) were downloaded from 
 ### I.4. Robustness check with limited dependent variable models
 
 FIGURE I.4.1. Bayesian model averaging for limited dependent variable: early warning indicators of banking crisis onset, horizon within 4 quarters.
-
 Note: Rows = potential early warning indicators. Columns = best models according to marginal likelihood, ordered from left. Full cell = variable included in model, blue = positive sign, red = negative sign. We use the library BMA for R developed by Rathery et al., available at [http://cran.r-project.org/web/packages/BMA/index.html](http://cran.r-project.org/web/packages/BMA/index.html)
 
 TABLE I.4.1. Comparison of results using alternative estimation methods for BMA preselected early warning indicator of banking crisis onset, horizon within 4 quarters.

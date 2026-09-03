@@ -220,7 +220,8 @@ where the second lines report the t-values of the intercept (PET) and slope coef
 
 Consistent with this interpretation, observe that the largest sample estimates are all quite small. For example, there are only two studies that are adequately powered (power ≥ 80%), when power is computed using UWLS_{+3} as the estimate of the population mean correlation. These two studies are at the top of the funnel (Figure 2) and have correlations = {−0.06, 0}; thus, the most reliable and informative studies in this area of research find no evidence of a positive correlation between perceived earning potential and women's romantic inclinations. Considerations of power alone make the random-effects estimate dubious.^{29} Greater resilience to PBS is perhaps HS and UWLS_{+3}'s most important property in application. We turn next to simulations that show this to be a general property of both UWLS_{+3} and HS.
 
-FIGURE 2. A plot of the earnings-romance correlations, r, for women against their precision, 1/$S_1$, on the vertical axis. Source: Eastwick et al.^{33}
+FIGURE 2. A plot of the earnings-romance correlations, r, for women against their precision, 1/$S_1$, on the vertical axis.
+Source: Eastwick et al.^{33}
 
 ## 4. Simulations
 

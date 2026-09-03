@@ -1,27 +1,15 @@
 {
-  "_why": "Paragraph boundaries tools/audit_continuity.py cannot call, opened against the source PDF and kept. Keeping the screen at zero is what makes a NEW cut sentence stand out. Every entry says what the source page actually prints -- none is here because the rule was inconvenient.",
-  "_key": "<project>:<sha1 of the boundary text>, so an entry survives edits elsewhere in the transcript and expires when this paragraph itself changes. A key the screen no longer produces is reported STALE rather than ignored.",
-
-  "cbequity:a8eaac14db": "Table 1 and Table 2 both carry a two-part note: the abbreviation key ends '... used as an instrument for the standard error', and the significance legend is printed under it as its own line. cbequity.pdf p7 has exactly that, in that order. The asterisks are the paper's own.",
-  "cbequity:aa39bc468b": "The other side of the same Table 1 note: the significance legend ends the note, and 'In the second column, we add study fixed effects ...' is the body resuming after the table. Nothing is cut.",
-  "cbequity:2160ef9998": "The same boundary under Table 2, resuming at 'In Table 2, we repeat the analysis ...'.",
-
-  "conventional_wisdom:ba11f03ba0": "Two questions from the survey instrument, each its own bullet on conventional_wisdom.pdf p5. The first ends '[YES/NO]', which is where the question ends; the second is a separate question, not its continuation.",
-
-  "correlations:95a000e7e0": "The paragraph ends on a full stop at '... its standard error, CI, and test statistics.' It is flagged only because the bracket count does not balance, and the unclosed bracket is the paper's own: correlations.pdf p5 prints '(i.e., u_j =~ IID(0, sigma^2),' and never closes the outer '(i.e.,'. Not our defect and not ours to close.",
-
-  "crisis_ews:4f27347ed0": "The note under the crisis-quarters figure on crisis_ews.pdf p13 ends '(iii) at least two sources (country experts included)' with no full stop. Source-faithful; adding one would be inventing punctuation.",
-  "crisis_ews:950cf20798": "Figure 13's note on crisis_ews.pdf p34 ends on the bare word 'credit' -- the sentence 'Usefulness is reported for both the composite indicator and the single indicator of domestic private credit' is printed unfinished and unpunctuated in the article itself, and 'Alessi and Detken (2011) report ...' is the next body paragraph. Verified against the rendered page.",
-
-  "elb:10cf8621fd": "The middle line of Table 3's three-line note on elb.pdf p15: 'Notes: In billions of local currency ...' / 'Averages over periods of the negative interest rate policy, for Denmark only since 2015/01' / 'Source: National central banks ...'. The middle line carries no full stop in the article either.",
-
-  "eis:111f294e5c": "The online appendix's cover line, 'Online Appendix: Additional results to \"Measuring intertemporal substitution ...\"', followed by its contents list beginning 'Data and do files'. A title, not half a sentence.",
-
-  "esg:51b0aff436": "The sub-caption pair of Figure C.2 -- '(a) Posterior model size and model probabilities  (b) Cumulative posterior model probability' -- printed above the figure's own Notes on esg.pdf p37. Both lines are the paper's, in this order.",
-
-  "exercise:3673878b57": "The APA author note ends on the correspondence address 'f.bartos96@gmail.com' and the ORCID list follows it as a separate block, exactly as exercise.pdf p1 sets it.",
-
-  "hedge:5d8b39dc89": "The epigraph's attribution line, 'Eugene F. Fama' with its footnote marker, standing between the quotation and the opening of the introduction on hedge2.pdf p2. An attribution is not a sentence and does not take a full stop.",
-
-  "price_puzzle:599c18224d": "The reference to Forni and Gambetti (2010) has an opening bracket that is never closed -- '(2010 \"The Dynamic Effects of Monetary Policy: ...\"'. That missing bracket is printed in the published article (price_puzzle2.pdf p29). Reproducing the reference list faithfully means reproducing it."
+ "_key": "<project>:<sha1 of the boundary text>, so an entry survives edits elsewhere in the transcript and expires when this paragraph itself changes. A key the screen no longer produces is reported STALE rather than ignored.",
+ "_why": "Paragraph boundaries tools/audit_continuity.py cannot call, opened against the source PDF and kept. Keeping the screen at zero is what makes a NEW cut sentence stand out. Every entry says what the source page actually prints -- none is here because the rule was inconvenient.",
+ "cbequity:2160ef9998": "The same boundary under Table 2, resuming at 'In Table 2, we repeat the analysis ...'.",
+ "cbequity:a8eaac14db": "Table 1 and Table 2 both carry a two-part note: the abbreviation key ends '... used as an instrument for the standard error', and the significance legend is printed under it as its own line. cbequity.pdf p7 has exactly that, in that order. The asterisks are the paper's own.",
+ "cbequity:aa39bc468b": "The other side of the same Table 1 note: the significance legend ends the note, and 'In the second column, we add study fixed effects ...' is the body resuming after the table. Nothing is cut.",
+ "conventional_wisdom:ba11f03ba0": "Two questions from the survey instrument, each its own bullet on conventional_wisdom.pdf p5. The first ends '[YES/NO]', which is where the question ends; the second is a separate question, not its continuation.",
+ "correlations:95a000e7e0": "The paragraph ends on a full stop at '... its standard error, CI, and test statistics.' It is flagged only because the bracket count does not balance, and the unclosed bracket is the paper's own: correlations.pdf p5 prints '(i.e., u_j =~ IID(0, sigma^2),' and never closes the outer '(i.e.,'. Not our defect and not ours to close.",
+ "crisis_ews:4f27347ed0": "The note under the crisis-quarters figure on crisis_ews.pdf p13 ends '(iii) at least two sources (country experts included)' with no full stop. Source-faithful; adding one would be inventing punctuation.",
+ "crisis_ews:950cf20798": "Figure 13's note on crisis_ews.pdf p34 ends on the bare word 'credit' -- the sentence 'Usefulness is reported for both the composite indicator and the single indicator of domestic private credit' is printed unfinished and unpunctuated in the article itself, and 'Alessi and Detken (2011) report ...' is the next body paragraph. Verified against the rendered page.",
+ "eis:111f294e5c": "The online appendix's cover line, 'Online Appendix: Additional results to \"Measuring intertemporal substitution ...\"', followed by its contents list beginning 'Data and do files'. A title, not half a sentence.",
+ "exercise:3673878b57": "The APA author note ends on the correspondence address 'f.bartos96@gmail.com' and the ORCID list follows it as a separate block, exactly as exercise.pdf p1 sets it.",
+ "hedge:5d8b39dc89": "The epigraph's attribution line, 'Eugene F. Fama' with its footnote marker, standing between the quotation and the opening of the introduction on hedge2.pdf p2. An attribution is not a sentence and does not take a full stop.",
+ "price_puzzle:599c18224d": "The reference to Forni and Gambetti (2010) has an opening bracket that is never closed -- '(2010 \"The Dynamic Effects of Monetary Policy: ...\"'. That missing bracket is printed in the published article (price_puzzle2.pdf p29). Reproducing the reference list faithfully means reproducing it."
 }

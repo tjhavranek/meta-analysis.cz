@@ -80,7 +80,6 @@ TABLE 1. Partial Correlation Coefficients for the Relation between Finance and G
 | Simple average *r* | 0.15 (0.095, 0.20) |
 | Fixed-effects average *r* | 0.09 (0.088, 0.095) |
 | Random-effects average *r* | 0.14 (0.129, 0.150) |
-
 Notes: Figures in brackets denote 95% confidence intervals, r stands for partial correlation coefficient.
 
 For each partial correlation coefficient, the corresponding standard error must be computed to employ modern meta-analysis techniques. The standard error can be derived employing the following formula (Fisher, 1954):
@@ -227,6 +226,7 @@ TABLE 3 (continued). Description and Summary Statistics of Regression Variables.
 | Financial crisis | = 1 if dummy variable for some indicators of financial fragility is included in estimation and 0 otherwise | 0.03 | 0.17 |
 | Time dummy | = 1 if time dummies are included in estimation and 0 otherwise | 0.15 | 0.35 |
 
+TABLE 3 (continued). Description and Summary Statistics of Regression Variables.
 | Variable | Description | Mean | Std. Dev. |
 | --- | --- | --- | --- |
 | Publication characteristics |  |  |  |

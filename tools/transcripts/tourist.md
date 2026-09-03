@@ -87,18 +87,22 @@ Monthly data of tourist arrivals and overnight stays from different countries to
 The weekly and monthly data series from Google Trends cover the same period. Google Trends measures how often a particular search-term is entered relative to the total Google search-volume across various countries (regions) and in various languages. Trends adjust search data to make comparisons: each data point is divided by the total number of searches for the geography and time range. The resulting numbers are then scaled to a range of 0 to 100 based on the topic's proportion to all searches on all topics.
 
 ALT 1. A chart of monthly tourist arrivals to Prague from 2010 to 2016 on the left axis, in thousands, with the monthly Google search index on the right axis. Both lines rise across the period and share the same seasonal swing, peaking each summer.
-FIGURE 1. Monthly tourist arrivals to Prague and monthly Google searches for Prague. Source: Author's estimation, Google Trends and Czech Statistical Office. Left side represents the number of tourist, right side represents Google Trends.
+FIGURE 1. Monthly tourist arrivals to Prague and monthly Google searches for Prague.
+Source: Author's estimation, Google Trends and Czech Statistical Office. Left side represents the number of tourist, right side represents Google Trends.
 
 ALT 2. The same chart drawn for monthly overnight stays in Prague against the monthly Google search index, the two series again rising together and moving in step through each year's seasonal peak.
-FIGURE 2. Monthly overnight stays in Prague and monthly Google searches for Prague. Source: Author's estimation, Google Trends and Czech Statistical Office. Left side represents the number of tourist, right side represents Google Trends.
+FIGURE 2. Monthly overnight stays in Prague and monthly Google searches for Prague.
+Source: Author's estimation, Google Trends and Czech Statistical Office. Left side represents the number of tourist, right side represents Google Trends.
 
 Figures 1 and 2 show monthly tourist arrivals and overnight stays and, respectively, monthly Google search results. Visual inspection of the figures indicates a strong correlation between monthly tourist arrivals and overnight stays. Both time series show an upward trend and seasonal variation. Multiple methods are available for time series forecasting based on trends and seasonality. The natural logarithm of year-on-year growth has been used to eliminate both linear trends and seasonal variation.
 
 ALT 3. Monthly tourist arrivals to Prague plotted against the weekly Google search index, the weekly series showing the same seasonal shape at a finer resolution.
-FIGURE 3. Monthly tourist arrivals to Prague and weekly Google searches for Prague. Source: Author's estimation, Google Trends and Czech Statistical Office. Left side represents the number of tourist, right side represents Google Trends.
+FIGURE 3. Monthly tourist arrivals to Prague and weekly Google searches for Prague.
+Source: Author's estimation, Google Trends and Czech Statistical Office. Left side represents the number of tourist, right side represents Google Trends.
 
 ALT 4. Monthly overnight stays in Prague plotted against the weekly Google search index, the two moving together through each year's seasonal peak.
-FIGURE 4. Monthly overnight stays in Prague and weekly Google searches for Prague. Source: Author's estimation, Google Trends and Czech Statistical Office. Left side represents the number of tourist, right side represents Google Trends.
+FIGURE 4. Monthly overnight stays in Prague and weekly Google searches for Prague.
+Source: Author's estimation, Google Trends and Czech Statistical Office. Left side represents the number of tourist, right side represents Google Trends.
 
 Figures 3 and 4 show monthly tourist arrivals and overnight stays and, respectively, weekly Google search results. Both overnight stays and weekly Google search results show an upward trend and seasonal variation, as well. Although a few outliers are observed, an overall close association is clear. These visual assessments provide support for investigating and developing models to analyze whether Google Trends can improve forecasting and prediction of tourist arrivals to Prague.
 
@@ -287,10 +291,12 @@ The most common methods used to determine forecasting accuracy are functions of 
 Figures 5 and 6 show the forecasting evaluations using different MIDAS regressions for tourist arrivals and overnight stays. For tourist arrivals, MIDAS-Almon is the best forecasting model (see Figure 5), whereas MIDAS-Beta is the best forecasting model for overnight stays (see Figure 6).
 
 ALT 5. A chart from 2013 to 2016 of the actual year-on-year change in tourist arrivals, DTOURIST, shown as a swinging blue line, with the forecasts of the MIDAS-Beta, MIDAS-Exp and MIDAS-Almon models, the monthly-Google and without-Google models, the simple mean and the mean square error drawn over it. The forecast lines stay in a narrow band while the actual series swings far above and below it.
-FIGURE 5. Forecasting tourist arrivals in Prague by MIDAS estimates: Jan, 2012 - Dec, 2016. Notes: Lines represent the forecasting results from different models. DTOURIST represents the change in tourist arrivals. The most accurate forecasting method is MIDAS-Almon.
+FIGURE 5. Forecasting tourist arrivals in Prague by MIDAS estimates: Jan, 2012 - Dec, 2016.
+Notes: Lines represent the forecasting results from different models. DTOURIST represents the change in tourist arrivals. The most accurate forecasting method is MIDAS-Almon.
 
 ALT 6. The same chart drawn for overnight stays: the actual year-on-year change, DOVERNIGHT, swings widely while the seven forecast lines stay in a narrow band.
-FIGURE 6. Forecasting overnight stays in Prague by MIDAS estimates: Jan, 2012 - Dec, 2016. Notes: Lines represent the forecasting results from different models. DTOURIST represents the change in tourist arrivals. The most accurate forecasting method is MIDAS-Almon.
+FIGURE 6. Forecasting overnight stays in Prague by MIDAS estimates: Jan, 2012 - Dec, 2016.
+Notes: Lines represent the forecasting results from different models. DTOURIST represents the change in tourist arrivals. The most accurate forecasting method is MIDAS-Almon.
 
 The values of the Diebold-Mariano test are based on the absolute values of the out-of-sample period of July 2014 - December 2016. The positive significant values indicate that the MIDAS forecasting models are statistically more accurate than the competing models without Google Trends. The null hypothesis is that both forecasts have the same accuracy. Model 2 (Google Trends model) is more accurate than the baseline model (Model without Google trends). All models reject the null hypothesis; therefore, the Google Trends models are more accurate than the baseline model (Table 8).
 

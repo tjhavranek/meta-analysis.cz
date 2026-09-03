@@ -246,7 +246,6 @@ TABLE 3. Explaining Heterogeneity in the Estimates of the Income Elasticity of W
 | Published | –0.102 | 0.089 | 0.650 | –0.172 | 0.054 | 0.001 |
 | Studies | 62 | 62 |  |  |  |  |
 | Observations | 307 | 307 |  |  |  |  |
-
 Note: The frequentist check includes the variables recognized by Bayesian Model Averaging (BMA) as comprising the best model. Standard errors are clustered at the study level. All variables are described in Appendix Table A3. Additional details on the BMA exercise can be found in the online appendix at meta-analysis.cz/water. NA, not available; OLS, ordinary least squares; PIP, posterior inclusion probability; SD, standard deviation; SE, standard error.
 
 #### Price specification and tariff structure.
@@ -274,7 +273,6 @@ TABLE 4. Illustrative Examples of the Implied Effect of Different Configurations
 | Nauges and Thomas (2003) | 0.410 | 0.086 | 0.734 |
 | Olmstead (2009) | 0.099 | –0.226 | 0.423 |
 | Olmstead, Hanemann, and Stavins (2007) | 0.081 | –0.243 | 0.405 |
-
 Note: The table shows estimates of income elasticities implied by our Bayesian model averaging exercise for several prominent studies in the literature with different configurations of study design (see the main text for more details). The confidence intervals are approximate and constructed using the standard errors estimated by ordinary least squares.
 
 We leave the rest of the variables at their sample means but distinguish between the average pricing scheme and the marginal pricing scheme, as there is no clear preference for either of these schemes in the literature. The best-practice estimation implies an elasticity of 0.082 with a 95% confidence interval of (−0.242, 0.407) for the average pricing scheme and an elasticity of 0.169 with a 95% confidence interval of (−0.155, 0.493) for the marginal pricing scheme. The confidence intervals are approximate and constructed using the standard errors estimated by OLS. Although the confidence intervals are wide, the plausible changes in the definition of the best practice (such as setting *Lagged variable* at the sample minimum or *Discrete-continuous* model choice at the sample maximum) changes the best-practice estimates at the third decimal place only. We conclude that the income elasticity of water demand is on average 0.15 or less and does not exceed the value of 0.5 with 95% probability, meaning that it is highly unlikely that a one-percentage-point increase in income would lead to more than a 0.5% increase in the demand for water.

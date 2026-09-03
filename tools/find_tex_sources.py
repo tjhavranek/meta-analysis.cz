@@ -29,6 +29,20 @@ and University Enrollment" is genuinely the paper the site publishes as "Publica
 in Measuring the Impact of Tuition on Enrollment". Whoever uses the manifest has to settle
 those by hand.
 
+Where else to look
+------------------
+The most recent papers are not written on a local disk at all: their sources live in
+GitHub repositories, several of them a co-author's rather than the site owner's. Point
+--search at a directory of checked-out or downloaded repositories to bring those in. That
+is how /outliers/ was matched at all, and how /inflation/ and /migrant/ were moved off
+much worse local copies (an archived temp directory, and a superseded submission).
+
+A second pass over every file NO paper had claimed, scored the same way, found nothing for
+the sixteen still unmatched: each one's best remaining candidate had a title overlap of
+zero, i.e. the score was measuring shared meta-analysis boilerplate and not identity.
+Those papers are mostly 2012-2020 and predate the repositories. Searching harder on this
+machine will not find them; they are on Overleaf or a co-author's disk.
+
 And the standing caveat for everything downstream: a source found this way is very often an
 EARLIER DRAFT than the published article the site transcribes. It is evidence about FORM
 (what is a formula, what is emphasised, what is a footnote) and never authority about

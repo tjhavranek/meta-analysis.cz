@@ -49,11 +49,9 @@ Apparently, current interest rates have not surpassed their lower bound. Neverth
 Money market rates are the second important indicator. It can be shown that money markets have continued to work smoothly, and there is no indication that the pass-through has been significantly weakened, as can be seen in Fig. 2 where three-month money market rates are almost perfectly correlated with the movement of monetary policy rates and followed policy rates into negative territory.
 
 FIGURE 1. Currency in Circulation (year-on-year changes in %)
-
 Notes: Red lines represent the introduction of negative interest rates. Source: National central banks.
 
 FIGURE 2. Policy Rates and Money Market Rates (in %)
-
 Notes: Red lines represent the introduction of negative interest rates. MM = money market. Source: National central banks.
 
 The last point of view considers commercial lending and deposit rates, which determine bank profitability. Jobst and Lin (2016) find that lending rates for both the corporate and retail segments were lowered. Deposit rates decreased to some extent as well, allowing for preservation of margins and increasing credit growth. Negative deposit rates, however, are usually charged only to large institutional depositors and are not passed through to smaller retail depositors, slackening the transmission of negative interest rates. Similarly, Witmer and Yang (2016) assert that with respect to this reluctance to pass negative rates to retail depositors and decreasing bank profitability, the bank lending channel of transmission may prove to be less powerful. Given this restricted transmission, there are indications that the effect of a one-unit decrease in interest rates in negative territory is likely to be smaller than the effect of the same one-unit decrease in rates in positive territory (e.g. Bean, 2013; Jackson, 2015). The pass-through from financial market rates to rates charged by banks is an important aspect of monetary policy transmission and was examined by Havranek et al. (2016) for Czech loans and deposits products. They find that since the financial crisis the pass-through has been considerably weaker than before (Havranek et al., 2016). Also, Havranek and Rusnak (2013) assert monetary policy transmission is slower for countries with greater financial development as some financial innovations may serve as protection against monetary policy shocks.
@@ -75,7 +73,6 @@ At first, Czech government bonds, which financial institutions can store excessi
 2. Another reason why negative rates were accepted might be a still positive interest rate differential for investors who funded their trades in currencies with negative interest rates.
 
 FIGURE 3. Yields on Baskets of Government Bonds with Different Average Residual Maturities
-
 Source: Czech National Bank.
 
 #### FX Swap-Implied Interest Rate
@@ -83,7 +80,6 @@ Source: Czech National Bank.
 Fig. 4 shows that both the three- and six-month forward points for both currency pairs – EUR/CZK and USD/CZK – had been already negative for a relatively long time. As from the beginning of the CNB’s FX interventions, the forward points were almost constantly negative. The forward exchange rate can be calculated by dividing the forward points by 1000 and adding the result to the spot rate. Negative forward points thus imply that the forward exchange rate is below the spot rate, i.e. the implied swap rate (defined as the forward rate minus the spot rate) is negative. In normal times, lower-interest-rate currencies tend to trade at a forward foreign exchange rate premium (= positive forward points) in relation to another currency offering higher interest rates according to the covered interest rate parity (CIP), so negative swap rates as such are not an example of the phenomenon of negative rates in an economy. CIP, however, appeared not to hold at every moment, especially not in crisis periods (e.g., negative forward points for USD/CZK and a simultaneously higher U.S. interest rate). Still, a negative implied swap rate means that a nonresident who bought CZK (but did not want to invest in government bonds with negative yields) had to ‘pay’ to deposit CZK for a given period.
 
 FIGURE 4. Forward Points EUR/CZK with Three- and Six-Month Maturities
-
 Source: Czech National Bank.
 
 #### Selective Fees of Banks in the Czech Market
@@ -157,10 +153,7 @@ What may, however, provide a more accurate estimate of the level of currency sto
 5. Source: https://www.bullionvault.com/cost-calculator.do. Online bailment service providers are an alternative to traditional full-service bailment companies and safe deposit boxes in vaults.
 
 FIGURE 5. Largest Denominations in Real Terms (PPP) in U.S. Dollars
-
-Notes: As of December 2016. CHE = Switzerland, CZE = Czech Republic, ROU = Romania, HRV = Croatia, POL = Poland, HUN = Hungary, BGR = Bulgaria, DNK = Denmark, SWE = Sweden, NOR = Norway, JPN = Japan, CAN = Canada, GBR = United Kingdom, ISL = Iceland.
-
-Source: OECD, author’s calculations.
+Notes: As of December 2016. CHE = Switzerland, CZE = Czech Republic, ROU = Romania, HRV = Croatia, POL = Poland, HUN = Hungary, BGR = Bulgaria, DNK = Denmark, SWE = Sweden, NOR = Norway, JPN = Japan, CAN = Canada, GBR = United Kingdom, ISL = Iceland. Source: OECD, author’s calculations.
 
 The next way of approximating storage costs employs precious metal-backed ETFs (physically backed ETFs), which are liquid financial instruments for investing in precious metals stored in vaults. Table 2 provides an overview of the fees for physically backed ETFs traded on the European stock exchanges (London Stock Exchange, Deutsche Borse, Borsa Italiana) with vaults located in Europe (since ETFs can be traded globally and there are no ETFs traded on the Prague Stock Exchange with vaults located in the Czech Republic). Following Witmer and Yang (2016), we can assume that fund-management fees and expenses make up a small proportion of the total fees based on the fact that the overall fees for many equity ETFs are low (between 5 and 10 basis points). Therefore, it appears that the excess fee for physically backed commodity funds in comparison with non-physically backed funds is a result of the costs of storing and insuring bullion in vaults. This can be then regarded as an approximation of the costs of storing cash, and it is indeed again similar to the previous values of publicly available costs of storing precious metals: the average fee for ETFs is approximately 0.4%, and subtracting management fees 0.05–0.10% yields storage and insurance costs of 0.30-0.35%.
 
@@ -442,14 +435,10 @@ Zha T (1999): Block Recursion and Structural Vector Autoregressions. Journal of 
 ### A1 | VAR analysis
 
 FIGURE A1. Plots of Model Variables - Czech Variables
-
 Notes: GDP – GDP per capita, HICP – harmonized index of consumer prices, IR – one-month PRIBOR rate, CZEUR – CZK/EUR exchange rate. GDP, HICP, CZEUR in logarithms, IR in levels. Source: Czech National Bank, author’s calculations.
 
 FIGURE A2. Plots of Model Variables - Euro Area Variables
-
-Notes: GDP_EU – euro area GDP per capita, HICP_EU – euro area harmonized index of consumer prices, IR_EU – euro area short-term money market rate. GDP_EU, HICP_EU in logarithms, IR_EU in levels.
-
-Source: Eurostat Database, author’s calculations.
+Notes: GDP_EU – euro area GDP per capita, HICP_EU – euro area harmonized index of consumer prices, IR_EU – euro area short-term money market rate. GDP_EU, HICP_EU in logarithms, IR_EU in levels. Source: Eurostat Database, author’s calculations.
 
 ### A2 | TVAR analysis
 
@@ -484,5 +473,4 @@ Notes: Bootstrap based p-values reported. TVAR – threshold vector autoregressi
 FIGURE A3. Grid Search and Threshold Value in the TVAR Model
 
 FIGURE A4. Cumulative GIRF of the TVAR Model
-
 Notes: Dashed line – high regime, solid line – low regime. GIRF – generalized impulse response function.

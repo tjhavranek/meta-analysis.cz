@@ -261,31 +261,24 @@ Wisenöcker, A. S., Helm, C., Große, C. S., Hübner, N. and Zitzmann, S.: 2025,
 ## 6 | Figures
 
 FIGURE 1. Effect size estimates by country, ordered by median.
-
 Notes: Boxes show the interquartile range of effect-size estimates within each country; whiskers extend to 1.5 × IQR, and dots denote outliers. The vertical dotted line marks the overall mean effect. Countries at the top of the figure, including Australia, Sweden, and Denmark, report near-zero or slightly positive effects, while Mexico and South Africa show the largest negative estimates. The three most represented countries—the United States, the United Kingdom, and the Netherlands—cluster close to the overall mean, though with substantial within-country dispersion.
 
 FIGURE 2. Distribution of effect size estimates by subject area and school level.
-
 Note: Panel (a) shows the distribution of effect sizes for mathematics ($N = 128$) and reading ($N = 161$), and panel (b) for primary ($N = 196$) and secondary education ($N = 95$). Each panel overlays histograms and kernel density curves. The solid vertical line marks zero (no deficit); the dotted vertical line marks the overall pooled mean ($d = -0.126$). Learning deficits in mathematics tend to be larger on average than in reading (unweighted means of −0.167 vs. −0.095), whereas primary and secondary education show similar distributions (−0.122 vs. −0.135). Two estimates covering a composite of mathematics and reading are excluded from panel (a).
 
 FIGURE 3. Effect size estimates by grade, with a loess smoother and 95% confidence band.
-
 Note: Individual estimates are shown as jittered points. The dashed line marks zero; the dotted line marks the overall mean (−0.126). Effects are broadly stable across grades 1–9, consistent with the absence of a meaningful school-level gradient visible in panel (b) of Figure 2. The apparent decline in grades 11–13 should be interpreted cautiously: these grades are represented by very few estimates (two at grade 11, two at grade 13), and the wide confidence band reflects this uncertainty.
 
 FIGURE 4. Conventional funnel plot
-
 Notes: The figure shows a conventional funnel plot with effect sizes on the horizontal axis and their estimated standard errors on the vertical axis. The dotted vertical line marks the pooled mean effect. The dashed vertical line marks zero.
 
 FIGURE 5. Distribution of effect size estimates by statistical significance
-
 Notes: The figure shows the distribution of effect size estimates (Cohen’s *d*), separately for statistically significant ($p < 0.05$, blue) and non-significant estimates (red). The dotted vertical line marks the overall mean effect size. The shaded band indicates the interval defined by ±1.96× the mean standard error around zero.
 
 FIGURE 6. Significance funnel plot
-
 Notes: The figure displays a significance funnel plot following Mathur and VanderWeele (2020). Orange points are affirmative estimates; gray points are non-affirmative. The gray diamond is the fixed-effects mean among non-affirmative estimates (0.021), corresponding to the MAN worst-case benchmark reported in Panel A of Table 4. The black diamond is the precision-weighted pooled mean across all 291 estimates ($\hat{\mu}_{IVW} = -0.245$); it lies more negative than the Panel A equal-weighted mean of −0.126 because inverse-variance weighting gives disproportionate influence to large, high-precision studies.
 
 FIGURE 7. Distribution of z-scores.
-
 Note: The figure shows the distribution of z-scores, $y_i/se_i$, in the original dataset. The dashed vertical lines mark $z = -1.96$ and $z = +1.96$, the conventional 5% two-sided significance thresholds.
 
 FIGURE 8. Comparison between the distribution of the z-scores in absolute values (a), (b), and in logs of absolute values (c).
@@ -297,11 +290,9 @@ FIGURE 8. Comparison between the distribution of the z-scores in absolute values
 (c) The figure shows the distribution of log absolute z-scores, $ln(abs(y_i/se_i))$. The dashed vertical line marks $z = 1.96$, the conventional 5% two-sided significance threshold.
 
 FIGURE 9. DFBETAS influence diagnostics for intercept.
-
 Notes: The figure displays DFBETAS values for all 291 estimates, measuring the change in the pooled random-effects estimate when each observation is omitted in turn. The horizontal lines mark the sample-size-adjusted threshold $\pm 2/\sqrt{n} = \pm 0.117$. Eleven estimates exceed the threshold; excluding them moves the pooled estimate from −0.124 to −0.116.
 
 FIGURE 10. Diagnostic q-q plot
-
 Notes: The figure displays the RTMA diagnostic Q-Q plot, comparing the fitted CDF of published non-affirmative estimates (horizontal axis) with their empirical CDF (vertical axis). Points lying on the 45-degree line indicate good model fit. Deviations in the upper tail suggest the truncated normal model fits the lower quantiles well but captures the upper tail less accurately, consistent with the mechanical distortion introduced by standardizing estimates as Cohen's *d*.
 
 ## 7 | Tables
@@ -414,13 +405,17 @@ The pre-analysis plan describes the data synthesis strategy but does not specify
 
 ### A.3 Figures
 
-FIGURE A1. Publication bias: distribution of $z$-scores. Notes: The figure displays a visual test for publication bias based on the distribution of the $z$-scores. (a) shows the original, and (b) is the reproduction. There is no difference between the two.
+FIGURE A1. Publication bias: distribution of $z$-scores.
+Notes: The figure displays a visual test for publication bias based on the distribution of the $z$-scores. (a) shows the original, and (b) is the reproduction. There is no difference between the two.
 
-FIGURE A2. Forest plot. Notes: The figure displays a forest plot of 42 included studies. The effects are expressed as Cohen's *d* weighted by the inverse of variance using the random effects model. (a) shows the original, and (b) is the reproduction. We reproduced the Blainey and Hannay 2021a effect size as −0.06, while the original article reports −0.05. The confidence intervals are the same, possibly due to rounding.
+FIGURE A2. Forest plot.
+Notes: The figure displays a forest plot of 42 included studies. The effects are expressed as Cohen's *d* weighted by the inverse of variance using the random effects model. (a) shows the original, and (b) is the reproduction. We reproduced the Blainey and Hannay 2021a effect size as −0.06, while the original article reports −0.05. The confidence intervals are the same, possibly due to rounding.
 
-FIGURE A3. Estimates of COVID-19 learning deficits in time. Notes: The figure displays estimates of COVID-19 learning deficit. The horizontal axis shows the time of the estimate, and the vertical axis presents the estimates expressed as Cohen's *d*. Countries are in color scale. The slope coefficient of a trend line estimated using OLS with standard errors clustered at the study level is not statistically different from 0. (a) shows the original, and (b) is the reproduction. See Table A2 for details.
+FIGURE A3. Estimates of COVID-19 learning deficits in time.
+Notes: The figure displays estimates of COVID-19 learning deficit. The horizontal axis shows the time of the estimate, and the vertical axis presents the estimates expressed as Cohen's *d*. Countries are in color scale. The slope coefficient of a trend line estimated using OLS with standard errors clustered at the study level is not statistically different from 0. (a) shows the original, and (b) is the reproduction. See Table A2 for details.
 
-FIGURE A4. Variation in estimates of COVID-19 learning deficits. Notes: The figure displays variation in estimates of COVID-19 learning deficit for school subjects (mathematics and reading), level of education, and socio-economic inequality. (a) shows the original, and (b) is the reproduction. No differences between the two. See Table A3 for details.
+FIGURE A4. Variation in estimates of COVID-19 learning deficits.
+Notes: The figure displays variation in estimates of COVID-19 learning deficit for school subjects (mathematics and reading), level of education, and socio-economic inequality. (a) shows the original, and (b) is the reproduction. No differences between the two. See Table A3 for details.
 
 ### A.4 Tables
 
@@ -493,9 +488,11 @@ We also attempted a p-curve analysis following Simonsohn et al. (2014), which te
 
 ### C.1 Figures
 
-FIGURE C1. Caliper test for excess bunching around the significance threshold $z = -1.96$. Notes: Shaded regions indicate the ±0.10 caliper window. Red bars denote estimates inside the threshold (significant); blue bars denote estimates outside (non-significant).
+FIGURE C1. Caliper test for excess bunching around the significance threshold $z = -1.96$.
+Notes: Shaded regions indicate the ±0.10 caliper window. Red bars denote estimates inside the threshold (significant); blue bars denote estimates outside (non-significant).
 
-FIGURE C2. *P*-curve distribution. Notes: The grey bar denotes *p*-values that underflow numerically to zero ($n = 61$). The dominance of the [.00, .01) bin reflects the extremely large sample sizes in the literature rather than the evidential strength of individual studies.
+FIGURE C2. *P*-curve distribution.
+Notes: The grey bar denotes *p*-values that underflow numerically to zero ($n = 61$). The dominance of the [.00, .01) bin reflects the extremely large sample sizes in the literature rather than the evidential strength of individual studies.
 
 ### C.2 Tables
 

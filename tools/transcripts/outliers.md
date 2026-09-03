@@ -68,7 +68,6 @@ TABLE 1. Descriptive Statistics by Behavioral Science Field
 | Exercise | 79 | 15 (12, 20.5) | 1,540 | SMD (as $d$) | 0.285 | 39.2% |
 | Psychotherapy | 20 | 127 (87, 279) | 4,395 | Hedges $g$ / SMD (as $d$) | 0.494 | 50.0% |
 | **Overall** | **358** | **21 (14, 40)** | **16,664** | **mixed (see per-field)** | **0.400** | **55.6%** |
-
 Notes: $k$ = number of estimates in a meta-analysis; fields are ordered by number of meta-analyses. Σ$k$ counts total estimates analyzed. Median $\lvert d\rvert$ is the median absolute pooled effect under random-effects (RE) with no outlier or influence handling (i.e., the 'do-nothing' baseline). $I^2 > 75\%$ is the share of meta-analyses with high heterogeneity.
 
 ### 3.1 | Treatments
