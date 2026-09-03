@@ -148,7 +148,7 @@ To assess and accommodate this pattern more formally, we perform meta-regression
 
 $$ \hat{\theta}_{ij} = \beta_0 + \beta_1 \cdot SE_{ij} + \epsilon_{ij}, $$ (3)
 
-where $\hat{\theta}_{ij}$ is the i-th reported coefficient (the negative inverse elasticity) from study j. In this specification, the coefficient on SE, $\beta_1$, measures publication bias, while the intercept, $\beta_0$, represents the "true" effect beyond bias. To address heteroskedasticity, we estimate Equation 3 using Weighted Least Squares (WLS) with inverse-variance weights ($w_{ij} = 1/SE_{ij}^2$). This is numerically equivalent to regressing the *t*-statistic on precision ($1/SE_{ij}$):
+where $\hat{\theta}_{ij}$ is the $i$-th reported coefficient (the negative inverse elasticity) from study $j$. In this specification, the coefficient on SE, $\beta_1$, measures publication bias, while the intercept, $\beta_0$, represents the "true" effect beyond bias. To address heteroskedasticity, we estimate Equation 3 using Weighted Least Squares (WLS) with inverse-variance weights ($w_{ij} = 1/SE_{ij}^2$). This is numerically equivalent to regressing the *t*-statistic on precision ($1/SE_{ij}$):
 
 $$ t_{ij} = \beta_1 + \beta_0(1/SE_{ij}) + \nu_{ij}, $$ (4)
 
@@ -205,7 +205,8 @@ TABLE 3. Characteristics used to explain heterogeneity
 | --- | --- |
 | Data characteristics | Number of cells, Annual frequency data |
 | Structural variation | All workers, High level of experience, Low level of experience, High level of education, Low level of education, Top 6 languages, Male, Female, Immigrant population |
-| Estimation characteristics | Log of mean wages, Annual wage, Monthly wage, Daily wage, Hourly wage, National, OLS Time fixed effects, Person fixed effects, Skill fixed effects |
+| Estimation characteristics | Log of mean wages, Annual wage, Monthly wage, Daily wage, Hourly wage, National, OLS |
+|  | Time fixed effects, Person fixed effects, Skill fixed effects |
 | Publication characteristics | Impact factor, Citations, Published, Top 5 journals, Publication year |
 Notes: Details on each variable, including definition and summary statistics, are available in Table B1.
 
@@ -255,9 +256,7 @@ TABLE 4. Why do estimates of the elasticity of substitution differ?
 | Observations | | 1,087 | | | 1,087 | |
 Notes: PIP = posterior inclusion probability. For the interpretation of the posterior inclusion probability, we follow the guidelines offered by Kass & Raftery (1995) to be able to evaluate the importance of each explanatory variable: $0.5 < PIP < 0.75$: weak effect, $0.75 < PIP < 0.95$: substantial effect, $0.95 < PIP < 0.99$: strong effect, $0.99 < PIP$: decisive effect. SD = standard deviation. The table shows unconditional moments for BMA. *Number of cells*, *citations*, and *publication year* enter in logarithms. Detailed description of all variables is available in Table B1.
 
-First, we clarify how to interpret the dependent variable used in our analysis. All estimates in our dataset are coded as the negative inverse of the elasticity of substitution ($\theta = -1/\sigma$). As a result, a more negative value of $\theta$ indicates a lower elasticity ($\sigma$), meaning weaker substitutability between native and immigrant labor. Conversely, values closer to zero (less negative) imply higher elasticity and thus greater substitutability.
-
-Several variables emerge as robust predictors of the reported coefficients.
+First, we clarify how to interpret the dependent variable used in our analysis. All estimates in our dataset are coded as the negative inverse of the elasticity of substitution ($\theta = -1/\sigma$). As a result, a more negative value of $\theta$ indicates a lower elasticity ($\sigma$), meaning weaker substitutability between native and immigrant labor. Conversely, values closer to zero (less negative) imply higher elasticity and thus greater substitutability. Several variables emerge as robust predictors of the reported coefficients.
 
 Larger standard errors are consistently associated with more negative coefficients. Following Stanley & Doucouliagos (2014), this correlation suggests that as precision decreases, reported results tend to be more extreme. The correlation between the coefficient and the inverse square root of sample size is negligible in our data ($r = 0.016$), whereas the correlation with the standard error is notably stronger ($r = -0.24$). This suggests that the asymmetry is not driven simply by smaller sample sizes but is more consistent with selective reporting among less precise estimates.
 

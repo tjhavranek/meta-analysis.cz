@@ -14,7 +14,7 @@ Matej Opatrny^{a}  Martin Opatrny^{b}  Tomas Havranek^{a, c,d}  Zuzana Irsova^{a
 
 June 7, 2026
 
-An online appendix with data, code, and extraction prompts is available at `meta-analysis.cz/inflation`. Corresponding author: Matej Opatrny, `matej.opatrny@fsv.cuni.cz`. The authors note that the paper represents their own views and not necessarily those of any affiliated institution. All remaining errors are ours.
+^{*} An online appendix with data, code, and extraction prompts is available at `meta-analysis.cz/inflation`. Corresponding author: Matej Opatrny, `matej.opatrny@fsv.cuni.cz`. The authors note that the paper represents their own views and not necessarily those of any affiliated institution. All remaining errors are ours.
 
 ## ABSTRACT
 
