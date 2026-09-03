@@ -98,13 +98,13 @@ Unlike most papers in the literature on tax elasticities, we make use of quarter
 
 $$ \log\mathrm{revenue}^i_t = \beta^i_0 + \beta^i_1 \log\mathrm{base}^i_t + \sum_{l=-j}^{j} \gamma^i_l \Delta\log\mathrm{base}^i_{t+l} + \delta^i \mathrm{reform}_t + \sum_{k=1}^{3} \varphi^i_k \mathrm{quarter}_k (1 + \phi^i \mathrm{break}^i_t) + \varepsilon^i_t, $$ (1)
 
-where log revenueti stands for the logarithm of tax revenue in period t for category i (wage tax, value added tax, profit tax, or social security contributions), β0i is a category-specific intercept, log baseti is the logarithm of the corresponding tax base in period t for category i, β1i is the long-run elasticity j      i           i of tax revenue with respect to the corresponding tax base, ∑l=−     j γl ∆ log baset+l represents leads and lags of the change in the logarithm of the tax base (because of data limitations, we only use one lead and lag in our baseline specifications; we also experimented with other lag and lead lengths, but the results did not change qualitatively), reformt denotes a dummy variable that equals one for all time periods starting with the first quarter of 2008, quarterk stands for quarterly dummies, and breakti represents a dummy variable that equals one for all time periods starting with the first quarter of 2004 for value added tax.
+where $\log\mathrm{revenue}^i_t$ stands for the logarithm of tax revenue in period $t$ for category $i$ (wage tax, value added tax, profit tax, or social security contributions), $\beta^i_0$ is a category-specific intercept, $\log\mathrm{base}^i_t$ is the logarithm of the corresponding tax base in period $t$ for category $i$, $\beta^i_1$ is the long-run elasticity of tax revenue with respect to the corresponding tax base, $\sum_{l=-j}^{j} \gamma^i_l \Delta\log\mathrm{base}^i_{t+l}$ represents leads and lags of the change in the logarithm of the tax base (because of data limitations, we only use one lead and lag in our baseline specifications; we also experimented with other lag and lead lengths, but the results did not change qualitatively), reformt denotes a dummy variable that equals one for all time periods starting with the first quarter of 2008, quarterk stands for quarterly dummies, and breakti represents a dummy variable that equals one for all time periods starting with the first quarter of 2004 for value added tax.
 
 To estimate the short-run elasticity we move to the second stage of our error-correction-model approach. In the specification corresponding to the short run we evaluate the relationship between changes in tax revenue and changes in the corresponding tax base while taking into account the adjustment towards the long-run equilibrium estimated in equation (1). To be specific, we include the lagged value of the estimated residuals from the long-run equation, which suggests whether tax revenue is below or above its equilibrium level. The regression coefficient that we get from the short-run equation on the lagged residual from the long-run equation gives us information about the speed of adjustment of tax revenue towards equilibrium: it is the percentage of the gap between the actual and equilibrium value that is closed each quarter. We also include a lagged value of the change in tax revenue to account for the potential persistence of shocks to tax collection. The final specification of our short-run regression reads
 
 $$ \Delta\log\mathrm{revenue}^i_t = \alpha^i_0 + \alpha^i_1 \Delta\log\mathrm{base}^i_t + \alpha^i_2 \Delta\log\mathrm{revenue}_{t-1} + \alpha^i_3 \hat{\varepsilon}^i_{t-1} + \lambda^i \mathrm{reform}_t + \sum_{k=1}^{3} \eta^i_k \mathrm{quarter}_k (1 + \theta^i \mathrm{break}^i_t) + u^i_t, $$ (2)
 
-where ∆ log revenueti = log revenueti − log revenuet−1 i   stands for the change in the logarithm of the tax revenue between periods t − 1 and t for category i, α0i is a category-specific intercept, ∆ log baseti is the change in the logarithm of the corresponding tax base in period t for category i, α1i is the short-run elasticity of tax revenue with respect to the corresponding tax base, ε̂t−1 i    represents a lagged i residual from the cointegrating relationship (1), α3 measures the speed of adjustment, reformt denotes a dummy variable that equals one for all time periods starting with the first quarter of 2008, quarterk stands for quarterly dummies, and breakti represents a dummy variable that equals one for all time periods starting with the first quarter of 2004 for value added tax.
+where $\Delta\log\mathrm{revenue}^i_t = \log\mathrm{revenue}^i_t - \log\mathrm{revenue}^i_{t-1}$ stands for the change in the logarithm of the tax revenue between periods $t-1$ and $t$ for category $i$, $\alpha^i_0$ is a category-specific intercept, $\Delta\log\mathrm{base}^i_t$ is the change in the logarithm of the corresponding tax base in period $t$ for category $i$, $\alpha^i_1$ is the short-run elasticity of tax revenue with respect to the corresponding tax base, $\hat{\varepsilon}^i_{t-1}$ represents a lagged residual from the cointegrating relationship (1), $\alpha^i_3$ measures the speed of adjustment, reformt denotes a dummy variable that equals one for all time periods starting with the first quarter of 2008, quarterk stands for quarterly dummies, and breakti represents a dummy variable that equals one for all time periods starting with the first quarter of 2004 for value added tax.
 
 In all of our long-run estimations we use Newey-West standard errors (Newey and West, 1987), which are robust to autocorrelation and heteroscedasticity. In the second stage we also test for potential remaining autocorrelation, but do not find any in our baseline regressions. An issue that we do not address fully in this paper is the potential endogeneity of tax bases with respect to tax revenue in the long-run equation; unfortunately, we find it unfeasible to obtain valid instruments for the tax bases. We tried to address the endogeneity problem indirectly by estimating the long-run specification with simple OLS but lagged (instead of contemporaneous) values of the tax base; the resulting elasticity is close to the one presented in the main results of the paper. The dynamic OLS specification also partially takes the potential endogeneity into account (Masih and Masih, 1999). Finally, using our long- and short-run estimates, we construct impulse-response functions of tax revenue to shocks to the tax base. The bounds of the 95% confidence interval of the impulse response are bootstrapped using 10,000 iterations following the approach of Koester and Priesmeier (2012).
 
@@ -119,30 +119,30 @@ TABLE 1. The Adjustment of Tax Revenue to Shocks to the Tax Base (Baseline Estim
 |  | Wage tax | Valued added tax | Profit tax | Social security |
 |---|---|---|---|---|
 | Long run |  |  |  |  |
-| base (LR elasticity) | 1.445\*\*\* | 0.867\*\*\* | 1.687\*\*\* | 1.016\*\*\* |
+| base (LR elasticity) | 1.445^{***} | 0.867^{***} | 1.687^{***} | 1.016^{***} |
 |  | (0.0493) | (0.0472) | (0.169) | (0.0150) |
-| quarter 1 | 0.0210 | -0.260\*\*\* | 0.0188 | 0.0971\*\*\* |
+| quarter 1 | 0.0210 | -0.260^{***} | 0.0188 | 0.0971^{***} |
 |  | (0.0337) | (0.0935) | (0.159) | (0.0263) |
-| quarter 2 | -0.234\*\*\* | -0.130 | 0.249\*\*\* | 0.0600 |
+| quarter 2 | -0.234^{***} | -0.130 | 0.249^{***} | 0.0600 |
 |  | (0.0527) | (0.143) | (0.0756) | (0.0395) |
-| quarter 3 | -0.0726 | -0.205\*\*\* | -0.0265 | 0.0772\*\* |
+| quarter 3 | -0.0726 | -0.205^{***} | -0.0265 | 0.0772^{**} |
 |  | (0.0437) | (0.0688) | (0.172) | (0.0372) |
-| 2008 reform | -0.0724\*\*\* | -0.0384\*\* | 0.0212 | -0.000671 |
+| 2008 reform | -0.0724^{***} | -0.0384^{**} | 0.0212 | -0.000671 |
 |  | (0.0240) | (0.0180) | (0.0680) | (0.00845) |
 | Short run |  |  |  |  |
-| ∆base (SR elasticity) | 0.316\* | 0.453 | 0.587 | 1.189\*\*\* |
+| ∆base (SR elasticity) | 0.316^{*} | 0.453 | 0.587 | 1.189^{***} |
 |  | (0.165) | (0.757) | (0.411) | (0.242) |
-| ∆revenuet−1 | -0.191\* | 0.147 | -0.157 | -0.0804 |
+| ∆revenuet−1 | -0.191^{*} | 0.147 | -0.157 | -0.0804 |
 |  | (0.102) | (0.121) | (0.133) | (0.125) |
-| residual_LRt−1 (adjustment) | -0.536\*\*\* | -1.109\*\*\* | -0.903\*\*\* | -0.960\*\*\* |
+| residual_LRt−1 (adjustment) | -0.536^{***} | -1.109^{***} | -0.903^{***} | -0.960^{***} |
 |  | (0.110) | (0.178) | (0.193) | (0.172) |
-| quarter 1 | -0.108\*\*\* | -0.464\*\*\* | 0.245\* | 0.0991\*\* |
+| quarter 1 | -0.108^{***} | -0.464^{***} | 0.245^{*} | 0.0991^{**} |
 |  | (0.0373) | (0.0942) | (0.134) | (0.0402) |
-| quarter 2 | -0.223\*\*\* | 0.0441 | 0.497\*\*\* | 0.0105 |
+| quarter 2 | -0.223^{***} | 0.0441 | 0.497^{***} | 0.0105 |
 |  | (0.0248) | (0.0511) | (0.0954) | (0.0169) |
-| quarter 3 | 0.0320 | -0.290\*\*\* | -0.0465 | 0.00996 |
+| quarter 3 | 0.0320 | -0.290^{***} | -0.0465 | 0.00996 |
 |  | (0.0309) | (0.0414) | (0.125) | (0.0194) |
-| 2008 reform | -0.0241\*\* | -0.0241 | -0.0511 | 0.00156 |
+| 2008 reform | -0.0241^{**} | -0.0241 | -0.0511 | 0.00156 |
 |  | (0.00916) | (0.0234) | (0.0546) | (0.00768) |
 | Autocorrelation ($\chi^2$) | 0.101 | 0.648 | 0.719 | 0.835 |
 | Observations | 73 | 73 | 57 | 58 |
@@ -244,16 +244,16 @@ TABLE A1. The Adjustment of Tax Revenue to Shocks to the Tax Base (Seasonally Ad
 |  | Wage tax | Valued added tax | Profit tax | Social security |
 |---|---|---|---|---|
 | Long run |  |  |  |  |
-| base (LR elasticity) | 1.452\*\*\* | 0.939\*\*\* | 1.683\*\*\* | 1.012\*\*\* |
+| base (LR elasticity) | 1.452^{***} | 0.939^{***} | 1.683^{***} | 1.012^{***} |
 |  | (0.0490) | (0.0452) | (0.166) | (0.0155) |
-| 2008 reform | -0.0779\*\*\* | -0.0408\*\* | 0.0157 | 0.00797 |
+| 2008 reform | -0.0779^{***} | -0.0408^{**} | 0.0157 | 0.00797 |
 |  | (0.0232) | (0.0188) | (0.0658) | (0.00799) |
 | Short run |  |  |  |  |
-| ∆base (SR elasticity) | 0.801\*\*\* | 0.789\*\* | 0.790\*\* | 0.805\*\*\* |
+| ∆base (SR elasticity) | 0.801^{***} | 0.789^{**} | 0.790^{**} | 0.805^{***} |
 |  | (0.126) | (0.300) | (0.368) | (0.0905) |
 | ∆revenuet−1 | -0.120 | 0.175 | -0.189 | -0.0619 |
 |  | (0.0857) | (0.115) | (0.125) | (0.0825) |
-| residual_LRt−1 (adjustment) | -0.598\*\*\* | -1.317\*\*\* | -0.897\*\*\* | -1.006\*\*\* |
+| residual_LRt−1 (adjustment) | -0.598^{***} | -1.317^{***} | -0.897^{***} | -1.006^{***} |
 |  | (0.111) | (0.176) | (0.188) | (0.145) |
 | 2008 reform | -0.0146 | -0.00349 | -0.0494 | -0.00466 |
 |  | (0.00961) | (0.0228) | (0.0541) | (0.00596) |
@@ -266,20 +266,20 @@ TABLE A2. The Adjustment of Tax Revenue to Shocks to the Tax Base (No Quarterly 
 |  | Wage tax | Valued added tax | Profit tax | Social security |
 |---|---|---|---|---|
 | Long run |  |  |  |  |
-| base (LR elasticity) | 1.460\*\*\* | 0.886\*\*\* | 1.736\*\*\* | 0.990\*\*\* |
+| base (LR elasticity) | 1.460^{***} | 0.886^{***} | 1.736^{***} | 0.990^{***} |
 |  | (0.0545) | (0.0782) | (0.152) | (0.0151) |
-| 2008 reform | -0.0730\*\*\* | -0.0541\*\* | -0.00805 | 0.0170\*\* |
+| 2008 reform | -0.0730^{***} | -0.0541^{**} | -0.00805 | 0.0170^{**} |
 |  | (0.0237) | (0.0211) | (0.0692) | (0.00716) |
 | Short run |  |  |  |  |
-| ∆base (SR elasticity) | 0.371\*\*\* | 2.690\*\*\* | 0.954\*\*\* | 0.556\*\*\* |
+| ∆base (SR elasticity) | 0.371^{***} | 2.690^{***} | 0.954^{***} | 0.556^{***} |
 |  | (0.140) | (0.293) | (0.234) | (0.0676) |
-| ∆revenuet−1 | -0.0218 | -0.0687 | -0.226\*\* | -0.309\*\*\* |
+| ∆revenuet−1 | -0.0218 | -0.0687 | -0.226^{**} | -0.309^{***} |
 |  | (0.107) | (0.0890) | (0.108) | (0.0743) |
-| residual_LRt−1 (adjustment) | -0.804\*\*\* | -1.028\*\*\* | -0.942\*\*\* | -0.826\*\*\* |
+| residual_LRt−1 (adjustment) | -0.804^{***} | -1.028^{***} | -0.942^{***} | -0.826^{***} |
 |  | (0.259) | (0.205) | (0.212) | (0.124) |
-| 2008 reform | -0.0207 | 0.0218 | -0.0433 | -0.0118\* |
+| 2008 reform | -0.0207 | 0.0218 | -0.0433 | -0.0118^{*} |
 |  | (0.0258) | (0.0342) | (0.0727) | (0.00661) |
-| Autocorrelation ($\chi^2$) | 11.215\*\*\* | 27.027\*\*\* | 0.013 | 0.234 |
+| Autocorrelation ($\chi^2$) | 11.215^{***} | 27.027^{***} | 0.013 | 0.234 |
 | Observations | 73 | 73 | 57 | 58 |
 Notes: The response variable is tax revenue for the long-run estimation and growth of tax revenue for the short-run estimation. The long-run specification is estimated by dynamic OLS with the Newey-West correction for standard errors (heteroscedasticity and autocorrelation-robust up to lag 4); the additional controls included in the dynamic OLS (lags and leads of the tax base) are not reported for ease of exposition. The short-run specification is estimated with OLS, and we report the $\chi^2$ statistic for Durbin's alternative test of autocorrelation in this specification. Residual_LR denotes residuals from the long-run equation. Reform denotes a dummy variable that equals one for observations occurring after the last quarter of 2007 (the implementation of a major tax reform in the Czech Republic).
 

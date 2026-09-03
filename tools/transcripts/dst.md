@@ -268,7 +268,7 @@ We prefer the maximum number of years available for estimation in the primary st
 
 Next, we plug in the maximum value of publication year from our sample since we prefer recent studies. Moreover, we emphasize publication quality: we place greater weight on studies published in refereed journals and those with the maximum number of citations. We prefer journals with a high impact factor but also need to control for one outlier, Kotchen and Grant (2011); therefore, we choose the 95^{th} percentile for the *Impact factor* variable (if we use the sample maximum, we obtain negative electricity savings). Finally, we set the dummy variable *USA* to zero for other countries than the United States and control for country heterogeneity using the variable *Daylight hours*, which varies from 13.2 (northern Chile) to 19.8 (southern Norway).
 
-Table 6 provides the best-practice DST estimates for all 21 countries examined by the studies in our data set. These estimates are calculated as a linear combination using the coefficients from the BMA meta-regression in Table 5 and values of the variables corresponding to our definition of best practice. The resulting global estimate is −0.01%, quite distant from −0.34%, the simple average effect reported in the literature. The 95% confidence interval of our best-practice estimate is wide, (−0.76, 0.73). Nevertheless, plausible changes in the definition of best practice would not typically lead to substantial changes in the result. For example, if we were to prefer simulation analysis
+Table 6 provides the best-practice DST estimates for all 21 countries examined by the studies in our data set. These estimates are calculated as a linear combination using the coefficients from the BMA meta-regression in Table 5 and values of the variables corresponding to our definition of best practice. The resulting global estimate is −0.01%, quite distant from −0.34%, the simple average effect reported in the literature. The 95% confidence interval of our best-practice estimate is wide, (−0.76, 0.73). Nevertheless, plausible changes in the definition of best practice would not typically lead to substantial changes in the result. For example, if we were to prefer simulation analysis instead of the difference-in-differences approach, the change in the result would only be 0.02. (Of course, more radical changes in the definition would change the result substantially.) We conclude that electricity savings from DST are, on average, negligible and highly unlikely to exceed 0.76% of total electricity consumption during the days when the daylight saving policy is in place.
 
 TABLE 6. DST Effects on Electricity Savings Differ across Countries
 
@@ -298,8 +298,6 @@ TABLE 6. DST Effects on Electricity Savings Differ across Countries
 | Europe | −0.083 | −0.845 | 0.679 |
 | All countries | −0.014 | −0.760 | 0.732 |
 Notes: The table presents mean estimates of the DST coefficient in % implied by the Bayesian model averaging and our definition of best practice. The confidence intervals are approximate and constructed using the standard errors estimated by OLS.
-
-instead of the difference-in-differences approach, the change in the result would only be 0.02. (Of course, more radical changes in the definition would change the result substantially.) We conclude that electricity savings from DST are, on average, negligible and highly unlikely to exceed 0.76% of total electricity consumption during the days when the daylight saving policy is in place.
 
 ## 5 | ROBUSTNESS CHECKS
 

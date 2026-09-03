@@ -94,10 +94,10 @@ TABLE 1. Test of publication bias and corrected spillover effect.
 | --- | --- | --- | --- |
 | **Panel A – Backward spillovers** | | | |
 | *Publication bias* | | | |
-| Constant | − 0.0255 | 1.083* | − 1.481 |
+| Constant | − 0.0255 | 1.083^{*} | − 1.481 |
 | | (0.496) | (0.656) | (0.942) |
 | *Spillover effect corrected for bias* | | | |
-| 1/(Standard error of the estimate of spillover) | 0.168*** | 0.178*** | 0.307*** |
+| 1/(Standard error of the estimate of spillover) | 0.168^{***} | 0.178^{***} | 0.307^{***} |
 | | (0.0241) | (0.0295) | (0.0380) |
 | Observations | 1311 | 370 | 568 |
 | Studies | 55 | 26 | 39 |
@@ -106,7 +106,7 @@ TABLE 1. Test of publication bias and corrected spillover effect.
 | Constant | 0.729 | − 0.437 | 1.657 |
 | | (0.776) | (1.033) | (1.632) |
 | *Spillover effect corrected for bias* | | | |
-| 1/(Standard error of the estimate of spillover) | 0.0872*** | 0.258*** | 0.0669** |
+| 1/(Standard error of the estimate of spillover) | 0.0872^{***} | 0.258^{***} | 0.0669^{**} |
 | | (0.0287) | (0.0454) | (0.0288) |
 | Observations | 1030 | 241 | 591 |
 | Studies | 44 | 19 | 30 |

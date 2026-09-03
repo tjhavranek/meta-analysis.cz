@@ -96,7 +96,7 @@ From the preliminary list of 72 studies, we excluded those that do not provide e
 
 In this section, we review the characteristics of the selected meta-studies and discuss in more detail some examples of influential meta-studies in specific economic fields. Figure 1 shows some overarching trends in the relevance of meta-analysis according to our larger sample of 72 studies. Figure 1a gives multi-year averages of the number of primary studies and observations included per meta-study according to their publication year. Figure 1b provides the multi-year averages of the impact factors according to the SCImago Journal Rank (SJR) and the Resurchify Impact Score (RIS).
 
-Table 1 zooms in on the details of the 24 final studies, including their field and specific research question, the number of studies and estimates they cover, the number of citations they have
+Table 1 zooms in on the details of the 24 final studies, including their field and specific research question, the number of studies and estimates they cover, the number of citations they have attracted, as well as recent impact factors and rankings of the respective journals in which they are published.
 
 TABLE 1. Relevance and characteristics of 24 selected meta-studies.
 
@@ -136,8 +136,6 @@ TABLE 1 (Continued). Relevance and characteristics of 24 selected meta-studies.
 *Source*: https://www.resurchify.com/ranking
 
 FIGURE 1. Multi-year averages of characteristics of 72 pre-selected meta-analyses. [Colour figure can be viewed at wileyonlinelibrary.com] Notes: The figure shows trends of the multi-year averages of the characteristics of the 72 pre-selected meta-studies. (a) Multi-year averages (based on publication year of the meta-study) of the number of primary studies and observations included per meta-study. (b) Multi-year averages of the impact factors of journals where meta-analyses were published, according to the SCImago Journal Rank (SJR) and the Resurchify Impact Score (RIS). Source: https://www.resurchify.com/ranking
-
-attracted, as well as recent impact factors and rankings of the respective journals in which they are published.
 
 The following broad picture emerges: meta-analyses have covered many important topics in economics, and they provide well-cited benchmark estimates for their respective fields. While they were less popular in economics about 20 years ago, many of them have been published in top-tier journals in recent years. With the strong turn towards empirical evaluation in economics (Angrist & Pischke, 2010; Angrist et al., 2017; Paldam, 2021) and the exploding number of available primary empirical studies, the demand for quantitative summaries has increased. At the same time, the meta-datasets have grown substantially over the years, pointing to the tremendous workload required to produce high-quality meta-analyses.
 

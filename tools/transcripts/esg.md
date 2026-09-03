@@ -609,41 +609,41 @@ TABLE B.1. Robustness checks: excluding the Middle East and unwinsorized data
 | **Block 1: Subset excluding Middle East** |  |  |  |  |  |
 |---|---|---|---|---|---|
 | *Panel A: Linear* | OLS | Between Effects | Study Weight | Precision Weight | MAIVE |
-| Publication Bias (*Standard Error*) | 1.689∗∗∗ (0.325) [0.853, 2.413] | 2.128∗∗∗ (0.218) | 1.628∗∗∗ (0.347) [0.622, 2.328] | 2.157∗∗∗ (0.324) [1.410, 2.859] |  |
-| Mean Beyond Bias (*Constant*) | 0.116∗∗∗ (0.022) [0.072, 0.162] | 0.071∗∗ (0.031) | 0.120∗∗∗ (0.029) [0.055, 0.183] | 0.080∗∗∗ (0.020) [0.033, 0.125] | -0.062 (0.168) {-0.239, 0.190} |
+| Publication Bias (*Standard Error*) | 1.689^{***} (0.325) [0.853, 2.413] | 2.128^{***} (0.218) | 1.628^{***} (0.347) [0.622, 2.328] | 2.157^{***} (0.324) [1.410, 2.859] |  |
+| Mean Beyond Bias (*Constant*) | 0.116^{***} (0.022) [0.072, 0.162] | 0.071^{**} (0.031) | 0.120^{***} (0.029) [0.055, 0.183] | 0.080^{***} (0.020) [0.033, 0.125] | -0.062 (0.168) {-0.239, 0.190} |
 | First-stage robust F-stat |  |  |  |  | 3.13 |
 | *Panel B: Non-linear* | WAAP | Selection Model | Stem method | Endogenous Kink | p-uniform* |
-| Publication Bias |  | P = 0.281 (0.046) |  | 1.794∗∗ (0.887) |  |
-| Effect Beyond Bias | 0.087∗∗∗ (0.006) | 0.114∗∗∗ (0.010) | 0.166∗∗∗ (0.013) | 0.084∗∗∗ (0.004) | 0.167∗∗∗ (0.027) |
+| Publication Bias |  | P = 0.281 (0.046) |  | 1.794^{**} (0.887) |  |
+| Effect Beyond Bias | 0.087^{***} (0.006) | 0.114^{***} (0.010) | 0.166^{***} (0.013) | 0.084^{***} (0.004) | 0.167^{***} (0.027) |
 | # of estimates | 218 |  | 100 |  |  |
 | % of information |  |  | 100% |  |  |
 | Observations | 503 | 503 | 503 | 503 | 503 |
 | Studies | 100 | 100 | 100 | 100 | 100 |
 | **Block 2: Unwinsorized data** |  |  |  |  |  |
 | *Panel A: Linear* | OLS | Between Effects | Study Weight | Precision Weight | MAIVE |
-| Publication Bias (*Standard Error*) | 0.239 (0.117) [-9.502, 2.109] | 0.376∗∗∗ (0.054) | 0.196 (0.074) [-9.880, 1.940] | 1.527∗∗∗ (0.448) [0.554, 2.620] |  |
-| Mean Beyond Bias (*Constant*) | 0.248∗∗∗ (0.032) [0.183, 0.317] | 0.246∗∗∗ (0.053) | 0.307∗∗∗ (0.050) [0.204, 0.417] | 0.083∗∗∗ (0.019) [0.037, 0.125] | 0.089 (0.067) {-0.005, 0.367} |
+| Publication Bias (*Standard Error*) | 0.239 (0.117) [-9.502, 2.109] | 0.376^{***} (0.054) | 0.196 (0.074) [-9.880, 1.940] | 1.527^{***} (0.448) [0.554, 2.620] |  |
+| Mean Beyond Bias (*Constant*) | 0.248^{***} (0.032) [0.183, 0.317] | 0.246^{***} (0.053) | 0.307^{***} (0.050) [0.204, 0.417] | 0.083^{***} (0.019) [0.037, 0.125] | 0.089 (0.067) {-0.005, 0.367} |
 | First-stage robust F-stat |  |  |  |  | 0.97 |
 | *Panel B: Non-linear* | WAAP | Selection Model | Stem method | Endogenous Kink | p-uniform* |
-| Publication Bias |  | P = 0.277 (0.042) |  | 3.821∗∗∗ (1.103) |  |
-| Effect Beyond Bias | 0.038∗∗∗ (0.005) | 0.113∗∗∗ (0.010) | 0.172∗∗∗ (0.013) | 0.060∗∗∗ (0.003) | 0.159∗∗∗ (0.038) |
+| Publication Bias |  | P = 0.277 (0.042) |  | 3.821^{***} (1.103) |  |
+| Effect Beyond Bias | 0.038^{***} (0.005) | 0.113^{***} (0.010) | 0.172^{***} (0.013) | 0.060^{***} (0.003) | 0.159^{***} (0.038) |
 | # of estimates | 178 |  | 103 |  |  |
 | % of information |  |  | 99.9% |  |  |
 | Observations | 533 | 533 | 533 | 533 | 533 |
 | Studies | 106 | 106 | 106 | 106 | 106 |
-Notes: Block 1 excludes Middle East estimates; Block 2 uses unwinsorized data. *Panel A:* FAT-PET regression $E_{is} = \beta_0 + \beta_1 \cdot \mathrm{SE}(E_{is}) + \varepsilon_{is}$, where $\beta_1$ is publication bias and the constant $\beta_0$ is the mean beyond bias. Cluster-robust standard errors are in parentheses, wild-bootstrap CIs in square brackets (Roodman et al., 2019) and the Anderson and Rubin (1949) 95% CI in curly brackets for MAIVE by Iršová et al. (2025) that corrects for spurious precision. Significance stars follow the wild-bootstrap p-values, except in the Between Effects column, which reports conventional between-effects inference. *Panel B:* WAAP denotes weighted average of adequately powered estimates (Stanley et al., 2017); Selection model denotes the technique due to Andrews and Kasy (2019); Stem denotes the stem-based technique (Furukawa, 2019); Kink denotes the endogenous kink model (Bom and Rachinger, 2019); p-uniform* denotes the technique due to van Aert and van Assen (2026). Significance: ∗ p < 0.10, ∗∗ p < 0.05, ∗∗∗ p < 0.01
+Notes: Block 1 excludes Middle East estimates; Block 2 uses unwinsorized data. *Panel A:* FAT-PET regression $E_{is} = \beta_0 + \beta_1 \cdot \mathrm{SE}(E_{is}) + \varepsilon_{is}$, where $\beta_1$ is publication bias and the constant $\beta_0$ is the mean beyond bias. Cluster-robust standard errors are in parentheses, wild-bootstrap CIs in square brackets (Roodman et al., 2019) and the Anderson and Rubin (1949) 95% CI in curly brackets for MAIVE by Iršová et al. (2025) that corrects for spurious precision. Significance stars follow the wild-bootstrap p-values, except in the Between Effects column, which reports conventional between-effects inference. *Panel B:* WAAP denotes weighted average of adequately powered estimates (Stanley et al., 2017); Selection model denotes the technique due to Andrews and Kasy (2019); Stem denotes the stem-based technique (Furukawa, 2019); Kink denotes the endogenous kink model (Bom and Rachinger, 2019); p-uniform* denotes the technique due to van Aert and van Assen (2026). Significance: ^{*} p < 0.10, ^{**} p < 0.05, ^{***} p < 0.01
 
 TABLE B.2. Provider comparison: interaction FAT-PET test
 
 | | OLS | Precision Weight |
 |---|---|---|
-| Publication bias ($\beta_1$) | 1.624∗∗∗ (0.304) | 2.350∗∗∗ (0.392) |
+| Publication bias ($\beta_1$) | 1.624^{***} (0.304) | 2.350^{***} (0.392) |
 | × Bloomberg ($\beta_3$) (*difference*) | 0.397 (0.610) [-1.206, 1.783] | -0.413 (0.636) [-2.041, 0.988] |
-| Mean beyond bias ($\beta_0$) | 0.135∗∗∗ (0.026) | 0.075∗∗∗ (0.023) |
+| Mean beyond bias ($\beta_0$) | 0.135^{***} (0.026) | 0.075^{***} (0.023) |
 | Bloomberg ($\beta_2$) (*difference*) | -0.057 (0.042) [-0.149, 0.037] | 0.011 (0.039) [-0.113, 0.086] |
 | Observations | 533 | 533 |
 | Studies | 106 | 106 |
-Notes: Estimates from the interacted FAT-PET regression $E_{is} = \beta_0 + \beta_1 \mathrm{SE}(E_{is}) + \beta_2 \mathrm{Bloomberg}_s + \beta_3 [\mathrm{SE}(E_{is}) \times \mathrm{Bloomberg}_s] + \varepsilon_{is}$, where $\mathrm{Bloomberg}_s = 1$ if the rating provider is Bloomberg (baseline = LSEG ESG data provider). $\beta_1$ and $\beta_0$ are the funnel-asymmetry slope (publication bias) and corrected mean for the baseline provider; $\beta_3$ tests whether publication bias differs across providers and $\beta_2$ whether the corrected mean differs. Cluster-robust standard errors (clustered by study) in parentheses. For the difference terms ($\beta_3$, $\beta_2$), 95% wild-bootstrap confidence intervals (Roodman et al., 2019) are in square brackets and significance is from wild-bootstrap p-values. Significance: ∗ p < 0.10, ∗∗ p < 0.05, ∗∗∗ p < 0.01.
+Notes: Estimates from the interacted FAT-PET regression $E_{is} = \beta_0 + \beta_1 \mathrm{SE}(E_{is}) + \beta_2 \mathrm{Bloomberg}_s + \beta_3 [\mathrm{SE}(E_{is}) \times \mathrm{Bloomberg}_s] + \varepsilon_{is}$, where $\mathrm{Bloomberg}_s = 1$ if the rating provider is Bloomberg (baseline = LSEG ESG data provider). $\beta_1$ and $\beta_0$ are the funnel-asymmetry slope (publication bias) and corrected mean for the baseline provider; $\beta_3$ tests whether publication bias differs across providers and $\beta_2$ whether the corrected mean differs. Cluster-robust standard errors (clustered by study) in parentheses. For the difference terms ($\beta_3$, $\beta_2$), 95% wild-bootstrap confidence intervals (Roodman et al., 2019) are in square brackets and significance is from wild-bootstrap p-values. Significance: ^{*} p < 0.10, ^{**} p < 0.05, ^{***} p < 0.01.
 
 ## Appendix C
 

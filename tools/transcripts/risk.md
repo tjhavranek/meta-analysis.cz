@@ -92,35 +92,35 @@ TABLE 2. Funnel asymmetry tests indicate modest risk aversion beyond publication
 
 | Panel A: All studies | WLS | FE | BE | Study |
 | --- | --- | --- | --- | --- |
-| Standard error | 1.865∗∗∗ | 2.287∗∗∗ | 2.837 | 3.062∗∗∗ |
+| Standard error | 1.865^{***} | 2.287^{***} | 2.837 | 3.062^{***} |
 | (publication bias) | (0.362) | (0.713) | (1.760) | (0.893) |
 | | [0.956, 2.577] | | | [1.251, 4.900] |
-| Constant | 1.199∗∗∗ | 1.084∗∗∗ | 1.590∗∗∗ | 1.533∗∗∗ |
+| Constant | 1.199^{***} | 1.084^{***} | 1.590^{***} | 1.533^{***} |
 | (mean corrected RRA) | (0.257) | (0.194) | (0.235) | (0.412) |
 | | [0.725, 2.130] | | | [0.673, 2.476] |
 | Observations | 1021 | 1021 | 1021 | 1021 |
 | Studies | 92 | 92 | 92 | 92 |
 | Panel B: Economics | WLS | FE | BE | Study |
-| Standard error | 1.392∗∗∗ | 1.411 | 4.119∗∗∗ | 3.604∗∗∗ |
+| Standard error | 1.392^{***} | 1.411 | 4.119^{***} | 3.604^{***} |
 | (publication bias) | (0.540) | (1.146) | (1.361) | (0.827) |
 | | [0.383, 2.506] | | | [2.007, 5.293] |
-| Constant | 1.085∗∗∗ | 1.082∗∗∗ | 0.714∗∗∗ | 0.822∗∗∗ |
+| Constant | 1.085^{***} | 1.082^{***} | 0.714^{***} | 0.822^{***} |
 | (mean corrected RRA) | (0.261) | (0.211) | (0.178) | (0.243) |
 | | [0.654, 2.059] | | | [0.351, 1.464] |
 | Observations | 590 | 590 | 590 | 590 |
 | Studies | 58 | 58 | 58 | 58 |
 | Panel C: Finance | WLS | FE | BE | Study |
-| Standard error | 1.859∗∗∗ | 3.476∗∗∗ | 0.817 | 2.168 |
+| Standard error | 1.859^{***} | 3.476^{***} | 0.817 | 2.168 |
 | (publication bias) | (0.449) | (0.169) | (3.061) | (1.654) |
 | | [0.050, 2.895] | | | [−1.197, 5.548] |
-| Constant | 2.390∗∗∗ | 1.107∗∗∗ | 3.223∗∗∗ | 2.888∗∗∗ |
+| Constant | 2.390^{***} | 1.107^{***} | 3.223^{***} | 2.888^{***} |
 | (mean corrected RRA) | (0.675) | (0.134) | (0.423) | (0.732) |
 | | [0.812, 4.006] | | | [1.062, 4.890] |
 | Observations | 431 | 431 | 431 | 431 |
 | Studies | 34 | 34 | 34 | 34 |
 Note: We regress estimates of relative risk aversion on their standard errors (weighted by inverse variance). Standard errors, clustered at the study level, are reported in parentheses. Study = the inverse of the number of estimates reported per study is used as an additional weight. In square brackets, we show the 95% confidence interval from wild bootstrap (Roodman et al. 2019).
 Abbreviations: BE = study between effects; FE = study fixed effects; RRA, relative risk aversion; WLS, standard weighted least squares.
-∗ *p* < 0.10, ∗∗ *p* < 0.05, ∗∗∗ *p* < 0.01.
+^{*} *p* < 0.10, ^{**} *p* < 0.05, ^{***} *p* < 0.01.
 
 We use five alternative techniques for publication bias correction. First, the weighted average of adequately powered estimates by Ioannidis et al. (2017). The technique estimates retrospective power for all estimates and yields a result that is the average of the estimates with power above 80% (weighted by inverse variance). Second, the selection model by Andrews and Kasy (2019). This rigorously founded technique estimates the probability that negative and insignificant estimates are not reported; the probability is then used to upweight these estimates. Third, the stem-based technique by Furukawa (2021). The technique exploits the trade-off between bias and variance: When more imprecise studies are added, publication bias increases, but variance decreases because more estimates are available. Furukawa (2021) minimizes the corresponding mean squared error that is the sum of bias and variance. Fourth, the endogeneous kink model by Bom and Rachinger (2019). The technique, which is an extension of the PEESE method due to Stanley and Doucouliagos (2014), assumes that the relationship between estimates and standard errors is linear when precision is low but that no relationship exists when precision is sufficiently high. For example, if the *p* value is 0.001, publication probability is not affected by small changes in the standard error. Fifth, the *p*-uniform* model by van Aert and van Assen (2021). The technique, developed in psychology, works with the distribution of p values and uses the statistical principle that the distribution should be uniform at the true mean value of the coefficient of relative risk aversion; it can be thought of as a simplified selection model.
 
@@ -128,23 +128,23 @@ TABLE 3. Alternative corrections for publication bias.
 
 | Panel A: All studies | Ioannidis et al. (2017) | Andrews and Kasy (2019) | Furukawa (2021) | Bom and Rachinger (2019) | van Aert and van Assen (2021) |
 | --- | --- | --- | --- | --- | --- |
-| Mean corrected RRA | 1.318∗∗∗ | 0.960∗∗∗ | 1.467∗∗∗ | 1.199∗∗∗ | 0.367∗∗∗ |
+| Mean corrected RRA | 1.318^{***} | 0.960^{***} | 1.467^{***} | 1.199^{***} | 0.367^{***} |
 | | (0.250) | (0.035) | (0.951) | (0.046) | [0.002] |
 | Observations | 1021 | 1021 | 1021 | 1021 | 1021 |
 | Studies | 92 | 92 | 92 | 92 | 92 |
 | Panel B: Economics | Ioannidis et al. (2017) | Andrews and Kasy (2019) | Furukawa (2021) | Bom and Rachinger (2019) | van Aert and van Assen (2021) |
-| Mean corrected RRA | 1.172∗∗∗ | 0.910∗∗∗ | 0.474∗∗∗ | 1.085∗∗∗ | 0.366∗∗∗ |
+| Mean corrected RRA | 1.172^{***} | 0.910^{***} | 0.474^{***} | 1.085^{***} | 0.366^{***} |
 | | (0.250) | (0.030) | (0.390) | (0.052) | [0.002] |
 | Observations | 590 | 590 | 590 | 590 | 590 |
 | Studies | 58 | 58 | 58 | 58 | 58 |
 | Panel C: Finance | Ioannidis et al. (2017) | Andrews and Kasy (2019) | Furukawa (2021) | Bom and Rachinger (2019) | van Aert and van Assen (2021) |
-| Mean corrected RRA | 2.535∗∗∗ | 11.196∗∗∗ | 6.100∗∗∗ | 2.390∗∗∗ | 0.625∗∗∗ |
+| Mean corrected RRA | 2.535^{***} | 11.196^{***} | 6.100^{***} | 2.390^{***} | 0.625^{***} |
 | | (0.662) | (1.212) | (0.885) | (0.112) | [0.008] |
 | Observations | 431 | 431 | 431 | 431 | 431 |
 | Studies | 34 | 34 | 34 | 34 | 34 |
 Note: Standard errors are reported in parentheses; the *p*-uniform* technique due to van Aert and van Assen (2021) only yields p values, which we report in square brackets. For the Andrews and Kasy (2019) approach, we assume that underlying effects have a t-distribution and that 1.96 is the only threshold for t-statistics that matters for publication decisions.
 Abbreviation: RRA, relative risk aversion.
-∗ p < 0.10, ∗∗ p < 0.05, ∗∗∗ p < 0.01.
+^{*} p < 0.10, ^{**} p < 0.05, ^{***} p < 0.01.
 
 The results of the alternative tests are shown in Table 3. All tests corroborate strong publication bias: The corrected mean coefficients of relative risk aversion are always much smaller than uncorrected means shown earlier in Table 1. But the individual results vary. The *p*-uniform* technique yields values of risk aversion below 1 for both economics and finance. The selection model yields a large estimate for finance, 11. The remaining results are more consistent and suggest relative risk aversion around 1 in economics and 2–6 in finance. Finally, in the Supplement we also apply two new tests of p-hacking by Elliott et al. (2022). (see Table C1; Tables C2 and C3 additionally include specification tests of the Andrews-Kasy model.) These advanced tests have relatively low power and only test p-hacking without estimating the corrected risk aversion. Using these tests, we reject the hypothesis of no bias in the entire sample but not in the individual subsamples of economics and finance studies.
 

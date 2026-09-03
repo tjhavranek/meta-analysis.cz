@@ -69,21 +69,21 @@ TABLE 1. IV Estimation of the Negative Inverse Elasticity Shows Less Bias and a 
 | | FE | BE | IV | EK | SM |
 | --- | --- | --- | --- | --- | --- |
 | Panel A: OLS estimates | | | | | |
-| Publication bias | −5.804∗∗∗ (1.999) | −4.277∗∗∗ (1.266) | −6.962∗∗∗ (1.694) [−11.770, −2.494] {−11.972, −3.133} | −5.465∗∗∗ (0.540) | P = 0.468 (0.139) |
-| Effect beyond bias | −0.0207 (0.103) | −0.0965 (0.0627) | 0.0103 (0.104) [−0.331, 0.214] | −0.0361∗∗ (0.0191) | −0.289∗∗ (0.113) |
+| Publication bias | −5.804^{***} (1.999) | −4.277^{***} (1.266) | −6.962^{***} (1.694) [−11.770, −2.494] {−11.972, −3.133} | −5.465^{***} (0.540) | P = 0.468 (0.139) |
+| Effect beyond bias | −0.0207 (0.103) | −0.0965 (0.0627) | 0.0103 (0.104) [−0.331, 0.214] | −0.0361^{**} (0.0191) | −0.289^{**} (0.113) |
 | First-stage robust *F*-stat | | | 46.17 | | |
 | Observations | 347 | 347 | 251 | 347 | 347 |
 | Panel B: IV estimates | | | | | |
-| Publication bias | −2.287∗∗ (0.843) | −0.923 (1.365) | −0.553 (0.681) [−1.913, 1.078] {−1.991, 0.748} | −1.485∗∗∗ (0.268) | P = 0.336 (0.093) |
-| Effect beyond bias | −0.149 (0.109) | −0.297∗∗ (0.115) | −0.400∗∗∗ (0.114) [−0.719, 0.175] | −0.252∗∗∗ (0.0246) | −0.333∗∗∗ (0.058) |
+| Publication bias | −2.287^{**} (0.843) | −0.923 (1.365) | −0.553 (0.681) [−1.913, 1.078] {−1.991, 0.748} | −1.485^{***} (0.268) | P = 0.336 (0.093) |
+| Effect beyond bias | −0.149 (0.109) | −0.297^{**} (0.115) | −0.400^{***} (0.114) [−0.719, 0.175] | −0.252^{***} (0.0246) | −0.333^{***} (0.058) |
 | First-stage robust *F*-stat | | | 69.98 | | |
 | Observations | 264 | 264 | 212 | 264 | 264 |
 | Panel C: Natural experiment estimates | | | | | |
-| Publication bias | −3.557∗∗∗ (0.0178) | −1.874∗ (0.682) | −3.176∗∗∗ (0.853) [−4.854, −1.407] {−4.653, −1.444} | −3.115∗∗∗ (0.343) | P = 0.187 (0.075) |
-| Effect beyond bias | 0.0496∗∗∗ (0.00246) | −0.121 (0.0824) | −0.00307 (0.0297) [NA, NA] | 0.00302 (0.0280) | −0.009 (0.066) |
+| Publication bias | −3.557^{***} (0.0178) | −1.874^{*} (0.682) | −3.176^{***} (0.853) [−4.854, −1.407] {−4.653, −1.444} | −3.115^{***} (0.343) | P = 0.187 (0.075) |
+| Effect beyond bias | 0.0496^{***} (0.00246) | −0.121 (0.0824) | −0.00307 (0.0297) [NA, NA] | 0.00302 (0.0280) | −0.009 (0.066) |
 | First-stage robust *F*-stat | | | 260.41 | | |
 | Observations | 40 | 40 | 40 | 40 | 40 |
-The first three specifications regress estimates on standard errors (weighted by inverse variance). Standard errors, clustered at the study level, are in parentheses. FE = study fixed effects. BE = study between effects. IV = the inverse of the square root of the number of observations is used as an instrument for the standard error. In square brackets, we show the 95% confidence interval from wild bootstrap (Roodman et al., 2018); in curly brackets we show the two-step weak-instrument-robust 95% confidence interval based on Andrews (2018) and Sun (2018). EK = endogenous kink method by Bom and Rachinger (2019), SM = selection model by Andrews and Kasy (2019), P denotes the probability that estimates insignificant at the 5% level are published relative to the probability that significant estimates are published (normalized at 1). ∗ p < 0.1, ∗∗ p < 0.05, and ∗∗∗ p < 0.01.
+The first three specifications regress estimates on standard errors (weighted by inverse variance). Standard errors, clustered at the study level, are in parentheses. FE = study fixed effects. BE = study between effects. IV = the inverse of the square root of the number of observations is used as an instrument for the standard error. In square brackets, we show the 95% confidence interval from wild bootstrap (Roodman et al., 2018); in curly brackets we show the two-step weak-instrument-robust 95% confidence interval based on Andrews (2018) and Sun (2018). EK = endogenous kink method by Bom and Rachinger (2019), SM = selection model by Andrews and Kasy (2019), P denotes the probability that estimates insignificant at the 5% level are published relative to the probability that significant estimates are published (normalized at 1). ^{*} p < 0.1, ^{**} p < 0.05, and ^{***} p < 0.01.
 
 In the online appendix (tables C3–C5), we test and correct for publication bias in other variously defined subsamples of the literature: elasticities estimated for developed countries versus elasticities for developing countries, elasticities estimated at the country level versus elasticities at the regional level, and elasticities estimated using a one-level CES function versus a multilevel CES function. The results suggest that elasticities tend to be larger for developed countries (above 4) than developing countries (around 2.5), and once again publication bias is stronger for the group which displays a corrected inverse elasticity closer to zero. The cross-country differences in elasticities are discussed, for example, by Behar (2010). A plausible explanation for the finding is that in many developing countries access to higher education is still limited, and therefore selection effects are stronger within cohorts. In addition, the unskilled labor aggregate contains workers of limited literacy. Next, our results suggest that elasticities estimated at the country level are smaller than those estimated at the regional level, but there are only 93 estimates for the latter group. Finally, both one-level and multilevel CES functions seem to yield similar estimated elasticities.
 
@@ -102,16 +102,16 @@ TABLE 2. Tests Based on the Distribution of *t*-Statistics and *p*-Values
 | Panel A: Caliper tests due to Gerber and Malhotra (2008) | | | | |
 | --- | --- | --- | --- | --- |
 | *Threshold for t-statistic: −1.96* | caliper: 0.25 | 0.30 | 0.35 | 0.40 |
-| Share above threshold minus 0.5 | −0.118∗∗ (0.0561) | −0.135∗∗ (0.0525) | −0.102∗∗ (0.0485) | −0.121∗∗∗ (0.0452) |
+| Share above threshold minus 0.5 | −0.118^{**} (0.0561) | −0.135^{**} (0.0525) | −0.102^{**} (0.0485) | −0.121^{***} (0.0452) |
 | Observations | 76 | 85 | 103 | 116 |
 | *Threshold for adjusted t-statistic t∗ = (estimate + 1)/SE(estimate): 1.96 (relevant for the null hypothesis that the negative inverse elasticity is −1)* | caliper: 0.25 | 0.30 | 0.35 | 0.40 |
 | Share above threshold minus 0.5 | 0.090 (0.0798) | 0.100 (0.0739) | 0.088 (0.0696) | 0.096 (0.0656) |
 | Observations | 39 | 45 | 51 | 57 |
 | *Threshold for neg. inv. elasticity: 0* | caliper: 0.05 | 0.10 | 0.15 | 0.20 |
-| Share above threshold minus 0.5 | −0.397∗∗∗ (0.0492) | −0.387∗∗∗ (0.0439) | −0.379∗∗∗ (0.0405) | −0.383∗∗∗ (0.0369) |
+| Share above threshold minus 0.5 | −0.397^{***} (0.0492) | −0.387^{***} (0.0439) | −0.379^{***} (0.0405) | −0.383^{***} (0.0369) |
 | Observations | 39 | 53 | 66 | 77 |
 | *Threshold for neg. inv. elasticity: −1* | caliper: 0.05 | 0.10 | 0.15 | 0.20 |
-| Share above threshold minus 0.5 | 0.346∗∗∗ (0.0722) | 0.368∗∗∗ (0.0556) | 0.378∗∗∗ (0.0473) | 0.406∗∗∗ (0.0367) |
+| Share above threshold minus 0.5 | 0.346^{***} (0.0722) | 0.368^{***} (0.0556) | 0.378^{***} (0.0473) | 0.406^{***} (0.0367) |
 | Observations | 26 | 38 | 49 | 64 |
 
 TABLE 2 (continued). Tests Based on the Distribution of *t*-Statistics and *p*-Values
@@ -127,7 +127,7 @@ TABLE 2 (continued). Tests Based on the Distribution of *t*-Statistics and *p*-V
 | Test for monotonicity and bounds | 0.930 | 0.041 | 0.773 | 0.000 | 0.016 |
 | Observations (p <= 0.2) | 138 | 491 | 89 | 173 | 403 |
 | Total observations | 151 | 555 | 93 | 198 | 444 |
-In panel A, the tests compare the relative frequency of estimates above and below an important threshold for the *t*-statistic or negative inverse elasticity. A test statistic of −0.397, for example, means that 89.7% estimates are below the threshold and 10.3% estimates are above the threshold. Panel B reports for different subsamples the *p*-values of two tests developed by Elliott et al. (2022), which also feature cluster-robust variance estimators. ∗ p < 0.1, ∗∗ p < 0.05, and ∗∗∗ p < 0.01.
+In panel A, the tests compare the relative frequency of estimates above and below an important threshold for the *t*-statistic or negative inverse elasticity. A test statistic of −0.397, for example, means that 89.7% estimates are below the threshold and 10.3% estimates are above the threshold. Panel B reports for different subsamples the *p*-values of two tests developed by Elliott et al. (2022), which also feature cluster-robust variance estimators. ^{*} p < 0.1, ^{**} p < 0.05, and ^{***} p < 0.01.
 
 TABLE 3. Characteristics Used to Explain Heterogeneity
 

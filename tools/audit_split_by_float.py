@@ -43,7 +43,11 @@ import sys
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
-FLOAT = re.compile(r"^(FIGURE|TABLE|Fig\.|Notes?:|\|)", re.I)
+# Captions are written in caps in these transcripts ("FIGURE 4.", "TABLE 2."). Matching
+# case-insensitively also swallowed body prose that merely OPENS with a cross-reference,
+# e.g. "Figure 4 visualizes the distribution ...", which is a paragraph, not a caption.
+# Classifying that as a float hid the split that followed it.
+FLOAT = re.compile(r"^(FIGURE\s|TABLE\s|Fig\.\s|Notes?:|\|)")
 HEADING = re.compile(r"^(#|\^\{|\s*$)")
 TERMINAL = re.compile(r"[.!?:;\"'’”\)\]]\s*$")
 # a paragraph ending on a footnote marker is finished, e.g. "... in the literature.^{5}"
@@ -90,7 +94,10 @@ def ends_open(b):
 
 def starts_lower(b):
     s = b.strip()
-    m = re.match(r"[\(\"'‘“]*([A-Za-z])", s)
+    # Skip opening quotes/brackets AND markdown emphasis: a sentence resuming with an
+    # italicised symbol reads as "*p*-values, we check whether ...", and treating the
+    # asterisk as the first character hid two real splits in /hedge/.
+    m = re.match(r"[\(\"'‘“\*_]*([A-Za-z])", s)
     return bool(m) and m.group(1).islower()
 
 
