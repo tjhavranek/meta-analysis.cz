@@ -57,6 +57,7 @@ import struct
 import sys
 
 from latex2mathml.converter import convert as tex_to_mathml
+import _poppler
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 TRANSCRIPTS = os.path.join(ROOT, "tools", "transcripts")
@@ -1378,7 +1379,7 @@ def prints_pipe_headings(project, meta):
     if not pdf:
         return False
     try:
-        text = subprocess.run(["pdftotext", "-f", "1", "-l", "12", pdf, "-"],
+        text = subprocess.run([_poppler.tool("pdftotext"), "-f", "1", "-l", "12", pdf, "-"],
                               capture_output=True, text=True, check=True,
                               encoding="utf-8", errors="replace").stdout or ""
     except Exception:

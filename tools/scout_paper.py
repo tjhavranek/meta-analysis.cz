@@ -20,6 +20,8 @@ import sys
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 sys.path.insert(0, os.path.join(ROOT, "tools"))
 
+import _poppler
+
 # A supplement numbers its exhibits S1, S2, ... and the S belongs to the number: the paper
 # prints "Fig. S7", not a seventh figure in some other series.
 #
@@ -44,7 +46,14 @@ EQNUM = re.compile(r"\(\s*(\d{1,2})\s*\)\s*$", re.M)
 
 
 def pages_of(pdf):
-    out = subprocess.run(["pdfinfo", pdf], capture_output=True, text=True).stdout
+    # encoding is named, not left to the locale. text=True alone decodes with
+    # locale.getpreferredencoding(), which is UTF-8 on the Ubuntu runner but cp1252 on a
+    # Windows checkout; a PDF whose metadata carries byte 0x90 then kills the reader
+    # thread, stdout comes back as None, and the failure surfaces here as an
+    # AttributeError on None rather than as the decoding error it is. Only the "Pages:"
+    # line is read, so replacing an undecodable byte in some producer string costs nothing.
+    out = subprocess.run([_poppler.tool("pdfinfo"), pdf], capture_output=True, text=True,
+                         encoding="utf-8", errors="replace").stdout or ""
     for line in out.splitlines():
         if line.startswith("Pages:"):
             return int(line.split()[-1])
@@ -57,7 +66,7 @@ def scout(project, papers):
     if not pdf:
         return {"project": project, "error": "no PDF"}
     n = pages_of(pdf)
-    text = subprocess.run(["pdftotext", pdf, "-"], capture_output=True, text=True,
+    text = subprocess.run([_poppler.tool("pdftotext"), pdf, "-"], capture_output=True, text=True,
                           encoding="utf-8", errors="replace").stdout or ""
     per_page = text.split("\f")
 

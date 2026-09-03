@@ -30,6 +30,7 @@ from scout_paper import scout                          # noqa: E402
 
 PAPERS = {p["project"]: p for p in json.load(open(os.path.join(ROOT, "tools", "papers.json"), encoding="utf-8"))}
 from build_paper_page import documents, page_dir           # noqa: E402
+import _poppler
 PAPERS.update(documents())
 CAP = re.compile(r"^(FIG|Fig|FIGURE|Figure)\.?$")
 
@@ -37,7 +38,7 @@ CAP = re.compile(r"^(FIG|Fig|FIGURE|Figure)\.?$")
 def page_words(pdf, page):
     # Poppler writes XHTML with entities it does not declare, so the document is read with
     # regular expressions rather than a parser that is entitled to refuse it.
-    xml = subprocess.run(["pdftotext", "-bbox", "-f", str(page), "-l", str(page), pdf, "-"],
+    xml = subprocess.run([_poppler.tool("pdftotext"), "-bbox", "-f", str(page), "-l", str(page), pdf, "-"],
                          capture_output=True, text=True, check=True,
                          encoding="utf-8", errors="replace").stdout
     m = re.search(r'<page width="([\d.]+)" height="([\d.]+)"', xml)

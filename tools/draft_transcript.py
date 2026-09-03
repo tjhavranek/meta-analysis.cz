@@ -26,6 +26,7 @@ import re
 import subprocess
 import sys
 from collections import Counter
+import _poppler
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 sys.path.insert(0, os.path.join(ROOT, "tools"))
@@ -46,7 +47,7 @@ MATHY = re.compile(r"[=∑√∫±≤≥≈∼×·⋅αβγδεθλμπρστφ�
 
 
 def pdftotext(pdf, layout=True):
-    cmd = ["pdftotext"] + (["-layout"] if layout else []) + [pdf, "-"]
+    cmd = [_poppler.tool("pdftotext")] + (["-layout"] if layout else []) + [pdf, "-"]
     return subprocess.run(cmd, capture_output=True, text=True, check=True,
                           encoding="utf-8", errors="replace").stdout
 

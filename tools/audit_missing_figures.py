@@ -30,6 +30,7 @@ sys.path.insert(0, os.path.join(ROOT, "tools"))
 
 from build_paper_page import (documents, page_dir,             # noqa: E402
                               transcript_pdf_paths)
+import _poppler
 
 PAPERS = {p["project"]: p for p in
           json.load(open(os.path.join(ROOT, "tools", "papers.json"), encoding="utf-8"))}
@@ -45,7 +46,7 @@ def pdf_captions(pdfs):
     seen = {}
     for f in pdfs:
         for flags in ([], ["-raw"]):
-            txt = subprocess.run(["pdftotext"] + flags + [f, "-"], capture_output=True,
+            txt = subprocess.run([_poppler.tool("pdftotext")] + flags + [f, "-"], capture_output=True,
                                  encoding="utf-8", errors="replace").stdout or ""
             for m in CAPTION.finditer(txt):
                 n = m.group(1).lstrip("0") or m.group(1)

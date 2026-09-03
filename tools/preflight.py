@@ -28,6 +28,7 @@ from the GitHub MCP tool rather than curl -- silently, a poll of the API here re
 403 forever and looks exactly like a run that never finishes.
 """
 import hashlib, os, re, shutil, subprocess, sys, time, urllib.request
+import _poppler
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 WORKFLOW = os.path.join(ROOT, ".github", "workflows", "seo.yml")
@@ -134,15 +135,20 @@ def _witnesses(depth=12, most=6):
 def _pdftotext_flavour():
     """The first line of `pdftotext -v`, or a note that it is absent."""
     try:
-        out = subprocess.run(["pdftotext", "-v"], capture_output=True, text=True,
-                             errors="replace")
+        out = subprocess.run([_poppler.tool("pdftotext"), "-v"], capture_output=True, text=True,
+                             encoding="utf-8", errors="replace")
         return ((out.stdout or "") + (out.stderr or "")).strip().splitlines()[0][:40]
     except (OSError, IndexError):
         return "no pdftotext on PATH"
 
 
 def _has_poppler():
-    return "poppler" in _pdftotext_flavour().lower()
+    # Ask the resolver, not the version banner. poppler prints its name on the SECOND line
+    # of -v ("Copyright ... The Poppler Developers"); the first line is just
+    # "pdftotext version 24.04.0". Matching "poppler" against that first line alone was
+    # therefore false on every machine including the Ubuntu runner, so the skip below fired
+    # unconditionally and this gate has never actually run under preflight.
+    return _poppler.is_poppler(_poppler.tool("pdftotext"))
 
 
 def deployed():

@@ -34,6 +34,7 @@ sys.path.insert(0, os.path.join(ROOT, "tools"))
 from build_paper_page import (documents, page_dir,             # noqa: E402
                               transcript_pdf_paths)
 from verify_transcript import transcript_prose                 # noqa: E402
+import _poppler
 
 PAPERS = {p["project"]: p for p in
           json.load(open(os.path.join(ROOT, "tools", "papers.json"), encoding="utf-8"))}
@@ -134,7 +135,7 @@ def pdf_words(pdfs):
     words, spans, whole = [], [], []
     base = 0
     for f in pdfs:
-        txt = subprocess.run(["pdftotext", f, "-"], capture_output=True,
+        txt = subprocess.run([_poppler.tool("pdftotext"), f, "-"], capture_output=True,
                              encoding="utf-8", errors="replace").stdout or ""
         for m in WORD.finditer(txt):
             words.append(m.group(0).lower())

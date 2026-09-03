@@ -31,6 +31,7 @@ import re
 import subprocess
 import sys
 import unicodedata
+import _poppler
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
@@ -158,7 +159,7 @@ def pdf_counts(pdf):
     from collections import Counter
     lay_tokens = words(pdf_prose(pdf))
     plain_tokens = words(normalise(subprocess.run(
-        ["pdftotext", pdf, "-"], capture_output=True, text=True, check=True,
+        [_poppler.tool("pdftotext"), pdf, "-"], capture_output=True, text=True, check=True,
         encoding="utf-8", errors="replace").stdout))
     # A third reading, in content-stream order. Both modes above read a two-column page
     # geometrically, and on a two-column REFERENCE list they interleave the columns: an entry
@@ -168,7 +169,7 @@ def pdf_counts(pdf):
     # transcript of a two-column accepted manuscript is accused of inventing its own
     # bibliography.
     raw_tokens = words(normalise(subprocess.run(
-        ["pdftotext", "-raw", pdf, "-"], capture_output=True, text=True, check=True,
+        [_poppler.tool("pdftotext"), "-raw", pdf, "-"], capture_output=True, text=True, check=True,
         encoding="utf-8", errors="replace").stdout))
     layout, plain, raw = Counter(lay_tokens), Counter(plain_tokens), Counter(raw_tokens)
     best = Counter()
