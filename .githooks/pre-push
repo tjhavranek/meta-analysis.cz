@@ -129,11 +129,12 @@ if "$PY" -c "import latex2mathml" >/dev/null 2>&1; then
   run_check "checking /papers/..."                          tools/build_fulltext_page.py --check
 
   # The full-text gate reads the PDFs. CI installs poppler-utils; a Windows checkout
-  # usually finds Xpdf's pdftotext on PATH instead, which emits Latin-1 where poppler
-  # emits UTF-8. The extraction then fails to decode and the check reports a fault that
-  # does not exist in CI, so run it only against poppler and say so when it is skipped.
+  # usually finds Xpdf's pdftotext first on PATH instead, which returns a different text
+  # layer and reports failures that do not exist in CI. The tools no longer take PATH's
+  # word for it: tools/_poppler.py resolves a real poppler build wherever it lives (MiKTeX
+  # ships one), so ask the resolver rather than PATH, and skip only when it finds none.
   if [ -f tools/check_paper_pages.py ]; then
-    if pdftotext -v 2>&1 | grep -qi poppler; then
+    if "$PY" -c "import sys; sys.path.insert(0, 'tools'); import _poppler; sys.exit(0 if _poppler.is_poppler(_poppler.tool('pdftotext')) else 1)" >/dev/null 2>&1; then
       run_check "verifying the full-text pages (slow)..."   tools/check_paper_pages.py
     else
       echo "pre-push: full-text page check SKIPPED (needs poppler's pdftotext; this machine has $(pdftotext -v 2>&1 | head -1 | cut -c1-40))"

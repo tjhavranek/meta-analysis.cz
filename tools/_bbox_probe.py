@@ -5,7 +5,8 @@ pdf = sys.argv[2] if len(sys.argv) > 2 else 'substitution/substitution2.pdf'
 xlo = float(sys.argv[3]) if len(sys.argv) > 3 else 0.0
 xhi = float(sys.argv[4]) if len(sys.argv) > 4 else 1.0
 out = subprocess.run([_poppler.tool('pdftotext'), '-bbox', '-f', str(p), '-l', str(p), pdf, '-'],
-                     capture_output=True, text=True).stdout
+                     capture_output=True, text=True,
+                     encoding='utf-8', errors='replace').stdout or ''
 mp = re.search(r'<page width="([\d.]+)" height="([\d.]+)"', out)
 W, H = float(mp.group(1)), float(mp.group(2))
 words = []
