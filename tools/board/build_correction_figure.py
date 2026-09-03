@@ -558,9 +558,9 @@ def build(check=False):
         '<figcaption class="table-note">'
         '<b>What meta-analysis did to the number.</b> '
         f'<b>{len(out)} of the {n_all} papers here can be compared this way</b>: the '
-        'uncorrected number for a literature, the average of the estimates it reports, '
-        'against the paper&rsquo;s own corrected or best-practice estimate of the same '
-        'quantity. One dot each, placed by how far the second sits from the first. '
+        'average of the estimates a literature reports, against the paper&rsquo;s own '
+        'corrected or best-practice estimate of the same quantity. '
+        'One dot each, placed by how far the second sits from the first. '
         '<b>Red</b>: smaller <i>in absolute magnitude</i>. <b>Green</b>: larger. '
         + (f'<b>All {len(out)} moved toward zero</b>. ' if len(down) == len(out) else
            f'<b>{len(down)} moved toward zero, {n_up} away</b> from it. ')
