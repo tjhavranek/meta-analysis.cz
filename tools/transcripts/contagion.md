@@ -2,7 +2,7 @@
 
 ## FRONTMATTER
 
-Tomas Fiala^{a,b} and Tomas Havranek^{c,d}
+Tomas Fiala^{a,b} and Tomas Havranek^{c,d,*}
 
 ^{a}Swiss Finance Institute
 

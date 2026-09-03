@@ -90,7 +90,6 @@ TABLE 2. Determinants of Pricing Policies
 | Deposits | Deposits/liabilities |
 | Liquidity | Quick assets/total assets |
 
-
 The money market data that we use in the paper consist of the yields on instruments that are relevant to banks’ decision making concerning the setting of interest rates on their products (see Table 3 in the following section). The short-term market interest rates are represented by the CZEONIA reference interest rate and by Czech money market benchmark rates (PRIBORs) with maturities of up to one year. While CZEONIA is the average interest rate on unsecured overnight deposits placed by banks on the market on a given date, PRIBOR is the average quotation of reference banks for the sale of deposits. CZEONIA would be the preferred rate for our analysis, but it is only available for overnight deposits and not for longer maturities. Long-term market interest rates are represented by Czech interest rate swaps and yields on Czech government bonds with maturities of up to 10 years.
 
 ## 4 | Pass-Through Estimation
@@ -152,7 +151,7 @@ To choose between the mean group estimator and the pooled mean group estimator w
 
 Table 4 shows the results of the pooled mean group estimator for interest rate pass-through in the Czech banking system for the period 2004:01–2008:08; that is, from the start of our data sample to the onset of the financial crisis (the sub-prime mortgage crisis had not affected the Czech economy much before Lehman Brothers fell, but our main results hold even if we define the beginning of the crisis as summer 2007 or, alternatively, the start of 2009). The table shows almost complete long-term pass-through for most products—the long-term coefficients tend to be close to one, indicating that financial market rates are fully transmitted to the rates that banks charge their clients. The only exceptions in this respect are mortgages and overnight deposits, where the pass-through is far from complete (45% for mortgages and 28% for overnight deposits). These findings point to a well-functioning transmission mechanism before the financial crisis.
 
-The estimated error-correction parameters are in all cases negative and statistically significant, which suggests that the error correction model is specified well: if the bank rate exceeds the rate that
+The estimated error-correction parameters are in all cases negative and statistically significant, which suggests that the error correction model is specified well: if the bank rate exceeds the rate that would correspond to the long-term equilibrium with respect to the corresponding financial market rate, the bank rate decreases in the next period, and vice versa. The parameter can also be thought of as the speed of adjustment between the short-term reaction and the long-term equilibrium. The speed of adjustment is relatively homogeneous across bank products, with slightly smaller values for household-related products compared with firm-related products. The short-run reaction of bank rates to changes in the market rate varies a lot across products and signals incomplete short-term pass-through for all products except large loans with a floating rate.
 
 TABLE 4. Interest Rate Pass-Through before the Crisis
 
@@ -191,8 +190,6 @@ TABLE 5. Interest Rate Pass-Through after the Crisis
 | Adjustment lag | 1.2 | 0.8 | 3 | 0.1 | 8.3 | 0 | 0 |
 | Observations | 930 | 354 | 742 | 44 | 1081 | 1966 | 1869 |
 Notes: Estimated for the period 2008:09–2013:12 by the pooled mean group estimator (Pesaran et al., 1999); standard errors are shown in parentheses. The mean adjustment lag is computed as (short-term PT minus long-term PT)/(error correction) and is denominated in months. PT stands for pass-through. \* denotes statistical significance at the 10% level, \*\* at the 5% level, and \*\*\* at the 1% level.
-
-would correspond to the long-term equilibrium with respect to the corresponding financial market rate, the bank rate decreases in the next period, and vice versa. The parameter can also be thought of as the speed of adjustment between the short-term reaction and the long-term equilibrium. The speed of adjustment is relatively homogeneous across bank products, with slightly smaller values for household-related products compared with firm-related products. The short-run reaction of bank rates to changes in the market rate varies a lot across products and signals incomplete short-term pass-through for all products except large loans with a floating rate.
 
 Our results also suggest that the spread (markup) between the market rate and the bank rate differs a lot across products. The spread is statistically insignificant or negative for deposits, which is intuitive as banks tend to set deposit rates that are lower than their alternative costs of funding (in recent years there have been exceptions in the Czech bank sector in this respect, and we will comment on this issue when discussing the results computed for the post-crisis period). For loan products, the spread tends to be the smallest for loans with collateral (mortgages) and large loans with floating rates. Small loans display larger spreads, as do large loans with a fixed rate, but for the latter product we only have a few observations in the data, since few banks regularly provide loans above CZK 30 million with a fixed rate. Finally, we compute the mean adjustment lag as (short-term PT minus long-term PT)/(error correction). With the exception of large loans with a fixed rate, our results point to relatively fast adjustment from the short-run reaction to the long-term equilibrium: between 1 and 2 months. We conclude that before the financial crisis market interest rates were fully passed through to the rates that bank charge firms within 2 months following a change in the market rate.
 
@@ -313,7 +310,6 @@ TABLE 7. Determinants of Interest Rate Pass-Through, DEA Used
 | R2 | 0.86 |  | 0.87 |  | 0.70 |  |
 | Observations | 83 |  | 83 |  | 84 |  |
 Notes: Standard errors, reported in parentheses, are clustered at the bank level. The regressions are estimated using weighted least squares, with the precision of the pass-through estimates (the inverse of the estimates’ standard errors) taken as the weight. The dependent variable is winsorized using the 5% threshold for both tails. DEA = data envelopment analysis. LTPT = long-term pass-through. \* denotes statistical significance at the 10% level, \*\* at the 5% level, and \*\*\* at the 1% level.
-
 
 Our results corroborate profound changes in the interest rate pass-through mechanism during the crisis, which we have already discussed in section 4. The dummy variable corresponding to the post-crisis period is statistically significant in all specifications at the 5% level. The pass-through of financial market rates to bank loan rates weakens dramatically: when bank-level characteristics are controlled for, the estimated change in the long-term pass-through coefficient approaches one, which would translate an almost complete pass-through before the crisis to no significant pass-through after the crisis for an average loan product.^{9} Moreover, adjustment lags shorten after the crisis, which suggests that although the long-term relationship between market and bank rates gets weaker, the adjustment between the short- and long-run reaction gets faster: banks change their rates more frequently. Spreads (markups) increase after the crisis, which reflects elevated risk aversion of individual banks.
 
@@ -547,7 +543,6 @@ TABLE B2. Summary Statistics of Variables for Deterministic Frontier Efficiency 
 | | y2 | interbank loans | 300 | 27,900 | 46,800 | 10 | 282,000 |
 | | y3 | investment assets | 300 | 32,000 | 70,500 | 0 | 394,000 |
 Notes: All variables except for x3 in CZK millions. Reported variables are annualized. Balanced panel of 30 banks over the period of 2004–2013.
-
 
 TABLE B3. Correlations Between Frontier Efficiencies and Traditional Efficiency Measures
 

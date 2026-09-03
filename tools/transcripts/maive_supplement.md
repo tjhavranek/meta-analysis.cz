@@ -70,7 +70,7 @@ We simulate a meta-analysis environment where the object of interest is a regres
 
 Acknowledging the severe limitations of this selection scenario as a description of researchers’ actual behavior, we use it merely to highlight the *qualitative* implications of selection on standard errors for the performance of the various estimators considered. That said, Table S1 and Table S2 show two examples that could potentially lead to an outcome observationally similar to our stylized scenario. Table S1 makes it clear that different computations of the standard error lead to dramatically different results and hence very different reported precision. While most researchers in this literature (the effect of class size on test scores) will agree that the computation of the standard error should take into account clustering, not all will agree on the precise form of clustering and whether bootstrap should be used. Table S2 shows that including or removing control variables can sometimes change the standard error without much change in the estimated effect. Indeed, in the last three columns the point estimate is virtually identical.
 
-The other mechanism considered in our simulations and discussed in the next section is based on *p*-hacking, whereby the researcher engages in a continuous search of statistical significance by trying many different control variables, which changes estimates and standard errors at the same time. Although more realistic, this scenario features significantly less control over the
+The other mechanism considered in our simulations and discussed in the next section is based on *p*-hacking, whereby the researcher engages in a continuous search of statistical significance by trying many different control variables, which changes estimates and standard errors at the same time. Although more realistic, this scenario features significantly less control over the relative degree of selection on standard errors. One important advantage of *p*-hacking selection is its ability to generate selection of the two aforementioned flavors while, at the same time, causing heterogeneity in the reported estimates. But first back to the stylized scenario.
 
 TABLE S1. Regression of test scores on class size: the importance of clustering
 
@@ -104,8 +104,6 @@ TABLE S2. Regression of test scores on class size: the importance of controls
 | School intercepts | No | Yes | Yes | Yes |
 | Sample | 5,861 | 5,861 | 5,861 | 5,861 |
 *Notes*: Adapted from Krueger (1999)^{47}. Dependent variable: test score percentile. “Small class” denotes the treatment variable in the STAR experiment. Other variables denote characteristics of children and teachers. All models also include one control variable (teacher aides) that is not reported in the table. Standard errors in parentheses.
-
-relative degree of selection on standard errors. One important advantage of *p*-hacking selection is its ability to generate selection of the two aforementioned flavors while, at the same time, causing heterogeneity in the reported estimates. But first back to the stylized scenario.
 
 #### Generation of Primary Data.
 
@@ -272,7 +270,7 @@ We then consider two extensions of the baseline *p*-hacking simulation framework
 
 In addition, Table S6 reports the average $F$-statistics of the first-stage regression. The $F$-statistics tend to decline with $\psi$, since an increased $\psi$ indicates more SE-selection. In any case, the average $F$ is at least in the hundreds, if not in the thousands. This is consistent with the results from the our empirical applications (Appendix S2), where the $F$-statistics of most meta-analyses for which a first-stage regression can be run are also at least in the hundreds. We conclude that inverse sample size is typically a strong instrument for reported variance.
 
-Regarding Figure S7, the simple average measures the effect size inflation caused by E-selection. It increases with $\psi$, because E-selection increases with $\psi$: the larger its value, the larger the (positive) biases in the individual studies subject to selection. All results should thus be evaluated relative to the simple average. SE-selection also increases with $\psi$, and more than proportionally so (see Table S5). For $\psi = 0.5$, SE-selection is fairly low and all methods correct a large chunk of the selection bias. As $\psi$ goes up, so does the relative importance of SE-selection. As a consequence, the capacity of these methods to correct for the increasing bias deteriorates rapidly. For most methods, the biases due to spurious precision eventually surpass
+Regarding Figure S7, the simple average measures the effect size inflation caused by E-selection. It increases with $\psi$, because E-selection increases with $\psi$: the larger its value, the larger the (positive) biases in the individual studies subject to selection. All results should thus be evaluated relative to the simple average. SE-selection also increases with $\psi$, and more than proportionally so (see Table S5). For $\psi = 0.5$, SE-selection is fairly low and all methods correct a large chunk of the selection bias. As $\psi$ goes up, so does the relative importance of SE-selection. As a consequence, the capacity of these methods to correct for the increasing bias deteriorates rapidly. For most methods, the biases due to spurious precision eventually surpass the selection bias itself; i.e., the methods actually worsen the existing publication bias. Notable exceptions are Andrews-Kasy and *p*-uniform∗, which always correct part of the bias.
 
 FIGURE S7. Bias: *p*-hacking selection, no effect ($\alpha_1 = 0$), various values of $\psi$
 
@@ -294,8 +292,6 @@ TABLE S6. First-stage average $F$-statistics in the *p*-hacking environment
 | $\alpha_1 = 0$ | 841 | 843 | 719 | 431 | 214 |
 | $\alpha_1 = 1$ | 886 | 909 | 678 | 311 | 130 |
 *Notes*: The table reports the average $F$-statistic across the $R = 2000$ replications in each simulation environment.
-
-the selection bias itself; i.e., the methods actually worsen the existing publication bias. Notable exceptions are Andrews-Kasy and *p*-uniform∗, which always correct part of the bias.
 
 Our proposed adjustment improves all methods except Andrews-Kasy and *p*-uniform∗—where, as we have noted, the adjustment has weaker statistical justification. In EK and PET-PEESE, it works better when instrumenting the SEs in the meta-regression and using no weights. Thus corrected, these estimators tend to perform the best, especially for large $\psi$. The profiles of MSE in Figure S28 in Appendix S6 are very similar to the profiles of bias in Figure S7.
 

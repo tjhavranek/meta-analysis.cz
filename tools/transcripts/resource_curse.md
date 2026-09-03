@@ -179,7 +179,7 @@ In line with the previous meta-analysis literature (Doucouliagos & Stanley, 2009
 
 The right panel of Figure 1 presents a variant of the funnel plot resembling more closely the simple meta-regression model presented earlier in this paper. The vertical line denotes an estimate of the mean effect of natural resources on economic growth derived using fixed effects. The two dashed lines that join the vertical line at the top of the funnel denote the boundaries of conventional statistical significance at the 5% level: estimates outside these boundaries are statistically significantly different from the underlying effect as computed by fixed effects. These outlying estimates form, apparently, much more than 5% of the data. This could indicate publication bias in favor of statistically significant estimates, but also heterogeneity in data and methods. The remaining dashed line visualizes a regression line from our simple meta-regression model when the effect size is regressed on the standard error: the slope is negative, which suggests publication bias, and the intercept is slightly above zero, which indicates that publication bias is responsible for the mean reported negative relationship between natural resources and growth. In the next step we provide a formal test of publication selection bias.
 
-To assess the extent of publication bias, we estimate Eqn. (3); that is, we regress the partial correlation coefficient on its standard error using the so-called funnel asymmetry test (note the relation between these regressions and the right-hand panel of Figure 1). A negative coefficient attached to the standard error suggests there is some preference in the literature for results documenting the natural resource curse. The estimated constant provides the true (publication selection-free) effect of natural resources on economic growth. For example, if the constant is negative, the coefficient suggests the existence of the natural resource curse in line with Sachs and Warner (1995). We present the results in Table 3. We use four different econometric methods: ordinary least squares with clustered standard errors, instrumental variables estimation, fixed effects estimation, and mixed effects
+To assess the extent of publication bias, we estimate Eqn. (3); that is, we regress the partial correlation coefficient on its standard error using the so-called funnel asymmetry test (note the relation between these regressions and the right-hand panel of Figure 1). A negative coefficient attached to the standard error suggests there is some preference in the literature for results documenting the natural resource curse. The estimated constant provides the true (publication selection-free) effect of natural resources on economic growth. For example, if the constant is negative, the coefficient suggests the existence of the natural resource curse in line with Sachs and Warner (1995). We present the results in Table 3. We use four different econometric methods: ordinary least squares with clustered standard errors, instrumental variables estimation, fixed effects estimation, and mixed effects maximum likelihood estimation. The results vary across specifications. The estimated constant is also not robust to different econometric methods.
 
 TABLE 2. Estimates of the overall partial correlation coefficient
 
@@ -191,8 +191,6 @@ TABLE 2. Estimates of the overall partial correlation coefficient
 Notes. Simple average represents the arithmetic mean. The fixed-effect estimator uses the inverse of the variance as the weight for the PCC. The random-effects specification additionally considers between-study heterogeneity.
 
 FIGURE 1. Funnel plot of the effect of natural resources on economic growth.
-
-maximum likelihood estimation. The results vary across specifications. The estimated constant is also not robust to different econometric methods.
 
 In Table 5 in the Appendix we present two robustness checks. In the first case, we run the specification without employing any weights. In the second case, we weight the observations by the inverse of the number of regressions reported per study to give each study the same weight. The results largely confirm our baseline results discussed in the previous paragraph. We hypothesize that the instability of these bivariate regression results stems from the omission of some important moderator variables (Doucouliagos & Stanley, 2009), which we address in the following section. In any case, the visual and regression analyses taken together do not provide evidence for the natural resource curse hypothesis, and also offer only limited evidence for any substantial publication bias.
 
@@ -540,7 +538,7 @@ Zhang, X., Xing, L., Fan, S., & Luo, X. (2008). Resource abundance and regional 
 
 11. Brunnschweiler, C. N., 2008, “Cursing the Blessings? Natural Resource Abundance, Institutions, and Economic Growth”, World Development, 36(3), 399–419.
 
-12. Brunnschweiler, C. N. & E. H. Bulte, 2008, “The Resource Curse Revisited and Revised: A Tale of Paradoxes
+12. Brunnschweiler, C. N. & E. H. Bulte, 2008, “The Resource Curse Revisited and Revised: A Tale of Paradoxes and Red Herrings”, Journal of Environmental Economics and Management, 55(3), 248–264.
 
 TABLE 5. The true effect and publication selection—a robustness check
 
@@ -586,8 +584,6 @@ TABLE 5. The true effect and publication selection—a robustness check
 |  | F(1, 42) = 1.15 |  |  | Wald test: $\chi^2(1)$ = 0.14 |  |  |
 |  | Prob > F = 0.28 |  |  | Prob > $\chi^2$ = 0.70 |  |  |
 Notes: The dependent variable is PCC. The equation $PCC_{is} = \beta_0 + \beta_1 * SE + \epsilon_{is}$ used. The standard errors of the regression parameters are clustered at the study level. Panel (A) and Panel (B) represent unweighted results. Panel A, columns (2)–(4) represent OLS with cluster-robust standard errors at the study level; columns (5)–(7) represent IV estimation, where the instrumented variable is the inverse of the square root of the number of degrees of freedom. Panel B, columns (2)–(4) represent fixed-effects estimation at the study level; columns (5)–(7) represent mixed-effects ML regression. The reported t-statistics are based on heteroskedasticity cluster-robust standard errors. Panel (C) and Panel (D) results are weighted by the inverse of the number of regression specifications per study.
-
-and Red Herrings”, Journal of Environmental Economics and Management, 55(3), 248–264.
 
 13. Cavalcanti, T. V. de V. & K. Mohaddes & M. Raissi, 2011, “Growth, Development and Natural Resources: New Evidence Using a Heterogeneous Panel Analysis”, The Quarterly Review of Economics and Finance, 51(4), 305–318.
 

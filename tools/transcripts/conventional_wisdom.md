@@ -171,7 +171,7 @@ Many of the aforementioned examples, even though they consider very different re
 
 We assess this pattern more systematically for our selection of 24 meta-studies. Table 2 compares the corrected mean from the meta-analysis with (i) a narrative reference study, (ii) the answer from an artificial intelligence (AI), and (iii) the unweighted simple mean from the meta-analysis.
 
-(i) For each of the meta-studies, we searched for a conventional wisdom point estimate from a narrative reference study. This seminal paper can be a recent conventional literature survey or a highly cited and well-published primary study that set the tone for follow-up primary
+(i) For each of the meta-studies, we searched for a conventional wisdom point estimate from a narrative reference study. This seminal paper can be a recent conventional literature survey or a highly cited and well-published primary study that set the tone for follow-up primary studies in the respective literature. Importantly, the narrative study needs to provide a preferred estimate of the parameter of interest. The reference study is cited in column (2), and its qualitative as well as quantitative assessment are given in columns (3) and (4) of Table 2.
 
 TABLE 2. Conventional wisdom and results from the 24 selected meta-analyses.
 
@@ -241,8 +241,6 @@ TABLE 3. Relative research revision (R3) indices.
 | **Mean** | **−61%** | **−53%** | **−46%** |
 
 Note: The table presents the calculations of the three relative research revision (R3) indices for the 24 final meta-analyses according to the information in Table 2.
-
-studies in the respective literature. Importantly, the narrative study needs to provide a preferred estimate of the parameter of interest. The reference study is cited in column (2), and its qualitative as well as quantitative assessment are given in columns (3) and (4) of Table 2.
 
 (ii) Alternatively, we also asked an AI, specifically the large language model (LLM) GPT-4^{3}, for a best possible point estimate of the parameters of interest in our 24 meta-studies. The generic question to the AI for each of the 24 fields reads as follows:
 
