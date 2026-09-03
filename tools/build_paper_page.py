@@ -186,6 +186,20 @@ def inline(text, refs_are_numbered=False, link_cites=True, in_table=False):
                 else:
                     parts.append(html.escape(tok))
             return '<sup class="cite">%s</sup>' % "".join(parts)
+        # A marker can carry BOTH a citation and a note: /correlations/ prints "3,iv",
+        # a reference and an endnote in one superscript. The numbered-citation branch
+        # above only accepts digits and commas, the roman branch below only accepts
+        # numerals, so a mixed marker matched neither and came out as plain text --
+        # losing both links at once. Five of that paper's fourteen endnotes were
+        # unreachable because of it, and five citations went unlinked with them.
+        if refs_are_numbered and "," in body:
+            toks = [t.strip() for t in body.split(",")]
+            if (all(re.fullmatch(r"\d+|[ivxlcdm]+", t) for t in toks)
+                    and any(t.isdigit() for t in toks)
+                    and any(not t.isdigit() for t in toks)):
+                out = [('<a href="#ref-%s">%s</a>' % (t, t)) if t.isdigit()
+                       else ('<a href="#note-%s">%s</a>' % (t, t)) for t in toks]
+                return '<sup class="cite">%s</sup>' % ",".join(out)
         if re.fullmatch(r"[ivxlcdm]+", body):
             return '<sup class="cite"><a href="#note-%s">%s</a></sup>' % (body, body)
         # References are author-year, so a bare number is an endnote marker, not a citation.
