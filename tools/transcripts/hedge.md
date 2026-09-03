@@ -266,7 +266,7 @@ TABLE 2. Full sample results.
 | Studies | 74 | 74 | 74 | 73 | 74 | 74 |
 | Observations | 1019 | 1019 | 1019 | 979 | 1019 | 1019 |
 | Panel B: Nonlinear models | | | | | | |
-|  | Top10 | WAAP | Stem-based | Kinked-meta | Selection model | p-uniform∗ |
+|  | Top10 | WAAP | Stem-based | Kinked-meta | Selection model | p-uniform* |
 | Publication bias |  |  |  | 0.183∗ | $p$ = .631 | $L$ = 0.364 |
 |  |  |  |  | (0.106) | (0.092) | ($p$ = .834) |
 | Effect beyond bias | 0.310∗∗∗ | 0.325∗∗∗ | 0.355∗∗∗ | 0.320∗∗∗ | 0.274∗∗∗ | 0.386∗∗∗ |
@@ -281,7 +281,7 @@ Considering the above-discussed results reported in Panel A of Table 2, we find 
 
 Panel A of Table 2 also shows the $\kappa$ estimates that reflect the estimated magnitude of the monthly alphas adjusted for the publication selection bias. We observe that these estimates range between 0.301 and 0.369, and they are strongly statistically significant at a better than 1% level in all specifications. It is noteworthy that the unconditional mean of monthly alpha estimates of 0.36 highlighted in the histogram in Figure 3 falls within this range of estimates corrected for the publication selection bias. Considering perhaps the most conservative estimate reported in Panel A of Table 2, we observe that the lower bound of the bootstrapped confidence interval of the IV specification is 0.157. This suggests that the true hedge fund alpha is unlikely to be below 1.9% per annum (0.157*12). These results further strengthen our earlier conclusion that the alpha estimates in our sample are not contaminated by selective publication, and hedge funds do earn positive alphas for their investors.
 
-Our estimates of Equation (2) reported in Panel A of Table 2 are subject to several limitations. First, these tests of selective publication are based on an assumption of a linear relationship between the estimate and its standard error. In reality, this association may not be linear. For example, it may exhibit discontinuities around conventional levels of statistical significance, that is, when the *t*-statistics approaches 1.96. Second, the IV specification may not fully remedy the endogeneity problem because it may arise for reasons other than the bias due to omitted variables related to the research design in primary studies. Gechert et al. (2022) point out that endogeneity may arise even when deliberately reporting spuriously precise estimates, for example, due to reverse causality. Furthermore, since the standard error is itself an estimate, endogeneity can also manifest itself through the measurement error. We address these shortcomings in Panel B of Table 2. To address the first issue, we use nonlinear techniques for publication bias correction. To address the second limitation, we use the p-uniform∗ approach recently developed by van Aert and van Assen (2020) that does not rely on the assumption of exogeneity.
+Our estimates of Equation (2) reported in Panel A of Table 2 are subject to several limitations. First, these tests of selective publication are based on an assumption of a linear relationship between the estimate and its standard error. In reality, this association may not be linear. For example, it may exhibit discontinuities around conventional levels of statistical significance, that is, when the *t*-statistics approaches 1.96. Second, the IV specification may not fully remedy the endogeneity problem because it may arise for reasons other than the bias due to omitted variables related to the research design in primary studies. Gechert et al. (2022) point out that endogeneity may arise even when deliberately reporting spuriously precise estimates, for example, due to reverse causality. Furthermore, since the standard error is itself an estimate, endogeneity can also manifest itself through the measurement error. We address these shortcomings in Panel B of Table 2. To address the first issue, we use nonlinear techniques for publication bias correction. To address the second limitation, we use the p-uniform* approach recently developed by van Aert and van Assen (2020) that does not rely on the assumption of exogeneity.
 
 In the first column of Panel B of Table 2, we report results based on the Top10 method proposed by Stanley et al. (2010). The method is based on a simple proposition that the bias arising from aggregating potentially selectively reported coefficients can be addressed by simply considering only the 10% most precise estimates. The second column of Panel B of Table 2 shows results based on the Weighted Average of the Adequately Powered (WAAP) model proposed by Ioannidis et al. (2017). Similarly to Top10, also WAAP is based on averaging only a subset of published coefficients. Ioannidis et al. (2017) examine the statistical power of the results published in the field of economics, and they propose dropping all estimates with statistical power lower than 80% and weighting the remaining estimates by the inverse of their variance. In the third column of Panel B of Table 2, we report the results from the Stem-based method recently developed by Furukawa (2020). The stem-based method builds on Stanley et al. (2010), but it aims at limiting the loss of sample variation that results from discarding 90% of the less precise estimates. Furukawa (2020) optimizes the trade-off between the bias and variance, discards only the estimates that do not add value in the light of this trade-off, and uses the remaining estimates to compute the average value. The first three columns in Panel B of Table 2 show estimates ranging from 0.310 to 0.355, which falls within the range documented earlier for the linear methods reported in Panel A (0.301–0.369). Thus, even based on these alternative methods, we reach a similar conclusion on the limited impact of publication bias and on the values of alpha estimates corrected for a potential publication bias.
 
@@ -291,7 +291,7 @@ The fifth column of Panel B of Table 2 shows our results for the selection model
 
 The Andrews and Kasy (2019) model relies on several assumptions. It requires the estimates and their standard errors to be statistically independent. It also assumes that the probability of publication is the same for all estimates in a given interval. We test these assumptions in Table A.1 using the Kranz and Putz (2022) framework. These tests suggest some of the underlying assumptions of the selection model (especially the independence assumption) may be violated in many of our samples. Therefore, as robustness checks, we also use models that do not rely on the underlying assumption of no correlation between the estimates and their standard errors in the absence of publication bias.
 
-The last column in Panel B of Table 2 shows the results of the p-uniform∗ model by van Aert and van Assen (2020). Harvey et al. (2016) and Harvey (2017) suggest that “*p*-hacking,” that is, a greater tendency to publish statistically significant rather than insignificant results, is a major problem in financial economics research. They argue that “*p*-hacking” may have led to a number of “false positives” to be reported in published research on factors explaining the cross-sectional variation in realized returns. This introduces important distortions in modeling systematic risk in asset pricing because the association between many of these variables and realized returns is unlikely to persist in the future. Following this argument, we examine potential “*p*-hacking” in research on hedge fund performance. To do so, we use the p-uniform∗ model recently proposed by van Aert and van Assen (2020), which is based on evaluating the distribution of *p*-values around the 5% cutoff level that is conventionally used to assess statistical significance. A tendency to publish statistically significant results implies an over-representation of *p*-values just below the 5% cutoff and an under-representation of *p*-values just above it. P-uniform∗ corrects for this potential bias by assigning different weights to estimates of various degrees of statistical significance based on the estimated publication probability. This selection model is robust to the assumption of zero correlation between estimates and standard errors in the absence of any publication bias. Our results based on this methodological approach are consistent with our previous findings. The test statistic for the publication bias (denoted “*L*”) is statistically insignificant, which again suggests that the publication of alpha estimates in primary studies is not selective. In fact, this method suggests a somewhat higher value of 0.386 for alpha estimates corrected for the publication bias. Thus, we reach similar conclusions about the absence of publication selection bias and a somewhat similar estimate of the true mean value of the alpha coefficient even when using the p-uniform∗ method, which does not require the exogeneity assumption for the standard errors to be satisfied.
+The last column in Panel B of Table 2 shows the results of the p-uniform* model by van Aert and van Assen (2020). Harvey et al. (2016) and Harvey (2017) suggest that “*p*-hacking,” that is, a greater tendency to publish statistically significant rather than insignificant results, is a major problem in financial economics research. They argue that “*p*-hacking” may have led to a number of “false positives” to be reported in published research on factors explaining the cross-sectional variation in realized returns. This introduces important distortions in modeling systematic risk in asset pricing because the association between many of these variables and realized returns is unlikely to persist in the future. Following this argument, we examine potential “*p*-hacking” in research on hedge fund performance. To do so, we use the p-uniform* model recently proposed by van Aert and van Assen (2020), which is based on evaluating the distribution of *p*-values around the 5% cutoff level that is conventionally used to assess statistical significance. A tendency to publish statistically significant results implies an over-representation of *p*-values just below the 5% cutoff and an under-representation of *p*-values just above it. P-uniform∗ corrects for this potential bias by assigning different weights to estimates of various degrees of statistical significance based on the estimated publication probability. This selection model is robust to the assumption of zero correlation between estimates and standard errors in the absence of any publication bias. Our results based on this methodological approach are consistent with our previous findings. The test statistic for the publication bias (denoted “*L*”) is statistically insignificant, which again suggests that the publication of alpha estimates in primary studies is not selective. In fact, this method suggests a somewhat higher value of 0.386 for alpha estimates corrected for the publication bias. Thus, we reach similar conclusions about the absence of publication selection bias and a somewhat similar estimate of the true mean value of the alpha coefficient even when using the p-uniform* method, which does not require the exogeneity assumption for the standard errors to be satisfied.
 
 In contrast to the more conventional linear approaches reported in Panel A of Table 2, the more sophisticated nonlinear approaches shown in Panel B of Table 2 do not require the linearity and exogeneity assumptions to be met. Overall, these approaches lead to fairly similar conclusions about the limited impact of selective publication on the alpha estimates reported in primary studies. Only the Kinked-meta model shows some marginally significant evidence of publication selection bias. However, even this approach does not dramatically alter the estimated value of alpha coefficients corrected for the publication bias. Furthermore, the selection model suggests that statistically insignificant estimates may be somewhat less likely to get published. However, the estimate for the mean alpha coefficient does not dramatically change after correcting for this bias. The interval of corrected alpha estimates based on the more sophisticated approaches reported in Panel B is slightly wider, and it ranges from 0.274 to 0.386. However, both the upper bound and the lower bound of this interval are fairly close to the unconditional mean of 0.36. These results thus provide further support for our conclusion that inferences about the magnitude of the alpha coefficient in the literature on hedge fund performance are not significantly affected by publication selection bias.
 
@@ -301,7 +301,7 @@ Finally, we follow recent advances in econometrics and conduct a test of “*p*-
 
 We find these results remarkable, especially when contrasted with the abundant empirical evidence on the prevalence of publication selection bias in a multitude of other settings in economics and finance, for example, Stanley (2001, 2005); Stanley and Doucouliagos (2010); Havranek (2015); Brodeur et al. (2016); Bruns and Ioannidis (2016); Stanley and Doucouliagos (2017); Christensen and Miguel (2018); Brodeur et al. (2020); Blanco-Perez and Brodeur (2020), and Zigraiova et al. (2021). We can only speculate about the underlying reasons why we do not observe selective publication in research on hedge fund performance. We consider it likely that the presence of two opposing perspectives, both of which may be quite plausible, limits researchers’ and editors’ incentives to systemically discard either high or low estimates of hedge fund performance. On the one hand, hedge funds likely employ very talented wealth managers who are highly incentivized to generate returns for investors. Hence, it may be reasonable to expect that these bright and highly motivated minds are capable of identifying assets that are temporarily mispriced due to investor irrationality or the impact of passive investment. Hedge funds can possibly earn abnormal returns by investing in these assets, which implies positive alpha coefficients. On the one hand, following the EMH, hedge funds mostly trade on competitive markets where it may be challenging to systematically earn more than the “normal” rate of return. In addition, the high management and performance fees that hedge funds charge may imply that their net-of-fee performance may be inferior to passive indexing. This would imply either insignificant or negative alphas. We consider it plausible that the lack of a clear a priori theoretical prediction about the expected sign of estimated coefficients may limit the incentives for selective reporting and increase the readiness of academic journals to publish both positive and insignificant or negative results on hedge fund performance.
 
-To further strengthen our analysis, we perform several robustness checks intended to ensure that our results are not driven by the heterogeneity in the mix of various alpha coefficients estimated in the primary studies using a wide range of techniques. Heterogeneity in estimation may potentially lead to offsetting biases that would compromise our ability to detect selective publication in the full sample. For example, it is acknowledged that the p-uniform∗ method tends to overestimate the measured effect when large heterogeneity is present among the estimates collected from the primary studies (Carter et al., 2019). To further strengthen the confidence in our findings and to rule out the possibility that our tests are adversely affected by the diversity of the techniques used in estimating the alpha coefficients in the primary studies, we proceed by analyzing more homogeneous subsets of alpha estimates to determine whether selective publication can be observed in any of these subsamples.
+To further strengthen our analysis, we perform several robustness checks intended to ensure that our results are not driven by the heterogeneity in the mix of various alpha coefficients estimated in the primary studies using a wide range of techniques. Heterogeneity in estimation may potentially lead to offsetting biases that would compromise our ability to detect selective publication in the full sample. For example, it is acknowledged that the p-uniform* method tends to overestimate the measured effect when large heterogeneity is present among the estimates collected from the primary studies (Carter et al., 2019). To further strengthen the confidence in our findings and to rule out the possibility that our tests are adversely affected by the diversity of the techniques used in estimating the alpha coefficients in the primary studies, we proceed by analyzing more homogeneous subsets of alpha estimates to determine whether selective publication can be observed in any of these subsamples.
 
 ## 5 | SUBSAMPLE RESULTS
 
@@ -334,7 +334,7 @@ TABLE 3. Survivorship and backfiling biases.
 | First-stage robust F-stat |  |  |  | 11.29 |  |  |
 | Studies | 50 | 50 | 50 | 49 | 50 | 50 |
 | Observations | 605 | 605 | 605 | 565 | 605 | 605 |
-| Panel B: nonlinear | Top10 | WAAP | Stem-based | Kinked-meta | Selection model | p-uniform∗ |
+| Panel B: nonlinear | Top10 | WAAP | Stem-based | Kinked-meta | Selection model | p-uniform* |
 | Publication bias |  |  |  | 0.519∗∗∗ | $P$ = .632 | NA |
 |  |  |  |  | (0.125) | (0.115) | (NA) |
 | Effect beyond bias | 0.267∗∗∗ | 0.248∗∗∗ | 0.220∗∗∗ | 0.234∗∗∗ | 0.262∗∗∗ | 0.325∗∗∗ |
@@ -353,7 +353,7 @@ TABLE 3. Survivorship and backfiling biases.
 | First-stage robust F-stat |  |  |  | 3.76 |  |  |
 | Studies | 29 | 29 | 29 | 29 | 29 | 29 |
 | Observations | 414 | 414 | 414 | 414 | 414 | 414 |
-| Panel B: nonlinear | Top10 | WAAP | Stem-based | Kinked-meta | Selection model | p-uniform∗ |
+| Panel B: nonlinear | Top10 | WAAP | Stem-based | Kinked-meta | Selection model | p-uniform* |
 | Publication bias |  |  |  | 0.343∗ | $P$ = 0.719 | NA |
 |  |  |  |  | (0.191) | (0.124) | (NA) |
 | Effect beyond bias | 0.301∗∗∗ | 0.359∗∗∗ | 0.331∗∗∗ | 0.351∗∗∗ | 0.282∗∗∗ | 0.507∗∗∗ |
@@ -393,7 +393,7 @@ TABLE 4. Risk models.
 | First-stage robust F-stat |  |  |  | 14.47 |  |  |
 | Studies | 18 | 18 | 18 | 18 | 18 | 18 |
 | Observations | 167 | 167 | 167 | 167 | 167 | 167 |
-| Panel B: nonlinear | Top10 | WAAP | Stem-based | Kinked-meta | Selection model | p-uniform∗ |
+| Panel B: nonlinear | Top10 | WAAP | Stem-based | Kinked-meta | Selection model | p-uniform* |
 | Publication bias |  |  |  | 0.450 | $p$ = .613 | $L$ = 0.188 |
 |  |  |  |  | (0.347) | (0.177) | ($p$ = .911) |
 | Effect beyond bias | 0.446∗∗∗ | 0.454∗∗∗ | 0.349∗∗ | 0.405∗∗∗ | 0.426∗∗∗ | 0.427∗∗∗ |
@@ -412,7 +412,7 @@ TABLE 4. Risk models.
 | First-stage robust F-stat |  |  |  | 3.41 |  |  |
 | Studies | 33 | 33 | 33 | 33 | 33 | 33 |
 | Observations | 298 | 298 | 298 | 298 | 298 | 298 |
-| Panel B: nonlinear | Top10 | WAAP | Stem-based | Kinked-meta | Selection model | p-uniform∗ |
+| Panel B: nonlinear | Top10 | WAAP | Stem-based | Kinked-meta | Selection model | p-uniform* |
 | Publication bias |  |  |  | 0.019 | $p$ = .900 | $L$ = 0.269 |
 |  |  |  |  | (0.173) | (0.212) | ($p$ = .874) |
 | Effect beyond bias | 0.229∗∗∗ | 0.297∗∗∗ | 0.325∗∗∗ | 0.298∗∗∗ | 0.302∗∗∗ | 0.305∗∗∗ |
@@ -448,7 +448,7 @@ TABLE 5. Instrumental variables.
 | First-stage robust F-stat |  |  |  | 155.41 |  |  |
 | Studies | 3 | 3 | 3 | 3 | 3 | 3 |
 | Observations | 46 | 46 | 46 | 46 | 46 | 46 |
-| Panel B: nonlinear | Top10 | WAAP | Stem-based | Kinked-meta | Selection model | p-uniform∗ |
+| Panel B: nonlinear | Top10 | WAAP | Stem-based | Kinked-meta | Selection model | p-uniform* |
 | Publication bias |  |  |  | 2.418∗∗∗ | $p$ = .341 | $L$ = 3.551 |
 |  |  |  |  | (0.431) | (0.103) | ($p$ = .169) |
 | Effect beyond bias | −0.036 | 0.018 | 0.078 | −0.060 | 0.231∗∗∗ | 0.298∗∗∗ |
@@ -467,7 +467,7 @@ TABLE 5. Instrumental variables.
 | First-stage robust F-stat |  |  |  | 12.98 |  |  |
 | Studies | 74 | 74 | 74 | 73 | 74 | 74 |
 | Observations | 973 | 973 | 973 | 933 | 973 | 973 |
-| Panel B: nonlinear | Top10 | WAAP | Stem-based | Kinked-meta | Selection model | p-uniform∗ |
+| Panel B: nonlinear | Top10 | WAAP | Stem-based | Kinked-meta | Selection model | p-uniform* |
 | Publication bias |  |  |  | 0.166 | $p$ = .636 | $L$ = 0.378 |
 |  |  |  |  | (0.108) | (0.100) | ($p$ = .828) |
 | Effect beyond bias | 0.333∗∗∗ | 0.329∗∗∗ | 0.355∗∗∗ | 0.324∗∗∗ | 0.276∗∗∗ | 0.388∗∗∗ |
@@ -501,7 +501,7 @@ TABLE 6. Top journals.
 | First-stage robust F-stat |  |  |  | 2.444 |  |  |
 | Studies | 16 | 16 | 16 | 16 | 16 | 16 |
 | Observations | 218 | 218 | 218 | 218 | 218 | 218 |
-| Panel B: nonlinear | Top10 | WAAP | Stem-based | Kinked-meta | Selection model | p-uniform∗ |
+| Panel B: nonlinear | Top10 | WAAP | Stem-based | Kinked-meta | Selection model | p-uniform* |
 | Publication bias |  |  |  | 0.113 | $p$ = .817 | $L$ = 0.289 |
 |  |  |  |  | (0.257) | (0.188) | ($p$ = .866) |
 | Effect beyond bias | 0.265∗∗∗ | 0.314∗∗∗ | 0.353∗∗∗ | 0.314∗∗∗ | 0.272∗∗∗ | 0.306∗∗∗ |
@@ -520,7 +520,7 @@ TABLE 6. Top journals.
 | First-stage robust F-stat |  |  |  | 2.10 |  |  |
 | Studies | 22 | 22 | 22 | 22 | 22 | 22 |
 | Observations | 256 | 256 | 256 | 256 | 256 | 256 |
-| Panel B: nonlinear | Top10 | WAAP | Stem-based | Kinked-meta | Selection model | p-uniform∗ |
+| Panel B: nonlinear | Top10 | WAAP | Stem-based | Kinked-meta | Selection model | p-uniform* |
 | Publication bias |  |  |  | −0.071 | $p$ = .956 | $L$ = 0.307 |
 |  |  |  |  | (0.230) | (0.216) | ($p$ = .858) |
 | Effect beyond bias | 0.263∗∗∗ | 0.312∗∗∗ | 0.355∗∗∗ | 0.313∗∗∗ | 0.289∗∗∗ | 0.343∗∗∗ |

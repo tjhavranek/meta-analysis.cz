@@ -8,6 +8,8 @@ Tomas HAVRANEK – Czech National Bank and Charles University, Prague, Czech Rep
 
 **JEL Classification**: E52, E58, E43, E44
 
+^{*}We thank Branislav Saxa, Jonathan Witmer, Tomáš Holub, Michal Franta and two anonymous referees for useful comments. We would also like to thank Oldřich Dědek and Roman Horváth for useful comments concerning the previous version of the paper. Authors acknowledge support from the Czech Science Foundation (grant no. P402/12/G097). The views expressed here are ours and not necessarily those of the Czech National Bank.
+
 ## KEYWORDS: effective lower bound, zero lower bound, negative interest rates, costs of cash, transmission of monetary policy
 
 ## ABSTRACT
@@ -18,11 +20,7 @@ This paper focuses on the estimation of the effective lower bound on the Czech N
 
 In the years after the outbreak of the global financial crisis, central banks have cut their policy rates once every three days on average. Since 2012, several central banks in Europe and the Bank of Japan have moved their key policy rates even further into negative territory as one of the unconventional monetary policy measures aimed at providing further monetary policy easing. In addition to potential benefits, however, negative rates have several drawbacks, including reduced profits of banks and consequent potential negative effects on their stability as well as the stability of insurance companies and pension funds. Irrespective of whether pros or cons prevail, by imposing negative policy rates central banks have disproved the traditional view that nominal interest rates cannot fall below zero as implied by the concept of the zero lower bound (ZLB).
 
-The ZLB resides in the assumption that investors can always switch from deposits to cash, which is often characterized as an asset with zero yield, instead of accepting negative interest rates. Thus, it may seem that the power of negative rates is inherently limited by the existence of cash. However, holding and using cash, especially in large amounts, is not costless, so the effective yield on cash is negative. Therefore, the notion of an effective lower bound (ELB) on interest rates is introduced.
-
-^{*}We thank Branislav Saxa, Jonathan Witmer, Tomáš Holub, Michal Franta and two anonymous referees for useful comments. We would also like to thank Oldřich Dědek and Roman Horváth for useful comments concerning the previous version of the paper. Authors acknowledge support from the Czech Science Foundation (grant no. P402/12/G097). The views expressed here are ours and not necessarily those of the Czech National Bank.
-
-This lower bound is given by the threshold below which holding deposits with negative interest rates is more costly than holding cash and below which a flight to cash could be provoked, consequently causing the negative rates to be ineffective.
+The ZLB resides in the assumption that investors can always switch from deposits to cash, which is often characterized as an asset with zero yield, instead of accepting negative interest rates. Thus, it may seem that the power of negative rates is inherently limited by the existence of cash. However, holding and using cash, especially in large amounts, is not costless, so the effective yield on cash is negative. Therefore, the notion of an effective lower bound (ELB) on interest rates is introduced. This lower bound is given by the threshold below which holding deposits with negative interest rates is more costly than holding cash and below which a flight to cash could be provoked, consequently causing the negative rates to be ineffective.
 
 The main aim of the paper is to estimate the level of the ELB on the policy rate in the Czech Republic. Specifically, we want to approximate the level of costs of holding and using cash, which consist of storage, transport and insurance costs and the costs of loss of convenience associated with electronic transactions. In a second approach to the problem, we estimate the direct costs to banks’ profitability induced by negative interest rates with respect to the specific characteristics of the Czech economy and financial market conditions.
 
@@ -187,11 +185,11 @@ Source: ETF Securities (2017). https://www.etfsecurities.com/retail/se/en-gb/pro
 
 ### 4.2 | Loss of Convenience
 
-### 4.2.1 | Interchange Fees
+#### 4.2.1 | Interchange Fees
 
 The second component of the ELB is the loss of the convenience of using electronic money instead of cash (i.e. the benefits of being able to make payments electronically, or the inconvenience of using cash), hereinafter ‘convenience costs’. Interchange fees are sometimes used in the literature as a proxy for these convenience costs. Interchange fees are paid for the acceptance of card-based transactions between banks and are set by operators of payment cards schemes and incorporated into the final prices charged to consumers. As Witmer and Yang (2016) points out, however, these figures overestimate the convenience costs, as they are charged on transactions, not on cash holdings. Moreover, we cannot really assume the figures equal customers’ utility from using different kinds of electronic payments instead of cash payments, as the price is mostly the same for cash and electronic payments so consumers are not fully aware of the fees. On top of that, the current level of fees is not informative, since it is affected by the regulation on interchange fees for card-based payment transactions^{6}, which lowers and unifies interchange fees across the EU to 0.2% of the value of transactions for consumer debit cards and to 0.3% for consumer credit cards. In lilght of that, the interchange fees dating from the period before the regulation took effect would be more informative, especially for the Czech Republic, since the country had one of the highest average levels of interchange fees in the EU: in 2014, the average fees charged by Visa were 1.0%, and those by MasterCard 1.1%. The fees for commercial cards, which are not affected by the regulation, are even higher, with the average being approximately 1.5% of the value of a transaction. However, given the above-mentioned shortcomings of using interchange fees we continue with the second possible approach.
 
-### 4.2.2 | Social Costs of Different Payment Instruments
+#### 4.2.2 | Social Costs of Different Payment Instruments
 
 An alternative to estimating the convenience costs by interchange fees is to use the concept proposed by Schmiedel et al. (2012), who estimated the social and private costs of retail payment instruments for 13 EU countries (the Czech Republic was not included). Social costs are defined as the sum of the pure costs of producing payment instruments incurred by the different stakeholders in the payments market, i.e. the costs to society of providing retail payment services reflecting the use of resources in the production of these services (Schmiedel et al., 2012). These costs are substantial, amounting up to 1% of GDP in the sample of countries. According to the authors’ conclusions, the social costs of cash payments constitute almost half of the total social costs of all payments.
 

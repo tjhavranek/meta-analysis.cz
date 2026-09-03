@@ -328,7 +328,7 @@ Notes: The dependent variable is the reported size slope. Values in parentheses 
 
 ## ENDNOTES
 
-1. In the 1,613-observation model frame, 1/99 winsorization clips 17 observations in the lower tail and 16 observations in the upper tail of each variable. For the reported size slope, the support changes from [−3.600, 4.447] to [−1.735, 1.330], while the mean and standard deviation change from −0.091 and 0.472 to −0.087 and 0.344. For the standard error, the support changes from [3.05 × 10−7, 3.789] to [0.000123, 1.614], while the mean and standard deviation change from 0.089 and 0.278 to 0.084 and 0.226.
+1. In the 1,613-observation model frame, 1/99 winsorization clips 17 observations in the lower tail and 16 observations in the upper tail of each variable. For the reported size slope, the support changes from [−3.600, 4.447] to [−1.735, 1.330], while the mean and standard deviation change from −0.091 and 0.472 to −0.087 and 0.344. For the standard error, the support changes from [3.05 × 10^{−7}, 3.789] to [0.000123, 1.614], while the mean and standard deviation change from 0.089 and 0.278 to 0.084 and 0.226.
 
 2. The standard output of the `BMS` package reports posterior means and marginal posterior standard deviations, but it does not report the cross-coefficient posterior covariances needed for interaction marginal effects. The BMA calculation therefore retains posterior cross-moments for the institutional coefficient block during the Markov chain. The resulting summaries were checked against the package's native output before using the retained covariance terms to form the marginal-effect intervals.
 

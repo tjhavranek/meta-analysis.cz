@@ -6,6 +6,10 @@ Josef Bajzik ^{a,b}, Tomas Havranek ^{a}, Zuzana Irsova ^{a,*}, Jiri Schwarz ^{a
 
 ^{b} Czech National Bank, Czech Republic
 
+^{☆} We thank Chishio Furukawa, Andrés Rodríguez-Clare, Tom Stanley, and two anonymous referees for their helpful comments. Bajzik acknowledges support from Charles University (PRIMUS/17/HUM/16) and the Czech Science Foundation (21-09231S), Havranek and Irsova acknowledge support from the Czech Science Foundation (19-26812X), and Schwarz acknowledges support from the Czech Science Foundation (18-02513S). The views expressed here are ours and not necessarily those of the Czech National Bank.
+
+^{*} Corresponding author. E-mail address: zuzana.irsova@ies-prague.org (Z. Irsova).
+
 ## ABSTRACT
 
 A key parameter in international economics is the elasticity of substitution between domestic and foreign goods, also called the Armington elasticity. Yet estimates vary widely. We collect 3524 reported estimates of the elasticity, construct 32 variables that reflect the context in which researchers obtain their estimates, and examine what drives the heterogeneity in the results. To account for model uncertainty, we employ Bayesian and frequentist model averaging. To correct for publication bias, we use newly developed non-linear techniques. Our main results are threefold. First, there is publication bias against small and statistically insignificant elasticities. Second, differences in results are best explained by differences in data: aggregation, frequency, size, and dimension. Third, the elasticity implied by the literature after accounting for both publication bias and study quality lies in the range 2.5–5.1 with a median of 3.8.

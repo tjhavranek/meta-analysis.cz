@@ -8,6 +8,8 @@ Received February 14, 2011; and accepted in revised form April 12, 2012.
 
 JEL codes: C83, E52
 
+^{*} We are grateful to Adam Elbourne, Bill Gavin, Jakob de Haan, Tomas Holub, Sergey Slobodyan, Tom Stanley, Harald Uhlig, and two anonymous referees for providing data or comments on previous versions of the manuscript. The paper benefited from discussions at the Meta-Analysis of Economics Research Colloquium 2010, Conway; the Scottish Economics Society Annual Conference 2011, Perth; the International Conference on Macro-economic Analysis and International Finance 2011, Rethymno; and the Annual Congress of the European Economic Association 2011, Oslo. All remaining errors are ours. We acknowledge financial support from the Czech Science Foundation (grant #P402/11/1487) and the Grant Agency of Charles University (grant #267011). The views expressed here are ours and not necessarily those of our institutions. An online appendix is available at http://meta-analysis.cz/price_puzzle.
+
 ## ABSTRACT
 
 The short-run increase in prices following an unexpected tightening of monetary policy constitutes a puzzle frequently reported in empirical studies. Yet the puzzle is easy to explain away when all published models are quantitatively reviewed. We collect and examine about 1,000 point estimates of impulse responses from 70 articles that use vector autoregressions to study monetary transmission in various countries. We find that the puzzle is created by model misspecifications: especially by the omission of commodity prices, neglect of potential output, and reliance on recursive identification. Our results also suggest that the strength of monetary policy depends on the country’s openness, phase of the economic cycle, and degree of central bank independence.
@@ -575,7 +577,7 @@ Wu, Tao. (2003) “Stylized Facts on Nominal Term Structure and Business Cycles:
 
 Abreu, Maria, Henri L. F. de Groot, and Raymond J. G. M. Florax. (2005) “A Meta-Analysis of β-Convergence: the Legendary 2%.” *Journal of Economic Surveys*, 19, 389–420.
 
-Angeloni, Ignazio, Luc Aucremanne, Michael Ehrmann, Jordi Galı́, Andrew Levin, and Frank Smets. (2006) “New Evidence on Inflation Persistence and Price Stickiness in the Euro Area: Implications for Macro Modeling.” *Journal of the European Economic Association*, 4, 562–74.
+Angeloni, Ignazio, Luc Aucremanne, Michael Ehrmann, Jordi Galí, Andrew Levin, and Frank Smets. (2006) “New Evidence on Inflation Persistence and Price Stickiness in the Euro Area: Implications for Macro Modeling.” *Journal of the European Economic Association*, 4, 562–74.
 
 Arnone, Marco, Bernard J. Laurens, Jean-Francois Segalotto, and Martin Sommer. (2009) “Central Bank Autonomy: Lessons from Global Trends.” *IMF Staff Papers*, 56, 263–296.
 

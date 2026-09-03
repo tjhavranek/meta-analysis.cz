@@ -14,6 +14,8 @@ July 23, 2026
 
 **JEL Codes:** J15, J61, C83
 
+^{*} An online appendix with data and code is available at https://meta-analysis.cz/migrant/. Corresponding author: Klara Kantova, klara.kantova@fsv.cuni.cz. Kantova acknowledges support from the Charles University, project GA UK No. 152222 and No. 378225, from the European Union’s Horizon 2020 research and innovation program under the Marie Skłodowska-Curie grant agreement No. 870245, and from the Charles University Research Centre program No. 24/SSH/020. Havranek, Irsova, and Schwarz acknowledge support from the Czech Science Foundation (grant 24-11583S).
+
 ## ABSTRACT
 
 This paper presents the first comprehensive meta-analysis of the elasticity of substitution between native and immigrant labor, drawing on 1,091 estimates from 41 studies. We find strong evidence of selective reporting: less precise estimates are systematically associated with lower reported elasticities. Correcting for this bias using meta-regression and selection methods raises the implied elasticity from about 13 to about 22, implying about 40% less relative-wage pressure from immigration than uncorrected results suggest. Bayesian and frequentist model averaging show that heterogeneity is driven mainly by geographic scale, data granularity, and whether the sample is restricted to low-experience workers, while the choice between log mean wages and mean log wages plays a secondary role. Our best-practice estimates, which net out publication bias and prioritize the most granular data, imply an elasticity of about 17 in our baseline regional specification, lower than implied by a simple bias correction but substantially higher than the uncorrected mean.

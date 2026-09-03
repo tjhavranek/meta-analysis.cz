@@ -629,9 +629,7 @@ Fung, W., Hsieh, D.A., Naik, N.Y., Ramadorai, T., 2008. Hedge Funds: Performance
 
 Fung, W.K., Hsieh, D.A., et al., 2006. Hedge funds: An industry in its adolescence. *Economic Review-Federal Reserve Bank of Atlanta* 91, 1.
 
-Gao, C., Haight, T.D., Yin, C., Zhang, C., 2022. The Performance Life Cycle of Hedge
-
-Funds: Can Investors Achieve Lasting Performance? *The Journal of Portfolio Management* 48, 189–217. https://doi.org/10.3905/jpm.2021.1.315.
+Gao, C., Haight, T.D., Yin, C., Zhang, C., 2022. The Performance Life Cycle of Hedge Funds: Can Investors Achieve Lasting Performance? *The Journal of Portfolio Management* 48, 189–217. https://doi.org/10.3905/jpm.2021.1.315.
 
 George, E.I., 2010. Dilution priors: Compensating for model space redundancy, in: IMS Collections Borrowing Strength: Theory Powering Applications – A Festschrift for Lawrence D. Brown, Institute of Mathematical Statistics. pp. 158–165. https://doi.org/10.1214/10-IMSCOLL611.
 

@@ -1942,26 +1942,6 @@
      "anchor": "sec-results"
     },
     {
-     "level": 3,
-     "title": "Publication bias and estimation characteristics",
-     "anchor": "sec-publication-bias-and-estimation-characteristics"
-    },
-    {
-     "level": 3,
-     "title": "Design of the demand function",
-     "anchor": "sec-design-of-the-demand-function"
-    },
-    {
-     "level": 3,
-     "title": "Data specifications",
-     "anchor": "sec-data-specifications"
-    },
-    {
-     "level": 3,
-     "title": "Publication characteristics",
-     "anchor": "sec-publication-characteristics"
-    },
-    {
      "level": 2,
      "title": "V. Extensions and robustness checks",
      "anchor": "sec-v--extensions-and-robustness-checks"
@@ -2136,16 +2116,6 @@
      "level": 3,
      "title": "4.2. Loss of Convenience",
      "anchor": "sec-4-2"
-    },
-    {
-     "level": 3,
-     "title": "4.2.1. Interchange Fees",
-     "anchor": "sec-4-2-1"
-    },
-    {
-     "level": 3,
-     "title": "4.2.2. Social Costs of Different Payment Instruments",
-     "anchor": "sec-4-2-2"
     },
     {
      "level": 3,
