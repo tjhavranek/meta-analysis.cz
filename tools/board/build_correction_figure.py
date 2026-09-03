@@ -394,8 +394,8 @@ def build(check=False):
     p = [f'<svg viewBox="0 0 {W} {H}" width="100%" role="img" '
          f'aria-labelledby="cf-t cf-d" class="cfig">',
          '<title id="cf-t">What meta-analysis did to each number</title>',
-         f'<desc id="cf-d">One dot per meta-analysis, placed by how far its corrected or '
-         f'best-practice estimate sits from the average estimate that literature reported. '
+         f'<desc id="cf-d">One dot per meta-analysis, placed by how far its corrected '
+         f'estimate sits from the average estimate that literature reported. '
          f'{len(down)} of the {len(out)} moved toward zero and {len(up)} away '
          f'from it; the median revision is {med:+.0f}%.'
          + (" " + " ".join(f'{r["title"]} moved {r["rev"]:+.0f}%, beyond the right-hand end '
@@ -575,7 +575,7 @@ def build(check=False):
         '<b>What meta-analysis did to the number.</b> '
         f'<b>{len(out)} of the {n_all} papers here can be compared this way</b>: the '
         'average of the estimates a literature reports, against the paper&rsquo;s own '
-        'corrected or best-practice estimate. '
+        'corrected estimate. '
         '<b>Red</b>: smaller <i>in absolute magnitude</i>. <b>Green</b>: larger. '
         + (f'<b>All {len(out)} moved toward zero</b>. ' if len(down) == len(out) else
            f'<b>{len(down)} moved toward zero, {n_up} away</b> from it. ')
@@ -586,8 +586,8 @@ def build(check=False):
         'outlines mean, and which papers it leaves out</summary>'
 
         '<p><b>What is plotted.</b> Each dot is one literature. The horizontal position is '
-        '<i>(|corrected| &minus; |mean|) / |mean|</i>: how far the corrected or best-practice '
-        'estimate sits from the uncorrected one, as a fraction of the uncorrected one, in '
+        '<i>(|corrected| &minus; |mean|) / |mean|</i>: how far the corrected estimate sits '
+        'from the uncorrected one, as a fraction of the uncorrected one, in '
         'absolute magnitude. Zero means the correction left the size of the number alone; '
         '&minus;50% means it halved it; +100% means it doubled it. '
         + vz_note +
