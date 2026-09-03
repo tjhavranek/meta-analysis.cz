@@ -566,8 +566,7 @@ def build(check=False):
            f'<b>{len(down)} moved toward zero, {n_up} away</b> from it. ')
         + (f'<b>{len(flat)}</b> did not move. ' if flat else '')
         + f'The median revision is <b>{med:+.0f}%</b>. '
-        + 'Hover a dot for its own numbers. The note below says how the figure is built, '
-          'which papers it leaves out, and what the rings and outlines mean.'
+        + 'Hover a dot for its own numbers.'
         '<details class="figmethod"><summary>How this figure is built, and which papers it '
         'leaves out</summary>'
 
