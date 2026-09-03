@@ -395,7 +395,7 @@ def build(check=False):
          f'aria-labelledby="cf-t cf-d" class="cfig">',
          '<title id="cf-t">What meta-analysis did to each number</title>',
          f'<desc id="cf-d">One dot per meta-analysis, placed by how far its corrected or '
-         f'best-practice estimate sits from the uncorrected number for that literature. '
+         f'best-practice estimate sits from the average estimate that literature reported. '
          f'{len(down)} of the {len(out)} moved toward zero and {len(up)} away '
          f'from it; the median revision is {med:+.0f}%.'
          + (" " + " ".join(f'{r["title"]} moved {r["rev"]:+.0f}%, beyond the right-hand end '
@@ -554,27 +554,44 @@ def build(check=False):
     # keeping and none of it is what a reader wants first. The finding stays visible; the
     # method goes in a <details>, whose content is ordinary DOM text and so still reaches
     # every crawler and every text corpus -- unlike a <script>, which they discard.
+    # The one exception to the formula, stated beside it: a literature whose own test finds no
+    # publication bias is placed at zero by rule (verbal_zero, above), and where its two printed
+    # numbers would otherwise divide to something large the reader is told so.
+    vz = [r for r in out if r.get("verbal_zero")]
+    vz_parts = []
+    for r in vz:
+        lit = (abs(r["corrected"]) - abs(r["mean"])) / abs(r["mean"]) * 100.0
+        vz_parts.append(E(r["title"]) + (
+            f', whose two numbers, {r["corrected"]:g} and {r["mean"]:g}, would otherwise '
+            f'divide to {lit:+.0f}%, a property of the denominator rather than a finding'
+            if abs(lit) > 0.5 else ''))
+    vz_note = ((("One dot is" if len(vz) == 1 else f"{len(vz)} dots are")
+                + ' placed at zero by rule rather than by that formula, because the paper '
+                  'tests for publication bias and reports none worth correcting: '
+                + '; '.join(vz_parts) + '. ') if vz else '')
+
     caption = (
         '<figcaption class="table-note">'
         '<b>What meta-analysis did to the number.</b> '
         f'<b>{len(out)} of the {n_all} papers here can be compared this way</b>: the '
         'average of the estimates a literature reports, against the paper&rsquo;s own '
-        'corrected or best-practice estimate of the same quantity. '
-        'One dot each, placed by how far the second sits from the first. '
+        'corrected or best-practice estimate. '
         '<b>Red</b>: smaller <i>in absolute magnitude</i>. <b>Green</b>: larger. '
         + (f'<b>All {len(out)} moved toward zero</b>. ' if len(down) == len(out) else
            f'<b>{len(down)} moved toward zero, {n_up} away</b> from it. ')
         + (f'<b>{len(flat)}</b> did not move. ' if flat else '')
         + f'The median revision is <b>{med:+.0f}%</b>. '
         + 'Hover a dot for its own numbers.'
-        '<details class="figmethod"><summary>How this figure is built, and which papers it '
-        'leaves out</summary>'
+        '<details class="figmethod"><summary>How this figure is built, what the rings and '
+        'outlines mean, and which papers it leaves out</summary>'
 
         '<p><b>What is plotted.</b> Each dot is one literature. The horizontal position is '
         '<i>(|corrected| &minus; |mean|) / |mean|</i>: how far the corrected or best-practice '
         'estimate sits from the uncorrected one, as a fraction of the uncorrected one, in '
         'absolute magnitude. Zero means the correction left the size of the number alone; '
-        '&minus;50% means it halved it; +100% means it doubled it. It is the same relative '
+        '&minus;50% means it halved it; +100% means it doubled it. '
+        + vz_note +
+        'It is the same relative '
         'revision as Table 3 of <a href="/conventional_wisdom/">Gechert et al. (2025)</a>, '
         'which applies it to 24 literatures mostly by other researchers. Vertical position '
         'carries no meaning: the dots are stacked only to keep them apart.</p>'
@@ -595,8 +612,9 @@ def build(check=False):
         'values, for recent data, more observations, and better-cited outlets, and report that '
         'as the figure a careful study would have produced. It is the construction these authors '
         'use, it is what Gechert et al.&rsquo;s corrected column is built from, and in each case '
-        'it is the paper&rsquo;s own headline conclusion. The rows concerned name it in the '
-        'spec. Most of these papers correct with estimators that shrink toward zero; what the '
+        'it is the paper&rsquo;s own headline conclusion. The rows concerned say so in their '
+        'notes in <a href="/tools/board/correction_ratios.json">correction_ratios.json</a>. '
+        'Most of these papers correct with estimators that shrink toward zero; what the '
         'figure adds is the size of each move.</p>'
 
         '<p><b>What the marks mean.</b> A solid dot is a pair both of whose numbers the paper '
@@ -606,12 +624,11 @@ def build(check=False):
 
         + f'<p><b>{len(out)} of the {n_all} papers qualify.</b> Of the other {n_all - len(out)}, '
         f'{n_nolit} have no single literature effect to correct: methods papers, an '
-        'experiment, and the review that supplies the companion figure. The rest answer in words '
-        'rather than a number, or give a headline that is not a correction at all, or reach it '
-        'by projecting the estimand beyond the sample rather than correcting it, or sit '
-        'against a comparator so near zero that the ratio is undefined, or report correction '
-        'methods that disagree with each other about the sign; and a literature that already '
-        'has a dot does not get a second one. A reversal of sign is <i>not</i> a reason to '
+        'experiment, a survey of other meta-analyses, and the review of 24 literatures named '
+        'above, whose own figure is on <a href="/conventional_wisdom/">its page</a>. Three share '
+        'a literature with a paper that already has a dot, and a literature gets one dot. One '
+        'studies what moves its number rather than the number itself. A reversal of sign is '
+        '<i>not</i> a reason to '
         'leave a paper out. The rule takes no account of which way a paper moved, and every one '
         f'of those {n_all - len(out)} is written down with its reason, individually, in '
         '<a href="/tools/board/correction_ratios.json">correction_ratios.json</a>.</p>'
