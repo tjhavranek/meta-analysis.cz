@@ -127,6 +127,7 @@ if "$PY" -c "import latex2mathml" >/dev/null 2>&1; then
   run_check "checking api/v1/papers.json..."                tools/build_papers_api.py --check
   run_check "checking the publication lists..."             tools/build_publications_page.py --check
   run_check "checking /papers/..."                          tools/build_fulltext_page.py --check
+  run_check "checking the full-text pages against their transcripts..." tools/build_paper_page.py --all --check
 
   # The full-text gate reads the PDFs. CI installs poppler-utils; a Windows checkout
   # usually finds Xpdf's pdftotext first on PATH instead, which returns a different text

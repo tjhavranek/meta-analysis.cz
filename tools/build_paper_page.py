@@ -50,6 +50,7 @@ em dash. Literal text is escaped; nothing in a transcript can inject markup.
 
 import hashlib
 import html
+import io
 import json
 import os
 import re
@@ -1808,6 +1809,17 @@ def link_from_project_page(project):
 
 
 def main(argv):
+    # --check builds every page in memory and compares it to the checked-in file, writing
+    # nothing. Every other generated artifact on this site has such a mode and is gated on
+    # it in CI; the full-text pages, which are the largest thing the site publishes, had
+    # none, so a page that stopped following from its transcript would have reached
+    # production unremarked. verify_seo.py does not cover this: it compares each page to
+    # git HEAD to prove the SEO generator did not touch prose, and by construction cannot
+    # see a page that was committed already stale.
+    check = "--check" in argv
+    argv = [a for a in argv if a != "--check"]
+
+    stale = []
     papers = {p["project"]: p for p in json.load(open(os.path.join(ROOT, "tools", "papers.json"), encoding="utf-8"))}
     papers.update(documents())
     if not argv or argv[0] == "--all":
@@ -1815,7 +1827,10 @@ def main(argv):
                           if p.endswith(".md") and not p.endswith(".draft.md"))
     else:
         projects = argv
-    if not argv or argv[0] == "--all":
+    # attach_reference_links() and link_from_project_page() below WRITE to pages. In check
+    # mode neither may run, so the hand-built pass is skipped entirely and the per-project
+    # link step is not reached.
+    if (not argv or argv[0] == "--all") and not check:
         for project, rel in sorted(HAND_BUILT.items()):
             path = os.path.join(ROOT, rel, "index.html")
             if os.path.exists(path):
@@ -1837,6 +1852,19 @@ def main(argv):
             meta["abstract"] = " ".join(builder.abstract)
         page = build_page(project, meta, body, builder.toc)
         outdir = page_dir(project, meta)
+        if check:
+            path = os.path.join(outdir, "index.html")
+            try:
+                have = io.open(path, encoding="utf-8", newline="").read()
+            except (IOError, OSError):
+                stale.append((project, "no page at %s" % os.path.relpath(path, ROOT)))
+                continue
+            # The written file uses newline="\n"; read it the same way so a checkout with
+            # CRLF in the working tree does not read as drift on every page.
+            if have.replace("\r\n", "\n") != page:
+                stale.append((project, "%d bytes on disk, %d from the transcript"
+                              % (len(have), len(page))))
+            continue
         os.makedirs(outdir, exist_ok=True)
         # This writes all 72 full-text pages, and it is the one writer that kept the
         # platform default. On Linux that is UTF-8 and LF; on Windows it is cp1252, which
@@ -1853,6 +1881,14 @@ def main(argv):
             project, len(page), len(builder.toc),
             "figures " if "<figure>" in page else "",
             "linked" if linked else ""))
+
+    if check:
+        if stale:
+            print("%d full-text page(s) no longer follow from their transcript:" % len(stale))
+            for project, why in stale:
+                print("  %-22s %s" % (project, why))
+            raise SystemExit(1)
+        print("all %d full-text pages match a fresh build" % len(projects))
 
 
 if __name__ == "__main__":

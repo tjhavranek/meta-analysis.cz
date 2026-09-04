@@ -125,6 +125,15 @@ jobs:
       - name: Verify /papers/ against a fresh build
         run: python tools/build_fulltext_page.py --check
 
+      # The full-text pages themselves are the largest thing this site publishes and were
+      # the one generated artifact with no --check gate: nothing here or in the pre-push
+      # hook rebuilt them, so a page that stopped following from its transcript would have
+      # deployed unremarked. verify_seo.py does not cover this. It compares each page to
+      # git HEAD to prove generate_seo.py did not rewrite prose, and by construction cannot
+      # see a page that was already stale when it was committed.
+      - name: Verify the full-text pages against a fresh build
+        run: python tools/build_paper_page.py --all --check
+
       # The full-text corpus itself: figures, tables, fragment links, MathML, coverage.
       # This class of checker has caught real user-facing failures (a missing figure,
       # fragmented tables); it passes clean in about four minutes.
