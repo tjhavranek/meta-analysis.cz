@@ -30,9 +30,9 @@
  },
  "counts": {
   "datasets": 46,
-  "rows_in_source_files": 66859,
-  "estimates_in_analysis_samples": 55450,
-  "estimates_in_harmonised_table": 49845,
+  "rows_in_source_files": 66897,
+  "estimates_in_analysis_samples": 55471,
+  "estimates_in_harmonised_table": 49866,
   "literatures_in_harmonised_table": 42,
   "in_harmonised_table": 42,
   "counts_explained": "rows_in_source_files counts every row of the 46 converted files. estimates_in_analysis_samples applies each paper's own filters and is what the catalogue table shows. estimates_in_harmonised_table additionally drops literatures that duplicate another exactly, overlap one already included, or lack per-estimate precision."
@@ -40,7 +40,7 @@
  "harmonised_table": {
   "version": "1.2.0",
   "status": "stable",
-  "n_rows": 49845,
+  "n_rows": 49866,
   "n_literatures": 42,
   "columns": [
    "dataset",
@@ -99,7 +99,7 @@
   "excluded": {
    "fdi": "no per-estimate precision exists: the file has no standard error, t-statistic, weight, or inverse-SE column, so SE-based synthesis is impossible",
    "hedge": "duplicate of alphas: identical estimates, row for row",
-   "lags": "outcome is the transmission lag (mon_bot, months to the price trough); it has no sampling standard error, so it cannot enter an effect/SE table",
+   "lags": "outcome is the transmission lag (mon_bot, months to the price trough); it has no sampling standard error, so it cannot enter an effect/SE table. The catalogue used to name `lags` as the effect column, which is the VAR's lag ORDER (median 4), not the transmission lag (mean 34.9 months) -- the same record's own direction_note said so.",
    "substitution": "duplicate of eis: identical estimates, row for row"
   }
  },
@@ -185,7 +185,7 @@
     "url": "https://meta-analysis.cz/activism/"
    },
    "description": "Meta-analysis of 1,973 estimates from 67 studies finds shareholder activism raises stock prices by 0% to 1.5% after correcting for publication bias.",
-   "n_estimates": 1974,
+   "n_estimates": 1973,
    "n_variables": 159,
    "n_estimates_in_literature": 1254,
    "source_file": "https://meta-analysis.cz/activism/activism.xlsx",
@@ -1362,12 +1362,12 @@
     "url": "https://meta-analysis.cz/frisch/"
    },
    "description": "Meta-analysis of over 700 estimates finds publication bias inflates the Frisch labor supply elasticity, with a corrected total hours elasticity near 0.25.",
-   "n_estimates": 723,
-   "n_variables": 49,
-   "n_estimates_in_literature": 532,
-   "source_file": "https://meta-analysis.cz/frisch/frisch.dta",
-   "source_member": null,
-   "source_sheet": null,
+   "n_estimates": 762,
+   "n_variables": 47,
+   "n_estimates_in_literature": 553,
+   "source_file": "https://meta-analysis.cz/frisch/frisch_data.zip",
+   "source_member": "data_extensive.xlsx",
+   "source_sheet": "data",
    "files": {
     "parquet": "https://meta-analysis.cz/data/v1/frisch/frisch.parquet",
     "csv": "https://meta-analysis.cz/data/v1/frisch/frisch.csv",
@@ -1382,12 +1382,12 @@
    },
    "effect_units": "elasticity",
    "direction_note": null,
-   "column_mapping_verified_by": "frisch.do: 'gen tstat = frisch/se' and 'winsor2 frisch se, cuts(5 95)' confirm frisch/se as the analysis columns. 532 of 723 rows have a usable standard error (538 non-missing, less 6 zeros). The paper imputes the remainder from a per-study bootstrap rather than dropping them; that input was not published, so they are excluded here rather than filled.",
+   "column_mapping_verified_by": "frisch_data.zip holds both published samples and their counts match the paper exactly: data_extensive.xlsx is 762 rows / 38 studies and data_intensive.xlsx is 709 / 40. The file this dataset used to read, the loose frisch.dta, is 723 rows and matches NEITHER, so it was a pre-publication draft that the resolver preferred on score alone. frisch.do: 'gen tstat = frisch/se' and 'winsor2 frisch se, cuts(5 95)' confirm frisch/se as the analysis columns.",
    "in_harmonised_table": true,
    "reconciliation": {
     "n_estimates_reported_in_paper": 700,
-    "n_rows_in_harmonised_table": 532,
-    "note": "-168 rows against the paper's count, usually because the published file has no usable standard error on the remainder. See this dataset's note and column_mapping_verified_by."
+    "n_rows_in_harmonised_table": 553,
+    "note": "-147 rows against the paper's count, usually because the published file has no usable standard error on the remainder. See this dataset's note and column_mapping_verified_by."
    },
    "excluded_from_harmonised_because": null,
    "duplicate_of": null,
@@ -1398,7 +1398,7 @@
    "rights_status": "cc-by-4.0",
    "license_url": "https://creativecommons.org/licenses/by/4.0/",
    "rights_note": "CC BY 4.0. Free to use, adapt, and redistribute, including commercially and including as training data. The only condition is credit: cite the paper named in this entry.",
-   "max_precision_weight_share": 0.4466,
+   "max_precision_weight_share": 0.4433,
    "audit_status": "domain_reviewed"
   },
   {
@@ -1829,8 +1829,8 @@
     "codebook": "https://meta-analysis.cz/api/v1/codebooks/lags.json"
    },
    "core_columns": {
-    "effect": "lags",
-    "standard_error": "ci_se",
+    "effect": "mon_bot",
+    "standard_error": "none: mon_bot is a duration in months and has no sampling standard error",
     "standard_error_note": null,
     "evidence": "paper's replication code",
     "sample_size": "nobs"
@@ -1844,7 +1844,7 @@
     "n_rows_in_harmonised_table": null,
     "note": null
    },
-   "excluded_from_harmonised_because": "outcome is the transmission lag (mon_bot, months to the price trough); it has no sampling standard error, so it cannot enter an effect/SE table",
+   "excluded_from_harmonised_because": "outcome is the transmission lag (mon_bot, months to the price trough); it has no sampling standard error, so it cannot enter an effect/SE table. The catalogue used to name `lags` as the effect column, which is the VAR's lag ORDER (median 4), not the transmission lag (mean 34.9 months) -- the same record's own direction_note said so.",
    "duplicate_of": null,
    "overlaps_with": null,
    "same_literature_as": null,
@@ -2464,7 +2464,7 @@
     "sample_size_note": "no sample-size column in this dataset; MAIVE cannot be run on it without supplying one"
    },
    "effect_units": "elasticity",
-   "direction_note": "Stored as inverse elasticities; inversion is needed to read them as the skill-substitution elasticity. Dropping this step reverses the finding. OPEN QUESTION, not resolved: two independent audits suggested this column is an inverse elasticity, on the grounds that PET on the stored scale is 0.326 whose reciprocal 3.07 is near the paper's headline of 4. That is a PET-level inference, and it does not hold row-wise -- the stored median is 1.42 and 1/1.42 = 0.70, nowhere near 4, with only 7.9% of values negative. So the simple inversion that demonstrably applies to `migrant` does NOT apply here. Units are left as 'elasticity' because relabelling on an unverified inference would be worse than the uncertainty. Settling it needs the paper's own transformation.",
+   "direction_note": "Mixed scale, flagged per row by `inverted_estimate`, and the file cannot be read without it. skill.do computes `coefficient = -1/elasticity`, then keeps `elasticity` where inverted_estimate==0 and `coefficient` where inverted_estimate==1. So the stored column is the substitution elasticity directly on 414 rows from 24 studies, and its negative reciprocal on 683 rows from 77 studies. The paper's headline sample of 682 estimates from 77 studies is the inverted_estimate==1 subset (683 rows here, one fewer in the paper). Averaging the stored column across both groups mixes two scales and is meaningless. This supersedes an earlier note that called the whole column an inverse elasticity and left the question open; the paper's own transformation, which that note said was needed to settle it, is skill.do lines 16-22.",
    "column_mapping_verified_by": "skill.do:174 regresses tstat_coefficient_w on precision_coefficient_w, the WLS form of FAT-PET. Regressing t on precision is algebraically the same test as regressing the effect on its standard error, so it confirms rather than contradicts elasticity/se.",
    "in_harmonised_table": true,
    "reconciliation": {
@@ -2525,7 +2525,7 @@
    "reconciliation": {
     "n_estimates_reported_in_paper": 3626,
     "n_rows_in_harmonised_table": 2421,
-    "note": "The filtered count is 2,421 against the abstract's 3,626. The vertical/horizontal split is applied exactly as the paper's code defines it, so the remaining gap is NOT explained by filtering: the published file appears narrower than the sample behind the paper. Unresolved - treat the count as the file's, not the paper's."
+    "note": "Resolved. In data.xls (sheet `stata`, 4,147 rows, 57 studies): aux==0 gives 3,626 rows from 57 studies, matching the abstract exactly; aux==0 & horiz==1 gives 1,205 from 52, matching bma exactly; aux==0 & horiz!=1 gives the 2,421 from 57 published here. The earlier note called the difference between 2,421 and 3,626 unexplained and warned the published file might be a subset of the paper's sample. It is not: the difference is the horizontal half, which is a separate dataset on this site."
    },
    "excluded_from_harmonised_because": null,
    "duplicate_of": null,
@@ -2538,7 +2538,7 @@
    "rights_note": "CC BY 4.0. Free to use, adapt, and redistribute, including commercially and including as training data. The only condition is credit: cite the paper named in this entry.",
    "max_precision_weight_share": 0.9973,
    "audit_status": "domain_reviewed",
-   "note": "VERTICAL spillovers (forward and backward). CAUTION: the filtered count is 2,421 while the paper's abstract reports 3,626 estimates, so the published file appears to be a subset of the sample behind the paper. Reconcile before relying on the count."
+   "note": "VERTICAL spillovers (forward and backward), 2,421 estimates from 57 studies. The abstract's 3,626 is the FULL sample, horizontal and vertical together; the horizontal 1,205 from 52 studies are published separately as `bma`. 1,205 + 2,421 = 3,626, so the counts reconcile exactly and nothing is missing from the published file."
   },
   {
    "id": "students",

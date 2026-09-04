@@ -318,11 +318,18 @@ for proj in sorted(man):
       n_estimates_in_literature=(_NH.get(proj) if _NH.get(proj) else m["rows"]),
       # A dataset extracted from a zip must advertise the ZIP, not the member path:
       # site/euro/trade_meta.dta does not exist, site/euro/data.zip does.
-      source_file=(f"{BASE}/{proj}/{(PRIM.get(proj) or {}).get('archive')}"
+      # overrides.json can pin a source the resolver did not choose, and when it does it is
+      # the pin that must be advertised. frisch is read from data_extensive.xlsx inside
+      # frisch_data.zip while primaries.json still records the loose frisch.dta the resolver
+      # preferred; reporting the latter here published a source_file that is not the file.
+      source_file=(f"{BASE}/{proj}/{(OVR.get(proj) or {}).get('source_archive')}"
+                   if (OVR.get(proj) or {}).get("source_member")
+                   else f"{BASE}/{proj}/{(PRIM.get(proj) or {}).get('archive')}"
                    if (PRIM.get(proj) or {}).get("source")=="zip"
                    else f"{BASE}/{proj}/{m['source']}"),
-      source_member=((PRIM.get(proj) or {}).get("member")
-                     if (PRIM.get(proj) or {}).get("source")=="zip" else None),
+      source_member=((OVR.get(proj) or {}).get("source_member")
+                     or ((PRIM.get(proj) or {}).get("member")
+                         if (PRIM.get(proj) or {}).get("source")=="zip" else None)),
       source_sheet=m.get("sheet"),
       files=dict(
         parquet=f"{BASE}/data/{DATA_V}/{proj}/{proj}.parquet",

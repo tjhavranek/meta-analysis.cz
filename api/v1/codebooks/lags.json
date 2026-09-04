@@ -1143,7 +1143,6 @@
    "dtype": "float64",
    "n_missing": 7,
    "n_unique": 13,
-   "role": "effect_estimate",
    "stats": {
     "min": 1.0,
     "p25": 2.0,
@@ -1555,6 +1554,7 @@
    "dtype": "str",
    "n_missing": 7,
    "n_unique": 45,
+   "role": "effect_estimate",
    "top_values": [
     "48",
     ".",
@@ -1834,7 +1834,6 @@
    "dtype": "float64",
    "n_missing": 875,
    "n_unique": 3,
-   "role": "standard_error",
    "stats": {
     "min": 1.0,
     "p25": 1.0,

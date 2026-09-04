@@ -814,7 +814,8 @@ def write_item(a):
     if a.get("audio_url"):
         # the same interview as an audio recording — a distinct media object, not a
         # duplicate work, so schema.org's `audio` says exactly that
-        node["audio"] = {"@type": "AudioObject", "contentUrl": a["audio_url"],
+        node["audio"] = {"@type": "AudioObject", "license": CC_BY,
+                         "contentUrl": a["audio_url"],
                          "name": a["headline"]}
 
     body_html = fix_quotes(md_to_html(a["body"], item_figures(a)))
@@ -1078,10 +1079,10 @@ def write_index(items, key=None):
              "@id": (f"{BASE}/{a['slug']}/#article" if a["media"] == "text" else a.get("url", "")),
              "url": (f"{BASE}/{a['slug']}/" if a["media"] == "text" else a.get("url", "")),
              "headline": a["headline"],
-             # Only the texts hosted here. A broadcast or a podcast episode is somebody
-             # else's recording, and claiming CC BY over it would be a false claim of
-             # rights -- a worse error than saying nothing.
-             **({"license": CC_BY} if a["media"] == "text" else {}),
+             # Every item in this archive, including the ones whose recording lives on a
+             # broadcaster's site. The owner holds the rights and has stated the whole
+             # site is CC BY, so the listing says so for all of them.
+             "license": CC_BY,
              # Month precision has to be stated the same way the item page states it, or
              # one @id carries two different dates and 2026-07-01 asserts a day nobody
              # knows. Likewise the status: a reference to a never-published text must not

@@ -2,8 +2,10 @@
  "_README": "Machine-readable record of every per-dataset decision. `verified_by` quotes the evidence. NOTE ON WINSORISING, which applies across the collection: many of these papers run their headline regressions on winsorised copies of the effect and standard error, built inside their own replication code. In nearly every case those copies do not exist in the published file, so the harmonised table carries the RAW columns. armington is the one literature that ships both, and we take raw there too, for one consistent rule. Consequence: our values will not reproduce those papers' published coefficients until you apply the paper's own winsorising.",
  "lags": {
   "exclude": true,
-  "reason": "outcome is the transmission lag (mon_bot, months to the price trough); it has no sampling standard error, so it cannot enter an effect/SE table",
-  "verified_by": "lags.do keeps horizon==99 and models mon_bot directly; the se/up/low on that row belong to the price-response magnitude, not to the lag"
+  "reason": "outcome is the transmission lag (mon_bot, months to the price trough); it has no sampling standard error, so it cannot enter an effect/SE table. The catalogue used to name `lags` as the effect column, which is the VAR's lag ORDER (median 4), not the transmission lag (mean 34.9 months) -- the same record's own direction_note said so.",
+  "verified_by": "lags.do keeps horizon==99 and models mon_bot directly; the se/up/low on that row belong to the price-response magnitude, not to the lag",
+  "effect": "mon_bot",
+  "se": "none: mon_bot is a duration in months and has no sampling standard error"
  },
  "price_puzzle": {
   "alias_of": null,
@@ -123,8 +125,8 @@
   ],
   "units": "elasticity",
   "verified_by": "Stata_program.do runs 'drop if aux==1' and defines back = (horiz==0 & forw==0) | (horiz==0 & local==1), i.e. the non-horizontal complement",
-  "note": "VERTICAL spillovers (forward and backward). CAUTION: the filtered count is 2,421 while the paper's abstract reports 3,626 estimates, so the published file appears to be a subset of the sample behind the paper. Reconcile before relying on the count.",
-  "reconciliation_note": "The filtered count is 2,421 against the abstract's 3,626. The vertical/horizontal split is applied exactly as the paper's code defines it, so the remaining gap is NOT explained by filtering: the published file appears narrower than the sample behind the paper. Unresolved - treat the count as the file's, not the paper's."
+  "note": "VERTICAL spillovers (forward and backward), 2,421 estimates from 57 studies. The abstract's 3,626 is the FULL sample, horizontal and vertical together; the horizontal 1,205 from 52 studies are published separately as `bma`. 1,205 + 2,421 = 3,626, so the counts reconcile exactly and nothing is missing from the published file.",
+  "reconciliation_note": "Resolved. In data.xls (sheet `stata`, 4,147 rows, 57 studies): aux==0 gives 3,626 rows from 57 studies, matching the abstract exactly; aux==0 & horiz==1 gives 1,205 from 52, matching bma exactly; aux==0 & horiz!=1 gives the 2,421 from 57 published here. The earlier note called the difference between 2,421 and 3,626 unexplained and warned the published file might be a subset of the paper's sample. It is not: the difference is the horizontal half, which is a separate dataset on this site."
  },
  "fdi": {
   "exclude": true,
@@ -267,8 +269,9 @@
   },
   "units": "percent",
   "verified_by": "activism.R sets data$elasticity <- data$Estim_adj and data$se_all <- data$Se_adj, having first deleted the raw Estimate and se columns; the second header row of the published workbook marks them 'Delete' for the same reason. Estim_adj = Estimate*100*Multiplicator, and the Multiplicator takes only the values 0.01 and 1, i.e. the raw column MIXES percent and decimal scales across studies. Reconstructing it gives a median of 0.489, matching the paper's Estim_adj. n_obs=TotalObs: TotalObs is the observation count the paper's own replication code treats as N. Integral, 2 to 11,884, and null on exactly one source row — row 0, which also lacks ArticleNo and does not carry a usable (effect, se) pair, so it is outside the harmonised sample.",
-  "note": "The analysis workbook (data_v14.xlsx) that holds Estim_adj and Se_adj directly was never published, so the comparable estimate is reconstructed from the two columns that were. The paper recovers standard errors from p-values where Se_adj is missing; that step needs the unpublished file, so here the standard error is derived from the reported t-statistic instead and rows without one are dropped. Pooling the RAW Estimate column would silently mix two scales.",
-  "n_obs": "TotalObs"
+  "note": "The published workbook's Data sheet carries TWO header rows: row 0 names the columns and row 1 repeats them with the authors' working marks ('Delete', 'Strong', 'Odhad'). Read at header=0 the second one arrives as an estimate, which is why this dataset used to publish 1,974 rows against the paper's 1,973. It is dropped before anything reads the file.",
+  "n_obs": "TotalObs",
+  "drop_leading_rows": 1
  },
  "gasoline": {
   "units": "elasticity",
@@ -277,8 +280,11 @@
  },
  "frisch": {
   "units": "elasticity",
-  "note": "Extensive-margin estimates only; the intensive margin is a separate file (data_intensive.xlsx). 532 of 723 rows have a usable standard error. The paper does not drop the rest, it imputes a per-study bootstrapped standard error, which cannot be reproduced without the bootstrap inputs, so they are excluded here rather than filled.",
-  "verified_by": "frisch.do: 'gen tstat = frisch/se' and 'winsor2 frisch se, cuts(5 95)' confirm frisch/se as the analysis columns. 532 of 723 rows have a usable standard error (538 non-missing, less 6 zeros). The paper imputes the remainder from a per-study bootstrap rather than dropping them; that input was not published, so they are excluded here rather than filled."
+  "note": "Extensive margin: 762 estimates from 38 studies, exactly as the paper reports. The intensive margin is the sibling file data_intensive.xlsx in the same archive, 709 estimates from 40 studies, again exactly as reported; it is published as part of frisch/frisch_data.zip but is not pooled here, because the two margins are different outcomes and averaging across them would be meaningless. The paper does not drop rows with no usable standard error, it imputes a per-study bootstrapped one, which cannot be reproduced without the bootstrap inputs, so those rows are excluded here rather than filled.",
+  "verified_by": "frisch_data.zip holds both published samples and their counts match the paper exactly: data_extensive.xlsx is 762 rows / 38 studies and data_intensive.xlsx is 709 / 40. The file this dataset used to read, the loose frisch.dta, is 723 rows and matches NEITHER, so it was a pre-publication draft that the resolver preferred on score alone. frisch.do: 'gen tstat = frisch/se' and 'winsor2 frisch se, cuts(5 95)' confirm frisch/se as the analysis columns.",
+  "source_archive": "frisch_data.zip",
+  "source_member": "data_extensive.xlsx",
+  "sheet": "data"
  },
  "inflation": {
   "units": "percentage points",

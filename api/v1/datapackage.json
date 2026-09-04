@@ -153,7 +153,7 @@
      },
      {
       "name": "day average",
-      "type": "string"
+      "type": "number"
      },
      {
       "name": "months (0/1)",
@@ -497,7 +497,7 @@
      },
      {
       "name": "Length",
-      "type": "string"
+      "type": "number"
      },
      {
       "name": "TotalObs",
@@ -6093,7 +6093,7 @@
       "type": "number"
      },
      {
-      "name": "ln_cite",
+      "name": "lnycite",
       "type": "number"
      },
      {
@@ -6111,6 +6111,10 @@
       "description": "standard_error"
      },
      {
+      "name": "ftest",
+      "type": "number"
+     },
+     {
       "name": "no_obs",
       "type": "number"
      },
@@ -6121,10 +6125,6 @@
      {
       "name": "byproduct",
       "type": "number"
-     },
-     {
-      "name": "year",
-      "type": "string"
      },
      {
       "name": "start",
@@ -6187,10 +6187,6 @@
       "type": "number"
      },
      {
-      "name": "income",
-      "type": "number"
-     },
-     {
       "name": "industry",
       "type": "number"
      },
@@ -6235,19 +6231,11 @@
       "type": "number"
      },
      {
-      "name": "wls",
-      "type": "number"
-     },
-     {
       "name": "nonpar_sim",
       "type": "number"
      },
      {
-      "name": "sls_iv",
-      "type": "number"
-     },
-     {
-      "name": "mle",
+      "name": "2sls_iv",
       "type": "number"
      },
      {
@@ -6260,6 +6248,10 @@
      },
      {
       "name": "nearretirement",
+      "type": "number"
+     },
+     {
+      "name": "ratio_wage",
       "type": "number"
      }
     ]
@@ -8710,8 +8702,7 @@
      },
      {
       "name": "lags",
-      "type": "number",
-      "description": "effect_estimate"
+      "type": "number"
      },
      {
       "name": "p_inf",
@@ -8815,7 +8806,8 @@
      },
      {
       "name": "mon_bot",
-      "type": "string"
+      "type": "string",
+      "description": "effect_estimate"
      },
      {
       "name": "no_bot",
@@ -8887,8 +8879,7 @@
      },
      {
       "name": "ci_se",
-      "type": "number",
-      "description": "standard_error"
+      "type": "number"
      },
      {
       "name": "scale",

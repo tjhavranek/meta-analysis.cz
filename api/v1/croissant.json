@@ -49,7 +49,7 @@
  "conformsTo": "http://mlcommons.org/croissant/1.0",
  "name": "meta-analysis-cz",
  "version": "1.2.0",
- "description": "Estimate-level data from meta-analyses in economics and the social sciences. 46 datasets containing 66,859 converted source rows and 55,450 estimates in the papers' analysis samples, each with the hand-coded study and design characteristics collected for the original paper. LICENCE: everything here is CC BY 4.0, including the underlying research data. Free to use, adapt, and redistribute, including commercially and as training data for machine-learning models. Credit is the only condition: cite the collection and the paper whose dataset you used.",
+ "description": "Estimate-level data from meta-analyses in economics and the social sciences. 46 datasets containing 66,897 converted source rows and 55,471 estimates in the papers' analysis samples, each with the hand-coded study and design characteristics collected for the original paper. LICENCE: everything here is CC BY 4.0, including the underlying research data. Free to use, adapt, and redistribute, including commercially and as training data for machine-learning models. Credit is the only condition: cite the collection and the paper whose dataset you used.",
  "url": "https://meta-analysis.cz",
  "license": "https://creativecommons.org/licenses/by/4.0/",
  "citeAs": "Havranek, T. and Z. Irsova (2026). meta-analysis.cz: harmonised estimate-level data from meta-analyses in economics. Zenodo. https://doi.org/10.5281/zenodo.21773678",
@@ -79,8 +79,8 @@
    "name": "activism.parquet",
    "contentUrl": "https://meta-analysis.cz/data/v1/activism/activism.parquet",
    "encodingFormat": "application/vnd.apache.parquet",
-   "sha256": "88fd73b7fdab1d1bc1ecaf695b63edf57595cb97fa885d4ed253b963bc7f6946",
-   "contentSize": "247268"
+   "sha256": "2b70fac220a29d3621e23aa1a6c7d300f73c7bdc53d9c7e2c99d30e04b33ff67",
+   "contentSize": "247071"
   },
   {
    "@type": "cr:FileObject",
@@ -268,8 +268,8 @@
    "name": "frisch.parquet",
    "contentUrl": "https://meta-analysis.cz/data/v1/frisch/frisch.parquet",
    "encodingFormat": "application/vnd.apache.parquet",
-   "sha256": "214bc91a91a2d569c89fa59570738b8600db47c8a3cf42aa3824409f04b56040",
-   "contentSize": "37080"
+   "sha256": "b676cd9957d046d137e7cd7e7af42cbec2502ade4b5dfce402f308974a2e8c03",
+   "contentSize": "37845"
   },
   {
    "@type": "cr:FileObject",
@@ -494,8 +494,8 @@
    "description": "DERIVED AGGREGATE VIEW of the per-dataset files above, reshaped to a common schema. Rows are not additional to them.",
    "contentUrl": "https://meta-analysis.cz/data/v1/estimates_harmonised.csv",
    "encodingFormat": "text/csv",
-   "sha256": "4d6cf12480e39aacecb55a91310a39b3b4ddc7defcf1fc5177b7589990c5eedc",
-   "contentSize": "11506084"
+   "sha256": "e4224c5b16fa32f2a6da56b57fe039da0660588b71f885b442d60359dfe14b08",
+   "contentSize": "11513075"
   },
   {
    "@type": "cr:FileObject",
@@ -504,8 +504,8 @@
    "description": "The same derived aggregate view, as Parquet.",
    "contentUrl": "https://meta-analysis.cz/data/v1/estimates_harmonised.parquet",
    "encodingFormat": "application/vnd.apache.parquet",
-   "sha256": "61bd6ae98e1141459cc5c49450f4bc99c8d9b718b840b606f19a362ad6b85f57",
-   "contentSize": "1776147"
+   "sha256": "8127e7d94dde9c15904bcdc54468207b399e913f3893ac02cbfb5ca11df10313",
+   "contentSize": "1778477"
   }
  ],
  "recordSet": [
@@ -520,7 +520,7 @@
      "@type": "cr:Field",
      "@id": "activism/articleno",
      "name": "ArticleNo",
-     "dataType": "sc:Float",
+     "dataType": "sc:Integer",
      "source": {
       "fileObject": {
        "@id": "activism.parquet"
@@ -548,7 +548,7 @@
      "@type": "cr:Field",
      "@id": "activism/strong_dummy",
      "name": "Strong dummy",
-     "dataType": "sc:Float",
+     "dataType": "sc:Integer",
      "source": {
       "fileObject": {
        "@id": "activism.parquet"
@@ -562,7 +562,7 @@
      "@type": "cr:Field",
      "@id": "activism/unsure_int",
      "name": "Unsure_int",
-     "dataType": "sc:Float",
+     "dataType": "sc:Integer",
      "source": {
       "fileObject": {
        "@id": "activism.parquet"
@@ -576,7 +576,7 @@
      "@type": "cr:Field",
      "@id": "activism/sure",
      "name": "Sure",
-     "dataType": "sc:Float",
+     "dataType": "sc:Integer",
      "source": {
       "fileObject": {
        "@id": "activism.parquet"
@@ -604,7 +604,7 @@
      "@type": "cr:Field",
      "@id": "activism/pubyear",
      "name": "PubYear",
-     "dataType": "sc:Float",
+     "dataType": "sc:Integer",
      "source": {
       "fileObject": {
        "@id": "activism.parquet"
@@ -632,7 +632,7 @@
      "@type": "cr:Field",
      "@id": "activism/pblshd",
      "name": "Pblshd?",
-     "dataType": "sc:Float",
+     "dataType": "sc:Integer",
      "source": {
       "fileObject": {
        "@id": "activism.parquet"
@@ -730,7 +730,7 @@
      "@type": "cr:Field",
      "@id": "activism/estimpage",
      "name": "EstimPage",
-     "dataType": "sc:Float",
+     "dataType": "sc:Integer",
      "source": {
       "fileObject": {
        "@id": "activism.parquet"
@@ -898,7 +898,7 @@
      "@type": "cr:Field",
      "@id": "activism/lagged_t_1",
      "name": "lagged (t-1)",
-     "dataType": "sc:Float",
+     "dataType": "sc:Integer",
      "source": {
       "fileObject": {
        "@id": "activism.parquet"
@@ -912,7 +912,7 @@
      "@type": "cr:Field",
      "@id": "activism/lagged_t_x",
      "name": "lagged (t-x)?",
-     "dataType": "sc:Float",
+     "dataType": "sc:Integer",
      "source": {
       "fileObject": {
        "@id": "activism.parquet"
@@ -926,7 +926,7 @@
      "@type": "cr:Field",
      "@id": "activism/event_window_start",
      "name": "Event window start",
-     "dataType": "sc:Float",
+     "dataType": "sc:Integer",
      "source": {
       "fileObject": {
        "@id": "activism.parquet"
@@ -940,7 +940,7 @@
      "@type": "cr:Field",
      "@id": "activism/event_window_end",
      "name": "Event window end",
-     "dataType": "sc:Float",
+     "dataType": "sc:Integer",
      "source": {
       "fileObject": {
        "@id": "activism.parquet"
@@ -954,7 +954,7 @@
      "@type": "cr:Field",
      "@id": "activism/length_of_the_car_period",
      "name": "Length of the CAR period",
-     "dataType": "sc:Float",
+     "dataType": "sc:Integer",
      "source": {
       "fileObject": {
        "@id": "activism.parquet"
@@ -968,7 +968,7 @@
      "@type": "cr:Field",
      "@id": "activism/day_average",
      "name": "day average",
-     "dataType": "sc:Text",
+     "dataType": "sc:Float",
      "source": {
       "fileObject": {
        "@id": "activism.parquet"
@@ -982,7 +982,7 @@
      "@type": "cr:Field",
      "@id": "activism/months_0_1",
      "name": "months (0/1)",
-     "dataType": "sc:Float",
+     "dataType": "sc:Integer",
      "source": {
       "fileObject": {
        "@id": "activism.parquet"
@@ -996,7 +996,7 @@
      "@type": "cr:Field",
      "@id": "activism/event_start",
      "name": "Event Start",
-     "dataType": "sc:Float",
+     "dataType": "sc:Integer",
      "source": {
       "fileObject": {
        "@id": "activism.parquet"
@@ -1010,7 +1010,7 @@
      "@type": "cr:Field",
      "@id": "activism/event_end",
      "name": "Event End",
-     "dataType": "sc:Float",
+     "dataType": "sc:Integer",
      "source": {
       "fileObject": {
        "@id": "activism.parquet"
@@ -1024,7 +1024,7 @@
      "@type": "cr:Field",
      "@id": "activism/event_symmetry",
      "name": "Event_symmetry",
-     "dataType": "sc:Float",
+     "dataType": "sc:Integer",
      "source": {
       "fileObject": {
        "@id": "activism.parquet"
@@ -1038,7 +1038,7 @@
      "@type": "cr:Field",
      "@id": "activism/event_start_end_adj",
      "name": "Event_start_end_adj",
-     "dataType": "sc:Float",
+     "dataType": "sc:Integer",
      "source": {
       "fileObject": {
        "@id": "activism.parquet"
@@ -1052,7 +1052,7 @@
      "@type": "cr:Field",
      "@id": "activism/event_length",
      "name": "Event Length",
-     "dataType": "sc:Float",
+     "dataType": "sc:Integer",
      "source": {
       "fileObject": {
        "@id": "activism.parquet"
@@ -1066,7 +1066,7 @@
      "@type": "cr:Field",
      "@id": "activism/0_0",
      "name": "0_0",
-     "dataType": "sc:Float",
+     "dataType": "sc:Integer",
      "source": {
       "fileObject": {
        "@id": "activism.parquet"
@@ -1080,7 +1080,7 @@
      "@type": "cr:Field",
      "@id": "activism/1_0",
      "name": "-1_0",
-     "dataType": "sc:Float",
+     "dataType": "sc:Integer",
      "source": {
       "fileObject": {
        "@id": "activism.parquet"
@@ -1094,7 +1094,7 @@
      "@type": "cr:Field",
      "@id": "activism/0_1",
      "name": "0_1",
-     "dataType": "sc:Float",
+     "dataType": "sc:Integer",
      "source": {
       "fileObject": {
        "@id": "activism.parquet"
@@ -1108,7 +1108,7 @@
      "@type": "cr:Field",
      "@id": "activism/1_1",
      "name": "-1_1",
-     "dataType": "sc:Float",
+     "dataType": "sc:Integer",
      "source": {
       "fileObject": {
        "@id": "activism.parquet"
@@ -1122,7 +1122,7 @@
      "@type": "cr:Field",
      "@id": "activism/3_0",
      "name": "-3_0",
-     "dataType": "sc:Float",
+     "dataType": "sc:Integer",
      "source": {
       "fileObject": {
        "@id": "activism.parquet"
@@ -1136,7 +1136,7 @@
      "@type": "cr:Field",
      "@id": "activism/0_3",
      "name": "0_3",
-     "dataType": "sc:Float",
+     "dataType": "sc:Integer",
      "source": {
       "fileObject": {
        "@id": "activism.parquet"
@@ -1150,7 +1150,7 @@
      "@type": "cr:Field",
      "@id": "activism/3_3",
      "name": "-3_3",
-     "dataType": "sc:Float",
+     "dataType": "sc:Integer",
      "source": {
       "fileObject": {
        "@id": "activism.parquet"
@@ -1164,7 +1164,7 @@
      "@type": "cr:Field",
      "@id": "activism/7_0",
      "name": "-7_0",
-     "dataType": "sc:Float",
+     "dataType": "sc:Integer",
      "source": {
       "fileObject": {
        "@id": "activism.parquet"
@@ -1178,7 +1178,7 @@
      "@type": "cr:Field",
      "@id": "activism/0_7",
      "name": "0_7",
-     "dataType": "sc:Float",
+     "dataType": "sc:Integer",
      "source": {
       "fileObject": {
        "@id": "activism.parquet"
@@ -1192,7 +1192,7 @@
      "@type": "cr:Field",
      "@id": "activism/7_7",
      "name": "-7_7",
-     "dataType": "sc:Float",
+     "dataType": "sc:Integer",
      "source": {
       "fileObject": {
        "@id": "activism.parquet"
@@ -1206,7 +1206,7 @@
      "@type": "cr:Field",
      "@id": "activism/14_0",
      "name": "-14_0",
-     "dataType": "sc:Float",
+     "dataType": "sc:Integer",
      "source": {
       "fileObject": {
        "@id": "activism.parquet"
@@ -1220,7 +1220,7 @@
      "@type": "cr:Field",
      "@id": "activism/0_14",
      "name": "0_14",
-     "dataType": "sc:Float",
+     "dataType": "sc:Integer",
      "source": {
       "fileObject": {
        "@id": "activism.parquet"
@@ -1234,7 +1234,7 @@
      "@type": "cr:Field",
      "@id": "activism/14_14",
      "name": "-14_14",
-     "dataType": "sc:Float",
+     "dataType": "sc:Integer",
      "source": {
       "fileObject": {
        "@id": "activism.parquet"
@@ -1248,7 +1248,7 @@
      "@type": "cr:Field",
      "@id": "activism/30_0",
      "name": "-30_0",
-     "dataType": "sc:Float",
+     "dataType": "sc:Integer",
      "source": {
       "fileObject": {
        "@id": "activism.parquet"
@@ -1262,7 +1262,7 @@
      "@type": "cr:Field",
      "@id": "activism/0_30",
      "name": "0_30",
-     "dataType": "sc:Float",
+     "dataType": "sc:Integer",
      "source": {
       "fileObject": {
        "@id": "activism.parquet"
@@ -1276,7 +1276,7 @@
      "@type": "cr:Field",
      "@id": "activism/30_30",
      "name": "-30_30",
-     "dataType": "sc:Float",
+     "dataType": "sc:Integer",
      "source": {
       "fileObject": {
        "@id": "activism.parquet"
@@ -1304,7 +1304,7 @@
      "@type": "cr:Field",
      "@id": "activism/whatever_comes_first",
      "name": "Whatever comes first",
-     "dataType": "sc:Float",
+     "dataType": "sc:Integer",
      "source": {
       "fileObject": {
        "@id": "activism.parquet"
@@ -1318,7 +1318,7 @@
      "@type": "cr:Field",
      "@id": "activism/initial_press_annoucement",
      "name": "Initial press annoucement",
-     "dataType": "sc:Float",
+     "dataType": "sc:Integer",
      "source": {
       "fileObject": {
        "@id": "activism.parquet"
@@ -1332,7 +1332,7 @@
      "@type": "cr:Field",
      "@id": "activism/proxy_mailing_date",
      "name": "Proxy mailing date",
-     "dataType": "sc:Float",
+     "dataType": "sc:Integer",
      "source": {
       "fileObject": {
        "@id": "activism.parquet"
@@ -1346,7 +1346,7 @@
      "@type": "cr:Field",
      "@id": "activism/shareholder_meeting_date",
      "name": "Shareholder meeting date",
-     "dataType": "sc:Float",
+     "dataType": "sc:Integer",
      "source": {
       "fileObject": {
        "@id": "activism.parquet"
@@ -1360,7 +1360,7 @@
      "@type": "cr:Field",
      "@id": "activism/13d_13g_filing",
      "name": "13D/13G filing",
-     "dataType": "sc:Float",
+     "dataType": "sc:Integer",
      "source": {
       "fileObject": {
        "@id": "activism.parquet"
@@ -1374,7 +1374,7 @@
      "@type": "cr:Field",
      "@id": "activism/decision",
      "name": "Decision",
-     "dataType": "sc:Float",
+     "dataType": "sc:Integer",
      "source": {
       "fileObject": {
        "@id": "activism.parquet"
@@ -1388,7 +1388,7 @@
      "@type": "cr:Field",
      "@id": "activism/focus_list",
      "name": "Focus List",
-     "dataType": "sc:Float",
+     "dataType": "sc:Integer",
      "source": {
       "fileObject": {
        "@id": "activism.parquet"
@@ -1402,7 +1402,7 @@
      "@type": "cr:Field",
      "@id": "activism/letterday",
      "name": "LetterDay",
-     "dataType": "sc:Float",
+     "dataType": "sc:Integer",
      "source": {
       "fileObject": {
        "@id": "activism.parquet"
@@ -1416,7 +1416,7 @@
      "@type": "cr:Field",
      "@id": "activism/thresholdreach",
      "name": "ThresholdReach",
-     "dataType": "sc:Float",
+     "dataType": "sc:Integer",
      "source": {
       "fileObject": {
        "@id": "activism.parquet"
@@ -1444,7 +1444,7 @@
      "@type": "cr:Field",
      "@id": "activism/all",
      "name": "All",
-     "dataType": "sc:Float",
+     "dataType": "sc:Integer",
      "source": {
       "fileObject": {
        "@id": "activism.parquet"
@@ -1458,7 +1458,7 @@
      "@type": "cr:Field",
      "@id": "activism/general_undervaluation",
      "name": "General undervaluation",
-     "dataType": "sc:Float",
+     "dataType": "sc:Integer",
      "source": {
       "fileObject": {
        "@id": "activism.parquet"
@@ -1472,7 +1472,7 @@
      "@type": "cr:Field",
      "@id": "activism/performance_governance",
      "name": "Performance + governance",
-     "dataType": "sc:Float",
+     "dataType": "sc:Integer",
      "source": {
       "fileObject": {
        "@id": "activism.parquet"
@@ -1486,7 +1486,7 @@
      "@type": "cr:Field",
      "@id": "activism/governance_general",
      "name": "Governance - general",
-     "dataType": "sc:Float",
+     "dataType": "sc:Integer",
      "source": {
       "fileObject": {
        "@id": "activism.parquet"
@@ -1500,7 +1500,7 @@
      "@type": "cr:Field",
      "@id": "activism/governance_seats",
      "name": "Governance - seats",
-     "dataType": "sc:Float",
+     "dataType": "sc:Integer",
      "source": {
       "fileObject": {
        "@id": "activism.parquet"
@@ -1514,7 +1514,7 @@
      "@type": "cr:Field",
      "@id": "activism/governance_rescind",
      "name": "Governance - rescind",
-     "dataType": "sc:Float",
+     "dataType": "sc:Integer",
      "source": {
       "fileObject": {
        "@id": "activism.parquet"
@@ -1528,7 +1528,7 @@
      "@type": "cr:Field",
      "@id": "activism/governance_renumeration",
      "name": "Governance - renumeration",
-     "dataType": "sc:Float",
+     "dataType": "sc:Integer",
      "source": {
       "fileObject": {
        "@id": "activism.parquet"
@@ -1542,7 +1542,7 @@
      "@type": "cr:Field",
      "@id": "activism/governance_voting",
      "name": "Governance - voting",
-     "dataType": "sc:Float",
+     "dataType": "sc:Integer",
      "source": {
       "fileObject": {
        "@id": "activism.parquet"
@@ -1556,7 +1556,7 @@
      "@type": "cr:Field",
      "@id": "activism/governance_other",
      "name": "Governance - other",
-     "dataType": "sc:Float",
+     "dataType": "sc:Integer",
      "source": {
       "fileObject": {
        "@id": "activism.parquet"
@@ -1570,7 +1570,7 @@
      "@type": "cr:Field",
      "@id": "activism/capital_structure",
      "name": "Capital Structure",
-     "dataType": "sc:Float",
+     "dataType": "sc:Integer",
      "source": {
       "fileObject": {
        "@id": "activism.parquet"
@@ -1584,7 +1584,7 @@
      "@type": "cr:Field",
      "@id": "activism/business_strategy",
      "name": "Business Strategy",
-     "dataType": "sc:Float",
+     "dataType": "sc:Integer",
      "source": {
       "fileObject": {
        "@id": "activism.parquet"
@@ -1598,7 +1598,7 @@
      "@type": "cr:Field",
      "@id": "activism/sale",
      "name": "Sale",
-     "dataType": "sc:Float",
+     "dataType": "sc:Integer",
      "source": {
       "fileObject": {
        "@id": "activism.parquet"
@@ -1612,7 +1612,7 @@
      "@type": "cr:Field",
      "@id": "activism/other",
      "name": "Other",
-     "dataType": "sc:Float",
+     "dataType": "sc:Integer",
      "source": {
       "fileObject": {
        "@id": "activism.parquet"
@@ -1640,7 +1640,7 @@
      "@type": "cr:Field",
      "@id": "activism/outcome_success",
      "name": "Outcome - success",
-     "dataType": "sc:Float",
+     "dataType": "sc:Integer",
      "source": {
       "fileObject": {
        "@id": "activism.parquet"
@@ -1654,7 +1654,7 @@
      "@type": "cr:Field",
      "@id": "activism/outcome_unuccessful",
      "name": "Outcome - unuccessful",
-     "dataType": "sc:Float",
+     "dataType": "sc:Integer",
      "source": {
       "fileObject": {
        "@id": "activism.parquet"
@@ -1668,7 +1668,7 @@
      "@type": "cr:Field",
      "@id": "activism/outvome_na",
      "name": "Outvome - NA",
-     "dataType": "sc:Float",
+     "dataType": "sc:Integer",
      "source": {
       "fileObject": {
        "@id": "activism.parquet"
@@ -1710,7 +1710,7 @@
      "@type": "cr:Field",
      "@id": "activism/market_model",
      "name": "Market model",
-     "dataType": "sc:Float",
+     "dataType": "sc:Integer",
      "source": {
       "fileObject": {
        "@id": "activism.parquet"
@@ -1724,7 +1724,7 @@
      "@type": "cr:Field",
      "@id": "activism/market_adjusted_returns",
      "name": "market-adjusted returns",
-     "dataType": "sc:Float",
+     "dataType": "sc:Integer",
      "source": {
       "fileObject": {
        "@id": "activism.parquet"
@@ -1738,7 +1738,7 @@
      "@type": "cr:Field",
      "@id": "activism/ff",
      "name": "FF",
-     "dataType": "sc:Float",
+     "dataType": "sc:Integer",
      "source": {
       "fileObject": {
        "@id": "activism.parquet"
@@ -1752,7 +1752,7 @@
      "@type": "cr:Field",
      "@id": "activism/bhar",
      "name": "BHAR",
-     "dataType": "sc:Float",
+     "dataType": "sc:Integer",
      "source": {
       "fileObject": {
        "@id": "activism.parquet"
@@ -1766,7 +1766,7 @@
      "@type": "cr:Field",
      "@id": "activism/rovnice",
      "name": "Rovnice",
-     "dataType": "sc:Float",
+     "dataType": "sc:Integer",
      "source": {
       "fileObject": {
        "@id": "activism.parquet"
@@ -1780,7 +1780,7 @@
      "@type": "cr:Field",
      "@id": "activism/equal_weighted",
      "name": "Equal-weighted",
-     "dataType": "sc:Float",
+     "dataType": "sc:Integer",
      "source": {
       "fileObject": {
        "@id": "activism.parquet"
@@ -1794,7 +1794,7 @@
      "@type": "cr:Field",
      "@id": "activism/value_weighted",
      "name": "Value-weighted",
-     "dataType": "sc:Float",
+     "dataType": "sc:Integer",
      "source": {
       "fileObject": {
        "@id": "activism.parquet"
@@ -1850,7 +1850,7 @@
      "@type": "cr:Field",
      "@id": "activism/hedge_fund_activism",
      "name": "hedge fund activism",
-     "dataType": "sc:Float",
+     "dataType": "sc:Integer",
      "source": {
       "fileObject": {
        "@id": "activism.parquet"
@@ -1864,7 +1864,7 @@
      "@type": "cr:Field",
      "@id": "activism/calpers",
      "name": "Calpers",
-     "dataType": "sc:Float",
+     "dataType": "sc:Integer",
      "source": {
       "fileObject": {
        "@id": "activism.parquet"
@@ -1878,7 +1878,7 @@
      "@type": "cr:Field",
      "@id": "activism/other_pension_funds_institutions",
      "name": "Other pension funds/institutions",
-     "dataType": "sc:Float",
+     "dataType": "sc:Integer",
      "source": {
       "fileObject": {
        "@id": "activism.parquet"
@@ -1892,7 +1892,7 @@
      "@type": "cr:Field",
      "@id": "activism/coalition_of_institutions",
      "name": "Coalition of institutions",
-     "dataType": "sc:Float",
+     "dataType": "sc:Integer",
      "source": {
       "fileObject": {
        "@id": "activism.parquet"
@@ -1906,7 +1906,7 @@
      "@type": "cr:Field",
      "@id": "activism/by_individuals",
      "name": "By individuals",
-     "dataType": "sc:Float",
+     "dataType": "sc:Integer",
      "source": {
       "fileObject": {
        "@id": "activism.parquet"
@@ -1920,7 +1920,7 @@
      "@type": "cr:Field",
      "@id": "activism/coalition_group_of_individuals",
      "name": "Coalition/group of individuals",
-     "dataType": "sc:Float",
+     "dataType": "sc:Integer",
      "source": {
       "fileObject": {
        "@id": "activism.parquet"
@@ -1934,7 +1934,7 @@
      "@type": "cr:Field",
      "@id": "activism/all_1",
      "name": "All.1",
-     "dataType": "sc:Float",
+     "dataType": "sc:Integer",
      "source": {
       "fileObject": {
        "@id": "activism.parquet"
@@ -1948,7 +1948,7 @@
      "@type": "cr:Field",
      "@id": "activism/group",
      "name": "Group",
-     "dataType": "sc:Float",
+     "dataType": "sc:Integer",
      "source": {
       "fileObject": {
        "@id": "activism.parquet"
@@ -1976,7 +1976,7 @@
      "@type": "cr:Field",
      "@id": "activism/activismall",
      "name": "ActivismAll",
-     "dataType": "sc:Float",
+     "dataType": "sc:Integer",
      "source": {
       "fileObject": {
        "@id": "activism.parquet"
@@ -1990,7 +1990,7 @@
      "@type": "cr:Field",
      "@id": "activism/proposals",
      "name": "Proposals",
-     "dataType": "sc:Float",
+     "dataType": "sc:Integer",
      "source": {
       "fileObject": {
        "@id": "activism.parquet"
@@ -2004,7 +2004,7 @@
      "@type": "cr:Field",
      "@id": "activism/negotiation",
      "name": "Negotiation",
-     "dataType": "sc:Float",
+     "dataType": "sc:Integer",
      "source": {
       "fileObject": {
        "@id": "activism.parquet"
@@ -2018,7 +2018,7 @@
      "@type": "cr:Field",
      "@id": "activism/proxy",
      "name": "Proxy",
-     "dataType": "sc:Float",
+     "dataType": "sc:Integer",
      "source": {
       "fileObject": {
        "@id": "activism.parquet"
@@ -2032,7 +2032,7 @@
      "@type": "cr:Field",
      "@id": "activism/prop_neg_proxy",
      "name": "Prop_Neg/Proxy",
-     "dataType": "sc:Float",
+     "dataType": "sc:Integer",
      "source": {
       "fileObject": {
        "@id": "activism.parquet"
@@ -2046,7 +2046,7 @@
      "@type": "cr:Field",
      "@id": "activism/prop_neg_proxy_2",
      "name": "Prop+Neg+Proxy",
-     "dataType": "sc:Float",
+     "dataType": "sc:Integer",
      "source": {
       "fileObject": {
        "@id": "activism.parquet"
@@ -2060,7 +2060,7 @@
      "@type": "cr:Field",
      "@id": "activism/litigation",
      "name": "Litigation",
-     "dataType": "sc:Float",
+     "dataType": "sc:Integer",
      "source": {
       "fileObject": {
        "@id": "activism.parquet"
@@ -2074,7 +2074,7 @@
      "@type": "cr:Field",
      "@id": "activism/activismother",
      "name": "ActivismOther",
-     "dataType": "sc:Float",
+     "dataType": "sc:Integer",
      "source": {
       "fileObject": {
        "@id": "activism.parquet"
@@ -2088,7 +2088,7 @@
      "@type": "cr:Field",
      "@id": "activism/iv_more_vars",
      "name": "IV more vars",
-     "dataType": "sc:Float",
+     "dataType": "sc:Integer",
      "source": {
       "fileObject": {
        "@id": "activism.parquet"
@@ -2102,7 +2102,7 @@
      "@type": "cr:Field",
      "@id": "activism/datastart_y",
      "name": "datastart_y",
-     "dataType": "sc:Float",
+     "dataType": "sc:Integer",
      "source": {
       "fileObject": {
        "@id": "activism.parquet"
@@ -2116,7 +2116,7 @@
      "@type": "cr:Field",
      "@id": "activism/dataend_y",
      "name": "dataend_y",
-     "dataType": "sc:Float",
+     "dataType": "sc:Integer",
      "source": {
       "fileObject": {
        "@id": "activism.parquet"
@@ -2172,7 +2172,7 @@
      "@type": "cr:Field",
      "@id": "activism/length",
      "name": "Length",
-     "dataType": "sc:Text",
+     "dataType": "sc:Float",
      "source": {
       "fileObject": {
        "@id": "activism.parquet"
@@ -2186,7 +2186,7 @@
      "@type": "cr:Field",
      "@id": "activism/totalobs",
      "name": "TotalObs",
-     "dataType": "sc:Float",
+     "dataType": "sc:Integer",
      "source": {
       "fileObject": {
        "@id": "activism.parquet"
@@ -2201,7 +2201,7 @@
      "@type": "cr:Field",
      "@id": "activism/daily",
      "name": "Daily",
-     "dataType": "sc:Float",
+     "dataType": "sc:Integer",
      "source": {
       "fileObject": {
        "@id": "activism.parquet"
@@ -2215,7 +2215,7 @@
      "@type": "cr:Field",
      "@id": "activism/monthly",
      "name": "Monthly",
-     "dataType": "sc:Float",
+     "dataType": "sc:Integer",
      "source": {
       "fileObject": {
        "@id": "activism.parquet"
@@ -2257,7 +2257,7 @@
      "@type": "cr:Field",
      "@id": "activism/number_of_countries_text",
      "name": "Number of countries (text)",
-     "dataType": "sc:Float",
+     "dataType": "sc:Integer",
      "source": {
       "fileObject": {
        "@id": "activism.parquet"
@@ -2299,7 +2299,7 @@
      "@type": "cr:Field",
      "@id": "activism/us",
      "name": "US",
-     "dataType": "sc:Float",
+     "dataType": "sc:Integer",
      "source": {
       "fileObject": {
        "@id": "activism.parquet"
@@ -2313,7 +2313,7 @@
      "@type": "cr:Field",
      "@id": "activism/germany",
      "name": "Germany",
-     "dataType": "sc:Float",
+     "dataType": "sc:Integer",
      "source": {
       "fileObject": {
        "@id": "activism.parquet"
@@ -2327,7 +2327,7 @@
      "@type": "cr:Field",
      "@id": "activism/europe",
      "name": "Europe",
-     "dataType": "sc:Float",
+     "dataType": "sc:Integer",
      "source": {
       "fileObject": {
        "@id": "activism.parquet"
@@ -2341,7 +2341,7 @@
      "@type": "cr:Field",
      "@id": "activism/asia",
      "name": "Asia",
-     "dataType": "sc:Float",
+     "dataType": "sc:Integer",
      "source": {
       "fileObject": {
        "@id": "activism.parquet"
@@ -2369,7 +2369,7 @@
      "@type": "cr:Field",
      "@id": "activism/se_clustered_robust",
      "name": "SE clustered/robust",
-     "dataType": "sc:Float",
+     "dataType": "sc:Integer",
      "source": {
       "fileObject": {
        "@id": "activism.parquet"
@@ -2411,7 +2411,7 @@
      "@type": "cr:Field",
      "@id": "activism/roa",
      "name": "RoA",
-     "dataType": "sc:Float",
+     "dataType": "sc:Integer",
      "source": {
       "fileObject": {
        "@id": "activism.parquet"
@@ -2425,7 +2425,7 @@
      "@type": "cr:Field",
      "@id": "activism/size",
      "name": "Size",
-     "dataType": "sc:Float",
+     "dataType": "sc:Integer",
      "source": {
       "fileObject": {
        "@id": "activism.parquet"
@@ -2439,7 +2439,7 @@
      "@type": "cr:Field",
      "@id": "activism/dynamic",
      "name": "Dynamic",
-     "dataType": "sc:Float",
+     "dataType": "sc:Integer",
      "source": {
       "fileObject": {
        "@id": "activism.parquet"
@@ -2467,7 +2467,7 @@
      "@type": "cr:Field",
      "@id": "activism/ols",
      "name": "OLS",
-     "dataType": "sc:Float",
+     "dataType": "sc:Integer",
      "source": {
       "fileObject": {
        "@id": "activism.parquet"
@@ -2481,7 +2481,7 @@
      "@type": "cr:Field",
      "@id": "activism/iv",
      "name": "IV",
-     "dataType": "sc:Float",
+     "dataType": "sc:Integer",
      "source": {
       "fileObject": {
        "@id": "activism.parquet"
@@ -2495,7 +2495,7 @@
      "@type": "cr:Field",
      "@id": "activism/panel_fe",
      "name": "Panel FE",
-     "dataType": "sc:Float",
+     "dataType": "sc:Integer",
      "source": {
       "fileObject": {
        "@id": "activism.parquet"
@@ -2509,7 +2509,7 @@
      "@type": "cr:Field",
      "@id": "activism/otherest",
      "name": "Otherest",
-     "dataType": "sc:Float",
+     "dataType": "sc:Integer",
      "source": {
       "fileObject": {
        "@id": "activism.parquet"
@@ -2537,7 +2537,7 @@
      "@type": "cr:Field",
      "@id": "activism/cit",
      "name": "Cit",
-     "dataType": "sc:Float",
+     "dataType": "sc:Integer",
      "source": {
       "fileObject": {
        "@id": "activism.parquet"
@@ -2551,7 +2551,7 @@
      "@type": "cr:Field",
      "@id": "activism/first_year_in_gs",
      "name": "First year in GS",
-     "dataType": "sc:Float",
+     "dataType": "sc:Integer",
      "source": {
       "fileObject": {
        "@id": "activism.parquet"
@@ -2607,7 +2607,7 @@
      "@type": "cr:Field",
      "@id": "activism/english_origin",
      "name": "English-origin",
-     "dataType": "sc:Float",
+     "dataType": "sc:Integer",
      "source": {
       "fileObject": {
        "@id": "activism.parquet"
@@ -2621,7 +2621,7 @@
      "@type": "cr:Field",
      "@id": "activism/french_origin",
      "name": "French-origin",
-     "dataType": "sc:Float",
+     "dataType": "sc:Integer",
      "source": {
       "fileObject": {
        "@id": "activism.parquet"
@@ -2635,7 +2635,7 @@
      "@type": "cr:Field",
      "@id": "activism/german_origin",
      "name": "German-origin",
-     "dataType": "sc:Float",
+     "dataType": "sc:Integer",
      "source": {
       "fileObject": {
        "@id": "activism.parquet"
@@ -2649,7 +2649,7 @@
      "@type": "cr:Field",
      "@id": "activism/scandinavian_origin",
      "name": "Scandinavian-origin",
-     "dataType": "sc:Float",
+     "dataType": "sc:Integer",
      "source": {
       "fileObject": {
        "@id": "activism.parquet"
@@ -2733,7 +2733,7 @@
      "@type": "cr:Field",
      "@id": "activism/sarbanes_oxley",
      "name": "Sarbanes_Oxley",
-     "dataType": "sc:Float",
+     "dataType": "sc:Integer",
      "source": {
       "fileObject": {
        "@id": "activism.parquet"
@@ -19926,15 +19926,15 @@
     },
     {
      "@type": "cr:Field",
-     "@id": "frisch/ln_cite",
-     "name": "ln_cite",
+     "@id": "frisch/lnycite",
+     "name": "lnycite",
      "dataType": "sc:Float",
      "source": {
       "fileObject": {
        "@id": "frisch.parquet"
       },
       "extract": {
-       "column": "ln_cite"
+       "column": "lnycite"
       }
      }
     },
@@ -19984,6 +19984,20 @@
     },
     {
      "@type": "cr:Field",
+     "@id": "frisch/ftest",
+     "name": "ftest",
+     "dataType": "sc:Float",
+     "source": {
+      "fileObject": {
+       "@id": "frisch.parquet"
+      },
+      "extract": {
+       "column": "ftest"
+      }
+     }
+    },
+    {
+     "@type": "cr:Field",
      "@id": "frisch/no_obs",
      "name": "no_obs",
      "dataType": "sc:Float",
@@ -20021,20 +20035,6 @@
       },
       "extract": {
        "column": "byproduct"
-      }
-     }
-    },
-    {
-     "@type": "cr:Field",
-     "@id": "frisch/year",
-     "name": "year",
-     "dataType": "sc:Text",
-     "source": {
-      "fileObject": {
-       "@id": "frisch.parquet"
-      },
-      "extract": {
-       "column": "year"
       }
      }
     },
@@ -20250,20 +20250,6 @@
     },
     {
      "@type": "cr:Field",
-     "@id": "frisch/income",
-     "name": "income",
-     "dataType": "sc:Integer",
-     "source": {
-      "fileObject": {
-       "@id": "frisch.parquet"
-      },
-      "extract": {
-       "column": "income"
-      }
-     }
-    },
-    {
-     "@type": "cr:Field",
      "@id": "frisch/industry",
      "name": "industry",
      "dataType": "sc:Integer",
@@ -20418,20 +20404,6 @@
     },
     {
      "@type": "cr:Field",
-     "@id": "frisch/wls",
-     "name": "wls",
-     "dataType": "sc:Integer",
-     "source": {
-      "fileObject": {
-       "@id": "frisch.parquet"
-      },
-      "extract": {
-       "column": "wls"
-      }
-     }
-    },
-    {
-     "@type": "cr:Field",
      "@id": "frisch/nonpar_sim",
      "name": "nonpar_sim",
      "dataType": "sc:Integer",
@@ -20446,29 +20418,15 @@
     },
     {
      "@type": "cr:Field",
-     "@id": "frisch/sls_iv",
-     "name": "sls_iv",
+     "@id": "frisch/2sls_iv",
+     "name": "2sls_iv",
      "dataType": "sc:Integer",
      "source": {
       "fileObject": {
        "@id": "frisch.parquet"
       },
       "extract": {
-       "column": "sls_iv"
-      }
-     }
-    },
-    {
-     "@type": "cr:Field",
-     "@id": "frisch/mle",
-     "name": "mle",
-     "dataType": "sc:Integer",
-     "source": {
-      "fileObject": {
-       "@id": "frisch.parquet"
-      },
-      "extract": {
-       "column": "mle"
+       "column": "2sls_iv"
       }
      }
     },
@@ -20511,6 +20469,20 @@
       },
       "extract": {
        "column": "nearretirement"
+      }
+     }
+    },
+    {
+     "@type": "cr:Field",
+     "@id": "frisch/ratio_wage",
+     "name": "ratio_wage",
+     "dataType": "sc:Integer",
+     "source": {
+      "fileObject": {
+       "@id": "frisch.parquet"
+      },
+      "extract": {
+       "column": "ratio_wage"
       }
      }
     }
@@ -28394,8 +28366,7 @@
       "extract": {
        "column": "lags"
       }
-     },
-     "description": "verified role: effect_estimate"
+     }
     },
     {
      "@type": "cr:Field",
@@ -28759,7 +28730,8 @@
       "extract": {
        "column": "mon_bot"
       }
-     }
+     },
+     "description": "verified role: effect_estimate"
     },
     {
      "@type": "cr:Field",
@@ -29011,8 +28983,7 @@
       "extract": {
        "column": "ci_se"
       }
-     },
-     "description": "verified role: standard_error"
+     }
     },
     {
      "@type": "cr:Field",

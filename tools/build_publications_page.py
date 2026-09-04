@@ -139,10 +139,10 @@ def jsonld(person, records):
              **({"sameAs": f"https://doi.org/{r['doi']}"} if r["doi"]
                 else {"sameAs": r["url"]} if r.get("url") else {}),
              **({"url": site_url(r["project"])} if r["project"] else {}),
-             # Only where the paper is actually carried here. An entry with no
-             # project is hosted by its journal, and this site holds no rights to
-             # declare over that copy.
-             **({"license": "https://creativecommons.org/licenses/by/4.0/"} if r["project"] else {})}
+             # Every entry, including the ones whose full text sits with the journal
+             # rather than here. These are the owner's own papers and the site is CC BY
+             # throughout, so the listing does not draw a line the licence does not draw.
+             "license": "https://creativecommons.org/licenses/by/4.0/"}
             for r in records],
     }, indent=1, ensure_ascii=False)
 

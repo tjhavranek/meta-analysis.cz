@@ -1,5 +1,5 @@
 {
- "n_rows": 49845,
+ "n_rows": 49866,
  "n_datasets": 42,
  "columns": [
   "dataset",
@@ -311,7 +311,7 @@
   },
   "frisch": {
    "included": true,
-   "n": 532,
+   "n": 553,
    "effect": "frisch",
    "se": "se",
    "se_is_derived": false,
@@ -320,7 +320,7 @@
    "units": "elasticity",
    "direction_note": null,
    "n_studies": 23,
-   "moderators": 16
+   "moderators": 15
   },
   "gasoline": {
    "included": true,
@@ -408,7 +408,7 @@
   },
   "lags": {
    "included": false,
-   "reason": "outcome is the transmission lag (mon_bot, months to the price trough); it has no sampling standard error, so it cannot enter an effect/SE table"
+   "reason": "outcome is the transmission lag (mon_bot, months to the price trough); it has no sampling standard error, so it cannot enter an effect/SE table. The catalogue used to name `lags` as the effect column, which is the VAR's lag ORDER (median 4), not the transmission lag (mean 34.9 months) -- the same record's own direction_note said so."
   },
   "learning": {
    "included": true,
@@ -549,7 +549,7 @@
    "n_obs_col": null,
    "n_obs_from_log": false,
    "units": "elasticity",
-   "direction_note": "Stored as inverse elasticities; inversion is needed to read them as the skill-substitution elasticity. Dropping this step reverses the finding. OPEN QUESTION, not resolved: two independent audits suggested this column is an inverse elasticity, on the grounds that PET on the stored scale is 0.326 whose reciprocal 3.07 is near the paper's headline of 4. That is a PET-level inference, and it does not hold row-wise -- the stored median is 1.42 and 1/1.42 = 0.70, nowhere near 4, with only 7.9% of values negative. So the simple inversion that demonstrably applies to `migrant` does NOT apply here. Units are left as 'elasticity' because relabelling on an unverified inference would be worse than the uncertainty. Settling it needs the paper's own transformation.",
+   "direction_note": "Mixed scale, flagged per row by `inverted_estimate`, and the file cannot be read without it. skill.do computes `coefficient = -1/elasticity`, then keeps `elasticity` where inverted_estimate==0 and `coefficient` where inverted_estimate==1. So the stored column is the substitution elasticity directly on 414 rows from 24 studies, and its negative reciprocal on 683 rows from 77 studies. The paper's headline sample of 682 estimates from 77 studies is the inverted_estimate==1 subset (683 rows here, one fewer in the paper). Averaging the stored column across both groups mixes two scales and is meaningless. This supersedes an earlier note that called the whole column an inverse elasticity and left the question open; the paper's own transformation, which that note said was needed to settle it, is skill.do lines 16-22.",
    "n_studies": 81,
    "moderators": 15
   },

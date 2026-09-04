@@ -230,12 +230,30 @@ for proj in sorted(prim):
     if r.get("status")=="excluded":
         manifest.append(dict(project=proj,status="excluded",reason=r["reason"])); continue
     rec=prim[proj]
-    want=(OVR.get(proj) or {}).get("sheet") or r.get("sheet")
-    try: df,sheet=read_member(proj,rec["source"],rec["archive"],rec["member"],want)
+    _ov=OVR.get(proj) or {}
+    want=_ov.get("sheet") or r.get("sheet")
+    # The resolver picks a project's data file by scanning what the folder holds and scoring
+    # it. That is right almost everywhere and wrong where a folder carries a working draft
+    # alongside the published file: frisch shipped frisch.dta, 723 rows, which matches
+    # NEITHER sample the paper reports (709/40 intensive, 762/38 extensive). `source_member`
+    # names the file to read instead, so a resolver score can never again outrank the paper.
+    _src = _ov.get("source_member")
+    if _src:
+        source, archive, member = _ov.get("source_kind", "zip"), _ov.get("source_archive"), _src
+    else:
+        source, archive, member = rec["source"], rec["archive"], rec["member"]
+    try: df,sheet=read_member(proj,source,archive,member,want)
     except Exception as ex:
         manifest.append(dict(project=proj,status="error",reason=str(ex)[:120])); continue
     if df is None or df.empty:
         manifest.append(dict(project=proj,status="error",reason="empty")); continue
+    # A sheet can carry TWO header rows. activism's does: row 0 names the columns and row 1
+    # repeats them with the author's own working marks ("Delete", "Strong"), so a reader
+    # taking header=0 ships that second row as an estimate and publishes 1,974 where the
+    # paper reports 1,973. `drop_leading_rows` removes it before anything else looks.
+    _drop = int(_ov.get("drop_leading_rows") or 0)
+    if _drop:
+        df = df.iloc[_drop:].reset_index(drop=True)
     df=clean_for_parquet(df)
     roles={}; rejected={}; declared=set()
     # The OVERRIDE supersedes the resolver. Reading the resolver's guess here published
@@ -301,7 +319,7 @@ for proj in sorted(prim):
     if os.path.getsize(pq) < 4_000_000:
         csv_path=os.path.join(d,f"{proj}.csv"); df.to_csv(csv_path,index=False,encoding="utf-8",lineterminator=chr(10))
     cb=os.path.join(OUT,"api","v1","codebooks"); os.makedirs(cb,exist_ok=True)
-    json.dump(dict(project=proj, source_file=rec["member"], source_archive=rec["archive"],
+    json.dump(dict(project=proj, source_file=member, source_archive=archive,
                    source_sheet=sheet, n_rows=int(len(df)), n_columns=int(df.shape[1]),
                    # Every other machine-readable record this pipeline emits declares the
                    # licence. These 46 did not, so a client reading a codebook alone was
@@ -312,7 +330,7 @@ for proj in sorted(prim):
     manifest.append(dict(project=proj,status="ok",rows=int(len(df)),cols=int(df.shape[1]),
                          parquet_bytes=os.path.getsize(pq),
                          csv_bytes=os.path.getsize(csv_path) if csv_path else None,
-                         source=rec["member"],sheet=sheet))
+                         source=member,sheet=sheet))
 
 json.dump(manifest,open(os.path.join(WORK,"convert_manifest.json"),"w",encoding="utf-8"),indent=1)
 ok=[m for m in manifest if m["status"]=="ok"]

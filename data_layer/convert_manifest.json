@@ -2,10 +2,10 @@
  {
   "project": "activism",
   "status": "ok",
-  "rows": 1974,
+  "rows": 1973,
   "cols": 159,
-  "parquet_bytes": 247268,
-  "csv_bytes": 3054900,
+  "parquet_bytes": 247071,
+  "csv_bytes": 2628518,
   "source": "activism.xlsx",
   "sheet": "Data"
  },
@@ -217,12 +217,12 @@
  {
   "project": "frisch",
   "status": "ok",
-  "rows": 723,
-  "cols": 49,
-  "parquet_bytes": 37080,
-  "csv_bytes": 119743,
-  "source": "frisch.dta",
-  "sheet": null
+  "rows": 762,
+  "cols": 47,
+  "parquet_bytes": 37845,
+  "csv_bytes": 127032,
+  "source": "data_extensive.xlsx",
+  "sheet": "data"
  },
  {
   "project": "gasoline",

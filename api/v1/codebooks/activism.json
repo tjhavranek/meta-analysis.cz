@@ -3,15 +3,15 @@
  "source_file": "activism.xlsx",
  "source_archive": null,
  "source_sheet": "Data",
- "n_rows": 1974,
+ "n_rows": 1973,
  "n_columns": 159,
  "license": "https://creativecommons.org/licenses/by/4.0/",
  "columns": [
   {
    "name": "ArticleNo",
    "normalized": "articleno",
-   "dtype": "float64",
-   "n_missing": 1,
+   "dtype": "int64",
+   "n_missing": 0,
    "n_unique": 67,
    "stats": {
     "min": 1.0,
@@ -28,18 +28,17 @@
    "normalized": "relevant",
    "dtype": "str",
    "n_missing": 0,
-   "n_unique": 3,
+   "n_unique": 2,
    "top_values": [
     "Odhad",
-    "Rovnice",
-    "Delete"
+    "Rovnice"
    ]
   },
   {
    "name": "Strong dummy",
    "normalized": "strong_dummy",
-   "dtype": "float64",
-   "n_missing": 1,
+   "dtype": "int64",
+   "n_missing": 0,
    "n_unique": 2,
    "stats": {
     "min": 0.0,
@@ -55,8 +54,8 @@
   {
    "name": "Unsure_int",
    "normalized": "unsure_int",
-   "dtype": "float64",
-   "n_missing": 1,
+   "dtype": "int64",
+   "n_missing": 0,
    "n_unique": 2,
    "stats": {
     "min": 0.0,
@@ -72,8 +71,8 @@
   {
    "name": "Sure",
    "normalized": "sure",
-   "dtype": "float64",
-   "n_missing": 1,
+   "dtype": "int64",
+   "n_missing": 0,
    "n_unique": 2,
    "stats": {
     "min": 0.0,
@@ -91,7 +90,7 @@
    "normalized": "authors",
    "dtype": "str",
    "n_missing": 0,
-   "n_unique": 63,
+   "n_unique": 62,
    "top_values": [
     "Weber, Zimmermann",
     "Greenwood, Schor",
@@ -103,8 +102,8 @@
   {
    "name": "PubYear",
    "normalized": "pubyear",
-   "dtype": "float64",
-   "n_missing": 1,
+   "dtype": "int64",
+   "n_missing": 0,
    "n_unique": 29,
    "inferred_role": "pub_year",
    "inferred_role_confidence": "name-match only, not verified",
@@ -123,7 +122,7 @@
    "normalized": "title",
    "dtype": "str",
    "n_missing": 0,
-   "n_unique": 68,
+   "n_unique": 67,
    "top_values": [
     "Hedge Fund Activism and Information Disclosure: the Case of Germany",
     "Investor activism and takeovers",
@@ -135,8 +134,8 @@
   {
    "name": "Pblshd?",
    "normalized": "pblshd",
-   "dtype": "float64",
-   "n_missing": 1,
+   "dtype": "int64",
+   "n_missing": 0,
    "n_unique": 1,
    "stats": {
     "min": 1.0,
@@ -154,7 +153,7 @@
    "normalized": "publication_series_name_text",
    "dtype": "str",
    "n_missing": 0,
-   "n_unique": 36,
+   "n_unique": 35,
    "top_values": [
     "Journal of Financial Economics",
     "Journal of Corporate Finance",
@@ -167,7 +166,7 @@
    "name": "Estimate",
    "normalized": "estimate",
    "dtype": "float64",
-   "n_missing": 4,
+   "n_missing": 3,
    "n_unique": 1060,
    "stats": {
     "min": -5.45,
@@ -183,7 +182,7 @@
    "name": "SE",
    "normalized": "se",
    "dtype": "float64",
-   "n_missing": 1790,
+   "n_missing": 1789,
    "n_unique": 137,
    "stats": {
     "min": 0.000924,
@@ -199,7 +198,7 @@
    "name": "t-stats",
    "normalized": "t_stats",
    "dtype": "float64",
-   "n_missing": 704,
+   "n_missing": 703,
    "n_unique": 685,
    "inferred_role": "t_stat",
    "inferred_role_confidence": "name-match only, not verified",
@@ -217,7 +216,7 @@
    "name": "z-stats",
    "normalized": "z_stats",
    "dtype": "float64",
-   "n_missing": 1580,
+   "n_missing": 1579,
    "n_unique": 326,
    "stats": {
     "min": -7.56,
@@ -233,7 +232,7 @@
    "name": "p-value",
    "normalized": "p_value",
    "dtype": "float64",
-   "n_missing": 1813,
+   "n_missing": 1812,
    "n_unique": 122,
    "stats": {
     "min": 0.0,
@@ -248,8 +247,8 @@
   {
    "name": "EstimPage",
    "normalized": "estimpage",
-   "dtype": "float64",
-   "n_missing": 1,
+   "dtype": "int64",
+   "n_missing": 0,
    "n_unique": 36,
    "stats": {
     "min": 4.0,
@@ -265,7 +264,7 @@
    "name": "Estimate.1",
    "normalized": "estimate_1",
    "dtype": "float64",
-   "n_missing": 1,
+   "n_missing": 0,
    "n_unique": 1064,
    "stats": {
     "min": -24.0,
@@ -281,7 +280,7 @@
    "name": "SE.1",
    "normalized": "se_1",
    "dtype": "float64",
-   "n_missing": 1676,
+   "n_missing": 1675,
    "n_unique": 252,
    "stats": {
     "min": 0.000924,
@@ -297,7 +296,7 @@
    "name": "t-stats.1",
    "normalized": "t_stats_1",
    "dtype": "float64",
-   "n_missing": 815,
+   "n_missing": 814,
    "n_unique": 659,
    "inferred_role": "t_stat",
    "inferred_role_confidence": "name-match only, not verified",
@@ -315,7 +314,7 @@
    "name": "z-stats.1",
    "normalized": "z_stats_1",
    "dtype": "float64",
-   "n_missing": 1580,
+   "n_missing": 1579,
    "n_unique": 326,
    "stats": {
     "min": -7.56,
@@ -331,7 +330,7 @@
    "name": "p-value.1",
    "normalized": "p_value_1",
    "dtype": "float64",
-   "n_missing": 1852,
+   "n_missing": 1851,
    "n_unique": 87,
    "stats": {
     "min": 0.0,
@@ -348,7 +347,7 @@
    "normalized": "effect_on_dv_page_text",
    "dtype": "str",
    "n_missing": 23,
-   "n_unique": 79,
+   "n_unique": 78,
    "top_values": [
     "p13: from table in %",
     "p7+8: Events that result in a spinoff earn significantly positive announcement returns\nof 6.4%.",
@@ -362,10 +361,9 @@
    "normalized": "shock_change_in_iv_page_text",
    "dtype": "str",
    "n_missing": 1969,
-   "n_unique": 2,
+   "n_unique": 1,
    "top_values": [
-    "je v procentech",
-    "Delete"
+    "je v procentech"
    ]
   },
   {
@@ -373,17 +371,16 @@
    "normalized": "estimpreference",
    "dtype": "str",
    "n_missing": 1955,
-   "n_unique": 2,
+   "n_unique": 1,
    "top_values": [
-    "robustness",
-    "Delete"
+    "robustness"
    ]
   },
   {
    "name": "Multiplicator to obtain estimates in points (number)",
    "normalized": "multiplicator_to_obtain_estimates_in_points_number",
    "dtype": "float64",
-   "n_missing": 1,
+   "n_missing": 0,
    "n_unique": 2,
    "stats": {
     "min": 0.01,
@@ -399,7 +396,7 @@
    "name": "Unnamed: 25",
    "normalized": "unnamed_25",
    "dtype": "float64",
-   "n_missing": 1,
+   "n_missing": 0,
    "n_unique": 990,
    "stats": {
     "min": -24.0,
@@ -415,7 +412,7 @@
    "name": "Unnamed: 26",
    "normalized": "unnamed_26",
    "dtype": "float64",
-   "n_missing": 123,
+   "n_missing": 122,
    "n_unique": 1649,
    "stats": {
     "min": 0.000282,
@@ -430,8 +427,8 @@
   {
    "name": "lagged (t-1)",
    "normalized": "lagged_t_1",
-   "dtype": "float64",
-   "n_missing": 1,
+   "dtype": "int64",
+   "n_missing": 0,
    "n_unique": 2,
    "stats": {
     "min": 0.0,
@@ -447,8 +444,8 @@
   {
    "name": "lagged (t-x)?",
    "normalized": "lagged_t_x",
-   "dtype": "float64",
-   "n_missing": 1,
+   "dtype": "int64",
+   "n_missing": 0,
    "n_unique": 1,
    "stats": {
     "min": 0.0,
@@ -464,8 +461,8 @@
   {
    "name": "Event window start",
    "normalized": "event_window_start",
-   "dtype": "float64",
-   "n_missing": 1,
+   "dtype": "int64",
+   "n_missing": 0,
    "n_unique": 24,
    "stats": {
     "min": -20.0,
@@ -480,8 +477,8 @@
   {
    "name": "Event window end",
    "normalized": "event_window_end",
-   "dtype": "float64",
-   "n_missing": 1,
+   "dtype": "int64",
+   "n_missing": 0,
    "n_unique": 23,
    "stats": {
     "min": -10.0,
@@ -496,8 +493,8 @@
   {
    "name": "Length of the CAR period",
    "normalized": "length_of_the_car_period",
-   "dtype": "float64",
-   "n_missing": 1,
+   "dtype": "int64",
+   "n_missing": 0,
    "n_unique": 23,
    "stats": {
     "min": 1.0,
@@ -512,19 +509,24 @@
   {
    "name": "day average",
    "normalized": "day_average",
-   "dtype": "str",
+   "dtype": "float64",
    "n_missing": 1962,
-   "n_unique": 2,
-   "top_values": [
-    "22",
-    "Delete"
-   ]
+   "n_unique": 1,
+   "stats": {
+    "min": 22.0,
+    "p25": 22.0,
+    "median": 22.0,
+    "p75": 22.0,
+    "max": 22.0,
+    "mean": 22.0,
+    "sd": 0.0
+   }
   },
   {
    "name": "months (0/1)",
    "normalized": "months_0_1",
-   "dtype": "float64",
-   "n_missing": 1,
+   "dtype": "int64",
+   "n_missing": 0,
    "n_unique": 2,
    "stats": {
     "min": 0.0,
@@ -540,8 +542,8 @@
   {
    "name": "Event Start",
    "normalized": "event_start",
-   "dtype": "float64",
-   "n_missing": 1,
+   "dtype": "int64",
+   "n_missing": 0,
    "n_unique": 26,
    "stats": {
     "min": -21.0,
@@ -556,8 +558,8 @@
   {
    "name": "Event End",
    "normalized": "event_end",
-   "dtype": "float64",
-   "n_missing": 1,
+   "dtype": "int64",
+   "n_missing": 0,
    "n_unique": 24,
    "stats": {
     "min": -10.0,
@@ -572,8 +574,8 @@
   {
    "name": "Event_symmetry",
    "normalized": "event_symmetry",
-   "dtype": "float64",
-   "n_missing": 1,
+   "dtype": "int64",
+   "n_missing": 0,
    "n_unique": 2,
    "stats": {
     "min": 0.0,
@@ -589,8 +591,8 @@
   {
    "name": "Event_start_end_adj",
    "normalized": "event_start_end_adj",
-   "dtype": "float64",
-   "n_missing": 1,
+   "dtype": "int64",
+   "n_missing": 0,
    "n_unique": 25,
    "stats": {
     "min": -10.0,
@@ -605,8 +607,8 @@
   {
    "name": "Event Length",
    "normalized": "event_length",
-   "dtype": "float64",
-   "n_missing": 1,
+   "dtype": "int64",
+   "n_missing": 0,
    "n_unique": 25,
    "stats": {
     "min": 1.0,
@@ -621,8 +623,8 @@
   {
    "name": "0_0",
    "normalized": "0_0",
-   "dtype": "float64",
-   "n_missing": 1,
+   "dtype": "int64",
+   "n_missing": 0,
    "n_unique": 2,
    "stats": {
     "min": 0.0,
@@ -638,8 +640,8 @@
   {
    "name": "-1_0",
    "normalized": "1_0",
-   "dtype": "float64",
-   "n_missing": 1,
+   "dtype": "int64",
+   "n_missing": 0,
    "n_unique": 2,
    "stats": {
     "min": 0.0,
@@ -655,8 +657,8 @@
   {
    "name": "0_1",
    "normalized": "0_1",
-   "dtype": "float64",
-   "n_missing": 1,
+   "dtype": "int64",
+   "n_missing": 0,
    "n_unique": 2,
    "stats": {
     "min": 0.0,
@@ -672,8 +674,8 @@
   {
    "name": "-1_1",
    "normalized": "1_1",
-   "dtype": "float64",
-   "n_missing": 1,
+   "dtype": "int64",
+   "n_missing": 0,
    "n_unique": 2,
    "stats": {
     "min": 0.0,
@@ -689,8 +691,8 @@
   {
    "name": "-3_0",
    "normalized": "3_0",
-   "dtype": "float64",
-   "n_missing": 1,
+   "dtype": "int64",
+   "n_missing": 0,
    "n_unique": 2,
    "stats": {
     "min": 0.0,
@@ -706,8 +708,8 @@
   {
    "name": "0_3",
    "normalized": "0_3",
-   "dtype": "float64",
-   "n_missing": 1,
+   "dtype": "int64",
+   "n_missing": 0,
    "n_unique": 2,
    "stats": {
     "min": 0.0,
@@ -723,8 +725,8 @@
   {
    "name": "-3_3",
    "normalized": "3_3",
-   "dtype": "float64",
-   "n_missing": 1,
+   "dtype": "int64",
+   "n_missing": 0,
    "n_unique": 2,
    "stats": {
     "min": 0.0,
@@ -740,8 +742,8 @@
   {
    "name": "-7_0",
    "normalized": "7_0",
-   "dtype": "float64",
-   "n_missing": 1,
+   "dtype": "int64",
+   "n_missing": 0,
    "n_unique": 2,
    "stats": {
     "min": 0.0,
@@ -757,8 +759,8 @@
   {
    "name": "0_7",
    "normalized": "0_7",
-   "dtype": "float64",
-   "n_missing": 1,
+   "dtype": "int64",
+   "n_missing": 0,
    "n_unique": 2,
    "stats": {
     "min": 0.0,
@@ -774,8 +776,8 @@
   {
    "name": "-7_7",
    "normalized": "7_7",
-   "dtype": "float64",
-   "n_missing": 1,
+   "dtype": "int64",
+   "n_missing": 0,
    "n_unique": 2,
    "stats": {
     "min": 0.0,
@@ -791,8 +793,8 @@
   {
    "name": "-14_0",
    "normalized": "14_0",
-   "dtype": "float64",
-   "n_missing": 1,
+   "dtype": "int64",
+   "n_missing": 0,
    "n_unique": 2,
    "stats": {
     "min": 0.0,
@@ -808,8 +810,8 @@
   {
    "name": "0_14",
    "normalized": "0_14",
-   "dtype": "float64",
-   "n_missing": 1,
+   "dtype": "int64",
+   "n_missing": 0,
    "n_unique": 2,
    "stats": {
     "min": 0.0,
@@ -825,8 +827,8 @@
   {
    "name": "-14_14",
    "normalized": "14_14",
-   "dtype": "float64",
-   "n_missing": 1,
+   "dtype": "int64",
+   "n_missing": 0,
    "n_unique": 2,
    "stats": {
     "min": 0.0,
@@ -842,8 +844,8 @@
   {
    "name": "-30_0",
    "normalized": "30_0",
-   "dtype": "float64",
-   "n_missing": 1,
+   "dtype": "int64",
+   "n_missing": 0,
    "n_unique": 2,
    "stats": {
     "min": 0.0,
@@ -859,8 +861,8 @@
   {
    "name": "0_30",
    "normalized": "0_30",
-   "dtype": "float64",
-   "n_missing": 1,
+   "dtype": "int64",
+   "n_missing": 0,
    "n_unique": 2,
    "stats": {
     "min": 0.0,
@@ -876,8 +878,8 @@
   {
    "name": "-30_30",
    "normalized": "30_30",
-   "dtype": "float64",
-   "n_missing": 1,
+   "dtype": "int64",
+   "n_missing": 0,
    "n_unique": 2,
    "stats": {
     "min": 0.0,
@@ -895,7 +897,7 @@
    "normalized": "type_of_event",
    "dtype": "str",
    "n_missing": 0,
-   "n_unique": 119,
+   "n_unique": 118,
    "top_values": [
     "p6: Filling date",
     "p8: The \u2018Publication Date\u2019 (PD) is the date where the target company announces the information to the public.",
@@ -907,8 +909,8 @@
   {
    "name": "Whatever comes first",
    "normalized": "whatever_comes_first",
-   "dtype": "float64",
-   "n_missing": 1,
+   "dtype": "int64",
+   "n_missing": 0,
    "n_unique": 2,
    "stats": {
     "min": 0.0,
@@ -924,8 +926,8 @@
   {
    "name": "Initial press annoucement",
    "normalized": "initial_press_annoucement",
-   "dtype": "float64",
-   "n_missing": 1,
+   "dtype": "int64",
+   "n_missing": 0,
    "n_unique": 2,
    "stats": {
     "min": 0.0,
@@ -941,8 +943,8 @@
   {
    "name": "Proxy mailing date",
    "normalized": "proxy_mailing_date",
-   "dtype": "float64",
-   "n_missing": 1,
+   "dtype": "int64",
+   "n_missing": 0,
    "n_unique": 2,
    "stats": {
     "min": 0.0,
@@ -958,8 +960,8 @@
   {
    "name": "Shareholder meeting date",
    "normalized": "shareholder_meeting_date",
-   "dtype": "float64",
-   "n_missing": 1,
+   "dtype": "int64",
+   "n_missing": 0,
    "n_unique": 2,
    "stats": {
     "min": 0.0,
@@ -975,8 +977,8 @@
   {
    "name": "13D/13G filing",
    "normalized": "13d_13g_filing",
-   "dtype": "float64",
-   "n_missing": 1,
+   "dtype": "int64",
+   "n_missing": 0,
    "n_unique": 2,
    "stats": {
     "min": 0.0,
@@ -992,8 +994,8 @@
   {
    "name": "Decision",
    "normalized": "decision",
-   "dtype": "float64",
-   "n_missing": 1,
+   "dtype": "int64",
+   "n_missing": 0,
    "n_unique": 2,
    "stats": {
     "min": 0.0,
@@ -1009,8 +1011,8 @@
   {
    "name": "Focus List",
    "normalized": "focus_list",
-   "dtype": "float64",
-   "n_missing": 1,
+   "dtype": "int64",
+   "n_missing": 0,
    "n_unique": 2,
    "stats": {
     "min": 0.0,
@@ -1026,8 +1028,8 @@
   {
    "name": "LetterDay",
    "normalized": "letterday",
-   "dtype": "float64",
-   "n_missing": 1,
+   "dtype": "int64",
+   "n_missing": 0,
    "n_unique": 2,
    "stats": {
     "min": 0.0,
@@ -1043,8 +1045,8 @@
   {
    "name": "ThresholdReach",
    "normalized": "thresholdreach",
-   "dtype": "float64",
-   "n_missing": 1,
+   "dtype": "int64",
+   "n_missing": 0,
    "n_unique": 2,
    "stats": {
     "min": 0.0,
@@ -1062,7 +1064,7 @@
    "normalized": "objective",
    "dtype": "str",
    "n_missing": 375,
-   "n_unique": 189,
+   "n_unique": 188,
    "top_values": [
     "p2: performance and overall governance practices",
     "p4: performance and governance",
@@ -1074,8 +1076,8 @@
   {
    "name": "All",
    "normalized": "all",
-   "dtype": "float64",
-   "n_missing": 1,
+   "dtype": "int64",
+   "n_missing": 0,
    "n_unique": 2,
    "stats": {
     "min": 0.0,
@@ -1091,8 +1093,8 @@
   {
    "name": "General undervaluation",
    "normalized": "general_undervaluation",
-   "dtype": "float64",
-   "n_missing": 1,
+   "dtype": "int64",
+   "n_missing": 0,
    "n_unique": 2,
    "stats": {
     "min": 0.0,
@@ -1108,8 +1110,8 @@
   {
    "name": "Performance + governance",
    "normalized": "performance_governance",
-   "dtype": "float64",
-   "n_missing": 1,
+   "dtype": "int64",
+   "n_missing": 0,
    "n_unique": 2,
    "stats": {
     "min": 0.0,
@@ -1125,8 +1127,8 @@
   {
    "name": "Governance - general",
    "normalized": "governance_general",
-   "dtype": "float64",
-   "n_missing": 1,
+   "dtype": "int64",
+   "n_missing": 0,
    "n_unique": 2,
    "stats": {
     "min": 0.0,
@@ -1142,8 +1144,8 @@
   {
    "name": "Governance - seats",
    "normalized": "governance_seats",
-   "dtype": "float64",
-   "n_missing": 1,
+   "dtype": "int64",
+   "n_missing": 0,
    "n_unique": 2,
    "stats": {
     "min": 0.0,
@@ -1159,8 +1161,8 @@
   {
    "name": "Governance - rescind",
    "normalized": "governance_rescind",
-   "dtype": "float64",
-   "n_missing": 1,
+   "dtype": "int64",
+   "n_missing": 0,
    "n_unique": 2,
    "stats": {
     "min": 0.0,
@@ -1176,8 +1178,8 @@
   {
    "name": "Governance - renumeration",
    "normalized": "governance_renumeration",
-   "dtype": "float64",
-   "n_missing": 1,
+   "dtype": "int64",
+   "n_missing": 0,
    "n_unique": 2,
    "stats": {
     "min": 0.0,
@@ -1193,8 +1195,8 @@
   {
    "name": "Governance - voting",
    "normalized": "governance_voting",
-   "dtype": "float64",
-   "n_missing": 1,
+   "dtype": "int64",
+   "n_missing": 0,
    "n_unique": 2,
    "stats": {
     "min": 0.0,
@@ -1210,8 +1212,8 @@
   {
    "name": "Governance - other",
    "normalized": "governance_other",
-   "dtype": "float64",
-   "n_missing": 1,
+   "dtype": "int64",
+   "n_missing": 0,
    "n_unique": 2,
    "stats": {
     "min": 0.0,
@@ -1227,8 +1229,8 @@
   {
    "name": "Capital Structure",
    "normalized": "capital_structure",
-   "dtype": "float64",
-   "n_missing": 1,
+   "dtype": "int64",
+   "n_missing": 0,
    "n_unique": 2,
    "stats": {
     "min": 0.0,
@@ -1244,8 +1246,8 @@
   {
    "name": "Business Strategy",
    "normalized": "business_strategy",
-   "dtype": "float64",
-   "n_missing": 1,
+   "dtype": "int64",
+   "n_missing": 0,
    "n_unique": 2,
    "stats": {
     "min": 0.0,
@@ -1261,8 +1263,8 @@
   {
    "name": "Sale",
    "normalized": "sale",
-   "dtype": "float64",
-   "n_missing": 1,
+   "dtype": "int64",
+   "n_missing": 0,
    "n_unique": 2,
    "stats": {
     "min": 0.0,
@@ -1278,8 +1280,8 @@
   {
    "name": "Other",
    "normalized": "other",
-   "dtype": "float64",
-   "n_missing": 1,
+   "dtype": "int64",
+   "n_missing": 0,
    "n_unique": 2,
    "stats": {
     "min": 0.0,
@@ -1297,7 +1299,7 @@
    "normalized": "outcome",
    "dtype": "str",
    "n_missing": 1614,
-   "n_unique": 35,
+   "n_unique": 34,
    "top_values": [
     "unsuccessful",
     "success",
@@ -1309,8 +1311,8 @@
   {
    "name": "Outcome - success",
    "normalized": "outcome_success",
-   "dtype": "float64",
-   "n_missing": 1,
+   "dtype": "int64",
+   "n_missing": 0,
    "n_unique": 2,
    "stats": {
     "min": 0.0,
@@ -1326,8 +1328,8 @@
   {
    "name": "Outcome - unuccessful",
    "normalized": "outcome_unuccessful",
-   "dtype": "float64",
-   "n_missing": 1,
+   "dtype": "int64",
+   "n_missing": 0,
    "n_unique": 2,
    "stats": {
     "min": 0.0,
@@ -1343,8 +1345,8 @@
   {
    "name": "Outvome - NA",
    "normalized": "outvome_na",
-   "dtype": "float64",
-   "n_missing": 1,
+   "dtype": "int64",
+   "n_missing": 0,
    "n_unique": 2,
    "stats": {
     "min": 0.0,
@@ -1362,7 +1364,7 @@
    "normalized": "dv_text",
    "dtype": "str",
    "n_missing": 0,
-   "n_unique": 100,
+   "n_unique": 99,
    "top_values": [
     "p11: We model the expected stock return as a linear function of the expected benchmark return.",
     "p5: FF target returns - FF matching portfolio returns",
@@ -1376,7 +1378,7 @@
    "normalized": "dv_page",
    "dtype": "str",
    "n_missing": 0,
-   "n_unique": 76,
+   "n_unique": 75,
    "top_values": [
     "p12",
     "p5",
@@ -1388,8 +1390,8 @@
   {
    "name": "Market model",
    "normalized": "market_model",
-   "dtype": "float64",
-   "n_missing": 1,
+   "dtype": "int64",
+   "n_missing": 0,
    "n_unique": 2,
    "stats": {
     "min": 0.0,
@@ -1405,8 +1407,8 @@
   {
    "name": "market-adjusted returns",
    "normalized": "market_adjusted_returns",
-   "dtype": "float64",
-   "n_missing": 1,
+   "dtype": "int64",
+   "n_missing": 0,
    "n_unique": 2,
    "stats": {
     "min": 0.0,
@@ -1422,8 +1424,8 @@
   {
    "name": "FF",
    "normalized": "ff",
-   "dtype": "float64",
-   "n_missing": 1,
+   "dtype": "int64",
+   "n_missing": 0,
    "n_unique": 2,
    "stats": {
     "min": 0.0,
@@ -1439,8 +1441,8 @@
   {
    "name": "BHAR",
    "normalized": "bhar",
-   "dtype": "float64",
-   "n_missing": 1,
+   "dtype": "int64",
+   "n_missing": 0,
    "n_unique": 2,
    "stats": {
     "min": 0.0,
@@ -1456,8 +1458,8 @@
   {
    "name": "Rovnice",
    "normalized": "rovnice",
-   "dtype": "float64",
-   "n_missing": 1,
+   "dtype": "int64",
+   "n_missing": 0,
    "n_unique": 2,
    "stats": {
     "min": 0.0,
@@ -1473,8 +1475,8 @@
   {
    "name": "Equal-weighted",
    "normalized": "equal_weighted",
-   "dtype": "float64",
-   "n_missing": 1,
+   "dtype": "int64",
+   "n_missing": 0,
    "n_unique": 2,
    "stats": {
     "min": 0.0,
@@ -1490,8 +1492,8 @@
   {
    "name": "Value-weighted",
    "normalized": "value_weighted",
-   "dtype": "float64",
-   "n_missing": 1,
+   "dtype": "int64",
+   "n_missing": 0,
    "n_unique": 2,
    "stats": {
     "min": 0.0,
@@ -1509,7 +1511,7 @@
    "normalized": "iv_text",
    "dtype": "str",
    "n_missing": 1690,
-   "n_unique": 92,
+   "n_unique": 91,
    "top_values": [
     "p4: Top Return Hedge Funds, defined as the ones with average 21-day announcement period abnormal returns (over and above the CRSP value-weighted index) of at least 10% and with at least 3 interventions in rolling windows of past 3 years.",
     "p30: dummy variable equal to 1 for activist shareholders that agree and support managers' strategies, 0 otherwise.",
@@ -1523,7 +1525,7 @@
    "normalized": "iv_page",
    "dtype": "str",
    "n_missing": 1708,
-   "n_unique": 18,
+   "n_unique": 17,
    "top_values": [
     "p19",
     "p24",
@@ -1537,7 +1539,7 @@
    "normalized": "type_of_activist_text",
    "dtype": "str",
    "n_missing": 34,
-   "n_unique": 123,
+   "n_unique": 122,
    "top_values": [
     "p1: Calpers",
     "p1: Hedge fund activism",
@@ -1549,8 +1551,8 @@
   {
    "name": "hedge fund activism",
    "normalized": "hedge_fund_activism",
-   "dtype": "float64",
-   "n_missing": 1,
+   "dtype": "int64",
+   "n_missing": 0,
    "n_unique": 2,
    "stats": {
     "min": 0.0,
@@ -1566,8 +1568,8 @@
   {
    "name": "Calpers",
    "normalized": "calpers",
-   "dtype": "float64",
-   "n_missing": 1,
+   "dtype": "int64",
+   "n_missing": 0,
    "n_unique": 2,
    "stats": {
     "min": 0.0,
@@ -1583,8 +1585,8 @@
   {
    "name": "Other pension funds/institutions",
    "normalized": "other_pension_funds_institutions",
-   "dtype": "float64",
-   "n_missing": 1,
+   "dtype": "int64",
+   "n_missing": 0,
    "n_unique": 2,
    "stats": {
     "min": 0.0,
@@ -1600,8 +1602,8 @@
   {
    "name": "Coalition of institutions",
    "normalized": "coalition_of_institutions",
-   "dtype": "float64",
-   "n_missing": 1,
+   "dtype": "int64",
+   "n_missing": 0,
    "n_unique": 2,
    "stats": {
     "min": 0.0,
@@ -1617,8 +1619,8 @@
   {
    "name": "By individuals",
    "normalized": "by_individuals",
-   "dtype": "float64",
-   "n_missing": 1,
+   "dtype": "int64",
+   "n_missing": 0,
    "n_unique": 2,
    "stats": {
     "min": 0.0,
@@ -1634,8 +1636,8 @@
   {
    "name": "Coalition/group of individuals",
    "normalized": "coalition_group_of_individuals",
-   "dtype": "float64",
-   "n_missing": 1,
+   "dtype": "int64",
+   "n_missing": 0,
    "n_unique": 2,
    "stats": {
     "min": 0.0,
@@ -1651,8 +1653,8 @@
   {
    "name": "All.1",
    "normalized": "all_1",
-   "dtype": "float64",
-   "n_missing": 1,
+   "dtype": "int64",
+   "n_missing": 0,
    "n_unique": 2,
    "stats": {
     "min": 0.0,
@@ -1668,8 +1670,8 @@
   {
    "name": "Group",
    "normalized": "group",
-   "dtype": "float64",
-   "n_missing": 1,
+   "dtype": "int64",
+   "n_missing": 0,
    "n_unique": 2,
    "stats": {
     "min": 0.0,
@@ -1687,7 +1689,7 @@
    "normalized": "type_of_activism_text",
    "dtype": "str",
    "n_missing": 174,
-   "n_unique": 107,
+   "n_unique": 106,
    "top_values": [
     "not mentioned",
     "p1+2: shareholders proposals, proxy proposals, (corp gov + takeover-related) + direct negotiations",
@@ -1699,8 +1701,8 @@
   {
    "name": "ActivismAll",
    "normalized": "activismall",
-   "dtype": "float64",
-   "n_missing": 1,
+   "dtype": "int64",
+   "n_missing": 0,
    "n_unique": 2,
    "stats": {
     "min": 0.0,
@@ -1716,8 +1718,8 @@
   {
    "name": "Proposals",
    "normalized": "proposals",
-   "dtype": "float64",
-   "n_missing": 1,
+   "dtype": "int64",
+   "n_missing": 0,
    "n_unique": 2,
    "stats": {
     "min": 0.0,
@@ -1733,8 +1735,8 @@
   {
    "name": "Negotiation",
    "normalized": "negotiation",
-   "dtype": "float64",
-   "n_missing": 1,
+   "dtype": "int64",
+   "n_missing": 0,
    "n_unique": 2,
    "stats": {
     "min": 0.0,
@@ -1750,8 +1752,8 @@
   {
    "name": "Proxy",
    "normalized": "proxy",
-   "dtype": "float64",
-   "n_missing": 1,
+   "dtype": "int64",
+   "n_missing": 0,
    "n_unique": 2,
    "stats": {
     "min": 0.0,
@@ -1767,8 +1769,8 @@
   {
    "name": "Prop_Neg/Proxy",
    "normalized": "prop_neg_proxy",
-   "dtype": "float64",
-   "n_missing": 1,
+   "dtype": "int64",
+   "n_missing": 0,
    "n_unique": 2,
    "stats": {
     "min": 0.0,
@@ -1784,8 +1786,8 @@
   {
    "name": "Prop+Neg+Proxy",
    "normalized": "prop_neg_proxy",
-   "dtype": "float64",
-   "n_missing": 1,
+   "dtype": "int64",
+   "n_missing": 0,
    "n_unique": 2,
    "stats": {
     "min": 0.0,
@@ -1801,8 +1803,8 @@
   {
    "name": "Litigation",
    "normalized": "litigation",
-   "dtype": "float64",
-   "n_missing": 1,
+   "dtype": "int64",
+   "n_missing": 0,
    "n_unique": 2,
    "stats": {
     "min": 0.0,
@@ -1818,8 +1820,8 @@
   {
    "name": "ActivismOther",
    "normalized": "activismother",
-   "dtype": "float64",
-   "n_missing": 1,
+   "dtype": "int64",
+   "n_missing": 0,
    "n_unique": 2,
    "stats": {
     "min": 0.0,
@@ -1835,8 +1837,8 @@
   {
    "name": "IV more vars",
    "normalized": "iv_more_vars",
-   "dtype": "float64",
-   "n_missing": 1,
+   "dtype": "int64",
+   "n_missing": 0,
    "n_unique": 1,
    "stats": {
     "min": 0.0,
@@ -1852,8 +1854,8 @@
   {
    "name": "datastart_y",
    "normalized": "datastart_y",
-   "dtype": "float64",
-   "n_missing": 1,
+   "dtype": "int64",
+   "n_missing": 0,
    "n_unique": 32,
    "stats": {
     "min": 1962.0,
@@ -1868,8 +1870,8 @@
   {
    "name": "dataend_y",
    "normalized": "dataend_y",
-   "dtype": "float64",
-   "n_missing": 1,
+   "dtype": "int64",
+   "n_missing": 0,
    "n_unique": 29,
    "stats": {
     "min": 1967.0,
@@ -1885,7 +1887,7 @@
    "name": "datastart_mqh",
    "normalized": "datastart_mqh",
    "dtype": "float64",
-   "n_missing": 1493,
+   "n_missing": 1492,
    "n_unique": 7,
    "stats": {
     "min": 1.0,
@@ -1901,7 +1903,7 @@
    "name": "dataend_mqh",
    "normalized": "dataend_mqh",
    "dtype": "float64",
-   "n_missing": 1493,
+   "n_missing": 1492,
    "n_unique": 7,
    "stats": {
     "min": 1.0,
@@ -1917,7 +1919,7 @@
    "name": "Midyear",
    "normalized": "midyear",
    "dtype": "float64",
-   "n_missing": 1,
+   "n_missing": 0,
    "n_unique": 46,
    "stats": {
     "min": 1964.5,
@@ -1932,20 +1934,24 @@
   {
    "name": "Length",
    "normalized": "length",
-   "dtype": "str",
-   "n_missing": 1924,
-   "n_unique": 3,
-   "top_values": [
-    "7",
-    " ",
-    "Length"
-   ]
+   "dtype": "float64",
+   "n_missing": 1926,
+   "n_unique": 1,
+   "stats": {
+    "min": 7.0,
+    "p25": 7.0,
+    "median": 7.0,
+    "p75": 7.0,
+    "max": 7.0,
+    "mean": 7.0,
+    "sd": 0.0
+   }
   },
   {
    "name": "TotalObs",
    "normalized": "totalobs",
-   "dtype": "float64",
-   "n_missing": 1,
+   "dtype": "int64",
+   "n_missing": 0,
    "n_unique": 246,
    "role": "n_obs",
    "stats": {
@@ -1961,8 +1967,8 @@
   {
    "name": "Daily",
    "normalized": "daily",
-   "dtype": "float64",
-   "n_missing": 1,
+   "dtype": "int64",
+   "n_missing": 0,
    "n_unique": 2,
    "stats": {
     "min": 0.0,
@@ -1978,8 +1984,8 @@
   {
    "name": "Monthly",
    "normalized": "monthly",
-   "dtype": "float64",
-   "n_missing": 1,
+   "dtype": "int64",
+   "n_missing": 0,
    "n_unique": 2,
    "stats": {
     "min": 0.0,
@@ -1997,7 +2003,7 @@
    "normalized": "data_source",
    "dtype": "str",
    "n_missing": 0,
-   "n_unique": 85,
+   "n_unique": 84,
    "top_values": [
     "p9: The respective information for each fund is collected from the fund\u2019s webpage (if available), newspapers, magazines, and from the Center for International Securities and Derivatives Markets (CISDM).",
     "p3: We merge all Schedule 13D and DFAN 14A filings from the SEC\u2019s EDGAR database for the13-year period from the third quarter of 1993 through the third quarter of 2006.",
@@ -2011,7 +2017,7 @@
    "normalized": "region_text",
    "dtype": "str",
    "n_missing": 0,
-   "n_unique": 17,
+   "n_unique": 16,
    "top_values": [
     "US",
     "Germany",
@@ -2023,8 +2029,8 @@
   {
    "name": "Number of countries (text)",
    "normalized": "number_of_countries_text",
-   "dtype": "float64",
-   "n_missing": 1,
+   "dtype": "int64",
+   "n_missing": 0,
    "n_unique": 6,
    "stats": {
     "min": 1.0,
@@ -2041,7 +2047,7 @@
    "normalized": "number_of_firms_events",
    "dtype": "str",
    "n_missing": 24,
-   "n_unique": 222,
+   "n_unique": 221,
    "top_values": [
     "230",
     "47 firms, 63 announcemments",
@@ -2055,7 +2061,7 @@
    "normalized": "subsample_specification_text",
    "dtype": "str",
    "n_missing": 1,
-   "n_unique": 604,
+   "n_unique": 603,
    "top_values": [
     "Buy stocks",
     "Sell stocks",
@@ -2067,8 +2073,8 @@
   {
    "name": "US",
    "normalized": "us",
-   "dtype": "float64",
-   "n_missing": 1,
+   "dtype": "int64",
+   "n_missing": 0,
    "n_unique": 2,
    "stats": {
     "min": 0.0,
@@ -2084,8 +2090,8 @@
   {
    "name": "Germany",
    "normalized": "germany",
-   "dtype": "float64",
-   "n_missing": 1,
+   "dtype": "int64",
+   "n_missing": 0,
    "n_unique": 2,
    "stats": {
     "min": 0.0,
@@ -2101,8 +2107,8 @@
   {
    "name": "Europe",
    "normalized": "europe",
-   "dtype": "float64",
-   "n_missing": 1,
+   "dtype": "int64",
+   "n_missing": 0,
    "n_unique": 2,
    "stats": {
     "min": 0.0,
@@ -2118,8 +2124,8 @@
   {
    "name": "Asia",
    "normalized": "asia",
-   "dtype": "float64",
-   "n_missing": 1,
+   "dtype": "int64",
+   "n_missing": 0,
    "n_unique": 2,
    "stats": {
     "min": 0.0,
@@ -2137,7 +2143,7 @@
    "normalized": "model_and_page_text",
    "dtype": "str",
    "n_missing": 0,
-   "n_unique": 52,
+   "n_unique": 51,
    "top_values": [
     "p13: simple",
     "p14: simple",
@@ -2149,8 +2155,8 @@
   {
    "name": "SE clustered/robust",
    "normalized": "se_clustered_robust",
-   "dtype": "float64",
-   "n_missing": 1,
+   "dtype": "int64",
+   "n_missing": 0,
    "n_unique": 2,
    "stats": {
     "min": 0.0,
@@ -2168,7 +2174,7 @@
    "normalized": "se_adjustment_text",
    "dtype": "str",
    "n_missing": 0,
-   "n_unique": 30,
+   "n_unique": 29,
    "top_values": [
     "0",
     "p12: Test statistics are calculated using the standardized residual method with a correction for eveninduced variance suggested by Boehmer et al. (1991).",
@@ -2182,7 +2188,7 @@
    "normalized": "control_variables_page_text",
    "dtype": "str",
    "n_missing": 55,
-   "n_unique": 46,
+   "n_unique": 45,
    "top_values": [
     "0",
     "p19: many of the - please check and fill",
@@ -2194,8 +2200,8 @@
   {
    "name": "RoA",
    "normalized": "roa",
-   "dtype": "float64",
-   "n_missing": 1,
+   "dtype": "int64",
+   "n_missing": 0,
    "n_unique": 2,
    "stats": {
     "min": 0.0,
@@ -2211,8 +2217,8 @@
   {
    "name": "Size",
    "normalized": "size",
-   "dtype": "float64",
-   "n_missing": 1,
+   "dtype": "int64",
+   "n_missing": 0,
    "n_unique": 2,
    "stats": {
     "min": 0.0,
@@ -2228,8 +2234,8 @@
   {
    "name": "Dynamic",
    "normalized": "dynamic",
-   "dtype": "float64",
-   "n_missing": 1,
+   "dtype": "int64",
+   "n_missing": 0,
    "n_unique": 2,
    "stats": {
     "min": 0.0,
@@ -2247,7 +2253,7 @@
    "normalized": "estimation_methodology_text",
    "dtype": "str",
    "n_missing": 0,
-   "n_unique": 56,
+   "n_unique": 55,
    "top_values": [
     "p14: OLS (probably)",
     "p13: OLS (probably)",
@@ -2259,8 +2265,8 @@
   {
    "name": "OLS",
    "normalized": "ols",
-   "dtype": "float64",
-   "n_missing": 1,
+   "dtype": "int64",
+   "n_missing": 0,
    "n_unique": 2,
    "stats": {
     "min": 0.0,
@@ -2276,8 +2282,8 @@
   {
    "name": "IV",
    "normalized": "iv",
-   "dtype": "float64",
-   "n_missing": 1,
+   "dtype": "int64",
+   "n_missing": 0,
    "n_unique": 2,
    "stats": {
     "min": 0.0,
@@ -2293,8 +2299,8 @@
   {
    "name": "Panel FE",
    "normalized": "panel_fe",
-   "dtype": "float64",
-   "n_missing": 1,
+   "dtype": "int64",
+   "n_missing": 0,
    "n_unique": 2,
    "stats": {
     "min": 0.0,
@@ -2310,8 +2316,8 @@
   {
    "name": "Otherest",
    "normalized": "otherest",
-   "dtype": "float64",
-   "n_missing": 1,
+   "dtype": "int64",
+   "n_missing": 0,
    "n_unique": 2,
    "stats": {
     "min": 0.0,
@@ -2328,7 +2334,7 @@
    "name": "Impact",
    "normalized": "impact",
    "dtype": "float64",
-   "n_missing": 1,
+   "n_missing": 0,
    "n_unique": 25,
    "stats": {
     "min": 0.0,
@@ -2343,8 +2349,8 @@
   {
    "name": "Cit",
    "normalized": "cit",
-   "dtype": "float64",
-   "n_missing": 1,
+   "dtype": "int64",
+   "n_missing": 0,
    "n_unique": 54,
    "stats": {
     "min": 0.0,
@@ -2359,8 +2365,8 @@
   {
    "name": "First year in GS",
    "normalized": "first_year_in_gs",
-   "dtype": "float64",
-   "n_missing": 1,
+   "dtype": "int64",
+   "n_missing": 0,
    "n_unique": 28,
    "stats": {
     "min": 1983.0,
@@ -2377,7 +2383,7 @@
    "normalized": "region_text_1",
    "dtype": "str",
    "n_missing": 0,
-   "n_unique": 17,
+   "n_unique": 16,
    "top_values": [
     "US",
     "Germany",
@@ -2390,7 +2396,7 @@
    "name": "Midyear.1",
    "normalized": "midyear_1",
    "dtype": "float64",
-   "n_missing": 1,
+   "n_missing": 0,
    "n_unique": 46,
    "stats": {
     "min": 1964.5,
@@ -2407,7 +2413,7 @@
    "normalized": "concatenate",
    "dtype": "str",
    "n_missing": 0,
-   "n_unique": 67,
+   "n_unique": 66,
    "top_values": [
     "Germany2006,5",
     "US2000",
@@ -2419,8 +2425,8 @@
   {
    "name": "English-origin",
    "normalized": "english_origin",
-   "dtype": "float64",
-   "n_missing": 1,
+   "dtype": "int64",
+   "n_missing": 0,
    "n_unique": 2,
    "stats": {
     "min": 0.0,
@@ -2436,8 +2442,8 @@
   {
    "name": "French-origin",
    "normalized": "french_origin",
-   "dtype": "float64",
-   "n_missing": 1,
+   "dtype": "int64",
+   "n_missing": 0,
    "n_unique": 2,
    "stats": {
     "min": 0.0,
@@ -2453,8 +2459,8 @@
   {
    "name": "German-origin",
    "normalized": "german_origin",
-   "dtype": "float64",
-   "n_missing": 1,
+   "dtype": "int64",
+   "n_missing": 0,
    "n_unique": 2,
    "stats": {
     "min": 0.0,
@@ -2470,8 +2476,8 @@
   {
    "name": "Scandinavian-origin",
    "normalized": "scandinavian_origin",
-   "dtype": "float64",
-   "n_missing": 1,
+   "dtype": "int64",
+   "n_missing": 0,
    "n_unique": 1,
    "stats": {
     "min": 0.0,
@@ -2488,7 +2494,7 @@
    "name": "antidirector rights",
    "normalized": "antidirector_rights",
    "dtype": "float64",
-   "n_missing": 1,
+   "n_missing": 0,
    "n_unique": 9,
    "stats": {
     "min": 1.0,
@@ -2504,7 +2510,7 @@
    "name": "Regulatory disclosure threshold",
    "normalized": "regulatory_disclosure_threshold",
    "dtype": "float64",
-   "n_missing": 1,
+   "n_missing": 0,
    "n_unique": 10,
    "stats": {
     "min": 0.0,
@@ -2520,7 +2526,7 @@
    "name": "Rule_of_Law",
    "normalized": "rule_of_law",
    "dtype": "float64",
-   "n_missing": 1,
+   "n_missing": 0,
    "n_unique": 46,
    "stats": {
     "min": 0.455968,
@@ -2536,7 +2542,7 @@
    "name": "Cap_GDP",
    "normalized": "cap_gdp",
    "dtype": "float64",
-   "n_missing": 1,
+   "n_missing": 0,
    "n_unique": 63,
    "stats": {
     "min": 18.694025,
@@ -2552,7 +2558,7 @@
    "name": "HHI",
    "normalized": "hhi",
    "dtype": "float64",
-   "n_missing": 1,
+   "n_missing": 0,
    "n_unique": 53,
    "stats": {
     "min": 0.039627,
@@ -2567,8 +2573,8 @@
   {
    "name": "Sarbanes_Oxley",
    "normalized": "sarbanes_oxley",
-   "dtype": "float64",
-   "n_missing": 1,
+   "dtype": "int64",
+   "n_missing": 0,
    "n_unique": 2,
    "stats": {
     "min": 0.0,
