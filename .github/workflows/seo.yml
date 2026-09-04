@@ -125,15 +125,6 @@ jobs:
       - name: Verify /papers/ against a fresh build
         run: python tools/build_fulltext_page.py --check
 
-      # The full-text pages themselves are the largest thing this site publishes and were
-      # the one generated artifact with no --check gate: nothing here or in the pre-push
-      # hook rebuilt them, so a page that stopped following from its transcript would have
-      # deployed unremarked. verify_seo.py does not cover this. It compares each page to
-      # git HEAD to prove generate_seo.py did not rewrite prose, and by construction cannot
-      # see a page that was already stale when it was committed.
-      - name: Verify the full-text pages against a fresh build
-        run: python tools/build_paper_page.py --all --check
-
       # The full-text corpus itself: figures, tables, fragment links, MathML, coverage.
       # This class of checker has caught real user-facing failures (a missing figure,
       # fragmented tables); it passes clean in about four minutes.
@@ -141,6 +132,22 @@ jobs:
         run: |
           sudo apt-get update -qq && sudo apt-get install -y -qq poppler-utils
           python tools/check_paper_pages.py
+
+      # The full-text pages themselves are the largest thing this site publishes and were
+      # the one generated artifact with no --check gate: nothing here or in the pre-push
+      # hook rebuilt them, so a page that stopped following from its transcript would have
+      # deployed unremarked. verify_seo.py does not cover this. It compares each page to
+      # git HEAD to prove generate_seo.py did not rewrite prose, and by construction cannot
+      # see a page that was already stale when it was committed.
+      #
+      # AFTER the poppler install above, and it has to be. build_paper_page decides whether
+      # a paper sets its headings with a vertical rule by running pdftotext over the first
+      # twelve pages, and returns False if that raises. Without poppler the answer is False
+      # for every paper, and the two whose PDFs really do print pipe headings, activism and
+      # pcc, rebuild 12 and 22 bytes short of what is committed. Run earlier, this gate
+      # fails on a missing dependency and calls it drift.
+      - name: Verify the full-text pages against a fresh build
+        run: python tools/build_paper_page.py --all --check
 
       # Sentences the conversion cut in half. The fidelity checker above cannot see these:
       # every word is present and none is invented, so a paragraph that stops mid-clause

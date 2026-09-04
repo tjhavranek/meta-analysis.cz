@@ -1429,11 +1429,22 @@ def prints_pipe_headings(project, meta):
     pdf = pdf_path(project, meta)
     if not pdf:
         return False
+    # A missing poppler must not be answered with False. This decides how a paper's headings
+    # are rendered, so without the tool the build silently produces DIFFERENT pages: the two
+    # papers whose PDFs really do print pipe headings, activism and pcc, come out 12 and 22
+    # bytes short. That is an environment-dependent build, and it read as page drift the
+    # first time --check ran before poppler was installed. A PDF this tool cannot parse is a
+    # real False; a tool that is not there is a broken environment and should say so.
+    if not _poppler.is_poppler(_poppler.tool("pdftotext")):
+        raise SystemExit(
+            "poppler's pdftotext is not on PATH. build_paper_page needs it to decide how a "
+            "paper sets its headings, and without it the pages it writes differ from the "
+            "ones in the repository. Install poppler-utils, or set POPPLER_BIN.")
     try:
         text = subprocess.run([_poppler.tool("pdftotext"), "-f", "1", "-l", "12", pdf, "-"],
                               capture_output=True, text=True, check=True,
                               encoding="utf-8", errors="replace").stdout or ""
-    except Exception:
+    except Exception:          # this PDF cannot be read; that is a genuine False
         return False
     return len(re.findall(r"^\s*\d+(?:\.\d+)?\s*\|\s*[A-Z]", text, re.M)) >= 2
 
