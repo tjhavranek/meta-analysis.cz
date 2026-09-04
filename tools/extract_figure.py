@@ -44,6 +44,7 @@ def render(pdf, page, dpi):
     re-rendered with MuPDF, which carries its own base-14 substitutes. Normal pages keep
     the poppler path, so every crop recorded from it stays reproducible.
     """
+    global LAST_RENDERER
     with tempfile.TemporaryDirectory() as tmp:
         stem = os.path.join(tmp, "p")
         r = subprocess.run([_poppler.tool("pdftoppm"), "-f", str(page), "-l", str(page),
@@ -52,11 +53,29 @@ def render(pdf, page, dpi):
         err = (r.stderr or b"").decode("utf-8", "replace")
         if "No display font" in err or "Couldn't find a font" in err:
             import fitz
+            LAST_RENDERER = "mupdf"
             with fitz.open(pdf) as doc:
                 px = doc.load_page(page - 1).get_pixmap(dpi=dpi)
                 return Image.frombytes("RGB", (px.width, px.height), px.samples).copy()
+        LAST_RENDERER = "poppler"
         name = [f for f in os.listdir(tmp) if f.endswith(".png")][0]
         return Image.open(os.path.join(tmp, name)).convert("RGB").copy()
+
+
+# Which backend the last render() used. Recorded per figure, because the choice has already
+# changed what a picture shows once: poppler drew alphas Figure 8's ZapfDingbats markers as
+# nothing, and MuPDF drew them.
+LAST_RENDERER = None
+
+
+def quantize(im, colours):
+    """The exact final step of an extraction, so a checker can reproduce it.
+
+    The stored PNG is palettised; a freshly rendered crop is not. Comparing the two without
+    this compares an RGB image with a 64-colour one and differs on almost every pixel, which
+    is why the comparison has to go through the same call rather than around it.
+    """
+    return im.quantize(colours, method=Image.MEDIANCUT)
 
 
 def trim(im, threshold=232, pad=8):
@@ -93,7 +112,7 @@ def extract(project, fig, page, box, dpi=200, colours=64, pdf=None):
     outdir = os.path.join(page_dir(project, papers[project]), "figures")
     os.makedirs(outdir, exist_ok=True)
     out = os.path.join(outdir, "fig%s.png" % fig)
-    im.quantize(colours, method=Image.MEDIANCUT).save(out, optimize=True)
+    quantize(im, colours).save(out, optimize=True)
     record(project, fig, pdf, page, box, dpi, colours, out)
     print("%s fig%s: page %s -> %s (%dx%d, %d KB)"
           % (project, fig, page, os.path.relpath(out, ROOT), im.width, im.height,
@@ -127,6 +146,11 @@ def record(project, fig, pdf, page, box, dpi, colours, out):
         man = {}
     man.setdefault(project, {})[str(fig)] = {
         "pdf": os.path.relpath(pdf, ROOT).replace("\\", "/"),
+        # The source's own hash and the backend that drew it. Both belong here because a
+        # re-cut is only reproducible against the same bytes through the same renderer, and
+        # the renderer has already changed what a figure shows once.
+        "pdf_sha256": hashlib.sha256(io.open(pdf, "rb").read()).hexdigest(),
+        "renderer": LAST_RENDERER,
         "page": int(page),
         "box": [round(float(v), 4) for v in box],
         "dpi": int(dpi),

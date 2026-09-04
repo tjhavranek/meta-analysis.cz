@@ -36,6 +36,7 @@ ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 sys.path.insert(0, os.path.join(ROOT, "tools"))
 
 import extract_figure
+import numpy as np
 from PIL import Image
 
 
@@ -73,21 +74,40 @@ def main(argv):
                 fails.append((project, fig, "source PDF is gone: %s" % rec["pdf"]))
                 continue
             checked += 1
-            # Re-cut exactly as extract_figure.extract() would, without writing anything.
+            # The source's own bytes first: a re-cut only means anything against the same
+            # document. A replaced proof is a different question from a drifted crop and
+            # should not be reported as one.
+            if rec.get("pdf_sha256") and sha(pdf) != rec["pdf_sha256"]:
+                fails.append((project, fig, "the source PDF is not the one this was cut from"))
+                continue
+            # Re-cut exactly as extract_figure.extract() would, INCLUDING the quantisation,
+            # without writing anything.
             im = extract_figure.render(pdf, rec["page"], rec["dpi"])
             x0, y0, x1, y1 = rec["box"]
             im = im.crop((int(x0 * im.width), int(y0 * im.height),
                           int(x1 * im.width), int(y1 * im.height)))
-            im = extract_figure.trim(im)
+            im = extract_figure.quantize(extract_figure.trim(im), rec.get("colours", 64))
             have = Image.open(out)
             if (im.width, im.height) != (have.width, have.height):
                 fails.append((project, fig,
                               "re-cut is %dx%d, the stored file is %dx%d"
                               % (im.width, im.height, have.width, have.height)))
+                continue
+            # PIXELS, not just the shape. Comparing sizes and then hashing the stored file
+            # against its own recorded hash proves the file has not been edited and that a
+            # re-cut is the same SHAPE -- it does not prove the re-cut is the same PICTURE.
+            # A renderer that stops drawing a glyph can leave width and height untouched,
+            # which is exactly what happened to alphas Figure 8, so the check that exists
+            # because of that defect has to be able to see it.
+            a, b = np.asarray(im.convert("RGB")), np.asarray(have.convert("RGB"))
+            if a.shape != b.shape or not np.array_equal(a, b):
+                differing = int((a != b).any(axis=2).sum()) if a.shape == b.shape else -1
+                fails.append((project, fig,
+                              "re-cut differs from the stored image in %d pixel(s)" % differing))
             elif sha(out) != rec["sha256"]:
-                # Same shape, different bytes: the file was replaced or re-encoded. Not
-                # necessarily wrong, but it did not come from this recorded cut.
-                fails.append((project, fig, "same size, but the file is not the recorded one"))
+                # Same picture, different bytes: re-encoded rather than re-cut. Worth saying,
+                # but not the same defect.
+                fails.append((project, fig, "same picture, but the file was re-encoded"))
 
     recorded = {(p, f) for p in man for f in man[p]}
     on_disk = set()

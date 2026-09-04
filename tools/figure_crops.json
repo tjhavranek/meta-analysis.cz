@@ -12,6 +12,8 @@
    "height": 618,
    "page": 32,
    "pdf": "alphas/alphas.pdf",
+   "pdf_sha256": "3f7936a9770bdd3097aa7bdd5d7c1a4694f8deca6e6fd4594cf2c2b85b6389d8",
+   "renderer": "poppler",
    "sha256": "0b05cc3a678d3826d163c41a0eb0c4c6bab504a89d091bd37d760705d7f1a57b",
    "width": 858
   },
@@ -27,6 +29,8 @@
    "height": 977,
    "page": 34,
    "pdf": "alphas/alphas.pdf",
+   "pdf_sha256": "3f7936a9770bdd3097aa7bdd5d7c1a4694f8deca6e6fd4594cf2c2b85b6389d8",
+   "renderer": "poppler",
    "sha256": "6c1c09fc631d953c898e11794111592fbd322b2c0f2e66fed71cb70e2e515ab2",
    "width": 607
   },
@@ -42,6 +46,8 @@
    "height": 439,
    "page": 36,
    "pdf": "alphas/alphas.pdf",
+   "pdf_sha256": "3f7936a9770bdd3097aa7bdd5d7c1a4694f8deca6e6fd4594cf2c2b85b6389d8",
+   "renderer": "poppler",
    "sha256": "0ed431989a8c4d4f52ace0dc747a0f3d615b351b49c2f53706e2512e2fb737ac",
    "width": 843
   },
@@ -57,6 +63,8 @@
    "height": 578,
    "page": 64,
    "pdf": "alphas/alphas.pdf",
+   "pdf_sha256": "3f7936a9770bdd3097aa7bdd5d7c1a4694f8deca6e6fd4594cf2c2b85b6389d8",
+   "renderer": "mupdf",
    "sha256": "33a5dc2645c7880152ffbee270ea878313374a3d31948cea32536716eb05a38e",
    "width": 1028
   }
@@ -74,6 +82,8 @@
    "height": 428,
    "page": 6,
    "pdf": "armington/armington2.pdf",
+   "pdf_sha256": "1d049e14785dad2c9aa8c9b3c64250f791c6a49f21b09c935fcf3ad8d2059e2d",
+   "renderer": "poppler",
    "sha256": "b954374e340348d196ff913a8bb83772f8717ea2214fa6a20cd596061e0fbb58",
    "width": 678
   }
@@ -91,6 +101,8 @@
    "height": 1246,
    "page": 9,
    "pdf": "competition/competition2.pdf",
+   "pdf_sha256": "260f8bc09aaf63f8ea323209191049f73c46bd1242af30b2f153a20aa3d964cd",
+   "renderer": "poppler",
    "sha256": "28413910d2c9ae076be8ebd50e58f552025c2cf25632a88b239958916860fae4",
    "width": 850
   }
@@ -108,6 +120,8 @@
    "height": 1234,
    "page": 28,
    "pdf": "crisis_ews/crisis_ews.pdf",
+   "pdf_sha256": "cee8767d04d32fda023542ba8d63ba8666e02161c1e7d0a02e32fd1502dd0e41",
+   "renderer": "mupdf",
    "sha256": "a2ecd156e0184f1484ec2f5d1c60756e326efbae99c4ac6baeb092b26753c0dd",
    "width": 1164
   }
@@ -125,6 +139,8 @@
    "height": 443,
    "page": 33,
    "pdf": "education/education2.pdf",
+   "pdf_sha256": "b73a148844c1d0a314595243ac8fb65428849f6fe522b2d2230f134f70e3fd9b",
+   "renderer": "poppler",
    "sha256": "4fad2a9af072809e48b7817fc2cf08f9d7b82f578cd9723736f6ee2a7ff899e9",
    "width": 822
   }
@@ -142,6 +158,8 @@
    "height": 571,
    "page": 37,
    "pdf": "esg/esg.pdf",
+   "pdf_sha256": "862660541172cc649592912e9ac7df1fa23f1ae8ae84517fcf97bda9f81d670d",
+   "renderer": "poppler",
    "sha256": "e7b7eb2dc61cbb9c4372cbff9cf4f9e4dabc279da5a7931192aba7016ba0712f",
    "width": 1221
   }
@@ -159,6 +177,8 @@
    "height": 1064,
    "page": 6,
    "pdf": "exercise/exercise.pdf",
+   "pdf_sha256": "d1665965570e23ec08323559ef43878ceff6aeed8cdb33f8e2816e4afc8d9897",
+   "renderer": "mupdf",
    "sha256": "0f6a2048234c97a561b4ae903be6cbebcedc56282d5ce93e95651c17c9cf1fc4",
    "width": 1789
   },
@@ -174,6 +194,8 @@
    "height": 1088,
    "page": 8,
    "pdf": "exercise/exercise.pdf",
+   "pdf_sha256": "d1665965570e23ec08323559ef43878ceff6aeed8cdb33f8e2816e4afc8d9897",
+   "renderer": "mupdf",
    "sha256": "e490671fdb4aa60954317ec99309c5a0ce344e0d1519694ad5b788a4180a2f0c",
    "width": 1779
   },
@@ -189,6 +211,8 @@
    "height": 1047,
    "page": 11,
    "pdf": "exercise/exercise.pdf",
+   "pdf_sha256": "d1665965570e23ec08323559ef43878ceff6aeed8cdb33f8e2816e4afc8d9897",
+   "renderer": "mupdf",
    "sha256": "f6911d3ca417d2f4fd647036304246ee35a0ffa60f06ee18ebdced3c0ae7ab7c",
    "width": 1779
   },
@@ -204,6 +228,8 @@
    "height": 1251,
    "page": 13,
    "pdf": "exercise/exercise.pdf",
+   "pdf_sha256": "d1665965570e23ec08323559ef43878ceff6aeed8cdb33f8e2816e4afc8d9897",
+   "renderer": "mupdf",
    "sha256": "7d9429aac63eac1bc29e81405282363b2f2a9e7541fed2500d24d661a76b8a9f",
    "width": 1779
   }
@@ -221,6 +247,8 @@
    "height": 964,
    "page": 6,
    "pdf": "frisch/frisch2.pdf",
+   "pdf_sha256": "e6b98c475d9ba50053198c2873b51ff15fcbd11d197994aadd1ee7edd1478acd",
+   "renderer": "poppler",
    "sha256": "61b7861cab292cca86ae7f94a3c29cffe0faf0018ebd96ccf2137a65fd75053c",
    "width": 1297
   },
@@ -236,6 +264,8 @@
    "height": 479,
    "page": 7,
    "pdf": "frisch/frisch2.pdf",
+   "pdf_sha256": "e6b98c475d9ba50053198c2873b51ff15fcbd11d197994aadd1ee7edd1478acd",
+   "renderer": "poppler",
    "sha256": "c044440fae7646f9e077607d99e76318653e59f75d04e15ae08a732da1b078e5",
    "width": 679
   },
@@ -251,6 +281,8 @@
    "height": 481,
    "page": 9,
    "pdf": "frisch/frisch2.pdf",
+   "pdf_sha256": "e6b98c475d9ba50053198c2873b51ff15fcbd11d197994aadd1ee7edd1478acd",
+   "renderer": "poppler",
    "sha256": "a4106adad136b9562897549c7f7edf5d3e07a41dd850a7fb6eee0e97f109a82c",
    "width": 678
   },
@@ -266,6 +298,8 @@
    "height": 1242,
    "page": 11,
    "pdf": "frisch/frisch2.pdf",
+   "pdf_sha256": "e6b98c475d9ba50053198c2873b51ff15fcbd11d197994aadd1ee7edd1478acd",
+   "renderer": "poppler",
    "sha256": "7b172400c2961e7ae0cbbd376490f87e1f4f1f2eb787685ca5e79428efd33dc0",
    "width": 1299
   },
@@ -281,6 +315,8 @@
    "height": 556,
    "page": 15,
    "pdf": "frisch/frisch2.pdf",
+   "pdf_sha256": "e6b98c475d9ba50053198c2873b51ff15fcbd11d197994aadd1ee7edd1478acd",
+   "renderer": "poppler",
    "sha256": "722b64acbb1bc3384f850f3d53f4f63ee15bfb44dc3614353b5066a5de7b15ce",
    "width": 1135
   }
@@ -298,6 +334,8 @@
    "height": 583,
    "page": 13,
    "pdf": "hedge/hedge2.pdf",
+   "pdf_sha256": "714cbd749df1b0bedccacf0255407f4b5bec8e1424992652bbacc745c1ff7c12",
+   "renderer": "mupdf",
    "sha256": "eb0f79ab90c3ee627fe99addd2be4d82f533cffc6a01d8e7191aa9928a818987",
    "width": 808
   },
@@ -313,6 +351,8 @@
    "height": 584,
    "page": 20,
    "pdf": "hedge/hedge2.pdf",
+   "pdf_sha256": "714cbd749df1b0bedccacf0255407f4b5bec8e1424992652bbacc745c1ff7c12",
+   "renderer": "mupdf",
    "sha256": "a3f5eddcee8b7425d1a8935919bc2e9b8bf023911f6a0539f398a53b6b6c0caf",
    "width": 810
   }
@@ -330,6 +370,8 @@
    "height": 526,
    "page": 47,
    "pdf": "incentives/incentives.pdf",
+   "pdf_sha256": "e2c2577e92679c7a4eff57f770072335c6a65f8c934384091b6fe8ae7c911043",
+   "renderer": "poppler",
    "sha256": "72dd49e3e75046d1ee666a3e1ffd4eedc832f7f02fe6f0557251f631ad0e9f4a",
    "width": 731
   },
@@ -345,6 +387,8 @@
    "height": 520,
    "page": 50,
    "pdf": "incentives/incentives.pdf",
+   "pdf_sha256": "e2c2577e92679c7a4eff57f770072335c6a65f8c934384091b6fe8ae7c911043",
+   "renderer": "poppler",
    "sha256": "60363cb307bcce190261e5bffa3cdf614d082b6fe96ab290e4b9fce21fc3447d",
    "width": 731
   },
@@ -360,6 +404,8 @@
    "height": 524,
    "page": 51,
    "pdf": "incentives/incentives.pdf",
+   "pdf_sha256": "e2c2577e92679c7a4eff57f770072335c6a65f8c934384091b6fe8ae7c911043",
+   "renderer": "poppler",
    "sha256": "062ef47ab155e3800c9597eedcefc484023db6a5d48cbf1bfb61fa91642c8df0",
    "width": 731
   }
@@ -377,6 +423,8 @@
    "height": 469,
    "page": 7,
    "pdf": "lags/lags2.pdf",
+   "pdf_sha256": "accb75ca997da09cde5d4eb73dcfec7014de3a501203b9c5295b97cb25c7eea6",
+   "renderer": "poppler",
    "sha256": "8bb60ff05606af9758d7ece50ddba93cd4373e5993587952d9329f1fc36dcf26",
    "width": 642
   },
@@ -392,6 +440,8 @@
    "height": 1345,
    "page": 14,
    "pdf": "lags/lags2.pdf",
+   "pdf_sha256": "accb75ca997da09cde5d4eb73dcfec7014de3a501203b9c5295b97cb25c7eea6",
+   "renderer": "poppler",
    "sha256": "65895b2adab4445bc50a8644be74cab618a37e559b5b04b078ccf1e0b74c322b",
    "width": 758
   },
@@ -407,6 +457,8 @@
    "height": 1346,
    "page": 21,
    "pdf": "lags/lags2.pdf",
+   "pdf_sha256": "accb75ca997da09cde5d4eb73dcfec7014de3a501203b9c5295b97cb25c7eea6",
+   "renderer": "poppler",
    "sha256": "eb8c926d94e88539afb2908436ff6c994870e98974962f3e1cc03700e9430543",
    "width": 766
   },
@@ -422,6 +474,8 @@
    "height": 1345,
    "page": 24,
    "pdf": "lags/lags2.pdf",
+   "pdf_sha256": "accb75ca997da09cde5d4eb73dcfec7014de3a501203b9c5295b97cb25c7eea6",
+   "renderer": "poppler",
    "sha256": "8a0a399d6901f75569e72c79626b5839721875d7affc6d58b032aeacd7fb083f",
    "width": 741
   },
@@ -437,6 +491,8 @@
    "height": 696,
    "page": 26,
    "pdf": "lags/lags2.pdf",
+   "pdf_sha256": "accb75ca997da09cde5d4eb73dcfec7014de3a501203b9c5295b97cb25c7eea6",
+   "renderer": "poppler",
    "sha256": "45cd23bf717ca5d63261cb77b684ccac039f6c02d3505b4e058bd1a490793b5a",
    "width": 642
   },
@@ -452,6 +508,8 @@
    "height": 705,
    "page": 27,
    "pdf": "lags/lags2.pdf",
+   "pdf_sha256": "accb75ca997da09cde5d4eb73dcfec7014de3a501203b9c5295b97cb25c7eea6",
+   "renderer": "poppler",
    "sha256": "6957c69fb3380ed51055c99940d5c64f8ad477ebb4c6703b6b219e2dff01f9c2",
    "width": 641
   }
@@ -469,6 +527,8 @@
    "height": 1405,
    "page": 11,
    "pdf": "migrant/migrant.pdf",
+   "pdf_sha256": "99e2c12e25588d0a354c6385c2b1a24d1b9b02e0717b351b277a72793157ab2c",
+   "renderer": "poppler",
    "sha256": "6aed65ee96ea83df270879da908d5c15114e6a7d86cb8b418c1678e1f1f6fc81",
    "width": 918
   },
@@ -484,6 +544,8 @@
    "height": 649,
    "page": 13,
    "pdf": "migrant/migrant.pdf",
+   "pdf_sha256": "99e2c12e25588d0a354c6385c2b1a24d1b9b02e0717b351b277a72793157ab2c",
+   "renderer": "poppler",
    "sha256": "0bab315d7323f9805d612400665f1f2c43a9511c5f47cadef42748e95ad32638",
    "width": 1122
   }
@@ -501,6 +563,8 @@
    "height": 994,
    "page": 10,
    "pdf": "reproducibility/reproducibility.pdf",
+   "pdf_sha256": "8e4649055347319b4f6becf2e930d27c3241da7b74c98cb759a47686be6d9aaf",
+   "renderer": "poppler",
    "sha256": "8e6849d08f568e9ed5a5d0871521b8fa0494661bfb5d9664b7e7f6c8e1480b4c",
    "width": 995
   },
@@ -516,6 +580,8 @@
    "height": 566,
    "page": 12,
    "pdf": "reproducibility/reproducibility.pdf",
+   "pdf_sha256": "8e4649055347319b4f6becf2e930d27c3241da7b74c98cb759a47686be6d9aaf",
+   "renderer": "poppler",
    "sha256": "b9564261734fe5dc6e13c51b28c86776152f03aeac03a8dcbbec73f94d8bf29c",
    "width": 957
   },
@@ -531,6 +597,8 @@
    "height": 846,
    "page": 34,
    "pdf": "reproducibility/reproducibility.pdf",
+   "pdf_sha256": "8e4649055347319b4f6becf2e930d27c3241da7b74c98cb759a47686be6d9aaf",
+   "renderer": "poppler",
    "sha256": "600c678b810e3c103a4f434f3bbc7cdef1c1088b7e336b565ff3542f20b82566",
    "width": 1019
   }
@@ -548,6 +616,8 @@
    "height": 843,
    "page": 9,
    "pdf": "spillovers_bias/spillovers_bias.pdf",
+   "pdf_sha256": "7e6a3365d5e68a4c3207e4732855f4a99ea190393d40cec21ab765e692822217",
+   "renderer": "mupdf",
    "sha256": "13827f7f91e2102b7ef51c3f41761759b62842e05163f8469e9cae9c45dd9155",
    "width": 1157
   }
@@ -565,6 +635,8 @@
    "height": 607,
    "page": 17,
    "pdf": "taxrev/taxrev.pdf",
+   "pdf_sha256": "79ca0e292710f2e3e614993a1a567c88be66b9d23a7e5deb17653d700003b247",
+   "renderer": "mupdf",
    "sha256": "6fdbefe15594f0e4095576386f8ee7ede70a2a0c8948ffe638e7de83b5a65efa",
    "width": 851
   },
@@ -580,6 +652,8 @@
    "height": 607,
    "page": 17,
    "pdf": "taxrev/taxrev.pdf",
+   "pdf_sha256": "79ca0e292710f2e3e614993a1a567c88be66b9d23a7e5deb17653d700003b247",
+   "renderer": "mupdf",
    "sha256": "490c650ed0b65d1bac89583a94e0fac4f85e0b2092fa77a6abe80c9e359866ac",
    "width": 851
   },
@@ -595,6 +669,8 @@
    "height": 607,
    "page": 18,
    "pdf": "taxrev/taxrev.pdf",
+   "pdf_sha256": "79ca0e292710f2e3e614993a1a567c88be66b9d23a7e5deb17653d700003b247",
+   "renderer": "mupdf",
    "sha256": "8d295a3c4459f85e1b77cb231a114dfa4f1197689e5c3b1e7117e0d59ff40b9f",
    "width": 851
   },
@@ -610,6 +686,8 @@
    "height": 607,
    "page": 18,
    "pdf": "taxrev/taxrev.pdf",
+   "pdf_sha256": "79ca0e292710f2e3e614993a1a567c88be66b9d23a7e5deb17653d700003b247",
+   "renderer": "mupdf",
    "sha256": "7d6d2379724d3cca3f66a636402e3d26f3d343db8b5ca1a9f4d50c87d1a6efae",
    "width": 851
   }
@@ -627,6 +705,8 @@
    "height": 592,
    "page": 17,
    "pdf": "tourist/tourist.pdf",
+   "pdf_sha256": "53699a859f64ebbe07f028e12a60a645db7ea4dcb93c80e31c0457f64a9bf92f",
+   "renderer": "poppler",
    "sha256": "e89ef56124f2d411efa2c63eaf03d30edad06211feeeefbca9e628d3ae879553",
    "width": 1179
   },
@@ -642,6 +722,8 @@
    "height": 586,
    "page": 18,
    "pdf": "tourist/tourist.pdf",
+   "pdf_sha256": "53699a859f64ebbe07f028e12a60a645db7ea4dcb93c80e31c0457f64a9bf92f",
+   "renderer": "poppler",
    "sha256": "d35d097db283ada3065fff31b9071725f8000330b60537365b0cb43d85e4aa45",
    "width": 1176
   }
