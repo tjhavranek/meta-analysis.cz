@@ -202,152 +202,152 @@ This research was conducted when Hampl was Vice-Governor of the Czech National B
 
 ## REFERENCES
 
-Adler, G., P. Castro, and C. Tovar. 2016. Does Central Bank Capital Matter for Monetary Policy? Open Economies Review 27(1): 183–205.
+Adler, G., P. Castro, and C. Tovar. 2016. Does Central Bank Capital Matter for Monetary Policy? *Open Economies Review* 27(1): 183–205.
 
-Agarwal, R., and Kimball, M. 2015. Breaking Through the Zero Lower Bound. IMF Working Papers 15/224, International Monetary Fund.
+Agarwal, R., and Kimball, M. 2015. *Breaking Through the Zero Lower Bound*. IMF Working Papers 15/224, International Monetary Fund.
 
-Andrews, I., and Kasy, M. 2019. Identification of and Correction for Publication Bias. American Economic Review (forthcoming).
+Andrews, I., and Kasy, M. 2019. Identification of and Correction for Publication Bias. *American Economic Review* (forthcoming).
 
-Bacchetta, P. 2018. The Sovereign Money Initiative in Switzerland: An Economic Assessment. Swiss Journal of Economics and Statistics 154: 3.
+Bacchetta, P. 2018. The Sovereign Money Initiative in Switzerland: An Economic Assessment. *Swiss Journal of Economics and Statistics* 154: 3.
 
-Ball, L. 2014. The Case for a Long-Run Inflation Target of Four Percent. IMF Working Papers 14/92, International Monetary Fund.
+Ball, L. 2014. *The Case for a Long-Run Inflation Target of Four Percent*. IMF Working Papers 14/92, International Monetary Fund.
 
-Bartels, B., Weder di Mauro, B., and Eichengreen, B. 2017. No Smoking Gun: Private Shareholders, Governance Rules and Central Bank Financial Behavior. In Annual Conference 2017: Alternative Structures for Money and Banking, Economic Association.
+Bartels, B., Weder di Mauro, B., and Eichengreen, B. 2017. No Smoking Gun: Private Shareholders, Governance Rules and Central Bank Financial Behavior. In *Annual Conference 2017: Alternative Structures for Money and Banking, Economic Association*.
 
-Belke, A. 2018. Helicopter Money: Should Central Banks Rain Money from the Sky? Intereconomics: Review of International Trade and Development 53(1): 34–40.
+Belke, A. 2018. Helicopter Money: Should Central Banks Rain Money from the Sky? *Intereconomics: Review of International Trade and Development* 53(1): 34–40.
 
-Belke, A., and T. Polleit. 2010. How Much Fiscal Backing Must the ECB Have? The Euro Area is Not the Philippines. Économie Internationale 124: 5–30.
+Belke, A., and T. Polleit. 2010. How Much Fiscal Backing Must the ECB Have? The Euro Area is Not the Philippines. *Économie Internationale* 124: 5–30.
 
-Benecka, S., Holub, T., Kadlcakova, N., and Kubicova, I. 2012. Does Central Bank Financial Strength Matter for Inflation? An Empirical Analysis. CNB Working Papers 2012/03, Czech National Bank, Research Department.
+Benecka, S., Holub, T., Kadlcakova, N., and Kubicova, I. 2012. *Does Central Bank Financial Strength Matter for Inflation? An Empirical Analysis*. CNB Working Papers 2012/03, Czech National Bank, Research Department.
 
-Berentsen, A., and Schar, F. 2018. The Case for Central Bank Electronic Money and the Non-case for Central Bank Cryptocurrencies. In Federal Reserve Bank of St. Louis Review, Second Quarter 2018, 100(2), pp. 97–106.
+Berentsen, A., and Schar, F. 2018. The Case for Central Bank Electronic Money and the Non-case for Central Bank Cryptocurrencies. In *Federal Reserve Bank of St. Louis Review*, Second Quarter 2018, 100(2), pp. 97–106.
 
-Berger, R. 2016. Think Act—The Rise of Cryptofinance in Central Banking. Munich: Roland Berger.
+Berger, R. 2016. *Think Act—The Rise of Cryptofinance in Central Banking*. Munich: Roland Berger.
 
-Bernanke, B. 2016. What Tools Does the Fed Have Left? Part 3: Helicopter Money. Brookings Institution 11: 1–14.
+Bernanke, B. 2016. What Tools Does the Fed Have Left? Part 3: Helicopter Money. *Brookings Institution* 11: 1–14.
 
-BIS. 2018. Cryptocurrencies: Looking Beyond the Hype. Annual Report, Bank for International Settlements, Basel.
+BIS. 2018. Cryptocurrencies: Looking Beyond the Hype. *Annual Report*, Bank for International Settlements, Basel.
 
-Blinder, A. 2010. How Central Should the Central Bank Be? Journal of Economic Literature 48(1): 123–133.
+Blinder, A. 2010. How Central Should the Central Bank Be? *Journal of Economic Literature* 48(1): 123–133.
 
-Bordo, M., and Levin, A. 2017. Central Bank Digital Currency and the Future of Monetary Policy. NBER Working Paper 23711.
+Bordo, M., and Levin, A. 2017. *Central Bank Digital Currency and the Future of Monetary Policy*. NBER Working Paper 23711.
 
-Braun, B. 2016. Speaking to the People? Money, Trust, and Central Bank Legitimacy in the Age of Quantitative Easing. Review of International Political Economy 23(6): 1064–1092.
+Braun, B. 2016. Speaking to the People? Money, Trust, and Central Bank Legitimacy in the Age of Quantitative Easing. *Review of International Political Economy* 23(6): 1064–1092.
 
-Buiter, W. 2007. Seigniorage. Economics, 10, October.
+Buiter, W. 2007. Seigniorage. *Economics*, 10, October.
 
-Buiter, W. 2014. The Simple Analytics of Helicopter Money: Why It Works—Always. Economics, vol. 8, August.
+Buiter, W. 2014. The Simple Analytics of Helicopter Money: Why It Works—Always. *Economics*, vol. 8, August.
 
-Caselli, F. 2017. Did the Exchange Rate Floor Prevent Deflation in the Czech Republic?. IMF Working Paper 17/206.
+Caselli, F. 2017. *Did the Exchange Rate Floor Prevent Deflation in the Czech Republic?*. IMF Working Paper 17/206.
 
-Cohen, J. 1988. Statistical Power Analysis in the Behavioral Sciences. Hillsdale: Erlbaum.
+Cohen, J. 1988. *Statistical Power Analysis in the Behavioral Sciences*. Hillsdale: Erlbaum.
 
-Del Negro, M., and C. Sims. 2015. When Does a Central Bank's Balance Sheet Require Fiscal Support? Journal of Monetary Economics 73: 1–19.
+Del Negro, M., and C. Sims. 2015. When Does a Central Bank's Balance Sheet Require Fiscal Support? *Journal of Monetary Economics* 73: 1–19.
 
-DeLong, J. B. 2016. Why Do We Talk About Helicopter Money? In Grasping Reality with Both Hands, August 25, 2016.
+DeLong, J. B. 2016. Why Do We Talk About Helicopter Money? *In Grasping Reality with Both Hands*, August 25, 2016.
 
-Diercks, A. 2017. The Reader's Guide to Optimal Monetary Policy. In Bank of Governors of the Federal Reserve System, Mimeo.
+Diercks, A. 2017. The Reader's Guide to Optimal Monetary Policy. In *Bank of Governors of the Federal Reserve System*, Mimeo.
 
-Doucouliagos, C. 2011. How Large is Large? Preliminary and relative guidelines for interpreting partial correlations in economics. Economics Series 5, Deakin University.
+Doucouliagos, C. 2011. How Large is Large? Preliminary and relative guidelines for interpreting partial correlations in economics. *Economics Series* 5, Deakin University.
 
-Doucouliagos, C., and T. Stanley. 2013. Are All Economic Facts Greatly Exaggerated? Theory Competition and Selectivity. Journal of Economic Surveys 27(2): 316–339.
+Doucouliagos, C., and T. Stanley. 2013. Are All Economic Facts Greatly Exaggerated? Theory Competition and Selectivity. *Journal of Economic Surveys* 27(2): 316–339.
 
-Egger, M., G. Davey Smith, M. Schneider, and C. Minder. 1997. Bias in Meta-analysis Detected by a Simple, Graphical Test. British Medical Journal 315(7109): 629–634.
+Egger, M., G. Davey Smith, M. Schneider, and C. Minder. 1997. Bias in Meta-analysis Detected by a Simple, Graphical Test. *British Medical Journal* 315(7109): 629–634.
 
-Eichengreen, B. 2019. From Commodity to Fiat and Now to Crypto: What Does History Tell Us? NBER Working Paper 25426.
+Eichengreen, B. 2019. *From Commodity to Fiat and Now to Crypto: What Does History Tell Us?* NBER Working Paper 25426.
 
-English, W., Erceg, C., and Lopez-Salido, J. D. 2017. Money-Financed Fiscal Programs: A Cautionary Tale. In Finance and Economics Discussion Series 2017-060, Board of Governors of the Federal Reserve System.
+English, W., Erceg, C., and Lopez-Salido, J. D. 2017. Money-Financed Fiscal Programs: A Cautionary Tale. In *Finance and Economics Discussion Series* 2017-060, Board of Governors of the Federal Reserve System.
 
-Fatás, A., and Weder Di Mauro, B. 2018. Cryptocurrencies' Challenge to Central Banks. VoxEU, 14 May.
+Fatás, A., and Weder Di Mauro, B. 2018. Cryptocurrencies' Challenge to Central Banks. *VoxEU*, 14 May.
 
-Friedman, M. 1969. The Optimum Quantity of Money and Other Essays. Chicago: Aldine Publishing Company.
+Friedman, M. 1969. *The Optimum Quantity of Money and Other Essays*. Chicago: Aldine Publishing Company.
 
-Furukawa, C. 2019. Publication Bias Under Aggregation Frictions: Theory, Evidence, and a New Correction Method. MIT, Working Paper.
+Furukawa, C. 2019. *Publication Bias Under Aggregation Frictions: Theory, Evidence, and a New Correction Method*. MIT, Working Paper.
 
-Gabaix, X. 2017. A Behavioral New Keynesian Model. NBER Working Papers 22954, National Bureau of Economic Research, Inc. Updated February, 2017.
+Gabaix, X. 2017. *A Behavioral New Keynesian Model*. NBER Working Papers 22954, National Bureau of Economic Research, Inc. Updated February, 2017.
 
-Galí, J. 2017. The Effects of a Money-Financed Fiscal Stimulus. Economics Working Papers 1441, Department of Economics and Business, Universitat Pompeu Fabra.
+Galí, J. 2017. *The Effects of a Money-Financed Fiscal Stimulus*. Economics Working Papers 1441, Department of Economics and Business, Universitat Pompeu Fabra.
 
-Haldane, A. 2017. A Little More Conversation: A Little Less Action. In Speech at the Federal Reserve Bank of San Francisco, March 31, 2017.
+Haldane, A. 2017. A Little More Conversation: A Little Less Action. In *Speech at the Federal Reserve Bank of San Francisco*, March 31, 2017.
 
-Hall, R., and Reis, R. 2015. Maintaining Central-Bank Financial Stability Under New-Style Central Banking. NBER Working Papers 21173.
+Hall, R., and Reis, R. 2015. *Maintaining Central-Bank Financial Stability Under New-Style Central Banking*. NBER Working Papers 21173.
 
-Hampl, M. 2018. A Digital Currency Useful for Central Banks?. In Speech at the 7th BBVA Seminar for Public Sector Investors and Issuers, Bilbao, February 27, 2018.
+Hampl, M. 2018. A Digital Currency Useful for Central Banks?. In *Speech at the 7th BBVA Seminar for Public Sector Investors and Issuers*, Bilbao, February 27, 2018.
 
-Hausman, J. 2001. Mismeasured Variables in Econometric Analysis: Problems from the Right and Problems from the Left. Journal of Economic Perspectives 15(4): 57–67.
+Hausman, J. 2001. Mismeasured Variables in Econometric Analysis: Problems from the Right and Problems from the Left. *Journal of Economic Perspectives* 15(4): 57–67.
 
-Havranek, T. 2015. Measuring Intertemporal Substitution: The Importance of Method Choices and Selective Reporting. Journal of the European Economic Association 13(6): 1180–1204.
+Havranek, T. 2015. Measuring Intertemporal Substitution: The Importance of Method Choices and Selective Reporting. *Journal of the European Economic Association* 13(6): 1180–1204.
 
-Havranek, T., R. Horvath, Z. Irsova, and M. Rusnak. 2015. Cross-Country Heterogeneity in Intertemporal Substitution. Journal of International Economics 96(1): 100–118.
+Havranek, T., R. Horvath, Z. Irsova, and M. Rusnak. 2015. Cross-Country Heterogeneity in Intertemporal Substitution. *Journal of International Economics* 96(1): 100–118.
 
-Havranek, T., D. Herman, and Z. Irsova. 2018a. Does Daylight Saving Save Electricity? A Meta-analysis. Energy Journal 39(2): 35–61.
+Havranek, T., D. Herman, and Z. Irsova. 2018a. Does Daylight Saving Save Electricity? A Meta-analysis. *Energy Journal* 39(2): 35–61.
 
-Havranek, T., and Z. Irsova. 2011. Estimating Vertical Spillovers from FDI: Why Results Vary and What the True Effect Is. Journal of International Economics 85(2): 234–244.
+Havranek, T., and Z. Irsova. 2011. Estimating Vertical Spillovers from FDI: Why Results Vary and What the True Effect Is. *Journal of International Economics* 85(2): 234–244.
 
-Havranek, T., and Z. Irsova. 2012. Survey Article: Publication Bias in the Literature on Foreign Direct Investment Spillovers. Journal of Development Studies 48(10): 1375–1396.
+Havranek, T., and Z. Irsova. 2012. Survey Article: Publication Bias in the Literature on Foreign Direct Investment Spillovers. *Journal of Development Studies* 48(10): 1375–1396.
 
-Havranek, T., and Z. Irsova. 2017. Do Borders Really Slash Trade? A Meta-analysis. IMF Economic Review 65(2): 365–396.
+Havranek, T., and Z. Irsova. 2017. Do Borders Really Slash Trade? A Meta-analysis. *IMF Economic Review* 65(2): 365–396.
 
-Havranek, T., Z. Irsova, and K. Janda. 2012. Demand for Gasoline is More Price-Inelastic than Commonly Thought. Energy Economics 34(1): 201–207.
+Havranek, T., Z. Irsova, and K. Janda. 2012. Demand for Gasoline is More Price-Inelastic than Commonly Thought. *Energy Economics* 34(1): 201–207.
 
-Havranek, T., Z. Irsova, and T. Vlach. 2018b. Measuring the Income Elasticity of Water Demand: The Importance of Publication and Endogeneity Biases. Land Economics 94(2): 259–283.
+Havranek, T., Z. Irsova, and T. Vlach. 2018b. Measuring the Income Elasticity of Water Demand: The Importance of Publication and Endogeneity Biases. *Land Economics* 94(2): 259–283.
 
-Havranek, T., Z. Irsova, and O. Zeynalova. 2018c. Tuition Fees and University Enrollment: A Meta-Regression Analysis. Oxford Bulletin of Economics and Statistics 80(6): 1145–1184.
+Havranek, T., Z. Irsova, and O. Zeynalova. 2018c. Tuition Fees and University Enrollment: A Meta-Regression Analysis. *Oxford Bulletin of Economics and Statistics* 80(6): 1145–1184.
 
-Havranek, T., M. Rusnak, and A. Sokolova. 2017. Habit Formation in Consumption: A Meta-analysis. European Economic Review 95(1): 142–167.
+Havranek, T., M. Rusnak, and A. Sokolova. 2017. Habit Formation in Consumption: A Meta-analysis. *European Economic Review* 95(1): 142–167.
 
-Holston, K., T. Laubach, and J. Williams. 2017. Measuring the Natural Rate of Interest: International Trends and Determinants. Journal of International Economics 108(1): 59–75.
+Holston, K., T. Laubach, and J. Williams. 2017. Measuring the Natural Rate of Interest: International Trends and Determinants. *Journal of International Economics* 108(1): 59–75.
 
-Ioannidis, J., T. Stanley, and C. Doucouliagos. 2017. The Power of Bias in Economics Research. Economic Journal 605: 236–265.
+Ioannidis, J., T. Stanley, and C. Doucouliagos. 2017. The Power of Bias in Economics Research. *Economic Journal* 605: 236–265.
 
-Ize, A. 2007. Spending Seigniorage: Do Central Banks Have a Governance Problem? IMF Staff Papers 4(3): 563–589.
+Ize, A. 2007. Spending Seigniorage: Do Central Banks Have a Governance Problem? *IMF Staff Papers* 4(3): 563–589.
 
-Kiley, M., and J. Roberts. 2017. Monetary Policy in a Low Interest Rate World, 317–396. Fall: Brookings Papers on Economic Activity.
+Kiley, M., and J. Roberts. 2017. *Monetary Policy in a Low Interest Rate World*, 317–396. Fall: Brookings Papers on Economic Activity.
 
-Klueh, U., and Stella, P. 2008. Central Bank Financial Strength and Policy Performance: An Econometric Evaluation. IMF Working Papers 08/176, International Monetary Fund.
+Klueh, U., and Stella, P. 2008. *Central Bank Financial Strength and Policy Performance: An Econometric Evaluation*. IMF Working Papers 08/176, International Monetary Fund.
 
-Lee, Y., and Y. Yoon. 2016. Central Bank Losses and Monetary Policy Implementation (in Korean). Economic Analysis Quarterly (Bank of Korea) 22(4): 109–147.
+Lee, Y., and Y. Yoon. 2016. Central Bank Losses and Monetary Policy Implementation (in Korean). *Economic Analysis Quarterly (Bank of Korea)* 22(4): 109–147.
 
-Lonergan, E. 2016. Helicopter Money is Different. Philosophy of Money, May 24, 2016.
+Lonergan, E. 2016. Helicopter Money is Different. *Philosophy of Money*, May 24, 2016.
 
-Mayer, T. 2016. From Zirp, Nirp, QE, and Helicopter Money to a Better Monetary System. Flossbach von Storch Research Institute, Economic Policy Note 16/3/2016.
+Mayer, T. 2016. *From Zirp, Nirp, QE, and Helicopter Money to a Better Monetary System*. Flossbach von Storch Research Institute, Economic Policy Note 16/3/2016.
 
-Meaning, J., Dyson, B., Barker, J., and Clayton, E. 2018. Broadening Narrow Money: Monetary Policy with a Central Bank Digital Currency. Staff Working Paper No. 724, London: Bank of England (May).
+Meaning, J., Dyson, B., Barker, J., and Clayton, E. 2018. *Broadening Narrow Money: Monetary Policy with a Central Bank Digital Currency*. Staff Working Paper No. 724, London: Bank of England (May).
 
-Parker, J., N. Souleles, D. Johnson, and R. McClelland. 2013. Consumer Spending and the Economic Stimulus Payments of 2008. American Economic Review 103(6): 2530–2553.
+Parker, J., N. Souleles, D. Johnson, and R. McClelland. 2013. Consumer Spending and the Economic Stimulus Payments of 2008. *American Economic Review* 103(6): 2530–2553.
 
-Perera, A., D. Ralston, and J. Wickramanayake. 2013. Central Bank Financial Strength and Inflation: Is There a Robust Link? Journal of Financial Stability 9(3): 399–414.
+Perera, A., D. Ralston, and J. Wickramanayake. 2013. Central Bank Financial Strength and Inflation: Is There a Robust Link? *Journal of Financial Stability* 9(3): 399–414.
 
-Pinter, J. 2017. Central Bank Financial Strength and Inflation: An Empirical Reassessment Considering the Key Role of the Fiscal Support. Documents de Travail du Centre d'Economie de la Sorbonne 17055, Université Panthéon-Sorbonne (Paris 1).
+Pinter, J. 2017. Central Bank Financial Strength and Inflation: An Empirical Reassessment Considering the Key Role of the Fiscal Support. *Documents de Travail du Centre d'Economie de la Sorbonne* 17055, Université Panthéon-Sorbonne (Paris 1).
 
-Rachel, L., and T. Smith. 2017. Are Low Real Interest Rates Here to Stay? International Journal of Central Banking 13(3): 1–42.
+Rachel, L., and T. Smith. 2017. Are Low Real Interest Rates Here to Stay? *International Journal of Central Banking* 13(3): 1–42.
 
-Reifschneider, D. 2016. Gauging the Ability of the FOMC to Respond to Future Recessions. Finance and Economics Discussion Series 2016-068, Board of Governors of the Federal Reserve System.
+Reifschneider, D. 2016. Gauging the Ability of the FOMC to Respond to Future Recessions. *Finance and Economics Discussion Series* 2016-068, Board of Governors of the Federal Reserve System.
 
-Rodnyansky, A., and O. Darmouni. 2017. The Effects of Quantitative Easing on Bank Lending Behavior. Review of Financial Studies 30(11): 3858–3887.
+Rodnyansky, A., and O. Darmouni. 2017. The Effects of Quantitative Easing on Bank Lending Behavior. *Review of Financial Studies* 30(11): 3858–3887.
 
-Rogoff, K. 2017. Dealing with Monetary Paralysis at the Zero Bound. Journal of Economic Perspectives 31(3): 47–66.
+Rogoff, K. 2017. Dealing with Monetary Paralysis at the Zero Bound. *Journal of Economic Perspectives* 31(3): 47–66.
 
-Rossouw, J. 2016. Private Shareholding and Public Interest: An Analysis of an Eclectic Group of Central Banks. South African Journal of Economic and Management Sciences 19(1): 150–159.
+Rossouw, J. 2016. Private Shareholding and Public Interest: An Analysis of an Eclectic Group of Central Banks. *South African Journal of Economic and Management Sciences* 19(1): 150–159.
 
-Rossouw, J. 2018. An Institutional Comparison of Private Shareholding in the Central Banks of South Africa and Turkey. ERSA Working Papers 724, Economic Research Southern Africa.
+Rossouw, J. 2018. An Institutional Comparison of Private Shareholding in the Central Banks of South Africa and Turkey. *ERSA Working Papers* 724, Economic Research Southern Africa.
 
-Stanley, T. 2001. Wheat from Chaff: Meta-analysis as Quantitative Literature Review. Journal of Economic Perspectives 15(3): 131–150.
+Stanley, T. 2001. Wheat from Chaff: Meta-analysis as Quantitative Literature Review. *Journal of Economic Perspectives* 15(3): 131–150.
 
-Stanley, T. 2005. Beyond Publication Bias. Journal of Economic Surveys 19(3): 309–345.
+Stanley, T. 2005. Beyond Publication Bias. *Journal of Economic Surveys* 19(3): 309–345.
 
-Stanley, T. 2008. Meta-Regression Methods for Detecting and Estimating Empirical Effects in the Presence of Publication Selection. Oxford Bulletin of Economics and Statistics 70(1): 103–127.
+Stanley, T. 2008. Meta-Regression Methods for Detecting and Estimating Empirical Effects in the Presence of Publication Selection. *Oxford Bulletin of Economics and Statistics* 70(1): 103–127.
 
-Stanley, T., and C. Doucouliagos. 2010. Picture This: A Simple Graph That Reveals Much Ado About Research. Journal of Economic Surveys 24(1): 170–191.
+Stanley, T., and C. Doucouliagos. 2010. Picture This: A Simple Graph That Reveals Much Ado About Research. *Journal of Economic Surveys* 24(1): 170–191.
 
-Stanley, T., and C. Doucouliagos. 2014. Meta-Regression Approximations to Reduce Publication Selection Bias. Research Synthesis Methods 5(1): 60–78.
+Stanley, T., and C. Doucouliagos. 2014. Meta-Regression Approximations to Reduce Publication Selection Bias. *Research Synthesis Methods* 5(1): 60–78.
 
-Stella, P. 2003. Why Central Banks Need Financial Strength. Central Banking Journal 14: 23–29.
+Stella, P. 2003. Why Central Banks Need Financial Strength. *Central Banking Journal* 14: 23–29.
 
-Stella, P. 2011. Central Bank Financial Strength and Macroeconomic Policy Performance. In The Capital Needs of Central Banks, ed. S. Milton and P. Sinclair, 47–68. New York, NY: Routledge.
+Stella, P. 2011. Central Bank Financial Strength and Macroeconomic Policy Performance. In *The Capital Needs of Central Banks*, ed. S. Milton and P. Sinclair, 47–68. New York, NY: Routledge.
 
 Tolle, M. 2016. Central Bank Digital Currency: The End of Monetary Policy as We Know It?. Bank Underground (25 July).
 
-Turner, A. 2015. The Case for Monetary Finance—An Essentially Political Issue. In IMF Jacques Polak Research Conference, November 5, 2015.
+Turner, A. 2015. The Case for Monetary Finance—An Essentially Political Issue. In *IMF Jacques Polak Research Conference*, November 5, 2015.
 
-van Rooij, M., and de Haan, J. 2016. Will Helicopter Money be Spent? New evidence. DNB Working Papers 538, Netherlands Central Bank, Research Department.
+van Rooij, M., and de Haan, J. 2016. Will Helicopter Money be Spent? New evidence. *DNB Working Papers* 538, Netherlands Central Bank, Research Department.

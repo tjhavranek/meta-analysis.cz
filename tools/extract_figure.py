@@ -22,13 +22,16 @@ import tempfile
 import numpy as np
 from PIL import Image
 
+sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
+import _poppler
+
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
 
 def render(pdf, page, dpi):
     with tempfile.TemporaryDirectory() as tmp:
         stem = os.path.join(tmp, "p")
-        subprocess.run(["pdftoppm", "-f", str(page), "-l", str(page), "-r", str(dpi),
+        subprocess.run([_poppler.tool("pdftoppm"), "-f", str(page), "-l", str(page), "-r", str(dpi),
                         "-png", pdf, stem], check=True, capture_output=True)
         name = [f for f in os.listdir(tmp) if f.endswith(".png")][0]
         return Image.open(os.path.join(tmp, name)).convert("RGB").copy()
