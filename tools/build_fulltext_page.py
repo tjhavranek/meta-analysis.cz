@@ -227,8 +227,13 @@ picture.</p>
         "description": "Research papers and methodological guidance carried in full "
                        "as HTML on meta-analysis.cz.",
         "isPartOf": {"@id": "https://meta-analysis.cz/#website"},
+        # Every page listed here is one this site publishes under CC BY, so the
+        # listing says so too. A crawler reading only this page saw 71 articles
+        # with no rights on any of them.
+        "license": "https://creativecommons.org/licenses/by/4.0/",
         "hasPart": [{"@type": "ScholarlyArticle",
                      "name": r[1],
+                     "license": "https://creativecommons.org/licenses/by/4.0/",
                      "url": "https://meta-analysis.cz%s" % r[3]} for r in rows],
     }
     # The sentence on the page is about the papers it lists, so the count is what those

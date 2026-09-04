@@ -272,7 +272,8 @@ def build_note(cfg, note):
                         **({"sameAs": a["orcid"]} if a.get("orcid") else {})}
                        for a in authors],
             "publisher": {"@type": "Organization", "name": "meta-analysis.cz", "url": SITE},
-            "isPartOf": {"@type": "Blog", "@id": NOTES_URL + "#blog", "name": cfg["notes_title"]},
+            "isPartOf": {"@type": "Blog", "@id": NOTES_URL + "#blog",
+                         "name": cfg["notes_title"], "license": cfg["license_url"]},
             "license": cfg["license_url"],
             "isAccessibleForFree": True,
         }]
@@ -340,11 +341,13 @@ def build_index(cfg, notes):
             "name": cfg["notes_title"],
             "description": cfg["notes_description"],
             "inLanguage": "en",
+            "license": cfg["license_url"],
             "publisher": {"@type": "Organization", "name": "meta-analysis.cz", "url": SITE},
             "blogPost": [{
                 "@type": "BlogPosting",
                 "@id": f"{SITE}/notes/{n['slug']}/#note",
                 "url": f"{SITE}/notes/{n['slug']}/",
+                "license": cfg["license_url"],
                 "headline": n["title"], "datePublished": n["date"], "abstract": n["summary"],
             } for n in notes],
         }]

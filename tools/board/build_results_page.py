@@ -267,6 +267,7 @@ def build(check=False):
                                       if "citation" in answer else refs[p])
             jsonld_items.append({
                 "@type": "Question",
+                "license": "https://creativecommons.org/licenses/by/4.0/",
                 "name": q,
                 "url": f"https://meta-analysis.cz/results/#{p}",
                 "acceptedAnswer": answer,

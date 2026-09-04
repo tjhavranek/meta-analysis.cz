@@ -68,6 +68,9 @@ def _catalog_node():
     global _CATALOG
     if _CATALOG is None:
         _CATALOG = {"@type": "DataCatalog", "name": "meta-analysis.cz",
+                    # The Dataset nodes this catalogue holds each declare CC BY; the
+                    # catalogue itself said nothing, on 46 pages.
+                    "license": "https://creativecommons.org/licenses/by/4.0/",
                     "url": BASE + "/datasets/"}
         _doi = _catalog_doi()
         if _doi:
@@ -378,9 +381,11 @@ def build_jsonld(m):
     if main_pdf:
         art["encoding"] = [{"@type": "MediaObject", "name": main_pdf["label"],
                             "contentUrl": absurl(proj, main_pdf["href"]),
+                            "license": art["license"],
                             "encodingFormat": "application/pdf"}]
     if other_pdfs:
         art["hasPart"] = [{"@type": "CreativeWork", "name": p["label"],
+                            "license": art["license"],
                             "url": absurl(proj, p["href"])} for p in other_pdfs]
     graph = [art]
     # ALSO NOT a bug, and the same shape as the pcc case below: /debate/, /learning/ and
@@ -402,6 +407,9 @@ def build_jsonld(m):
         # pages (OSF/Zenodo) go to sameAs, not distribution
         dist = [{"@type": "DataDownload", "name": f["label"],
                  "contentUrl": absurl(proj, f["href"]),
+                 # The Dataset above declares CC BY. The nodes that actually name the
+                 # files a person downloads did not.
+                 "license": "https://creativecommons.org/licenses/by/4.0/",
                  "encodingFormat": FMT.get(os.path.splitext(f["href"].split("?")[0])[1].lower(),
                                             "application/octet-stream")}
                 for f in dc_local + dc_ext_file]
@@ -905,6 +913,7 @@ def main():
     home_graph = {"@context": "https://schema.org", "@graph": [
         {"@type": "WebSite", "@id": BASE + "/#website", "url": BASE + "/",
          "name": "meta-analysis.cz",
+         "license": "https://creativecommons.org/licenses/by/4.0/",
          "alternateName": "Meta-Analysis: Methods, Data, and Code",
          "description": "Methods, data, and code for meta-analysis in any field: MAIVE, the practitioner's guide, and the datasets and estimation code behind every paper here. By Tomas Havranek and Zuzana Irsova of Charles University, Prague, and their co-authors.",
          # publisher stays singular: one person runs the domain. But 35 of the 52 papers
@@ -980,6 +989,7 @@ def main():
             catalog = {
                 "@context": "https://schema.org", "@type": "DataCatalog",
                 "@id": BASE + "/datasets/#catalog",
+                "license": "https://creativecommons.org/licenses/by/4.0/",
                 "name": "meta-analysis.cz datasets",
                 "description": (
                     f"{len(entries)} estimate-level datasets from meta-analyses in economics "
@@ -1010,9 +1020,11 @@ def main():
                 "dataset": [{"@id": f"{BASE}/{d['id']}/#dataset"} for d in entries],
                 "distribution": [
                     {"@type": "DataDownload", "encodingFormat": "application/json",
+                     "license": "https://creativecommons.org/licenses/by/4.0/",
                      "contentUrl": BASE + DATA_API,
                      "description": "Machine-readable index of every dataset"},
                     {"@type": "DataDownload", "encodingFormat": "text/csv",
+                     "license": "https://creativecommons.org/licenses/by/4.0/",
                      "contentUrl": BASE + "/data/v1/estimates_harmonised.csv",
                      "description": "All literatures pooled into one estimate-level table"}]}
             # /datasets/ is in SELF_MANAGED only to suppress Highwire citation_* tags (it is

@@ -131,13 +131,18 @@ def jsonld(person, records):
         "isPartOf": {"@id": BASE + "/#website"},
         "about": {"@type": "Person", "@id": person["person_id"], "name": person["name"],
                   "sameAs": f"https://orcid.org/{person['orcid']}"},
+        "license": "https://creativecommons.org/licenses/by/4.0/",
         "hasPart": [
             {"@type": "ScholarlyArticle", "name": r["title"],
              **({"datePublished": str(r["year"])} if r["year"] else {}),
              **({"isPartOf": {"@type": "Periodical", "name": r["venue"]}} if r["venue"] else {}),
              **({"sameAs": f"https://doi.org/{r['doi']}"} if r["doi"]
                 else {"sameAs": r["url"]} if r.get("url") else {}),
-             **({"url": site_url(r["project"])} if r["project"] else {})}
+             **({"url": site_url(r["project"])} if r["project"] else {}),
+             # Only where the paper is actually carried here. An entry with no
+             # project is hosted by its journal, and this site holds no rights to
+             # declare over that copy.
+             **({"license": "https://creativecommons.org/licenses/by/4.0/"} if r["project"] else {})}
             for r in records],
     }, indent=1, ensure_ascii=False)
 

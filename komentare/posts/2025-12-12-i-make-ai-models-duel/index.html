@@ -26,6 +26,7 @@
    "isPartOf": {
     "@id": "https://meta-analysis.cz/komentare/posts/#collection"
    },
+   "license": "https://creativecommons.org/licenses/by/4.0/",
    "about": {
     "@id": "https://meta-analysis.cz/komentare/posts/2025-12-12-i-make-ai-models-duel/#post"
    }
@@ -45,6 +46,7 @@
     "sameAs": "https://orcid.org/0000-0002-0753-8124"
    },
    "text": "For deep analytical work, I don’t use one AI model. I make them duel.\n\nFor thinking-intensive tasks (research, strategy, due diligence) a single AI model often converges too fast. It sounds convincing but skips edge cases and hidden assumptions.\n\nSo Tomas Havranek and I formalized a workflow to create structured disagreement:\n\n🔹 Anchor (ChatGPT): Writes a first-pass assessment grounded in the files. 🔹 Audit (Gemini): Actively tries to break it (logic gaps, counterexamples, failure modes). ChatGPT defends. The duel iterates. 🔹 Synthesis (You): You analyze the conflict to see what survives.\n\nThe output is not “AI approval.” It is a clearer map of risks, boundary conditions, and what you must verify.\n\nAdvanced users: You can swap the auditor for Claude or automate this via API (MAD).\n\nFor everyone else: no code needed. You can copy-paste the protocol and try it via ChatGPT Agent.\n\nProtocol (GitHub): 👉 https://lnkd.in/dRwKz63g\nResearch example: 👉 https://lnkd.in/dw98RKuW\n\n#AI #DecisionMaking #CriticalThinking #Productivity #Research",
+   "license": "https://creativecommons.org/licenses/by/4.0/",
    "sameAs": "https://www.linkedin.com/feed/update/urn%3Ali%3Ashare%3A7405164270306504704"
   }
  ]
@@ -117,8 +119,17 @@
       <a href="/komentare/index.json">index.json</a> (metadata for every item, full text where available) ·
       <a href="/komentare/all.md">all.md</a> (every text in one file) ·
       <a href="/komentare/feed.xml">RSS</a>. The Markdown source of each item is in
-      <a href="/komentare/src/">/komentare/src/</a>. Text and metadata may be freely
-      indexed, quoted and used for research, with attribution to the original outlet.</p>
+      <a href="/komentare/src/">/komentare/src/</a>. Text and metadata are licensed
+      <a href="https://creativecommons.org/licenses/by/4.0/">CC BY 4.0</a>, the same as the
+      rest of meta-analysis.cz: copy, redistribute, adapt and reuse them for any purpose,
+      including commercial use and training machine-learning models, with attribution.
+      Where a text first appeared in another outlet, naming that outlet as well is
+      appreciated.</p>
+    <p class="foot-licence"><b>Licence: CC BY 4.0.</b> Everything on this site is licensed under the
+      <a href="https://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0
+      International Licence</a>. You may copy, redistribute, adapt, and reuse any of it for any
+      purpose, including commercial use and training machine-learning models, as long as you give
+      attribution to meta-analysis.cz. You do not need to ask.</p>
   </div>
 </footer>
 </body>

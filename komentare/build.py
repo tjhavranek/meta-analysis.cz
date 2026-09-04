@@ -68,6 +68,15 @@ CANON_ID = {
 BASE = f"{SITE}/komentare"      # absolute: canonical, og:url, JSON-LD
 PATH = "/komentare"             # root-relative: every internal link and asset
 
+# The site is CC BY 4.0 throughout, Czech and English alike. This archive used to say
+# something narrower to machines -- that text and metadata "may be freely indexed, quoted
+# and used for research" -- which withholds redistribution, adaptation, commercial use and
+# model training, all of which CC BY grants. Every creative-work node this file emits for
+# OUR OWN content now carries the licence, so a crawler reading any of these pages is told
+# the same thing it is told on a paper page. Nodes describing someone else's work -- a
+# broadcast on Ceska televize, a podcast episode, a journal -- must never carry it.
+CC_BY = "https://creativecommons.org/licenses/by/4.0/"
+
 AUTHOR = "Tomáš Havránek"
 # Whose archive this is. AUTHOR stays single: it is the default byline for items that
 # name no author, so widening it would silently reassign every unattributed piece.
@@ -545,8 +554,21 @@ def shell(title, desc, canonical, jsonld, body, active, extra_head="", lang="cs"
       <a href="{PATH}/index.json">index.json</a> (metadata for every item, full text where available) ·
       <a href="{PATH}/all.md">all.md</a> (every text in one file) ·
       <a href="{PATH}/feed.xml">RSS</a>. The Markdown source of each item is in
-      <a href="{PATH}/src/">/komentare/src/</a>. Text and metadata may be freely
-      indexed, quoted and used for research, with attribution to the original outlet.</p>
+      <a href="{PATH}/src/">/komentare/src/</a>. Text and metadata are licensed
+      <a href="https://creativecommons.org/licenses/by/4.0/">CC BY 4.0</a>, the same as the
+      rest of meta-analysis.cz: copy, redistribute, adapt and reuse them for any purpose,
+      including commercial use and training machine-learning models, with attribution.
+      Where a text first appeared in another outlet, naming that outlet as well is
+      appreciated.</p>
+    {'''<p class="foot-licence"><b>Licence: CC BY 4.0.</b> Vše na tomto webu je k dispozici pod licencí
+      <a href="https://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0
+      International</a>. Můžete cokoli kopírovat, šířit, upravovat a dále používat k jakémukoli
+      účelu, včetně komerčního využití a trénování modelů strojového učení, pokud uvedete
+      meta-analysis.cz. Není třeba se ptát.</p>''' if lang == "cs" else '''<p class="foot-licence"><b>Licence: CC BY 4.0.</b> Everything on this site is licensed under the
+      <a href="https://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0
+      International Licence</a>. You may copy, redistribute, adapt, and reuse any of it for any
+      purpose, including commercial use and training machine-learning models, as long as you give
+      attribution to meta-analysis.cz. You do not need to ask.</p>'''}
   </div>
 </footer>
 </body>
@@ -719,6 +741,9 @@ def write_item(a):
            else {("dateCreated" if unpub else "datePublished"): a["date"]}),
         "isAccessibleForFree": True,
         "articleSection": SECTIONS[a["category"]]["title"],
+        # This archive's own writing, so it carries the site's licence like everything
+        # else. Every page here used to declare no rights at all in its structured data.
+        "license": CC_BY,
     }
     # A translation is a different work from the thing it translates, and the dates and the
     # publisher belong to whichever one they describe. Left alone, the English page inherited
@@ -734,6 +759,9 @@ def write_item(a):
         _o_lang = _orig.get("lang") or SECTIONS[_orig["category"]]["lang"]
         node["translationOfWork"] = {
             "@type": "CreativeWork",
+            # The Czech original is on this site too, so it carries the licence
+            # exactly as its own page does.
+            "license": CC_BY,
             "@id": f"{BASE}/{_orig['slug']}/#article",
             "url": f"{BASE}/{_orig['slug']}/",
             "name": _orig["headline"],
@@ -1042,6 +1070,7 @@ def write_index(items, key=None):
         "description": desc,
         "inLanguage": sec["lang"] if sec else "cs",
         "about": [{"@id": f"{SITE}/#th"}, {"@id": f"{SITE}/#zi"}],
+        "license": CC_BY,
         # These share the per-page node's @id, so anything merging the graph would end up
         # with dateCreated from the page AND datePublished from here on one entity. An
         # unpublished draft must carry the same date field in both places.
@@ -1050,6 +1079,10 @@ def write_index(items, key=None):
              "@id": (f"{BASE}/{a['slug']}/#article" if a["media"] == "text" else a.get("url", "")),
              "url": (f"{BASE}/{a['slug']}/" if a["media"] == "text" else a.get("url", "")),
              "headline": a["headline"],
+             # Only the texts hosted here. A broadcast or a podcast episode is somebody
+             # else's recording, and claiming CC BY over it would be a false claim of
+             # rights -- a worse error than saying nothing.
+             **({"license": CC_BY} if a["media"] == "text" else {}),
              # Month precision has to be stated the same way the item page states it, or
              # one @id carries two different dates and 2026-07-01 asserts a day nobody
              # knows. Likewise the status: a reference to a never-published text must not
@@ -1880,6 +1913,7 @@ def write_socials_page():
             "author": {"@type": "Person", "@id": f"{SITE}/#zi", "name": "Zuzana Havránková",
                        "sameAs": ORCIDS["Zuzana Havránková"]},
             "text": p["text"],
+            "license": CC_BY,
         }
         if p.get("url"):
             node["sameAs"] = p["url"]
@@ -1889,7 +1923,7 @@ def write_socials_page():
         # it. Two full nodes with identical text and different @ids would assert two
         # different things exist.
         parts.append({"@type": "SocialMediaPosting", "@id": canon + "#post",
-                      "url": canon, "headline": head,
+                      "url": canon, "headline": head, "license": CC_BY,
                       "datePublished": node["datePublished"], "inLanguage": lang})
         pbody = (
             '    <article class="post post-single reading" '
@@ -1914,6 +1948,7 @@ def write_socials_page():
         pjson = {"@context": "https://schema.org", "@graph": [
             {"@type": "WebPage", "@id": canon, "url": canon, "name": ptitle,
              "inLanguage": lang, "isPartOf": {"@id": f"{BASE}/posts/#collection"},
+             "license": CC_BY,
              "about": {"@id": canon + "#post"}},
             node]}
         d = KDIR / "posts" / p["slug"]
@@ -1924,7 +1959,7 @@ def write_socials_page():
 
     jsonld = {"@context": "https://schema.org", "@graph": [
         {"@type": "CollectionPage", "@id": f"{BASE}/posts/#collection",
-         "url": f"{BASE}/posts/",
+         "url": f"{BASE}/posts/", "license": CC_BY,
          "name": "Posts — Zuzana Irsova Havrankova", "description": SOCIAL_DESC,
          # This page is English, unlike the rest of the archive: the posts are mostly
          # English and the readership is international. Each post still declares its own
@@ -2014,6 +2049,7 @@ def write_data_page(items, social=()):
              # the hub's collection node, which is what this page is part of. Pointing
              # at BASE/ named nothing: no node with that @id exists in any graph.
              "isPartOf": {"@id": f"{BASE}/#collection"},
+             "license": CC_BY,
              "about": {"@id": f"{BASE}/data/#dataset"}},
             {"@type": "Dataset", "@id": f"{BASE}/data/#dataset",
              "name": f"Komentáře — {SITE_AUTHORS}",
@@ -2032,15 +2068,15 @@ def write_data_page(items, social=()):
              "temporalCoverage": f"{_span(items, social)}",
              "license": "https://creativecommons.org/licenses/by/4.0/",
              "distribution": [
-                 {"@type": "DataDownload", "name": "corpus.jsonl",
+                 {"@type": "DataDownload", "license": CC_BY, "name": "corpus.jsonl",
                   "encodingFormat": "application/x-ndjson",
                   "contentUrl": f"{BASE}/corpus.jsonl"},
-                 {"@type": "DataDownload", "name": "index.json",
+                 {"@type": "DataDownload", "license": CC_BY, "name": "index.json",
                   "encodingFormat": "application/json",
                   "contentUrl": f"{BASE}/index.json"},
-                 {"@type": "DataDownload", "name": "all.md",
+                 {"@type": "DataDownload", "license": CC_BY, "name": "all.md",
                   "encodingFormat": "text/markdown", "contentUrl": f"{BASE}/all.md"},
-                 {"@type": "DataDownload", "name": "feed.xml",
+                 {"@type": "DataDownload", "license": CC_BY, "name": "feed.xml",
                   "encodingFormat": "application/rss+xml",
                   "contentUrl": f"{BASE}/feed.xml"},
              ]},
@@ -2126,7 +2162,14 @@ def write_src_index(items):
 {chr(10).join(rows)}
   </ul>
 </div></main>
-<footer class="foot"><div class="wrap"></div></footer>
+<footer class="foot"><div class="wrap">
+  <p class="foot-licence"><b>Licence: CC BY 4.0.</b> These sources, and everything else on this
+    site, are licensed under the
+    <a href="https://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0
+    International Licence</a>. You may copy, redistribute, adapt, and reuse any of it for any
+    purpose, including commercial use and training machine-learning models, as long as you give
+    attribution to meta-analysis.cz. You do not need to ask.</p>
+</div></footer>
 </body>
 </html>
 """
