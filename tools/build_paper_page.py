@@ -373,12 +373,15 @@ RE_CONT_LEAD = re.compile(r"^\(\s*(?:continued|cont\.?)\s*\)\s*", re.I)
 # the artwork beside it is never emitted. verify_transcript cannot see this, because the
 # caption text IS in the paper either way.
 RE_LI = re.compile(r"^(\s*)-\s+(.+)$")
+# The label may be purely alphabetic. remittances prints one unnumbered figure, under
+# "Appendix E", and requiring a digit meant "FIGURE E." matched nothing: the line was
+# emitted as ordinary prose and the figure beside it was never shown at all.
 RE_FIG_CAP = re.compile(
-    r"^FIGURE\s+([A-Za-z]{0,3}\.?\d+(?:\.\d+)*[A-Za-z]?)(\s*\(no artwork\))?\s*\.\s*(.*)$",
+    r"^FIGURE\s+((?:[A-Za-z]{0,3}\.?\d+(?:\.\d+)*[A-Za-z]?|[A-Za-z]{1,2}))(\s*\(no artwork\))?\s*\.\s*(.*)$",
     re.I)
 RE_FIG_NOTE = re.compile(r"^(Notes?|Source):\s")
 RE_FIG_ALT = re.compile(
-    r"^ALT\s+([A-Za-z]{0,3}\.?\d+(?:\.\d+)*[A-Za-z]?)\s*\.\s*(.+)$", re.I)
+    r"^ALT\s+((?:[A-Za-z]{0,3}\.?\d+(?:\.\d+)*[A-Za-z]?|[A-Za-z]{1,2}))\s*\.\s*(.+)$", re.I)
 RE_LIST_ITEM = re.compile(r"^([0-9]+|[ivxlcdm]+)\.\s+(.*)$")
 
 
@@ -753,7 +756,15 @@ class Builder:
             # a block per PDF page; inline they cut the running text, sometimes mid-word.
             self.w('<h2 id="sec-endnotes">ENDNOTES</h2>')
             self.toc.append((2, "sec-endnotes", "ENDNOTES"))
-            self.w('<ol class="endnotes">')
+            # A paper whose notes do not begin at 1 needs the list to say so. reforms prints
+            # notes 2, 3 and 4 -- its note 1 is the title footnote, carried in the front
+            # matter -- and its ids and its superscripts both say 2, 3, 4, but a bare <ol>
+            # numbers its items 1, 2, 3. A reader clicking superscript 2 landed on an item
+            # displayed as 1. The stylesheet's own comment says the notes are "numbered as
+            # the paper numbers them", which is the intent this restores.
+            _first = re.match(r'<li id="note-(\d+)"', self._endnotes[0] or "")
+            _start = int(_first.group(1)) if _first else 1
+            self.w('<ol class="endnotes"%s>' % ('' if _start == 1 else ' start="%d"' % _start))
             for item in self._endnotes:
                 self.w(item)
             self.w("</ol>")
@@ -1209,7 +1220,20 @@ def build_page(project, meta, body, toc):
         desc = "Full text of the corrected manuscript of %s" % _cite
     else:
         desc = "The full text of %s" % _cite
-    desc = desc[:300]
+    # A hard slice cuts whatever is at character 300, and what sits at the end of these is
+    # the DOI: marking incentives an accepted manuscript lengthened the prefix by eleven
+    # characters and the description went out with "10.1086/74354", one digit short of a
+    # real DOI and indistinguishable from one. Cut at a word boundary instead, and drop a
+    # trailing fragment rather than publish half an identifier.
+    if len(desc) > 300:
+        desc = desc[:300].rsplit(" ", 1)[0].rstrip(" ,;:")
+        if re.search(r"(doi\.org/|10\.\d{4,9}/)\S*$", desc):
+            desc = re.sub(r"\s*\S*(doi\.org/|10\.\d{4,9}/)\S*$", "", desc).rstrip(" .,;:")
+        # Dropping the identifier can leave the words that introduced it, so a description
+        # ends "available at..." pointing at nothing. Take those with it.
+        desc = re.sub(r"(?:\s+(?:available|accessible|online)?\s*\b(?:at|from|via|in|on|and|of|the|doi)\b)+$",
+                      "", desc, flags=re.I).rstrip(" .,;:")
+        desc += "..."
 
     toc_html = ""
     if len([t for t in toc if t[0] == 2]) >= 4:

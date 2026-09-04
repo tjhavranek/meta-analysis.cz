@@ -30897,6 +30897,7 @@ Angeloni, Ignazio, Luc Aucremanne, Michael Ehrmann, Jordi Galí, Andrew Levin, a
 Arnone, Marco, Bernard J. Laurens, Jean-Francois Segalotto, and Martin Sommer. (2009) “Central Bank Autonomy: Lessons from Global Trends.” *IMF Staff Papers*, 56, 263–296.
 
 Ashenfelter, Orley, and Michael Greenstone. (2004) “Estimating the Value of a Statistical Life: The Importance of Omitted Variables and Publication Bias.” *American Economic Review*, 94, 454–60.
+
 Banbura, Marta, Domenico Giannone, and Lucrezia Reichlin. (2010) “Large Bayesian Vector Auto Regressions.” *Journal of Applied Econometrics*, 25, 71–92.
 
 
@@ -30917,6 +30918,7 @@ Bernanke, Ben S., and Mark Gertler. (1995) “Inside the Black Box: The Credit C
 Blanchard, Olivier J., and Mark W. Watson. (1986) “Are Business Cycles All Alike?” In *The American Business Cycle: Continuity and Change*, pp. 123–180. Cambridge, MA: National Bureau of Economic Research.
 
 Boivin, Jean, and Marc P. Giannoni. (2006) “Has Monetary Policy Become More Effective?” *Review of Economics and Statistics*, 88, 445–62.
+
 Borys, Magdalena, Roman Horvath, and Michal Franta. (2009) “The Effects of Monetary Policy in the Czech Republic: An Empirical Study.” *Empirica*, 36, 419–43.
 
 
@@ -30955,6 +30957,7 @@ European Central Bank. (2010) “Monthly Bulletin.” European Central Bank, May
 Giordani, Paolo. (2004) “An Alternative Explanation of the Price Puzzle.” *Journal of Monetary Economics*, 51, 1271–96.
 
 Görg, Holger, and Eric Strobl. (2001) “Multinational Companies and Productivity Spillovers: A Meta-analysis.” *The Economic Journal*, 111, F723–F739.
+
 Hanson, Michael S. (2004) “The Price Puzzle Reconsidered.” *Journal of Monetary Economics*, 51, 1385–1413.
 
 
@@ -34784,7 +34787,7 @@ Data: https://meta-analysis.cz/sigma/sigma.dta
 Code: https://meta-analysis.cz/sigma/sigma.zip
 Full text (HTML): https://meta-analysis.cz/sigma/paper/
 
-Abstract: We show that the large elasticity of substitution between capital and labor estimated in the literature on average, 0.9, can be explained by three factors: publication bias, use of aggregated data, and omission of the first-order condition for capital. The mean elasticity conditional on the absence of publication bias, disaggregated data, and inclusion of information from the first-order condition for capital is 0.3. To obtain this result, we collect 3,186 estimates of the elasticity reported in 121 studies, codify 71 variables that reflect the context in which researchers produce their estimates, and address model uncertainty by Bayesian and frequentist model averaging. We employ nonlinear techniques to correct for publication bias, which is responsible for at least half of the overall reduction in the mean elasticity from 0.9 to 0.3. Our findings also suggest that a failure to normalize the production function leads to a substantial upward bias in the estimated elasticity. The weight of evidence accumulated in the empirical literature emphatically rejects the Cobb-Douglas specification.
+Abstract: We show that the large elasticity of substitution between capital and labor estimated in the literature on average, 0.9, can be explained by three issues: publication bias, use of cross-country variation, and omission of the first-order condition for capital. The mean elasticity conditional on the absence of these issues is 0.3. To obtain this result, we collect 3,186 estimates of the elasticity reported in 121 studies, codify 71 variables that reflect the context in which researchers produce their estimates, and address model uncertainty by Bayesian and frequentist model averaging. We employ nonlinear techniques to correct for publication bias, which is responsible for at least half of the overall reduction in the mean elasticity from 0.9 to 0.3. Our findings also suggest that a failure to normalize the production function leads to a substantial upward bias in the estimated elasticity. The weight of evidence accumulated in the empirical literature emphatically rejects the Cobb-Douglas specification.
 
 # Measuring capital-labor substitution: The importance of method choices and publication bias
 

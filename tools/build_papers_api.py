@@ -109,7 +109,16 @@ def build():
             # working paper's title with the article's 2014 and contradicted its own page.
             # journal and doi stay: version_note says in words that they describe the article
             # this became, and published_as carries it.
-            **({"year": (meta.get("technical_report") or {}).get("year") or meta.get("year"),
+            # ...but only when this record IS the working paper. Four pages host the typeset
+            # article and merely reproduce a working paper's text, and carry a
+            # technical_report block to record which one; reading the year from it
+            # unconditionally dated taxrev and passthrough to 2015, transmission to 2010 and
+            # tourist to 2018, each beside the article's own journal, volume, pages and DOI.
+            # Both page builders were gated on version for this; this file is the third
+            # emitter and was missed, so the API contradicted the pages it describes.
+            **({"year": ((meta.get("technical_report") or {}).get("year")
+                         if (meta.get("version") or "record").lower() == "working_paper"
+                         else None) or meta.get("year"),
                 "technical_report": meta.get("technical_report")}
                if meta.get("technical_report") else {"year": meta.get("year")}),
             "journal": meta.get("journal"),
