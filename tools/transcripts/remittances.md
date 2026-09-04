@@ -612,6 +612,8 @@ Note: The dependent variable is PCC; the estimated equation is $\mathrm{PCC}_{is
 
 ## Appendix E. Funnel plot for a subsample of comparable estimates
 
+FIGURE E. Funnel plot for a subsample of comparable estimates
+
 *Note: The figure represents the scattered plot of the reported estimates of the effect of the remittances on the economic growth (elasticities, not partial correlations). The vertical axis represents the precision of the respective estimates (calculated as logarithm of inverse of the corresponding standard errors). The dashed vertical line displays the sample median; the solid vertical line displays the sample mean. Because of the presence of extreme observations for both size and precision, both variables are trimmed for ease of exposition.*
 
 ## Appendix F. Supplementary data

@@ -114,7 +114,7 @@ As an additional test of selective reporting, we employ Hedges' (1992) model for
 
 ### 3.2 Data Sample
 
-To collect our sample of the published estimates, we first perform a Google Scholar search using keywords *"(size OR small) AROUND(4) (effect OR premium OR anomaly OR pattern OR puzzle)" size small stock firm returns risk empirical regression portfolio sort effect premium "market value" OR "market capitalization."* We consider the first 500 results provided by Google Scholar sorted by relevance. We only consider studies published in peer-reviewed journals that have passed the quality control mechanism of the review process. Rusnak et al. (2013) find no difference in the extent of selective reporting between published and unpublished studies in economics and argue that because the authors' ultimate aim is to publish their papers in research journals the incentives discard nonintuitive findings applies equally to published and nonpublished research. (A similar approach is employed by Havranek and Rusnak, 2013 and Havranek and Sokolova, 2019.) We then "snowball" our sample by considering all the references (i) from the 10 most-cited papers collected via Google Scholar search, and (ii) from the prominent review papers (Horowitz et al., 2000a; Crain, 2011; Hou et al., 2011; van Dijk, 2011; Harvey et al., 2016).
+To collect our sample of the published estimates, we first perform a Google Scholar search using keywords *"(size OR small) AROUND(4) (effect OR premium OR anomaly OR pattern OR puzzle)" size small stock firm returns risk empirical regression portfolio sort effect premium "market value" OR "market capitalization."* We consider the first 500 results provided by Google Scholar sorted by relevance. We only consider studies published in peer-reviewed journals that have passed the quality control mechanism of the review process. Rusnak *et al.* (2013) find no difference in the extent of selective reporting between published and unpublished studies in economics and argue that because the authors' ultimate aim is to publish their papers in research journals the incentives discard nonintuitive findings applies equally to published and nonpublished research. (A similar approach is employed by Havranek and Rusnak, 2013 and Havranek and Sokolova, 2019.) We then "snowball" our sample by considering all the references (i) from the 10 most-cited papers collected via Google Scholar search, and (ii) from the prominent review papers (Horowitz *et al.*, 2000a; Crain, 2011; Hou *et al.*, 2011; van Dijk, 2011; Harvey *et al.*, 2016).
 
 TABLE 1. Summary Statistics.
 
@@ -134,9 +134,9 @@ We start our sample period in 1981, which is the year of Banz's (1981) initial s
 
 We report summary statistics of our data set in Table 1. The mean reported estimate of coefficient $\hat{\gamma}_{2t}$ from regression (2) is −0.092, which is consistent with the conventional notion that small stocks tend to outperform large stocks.
 
-Table 2 shows basic data partitions. The estimates that we analyze exhibit significant heterogeneity in terms of the methodology employed, geographical region and time period covered. The mean estimate of the size effect differs depending on the time period and the region. In the table, we only show estimates that use data solely from the time period mentioned on the left: for example, there are 16 estimates that only use data after 2000 and no older data. The size effect is less prominent after 1981, the year in which the first study on this topic was published, which is consistent with the evidence from van Dijk (2011) and Horowitz et al. (2000a). In addition, the size effect is somewhat less pronounced in the USA than in other regions used in the data sample. Consistent with Keim (1983), the size effect is concentrated in the month of January. Finally, estimation techniques that are more advanced than OLS tend to yield a size effect of a smaller magnitude.
+Table 2 shows basic data partitions. The estimates that we analyze exhibit significant heterogeneity in terms of the methodology employed, geographical region and time period covered. The mean estimate of the size effect differs depending on the time period and the region. In the table, we only show estimates that use data solely from the time period mentioned on the left: for example, there are 16 estimates that only use data after 2000 and no older data. The size effect is less prominent after 1981, the year in which the first study on this topic was published, which is consistent with the evidence from van Dijk (2011) and Horowitz *et al.* (2000a). In addition, the size effect is somewhat less pronounced in the USA than in other regions used in the data sample. Consistent with Keim (1983), the size effect is concentrated in the month of January. Finally, estimation techniques that are more advanced than OLS tend to yield a size effect of a smaller magnitude.
 
-To alleviate the influence of extreme observations of the size effect, the data set is winsorized at the 2.5% level, an approach that has become relatively common in meta-analysis (see, for example, Havranek et al., 2017; Hampl et al., 2019). Apart from the size effect estimate, winsorization is also performed with respect to variables such as precision and the reciprocal of the square root of the number of observations.
+To alleviate the influence of extreme observations of the size effect, the data set is winsorized at the 2.5% level, an approach that has become relatively common in meta-analysis (see, for example, Havranek *et al.*, 2017; Hampl *et al.*, 2019). Apart from the size effect estimate, winsorization is also performed with respect to variables such as precision and the reciprocal of the square root of the number of observations.
 
 It should be noted that during the data collection, we have encountered several difficulties caused by an ambiguous or incomplete description of the methodology in the studies. These include four issues:
 
@@ -155,7 +155,7 @@ TABLE 2. Size Effects for Different Subsets of Data.
 | North America | 1109 | −0.079 | 0.475 | −3.60 | 4.45 |
 | Europe | 165 | −0.139 | 0.685 | −3.24 | 4.69 |
 | Other | 458 | −0.106 | 0.411 | −5.94 | 0.92 |
-| *Stock exchange (USA)* | | | | | |
+| *Stock exchange (USA)^{*} | | | | | |
 | NYSE only | 305 | −0.031 | 0.123 | −1.19 | 0.21 |
 | Any | 784 | −0.100 | 0.558 | −3.60 | 4.45 |
 | *Month of returns* | | | | | |
@@ -169,7 +169,7 @@ TABLE 2. Size Effects for Different Subsets of Data.
 | Returns on presorted stock portfolios | 628 | −0.084 | 0.388 | −5.94 | 3.20 |
 | All Estimates | 1746 | −0.09 | 0.48 | −5.9 | 5 |
 
-2. *Different measures of variability.* Different authors use different adjustments of standard errors and t-statistic to account for autocorrelation (Asparouhova et al., 2013), measurement errors (Fletcher, 1997), and heteroskedasticity (Chen et al., 2002), etc.
+2. *Different measures of variability.* Different authors use different adjustments of standard errors and t-statistic to account for autocorrelation (Asparouhova *et al.*, 2013), measurement errors (Fletcher, 1997), and heteroskedasticity (Chen *et al.*, 2002), etc.
 
 3. *Insufficient reporting.* During the data collection, we encountered numerous cases in which certain data set adjustments and regression outputs were not reported in a sufficiently clear manner (e.g. in some cases number of firm-level observations, scale of size variable, precise definitions of risk-free rate, or portfolio sorting techniques could not be retrieved). We did our best to obtain the information required from the authors; we generally avoided dropping studies from the sample unless critical information was missing.
 
@@ -182,7 +182,7 @@ Notes: The solid vertical line displays the sample mean; the dashed vertical lin
 
 ## 4. Results
 
-The funnel plot shown in Figure 1 visualizes the effect of potential selective reporting using the method suggested by Egger et al. (1997). The funnel plot depicts the precision of the estimates of the size coefficient on the y-axis and the point estimates of the size coefficient on the x-axis. In the absence of a selective reporting bias, the graph should take a symmetrical funnel shape, with the most precise estimates concentrated around the underlying mean value of the size effect, whereas less precise estimates would be dispersed around the mean. Using our data on size premium, we find the plot to be asymmetric and the individual point estimates to be concentrated in the left-hand tail. Therefore, it seems that positive estimates are less likely to be reported in published academic studies and if they are reported their precision tends to be fairly low (or equivalently, their standard errors tend to be large). The pattern in Figure 1 is thus consistent with selectivity in reporting the slope coefficient estimates.
+The funnel plot shown in Figure 1 visualizes the effect of potential selective reporting using the method suggested by Egger *et al.* (1997). The funnel plot depicts the precision of the estimates of the size coefficient on the y-axis and the point estimates of the size coefficient on the x-axis. In the absence of a selective reporting bias, the graph should take a symmetrical funnel shape, with the most precise estimates concentrated around the underlying mean value of the size effect, whereas less precise estimates would be dispersed around the mean. Using our data on size premium, we find the plot to be asymmetric and the individual point estimates to be concentrated in the left-hand tail. Therefore, it seems that positive estimates are less likely to be reported in published academic studies and if they are reported their precision tends to be fairly low (or equivalently, their standard errors tend to be large). The pattern in Figure 1 is thus consistent with selectivity in reporting the slope coefficient estimates.
 
 To formally test for publication bias, we run regressions following the specifications described in Section 3. The results from this estimation are reported in Table 3. Column (1) presents the baseline OLS result of regressing the estimated slope coefficients at firm size on their standard errors. The significantly negative $\sigma$ coefficient indicates the presence of the selective reporting bias. The estimated intercept of −0.032 represents the underlying mean size effect corrected for the selective reporting bias. Also consistent with selective reporting, the value of the intercept is much smaller than the unadjusted mean slope coefficient reported in descriptive statistics in Table 1. The baseline result thus provides support for the existence of the negative size effect but at the same time suggests that the effect is less pronounced than commonly argued.
 
@@ -190,9 +190,9 @@ TABLE 3. Estimating the Magnitude of the Selective Reporting Bias.
 
 | | (1) OLS | (2) FE | (3) BE | (4) Precision | (5) Study | (6) IV |
 |---|---|---|---|---|---|---|
-| SE | −0.808*** | −0.897*** | −0.526*** | −1.159*** | −0.554*** | −0.494 |
+| SE | −0.808^{***} | −0.897^{***} | −0.526^{***} | −1.159^{***} | −0.554^{***} | −0.494 |
 | | (0.0862) | (0.127) | (0.102) | (0.0300) | (0.165) | (0.311) |
-| Constant | −0.0315*** | −0.0236** | −0.0387 | −0.000291 | −0.0358*** | −0.0611** |
+| Constant | −0.0315^{***} | −0.0236^{**} | −0.0387 | −0.000291 | −0.0358^{***} | −0.0611^{**} |
 | | (0.00814) | (0.0113) | (0.0245) | (0.000271) | (0.0128) | (0.0277) |
 | Observations | 1746 | 1746 | 1746 | 1746 | 1746 | 1742 |
 Notes: The table shows the results of regression $S_{it} = S_0 + \sigma \cdot SE(S_{it}) + \epsilon_{it}$, where $S_{it}$ is ith estimate of size effect reported in study $j$ and $SE(S_{it})$ is the standard error. Specification (1) is estimated using OLS with standard errors clustered by study and geographic region. Specifications (2) and (3) are panel data regressions with fixed and between effects, respectively. Specifications (4) and (5) are estimated using WLS with precision and reciprocal of number of size effect estimates reported per study as a weight. Specification (6) is the instrumental variables regression with the reciprocal of the square root of number of observations used as an instrument, with standard errors clustered by study and geographic region. Specification (6) is a panel data instrumental variables regression with fixed effects and the reciprocal of the square root of the number of observations used as an instrument. Standard errors are reported in parentheses. *, **, and *** denote significance at the 10%, 5%, and 1% levels.
@@ -203,19 +203,19 @@ The last column (6) of Table 3 reports the results of instrumental variable regr
 
 Next, to investigate the pattern of publication bias, we follow Havranek and Irsova (2012), among others, and interact the reported standard error with the recursive impact factor of the journal where the study is published and with the year of its publication. We present the results based on the OLS and the FE estimation Table 4.^{4} The findings regarding the effect of journal quality on the selective reporting bias are inconclusive, since the interaction term of the standard error and the impact factor has a negative sign in the OLS regression and a positive sign in the fixed effects regression; in both specifications, the coefficient is either insignificant or (in one case) only mildly significant. This suggests that in our data set, journal quality is not correlated with the extent of publication bias.
 
-In contrast, the interaction term of the standard error with the year of publication is always positive and highly significant, suggesting that selective reporting is less pronounced in more recent studies. This result may be due to the use of more refined and precise econometric techniques or due to a growing acceptance of positive or nonsignificant estimates following the alleged "disappearance" of the size effect in the U.S. data after the evidence on was first published in the 1980s (Horowitz et al., 2000a).
+In contrast, the interaction term of the standard error with the year of publication is always positive and highly significant, suggesting that selective reporting is less pronounced in more recent studies. This result may be due to the use of more refined and precise econometric techniques or due to a growing acceptance of positive or nonsignificant estimates following the alleged "disappearance" of the size effect in the U.S. data after the evidence on was first published in the 1980s (Horowitz *et al.*, 2000a).
 
 TABLE 4. Estimating the Mediating Factors of Publication Bias.
 
 | | (1) OLS | (2) OLS | (3) OLS | (4) FE | (5) FE | (6) FE |
 |---|---|---|---|---|---|---|
-| SE | −0.704*** | −1.294*** | −1.288*** | −1.096*** | −1.272*** | −1.433*** |
+| SE | −0.704^{***} | −1.294^{***} | −1.288^{***} | −1.096^{***} | −1.272^{***} | −1.433^{***} |
 | | (0.175) | (0.156) | (0.128) | (0.169) | (0.178) | (0.202) |
-| SE*Impact | −0.0686 | | −0.185** | 0.247 | | 0.234 |
+| SE*Impact | −0.0686 | | −0.185^{**} | 0.247 | | 0.234 |
 | | (0.0603) | | (0.0766) | (0.170) | | (0.159) |
-| SE*Pub. Year | | 0.000164*** | 0.000239*** | | 0.000135*** | 0.000124*** |
+| SE*Pub. Year | | 0.000164^{***} | 0.000239^{***} | | 0.000135^{***} | 0.000124^{***} |
 | | | (0.0000274) | (0.0000460) | | (0.0000393) | (0.0000449) |
-| Constant | −0.0351*** | −0.0241*** | −0.0247*** | −0.0305** | −0.0197* | −0.0266* |
+| Constant | −0.0351^{***} | −0.0241^{***} | −0.0247^{***} | −0.0305^{**} | −0.0197^{*} | −0.0266^{*} |
 | | (0.00771) | (0.00857) | (0.00647) | (0.0153) | (0.0108) | (0.0141) |
 | Observations | 1663 | 1746 | 1663 | 1663 | 1746 | 1663 |
 Notes: The table shows the results of regression $S_{it} = S_0 + \sigma \cdot SE(S_{it}) + \gamma \cdot SE(S_{it}) \cdot X_t + \epsilon_{it}$, where $S_{it}$ is ith estimate of size effect reported in study $t$, $SE(S_{it})$ is the standard error, and $X_t$ is either an impact factor of the outlet, in which study $t$ was published, or the year of publication of study $t$. Specifications (1)–(3) are estimated using OLS with standard errors clustered by study and geographic region. Specifications (4)–(6) are panel data regressions with fixed effects. Standard errors are reported in parentheses. *, **, and *** denote significance at the 10%, 5%, and 1% levels.

@@ -1272,6 +1272,16 @@
     },
     {
      "level": 2,
+     "title": "ACKNOWLEDGMENT",
+     "anchor": "sec-acknowledgment"
+    },
+    {
+     "level": 2,
+     "title": "AUTHOR CONTRIBUTIONS",
+     "anchor": "sec-author-contributions"
+    },
+    {
+     "level": 2,
      "title": "COMPETING INTEREST STATEMENT",
      "anchor": "sec-competing-interest-statement"
     },
