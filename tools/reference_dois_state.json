@@ -1194,12 +1194,6 @@
 "2009"
 ]
 },
-"07105d7c8b5d606b": {
-"doi": null,
-"project": "alphas",
-"text": "Gao, C., Haight, T.D., Yin, C., Zhang, C., 2022. The Performance Life Cycle of Hedge",
-"why": "check 1 failed (overlap 0.60, year False, author True)"
-},
 "0710f1d542eed359": {
 "doi": "10.1111/j.1467-6419.1989.tb00064.x",
 "overlap": 1.0,
@@ -3908,17 +3902,6 @@
 "text": "Doucouliagos, H., Paldam, M., Stanley, T., 2018. Skating on thin evidence: implications for public policy. Eur. J. Polit. Econ. 54 (C), 16\u201325.",
 "why": "check 2 failed (the runner-up is equally plausible)"
 },
-"1777e5fa6adaaa94": {
-"doi": "10.2139/ssrn.1163774",
-"overlap": 1.0,
-"project": "euro",
-"text": "(NBER Working Paper 12673). Cambridge, MA: National Bureau of Economic Research. Baldwin, R., di Nino, V., Fontage\u0301, L., de Santis, R. A., & Taglioni, D. (2008). Study on the impact of the euro on trade and foreign direct investment. (Economic Papers 321). Brussels: Office for Infrastructures and Logistics. Baldwin, R., & Taglioni, D. (2004). Positive OCA criteria: Microfoundations for the Rose effect.",
-"title": "Study on the Impact of the Euro on Trade and Foreign Direct Investment",
-"why": "all three checks passed",
-"years": [
-"2008"
-]
-},
 "1782089d4703d143": {
 "doi": "10.1111/ecca.12501",
 "overlap": 1.0,
@@ -4060,6 +4043,12 @@
 "project": "dst",
 "text": "Crowley, S., J. FitzGerald, and L. Malaguzzi Valeri (2014). \u201cChanging Time: Possible Effects on Peak Electricity Generation.\u201d Papers WP486, Economic and Social Research Institute (ESRI).",
 "why": "check 1 failed (overlap 0.00, year False, author False)"
+},
+"189a41e7e451f5b6": {
+"doi": null,
+"project": "euro",
+"text": "Bomberger, W. (2002). Decolonization and estimates of the time series effect of currency unions. Technical report, University of Florida.",
+"why": "check 1 failed (overlap 0.42, year False, author False)"
 },
 "18b0aaf1e8082474": {
 "doi": "10.3386/w7151",
@@ -4430,15 +4419,15 @@
 "2015"
 ]
 },
-"1af2feba1933e996": {
-"doi": "10.1002/9780470743386",
+"1ae3a4da5cee03c8": {
+"doi": "10.1111/j.1468-5965.2006.00612.x",
 "overlap": 1.0,
 "project": "euro",
-"text": "Technical report, University of Florida. Borenstein, M., Rothstein, H. R., Hedges, L. V., & Higgins, J. P. (2009). Introduction to meta-analysis.",
-"title": "Introduction to Meta\u2010Analysis",
+"text": "Aristotelous, K. (2006). Are there differences across countries regarding the effect of currency unions on trade? Evidence from EMU. Journal of Common Market Studies, 44(1), 17\u201327.",
+"title": "Are There Differences Across Countries Regarding the Effect of Currency Unions on Trade? Evidence from EMU",
 "why": "all three checks passed",
 "years": [
-"2009"
+"2006"
 ]
 },
 "1b03d1f2b0513175": {
@@ -7877,6 +7866,17 @@
 "2010"
 ]
 },
+"303e43143e0a212a": {
+"doi": "10.3386/w12516",
+"overlap": 1.0,
+"project": "euro",
+"text": "Baldwin, R., & Taglioni, D. (2006). Gravity for dummies and dummies for gravity equations. (NBER Working Paper 12516). Cambridge, MA: National Bureau of Economic Research.",
+"title": "Gravity for Dummies and Dummies for Gravity Equations",
+"why": "all three checks passed",
+"years": [
+"2006"
+]
+},
 "30518037992f7292": {
 "doi": "10.1007/bf01706288",
 "overlap": 1.0,
@@ -10048,12 +10048,6 @@
 "project": "class",
 "text": "Elliott, G., N. Kudrin, & K. Wuthrich (2024): \u201cThe Power of Tests for Detecting p-Hacking.\u201d working paper, University of California, San Diego.",
 "why": "check 1 failed (overlap 0.89, year False, author True)"
-},
-"3db3cf23c56a1267": {
-"doi": null,
-"project": "frisch",
-"text": "Irsova, Z., Doucouliagos, H., Havranek, T., Stanley, T., 2024. Meta-analysis of social science research: a practitioner\u2019s guide. Journal of Economic Surveys (forthcom- ing).",
-"why": "check 1 failed (overlap 1.00, year False, author True)"
 },
 "3dbd1131f72e25bd": {
 "doi": "10.1001/jama.294.2.218",
@@ -12300,6 +12294,17 @@
 "2020"
 ]
 },
+"4d87c07ebf14582b": {
+"doi": "10.1111/j.0950-0804.2005.00253.x",
+"overlap": 1.0,
+"project": "euro",
+"text": "Abreu, M., de Groot, H. L. F., & Florax, R. J. G. M. (2005). A meta-analysis of \u03b2-convergence: The legendary 2%. Journal of Economic Surveys, 19(3), 389\u2013420.",
+"title": "A Meta-Analysis of \u03b2-Convergence: the Legendary 2%",
+"why": "all three checks passed",
+"years": [
+"2005"
+]
+},
 "4d89d751791bd177": {
 "doi": "10.1016/j.econlet.2014.06.014",
 "overlap": 1.0,
@@ -12522,17 +12527,6 @@
 "why": "all three checks passed",
 "years": [
 "2005"
-]
-},
-"4ea8ff505b064197": {
-"doi": "10.1016/j.euroecorev.2017.03.009",
-"overlap": 1.0,
-"project": "esg",
-"text": "T. Havr\u00e1nek, M. Rusnak, and A. Sokolov\u00e1. Habit formation in consumption: A meta-analysis. European Economic Review, 95:142\u2013167, 2017.",
-"title": "Habit formation in consumption: A meta-analysis",
-"why": "all three checks passed",
-"years": [
-"2017"
 ]
 },
 "4eac56bc7a4c194d": {
@@ -14836,6 +14830,17 @@
 "project": "bma",
 "text": "Rusnak, M., Havranek, T., & Horvath, R. (in press). How to solve the price puzzle? A meta-analysis. Journal of Money, Credit and Banking.",
 "why": "check 1 failed (overlap 1.00, year False, author True)"
+},
+"5cd0021c0e4468e4": {
+"doi": "10.1016/s0927-5371(99)00041-x",
+"overlap": 1.0,
+"project": "euro",
+"text": "Ashenfelter, O., Harmon, C., & Oosterbeek, H. (1999). A review of estimates of the schooling/earnings relationship, with tests for publication bias. Labour Economics, 6(4), 453\u2013470.",
+"title": "A review of estimates of the schooling/earnings relationship, with tests for publication bias",
+"why": "all three checks passed",
+"years": [
+"1999"
+]
 },
 "5cd208a85b997df9": {
 "doi": "10.1257/app.20170128",
@@ -18506,12 +18511,6 @@
 "2015"
 ]
 },
-"74026dbcd788e378": {
-"doi": null,
-"project": "euro",
-"text": "Abreu, M., de Groot, H. L. F., & Florax, R. J. G. M. (2005). A meta-analysis of b-convergence: The legendary 2%. Journal of Economic Surveys, 19(3), 389\u2013420. Adam, C., & Cobham, D. (2007). Exchange rate regimes and trade. Manchester School, 75(1), 44\u201363. Alesina, A., Barro, R. J., & Tenreyro, S. (2003). Optimal currency areas. NBER Macroeconomics Annual, 17, 301\u2013345. Aristotelous, K. (2006). Are there differences across countries regarding the effect of currency unions on trade? Evidence from EMU. Journal of Common Market Studies, 44(1), 17\u201327. Ashenfelter, O., Harmon, C., & Oosterbeek, H. (1999). A review of estimates of the schooling/earnings relationship, with tests for publication bias. Labour Economics, 6(4), 453\u2013470. Baldwin, R. (2006). The euro\u2019s trade effect. (Working Paper Series 594). Frankfurt a.M.: European Central Bank. Baldwin, R., & di Nino, V. (2006). Euros and zeros: The common currency effect on trade in new goods.",
-"why": "check 1 failed (overlap 1.00, year False, author True)"
-},
 "740ab40e5d3439de": {
 "doi": "10.1016/j.euroecorev.2013.09.005",
 "overlap": 1.0,
@@ -19033,6 +19032,12 @@
 "years": [
 "2012"
 ]
+},
+"776f5bfa99e25e26": {
+"doi": null,
+"project": "euro",
+"text": "Baldwin, R., & Taglioni, D. (2004). Positive OCA criteria: Microfoundations for the Rose effect. Technical report, Graduate Institute of International Studies, Geneva.",
+"why": "check 1 failed (overlap 0.88, year False, author True)"
 },
 "77964f5cb50f54f0": {
 "doi": "10.1002/jae.1057",
@@ -19927,6 +19932,17 @@
 "why": "all three checks passed",
 "years": [
 "2012"
+]
+},
+"7d018aa7a04216e8": {
+"doi": "10.1111/j.1467-9957.2007.01037.x",
+"overlap": 1.0,
+"project": "euro",
+"text": "Adam, C., & Cobham, D. (2007). Exchange rate regimes and trade. Manchester School, 75(1), 44\u201363.",
+"title": "EXCHANGE RATE REGIMES AND TRADE",
+"why": "all three checks passed",
+"years": [
+"2007"
 ]
 },
 "7d036aa89801a6c0": {
@@ -21618,12 +21634,6 @@
 "years": [
 "2009"
 ]
-},
-"8922244d888788d3": {
-"doi": null,
-"project": "esg",
-"text": "D. \u017digraiova and T. Havr\u00e1nek. Bank competition and financial stability: Much ado about nothing? Journal of Economic Surveys, 30(5):944\u2013981, 2016.",
-"why": "check 1 failed (overlap 1.00, year True, author False)"
 },
 "89375800e6df3ff3": {
 "doi": "10.1111/j.1467-6419.2011.00706.x",
@@ -24091,6 +24101,17 @@
 "1981"
 ]
 },
+"989b00af7d73ce66": {
+"doi": "10.3386/w12673",
+"overlap": 1.0,
+"project": "euro",
+"text": "Baldwin, R., & di Nino, V. (2006). Euros and zeros: The common currency effect on trade in new goods. (NBER Working Paper 12673). Cambridge, MA: National Bureau of Economic Research.",
+"title": "Euros and Zeros: The Common Currency Effect on Trade in New Goods",
+"why": "all three checks passed",
+"years": [
+"2006"
+]
+},
 "98b0ece2d42f8fe2": {
 "doi": "10.1016/j.jinteco.2009.06.007",
 "overlap": 1.0,
@@ -24469,6 +24490,17 @@
 "why": "all three checks passed",
 "years": [
 "1966"
+]
+},
+"9afc486fe62e9faa": {
+"doi": "10.1111/1468-0327.00116_1",
+"overlap": 1.0,
+"project": "euro",
+"text": "Barr, D., Breedon, F., & Miles, D. (2003). Life on the outside: Economic conditions and prospects outside Euroland. Economic Policy, 18(37), 573\u2013613.",
+"title": "Life on the outside: economic conditions and prospects outside euroland",
+"why": "all three checks passed",
+"years": [
+"2003"
 ]
 },
 "9afec828584262ad": {
@@ -24901,6 +24933,17 @@
 "why": "all three checks passed",
 "years": [
 "1949"
+]
+},
+"9d8e8fcd835f4345": {
+"doi": "10.2139/ssrn.1163774",
+"overlap": 1.0,
+"project": "euro",
+"text": "Baldwin, R., di Nino, V., Fontag\u00e9, L., de Santis, R. A., & Taglioni, D. (2008). Study on the impact of the euro on trade and foreign direct investment. (Economic Papers 321). Brussels: Office for Infrastructures and Logistics.",
+"title": "Study on the Impact of the Euro on Trade and Foreign Direct Investment",
+"why": "all three checks passed",
+"years": [
+"2008"
 ]
 },
 "9d90d56505a222bd": {
@@ -26706,6 +26749,17 @@
 "2009"
 ]
 },
+"a92259942c588b9f": {
+"doi": "10.3386/w12188",
+"overlap": 1.0,
+"project": "euro",
+"text": "Baxter, M., & Kouparitsas, M. A. (2006). What determines bilateral trade flows? (NBER Working Paper 12188). Cambridge, MA: National Bureau of Economic Research.",
+"title": "What Determines Bilateral Trade Flows?",
+"why": "all three checks passed",
+"years": [
+"2006"
+]
+},
 "a92d307eb768315f": {
 "doi": "10.1016/j.jfineco.2006.09.002",
 "overlap": 1.0,
@@ -28030,6 +28084,18 @@
 "2017"
 ]
 },
+"b319df8e00a9a1ce": {
+"doi": "10.1111/j.1465-7295.2006.00001.x",
+"overlap": 1.0,
+"project": "euro",
+"text": "Barro, R., & Tenreyro, S. (2007). Economic effects of currency unions. Economic Inquiry, 45(1), 1\u201323.",
+"title": "ECONOMIC EFFECTS OF CURRENCY UNIONS",
+"why": "all three checks passed",
+"years": [
+"2006",
+"2007"
+]
+},
 "b31fca0306a09094": {
 "doi": null,
 "project": "excess_sensitivity",
@@ -28356,12 +28422,6 @@
 "years": [
 "2013"
 ]
-},
-"b55fd78ec1e22870": {
-"doi": null,
-"project": "euro",
-"text": "Journal of International Money and Finance, 27(8), 1244\u20131260. Bomberger, W. (2002). Decolonization and estimates of the time series effect of currency unions.",
-"why": "check 1 failed (overlap 0.30, year False, author True)"
 },
 "b565df7225798ce6": {
 "doi": "10.1016/j.jcorpfin.2020.101665",
@@ -29523,6 +29583,12 @@
 "text": "Gupta, R., M. Jurgilas, S.M. Miller, and D. Van Wyk. 2012. Financial market liberalization, monetary policy, and housing sector dynamics. International Business & Economics Research Journal (IBER) 11 (1): 69\u201382.",
 "why": "check 1 failed (overlap 1.00, year False, author True)"
 },
+"bcc148dcf78d2956": {
+"doi": null,
+"project": "euro",
+"text": "Alesina, A., Barro, R. J., & Tenreyro, S. (2003). Optimal currency areas. NBER Macroeconomics Annual, 17, 301\u2013345.",
+"why": "check 1 failed (overlap 1.00, year False, author True)"
+},
 "bcc5b2490f478765": {
 "doi": "10.1086/729443",
 "overlap": 1.0,
@@ -29618,6 +29684,17 @@
 "project": "guidelines",
 "text": "Brown, A. L., Imai, T., Vieider, F. M., & Camerer, C. F. (2023). Meta-Analysis of empirical estimates of loss aversion. Journal of Economic Literature, forthcoming.",
 "why": "check 1 failed (overlap 1.00, year False, author True)"
+},
+"bd3c2f3772c43a94": {
+"doi": "10.1016/j.jimonfin.2008.07.005",
+"overlap": 1.0,
+"project": "euro",
+"text": "Berger, H., & Nitsch, V. (2008). Zooming out: The trade effect of the euro in historical perspective. Journal of International Money and Finance, 27(8), 1244\u20131260.",
+"title": "Zooming out: The trade effect of the euro in historical perspective",
+"why": "all three checks passed",
+"years": [
+"2008"
+]
 },
 "bd413da2b0d88d41": {
 "doi": "10.1111/0022-1082.00084",
@@ -29902,17 +29979,6 @@
 "why": "all three checks passed",
 "years": [
 "2017"
-]
-},
-"beddb10814e42fd4": {
-"doi": "10.1002/jrsm.1352",
-"overlap": 1.0,
-"project": "esg",
-"text": "P. R. Bom and H. Rachinger. A kinked meta-regression model for publication bias correction. Research Synthesis Methods, 10(4):497\u2013514, 2019.",
-"title": "A kinked meta\u2010regression model for publication bias correction",
-"why": "all three checks passed",
-"years": [
-"2019"
 ]
 },
 "bee1f59f79a077ba": {
@@ -32963,6 +33029,12 @@
 "years": [
 "1997"
 ]
+},
+"d28da168697d98f1": {
+"doi": null,
+"project": "euro",
+"text": "Baldwin, R. (2006). The euro's trade effect. (Working Paper Series 594). Frankfurt a.M.: European Central Bank.",
+"why": "check 1 failed (overlap 0.13, year False, author False)"
 },
 "d2925e2d17f92701": {
 "doi": "10.1086/250059",
@@ -38206,17 +38278,6 @@
 "2001"
 ]
 },
-"f37d29eec5b55689": {
-"doi": "10.1111/1468-0327.00116_1",
-"overlap": 1.0,
-"project": "euro",
-"text": "Technical report, Graduate Institute of International Studies, Geneva. Baldwin, R., & Taglioni, D. (2006). Gravity for dummies and dummies for gravity equations. (NBER Working Paper 12516). Cambridge, MA: National Bureau of Economic Research. Barr, D., Breedon, F., & Miles, D. (2003). Life on the outside: Economic conditions and prospects outside Euroland. Economic Policy, 18(37), 573\u2013613. Barro, R., & Tenreyro, S. (2007). Economic effects of currency unions. Economic Inquiry, 45(1), 1\u201323. Baxter, M., & Kouparitsas, M. A. (2006). What determines bilateral trade flows? (NBER Working Paper 12188). Cambridge, MA: National Bureau of Economic Research. Berger, H., & Nitsch, V. (2008). Zooming out: The trade effect of the euro in historical perspective.",
-"title": "Life on the outside: economic conditions and prospects outside euroland",
-"why": "all three checks passed",
-"years": [
-"2003"
-]
-},
 "f3bd9b6f3d386ca9": {
 "doi": "10.1007/s10887-006-9000-0",
 "overlap": 1.0,
@@ -38254,18 +38315,6 @@
 "why": "all three checks passed",
 "years": [
 "2007"
-]
-},
-"f3fa54f3b041fc66": {
-"doi": "10.1111/j.1467-6419.2011.00706.x",
-"overlap": 1.0,
-"project": "esg",
-"text": "C. Doucouliagos and T. D. Stanley. Are all economic facts greatly exaggerated? Theory competition and selectivity. Journal of Economic Surveys, 27(2):316\u2013339, 2013.",
-"title": "ARE ALL ECONOMIC FACTS GREATLY EXAGGERATED? THEORY COMPETITION AND SELECTIVITY",
-"why": "all three checks passed",
-"years": [
-"2011",
-"2013"
 ]
 },
 "f403647dfd3e84f4": {
@@ -39508,18 +39557,6 @@
 "text": "Stanley, T., Jarrell, S.B., Doucouliagos, C., 2010. Could it be better to discard 90% statistical paradox. American Statistician 64 (1), 70\u201377.",
 "why": "check 1 failed (overlap 0.69, year True, author True)"
 },
-"fb45383808068958": {
-"doi": "10.1111/joes.12595",
-"overlap": 1.0,
-"project": "esg",
-"text": "Z. Ir\u0161ov\u00e1, H. Doucouliagos, T. Havr\u00e1nek, and T. Stanley. Meta-analysis of social science research: A practitioner's guide. Journal of Economic Surveys, 38(5):1547\u20131566, 2024.",
-"title": "Meta\u2010analysis of social science research: A practitioner's guide",
-"why": "all three checks passed",
-"years": [
-"2023",
-"2024"
-]
-},
 "fb5963823f6422e6": {
 "doi": "10.3102/1076998606298043",
 "overlap": 1.0,
@@ -40138,17 +40175,6 @@
 "why": "all three checks passed",
 "years": [
 "2020"
-]
-},
-"ff3a72def27741d9": {
-"doi": "10.1111/corg.12106",
-"overlap": 1.0,
-"project": "esg",
-"text": "R. B. Adams, J. De Haan, S. Terjesen, and H. Van Ees. Board diversity: Moving the field forward. Corporate Governance-An International Review, 23(2):77\u201382, 2015.",
-"title": "Board Diversity: Moving the Field Forward",
-"why": "all three checks passed",
-"years": [
-"2015"
 ]
 },
 "ff3b31ba1b9fd728": {
