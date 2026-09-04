@@ -514,6 +514,467 @@
    "width": 641
   }
  },
+ "maive_supplement": {
+  "S1": {
+   "box": [
+    0.1252,
+    0.2005,
+    0.9015,
+    0.7807
+   ],
+   "colours": 64,
+   "dpi": 200,
+   "height": 1331,
+   "page": 12,
+   "pdf": "maive/supplement.pdf",
+   "pdf_sha256": "1a3ba22794300885da01dda4a43c45ac59bcc771d96dcd6bb426b9f5d24112dd",
+   "renderer": "mupdf",
+   "sha256": "7e3602e7c26a4688615d4cb5032c4bb40df592f5cc42269c491e670e7401f17f",
+   "width": 1260
+  },
+  "S10": {
+   "box": [
+    0.312,
+    0.1189,
+    0.6699,
+    0.8076
+   ],
+   "colours": 64,
+   "dpi": 200,
+   "height": 1587,
+   "page": 37,
+   "pdf": "maive/supplement.pdf",
+   "pdf_sha256": "1a3ba22794300885da01dda4a43c45ac59bcc771d96dcd6bb426b9f5d24112dd",
+   "renderer": "mupdf",
+   "sha256": "fac681b87702bf8f8a95246e03ec950fb7e53e5108959a30468e58f77f45f8f2",
+   "width": 568
+  },
+  "S11": {
+   "box": [
+    0.13,
+    0.1808,
+    0.9027,
+    0.8649
+   ],
+   "colours": 64,
+   "dpi": 200,
+   "height": 1576,
+   "page": 39,
+   "pdf": "maive/supplement.pdf",
+   "pdf_sha256": "1a3ba22794300885da01dda4a43c45ac59bcc771d96dcd6bb426b9f5d24112dd",
+   "renderer": "mupdf",
+   "sha256": "a7e38b03cce26279f7b602021597e69d886682e27fff9aac1d2d8524268b4d9e",
+   "width": 1254
+  },
+  "S12": {
+   "box": [
+    0.1324,
+    0.1569,
+    0.9027,
+    0.8405
+   ],
+   "colours": 64,
+   "dpi": 200,
+   "height": 1575,
+   "page": 40,
+   "pdf": "maive/supplement.pdf",
+   "pdf_sha256": "1a3ba22794300885da01dda4a43c45ac59bcc771d96dcd6bb426b9f5d24112dd",
+   "renderer": "mupdf",
+   "sha256": "8c87fc1c0a84f13e90548bdeefb6bd972a2ace3620e815a69837f71295fe00c9",
+   "width": 1250
+  },
+  "S13": {
+   "box": [
+    0.1324,
+    0.1569,
+    0.9027,
+    0.8405
+   ],
+   "colours": 64,
+   "dpi": 200,
+   "height": 1575,
+   "page": 41,
+   "pdf": "maive/supplement.pdf",
+   "pdf_sha256": "1a3ba22794300885da01dda4a43c45ac59bcc771d96dcd6bb426b9f5d24112dd",
+   "renderer": "mupdf",
+   "sha256": "9b2b2219a9106034250bab9c78e6c6adabf5b32113a79434e5d6b8eb0186bd0f",
+   "width": 1250
+  },
+  "S14": {
+   "box": [
+    0.13,
+    0.1569,
+    0.9021,
+    0.8405
+   ],
+   "colours": 64,
+   "dpi": 200,
+   "height": 1575,
+   "page": 42,
+   "pdf": "maive/supplement.pdf",
+   "pdf_sha256": "1a3ba22794300885da01dda4a43c45ac59bcc771d96dcd6bb426b9f5d24112dd",
+   "renderer": "mupdf",
+   "sha256": "300b58307cac62e0b214639314d4d4067b5d5826d75fd6b6272b50ce8067b494",
+   "width": 1253
+  },
+  "S15": {
+   "box": [
+    0.1324,
+    0.1569,
+    0.9027,
+    0.8405
+   ],
+   "colours": 64,
+   "dpi": 200,
+   "height": 1575,
+   "page": 43,
+   "pdf": "maive/supplement.pdf",
+   "pdf_sha256": "1a3ba22794300885da01dda4a43c45ac59bcc771d96dcd6bb426b9f5d24112dd",
+   "renderer": "mupdf",
+   "sha256": "2cca4ff43aa3b3f5521822c1ed7fe3785e1344f7b9d41529309e03409848e1d1",
+   "width": 1250
+  },
+  "S16": {
+   "box": [
+    0.1324,
+    0.1569,
+    0.9027,
+    0.8405
+   ],
+   "colours": 64,
+   "dpi": 200,
+   "height": 1575,
+   "page": 44,
+   "pdf": "maive/supplement.pdf",
+   "pdf_sha256": "1a3ba22794300885da01dda4a43c45ac59bcc771d96dcd6bb426b9f5d24112dd",
+   "renderer": "mupdf",
+   "sha256": "23c63a41462357eeb6493fefb99f9d8b11ac6381cd78eff1fbc5f10245156340",
+   "width": 1250
+  },
+  "S17": {
+   "box": [
+    0.1324,
+    0.1808,
+    0.9027,
+    0.8649
+   ],
+   "colours": 64,
+   "dpi": 200,
+   "height": 1576,
+   "page": 45,
+   "pdf": "maive/supplement.pdf",
+   "pdf_sha256": "1a3ba22794300885da01dda4a43c45ac59bcc771d96dcd6bb426b9f5d24112dd",
+   "renderer": "mupdf",
+   "sha256": "9c76e9cdba581bb984fad565a1b1ad91f4a93ee8c88e7927f0cab8a2883cbfff",
+   "width": 1250
+  },
+  "S18": {
+   "box": [
+    0.1324,
+    0.1569,
+    0.9021,
+    0.8405
+   ],
+   "colours": 64,
+   "dpi": 200,
+   "height": 1575,
+   "page": 46,
+   "pdf": "maive/supplement.pdf",
+   "pdf_sha256": "1a3ba22794300885da01dda4a43c45ac59bcc771d96dcd6bb426b9f5d24112dd",
+   "renderer": "mupdf",
+   "sha256": "4d452bf2b2e1e23de4146019bdd0240f1ff1a6099af284270aa7dafdff02b055",
+   "width": 1249
+  },
+  "S19": {
+   "box": [
+    0.1324,
+    0.1569,
+    0.9027,
+    0.8405
+   ],
+   "colours": 64,
+   "dpi": 200,
+   "height": 1575,
+   "page": 47,
+   "pdf": "maive/supplement.pdf",
+   "pdf_sha256": "1a3ba22794300885da01dda4a43c45ac59bcc771d96dcd6bb426b9f5d24112dd",
+   "renderer": "mupdf",
+   "sha256": "1150d7c1afcdc30e95725c0d223ab55516306d03e66a0dbe908f69274239c2e4",
+   "width": 1250
+  },
+  "S2": {
+   "box": [
+    0.133,
+    0.2005,
+    0.9015,
+    0.7807
+   ],
+   "colours": 64,
+   "dpi": 200,
+   "height": 1331,
+   "page": 13,
+   "pdf": "maive/supplement.pdf",
+   "pdf_sha256": "1a3ba22794300885da01dda4a43c45ac59bcc771d96dcd6bb426b9f5d24112dd",
+   "renderer": "mupdf",
+   "sha256": "2e259c736a3960a225debeafe2285d73edf0fa1ec7f197cf91b90e2ee7f90ec4",
+   "width": 1248
+  },
+  "S20": {
+   "box": [
+    0.13,
+    0.1569,
+    0.9027,
+    0.8405
+   ],
+   "colours": 64,
+   "dpi": 200,
+   "height": 1575,
+   "page": 48,
+   "pdf": "maive/supplement.pdf",
+   "pdf_sha256": "1a3ba22794300885da01dda4a43c45ac59bcc771d96dcd6bb426b9f5d24112dd",
+   "renderer": "mupdf",
+   "sha256": "7b38c2b05f8de31b5bac2f477105f210fb6b8e083f82a5b1822138f469058ada",
+   "width": 1254
+  },
+  "S21": {
+   "box": [
+    0.1324,
+    0.1569,
+    0.9021,
+    0.8405
+   ],
+   "colours": 64,
+   "dpi": 200,
+   "height": 1575,
+   "page": 49,
+   "pdf": "maive/supplement.pdf",
+   "pdf_sha256": "1a3ba22794300885da01dda4a43c45ac59bcc771d96dcd6bb426b9f5d24112dd",
+   "renderer": "mupdf",
+   "sha256": "247c5769c126698811b990894c82b94b2a273ad275ddf9cf61453bd7c2841c5f",
+   "width": 1249
+  },
+  "S22": {
+   "box": [
+    0.1324,
+    0.1569,
+    0.9027,
+    0.8405
+   ],
+   "colours": 64,
+   "dpi": 200,
+   "height": 1575,
+   "page": 50,
+   "pdf": "maive/supplement.pdf",
+   "pdf_sha256": "1a3ba22794300885da01dda4a43c45ac59bcc771d96dcd6bb426b9f5d24112dd",
+   "renderer": "mupdf",
+   "sha256": "7e0c986e6aeec1132c982502a3fd23a69fc5da24cd007cde74ab7e820fa11e8b",
+   "width": 1250
+  },
+  "S23": {
+   "box": [
+    0.1252,
+    0.1646,
+    0.9015,
+    0.7443
+   ],
+   "colours": 64,
+   "dpi": 200,
+   "height": 1332,
+   "page": 51,
+   "pdf": "maive/supplement.pdf",
+   "pdf_sha256": "1a3ba22794300885da01dda4a43c45ac59bcc771d96dcd6bb426b9f5d24112dd",
+   "renderer": "mupdf",
+   "sha256": "baadebcdc83ae902bec641a3583914a871589ba18445a36387a5f4c0082914b7",
+   "width": 1260
+  },
+  "S24": {
+   "box": [
+    0.1288,
+    0.2005,
+    0.9015,
+    0.7807
+   ],
+   "colours": 64,
+   "dpi": 200,
+   "height": 1331,
+   "page": 52,
+   "pdf": "maive/supplement.pdf",
+   "pdf_sha256": "1a3ba22794300885da01dda4a43c45ac59bcc771d96dcd6bb426b9f5d24112dd",
+   "renderer": "mupdf",
+   "sha256": "bbb9997781f4573fca5e7e8233303ec09cee908927b57f1d8a4d2ed467e0db78",
+   "width": 1255
+  },
+  "S25": {
+   "box": [
+    0.133,
+    0.2005,
+    0.9015,
+    0.7807
+   ],
+   "colours": 64,
+   "dpi": 200,
+   "height": 1331,
+   "page": 53,
+   "pdf": "maive/supplement.pdf",
+   "pdf_sha256": "1a3ba22794300885da01dda4a43c45ac59bcc771d96dcd6bb426b9f5d24112dd",
+   "renderer": "mupdf",
+   "sha256": "51cac156c4f6b3a9839a1b1b7697cd4a8c8ed6e630ea95d0b826f89e7c0f5ed2",
+   "width": 1248
+  },
+  "S26": {
+   "box": [
+    0.1239,
+    0.1655,
+    0.9015,
+    0.7452
+   ],
+   "colours": 64,
+   "dpi": 200,
+   "height": 1332,
+   "page": 54,
+   "pdf": "maive/supplement.pdf",
+   "pdf_sha256": "1a3ba22794300885da01dda4a43c45ac59bcc771d96dcd6bb426b9f5d24112dd",
+   "renderer": "mupdf",
+   "sha256": "1cb7ebf329ee7002e321aa32fb0f4465f84e0bc426dad45b3a45dc457e01af81",
+   "width": 1262
+  },
+  "S27": {
+   "box": [
+    0.133,
+    0.2005,
+    0.9015,
+    0.7807
+   ],
+   "colours": 64,
+   "dpi": 200,
+   "height": 1331,
+   "page": 55,
+   "pdf": "maive/supplement.pdf",
+   "pdf_sha256": "1a3ba22794300885da01dda4a43c45ac59bcc771d96dcd6bb426b9f5d24112dd",
+   "renderer": "mupdf",
+   "sha256": "5a9b8105208b96800226eaec9317142ff83d58d02f3738db894897f00e4fdc68",
+   "width": 1248
+  },
+  "S28": {
+   "box": [
+    0.133,
+    0.1484,
+    0.9027,
+    0.8324
+   ],
+   "colours": 64,
+   "dpi": 200,
+   "height": 1575,
+   "page": 56,
+   "pdf": "maive/supplement.pdf",
+   "pdf_sha256": "1a3ba22794300885da01dda4a43c45ac59bcc771d96dcd6bb426b9f5d24112dd",
+   "renderer": "mupdf",
+   "sha256": "50662fbee7417938942abb1eb6dbbf8c9843c6f94338fbb2751176ac5dfd0912",
+   "width": 1250
+  },
+  "S29": {
+   "box": [
+    0.133,
+    0.1484,
+    0.9027,
+    0.8324
+   ],
+   "colours": 64,
+   "dpi": 200,
+   "height": 1575,
+   "page": 57,
+   "pdf": "maive/supplement.pdf",
+   "pdf_sha256": "1a3ba22794300885da01dda4a43c45ac59bcc771d96dcd6bb426b9f5d24112dd",
+   "renderer": "mupdf",
+   "sha256": "2d250f62cc542225337300a24eadf10d6ed5aa477bdce42d2a0294e74dcebbc3",
+   "width": 1250
+  },
+  "S3": {
+   "box": [
+    0.13,
+    0.2005,
+    0.9015,
+    0.7807
+   ],
+   "colours": 64,
+   "dpi": 200,
+   "height": 1331,
+   "page": 14,
+   "pdf": "maive/supplement.pdf",
+   "pdf_sha256": "1a3ba22794300885da01dda4a43c45ac59bcc771d96dcd6bb426b9f5d24112dd",
+   "renderer": "mupdf",
+   "sha256": "098b79d69185a7e2314b74332d77d812e567249b9541b60b16a09a00185f9be2",
+   "width": 1252
+  },
+  "S4": {
+   "box": [
+    0.133,
+    0.2005,
+    0.9015,
+    0.7807
+   ],
+   "colours": 64,
+   "dpi": 200,
+   "height": 1331,
+   "page": 15,
+   "pdf": "maive/supplement.pdf",
+   "pdf_sha256": "1a3ba22794300885da01dda4a43c45ac59bcc771d96dcd6bb426b9f5d24112dd",
+   "renderer": "mupdf",
+   "sha256": "cb2e9742a049ed0f534c4193c98e6960789475787d1f764209148f59fa5c23a8",
+   "width": 1248
+  },
+  "S7": {
+   "box": [
+    0.1324,
+    0.1484,
+    0.9027,
+    0.8324
+   ],
+   "colours": 64,
+   "dpi": 200,
+   "height": 1575,
+   "page": 25,
+   "pdf": "maive/supplement.pdf",
+   "pdf_sha256": "1a3ba22794300885da01dda4a43c45ac59bcc771d96dcd6bb426b9f5d24112dd",
+   "renderer": "mupdf",
+   "sha256": "85da16a559dd2870ab4ed830a628f39a68b7bfff731437ba1fa3e197a7315b12",
+   "width": 1250
+  },
+  "S8": {
+   "box": [
+    0.133,
+    0.1484,
+    0.9021,
+    0.8324
+   ],
+   "colours": 64,
+   "dpi": 200,
+   "height": 1575,
+   "page": 26,
+   "pdf": "maive/supplement.pdf",
+   "pdf_sha256": "1a3ba22794300885da01dda4a43c45ac59bcc771d96dcd6bb426b9f5d24112dd",
+   "renderer": "mupdf",
+   "sha256": "d646a850b9ebed0409f74979cb3538fd333d98de4076bcd9167c13583604e1b4",
+   "width": 1249
+  },
+  "S9": {
+   "box": [
+    0.133,
+    0.1484,
+    0.9027,
+    0.8324
+   ],
+   "colours": 64,
+   "dpi": 200,
+   "height": 1575,
+   "page": 27,
+   "pdf": "maive/supplement.pdf",
+   "pdf_sha256": "1a3ba22794300885da01dda4a43c45ac59bcc771d96dcd6bb426b9f5d24112dd",
+   "renderer": "mupdf",
+   "sha256": "fa4f2edf66504b791cc453ff6e991dc2c77cb0d9997a8897933f54aaaddfafa5",
+   "width": 1250
+  }
+ },
  "migrant": {
   "1": {
    "box": [
