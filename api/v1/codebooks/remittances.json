@@ -5,6 +5,7 @@
  "source_sheet": "Data",
  "n_rows": 538,
  "n_columns": 71,
+ "license": "https://creativecommons.org/licenses/by/4.0/",
  "columns": [
   {
    "name": "Obs",

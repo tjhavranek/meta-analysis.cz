@@ -5,6 +5,7 @@
  "source_sheet": "stata",
  "n_rows": 4147,
  "n_columns": 98,
+ "license": "https://creativecommons.org/licenses/by/4.0/",
  "columns": [
   {
    "name": "idstudy",

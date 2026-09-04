@@ -94,10 +94,10 @@ Then `{{not_pooled}}`.
 
 ## Licence and citation
 
-> The index, the codebooks, the harmonisation and this documentation are released
-> under [CC BY 4.0](/LICENSE): the datasets, their CSV and Parquet conversions, the
-> pooled table, the codebooks, the documentation and the papers deposited here. Use
-> any of it, including for training, provided you give credit.
+> Everything here is released under [CC BY 4.0](/LICENSE): the datasets, their CSV and
+> Parquet conversions, the pooled table, the index, the codebooks, the harmonisation,
+> the documentation and the papers deposited here. Use any of it, including for
+> training, provided you give credit.
 >
 > **Each dataset was assembled for a specific paper. When you use one, cite that
 > paper.** The index carries every paper's title, authors and DOI. That is how

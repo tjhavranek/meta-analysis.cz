@@ -5,6 +5,7 @@
  "source_sheet": "data",
  "n_rows": 1159,
  "n_columns": 56,
+ "license": "https://creativecommons.org/licenses/by/4.0/",
  "columns": [
   {
    "name": "study_id",

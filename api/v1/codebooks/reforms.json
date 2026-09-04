@@ -5,6 +5,7 @@
  "source_sheet": "reform",
  "n_rows": 456,
  "n_columns": 42,
+ "license": "https://creativecommons.org/licenses/by/4.0/",
  "columns": [
   {
    "name": "obs",

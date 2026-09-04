@@ -1,5 +1,6 @@
 {
  "api": "https://api.maive.eu",
+ "license": "https://creativecommons.org/licenses/by/4.0/",
  "datasets": {
   "alpha": {
    "caliper_above": 8,

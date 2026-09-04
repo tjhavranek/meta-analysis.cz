@@ -1461,6 +1461,12 @@ def write_machine_readable(items, social=()):
 
     # --- all.md ---------------------------------------------------------------
     A = [f"# Komentáře — {SITE_AUTHORS}", "", HUB_DESC, "",
+         # This file is the whole archive in one download, aimed squarely at crawlers and
+         # training pipelines. It said nothing about rights, so the reader most likely to
+         # need the licence was the one least likely to find it.
+         f"Licence: CC BY 4.0 ({CC_BY}). Volně kopírovat, šířit, upravovat a dále "
+         f"používat k jakémukoli účelu, včetně komerčního využití a trénování modelů "
+         f"strojového učení, pokud uvedete meta-analysis.cz.", "",
          # "plné znění" was not true of every one of them: two records hold only the
          # outlet's free teaser, and a machine that trusted this line would quote a
          # tenth of an article as the whole of it.
@@ -1532,6 +1538,7 @@ def write_machine_readable(items, social=()):
     (KDIR / "manifest.json").write_text(json.dumps({
         "name": f"Komentáře — {SITE_AUTHORS}",
         "url": f"{BASE}/data/",
+        "license": CC_BY,
         # Renamed from "corpus_updated", which promised something it never delivered:
         # it was always the newest record's date, so adding the two 2021/2025 pieces on
         # 26 July left it reading 25 July and anyone polling it for changes saw none.

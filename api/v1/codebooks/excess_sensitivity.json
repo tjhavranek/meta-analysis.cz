@@ -5,6 +5,7 @@
  "source_sheet": null,
  "n_rows": 3127,
  "n_columns": 75,
+ "license": "https://creativecommons.org/licenses/by/4.0/",
  "columns": [
   {
    "name": "id",

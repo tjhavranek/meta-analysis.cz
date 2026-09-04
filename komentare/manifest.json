@@ -1,6 +1,7 @@
 {
  "name": "Komentáře — Tomáš Havránek, Zuzana Havránková",
  "url": "https://meta-analysis.cz/komentare/data/",
+ "license": "https://creativecommons.org/licenses/by/4.0/",
  "newest_record": "2026-09-02",
  "temporal_coverage": "2014-01-27/2026-09-02",
  "records": {
@@ -50,8 +51,8 @@
   },
   "all.md": {
    "url": "https://meta-analysis.cz/komentare/all.md",
-   "bytes": 1431498,
-   "sha256": "b8518565ac050e87272a6e53f52ea09f1dc11c477b945caae31cd911543d3dd7"
+   "bytes": 1431755,
+   "sha256": "cfaba6f18c6e3b76110fb77a131f7fa25b2c5956831cf01864e260a4b24a60b1"
   },
   "llms.txt": {
    "url": "https://meta-analysis.cz/komentare/llms.txt",

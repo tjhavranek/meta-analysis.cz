@@ -195,6 +195,7 @@ def refresh():
         # The rows printed in the API example. Recorded so the page cannot drift from the
         # CSV it ships: they are real rows, not illustrative ones.
         "example_rows": alpha_rows[:5] + [r for r in alpha_rows if r["study_id"] == "20"][:1],
+        "license": "https://creativecommons.org/licenses/by/4.0/",
         "api": API, "retrieved": datetime.date.today().isoformat(),
         "datasets": data, "settings": CANON, "runs": runs,
         "funnel": {"file": "/maive/how-to/funnel.png",

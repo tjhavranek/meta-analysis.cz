@@ -5,6 +5,7 @@
  "source_sheet": "STATA",
  "n_rows": 162,
  "n_columns": 36,
+ "license": "https://creativecommons.org/licenses/by/4.0/",
  "columns": [
   {
    "name": "LABEL",

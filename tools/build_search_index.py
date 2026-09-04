@@ -227,6 +227,7 @@ def main():
 
     payload = json.dumps({
             "what": "The index meta-analysis.cz searches itself with.",
+            "license": "https://creativecommons.org/licenses/by/4.0/",
             "how": "tools/build_search_index.py. Document-level inverted index; document ids "
                    "are base-36 gaps. b = words in the page, h = words in its title or a "
                    "heading, s = pages the word is prominent on rather than merely present. "

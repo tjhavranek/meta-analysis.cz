@@ -1,6 +1,13 @@
 # Zenodo deposit — what to upload, and what must never be uploaded
 
-> **STATUS: PUBLISHED, AND UP TO DATE.** The deposit matches what the site serves.
+> **STATUS: PUBLISHED. THE SITE IS ONE METADATA CHANGE AHEAD OF THE DEPOSIT.**
+> The 46 files in `codebooks/` now each carry a `license` key
+> (`https://creativecommons.org/licenses/by/4.0/`), added 2026-09-04 so that a client
+> reading a codebook on its own is told the rights over what it describes. Every other
+> machine-readable record from this pipeline already declared it. No data value, row count
+> or column changed, and 1.2.0 remains correct for everything it asserts about the data.
+> Whether that warrants a 1.2.1 is the owner's call: until one is cut, the deposit is
+> byte-identical to 1.2.0 and the site's codebooks carry one extra key.
 > Concept DOI (cite this): **https://doi.org/10.5281/zenodo.21773678**
 > Version 0.9.0-beta: **https://doi.org/10.5281/zenodo.21773679**
 > Version 1.0.0: **https://doi.org/10.5281/zenodo.21789702**
@@ -65,7 +72,7 @@ time with `python data_layer/12_zenodo_bundle.py`.
 | `datasets.json` | the index: paper, DOI, units, audit status, rights status per dataset |
 | `codebooks/*.json` | 44 column-level codebooks |
 | `README.md` | documentation, caveats, what is deliberately excluded |
-| `LICENSE` | the scoping |
+| `LICENSE` | CC BY 4.0, covering every file in the deposit |
 | `CITATION.cff` | citation metadata |
 | `SHA256SUMS.txt` | checksums for every file |
 

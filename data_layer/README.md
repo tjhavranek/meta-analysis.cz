@@ -52,5 +52,5 @@ elasticity, but unlike `migrant` the row-wise inversion does not hold. Read `uni
 Not published here: `out/` (a byte-identical duplicate of `/api/v1/` and `/data/v1/`) and
 `staging/` (scratch).
 
-Licence: MIT, per `LICENSE` §1a. That covers these scripts. It does **not** cover the
-research datasets they read.
+Licence: CC BY 4.0, per [`/LICENSE`](../LICENSE) — the same as everything else here.
+That covers these scripts and the research datasets they read alike.

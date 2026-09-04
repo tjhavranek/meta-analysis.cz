@@ -303,6 +303,10 @@ for proj in sorted(prim):
     cb=os.path.join(OUT,"api","v1","codebooks"); os.makedirs(cb,exist_ok=True)
     json.dump(dict(project=proj, source_file=rec["member"], source_archive=rec["archive"],
                    source_sheet=sheet, n_rows=int(len(df)), n_columns=int(df.shape[1]),
+                   # Every other machine-readable record this pipeline emits declares the
+                   # licence. These 46 did not, so a client reading a codebook alone was
+                   # told nothing about rights over the column definitions it describes.
+                   license="https://creativecommons.org/licenses/by/4.0/",
                    columns=describe(df,roles,rejected,declared)),
               open(os.path.join(cb,f"{proj}.json"),"w",encoding="utf-8"), indent=1)
     manifest.append(dict(project=proj,status="ok",rows=int(len(df)),cols=int(df.shape[1]),

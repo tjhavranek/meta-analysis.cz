@@ -5,6 +5,7 @@
  "source_sheet": "dataset",
  "n_rows": 307,
  "n_columns": 53,
+ "license": "https://creativecommons.org/licenses/by/4.0/",
  "columns": [
   {
    "name": "label",

@@ -69,7 +69,9 @@ and the house-price response (1,555).
 
 ## Licence
 
-The collection, index, codebooks and harmonised table are **CC BY 4.0**.
+Everything in this release is **CC BY 4.0**: the research datasets in their original
+published form, their CSV and Parquet conversions, the harmonised table, the index, the
+codebooks and the documentation.
 
 Each underlying dataset was assembled for a specific paper with its own authors
 and co-authors. **If you use an individual dataset, cite its paper** — the index
