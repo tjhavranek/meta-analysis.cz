@@ -1,0 +1,649 @@
+{
+ "alphas": {
+  "3": {
+   "box": [
+    0.234,
+    0.181,
+    0.763,
+    0.479
+   ],
+   "colours": 64,
+   "dpi": 200,
+   "height": 618,
+   "page": 32,
+   "pdf": "alphas/alphas.pdf",
+   "sha256": "0b05cc3a678d3826d163c41a0eb0c4c6bab504a89d091bd37d760705d7f1a57b",
+   "width": 858
+  },
+  "4": {
+   "box": [
+    0.303,
+    0.217,
+    0.694,
+    0.678
+   ],
+   "colours": 64,
+   "dpi": 200,
+   "height": 977,
+   "page": 34,
+   "pdf": "alphas/alphas.pdf",
+   "sha256": "6c1c09fc631d953c898e11794111592fbd322b2c0f2e66fed71cb70e2e515ab2",
+   "width": 607
+  },
+  "5": {
+   "box": [
+    0.234,
+    0.181,
+    0.763,
+    0.421
+   ],
+   "colours": 64,
+   "dpi": 200,
+   "height": 439,
+   "page": 36,
+   "pdf": "alphas/alphas.pdf",
+   "sha256": "0ed431989a8c4d4f52ace0dc747a0f3d615b351b49c2f53706e2512e2fb737ac",
+   "width": 843
+  },
+  "8": {
+   "box": [
+    0.176,
+    0.198,
+    0.82,
+    0.456
+   ],
+   "colours": 64,
+   "dpi": 200,
+   "height": 565,
+   "page": 64,
+   "pdf": "alphas/alphas.pdf",
+   "sha256": "e53101552fd7f58efc26170388fe94518178587514e0a5328572e3a9f5f838fa",
+   "width": 1029
+  }
+ },
+ "armington": {
+  "3": {
+   "box": [
+    0.264,
+    0.063,
+    0.728,
+    0.286
+   ],
+   "colours": 64,
+   "dpi": 200,
+   "height": 428,
+   "page": 6,
+   "pdf": "armington/armington2.pdf",
+   "sha256": "b954374e340348d196ff913a8bb83772f8717ea2214fa6a20cd596061e0fbb58",
+   "width": 678
+  }
+ },
+ "competition": {
+  "4": {
+   "box": [
+    0.17,
+    0.115,
+    0.86,
+    0.77
+   ],
+   "colours": 64,
+   "dpi": 200,
+   "height": 1246,
+   "page": 9,
+   "pdf": "competition/competition2.pdf",
+   "sha256": "28413910d2c9ae076be8ebd50e58f552025c2cf25632a88b239958916860fae4",
+   "width": 850
+  }
+ },
+ "crisis_ews": {
+  "9": {
+   "box": [
+    0.114,
+    0.119,
+    0.935,
+    0.697
+   ],
+   "colours": 64,
+   "dpi": 200,
+   "height": 1283,
+   "page": 28,
+   "pdf": "crisis_ews/crisis_ews.pdf",
+   "sha256": "6fbac8f0e710c9e14b97a82687f238a01eb37067fbc593a481f50ab132c48bc7",
+   "width": 1270
+  }
+ },
+ "education": {
+  "A4": {
+   "box": [
+    0.176,
+    0.082,
+    0.823,
+    0.325
+   ],
+   "colours": 64,
+   "dpi": 200,
+   "height": 443,
+   "page": 33,
+   "pdf": "education/education2.pdf",
+   "sha256": "4fad2a9af072809e48b7817fc2cf08f9d7b82f578cd9723736f6ee2a7ff899e9",
+   "width": 822
+  }
+ },
+ "esg": {
+  "C2": {
+   "box": [
+    0.116,
+    0.165,
+    0.883,
+    0.421
+   ],
+   "colours": 64,
+   "dpi": 200,
+   "height": 571,
+   "page": 37,
+   "pdf": "esg/esg.pdf",
+   "sha256": "e7b7eb2dc61cbb9c4372cbff9cf4f9e4dabc279da5a7931192aba7016ba0712f",
+   "width": 1221
+  }
+ },
+ "exercise": {
+  "1": {
+   "box": [
+    0.081,
+    0.141,
+    0.907,
+    0.776
+   ],
+   "colours": 64,
+   "dpi": 200,
+   "height": 1064,
+   "page": 6,
+   "pdf": "exercise/exercise.pdf",
+   "sha256": "f2c07c940d9c34af62b1a8e39eb3e21ced40a0f9eef0d9f496ac8a9f94d39cce",
+   "width": 1789
+  },
+  "2": {
+   "box": [
+    0.085,
+    0.053,
+    0.902,
+    0.699
+   ],
+   "colours": 64,
+   "dpi": 200,
+   "height": 1089,
+   "page": 8,
+   "pdf": "exercise/exercise.pdf",
+   "sha256": "aaa9432db22c6c52f72c47370441a62636529f9c0e6468f4cdb7fff7385cf9f9",
+   "width": 1779
+  },
+  "3": {
+   "box": [
+    0.085,
+    0.051,
+    0.902,
+    0.674
+   ],
+   "colours": 64,
+   "dpi": 200,
+   "height": 1048,
+   "page": 11,
+   "pdf": "exercise/exercise.pdf",
+   "sha256": "50c3e6af6f7d4f425d235bbf2868cbbc8b3e3359a7521a599e8ec67ed934eae7",
+   "width": 1779
+  },
+  "4": {
+   "box": [
+    0.085,
+    0.06,
+    0.902,
+    0.802
+   ],
+   "colours": 64,
+   "dpi": 200,
+   "height": 1251,
+   "page": 13,
+   "pdf": "exercise/exercise.pdf",
+   "sha256": "0af24c452accb5b95e54878731ae7a4c3be6c9cb94ce3e88b14dd42001c7e818",
+   "width": 1779
+  }
+ },
+ "frisch": {
+  "2": {
+   "box": [
+    0.056,
+    0.06,
+    0.943,
+    0.531
+   ],
+   "colours": 64,
+   "dpi": 200,
+   "height": 964,
+   "page": 6,
+   "pdf": "frisch/frisch2.pdf",
+   "sha256": "61b7861cab292cca86ae7f94a3c29cffe0faf0018ebd96ccf2137a65fd75053c",
+   "width": 1297
+  },
+  "3": {
+   "box": [
+    0.26,
+    0.06,
+    0.739,
+    0.296
+   ],
+   "colours": 64,
+   "dpi": 200,
+   "height": 479,
+   "page": 7,
+   "pdf": "frisch/frisch2.pdf",
+   "sha256": "c044440fae7646f9e077607d99e76318653e59f75d04e15ae08a732da1b078e5",
+   "width": 679
+  },
+  "4": {
+   "box": [
+    0.261,
+    0.06,
+    0.739,
+    0.296
+   ],
+   "colours": 64,
+   "dpi": 200,
+   "height": 481,
+   "page": 9,
+   "pdf": "frisch/frisch2.pdf",
+   "sha256": "a4106adad136b9562897549c7f7edf5d3e07a41dd850a7fb6eee0e97f109a82c",
+   "width": 678
+  },
+  "5": {
+   "box": [
+    0.057,
+    0.06,
+    0.944,
+    0.666
+   ],
+   "colours": 64,
+   "dpi": 200,
+   "height": 1242,
+   "page": 11,
+   "pdf": "frisch/frisch2.pdf",
+   "sha256": "7b172400c2961e7ae0cbbd376490f87e1f4f1f2eb787685ca5e79428efd33dc0",
+   "width": 1299
+  },
+  "7": {
+   "box": [
+    0.109,
+    0.06,
+    0.889,
+    0.333
+   ],
+   "colours": 64,
+   "dpi": 200,
+   "height": 556,
+   "page": 15,
+   "pdf": "frisch/frisch2.pdf",
+   "sha256": "722b64acbb1bc3384f850f3d53f4f63ee15bfb44dc3614353b5066a5de7b15ce",
+   "width": 1135
+  }
+ },
+ "hedge": {
+  "3": {
+   "box": [
+    0.186,
+    0.061,
+    0.814,
+    0.403
+   ],
+   "colours": 64,
+   "dpi": 200,
+   "height": 583,
+   "page": 13,
+   "pdf": "hedge/hedge2.pdf",
+   "sha256": "c9e2b11d396bf5d486a8dff1ddb820f3346eba486eb4223650c31cc002b8f31b",
+   "width": 808
+  },
+  "5": {
+   "box": [
+    0.186,
+    0.061,
+    0.814,
+    0.403
+   ],
+   "colours": 64,
+   "dpi": 200,
+   "height": 584,
+   "page": 20,
+   "pdf": "hedge/hedge2.pdf",
+   "sha256": "99b16c49e163d6ebfd039e1a96f1d604b5b668905456d4886eaab9a34fc1e5f2",
+   "width": 810
+  }
+ },
+ "incentives": {
+  "B3": {
+   "box": [
+    0.269,
+    0.107,
+    0.732,
+    0.349
+   ],
+   "colours": 64,
+   "dpi": 200,
+   "height": 526,
+   "page": 47,
+   "pdf": "incentives/incentives.pdf",
+   "sha256": "72dd49e3e75046d1ee666a3e1ffd4eedc832f7f02fe6f0557251f631ad0e9f4a",
+   "width": 731
+  },
+  "B6": {
+   "box": [
+    0.268,
+    0.506,
+    0.732,
+    0.747
+   ],
+   "colours": 64,
+   "dpi": 200,
+   "height": 520,
+   "page": 50,
+   "pdf": "incentives/incentives.pdf",
+   "sha256": "60363cb307bcce190261e5bffa3cdf614d082b6fe96ab290e4b9fce21fc3447d",
+   "width": 731
+  },
+  "B7": {
+   "box": [
+    0.268,
+    0.357,
+    0.732,
+    0.601
+   ],
+   "colours": 64,
+   "dpi": 200,
+   "height": 524,
+   "page": 51,
+   "pdf": "incentives/incentives.pdf",
+   "sha256": "062ef47ab155e3800c9597eedcefc484023db6a5d48cbf1bfb61fa91642c8df0",
+   "width": 731
+  }
+ },
+ "lags": {
+  "2": {
+   "box": [
+    0.23,
+    0.159,
+    0.765,
+    0.42
+   ],
+   "colours": 64,
+   "dpi": 200,
+   "height": 469,
+   "page": 7,
+   "pdf": "lags/lags2.pdf",
+   "sha256": "8bb60ff05606af9758d7ece50ddba93cd4373e5993587952d9329f1fc36dcf26",
+   "width": 642
+  },
+  "3": {
+   "box": [
+    0.124,
+    0.101,
+    0.774,
+    0.886
+   ],
+   "colours": 64,
+   "dpi": 200,
+   "height": 1345,
+   "page": 14,
+   "pdf": "lags/lags2.pdf",
+   "sha256": "65895b2adab4445bc50a8644be74cab618a37e559b5b04b078ccf1e0b74c322b",
+   "width": 758
+  },
+  "4": {
+   "box": [
+    0.116,
+    0.101,
+    0.756,
+    0.886
+   ],
+   "colours": 64,
+   "dpi": 200,
+   "height": 1346,
+   "page": 21,
+   "pdf": "lags/lags2.pdf",
+   "sha256": "eb8c926d94e88539afb2908436ff6c994870e98974962f3e1cc03700e9430543",
+   "width": 766
+  },
+  "5": {
+   "box": [
+    0.148,
+    0.101,
+    0.774,
+    0.886
+   ],
+   "colours": 64,
+   "dpi": 200,
+   "height": 1345,
+   "page": 24,
+   "pdf": "lags/lags2.pdf",
+   "sha256": "8a0a399d6901f75569e72c79626b5839721875d7affc6d58b032aeacd7fb083f",
+   "width": 741
+  },
+  "6": {
+   "box": [
+    0.234,
+    0.472,
+    0.769,
+    0.864
+   ],
+   "colours": 64,
+   "dpi": 200,
+   "height": 696,
+   "page": 26,
+   "pdf": "lags/lags2.pdf",
+   "sha256": "45cd23bf717ca5d63261cb77b684ccac039f6c02d3505b4e058bd1a490793b5a",
+   "width": 642
+  },
+  "7": {
+   "box": [
+    0.231,
+    0.467,
+    0.765,
+    0.863
+   ],
+   "colours": 64,
+   "dpi": 200,
+   "height": 705,
+   "page": 27,
+   "pdf": "lags/lags2.pdf",
+   "sha256": "6957c69fb3380ed51055c99940d5c64f8ad477ebb4c6703b6b219e2dff01f9c2",
+   "width": 641
+  }
+ },
+ "migrant": {
+  "1": {
+   "box": [
+    0.225,
+    0.145,
+    0.78,
+    0.752
+   ],
+   "colours": 64,
+   "dpi": 200,
+   "height": 1405,
+   "page": 11,
+   "pdf": "migrant/migrant.pdf",
+   "sha256": "6aed65ee96ea83df270879da908d5c15114e6a7d86cb8b418c1678e1f1f6fc81",
+   "width": 918
+  },
+  "2": {
+   "box": [
+    0.142,
+    0.278,
+    0.86,
+    0.578
+   ],
+   "colours": 64,
+   "dpi": 200,
+   "height": 649,
+   "page": 13,
+   "pdf": "migrant/migrant.pdf",
+   "sha256": "0bab315d7323f9805d612400665f1f2c43a9511c5f47cadef42748e95ad32638",
+   "width": 1122
+  }
+ },
+ "reproducibility": {
+  "2": {
+   "box": [
+    0.163,
+    0.107,
+    0.795,
+    0.555
+   ],
+   "colours": 64,
+   "dpi": 200,
+   "height": 994,
+   "page": 10,
+   "pdf": "reproducibility/reproducibility.pdf",
+   "sha256": "8e6849d08f568e9ed5a5d0871521b8fa0494661bfb5d9664b7e7f6c8e1480b4c",
+   "width": 995
+  },
+  "3": {
+   "box": [
+    0.163,
+    0.107,
+    0.794,
+    0.376
+   ],
+   "colours": 64,
+   "dpi": 200,
+   "height": 566,
+   "page": 12,
+   "pdf": "reproducibility/reproducibility.pdf",
+   "sha256": "b9564261734fe5dc6e13c51b28c86776152f03aeac03a8dcbbec73f94d8bf29c",
+   "width": 957
+  },
+  "ED8": {
+   "box": [
+    0.163,
+    0.115,
+    0.795,
+    0.485
+   ],
+   "colours": 64,
+   "dpi": 200,
+   "height": 846,
+   "page": 34,
+   "pdf": "reproducibility/reproducibility.pdf",
+   "sha256": "600c678b810e3c103a4f434f3bbc7cdef1c1088b7e336b565ff3542f20b82566",
+   "width": 1019
+  }
+ },
+ "spillovers_bias": {
+  "2": {
+   "box": [
+    0.079,
+    0.5,
+    0.923,
+    0.933
+   ],
+   "colours": 64,
+   "dpi": 200,
+   "height": 843,
+   "page": 9,
+   "pdf": "spillovers_bias/spillovers_bias.pdf",
+   "sha256": "bde8e069dd6b9a246c0359a47b4f9d50d8e1af01bf8267eaee6990c2efb76fc8",
+   "width": 1157
+  }
+ },
+ "taxrev": {
+  "4": {
+   "box": [
+    0.229,
+    0.135,
+    0.771,
+    0.418
+   ],
+   "colours": 64,
+   "dpi": 200,
+   "height": 608,
+   "page": 17,
+   "pdf": "taxrev/taxrev.pdf",
+   "sha256": "c4a3e3f6b992d5e591c3cb45932832517558327a46dec1fa0a0e6d7e98abe1ec",
+   "width": 850
+  },
+  "5": {
+   "box": [
+    0.229,
+    0.554,
+    0.771,
+    0.837
+   ],
+   "colours": 64,
+   "dpi": 200,
+   "height": 606,
+   "page": 17,
+   "pdf": "taxrev/taxrev.pdf",
+   "sha256": "53d7ab6c8e286d749073406af4fba3a1079d7587de919f1bf621e30f4fb2aa4b",
+   "width": 850
+  },
+  "6": {
+   "box": [
+    0.229,
+    0.135,
+    0.771,
+    0.418
+   ],
+   "colours": 64,
+   "dpi": 200,
+   "height": 606,
+   "page": 18,
+   "pdf": "taxrev/taxrev.pdf",
+   "sha256": "d31c3a8673fe809ec07a34ce5e727afd840a3c7453c1beea0dd5d17dea798a38",
+   "width": 850
+  },
+  "7": {
+   "box": [
+    0.229,
+    0.554,
+    0.771,
+    0.837
+   ],
+   "colours": 64,
+   "dpi": 200,
+   "height": 606,
+   "page": 18,
+   "pdf": "taxrev/taxrev.pdf",
+   "sha256": "89d9fd086532a34bd988d8b2dab4a02cd6215fc3a7b6d2e9d2cebe8275a9a71a",
+   "width": 850
+  }
+ },
+ "tourist": {
+  "5": {
+   "box": [
+    0.145,
+    0.545,
+    0.895,
+    0.817
+   ],
+   "colours": 64,
+   "dpi": 200,
+   "height": 592,
+   "page": 17,
+   "pdf": "tourist/tourist.pdf",
+   "sha256": "e89ef56124f2d411efa2c63eaf03d30edad06211feeeefbca9e628d3ae879553",
+   "width": 1179
+  },
+  "6": {
+   "box": [
+    0.145,
+    0.11,
+    0.895,
+    0.38
+   ],
+   "colours": 64,
+   "dpi": 200,
+   "height": 586,
+   "page": 18,
+   "pdf": "tourist/tourist.pdf",
+   "sha256": "d35d097db283ada3065fff31b9071725f8000330b60537365b0cb43d85e4aa45",
+   "width": 1176
+  }
+ }
+}

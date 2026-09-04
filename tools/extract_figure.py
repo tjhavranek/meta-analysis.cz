@@ -15,6 +15,7 @@ a funnel plot in 64 colours is indistinguishable from the same plot in millions 
 twenty times smaller.
 """
 
+import io
 import os
 import subprocess
 import sys
@@ -73,10 +74,51 @@ def extract(project, fig, page, box, dpi=200, colours=64, pdf=None):
     os.makedirs(outdir, exist_ok=True)
     out = os.path.join(outdir, "fig%s.png" % fig)
     im.quantize(colours, method=Image.MEDIANCUT).save(out, optimize=True)
+    record(project, fig, pdf, page, box, dpi, colours, out)
     print("%s fig%s: page %s -> %s (%dx%d, %d KB)"
           % (project, fig, page, os.path.relpath(out, ROOT), im.width, im.height,
              os.path.getsize(out) // 1024))
     return out
+
+
+MANIFEST = os.path.join(ROOT, "tools", "figure_crops.json")
+
+
+def record(project, fig, pdf, page, box, dpi, colours, out):
+    """Write down which page and which box this image came from.
+
+    Thirty figures on this site were cut wrong and every one of them was invisible
+    afterwards, because the crop is trimmed back to its own ink and a box that stopped early
+    yields a tidy picture of part of a figure. Nothing could tell the difference, because
+    nothing knew where the picture was supposed to have come from: the coordinates lived in
+    one shell command and were gone the moment it finished.
+
+    With the box on record, check_figure_crops.py can re-cut the figure and compare, so a
+    crop that drifts or a source PDF that is replaced stops being a thing only a person
+    reading the page can notice. An entry is a claim about provenance, not about
+    correctness -- a box that was wrong when it was used is still wrong here, which is why
+    the checker reports coverage as well as drift.
+    """
+    import hashlib
+    import json as _json
+    try:
+        man = _json.load(io.open(MANIFEST, encoding="utf-8"))
+    except (IOError, OSError, ValueError):
+        man = {}
+    man.setdefault(project, {})[str(fig)] = {
+        "pdf": os.path.relpath(pdf, ROOT).replace("\\", "/"),
+        "page": int(page),
+        "box": [round(float(v), 4) for v in box],
+        "dpi": int(dpi),
+        "colours": int(colours),
+        "width": Image.open(out).width,
+        "height": Image.open(out).height,
+        "sha256": hashlib.sha256(io.open(out, "rb").read()).hexdigest(),
+    }
+    # Sorted and indented so a re-extraction produces a reviewable one-figure diff rather
+    # than a reordered file.
+    io.open(MANIFEST, "w", encoding="utf-8", newline="").write(
+        _json.dumps(man, indent=1, sort_keys=True, ensure_ascii=False) + "\n")
 
 
 if __name__ == "__main__":
