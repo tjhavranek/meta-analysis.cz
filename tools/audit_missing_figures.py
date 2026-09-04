@@ -48,6 +48,13 @@ def pdf_captions(pdfs):
         for flags in ([], ["-raw"]):
             txt = subprocess.run([_poppler.tool("pdftotext")] + flags + [f, "-"], capture_output=True,
                                  encoding="utf-8", errors="replace").stdout or ""
+            # Wiley sets its captions letter-spaced -- "F I G U R E  A . 1" -- so the
+            # caption pattern never fires on those PDFs and their figures look absent.
+            # Collapsing single-character gaps inside a run of them makes the same
+            # pattern read both spellings.
+            txt = re.sub(r"(?m)((?:[A-Za-z]\s){3,}[A-Za-z])",
+                         lambda mm: re.sub(r"\s+", "", mm.group(1)), txt)
+            txt = re.sub(r"(?<=[A-Za-z])\s+\.\s+(?=\d)", ".", txt)
             for m in CAPTION.finditer(txt):
                 n = m.group(1).lstrip("0") or m.group(1)
                 seen.setdefault(n, m.group(2).strip()[:70])
@@ -75,7 +82,11 @@ def main(argv):
         shown = set(re.findall(r"<b>Figure ([A-Za-z0-9.]+)\.</b>", page))
         shown |= {n[:-1] for n in shown if n[-1:].isalpha()}
         caps = pdf_captions(pdfs)
-        alias = {v: k for k, v in (meta.get("figure_labels") or {}).items()}
+        # figure_labels maps the PDF's number to the label the site prints:
+        # {"5": "ED1"}. Inverting it and then looking up a PDF-side number could never
+        # match, which is why /reproducibility/, whose ten extended-data figures are all
+        # relabelled, reported all ten as missing when every one is present.
+        alias = meta.get("figure_labels") or {}
         missing = {n: t for n, t in caps.items()
                    if n not in shown and alias.get(n, n) not in shown}
         rows.append(dict(project=p, shown=len(shown), captioned=len(caps),
