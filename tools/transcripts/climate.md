@@ -129,34 +129,64 @@ Predictions of climate change caused by humans influence policy decisions in mos
 
 ## REFERENCES
 
-1. Andronova, N. G. & M. E. Schlesinger (2001): “Objective estimation of the probability density function for climate sensitivity.” *Journal of Geophysical Research: Atmospheres (1984–2012)* 106(D19): pp. 22605–22611.
-2. Babecky, J. & T. Havranek (2014): “Structural reforms and growth in transition.” *The Economics of Transition* 22(1): pp. 13–42.
-3. De Long, J. B. & K. Lang (1992): “Are all economic hypotheses false?” *Journal of Political Economy* 100: pp. 1257–1257.
-4. Doucouliagos, C. & T. Stanley (2013): “Are all economic facts greatly exaggerated? Theory competition and selectivity.” *Journal of Economic Surveys* 27(2): pp. 316–339.
-5. EPA (2013): “The social cost of carbon.” http://www.epa.gov/climatechange/EPAactivities/economics/scc.html. [cit. 2014-05-07].
-6. EU (2014): “Eu greenhouse gas emissions and targets.” http://ec.europa.eu/clima/policies/ggas/index_en.htm/. [cit. 2014-05-01].
-7. Havranek, T. (2010): “Rose effect and the euro: is the magic gone?” *Review of World Economics* 146(2): pp. 241–261.
-8. Havranek, T. (2015): “Measuring intertemporal substitution: The importance of method choices and selective reporting.” *Journal of the European Economic Association* (forthcoming).
-9. Havranek, T., R. Horvath, Z. Irsova, & M. Rusnak (2015): “Cross-Country Heterogeneity in Intertemporal Substitution.” *Journal of International Economics* 96(1): pp. 100–118.
-10. Havranek, T. & Z. Irsova (2010): “Meta-Analysis of Intra-Industry FDI Spillovers: Updated Evidence.” *Czech Journal of Economics and Finance (Finance a uver)* 60(2): pp. 151–174.
-11. Havranek, T. & Z. Irsova (2011): “Estimating vertical spillovers from FDI: Why results vary and what the true effect is.” *Journal of International Economics* 85(2): pp. 234–244.
-12. Havranek, T. & Z. Irsova (2012): “Survey Article: Publication Bias in the Literature on Foreign Direct Investment Spillovers.” *Journal of Development Studies* 48(10): pp. 1375–1396.
-13. Havranek, T., Z. Irsova, & K. Janda (2012): “Demand for gasoline is more price-inelastic than commonly thought.” *Energy Economics* 34(1): pp. 201–207.
-14. Havranek, T. & O. Kokes (2015): “Income elasticity of gasoline demand: A meta-analysis.” *Energy Economics* 47(C): pp. 77–86.
-15. Havranek, T. & M. Rusnak (2013): “Transmission Lags of Monetary Policy: A Meta-Analysis.” *International Journal of Central Banking* 9(4): pp. 39–76.
-16. Havranek, T. & J. Sedlarikova (2014): “A Meta-Analysis of the Income Elasticity of Money Demand.” *Politicka ekonomie* 2014(3): pp. 366–382.
-17. Irsova, Z. & T. Havranek (2010): “Measuring Bank Efficiency: A Meta-Regression Analysis.” *Prague Economic Papers* 2010(4): pp. 307–328.
-18. Irsova, Z. & T. Havranek (2013a): “Determinants of Horizontal Spillovers from FDI: Evidence from a Large Meta-Analysis.” *World Development* 42(C): pp. 1–15.
-19. Irsova, Z. & T. Havranek (2013b): “Meta-Analysis of Bank Efficiency Measurement in Transitional Countries.” *Transformations in Business and Economics* 12(2): pp. 163–183.
-20. Masters, T. (2013): “Observational estimate of climate sensitivity from changes in the rate of ocean heat uptake and comparison to cmip5 models.” *Climate Dynamics* pp. 1–9.
-21. Michaels, P. J. (2008): “Evidence for ‘publication bias’ concerning global warming in science and nature.” *Energy & environment* 19(2): pp. 287–301.
-22. OECD (2013): “Climate and carbon aligning prices and policies.” 01: pp. 11–23.
-23. Pachauri, R. K. & A. Reisinger (2007): *Climate Change 2007 Synthesis Report: Summary for Policymakers*. IPCC Secretariat.
-24. Reckova, D. & Z. Irsova (2015): “Additional Results to ‘Publication Bias in Measuring Anthropogenic Climate Change’.” *Technical report*, Charles University, Prague. Available at meta-analysis.cz/climate.
-25. Rosenthal, R. (1979): “The file drawer problem and tolerance for null results.” *Psychological bulletin* 86(3): p. 638.
-26. Rusnak, M., T. Havranek, & R. Horvath (2013): “How to Solve the Price Puzzle? A Meta-Analysis.” *Journal of Money, Credit and Banking* 45(1): pp. 37–70.
-27. Solomon, S., D. Qin, M. Manning, Z. Chen, M. Marquis, K. Averyt, M. Tignor, & H. Miller (2007): “Ipcc, 2007: climate change 2007: the physical science basis.” *Contribution of Working Group I to the fourth assessment report of the Intergovernmental Panel on Climate Change*.
-28. Stanley, T. D. (2001): “Wheat from chaff: Meta-analysis as quantitative literature review.” *Journal of economic perspectives* pp. 131–150.
-29. Stanley, T. D. (2005): “Beyond publication bias.” *Journal of Economic Surveys* 19(3): pp. 309–345.
-30. Stocker, D. Q. (2013): “Climate change 2013: The physical science basis.” *Working Group I Contribution to the Fifth Assessment Report of the Intergovernmental Panel on Climate Change, Summary for Policymakers, IPCC* .
-31. Valickova, P., T. Havranek, & R. Horvath (2015): “Financial Development and Economic Growth: A Meta-Analysis.” *Journal of Economic Surveys* 29(3): pp. 506-526.
+Andronova, N. G. & M. E. Schlesinger (2001): “Objective estimation of the probability density function for climate sensitivity.” *Journal of Geophysical Research: Atmospheres (1984–2012)* 106(D19): pp. 22605–22611.
+
+Babecky, J. & T. Havranek (2014): “Structural reforms and growth in transition.” *The Economics of Transition* 22(1): pp. 13–42.
+
+De Long, J. B. & K. Lang (1992): “Are all economic hypotheses false?” *Journal of Political Economy* 100: pp. 1257–1257.
+
+Doucouliagos, C. & T. Stanley (2013): “Are all economic facts greatly exaggerated? Theory competition and selectivity.” *Journal of Economic Surveys* 27(2): pp. 316–339.
+
+EPA (2013): “The social cost of carbon.” http://www.epa.gov/climatechange/EPAactivities/economics/scc.html. [cit. 2014-05-07].
+
+EU (2014): “Eu greenhouse gas emissions and targets.” http://ec.europa.eu/clima/policies/ggas/index_en.htm/. [cit. 2014-05-01].
+
+Havranek, T. (2010): “Rose effect and the euro: is the magic gone?” *Review of World Economics* 146(2): pp. 241–261.
+
+Havranek, T. (2015): “Measuring intertemporal substitution: The importance of method choices and selective reporting.” *Journal of the European Economic Association* (forthcoming).
+
+Havranek, T., R. Horvath, Z. Irsova, & M. Rusnak (2015): “Cross-Country Heterogeneity in Intertemporal Substitution.” *Journal of International Economics* 96(1): pp. 100–118.
+
+Havranek, T. & Z. Irsova (2010): “Meta-Analysis of Intra-Industry FDI Spillovers: Updated Evidence.” *Czech Journal of Economics and Finance (Finance a uver)* 60(2): pp. 151–174.
+
+Havranek, T. & Z. Irsova (2011): “Estimating vertical spillovers from FDI: Why results vary and what the true effect is.” *Journal of International Economics* 85(2): pp. 234–244.
+
+Havranek, T. & Z. Irsova (2012): “Survey Article: Publication Bias in the Literature on Foreign Direct Investment Spillovers.” *Journal of Development Studies* 48(10): pp. 1375–1396.
+
+Havranek, T., Z. Irsova, & K. Janda (2012): “Demand for gasoline is more price-inelastic than commonly thought.” *Energy Economics* 34(1): pp. 201–207.
+
+Havranek, T. & O. Kokes (2015): “Income elasticity of gasoline demand: A meta-analysis.” *Energy Economics* 47(C): pp. 77–86.
+
+Havranek, T. & M. Rusnak (2013): “Transmission Lags of Monetary Policy: A Meta-Analysis.” *International Journal of Central Banking* 9(4): pp. 39–76.
+
+Havranek, T. & J. Sedlarikova (2014): “A Meta-Analysis of the Income Elasticity of Money Demand.” *Politicka ekonomie* 2014(3): pp. 366–382.
+
+Irsova, Z. & T. Havranek (2010): “Measuring Bank Efficiency: A Meta-Regression Analysis.” *Prague Economic Papers* 2010(4): pp. 307–328.
+
+Irsova, Z. & T. Havranek (2013a): “Determinants of Horizontal Spillovers from FDI: Evidence from a Large Meta-Analysis.” *World Development* 42(C): pp. 1–15.
+
+Irsova, Z. & T. Havranek (2013b): “Meta-Analysis of Bank Efficiency Measurement in Transitional Countries.” *Transformations in Business and Economics* 12(2): pp. 163–183.
+
+Masters, T. (2013): “Observational estimate of climate sensitivity from changes in the rate of ocean heat uptake and comparison to cmip5 models.” *Climate Dynamics* pp. 1–9.
+
+Michaels, P. J. (2008): “Evidence for ‘publication bias’ concerning global warming in science and nature.” *Energy & environment* 19(2): pp. 287–301.
+
+OECD (2013): “Climate and carbon aligning prices and policies.” 01: pp. 11–23.
+
+Pachauri, R. K. & A. Reisinger (2007): *Climate Change 2007 Synthesis Report: Summary for Policymakers*. IPCC Secretariat.
+
+Reckova, D. & Z. Irsova (2015): “Additional Results to ‘Publication Bias in Measuring Anthropogenic Climate Change’.” *Technical report*, Charles University, Prague. Available at meta-analysis.cz/climate.
+
+Rosenthal, R. (1979): “The file drawer problem and tolerance for null results.” *Psychological bulletin* 86(3): p. 638.
+
+Rusnak, M., T. Havranek, & R. Horvath (2013): “How to Solve the Price Puzzle? A Meta-Analysis.” *Journal of Money, Credit and Banking* 45(1): pp. 37–70.
+
+Solomon, S., D. Qin, M. Manning, Z. Chen, M. Marquis, K. Averyt, M. Tignor, & H. Miller (2007): “Ipcc, 2007: climate change 2007: the physical science basis.” *Contribution of Working Group I to the fourth assessment report of the Intergovernmental Panel on Climate Change*.
+
+Stanley, T. D. (2001): “Wheat from chaff: Meta-analysis as quantitative literature review.” *Journal of economic perspectives* pp. 131–150.
+
+Stanley, T. D. (2005): “Beyond publication bias.” *Journal of Economic Surveys* 19(3): pp. 309–345.
+
+Stocker, D. Q. (2013): “Climate change 2013: The physical science basis.” *Working Group I Contribution to the Fifth Assessment Report of the Intergovernmental Panel on Climate Change, Summary for Policymakers, IPCC* .
+
+Valickova, P., T. Havranek, & R. Horvath (2015): “Financial Development and Economic Growth: A Meta-Analysis.” *Journal of Economic Surveys* 29(3): pp. 506-526.

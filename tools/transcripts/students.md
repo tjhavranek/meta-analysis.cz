@@ -446,6 +446,7 @@ Baert, S., Neyt, B., Omey, E., & Verhaest, D. (2017). Student work, educational 
 Beerkens, M., Magi, E., & Lill, L. (2011). University studies as a side job: Causes and consequences of massive student employment in Estonia. Higher Education, 61(6), 679–692.
 
 Beffy, M., Fougere, D., & Maurel, A. (2013). The effect of college employment on graduation: Evidence from France. CEPR Discussion Papers 9565, C.E.P.R. Discussion Papers.
+
 BLS (2020). Bureau of Labor Statistics news releases. Various years, retrieved from https://www.bls.gov/bls/newsrels.htm.
 
 Body, K. M.-D., Bonnal, L., & Giret, J.-F. (2014). Does student employment really impact academic achievement? The case of France. Applied Economics, 46(25), 3061–3073.
@@ -547,6 +548,7 @@ Kalenkoski, C., & Pabilonia, S. (2010). Parental transfers, student achievement,
 Kohen, A. I., Nestel, G., & Karmas, C. (1978). Factors affecting individual persistence rates in undergraduate college programs. American Educational Research Journal, 15(2), 233–252.
 
 Kouliavtsev, M. (2013). The Impact of employment and extracurricular involvement on undergraduates’ performance in a business statistics course. Journal of Economics and Economic Education Research, 14(3), 53–66.
+
 Le Barbanchon, T., Ubfal, D., & Araya, F. (2023). The effects of working while in school: Evidence from employment lotteries. American Economic Journal: Applied Economics, 15(1), 383–410.
 
 Lee, C., & Orazem, P. F. (2010). High school employment, school performance, and college entry. Economics of Education Review, 29(1), 29–39.
@@ -652,6 +654,7 @@ Torres, V., Gross, J. P., & Dadashova, A. (2010). Traditional-age students becom
 Trockel, M. T., Barnes, M. D., & Egget, D. L. (2000). Health-related variables and academic performance among first-year college students: Implications for sleep and other behaviors. Journal of American College Health, 49(3), 125–131.
 
 Tyler, J. H. (2003). Using state child labor laws to identify the effect of school-year work on high school achievement. Journal of Labor Economics, 21(2), 353–380.
+
 van Aert, R. C., & van Assen, M. (2021). Correcting for publication bias in a meta-analysis with the p-uniform* method. Working paper, Tilburg University & Utrecht University.
 
 Wang, H., Kong, M., Shan, W., & Vong, S. K. (2010). The effects of doing part-time jobs on college student academic performance and social life in a Chinese society. Journal of Education and Work, 23(1), 79–94.

@@ -450,9 +450,9 @@ R. Dang, L. Houanti, M. Simioni, and J. M. Sahut. The role of endogeneity in the
 
 G. Dorfleitner, G. Halbritter, and M. Nguyen. Measuring the level and risk of corporate responsibility–An empirical comparison of different ESG rating approaches. *Journal of Asset Management*, 16:450–466, 2015.
 
-H. Doucouliagos and T. D. Stanley. Are all economic facts greatly exaggerated? Theory competition and selectivity. *Journal of Economic Surveys*, 27(2):316–339, 2013.
-
 H. Doucouliagos and T. D. Stanley. Publication selection bias in minimum-wage research? A meta-regression analysis. *British Journal of Industrial Relations*, 47(2):406–428, 2009.
+
+H. Doucouliagos and T. D. Stanley. Are all economic facts greatly exaggerated? Theory competition and selectivity. *Journal of Economic Surveys*, 27(2):316–339, 2013.
 
 M. Egger, G. D. Smith, M. Schneider, and C. Minder. Bias in meta-analysis detected by a simple, graphical test. *BMJ*, 315(7109):629–634, 1997.
 
@@ -490,7 +490,7 @@ T. Havránek, M. Rusnák, and A. Sokolová. Habit formation in consumption: A me
 
 T. Havránek, Z. Iršová, and O. Zeynalova. Tuition fees and university enrolment: a meta-regression analysis. *Oxford Bulletin of Economics and Statistics*, 80(6):1145–1184, 2018.
 
-T. Havránek, T. D. Stanley, H. Doucouliagos, P. Bom, J. Geyer-Klingeberg, I. Iwasaki, W. R. Reed, K. Rost, and R. C. van Aert. Reporting Guidelines for Meta-Analysis in Economics. *Journal of Economic Surveys*, 34(3):469–475, 2020.
+T. Havránek, T. D. Stanley, H. Doucouliagos, P. R. D. Bom, J. Geyer-Klingeberg, I. Iwasaki, W. R. Reed, K. Rost, and R. C. van Aert. Reporting Guidelines for Meta-Analysis in Economics. *Journal of Economic Surveys*, 34(3):469–475, 2020.
 
 T. Havránek, Z. Iršová, L. Laslopová, and O. Zeynalova. Publication and Attenuation Biases in Measuring Skill Substitution. *The Review of Economics and Statistics*, 106(5):1187–1200, 2024.
 

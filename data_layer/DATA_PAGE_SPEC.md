@@ -36,7 +36,7 @@ They are listed here only so a reader knows the rough scale. **Do not hard-code 
 - **65,349** estimates across them
 - **39** literatures in the harmonised table, **54,087** estimates, **41** columns
 - Every dataset ships as **Parquet and CSV**, with a column-level codebook
-- Licence: **CC BY 4.0 on the compilation only** — see the licence section below
+- Licence: **CC BY 4.0 on everything** — see the licence section below
 
 ## What the page must convey
 
@@ -67,11 +67,15 @@ hand-maintained. Tell me if you want that as a build step and I will write it.
 `api/v1/README.md`. One line is enough; the people who need it will follow it.
 
 **6. Licence and citation, unmissable but not loud.** Use the wording in
-`DATA_PAGE_COPY.md` verbatim. It is scoped to match `/LICENSE` exactly: CC BY 4.0 covers
-the compilation, NOT the underlying datasets, their format conversions, or the papers'
-replication code. **Cite the individual paper when you use its dataset** — that clause is
-the whole basis on which this is released and must not be buried. Do not paraphrase the
-licence; two external reviewers flagged an earlier, looser wording as overreach.
+`DATA_PAGE_COPY.md` verbatim. It is scoped to match `/LICENSE` exactly: CC BY 4.0 on
+everything, with no narrower category and nothing held back. **Cite the individual paper
+when you use its dataset** — that is a request, and it should not be buried, but it is
+not a licence condition. Do not paraphrase the licence.
+
+*Corrected 2026-09-04: this section used to say CC BY 4.0 covered the compilation only
+and not the underlying datasets, their conversions or the replication code. `/LICENSE`
+has since been settled the other way, so the sentence claiming to match it exactly was
+stating the opposite of what it matched.*
 
 **7. That the harmonised table is a beta.** Version `0.9.0-beta`. Frame it as
 provisional and traceable rather than unreliable: it is generated from the published

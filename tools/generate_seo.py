@@ -337,10 +337,12 @@ def build_jsonld(m):
                       or "https://creativecommons.org/licenses/by/4.0/"}
     if authors:
         art["author"] = authors
-    _tr_year = (m.get("technical_report") or {}).get("year")
+    # Same gate as the Highwire date above: the working paper's year is the date of THIS
+    # document only when this page serves the working paper. ECB 1485 is October 2012 and
+    # crisis_ews should say so; a page hosting the typeset article should not.
+    _tr_year = ((m.get("technical_report") or {}).get("year")
+                if (m.get("version") or "record").lower() == "working_paper" else None)
     if m["year"]:
-        # The citation year is the article's, by the owner's choice. The date on THIS
-        # document is the working paper's own: ECB 1485 is October 2012.
         art["datePublished"] = str(_tr_year or m["year"])
     # Same rule as the Highwire tags above: a page serving the working paper must not
     # be modelled as the journal article. JSON-LD is the format crawlers prefer, so
@@ -473,8 +475,16 @@ def highwire_tags(m):
     tags = [f'<meta name="citation_title" content="{esc(m.get("citation_title") or m["title"])}" />']
     for a in m["authors"]:
         tags.append(f'<meta name="citation_author" content="{esc(a)}" />')
+    # The working paper's year belongs to a page that SERVES the working paper. Four pages
+    # host the published article and merely reproduce a working paper's text, and they carry
+    # a technical_report block only to record which one; taking the year from it unconditionally
+    # dated the record-version taxrev to 2015, passthrough to 2015, transmission to 2010 and
+    # tourist to 2018, each alongside the article's own journal, volume, pages and DOI. Gate it
+    # the way the journal tags immediately below are gated.
+    _tr = m.get("technical_report") or {}
+    _is_wp = (m.get("version") or "record").lower() == "working_paper"
     tags.append('<meta name="citation_publication_date" content="%s" />'
-                % ((m.get("technical_report") or {}).get("year") or m["year"]))
+                % ((_tr.get("year") if _is_wp else None) or m["year"]))
     vip = parse_ref(m["reference_line"])
     # Only when THIS page serves the article. crisis_ews serves ECB Working Paper 1485
     # under its own title while citing the Journal of Financial Stability article the

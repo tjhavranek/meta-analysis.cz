@@ -305,7 +305,7 @@
   "meta_keywords": "Class size, student learning, meta-analysis, publication bias, Bayesian model averaging",
   "one_line": "A meta-analysis of 2,819 estimates from 66 studies finds little publication bias and a negligible class size effect on student achievement.",
   "citation_title": "Publication Bias and Model Uncertainty in Measuring the Effect of Class Size on Achievement",
-  "version": "record"
+  "version": "accepted_manuscript"
  },
  {
   "project": "climate",
@@ -772,7 +772,7 @@
   "project": "forward",
   "title": "How Puzzling Is the Forward Premium Puzzle? A Meta-Analysis",
   "literature": "Forward Premium Puzzle",
-  "abstract": "A key theoretical prediction in financial economics is that under risk neutrality and rational expectations a currency's forward rates should form unbiased predictors of future spot rates. Yet scores of empirical studies report negative slope coefficients from regressions of spot rates on forward rates, which is inconsistent with the forward rate unbiasedness hypothesis. We collect 3,643 estimates from 91 research articles and using recently developed techniques investigate the effect of publication and misspecification biases on the reported results. Correcting for these biases we estimate the slope coefficients of 0.31 and 0.98 for developed and emerging currencies respectively, which implies that empirical evidence is in line with the theoretical prediction for emerging economies and less puzzling than commonly thought for developed economies. Our results also suggest that the coefficients are systematically influenced by the choice of data, numeraire currencies, and estimation methods.",
+  "abstract": "A key theoretical prediction in financial economics is that under risk neutrality and rational expectations a currency's forward rates should form unbiased predictors of future spot rates. Yet scores of empirical studies report negative slope coefficients from regressions of spot rates on forward rates, which is inconsistent with the forward rate unbiasedness hypothesis. We collect 3,643 estimates from 91 research articles and using recently developed techniques investigate the effect of publication and misspecification biases on the reported results. Correcting for these biases yields slope coefficients in the intervals (0.23,0.45) and (0.95,1.16) for the currencies of developed and emerging countries respectively, which implies that empirical evidence is in line with the theoretical prediction for emerging economies and less puzzling than commonly thought for developed economies. Our results also suggest that the coefficients are systematically influenced by the choice of data, numeraire currencies, and estimation methods.",
   "reference_line": "Diana Zigraiova, Tomas Havranek, Zuzana Irsova, and Jiri Novak (2021), \"How Puzzling Is the Forward Premium Puzzle? A Meta-Analysis.\" European Economic Review 134, 103714.",
   "authors": [
    "Diana Zigraiova",
@@ -1129,7 +1129,7 @@
   "has_meta_description": true,
   "meta_keywords": "Incentives, experiments, meta-analysis, model uncertainty, publication bias",
   "one_line": "Meta-analysis of 2,193 estimates finds financial incentives have near-zero corrected effect on performance in most field settings.",
-  "version": "record"
+  "version": "accepted_manuscript"
  },
  {
   "project": "inflation",
@@ -1660,7 +1660,7 @@
   "project": "sigma",
   "title": "Measuring Capital-Labor Substitution: The Importance of Method Choices and Publication Bias",
   "literature": "Capital-Labor Substitution",
-  "abstract": "We show that the large elasticity of substitution between capital and labor estimated in the literature on average, 0.9, can be explained by three factors: publication bias, use of aggregated data, and omission of the first-order condition for capital. The mean elasticity conditional on the absence of publication bias, disaggregated data, and inclusion of information from the first-order condition for capital is 0.3. To obtain this result, we collect 3,186 estimates of the elasticity reported in 121 studies, codify 71 variables that reflect the context in which researchers produce their estimates, and address model uncertainty by Bayesian and frequentist model averaging. We employ nonlinear techniques to correct for publication bias, which is responsible for at least half of the overall reduction in the mean elasticity from 0.9 to 0.3. Our findings also suggest that a failure to normalize the production function leads to a substantial upward bias in the estimated elasticity. The weight of evidence accumulated in the empirical literature emphatically rejects the Cobb-Douglas specification.",
+  "abstract": "We show that the large elasticity of substitution between capital and labor estimated in the literature on average, 0.9, can be explained by three issues: publication bias, use of cross-country variation, and omission of the first-order condition for capital. The mean elasticity conditional on the absence of these issues is 0.3. To obtain this result, we collect 3,186 estimates of the elasticity reported in 121 studies, codify 71 variables that reflect the context in which researchers produce their estimates, and address model uncertainty by Bayesian and frequentist model averaging. We employ nonlinear techniques to correct for publication bias, which is responsible for at least half of the overall reduction in the mean elasticity from 0.9 to 0.3. Our findings also suggest that a failure to normalize the production function leads to a substantial upward bias in the estimated elasticity. The weight of evidence accumulated in the empirical literature emphatically rejects the Cobb-Douglas specification.",
   "reference_line": "Sebastian Gechert, Tomas Havranek, Zuzana Irsova, and Dominika Kolcunova (2022), \"Measuring Capital-Labor Substitution: The Importance of Method Choices and Publication Bias.\" Review of Economic Dynamics 45, 55-82.",
   "authors": [
    "Sebastian Gechert",
@@ -3085,7 +3085,8 @@
    "number": "6/2010",
    "year": 2010
   },
-  "transcript_pdf": "transmission.pdf"
+  "transcript_pdf": "transmission.pdf",
+  "citation_title": "Monetary Transmission and the Financial Sector in the Czech Republic"
  },
  {
   "project": "lessons",

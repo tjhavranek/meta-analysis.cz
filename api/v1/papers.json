@@ -677,7 +677,7 @@
   {
    "project": "class",
    "document_type": "paper",
-   "version": "record",
+   "version": "accepted_manuscript",
    "version_note": null,
    "published_as": null,
    "title": "Publication Bias and Model Uncertainty in Measuring the Effect of Class Size on Achievement",
@@ -2815,7 +2815,7 @@
    "full_text_url": "https://meta-analysis.cz/forward/paper/",
    "project_url": "https://meta-analysis.cz/forward/",
    "pdf_url": "https://meta-analysis.cz/forward/forward2.pdf",
-   "abstract": "A key theoretical prediction in financial economics is that under risk neutrality and rational expectations a currency's forward rates should form unbiased predictors of future spot rates. Yet scores of empirical studies report negative slope coefficients from regressions of spot rates on forward rates, which is inconsistent with the forward rate unbiasedness hypothesis. We collect 3,643 estimates from 91 research articles and using recently developed techniques investigate the effect of publication and misspecification biases on the reported results. Correcting for these biases we estimate the slope coefficients of 0.31 and 0.98 for developed and emerging currencies respectively, which implies that empirical evidence is in line with the theoretical prediction for emerging economies and less puzzling than commonly thought for developed economies. Our results also suggest that the coefficients are systematically influenced by the choice of data, numeraire currencies, and estimation methods.",
+   "abstract": "A key theoretical prediction in financial economics is that under risk neutrality and rational expectations a currency's forward rates should form unbiased predictors of future spot rates. Yet scores of empirical studies report negative slope coefficients from regressions of spot rates on forward rates, which is inconsistent with the forward rate unbiasedness hypothesis. We collect 3,643 estimates from 91 research articles and using recently developed techniques investigate the effect of publication and misspecification biases on the reported results. Correcting for these biases yields slope coefficients in the intervals (0.23,0.45) and (0.95,1.16) for the currencies of developed and emerging countries respectively, which implies that empirical evidence is in line with the theoretical prediction for emerging economies and less puzzling than commonly thought for developed economies. Our results also suggest that the coefficients are systematically influenced by the choice of data, numeraire currencies, and estimation methods.",
    "sections": [
     {
      "level": 2,
@@ -3739,7 +3739,7 @@
   {
    "project": "incentives",
    "document_type": "paper",
-   "version": "record",
+   "version": "accepted_manuscript",
    "version_note": null,
    "published_as": null,
    "title": "Financial Incentives and Performance: A Meta-Analysis of Experiments in Economics",
@@ -6458,7 +6458,7 @@
    "full_text_url": "https://meta-analysis.cz/sigma/paper/",
    "project_url": "https://meta-analysis.cz/sigma/",
    "pdf_url": "https://meta-analysis.cz/sigma/sigma2.pdf",
-   "abstract": "We show that the large elasticity of substitution between capital and labor estimated in the literature on average, 0.9, can be explained by three factors: publication bias, use of aggregated data, and omission of the first-order condition for capital. The mean elasticity conditional on the absence of publication bias, disaggregated data, and inclusion of information from the first-order condition for capital is 0.3. To obtain this result, we collect 3,186 estimates of the elasticity reported in 121 studies, codify 71 variables that reflect the context in which researchers produce their estimates, and address model uncertainty by Bayesian and frequentist model averaging. We employ nonlinear techniques to correct for publication bias, which is responsible for at least half of the overall reduction in the mean elasticity from 0.9 to 0.3. Our findings also suggest that a failure to normalize the production function leads to a substantial upward bias in the estimated elasticity. The weight of evidence accumulated in the empirical literature emphatically rejects the Cobb-Douglas specification.",
+   "abstract": "We show that the large elasticity of substitution between capital and labor estimated in the literature on average, 0.9, can be explained by three issues: publication bias, use of cross-country variation, and omission of the first-order condition for capital. The mean elasticity conditional on the absence of these issues is 0.3. To obtain this result, we collect 3,186 estimates of the elasticity reported in 121 studies, codify 71 variables that reflect the context in which researchers produce their estimates, and address model uncertainty by Bayesian and frequentist model averaging. We employ nonlinear techniques to correct for publication bias, which is responsible for at least half of the overall reduction in the mean elasticity from 0.9 to 0.3. Our findings also suggest that a failure to normalize the production function leads to a substantial upward bias in the estimated elasticity. The weight of evidence accumulated in the empirical literature emphatically rejects the Cobb-Douglas specification.",
    "sections": [
     {
      "level": 2,
@@ -7228,7 +7228,7 @@
    "version": "record",
    "version_note": "The PDF above is the published article. The full text reproduced here follows Czech National Bank Working Paper 6/2010, which appeared two years later under a different title. The working paper carries a nontechnical summary, which the journal article does not. Its cross-references to the impulse-response figures are one behind the figures themselves --- the text that says “Figure 1” points at Figure 2, and so on --- and are reproduced as printed. The appendix charts, which the working paper prints unnumbered, are numbered A1 to A6 here so the page can refer to them.",
    "published_as": null,
-   "title": "Do Financial Variables Help Predict Macroeconomic Environment? The Case of the Czech Republic",
+   "title": "Monetary Transmission and the Financial Sector in the Czech Republic",
    "authors": [
     "Tomas Havranek",
     "Roman Horvath",

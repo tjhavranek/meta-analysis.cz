@@ -1120,7 +1120,12 @@ def build_page(project, meta, body, toc):
     _suppl = bool(meta.get("parent_label"))
     if abstract:
         art["abstract"] = abstract
-    _tr_year = (meta.get("technical_report") or {}).get("year")
+    # Only a page that SERVES a working paper is dated by it. Four pages host the published
+    # article and merely reproduce a working paper's text; they carry a technical_report
+    # block to record which one, and reading the year from it unconditionally dated the
+    # article to the working paper's year beside the article's own DOI and pages.
+    _tr_year = ((meta.get("technical_report") or {}).get("year")
+                if (meta.get("version") or "record").lower() == "working_paper" else None)
     if year:
         art["datePublished"] = str(_tr_year or year)
     if journal and not (_wp or _suppl):
@@ -1135,7 +1140,15 @@ def build_page(project, meta, body, toc):
             art["identifier"] = {"@type": "PropertyValue", "propertyID": "DOI",
                                  "value": doi.replace("https://doi.org/", "")}
 
-    cite_meta = ['<meta name="citation_title" content="%s" />' % esc_attr(title)]
+    # The VISIBLE title of a page that serves an earlier edition is that edition's, which is
+    # what article_title() returns. The Scholar tag is a different claim: it says which
+    # published work this page is, and it sits beside citation_doi, citation_journal_title,
+    # citation_volume and citation_firstpage. transmission served the CNB working paper's
+    # title next to the article's DOI, telling Scholar that a differently titled document is
+    # that article -- the failure generate_seo.py documents and guards against for
+    # crisis_ews. An explicit citation_title in papers.json settles it.
+    cite_meta = ['<meta name="citation_title" content="%s" />'
+                 % esc_attr(meta.get("citation_title") or title)]
     cite_meta += ['<meta name="citation_author" content="%s" />' % esc_attr(a) for a in authors]
     if year:
         cite_meta.append('<meta name="citation_publication_date" content="%s" />'

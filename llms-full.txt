@@ -3623,7 +3623,7 @@ TABLE S8. Publication bias tests separately for beauty premiums and penalties
 | **Part 1. Subsample of penalties** | | | | | |
 |---|---|---|---|---|---|
 | **Panel A** | OLS | FE | BE | MAIVE | Weighted |
-| Publication bias | 0.165^{**} | -0.354 | 0.702^{***} | 0.029 | 0.354^{**} |
+| Publication bias | 0.165^{**} | -0.354 | 0.702^{***} | 0.029 | 0.354^{***} |
 | (*standard error*) | (0.0678) | (0.235) | (0.168) | (0.833) | (0.131) |
 |  | [0.021, 0.406] |  |  | {-1.557, 1.662} | [0.028, 1.395] |
 | Effect beyond bias | 2.647^{***} | 4.801^{***} | 0.447 | 3.178 | 2.655^{**} |
@@ -4178,9 +4178,7 @@ TABLE S18 (continued). Description of subsamples used in the meta-analysis
 | Some customer contact | Subample where the job requires partial or mediated client exposure (e.g., teachers, managers). The classification is based on occupational profiles from the O*NET occupational database. Details on how each observation is handled can be found in the online appendix at meta-analysis.cz/beauty |
 | Direct customer contact | Subample where the interaction with clients is central to job performance (e.g., sales, service, and sex industry roles). The classification is based on occupational profiles from the O*NET occupational database. Details on how each observation is handled can be found in the online appendix at meta-analysis.cz/beauty |
 | *Measurability of output* | |
-| Low output measurability | Subsample where the output-measurability index is in the low range ($index \leq 0.4$).
-
-Output measurability is an index ranging from 0 (low) to 1 (high) that measures how objectively a measure of a worker’s output used in a primary study can be quantified and attributed directly to that individual. It is constructed using data from the O*NET occupational database, adjusted based on the specific performance measure used in a study. Low-output-measurability outcomes are mostly subjective, composite, or only loosely linked to true productivity. Typical examples include teaching evaluations and course ratings, composite indices of fringe benefits, career rank, qualitative performance reviews, and broadly aggregated wages not tied to specific tasks. The cutoff at 0.4 is used because the empirical distribution shows a natural break at this point, with all observations below or equal 0.4 belonging to a tightly clustered group of purely subjective or weakly attributable performance measures whereas values above 0.4 begin to incorporate at least some objectively recorded element (e.g., pay, grades, sales), even if still influenced by discretion or multiple inputs. Details on how each observation is handled can be found in the online appendix at meta-analysis.cz/beauty |
+| Low output measurability | Subsample where the output-measurability index is in the low range ($index \leq 0.4$). Output measurability is an index ranging from 0 (low) to 1 (high) that measures how objectively a measure of a worker’s output used in a primary study can be quantified and attributed directly to that individual. It is constructed using data from the O*NET occupational database, adjusted based on the specific performance measure used in a study. Low-output-measurability outcomes are mostly subjective, composite, or only loosely linked to true productivity. Typical examples include teaching evaluations and course ratings, composite indices of fringe benefits, career rank, qualitative performance reviews, and broadly aggregated wages not tied to specific tasks. The cutoff at 0.4 is used because the empirical distribution shows a natural break at this point, with all observations below or equal 0.4 belonging to a tightly clustered group of purely subjective or weakly attributable performance measures whereas values above 0.4 begin to incorporate at least some objectively recorded element (e.g., pay, grades, sales), even if still influenced by discretion or multiple inputs. Details on how each observation is handled can be found in the online appendix at meta-analysis.cz/beauty |
 
 TABLE S18 (continued). Description of subsamples used in the meta-analysis
 | Subsample | Description |
@@ -6437,37 +6435,67 @@ Predictions of climate change caused by humans influence policy decisions in mos
 
 #### REFERENCES
 
-1. Andronova, N. G. & M. E. Schlesinger (2001): “Objective estimation of the probability density function for climate sensitivity.” *Journal of Geophysical Research: Atmospheres (1984–2012)* 106(D19): pp. 22605–22611.
-2. Babecky, J. & T. Havranek (2014): “Structural reforms and growth in transition.” *The Economics of Transition* 22(1): pp. 13–42.
-3. De Long, J. B. & K. Lang (1992): “Are all economic hypotheses false?” *Journal of Political Economy* 100: pp. 1257–1257.
-4. Doucouliagos, C. & T. Stanley (2013): “Are all economic facts greatly exaggerated? Theory competition and selectivity.” *Journal of Economic Surveys* 27(2): pp. 316–339.
-5. EPA (2013): “The social cost of carbon.” http://www.epa.gov/climatechange/EPAactivities/economics/scc.html. [cit. 2014-05-07].
-6. EU (2014): “Eu greenhouse gas emissions and targets.” http://ec.europa.eu/clima/policies/ggas/index_en.htm/. [cit. 2014-05-01].
-7. Havranek, T. (2010): “Rose effect and the euro: is the magic gone?” *Review of World Economics* 146(2): pp. 241–261.
-8. Havranek, T. (2015): “Measuring intertemporal substitution: The importance of method choices and selective reporting.” *Journal of the European Economic Association* (forthcoming).
-9. Havranek, T., R. Horvath, Z. Irsova, & M. Rusnak (2015): “Cross-Country Heterogeneity in Intertemporal Substitution.” *Journal of International Economics* 96(1): pp. 100–118.
-10. Havranek, T. & Z. Irsova (2010): “Meta-Analysis of Intra-Industry FDI Spillovers: Updated Evidence.” *Czech Journal of Economics and Finance (Finance a uver)* 60(2): pp. 151–174.
-11. Havranek, T. & Z. Irsova (2011): “Estimating vertical spillovers from FDI: Why results vary and what the true effect is.” *Journal of International Economics* 85(2): pp. 234–244.
-12. Havranek, T. & Z. Irsova (2012): “Survey Article: Publication Bias in the Literature on Foreign Direct Investment Spillovers.” *Journal of Development Studies* 48(10): pp. 1375–1396.
-13. Havranek, T., Z. Irsova, & K. Janda (2012): “Demand for gasoline is more price-inelastic than commonly thought.” *Energy Economics* 34(1): pp. 201–207.
-14. Havranek, T. & O. Kokes (2015): “Income elasticity of gasoline demand: A meta-analysis.” *Energy Economics* 47(C): pp. 77–86.
-15. Havranek, T. & M. Rusnak (2013): “Transmission Lags of Monetary Policy: A Meta-Analysis.” *International Journal of Central Banking* 9(4): pp. 39–76.
-16. Havranek, T. & J. Sedlarikova (2014): “A Meta-Analysis of the Income Elasticity of Money Demand.” *Politicka ekonomie* 2014(3): pp. 366–382.
-17. Irsova, Z. & T. Havranek (2010): “Measuring Bank Efficiency: A Meta-Regression Analysis.” *Prague Economic Papers* 2010(4): pp. 307–328.
-18. Irsova, Z. & T. Havranek (2013a): “Determinants of Horizontal Spillovers from FDI: Evidence from a Large Meta-Analysis.” *World Development* 42(C): pp. 1–15.
-19. Irsova, Z. & T. Havranek (2013b): “Meta-Analysis of Bank Efficiency Measurement in Transitional Countries.” *Transformations in Business and Economics* 12(2): pp. 163–183.
-20. Masters, T. (2013): “Observational estimate of climate sensitivity from changes in the rate of ocean heat uptake and comparison to cmip5 models.” *Climate Dynamics* pp. 1–9.
-21. Michaels, P. J. (2008): “Evidence for ‘publication bias’ concerning global warming in science and nature.” *Energy & environment* 19(2): pp. 287–301.
-22. OECD (2013): “Climate and carbon aligning prices and policies.” 01: pp. 11–23.
-23. Pachauri, R. K. & A. Reisinger (2007): *Climate Change 2007 Synthesis Report: Summary for Policymakers*. IPCC Secretariat.
-24. Reckova, D. & Z. Irsova (2015): “Additional Results to ‘Publication Bias in Measuring Anthropogenic Climate Change’.” *Technical report*, Charles University, Prague. Available at meta-analysis.cz/climate.
-25. Rosenthal, R. (1979): “The file drawer problem and tolerance for null results.” *Psychological bulletin* 86(3): p. 638.
-26. Rusnak, M., T. Havranek, & R. Horvath (2013): “How to Solve the Price Puzzle? A Meta-Analysis.” *Journal of Money, Credit and Banking* 45(1): pp. 37–70.
-27. Solomon, S., D. Qin, M. Manning, Z. Chen, M. Marquis, K. Averyt, M. Tignor, & H. Miller (2007): “Ipcc, 2007: climate change 2007: the physical science basis.” *Contribution of Working Group I to the fourth assessment report of the Intergovernmental Panel on Climate Change*.
-28. Stanley, T. D. (2001): “Wheat from chaff: Meta-analysis as quantitative literature review.” *Journal of economic perspectives* pp. 131–150.
-29. Stanley, T. D. (2005): “Beyond publication bias.” *Journal of Economic Surveys* 19(3): pp. 309–345.
-30. Stocker, D. Q. (2013): “Climate change 2013: The physical science basis.” *Working Group I Contribution to the Fifth Assessment Report of the Intergovernmental Panel on Climate Change, Summary for Policymakers, IPCC* .
-31. Valickova, P., T. Havranek, & R. Horvath (2015): “Financial Development and Economic Growth: A Meta-Analysis.” *Journal of Economic Surveys* 29(3): pp. 506-526.
+Andronova, N. G. & M. E. Schlesinger (2001): “Objective estimation of the probability density function for climate sensitivity.” *Journal of Geophysical Research: Atmospheres (1984–2012)* 106(D19): pp. 22605–22611.
+
+Babecky, J. & T. Havranek (2014): “Structural reforms and growth in transition.” *The Economics of Transition* 22(1): pp. 13–42.
+
+De Long, J. B. & K. Lang (1992): “Are all economic hypotheses false?” *Journal of Political Economy* 100: pp. 1257–1257.
+
+Doucouliagos, C. & T. Stanley (2013): “Are all economic facts greatly exaggerated? Theory competition and selectivity.” *Journal of Economic Surveys* 27(2): pp. 316–339.
+
+EPA (2013): “The social cost of carbon.” http://www.epa.gov/climatechange/EPAactivities/economics/scc.html. [cit. 2014-05-07].
+
+EU (2014): “Eu greenhouse gas emissions and targets.” http://ec.europa.eu/clima/policies/ggas/index_en.htm/. [cit. 2014-05-01].
+
+Havranek, T. (2010): “Rose effect and the euro: is the magic gone?” *Review of World Economics* 146(2): pp. 241–261.
+
+Havranek, T. (2015): “Measuring intertemporal substitution: The importance of method choices and selective reporting.” *Journal of the European Economic Association* (forthcoming).
+
+Havranek, T., R. Horvath, Z. Irsova, & M. Rusnak (2015): “Cross-Country Heterogeneity in Intertemporal Substitution.” *Journal of International Economics* 96(1): pp. 100–118.
+
+Havranek, T. & Z. Irsova (2010): “Meta-Analysis of Intra-Industry FDI Spillovers: Updated Evidence.” *Czech Journal of Economics and Finance (Finance a uver)* 60(2): pp. 151–174.
+
+Havranek, T. & Z. Irsova (2011): “Estimating vertical spillovers from FDI: Why results vary and what the true effect is.” *Journal of International Economics* 85(2): pp. 234–244.
+
+Havranek, T. & Z. Irsova (2012): “Survey Article: Publication Bias in the Literature on Foreign Direct Investment Spillovers.” *Journal of Development Studies* 48(10): pp. 1375–1396.
+
+Havranek, T., Z. Irsova, & K. Janda (2012): “Demand for gasoline is more price-inelastic than commonly thought.” *Energy Economics* 34(1): pp. 201–207.
+
+Havranek, T. & O. Kokes (2015): “Income elasticity of gasoline demand: A meta-analysis.” *Energy Economics* 47(C): pp. 77–86.
+
+Havranek, T. & M. Rusnak (2013): “Transmission Lags of Monetary Policy: A Meta-Analysis.” *International Journal of Central Banking* 9(4): pp. 39–76.
+
+Havranek, T. & J. Sedlarikova (2014): “A Meta-Analysis of the Income Elasticity of Money Demand.” *Politicka ekonomie* 2014(3): pp. 366–382.
+
+Irsova, Z. & T. Havranek (2010): “Measuring Bank Efficiency: A Meta-Regression Analysis.” *Prague Economic Papers* 2010(4): pp. 307–328.
+
+Irsova, Z. & T. Havranek (2013a): “Determinants of Horizontal Spillovers from FDI: Evidence from a Large Meta-Analysis.” *World Development* 42(C): pp. 1–15.
+
+Irsova, Z. & T. Havranek (2013b): “Meta-Analysis of Bank Efficiency Measurement in Transitional Countries.” *Transformations in Business and Economics* 12(2): pp. 163–183.
+
+Masters, T. (2013): “Observational estimate of climate sensitivity from changes in the rate of ocean heat uptake and comparison to cmip5 models.” *Climate Dynamics* pp. 1–9.
+
+Michaels, P. J. (2008): “Evidence for ‘publication bias’ concerning global warming in science and nature.” *Energy & environment* 19(2): pp. 287–301.
+
+OECD (2013): “Climate and carbon aligning prices and policies.” 01: pp. 11–23.
+
+Pachauri, R. K. & A. Reisinger (2007): *Climate Change 2007 Synthesis Report: Summary for Policymakers*. IPCC Secretariat.
+
+Reckova, D. & Z. Irsova (2015): “Additional Results to ‘Publication Bias in Measuring Anthropogenic Climate Change’.” *Technical report*, Charles University, Prague. Available at meta-analysis.cz/climate.
+
+Rosenthal, R. (1979): “The file drawer problem and tolerance for null results.” *Psychological bulletin* 86(3): p. 638.
+
+Rusnak, M., T. Havranek, & R. Horvath (2013): “How to Solve the Price Puzzle? A Meta-Analysis.” *Journal of Money, Credit and Banking* 45(1): pp. 37–70.
+
+Solomon, S., D. Qin, M. Manning, Z. Chen, M. Marquis, K. Averyt, M. Tignor, & H. Miller (2007): “Ipcc, 2007: climate change 2007: the physical science basis.” *Contribution of Working Group I to the fourth assessment report of the Intergovernmental Panel on Climate Change*.
+
+Stanley, T. D. (2001): “Wheat from chaff: Meta-analysis as quantitative literature review.” *Journal of economic perspectives* pp. 131–150.
+
+Stanley, T. D. (2005): “Beyond publication bias.” *Journal of Economic Surveys* 19(3): pp. 309–345.
+
+Stocker, D. Q. (2013): “Climate change 2013: The physical science basis.” *Working Group I Contribution to the Fifth Assessment Report of the Intergovernmental Panel on Climate Change, Summary for Policymakers, IPCC* .
+
+Valickova, P., T. Havranek, & R. Horvath (2015): “Financial Development and Economic Growth: A Meta-Analysis.” *Journal of Economic Surveys* 29(3): pp. 506-526.
 
 ## Bank Competition and Financial Stability: Much Ado About Nothing?
 URL: https://meta-analysis.cz/competition/
@@ -15975,9 +16003,9 @@ R. Dang, L. Houanti, M. Simioni, and J. M. Sahut. The role of endogeneity in the
 
 G. Dorfleitner, G. Halbritter, and M. Nguyen. Measuring the level and risk of corporate responsibility–An empirical comparison of different ESG rating approaches. *Journal of Asset Management*, 16:450–466, 2015.
 
-H. Doucouliagos and T. D. Stanley. Are all economic facts greatly exaggerated? Theory competition and selectivity. *Journal of Economic Surveys*, 27(2):316–339, 2013.
-
 H. Doucouliagos and T. D. Stanley. Publication selection bias in minimum-wage research? A meta-regression analysis. *British Journal of Industrial Relations*, 47(2):406–428, 2009.
+
+H. Doucouliagos and T. D. Stanley. Are all economic facts greatly exaggerated? Theory competition and selectivity. *Journal of Economic Surveys*, 27(2):316–339, 2013.
 
 M. Egger, G. D. Smith, M. Schneider, and C. Minder. Bias in meta-analysis detected by a simple, graphical test. *BMJ*, 315(7109):629–634, 1997.
 
@@ -16015,7 +16043,7 @@ T. Havránek, M. Rusnák, and A. Sokolová. Habit formation in consumption: A me
 
 T. Havránek, Z. Iršová, and O. Zeynalova. Tuition fees and university enrolment: a meta-regression analysis. *Oxford Bulletin of Economics and Statistics*, 80(6):1145–1184, 2018.
 
-T. Havránek, T. D. Stanley, H. Doucouliagos, P. Bom, J. Geyer-Klingeberg, I. Iwasaki, W. R. Reed, K. Rost, and R. C. van Aert. Reporting Guidelines for Meta-Analysis in Economics. *Journal of Economic Surveys*, 34(3):469–475, 2020.
+T. Havránek, T. D. Stanley, H. Doucouliagos, P. R. D. Bom, J. Geyer-Klingeberg, I. Iwasaki, W. R. Reed, K. Rost, and R. C. van Aert. Reporting Guidelines for Meta-Analysis in Economics. *Journal of Economic Surveys*, 34(3):469–475, 2020.
 
 T. Havránek, Z. Iršová, L. Laslopová, and O. Zeynalova. Publication and Attenuation Biases in Measuring Skill Substitution. *The Review of Economics and Statistics*, 106(5):1187–1200, 2024.
 
@@ -30869,6 +30897,8 @@ Angeloni, Ignazio, Luc Aucremanne, Michael Ehrmann, Jordi Galí, Andrew Levin, a
 Arnone, Marco, Bernard J. Laurens, Jean-Francois Segalotto, and Martin Sommer. (2009) “Central Bank Autonomy: Lessons from Global Trends.” *IMF Staff Papers*, 56, 263–296.
 
 Ashenfelter, Orley, and Michael Greenstone. (2004) “Estimating the Value of a Statistical Life: The Importance of Omitted Variables and Publication Bias.” *American Economic Review*, 94, 454–60.
+Banbura, Marta, Domenico Giannone, and Lucrezia Reichlin. (2010) “Large Bayesian Vector Auto Regressions.” *Journal of Applied Econometrics*, 25, 71–92.
+
 
 Bank of England. (1999) “The Transmission Mechanism of Monetary Policy. A Paper by the Monetary Policy Committee.” Bank of England, April 1999.
 
@@ -30887,6 +30917,8 @@ Bernanke, Ben S., and Mark Gertler. (1995) “Inside the Black Box: The Credit C
 Blanchard, Olivier J., and Mark W. Watson. (1986) “Are Business Cycles All Alike?” In *The American Business Cycle: Continuity and Change*, pp. 123–180. Cambridge, MA: National Bureau of Economic Research.
 
 Boivin, Jean, and Marc P. Giannoni. (2006) “Has Monetary Policy Become More Effective?” *Review of Economics and Statistics*, 88, 445–62.
+Borys, Magdalena, Roman Horvath, and Michal Franta. (2009) “The Effects of Monetary Policy in the Czech Republic: An Empirical Study.” *Empirica*, 36, 419–43.
+
 
 Canova, Fabio, and Gianni D. Nicolo. (2002) “Monetary Disturbances Matter for Business Fluctuations in the G-7.” *Journal of Monetary Economics*, 49, 1131–59.
 
@@ -30923,6 +30955,8 @@ European Central Bank. (2010) “Monthly Bulletin.” European Central Bank, May
 Giordani, Paolo. (2004) “An Alternative Explanation of the Price Puzzle.” *Journal of Monetary Economics*, 51, 1271–96.
 
 Görg, Holger, and Eric Strobl. (2001) “Multinational Companies and Productivity Spillovers: A Meta-analysis.” *The Economic Journal*, 111, F723–F739.
+Hanson, Michael S. (2004) “The Price Puzzle Reconsidered.” *Journal of Monetary Economics*, 51, 1385–1413.
+
 
 Havranek, Tomas, and Zuzana Irsova. (2011) “Estimating Vertical Spillovers from FDI: Why Results Vary and What the True Effect Is.” *Journal of International Economics*, 85, 234–44.
 
@@ -37940,6 +37974,7 @@ Baert, S., Neyt, B., Omey, E., & Verhaest, D. (2017). Student work, educational 
 Beerkens, M., Magi, E., & Lill, L. (2011). University studies as a side job: Causes and consequences of massive student employment in Estonia. Higher Education, 61(6), 679–692.
 
 Beffy, M., Fougere, D., & Maurel, A. (2013). The effect of college employment on graduation: Evidence from France. CEPR Discussion Papers 9565, C.E.P.R. Discussion Papers.
+
 BLS (2020). Bureau of Labor Statistics news releases. Various years, retrieved from https://www.bls.gov/bls/newsrels.htm.
 
 Body, K. M.-D., Bonnal, L., & Giret, J.-F. (2014). Does student employment really impact academic achievement? The case of France. Applied Economics, 46(25), 3061–3073.
@@ -38041,6 +38076,7 @@ Kalenkoski, C., & Pabilonia, S. (2010). Parental transfers, student achievement,
 Kohen, A. I., Nestel, G., & Karmas, C. (1978). Factors affecting individual persistence rates in undergraduate college programs. American Educational Research Journal, 15(2), 233–252.
 
 Kouliavtsev, M. (2013). The Impact of employment and extracurricular involvement on undergraduates’ performance in a business statistics course. Journal of Economics and Economic Education Research, 14(3), 53–66.
+
 Le Barbanchon, T., Ubfal, D., & Araya, F. (2023). The effects of working while in school: Evidence from employment lotteries. American Economic Journal: Applied Economics, 15(1), 383–410.
 
 Lee, C., & Orazem, P. F. (2010). High school employment, school performance, and college entry. Economics of Education Review, 29(1), 29–39.
@@ -38146,6 +38182,7 @@ Torres, V., Gross, J. P., & Dadashova, A. (2010). Traditional-age students becom
 Trockel, M. T., Barnes, M. D., & Egget, D. L. (2000). Health-related variables and academic performance among first-year college students: Implications for sleep and other behaviors. Journal of American College Health, 49(3), 125–131.
 
 Tyler, J. H. (2003). Using state child labor laws to identify the effect of school-year work on high school achievement. Journal of Labor Economics, 21(2), 353–380.
+
 van Aert, R. C., & van Assen, M. (2021). Correcting for publication bias in a meta-analysis with the p-uniform* method. Working paper, Tilburg University & Utrecht University.
 
 Wang, H., Kong, M., Shan, W., & Vong, S. K. (2010). The effects of doing part-time jobs on college student academic performance and social life in a Chinese society. Journal of Education and Work, 23(1), 79–94.
@@ -42818,7 +42855,7 @@ FIGURE S29. MSE: $p$-hacking selection, positive effect ($\alpha_1 = 1$), variou
 3. Pustejovsky JE, Rodgers MA. Testing for funnel plot asymmetry of standardized mean differences. *Research Synthesis Methods* 2019; 10(1): 57–71.
 4. Rodgers MA, Pustejovsky JE. Evaluating meta-analytic methods to detect selective reporting in the presence of dependent effect sizes. *Psychological Methods* 2021; 26(2): 141–160.
 5. Andrews I, Kasy M. Identification of and correction for publication bias. *American Economic Review* 2019; 109(8): 2766–2794.
-6. Kvarven A, Stromland E, Johannesson M. Identification of and Correction for Publication Bias: Comment. MetaArXiv dh87m, Center for Open Science, doi: 10.31222/osf.io/dh87m; 2019.
+6. Kvarven A, Stromland E, Johannesson M. Identification of and Correction for Publication Bias: Comment. MetaArXiv dh87m, Center for Open Science, doi: 10.31219/osf.io/dh87m; 2019.
 7. Hong S, Reed WR. Using Monte Carlo experiments to select meta-analytic estimators. *Research Synthesis Methods* 2021; 12(2): 192–215.
 8. Mathur MB, VanderWeele TJ. Sensitivity analysis for publication bias in meta-analyses. *Journal of the Royal Statistical Society Series C* 2020; 69(5): 10911119.
 9. Mathur MB. Sensitivity analysis for p-hacking in meta-analyses. Quantitative Sciences Unit and Department of Pediatrics, Stanford University, working paper, doi: 10.31219/osf.io/ezjsx; 2022.
@@ -42863,7 +42900,7 @@ FIGURE S29. MSE: $p$-hacking selection, positive effect ($\alpha_1 = 1$), variou
 48. Stanley TD, Doucouliagos H. Meta-regression approximations to reduce publication selection bias. *Research Synthesis Methods* 2014; 5(1): 60–78.
 49. Bom PRD, Rachinger H. A generalized-weights solution to sample overlap in meta-analysis. *Research Synthesis Methods* 2020; 11(6): 812–832.
 50. Joshi M, Pustejovsky JE, Beretvas SN. Cluster wild bootstrapping to handle dependent effect sizes in meta-analysis with a small number of studies. *Research Synthesis Methods* 2022; 13(4): 457–477.
-51. Pustejovsky JE, Tipton E. Meta-Analysis with Robust Variance Estimation: Expanding the Range of Working Models. MetaArXiv vyfcj, Center for Open Science, doi: 10.31222/osf.io/vyfcj; 2020.
+51. Pustejovsky JE, Tipton E. Meta-Analysis with Robust Variance Estimation: Expanding the Range of Working Models. MetaArXiv vyfcj, Center for Open Science, doi: 10.31219/osf.io/vyfcj; 2020.
 52. Vembye M, Pustejovsky J, Pigott T. Power Approximations for Overall Average Effects in Meta-Analysis With Dependent Effect Sizes. *Journal of Educational and Behavioral Statistics* 2023; 48(1): 70–102.
 53. Ioannidis JP, Stanley TD, Doucouliagos H. The Power of Bias in Economics Research. *The Economic Journal* 2017; 127(605): F236–F265.
 54. Hausman JA. Specification Tests in Econometrics. *Econometrica* 1978; 46(6): 1251–1271.

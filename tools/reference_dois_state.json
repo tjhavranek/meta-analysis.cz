@@ -17670,6 +17670,17 @@
 "2001"
 ]
 },
+"6de6dc4cbc294b22": {
+"doi": "10.1111/joes.12363",
+"overlap": 1.0,
+"project": "esg",
+"text": "T. Havr\u00e1nek, T. D. Stanley, H. Doucouliagos, P. R. D. Bom, J. Geyer-Klingeberg, I. Iwasaki, W. R. Reed, K. Rost, and R. C. van Aert. Reporting Guidelines for Meta-Analysis in Economics. Journal of Economic Surveys, 34(3):469\u2013475, 2020.",
+"title": "REPORTING GUIDELINES FOR META\u2010ANALYSIS IN ECONOMICS",
+"why": "all three checks passed",
+"years": [
+"2020"
+]
+},
 "6df99393e1a1eb53": {
 "doi": "10.1111/ecoj.12461",
 "overlap": 1.0,
@@ -39464,17 +39475,6 @@
 "why": "all three checks passed",
 "years": [
 "2013"
-]
-},
-"fad61ad3de4b920b": {
-"doi": "10.1111/joes.12363",
-"overlap": 1.0,
-"project": "esg",
-"text": "T. Havr\u00e1nek, T. D. Stanley, H. Doucouliagos, P. Bom, J. Geyer-Klingeberg, I. Iwasaki, W. R. Reed, K. Rost, and R. C. van Aert. Reporting Guidelines for Meta-Analysis in Economics. Journal of Economic Surveys, 34(3):469\u2013475, 2020.",
-"title": "REPORTING GUIDELINES FOR META\u2010ANALYSIS IN ECONOMICS",
-"why": "all three checks passed",
-"years": [
-"2020"
 ]
 },
 "fad918e379f20f5f": {

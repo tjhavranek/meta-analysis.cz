@@ -585,6 +585,8 @@ Angeloni, Ignazio, Luc Aucremanne, Michael Ehrmann, Jordi Galí, Andrew Levin, a
 Arnone, Marco, Bernard J. Laurens, Jean-Francois Segalotto, and Martin Sommer. (2009) “Central Bank Autonomy: Lessons from Global Trends.” *IMF Staff Papers*, 56, 263–296.
 
 Ashenfelter, Orley, and Michael Greenstone. (2004) “Estimating the Value of a Statistical Life: The Importance of Omitted Variables and Publication Bias.” *American Economic Review*, 94, 454–60.
+Banbura, Marta, Domenico Giannone, and Lucrezia Reichlin. (2010) “Large Bayesian Vector Auto Regressions.” *Journal of Applied Econometrics*, 25, 71–92.
+
 
 Bank of England. (1999) “The Transmission Mechanism of Monetary Policy. A Paper by the Monetary Policy Committee.” Bank of England, April 1999.
 
@@ -603,6 +605,8 @@ Bernanke, Ben S., and Mark Gertler. (1995) “Inside the Black Box: The Credit C
 Blanchard, Olivier J., and Mark W. Watson. (1986) “Are Business Cycles All Alike?” In *The American Business Cycle: Continuity and Change*, pp. 123–180. Cambridge, MA: National Bureau of Economic Research.
 
 Boivin, Jean, and Marc P. Giannoni. (2006) “Has Monetary Policy Become More Effective?” *Review of Economics and Statistics*, 88, 445–62.
+Borys, Magdalena, Roman Horvath, and Michal Franta. (2009) “The Effects of Monetary Policy in the Czech Republic: An Empirical Study.” *Empirica*, 36, 419–43.
+
 
 Canova, Fabio, and Gianni D. Nicolo. (2002) “Monetary Disturbances Matter for Business Fluctuations in the G-7.” *Journal of Monetary Economics*, 49, 1131–59.
 
@@ -639,6 +643,8 @@ European Central Bank. (2010) “Monthly Bulletin.” European Central Bank, May
 Giordani, Paolo. (2004) “An Alternative Explanation of the Price Puzzle.” *Journal of Monetary Economics*, 51, 1271–96.
 
 Görg, Holger, and Eric Strobl. (2001) “Multinational Companies and Productivity Spillovers: A Meta-analysis.” *The Economic Journal*, 111, F723–F739.
+Hanson, Michael S. (2004) “The Price Puzzle Reconsidered.” *Journal of Monetary Economics*, 51, 1385–1413.
+
 
 Havranek, Tomas, and Zuzana Irsova. (2011) “Estimating Vertical Spillovers from FDI: Why Results Vary and What the True Effect Is.” *Journal of International Economics*, 85, 234–44.
 
