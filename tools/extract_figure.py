@@ -31,10 +31,30 @@ ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
 
 def render(pdf, page, dpi):
+    """Rasterise one page, and notice when the rasteriser dropped glyphs.
+
+    poppler substitutes nothing for a non-embedded base-14 font it has no display font
+    for: it draws the glyph as blank and says so only on stderr. alphas page 64 plots one
+    of its three series as ZapfDingbats circles, and a crop taken through pdftoppm on a
+    machine without those substitutes lost the entire series -- 2,014 marker pixels became
+    zero -- while the caption beneath it went on describing it. Nothing downstream could
+    see that: the image is a valid picture of a plot, just of two series instead of three.
+
+    So the stderr poppler already emits is read, and a page it could not fully draw is
+    re-rendered with MuPDF, which carries its own base-14 substitutes. Normal pages keep
+    the poppler path, so every crop recorded from it stays reproducible.
+    """
     with tempfile.TemporaryDirectory() as tmp:
         stem = os.path.join(tmp, "p")
-        subprocess.run([_poppler.tool("pdftoppm"), "-f", str(page), "-l", str(page), "-r", str(dpi),
-                        "-png", pdf, stem], check=True, capture_output=True)
+        r = subprocess.run([_poppler.tool("pdftoppm"), "-f", str(page), "-l", str(page),
+                            "-r", str(dpi), "-png", pdf, stem],
+                           check=True, capture_output=True)
+        err = (r.stderr or b"").decode("utf-8", "replace")
+        if "No display font" in err or "Couldn't find a font" in err:
+            import fitz
+            with fitz.open(pdf) as doc:
+                px = doc.load_page(page - 1).get_pixmap(dpi=dpi)
+                return Image.frombytes("RGB", (px.width, px.height), px.samples).copy()
         name = [f for f in os.listdir(tmp) if f.endswith(".png")][0]
         return Image.open(os.path.join(tmp, name)).convert("RGB").copy()
 

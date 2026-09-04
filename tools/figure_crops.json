@@ -50,15 +50,15 @@
     0.176,
     0.198,
     0.82,
-    0.456
+    0.462
    ],
    "colours": 64,
    "dpi": 200,
-   "height": 565,
+   "height": 578,
    "page": 64,
    "pdf": "alphas/alphas.pdf",
-   "sha256": "e53101552fd7f58efc26170388fe94518178587514e0a5328572e3a9f5f838fa",
-   "width": 1029
+   "sha256": "33a5dc2645c7880152ffbee270ea878313374a3d31948cea32536716eb05a38e",
+   "width": 1028
   }
  },
  "armington": {
@@ -101,15 +101,15 @@
     0.114,
     0.119,
     0.935,
-    0.697
+    0.685
    ],
    "colours": 64,
    "dpi": 200,
-   "height": 1283,
+   "height": 1234,
    "page": 28,
    "pdf": "crisis_ews/crisis_ews.pdf",
-   "sha256": "6fbac8f0e710c9e14b97a82687f238a01eb37067fbc593a481f50ab132c48bc7",
-   "width": 1270
+   "sha256": "a2ecd156e0184f1484ec2f5d1c60756e326efbae99c4ac6baeb092b26753c0dd",
+   "width": 1164
   }
  },
  "education": {
@@ -159,7 +159,7 @@
    "height": 1064,
    "page": 6,
    "pdf": "exercise/exercise.pdf",
-   "sha256": "f2c07c940d9c34af62b1a8e39eb3e21ced40a0f9eef0d9f496ac8a9f94d39cce",
+   "sha256": "0f6a2048234c97a561b4ae903be6cbebcedc56282d5ce93e95651c17c9cf1fc4",
    "width": 1789
   },
   "2": {
@@ -171,10 +171,10 @@
    ],
    "colours": 64,
    "dpi": 200,
-   "height": 1089,
+   "height": 1088,
    "page": 8,
    "pdf": "exercise/exercise.pdf",
-   "sha256": "aaa9432db22c6c52f72c47370441a62636529f9c0e6468f4cdb7fff7385cf9f9",
+   "sha256": "e490671fdb4aa60954317ec99309c5a0ce344e0d1519694ad5b788a4180a2f0c",
    "width": 1779
   },
   "3": {
@@ -186,10 +186,10 @@
    ],
    "colours": 64,
    "dpi": 200,
-   "height": 1048,
+   "height": 1047,
    "page": 11,
    "pdf": "exercise/exercise.pdf",
-   "sha256": "50c3e6af6f7d4f425d235bbf2868cbbc8b3e3359a7521a599e8ec67ed934eae7",
+   "sha256": "f6911d3ca417d2f4fd647036304246ee35a0ffa60f06ee18ebdced3c0ae7ab7c",
    "width": 1779
   },
   "4": {
@@ -204,7 +204,7 @@
    "height": 1251,
    "page": 13,
    "pdf": "exercise/exercise.pdf",
-   "sha256": "0af24c452accb5b95e54878731ae7a4c3be6c9cb94ce3e88b14dd42001c7e818",
+   "sha256": "7d9429aac63eac1bc29e81405282363b2f2a9e7541fed2500d24d661a76b8a9f",
    "width": 1779
   }
  },
@@ -298,7 +298,7 @@
    "height": 583,
    "page": 13,
    "pdf": "hedge/hedge2.pdf",
-   "sha256": "c9e2b11d396bf5d486a8dff1ddb820f3346eba486eb4223650c31cc002b8f31b",
+   "sha256": "eb0f79ab90c3ee627fe99addd2be4d82f533cffc6a01d8e7191aa9928a818987",
    "width": 808
   },
   "5": {
@@ -313,7 +313,7 @@
    "height": 584,
    "page": 20,
    "pdf": "hedge/hedge2.pdf",
-   "sha256": "99b16c49e163d6ebfd039e1a96f1d604b5b668905456d4886eaab9a34fc1e5f2",
+   "sha256": "a3f5eddcee8b7425d1a8935919bc2e9b8bf023911f6a0539f398a53b6b6c0caf",
    "width": 810
   }
  },
@@ -548,7 +548,7 @@
    "height": 843,
    "page": 9,
    "pdf": "spillovers_bias/spillovers_bias.pdf",
-   "sha256": "bde8e069dd6b9a246c0359a47b4f9d50d8e1af01bf8267eaee6990c2efb76fc8",
+   "sha256": "13827f7f91e2102b7ef51c3f41761759b62842e05163f8469e9cae9c45dd9155",
    "width": 1157
   }
  },
@@ -562,11 +562,11 @@
    ],
    "colours": 64,
    "dpi": 200,
-   "height": 608,
+   "height": 607,
    "page": 17,
    "pdf": "taxrev/taxrev.pdf",
-   "sha256": "c4a3e3f6b992d5e591c3cb45932832517558327a46dec1fa0a0e6d7e98abe1ec",
-   "width": 850
+   "sha256": "6fdbefe15594f0e4095576386f8ee7ede70a2a0c8948ffe638e7de83b5a65efa",
+   "width": 851
   },
   "5": {
    "box": [
@@ -577,11 +577,11 @@
    ],
    "colours": 64,
    "dpi": 200,
-   "height": 606,
+   "height": 607,
    "page": 17,
    "pdf": "taxrev/taxrev.pdf",
-   "sha256": "53d7ab6c8e286d749073406af4fba3a1079d7587de919f1bf621e30f4fb2aa4b",
-   "width": 850
+   "sha256": "490c650ed0b65d1bac89583a94e0fac4f85e0b2092fa77a6abe80c9e359866ac",
+   "width": 851
   },
   "6": {
    "box": [
@@ -592,11 +592,11 @@
    ],
    "colours": 64,
    "dpi": 200,
-   "height": 606,
+   "height": 607,
    "page": 18,
    "pdf": "taxrev/taxrev.pdf",
-   "sha256": "d31c3a8673fe809ec07a34ce5e727afd840a3c7453c1beea0dd5d17dea798a38",
-   "width": 850
+   "sha256": "8d295a3c4459f85e1b77cb231a114dfa4f1197689e5c3b1e7117e0d59ff40b9f",
+   "width": 851
   },
   "7": {
    "box": [
@@ -607,11 +607,11 @@
    ],
    "colours": 64,
    "dpi": 200,
-   "height": 606,
+   "height": 607,
    "page": 18,
    "pdf": "taxrev/taxrev.pdf",
-   "sha256": "89d9fd086532a34bd988d8b2dab4a02cd6215fc3a7b6d2e9d2cebe8275a9a71a",
-   "width": 850
+   "sha256": "7d6d2379724d3cca3f66a636402e3d26f3d343db8b5ca1a9f4d50c87d1a6efae",
+   "width": 851
   }
  },
  "tourist": {
