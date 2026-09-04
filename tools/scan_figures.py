@@ -27,7 +27,7 @@ sys.path.insert(0, os.path.join(ROOT, "tools"))
 
 import json                                              # noqa: E402
 from audit_figures import line_rhythm                    # noqa: E402
-from build_paper_page import pdf_path                    # noqa: E402
+from build_paper_page import transcript_pdf_path         # noqa: E402
 from extract_figure import extract                       # noqa: E402
 from locate_figures import lines_of, page_words          # noqa: E402
 from scout_paper import scout                            # noqa: E402
@@ -99,7 +99,11 @@ def main(argv):
     apply = "--apply" in argv
     project = [a for a in argv if not a.startswith("--")][0]
     meta = PAPERS[project]
-    pdf = pdf_path(project, meta)
+    # The TRANSCRIPT's source, not the hosted PDF: tourist, transmission, taxrev and
+    # passthrough host one edition and reproduce another, and extract_figure.py cuts
+    # from the reproduced one. Measuring here on the hosted file would report page
+    # numbers and boxes for a different document than the one the crop comes from.
+    pdf = transcript_pdf_path(project, meta)
     sc = scout(project, PAPERS)
     have = set()
     d = os.path.join(ROOT, project, "paper", "figures")

@@ -25,7 +25,7 @@ import html
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 sys.path.insert(0, os.path.join(ROOT, "tools"))
 
-from build_paper_page import pdf_path                  # noqa: E402
+from build_paper_page import transcript_pdf_path       # noqa: E402
 from scout_paper import scout                          # noqa: E402
 
 PAPERS = {p["project"]: p for p in json.load(open(os.path.join(ROOT, "tools", "papers.json"), encoding="utf-8"))}
@@ -161,7 +161,11 @@ def try_candidates(project, num, page, candidates):
 
 def locate(project, wanted=None):
     meta = PAPERS[project]
-    pdf = pdf_path(project, meta)
+    # The TRANSCRIPT's source, not the hosted PDF: tourist, transmission, taxrev and
+    # passthrough host one edition and reproduce another, and extract_figure.py cuts
+    # from the reproduced one. Measuring here on the hosted file would report page
+    # numbers and boxes for a different document than the one the crop comes from.
+    pdf = transcript_pdf_path(project, meta)
     sc = scout(project, PAPERS)
     for num, page in sc["figures"].items():
         if wanted and num not in wanted:

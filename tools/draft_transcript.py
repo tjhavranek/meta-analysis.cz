@@ -262,12 +262,16 @@ def classify(para, seen_backmatter):
 
 def draft(project, page_range=None, out=None):
     import json
-    from build_paper_page import pdf_path
+    from build_paper_page import transcript_pdf_path
     papers = {p["project"]: p for p in json.load(open(os.path.join(ROOT, "tools", "papers.json"), encoding="utf-8"))}
     from build_paper_page import documents
     papers.update(documents())
     meta = papers[project]
-    pdf = pdf_path(project, meta)
+    # The TRANSCRIPT's source, not the hosted PDF: tourist, transmission, taxrev and
+    # passthrough host one edition and reproduce another, and extract_figure.py cuts
+    # from the reproduced one. Measuring here on the hosted file would report page
+    # numbers and boxes for a different document than the one the crop comes from.
+    pdf = transcript_pdf_path(project, meta)
     rel = os.path.relpath(pdf, ROOT)
 
     raw = pdftotext(pdf)

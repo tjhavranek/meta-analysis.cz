@@ -54,7 +54,7 @@
    "mean_from": "paper",
    "corrected_quote": "Correcting for publication bias alone brings the typical effect down to between 0.08 and 0.17 points, depending on the method.",
    "tier": "range",
-   "approximation": "plotted at 0.125, the midpoint of the 0.08 to 0.17 the paper reports for the whole sample; both ends are its own figures. The 0.12 the page quotes is the best-practice estimate for most of the world, and the paper reports 0.276 for the Middle East and about zero for Southeast Asia, so it does not cover the same firms as an average over every estimate.",
+   "approximation": "plotted at 0.125, the midpoint of the 0.08 to 0.17 the paper reports for the whole sample; both ends are its own figures. The 0.12 the page quotes is the best-practice estimate for most of the world, and the paper reports 0.276 for the Middle East and near −0.11 for Southeast Asia, so it does not cover the same firms as an average over every estimate.",
    "quote_source": "pdf",
    "corrected_locator": "Havránek, Iršová et al., abstract: the sentence beginning 'Much of that reflects selective reporting'",
    "mean_quote": "diversity raises ESG scores by about 0.28 points"

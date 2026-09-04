@@ -488,8 +488,16 @@ def main(argv):
             print("%-16s fig%-5s  p%-3d  %s" % (project, num, pno + 1, got))
             continue
         out.append({"project": project, "fig": num, "page": pno + 1, "box": list(got)})
-        print("python tools/extract_figure.py %s %s %d %.3f %.3f %.3f %.3f --dpi 200"
-              % (project, num, pno + 1, got[0], got[1], got[2], got[3]))
+        # Carry --pdf and --label through into the command. The box was measured on the
+        # document named by --pdf and the page number counts pages in THAT document, so a
+        # command without it re-cuts a different file at the same page number and produces
+        # a picture of something else, silently. Four projects host one edition and
+        # reproduce another, which is exactly when --pdf gets used.
+        extra = ""
+        if pdf:
+            extra += ' --pdf "%s"' % pdf
+        print("python tools/extract_figure.py %s %s %d %.3f %.3f %.3f %.3f --dpi 200%s"
+              % (project, num, pno + 1, got[0], got[1], got[2], got[3], extra))
     doc.close()
     if as_json:
         print(json.dumps(out, indent=1))
