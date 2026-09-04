@@ -1,7 +1,8 @@
 #!/usr/bin/env python3
 """Lift one figure out of a paper's PDF and save it for the full-text page.
 
-    python3 tools/extract_figure.py <project> <fig> <page> <x0> <y0> <x1> <y1> [--dpi 200]
+    python3 tools/extract_figure.py <project> <fig> <page> <x0> <y0> <x1> <y1>
+                                    [--dpi 200] [--pdf <file>]
 
 The four coordinates are fractions of the page, measured from the top left, so they can be
 read off a rendered preview without knowing the page size: 0.08 0.55 0.95 0.90 means the
@@ -51,10 +52,17 @@ def trim(im, threshold=232, pad=8):
 def extract(project, fig, page, box, dpi=200, colours=64, pdf=None):
     import json
     sys.path.insert(0, os.path.join(ROOT, "tools"))
-    from build_paper_page import documents, page_dir, pdf_path
+    from build_paper_page import documents, page_dir, transcript_pdf_path
     papers = {p["project"]: p for p in json.load(open(os.path.join(ROOT, "tools", "papers.json"), encoding="utf-8"))}
     papers.update(documents())
-    pdf = pdf or pdf_path(project, papers[project])
+    # The TRANSCRIPT's source, not the hosted PDF. Four pages host one edition while their
+    # text follows another -- tourist and transmission host the published article and
+    # reproduce the working paper -- and the two editions lay their figures out differently
+    # and, for transmission, do not even contain the same ones. Cropping page 17 of the
+    # published tourist for a figure the page took from page 17 of the working paper yields
+    # a picture of something else, silently. This is the same trap transcript_pdf_path()
+    # exists for in the fidelity check and in scout_paper.py, and it is closed the same way.
+    pdf = pdf or transcript_pdf_path(project, papers[project])
 
     im = render(pdf, page, dpi)
     x0, y0, x1, y1 = box
@@ -72,11 +80,20 @@ def extract(project, fig, page, box, dpi=200, colours=64, pdf=None):
 
 
 if __name__ == "__main__":
-    args = [a for a in sys.argv[1:] if not a.startswith("--")]
-    dpi = 200
-    for a in sys.argv[1:]:
+    argv = sys.argv[1:]
+    dpi, pdf = 200, None
+    for i, a in enumerate(argv):
         if a.startswith("--dpi"):
-            dpi = int(a.split("=", 1)[1] if "=" in a else sys.argv[sys.argv.index(a) + 1])
+            dpi = int(a.split("=", 1)[1] if "=" in a else argv[i + 1])
+        elif a.startswith("--pdf"):
+            pdf = a.split("=", 1)[1] if "=" in a else argv[i + 1]
+    skip = set()
+    for i, a in enumerate(argv):
+        if a.startswith("--"):
+            skip.add(i)
+            if "=" not in a:
+                skip.add(i + 1)
+    args = [a for i, a in enumerate(argv) if i not in skip]
     project, fig, page = args[0], args[1], int(args[2])
     box = tuple(float(v) for v in args[3:7])
-    extract(project, fig, page, box, dpi=dpi)
+    extract(project, fig, page, box, dpi=dpi, pdf=pdf)
