@@ -429,7 +429,15 @@ class Builder:
         # a reference number sends every endnote marker to a #ref- anchor that does not exist.
         # The list ends at the next heading: several papers print their endnotes after their
         # references, so "somewhere below the REFERENCES line" is not the same section.
-        m_refs = re.search(r"^##\s+REFERENCES.*$", src, re.M)
+        # Case-insensitive on purpose. This used to match REFERENCES only, so a transcript
+        # heading its list "## References" was never examined for numbering and rendered
+        # unnumbered whatever it contained. Two papers were right only because of that:
+        # scc and climate numbered their transcripts while their articles print unnumbered
+        # lists, and normalising the heading's case would have put 59 and 31 numbers on
+        # pages that should carry none. Both transcripts have since been unnumbered, so no
+        # page depends on the accident and the guard can say what it means.
+        m_refs = re.search(r"^##\s+(?:REFERENCES|BIBLIOGRAPHY|LITERATURE CITED).*$",
+                           src, re.M | re.I)
         self.refs_numbered = False
         if m_refs:
             rest = src[m_refs.end():]

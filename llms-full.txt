@@ -34298,7 +34298,7 @@ URL: https://meta-analysis.cz/scc/
 Citation: Tomas Havranek, Zuzana Irsova, Karel Janda, and David Zilberman (2015), "Selective Reporting and the Social Cost of Carbon." Energy Economics 51, 394-406.
 Published version: https://doi.org/10.1016/j.eneco.2015.08.009
 Paper: https://meta-analysis.cz/scc/scc2.pdf
-Examined Studies: http://scholar.google.cz/scholar?as_sdt=1,5&amp;q=%22social+costs+of+carbon%22+OR+%22social+cost+of+carbon%22+carbon+climate+change+marginal+damage+costs+emissions+greenhouse+impacts&hl=en&as_ylo=2012&as_vis=1
+Examined Studies: http://scholar.google.cz/scholar?as_sdt=1,5&amp;q=%22social+costs+of+carbon%22+OR+%22social+cost+of+carbon%22+carbon+climate+change+marginal+damage+costs+emissions+greenhouse+impacts&amp;hl=en&amp;as_ylo=2012&amp;as_vis=1
 Included Studies: https://meta-analysis.cz/scc/studies.xls
 Data: https://meta-analysis.cz/scc/scc.xlsx
 Code: https://meta-analysis.cz/scc/scc.do
@@ -34654,65 +34654,123 @@ Supplementary data to this article can be found online at http://dx.doi.org/10.1
 
 #### References
 
-1. Anthoff, D., Hepburn, C., Tol, R.S.J., 2009. Equity weighting and the marginal damage costs of climate change. Ecol. Econ. 68 (3), 836–849.
-2. Ashenfelter, O., Harmon, C., Oosterbeek, H., 1999. A review of estimates of the schooling/earnings relationship, with tests for publication bias. Labour Econ. 6 (4), 453–470.
-3. Ayres, R., Walter, J., 1991. The greenhouse effect: damages, costs and abatement. Environ. Resour. Econ. 1 (3), 237–270.
-4. Both, C., Artemyev, A.V., Blaauw, B., Cowie, R.J., Dekhuijzen, A.J., Eeva, T., Enemar, A., Gustafsson, L., Ivankina, E.V., Jarvinen, A., Metcalfe, N.B., Nyholm, N.E.I., Potti, J., Ravussin, P.-A., Sanz, J.J., Silverin, B., Slater, F.M., Sokolov, L.V., Torok, J., Winkel, W., Wright, J., Zang, H., Visser, M.E., 2004. Large-scale geographical variation confirms that climate change causes birds to lay earlier. Proc. R. Soc. Lond. Ser. B Biol. Sci. 271, 1657–1662.
-5. Card, D., Krueger, A.B., 1995. Time-series minimum-wage studies: a meta-analysis. Am. Econ. Rev. 85 (2), 238–243.
-6. Cook, J., Nuccitelli, D., Green, S.A., Richardson, M., Winkler, B., Painting, R., Way, R., Jacobs, P., Skuce, A., 2013. Quantifying the consensus on anthropogenic global warming in the scientific literature. Environ. Res. Lett. 8, 1–7.
-7. Cook, J., Nuccitelli, D., Skuce, A., Jacobs, P., Painting, R., Honeycutt, R., Green, S.A., Lewandowsky, S., Richardson, M., Wayi, R.G., 2014. Reply to 'Quantifying the consensus on anthropogenic global warming in the scientific literature: a re-analysis'. Energy Policy 73, 706–708.
-8. Darling, E.S., Côté, I.M., 2008. Quantifying the evidence for ecological synergies. Ecol. Lett. 11 (12), 1278–1286.
-9. Doucouliagos, H., Stanley, T.D., 2009. Publication selection bias in minimum-wage research? A meta-regression analysis. Br. J. Ind. Relat. 47 (2), 406–428.
-10. Doucouliagos, H., Stanley, T.D., 2013. Are all economic facts greatly exaggerated? Theory competition and selectivity. J. Econ. Surv. 27 (2), 316–339.
-11. Egger, M., Smith, G.D., Scheider, M., Minder, C., 1997. Bias in meta-analysis detected by a simple, graphical test. Br. Med. J. 316, 629–634.
-12. Fankhauser, S., 1994. The social costs of greenhouse gas emissions: an expected value approach. Energy J. 15 (2), 157–184.
-13. Gienapp, P., Leimu, R., Merilä, J., 2007. Responses to climate change in avian migration time—microevolution versus phenotypic plasticity. Clim. Res. 35, 25–35.
-14. Greenstone, M., Kopits, E., Wolverton, A., 2013. Developing a social cost of carbon for US regulatory analysis: a methodology and interpretation. Rev. Environ. Econ. Policy 7 (1), 23–46.
-15. Havranek, T., 2015. Measuring intertemporal substitution: the importance of method choices and selective reporting. J. Eur. Econ. Assoc. (forthcoming).
-16. Havranek, T., Irsova, Z., 2011. Estimating vertical spillovers from FDI: why results vary and what the true effect is. J. Int. Econ. 85 (2), 234–244.
-17. Havranek, T., Kokes, O., 2015. Income elasticity of gasoline demand: a meta-analysis. Energy Econ. 47 (C), 77–86.
-18. Havranek, T., Irsova, Z., Janda, K., 2012. Demand for gasoline is more price-inelastic than commonly thought. Energy Econ. 34 (1), 201–207.
-19. Havranek, T., Rusnak, M., Sokolova, A., 2015. Habit formation in consumption: a meta-analysis. Working Papers 2015/03. Czech National Bank, Research Department.
-20. Hedges, L.V., 1992. Modeling publication selection effects in meta-analysis. Stat. Sci. 7 (2), 246–255.
-21. Hope, C.W., 2008. Optimal carbon emissions and the social cost of carbon over time under uncertainty. Integr. Assess. J. 8 (1), 107–122.
-22. IPCC, 1995. Intergovernmental panel on climate change second assessment report: climate change. Working Group II: Impacts, Adaptations and Mitigation of Climate Change: Scientific-Technical Analyses. Cambridge University Press, UK.
-23. IPCC, 2007. Intergovernmental panel on climate change fourth assessment report: climate change. Working Group II: Impacts, Adaptations and Vulnerability. Cambridge University Press, UK and NY.
-24. IPCC, 2014. Intergovernmental panel on climate change fifth assessment report: climate change. Working Group II: Impacts, Adaptations and Vulnerability. Cambridge University Press.
-25. IWG, 2010. Technical support document: social cost of carbon for regulatory impact analysis. Technical Report. U.S. Government.
-26. IWG, 2013. Technical support document: technical update of the social cost of carbon for regulatory impact analysis. Technical Report. U.S. Government.
-27. IWGSCC, 2015. Technical support document: technical update of the social cost of carbon for regulatory impact analysis under Executive Order 12866. Technical Report July 2015. Interagency Working Group on Social Cost of Carbon, United States Government.
-28. Maclean, I.M.D., Wilson, R.J., 2011. Recent ecological responses to climate change support predictions of high extinction risk. Proc. Natl. Acad. Sci. U. S. A. 108 (30), 12337–12342.
-29. Massad, T.J., Dyer, L.A., 2010. A meta-analysis of the effects of global environmental change on plant–herbivore interactions. Arthropod Plant Interact. 4 (3), 181–188.
-30. Menzel, A., Sparks, T.H., Estrella, N., Koch, E., Aasa, A., Ahas, R., Alm-Kubler, K., Bissolli, P., Braslavská, O., Briede, A., Chmielewski, F.M., Crepinsek, Z., Curnel, Y., Dahl, A., Defila, C., Donnelly, A., Filella, Y., Jatczak, K., Mage, F., Mestre, A., Nordli, O., Penuelas, J., Pirinen, P., Remišová, V., Scheifinger, H., Striz, M., Susnik, A., van Vliet, A.J.H., Wielgolaski, F.-E., Zach, S., Zust, A., 2006. European phenological response to climate change matches the warming pattern. Glob. Chang. Biol. 12 (10), 1969–1976.
-31. Michaels, J.P., 2008. Evidence for "publication bias" concerning global warming in science and nature. Energy Environ. 19 (2), 287–301.
-32. Necker, S., 2014. Scientific misbehavior in economics. Res. Policy 43 (10), 1747–1759.
-33. Nordhaus, W., 1982. How fast should we graze the global commons? Am. Econ. Rev. 72 (2), 242–246.
-34. Nordhaus, W.D., 1991. To slow or not to slow: the economics of the greenhouse effect. Econ. J. 101 (407), 920–937.
-35. Nordhaus, W.D., 2008. A Question of Balance: Weighing the Options on Global Warming Policies. Yale University Press, New Haven.
-36. Nordhaus, W.D., Yang, Z., 1996. A regional dynamic general-equilibrium model of alternative climate-change strategies. Am. Econ. Rev. 86 (4), 741–765.
-37. NRC, 2009. Hidden Costs of Energy: Unpriced Consequences of Energy Production and Use. National Research Council of the National Academies, National Academies Press.
-38. Parmesan, C., 2007. Influences of species, latitudes and methodologies on estimates of phenological response to global warming. Glob. Chang. Biol. 13, 1860–1872.
-39. Pindyck, R.S., 2013. Climate change policy: what do the models tell us? J. Econ. Lit. 51 (3), 860–872.
-40. Plambeck, E.L., Hope, C., 1996. PAGE95: an updated valuation of the impacts of global warming. Energy Policy 24 (9), 783–793.
-41. Reckova, D., Irsova, Z., 2015. Publication bias in measuring anthropogenic climate change. Energy Environ. (forthcoming).
-42. Rosenthal, R., 1979. The 'file drawer problem' and tolerance for null results. Psychol. Bull. 86, 638–641.
-43. Rusnak, M., Havranek, T., Horvath, R., 2013. How to solve the price puzzle? A meta-analysis. J. Money, Credit, Bank. 45 (1), 37–70.
-44. Siegfried, J.J., 2012. Minutes of the meeting of the executive committee: Chicago, IL, January 5, 2012. Am. Econ. Rev. 102 (3), 645–652.
-45. Stanley, T.D., 2001. Wheat from chaff: meta-analysis as quantitative literature review. J. Econ. Perspect. 15 (3), 131–150.
-46. Stanley, T.D., 2005. Beyond publication bias. J. Econ. Surv. 19 (3), 309–345.
-47. Stanley, T., Doucouliagos, H., Giles, M., Heckemeyer, J.H., Johnston, R.J., Laroche, P., Nelson, J.P., Paldam, M., Poot, J., Pugh, G., Rosenberger, R.S., Rost, K., 2013. Meta-analysis of economics research reporting guidelines. J. Econ. Surv. 27 (2), 390–394.
-48. Swanson, K.L., 2013. Emerging selection bias in large-scale climate change simulations. Geophys. Res. Lett. 40 (12), 3184–3188.
-49. Tol, R.S.J., 1995. The damage costs of climate change toward more comprehensive calculations. Environ. Resour. Econ. 5, 353–374.
-50. Tol, R.S.J., 2002a. Estimates of the damage costs of climate change. Part I: benchmark estimates. Environ. Resour. Econ. 21 (1), 47–73.
-51. Tol, R.S.J., 2002b. Estimates of the damage costs of climate change. Part II: dynamic estimates. Environ. Resour. Econ. 21 (2), 135–160.
-52. Tol, R.S.J., 2005a. Emission abatement versus development as strategies to reduce vulnerability to climate change: an application of FUND. Environ. Dev. Econ. 10 (05), 615–629.
-53. Tol, R.S.J., 2005b. The marginal damage costs of carbon dioxide emissions: an assessment of the uncertainties. Energy Policy 33 (16), 2064–2074.
-54. Tol, R.S.J., 2008. The social cost of carbon: trends, outliers and catastrophes. Econ. Open-Access, Open-Assess. E-J. 2 (25), 1–22.
-55. Tol, R.S.J., 2011. The social cost of carbon. Ann. Rev. Resour. Econ. 3 (1), 419–443.
-56. Tol, R.S.J., 2013b. Targets for global climate policy: an overview. J. Econ. Dyn. Control. 37 (5), 911–928.
-57. Tol, R.S.J., 2014. Quantifying the consensus on anthropogenic global warming in the literature: a re-analysis. Energy Policy 73, 701–705.
-58. van den Bergh, J.C.J.M., Botzen, W.J.W., 2014. A lower bound to the social cost of CO_{2} emissions. Nat. Clim. Chang. 4, 253–258.
-59. Zigraiova, D., Havranek, T., 2015. Bank competition and financial stability: much ado about nothing? J. Econ. Surv. (forthcoming).
+Anthoff, D., Hepburn, C., Tol, R.S.J., 2009. Equity weighting and the marginal damage costs of climate change. Ecol. Econ. 68 (3), 836–849.
+
+Ashenfelter, O., Harmon, C., Oosterbeek, H., 1999. A review of estimates of the schooling/earnings relationship, with tests for publication bias. Labour Econ. 6 (4), 453–470.
+
+Ayres, R., Walter, J., 1991. The greenhouse effect: damages, costs and abatement. Environ. Resour. Econ. 1 (3), 237–270.
+
+Both, C., Artemyev, A.V., Blaauw, B., Cowie, R.J., Dekhuijzen, A.J., Eeva, T., Enemar, A., Gustafsson, L., Ivankina, E.V., Jarvinen, A., Metcalfe, N.B., Nyholm, N.E.I., Potti, J., Ravussin, P.-A., Sanz, J.J., Silverin, B., Slater, F.M., Sokolov, L.V., Torok, J., Winkel, W., Wright, J., Zang, H., Visser, M.E., 2004. Large-scale geographical variation confirms that climate change causes birds to lay earlier. Proc. R. Soc. Lond. Ser. B Biol. Sci. 271, 1657–1662.
+
+Card, D., Krueger, A.B., 1995. Time-series minimum-wage studies: a meta-analysis. Am. Econ. Rev. 85 (2), 238–243.
+
+Cook, J., Nuccitelli, D., Green, S.A., Richardson, M., Winkler, B., Painting, R., Way, R., Jacobs, P., Skuce, A., 2013. Quantifying the consensus on anthropogenic global warming in the scientific literature. Environ. Res. Lett. 8, 1–7.
+
+Cook, J., Nuccitelli, D., Skuce, A., Jacobs, P., Painting, R., Honeycutt, R., Green, S.A., Lewandowsky, S., Richardson, M., Wayi, R.G., 2014. Reply to 'Quantifying the consensus on anthropogenic global warming in the scientific literature: a re-analysis'. Energy Policy 73, 706–708.
+
+Darling, E.S., Côté, I.M., 2008. Quantifying the evidence for ecological synergies. Ecol. Lett. 11 (12), 1278–1286.
+
+Doucouliagos, H., Stanley, T.D., 2009. Publication selection bias in minimum-wage research? A meta-regression analysis. Br. J. Ind. Relat. 47 (2), 406–428.
+
+Doucouliagos, H., Stanley, T.D., 2013. Are all economic facts greatly exaggerated? Theory competition and selectivity. J. Econ. Surv. 27 (2), 316–339.
+
+Egger, M., Smith, G.D., Scheider, M., Minder, C., 1997. Bias in meta-analysis detected by a simple, graphical test. Br. Med. J. 316, 629–634.
+
+Fankhauser, S., 1994. The social costs of greenhouse gas emissions: an expected value approach. Energy J. 15 (2), 157–184.
+
+Gienapp, P., Leimu, R., Merilä, J., 2007. Responses to climate change in avian migration time—microevolution versus phenotypic plasticity. Clim. Res. 35, 25–35.
+
+Greenstone, M., Kopits, E., Wolverton, A., 2013. Developing a social cost of carbon for US regulatory analysis: a methodology and interpretation. Rev. Environ. Econ. Policy 7 (1), 23–46.
+
+Havranek, T., 2015. Measuring intertemporal substitution: the importance of method choices and selective reporting. J. Eur. Econ. Assoc. (forthcoming).
+
+Havranek, T., Irsova, Z., 2011. Estimating vertical spillovers from FDI: why results vary and what the true effect is. J. Int. Econ. 85 (2), 234–244.
+
+Havranek, T., Kokes, O., 2015. Income elasticity of gasoline demand: a meta-analysis. Energy Econ. 47 (C), 77–86.
+
+Havranek, T., Irsova, Z., Janda, K., 2012. Demand for gasoline is more price-inelastic than commonly thought. Energy Econ. 34 (1), 201–207.
+
+Havranek, T., Rusnak, M., Sokolova, A., 2015. Habit formation in consumption: a meta-analysis. Working Papers 2015/03. Czech National Bank, Research Department.
+
+Hedges, L.V., 1992. Modeling publication selection effects in meta-analysis. Stat. Sci. 7 (2), 246–255.
+
+Hope, C.W., 2008. Optimal carbon emissions and the social cost of carbon over time under uncertainty. Integr. Assess. J. 8 (1), 107–122.
+
+IPCC, 1995. Intergovernmental panel on climate change second assessment report: climate change. Working Group II: Impacts, Adaptations and Mitigation of Climate Change: Scientific-Technical Analyses. Cambridge University Press, UK.
+
+IPCC, 2007. Intergovernmental panel on climate change fourth assessment report: climate change. Working Group II: Impacts, Adaptations and Vulnerability. Cambridge University Press, UK and NY.
+
+IPCC, 2014. Intergovernmental panel on climate change fifth assessment report: climate change. Working Group II: Impacts, Adaptations and Vulnerability. Cambridge University Press.
+
+IWG, 2010. Technical support document: social cost of carbon for regulatory impact analysis. Technical Report. U.S. Government.
+
+IWG, 2013. Technical support document: technical update of the social cost of carbon for regulatory impact analysis. Technical Report. U.S. Government.
+
+IWGSCC, 2015. Technical support document: technical update of the social cost of carbon for regulatory impact analysis under Executive Order 12866. Technical Report July 2015. Interagency Working Group on Social Cost of Carbon, United States Government.
+
+Maclean, I.M.D., Wilson, R.J., 2011. Recent ecological responses to climate change support predictions of high extinction risk. Proc. Natl. Acad. Sci. U. S. A. 108 (30), 12337–12342.
+
+Massad, T.J., Dyer, L.A., 2010. A meta-analysis of the effects of global environmental change on plant–herbivore interactions. Arthropod Plant Interact. 4 (3), 181–188.
+
+Menzel, A., Sparks, T.H., Estrella, N., Koch, E., Aasa, A., Ahas, R., Alm-Kubler, K., Bissolli, P., Braslavská, O., Briede, A., Chmielewski, F.M., Crepinsek, Z., Curnel, Y., Dahl, A., Defila, C., Donnelly, A., Filella, Y., Jatczak, K., Mage, F., Mestre, A., Nordli, O., Penuelas, J., Pirinen, P., Remišová, V., Scheifinger, H., Striz, M., Susnik, A., van Vliet, A.J.H., Wielgolaski, F.-E., Zach, S., Zust, A., 2006. European phenological response to climate change matches the warming pattern. Glob. Chang. Biol. 12 (10), 1969–1976.
+
+Michaels, J.P., 2008. Evidence for "publication bias" concerning global warming in science and nature. Energy Environ. 19 (2), 287–301.
+
+Necker, S., 2014. Scientific misbehavior in economics. Res. Policy 43 (10), 1747–1759.
+
+Nordhaus, W., 1982. How fast should we graze the global commons? Am. Econ. Rev. 72 (2), 242–246.
+
+Nordhaus, W.D., 1991. To slow or not to slow: the economics of the greenhouse effect. Econ. J. 101 (407), 920–937.
+
+Nordhaus, W.D., 2008. A Question of Balance: Weighing the Options on Global Warming Policies. Yale University Press, New Haven.
+
+Nordhaus, W.D., Yang, Z., 1996. A regional dynamic general-equilibrium model of alternative climate-change strategies. Am. Econ. Rev. 86 (4), 741–765.
+
+NRC, 2009. Hidden Costs of Energy: Unpriced Consequences of Energy Production and Use. National Research Council of the National Academies, National Academies Press.
+
+Parmesan, C., 2007. Influences of species, latitudes and methodologies on estimates of phenological response to global warming. Glob. Chang. Biol. 13, 1860–1872.
+
+Pindyck, R.S., 2013. Climate change policy: what do the models tell us? J. Econ. Lit. 51 (3), 860–872.
+
+Plambeck, E.L., Hope, C., 1996. PAGE95: an updated valuation of the impacts of global warming. Energy Policy 24 (9), 783–793.
+
+Reckova, D., Irsova, Z., 2015. Publication bias in measuring anthropogenic climate change. Energy Environ. (forthcoming).
+
+Rosenthal, R., 1979. The 'file drawer problem' and tolerance for null results. Psychol. Bull. 86, 638–641.
+
+Rusnak, M., Havranek, T., Horvath, R., 2013. How to solve the price puzzle? A meta-analysis. J. Money, Credit, Bank. 45 (1), 37–70.
+
+Siegfried, J.J., 2012. Minutes of the meeting of the executive committee: Chicago, IL, January 5, 2012. Am. Econ. Rev. 102 (3), 645–652.
+
+Stanley, T.D., 2001. Wheat from chaff: meta-analysis as quantitative literature review. J. Econ. Perspect. 15 (3), 131–150.
+
+Stanley, T.D., 2005. Beyond publication bias. J. Econ. Surv. 19 (3), 309–345.
+
+Stanley, T., Doucouliagos, H., Giles, M., Heckemeyer, J.H., Johnston, R.J., Laroche, P., Nelson, J.P., Paldam, M., Poot, J., Pugh, G., Rosenberger, R.S., Rost, K., 2013. Meta-analysis of economics research reporting guidelines. J. Econ. Surv. 27 (2), 390–394.
+
+Swanson, K.L., 2013. Emerging selection bias in large-scale climate change simulations. Geophys. Res. Lett. 40 (12), 3184–3188.
+
+Tol, R.S.J., 1995. The damage costs of climate change toward more comprehensive calculations. Environ. Resour. Econ. 5, 353–374.
+
+Tol, R.S.J., 2002a. Estimates of the damage costs of climate change. Part I: benchmark estimates. Environ. Resour. Econ. 21 (1), 47–73.
+
+Tol, R.S.J., 2002b. Estimates of the damage costs of climate change. Part II: dynamic estimates. Environ. Resour. Econ. 21 (2), 135–160.
+
+Tol, R.S.J., 2005a. Emission abatement versus development as strategies to reduce vulnerability to climate change: an application of FUND. Environ. Dev. Econ. 10 (05), 615–629.
+
+Tol, R.S.J., 2005b. The marginal damage costs of carbon dioxide emissions: an assessment of the uncertainties. Energy Policy 33 (16), 2064–2074.
+
+Tol, R.S.J., 2008. The social cost of carbon: trends, outliers and catastrophes. Econ. Open-Access, Open-Assess. E-J. 2 (25), 1–22.
+
+Tol, R.S.J., 2011. The social cost of carbon. Ann. Rev. Resour. Econ. 3 (1), 419–443.
+
+Tol, R.S.J., 2013b. Targets for global climate policy: an overview. J. Econ. Dyn. Control. 37 (5), 911–928.
+
+Tol, R.S.J., 2014. Quantifying the consensus on anthropogenic global warming in the literature: a re-analysis. Energy Policy 73, 701–705.
+
+van den Bergh, J.C.J.M., Botzen, W.J.W., 2014. A lower bound to the social cost of CO_{2} emissions. Nat. Clim. Chang. 4, 253–258.
+
+Zigraiova, D., Havranek, T., 2015. Bank competition and financial stability: much ado about nothing? J. Econ. Surv. (forthcoming).
 
 ## Measuring Capital-Labor Substitution: The Importance of Method Choices and Publication Bias
 URL: https://meta-analysis.cz/sigma/
