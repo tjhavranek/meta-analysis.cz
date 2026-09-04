@@ -155,7 +155,7 @@ TABLE 2. Size Effects for Different Subsets of Data.
 | North America | 1109 | −0.079 | 0.475 | −3.60 | 4.45 |
 | Europe | 165 | −0.139 | 0.685 | −3.24 | 4.69 |
 | Other | 458 | −0.106 | 0.411 | −5.94 | 0.92 |
-| *Stock exchange (USA)^{*} | | | | | |
+| *Stock exchange (USA)* | | | | | |
 | NYSE only | 305 | −0.031 | 0.123 | −1.19 | 0.21 |
 | Any | 784 | −0.100 | 0.558 | −3.60 | 4.45 |
 | *Month of returns* | | | | | |

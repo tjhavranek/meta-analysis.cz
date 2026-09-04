@@ -252,7 +252,7 @@ PIP values below 0.5 are observed for the remaining three types of activism spon
 
 TABLE 3. Why the activism returns vary.
 
-| | P. mean | P. SD | PIP | Coef. | SE | *p*-value |
+| | Bayesian model averaging P. mean | Bayesian model averaging P. SD | Bayesian model averaging PIP | Frequentist check (OLS) Coef. | Frequentist check (OLS) SE | Frequentist check (OLS) *p*-value |
 | --- | --- | --- | --- | --- | --- | --- |
 | Constant | −5.181 | NA | 1.000 | −5.133 | 1.508 | 0.001 |
 | SE (selective reporting) | 0.264 | 0.043 | 1.000 | 0.270 | 0.098 | 0.007 |
@@ -294,7 +294,7 @@ TABLE 3. Why the activism returns vary.
 
 TABLE 3 (continued). Why the activism returns vary.
 
-| | P. mean | P. SD | PIP | Coef. | SE | *p*-value |
+| | Bayesian model averaging P. mean | Bayesian model averaging P. SD | Bayesian model averaging PIP | Frequentist check (OLS) Coef. | Frequentist check (OLS) SE | Frequentist check (OLS) *p*-value |
 | --- | --- | --- | --- | --- | --- | --- |
 | Threshold_reach | −0.487 | 0.450 | 0.602 | | | |
 | *Event Windows* | | | | | | |
@@ -14632,6 +14632,7 @@ TABLE A.2 (continued). Description and summary statistics of explanatory variabl
 | Citations | The logarithm of the number of per-year citations of the study in Google Scholar. | 2.024 | 1.256 |
 | Top journal | =1 if the study was published in one of the top five journals in economics. | 0.207 | 0.405 |
 | Impact | The recursive RePEc impact factor of the outlet. | 1.089 | 1.535 |
+Notes: Collected from published studies estimating the elasticity of intertemporal substitution. The list of studies is available in the Online Appendix at meta-analysis.cz/eis.
 
 #### References
 
@@ -29813,7 +29814,7 @@ TABLE 3. The meta-analyses of PCCs (RE and UWLS) using different formulae for PC
 | 0.7071 | 0.848 | −0.0086 | −0.0105 | 0.0292 | 0.0069 | 0.0171 | 0.0184 | 0.0320 | 0.0149 | 0.8657 | 0.8746 | 0.3571 | 0.7586 |
 | 0.7071 | 0.920 | −0.0125 | −0.0136 | 0.0268 | 0.0058 | 0.0190 | 0.0198 | 0.0296 | 0.0140 | 0.7970 | 0.8217 | 0.4035 | 0.7753 |
 | 0.3162 | 0.404 | 0.0241 | 0.0105 | 0.0601 | 0.0209 | 0.0429 | 0.0355 | 0.0715 | 0.0396 | 0.8424 | 0.9134 | 0.5489 | 0.8360 |
-| 0.3162 | 0.516 | 0.0087 | 0.0011 | 0.0343 | 0.0109 | 0.0285 | 0.0266 | 0.0445 | 0.0287 | 0.9099 | 0.9354 | 0.7167 | 0.8945 |
+| 0.3162 | 0.516 | 0.0087 | 0.0011 | 0.0343 | 0.0109 | 0.0285 | 0.0266 | 0.0445 | 0.0287 | 0.9099 | 0.9354 | 0.7167 | 0.8845 |
 | 0.3162 | 0.668 | 0.0004 | −0.0036 | 0.0232 | 0.0064 | 0.0225 | 0.0225 | 0.0330 | 0.0233 | 0.9396 | 0.9396 | 0.8015 | 0.9116 |
 | 0.3162 | 0.801 | −0.0038 | −0.0058 | 0.0184 | 0.0045 | 0.0205 | 0.0209 | 0.0279 | 0.0207 | 0.9459 | 0.9404 | 0.8370 | 0.9224 |
 | 0.3162 | 0.890 | −0.0061 | −0.0071 | 0.0159 | 0.0034 | 0.0202 | 0.0205 | 0.0257 | 0.0198 | 0.9312 | 0.9282 | 0.8543 | 0.9203 |
@@ -33607,6 +33608,7 @@ TABLE 9. Tests of the true effect and publication selection—mineral resource
 |  | F(1, 19) = 0.09 |  |  | Wald test: $\chi^2(1)$ = 0.01 |  |  |
 |  | Prob > F = 0.76 |  |  | Prob > $\chi^2$ = 0.94 |  |  |
 |  | R-Squared = 0.01 |  |  | R-Squared = 0.02 |  |  |
+Notes. The dependent variable is PCC; the estimated equation is $PCC_{is} = \beta_0 + \beta_1 * SE + \epsilon_{is}$. All results are weighted by the inverse variance. The standard errors of the regression parameters are clustered at the study level. Panel A, columns (2)–(4) represent OLS with cluster-robust standard errors at the study level; columns (5)–(7) represent IV estimation, where the instrumental variable is the inverse of the square root of the number of degrees of freedom. Panel B, columns (2)–(4) represent fixed-effects estimation at the study level; columns (5)–(7) represent mixed-effects ML regression. The reported t-statistics are based on heteroskedasticity cluster-robust standard errors.
 
 ## Relative Risk Aversion: A Meta-Analysis
 URL: https://meta-analysis.cz/risk/
@@ -35605,7 +35607,7 @@ TABLE 2. Size Effects for Different Subsets of Data.
 | North America | 1109 | −0.079 | 0.475 | −3.60 | 4.45 |
 | Europe | 165 | −0.139 | 0.685 | −3.24 | 4.69 |
 | Other | 458 | −0.106 | 0.411 | −5.94 | 0.92 |
-| *Stock exchange (USA)^{*} | | | | | |
+| *Stock exchange (USA)* | | | | | |
 | NYSE only | 305 | −0.031 | 0.123 | −1.19 | 0.21 |
 | Any | 784 | −0.100 | 0.558 | −3.60 | 4.45 |
 | *Month of returns* | | | | | |

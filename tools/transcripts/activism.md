@@ -253,7 +253,7 @@ PIP values below 0.5 are observed for the remaining three types of activism spon
 
 TABLE 3. Why the activism returns vary.
 
-| | P. mean | P. SD | PIP | Coef. | SE | *p*-value |
+| | Bayesian model averaging P. mean | Bayesian model averaging P. SD | Bayesian model averaging PIP | Frequentist check (OLS) Coef. | Frequentist check (OLS) SE | Frequentist check (OLS) *p*-value |
 | --- | --- | --- | --- | --- | --- | --- |
 | Constant | −5.181 | NA | 1.000 | −5.133 | 1.508 | 0.001 |
 | SE (selective reporting) | 0.264 | 0.043 | 1.000 | 0.270 | 0.098 | 0.007 |
@@ -295,7 +295,7 @@ TABLE 3. Why the activism returns vary.
 
 TABLE 3 (continued). Why the activism returns vary.
 
-| | P. mean | P. SD | PIP | Coef. | SE | *p*-value |
+| | Bayesian model averaging P. mean | Bayesian model averaging P. SD | Bayesian model averaging PIP | Frequentist check (OLS) Coef. | Frequentist check (OLS) SE | Frequentist check (OLS) *p*-value |
 | --- | --- | --- | --- | --- | --- | --- |
 | Threshold_reach | −0.487 | 0.450 | 0.602 | | | |
 | *Event Windows* | | | | | | |

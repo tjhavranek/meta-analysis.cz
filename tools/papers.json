@@ -1525,7 +1525,8 @@
   "has_meta_description": true,
   "meta_keywords": "remittances, economic growth, Bayesian model averaging, meta-analysis, publication bias",
   "one_line": "Meta-analysis of 538 estimates finds remittances have a small positive, publication-bias-corrected effect on growth, stronger in Asia than Africa.",
-  "version": "record"
+  "version": "record",
+  "version_note": "Tables 2, B1, C1 and D1 of the published article print most of their coefficients without a decimal point, so 1.499 appears as 1499, and their standard errors with a decimal comma, as (0,56). The article is inconsistent about it: the last column of Table 2 prints 0.614 correctly, and Table B1 mixes 0.677 and 0.721 with 1102 and 1956. Two standard errors, one in Table B1 and one in Table D1, also carry a minus sign inside the parentheses. All of this is reproduced here as printed."
  },
  {
   "project": "resource_curse",

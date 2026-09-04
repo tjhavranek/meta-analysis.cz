@@ -851,3 +851,4 @@ TABLE 9. Tests of the true effect and publication selection—mineral resource
 |  | F(1, 19) = 0.09 |  |  | Wald test: $\chi^2(1)$ = 0.01 |  |  |
 |  | Prob > F = 0.76 |  |  | Prob > $\chi^2$ = 0.94 |  |  |
 |  | R-Squared = 0.01 |  |  | R-Squared = 0.02 |  |  |
+Notes. The dependent variable is PCC; the estimated equation is $PCC_{is} = \beta_0 + \beta_1 * SE + \epsilon_{is}$. All results are weighted by the inverse variance. The standard errors of the regression parameters are clustered at the study level. Panel A, columns (2)–(4) represent OLS with cluster-robust standard errors at the study level; columns (5)–(7) represent IV estimation, where the instrumental variable is the inverse of the square root of the number of degrees of freedom. Panel B, columns (2)–(4) represent fixed-effects estimation at the study level; columns (5)–(7) represent mixed-effects ML regression. The reported t-statistics are based on heteroskedasticity cluster-robust standard errors.

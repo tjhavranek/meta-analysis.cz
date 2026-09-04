@@ -374,6 +374,7 @@ TABLE A.2 (continued). Description and summary statistics of explanatory variabl
 | Citations | The logarithm of the number of per-year citations of the study in Google Scholar. | 2.024 | 1.256 |
 | Top journal | =1 if the study was published in one of the top five journals in economics. | 0.207 | 0.405 |
 | Impact | The recursive RePEc impact factor of the outlet. | 1.089 | 1.535 |
+Notes: Collected from published studies estimating the elasticity of intertemporal substitution. The list of studies is available in the Online Appendix at meta-analysis.cz/eis.
 
 ## References
 
