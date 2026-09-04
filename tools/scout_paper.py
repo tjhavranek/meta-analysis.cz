@@ -61,8 +61,15 @@ def pages_of(pdf):
 
 
 def scout(project, papers):
-    from build_paper_page import pdf_path
-    pdf = pdf_path(project, papers[project])
+    # The TRANSCRIPT's source, not the hosted PDF. A page may serve the published article
+    # while its HTML follows the working paper it was transcribed from -- taxrev and
+    # transmission do, and the two editions differ in substance: the published transmission
+    # adds three tables the working paper does not contain at all. Scouting the hosted PDF
+    # then reports those as tables the page is missing, which is the same mistake
+    # transcript_pdf_path() exists to prevent for the fidelity check, and it is corrected
+    # here the same way: name the real source rather than loosen the check.
+    from build_paper_page import transcript_pdf_path
+    pdf = transcript_pdf_path(project, papers[project])
     if not pdf:
         return {"project": project, "error": "no PDF"}
     n = pages_of(pdf)

@@ -2963,21 +2963,22 @@
   "menu_links": [
    {
     "label": "Paper",
-    "href": "tourist.pdf"
+    "href": "tourist2.pdf"
    },
    {
     "label": "Published version",
     "href": "https://doi.org/10.1177/1354816619879584"
    }
   ],
-  "version": "working_paper",
+  "version": "record",
   "served_title": "Forecasting Tourist Arrivals: Google Trends Meets Mixed Frequency Data",
-  "version_note": "It is the working paper of November 2018, the fullest version of this article that is openly available; the version of record is behind the publisher's paywall. Its abstract and the published one differ only in copy-editing, and the working paper prints the title in title case.",
+  "version_note": "The PDF above is the published article. The full text reproduced here follows the working paper of November 2018; its abstract and the published one differ only in copy-editing, and the working paper prints the title in title case.",
   "technical_report": {
    "institution": "Munich Personal RePEc Archive",
    "number": 90205,
    "year": 2018
-  }
+  },
+  "transcript_pdf": "tourist.pdf"
  },
  {
   "project": "taxrev",
@@ -2998,20 +2999,21 @@
   "menu_links": [
    {
     "label": "Paper",
-    "href": "taxrev.pdf"
+    "href": "taxrev2.pdf"
    },
    {
     "label": "Published version",
     "href": "https://doi.org/10.1080/00036846.2016.1186796"
    }
   ],
-  "version": "working_paper",
-  "version_note": "It is Czech National Bank Working Paper 8/2015, the openly available version; the version of record is behind the publisher's paywall. The working paper carries a Czech abstract and a nontechnical summary, which the journal article does not.",
+  "version": "record",
+  "version_note": "The PDF above is the published article. The full text reproduced here follows Czech National Bank Working Paper 8/2015, which carries a Czech abstract and a nontechnical summary that the journal article does not.",
   "technical_report": {
    "institution": "Czech National Bank Working Paper Series",
    "number": "8/2015",
    "year": 2015
-  }
+  },
+  "transcript_pdf": "taxrev.pdf"
  },
  {
   "project": "passthrough",
@@ -3032,20 +3034,21 @@
   "menu_links": [
    {
     "label": "Paper",
-    "href": "passthrough.pdf"
+    "href": "passthrough2.pdf"
    },
    {
     "label": "Published version",
     "href": "https://doi.org/10.1016/j.econmod.2016.01.004"
    }
   ],
-  "version": "working_paper",
-  "version_note": "It is Czech National Bank Working Paper 9/2015, the openly available version; the version of record is behind the publisher's paywall. The working paper carries a Czech abstract and a nontechnical summary, which the journal article does not, its title page prints \"Pass-Trough\" for \"Pass-Through\", and its typesetting drops the accents from several names in the reference list, which are reproduced as printed.",
+  "version": "record",
+  "version_note": "The PDF above is the published article. The full text reproduced here follows Czech National Bank Working Paper 9/2015, which carries a Czech abstract and a nontechnical summary that the journal article does not, prints “Pass-Trough” for “Pass-Through” on its title page, and drops the accents from several names in the reference list, which are reproduced as printed.",
   "technical_report": {
    "institution": "Czech National Bank Working Paper Series",
    "number": "9/2015",
    "year": 2015
-  }
+  },
+  "transcript_pdf": "passthrough.pdf"
  },
  {
   "project": "transmission",
@@ -3066,21 +3069,22 @@
   "menu_links": [
    {
     "label": "Paper",
-    "href": "transmission.pdf"
+    "href": "transmission2.pdf"
    },
    {
     "label": "Published version",
     "href": "https://doi.org/10.1007/s10644-011-9106-z"
    }
   ],
-  "version": "working_paper",
-  "version_note": "It is Czech National Bank Working Paper 6/2010, the openly available version, published two years later under a different title; the version of record is behind the publisher's paywall. The working paper carries a nontechnical summary, which the journal article does not. Its cross-references to the impulse-response figures are one behind the figures themselves -- the text that says \"Figure 1\" points at Figure 2, and so on -- and are reproduced as printed. The appendix charts, which the working paper prints unnumbered, are numbered A1 to A6 here so the page can refer to them.",
+  "version": "record",
+  "version_note": "The PDF above is the published article. The full text reproduced here follows Czech National Bank Working Paper 6/2010, which appeared two years later under a different title. The working paper carries a nontechnical summary, which the journal article does not. Its cross-references to the impulse-response figures are one behind the figures themselves --- the text that says “Figure 1” points at Figure 2, and so on --- and are reproduced as printed. The appendix charts, which the working paper prints unnumbered, are numbered A1 to A6 here so the page can refer to them.",
   "served_title": "Do Financial Variables Help Predict Macroeconomic Environment? The Case of the Czech Republic",
   "technical_report": {
    "institution": "Czech National Bank Working Paper Series",
    "number": "6/2010",
    "year": 2010
-  }
+  },
+  "transcript_pdf": "transmission.pdf"
  },
  {
   "project": "lessons",

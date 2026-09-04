@@ -28995,7 +28995,7 @@ The online appendix accompanies this article and is maintained at https://meta-a
 URL: https://meta-analysis.cz/passthrough/
 Citation: Tomas Havranek, Zuzana Irsova, Jitka Lesanovska (2016), "Bank efficiency and interest rate pass-through: Evidence from Czech loan products." Economic Modelling 54: 153-169.
 Published version: https://doi.org/10.1016/j.econmod.2016.01.004
-Paper: https://meta-analysis.cz/passthrough/passthrough.pdf
+Paper: https://meta-analysis.cz/passthrough/passthrough2.pdf
 Full text (HTML): https://meta-analysis.cz/passthrough/paper/
 
 Abstract: An important component of monetary policy transmission is the pass-through from financial market interest rates, directly influenced or targeted by central banks, to the rates that banks charge firms and households. Yet the available evidence on the strength and speed of the pass-through is mixed and varies across countries, time periods, and even individual banks. We examine the pass-through mechanism using a unique data set of Czech loan and deposit products and focus on bank-level determinants of pricing policies, especially cost efficiency, which we estimate employing both stochastic frontier and data envelopment analysis. Our main results are threefold: First, the long-term pass-through was close to complete for most products before the financial crisis, but has weakened considerably afterward. Second, banks that provide high rates for deposits usually charge high loan markups. Third, cost-efficient banks tend to delay responses to changes in the market rate, smoothing loan rates for their clients.
@@ -38938,7 +38938,7 @@ Wirjanto, T.S., 1995. Aggregate consumption behaviour and liquidity constraints:
 URL: https://meta-analysis.cz/taxrev/
 Citation: Tomas Havranek, Zuzana Irsova, Jiri Schwarz (2016), "Dynamic elasticities of tax revenue: evidence from the Czech Republic." Applied Economics 48(60): 5866-5881.
 Published version: https://doi.org/10.1080/00036846.2016.1186796
-Paper: https://meta-analysis.cz/taxrev/taxrev.pdf
+Paper: https://meta-analysis.cz/taxrev/taxrev2.pdf
 Full text (HTML): https://meta-analysis.cz/taxrev/paper/
 
 Abstract: Tax revenue elasticities with respect to tax bases are key parameters for the modeling of public finances. Yet the existing studies estimating these elasticities for post-transition countries disregard the effects of tax reforms on tax revenue, which renders their estimates inconsistent. We use a unique data set from the Czech Republic to account for the effects of reforms and estimate both short- and long-run tax revenue elasticities. Our results suggest that the long-run elasticities are 1.4 for wage tax, 0.9 for value added tax, 1.7 for profit tax, and 1 for social security contributions. The adjustment process for value added tax and social security contributions is fast, but for the remaining two categories it is important to distinguish between the short- and long-run elasticities: the initial response of revenue to changes in the bases is weak. In the case of wage tax it takes half a year for the elasticity to surpass unity.
@@ -39243,7 +39243,7 @@ Notes: The null hypothesis of the augmented Dickey-Fuller test is the existence 
 URL: https://meta-analysis.cz/tourist/
 Citation: Tomas Havranek, Ayaz Zeynalov (2021), "Forecasting tourist arrivals: Google Trends meets mixed-frequency data." Tourism Economics 27(1): 129-148.
 Published version: https://doi.org/10.1177/1354816619879584
-Paper: https://meta-analysis.cz/tourist/tourist.pdf
+Paper: https://meta-analysis.cz/tourist/tourist2.pdf
 Full text (HTML): https://meta-analysis.cz/tourist/paper/
 
 Abstract: In this paper, we examine the usefulness of Google Trends data in predicting monthly tourist arrivals and overnight stays in Prague during the period between January 2010 and December 2016. We offer two contributions. First, we analyze whether Google Trends provides significant forecasting improvements over models without search data. Second, we assess whether a high-frequency variable (weekly Google Trends) is more useful for accurate forecasting than a low-frequency variable (monthly tourist arrivals) using Mixed-data sampling (MIDAS). Our results stress the potential of Google Trends to offer more accurate prediction in the context of tourism: we find that Google Trends information, both two months and one week ahead of arrivals, is useful for predicting the actual number of tourist arrivals. The MIDAS forecasting model that employs weekly Google Trends data outperforms models using monthly Google Trends data and models without Google Trends data.
@@ -39803,7 +39803,7 @@ Song, H., Li, G., Witt, S. F., and Athanasopoulos, G. (2011). Forecasting touris
 URL: https://meta-analysis.cz/transmission/
 Citation: Tomas Havranek, Roman Horvath, Jakub Mateju (2012), "Monetary transmission and the financial sector in the Czech Republic." Economic Change and Restructuring 45(3): 135-155.
 Published version: https://doi.org/10.1007/s10644-011-9106-z
-Paper: https://meta-analysis.cz/transmission/transmission.pdf
+Paper: https://meta-analysis.cz/transmission/transmission2.pdf
 Full text (HTML): https://meta-analysis.cz/transmission/paper/
 
 Abstract: In this paper, we 1) examine the interactions of financial variables and the macroeconomy within the block-restriction vector autoregression model and 2) evaluate to what extent the financial variables improve the forecasts of GDP growth and inflation. For this reason, various financial variables are examined, including those unexplored in previous literature, such as the share of liquid assets in the banking industry and the loan loss provision rate. Our results suggest that financial variables have a systematic and statistically significant effect on macroeconomic fluctuations. In terms of forecast evaluation, financial variables in general seem to improve the forecast of macroeconomic variables, but the predictive performance of individual financial variables varies over time, in particular during the 2008-2009 crisis.
