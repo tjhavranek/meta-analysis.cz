@@ -294,7 +294,7 @@
    "units": "partial correlation coefficient",
    "direction_note": "Positive means financial development is associated with higher growth.",
    "n_studies": 67,
-   "moderators": 13
+   "moderators": 14
   },
   "forward": {
    "included": true,
@@ -404,7 +404,7 @@
    "units": "percentage points",
    "direction_note": null,
    "n_studies": 88,
-   "moderators": 7
+   "moderators": 8
   },
   "lags": {
    "included": false,
