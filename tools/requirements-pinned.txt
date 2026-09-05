@@ -6,3 +6,10 @@
 # separate: the data layer needs pandas and pyarrow and does not need this, and the site
 # builders need this and not those.
 latex2mathml==3.81.0
+
+# check_table_numbers.py reads the text layer of every source PDF to see whether the numbers
+# in a transcribed table are in the paper. Pinned like the above, and for a related reason:
+# a text layer is not a fixed thing. A different MuPDF splits spans differently, joins
+# ligatures differently and encodes a decimal point differently, so a version change could
+# turn a passing transcript into a failing one without a single character of the site moving.
+PyMuPDF==1.27.2.3
