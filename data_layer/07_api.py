@@ -363,14 +363,25 @@ for proj in sorted(man):
       # See _weight_share(): how much of this literature's precision weight sits on one estimate.
       max_precision_weight_share=_WS.get(proj),
       audit_status=_audit_status(proj))
+    # A dataset's own note reaches the public record whenever it has one.
+    #
+    # It used to reach it only when the dataset was also a duplicate or shared a source file,
+    # so 23 of the 28 notes written in overrides.json were never published. They are exactly
+    # the caveats a reuser needs and cannot derive: that frisch publishes the extensive margin
+    # and the intensive one is a sibling file in the same archive, that activism's workbook
+    # carries two header rows, that spillovers is the vertical half of a sample whose
+    # horizontal half is bma. All of it written down, none of it visible.
+    _own = (OVR.get(proj) or {}).get("note")
     if d["duplicate_of"]:
-        d["note"]=((OVR.get(proj) or {}).get("note")
+        d["note"]=(_own
                    or f"Same estimates as '{d['duplicate_of']}'; excluded from the harmonised "
                       f"table to avoid double counting.")
     elif d["shares_source_file_with"]:
-        d["note"]=((OVR.get(proj) or {}).get("note")
+        d["note"]=(_own
                    or f"Shares a source FILE with '{d['shares_source_file_with']}' but uses different "
                       f"columns or rows. A distinct literature, NOT a duplicate, and pooled on its own.")
+    elif _own:
+        d["note"]=_own
     datasets.append(d)
 
 # Records with no data are not datasets. Iterating .datasets[] used to hand a consumer three

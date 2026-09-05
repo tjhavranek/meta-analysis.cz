@@ -222,7 +222,8 @@
    "license_url": "https://creativecommons.org/licenses/by/4.0/",
    "rights_note": "CC BY 4.0. Free to use, adapt, and redistribute, including commercially and including as training data. The only condition is credit: cite the paper named in this entry.",
    "max_precision_weight_share": 0.2143,
-   "audit_status": "domain_reviewed"
+   "audit_status": "domain_reviewed",
+   "note": "The published workbook's Data sheet carries TWO header rows: row 0 names the columns and row 1 repeats them with the authors' working marks ('Delete', 'Strong', 'Odhad'). Read at header=0 the second one arrives as an estimate, which is why this dataset used to publish 1,974 rows against the paper's 1,973. It is dropped before anything reads the file."
   },
   {
    "id": "alphas",
@@ -336,7 +337,8 @@
    "license_url": "https://creativecommons.org/licenses/by/4.0/",
    "rights_note": "CC BY 4.0. Free to use, adapt, and redistribute, including commercially and including as training data. The only condition is credit: cite the paper named in this entry.",
    "max_precision_weight_share": 0.1474,
-   "audit_status": "code_traced"
+   "audit_status": "code_traced",
+   "note": "DELIBERATE CHOICE, and the one literature where it is a choice: armington.xlsx stores BOTH the raw pair (armel/se) and the winsorised pair (armel_w/se_w), and they differ on 176 of 3,524 rows (armel spans -56.19..78.60, armel_w -0.996..8.505). The harmonised table stores the RAW pair, for consistency with every other literature here -- in sigma, beauty and risk the winsorised columns are generated inside the paper's code and are simply not available in the source, so raw is the only option there. Storing raw everywhere keeps one rule across the table and lets a user winsorise themselves; it does mean our values will NOT reproduce this paper's published coefficients until you apply the 2.5% winsorising yourself. Long-run and short-run elasticities share the column and are separated only by the srun flag; do not pool them without it. tstats_w/invse_w serve an alternative t-based specification and are not the primary pair. CAVEAT ON THAT ADVICE: the note above says not to pool short-run with long-run without the `srun` flag, but `srun` is NOT among the columns the harmonised table carries, so a user of the pooled file cannot follow it. Short-run (556 estimates, mean 0.88) and long-run (2,968, mean 1.65) are therefore indistinguishable there; use the per-dataset armington file, which keeps every original column. Carrying run-length into the pooled schema is staged for 1.0.0. Found by the Fable audit, 2026-08-04."
   },
   {
    "id": "beauty",
@@ -393,7 +395,8 @@
    "license_url": "https://creativecommons.org/licenses/by/4.0/",
    "rights_note": "CC BY 4.0. Free to use, adapt, and redistribute, including commercially and including as training data. The only condition is credit: cite the paper named in this entry.",
    "max_precision_weight_share": 0.5126,
-   "audit_status": "code_traced"
+   "audit_status": "code_traced",
+   "note": "The effect is the percentage increase in earnings or productivity per one-standard-deviation increase in rated beauty, in percentage points (8.91 means 8.91%). Beauty-PENALTY rows are pooled with premiums at their original sign in the main analysis; only a robustness variable flips them. excluded.xlsx is a PRISMA study-level screen -- those studies never entered beauty.xlsx, so it is not a row filter on this file."
   },
   {
    "id": "bma",
@@ -559,7 +562,8 @@
    "license_url": "https://creativecommons.org/licenses/by/4.0/",
    "rights_note": "CC BY 4.0. Free to use, adapt, and redistribute, including commercially and including as training data. The only condition is credit: cite the paper named in this entry.",
    "max_precision_weight_share": 0.0126,
-   "audit_status": "domain_reviewed"
+   "audit_status": "domain_reviewed",
+   "note": "The file also carries the RAW reported pair, e/se, which is what each primary study printed. Those coefficients run over different dependent variables and different units, which is why the paper transforms them to partial correlations before pooling anything; do not analyse e/se across studies. `good` marks the 146 estimates the paper calls comparable and reports separately, and `invperstudy` is the per-study inverse count used as a weight in the paper's third specification. Both are kept in the per-dataset file."
   },
   {
    "id": "class",
@@ -616,7 +620,8 @@
    "license_url": "https://creativecommons.org/licenses/by/4.0/",
    "rights_note": "CC BY 4.0. Free to use, adapt, and redistribute, including commercially and including as training data. The only condition is credit: cite the paper named in this entry.",
    "max_precision_weight_share": 0.0211,
-   "audit_status": "code_traced"
+   "audit_status": "code_traced",
+   "note": "Two of 2,819 rows carry a partial correlation outside [-1,1] (1.372 and 1.116), taken straight from the source pcc column. They are almost certainly coding errors in the original file. Kept rather than silently dropped, so the mirror stays faithful to what was published — filter on abs(effect)<=1 if you need a strictly valid correlation. UPSTREAM DATA ERROR, documented rather than silently passed: class.xlsx itself carries two partial correlations outside [-1,1] -- pcc = 1.371675 and 1.116313, sitting beside effect/se_effect of 7.24/1.5671 and 0.967742/0.430108. A correlation cannot leave [-1,1], so these are errors in the authors' own pcc column, not in the conversion; 90_roundtrip confirms both values occur verbatim in the source. A further 73 rows sit exactly at -1 or +1 with positive standard errors, which is also not a coherent PCC/SE pair; 70 of those come from one study. Their combined precision weight is about 1e-6 of the literature's total, so they barely move an inverse-variance estimate, but they are invalid input to any correlation transform. Retained because the table's contract is faithful reproduction, and flagged on every run by 94_sanity. Found 2026-08-04."
   },
   {
    "id": "climate",
@@ -783,7 +788,8 @@
    "license_url": "https://creativecommons.org/licenses/by/4.0/",
    "rights_note": "CC BY 4.0. Free to use, adapt, and redistribute, including commercially and including as training data. The only condition is credit: cite the paper named in this entry.",
    "max_precision_weight_share": 0.2264,
-   "audit_status": "domain_reviewed"
+   "audit_status": "domain_reviewed",
+   "note": "Only the 539 estimates with a GENUINELY REPORTED standard error are included. The paper's headline FAT-PET instead uses standard_error_comb, which imputes a bootstrapped study-level SE for the other 388; that is its 'robust check' specification we match, not its headline. The choice is deliberate: imputed standard errors would contaminate a benchmark whose purpose is comparing standard-error-based correctors. Use the per-dataset file if you want the imputed variant. Negative discount rates are real, not a sign error: a minority of studies estimate them. pub_year is mapped explicitly to `year` (1979-2017). The column NAMED publication_year in this file is a standardised BMA regressor spanning -2.515..1.359, not a year; find_year's value gate correctly rejects it, and `year` is too ambiguous a name to add to the global pattern without risking a data year elsewhere."
   },
   {
    "id": "dst",
@@ -949,7 +955,8 @@
    "license_url": "https://creativecommons.org/licenses/by/4.0/",
    "rights_note": "CC BY 4.0. Free to use, adapt, and redistribute, including commercially and including as training data. The only condition is credit: cite the paper named in this entry.",
    "max_precision_weight_share": 0.2785,
-   "audit_status": "domain_reviewed"
+   "audit_status": "domain_reviewed",
+   "note": "All 2,735 estimates are included. The extremes (to +/-100,000, with standard errors that scale with them) are REAL weak-instrument Euler-equation estimates, not missing-value sentinels, and the paper keeps them, relying on precision weighting to down-weight them. If you compute a raw MEAN, apply abs(eis)<10 as the paper does for its descriptives: that gives 0.49, matching its reported 0.5, where the unrestricted mean is 41.7. The median is barely affected either way."
   },
   {
    "id": "electricity",
@@ -1007,7 +1014,8 @@
    "license_url": "https://creativecommons.org/licenses/by/4.0/",
    "rights_note": "CC BY 4.0. Free to use, adapt, and redistribute, including commercially and including as training data. The only condition is credit: cite the paper named in this entry.",
    "max_precision_weight_share": 1.0,
-   "audit_status": "domain_reviewed"
+   "audit_status": "domain_reviewed",
+   "note": "Price elasticity of electricity demand. The pool spans short-run (median -0.16), intermediate-run (-0.39) and long-run (-0.35) estimates, which the paper analyses SEPARATELY; the short_run / intermediate_run / long_run flags are in the per-dataset file, and you should condition on them rather than pool blind. Income elasticities are a different estimand and are kept in their own columns, not mixed in here."
   },
   {
    "id": "esg",
@@ -1229,7 +1237,8 @@
    "license_url": "https://creativecommons.org/licenses/by/4.0/",
    "rights_note": "CC BY 4.0. Free to use, adapt, and redistribute, including commercially and including as training data. The only condition is credit: cite the paper named in this entry.",
    "max_precision_weight_share": null,
-   "audit_status": "excluded_no_precision"
+   "audit_status": "excluded_no_precision",
+   "note": "still fully usable for model averaging over study characteristics, as in the original paper; it is only the effect/SE table it cannot join"
   },
   {
    "id": "finance_growth",
@@ -1399,7 +1408,8 @@
    "license_url": "https://creativecommons.org/licenses/by/4.0/",
    "rights_note": "CC BY 4.0. Free to use, adapt, and redistribute, including commercially and including as training data. The only condition is credit: cite the paper named in this entry.",
    "max_precision_weight_share": 0.4433,
-   "audit_status": "domain_reviewed"
+   "audit_status": "domain_reviewed",
+   "note": "Extensive margin: 762 estimates from 38 studies, exactly as the paper reports. The intensive margin is the sibling file data_intensive.xlsx in the same archive, 709 estimates from 40 studies, again exactly as reported; it is published as part of frisch/frisch_data.zip but is not pooled here, because the two margins are different outcomes and averaging across them would be meaningless. The paper does not drop rows with no usable standard error, it imputes a per-study bootstrapped one, which cannot be reproduced without the bootstrap inputs, so those rows are excluded here rather than filled."
   },
   {
    "id": "gasoline",
@@ -1454,7 +1464,8 @@
    "license_url": "https://creativecommons.org/licenses/by/4.0/",
    "rights_note": "CC BY 4.0. Free to use, adapt, and redistribute, including commercially and including as training data. The only condition is credit: cite the paper named in this entry.",
    "max_precision_weight_share": 0.0692,
-   "audit_status": "domain_reviewed"
+   "audit_status": "domain_reviewed",
+   "note": "LONG-RUN estimates only. The published gas_income_revision.dta is the long-run subsample; the paper's headline is both horizons (short-run mean 0.28, long-run 0.66). The 845 SHORT-RUN estimates are in mra-data.dta, inside the same gasoline/data.zip, as Ysr with t-statistic tYsr. They are not yet in the harmonised table. 90 rows carry n_obs <= 1, which is not a usable sample size -- almost certainly a missing-value code in the source rather than a real count. They are left as they are, but anything using sample size as a precision instrument (MAIVE above all) should drop them first. Flagged on every run by 95_columns. Found 2026-08-04."
   },
   {
    "id": "gasoline_price",
@@ -1682,7 +1693,8 @@
    "license_url": "https://creativecommons.org/licenses/by/4.0/",
    "rights_note": "CC BY 4.0. Free to use, adapt, and redistribute, including commercially and including as training data. The only condition is credit: cite the paper named in this entry.",
    "max_precision_weight_share": 0.2663,
-   "audit_status": "domain_reviewed"
+   "audit_status": "domain_reviewed",
+   "note": "one row per impulse-response horizon, roughly 7 horizons per (idstudy, idirf), so rows within a study are not independent"
   },
   {
    "id": "incentives",
@@ -1741,7 +1753,8 @@
    "license_url": "https://creativecommons.org/licenses/by/4.0/",
    "rights_note": "CC BY 4.0. Free to use, adapt, and redistribute, including commercially and including as training data. The only condition is credit: cite the paper named in this entry.",
    "max_precision_weight_share": 0.0156,
-   "audit_status": "domain_reviewed"
+   "audit_status": "domain_reviewed",
+   "note": "Baseline is the partial correlation. Cohen's d and its standard error remain in the per-dataset file for anyone wanting the robustness variant."
   },
   {
    "id": "inflation",
@@ -1799,7 +1812,8 @@
    "license_url": "https://creativecommons.org/licenses/by/4.0/",
    "rights_note": "CC BY 4.0. Free to use, adapt, and redistribute, including commercially and including as training data. The only condition is credit: cite the paper named in this entry.",
    "max_precision_weight_share": 0.0163,
-   "audit_status": "code_traced"
+   "audit_status": "code_traced",
+   "note": "Uses the paper's WINSORISED estimate column (Estimate_win): 45 rows sit exactly at the lower bound -3.85 and 42 at the upper bound 6.0. That is what the paper analyses, but it departs from this collection's usual raw-tails policy and the clumps at the bounds will be visible in any funnel plot."
   },
   {
    "id": "lags",
@@ -1973,7 +1987,8 @@
    "license_url": "https://creativecommons.org/licenses/by/4.0/",
    "rights_note": "CC BY 4.0. Free to use, adapt, and redistribute, including commercially and including as training data. The only condition is credit: cite the paper named in this entry.",
    "max_precision_weight_share": 0.0648,
-   "audit_status": "code_traced"
+   "audit_status": "code_traced",
+   "note": "n_obs is NULL for this literature, and deliberately so. The only column matching the sample-size pattern is `n`, which is constant within a study and equals that study's row count on every one of the 41 studies (idstudy runs 1-42 with 7 unused): it is the number of estimates collected from the study, not the number of observations behind any of them. Feeding it to MAIVE would instrument precision with how many results a paper happened to report. The file's other count, `cells`, is not a substitute: the paper's own variable table defines it as `the logarithm of the total number of the multidimensional partitions of the labor market usually based on education, experience, region, gender, and time` and treats it throughout as a measure of data granularity, a moderator, never as an estimation sample size. Nothing in the published file states N, so nothing is asserted; this dataset is not MAIVE-eligible. The same refusal is what remittances got in 1.0.0, but there a real sample size (`Sample`) existed and 1.1.0 moved to it. Here there is none to move to."
   },
   {
    "id": "price_puzzle",
@@ -2085,7 +2100,8 @@
    "license_url": "https://creativecommons.org/licenses/by/4.0/",
    "rights_note": "CC BY 4.0. Free to use, adapt, and redistribute, including commercially and including as training data. The only condition is credit: cite the paper named in this entry.",
    "max_precision_weight_share": 0.0103,
-   "audit_status": "domain_reviewed"
+   "audit_status": "domain_reviewed",
+   "note": "lib is short-run, lib_cum long-run; the short-run t-statistic is used here"
   },
   {
    "id": "remittances",
@@ -2141,7 +2157,8 @@
    "license_url": "https://creativecommons.org/licenses/by/4.0/",
    "rights_note": "CC BY 4.0. Free to use, adapt, and redistribute, including commercially and including as training data. The only condition is credit: cite the paper named in this entry.",
    "max_precision_weight_share": 0.0181,
-   "audit_status": "code_traced"
+   "audit_status": "code_traced",
+   "note": "The file holds BOTH a long-run (COEF_L/SE_L) and a short-run (COEF_S/SE_S) coefficient per row. Only the LONG-RUN pair enters the harmonised table, because the two are different estimands and pooling them would mix horizons. The short-run pair (48 usable rows) remains in the published per-dataset file for anyone who wants it. APPLIED 1.0.0: the effect is now the partial correlation the paper analyses, PCC = TSTAT_L/sqrt(TSTAT_L^2+DF) with se = sqrt((1-PCC^2)/DF), replacing the raw COEF_L/SE_L which ran over five different dependent variables and were not comparable. n_obs, as a chronology. 1.0.0 set it to NULL: the column matched by name was `Obs`, a row ordinal -- all 490 values unique, strictly increasing over 1..538, with degrees of freedom exceeding it on 38.4% of rows, which is impossible for a sample size. A null was honest; leaving the ordinal would have silently corrupted MAIVE, which instruments precision with sample size. 1.1.0 fills it: rejecting `Obs` was right but incomplete, because the file also carries `Sample`, which IS the sample size -- integral, no nulls across 538 source rows, 6 to 2,946, and greater than the degrees of freedom on every row. n_obs is now mapped to `Sample`, so this literature is eligible for MAIVE for the first time. Both found by the Codex audit, 2026-08-04."
   },
   {
    "id": "resource_curse",
@@ -2253,7 +2270,8 @@
    "license_url": "https://creativecommons.org/licenses/by/4.0/",
    "rights_note": "CC BY 4.0. Free to use, adapt, and redistribute, including commercially and including as training data. The only condition is credit: cite the paper named in this entry.",
    "max_precision_weight_share": 0.3088,
-   "audit_status": "code_traced"
+   "audit_status": "code_traced",
+   "note": "The published risk.dta is ALREADY restricted to econometrically estimated RRA: rra.do line 90 `drop if estimated==0` (dropping calibrated values) and line 92 `drop estimated`, which is why the column is absent from the shipped file. The paper's headline regressions then use rra_win/se_win, winsorised at the 10th/90th percentiles by `winsor2 rra se, suffix(_win) cuts(10 90)` at line 135 -- those columns are GENERATED in code and do not exist in risk.dta, so the raw pair is the only thing the source offers."
   },
   {
    "id": "scc",
@@ -2311,7 +2329,8 @@
    "license_url": "https://creativecommons.org/licenses/by/4.0/",
    "rights_note": "CC BY 4.0. Free to use, adapt, and redistribute, including commercially and including as training data. The only condition is credit: cite the paper named in this entry.",
    "max_precision_weight_share": 0.1789,
-   "audit_status": "domain_reviewed"
+   "audit_status": "domain_reviewed",
+   "note": "usable only on the subset where stdlow is present (about 53% of rows); there is no primary-study sample size, perstudy is an estimates-per-study de-clustering weight"
   },
   {
    "id": "sigma",
@@ -2368,7 +2387,8 @@
    "license_url": "https://creativecommons.org/licenses/by/4.0/",
    "rights_note": "CC BY 4.0. Free to use, adapt, and redistribute, including commercially and including as training data. The only condition is credit: cite the paper named in this entry.",
    "max_precision_weight_share": 0.0502,
-   "audit_status": "code_traced"
+   "audit_status": "code_traced",
+   "note": "The effect is sigma itself, the elasticity of substitution -- not its inverse and not 1-sigma. Primary studies that estimated a transformation (1/sigma, 1-sigma, (1-sigma)/sigma, rho) were converted back to sigma units before the file was written; formula_code records which transformation the primary study used. About 4% of values are negative and are retained, so sigma is not truncated at zero."
   },
   {
    "id": "size",
@@ -2595,7 +2615,8 @@
    "license_url": "https://creativecommons.org/licenses/by/4.0/",
    "rights_note": "CC BY 4.0. Free to use, adapt, and redistribute, including commercially and including as training data. The only condition is credit: cite the paper named in this entry.",
    "max_precision_weight_share": 0.038,
-   "audit_status": "code_traced"
+   "audit_status": "code_traced",
+   "note": "The published file carries 892 rows, 31 of which the paper's own code excludes."
   },
   {
    "id": "substitution",
@@ -2713,7 +2734,8 @@
    "license_url": "https://creativecommons.org/licenses/by/4.0/",
    "rights_note": "CC BY 4.0. Free to use, adapt, and redistribute, including commercially and including as training data. The only condition is credit: cite the paper named in this entry.",
    "max_precision_weight_share": 0.0394,
-   "audit_status": "code_traced"
+   "audit_status": "code_traced",
+   "note": "INCLUDED from 1.0.0 by the owner's decision (2026-08-04), but only the estimates `size` does not already carry. Of trust's 1,613 rows, 1,329 (82.4%) duplicate pooled `size` rows and are dropped here so nothing is counted twice, leaving the 284 unique to trust that the shipped table carries. This is a deliberate splice of two separately-assembled collections of one literature: trust (2026) is the later collection, size (2019) the earlier and larger one at 1,746 rows. Anyone who wants either collection whole should use its own per-dataset file rather than the pooled table."
   },
   {
    "id": "water",
@@ -2770,7 +2792,8 @@
    "license_url": "https://creativecommons.org/licenses/by/4.0/",
    "rights_note": "CC BY 4.0. Free to use, adapt, and redistribute, including commercially and including as training data. The only condition is credit: cite the paper named in this entry.",
    "max_precision_weight_share": 0.1123,
-   "audit_status": "code_traced"
+   "audit_status": "code_traced",
+   "note": "This is the INCOME elasticity of water demand, not the price elasticity, so the stored values are positive by expectation and are NOT sign-flipped or absolute-valued. `standarderrorovb` is a derived interaction regressor (standarderror x ovb), not a second standard-error column."
   }
  ]
 }
