@@ -137,6 +137,7 @@ if "$PY" -c "import latex2mathml" >/dev/null 2>&1; then
   if [ -f tools/check_paper_pages.py ]; then
     if "$PY" -c "import sys; sys.path.insert(0, 'tools'); import _poppler; sys.exit(0 if _poppler.is_poppler(_poppler.tool('pdftotext')) else 1)" >/dev/null 2>&1; then
       run_check "verifying the full-text pages (slow)..."   tools/check_paper_pages.py
+      run_check "checking numbers in transcribed tables..." tools/check_table_numbers.py
     else
       echo "pre-push: full-text page check SKIPPED (needs poppler's pdftotext; this machine has $(pdftotext -v 2>&1 | head -1 | cut -c1-40))"
     fi

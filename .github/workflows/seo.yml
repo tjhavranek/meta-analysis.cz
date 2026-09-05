@@ -133,6 +133,18 @@ jobs:
           sudo apt-get update -qq && sudo apt-get install -y -qq poppler-utils
           python tools/check_paper_pages.py
 
+      # The tables were the largest thing on this site that nothing checked. The fidelity
+      # gate reads prose and drops every table row before comparing, which is how pcc Table 3
+      # shipped 0.8945 where the article prints 0.8845. This asks whether each number in a
+      # transcribed table appears anywhere in the paper it came from: it cannot say a number
+      # is in the right cell, but it catches a changed digit, and the accompanying test proves
+      # it does. 61 of 64 transcripts are clean; the three that are not are recorded with
+      # their cause in tools/table_number_exceptions.json.
+      - name: Check the numbers in transcribed tables
+        run: |
+          python tools/check_table_numbers.py
+          python tools/test_check_table_numbers.py
+
       # The full-text pages themselves are the largest thing this site publishes and were
       # the one generated artifact with no --check gate: nothing here or in the pre-push
       # hook rebuilt them, so a page that stopped following from its transcript would have
