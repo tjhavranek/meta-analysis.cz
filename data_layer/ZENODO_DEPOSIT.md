@@ -1,6 +1,6 @@
 # Zenodo deposit — what to upload, and what must never be uploaded
 
-> **STATUS: PUBLISHED. THE SITE IS ONE METADATA CHANGE AHEAD OF THE DEPOSIT.**
+> **STATUS: 1.2.1 BUILT, AWAITING UPLOAD.** The DOI below is reserved on the draft.
 > The 46 files in `codebooks/` now each carry a `license` key
 > (`https://creativecommons.org/licenses/by/4.0/`), added 2026-09-04 so that a client
 > reading a codebook on its own is told the rights over what it describes. Every other
@@ -12,6 +12,17 @@
 > Version 0.9.0-beta: **https://doi.org/10.5281/zenodo.21773679**
 > Version 1.0.0: **https://doi.org/10.5281/zenodo.21789702**
 > Version 1.1.1: **https://doi.org/10.5281/zenodo.22050272** — deposited 2026-08-21.
+> Version 1.2.1: **https://doi.org/10.5281/zenodo.22520929** — reserved 2026-09-06.
+>
+> 1.2.1 is a correction release. `frisch` was reading a 723-row draft file matching neither
+> sample its paper reports; it now publishes the extensive margin, 762 rows from 38 studies,
+> pinned to `data_extensive.xlsx`. `activism` was shipping a second header row as an estimate
+> (1,974 to 1,973). `lags` named the VAR lag order as its outcome instead of `mon_bot`.
+> `spillovers` and `bma` are relabelled semi-elasticities, `skill`s direction note is corrected
+> with the old text kept in `direction_note_correction`, `finance_growth` and `inflation` gain
+> the publication year their sources always held, and 23 withheld dataset notes now reach the
+> index. Totals: 66,897 source rows, 55,471 estimates, 49,866 harmonised rows, 42 literatures.
+>
 > Version 1.2.0: **https://doi.org/10.5281/zenodo.22212666** — deposited 2026-08-31, built
 > from commit `a15b1dc9c4f3de9bc35890a0c68645e88ed466d2`.
 >

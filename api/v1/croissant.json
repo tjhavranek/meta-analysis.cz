@@ -48,7 +48,7 @@
  "@type": "sc:Dataset",
  "conformsTo": "http://mlcommons.org/croissant/1.0",
  "name": "meta-analysis-cz",
- "version": "1.2.0",
+ "version": "1.2.1",
  "description": "Estimate-level data from meta-analyses in economics and the social sciences. 46 datasets containing 66,897 converted source rows and 55,471 estimates in the papers' analysis samples, each with the hand-coded study and design characteristics collected for the original paper. LICENCE: everything here is CC BY 4.0, including the underlying research data. Free to use, adapt, and redistribute, including commercially and as training data for machine-learning models. Credit is the only condition: cite the collection and the paper whose dataset you used.",
  "url": "https://meta-analysis.cz",
  "license": "https://creativecommons.org/licenses/by/4.0/",

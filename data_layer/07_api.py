@@ -8,7 +8,7 @@ OUT=os.path.join(WORK,"out"); BASE="https://meta-analysis.cz"
 VERSION="1.0.0"; DATA_V="v1"
 # The DATA artefact's version, in ONE place. It was hardcoded in four, which is how a
 # consumer once saw the Croissant record say 1.0.0 while the table said 0.9.0-beta.
-DATA_VERSION="1.2.0"; DATA_STATUS="stable"
+DATA_VERSION="1.2.1"; DATA_STATUS="stable"
 # The VERSION DOI, set once Zenodo minted it. None until deposited -- publishing the
 # previous version's DOI beside a new version tells a citing reader the wrong thing.
 # Reserved on the 1.2.0 draft before the bundle was built, so the archived CITATION.cff
@@ -16,7 +16,7 @@ DATA_VERSION="1.2.0"; DATA_STATUS="stable"
 # on 4,614 rows -- armington and migrant were publishing a study's estimate count as its
 # sample size, which corrupts MAIVE's first stage -- and adds cbequity as the 46th dataset
 # and 42nd pooled literature. 1.1.1 is 10.5281/zenodo.22050272 and is superseded.
-DATA_DOI="10.5281/zenodo.22212666"
+DATA_DOI="10.5281/zenodo.22520929"
                                   # before the bundle was built, so the archived files name it.
 
 papers={p["project"]:p for p in json.load(open(os.path.join(SITE,"tools","papers.json"),encoding="utf-8"))}
