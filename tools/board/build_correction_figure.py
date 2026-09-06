@@ -675,9 +675,12 @@ def build(check=False):
         + "\n</div>\n" + caption + "\n</figure>\n")
     print(f"  wrote {os.path.relpath(FRAG, BASE)}  ({len(out)} of {n_all} papers, "
           f"{len(down)} down, median {med:+.0f}%, {excl} exclusions recorded)")
-    import subprocess
-    subprocess.run([sys.executable, os.path.join(BASE, "tools_seo",
-                                                 "publish_board_sources.py")], check=False)
+    # A call to tools_seo/publish_board_sources.py used to sit here. That file has never
+    # existed in this repository -- `git log --all --diff-filter=A` finds no commit that ever
+    # added it -- and BASE resolves to site/tools, so the path it pointed at was wrong twice
+    # over. With check=False the failure was swallowed on every run: the interpreter printed
+    # "can't open file" to stderr and the build carried on, which is why it survived. Nothing
+    # downstream is missing as a result, because nothing was ever produced by it.
     return 0
 
 
