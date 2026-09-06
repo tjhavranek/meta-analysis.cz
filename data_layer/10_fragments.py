@@ -182,6 +182,26 @@ def _known_issues():
                    "over five different dependent variables, so they are not comparable with each "
                    "other or with the other literatures. Treat this literature as unusable for now.")
 
+    # Same defect as the remittances entry above and disclosed the same way: the column
+    # published as the effect is not the one the paper analysed. Found by the owner reading
+    # the catalogue row, not by a gate -- the arithmetic pairing test cannot separate a
+    # headline estimand from a robustness one when both reproduce the file's t-statistic,
+    # and it says so itself in 07_api. Computed from the units, so it disappears on its own
+    # when the re-mapping lands rather than needing to be remembered and deleted.
+    _cls = _H[_H["dataset"] == "class"]
+    if len(_cls) and "partial correlation" in str(_cls["effect_units"].iloc[0]).lower():
+        out.append("<code>class</code> publishes the partial correlation, which its paper uses "
+                   "for a robustness check that admits 12 studies reporting no test-score "
+                   "standard deviation (Online Appendix Table B5, Block 2), rather than the "
+                   "common metric of its main models: the change in test scores in hundredths of "
+                   "a standard deviation per one additional student, over 2,434 estimates from 54 "
+                   "studies. Both column pairs are in the per-dataset file, and both reproduce "
+                   "the file's own t-statistic, so nothing here is miscomputed. To work on the "
+                   "paper's scale, take <code>effect</code> and <code>se_effect</code> where "
+                   "<code>effect_true == 1</code> from the per-dataset file: the pooled "
+                   "table carries only the partial correlation, so the switch cannot be "
+                   "made there. Re-mapping is scheduled for the next data revision.")
+
     # 09_verify has flagged this since 1.0.0 with "must be documented", and it was
     # documented nowhere a reader would see. A partial correlation cannot lie outside
     # [-1,1]; a value that does will break any reanalysis that assumes the bound. Computed
