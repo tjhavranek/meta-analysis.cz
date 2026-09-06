@@ -51,7 +51,7 @@
    "zero": true
   },
   "exercise": {
-   "value": "0.227 for general cognition, nothing for memory or executive function",
+   "value": "SMD 0.227 for general cognition, nothing for memory or executive function",
    "zero": false
   },
   "habits": {
@@ -71,11 +71,11 @@
    "zero": true
   },
   "gasoline": {
-   "value": "0.1 short run, 0.23 long run",
+   "value": "elasticity 0.1 short run, 0.23 long run",
    "zero": false
   },
   "water": {
-   "value": "about 0.15 or less",
+   "value": "elasticity about 0.15 or less",
    "zero": false
   },
   "resource_curse": {
@@ -83,11 +83,11 @@
    "zero": false
   },
   "electricity": {
-   "value": "−0.16 short run, −0.38 long run",
+   "value": "elasticity −0.16 short run, −0.38 long run",
    "zero": false
   },
   "gasoline_price": {
-   "value": "−0.09 short run, −0.31 long run",
+   "value": "elasticity −0.09 short run, −0.31 long run",
    "zero": false
   },
   "scc": {
@@ -111,7 +111,7 @@
    "zero": true
   },
   "fdi": {
-   "value": "+11% per 10 pp",
+   "value": "+11% per 10 pp of foreign presence",
    "zero": false
   },
   "forward": {
@@ -120,7 +120,7 @@
    "tail": "slopes 0.23–0.45 developed, 0.95–1.16 emerging; the unbiasedness hypothesis predicts a slope of 1"
   },
   "spillovers": {
-   "value": "about 9% per 10 pp for suppliers, small for buyers",
+   "value": "about 9% higher productivity for suppliers per 10 pp of foreign presence, small for buyers",
    "zero": false
   },
   "class": {
@@ -132,11 +132,11 @@
    "zero": true
   },
   "migrant": {
-   "value": "about 17",
+   "value": "elasticity about 17",
    "zero": false
   },
   "skill": {
-   "value": "4, lower bound 2",
+   "value": "elasticity 4, lower bound 2",
    "zero": false,
    "tail": "smaller in developing countries"
   },
@@ -158,7 +158,7 @@
    "zero": true
   },
   "esg": {
-   "value": "about 0.12 points per 1 pp",
+   "value": "about 0.12 ESG points per 1 pp",
    "zero": false
   },
   "finance_growth": {
