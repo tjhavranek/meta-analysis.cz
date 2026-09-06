@@ -46,9 +46,9 @@ url: "https://meta-analysis.cz"
 abstract: >-
   Estimate-level data from meta-analyses in economics and the social sciences,
   with the study and design characteristics hand-coded for each original paper.
-  Forty-six datasets holding 66,859 rows in the converted source
-  files, 55,450 estimates after each paper's own analysis
-  selection, and a harmonised table pooling 49,845 of them across
+  Forty-six datasets holding 66,897 rows in the converted source
+  files, 55,471 estimates after each paper's own analysis
+  selection, and a harmonised table pooling 49,866 of them across
   42 literatures. Each dataset ships a column-level codebook. Column
   mappings were resolved arithmetically, by requiring that the effect divided by
   its standard error reproduce the t-statistic each dataset already reports, and
