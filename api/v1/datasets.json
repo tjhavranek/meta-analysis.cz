@@ -608,7 +608,7 @@
    "reconciliation": {
     "n_estimates_reported_in_paper": 2819,
     "n_rows_in_harmonised_table": 2819,
-    "note": "matches the paper exactly"
+    "note": "The pooled effect column here is the partial correlation, which the paper uses as a ROBUSTNESS check (Online Appendix Table B5, Block 2) rather than as its headline metric. The paper's own common metric is the change in test scores measured in hundredths of a standard deviation per one additional student, the `effect` and `se_effect` columns, on the 2,434 estimates from 54 studies that `class.do` keeps with `drop if effect_true==0`; that is the unit behind Tables 2, 3, 7 and 8 and behind the abstract's findings on the STAR experiment and on classes under 15 students. The partial correlation exists in the paper partly to admit 12 further studies that report no test-score standard deviation and so cannot enter the common metric at all. Both column pairs are published in the per-dataset file, and both reproduce this dataset's reported t-statistic, so the arithmetic pairing test cannot choose between them; the choice has to come from the paper, and the paper chooses `effect`. A reanalyst reproducing the published results must take `effect`/`se_effect` on the `effect_true == 1` subset rather than these rows as they stand. Re-mapping the pooled column is deferred to the next data release rather than done here, because it would change 2,819 rows of a deposited version."
    },
    "excluded_from_harmonised_because": null,
    "duplicate_of": null,
