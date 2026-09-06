@@ -51,8 +51,9 @@
    "zero": true
   },
   "exercise": {
-   "value": "SMD 0.227 for general cognition, nothing for memory or executive function",
-   "zero": false
+   "value": "SMD 0.227 for general cognition only",
+   "zero": false,
+   "tail": "0.027 for memory, 0.012 for executive function; wide prediction intervals span zero"
   },
   "habits": {
    "value": "0.4 (macro 0.6, micro 0.1)",
@@ -117,7 +118,7 @@
   "forward": {
    "value": "attenuated but alive for developed currencies, absent for emerging",
    "zero": false,
-   "tail": "slopes 0.23–0.45 developed, 0.95–1.16 emerging; the unbiasedness hypothesis predicts a slope of 1"
+   "tail": "slopes 0.23–0.45 developed, 0.95–1.16 emerging; unbiasedness predicts 1"
   },
   "spillovers": {
    "value": "about 9% higher productivity for suppliers per 10 pp of foreign presence, small for buyers",
