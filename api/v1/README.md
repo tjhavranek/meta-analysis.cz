@@ -43,7 +43,7 @@ inst <- read.csv("https://meta-analysis.cz/data/v1/estimates_harmonised.csv")
 **Read the Parquet where you can, and pass `float_precision="round_trip"` where you
 cannot.** The CSV is not the problem: it carries every value at full precision and
 round-trips exactly. Pandas' default CSV parser is the problem, and it is not exact. It
-moves 17,466 of the 49,866 `se` values, 10,159 `effect` values and 9,247 `t_stat` values,
+moves 17,484 of the 50,441 `se` values, 10,159 `effect` values and 9,343 `t_stat` values,
 each by up to about 1.5e-11. So this applies to any column you read, not only the derived
 ones, and recomputing `effect / se` yourself does not avoid it.
 
@@ -68,12 +68,12 @@ curl -s https://meta-analysis.cz/api/v1/datasets.json | jq '.datasets[] | {id, n
 
 ## The harmonised table
 
-One row per harmonised **observation**, pooled across literatures: **49,866 rows
+One row per harmonised **observation**, pooled across literatures: **50,441 rows
 from 42 literatures**. Rows are not always independent estimates — `price_puzzle`
 carries one row per impulse response per horizon (the five month horizons plus
 the trough, coded 99, and the peak, coded 88), and `house_prices` ships about
 seven horizons per impulse response. Check `horizon` before treating rows as
-independent. Version **1.2.1**.
+independent. Version **1.3.0**.
 
 1.1.0 added `finance_growth`, taking the table to 41 literatures, and 1.1.1
 removed 20 `price_puzzle` rows that corresponded to no source estimate, leaving
@@ -90,7 +90,15 @@ sample, `activism` no longer ships a second header row as an estimate (1,974 to 
 and `lags` names `mon_bot` as its outcome rather than the VAR lag order. It also
 publishes the publication year `finance_growth` and `inflation` always held, relabels
 `spillovers` and `bma` as semi-elasticities, and corrects `skill`’s direction note.
-The table goes to 49,866 rows.
+The table goes to 49,866 rows. 1.3.0 adds the intensive margin to `frisch`: the paper
+reports over 700 estimates on each of the two margins of labour supply, and only the
+extensive one was published as a dataset. Both are now included, distinguished by a
+`margin` column, taking that dataset from 762 rows to 1,471 over 57 studies (21 papers
+report on both margins) and its contribution to this table from 553 rows to 1,128. The two
+margins are different outcomes and must not be averaged: in this table they are told
+apart by `source_file`, which names the member each row came from, because `margin`
+lives in the per-dataset file and does not survive harmonisation. The table goes to 50,441
+rows.
 
 Core columns are present for every row: `dataset`, `study_id`, `estimate_id`,
 `effect`, `se`, `t_stat`, `precision`. The rest are harmonised moderators, and
@@ -132,12 +140,11 @@ the archived deposit:
 
 > **https://doi.org/10.5281/zenodo.21773678** — cite this. It always resolves to the newest version.
 >
-> `https://doi.org/10.5281/zenodo.22520929` is version 1.2.1, the table served here and the newest
+> `https://doi.org/10.5281/zenodo.22529684` is version 1.3.0, the table served here and the newest
 > deposit. Cite this one in a replication package, where the exact files matter.
 >
 > `https://doi.org/10.5281/zenodo.22212666` is version 1.2.0, superseded. It differs from what
-> is served here: 1.2.1 corrects the `frisch` source file, the `activism` header row and the
-> `lags` outcome column.
+> is served here: 1.3.0 adds the intensive margin to `frisch`.
 >
 > `https://doi.org/10.5281/zenodo.21789702` is version 1.0.0, superseded by 1.1.1, which
 > removes 20 `price_puzzle` rows that corresponded to no source estimate.
@@ -323,7 +330,7 @@ not.
 *Archive* — the original files, faithful CSV and Parquet mirrors, codebooks, and
 paper/DOI metadata. Faithful conversions of what was published.
 
-*Harmonised table* — 49,866 selected estimates, automatically mapped and in some
+*Harmonised table* — 50,441 selected estimates, automatically mapped and in some
 cases transformed. Every column mapping is verified against the paper's own
 replication code or published results.
 

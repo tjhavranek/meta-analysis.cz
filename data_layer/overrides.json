@@ -103,7 +103,7 @@
     ]
    }
   ],
-  "units": "elasticity",
+  "units": "semi-elasticity",
   "verified_by": "determinants.do runs 'drop if aux==1' then 'drop if horiz!=1'. Applying exactly those two filters yields 1,205 usable estimates, matching the abstract exactly.",
   "note": "HORIZONTAL spillovers. Shares the FDI spillovers database with the 'spillovers' project, which takes the vertical subset. The two are complementary, not duplicates."
  },
@@ -123,7 +123,7 @@
     ]
    }
   ],
-  "units": "elasticity",
+  "units": "semi-elasticity",
   "verified_by": "Stata_program.do runs 'drop if aux==1' and defines back = (horiz==0 & forw==0) | (horiz==0 & local==1), i.e. the non-horizontal complement",
   "note": "VERTICAL spillovers (forward and backward), 2,421 estimates from 57 studies. The abstract's 3,626 is the FULL sample, horizontal and vertical together; the horizontal 1,205 from 52 studies are published separately as `bma`. 1,205 + 2,421 = 3,626, so the counts reconcile exactly and nothing is missing from the published file.",
   "reconciliation_note": "Resolved. In data.xls (sheet `stata`, 4,147 rows, 57 studies): aux==0 gives 3,626 rows from 57 studies, matching the abstract exactly; aux==0 & horiz==1 gives 1,205 from 52, matching bma exactly; aux==0 & horiz!=1 gives the 2,421 from 57 published here. The earlier note called the difference between 2,421 and 3,626 unexplained and warned the published file might be a subset of the paper's sample. It is not: the difference is the horizontal half, which is a separate dataset on this site."
@@ -281,11 +281,35 @@
  },
  "frisch": {
   "units": "elasticity",
-  "note": "Extensive margin: 762 estimates from 38 studies, exactly as the paper reports. The intensive margin is the sibling file data_intensive.xlsx in the same archive, 709 estimates from 40 studies, again exactly as reported; it is published as part of frisch/frisch_data.zip but is not pooled here, because the two margins are different outcomes and averaging across them would be meaningless. The paper does not drop rows with no usable standard error, it imputes a per-study bootstrapped one, which cannot be reproduced without the bootstrap inputs, so those rows are excluded here rather than filled.",
+  "note": "Both margins the paper reports, in one dataset: 762 extensive-margin estimates from 38 studies and 709 intensive-margin from 40, distinguished by the `margin` column. The two are different outcomes and must not be averaged together; they are shipped together because they are one literature and the paper reports both, the same way a dataset that carries short-run and long-run estimates flags them rather than dropping one. 21 papers report on both margins, so the study count is 57 and not 78, and study ids are keyed on the study label so a paper appearing on both margins keeps one id. Each file keeps its own `idcoeff`, the paper's within-study estimate number, so in this dataset the unique key is (margin, idstudy, idcoeff); the pooled table's estimate_id is assigned per dataset by the pipeline and is unique there. In the pooled table the margins are told apart by source_file, which names the member each row came from, because `margin` itself does not survive harmonisation. The paper does not drop rows with no usable standard error, it imputes a per-study bootstrapped one, which cannot be reproduced without the bootstrap inputs, so those rows are excluded from the pooled table rather than filled.",
   "verified_by": "frisch_data.zip holds both published samples and their counts match the paper exactly: data_extensive.xlsx is 762 rows / 38 studies and data_intensive.xlsx is 709 / 40. The file this dataset used to read, the loose frisch.dta, is 723 rows and matches NEITHER, so it was a pre-publication draft that the resolver preferred on score alone. frisch.do: 'gen tstat = frisch/se' and 'winsor2 frisch se, cuts(5 95)' confirm frisch/se as the analysis columns.",
   "source_archive": "frisch_data.zip",
-  "source_member": "data_extensive.xlsx",
-  "sheet": "data"
+  "sheet": "data",
+  "source_kind": "zip",
+  "source_members": [
+   {
+    "member": "data_extensive.xlsx",
+    "label": "extensive"
+   },
+   {
+    "member": "data_intensive.xlsx",
+    "label": "intensive"
+   }
+  ],
+  "members_label_column": "margin",
+  "members_coalesce": {
+   "no_obs": [
+    "no_obs",
+    "obs"
+   ],
+   "pub_year": [
+    "pub_year",
+    "pubyear"
+   ]
+  },
+  "members_rekey_study_on": "paper",
+  "reconciliation_note": "The paper reports over 700 estimates on EACH margin: 762 extensive from 38 studies and 709 intensive from 40. This dataset carries both, 1,471 rows across 57 distinct studies, and the pooled table holds 1,128 of them: 553 extensive and 575 intensive, the rest having no usable standard error, which the paper handles by imputing a per-study bootstrapped value that cannot be reproduced from the published files. The count above is declared rather than read from the abstract, whose phrase 'over 700 estimates' describes one margin rather than the total.",
+  "n_reported_in_paper": 1471
  },
  "inflation": {
   "units": "percentage points",
@@ -368,7 +392,8 @@
   "verified_by": "size.do regresses size on se, but se_calc is the column that reproduces the file's OWN tstat: 100.0% of rows within 1%, against 96.7% for se. We take se_calc for internal consistency (t = effect/se holds exactly), accepting that it is not the column the paper's regression names. se_calc also contains zeros, which the se>0 filter drops."
  },
  "skill": {
-  "verified_by": "skill.do:174 regresses tstat_coefficient_w on precision_coefficient_w, the WLS form of FAT-PET. Regressing t on precision is algebraically the same test as regressing the effect on its standard error, so it confirms rather than contradicts elasticity/se."
+  "verified_by": "skill.do:174 regresses tstat_coefficient_w on precision_coefficient_w, the WLS form of FAT-PET. Regressing t on precision is algebraically the same test as regressing the effect on its standard error, so it confirms rather than contradicts elasticity/se.",
+  "reconciliation_note": "The pooled table takes the 965 rows of the 1,097 that carry a usable standard error, on the stored substitution-elasticity scale. That is NOT the paper's own analysis sample: the paper analyses 682 estimates from 77 studies after computing -1/elasticity, as direction_note sets out. Both quantities are recoverable from what is published here, but a reanalyst reproducing the paper's headline must apply that transformation and that subset rather than taking these rows as they stand."
  },
  "migrant": {
   "verified_by": "The paper's replication is in R, not Stata: run_replication_package.R:1002 runs stats::lm(elasticity ~ se, data = master, weights = se_weight) and clusters on idstudy -- the FAT-PET on exactly this pair. Found by 93_codegrep.py once R patterns were added; a Stata-only scan had reported this literature as having no regression at all.",

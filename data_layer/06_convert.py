@@ -237,14 +237,76 @@ for proj in sorted(prim):
     # alongside the published file: frisch shipped frisch.dta, 723 rows, which matches
     # NEITHER sample the paper reports (709/40 intensive, 762/38 extensive). `source_member`
     # names the file to read instead, so a resolver score can never again outrank the paper.
+    # A paper can report one literature in two files that are the same quantity measured on
+    # two margins, horizons or sub-samples. frisch does: data_extensive.xlsx (762 estimates,
+    # 38 studies) and data_intensive.xlsx (709, 40) are both the Frisch elasticity, and the
+    # paper's abstract reports both. Publishing one and leaving the other in the archive made
+    # the second invisible to every machine reading the API. `source_members` reads them all
+    # into one dataset, which is what gasoline_price already does with a `longr` dummy inside
+    # a single file.
+    #
+    # Two things MUST be re-keyed or the merge silently corrupts the dataset, because each
+    # file numbers its own rows from 1:
+    #   idstudy  -- study 1 of the extensive file is not study 1 of the intensive file. Left
+    #               alone, 57 real studies would collapse to 40 and every per-study statistic
+    #               would be wrong. Re-keyed off the study LABEL, so a paper appearing on both
+    #               margins keeps one id, which is why 38 + 40 is 57 and not 78.
+    # The estimate id does NOT need re-keying and must not be touched. 08_harmonise assigns
+    # `estimate_id` itself, unconditionally, as a per-dataset cumcount, so uniqueness in the
+    # pooled table is already guaranteed. An earlier version of this code renumbered `idcoeff`
+    # 1..n anyway, which changed a PUBLISHED column in the per-dataset file from the paper's own
+    # within-study estimate number (1..224, repeating across studies) into a global row counter,
+    # destroying the only link back to the paper's own coding and buying nothing.
+    _members = _ov.get("source_members")
     _src = _ov.get("source_member")
-    if _src:
-        source, archive, member = _ov.get("source_kind", "zip"), _ov.get("source_archive"), _src
+    if _members:
+        source, archive = _ov.get("source_kind", "zip"), _ov.get("source_archive")
+        parts, sheet = [], None
+        try:
+            for spec in _members:
+                d, sheet = read_member(proj, source, archive, spec["member"], want)
+                if d is None or d.empty:
+                    raise ValueError("member %s is empty" % spec["member"])
+                d = d.copy()
+                d[_ov.get("members_label_column", "subset")] = spec["label"]
+                d["source_member"] = spec["member"]
+                parts.append(d)
+        except Exception as ex:
+            manifest.append(dict(project=proj,status="error",reason=str(ex)[:120])); continue
+        df = pd.concat(parts, ignore_index=True, sort=False)
+        # Coalesce columns that are the same concept under different names in the two files
+        # (frisch: no_obs/obs, pub_year/pubyear). Without this the harmoniser matches whichever
+        # name it sees first and the other file's rows lose that moderator entirely.
+        for keep, alts in (_ov.get("members_coalesce") or {}).items():
+            present = [c for c in alts if c in df.columns]
+            if present:
+                s = df[present[0]]
+                for c in present[1:]:
+                    s = s.where(s.notna(), df[c])
+                df[keep] = s
+                for c in present:
+                    if c != keep:
+                        df.drop(columns=c, inplace=True)
+        label_col = _ov.get("members_rekey_study_on")
+        if label_col and label_col in df.columns:
+            for c in ("idstudy", "study_id", "studyid"):
+                if c in df.columns:
+                    # Keep the workbook's own study number before overwriting it, so a row can
+                    # still be joined back to the member it came from. Re-keying is necessary
+                    # because each member numbers its studies from 1, but it should not cost the
+                    # reader the original key.
+                    if "source_study_id" not in df.columns:
+                        df["source_study_id"] = df[c]
+                    df[c] = pd.factorize(df[label_col].astype(str).str.strip())[0] + 1
+        member = " + ".join(s["member"] for s in _members)
     else:
-        source, archive, member = rec["source"], rec["archive"], rec["member"]
-    try: df,sheet=read_member(proj,source,archive,member,want)
-    except Exception as ex:
-        manifest.append(dict(project=proj,status="error",reason=str(ex)[:120])); continue
+        if _src:
+            source, archive, member = _ov.get("source_kind", "zip"), _ov.get("source_archive"), _src
+        else:
+            source, archive, member = rec["source"], rec["archive"], rec["member"]
+        try: df,sheet=read_member(proj,source,archive,member,want)
+        except Exception as ex:
+            manifest.append(dict(project=proj,status="error",reason=str(ex)[:120])); continue
     if df is None or df.empty:
         manifest.append(dict(project=proj,status="error",reason="empty")); continue
     # A sheet can carry TWO header rows. activism's does: row 0 names the columns and row 1

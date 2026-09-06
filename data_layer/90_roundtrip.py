@@ -39,10 +39,45 @@ REP = json.load(open(os.path.join(WORK, "harmonised_report.json"), encoding="utf
 R = 8  # rounding for value matching
 
 
+def _read_one(folder, source, archive, member, proj):
+    if source == "loose":
+        src, name = os.path.join(folder, member), member
+    else:
+        z = zipfile.ZipFile(os.path.join(folder, archive))
+        src, name = io.BytesIO(z.read(member)), member
+    ext = os.path.splitext(name)[1].lower()
+    if ext == ".dta":
+        return pd.read_stata(src, convert_categoricals=False)
+    if ext == ".csv":
+        return pd.read_csv(src, low_memory=False)
+    sheet = (OVR.get(proj) or {}).get("sheet") or REP["projects"][proj].get("sheet")
+    xl = pd.ExcelFile(src)
+    if sheet and sheet in xl.sheet_names:
+        return xl.parse(sheet)
+    return None if not xl.sheet_names else xl.parse(xl.sheet_names[0])
+
+
 def read_source(proj):
-    """Read the ORIGINAL published file. Independent of 06_convert."""
-    rec = PRIM[proj]
+    """Read the ORIGINAL published file. Independent of 06_convert.
+
+    This must follow the same PIN the catalogue advertises, or it verifies a file nobody
+    publishes. It read primaries.json alone, so for frisch it opened the loose 723-row
+    frisch.dta that the resolver had preferred and the override rejects, and reported 538 of
+    917 harmonised pairs as absent from "the source" -- a failure of the check, not of the
+    data. `source_member` has been pinned since 1.2.1 and `source_members` since 1.3.0; both
+    are honoured here now. Reading the pinned file is not the same as trusting 06_convert:
+    nothing of that module's mapping, filtering or coalescing logic is used.
+    """
     folder = os.path.join(SITE, proj)
+    _ov = OVR.get(proj) or {}
+    if _ov.get("source_members"):
+        parts = [_read_one(folder, _ov.get("source_kind", "zip"), _ov.get("source_archive"),
+                           s["member"], proj) for s in _ov["source_members"]]
+        return pd.concat([p for p in parts if p is not None], ignore_index=True, sort=False)
+    if _ov.get("source_member"):
+        return _read_one(folder, _ov.get("source_kind", "zip"), _ov.get("source_archive"),
+                         _ov["source_member"], proj)
+    rec = PRIM[proj]
     if rec["source"] == "loose":
         src, name = os.path.join(folder, rec["member"]), rec["member"]
     else:

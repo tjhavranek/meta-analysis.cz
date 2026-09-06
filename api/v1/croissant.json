@@ -48,8 +48,8 @@
  "@type": "sc:Dataset",
  "conformsTo": "http://mlcommons.org/croissant/1.0",
  "name": "meta-analysis-cz",
- "version": "1.2.1",
- "description": "Estimate-level data from meta-analyses in economics and the social sciences. 46 datasets containing 66,897 converted source rows and 55,471 estimates in the papers' analysis samples, each with the hand-coded study and design characteristics collected for the original paper. LICENCE: everything here is CC BY 4.0, including the underlying research data. Free to use, adapt, and redistribute, including commercially and as training data for machine-learning models. Credit is the only condition: cite the collection and the paper whose dataset you used.",
+ "version": "1.3.0",
+ "description": "Estimate-level data from meta-analyses in economics and the social sciences. 46 datasets containing 67,606 converted source rows and 56,046 harmonisable estimates after each paper's reproducible filters, each with the hand-coded study and design characteristics collected for the original paper. LICENCE: everything here is CC BY 4.0, including the underlying research data. Free to use, adapt, and redistribute, including commercially and as training data for machine-learning models. Credit is the only condition: cite the collection and the paper whose dataset you used.",
  "url": "https://meta-analysis.cz",
  "license": "https://creativecommons.org/licenses/by/4.0/",
  "citeAs": "Havranek, T. and Z. Irsova (2026). meta-analysis.cz: harmonised estimate-level data from meta-analyses in economics. Zenodo. https://doi.org/10.5281/zenodo.21773678",
@@ -268,8 +268,8 @@
    "name": "frisch.parquet",
    "contentUrl": "https://meta-analysis.cz/data/v1/frisch/frisch.parquet",
    "encodingFormat": "application/vnd.apache.parquet",
-   "sha256": "b676cd9957d046d137e7cd7e7af42cbec2502ade4b5dfce402f308974a2e8c03",
-   "contentSize": "37845"
+   "sha256": "6e80c55dfea17c4fe0d963533ba46323b565fd82785b465c85814dd10342650a",
+   "contentSize": "52932"
   },
   {
    "@type": "cr:FileObject",
@@ -494,8 +494,8 @@
    "description": "DERIVED AGGREGATE VIEW of the per-dataset files above, reshaped to a common schema. Rows are not additional to them.",
    "contentUrl": "https://meta-analysis.cz/data/v1/estimates_harmonised.csv",
    "encodingFormat": "text/csv",
-   "sha256": "116f8ea116c25a6a6456d6a674ed565a861820498474b98a254f339d3b5df479",
-   "contentSize": "11543724"
+   "sha256": "5c27d5c0889d40491dbd93e1ad4b3937e1c3bee5cff491b8beb2f481cea6fdfc",
+   "contentSize": "11656814"
   },
   {
    "@type": "cr:FileObject",
@@ -504,8 +504,8 @@
    "description": "The same derived aggregate view, as Parquet.",
    "contentUrl": "https://meta-analysis.cz/data/v1/estimates_harmonised.parquet",
    "encodingFormat": "application/vnd.apache.parquet",
-   "sha256": "9111273c163aa107bf62d4f560f340ee2682be2b1a98ac490980b80959052655",
-   "contentSize": "1779255"
+   "sha256": "6de9452ed2596152df1a526560cb4089de006eb7c1457c504b34951023299b76",
+   "contentSize": "1789531"
   }
  ],
  "recordSet": [
@@ -19858,7 +19858,7 @@
      "@type": "cr:Field",
      "@id": "frisch/pub_year",
      "name": "pub_year",
-     "dataType": "sc:Integer",
+     "dataType": "sc:Float",
      "source": {
       "fileObject": {
        "@id": "frisch.parquet"
@@ -19872,7 +19872,7 @@
      "@type": "cr:Field",
      "@id": "frisch/pub_year_dif",
      "name": "pub_year_dif",
-     "dataType": "sc:Integer",
+     "dataType": "sc:Float",
      "source": {
       "fileObject": {
        "@id": "frisch.parquet"
@@ -20238,7 +20238,7 @@
      "@type": "cr:Field",
      "@id": "frisch/wealth",
      "name": "wealth",
-     "dataType": "sc:Integer",
+     "dataType": "sc:Float",
      "source": {
       "fileObject": {
        "@id": "frisch.parquet"
@@ -20378,7 +20378,7 @@
      "@type": "cr:Field",
      "@id": "frisch/ols",
      "name": "ols",
-     "dataType": "sc:Integer",
+     "dataType": "sc:Float",
      "source": {
       "fileObject": {
        "@id": "frisch.parquet"
@@ -20392,7 +20392,7 @@
      "@type": "cr:Field",
      "@id": "frisch/probit",
      "name": "probit",
-     "dataType": "sc:Integer",
+     "dataType": "sc:Float",
      "source": {
       "fileObject": {
        "@id": "frisch.parquet"
@@ -20434,7 +20434,7 @@
      "@type": "cr:Field",
      "@id": "frisch/quantile",
      "name": "quantile",
-     "dataType": "sc:Integer",
+     "dataType": "sc:Float",
      "source": {
       "fileObject": {
        "@id": "frisch.parquet"
@@ -20483,6 +20483,104 @@
       },
       "extract": {
        "column": "ratio_wage"
+      }
+     }
+    },
+    {
+     "@type": "cr:Field",
+     "@id": "frisch/margin",
+     "name": "margin",
+     "dataType": "sc:Text",
+     "source": {
+      "fileObject": {
+       "@id": "frisch.parquet"
+      },
+      "extract": {
+       "column": "margin"
+      }
+     }
+    },
+    {
+     "@type": "cr:Field",
+     "@id": "frisch/source_member",
+     "name": "source_member",
+     "dataType": "sc:Text",
+     "source": {
+      "fileObject": {
+       "@id": "frisch.parquet"
+      },
+      "extract": {
+       "column": "source_member"
+      }
+     }
+    },
+    {
+     "@type": "cr:Field",
+     "@id": "frisch/tstat",
+     "name": "tstat",
+     "dataType": "sc:Float",
+     "source": {
+      "fileObject": {
+       "@id": "frisch.parquet"
+      },
+      "extract": {
+       "column": "tstat"
+      }
+     }
+    },
+    {
+     "@type": "cr:Field",
+     "@id": "frisch/lnpubyear",
+     "name": "lnpubyear",
+     "dataType": "sc:Float",
+     "source": {
+      "fileObject": {
+       "@id": "frisch.parquet"
+      },
+      "extract": {
+       "column": "lnpubyear"
+      }
+     }
+    },
+    {
+     "@type": "cr:Field",
+     "@id": "frisch/ols_mle",
+     "name": "ols_mle",
+     "dataType": "sc:Float",
+     "source": {
+      "fileObject": {
+       "@id": "frisch.parquet"
+      },
+      "extract": {
+       "column": "ols_mle"
+      }
+     }
+    },
+    {
+     "@type": "cr:Field",
+     "@id": "frisch/other",
+     "name": "other",
+     "dataType": "sc:Float",
+     "source": {
+      "fileObject": {
+       "@id": "frisch.parquet"
+      },
+      "extract": {
+       "column": "other"
+      }
+     }
+    },
+    {
+     "@type": "cr:Field",
+     "@id": "frisch/source_study_id",
+     "name": "source_study_id",
+     "dataType": "sc:Integer",
+     "source": {
+      "fileObject": {
+       "@id": "frisch.parquet"
+      },
+      "extract": {
+       "column": "source_study_id"
       }
      }
     }

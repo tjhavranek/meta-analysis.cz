@@ -325,6 +325,15 @@ for proj in sorted(man):
                       "se":s[keep].astype("float64").values})
     out["t_stat"]=out["effect"]/out["se"]
     out["precision"]=1.0/out["se"]
+    # A dataset built from several members of one archive carries a per-row `source_member`
+    # (06_convert.py, `source_members`). Carry it into source_file so the column names the file
+    # each row actually came from, not a joined string naming both. This is what the published
+    # promise "every row carries the source file it came from" means, and for frisch it is the
+    # ONLY thing in this table that separates the two margins: `margin` lives in the per-dataset
+    # file and does not survive harmonisation, so without it a reader told to split the margins
+    # before pooling cannot do it. Set here rather than below because `out` is filtered first.
+    if "source_member" in df.columns:
+        out["source_file"]=df.loc[keep,"source_member"].values
     n_obs_was_log=False
     for concept,pat in MOD.items():
         if concept=="n_obs" and concept not in o:
@@ -366,7 +375,11 @@ for proj in sorted(man):
         print(f"   {proj}: subtracting overlap with {_sub} -> {int(_keep.sum())} of {len(out)} "
               f"estimates are unique and kept")
         out=out[_keep].reset_index(drop=True)
-    out["source_file"]=m["source"]; out["effect_col"]=eff; out["se_col"]=se
+    # source_file is set at construction for a multi-member dataset, so that the per-row value
+    # survives the filtering above; fall back to the manifest's single name for everything else.
+    if "source_file" not in out.columns:
+        out["source_file"]=m["source"]
+    out["effect_col"]=eff; out["se_col"]=se
     out["se_is_derived"]=se_derived
     out["effect_units"]=(UNITS.get(proj) or {}).get("units") or o.get("units")
     rows.append(out)

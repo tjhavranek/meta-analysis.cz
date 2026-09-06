@@ -1,9 +1,9 @@
 {
  "profile": "tabular-data-package",
  "name": "meta-analysis-cz",
- "version": "1.2.1",
+ "version": "1.3.0",
  "api_version": "1.0.0",
- "data_version": "1.2.1",
+ "data_version": "1.3.0",
  "title": "meta-analysis.cz estimate-level datasets",
  "licenses": [
   {
@@ -6252,6 +6252,34 @@
      },
      {
       "name": "ratio_wage",
+      "type": "number"
+     },
+     {
+      "name": "margin",
+      "type": "string"
+     },
+     {
+      "name": "source_member",
+      "type": "string"
+     },
+     {
+      "name": "tstat",
+      "type": "number"
+     },
+     {
+      "name": "lnpubyear",
+      "type": "number"
+     },
+     {
+      "name": "ols_mle",
+      "type": "number"
+     },
+     {
+      "name": "other",
+      "type": "number"
+     },
+     {
+      "name": "source_study_id",
       "type": "number"
      }
     ]
@@ -15277,7 +15305,7 @@
      {
       "name": "estimate_id",
       "type": "number",
-      "description": "A row counter assigned during harmonisation, numbered 1..N within each dataset in the order rows survived that literature's filters, whose only purpose is to make (dataset, estimate_id) a unique key for every one of the 49,845 rows. It is not the source file's estimate identifier: 08_harmonise.py overwrites any idcoeff/idest/id_estimate/obs_id it matched with `out.groupby(\"dataset\").cumcount()+1`. Two traps. It cannot be joined back to the per-dataset file — where harmonisation dropped rows (class 2,906 source rows to 2,819; scc 1,144 to 602) or reshaped them (price_puzzle), position k here is not row k there, and the source's own estimate id was discarded rather than stored. And the id range is not a row count: `trust` is numbered before its overlap with `size` is subtracted, so its 284 rows carry ids 13–1,613 with gaps. Do keep it in any deduplication — 1,469 rows are identical to another row in every column except this one, so a bare drop_duplicates() deletes real published estimates (more than half of scc); dedupe on (dataset, estimate_id)."
+      "description": "A row counter assigned during harmonisation, numbered 1..N within each dataset in the order rows survived that literature's filters, whose only purpose is to make (dataset, estimate_id) a unique key for every one of the 50,441 rows. It is not the source file's estimate identifier: 08_harmonise.py overwrites any idcoeff/idest/id_estimate/obs_id it matched with `out.groupby(\"dataset\").cumcount()+1`. Two traps. It cannot be joined back to the per-dataset file — where harmonisation dropped rows (class 2,906 source rows to 2,819; scc 1,144 to 602) or reshaped them (price_puzzle), position k here is not row k there, and the source's own estimate id was discarded rather than stored. And the id range is not a row count: `trust` is numbered before its overlap with `size` is subtracted, so its 284 rows carry ids 13–1,613 with gaps. Do keep it in any deduplication — 1,510 rows are identical to another row in every column except this one, so a bare drop_duplicates() deletes real published estimates (more than half of scc); dedupe on (dataset, estimate_id)."
      },
      {
       "name": "study_label",
@@ -15297,17 +15325,17 @@
      {
       "name": "t_stat",
       "type": "number",
-      "description": "The estimate's significance ratio, computed here in float64 as effect/se — exact on all 49,845 rows, with the sign always following effect because se is positive. It is what tells you whether a published estimate cleared conventional significance, and it is the quantity the caliper and publication-bias diagnostics on this site are built on. It is NOT the t-statistic printed in the source file, so it cannot be used as an independent check that the effect/se pairing is right — even though that pairing was originally chosen by reproducing the source's reported t. Where a source does ship its own t, ours differs on a real minority of rows (armington: 30% of 3,524 rows differ from `tstats` by more than 0.1% relative; sigma: 14.5% of its 642 non-null reported t's differ by more than 0.01), usually because the source's column is a winsorised or adjusted copy. Precision matters at thresholds: 96 estimates sit within 1e-9 of |t|=1.96 and 26 exactly on it, and pandas' default CSV parse moves the caliper counts (508/633 from the Parquet against 503/639), so read the Parquet or pass float_precision='round_trip'."
+      "description": "The estimate's significance ratio, computed here in float64 as effect/se — exact on all 50,441 rows, with the sign always following effect because se is positive. It is what tells you whether a published estimate cleared conventional significance, and it is the quantity the caliper and publication-bias diagnostics on this site are built on. It is NOT the t-statistic printed in the source file, so it cannot be used as an independent check that the effect/se pairing is right — even though that pairing was originally chosen by reproducing the source's reported t. Where a source does ship its own t, ours differs on a real minority of rows (armington: 30% of 3,524 rows differ from `tstats` by more than 0.1% relative; sigma: 14.5% of its 642 non-null reported t's differ by more than 0.01), usually because the source's column is a winsorised or adjusted copy. Precision matters at thresholds: 108 estimates sit within 1e-9 of |t|=1.96 and 36 exactly on it, and pandas' default CSV parse moves the caliper counts: in the 0.05-wide bands either side of 1.96 the Parquet gives 515 below and 655 at or above, the default CSV parse 509 and 662, so read the Parquet or pass float_precision='round_trip'."
      },
      {
       "name": "precision",
       "type": "number",
-      "description": "The inverse-variance weight that meta-analysis software (FAT-PET, PEESE, funnel plots) expects as an input, stored as exactly 1/se. It exists purely so those routines can be run without a preparation step. It carries no information that se does not — verified equal to 1/se on all 49,845 rows with zero difference — so weighting by both precision and se double-counts, and any 'agreement' between a precision-weighted and an se-based result is arithmetic, not corroboration. Its range, 5e-06 to 1.16e7, is the mirror image of the tiny-standard-error tail: a precision-weighted mean on some literatures is effectively decided by a handful of estimates unless you winsorise first."
+      "description": "The inverse-variance weight that meta-analysis software (FAT-PET, PEESE, funnel plots) expects as an input, stored as exactly 1/se. It exists purely so those routines can be run without a preparation step. It carries no information that se does not — verified equal to 1/se on all 50,441 rows with zero difference — so weighting by both precision and se double-counts, and any 'agreement' between a precision-weighted and an se-based result is arithmetic, not corroboration. Its range, 5e-06 to 1.16e7, is the mirror image of the tiny-standard-error tail: a precision-weighted mean on some literatures is effectively decided by a handful of estimates unless you winsorise first."
      },
      {
       "name": "n_obs",
       "type": "number",
-      "description": "The number of observations in the PRIMARY study's own regression -- the sample behind that one estimate, not the number of estimates and not any meta-analysis count -- expressed always as a count. The source column was chosen by the shape of its values rather than by its name: integral columns with a plausible median are preferred, a log-stored sample size is exponentiated (students) and the result rounded, a column that is really a row ordinal is rejected, and so is one that is constant within a study and equal to that study's row count, because such a column counts the estimates the study reports rather than the observations behind them (armington and migrant both had one). Where the dataset names its sample size outright, that declaration wins over any name match, and the per-source codebook marks it `role: n_obs` rather than `inferred_role`; seven columns are verified that way today. This is the column MAIVE instruments precision with, and three things bear on that use. Seven pooled literatures (climate, gasoline_price, migrant, scc, skill, trust, water) carry no sample size at all. Coverage inside a literature can be far thinner than the 91.4% headline suggests -- inflation has 20 values for 702 rows, alphas 979 of 1,019, frisch 516 of 532. And gasoline's column needs reading before use: 90 of its 701 rows record 1, which is not a missing-value code but a correct count of time periods, because `Observations` there equals the time span times the data frequency on 100.0% of rows and those 90 are single-year cross sections whose real sample is the number of units, which the file never records. Names genuinely lie here: remittances' `Obs` is the row index, exactly 1..538, and reforms' `obs` falls below the file's own degrees of freedom on a quarter of its rows."
+      "description": "The number of observations in the PRIMARY study's own regression -- the sample behind that one estimate, not the number of estimates and not any meta-analysis count -- expressed always as a count. The source column was chosen by the shape of its values rather than by its name: integral columns with a plausible median are preferred, a log-stored sample size is exponentiated (students) and the result rounded, a column that is really a row ordinal is rejected, and so is one that is constant within a study and equal to that study's row count, because such a column counts the estimates the study reports rather than the observations behind them (armington and migrant both had one). Where the dataset names its sample size outright, that declaration wins over any name match, and the per-source codebook marks it `role: n_obs` rather than `inferred_role`; seven columns are verified that way today. This is the column MAIVE instruments precision with, and three things bear on that use. Seven pooled literatures (climate, gasoline_price, migrant, scc, skill, trust, water) carry no sample size at all. Coverage inside a literature can be far thinner than the 91.4% headline suggests -- inflation has 20 values for 702 rows, alphas 979 of 1,019, frisch 1,064 of 1,128. And gasoline's column needs reading before use: 90 of its 701 rows record 1, which is not a missing-value code but a correct count of time periods, because `Observations` there equals the time span times the data frequency on 100.0% of rows and those 90 are single-year cross sections whose real sample is the number of units, which the file never records. Names genuinely lie here: remittances' `Obs` is the row index, exactly 1..538, and reforms' `obs` falls below the file's own degrees of freedom on a quarter of its rows."
      },
      {
       "name": "df",
@@ -15327,7 +15355,7 @@
      {
       "name": "pub_year",
       "type": "number",
-      "description": "Calendar year the primary study appeared, carried over from each source file's own publication-year column and accepted only after its values were checked to be years — a candidate column passes only if its median falls between 1900 and 2030, so a standardised regressor that merely happens to be named publication_year is rejected and the field left null instead of wrong. Populated on 36,317 of 49,845 rows (72.9%) from 27 of the 42 literatures, spanning 1951–2024. `students` does not store an integer year: 858 of its 861 rows carry a mid-month decimal date (fractional parts are (m−0.5)/12, so 1978.0417 is January 1978), so floor it before grouping or counting years. Fourteen literatures carry no publication year at all, and the value gate is a median test on a whole column — it protects you from the wrong column, not from a sentinel cell inside the right one."
+      "description": "Calendar year the primary study appeared, carried over from each source file's own publication-year column and accepted only after its values were checked to be years — a candidate column passes only if its median falls between 1900 and 2030, so a standardised regressor that merely happens to be named publication_year is rejected and the field left null instead of wrong. Populated on 38,949 of 50,441 rows (77.2%) from 29 of the 42 literatures, spanning 1951–2024. `students` does not store an integer year: 858 of its 861 rows carry a mid-month decimal date (fractional parts are (m−0.5)/12, so 1978.0417 is January 1978), so floor it before grouping or counting years. Fourteen literatures carry no publication year at all, and the value gate is a median test on a whole column — it protects you from the wrong column, not from a sentinel cell inside the right one."
      },
      {
       "name": "citations",

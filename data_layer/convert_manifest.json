@@ -217,11 +217,11 @@
  {
   "project": "frisch",
   "status": "ok",
-  "rows": 762,
-  "cols": 47,
-  "parquet_bytes": 37845,
-  "csv_bytes": 127032,
-  "source": "data_extensive.xlsx",
+  "rows": 1471,
+  "cols": 54,
+  "parquet_bytes": 52932,
+  "csv_bytes": 325835,
+  "source": "data_extensive.xlsx + data_intensive.xlsx",
   "sheet": "data"
  },
  {

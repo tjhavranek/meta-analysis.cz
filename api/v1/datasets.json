@@ -2,7 +2,7 @@
  "name": "meta-analysis.cz data API",
  "version": "1.0.0",
  "api_version": "1.0.0",
- "data_version": "1.2.1",
+ "data_version": "1.3.0",
  "version_note": "version and api_version describe this INTERFACE. data_version describes the harmonised table, and is what croissant.json reports. They move independently.",
  "description": "Estimate-level datasets from meta-analyses in economics and the social sciences, with the hand-coded study characteristics collected for each paper.",
  "license": {
@@ -14,8 +14,8 @@
   "machine_readable": true
  },
  "cite_as": "Havranek, T. and Z. Irsova (2026). meta-analysis.cz: harmonised estimate-level data from meta-analyses in economics. Zenodo. https://doi.org/10.5281/zenodo.21773678",
- "doi": "10.5281/zenodo.22520929",
- "doi_url": "https://doi.org/10.5281/zenodo.22520929",
+ "doi": "10.5281/zenodo.22529684",
+ "doi_url": "https://doi.org/10.5281/zenodo.22529684",
  "concept_doi": "10.5281/zenodo.21773678",
  "concept_doi_url": "https://doi.org/10.5281/zenodo.21773678",
  "doi_note": "Cite the CONCEPT DOI in prose - it always resolves to the newest version. Cite the version DOI in a replication package, where you need the exact files.",
@@ -30,17 +30,17 @@
  },
  "counts": {
   "datasets": 46,
-  "rows_in_source_files": 66897,
-  "estimates_in_analysis_samples": 55471,
-  "estimates_in_harmonised_table": 49866,
+  "rows_in_source_files": 67606,
+  "estimates_in_analysis_samples": 56046,
+  "estimates_in_harmonised_table": 50441,
   "literatures_in_harmonised_table": 42,
   "in_harmonised_table": 42,
-  "counts_explained": "rows_in_source_files counts every row of the 46 converted files. estimates_in_analysis_samples applies each paper's own filters and is what the catalogue table shows. estimates_in_harmonised_table additionally drops literatures that duplicate another exactly, overlap one already included, or lack per-estimate precision."
+  "counts_explained": "rows_in_source_files counts every row of the 46 converted files. estimates_in_analysis_samples applies each paper's own filters where its replication code defines them as a row filter on the stored scale, and otherwise keeps the rows carrying a usable standard error; it is what the catalogue table shows. estimates_in_harmonised_table additionally drops literatures that duplicate another exactly, overlap one already included, or lack per-estimate precision."
  },
  "harmonised_table": {
-  "version": "1.2.1",
+  "version": "1.3.0",
   "status": "stable",
-  "n_rows": 49866,
+  "n_rows": 50441,
   "n_literatures": 42,
   "columns": [
    "dataset",
@@ -1371,11 +1371,11 @@
     "url": "https://meta-analysis.cz/frisch/"
    },
    "description": "Meta-analysis of over 700 estimates finds publication bias inflates the Frisch labor supply elasticity, with a corrected total hours elasticity near 0.25.",
-   "n_estimates": 762,
-   "n_variables": 47,
-   "n_estimates_in_literature": 553,
+   "n_estimates": 1471,
+   "n_variables": 54,
+   "n_estimates_in_literature": 1128,
    "source_file": "https://meta-analysis.cz/frisch/frisch_data.zip",
-   "source_member": "data_extensive.xlsx",
+   "source_member": "data_extensive.xlsx, data_intensive.xlsx",
    "source_sheet": "data",
    "files": {
     "parquet": "https://meta-analysis.cz/data/v1/frisch/frisch.parquet",
@@ -1394,9 +1394,9 @@
    "column_mapping_verified_by": "frisch_data.zip holds both published samples and their counts match the paper exactly: data_extensive.xlsx is 762 rows / 38 studies and data_intensive.xlsx is 709 / 40. The file this dataset used to read, the loose frisch.dta, is 723 rows and matches NEITHER, so it was a pre-publication draft that the resolver preferred on score alone. frisch.do: 'gen tstat = frisch/se' and 'winsor2 frisch se, cuts(5 95)' confirm frisch/se as the analysis columns.",
    "in_harmonised_table": true,
    "reconciliation": {
-    "n_estimates_reported_in_paper": 700,
-    "n_rows_in_harmonised_table": 553,
-    "note": "-147 rows against the paper's count, usually because the published file has no usable standard error on the remainder. See this dataset's note and column_mapping_verified_by."
+    "n_estimates_reported_in_paper": 1471,
+    "n_rows_in_harmonised_table": 1128,
+    "note": "The paper reports over 700 estimates on EACH margin: 762 extensive from 38 studies and 709 intensive from 40. This dataset carries both, 1,471 rows across 57 distinct studies, and the pooled table holds 1,128 of them: 553 extensive and 575 intensive, the rest having no usable standard error, which the paper handles by imputing a per-study bootstrapped value that cannot be reproduced from the published files. The count above is declared rather than read from the abstract, whose phrase 'over 700 estimates' describes one margin rather than the total."
    },
    "excluded_from_harmonised_because": null,
    "duplicate_of": null,
@@ -1407,9 +1407,9 @@
    "rights_status": "cc-by-4.0",
    "license_url": "https://creativecommons.org/licenses/by/4.0/",
    "rights_note": "CC BY 4.0. Free to use, adapt, and redistribute, including commercially and including as training data. The only condition is credit: cite the paper named in this entry.",
-   "max_precision_weight_share": 0.4433,
+   "max_precision_weight_share": 0.4107,
    "audit_status": "domain_reviewed",
-   "note": "Extensive margin: 762 estimates from 38 studies, exactly as the paper reports. The intensive margin is the sibling file data_intensive.xlsx in the same archive, 709 estimates from 40 studies, again exactly as reported; it is published as part of frisch/frisch_data.zip but is not pooled here, because the two margins are different outcomes and averaging across them would be meaningless. The paper does not drop rows with no usable standard error, it imputes a per-study bootstrapped one, which cannot be reproduced without the bootstrap inputs, so those rows are excluded here rather than filled."
+   "note": "Both margins the paper reports, in one dataset: 762 extensive-margin estimates from 38 studies and 709 intensive-margin from 40, distinguished by the `margin` column. The two are different outcomes and must not be averaged together; they are shipped together because they are one literature and the paper reports both, the same way a dataset that carries short-run and long-run estimates flags them rather than dropping one. 21 papers report on both margins, so the study count is 57 and not 78, and study ids are keyed on the study label so a paper appearing on both margins keeps one id. Each file keeps its own `idcoeff`, the paper's within-study estimate number, so in this dataset the unique key is (margin, idstudy, idcoeff); the pooled table's estimate_id is assigned per dataset by the pipeline and is unique there. In the pooled table the margins are told apart by source_file, which names the member each row came from, because `margin` itself does not survive harmonisation. The paper does not drop rows with no usable standard error, it imputes a per-study bootstrapped one, which cannot be reproduced without the bootstrap inputs, so those rows are excluded from the pooled table rather than filled."
   },
   {
    "id": "gasoline",
@@ -2490,7 +2490,7 @@
    "reconciliation": {
     "n_estimates_reported_in_paper": null,
     "n_rows_in_harmonised_table": 965,
-    "note": null
+    "note": "The pooled table takes the 965 rows of the 1,097 that carry a usable standard error, on the stored substitution-elasticity scale. That is NOT the paper's own analysis sample: the paper analyses 682 estimates from 77 studies after computing -1/elasticity, as direction_note sets out. Both quantities are recoverable from what is published here, but a reanalyst reproducing the paper's headline must apply that transformation and that subset rather than taking these rows as they stand."
    },
    "excluded_from_harmonised_because": null,
    "duplicate_of": null,

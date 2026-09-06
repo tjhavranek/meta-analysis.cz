@@ -8,15 +8,14 @@ OUT=os.path.join(WORK,"out"); BASE="https://meta-analysis.cz"
 VERSION="1.0.0"; DATA_V="v1"
 # The DATA artefact's version, in ONE place. It was hardcoded in four, which is how a
 # consumer once saw the Croissant record say 1.0.0 while the table said 0.9.0-beta.
-DATA_VERSION="1.2.1"; DATA_STATUS="stable"
+DATA_VERSION="1.3.0"; DATA_STATUS="stable"
 # The VERSION DOI, set once Zenodo minted it. None until deposited -- publishing the
 # previous version's DOI beside a new version tells a citing reader the wrong thing.
-# Reserved on the 1.2.0 draft before the bundle was built, so the archived CITATION.cff
-# inside the zip names the identifier the record is published under. 1.2.0 corrects n_obs
-# on 4,614 rows -- armington and migrant were publishing a study's estimate count as its
-# sample size, which corrupts MAIVE's first stage -- and adds cbequity as the 46th dataset
-# and 42nd pooled literature. 1.1.1 is 10.5281/zenodo.22050272 and is superseded.
-DATA_DOI="10.5281/zenodo.22520929"
+# Reserved on the 1.3.0 draft before the bundle was built, so the archived CITATION.cff
+# inside the zip names the identifier the record is published under. 1.3.0 adds the intensive
+# margin to frisch, which had published only the extensive one: 1,471 rows over 57 studies.
+# 1.2.1 is 10.5281/zenodo.22520929 and is superseded; the full history is in CITATION.cff.
+DATA_DOI="10.5281/zenodo.22529684"
                                   # before the bundle was built, so the archived files name it.
 
 papers={p["project"]:p for p in json.load(open(os.path.join(SITE,"tools","papers.json"),encoding="utf-8"))}
@@ -70,8 +69,18 @@ def _weight_share():
 
 _WS=_weight_share()
 
-def claimed_n(pap):
-    """How many estimates the paper itself says it uses."""
+def claimed_n(pap, proj=None):
+    """How many estimates the paper itself says it uses.
+
+    Read from the abstract, which is right almost everywhere and wrong where the paper states
+    a count PER SUB-SAMPLE. frisch's abstract says "over 700 estimates" of each of its two
+    margins, so the regex returned 700 for a dataset that carries 1,471, and the reconciliation
+    then reported a shortfall that did not exist. `n_reported_in_paper` in overrides.json
+    declares the figure where the abstract cannot be read mechanically; the prose alone was not
+    enough, because this field is machine-readable and was being consumed as a number.
+    """
+    ovr=(OVR.get(proj) or {}).get("n_reported_in_paper") if proj else None
+    if ovr is not None: return int(ovr)
     t=((pap or {}).get("one_line") or "")+" "+((pap or {}).get("abstract") or "")
     m=re.search(r"([\d,]{3,})\s+estimates",t)
     return int(m.group(1).replace(",","")) if m else None
@@ -258,7 +267,7 @@ def _recon_note(proj,pap):
     """
     ovr_note=(OVR.get(proj) or {}).get("reconciliation_note")
     if ovr_note: return ovr_note
-    c,n=claimed_n(pap),_NH.get(proj)
+    c,n=claimed_n(pap,proj),_NH.get(proj)
     if not (c and n): return None
     if n==c: return "matches the paper exactly"
     d=n-c
@@ -322,12 +331,20 @@ for proj in sorted(man):
       # the pin that must be advertised. frisch is read from data_extensive.xlsx inside
       # frisch_data.zip while primaries.json still records the loose frisch.dta the resolver
       # preferred; reporting the latter here published a source_file that is not the file.
+      # `source_members` (plural) is the same pin for a dataset built from more than one member
+      # of the same archive: frisch reads data_extensive.xlsx and data_intensive.xlsx, the two
+      # margins the paper reports. The advertised file is still the ZIP, because that is what
+      # the site serves; the members are listed so a reader can find both inside it. Keying
+      # this branch on the singular alone published "a.xlsx + b.xlsx" as a URL, which 404s.
       source_file=(f"{BASE}/{proj}/{(OVR.get(proj) or {}).get('source_archive')}"
-                   if (OVR.get(proj) or {}).get("source_member")
+                   if ((OVR.get(proj) or {}).get("source_member")
+                       or (OVR.get(proj) or {}).get("source_members"))
                    else f"{BASE}/{proj}/{(PRIM.get(proj) or {}).get('archive')}"
                    if (PRIM.get(proj) or {}).get("source")=="zip"
                    else f"{BASE}/{proj}/{m['source']}"),
       source_member=((OVR.get(proj) or {}).get("source_member")
+                     or (", ".join(s["member"] for s in (OVR.get(proj) or {})["source_members"])
+                         if (OVR.get(proj) or {}).get("source_members") else None)
                      or ((PRIM.get(proj) or {}).get("member")
                          if (PRIM.get(proj) or {}).get("source")=="zip" else None)),
       source_sheet=m.get("sheet"),
@@ -344,7 +361,7 @@ for proj in sorted(man):
       column_mapping_verified_by=(OVR.get(proj) or {}).get("verified_by"),
       in_harmonised_table=bool((harm.get("projects",{}).get(proj) or {}).get("included")),
       reconciliation=dict(
-        n_estimates_reported_in_paper=claimed_n(pap),
+        n_estimates_reported_in_paper=claimed_n(pap,proj),
         n_rows_in_harmonised_table=_NH.get(proj),
         note=_recon_note(proj,pap)),
       excluded_from_harmonised_because=(None if (harm.get("projects",{}).get(proj) or {}).get("included")
@@ -488,7 +505,9 @@ index=dict(
     literatures_in_harmonised_table=(harm.get("n_datasets") or 0),
     in_harmonised_table=sum(1 for d in ok if d["in_harmonised_table"]),
     counts_explained=(f"rows_in_source_files counts every row of the {len(ok)} converted files. "
-                      "estimates_in_analysis_samples applies each paper's own filters and is what "
+                      "estimates_in_analysis_samples applies each paper's own filters where its replication "
+                      "code defines them as a row filter on the stored scale, and otherwise keeps "
+                      "the rows carrying a usable standard error; it is what "
                       "the catalogue table shows. estimates_in_harmonised_table additionally drops "
                       "literatures that duplicate another exactly, overlap one already "
                       "included, or lack per-estimate precision.")),
@@ -796,7 +815,7 @@ cr={"@context":CROISSANT_CONTEXT,
     "description":("Estimate-level data from meta-analyses in economics and the social sciences. "
                    f"{len(ok)} datasets containing {sum(d['n_estimates'] for d in ok):,} converted source "
                    f"rows and {sum(d.get('n_estimates_in_literature') or d['n_estimates'] for d in ok):,} "
-                   f"estimates in the papers' analysis samples, each with the "
+                   f"harmonisable estimates after each paper's reproducible filters, each with the "
                    "hand-coded study and design characteristics collected for the original paper. "
                    "LICENCE: everything here is CC BY 4.0, including the underlying research "
                    "data. Free to use, adapt, and redistribute, including commercially and as "

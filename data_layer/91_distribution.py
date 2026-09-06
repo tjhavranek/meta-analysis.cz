@@ -52,7 +52,7 @@ except Exception as e:
 # failure on every run -- a permanently red check says nothing, and trains you to ignore it.
 # When the live version has no deposit yet, that is a fact to state, not a failure.
 DEPOSITS = {"0.9.0-beta": "21773679", "1.0.0": "21789702", "1.1.1": "22050272",
-            "1.2.0": "22212666", "1.2.1": "22520929"}
+            "1.2.0": "22212666", "1.2.1": "22520929", "1.3.0": "22529684"}
 zen = None
 try:
     _idx = json.load(io.BytesIO(urllib.request.urlopen(

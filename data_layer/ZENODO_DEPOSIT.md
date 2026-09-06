@@ -1,6 +1,7 @@
 # Zenodo deposit — what to upload, and what must never be uploaded
 
-> **STATUS: 1.2.1 BUILT, AWAITING UPLOAD.** The DOI below is reserved on the draft.
+> **STATUS: 1.3.0 BUILT, AWAITING UPLOAD.** The DOI below is reserved on the draft.
+> Version 1.2.1 is published and live.
 > The 46 files in `codebooks/` now each carry a `license` key
 > (`https://creativecommons.org/licenses/by/4.0/`), added 2026-09-04 so that a client
 > reading a codebook on its own is told the rights over what it describes. Every other
@@ -12,7 +13,13 @@
 > Version 0.9.0-beta: **https://doi.org/10.5281/zenodo.21773679**
 > Version 1.0.0: **https://doi.org/10.5281/zenodo.21789702**
 > Version 1.1.1: **https://doi.org/10.5281/zenodo.22050272** — deposited 2026-08-21.
-> Version 1.2.1: **https://doi.org/10.5281/zenodo.22520929** — reserved 2026-09-06.
+> Version 1.2.1: **https://doi.org/10.5281/zenodo.22520929** — published 2026-09-06.
+> Version 1.3.0: **https://doi.org/10.5281/zenodo.22529684** — reserved 2026-09-06.
+>
+> 1.3.0 adds the intensive margin to `frisch`, which had published only the
+> extensive one: 1,471 rows over 57 studies, distinguished by `margin` in the
+> per-dataset file and by `source_file` in the pooled table. It also corrects
+> five metadata records an external review found wrong.
 >
 > 1.2.1 is a correction release. `frisch` was reading a 723-row draft file matching neither
 > sample its paper reports; it now publishes the extensive margin, 762 rows from 38 studies,

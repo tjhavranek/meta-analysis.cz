@@ -1,5 +1,5 @@
 {
- "n_rows": 49866,
+ "n_rows": 50441,
  "n_datasets": 42,
  "columns": [
   "dataset",
@@ -311,7 +311,7 @@
   },
   "frisch": {
    "included": true,
-   "n": 553,
+   "n": 1128,
    "effect": "frisch",
    "se": "se",
    "se_is_derived": false,
@@ -319,7 +319,7 @@
    "n_obs_from_log": false,
    "units": "elasticity",
    "direction_note": null,
-   "n_studies": 23,
+   "n_studies": 42,
    "moderators": 15
   },
   "gasoline": {
