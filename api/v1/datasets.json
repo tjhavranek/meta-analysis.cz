@@ -432,8 +432,8 @@
     "evidence": "paper's replication code",
     "sample_size": "nobs"
    },
-   "effect_units": "elasticity",
-   "direction_note": null,
+   "effect_units": "semi-elasticity",
+   "direction_note": "Semi-elasticity, not an elasticity: the percentage change in domestic firms' productivity associated with a one-unit (i.e. 0 to 1) increase in the foreign-presence ratio, so a coefficient of 0.1 means a ten-percentage-point rise in foreign presence goes with roughly a 1% increase in domestic productivity. Positive means foreign presence is associated with higher domestic productivity. bma2.pdf states it as 'the semi-elasticity of domestic productivity with respect to foreign presence', and uses the term nine times against no use of a plain elasticity.",
    "column_mapping_verified_by": "determinants.do runs 'drop if aux==1' then 'drop if horiz!=1'. Applying exactly those two filters yields 1,205 usable estimates, matching the abstract exactly.",
    "in_harmonised_table": true,
    "reconciliation": {
@@ -2538,8 +2538,8 @@
     "evidence": "paper's replication code",
     "sample_size": "nobs"
    },
-   "effect_units": "elasticity",
-   "direction_note": null,
+   "effect_units": "semi-elasticity",
+   "direction_note": "Semi-elasticity, not an elasticity: the percentage change in domestic firms' productivity associated with a one-unit (i.e. 0 to 1) increase in the foreign-presence ratio, so a coefficient of 0.1 means a ten-percentage-point rise in foreign presence goes with roughly a 1% increase in domestic productivity. Positive means foreign presence is associated with higher domestic productivity. spillovers2.pdf Section 2, below Eq. (2): the coefficients 'can be interpreted as semi-elasticities and thus constitute the natural common metric for the economic effect of spillovers'. The paper uses the word semi-elasticity throughout and never calls this quantity an elasticity.",
    "column_mapping_verified_by": "Stata_program.do runs 'drop if aux==1' and defines back = (horiz==0 & forw==0) | (horiz==0 & local==1), i.e. the non-horizontal complement",
    "in_harmonised_table": true,
    "reconciliation": {

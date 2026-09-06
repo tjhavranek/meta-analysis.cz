@@ -26,7 +26,14 @@ MOD = {
  "pub_year":    r"^(pubyear|pub_?year|publication_?year|yearpub|publicationyear|year_?publication|year_?published)$",
  "citations":   r"^(citations|cit|cit_?google|num_?citations|google|cits)$",
  "impact_factor":r"^(impact|impact_?factor|if|sjr|recursiveif)$",
- "published":   r"^(published|pubpr|reviewed|pblshd)$",
+ # `pubpr` is NOT a publication flag. It appears in exactly one dataset, reforms, where the
+ # paper's Table 4 defines it under "Specification characteristics" as "= 1 if the study
+ # separates the effect of reform on public and private sector". Reading it as `published`
+ # told the pooled table that 6.5% of that literature was published, when the paper's own
+ # publication indicator, `journal` ("= 1 if the study is published in a refereed journal"),
+ # says 55%. `published` is in BINARY_ONLY, so a `journal` column holding a journal NAME is
+ # rejected rather than misread.
+ "published":   r"^(published|journal|reviewed|pblshd)$",
  "top_journal": r"^(top|top3|top5)$",
  "country":     r"^(country|countries)$",
  "country_id":  r"^(idcountry|country_?id|countrya)$",

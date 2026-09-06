@@ -16,8 +16,8 @@
   "direction_note": null
  },
  "bma": {
-  "units": "elasticity",
-  "direction_note": null
+  "units": "semi-elasticity",
+  "direction_note": "Semi-elasticity, not an elasticity: the percentage change in domestic firms' productivity associated with a one-unit (i.e. 0 to 1) increase in the foreign-presence ratio, so a coefficient of 0.1 means a ten-percentage-point rise in foreign presence goes with roughly a 1% increase in domestic productivity. Positive means foreign presence is associated with higher domestic productivity. bma2.pdf states it as 'the semi-elasticity of domestic productivity with respect to foreign presence', and uses the term nine times against no use of a plain elasticity."
  },
  "border": {
   "units": "semi-elasticity",
@@ -173,8 +173,8 @@
   "direction_note": "Elasticity of intertemporal substitution. Same 2,735 estimates as the eis dataset; this file adds country-level moderators."
  },
  "spillovers": {
-  "units": "elasticity",
-  "direction_note": null,
+  "units": "semi-elasticity",
+  "direction_note": "Semi-elasticity, not an elasticity: the percentage change in domestic firms' productivity associated with a one-unit (i.e. 0 to 1) increase in the foreign-presence ratio, so a coefficient of 0.1 means a ten-percentage-point rise in foreign presence goes with roughly a 1% increase in domestic productivity. Positive means foreign presence is associated with higher domestic productivity. spillovers2.pdf Section 2, below Eq. (2): the coefficients 'can be interpreted as semi-elasticities and thus constitute the natural common metric for the economic effect of spillovers'. The paper uses the word semi-elasticity throughout and never calls this quantity an elasticity.",
   "_note": "Units come from overrides.json for this literature; entry added so units.json covers all 39 pooled literatures rather than 38. Absence here previously read as 'no sign trap' when it actually meant 'not present'. Gap found by the Fable audit, 2026-08-04."
  },
  "finance_growth": {

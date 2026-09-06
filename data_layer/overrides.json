@@ -144,7 +144,8 @@
   "n_obs": "n",
   "units": "partial correlation coefficient",
   "verified_by": "reform.do converts lib (a t-statistic, NOT a coefficient) to pcor=lib/sqrt(lib^2+df) with se_pcor=sqrt((1-pcor^2)/df); df=n-k holds exactly on all 456 rows. It then caps lib<12, drops a flagged outlier set defined on the computed correlation ((1/se_pcor)>15 & pcor>0.3 & lib<12) and drops rg==0. Applying all of it gives exactly the 245 short-run coefficients the paper reports.",
-  "note": "lib is short-run, lib_cum long-run; the short-run t-statistic is used here"
+  "note": "lib is short-run, lib_cum long-run; the short-run t-statistic is used here",
+  "published_note": "`journal` is the publication flag, not `pubpr`. The paper's Table 4 lists pubpr under 'Specification characteristics' as '= 1 if the study separates the effect of reform on public and private sector', and journal under 'Publication characteristics' as '= 1 if the study is published in a refereed journal'. The harmoniser's name pattern used to match pubpr, so the pooled table reported 6.5% of this literature as published where the paper's own indicator says 46.5%."
  },
  "scc": {
   "effect": "scc",
@@ -356,7 +357,9 @@
   "verified_by": "The paper's own replication code regresses exactly this pair at replication.zip:replication_package/Code/esg_code_v5.do:496. Found mechanically by 93_codegrep.py, which reads each paper's code and reads off the two variables of its headline meta-analysis regression."
  },
  "euro": {
-  "verified_by": "The paper's own replication code regresses exactly this pair at data.zip:trade_meta.do:16. Found mechanically by 93_codegrep.py, which reads each paper's code and reads off the two variables of its headline meta-analysis regression."
+  "verified_by": "The paper's own replication code regresses exactly this pair at data.zip:trade_meta.do:16. Found mechanically by 93_codegrep.py, which reads each paper's code and reads off the two variables of its headline meta-analysis regression.",
+  "published": null,
+  "published_note": "Deliberately not mapped. euro's source carries a 0/1 column named `journal` (mean 0.54) and the obvious reading is 'published in a refereed journal', but nothing establishes it: the .dta carries no variable label for it, trade_meta.do never uses it, and the paper mentions journals only to describe the impact factor of the outlet. dst's identical-looking column IS mapped, because dst.do settles it outright with `label variable JOURNAL \"= 1 if the study is published in a peer-reviewed journal\"`. A publication flag that is probably right is not worth publishing when the whole value of this table is that its columns mean what they say."
  },
  "resource_curse": {
   "verified_by": "The paper's own replication code regresses exactly this pair at resource_curse.do:164. Found mechanically by 93_codegrep.py, which reads each paper's code and reads off the two variables of its headline meta-analysis regression."
