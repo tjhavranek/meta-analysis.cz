@@ -52,14 +52,18 @@ _LLMS_NOTES = {
         "WAIVE, the Weighted Adjustment Instrumental Variable Estimator, keeps MAIVE's first stage "
         "and adds a second-stage weight that penalises estimates more precise than their sample "
         "size predicts, an exponential tilt on the negative residuals, followed by PEESE; it is an "
-        "experimental option in EasyMeta, and its authors describe it as still a concept. "
+        "experimental option in EasyMeta. "
         "The residual discontinuity test is a diagnostic rather than an estimator: it takes the "
         "excess precision left after sample size is accounted for, plots it against the log "
-        "absolute t-statistic, and looks for a jump at the 1.96 threshold. "
+        "absolute t-statistic, and looks for a jump at the 1.96 threshold, estimated locally with a "
+        "triangular kernel and a Calonico-Cattaneo-Titiunik bandwidth, bootstrapped in "
+        "clusters by study, and reported with a falsification battery (donut hole, placebo "
+        "cutoffs, density tests, bandwidth sensitivity, placebo outcome). "
         "The only sources for either are two conference presentations, "
         "https://meta-analysis.cz/waive_ottawa.pdf (MAER-Net, University of Ottawa, October 2025, "
-        "31 slides) and https://meta-analysis.cz/waive_chania.pdf (SRSM 2026, Chania, 15 slides, "
-        "which adds the residual discontinuity test). Cite them as presentations, not as "
+        "31 slides) and https://meta-analysis.cz/waive_chania.pdf (SRSM 2026, Chania, 12 slides "
+        "plus a nine-slide technical appendix, which sets out the residual discontinuity "
+        "test). Cite them as presentations, not as "
         "published results. Prose version: https://meta-analysis.cz/maive/#extensions",
 }
 

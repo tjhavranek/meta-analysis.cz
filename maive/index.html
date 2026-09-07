@@ -244,22 +244,32 @@ Rachinger, <i>Nature Communications</i> 16, 8454 (2025). It is on CRAN as the
 paper yet, so the conference slides linked below are the only citable source for them, and they
 should not be cited as though they were published results.</p>
 
-<p><b>WAIVE</b>, the Weighted Adjustment Instrumental Variable Estimator, keeps MAIVE's first stage
-and adds a weight to the second. It penalises only those estimates that are more precise than their
-sample size predicts, through an exponential tilt on the negative residuals, and then runs PEESE with
-those weights. On the worked example in <a href="/maive/how-to/">how to run it</a>, MAIVE gives 0.185
-(SE 0.036) and WAIVE 0.143 (SE 0.089). WAIVE is available in EasyMeta as an experimental option. Its
-authors describe it as still a concept.</p>
+<p><b>WAIVE</b>, the Weighted Adjustment Instrumental Variable Estimator, combines two adjustments.
+It keeps MAIVE's instrument, replacing the reported standard error with the part predicted from
+sample size, and then adds a layer that downweights estimates whose precision looks too good near a
+significance cutoff. The weight is an exponential tilt that bites only on excess precision, and only
+where the t-statistic is close to 1.96. In the authors' summary, MAIVE instruments the standard
+error and WAIVE adds a downweighting layer for studies with excess precision near significance
+cutoffs. On the worked example in <a href="/maive/how-to/">how to run it</a>, MAIVE gives 0.185
+(SE 0.036) and WAIVE 0.143 (SE 0.089). WAIVE is available in EasyMeta as an experimental option.</p>
 
-<p><b>The residual discontinuity test</b> is a diagnostic rather than an estimator. It takes the
-excess precision left over after sample size is accounted for, plots it against the log absolute
-t-statistic, and looks for a jump at the 1.96 threshold. In the Chania talk, estimates that are just
-significant are about 26 percent more precise than predicted, with a local discontinuity of 0.259 in
-the direction of excess precision. This one has no paper either.</p>
+<p><b>The residual discontinuity test</b> is a diagnostic rather than an estimator, and it is what
+supplies the excess precision the weight acts on. Regress the log standard error on log sample size
+and keep the residual: where it is negative, the standard error is smaller than the sample size
+predicts. The test then asks whether the average of that residual jumps at the significance
+threshold, with log absolute t as the running variable and log 1.96 as the cutoff, fitted locally on
+each side with a triangular kernel and a bandwidth chosen by the Calonico, Cattaneo and Titiunik
+rule, and bootstrapped in clusters by study. In the Chania talk the jump is 0.259 towards excess
+precision, which the talk reads as just significant estimates being about 26 percent more precise
+than predicted. It comes with a falsification battery: a donut hole around the cutoff, placebo
+cutoffs at 1.5 and 2.5, density tests, bandwidth sensitivity, and a placebo outcome. This one has no
+paper either.</p>
 
 <p>Both are covered in two talks: <a href="/waive_ottawa.pdf">MAER-Net, University of Ottawa, October
-2025</a>, 31 slides and the fuller treatment, and <a href="/waive_chania.pdf">SRSM 2026, Chania</a>,
-15 slides, which is the shorter version but the one that adds the residual discontinuity test.</p>
+2025</a>, 31 slides, and <a href="/waive_chania.pdf">SRSM 2026, Chania</a>, 12 slides followed by a
+technical appendix of nine. Chania is the shorter talk but the one that sets out the residual
+discontinuity test, and its appendix is the only public statement of how that test is estimated and
+what it has been checked against.</p>
 			</div>
 		</div>
 	</div>
