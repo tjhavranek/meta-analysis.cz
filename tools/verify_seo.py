@@ -32,9 +32,20 @@ def git_show(rel):
                          capture_output=True)
     return out.stdout.decode("utf-8", "replace") if out.returncode == 0 else None
 
+def _split_fragment(u):
+    """Return (url without #fragment, fragment or '')."""
+    return (u.split("#", 1)[0], u.split("#", 1)[1]) if "#" in u else (u, "")
+
+
 def url_to_path(u):
     if not u.startswith(BASE):
         return None
+    # A fragment names a place INSIDE a page, not a file. Resolving the whole string turned
+    # /maive/#extensions into a path ending "#extensions", which of course is not a file, so
+    # the first anchor link ever written into llms.txt failed as a missing target. Strip it
+    # here and check the anchor separately below, which is stricter than what this did before:
+    # the page has to exist AND the id has to be on it.
+    u = _split_fragment(u)[0]
     p = urllib.parse.unquote(u[len(BASE):]).lstrip("/")
     if p == "" or p.endswith("/"):
         p += "index.html"
@@ -332,10 +343,17 @@ else:
 for fn in ("llms.txt", "llms-full.txt"):
     txt = open(os.path.join(SITE, fn), encoding="utf-8").read()
     for u in re.findall(r"https://meta-analysis\.cz[^\s\)\]]*", txt):
-        lp = url_to_path(u.rstrip(".,"))
+        _u = u.rstrip(".,")
+        lp = url_to_path(_u)
         n_urls += 1
         if lp and not os.path.isfile(lp):
             fails.append(f"{fn}: missing target {u}")
+        elif lp:
+            # A link to #section is a promise that the section is there. Nothing checked it,
+            # so an anchor could rot silently while the page it points at stayed healthy.
+            _frag = _split_fragment(_u)[1]
+            if _frag and f'id="{_frag}"' not in open(lp, encoding="utf-8").read():
+                fails.append(f"{fn}: {u} points at an anchor that is not on the page")
 
 # /datasets/ inlines generated fragments at BUILD time, so it can fall out of date with
 # them without any file changing: a stale page is a CLEAN file, invisible to git status and

@@ -173,6 +173,7 @@
 			<li><a href="/waive_chania.pdf">Extension II</a></li>
 			<li><a href="maive_slides.pdf">Slides</a></li>
 			<li><a href="maive_replication.zip">Replication</a></li>
+			<li><a href="https://www.easymeta.org/">EasyMeta</a></li>
 			<li><a href="https://cran.r-project.org/package=MAIVE">MAIVE in R</a></li>
 			
 		</ul>
@@ -233,6 +234,34 @@ Meta-analysis upweights studies reporting lower standard errors and hence more p
 </div>
 <!-- paper-extras:end -->
 </div>
+		<div class="post" id="extensions">
+			<h2 class="title">Extensions</h2>
+			<div class="entry">
+<p>MAIVE is the published estimator, and it is what this page is about: Irsova, Bom, Havranek and
+Rachinger, <i>Nature Communications</i> 16, 8454 (2025). It is on CRAN as the
+<a href="https://cran.r-project.org/package=MAIVE">MAIVE</a> package and it runs in a browser at
+<a href="https://www.easymeta.org/">EasyMeta.org</a>. Two further methods build on it. Neither has a
+paper yet, so the conference slides linked below are the only citable source for them, and they
+should not be cited as though they were published results.</p>
+
+<p><b>WAIVE</b>, the Weighted Adjustment Instrumental Variable Estimator, keeps MAIVE's first stage
+and adds a weight to the second. It penalises only those estimates that are more precise than their
+sample size predicts, through an exponential tilt on the negative residuals, and then runs PEESE with
+those weights. On the worked example in <a href="/maive/how-to/">how to run it</a>, MAIVE gives 0.185
+(SE 0.036) and WAIVE 0.143 (SE 0.089). WAIVE is available in EasyMeta as an experimental option. Its
+authors describe it as still a concept.</p>
+
+<p><b>The residual discontinuity test</b> is a diagnostic rather than an estimator. It takes the
+excess precision left over after sample size is accounted for, plots it against the log absolute
+t-statistic, and looks for a jump at the 1.96 threshold. In the Chania talk, estimates that are just
+significant are about 26 percent more precise than predicted, with a local discontinuity of 0.259 in
+the direction of excess precision. This one has no paper either.</p>
+
+<p>Both are covered in two talks: <a href="/waive_ottawa.pdf">MAER-Net, University of Ottawa, October
+2025</a>, 31 slides and the fuller treatment, and <a href="/waive_chania.pdf">SRSM 2026, Chania</a>,
+15 slides, which is the shorter version but the one that adds the residual discontinuity test.</p>
+			</div>
+		</div>
 	</div>
 	<!-- end content -->
 	<!-- start sidebar -->

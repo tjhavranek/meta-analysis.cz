@@ -36,6 +36,33 @@ from _seo_shared import SELF_MANAGED   # one definition, shared with verify_seo.
 # The catalogue, keyed by project id. Used for variableMeasured on each paper's Dataset node:
 # core_columns names the columns whose meaning has actually been verified, which is the honest
 # thing to advertise. Absent catalogue => no variableMeasured, never a wrong one.
+# A page can carry work that has no paper of its own, and then nothing in the citation, DOI,
+# published_as or abstract fields can describe it. On /maive/ that is WAIVE and the residual
+# discontinuity test. Without this note the exports show two links labelled "Extension" and an
+# abstract about MAIVE, and a machine reading them has no way to learn what the extensions are,
+# that they are unpublished, or that the slides are the only source. Keyed by project; add an
+# entry only where the page genuinely carries unpublished work, and say so in these words.
+_LLMS_NOTES = {
+    "maive":
+        "Status of the methods on this page. MAIVE is the PUBLISHED estimator and the foundation "
+        "for the rest: Irsova, Bom, Havranek and Rachinger, Nature Communications 16, 8454 (2025), "
+        "doi 10.1038/s41467-025-63261-0; R package on CRAN at "
+        "https://cran.r-project.org/package=MAIVE; runs in a browser at https://www.easymeta.org/. "
+        "Two further methods build on it and NEITHER HAS A PAPER YET. "
+        "WAIVE, the Weighted Adjustment Instrumental Variable Estimator, keeps MAIVE's first stage "
+        "and adds a second-stage weight that penalises estimates more precise than their sample "
+        "size predicts, an exponential tilt on the negative residuals, followed by PEESE; it is an "
+        "experimental option in EasyMeta, and its authors describe it as still a concept. "
+        "The residual discontinuity test is a diagnostic rather than an estimator: it takes the "
+        "excess precision left after sample size is accounted for, plots it against the log "
+        "absolute t-statistic, and looks for a jump at the 1.96 threshold. "
+        "The only sources for either are two conference presentations, "
+        "https://meta-analysis.cz/waive_ottawa.pdf (MAER-Net, University of Ottawa, October 2025, "
+        "31 slides) and https://meta-analysis.cz/waive_chania.pdf (SRSM 2026, Chania, 15 slides, "
+        "which adds the residual discontinuity test). Cite them as presentations, not as "
+        "published results. Prose version: https://meta-analysis.cz/maive/#extensions",
+}
+
 def _catalog_doi():
     """The Zenodo concept DOI of the collection, read rather than typed."""
     try:
@@ -1319,6 +1346,9 @@ def main():
            f"- [How to run MAIVE]({BASE}/maive/how-to/): the four columns MAIVE needs, a worked "
            f"example with every number archived at {BASE}/api/v1/maive-howto.json, the same run "
            f"in R, and a ready request for the EasyMeta API",
+           f"- [MAIVE extensions: WAIVE and the residual discontinuity test]({BASE}/maive/#extensions): "
+           f"both build on MAIVE and NEITHER HAS A PAPER YET; the two conference decks linked "
+           f"there are the only source, and should be cited as presentations",
            "- [EasyMeta](https://www.easymeta.org/): one-click meta-analysis web app (MAIVE, PET-PEESE, clustering)",
            "- [MAER-Net](https://www.maer-net.org/): Meta-Analysis of Economics Research Network",
            "", "## Optional", "",
@@ -1377,6 +1407,8 @@ def main():
             p, f"/{p}/paper/")
         if os.path.isfile(os.path.join(SITE, _full.strip("/"), "index.html")):
             lf.append(f"Full text (HTML): {BASE}{_full}")
+        if _LLMS_NOTES.get(p):
+            lf += ["", f"Note: {_LLMS_NOTES[p]}"]
         lf += ["", f"Abstract: {m['abstract']}", ""]
         body = full_text_of(p)
         if body:
