@@ -8,7 +8,7 @@
   "direction_note": "Monthly return, not annualised."
  },
  "armington": {
-  "units": "elasticity",
+  "units": "Armington elasticity, winsorised at the 2.5 percent level",
   "direction_note": null
  },
  "beauty": {

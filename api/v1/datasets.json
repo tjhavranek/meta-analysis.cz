@@ -14,8 +14,8 @@
   "machine_readable": true
  },
  "cite_as": "Havranek, T. and Z. Irsova (2026). meta-analysis.cz: harmonised estimate-level data from meta-analyses in economics. Zenodo. https://doi.org/10.5281/zenodo.21773678",
- "doi": "10.5281/zenodo.22529684",
- "doi_url": "https://doi.org/10.5281/zenodo.22529684",
+ "doi": "10.5281/zenodo.22647394",
+ "doi_url": "https://doi.org/10.5281/zenodo.22647394",
  "concept_doi": "10.5281/zenodo.21773678",
  "concept_doi_url": "https://doi.org/10.5281/zenodo.21773678",
  "doi_note": "Cite the CONCEPT DOI in prose - it always resolves to the newest version. Cite the version DOI in a replication package, where you need the exact files.",
@@ -31,10 +31,10 @@
  "counts": {
   "datasets": 46,
   "rows_in_source_files": 67606,
-  "estimates_in_analysis_samples": 59238,
-  "estimates_in_paper_samples": 49827,
-  "rows_carried": 53633,
-  "estimates_in_harmonised_table": 53633,
+  "estimates_in_analysis_samples": 58405,
+  "estimates_in_paper_samples": 49664,
+  "rows_carried": 52800,
+  "estimates_in_harmonised_table": 52800,
   "literatures_in_harmonised_table": 42,
   "in_harmonised_table": 42,
   "counts_explained": "rows_in_source_files counts every row of the 46 converted files. estimates_in_analysis_samples applies each paper's own filters where its replication code defines them as a row filter on the stored scale, and otherwise keeps the rows carrying a usable standard error; it is what the catalogue table shows. estimates_in_harmonised_table additionally drops literatures that duplicate another exactly, overlap one already included, or lack per-estimate precision."
@@ -42,7 +42,7 @@
  "harmonised_table": {
   "version": "2.0.0",
   "status": "stable",
-  "n_rows": 53633,
+  "n_rows": 52800,
   "n_literatures": 42,
   "columns": [
    "dataset",
@@ -326,7 +326,7 @@
     "evidence": "paper's replication code",
     "sample_size": "total"
    },
-   "effect_units": "elasticity",
+   "effect_units": "Armington elasticity, winsorised at the 2.5 percent level",
    "direction_note": null,
    "column_mapping_verified_by": "armington.do has no block comments, so lines 94-96 are live and the headline FAT-PET is ivreg2 armel_w se_w. Regressing armel_w on se_w reproduces Table 2 Panel A to three decimals (slope 0.808 pooled, 0.079 short run, 0.805 long run); the same regression on the raw pair gives -0.012 and would show no publication bias at all. Table 1's means match armel_w only. The raw pair is not unused: the WAAP and Top10 blocks at lines 272-285 run on it, which is why it is carried as the alternative scale.",
    "in_harmonised_table": true,
@@ -2018,7 +2018,7 @@
    "description": "Meta-analysis of 1,000 VAR estimates shows the price puzzle stems from model misspecification, not a true price effect.",
    "n_estimates": 1519,
    "n_variables": 151,
-   "n_estimates_in_literature": 1395,
+   "n_estimates_in_literature": 1060,
    "source_file": "https://meta-analysis.cz/price_puzzle/puzzle.xls",
    "source_member": null,
    "source_sheet": "stata",
@@ -2036,11 +2036,11 @@
    },
    "effect_units": "proportional change in the price level",
    "direction_note": "Stored as a PROPORTION, not a percent: multiply by 100 to read as the paper does (median |effect| 0.002 = 0.2%, consistent with its reported 0.33% trough). Positive values are the puzzling price INCREASE after a monetary contraction; theory expects negative. One row per horizon.",
-   "column_mapping_verified_by": "The reshaped frame carries horizon values 3, 6, 12, 18, 36 plus 88 and 99, which are not horizons: they are the paper's baseline and peak-response columns. Restricting to the five real horizons gives 1,060 rows over 70 studies and per-horizon counts matching the paper.",
+   "column_mapping_verified_by": "The reshaped frame carries horizon values 3, 6, 12, 18, 36 plus 88 and 99, which are not horizons: they are the paper's baseline and peak-response columns. Restricting to the five real horizons gives 1,060 rows over 70 studies and per-horizon counts matching the paper. Codes 88 and 99 are NOT carried as excluded estimates: they are the peak and the trough of impulse responses already in the table at their five horizons, so carrying them would restate the same responses a second time.",
    "in_harmonised_table": true,
    "reconciliation": {
     "n_estimates_reported_in_paper": null,
-    "n_rows_in_harmonised_table": 1395,
+    "n_rows_in_harmonised_table": 1060,
     "note": null
    },
    "excluded_from_harmonised_because": null,
@@ -2052,7 +2052,7 @@
    "rights_status": "cc-by-4.0",
    "license_url": "https://creativecommons.org/licenses/by/4.0/",
    "rights_note": "CC BY 4.0. Free to use, adapt, and redistribute, including commercially and including as training data. The only condition is credit: cite the paper named in this entry.",
-   "max_precision_weight_share": 0.0614,
+   "max_precision_weight_share": 0.0592,
    "audit_status": "domain_reviewed",
    "note": "puzzle.xls is a HYBRID layout: already long on `horizon` (7 rows per impulse response) while the response columns are WIDE and constant across those 7. Melting the wide columns once per row emitted every estimate 7 times -- what 0.9.0-beta shipped: 7,420 rows of which ~6,345 were exact duplicates, identical in every column INCLUDING horizon, so they were never additional horizons. The file provides SEVEN horizons, not five: the month horizons 3/6/12/18/36 plus the trough (MBR/SEB, horizon code 99) and the peak (MPR/SEP, horizon code 88). puzzle.do line 29 excludes `horizon~=88 & horizon~=99` from its 'all horizons' figure and its headline regressions use the five month horizons, so the paper analyses five -- but this catalogue publishes what the file contains, and the trough and peak responses were being silently discarded. All seven are now emitted from the deduplicated records: 1,395 rows (208/215/215/217/205 for the month horizons, 200 trough, 135 peak). CORRECTED AT 1.1.1: those counts were 1,415 and 211/218/218/220/208/202/138 at 1.0.0 and 1.1.0, because the dedupe ran on every column except horizon rather than on the source's own idest. Three blocks (idest 134, 135, 179) each carry one inconsistent sdate/edate month-code cell, so each split in two and the reshape emitted 20 rows matching no source estimate. Those cells reach no harmonised column -- data_start/data_end come from syear/eyear -- so the split was pure noise. Deduping on idest now yields exactly the 217 impulse responses the source declares. No published statistic moved: the 1.96 caliper counts are 508 below and 633 above either way, and all 20 removed rows had |t| <= 1.5625. Owner's decision 2026-08-04: list every horizon. Anyone wanting the paper's own sample should filter to the five numeric horizons. HORIZON CODES: months 3/6/12/18/36 are literal; 99 marks the trough and 88 the peak, the source file's own codes. The trough/peak assignment is inferred from lags.do, which keeps horizon==99 and models mon_bot, the months to the price trough. If that is backwards the two labels swap and no value changes. Filter to horizon<=36 for the paper's own sample."
   },
@@ -2302,7 +2302,7 @@
    "description": "Meta-analysis of 809 SCC estimates from 101 studies finds selective reporting creates an upward bias, especially in peer-reviewed journals.",
    "n_estimates": 1144,
    "n_variables": 36,
-   "n_estimates_in_literature": 602,
+   "n_estimates_in_literature": 267,
    "source_file": "https://meta-analysis.cz/scc/scc.xlsx",
    "source_member": null,
    "source_sheet": "stata",
@@ -2321,12 +2321,12 @@
    },
    "effect_units": "US dollars per tonne of carbon",
    "direction_note": null,
-   "column_mapping_verified_by": "The file stacks three different things in one column set, separated by its own `dataset` field. dataset==1 is the paper's headline funnel-asymmetry sample, N=267 over 34 studies, reproducing Table 3 Panel A. dataset==2 holds per-study median values and dataset==0 a further set; both are carried with in_paper_sample false rather than pooled into the headline.",
+   "column_mapping_verified_by": "The file stacks three different things in one column set, separated by its own `dataset` field. dataset==1 is the paper's headline funnel-asymmetry sample, N=267 over 34 studies, reproducing Table 3 Panel A. dataset==2 holds per-study median values and dataset==0 a further set; both are carried with in_paper_sample false rather than pooled into the headline. The other blocks are NOT carried as excluded estimates: dataset==0's 267 rows with a standard error are row-for-row copies of dataset==1, and dataset==2 holds per-study medians of the same estimates, so carrying either would double-count.",
    "in_harmonised_table": true,
    "reconciliation": {
     "n_estimates_reported_in_paper": 809,
-    "n_rows_in_harmonised_table": 602,
-    "note": "-207 rows against the abstract's count, and correctly so: the paper's own replication code restricts to an analysis subset, reproduced here. See column_mapping_verified_by."
+    "n_rows_in_harmonised_table": 267,
+    "note": "-542 rows against the abstract's count, and correctly so: the paper's own replication code restricts to an analysis subset, reproduced here. See column_mapping_verified_by."
    },
    "excluded_from_harmonised_because": null,
    "duplicate_of": null,
@@ -2337,7 +2337,7 @@
    "rights_status": "cc-by-4.0",
    "license_url": "https://creativecommons.org/licenses/by/4.0/",
    "rights_note": "CC BY 4.0. Free to use, adapt, and redistribute, including commercially and including as training data. The only condition is credit: cite the paper named in this entry.",
-   "max_precision_weight_share": 0.1789,
+   "max_precision_weight_share": 0.7949,
    "audit_status": "domain_reviewed",
    "note": "usable only on the subset where stdlow is present (about 53% of rows); there is no primary-study sample size, perstudy is an estimates-per-study de-clustering weight"
   },
@@ -2706,7 +2706,7 @@
    "description": "Meta-analysis of 1,613 reported size-premium estimates from 105 studies on how generalized trust and rule of law explain the disagreement across markets.",
    "n_estimates": 1613,
    "n_variables": 45,
-   "n_estimates_in_literature": 375,
+   "n_estimates_in_literature": 212,
    "source_file": "https://meta-analysis.cz/trust/trust_data.csv",
    "source_member": null,
    "source_sheet": null,
@@ -2729,7 +2729,7 @@
    "in_harmonised_table": true,
    "reconciliation": {
     "n_estimates_reported_in_paper": null,
-    "n_rows_in_harmonised_table": 375,
+    "n_rows_in_harmonised_table": 212,
     "note": null
    },
    "excluded_from_harmonised_because": null,
@@ -2742,9 +2742,9 @@
    "rights_status": "cc-by-4.0",
    "license_url": "https://creativecommons.org/licenses/by/4.0/",
    "rights_note": "CC BY 4.0. Free to use, adapt, and redistribute, including commercially and including as training data. The only condition is credit: cite the paper named in this entry.",
-   "max_precision_weight_share": 0.042,
+   "max_precision_weight_share": 0.0676,
    "audit_status": "code_traced",
-   "note": "INCLUDED from 1.0.0 by the owner's decision (2026-08-04), but only the estimates `size` does not already carry. Of trust's 1,613 rows, 1,329 (82.4%) duplicate pooled `size` rows and are dropped here so nothing is counted twice, leaving the 284 unique to trust that the shipped table carries. This is a deliberate splice of two separately-assembled collections of one literature: trust (2026) is the later collection, size (2019) the earlier and larger one at 1,746 rows. Anyone who wants either collection whole should use its own per-dataset file rather than the pooled table."
+   "note": "INCLUDED from 1.0.0 by the owner's decision (2026-08-04), but only the estimates `size` does not already carry. Of trust's 1,613 rows, 1,401 (86.9%) duplicate pooled `size` rows and are dropped here so nothing is counted twice, leaving the 212 unique to trust that the shipped table carries. This is a deliberate splice of two separately-assembled collections of one literature: trust (2026) is the later collection, size (2019) the earlier and larger one at 1,746 rows. Anyone who wants either collection whole should use its own per-dataset file rather than the pooled table. The subtraction compares at float32 precision: size's standard error is stored float32 and trust's float64, so an eight-decimal key matched nothing and 154 size estimates briefly re-entered under trust in this release before the key was corrected."
   },
   {
    "id": "water",

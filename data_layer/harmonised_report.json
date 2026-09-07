@@ -1,5 +1,5 @@
 {
- "n_rows": 53633,
+ "n_rows": 52800,
  "n_datasets": 42,
  "columns": [
   "dataset",
@@ -85,7 +85,7 @@
    "se_is_derived": false,
    "n_obs_col": null,
    "n_obs_from_log": false,
-   "units": "elasticity",
+   "units": "Armington elasticity, winsorised at the 2.5 percent level",
    "direction_note": null,
    "n_studies": 42,
    "moderators": 18
@@ -444,7 +444,7 @@
   },
   "price_puzzle": {
    "included": true,
-   "n": 1395,
+   "n": 1060,
    "effect": "res",
    "se": "se",
    "se_is_derived": false,
@@ -509,7 +509,7 @@
   },
   "scc": {
    "included": true,
-   "n": 602,
+   "n": 267,
    "effect": "scc",
    "se": "stdlow",
    "se_is_derived": false,
@@ -517,7 +517,7 @@
    "n_obs_from_log": false,
    "units": "US dollars per tonne of carbon",
    "direction_note": null,
-   "n_studies": 79,
+   "n_studies": 34,
    "moderators": 7
   },
   "sigma": {
@@ -593,7 +593,7 @@
   },
   "trust": {
    "included": true,
-   "n": 375,
+   "n": 212,
    "effect": "size",
    "se": "se",
    "se_is_derived": false,
@@ -601,7 +601,7 @@
    "n_obs_from_log": false,
    "units": "percent",
    "direction_note": "Raw size-return slopes: more negative means a larger conventional size premium.",
-   "n_studies": 63,
+   "n_studies": 34,
    "moderators": 5
   },
   "water": {

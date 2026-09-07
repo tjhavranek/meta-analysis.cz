@@ -92,6 +92,22 @@ for _f, _wants in (
 # before any file is uploaded.
 # Set MAC_BUNDLE_ALLOW_NULL_DOI=1 to build a dry-run bundle before the draft exists.
 _doi = _api.get("harmonised_table", {}).get("doi") or _api.get("doi")
+
+# The deposit DOI must AGREE with the one zenodo.json will be submitted under, not merely be
+# present in the documents. This gate read the DOI out of datasets.json and then checked that
+# README and CITATION contained that same string, so a release whose datasets.json still carried
+# the PREVIOUS version's DOI passed every check while telling readers to cite the superseded
+# record from inside the new one. Comparing the two files catches that.
+try:
+    _zj = json.load(open(os.path.join(HERE, "zenodo.json"), encoding="utf-8"))
+    if _zj.get("doi") and _doi and _zj["doi"] != _doi:
+        print("")
+        print("DEPOSIT NOT SAFE TO PUBLISH:")
+        print("  X datasets.json says the deposit DOI is %s but zenodo.json will submit %s"
+              % (_doi, _zj["doi"]))
+        raise SystemExit(1)
+except FileNotFoundError:
+    pass
 if not os.environ.get("MAC_BUNDLE_ALLOW_NULL_DOI"):
     if not _doi:
         _bad.append("datasets.json carries no version DOI. Reserve it on the Zenodo draft first, "

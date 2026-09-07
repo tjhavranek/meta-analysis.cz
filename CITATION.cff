@@ -56,9 +56,9 @@ abstract: >-
   Estimate-level data from meta-analyses in economics and the social sciences,
   with the study and design characteristics hand-coded for each original paper.
   Forty-six datasets holding 67,606 rows in the converted source
-  files, 59,238 harmonisable estimates after each paper's reproducible
-  filters, and a harmonised table carrying 53,633 of them across
-  42 literatures, of which 49,827 lie inside the analysis samples the
+  files, 58,405 harmonisable estimates after each paper's reproducible
+  filters, and a harmonised table carrying 52,800 of them across
+  42 literatures, of which 49,664 lie inside the analysis samples the
   source papers themselves define. Estimates a paper excluded are carried
   and flagged rather than dropped, and a second effect scale is carried
   where a paper analyses one. Each dataset ships a column-level codebook. Column

@@ -49,7 +49,7 @@
  "conformsTo": "http://mlcommons.org/croissant/1.0",
  "name": "meta-analysis-cz",
  "version": "2.0.0",
- "description": "Estimate-level data from meta-analyses in economics and the social sciences. 46 datasets containing 67,606 converted source rows and 59,238 harmonisable estimates after each paper's reproducible filters, each with the hand-coded study and design characteristics collected for the original paper. LICENCE: everything here is CC BY 4.0, including the underlying research data. Free to use, adapt, and redistribute, including commercially and as training data for machine-learning models. Credit is the only condition: cite the collection and the paper whose dataset you used.",
+ "description": "Estimate-level data from meta-analyses in economics and the social sciences. 46 datasets containing 67,606 converted source rows and 58,405 harmonisable estimates after each paper's reproducible filters, each with the hand-coded study and design characteristics collected for the original paper. LICENCE: everything here is CC BY 4.0, including the underlying research data. Free to use, adapt, and redistribute, including commercially and as training data for machine-learning models. Credit is the only condition: cite the collection and the paper whose dataset you used.",
  "url": "https://meta-analysis.cz",
  "license": "https://creativecommons.org/licenses/by/4.0/",
  "citeAs": "Havranek, T. and Z. Irsova (2026). meta-analysis.cz: harmonised estimate-level data from meta-analyses in economics. Zenodo. https://doi.org/10.5281/zenodo.21773678",
@@ -494,8 +494,8 @@
    "description": "DERIVED AGGREGATE VIEW of the per-dataset files above, reshaped to a common schema. Rows are not additional to them.",
    "contentUrl": "https://meta-analysis.cz/data/v1/estimates_harmonised.csv",
    "encodingFormat": "text/csv",
-   "sha256": "754ffafdbace557796cdb821bae0be9d4cbb42a7712aa8aca5016d989aa3195c",
-   "contentSize": "13447248"
+   "sha256": "4a8e4173256bed73beab79e185df66dd932e1e6cbded756fe4d2ad382f9ca18d",
+   "contentSize": "13407596"
   },
   {
    "@type": "cr:FileObject",
@@ -504,8 +504,8 @@
    "description": "The same derived aggregate view, as Parquet.",
    "contentUrl": "https://meta-analysis.cz/data/v1/estimates_harmonised.parquet",
    "encodingFormat": "application/vnd.apache.parquet",
-   "sha256": "9c6ca483fa6f000ed2232d41e32ddb684e51566bc9bb851d0d27140cb5e40385",
-   "contentSize": "1811767"
+   "sha256": "1b1743c40f0a51c66931b88a2974933ba69044fa028b6944873ea207ecd467db",
+   "contentSize": "1786615"
   }
  ],
  "recordSet": [

@@ -43,8 +43,8 @@ inst <- read.csv("https://meta-analysis.cz/data/v1/estimates_harmonised.csv")
 **Read the Parquet where you can, and pass `float_precision="round_trip"` where you
 cannot.** The CSV is not the problem: it carries every value at full precision and
 round-trips exactly. Pandas' default CSV parser is the problem, and it is not exact. It
-moves 17,484 of the 50,441 `se` values, 10,159 `effect` values and 9,343 `t_stat` values,
-each by up to about 1.5e-11. So this applies to any column you read, not only the derived
+moves 16,794 of the 52,800 `se` values, 9,008 `effect` values and 9,960 `t_stat` values,
+each by up to about 2.9e-11. So this applies to any column you read, not only the derived
 ones, and recomputing `effect / se` yourself does not avoid it.
 
 That is invisible almost everywhere and decisive at a threshold. 96 estimates sit within
@@ -68,11 +68,13 @@ curl -s https://meta-analysis.cz/api/v1/datasets.json | jq '.datasets[] | {id, n
 
 ## The harmonised table
 
-One row per harmonised **observation**, pooled across literatures: **53,633 rows
-from 42 literatures**, of which **49,827 lie inside the analysis samples the source
-papers themselves define**. The paper-sample figure is the one to cite; the larger
-one counts every estimate carried, including those a paper excluded, which are
-flagged rather than hidden. Filter `in_paper_sample` to true to reproduce a paper's
+One row per harmonised **observation**, pooled across literatures. The primary
+analysis set is **49,664 estimates satisfying the source papers' own sample
+definitions**; a further 3,136 estimates those papers excluded are carried
+alongside for robustness work, giving **52,800 rows from 42 literatures** in all.
+Cite the paper-sample figure. The change from 1.3.0's 52,800 rows is not growth in
+the evidence base, and 52,800 is not "all estimates": it is a selection from the
+67,606 source rows. Filter `in_paper_sample` to true to reproduce a paper's
 own sample, and read `paper_sample_exclusion` to see which clause removed a row.
 
 Rows are not always independent estimates — `price_puzzle`
@@ -154,8 +156,12 @@ the archived deposit:
 
 > **https://doi.org/10.5281/zenodo.21773678** — cite this. It always resolves to the newest version.
 >
-> `https://doi.org/10.5281/zenodo.22529684` is version 1.3.0, the table served here and the newest
+> `https://doi.org/10.5281/zenodo.22647394` is version 2.0.0, the table served here and the newest
 > deposit. Cite this one in a replication package, where the exact files matter.
+>
+> `https://doi.org/10.5281/zenodo.22529684` is version 1.3.0, superseded. Anything computed against
+> it for `class` used that literature's robustness scale rather than the one its main models use,
+> and twenty `activism` estimates carried the wrong sign.
 >
 > `https://doi.org/10.5281/zenodo.22212666` is version 1.2.0, superseded. It differs from what
 > is served here: 1.3.0 adds the intensive margin to `frisch`.
@@ -236,8 +242,12 @@ units are left as `elasticity`; that open question is recorded in `units.json`.
 
 ## Known defects in this release
 
-**75 `class` estimates are invalid as partial correlations**: 2 lie outside `[-1, 1]`, to
-|1.372|, and 73 sit at exactly ±1 beside a positive standard error. They are in the source
+**75 `class` estimates are invalid as partial correlations**, and since 2.0.0 they live in
+`effect_alt`, not `effect`. 2 lie outside `[-1, 1]`, to |1.372|, and 73 sit at exactly ±1 beside
+a positive standard error. Do NOT filter this literature on `abs(effect) < 1`: `effect` is now the
+change in test scores in hundredths of a standard deviation, which legitimately exceeds 1 on about
+a thousand estimates, and that filter would silently delete valid data. The bound applies to
+`effect_alt`. They are in the source
 file, 72 of them in one study, and publication-bias tests on this literature are sensitive to
 them: an unweighted regression of `effect` on `se` moves sharply when they are excluded, while
 the precision-weighted form does not. A further 82 rows of the per-dataset `class` file store a
@@ -275,7 +285,7 @@ estimates twice and present one literature as two independent ones:
 
 **Dataset IDs are not literature families.** The catalogue counts *contributing dataset
 IDs*. Two of them describe the same literature: `trust` is a later, separate collection of
-the size-premium literature that `size` also covers, which is why only the 284 estimates
+the size-premium literature that `size` also covers, which is why only the 212 estimates
 `size` does not already carry are pooled. So "42 literatures" means 42 contributing dataset
 IDs, not 42 independent bodies of evidence: `trust` and `size` cover the same size-premium
 literature, so the 42 IDs represent at most 41 literature families. Treat those two as one
@@ -305,11 +315,11 @@ checking the scale within each. The next data revision nulls the
 non-count literatures rather than silently rescaling them. `impact_factor` shows a
 weaker version of the same signature and is under review.
 
-- **`trust`** — from 1.0.0 this is **pooled**, but only for the 284 estimates
+- **`trust`** — from 1.0.0 this is **pooled**, but only for the 212 estimates
   `size` does not already carry. It is the later collection (2026 against 2019)
   of the same literature, the size premium, and the *smaller* one at 1,613 rows
-  against `size`'s 1,746; of those 1,613 rows, 1,329 (82.4%) already appear in
-  `size` and are dropped here so nothing is counted twice, leaving the 284 above. That makes this literature a
+  against `size`'s 1,746; of those 1,613 rows, 1,401 (86.9%) already appear in
+  `size` and are dropped here so nothing is counted twice, leaving the 212 above. That makes this literature a
   deliberate splice of two separately-assembled collections. **If the size
   premium is your subject, use either per-dataset file whole** rather than the
   pooled rows.
@@ -344,7 +354,7 @@ not.
 *Archive* — the original files, faithful CSV and Parquet mirrors, codebooks, and
 paper/DOI metadata. Faithful conversions of what was published.
 
-*Harmonised table* — 50,441 selected estimates, automatically mapped and in some
+*Harmonised table* — 52,800 selected estimates, automatically mapped and in some
 cases transformed. Every column mapping is verified against the paper's own
 replication code or published results.
 

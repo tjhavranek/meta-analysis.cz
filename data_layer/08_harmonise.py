@@ -467,10 +467,17 @@ for proj in sorted(man):
         if _twin is None:
             raise SystemExit(f"{proj}: subtract_overlap_with='{_sub}' but '{_sub}' has not been "
                              f"built yet -- it must be processed first")
-        _have=set(zip(np.round(_twin["effect"].astype("float64"),8),
-                      np.round(_twin["se"].astype("float64"),8)))
-        _mine=list(zip(np.round(out["effect"].astype("float64"),8),
-                       np.round(out["se"].astype("float64"),8)))
+        # Compare at float32, not at eight decimals. Two literatures drawn from one collection
+        # can reach this table through different routes: one may carry a standard error read
+        # from a float32 Stata column, the other the same number in float64, and 0.0833333333
+        # against 0.0833333358 differs in the eighth decimal while being the same estimate. That
+        # is not hypothetical: mapping size's raw `se` in 2.0.0 turned it float32 while trust's
+        # stayed float64, every 8-decimal key stopped matching, and 154 size estimates re-entered
+        # the table a second time under trust. Rounding both sides to the coarser precision the
+        # data actually carries is what makes the subtraction mean what it says.
+        _f32=lambda v: v.astype("float64").astype("float32").astype("float64")
+        _have=set(zip(np.round(_f32(_twin["effect"]),6), np.round(_f32(_twin["se"]),6)))
+        _mine=list(zip(np.round(_f32(out["effect"]),6), np.round(_f32(out["se"]),6)))
         _keep=np.array([pr not in _have for pr in _mine])
         print(f"   {proj}: subtracting overlap with {_sub} -> {int(_keep.sum())} of {len(out)} "
               f"estimates are unique and kept")

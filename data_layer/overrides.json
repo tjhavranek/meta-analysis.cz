@@ -61,7 +61,7 @@
    "varies_within_key_note": "sdate and edate are month codes that vary in 3 of the 217 blocks. They are exempt because they reach no harmonised column: data_start and data_end are matched from syear/eyear by a regex that cannot match sdate, and they hold years while these hold months. The per-dataset mirror still publishes all 1,519 source rows with both columns intact."
   },
   "units": "proportional change in the price level",
-  "verified_by": "The reshaped frame carries horizon values 3, 6, 12, 18, 36 plus 88 and 99, which are not horizons: they are the paper's baseline and peak-response columns. Restricting to the five real horizons gives 1,060 rows over 70 studies and per-horizon counts matching the paper.",
+  "verified_by": "The reshaped frame carries horizon values 3, 6, 12, 18, 36 plus 88 and 99, which are not horizons: they are the paper's baseline and peak-response columns. Restricting to the five real horizons gives 1,060 rows over 70 studies and per-horizon counts matching the paper. Codes 88 and 99 are NOT carried as excluded estimates: they are the peak and the trough of impulse responses already in the table at their five horizons, so carrying them would restate the same responses a second time.",
   "note": "puzzle.xls is a HYBRID layout: already long on `horizon` (7 rows per impulse response) while the response columns are WIDE and constant across those 7. Melting the wide columns once per row emitted every estimate 7 times -- what 0.9.0-beta shipped: 7,420 rows of which ~6,345 were exact duplicates, identical in every column INCLUDING horizon, so they were never additional horizons. The file provides SEVEN horizons, not five: the month horizons 3/6/12/18/36 plus the trough (MBR/SEB, horizon code 99) and the peak (MPR/SEP, horizon code 88). puzzle.do line 29 excludes `horizon~=88 & horizon~=99` from its 'all horizons' figure and its headline regressions use the five month horizons, so the paper analyses five -- but this catalogue publishes what the file contains, and the trough and peak responses were being silently discarded. All seven are now emitted from the deduplicated records: 1,395 rows (208/215/215/217/205 for the month horizons, 200 trough, 135 peak). CORRECTED AT 1.1.1: those counts were 1,415 and 211/218/218/220/208/202/138 at 1.0.0 and 1.1.0, because the dedupe ran on every column except horizon rather than on the source's own idest. Three blocks (idest 134, 135, 179) each carry one inconsistent sdate/edate month-code cell, so each split in two and the reshape emitted 20 rows matching no source estimate. Those cells reach no harmonised column -- data_start/data_end come from syear/eyear -- so the split was pure noise. Deduping on idest now yields exactly the 217 impulse responses the source declares. No published statistic moved: the 1.96 caliper counts are 508 below and 633 above either way, and all 20 removed rows had |t| <= 1.5625. Owner's decision 2026-08-04: list every horizon. Anyone wanting the paper's own sample should filter to the five numeric horizons. HORIZON CODES: months 3/6/12/18/36 are literal; 99 marks the trough and 88 the peak, the source file's own codes. The trough/peak assignment is inferred from lags.do, which keeps horizon==99 and models mon_bot, the months to the price trough. If that is backwards the two labels swap and no value changes. Filter to horizon<=36 for the paper's own sample.",
   "filters": [
    {
@@ -72,7 +72,8 @@
      12,
      18,
      36
-    ]
+    ],
+    "kind": "defines"
    }
   ]
  },
@@ -177,14 +178,15 @@
   "effect": "scc",
   "se": "stdlow",
   "units": "US dollars per tonne of carbon",
-  "verified_by": "The file stacks three different things in one column set, separated by its own `dataset` field. dataset==1 is the paper's headline funnel-asymmetry sample, N=267 over 34 studies, reproducing Table 3 Panel A. dataset==2 holds per-study median values and dataset==0 a further set; both are carried with in_paper_sample false rather than pooled into the headline.",
+  "verified_by": "The file stacks three different things in one column set, separated by its own `dataset` field. dataset==1 is the paper's headline funnel-asymmetry sample, N=267 over 34 studies, reproducing Table 3 Panel A. dataset==2 holds per-study median values and dataset==0 a further set; both are carried with in_paper_sample false rather than pooled into the headline. The other blocks are NOT carried as excluded estimates: dataset==0's 267 rows with a standard error are row-for-row copies of dataset==1, and dataset==2 holds per-study medians of the same estimates, so carrying either would double-count.",
   "note": "usable only on the subset where stdlow is present (about 53% of rows); there is no primary-study sample size, perstudy is an estimates-per-study de-clustering weight",
   "filters": [
    {
     "column": "dataset",
     "in": [
      1
-    ]
+    ],
+    "kind": "defines"
    }
   ]
  },
@@ -220,7 +222,7 @@
   "alias_of": "size",
   "reason": "same literature as the size project (the size premium); 1,256 of its estimates also appear there",
   "verified_by": "The paper's own replication code regresses this effect column: replication.zip:replication_package/R/04_diagnostics.R:78 runs lm(size ~ trust_index), the paper's research regression rather than a FAT-PET, so only the effect column is informative there -- and it is `size`, the same column (as size_unwinsorized) this dataset resolves to. Confirmed by 93_codegrep.py once excluded datasets were brought into its scope, 2026-08-04.",
-  "note": "INCLUDED from 1.0.0 by the owner's decision (2026-08-04), but only the estimates `size` does not already carry. Of trust's 1,613 rows, 1,329 (82.4%) duplicate pooled `size` rows and are dropped here so nothing is counted twice, leaving the 284 unique to trust that the shipped table carries. This is a deliberate splice of two separately-assembled collections of one literature: trust (2026) is the later collection, size (2019) the earlier and larger one at 1,746 rows. Anyone who wants either collection whole should use its own per-dataset file rather than the pooled table.",
+  "note": "INCLUDED from 1.0.0 by the owner's decision (2026-08-04), but only the estimates `size` does not already carry. Of trust's 1,613 rows, 1,401 (86.9%) duplicate pooled `size` rows and are dropped here so nothing is counted twice, leaving the 212 unique to trust that the shipped table carries. This is a deliberate splice of two separately-assembled collections of one literature: trust (2026) is the later collection, size (2019) the earlier and larger one at 1,746 rows. Anyone who wants either collection whole should use its own per-dataset file rather than the pooled table. The subtraction compares at float32 precision: size's standard error is stored float32 and trust's float64, so an eight-decimal key matched nothing and 154 size estimates briefly re-entered under trust in this release before the key was corrected.",
   "subtract_overlap_with": "size",
   "units": "percent"
  },

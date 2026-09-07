@@ -15,7 +15,7 @@ DATA_VERSION="2.0.0"; DATA_STATUS="stable"
 # inside the zip names the identifier the record is published under. 1.3.0 adds the intensive
 # margin to frisch, which had published only the extensive one: 1,471 rows over 57 studies.
 # 1.2.1 is 10.5281/zenodo.22520929 and is superseded; the full history is in CITATION.cff.
-DATA_DOI="10.5281/zenodo.22529684"
+DATA_DOI="10.5281/zenodo.22647394"
                                   # before the bundle was built, so the archived files name it.
 
 papers={p["project"]:p for p in json.load(open(os.path.join(SITE,"tools","papers.json"),encoding="utf-8"))}
