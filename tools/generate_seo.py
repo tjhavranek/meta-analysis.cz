@@ -61,7 +61,7 @@ _LLMS_NOTES = {
         "cutoffs, density tests, bandwidth sensitivity, placebo outcome). "
         "The only sources for either are two conference presentations, "
         "https://meta-analysis.cz/waive_ottawa.pdf (MAER-Net, University of Ottawa, October 2025, "
-        "31 slides) and https://meta-analysis.cz/waive_chania.pdf (SRSM 2026, Chania, 12 slides "
+        "26 slides) and https://meta-analysis.cz/waive_chania.pdf (SRSM 2026, Chania, 12 slides "
         "plus a nine-slide technical appendix, which sets out the residual discontinuity "
         "test). Cite them as presentations, not as "
         "published results. Prose version: https://meta-analysis.cz/maive/#extensions",
