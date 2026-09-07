@@ -52,7 +52,8 @@ except Exception as e:
 # failure on every run -- a permanently red check says nothing, and trains you to ignore it.
 # When the live version has no deposit yet, that is a fact to state, not a failure.
 DEPOSITS = {"0.9.0-beta": "21773679", "1.0.0": "21789702", "1.1.1": "22050272",
-            "1.2.0": "22212666", "1.2.1": "22520929", "1.3.0": "22529684"}
+            "1.2.0": "22212666", "1.2.1": "22520929", "1.3.0": "22529684",
+            "2.0.0": "22647394"}
 zen = None
 try:
     _idx = json.load(io.BytesIO(urllib.request.urlopen(
@@ -104,8 +105,22 @@ same(live, zen, "live csv vs ZENODO deposit")
 # ---------- invariants any user relies on ----------
 print("\ninvariants")
 d = pq
-note(bool((d["se"] > 0).all()), "every standard error is strictly positive")
-note(int(d[["effect", "se"]].isna().sum().sum()) == 0, "no null effect or standard error")
+# Since 2.0.0 a row may carry its estimate on the ALTERNATIVE scale alone, so `effect` and `se`
+# are nullable together and these three invariants had to be restated. What must still hold is
+# that a standard error, where present, is strictly positive; that the two halves of a pair are
+# present or absent together; and that no row carries an estimate on neither scale.
+_hp = d["effect"].notna() & d["se"].notna()
+note(bool((d.loc[d["se"].notna(), "se"] > 0).all()),
+     "every standard error present is strictly positive")
+note(bool((d["effect"].notna() == d["se"].notna()).all()),
+     "effect and se are present or absent together")
+if "effect_alt" in d.columns:
+    note(bool((d["effect_alt"].notna() == d["se_alt"].notna()).all()),
+         "effect_alt and se_alt are present or absent together")
+    note(int((d["effect"].isna() & d["effect_alt"].isna()).sum()) == 0,
+         "every row carries an estimate on at least one scale")
+else:
+    note(int(d[["effect", "se"]].isna().sum().sum()) == 0, "no null effect or standard error")
 
 # t_stat and precision must be reproducible from effect and se. In the SHIPPED 0.9.0-beta
 # they are not exactly, for three Stata-sourced literatures: the source columns are float32,
@@ -137,8 +152,9 @@ note(int(d["study_id"].isna().sum()) == 0, "every row has a study_id for cluster
 note(bool(d["effect_units"].notna().all()), "every row declares effect_units")
 note(bool((d.groupby("dataset")["effect_units"].nunique() == 1).all()),
      "effect_units is constant within each literature")
-note(bool(np.isfinite(d["effect"].astype(float)).all()) and
-     bool(np.isfinite(d["se"].astype(float)).all()), "no inf values in effect or se")
+note(bool(np.isfinite(d.loc[d["effect"].notna(), "effect"].astype(float)).all()) and
+     bool(np.isfinite(d.loc[d["se"].notna(), "se"].astype(float)).all()),
+     "no inf values in effect or se")
 
 # provenance must be complete: every row traceable to a file and columns
 for col in ("source_file", "effect_col", "se_col"):

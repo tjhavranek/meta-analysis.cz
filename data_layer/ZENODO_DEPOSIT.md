@@ -1,7 +1,8 @@
 # Zenodo deposit — what to upload, and what must never be uploaded
 
-> **STATUS: 1.3.0 BUILT, AWAITING UPLOAD.** The DOI below is reserved on the draft.
-> Version 1.2.1 is published and live.
+> **STATUS: 2.0.0 PUBLISHED.** https://doi.org/10.5281/zenodo.22647394, uploaded and
+> verified 2026-09-07: one file, md5 68dcaf34ab3e19aa47c1f7786a8a64b6, byte-identical
+> to the local build. 1.3.0 and earlier are superseded.
 > The 46 files in `codebooks/` now each carry a `license` key
 > (`https://creativecommons.org/licenses/by/4.0/`), added 2026-09-04 so that a client
 > reading a codebook on its own is told the rights over what it describes. Every other
