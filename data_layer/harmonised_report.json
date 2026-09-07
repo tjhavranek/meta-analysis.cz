@@ -1,5 +1,5 @@
 {
- "n_rows": 53341,
+ "n_rows": 53633,
  "n_datasets": 42,
  "columns": [
   "dataset",
@@ -17,6 +17,7 @@
   "in_paper_sample",
   "in_paper_sample_alt",
   "paper_sample_exclusion",
+  "outcome_variant",
   "n_obs",
   "df",
   "pub_year",
@@ -456,7 +457,7 @@
   },
   "reforms": {
    "included": true,
-   "n": 245,
+   "n": 537,
    "effect": "pcc_from(lib,df)",
    "se": "se_pcc_from(df)",
    "se_is_derived": true,
@@ -464,7 +465,7 @@
    "n_obs_from_log": false,
    "units": "partial correlation coefficient",
    "direction_note": "Computed here from the reported t-statistic and degrees of freedom, following the paper's own code.",
-   "n_studies": 34,
+   "n_studies": 58,
    "moderators": 10
   },
   "remittances": {

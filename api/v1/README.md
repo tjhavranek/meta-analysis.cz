@@ -68,8 +68,8 @@ curl -s https://meta-analysis.cz/api/v1/datasets.json | jq '.datasets[] | {id, n
 
 ## The harmonised table
 
-One row per harmonised **observation**, pooled across literatures: **53,341 rows
-from 42 literatures**, of which **49,535 lie inside the analysis samples the source
+One row per harmonised **observation**, pooled across literatures: **53,633 rows
+from 42 literatures**, of which **49,827 lie inside the analysis samples the source
 papers themselves define**. The paper-sample figure is the one to cite; the larger
 one counts every estimate carried, including those a paper excluded, which are
 flagged rather than hidden. Filter `in_paper_sample` to true to reproduce a paper's

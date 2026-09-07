@@ -31,10 +31,10 @@
  "counts": {
   "datasets": 46,
   "rows_in_source_files": 67606,
-  "estimates_in_analysis_samples": 58946,
-  "estimates_in_paper_samples": 49535,
-  "rows_carried": 53341,
-  "estimates_in_harmonised_table": 53341,
+  "estimates_in_analysis_samples": 59238,
+  "estimates_in_paper_samples": 49827,
+  "rows_carried": 53633,
+  "estimates_in_harmonised_table": 53633,
   "literatures_in_harmonised_table": 42,
   "in_harmonised_table": 42,
   "counts_explained": "rows_in_source_files counts every row of the 46 converted files. estimates_in_analysis_samples applies each paper's own filters where its replication code defines them as a row filter on the stored scale, and otherwise keeps the rows carrying a usable standard error; it is what the catalogue table shows. estimates_in_harmonised_table additionally drops literatures that duplicate another exactly, overlap one already included, or lack per-estimate precision."
@@ -42,7 +42,7 @@
  "harmonised_table": {
   "version": "2.0.0",
   "status": "stable",
-  "n_rows": 53341,
+  "n_rows": 53633,
   "n_literatures": 42,
   "columns": [
    "dataset",
@@ -60,6 +60,7 @@
    "in_paper_sample",
    "in_paper_sample_alt",
    "paper_sample_exclusion",
+   "outcome_variant",
    "n_obs",
    "df",
    "pub_year",
@@ -2073,7 +2074,7 @@
    "description": "Meta-analysis of 60 studies finds structural reforms in transition countries carry short-run costs but strong long-run growth benefits.",
    "n_estimates": 456,
    "n_variables": 42,
-   "n_estimates_in_literature": 245,
+   "n_estimates_in_literature": 537,
    "source_file": "https://meta-analysis.cz/reforms/reform.xls",
    "source_member": null,
    "source_sheet": "reform",
@@ -2095,7 +2096,7 @@
    "in_harmonised_table": true,
    "reconciliation": {
     "n_estimates_reported_in_paper": null,
-    "n_rows_in_harmonised_table": 245,
+    "n_rows_in_harmonised_table": 537,
     "note": null
    },
    "excluded_from_harmonised_because": null,
@@ -2107,9 +2108,9 @@
    "rights_status": "cc-by-4.0",
    "license_url": "https://creativecommons.org/licenses/by/4.0/",
    "rights_note": "CC BY 4.0. Free to use, adapt, and redistribute, including commercially and including as training data. The only condition is credit: cite the paper named in this entry.",
-   "max_precision_weight_share": 0.0103,
+   "max_precision_weight_share": 0.0056,
    "audit_status": "domain_reviewed",
-   "note": "lib is short-run, lib_cum long-run; the short-run t-statistic is used here"
+   "note": "The paper reports two co-equal results at different horizons and the site published only the contemporaneous one. Both are carried now, as rows told apart by `outcome_variant`, following the rule set for frisch: short run and long run belong in one dataset. reform.do builds pcor from `lib` and pcor_cum from `lib_cum` on the same degrees of freedom, each leg with its own sample condition; the cumulative one is stated at line 61, drop if lib_cum==. | rg==0 | lib_cum>7.5."
   },
   {
    "id": "remittances",
@@ -2153,7 +2154,7 @@
    "reconciliation": {
     "n_estimates_reported_in_paper": 538,
     "n_rows_in_harmonised_table": 490,
-    "note": "-48 rows against the abstract's count, and correctly so: the paper's own replication code restricts to an analysis subset, reproduced here. See column_mapping_verified_by."
+    "note": "The paper trims three extreme estimates before its analysis: Ben Mim and Mabrouk (2014) at t = -27.5, Azam et al. (2014) at t = 36.9, and Cooray (2012) at t = 25.0. They are KEPT here rather than removed, because the trim is a hand-flagged outlier judgment rather than a rule any column expresses, and inventing a threshold that happens to catch exactly these three would look like the paper's rule without being it. Anyone reproducing the paper's own sample should drop them; anyone testing the sensitivity of its results to that trim now can. They are the three largest absolute t-statistics in the literature, so they are easy to identify."
    },
    "excluded_from_harmonised_because": null,
    "duplicate_of": null,

@@ -22,7 +22,7 @@ authors:
     affiliation: "Charles University, Prague"
 # The top-level doi must be the VERSION DOI, matching `version` below; the concept DOI
 # lives under identifiers. Swapping them makes CFF tooling cite a moving target.
-doi: "PENDING-2.0.0"
+doi: "10.5281/zenodo.22647394"
 version: "2.0.0"
 date-released: "2026-09-07"
 identifiers:
@@ -30,7 +30,7 @@ identifiers:
     value: "10.5281/zenodo.21773678"
     description: "Concept DOI - always resolves to the latest version. Cite this."
   - type: doi
-    value: "PENDING-2.0.0"
+    value: "10.5281/zenodo.22647394"
     description: "Version 2.0.0 specifically. Cite this in a replication package, where the exact files matter."
   - type: doi
     value: "10.5281/zenodo.22529684"
@@ -56,9 +56,9 @@ abstract: >-
   Estimate-level data from meta-analyses in economics and the social sciences,
   with the study and design characteristics hand-coded for each original paper.
   Forty-six datasets holding 67,606 rows in the converted source
-  files, 58,946 harmonisable estimates after each paper's reproducible
-  filters, and a harmonised table carrying 53,341 of them across
-  42 literatures, of which 49,535 lie inside the analysis samples the
+  files, 59,238 harmonisable estimates after each paper's reproducible
+  filters, and a harmonised table carrying 53,633 of them across
+  42 literatures, of which 49,827 lie inside the analysis samples the
   source papers themselves define. Estimates a paper excluded are carried
   and flagged rather than dropped, and a second effect scale is carried
   where a paper analyses one. Each dataset ships a column-level codebook. Column

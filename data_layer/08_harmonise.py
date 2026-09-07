@@ -264,6 +264,23 @@ for proj in sorted(man):
             parts.append(p)
         df=pd.concat(parts,ignore_index=True)
         df=df[df[rs["effect_name"]].notna()&df[rs["se_name"]].notna()].reset_index(drop=True)
+    # A paper reporting the SAME estimate at two horizons reports two different quantities,
+    # not one quantity on two scales, so horizons become ROWS carrying an outcome_variant label
+    # rather than columns. This is the rule the owner set for frisch: short run and long run
+    # belong in one dataset, told apart by a column. reforms is the case here.
+    _cv=(o.get("compute") or {}).get("variants")
+    if _cv:
+        _parts=[]
+        for _v in _cv:
+            if _v["t_col"] not in df.columns: continue
+            _p=df.copy()
+            _p["_variant_t"]=pd.to_numeric(df[_v["t_col"]],errors="coerce")
+            _p["outcome_variant"]=_v["label"]
+            _p["_variant_rule"]=_v.get("rule","")
+            _parts.append(_p)
+        if _parts:
+            df=pd.concat(_parts,ignore_index=True)
+
     # Row filters from the paper's own replication code. Two kinds, and telling them apart is
     # the whole point of this block. A clause marked `defines` is what makes this literature
     # THIS literature and still deletes: bma and spillovers are two papers over one 4,147-row
@@ -315,7 +332,8 @@ for proj in sorted(man):
         se=f'derived:|{eff}/{cmp_["t_col"]}|'; se_derived=True
     elif cmp_ and cmp_.get("type")=="pcc_from_t":
         # Stanley-Doucouliagos partial correlation: r = t/sqrt(t^2+df), se_r = sqrt((1-r^2)/df)
-        tv=pd.to_numeric(df[cmp_["t_col"]],errors="coerce")
+        tv=(df["_variant_t"] if "_variant_t" in df.columns
+            else pd.to_numeric(df[cmp_["t_col"]],errors="coerce"))
         dv=pd.to_numeric(df[cmp_["df_col"]],errors="coerce").where(lambda x:x>0)
         e=tv/np.sqrt(tv**2+dv); s=np.sqrt((1-e**2)/dv)
         eff=f"pcc_from({cmp_['t_col']},{cmp_['df_col']})"
@@ -329,6 +347,12 @@ for proj in sorted(man):
             odd=((1/s)>15)&(e>0.3)&(tv<12)
             keep_extra=(tv<12)&(~odd.fillna(False))
             if rg is not None: keep_extra&=(rg!=0)
+            if "_variant_rule" in df.columns:
+                # reform.do line 61 for the cumulative leg: drop if lib_cum==. | rg==0 |
+                # lib_cum>7.5. The short-run leg keeps the hand-flagged rule above.
+                _lr=df["_variant_rule"].eq("cumulative")
+                _lrk=(tv<7.5)&(rg!=0) if rg is not None else (tv<7.5)
+                keep_extra=keep_extra.where(~_lr,_lrk)
             e=e.where(keep_extra); s=s.where(keep_extra)
     elif eff not in df.columns:
         report[proj]=dict(included=False,reason=f"effect '{eff}' absent"); continue
@@ -378,6 +402,8 @@ for proj in sorted(man):
     out["t_stat"]=out["effect"]/out["se"]
     out["precision"]=1.0/out["se"]
     # Whether the paper's own analysis kept this row, and if not, which clause removed it.
+    out["outcome_variant"]=(df["outcome_variant"][keep].values
+                            if "outcome_variant" in df.columns else None)
     out["in_paper_sample"]=_in_sample[keep].values
     out["paper_sample_exclusion"]=_why[keep].where(_why[keep]!="",None).values
     # The second scale, where the paper analyses one. NOT an arithmetic discovery: a pairing
@@ -470,7 +496,7 @@ for proj in sorted(man):
 H=pd.concat(rows,ignore_index=True)
 front=["dataset","study_id","estimate_id","study_label","effect","se","t_stat","precision",
        "effect_alt","se_alt","effect_alt_units","effect_alt_role",
-       "in_paper_sample","in_paper_sample_alt","paper_sample_exclusion",
+       "in_paper_sample","in_paper_sample_alt","paper_sample_exclusion","outcome_variant",
        "n_obs","df","pub_year","citations","impact_factor","published","top_journal",
        "country","country_id","is_usa","is_europe","data_start","data_end","data_midyear",
        "is_panel","is_cross_section","is_time_series","freq_annual","freq_quarterly","freq_monthly",

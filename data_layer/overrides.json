@@ -153,12 +153,24 @@
    "type": "pcc_from_t",
    "t_col": "lib",
    "df_col": "df",
-   "outlier_rule": "reforms"
+   "outlier_rule": "reforms",
+   "variants": [
+    {
+     "t_col": "lib",
+     "label": "short_run",
+     "rule": "contemporaneous"
+    },
+    {
+     "t_col": "lib_cum",
+     "label": "long_run",
+     "rule": "cumulative"
+    }
+   ]
   },
   "n_obs": "n",
   "units": "partial correlation coefficient",
   "verified_by": "reform.do converts lib (a t-statistic, NOT a coefficient) to pcor=lib/sqrt(lib^2+df) with se_pcor=sqrt((1-pcor^2)/df); df=n-k holds exactly on all 456 rows. It then caps lib<12, drops a flagged outlier set defined on the computed correlation ((1/se_pcor)>15 & pcor>0.3 & lib<12) and drops rg==0. Applying all of it gives exactly the 245 short-run coefficients the paper reports.",
-  "note": "lib is short-run, lib_cum long-run; the short-run t-statistic is used here",
+  "note": "The paper reports two co-equal results at different horizons and the site published only the contemporaneous one. Both are carried now, as rows told apart by `outcome_variant`, following the rule set for frisch: short run and long run belong in one dataset. reform.do builds pcor from `lib` and pcor_cum from `lib_cum` on the same degrees of freedom, each leg with its own sample condition; the cumulative one is stated at line 61, drop if lib_cum==. | rg==0 | lib_cum>7.5.",
   "published_note": "`journal` is the publication flag, not `pubpr`. The paper's Table 4 lists pubpr under 'Specification characteristics' as '= 1 if the study separates the effect of reform on public and private sector', and journal under 'Publication characteristics' as '= 1 if the study is published in a refereed journal'. The harmoniser's name pattern used to match pubpr, so the pooled table reported 6.5% of this literature as published where the paper's own indicator says 46.5%."
  },
  "scc": {
@@ -221,7 +233,8 @@
    "df_col": "DF"
   },
   "units": "partial correlation coefficient",
-  "n_obs": "Sample"
+  "n_obs": "Sample",
+  "reconciliation_note": "The paper trims three extreme estimates before its analysis: Ben Mim and Mabrouk (2014) at t = -27.5, Azam et al. (2014) at t = 36.9, and Cooray (2012) at t = 25.0. They are KEPT here rather than removed, because the trim is a hand-flagged outlier judgment rather than a rule any column expresses, and inventing a threshold that happens to catch exactly these three would look like the paper's rule without being it. Anyone reproducing the paper's own sample should drop them; anyone testing the sensitivity of its results to that trim now can. They are the three largest absolute t-statistics in the literature, so they are easy to identify."
  },
  "learning": {
   "sheet": "data",

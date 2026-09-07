@@ -121,9 +121,21 @@ def source_pairs(proj, df):
     o = OVR.get(proj) or {}
     cmp_ = o.get("compute")
     if cmp_ and cmp_.get("type") == "pcc_from_t":              # reforms
-        t = num(df, cmp_["t_col"]); dfree = num(df, cmp_["df_col"]).where(lambda x: x > 0)
-        e = t / np.sqrt(t ** 2 + dfree); s = np.sqrt((1 - e ** 2) / dfree)
-        return set(zip(np.round(e.dropna(), R), np.round(s.reindex(e.dropna().index), R))), "COMPUTED"
+        # Since 2.0.0 reforms carries two horizons as separate rows, the contemporaneous leg
+        # from `lib` and the cumulative one from `lib_cum`, so the pairs a reader can find in
+        # the source come from BOTH columns. Deriving from the headline column alone reported
+        # the entire long-run leg as absent from a file it is plainly in.
+        dfree = num(df, cmp_["df_col"]).where(lambda x: x > 0)
+        cols = [v["t_col"] for v in (cmp_.get("variants") or [])] or [cmp_["t_col"]]
+        pairs = set()
+        for _c in cols:
+            if _c not in df.columns:
+                continue
+            t = num(df, _c)
+            e = t / np.sqrt(t ** 2 + dfree); s = np.sqrt((1 - e ** 2) / dfree)
+            _ok = e.notna() & s.notna()
+            pairs |= set(zip(np.round(e[_ok], R), np.round(s[_ok], R)))
+        return pairs, "COMPUTED"
     if cmp_ and cmp_.get("type") == "rescale_from_t":          # activism
         base = num(df, cmp_["col"]); fac = num(df, cmp_["factor_col"])
         e = base * cmp_.get("constant", 1.0) * fac
