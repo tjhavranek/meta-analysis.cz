@@ -157,7 +157,6 @@
    "dtype": "float64",
    "n_missing": 61,
    "n_unique": 1447,
-   "role": "standard_error",
    "stats": {
     "min": 0.0,
     "p25": 0.000936,
@@ -6723,6 +6722,7 @@
    "dtype": "float32",
    "n_missing": 0,
    "n_unique": 1498,
+   "role": "standard_error",
    "stats": {
     "min": 0.0,
     "p25": 0.000967,

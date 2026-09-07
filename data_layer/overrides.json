@@ -100,7 +100,8 @@
     "column": "horiz",
     "in": [
      1
-    ]
+    ],
+    "kind": "defines"
    }
   ],
   "units": "semi-elasticity",
@@ -120,7 +121,8 @@
     "column": "horiz",
     "not_in": [
      1
-    ]
+    ],
+    "kind": "defines"
    }
   ],
   "units": "semi-elasticity",
@@ -222,7 +224,8 @@
     "column": "se_source",
     "str_not_in": [
      "imputed_uniform_t"
-    ]
+    ],
+    "kind": "quality"
    }
   ],
   "units": "elasticity",
@@ -261,18 +264,13 @@
   "note": "All 2,735 estimates are included. The extremes (to +/-100,000, with standard errors that scale with them) are REAL weak-instrument Euler-equation estimates, not missing-value sentinels, and the paper keeps them, relying on precision weighting to down-weight them. If you compute a raw MEAN, apply abs(eis)<10 as the paper does for its descriptives: that gives 0.49, matching its reported 0.5, where the unrestricted mean is 41.7. The median is barely affected either way."
  },
  "activism": {
-  "compute": {
-   "type": "rescale_from_t",
-   "col": "Estimate",
-   "constant": 100.0,
-   "factor_col": "Multiplicator to obtain estimates in points (number)",
-   "t_col": "t-stats"
-  },
   "units": "percent",
-  "verified_by": "activism.R sets data$elasticity <- data$Estim_adj and data$se_all <- data$Se_adj, having first deleted the raw Estimate and se columns; the second header row of the published workbook marks them 'Delete' for the same reason. Estim_adj = Estimate*100*Multiplicator, and the Multiplicator takes only the values 0.01 and 1, i.e. the raw column MIXES percent and decimal scales across studies. Reconstructing it gives a median of 0.489, matching the paper's Estim_adj. n_obs=TotalObs: TotalObs is the observation count the paper's own replication code treats as N. Integral, 2 to 11,884, and null on exactly one source row — row 0, which also lacks ArticleNo and does not carry a usable (effect, se) pair, so it is outside the harmonised sample.",
-  "note": "The published workbook's Data sheet carries TWO header rows: row 0 names the columns and row 1 repeats them with the authors' working marks ('Delete', 'Strong', 'Odhad'). Read at header=0 the second one arrives as an estimate, which is why this dataset used to publish 1,974 rows against the paper's 1,973. It is dropped before anything reads the file.",
+  "verified_by": "activism.R sets elasticity <- Estim_adj and se_all <- Se_adj and never subsets `data`; the live main regression publication_bias3 runs on all 1,973 rows. R has no block comments, so nothing here is disabled code. Mean 1.52 and median 0.50 of Estim_adj reproduce the paper's own figures.",
+  "note": "The workbook carries two header rows. Row 1 is blank over the two columns that matter, so pandas names them `Unnamed: 25` and `Unnamed: 26`; row 2 labels them `Estim_adj` and `Se_adj`, and they are the columns activism.R analyses. They are read directly here. The pipeline used to RECONSTRUCT the effect as Estimate * 100 * Multiplicator and the standard error as |effect / t|, which was wrong twice. It reached only the 1,266 rows carrying a t-statistic, 42 studies of 67, where Se_adj is present on 1,851 rows over 60 studies. And on the 20 estimates of ArticleNo 42 the raw Estimate carries the opposite sign to the authors' Estim_adj, so the site published 20 effects with the wrong sign. Reading the published columns fixes both. Estim_adj has mean 1.52 and median 0.50, which is what the paper reports.",
   "n_obs": "TotalObs",
-  "drop_leading_rows": 1
+  "drop_leading_rows": 1,
+  "effect": "Unnamed: 25",
+  "se": "Unnamed: 26"
  },
  "gasoline": {
   "units": "elasticity",
@@ -320,11 +318,29 @@
  },
  "class": {
   "note": "Two of 2,819 rows carry a partial correlation outside [-1,1] (1.372 and 1.116), taken straight from the source pcc column. They are almost certainly coding errors in the original file. Kept rather than silently dropped, so the mirror stays faithful to what was published — filter on abs(effect)<=1 if you need a strictly valid correlation. UPSTREAM DATA ERROR, documented rather than silently passed: class.xlsx itself carries two partial correlations outside [-1,1] -- pcc = 1.371675 and 1.116313, sitting beside effect/se_effect of 7.24/1.5671 and 0.967742/0.430108. A correlation cannot leave [-1,1], so these are errors in the authors' own pcc column, not in the conversion; 90_roundtrip confirms both values occur verbatim in the source. A further 73 rows sit exactly at -1 or +1 with positive standard errors, which is also not a coherent PCC/SE pair; 70 of those come from one study. Their combined precision weight is about 1e-6 of the literature's total, so they barely move an inverse-variance estimate, but they are invalid input to any correlation transform. Retained because the table's contract is faithful reproduction, and flagged on every run by 94_sanity. Found 2026-08-04.",
-  "verified_by": "The paper's own replication code regresses pcc_w/se_pcc_w @ class.do:737 -- a winsorised copy of this pair, built inside the script from the raw columns. The published file carries only the raw columns, so they are what the harmonised table can offer. Found mechanically by 93_codegrep.py.",
-  "reconciliation_note": "The pooled effect column here is the partial correlation, which the paper uses as a ROBUSTNESS check (Online Appendix Table B5, Block 2) rather than as its headline metric. The paper's own common metric is the change in test scores measured in hundredths of a standard deviation per one additional student, the `effect` and `se_effect` columns, on the 2,434 estimates from 54 studies that `class.do` keeps with `drop if effect_true==0`; that is the unit behind Tables 2, 3, 7 and 8 and behind the abstract's findings on the STAR experiment and on classes under 15 students. The partial correlation exists in the paper partly to admit 12 further studies that report no test-score standard deviation and so cannot enter the common metric at all. Both column pairs are published in the per-dataset file, and both reproduce this dataset's reported t-statistic, so the arithmetic pairing test cannot choose between them; the choice has to come from the paper, and the paper chooses `effect`. A reanalyst reproducing the published results must take `effect`/`se_effect` on the `effect_true == 1` subset rather than these rows as they stand. Re-mapping the pooled column is deferred to the next data release rather than done here, because it would change 2,819 rows of a deposited version."
+  "verified_by": "class.do drops effect_true==0 at line 30, before any statistic, and repeats it at every re-import (669, 887, 1205, 1395); the live main regression is ivreg2 effect_w se_effect_w at line 221, on winsorised copies the script builds from effect and se_effect. Every pcc regression in the file sits inside the block comment running 716 to 867 and never executes. The paper states the sample directly: 'We gather 2,819 estimates ... 2,434 estimates from 54 studies can be used in the main meta-analysis models', and its third inclusion criterion is that a study 'must report the standard deviations of test scores so that we can convert all estimates to a common metric'.",
+  "reconciliation_note": "The paper collects 2,819 estimates from 66 studies and analyses 2,434 of them from 54 studies; the 12 further studies fail only the third inclusion criterion, reporting no test-score standard deviation, and reach the table on the partial-correlation scale alone. Both scales are carried: `effect` is the metric the main models use, `effect_alt` the partial correlation of Online Appendix Table B5 Block 2. They are different estimands, not a rescaling; on the rows carrying both they correlate about 0.12.",
+  "effect": "effect",
+  "se": "se_effect",
+  "units": "change in test scores in hundredths of a standard deviation per one additional student",
+  "filters": [
+   {
+    "column": "effect_true",
+    "in": [
+     1
+    ]
+   }
+  ],
+  "alt_metric": {
+   "effect": "pcc",
+   "se": "se_pcc",
+   "units": "partial correlation coefficient",
+   "role": "robustness"
+  }
  },
  "dst": {
-  "verified_by": "dst.do labels ESTIMATE 'Estimate of the DST impact (in %)' and runs 'ivreg2 ESTIMATE SE, cluster(...)' as its main FAT-PET regression. 101 of 162 rows have ESTIMATE, SE, TSTAT, and PRECISION jointly non-null; the other 61 have all four blank, so the loss is a genuinely unreported standard error, not a column choice."
+  "verified_by": "dst.do labels ESTIMATE 'Estimate of the DST impact (in %)' and runs 'ivreg2 ESTIMATE SE, cluster(...)' as its main FAT-PET regression. 101 of 162 rows have ESTIMATE, SE, TSTAT, and PRECISION jointly non-null; the other 61 have all four blank, so the loss is a genuinely unreported standard error, not a column choice.",
+  "note": "The file also carries a PCC column, but its PCCSE column is empty on every row, so the partial correlation has no published standard error and cannot enter as an alternative scale: a value without its error would read as infinite precision to any estimator."
  },
  "excess_sensitivity": {
   "verified_by": "excess.do lines 14-15: 'gen prec=1/se' and 'gen tstat=excess/se', used through the funnel-asymmetry regressions (e.g. 'ivreg2 excess se if micro==1'). All 3,127 rows carry both. The separate mpc/mpc_se pair is a different estimand and is excluded by the paper's own BMA export."
@@ -390,7 +406,9 @@
   "verified_by": "The paper's own replication code regresses exactly this pair at resource_curse.do:164. Found mechanically by 93_codegrep.py, which reads each paper's code and reads off the two variables of its headline meta-analysis regression."
  },
  "size": {
-  "verified_by": "size.do regresses size on se, but se_calc is the column that reproduces the file's OWN tstat: 100.0% of rows within 1%, against 96.7% for se. We take se_calc for internal consistency (t = effect/se holds exactly), accepting that it is not the column the paper's regression names. se_calc also contains zeros, which the se>0 filter drops."
+  "verified_by": "The file stores the standard error in `se`, non-missing and positive on all 1,746 rows. The resolver had not mapped it, so the literature entered the table on a derived error.",
+  "effect": "size",
+  "se": "se"
  },
  "skill": {
   "verified_by": "skill.do:174 regresses tstat_coefficient_w on precision_coefficient_w, the WLS form of FAT-PET. Regressing t on precision is algebraically the same test as regressing the effect on its standard error, so it confirms rather than contradicts elasticity/se.",

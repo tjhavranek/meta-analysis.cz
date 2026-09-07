@@ -129,6 +129,23 @@ def counts_estimates(df, v):
     return bool((g["v"] == g["k"]).mean() >= 0.75)
 
 
+def _filter_label(f):
+    """The paper's own exclusion, written the way its replication code writes it.
+
+    A bare False tells a reader a row was excluded but not whether the exclusion was
+    substantive. That matters: an outlier trim changes a publication-bias slope enormously,
+    while an auxiliary-specification flag barely moves it. Both reviewers asked for this
+    independently and the pipeline already parses the clauses, so it is nearly free.
+    """
+    c=f["column"]
+    if "in" in f:         return "%s not in %s"%(c,f["in"])
+    if "not_in" in f:     return "%s in %s"%(c,f["not_in"])
+    if "max_abs" in f:    return "abs(%s) > %s"%(c,f["max_abs"])
+    if "str_not_in" in f: return "%s in %s"%(c,f["str_not_in"])
+    if "finite" in f:     return "%s not finite"%c
+    return c
+
+
 def find_n_obs(df, pat):
     """Pick the primary-study sample size, not a log of it.
 
@@ -247,18 +264,38 @@ for proj in sorted(man):
             parts.append(p)
         df=pd.concat(parts,ignore_index=True)
         df=df[df[rs["effect_name"]].notna()&df[rs["se_name"]].notna()].reset_index(drop=True)
+    # Row filters from the paper's own replication code. Two kinds, and telling them apart is
+    # the whole point of this block. A clause marked `defines` is what makes this literature
+    # THIS literature and still deletes: bma and spillovers are two papers over one 4,147-row
+    # collection partitioned by `horiz`, so lifting that clause would put the same estimates in
+    # the table twice under two labels. A clause marked `quality` deletes too: electricity's
+    # se_source clause removes 117 rows whose standard errors are IMPUTED, and carrying
+    # fabricated precision into a publication-bias table would be worse than dropping it.
+    # Everything else is the paper's own analysis-sample restriction, and those rows are now
+    # KEPT and flagged, because an estimate a paper chose not to analyse still exists and a
+    # reader testing that choice needs to see it.
+    _in_sample=pd.Series(True,index=df.index)
+    _why=pd.Series("",index=df.index,dtype=object)
     for f in ([o["filter"]] if o.get("filter") else []) + (o.get("filters") or []):
-        col=f["column"]                       # row filters from the paper's own replication code
+        col=f["column"]
         if col not in df.columns: continue
         v=pd.to_numeric(df[col],errors="coerce")
-        if "in" in f:      df=df[v.isin(f["in"])]
-        if "not_in" in f:  df=df[~v.isin(f["not_in"])]
-        if "max_abs" in f: df=df[v.abs()<=f["max_abs"]]
-        if "str_not_in" in f:                    # string-valued exclusions
-            df=df[~df[col].astype(str).isin(f["str_not_in"])]
+        _fm=pd.Series(True,index=df.index)          # NOT `m`: that name is live further down
+        if "in" in f:      _fm&=v.isin(f["in"])
+        if "not_in" in f:  _fm&=~v.isin(f["not_in"])
+        if "max_abs" in f: _fm&=v.abs()<=f["max_abs"]
+        if "str_not_in" in f:
+            _fm&=~df[col].astype(str).isin(f["str_not_in"])
         if "finite" in f and f["finite"]:
-            df=df[np.isfinite(pd.to_numeric(df[col],errors="coerce"))]
-        df=df.reset_index(drop=True)
+            _fm&=np.isfinite(v)
+        _fm=_fm.fillna(False)
+        if f.get("kind") in ("defines","quality"):
+            df=df[_fm].reset_index(drop=True)
+            _in_sample=_in_sample[_fm].reset_index(drop=True)
+            _why=_why[_fm].reset_index(drop=True)
+        else:
+            _why=_why.mask((~_fm)&(_why==""),_filter_label(f))
+            _in_sample&=_fm
     ev=r.get("evidence","") or ""
     tcol=o.get("t_col") or (ev.split(":",1)[1] if ev.startswith(("t_match:","se_derived_from:")) else None)
     se_derived=False
@@ -313,18 +350,55 @@ for proj in sorted(man):
         else:
             report[proj]=dict(included=False,reason="no usable standard error"); continue
     s=s.where(s>0)
+    # A row enters on EITHER scale its paper analyses, not only the headline one. Requiring the
+    # headline pair would recreate the error being fixed: it would let the pipeline's choice of
+    # scale decide which estimates exist, and would drop precisely the estimates a robustness
+    # block was built to admit -- the class-size studies reporting no test-score standard
+    # deviation, which can be expressed as a partial correlation and in no other way. On those
+    # rows `effect`, `t_stat` and `precision` are null and `effect_alt` carries the estimate.
+    _alt_cfg=o.get("alt_metric") or {}
+    _alt_ok=None
+    if _alt_cfg.get("effect") in df.columns and _alt_cfg.get("se") in df.columns:
+        _ae0=pd.to_numeric(df[_alt_cfg["effect"]],errors="coerce")
+        _as0=pd.to_numeric(df[_alt_cfg["se"]],errors="coerce")
+        _alt_ok=_ae0.notna()&_as0.notna()&(_as0>0)
     keep=e.notna()&s.notna()
+    if _alt_ok is not None:
+        keep=keep|_alt_ok
     if keep.sum()<5: report[proj]=dict(included=False,reason=f"only {int(keep.sum())} usable rows"); continue
     # float64 BEFORE deriving. Stata sources give float32, and t_stat/precision computed
     # in float32 then stored as float64 do not reproduce effect/se exactly -- a user who
     # recomputes gets a different number in the 8th digit. Immaterial for any estimator,
     # but a derived column should be exactly derivable. Affected climate, euro,
     # resource_curse; caught by 91_distribution.py.
+    _hpair=e.notna()&s.notna()          # same rule for the headline scale
     out=pd.DataFrame({"dataset":proj,
-                      "effect":e[keep].astype("float64").values,
-                      "se":s[keep].astype("float64").values})
+                      "effect":e.where(_hpair)[keep].astype("float64").values,
+                      "se":s.where(_hpair)[keep].astype("float64").values})
     out["t_stat"]=out["effect"]/out["se"]
     out["precision"]=1.0/out["se"]
+    # Whether the paper's own analysis kept this row, and if not, which clause removed it.
+    out["in_paper_sample"]=_in_sample[keep].values
+    out["paper_sample_exclusion"]=_why[keep].where(_why[keep]!="",None).values
+    # The second scale, where the paper analyses one. NOT an arithmetic discovery: a pairing
+    # that reproduces the file's own t-statistic proves only that it is a pairing, which is
+    # exactly how the class-size robustness scale came to be published as the headline. An
+    # alt scale is admitted per dataset, on cited evidence, through this override.
+    _alt=o.get("alt_metric")
+    if _alt and _alt.get("effect") in df.columns and _alt.get("se") in df.columns:
+        _ae=pd.to_numeric(df[_alt["effect"]],errors="coerce")
+        _as=pd.to_numeric(df[_alt["se"]],errors="coerce").where(lambda x:x>0)
+        # Both halves together or neither. se is masked to >0 above, so without this an
+        # estimate whose standard error is zero or negative would ship with a value and no
+        # error, which reads as infinite precision to every estimator that meets it.
+        _pair=_ae.notna()&_as.notna()
+        out["effect_alt"]=_ae.where(_pair)[keep].astype("float64").values
+        out["se_alt"]=_as.where(_pair)[keep].astype("float64").values
+        out["effect_alt_units"]=_alt.get("units")
+        out["effect_alt_role"]=_alt.get("role","robustness")
+    else:
+        out["effect_alt"]=np.nan; out["se_alt"]=np.nan
+        out["effect_alt_units"]=None; out["effect_alt_role"]=None
     # A dataset built from several members of one archive carries a per-row `source_member`
     # (06_convert.py, `source_members`). Carry it into source_file so the column names the file
     # each row actually came from, not a joined string naming both. This is what the published
@@ -380,6 +454,7 @@ for proj in sorted(man):
     if "source_file" not in out.columns:
         out["source_file"]=m["source"]
     out["effect_col"]=eff; out["se_col"]=se
+    out["in_paper_sample_alt"]=out["se_alt"].notna() if "se_alt" in out.columns else False
     out["se_is_derived"]=se_derived
     out["effect_units"]=(UNITS.get(proj) or {}).get("units") or o.get("units")
     rows.append(out)
@@ -394,7 +469,9 @@ for proj in sorted(man):
 
 H=pd.concat(rows,ignore_index=True)
 front=["dataset","study_id","estimate_id","study_label","effect","se","t_stat","precision",
-       "n_obs","df","pcc","se_pcc","pub_year","citations","impact_factor","published","top_journal",
+       "effect_alt","se_alt","effect_alt_units","effect_alt_role",
+       "in_paper_sample","in_paper_sample_alt","paper_sample_exclusion",
+       "n_obs","df","pub_year","citations","impact_factor","published","top_journal",
        "country","country_id","is_usa","is_europe","data_start","data_end","data_midyear",
        "is_panel","is_cross_section","is_time_series","freq_annual","freq_quarterly","freq_monthly",
        "method_ols","method_iv","method_gmm","method_ml","method_fe","horizon",

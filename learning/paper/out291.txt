@@ -1,0 +1,59 @@
+dents. We take as our empirical benchmark the most prominent and widely cited synthesis, Betthäuser et al. (2023a), which conducts a meta-analysis of 291 effect-size estimates from 42 studies across 15 countries and reports an average learning loss of approximately −0.14 standard deviations (Cohen’s
+---
+Havránek et al. (2020) and Cook et al. (2026b). Appendix D documents how the study addresses these recommendations item by item. The dataset contains 291 effect-size estimates drawn from 42 studies across 15 countries (Figure 1). It is geographically concentrated and dominated by large administrativ
+---
+o the MAN estimate reported in Table 4, Panel A, Column 1. The black diamond 4 shows the precision-weighted (inverse-variance) pooled mean across all 291 estimates ( I V W 0.245 ), which lies more negative than the equal-weighted mean of −0.126 reported in Panel A of Table 3 because inverse-variance
+---
+21), corresponding to the MAN worst-case benchmark reported in Panel A of Table 4. The black diamond is the precision-weighted pooled mean across all 291 estimates ( I V W 0.245 ); it lies more negative than the Panel A equal-weighted mean of −0.126 because inverse-variance weighting gives dispropor
+---
+ntional 5% two-sided significance threshold. Figure 9. DFBETAS influence diagnostics for intercept. Notes: The figure displays DFBETAS values for all 291 estimates, measuring the change in the pooled random-effects estimate when each observation is omitted in turn. The horizontal lines mark the samp
+---
+ed by standardizing estimates as Cohen's d . 7. Tables Table 1. Descriptive statistics Variable N Mean SD Min Median Max Standardized mean difference 291 −0.126 0.127 −0.702 −0.124 0.333 Standard error 291 0.019 0.026 &lt; 0.001 0.009 0.140 Sample size ( n ) 291 446,417 &#8212; 275 50,000 10,884,922
+---
+es Table 1. Descriptive statistics Variable N Mean SD Min Median Max Standardized mean difference 291 −0.126 0.127 −0.702 −0.124 0.333 Standard error 291 0.019 0.026 &lt; 0.001 0.009 0.140 Sample size ( n ) 291 446,417 &#8212; 275 50,000 10,884,922 Absolute z -statistic 291 37.8 133.7 0.000 11.0 1,7
+---
+ Median Max Standardized mean difference 291 −0.126 0.127 −0.702 −0.124 0.333 Standard error 291 0.019 0.026 &lt; 0.001 0.009 0.140 Sample size ( n ) 291 446,417 &#8212; 275 50,000 10,884,922 Absolute z -statistic 291 37.8 133.7 0.000 11.0 1,775 Composition Primary education 196 share = 67% Secondar
+---
+ −0.124 0.333 Standard error 291 0.019 0.026 &lt; 0.001 0.009 0.140 Sample size ( n ) 291 446,417 &#8212; 275 50,000 10,884,922 Absolute z -statistic 291 37.8 133.7 0.000 11.0 1,775 Composition Primary education 196 share = 67% Secondary education 95 share = 33% Mathematics 128 share = 44% Reading 1
+---
+ share = 67% Secondary education 95 share = 33% Mathematics 128 share = 44% Reading 161 share = 55% Mixed 2 share = 0.69% Notes: The dataset contains 291 effect size estimates from 42 studies across 15 countries, drawn from Betthäuser et al. (2023a). Effect sizes are expressed as standardized mean d
+---
+r 3: Gov't / institutional 34 -0.12 -0.156 -0.084 -0.122 -0.165 -0.079 Tier 4: Commercial 130 -0.133 -0.148 -0.118 -0.138 -0.163 -0.113 All estimates 291 -0.126 -0.141 -0.112 -0.142 -0.17 -0.115 Table 3. Publication bias: baseline and corrected estimates Panel A: Baseline mean estimates Unweighted R
+---
+ bias: baseline and corrected estimates Panel A: Baseline mean estimates Unweighted RVE Mean effect −0.126 ** −0.140 *** (0.059) (0.020) Observations 291 291 Panel B: Corrected estimates PET PEESE 3PSM RoBMA Effect beyond bias −0.271 *** −0.245 *** −0.123 *** −0.118 (0.040) (0.051) (0.009) [−0.135, 
+---
+s: baseline and corrected estimates Panel A: Baseline mean estimates Unweighted RVE Mean effect −0.126 ** −0.140 *** (0.059) (0.020) Observations 291 291 Panel B: Corrected estimates PET PEESE 3PSM RoBMA Effect beyond bias −0.271 *** −0.245 *** −0.123 *** −0.118 (0.040) (0.051) (0.009) [−0.135, −0.0
+---
+as 29.269 *** (9.818) Publication bias 114.145 Standard error ² (58.836) Likelihood ratio test 2 0.034 H0: no pub. bias p -value = 0.854 Observations 291 291 291 291 Notes: Unweighted = the equal-weighted (arithmetic) mean of all 291 estimates, i.e. the simple estimate-level mean, not the inverse-va
+---
+9.269 *** (9.818) Publication bias 114.145 Standard error ² (58.836) Likelihood ratio test 2 0.034 H0: no pub. bias p -value = 0.854 Observations 291 291 291 291 Notes: Unweighted = the equal-weighted (arithmetic) mean of all 291 estimates, i.e. the simple estimate-level mean, not the inverse-varian
+---
+9 *** (9.818) Publication bias 114.145 Standard error ² (58.836) Likelihood ratio test 2 0.034 H0: no pub. bias p -value = 0.854 Observations 291 291 291 291 Notes: Unweighted = the equal-weighted (arithmetic) mean of all 291 estimates, i.e. the simple estimate-level mean, not the inverse-variance f
+---
+* (9.818) Publication bias 114.145 Standard error ² (58.836) Likelihood ratio test 2 0.034 H0: no pub. bias p -value = 0.854 Observations 291 291 291 291 Notes: Unweighted = the equal-weighted (arithmetic) mean of all 291 estimates, i.e. the simple estimate-level mean, not the inverse-variance fixed
+---
+ood ratio test 2 0.034 H0: no pub. bias p -value = 0.854 Observations 291 291 291 291 Notes: Unweighted = the equal-weighted (arithmetic) mean of all 291 estimates, i.e. the simple estimate-level mean, not the inverse-variance fixed-effect estimator. RVE = robust variance estimation mean following H
+---
+nd selection-ratio-adjusted estimates MAN FE-SR4 RE-SR4 Effect beyond bias 0.021 * −0.206 *** −0.068 *** (0.012) (&lt; 0.001) (0.015) Observations 41 291 291 Panel B: Publication bias required to explain away the results coef =0 coef =0.01 coef =0.05 Estimate's s -value 29.60 60.65 no amount CI s -v
+---
+election-ratio-adjusted estimates MAN FE-SR4 RE-SR4 Effect beyond bias 0.021 * −0.206 *** −0.068 *** (0.012) (&lt; 0.001) (0.015) Observations 41 291 291 Panel B: Publication bias required to explain away the results coef =0 coef =0.01 coef =0.05 Estimate's s -value 29.60 60.65 no amount CI s -value
+---
+red to explain away the results coef =0 coef =0.01 coef =0.05 Estimate's s -value 29.60 60.65 no amount CI s -value 8.31 10.46 no amount Observations 291 291 291 Panel C: p -hacking &amp; multibias MAIVE RTMA Multi 0.05;0.01 Multi 0.08;0.01 Effect beyond bias −0.119 *** −0.039 *** −0.097 *** −0.111 
+---
+to explain away the results coef =0 coef =0.01 coef =0.05 Estimate's s -value 29.60 60.65 no amount CI s -value 8.31 10.46 no amount Observations 291 291 291 Panel C: p -hacking &amp; multibias MAIVE RTMA Multi 0.05;0.01 Multi 0.08;0.01 Effect beyond bias −0.119 *** −0.039 *** −0.097 *** −0.111 *** 
+---
+xplain away the results coef =0 coef =0.01 coef =0.05 Estimate's s -value 29.60 60.65 no amount CI s -value 8.31 10.46 no amount Observations 291 291 291 Panel C: p -hacking &amp; multibias MAIVE RTMA Multi 0.05;0.01 Multi 0.08;0.01 Effect beyond bias −0.119 *** −0.039 *** −0.097 *** −0.111 *** (0.0
+---
+ (0.008) [−0.137, −0.087] Coefficient on fitted S E 2 −0.245 *** (0.051) First stage F-statistic 271.716 Heterogeneity 0.072 *** (0.001) Observations 291 291 291 291 Notes: FE = fixed effects mean, RE = mean effect estimated using robust random effects accounting for heterogeneity and clustering, MA
+---
+008) [−0.137, −0.087] Coefficient on fitted S E 2 −0.245 *** (0.051) First stage F-statistic 271.716 Heterogeneity 0.072 *** (0.001) Observations 291 291 291 291 Notes: FE = fixed effects mean, RE = mean effect estimated using robust random effects accounting for heterogeneity and clustering, MAN = 
+---
+ [−0.137, −0.087] Coefficient on fitted S E 2 −0.245 *** (0.051) First stage F-statistic 271.716 Heterogeneity 0.072 *** (0.001) Observations 291 291 291 291 Notes: FE = fixed effects mean, RE = mean effect estimated using robust random effects accounting for heterogeneity and clustering, MAN = meta
+---
+.137, −0.087] Coefficient on fitted S E 2 −0.245 *** (0.051) First stage F-statistic 271.716 Heterogeneity 0.072 *** (0.001) Observations 291 291 291 291 Notes: FE = fixed effects mean, RE = mean effect estimated using robust random effects accounting for heterogeneity and clustering, MAN = meta-ana
+---
+s in time Original Study Reproduction Slope coefficient: m o n t h s −0.00 −0.00 p -value 0.097 0.097 95% CI [−0.01, 0.00] [−0.01, 0.00] Observations 291 291 Clusters 42 42 Notes: The table shows the comparison of the original and reproduced estimate of the slope coefficient obtained by regressing t
+---
+ time Original Study Reproduction Slope coefficient: m o n t h s −0.00 −0.00 p -value 0.097 0.097 95% CI [−0.01, 0.00] [−0.01, 0.00] Observations 291 291 Clusters 42 42 Notes: The table shows the comparison of the original and reproduced estimate of the slope coefficient obtained by regressing the e
+---
+ori on quality grounds N/A See item 3. Study inclusion follows Betthäuser et al. (2023a). 6 All estimates and standard errors collected ✓ checked All 291 effect-size estimates from 42 studies are included, as reported in Betthäuser et al. (2023a). 7 Data collected independently by two co-authors ✓ *

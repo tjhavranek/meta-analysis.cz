@@ -195,7 +195,7 @@ which is what the underlying papers do. As a worked check, FAT-PET run on the
 `education` corrects to about 0.02 and `excess_sensitivity` to about 0.01, both
 of which their papers describe as near zero, and `forward` corrects to 0.92
 against a null of 1. On the same winsorised data, with standard errors clustered
-by study, the FAT publication-bias intercept lies beyond ±1.96 in 25 of the 42
+by study, the FAT publication-bias intercept lies beyond ±1.96 in 26 of the 42
 literatures.
 
 **All 42 pooled literatures are verified** — 22 `domain_reviewed`, 20 `code_traced`. Where a

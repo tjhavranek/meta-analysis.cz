@@ -2,7 +2,7 @@
  "name": "meta-analysis.cz data API",
  "version": "1.0.0",
  "api_version": "1.0.0",
- "data_version": "1.3.0",
+ "data_version": "2.0.0",
  "version_note": "version and api_version describe this INTERFACE. data_version describes the harmonised table, and is what croissant.json reports. They move independently.",
  "description": "Estimate-level datasets from meta-analyses in economics and the social sciences, with the hand-coded study characteristics collected for each paper.",
  "license": {
@@ -31,16 +31,18 @@
  "counts": {
   "datasets": 46,
   "rows_in_source_files": 67606,
-  "estimates_in_analysis_samples": 56046,
-  "estimates_in_harmonised_table": 50441,
+  "estimates_in_analysis_samples": 58946,
+  "estimates_in_paper_samples": 50859,
+  "rows_carried": 53341,
+  "estimates_in_harmonised_table": 53341,
   "literatures_in_harmonised_table": 42,
   "in_harmonised_table": 42,
   "counts_explained": "rows_in_source_files counts every row of the 46 converted files. estimates_in_analysis_samples applies each paper's own filters where its replication code defines them as a row filter on the stored scale, and otherwise keeps the rows carrying a usable standard error; it is what the catalogue table shows. estimates_in_harmonised_table additionally drops literatures that duplicate another exactly, overlap one already included, or lack per-estimate precision."
  },
  "harmonised_table": {
-  "version": "1.3.0",
+  "version": "2.0.0",
   "status": "stable",
-  "n_rows": 50441,
+  "n_rows": 53341,
   "n_literatures": 42,
   "columns": [
    "dataset",
@@ -51,10 +53,15 @@
    "se",
    "t_stat",
    "precision",
+   "effect_alt",
+   "se_alt",
+   "effect_alt_units",
+   "effect_alt_role",
+   "in_paper_sample",
+   "in_paper_sample_alt",
+   "paper_sample_exclusion",
    "n_obs",
    "df",
-   "pcc",
-   "se_pcc",
    "pub_year",
    "citations",
    "impact_factor",
@@ -187,7 +194,7 @@
    "description": "Meta-analysis of 1,973 estimates from 67 studies finds shareholder activism raises stock prices by 0% to 1.5% after correcting for publication bias.",
    "n_estimates": 1973,
    "n_variables": 159,
-   "n_estimates_in_literature": 1254,
+   "n_estimates_in_literature": 1851,
    "source_file": "https://meta-analysis.cz/activism/activism.xlsx",
    "source_member": null,
    "source_sheet": "Data",
@@ -197,20 +204,20 @@
     "codebook": "https://meta-analysis.cz/api/v1/codebooks/activism.json"
    },
    "core_columns": {
-    "effect": "Estimate rescaled by 100.0 x Multiplicator to obtain estimates in points (number)",
-    "standard_error": "derived as |effect/t-stats|",
-    "standard_error_note": "derived, not read from a column",
+    "effect": "Unnamed: 25",
+    "standard_error": "Unnamed: 26",
+    "standard_error_note": null,
     "evidence": "paper's replication code",
     "sample_size": "TotalObs"
    },
    "effect_units": "percent",
    "direction_note": "Reconstructed on a comparable scale; the raw Estimate column mixes percent and decimal across studies.",
-   "column_mapping_verified_by": "activism.R sets data$elasticity <- data$Estim_adj and data$se_all <- data$Se_adj, having first deleted the raw Estimate and se columns; the second header row of the published workbook marks them 'Delete' for the same reason. Estim_adj = Estimate*100*Multiplicator, and the Multiplicator takes only the values 0.01 and 1, i.e. the raw column MIXES percent and decimal scales across studies. Reconstructing it gives a median of 0.489, matching the paper's Estim_adj. n_obs=TotalObs: TotalObs is the observation count the paper's own replication code treats as N. Integral, 2 to 11,884, and null on exactly one source row — row 0, which also lacks ArticleNo and does not carry a usable (effect, se) pair, so it is outside the harmonised sample.",
+   "column_mapping_verified_by": "activism.R sets elasticity <- Estim_adj and se_all <- Se_adj and never subsets `data`; the live main regression publication_bias3 runs on all 1,973 rows. R has no block comments, so nothing here is disabled code. Mean 1.52 and median 0.50 of Estim_adj reproduce the paper's own figures.",
    "in_harmonised_table": true,
    "reconciliation": {
     "n_estimates_reported_in_paper": 1973,
-    "n_rows_in_harmonised_table": 1254,
-    "note": "-719 rows against the abstract's count, and correctly so: the paper's own replication code restricts to an analysis subset, reproduced here. See column_mapping_verified_by."
+    "n_rows_in_harmonised_table": 1851,
+    "note": "-122 rows against the paper's count, usually because the published file has no usable standard error on the remainder. See this dataset's note and column_mapping_verified_by."
    },
    "excluded_from_harmonised_because": null,
    "duplicate_of": null,
@@ -221,9 +228,9 @@
    "rights_status": "cc-by-4.0",
    "license_url": "https://creativecommons.org/licenses/by/4.0/",
    "rights_note": "CC BY 4.0. Free to use, adapt, and redistribute, including commercially and including as training data. The only condition is credit: cite the paper named in this entry.",
-   "max_precision_weight_share": 0.2143,
+   "max_precision_weight_share": 0.1468,
    "audit_status": "domain_reviewed",
-   "note": "The published workbook's Data sheet carries TWO header rows: row 0 names the columns and row 1 repeats them with the authors' working marks ('Delete', 'Strong', 'Odhad'). Read at header=0 the second one arrives as an estimate, which is why this dataset used to publish 1,974 rows against the paper's 1,973. It is dropped before anything reads the file."
+   "note": "The workbook carries two header rows. Row 1 is blank over the two columns that matter, so pandas names them `Unnamed: 25` and `Unnamed: 26`; row 2 labels them `Estim_adj` and `Se_adj`, and they are the columns activism.R analyses. They are read directly here. The pipeline used to RECONSTRUCT the effect as Estimate * 100 * Multiplicator and the standard error as |effect / t|, which was wrong twice. It reached only the 1,266 rows carrying a t-statistic, 42 studies of 67, where Se_adj is present on 1,851 rows over 60 studies. And on the 20 estimates of ArticleNo 42 the raw Estimate carries the opposite sign to the authors' Estim_adj, so the site published 20 effects with the wrong sign. Reading the published columns fixes both. Estim_adj has mean 1.52 and median 0.50, which is what the paper reports."
   },
   {
    "id": "alphas",
@@ -416,7 +423,7 @@
    "description": "Meta-analysis of 1205 estimates finds horizontal FDI spillovers average zero, shaped by technology gap and ownership structure.",
    "n_estimates": 4147,
    "n_variables": 101,
-   "n_estimates_in_literature": 1205,
+   "n_estimates_in_literature": 1373,
    "source_file": "https://meta-analysis.cz/bma/determinants.xls",
    "source_member": null,
    "source_sheet": "stata",
@@ -438,8 +445,8 @@
    "in_harmonised_table": true,
    "reconciliation": {
     "n_estimates_reported_in_paper": 1205,
-    "n_rows_in_harmonised_table": 1205,
-    "note": "matches the paper exactly"
+    "n_rows_in_harmonised_table": 1373,
+    "note": "+168 rows against the abstract's count, and correctly so: the paper's own replication code restricts to an analysis subset, reproduced here. See column_mapping_verified_by."
    },
    "excluded_from_harmonised_because": null,
    "duplicate_of": null,
@@ -450,7 +457,7 @@
    "rights_status": "cc-by-4.0",
    "license_url": "https://creativecommons.org/licenses/by/4.0/",
    "rights_note": "CC BY 4.0. Free to use, adapt, and redistribute, including commercially and including as training data. The only condition is credit: cite the paper named in this entry.",
-   "max_precision_weight_share": 0.0716,
+   "max_precision_weight_share": 0.0684,
    "audit_status": "domain_reviewed",
    "note": "HORIZONTAL spillovers. Shares the FDI spillovers database with the 'spillovers' project, which takes the vertical subset. The two are complementary, not duplicates."
   },
@@ -585,7 +592,7 @@
    "description": "A meta-analysis of 2,819 estimates from 66 studies finds little publication bias and a negligible class size effect on student achievement.",
    "n_estimates": 2906,
    "n_variables": 67,
-   "n_estimates_in_literature": 2819,
+   "n_estimates_in_literature": 2906,
    "source_file": "https://meta-analysis.cz/class/class.xlsx",
    "source_member": null,
    "source_sheet": "data",
@@ -595,20 +602,20 @@
     "codebook": "https://meta-analysis.cz/api/v1/codebooks/class.json"
    },
    "core_columns": {
-    "effect": "pcc",
-    "standard_error": "se_pcc",
+    "effect": "effect",
+    "standard_error": "se_effect",
     "standard_error_note": null,
     "evidence": "paper's replication code",
     "sample_size": "sample_size"
    },
-   "effect_units": "partial correlation coefficient",
-   "direction_note": null,
-   "column_mapping_verified_by": "The paper's own replication code regresses pcc_w/se_pcc_w @ class.do:737 -- a winsorised copy of this pair, built inside the script from the raw columns. The published file carries only the raw columns, so they are what the harmonised table can offer. Found mechanically by 93_codegrep.py.",
+   "effect_units": "change in test scores in hundredths of a standard deviation per one additional student",
+   "direction_note": "Negative means a larger class goes with lower test scores, which is the effect the literature looks for. An estimate of -1 means a reduction of ten students is associated with a rise of 0.1 standard deviations. This is the metric the paper's main models use; the partial correlation of its appendix robustness block is carried in effect_alt.",
+   "column_mapping_verified_by": "class.do drops effect_true==0 at line 30, before any statistic, and repeats it at every re-import (669, 887, 1205, 1395); the live main regression is ivreg2 effect_w se_effect_w at line 221, on winsorised copies the script builds from effect and se_effect. Every pcc regression in the file sits inside the block comment running 716 to 867 and never executes. The paper states the sample directly: 'We gather 2,819 estimates ... 2,434 estimates from 54 studies can be used in the main meta-analysis models', and its third inclusion criterion is that a study 'must report the standard deviations of test scores so that we can convert all estimates to a common metric'.",
    "in_harmonised_table": true,
    "reconciliation": {
     "n_estimates_reported_in_paper": 2819,
-    "n_rows_in_harmonised_table": 2819,
-    "note": "The pooled effect column here is the partial correlation, which the paper uses as a ROBUSTNESS check (Online Appendix Table B5, Block 2) rather than as its headline metric. The paper's own common metric is the change in test scores measured in hundredths of a standard deviation per one additional student, the `effect` and `se_effect` columns, on the 2,434 estimates from 54 studies that `class.do` keeps with `drop if effect_true==0`; that is the unit behind Tables 2, 3, 7 and 8 and behind the abstract's findings on the STAR experiment and on classes under 15 students. The partial correlation exists in the paper partly to admit 12 further studies that report no test-score standard deviation and so cannot enter the common metric at all. Both column pairs are published in the per-dataset file, and both reproduce this dataset's reported t-statistic, so the arithmetic pairing test cannot choose between them; the choice has to come from the paper, and the paper chooses `effect`. A reanalyst reproducing the published results must take `effect`/`se_effect` on the `effect_true == 1` subset rather than these rows as they stand. Re-mapping the pooled column is deferred to the next data release rather than done here, because it would change 2,819 rows of a deposited version."
+    "n_rows_in_harmonised_table": 2906,
+    "note": "The paper collects 2,819 estimates from 66 studies and analyses 2,434 of them from 54 studies; the 12 further studies fail only the third inclusion criterion, reporting no test-score standard deviation, and reach the table on the partial-correlation scale alone. Both scales are carried: `effect` is the metric the main models use, `effect_alt` the partial correlation of Online Appendix Table B5 Block 2. They are different estimands, not a rescaling; on the rows carrying both they correlate about 0.12."
    },
    "excluded_from_harmonised_because": null,
    "duplicate_of": null,
@@ -619,7 +626,7 @@
    "rights_status": "cc-by-4.0",
    "license_url": "https://creativecommons.org/licenses/by/4.0/",
    "rights_note": "CC BY 4.0. Free to use, adapt, and redistribute, including commercially and including as training data. The only condition is credit: cite the paper named in this entry.",
-   "max_precision_weight_share": 0.0211,
+   "max_precision_weight_share": 0.1163,
    "audit_status": "code_traced",
    "note": "Two of 2,819 rows carry a partial correlation outside [-1,1] (1.372 and 1.116), taken straight from the source pcc column. They are almost certainly coding errors in the original file. Kept rather than silently dropped, so the mirror stays faithful to what was published — filter on abs(effect)<=1 if you need a strictly valid correlation. UPSTREAM DATA ERROR, documented rather than silently passed: class.xlsx itself carries two partial correlations outside [-1,1] -- pcc = 1.371675 and 1.116313, sitting beside effect/se_effect of 7.24/1.5671 and 0.967742/0.430108. A correlation cannot leave [-1,1], so these are errors in the authors' own pcc column, not in the conversion; 90_roundtrip confirms both values occur verbatim in the source. A further 73 rows sit exactly at -1 or +1 with positive standard errors, which is also not a coherent PCC/SE pair; 70 of those come from one study. Their combined precision weight is about 1e-6 of the literature's total, so they barely move an inverse-variance estimate, but they are invalid input to any correlation transform. Retained because the table's contract is faithful reproduction, and flagged on every run by 94_sanity. Found 2026-08-04."
   },
@@ -845,7 +852,8 @@
    "license_url": "https://creativecommons.org/licenses/by/4.0/",
    "rights_note": "CC BY 4.0. Free to use, adapt, and redistribute, including commercially and including as training data. The only condition is credit: cite the paper named in this entry.",
    "max_precision_weight_share": 0.5033,
-   "audit_status": "domain_reviewed"
+   "audit_status": "domain_reviewed",
+   "note": "The file also carries a PCC column, but its PCCSE column is empty on every row, so the partial correlation has no published standard error and cannot enter as an alternative scale: a value without its error would read as infinite precision to any estimator."
   },
   {
    "id": "education",
@@ -979,7 +987,7 @@
    "description": "Meta-analysis of the price elasticity of electricity demand: no increase in price responsiveness despite ninety years of technological change.",
    "n_estimates": 4720,
    "n_variables": 72,
-   "n_estimates_in_literature": 3324,
+   "n_estimates_in_literature": 3744,
    "source_file": "https://meta-analysis.cz/electricity/electricity.xlsx",
    "source_member": null,
    "source_sheet": "data",
@@ -1001,7 +1009,7 @@
    "in_harmonised_table": true,
    "reconciliation": {
     "n_estimates_reported_in_paper": null,
-    "n_rows_in_harmonised_table": 3324,
+    "n_rows_in_harmonised_table": 3744,
     "note": null
    },
    "excluded_from_harmonised_because": null,
@@ -1658,7 +1666,7 @@
    "description": "A meta-analysis of 1,555 estimates from 37 studies across 45 countries finds publication bias exaggerates the effect of interest rates on house prices.",
    "n_estimates": 1785,
    "n_variables": 123,
-   "n_estimates_in_literature": 1555,
+   "n_estimates_in_literature": 1674,
    "source_file": "https://meta-analysis.cz/house_prices/house.dta",
    "source_member": null,
    "source_sheet": null,
@@ -1680,8 +1688,8 @@
    "in_harmonised_table": true,
    "reconciliation": {
     "n_estimates_reported_in_paper": 1555,
-    "n_rows_in_harmonised_table": 1555,
-    "note": "matches the paper exactly"
+    "n_rows_in_harmonised_table": 1674,
+    "note": "+119 rows against the abstract's count, and correctly so: the paper's own replication code restricts to an analysis subset, reproduced here. See column_mapping_verified_by."
    },
    "excluded_from_harmonised_because": null,
    "duplicate_of": null,
@@ -1692,7 +1700,7 @@
    "rights_status": "cc-by-4.0",
    "license_url": "https://creativecommons.org/licenses/by/4.0/",
    "rights_note": "CC BY 4.0. Free to use, adapt, and redistribute, including commercially and including as training data. The only condition is credit: cite the paper named in this entry.",
-   "max_precision_weight_share": 0.2663,
+   "max_precision_weight_share": 0.2331,
    "audit_status": "domain_reviewed",
    "note": "one row per impulse-response horizon, roughly 7 horizons per (idstudy, idirf), so rows within a study are not independent"
   },
@@ -1718,7 +1726,7 @@
    "description": "Meta-analysis of 2,193 estimates finds financial incentives have near-zero corrected effect on performance in most field settings.",
    "n_estimates": 2193,
    "n_variables": 72,
-   "n_estimates_in_literature": 1252,
+   "n_estimates_in_literature": 2193,
    "source_file": "https://meta-analysis.cz/incentives/incentives.xlsx",
    "source_member": null,
    "source_sheet": "data",
@@ -1740,8 +1748,8 @@
    "in_harmonised_table": true,
    "reconciliation": {
     "n_estimates_reported_in_paper": 2193,
-    "n_rows_in_harmonised_table": 1252,
-    "note": "-941 rows against the abstract's count, and correctly so: the paper's own replication code restricts to an analysis subset, reproduced here. See column_mapping_verified_by."
+    "n_rows_in_harmonised_table": 2193,
+    "note": "matches the paper exactly"
    },
    "excluded_from_harmonised_because": null,
    "duplicate_of": null,
@@ -1752,7 +1760,7 @@
    "rights_status": "cc-by-4.0",
    "license_url": "https://creativecommons.org/licenses/by/4.0/",
    "rights_note": "CC BY 4.0. Free to use, adapt, and redistribute, including commercially and including as training data. The only condition is credit: cite the paper named in this entry.",
-   "max_precision_weight_share": 0.0156,
+   "max_precision_weight_share": 0.0168,
    "audit_status": "domain_reviewed",
    "note": "Baseline is the partial correlation. Cohen's d and its standard error remain in the per-dataset file for anyone wanting the robustness variant."
   },
@@ -2409,7 +2417,7 @@
    "description": "First meta-analysis of the size premium finds strong publication bias and a corrected effect of 1.72% in annual returns.",
    "n_estimates": 1746,
    "n_variables": 407,
-   "n_estimates_in_literature": 1631,
+   "n_estimates_in_literature": 1746,
    "source_file": "https://meta-analysis.cz/size/size.dta",
    "source_member": null,
    "source_sheet": null,
@@ -2420,19 +2428,19 @@
    },
    "core_columns": {
     "effect": "size",
-    "standard_error": "se_calc",
+    "standard_error": "se",
     "standard_error_note": null,
     "evidence": "paper's replication code",
     "sample_size": "obs"
    },
    "effect_units": "percent",
    "direction_note": "Raw size-return slopes: NEGATIVE means a larger conventional size premium, i.e. small firms outperforming. The abstract states that researchers prefer estimates showing 'a negative relation between size and returns'. 76% of stored effects are negative. Do not read positive as the premium.",
-   "column_mapping_verified_by": "size.do regresses size on se, but se_calc is the column that reproduces the file's OWN tstat: 100.0% of rows within 1%, against 96.7% for se. We take se_calc for internal consistency (t = effect/se holds exactly), accepting that it is not the column the paper's regression names. se_calc also contains zeros, which the se>0 filter drops.",
+   "column_mapping_verified_by": "The file stores the standard error in `se`, non-missing and positive on all 1,746 rows. The resolver had not mapped it, so the literature entered the table on a derived error.",
    "in_harmonised_table": true,
    "reconciliation": {
     "n_estimates_reported_in_paper": 1746,
-    "n_rows_in_harmonised_table": 1631,
-    "note": "-115 rows against the paper's count, usually because the published file has no usable standard error on the remainder. See this dataset's note and column_mapping_verified_by."
+    "n_rows_in_harmonised_table": 1746,
+    "note": "matches the paper exactly"
    },
    "excluded_from_harmonised_because": null,
    "duplicate_of": null,
@@ -2522,7 +2530,7 @@
    "description": "A meta-analysis of 3,626 estimates finds vertical FDI spillovers to suppliers are economically significant but spillovers to buyers small.",
    "n_estimates": 4147,
    "n_variables": 98,
-   "n_estimates_in_literature": 2421,
+   "n_estimates_in_literature": 2772,
    "source_file": "https://meta-analysis.cz/spillovers/data.xls",
    "source_member": null,
    "source_sheet": "stata",
@@ -2544,7 +2552,7 @@
    "in_harmonised_table": true,
    "reconciliation": {
     "n_estimates_reported_in_paper": 3626,
-    "n_rows_in_harmonised_table": 2421,
+    "n_rows_in_harmonised_table": 2772,
     "note": "Resolved. In data.xls (sheet `stata`, 4,147 rows, 57 studies): aux==0 gives 3,626 rows from 57 studies, matching the abstract exactly; aux==0 & horiz==1 gives 1,205 from 52, matching bma exactly; aux==0 & horiz!=1 gives the 2,421 from 57 published here. The earlier note called the difference between 2,421 and 3,626 unexplained and warned the published file might be a subset of the paper's sample. It is not: the difference is the horizontal half, which is a separate dataset on this site."
    },
    "excluded_from_harmonised_because": null,
@@ -2556,7 +2564,7 @@
    "rights_status": "cc-by-4.0",
    "license_url": "https://creativecommons.org/licenses/by/4.0/",
    "rights_note": "CC BY 4.0. Free to use, adapt, and redistribute, including commercially and including as training data. The only condition is credit: cite the paper named in this entry.",
-   "max_precision_weight_share": 0.9973,
+   "max_precision_weight_share": 0.9972,
    "audit_status": "domain_reviewed",
    "note": "VERTICAL spillovers (forward and backward), 2,421 estimates from 57 studies. The abstract's 3,626 is the FULL sample, horizontal and vertical together; the horizontal 1,205 from 52 studies are published separately as `bma`. 1,205 + 2,421 = 3,626, so the counts reconcile exactly and nothing is missing from the published file."
   },
@@ -2579,7 +2587,7 @@
    "description": "Meta-analysis of 861 estimates finds student employment has a negative but economically small effect on educational outcomes.",
    "n_estimates": 892,
    "n_variables": 59,
-   "n_estimates_in_literature": 861,
+   "n_estimates_in_literature": 872,
    "source_file": "https://meta-analysis.cz/students/students.xlsx",
    "source_member": null,
    "source_sheet": "data",
@@ -2602,8 +2610,8 @@
    "in_harmonised_table": true,
    "reconciliation": {
     "n_estimates_reported_in_paper": 861,
-    "n_rows_in_harmonised_table": 861,
-    "note": "matches the paper exactly"
+    "n_rows_in_harmonised_table": 872,
+    "note": "+11 rows against the abstract's count, and correctly so: the paper's own replication code restricts to an analysis subset, reproduced here. See column_mapping_verified_by."
    },
    "excluded_from_harmonised_because": null,
    "duplicate_of": null,
@@ -2614,7 +2622,7 @@
    "rights_status": "cc-by-4.0",
    "license_url": "https://creativecommons.org/licenses/by/4.0/",
    "rights_note": "CC BY 4.0. Free to use, adapt, and redistribute, including commercially and including as training data. The only condition is credit: cite the paper named in this entry.",
-   "max_precision_weight_share": 0.038,
+   "max_precision_weight_share": 0.0379,
    "audit_status": "code_traced",
    "note": "The published file carries 892 rows, 31 of which the paper's own code excludes."
   },
@@ -2697,7 +2705,7 @@
    "description": "Meta-analysis of 1,613 reported size-premium estimates from 105 studies on how generalized trust and rule of law explain the disagreement across markets.",
    "n_estimates": 1613,
    "n_variables": 45,
-   "n_estimates_in_literature": 284,
+   "n_estimates_in_literature": 375,
    "source_file": "https://meta-analysis.cz/trust/trust_data.csv",
    "source_member": null,
    "source_sheet": null,
@@ -2720,7 +2728,7 @@
    "in_harmonised_table": true,
    "reconciliation": {
     "n_estimates_reported_in_paper": null,
-    "n_rows_in_harmonised_table": 284,
+    "n_rows_in_harmonised_table": 375,
     "note": null
    },
    "excluded_from_harmonised_because": null,
@@ -2733,7 +2741,7 @@
    "rights_status": "cc-by-4.0",
    "license_url": "https://creativecommons.org/licenses/by/4.0/",
    "rights_note": "CC BY 4.0. Free to use, adapt, and redistribute, including commercially and including as training data. The only condition is credit: cite the paper named in this entry.",
-   "max_precision_weight_share": 0.0394,
+   "max_precision_weight_share": 0.042,
    "audit_status": "code_traced",
    "note": "INCLUDED from 1.0.0 by the owner's decision (2026-08-04), but only the estimates `size` does not already carry. Of trust's 1,613 rows, 1,329 (82.4%) duplicate pooled `size` rows and are dropped here so nothing is counted twice, leaving the 284 unique to trust that the shipped table carries. This is a deliberate splice of two separately-assembled collections of one literature: trust (2026) is the later collection, size (2019) the earlier and larger one at 1,746 rows. Anyone who wants either collection whole should use its own per-dataset file rather than the pooled table."
   },

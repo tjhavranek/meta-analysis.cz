@@ -24,8 +24,8 @@
   "direction_note": "Raw coefficient on the border dummy in a log-linear gravity model; the paper's headline reduction is a transform of it, not the raw value."
  },
  "class": {
-  "units": "partial correlation coefficient",
-  "direction_note": null
+  "units": "change in test scores in hundredths of a standard deviation per one additional student",
+  "direction_note": "Negative means a larger class goes with lower test scores, which is the effect the literature looks for. An estimate of -1 means a reduction of ten students is associated with a rise of 0.1 standard deviations. This is the metric the paper's main models use; the partial correlation of its appendix robustness block is carried in effect_alt."
  },
  "climate": {
   "units": "degrees Celsius",

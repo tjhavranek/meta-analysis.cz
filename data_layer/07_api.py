@@ -8,7 +8,7 @@ OUT=os.path.join(WORK,"out"); BASE="https://meta-analysis.cz"
 VERSION="1.0.0"; DATA_V="v1"
 # The DATA artefact's version, in ONE place. It was hardcoded in four, which is how a
 # consumer once saw the Croissant record say 1.0.0 while the table said 0.9.0-beta.
-DATA_VERSION="1.3.0"; DATA_STATUS="stable"
+DATA_VERSION="2.0.0"; DATA_STATUS="stable"
 # The VERSION DOI, set once Zenodo minted it. None until deposited -- publishing the
 # previous version's DOI beside a new version tells a citing reader the wrong thing.
 # Reserved on the 1.3.0 draft before the bundle was built, so the archived CITATION.cff
@@ -89,6 +89,27 @@ def claimed_n(pap, proj=None):
 # arithmetic pairing alone. Published as a field so users can filter on review
 # quality instead of reading prose. The arithmetic test proves an (effect, se)
 # PAIRING; it cannot tell a headline estimand from a robustness one.
+# Collected non-fatal problems, printed at the end. This list is appended to in three places
+# in the harmonised-schema builder and was NEVER DEFINED, so any one of them raised NameError
+# instead of reporting. It never fired because the field descriptions happened to be complete
+# and the table always readable; adding seven columns without descriptions fired all of it.
+WARNINGS = []
+
+def _sample_counts():
+    """(rows carried, rows inside the papers' own analysis samples).
+
+    Uses the table this module already loaded as _H rather than re-reading it; an earlier
+    version re-read the file with the wrong path variable names and silently returned two
+    nulls, which is exactly the failure the WARNINGS list now reports instead of hiding.
+    """
+    try:
+        return int(len(_H)), int(_H["in_paper_sample"].sum())
+    except Exception as e:
+        WARNINGS.append("sample counts unavailable (%s)" % type(e).__name__)
+        return None, None
+
+
+
 DOMAIN_REVIEWED = {"activism","gasoline","frisch","dst","electricity","excess_sensitivity",
                    "discrate","learning","eis","incentives","habits","reforms",
                    "lags","price_puzzle","climate","house_prices","forward",
@@ -501,6 +522,12 @@ index=dict(
     datasets=len(ok),
     rows_in_source_files=sum(d["n_estimates"] for d in ok),
     estimates_in_analysis_samples=sum(d.get("n_estimates_in_literature") or d["n_estimates"] for d in ok),
+    # Two numbers, and which one leads matters. The count a PAPER vouches for is the one a
+    # citation should use; the broader one counts rows this collection carries, including
+    # estimates the papers themselves excluded. Published together, always, because the broad
+    # number alone gets quoted as though the evidence base grew.
+    estimates_in_paper_samples=_sample_counts()[1],
+    rows_carried=_sample_counts()[0],
     estimates_in_harmonised_table=(harm.get("n_rows") or 0),
     literatures_in_harmonised_table=(harm.get("n_datasets") or 0),
     in_harmonised_table=sum(1 for d in ok if d["in_harmonised_table"]),
@@ -868,3 +895,10 @@ print(f"with DOI: {sum(1 for d in ok if (d['paper'] or {}).get('doi'))} | "
       f"datapackage resources: {len(dp['resources'])}")
 missing=[d["id"] for d in ok if not (d["paper"] or {}).get("title")]
 if missing: print("no papers.json entry:", ", ".join(missing))
+
+if WARNINGS:
+    print("")
+    print("%d warning(s):" % len(WARNINGS))
+    for _w in WARNINGS:
+        print("  ! " + _w)
+

@@ -398,6 +398,7 @@
    "dtype": "float64",
    "n_missing": 0,
    "n_unique": 990,
+   "role": "effect_estimate",
    "stats": {
     "min": -24.0,
     "p25": -0.119,
@@ -414,6 +415,7 @@
    "dtype": "float64",
    "n_missing": 122,
    "n_unique": 1649,
+   "role": "standard_error",
    "stats": {
     "min": 0.000282,
     "p25": 0.447972,

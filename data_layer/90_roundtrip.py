@@ -157,13 +157,33 @@ def source_pairs(proj, df):
 rows, fails = [], []
 for proj in sorted(H["dataset"].unique()):
     g = H[H["dataset"] == proj]
-    got = set(zip(np.round(g["effect"].astype(float), R), np.round(g["se"].astype(float), R)))
+    # Only rows carrying a HEADLINE pair are checked against the headline columns. Since 2.0.0 a
+    # row may enter on the alternative scale alone, with `effect` null; those estimates are real
+    # and published, but they live in `effect_alt`/`se_alt` and are verified separately below.
+    _g = g[g["effect"].notna() & g["se"].notna()]
+    got = set(zip(np.round(_g["effect"].astype(float), R), np.round(_g["se"].astype(float), R)))
     try:
         df = read_source(proj)
         src, kind = source_pairs(proj, df)
     except Exception as ex:
         fails.append(f"{proj}: could not re-read the source ({str(ex)[:60]})")
         rows.append((proj, "ERROR", len(g), 0, 0.0)); continue
+    # The alternative scale gets the same treatment: read from the published file, matched as a
+    # pair. An alt scale that cannot be found in the source would be a fabrication exactly as a
+    # headline one would.
+    _alt = (OVR.get(proj) or {}).get("alt_metric") or {}
+    if _alt.get("effect") and "effect_alt" in g.columns:
+        _ga = g[g["effect_alt"].notna() & g["se_alt"].notna()]
+        if len(_ga) and _alt["effect"] in df.columns and _alt["se"] in df.columns:
+            _ae = num(df, _alt["effect"]); _as = num(df, _alt["se"])
+            _m = _ae.notna() & _as.notna() & (_as > 0)
+            _src_alt = set(zip(np.round(_ae[_m], R), np.round(_as[_m], R)))
+            _got_alt = set(zip(np.round(_ga["effect_alt"].astype(float), R),
+                               np.round(_ga["se_alt"].astype(float), R)))
+            _miss_alt = _got_alt - _src_alt
+            if _miss_alt:
+                fails.append(f"{proj}: {len(_miss_alt)} of {len(_got_alt)} ALTERNATIVE-scale pairs "
+                             f"do NOT occur in the source file")
     missing = got - src
     frac = 1 - len(missing) / max(len(got), 1)
     rows.append((proj, kind, len(g), len(missing), frac))

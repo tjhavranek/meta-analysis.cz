@@ -48,8 +48,8 @@
  "@type": "sc:Dataset",
  "conformsTo": "http://mlcommons.org/croissant/1.0",
  "name": "meta-analysis-cz",
- "version": "1.3.0",
- "description": "Estimate-level data from meta-analyses in economics and the social sciences. 46 datasets containing 67,606 converted source rows and 56,046 harmonisable estimates after each paper's reproducible filters, each with the hand-coded study and design characteristics collected for the original paper. LICENCE: everything here is CC BY 4.0, including the underlying research data. Free to use, adapt, and redistribute, including commercially and as training data for machine-learning models. Credit is the only condition: cite the collection and the paper whose dataset you used.",
+ "version": "2.0.0",
+ "description": "Estimate-level data from meta-analyses in economics and the social sciences. 46 datasets containing 67,606 converted source rows and 58,946 harmonisable estimates after each paper's reproducible filters, each with the hand-coded study and design characteristics collected for the original paper. LICENCE: everything here is CC BY 4.0, including the underlying research data. Free to use, adapt, and redistribute, including commercially and as training data for machine-learning models. Credit is the only condition: cite the collection and the paper whose dataset you used.",
  "url": "https://meta-analysis.cz",
  "license": "https://creativecommons.org/licenses/by/4.0/",
  "citeAs": "Havranek, T. and Z. Irsova (2026). meta-analysis.cz: harmonised estimate-level data from meta-analyses in economics. Zenodo. https://doi.org/10.5281/zenodo.21773678",
@@ -494,8 +494,8 @@
    "description": "DERIVED AGGREGATE VIEW of the per-dataset files above, reshaped to a common schema. Rows are not additional to them.",
    "contentUrl": "https://meta-analysis.cz/data/v1/estimates_harmonised.csv",
    "encodingFormat": "text/csv",
-   "sha256": "5c27d5c0889d40491dbd93e1ad4b3937e1c3bee5cff491b8beb2f481cea6fdfc",
-   "contentSize": "11656814"
+   "sha256": "7cbc2fee21a0c64224a2aeeebdb832f19511c7982010a1b8c4c53f838903187e",
+   "contentSize": "13014538"
   },
   {
    "@type": "cr:FileObject",
@@ -504,8 +504,8 @@
    "description": "The same derived aggregate view, as Parquet.",
    "contentUrl": "https://meta-analysis.cz/data/v1/estimates_harmonised.parquet",
    "encodingFormat": "application/vnd.apache.parquet",
-   "sha256": "6de9452ed2596152df1a526560cb4089de006eb7c1457c504b34951023299b76",
-   "contentSize": "1789531"
+   "sha256": "d6eecd6c8fed4d7b12b4789b000cc5ecde5bf12943fa702b094f5a74ed3e6eb8",
+   "contentSize": "1772768"
   }
  ],
  "recordSet": [
@@ -878,7 +878,8 @@
       "extract": {
        "column": "Unnamed: 25"
       }
-     }
+     },
+     "description": "verified role: effect_estimate"
     },
     {
      "@type": "cr:Field",
@@ -892,7 +893,8 @@
       "extract": {
        "column": "Unnamed: 26"
       }
-     }
+     },
+     "description": "verified role: standard_error"
     },
     {
      "@type": "cr:Field",
@@ -8304,7 +8306,8 @@
       "extract": {
        "column": "effect"
       }
-     }
+     },
+     "description": "verified role: effect_estimate"
     },
     {
      "@type": "cr:Field",
@@ -8318,7 +8321,8 @@
       "extract": {
        "column": "se_effect"
       }
-     }
+     },
+     "description": "verified role: standard_error"
     },
     {
      "@type": "cr:Field",
@@ -8388,8 +8392,7 @@
       "extract": {
        "column": "pcc"
       }
-     },
-     "description": "verified role: effect_estimate"
+     }
     },
     {
      "@type": "cr:Field",
@@ -8403,8 +8406,7 @@
       "extract": {
        "column": "se_pcc"
       }
-     },
-     "description": "verified role: standard_error"
+     }
     },
     {
      "@type": "cr:Field",
@@ -39111,8 +39113,7 @@
       "extract": {
        "column": "se_calc"
       }
-     },
-     "description": "verified role: standard_error"
+     }
     },
     {
      "@type": "cr:Field",
@@ -44586,7 +44587,8 @@
       "extract": {
        "column": "se"
       }
-     }
+     },
+     "description": "verified role: standard_error"
     },
     {
      "@type": "cr:Field",
@@ -50039,6 +50041,104 @@
     },
     {
      "@type": "cr:Field",
+     "@id": "estimates_harmonised/effect_alt",
+     "name": "effect_alt",
+     "dataType": "sc:Float",
+     "source": {
+      "fileObject": {
+       "@id": "estimates_harmonised.parquet"
+      },
+      "extract": {
+       "column": "effect_alt"
+      }
+     }
+    },
+    {
+     "@type": "cr:Field",
+     "@id": "estimates_harmonised/se_alt",
+     "name": "se_alt",
+     "dataType": "sc:Float",
+     "source": {
+      "fileObject": {
+       "@id": "estimates_harmonised.parquet"
+      },
+      "extract": {
+       "column": "se_alt"
+      }
+     }
+    },
+    {
+     "@type": "cr:Field",
+     "@id": "estimates_harmonised/effect_alt_units",
+     "name": "effect_alt_units",
+     "dataType": "sc:Text",
+     "source": {
+      "fileObject": {
+       "@id": "estimates_harmonised.parquet"
+      },
+      "extract": {
+       "column": "effect_alt_units"
+      }
+     }
+    },
+    {
+     "@type": "cr:Field",
+     "@id": "estimates_harmonised/effect_alt_role",
+     "name": "effect_alt_role",
+     "dataType": "sc:Text",
+     "source": {
+      "fileObject": {
+       "@id": "estimates_harmonised.parquet"
+      },
+      "extract": {
+       "column": "effect_alt_role"
+      }
+     }
+    },
+    {
+     "@type": "cr:Field",
+     "@id": "estimates_harmonised/in_paper_sample",
+     "name": "in_paper_sample",
+     "dataType": "sc:Boolean",
+     "source": {
+      "fileObject": {
+       "@id": "estimates_harmonised.parquet"
+      },
+      "extract": {
+       "column": "in_paper_sample"
+      }
+     }
+    },
+    {
+     "@type": "cr:Field",
+     "@id": "estimates_harmonised/in_paper_sample_alt",
+     "name": "in_paper_sample_alt",
+     "dataType": "sc:Boolean",
+     "source": {
+      "fileObject": {
+       "@id": "estimates_harmonised.parquet"
+      },
+      "extract": {
+       "column": "in_paper_sample_alt"
+      }
+     }
+    },
+    {
+     "@type": "cr:Field",
+     "@id": "estimates_harmonised/paper_sample_exclusion",
+     "name": "paper_sample_exclusion",
+     "dataType": "sc:Text",
+     "source": {
+      "fileObject": {
+       "@id": "estimates_harmonised.parquet"
+      },
+      "extract": {
+       "column": "paper_sample_exclusion"
+      }
+     }
+    },
+    {
+     "@type": "cr:Field",
      "@id": "estimates_harmonised/n_obs",
      "name": "n_obs",
      "dataType": "sc:Float",
@@ -50062,34 +50162,6 @@
       },
       "extract": {
        "column": "df"
-      }
-     }
-    },
-    {
-     "@type": "cr:Field",
-     "@id": "estimates_harmonised/pcc",
-     "name": "pcc",
-     "dataType": "sc:Float",
-     "source": {
-      "fileObject": {
-       "@id": "estimates_harmonised.parquet"
-      },
-      "extract": {
-       "column": "pcc"
-      }
-     }
-    },
-    {
-     "@type": "cr:Field",
-     "@id": "estimates_harmonised/se_pcc",
-     "name": "se_pcc",
-     "dataType": "sc:Float",
-     "source": {
-      "fileObject": {
-       "@id": "estimates_harmonised.parquet"
-      },
-      "extract": {
-       "column": "se_pcc"
       }
      }
     },

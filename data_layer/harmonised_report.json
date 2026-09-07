@@ -1,5 +1,5 @@
 {
- "n_rows": 50441,
+ "n_rows": 53341,
  "n_datasets": 42,
  "columns": [
   "dataset",
@@ -10,10 +10,15 @@
   "se",
   "t_stat",
   "precision",
+  "effect_alt",
+  "se_alt",
+  "effect_alt_units",
+  "effect_alt_role",
+  "in_paper_sample",
+  "in_paper_sample_alt",
+  "paper_sample_exclusion",
   "n_obs",
   "df",
-  "pcc",
-  "se_pcc",
   "pub_year",
   "citations",
   "impact_factor",
@@ -47,15 +52,15 @@
  "projects": {
   "activism": {
    "included": true,
-   "n": 1254,
-   "effect": "rescaled(Estimatex100.0xMultiplicator to obtain estimates in points (number))",
-   "se": "derived:|rescaled(Estimatex100.0xMultiplicator to obtain estimates in points (number))/t-stats|",
-   "se_is_derived": true,
+   "n": 1851,
+   "effect": "Unnamed: 25",
+   "se": "Unnamed: 26",
+   "se_is_derived": false,
    "n_obs_col": null,
    "n_obs_from_log": false,
    "units": "percent",
    "direction_note": "Reconstructed on a comparable scale; the raw Estimate column mixes percent and decimal across studies.",
-   "n_studies": 38,
+   "n_studies": 55,
    "moderators": 14
   },
   "alphas": {
@@ -99,7 +104,7 @@
   },
   "bma": {
    "included": true,
-   "n": 1205,
+   "n": 1373,
    "effect": "e",
    "se": "se",
    "se_is_derived": false,
@@ -138,14 +143,14 @@
   },
   "class": {
    "included": true,
-   "n": 2819,
-   "effect": "pcc",
-   "se": "se_pcc",
+   "n": 2906,
+   "effect": "effect",
+   "se": "se_effect",
    "se_is_derived": false,
    "n_obs_col": null,
    "n_obs_from_log": false,
-   "units": "partial correlation coefficient",
-   "direction_note": null,
+   "units": "change in test scores in hundredths of a standard deviation per one additional student",
+   "direction_note": "Negative means a larger class goes with lower test scores, which is the effect the literature looks for. An estimate of -1 means a reduction of ten students is associated with a rise of 0.1 standard deviations. This is the metric the paper's main models use; the partial correlation of its appendix robustness block is carried in effect_alt.",
    "n_studies": 66,
    "moderators": 12
   },
@@ -229,7 +234,7 @@
   },
   "electricity": {
    "included": true,
-   "n": 3324,
+   "n": 3744,
    "effect": "effect_M",
    "se": "se",
    "se_is_derived": false,
@@ -237,7 +242,7 @@
    "n_obs_from_log": false,
    "units": "elasticity",
    "direction_note": "Marshallian-equivalent price elasticity (the paper's Slutsky-converted effect_M), negative by convention. Pools short-, intermediate- and long-run estimates, which the paper analyses separately; condition on the run-length flags in the per-dataset file rather than pooling blind.",
-   "n_studies": 366,
+   "n_studies": 396,
    "moderators": 16
   },
   "esg": {
@@ -369,7 +374,7 @@
   },
   "house_prices": {
    "included": true,
-   "n": 1555,
+   "n": 1674,
    "effect": "est",
    "se": "mean:SE_l+SE_u",
    "se_is_derived": true,
@@ -377,12 +382,12 @@
    "n_obs_from_log": false,
    "units": "semi-elasticity (proportional)",
    "direction_note": "Stored as a PROPORTION: house.do multiplies by 100 for the percentages the paper reports. Negative is the expected direction, higher policy rates lowering house prices. One row per impulse-response horizon, so rows within an IRF are not independent.",
-   "n_studies": 37,
+   "n_studies": 45,
    "moderators": 18
   },
   "incentives": {
    "included": true,
-   "n": 1252,
+   "n": 2193,
    "effect": "pcc",
    "se": "se_pcc",
    "se_is_derived": false,
@@ -390,7 +395,7 @@
    "n_obs_from_log": false,
    "units": "partial correlation coefficient",
    "direction_note": "Baseline measure. Cohen's d, the paper's robustness variant, is in the per-dataset file.",
-   "n_studies": 54,
+   "n_studies": 88,
    "moderators": 13
   },
   "inflation": {
@@ -529,15 +534,15 @@
   },
   "size": {
    "included": true,
-   "n": 1631,
+   "n": 1746,
    "effect": "size",
-   "se": "se_calc",
+   "se": "se",
    "se_is_derived": false,
    "n_obs_col": null,
    "n_obs_from_log": false,
    "units": "percent",
    "direction_note": "Raw size-return slopes: NEGATIVE means a larger conventional size premium, i.e. small firms outperforming. The abstract states that researchers prefer estimates showing 'a negative relation between size and returns'. 76% of stored effects are negative. Do not read positive as the premium.",
-   "n_studies": 98,
+   "n_studies": 102,
    "moderators": 17
   },
   "skill": {
@@ -555,7 +560,7 @@
   },
   "spillovers": {
    "included": true,
-   "n": 2421,
+   "n": 2772,
    "effect": "e",
    "se": "se",
    "se_is_derived": false,
@@ -568,7 +573,7 @@
   },
   "students": {
    "included": true,
-   "n": 861,
+   "n": 872,
    "effect": "pcc",
    "se": "se_pcc",
    "se_is_derived": false,
@@ -576,7 +581,7 @@
    "n_obs_from_log": true,
    "units": "partial correlation coefficient",
    "direction_note": null,
-   "n_studies": 69,
+   "n_studies": 73,
    "moderators": 17
   },
   "substitution": {
@@ -587,7 +592,7 @@
   },
   "trust": {
    "included": true,
-   "n": 284,
+   "n": 375,
    "effect": "size",
    "se": "se",
    "se_is_derived": false,
@@ -595,7 +600,7 @@
    "n_obs_from_log": false,
    "units": "percent",
    "direction_note": "Raw size-return slopes: more negative means a larger conventional size premium.",
-   "n_studies": 39,
+   "n_studies": 63,
    "moderators": 5
   },
   "water": {

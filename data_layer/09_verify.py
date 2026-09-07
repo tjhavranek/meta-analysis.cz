@@ -130,7 +130,18 @@ for d in idx["datasets"]:
 
 # 4. harmonised table integrity
 if H["se"].le(0).any(): fail.append("harmonised: non-positive standard errors present")
-if H[["effect","se"]].isna().any().any(): fail.append("harmonised: null effect or se present")
+# Since 2.0.0 a row may carry its estimate on the alternative scale alone, so a null `effect`
+# is legitimate; what is never legitimate is a row carrying no usable estimate at all, or half
+# a pair. Both halves of a pair must be present or absent together on each scale.
+_h_half = H["effect"].notna() ^ H["se"].notna()
+_a_half = H["effect_alt"].notna() ^ H["se_alt"].notna()
+_neither = H["effect"].isna() & H["effect_alt"].isna()
+if _h_half.any():
+    fail.append(f"harmonised: {int(_h_half.sum())} row(s) carry half a headline (effect, se) pair")
+if _a_half.any():
+    fail.append(f"harmonised: {int(_a_half.sum())} row(s) carry half an alternative (effect, se) pair")
+if _neither.any():
+    fail.append(f"harmonised: {int(_neither.sum())} row(s) carry no estimate on any scale")
 bad=(H["t_stat"]-H["effect"]/H["se"]).abs().gt(1e-6).sum()
 if bad: fail.append(f"harmonised: t_stat != effect/se on {bad} rows")
 dups=H.duplicated(subset=["dataset","estimate_id"]).sum()
