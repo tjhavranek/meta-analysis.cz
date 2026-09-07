@@ -27677,8 +27677,7 @@ Citation: Zuzana Irsova, Pedro Bom, Tomas Havranek, and Heiko Rachinger (2025): 
 Published version: https://doi.org/10.1038/s41467-025-63261-0
 Paper: https://meta-analysis.cz/maive/maive.pdf
 Extension: https://meta-analysis.cz/waive_ottawa.pdf
-Blog: https://communities.springernature.com/posts/spurious-precision-in-meta-analysis
-Talk: https://youtu.be/VZNDiICI08A
+Extension II: https://meta-analysis.cz/waive_chania.pdf
 Slides: https://meta-analysis.cz/maive/maive_slides.pdf
 Replication: https://meta-analysis.cz/maive/maive_replication.zip
 MAIVE in R: https://cran.r-project.org/package=MAIVE
