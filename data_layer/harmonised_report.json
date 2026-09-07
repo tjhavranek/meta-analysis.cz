@@ -79,8 +79,8 @@
   "armington": {
    "included": true,
    "n": 3524,
-   "effect": "armel",
-   "se": "se",
+   "effect": "armel_w",
+   "se": "se_w",
    "se_is_derived": false,
    "n_obs_col": null,
    "n_obs_from_log": false,

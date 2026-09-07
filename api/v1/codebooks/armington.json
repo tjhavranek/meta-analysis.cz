@@ -131,7 +131,6 @@
    "dtype": "float64",
    "n_missing": 0,
    "n_unique": 2233,
-   "role": "effect_estimate",
    "stats": {
     "min": -56.188,
     "p25": 0.559875,
@@ -148,7 +147,6 @@
    "dtype": "float64",
    "n_missing": 0,
    "n_unique": 1688,
-   "role": "standard_error",
    "stats": {
     "min": 0.0001,
     "p25": 0.131,
@@ -248,6 +246,7 @@
    "dtype": "float64",
    "n_missing": 0,
    "n_unique": 2060,
+   "role": "effect_estimate",
    "stats": {
     "min": -0.996,
     "p25": 0.559875,
@@ -264,6 +263,7 @@
    "dtype": "float64",
    "n_missing": 0,
    "n_unique": 1582,
+   "role": "standard_error",
    "stats": {
     "min": 0.009,
     "p25": 0.131,

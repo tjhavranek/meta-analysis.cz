@@ -494,8 +494,8 @@
    "description": "DERIVED AGGREGATE VIEW of the per-dataset files above, reshaped to a common schema. Rows are not additional to them.",
    "contentUrl": "https://meta-analysis.cz/data/v1/estimates_harmonised.csv",
    "encodingFormat": "text/csv",
-   "sha256": "7cbc2fee21a0c64224a2aeeebdb832f19511c7982010a1b8c4c53f838903187e",
-   "contentSize": "13014538"
+   "sha256": "4410409dbacae1a360652286f2fd8d31f6929b798feef75e8a81b9fc5b6adab7",
+   "contentSize": "13316416"
   },
   {
    "@type": "cr:FileObject",
@@ -504,8 +504,8 @@
    "description": "The same derived aggregate view, as Parquet.",
    "contentUrl": "https://meta-analysis.cz/data/v1/estimates_harmonised.parquet",
    "encodingFormat": "application/vnd.apache.parquet",
-   "sha256": "d6eecd6c8fed4d7b12b4789b000cc5ecde5bf12943fa702b094f5a74ed3e6eb8",
-   "contentSize": "1772768"
+   "sha256": "cf3fb224f71a849c1e8d117dd2bfa5c2548811dba19b4ba45d9232d66ff2f405",
+   "contentSize": "1801698"
   }
  ],
  "recordSet": [
@@ -4022,8 +4022,7 @@
       "extract": {
        "column": "armel"
       }
-     },
-     "description": "verified role: effect_estimate"
+     }
     },
     {
      "@type": "cr:Field",
@@ -4037,8 +4036,7 @@
       "extract": {
        "column": "se"
       }
-     },
-     "description": "verified role: standard_error"
+     }
     },
     {
      "@type": "cr:Field",
@@ -4122,7 +4120,8 @@
       "extract": {
        "column": "armel_w"
       }
-     }
+     },
+     "description": "verified role: effect_estimate"
     },
     {
      "@type": "cr:Field",
@@ -4136,7 +4135,8 @@
       "extract": {
        "column": "se_w"
       }
-     }
+     },
+     "description": "verified role: standard_error"
     },
     {
      "@type": "cr:Field",

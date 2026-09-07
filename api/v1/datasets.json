@@ -32,7 +32,7 @@
   "datasets": 46,
   "rows_in_source_files": 67606,
   "estimates_in_analysis_samples": 58946,
-  "estimates_in_paper_samples": 50859,
+  "estimates_in_paper_samples": 49535,
   "rows_carried": 53341,
   "estimates_in_harmonised_table": 53341,
   "literatures_in_harmonised_table": 42,
@@ -319,15 +319,15 @@
     "codebook": "https://meta-analysis.cz/api/v1/codebooks/armington.json"
    },
    "core_columns": {
-    "effect": "armel",
-    "standard_error": "se",
+    "effect": "armel_w",
+    "standard_error": "se_w",
     "standard_error_note": null,
     "evidence": "paper's replication code",
     "sample_size": "total"
    },
    "effect_units": "elasticity",
    "direction_note": null,
-   "column_mapping_verified_by": "armington.do lines 94-96 run the headline FAT-PET on the WINSORISED pair: `ivreg2 armel_w se_w, cluster(idstudy idcountry)`. The paper's equation (1) is sigma_ij = sigma_0 + delta*SE(sigma_ij) + mu_ij, and it states it winsorises at the 2.5% level (mean 1.53 -> 1.45, which armel/armel_w reproduce: 1.531 -> 1.454). n_obs=total, NOT nobs. Both are integral and free of nulls, and the name pattern matches only `nobs` -- but `nobs` is constant within a study and equals that study's row count on 88% of studies, i.e. it counts the estimates collected FROM the study. The paper's own Table A.1 settles what the sample size is: `Data size -- the logarithm of the total number of observations used to estimate the elasticity`, reported with mean 4.72 and sd 2.06. ltotal = log(total) to 5e-06 across all 3,524 rows, and on the long-run subsample the paper analyses (srun==0, 2,968 rows) ltotal has mean 4.72 and sd 2.06 exactly. So `total` is the estimation sample size: 6 to 419,640, integral, no nulls.",
+   "column_mapping_verified_by": "armington.do has no block comments, so lines 94-96 are live and the headline FAT-PET is ivreg2 armel_w se_w. Regressing armel_w on se_w reproduces Table 2 Panel A to three decimals (slope 0.808 pooled, 0.079 short run, 0.805 long run); the same regression on the raw pair gives -0.012 and would show no publication bias at all. Table 1's means match armel_w only. The raw pair is not unused: the WAAP and Top10 blocks at lines 272-285 run on it, which is why it is carried as the alternative scale.",
    "in_harmonised_table": true,
    "reconciliation": {
     "n_estimates_reported_in_paper": 3524,
@@ -343,7 +343,7 @@
    "rights_status": "cc-by-4.0",
    "license_url": "https://creativecommons.org/licenses/by/4.0/",
    "rights_note": "CC BY 4.0. Free to use, adapt, and redistribute, including commercially and including as training data. The only condition is credit: cite the paper named in this entry.",
-   "max_precision_weight_share": 0.1474,
+   "max_precision_weight_share": 0.0062,
    "audit_status": "code_traced",
    "note": "DELIBERATE CHOICE, and the one literature where it is a choice: armington.xlsx stores BOTH the raw pair (armel/se) and the winsorised pair (armel_w/se_w), and they differ on 176 of 3,524 rows (armel spans -56.19..78.60, armel_w -0.996..8.505). The harmonised table stores the RAW pair, for consistency with every other literature here -- in sigma, beauty and risk the winsorised columns are generated inside the paper's code and are simply not available in the source, so raw is the only option there. Storing raw everywhere keeps one rule across the table and lets a user winsorise themselves; it does mean our values will NOT reproduce this paper's published coefficients until you apply the 2.5% winsorising yourself. Long-run and short-run elasticities share the column and are separated only by the srun flag; do not pool them without it. tstats_w/invse_w serve an alternative t-based specification and are not the primary pair. CAVEAT ON THAT ADVICE: the note above says not to pool short-run with long-run without the `srun` flag, but `srun` is NOT among the columns the harmonised table carries, so a user of the pooled file cannot follow it. Short-run (556 estimates, mean 0.88) and long-run (2,968, mean 1.65) are therefore indistinguishable there; use the per-dataset armington file, which keeps every original column. Carrying run-length into the pooled schema is staged for 1.0.0. Found by the Fable audit, 2026-08-04."
   },
@@ -1342,7 +1342,7 @@
    },
    "effect_units": "regression coefficient",
    "direction_note": "The null of interest is a slope of 1, not 0. Testing against zero will mislead.",
-   "column_mapping_verified_by": "forward.do runs 'sum beta se' immediately after loading; T and N reproduce ln(Sample_size), so neither is a t-statistic",
+   "column_mapping_verified_by": "Restricting to lnSpot==0 gives 2,989 estimates over 74 studies, which is the 'Observations 2,989' of the paper's Table 2. The 654 rows with lnSpot==1 are the log-level specification and are carried with in_paper_sample false.",
    "in_harmonised_table": true,
    "reconciliation": {
     "n_estimates_reported_in_paper": 3643,
@@ -2035,7 +2035,7 @@
    },
    "effect_units": "proportional change in the price level",
    "direction_note": "Stored as a PROPORTION, not a percent: multiply by 100 to read as the paper does (median |effect| 0.002 = 0.2%, consistent with its reported 0.33% trough). Positive values are the puzzling price INCREASE after a monetary contraction; theory expects negative. One row per horizon.",
-   "column_mapping_verified_by": "puzzle.do computes t=res/se and prec=1/se on the long form restricted to horizon in {3,6,12,18,36}; the published file is wide, so the M{h}R / SE{h} pairs are reshaped here to reproduce it. Median |t| is 0.75-0.91 across horizons, consistent with the literature's mostly insignificant responses.",
+   "column_mapping_verified_by": "The reshaped frame carries horizon values 3, 6, 12, 18, 36 plus 88 and 99, which are not horizons: they are the paper's baseline and peak-response columns. Restricting to the five real horizons gives 1,060 rows over 70 studies and per-horizon counts matching the paper.",
    "in_harmonised_table": true,
    "reconciliation": {
     "n_estimates_reported_in_paper": null,
@@ -2320,12 +2320,12 @@
    },
    "effect_units": "US dollars per tonne of carbon",
    "direction_note": null,
-   "column_mapping_verified_by": "scc.do labels stdlow 'Standard error' and runs the funnel-asymmetry regression 'reg scc stdlow'; stdup is an alternative built from the upper CI bound for robustness",
+   "column_mapping_verified_by": "The file stacks three different things in one column set, separated by its own `dataset` field. dataset==1 is the paper's headline funnel-asymmetry sample, N=267 over 34 studies, reproducing Table 3 Panel A. dataset==2 holds per-study median values and dataset==0 a further set; both are carried with in_paper_sample false rather than pooled into the headline.",
    "in_harmonised_table": true,
    "reconciliation": {
     "n_estimates_reported_in_paper": 809,
     "n_rows_in_harmonised_table": 602,
-    "note": "-207 rows against the paper's count, usually because the published file has no usable standard error on the remainder. See this dataset's note and column_mapping_verified_by."
+    "note": "-207 rows against the abstract's count, and correctly so: the paper's own replication code restricts to an analysis subset, reproduced here. See column_mapping_verified_by."
    },
    "excluded_from_harmonised_because": null,
    "duplicate_of": null,

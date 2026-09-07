@@ -1074,13 +1074,11 @@
      },
      {
       "name": "armel",
-      "type": "number",
-      "description": "effect_estimate"
+      "type": "number"
      },
      {
       "name": "se",
-      "type": "number",
-      "description": "standard_error"
+      "type": "number"
      },
      {
       "name": "invse",
@@ -1104,11 +1102,13 @@
      },
      {
       "name": "armel_w",
-      "type": "number"
+      "type": "number",
+      "description": "effect_estimate"
      },
      {
       "name": "se_w",
-      "type": "number"
+      "type": "number",
+      "description": "standard_error"
      },
      {
       "name": "se_lrun",

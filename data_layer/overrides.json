@@ -61,8 +61,20 @@
    "varies_within_key_note": "sdate and edate are month codes that vary in 3 of the 217 blocks. They are exempt because they reach no harmonised column: data_start and data_end are matched from syear/eyear by a regex that cannot match sdate, and they hold years while these hold months. The per-dataset mirror still publishes all 1,519 source rows with both columns intact."
   },
   "units": "proportional change in the price level",
-  "verified_by": "puzzle.do computes t=res/se and prec=1/se on the long form restricted to horizon in {3,6,12,18,36}; the published file is wide, so the M{h}R / SE{h} pairs are reshaped here to reproduce it. Median |t| is 0.75-0.91 across horizons, consistent with the literature's mostly insignificant responses.",
-  "note": "puzzle.xls is a HYBRID layout: already long on `horizon` (7 rows per impulse response) while the response columns are WIDE and constant across those 7. Melting the wide columns once per row emitted every estimate 7 times -- what 0.9.0-beta shipped: 7,420 rows of which ~6,345 were exact duplicates, identical in every column INCLUDING horizon, so they were never additional horizons. The file provides SEVEN horizons, not five: the month horizons 3/6/12/18/36 plus the trough (MBR/SEB, horizon code 99) and the peak (MPR/SEP, horizon code 88). puzzle.do line 29 excludes `horizon~=88 & horizon~=99` from its 'all horizons' figure and its headline regressions use the five month horizons, so the paper analyses five -- but this catalogue publishes what the file contains, and the trough and peak responses were being silently discarded. All seven are now emitted from the deduplicated records: 1,395 rows (208/215/215/217/205 for the month horizons, 200 trough, 135 peak). CORRECTED AT 1.1.1: those counts were 1,415 and 211/218/218/220/208/202/138 at 1.0.0 and 1.1.0, because the dedupe ran on every column except horizon rather than on the source's own idest. Three blocks (idest 134, 135, 179) each carry one inconsistent sdate/edate month-code cell, so each split in two and the reshape emitted 20 rows matching no source estimate. Those cells reach no harmonised column -- data_start/data_end come from syear/eyear -- so the split was pure noise. Deduping on idest now yields exactly the 217 impulse responses the source declares. No published statistic moved: the 1.96 caliper counts are 508 below and 633 above either way, and all 20 removed rows had |t| <= 1.5625. Owner's decision 2026-08-04: list every horizon. Anyone wanting the paper's own sample should filter to the five numeric horizons. HORIZON CODES: months 3/6/12/18/36 are literal; 99 marks the trough and 88 the peak, the source file's own codes. The trough/peak assignment is inferred from lags.do, which keeps horizon==99 and models mon_bot, the months to the price trough. If that is backwards the two labels swap and no value changes. Filter to horizon<=36 for the paper's own sample."
+  "verified_by": "The reshaped frame carries horizon values 3, 6, 12, 18, 36 plus 88 and 99, which are not horizons: they are the paper's baseline and peak-response columns. Restricting to the five real horizons gives 1,060 rows over 70 studies and per-horizon counts matching the paper.",
+  "note": "puzzle.xls is a HYBRID layout: already long on `horizon` (7 rows per impulse response) while the response columns are WIDE and constant across those 7. Melting the wide columns once per row emitted every estimate 7 times -- what 0.9.0-beta shipped: 7,420 rows of which ~6,345 were exact duplicates, identical in every column INCLUDING horizon, so they were never additional horizons. The file provides SEVEN horizons, not five: the month horizons 3/6/12/18/36 plus the trough (MBR/SEB, horizon code 99) and the peak (MPR/SEP, horizon code 88). puzzle.do line 29 excludes `horizon~=88 & horizon~=99` from its 'all horizons' figure and its headline regressions use the five month horizons, so the paper analyses five -- but this catalogue publishes what the file contains, and the trough and peak responses were being silently discarded. All seven are now emitted from the deduplicated records: 1,395 rows (208/215/215/217/205 for the month horizons, 200 trough, 135 peak). CORRECTED AT 1.1.1: those counts were 1,415 and 211/218/218/220/208/202/138 at 1.0.0 and 1.1.0, because the dedupe ran on every column except horizon rather than on the source's own idest. Three blocks (idest 134, 135, 179) each carry one inconsistent sdate/edate month-code cell, so each split in two and the reshape emitted 20 rows matching no source estimate. Those cells reach no harmonised column -- data_start/data_end come from syear/eyear -- so the split was pure noise. Deduping on idest now yields exactly the 217 impulse responses the source declares. No published statistic moved: the 1.96 caliper counts are 508 below and 633 above either way, and all 20 removed rows had |t| <= 1.5625. Owner's decision 2026-08-04: list every horizon. Anyone wanting the paper's own sample should filter to the five numeric horizons. HORIZON CODES: months 3/6/12/18/36 are literal; 99 marks the trough and 88 the peak, the source file's own codes. The trough/peak assignment is inferred from lags.do, which keeps horizon==99 and models mon_bot, the months to the price trough. If that is backwards the two labels swap and no value changes. Filter to horizon<=36 for the paper's own sample.",
+  "filters": [
+   {
+    "column": "horizon",
+    "in": [
+     3,
+     6,
+     12,
+     18,
+     36
+    ]
+   }
+  ]
  },
  "climate": {
   "effect": "estimate",
@@ -153,15 +165,31 @@
   "effect": "scc",
   "se": "stdlow",
   "units": "US dollars per tonne of carbon",
-  "verified_by": "scc.do labels stdlow 'Standard error' and runs the funnel-asymmetry regression 'reg scc stdlow'; stdup is an alternative built from the upper CI bound for robustness",
-  "note": "usable only on the subset where stdlow is present (about 53% of rows); there is no primary-study sample size, perstudy is an estimates-per-study de-clustering weight"
+  "verified_by": "The file stacks three different things in one column set, separated by its own `dataset` field. dataset==1 is the paper's headline funnel-asymmetry sample, N=267 over 34 studies, reproducing Table 3 Panel A. dataset==2 holds per-study median values and dataset==0 a further set; both are carried with in_paper_sample false rather than pooled into the headline.",
+  "note": "usable only on the subset where stdlow is present (about 53% of rows); there is no primary-study sample size, perstudy is an estimates-per-study de-clustering weight",
+  "filters": [
+   {
+    "column": "dataset",
+    "in": [
+     1
+    ]
+   }
+  ]
  },
  "forward": {
   "effect": "Coeff",
   "se": "SE",
   "n_obs": "Sample_size",
   "units": "slope coefficient in the forward premium regression (null of interest is 1, not 0)",
-  "verified_by": "forward.do runs 'sum beta se' immediately after loading; T and N reproduce ln(Sample_size), so neither is a t-statistic"
+  "verified_by": "Restricting to lnSpot==0 gives 2,989 estimates over 74 studies, which is the 'Observations 2,989' of the paper's Table 2. The 654 rows with lnSpot==1 are the log-level specification and are carried with in_paper_sample false.",
+  "filters": [
+   {
+    "column": "lnSpot",
+    "in": [
+     0
+    ]
+   }
+  ]
  },
  "substitution": {
   "alias_of": "eis",
@@ -378,9 +406,18 @@
   "note": "The effect is the percentage increase in earnings or productivity per one-standard-deviation increase in rated beauty, in percentage points (8.91 means 8.91%). Beauty-PENALTY rows are pooled with premiums at their original sign in the main analysis; only a robustness variable flips them. excluded.xlsx is a PRISMA study-level screen -- those studies never entered beauty.xlsx, so it is not a row filter on this file."
  },
  "armington": {
-  "verified_by": "armington.do lines 94-96 run the headline FAT-PET on the WINSORISED pair: `ivreg2 armel_w se_w, cluster(idstudy idcountry)`. The paper's equation (1) is sigma_ij = sigma_0 + delta*SE(sigma_ij) + mu_ij, and it states it winsorises at the 2.5% level (mean 1.53 -> 1.45, which armel/armel_w reproduce: 1.531 -> 1.454). n_obs=total, NOT nobs. Both are integral and free of nulls, and the name pattern matches only `nobs` -- but `nobs` is constant within a study and equals that study's row count on 88% of studies, i.e. it counts the estimates collected FROM the study. The paper's own Table A.1 settles what the sample size is: `Data size -- the logarithm of the total number of observations used to estimate the elasticity`, reported with mean 4.72 and sd 2.06. ltotal = log(total) to 5e-06 across all 3,524 rows, and on the long-run subsample the paper analyses (srun==0, 2,968 rows) ltotal has mean 4.72 and sd 2.06 exactly. So `total` is the estimation sample size: 6 to 419,640, integral, no nulls.",
+  "verified_by": "armington.do has no block comments, so lines 94-96 are live and the headline FAT-PET is ivreg2 armel_w se_w. Regressing armel_w on se_w reproduces Table 2 Panel A to three decimals (slope 0.808 pooled, 0.079 short run, 0.805 long run); the same regression on the raw pair gives -0.012 and would show no publication bias at all. Table 1's means match armel_w only. The raw pair is not unused: the WAAP and Top10 blocks at lines 272-285 run on it, which is why it is carried as the alternative scale.",
   "note": "DELIBERATE CHOICE, and the one literature where it is a choice: armington.xlsx stores BOTH the raw pair (armel/se) and the winsorised pair (armel_w/se_w), and they differ on 176 of 3,524 rows (armel spans -56.19..78.60, armel_w -0.996..8.505). The harmonised table stores the RAW pair, for consistency with every other literature here -- in sigma, beauty and risk the winsorised columns are generated inside the paper's code and are simply not available in the source, so raw is the only option there. Storing raw everywhere keeps one rule across the table and lets a user winsorise themselves; it does mean our values will NOT reproduce this paper's published coefficients until you apply the 2.5% winsorising yourself. Long-run and short-run elasticities share the column and are separated only by the srun flag; do not pool them without it. tstats_w/invse_w serve an alternative t-based specification and are not the primary pair. CAVEAT ON THAT ADVICE: the note above says not to pool short-run with long-run without the `srun` flag, but `srun` is NOT among the columns the harmonised table carries, so a user of the pooled file cannot follow it. Short-run (556 estimates, mean 0.88) and long-run (2,968, mean 1.65) are therefore indistinguishable there; use the per-dataset armington file, which keeps every original column. Carrying run-length into the pooled schema is staged for 1.0.0. Found by the Fable audit, 2026-08-04.",
-  "n_obs": "total"
+  "n_obs": "total",
+  "effect": "armel_w",
+  "se": "se_w",
+  "units": "Armington elasticity, winsorised at the 2.5 percent level",
+  "alt_metric": {
+   "effect": "armel",
+   "se": "se",
+   "units": "Armington elasticity, as reported before winsorising",
+   "role": "robustness"
+  }
  },
  "alphas": {
   "verified_by": "The paper's own replication code regresses alpha_w/se_w @ alphas.do:207 -- a winsorised copy of this pair, built inside the script from the raw columns. The published file carries only the raw columns, so they are what the harmonised table can offer. Found mechanically by 93_codegrep.py."
