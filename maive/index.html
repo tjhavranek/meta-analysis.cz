@@ -163,6 +163,7 @@
 			<li><a href="/maive/supplement/">Supplement</a></li>
 			<li><a href="/waive_ottawa.pdf">Extension</a></li>
 			<li><a href="/waive_chania.pdf">Extension II</a></li>
+			<li><a href="/rdt_chemnitz.pdf">Extension III</a></li>
 			<li><a href="maive_replication.zip">Replication</a></li>
 			<li><a href="https://www.easymeta.org/">EasyMeta</a></li>
 			<li><a href="https://cran.r-project.org/package=MAIVE">MAIVE in R</a></li>
@@ -228,39 +229,25 @@ Meta-analysis upweights studies reporting lower standard errors and hence more p
 		<div class="post" id="extensions">
 			<h2 class="title">Extensions</h2>
 			<div class="entry">
-<p>MAIVE is the published estimator, and it is what this page is about: Irsova, Bom, Havranek and
-Rachinger, <i>Nature Communications</i> 16, 8454 (2025). It is on CRAN as the
-<a href="https://cran.r-project.org/package=MAIVE">MAIVE</a> package and it runs in a browser at
-<a href="https://www.easymeta.org/">EasyMeta.org</a>. Two further methods build on it. Neither has a
-paper yet, so the conference slides linked below are the only citable source for them, and they
-should not be cited as though they were published results.</p>
+<p>MAIVE is the published estimator and what this page is about: Irsova, Bom, Havranek and
+Rachinger, <i>Nature Communications</i> 16, 8454 (2025), on CRAN as the
+<a href="https://cran.r-project.org/package=MAIVE">MAIVE</a> package and in a browser at
+<a href="https://www.easymeta.org/">EasyMeta.org</a>. Two methods build on it, and neither has a
+paper yet, so the talks below are the only source and should be cited as talks.</p>
 
-<p><b>WAIVE</b>, the Weighted Adjustment Instrumental Variable Estimator, combines two adjustments.
-It keeps MAIVE's instrument, replacing the reported standard error with the part predicted from
-sample size, and then adds a layer that downweights estimates whose precision looks too good near a
-significance cutoff. The weight is an exponential tilt that bites only on excess precision, and only
-where the t-statistic is close to 1.96. In the authors' summary, MAIVE instruments the standard
-error and WAIVE adds a downweighting layer for studies with excess precision near significance
-cutoffs. On the worked example in <a href="/maive/how-to/">how to run it</a>, MAIVE gives 0.185
-(SE 0.036) and WAIVE 0.143 (SE 0.089). WAIVE is available in EasyMeta as an experimental option.</p>
+<p><b>WAIVE</b>, the Weighted Adjustment Instrumental Variable Estimator, is the more aggressive
+correction. MAIVE instruments the standard error with sample size; WAIVE then downweights the
+excess precision that is left, and weights hardest where the t-statistic sits near 1.96.</p>
 
-<p><b>The residual discontinuity test</b> is a diagnostic rather than an estimator, and it is what
-supplies the excess precision the weight acts on. Regress the log standard error on log sample size
-and keep the residual: where it is negative, the standard error is smaller than the sample size
-predicts. The test then asks whether the average of that residual jumps at the significance
-threshold, with log absolute t as the running variable and log 1.96 as the cutoff, fitted locally on
-each side with a triangular kernel and a bandwidth chosen by the Calonico, Cattaneo and Titiunik
-rule, and bootstrapped in clusters by study. In the Chania talk the jump is -0.259, which the talk calls a
-concentration of excess precision just above the threshold and reads as just significant estimates
-being about 26 percent more precise than predicted. It comes with a falsification battery: a donut hole around the cutoff, placebo
-cutoffs at 1.5 and 2.5, density tests, bandwidth sensitivity, and a placebo outcome. This one has no
-paper either.</p>
+<p><b>The residual discontinuity test</b> is a test for p-hacking built on the same first stage.
+Excess precision, the part of a standard error that sample size does not explain, should not jump
+at the significance threshold. RDT asks whether it does.</p>
 
-<p>Both are covered in two talks: <a href="/waive_ottawa.pdf">MAER-Net, University of Ottawa, October
-2025</a>, 26 slides, and <a href="/waive_chania.pdf">SRSM 2026, Chania</a>, 12 slides followed by a
-technical appendix of nine. Chania is the shorter talk but the one that sets out the residual
-discontinuity test, and its appendix is the only public statement of how that test is estimated and
-what it has been checked against.</p>
+<p>Both are experimental options in EasyMeta, beside MAIVE. The talks are
+<a href="/waive_ottawa.pdf">MAER-Net, Ottawa, 2025</a>, 26 slides;
+<a href="/waive_chania.pdf">SRSM, Chania, 2026</a>, 12 slides and a technical appendix; and
+<a href="/rdt_chemnitz.pdf">MAER-Net, Chemnitz, 2026</a>, 14 slides and a technical appendix, which
+is the one on the test.</p>
 			</div>
 		</div>
 	</div>
@@ -306,6 +293,7 @@ what it has been checked against.</p>
 <li><a href="maive_slides.pdf">MAIVE slides</a></li>
 <li><a href="/waive_ottawa.pdf">WAIVE, MAER-Net Ottawa 2025</a></li>
 <li><a href="/waive_chania.pdf">WAIVE, SRSM Chania 2026</a></li>
+<li><a href="/rdt_chemnitz.pdf">RDT, MAER-Net Chemnitz 2026</a></li>
 
 				</ul>
 			</li>
