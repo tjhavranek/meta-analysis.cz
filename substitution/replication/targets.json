@@ -1,0 +1,67 @@
+[
+  {"label": "T7_marketpartic_coef", "printed": 2.342, "digits": 3, "kind": "deterministic"},
+  {"label": "T7_marketpartic_se", "printed": 0.848, "digits": 3, "kind": "deterministic"},
+  {"label": "T7_marketpartic_p", "printed": 0.011, "digits": 3, "kind": "deterministic"},
+
+  {"label": "T7_gdppc_coef", "printed": 0.198, "digits": 3, "kind": "deterministic"},
+  {"label": "T7_gdppc_se", "printed": 0.114, "digits": 3, "kind": "deterministic"},
+  {"label": "T7_gdppc_p", "printed": 0.095, "digits": 3, "kind": "deterministic"},
+
+  {"label": "T7_finref_coef", "printed": -0.777, "digits": 3, "kind": "deterministic"},
+  {"label": "T7_finref_se", "printed": 0.394, "digits": 3, "kind": "deterministic"},
+  {"label": "T7_finref_p", "printed": 0.060, "digits": 3, "kind": "deterministic"},
+
+  {"label": "T7_realrate_coef", "printed": 0.023, "digits": 3, "kind": "deterministic"},
+  {"label": "T7_realrate_se", "printed": 0.032, "digits": 3, "kind": "deterministic"},
+  {"label": "T7_realrate_p", "printed": 0.493, "digits": 3, "kind": "deterministic"},
+
+  {"label": "T7_trust_coef", "printed": -0.005, "digits": 3, "kind": "deterministic"},
+  {"label": "T7_trust_se", "printed": 0.004, "digits": 3, "kind": "deterministic"},
+  {"label": "T7_trust_p", "printed": 0.257, "digits": 3, "kind": "deterministic"},
+
+  {"label": "T7_inverse_coef", "printed": 0.627, "digits": 3, "kind": "deterministic"},
+  {"label": "T7_inverse_se", "printed": 0.103, "digits": 3, "kind": "deterministic"},
+  {"label": "T7_inverse_p", "printed": 0.000, "digits": 3, "kind": "deterministic"},
+
+  {"label": "T7_top_coef", "printed": 0.602, "digits": 3, "kind": "deterministic"},
+  {"label": "T7_top_se", "printed": 0.114, "digits": 3, "kind": "deterministic"},
+  {"label": "T7_top_p", "printed": 0.000, "digits": 3, "kind": "deterministic"},
+
+  {"label": "T7_totalc_coef", "printed": 0.416, "digits": 3, "kind": "deterministic"},
+  {"label": "T7_totalc_se", "printed": 0.147, "digits": 3, "kind": "deterministic"},
+  {"label": "T7_totalc_p", "printed": 0.009, "digits": 3, "kind": "deterministic"},
+
+  {"label": "T7_lnyears_coef", "printed": -0.228, "digits": 3, "kind": "deterministic"},
+  {"label": "T7_lnyears_se", "printed": 0.058, "digits": 3, "kind": "deterministic"},
+  {"label": "T7_lnyears_p", "printed": 0.001, "digits": 3, "kind": "deterministic"},
+
+  {"label": "T7_ols_coef", "printed": 0.443, "digits": 3, "kind": "deterministic"},
+  {"label": "T7_ols_se", "printed": 0.189, "digits": 3, "kind": "deterministic"},
+  {"label": "T7_ols_p", "printed": 0.028, "digits": 3, "kind": "deterministic"},
+
+  {"label": "T7_irstock_coef", "printed": -0.299, "digits": 3, "kind": "deterministic"},
+  {"label": "T7_irstock_se", "printed": 0.136, "digits": 3, "kind": "deterministic"},
+  {"label": "T7_irstock_p", "printed": 0.037, "digits": 3, "kind": "deterministic"},
+
+  {"label": "T7_stockhold_coef", "printed": 0.406, "digits": 3, "kind": "deterministic"},
+  {"label": "T7_stockhold_se", "printed": 0.130, "digits": 3, "kind": "deterministic"},
+  {"label": "T7_stockhold_p", "printed": 0.005, "digits": 3, "kind": "deterministic"},
+
+  {"label": "T7_lnyearcits_coef", "printed": -0.093, "digits": 3, "kind": "deterministic"},
+  {"label": "T7_lnyearcits_se", "printed": 0.057, "digits": 3, "kind": "deterministic"},
+  {"label": "T7_lnyearcits_p", "printed": 0.119, "digits": 3, "kind": "deterministic"},
+
+  {"label": "T7_ircap_coef", "printed": -0.265, "digits": 3, "kind": "deterministic"},
+  {"label": "T7_ircap_se", "printed": 0.061, "digits": 3, "kind": "deterministic"},
+  {"label": "T7_ircap_p", "printed": 0.000, "digits": 3, "kind": "deterministic"},
+
+  {"label": "T7_sepdur_coef", "printed": 0.465, "digits": 3, "kind": "deterministic"},
+  {"label": "T7_sepdur_se", "printed": 0.273, "digits": 3, "kind": "deterministic"},
+  {"label": "T7_sepdur_p", "printed": 0.101, "digits": 3, "kind": "deterministic"},
+
+  {"label": "T7_constant_coef", "printed": -0.797, "digits": 3, "kind": "deterministic"},
+  {"label": "T7_constant_se", "printed": 1.093, "digits": 3, "kind": "deterministic"},
+  {"label": "T7_constant_p", "printed": 0.473, "digits": 3, "kind": "deterministic"},
+
+  {"label": "T7_N", "printed": 2254, "digits": 0, "kind": "count"}
+]

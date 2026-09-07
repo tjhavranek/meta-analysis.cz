@@ -1,0 +1,58 @@
+[
+  {"label": "B1_N",                    "printed": 347,    "digits": 0, "kind": "count"},
+  {"label": "B1_s1_pubbias",           "printed": 0.677,  "digits": 3, "kind": "deterministic"},
+  {"label": "B1_s1_pubbias_se",        "printed": 0.61,   "digits": 2, "kind": "deterministic"},
+  {"label": "B1_s1_trueeffect",        "printed": 0.014,  "digits": 3, "kind": "deterministic"},
+  {"label": "B1_s1_trueeffect_se",     "printed": 0.03,   "digits": 2, "kind": "deterministic"},
+
+  {"label": "B1_s2_pubbias",           "printed": 0.721,  "digits": 3, "kind": "deterministic"},
+  {"label": "B1_s2_pubbias_se",        "printed": 0.25,   "digits": 2, "kind": "deterministic"},
+  {"label": "B1_s2_trueeffect",        "printed": 0.003,  "digits": 3, "kind": "deterministic"},
+  {"label": "B1_s2_trueeffect_se",     "printed": 0.01,   "digits": 2, "kind": "deterministic"},
+
+  {"label": "B1_s3_pubbias",           "printed": 0.267,  "digits": 3, "kind": "deterministic"},
+  {"label": "B1_s3_pubbias_se",        "printed": 0.29,   "digits": 2, "kind": "deterministic"},
+  {"label": "B1_s3_trueeffect",        "printed": 0.040,  "digits": 3, "kind": "deterministic"},
+  {"label": "B1_s3_trueeffect_se",     "printed": 0.02,   "digits": 2, "kind": "deterministic"},
+
+  {"label": "B1_s4_pubbias",           "printed": 1.102,  "digits": 3, "kind": "deterministic"},
+  {"label": "B1_s4_pubbias_se",        "printed": 0.37,   "digits": 2, "kind": "deterministic"},
+  {"label": "B1_s4_trueeffect",        "printed": 0.027,  "digits": 3, "kind": "deterministic"},
+  {"label": "B1_s4_trueeffect_se",     "printed": 0.02,   "digits": 2, "kind": "deterministic"},
+
+  {"label": "B1_s5_pubbias",           "printed": 1.730,  "digits": 3, "kind": "deterministic"},
+  {"label": "B1_s5_pubbias_se",        "printed": 0.75,   "digits": 2, "kind": "deterministic"},
+  {"label": "B1_s5_trueeffect",        "printed": -0.050, "digits": 3, "kind": "deterministic"},
+  {"label": "B1_s5_trueeffect_se",     "printed": 0.04,   "digits": 2, "kind": "deterministic"},
+
+  {"label": "B1_s6_pubbias",           "printed": 1.956,  "digits": 3, "kind": "deterministic"},
+  {"label": "B1_s6_pubbias_se",        "printed": 0.35,   "digits": 2, "kind": "deterministic"},
+  {"label": "B1_s6_trueeffect",        "printed": -0.024, "digits": 3, "kind": "deterministic"},
+  {"label": "B1_s6_trueeffect_se",     "printed": 0.03,   "digits": 2, "kind": "deterministic"},
+
+  {"label": "D1_N",                    "printed": 48,     "digits": 0, "kind": "count"},
+  {"label": "D1_s1_pubbias",           "printed": 0.751,  "digits": 3, "kind": "deterministic"},
+  {"label": "D1_s1_pubbias_se",        "printed": 0.53,   "digits": 2, "kind": "deterministic"},
+  {"label": "D1_s1_trueeffect",        "printed": -0.124, "digits": 3, "kind": "deterministic"},
+  {"label": "D1_s1_trueeffect_se",     "printed": 0.05,   "digits": 2, "kind": "deterministic"},
+
+  {"label": "D1_s2_pubbias",           "printed": 0.454,  "digits": 3, "kind": "deterministic"},
+  {"label": "D1_s2_pubbias_se",        "printed": 0.64,   "digits": 2, "kind": "deterministic"},
+  {"label": "D1_s2_trueeffect",        "printed": -0.094, "digits": 3, "kind": "deterministic"},
+  {"label": "D1_s2_trueeffect_se",     "printed": 0.06,   "digits": 2, "kind": "deterministic"},
+
+  {"label": "D1_s3_pubbias",           "printed": 0.751,  "digits": 3, "kind": "deterministic"},
+  {"label": "D1_s3_pubbias_se",        "printed": 0.76,   "digits": 2, "kind": "deterministic"},
+  {"label": "D1_s3_trueeffect",        "printed": -0.124, "digits": 3, "kind": "deterministic"},
+  {"label": "D1_s3_trueeffect_se",     "printed": 0.08,   "digits": 2, "kind": "deterministic"},
+
+  {"label": "D1_s4_pubbias",           "printed": 1.158,  "digits": 3, "kind": "deterministic"},
+  {"label": "D1_s4_pubbias_se",        "printed": 0.83,   "digits": 2, "kind": "deterministic"},
+  {"label": "D1_s4_trueeffect",        "printed": -0.172, "digits": 3, "kind": "deterministic"},
+  {"label": "D1_s4_trueeffect_se",     "printed": 0.08,   "digits": 2, "kind": "deterministic"},
+
+  {"label": "D1_s5_pubbias",           "printed": 0.359,  "digits": 3, "kind": "deterministic"},
+  {"label": "D1_s5_pubbias_se",        "printed": 0.99,   "digits": 2, "kind": "deterministic"},
+  {"label": "D1_s5_trueeffect",        "printed": -0.017, "digits": 3, "kind": "deterministic"},
+  {"label": "D1_s5_trueeffect_se",     "printed": 0.15,   "digits": 2, "kind": "deterministic"}
+]

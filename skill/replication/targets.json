@@ -1,0 +1,40 @@
+[
+  {"label": "A_FE_pubbias_coef",   "printed": -5.804,   "digits": 3, "kind": "deterministic"},
+  {"label": "A_FE_pubbias_se",     "printed": 1.999,    "digits": 3, "kind": "deterministic"},
+  {"label": "A_FE_effect_coef",    "printed": -0.0207,  "digits": 4, "kind": "deterministic"},
+  {"label": "A_FE_effect_se",      "printed": 0.103,    "digits": 3, "kind": "deterministic"},
+  {"label": "A_FE_N",              "printed": 347,      "digits": 0, "kind": "count"},
+
+  {"label": "A_IV_pubbias_coef",   "printed": -6.962,   "digits": 3, "kind": "deterministic"},
+  {"label": "A_IV_pubbias_se",     "printed": 1.694,    "digits": 3, "kind": "deterministic"},
+  {"label": "A_IV_effect_coef",    "printed": 0.0103,   "digits": 4, "kind": "deterministic"},
+  {"label": "A_IV_effect_se",      "printed": 0.104,    "digits": 3, "kind": "deterministic"},
+  {"label": "A_IV_firstF",         "printed": 46.17,    "digits": 2, "kind": "deterministic"},
+  {"label": "A_IV_N",              "printed": 251,      "digits": 0, "kind": "count"},
+
+  {"label": "B_FE_pubbias_coef",   "printed": -2.287,   "digits": 3, "kind": "deterministic"},
+  {"label": "B_FE_pubbias_se",     "printed": 0.843,    "digits": 3, "kind": "deterministic"},
+  {"label": "B_FE_effect_coef",    "printed": -0.149,   "digits": 3, "kind": "deterministic"},
+  {"label": "B_FE_effect_se",      "printed": 0.109,    "digits": 3, "kind": "deterministic"},
+  {"label": "B_FE_N",              "printed": 264,      "digits": 0, "kind": "count"},
+
+  {"label": "B_IV_pubbias_coef",   "printed": -0.553,   "digits": 3, "kind": "deterministic"},
+  {"label": "B_IV_pubbias_se",     "printed": 0.681,    "digits": 3, "kind": "deterministic"},
+  {"label": "B_IV_effect_coef",    "printed": -0.400,   "digits": 3, "kind": "deterministic"},
+  {"label": "B_IV_effect_se",      "printed": 0.114,    "digits": 3, "kind": "deterministic"},
+  {"label": "B_IV_firstF",         "printed": 69.98,    "digits": 2, "kind": "deterministic"},
+  {"label": "B_IV_N",              "printed": 212,      "digits": 0, "kind": "count"},
+
+  {"label": "C_FE_pubbias_coef",   "printed": -3.557,   "digits": 3, "kind": "deterministic"},
+  {"label": "C_FE_pubbias_se",     "printed": 0.0178,   "digits": 4, "kind": "deterministic"},
+  {"label": "C_FE_effect_coef",    "printed": 0.0496,   "digits": 4, "kind": "deterministic"},
+  {"label": "C_FE_effect_se",      "printed": 0.00246,  "digits": 5, "kind": "deterministic"},
+  {"label": "C_FE_N",              "printed": 40,       "digits": 0, "kind": "count"},
+
+  {"label": "C_IV_pubbias_coef",   "printed": -3.176,   "digits": 3, "kind": "deterministic"},
+  {"label": "C_IV_pubbias_se",     "printed": 0.853,    "digits": 3, "kind": "deterministic"},
+  {"label": "C_IV_effect_coef",    "printed": -0.00307, "digits": 5, "kind": "deterministic"},
+  {"label": "C_IV_effect_se",      "printed": 0.0297,   "digits": 4, "kind": "deterministic"},
+  {"label": "C_IV_firstF",         "printed": 260.41,   "digits": 2, "kind": "deterministic"},
+  {"label": "C_IV_N",              "printed": 40,       "digits": 0, "kind": "count"}
+]

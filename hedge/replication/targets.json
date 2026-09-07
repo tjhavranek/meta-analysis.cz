@@ -1,0 +1,69 @@
+[
+  {"label": "T4_P1_OLS_lambda",    "printed": -0.456,  "digits": 3, "kind": "deterministic"},
+  {"label": "T4_P1_OLS_lambda_se", "printed": 0.488,   "digits": 3, "kind": "deterministic"},
+  {"label": "T4_P1_OLS_kappa",     "printed": 0.562,   "digits": 3, "kind": "deterministic"},
+  {"label": "T4_P1_OLS_kappa_se",  "printed": 0.0447,  "digits": 4, "kind": "deterministic"},
+
+  {"label": "T4_P1_FE_lambda",     "printed": -0.328,  "digits": 3, "kind": "deterministic"},
+  {"label": "T4_P1_FE_lambda_se",  "printed": 0.657,   "digits": 3, "kind": "deterministic"},
+  {"label": "T4_P1_FE_kappa",      "printed": 0.534,   "digits": 3, "kind": "deterministic"},
+  {"label": "T4_P1_FE_kappa_se",   "printed": 0.145,   "digits": 3, "kind": "deterministic"},
+
+  {"label": "T4_P1_BE_lambda",     "printed": 0.0326,  "digits": 4, "kind": "deterministic"},
+  {"label": "T4_P1_BE_lambda_se",  "printed": 0.494,   "digits": 3, "kind": "deterministic"},
+  {"label": "T4_P1_BE_kappa",      "printed": 0.411,   "digits": 3, "kind": "deterministic"},
+  {"label": "T4_P1_BE_kappa_se",   "printed": 0.119,   "digits": 3, "kind": "deterministic"},
+
+  {"label": "T4_P1_IV_lambda",     "printed": -1.115,  "digits": 3, "kind": "deterministic"},
+  {"label": "T4_P1_IV_lambda_se",  "printed": 0.819,   "digits": 3, "kind": "deterministic"},
+  {"label": "T4_P1_IV_kappa",      "printed": 0.707,   "digits": 3, "kind": "deterministic"},
+  {"label": "T4_P1_IV_kappa_se",   "printed": 0.175,   "digits": 3, "kind": "deterministic"},
+  {"label": "T4_P1_IV_firstF",     "printed": 14.47,   "digits": 2, "kind": "deterministic"},
+
+  {"label": "T4_P1_WLS_lambda",    "printed": 0.453,   "digits": 3, "kind": "deterministic"},
+  {"label": "T4_P1_WLS_lambda_se", "printed": 0.602,   "digits": 3, "kind": "deterministic"},
+  {"label": "T4_P1_WLS_kappa",     "printed": 0.404,   "digits": 3, "kind": "deterministic"},
+  {"label": "T4_P1_WLS_kappa_se",  "printed": 0.0883,  "digits": 4, "kind": "deterministic"},
+
+  {"label": "T4_P1_wNOBS_lambda",    "printed": -0.338, "digits": 3, "kind": "deterministic"},
+  {"label": "T4_P1_wNOBS_lambda_se", "printed": 0.249,  "digits": 3, "kind": "deterministic"},
+  {"label": "T4_P1_wNOBS_kappa",     "printed": 0.482,  "digits": 3, "kind": "deterministic"},
+  {"label": "T4_P1_wNOBS_kappa_se",  "printed": 0.0931, "digits": 4, "kind": "deterministic"},
+
+  {"label": "T4_P1_studies",  "printed": 18,  "digits": 0, "kind": "count"},
+  {"label": "T4_P1_obs",      "printed": 167, "digits": 0, "kind": "count"},
+
+  {"label": "T4_P2_OLS_lambda",    "printed": -0.142,  "digits": 3, "kind": "deterministic"},
+  {"label": "T4_P2_OLS_lambda_se", "printed": 0.137,   "digits": 3, "kind": "deterministic"},
+  {"label": "T4_P2_OLS_kappa",     "printed": 0.326,   "digits": 3, "kind": "deterministic"},
+  {"label": "T4_P2_OLS_kappa_se",  "printed": 0.0392,  "digits": 4, "kind": "deterministic"},
+
+  {"label": "T4_P2_FE_lambda",     "printed": -0.0729, "digits": 4, "kind": "deterministic"},
+  {"label": "T4_P2_FE_lambda_se",  "printed": 0.0547,  "digits": 4, "kind": "deterministic"},
+  {"label": "T4_P2_FE_kappa",      "printed": 0.308,   "digits": 3, "kind": "deterministic"},
+  {"label": "T4_P2_FE_kappa_se",   "printed": 0.0141,  "digits": 4, "kind": "deterministic"},
+
+  {"label": "T4_P2_BE_lambda",     "printed": 0.305,   "digits": 3, "kind": "deterministic"},
+  {"label": "T4_P2_BE_lambda_se",  "printed": 0.155,   "digits": 3, "kind": "deterministic"},
+  {"label": "T4_P2_BE_kappa",      "printed": 0.200,   "digits": 3, "kind": "deterministic"},
+  {"label": "T4_P2_BE_kappa_se",   "printed": 0.0730,  "digits": 4, "kind": "deterministic"},
+
+  {"label": "T4_P2_IV_lambda",     "printed": 0.624,   "digits": 3, "kind": "deterministic"},
+  {"label": "T4_P2_IV_lambda_se",  "printed": 0.557,   "digits": 3, "kind": "deterministic"},
+  {"label": "T4_P2_IV_kappa",      "printed": 0.128,   "digits": 3, "kind": "deterministic"},
+  {"label": "T4_P2_IV_kappa_se",   "printed": 0.150,   "digits": 3, "kind": "deterministic"},
+  {"label": "T4_P2_IV_firstF",     "printed": 3.41,    "digits": 2, "kind": "deterministic"},
+
+  {"label": "T4_P2_WLS_lambda",    "printed": 0.0683,  "digits": 4, "kind": "deterministic"},
+  {"label": "T4_P2_WLS_lambda_se", "printed": 0.296,   "digits": 3, "kind": "deterministic"},
+  {"label": "T4_P2_WLS_kappa",     "printed": 0.284,   "digits": 3, "kind": "deterministic"},
+  {"label": "T4_P2_WLS_kappa_se",  "printed": 0.0330,  "digits": 4, "kind": "deterministic"},
+
+  {"label": "T4_P2_wNOBS_lambda",    "printed": 0.226,  "digits": 3, "kind": "deterministic"},
+  {"label": "T4_P2_wNOBS_lambda_se", "printed": 0.265,  "digits": 3, "kind": "deterministic"},
+  {"label": "T4_P2_wNOBS_kappa",     "printed": 0.222,  "digits": 3, "kind": "deterministic"},
+  {"label": "T4_P2_wNOBS_kappa_se",  "printed": 0.0641, "digits": 4, "kind": "deterministic"},
+
+  {"label": "T4_P2_studies",  "printed": 33,  "digits": 0, "kind": "count"},
+  {"label": "T4_P2_obs",      "printed": 298, "digits": 0, "kind": "count"}
+]

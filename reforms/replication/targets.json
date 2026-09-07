@@ -1,0 +1,36 @@
+[
+  {"label": "pb_short_fixed_coef",     "printed": 4.137,  "digits": 3, "kind": "deterministic"},
+  {"label": "pb_short_fixed_se",       "printed": 0.947,  "digits": 3, "kind": "deterministic"},
+  {"label": "pb_short_robust_coef",    "printed": 4.179,  "digits": 3, "kind": "deterministic"},
+  {"label": "pb_short_robust_se",      "printed": 0.961,  "digits": 3, "kind": "deterministic"},
+  {"label": "pb_short_clustered_coef", "printed": 4.137,  "digits": 3, "kind": "deterministic"},
+  {"label": "pb_short_clustered_se",   "printed": 2.036,  "digits": 3, "kind": "deterministic"},
+
+  {"label": "pb_long_fixed_coef",      "printed": 0.313,  "digits": 3, "kind": "deterministic"},
+  {"label": "pb_long_fixed_se",        "printed": 0.290,  "digits": 3, "kind": "deterministic"},
+  {"label": "pb_long_robust_coef",     "printed": 0.265,  "digits": 3, "kind": "deterministic"},
+  {"label": "pb_long_robust_se",       "printed": 0.300,  "digits": 3, "kind": "deterministic"},
+  {"label": "pb_long_clustered_coef",  "printed": 0.313,  "digits": 3, "kind": "deterministic"},
+  {"label": "pb_long_clustered_se",    "printed": 0.586,  "digits": 3, "kind": "deterministic"},
+
+  {"label": "eff_short_fixed_coef",     "printed": -0.394, "digits": 3, "kind": "deterministic"},
+  {"label": "eff_short_fixed_se",       "printed": 0.073,  "digits": 3, "kind": "deterministic"},
+  {"label": "eff_short_robust_coef",    "printed": -0.395, "digits": 3, "kind": "deterministic"},
+  {"label": "eff_short_robust_se",      "printed": 0.074,  "digits": 3, "kind": "deterministic"},
+  {"label": "eff_short_clustered_coef", "printed": -0.394, "digits": 3, "kind": "deterministic"},
+  {"label": "eff_short_clustered_se",   "printed": 0.164,  "digits": 3, "kind": "deterministic"},
+
+  {"label": "eff_long_fixed_coef",      "printed": 0.110, "digits": 3, "kind": "deterministic"},
+  {"label": "eff_long_fixed_se",        "printed": 0.025, "digits": 3, "kind": "deterministic"},
+  {"label": "eff_long_robust_coef",     "printed": 0.116, "digits": 3, "kind": "deterministic"},
+  {"label": "eff_long_robust_se",       "printed": 0.026, "digits": 3, "kind": "deterministic"},
+  {"label": "eff_long_clustered_coef",  "printed": 0.110, "digits": 3, "kind": "deterministic"},
+  {"label": "eff_long_clustered_se",    "printed": 0.056, "digits": 3, "kind": "deterministic"},
+
+  {"label": "n_short_fixed",     "printed": 245, "digits": 0, "kind": "count"},
+  {"label": "n_short_robust",    "printed": 245, "digits": 0, "kind": "count"},
+  {"label": "n_short_clustered", "printed": 245, "digits": 0, "kind": "count"},
+  {"label": "n_long_fixed",      "printed": 292, "digits": 0, "kind": "count"},
+  {"label": "n_long_robust",     "printed": 292, "digits": 0, "kind": "count"},
+  {"label": "n_long_clustered",  "printed": 292, "digits": 0, "kind": "count"}
+]

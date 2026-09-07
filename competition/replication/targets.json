@@ -1,0 +1,806 @@
+[
+  {
+    "label": "T9 OLS SEPCC coef",
+    "printed": -1.5708,
+    "digits": 4,
+    "kind": "deterministic"
+  },
+  {
+    "label": "T9 OLS SEPCC se",
+    "printed": 0.8567,
+    "digits": 4,
+    "kind": "deterministic"
+  },
+  {
+    "label": "T9 OLS Samplesize coef",
+    "printed": -0.0363,
+    "digits": 4,
+    "kind": "deterministic"
+  },
+  {
+    "label": "T9 OLS Samplesize se",
+    "printed": 0.011,
+    "digits": 4,
+    "kind": "deterministic"
+  },
+  {
+    "label": "T9 OLS T coef",
+    "printed": 0.0141,
+    "digits": 4,
+    "kind": "deterministic"
+  },
+  {
+    "label": "T9 OLS T se",
+    "printed": 0.0107,
+    "digits": 4,
+    "kind": "deterministic"
+  },
+  {
+    "label": "T9 OLS sampleyear coef",
+    "printed": 0.004,
+    "digits": 4,
+    "kind": "deterministic"
+  },
+  {
+    "label": "T9 OLS sampleyear se",
+    "printed": 0.0033,
+    "digits": 4,
+    "kind": "deterministic"
+  },
+  {
+    "label": "T9 OLS developed coef",
+    "printed": 0.1689,
+    "digits": 4,
+    "kind": "deterministic"
+  },
+  {
+    "label": "T9 OLS developed se",
+    "printed": 0.0211,
+    "digits": 4,
+    "kind": "deterministic"
+  },
+  {
+    "label": "T9 OLS undeveloped coef",
+    "printed": 0.1008,
+    "digits": 4,
+    "kind": "deterministic"
+  },
+  {
+    "label": "T9 OLS undeveloped se",
+    "printed": 0.0166,
+    "digits": 4,
+    "kind": "deterministic"
+  },
+  {
+    "label": "T9 OLS quadratic coef",
+    "printed": -0.008,
+    "digits": 4,
+    "kind": "deterministic"
+  },
+  {
+    "label": "T9 OLS quadratic se",
+    "printed": 0.0204,
+    "digits": 4,
+    "kind": "deterministic"
+  },
+  {
+    "label": "T9 OLS endogeneity coef",
+    "printed": 0.024,
+    "digits": 4,
+    "kind": "deterministic"
+  },
+  {
+    "label": "T9 OLS endogeneity se",
+    "printed": 0.0292,
+    "digits": 4,
+    "kind": "deterministic"
+  },
+  {
+    "label": "T9 OLS macro coef",
+    "printed": -0.004,
+    "digits": 4,
+    "kind": "deterministic"
+  },
+  {
+    "label": "T9 OLS macro se",
+    "printed": 0.0364,
+    "digits": 4,
+    "kind": "deterministic"
+  },
+  {
+    "label": "T9 OLS someAveraged coef",
+    "printed": -0.0023,
+    "digits": 4,
+    "kind": "deterministic"
+  },
+  {
+    "label": "T9 OLS someAveraged se",
+    "printed": 0.0285,
+    "digits": 4,
+    "kind": "deterministic"
+  },
+  {
+    "label": "T9 OLS dummies coef",
+    "printed": 0.2232,
+    "digits": 4,
+    "kind": "deterministic"
+  },
+  {
+    "label": "T9 OLS dummies se",
+    "printed": 0.0373,
+    "digits": 4,
+    "kind": "deterministic"
+  },
+  {
+    "label": "T9 OLS NPL coef",
+    "printed": 0.0299,
+    "digits": 4,
+    "kind": "deterministic"
+  },
+  {
+    "label": "T9 OLS NPL se",
+    "printed": 0.0259,
+    "digits": 4,
+    "kind": "deterministic"
+  },
+  {
+    "label": "T9 OLS Zscore coef",
+    "printed": 0.0116,
+    "digits": 4,
+    "kind": "deterministic"
+  },
+  {
+    "label": "T9 OLS Zscore se",
+    "printed": 0.0249,
+    "digits": 4,
+    "kind": "deterministic"
+  },
+  {
+    "label": "T9 OLS profit_volat coef",
+    "printed": 0.0284,
+    "digits": 4,
+    "kind": "deterministic"
+  },
+  {
+    "label": "T9 OLS profit_volat se",
+    "printed": 0.0206,
+    "digits": 4,
+    "kind": "deterministic"
+  },
+  {
+    "label": "T9 OLS profitability coef",
+    "printed": -0.0142,
+    "digits": 4,
+    "kind": "deterministic"
+  },
+  {
+    "label": "T9 OLS profitability se",
+    "printed": 0.027,
+    "digits": 4,
+    "kind": "deterministic"
+  },
+  {
+    "label": "T9 OLS capitalization coef",
+    "printed": 0.0184,
+    "digits": 4,
+    "kind": "deterministic"
+  },
+  {
+    "label": "T9 OLS capitalization se",
+    "printed": 0.024,
+    "digits": 4,
+    "kind": "deterministic"
+  },
+  {
+    "label": "T9 OLS DtoD coef",
+    "printed": -0.0157,
+    "digits": 4,
+    "kind": "deterministic"
+  },
+  {
+    "label": "T9 OLS DtoD se",
+    "printed": 0.0337,
+    "digits": 4,
+    "kind": "deterministic"
+  },
+  {
+    "label": "T9 OLS Hstatistic coef",
+    "printed": 0.1629,
+    "digits": 4,
+    "kind": "deterministic"
+  },
+  {
+    "label": "T9 OLS Hstatistic se",
+    "printed": 0.0308,
+    "digits": 4,
+    "kind": "deterministic"
+  },
+  {
+    "label": "T9 OLS Boone coef",
+    "printed": 0.001,
+    "digits": 4,
+    "kind": "deterministic"
+  },
+  {
+    "label": "T9 OLS Boone se",
+    "printed": 0.0271,
+    "digits": 4,
+    "kind": "deterministic"
+  },
+  {
+    "label": "T9 OLS Concentration coef",
+    "printed": 0.0351,
+    "digits": 4,
+    "kind": "deterministic"
+  },
+  {
+    "label": "T9 OLS Concentration se",
+    "printed": 0.0356,
+    "digits": 4,
+    "kind": "deterministic"
+  },
+  {
+    "label": "T9 OLS Lerner coef",
+    "printed": 0.0485,
+    "digits": 4,
+    "kind": "deterministic"
+  },
+  {
+    "label": "T9 OLS Lerner se",
+    "printed": 0.0188,
+    "digits": 4,
+    "kind": "deterministic"
+  },
+  {
+    "label": "T9 OLS HHI coef",
+    "printed": 0.0444,
+    "digits": 4,
+    "kind": "deterministic"
+  },
+  {
+    "label": "T9 OLS HHI se",
+    "printed": 0.0257,
+    "digits": 4,
+    "kind": "deterministic"
+  },
+  {
+    "label": "T9 OLS Logit coef",
+    "printed": -0.1481,
+    "digits": 4,
+    "kind": "deterministic"
+  },
+  {
+    "label": "T9 OLS Logit se",
+    "printed": 0.0405,
+    "digits": 4,
+    "kind": "deterministic"
+  },
+  {
+    "label": "T9 OLS OLS coef",
+    "printed": -0.0022,
+    "digits": 4,
+    "kind": "deterministic"
+  },
+  {
+    "label": "T9 OLS OLS se",
+    "printed": 0.0218,
+    "digits": 4,
+    "kind": "deterministic"
+  },
+  {
+    "label": "T9 OLS FE coef",
+    "printed": 0.0624,
+    "digits": 4,
+    "kind": "deterministic"
+  },
+  {
+    "label": "T9 OLS FE se",
+    "printed": 0.0247,
+    "digits": 4,
+    "kind": "deterministic"
+  },
+  {
+    "label": "T9 OLS RE coef",
+    "printed": 0.0317,
+    "digits": 4,
+    "kind": "deterministic"
+  },
+  {
+    "label": "T9 OLS RE se",
+    "printed": 0.0382,
+    "digits": 4,
+    "kind": "deterministic"
+  },
+  {
+    "label": "T9 OLS GMM coef",
+    "printed": 0.0014,
+    "digits": 4,
+    "kind": "deterministic"
+  },
+  {
+    "label": "T9 OLS GMM se",
+    "printed": 0.0159,
+    "digits": 4,
+    "kind": "deterministic"
+  },
+  {
+    "label": "T9 OLS TSLS coef",
+    "printed": 0.0393,
+    "digits": 4,
+    "kind": "deterministic"
+  },
+  {
+    "label": "T9 OLS TSLS se",
+    "printed": 0.023,
+    "digits": 4,
+    "kind": "deterministic"
+  },
+  {
+    "label": "T9 OLS regulation coef",
+    "printed": -0.0184,
+    "digits": 4,
+    "kind": "deterministic"
+  },
+  {
+    "label": "T9 OLS regulation se",
+    "printed": 0.0138,
+    "digits": 4,
+    "kind": "deterministic"
+  },
+  {
+    "label": "T9 OLS ownership coef",
+    "printed": -0.0341,
+    "digits": 4,
+    "kind": "deterministic"
+  },
+  {
+    "label": "T9 OLS ownership se",
+    "printed": 0.0227,
+    "digits": 4,
+    "kind": "deterministic"
+  },
+  {
+    "label": "T9 OLS global coef",
+    "printed": 0.0112,
+    "digits": 4,
+    "kind": "deterministic"
+  },
+  {
+    "label": "T9 OLS global se",
+    "printed": 0.0176,
+    "digits": 4,
+    "kind": "deterministic"
+  },
+  {
+    "label": "T9 OLS citations coef",
+    "printed": 0.0408,
+    "digits": 4,
+    "kind": "deterministic"
+  },
+  {
+    "label": "T9 OLS citations se",
+    "printed": 0.0146,
+    "digits": 4,
+    "kind": "deterministic"
+  },
+  {
+    "label": "T9 OLS firstpub coef",
+    "printed": 0.0159,
+    "digits": 4,
+    "kind": "deterministic"
+  },
+  {
+    "label": "T9 OLS firstpub se",
+    "printed": 0.0067,
+    "digits": 4,
+    "kind": "deterministic"
+  },
+  {
+    "label": "T9 OLS IFrecursive coef",
+    "printed": 0.089,
+    "digits": 4,
+    "kind": "deterministic"
+  },
+  {
+    "label": "T9 OLS IFrecursive se",
+    "printed": 0.0363,
+    "digits": 4,
+    "kind": "deterministic"
+  },
+  {
+    "label": "T9 OLS reviewed_journal coef",
+    "printed": -0.0042,
+    "digits": 4,
+    "kind": "deterministic"
+  },
+  {
+    "label": "T9 OLS reviewed_journal se",
+    "printed": 0.0271,
+    "digits": 4,
+    "kind": "deterministic"
+  },
+  {
+    "label": "T9 OLS Constant coef",
+    "printed": -0.135,
+    "digits": 4,
+    "kind": "deterministic"
+  },
+  {
+    "label": "T9 OLS Constant se",
+    "printed": 0.1124,
+    "digits": 4,
+    "kind": "deterministic"
+  },
+  {
+    "label": "T9 OLS N",
+    "printed": 598,
+    "digits": 0,
+    "kind": "count"
+  },
+  {
+    "label": "T9 OLS Studies",
+    "printed": 31,
+    "digits": 0,
+    "kind": "count"
+  },
+  {
+    "label": "T9 FE SEPCC coef",
+    "printed": -1.6234,
+    "digits": 4,
+    "kind": "deterministic"
+  },
+  {
+    "label": "T9 FE SEPCC se",
+    "printed": 0.6912,
+    "digits": 4,
+    "kind": "deterministic"
+  },
+  {
+    "label": "T9 FE Samplesize coef",
+    "printed": 0.0148,
+    "digits": 4,
+    "kind": "deterministic"
+  },
+  {
+    "label": "T9 FE Samplesize se",
+    "printed": 0.0212,
+    "digits": 4,
+    "kind": "deterministic"
+  },
+  {
+    "label": "T9 FE T coef",
+    "printed": -0.0511,
+    "digits": 4,
+    "kind": "deterministic"
+  },
+  {
+    "label": "T9 FE T se",
+    "printed": 0.0268,
+    "digits": 4,
+    "kind": "deterministic"
+  },
+  {
+    "label": "T9 FE sampleyear coef",
+    "printed": 0.0057,
+    "digits": 4,
+    "kind": "deterministic"
+  },
+  {
+    "label": "T9 FE sampleyear se",
+    "printed": 0.0032,
+    "digits": 4,
+    "kind": "deterministic"
+  },
+  {
+    "label": "T9 FE undeveloped coef",
+    "printed": 0.102,
+    "digits": 4,
+    "kind": "deterministic"
+  },
+  {
+    "label": "T9 FE undeveloped se",
+    "printed": 0.076,
+    "digits": 4,
+    "kind": "deterministic"
+  },
+  {
+    "label": "T9 FE quadratic coef",
+    "printed": -0.0071,
+    "digits": 4,
+    "kind": "deterministic"
+  },
+  {
+    "label": "T9 FE quadratic se",
+    "printed": 0.0135,
+    "digits": 4,
+    "kind": "deterministic"
+  },
+  {
+    "label": "T9 FE endogeneity coef",
+    "printed": -0.0292,
+    "digits": 4,
+    "kind": "deterministic"
+  },
+  {
+    "label": "T9 FE endogeneity se",
+    "printed": 0.0163,
+    "digits": 4,
+    "kind": "deterministic"
+  },
+  {
+    "label": "T9 FE macro coef",
+    "printed": 0.1882,
+    "digits": 4,
+    "kind": "deterministic"
+  },
+  {
+    "label": "T9 FE macro se",
+    "printed": 0.0138,
+    "digits": 4,
+    "kind": "deterministic"
+  },
+  {
+    "label": "T9 FE someAveraged coef",
+    "printed": 0.0226,
+    "digits": 4,
+    "kind": "deterministic"
+  },
+  {
+    "label": "T9 FE someAveraged se",
+    "printed": 0.0151,
+    "digits": 4,
+    "kind": "deterministic"
+  },
+  {
+    "label": "T9 FE NPL coef",
+    "printed": 0.0239,
+    "digits": 4,
+    "kind": "deterministic"
+  },
+  {
+    "label": "T9 FE NPL se",
+    "printed": 0.0232,
+    "digits": 4,
+    "kind": "deterministic"
+  },
+  {
+    "label": "T9 FE Zscore coef",
+    "printed": 0.0172,
+    "digits": 4,
+    "kind": "deterministic"
+  },
+  {
+    "label": "T9 FE Zscore se",
+    "printed": 0.0228,
+    "digits": 4,
+    "kind": "deterministic"
+  },
+  {
+    "label": "T9 FE profit_volat coef",
+    "printed": 0.0192,
+    "digits": 4,
+    "kind": "deterministic"
+  },
+  {
+    "label": "T9 FE profit_volat se",
+    "printed": 0.0214,
+    "digits": 4,
+    "kind": "deterministic"
+  },
+  {
+    "label": "T9 FE profitability coef",
+    "printed": -0.0048,
+    "digits": 4,
+    "kind": "deterministic"
+  },
+  {
+    "label": "T9 FE profitability se",
+    "printed": 0.027,
+    "digits": 4,
+    "kind": "deterministic"
+  },
+  {
+    "label": "T9 FE capitalization coef",
+    "printed": 0.0052,
+    "digits": 4,
+    "kind": "deterministic"
+  },
+  {
+    "label": "T9 FE capitalization se",
+    "printed": 0.0254,
+    "digits": 4,
+    "kind": "deterministic"
+  },
+  {
+    "label": "T9 FE DtoD coef",
+    "printed": 0.0217,
+    "digits": 4,
+    "kind": "deterministic"
+  },
+  {
+    "label": "T9 FE DtoD se",
+    "printed": 0.0284,
+    "digits": 4,
+    "kind": "deterministic"
+  },
+  {
+    "label": "T9 FE Hstatistic coef",
+    "printed": 0.0577,
+    "digits": 4,
+    "kind": "deterministic"
+  },
+  {
+    "label": "T9 FE Hstatistic se",
+    "printed": 0.0201,
+    "digits": 4,
+    "kind": "deterministic"
+  },
+  {
+    "label": "T9 FE Boone coef",
+    "printed": 0.0744,
+    "digits": 4,
+    "kind": "deterministic"
+  },
+  {
+    "label": "T9 FE Boone se",
+    "printed": 0.0112,
+    "digits": 4,
+    "kind": "deterministic"
+  },
+  {
+    "label": "T9 FE Concentration coef",
+    "printed": 0.0709,
+    "digits": 4,
+    "kind": "deterministic"
+  },
+  {
+    "label": "T9 FE Concentration se",
+    "printed": 0.0346,
+    "digits": 4,
+    "kind": "deterministic"
+  },
+  {
+    "label": "T9 FE Lerner coef",
+    "printed": 0.0721,
+    "digits": 4,
+    "kind": "deterministic"
+  },
+  {
+    "label": "T9 FE Lerner se",
+    "printed": 0.0189,
+    "digits": 4,
+    "kind": "deterministic"
+  },
+  {
+    "label": "T9 FE HHI coef",
+    "printed": 0.0654,
+    "digits": 4,
+    "kind": "deterministic"
+  },
+  {
+    "label": "T9 FE HHI se",
+    "printed": 0.0252,
+    "digits": 4,
+    "kind": "deterministic"
+  },
+  {
+    "label": "T9 FE OLS coef",
+    "printed": 0.0225,
+    "digits": 4,
+    "kind": "deterministic"
+  },
+  {
+    "label": "T9 FE OLS se",
+    "printed": 0.0108,
+    "digits": 4,
+    "kind": "deterministic"
+  },
+  {
+    "label": "T9 FE FE coef",
+    "printed": 0.0392,
+    "digits": 4,
+    "kind": "deterministic"
+  },
+  {
+    "label": "T9 FE FE se",
+    "printed": 0.018,
+    "digits": 4,
+    "kind": "deterministic"
+  },
+  {
+    "label": "T9 FE RE coef",
+    "printed": -0.0042,
+    "digits": 4,
+    "kind": "deterministic"
+  },
+  {
+    "label": "T9 FE RE se",
+    "printed": 0.0182,
+    "digits": 4,
+    "kind": "deterministic"
+  },
+  {
+    "label": "T9 FE GMM coef",
+    "printed": 0.0437,
+    "digits": 4,
+    "kind": "deterministic"
+  },
+  {
+    "label": "T9 FE GMM se",
+    "printed": 0.0206,
+    "digits": 4,
+    "kind": "deterministic"
+  },
+  {
+    "label": "T9 FE TSLS coef",
+    "printed": 0.0223,
+    "digits": 4,
+    "kind": "deterministic"
+  },
+  {
+    "label": "T9 FE TSLS se",
+    "printed": 0.0186,
+    "digits": 4,
+    "kind": "deterministic"
+  },
+  {
+    "label": "T9 FE regulation coef",
+    "printed": 0.0062,
+    "digits": 4,
+    "kind": "deterministic"
+  },
+  {
+    "label": "T9 FE regulation se",
+    "printed": 0.0104,
+    "digits": 4,
+    "kind": "deterministic"
+  },
+  {
+    "label": "T9 FE ownership coef",
+    "printed": -0.0193,
+    "digits": 4,
+    "kind": "deterministic"
+  },
+  {
+    "label": "T9 FE ownership se",
+    "printed": 0.0311,
+    "digits": 4,
+    "kind": "deterministic"
+  },
+  {
+    "label": "T9 FE global coef",
+    "printed": 0.0239,
+    "digits": 4,
+    "kind": "deterministic"
+  },
+  {
+    "label": "T9 FE global se",
+    "printed": 0.0152,
+    "digits": 4,
+    "kind": "deterministic"
+  },
+  {
+    "label": "T9 FE Constant coef",
+    "printed": -0.1783,
+    "digits": 4,
+    "kind": "deterministic"
+  },
+  {
+    "label": "T9 FE Constant se",
+    "printed": 0.1656,
+    "digits": 4,
+    "kind": "deterministic"
+  },
+  {
+    "label": "T9 FE N",
+    "printed": 598,
+    "digits": 0,
+    "kind": "count"
+  },
+  {
+    "label": "T9 FE Studies",
+    "printed": 31,
+    "digits": 0,
+    "kind": "count"
+  }
+]

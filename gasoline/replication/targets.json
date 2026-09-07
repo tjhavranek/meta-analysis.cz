@@ -1,0 +1,812 @@
+[
+ {
+  "label": "T6 c1 1/se coef",
+  "printed": 0.257,
+  "digits": 3,
+  "kind": "deterministic"
+ },
+ {
+  "label": "T6 c1 1/se t",
+  "printed": 1.39,
+  "digits": 2,
+  "kind": "deterministic"
+ },
+ {
+  "label": "T6 c2 1/se coef",
+  "printed": 0.892,
+  "digits": 3,
+  "kind": "deterministic"
+ },
+ {
+  "label": "T6 c2 1/se t",
+  "printed": 4.67,
+  "digits": 2,
+  "kind": "deterministic"
+ },
+ {
+  "label": "T6 c3 1/se coef",
+  "printed": 0.827,
+  "digits": 3,
+  "kind": "deterministic"
+ },
+ {
+  "label": "T6 c3 1/se t",
+  "printed": 4.17,
+  "digits": 2,
+  "kind": "deterministic"
+ },
+ {
+  "label": "T6 c1 Mean year of data coef",
+  "printed": 0.000947,
+  "digits": 6,
+  "kind": "deterministic"
+ },
+ {
+  "label": "T6 c1 Mean year of data t",
+  "printed": 0.32,
+  "digits": 2,
+  "kind": "deterministic"
+ },
+ {
+  "label": "T6 c2 Mean year of data coef",
+  "printed": -0.00216,
+  "digits": 5,
+  "kind": "deterministic"
+ },
+ {
+  "label": "T6 c2 Mean year of data t",
+  "printed": -0.77,
+  "digits": 2,
+  "kind": "deterministic"
+ },
+ {
+  "label": "T6 c3 Mean year of data coef",
+  "printed": -0.000556,
+  "digits": 6,
+  "kind": "deterministic"
+ },
+ {
+  "label": "T6 c3 Mean year of data t",
+  "printed": -0.18,
+  "digits": 2,
+  "kind": "deterministic"
+ },
+ {
+  "label": "T6 c1 Time span coef",
+  "printed": 0.335,
+  "digits": 3,
+  "kind": "deterministic"
+ },
+ {
+  "label": "T6 c1 Time span t",
+  "printed": 7.61,
+  "digits": 2,
+  "kind": "deterministic"
+ },
+ {
+  "label": "T6 c2 Time span coef",
+  "printed": 0.168,
+  "digits": 3,
+  "kind": "deterministic"
+ },
+ {
+  "label": "T6 c2 Time span t",
+  "printed": 3.31,
+  "digits": 2,
+  "kind": "deterministic"
+ },
+ {
+  "label": "T6 c3 Time span coef",
+  "printed": 0.174,
+  "digits": 3,
+  "kind": "deterministic"
+ },
+ {
+  "label": "T6 c3 Time span t",
+  "printed": 3.39,
+  "digits": 2,
+  "kind": "deterministic"
+ },
+ {
+  "label": "T6 c1 Quarterly data coef",
+  "printed": -0.285,
+  "digits": 3,
+  "kind": "deterministic"
+ },
+ {
+  "label": "T6 c1 Quarterly data t",
+  "printed": -2.74,
+  "digits": 2,
+  "kind": "deterministic"
+ },
+ {
+  "label": "T6 c2 Quarterly data coef",
+  "printed": -0.0412,
+  "digits": 4,
+  "kind": "deterministic"
+ },
+ {
+  "label": "T6 c2 Quarterly data t",
+  "printed": -0.43,
+  "digits": 2,
+  "kind": "deterministic"
+ },
+ {
+  "label": "T6 c3 Quarterly data coef",
+  "printed": -0.0476,
+  "digits": 4,
+  "kind": "deterministic"
+ },
+ {
+  "label": "T6 c3 Quarterly data t",
+  "printed": -0.5,
+  "digits": 2,
+  "kind": "deterministic"
+ },
+ {
+  "label": "T6 c1 Monthly data coef",
+  "printed": 0.269,
+  "digits": 3,
+  "kind": "deterministic"
+ },
+ {
+  "label": "T6 c1 Monthly data t",
+  "printed": 1.83,
+  "digits": 2,
+  "kind": "deterministic"
+ },
+ {
+  "label": "T6 c2 Monthly data coef",
+  "printed": -0.258,
+  "digits": 3,
+  "kind": "deterministic"
+ },
+ {
+  "label": "T6 c2 Monthly data t",
+  "printed": -1.19,
+  "digits": 2,
+  "kind": "deterministic"
+ },
+ {
+  "label": "T6 c3 Monthly data coef",
+  "printed": -0.263,
+  "digits": 3,
+  "kind": "deterministic"
+ },
+ {
+  "label": "T6 c3 Monthly data t",
+  "printed": -1.22,
+  "digits": 2,
+  "kind": "deterministic"
+ },
+ {
+  "label": "T6 c1 Cross-section coef",
+  "printed": 0.279,
+  "digits": 3,
+  "kind": "deterministic"
+ },
+ {
+  "label": "T6 c1 Cross-section t",
+  "printed": 2.57,
+  "digits": 2,
+  "kind": "deterministic"
+ },
+ {
+  "label": "T6 c2 Cross-section coef",
+  "printed": 0.0784,
+  "digits": 4,
+  "kind": "deterministic"
+ },
+ {
+  "label": "T6 c2 Cross-section t",
+  "printed": 0.73,
+  "digits": 2,
+  "kind": "deterministic"
+ },
+ {
+  "label": "T6 c3 Cross-section coef",
+  "printed": 0.0863,
+  "digits": 4,
+  "kind": "deterministic"
+ },
+ {
+  "label": "T6 c3 Cross-section t",
+  "printed": 0.81,
+  "digits": 2,
+  "kind": "deterministic"
+ },
+ {
+  "label": "T6 c1 Time series coef",
+  "printed": -0.133,
+  "digits": 3,
+  "kind": "deterministic"
+ },
+ {
+  "label": "T6 c1 Time series t",
+  "printed": -2.75,
+  "digits": 2,
+  "kind": "deterministic"
+ },
+ {
+  "label": "T6 c2 Time series coef",
+  "printed": -0.15,
+  "digits": 3,
+  "kind": "deterministic"
+ },
+ {
+  "label": "T6 c2 Time series t",
+  "printed": -2.82,
+  "digits": 2,
+  "kind": "deterministic"
+ },
+ {
+  "label": "T6 c3 Time series coef",
+  "printed": -0.151,
+  "digits": 3,
+  "kind": "deterministic"
+ },
+ {
+  "label": "T6 c3 Time series t",
+  "printed": -2.84,
+  "digits": 2,
+  "kind": "deterministic"
+ },
+ {
+  "label": "T6 c1 Vehicle stock coef",
+  "printed": -0.86,
+  "digits": 3,
+  "kind": "deterministic"
+ },
+ {
+  "label": "T6 c1 Vehicle stock t",
+  "printed": -20.47,
+  "digits": 2,
+  "kind": "deterministic"
+ },
+ {
+  "label": "T6 c2 Vehicle stock coef",
+  "printed": -0.782,
+  "digits": 3,
+  "kind": "deterministic"
+ },
+ {
+  "label": "T6 c2 Vehicle stock t",
+  "printed": -20.1,
+  "digits": 2,
+  "kind": "deterministic"
+ },
+ {
+  "label": "T6 c3 Vehicle stock coef",
+  "printed": -0.773,
+  "digits": 3,
+  "kind": "deterministic"
+ },
+ {
+  "label": "T6 c3 Vehicle stock t",
+  "printed": -19.86,
+  "digits": 2,
+  "kind": "deterministic"
+ },
+ {
+  "label": "T6 c1 Static model coef",
+  "printed": -0.155,
+  "digits": 3,
+  "kind": "deterministic"
+ },
+ {
+  "label": "T6 c1 Static model t",
+  "printed": -2.5,
+  "digits": 2,
+  "kind": "deterministic"
+ },
+ {
+  "label": "T6 c2 Static model coef",
+  "printed": 0.0555,
+  "digits": 4,
+  "kind": "deterministic"
+ },
+ {
+  "label": "T6 c2 Static model t",
+  "printed": 0.96,
+  "digits": 2,
+  "kind": "deterministic"
+ },
+ {
+  "label": "T6 c3 Static model coef",
+  "printed": 0.0574,
+  "digits": 4,
+  "kind": "deterministic"
+ },
+ {
+  "label": "T6 c3 Static model t",
+  "printed": 0.99,
+  "digits": 2,
+  "kind": "deterministic"
+ },
+ {
+  "label": "T6 c1 OLS coef",
+  "printed": -0.0337,
+  "digits": 4,
+  "kind": "deterministic"
+ },
+ {
+  "label": "T6 c1 OLS t",
+  "printed": -0.67,
+  "digits": 2,
+  "kind": "deterministic"
+ },
+ {
+  "label": "T6 c2 OLS coef",
+  "printed": -0.0224,
+  "digits": 4,
+  "kind": "deterministic"
+ },
+ {
+  "label": "T6 c2 OLS t",
+  "printed": -0.49,
+  "digits": 2,
+  "kind": "deterministic"
+ },
+ {
+  "label": "T6 c3 OLS coef",
+  "printed": -0.0235,
+  "digits": 4,
+  "kind": "deterministic"
+ },
+ {
+  "label": "T6 c3 OLS t",
+  "printed": -0.52,
+  "digits": 2,
+  "kind": "deterministic"
+ },
+ {
+  "label": "T6 c1 IV coef",
+  "printed": -0.449,
+  "digits": 3,
+  "kind": "deterministic"
+ },
+ {
+  "label": "T6 c1 IV t",
+  "printed": -2.31,
+  "digits": 2,
+  "kind": "deterministic"
+ },
+ {
+  "label": "T6 c2 IV coef",
+  "printed": 0.132,
+  "digits": 3,
+  "kind": "deterministic"
+ },
+ {
+  "label": "T6 c2 IV t",
+  "printed": 0.74,
+  "digits": 2,
+  "kind": "deterministic"
+ },
+ {
+  "label": "T6 c3 IV coef",
+  "printed": 0.145,
+  "digits": 3,
+  "kind": "deterministic"
+ },
+ {
+  "label": "T6 c3 IV t",
+  "printed": 0.82,
+  "digits": 2,
+  "kind": "deterministic"
+ },
+ {
+  "label": "T6 c1 SUR coef",
+  "printed": 0.166,
+  "digits": 3,
+  "kind": "deterministic"
+ },
+ {
+  "label": "T6 c1 SUR t",
+  "printed": 1.85,
+  "digits": 2,
+  "kind": "deterministic"
+ },
+ {
+  "label": "T6 c2 SUR coef",
+  "printed": -0.0796,
+  "digits": 4,
+  "kind": "deterministic"
+ },
+ {
+  "label": "T6 c2 SUR t",
+  "printed": -0.96,
+  "digits": 2,
+  "kind": "deterministic"
+ },
+ {
+  "label": "T6 c3 SUR coef",
+  "printed": -0.0783,
+  "digits": 4,
+  "kind": "deterministic"
+ },
+ {
+  "label": "T6 c3 SUR t",
+  "printed": -0.95,
+  "digits": 2,
+  "kind": "deterministic"
+ },
+ {
+  "label": "T6 c1 ML coef",
+  "printed": -0.159,
+  "digits": 3,
+  "kind": "deterministic"
+ },
+ {
+  "label": "T6 c1 ML t",
+  "printed": -0.32,
+  "digits": 2,
+  "kind": "deterministic"
+ },
+ {
+  "label": "T6 c2 ML coef",
+  "printed": -0.435,
+  "digits": 3,
+  "kind": "deterministic"
+ },
+ {
+  "label": "T6 c2 ML t",
+  "printed": -0.98,
+  "digits": 2,
+  "kind": "deterministic"
+ },
+ {
+  "label": "T6 c3 ML coef",
+  "printed": -0.436,
+  "digits": 3,
+  "kind": "deterministic"
+ },
+ {
+  "label": "T6 c3 ML t",
+  "printed": -0.99,
+  "digits": 2,
+  "kind": "deterministic"
+ },
+ {
+  "label": "T6 c1 ECM coef",
+  "printed": 0.226,
+  "digits": 3,
+  "kind": "deterministic"
+ },
+ {
+  "label": "T6 c1 ECM t",
+  "printed": 2.77,
+  "digits": 2,
+  "kind": "deterministic"
+ },
+ {
+  "label": "T6 c2 ECM coef",
+  "printed": 0.381,
+  "digits": 3,
+  "kind": "deterministic"
+ },
+ {
+  "label": "T6 c2 ECM t",
+  "printed": 4.77,
+  "digits": 2,
+  "kind": "deterministic"
+ },
+ {
+  "label": "T6 c3 ECM coef",
+  "printed": 0.379,
+  "digits": 3,
+  "kind": "deterministic"
+ },
+ {
+  "label": "T6 c3 ECM t",
+  "printed": 4.76,
+  "digits": 2,
+  "kind": "deterministic"
+ },
+ {
+  "label": "T6 c1 GLS coef",
+  "printed": -0.137,
+  "digits": 3,
+  "kind": "deterministic"
+ },
+ {
+  "label": "T6 c1 GLS t",
+  "printed": -2.15,
+  "digits": 2,
+  "kind": "deterministic"
+ },
+ {
+  "label": "T6 c2 GLS coef",
+  "printed": 0.0254,
+  "digits": 4,
+  "kind": "deterministic"
+ },
+ {
+  "label": "T6 c2 GLS t",
+  "printed": 0.38,
+  "digits": 2,
+  "kind": "deterministic"
+ },
+ {
+  "label": "T6 c3 GLS coef",
+  "printed": 0.0324,
+  "digits": 4,
+  "kind": "deterministic"
+ },
+ {
+  "label": "T6 c3 GLS t",
+  "printed": 0.48,
+  "digits": 2,
+  "kind": "deterministic"
+ },
+ {
+  "label": "T6 c2 Developing countries coef",
+  "printed": -0.267,
+  "digits": 3,
+  "kind": "deterministic"
+ },
+ {
+  "label": "T6 c2 Developing countries t",
+  "printed": -4.58,
+  "digits": 2,
+  "kind": "deterministic"
+ },
+ {
+  "label": "T6 c3 Developing countries coef",
+  "printed": -0.259,
+  "digits": 3,
+  "kind": "deterministic"
+ },
+ {
+  "label": "T6 c3 Developing countries t",
+  "printed": -4.44,
+  "digits": 2,
+  "kind": "deterministic"
+ },
+ {
+  "label": "T6 c2 Australia coef",
+  "printed": -0.428,
+  "digits": 3,
+  "kind": "deterministic"
+ },
+ {
+  "label": "T6 c2 Australia t",
+  "printed": -4.21,
+  "digits": 2,
+  "kind": "deterministic"
+ },
+ {
+  "label": "T6 c3 Australia coef",
+  "printed": -0.424,
+  "digits": 3,
+  "kind": "deterministic"
+ },
+ {
+  "label": "T6 c3 Australia t",
+  "printed": -4.2,
+  "digits": 2,
+  "kind": "deterministic"
+ },
+ {
+  "label": "T6 c2 Canada coef",
+  "printed": -0.822,
+  "digits": 3,
+  "kind": "deterministic"
+ },
+ {
+  "label": "T6 c2 Canada t",
+  "printed": -11.73,
+  "digits": 2,
+  "kind": "deterministic"
+ },
+ {
+  "label": "T6 c3 Canada coef",
+  "printed": -0.821,
+  "digits": 3,
+  "kind": "deterministic"
+ },
+ {
+  "label": "T6 c3 Canada t",
+  "printed": -11.73,
+  "digits": 2,
+  "kind": "deterministic"
+ },
+ {
+  "label": "T6 c2 France coef",
+  "printed": -0.052,
+  "digits": 4,
+  "kind": "deterministic"
+ },
+ {
+  "label": "T6 c2 France t",
+  "printed": -0.62,
+  "digits": 2,
+  "kind": "deterministic"
+ },
+ {
+  "label": "T6 c3 France coef",
+  "printed": -0.0486,
+  "digits": 4,
+  "kind": "deterministic"
+ },
+ {
+  "label": "T6 c3 France t",
+  "printed": -0.58,
+  "digits": 2,
+  "kind": "deterministic"
+ },
+ {
+  "label": "T6 c2 Germany coef",
+  "printed": 0.122,
+  "digits": 3,
+  "kind": "deterministic"
+ },
+ {
+  "label": "T6 c2 Germany t",
+  "printed": 0.67,
+  "digits": 2,
+  "kind": "deterministic"
+ },
+ {
+  "label": "T6 c3 Germany coef",
+  "printed": 0.123,
+  "digits": 3,
+  "kind": "deterministic"
+ },
+ {
+  "label": "T6 c3 Germany t",
+  "printed": 0.68,
+  "digits": 2,
+  "kind": "deterministic"
+ },
+ {
+  "label": "T6 c2 Japan coef",
+  "printed": -0.217,
+  "digits": 3,
+  "kind": "deterministic"
+ },
+ {
+  "label": "T6 c2 Japan t",
+  "printed": -2.44,
+  "digits": 2,
+  "kind": "deterministic"
+ },
+ {
+  "label": "T6 c3 Japan coef",
+  "printed": -0.208,
+  "digits": 3,
+  "kind": "deterministic"
+ },
+ {
+  "label": "T6 c3 Japan t",
+  "printed": -2.33,
+  "digits": 2,
+  "kind": "deterministic"
+ },
+ {
+  "label": "T6 c2 Sweden coef",
+  "printed": 0.05,
+  "digits": 4,
+  "kind": "deterministic"
+ },
+ {
+  "label": "T6 c2 Sweden t",
+  "printed": 0.29,
+  "digits": 2,
+  "kind": "deterministic"
+ },
+ {
+  "label": "T6 c3 Sweden coef",
+  "printed": 0.0551,
+  "digits": 4,
+  "kind": "deterministic"
+ },
+ {
+  "label": "T6 c3 Sweden t",
+  "printed": 0.32,
+  "digits": 2,
+  "kind": "deterministic"
+ },
+ {
+  "label": "T6 c2 USA coef",
+  "printed": -0.634,
+  "digits": 3,
+  "kind": "deterministic"
+ },
+ {
+  "label": "T6 c2 USA t",
+  "printed": -9.44,
+  "digits": 2,
+  "kind": "deterministic"
+ },
+ {
+  "label": "T6 c3 USA coef",
+  "printed": -0.635,
+  "digits": 3,
+  "kind": "deterministic"
+ },
+ {
+  "label": "T6 c3 USA t",
+  "printed": -9.47,
+  "digits": 2,
+  "kind": "deterministic"
+ },
+ {
+  "label": "T6 c3 Published coef",
+  "printed": -1.184,
+  "digits": 3,
+  "kind": "deterministic"
+ },
+ {
+  "label": "T6 c3 Published t",
+  "printed": -0.77,
+  "digits": 2,
+  "kind": "deterministic"
+ },
+ {
+  "label": "T6 c3 Publication year coef",
+  "printed": -0.124,
+  "digits": 3,
+  "kind": "deterministic"
+ },
+ {
+  "label": "T6 c3 Publication year t",
+  "printed": -1.27,
+  "digits": 2,
+  "kind": "deterministic"
+ },
+ {
+  "label": "T6 c1 Constant coef",
+  "printed": 2.534,
+  "digits": 3,
+  "kind": "deterministic"
+ },
+ {
+  "label": "T6 c1 Constant t",
+  "printed": 2.48,
+  "digits": 2,
+  "kind": "deterministic"
+ },
+ {
+  "label": "T6 c2 Constant coef",
+  "printed": 1.69,
+  "digits": 3,
+  "kind": "deterministic"
+ },
+ {
+  "label": "T6 c2 Constant t",
+  "printed": 1.96,
+  "digits": 2,
+  "kind": "deterministic"
+ },
+ {
+  "label": "T6 c3 Constant coef",
+  "printed": 4.937,
+  "digits": 3,
+  "kind": "deterministic"
+ },
+ {
+  "label": "T6 c3 Constant t",
+  "printed": 2.19,
+  "digits": 2,
+  "kind": "deterministic"
+ },
+ {
+  "label": "T6 c1 Observations",
+  "printed": 692,
+  "digits": 0,
+  "kind": "count"
+ },
+ {
+  "label": "T6 c2 Observations",
+  "printed": 692,
+  "digits": 0,
+  "kind": "count"
+ },
+ {
+  "label": "T6 c3 Observations",
+  "printed": 692,
+  "digits": 0,
+  "kind": "count"
+ }
+]

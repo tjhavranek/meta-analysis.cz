@@ -1,0 +1,19 @@
+[
+  {"label": "OLS SE coef",       "printed": -0.410,   "digits": 3, "kind": "deterministic"},
+  {"label": "OLS SE se",         "printed": 0.265,    "digits": 3, "kind": "deterministic"},
+  {"label": "OLS const coef",    "printed": -0.293,   "digits": 3, "kind": "deterministic"},
+  {"label": "OLS const se",      "printed": 0.000778, "digits": 6, "kind": "deterministic"},
+  {"label": "OLS N",             "printed": 101,      "digits": 0, "kind": "count"},
+
+  {"label": "FE SE coef",        "printed": -1.217,   "digits": 3, "kind": "deterministic"},
+  {"label": "FE SE se",          "printed": 0.790,    "digits": 3, "kind": "deterministic"},
+  {"label": "FE const coef",     "printed": -0.222,   "digits": 3, "kind": "deterministic"},
+  {"label": "FE const se",       "printed": 0.0700,   "digits": 4, "kind": "deterministic"},
+  {"label": "FE N",              "printed": 101,      "digits": 0, "kind": "count"},
+
+  {"label": "ME SE coef",        "printed": -0.449,   "digits": 3, "kind": "deterministic"},
+  {"label": "ME SE se",          "printed": 0.688,    "digits": 3, "kind": "deterministic"},
+  {"label": "ME const coef",     "printed": -0.291,   "digits": 3, "kind": "deterministic"},
+  {"label": "ME const se",       "printed": 0.00731,  "digits": 5, "kind": "deterministic"},
+  {"label": "ME N",              "printed": 101,      "digits": 0, "kind": "count"}
+]

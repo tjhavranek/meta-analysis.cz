@@ -1,0 +1,42 @@
+[
+  {"label": "T5 Identif: SE coef",        "printed": 0.649,   "digits": 3, "kind": "deterministic"},
+  {"label": "T5 Identif: SE se",          "printed": 0.219,   "digits": 3, "kind": "deterministic"},
+  {"label": "T5 Identif: Constant coef",  "printed": 0.512,   "digits": 3, "kind": "deterministic"},
+  {"label": "T5 Identif: Constant se",    "printed": 0.0357,  "digits": 4, "kind": "deterministic"},
+  {"label": "T5 Identif: SE*Identif coef","printed": -0.0323, "digits": 4, "kind": "deterministic"},
+  {"label": "T5 Identif: SE*Identif se",  "printed": 0.332,   "digits": 3, "kind": "deterministic"},
+
+  {"label": "T5 Data aggr: SE coef",         "printed": 0.803,   "digits": 3, "kind": "deterministic"},
+  {"label": "T5 Data aggr: SE se",           "printed": 0.318,   "digits": 3, "kind": "deterministic"},
+  {"label": "T5 Data aggr: Constant coef",   "printed": 0.553,   "digits": 3, "kind": "deterministic"},
+  {"label": "T5 Data aggr: Constant se",     "printed": 0.0420,  "digits": 4, "kind": "deterministic"},
+  {"label": "T5 Data aggr: SE*Dataaggr coef","printed": -0.299,  "digits": 3, "kind": "deterministic"},
+  {"label": "T5 Data aggr: SE*Dataaggr se",  "printed": 0.334,   "digits": 3, "kind": "deterministic"},
+
+  {"label": "T5 Results aggr: SE coef",          "printed": 0.624,   "digits": 3, "kind": "deterministic"},
+  {"label": "T5 Results aggr: SE se",            "printed": 0.146,   "digits": 3, "kind": "deterministic"},
+  {"label": "T5 Results aggr: Constant coef",    "printed": 0.569,   "digits": 3, "kind": "deterministic"},
+  {"label": "T5 Results aggr: Constant se",      "printed": 0.0449,  "digits": 4, "kind": "deterministic"},
+  {"label": "T5 Results aggr: SE*Resultsaggr coef","printed": 0.0616,"digits": 4, "kind": "deterministic"},
+  {"label": "T5 Results aggr: SE*Resultsaggr se",  "printed": 0.249, "digits": 3, "kind": "deterministic"},
+
+  {"label": "T5 K perpetual: SE coef",         "printed": 0.754,  "digits": 3, "kind": "deterministic"},
+  {"label": "T5 K perpetual: SE se",           "printed": 0.259,  "digits": 3, "kind": "deterministic"},
+  {"label": "T5 K perpetual: Constant coef",   "printed": 0.551,  "digits": 3, "kind": "deterministic"},
+  {"label": "T5 K perpetual: Constant se",     "printed": 0.0337, "digits": 4, "kind": "deterministic"},
+  {"label": "T5 K perpetual: SE*Kperpet coef", "printed": -0.334, "digits": 3, "kind": "deterministic"},
+  {"label": "T5 K perpetual: SE*Kperpet se",   "printed": 0.289,  "digits": 3, "kind": "deterministic"},
+
+  {"label": "T5 Short run: SE coef",          "printed": 0.473,  "digits": 3, "kind": "deterministic"},
+  {"label": "T5 Short run: SE se",            "printed": 0.0903, "digits": 4, "kind": "deterministic"},
+  {"label": "T5 Short run: Constant coef",    "printed": 0.587,  "digits": 3, "kind": "deterministic"},
+  {"label": "T5 Short run: Constant se",      "printed": 0.0155, "digits": 4, "kind": "deterministic"},
+  {"label": "T5 Short run: SE*Shortrun coef", "printed": 1.741,  "digits": 3, "kind": "deterministic"},
+  {"label": "T5 Short run: SE*Shortrun se",   "printed": 0.885,  "digits": 3, "kind": "deterministic"},
+
+  {"label": "T5 Studies (all columns)",      "printed": 121,  "digits": 0, "kind": "count"},
+  {"label": "T5 Observations (all columns)", "printed": 3186, "digits": 0, "kind": "count"},
+
+  {"label": "T5 Translog: SE coef",              "printed": 0.664,  "digits": 3, "kind": "deterministic"},
+  {"label": "T5 Translog: Constant coef",        "printed": 0.529,  "digits": 3, "kind": "deterministic"}
+]

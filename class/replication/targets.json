@@ -1,0 +1,29 @@
+[
+  {"label": "Base N after drop if effect_true==0", "printed": 2434, "digits": 0, "kind": "count"},
+
+  {"label": "OLS: Publication bias (coef)", "printed": 0.0331, "digits": 4, "kind": "deterministic"},
+  {"label": "OLS: Publication bias (se)", "printed": 0.0944, "digits": 4, "kind": "deterministic"},
+  {"label": "OLS: Effect beyond bias / constant (coef)", "printed": -0.297, "digits": 3, "kind": "deterministic"},
+  {"label": "OLS: Effect beyond bias / constant (se)", "printed": 0.114, "digits": 3, "kind": "deterministic"},
+
+  {"label": "FE: Publication bias (coef)", "printed": 0.00613, "digits": 5, "kind": "deterministic"},
+  {"label": "FE: Publication bias (se)", "printed": 0.0795, "digits": 4, "kind": "deterministic"},
+  {"label": "FE: Effect beyond bias / constant (coef)", "printed": -0.262, "digits": 3, "kind": "deterministic"},
+  {"label": "FE: Effect beyond bias / constant (se)", "printed": 0.101, "digits": 3, "kind": "deterministic"},
+
+  {"label": "IV: Publication bias (coef)", "printed": 0.0644, "digits": 4, "kind": "deterministic"},
+  {"label": "IV: Publication bias (se)", "printed": 0.150, "digits": 3, "kind": "deterministic"},
+  {"label": "IV: Effect beyond bias / constant (coef)", "printed": -0.345, "digits": 3, "kind": "deterministic"},
+  {"label": "IV: Effect beyond bias / constant (se)", "printed": 0.0929, "digits": 4, "kind": "deterministic"},
+  {"label": "IV: First-stage robust F-stat", "printed": 22.5, "digits": 1, "kind": "deterministic"},
+
+  {"label": "Study: Publication bias (coef)", "printed": -0.0733, "digits": 4, "kind": "deterministic"},
+  {"label": "Study: Publication bias (se)", "printed": 0.210, "digits": 3, "kind": "deterministic"},
+  {"label": "Study: Effect beyond bias / constant (coef)", "printed": -0.625, "digits": 3, "kind": "deterministic"},
+  {"label": "Study: Effect beyond bias / constant (se)", "printed": 0.212, "digits": 3, "kind": "deterministic"},
+
+  {"label": "Precision: Publication bias (coef)", "printed": -0.0575, "digits": 4, "kind": "deterministic"},
+  {"label": "Precision: Publication bias (se)", "printed": 0.140, "digits": 3, "kind": "deterministic"},
+  {"label": "Precision: Effect beyond bias / constant (coef)", "printed": -0.182, "digits": 3, "kind": "deterministic"},
+  {"label": "Precision: Effect beyond bias / constant (se)", "printed": 0.0577, "digits": 4, "kind": "deterministic"}
+]

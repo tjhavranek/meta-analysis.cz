@@ -1,0 +1,41 @@
+[
+  {"label": "H3: Intercept (bias) coef",  "printed": -0.277, "digits": 3, "kind": "deterministic"},
+  {"label": "H3: Intercept (bias) se",    "printed": 0.176,  "digits": 3, "kind": "deterministic"},
+  {"label": "H3: 1/SE (effect) coef",     "printed": 0.032,  "digits": 3, "kind": "deterministic"},
+  {"label": "H3: 1/SE (effect) se",       "printed": 0.014,  "digits": 3, "kind": "deterministic"},
+  {"label": "H3: R2",                     "printed": 0.05,   "digits": 2, "kind": "deterministic"},
+  {"label": "H3: Observations",           "printed": 208,    "digits": 0, "kind": "count"},
+  {"label": "H3: Studies",                "printed": 69,     "digits": 0, "kind": "count"},
+
+  {"label": "H6: Intercept (bias) coef",  "printed": -0.407, "digits": 3, "kind": "deterministic"},
+  {"label": "H6: Intercept (bias) se",    "printed": 0.186,  "digits": 3, "kind": "deterministic"},
+  {"label": "H6: 1/SE (effect) coef",     "printed": 0.033,  "digits": 3, "kind": "deterministic"},
+  {"label": "H6: 1/SE (effect) se",       "printed": 0.021,  "digits": 3, "kind": "deterministic"},
+  {"label": "H6: R2",                     "printed": 0.03,   "digits": 2, "kind": "deterministic"},
+  {"label": "H6: Observations",           "printed": 215,    "digits": 0, "kind": "count"},
+  {"label": "H6: Studies",                "printed": 70,     "digits": 0, "kind": "count"},
+
+  {"label": "H12: Intercept (bias) coef", "printed": -0.341, "digits": 3, "kind": "deterministic"},
+  {"label": "H12: Intercept (bias) se",   "printed": 0.156,  "digits": 3, "kind": "deterministic"},
+  {"label": "H12: 1/SE (effect) coef",    "printed": -0.007, "digits": 3, "kind": "deterministic"},
+  {"label": "H12: 1/SE (effect) se",      "printed": 0.016,  "digits": 3, "kind": "deterministic"},
+  {"label": "H12: R2",                    "printed": 0.00,   "digits": 2, "kind": "deterministic"},
+  {"label": "H12: Observations",          "printed": 215,    "digits": 0, "kind": "count"},
+  {"label": "H12: Studies",               "printed": 70,     "digits": 0, "kind": "count"},
+
+  {"label": "H18: Intercept (bias) coef", "printed": -0.393, "digits": 3, "kind": "deterministic"},
+  {"label": "H18: Intercept (bias) se",   "printed": 0.147,  "digits": 3, "kind": "deterministic"},
+  {"label": "H18: 1/SE (effect) coef",    "printed": -0.025, "digits": 3, "kind": "deterministic"},
+  {"label": "H18: 1/SE (effect) se",      "printed": 0.014,  "digits": 3, "kind": "deterministic"},
+  {"label": "H18: R2",                    "printed": 0.02,   "digits": 2, "kind": "deterministic"},
+  {"label": "H18: Observations",          "printed": 217,    "digits": 0, "kind": "count"},
+  {"label": "H18: Studies",               "printed": 70,     "digits": 0, "kind": "count"},
+
+  {"label": "H36: Intercept (bias) coef", "printed": -0.784, "digits": 3, "kind": "deterministic"},
+  {"label": "H36: Intercept (bias) se",   "printed": 0.122,  "digits": 3, "kind": "deterministic"},
+  {"label": "H36: 1/SE (effect) coef",    "printed": -0.018, "digits": 3, "kind": "deterministic"},
+  {"label": "H36: 1/SE (effect) se",      "printed": 0.008,  "digits": 3, "kind": "deterministic"},
+  {"label": "H36: R2",                    "printed": 0.01,   "digits": 2, "kind": "deterministic"},
+  {"label": "H36: Observations",          "printed": 205,    "digits": 0, "kind": "count"},
+  {"label": "H36: Studies",               "printed": 63,     "digits": 0, "kind": "count"}
+]

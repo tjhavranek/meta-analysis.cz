@@ -1,0 +1,15 @@
+[
+  {"label": "T1_FATPET_prec_coef",     "printed": 0.000667, "digits": 6, "kind": "deterministic"},
+  {"label": "T1_FATPET_prec_t",        "printed": 0.05,     "digits": 2, "kind": "deterministic"},
+  {"label": "T1_FATPET_const_coef",    "printed": 3.755,    "digits": 3, "kind": "deterministic"},
+  {"label": "T1_FATPET_const_t",       "printed": 4.04,     "digits": 2, "kind": "deterministic"},
+  {"label": "T1_FATPET_N",             "printed": 28,       "digits": 0, "kind": "count"},
+  {"label": "T1_FATPET_RMSE",          "printed": 3.169,    "digits": 3, "kind": "deterministic"},
+
+  {"label": "T2_FATPET_prec_coef",     "printed": 0.534,    "digits": 3, "kind": "deterministic"},
+  {"label": "T2_FATPET_prec_t",        "printed": 4.08,     "digits": 2, "kind": "deterministic"},
+  {"label": "T2_FATPET_const_coef",    "printed": 1.712,    "digits": 3, "kind": "deterministic"},
+  {"label": "T2_FATPET_const_t",       "printed": 2.21,     "digits": 2, "kind": "deterministic"},
+  {"label": "T2_FATPET_N",             "printed": 33,       "digits": 0, "kind": "count"},
+  {"label": "T2_FATPET_RMSE",          "printed": 3.234,    "digits": 3, "kind": "deterministic"}
+]
