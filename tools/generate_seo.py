@@ -64,7 +64,10 @@ _LLMS_NOTES = {
         "26 slides) and https://meta-analysis.cz/waive_chania.pdf (SRSM 2026, Chania, 12 slides "
         "plus a nine-slide technical appendix, which sets out the residual discontinuity "
         "test). Cite them as presentations, not as "
-        "published results. Prose version: https://meta-analysis.cz/maive/#extensions",
+        "published results. An earlier MAIVE-only talk, without WAIVE, is at "
+        "https://meta-analysis.cz/maive/maive_slides.pdf (MAER-Net, University of Augsburg, "
+        "September 2024, 11 slides); the two later decks cover the same ground and add the "
+        "extensions. Prose version: https://meta-analysis.cz/maive/#extensions",
 }
 
 def _catalog_doi():
