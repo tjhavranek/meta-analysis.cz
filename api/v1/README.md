@@ -68,12 +68,26 @@ curl -s https://meta-analysis.cz/api/v1/datasets.json | jq '.datasets[] | {id, n
 
 ## The harmonised table
 
-One row per harmonised **observation**, pooled across literatures: **50,441 rows
-from 42 literatures**. Rows are not always independent estimates — `price_puzzle`
-carries one row per impulse response per horizon (the five month horizons plus
-the trough, coded 99, and the peak, coded 88), and `house_prices` ships about
+One row per harmonised **observation**, pooled across literatures: **53,341 rows
+from 42 literatures**, of which **49,535 lie inside the analysis samples the source
+papers themselves define**. The paper-sample figure is the one to cite; the larger
+one counts every estimate carried, including those a paper excluded, which are
+flagged rather than hidden. Filter `in_paper_sample` to true to reproduce a paper's
+own sample, and read `paper_sample_exclusion` to see which clause removed a row.
+
+Rows are not always independent estimates — `price_puzzle`
+carries one row per impulse response per horizon, and `house_prices` ships about
 seven horizons per impulse response. Check `horizon` before treating rows as
-independent. Version **1.3.0**.
+independent. Version **2.0.0**.
+
+2.0.0 is a breaking release. `class` published the partial correlation of an
+appendix robustness block as its effect and now publishes the test-score scale its
+main models use, with the partial correlation carried in `effect_alt`; anything
+computed against 1.3.0 or earlier used the robustness metric. `activism` published
+twenty estimates with the wrong sign and reached 1,254 of the 1,851 rows available.
+`armington` featured a pair that cannot reproduce its own paper. The `pcc` and
+`se_pcc` columns are retired, having duplicated `effect` in seven of the eight
+datasets that filled them.
 
 1.1.0 added `finance_growth`, taking the table to 41 literatures, and 1.1.1
 removed 20 `price_puzzle` rows that corresponded to no source estimate, leaving
