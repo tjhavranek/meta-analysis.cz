@@ -229,25 +229,21 @@ Meta-analysis upweights studies reporting lower standard errors and hence more p
 		<div class="post" id="extensions">
 			<h2 class="title">Extensions</h2>
 			<div class="entry">
-<p>MAIVE is the published estimator and what this page is about: Irsova, Bom, Havranek and
-Rachinger, <i>Nature Communications</i> 16, 8454 (2025), on CRAN as the
-<a href="https://cran.r-project.org/package=MAIVE">MAIVE</a> package and in a browser at
-<a href="https://www.easymeta.org/">EasyMeta.org</a>. Two methods build on it, and neither has a
-paper yet, so the talks below are the only source and should be cited as talks.</p>
+<p>MAIVE is the published estimator and what this page is about. Two methods build on it, and
+neither has a paper yet, so the talks below are the only source.</p>
 
 <p><b>WAIVE</b>, the Weighted Adjustment Instrumental Variable Estimator, is the more aggressive
-correction. MAIVE instruments the standard error with sample size; WAIVE then downweights the
-excess precision that is left, and weights hardest where the t-statistic sits near 1.96.</p>
+correction. MAIVE instruments the standard error with sample size; WAIVE downweights the excess
+precision that is left.</p>
 
 <p><b>The residual discontinuity test</b> is a test for p-hacking built on the same first stage.
 Excess precision, the part of a standard error that sample size does not explain, should not jump
 at the significance threshold. RDT asks whether it does.</p>
 
 <p>Both are experimental options in EasyMeta, beside MAIVE. The talks are
-<a href="/waive_ottawa.pdf">MAER-Net, Ottawa, 2025</a>, 26 slides;
-<a href="/waive_chania.pdf">SRSM, Chania, 2026</a>, 12 slides and a technical appendix; and
-<a href="/rdt_chemnitz.pdf">MAER-Net, Chemnitz, 2026</a>, 14 slides and a technical appendix, which
-is the one on the test.</p>
+<a href="/waive_ottawa.pdf">MAER-Net, Ottawa, 2025</a> on WAIVE,
+<a href="/waive_chania.pdf">SRSM, Chania, 2026</a>, and
+<a href="/rdt_chemnitz.pdf">MAER-Net, Chemnitz, 2026</a> on the test.</p>
 			</div>
 		</div>
 	</div>
