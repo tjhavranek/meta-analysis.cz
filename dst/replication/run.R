@@ -30,19 +30,19 @@
 #              degrees-of-freedom convention distinct from a manual collapse-then-regress. A
 #              needed command with no wrapper is a stop-and-report, not a near-enough substitute.
 #   Country -- fixed effects "at the country level". Every panel/cluster variable that is
-#              actually evidenced in the brief (COUNTRY: 8 groups in this subsample; COUNTRYA,
+#              actually present in the data (COUNTRY: 8 groups in this subsample; COUNTRYA,
 #              the do-file's own adjusted grouping that merges Australia into USA and Sweden
 #              into Norway: 6 groups) was tried under st_xtreg_fe with each plausible clustering
 #              choice (own-group, IDSTUDY, and two-way). The closest, panel=COUNTRYA, gives a
 #              PRECISION coefficient of -0.2789 against a printed -0.278 (rounds to -0.279, a
 #              miss) and no clustering choice reproduces the printed SE of 0.805. The do-file
-#              excerpt in the brief contains no explicit "Country" xtreg/ivreg2 line to check
+#              author's code contains no explicit "Country" xtreg/ivreg2 line to check
 #              the construction against, so this column is left unresolved rather than guessed.
 #   IV      -- ivreg2 with SE instrumented. Table 3's footnote gives only a prose description of
 #              the instrument ("the number of observations (if the study is based on regression
 #              analysis)") and no such command appears in the provided author-code excerpt. The
 #              column's own N (90) is one row short of the REGRESSION==1 subsample (91), so a
-#              further unstated restriction is in play that the brief does not evidence.
+#              further unstated restriction is in play that the author's code does not show.
 
 if (file.exists("stata_compat.R")) source("stata_compat.R") else
   source("https://meta-analysis.cz/dst/replication/stata_compat.R")
@@ -115,8 +115,6 @@ results[["ME N"]]          <- stats::nobs(m_me)
 ##   Figure 4: "the mean estimate of -0.33 is very close to the median estimate of -0.3". So both
 ##   columns are reproduced below, each against its own printed value.
 ##
-##   (An earlier version of this file attributed the "same weight" sentence to the unweighted
-##   column and so reported -0.334 as the abstract's headline. It is -0.343.)
 ##
 ##   Section 4.3 / Table 6: "Table 6 provides the best-practice DST estimates for all 21
 ##   countries... The resulting global estimate is -0.01%, quite distant from -0.34%, the simple

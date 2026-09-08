@@ -64,7 +64,7 @@
   "printed": 370,
   "digits": 0,
   "kind": "discrepancy",
-  "note": "The paper prints N = 370 for this published-only column; this package computes 378. The authors' OWN LOG of the published run (Study/Papers/3_Vertical_Spillovers/Stata/vertical.log, 13 Jun 2010) contains 378 -- as 'Mixed-effects REML regression, Number of obs = 378, Group variable: idstudy, Number of groups = 26' -- and contains no regression anywhere with N = 370. So this package reproduces what the authors' code actually produced, and the printed figure differs from it. All three published-only columns show the same pattern (paper 370/241/305, log and this package 378/249/321), which points to the table being built from an earlier run rather than to an error here. The coefficients and standard errors of these same columns reproduce. Recorded for the author; the printed value is left exactly as published."
+  "note": "The paper prints N = 370 for this published-only column; this package computes 378. The authors' OWN LOG of the published run (Study/Papers/3_Vertical_Spillovers/Stata/vertical.log, 13 Jun 2010) contains 378, as 'Mixed-effects REML regression, Number of obs = 378, Group variable: idstudy, Number of groups = 26', and contains no regression anywhere with N = 370. So this package reproduces what the authors' code actually produced, and the printed figure differs from it. All three published-only columns show the same pattern (paper 370/241/305, log and this package 378/249/321), which points to the table being built from an earlier run rather than to an error here. The coefficients and standard errors of these same columns reproduce. The printed value is left exactly as published."
  },
  {
   "label": "PanelA_Pub_Studies",
@@ -137,7 +137,7 @@
   "printed": 241,
   "digits": 0,
   "kind": "discrepancy",
-  "note": "The paper prints N = 241 for this published-only column; this package computes 249. The authors' OWN LOG of the published run (Study/Papers/3_Vertical_Spillovers/Stata/vertical.log, 13 Jun 2010) contains 249 -- as 'Mixed-effects REML regression, Number of obs = 249, Group variable: idstudy, Number of groups = 19' -- and contains no regression anywhere with N = 241. So this package reproduces what the authors' code actually produced, and the printed figure differs from it. All three published-only columns show the same pattern (paper 370/241/305, log and this package 378/249/321), which points to the table being built from an earlier run rather than to an error here. The coefficients and standard errors of these same columns reproduce. Recorded for the author; the printed value is left exactly as published."
+  "note": "The paper prints N = 241 for this published-only column; this package computes 249. The authors' OWN LOG of the published run (Study/Papers/3_Vertical_Spillovers/Stata/vertical.log, 13 Jun 2010) contains 249, as 'Mixed-effects REML regression, Number of obs = 249, Group variable: idstudy, Number of groups = 19', and contains no regression anywhere with N = 241. So this package reproduces what the authors' code actually produced, and the printed figure differs from it. All three published-only columns show the same pattern (paper 370/241/305, log and this package 378/249/321), which points to the table being built from an earlier run rather than to an error here. The coefficients and standard errors of these same columns reproduce. The printed value is left exactly as published."
  },
  {
   "label": "PanelB_Pub_Studies",
@@ -210,7 +210,7 @@
   "printed": 305,
   "digits": 0,
   "kind": "discrepancy",
-  "note": "The paper prints N = 305 for this published-only column; this package computes 321. The authors' OWN LOG of the published run (Study/Papers/3_Vertical_Spillovers/Stata/vertical.log, 13 Jun 2010) contains 321 -- as 'Mixed-effects REML regression, Number of obs = 321, Group variable: idstudy, Number of groups = 27' -- and contains no regression anywhere with N = 305. So this package reproduces what the authors' code actually produced, and the printed figure differs from it. All three published-only columns show the same pattern (paper 370/241/305, log and this package 378/249/321), which points to the table being built from an earlier run rather than to an error here. The coefficients and standard errors of these same columns reproduce. Recorded for the author; the printed value is left exactly as published."
+  "note": "The paper prints N = 305 for this published-only column; this package computes 321. The authors' OWN LOG of the published run (Study/Papers/3_Vertical_Spillovers/Stata/vertical.log, 13 Jun 2010) contains 321, as 'Mixed-effects REML regression, Number of obs = 321, Group variable: idstudy, Number of groups = 27', and contains no regression anywhere with N = 305. So this package reproduces what the authors' code actually produced, and the printed figure differs from it. All three published-only columns show the same pattern (paper 370/241/305, log and this package 378/249/321), which points to the table being built from an earlier run rather than to an error here. The coefficients and standard errors of these same columns reproduce. The printed value is left exactly as published."
  },
  {
   "label": "PanelC_Pub_Studies",

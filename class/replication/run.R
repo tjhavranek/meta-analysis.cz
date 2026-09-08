@@ -129,9 +129,9 @@ add("Precision: Effect beyond bias / constant (se)",    co_prec$std.error[co_pre
 # The reason is visible in the data: the STAR subsample contains only TWO studies, so a
 # cluster-robust variance built on two clusters is degenerate. Running Stata on this data set
 # confirms both readings exactly -- clustered gives se .531798, unclustered gives se .4788269,
-# and the paper's Table B4 prints 0.479. An earlier version of this file clustered every row and
-# so missed the STAR standard error by 11%; the coefficient (-2.407316) and N (56) are identical
-# either way, which is why the error survived a first pass.
+# and the paper's Table B4 prints 0.479. Clustering every row instead misses the STAR
+# standard error by 11%; the coefficient (-2.407316) and N (56) are identical either way, which
+# is what makes the difference easy to overlook.
 #
 # Table B4 printed values (Panel A, OLS column, "Effect beyond bias"), for comparison:
 #   STAR experiment     -2.407 *** (0.479) [-3.310, -1.679]  N=56

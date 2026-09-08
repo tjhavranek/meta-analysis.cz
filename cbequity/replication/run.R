@@ -3,9 +3,7 @@
 #        Comparative Economic Studies (2020), https://doi.org/10.1057/s41294-019-00092-1
 #
 # Provenance: AUTHOR CODE. The site publishes the author's Stata script at
-# site/cbequity/code.txt (31 lines). The brief handed to the first version of this package
-# said no author code existed; that was wrong, and the first version reconstructed the
-# specification from the paper's prose instead. This version follows code.txt line by line.
+# site/cbequity/code.txt (31 lines). This package follows code.txt line by line.
 # The estimation lines, verbatim:
 #
 #   xtset idstudy

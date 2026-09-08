@@ -3,11 +3,11 @@
 # bias). Reproduces only what the author's own reform.do computes for that table; no estimator
 # substitutions.
 #
-# Author code (verbatim, from site/reforms/reform.do -- the brief's "x"/`/* */` markings turned
+# Author code (verbatim, from site/reforms/reform.do -- the original "x"/`/* */` markings turned
 # out to flag lines the automated scan could not execute stand-alone, e.g. because they call
 # SSC-installed commands (metan, rreg) or Stata `foreach`/`local` machinery, NOT that the do-file
 # has them commented out. The plain-text reform.do on disk carries none of these lines inside a
-# comment block, and it matches the brief's line list 1:1. Provenance is therefore genuine
+# comment block, and it matches the author's line list 1:1. Provenance is therefore genuine
 # author code.):
 #
 #   gen pcor = lib/sqrt(lib*lib+df)

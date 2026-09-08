@@ -209,7 +209,7 @@
   "printed": 4,
   "digits": 0,
   "kind": "not_reproduced",
-  "note": "NOT PRODUCED BY THIS PACKAGE. The paper's '4' and '2.5' are rounded verbal summaries of Bayesian model averaging results (Table 5's 3.7, 95% CI 2 to 20), which the sanctioned wrappers cannot fit. The numbers shown are the FE and IV implied elasticities on the same subsample, which bracket the paper's figure but are a different estimator. Same claim as above; brackets 4 from below. The paper's precise '4' (and Table 5's 3.7, 95% CI 2-20) is a Bayesian-model-averaging combination over 24 moderators with no stata_compat.R wrapper -- not independently reproducible; these two bracketing numbers are the closest evidence obtainable from the allowed toolkit."
+  "note": "NOT PRODUCED BY THIS PACKAGE. The paper's '4' and '2.5' are rounded verbal summaries of Bayesian model averaging results (Table 5's 3.7, 95% CI 2 to 20), which the sanctioned wrappers cannot fit. The numbers shown are the FE and IV implied elasticities on the same subsample, which bracket the paper's figure but are a different estimator. Same claim as above; brackets 4 from below. The paper's precise '4' (and Table 5's 3.7, 95% CI 2-20) is a Bayesian-model-averaging combination over 24 moderators with no stata_compat.R wrapper, not independently reproducible; these two bracketing numbers are the closest evidence obtainable from the allowed toolkit."
  },
  {
   "label": "HEADLINE_developing_FE_implied_elasticity",
@@ -230,13 +230,13 @@
   "printed": 4,
   "digits": 0,
   "kind": "not_reproduced",
-  "note": "NOT PRODUCED BY THIS PACKAGE. The paper's '4' and '2.5' are rounded verbal summaries of Bayesian model averaging results (Table 5's 3.7, 95% CI 2 to 20), which the sanctioned wrappers cannot fit. The numbers shown are the FE and IV implied elasticities on the same subsample, which bracket the paper's figure but are a different estimator. Sec.III: 'developed countries (above 4)'. The FE corrected inverse elasticity for this subsample is statistically indistinguishable from zero (t=0.22), so -1/coefficient is large in magnitude but its sign is not meaningful -- reported as an honest miss on the point value, though a near-zero corrected inverse elasticity is qualitatively consistent with 'a large elasticity'."
+  "note": "NOT PRODUCED BY THIS PACKAGE. The paper's '4' and '2.5' are rounded verbal summaries of Bayesian model averaging results (Table 5's 3.7, 95% CI 2 to 20), which the sanctioned wrappers cannot fit. The numbers shown are the FE and IV implied elasticities on the same subsample, which bracket the paper's figure but are a different estimator. Sec.III: 'developed countries (above 4)'. The FE corrected inverse elasticity for this subsample is statistically indistinguishable from zero (t=0.22), so -1/coefficient is large in magnitude but its sign is not meaningful, reported as an honest miss on the point value, though a near-zero corrected inverse elasticity is qualitatively consistent with 'a large elasticity'."
  },
  {
   "label": "HEADLINE_developed_IV_implied_elasticity",
   "printed": 4,
   "digits": 0,
   "kind": "not_reproduced",
-  "note": "NOT PRODUCED BY THIS PACKAGE. The paper's '4' and '2.5' are rounded verbal summaries of Bayesian model averaging results (Table 5's 3.7, 95% CI 2 to 20), which the sanctioned wrappers cannot fit. The numbers shown are the FE and IV implied elasticities on the same subsample, which bracket the paper's figure but are a different estimator. Same claim, IV column; also not statistically distinguishable from zero (t=1.00) and first-stage F=8.7 signals a weak instrument for this subsample -- reported as an honest miss on the point value, same qualitative caveat as the FE column."
+  "note": "NOT PRODUCED BY THIS PACKAGE. The paper's '4' and '2.5' are rounded verbal summaries of Bayesian model averaging results (Table 5's 3.7, 95% CI 2 to 20), which the sanctioned wrappers cannot fit. The numbers shown are the FE and IV implied elasticities on the same subsample, which bracket the paper's figure but are a different estimator. Same claim, IV column; also not statistically distinguishable from zero (t=1.00) and first-stage F=8.7 signals a weak instrument for this subsample, reported as an honest miss on the point value, same qualitative caveat as the FE column."
  }
 ]

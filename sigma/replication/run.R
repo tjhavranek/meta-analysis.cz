@@ -60,13 +60,9 @@ d$se_k_perpet   <- d$se_win5 * d$k_perpet
 stopifnot(nrow(.tl) == nrow(d), identical(as.numeric(.tl$idstudy), as.numeric(d$idstudy)))
 d$translog    <- .tl$translog
 d$se_translog <- d$se_win5 * d$translog
-# (An earlier version of this file argued at length that the translog dummy was unrecoverable,
-# because the `formula` string it is built from is not among the 115 published columns and no
-# combination of the published ones reproduces it. That argument was sound about the SITE. It
-# was wrong as a conclusion: the workbook sigma.do itself imports, _REVISION/calculation/
-# sigma.xlsx, still exists in the authors' folder and carries the column. The dummy is now
-# taken from there and shipped with this package -- see above. The lesson is the one that keeps
-# recurring on this project: "not in the published data" is not the same as "not obtainable".)
+# The dummy is not among the 115 columns the site publishes: it is built from a raw string
+# variable, `formula`, that the published export does not carry. It comes instead from the
+# workbook sigma.do itself imports, _REVISION/calculation/sigma.xlsx, which does carry it.
 d$se_short   <- d$se_win5 * d$shortrun_expl
 
 results <- list()

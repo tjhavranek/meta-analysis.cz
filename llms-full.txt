@@ -15,7 +15,6 @@ Paper: https://meta-analysis.cz/activism/activism2.pdf
 Appendix: https://meta-analysis.cz/activism/appendix.pdf
 Data: https://meta-analysis.cz/activism/activism.xlsx
 Code: https://meta-analysis.cz/activism/activism.R
-R replication: https://meta-analysis.cz/activism/replication/run.R
 Full text (HTML): https://meta-analysis.cz/activism/paper/
 
 Abstract: We conduct a meta-analysis of 1,973 estimates of stock price responses to shareholder activism reported in 67 primary studies. We document publication bias in the literature. Corrected activism effects range from 0% to 1.5%. Effects are stronger when shareholder rights are better protected and when stock markets are smaller. Markets respond more positively to activism by individual investors, confrontational activism, and activism aimed at company sale. Estimates based on longer periods, simpler risk-adjustment approaches, more recent and longer datasets, as well as those published in more reputable journals tend to be larger.
@@ -1609,7 +1608,6 @@ Additional Results: https://meta-analysis.cz/armington/appendix.pdf
 Included Studies: https://meta-analysis.cz/armington/studies.xlsx
 Data: https://meta-analysis.cz/armington/armington.xlsx
 Code: https://meta-analysis.cz/armington/armington.do
-R replication: https://meta-analysis.cz/armington/replication/run.R
 Full text (HTML): https://meta-analysis.cz/armington/paper/
 
 Abstract: A key parameter in international economics is the elasticity of substitution between domestic and foreign goods, also called the Armington elasticity. Yet estimates vary widely. We collect 3,524 reported estimates of the elasticity, construct 32 variables that reflect the context in which researchers obtain their estimates, and examine what drives the heterogeneity in the results. To account for model uncertainty, we employ Bayesian and frequentist model averaging. To correct for publication bias, we use newly developed non-linear techniques. Our main results are threefold. First, there is publication bias against small and statistically insignificant elasticities. Second, differences in results are best explained by differences in data: aggregation, frequency, size, and dimension. Third, the elasticity implied by the literature after accounting for both publication bias and study quality lies in the range 2.5--5.1 with a median of 3.8.
@@ -4218,7 +4216,6 @@ Paper: https://meta-analysis.cz/bma/bma2.pdf
 Data in XLS (6.8 MB): https://meta-analysis.cz/bma/determinants.xls
 Stata Program: https://meta-analysis.cz/bma/determinants.do
 Excluded Studies: https://meta-analysis.cz/bma/excluded_studies.txt
-R replication: https://meta-analysis.cz/bma/replication/run.R
 Full text (HTML): https://meta-analysis.cz/bma/paper/
 
 Abstract: The voluminous empirical research on horizontal productivity spillovers from foreign investors to domestic firms has yielded mixed results. In this paper, we collect 1205 estimates of horizontal spillovers from the literature and examine which factors influence spillover magnitude. To identify the most important determinants of spillovers among 43 collected variables, we employ Bayesian model averaging. Our results suggest that horizontal spillovers are on average zero, but that their sign and magnitude depend systematically on the characteristics of the domestic economy and foreign investors. The most important determinants are the technology gap between domestic and foreign firms and the ownership structure in investment projects. Foreign investors who form joint ventures with domestic firms and who come from countries with a modest technology edge create the largest benefits for the domestic economy.
@@ -4762,7 +4759,6 @@ Examined Studies: https://meta-analysis.cz/border/search.htm
 Included Studies: https://meta-analysis.cz/border/studies.xls
 Data: https://meta-analysis.cz/border/border.dta
 Code: https://meta-analysis.cz/border/border.do
-R replication: https://meta-analysis.cz/border/replication/run.R
 Full text (HTML): https://meta-analysis.cz/border/paper/
 
 Abstract: National borders reduce trade, but most estimates of the border effect seem puzzlingly large. We show that major methodological innovations of the last decade combine to shrink the border effect to a one-third reduction in international trade flows worldwide. For the computation we collect 1,271 estimates of the border effect reported in 61 studies, codify 32 aspects of study design that may influence the estimates, and use Bayesian model averaging to take into account model uncertainty in meta-analysis. Our results suggest that methods systematically affect the estimated border effects. Especially important is the level of aggregation, measurement of internal and external distance, control for multilateral resistance, and treatment of zero trade flows. We also find that the magnitude of the border effect is associated with country characteristics, such as size and income.
@@ -5284,7 +5280,6 @@ Published version: https://doi.org/10.1057/s41294-019-00092-1
 Paper: https://meta-analysis.cz/cbequity/cbequity.pdf
 Data: https://meta-analysis.cz/cbequity/CBFS.xlsx
 Code: https://meta-analysis.cz/cbequity/code.txt
-R replication: https://meta-analysis.cz/cbequity/replication/run.R
 Full text (HTML): https://meta-analysis.cz/cbequity/paper/
 
 Abstract: We examine the use of central bank equity as an unconventional monetary policy tool. In this setting, a central bank employs digital currency to transfer digital cash to each household, thus supporting consumption directly when needed. The asset side of the central bank's balance sheet remains unchanged, and the creation of new digital cash is offset by a decrease in central bank equity. The central bank thus incurs an immediate loss but does not take on any additional risks for its future income statements. We address several objections to this policy, paying particular attention to the claim that weakening the financial strength of the central bank endangers long-term price stability. Through a meta-analysis of 176 estimates reported previously in the literature, we find that central bank financial strength has not historically correlated with inflation performance.
@@ -5634,7 +5629,6 @@ Supplement: https://meta-analysis.cz/class/appendix.pdf
 Studies: https://meta-analysis.cz/class/studies.xlsx
 Data: https://meta-analysis.cz/class/class.xlsx
 Code: https://meta-analysis.cz/class/class.do
-R replication: https://meta-analysis.cz/class/replication/run.R
 Full text (HTML): https://meta-analysis.cz/class/paper/
 
 Abstract: Class size reduction mandates are routinely justified by studies reporting positive effects on student achievement. Yet other studies report no effects, and the literature as a whole awaits correction for potential publication bias. Moreover, if identification drives results systematically, the relevance of individual studies will vary. We build a sample of 2,819 estimates collected from 66 studies and for each estimate classify 42 factors that reflect estimation context. We employ nonlinear techniques for publication bias correction and model averaging techniques to address model uncertainty. The results are consistent with little publication bias. The implied class size effect is negligible for all identification approaches except Tennessee's Student/Teacher Achievement Ratio project and for all contexts except classes of fewer than 15 students.
@@ -6318,7 +6312,6 @@ Read the paper: https://meta-analysis.cz/climate/climate2.pdf
 Additional results: https://meta-analysis.cz/climate/appendix.pdf
 Download the data: https://meta-analysis.cz/climate/climate.dta
 Download the code: https://meta-analysis.cz/climate/climate.do
-R replication: https://meta-analysis.cz/climate/replication/run.R
 Full text (HTML): https://meta-analysis.cz/climate/paper/
 
 Abstract: We present a meta-regression analysis of the relation between the concentration of carbon dioxide in the atmosphere and changes in global temperature. The relation is captured by "climate sensitivity," which measures the response to a doubling of carbon dioxide concentrations compared to pre-industrial levels. Estimates of climate sensitivity play a crucial role in evaluating the impacts of climate change and constitute one of the most important inputs into the computation of the social cost of carbon, which reflects the socially optimal value of a carbon tax. Climate sensitivity has been estimated by many researchers, but their results vary significantly. We collect 48 estimates from 16 studies and analyze the literature quantitatively. We find evidence for publication selection bias: researchers tend to report preferentially large estimates of climate sensitivity. Corrected for publication bias, the bulk of the literature is consistent with climate sensitivity lying between 1.4 and 2.3 degrees Celsius.
@@ -6513,7 +6506,6 @@ Additional Results: https://meta-analysis.cz/competition/additional_results.pdf
 Included Studies: https://meta-analysis.cz/competition/included_studies.pdf
 Data: https://meta-analysis.cz/competition/competition.xlsx
 Code: https://meta-analysis.cz/competition/competition.do
-R replication: https://meta-analysis.cz/competition/replication/run.R
 Full text (HTML): https://meta-analysis.cz/competition/paper/
 
 Abstract: The theoretical literature gives conflicting predictions on how bank competition should affect financial stability, and dozens of researchers have attempted to evaluate the relationship empirically. We collect 598 estimates of the competition-stability nexus reported in 31 studies and analyze the literature using meta-analysis methods. We control for 35 aspects of study design and employ Bayesian model averaging to tackle the resulting model uncertainty. Our findings suggest that the definition of financial stability and bank competition used by researchers influences their results in a systematic way. The choice of data, estimation methodology, and control variables also affects the reported coefficient. We find evidence for moderate publication bias. Taken together, the estimates reported in the literature suggest little interplay between competition and stability, even when corrected for publication bias and potential misspecifications.
@@ -11222,7 +11214,6 @@ Paper: https://meta-analysis.cz/discrate/discrate2.pdf
 Included Studies: https://meta-analysis.cz/discrate/studies.xlsx
 Data: https://meta-analysis.cz/discrate/discrate.dta
 Code: https://meta-analysis.cz/discrate/discrate.do
-R replication: https://meta-analysis.cz/discrate/replication/run.R
 Full text (HTML): https://meta-analysis.cz/discrate/paper/
 
 Abstract: A key parameter estimated by lab and field experiments in economics is the individual discount rate---and the results vary widely. We examine the extent to which this variance can be attributed to observable differences in methods, subject pools, and potential publication bias. To address the model uncertainty inherent to such an exercise, we employ Bayesian and frequentist model averaging. We obtain evidence consistent with publication bias against unintuitive results. The corrected mean annual discount rate is 0.33. Our findings also suggest that discount rates are independent across domains: people tend to be less patient when health is at stake compared to money. Negative framing is associated with more patience. Finally, the results of lab and field experiments differ systematically, and it also matters whether the experiment relies on students or uses broader samples of the population.
@@ -11966,7 +11957,6 @@ Examined Studies: https://meta-analysis.cz/dst/search.html
 Included Studies: https://meta-analysis.cz/dst/studies.xlsx
 Data: https://meta-analysis.cz/dst/dst.xlsx
 Code: https://meta-analysis.cz/dst/dst.do
-R replication: https://meta-analysis.cz/dst/replication/run.R
 Full text (HTML): https://meta-analysis.cz/dst/paper/
 
 Abstract: The original rationale for adopting daylight saving time (DST) was energy savings. Modern research studies, however, question the magnitude and even direction of the effect of DST on electricity consumption. Representing the first meta-analysis in this literature, we collect 162 estimates from 44 studies and find that the mean reported estimate indicates slight electricity savings: 0.34% during the days when DST applies. The literature is not affected by publication bias, but the results vary systematically depending on the exact data and methodology applied. Using Bayesian model averaging we identify the most important factors driving the heterogeneity of the reported effects: data frequency, estimation technique (simulation vs. regression), and, importantly, the latitude of the country considered. Electricity savings are larger for countries farther away from the equator, while subtropical regions consume more energy because of DST.
@@ -13567,7 +13557,6 @@ Examined Studies: https://meta-analysis.cz/education/search.html
 Included Studies: https://meta-analysis.cz/education/studies.xlsx
 Data: https://meta-analysis.cz/education/education.xlsx
 Code: https://meta-analysis.cz/education/education.do
-R replication: https://meta-analysis.cz/education/replication/run.R
 Full text (HTML): https://meta-analysis.cz/education/paper/
 
 Abstract: One of the most frequently examined relationships in education economics is the impact of tuition increases on the demand for higher education. We provide a quantitative synthesis of 443 estimates of this effect reported in 43 studies. While large negative estimates dominate the literature, we show that researchers report positive and insignificant estimates less often than they should. After correcting for this publication bias, we find that the literature is consistent with the mean tuition-enrollment elasticity being close to zero. Nevertheless, we identify substantial heterogeneity among the reported effects: for example, male students and students at private schools react strongly to changes in tuition. The results are robust to controlling for model uncertainty using both Bayesian and frequentist methods of model averaging.
@@ -14309,7 +14298,6 @@ Additional Results: https://meta-analysis.cz/eis/eis_appendix.pdf
 Examined Studies: https://meta-analysis.cz/eis/Scholar_search.htm
 Included Studies: https://meta-analysis.cz/eis/studies.xls
 Data and Code: https://meta-analysis.cz/eis/eis.zip
-R replication: https://meta-analysis.cz/eis/replication/run.R
 Full text (HTML): https://meta-analysis.cz/eis/paper/
 
 Abstract: I examine 2,735 estimates of the elasticity of intertemporal substitution in consumption (EIS) reported in 169 published studies. The literature shows strong selective reporting: researchers discard negative and insignificant estimates too often, which pulls the mean estimate up by about 0.5. The reporting bias dwarfs the effects of methods, with the exception of the choice between micro and macro data. When I correct the mean for the bias, for macro estimates I get zero, even though the reported t-statistics are on average two. The corrected mean of micro estimates of the EIS for asset holders is around 0.3-0.4. Calibrations greater than 0.8 are inconsistent with the bulk of the empirical evidence. Negative estimates of the elasticity are underreported ... ... and so are marginally insignificant estimates.
@@ -16293,7 +16281,6 @@ Citation: Tomas Havranek (2010), "Rose Effect and the Euro: Is the Magic Gone?" 
 Published version: https://doi.org/10.1007/s10290-010-0050-1
 Read the paper: https://meta-analysis.cz/euro/euro2.pdf
 Download the dataset: https://meta-analysis.cz/euro/data.zip
-R replication: https://meta-analysis.cz/euro/replication/run.R
 Full text (HTML): https://meta-analysis.cz/euro/paper/
 
 Abstract: This paper presents an updated meta-analysis of the effect of currency unions on trade, focusing on the euro area. Using meta-regression methods such as funnel asymmetry test, evidence for strong publication bias is found. The estimated underlying effect for currency unions other than eurozone reaches more than 60%. However, according to the meta-regression analysis, the euro's trade promoting effect corrected for publication bias is insignificant. The Rose effect literature shows signs of the economics research cycle: reported t-statistic is a quadratic concave function of publication year. Explanatory meta-regression (robust fixed effects and random effects), that can explain about 70% of the heterogeneity in the literature, suggests that results published by some authors might consistently differ from the mainstream output and that study outcomes are systematically dependent on study design (usage of panel data, short- or long-run nature, number of countries in the data set).
@@ -16798,7 +16785,6 @@ Additional Results: https://meta-analysis.cz/excess_sensitivity/appendix.pdf
 Examined Studies: https://meta-analysis.cz/excess_sensitivity/search.html
 Included Studies: https://meta-analysis.cz/excess_sensitivity/studies.xlsx
 Data and Code: https://meta-analysis.cz/excess_sensitivity/data_code.zip
-R replication: https://meta-analysis.cz/excess_sensitivity/replication/run.R
 Full text (HTML): https://meta-analysis.cz/excess_sensitivity/paper/
 
 Abstract: We show that three factors combine to explain the mean magnitude of excess sensitivity reported in studies estimating the consumption response to income changes: the use of macro data, publication bias, and liquidity constraints. When micro data are used, publication bias is corrected for, and households under examination have substantial liquidity, the literature implies little evidence of deviations from consumption smoothing. The result holds when we control for 45 additional variables reflecting the methods employed by researchers and use Bayesian model averaging to account for model uncertainty. The estimates produced by this literature are also systematically affected by the size of the change in income and the chosen measure of consumption.
@@ -17858,7 +17844,6 @@ Citation: Mojmir Hampl, Tomas Havranek, and Zuzana Irsova (2020), "Foreign Capit
 Published version: https://doi.org/10.1080/00036846.2020.1726864
 Read the paper: https://meta-analysis.cz/fdi/fdi2.pdf
 Download data and code: https://meta-analysis.cz/fdi/spillovers.zip
-R replication: https://meta-analysis.cz/fdi/replication/run.R
 Full text (HTML): https://meta-analysis.cz/fdi/paper/
 
 Abstract: We provide a quantitative synthesis of the literature studying the effect of foreign direct investment (FDI) on the productivity of locally owned firms in the Czech Republic. To this end, we collect 332 previously reported estimates and use Bayesian model averaging to address model uncertainty. We find no evidence of publication bias, i.e., no sign of selective reporting of estimates that are statistically significant and show an intuitive sign. Our results suggest that more advanced techniques yield substantially larger positive effects (FDI spillovers). When placing more weight on estimates that solve important identification problems in the literature (such as using data on existing linkages between firms instead of approximations based on input-output tables), we find that, as of 2018, a 10-percentage-point increase in foreign presence is likely to lift the productivity of domestic firms by 11%. The effect is even larger for joint ventures, reaching 19%.
@@ -18106,7 +18091,6 @@ Published version: https://doi.org/10.1111/joes.12068
 Read the paper: https://meta-analysis.cz/finance_growth/finance_growth2.pdf
 Download the appendix: https://meta-analysis.cz/finance_growth/appendix.pdf
 Download the dataset: https://meta-analysis.cz/finance_growth/finance_growth.zip
-R replication: https://meta-analysis.cz/finance_growth/replication/run.R
 Full text (HTML): https://meta-analysis.cz/finance_growth/paper/
 
 Abstract: We analyze 1334 estimates from 67 studies that examine the effect of financial development on economic growth. Taken together, the studies imply a positive and statistically significant effect, but the individual estimates vary widely. We find that both research design and heterogeneity in the underlying effect play a role in explaining the differences in results. Studies that do not address endogeneity tend to overstate the effect of finance on growth. While the effect seems to be weaker in poor countries, the effect decreases worldwide after the 1980s. Our results also suggest that stock markets support faster economic growth than other financial intermediaries. We find little evidence of publication bias in the literature.
@@ -18644,7 +18628,6 @@ Paper: https://meta-analysis.cz/forward/forward2.pdf
 Additional material: https://meta-analysis.cz/forward/appendix.pdf
 Data: https://meta-analysis.cz/forward/forward.dta
 Code: https://meta-analysis.cz/forward/forward.do
-R replication: https://meta-analysis.cz/forward/replication/run.R
 Full text (HTML): https://meta-analysis.cz/forward/paper/
 
 Abstract: A key theoretical prediction in financial economics is that under risk neutrality and rational expectations a currency's forward rates should form unbiased predictors of future spot rates. Yet scores of empirical studies report negative slope coefficients from regressions of spot rates on forward rates. We collect 3,643 estimates from 91 research articles and using recently developed techniques investigate the effect of publication and misspecification biases on the reported results. Correcting for these biases yields slope coefficients in the intervals (0.23,0.45) and (0.95,1.16) for the currencies of developed and emerging countries respectively, which implies that empirical evidence is in line with the theoretical prediction for emerging economies and less puzzling than commonly thought for developed economies. Our results also suggest that the coefficients are systematically influenced by the choice of data, numeraire currency, and estimation method.
@@ -19413,7 +19396,6 @@ Appendix: https://meta-analysis.cz/frisch/appendix.pdf
 Included Studies: https://meta-analysis.cz/frisch/studies.xlsx
 Data: https://meta-analysis.cz/frisch/frisch_data.zip
 Code: https://meta-analysis.cz/frisch/frisch_code.zip
-R replication: https://meta-analysis.cz/frisch/replication/run.R
 Full text (HTML): https://meta-analysis.cz/frisch/paper/
 
 Abstract: The intertemporal substitution (Frisch) elasticity of labor supply governs how structural models predict changes in people's willingness to work in response to changes in economic conditions or government fiscal policy. We show that the mean reported estimates of the elasticity are exaggerated due to publication bias. For both the intensive and extensive margins the literature provides over 700 estimates, with a mean of 0.5 in both cases. Correcting for publication bias and emphasizing quasi-experimental evidence reduces the mean intensive margin elasticity to 0.2 and renders the extensive margin elasticity tiny. A total hours elasticity of about 0.25 is the most consistent with empirical evidence. To trace the differences in reported elasticities to differences in estimation context, we collect 23 variables reflecting study design and employ Bayesian and frequentist model averaging to address model uncertainty. On both margins the elasticity is systematically larger for women and workers near retirement, but not enough to support a total hours elasticity above 0.5.
@@ -20023,7 +20005,6 @@ Citation: Tomas Havranek and Ondrej Kokes (2015), "Income Elasticity of Gasoline
 Published version: https://doi.org/10.1016/j.eneco.2014.11.004
 Read the paper: https://meta-analysis.cz/gasoline/gasoline2.pdf
 Download the data and code: https://meta-analysis.cz/gasoline/data.zip
-R replication: https://meta-analysis.cz/gasoline/replication/run.R
 Full text (HTML): https://meta-analysis.cz/gasoline/paper/
 
 Abstract: In this paper we quantitatively synthesize empirical estimates of the income elasticity of gasoline demand reported in previous studies. The studies cover many countries and report a mean elasticity of 0.28 for the short run and 0.66 for the long run. We show, however, that these mean estimates are biased upwards because of publication bias---the tendency to suppress negative and insignificant estimates of the elasticity. We employ mixed-effects multilevel meta-regression to filter out publication bias from the literature. Our results suggest that the income elasticity of gasoline demand is on average much smaller than reported in previous surveys: the mean corrected for publication bias is 0.1 for the short run and 0.23 for the long run.
@@ -20374,7 +20355,6 @@ Citation: Tomas Havranek, Zuzana Irsova, and Karel Janda (2012), "Demand for Gas
 Published version: https://doi.org/10.1016/j.eneco.2011.09.003
 Read the paper: https://meta-analysis.cz/gasoline_price/gasoline_price2.pdf
 Download the dataset: https://meta-analysis.cz/gasoline_price/data.zip
-R replication: https://meta-analysis.cz/gasoline_price/replication/run.R
 Full text (HTML): https://meta-analysis.cz/gasoline_price/paper/
 
 Abstract: One of the most frequently examined statistical relationships in energy economics has been the price elasticity of gasoline demand. We conduct a quantitative survey of the estimates of elasticity reported for various countries around the world. Our meta-analysis indicates that the literature suffers from publication selection bias: insignificant or positive estimates of the price elasticity are rarely reported, although implausibly large negative estimates are reported regularly. In consequence, the average published estimates of both short- and long-run elasticities are exaggerated twofold. Using mixed-effects multilevel meta-regression, we show that after correction for publication bias the average long-run elasticity reaches -0.31 and the average short-run elasticity only -0.09.
@@ -21253,7 +21233,6 @@ Read the paper: https://meta-analysis.cz/habits/habits2.pdf
 Read additional results: https://meta-analysis.cz/habits/appendix.pdf
 Download the data: https://meta-analysis.cz/habits/habit.dta
 Download the code: https://meta-analysis.cz/habits/habit.zip
-R replication: https://meta-analysis.cz/habits/replication/run.R
 Full text (HTML): https://meta-analysis.cz/habits/paper/
 
 Abstract: We examine 597 estimates of habit formation reported in 81 published studies. The mean reported strength of habit formation equals 0.4, but the estimates vary widely both within and across studies. We use Bayesian and frequentist model averaging to assign a pattern to this variance while taking into account model uncertainty. Studies employing macro data report consistently larger estimates than micro studies: 0.6 vs. 0.1 on average. The difference remains 0.5 when we control for 30 factors that reflect the context in which researchers obtain their estimates, such as data frequency, geographical coverage, variable definition, estimation approach, and publication characteristics. We also find that evidence for habits strengthens when researchers use lower data frequencies, employ log-linear approximation of the Euler equation, and utilize open-economy DSGE models. Moreover, estimates of habits differ systematically across countries.
@@ -22093,7 +22072,6 @@ Published version: https://doi.org/10.1111/joes.12574
 Paper: https://meta-analysis.cz/hedge/hedge2.pdf
 Data: https://meta-analysis.cz/hedge/hedge.xlsx
 Code: https://meta-analysis.cz/hedge/hedge.do
-R replication: https://meta-analysis.cz/hedge/replication/run.R
 Full text (HTML): https://meta-analysis.cz/hedge/paper/
 
 Abstract: We provide the first quantitative survey of the empirical literature on hedge fund performance. We examine the impact of potential biases on the reported results. Analyses in individual studies have been plagued by fragmentation of underlying data and by limited consensus on how hedge fund performance should be measured. Using a sample of 1,019 intercept terms from regressions of hedge fund returns on risk factors (the “alphas”) collected from 74 studies published between 2001 and 2021 we show that inferences about hedge fund returns are not significantly contaminated by publication selection bias. Most of our monthly alpha estimates adjusted for the (small) bias fall within a relatively narrow range of 30 to 40 basis points, indicating positive abnormal returns of hedge funds: hedge funds generate money for investors. Studies that explicitly control for the potential biases in the underlying data (e.g. the backfilling bias and the survivorship bias) report lower but still positive alphas. Our results demonstrate that despite the prevalence of the publication selection bias in numerous other research settings, publication may not be selective when there is no strong a priori theoretical prediction about the sign of estimated coefficients, which may induce greater readiness to publish statistically insignificant results.
@@ -23058,7 +23036,6 @@ Included studies: https://meta-analysis.cz/house_prices/studies.xlsx
 Impulse Responses: https://meta-analysis.cz/house_prices/IRs.pdf
 Data: https://meta-analysis.cz/house_prices/house.dta
 Code: https://meta-analysis.cz/house_prices/house.do
-R replication: https://meta-analysis.cz/house_prices/replication/run.R
 Full text (HTML): https://meta-analysis.cz/house_prices/paper/
 
 Abstract: Several central banks have leaned against the wind in the housing market by increasing the policy rate preemptively to prevent a bubble. Yet the empirical literature provides mixed results on the impact of short-term interest rates on house prices: the estimated semi-elasticities range from -12 to positive values. To assign a pattern to these differences, we collect 1,555 estimates from 37 individual studies that cover 45 countries and 72 years. We then relate the estimates to 39 characteristics of the financial system, business cycle, and estimation approach. Our main results are threefold. First, the mean reported estimate is exaggerated by publication bias, because insignificant results are underreported. Second, inclusion of controls correlated with policy rates (credit or money supply) decreases the estimated effects of policy rates on house prices. Third, the effects are stronger in countries with more developed mortgage markets and generally later in the cycle when the yield curve is flat and house prices enter an upward spiral.
@@ -30345,7 +30322,6 @@ Impulse Responses: https://meta-analysis.cz/price_puzzle/IRs.pdf
 Data: https://meta-analysis.cz/price_puzzle/puzzle.xls
 Robustness Checks: https://meta-analysis.cz/price_puzzle/sensitivity.pdf
 Code: https://meta-analysis.cz/price_puzzle/puzzle.do
-R replication: https://meta-analysis.cz/price_puzzle/replication/run.R
 Excluded Studies: https://meta-analysis.cz/price_puzzle/excluded.xls
 Full text (HTML): https://meta-analysis.cz/price_puzzle/paper/
 
@@ -31040,7 +31016,6 @@ Paper: https://meta-analysis.cz/reforms/reforms2.pdf
 Data in XLS (169 KB): https://meta-analysis.cz/reforms/reform.xls
 Stata Program: https://meta-analysis.cz/reforms/reform.do
 Excluded Studies: https://meta-analysis.cz/reforms/new.doc
-R replication: https://meta-analysis.cz/reforms/replication/run.R
 Full text (HTML): https://meta-analysis.cz/reforms/paper/
 
 Abstract: The present fiscal difficulties of many countries amplify the call for structural reforms. To provide stylized facts on how reforms worked in the past, we quantitatively review 60 studies estimating the relationship between reforms and growth. These studies examine structural reforms carried out in 26 transition countries around the world. Our results show that an average reform caused substantial costs in the short run, but had strong positive effects on long-run growth. Reforms focused on external liberalization proved to be more beneficial than others in both the short and long run. The findings hold even after correction for publication bias and misspecifications present in some primary studies.
@@ -31633,7 +31608,6 @@ Published version: https://doi.org/10.1016/j.worlddev.2020.105021
 Read the paper: https://meta-analysis.cz/remittances/remittances2.pdf
 Download the data: https://meta-analysis.cz/remittances/remittances.xlsx
 Download the code: https://meta-analysis.cz/remittances/remittances.do
-R replication: https://meta-analysis.cz/remittances/replication/run.R
 Full text (HTML): https://meta-analysis.cz/remittances/paper/
 
 Abstract: Expatriate workers' remittances represent an important source of financing for low- and middle-income countries. No consensus, however, has yet emerged regarding the effect of remittances on economic growth. In a quantitative survey of 538 estimates reported in 95 studies, we find that approximately 40% of the studies report a positive effect, 40% report no effect, and 20% report a negative effect. Our results indicate publication bias in favor of positive effects. Correcting for the bias using recently developed techniques, we find that the mean effect of remittances on growth is still positive but economically small. Nevertheless, our results uncover noticeable regional differences: remittances are growth-enhancing in Asia but not in Africa. Studies that do not control for alternative sources of external finance, such as foreign aid and foreign direct investment, mismeasure the effect of remittances. Finally, time-series studies and studies ignoring endogeneity issues find systematically larger effects of remittances on growth.
@@ -32827,7 +32801,6 @@ Published version: https://doi.org/10.1016/j.worlddev.2016.07.016
 Read the paper: https://meta-analysis.cz/resource_curse/resource_curse2.pdf
 Download the data: https://meta-analysis.cz/resource_curse/resource_curse.dta
 Download the code: https://meta-analysis.cz/resource_curse/resource_curse.do
-R replication: https://meta-analysis.cz/resource_curse/replication/run.R
 Full text (HTML): https://meta-analysis.cz/resource_curse/paper/
 
 Abstract: An important question in development studies is how natural resources richness affects long-term economic growth. No consensus answer, however, has yet emerged, with approximately 40% of empirical papers finding a negative effect, 40% finding no effect, and 20% finding a positive effect. Does the literature taken together imply the existence of the so-called natural resource curse? In a quantitative survey of 605 estimates reported in 43 studies, we find that overall support for the resource curse hypothesis is weak when potential publication bias and method heterogeneity are taken into account. Our results also suggest that four aspects of study design are especially effective in explaining the differences in results across studies: 1) controlling for institutional quality, 2) controlling for the level of investment activity, 3) distinguishing between different types of natural resources, and 4) differentiating between resource dependence and abundance.
@@ -33684,7 +33657,6 @@ Supplement: https://meta-analysis.cz/risk/appendix.pdf
 Calibration Studies: https://meta-analysis.cz/risk/calibrations.xlsx
 Data: https://meta-analysis.cz/risk/risk.dta
 Code: https://meta-analysis.cz/risk/risk.zip
-R replication: https://meta-analysis.cz/risk/replication/run.R
 Full text (HTML): https://meta-analysis.cz/risk/paper/
 
 Abstract: Estimates of relative risk aversion vary widely, but no study has attempted to quantitatively trace the sources of the variation. We collect 1,021 estimates from 92 studies that use the consumption Euler equation to measure relative risk aversion and that disentangle it from intertemporal substitution. We show that calibrations of risk aversion are systematically larger than estimates thereof. Moreover, reported estimates are systematically larger than the underlying risk aversion because of publication bias. After correction for the bias, the literature suggests a mean risk aversion of 1 in economics and 2-7 in finance contexts. The reported estimates are driven by the characteristics of data (frequency, dimension, country, stockholding) and utility (functional form, treatment of durables). To obtain these results we use recently developed nonlinear techniques to correct for publication bias and Bayesian model averaging techniques to account for model uncertainty.
@@ -34334,7 +34306,6 @@ Examined Studies: http://scholar.google.cz/scholar?as_sdt=1,5&amp;q=%22social+co
 Included Studies: https://meta-analysis.cz/scc/studies.xls
 Data: https://meta-analysis.cz/scc/scc.xlsx
 Code: https://meta-analysis.cz/scc/scc.do
-R replication: https://meta-analysis.cz/scc/replication/run.R
 Full text (HTML): https://meta-analysis.cz/scc/paper/
 
 Abstract: We examine potential selective reporting in the literature on the social cost of carbon (SCC) by conducting a meta-analysis of 809 estimates of the SCC reported in 101 studies. Our results indicate that estimates for which the 95% confidence interval includes zero are less likely to be reported than estimates excluding negative values of the SCC, which might create an upward bias in the literature. The evidence for selective reporting is stronger for studies published in peer-reviewed journals than for unpublished studies. We show that the findings are not driven by the asymmetry of confidence intervals surrounding the SCC and are robust to controlling for various characteristics of study design and to alternative definitions of confidence intervals. Our estimates of the mean reported SCC corrected for the selective reporting bias range between 0 and 134 USD per ton of carbon in 2010 prices for emission year 2015.
@@ -34815,7 +34786,6 @@ Examined Studies: https://meta-analysis.cz/sigma/Scholar.html
 Included Studies: https://meta-analysis.cz/sigma/studies.xlsx
 Data: https://meta-analysis.cz/sigma/sigma.dta
 Code: https://meta-analysis.cz/sigma/sigma.zip
-R replication: https://meta-analysis.cz/sigma/replication/run.R
 Full text (HTML): https://meta-analysis.cz/sigma/paper/
 
 Abstract: We show that the large elasticity of substitution between capital and labor estimated in the literature on average, 0.9, can be explained by three issues: publication bias, use of cross-country variation, and omission of the first-order condition for capital. The mean elasticity conditional on the absence of these issues is 0.3. To obtain this result, we collect 3,186 estimates of the elasticity reported in 121 studies, codify 71 variables that reflect the context in which researchers produce their estimates, and address model uncertainty by Bayesian and frequentist model averaging. We employ nonlinear techniques to correct for publication bias, which is responsible for at least half of the overall reduction in the mean elasticity from 0.9 to 0.3. Our findings also suggest that a failure to normalize the production function leads to a substantial upward bias in the estimated elasticity. The weight of evidence accumulated in the empirical literature emphatically rejects the Cobb-Douglas specification.
@@ -35586,7 +35556,6 @@ Paper: https://meta-analysis.cz/size/size2.pdf
 Included Studies: https://meta-analysis.cz/size/studies.pdf
 Data: https://meta-analysis.cz/size/size.dta
 Code: https://meta-analysis.cz/size/size.do
-R replication: https://meta-analysis.cz/size/replication/run.R
 Full text (HTML): https://meta-analysis.cz/size/paper/
 
 Abstract: A prominent factor used in most models predicting stock returns is firm size. Yet no consensus has emerged on the magnitude and stability of the size premium, with some researchers even questioning the usefulness of the factor. To take stock of the voluminous academic literature on the size premium, we collect 1,746 estimates of the effect of size on returns reported in 102 published studies and conduct the first meta-analysis on this topic. We find evidence of strong publication bias: researchers prefer to report estimates that are statistically significant and show a negative relation between size and returns, exaggerating the mean reported coefficient threefold. After correcting for the bias, we find that the literature suggests a size premium (the difference in annual stock returns on the smallest and largest capitalization quintile) of 1.72%. We also find that the premium was much larger prior to the publication of the first study on the topic. Moreover, we show that the intensity of publication bias has been decreasing over time.
@@ -36208,7 +36177,6 @@ Web Appendix: https://meta-analysis.cz/skill/appendix.pdf
 Included Studies: https://meta-analysis.cz/skill/studies.xlsx
 Data: https://meta-analysis.cz/skill/skill.dta
 Code: https://meta-analysis.cz/skill/skill.do
-R replication: https://meta-analysis.cz/skill/replication/run.R
 Full text (HTML): https://meta-analysis.cz/skill/paper/
 
 Abstract: A key parameter in the analysis of wage inequality is the elasticity of substitution between skilled and unskilled labor. We show that the empirical literature is consistent with both publication and attenuation bias in the estimated inverse elasticities. Publication bias, which exaggerates the mean reported inverse elasticity, dominates and results in corrected inverse elasticities closer to zero than the typically published estimates. The implied mean elasticity is 4, with a lower bound of 2. Elasticities are smaller for developing countries. To derive these results, we use nonlinear tests for publication bias and model averaging techniques that account for model uncertainty.
@@ -36594,7 +36562,6 @@ Paper: https://meta-analysis.cz/spillovers/spillovers2.pdf
 Data in XLS (6.8 MB): https://meta-analysis.cz/spillovers/data.xls
 Stata Program: https://meta-analysis.cz/spillovers/Stata_program.do
 Excluded Studies: https://meta-analysis.cz/spillovers/excluded_studies.txt
-R replication: https://meta-analysis.cz/spillovers/replication/run.R
 Full text (HTML): https://meta-analysis.cz/spillovers/paper/
 
 Abstract: In the last decade, more than 100 researchers have examined productivity spillovers from foreign affiliates to local firms in upstream or downstream sectors. Yet results vary broadly across methods and countries. To examine these vertical spillovers in a systematic way, we collected 3,626 estimates of spillovers and reviewed the literature quantitatively. Our meta-analysis indicates that model misspecifications reduce the reported estimates and journals select relatively large estimates for publication. No selection, however, was found for working papers. Taking these biases into consideration, the average spillover to suppliers is economically significant, whereas the spillover to buyers is statistically significant but small. Greater spillovers are received by countries that have underdeveloped financial systems and are open to international trade. Greater spillovers are generated by investors who come from distant countries and have only a slight technological edge over local firms.
@@ -37641,7 +37608,6 @@ Web appendix: https://meta-analysis.cz/students/appendix.pdf
 Included studies: https://meta-analysis.cz/students/studies.xlsx
 Data: https://meta-analysis.cz/students/students.xlsx
 Code: https://meta-analysis.cz/students/students.do
-R replication: https://meta-analysis.cz/students/replication/run.R
 Full text (HTML): https://meta-analysis.cz/students/paper/
 
 Abstract: Educational outcomes have many determinants, but one that most young people can readily control is choosing whether to work while in school. Sixty-nine studies have estimated the effect, but results vary from large negative to positive estimates. We show that the results are systematically driven by context, publication bias, and treatment of endogeneity. Studies neglecting endogeneity suffer from an upward bias, which is almost fully compensated by publication selection in favor of negative estimates. Overall the literature suggests a negative but economically inconsequential mean effect. The effect is more substantive for decisions to drop out. To derive these results we collect 861 previously reported estimates together with 32 variables reflecting estimation context, use recently developed techniques to correct for publication bias, and employ Bayesian model averaging to assign a pattern to the heterogeneity in the literature.
@@ -38310,7 +38276,6 @@ Examined Studies: https://meta-analysis.cz/substitution/Scholar_search.htm
 Included Studies: https://meta-analysis.cz/substitution/studies.xls
 Data: https://meta-analysis.cz/substitution/eis_det.dta
 Code: https://meta-analysis.cz/substitution/eis_det.do
-R replication: https://meta-analysis.cz/substitution/replication/run.R
 Full text (HTML): https://meta-analysis.cz/substitution/paper/
 
 Abstract: We collect 2,735 estimates of the elasticity of intertemporal substitution in consumption from 169 published studies that cover 104 countries during different time periods. The estimates vary substantially from country to country, even after controlling for 30 aspects of study design. Our results suggest that income and asset market participation are the most effective factors in explaining the heterogeneity: households in rich countries and countries with high stock market participation substitute a larger fraction of consumption intertemporally in response to changes in expected asset returns. Micro-level studies that focus on sub-samples of rich households or asset holders also find systematically larger values of the elasticity.
@@ -41115,7 +41080,6 @@ Examined Studies: https://meta-analysis.cz/water/search.html
 Included Studies: https://meta-analysis.cz/water/studies.xlsx
 Data: https://meta-analysis.cz/water/water.xlsx
 Code: https://meta-analysis.cz/water/water.do
-R replication: https://meta-analysis.cz/water/replication/run.R
 Full text (HTML): https://meta-analysis.cz/water/paper/
 
 Abstract: We present the first study that examines the effects of publication selection in the literature estimating the income elasticity of water demand. Paradoxically, more affected by publication selection are the otherwise preferable estimates that control for the endogeneity. Because such estimates tend to be smaller and less precise, they are often statistically insignificant, which leads to more intense specification searching and bias. Attempting to correct simultaneously for publication and endogeneity biases, we find that the mean underlying elasticity is approximately 0.15 or less. The result is robust to controlling for 30 other characteristics of the estimates and using Bayesian model averaging to account for model uncertainty. The differences in the reported estimates are systematically driven by differences in the tariff structure, regional coverage, data granularity, and control for temperature in the demand equation.

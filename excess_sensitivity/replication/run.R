@@ -10,7 +10,7 @@
 # -- Table 2 needs only pooled OLS/WLS with two-way clustering, all covered
 # by st_ivreg2()).
 #
-# Author code provenance (data_code.zip:excess.do, lines as marked in the brief):
+# Author code provenance (data_code.zip:excess.do, lines as marked):
 #   line 14  gen prec = 1/se
 #   line 32  replace LC_not_bind = 0 if switch==1
 #   line 38  gen invperstudy = 1/perstudy   (perstudy = # of estimates per idstudy;

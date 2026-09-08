@@ -454,90 +454,90 @@
   "printed": 0.24,
   "digits": 2,
   "kind": "not_reproduced",
-  "note": "NOT PRODUCED BY THIS PACKAGE. The paper's figure is a Bayesian model averaging posterior mean, and no wrapper in stata_compat.R fits BMA, so it is quoted rather than computed. The number shown beside it is the OLS/frequentist-check coefficient on the same variable in the same table -- a different estimator, reported for orientation only. Scoring it against the BMA figure would record a failure of the code where the truth is that the quantity was never computed. paper value is a BMA posterior mean (2.4) x 0.10; produced value is the OLS/frequentist-check counterpart (Table 2 marketpartic coef x 0.10) -- not the same estimator, see REPLICATION.md"
+  "note": "NOT PRODUCED BY THIS PACKAGE. The paper's figure is a Bayesian model averaging posterior mean, and no wrapper in stata_compat.R fits BMA, so it is quoted rather than computed. The number shown beside it is the OLS/frequentist-check coefficient on the same variable in the same table, a different estimator, reported for orientation only. Scoring it against the BMA figure would record a failure of the code where the truth is that the quantity was never computed. paper value is a BMA posterior mean (2.4) x 0.10; produced value is the OLS/frequentist-check counterpart (Table 2 marketpartic coef x 0.10), not the same estimator, see REPLICATION.md"
  },
  {
   "label": "HL_assetholders_core_ols",
   "printed": 0.21,
   "digits": 2,
   "kind": "not_reproduced",
-  "note": "NOT PRODUCED BY THIS PACKAGE. The paper's figure is a Bayesian model averaging posterior mean, and no wrapper in stata_compat.R fits BMA, so it is quoted rather than computed. The number shown beside it is the OLS/frequentist-check coefficient on the same variable in the same table -- a different estimator, reported for orientation only. Scoring it against the BMA figure would record a failure of the code where the truth is that the quantity was never computed. paper value is the BMA posterior mean for Asset holders, core-countries specification (Table 2); produced value is the OLS/frequentist-check coefficient on the same variable in the same table"
+  "note": "NOT PRODUCED BY THIS PACKAGE. The paper's figure is a Bayesian model averaging posterior mean, and no wrapper in stata_compat.R fits BMA, so it is quoted rather than computed. The number shown beside it is the OLS/frequentist-check coefficient on the same variable in the same table, a different estimator, reported for orientation only. Scoring it against the BMA figure would record a failure of the code where the truth is that the quantity was never computed. paper value is the BMA posterior mean for Asset holders, core-countries specification (Table 2); produced value is the OLS/frequentist-check coefficient on the same variable in the same table"
  },
  {
   "label": "HL_assetholders_all_ols",
   "printed": 0.35,
   "digits": 2,
   "kind": "not_reproduced",
-  "note": "NOT PRODUCED BY THIS PACKAGE. The paper's figure is a Bayesian model averaging posterior mean, and no wrapper in stata_compat.R fits BMA, so it is quoted rather than computed. The number shown beside it is the OLS/frequentist-check coefficient on the same variable in the same table -- a different estimator, reported for orientation only. Scoring it against the BMA figure would record a failure of the code where the truth is that the quantity was never computed. paper value is the BMA posterior mean for Asset holders, all-countries specification (Table 1); produced value is the OLS/frequentist-check coefficient on the same variable in the same table"
+  "note": "NOT PRODUCED BY THIS PACKAGE. The paper's figure is a Bayesian model averaging posterior mean, and no wrapper in stata_compat.R fits BMA, so it is quoted rather than computed. The number shown beside it is the OLS/frequentist-check coefficient on the same variable in the same table, a different estimator, reported for orientation only. Scoring it against the BMA figure would record a failure of the code where the truth is that the quantity was never computed. paper value is the BMA posterior mean for Asset holders, all-countries specification (Table 1); produced value is the OLS/frequentist-check coefficient on the same variable in the same table"
  },
  {
   "label": "HL_econsig_max_stockpartic_ols",
   "printed": 0.931,
   "digits": 3,
   "kind": "not_reproduced",
-  "note": "NOT PRODUCED BY THIS PACKAGE. The paper's figure is a Bayesian model averaging posterior mean, and no wrapper in stata_compat.R fits BMA, so it is quoted rather than computed. The number shown beside it is the OLS/frequentist-check coefficient on the same variable in the same table -- a different estimator, reported for orientation only. Scoring it against the BMA figure would record a failure of the code where the truth is that the quantity was never computed. Table 3 economic-significance figure, BMA-based; produced value uses the OLS coefficient in place of the BMA posterior mean, same sample"
+  "note": "NOT PRODUCED BY THIS PACKAGE. The paper's figure is a Bayesian model averaging posterior mean, and no wrapper in stata_compat.R fits BMA, so it is quoted rather than computed. The number shown beside it is the OLS/frequentist-check coefficient on the same variable in the same table, a different estimator, reported for orientation only. Scoring it against the BMA figure would record a failure of the code where the truth is that the quantity was never computed. Table 3 economic-significance figure, BMA-based; produced value uses the OLS coefficient in place of the BMA posterior mean, same sample"
  },
  {
   "label": "HL_econsig_sd_stockpartic_ols",
   "printed": 0.141,
   "digits": 3,
   "kind": "not_reproduced",
-  "note": "NOT PRODUCED BY THIS PACKAGE. The paper's figure is a Bayesian model averaging posterior mean, and no wrapper in stata_compat.R fits BMA, so it is quoted rather than computed. The number shown beside it is the OLS/frequentist-check coefficient on the same variable in the same table -- a different estimator, reported for orientation only. Scoring it against the BMA figure would record a failure of the code where the truth is that the quantity was never computed."
+  "note": "NOT PRODUCED BY THIS PACKAGE. The paper's figure is a Bayesian model averaging posterior mean, and no wrapper in stata_compat.R fits BMA, so it is quoted rather than computed. The number shown beside it is the OLS/frequentist-check coefficient on the same variable in the same table, a different estimator, reported for orientation only. Scoring it against the BMA figure would record a failure of the code where the truth is that the quantity was never computed."
  },
  {
   "label": "HL_econsig_max_gdppc_ols",
   "printed": 0.683,
   "digits": 3,
   "kind": "not_reproduced",
-  "note": "NOT PRODUCED BY THIS PACKAGE. The paper's figure is a Bayesian model averaging posterior mean, and no wrapper in stata_compat.R fits BMA, so it is quoted rather than computed. The number shown beside it is the OLS/frequentist-check coefficient on the same variable in the same table -- a different estimator, reported for orientation only. Scoring it against the BMA figure would record a failure of the code where the truth is that the quantity was never computed."
+  "note": "NOT PRODUCED BY THIS PACKAGE. The paper's figure is a Bayesian model averaging posterior mean, and no wrapper in stata_compat.R fits BMA, so it is quoted rather than computed. The number shown beside it is the OLS/frequentist-check coefficient on the same variable in the same table, a different estimator, reported for orientation only. Scoring it against the BMA figure would record a failure of the code where the truth is that the quantity was never computed."
  },
  {
   "label": "HL_econsig_sd_gdppc_ols",
   "printed": 0.088,
   "digits": 3,
   "kind": "not_reproduced",
-  "note": "NOT PRODUCED BY THIS PACKAGE. The paper's figure is a Bayesian model averaging posterior mean, and no wrapper in stata_compat.R fits BMA, so it is quoted rather than computed. The number shown beside it is the OLS/frequentist-check coefficient on the same variable in the same table -- a different estimator, reported for orientation only. Scoring it against the BMA figure would record a failure of the code where the truth is that the quantity was never computed."
+  "note": "NOT PRODUCED BY THIS PACKAGE. The paper's figure is a Bayesian model averaging posterior mean, and no wrapper in stata_compat.R fits BMA, so it is quoted rather than computed. The number shown beside it is the OLS/frequentist-check coefficient on the same variable in the same table, a different estimator, reported for orientation only. Scoring it against the BMA figure would record a failure of the code where the truth is that the quantity was never computed."
  },
  {
   "label": "HL_econsig_max_eascredit_ols",
   "printed": -0.119,
   "digits": 3,
   "kind": "not_reproduced",
-  "note": "NOT PRODUCED BY THIS PACKAGE. The paper's figure is a Bayesian model averaging posterior mean, and no wrapper in stata_compat.R fits BMA, so it is quoted rather than computed. The number shown beside it is the OLS/frequentist-check coefficient on the same variable in the same table -- a different estimator, reported for orientation only. Scoring it against the BMA figure would record a failure of the code where the truth is that the quantity was never computed."
+  "note": "NOT PRODUCED BY THIS PACKAGE. The paper's figure is a Bayesian model averaging posterior mean, and no wrapper in stata_compat.R fits BMA, so it is quoted rather than computed. The number shown beside it is the OLS/frequentist-check coefficient on the same variable in the same table, a different estimator, reported for orientation only. Scoring it against the BMA figure would record a failure of the code where the truth is that the quantity was never computed."
  },
  {
   "label": "HL_econsig_sd_eascredit_ols",
   "printed": -0.02,
   "digits": 3,
   "kind": "not_reproduced",
-  "note": "NOT PRODUCED BY THIS PACKAGE. The paper's figure is a Bayesian model averaging posterior mean, and no wrapper in stata_compat.R fits BMA, so it is quoted rather than computed. The number shown beside it is the OLS/frequentist-check coefficient on the same variable in the same table -- a different estimator, reported for orientation only. Scoring it against the BMA figure would record a failure of the code where the truth is that the quantity was never computed."
+  "note": "NOT PRODUCED BY THIS PACKAGE. The paper's figure is a Bayesian model averaging posterior mean, and no wrapper in stata_compat.R fits BMA, so it is quoted rather than computed. The number shown beside it is the OLS/frequentist-check coefficient on the same variable in the same table, a different estimator, reported for orientation only. Scoring it against the BMA figure would record a failure of the code where the truth is that the quantity was never computed."
  },
  {
   "label": "HL_econsig_max_realrate_ols",
   "printed": -0.265,
   "digits": 3,
   "kind": "not_reproduced",
-  "note": "NOT PRODUCED BY THIS PACKAGE. The paper's figure is a Bayesian model averaging posterior mean, and no wrapper in stata_compat.R fits BMA, so it is quoted rather than computed. The number shown beside it is the OLS/frequentist-check coefficient on the same variable in the same table -- a different estimator, reported for orientation only. Scoring it against the BMA figure would record a failure of the code where the truth is that the quantity was never computed."
+  "note": "NOT PRODUCED BY THIS PACKAGE. The paper's figure is a Bayesian model averaging posterior mean, and no wrapper in stata_compat.R fits BMA, so it is quoted rather than computed. The number shown beside it is the OLS/frequentist-check coefficient on the same variable in the same table, a different estimator, reported for orientation only. Scoring it against the BMA figure would record a failure of the code where the truth is that the quantity was never computed."
  },
  {
   "label": "HL_econsig_sd_realrate_ols",
   "printed": -0.019,
   "digits": 3,
   "kind": "not_reproduced",
-  "note": "NOT PRODUCED BY THIS PACKAGE. The paper's figure is a Bayesian model averaging posterior mean, and no wrapper in stata_compat.R fits BMA, so it is quoted rather than computed. The number shown beside it is the OLS/frequentist-check coefficient on the same variable in the same table -- a different estimator, reported for orientation only. Scoring it against the BMA figure would record a failure of the code where the truth is that the quantity was never computed."
+  "note": "NOT PRODUCED BY THIS PACKAGE. The paper's figure is a Bayesian model averaging posterior mean, and no wrapper in stata_compat.R fits BMA, so it is quoted rather than computed. The number shown beside it is the OLS/frequentist-check coefficient on the same variable in the same table, a different estimator, reported for orientation only. Scoring it against the BMA figure would record a failure of the code where the truth is that the quantity was never computed."
  },
  {
   "label": "HL_econsig_max_ruleoflaw_ols",
   "printed": -0.087,
   "digits": 3,
   "kind": "not_reproduced",
-  "note": "NOT PRODUCED BY THIS PACKAGE. The paper's figure is a Bayesian model averaging posterior mean, and no wrapper in stata_compat.R fits BMA, so it is quoted rather than computed. The number shown beside it is the OLS/frequentist-check coefficient on the same variable in the same table -- a different estimator, reported for orientation only. Scoring it against the BMA figure would record a failure of the code where the truth is that the quantity was never computed."
+  "note": "NOT PRODUCED BY THIS PACKAGE. The paper's figure is a Bayesian model averaging posterior mean, and no wrapper in stata_compat.R fits BMA, so it is quoted rather than computed. The number shown beside it is the OLS/frequentist-check coefficient on the same variable in the same table, a different estimator, reported for orientation only. Scoring it against the BMA figure would record a failure of the code where the truth is that the quantity was never computed."
  },
  {
   "label": "HL_econsig_sd_ruleoflaw_ols",
   "printed": -0.012,
   "digits": 3,
   "kind": "not_reproduced",
-  "note": "NOT PRODUCED BY THIS PACKAGE. The paper's figure is a Bayesian model averaging posterior mean, and no wrapper in stata_compat.R fits BMA, so it is quoted rather than computed. The number shown beside it is the OLS/frequentist-check coefficient on the same variable in the same table -- a different estimator, reported for orientation only. Scoring it against the BMA figure would record a failure of the code where the truth is that the quantity was never computed."
+  "note": "NOT PRODUCED BY THIS PACKAGE. The paper's figure is a Bayesian model averaging posterior mean, and no wrapper in stata_compat.R fits BMA, so it is quoted rather than computed. The number shown beside it is the OLS/frequentist-check coefficient on the same variable in the same table, a different estimator, reported for orientation only. Scoring it against the BMA figure would record a failure of the code where the truth is that the quantity was never computed."
  }
 ]

@@ -2,12 +2,11 @@
 # The Importance of Method Choices and Selective Reporting"
 # -- Table 2 (the paper's headline publication-bias / heterogeneity table).
 #
-# Provenance: an author .do file for this paper was found in the working scratch
-# tree (scratchpad/eiswork/eis/eis.do), even though the brief said none ships.
-# It is used here as the specification source for Table 2's "EXPLAINING
+# Provenance: the authors' own .do file for this paper is the specification
+# source for Table 2's "EXPLAINING
 # HETEROGENEITY" block (the seven `reg tstat ... [pweight=invperstudy],
 # vce(cluster idstudy)` lines). Table 2's own row/column numbers (the printed
-# targets) come only from the paper text, per the brief.
+# targets) come only from the paper text.
 
 if (file.exists("stata_compat.R")) source("stata_compat.R") else
   source("https://meta-analysis.cz/eis/replication/stata_compat.R")

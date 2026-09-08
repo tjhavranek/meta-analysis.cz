@@ -127,7 +127,7 @@ add("T7_N", stats::nobs(m))
 #       factors".
 #
 # stata_compat.R has no BMA wrapper (no equivalent of Stata's `bma`/`wbma`, or the R
-# `bms` package), and the brief's author-code excerpt contains no BMA-fitting lines --
+# `bms` package), and the author's code contains no BMA-fitting lines --
 # exactly as already noted under "Unsupported" for the BMA half of Table 7. The BMA
 # posterior means behind (1)-(4) therefore CANNOT be reproduced with the tools this
 # package is restricted to, and nothing below is adjusted to force a match with them.

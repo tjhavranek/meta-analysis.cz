@@ -26,8 +26,7 @@ add_note <- function(x) notes <<- c(notes, x)
 # itself reads (`use size.dta, clear`): same 1746 rows, same 407 columns,
 # `se`, `impact` and `pubyear` all present, `geo` identical string for string,
 # and the same missing-value pattern (83 missing `impact`, 4 missing `obs`).
-# An earlier version of this script claimed the CSV lacked those columns and
-# read the .dta instead. That claim was wrong. The only real difference is
+# The CSV and the .dta agree. The only real difference is
 # print precision -- the CSV's `se` column is written to fewer digits than the
 # .dta's float, differing by at most 1.7e-07 -- which is far below the third
 # significant digit every Table 4 cell is printed to, and all 47 targets

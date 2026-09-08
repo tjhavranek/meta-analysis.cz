@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<title>Replication in R: Why Does Intertemporal Substitution Vary Across Countries? A Meta-Analysis</title>
+<meta name="robots" content="noindex" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<link href="/style.css" rel="stylesheet" type="text/css" />
+<style>
+table.repl { border-collapse: collapse; margin: 1em 0; font-size: 0.92em; }
+table.repl th, table.repl td { border-bottom: 1px solid #ddd; padding: 4px 14px 4px 0; text-align: left; }
+table.repl th { font-weight: 600; }
+pre.cmd { background: #f5f5f5; padding: 10px 14px; overflow-x: auto; }
+p.repl-note { font-size: 0.9em; color: #444; margin: 0.5em 0; }
+</style>
+</head>
+<body>
+<div id="wrapper">
+<div id="logo">
+	<a class="masthead-home" href="/">meta-analysis.cz</a>
+	<p class="site-name"><a href="/substitution/">Why Does Intertemporal Substitution Vary Across Countries? A Meta-Analysis</a></p>
+	<h2> <span class="mk">&raquo;</span>&nbsp;&nbsp;&nbsp; Replication in R</h2>
+</div>
+<div id="header">
+	<div id="menu">
+		<ul>
+			<li class="current_page_item"><a href="/substitution/replication/">Replication in R</a></li>
+			<li><a href="/substitution/">Back to the paper</a></li>
+			<li><a href="/">All meta-analyses</a></li>
+		</ul>
+	</div>
+</div>
+</div>
+<div id="page">
+	<div id="content">
+		<div class="post">
+			<h1 class="title">Replication in R</h1>
+			<div class="entry">
+<p>R code that regenerates the numbers this paper reports, starting from the dataset published on
+this site. It reproduces <b>75 of 75</b>. A further 13 numbers are recorded below that can be neither a pass nor a fail.</p>
+
+<h2>Run it</h2>
+<pre class="cmd">Rscript run.R</pre>
+<p><a href="run.R">run.R</a> is the whole package. Save it and run it: it reads the dataset from
+this site if the CSV is not sitting beside it, and loads the shared conventions file the same way,
+so it works on its own in an empty directory. It needs R with <code>fixest</code>, and depending on
+the paper <code>lme4</code>, <code>metafor</code>, <code>plm</code>, <code>BMS</code> or
+<code>LowRankQP</code>. It writes <code>results.json</code>, one value per number, each named for
+where it appears in the paper.</p>
+
+<h2>How it compares with Stata</h2>
+<p>Most of these papers were estimated in Stata, and the two programs differ in places that change
+printed digits. Those conventions are stated once, in
+<a href="stata_compat.R">stata_compat.R</a>, and shared by every replication on this site:
+<code>ivreg2</code>'s large-sample variance, SSC <code>winsor</code>'s order statistics,
+<code>xtreg</code>'s treatment of singleton groups, and the restricted-ML default of
+<code>xtmixed</code>, which is not the default of the <code>mixed</code> command that replaced it.</p>
+
+
+<h2>Recorded, not scored</h2>
+<p>Numbers that can be neither a pass nor a fail. <em>discrepancy</em>: computed correctly here and disagreeing with the printed paper. <em>approximation</em>: rebuilt from figures the paper prints rounded, so it lands close but cannot land exactly. <em>not reproduced</em>: quoted from the paper, not computed here. <em>stochastic</em>: depends on a random draw.</p>
+<table class="repl">
+<tr><th>number</th><th>paper</th><th>this code</th><th>kind</th></tr>
+<tr><td>HL_stockpartic_10pp_effect_ols</td><td>0.24</td><td>0.222052</td><td>not reproduced</td></tr>
+<tr><td>HL_assetholders_core_ols</td><td>0.21</td><td>0.371568</td><td>not reproduced</td></tr>
+<tr><td>HL_assetholders_all_ols</td><td>0.35</td><td>0.421348</td><td>not reproduced</td></tr>
+<tr><td>HL_econsig_max_stockpartic_ols</td><td>0.931</td><td>0.846016</td><td>not reproduced</td></tr>
+<tr><td>HL_econsig_sd_stockpartic_ols</td><td>0.141</td><td>0.126254</td><td>not reproduced</td></tr>
+<tr><td>HL_econsig_max_gdppc_ols</td><td>0.683</td><td>0.620837</td><td>not reproduced</td></tr>
+<tr><td>HL_econsig_sd_gdppc_ols</td><td>0.088</td><td>0.074874</td><td>not reproduced</td></tr>
+<tr><td>HL_econsig_max_eascredit_ols</td><td>-0.119</td><td>-0.104436</td><td>not reproduced</td></tr>
+<tr><td>HL_econsig_sd_eascredit_ols</td><td>-0.02</td><td>-0.017347</td><td>not reproduced</td></tr>
+<tr><td>HL_econsig_max_realrate_ols</td><td>-0.265</td><td>-0.14847</td><td>not reproduced</td></tr>
+<tr><td>HL_econsig_sd_realrate_ols</td><td>-0.019</td><td>-0.010603</td><td>not reproduced</td></tr>
+<tr><td>HL_econsig_max_ruleoflaw_ols</td><td>-0.087</td><td>-0.069515</td><td>not reproduced</td></tr>
+<tr><td>HL_econsig_sd_ruleoflaw_ols</td><td>-0.012</td><td>-0.009545</td><td>not reproduced</td></tr>
+</table>
+<p class="repl-note"><b>HL_stockpartic_10pp_effect_ols.</b> NOT PRODUCED BY THIS PACKAGE. The paper's figure is a Bayesian model averaging posterior mean, and no wrapper in stata_compat.R fits BMA, so it is quoted rather than computed. The number shown beside it is the OLS/frequentist-check coefficient on the same variable in the same table, a different estimator, reported for orientation only. Scoring it against the BMA figure would record a failure of the code where the truth is that the quantity was never computed. paper value is a BMA posterior mean (2.4) x 0.10; produced value is the OLS/frequentist-check counterpart (Table 2 marketpartic coef x 0.10), not the same estimator, see REPLICATION.md</p>
+<p class="repl-note"><b>HL_assetholders_core_ols.</b> NOT PRODUCED BY THIS PACKAGE. The paper's figure is a Bayesian model averaging posterior mean, and no wrapper in stata_compat.R fits BMA, so it is quoted rather than computed. The number shown beside it is the OLS/frequentist-check coefficient on the same variable in the same table, a different estimator, reported for orientation only. Scoring it against the BMA figure would record a failure of the code where the truth is that the quantity was never computed. paper value is the BMA posterior mean for Asset holders, core-countries specification (Table 2); produced value is the OLS/frequentist-check coefficient on the same variable in the same table</p>
+<p class="repl-note"><b>HL_assetholders_all_ols.</b> NOT PRODUCED BY THIS PACKAGE. The paper's figure is a Bayesian model averaging posterior mean, and no wrapper in stata_compat.R fits BMA, so it is quoted rather than computed. The number shown beside it is the OLS/frequentist-check coefficient on the same variable in the same table, a different estimator, reported for orientation only. Scoring it against the BMA figure would record a failure of the code where the truth is that the quantity was never computed. paper value is the BMA posterior mean for Asset holders, all-countries specification (Table 1); produced value is the OLS/frequentist-check coefficient on the same variable in the same table</p>
+<p class="repl-note"><b>HL_econsig_max_stockpartic_ols.</b> NOT PRODUCED BY THIS PACKAGE. The paper's figure is a Bayesian model averaging posterior mean, and no wrapper in stata_compat.R fits BMA, so it is quoted rather than computed. The number shown beside it is the OLS/frequentist-check coefficient on the same variable in the same table, a different estimator, reported for orientation only. Scoring it against the BMA figure would record a failure of the code where the truth is that the quantity was never computed. Table 3 economic-significance figure, BMA-based; produced value uses the OLS coefficient in place of the BMA posterior mean, same sample</p>
+<p class="repl-note"><b>HL_econsig_sd_stockpartic_ols.</b> NOT PRODUCED BY THIS PACKAGE. The paper's figure is a Bayesian model averaging posterior mean, and no wrapper in stata_compat.R fits BMA, so it is quoted rather than computed. The number shown beside it is the OLS/frequentist-check coefficient on the same variable in the same table, a different estimator, reported for orientation only. Scoring it against the BMA figure would record a failure of the code where the truth is that the quantity was never computed.</p>
+<p class="repl-note"><b>HL_econsig_max_gdppc_ols.</b> NOT PRODUCED BY THIS PACKAGE. The paper's figure is a Bayesian model averaging posterior mean, and no wrapper in stata_compat.R fits BMA, so it is quoted rather than computed. The number shown beside it is the OLS/frequentist-check coefficient on the same variable in the same table, a different estimator, reported for orientation only. Scoring it against the BMA figure would record a failure of the code where the truth is that the quantity was never computed.</p>
+<p class="repl-note"><b>HL_econsig_sd_gdppc_ols.</b> NOT PRODUCED BY THIS PACKAGE. The paper's figure is a Bayesian model averaging posterior mean, and no wrapper in stata_compat.R fits BMA, so it is quoted rather than computed. The number shown beside it is the OLS/frequentist-check coefficient on the same variable in the same table, a different estimator, reported for orientation only. Scoring it against the BMA figure would record a failure of the code where the truth is that the quantity was never computed.</p>
+<p class="repl-note"><b>HL_econsig_max_eascredit_ols.</b> NOT PRODUCED BY THIS PACKAGE. The paper's figure is a Bayesian model averaging posterior mean, and no wrapper in stata_compat.R fits BMA, so it is quoted rather than computed. The number shown beside it is the OLS/frequentist-check coefficient on the same variable in the same table, a different estimator, reported for orientation only. Scoring it against the BMA figure would record a failure of the code where the truth is that the quantity was never computed.</p>
+<p class="repl-note"><b>HL_econsig_sd_eascredit_ols.</b> NOT PRODUCED BY THIS PACKAGE. The paper's figure is a Bayesian model averaging posterior mean, and no wrapper in stata_compat.R fits BMA, so it is quoted rather than computed. The number shown beside it is the OLS/frequentist-check coefficient on the same variable in the same table, a different estimator, reported for orientation only. Scoring it against the BMA figure would record a failure of the code where the truth is that the quantity was never computed.</p>
+<p class="repl-note"><b>HL_econsig_max_realrate_ols.</b> NOT PRODUCED BY THIS PACKAGE. The paper's figure is a Bayesian model averaging posterior mean, and no wrapper in stata_compat.R fits BMA, so it is quoted rather than computed. The number shown beside it is the OLS/frequentist-check coefficient on the same variable in the same table, a different estimator, reported for orientation only. Scoring it against the BMA figure would record a failure of the code where the truth is that the quantity was never computed.</p>
+<p class="repl-note"><b>HL_econsig_sd_realrate_ols.</b> NOT PRODUCED BY THIS PACKAGE. The paper's figure is a Bayesian model averaging posterior mean, and no wrapper in stata_compat.R fits BMA, so it is quoted rather than computed. The number shown beside it is the OLS/frequentist-check coefficient on the same variable in the same table, a different estimator, reported for orientation only. Scoring it against the BMA figure would record a failure of the code where the truth is that the quantity was never computed.</p>
+<p class="repl-note"><b>HL_econsig_max_ruleoflaw_ols.</b> NOT PRODUCED BY THIS PACKAGE. The paper's figure is a Bayesian model averaging posterior mean, and no wrapper in stata_compat.R fits BMA, so it is quoted rather than computed. The number shown beside it is the OLS/frequentist-check coefficient on the same variable in the same table, a different estimator, reported for orientation only. Scoring it against the BMA figure would record a failure of the code where the truth is that the quantity was never computed.</p>
+<p class="repl-note"><b>HL_econsig_sd_ruleoflaw_ols.</b> NOT PRODUCED BY THIS PACKAGE. The paper's figure is a Bayesian model averaging posterior mean, and no wrapper in stata_compat.R fits BMA, so it is quoted rather than computed. The number shown beside it is the OLS/frequentist-check coefficient on the same variable in the same table, a different estimator, reported for orientation only. Scoring it against the BMA figure would record a failure of the code where the truth is that the quantity was never computed.</p>
+
+<h2>Files</h2>
+<ul>
+	<li><a href="run.R">run.R</a>, the replication</li>
+	<li><a href="stata_compat.R">stata_compat.R</a>, the Stata conventions</li>
+	<li><a href="targets.json">targets.json</a>, the numbers as printed in the paper, recorded
+	before the code was written</li>
+	<li><a href="results.json">results.json</a>, the numbers this code produced</li>
+	<li><a href="REPLICATION_STATUS.md">REPLICATION_STATUS.md</a>, the full comparison, generated
+	from this package's own output</li>
+</ul>
+			</div>
+		</div>
+	</div>
+</div>
+<footer class="site-foot">
+<p class="foot-lede"><b>meta-analysis.cz</b> collects meta-analyses, the data behind them, the
+code that produced them, and the methods for doing them. It is maintained by <a href="/about/"><b>Tomas Havranek</b> and
+<b>Zuzana Irsova</b></a> at the Institute of Economic Studies, Charles University, Prague.</p>
+<p class="foot-nav"><a href="/">All meta-analyses</a> &middot;
+<a href="/papers/">Papers in full</a> &middot;
+<a href="/results/">Headline results</a> &middot;
+<a href="/datasets/">Datasets and the pooled table</a> &middot;
+<a href="/maive/">MAIVE</a> &middot;
+<a href="/guidelines/">Practitioner&#x27;s guide</a> &middot;
+<a href="/notes/">Research notes</a> &middot;
+<a href="/impact/">How this work has been used</a> &middot;
+<a href="https://www.easymeta.org/">EasyMeta web app</a></p>
+<p class="foot-who"><b>Tomas Havranek</b> &middot; <a href="https://www.tomashavranek.cz/">tomashavranek.cz</a> &middot; <a href="https://ies.fsv.cuni.cz/en/contacts/institute-members/78067720">IES FSV UK</a> &middot; <a href="https://orcid.org/0000-0002-3158-2539">ORCID</a> &middot; <a href="https://scholar.google.com/citations?user=BF0BvBkAAAAJ">Google Scholar</a> &middot; <a href="https://ideas.repec.org/f/pha418.html">RePEc</a> &middot; <a href="https://www.scopus.com/authid/detail.uri?authorId=24453189000">Scopus</a> &middot; <a href="https://cepr.org/about/people/tomas-havranek">CEPR</a> &middot; <a href="https://metrics.stanford.edu/people/tomas-havranek">Stanford METRICS</a></p>
+<p class="foot-who"><b>Zuzana Irsova</b> &middot; <a href="https://www.irsova.com/">irsova.com</a> &middot; <a href="https://ies.fsv.cuni.cz/en/contacts/institute-members/73504033">IES FSV UK</a> &middot; <a href="https://orcid.org/0000-0002-0753-8124">ORCID</a> &middot; <a href="https://scholar.google.com/citations?user=LaHrICUAAAAJ">Google Scholar</a> &middot; <a href="https://ideas.repec.org/e/pir23.html">RePEc</a> &middot; <a href="https://www.scopus.com/authid/detail.uri?authorId=37080793200">Scopus</a> &middot; <a href="https://cepr.org/about/people/zuzana-irsova">CEPR</a> &middot; <a href="https://metrics.stanford.edu/people/zuzana-irsova">Stanford METRICS</a></p>
+<p class="foot-cite"><b>How to cite this collection:</b> Havranek, T. and Z. Irsova (2026).
+meta-analysis.cz: harmonised estimate-level data from meta-analyses in economics. Zenodo.
+<a href="https://doi.org/10.5281/zenodo.21773678">https://doi.org/10.5281/zenodo.21773678</a>.
+Individual papers carry their own citation on their own page.</p>
+<p class="foot-licence"><b>Licence: CC BY 4.0.</b> Everything on this site is licensed under the
+<a href="https://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0
+International Licence</a>. That covers the papers, the datasets, their CSV and Parquet conversions,
+the pooled table, the codebooks, and the documentation. You may copy, redistribute, adapt, and reuse
+any of it for any purpose, including commercial use and training machine-learning models, as long
+as you give attribution to meta-analysis.cz. You do not need to ask.</p>
+<p class="foot-machine">For machines: <a href="/api/v1/datasets.json">datasets.json</a> &middot;
+<a href="/api/v1/datapackage.json">datapackage.json</a> &middot;
+<a href="/api/v1/croissant.json">croissant.json</a> &middot;
+<a href="/llms.txt">llms.txt</a> &middot; <a href="/llms-full.txt">llms-full.txt</a> &middot;
+<a href="/sitemap.xml">sitemap.xml</a> &middot; <a href="/LICENSE">LICENSE</a></p>
+</footer>
+</body>
+</html>

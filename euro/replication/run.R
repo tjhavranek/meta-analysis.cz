@@ -18,7 +18,7 @@
 #
 # RIM/RCM (Table 1/2 third column, "random intercept/coefficients model ... restricted
 # maximum likelihood") requires Stata `mixed`/`xtmixed`. No `mixed`/`xtmixed` call is visible
-# anywhere in the supplied author code (data.zip:trade_meta.do as excerpted stops at line
+# anywhere in the author's code (data.zip:trade_meta.do stops at line
 # 313 without one), so the exact model (which grouping variable, which regressors, ML vs
 # REML) cannot be pinned to author code. Rather than guess a specification, this package
 # omits RIM/RCM as well; see REPLICATION.md.

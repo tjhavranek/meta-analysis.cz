@@ -18,7 +18,7 @@ from the paper, not computed here. `stochastic`: depends on a random draw.
 |---|---|---|---|
 | STAR preferred estimates with |t| above Lang's 5.48 threshold (paper: one) | 1 | 2.0 | discrepancy |
 
-**STAR preferred estimates with |t| above Lang's 5.48 threshold (paper: one)** -- The published data give TWO, not one: |t| = 5.538 and 5.500 among the twenty preferred STAR estimates. Both sit within 1% of the 5.48 threshold, so the paper's 'one' and this 'two' differ by a single borderline observation -- the kind of gap a slightly different t (recomputed from rounded published effects and standard errors, say) would produce. The count of twenty matches exactly. Flagged for the author rather than scored, because the code is doing what the sentence describes.
+**STAR preferred estimates with |t| above Lang's 5.48 threshold (paper: one)** -- The published data give two, not one: |t| = 5.538 and 5.500 among the twenty preferred STAR estimates. Both sit within 1% of the 5.48 threshold, so the paper's 'one' and this 'two' differ by a single borderline observation, the kind of gap a slightly different t (recomputed from rounded published effects and standard errors, say) would produce. The count of twenty matches exactly. Recorded rather than scored, because the code is doing what the sentence describes.
 
 ## Reproduced (38)
 

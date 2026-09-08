@@ -19,7 +19,7 @@
 #
 # That is not a guess. The version of the script that actually produced the paper's Table 3
 # has no `cluster` option on either line: the authors' own run log
-# (Dropbox\Study\Papers\25_Resource_curse\REVISION\latex\natural_resource.log, and the script
+# (the authors' log of the published run, natural_resource.log, and the script
 # beside it, nat_res_meta_paper_results.do, neither of which the site ships) records
 #     . eststo: reg PCC PCC_SE [pweight=prec]
 #     . eststo: ivreg PCC (PCC_SE=instrument) [pweight=prec]

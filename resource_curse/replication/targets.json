@@ -40,7 +40,7 @@
   "printed": -1.016,
   "digits": 3,
   "kind": "discrepancy",
-  "note": "The authors' own log of the published run (Study/Papers/25_Resource_curse/REVISION/latex/natural_resource.log, 1 June 2016) gives -1.016527 at line 202, 'PCC_SE | -1.016527  .196112  -5.18  0.000' -- which is what this package computes. The paper prints -1.016. The log's own formatted table (line 306) reads 'PCC_SE  -1.017***  -1.235***', i.e. the author's output rounds the way this package does and not the way the printed table does. All five Panel A cells that miss show this pattern, and the same pattern appears in risk's Panel C and in spillovers' sample sizes: the printed tables were built from a run that differs slightly from the archived one. Recorded for the author; the printed value is untouched."
+  "note": "The authors' own log of the published run (Study/Papers/25_Resource_curse/REVISION/latex/natural_resource.log, 1 June 2016) gives -1.016527 at line 202, 'PCC_SE | -1.016527  .196112  -5.18  0.000', which is what this package computes. The paper prints -1.016. The log's own formatted table (line 306) reads 'PCC_SE  -1.017***  -1.235***', i.e. the author's output rounds the way this package does and not the way the printed table does. All five Panel A cells that miss show this pattern, and the same pattern appears in risk's Panel C and in spillovers' sample sizes: the printed tables were built from a run that differs slightly from the archived one. The printed value is left exactly as published."
  },
  {
   "label": "Panel A: OLS SE (publication selection) t",
@@ -65,21 +65,21 @@
   "printed": 1.69,
   "digits": 2,
   "kind": "discrepancy",
-  "note": "The authors' own log of the published run (Study/Papers/25_Resource_curse/REVISION/latex/natural_resource.log, 1 June 2016) gives 1.61 at line 203, '_cons | .0260833  .0162477  1.61  0.109' -- which is what this package computes. The paper prints 1.69. The log's own formatted table (line 306) reads 'PCC_SE  -1.017***  -1.235***', i.e. the author's output rounds the way this package does and not the way the printed table does. All five Panel A cells that miss show this pattern, and the same pattern appears in risk's Panel C and in spillovers' sample sizes: the printed tables were built from a run that differs slightly from the archived one. Recorded for the author; the printed value is untouched."
+  "note": "The authors' own log of the published run (Study/Papers/25_Resource_curse/REVISION/latex/natural_resource.log, 1 June 2016) gives 1.61 at line 203, '_cons | .0260833  .0162477  1.61  0.109', which is what this package computes. The paper prints 1.69. The log's own formatted table (line 306) reads 'PCC_SE  -1.017***  -1.235***', i.e. the author's output rounds the way this package does and not the way the printed table does. All five Panel A cells that miss show this pattern, and the same pattern appears in risk's Panel C and in spillovers' sample sizes: the printed tables were built from a run that differs slightly from the archived one. The printed value is left exactly as published."
  },
  {
   "label": "Panel A: OLS Constant (true effect) p",
   "printed": 0.099,
   "digits": 3,
   "kind": "discrepancy",
-  "note": "The authors' own log of the published run (Study/Papers/25_Resource_curse/REVISION/latex/natural_resource.log, 1 June 2016) gives 0.109 at line 203, the same row's p-value -- which is what this package computes. The paper prints 0.099. The log's own formatted table (line 306) reads 'PCC_SE  -1.017***  -1.235***', i.e. the author's output rounds the way this package does and not the way the printed table does. All five Panel A cells that miss show this pattern, and the same pattern appears in risk's Panel C and in spillovers' sample sizes: the printed tables were built from a run that differs slightly from the archived one. Recorded for the author; the printed value is untouched."
+  "note": "The authors' own log of the published run (Study/Papers/25_Resource_curse/REVISION/latex/natural_resource.log, 1 June 2016) gives 0.109 at line 203, the same row's p-value, which is what this package computes. The paper prints 0.099. The log's own formatted table (line 306) reads 'PCC_SE  -1.017***  -1.235***', i.e. the author's output rounds the way this package does and not the way the printed table does. All five Panel A cells that miss show this pattern, and the same pattern appears in risk's Panel C and in spillovers' sample sizes: the printed tables were built from a run that differs slightly from the archived one. The printed value is left exactly as published."
  },
  {
   "label": "Panel A: IV SE (publication selection) coef",
   "printed": -1.234,
   "digits": 3,
   "kind": "discrepancy",
-  "note": "The authors' own log of the published run (Study/Papers/25_Resource_curse/REVISION/latex/natural_resource.log, 1 June 2016) gives -1.234917 at line 220, 'PCC_SE | -1.234917  .25686  -4.81  0.000' -- which is what this package computes. The paper prints -1.234. The log's own formatted table (line 306) reads 'PCC_SE  -1.017***  -1.235***', i.e. the author's output rounds the way this package does and not the way the printed table does. All five Panel A cells that miss show this pattern, and the same pattern appears in risk's Panel C and in spillovers' sample sizes: the printed tables were built from a run that differs slightly from the archived one. Recorded for the author; the printed value is untouched."
+  "note": "The authors' own log of the published run (Study/Papers/25_Resource_curse/REVISION/latex/natural_resource.log, 1 June 2016) gives -1.234917 at line 220, 'PCC_SE | -1.234917  .25686  -4.81  0.000', which is what this package computes. The paper prints -1.234. The log's own formatted table (line 306) reads 'PCC_SE  -1.017***  -1.235***', i.e. the author's output rounds the way this package does and not the way the printed table does. All five Panel A cells that miss show this pattern, and the same pattern appears in risk's Panel C and in spillovers' sample sizes: the printed tables were built from a run that differs slightly from the archived one. The printed value is left exactly as published."
  },
  {
   "label": "Panel A: IV SE (publication selection) t",
@@ -98,7 +98,7 @@
   "printed": 0.038,
   "digits": 3,
   "kind": "discrepancy",
-  "note": "The authors' own log of the published run (Study/Papers/25_Resource_curse/REVISION/latex/natural_resource.log, 1 June 2016) gives 0.0386915 at line 221, '_cons | .0386915  .0160392  2.41  0.016' -- which is what this package computes. The paper prints 0.038. The log's own formatted table (line 306) reads 'PCC_SE  -1.017***  -1.235***', i.e. the author's output rounds the way this package does and not the way the printed table does. All five Panel A cells that miss show this pattern, and the same pattern appears in risk's Panel C and in spillovers' sample sizes: the printed tables were built from a run that differs slightly from the archived one. Recorded for the author; the printed value is untouched."
+  "note": "The authors' own log of the published run (Study/Papers/25_Resource_curse/REVISION/latex/natural_resource.log, 1 June 2016) gives 0.0386915 at line 221, '_cons | .0386915  .0160392  2.41  0.016', which is what this package computes. The paper prints 0.038. The log's own formatted table (line 306) reads 'PCC_SE  -1.017***  -1.235***', i.e. the author's output rounds the way this package does and not the way the printed table does. All five Panel A cells that miss show this pattern, and the same pattern appears in risk's Panel C and in spillovers' sample sizes: the printed tables were built from a run that differs slightly from the archived one. The printed value is left exactly as published."
  },
  {
   "label": "Panel A: IV Constant (true effect) t",

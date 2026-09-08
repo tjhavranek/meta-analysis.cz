@@ -330,9 +330,9 @@ mean_study_medians <- mean(as.numeric(
 #      the same on reviewed_journal == 1
 #        Stata  _cons 0.0436049459 (0.0081765678)
 #        here   _cons 0.0436049455 (0.0081765676)
-# An earlier version of this file fitted step 2 with st_ivreg2. That reproduced
-# the constant itself -- the point estimate is the same under either wrapper --
-# but attached ivreg2's LARGE-SAMPLE variance to it, giving 0.0067 and 0.0080
+# Fitting step 2 with st_ivreg2 instead reproduces the constant itself -- the
+# point estimate is the same under either wrapper -- but attaches ivreg2's
+# LARGE-SAMPLE variance to it, giving 0.0067 and 0.0080
 # where Stata reports 0.0069 and 0.0082. The paper prints only three digits of
 # these coefficients and no standard error for them, so nothing in targets.json
 # could catch that; Stata did.

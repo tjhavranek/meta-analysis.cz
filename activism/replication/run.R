@@ -134,8 +134,8 @@ for (nm in names(sub)) {
 #
 # Se_adj ("Unnamed: 26"), the SE regressor, is missing for 122 of the 1,973 rows. activism.R
 # fills those from the reported p-value via a helper that is not on the site
-# (functions/calculateSE_JB.R), and an earlier version of this script therefore dropped them and
-# ran on 1,851 rows from 60 of 67 studies.
+# (functions/calculateSE_JB.R). Dropping those rows instead leaves 1,851 rows from 60 of the 67
+# studies, which is not the paper's sample.
 #
 # The helper is not needed. The column "p-value.1" holds exactly 122 non-missing values, and
 # every one of them sits precisely where Se_adj is missing -- those rows report a p-value
@@ -156,7 +156,7 @@ for (nm in names(sub)) {
 
 d$se_adj_raw <- as.numeric(d[["Unnamed: 26"]])
 # Fill the 122 rows that report a p-value instead of a standard error, using the AUTHORS' OWN
-# construction, recovered from their working folder (Dropbox\Shareholder activism\Code):
+# construction, recovered from the authors' own working folder:
 # functions/calculateSE_JB.R, "pvalue" branch, called at code_final.R:110.
 #   code_final.R:97-98   pvalue == 0 -> 0.0004 ;  pvalue == 1 -> 0.9999
 #   calculateSE_JB.R     t = PEIP::tinv(p/2, obs - 1)   (a ONE-TAIL inverse, so this is the
@@ -198,8 +198,8 @@ emit("TA2 FE beta0", st_coefs(m_fe_cons)$estimate[1])
 # functions/publication_bias3.R computes it at lines 82-86, under the heading
 #     # A.3 random effects regression
 # as plm(model0, subdata, index = study_indic, model = "random").
-# Read as a between estimator -- OLS on study means, which is what an earlier version of this
-# file did -- it gives -0.700 against a printed 1.473. As random effects it gives 1.473059.
+# Read as a between estimator -- OLS on study means -- it gives -0.700 against a printed 1.473.
+# As random effects it gives 1.473059.
 m_be <- st_plm_re(estw ~ se_adjw, data = reg, panel = "ArticleNo")
 emit("TA2 BE beta0", st_coefs(m_be)$estimate[1])
 
@@ -251,9 +251,8 @@ linear_betas <- c(
 #     top10bound <- quantile(invse, probs = 0.9)
 #     Rmisc::summarySE(subdata[which(invse > top10bound), ], measurevar = elasticity)
 # summarySE returns a plain MEAN. So Top10 here is the unweighted mean of the estimates whose
-# precision exceeds its own 90th percentile -- NOT an inverse-variance weighted average, which
-# is what an earlier version of this file computed (via st_metan) and which gave -0.0005
-# against a printed 0.196. The selection is strictly greater than the bound, and it is taken
+# precision exceeds its own 90th percentile -- NOT an inverse-variance weighted average. An
+# inverse-variance average (st_metan) gives -0.0005 against a printed 0.196. The selection is strictly greater than the bound, and it is taken
 # over the whole estimation sample.
 invse      <- 1 / reg$se_adjw
 top10bound <- st_quantile_r(invse, probs = 0.9)   # R's type 7, as the authors' own R does

@@ -11,7 +11,7 @@
 #
 # Panel B (Top10 / WAAP / Stem-based / Kinked-meta / Selection model / p-uniform*) and
 # Table 6 (top3/top5 journal subsamples) are NOT attempted here: the author code excerpt
-# supplied to this package does not include the commands that produce them (Panel B
+# available for this paper does not include the commands that produce them (Panel B
 # needs commands not shown at all; the top3/top5 filters are not shown either), so
 # nothing here would be provenanced. See REPLICATION.md.
 
@@ -195,7 +195,7 @@ rec("T2_alpha_unconditional_mean_annualized", mean(d0$alpha_w) * 12)
 
 ## Panel B (Top10, WAAP, Stem-based, Kinked-meta, Selection model, p-uniform*) is NOT
 ## computed here -- no stata_compat.R wrapper implements any of these five
-## meta-analysis estimators, and the author-code excerpt supplied to this package
+## meta-analysis estimators, and the author's code for this paper
 ## contains no commands for them either (see REPLICATION.md), so there is nothing to
 ## provenance an implementation against. The five "kind not_reproduced" targets below
 ## record the paper's own printed Panel B cells verbatim, for arithmetic cross-checking

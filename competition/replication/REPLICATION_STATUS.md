@@ -18,7 +18,7 @@ from the paper, not computed here. `stochastic`: depends on a random draw.
 |---|---|---|---|
 | Text F3 mean of study-level medians (NOT reproduced, see run.R) | 0.0099 | 0.009999 | discrepancy |
 
-**Text F3 mean of study-level medians (NOT reproduced, see run.R)** -- The paper prints 0.0099; this package computes 0.0099988, following the author's own do-file line for the same quantity (the mean of the study-level medians). 0.0099988 rounds to 0.0100, so the two disagree at the paper's own fourth decimal. It is not a truncation convention: across this paper's 145 other reproduced numbers, 77 match under rounding and would fail under truncation, so the table rounds. Recorded for the author; the printed value is left exactly as published. The label's stale '(NOT reproduced)' is part of the frozen oracle and is deliberately not edited.
+**Text F3 mean of study-level medians (NOT reproduced, see run.R)** -- The paper prints 0.0099; this package computes 0.0099988, following the author's own do-file line for the same quantity (the mean of the study-level medians). 0.0099988 rounds to 0.0100, so the two disagree at the paper's own fourth decimal. It is not a truncation convention: across this paper's 145 other reproduced numbers, 77 match under rounding and would fail under truncation, so the table rounds. The printed value is left exactly as published. The label's stale '(NOT reproduced)' is part of the frozen oracle and is deliberately not edited.
 
 ## Reproduced (149)
 

@@ -68,7 +68,7 @@ emit("T1 simple mean CI upper", b + tcrit * se)
 ##     seft = 1/SQRT(P2-3-AO2-1)        (P = sample size, AO = number of regressors, so
 ##     pcc  = L2/SQRT(L2*L2+P2-AO2-1)    P-AO-1 = df and seft = 1/sqrt(df-3))
 ## so ft and seft are the author's own Fisher-z effect size and its standard error, used
-## here exactly as shipped. (An earlier version of this script rebuilt df from pcc and
+## here exactly as shipped. (Rebuilding df from pcc and
 ## sepcc as df = (1-pcc^2)/sepcc^2; that route agrees with the published seft to eight
 ## significant digits and returns identical numbers, but reading the shipped columns is
 ## the faithful path and needs no derivation.)

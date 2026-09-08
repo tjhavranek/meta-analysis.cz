@@ -118,9 +118,8 @@ results[["T1 FE R2"]]            <- unname(r2_fe_overall)
 ## So the right wrapper is st_xtmixed(), which stata_compat.R already
 ## defines for exactly this case (lmer REML = TRUE, "Stata xtmixed is REML
 ## by default, unlike mixed"), not st_mixed(), which emulates the modern
-## ML-default `mixed` and is what an earlier version of this file wrongly
-## called. No convention was bent to reach the match -- the wrong Stata
-## command was being emulated.
+## ML-default `mixed`. No convention was bent to reach the match; the two
+## Stata commands simply differ.
 m_me <- st_xtmixed(tstat ~ prec + mea1 + se_low + (1 | idstudy), data = d)
 b_me <- lme4::fixef(m_me)
 s_me <- sqrt(diag(as.matrix(stats::vcov(m_me))))

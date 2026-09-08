@@ -3,7 +3,7 @@
 #  and Endogeneity Biases", Land Economics 2018.
 #
 # Source data: the site's published water.csv (mirrors the author's dataset).
-# Source code: water.do, lines 89-113 (eststo block reproduced in the brief).
+# Source code: water.do, lines 89-113 (the eststo block).
 #
 # Table 2 regresses incomeelasticity on standarderror (the funnel-asymmetry test):
 #   YED_ij = YED_0 + beta * SE(YED_ij) + u_ij
