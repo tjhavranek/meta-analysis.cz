@@ -1,128 +1,543 @@
 [
-  {"label": "T7_marketpartic_coef", "printed": 2.342, "digits": 3, "kind": "deterministic"},
-  {"label": "T7_marketpartic_se", "printed": 0.848, "digits": 3, "kind": "deterministic"},
-  {"label": "T7_marketpartic_p", "printed": 0.011, "digits": 3, "kind": "deterministic"},
-
-  {"label": "T7_gdppc_coef", "printed": 0.198, "digits": 3, "kind": "deterministic"},
-  {"label": "T7_gdppc_se", "printed": 0.114, "digits": 3, "kind": "deterministic"},
-  {"label": "T7_gdppc_p", "printed": 0.095, "digits": 3, "kind": "deterministic"},
-
-  {"label": "T7_finref_coef", "printed": -0.777, "digits": 3, "kind": "deterministic"},
-  {"label": "T7_finref_se", "printed": 0.394, "digits": 3, "kind": "deterministic"},
-  {"label": "T7_finref_p", "printed": 0.060, "digits": 3, "kind": "deterministic"},
-
-  {"label": "T7_realrate_coef", "printed": 0.023, "digits": 3, "kind": "deterministic"},
-  {"label": "T7_realrate_se", "printed": 0.032, "digits": 3, "kind": "deterministic"},
-  {"label": "T7_realrate_p", "printed": 0.493, "digits": 3, "kind": "deterministic"},
-
-  {"label": "T7_trust_coef", "printed": -0.005, "digits": 3, "kind": "deterministic"},
-  {"label": "T7_trust_se", "printed": 0.004, "digits": 3, "kind": "deterministic"},
-  {"label": "T7_trust_p", "printed": 0.257, "digits": 3, "kind": "deterministic"},
-
-  {"label": "T7_inverse_coef", "printed": 0.627, "digits": 3, "kind": "deterministic"},
-  {"label": "T7_inverse_se", "printed": 0.103, "digits": 3, "kind": "deterministic"},
-  {"label": "T7_inverse_p", "printed": 0.000, "digits": 3, "kind": "deterministic"},
-
-  {"label": "T7_top_coef", "printed": 0.602, "digits": 3, "kind": "deterministic"},
-  {"label": "T7_top_se", "printed": 0.114, "digits": 3, "kind": "deterministic"},
-  {"label": "T7_top_p", "printed": 0.000, "digits": 3, "kind": "deterministic"},
-
-  {"label": "T7_totalc_coef", "printed": 0.416, "digits": 3, "kind": "deterministic"},
-  {"label": "T7_totalc_se", "printed": 0.147, "digits": 3, "kind": "deterministic"},
-  {"label": "T7_totalc_p", "printed": 0.009, "digits": 3, "kind": "deterministic"},
-
-  {"label": "T7_lnyears_coef", "printed": -0.228, "digits": 3, "kind": "deterministic"},
-  {"label": "T7_lnyears_se", "printed": 0.058, "digits": 3, "kind": "deterministic"},
-  {"label": "T7_lnyears_p", "printed": 0.001, "digits": 3, "kind": "deterministic"},
-
-  {"label": "T7_ols_coef", "printed": 0.443, "digits": 3, "kind": "deterministic"},
-  {"label": "T7_ols_se", "printed": 0.189, "digits": 3, "kind": "deterministic"},
-  {"label": "T7_ols_p", "printed": 0.028, "digits": 3, "kind": "deterministic"},
-
-  {"label": "T7_irstock_coef", "printed": -0.299, "digits": 3, "kind": "deterministic"},
-  {"label": "T7_irstock_se", "printed": 0.136, "digits": 3, "kind": "deterministic"},
-  {"label": "T7_irstock_p", "printed": 0.037, "digits": 3, "kind": "deterministic"},
-
-  {"label": "T7_stockhold_coef", "printed": 0.406, "digits": 3, "kind": "deterministic"},
-  {"label": "T7_stockhold_se", "printed": 0.130, "digits": 3, "kind": "deterministic"},
-  {"label": "T7_stockhold_p", "printed": 0.005, "digits": 3, "kind": "deterministic"},
-
-  {"label": "T7_lnyearcits_coef", "printed": -0.093, "digits": 3, "kind": "deterministic"},
-  {"label": "T7_lnyearcits_se", "printed": 0.057, "digits": 3, "kind": "deterministic"},
-  {"label": "T7_lnyearcits_p", "printed": 0.119, "digits": 3, "kind": "deterministic"},
-
-  {"label": "T7_ircap_coef", "printed": -0.265, "digits": 3, "kind": "deterministic"},
-  {"label": "T7_ircap_se", "printed": 0.061, "digits": 3, "kind": "deterministic"},
-  {"label": "T7_ircap_p", "printed": 0.000, "digits": 3, "kind": "deterministic"},
-
-  {"label": "T7_sepdur_coef", "printed": 0.465, "digits": 3, "kind": "deterministic"},
-  {"label": "T7_sepdur_se", "printed": 0.273, "digits": 3, "kind": "deterministic"},
-  {"label": "T7_sepdur_p", "printed": 0.101, "digits": 3, "kind": "deterministic"},
-
-  {"label": "T7_constant_coef", "printed": -0.797, "digits": 3, "kind": "deterministic"},
-  {"label": "T7_constant_se", "printed": 1.093, "digits": 3, "kind": "deterministic"},
-  {"label": "T7_constant_p", "printed": 0.473, "digits": 3, "kind": "deterministic"},
-
-  {"label": "T7_N", "printed": 2254, "digits": 0, "kind": "count"},
-
-  {"label": "T1_gdppc_coef", "printed": 0.126, "digits": 3, "kind": "deterministic"},
-  {"label": "T1_gdppc_se", "printed": 0.084, "digits": 3, "kind": "deterministic"},
-  {"label": "T1_gdppc_p", "printed": 0.138, "digits": 3, "kind": "deterministic"},
-
-  {"label": "T1_eascredit_coef", "printed": -0.033, "digits": 3, "kind": "deterministic"},
-  {"label": "T1_eascredit_se", "printed": 0.055, "digits": 3, "kind": "deterministic"},
-  {"label": "T1_eascredit_p", "printed": 0.553, "digits": 3, "kind": "deterministic"},
-
-  {"label": "T1_realrate_coef", "printed": -0.003, "digits": 3, "kind": "deterministic"},
-  {"label": "T1_realrate_se", "printed": 0.006, "digits": 3, "kind": "deterministic"},
-  {"label": "T1_realrate_p", "printed": 0.635, "digits": 3, "kind": "deterministic"},
-
-  {"label": "T1_ruleoflaw_coef", "printed": -0.019, "digits": 3, "kind": "deterministic"},
-  {"label": "T1_ruleoflaw_se", "printed": 0.074, "digits": 3, "kind": "deterministic"},
-  {"label": "T1_ruleoflaw_p", "printed": 0.800, "digits": 3, "kind": "deterministic"},
-
-  {"label": "T1_stockhold_coef", "printed": 0.421, "digits": 3, "kind": "deterministic"},
-  {"label": "T1_stockhold_se", "printed": 0.089, "digits": 3, "kind": "deterministic"},
-  {"label": "T1_stockhold_p", "printed": 0.000, "digits": 3, "kind": "deterministic"},
-
-  {"label": "T1_N", "printed": 2526, "digits": 0, "kind": "count"},
-
-  {"label": "T2_marketpartic_coef", "printed": 2.221, "digits": 3, "kind": "deterministic"},
-  {"label": "T2_marketpartic_se", "printed": 0.542, "digits": 3, "kind": "deterministic"},
-  {"label": "T2_marketpartic_p", "printed": 0.000, "digits": 3, "kind": "deterministic"},
-
-  {"label": "T2_gdppc_coef", "printed": 0.116, "digits": 3, "kind": "deterministic"},
-  {"label": "T2_gdppc_se", "printed": 0.138, "digits": 3, "kind": "deterministic"},
-  {"label": "T2_gdppc_p", "printed": 0.405, "digits": 3, "kind": "deterministic"},
-
-  {"label": "T2_stockhold_coef", "printed": 0.372, "digits": 3, "kind": "deterministic"},
-  {"label": "T2_stockhold_se", "printed": 0.143, "digits": 3, "kind": "deterministic"},
-  {"label": "T2_stockhold_p", "printed": 0.015, "digits": 3, "kind": "deterministic"},
-
-  {"label": "T2_N", "printed": 2254, "digits": 0, "kind": "count"},
-
-  {"label": "HL_stockpartic_10pp_effect_ols", "printed": 0.24, "digits": 2, "kind": "headline",
-   "note": "paper value is a BMA posterior mean (2.4) x 0.10; produced value is the OLS/frequentist-check counterpart (Table 2 marketpartic coef x 0.10) -- not the same estimator, see REPLICATION.md"},
-
-  {"label": "HL_assetholders_core_ols", "printed": 0.21, "digits": 2, "kind": "headline",
-   "note": "paper value is the BMA posterior mean for Asset holders, core-countries specification (Table 2); produced value is the OLS/frequentist-check coefficient on the same variable in the same table"},
-
-  {"label": "HL_assetholders_all_ols", "printed": 0.35, "digits": 2, "kind": "headline",
-   "note": "paper value is the BMA posterior mean for Asset holders, all-countries specification (Table 1); produced value is the OLS/frequentist-check coefficient on the same variable in the same table"},
-
-  {"label": "HL_econsig_max_stockpartic_ols", "printed": 0.931, "digits": 3, "kind": "headline",
-   "note": "Table 3 economic-significance figure, BMA-based; produced value uses the OLS coefficient in place of the BMA posterior mean, same sample"},
-  {"label": "HL_econsig_sd_stockpartic_ols", "printed": 0.141, "digits": 3, "kind": "headline"},
-
-  {"label": "HL_econsig_max_gdppc_ols", "printed": 0.683, "digits": 3, "kind": "headline"},
-  {"label": "HL_econsig_sd_gdppc_ols", "printed": 0.088, "digits": 3, "kind": "headline"},
-
-  {"label": "HL_econsig_max_eascredit_ols", "printed": -0.119, "digits": 3, "kind": "headline"},
-  {"label": "HL_econsig_sd_eascredit_ols", "printed": -0.020, "digits": 3, "kind": "headline"},
-
-  {"label": "HL_econsig_max_realrate_ols", "printed": -0.265, "digits": 3, "kind": "headline"},
-  {"label": "HL_econsig_sd_realrate_ols", "printed": -0.019, "digits": 3, "kind": "headline"},
-
-  {"label": "HL_econsig_max_ruleoflaw_ols", "printed": -0.087, "digits": 3, "kind": "headline"},
-  {"label": "HL_econsig_sd_ruleoflaw_ols", "printed": -0.012, "digits": 3, "kind": "headline"}
+ {
+  "label": "T7_marketpartic_coef",
+  "printed": 2.342,
+  "digits": 3,
+  "kind": "deterministic"
+ },
+ {
+  "label": "T7_marketpartic_se",
+  "printed": 0.848,
+  "digits": 3,
+  "kind": "deterministic"
+ },
+ {
+  "label": "T7_marketpartic_p",
+  "printed": 0.011,
+  "digits": 3,
+  "kind": "deterministic"
+ },
+ {
+  "label": "T7_gdppc_coef",
+  "printed": 0.198,
+  "digits": 3,
+  "kind": "deterministic"
+ },
+ {
+  "label": "T7_gdppc_se",
+  "printed": 0.114,
+  "digits": 3,
+  "kind": "deterministic"
+ },
+ {
+  "label": "T7_gdppc_p",
+  "printed": 0.095,
+  "digits": 3,
+  "kind": "deterministic"
+ },
+ {
+  "label": "T7_finref_coef",
+  "printed": -0.777,
+  "digits": 3,
+  "kind": "deterministic"
+ },
+ {
+  "label": "T7_finref_se",
+  "printed": 0.394,
+  "digits": 3,
+  "kind": "deterministic"
+ },
+ {
+  "label": "T7_finref_p",
+  "printed": 0.06,
+  "digits": 3,
+  "kind": "deterministic"
+ },
+ {
+  "label": "T7_realrate_coef",
+  "printed": 0.023,
+  "digits": 3,
+  "kind": "deterministic"
+ },
+ {
+  "label": "T7_realrate_se",
+  "printed": 0.032,
+  "digits": 3,
+  "kind": "deterministic"
+ },
+ {
+  "label": "T7_realrate_p",
+  "printed": 0.493,
+  "digits": 3,
+  "kind": "deterministic"
+ },
+ {
+  "label": "T7_trust_coef",
+  "printed": -0.005,
+  "digits": 3,
+  "kind": "deterministic"
+ },
+ {
+  "label": "T7_trust_se",
+  "printed": 0.004,
+  "digits": 3,
+  "kind": "deterministic"
+ },
+ {
+  "label": "T7_trust_p",
+  "printed": 0.257,
+  "digits": 3,
+  "kind": "deterministic"
+ },
+ {
+  "label": "T7_inverse_coef",
+  "printed": 0.627,
+  "digits": 3,
+  "kind": "deterministic"
+ },
+ {
+  "label": "T7_inverse_se",
+  "printed": 0.103,
+  "digits": 3,
+  "kind": "deterministic"
+ },
+ {
+  "label": "T7_inverse_p",
+  "printed": 0.0,
+  "digits": 3,
+  "kind": "deterministic"
+ },
+ {
+  "label": "T7_top_coef",
+  "printed": 0.602,
+  "digits": 3,
+  "kind": "deterministic"
+ },
+ {
+  "label": "T7_top_se",
+  "printed": 0.114,
+  "digits": 3,
+  "kind": "deterministic"
+ },
+ {
+  "label": "T7_top_p",
+  "printed": 0.0,
+  "digits": 3,
+  "kind": "deterministic"
+ },
+ {
+  "label": "T7_totalc_coef",
+  "printed": 0.416,
+  "digits": 3,
+  "kind": "deterministic"
+ },
+ {
+  "label": "T7_totalc_se",
+  "printed": 0.147,
+  "digits": 3,
+  "kind": "deterministic"
+ },
+ {
+  "label": "T7_totalc_p",
+  "printed": 0.009,
+  "digits": 3,
+  "kind": "deterministic"
+ },
+ {
+  "label": "T7_lnyears_coef",
+  "printed": -0.228,
+  "digits": 3,
+  "kind": "deterministic"
+ },
+ {
+  "label": "T7_lnyears_se",
+  "printed": 0.058,
+  "digits": 3,
+  "kind": "deterministic"
+ },
+ {
+  "label": "T7_lnyears_p",
+  "printed": 0.001,
+  "digits": 3,
+  "kind": "deterministic"
+ },
+ {
+  "label": "T7_ols_coef",
+  "printed": 0.443,
+  "digits": 3,
+  "kind": "deterministic"
+ },
+ {
+  "label": "T7_ols_se",
+  "printed": 0.189,
+  "digits": 3,
+  "kind": "deterministic"
+ },
+ {
+  "label": "T7_ols_p",
+  "printed": 0.028,
+  "digits": 3,
+  "kind": "deterministic"
+ },
+ {
+  "label": "T7_irstock_coef",
+  "printed": -0.299,
+  "digits": 3,
+  "kind": "deterministic"
+ },
+ {
+  "label": "T7_irstock_se",
+  "printed": 0.136,
+  "digits": 3,
+  "kind": "deterministic"
+ },
+ {
+  "label": "T7_irstock_p",
+  "printed": 0.037,
+  "digits": 3,
+  "kind": "deterministic"
+ },
+ {
+  "label": "T7_stockhold_coef",
+  "printed": 0.406,
+  "digits": 3,
+  "kind": "deterministic"
+ },
+ {
+  "label": "T7_stockhold_se",
+  "printed": 0.13,
+  "digits": 3,
+  "kind": "deterministic"
+ },
+ {
+  "label": "T7_stockhold_p",
+  "printed": 0.005,
+  "digits": 3,
+  "kind": "deterministic"
+ },
+ {
+  "label": "T7_lnyearcits_coef",
+  "printed": -0.093,
+  "digits": 3,
+  "kind": "deterministic"
+ },
+ {
+  "label": "T7_lnyearcits_se",
+  "printed": 0.057,
+  "digits": 3,
+  "kind": "deterministic"
+ },
+ {
+  "label": "T7_lnyearcits_p",
+  "printed": 0.119,
+  "digits": 3,
+  "kind": "deterministic"
+ },
+ {
+  "label": "T7_ircap_coef",
+  "printed": -0.265,
+  "digits": 3,
+  "kind": "deterministic"
+ },
+ {
+  "label": "T7_ircap_se",
+  "printed": 0.061,
+  "digits": 3,
+  "kind": "deterministic"
+ },
+ {
+  "label": "T7_ircap_p",
+  "printed": 0.0,
+  "digits": 3,
+  "kind": "deterministic"
+ },
+ {
+  "label": "T7_sepdur_coef",
+  "printed": 0.465,
+  "digits": 3,
+  "kind": "deterministic"
+ },
+ {
+  "label": "T7_sepdur_se",
+  "printed": 0.273,
+  "digits": 3,
+  "kind": "deterministic"
+ },
+ {
+  "label": "T7_sepdur_p",
+  "printed": 0.101,
+  "digits": 3,
+  "kind": "deterministic"
+ },
+ {
+  "label": "T7_constant_coef",
+  "printed": -0.797,
+  "digits": 3,
+  "kind": "deterministic"
+ },
+ {
+  "label": "T7_constant_se",
+  "printed": 1.093,
+  "digits": 3,
+  "kind": "deterministic"
+ },
+ {
+  "label": "T7_constant_p",
+  "printed": 0.473,
+  "digits": 3,
+  "kind": "deterministic"
+ },
+ {
+  "label": "T7_N",
+  "printed": 2254,
+  "digits": 0,
+  "kind": "count"
+ },
+ {
+  "label": "T1_gdppc_coef",
+  "printed": 0.126,
+  "digits": 3,
+  "kind": "deterministic"
+ },
+ {
+  "label": "T1_gdppc_se",
+  "printed": 0.084,
+  "digits": 3,
+  "kind": "deterministic"
+ },
+ {
+  "label": "T1_gdppc_p",
+  "printed": 0.138,
+  "digits": 3,
+  "kind": "deterministic"
+ },
+ {
+  "label": "T1_eascredit_coef",
+  "printed": -0.033,
+  "digits": 3,
+  "kind": "deterministic"
+ },
+ {
+  "label": "T1_eascredit_se",
+  "printed": 0.055,
+  "digits": 3,
+  "kind": "deterministic"
+ },
+ {
+  "label": "T1_eascredit_p",
+  "printed": 0.553,
+  "digits": 3,
+  "kind": "deterministic"
+ },
+ {
+  "label": "T1_realrate_coef",
+  "printed": -0.003,
+  "digits": 3,
+  "kind": "deterministic"
+ },
+ {
+  "label": "T1_realrate_se",
+  "printed": 0.006,
+  "digits": 3,
+  "kind": "deterministic"
+ },
+ {
+  "label": "T1_realrate_p",
+  "printed": 0.635,
+  "digits": 3,
+  "kind": "deterministic"
+ },
+ {
+  "label": "T1_ruleoflaw_coef",
+  "printed": -0.019,
+  "digits": 3,
+  "kind": "deterministic"
+ },
+ {
+  "label": "T1_ruleoflaw_se",
+  "printed": 0.074,
+  "digits": 3,
+  "kind": "deterministic"
+ },
+ {
+  "label": "T1_ruleoflaw_p",
+  "printed": 0.8,
+  "digits": 3,
+  "kind": "deterministic"
+ },
+ {
+  "label": "T1_stockhold_coef",
+  "printed": 0.421,
+  "digits": 3,
+  "kind": "deterministic"
+ },
+ {
+  "label": "T1_stockhold_se",
+  "printed": 0.089,
+  "digits": 3,
+  "kind": "deterministic"
+ },
+ {
+  "label": "T1_stockhold_p",
+  "printed": 0.0,
+  "digits": 3,
+  "kind": "deterministic"
+ },
+ {
+  "label": "T1_N",
+  "printed": 2526,
+  "digits": 0,
+  "kind": "count"
+ },
+ {
+  "label": "T2_marketpartic_coef",
+  "printed": 2.221,
+  "digits": 3,
+  "kind": "deterministic"
+ },
+ {
+  "label": "T2_marketpartic_se",
+  "printed": 0.542,
+  "digits": 3,
+  "kind": "deterministic"
+ },
+ {
+  "label": "T2_marketpartic_p",
+  "printed": 0.0,
+  "digits": 3,
+  "kind": "deterministic"
+ },
+ {
+  "label": "T2_gdppc_coef",
+  "printed": 0.116,
+  "digits": 3,
+  "kind": "deterministic"
+ },
+ {
+  "label": "T2_gdppc_se",
+  "printed": 0.138,
+  "digits": 3,
+  "kind": "deterministic"
+ },
+ {
+  "label": "T2_gdppc_p",
+  "printed": 0.405,
+  "digits": 3,
+  "kind": "deterministic"
+ },
+ {
+  "label": "T2_stockhold_coef",
+  "printed": 0.372,
+  "digits": 3,
+  "kind": "deterministic"
+ },
+ {
+  "label": "T2_stockhold_se",
+  "printed": 0.143,
+  "digits": 3,
+  "kind": "deterministic"
+ },
+ {
+  "label": "T2_stockhold_p",
+  "printed": 0.015,
+  "digits": 3,
+  "kind": "deterministic"
+ },
+ {
+  "label": "T2_N",
+  "printed": 2254,
+  "digits": 0,
+  "kind": "count"
+ },
+ {
+  "label": "HL_stockpartic_10pp_effect_ols",
+  "printed": 0.24,
+  "digits": 2,
+  "kind": "not_reproduced",
+  "note": "NOT PRODUCED BY THIS PACKAGE. The paper's figure is a Bayesian model averaging posterior mean, and no wrapper in stata_compat.R fits BMA, so it is quoted rather than computed. The number shown beside it is the OLS/frequentist-check coefficient on the same variable in the same table -- a different estimator, reported for orientation only. Scoring it against the BMA figure would record a failure of the code where the truth is that the quantity was never computed. paper value is a BMA posterior mean (2.4) x 0.10; produced value is the OLS/frequentist-check counterpart (Table 2 marketpartic coef x 0.10) -- not the same estimator, see REPLICATION.md"
+ },
+ {
+  "label": "HL_assetholders_core_ols",
+  "printed": 0.21,
+  "digits": 2,
+  "kind": "not_reproduced",
+  "note": "NOT PRODUCED BY THIS PACKAGE. The paper's figure is a Bayesian model averaging posterior mean, and no wrapper in stata_compat.R fits BMA, so it is quoted rather than computed. The number shown beside it is the OLS/frequentist-check coefficient on the same variable in the same table -- a different estimator, reported for orientation only. Scoring it against the BMA figure would record a failure of the code where the truth is that the quantity was never computed. paper value is the BMA posterior mean for Asset holders, core-countries specification (Table 2); produced value is the OLS/frequentist-check coefficient on the same variable in the same table"
+ },
+ {
+  "label": "HL_assetholders_all_ols",
+  "printed": 0.35,
+  "digits": 2,
+  "kind": "not_reproduced",
+  "note": "NOT PRODUCED BY THIS PACKAGE. The paper's figure is a Bayesian model averaging posterior mean, and no wrapper in stata_compat.R fits BMA, so it is quoted rather than computed. The number shown beside it is the OLS/frequentist-check coefficient on the same variable in the same table -- a different estimator, reported for orientation only. Scoring it against the BMA figure would record a failure of the code where the truth is that the quantity was never computed. paper value is the BMA posterior mean for Asset holders, all-countries specification (Table 1); produced value is the OLS/frequentist-check coefficient on the same variable in the same table"
+ },
+ {
+  "label": "HL_econsig_max_stockpartic_ols",
+  "printed": 0.931,
+  "digits": 3,
+  "kind": "not_reproduced",
+  "note": "NOT PRODUCED BY THIS PACKAGE. The paper's figure is a Bayesian model averaging posterior mean, and no wrapper in stata_compat.R fits BMA, so it is quoted rather than computed. The number shown beside it is the OLS/frequentist-check coefficient on the same variable in the same table -- a different estimator, reported for orientation only. Scoring it against the BMA figure would record a failure of the code where the truth is that the quantity was never computed. Table 3 economic-significance figure, BMA-based; produced value uses the OLS coefficient in place of the BMA posterior mean, same sample"
+ },
+ {
+  "label": "HL_econsig_sd_stockpartic_ols",
+  "printed": 0.141,
+  "digits": 3,
+  "kind": "not_reproduced",
+  "note": "NOT PRODUCED BY THIS PACKAGE. The paper's figure is a Bayesian model averaging posterior mean, and no wrapper in stata_compat.R fits BMA, so it is quoted rather than computed. The number shown beside it is the OLS/frequentist-check coefficient on the same variable in the same table -- a different estimator, reported for orientation only. Scoring it against the BMA figure would record a failure of the code where the truth is that the quantity was never computed."
+ },
+ {
+  "label": "HL_econsig_max_gdppc_ols",
+  "printed": 0.683,
+  "digits": 3,
+  "kind": "not_reproduced",
+  "note": "NOT PRODUCED BY THIS PACKAGE. The paper's figure is a Bayesian model averaging posterior mean, and no wrapper in stata_compat.R fits BMA, so it is quoted rather than computed. The number shown beside it is the OLS/frequentist-check coefficient on the same variable in the same table -- a different estimator, reported for orientation only. Scoring it against the BMA figure would record a failure of the code where the truth is that the quantity was never computed."
+ },
+ {
+  "label": "HL_econsig_sd_gdppc_ols",
+  "printed": 0.088,
+  "digits": 3,
+  "kind": "not_reproduced",
+  "note": "NOT PRODUCED BY THIS PACKAGE. The paper's figure is a Bayesian model averaging posterior mean, and no wrapper in stata_compat.R fits BMA, so it is quoted rather than computed. The number shown beside it is the OLS/frequentist-check coefficient on the same variable in the same table -- a different estimator, reported for orientation only. Scoring it against the BMA figure would record a failure of the code where the truth is that the quantity was never computed."
+ },
+ {
+  "label": "HL_econsig_max_eascredit_ols",
+  "printed": -0.119,
+  "digits": 3,
+  "kind": "not_reproduced",
+  "note": "NOT PRODUCED BY THIS PACKAGE. The paper's figure is a Bayesian model averaging posterior mean, and no wrapper in stata_compat.R fits BMA, so it is quoted rather than computed. The number shown beside it is the OLS/frequentist-check coefficient on the same variable in the same table -- a different estimator, reported for orientation only. Scoring it against the BMA figure would record a failure of the code where the truth is that the quantity was never computed."
+ },
+ {
+  "label": "HL_econsig_sd_eascredit_ols",
+  "printed": -0.02,
+  "digits": 3,
+  "kind": "not_reproduced",
+  "note": "NOT PRODUCED BY THIS PACKAGE. The paper's figure is a Bayesian model averaging posterior mean, and no wrapper in stata_compat.R fits BMA, so it is quoted rather than computed. The number shown beside it is the OLS/frequentist-check coefficient on the same variable in the same table -- a different estimator, reported for orientation only. Scoring it against the BMA figure would record a failure of the code where the truth is that the quantity was never computed."
+ },
+ {
+  "label": "HL_econsig_max_realrate_ols",
+  "printed": -0.265,
+  "digits": 3,
+  "kind": "not_reproduced",
+  "note": "NOT PRODUCED BY THIS PACKAGE. The paper's figure is a Bayesian model averaging posterior mean, and no wrapper in stata_compat.R fits BMA, so it is quoted rather than computed. The number shown beside it is the OLS/frequentist-check coefficient on the same variable in the same table -- a different estimator, reported for orientation only. Scoring it against the BMA figure would record a failure of the code where the truth is that the quantity was never computed."
+ },
+ {
+  "label": "HL_econsig_sd_realrate_ols",
+  "printed": -0.019,
+  "digits": 3,
+  "kind": "not_reproduced",
+  "note": "NOT PRODUCED BY THIS PACKAGE. The paper's figure is a Bayesian model averaging posterior mean, and no wrapper in stata_compat.R fits BMA, so it is quoted rather than computed. The number shown beside it is the OLS/frequentist-check coefficient on the same variable in the same table -- a different estimator, reported for orientation only. Scoring it against the BMA figure would record a failure of the code where the truth is that the quantity was never computed."
+ },
+ {
+  "label": "HL_econsig_max_ruleoflaw_ols",
+  "printed": -0.087,
+  "digits": 3,
+  "kind": "not_reproduced",
+  "note": "NOT PRODUCED BY THIS PACKAGE. The paper's figure is a Bayesian model averaging posterior mean, and no wrapper in stata_compat.R fits BMA, so it is quoted rather than computed. The number shown beside it is the OLS/frequentist-check coefficient on the same variable in the same table -- a different estimator, reported for orientation only. Scoring it against the BMA figure would record a failure of the code where the truth is that the quantity was never computed."
+ },
+ {
+  "label": "HL_econsig_sd_ruleoflaw_ols",
+  "printed": -0.012,
+  "digits": 3,
+  "kind": "not_reproduced",
+  "note": "NOT PRODUCED BY THIS PACKAGE. The paper's figure is a Bayesian model averaging posterior mean, and no wrapper in stata_compat.R fits BMA, so it is quoted rather than computed. The number shown beside it is the OLS/frequentist-check coefficient on the same variable in the same table -- a different estimator, reported for orientation only. Scoring it against the BMA figure would record a failure of the code where the truth is that the quantity was never computed."
+ }
 ]

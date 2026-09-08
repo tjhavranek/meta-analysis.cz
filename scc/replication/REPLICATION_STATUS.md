@@ -5,6 +5,8 @@ it cannot claim something the code does not do.
 
 **58 of 60 numbers from the paper are reproduced.**
 
+Counting every number this file lists, the paper prints **70**, of which this package does not produce **2**.
+
 ## Not reproduced (2)
 
 | number in the paper | paper | this package |

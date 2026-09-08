@@ -132,14 +132,33 @@ for (nm in names(sub)) {
 # the same category of limitation as Table 3's BMA (see REPLICATION.md): reported as missing,
 # not guessed at.
 #
-# Missing-input caveat (same root cause as Table 3, documented in REPLICATION.md): Se_adj
-# ("Unnamed: 26"), the SE regressor, is missing for 122 of 1,973 rows; activism.R fills those
-# via a p-value-implied SE from an unpublished helper (functions/calculateSE_JB.R, not on the
-# site). We cannot reproduce that imputation, so every regression below runs on the 1,851 rows
-# (60 of 67 studies) with a directly reported Se_adj -- N is reported alongside every estimate
-# so the gap is visible rather than silently absorbed.
+# Se_adj ("Unnamed: 26"), the SE regressor, is missing for 122 of the 1,973 rows. activism.R
+# fills those from the reported p-value via a helper that is not on the site
+# (functions/calculateSE_JB.R), and an earlier version of this script therefore dropped them and
+# ran on 1,851 rows from 60 of 67 studies.
+#
+# The helper is not needed. The column "p-value.1" holds exactly 122 non-missing values, and
+# every one of them sits precisely where Se_adj is missing -- those rows report a p-value
+# INSTEAD of a standard error. The standard inversion
+#
+#     SE = |estimate| / qnorm(1 - p/2)
+#
+# is applied here. It was chosen before looking at what it produced, and it recovers the paper's
+# sample exactly: 1,973 observations from 67 studies, both of which the truncated sample missed.
+#
+# It is a RECONSTRUCTION, not the author's own helper, and the difference shows: the six Table A2
+# coefficients move toward the printed values but do not reach them (OLS 0.6136 against a printed
+# 0.59, FE 1.2707 against 1.256 -- from 0.6471 and 1.3098 on the truncated sample). Four other
+# inversions were tried (the raw rather than adjusted estimate, the winsorised estimate, a
+# one-sided normal, and t quantiles at 30 and 100 df); all recover 1,973/67 and none lands closer
+# than this one, so the mechanism is identified and the exact helper is not. Those coefficients
+# are reported as not reproduced. Nothing here was adjusted to move a number toward its target.
 
 d$se_adj_raw <- as.numeric(d[["Unnamed: 26"]])
+# fill the 122 rows that report a p-value instead of a standard error (see the note above)
+.p_alt <- as.numeric(d[["p-value.1"]])
+.se_from_p <- abs(d$Estim_adj) / stats::qnorm(1 - .p_alt / 2)
+d$se_adj_raw <- ifelse(is.na(d$se_adj_raw), .se_from_p, d$se_adj_raw)
 # Winsorize exactly like Estim_adj (activism.R line 128: Winsorize(se_adj, c(0.01,0.99),
 # na.rm=T)) -- st_winsor_r already leaves NA as NA, matching na.rm=TRUE.
 d$se_adjw <- st_winsor_r(d$se_adj_raw, p = 0.01)
@@ -206,9 +225,20 @@ linear_betas <- c(
 # from the paper's 0.196% (see REPLICATION.md). This is a genuine instability of the Top10
 # estimator on this reduced sample, not a coding error -- it is not treated as reproducing
 # the headline range.
-n10 <- ceiling(0.10 * nrow(reg))
-ord10 <- order(reg$se_adjw)[seq_len(n10)]
-m_top10 <- st_metan(reg$estw[ord10], reg$se_adjw[ord10], random = FALSE)
+# Inverse-variance weighting needs a POSITIVE standard error. 29 of the 122 rows filled from a
+# p-value have that p recorded as exactly 0 -- "p < 0.001" written as zero -- which inverts to a
+# standard error of 0. Those rows are a legitimate regressor value in the FAT-PET regressions
+# above and are kept there; they cannot enter a precision weight, so they are excluded here and
+# the exclusion is reported rather than absorbed.
+prec_ok <- is.finite(reg$se_adjw) & reg$se_adjw > 0
+n_excl <- sum(!prec_ok)
+top <- reg[prec_ok, ]
+n10 <- ceiling(0.10 * nrow(top))
+ord10 <- order(top$se_adjw)[seq_len(n10)]
+m_top10 <- st_metan(top$estw[ord10], top$se_adjw[ord10], random = FALSE)
+cat(sprintf("Top10: %d of %d rows excluded for a non-positive standard error
+",
+            n_excl, nrow(reg)))
 emit("TA2 Top10 beta0 (unverified, see note)", as.numeric(m_top10$beta))
 emit("TA2 Top10 n (10% most precise)", n10)
 

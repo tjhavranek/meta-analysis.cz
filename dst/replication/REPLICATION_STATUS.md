@@ -5,6 +5,8 @@ it cannot claim something the code does not do.
 
 **22 of 22 numbers from the paper are reproduced.**
 
+Counting every number this file lists, the paper prints **23**, of which this package does not produce **0**.
+
 ## Recorded but not scored (1)
 
 Numbers that cannot be a pass or a fail. `discrepancy`: computed correctly and
