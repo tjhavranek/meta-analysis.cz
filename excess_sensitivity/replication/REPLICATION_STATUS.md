@@ -7,15 +7,15 @@ it cannot claim something the code does not do.
 
 ## Not matching the printed paper (1)
 
-The reason for each follows the table.
+Cells are named as they are in `results.json`. The reason for each follows the table.
 
-| number in the paper | paper | this code |
+| cell | paper | this code |
 |---|---|---|
 | spec4_precision_RoTwithLC | 0.004 | 0.004922 |
 
 ## Reproduced (47)
 
-| number in the paper | paper | this code |
+| cell | paper | this code |
 |---|---|---|
 | N_obs_all_specs | 3127 | 3127 |
 | N_studies_all_specs | 144 | 144 |

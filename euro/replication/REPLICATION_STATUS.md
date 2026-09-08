@@ -7,7 +7,7 @@ it cannot claim something the code does not do.
 
 ## Reproduced (17)
 
-| number in the paper | paper | this code |
+| cell | paper | this code |
 |---|---|---|
 | T1_FATPET_prec_coef | 0.000667 | 0.000667 |
 | T1_FATPET_prec_t | 0.05 | 0.050485 |

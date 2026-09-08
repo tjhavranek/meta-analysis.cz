@@ -7,7 +7,7 @@ it cannot claim something the code does not do.
 
 ## Reproduced (45)
 
-| number in the paper | paper | this code |
+| cell | paper | this code |
 |---|---|---|
 | T2 PanelA OLS SE coef | 0.535 | 0.534894 |
 | T2 PanelA OLS SE se | 0.0299 | 0.029883 |

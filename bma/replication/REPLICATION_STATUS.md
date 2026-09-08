@@ -7,7 +7,7 @@ it cannot claim something the code does not do.
 
 ## Not produced by this code (3)
 
-| number in the paper | paper | this code |
+| cell | paper | this code |
 |---|---|---|
 | T4 col2 (study+country FE) Se(pub.bias) coef | -0.284 | not computed |
 | T4 col2 (study+country FE) Se(pub.bias) SE | 0.305 | not computed |
@@ -15,7 +15,7 @@ it cannot claim something the code does not do.
 
 ## Reproduced (21)
 
-| number in the paper | paper | this code |
+| cell | paper | this code |
 |---|---|---|
 | T4 col1 (study FE) Constant coef | 0.021 | 0.02143 |
 | T4 col1 (study FE) Constant SE | 0.015 | 0.014665 |

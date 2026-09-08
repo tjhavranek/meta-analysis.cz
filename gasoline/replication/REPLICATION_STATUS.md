@@ -7,7 +7,7 @@ it cannot claim something the code does not do.
 
 ## Not produced by this code (4)
 
-| number in the paper | paper | this code |
+| cell | paper | this code |
 |---|---|---|
 | Headline paper-text: short-run elasticity corrected for publication bias (paper says 0.1) | 0.1 | not computed |
 | T5 weighted mean, long run whole sample | 0.614 | not computed |
@@ -16,7 +16,7 @@ it cannot claim something the code does not do.
 
 ## Reproduced (151)
 
-| number in the paper | paper | this code |
+| cell | paper | this code |
 |---|---|---|
 | T6 c1 1/se coef | 0.257 | 0.256785 |
 | T6 c1 1/se t | 1.39 | 1.393905 |

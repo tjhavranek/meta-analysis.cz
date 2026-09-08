@@ -7,16 +7,16 @@ it cannot claim something the code does not do.
 
 ## Not matching the printed paper (2)
 
-The reason for each follows the table.
+Cells are named as they are in `results.json`. The reason for each follows the table.
 
-| number in the paper | paper | this code |
+| cell | paper | this code |
 |---|---|---|
 | T3 col5 MAIVE: First-stage F | 31.2 | 38.235431 |
 | T3 col5 MAIVE: Studies | 23 | 33 |
 
 ## Reproduced (29)
 
-| number in the paper | paper | this code |
+| cell | paper | this code |
 |---|---|---|
 | T3 col1 OLS: Publication bias coef | 1.689 | 1.688932 |
 | T3 col1 OLS: Publication bias SE | 0.264 | 0.264293 |

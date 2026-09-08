@@ -7,9 +7,9 @@ it cannot claim something the code does not do.
 
 ## Not matching the printed paper (1)
 
-The reason for each follows the table.
+Cells are named as they are in `results.json`. The reason for each follows the table.
 
-| number in the paper | paper | this code |
+| cell | paper | this code |
 |---|---|---|
 | Text F3 mean of study-level medians (NOT reproduced, see run.R) | 0.0099 | 0.009999 |
 
@@ -17,7 +17,7 @@ The paper prints 0.0099. This code follows the authors' own line for the same qu
 
 ## Reproduced (149)
 
-| number in the paper | paper | this code |
+| cell | paper | this code |
 |---|---|---|
 | T9 OLS SEPCC coef | -1.5708 | -1.570803 |
 | T9 OLS SEPCC se | 0.8567 | 0.856737 |

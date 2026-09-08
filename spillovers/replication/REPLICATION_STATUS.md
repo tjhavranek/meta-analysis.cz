@@ -7,9 +7,9 @@ it cannot claim something the code does not do.
 
 ## Not matching the printed paper (3)
 
-The reason for each follows the table.
+Cells are named as they are in `results.json`. The reason for each follows the table.
 
-| number in the paper | paper | this code |
+| cell | paper | this code |
 |---|---|---|
 | PanelA_Pub_N | 370 | 378 |
 | PanelB_Pub_N | 241 | 249 |
@@ -19,7 +19,7 @@ Table 1's published-only columns print N = 370, 241 and 305; this code computes 
 
 ## Reproduced (33)
 
-| number in the paper | paper | this code |
+| cell | paper | this code |
 |---|---|---|
 | PanelA_All_Constant_coef | -0.0255 | -0.025467 |
 | PanelA_All_Constant_se | 0.496 | 0.495974 |

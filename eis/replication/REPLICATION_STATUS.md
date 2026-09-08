@@ -7,14 +7,14 @@ it cannot claim something the code does not do.
 
 ## Not produced by this code (2)
 
-| number in the paper | paper | this code |
+| cell | paper | this code |
 |---|---|---|
 | Headline (abstract 0.3-0.4): corrected elasticity, micro asset holders, CI low bound rounds to 0.3 | 0.3 | not computed |
 | Headline (abstract 0.3-0.4): corrected elasticity, micro asset holders, CI high bound rounds to 0.4 | 0.4 | not computed |
 
 ## Reproduced (51)
 
-| number in the paper | paper | this code |
+| cell | paper | this code |
 |---|---|---|
 | T2 col1 SE coef | 2.465 | 2.465089 |
 | T2 col1 SE se | 0.394 | 0.39423 |

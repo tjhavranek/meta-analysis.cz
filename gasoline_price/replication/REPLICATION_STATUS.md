@@ -7,7 +7,7 @@ it cannot claim something the code does not do.
 
 ## Reproduced (70)
 
-| number in the paper | paper | this code |
+| cell | paper | this code |
 |---|---|---|
 | T4 mixed short: 1/SE coef | -0.0913 | -0.091329 |
 | T4 mixed short: 1/SE SE | 0.012 | 0.011954 |

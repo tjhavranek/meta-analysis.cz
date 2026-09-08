@@ -7,9 +7,9 @@ it cannot claim something the code does not do.
 
 ## Not matching the printed paper (2)
 
-The reason for each follows the table.
+Cells are named as they are in `results.json`. The reason for each follows the table.
 
-| number in the paper | paper | this code |
+| cell | paper | this code |
 |---|---|---|
 | T6 long-run FMA mean | -0.07 | -0.069406 |
 | T6 female BMA CI low | -0.12 | -0.120548 |
@@ -20,7 +20,7 @@ The paper prints -0.120; this code gives -0.120548, which rounds to -0.121. The 
 
 ## Reproduced (40)
 
-| number in the paper | paper | this code |
+| cell | paper | this code |
 |---|---|---|
 | T6 short-run BMA mean | -0.01 | -0.009761 |
 | T6 short-run BMA CI low | -0.032 | -0.031538 |

@@ -7,9 +7,9 @@ it cannot claim something the code does not do.
 
 ## Not matching the printed paper (6)
 
-The reason for each follows the table.
+Cells are named as they are in `results.json`. The reason for each follows the table.
 
-| number in the paper | paper | this code |
+| cell | paper | this code |
 |---|---|---|
 | Panel A: OLS SE (publication selection) coef | -1.016 | -1.016527 |
 | Panel A: OLS Constant (true effect) t | 1.69 | 1.605356 |
@@ -24,7 +24,7 @@ The printed z carries no sign. It must be negative: the coefficient is -0.133, t
 
 ## Reproduced (24)
 
-| number in the paper | paper | this code |
+| cell | paper | this code |
 |---|---|---|
 | Panel A: N (OLS) | 605 | 605 |
 | Panel A: N (IV) | 605 | 605 |

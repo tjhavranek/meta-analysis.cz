@@ -7,7 +7,7 @@ it cannot claim something the code does not do.
 
 ## Not produced by this code (6)
 
-| number in the paper | paper | this code |
+| cell | paper | this code |
 |---|---|---|
 | HEADLINE_ivmethod_FE_implied_elasticity | 4 | not computed |
 | HEADLINE_ivmethod_IV_implied_elasticity | 4 | not computed |
@@ -30,7 +30,7 @@ This number is not produced here. The paper's '4' and '2.5' are rounded verbal s
 
 ## Reproduced (33)
 
-| number in the paper | paper | this code |
+| cell | paper | this code |
 |---|---|---|
 | A_FE_pubbias_coef | -5.804 | -5.804008 |
 | A_FE_pubbias_se | 1.999 | 1.999206 |

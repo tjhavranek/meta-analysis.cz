@@ -7,9 +7,9 @@ it cannot claim something the code does not do.
 
 ## Not matching the printed paper (1)
 
-The reason for each follows the table.
+Cells are named as they are in `results.json`. The reason for each follows the table.
 
-| number in the paper | paper | this code |
+| cell | paper | this code |
 |---|---|---|
 | BMA best-practice global estimate (%), own reconstruction | -0.014 | -0.019053 |
 
@@ -17,7 +17,7 @@ rebuilt from Table 5's BMA posterior means, which the paper prints to three deci
 
 ## Reproduced (22)
 
-| number in the paper | paper | this code |
+| cell | paper | this code |
 |---|---|---|
 | OLS SE coef | -0.41 | -0.410004 |
 | OLS SE se | 0.265 | 0.264681 |

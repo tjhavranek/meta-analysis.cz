@@ -7,22 +7,22 @@ it cannot claim something the code does not do.
 
 ## Not matching the printed paper (2)
 
-The reason for each follows the table.
+Cells are named as they are in `results.json`. The reason for each follows the table.
 
-| number in the paper | paper | this code |
+| cell | paper | this code |
 |---|---|---|
 | TEXT mean elasticity, simple (paper: 0.8) | 0.8 | 0.747053 |
 | TEXT share of 0.9->0.3 reduction due to publication bias alone (paper: 'at least half', i.e. >= 0.5) | 0.5 | 0.680206 |
 
 ## Not produced by this code (1)
 
-| number in the paper | paper | this code |
+| cell | paper | this code |
 |---|---|---|
 | TEXT 'best practice' implied elasticity -- OUR st_regress proxy (paper's Table 9 value: 0.30, 95% CI -0.01 to 0.60; NOT independently reproduced -- see comment above) | 0.3 | not computed |
 
 ## Reproduced (37)
 
-| number in the paper | paper | this code |
+| cell | paper | this code |
 |---|---|---|
 | T5 Identif: SE coef | 0.649 | 0.649102 |
 | T5 Identif: SE se | 0.219 | 0.218781 |

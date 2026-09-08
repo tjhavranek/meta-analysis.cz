@@ -9,15 +9,15 @@ A further 20 depend on a random draw and are not counted either way.
 
 ## Not matching the printed paper (1)
 
-The reason for each follows the table.
+Cells are named as they are in `results.json`. The reason for each follows the table.
 
-| number in the paper | paper | this code |
+| cell | paper | this code |
 |---|---|---|
 | T2 FE RMSE | 0.11 | 0.104077 |
 
 ## Reproduced (43)
 
-| number in the paper | paper | this code |
+| cell | paper | this code |
 |---|---|---|
 | T1 OLS bias_coef | -2.354 | -2.354433 |
 | T1 OLS const | 0.0261 | 0.02613 |

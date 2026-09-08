@@ -7,9 +7,9 @@ it cannot claim something the code does not do.
 
 ## Not matching the printed paper (3)
 
-The reason for each follows the table.
+Cells are named as they are in `results.json`. The reason for each follows the table.
 
-| number in the paper | paper | this code |
+| cell | paper | this code |
 |---|---|---|
 | H12: Best practice (Table 5) coef | -0.225 | -0.228285 |
 | H18: Best practice (Table 5) coef | -0.155 | -0.156646 |
@@ -17,7 +17,7 @@ The reason for each follows the table.
 
 ## Reproduced (39)
 
-| number in the paper | paper | this code |
+| cell | paper | this code |
 |---|---|---|
 | H3: Intercept (bias) coef | -0.277 | -0.277488 |
 | H3: Intercept (bias) se | 0.176 | 0.176479 |

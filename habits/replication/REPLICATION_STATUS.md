@@ -7,7 +7,7 @@ it cannot claim something the code does not do.
 
 ## Reproduced (20)
 
-| number in the paper | paper | this code |
+| cell | paper | this code |
 |---|---|---|
 | Baseline SE(pub.bias) coef | -0.222 | -0.222145 |
 | Baseline SE(pub.bias) se | 0.211 | 0.211415 |

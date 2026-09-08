@@ -7,9 +7,9 @@ it cannot claim something the code does not do.
 
 ## Not matching the printed paper (1)
 
-The reason for each follows the table.
+Cells are named as they are in `results.json`. The reason for each follows the table.
 
-| number in the paper | paper | this code |
+| cell | paper | this code |
 |---|---|---|
 | STAR preferred estimates with \|t\| above Lang's 5.48 threshold (paper: one) | 1 | 2 |
 
@@ -17,7 +17,7 @@ The conclusion says that one of the twenty preferred STAR estimates exceeds the 
 
 ## Reproduced (38)
 
-| number in the paper | paper | this code |
+| cell | paper | this code |
 |---|---|---|
 | Base N after drop if effect_true==0 | 2434 | 2434 |
 | OLS: Publication bias (coef) | 0.0331 | 0.033136 |

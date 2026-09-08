@@ -7,7 +7,7 @@ it cannot claim something the code does not do.
 
 ## Reproduced (72)
 
-| number in the paper | paper | this code |
+| cell | paper | this code |
 |---|---|---|
 | T2 general Forward coef | 0.0773 | 0.077349 |
 | T2 general Forward se | 0.401 | 0.400543 |

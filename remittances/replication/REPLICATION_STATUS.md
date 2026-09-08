@@ -7,14 +7,14 @@ it cannot claim something the code does not do.
 
 ## Not produced by this code (2)
 
-| number in the paper | paper | this code |
+| cell | paper | this code |
 |---|---|---|
 | T3_andrewskasy | 0.121 | not computed |
 | T3_stem | 0.036 | not computed |
 
 ## Reproduced (52)
 
-| number in the paper | paper | this code |
+| cell | paper | this code |
 |---|---|---|
 | B1_N | 347 | 347 |
 | B1_s1_pubbias | 0.677 | 0.677134 |

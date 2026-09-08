@@ -7,7 +7,7 @@ it cannot claim something the code does not do.
 
 ## Reproduced (51)
 
-| number in the paper | paper | this code |
+| cell | paper | this code |
 |---|---|---|
 | T2 Studies (all) | 67 | 67 |
 | T2 All Nobs | 1973 | 1973 |

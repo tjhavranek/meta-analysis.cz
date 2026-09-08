@@ -9,16 +9,16 @@ A further 10 depend on a random draw and are not counted either way.
 
 ## Not matching the printed paper (2)
 
-The reason for each follows the table.
+Cells are named as they are in `results.json`. The reason for each follows the table.
 
-| number in the paper | paper | this code |
+| cell | paper | this code |
 |---|---|---|
 | HL_lower_corrected_mean_raw | 0 | -18.685314 |
 | HL_studylevel_ratio | 4 | 4.748807 |
 
 ## Reproduced (58)
 
-| number in the paper | paper | this code |
+| cell | paper | this code |
 |---|---|---|
 | T3A_OLS_se_coef | 1.705 | 1.705099 |
 | T3A_OLS_se_se | 0.63 | 0.630295 |

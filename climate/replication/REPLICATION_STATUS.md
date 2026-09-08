@@ -7,7 +7,7 @@ it cannot claim something the code does not do.
 
 ## Reproduced (31)
 
-| number in the paper | paper | this code |
+| cell | paper | this code |
 |---|---|---|
 | T1 OLS 1/SE coef | 1.276 | 1.275823 |
 | T1 OLS 1/SE se | 0.316 | 0.315583 |

@@ -7,15 +7,15 @@ it cannot claim something the code does not do.
 
 ## Not matching the printed paper (1)
 
-The reason for each follows the table.
+Cells are named as they are in `results.json`. The reason for each follows the table.
 
-| number in the paper | paper | this code |
+| cell | paper | this code |
 |---|---|---|
 | T2_wols_invnobs_long_const_coef | 1.134 | 1.134785 |
 
 ## Reproduced (38)
 
-| number in the paper | paper | this code |
+| cell | paper | this code |
 |---|---|---|
 | T2_N_all | 3524 | 3524 |
 | T2_N_short | 556 | 556 |

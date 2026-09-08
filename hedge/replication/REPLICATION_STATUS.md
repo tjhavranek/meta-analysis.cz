@@ -7,7 +7,7 @@ it cannot claim something the code does not do.
 
 ## Not produced by this code (10)
 
-| number in the paper | paper | this code |
+| cell | paper | this code |
 |---|---|---|
 | T2_PanelB_Top10_kappa_PAPER_VALUE_NOT_REPRODUCED | 0.31 | not computed |
 | T2_PanelB_WAAP_kappa_PAPER_VALUE_NOT_REPRODUCED | 0.325 | not computed |
@@ -22,7 +22,7 @@ it cannot claim something the code does not do.
 
 ## Reproduced (85)
 
-| number in the paper | paper | this code |
+| cell | paper | this code |
 |---|---|---|
 | T4_P1_OLS_lambda | -0.456 | -0.455724 |
 | T4_P1_OLS_lambda_se | 0.488 | 0.488355 |

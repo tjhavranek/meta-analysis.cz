@@ -7,7 +7,7 @@ it cannot claim something the code does not do.
 
 ## Reproduced (41)
 
-| number in the paper | paper | this code |
+| cell | paper | this code |
 |---|---|---|
 | N (observations) | 1271 | 1271 |
 | Studies | 61 | 61 |

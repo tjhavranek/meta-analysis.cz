@@ -9,7 +9,7 @@ A further 12 depend on a random draw and are not counted either way.
 
 ## Not produced by this code (6)
 
-| number in the paper | paper | this code |
+| cell | paper | this code |
 |---|---|---|
 | Headline_ImpliedBeta_Developed_Preferred_BMA | 0.309 | not computed |
 | Headline_ImpliedBeta_Developed_FrankelPoonawala_BMA | 0.448 | not computed |
@@ -20,7 +20,7 @@ A further 12 depend on a random draw and are not counted either way.
 
 ## Reproduced (14)
 
-| number in the paper | paper | this code |
+| cell | paper | this code |
 |---|---|---|
 | A3_PanelA_Obs | 2582 | 2582 |
 | A3_PanelA_FE_MeanBeyondBias | 0.657 | 0.657207 |

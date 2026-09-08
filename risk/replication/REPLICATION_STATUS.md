@@ -9,9 +9,9 @@ A further 24 depend on a random draw and are not counted either way.
 
 ## Not matching the printed paper (7)
 
-The reason for each follows the table.
+Cells are named as they are in `results.json`. The reason for each follows the table.
 
-| number in the paper | paper | this code |
+| cell | paper | this code |
 |---|---|---|
 | C_WLS_prec_coef | 1.859 | 1.853297 |
 | C_WLS_cons_coef | 2.39 | 2.390683 |
@@ -25,7 +25,7 @@ Running the authors' own commands in Stata, on the dataset published here, retur
 
 ## Reproduced (47)
 
-| number in the paper | paper | this code |
+| cell | paper | this code |
 |---|---|---|
 | A_WLS_prec_coef | 1.865 | 1.865201 |
 | A_WLS_prec_se | 0.362 | 0.362367 |

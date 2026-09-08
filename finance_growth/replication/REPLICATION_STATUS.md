@@ -7,16 +7,16 @@ it cannot claim something the code does not do.
 
 ## Not matching the printed paper (2)
 
-The reason for each follows the table.
+Cells are named as they are in `results.json`. The reason for each follows the table.
 
-| number in the paper | paper | this code |
+| cell | paper | this code |
 |---|---|---|
 | T1 fixed-effect CI lower | 0.088 | 0.088807 |
 | T2 Constant SE | 0.422 | 0.42258 |
 
 ## Reproduced (14)
 
-| number in the paper | paper | this code |
+| cell | paper | this code |
 |---|---|---|
 | T1 simple (arithmetic) mean pcc | 0.15 | 0.148398 |
 | T1 simple mean CI lower | 0.1 | 0.097237 |

@@ -7,7 +7,7 @@ it cannot claim something the code does not do.
 
 ## Not produced by this code (13)
 
-| number in the paper | paper | this code |
+| cell | paper | this code |
 |---|---|---|
 | HL_stockpartic_10pp_effect_ols | 0.24 | not computed |
 | HL_assetholders_core_ols | 0.21 | not computed |
@@ -35,7 +35,7 @@ This number is not produced here. The paper's figure is a Bayesian model averagi
 
 ## Reproduced (75)
 
-| number in the paper | paper | this code |
+| cell | paper | this code |
 |---|---|---|
 | T7_marketpartic_coef | 2.342 | 2.341689 |
 | T7_marketpartic_se | 0.848 | 0.847503 |

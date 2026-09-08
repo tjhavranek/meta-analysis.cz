@@ -7,7 +7,7 @@ it cannot claim something the code does not do.
 
 ## Reproduced (38)
 
-| number in the paper | paper | this code |
+| cell | paper | this code |
 |---|---|---|
 | pb_short_fixed_coef | 4.137 | 4.137296 |
 | pb_short_fixed_se | 0.947 | 0.946862 |
