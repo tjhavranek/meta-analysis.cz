@@ -129,6 +129,48 @@ add("Panel A: IV Constant (true effect) coef",      co_iv$estimate[co_iv$term ==
 add("Panel A: IV Constant (true effect) t",         co_iv$statistic[co_iv$term == "(Intercept)"])
 add("Panel A: IV Constant (true effect) p",         co_iv$p.value[co_iv$term == "(Intercept)"])
 
+# ---- Panel A under the specification the table note describes ------------------------------
+# The note to Table 3 says the standard errors are clustered at the study level, and the
+# do-file lines carry `cluster (ID)`. The published table was produced without that option
+# (see the header). Both are reported here so a reader can see either: the values above
+# reproduce the table as printed, the values below are what clustering by study gives.
+# Coefficients are identical under both; only the standard errors, t-statistics and p-values
+# change.
+m_ols_cl <- st_regress(PCC ~ PCC_SE, data = d, weights = ~prec, cluster = ~ID)
+ct_ols_cl <- st_coefs(m_ols_cl, z = FALSE)
+m_iv_cl <- st_ivreg2(PCC ~ 1 | PCC_SE ~ instrument, data = d, weights = ~prec, cluster = ~ID)
+co_iv_cl <- st_coefs(m_iv_cl, z = TRUE)
+# fixest labels an instrumented regressor "fit_<name>"; match either form
+.se_row <- co_iv_cl$term %in% c("PCC_SE", "fit_PCC_SE")
+
+add("Panel A clustered by study: OLS SE coef",  ct_ols_cl$estimate[ct_ols_cl$term == "PCC_SE"])
+add("Panel A clustered by study: OLS SE t",     ct_ols_cl$statistic[ct_ols_cl$term == "PCC_SE"])
+add("Panel A clustered by study: OLS SE p",     2 * stats::pt(-abs(ct_ols_cl$statistic[ct_ols_cl$term == "PCC_SE"]), df = n_groups - 1))
+add("Panel A clustered by study: OLS Constant coef", ct_ols_cl$estimate[ct_ols_cl$term == "(Intercept)"])
+add("Panel A clustered by study: OLS Constant t",    ct_ols_cl$statistic[ct_ols_cl$term == "(Intercept)"])
+add("Panel A clustered by study: OLS Constant p",    2 * stats::pt(-abs(ct_ols_cl$statistic[ct_ols_cl$term == "(Intercept)"]), df = n_groups - 1))
+add("Panel A clustered by study: IV SE coef",   co_iv_cl$estimate[.se_row])
+add("Panel A clustered by study: IV SE t",      co_iv_cl$statistic[.se_row])
+add("Panel A clustered by study: IV Constant coef", co_iv_cl$estimate[co_iv_cl$term == "(Intercept)"])
+add("Panel A clustered by study: IV Constant t",    co_iv_cl$statistic[co_iv_cl$term == "(Intercept)"])
+
+cat(sprintf("Panel A, clustered by study (the table note's specification):
+"))
+cat(sprintf("  OLS  SE-term  coef %.6f  t %.3f  p %.4f
+",
+            ct_ols_cl$estimate[ct_ols_cl$term == "PCC_SE"],
+            ct_ols_cl$statistic[ct_ols_cl$term == "PCC_SE"],
+            2 * stats::pt(-abs(ct_ols_cl$statistic[ct_ols_cl$term == "PCC_SE"]), df = n_groups - 1)))
+cat(sprintf("  OLS  constant coef %.6f  t %.3f  p %.4f
+",
+            ct_ols_cl$estimate[ct_ols_cl$term == "(Intercept)"],
+            ct_ols_cl$statistic[ct_ols_cl$term == "(Intercept)"],
+            2 * stats::pt(-abs(ct_ols_cl$statistic[ct_ols_cl$term == "(Intercept)"]), df = n_groups - 1)))
+cat(sprintf("  IV   SE-term  coef %.6f  t %.3f
+",
+            co_iv_cl$estimate[.se_row],
+            co_iv_cl$statistic[.se_row]))
+
 # ----------------------------------------------------- Panel B, col 1: Fixed effects
 # xtreg TSTAT INVSE, fe vce(cluster ID) -- see the header on the SE-divided variables.
 m_fe <- st_xtreg_fe(TSTAT ~ INVSE, data = d, panel = "ID", cluster = ~ID)

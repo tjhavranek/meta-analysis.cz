@@ -18,7 +18,7 @@ Cells are named as they are in `results.json`. The reason for each follows the t
 | Panel A: IV Constant (true effect) coef | 0.038 | 0.038692 |
 | Panel B: Mixed Constant (effect beyond bias) z | 1.43 | -1.427388 |
 
-The authors' log of the published run gives the values this code computes: -1.016527 and -1.234917 for the standard-error terms, and t = 1.61 with p = 0.109 for the OLS constant. The paper prints -1.016, -1.234, 1.69 and 0.099. The log's own formatted table rounds the way this code does. The printed values are left as published.
+Table 3's note says the standard errors are clustered at the study level. The published Panel A was estimated without clustering: heteroskedasticity-robust standard errors reproduce every printed t-statistic exactly, and the authors' log of the published run carries no cluster option. This package reports both. Clustered by study the coefficients are unchanged and the inference is weaker: the standard-error term gives t = -1.73, p = 0.091 by OLS and t = -1.76 by IV, against printed t of -5.18 and -4.81, and the constant gives t = 0.87, p = 0.388 against a printed 1.69 and 0.099. Both sets are in results.json. The printed values are left exactly as published.
 
 The printed z carries no sign. It must be negative: the coefficient is -0.133, the p-value is 0.153, and every other cell in the table is signed. The authors' log gives -1.43. The printed value is left as published.
 
