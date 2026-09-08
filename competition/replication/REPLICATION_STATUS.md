@@ -3,13 +3,22 @@
 Generated when the package was published, from its own targets and its own output, so
 it cannot claim something the code does not do.
 
-**149 of 150 numbers from the paper are reproduced.**
+**149 of 149 numbers from the paper are reproduced.**
 
-## Not reproduced (1)
+Counting every number this file lists, the paper prints **150**, of which this package does not produce **0**.
 
-| number in the paper | paper | this package |
-|---|---|---|
-| Text F3 mean of study-level medians (NOT reproduced, see run.R) | 0.0099 | 0.009999 |
+## Recorded but not scored (1)
+
+Numbers that cannot be a pass or a fail. `discrepancy`: computed correctly and
+disagreeing with the printed paper. `approximation`: rebuilt from inputs the paper
+printed rounded, so it lands near but cannot land exactly. `not_reproduced`: quoted
+from the paper, not computed here. `stochastic`: depends on a random draw.
+
+| number | paper | this package | kind |
+|---|---|---|---|
+| Text F3 mean of study-level medians (NOT reproduced, see run.R) | 0.0099 | 0.009999 | discrepancy |
+
+**Text F3 mean of study-level medians (NOT reproduced, see run.R)** -- The paper prints 0.0099; this package computes 0.0099988, following the author's own do-file line for the same quantity (the mean of the study-level medians). 0.0099988 rounds to 0.0100, so the two disagree at the paper's own fourth decimal. It is not a truncation convention: across this paper's 145 other reproduced numbers, 77 match under rounding and would fail under truncation, so the table rounds. Recorded for the author; the printed value is left exactly as published. The label's stale '(NOT reproduced)' is part of the frozen oracle and is deliberately not edited.
 
 ## Reproduced (149)
 

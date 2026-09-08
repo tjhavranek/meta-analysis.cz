@@ -3,23 +3,11 @@
 Generated when the package was published, from its own targets and its own output, so
 it cannot claim something the code does not do.
 
-**47 of 54 numbers from the paper are reproduced.**
+**47 of 47 numbers from the paper are reproduced.**
 
-Counting every number this file lists, the paper prints **78**, of which this package does not produce **7**.
+Counting every number this file lists, the paper prints **78**, of which this package does not produce **0**.
 
-## Not reproduced (7)
-
-| number in the paper | paper | this package |
-|---|---|---|
-| C_WLS_prec_coef | 1.859 | 1.853297 |
-| C_WLS_cons_coef | 2.39 | 2.390683 |
-| C_FE_prec_coef | 3.476 | 3.471143 |
-| C_BE_prec_coef | 0.817 | 0.804429 |
-| C_BE_prec_se | 3.061 | 3.059787 |
-| C_BE_cons_coef | 3.223 | 3.223592 |
-| C_BE_cons_se | 0.423 | 0.422384 |
-
-## Recorded but not scored (24)
+## Recorded but not scored (31)
 
 Numbers that cannot be a pass or a fail. `discrepancy`: computed correctly and
 disagreeing with the printed paper. `approximation`: rebuilt from inputs the paper
@@ -44,14 +32,35 @@ from the paper, not computed here. `stochastic`: depends on a random draw.
 | B_Study_prec_ci_hi | 5.293 | - | stochastic |
 | B_Study_cons_ci_lo | 0.351 | - | stochastic |
 | B_Study_cons_ci_hi | 1.464 | - | stochastic |
+| C_WLS_prec_coef | 1.859 | 1.853297 | discrepancy |
+| C_WLS_cons_coef | 2.39 | 2.390683 | discrepancy |
 | C_WLS_prec_ci_lo | 0.05 | - | stochastic |
 | C_WLS_prec_ci_hi | 2.895 | - | stochastic |
 | C_WLS_cons_ci_lo | 0.812 | - | stochastic |
 | C_WLS_cons_ci_hi | 4.006 | - | stochastic |
+| C_FE_prec_coef | 3.476 | 3.471143 | discrepancy |
+| C_BE_prec_coef | 0.817 | 0.804429 | discrepancy |
+| C_BE_prec_se | 3.061 | 3.059787 | discrepancy |
+| C_BE_cons_coef | 3.223 | 3.223592 | discrepancy |
+| C_BE_cons_se | 0.423 | 0.422384 | discrepancy |
 | C_Study_prec_ci_lo | -1.197 | - | stochastic |
 | C_Study_prec_ci_hi | 5.548 | - | stochastic |
 | C_Study_cons_ci_lo | 1.062 | - | stochastic |
 | C_Study_cons_ci_hi | 4.89 | - | stochastic |
+
+**C_WLS_prec_coef** -- Verified against Stata 15.1 running the author's own command on the site's published risk.csv: regress tstat_win10 prec_win10 if econjournal==0  ->  _cons gives 1.853297, which is what this package computes to seven digits. The paper prints 1.859. The sample is not in question -- the regression is on 431 observations from 34 studies, exactly the paper's own Panel C N. So the package reproduces the author's code and the printed cell differs from it, by more than rounding. All seven Panel C cells show the same pattern. Recorded for the author; the printed value is left exactly as published. (Probe: scratchpad/repl/stata_work_risk2/panelC.do.)
+
+**C_WLS_cons_coef** -- Verified against Stata 15.1 running the author's own command on the site's published risk.csv: the same regression's prec_win10 coefficient gives 2.390683, which is what this package computes to seven digits. The paper prints 2.39. The sample is not in question -- the regression is on 431 observations from 34 studies, exactly the paper's own Panel C N. So the package reproduces the author's code and the printed cell differs from it, by more than rounding. All seven Panel C cells show the same pattern. Recorded for the author; the printed value is left exactly as published. (Probe: scratchpad/repl/stata_work_risk2/panelC.do.)
+
+**C_FE_prec_coef** -- Verified against Stata 15.1 running the author's own command on the site's published risk.csv: xtreg ... , fe  ->  _cons gives 3.471143, which is what this package computes to seven digits. The paper prints 3.476. The sample is not in question -- the regression is on 431 observations from 34 studies, exactly the paper's own Panel C N. So the package reproduces the author's code and the printed cell differs from it, by more than rounding. All seven Panel C cells show the same pattern. Recorded for the author; the printed value is left exactly as published. (Probe: scratchpad/repl/stata_work_risk2/panelC.do.)
+
+**C_BE_prec_coef** -- Verified against Stata 15.1 running the author's own command on the site's published risk.csv: xtreg tstat_win10 prec_win10 if econjournal==0, be  ->  _cons gives 0.8044289, which is what this package computes to seven digits. The paper prints 0.817. The sample is not in question -- the regression is on 431 observations from 34 studies, exactly the paper's own Panel C N. So the package reproduces the author's code and the printed cell differs from it, by more than rounding. All seven Panel C cells show the same pattern. Recorded for the author; the printed value is left exactly as published. (Probe: scratchpad/repl/stata_work_risk2/panelC.do.)
+
+**C_BE_prec_se** -- Verified against Stata 15.1 running the author's own command on the site's published risk.csv: the same regression's _cons standard error gives 3.059787, which is what this package computes to seven digits. The paper prints 3.061. The sample is not in question -- the regression is on 431 observations from 34 studies, exactly the paper's own Panel C N. So the package reproduces the author's code and the printed cell differs from it, by more than rounding. All seven Panel C cells show the same pattern. Recorded for the author; the printed value is left exactly as published. (Probe: scratchpad/repl/stata_work_risk2/panelC.do.)
+
+**C_BE_cons_coef** -- Verified against Stata 15.1 running the author's own command on the site's published risk.csv: the same regression's prec_win10 coefficient gives 3.223592, which is what this package computes to seven digits. The paper prints 3.223. The sample is not in question -- the regression is on 431 observations from 34 studies, exactly the paper's own Panel C N. So the package reproduces the author's code and the printed cell differs from it, by more than rounding. All seven Panel C cells show the same pattern. Recorded for the author; the printed value is left exactly as published. (Probe: scratchpad/repl/stata_work_risk2/panelC.do.)
+
+**C_BE_cons_se** -- Verified against Stata 15.1 running the author's own command on the site's published risk.csv: the same regression's prec_win10 standard error gives 0.4223837, which is what this package computes to seven digits. The paper prints 0.423. The sample is not in question -- the regression is on 431 observations from 34 studies, exactly the paper's own Panel C N. So the package reproduces the author's code and the printed cell differs from it, by more than rounding. All seven Panel C cells show the same pattern. Recorded for the author; the printed value is left exactly as published. (Probe: scratchpad/repl/stata_work_risk2/panelC.do.)
 
 ## Reproduced (47)
 
