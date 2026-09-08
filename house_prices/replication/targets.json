@@ -349,6 +349,6 @@
   "printed": -0.23,
   "digits": 2,
   "kind": "headline",
-  "note": "Fig. 4 discussion: 'the effect peaks after two years and then dissipates ... -0.23% after two years compared to the simple uncorrected mean estimate of -1.2%.' Value = WLS (publication-bias-corrected) regression constant at horizon==8, i.e. T1_h8_WLS_const_coef, the specification the paper states it uses to build the corrected impulse response in Fig. 4."
+  "note": "Fig. 4 discussion: 'the effect peaks after two years and then dissipates... -0.23% after two years compared to the simple uncorrected mean estimate of -1.2%.' Value = WLS (publication-bias-corrected) regression constant at horizon==8, i.e. T1_h8_WLS_const_coef, the specification the paper states it uses to build the corrected impulse response in Fig. 4."
  }
 ]

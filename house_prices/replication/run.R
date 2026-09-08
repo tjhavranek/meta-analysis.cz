@@ -39,7 +39,7 @@
 # The unfiltered "N used" for horizon==1 (no filter in the author code) and the
 # t>-50-filtered N for horizons 2/4/8/12/16 come out identical either way, and match the
 # paper's printed "Observations" row (222, 227, 237, 237, 232, 226) exactly -- see
-# REPLICATION.md for the verification.
+# REPLICATION_STATUS.md for the verification.
 #
 # ivreg2 with no instrument, no `small`, is OLS with the large-sample (z-based, no
 # small-sample df correction) two-way-clustered variance -- exactly st_ivreg2()'s

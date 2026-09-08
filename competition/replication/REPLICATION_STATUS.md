@@ -3,26 +3,21 @@
 Generated when the package was published, from its own targets and its own output, so
 it cannot claim something the code does not do.
 
-**149 of 149 numbers from the paper are reproduced.**
+**149 of the 150 numbers this paper prints for these tables are reproduced.**
 
-Counting every number this file lists, the paper prints **150**, of which this package does not produce **0**.
+## Not matching the printed paper (1)
 
-## Recorded but not scored (1)
+The reason for each follows the table.
 
-Numbers that cannot be a pass or a fail. `discrepancy`: computed correctly and
-disagreeing with the printed paper. `approximation`: rebuilt from inputs the paper
-printed rounded, so it lands near but cannot land exactly. `not_reproduced`: quoted
-from the paper, not computed here. `stochastic`: depends on a random draw.
+| number in the paper | paper | this code |
+|---|---|---|
+| Text F3 mean of study-level medians (NOT reproduced, see run.R) | 0.0099 | 0.009999 |
 
-| number | paper | this package | kind |
-|---|---|---|---|
-| Text F3 mean of study-level medians (NOT reproduced, see run.R) | 0.0099 | 0.009999 | discrepancy |
-
-**Text F3 mean of study-level medians (NOT reproduced, see run.R)** -- The paper prints 0.0099; this package computes 0.0099988, following the author's own do-file line for the same quantity (the mean of the study-level medians). 0.0099988 rounds to 0.0100, so the two disagree at the paper's own fourth decimal. It is not a truncation convention: across this paper's 145 other reproduced numbers, 77 match under rounding and would fail under truncation, so the table rounds. The printed value is left exactly as published. The label's stale '(NOT reproduced)' is part of the frozen oracle and is deliberately not edited.
+The paper prints 0.0099. This code follows the authors' own line for the same quantity and gives 0.0099988, which rounds to 0.0100. It is not a truncation convention: across this paper's other reproduced numbers, 77 match under rounding and would fail under truncation.
 
 ## Reproduced (149)
 
-| number in the paper | paper | this package |
+| number in the paper | paper | this code |
 |---|---|---|
 | T9 OLS SEPCC coef | -1.5708 | -1.570803 |
 | T9 OLS SEPCC se | 0.8567 | 0.856737 |
@@ -96,8 +91,8 @@ from the paper, not computed here. `stochastic`: depends on a random draw.
 | T9 OLS reviewed_journal se | 0.0271 | 0.027107 |
 | T9 OLS Constant coef | -0.135 | -0.134953 |
 | T9 OLS Constant se | 0.1124 | 0.112408 |
-| T9 OLS N | 598 | 598.0 |
-| T9 OLS Studies | 31 | 31.0 |
+| T9 OLS N | 598 | 598 |
+| T9 OLS Studies | 31 | 31 |
 | T9 FE SEPCC coef | -1.6234 | -1.623422 |
 | T9 FE SEPCC se | 0.6912 | 0.691157 |
 | T9 FE Samplesize coef | 0.0148 | 0.014829 |
@@ -156,8 +151,8 @@ from the paper, not computed here. `stochastic`: depends on a random draw.
 | T9 FE global se | 0.0152 | 0.015161 |
 | T9 FE Constant coef | -0.1783 | -0.178316 |
 | T9 FE Constant se | 0.1656 | 0.165552 |
-| T9 FE N | 598 | 598.0 |
-| T9 FE Studies | 31 | 31.0 |
+| T9 FE N | 598 | 598 |
+| T9 FE Studies | 31 | 31 |
 | Text T1 All mean PCC unweighted | -0.001 | -0.000865 |
 | Text T1 All mean PCC weighted | -0.012 | -0.011836 |
 | Text T1 Developed mean PCC unweighted | 0.02 | 0.02038 |
@@ -173,3 +168,4 @@ from the paper, not computed here. `stochastic`: depends on a random draw.
 | T2 FE (weighted, all) Constant coef | 0.034 | 0.034222 |
 | T2 FE (weighted, published) SEPCC coef | -1.636 | -1.636389 |
 | T2 FE (weighted, published) Constant coef | 0.044 | 0.043605 |
+

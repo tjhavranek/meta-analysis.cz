@@ -100,7 +100,7 @@
   "printed": -0.014,
   "digits": 3,
   "kind": "approximation",
-  "note": "rebuilt from Table 5's BMA posterior means, which the paper prints to three decimals; the 14 rounded coefficients leave a near-constant offset of about +0.005 across all 21 countries. Re-running the authors' BMS chain is not possible with the sanctioned wrappers, so this is an approximation, not a reproduction, and is not scored as either."
+  "note": "rebuilt from Table 5's BMA posterior means, which the paper prints to three decimals; the 14 rounded coefficients leave a near-constant offset of about +0.005 across all 21 countries. Re-running the authors' BMS chain is not possible with the wrappers in stata_compat.R, so this is an approximation, not a reproduction, and is not scored as either."
  },
  {
   "label": "T2 all obs, study-weighted mean (the abstract's 0.34%)",

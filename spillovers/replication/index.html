@@ -5,7 +5,22 @@
 <title>Replication in R: A Meta-Analysis of Vertical Spillovers from FDI</title>
 <meta name="robots" content="noindex" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
+<link rel="canonical" href="https://meta-analysis.cz/spillovers/replication/" />
 <link href="/style.css" rel="stylesheet" type="text/css" />
+<script type="application/ld+json">
+{
+ "@context": "https://schema.org",
+ "@type": "SoftwareSourceCode",
+ "@id": "https://meta-analysis.cz/spillovers/replication/#code",
+ "url": "https://meta-analysis.cz/spillovers/replication/",
+ "name": "Replication in R: A Meta-Analysis of Vertical Spillovers from FDI",
+ "description": "R code that regenerates the numbers reported in the paper from the dataset published on meta-analysis.cz.",
+ "programmingLanguage": "R",
+ "codeRepository": "https://meta-analysis.cz/spillovers/replication/",
+ "license": "https://creativecommons.org/licenses/by/4.0/",
+ "isPartOf": {"@type": "WebPage", "@id": "https://meta-analysis.cz/spillovers/"}
+}
+</script>
 <style>
 table.repl { border-collapse: collapse; margin: 1em 0; font-size: 0.92em; }
 table.repl th, table.repl td { border-bottom: 1px solid #ddd; padding: 4px 14px 4px 0; text-align: left; }
@@ -37,7 +52,7 @@ p.repl-note { font-size: 0.9em; color: #444; margin: 0.5em 0; }
 			<h1 class="title">Replication in R</h1>
 			<div class="entry">
 <p>R code that regenerates the numbers this paper reports, starting from the dataset published on
-this site. It reproduces <b>33 of 33</b>. A further 3 numbers are recorded below that can be neither a pass nor a fail.</p>
+this site. It reproduces <b>33 of 36</b>. The 3 that do not match are listed below.</p>
 
 <h2>Run it</h2>
 <pre class="cmd">Rscript run.R</pre>
@@ -56,25 +71,23 @@ printed digits. Those conventions are stated once, in
 <code>xtreg</code>'s treatment of singleton groups, and the restricted-ML default of
 <code>xtmixed</code>, which is not the default of the <code>mixed</code> command that replaced it.</p>
 
-
-<h2>Recorded, not scored</h2>
-<p>Numbers that can be neither a pass nor a fail. <em>discrepancy</em>: computed correctly here and disagreeing with the printed paper. <em>approximation</em>: rebuilt from figures the paper prints rounded, so it lands close but cannot land exactly. <em>not reproduced</em>: quoted from the paper, not computed here. <em>stochastic</em>: depends on a random draw.</p>
+<h2>Numbers that do not match the printed paper</h2>
+<p>The reason for each is given below the table.</p>
 <table class="repl">
-<tr><th>number</th><th>paper</th><th>this code</th><th>kind</th></tr>
-<tr><td>PanelA_Pub_N</td><td>370</td><td>378</td><td>discrepancy</td></tr>
-<tr><td>PanelB_Pub_N</td><td>241</td><td>249</td><td>discrepancy</td></tr>
-<tr><td>PanelC_Pub_N</td><td>305</td><td>321</td><td>discrepancy</td></tr>
+<tr><th>number in the paper</th><th>paper</th><th>this code</th></tr>
+<tr><td>PanelA_Pub_N</td><td>370</td><td>378</td></tr>
+<tr><td>PanelB_Pub_N</td><td>241</td><td>249</td></tr>
+<tr><td>PanelC_Pub_N</td><td>305</td><td>321</td></tr>
 </table>
-<p class="repl-note"><b>PanelA_Pub_N.</b> The paper prints N = 370 for this published-only column; this package computes 378. The authors' OWN LOG of the published run (Study/Papers/3_Vertical_Spillovers/Stata/vertical.log, 13 Jun 2010) contains 378, as 'Mixed-effects REML regression, Number of obs = 378, Group variable: idstudy, Number of groups = 26', and contains no regression anywhere with N = 370. So this package reproduces what the authors' code actually produced, and the printed figure differs from it. All three published-only columns show the same pattern (paper 370/241/305, log and this package 378/249/321), which points to the table being built from an earlier run rather than to an error here. The coefficients and standard errors of these same columns reproduce. The printed value is left exactly as published.</p>
-<p class="repl-note"><b>PanelB_Pub_N.</b> The paper prints N = 241 for this published-only column; this package computes 249. The authors' OWN LOG of the published run (Study/Papers/3_Vertical_Spillovers/Stata/vertical.log, 13 Jun 2010) contains 249, as 'Mixed-effects REML regression, Number of obs = 249, Group variable: idstudy, Number of groups = 19', and contains no regression anywhere with N = 241. So this package reproduces what the authors' code actually produced, and the printed figure differs from it. All three published-only columns show the same pattern (paper 370/241/305, log and this package 378/249/321), which points to the table being built from an earlier run rather than to an error here. The coefficients and standard errors of these same columns reproduce. The printed value is left exactly as published.</p>
-<p class="repl-note"><b>PanelC_Pub_N.</b> The paper prints N = 305 for this published-only column; this package computes 321. The authors' OWN LOG of the published run (Study/Papers/3_Vertical_Spillovers/Stata/vertical.log, 13 Jun 2010) contains 321, as 'Mixed-effects REML regression, Number of obs = 321, Group variable: idstudy, Number of groups = 27', and contains no regression anywhere with N = 305. So this package reproduces what the authors' code actually produced, and the printed figure differs from it. All three published-only columns show the same pattern (paper 370/241/305, log and this package 378/249/321), which points to the table being built from an earlier run rather than to an error here. The coefficients and standard errors of these same columns reproduce. The printed value is left exactly as published.</p>
+<p class="repl-note">Table 1's published-only columns print N = 370, 241 and 305; this code computes 378, 249 and 321, which is what the authors' own log of the published run records. The coefficients and standard errors of these same columns reproduce. The printed values are left as published.</p>
+
 
 <h2>Files</h2>
 <ul>
 	<li><a href="run.R">run.R</a>, the replication</li>
 	<li><a href="stata_compat.R">stata_compat.R</a>, the Stata conventions</li>
-	<li><a href="targets.json">targets.json</a>, the numbers as printed in the paper, recorded
-	before the code was written</li>
+	<li><a href="targets.json">targets.json</a>, the numbers as printed in the paper, taken
+	from the paper rather than from the code</li>
 	<li><a href="results.json">results.json</a>, the numbers this code produced</li>
 	<li><a href="REPLICATION_STATUS.md">REPLICATION_STATUS.md</a>, the full comparison, generated
 	from this package's own output</li>

@@ -25,7 +25,7 @@ That file is generated from this package's own output, so it cannot claim more t
 - `stata_compat.R` -- Stata's estimation conventions, stated once and shared by every package on
   this site: `ivreg2`'s large-sample variance, SSC `winsor`'s order statistics, `xtreg`'s
   handling of singleton groups, `xtmixed`'s restricted-ML default
-- `targets.json` -- the numbers as printed in the paper, recorded before the code was written
+- `targets.json` -- the numbers as printed in the paper, taken from the paper rather than from the code
 - `results.json` -- the numbers this code produced
 - `REPLICATION_STATUS.md` -- the comparison
 

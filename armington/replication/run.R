@@ -5,7 +5,7 @@
 # inverse of the number of estimates per study) of Table 2, plus the three N's shared by the
 # table (All / Short-run / Long-run).
 #
-# Not attempted (see REPLICATION.md): Hierarchical Bayes (Panel A row 3 -- Gibbs sampler for a
+# Not attempted: Hierarchical Bayes (Panel A row 3 -- Gibbs sampler for a
 # hierarchical linear model, following Rossi et al. 2005; no wrapper exists and the paper reports
 # posterior standard deviations, not standard errors), Panel B row 2 "weighted by the inverse of
 # the standard error" (the author's line is `ivreg2 tstats_w invse_w, cluster(idstudy)` -- a

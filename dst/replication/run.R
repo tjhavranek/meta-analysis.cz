@@ -24,7 +24,7 @@
 #   ME  -- mixed  TSTAT PRECISION || IDSTUDY:                         [Table 3 note: "ME =
 #                                   study-level mixed effects"]
 #
-# NOT reproduced (excluded from targets.json, not silently dropped -- see REPLICATION.md):
+# NOT reproduced (excluded from targets.json, not silently dropped):
 #   BE      -- xtreg ..., be (between effects). No wrapper in stata_compat.R implements Stata's
 #              between estimator (st_xtreg_fe is within/FE only), and Stata's `be` has its own
 #              degrees-of-freedom convention distinct from a manual collapse-then-regress. A
@@ -170,7 +170,7 @@ results[["ME N"]]          <- stats::nobs(m_me)
 ## from the paper's own table, not re-derived from data, so it cannot itself count as a
 ## reproduction of anything).
 ##
-## HONESTY NOTE: Table 5's coefficients are printed to only 3 decimals, and the exact BMS
+## NOTE: Table 5's coefficients are printed to only 3 decimals, and the exact BMS
 ## specification (UIP g-prior, uniform model prior) is not re-run here (no wrapper permits it).
 ## Comparing this package's own per-country predictions against Table 6's printed per-country
 ## values (done below, printed but not a formal target) shows a small, near-constant offset of
@@ -181,7 +181,7 @@ results[["ME N"]]          <- stats::nobs(m_me)
 
 d_bp <- d  # best-practice reconstruction uses the full 162-row sample, not the SE-restricted d_fat
 
-## 95th percentile of IMPACT, via the sanctioned st_winsor2 wrapper (Stata's _pctile / type 2)
+## 95th percentile of IMPACT, via the shared st_winsor2 wrapper (Stata's _pctile / type 2)
 ## rather than calling quantile() directly: winsorising at cuts (0, 95) caps every value above the
 ## 95th percentile at that percentile's value, so max() of the winsorized vector recovers it.
 imp_95 <- max(st_winsor2(d_bp$IMPACT, cuts = c(0, 95)))
@@ -226,7 +226,7 @@ validation_weighted_avg_of_printed <- sum(bp$table6_printed * bp$WEIGHT) / sum(b
 ## Stata's own conventions, confirmed by running it on this data set (stata_work_dst/):
 ##     mean ESTIMATE             -> -.3344542  se .0429748  CI (-.4193212, -.2495872)
 ##     mean ESTIMATE [aw=WEIGHT] -> -.3427427  se .0436487  CI (-.4289406, -.2565448)
-## A constant-only regress reproduces both exactly, so the sanctioned st_regress wrapper is used
+## A constant-only regress reproduces both exactly, so the shared st_regress wrapper is used
 ## rather than a hand-rolled weighted mean, and the interval uses Stata's t(n-1).
 d_all  <- st_keep_if(d, !is.na(d$ESTIMATE))
 n_all  <- nrow(d_all)

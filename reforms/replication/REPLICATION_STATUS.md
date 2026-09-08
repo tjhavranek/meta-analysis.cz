@@ -3,11 +3,11 @@
 Generated when the package was published, from its own targets and its own output, so
 it cannot claim something the code does not do.
 
-**38 of 38 numbers from the paper are reproduced.**
+**38 of the 38 numbers this paper prints for these tables are reproduced.**
 
 ## Reproduced (38)
 
-| number in the paper | paper | this package |
+| number in the paper | paper | this code |
 |---|---|---|
 | pb_short_fixed_coef | 4.137 | 4.137296 |
 | pb_short_fixed_se | 0.947 | 0.946862 |
@@ -33,12 +33,12 @@ it cannot claim something the code does not do.
 | eff_long_robust_se | 0.026 | 0.026217 |
 | eff_long_clustered_coef | 0.11 | 0.11022 |
 | eff_long_clustered_se | 0.056 | 0.056185 |
-| n_short_fixed | 245 | 245.0 |
-| n_short_robust | 245 | 245.0 |
-| n_short_clustered | 245 | 245.0 |
-| n_long_fixed | 292 | 292.0 |
-| n_long_robust | 292 | 292.0 |
-| n_long_clustered | 292 | 292.0 |
+| n_short_fixed | 245 | 245 |
+| n_short_robust | 245 | 245 |
+| n_short_clustered | 245 | 245 |
+| n_long_fixed | 292 | 292 |
+| n_long_robust | 292 | 292 |
+| n_long_clustered | 292 | 292 |
 | simple_avg_short | -0.052 | -0.052305 |
 | simple_avg_long | 0.146 | 0.14552 |
 | fe_avg_short | -0.081 | -0.081409 |
@@ -47,3 +47,4 @@ it cannot claim something the code does not do.
 | re_avg_long | 0.143 | 0.142683 |
 | corrected_short | -0.394 | -0.394162 |
 | corrected_long | 0.11 | 0.11022 |
+

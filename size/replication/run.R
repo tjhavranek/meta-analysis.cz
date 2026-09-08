@@ -148,7 +148,7 @@ c4 <- st_coefs(m4); c5 <- st_coefs(m5); c6 <- st_coefs(m6)
 #    arithmetic on the coefficients"). st_xtreg_fe_cons only accepts one x, so
 #    for the two/three-regressor columns here we generalize its own recipe
 #    mechanically: demean every y and x by panel and add back its grand mean,
-#    then run that through the sanctioned st_regress() wrapper (a plain
+#    then run that through the shared st_regress() wrapper (a plain
 #    clustered OLS, matching the wrapper's own approach) instead of a direct
 #    feols call. The additive per-panel/grand-mean shift cannot change any
 #    slope (only a location shift), so the resulting slopes are identical to

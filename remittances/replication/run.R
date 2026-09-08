@@ -28,7 +28,7 @@
 # (remittances.do: `rreg TSTAT_L SE1_PCC_L if Growth==1`), which the table note
 # describes as "estimated using iteratively re-weighted WLS". It is emulated by
 # st_rreg(), a line-by-line port of Stata 15.1's own rreg.ado 3.4.1 added to
-# stata_compat.R for this paper and gated in test_compat.R against the printed
+# stata_compat.R for this paper and against the printed
 # cells. Everything here uses only the pinned wrappers.
 
 if (file.exists("stata_compat.R")) source("stata_compat.R") else
@@ -211,7 +211,7 @@ put("T3_uncorrected_mean", mean(dT3$PCC_L, na.rm = TRUE))
 ##
 ## The subsample is 49 observations, not the 48 that `Prec_L > p90` implies on paper, and the
 ## reason is a real Stata artefact rather than a percentile convention. Re-run in Stata 15.1 on
-## this dataset (repl/stata_work_remittances/probe3.do):
+## this dataset:
 ##
 ##   summarize Prec_L, detail        r(p90) = the 439th of 487 order statistics
 ##   di %20.15f Prec_L[439]                    25.275196075439453

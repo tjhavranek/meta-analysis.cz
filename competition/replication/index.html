@@ -5,7 +5,22 @@
 <title>Replication in R: Bank Competition and Financial Stability: Much Ado About Nothing?</title>
 <meta name="robots" content="noindex" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
+<link rel="canonical" href="https://meta-analysis.cz/competition/replication/" />
 <link href="/style.css" rel="stylesheet" type="text/css" />
+<script type="application/ld+json">
+{
+ "@context": "https://schema.org",
+ "@type": "SoftwareSourceCode",
+ "@id": "https://meta-analysis.cz/competition/replication/#code",
+ "url": "https://meta-analysis.cz/competition/replication/",
+ "name": "Replication in R: Bank Competition and Financial Stability: Much Ado About Nothing?",
+ "description": "R code that regenerates the numbers reported in the paper from the dataset published on meta-analysis.cz.",
+ "programmingLanguage": "R",
+ "codeRepository": "https://meta-analysis.cz/competition/replication/",
+ "license": "https://creativecommons.org/licenses/by/4.0/",
+ "isPartOf": {"@type": "WebPage", "@id": "https://meta-analysis.cz/competition/"}
+}
+</script>
 <style>
 table.repl { border-collapse: collapse; margin: 1em 0; font-size: 0.92em; }
 table.repl th, table.repl td { border-bottom: 1px solid #ddd; padding: 4px 14px 4px 0; text-align: left; }
@@ -37,7 +52,7 @@ p.repl-note { font-size: 0.9em; color: #444; margin: 0.5em 0; }
 			<h1 class="title">Replication in R</h1>
 			<div class="entry">
 <p>R code that regenerates the numbers this paper reports, starting from the dataset published on
-this site. It reproduces <b>149 of 149</b>. A further 1 number is recorded below that can be neither a pass nor a fail.</p>
+this site. It reproduces <b>149 of 150</b>. The one that does not match is listed below.</p>
 
 <h2>Run it</h2>
 <pre class="cmd">Rscript run.R</pre>
@@ -56,21 +71,21 @@ printed digits. Those conventions are stated once, in
 <code>xtreg</code>'s treatment of singleton groups, and the restricted-ML default of
 <code>xtmixed</code>, which is not the default of the <code>mixed</code> command that replaced it.</p>
 
-
-<h2>Recorded, not scored</h2>
-<p>Numbers that can be neither a pass nor a fail. <em>discrepancy</em>: computed correctly here and disagreeing with the printed paper. <em>approximation</em>: rebuilt from figures the paper prints rounded, so it lands close but cannot land exactly. <em>not reproduced</em>: quoted from the paper, not computed here. <em>stochastic</em>: depends on a random draw.</p>
+<h2>Numbers that do not match the printed paper</h2>
+<p>The reason for each is given below the table.</p>
 <table class="repl">
-<tr><th>number</th><th>paper</th><th>this code</th><th>kind</th></tr>
-<tr><td>Text F3 mean of study-level medians (NOT reproduced, see run.R)</td><td>0.0099</td><td>0.009999</td><td>discrepancy</td></tr>
+<tr><th>number in the paper</th><th>paper</th><th>this code</th></tr>
+<tr><td>Text F3 mean of study-level medians (NOT reproduced, see run.R)</td><td>0.0099</td><td>0.009999</td></tr>
 </table>
-<p class="repl-note"><b>Text F3 mean of study-level medians (NOT reproduced, see run.R).</b> The paper prints 0.0099; this package computes 0.0099988, following the author's own do-file line for the same quantity (the mean of the study-level medians). 0.0099988 rounds to 0.0100, so the two disagree at the paper's own fourth decimal. It is not a truncation convention: across this paper's 145 other reproduced numbers, 77 match under rounding and would fail under truncation, so the table rounds. The printed value is left exactly as published. The label's stale '(NOT reproduced)' is part of the frozen oracle and is deliberately not edited.</p>
+<p class="repl-note">The paper prints 0.0099. This code follows the authors' own line for the same quantity and gives 0.0099988, which rounds to 0.0100. It is not a truncation convention: across this paper's other reproduced numbers, 77 match under rounding and would fail under truncation.</p>
+
 
 <h2>Files</h2>
 <ul>
 	<li><a href="run.R">run.R</a>, the replication</li>
 	<li><a href="stata_compat.R">stata_compat.R</a>, the Stata conventions</li>
-	<li><a href="targets.json">targets.json</a>, the numbers as printed in the paper, recorded
-	before the code was written</li>
+	<li><a href="targets.json">targets.json</a>, the numbers as printed in the paper, taken
+	from the paper rather than from the code</li>
 	<li><a href="results.json">results.json</a>, the numbers this code produced</li>
 	<li><a href="REPLICATION_STATUS.md">REPLICATION_STATUS.md</a>, the full comparison, generated
 	from this package's own output</li>

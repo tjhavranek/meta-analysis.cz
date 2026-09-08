@@ -5,7 +5,22 @@
 <title>Replication in R: Natural Resources and Economic Growth: A Meta-Analysis</title>
 <meta name="robots" content="noindex" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
+<link rel="canonical" href="https://meta-analysis.cz/resource_curse/replication/" />
 <link href="/style.css" rel="stylesheet" type="text/css" />
+<script type="application/ld+json">
+{
+ "@context": "https://schema.org",
+ "@type": "SoftwareSourceCode",
+ "@id": "https://meta-analysis.cz/resource_curse/replication/#code",
+ "url": "https://meta-analysis.cz/resource_curse/replication/",
+ "name": "Replication in R: Natural Resources and Economic Growth: A Meta-Analysis",
+ "description": "R code that regenerates the numbers reported in the paper from the dataset published on meta-analysis.cz.",
+ "programmingLanguage": "R",
+ "codeRepository": "https://meta-analysis.cz/resource_curse/replication/",
+ "license": "https://creativecommons.org/licenses/by/4.0/",
+ "isPartOf": {"@type": "WebPage", "@id": "https://meta-analysis.cz/resource_curse/"}
+}
+</script>
 <style>
 table.repl { border-collapse: collapse; margin: 1em 0; font-size: 0.92em; }
 table.repl th, table.repl td { border-bottom: 1px solid #ddd; padding: 4px 14px 4px 0; text-align: left; }
@@ -37,7 +52,7 @@ p.repl-note { font-size: 0.9em; color: #444; margin: 0.5em 0; }
 			<h1 class="title">Replication in R</h1>
 			<div class="entry">
 <p>R code that regenerates the numbers this paper reports, starting from the dataset published on
-this site. It reproduces <b>24 of 24</b>. A further 6 numbers are recorded below that can be neither a pass nor a fail.</p>
+this site. It reproduces <b>24 of 30</b>. The 6 that do not match are listed below.</p>
 
 <h2>Run it</h2>
 <pre class="cmd">Rscript run.R</pre>
@@ -56,31 +71,27 @@ printed digits. Those conventions are stated once, in
 <code>xtreg</code>'s treatment of singleton groups, and the restricted-ML default of
 <code>xtmixed</code>, which is not the default of the <code>mixed</code> command that replaced it.</p>
 
-
-<h2>Recorded, not scored</h2>
-<p>Numbers that can be neither a pass nor a fail. <em>discrepancy</em>: computed correctly here and disagreeing with the printed paper. <em>approximation</em>: rebuilt from figures the paper prints rounded, so it lands close but cannot land exactly. <em>not reproduced</em>: quoted from the paper, not computed here. <em>stochastic</em>: depends on a random draw.</p>
+<h2>Numbers that do not match the printed paper</h2>
+<p>The reason for each is given below the table.</p>
 <table class="repl">
-<tr><th>number</th><th>paper</th><th>this code</th><th>kind</th></tr>
-<tr><td>Panel A: OLS SE (publication selection) coef</td><td>-1.016</td><td>-1.016527</td><td>discrepancy</td></tr>
-<tr><td>Panel A: OLS Constant (true effect) t</td><td>1.69</td><td>1.605356</td><td>discrepancy</td></tr>
-<tr><td>Panel A: OLS Constant (true effect) p</td><td>0.099</td><td>0.108939</td><td>discrepancy</td></tr>
-<tr><td>Panel A: IV SE (publication selection) coef</td><td>-1.234</td><td>-1.234917</td><td>discrepancy</td></tr>
-<tr><td>Panel A: IV Constant (true effect) coef</td><td>0.038</td><td>0.038692</td><td>discrepancy</td></tr>
-<tr><td>Panel B: Mixed Constant (effect beyond bias) z</td><td>1.43</td><td>-1.427388</td><td>discrepancy</td></tr>
+<tr><th>number in the paper</th><th>paper</th><th>this code</th></tr>
+<tr><td>Panel A: OLS SE (publication selection) coef</td><td>-1.016</td><td>-1.016527</td></tr>
+<tr><td>Panel A: OLS Constant (true effect) t</td><td>1.69</td><td>1.605356</td></tr>
+<tr><td>Panel A: OLS Constant (true effect) p</td><td>0.099</td><td>0.108939</td></tr>
+<tr><td>Panel A: IV SE (publication selection) coef</td><td>-1.234</td><td>-1.234917</td></tr>
+<tr><td>Panel A: IV Constant (true effect) coef</td><td>0.038</td><td>0.038692</td></tr>
+<tr><td>Panel B: Mixed Constant (effect beyond bias) z</td><td>1.43</td><td>-1.427388</td></tr>
 </table>
-<p class="repl-note"><b>Panel A: OLS SE (publication selection) coef.</b> The authors' own log of the published run (Study/Papers/25_Resource_curse/REVISION/latex/natural_resource.log, 1 June 2016) gives -1.016527 at line 202, 'PCC_SE | -1.016527  .196112  -5.18  0.000', which is what this package computes. The paper prints -1.016. The log's own formatted table (line 306) reads 'PCC_SE  -1.017***  -1.235***', i.e. the author's output rounds the way this package does and not the way the printed table does. All five Panel A cells that miss show this pattern, and the same pattern appears in risk's Panel C and in spillovers' sample sizes: the printed tables were built from a run that differs slightly from the archived one. The printed value is left exactly as published.</p>
-<p class="repl-note"><b>Panel A: OLS Constant (true effect) t.</b> The authors' own log of the published run (Study/Papers/25_Resource_curse/REVISION/latex/natural_resource.log, 1 June 2016) gives 1.61 at line 203, '_cons | .0260833  .0162477  1.61  0.109', which is what this package computes. The paper prints 1.69. The log's own formatted table (line 306) reads 'PCC_SE  -1.017***  -1.235***', i.e. the author's output rounds the way this package does and not the way the printed table does. All five Panel A cells that miss show this pattern, and the same pattern appears in risk's Panel C and in spillovers' sample sizes: the printed tables were built from a run that differs slightly from the archived one. The printed value is left exactly as published.</p>
-<p class="repl-note"><b>Panel A: OLS Constant (true effect) p.</b> The authors' own log of the published run (Study/Papers/25_Resource_curse/REVISION/latex/natural_resource.log, 1 June 2016) gives 0.109 at line 203, the same row's p-value, which is what this package computes. The paper prints 0.099. The log's own formatted table (line 306) reads 'PCC_SE  -1.017***  -1.235***', i.e. the author's output rounds the way this package does and not the way the printed table does. All five Panel A cells that miss show this pattern, and the same pattern appears in risk's Panel C and in spillovers' sample sizes: the printed tables were built from a run that differs slightly from the archived one. The printed value is left exactly as published.</p>
-<p class="repl-note"><b>Panel A: IV SE (publication selection) coef.</b> The authors' own log of the published run (Study/Papers/25_Resource_curse/REVISION/latex/natural_resource.log, 1 June 2016) gives -1.234917 at line 220, 'PCC_SE | -1.234917  .25686  -4.81  0.000', which is what this package computes. The paper prints -1.234. The log's own formatted table (line 306) reads 'PCC_SE  -1.017***  -1.235***', i.e. the author's output rounds the way this package does and not the way the printed table does. All five Panel A cells that miss show this pattern, and the same pattern appears in risk's Panel C and in spillovers' sample sizes: the printed tables were built from a run that differs slightly from the archived one. The printed value is left exactly as published.</p>
-<p class="repl-note"><b>Panel A: IV Constant (true effect) coef.</b> The authors' own log of the published run (Study/Papers/25_Resource_curse/REVISION/latex/natural_resource.log, 1 June 2016) gives 0.0386915 at line 221, '_cons | .0386915  .0160392  2.41  0.016', which is what this package computes. The paper prints 0.038. The log's own formatted table (line 306) reads 'PCC_SE  -1.017***  -1.235***', i.e. the author's output rounds the way this package does and not the way the printed table does. All five Panel A cells that miss show this pattern, and the same pattern appears in risk's Panel C and in spillovers' sample sizes: the printed tables were built from a run that differs slightly from the archived one. The printed value is left exactly as published.</p>
-<p class="repl-note"><b>Panel B: Mixed Constant (effect beyond bias) z.</b> The paper's Panel B prints this z as '1.43', unsigned. It must be NEGATIVE: the same row's coefficient is -0.133 and its p-value is 0.153, and z = -1.43 is the only value consistent with both. Every other cell in the table carries its sign (-0.58, -2.64, 0.14), so this reads as a dropped minus in typesetting rather than a different quantity. This package computes -1.427388, which agrees with the paper on magnitude to the printed digits. Recorded as a discrepancy for the author, not scored as a defect: the printed value is left exactly as published.</p>
+<p class="repl-note">The authors' log of the published run gives the values this code computes: -1.016527 and -1.234917 for the standard-error terms, and t = 1.61 with p = 0.109 for the OLS constant. The paper prints -1.016, -1.234, 1.69 and 0.099. The log's own formatted table rounds the way this code does. The printed values are left as published.</p>
+<p class="repl-note">The printed z carries no sign. It must be negative: the coefficient is -0.133, the p-value is 0.153, and every other cell in the table is signed. The authors' log gives -1.43. The printed value is left as published.</p>
+
 
 <h2>Files</h2>
 <ul>
 	<li><a href="run.R">run.R</a>, the replication</li>
 	<li><a href="stata_compat.R">stata_compat.R</a>, the Stata conventions</li>
-	<li><a href="targets.json">targets.json</a>, the numbers as printed in the paper, recorded
-	before the code was written</li>
+	<li><a href="targets.json">targets.json</a>, the numbers as printed in the paper, taken
+	from the paper rather than from the code</li>
 	<li><a href="results.json">results.json</a>, the numbers this code produced</li>
 	<li><a href="REPLICATION_STATUS.md">REPLICATION_STATUS.md</a>, the full comparison, generated
 	from this package's own output</li>

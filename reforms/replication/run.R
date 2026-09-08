@@ -292,7 +292,7 @@ for (nm in names(results)) {
 ##
 ## Table 2's three "previous section" averages are reproduced below: "Simple average" is the plain
 ## unweighted mean() of the partial correlation (not a model call); "Fixed effects" and "Random
-## effects" are precision-weighted pooled averages, for which st_metan() is the only sanctioned
+## effects" are precision-weighted pooled averages, for which st_metan() is the only shared
 ## wrapper (equal-effects / DerSimonian-Laird respectively) -- exactly Table 2's own definitions
 ## ("Fixed effects is the average weighted by the inverse of the standard error..."; "Random
 ## effects... additionally, heterogeneity among estimates is taken into account").

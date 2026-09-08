@@ -3,21 +3,23 @@
 Generated when the package was published, from its own targets and its own output, so
 it cannot claim something the code does not do.
 
-**38 of 39 numbers from the paper are reproduced.**
+**38 of the 39 numbers this paper prints for these tables are reproduced.**
 
-## Not reproduced (1)
+## Not matching the printed paper (1)
 
-| number in the paper | paper | this package |
+The reason for each follows the table.
+
+| number in the paper | paper | this code |
 |---|---|---|
 | T2_wols_invnobs_long_const_coef | 1.134 | 1.134785 |
 
 ## Reproduced (38)
 
-| number in the paper | paper | this package |
+| number in the paper | paper | this code |
 |---|---|---|
-| T2_N_all | 3524 | 3524.0 |
-| T2_N_short | 556 | 556.0 |
-| T2_N_long | 2968 | 2968.0 |
+| T2_N_all | 3524 | 3524 |
+| T2_N_short | 556 | 556 |
+| T2_N_long | 2968 | 2968 |
 | T2_ols_all_se_coef | 0.808 | 0.807845 |
 | T2_ols_all_se_se | 0.0652 | 0.065232 |
 | T2_ols_all_const_coef | 0.873 | 0.872553 |
@@ -53,3 +55,4 @@ it cannot claim something the code does not do.
 | T2_wols_invnobs_long_se_coef | 0.821 | 0.821107 |
 | T2_wols_invnobs_long_se_se | 0.139 | 0.139082 |
 | T2_wols_invnobs_long_const_se | 0.168 | 0.168398 |
+

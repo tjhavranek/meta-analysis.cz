@@ -90,7 +90,7 @@ n_studies <- length(unique(d$IDStudy))
 # tables (Table 2 and Table 9) are weighted by investperst, so the transformation
 # is spelled out here with weighted group means and a weighted grand mean. It is
 # bare arithmetic -- tapply() and sum(), no estimator -- and every model fit that
-# uses its output goes through a sanctioned st_* wrapper.
+# uses its output goes through a shared st_* wrapper.
 demean_add_weighted <- function(v, w, g) {
   grp_sum_w  <- tapply(w, g, sum)
   grp_sum_wv <- tapply(w * v, g, sum)
@@ -394,7 +394,7 @@ out[["Text T1 Undeveloped mean PCC unweighted"]] <- mean_undev_unw
 out[["Text T1 Undeveloped mean PCC weighted"]]   <- mean_undev_w
 out[["Text F3 Published mean PCC"]]              <- mean_published
 # The key below keeps the label targets.json froze for this number, back when the
-# quantity had not been identified. The oracle is frozen and is not edited, label
+# quantity had not been identified. the recorded targets are not edited, label
 # included, so the stale parenthetical stays: what changed is the value under it,
 # which is now the author's own do-file computation (0.0099988) rather than the
 # wrong-aggregation -0.0042.

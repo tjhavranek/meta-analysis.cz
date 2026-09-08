@@ -3,20 +3,22 @@
 Generated when the package was published, from its own targets and its own output, so
 it cannot claim something the code does not do.
 
-**47 of 48 numbers from the paper are reproduced.**
+**47 of the 48 numbers this paper prints for these tables are reproduced.**
 
-## Not reproduced (1)
+## Not matching the printed paper (1)
 
-| number in the paper | paper | this package |
+The reason for each follows the table.
+
+| number in the paper | paper | this code |
 |---|---|---|
 | spec4_precision_RoTwithLC | 0.004 | 0.004922 |
 
 ## Reproduced (47)
 
-| number in the paper | paper | this package |
+| number in the paper | paper | this code |
 |---|---|---|
-| N_obs_all_specs | 3127 | 3127.0 |
-| N_studies_all_specs | 144 | 144.0 |
+| N_obs_all_specs | 3127 | 3127 |
+| N_studies_all_specs | 144 | 144 |
 | spec1_biasonly_micro_coef | -0.373 | -0.373343 |
 | spec1_biasonly_micro_se | 0.0495 | 0.049475 |
 | spec1_biasonly_microse_coef | 0.518 | 0.518191 |
@@ -51,7 +53,7 @@ it cannot claim something the code does not do.
 | spec4_precision_LCunconstr_se | 0.00257 | 0.002572 |
 | spec4_precision_constant_coef | 0.5 | 0.499588 |
 | spec4_precision_constant_se | 0.0811 | 0.081059 |
-| spec4_precision_impliedRoT | 0.0 | 0.000523 |
+| spec4_precision_impliedRoT | 0 | 0.000523 |
 | spec5_study_micro_coef | -0.283 | -0.283377 |
 | spec5_study_micro_se | 0.0506 | 0.050646 |
 | spec5_study_microse_coef | 0.486 | 0.486044 |
@@ -62,3 +64,4 @@ it cannot claim something the code does not do.
 | spec5_study_constant_se | 0.0434 | 0.043417 |
 | spec5_study_impliedRoT | 0.07 | 0.074808 |
 | spec5_study_RoTwithLC | 0.15 | 0.152965 |
+

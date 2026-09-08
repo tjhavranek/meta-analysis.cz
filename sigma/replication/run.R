@@ -2,7 +2,7 @@
 # "Measuring Capital-Labor Substitution: The Importance of Method Choices and
 # Publication Bias", Table 5 "Potential sources of endogeneity."
 #
-# Source order follows sigma.zip:sigma.do lines 9-262 (see brief). Reads ONLY
+# Source order follows sigma.zip:sigma.do lines 9-262. Reads ONLY
 # the published data file.
 
 if (file.exists("stata_compat.R")) source("stata_compat.R") else
@@ -48,7 +48,7 @@ d$se_k_perpet   <- d$se_win5 * d$k_perpet
 ##     replace translog = 1 if formula_code==6 | formula_code==7
 ##     gen se_translog = se_win5 * translog
 ## So it ships with this package, as translog_flag.csv, read out of the authors' own
-## _REVISION/calculation/sigma.xlsx -- the very workbook sigma.do imports at its line 9. It is
+## the workbook sigma.do imports at its line 9. It is
 ## NOT re-derived here and is labelled as such. Two independent checks that it is the right
 ## column: it flags 147 rows, and the authors' log of the published run records exactly
 ## "(147 real changes made)" at that line; and the regression below then reproduces that log's
@@ -62,7 +62,7 @@ d$translog    <- .tl$translog
 d$se_translog <- d$se_win5 * d$translog
 # The dummy is not among the 115 columns the site publishes: it is built from a raw string
 # variable, `formula`, that the published export does not carry. It comes instead from the
-# workbook sigma.do itself imports, _REVISION/calculation/sigma.xlsx, which does carry it.
+# workbook sigma.do itself imports, sigma.xlsx, which does carry it.
 d$se_short   <- d$se_win5 * d$shortrun_expl
 
 results <- list()
@@ -75,13 +75,13 @@ results <- list()
 ## own st_xtreg_fe_cons wrapper implements for a single regressor (its
 ## "demean, add back the grand mean, refit" trick has intercept = ybar -
 ## beta*xbar by construction of OLS) -- it just has no multivariate form.
-## Rather than calling feols()/lm() a second time (forbidden), the
+## Rather than calling feols()/lm() a second time (avoided), the
 ## multivariate cons and its SE are obtained by plain linear algebra on the
 ## ALREADY-FITTED wrapper model `m`: cons = ybar - t(beta) %*% xbar, and
 ## since cons is a linear function of beta with xbar/ybar fixed given the
 ## data, Var(cons) = t(xbar) %*% vcov(beta) %*% xbar using m's own
 ## cluster-robust vcov. Verified against Table 5's "Identif." column before
-## use: this reproduces 0.512 (0.0357) exactly (see check_cons.R).
+## use: this reproduces 0.512 (0.0357) exactly.
 xtreg_fe_cons <- function(m, data) {
   b <- stats::coef(m)
   V <- stats::vcov(m)
@@ -295,7 +295,7 @@ results[["TEXT share of 0.9->0.3 reduction due to publication bias alone (paper:
 ## stata_compat.R has no wrapper for Bayesian/frequentist model averaging on
 ## purpose -- it is a Stata-parity file, hash-checked, and building a new
 ## estimator into it is out of scope for this package. So the exact 0.30
-## (-0.01, 0.60) cannot be produced from the permitted wrappers.
+## (-0.01, 0.60) cannot be produced from the wrappers in stata_compat.R.
 ##
 ## What CAN legitimately be built with st_regress is the paper's OWN
 ## published stand-in for the full model average: Table 7's "Frequentist

@@ -232,6 +232,6 @@
   "printed": 1,
   "digits": 0,
   "kind": "discrepancy",
-  "note": "The published data give two, not one: |t| = 5.538 and 5.500 among the twenty preferred STAR estimates. Both sit within 1% of the 5.48 threshold, so the paper's 'one' and this 'two' differ by a single borderline observation, the kind of gap a slightly different t (recomputed from rounded published effects and standard errors, say) would produce. The count of twenty matches exactly. Recorded rather than scored, because the code is doing what the sentence describes."
+  "note": "The conclusion says that one of the twenty preferred STAR estimates exceeds the 5.48 t-statistic threshold of Lang (2025). The count of twenty is exact. Two exceed the threshold, at |t| = 5.538 and 5.500, both within 1 percent of it, so a t recomputed from rounded published effects and standard errors would move one across. The printed value is left as published."
  }
 ]

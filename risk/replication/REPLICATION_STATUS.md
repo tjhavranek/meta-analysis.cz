@@ -3,68 +3,29 @@
 Generated when the package was published, from its own targets and its own output, so
 it cannot claim something the code does not do.
 
-**47 of 47 numbers from the paper are reproduced.**
+**47 of the 54 numbers this paper prints for these tables are reproduced.**
 
-Counting every number this file lists, the paper prints **78**, of which this package does not produce **0**.
+A further 24 depend on a random draw and are not counted either way.
 
-## Recorded but not scored (31)
+## Not matching the printed paper (7)
 
-Numbers that cannot be a pass or a fail. `discrepancy`: computed correctly and
-disagreeing with the printed paper. `approximation`: rebuilt from inputs the paper
-printed rounded, so it lands near but cannot land exactly. `not_reproduced`: quoted
-from the paper, not computed here. `stochastic`: depends on a random draw.
+The reason for each follows the table.
 
-| number | paper | this package | kind |
-|---|---|---|---|
-| A_WLS_prec_ci_lo | 0.956 | - | stochastic |
-| A_WLS_prec_ci_hi | 2.577 | - | stochastic |
-| A_WLS_cons_ci_lo | 0.725 | - | stochastic |
-| A_WLS_cons_ci_hi | 2.13 | - | stochastic |
-| A_Study_prec_ci_lo | 1.251 | - | stochastic |
-| A_Study_prec_ci_hi | 4.9 | - | stochastic |
-| A_Study_cons_ci_lo | 0.673 | - | stochastic |
-| A_Study_cons_ci_hi | 2.476 | - | stochastic |
-| B_WLS_prec_ci_lo | 0.383 | - | stochastic |
-| B_WLS_prec_ci_hi | 2.506 | - | stochastic |
-| B_WLS_cons_ci_lo | 0.654 | - | stochastic |
-| B_WLS_cons_ci_hi | 2.059 | - | stochastic |
-| B_Study_prec_ci_lo | 2.007 | - | stochastic |
-| B_Study_prec_ci_hi | 5.293 | - | stochastic |
-| B_Study_cons_ci_lo | 0.351 | - | stochastic |
-| B_Study_cons_ci_hi | 1.464 | - | stochastic |
-| C_WLS_prec_coef | 1.859 | 1.853297 | discrepancy |
-| C_WLS_cons_coef | 2.39 | 2.390683 | discrepancy |
-| C_WLS_prec_ci_lo | 0.05 | - | stochastic |
-| C_WLS_prec_ci_hi | 2.895 | - | stochastic |
-| C_WLS_cons_ci_lo | 0.812 | - | stochastic |
-| C_WLS_cons_ci_hi | 4.006 | - | stochastic |
-| C_FE_prec_coef | 3.476 | 3.471143 | discrepancy |
-| C_BE_prec_coef | 0.817 | 0.804429 | discrepancy |
-| C_BE_prec_se | 3.061 | 3.059787 | discrepancy |
-| C_BE_cons_coef | 3.223 | 3.223592 | discrepancy |
-| C_BE_cons_se | 0.423 | 0.422384 | discrepancy |
-| C_Study_prec_ci_lo | -1.197 | - | stochastic |
-| C_Study_prec_ci_hi | 5.548 | - | stochastic |
-| C_Study_cons_ci_lo | 1.062 | - | stochastic |
-| C_Study_cons_ci_hi | 4.89 | - | stochastic |
+| number in the paper | paper | this code |
+|---|---|---|
+| C_WLS_prec_coef | 1.859 | 1.853297 |
+| C_WLS_cons_coef | 2.39 | 2.390683 |
+| C_FE_prec_coef | 3.476 | 3.471143 |
+| C_BE_prec_coef | 0.817 | 0.804429 |
+| C_BE_prec_se | 3.061 | 3.059787 |
+| C_BE_cons_coef | 3.223 | 3.223592 |
+| C_BE_cons_se | 0.423 | 0.422384 |
 
-**C_WLS_prec_coef** -- Verified against Stata 15.1 running the author's own command on the site's published risk.csv: regress tstat_win10 prec_win10 if econjournal==0  ->  _cons gives 1.853297, which is what this package computes to seven digits. The paper prints 1.859. The sample is not in question, the regression is on 431 observations from 34 studies, exactly the paper's own Panel C N. So the package reproduces the author's code and the printed cell differs from it, by more than rounding. All seven Panel C cells show the same pattern. The printed value is left exactly as published.
-
-**C_WLS_cons_coef** -- Verified against Stata 15.1 running the author's own command on the site's published risk.csv: the same regression's prec_win10 coefficient gives 2.390683, which is what this package computes to seven digits. The paper prints 2.39. The sample is not in question, the regression is on 431 observations from 34 studies, exactly the paper's own Panel C N. So the package reproduces the author's code and the printed cell differs from it, by more than rounding. All seven Panel C cells show the same pattern. The printed value is left exactly as published.
-
-**C_FE_prec_coef** -- Verified against Stata 15.1 running the author's own command on the site's published risk.csv: xtreg ... , fe  ->  _cons gives 3.471143, which is what this package computes to seven digits. The paper prints 3.476. The sample is not in question, the regression is on 431 observations from 34 studies, exactly the paper's own Panel C N. So the package reproduces the author's code and the printed cell differs from it, by more than rounding. All seven Panel C cells show the same pattern. The printed value is left exactly as published.
-
-**C_BE_prec_coef** -- Verified against Stata 15.1 running the author's own command on the site's published risk.csv: xtreg tstat_win10 prec_win10 if econjournal==0, be  ->  _cons gives 0.8044289, which is what this package computes to seven digits. The paper prints 0.817. The sample is not in question, the regression is on 431 observations from 34 studies, exactly the paper's own Panel C N. So the package reproduces the author's code and the printed cell differs from it, by more than rounding. All seven Panel C cells show the same pattern. The printed value is left exactly as published.
-
-**C_BE_prec_se** -- Verified against Stata 15.1 running the author's own command on the site's published risk.csv: the same regression's _cons standard error gives 3.059787, which is what this package computes to seven digits. The paper prints 3.061. The sample is not in question, the regression is on 431 observations from 34 studies, exactly the paper's own Panel C N. So the package reproduces the author's code and the printed cell differs from it, by more than rounding. All seven Panel C cells show the same pattern. The printed value is left exactly as published.
-
-**C_BE_cons_coef** -- Verified against Stata 15.1 running the author's own command on the site's published risk.csv: the same regression's prec_win10 coefficient gives 3.223592, which is what this package computes to seven digits. The paper prints 3.223. The sample is not in question, the regression is on 431 observations from 34 studies, exactly the paper's own Panel C N. So the package reproduces the author's code and the printed cell differs from it, by more than rounding. All seven Panel C cells show the same pattern. The printed value is left exactly as published.
-
-**C_BE_cons_se** -- Verified against Stata 15.1 running the author's own command on the site's published risk.csv: the same regression's prec_win10 standard error gives 0.4223837, which is what this package computes to seven digits. The paper prints 0.423. The sample is not in question, the regression is on 431 observations from 34 studies, exactly the paper's own Panel C N. So the package reproduces the author's code and the printed cell differs from it, by more than rounding. All seven Panel C cells show the same pattern. The printed value is left exactly as published.
+Running the authors' own commands in Stata, on the dataset published here, returns exactly what this code computes, to seven digits, on 431 observations from 34 studies, which is the paper's own Panel C sample. The printed Panel C differs from that by more than rounding. The printed values are left as published.
 
 ## Reproduced (47)
 
-| number in the paper | paper | this package |
+| number in the paper | paper | this code |
 |---|---|---|
 | A_WLS_prec_coef | 1.865 | 1.865201 |
 | A_WLS_prec_se | 0.362 | 0.362367 |
@@ -82,8 +43,8 @@ from the paper, not computed here. `stochastic`: depends on a random draw.
 | A_Study_prec_se | 0.893 | 0.892801 |
 | A_Study_cons_coef | 1.533 | 1.532541 |
 | A_Study_cons_se | 0.412 | 0.411624 |
-| A_obs | 1021 | 1021.0 |
-| A_studies | 92 | 92.0 |
+| A_obs | 1021 | 1021 |
+| A_studies | 92 | 92 |
 | B_WLS_prec_coef | 1.392 | 1.392145 |
 | B_WLS_prec_se | 0.54 | 0.539942 |
 | B_WLS_cons_coef | 1.085 | 1.085251 |
@@ -100,8 +61,8 @@ from the paper, not computed here. `stochastic`: depends on a random draw.
 | B_Study_prec_se | 0.827 | 0.8268 |
 | B_Study_cons_coef | 0.822 | 0.822396 |
 | B_Study_cons_se | 0.243 | 0.242564 |
-| B_obs | 590 | 590.0 |
-| B_studies | 58 | 58.0 |
+| B_obs | 590 | 590 |
+| B_studies | 58 | 58 |
 | C_WLS_prec_se | 0.449 | 0.449054 |
 | C_WLS_cons_se | 0.675 | 0.674694 |
 | C_FE_prec_se | 0.169 | 0.168622 |
@@ -111,5 +72,6 @@ from the paper, not computed here. `stochastic`: depends on a random draw.
 | C_Study_prec_se | 1.654 | 1.653952 |
 | C_Study_cons_coef | 2.888 | 2.887926 |
 | C_Study_cons_se | 0.732 | 0.732317 |
-| C_obs | 431 | 431.0 |
-| C_studies | 34 | 34.0 |
+| C_obs | 431 | 431 |
+| C_studies | 34 | 34 |
+

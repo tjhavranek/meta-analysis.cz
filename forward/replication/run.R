@@ -188,7 +188,7 @@ add("A3_PanelA_FE_PubBias", cons_fe_A(dA))
 # which is exactly why line 112 re-runs the fit unweighted on the scaled variables. Reproduced
 # that way here: 400 reps in Stata give 0.1096 for the slope against a printed 0.117, well inside
 # the noise of the author's 100 reps. The constant's bootstrap comes out at 0.29 against a
-# printed 0.340; see REPLICATION.md -- that one cell is NOT matched and is not claimed to be.
+# printed 0.340; -- that one cell is NOT matched and is not claimed to be.
 fit_fe_A_scaled <- function(dat) st_xtreg_fe(tstat_w ~ inv_se_w, data = dat, panel = "StudyID")
 add("A3_PanelA_FE_MeanBeyondBias_SE", boot_se(fit_fe_A_scaled, dA, "inv_se_w"))
 add("A3_PanelA_FE_PubBias_SE",        boot_se_stat(cons_fe_A, dA))
@@ -281,9 +281,9 @@ add("A3_PanelB_IV_PubBias_SE",        boot_se(fit_iv_B, dA, "fit_se_w"))
 # ---- What the do-file's own frequentist analog gives (corroborating context, not the target) --
 # forward.do also contains an uncommented, directly runnable answer to the same question -- one
 # weighted OLS fit plus `lincom`, lines 683-736, "Heterogeneity - Best practice". Every step is a
-# permitted wrapper, so it is computed below. It is a DIFFERENT ESTIMATOR (a single fit, no model
+# wrappers in stata_compat.R, so it is computed below. It is a DIFFERENT ESTIMATOR (a single fit, no model
 # averaging), and it does not reproduce Table 5 -- verified in Stata 15.1 on the published
-# forward.dta (repl/stata_work_forward/probe7.do), which returns
+# forward.dta, which returns
 #
 #                       this code / Stata      Table 5 (BMA)
 #     Advanced, preferred    0.274726             0.309

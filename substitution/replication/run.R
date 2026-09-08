@@ -334,6 +334,6 @@ cat("BMA-based Table 3, which is the paper's own quantitative case for \"income 
 cat("asset market participation are the most effective factors\". Numbers (1)-(3) are\n")
 cat("BMA posterior means, not reproducible with the OLS-only tools in stata_compat.R;\n")
 cat("the OLS counterparts above are the paper's own robustness check on those numbers,\n")
-cat("not a substitute estimator chosen to force agreement. See REPLICATION.md.\n")
+cat("not a substitute estimator chosen to force agreement.\n")
 
 stata_compat_log()

@@ -5,7 +5,22 @@
 <title>Replication in R: Class Size and Student Achievement: A Meta-Analysis</title>
 <meta name="robots" content="noindex" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
+<link rel="canonical" href="https://meta-analysis.cz/class/replication/" />
 <link href="/style.css" rel="stylesheet" type="text/css" />
+<script type="application/ld+json">
+{
+ "@context": "https://schema.org",
+ "@type": "SoftwareSourceCode",
+ "@id": "https://meta-analysis.cz/class/replication/#code",
+ "url": "https://meta-analysis.cz/class/replication/",
+ "name": "Replication in R: Class Size and Student Achievement: A Meta-Analysis",
+ "description": "R code that regenerates the numbers reported in the paper from the dataset published on meta-analysis.cz.",
+ "programmingLanguage": "R",
+ "codeRepository": "https://meta-analysis.cz/class/replication/",
+ "license": "https://creativecommons.org/licenses/by/4.0/",
+ "isPartOf": {"@type": "WebPage", "@id": "https://meta-analysis.cz/class/"}
+}
+</script>
 <style>
 table.repl { border-collapse: collapse; margin: 1em 0; font-size: 0.92em; }
 table.repl th, table.repl td { border-bottom: 1px solid #ddd; padding: 4px 14px 4px 0; text-align: left; }
@@ -37,7 +52,7 @@ p.repl-note { font-size: 0.9em; color: #444; margin: 0.5em 0; }
 			<h1 class="title">Replication in R</h1>
 			<div class="entry">
 <p>R code that regenerates the numbers this paper reports, starting from the dataset published on
-this site. It reproduces <b>38 of 38</b>. A further 1 number is recorded below that can be neither a pass nor a fail.</p>
+this site. It reproduces <b>38 of 39</b>. The one that does not match is listed below.</p>
 
 <h2>Run it</h2>
 <pre class="cmd">Rscript run.R</pre>
@@ -56,21 +71,21 @@ printed digits. Those conventions are stated once, in
 <code>xtreg</code>'s treatment of singleton groups, and the restricted-ML default of
 <code>xtmixed</code>, which is not the default of the <code>mixed</code> command that replaced it.</p>
 
-
-<h2>Recorded, not scored</h2>
-<p>Numbers that can be neither a pass nor a fail. <em>discrepancy</em>: computed correctly here and disagreeing with the printed paper. <em>approximation</em>: rebuilt from figures the paper prints rounded, so it lands close but cannot land exactly. <em>not reproduced</em>: quoted from the paper, not computed here. <em>stochastic</em>: depends on a random draw.</p>
+<h2>Numbers that do not match the printed paper</h2>
+<p>The reason for each is given below the table.</p>
 <table class="repl">
-<tr><th>number</th><th>paper</th><th>this code</th><th>kind</th></tr>
-<tr><td>STAR preferred estimates with |t| above Lang's 5.48 threshold (paper: one)</td><td>1</td><td>2</td><td>discrepancy</td></tr>
+<tr><th>number in the paper</th><th>paper</th><th>this code</th></tr>
+<tr><td>STAR preferred estimates with |t| above Lang's 5.48 threshold (paper: one)</td><td>1</td><td>2</td></tr>
 </table>
-<p class="repl-note"><b>STAR preferred estimates with |t| above Lang's 5.48 threshold (paper: one).</b> The published data give two, not one: |t| = 5.538 and 5.500 among the twenty preferred STAR estimates. Both sit within 1% of the 5.48 threshold, so the paper's 'one' and this 'two' differ by a single borderline observation, the kind of gap a slightly different t (recomputed from rounded published effects and standard errors, say) would produce. The count of twenty matches exactly. Recorded rather than scored, because the code is doing what the sentence describes.</p>
+<p class="repl-note">The conclusion says that one of the twenty preferred STAR estimates exceeds the 5.48 t-statistic threshold of Lang (2025). The count of twenty is exact. Two exceed the threshold, at |t| = 5.538 and 5.500, both within 1 percent of it, so a t recomputed from rounded published effects and standard errors would move one across. The printed value is left as published.</p>
+
 
 <h2>Files</h2>
 <ul>
 	<li><a href="run.R">run.R</a>, the replication</li>
 	<li><a href="stata_compat.R">stata_compat.R</a>, the Stata conventions</li>
-	<li><a href="targets.json">targets.json</a>, the numbers as printed in the paper, recorded
-	before the code was written</li>
+	<li><a href="targets.json">targets.json</a>, the numbers as printed in the paper, taken
+	from the paper rather than from the code</li>
 	<li><a href="results.json">results.json</a>, the numbers this code produced</li>
 	<li><a href="REPLICATION_STATUS.md">REPLICATION_STATUS.md</a>, the full comparison, generated
 	from this package's own output</li>

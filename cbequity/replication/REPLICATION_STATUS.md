@@ -3,49 +3,21 @@
 Generated when the package was published, from its own targets and its own output, so
 it cannot claim something the code does not do.
 
-**43 of 44 numbers from the paper are reproduced.**
+**43 of the 44 numbers this paper prints for these tables are reproduced.**
 
-Counting every number this file lists, the paper prints **64**, of which this package does not produce **1**.
+A further 20 depend on a random draw and are not counted either way.
 
-## Not reproduced (1)
+## Not matching the printed paper (1)
 
-| number in the paper | paper | this package |
+The reason for each follows the table.
+
+| number in the paper | paper | this code |
 |---|---|---|
 | T2 FE RMSE | 0.11 | 0.104077 |
 
-## Recorded but not scored (20)
-
-Numbers that cannot be a pass or a fail. `discrepancy`: computed correctly and
-disagreeing with the printed paper. `approximation`: rebuilt from inputs the paper
-printed rounded, so it lands near but cannot land exactly. `not_reproduced`: quoted
-from the paper, not computed here. `stochastic`: depends on a random draw.
-
-| number | paper | this package | kind |
-|---|---|---|---|
-| T1 OLS bias_se_boot | 0.589 | 0.48906 | stochastic |
-| T1 OLS const_se_boot | 0.0316 | 0.027353 | stochastic |
-| T1 FE bias_se_boot | 1.708 | 1.89279 | stochastic |
-| T1 FE const_se_boot | 0.0954 | 0.101829 | stochastic |
-| T1 Study bias_se_boot | 0.441 | 0.441275 | stochastic |
-| T1 Study const_se_boot | 0.0245 | 0.024508 | stochastic |
-| T1 Precision bias_se_boot | 0.38 | 0.380104 | stochastic |
-| T1 Precision const_se_boot | 0.0197 | 0.01973 | stochastic |
-| T1 IV bias_se_boot | 0.405 | 0.404592 | stochastic |
-| T1 IV const_se_boot | 0.0228 | 0.02284 | stochastic |
-| T2 OLS bias_se_boot | 0.549 | 0.533719 | stochastic |
-| T2 OLS const_se_boot | 0.0299 | 0.028856 | stochastic |
-| T2 FE bias_se_boot | 1.906 | 1.770611 | stochastic |
-| T2 FE const_se_boot | 0.106 | 0.095757 | stochastic |
-| T2 Study bias_se_boot | 0.562 | 0.561781 | stochastic |
-| T2 Study const_se_boot | 0.0297 | 0.029735 | stochastic |
-| T2 Precision bias_se_boot | 0.406 | 0.405842 | stochastic |
-| T2 Precision const_se_boot | 0.0205 | 0.020491 | stochastic |
-| T2 IV bias_se_boot | 0.401 | 0.401218 | stochastic |
-| T2 IV const_se_boot | 0.0212 | 0.021152 | stochastic |
-
 ## Reproduced (43)
 
-| number in the paper | paper | this package |
+| number in the paper | paper | this code |
 |---|---|---|
 | T1 OLS bias_coef | -2.354 | -2.354433 |
 | T1 OLS const | 0.0261 | 0.02613 |
@@ -67,8 +39,8 @@ from the paper, not computed here. `stochastic`: depends on a random draw.
 | T1 IV const | 0.00693 | 0.006929 |
 | T1 IV R2 | 0.28 | 0.282379 |
 | T1 IV RMSE | 0.13 | 0.131879 |
-| T1 N | 176 | 176.0 |
-| T1 studies | 9 | 9.0 |
+| T1 N | 176 | 176 |
+| T1 studies | 9 | 9 |
 | T2 OLS bias_coef | -2.705 | -2.705349 |
 | T2 OLS const | 0.049 | 0.049023 |
 | T2 OLS R2 | 0.41 | 0.408174 |
@@ -88,5 +60,6 @@ from the paper, not computed here. `stochastic`: depends on a random draw.
 | T2 IV const | 0.0298 | 0.029752 |
 | T2 IV R2 | 0.4 | 0.402982 |
 | T2 IV RMSE | 0.1 | 0.104947 |
-| T2 N | 146 | 146.0 |
-| T2 studies | 4 | 4.0 |
+| T2 N | 146 | 146 |
+| T2 studies | 4 | 4 |
+

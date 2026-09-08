@@ -5,7 +5,22 @@
 <title>Replication in R: Publication and Attenuation Biases in Measuring Skill Substitution</title>
 <meta name="robots" content="noindex" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
+<link rel="canonical" href="https://meta-analysis.cz/skill/replication/" />
 <link href="/style.css" rel="stylesheet" type="text/css" />
+<script type="application/ld+json">
+{
+ "@context": "https://schema.org",
+ "@type": "SoftwareSourceCode",
+ "@id": "https://meta-analysis.cz/skill/replication/#code",
+ "url": "https://meta-analysis.cz/skill/replication/",
+ "name": "Replication in R: Publication and Attenuation Biases in Measuring Skill Substitution",
+ "description": "R code that regenerates the numbers reported in the paper from the dataset published on meta-analysis.cz.",
+ "programmingLanguage": "R",
+ "codeRepository": "https://meta-analysis.cz/skill/replication/",
+ "license": "https://creativecommons.org/licenses/by/4.0/",
+ "isPartOf": {"@type": "WebPage", "@id": "https://meta-analysis.cz/skill/"}
+}
+</script>
 <style>
 table.repl { border-collapse: collapse; margin: 1em 0; font-size: 0.92em; }
 table.repl th, table.repl td { border-bottom: 1px solid #ddd; padding: 4px 14px 4px 0; text-align: left; }
@@ -37,7 +52,7 @@ p.repl-note { font-size: 0.9em; color: #444; margin: 0.5em 0; }
 			<h1 class="title">Replication in R</h1>
 			<div class="entry">
 <p>R code that regenerates the numbers this paper reports, starting from the dataset published on
-this site. It reproduces <b>33 of 33</b>. A further 6 numbers are recorded below that can be neither a pass nor a fail.</p>
+this site. It reproduces <b>33 of 39</b>. The 6 it does not produce are listed below.</p>
 
 <h2>Run it</h2>
 <pre class="cmd">Rscript run.R</pre>
@@ -57,30 +72,29 @@ printed digits. Those conventions are stated once, in
 <code>xtmixed</code>, which is not the default of the <code>mixed</code> command that replaced it.</p>
 
 
-<h2>Recorded, not scored</h2>
-<p>Numbers that can be neither a pass nor a fail. <em>discrepancy</em>: computed correctly here and disagreeing with the printed paper. <em>approximation</em>: rebuilt from figures the paper prints rounded, so it lands close but cannot land exactly. <em>not reproduced</em>: quoted from the paper, not computed here. <em>stochastic</em>: depends on a random draw.</p>
+<h2>Numbers this code does not produce</h2>
 <table class="repl">
-<tr><th>number</th><th>paper</th><th>this code</th><th>kind</th></tr>
-<tr><td>HEADLINE_ivmethod_FE_implied_elasticity</td><td>4</td><td>6.692244</td><td>not reproduced</td></tr>
-<tr><td>HEADLINE_ivmethod_IV_implied_elasticity</td><td>4</td><td>2.502045</td><td>not reproduced</td></tr>
-<tr><td>HEADLINE_developing_FE_implied_elasticity</td><td>2.5</td><td>2.86581</td><td>not reproduced</td></tr>
-<tr><td>HEADLINE_developing_IV_implied_elasticity</td><td>2.5</td><td>2.18678</td><td>not reproduced</td></tr>
-<tr><td>HEADLINE_developed_FE_implied_elasticity</td><td>4</td><td>-51.427116</td><td>not reproduced</td></tr>
-<tr><td>HEADLINE_developed_IV_implied_elasticity</td><td>4</td><td>-14.843814</td><td>not reproduced</td></tr>
+<tr><th>number in the paper</th><th>paper</th><th>this code</th></tr>
+<tr><td>HEADLINE_ivmethod_FE_implied_elasticity</td><td>4</td><td>not computed</td></tr>
+<tr><td>HEADLINE_ivmethod_IV_implied_elasticity</td><td>4</td><td>not computed</td></tr>
+<tr><td>HEADLINE_developing_FE_implied_elasticity</td><td>2.5</td><td>not computed</td></tr>
+<tr><td>HEADLINE_developing_IV_implied_elasticity</td><td>2.5</td><td>not computed</td></tr>
+<tr><td>HEADLINE_developed_FE_implied_elasticity</td><td>4</td><td>not computed</td></tr>
+<tr><td>HEADLINE_developed_IV_implied_elasticity</td><td>4</td><td>not computed</td></tr>
 </table>
-<p class="repl-note"><b>HEADLINE_ivmethod_FE_implied_elasticity.</b> NOT PRODUCED BY THIS PACKAGE. The paper's '4' and '2.5' are rounded verbal summaries of Bayesian model averaging results (Table 5's 3.7, 95% CI 2 to 20), which the sanctioned wrappers cannot fit. The numbers shown are the FE and IV implied elasticities on the same subsample, which bracket the paper's figure but are a different estimator. Abstract/Sec.I: 'the elasticity of substitution around 4' (Panel B, IV-method primary studies). FE and IV are the only two of Table 1's five estimators with a stata_compat.R wrapper; their implied elasticities (-1/effect_coef) bracket the stated 4 from above.</p>
-<p class="repl-note"><b>HEADLINE_ivmethod_IV_implied_elasticity.</b> NOT PRODUCED BY THIS PACKAGE. The paper's '4' and '2.5' are rounded verbal summaries of Bayesian model averaging results (Table 5's 3.7, 95% CI 2 to 20), which the sanctioned wrappers cannot fit. The numbers shown are the FE and IV implied elasticities on the same subsample, which bracket the paper's figure but are a different estimator. Same claim as above; brackets 4 from below. The paper's precise '4' (and Table 5's 3.7, 95% CI 2-20) is a Bayesian-model-averaging combination over 24 moderators with no stata_compat.R wrapper, not independently reproducible; these two bracketing numbers are the closest evidence obtainable from the allowed toolkit.</p>
-<p class="repl-note"><b>HEADLINE_developing_FE_implied_elasticity.</b> NOT PRODUCED BY THIS PACKAGE. The paper's '4' and '2.5' are rounded verbal summaries of Bayesian model averaging results (Table 5's 3.7, 95% CI 2 to 20), which the sanctioned wrappers cannot fit. The numbers shown are the FE and IV implied elasticities on the same subsample, which bracket the paper's figure but are a different estimator. Sec.III: 'developing countries (around 2.5)' (online appendix table C3-C5, developing_country==1 &amp; inverted_estimate==1 subsample). Matches closely: 2.87.</p>
-<p class="repl-note"><b>HEADLINE_developing_IV_implied_elasticity.</b> NOT PRODUCED BY THIS PACKAGE. The paper's '4' and '2.5' are rounded verbal summaries of Bayesian model averaging results (Table 5's 3.7, 95% CI 2 to 20), which the sanctioned wrappers cannot fit. The numbers shown are the FE and IV implied elasticities on the same subsample, which bracket the paper's figure but are a different estimator. Same claim; IV column gives 2.19, also close to the stated 'around 2.5'.</p>
-<p class="repl-note"><b>HEADLINE_developed_FE_implied_elasticity.</b> NOT PRODUCED BY THIS PACKAGE. The paper's '4' and '2.5' are rounded verbal summaries of Bayesian model averaging results (Table 5's 3.7, 95% CI 2 to 20), which the sanctioned wrappers cannot fit. The numbers shown are the FE and IV implied elasticities on the same subsample, which bracket the paper's figure but are a different estimator. Sec.III: 'developed countries (above 4)'. The FE corrected inverse elasticity for this subsample is statistically indistinguishable from zero (t=0.22), so -1/coefficient is large in magnitude but its sign is not meaningful, reported as an honest miss on the point value, though a near-zero corrected inverse elasticity is qualitatively consistent with 'a large elasticity'.</p>
-<p class="repl-note"><b>HEADLINE_developed_IV_implied_elasticity.</b> NOT PRODUCED BY THIS PACKAGE. The paper's '4' and '2.5' are rounded verbal summaries of Bayesian model averaging results (Table 5's 3.7, 95% CI 2 to 20), which the sanctioned wrappers cannot fit. The numbers shown are the FE and IV implied elasticities on the same subsample, which bracket the paper's figure but are a different estimator. Same claim, IV column; also not statistically distinguishable from zero (t=1.00) and first-stage F=8.7 signals a weak instrument for this subsample, reported as an honest miss on the point value, same qualitative caveat as the FE column.</p>
+<p class="repl-note">This number is not produced here. The paper's '4' and '2.5' are rounded verbal summaries of Bayesian model averaging results (Table 5's 3.7, 95% CI 2 to 20), which the wrappers in stata_compat.R cannot fit. The numbers shown are the FE and IV implied elasticities on the same subsample, which bracket the paper's figure but are a different estimator. Abstract/Sec.I: 'the elasticity of substitution around 4' (Panel B, IV-method primary studies). FE and IV are the only two of Table 1's five estimators with a stata_compat.R wrapper; their implied elasticities (-1/effect_coef) bracket the stated 4 from above.</p>
+<p class="repl-note">This number is not produced here. The paper's '4' and '2.5' are rounded verbal summaries of Bayesian model averaging results (Table 5's 3.7, 95% CI 2 to 20), which the wrappers in stata_compat.R cannot fit. The numbers shown are the FE and IV implied elasticities on the same subsample, which bracket the paper's figure but are a different estimator. Same claim as above; brackets 4 from below. The paper's precise '4' (and Table 5's 3.7, 95% CI 2-20) is a Bayesian-model-averaging combination over 24 moderators with no stata_compat.R wrapper, not independently reproducible; these two bracketing numbers are the closest evidence obtainable from the allowed toolkit.</p>
+<p class="repl-note">This number is not produced here. The paper's '4' and '2.5' are rounded verbal summaries of Bayesian model averaging results (Table 5's 3.7, 95% CI 2 to 20), which the wrappers in stata_compat.R cannot fit. The numbers shown are the FE and IV implied elasticities on the same subsample, which bracket the paper's figure but are a different estimator. Sec.III: 'developing countries (around 2.5)' (online appendix table C3-C5, developing_country==1 &amp; inverted_estimate==1 subsample). Matches closely: 2.87.</p>
+<p class="repl-note">This number is not produced here. The paper's '4' and '2.5' are rounded verbal summaries of Bayesian model averaging results (Table 5's 3.7, 95% CI 2 to 20), which the wrappers in stata_compat.R cannot fit. The numbers shown are the FE and IV implied elasticities on the same subsample, which bracket the paper's figure but are a different estimator. Same claim; IV column gives 2.19, also close to the stated 'around 2.5'.</p>
+<p class="repl-note">This number is not produced here. The paper's '4' and '2.5' are rounded verbal summaries of Bayesian model averaging results (Table 5's 3.7, 95% CI 2 to 20), which the wrappers in stata_compat.R cannot fit. The numbers shown are the FE and IV implied elasticities on the same subsample, which bracket the paper's figure but are a different estimator. Sec.III: 'developed countries (above 4)'. The FE corrected inverse elasticity for this subsample is statistically indistinguishable from zero (t=0.22), so -1/coefficient is large in magnitude but its sign is not meaningful, reported as an honest miss on the point value, though a near-zero corrected inverse elasticity is qualitatively consistent with 'a large elasticity'.</p>
+<p class="repl-note">This number is not produced here. The paper's '4' and '2.5' are rounded verbal summaries of Bayesian model averaging results (Table 5's 3.7, 95% CI 2 to 20), which the wrappers in stata_compat.R cannot fit. The numbers shown are the FE and IV implied elasticities on the same subsample, which bracket the paper's figure but are a different estimator. Same claim, IV column; also not statistically distinguishable from zero (t=1.00) and first-stage F=8.7 signals a weak instrument for this subsample, reported as an honest miss on the point value, same qualitative caveat as the FE column.</p>
 
 <h2>Files</h2>
 <ul>
 	<li><a href="run.R">run.R</a>, the replication</li>
 	<li><a href="stata_compat.R">stata_compat.R</a>, the Stata conventions</li>
-	<li><a href="targets.json">targets.json</a>, the numbers as printed in the paper, recorded
-	before the code was written</li>
+	<li><a href="targets.json">targets.json</a>, the numbers as printed in the paper, taken
+	from the paper rather than from the code</li>
 	<li><a href="results.json">results.json</a>, the numbers this code produced</li>
 	<li><a href="REPLICATION_STATUS.md">REPLICATION_STATUS.md</a>, the full comparison, generated
 	from this package's own output</li>

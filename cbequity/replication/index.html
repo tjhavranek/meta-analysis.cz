@@ -5,7 +5,22 @@
 <title>Replication in R: Central Bank Equity as an Instrument of Monetary Policy</title>
 <meta name="robots" content="noindex" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
+<link rel="canonical" href="https://meta-analysis.cz/cbequity/replication/" />
 <link href="/style.css" rel="stylesheet" type="text/css" />
+<script type="application/ld+json">
+{
+ "@context": "https://schema.org",
+ "@type": "SoftwareSourceCode",
+ "@id": "https://meta-analysis.cz/cbequity/replication/#code",
+ "url": "https://meta-analysis.cz/cbequity/replication/",
+ "name": "Replication in R: Central Bank Equity as an Instrument of Monetary Policy",
+ "description": "R code that regenerates the numbers reported in the paper from the dataset published on meta-analysis.cz.",
+ "programmingLanguage": "R",
+ "codeRepository": "https://meta-analysis.cz/cbequity/replication/",
+ "license": "https://creativecommons.org/licenses/by/4.0/",
+ "isPartOf": {"@type": "WebPage", "@id": "https://meta-analysis.cz/cbequity/"}
+}
+</script>
 <style>
 table.repl { border-collapse: collapse; margin: 1em 0; font-size: 0.92em; }
 table.repl th, table.repl td { border-bottom: 1px solid #ddd; padding: 4px 14px 4px 0; text-align: left; }
@@ -37,7 +52,7 @@ p.repl-note { font-size: 0.9em; color: #444; margin: 0.5em 0; }
 			<h1 class="title">Replication in R</h1>
 			<div class="entry">
 <p>R code that regenerates the numbers this paper reports, starting from the dataset published on
-this site. It reproduces <b>43 of 44</b>. The 1 it does not are listed below, with a further 20 that can be neither a pass nor a fail.</p>
+this site. It reproduces <b>43 of 44</b>. The one that does not match is listed below.</p>
 
 <h2>Run it</h2>
 <pre class="cmd">Rscript run.R</pre>
@@ -56,44 +71,21 @@ printed digits. Those conventions are stated once, in
 <code>xtreg</code>'s treatment of singleton groups, and the restricted-ML default of
 <code>xtmixed</code>, which is not the default of the <code>mixed</code> command that replaced it.</p>
 
-<h2>Numbers this code does not reproduce</h2>
+<h2>Numbers that do not match the printed paper</h2>
+<p>The reason for each is given below the table.</p>
 <table class="repl">
 <tr><th>number in the paper</th><th>paper</th><th>this code</th></tr>
 <tr><td>T2 FE RMSE</td><td>0.11</td><td>0.104077</td></tr>
 </table>
 
-<h2>Recorded, not scored</h2>
-<p>Numbers that can be neither a pass nor a fail. <em>discrepancy</em>: computed correctly here and disagreeing with the printed paper. <em>approximation</em>: rebuilt from figures the paper prints rounded, so it lands close but cannot land exactly. <em>not reproduced</em>: quoted from the paper, not computed here. <em>stochastic</em>: depends on a random draw.</p>
-<table class="repl">
-<tr><th>number</th><th>paper</th><th>this code</th><th>kind</th></tr>
-<tr><td>T1 OLS bias_se_boot</td><td>0.589</td><td>0.48906</td><td>stochastic</td></tr>
-<tr><td>T1 OLS const_se_boot</td><td>0.0316</td><td>0.027353</td><td>stochastic</td></tr>
-<tr><td>T1 FE bias_se_boot</td><td>1.708</td><td>1.89279</td><td>stochastic</td></tr>
-<tr><td>T1 FE const_se_boot</td><td>0.0954</td><td>0.101829</td><td>stochastic</td></tr>
-<tr><td>T1 Study bias_se_boot</td><td>0.441</td><td>0.441275</td><td>stochastic</td></tr>
-<tr><td>T1 Study const_se_boot</td><td>0.0245</td><td>0.024508</td><td>stochastic</td></tr>
-<tr><td>T1 Precision bias_se_boot</td><td>0.38</td><td>0.380104</td><td>stochastic</td></tr>
-<tr><td>T1 Precision const_se_boot</td><td>0.0197</td><td>0.01973</td><td>stochastic</td></tr>
-<tr><td>T1 IV bias_se_boot</td><td>0.405</td><td>0.404592</td><td>stochastic</td></tr>
-<tr><td>T1 IV const_se_boot</td><td>0.0228</td><td>0.02284</td><td>stochastic</td></tr>
-<tr><td>T2 OLS bias_se_boot</td><td>0.549</td><td>0.533719</td><td>stochastic</td></tr>
-<tr><td>T2 OLS const_se_boot</td><td>0.0299</td><td>0.028856</td><td>stochastic</td></tr>
-<tr><td>T2 FE bias_se_boot</td><td>1.906</td><td>1.770611</td><td>stochastic</td></tr>
-<tr><td>T2 FE const_se_boot</td><td>0.106</td><td>0.095757</td><td>stochastic</td></tr>
-<tr><td>T2 Study bias_se_boot</td><td>0.562</td><td>0.561781</td><td>stochastic</td></tr>
-<tr><td>T2 Study const_se_boot</td><td>0.0297</td><td>0.029735</td><td>stochastic</td></tr>
-<tr><td>T2 Precision bias_se_boot</td><td>0.406</td><td>0.405842</td><td>stochastic</td></tr>
-<tr><td>T2 Precision const_se_boot</td><td>0.0205</td><td>0.020491</td><td>stochastic</td></tr>
-<tr><td>T2 IV bias_se_boot</td><td>0.401</td><td>0.401218</td><td>stochastic</td></tr>
-<tr><td>T2 IV const_se_boot</td><td>0.0212</td><td>0.021152</td><td>stochastic</td></tr>
-</table>
+<p>20 further numbers depend on a random draw, so neither a match nor a mismatch is meaningful.</p>
 
 <h2>Files</h2>
 <ul>
 	<li><a href="run.R">run.R</a>, the replication</li>
 	<li><a href="stata_compat.R">stata_compat.R</a>, the Stata conventions</li>
-	<li><a href="targets.json">targets.json</a>, the numbers as printed in the paper, recorded
-	before the code was written</li>
+	<li><a href="targets.json">targets.json</a>, the numbers as printed in the paper, taken
+	from the paper rather than from the code</li>
 	<li><a href="results.json">results.json</a>, the numbers this code produced</li>
 	<li><a href="REPLICATION_STATUS.md">REPLICATION_STATUS.md</a>, the full comparison, generated
 	from this package's own output</li>

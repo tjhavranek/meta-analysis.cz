@@ -4,7 +4,7 @@
 ##
 ## Reproduces the paper's own printed Table 1 (all three columns: ME,
 ## Clustered OLS, Clustered FE) plus three summary statistics quoted in the
-## text, from the published data file only. See REPLICATION.md for the full
+## text, from the published data file only. See REPLICATION_STATUS.md for the full
 ## target-by-target comparison and provenance notes.
 
 if (file.exists("stata_compat.R")) source("stata_compat.R") else
@@ -60,7 +60,7 @@ results[["T1 OLS R2"]]            <- r2_ols
 ## ordinary regression on the transformed variables. That wrapper's own
 ## implementation takes a single regressor (data[[x]] with one column name),
 ## and this specification has three (prec, mea1, se_low). Rather than call
-## fixest/feols directly (forbidden), the augmentation is generalised here by
+## fixest/feols directly (avoided), the augmentation is generalised here by
 ## hand -- same arithmetic, three columns instead of one -- and the
 ## regression itself is still run only through the whitelisted st_regress()
 ## wrapper, so the estimation convention (clustered SEs, fixest default ssc)

@@ -1,9 +1,8 @@
 # stata_compat.R -- Stata commands as R, with the conventions pinned.
 #
 # Every replication package on meta-analysis.cz sources this file and calls ONLY these
-# wrappers. Calling feols(), lm(), rma() or lmer() directly is forbidden, and a Stata command
-# with no wrapper here is a stop-and-file event rather than an invitation to pick the closest
-# looking R function.
+# wrappers. Where a Stata command has no wrapper here, the package says so rather than
+# substituting the closest-looking R function.
 #
 # The reason is narrow and specific. Each of these commands has two or three plausible R
 # renderings that differ by a small-sample or degrees-of-freedom constant. They all run, they
@@ -15,11 +14,26 @@
 #   fixest's default small-sample adjustment instead of none                -> SE 0.0953
 #
 # Neither would have failed a "within one percent" check. Both are wrong. So the convention is
-# fixed here once, with the evidence that fixed it, and test_compat.R re-derives the published
-# cells on every change.
+# fixed here once, with the evidence that fixed it, and the published
+# cells are re-derived on every change.
 #
 # Verified against: class (JOLE 2026) Table 3, Block 1, Panel A -- all ten coefficient and
 # standard-error cells, the fixed-effects constant, N, the first-stage F and the WAAP row.
+
+# --------------------------------------------------------------------------------------------
+# Say which packages are missing, once, instead of failing on the first library() call with
+# "there is no package called 'fixest'" and no indication of what else will be needed.
+local({
+  need <- c("fixest", "metafor", "jsonlite", "lme4", "plm", "BMS", "LowRankQP", "readxl")
+  miss <- need[!vapply(need, requireNamespace, logical(1), quietly = TRUE)]
+  # Only the first two are needed by every package; the rest are per-paper, so a missing one is
+  # only fatal if this paper uses it. Report all of them and let the script fail where it fails.
+  if (length(miss)) {
+    message("This replication may need R packages that are not installed: ",
+            paste(miss, collapse = ", "), "\n  install.packages(c(",
+            paste(sprintf('"%s"', miss), collapse = ", "), "))")
+  }
+})
 
 suppressMessages({
   library(fixest); library(metafor)
@@ -137,12 +151,12 @@ st_ivreg2 <- function(fml, data, cluster = NULL, weights = NULL, iv = NULL, smal
   # `adj = FALSE` is not the same thing as "no denominator correction". ivreg2 without `small`
   # estimates sigma^2 as RSS/N; fixest's floor is RSS/(N-1), and ssc() exposes no setting that
   # reaches N. Measured against Stata 15.1 on the habits Median column (ivreg2 habit_med se_med,
-  # N = 38, no cluster, no weights -- see stata_work_habits/probe1.do):
+  # N = 38, no cluster, no weights):
   #     ivreg2, no `small`            se 0.2074803  0.0858155   (the appendix prints .207, .0858)
   #     feols with .SSC_LARGE         se 0.2102654  0.0869674
   #     that same vcov * (N-1)/N      se 0.2074803  0.0858155   -- exact to seven digits
   # The identical factor recovers Stata for the two other homoskedastic profiles st_ivreg2 can
-  # produce (probe2.do): 2SLS, 5.5039505 against Stata's 5.5039500, and aweighted OLS,
+  # produce: 2SLS, 5.5039505 against Stata's 5.5039500, and aweighted OLS,
   # 0.5577889 against 0.5577889. Both other variance paths are already right and are left
   # untouched -- clustered (the profile .SSC_LARGE was calibrated on) and heteroskedastic, where
   # fixest with adj = FALSE is already ivreg2's HC0 (0.1205108 on both sides).
@@ -249,7 +263,7 @@ st_xtmixed <- function(fml, data) {
 
 # ------------------------------------------------------------------------------- reporting
 #' Coefficients with the inference convention the emulated command uses: z for ivreg2, t for
-#' regress and xtreg. Returns a tidy frame so COMPARE can read it without parsing printed text.
+#' regress and xtreg. Returns a tidy frame so the values can be read without parsing printed text.
 st_coefs <- function(m, z = TRUE) {
   b <- stats::coef(m); s <- sqrt(diag(stats::vcov(m)))
   data.frame(term = names(b), estimate = as.numeric(b), std.error = as.numeric(s),
@@ -296,7 +310,7 @@ st_coefs <- function(m, z = TRUE) {
 #'
 #' The two SEs differ in the fifth significant digit only, which is the numerical Hessian, and
 #' every printed cell of the paper's Table 3 Panel B col 2 rounds the same way under both.
-#' Random intercept only, and level-1 weights only -- anything else is a stop-and-file event
+#' Random intercept only, and level-1 weights only -- anything else is reported rather than guessed
 #' rather than an invitation to generalise this code.
 st_xtmixed_pw <- function(fml, data, group, weights) {
   gv <- if (is.character(group)) data[[group]] else if (inherits(group, "formula"))
@@ -401,7 +415,7 @@ nobs.st_xtmixed_pw  <- function(object, ...) object$nobs
 #'     Stata 15.1, rreg TSTAT_L SE1_PCC_L       SE 0.2465561  0.0136450
 #'
 #' Verified against Stata 15.1 on the site's own published remittances.csv
-#' (repl/stata_work_remittances/probe1.do), both cells of both rreg columns the paper prints:
+#', both cells of both rreg columns the paper prints:
 #'
 #'                                    Stata 15.1                 this wrapper
 #'   Table B1 (2)  _cons        0.72085003 (0.24655608)   0.72085001 (0.24655609)
@@ -522,7 +536,7 @@ st_plm_re <- function(fml, data, panel) {
 #' the top decile by precision for the Top10 estimator.
 #'
 #' Exists so the choice is stated once and audited, rather than appearing as a bare quantile()
-#' call that the package checker cannot tell apart from an accidental one.
+#' call, which would not say which convention was intended.
 st_quantile_r <- function(x, probs, na.rm = TRUE) {
   .note("quantile(x, probs)  [R's own, not Stata's _pctile]", "type 7, R's default")
   stats::quantile(x, probs = probs, na.rm = na.rm, type = 7)

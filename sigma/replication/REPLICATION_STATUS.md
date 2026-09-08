@@ -3,31 +3,26 @@
 Generated when the package was published, from its own targets and its own output, so
 it cannot claim something the code does not do.
 
-**37 of 39 numbers from the paper are reproduced.**
+**37 of the 40 numbers this paper prints for these tables are reproduced.**
 
-Counting every number this file lists, the paper prints **40**, of which this package does not produce **3**.
+## Not matching the printed paper (2)
 
-## Not reproduced (2)
+The reason for each follows the table.
 
-| number in the paper | paper | this package |
+| number in the paper | paper | this code |
 |---|---|---|
 | TEXT mean elasticity, simple (paper: 0.8) | 0.8 | 0.747053 |
 | TEXT share of 0.9->0.3 reduction due to publication bias alone (paper: 'at least half', i.e. >= 0.5) | 0.5 | 0.680206 |
 
-## Recorded but not scored (1)
+## Not produced by this code (1)
 
-Numbers that cannot be a pass or a fail. `discrepancy`: computed correctly and
-disagreeing with the printed paper. `approximation`: rebuilt from inputs the paper
-printed rounded, so it lands near but cannot land exactly. `not_reproduced`: quoted
-from the paper, not computed here. `stochastic`: depends on a random draw.
-
-| number | paper | this package | kind |
-|---|---|---|---|
-| TEXT 'best practice' implied elasticity -- OUR st_regress proxy (paper's Table 9 value: 0.30, 95% CI -0.01 to 0.60; NOT independently reproduced -- see comment above) | 0.3 | 0.433293 | headline_not_independently_reproduced |
+| number in the paper | paper | this code |
+|---|---|---|
+| TEXT 'best practice' implied elasticity -- OUR st_regress proxy (paper's Table 9 value: 0.30, 95% CI -0.01 to 0.60; NOT independently reproduced -- see comment above) | 0.3 | not computed |
 
 ## Reproduced (37)
 
-| number in the paper | paper | this package |
+| number in the paper | paper | this code |
 |---|---|---|
 | T5 Identif: SE coef | 0.649 | 0.649102 |
 | T5 Identif: SE se | 0.219 | 0.218781 |
@@ -59,10 +54,11 @@ from the paper, not computed here. `stochastic`: depends on a random draw.
 | T5 Short run: Constant se | 0.0155 | 0.015453 |
 | T5 Short run: SE*Shortrun coef | 1.741 | 1.740647 |
 | T5 Short run: SE*Shortrun se | 0.885 | 0.885405 |
-| T5 Studies (all columns) | 121 | 121.0 |
-| T5 Observations (all columns) | 3186 | 3186.0 |
+| T5 Studies (all columns) | 121 | 121 |
+| T5 Observations (all columns) | 3186 | 3186 |
 | T5 Translog: SE coef | 0.664 | 0.664021 |
 | T5 Translog: Constant coef | 0.529 | 0.528969 |
 | TEXT mean elasticity, equal weight per study (paper: 0.9) | 0.9 | 0.867015 |
 | TEXT publication-bias coefficient, Table 1 OLS (paper: 0.881) | 0.881 | 0.881304 |
 | TEXT mean elasticity corrected for publication bias, Table 1 OLS constant (paper: 0.5, printed 0.492) | 0.492 | 0.491876 |
+

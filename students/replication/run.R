@@ -22,17 +22,15 @@
 #  - The WAAP row of Panel C *is* attempted: the do-file builds it with plain `reg` (Stata
 #    regress), which st_regress covers.
 #
-# One cell of Table 2 is not reproduced, and the evidence says the paper is wrong rather than
-# this code: the WAAP standard error, printed as (0.0130). This script produces 0.0135726. So
-# does Stata 15.1 run on the author's own students.xlsx with the author's own commands, and so
-# does the author's own log of the published run
-# (Tomas_Zuzka_sdilene\2_papers\paper_students\_revision\calculation\calculation_final_version\
-# students.log): "precision_w | .0075581 | .0135726 | 0.56 | 0.616". The paper itself prints
+# One cell of Table 2 does not match: the WAAP standard error, printed as (0.0130). This script
+# produces 0.0135726. So does Stata 15.1 run on the authors' own workbook with their own
+# commands, and so does their log of the published run, which reads
+#     precision_w | .0075581 | .0135726 | 0.56 | 0.616
 # the correct value for the same regression in its appendix table on the expanded 872-estimate
 # sample -- 0.00756 (0.0136), students.pdf p. 48 -- where the WAAP coefficient is identical
 # because the adequately powered subset is the same four estimates. 0.0130 is also, to the
 # digit, the Selection-model coefficient printed one column to the right in the same row of
-# Table 2. See REPLICATION.md.
+# Table 2.
 
 if (file.exists("stata_compat.R")) source("stata_compat.R") else
   source("https://meta-analysis.cz/students/replication/stata_compat.R")

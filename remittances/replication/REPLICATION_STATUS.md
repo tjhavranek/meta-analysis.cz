@@ -3,20 +3,20 @@
 Generated when the package was published, from its own targets and its own output, so
 it cannot claim something the code does not do.
 
-**52 of 54 numbers from the paper are reproduced.**
+**52 of the 54 numbers this paper prints for these tables are reproduced.**
 
-## Not reproduced (2)
+## Not produced by this code (2)
 
-| number in the paper | paper | this package |
+| number in the paper | paper | this code |
 |---|---|---|
 | T3_andrewskasy | 0.121 | not computed |
 | T3_stem | 0.036 | not computed |
 
 ## Reproduced (52)
 
-| number in the paper | paper | this package |
+| number in the paper | paper | this code |
 |---|---|---|
-| B1_N | 347 | 347.0 |
+| B1_N | 347 | 347 |
 | B1_s1_pubbias | 0.677 | 0.677134 |
 | B1_s1_pubbias_se | 0.61 | 0.605161 |
 | B1_s1_trueeffect | 0.014 | 0.01433 |
@@ -41,7 +41,7 @@ it cannot claim something the code does not do.
 | B1_s6_pubbias_se | 0.35 | 0.347271 |
 | B1_s6_trueeffect | -0.024 | -0.023664 |
 | B1_s6_trueeffect_se | 0.03 | 0.030342 |
-| D1_N | 48 | 48.0 |
+| D1_N | 48 | 48 |
 | D1_s1_pubbias | 0.751 | 0.750546 |
 | D1_s1_pubbias_se | 0.53 | 0.533913 |
 | D1_s1_trueeffect | -0.124 | -0.123607 |
@@ -62,9 +62,10 @@ it cannot claim something the code does not do.
 | D1_s5_pubbias_se | 0.99 | 0.99296 |
 | D1_s5_trueeffect | -0.017 | -0.017203 |
 | D1_s5_trueeffect_se | 0.15 | 0.150293 |
-| T3_N | 487 | 487.0 |
+| T3_N | 487 | 487 |
 | T3_uncorrected_mean | 0.103 | 0.102551 |
 | T3_top10 | 0.025 | 0.025435 |
-| T3_top10_N | 49 | 49.0 |
+| T3_top10_N | 49 | 49 |
 | T3_waap | 0.042 | 0.042101 |
-| T3_waap_N | 89 | 89.0 |
+| T3_waap_N | 89 | 89 |
+

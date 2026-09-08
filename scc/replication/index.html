@@ -5,7 +5,22 @@
 <title>Replication in R: Selective Reporting and the Social Cost of Carbon</title>
 <meta name="robots" content="noindex" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
+<link rel="canonical" href="https://meta-analysis.cz/scc/replication/" />
 <link href="/style.css" rel="stylesheet" type="text/css" />
+<script type="application/ld+json">
+{
+ "@context": "https://schema.org",
+ "@type": "SoftwareSourceCode",
+ "@id": "https://meta-analysis.cz/scc/replication/#code",
+ "url": "https://meta-analysis.cz/scc/replication/",
+ "name": "Replication in R: Selective Reporting and the Social Cost of Carbon",
+ "description": "R code that regenerates the numbers reported in the paper from the dataset published on meta-analysis.cz.",
+ "programmingLanguage": "R",
+ "codeRepository": "https://meta-analysis.cz/scc/replication/",
+ "license": "https://creativecommons.org/licenses/by/4.0/",
+ "isPartOf": {"@type": "WebPage", "@id": "https://meta-analysis.cz/scc/"}
+}
+</script>
 <style>
 table.repl { border-collapse: collapse; margin: 1em 0; font-size: 0.92em; }
 table.repl th, table.repl td { border-bottom: 1px solid #ddd; padding: 4px 14px 4px 0; text-align: left; }
@@ -37,7 +52,7 @@ p.repl-note { font-size: 0.9em; color: #444; margin: 0.5em 0; }
 			<h1 class="title">Replication in R</h1>
 			<div class="entry">
 <p>R code that regenerates the numbers this paper reports, starting from the dataset published on
-this site. It reproduces <b>58 of 60</b>. The 2 it does not are listed below, with a further 10 that can be neither a pass nor a fail.</p>
+this site. It reproduces <b>58 of 60</b>. The 2 that do not match are listed below.</p>
 
 <h2>Run it</h2>
 <pre class="cmd">Rscript run.R</pre>
@@ -56,37 +71,22 @@ printed digits. Those conventions are stated once, in
 <code>xtreg</code>'s treatment of singleton groups, and the restricted-ML default of
 <code>xtmixed</code>, which is not the default of the <code>mixed</code> command that replaced it.</p>
 
-<h2>Numbers this code does not reproduce</h2>
+<h2>Numbers that do not match the printed paper</h2>
+<p>The reason for each is given below the table.</p>
 <table class="repl">
 <tr><th>number in the paper</th><th>paper</th><th>this code</th></tr>
 <tr><td>HL_lower_corrected_mean_raw</td><td>0</td><td>-18.685314</td></tr>
 <tr><td>HL_studylevel_ratio</td><td>4</td><td>4.748807</td></tr>
 </table>
 
-<h2>Recorded, not scored</h2>
-<p>Numbers that can be neither a pass nor a fail. <em>discrepancy</em>: computed correctly here and disagreeing with the printed paper. <em>approximation</em>: rebuilt from figures the paper prints rounded, so it lands close but cannot land exactly. <em>not reproduced</em>: quoted from the paper, not computed here. <em>stochastic</em>: depends on a random draw.</p>
-<table class="repl">
-<tr><th>number</th><th>paper</th><th>this code</th><th>kind</th></tr>
-<tr><td>T3A_ME_se_coef</td><td>1.819</td><td>1.819393</td><td>stochastic</td></tr>
-<tr><td>T3A_ME_se_se</td><td>0.0825</td><td>0.082516</td><td>stochastic</td></tr>
-<tr><td>T3A_ME_const</td><td>-18.69</td><td>-18.685314</td><td>stochastic</td></tr>
-<tr><td>T3A_ME_const_se</td><td>48.43</td><td>48.434829</td><td>stochastic</td></tr>
-<tr><td>T3B_ME_se_coef</td><td>1.835</td><td>1.834541</td><td>stochastic</td></tr>
-<tr><td>T3B_ME_se_se</td><td>0.0843</td><td>0.084288</td><td>stochastic</td></tr>
-<tr><td>T3B_ME_upse_coef</td><td>-0.00788</td><td>-0.007879</td><td>stochastic</td></tr>
-<tr><td>T3B_ME_upse_se</td><td>0.01</td><td>0.01</td><td>stochastic</td></tr>
-<tr><td>T3B_ME_const</td><td>-17.78</td><td>-17.784719</td><td>stochastic</td></tr>
-<tr><td>T3B_ME_const_se</td><td>48.81</td><td>48.811386</td><td>stochastic</td></tr>
-</table>
-<p class="repl-note"><b>T3A_ME_se_coef.</b> ML mixed-effects (study random intercept); exact numerical optimum, not a resampling statistic, but 'ME' spec details (REML vs ML, which random effects) are inferred, not shown verbatim in the excerpted code</p>
-<p class="repl-note"><b>T3B_ME_se_coef.</b> ML mixed-effects (study random intercept); ME spec details inferred, not verbatim in the excerpted code</p>
+<p>10 further numbers depend on a random draw, so neither a match nor a mismatch is meaningful.</p>
 
 <h2>Files</h2>
 <ul>
 	<li><a href="run.R">run.R</a>, the replication</li>
 	<li><a href="stata_compat.R">stata_compat.R</a>, the Stata conventions</li>
-	<li><a href="targets.json">targets.json</a>, the numbers as printed in the paper, recorded
-	before the code was written</li>
+	<li><a href="targets.json">targets.json</a>, the numbers as printed in the paper, taken
+	from the paper rather than from the code</li>
 	<li><a href="results.json">results.json</a>, the numbers this code produced</li>
 	<li><a href="REPLICATION_STATUS.md">REPLICATION_STATUS.md</a>, the full comparison, generated
 	from this package's own output</li>

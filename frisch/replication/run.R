@@ -31,7 +31,7 @@
 #
 #   1. Stata 14+ uses mt64, which is the reference MT19937-64 seeded with
 #      init_genrand64(seed) and converted with (x >> 11) * 2^-53. Checked bit for bit
-#      against Stata 15.1 on this machine over 5,000 draws.
+#      against Stata 15.1 over 5,000 draws.
 #   2. bsample with strata() is Stata's StrSRSWR (ado/base/b/bsample.ado), which is NOT
 #      "draw n indices". It draws r_i = int(u*n)+1 and w_i = u for each row, sorts rows by
 #      (r, w), turns runs of equal r into frequency weights, keeps the last row of each run
@@ -47,7 +47,7 @@
 #
 # Result: all 38 study_se values reproduce the author's saved Stata output to eight
 # significant digits, and with them the five columns of Table 3 reproduce as printed.
-# See REPLICATION.md.
+#
 
 if (file.exists("stata_compat.R")) source("stata_compat.R") else
   source("https://meta-analysis.cz/frisch/replication/stata_compat.R")
@@ -288,11 +288,11 @@ res[["T3 col5 MAIVE: Effect-beyond-bias SE"]]   <- c5$std.error[c5$term == "(Int
 # First-stage F: not reproduced, and not because of anything in this file. Running the
 # author's own line in Stata 15.1 on the author's own saved data prints a cluster-robust
 # first-stage F of 37.02 (Kleibergen-Paap rk Wald F 37.015; Cragg-Donald 46.53); the paper
-# prints 31.2. See REPLICATION.md for the candidates that were checked and ruled out.
+# prints 31.2. See REPLICATION_STATUS.md for the candidates that were checked and ruled out.
 res[["T3 col5 MAIVE: First-stage F"]] <- st_ivreg2_first_F(m5)
 res[["T3 col5 MAIVE: Observations"]]  <- m5$nobs
 # Studies: this regression has 33 clusters, which is what ivreg2 reports. The paper's 23 is
-# the number of studies that report their own se -- see REPLICATION.md.
+# the number of studies that report their own se.
 res[["T3 col5 MAIVE: Studies"]]       <- length(unique(extA$idstudy))
 
 # ---------------------------------------------------------------------------------------

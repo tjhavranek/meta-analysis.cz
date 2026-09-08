@@ -15,7 +15,7 @@
 #' leaves 1,324 instead of 1,311 -- close enough to look like a rounding difference.
 
 ## Faithful R port of Stata's hadimvo.ado (version 1.3.0, 19apr2007), verified against
-## Stata 15.1 output row by row. Nothing here was tuned to a target.
+## Stata 15.1 output row by row.
 f32 <- function(x) readBin(writeBin(as.double(x), raw(), size = 4), "double", size = 4, n = length(x))
 
 hadimvo_stata <- function(X, p = 0.05, float_D = TRUE) {

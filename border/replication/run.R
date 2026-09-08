@@ -12,7 +12,7 @@
 # i.e. never executed by Stata at all, only a record of what was run
 # separately in R's BMS package with burn=1e6/iter=2e6 MCMC settings. No
 # wrapper in stata_compat.R emulates bms(), so Table 5 is UNSUPPORTED. See
-# REPLICATION.md.
+# REPLICATION_STATUS.md.
 #
 # Uses ONLY the wrappers in stata_compat.R (st_ivreg2, st_xtreg_fe, st_regress,
 # st_coefs). No feols/lm/ivreg call is made directly anywhere in this file.
@@ -167,7 +167,7 @@ g <- function(cf, term) cf[cf$term == term, c("estimate", "std.error", "p.value"
 #        counted because they are nested in the cluster). All 26 slope SEs
 #        and the constant's SE reproduce to the printed digit under this
 #        convention; the two-way (idstudy, idcountry2) LSDV version used in
-#        the first draft of this package does not (Canada .296 vs .321).
+#        the unweighted variant does not (Canada .296 vs .321).
 #
 #    So the FE column is the do-file's own xtreg convention from line 110
 #    ("xtreg b se, fe vce(cluster idstudy)") applied to the Table 6 spec:
@@ -178,7 +178,7 @@ g <- function(cf, term) cf[cf$term == term, c("estimate", "std.error", "p.value"
 #    leaves blank for lacking within-study variation (ratio, published,
 #    impact, lnyearcits, firstpub). The paper's note that the FE standard
 #    errors are "clustered at both the study and dataset levels" is not what
-#    produced the printed column; see REPLICATION.md.
+#    produced the printed column;.
 #
 #    Wrapper: st_xtreg_fe(). Its internal paste(deparse(fml), "|", panel)
 #    line-wraps a 26-term formula (deparse's fixed 60-char cutoff) and then
@@ -203,7 +203,7 @@ G_fe <- length(unique(d$idstudy))             # 61 clusters -> t(60)
 c_fe <- st_coefs(m_fe, z = FALSE)
 c_fe$p.value <- 2 * stats::pt(-abs(c_fe$statistic), df = G_fe - 1)
 
-add_note("FE column: st_xtreg_fe (xtreg b ... [pweight=invperst], fe vce(cluster idstudy)) -- one-way study clustering, Stata xtreg small-sample factor, t(G-1=60) p-values. CONFIRMED in Stata 15.1: this command reproduces every printed cell of Table 6's FE column. The paper's note that the FE standard errors are two-way clustered does not describe the printed FE numbers (see REPLICATION.md).")
+add_note("FE column: st_xtreg_fe (xtreg b ... [pweight=invperst], fe vce(cluster idstudy)) -- one-way study clustering, Stata xtreg small-sample factor, t(G-1=60) p-values. CONFIRMED in Stata 15.1: this command reproduces every printed cell of Table 6's FE column. The paper's note that the FE standard errors are two-way clustered does not describe the printed FE numbers.")
 
 # ---------------------------------------------------------------------------
 # 4b. FE column's Constant: Stata's xtreg,fe _cons. stata_compat.R's own

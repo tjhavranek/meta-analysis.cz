@@ -233,7 +233,7 @@ for (spec in horizons) {
   # on this specification -> Stata's xtmixed/mixed default, REML). st_mixed always fits
   # REML = FALSE (its own documented convention for `mixed`/`xtmixed`, fixed in
   # stata_compat.R and not editable here). For this specification the two converge to the
-  # same printed precision at every horizon but one (see REPLICATION.md) -- flagged, not
+  # same printed precision at every horizon but one -- flagged, not
   # patched around.
   m  <- suppressMessages(suppressWarnings(st_mixed(fml, data = reg_d)))
   fe <- lme4::fixef(m)

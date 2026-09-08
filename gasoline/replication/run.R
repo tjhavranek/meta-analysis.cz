@@ -26,7 +26,7 @@
 # LONG-RUN sample only (pooling the vehicle-stock and no-vehicle-stock
 # groups, with Carstock as a regressor) -- i.e. exactly the sample used for
 # Table 6 (paper's own N = 692; our revision file has 701 rows, presumably a
-# small post-publication data revision -- see REPLICATION.md).
+# small post-publication data revision).
 #
 # Table 6 is therefore the one headline table fully reproducible from this
 # file: every one of its rows maps onto a column already in the CSV, and its
@@ -67,7 +67,7 @@ stopifnot(all(is.finite(d$se)), all(d$se > 0))
 # the paper's printed N). Every cell of Tables 3, 4 and 6 recomputed below
 # matches the printed value only once this trim is applied; without it the
 # coefficients are systematically off (a handful of extreme-precision points
-# dominate the unweighted t-on-(1/se) regression). See REPLICATION.md.
+# dominate the unweighted t-on-(1/se) regression).
 n_before <- nrow(d)
 d <- d[d$prec < 100, ]
 stopifnot(nrow(d) == 692)
@@ -214,7 +214,7 @@ for (spec in names(models)) {
 # with the same random-intercept-by-Studyid mixed model used for Table 6.
 # We fit it on the two Carstock subsamples of the same 692-row trimmed
 # sample used above (the trim, and the fact that this file is long-run-only
-# data, are both established above and in REPLICATION.md).
+# data, are both established above and in REPLICATION_STATUS.md).
 d_vs   <- d[d$Carstock == 1, ]   # long run, WITH vehicle-stock control (paper N = 346)
 d_novs <- d[d$Carstock == 0, ]   # long run, WITHOUT vehicle-stock control (paper N = 346)
 stopifnot(nrow(d_vs) == 346, nrow(d_novs) == 346)
@@ -269,7 +269,7 @@ cat("  The short-run elasticity (Table 4's printed 0.0999, N = 831) needs\n")
 cat("  the short-run subsample of Dahl's (2012) data. The CSV this package\n")
 cat("  reads (data/v1/gasoline/gasoline.csv) contains only the LONG-RUN\n")
 cat("  sample (701 rows before trim / 692 after -- see the Table 6\n")
-cat("  derivation above and REPLICATION.md): its 'e' range and its\n")
+cat("  derivation above): its 'e' range and its\n")
 cat("  Carstock 350/351 split match the paper's long-run sample exactly,\n")
 cat("  and the file carries no short-run indicator or short-run rows.\n")
 cat("  No short-run number is produced here -- none is fabricated to fill\n")

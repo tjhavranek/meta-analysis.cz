@@ -48,7 +48,7 @@
 #      this package reproducible; re-running a 2,000,000-draw chain would not return the
 #      author's draws anyway. Scored against Table 6 the two are equally good: enumeration
 #      gets 20 of the 21 BMA numbers and the author's own saved chain also gets 20 of 21 --
-#      they miss DIFFERENT ones. See REPLICATION.md.
+#      they miss DIFFERENT ones.
 #
 # (ii) FMA coefficients are used ROUNDED TO 4 DECIMALS. Not a fudge: the author's Mallows
 #      program, as published in education.do, ends with

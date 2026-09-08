@@ -3,29 +3,24 @@
 Generated when the package was published, from its own targets and its own output, so
 it cannot claim something the code does not do.
 
-**40 of 40 numbers from the paper are reproduced.**
+**40 of the 42 numbers this paper prints for these tables are reproduced.**
 
-Counting every number this file lists, the paper prints **42**, of which this package does not produce **0**.
+## Not matching the printed paper (2)
 
-## Recorded but not scored (2)
+The reason for each follows the table.
 
-Numbers that cannot be a pass or a fail. `discrepancy`: computed correctly and
-disagreeing with the printed paper. `approximation`: rebuilt from inputs the paper
-printed rounded, so it lands near but cannot land exactly. `not_reproduced`: quoted
-from the paper, not computed here. `stochastic`: depends on a random draw.
+| number in the paper | paper | this code |
+|---|---|---|
+| T6 long-run FMA mean | -0.07 | -0.069406 |
+| T6 female BMA CI low | -0.12 | -0.120548 |
 
-| number | paper | this package | kind |
-|---|---|---|---|
-| T6 long-run FMA mean | -0.07 | -0.069406 | discrepancy |
-| T6 female BMA CI low | -0.12 | -0.120548 | discrepancy |
+The paper prints -0.070; this code gives -0.069406. The interval printed for the same row, (-0.089, -0.050), is reproduced exactly, and it is symmetric about -0.0694 rather than -0.070, so the printed mean and the printed interval do not come from one number.
 
-**T6 long-run FMA mean** -- This package computes -0.069406, which rounds to -0.069; the paper prints -0.070. The paper's own interval for the SAME row, (-0.089, -0.050), is reproduced here exactly, and it sits 0.019 below and 0.020 above the printed mean, so it is not symmetric about -0.070. It IS symmetric about roughly -0.0694. The printed mean and the printed interval cannot both come from one underlying number, and this package agrees with the interval. Recorded as a discrepancy for the author; the printed value is left exactly as published.
-
-**T6 female BMA CI low** -- This package computes -0.120548, which rounds to -0.121; the paper prints -0.120. The paper's own mean for that row (-0.017) and upper bound (0.087) give a half-width of 0.104 and hence a lower bound of -0.121, so the printed -0.120 disagrees with the rest of its own row. The gap is 5e-5, entirely in the fourth decimal of the BMA posterior mean. Checked rather than assumed: reading the author's own saved bms object out of education_nobs.RData also scores 20 of 21 on the BMA half, it fixes this cell and breaks 'short-run BMA CI low' instead. No BMA configuration, his or ours, reaches 21 of 21, so the residual is rounding in the printed table, not the estimator.
+The paper prints -0.120; this code gives -0.120548, which rounds to -0.121. The paper's own mean for that row (-0.017) and upper bound (0.087) imply a lower bound of -0.121.
 
 ## Reproduced (40)
 
-| number in the paper | paper | this package |
+| number in the paper | paper | this code |
 |---|---|---|
 | T6 short-run BMA mean | -0.01 | -0.009761 |
 | T6 short-run BMA CI low | -0.032 | -0.031538 |
@@ -67,3 +62,4 @@ from the paper, not computed here. `stochastic`: depends on a random draw.
 | T6 all-estimates FMA mean | -0.003 | -0.003118 |
 | T6 all-estimates FMA CI low | -0.021 | -0.020943 |
 | T6 all-estimates FMA CI high | 0.015 | 0.014706 |
+

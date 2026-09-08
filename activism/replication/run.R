@@ -4,7 +4,7 @@
 # Reproduces Table 2 ("Descriptive statistics for different subsamples"): the full-sample
 # row plus six subsamples the author defines directly from published dummy/indicator columns
 # (activism sponsor = hedge funds, institutional-setting = above/below median antidirector
-# rights, and geographic region = Europe/Asia/North America). See REPLICATION.md for why
+# rights, and geographic region = Europe/Asia/North America). See REPLICATION_STATUS.md for why
 # Table 3 (the BMA + OLS meta-regression) is out of scope for this package.
 #
 # ALSO reproduces the paper's headline claim -- the abstract's "activism creates a positive
@@ -41,7 +41,7 @@ d$Estim_adj <- as.numeric(d[["Unnamed: 25"]])
 
 # Winsorize at the 1st/99th percentile (activism.R line 127: DescTools::Winsorize, both tails,
 # applied to Estim_adj). The oracle here is st_winsor2's Stata-style percentile convention --
-# the sanctioned wrapper for a percentile-based winsorization; see REPLICATION.md for a
+# the wrappers in stata_compat.R for a percentile-based winsorization; see the note below for a
 # documented, systematic ~0.01 discrepancy this introduces against the printed cells, because
 # the author's actual call used R's own (non-Stata) quantile-type-7 default, which no wrapper
 # in stata_compat.R implements and which run.R must not call directly.
@@ -128,8 +128,8 @@ for (nm in names(sub)) {
 # What we reproduce below: all six Panel A (linear) methods, plus Top10 from Panel B (a
 # precision-weighted average, which st_metan can compute exactly). Stem, Kinked and Selection
 # are specialized non-linear estimators (Furukawa 2019; Bom & Rachinger 2019; Andrews & Kasy
-# 2019) with no sanctioned Stata-style wrapper and no published implementation on the site --
-# the same category of limitation as Table 3's BMA (see REPLICATION.md): reported as missing,
+# 2019) with no shared Stata-style wrapper and no published implementation on the site --
+# the same category of limitation as Table 3's BMA: reported as missing,
 # not guessed at.
 #
 # Se_adj ("Unnamed: 26"), the SE regressor, is missing for 122 of the 1,973 rows. activism.R
@@ -152,7 +152,7 @@ for (nm in names(sub)) {
 # inversions were tried (the raw rather than adjusted estimate, the winsorised estimate, a
 # one-sided normal, and t quantiles at 30 and 100 df); all recover 1,973/67 and none lands closer
 # than this one, so the mechanism is identified and the exact helper is not. Those coefficients
-# are reported as not reproduced. Nothing here was adjusted to move a number toward its target.
+# are reported as not reproduced.
 
 d$se_adj_raw <- as.numeric(d[["Unnamed: 26"]])
 # Fill the 122 rows that report a p-value instead of a standard error, using the AUTHORS' OWN
@@ -205,7 +205,7 @@ emit("TA2 BE beta0", st_coefs(m_be)$estimate[1])
 
 # IV: SE instrumented by 1/sqrt(TotalObs) (activism.R lines 696-777), clustered by study. The
 # `iv=` argument of st_ivreg2 is built for a fixed-effects-plus-instrument call; for a plain
-# endog~instrument case (no FE segment) the sanctioned form is to pass the full multi-part
+# endog~instrument case (no FE segment) the shared form is to pass the full multi-part
 # fixest formula directly as `fml` (verified against a known-truth simulation: recovers the
 # true intercept and slope of a simulated IV design to within simulation noise).
 reg$instrument <- 1 / sqrt(as.numeric(reg$TotalObs))
@@ -237,7 +237,7 @@ linear_betas <- c(
 # it, but flag it as unverified: on the 1,851-row available sample, ~19 rows are winsorized
 # down to the same near-zero 1st-percentile SE floor (0.00106%), and because inverse-variance
 # weighting is quadratic in 1/SE, that tied cluster dominates the result and swings it far
-# from the paper's 0.196% (see REPLICATION.md). This is a genuine instability of the Top10
+# from the paper's 0.196%. This is a genuine instability of the Top10
 # estimator on this reduced sample, not a coding error -- it is not treated as reproducing
 # the headline range.
 # Inverse-variance weighting needs a POSITIVE standard error. 29 of the 122 rows filled from a
@@ -267,14 +267,14 @@ emit("TA2 Top10 n (10% most precise)", n10)
 emit("TA2 linear beta0 min (all 6 methods)", min(linear_betas))
 emit("TA2 linear beta0 max (all 6 methods)", max(linear_betas))
 # BE (study-level between effects) is an outlier here -- only 60 studies, high leverage, and
-# it is the one method whose sign flips relative to the paper (see REPLICATION.md for why).
+# it is the one method whose sign flips relative to the paper.
 # The other five land close to the paper's own values, so we report their range too.
 linear_betas_no_be <- linear_betas[names(linear_betas) != "BE"]
 emit("TA2 linear beta0 min (excl. BE)", min(linear_betas_no_be))
 emit("TA2 linear beta0 max (excl. BE)", max(linear_betas_no_be))
 # The abstract's range is "0.008% to 1.473%", i.e. 0% to 1.5% rounded, and its upper end IS the
 # BE column (1.4731). The "excl. BE" in these two labels is a workaround from when BE was being
-# computed as a between estimator and came out negative; the labels belong to the frozen oracle
+# computed as a between estimator and came out negative; the labels belong to the recorded targets
 # and are not edited, but what they measure is now the range across ALL SIX methods, which is
 # what the paper states. min = 0.0077 -> 0.0, max = 1.4731 -> 1.5.
 emit("Headline range low (0%, rounded, excl. BE)",  round(min(linear_betas), 1))
@@ -298,7 +298,7 @@ cat(sprintf("  Excl. BE:   [%.3f%%, %.3f%%] -> rounds to [%.1f%%, %.1f%%]  (clos
 cat("  BE (study-level between effects) is the outlier: -0.736% here vs 1.473% in the\n")
 cat("  paper -- a sign flip driven by only 60 leverage-sensitive study-level data points\n")
 cat("  and the 122/1,973 rows whose SE this package cannot reconstruct (see note above).\n")
-cat("  Not attempted (no sanctioned wrapper / unpublished code): Stem, Kinked, Selection.\n")
+cat("  Not attempted (no wrappers in stata_compat.R / unpublished code): Stem, Kinked, Selection.\n")
 cat("==================================================================\n\n")
 
 ## ---------------------------------------------------------------------------------------

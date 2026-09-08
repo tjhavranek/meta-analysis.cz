@@ -3,14 +3,14 @@
 Generated when the package was published, from its own targets and its own output, so
 it cannot claim something the code does not do.
 
-**41 of 41 numbers from the paper are reproduced.**
+**41 of the 41 numbers this paper prints for these tables are reproduced.**
 
 ## Reproduced (41)
 
-| number in the paper | paper | this package |
+| number in the paper | paper | this code |
 |---|---|---|
-| N (observations) | 1271 | 1271.0 |
-| Studies | 61 | 61.0 |
+| N (observations) | 1271 | 1271 |
+| Studies | 61 | 61 |
 | OLS Midyear coef | -0.002 | -0.001688 |
 | OLS Midyear se | 0.011 | 0.010649 |
 | OLS Midyear p | 0.874 | 0.874032 |
@@ -19,7 +19,7 @@ it cannot claim something the code does not do.
 | OLS Canada p | 0.019 | 0.019064 |
 | OLS US coef | -1.046 | -1.045946 |
 | OLS US se | 0.237 | 0.236778 |
-| OLS US p | 0.0 | 1e-05 |
+| OLS US p | 0 | 1e-05 |
 | OLS EU coef | -0.535 | -0.534764 |
 | OLS EU se | 0.395 | 0.394871 |
 | OLS EU p | 0.176 | 0.175648 |
@@ -37,7 +37,7 @@ it cannot claim something the code does not do.
 | FE Canada p | 0.001 | 0.001152 |
 | FE US coef | -1.251 | -1.251463 |
 | FE US se | 0.221 | 0.221224 |
-| FE US p | 0.0 | 0.0 |
+| FE US p | 0 | 0.0 |
 | FE EU coef | -0.436 | -0.435873 |
 | FE EU se | 0.175 | 0.175255 |
 | FE EU p | 0.016 | 0.015678 |
@@ -50,3 +50,4 @@ it cannot claim something the code does not do.
 | FE Constant coef | 6.149 | 6.149418 |
 | FE Constant se | 3.842 | 3.841764 |
 | FE Constant p | 0.115 | 0.114702 |
+

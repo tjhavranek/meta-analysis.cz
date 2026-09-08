@@ -124,7 +124,7 @@ add("spec5_study_RoTwithLC",  b5["(Intercept)"] + b5["micro"])
 # vcov by the delta method; Stata's `lincom _cons + micro` after the identical ivreg2 command
 # returns exactly these numbers (0.004921758319, se 0.002405613813, p = 0.0408). Printed as a
 # diagnostic so anyone re-running can see both the level and the significance level the cell
-# would carry. See REPLICATION.md, "The one miss".
+# would carry. See REPLICATION_STATUS.md, "The one miss".
 L4  <- c(1, 1, 0, 0)                       # (Intercept), micro, microse, LC_not_bind
 est4 <- unname(b4["(Intercept)"] + b4["micro"])
 se4  <- sqrt(as.numeric(t(L4) %*% vcov(m4) %*% L4))

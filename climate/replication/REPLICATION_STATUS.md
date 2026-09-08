@@ -3,11 +3,11 @@
 Generated when the package was published, from its own targets and its own output, so
 it cannot claim something the code does not do.
 
-**31 of 31 numbers from the paper are reproduced.**
+**31 of the 31 numbers this paper prints for these tables are reproduced.**
 
 ## Reproduced (31)
 
-| number in the paper | paper | this package |
+| number in the paper | paper | this code |
 |---|---|---|
 | T1 OLS 1/SE coef | 1.276 | 1.275823 |
 | T1 OLS 1/SE se | 0.316 | 0.315583 |
@@ -17,7 +17,7 @@ it cannot claim something the code does not do.
 | T1 OLS SE se | 0.086 | 0.086334 |
 | T1 OLS constant coef | 3.054 | 3.053939 |
 | T1 OLS constant se | 0.232 | 0.232364 |
-| T1 OLS N | 48 | 48.0 |
+| T1 OLS N | 48 | 48 |
 | T1 OLS R2 | 0.728 | 0.728097 |
 | T1 FE 1/SE coef | 2.087 | 2.087063 |
 | T1 FE 1/SE se | 0.086 | 0.086047 |
@@ -27,7 +27,7 @@ it cannot claim something the code does not do.
 | T1 FE SE se | 0.017 | 0.017364 |
 | T1 FE constant coef | 2.353 | 2.353343 |
 | T1 FE constant se | 0.068 | 0.068041 |
-| T1 FE N | 48 | 48.0 |
+| T1 FE N | 48 | 48 |
 | T1 FE R2 | 0.647 | 0.646506 |
 | T1 ME 1/SE coef | 1.617 | 1.617142 |
 | T1 ME 1/SE se | 0.19 | 0.189546 |
@@ -39,4 +39,5 @@ it cannot claim something the code does not do.
 | T1 ME constant se | 0.369 | 0.368766 |
 | text uncorrected average estimate | 3.27 | 3.274375 |
 | text lowest estimate | 0.7 | 0.7 |
-| text n estimates <= average true effect (1.6) | 5 | 5.0 |
+| text n estimates <= average true effect (1.6) | 5 | 5 |
+

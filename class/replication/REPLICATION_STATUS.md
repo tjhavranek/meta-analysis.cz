@@ -3,28 +3,23 @@
 Generated when the package was published, from its own targets and its own output, so
 it cannot claim something the code does not do.
 
-**38 of 38 numbers from the paper are reproduced.**
+**38 of the 39 numbers this paper prints for these tables are reproduced.**
 
-Counting every number this file lists, the paper prints **39**, of which this package does not produce **0**.
+## Not matching the printed paper (1)
 
-## Recorded but not scored (1)
+The reason for each follows the table.
 
-Numbers that cannot be a pass or a fail. `discrepancy`: computed correctly and
-disagreeing with the printed paper. `approximation`: rebuilt from inputs the paper
-printed rounded, so it lands near but cannot land exactly. `not_reproduced`: quoted
-from the paper, not computed here. `stochastic`: depends on a random draw.
+| number in the paper | paper | this code |
+|---|---|---|
+| STAR preferred estimates with \|t\| above Lang's 5.48 threshold (paper: one) | 1 | 2 |
 
-| number | paper | this package | kind |
-|---|---|---|---|
-| STAR preferred estimates with |t| above Lang's 5.48 threshold (paper: one) | 1 | 2.0 | discrepancy |
-
-**STAR preferred estimates with |t| above Lang's 5.48 threshold (paper: one)** -- The published data give two, not one: |t| = 5.538 and 5.500 among the twenty preferred STAR estimates. Both sit within 1% of the 5.48 threshold, so the paper's 'one' and this 'two' differ by a single borderline observation, the kind of gap a slightly different t (recomputed from rounded published effects and standard errors, say) would produce. The count of twenty matches exactly. Recorded rather than scored, because the code is doing what the sentence describes.
+The conclusion says that one of the twenty preferred STAR estimates exceeds the 5.48 t-statistic threshold of Lang (2025). The count of twenty is exact. Two exceed the threshold, at |t| = 5.538 and 5.500, both within 1 percent of it, so a t recomputed from rounded published effects and standard errors would move one across. The printed value is left as published.
 
 ## Reproduced (38)
 
-| number in the paper | paper | this package |
+| number in the paper | paper | this code |
 |---|---|---|
-| Base N after drop if effect_true==0 | 2434 | 2434.0 |
+| Base N after drop if effect_true==0 | 2434 | 2434 |
 | OLS: Publication bias (coef) | 0.0331 | 0.033136 |
 | OLS: Publication bias (se) | 0.0944 | 0.094438 |
 | OLS: Effect beyond bias / constant (coef) | -0.297 | -0.296615 |
@@ -48,17 +43,18 @@ from the paper, not computed here. `stochastic`: depends on a random draw.
 | Precision: Effect beyond bias / constant (se) | 0.0577 | 0.057701 |
 | Headline B4 [STAR experiment]: Effect beyond bias (coef) | -2.407 | -2.407316 |
 | Headline B4 [STAR experiment]: Effect beyond bias (se) | 0.479 | 0.478827 |
-| Headline B4 [STAR experiment]: N | 56 | 56.0 |
+| Headline B4 [STAR experiment]: N | 56 | 56 |
 | Headline B4 [Regression discontinuity]: Effect beyond bias (coef) | -0.716 | -0.715716 |
 | Headline B4 [Regression discontinuity]: Effect beyond bias (se) | 0.134 | 0.134426 |
-| Headline B4 [Regression discontinuity]: N | 436 | 436.0 |
+| Headline B4 [Regression discontinuity]: N | 436 | 436 |
 | Headline B4 [Instrumental variable]: Effect beyond bias (coef) | -0.272 | -0.271587 |
 | Headline B4 [Instrumental variable]: Effect beyond bias (se) | 0.227 | 0.227292 |
-| Headline B4 [Instrumental variable]: N | 845 | 845.0 |
+| Headline B4 [Instrumental variable]: N | 845 | 845 |
 | Headline B4 [Fixed effects]: Effect beyond bias (coef) | -0.18 | -0.179582 |
 | Headline B4 [Fixed effects]: Effect beyond bias (se) | 0.114 | 0.113948 |
-| Headline B4 [Fixed effects]: N | 669 | 669.0 |
+| Headline B4 [Fixed effects]: N | 669 | 669 |
 | Headline B4 [OLS]: Effect beyond bias (coef) | 0.228 | 0.228383 |
 | Headline B4 [OLS]: Effect beyond bias (se) | 0.153 | 0.153127 |
-| Headline B4 [OLS]: N | 433 | 433.0 |
-| STAR preferred estimates in the sample (paper: twenty) | 20 | 20.0 |
+| Headline B4 [OLS]: N | 433 | 433 |
+| STAR preferred estimates in the sample (paper: twenty) | 20 | 20 |
+

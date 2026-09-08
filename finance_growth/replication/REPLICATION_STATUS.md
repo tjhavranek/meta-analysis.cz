@@ -3,18 +3,20 @@
 Generated when the package was published, from its own targets and its own output, so
 it cannot claim something the code does not do.
 
-**14 of 16 numbers from the paper are reproduced.**
+**14 of the 16 numbers this paper prints for these tables are reproduced.**
 
-## Not reproduced (2)
+## Not matching the printed paper (2)
 
-| number in the paper | paper | this package |
+The reason for each follows the table.
+
+| number in the paper | paper | this code |
 |---|---|---|
 | T1 fixed-effect CI lower | 0.088 | 0.088807 |
 | T2 Constant SE | 0.422 | 0.42258 |
 
 ## Reproduced (14)
 
-| number in the paper | paper | this package |
+| number in the paper | paper | this code |
 |---|---|---|
 | T1 simple (arithmetic) mean pcc | 0.15 | 0.148398 |
 | T1 simple mean CI lower | 0.1 | 0.097237 |
@@ -28,5 +30,6 @@ it cannot claim something the code does not do.
 | T2 Effect SE | 0.018 | 0.017578 |
 | T2 Constant (bias) | -0.353 | -0.353306 |
 | T2 Within-study correlation | 0.46 | 0.460048 |
-| T2 Observations | 1334 | 1334.0 |
-| T2 Studies | 67 | 67.0 |
+| T2 Observations | 1334 | 1334 |
+| T2 Studies | 67 | 67 |
+

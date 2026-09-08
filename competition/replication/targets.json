@@ -850,7 +850,7 @@
   "printed": 0.0099,
   "digits": 4,
   "kind": "discrepancy",
-  "note": "The paper prints 0.0099; this package computes 0.0099988, following the author's own do-file line for the same quantity (the mean of the study-level medians). 0.0099988 rounds to 0.0100, so the two disagree at the paper's own fourth decimal. It is not a truncation convention: across this paper's 145 other reproduced numbers, 77 match under rounding and would fail under truncation, so the table rounds. The printed value is left exactly as published. The label's stale '(NOT reproduced)' is part of the frozen oracle and is deliberately not edited."
+  "note": "The paper prints 0.0099. This code follows the authors' own line for the same quantity and gives 0.0099988, which rounds to 0.0100. It is not a truncation convention: across this paper's other reproduced numbers, 77 match under rounding and would fail under truncation."
  },
  {
   "label": "T2 FE (unweighted, all) SEPCC coef",

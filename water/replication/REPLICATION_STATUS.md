@@ -3,17 +3,19 @@
 Generated when the package was published, from its own targets and its own output, so
 it cannot claim something the code does not do.
 
-**38 of 39 numbers from the paper are reproduced.**
+**38 of the 39 numbers this paper prints for these tables are reproduced.**
 
-## Not reproduced (1)
+## Not matching the printed paper (1)
 
-| number in the paper | paper | this package |
+The reason for each follows the table.
+
+| number in the paper | paper | this code |
 |---|---|---|
 | PanelA_PrecOLS_const_se | 0.012 | 0.011209 |
 
 ## Reproduced (38)
 
-| number in the paper | paper | this package |
+| number in the paper | paper | this code |
 |---|---|---|
 | PanelA_UnwOLS_coef | 0.676 | 0.67604 |
 | PanelA_UnwOLS_se | 0.305 | 0.304787 |
@@ -34,7 +36,7 @@ it cannot claim something the code does not do.
 | PanelA_PrecOLS_const | 0.103 | 0.103232 |
 | PanelA_PrecFE_coef | 1.514 | 1.514408 |
 | PanelA_PrecFE_se | 1.176 | 1.175898 |
-| PanelA_N | 307 | 307.0 |
+| PanelA_N | 307 | 307 |
 | PanelB_UnwOLS_coef | 0.29 | 0.290261 |
 | PanelB_UnwOLS_se | 0.307 | 0.307181 |
 | PanelB_UnwOLS_const | 0.223 | 0.222985 |
@@ -43,7 +45,7 @@ it cannot claim something the code does not do.
 | PanelB_UnwFE_se | 0.288 | 0.288316 |
 | PanelB_UnwFE_const | 0.224 | 0.223718 |
 | PanelB_UnwFE_const_se | 0.0445 | 0.044465 |
-| PanelB_N | 142 | 142.0 |
+| PanelB_N | 142 | 142 |
 | PanelC_UnwOLS_coef | 1.053 | 1.052901 |
 | PanelC_UnwOLS_se | 0.252 | 0.252388 |
 | PanelC_UnwOLS_const | 0.153 | 0.153371 |
@@ -52,4 +54,5 @@ it cannot claim something the code does not do.
 | PanelC_UnwFE_se | 0.437 | 0.437246 |
 | PanelC_UnwFE_const | 0.153 | 0.153253 |
 | PanelC_UnwFE_const_se | 0.0421 | 0.04208 |
-| PanelC_N | 165 | 165.0 |
+| PanelC_N | 165 | 165 |
+

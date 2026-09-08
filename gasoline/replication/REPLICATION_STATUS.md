@@ -3,11 +3,11 @@
 Generated when the package was published, from its own targets and its own output, so
 it cannot claim something the code does not do.
 
-**151 of 155 numbers from the paper are reproduced.**
+**151 of the 155 numbers this paper prints for these tables are reproduced.**
 
-## Not reproduced (4)
+## Not produced by this code (4)
 
-| number in the paper | paper | this package |
+| number in the paper | paper | this code |
 |---|---|---|
 | Headline paper-text: short-run elasticity corrected for publication bias (paper says 0.1) | 0.1 | not computed |
 | T5 weighted mean, long run whole sample | 0.614 | not computed |
@@ -16,7 +16,7 @@ it cannot claim something the code does not do.
 
 ## Reproduced (151)
 
-| number in the paper | paper | this package |
+| number in the paper | paper | this code |
 |---|---|---|
 | T6 c1 1/se coef | 0.257 | 0.256785 |
 | T6 c1 1/se t | 1.39 | 1.393905 |
@@ -150,15 +150,15 @@ it cannot claim something the code does not do.
 | T6 c2 Constant t | 1.96 | 1.961766 |
 | T6 c3 Constant coef | 4.937 | 4.937194 |
 | T6 c3 Constant t | 2.19 | 2.188402 |
-| T6 c1 Observations | 692 | 692.0 |
-| T6 c2 Observations | 692 | 692.0 |
-| T6 c3 Observations | 692 | 692.0 |
+| T6 c1 Observations | 692 | 692 |
+| T6 c2 Observations | 692 | 692 |
+| T6 c3 Observations | 692 | 692 |
 | T4 LongRun VehicleStock 1/se coef | 0.234 | 0.233982 |
 | T4 LongRun VehicleStock 1/se t | 9.76 | 9.758635 |
-| T4 LongRun VehicleStock Observations | 346 | 346.0 |
+| T4 LongRun VehicleStock Observations | 346 | 346 |
 | T4 LongRun NoVehicleStock 1/se coef | 0.644 | 0.643906 |
 | T4 LongRun NoVehicleStock 1/se t | 17.38 | 17.380483 |
-| T4 LongRun NoVehicleStock Observations | 346 | 346.0 |
+| T4 LongRun NoVehicleStock Observations | 346 | 346 |
 | Headline paper-text: long-run elasticity corrected for publication bias (paper says 0.23) | 0.23 | 0.233982 |
 | T5 sample mean, long run whole sample (the abstract's 0.66) | 0.663 | 0.66287 |
 | T5 sample mean, long run vehicle stock | 0.465 | 0.465089 |
@@ -169,3 +169,4 @@ it cannot claim something the code does not do.
 | T2 long run no vehicle stock, sd | 0.519 | 0.51946 |
 | T2 long run no vehicle stock, min | -0.256 | -0.256 |
 | T2 long run no vehicle stock, max | 2.466 | 2.466 |
+

@@ -3,7 +3,7 @@
 #
 # Target table: Table 1 of the paper's own Web Appendix ("Funnel asymmetry
 # tests indicate no publication bias"), columns Baseline, Study, Precision,
-# and Median. The Instrument column is out of scope -- see REPLICATION.md.
+# and Median. The Instrument column is out of scope.
 #
 # Source do-file (habit.zip:habit.do) lines 1-202 reproduced with the site's
 # stata_compat.R wrappers. Data read only from the file the site publishes.
@@ -60,7 +60,7 @@ nd <- st_keep_if(d, d$dsge == 0)                      # "if dsge==0"
 ## cleanly: Stata's xtreg,fe reported _cons is the (weighted) grand mean of y
 ## minus the within slope times the (weighted) grand mean of x. Building that
 ## with plain arithmetic (weighted group/grand means) and then handing the
-## already-demeaned variables to the SANCTIONED st_regress() wrapper --
+## already-demeaned variables to the shared st_regress() wrapper --
 ## rather than calling feols()/lm() directly -- recovers it. st_regress()
 ## uses "feist DEFAULT ssc", the same convention st_xtreg_fe() itself notes
 ## for xtreg,fe, so this does not smuggle in a different estimator
@@ -121,7 +121,7 @@ add("Precision N", nobs(m_prec))
 ## `small` estimates sigma^2 as RSS/N rather than RSS/(N-1). Until 2026-09-08 the shared
 ## wrapper returned the RSS/(N-1) variance here and these two SEs missed by about 1.3%; the
 ## denominator is now settled in stata_compat.R against Stata 15.1's own ivreg2 output. See
-## REPLICATION.md, "The Median standard errors, and the wrapper fix behind them".
+## REPLICATION_STATUS.md, "The Median standard errors, and the wrapper fix behind them".
 med <- st_keep_if(d, d$id == 1 & d$dsge == 0)
 m_med <- st_ivreg2(habit_med ~ se_med, data = med, cluster = NULL)
 cf <- st_coefs(m_med, z = TRUE)

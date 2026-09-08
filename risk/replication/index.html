@@ -5,7 +5,22 @@
 <title>Replication in R: Relative Risk Aversion: A Meta-Analysis</title>
 <meta name="robots" content="noindex" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
+<link rel="canonical" href="https://meta-analysis.cz/risk/replication/" />
 <link href="/style.css" rel="stylesheet" type="text/css" />
+<script type="application/ld+json">
+{
+ "@context": "https://schema.org",
+ "@type": "SoftwareSourceCode",
+ "@id": "https://meta-analysis.cz/risk/replication/#code",
+ "url": "https://meta-analysis.cz/risk/replication/",
+ "name": "Replication in R: Relative Risk Aversion: A Meta-Analysis",
+ "description": "R code that regenerates the numbers reported in the paper from the dataset published on meta-analysis.cz.",
+ "programmingLanguage": "R",
+ "codeRepository": "https://meta-analysis.cz/risk/replication/",
+ "license": "https://creativecommons.org/licenses/by/4.0/",
+ "isPartOf": {"@type": "WebPage", "@id": "https://meta-analysis.cz/risk/"}
+}
+</script>
 <style>
 table.repl { border-collapse: collapse; margin: 1em 0; font-size: 0.92em; }
 table.repl th, table.repl td { border-bottom: 1px solid #ddd; padding: 4px 14px 4px 0; text-align: left; }
@@ -37,7 +52,7 @@ p.repl-note { font-size: 0.9em; color: #444; margin: 0.5em 0; }
 			<h1 class="title">Replication in R</h1>
 			<div class="entry">
 <p>R code that regenerates the numbers this paper reports, starting from the dataset published on
-this site. It reproduces <b>47 of 47</b>. A further 31 numbers are recorded below that can be neither a pass nor a fail.</p>
+this site. It reproduces <b>47 of 54</b>. The 7 that do not match are listed below.</p>
 
 <h2>Run it</h2>
 <pre class="cmd">Rscript run.R</pre>
@@ -56,57 +71,28 @@ printed digits. Those conventions are stated once, in
 <code>xtreg</code>'s treatment of singleton groups, and the restricted-ML default of
 <code>xtmixed</code>, which is not the default of the <code>mixed</code> command that replaced it.</p>
 
-
-<h2>Recorded, not scored</h2>
-<p>Numbers that can be neither a pass nor a fail. <em>discrepancy</em>: computed correctly here and disagreeing with the printed paper. <em>approximation</em>: rebuilt from figures the paper prints rounded, so it lands close but cannot land exactly. <em>not reproduced</em>: quoted from the paper, not computed here. <em>stochastic</em>: depends on a random draw.</p>
+<h2>Numbers that do not match the printed paper</h2>
+<p>The reason for each is given below the table.</p>
 <table class="repl">
-<tr><th>number</th><th>paper</th><th>this code</th><th>kind</th></tr>
-<tr><td>A_WLS_prec_ci_lo</td><td>0.956</td><td>-</td><td>stochastic</td></tr>
-<tr><td>A_WLS_prec_ci_hi</td><td>2.577</td><td>-</td><td>stochastic</td></tr>
-<tr><td>A_WLS_cons_ci_lo</td><td>0.725</td><td>-</td><td>stochastic</td></tr>
-<tr><td>A_WLS_cons_ci_hi</td><td>2.13</td><td>-</td><td>stochastic</td></tr>
-<tr><td>A_Study_prec_ci_lo</td><td>1.251</td><td>-</td><td>stochastic</td></tr>
-<tr><td>A_Study_prec_ci_hi</td><td>4.9</td><td>-</td><td>stochastic</td></tr>
-<tr><td>A_Study_cons_ci_lo</td><td>0.673</td><td>-</td><td>stochastic</td></tr>
-<tr><td>A_Study_cons_ci_hi</td><td>2.476</td><td>-</td><td>stochastic</td></tr>
-<tr><td>B_WLS_prec_ci_lo</td><td>0.383</td><td>-</td><td>stochastic</td></tr>
-<tr><td>B_WLS_prec_ci_hi</td><td>2.506</td><td>-</td><td>stochastic</td></tr>
-<tr><td>B_WLS_cons_ci_lo</td><td>0.654</td><td>-</td><td>stochastic</td></tr>
-<tr><td>B_WLS_cons_ci_hi</td><td>2.059</td><td>-</td><td>stochastic</td></tr>
-<tr><td>B_Study_prec_ci_lo</td><td>2.007</td><td>-</td><td>stochastic</td></tr>
-<tr><td>B_Study_prec_ci_hi</td><td>5.293</td><td>-</td><td>stochastic</td></tr>
-<tr><td>B_Study_cons_ci_lo</td><td>0.351</td><td>-</td><td>stochastic</td></tr>
-<tr><td>B_Study_cons_ci_hi</td><td>1.464</td><td>-</td><td>stochastic</td></tr>
-<tr><td>C_WLS_prec_coef</td><td>1.859</td><td>1.853297</td><td>discrepancy</td></tr>
-<tr><td>C_WLS_cons_coef</td><td>2.39</td><td>2.390683</td><td>discrepancy</td></tr>
-<tr><td>C_WLS_prec_ci_lo</td><td>0.05</td><td>-</td><td>stochastic</td></tr>
-<tr><td>C_WLS_prec_ci_hi</td><td>2.895</td><td>-</td><td>stochastic</td></tr>
-<tr><td>C_WLS_cons_ci_lo</td><td>0.812</td><td>-</td><td>stochastic</td></tr>
-<tr><td>C_WLS_cons_ci_hi</td><td>4.006</td><td>-</td><td>stochastic</td></tr>
-<tr><td>C_FE_prec_coef</td><td>3.476</td><td>3.471143</td><td>discrepancy</td></tr>
-<tr><td>C_BE_prec_coef</td><td>0.817</td><td>0.804429</td><td>discrepancy</td></tr>
-<tr><td>C_BE_prec_se</td><td>3.061</td><td>3.059787</td><td>discrepancy</td></tr>
-<tr><td>C_BE_cons_coef</td><td>3.223</td><td>3.223592</td><td>discrepancy</td></tr>
-<tr><td>C_BE_cons_se</td><td>0.423</td><td>0.422384</td><td>discrepancy</td></tr>
-<tr><td>C_Study_prec_ci_lo</td><td>-1.197</td><td>-</td><td>stochastic</td></tr>
-<tr><td>C_Study_prec_ci_hi</td><td>5.548</td><td>-</td><td>stochastic</td></tr>
-<tr><td>C_Study_cons_ci_lo</td><td>1.062</td><td>-</td><td>stochastic</td></tr>
-<tr><td>C_Study_cons_ci_hi</td><td>4.89</td><td>-</td><td>stochastic</td></tr>
+<tr><th>number in the paper</th><th>paper</th><th>this code</th></tr>
+<tr><td>C_WLS_prec_coef</td><td>1.859</td><td>1.853297</td></tr>
+<tr><td>C_WLS_cons_coef</td><td>2.39</td><td>2.390683</td></tr>
+<tr><td>C_FE_prec_coef</td><td>3.476</td><td>3.471143</td></tr>
+<tr><td>C_BE_prec_coef</td><td>0.817</td><td>0.804429</td></tr>
+<tr><td>C_BE_prec_se</td><td>3.061</td><td>3.059787</td></tr>
+<tr><td>C_BE_cons_coef</td><td>3.223</td><td>3.223592</td></tr>
+<tr><td>C_BE_cons_se</td><td>0.423</td><td>0.422384</td></tr>
 </table>
-<p class="repl-note"><b>C_WLS_prec_coef.</b> Verified against Stata 15.1 running the author's own command on the site's published risk.csv: regress tstat_win10 prec_win10 if econjournal==0  -&gt;  _cons gives 1.853297, which is what this package computes to seven digits. The paper prints 1.859. The sample is not in question, the regression is on 431 observations from 34 studies, exactly the paper's own Panel C N. So the package reproduces the author's code and the printed cell differs from it, by more than rounding. All seven Panel C cells show the same pattern. The printed value is left exactly as published.</p>
-<p class="repl-note"><b>C_WLS_cons_coef.</b> Verified against Stata 15.1 running the author's own command on the site's published risk.csv: the same regression's prec_win10 coefficient gives 2.390683, which is what this package computes to seven digits. The paper prints 2.39. The sample is not in question, the regression is on 431 observations from 34 studies, exactly the paper's own Panel C N. So the package reproduces the author's code and the printed cell differs from it, by more than rounding. All seven Panel C cells show the same pattern. The printed value is left exactly as published.</p>
-<p class="repl-note"><b>C_FE_prec_coef.</b> Verified against Stata 15.1 running the author's own command on the site's published risk.csv: xtreg ... , fe  -&gt;  _cons gives 3.471143, which is what this package computes to seven digits. The paper prints 3.476. The sample is not in question, the regression is on 431 observations from 34 studies, exactly the paper's own Panel C N. So the package reproduces the author's code and the printed cell differs from it, by more than rounding. All seven Panel C cells show the same pattern. The printed value is left exactly as published.</p>
-<p class="repl-note"><b>C_BE_prec_coef.</b> Verified against Stata 15.1 running the author's own command on the site's published risk.csv: xtreg tstat_win10 prec_win10 if econjournal==0, be  -&gt;  _cons gives 0.8044289, which is what this package computes to seven digits. The paper prints 0.817. The sample is not in question, the regression is on 431 observations from 34 studies, exactly the paper's own Panel C N. So the package reproduces the author's code and the printed cell differs from it, by more than rounding. All seven Panel C cells show the same pattern. The printed value is left exactly as published.</p>
-<p class="repl-note"><b>C_BE_prec_se.</b> Verified against Stata 15.1 running the author's own command on the site's published risk.csv: the same regression's _cons standard error gives 3.059787, which is what this package computes to seven digits. The paper prints 3.061. The sample is not in question, the regression is on 431 observations from 34 studies, exactly the paper's own Panel C N. So the package reproduces the author's code and the printed cell differs from it, by more than rounding. All seven Panel C cells show the same pattern. The printed value is left exactly as published.</p>
-<p class="repl-note"><b>C_BE_cons_coef.</b> Verified against Stata 15.1 running the author's own command on the site's published risk.csv: the same regression's prec_win10 coefficient gives 3.223592, which is what this package computes to seven digits. The paper prints 3.223. The sample is not in question, the regression is on 431 observations from 34 studies, exactly the paper's own Panel C N. So the package reproduces the author's code and the printed cell differs from it, by more than rounding. All seven Panel C cells show the same pattern. The printed value is left exactly as published.</p>
-<p class="repl-note"><b>C_BE_cons_se.</b> Verified against Stata 15.1 running the author's own command on the site's published risk.csv: the same regression's prec_win10 standard error gives 0.4223837, which is what this package computes to seven digits. The paper prints 0.423. The sample is not in question, the regression is on 431 observations from 34 studies, exactly the paper's own Panel C N. So the package reproduces the author's code and the printed cell differs from it, by more than rounding. All seven Panel C cells show the same pattern. The printed value is left exactly as published.</p>
+<p class="repl-note">Running the authors' own commands in Stata, on the dataset published here, returns exactly what this code computes, to seven digits, on 431 observations from 34 studies, which is the paper's own Panel C sample. The printed Panel C differs from that by more than rounding. The printed values are left as published.</p>
+
+<p>24 further numbers depend on a random draw, so neither a match nor a mismatch is meaningful.</p>
 
 <h2>Files</h2>
 <ul>
 	<li><a href="run.R">run.R</a>, the replication</li>
 	<li><a href="stata_compat.R">stata_compat.R</a>, the Stata conventions</li>
-	<li><a href="targets.json">targets.json</a>, the numbers as printed in the paper, recorded
-	before the code was written</li>
+	<li><a href="targets.json">targets.json</a>, the numbers as printed in the paper, taken
+	from the paper rather than from the code</li>
 	<li><a href="results.json">results.json</a>, the numbers this code produced</li>
 	<li><a href="REPLICATION_STATUS.md">REPLICATION_STATUS.md</a>, the full comparison, generated
 	from this package's own output</li>

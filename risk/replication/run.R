@@ -6,17 +6,17 @@
 # C finance) x four columns (WLS, FE, BE, Study).
 #
 # Code source: risk.zip:risk/rra.do, the funnel-asymmetry block. (The author's fuller working
-# copy of the same file, Papers/43_Risk_aversion/Code/rra.do, carries the identical block at
+# copy of the same do-file carries the identical block at
 # lines 360-431; the site's cut-down version is not missing any Table 2 code path.)
 #
 # Data source: the site-published risk.csv. It is numerically identical to the author's own
 # post-filter working file Code/rra_data.dta (1021 x 61, every numeric column equal to within
 # 1e-10), so nothing about the data is in question here.
 #
-# ORACLE NOTE. Every number below was cross-checked against Stata 15.1 running the author's own
+# NOTE ON THE TARGETS. Every number below was cross-checked against Stata 15.1 running the author's own
 # commands on the author's own risk.dta. R and Stata agree to every digit Stata prints, in all
 # 12 regressions. Where a cell disagrees with the paper, it is the paper that disagrees with the
-# author's code -- see REPLICATION.md, section "Panel C".
+# author's code, section "Panel C".
 
 if (file.exists("stata_compat.R")) source("stata_compat.R") else
   source("https://meta-analysis.cz/risk/replication/stata_compat.R")

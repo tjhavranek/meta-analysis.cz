@@ -85,7 +85,7 @@ emit("T1 fixed-effect CI upper", tanh(as.numeric(fe$ci.ub)))
 ## limit lands on 0.09499966 and prints as 0.095; the lower limit is 0.08880674, which
 ## rounds to 0.089, not 0.088. Stata's own `metan ft seft, fixed` on this same file
 ## returns 0.08880674 too, and so does the author's private final_data.dta, so the gap
-## is not an R/Stata difference and not a data difference. See REPLICATION.md.
+## is not an R/Stata difference and not a data difference.
 
 re <- st_metan(d1$ft, d1$seft, random = TRUE)
 emit("T1 random-effects mean", tanh(as.numeric(re$b)))
@@ -116,7 +116,7 @@ emit("T2 Constant SE", fx["(Intercept)", "Std. Error"])
 ## KNOWN MISS. Table 2 prints the constant's standard error as 0.422; the model returns
 ## 0.4225801, which rounds to 0.423. Stata's `xtmixed tstat prec || idstudy:` returns
 ## 0.42258008 on this file to eight digits, so the R fit is the right one. See
-## REPLICATION.md.
+## REPLICATION_STATUS.md.
 
 vc <- as.data.frame(lme4::VarCorr(m2))
 icc <- vc$vcov[vc$grp == "idstudy"] / sum(vc$vcov)

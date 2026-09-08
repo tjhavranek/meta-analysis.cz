@@ -6,7 +6,7 @@
 # (negative-inverse-elasticity) transform of the raw estimates, per skill.do lines 16-51 and
 # 159-228. The BE, EK and SM columns of the printed table use estimators with no wrapper in
 # stata_compat.R (between-effects `xtreg ... be`, the Bom-Rachinger endogenous-kink method, and
-# the Andrews-Kasy selection model) and are out of scope -- see REPLICATION.md.
+# the Andrews-Kasy selection model) and are out of scope.
 
 if (file.exists("stata_compat.R")) source("stata_compat.R") else
   source("https://meta-analysis.cz/skill/replication/stata_compat.R")
@@ -135,7 +135,7 @@ run_panel("C", "natural_experiment")
 ##   (primary studies whose METHOD is IV, filter iv_method2==1), specifically the "Effect beyond
 ##   bias" row across all five estimators shown in the table (FE, BE, IV-meta-regression, EK,
 ##   SM). Of those five, only FE and IV-meta-regression have wrappers in stata_compat.R (BE, EK,
-##   SM do not -- see REPLICATION.md, same limitation as Table 1). Section I also states, a
+##   SM do not, same limitation as Table 1). Section I also states, a
 ##   paragraph earlier: "the publication bias corrected mean estimates are ... around -0.25 for
 ##   IV," and "Our preferred estimate of the mean elasticity is thus 4" = -1/(-0.25).
 ##

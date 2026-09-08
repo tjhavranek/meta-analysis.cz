@@ -2,7 +2,7 @@
 # Cost of Carbon" (Energy Economics, 2015), Table 3 (funnel-asymmetry / selective
 # reporting tests, "estimates with uncertainty" sample, dataset == 1, N = 267).
 #
-# Source: author's scc.do (see briefs_repl/scc.md). Uses ONLY the wrappers in
+# Source: author's scc.do (). Uses ONLY the wrappers in
 # stata_compat.R -- never feols/lm/rma/lmer/plm/ivreg/quantile directly.
 
 if (file.exists("stata_compat.R")) source("stata_compat.R") else

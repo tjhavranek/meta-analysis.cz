@@ -3,18 +3,18 @@
 Generated when the package was published, from its own targets and its own output, so
 it cannot claim something the code does not do.
 
-**51 of 53 numbers from the paper are reproduced.**
+**51 of the 53 numbers this paper prints for these tables are reproduced.**
 
-## Not reproduced (2)
+## Not produced by this code (2)
 
-| number in the paper | paper | this package |
+| number in the paper | paper | this code |
 |---|---|---|
 | Headline (abstract 0.3-0.4): corrected elasticity, micro asset holders, CI low bound rounds to 0.3 | 0.3 | not computed |
 | Headline (abstract 0.3-0.4): corrected elasticity, micro asset holders, CI high bound rounds to 0.4 | 0.4 | not computed |
 
 ## Reproduced (51)
 
-| number in the paper | paper | this package |
+| number in the paper | paper | this code |
 |---|---|---|
 | T2 col1 SE coef | 2.465 | 2.465089 |
 | T2 col1 SE se | 0.394 | 0.39423 |
@@ -23,8 +23,8 @@ it cannot claim something the code does not do.
 | T2 col1 Asset coef | 0.136 | 0.135878 |
 | T2 col1 Asset se | 0.0303 | 0.030341 |
 | T2 col1 Constant (EIS0) | 0.0237 | 0.023702 |
-| T2 col1 N | 2735 | 2735.0 |
-| T2 col1 Studies | 169 | 169.0 |
+| T2 col1 N | 2735 | 2735 |
+| T2 col1 Studies | 169 | 169 |
 | T2 col2 SE coef | 1.926 | 1.9263 |
 | T2 col2 SE se | 0.251 | 0.25107 |
 | T2 col2 Micro coef | 0.209 | 0.208765 |
@@ -61,9 +61,10 @@ it cannot claim something the code does not do.
 | T2 col7 Micro se | 0.106 | 0.105804 |
 | T2 col7 Asset coef | 0.316 | 0.316187 |
 | T2 col7 Asset se | 0.0586 | 0.058562 |
-| T2 col7 N | 2735 | 2735.0 |
-| T2 col7 Studies | 169 | 169.0 |
+| T2 col7 N | 2735 | 2735 |
+| T2 col7 Studies | 169 | 169 |
 | Corrected elasticity, micro (col1) | 0.22 | 0.223767 |
 | Corrected elasticity, micro asset holders (col1) | 0.36 | 0.359645 |
 | 95% CI lower, micro asset holders (col1) | 0.33 | 0.327613 |
 | 95% CI upper, micro asset holders (col1) | 0.39 | 0.391678 |
+

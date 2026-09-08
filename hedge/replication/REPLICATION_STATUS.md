@@ -3,33 +3,26 @@
 Generated when the package was published, from its own targets and its own output, so
 it cannot claim something the code does not do.
 
-**85 of 85 numbers from the paper are reproduced.**
+**85 of the 95 numbers this paper prints for these tables are reproduced.**
 
-Counting every number this file lists, the paper prints **95**, of which this package does not produce **10**.
+## Not produced by this code (10)
 
-## Recorded but not scored (10)
-
-Numbers that cannot be a pass or a fail. `discrepancy`: computed correctly and
-disagreeing with the printed paper. `approximation`: rebuilt from inputs the paper
-printed rounded, so it lands near but cannot land exactly. `not_reproduced`: quoted
-from the paper, not computed here. `stochastic`: depends on a random draw.
-
-| number | paper | this package | kind |
-|---|---|---|---|
-| T2_PanelB_Top10_kappa_PAPER_VALUE_NOT_REPRODUCED | 0.31 | 0.31 | not_reproduced |
-| T2_PanelB_WAAP_kappa_PAPER_VALUE_NOT_REPRODUCED | 0.325 | 0.325 | not_reproduced |
-| T2_PanelB_Stem_kappa_PAPER_VALUE_NOT_REPRODUCED | 0.355 | 0.355 | not_reproduced |
-| T2_PanelB_Kinked_kappa_PAPER_VALUE_NOT_REPRODUCED | 0.32 | 0.32 | not_reproduced |
-| T2_PanelB_Selection_kappa_PAPER_VALUE_NOT_REPRODUCED | 0.274 | 0.274 | not_reproduced |
-| T2_PanelB_puniform_kappa_PAPER_VALUE_NOT_REPRODUCED | 0.386 | 0.386 | not_reproduced |
-| T2_all12_min | 0.274 | 0.274 | not_reproduced |
-| T2_all12_max | 0.386 | 0.386 | not_reproduced |
-| T2_all12_mean | 0.335 | 0.335471 | not_reproduced |
-| T2_all12_median | 0.338 | 0.337646 | not_reproduced |
+| number in the paper | paper | this code |
+|---|---|---|
+| T2_PanelB_Top10_kappa_PAPER_VALUE_NOT_REPRODUCED | 0.31 | not computed |
+| T2_PanelB_WAAP_kappa_PAPER_VALUE_NOT_REPRODUCED | 0.325 | not computed |
+| T2_PanelB_Stem_kappa_PAPER_VALUE_NOT_REPRODUCED | 0.355 | not computed |
+| T2_PanelB_Kinked_kappa_PAPER_VALUE_NOT_REPRODUCED | 0.32 | not computed |
+| T2_PanelB_Selection_kappa_PAPER_VALUE_NOT_REPRODUCED | 0.274 | not computed |
+| T2_PanelB_puniform_kappa_PAPER_VALUE_NOT_REPRODUCED | 0.386 | not computed |
+| T2_all12_min | 0.274 | not computed |
+| T2_all12_max | 0.386 | not computed |
+| T2_all12_mean | 0.335 | not computed |
+| T2_all12_median | 0.338 | not computed |
 
 ## Reproduced (85)
 
-| number in the paper | paper | this package |
+| number in the paper | paper | this code |
 |---|---|---|
 | T4_P1_OLS_lambda | -0.456 | -0.455724 |
 | T4_P1_OLS_lambda_se | 0.488 | 0.488355 |
@@ -56,8 +49,8 @@ from the paper, not computed here. `stochastic`: depends on a random draw.
 | T4_P1_wNOBS_lambda_se | 0.249 | 0.249498 |
 | T4_P1_wNOBS_kappa | 0.482 | 0.482414 |
 | T4_P1_wNOBS_kappa_se | 0.0931 | 0.093105 |
-| T4_P1_studies | 18 | 18.0 |
-| T4_P1_obs | 167 | 167.0 |
+| T4_P1_studies | 18 | 18 |
+| T4_P1_obs | 167 | 167 |
 | T4_P2_OLS_lambda | -0.142 | -0.142035 |
 | T4_P2_OLS_lambda_se | 0.137 | 0.137135 |
 | T4_P2_OLS_kappa | 0.326 | 0.325769 |
@@ -83,8 +76,8 @@ from the paper, not computed here. `stochastic`: depends on a random draw.
 | T4_P2_wNOBS_lambda_se | 0.265 | 0.265495 |
 | T4_P2_wNOBS_kappa | 0.222 | 0.222062 |
 | T4_P2_wNOBS_kappa_se | 0.0641 | 0.064127 |
-| T4_P2_studies | 33 | 33.0 |
-| T4_P2_obs | 298 | 298.0 |
+| T4_P2_studies | 33 | 33 |
+| T4_P2_obs | 298 | 298 |
 | T2_OLS_lambda | -0.0152 | -0.015245 |
 | T2_OLS_lambda_se | 0.188 | 0.188497 |
 | T2_OLS_kappa | 0.366 | 0.366159 |
@@ -110,9 +103,10 @@ from the paper, not computed here. `stochastic`: depends on a random draw.
 | T2_wNOBS_lambda_se | 0.127 | 0.127264 |
 | T2_wNOBS_kappa | 0.353 | 0.352831 |
 | T2_wNOBS_kappa_se | 0.038 | 0.037964 |
-| T2_studies | 74 | 74.0 |
-| T2_obs | 1019 | 1019.0 |
+| T2_studies | 74 | 74 |
+| T2_obs | 1019 | 1019 |
 | T2_kappa_min | 0.301 | 0.301013 |
 | T2_kappa_max | 0.369 | 0.368984 |
 | T2_alpha_unconditional_mean | 0.36 | 0.362335 |
 | T2_alpha_unconditional_mean_annualized | 4.3 | 4.348019 |
+

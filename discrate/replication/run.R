@@ -15,7 +15,7 @@
 # statistics; ivreg2 without `small`, i.e. large-sample variance and z
 # inference) are stated once and audited once.
 #
-# WHAT DOES NOT REPRODUCE, AND WHY -- read REPLICATION.md before trusting any
+# WHAT DOES NOT REPRODUCE, AND WHY --
 # number below to more than about 1%. 388 of the 927 estimates have no reported
 # standard error. discrate.do fills those in with a per-study BOOTSTRAP standard
 # error of the mean discount rate (1000 replications, Stata's `bootstrap` with

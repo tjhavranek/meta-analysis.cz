@@ -14,7 +14,7 @@
 #               test  usdata csection pubdate
 #
 # Every number in Tables 4 and 5 was re-run in Stata 15.1 on the PUBLISHED csv and agrees
-# with the paper to the last printed digit; see REPLICATION.md for the full log.
+# with the paper to the last printed digit; see the notes below for the full log.
 
 if (file.exists("stata_compat.R")) source("stata_compat.R") else
   source("https://meta-analysis.cz/gasoline_price/replication/stata_compat.R")
@@ -60,7 +60,7 @@ long  <- st_keep_if(d, d$longr == 1)   # long-run elasticities,  N = 92
 # st_mixed() therefore supplies the fit (it is the right ML estimator) and the analytic
 # Hessian below supplies the vcov that xtreg,mle reports, evaluated at that fit -- the same
 # arrangement as the Wald test further down. It reproduces Stata to six decimals; the check
-# is in REPLICATION.md.
+# is in REPLICATION_STATUS.md.
 oim_vcov_mixed <- function(m, g) {
   X <- lme4::getME(m, "X"); y <- lme4::getME(m, "y"); b <- lme4::fixef(m)
   vc <- as.data.frame(lme4::VarCorr(m))

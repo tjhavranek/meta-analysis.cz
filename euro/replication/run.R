@@ -14,14 +14,14 @@
 # robust regression). stata_compat.R has no wrapper for `rreg` -- calling fixest/lm/MASS::rlm
 # by hand would be picking an unreviewed convention, which is exactly what this whole
 # tooling exists to prevent. So the ROBUST column is out of scope for this package; see
-# REPLICATION.md / unsupported_command.
+# REPLICATION_STATUS.md / unsupported_command.
 #
 # RIM/RCM (Table 1/2 third column, "random intercept/coefficients model ... restricted
 # maximum likelihood") requires Stata `mixed`/`xtmixed`. No `mixed`/`xtmixed` call is visible
 # anywhere in the author's code (data.zip:trade_meta.do stops at line
 # 313 without one), so the exact model (which grouping variable, which regressors, ML vs
 # REML) cannot be pinned to author code. Rather than guess a specification, this package
-# omits RIM/RCM as well; see REPLICATION.md.
+# omits RIM/RCM as well;.
 
 if (file.exists("stata_compat.R")) source("stata_compat.R") else
   source("https://meta-analysis.cz/euro/replication/stata_compat.R")
@@ -111,7 +111,7 @@ results$EURO_corrected_effect_tstat      <- euro_pet_coef / euro_pet_se  # = T1_
 ##    printed PEESE t-stat of 9.83 only reproduces under the CLASSICAL (non-robust) WLS
 ##    variance -- the robust version of the identical regression gives t=6.20. We use
 ##    st_regress(..., robust = FALSE), which is what actually reproduces the table's printed
-##    9.83 and hence the 65-115% quoted in the text; see REPLICATION.md for the check.
+##    9.83 and hence the 65-115% quoted in the text; for the check.
 mP  <- st_regress(tstat ~ se + prec - 1, data = d0, robust = FALSE)
 coP <- st_coefs(mP, z = FALSE)
 dfP    <- stats::nobs(mP) - length(stats::coef(mP))

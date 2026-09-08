@@ -7,13 +7,13 @@
 # specifications: OLS, FE, BE, IV, WLS, wNOBS), Part 1 (one-factor model) and
 # Part 2 (seven-factor model), from the author's hedge.do (lines 9-45 for the shared
 # data construction, lines 205-223 for the one-factor block, lines 229-244(+) for the
-# seven-factor block -- see REPLICATION.md for the exact line-by-line mapping).
+# seven-factor block for the exact line-by-line mapping).
 #
 # Panel B (Top10 / WAAP / Stem-based / Kinked-meta / Selection model / p-uniform*) and
 # Table 6 (top3/top5 journal subsamples) are NOT attempted here: the author code excerpt
 # available for this paper does not include the commands that produce them (Panel B
 # needs commands not shown at all; the top3/top5 filters are not shown either), so
-# nothing here would be provenanced. See REPLICATION.md.
+# nothing here would be provenanced.
 
 if (file.exists("stata_compat.R")) source("stata_compat.R") else
   source("https://meta-analysis.cz/hedge/replication/stata_compat.R")
@@ -107,7 +107,7 @@ run_panelA <- function(full_data, condition, prefix) {
   ## `m` rather than recomputing the default one (confirmed against this table: it
   ## returns 15.42, a factor of exactly [G/(G-1)]*[(N-1)/(N-K)] too large). The
   ## first-stage regression is instead run explicitly through st_regress -- one of the
-  ## sanctioned wrappers -- which applies fixest's true default ssc, and the F-stat
+  ## wrappers in stata_compat.R -- which applies fixest's true default ssc, and the F-stat
   ## (1 excluded instrument) is the squared t-statistic on the instrument. Same
   ## regression, same clustering, only the ssc convention differs, exactly as
   ## documented; nothing about the estimator, clustering variable, weights, or dof
@@ -196,7 +196,7 @@ rec("T2_alpha_unconditional_mean_annualized", mean(d0$alpha_w) * 12)
 ## Panel B (Top10, WAAP, Stem-based, Kinked-meta, Selection model, p-uniform*) is NOT
 ## computed here -- no stata_compat.R wrapper implements any of these five
 ## meta-analysis estimators, and the author's code for this paper
-## contains no commands for them either (see REPLICATION.md), so there is nothing to
+## contains no commands for them either, so there is nothing to
 ## provenance an implementation against. The five "kind not_reproduced" targets below
 ## record the paper's own printed Panel B cells verbatim, for arithmetic cross-checking
 ## only (e.g. confirming that combining them with our reproduced Panel A cells recovers

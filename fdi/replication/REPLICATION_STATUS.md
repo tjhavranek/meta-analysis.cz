@@ -3,11 +3,11 @@
 Generated when the package was published, from its own targets and its own output, so
 it cannot claim something the code does not do.
 
-**72 of 72 numbers from the paper are reproduced.**
+**72 of the 72 numbers this paper prints for these tables are reproduced.**
 
 ## Reproduced (72)
 
-| number in the paper | paper | this package |
+| number in the paper | paper | this code |
 |---|---|---|
 | T2 general Forward coef | 0.0773 | 0.077349 |
 | T2 general Forward se | 0.401 | 0.400543 |
@@ -55,7 +55,7 @@ it cannot claim something the code does not do.
 | T2 general Pub_year se | 0.084 | 0.084029 |
 | T2 general Constant coef | -0.704 | -0.704027 |
 | T2 general Constant se | 0.774 | 0.773904 |
-| T2 general N | 332 | 332.0 |
+| T2 general N | 332 | 332 |
 | T2 specific Quadratic coef | 0.565 | 0.565327 |
 | T2 specific Quadratic se | 0.183 | 0.182622 |
 | T2 specific Data_year coef | 0.135 | 0.134824 |
@@ -80,4 +80,5 @@ it cannot claim something the code does not do.
 | T2 specific Real_linkages se | 0.0237 | 0.023718 |
 | T2 specific Constant coef | -0.202 | -0.202057 |
 | T2 specific Constant se | 0.0832 | 0.083205 |
-| T2 specific N | 332 | 332.0 |
+| T2 specific N | 332 | 332 |
+
