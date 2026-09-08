@@ -52,7 +52,7 @@ p.repl-note { font-size: 0.9em; color: #444; margin: 0.5em 0; }
 			<h1 class="title">Replication in R</h1>
 			<div class="entry">
 <p>R code that regenerates the numbers this paper reports, starting from the dataset published on
-this site. It reproduces <b>39 of 42</b>. The 3 that do not match are listed below.</p>
+this site. It reproduces <b>42 of 42</b>. Every number the paper prints for these tables comes out.</p>
 
 <h2>Run it</h2>
 <pre class="cmd">Rscript run.R</pre>
@@ -71,14 +71,6 @@ printed digits. Those conventions are stated once, in
 <code>xtreg</code>'s treatment of singleton groups, and the restricted-ML default of
 <code>xtmixed</code>, which is not the default of the <code>mixed</code> command that replaced it.</p>
 
-<h2>Numbers that do not match the printed paper</h2>
-<p>Cells are named as they are in <code>results.json</code>. The reason for each difference follows the table.</p>
-<table class="repl">
-<tr><th>cell</th><th>paper</th><th>this code</th></tr>
-<tr><td>H12: Best practice (Table 5) coef</td><td>-0.225</td><td>-0.228285</td></tr>
-<tr><td>H18: Best practice (Table 5) coef</td><td>-0.155</td><td>-0.156646</td></tr>
-<tr><td>H36: Best practice (Table 5) coef</td><td>-0.116</td><td>-0.114485</td></tr>
-</table>
 
 
 <h2>Files</h2>

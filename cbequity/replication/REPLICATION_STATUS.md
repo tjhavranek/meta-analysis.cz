@@ -15,6 +15,8 @@ Cells are named as they are in `results.json`. The reason for each follows the t
 |---|---|---|
 | T2 FE RMSE | 0.11 | 0.104077 |
 
+Running the authors' own commands in Stata, on the dataset published here, returns what this code computes. The printed cell differs from that by more than rounding. The printed value is left exactly as published. Two further things point the same way: the printed 0.11 is exactly the value printed in the neighbouring OLS column, and Table 2's other four RMSE cells all reproduce. The do-file's esttab call carries no stats() option, so it printed only the sample size and the R-squared and RMSE rows had to be transferred by hand.
+
 ## Reproduced (43)
 
 | cell | paper | this code |

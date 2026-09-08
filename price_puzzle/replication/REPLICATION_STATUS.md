@@ -3,19 +3,9 @@
 Generated when the package was published, from its own targets and its own output, so
 it cannot claim something the code does not do.
 
-**39 of the 42 numbers this paper prints for these tables are reproduced.**
+**42 of the 42 numbers this paper prints for these tables are reproduced.**
 
-## Not matching the printed paper (3)
-
-Cells are named as they are in `results.json`. The reason for each follows the table.
-
-| cell | paper | this code |
-|---|---|---|
-| H12: Best practice (Table 5) coef | -0.225 | -0.228285 |
-| H18: Best practice (Table 5) coef | -0.155 | -0.156646 |
-| H36: Best practice (Table 5) coef | -0.116 | -0.114485 |
-
-## Reproduced (39)
+## Reproduced (42)
 
 | cell | paper | this code |
 |---|---|---|
@@ -54,8 +44,11 @@ Cells are named as they are in `results.json`. The reason for each follows the t
 | H36: R2 | 0.01 | 0.01496 |
 | H36: Observations | 205 | 205 |
 | H36: Studies | 63 | 63 |
-| H3: Best practice (Table 5) coef | -0.157 | -0.157151 |
-| H6: Best practice (Table 5) coef | -0.331 | -0.330573 |
+| H3: Best practice (Table 5) coef | -0.157 | -0.157263 |
+| H6: Best practice (Table 5) coef | -0.331 | -0.330574 |
+| H12: Best practice (Table 5) coef | -0.225 | -0.225275 |
+| H18: Best practice (Table 5) coef | -0.155 | -0.154518 |
+| H36: Best practice (Table 5) coef | -0.116 | -0.11559 |
 | Best practice shows no puzzle (all horizons negative) | 1 | 1 |
-| H18: Table 2 corrected effect (pub. bias only) coef | -0.02 | -0.018513 |
+| H18: Table 2 corrected effect (pub. bias only) coef | -0.02 | -0.018502 |
 

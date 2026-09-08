@@ -229,13 +229,16 @@ for (spec in horizons) {
   fml <- stats::as.formula(
     paste("t ~ prec +", paste(specific_covars, collapse = " + "), "+ (1 | idstudy)")
   )
-  # puzzle.do: `xtmixed t prec <21 moderators> if horizon==h || idstudy:` (no `mle` option
-  # on this specification -> Stata's xtmixed/mixed default, REML). st_mixed always fits
-  # REML = FALSE (its own documented convention for `mixed`/`xtmixed`, fixed in
-  # stata_compat.R and not editable here). For this specification the two converge to the
-  # same printed precision at every horizon but one -- flagged, not
-  # patched around.
-  m  <- suppressMessages(suppressWarnings(st_mixed(fml, data = reg_d)))
+  # puzzle.do line 168: `xtmixed t prec <21 moderators> if horizon==h ||idstudy:`, with no
+  # `mle` option. puzzle.do was written for Stata 11, where `xtmixed` fits by RESTRICTED
+  # maximum likelihood by default. Stata 13 retired the command and mapped the name onto
+  # `mixed`, whose default is plain ML, so the same line run today gives a different
+  # estimator. st_xtmixed pins REML; st_mixed is the ML counterpart, for the three lines of
+  # puzzle.do that ask for `mle` explicitly (line 274, after a convergence failure).
+  # The difference is not cosmetic here: ML gives -0.2283, -0.1566 and -0.1145 at horizons
+  # 12, 18 and 36, and REML gives -0.2253, -0.1545 and -0.1156, which are the printed
+  # -0.225, -0.155 and -0.116.
+  m  <- suppressMessages(suppressWarnings(st_xtmixed(fml, data = reg_d)))
   fe <- lme4::fixef(m)
   V  <- as.matrix(stats::vcov(m))
 
@@ -287,8 +290,9 @@ for (spec in horizons) {
   prec <- (1 / se)[ok]
   reg_d <- data.frame(t = t, prec = prec, idstudy = sub$idstudy)
 
-  # puzzle.do: `xtmixed t prec if horizon==h || idstudy:` (Table 2)
-  m  <- suppressMessages(suppressWarnings(st_mixed(t ~ prec + (1 | idstudy), data = reg_d)))
+  # puzzle.do lines 43-51: `xtmixed t prec if horizon==h || idstudy:`, again with no
+  # `mle`, so REML. See the note on the Table 5 fit above.
+  m  <- suppressMessages(suppressWarnings(st_xtmixed(t ~ prec + (1 | idstudy), data = reg_d)))
   fe <- lme4::fixef(m)
   se_fe <- sqrt(diag(as.matrix(stats::vcov(m))))
 

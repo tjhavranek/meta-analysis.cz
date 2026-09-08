@@ -77,6 +77,7 @@ printed digits. Those conventions are stated once, in
 <tr><th>cell</th><th>paper</th><th>this code</th></tr>
 <tr><td>T2 FE RMSE</td><td>0.11</td><td>0.104077</td></tr>
 </table>
+<p class="repl-note">Running the authors' own commands in Stata, on the dataset published here, returns what this code computes. The printed cell differs from that by more than rounding. The printed value is left exactly as published. Two further things point the same way: the printed 0.11 is exactly the value printed in the neighbouring OLS column, and Table 2's other four RMSE cells all reproduce. The do-file's esttab call carries no stats() option, so it printed only the sample size and the R-squared and RMSE rows had to be transferred by hand.</p>
 
 <p>20 further numbers depend on a random draw, so neither a match nor a mismatch is meaningful.</p>
 

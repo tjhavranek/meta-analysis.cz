@@ -14,6 +14,8 @@ Cells are named as they are in `results.json`. The reason for each follows the t
 | T1 fixed-effect CI lower | 0.088 | 0.088807 |
 | T2 Constant SE | 0.422 | 0.42258 |
 
+Running the authors' own commands in Stata, on the dataset published here, returns what this code computes. The printed cell differs from that by more than rounding. The printed value is left exactly as published. The printed figure is this package's value cut off at the printed precision rather than rounded to it, while the other numbers in the same table round; that is what a hand-copied cell looks like, not a convention of the paper.
+
 ## Reproduced (14)
 
 | cell | paper | this code |

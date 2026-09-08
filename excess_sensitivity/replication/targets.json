@@ -1,55 +1,291 @@
 [
-  {"label": "N_obs_all_specs", "printed": 3127, "digits": 0, "kind": "count"},
-  {"label": "N_studies_all_specs", "printed": 144, "digits": 0, "kind": "count"},
-
-  {"label": "spec1_biasonly_micro_coef", "printed": -0.373, "digits": 3, "kind": "deterministic"},
-  {"label": "spec1_biasonly_micro_se", "printed": 0.0495, "digits": 4, "kind": "deterministic"},
-  {"label": "spec1_biasonly_microse_coef", "printed": 0.518, "digits": 3, "kind": "deterministic"},
-  {"label": "spec1_biasonly_microse_se", "printed": 0.111, "digits": 3, "kind": "deterministic"},
-  {"label": "spec1_biasonly_constant_coef", "printed": 0.480, "digits": 3, "kind": "deterministic"},
-  {"label": "spec1_biasonly_constant_se", "printed": 0.0408, "digits": 4, "kind": "deterministic"},
-  {"label": "spec1_biasonly_impliedRoT", "printed": 0.11, "digits": 2, "kind": "deterministic"},
-  {"label": "spec1_biasonly_RoTwithLC", "printed": 0.11, "digits": 2, "kind": "deterministic"},
-
-  {"label": "spec2_baseline_micro_coef", "printed": -0.353, "digits": 3, "kind": "deterministic"},
-  {"label": "spec2_baseline_micro_se", "printed": 0.0476, "digits": 4, "kind": "deterministic"},
-  {"label": "spec2_baseline_microse_coef", "printed": 0.511, "digits": 3, "kind": "deterministic"},
-  {"label": "spec2_baseline_microse_se", "printed": 0.109, "digits": 3, "kind": "deterministic"},
-  {"label": "spec2_baseline_LCunconstr_coef", "printed": -0.113, "digits": 3, "kind": "deterministic"},
-  {"label": "spec2_baseline_LCunconstr_se", "printed": 0.0436, "digits": 4, "kind": "deterministic"},
-  {"label": "spec2_baseline_constant_coef", "printed": 0.488, "digits": 3, "kind": "deterministic"},
-  {"label": "spec2_baseline_constant_se", "printed": 0.0411, "digits": 4, "kind": "deterministic"},
-  {"label": "spec2_baseline_impliedRoT", "printed": 0.02, "digits": 2, "kind": "deterministic"},
-  {"label": "spec2_baseline_RoTwithLC", "printed": 0.13, "digits": 2, "kind": "deterministic"},
-
-  {"label": "spec3_biasignored_micro_coef", "printed": -0.252, "digits": 3, "kind": "deterministic"},
-  {"label": "spec3_biasignored_micro_se", "printed": 0.0530, "digits": 4, "kind": "deterministic"},
-  {"label": "spec3_biasignored_LCunconstr_coef", "printed": -0.120, "digits": 3, "kind": "deterministic"},
-  {"label": "spec3_biasignored_LCunconstr_se", "printed": 0.0422, "digits": 4, "kind": "deterministic"},
-  {"label": "spec3_biasignored_constant_coef", "printed": 0.488, "digits": 3, "kind": "deterministic"},
-  {"label": "spec3_biasignored_constant_se", "printed": 0.0411, "digits": 4, "kind": "deterministic"},
-  {"label": "spec3_biasignored_impliedRoT", "printed": 0.12, "digits": 2, "kind": "deterministic"},
-  {"label": "spec3_biasignored_RoTwithLC", "printed": 0.24, "digits": 2, "kind": "deterministic"},
-
-  {"label": "spec4_precision_micro_coef", "printed": -0.495, "digits": 3, "kind": "deterministic"},
-  {"label": "spec4_precision_micro_se", "printed": 0.0810, "digits": 4, "kind": "deterministic"},
-  {"label": "spec4_precision_microse_coef", "printed": 1.049, "digits": 3, "kind": "deterministic"},
-  {"label": "spec4_precision_microse_se", "printed": 0.224, "digits": 3, "kind": "deterministic"},
-  {"label": "spec4_precision_LCunconstr_coef", "printed": -0.00440, "digits": 5, "kind": "deterministic"},
-  {"label": "spec4_precision_LCunconstr_se", "printed": 0.00257, "digits": 5, "kind": "deterministic"},
-  {"label": "spec4_precision_constant_coef", "printed": 0.500, "digits": 3, "kind": "deterministic"},
-  {"label": "spec4_precision_constant_se", "printed": 0.0811, "digits": 4, "kind": "deterministic"},
-  {"label": "spec4_precision_impliedRoT", "printed": 0.00, "digits": 2, "kind": "deterministic"},
-  {"label": "spec4_precision_RoTwithLC", "printed": 0.004, "digits": 3, "kind": "deterministic"},
-
-  {"label": "spec5_study_micro_coef", "printed": -0.283, "digits": 3, "kind": "deterministic"},
-  {"label": "spec5_study_micro_se", "printed": 0.0506, "digits": 4, "kind": "deterministic"},
-  {"label": "spec5_study_microse_coef", "printed": 0.486, "digits": 3, "kind": "deterministic"},
-  {"label": "spec5_study_microse_se", "printed": 0.193, "digits": 3, "kind": "deterministic"},
-  {"label": "spec5_study_LCunconstr_coef", "printed": -0.0782, "digits": 4, "kind": "deterministic"},
-  {"label": "spec5_study_LCunconstr_se", "printed": 0.0413, "digits": 4, "kind": "deterministic"},
-  {"label": "spec5_study_constant_coef", "printed": 0.436, "digits": 3, "kind": "deterministic"},
-  {"label": "spec5_study_constant_se", "printed": 0.0434, "digits": 4, "kind": "deterministic"},
-  {"label": "spec5_study_impliedRoT", "printed": 0.07, "digits": 2, "kind": "deterministic"},
-  {"label": "spec5_study_RoTwithLC", "printed": 0.15, "digits": 2, "kind": "deterministic"}
+ {
+  "label": "N_obs_all_specs",
+  "printed": 3127,
+  "digits": 0,
+  "kind": "count"
+ },
+ {
+  "label": "N_studies_all_specs",
+  "printed": 144,
+  "digits": 0,
+  "kind": "count"
+ },
+ {
+  "label": "spec1_biasonly_micro_coef",
+  "printed": -0.373,
+  "digits": 3,
+  "kind": "deterministic"
+ },
+ {
+  "label": "spec1_biasonly_micro_se",
+  "printed": 0.0495,
+  "digits": 4,
+  "kind": "deterministic"
+ },
+ {
+  "label": "spec1_biasonly_microse_coef",
+  "printed": 0.518,
+  "digits": 3,
+  "kind": "deterministic"
+ },
+ {
+  "label": "spec1_biasonly_microse_se",
+  "printed": 0.111,
+  "digits": 3,
+  "kind": "deterministic"
+ },
+ {
+  "label": "spec1_biasonly_constant_coef",
+  "printed": 0.48,
+  "digits": 3,
+  "kind": "deterministic"
+ },
+ {
+  "label": "spec1_biasonly_constant_se",
+  "printed": 0.0408,
+  "digits": 4,
+  "kind": "deterministic"
+ },
+ {
+  "label": "spec1_biasonly_impliedRoT",
+  "printed": 0.11,
+  "digits": 2,
+  "kind": "deterministic"
+ },
+ {
+  "label": "spec1_biasonly_RoTwithLC",
+  "printed": 0.11,
+  "digits": 2,
+  "kind": "deterministic"
+ },
+ {
+  "label": "spec2_baseline_micro_coef",
+  "printed": -0.353,
+  "digits": 3,
+  "kind": "deterministic"
+ },
+ {
+  "label": "spec2_baseline_micro_se",
+  "printed": 0.0476,
+  "digits": 4,
+  "kind": "deterministic"
+ },
+ {
+  "label": "spec2_baseline_microse_coef",
+  "printed": 0.511,
+  "digits": 3,
+  "kind": "deterministic"
+ },
+ {
+  "label": "spec2_baseline_microse_se",
+  "printed": 0.109,
+  "digits": 3,
+  "kind": "deterministic"
+ },
+ {
+  "label": "spec2_baseline_LCunconstr_coef",
+  "printed": -0.113,
+  "digits": 3,
+  "kind": "deterministic"
+ },
+ {
+  "label": "spec2_baseline_LCunconstr_se",
+  "printed": 0.0436,
+  "digits": 4,
+  "kind": "deterministic"
+ },
+ {
+  "label": "spec2_baseline_constant_coef",
+  "printed": 0.488,
+  "digits": 3,
+  "kind": "deterministic"
+ },
+ {
+  "label": "spec2_baseline_constant_se",
+  "printed": 0.0411,
+  "digits": 4,
+  "kind": "deterministic"
+ },
+ {
+  "label": "spec2_baseline_impliedRoT",
+  "printed": 0.02,
+  "digits": 2,
+  "kind": "deterministic"
+ },
+ {
+  "label": "spec2_baseline_RoTwithLC",
+  "printed": 0.13,
+  "digits": 2,
+  "kind": "deterministic"
+ },
+ {
+  "label": "spec3_biasignored_micro_coef",
+  "printed": -0.252,
+  "digits": 3,
+  "kind": "deterministic"
+ },
+ {
+  "label": "spec3_biasignored_micro_se",
+  "printed": 0.053,
+  "digits": 4,
+  "kind": "deterministic"
+ },
+ {
+  "label": "spec3_biasignored_LCunconstr_coef",
+  "printed": -0.12,
+  "digits": 3,
+  "kind": "deterministic"
+ },
+ {
+  "label": "spec3_biasignored_LCunconstr_se",
+  "printed": 0.0422,
+  "digits": 4,
+  "kind": "deterministic"
+ },
+ {
+  "label": "spec3_biasignored_constant_coef",
+  "printed": 0.488,
+  "digits": 3,
+  "kind": "deterministic"
+ },
+ {
+  "label": "spec3_biasignored_constant_se",
+  "printed": 0.0411,
+  "digits": 4,
+  "kind": "deterministic"
+ },
+ {
+  "label": "spec3_biasignored_impliedRoT",
+  "printed": 0.12,
+  "digits": 2,
+  "kind": "deterministic"
+ },
+ {
+  "label": "spec3_biasignored_RoTwithLC",
+  "printed": 0.24,
+  "digits": 2,
+  "kind": "deterministic"
+ },
+ {
+  "label": "spec4_precision_micro_coef",
+  "printed": -0.495,
+  "digits": 3,
+  "kind": "deterministic"
+ },
+ {
+  "label": "spec4_precision_micro_se",
+  "printed": 0.081,
+  "digits": 4,
+  "kind": "deterministic"
+ },
+ {
+  "label": "spec4_precision_microse_coef",
+  "printed": 1.049,
+  "digits": 3,
+  "kind": "deterministic"
+ },
+ {
+  "label": "spec4_precision_microse_se",
+  "printed": 0.224,
+  "digits": 3,
+  "kind": "deterministic"
+ },
+ {
+  "label": "spec4_precision_LCunconstr_coef",
+  "printed": -0.0044,
+  "digits": 5,
+  "kind": "deterministic"
+ },
+ {
+  "label": "spec4_precision_LCunconstr_se",
+  "printed": 0.00257,
+  "digits": 5,
+  "kind": "deterministic"
+ },
+ {
+  "label": "spec4_precision_constant_coef",
+  "printed": 0.5,
+  "digits": 3,
+  "kind": "deterministic"
+ },
+ {
+  "label": "spec4_precision_constant_se",
+  "printed": 0.0811,
+  "digits": 4,
+  "kind": "deterministic"
+ },
+ {
+  "label": "spec4_precision_impliedRoT",
+  "printed": 0.0,
+  "digits": 2,
+  "kind": "deterministic"
+ },
+ {
+  "label": "spec4_precision_RoTwithLC",
+  "printed": 0.004,
+  "digits": 3,
+  "kind": "discrepancy",
+  "note": "Running the authors' own commands in Stata, on the dataset published here, returns what this code computes. The printed cell differs from that by more than rounding. The printed value is left exactly as published. The printed figure is this package's value cut off at the printed precision rather than rounded to it, while the other numbers in the same table round; that is what a hand-copied cell looks like, not a convention of the paper."
+ },
+ {
+  "label": "spec5_study_micro_coef",
+  "printed": -0.283,
+  "digits": 3,
+  "kind": "deterministic"
+ },
+ {
+  "label": "spec5_study_micro_se",
+  "printed": 0.0506,
+  "digits": 4,
+  "kind": "deterministic"
+ },
+ {
+  "label": "spec5_study_microse_coef",
+  "printed": 0.486,
+  "digits": 3,
+  "kind": "deterministic"
+ },
+ {
+  "label": "spec5_study_microse_se",
+  "printed": 0.193,
+  "digits": 3,
+  "kind": "deterministic"
+ },
+ {
+  "label": "spec5_study_LCunconstr_coef",
+  "printed": -0.0782,
+  "digits": 4,
+  "kind": "deterministic"
+ },
+ {
+  "label": "spec5_study_LCunconstr_se",
+  "printed": 0.0413,
+  "digits": 4,
+  "kind": "deterministic"
+ },
+ {
+  "label": "spec5_study_constant_coef",
+  "printed": 0.436,
+  "digits": 3,
+  "kind": "deterministic"
+ },
+ {
+  "label": "spec5_study_constant_se",
+  "printed": 0.0434,
+  "digits": 4,
+  "kind": "deterministic"
+ },
+ {
+  "label": "spec5_study_impliedRoT",
+  "printed": 0.07,
+  "digits": 2,
+  "kind": "deterministic"
+ },
+ {
+  "label": "spec5_study_RoTwithLC",
+  "printed": 0.15,
+  "digits": 2,
+  "kind": "deterministic"
+ }
 ]

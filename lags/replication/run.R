@@ -165,10 +165,20 @@ for (nm in names(t2_rows)) {
 }
 
 # ------------------------------------------------------------------------- Tables 3, 6 and 7
-# lags.do line 47 summarises the lag by country; the three tables are the same average over
-# three samples -- all impulse responses, the hump-shaped ones, and those without the price
-# puzzle. They are plain unweighted country means of the cleaned sample, not values implied by
-# the model-averaging exercise: every printed cell below follows from the data alone.
+# The published script stops at the summaries it needs for the model averaging and never breaks
+# the lag down by country, so these three tables have to be rebuilt from their notes. They say
+# what the operation is: "the average number of months to the maximum decrease in prices taken
+# from all the impulse responses reported for the corresponding country", over three samples --
+# all impulse responses (table 3), the hump-shaped ones (table 6), and those without the price
+# puzzle (table 7). Read literally that is a plain unweighted country mean of the cleaned
+# sample, and it is worth checking rather than assuming, because the alternative reading -- a
+# country average implied by the model-averaging exercise -- would look much the same in print.
+# It is the literal one: every cell of all three tables follows from the data alone.
+#
+# Table 3 shows only the countries for which at least five impulse responses were collected,
+# which is why twelve of the thirty appear. Tables 6 and 7 keep the same twelve rows on their
+# smaller samples, so several of them rest on fewer than five estimates -- a caveat the paper
+# makes itself, and the reason the per-cell counts are printed alongside the averages below.
 #
 # The paper prints countries by their full names; the data file abbreviates two of them.
 country_label <- c("United States" = "US", "Euro Area" = "Euro Area", "Japan" = "Japan",
@@ -193,7 +203,7 @@ for (tab in names(country_tables)) {
 }
 
 # ------------------------------------------------------------------------------------ Table 4
-# lags.do line 49 summarises the thirty-three candidate regressors. The order below is the
+# lags.do line 50 summarises the thirty-three candidate regressors. The order below is the
 # order of that summarize command, which is also the order of the table.
 explanatory <- list(
   c("gdppc", "GDP per Capita"),        c("growth", "GDP Growth"),
@@ -275,9 +285,9 @@ report_tobit("Table 12", m_general)
 
 # ------------------------------------------------------------------- what is not reproduced
 # Everything above follows from the data by arithmetic or by maximum likelihood. The paper's
-# headline number does not, and neither do three further quantities. They are recorded in
-# targets.json with kind "not_reproduced" and no computed value, and the reasons are set out
-# here so that a reader can see what stands behind each one.
+# headline number does not, and nor do two further quantities its text reports. All three are
+# recorded in targets.json with kind "not_reproduced" and no computed value, and the reasons
+# are set out here so that a reader can see what stands behind each one.
 #
 # 1. THE BAYESIAN MODEL AVERAGING (Table 5, figures 3-5, and everything derived from them,
 #    including the abstract's twenty-nine months). The averaging runs over 2^33 models, which
@@ -326,8 +336,8 @@ n_reaching_point_one <- sum(d$res * 100 <= -0.1)
 cat("\n===== Quantities NOT reproduced, and why =====\n")
 cat("Bayesian model averaging (Table 5, figures 3-5, and the abstract's twenty-nine months):\n")
 cat("  an MCMC chain over 2^33 models. Not rerun here; a fresh chain is not the paper's chain.\n")
-cat(sprintf("  Arithmetic on the paper's OWN printed posterior means, at its own definition of\n"))
-cat(sprintf("  the ideal study, gives %.3f months against a printed 29.2, and %.3f months\n",
+cat("  Arithmetic on the paper's own printed posterior means, at its own definition of the\n")
+cat(sprintf("  ideal study, gives %.3f months against a printed 29.2, and %.3f months\n",
             ideal_lag, hump_lag))
 cat("  with Strictly Decreasing set to zero against a printed 16.3. Both round to the printed\n")
 cat("  values, which also identifies the second one: the sentence about preferring hump-shaped\n")
@@ -341,17 +351,17 @@ cat(sprintf("Estimates whose maximum decrease reaches 0.1 percent: %d, against 1
 cat("  No single scaling of the published response column delivers both printed figures, so\n")
 cat("  the series the two sentences summarise is not the one the file carries.\n")
 
-cat("\n===== Three Table 2 cells that do not follow from this sample =====\n")
+cat("\n===== Two Table 2 cells that do not follow from this sample =====\n")
 cat(sprintf("  Mean of all impulse responses:      %.6f   paper 33.5\n",
             mean(d$mon_bot)))
-cat(sprintf("  Mean of hump-shaped responses:      %.6f   paper 18.2 (an exact tie at one decimal)\n",
-            mean(d$mon_bot[d$no_bot == 0])))
 cat(sprintf("  Std. dev. of hump-shaped responses: %.6f   paper 14.1\n",
             sd(d$mon_bot[d$no_bot == 0])))
-cat("  The remaining fifteen cells of the table reproduce exactly, including all three counts,\n")
-cat("  all three medians and both other standard deviations, so the sample behind the table is\n")
-cat("  the one built above.\n")
-cat(sprintf("\nOne further note on the published script: its comment at the censoring step reads\n"))
+cat("  The other sixteen cells reproduce, including all three counts, all three medians, both\n")
+cat("  other standard deviations, and the hump-shaped mean, which is 18.150000 exactly and so\n")
+cat("  is the 18.2 the paper prints once halves are rounded away from zero. Censoring at sixty\n")
+cat("  months does not touch the hump-shaped subsample, whose maximum is 57, so the same 100\n")
+cat("  values give both the reproduced and the unreproduced cell of that row.\n")
+cat("\nOne further note on the published script: its comment at the censoring step reads\n")
 cat(sprintf("  \"8 observations affected\", and the number affected in this data is %d.\n",
             n_censored))
 
