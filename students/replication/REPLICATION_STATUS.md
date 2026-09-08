@@ -13,7 +13,7 @@ Cells are named as they are in `results.json`. The reason for each follows the t
 |---|---|---|
 | T2_PanelC_WAAP_se | 0.013 | 0.013573 |
 
-Running the authors' own commands in Stata, on the dataset published here, returns what this code computes. The printed cell differs from that by more than rounding. The printed value is left exactly as published. The printed figure is this package's value cut off at the printed precision rather than rounded to it, while the other numbers in the same table round; that is what a hand-copied cell looks like, not a convention of the paper.
+The printed figure is exactly this package's value cut off at the printed precision rather than rounded to it: rounded it would end in a different digit. The other numbers in the same table round normally, so this is not a convention of the paper but a transcription that looks hand-copied. Everything else in the table reproduces. The printed value is left exactly as published.
 
 ## Reproduced (27)
 

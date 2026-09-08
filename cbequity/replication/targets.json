@@ -262,7 +262,7 @@
   "printed": 0.11,
   "digits": 2,
   "kind": "discrepancy",
-  "note": "Running the authors' own commands in Stata, on the dataset published here, returns what this code computes. The printed cell differs from that by more than rounding. The printed value is left exactly as published. Two further things point the same way: the printed 0.11 is exactly the value printed in the neighbouring OLS column, and Table 2's other four RMSE cells all reproduce. The do-file's esttab call carries no stats() option, so it printed only the sample size and the R-squared and RMSE rows had to be transferred by hand."
+  "note": "Two things point the same way here. The printed 0.11 is exactly the value printed in the neighbouring OLS column, and the other four RMSE cells of this table reproduce. The do-file's esttab call carries no stats() option, so it printed only the sample size and the R-squared and RMSE rows had to be transferred by hand. The printed value is left exactly as published."
  },
  {
   "label": "T2 Study bias_coef",

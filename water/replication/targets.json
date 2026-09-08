@@ -106,7 +106,7 @@
   "printed": 0.012,
   "digits": 3,
   "kind": "discrepancy",
-  "note": "Running the authors' own commands in Stata, on the dataset published here, returns what this code computes. The printed cell differs from that by more than rounding. The printed value is left exactly as published. Panel A is the one panel of this paper that does not follow its own deposited code: four independent Panel A cells match plain `regress` and none matches the `ivreg2` the do-file uses, so the panel appears to come from a different run than Panels B and C. This constant's standard error is the one Panel A cell that does not fall in line with either reading."
+  "note": "Panel A is the one panel of this paper that does not follow its own deposited code: four independent Panel A cells match plain regress and none matches the ivreg2 the do-file uses, while Panels B and C follow the do-file exactly. Panel A therefore appears to have been reported from a different run. This constant's standard error is the one Panel A cell that falls in line with neither reading. The printed value is left exactly as published."
  },
  {
   "label": "PanelA_PrecFE_coef",

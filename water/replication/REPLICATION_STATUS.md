@@ -13,7 +13,7 @@ Cells are named as they are in `results.json`. The reason for each follows the t
 |---|---|---|
 | PanelA_PrecOLS_const_se | 0.012 | 0.011209 |
 
-Running the authors' own commands in Stata, on the dataset published here, returns what this code computes. The printed cell differs from that by more than rounding. The printed value is left exactly as published. Panel A is the one panel of this paper that does not follow its own deposited code: four independent Panel A cells match plain `regress` and none matches the `ivreg2` the do-file uses, so the panel appears to come from a different run than Panels B and C. This constant's standard error is the one Panel A cell that does not fall in line with either reading.
+Panel A is the one panel of this paper that does not follow its own deposited code: four independent Panel A cells match plain regress and none matches the ivreg2 the do-file uses, while Panels B and C follow the do-file exactly. Panel A therefore appears to have been reported from a different run. This constant's standard error is the one Panel A cell that falls in line with neither reading. The printed value is left exactly as published.
 
 ## Reproduced (38)
 
