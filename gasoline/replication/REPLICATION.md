@@ -7,7 +7,10 @@ https://doi.org/10.1016/j.eneco.2014.11.004
 **Table reproduced.** Table 6, "Determinants of heterogeneity in the reported
 long-run estimates" — the paper's augmented (multivariate) meta-regression,
 all three specifications, all rows, including the Observations row: **135
-target cells, 135 matched, 0 misses.**
+target cells, 135 matched, 0 misses.** Also reproduces the paper's own
+headline text claim ("0.1 short run, 0.23 long run," abstract/conclusion)
+via Table 4's long-run/vehicle-stock cell — see "Numbers from the paper's
+text" below for what matches and what the published data cannot supply.
 
 **Provenance.** `author_code` (data.zip:init.do, lines 168-177, define `se`,
 `prec`, and the Pubyear/Datayear/Timespan transforms used as regressors)
@@ -144,3 +147,38 @@ Rscript run.R
 reads `data/v1/gasoline/gasoline.csv` (the file the site publishes),
 prints every produced number, and writes `results.json` next to itself.
 No manual steps. Uses only `stata_compat.R`'s `st_mixed()` wrapper.
+
+## Numbers from the paper's text
+
+meta-analysis.cz summarizes this paper as **"0.1 short run, 0.23 long run."**
+That sentence is the paper's own: the abstract reads "the mean corrected for
+publication bias is 0.1 for the short run and 0.23 for the long run," and the
+Conclusion (Section 7) restates it almost word for word. Section 6 pins the
+long-run figure down to a specific table cell: "our corrected mean for all
+elasticities computed with control for vehicle stock presented in the last
+section, 0.23" — i.e. the headline "0.23" IS the Table 4 long-run/vehicle-stock
+"1/se" coefficient (printed 0.234), not an average across Table 4's two
+long-run columns.
+
+Table 4 is the Heckman-type quadratic meta-regression, Eq. (10)/(12) in the
+paper: `t_ij = beta/se_ij + gamma0*se_ij + u_i + eps_ij` (no separate
+intercept), mixed-effects with a random intercept by `Studyid` — the same
+estimator already used for Table 6, fit here on each Carstock subsample of
+the 692-row trimmed data.
+
+| Claim | Quantity | Paper's value | Produced | Match |
+|---|---|---|---|---|
+| "0.23 for the long run" | Table 4, long-run/vehicle-stock, `1/se` coef (N=346) | 0.234 (t=9.76) | 0.2340 (t=9.759) | Yes — rounds to 0.23 |
+| (context, not headline) | Table 4, long-run/no-vehicle-stock, `1/se` coef (N=346) | 0.644 (t=17.38) | 0.6439 (t=17.380) | Yes |
+| "0.1 for the short run" | Table 4, short-run/whole-sample, `1/se` coef (N=831) | 0.0999 (t=12.47) | **not produced** | **No — see below** |
+
+**Short run: not reproducible from the published data, and no number is
+fabricated to fill the gap.** As established above, the site's CSV
+(`data/v1/gasoline/gasoline.csv`) is the paper's **long-run sample only**
+(701 rows before trim, 692 after — matching the paper's long-run N of
+346+346 exactly, with no short-run indicator column and no short-run rows).
+The short-run figure needs the short-run subsample (N=831), which this file
+does not contain. `targets.json` carries the paper's stated "0.1" as a
+`kind: "headline"` target with no matching entry in `results.json`, so a
+compare pass reports it `NOT_COMPUTED` rather than silently omitting it or
+faking a match.

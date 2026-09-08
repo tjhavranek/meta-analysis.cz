@@ -13,5 +13,16 @@
   {"label": "T4 col2 (study+country FE) Se(pub.bias) coef", "printed": -0.284, "digits": 3, "kind": "deterministic"},
   {"label": "T4 col2 (study+country FE) Se(pub.bias) SE",   "printed": 0.305,  "digits": 3, "kind": "deterministic"},
   {"label": "T4 col2 (study+country FE) Se(pub.bias) p",    "printed": 0.357,  "digits": 3, "kind": "deterministic"},
-  {"label": "T4 col2 N",                               "printed": 1199,   "digits": 0, "kind": "count"}
+  {"label": "T4 col2 N",                               "printed": 1199,   "digits": 0, "kind": "count"},
+
+  {"label": "Headline: mean(e), all collected estimates",      "printed": -0.002, "digits": 3, "kind": "headline"},
+  {"label": "Headline: metan e se, fixed (pooled avg.)",       "printed": 0.017,  "digits": 3, "kind": "headline"},
+  {"label": "Headline: metan e se, random (pooled avg.)",      "printed": -0.011, "digits": 3, "kind": "headline"},
+  {"label": "Headline: Table2 OLS check, Technology gap coef", "printed": -0.260, "digits": 3, "kind": "headline"},
+  {"label": "Headline: Table2 OLS check, Technology gap SE",   "printed": 0.145,  "digits": 3, "kind": "headline"},
+  {"label": "Headline: Table2 OLS check, Technology gap p",    "printed": 0.080,  "digits": 3, "kind": "headline"},
+  {"label": "Headline: Table2 OLS check, Fully owned coef",    "printed": -0.104, "digits": 3, "kind": "headline"},
+  {"label": "Headline: Table2 OLS check, Fully owned SE",      "printed": 0.057,  "digits": 3, "kind": "headline"},
+  {"label": "Headline: Table2 OLS check, Fully owned p",       "printed": 0.077,  "digits": 3, "kind": "headline"},
+  {"label": "Headline: Table2 OLS check N",                    "printed": 1195,   "digits": 0, "kind": "count"}
 ]

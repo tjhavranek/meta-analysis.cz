@@ -60,5 +60,14 @@
   {"label": "T1_h16_N",              "printed": 226,    "digits": 0, "kind": "count"},
 
   {"label": "T1_h8_mean_uncorrected", "printed": -1.2, "digits": 1, "kind": "deterministic",
-   "note": "Notes to Table 1(continued): 'The mean uncorrected effect at the 8-quarter horizon was -1.2.'"}
+   "note": "Notes to Table 1(continued): 'The mean uncorrected effect at the 8-quarter horizon was -1.2.'"},
+
+  {"label": "headline_uncorrected_response_pct", "printed": -1.2, "digits": 1, "kind": "headline",
+   "note": "meta-analysis.cz claim 'a 1.2% fall in house prices per 1-percentage-point policy rate rise, peaking after two years'. Paper's own words -- Introduction: 'On average, the response bottoms out after two years at a 1.2% decrease in house prices...'; Concluding Remarks: 'a one-percentage-point increase in the policy rate is on average associated with a maximum decrease of 1.2% in house prices after two years.' Value = unweighted mean of raw reported estimates at horizon==8 (identical to T1_h8_mean_uncorrected)."},
+
+  {"label": "headline_peak_horizon_quarters", "printed": 8, "digits": 0, "kind": "headline",
+   "note": "The horizon (in quarters) at which the unweighted mean of the raw reported estimates is largest in magnitude among the six digitized horizons (1,2,4,8,12,16). 8 quarters = 2 years, matching the paper's 'peaking/bottoming out after two years'."},
+
+  {"label": "headline_corrected_response_pct", "printed": -0.23, "digits": 2, "kind": "headline",
+   "note": "Fig. 4 discussion: 'the effect peaks after two years and then dissipates ... -0.23% after two years compared to the simple uncorrected mean estimate of -1.2%.' Value = WLS (publication-bias-corrected) regression constant at horizon==8, i.e. T1_h8_WLS_const_coef -- the specification the paper states it uses to build the corrected impulse response in Fig. 4."}
 ]

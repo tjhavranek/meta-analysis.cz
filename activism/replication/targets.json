@@ -41,5 +41,24 @@
   {"label": "T2 North_America Mean",                  "printed": 1.41, "digits": 2, "kind": "deterministic"},
   {"label": "T2 North_America SD",                    "printed": 3.07, "digits": 2, "kind": "deterministic"},
   {"label": "T2 North_America WMean",                 "printed": 1.70, "digits": 2, "kind": "deterministic"},
-  {"label": "T2 North_America WSD",                   "printed": 3.42, "digits": 2, "kind": "deterministic"}
+  {"label": "T2 North_America WSD",                   "printed": 3.42, "digits": 2, "kind": "deterministic"},
+
+  {"label": "TA2 Nobs (SE available)",                "printed": 1973, "digits": 0, "kind": "headline"},
+  {"label": "TA2 Studies (SE available)",              "printed": 67,   "digits": 0, "kind": "headline"},
+
+  {"label": "TA2 OLS beta0",                          "printed": 0.590,  "digits": 3, "kind": "headline"},
+  {"label": "TA2 FE beta0",                           "printed": 1.256,  "digits": 3, "kind": "headline"},
+  {"label": "TA2 BE beta0",                           "printed": 1.473,  "digits": 3, "kind": "headline"},
+  {"label": "TA2 IV beta0",                           "printed": 0.657,  "digits": 3, "kind": "headline"},
+  {"label": "TA2 w(NOBS) beta0",                      "printed": 0.713,  "digits": 3, "kind": "headline"},
+  {"label": "TA2 w(1/SE) beta0",                      "printed": 0.008,  "digits": 3, "kind": "headline"},
+  {"label": "TA2 Top10 beta0 (unverified, see note)", "printed": 0.196,  "digits": 3, "kind": "headline"},
+
+  {"label": "TA2 linear beta0 min (all 6 methods)",   "printed": 0.008,  "digits": 3, "kind": "headline"},
+  {"label": "TA2 linear beta0 max (all 6 methods)",   "printed": 1.473,  "digits": 3, "kind": "headline"},
+  {"label": "TA2 linear beta0 min (excl. BE)",        "printed": 0.008,  "digits": 3, "kind": "headline"},
+  {"label": "TA2 linear beta0 max (excl. BE)",        "printed": 1.256,  "digits": 3, "kind": "headline"},
+
+  {"label": "Headline range low (0%, rounded, excl. BE)",  "printed": 0.0, "digits": 1, "kind": "headline"},
+  {"label": "Headline range high (1.5%, rounded, excl. BE)", "printed": 1.5, "digits": 1, "kind": "headline"}
 ]

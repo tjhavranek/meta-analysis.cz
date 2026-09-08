@@ -38,5 +38,12 @@
   {"label": "T5 Observations (all columns)", "printed": 3186, "digits": 0, "kind": "count"},
 
   {"label": "T5 Translog: SE coef",              "printed": 0.664,  "digits": 3, "kind": "deterministic"},
-  {"label": "T5 Translog: Constant coef",        "printed": 0.529,  "digits": 3, "kind": "deterministic"}
+  {"label": "T5 Translog: Constant coef",        "printed": 0.529,  "digits": 3, "kind": "deterministic"},
+
+  {"label": "TEXT mean elasticity, simple (paper: 0.8)", "printed": 0.8, "digits": 1, "kind": "headline"},
+  {"label": "TEXT mean elasticity, equal weight per study (paper: 0.9)", "printed": 0.9, "digits": 1, "kind": "headline"},
+  {"label": "TEXT publication-bias coefficient, Table 1 OLS (paper: 0.881)", "printed": 0.881, "digits": 3, "kind": "headline"},
+  {"label": "TEXT mean elasticity corrected for publication bias, Table 1 OLS constant (paper: 0.5, printed 0.492)", "printed": 0.492, "digits": 3, "kind": "headline"},
+  {"label": "TEXT share of 0.9->0.3 reduction due to publication bias alone (paper: 'at least half', i.e. >= 0.5)", "printed": 0.5, "digits": 1, "kind": "headline_bound_ge"},
+  {"label": "TEXT 'best practice' implied elasticity -- OUR st_regress proxy (paper's Table 9 value: 0.30, 95% CI -0.01 to 0.60; NOT independently reproduced -- see comment above)", "printed": 0.30, "digits": 2, "kind": "headline_not_independently_reproduced"}
 ]

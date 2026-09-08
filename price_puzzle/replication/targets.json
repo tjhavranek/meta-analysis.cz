@@ -37,5 +37,21 @@
   {"label": "H36: 1/SE (effect) se",      "printed": 0.008,  "digits": 3, "kind": "deterministic"},
   {"label": "H36: R2",                    "printed": 0.01,   "digits": 2, "kind": "deterministic"},
   {"label": "H36: Observations",          "printed": 205,    "digits": 0, "kind": "count"},
-  {"label": "H36: Studies",               "printed": 63,     "digits": 0, "kind": "count"}
+  {"label": "H36: Studies",               "printed": 63,     "digits": 0, "kind": "count"},
+
+  {"label": "H3: Best practice (Table 5) coef",  "printed": -0.157, "digits": 3, "kind": "headline",
+   "source": "paper text, Section 4 / Section 5 CONCLUSION: 'After controlling for both publication and misspecification biases, the price puzzle is not present and prices bottom out 6 months ... The maximum decrease in the price level reaches 0.33% and is statistically significant at the 5% level.' Table 5, 'Best practice' row."},
+  {"label": "H6: Best practice (Table 5) coef",  "printed": -0.331, "digits": 3, "kind": "headline",
+   "source": "same quote as H3 -- this IS the '0.33% below' the site summary refers to."},
+  {"label": "H12: Best practice (Table 5) coef", "printed": -0.225, "digits": 3, "kind": "headline",
+   "source": "Table 5, 'Best practice' row, 12-month column."},
+  {"label": "H18: Best practice (Table 5) coef", "printed": -0.155, "digits": 3, "kind": "headline",
+   "source": "Table 5, 'Best practice' row, 18-month column."},
+  {"label": "H36: Best practice (Table 5) coef", "printed": -0.116, "digits": 3, "kind": "headline",
+   "source": "Table 5, 'Best practice' row, 36-month column."},
+  {"label": "Best practice shows no puzzle (all horizons negative)", "printed": true, "digits": 0, "kind": "headline",
+   "source": "paper text: 'the price puzzle is not present' -- operationalised as no positive (puzzling) response at any of the 5 horizons in Table 5's Best practice row."},
+
+  {"label": "H18: Table 2 corrected effect (pub. bias only) coef", "printed": -0.02, "digits": 2, "kind": "headline",
+   "source": "paper text, Section 3: 'it exhibits the price puzzle. In the short run prices increase, but in the medium run they decrease and bottom out 18 months ... The maximum decrease in the price level, however, is negligible: only 0.02%.' Table 2, '1/SE (effect)' row, 18-month column -- context for the headline claim (publication-bias correction alone still shows the puzzle; both biases together do not)."}
 ]

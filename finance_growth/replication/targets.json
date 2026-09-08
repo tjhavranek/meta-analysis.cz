@@ -1,0 +1,19 @@
+[
+  {"label": "T1 simple (arithmetic) mean pcc",           "printed": 0.15,  "digits": 2, "kind": "deterministic"},
+  {"label": "T1 simple mean CI lower",                    "printed": 0.10,  "digits": 2, "kind": "deterministic"},
+  {"label": "T1 simple mean CI upper",                    "printed": 0.20,  "digits": 2, "kind": "deterministic"},
+  {"label": "T1 fixed-effect (inverse-variance) mean",    "printed": 0.09,  "digits": 2, "kind": "deterministic"},
+  {"label": "T1 fixed-effect CI lower",                   "printed": 0.088, "digits": 3, "kind": "deterministic"},
+  {"label": "T1 fixed-effect CI upper",                   "printed": 0.095, "digits": 3, "kind": "deterministic"},
+  {"label": "T1 random-effects mean",                     "printed": 0.14,  "digits": 2, "kind": "deterministic"},
+  {"label": "T1 random-effects CI lower",                 "printed": 0.129, "digits": 3, "kind": "deterministic"},
+  {"label": "T1 random-effects CI upper",                 "printed": 0.15,  "digits": 2, "kind": "deterministic"},
+
+  {"label": "T2 Effect (coef on 1/SE)",                   "printed": 0.199,  "digits": 3, "kind": "deterministic"},
+  {"label": "T2 Effect SE",                                "printed": 0.018,  "digits": 3, "kind": "deterministic"},
+  {"label": "T2 Constant (bias)",                          "printed": -0.353, "digits": 3, "kind": "deterministic"},
+  {"label": "T2 Constant SE",                               "printed": 0.422,  "digits": 3, "kind": "deterministic"},
+  {"label": "T2 Within-study correlation",                 "printed": 0.46,   "digits": 2, "kind": "deterministic"},
+  {"label": "T2 Observations",                              "printed": 1334,   "digits": 0, "kind": "count"},
+  {"label": "T2 Studies",                                    "printed": 67,     "digits": 0, "kind": "count"}
+]

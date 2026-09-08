@@ -11,5 +11,12 @@
   {"label": "T2_FATPET_const_coef",    "printed": 1.712,    "digits": 3, "kind": "deterministic"},
   {"label": "T2_FATPET_const_t",       "printed": 2.21,     "digits": 2, "kind": "deterministic"},
   {"label": "T2_FATPET_N",             "printed": 33,       "digits": 0, "kind": "count"},
-  {"label": "T2_FATPET_RMSE",          "printed": 3.234,    "digits": 3, "kind": "deterministic"}
+  {"label": "T2_FATPET_RMSE",          "printed": 3.234,    "digits": 3, "kind": "deterministic"},
+
+  {"label": "NONEURO_PEESE_prec_coef",          "printed": 0.634, "digits": 3, "kind": "deterministic"},
+  {"label": "NONEURO_PEESE_prec_t",             "printed": 9.83,  "digits": 2, "kind": "deterministic"},
+
+  {"label": "EURO_corrected_effect_tstat",         "printed": 0.05, "digits": 2, "kind": "headline"},
+  {"label": "NONEURO_corrected_effect_CI_lo_pct",  "printed": 65,   "digits": 0, "kind": "headline"},
+  {"label": "NONEURO_corrected_effect_CI_hi_pct",  "printed": 115,  "digits": 0, "kind": "headline"}
 ]

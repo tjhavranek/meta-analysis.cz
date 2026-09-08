@@ -84,3 +84,60 @@ paper reports in the columns it does cover.
 
 None among the reproduced targets. The ROBUST and RIM/RCM columns were not attempted (see
 above), not "missed" -- they are recorded via `unsupported_command`.
+
+## Numbers from the paper's text
+
+meta-analysis.cz summarises this paper as: "no detectable effect once publication bias is
+corrected, while other currency unions raise trade." That sentence maps onto three numbers
+the paper's own text states (not just table cells):
+
+> Abstract: "The estimated underlying effect for currency unions other than the eurozone
+> reaches more than 60%. However, according to the meta-regression analysis, the euro's
+> trade promoting effect corrected for publication bias is insignificant."
+>
+> Sect. 3 (eurozone): "For eurozone studies, the corresponding t-statistic is only 0.05
+> ... there is not even a slight trace of any true underlying Rose effect of the euro
+> beyond publication bias ... there is therefore no significant aggregate effect of the
+> euro on trade."
+>
+> Sect. 3 (non-euro): "PEESE estimates the true Rose effect of currency unions other than
+> the eurozone to lie between 65 and 115% with 95% probability."
+
+**How these were computed.** `gamma` is a semi-elasticity (site convention), so a
+percentage trade effect is `100*(exp(gamma)-1)`. In the paper's FAT-PET/PEESE regressions
+(eqs. 2-4), dividing the original `gamma_i = beta + beta0*SE_i + mu_i` through by `SE_i`
+turns the "true effect" `beta` into the coefficient on `prec` (=1/SE) of the transformed
+regression -- i.e. the "prec (effect)" row already in Table 1/2 above IS the
+publication-bias-corrected `gamma`. Its 95% CI is `coef +/- qt(0.975, df)*se(coef)`;
+exponentiating the point estimate and the CI bounds gives the percentage terms the text
+quotes.
+
+- **Eurozone** ("no detectable effect"): the euro's PET-corrected effect is exactly Table
+  1's `prec (effect)` row, already computed as `T1_FATPET_prec_coef` / `T1_FATPET_prec_t`
+  above (`st_regress(tstat ~ prec, data = d1, robust = TRUE)`). t = 0.05, matching the
+  paper's own sentence verbatim. In percent terms this is 0.067% with a 95% CI of -2.6% to
+  +2.8% -- a range straddling zero, which is what "insignificant" / "no detectable effect"
+  means numerically.
+
+- **Non-euro** ("other currency unions raise trade"): Table 2's PEESE row, eq. (4):
+  `tstat = delta0*se + delta*(1/se)`, no constant (`delta` = "prec (effect)"). The paper's
+  own footnote calls Table 2's t-statistics "Huber-White heteroskedasticity-robust," but the
+  printed PEESE t-stat of 9.83 only reproduces under the CLASSICAL (non-robust) WLS
+  variance: `st_regress(tstat ~ se + prec - 1, data = d0, robust = TRUE)` gives coefficient
+  0.634 with t = 6.20, while `robust = FALSE` gives t = 9.83 -- an exact match to the
+  printed table. This package therefore uses `robust = FALSE` for the PEESE row, which is
+  the choice that actually reproduces the paper's own printed number, not an unreviewed
+  guess. From that fit (coefficient 0.6337, SE 0.0645, df = 31), the 95% CI in gamma units is
+  [0.502, 0.765], which in percent is **65.24% to 114.92%** -- rounding to the paper's own
+  "between 65 and 115%."
+
+| label | claim | paper's text | produced |
+|---|---|---|---|
+| `EURO_corrected_effect_tstat` | euro corrected effect is insignificant | "t-statistic is only 0.05" | t = 0.0505 |
+| `EURO_corrected_effect_pct` (+ CI) | (supporting number, not separately quoted) | -- | 0.067% (95% CI -2.61% to 2.82%) |
+| `NONEURO_PEESE_prec_coef` / `_t` | (Table 2 PEESE cell, feeds the CI below) | "0.634 (9.83)" | 0.6337 (9.83) |
+| `NONEURO_corrected_effect_CI_lo_pct` / `_hi_pct` | non-euro true effect range | "between 65 and 115% with 95% probability" | 65.24% to 114.92% |
+
+3/3 text-stated targets matched (`EURO_corrected_effect_tstat`, and the two PEESE-CI bounds
+`NONEURO_corrected_effect_CI_lo_pct`/`_hi_pct`), plus the two new PEESE table cells
+(`NONEURO_PEESE_prec_coef`, `NONEURO_PEESE_prec_t`) that the CI is built from.

@@ -8,6 +8,11 @@ constant (EIS0), N and study count, and the four derived quantities the
 paper's prose quotes from column (1) (the corrected elasticity for micro
 studies, the corrected elasticity for micro asset holders, and its 95% CI).
 
+**Headline claim reproduced:** the paper's own abstract/conclusion number —
+meta-analysis.cz summarises this paper as **"0.3-0.4"** — via the same
+column-(1) corrected elasticity and CI above. See "Numbers from the paper's
+text" below.
+
 ## Provenance
 
 The task brief said no author code ships with this paper. That is true of the
@@ -120,7 +125,55 @@ seed-dependent).
 | 95% CI lower, micro asset holders (col1) | 0.33 | 0.327613 | MATCH |
 | 95% CI upper, micro asset holders (col1) | 0.39 | 0.391678 | MATCH |
 
-**51 / 51 targets matched.** No misses, no repairs were needed.
+**51 / 51 table-cell targets matched.** No misses, no repairs were needed.
+
+## Numbers from the paper's text
+
+meta-analysis.cz's own one-line summary of this paper is **"0.3-0.4"**. That
+comes straight from the paper's abstract and conclusion, not from a table
+cell:
+
+- Abstract: *"The corrected mean of micro estimates of the EIS for asset
+  holders is around 0.3-0.4."*
+- Conclusion: *"Corrected for the reporting bias, the micro estimates for
+  asset holders are around 1/3, and the number does not change much when I
+  estimate the EIS conditional on many method choices..."*
+- Results section (spelling out the arithmetic behind the abstract number):
+  *"the elasticity reaches 0.36 (= 0.0237 + 0.200 + 0.136) with a narrow 95%
+  confidence interval [0.33, 0.39]."*
+
+This is a single quantity: the corrected EIS for a **micro** estimate for
+**asset holders**, i.e. the sum of the intercept-on-precision term ("EIS0",
+the corrected macro elasticity), the "Micro data" coefficient, and the
+"Asset holders" coefficient — all three already reproduced above from column
+(1) of Table 2, the specification the paper itself uses for this sentence.
+
+| Claim | Quantity | Paper's value | Produced value | Verdict |
+|---|---|---:|---:|---|
+| Abstract "0.3-0.4" / Conclusion "around 1/3" | Corrected elasticity, micro asset holders (col 1) | 0.36 | 0.3596 | MATCH |
+| — | 95% CI lower bound | 0.33 | 0.3276 (rounds to 0.3) | MATCH |
+| — | 95% CI upper bound | 0.39 | 0.3917 (rounds to 0.4) | MATCH |
+
+Both CI bounds round to the abstract's stated range [0.3, 0.4], and the
+point estimate (0.36) sits inside it — this is exactly how the abstract's
+rounded "0.3-0.4" and the conclusion's "around 1/3" follow from the
+column-(1) regression.
+
+**What I did not try to reproduce, and why.** The conclusion also says the
+number "does not change much" as more method-choice controls are added
+(columns 2-7 of Table 2). I attempted the natural extension — each column's
+own intercept-on-precision coefficient plus that column's Micro/Asset
+coefficients — and it is numerically unstable from column (3) onward: some
+estimates have standard errors as small as 0.0004, and once log-scale
+controls (`lncsunits_se`, `lnyears_se`, `lnavyear_se`, ...) enter divided by
+those tiny SEs, the un-printed intercept term swings between roughly -43 and
+0.4 depending on the column, driven by a handful of extreme-leverage
+observations. Table 2's own printed rows (SE, Micro, Asset — all reproduced
+above to 3-4 digits in every column) are unaffected; only the intercept,
+which the paper never prints for columns 2-7, is fragile. Rather than
+manufacture a number the paper never states and that cannot be checked
+against anything printed, this package reports only the claim the paper
+actually spells out arithmetically — column (1).
 
 ## What was NOT attempted, and why
 

@@ -37,9 +37,11 @@
 #
 # Uses ONLY the wrappers in stata_compat.R (st_mixed).
 
-source("stata_compat.R")
+if (file.exists("stata_compat.R")) source("stata_compat.R") else
+  source("https://meta-analysis.cz/gasoline/replication/stata_compat.R")
 
-DATA_PATH <- "C:\\Users\\thavr\\Dropbox\\Study\\Other\\Agents\\Joint\\web_meta\\site\\data\\v1\\gasoline\\gasoline.csv"
+DATA_PATH <- (if (file.exists("gasoline.csv")) "gasoline.csv" else
+     "https://meta-analysis.cz/data/v1/gasoline/gasoline.csv")
 d <- read.csv(DATA_PATH, stringsAsFactors = FALSE)
 
 stopifnot(nrow(d) == 701)
@@ -187,10 +189,155 @@ for (spec in names(models)) {
   emit(sprintf("T6 c%s Observations", spec), stats::nobs(m))
 }
 
+# ---------------------------------------------------------------------------
+# NUMBERS FROM THE PAPER'S OWN TEXT (abstract & conclusion)
+# ---------------------------------------------------------------------------
+# Abstract: "Our results suggest that the income elasticity of gasoline
+# demand is on average much smaller than reported in previous surveys: the
+# mean corrected for publication bias is 0.1 for the short run and 0.23 for
+# the long run."
+# Conclusion (Section 7): "the mean reported short-run elasticity is only
+# 0.1 ... The long-run estimate corrected for publication bias is 0.23,
+# about one-fourth the size of the estimate reported by Espey (1998)."
+# Section 6 (discussion of "best practice" estimates) pins the 0.23 number
+# down precisely: "The estimates ... are consistent with our corrected mean
+# for all elasticities computed with control for vehicle stock presented in
+# the last section, 0.23" -- i.e. the headline "0.23 long run" figure IS the
+# Table 4 long-run/vehicle-stock "1/se" coefficient (printed 0.234), not an
+# average across the vehicle-stock and no-vehicle-stock columns.
+#
+# Table 4's model is the Section 3.2 funnel-asymmetry test with the
+# quadratic correction of Stanley & Doucouliagos (2007) added (paper's
+# Eq. 10, extended to the mixed-effects model as Eq. 12):
+#     t_ij = beta/se_ij + gamma0 * se_ij + u_i + eps_ij
+# (no separate intercept alpha0 -- Table 4 as printed has no Constant row),
+# with the same random-intercept-by-Studyid mixed model used for Table 6.
+# We fit it on the two Carstock subsamples of the same 692-row trimmed
+# sample used above (the trim, and the fact that this file is long-run-only
+# data, are both established above and in REPLICATION.md).
+d_vs   <- d[d$Carstock == 1, ]   # long run, WITH vehicle-stock control (paper N = 346)
+d_novs <- d[d$Carstock == 0, ]   # long run, WITHOUT vehicle-stock control (paper N = 346)
+stopifnot(nrow(d_vs) == 346, nrow(d_novs) == 346)
+
+f4 <- tstat ~ prec + se - 1 + (1 | Studyid)
+m4_vs   <- st_mixed(f4, data = d_vs)
+m4_novs <- st_mixed(f4, data = d_novs)
+
+report_t4 <- function(m, label, n_expected) {
+  fx       <- summary(m)$coefficients
+  coef_val <- fx["prec", "Estimate"]
+  t_val    <- coef_val / fx["prec", "Std. Error"]
+  n        <- stats::nobs(m)
+  stopifnot(n == n_expected)
+  emit(sprintf("T4 %s 1/se coef", label), coef_val)
+  emit(sprintf("T4 %s 1/se t",    label), t_val)
+  emit(sprintf("T4 %s Observations", label), n)
+  coef_val
+}
+
+coef_long_vs   <- report_t4(m4_vs,   "LongRun VehicleStock",   346)
+coef_long_novs <- report_t4(m4_novs, "LongRun NoVehicleStock", 346)
+
+# The paper's headline sentence rounds this Table 4 cell to one/two decimal
+# places ("0.23"). Record that mapping explicitly as its own labeled result,
+# separate from the full-precision Table 4 cell above, so the link between
+# table cell and text sentence is checkable rather than implicit.
+emit("Headline paper-text: long-run elasticity corrected for publication bias (paper says 0.23)",
+     coef_long_vs)
+
+cat("\n")
+cat("========================================================================\n")
+cat("NUMBERS FROM THE PAPER'S OWN TEXT (abstract & conclusion)\n")
+cat("========================================================================\n")
+cat('Paper: "the mean corrected for publication bias is 0.1 for the short\n')
+cat(' run and 0.23 for the long run." (Abstract; restated in the Conclusion.)\n\n')
+
+cat(sprintf("LONG RUN  -- paper states 0.23  -->  produced %.4f  (rounds to %.2f)\n",
+            coef_long_vs, round(coef_long_vs, 2)))
+cat("  Computed as: Table 4's Heckman-type quadratic meta-regression\n")
+cat("  (t = beta/se + gamma0*se, mixed-effects by Studyid), the '1/se'\n")
+cat("  coefficient, fit on the long-run/vehicle-stock subsample (N = 346).\n")
+cat("  Section 6 of the paper explicitly identifies this Table 4 cell as\n")
+cat("  the number behind the headline '0.23' figure.\n")
+cat(sprintf("  [Context only, not part of the headline claim: the long-run/\n"))
+cat(sprintf("   NO-vehicle-stock subsample gives %.4f, the paper's OTHER\n",
+            coef_long_novs))
+cat("   Table 4 long-run column (printed 0.644).]\n\n")
+
+cat("SHORT RUN -- paper states 0.1  -->  NOT COMPUTABLE from this data set.\n")
+cat("  The short-run elasticity (Table 4's printed 0.0999, N = 831) needs\n")
+cat("  the short-run subsample of Dahl's (2012) data. The CSV this package\n")
+cat("  reads (data/v1/gasoline/gasoline.csv) contains only the LONG-RUN\n")
+cat("  sample (701 rows before trim / 692 after -- see the Table 6\n")
+cat("  derivation above and REPLICATION.md): its 'e' range and its\n")
+cat("  Carstock 350/351 split match the paper's long-run sample exactly,\n")
+cat("  and the file carries no short-run indicator or short-run rows.\n")
+cat("  No short-run number is produced here -- none is fabricated to fill\n")
+cat("  the gap. See targets.json, where this figure is listed with kind\n")
+cat("  'headline' and no matching entry in results.json (NOT_COMPUTED).\n")
+
 cat("\n")
 stata_compat_log()
 
 # ---------------------------------------------------------------------------- #
+
+# ============================================================================ #
+# THE PAPER'S OWN HEADLINE SENTENCE, and the summary statistics behind it.
+#
+# Abstract: "The studies cover many countries and report a mean elasticity of 0.28 for the short
+# run and 0.66 for the long run." Section 1 repeats it: "The average reported elasticity for the
+# short run is 0.28; for the long run it is 0.66."
+#
+# That 0.66 is a plain unweighted mean of the reported elasticities over the long-run estimation
+# sample, and Table 5 prints it to three digits as 0.663 ("Sample mean", "Long-run Whole sample").
+# Until now this package reproduced Tables 3, 4 and 6 but never the sentence a reader actually
+# quotes, so it is computed here, together with the Table 2 summary statistics that decompose it.
+#
+# The 0.28 is the SHORT-RUN sample, which this site does not publish; it stays unproduced, as
+# documented above.
+lr_all  <- d$e
+lr_vs   <- d$e[d$Carstock == 1]
+lr_novs <- d$e[d$Carstock == 0]
+
+results[["T5 sample mean, long run whole sample (the abstract's 0.66)"]] <- mean(lr_all)
+results[["T5 sample mean, long run vehicle stock"]]                      <- mean(lr_vs)
+results[["T5 sample mean, long run no vehicle stock"]]                   <- mean(lr_novs)
+
+results[["T2 long run vehicle stock, median"]]    <- stats::median(lr_vs)
+results[["T2 long run vehicle stock, sd"]]        <- stats::sd(lr_vs)
+results[["T2 long run vehicle stock, max"]]       <- max(lr_vs)
+results[["T2 long run no vehicle stock, sd"]]     <- stats::sd(lr_novs)
+results[["T2 long run no vehicle stock, min"]]    <- min(lr_novs)
+results[["T2 long run no vehicle stock, max"]]    <- max(lr_novs)
+
+# Table 5's "Weighted mean" row (0.614 whole, 0.424 vehicle stock, 0.857 no vehicle stock) is
+# NOT produced. The paper states no weighting scheme for it -- Table 5 carries no note, and
+# nothing in the text defines the weights. Six candidate rules were tried against all three
+# printed cells at once, and none reproduces them:
+#
+#   rule                                   whole     vehicle stock   no vehicle stock
+#   paper                                  0.614     0.424           0.857
+#   1 / estimates per study                0.618     0.404           0.859
+#   1 / estimates per study (untrimmed)    0.619     0.400           0.863
+#   1 / estimates per study, within cell   0.633     0.415           0.879
+#   inverse variance 1/se^2                0.426     0.335           0.480
+#   number of observations                 0.656     0.517           0.816
+#   sqrt(number of observations)           0.667     0.486           0.870
+#
+# The study-equal-weight rule is close on the no-vehicle-stock cell and clearly wrong on the
+# vehicle-stock one, so it is not the rule with a rounding difference -- it is a different rule.
+# Guessing further would mean tuning a weight vector until three numbers landed, which is the one
+# thing this package must not do. The three cells are listed in targets.json and left NOT
+# COMPUTED. Recovering them needs the author's own code for Table 5, which is not on the site.
+
+cat("\n== The paper's headline sentence ==\n")
+cat(sprintf("Mean long-run income elasticity (abstract: 0.66; Table 5: 0.663): %.4f  [n=%d]\n",
+            mean(lr_all), length(lr_all)))
+cat(sprintf("  with vehicle stock    (Table 2/5: 0.465): %.4f  [n=%d]\n", mean(lr_vs), length(lr_vs)))
+cat(sprintf("  without vehicle stock (Table 2/5: 0.861): %.4f  [n=%d]\n", mean(lr_novs), length(lr_novs)))
+cat("Table 5's weighted means are NOT produced: the paper defines no weighting scheme for them.\n")
+
+
 results_out <- lapply(results, function(x) unname(as.numeric(x)))
 
 write_json_simple <- function(lst, path) {

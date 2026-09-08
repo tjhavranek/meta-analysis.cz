@@ -5,10 +5,12 @@
 # Source order follows sigma.zip:sigma.do lines 9-262 (see brief). Reads ONLY
 # the published data file.
 
-source("stata_compat.R")
+if (file.exists("stata_compat.R")) source("stata_compat.R") else
+  source("https://meta-analysis.cz/sigma/replication/stata_compat.R")
 
 d <- read.csv(
-  "C:\\Users\\thavr\\Dropbox\\Study\\Other\\Agents\\Joint\\web_meta\\site\\data\\v1\\sigma\\sigma.csv",
+  (if (file.exists("sigma.csv")) "sigma.csv" else
+     "https://meta-analysis.cz/data/v1/sigma/sigma.csv"),
   stringsAsFactors = FALSE
 )
 
@@ -37,11 +39,41 @@ d$se_identif    <- d$se_win5 * d$identif
 d$se_stacoudata <- d$se_win5 * d$stacoudata
 d$se_ind_disagg <- d$se_win5 * d$ind_disagg
 d$se_k_perpet   <- d$se_win5 * d$k_perpet
-# translog: formula_code==6 | formula_code==7, built from the raw "formula"
-# string variable (sigma.do lines 58-72). That variable is NOT among the
-# published sigma.csv columns (verified against the brief's complete column
-# list), so `translog` cannot be reconstructed from the site's published
-# data. Left as NA; see REPLICATION.md.
+# translog (sigma.do lines 247-249):
+#     gen translog = 0
+#     replace translog = 1 if formula_code==6 | formula_code==7
+# and formula_code itself (lines 58-72) is built by matching a RAW STRING
+# variable called `formula` ("Functional form of sigma actually estimated"):
+#     replace formula_code = 6 if formula=="translog"
+#     replace formula_code = 7 if formula=="CES-translog"
+#
+# `formula` enters the do-file at line 9, `import excel sigma.xlsx, firstrow`.
+# The site does not publish sigma.xlsx. What it publishes is the file AFTER
+# that import and after the string columns were dropped: data/v1/sigma/
+# sigma.csv, site/sigma/sigma.parquet and site/sigma/sigma.dta are all the
+# same 3,186 x 115 table, and none of the 115 columns is `formula`,
+# `formula_code`, `limit_val` or `translog` (checked in all three files and
+# in the site's own codebook, api/v1/codebooks/sigma.json). studies.xlsx is a
+# 121 x 6 bibliography; the two PDFs describe the translog specification in
+# prose but list no per-estimate coding.
+#
+# Nor is the dummy recoverable indirectly:
+#   - `t` is populated for 642 rows, ALL of them viadelta==0, and on those
+#     rows t == sigma/se exactly. It is the t-statistic of sigma itself, so
+#     it carries no information about the f(sigma) that was estimated. (Had
+#     it been the originally reported t-statistic, t*se would equal
+#     f(sigma)/|f'(sigma)| and would have identified the formula code.)
+#   - `e_ceslinapprox` is the closest published relative -- the appendix
+#     defines it as "estimated via Taylor series expansion (Kmenta approach
+#     or translog approach)" -- but it merges translog with Kmenta and so is
+#     a strict superset, and it does not reproduce the column.
+#   - An exhaustive screen of all 88 published 0/1 columns, singly and in
+#     every pair (3,916 candidate definitions), fitting the Table 5 Translog
+#     specification for each, produced NO definition reproducing the printed
+#     triple 0.664 / 0.529 / -0.127. The nearest were substantively
+#     meaningless (database_OECD: 0.6645 / 0.5289 / -0.1237).
+# So the column is left uncomputed rather than approximated. See
+# REPLICATION.md, and the benchmark printed below for what the gap costs.
 d$translog   <- NA_real_
 d$se_translog <- NA_real_
 d$se_short   <- d$se_win5 * d$shortrun_expl
@@ -135,28 +167,263 @@ row <- r_sr$coefs[r_sr$coefs$term == "se_short", ]
 results[["T5 Short run: SE*Shortrun coef"]] <- row$estimate
 results[["T5 Short run: SE*Shortrun se"]]   <- row$std.error
 
-## Column: Translog -- BLOCKED. formula_code (translog==1 if formula_code
-## is 6 or 7) is built in sigma.do lines 58-72 from a raw "formula" string
-## variable that is NOT among the published sigma.csv columns (verified
-## against the brief's complete 115-column list). It cannot be
-## reconstructed from anything the site publishes. Reported as NA rather
-## than omitted, so the miss is visible against targets.json.
-## (The paper's "All" column, which also needs se_translog + translog, is
-## excluded from this package for the same reason.)
+## Column: Translog -- BLOCKED for want of the `formula` string variable;
+## the evidence is set out where d$translog is created above. Reported as NA
+## rather than omitted, so the miss stays visible against targets.json, and
+## never filled with a near-miss from a different regression. (The paper's
+## "All" column, which also needs se_translog + translog, is excluded from
+## this package for the same reason.)
+##
+## One temptation is worth naming so that nobody takes it later. The plain
+## study-FE regression WITHOUT any translog term -- Table 1's FE column --
+## has a constant of 0.5286, which rounds to the 0.529 that Table 5's
+## Translog column prints. Emitting that number here would score the target
+## while answering a different question, so it is printed below as a
+## benchmark and kept out of results.json.
 results[["T5 Translog: SE coef"]]       <- NA_real_
 results[["T5 Translog: Constant coef"]] <- NA_real_
+
+## Benchmark for the blocked column, and an independent check on the two
+## conventions the whole of Table 5 rests on (the cons identity, and
+## clustering on STUDY ONLY). Table 1's FE column is the same regression as
+## Table 5's Translog column minus the two translog terms, and the paper
+## prints all four of its cells: SE 0.656 (0.201), Constant 0.529 (0.033).
+m_fe1  <- st_xtreg_fe(sigma_win5 ~ se_win5, data = d, panel = "idstudy")
+co_fe1 <- st_coefs(m_fe1)
+cons_fe1 <- xtreg_fe_cons(m_fe1, d)
+## Note on Table 1's own note, which says "clustered at both the study and
+## country level": on this regression that convention gives 0.0839 for the
+## SE coefficient's standard error, not the printed 0.201. Clustering on
+## study alone gives 0.2009 and 0.0328 -- the printed 0.201 and 0.033. The
+## do-file agrees (line 224: `xtreg ..., fe cluster (idstudy)`), so the
+## table note is loose and the code is right. Table 5 follows the same
+## convention (line 260), which is why every SE in it reproduces.
 
 ## N and study count (common to all columns; the published sample is not
 ## subsetted for these regressions)
 results[["T5 Studies (all columns)"]]      <- length(unique(d$idstudy))
 results[["T5 Observations (all columns)"]] <- nrow(d)
 
+# =============================================================================
+# NUMBERS STATED IN THE PAPER'S OWN TEXT (abstract / Section 1 / Section 5.4)
+# =============================================================================
+# meta-analysis.cz summarises this paper with a single number: "0.3". That is
+# the paper's headline "best practice" mean elasticity, reached at the end of
+# a chain the abstract states in full:
+#
+#   "We show that the large elasticity of substitution between capital and
+#   labor estimated in the literature on average, 0.9, can be explained by
+#   three issues: publication bias, use of cross-country variation, and
+#   omission of the first-order condition for capital. The mean elasticity
+#   conditional on the absence of these issues is 0.3. ... We employ
+#   nonlinear techniques to correct for publication bias, which is
+#   responsible for at least half of the overall reduction in the mean
+#   elasticity from 0.9 to 0.3."
+#
+# and Section 1 states the two uncorrected means directly:
+#
+#   "The mean reported estimate of the elasticity of substitution is 0.9
+#   when we give the same weight to each study; that is, when we weight the
+#   estimates by the inverse of the number of observations reported per
+#   study. A simple mean of all estimates is 0.8."
+#
+# and Section 4.1 / Table 1 gives the bias-corrected mean:
+#
+#   "After correcting for publication bias, the mean elasticity drops from
+#   0.9 to 0.5."
+#
+# and Table 9 ("Results from a synthetic study") prints the final number:
+#   Best practice   0.30   (95% CI: -0.01, 0.60)
+
+## ---- Step 1: uncorrected literature means (Section 1) ---------------------
+## Plain (weighted) averages of the RAW sigma column -- no regression, no
+## wrapper needed. "Inverse of the number of observations [i.e. estimates]
+## reported per study" is the do-file's own `invperstudy` (line 48:
+## `gen invperstudy = 1/perstudy`); `perstudy` itself is a standard Stata
+## `bys idstudy: gen perstudy = _N` count, reconstructed here as n_per_study.
+n_per_study <- ave(d$idstudy, d$idstudy, FUN = length)
+w_study     <- 1 / n_per_study
+
+mean_simple         <- mean(d$sigma)
+mean_study_weighted <- weighted.mean(d$sigma, w_study)
+
+## The simple mean is 0.7471 on the published data, and Section 1 prints
+## 0.8. This is a real disagreement between the paper's text and its own
+## data file, not a defect in the line above: mean(sigma) over all 3,186
+## rows is 0.7470532, and no reading of "a simple mean of all estimates"
+## reaches 0.8. Every neighbouring variant is FURTHER away, not nearer --
+## winsorised 5/95 gives 0.636, dropping the two extreme estimates gives
+## 0.712, trimming to [-2, 4] (the range Fig. 3 plots) gives 0.650, the mean
+## of the 121 study-level medians is 0.715. The one arithmetic that lands on
+## 0.8 is rounding twice, 0.747 -> 0.75 -> 0.8, which is the likeliest
+## explanation given that the companion figure in the same sentence, 0.9,
+## reproduces exactly (0.86701 -> 0.9). The computed value is reported as
+## computed; the target stays missed.
+results[["TEXT mean elasticity, simple (paper: 0.8)"]] <- mean_simple
+results[["TEXT mean elasticity, equal weight per study (paper: 0.9)"]] <- mean_study_weighted
+
+## ---- Step 2: mean corrected for publication bias alone (Table 1, OLS) -----
+## sigma_ij = sigma0 + gamma*SE(sigma_ij) + u_ij, winsorized exactly as
+## Table 5 (st_winsor2, cuts 5/95) and two-way clustered by study AND
+## country (the paper's stated convention, Cameron et al. 2011). Verified
+## against Table 1's OLS column before use: this reproduces the printed
+## 0.881 (0.086) SE coefficient and 0.492 (0.028) constant exactly.
+m_fatpet  <- st_regress(sigma_win5 ~ se_win5, data = d, cluster = ~idstudy + idcountry)
+co_fatpet <- st_coefs(m_fatpet)
+bias_coef        <- co_fatpet$estimate[co_fatpet$term == "se_win5"]
+mean_beyond_bias <- co_fatpet$estimate[co_fatpet$term == "(Intercept)"]
+
+results[["TEXT publication-bias coefficient, Table 1 OLS (paper: 0.881)"]] <- bias_coef
+results[["TEXT mean elasticity corrected for publication bias, Table 1 OLS constant (paper: 0.5, printed 0.492)"]] <- mean_beyond_bias
+
+## Share of the 0.9->0.3 reduction attributable to publication bias alone
+## ("responsible for at least half"), using the paper's own 0.9 and 0.3 as
+## the reduction's endpoints and OUR reproduced bias-corrected mean as the
+## midpoint:
+##
+## This target cannot be hit, and the reason is in how it was recorded
+## rather than in the code. The abstract states a BOUND, not a number:
+## publication bias "is responsible for at least half of the overall
+## reduction in the mean elasticity from 0.9 to 0.3." The paper prints no
+## share; targets.json holds 0.5 as a stand-in for the words "at least
+## half", and the verifier scores it by equality at one decimal. Every
+## honest construction of the quantity satisfies the bound and rounds to
+## 0.7, not 0.5:
+##   with OUR reproduced corrected mean 0.4919  -> (0.9-0.4919)/0.6 = 0.680
+##   with the paper's own rounded 0.5           -> (0.9-0.5)/0.6     = 0.667
+##   with Table 2's nonlinear corrections
+##     (0.52, 0.55, 0.43, 0.50)                 -> 0.58 to 0.78
+## So the paper's claim is confirmed -- the share is comfortably above a
+## half -- while the recorded target stays missed. Nothing here is tuned to
+## bring it closer.
+reduction_total   <- 0.9 - 0.3
+reduction_pubbias <- 0.9 - mean_beyond_bias
+share_pubbias     <- reduction_pubbias / reduction_total
+share_paper_own   <- (0.9 - 0.5) / reduction_total   # the paper's own rounded arithmetic
+results[["TEXT share of 0.9->0.3 reduction due to publication bias alone (paper: 'at least half', i.e. >= 0.5)"]] <- share_pubbias
+
+## ---- Step 3: the "best practice" mean, 0.3 (Table 9) ----------------------
+## NOT independently reproduced. Table 9 is a synthetic-study fitted value
+## built from BOTH a Bayesian model average over 71 candidate variables
+## (the `bms` package: birth-death MCMC, 5,000-10,000 models, "UIP"/"BRIC"
+## g-priors -- see sigma.zip:sigma_BMA_FMA.R lines 54-106) AND a frequentist
+## model average, each evaluated at chosen covariate extremes (Section 5.4).
+## stata_compat.R has no wrapper for Bayesian/frequentist model averaging on
+## purpose -- it is a Stata-parity file, hash-checked, and building a new
+## estimator into it is out of scope for this package. So the exact 0.30
+## (-0.01, 0.60) cannot be produced from the permitted wrappers.
+##
+## What CAN legitimately be built with st_regress is the paper's OWN
+## published stand-in for the full model average: Table 7's "Frequentist
+## check" column, described in the table's own notes as "we include only
+## explanatory variables with PIP > 0.8" -- i.e. one OLS regression (same
+## winsorizing and two-way clustering as Table 1) on the subset of variables
+## the BMA flagged as robust. Fitting that regression and evaluating it at
+## the covariate values Section 5.4 states for "best practice" (SE = 0 to
+## remove publication bias; no cross-country variation, the paper's second
+## named issue; a system of FOCs for both capital and labor -- i.e. every
+## single-equation FOC/user-cost dummy at 0, the paper's third named issue;
+## normalized; long-run and gross, not short-run or net; top journal and
+## most-cited; no linear approximation or byproduct estimates; the sample
+## mean for every variable the text says it has "no strong opinion" on)
+## gives a proxy for the same exercise -- built only from published tools,
+## not a re-run of the actual BMA/FMA machinery.
+d$net       <- ifelse(d$grosssigma == -1, 1, 0)          # do-file lines 52-53
+d$lnmidpoint <- log(d$midpoint - 1850 + 1)                # do-file line 32
+d$lncit     <- log(d$citations + 1)                       # do-file line 37 analogue
+
+fc_vars <- c("se_win5", "lnmidpoint", "panel", "inddata", "country_Eur", "database_OECD",
+             "e_ceslinapprox", "e_foc_l_w", "e_foc_k_share", "e_foc_l_share", "norm",
+             "UCE", "diff", "shortrun_expl", "pfoth", "tcconst", "net", "top", "lncit", "byproduct")
+fc_fml  <- stats::as.formula(paste("sigma_win5 ~", paste(fc_vars, collapse = " + ")))
+m_fc    <- st_regress(fc_fml, data = d, cluster = ~idstudy + idcountry)
+co_fc   <- st_coefs(m_fc)
+b_fc    <- stats::setNames(co_fc$estimate, co_fc$term)
+
+## Best-practice covariate settings (see comment above for the mapping to
+## Section 5.4's stated preferences); sample mean wherever the text
+## explicitly declines to take a position.
+bp_x <- c(
+  se_win5        = 0,                     # remove publication bias
+  lnmidpoint     = max(d$lnmidpoint),      # "large studies using newer data"
+  panel          = mean(d$panel),          # no stated opinion on data dimension
+  inddata        = mean(d$inddata),        # no stated opinion on data source
+  country_Eur    = 0,                      # remove cross-country variation
+  database_OECD  = mean(d$database_OECD),  # no stated opinion
+  e_ceslinapprox = 0,                      # "we do not prefer linear approximation"
+  e_foc_l_w      = 0,                      # prefer a SYSTEM of FOCs, not single-equation FOC_L
+  e_foc_k_share  = 0,                      # prefer a SYSTEM of FOCs, not single-equation FOC_K
+  e_foc_l_share  = 0,                      # ditto
+  norm           = 1,                      # "tied with normalization"
+  UCE            = 0,                      # not a user-cost single-equation approach
+  diff           = mean(d$diff),           # no stated opinion
+  shortrun_expl  = 0,                      # central estimate is long-run
+  pfoth          = mean(d$pfoth),          # no stated opinion
+  tcconst        = mean(d$tcconst),        # no stated opinion
+  net            = 0,                      # central estimate is gross, not net
+  top            = 1,                      # "prefer studies... published in top journals"
+  lncit          = max(d$lncit),           # "prefer studies that are highly cited"
+  byproduct      = 0                       # "we do not prefer... byproduct estimates"
+)
+common_terms <- intersect(names(bp_x), names(b_fc))
+best_practice_proxy <- unname(b_fc["(Intercept)"] + sum(b_fc[common_terms] * bp_x[common_terms]))
+
+results[["TEXT 'best practice' implied elasticity -- OUR st_regress proxy (paper's Table 9 value: 0.30, 95% CI -0.01 to 0.60; NOT independently reproduced -- see comment above)"]] <- best_practice_proxy
+
 # --- print every produced number, then write results.json ------------------
 for (nm in names(results)) {
   cat(sprintf("%-45s %s\n", nm, format(results[[nm]], digits = 8)))
 }
 
-out_dir <- "C:\\Users\\thavr\\AppData\\Local\\Temp\\claude\\C--Users-thavr-Dropbox-Study-Other-Agents-Joint-web-meta\\9ad3402b-4800-46ed-898e-3beabcc032d0\\scratchpad\\repl\\packages\\sigma"
+cat("\n============================================================\n")
+cat("THE PAPER'S HEADLINE NUMBERS (abstract / Section 1 / Table 9)\n")
+cat("============================================================\n")
+cat(sprintf("Uncorrected mean elasticity, simple            paper: 0.8   produced: %.3f\n", mean_simple))
+cat(sprintf("Uncorrected mean elasticity, equal weight/study paper: 0.9   produced: %.3f\n", mean_study_weighted))
+cat(sprintf("Mean elasticity beyond publication bias (Tbl 1) paper: 0.5   produced: %.3f\n", mean_beyond_bias))
+cat(sprintf("Share of 0.9->0.3 reduction from bias alone      paper: >=0.5 produced: %.3f\n", share_pubbias))
+cat(sprintf("'Best practice' mean elasticity (Table 9)        paper: 0.30 (-0.01, 0.60)\n"))
+cat(sprintf("  -> OUR st_regress proxy (NOT the paper's BMA/FMA machinery): %.3f\n", best_practice_proxy))
+cat("     (falls inside the paper's own 95% CI for this quantity, but is not\n")
+cat("      an independent re-derivation of the point estimate -- see comment\n")
+cat("      in the source above 'Step 3' for exactly what is and is not\n")
+cat("      reproduced here, and why.)\n")
+cat("============================================================\n\n")
+
+cat("============================================================\n")
+cat("WHAT THIS PACKAGE DOES NOT REPRODUCE, AND WHY\n")
+cat("============================================================\n")
+cat("1-2. Table 5, Translog column (SE 0.664, Constant 0.529): NOT COMPUTED.\n")
+cat("     The dummy is translog==1 if formula_code is 6 or 7, and\n")
+cat("     formula_code is built by matching a raw string variable `formula`\n")
+cat("     that lives only in the author's sigma.xlsx. The site publishes the\n")
+cat("     post-import 3,186 x 115 table (csv, parquet and dta alike) and\n")
+cat("     `formula` is not one of the 115 columns. No published column, and\n")
+cat("     no pair of them, reproduces the printed cells.\n")
+cat(sprintf("     Benchmark -- the same regression WITHOUT the two translog terms\n"))
+cat(sprintf("     (Table 1, FE column; the paper prints 0.656 (0.201), 0.529 (0.033)):\n"))
+cat(sprintf("       SE       %.4f (%.4f)\n", co_fe1$estimate[co_fe1$term == "se_win5"],
+            co_fe1$std.error[co_fe1$term == "se_win5"]))
+cat(sprintf("       Constant %.4f (%.4f)\n", cons_fe1$estimate, cons_fe1$std.error))
+cat("     So the missing dummy is worth about 0.008 on the SE coefficient\n")
+cat("     (0.656 against the printed 0.664) and nothing visible on the\n")
+cat("     constant. That the four cells of Table 1's FE column come back\n")
+cat("     exactly says the pipeline around the gap is sound.\n")
+cat(sprintf("3.   Simple mean of all estimates: computed %.4f, Section 1 prints 0.8.\n",
+            mean_simple))
+cat("     A disagreement between the paper's text and its own data, not a\n")
+cat("     defect here; the study-weighted mean in the same sentence, 0.9,\n")
+cat("     reproduces exactly. Likeliest cause: 0.747 -> 0.75 -> 0.8.\n")
+cat(sprintf("4.   Share of the 0.9->0.3 reduction from bias alone: computed %.3f.\n",
+            share_pubbias))
+cat(sprintf("     The paper prints no share -- it states a bound, 'at least half'.\n"))
+cat(sprintf("     The recorded target, 0.5, is that phrase written as a number, and\n"))
+cat(sprintf("     is scored by equality. The paper's own rounded arithmetic gives\n"))
+cat(sprintf("     %.3f, ours %.3f; both clear the bound and both round to 0.7.\n",
+            share_paper_own, share_pubbias))
+cat("============================================================\n\n")
+
+out_dir <- "."
 if (!requireNamespace("jsonlite", quietly = TRUE)) {
   # minimal fallback if jsonlite is unavailable
   con <- file(file.path(out_dir, "results.json"), "w")

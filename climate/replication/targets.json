@@ -1,0 +1,36 @@
+[
+  {"label": "T1 OLS 1/SE coef",         "printed": 1.276,  "digits": 3, "kind": "deterministic"},
+  {"label": "T1 OLS 1/SE se",           "printed": 0.316,  "digits": 3, "kind": "deterministic"},
+  {"label": "T1 OLS mean/SE coef",      "printed": -0.732, "digits": 3, "kind": "deterministic"},
+  {"label": "T1 OLS mean/SE se",        "printed": 0.286,  "digits": 3, "kind": "deterministic"},
+  {"label": "T1 OLS SE coef",           "printed": -0.316, "digits": 3, "kind": "deterministic"},
+  {"label": "T1 OLS SE se",             "printed": 0.086,  "digits": 3, "kind": "deterministic"},
+  {"label": "T1 OLS constant coef",     "printed": 3.054,  "digits": 3, "kind": "deterministic"},
+  {"label": "T1 OLS constant se",       "printed": 0.232,  "digits": 3, "kind": "deterministic"},
+  {"label": "T1 OLS N",                 "printed": 48,     "digits": 0, "kind": "count"},
+  {"label": "T1 OLS R2",                "printed": 0.728,  "digits": 3, "kind": "deterministic"},
+
+  {"label": "T1 FE 1/SE coef",          "printed": 2.087,  "digits": 3, "kind": "deterministic"},
+  {"label": "T1 FE 1/SE se",            "printed": 0.086,  "digits": 3, "kind": "deterministic"},
+  {"label": "T1 FE mean/SE coef",       "printed": -1.55,  "digits": 2, "kind": "deterministic"},
+  {"label": "T1 FE mean/SE se",         "printed": 0.079,  "digits": 3, "kind": "deterministic"},
+  {"label": "T1 FE SE coef",            "printed": -0.226, "digits": 3, "kind": "deterministic"},
+  {"label": "T1 FE SE se",              "printed": 0.017,  "digits": 3, "kind": "deterministic"},
+  {"label": "T1 FE constant coef",      "printed": 2.353,  "digits": 3, "kind": "deterministic"},
+  {"label": "T1 FE constant se",        "printed": 0.068,  "digits": 3, "kind": "deterministic"},
+  {"label": "T1 FE N",                  "printed": 48,     "digits": 0, "kind": "count"},
+  {"label": "T1 FE R2",                 "printed": 0.647,  "digits": 3, "kind": "deterministic"},
+
+  {"label": "T1 ME 1/SE coef",          "printed": 1.617,  "digits": 3, "kind": "deterministic"},
+  {"label": "T1 ME 1/SE se",            "printed": 0.19,   "digits": 2, "kind": "deterministic"},
+  {"label": "T1 ME mean/SE coef",       "printed": -1.074, "digits": 3, "kind": "deterministic"},
+  {"label": "T1 ME mean/SE se",         "printed": 0.183,  "digits": 3, "kind": "deterministic"},
+  {"label": "T1 ME SE coef",            "printed": -0.234, "digits": 3, "kind": "deterministic"},
+  {"label": "T1 ME SE se",              "printed": 0.132,  "digits": 3, "kind": "deterministic"},
+  {"label": "T1 ME constant coef",      "printed": 2.5,    "digits": 1, "kind": "deterministic"},
+  {"label": "T1 ME constant se",        "printed": 0.369,  "digits": 3, "kind": "deterministic"},
+
+  {"label": "text uncorrected average estimate", "printed": 3.27, "digits": 2, "kind": "deterministic"},
+  {"label": "text lowest estimate",              "printed": 0.7,  "digits": 1, "kind": "count"},
+  {"label": "text n estimates <= average true effect (1.6)", "printed": 5, "digits": 0, "kind": "count"}
+]

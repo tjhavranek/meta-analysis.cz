@@ -101,6 +101,98 @@ p-values, exact for N).
 
 None.
 
+## Numbers from the paper's text
+
+meta-analysis.cz summarises this paper as: **"income and asset market participation are
+the most effective factors explaining cross-country differences."** That sentence
+paraphrases the paper's own Abstract: *"Our results suggest that income and asset market
+participation are the most effective factors in explaining the heterogeneity: households
+in rich countries and countries with high stock market participation substitute a larger
+fraction of consumption intertemporally..."*
+
+The paper backs that claim with four numbers in the running text (Introduction and
+Section 4), all of them **Bayesian model averaging (BMA) posterior means** — not the
+frequentist/OLS checks reproduced in Table 7 above:
+
+1. Introduction: *"a 10-percentage-point increase in the rate of stock market
+   participation is associated with an increase in the EIS of 0.24."* Section 4 names
+   the source: *"the estimated posterior mean for the regression coefficient... is
+   2.4"* — the core-countries BMA specification (same table as Table 2), 2.4 × 0.10.
+2. Introduction: *"studies estimating the EIS using a sub-sample of rich households or
+   asset holders find on average an EIS larger by 0.21."* — BMA posterior mean for
+   "Asset holders" in the core-countries specification (Table 2: post. mean 0.210).
+3. Section 4: *"the estimate tends to be substantially larger as well: by 0.35."* — BMA
+   posterior mean for "Asset holders" in the all-countries specification (Table 1:
+   post. mean 0.349).
+4. Section 4 / Table 3, "The economic significance of differences in country
+   characteristics": *"Out of the five country-level variables, stock market
+   participation has the largest effect, followed by GDP per capita. The other
+   variables do not seem to matter much."* Table 3 gives, for each variable, a
+   "maximum effect" (BMA coefficient × sample range) and "standard-deviation effect"
+   (BMA coefficient × sample SD) — this table is the paper's direct quantitative case
+   for "most effective factors."
+
+`stata_compat.R` has no BMA wrapper (no equivalent of Stata's `bma`/`wbma`, or the R
+`bms` package), and the brief's author-code excerpt has no BMA-fitting lines — the same
+reason the BMA half of Table 7 is unsupported (see below). **The BMA posterior means
+behind numbers 1–4 above cannot be reproduced with the tools this package is restricted
+to**, and nothing below is adjusted to force a match with them.
+
+What run.R does instead: it reproduces, with `st_regress()`, the **frequentist/OLS
+counterpart** the paper itself prints side by side with each BMA number, in the same two
+tables (Table 1, all countries; Table 2, core countries) the BMA posterior means above
+come from — `eis_det.do` lines 122 and 140 respectively. The paper states explicitly
+that "the results of the frequentist check are very similar to the BMA results" (Section
+4), so this is the paper's own robustness check on the same numbers, not a substitute
+chosen after the fact.
+
+**Table 1 (all countries) and Table 2 (core countries), frequentist check — full match.**
+All 16 reproduced cells (5 country-level coefficients × {coef, SE, p} plus both N's) round
+to the paper's printed values exactly:
+
+| Table | Variable | Printed coef | Produced | Printed SE | Produced | Printed p | Produced |
+|---|---|---|---|---|---|---|---|
+| 1 (all countries) | GDP per capita | 0.126 | 0.126 | 0.084 | 0.084 | 0.138 | 0.138 |
+| 1 | Credit availability | -0.033 | -0.033 | 0.055 | 0.055 | 0.553 | 0.553 |
+| 1 | Real interest | -0.003 | -0.003 | 0.006 | 0.006 | 0.635 | 0.635 |
+| 1 | Rule of law | -0.019 | -0.019 | 0.074 | 0.074 | 0.800 | 0.800 |
+| 1 | Asset holders | 0.421 | 0.421 | 0.089 | 0.089 | 0.000 | 0.000 |
+| 2 (core countries) | Stock market partic. | 2.221 | 2.221 | 0.542 | 0.542 | 0.000 | 0.000 |
+| 2 | GDP per capita | 0.116 | 0.116 | 0.138 | 0.138 | 0.405 | 0.405 |
+| 2 | Asset holders | 0.372 | 0.372 | 0.143 | 0.143 | 0.015 | 0.015 |
+| — | N (Table 1) | 2526 | 2526 | | | | |
+| — | N (Table 2) | 2254 | 2254 | | | | |
+
+**The headline (BMA-based) quantities — reproduced OLS counterpart, honestly not identical:**
+
+| # | Claim | Paper value (BMA) | Reproduced (OLS) | Verdict |
+|---|---|---|---|---|
+| 1 | 10pp ↑ stock mkt. partic. → ΔEIS | 0.24 | 0.222 (Table 2 marketpartic × 0.10) | Same order of magnitude and direction; not identical — OLS point estimate (2.221) vs. BMA posterior mean (2.4) |
+| 2 | EIS premium, asset holders, core countries | 0.21 | 0.372 (Table 2 stockhold coef) | Same sign, larger in OLS — BMA shrinks toward zero because the variable's posterior inclusion probability is only 0.558 (i.e. BMA averages in models that exclude it); OLS always includes it |
+| 3 | EIS premium, asset holders, all countries | 0.35 | 0.421 (Table 1 stockhold coef) | Same pattern; PIP = 0.849 here, so less shrinkage than in row 2, and the OLS/BMA gap is correspondingly smaller |
+| 4a | Econ. significance, max effect: stock mkt. partic. | 0.931 | 0.846 | Same order of magnitude |
+| 4a | Econ. significance, max effect: GDP per capita | 0.683 | 0.621 | Same order of magnitude |
+| 4a | Econ. significance, max effect: credit availability | -0.119 | -0.104 | Same order of magnitude |
+| 4a | Econ. significance, max effect: real interest | -0.265 | -0.148 | Same sign, smaller magnitude |
+| 4a | Econ. significance, max effect: rule of law | -0.087 | -0.070 | Same order of magnitude |
+| 4b | Econ. significance, SD effect (all 5 vars) | 0.141 / 0.088 / -0.020 / -0.019 / -0.012 | 0.126 / 0.075 / -0.017 / -0.011 / -0.010 | Same order of magnitude and, for every variable, the same sign |
+
+**What is actually reproduced, and what is not.** Rows 1–3 are not exact matches, and
+should not be read as such: they compare a BMA posterior mean (a weighted average across
+many candidate models, each variable's weight given by its posterior inclusion
+probability) against a single OLS point estimate from one fully-specified model. The gap
+between the two grows with how far a variable's posterior inclusion probability is below
+1 — exactly what row 2 (PIP 0.558, larger OLS/BMA gap) versus row 3 (PIP 0.849, smaller
+gap) shows. What *is* fully reproduced, and is the load-bearing result for the
+"most effective factors" claim: **the ranking**. By |max effect| in row 4, the
+OLS-reproduced ordering is stock market participation (0.846) > GDP per capita (0.621) >
+real interest (0.148) > credit availability (0.104) > rule of law (0.070) — the identical
+ordering to the paper's own BMA-based Table 3. Income (GDP per capita) and asset market
+participation (stock market participation, asset holders) are the two largest-magnitude,
+correctly-signed effects among the country-level variables under OLS just as they are
+under BMA; that ranking, not any single decimal figure, is the paper's actual evidence
+for "most effective factors," and it survives switching estimators completely.
+
 ## Unsupported
 
 The Bayesian model averaging half of Table 7 (Post. mean / Post. std. dev. / PIP columns) is

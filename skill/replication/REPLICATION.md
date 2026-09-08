@@ -155,7 +155,39 @@ above.
 
 None of these were attempted; they are not counted as misses.
 
+## Numbers from the paper's text
+
+meta-analysis.cz summarises this paper as: **"4, with a lower bound of 2 and smaller values in
+developing countries."** That sentence paraphrases the abstract: *"The implied mean elasticity
+is 4, with a lower bound of 2. Elasticities are smaller for developing countries."* `run.R` now
+also computes and prints the numbers behind it, using only the FE/IV wrappers already in
+`stata_compat.R` (no new estimator).
+
+| Claim | Quantity | Paper's value | Produced | Verdict |
+|---|---|---|---|---|
+| "...implying the elasticity of substitution around 4" (Sec. I, discussing Table 1 Panel B — primary studies whose *method* is IV) | Implied elasticity `-1/`("Effect beyond bias"), FE and IV columns | ≈4 (precise BMA figure: 3.7, 95% CI 2–20, Table 5) | FE: 6.69, IV: 2.50 — brackets 4 | **Partial.** The two computable techniques straddle 4; the paper's own point figure is a Bayesian-model-averaging combination over 24 moderators (online appendix D/E) with no wrapper in `stata_compat.R` — not independently reproduced. |
+| "...with a lower bound of 2" (abstract) | Lower end of Table 5's 95% credible interval on the BMA overall estimate | 2 | — | **Not reproduced** — same BMA procedure as above, no wrapper exists for it. As a qualitative cross-check only (a different quantity, not a substitute): the developing-country IV implied elasticity below independently lands at 2.19. |
+| "Elasticities are smaller for developing countries" / "developed countries (above 4)... developing countries (around 2.5)" (Sec. III, online appendix table C3–C5) | Implied elasticity for `developed_country==1` and `developing_country==1` subsamples (same FE/IV commands as Table 1, `skill.do` lines 234–258) | developed > 4; developing ≈ 2.5 | Developing: FE 2.87, IV 2.19 (both t-significant, matches closely). Developed: FE coef 0.0194 (t=0.22), IV coef 0.0674 (t=1.00, 1st-stage F=8.7) — both statistically indistinguishable from zero, so `-1/coef` (−51, −15) is large in magnitude but its sign is not economically meaningful | **Developing: match.** **Developed: direction corroborated, point value not.** A corrected inverse elasticity close to zero is exactly what a "large" implied elasticity looks like, but neither FE nor IV pins down a stable positive number here (and the IV column's weak first stage means it shouldn't be trusted for this subsample regardless). |
+
+Why the "4" and "lower bound of 2" cannot be nailed down exactly: they are the paper's Table 5
+("Implied Elasticities") headline, built from a Bayesian-model-averaging-weighted ("subjective
+best practice") combination of primary estimates over 24 moderator variables with a dilution
+prior (online appendix D/E) — a fundamentally different, non-regression-wrapper procedure with
+no equivalent among `st_ivreg2`, `st_xtreg_fe`, `st_regress`, `st_metan`, `st_winsor*`,
+`st_drop_if`, `st_keep_if`, `st_coefs`. This is the same category of limitation already noted
+for the BE/EK/SM columns of Table 1 — not attempted, not faked. The two Table-1-style FE/IV
+regressions on the `iv_method2==1` subsample (Panel B) are the closest evidence obtainable from
+the allowed toolkit, and they do bracket 4 (2.50 to 6.69).
+
+The developing-country subsample, by contrast, needs nothing beyond the wrappers already used
+for Table 1 — it is exactly the same FE/IV specification run on a different filter — and it
+reproduces the paper's qualitative "around 2.5" closely (2.19–2.87) with statistically
+significant coefficients in both columns.
+
 ## Verdict
 
-**MATCH.** 33/33 targets match at the printed precision after fixing how `run.R` computes the
-IV first-stage F (see above); `stata_compat.R` was not modified.
+**MATCH.** 33/33 Table 1 targets match at the printed precision after fixing how `run.R`
+computes the IV first-stage F (see above); `stata_compat.R` was not modified. For the paper's
+headline text claims (abstract/Sec. III), the developing-country figure reproduces closely; the
+overall "4"/"lower bound of 2" figure is a Bayesian-model-averaging result with no available
+wrapper and is bracketed rather than exactly reproduced (see "Numbers from the paper's text").

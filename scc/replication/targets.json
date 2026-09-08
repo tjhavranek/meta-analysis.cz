@@ -69,5 +69,35 @@
   {"label": "T3B_ME_upse_se",        "printed": 0.0100,  "digits": 4, "kind": "stochastic"},
   {"label": "T3B_ME_const",          "printed": -17.78,  "digits": 2, "kind": "stochastic"},
   {"label": "T3B_ME_const_se",       "printed": 48.81,   "digits": 2, "kind": "stochastic"},
-  {"label": "T3B_ME_N",              "printed": 267,      "digits": 0, "kind": "count"}
+  {"label": "T3B_ME_N",              "printed": 267,      "digits": 0, "kind": "count"},
+
+  {"label": "HL_upper_corrected_mean_134",  "printed": 134,   "digits": 0, "kind": "headline",
+   "note": "Abstract/conclusion: 'the mean reported SCC corrected for the selective reporting bias range between USD 0 and 134'; 'the largest corrected mean SCC we get for estimates with uncertainty is USD 134'. = T3A_OLS_const (Table 3, Panel A, OLS column)."},
+
+  {"label": "HL_lower_corrected_mean_raw",  "printed": 0,   "digits": 0, "kind": "headline",
+   "note": "Lower end of the abstract's 'USD 0 and 134' range. Text just before Table 3: the mixed-effects column's estimate of the underlying SCC is 'statistically insignificant, and here even negative' -- this is T3A_ME_const = -18.69 (s.e. 48.43). The paper states the range floor as literal 0 (a negative corrected mean is not economically meaningful); we report the exact negative point estimate as well as the floored value so nothing is hidden."},
+
+  {"label": "HL_lower_corrected_mean_floor0", "printed": 0, "digits": 0, "kind": "headline",
+   "note": "max(0, T3A_ME_const) -- the '0' as literally printed in the abstract."},
+
+  {"label": "HL_uncorrected_mean_d1_411",   "printed": 411,   "digits": 0, "kind": "headline",
+   "note": "Conclusion: 'because the uncorrected mean of these estimates is 411'. Mean of scc for dataset==1 (estimates with uncertainty, N=267)."},
+
+  {"label": "HL_exaggeration_factor",       "printed": 3,   "digits": 0, "kind": "headline",
+   "note": "Conclusion: 'the reported estimates of the SCC are exaggerated at least threefold on average'. = 411 / 134."},
+
+  {"label": "HL_studylevel_largest_corrected_mean_61", "printed": 61,   "digits": 0, "kind": "headline",
+   "note": "Conclusion: 'the largest corrected mean SCC we obtain for study-level estimates with or without uncertainty is 61'. Table 4 (study-level medians), OLS column = scc.do line 113 `reg scc stdlow if dataset==2, vce(robust)`, constant."},
+
+  {"label": "HL_overall_mean_d0_290",       "printed": 290,   "digits": 0, "kind": "headline",
+   "note": "Conclusion: 'more than four times less than the overall mean of 290'; also Table 1 and Section 2: mean SCC across all 809 estimates. Mean of scc for dataset==0 (N=809)."},
+
+  {"label": "HL_studylevel_ratio",          "printed": 4,   "digits": 0, "kind": "headline",
+   "note": "Conclusion: 'more than four times less' = 290 / 61."},
+
+  {"label": "HL_usd_per_tCO2_2014prices_paper_rounded", "printed": 39,   "digits": 0, "kind": "headline",
+   "note": "Conclusion: 'we recompute our largest estimate to USD per to[n] of carbon dioxide ... and 2014 prices ... The result is USD 39 (= 134 . 1.07/3.67)'. Pure unit conversion, no new estimation."},
+
+  {"label": "HL_usd_per_tCO2_2014prices_from_exact_estimate", "printed": 39,   "digits": 0, "kind": "headline",
+   "note": "Same conversion applied to our own unrounded T3A_OLS_const rather than the paper's rounded 134, for transparency."}
 ]

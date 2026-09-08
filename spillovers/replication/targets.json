@@ -1,0 +1,221 @@
+[
+ {
+  "label": "PanelA_All_Constant_coef",
+  "printed": -0.0255,
+  "digits": 4,
+  "kind": "deterministic"
+ },
+ {
+  "label": "PanelA_All_Constant_se",
+  "printed": 0.496,
+  "digits": 3,
+  "kind": "deterministic"
+ },
+ {
+  "label": "PanelA_All_Precision_coef",
+  "printed": 0.168,
+  "digits": 3,
+  "kind": "deterministic"
+ },
+ {
+  "label": "PanelA_All_Precision_se",
+  "printed": 0.0241,
+  "digits": 4,
+  "kind": "deterministic"
+ },
+ {
+  "label": "PanelA_All_N",
+  "printed": 1311,
+  "digits": 0,
+  "kind": "count"
+ },
+ {
+  "label": "PanelA_All_Studies",
+  "printed": 55,
+  "digits": 0,
+  "kind": "count"
+ },
+ {
+  "label": "PanelA_Pub_Constant_coef",
+  "printed": 1.083,
+  "digits": 3,
+  "kind": "deterministic"
+ },
+ {
+  "label": "PanelA_Pub_Constant_se",
+  "printed": 0.656,
+  "digits": 3,
+  "kind": "deterministic"
+ },
+ {
+  "label": "PanelA_Pub_Precision_coef",
+  "printed": 0.178,
+  "digits": 3,
+  "kind": "deterministic"
+ },
+ {
+  "label": "PanelA_Pub_Precision_se",
+  "printed": 0.0295,
+  "digits": 4,
+  "kind": "deterministic"
+ },
+ {
+  "label": "PanelA_Pub_N",
+  "printed": 370,
+  "digits": 0,
+  "kind": "discrepancy",
+  "note": "The paper prints N = 370 for this published-only column; this package computes 378. The authors' OWN LOG of the published run (Study/Papers/3_Vertical_Spillovers/Stata/vertical.log, 13 Jun 2010) contains 378 -- as 'Mixed-effects REML regression, Number of obs = 378, Group variable: idstudy, Number of groups = 26' -- and contains no regression anywhere with N = 370. So this package reproduces what the authors' code actually produced, and the printed figure differs from it. All three published-only columns show the same pattern (paper 370/241/305, log and this package 378/249/321), which points to the table being built from an earlier run rather than to an error here. The coefficients and standard errors of these same columns reproduce. Recorded for the author; the printed value is left exactly as published."
+ },
+ {
+  "label": "PanelA_Pub_Studies",
+  "printed": 26,
+  "digits": 0,
+  "kind": "count"
+ },
+ {
+  "label": "PanelB_All_Constant_coef",
+  "printed": 0.729,
+  "digits": 3,
+  "kind": "deterministic"
+ },
+ {
+  "label": "PanelB_All_Constant_se",
+  "printed": 0.776,
+  "digits": 3,
+  "kind": "deterministic"
+ },
+ {
+  "label": "PanelB_All_Precision_coef",
+  "printed": 0.0872,
+  "digits": 4,
+  "kind": "deterministic"
+ },
+ {
+  "label": "PanelB_All_Precision_se",
+  "printed": 0.0287,
+  "digits": 4,
+  "kind": "deterministic"
+ },
+ {
+  "label": "PanelB_All_N",
+  "printed": 1030,
+  "digits": 0,
+  "kind": "count"
+ },
+ {
+  "label": "PanelB_All_Studies",
+  "printed": 44,
+  "digits": 0,
+  "kind": "count"
+ },
+ {
+  "label": "PanelB_Pub_Constant_coef",
+  "printed": -0.437,
+  "digits": 3,
+  "kind": "deterministic"
+ },
+ {
+  "label": "PanelB_Pub_Constant_se",
+  "printed": 1.033,
+  "digits": 3,
+  "kind": "deterministic"
+ },
+ {
+  "label": "PanelB_Pub_Precision_coef",
+  "printed": 0.258,
+  "digits": 3,
+  "kind": "deterministic"
+ },
+ {
+  "label": "PanelB_Pub_Precision_se",
+  "printed": 0.0454,
+  "digits": 4,
+  "kind": "deterministic"
+ },
+ {
+  "label": "PanelB_Pub_N",
+  "printed": 241,
+  "digits": 0,
+  "kind": "discrepancy",
+  "note": "The paper prints N = 241 for this published-only column; this package computes 249. The authors' OWN LOG of the published run (Study/Papers/3_Vertical_Spillovers/Stata/vertical.log, 13 Jun 2010) contains 249 -- as 'Mixed-effects REML regression, Number of obs = 249, Group variable: idstudy, Number of groups = 19' -- and contains no regression anywhere with N = 241. So this package reproduces what the authors' code actually produced, and the printed figure differs from it. All three published-only columns show the same pattern (paper 370/241/305, log and this package 378/249/321), which points to the table being built from an earlier run rather than to an error here. The coefficients and standard errors of these same columns reproduce. Recorded for the author; the printed value is left exactly as published."
+ },
+ {
+  "label": "PanelB_Pub_Studies",
+  "printed": 19,
+  "digits": 0,
+  "kind": "count"
+ },
+ {
+  "label": "PanelC_All_Constant_coef",
+  "printed": 0.363,
+  "digits": 3,
+  "kind": "deterministic"
+ },
+ {
+  "label": "PanelC_All_Constant_se",
+  "printed": 0.295,
+  "digits": 3,
+  "kind": "deterministic"
+ },
+ {
+  "label": "PanelC_All_Precision_coef",
+  "printed": 0.00466,
+  "digits": 5,
+  "kind": "deterministic"
+ },
+ {
+  "label": "PanelC_All_Precision_se",
+  "printed": 0.00722,
+  "digits": 5,
+  "kind": "deterministic"
+ },
+ {
+  "label": "PanelC_All_N",
+  "printed": 1154,
+  "digits": 0,
+  "kind": "count"
+ },
+ {
+  "label": "PanelC_All_Studies",
+  "printed": 52,
+  "digits": 0,
+  "kind": "count"
+ },
+ {
+  "label": "PanelC_Pub_Constant_coef",
+  "printed": 0.512,
+  "digits": 3,
+  "kind": "deterministic"
+ },
+ {
+  "label": "PanelC_Pub_Constant_se",
+  "printed": 0.498,
+  "digits": 3,
+  "kind": "deterministic"
+ },
+ {
+  "label": "PanelC_Pub_Precision_coef",
+  "printed": 0.0137,
+  "digits": 4,
+  "kind": "deterministic"
+ },
+ {
+  "label": "PanelC_Pub_Precision_se",
+  "printed": 0.00837,
+  "digits": 5,
+  "kind": "deterministic"
+ },
+ {
+  "label": "PanelC_Pub_N",
+  "printed": 305,
+  "digits": 0,
+  "kind": "discrepancy",
+  "note": "The paper prints N = 305 for this published-only column; this package computes 321. The authors' OWN LOG of the published run (Study/Papers/3_Vertical_Spillovers/Stata/vertical.log, 13 Jun 2010) contains 321 -- as 'Mixed-effects REML regression, Number of obs = 321, Group variable: idstudy, Number of groups = 27' -- and contains no regression anywhere with N = 305. So this package reproduces what the authors' code actually produced, and the printed figure differs from it. All three published-only columns show the same pattern (paper 370/241/305, log and this package 378/249/321), which points to the table being built from an earlier run rather than to an error here. The coefficients and standard errors of these same columns reproduce. Recorded for the author; the printed value is left exactly as published."
+ },
+ {
+  "label": "PanelC_Pub_Studies",
+  "printed": 27,
+  "digits": 0,
+  "kind": "count"
+ }
+]

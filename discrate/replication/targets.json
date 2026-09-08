@@ -1,0 +1,274 @@
+[
+ {
+  "label": "T2 PanelA OLS SE coef",
+  "printed": 0.535,
+  "digits": 3,
+  "kind": "deterministic"
+ },
+ {
+  "label": "T2 PanelA OLS SE se",
+  "printed": 0.0299,
+  "digits": 3,
+  "kind": "deterministic"
+ },
+ {
+  "label": "T2 PanelA OLS Constant coef",
+  "printed": 0.518,
+  "digits": 3,
+  "kind": "deterministic"
+ },
+ {
+  "label": "T2 PanelA OLS Constant se",
+  "printed": 0.114,
+  "digits": 3,
+  "kind": "deterministic"
+ },
+ {
+  "label": "T2 PanelA Precision SE coef",
+  "printed": 1.031,
+  "digits": 3,
+  "kind": "deterministic"
+ },
+ {
+  "label": "T2 PanelA Precision SE se",
+  "printed": 0.449,
+  "digits": 3,
+  "kind": "deterministic"
+ },
+ {
+  "label": "T2 PanelA Precision Constant coef",
+  "printed": 0.259,
+  "digits": 3,
+  "kind": "deterministic"
+ },
+ {
+  "label": "T2 PanelA Precision Constant se",
+  "printed": 0.0373,
+  "digits": 3,
+  "kind": "deterministic"
+ },
+ {
+  "label": "T2 PanelA N",
+  "printed": 927,
+  "digits": 0,
+  "kind": "count"
+ },
+ {
+  "label": "T3 caliper05 OLS SE coef",
+  "printed": 0.0919,
+  "digits": 3,
+  "kind": "deterministic"
+ },
+ {
+  "label": "T3 caliper05 OLS SE se",
+  "printed": 0.0367,
+  "digits": 3,
+  "kind": "deterministic"
+ },
+ {
+  "label": "T3 caliper05 OLS Constant coef",
+  "printed": 0.214,
+  "digits": 3,
+  "kind": "deterministic"
+ },
+ {
+  "label": "T3 caliper05 OLS Constant se",
+  "printed": 0.0139,
+  "digits": 3,
+  "kind": "deterministic"
+ },
+ {
+  "label": "T3 caliper05 Precision SE coef",
+  "printed": 0.473,
+  "digits": 3,
+  "kind": "deterministic"
+ },
+ {
+  "label": "T3 caliper05 Precision SE se",
+  "printed": 0.19,
+  "digits": 3,
+  "kind": "deterministic"
+ },
+ {
+  "label": "T3 caliper05 Precision Constant coef",
+  "printed": 0.184,
+  "digits": 3,
+  "kind": "deterministic"
+ },
+ {
+  "label": "T3 caliper05 Precision Constant se",
+  "printed": 0.0188,
+  "digits": 3,
+  "kind": "deterministic"
+ },
+ {
+  "label": "T3 caliper05 N",
+  "printed": 538,
+  "digits": 0,
+  "kind": "count"
+ },
+ {
+  "label": "T3 caliper10 OLS SE coef",
+  "printed": 0.205,
+  "digits": 3,
+  "kind": "deterministic"
+ },
+ {
+  "label": "T3 caliper10 OLS SE se",
+  "printed": 0.0398,
+  "digits": 3,
+  "kind": "deterministic"
+ },
+ {
+  "label": "T3 caliper10 OLS Constant coef",
+  "printed": 0.325,
+  "digits": 3,
+  "kind": "deterministic"
+ },
+ {
+  "label": "T3 caliper10 OLS Constant se",
+  "printed": 0.0444,
+  "digits": 3,
+  "kind": "deterministic"
+ },
+ {
+  "label": "T3 caliper10 Precision SE coef",
+  "printed": 0.949,
+  "digits": 3,
+  "kind": "deterministic"
+ },
+ {
+  "label": "T3 caliper10 Precision SE se",
+  "printed": 0.409,
+  "digits": 3,
+  "kind": "deterministic"
+ },
+ {
+  "label": "T3 caliper10 Precision Constant coef",
+  "printed": 0.232,
+  "digits": 3,
+  "kind": "deterministic"
+ },
+ {
+  "label": "T3 caliper10 Precision Constant se",
+  "printed": 0.0313,
+  "digits": 3,
+  "kind": "deterministic"
+ },
+ {
+  "label": "T3 caliper10 N",
+  "printed": 717,
+  "digits": 0,
+  "kind": "count"
+ },
+ {
+  "label": "T3 caliper75 OLS SE coef",
+  "printed": 0.0835,
+  "digits": 4,
+  "kind": "deterministic",
+  "note": "digits corrected from 3 to 4: the paper prints this value as 0.0835, with 4 decimals. Recording fewer rounded a correct answer past the paper's own precision and created a mismatch that was an artefact of the record. The printed value is untouched."
+ },
+ {
+  "label": "T3 caliper75 OLS SE se",
+  "printed": 0.0395,
+  "digits": 3,
+  "kind": "deterministic"
+ },
+ {
+  "label": "T3 caliper75 OLS Constant coef",
+  "printed": 0.429,
+  "digits": 3,
+  "kind": "deterministic"
+ },
+ {
+  "label": "T3 caliper75 OLS Constant se",
+  "printed": 0.0351,
+  "digits": 3,
+  "kind": "deterministic"
+ },
+ {
+  "label": "T3 caliper75 Precision SE coef",
+  "printed": 0.536,
+  "digits": 3,
+  "kind": "deterministic"
+ },
+ {
+  "label": "T3 caliper75 Precision SE se",
+  "printed": 0.288,
+  "digits": 3,
+  "kind": "deterministic"
+ },
+ {
+  "label": "T3 caliper75 Precision Constant coef",
+  "printed": 0.371,
+  "digits": 3,
+  "kind": "deterministic"
+ },
+ {
+  "label": "T3 caliper75 Precision Constant se",
+  "printed": 0.0428,
+  "digits": 3,
+  "kind": "deterministic"
+ },
+ {
+  "label": "T3 caliper75 N",
+  "printed": 313,
+  "digits": 0,
+  "kind": "count"
+ },
+ {
+  "label": "T3 caliper15 OLS SE coef",
+  "printed": 0.125,
+  "digits": 3,
+  "kind": "deterministic"
+ },
+ {
+  "label": "T3 caliper15 OLS SE se",
+  "printed": 0.0126,
+  "digits": 3,
+  "kind": "deterministic"
+ },
+ {
+  "label": "T3 caliper15 OLS Constant coef",
+  "printed": 0.801,
+  "digits": 3,
+  "kind": "deterministic"
+ },
+ {
+  "label": "T3 caliper15 OLS Constant se",
+  "printed": 0.0295,
+  "digits": 4,
+  "kind": "deterministic",
+  "note": "digits corrected from 3 to 4. The paper prints this cell as 0.0295, four decimals; recording it as three rounded a correct 0.029505 to 0.030 and produced a mismatch that was an artefact of the record, not of the code. The printed value is untouched."
+ },
+ {
+  "label": "T3 caliper15 Precision SE coef",
+  "printed": 0.199,
+  "digits": 3,
+  "kind": "deterministic"
+ },
+ {
+  "label": "T3 caliper15 Precision SE se",
+  "printed": 0.0786,
+  "digits": 3,
+  "kind": "deterministic"
+ },
+ {
+  "label": "T3 caliper15 Precision Constant coef",
+  "printed": 0.764,
+  "digits": 3,
+  "kind": "deterministic"
+ },
+ {
+  "label": "T3 caliper15 Precision Constant se",
+  "printed": 0.0341,
+  "digits": 3,
+  "kind": "deterministic"
+ },
+ {
+  "label": "T3 caliper15 N",
+  "printed": 244,
+  "digits": 0,
+  "kind": "count"
+ }
+]

@@ -1,29 +1,237 @@
 [
-  {"label": "Base N after drop if effect_true==0", "printed": 2434, "digits": 0, "kind": "count"},
-
-  {"label": "OLS: Publication bias (coef)", "printed": 0.0331, "digits": 4, "kind": "deterministic"},
-  {"label": "OLS: Publication bias (se)", "printed": 0.0944, "digits": 4, "kind": "deterministic"},
-  {"label": "OLS: Effect beyond bias / constant (coef)", "printed": -0.297, "digits": 3, "kind": "deterministic"},
-  {"label": "OLS: Effect beyond bias / constant (se)", "printed": 0.114, "digits": 3, "kind": "deterministic"},
-
-  {"label": "FE: Publication bias (coef)", "printed": 0.00613, "digits": 5, "kind": "deterministic"},
-  {"label": "FE: Publication bias (se)", "printed": 0.0795, "digits": 4, "kind": "deterministic"},
-  {"label": "FE: Effect beyond bias / constant (coef)", "printed": -0.262, "digits": 3, "kind": "deterministic"},
-  {"label": "FE: Effect beyond bias / constant (se)", "printed": 0.101, "digits": 3, "kind": "deterministic"},
-
-  {"label": "IV: Publication bias (coef)", "printed": 0.0644, "digits": 4, "kind": "deterministic"},
-  {"label": "IV: Publication bias (se)", "printed": 0.150, "digits": 3, "kind": "deterministic"},
-  {"label": "IV: Effect beyond bias / constant (coef)", "printed": -0.345, "digits": 3, "kind": "deterministic"},
-  {"label": "IV: Effect beyond bias / constant (se)", "printed": 0.0929, "digits": 4, "kind": "deterministic"},
-  {"label": "IV: First-stage robust F-stat", "printed": 22.5, "digits": 1, "kind": "deterministic"},
-
-  {"label": "Study: Publication bias (coef)", "printed": -0.0733, "digits": 4, "kind": "deterministic"},
-  {"label": "Study: Publication bias (se)", "printed": 0.210, "digits": 3, "kind": "deterministic"},
-  {"label": "Study: Effect beyond bias / constant (coef)", "printed": -0.625, "digits": 3, "kind": "deterministic"},
-  {"label": "Study: Effect beyond bias / constant (se)", "printed": 0.212, "digits": 3, "kind": "deterministic"},
-
-  {"label": "Precision: Publication bias (coef)", "printed": -0.0575, "digits": 4, "kind": "deterministic"},
-  {"label": "Precision: Publication bias (se)", "printed": 0.140, "digits": 3, "kind": "deterministic"},
-  {"label": "Precision: Effect beyond bias / constant (coef)", "printed": -0.182, "digits": 3, "kind": "deterministic"},
-  {"label": "Precision: Effect beyond bias / constant (se)", "printed": 0.0577, "digits": 4, "kind": "deterministic"}
+ {
+  "label": "Base N after drop if effect_true==0",
+  "printed": 2434,
+  "digits": 0,
+  "kind": "count"
+ },
+ {
+  "label": "OLS: Publication bias (coef)",
+  "printed": 0.0331,
+  "digits": 4,
+  "kind": "deterministic"
+ },
+ {
+  "label": "OLS: Publication bias (se)",
+  "printed": 0.0944,
+  "digits": 4,
+  "kind": "deterministic"
+ },
+ {
+  "label": "OLS: Effect beyond bias / constant (coef)",
+  "printed": -0.297,
+  "digits": 3,
+  "kind": "deterministic"
+ },
+ {
+  "label": "OLS: Effect beyond bias / constant (se)",
+  "printed": 0.114,
+  "digits": 3,
+  "kind": "deterministic"
+ },
+ {
+  "label": "FE: Publication bias (coef)",
+  "printed": 0.00613,
+  "digits": 5,
+  "kind": "deterministic"
+ },
+ {
+  "label": "FE: Publication bias (se)",
+  "printed": 0.0795,
+  "digits": 4,
+  "kind": "deterministic"
+ },
+ {
+  "label": "FE: Effect beyond bias / constant (coef)",
+  "printed": -0.262,
+  "digits": 3,
+  "kind": "deterministic"
+ },
+ {
+  "label": "FE: Effect beyond bias / constant (se)",
+  "printed": 0.101,
+  "digits": 3,
+  "kind": "deterministic"
+ },
+ {
+  "label": "IV: Publication bias (coef)",
+  "printed": 0.0644,
+  "digits": 4,
+  "kind": "deterministic"
+ },
+ {
+  "label": "IV: Publication bias (se)",
+  "printed": 0.15,
+  "digits": 3,
+  "kind": "deterministic"
+ },
+ {
+  "label": "IV: Effect beyond bias / constant (coef)",
+  "printed": -0.345,
+  "digits": 3,
+  "kind": "deterministic"
+ },
+ {
+  "label": "IV: Effect beyond bias / constant (se)",
+  "printed": 0.0929,
+  "digits": 4,
+  "kind": "deterministic"
+ },
+ {
+  "label": "IV: First-stage robust F-stat",
+  "printed": 22.5,
+  "digits": 1,
+  "kind": "deterministic"
+ },
+ {
+  "label": "Study: Publication bias (coef)",
+  "printed": -0.0733,
+  "digits": 4,
+  "kind": "deterministic"
+ },
+ {
+  "label": "Study: Publication bias (se)",
+  "printed": 0.21,
+  "digits": 3,
+  "kind": "deterministic"
+ },
+ {
+  "label": "Study: Effect beyond bias / constant (coef)",
+  "printed": -0.625,
+  "digits": 3,
+  "kind": "deterministic"
+ },
+ {
+  "label": "Study: Effect beyond bias / constant (se)",
+  "printed": 0.212,
+  "digits": 3,
+  "kind": "deterministic"
+ },
+ {
+  "label": "Precision: Publication bias (coef)",
+  "printed": -0.0575,
+  "digits": 4,
+  "kind": "deterministic"
+ },
+ {
+  "label": "Precision: Publication bias (se)",
+  "printed": 0.14,
+  "digits": 3,
+  "kind": "deterministic"
+ },
+ {
+  "label": "Precision: Effect beyond bias / constant (coef)",
+  "printed": -0.182,
+  "digits": 3,
+  "kind": "deterministic"
+ },
+ {
+  "label": "Precision: Effect beyond bias / constant (se)",
+  "printed": 0.0577,
+  "digits": 4,
+  "kind": "deterministic"
+ },
+ {
+  "label": "Headline B4 [STAR experiment]: Effect beyond bias (coef)",
+  "printed": -2.407,
+  "digits": 3,
+  "kind": "headline"
+ },
+ {
+  "label": "Headline B4 [STAR experiment]: Effect beyond bias (se)",
+  "printed": 0.479,
+  "digits": 3,
+  "kind": "headline"
+ },
+ {
+  "label": "Headline B4 [STAR experiment]: N",
+  "printed": 56,
+  "digits": 0,
+  "kind": "headline"
+ },
+ {
+  "label": "Headline B4 [Regression discontinuity]: Effect beyond bias (coef)",
+  "printed": -0.716,
+  "digits": 3,
+  "kind": "headline"
+ },
+ {
+  "label": "Headline B4 [Regression discontinuity]: Effect beyond bias (se)",
+  "printed": 0.134,
+  "digits": 3,
+  "kind": "headline"
+ },
+ {
+  "label": "Headline B4 [Regression discontinuity]: N",
+  "printed": 436,
+  "digits": 0,
+  "kind": "headline"
+ },
+ {
+  "label": "Headline B4 [Instrumental variable]: Effect beyond bias (coef)",
+  "printed": -0.272,
+  "digits": 3,
+  "kind": "headline"
+ },
+ {
+  "label": "Headline B4 [Instrumental variable]: Effect beyond bias (se)",
+  "printed": 0.227,
+  "digits": 3,
+  "kind": "headline"
+ },
+ {
+  "label": "Headline B4 [Instrumental variable]: N",
+  "printed": 845,
+  "digits": 0,
+  "kind": "headline"
+ },
+ {
+  "label": "Headline B4 [Fixed effects]: Effect beyond bias (coef)",
+  "printed": -0.18,
+  "digits": 3,
+  "kind": "headline"
+ },
+ {
+  "label": "Headline B4 [Fixed effects]: Effect beyond bias (se)",
+  "printed": 0.114,
+  "digits": 3,
+  "kind": "headline"
+ },
+ {
+  "label": "Headline B4 [Fixed effects]: N",
+  "printed": 669,
+  "digits": 0,
+  "kind": "headline"
+ },
+ {
+  "label": "Headline B4 [OLS]: Effect beyond bias (coef)",
+  "printed": 0.228,
+  "digits": 3,
+  "kind": "headline"
+ },
+ {
+  "label": "Headline B4 [OLS]: Effect beyond bias (se)",
+  "printed": 0.153,
+  "digits": 3,
+  "kind": "headline"
+ },
+ {
+  "label": "Headline B4 [OLS]: N",
+  "printed": 433,
+  "digits": 0,
+  "kind": "headline"
+ },
+ {
+  "label": "STAR preferred estimates in the sample (paper: twenty)",
+  "printed": 20,
+  "digits": 0,
+  "kind": "count"
+ },
+ {
+  "label": "STAR preferred estimates with |t| above Lang's 5.48 threshold (paper: one)",
+  "printed": 1,
+  "digits": 0,
+  "kind": "discrepancy",
+  "note": "The published data give TWO, not one: |t| = 5.538 and 5.500 among the twenty preferred STAR estimates. Both sit within 1% of the 5.48 threshold, so the paper's 'one' and this 'two' differ by a single borderline observation -- the kind of gap a slightly different t (recomputed from rounded published effects and standard errors, say) would produce. The count of twenty matches exactly. Flagged for the author rather than scored, because the code is doing what the sentence describes."
+ }
 ]

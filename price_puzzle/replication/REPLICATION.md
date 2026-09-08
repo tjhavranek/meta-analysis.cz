@@ -3,33 +3,38 @@
 **Paper**: "How to Solve the Price Puzzle? A Meta-Analysis", *Journal of Money, Credit and
 Banking* 2013, https://doi.org/10.1111/j.1538-4616.2012.00561.x
 
-**Table reproduced**: Table A1, "Test of Publication Bias and True Effect, OLS" -- the
-funnel-asymmetry/precision-effect (FAT-PET) meta-regression of the approximated t-statistic
-on precision (1/SE), OLS with standard errors clustered at the study level, one column per
-impulse-response horizon (3, 6, 12, 18, 36 months): 5 horizons x 7 numbers (intercept
-coefficient and SE, slope coefficient and SE, R2, observations, studies) = 35 targets.
+**Tables/claims reproduced**:
 
-**Provenance**: author's own Stata do-file (`puzzle.do`), line 7 (`use "puzzle.dta", clear`),
-lines 13-14 (`replace res=100*res` / `replace se=100*se`), and lines 35-39
-(`eststo: reg t prec if horizon==3/6/12/18/36, vce(cluster idstudy)`), matched against the
-printed numbers in Table A1.
+1. Table A1, "Test of Publication Bias and True Effect, OLS" -- the funnel-asymmetry/
+   precision-effect (FAT-PET) meta-regression of the approximated t-statistic on precision
+   (1/SE), OLS with standard errors clustered at the study level, one column per
+   impulse-response horizon (3, 6, 12, 18, 36 months): 5 horizons x 7 numbers (intercept
+   coefficient and SE, slope coefficient and SE, R2, observations, studies) = 35 targets.
+2. The paper's own **headline text claim** (Section 4 / CONCLUSION): "After controlling for
+   both publication and misspecification biases, the price puzzle is not present and prices
+   bottom out 6 months ... The maximum decrease in the price level reaches 0.33%." This is
+   Table 5's "Best practice" row, built from the same specification as Table 4. See "Numbers
+   from the paper's text" below for the full derivation, provenance, and an explicit,
+   disclosed limitation on the estimator used.
+3. Context for (2): the paper's other quoted number, Table 2's publication-bias-only
+   correction ("only 0.02%," still exhibiting the puzzle) -- same section below.
 
-## Why Table A1, not Table 2 or Table 4
+**Provenance for (1)**: author's own Stata do-file (`puzzle.do`), line 7
+(`use "puzzle.dta", clear`), lines 13-14 (`replace res=100*res` / `replace se=100*se`), and
+lines 35-39 (`eststo: reg t prec if horizon==3/6/12/18/36, vce(cluster idstudy)`), matched
+against the printed numbers in Table A1.
 
-Table 2 ("Test of True Effect and Publication Bias") reports the same publication-bias test
-but as a **mixed-effects multilevel** model, and Table 4 extends it with many structural,
-data, and specification covariates, also mixed-effects. The excerpt of `puzzle.do` available
-to this package shows the exact Stata line for the **OLS** version (`reg ... , vce(cluster
-idstudy)`, lines 35-39) but no line invoking `mixed` (or any multilevel command) for the
-headline Table 2/4 specifications, and the OLS-with-covariates lines further down the do-file
-(155 onward, `reg t prec gdppc_se growth_se inf_se ... `) are themselves truncated
-mid-command in the excerpt, so the full covariate list and any `vce`/weight options cannot be
-read off with confidence. Building Table 2's mixed model would mean guessing the random-effects
-structure and estimation options `stata_compat.R`'s `st_mixed` wrapper (`lme4::lmer`, ML) does
-not by itself pin down, and building Table 4 would mean guessing a covariate list past the
-point the excerpt cuts off -- both ruled out by the task's "never estimator ... not evidenced"
-constraint. Table A1 is the one candidate table whose exact Stata command is fully visible,
-so it is the headline table reproduced here.
+## A note on the do-file
+
+The version of `puzzle.do` excerpted into this package's original brief was truncated past
+line ~90, which is why an earlier draft of this file said Table 2/Table 4's mixed-effects
+specifications and covariate lists could not be read with confidence. The site holds the FULL
+do-file (`price_puzzle/puzzle.do`, 428 lines), which does contain the exact `xtmixed` commands,
+full covariate lists, and the literal "best-practice" `lincom` constants used for the headline
+claim reproduced below -- so that limitation no longer applies to the headline-claim numbers.
+Table A2's *general* model (line 155, `reg t prec gdppc_se growth_se ... `, ~30 covariates) and
+Tables 2/4's own full coefficient tables remain out of scope, as before, simply because
+verifying every one of their individual cells was not what this extension was asked to do.
 
 ## Data
 
@@ -113,15 +118,102 @@ matched at the printed precision.
 
 ## What is not attempted, and why
 
-- **Table 2** and **Table 4** (mixed-effects multilevel versions of the same and an extended
-  specification): no visible do-file line invokes a multilevel/`mixed` command, and the visible
-  OLS-with-covariates lines (155 onward) are truncated mid-command in the excerpt available to
-  this package -- see "Why Table A1, not Table 2 or Table 4" above.
 - **Table A2** ("Explaining the Differences in Reported Impulse Responses, OLS"): the do-file
-  lines behind it (155-192, 371-383) are visible but truncated (each command is cut off after
-  roughly a dozen of what are evidently 15+ covariates, e.g. `... com_se single_se money_se f`),
-  so the full right-hand side cannot be reconstructed without guessing variable names -- left
-  out rather than approximated, per the same evidentiary standard as above.
+  lines behind the *general* model (155-192) are truncated mid-command in the brief excerpt
+  originally available to this package. The full do-file (recovered below, see "Numbers from
+  the paper's text") shows the complete "general model" line, but it is a 30-covariate
+  specification not needed for the headline claim and is left out here rather than added
+  speculatively.
+- Tables 2 and 4's own printed CELLS (as opposed to the "Best practice" predictions built
+  *from* the same specifications, reproduced below) are not separately targeted: doing so
+  would need every one of their ~20 coefficient/SE pairs individually verified, which the task
+  at hand did not ask for. The specification underlying them is verified below via the "Best
+  practice" prediction it feeds into Table 5, and via Table 2's own "1/SE (effect)" coefficient
+  (see next section).
+
+## Numbers from the paper's text (not just its results tables)
+
+meta-analysis.cz summarises this paper as: *"the price puzzle disappears once publication and
+misspecification biases are corrected, and prices fall instead, bottoming out 0.33% below."*
+That sentence paraphrases the paper's own CONCLUSION (and Section 4):
+
+> "After controlling for both publication and misspecification biases, the price puzzle is not
+> present and prices bottom out 6 months after a 1 percentage point increase in the interest
+> rate. The maximum decrease in the price level reaches 0.33% and is statistically significant
+> at the 5% level." (repeated in the CONCLUSION: "... reaches 0.33% and occurs half a year
+> after the tightening.")
+
+The number behind it is **Table 5's "Best practice" row**: -0.157, -0.331\*\*, -0.225\*, -0.155,
+-0.116 at horizons 3/6/12/18/36 months -- a "synthetic study" prediction from the same
+meta-regression as Table 4 ("Specific model": t on prec and 21 methodology moderators, each
+entered as x/se, mixed-effects with a study-level random intercept), evaluated at fixed
+"best-practice" moderator values and se = 1.
+
+**Provenance**: `price_puzzle/puzzle.do`, the FULL author do-file the site holds (fuller than
+the excerpt in this package's original brief), lines 236-248 ("Best Practice" block):
+
+```stata
+quietly xtmixed t prec growth_se inf_se vol_se findev_se open_se indep_se lnobs_se
+  avgyear_se gdpdeflator_se single_se com_se foreign_se lnend_variab_se ea_ip_se
+  ea_gap_se ea_oth_se bvar_se favar_se svar_se sign_se cb_se policy_se
+  if horizon==h || idstudy:
+lincom prec + 2.668301*growth_se + 7.748488*inf_se + 6.233974*vol_se +
+  .8368237*findev_se + .4598406*open_se + .7735787*indep_se + 6.298949*lnobs_se +
+  4*avgyear_se + 0*gdpdeflator_se + 1*single_se + 1*com_se + 1*foreign_se +
+  4.875197*lnend_variab_se + 0*ea_ip_se + 1*ea_gap_se + 0*ea_oth_se + 1*bvar_se +
+  0*favar_se + 1*svar_se + 0*sign_se + .4510718*cb_se + .054986*policy_se
+```
+repeated once per horizon, with the *same* literal constants each time (the do-file's own
+best-practice target values: sample means for the country/policy moderators, sample maxima for
+"No. of observations"/"Average year"/"No. of variables", 0/1 for preferred methodology). The
+`lincom` deliberately has no separate intercept term -- reproduced exactly as written, not
+"corrected" to add one back in (and doing so empirically would break the match, not fix it).
+
+Two variables in that right-hand side have no same-named column in the published CSV and had to
+be traced to their raw source: `bvar_se` (labelled "BVAR" in the do-file but built, per the
+paper's own best-practice text "we prefer Bayesian estimation," from `meth_bay`, the Bayesian
+estimation-method dummy) and `svar_se`/`sign_se` (the CSV's identification dummies are
+`ir_chol`/`ir_svar`/`ir_gen`/`ir_sign`/`ir_oth`; "nonrecursive identification" in the
+best-practice text is `ir_svar`, recursive/Cholesky is the omitted base category).
+
+**Estimator**: `xtmixed ... || idstudy:` with no `mle` option is Stata's default for that
+command, which is **REML**. `stata_compat.R`'s `st_mixed()` wrapper always fits **ML**
+(`lme4::lmer(REML = FALSE)`) -- its own documented convention for `mixed`/`xtmixed`, fixed in a
+file this package may not edit. This is a real, disclosed limitation, not a rounding footnote:
+for this specification the two estimators do not always land on the same printed digit.
+
+| Horizon | Paper (Table 5, Best practice) | Produced (st_mixed, ML) | Verdict |
+|---|---|---|---|
+| 3 months  | -0.157  | -0.157 | MATCH |
+| 6 months  | -0.331 \*\* | -0.331 | **MATCH -- this is the "0.33% below" headline number** |
+| 12 months | -0.225 \*  | -0.228 | off by 0.003 (ML vs. Stata's default REML) |
+| 18 months | -0.155  | -0.157 | off by 0.002 |
+| 36 months | -0.116  | -0.114 | off by 0.002 |
+
+All five signs match and all five are negative -- the paper's qualitative claim, "the price
+puzzle is not present," reproduces exactly (`run.R` checks this explicitly: no horizon shows a
+positive/puzzling response). Delta-method p-values on the produced numbers (0.32, 0.017, 0.036,
+0.12, 0.50) also reproduce the paper's own star pattern at 6 months (p < .05, matching \*\*) and
+are directionally consistent at 12 months (p = .036, paper's single \* suggests 10% rather than
+5%, again attributable to ML vs. REML). **The specific "0.33%" claimed in the paper's text is
+reproduced to the printed precision; the other four cells of the same row are close but not
+exact, for the one documented, non-editable reason above.**
+
+For contrast, the paper's OTHER quoted number -- publication-bias correction alone, without the
+methodology moderators -- comes from Table 2 (`xtmixed t prec if horizon==h || idstudy:`, no
+covariates), Section 3:
+
+> "The impulse response function corrected for publication bias is depicted in Figure 4: it
+> exhibits the price puzzle. In the short run prices increase, but in the medium run they
+> decrease and bottom out 18 months after the tightening. The maximum decrease in the price
+> level, however, is negligible: only 0.02%."
+
+Table 2's "1/SE (effect)" coefficient at 18 months (the same st_mixed/ML estimator) produces
+-0.0185%, which rounds to the paper's "0.02%" -- included in `run.R`'s output and in
+`targets.json` as a headline target, kept clearly separate from the main Table 5 claim so the
+two are never conflated. (Table 2 on its own still exhibits the puzzle -- the 3/6-month
+responses are positive -- which is exactly the contrast the paper's text draws: publication
+bias alone is not enough to remove it, both biases together are.)
 
 ## How to run
 
@@ -132,6 +224,11 @@ Rscript compare.R   # prints the target-by-target table above
 
 ## Verdict
 
-**CONCORDANT** for Table A1 (the one candidate table whose exact author code is fully visible
-and evidenced). Tables 2, 4, and A2 are out of scope for lack of visible/complete author code,
-not misses against attempted targets.
+**CONCORDANT** for Table A1 and for the paper's headline text claim (Table 5's "Best practice"
+row, specifically the 6-month "0.33%" the site's summary quotes, which matches to the printed
+digit) and for the qualitative "price puzzle disappears" claim (all five horizons negative).
+**PARTIALLY CONCORDANT** for the other four cells of the same Table 5 row (within 0.002-0.003,
+attributable to a disclosed, non-editable ML-vs-REML difference in the shared `st_mixed`
+wrapper) and for Table 2's "0.02%" context number (matches at the printed precision).
+Table A2's general model and Tables 2/4's own individual coefficient cells are out of scope, for
+the reasons given above.

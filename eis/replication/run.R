@@ -9,10 +9,12 @@
 # vce(cluster idstudy)` lines). Table 2's own row/column numbers (the printed
 # targets) come only from the paper text, per the brief.
 
-source("stata_compat.R")
+if (file.exists("stata_compat.R")) source("stata_compat.R") else
+  source("https://meta-analysis.cz/eis/replication/stata_compat.R")
 
 d <- read.csv(
-  "C:\\Users\\thavr\\Dropbox\\Study\\Other\\Agents\\Joint\\web_meta\\site\\data\\v1\\eis\\eis.csv",
+  (if (file.exists("eis.csv")) "eis.csv" else
+     "https://meta-analysis.cz/data/v1/eis/eis.csv"),
   stringsAsFactors = FALSE
 )
 
@@ -151,6 +153,53 @@ cat(sprintf("95%% CI micro asset holders (col1) = [%.4f, %.4f]\n", ci_lo, ci_hi)
 out[["Corrected elasticity, micro asset holders (col1)"]] <- unname(combo_asset)
 out[["95% CI lower, micro asset holders (col1)"]] <- unname(ci_lo)
 out[["95% CI upper, micro asset holders (col1)"]] <- unname(ci_hi)
+
+# ---------------------------------------------------------------------------
+# THE PAPER'S HEADLINE CLAIM -- meta-analysis.cz summarises this paper as
+# "0.3-0.4". In the paper's own words:
+#
+#   Abstract: "The corrected mean of micro estimates of the EIS for asset
+#   holders is around 0.3-0.4."
+#
+#   Results section (Table 2 discussion): "the elasticity reaches 0.36
+#   (= 0.0237 + 0.200 + 0.136) with a narrow 95% confidence interval
+#   [0.33, 0.39]."
+#
+#   Conclusion: "Corrected for the reporting bias, the micro estimates for
+#   asset holders are around 1/3."
+#
+# This is exactly `combo_asset` and its CI [ci_lo, ci_hi] computed above from
+# column (1) of Table 2 -- the specification the paper itself uses for this
+# sentence, with the arithmetic spelled out in its own text (0.0237 + 0.200 +
+# 0.136). Rounded to one decimal, the CI bounds [0.33, 0.39] are exactly the
+# abstract's "0.3-0.4": the point estimate (0.36) and both ends of its 95% CI
+# sit inside that stated range.
+#
+# I did NOT attempt to reproduce the "does not change much ... conditional
+# on many method choices" remark as a wider min/max across all seven Table 2
+# columns: doing so (col1's own EIS0/"prec" coefficient plus each later
+# column's micro_se/stockhold_se rows) is numerically unstable in columns
+# (3)-(7) once lncsunits_se/lnyears_se/lnavyear_se/etc. enter -- some
+# estimates have SE as small as 0.0004, so dividing log-scale controls by SE
+# creates extreme leverage points and the "prec" coefficient (not printed
+# anywhere in the paper's text for those columns) swings into the tens.
+# Table 2's own Micro/Asset/SE rows stay well-behaved throughout (matched
+# above to 3-4 digits in every column); it is only the un-printed intercept
+# that is fragile. Rather than manufacture a number the paper never states
+# and cannot be checked against print, this package reports only the
+# claim the paper actually spells out arithmetically: column (1).
+# ---------------------------------------------------------------------------
+cat("\n==================== PAPER'S HEADLINE CLAIM =====================\n")
+cat("Abstract: \"The corrected mean of micro estimates of the EIS for asset\n")
+cat(" holders is around 0.3-0.4.\"  (meta-analysis.cz summary: \"0.3-0.4\")\n")
+cat("Conclusion: \"...the micro estimates for asset holders are around 1/3.\"\n\n")
+cat(sprintf("  Corrected elasticity, micro asset holders (Table 2, col 1) = %.4f\n", combo_asset))
+cat(sprintf("  95%% CI = [%.4f, %.4f]  ->  rounds to [0.3, 0.4], the abstract's stated range\n",
+            ci_lo, ci_hi))
+cat("===================================================================\n")
+
+out[["Headline: corrected elasticity, micro asset holders, CI low (rounds to abstract's 0.3)"]]  <- unname(ci_lo)
+out[["Headline: corrected elasticity, micro asset holders, CI high (rounds to abstract's 0.4)"]] <- unname(ci_hi)
 
 cat("\n")
 stata_compat_log()

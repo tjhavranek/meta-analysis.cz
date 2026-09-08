@@ -1,0 +1,24 @@
+{
+  "T1_FATPET_prec_coef": 0.000667117731232861,
+  "T1_FATPET_prec_t": 0.0504852851390711,
+  "T1_FATPET_const_coef": 3.75513301588397,
+  "T1_FATPET_const_t": 4.03764408923156,
+  "T1_FATPET_N": 28,
+  "T1_FATPET_RMSE": 3.16864181376711,
+  "T2_FATPET_prec_coef": 0.534124884158467,
+  "T2_FATPET_prec_t": 4.07555731637264,
+  "T2_FATPET_const_coef": 1.71177858595691,
+  "T2_FATPET_const_t": 2.21155359190109,
+  "T2_FATPET_N": 33,
+  "T2_FATPET_RMSE": 3.23441044985132,
+  "EURO_corrected_effect_pct": 0.0667340303757813,
+  "EURO_corrected_effect_CI_lo_pct": -2.6146949509542,
+  "EURO_corrected_effect_CI_hi_pct": 2.82199408281341,
+  "EURO_corrected_effect_tstat": 0.0504852851390711,
+  "NONEURO_PEESE_prec_coef": 0.633671094265803,
+  "NONEURO_PEESE_prec_t": 9.83194974477675,
+  "NONEURO_corrected_effect_pct": 88.4516132408094,
+  "NONEURO_corrected_effect_CI_lo_pct": 65.2392192567458,
+  "NONEURO_corrected_effect_CI_hi_pct": 114.924826520044
+}
+

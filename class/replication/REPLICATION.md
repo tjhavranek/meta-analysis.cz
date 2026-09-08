@@ -5,7 +5,9 @@ Achievement", *Journal of Labor Economics* 2026, https://doi.org/10.1086/737989
 
 **Table reproduced**: Table 3, Block 1 ("All estimates"), Panel A -- the linear publication-bias
 tests (OLS / FE / IV / Study / Precision columns), plus the IV column's first-stage robust
-F-stat and the block's base sample size.
+F-stat and the block's base sample size. **Plus** (see "Numbers from the paper's text" below)
+the five identification-subset regressions behind the paper's headline "close to zero" claim
+(Online Appendix Table B4, Panel A, OLS column).
 
 **Provenance**: author's own Stata do-file (`class.do`), lines 22-53 (data construction) and
 219-234 (the five Panel-A regressions), matched against the printed numbers in Table 3.
@@ -116,6 +118,68 @@ block's base N of 2,434, because 8 rows have missing `sample_size` and so cannot
 Panel A (only a single "Observations 2,434" line appears, positioned under Panel B), so this
 was not set up as a target and is reported here only as a sanity note.
 
+## Numbers from the paper's text
+
+meta-analysis.cz summarises this paper's headline result as **"close to zero"**. That summary
+comes straight from the paper's own text:
+
+> Abstract: "The implied class size effect is negligible for all identification approaches
+> except Tennessee's Student/Teacher Achievement Ratio project and for all contexts except
+> classes of fewer than 15 students."
+>
+> Section 5 (Conclusion): "Among the five identification approaches, four deliver effects close
+> to zero. The only exception is the STAR experiment, where even after correction for potential
+> publication bias we find a mean effect almost of the size reported by Krueger (1999)."
+>
+> Section 3 gives the yardstick for "close to zero": "effects below 1 in absolute value are
+> relatively small in economic terms because they imply less than a 0.1 standard-deviation
+> change in test scores following a class size reduction by 10 students."
+
+**The quantity that justifies the phrase** is Online Appendix Table B4's "Effect beyond bias
+(constant)", Panel A, OLS column -- the same linear publication-bias-correction model as Table
+3's OLS column (`ivreg2 effect_w se_effect_w, cluster(idstudy)`, class.do lines 221-223), just
+restricted to each of the five identification-method subsets that class.do itself flags
+(`method_experiment`/STAR, `method_rdd`, `method_instrument`, `method_fe`, `method_ols`;
+class.do lines 239-241, 257-259, 276-278, 294-296, 312-314). `effect_w`/`se_effect_w` are
+winsorised on the *full* sample first (class.do lines 33-34), exactly as for Table 3, and only
+then is the sample restricted to the subset.
+
+Table B4 (Panel A, OLS column) as printed in the paper, vs. this package's `run.R`:
+
+| Identification approach | Paper: coef (se), N | Produced: coef (se), N | Verdict |
+|---|---|---|---|
+| STAR experiment (the exception) | -2.407 (0.479), N=56 | -2.4073 (0.5318), N=56 | coef MATCH, **se MISS** |
+| Regression discontinuity | -0.716 (0.134), N=436 | -0.7157 (0.1344), N=436 | MATCH |
+| Instrumental variable | -0.272 (0.227), N=845 | -0.2716 (0.2273), N=845 | MATCH |
+| Fixed effects | -0.180 (0.114), N=669 | -0.1796 (0.1139), N=669 | MATCH |
+| OLS | 0.228 (0.153), N=433 | 0.2284 (0.1531), N=433 | MATCH |
+
+**14 of 15 deterministic targets matched** (5 coefficients + 5 SEs + 5 sample sizes; overall
+package tally 36/37 including the Table 3 block above).
+
+Four of the five subsets -- regression discontinuity, instrumental variable, fixed effects and
+plain OLS -- produce a corrected "effect beyond bias" between -0.72 and +0.23, all below 1 in
+absolute value by the paper's own yardstick, i.e. implying less than a 0.1 standard-deviation
+change in test scores even for a 10-student class size reduction. This is the "close to zero"
+the site's summary and the paper's abstract/conclusion refer to. The STAR experiment is the
+stated exception: its corrected effect, -2.41, is roughly 3 to 13 times larger in magnitude than
+the other four and is the one identification approach the paper says is "almost of the size
+reported by Krueger (1999)" (Krueger's own STAR estimate is not in the replication data and is
+not recomputed here -- it is an external citation, not a quantity this package can check).
+
+**One honest miss, not patched**: the STAR-experiment subset's own standard error (0.532
+produced vs. 0.479 printed) does not match, even though its point estimate matches to the
+printed precision (-2.4073 rounds to -2.407). This subset has only **2 distinct studies**
+(`idstudy` 43 and 57) clustering over N=56 estimates -- the fewest clusters of any subset in
+Table B4 by a wide margin (the next-smallest, OLS, has N=433). All four other subsets, with far
+more clusters, reproduce both the coefficient and the clustered SE exactly through the same
+`st_ivreg2(..., cluster = ~idstudy)` call used throughout this package (and validated already
+against Table 3's many-cluster columns). The likely explanation is a small-cluster edge case in
+how `ivreg2`'s clustered-VCE finite-sample handling diverges from the fixest-based convention
+this package's wrapper otherwise matches exactly; per the task's rules, `stata_compat.R` was not
+touched and no other function was used to try to force a match. The point estimate -- which is
+what actually carries the "close to zero" vs. "exception" claim -- is unaffected.
+
 ## How to run
 
 ```
@@ -125,6 +189,10 @@ Rscript compare.R   # prints the target-by-target table above
 
 ## Verdict
 
-**CONCORDANT** for Table 3, Block 1, Panel A (the paper's headline publication-bias test).
-Block 2 and Panel B are out of scope for the reasons above, not misses against attempted
-targets.
+**CONCORDANT** for Table 3, Block 1, Panel A (the paper's headline publication-bias test) and
+for the paper's text-stated "close to zero" claim (Table B4, Panel A, OLS column): **36 of 37
+deterministic targets matched**. The single miss is the STAR-experiment subset's clustered
+standard error (see "Numbers from the paper's text" above) -- a 2-cluster edge case that leaves
+the STAR point estimate, and therefore the "close to zero for four of five, STAR is the
+exception" claim itself, unaffected. Block 2 and Panel B of Table 3 are out of scope for the
+reasons above, not misses against attempted targets.

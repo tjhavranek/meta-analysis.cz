@@ -1,0 +1,76 @@
+{
+  "results": {
+    "T6 short-run BMA mean": -0.009760996927,
+    "T6 short-run BMA CI low": -0.031537623169,
+    "T6 short-run BMA CI high": 0.012015629315,
+    "T6 short-run FMA mean": 0.0686936,
+    "T6 short-run FMA CI low": 0.046916973758,
+    "T6 short-run FMA CI high": 0.090470226242,
+    "T6 long-run BMA mean": -0.061713136297,
+    "T6 long-run BMA CI low": -0.081061033715,
+    "T6 long-run BMA CI high": -0.042365238879,
+    "T6 long-run FMA mean": -0.0694064,
+    "T6 long-run FMA CI low": -0.088754297418,
+    "T6 long-run FMA CI high": -0.050058502582,
+    "T6 private BMA mean": -0.16690053458,
+    "T6 private BMA CI low": -0.19018327436,
+    "T6 private BMA CI high": -0.14361779481,
+    "T6 private FMA mean": -0.1406328,
+    "T6 private FMA CI low": -0.16391553978,
+    "T6 private FMA CI high": -0.11735006022,
+    "T6 public BMA mean": 0.0032827900083,
+    "T6 public BMA CI low": -0.03266467304,
+    "T6 public BMA CI high": 0.039230253057,
+    "T6 public FMA mean": 0.0432672,
+    "T6 public FMA CI low": 0.0073197369515,
+    "T6 public FMA CI high": 0.079214663048,
+    "T6 male BMA mean": -0.36082066271,
+    "T6 male BMA CI low": -0.52941316251,
+    "T6 male BMA CI high": -0.19222816292,
+    "T6 male FMA mean": -0.3482511,
+    "T6 male FMA CI low": -0.5168435998,
+    "T6 male FMA CI high": -0.1796586002,
+    "T6 female BMA mean": -0.016738547671,
+    "T6 female BMA CI low": -0.1205479247,
+    "T6 female BMA CI high": 0.087070829355,
+    "T6 female FMA mean": -0.1119511,
+    "T6 female FMA CI low": -0.21576047703,
+    "T6 female FMA CI high": -0.0081417229745,
+    "T6 all-estimates BMA mean": -0.036776109399,
+    "T6 all-estimates BMA CI low": -0.054600285017,
+    "T6 all-estimates BMA CI high": -0.018951933782,
+    "T6 all-estimates FMA mean": -0.0031184,
+    "T6 all-estimates FMA CI low": -0.020942575617,
+    "T6 all-estimates FMA CI high": 0.014705775617
+  },
+  "diagnostic_only": {
+    "short-run": {
+      "lincom_se": 0.011110727755,
+      "fma_mean_from_unrounded_coefs": 0.069035363352
+    },
+    "long-run": {
+      "lincom_se": 0.009871557626,
+      "fma_mean_from_unrounded_coefs": -0.069111780087
+    },
+    "private": {
+      "lincom_se": 0.011879167148,
+      "fma_mean_from_unrounded_coefs": -0.14031202057
+    },
+    "public": {
+      "lincom_se": 0.01834087939,
+      "fma_mean_from_unrounded_coefs": 0.043569837558
+    },
+    "male": {
+      "lincom_se": 0.086018162133,
+      "fma_mean_from_unrounded_coefs": -0.34790424969
+    },
+    "female": {
+      "lincom_se": 0.052964941113,
+      "fma_mean_from_unrounded_coefs": -0.11162141052
+    },
+    "all-estimates": {
+      "lincom_se": 0.0090941342586,
+      "fma_mean_from_unrounded_coefs": -0.0028011512364
+    }
+  }
+}

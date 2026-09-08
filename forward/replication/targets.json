@@ -25,5 +25,12 @@
   {"label": "A3_PanelB_IV_MeanBeyondBias",       "printed": 0.275,  "digits": 3, "kind": "deterministic"},
   {"label": "A3_PanelB_IV_MeanBeyondBias_SE",    "printed": 0.182,  "digits": 3, "kind": "stochastic"},
   {"label": "A3_PanelB_IV_PubBias",              "printed": -0.597, "digits": 3, "kind": "deterministic"},
-  {"label": "A3_PanelB_IV_PubBias_SE",           "printed": 0.301,  "digits": 3, "kind": "stochastic"}
+  {"label": "A3_PanelB_IV_PubBias_SE",           "printed": 0.301,  "digits": 3, "kind": "stochastic"},
+
+  {"label": "Headline_ImpliedBeta_Developed_Preferred_BMA",         "printed": 0.309, "digits": 3, "kind": "headline"},
+  {"label": "Headline_ImpliedBeta_Developed_FrankelPoonawala_BMA",  "printed": 0.448, "digits": 3, "kind": "headline"},
+  {"label": "Headline_ImpliedBeta_Developed_Breedon_BMA",           "printed": 0.231, "digits": 3, "kind": "headline"},
+  {"label": "Headline_ImpliedBeta_Emerging_Preferred_BMA",          "printed": 0.945, "digits": 3, "kind": "headline"},
+  {"label": "Headline_ImpliedBeta_Emerging_FrankelPoonawala_BMA",   "printed": 1.164, "digits": 3, "kind": "headline"},
+  {"label": "Headline_ImpliedBeta_Emerging_Breedon_BMA",            "printed": 0.947, "digits": 3, "kind": "headline"}
 ]

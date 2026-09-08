@@ -32,5 +32,14 @@
   {"label": "n_short_clustered", "printed": 245, "digits": 0, "kind": "count"},
   {"label": "n_long_fixed",      "printed": 292, "digits": 0, "kind": "count"},
   {"label": "n_long_robust",     "printed": 292, "digits": 0, "kind": "count"},
-  {"label": "n_long_clustered",  "printed": 292, "digits": 0, "kind": "count"}
+  {"label": "n_long_clustered",  "printed": 292, "digits": 0, "kind": "count"},
+
+  {"label": "simple_avg_short", "printed": -0.052, "digits": 3, "kind": "headline"},
+  {"label": "simple_avg_long",  "printed": 0.146,  "digits": 3, "kind": "headline"},
+  {"label": "fe_avg_short",     "printed": -0.081, "digits": 3, "kind": "headline"},
+  {"label": "fe_avg_long",      "printed": 0.135,  "digits": 3, "kind": "headline"},
+  {"label": "re_avg_short",     "printed": -0.056, "digits": 3, "kind": "headline"},
+  {"label": "re_avg_long",      "printed": 0.143,  "digits": 3, "kind": "headline"},
+  {"label": "corrected_short",  "printed": -0.394, "digits": 3, "kind": "headline"},
+  {"label": "corrected_long",   "printed": 0.110,  "digits": 3, "kind": "headline"}
 ]

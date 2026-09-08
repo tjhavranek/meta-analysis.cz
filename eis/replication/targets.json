@@ -56,5 +56,10 @@
   {"label": "Corrected elasticity, micro (col1)",              "printed": 0.22, "digits": 2, "kind": "deterministic"},
   {"label": "Corrected elasticity, micro asset holders (col1)","printed": 0.36, "digits": 2, "kind": "deterministic"},
   {"label": "95% CI lower, micro asset holders (col1)",        "printed": 0.33, "digits": 2, "kind": "deterministic"},
-  {"label": "95% CI upper, micro asset holders (col1)",        "printed": 0.39, "digits": 2, "kind": "deterministic"}
+  {"label": "95% CI upper, micro asset holders (col1)",        "printed": 0.39, "digits": 2, "kind": "deterministic"},
+
+  {"_comment": "----- Numbers from the paper's own TEXT (abstract, conclusion), not table cells. meta-analysis.cz's own one-line summary of this paper is '0.3-0.4'. Abstract, verbatim: 'The corrected mean of micro estimates of the EIS for asset holders is around 0.3-0.4.' Conclusion, verbatim: '...the micro estimates for asset holders are around 1/3.' The paper spells out the arithmetic behind this figure in its Table 2 discussion: 'the elasticity reaches 0.36 (= 0.0237 + 0.200 + 0.136) with a narrow 95% confidence interval [0.33, 0.39]' -- i.e. exactly the column-(1) 'Corrected elasticity, micro asset holders' target and its 95% CI already reproduced above. These two new entries check that the CI bounds round to the abstract's stated bounds. Appended for this task; nothing above was altered."},
+
+  {"label": "Headline (abstract 0.3-0.4): corrected elasticity, micro asset holders, CI low bound rounds to 0.3",  "printed": 0.3, "digits": 1, "kind": "headline"},
+  {"label": "Headline (abstract 0.3-0.4): corrected elasticity, micro asset holders, CI high bound rounds to 0.4", "printed": 0.4, "digits": 1, "kind": "headline"}
 ]

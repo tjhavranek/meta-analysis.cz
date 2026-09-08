@@ -131,9 +131,84 @@ from this directory. Reads only `data/v1/dst/dst.csv` (a file the site publishes
 ships alongside `run.R` on publication). Writes `results.json` and prints every produced number.
 No manual steps.
 
-## Verdict
+## Verdict (Table 3)
 
 **PARTIAL.** All 15 targets attempted (three of Table 3's six columns) match the printed values
 to the printed precision, with zero repairs needed beyond the initial model-form identification.
 Three columns (BE, Country, IV) are excluded from `targets.json` rather than guessed, for the
 reasons above.
+
+## Numbers from the paper's text
+
+meta-analysis.cz's own summary of this paper reads: "essentially zero, 0.01% savings, against a
+0.34% simple average of reported estimates." Both halves are the paper's own words, and `run.R`
+now reproduces both, printed clearly at the end of the run.
+
+| Claim | Quantity | Paper's value | Produced | Verdict |
+|---|---|---|---|---|
+| Abstract: "...find that the mean reported estimate indicates slight electricity savings: 0.34% during the days when DST applies." | Unweighted mean of `ESTIMATE` across all 162 published estimates | -0.34% (abstract); Table 2, "All observations": -0.334 | -0.334454 | **MATCH** (to the printed 3rd decimal) |
+| Section 4.3 / Table 6: "The resulting global estimate is -0.01%, quite distant from -0.34%, the simple average effect reported in the literature." | The "best-practice" BMA-implied DST effect, averaged across all 21 countries in the sample | -0.01% (text); Table 6, "All countries": -0.014 (95% CI -0.760, 0.732) | -0.019053 | **CLOSE, not exact** -- see below |
+
+### How the -0.34% is produced
+
+Read directly off `st_regress(ESTIMATE ~ 1, data = d)$estimate` -- the OLS intercept with no
+regressors is the sample mean, computed via the sanctioned wrapper rather than a bare `mean()`
+call. `d` is the full 162-row published sample (matches the paper's "162 estimates from 44
+studies" exactly). No estimation choices are involved; this is a plain arithmetic average.
+
+### How the -0.01% is produced, and why it is close but not exact
+
+This number is **not a regression this package can re-run from scratch**. The paper builds it in
+two stages: (1) fit a Bayesian model averaging (BMS) regression of `ESTIMATE` on 14 explanatory
+variables (Table 5), using a specific g-prior/model-prior combination; (2) evaluate that fitted
+model at a "best practice" combination of covariate values, once per country, then average across
+countries. Stage (1) is a BMS model -- not `feols`/`lm`/`rma`/`lmer`, and not among
+`st_ivreg2`/`st_xtreg_fe`/`st_regress`/`st_metan`/... -- so it is a stop-and-report by the same
+rule that governs Table 3's BE/Country/IV columns: no wrapper exists for it, and one is not
+invented here.
+
+What **is** reproducible from the published data, without re-fitting BMS, is stage (2): the linear
+combination itself, using Table 5's own printed posterior-mean coefficients (already a published
+number, quoted verbatim in `run.R`, not something this package estimates) and the paper's
+prose definition of "best practice" (Section 4.3, quoted verbatim in `run.R`). Every input that
+*can* come from the data does:
+
+- `imp_95`, the 95th percentile of `IMPACT`, via `st_winsor2(IMPACT, cuts = c(0, 95))` and
+  `max()` of the result -- winsorising at the 95th percentile caps every value above it at that
+  percentile, so the winsorized maximum recovers the percentile itself, using the sanctioned
+  wrapper's Stata-`_pctile` (type-2) convention rather than calling `quantile()` directly.
+- `max_citations` and `log(max_citations + 1)` -- "Citations" enters the BMA as
+  log(citations + 1): Table 4 reports its sample mean as 1.91, which matches
+  `log(CITATIONS + 1)` computed here (1.9095) and not `log(CITATIONS)` (1.7241, undefined at
+  `CITATIONS = 0`).
+- `max_pubyear - 1970` -- "Publication year" is `PUBYEAR - 1970` (Table 4: "base = 1970"; its
+  reported sample mean, 34.8, matches `mean(PUBYEAR) - 1970` = 34.82 computed here).
+- Per-country average `DAYLIGHT`, and per-country `WEIGHT` sums (the paper's own inverse
+  per-study weight column, the same one behind Table 2's "weighted by the inverse of the number
+  of estimates reported per study" right-hand columns) -- both plain aggregation, no estimation.
+
+Combined with the fixed best-practice values from Section 4.3's prose (Data period = 9,
+Main estimate = 1, Daily data = 0, Difference-in-differences = 1 with Regression = Simulation = 0,
+Residential = Lighting = 0, Journal publication = 1, USA = 1 for the USA row only), this gives one
+predicted effect per country, aggregated to "All countries" using the same WEIGHT-weighted average
+the paper uses for all its other equal-per-study aggregates.
+
+**This reconstruction gives -0.019, not -0.014.** The gap is small (0.005 percentage points) and
+traced, not papered over: comparing this package's own 21 per-country predictions against Table
+6's own printed per-country values (computed in `run.R`, printed as a diagnostic, not a target)
+shows a near-constant offset of about 0.005-0.007 across every single country, in the same
+direction. That is the signature of compounding rounding in Table 5's coefficients, which are
+printed to only 3 decimals across 14 terms -- not a wrong model or wrong best-practice values. As
+a check on the AGGREGATION rule specifically (not the model): re-applying the identical
+WEIGHT-weighted average directly to the paper's **own printed** Table 6 country estimates (no
+data-derived inputs at all, just re-averaging numbers already in the paper) gives -0.0134, matching
+the printed -0.014 almost exactly. That confirms the weighting scheme used here is the right one,
+and that the residual gap in the -0.019 figure is precision in Table 5's printed coefficients, not
+a methodological error. Both figures are printed by `run.R`, clearly labelled as diagnostics rather
+than targets.
+
+**Honesty on this number**: `-0.014` is entered in `targets.json` as the value the paper states
+(kind `"headline"`), and `results.json` records what this package actually produces, -0.019. It is
+reported as a **close, not exact** reproduction, for the reason given above -- a genuine
+data-and-formula-driven approximation of a number whose exact reproduction would require re-fitting
+the authors' BMS specification, which is outside the sanctioned toolkit.

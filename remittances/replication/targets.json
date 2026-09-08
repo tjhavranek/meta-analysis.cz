@@ -54,5 +54,20 @@
   {"label": "D1_s5_pubbias",           "printed": 0.359,  "digits": 3, "kind": "deterministic"},
   {"label": "D1_s5_pubbias_se",        "printed": 0.99,   "digits": 2, "kind": "deterministic"},
   {"label": "D1_s5_trueeffect",        "printed": -0.017, "digits": 3, "kind": "deterministic"},
-  {"label": "D1_s5_trueeffect_se",     "printed": 0.15,   "digits": 2, "kind": "deterministic"}
+  {"label": "D1_s5_trueeffect_se",     "printed": 0.15,   "digits": 2, "kind": "deterministic"},
+
+  {"label": "T3_N",                    "printed": 487,    "digits": 0, "kind": "count",
+   "note": "Main-text Table 2/3 sample: PCC_L non-missing, post-3-outlier-drop, no Growth==1 restriction."},
+  {"label": "T3_uncorrected_mean",     "printed": 0.103,  "digits": 3, "kind": "headline",
+   "note": "Table 3 'Uncorrected mean'. Abstract/intro headline claim ('positive but economically small') baseline: the raw pre-correction PCC average."},
+  {"label": "T3_top10",                "printed": 0.025,  "digits": 3, "kind": "headline",
+   "note": "Table 3 'Top 10' bias-corrected effect: mean PCC_L among the 10% most precise estimates."},
+  {"label": "T3_top10_N",              "printed": 49,      "digits": 0, "kind": "count"},
+  {"label": "T3_waap",                 "printed": 0.042,  "digits": 3, "kind": "headline",
+   "note": "Table 3 'WAAP' bias-corrected effect: WLS-clustered FAT-PET slope restricted to |TSTAT_L|>2.8 (adequately powered)."},
+  {"label": "T3_waap_N",               "printed": 89,      "digits": 0, "kind": "count"},
+  {"label": "T3_andrewskasy",          "printed": 0.121,  "digits": 3, "kind": "headline",
+   "note": "Table 3 'A&K' bias-corrected effect (Andrews & Kasy, 2019, selection MLE). No stata_compat.R wrapper for this estimator; left unresolved (NA) rather than approximated."},
+  {"label": "T3_stem",                 "printed": 0.036,  "digits": 3, "kind": "headline",
+   "note": "Table 3 'Stem-based bias correction model' (Furukawa, 2019). No stata_compat.R wrapper for this estimator; left unresolved (NA) rather than approximated."}
 ]

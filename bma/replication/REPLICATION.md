@@ -1,118 +1,158 @@
-# bma -- replication of Table 4 ("Test of publication bias")
+# bma — Determinants of Horizontal Spillovers from FDI
 
-Paper: Havranek & Irsova, "Determinants of Horizontal Spillovers from FDI: Evidence from a
-Large Meta-Analysis," *World Development* 42 (2013).
-DOI: https://doi.org/10.1016/j.worlddev.2012.07.001
+Havránek & Iršová, *What determines horizontal spillovers from FDI? Evidence from a large
+meta-analysis*, **World Development** 42(1), 2013.
 
-## Table and provenance
+`run.R` reads only `site/data/v1/bma/bma.csv`, sources `stata_compat.R`, and writes
+`results.json`.
 
-Table 4 is the headline result targeted here. It reports a funnel-asymmetry / precision-effect
-test of publication selection in two columns: (1) study fixed effects, (2) study and country
-fixed effects. Both are described as "Estimated by weighted least squares with the precision
-(the inverse of standard error) taken as the weight," with standard errors clustered at the
-study level.
+**Score: 21 of 24 targets reproduce. Three do not, and they are all the same cell.**
 
-The author's own do-file, `determinants.do`, does not run this as a literal `regress e se
-[aweight=prec]`. Instead (lines 17, 135-136 in the brief's line numbering):
+---
 
+## What the package reproduces
+
+| Target | Paper | Produced |
+|---|---|---|
+| Table 4 col 1, Constant — coef / SE / p | 0.021 / 0.015 / 0.150 | 0.0214298 / 0.0146649 / 0.150068 |
+| Table 4 col 1, Se (publication bias) — coef / SE / p | −0.325 / 0.262 / 0.220 | −0.325028 / 0.262003 / 0.220449 |
+| Table 4 col 1, N | 1,199 | 1199 |
+| Table 4 col 2, Constant — coef / SE / p | 0.021 / 0.015 / 0.183 | 0.0206846 / 0.0153147 / 0.182774 |
+| Table 4 col 2, N | 1,199 | 1199 |
+| Table 1, mean of *e* | −0.002 | −0.0022291 |
+| `metan e se, fixed` | 0.017 | 0.0168957 |
+| `metan e se, random` | −0.011 | −0.0106492 |
+| Table 2 OLS check, Technology gap — coef / SE / p | −0.260 / 0.145 / 0.080 | −0.260321 / 0.144858 / 0.079877 |
+| Table 2 OLS check, Fully owned — coef / SE / p | −0.104 / 0.057 / 0.077 | −0.103647 / 0.057075 / 0.076876 |
+| Table 2 OLS check, N | 1,195 | 1195 |
+
+## What it does not
+
+| Target | Paper | Produced |
+|---|---|---|
+| Table 4 col 2, Se (publication bias) — coef / SE / p | −0.284 / 0.305 / 0.357 | not computed |
+
+---
+
+## How Table 4 is estimated
+
+The table's note says the model is "estimated by weighted least squares with the precision
+(the inverse of standard error) taken as the weight." The author's published do-file
+(`site/bma/determinants.do`) never writes that as an `[aweight=]` regression. It builds
+`prec = 1/se` (line 17) and, after `xtset idstudy`, runs
+
+```stata
+xtreg t prec, fe vce(cluster idstudy)                     // line 136 — column 1
+xi: xtreg t prec i.idcountry, fe vce(cluster idstudy)     // line 137 — column 2
 ```
-gen prec=1/se
-...
-xtset idstudy
-xtreg t prec, fe vce(cluster idstudy)
-```
 
-`t` (the coefficient's own t-statistic, e/se) is already a column in the published data. Dividing
-the level regression `e = b0 + b1*se + u` through by `se` gives
-`t = b0*(1/se) + b1 + u/se = b0*prec + b1 + v` -- an unweighted OLS regression of `t` on `prec`
-is algebraically the weighted regression of `e` on `se` with the implied variance weight, done
-without ever passing a `weights=` argument. Under a fixed-effects `xtreg`, the coefficient on
-`prec` is Stata's reported constant term (b0), and the model's own `_cons` is the coefficient on
-`se` (b1) -- i.e. the two rows swap places relative to the untransformed regression. This
-identity was validated numerically below: the coefficient on `prec` (0.021, se 0.015) and the
-model constant (-0.325, se 0.262) reproduce Table 4 column 1 to three decimals, including the
-p-values, which only happens if both the sample and the transformation are exactly right.
+`t` is each estimate's own t-statistic, already a column in the published data. Dividing
+`e = b0 + b1·se + u` through by `se` gives `t = b0·prec + b1 + u/se`, so regressing `t` on
+`prec` *is* the precision-weighted regression of `e` on `se`, with no weight argument
+anywhere. The printed rows therefore map as
 
-No second estimation line survives the do-file scan for column 2 (country fixed effects added):
-the extraction keeps every line matching `ivreg2|xtreg|regress|reg|areg|reghdfe|...`, and only
-one `xtreg`/`regress` line exists in the excerpt. Column 2 is therefore reproduced as the natural
-Stata idiom for "study AND country fixed effects" given that only `xtreg` (single-panel FE) is
-evidenced: study absorbed as the `xtreg` panel, country entered as explicit `i.idcountry` dummies,
-same clustering --
+* **Constant** = the coefficient on `prec`
+* **Se (publication bias)** = the model's reported `_cons`
 
-```
-xtreg t prec i.idcountry, fe vce(cluster idstudy)
-```
+Column 1 reproduces to seven digits on both rows. Column 2's Constant row reproduces to all
+three printed digits, p-value included.
 
-This reproduces the column-2 "Constant" row (coefficient on `prec`) exactly, including the
-p-value (0.183), which is a specific enough match that it is very unlikely to be the wrong
-specification. Its "Se (publication bias)" row -- the model's own `_cons` in a fixed-effects
-regression that also carries country dummies -- is not reproduced: `st_xtreg_fe_cons` (the
-package's only wrapper for an `xtreg,fe`-reported constant) supports only the bivariate `y ~ x`
-case, and a naive grand-mean identity (`mean(t) - sum(beta_k * mean(x_k))` over all regressors)
-does not reproduce it once country dummies are added (tested: gives -0.065, nowhere near the
-printed -0.284), so it is reported as not computed rather than guessed.
+*(An earlier version of this package claimed the do-file contained no estimation line for
+column 2. That was wrong — line 137 is the line, and it is quoted above.)*
+
+---
+
+## Why column 2's "Se (publication bias)" cannot be reproduced
+
+**Not a coding gap. The quantity is not identified by the data.**
+
+42 countries appear in the estimation sample. 21 of the 42 country dummies are perfectly
+collinear with the study fixed effects: a study covering exactly one country adds no country
+variation of its own. Stata drops 21 of them — one as the `xi` base, 20 more "omitted because
+of collinearity". The slope on `prec`, its clustered standard error and every fitted value are
+invariant to *which* 21 are dropped. The split of the fit between `_cons` and the surviving
+dummies is not, because `xtreg` reports `_cons` as `ȳ − x̄'β̂` taken over **all** regressors,
+the dummies included. In this column the constant is a normalisation of the dropping order,
+not an estimated quantity.
+
+That is not an argument from theory. Three runs of the identical command on the identical data
+give N = 1,199 and `prec` = 0.0206846 (0.0153147) every time, and three different constants:
+
+| source | `_cons` | SE | p |
+|---|---|---|---|
+| the paper, Table 4 col 2 | **−0.284** | 0.305 | 0.357 |
+| the authors' own Stata 11 log, 1 Aug 2011 | −0.2485 | 0.3185 | 0.439 |
+| Stata 15.1 here, same command, same CSV | −0.0649 | 0.3099 | 0.835 |
+
+Stata 11 omits `_Iidcountry_145` and `_155`; Stata 15.1 keeps those two and omits `_146` and
+`_157` instead. Same fit, different constant. The paper matches neither, so its number comes
+from a run earlier than the surviving log — `−0.284 / 0.305 / 0.357` is already in the
+earliest conference-version LaTeX source of this table, and no other Stata log for the paper
+exists on the author's disk.
+
+Reordering the country dummies moves this constant across roughly (−0.77, +0.35); a sweep over
+all 42 possible base categories, in both ascending and descending dummy order, produced values
+from −0.768 to +0.352 without landing on −0.284 (nearest: −0.281 with SE 0.300, −0.300 with SE
+0.307 — neither is the printed pair). Choosing an ordering *because* it output −0.284 would be
+fitting the code to the oracle, so the three cells are reported as `null` and left to fail.
+
+Everything else in the column is right, and the substantive claim the column supports — that
+adding country fixed effects leaves the publication-bias coefficient small and insignificant —
+holds under every normalisation tried.
+
+---
+
+## The fix in this revision: p-values for the Table 2 OLS check
+
+Before this revision the package produced 0.072 for Technology gap against a printed 0.080,
+and 0.069 for Fully owned against 0.077. The coefficients and standard errors were already
+exact, so the defect was purely in the inference convention.
+
+Stata's `regress y x, vce(cluster g)` reports **t on G − 1 degrees of freedom**, where G is the
+number of clusters. Here G = 41 countries (four of the 1,199 rows have missing determinants and
+drop out, taking one country with them), so df = 40. The authors' log confirms it: `F( 16, 40)`
+and "Std. Err. adjusted for 41 clusters in idcountry".
+
+The package had been reading p-values from `st_coefs()`, whose default is `z = TRUE` — a normal
+approximation, i.e. df = ∞. On t = 1.797 that is the difference between 0.0723 and 0.0799;
+small enough to look like rounding, and wrong. The p-values now come from
+`summary(m)$coeftable`, which applies fixest's default small-sample rule (`t.df = "min"`, i.e.
+G − 1) — Stata's rule, and the same one the Table 4 code was already using.
+
+`stata_compat.R` was **not** modified. `st_coefs()` is a reporting helper, not an estimator; its
+`z = FALSE` branch returns `NA` p-values rather than t-based ones, which is worth fixing
+centrally at some point, but not from inside one package — the file is hash-locked and shared,
+and the call site here has a correct alternative that costs nothing.
+
+---
 
 ## Sample construction
 
-`determinants.do` lines 14, 26 and 123 (81 in the brief's numbering):
+From `determinants.do`, in order:
 
+```stata
+drop if aux==1        // line 14   4,147 → 3,626
+drop if horiz!=1      // line 26   3,626 → 1,205   (keep horizontal spillovers)
+drop if abs(e)>10     // line 123  1,205 → 1,199
+gen prec=1/se         // line 17
 ```
-drop if aux==1
-drop if horiz!=1
-drop if abs(e)>10
-```
 
-applied in that order to the published `bma.csv` (4,147 rows) leaves exactly **1,199**
-observations -- matching the paper's printed N for both Table 4 columns precisely, and
-confirming the sample filter is right before any regression is run.
+`st_drop_if()` is used throughout, so missing values count as +∞ the way Stata treats them.
+The Table 2 OLS check loses a further four rows to missing determinants, giving the paper's
+stated 1,195 of 1,199.
 
-## Target-by-target results
+## Variable mapping for Table 2
 
-| # | Target | Printed | Produced | Verdict |
-|---|---|---|---|---|
-| 1 | T4 col1 Constant coef | 0.021 | 0.021430 | MATCH |
-| 2 | T4 col1 Constant SE | 0.015 | 0.014665 | MATCH |
-| 3 | T4 col1 Constant p | 0.150 | 0.150068 | MATCH |
-| 4 | T4 col1 Se(pub.bias) coef | -0.325 | -0.325028 | MATCH |
-| 5 | T4 col1 Se(pub.bias) SE | 0.262 | 0.262003 | MATCH |
-| 6 | T4 col1 Se(pub.bias) p | 0.220 | 0.220449 | MATCH |
-| 7 | T4 col1 N | 1,199 | 1,199 | MATCH |
-| 8 | T4 col2 Constant coef | 0.021 | 0.020685 | MATCH |
-| 9 | T4 col2 Constant SE | 0.015 | 0.015315 | MATCH |
-| 10 | T4 col2 Constant p | 0.183 | 0.182774 | MATCH |
-| 11 | T4 col2 Se(pub.bias) coef | -0.284 | NA | MISS |
-| 12 | T4 col2 Se(pub.bias) SE | 0.305 | NA | MISS |
-| 13 | T4 col2 Se(pub.bias) p | 0.357 | NA | MISS |
-| 14 | T4 col2 N | 1,199 | 1,199 | MATCH |
+The do-file's line 143 lists regressors by Stata mnemonic; Table 2 lists them by label. The
+mapping (`lngap` = Technology gap, `green` = Fully owned, `open/100` = Trade openness, and so
+on) is not assumed — `run.R` prints a check of all 14 constructed variables against Table 1's
+published means, and every one agrees (e.g. `green` 0.078 against Fully owned's 0.078; `lngap`
+9.771 against Technology gap's 9.771).
 
-11 of 14 targets matched. All three misses are the same cell family (column 2's
-"Se (publication bias)" row) and share one cause.
-
-## Misses
-
-- **T4 col2 Se(pub.bias) coef / SE / p** -- not computed. Cause: the package's `xtreg,fe`
-  constant wrapper (`st_xtreg_fe_cons`) is built for the bivariate `y ~ x` case only, and no
-  wrapper here handles a fixed-effects model's reported constant when other covariates (here,
-  22 surviving country dummies) are also in the regression. A hand-rolled grand-mean identity
-  was tried and rejected because it does not reproduce the already-validated column-1 logic
-  once covariates are added (see above) -- reporting a guessed number here would risk exactly
-  the "close but wrong by a hidden convention" failure mode this package is built to avoid, so
-  it is left unresolved rather than repaired by picking whichever formula lands nearest 0.284.
-  No repair was attempted (this needs a different wrapper, not a sample/construction/target fix).
-
-## What was NOT attempted
-
-Table 1 (descriptive statistics) and the BMA model-inclusion results (Figure 3) were in the
-brief's candidate list but are not reproduced here: Table 4 was chosen as the headline
-quantitative target per the task's instruction to pick one table, and BMA itself (posterior
-inclusion probabilities from a Bayesian model-averaging search over 43 candidate regressors) has
-no wrapper in `stata_compat.R` and was out of scope for this exercise regardless.
-
-## Run
+## Reproducing
 
 ```
 Rscript run.R
 ```
-reads only `data/v1/bma/bma.csv` (the file the site publishes), prints every produced number, and
-writes `results.json`. No manual steps.
+
+Needs `fixest`, `metafor`, `jsonlite`. Runs in a few seconds.

@@ -808,5 +808,125 @@
   "printed": 692,
   "digits": 0,
   "kind": "count"
+ },
+ {
+  "label": "T4 LongRun VehicleStock 1/se coef",
+  "printed": 0.234,
+  "digits": 3,
+  "kind": "deterministic"
+ },
+ {
+  "label": "T4 LongRun VehicleStock 1/se t",
+  "printed": 9.76,
+  "digits": 2,
+  "kind": "deterministic"
+ },
+ {
+  "label": "T4 LongRun VehicleStock Observations",
+  "printed": 346,
+  "digits": 0,
+  "kind": "count"
+ },
+ {
+  "label": "T4 LongRun NoVehicleStock 1/se coef",
+  "printed": 0.644,
+  "digits": 3,
+  "kind": "deterministic"
+ },
+ {
+  "label": "T4 LongRun NoVehicleStock 1/se t",
+  "printed": 17.38,
+  "digits": 2,
+  "kind": "deterministic"
+ },
+ {
+  "label": "T4 LongRun NoVehicleStock Observations",
+  "printed": 346,
+  "digits": 0,
+  "kind": "count"
+ },
+ {
+  "label": "Headline paper-text: long-run elasticity corrected for publication bias (paper says 0.23)",
+  "printed": 0.23,
+  "digits": 2,
+  "kind": "headline"
+ },
+ {
+  "label": "Headline paper-text: short-run elasticity corrected for publication bias (paper says 0.1)",
+  "printed": 0.1,
+  "digits": 1,
+  "kind": "headline"
+ },
+ {
+  "label": "T5 sample mean, long run whole sample (the abstract's 0.66)",
+  "printed": 0.663,
+  "digits": 3,
+  "kind": "headline"
+ },
+ {
+  "label": "T5 sample mean, long run vehicle stock",
+  "printed": 0.465,
+  "digits": 3,
+  "kind": "deterministic"
+ },
+ {
+  "label": "T5 sample mean, long run no vehicle stock",
+  "printed": 0.861,
+  "digits": 3,
+  "kind": "deterministic"
+ },
+ {
+  "label": "T2 long run vehicle stock, median",
+  "printed": 0.395,
+  "digits": 3,
+  "kind": "deterministic"
+ },
+ {
+  "label": "T2 long run vehicle stock, sd",
+  "printed": 0.509,
+  "digits": 3,
+  "kind": "deterministic"
+ },
+ {
+  "label": "T2 long run vehicle stock, max",
+  "printed": 2.98,
+  "digits": 2,
+  "kind": "deterministic"
+ },
+ {
+  "label": "T2 long run no vehicle stock, sd",
+  "printed": 0.519,
+  "digits": 3,
+  "kind": "deterministic"
+ },
+ {
+  "label": "T2 long run no vehicle stock, min",
+  "printed": -0.256,
+  "digits": 3,
+  "kind": "deterministic"
+ },
+ {
+  "label": "T2 long run no vehicle stock, max",
+  "printed": 2.466,
+  "digits": 3,
+  "kind": "deterministic"
+ },
+ {
+  "label": "T5 weighted mean, long run whole sample",
+  "printed": 0.614,
+  "digits": 3,
+  "kind": "deterministic"
+ },
+ {
+  "label": "T5 weighted mean, long run vehicle stock",
+  "printed": 0.424,
+  "digits": 3,
+  "kind": "deterministic"
+ },
+ {
+  "label": "T5 weighted mean, long run no vehicle stock",
+  "printed": 0.857,
+  "digits": 3,
+  "kind": "deterministic"
  }
 ]

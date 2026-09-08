@@ -1,0 +1,77 @@
+[
+  {"label": "T1 OLS bias_coef",        "printed": -2.354,  "digits": 3, "kind": "deterministic"},
+  {"label": "T1 OLS bias_se_boot",     "printed": 0.589,   "digits": 3, "kind": "stochastic"},
+  {"label": "T1 OLS const",            "printed": 0.0261,  "digits": 4, "kind": "deterministic"},
+  {"label": "T1 OLS const_se_boot",    "printed": 0.0316,  "digits": 4, "kind": "stochastic"},
+  {"label": "T1 OLS R2",               "printed": 0.29,    "digits": 2, "kind": "deterministic"},
+  {"label": "T1 OLS RMSE",             "printed": 0.13,    "digits": 2, "kind": "deterministic"},
+
+  {"label": "T1 FE bias_coef",         "printed": -2.392,  "digits": 3, "kind": "deterministic"},
+  {"label": "T1 FE bias_se_boot",      "printed": 1.708,   "digits": 3, "kind": "stochastic"},
+  {"label": "T1 FE const",             "printed": 0.0288,  "digits": 4, "kind": "deterministic"},
+  {"label": "T1 FE const_se_boot",     "printed": 0.0954,  "digits": 4, "kind": "stochastic"},
+  {"label": "T1 FE R2",                "printed": 0.29,    "digits": 2, "kind": "deterministic"},
+  {"label": "T1 FE RMSE",              "printed": 0.12,    "digits": 2, "kind": "deterministic"},
+
+  {"label": "T1 Study bias_coef",      "printed": -2.773,  "digits": 3, "kind": "deterministic"},
+  {"label": "T1 Study bias_se_boot",   "printed": 0.441,   "digits": 3, "kind": "stochastic"},
+  {"label": "T1 Study const",          "printed": 0.0428,  "digits": 4, "kind": "deterministic"},
+  {"label": "T1 Study const_se_boot",  "printed": 0.0245,  "digits": 4, "kind": "stochastic"},
+  {"label": "T1 Study R2",             "printed": 0.40,    "digits": 2, "kind": "deterministic"},
+  {"label": "T1 Study RMSE",           "printed": 0.12,    "digits": 2, "kind": "deterministic"},
+
+  {"label": "T1 Precision bias_coef",       "printed": -2.321,  "digits": 3, "kind": "deterministic"},
+  {"label": "T1 Precision bias_se_boot",    "printed": 0.380,   "digits": 3, "kind": "stochastic"},
+  {"label": "T1 Precision const",           "printed": 0.0238,  "digits": 4, "kind": "deterministic"},
+  {"label": "T1 Precision const_se_boot",   "printed": 0.0197,  "digits": 4, "kind": "stochastic"},
+  {"label": "T1 Precision R2",              "printed": 0.30,    "digits": 2, "kind": "deterministic"},
+  {"label": "T1 Precision RMSE",            "printed": 0.10,    "digits": 2, "kind": "deterministic"},
+
+  {"label": "T1 IV bias_coef",         "printed": -2.081,  "digits": 3, "kind": "deterministic"},
+  {"label": "T1 IV bias_se_boot",      "printed": 0.405,   "digits": 3, "kind": "stochastic"},
+  {"label": "T1 IV const",             "printed": 0.00693, "digits": 5, "kind": "deterministic"},
+  {"label": "T1 IV const_se_boot",     "printed": 0.0228,  "digits": 4, "kind": "stochastic"},
+  {"label": "T1 IV R2",                "printed": 0.28,    "digits": 2, "kind": "deterministic"},
+  {"label": "T1 IV RMSE",              "printed": 0.13,    "digits": 2, "kind": "deterministic"},
+
+  {"label": "T1 N",       "printed": 176, "digits": 0, "kind": "count"},
+  {"label": "T1 studies", "printed": 9,   "digits": 0, "kind": "count"},
+
+  {"label": "T2 OLS bias_coef",        "printed": -2.705,  "digits": 3, "kind": "deterministic"},
+  {"label": "T2 OLS bias_se_boot",     "printed": 0.549,   "digits": 3, "kind": "stochastic"},
+  {"label": "T2 OLS const",            "printed": 0.0490,  "digits": 4, "kind": "deterministic"},
+  {"label": "T2 OLS const_se_boot",    "printed": 0.0299,  "digits": 4, "kind": "stochastic"},
+  {"label": "T2 OLS R2",               "printed": 0.41,    "digits": 2, "kind": "deterministic"},
+  {"label": "T2 OLS RMSE",             "printed": 0.11,    "digits": 2, "kind": "deterministic"},
+
+  {"label": "T2 FE bias_coef",         "printed": -2.438,  "digits": 3, "kind": "deterministic"},
+  {"label": "T2 FE bias_se_boot",      "printed": 1.906,   "digits": 3, "kind": "stochastic"},
+  {"label": "T2 FE const",             "printed": 0.0321,  "digits": 4, "kind": "deterministic"},
+  {"label": "T2 FE const_se_boot",     "printed": 0.106,   "digits": 3, "kind": "stochastic"},
+  {"label": "T2 FE R2",                "printed": 0.41,    "digits": 2, "kind": "deterministic"},
+  {"label": "T2 FE RMSE",              "printed": 0.11,    "digits": 2, "kind": "deterministic"},
+
+  {"label": "T2 Study bias_coef",      "printed": -2.517,  "digits": 3, "kind": "deterministic"},
+  {"label": "T2 Study bias_se_boot",   "printed": 0.562,   "digits": 3, "kind": "stochastic"},
+  {"label": "T2 Study const",          "printed": 0.0334,  "digits": 4, "kind": "deterministic"},
+  {"label": "T2 Study const_se_boot",  "printed": 0.0297,  "digits": 4, "kind": "stochastic"},
+  {"label": "T2 Study R2",             "printed": 0.37,    "digits": 2, "kind": "deterministic"},
+  {"label": "T2 Study RMSE",           "printed": 0.11,    "digits": 2, "kind": "deterministic"},
+
+  {"label": "T2 Precision bias_coef",       "printed": -2.455,  "digits": 3, "kind": "deterministic"},
+  {"label": "T2 Precision bias_se_boot",    "printed": 0.406,   "digits": 3, "kind": "stochastic"},
+  {"label": "T2 Precision const",           "printed": 0.0332,  "digits": 4, "kind": "deterministic"},
+  {"label": "T2 Precision const_se_boot",   "printed": 0.0205,  "digits": 4, "kind": "stochastic"},
+  {"label": "T2 Precision R2",              "printed": 0.34,    "digits": 2, "kind": "deterministic"},
+  {"label": "T2 Precision RMSE",            "printed": 0.08,    "digits": 2, "kind": "deterministic"},
+
+  {"label": "T2 IV bias_coef",         "printed": -2.400,  "digits": 3, "kind": "deterministic"},
+  {"label": "T2 IV bias_se_boot",      "printed": 0.401,   "digits": 3, "kind": "stochastic"},
+  {"label": "T2 IV const",             "printed": 0.0298,  "digits": 4, "kind": "deterministic"},
+  {"label": "T2 IV const_se_boot",     "printed": 0.0212,  "digits": 4, "kind": "stochastic"},
+  {"label": "T2 IV R2",                "printed": 0.40,    "digits": 2, "kind": "deterministic"},
+  {"label": "T2 IV RMSE",              "printed": 0.10,    "digits": 2, "kind": "deterministic"},
+
+  {"label": "T2 N",       "printed": 146, "digits": 0, "kind": "count"},
+  {"label": "T2 studies", "printed": 4,   "digits": 0, "kind": "count"}
+]

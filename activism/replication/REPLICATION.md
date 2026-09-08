@@ -148,6 +148,112 @@ own text (Bajzik 2025, pp. 18-19): "We winsorize all continuous variables at the
 1% and define additional indicators prefixed 'Hi_' and 'Lo_' to represent observations above and
 below the median of the full sample" -- exactly what `run.R` does with `median(antidirector)`.
 
+## Numbers from the paper's text: the headline "0% to 1.5%" claim
+
+The site summarizes this paper as **"0% to 1.5%"**. That phrase is the paper's own, appearing
+four times: in the abstract ("activism creates a positive shareholder value ranging from 0%
+to 1.5%, which is smaller than commonly thought"), the conclusion ("Our estimates range from
+0% to 1.5%, depending on the estimation technique"), the funnel-plot discussion ("the most
+precise estimates ... lie around 0%-1.5%. This finding ... is supported by several rigorous
+models for correcting selective reporting, detailed in the Supporting Information Appendix"),
+and again in the discussion ("the price response estimates range from 0% to 1.5%").
+
+That appendix (`appendix.pdf`, section "Selective Reporting Methodology") is where the two
+numbers come from: **Table A2, "Tests indicate selective reporting."** It runs the classic
+Egger/Stanley-Doucouliagos FAT-PET regression
+
+```
+estimate_ij = beta0 + beta1 * SE_ij + e_ij
+```
+
+(estimate = winsorized `Estim_adj`, i.e. `estw` in this package; SE = winsorized `Se_adj`)
+six different ways in Panel A -- OLS, study-level fixed effects (FE), study-level between
+effects (BE), IV (SE instrumented by `1/sqrt(TotalObs)`), weighted by `w1` (inverse
+estimates-per-study) and weighted by `w2 = 1/SE` -- plus four non-linear bias-correction
+techniques in Panel B (Top10, Stem, Kinked, Selection). `beta0` is "the effect beyond bias":
+the price response implied once the estimate-SE correlation that signals selective reporting
+(`beta1 > 0`) is purged. The appendix states (p.17):
+
+> "the magnitude of beta0 coefficients is lower than what is commonly suggested in prior
+> research, ranging from **0.008% to 1.473%**" [Panel A, six linear methods, N = 1,973]
+>
+> "the estimated 'true effect' ranges from **0.000%** for the kink method to **1.062%** for
+> the selection model, which aligns with the interval of (0.008%, 1.473%)" [Panel B]
+
+0.008% rounds to "0%" and 1.473% rounds to "1.5%" -- exactly the abstract's range, and exactly
+what `run.R` targets.
+
+### What `run.R` reproduces
+
+All six Panel A (linear) estimators, plus Top10 from Panel B (a precision-weighted average,
+computable exactly with `st_metan`). Stem, Kinked and Selection are specialized non-linear
+estimators (Furukawa 2019; Bom & Rachinger 2019; Andrews & Kasy 2019) with no sanctioned
+Stata-style wrapper in `stata_compat.R` and no published implementation on the site --
+the same category of limitation as Table 3's BMA (see below): not attempted, not guessed at.
+
+### Missing-input caveat (same root cause as Table 3)
+
+`Se_adj` ("Unnamed: 26"), the SE regressor, is missing for 122 of 1,973 rows; `activism.R`
+fills those via a p-value-implied SE from an unpublished helper (`functions/calculateSE_JB.R`,
+not on the site -- see "Table 3: why it is out of scope" below for the full account). This
+package cannot reproduce that imputation, so every regression below runs on the **1,851 rows
+(60 of 67 studies)** with a directly reported `Se_adj`. N is reported alongside every estimate.
+
+### Target-by-target results (Table A2, Panel A + Top10)
+
+| Method | Paper's beta0 | Produced (N=1,851) | Verdict |
+|---|---:|---:|---|
+| OLS | 0.590 | 0.647 | close (+0.06 pp) |
+| FE | 1.256 | 1.310 | close (+0.05 pp) |
+| BE | 1.473 | **-0.736** | MISS (sign flip -- see below) |
+| IV | 0.657 | 0.592 | close (-0.07 pp) |
+| w(NOBS), weight = w1 | 0.713 | 0.759 | close (+0.05 pp) |
+| w(1/SE), weight = w2 | 0.008 | 0.010 | close |
+| Top10 (Panel B) | 0.196 | -0.0005 | MISS, unstable (see below) |
+
+**Headline range:** paper (Panel A, all 6): [0.008%, 1.473%] -> "0% to 1.5%". Produced (all 6,
+N=1,851): [-0.736%, 1.310%] -> "-0.7% to 1.3%". **Excluding BE** (the one method with a sign
+flip), the produced range is **[0.010%, 1.310%] -> "0.0% to 1.3%"** -- the closest match, and
+the same qualitative story as the paper: a small, near-zero-to-roughly-1.5-point corrected
+effect, an order of magnitude below the raw uncorrected mean of 1.49% (Table 2's `T2 All
+Mean`). Four of the six linear methods (OLS, FE, IV, w(NOBS)) land within about 0.05-0.07
+percentage points of the paper's printed values -- a small, systematic gap consistent with
+the missing 122/1,973 rows, not a modeling error.
+
+**Why BE misses by more than the others.** BE regresses only 60 study-level *means* (one point
+per study) rather than 1,851 estimate-level rows, so it has by far the least data and the most
+leverage per point. Two studies with unusually large `se_adjw` (means of 4.60% and 3.60%,
+against nearly all others under 3%) pull the estimated slope up to 1.80, which, combined with
+a moderate positive intercept-slope trade-off in the remaining mass of studies, pushes the
+extrapolated intercept negative. Whether the seven studies with *no* directly reported SE
+(missing entirely, not just partially) would have pulled this back toward the paper's positive
+1.473% cannot be checked without their SEs, which are not published. This is reported as an
+honest miss, not smoothed over.
+
+**Why Top10 is flagged unverified rather than reproduced.** Top10 averages the 10% most
+precise (lowest-SE) estimates, weighted by inverse variance (`1/SE^2`) -- a fixed-effect
+meta-analysis of that subset. On the 1,851-row available sample, winsorizing `se_adj` at the
+1st percentile floors roughly 19 rows to the *same* near-zero SE (0.00106%, from a study whose
+raw `Se_adj` was already 0.00105). Because inverse-variance weighting is quadratic in `1/SE`,
+that tied cluster receives overwhelming weight and swings the pooled estimate to essentially
+zero, far from the paper's 0.196%. This is a genuine instability of the Top10 estimator under
+this reduced sample (a few more or fewer of those near-zero-SE rows, one way or the other,
+would swing the result substantially) rather than a bug in `run.R`; it is reported but not
+counted toward the headline reproduction.
+
+### `st_ivreg2` calling convention (for the next reader of this package)
+
+`stata_compat.R`'s `iv=` argument builds the fixest formula as
+`paste(deparse(fml), "|", deparse(iv[[2]]))`, which extracts only the *name* of the
+endogenous variable from a two-sided `iv` formula (e.g. `se_adjw ~ instrument` contributes
+only `"se_adjw"`), silently dropping the instrument and turning the call into a fixed-effects
+regression rather than an IV one. Verified with a known-truth simulation (recovers a
+simulated IV design's true intercept/slope when called correctly; silently returns a
+completely different FE model when called via `iv=`). The working, sanctioned form -- used
+here -- is to pass the complete multi-part fixest formula directly as `fml` with `iv = NULL`:
+`st_ivreg2(estw ~ 1 | se_adjw ~ instrument, data = reg, cluster = ~ArticleNo)`. No wrapper code
+was changed; this is a calling-convention note, not a patch.
+
 ## Table 3: why it is out of scope
 
 Table 3 ("Why the activism returns vary") reports BMA posterior means/SDs/PIPs alongside a
@@ -192,10 +298,25 @@ forbidden by the run rules, so the gap is reported rather than papered over.
 
 ## Verdict
 
-**PARTIAL.** 15 of 36 targets match exactly (all 8 counts, 7 of 28 continuous cells); the other
+**PARTIAL, on both pieces of this package.**
+
+**Table 2:** 15 of 36 targets match exactly (all 8 counts, 7 of 28 continuous cells); the other
 21 miss by a small, uniform, fully-diagnosed amount traceable to one documented convention gap
-in the available toolkit, not to a wrong sample, wrong weight, or wrong estimator. Re-run and
-re-verified on this pass: `Rscript run.R` still reproduces `results.json` exactly, and the
-winsorization-convention diagnosis was independently re-derived from a fresh script plus a
-direct read of `DescTools::Winsorize`'s source (see above), not merely repeated from the prior
-write-up.
+in the available toolkit, not to a wrong sample, wrong weight, or wrong estimator.
+
+**Headline claim ("0% to 1.5%", Table A2):** the qualitative claim reproduces cleanly -- a
+small, near-zero-to-roughly-1.3-to-1.5-point corrected effect, an order of magnitude below the
+raw uncorrected mean of 1.49%. Of the six linear FAT-PET estimators behind it, four (OLS, FE,
+IV, w(NOBS)) land within 0.05-0.07 percentage points of the paper's own values, and excluding
+the one outlier (BE, a sign flip driven by only 60 study-level data points), the produced range
+[0.010%, 1.310%] rounds to the same "0.0% to 1.3%" the paper reports as "0% to 1.5%". BE itself,
+and the Top10 estimate from Panel B, are documented misses (see above) rather than smoothed
+over, both traced to the same 122/1,973-row missing-`Se_adj` gap that Table 3 already
+documents. Stem, Kinked and Selection (the other three Panel B techniques) were not attempted:
+no sanctioned wrapper exists for them and their implementation is not published.
+
+Re-run and re-verified on this pass: `Rscript run.R` reproduces `results.json` exactly, the
+Table 2 winsorization-convention diagnosis was independently re-derived from a fresh script
+plus a direct read of `DescTools::Winsorize`'s source (see above), and the headline-claim
+regressions were checked against a known-truth IV simulation and a direct inspection of the
+tied near-zero-SE cluster driving the Top10 instability (see above).

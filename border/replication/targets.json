@@ -1,0 +1,56 @@
+[
+  {"label": "N (observations)",        "printed": 1271, "digits": 0, "kind": "count"},
+  {"label": "Studies",                 "printed": 61,   "digits": 0, "kind": "count"},
+
+  {"label": "OLS Midyear coef",        "printed": -0.002, "digits": 3, "kind": "deterministic"},
+  {"label": "OLS Midyear se",          "printed": 0.011,  "digits": 3, "kind": "deterministic"},
+  {"label": "OLS Midyear p",           "printed": 0.874,  "digits": 3, "kind": "deterministic"},
+
+  {"label": "OLS Canada coef",         "printed": 0.822,  "digits": 3, "kind": "deterministic"},
+  {"label": "OLS Canada se",           "printed": 0.351,  "digits": 3, "kind": "deterministic"},
+  {"label": "OLS Canada p",            "printed": 0.019,  "digits": 3, "kind": "deterministic"},
+
+  {"label": "OLS US coef",             "printed": -1.046, "digits": 3, "kind": "deterministic"},
+  {"label": "OLS US se",               "printed": 0.237,  "digits": 3, "kind": "deterministic"},
+  {"label": "OLS US p",                "printed": 0.000,  "digits": 3, "kind": "deterministic"},
+
+  {"label": "OLS EU coef",             "printed": -0.535, "digits": 3, "kind": "deterministic"},
+  {"label": "OLS EU se",               "printed": 0.395,  "digits": 3, "kind": "deterministic"},
+  {"label": "OLS EU p",                "printed": 0.176,  "digits": 3, "kind": "deterministic"},
+
+  {"label": "OLS OECD coef",           "printed": -0.833, "digits": 3, "kind": "deterministic"},
+  {"label": "OLS OECD se",             "printed": 0.336,  "digits": 3, "kind": "deterministic"},
+  {"label": "OLS OECD p",              "printed": 0.013,  "digits": 3, "kind": "deterministic"},
+
+  {"label": "OLS Emerging coef",       "printed": 0.653,  "digits": 3, "kind": "deterministic"},
+  {"label": "OLS Emerging se",         "printed": 0.248,  "digits": 3, "kind": "deterministic"},
+  {"label": "OLS Emerging p",          "printed": 0.009,  "digits": 3, "kind": "deterministic"},
+
+  {"label": "OLS Constant coef",       "printed": 2.055,  "digits": 3, "kind": "deterministic"},
+  {"label": "OLS Constant se",         "printed": 1.384,  "digits": 3, "kind": "deterministic"},
+  {"label": "OLS Constant p",          "printed": 0.138,  "digits": 3, "kind": "deterministic"},
+
+  {"label": "FE Canada coef",          "printed": 1.096,  "digits": 3, "kind": "deterministic"},
+  {"label": "FE Canada se",            "printed": 0.321,  "digits": 3, "kind": "deterministic"},
+  {"label": "FE Canada p",             "printed": 0.001,  "digits": 3, "kind": "deterministic"},
+
+  {"label": "FE US coef",              "printed": -1.251, "digits": 3, "kind": "deterministic"},
+  {"label": "FE US se",                "printed": 0.221,  "digits": 3, "kind": "deterministic"},
+  {"label": "FE US p",                 "printed": 0.000,  "digits": 3, "kind": "deterministic"},
+
+  {"label": "FE EU coef",              "printed": -0.436, "digits": 3, "kind": "deterministic"},
+  {"label": "FE EU se",                "printed": 0.175,  "digits": 3, "kind": "deterministic"},
+  {"label": "FE EU p",                 "printed": 0.016,  "digits": 3, "kind": "deterministic"},
+
+  {"label": "FE OECD coef",            "printed": -0.434, "digits": 3, "kind": "deterministic"},
+  {"label": "FE OECD se",              "printed": 0.232,  "digits": 3, "kind": "deterministic"},
+  {"label": "FE OECD p",               "printed": 0.066,  "digits": 3, "kind": "deterministic"},
+
+  {"label": "FE Emerging coef",        "printed": 1.129,  "digits": 3, "kind": "deterministic"},
+  {"label": "FE Emerging se",          "printed": 0.558,  "digits": 3, "kind": "deterministic"},
+  {"label": "FE Emerging p",           "printed": 0.048,  "digits": 3, "kind": "deterministic"},
+
+  {"label": "FE Constant coef",        "printed": 6.149,  "digits": 3, "kind": "deterministic"},
+  {"label": "FE Constant se",          "printed": 3.842,  "digits": 3, "kind": "deterministic"},
+  {"label": "FE Constant p",           "printed": 0.115,  "digits": 3, "kind": "deterministic"}
+]

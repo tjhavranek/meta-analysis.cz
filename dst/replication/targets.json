@@ -1,19 +1,141 @@
 [
-  {"label": "OLS SE coef",       "printed": -0.410,   "digits": 3, "kind": "deterministic"},
-  {"label": "OLS SE se",         "printed": 0.265,    "digits": 3, "kind": "deterministic"},
-  {"label": "OLS const coef",    "printed": -0.293,   "digits": 3, "kind": "deterministic"},
-  {"label": "OLS const se",      "printed": 0.000778, "digits": 6, "kind": "deterministic"},
-  {"label": "OLS N",             "printed": 101,      "digits": 0, "kind": "count"},
-
-  {"label": "FE SE coef",        "printed": -1.217,   "digits": 3, "kind": "deterministic"},
-  {"label": "FE SE se",          "printed": 0.790,    "digits": 3, "kind": "deterministic"},
-  {"label": "FE const coef",     "printed": -0.222,   "digits": 3, "kind": "deterministic"},
-  {"label": "FE const se",       "printed": 0.0700,   "digits": 4, "kind": "deterministic"},
-  {"label": "FE N",              "printed": 101,      "digits": 0, "kind": "count"},
-
-  {"label": "ME SE coef",        "printed": -0.449,   "digits": 3, "kind": "deterministic"},
-  {"label": "ME SE se",          "printed": 0.688,    "digits": 3, "kind": "deterministic"},
-  {"label": "ME const coef",     "printed": -0.291,   "digits": 3, "kind": "deterministic"},
-  {"label": "ME const se",       "printed": 0.00731,  "digits": 5, "kind": "deterministic"},
-  {"label": "ME N",              "printed": 101,      "digits": 0, "kind": "count"}
+ {
+  "label": "OLS SE coef",
+  "printed": -0.41,
+  "digits": 3,
+  "kind": "deterministic"
+ },
+ {
+  "label": "OLS SE se",
+  "printed": 0.265,
+  "digits": 3,
+  "kind": "deterministic"
+ },
+ {
+  "label": "OLS const coef",
+  "printed": -0.293,
+  "digits": 3,
+  "kind": "deterministic"
+ },
+ {
+  "label": "OLS const se",
+  "printed": 0.000778,
+  "digits": 6,
+  "kind": "deterministic"
+ },
+ {
+  "label": "OLS N",
+  "printed": 101,
+  "digits": 0,
+  "kind": "count"
+ },
+ {
+  "label": "FE SE coef",
+  "printed": -1.217,
+  "digits": 3,
+  "kind": "deterministic"
+ },
+ {
+  "label": "FE SE se",
+  "printed": 0.79,
+  "digits": 3,
+  "kind": "deterministic"
+ },
+ {
+  "label": "FE const coef",
+  "printed": -0.222,
+  "digits": 3,
+  "kind": "deterministic"
+ },
+ {
+  "label": "FE const se",
+  "printed": 0.07,
+  "digits": 4,
+  "kind": "deterministic"
+ },
+ {
+  "label": "FE N",
+  "printed": 101,
+  "digits": 0,
+  "kind": "count"
+ },
+ {
+  "label": "ME SE coef",
+  "printed": -0.449,
+  "digits": 3,
+  "kind": "deterministic"
+ },
+ {
+  "label": "ME SE se",
+  "printed": 0.688,
+  "digits": 3,
+  "kind": "deterministic"
+ },
+ {
+  "label": "ME const coef",
+  "printed": -0.291,
+  "digits": 3,
+  "kind": "deterministic"
+ },
+ {
+  "label": "ME const se",
+  "printed": 0.00731,
+  "digits": 5,
+  "kind": "deterministic"
+ },
+ {
+  "label": "ME N",
+  "printed": 101,
+  "digits": 0,
+  "kind": "count"
+ },
+ {
+  "label": "Simple avg ESTIMATE, all obs (%)",
+  "printed": -0.334,
+  "digits": 3,
+  "kind": "headline"
+ },
+ {
+  "label": "BMA best-practice global estimate (%), own reconstruction",
+  "printed": -0.014,
+  "digits": 3,
+  "kind": "approximation",
+  "note": "rebuilt from Table 5's BMA posterior means, which the paper prints to three decimals; the 14 rounded coefficients leave a near-constant offset of about +0.005 across all 21 countries. Re-running the authors' BMS chain is not possible with the sanctioned wrappers, so this is an approximation, not a reproduction, and is not scored as either."
+ },
+ {
+  "label": "T2 all obs, study-weighted mean (the abstract's 0.34%)",
+  "printed": -0.343,
+  "digits": 3,
+  "kind": "headline"
+ },
+ {
+  "label": "T2 all obs, study-weighted CI low",
+  "printed": -0.429,
+  "digits": 3,
+  "kind": "headline"
+ },
+ {
+  "label": "T2 all obs, study-weighted CI high",
+  "printed": -0.257,
+  "digits": 3,
+  "kind": "headline"
+ },
+ {
+  "label": "T2 all obs, unweighted CI low",
+  "printed": -0.419,
+  "digits": 3,
+  "kind": "deterministic"
+ },
+ {
+  "label": "T2 all obs, unweighted CI high",
+  "printed": -0.25,
+  "digits": 3,
+  "kind": "deterministic"
+ },
+ {
+  "label": "Median estimate (Section 3, Figure 4 text)",
+  "printed": -0.3,
+  "digits": 1,
+  "kind": "deterministic"
+ }
 ]

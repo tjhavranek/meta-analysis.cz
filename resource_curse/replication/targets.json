@@ -1,0 +1,183 @@
+[
+ {
+  "label": "Panel A: N (OLS)",
+  "printed": 605,
+  "digits": 0,
+  "kind": "count"
+ },
+ {
+  "label": "Panel A: N (IV)",
+  "printed": 605,
+  "digits": 0,
+  "kind": "count"
+ },
+ {
+  "label": "Panel B: N (FE)",
+  "printed": 605,
+  "digits": 0,
+  "kind": "count"
+ },
+ {
+  "label": "Panel B: N (Mixed)",
+  "printed": 605,
+  "digits": 0,
+  "kind": "count"
+ },
+ {
+  "label": "Panel B: groups (FE)",
+  "printed": 43,
+  "digits": 0,
+  "kind": "count"
+ },
+ {
+  "label": "Panel B: groups (Mixed)",
+  "printed": 43,
+  "digits": 0,
+  "kind": "count"
+ },
+ {
+  "label": "Panel A: OLS SE (publication selection) coef",
+  "printed": -1.016,
+  "digits": 3,
+  "kind": "deterministic"
+ },
+ {
+  "label": "Panel A: OLS SE (publication selection) t",
+  "printed": -5.18,
+  "digits": 2,
+  "kind": "deterministic"
+ },
+ {
+  "label": "Panel A: OLS SE (publication selection) p",
+  "printed": 0.0,
+  "digits": 3,
+  "kind": "deterministic"
+ },
+ {
+  "label": "Panel A: OLS Constant (true effect) coef",
+  "printed": 0.026,
+  "digits": 3,
+  "kind": "deterministic"
+ },
+ {
+  "label": "Panel A: OLS Constant (true effect) t",
+  "printed": 1.69,
+  "digits": 2,
+  "kind": "deterministic"
+ },
+ {
+  "label": "Panel A: OLS Constant (true effect) p",
+  "printed": 0.099,
+  "digits": 3,
+  "kind": "deterministic"
+ },
+ {
+  "label": "Panel A: IV SE (publication selection) coef",
+  "printed": -1.234,
+  "digits": 3,
+  "kind": "deterministic"
+ },
+ {
+  "label": "Panel A: IV SE (publication selection) t",
+  "printed": -4.81,
+  "digits": 2,
+  "kind": "deterministic"
+ },
+ {
+  "label": "Panel A: IV SE (publication selection) p",
+  "printed": 0.0,
+  "digits": 3,
+  "kind": "deterministic"
+ },
+ {
+  "label": "Panel A: IV Constant (true effect) coef",
+  "printed": 0.038,
+  "digits": 3,
+  "kind": "deterministic"
+ },
+ {
+  "label": "Panel A: IV Constant (true effect) t",
+  "printed": 2.41,
+  "digits": 2,
+  "kind": "deterministic"
+ },
+ {
+  "label": "Panel A: IV Constant (true effect) p",
+  "printed": 0.016,
+  "digits": 3,
+  "kind": "deterministic"
+ },
+ {
+  "label": "Panel B: FE SE (publication bias) coef",
+  "printed": -0.011,
+  "digits": 3,
+  "kind": "deterministic"
+ },
+ {
+  "label": "Panel B: FE SE (publication bias) t",
+  "printed": -0.58,
+  "digits": 2,
+  "kind": "deterministic"
+ },
+ {
+  "label": "Panel B: FE SE (publication bias) p",
+  "printed": 0.563,
+  "digits": 3,
+  "kind": "deterministic"
+ },
+ {
+  "label": "Panel B: FE Constant (effect beyond bias) coef",
+  "printed": -0.589,
+  "digits": 3,
+  "kind": "deterministic"
+ },
+ {
+  "label": "Panel B: FE Constant (effect beyond bias) t",
+  "printed": -2.64,
+  "digits": 2,
+  "kind": "deterministic"
+ },
+ {
+  "label": "Panel B: FE Constant (effect beyond bias) p",
+  "printed": 0.011,
+  "digits": 3,
+  "kind": "deterministic"
+ },
+ {
+  "label": "Panel B: Mixed SE (publication bias) coef",
+  "printed": 0.09,
+  "digits": 3,
+  "kind": "deterministic"
+ },
+ {
+  "label": "Panel B: Mixed SE (publication bias) z",
+  "printed": 0.14,
+  "digits": 2,
+  "kind": "deterministic"
+ },
+ {
+  "label": "Panel B: Mixed SE (publication bias) p",
+  "printed": 0.892,
+  "digits": 3,
+  "kind": "deterministic"
+ },
+ {
+  "label": "Panel B: Mixed Constant (effect beyond bias) coef",
+  "printed": -0.133,
+  "digits": 3,
+  "kind": "deterministic"
+ },
+ {
+  "label": "Panel B: Mixed Constant (effect beyond bias) z",
+  "printed": 1.43,
+  "digits": 2,
+  "kind": "discrepancy",
+  "note": "The paper's Panel B prints this z as '1.43', unsigned. It must be NEGATIVE: the same row's coefficient is -0.133 and its p-value is 0.153, and z = -1.43 is the only value consistent with both. Every other cell in the table carries its sign (-0.58, -2.64, 0.14), so this reads as a dropped minus in typesetting rather than a different quantity. This package computes -1.427388, which agrees with the paper on magnitude to the printed digits. Recorded as a discrepancy for the author, not scored as a defect: the printed value is left exactly as published."
+ },
+ {
+  "label": "Panel B: Mixed Constant (effect beyond bias) p",
+  "printed": 0.153,
+  "digits": 3,
+  "kind": "deterministic"
+ }
+]

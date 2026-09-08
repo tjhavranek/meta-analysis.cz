@@ -5,7 +5,8 @@
 # Uses ONLY the wrappers in stata_compat.R. No feols/lm/rma/lmer/plm/quantile call anywhere
 # in this file.
 
-source("stata_compat.R")
+if (file.exists("stata_compat.R")) source("stata_compat.R") else
+  source("https://meta-analysis.cz/class/replication/stata_compat.R")
 
 suppressMessages(library(jsonlite))
 
@@ -13,7 +14,8 @@ suppressMessages(library(jsonlite))
 # class.do (lines 22-53) reads class.xlsx; the published class.csv has the same columns needed
 # here (idstudy, effect_true, effect, se_effect, sample_size, weight, method_*).
 d <- read.csv(
-  "C:\\Users\\thavr\\Dropbox\\Study\\Other\\Agents\\Joint\\web_meta\\site\\data\\v1\\class\\class.csv",
+  (if (file.exists("class.csv")) "class.csv" else
+     "https://meta-analysis.cz/data/v1/class/class.csv"),
   stringsAsFactors = FALSE
 )
 
@@ -97,9 +99,114 @@ add("Precision: Publication bias (se)",                 co_prec$std.error[co_pre
 add("Precision: Effect beyond bias / constant (coef)",  co_prec$estimate[co_prec$term == "(Intercept)"])
 add("Precision: Effect beyond bias / constant (se)",    co_prec$std.error[co_prec$term == "(Intercept)"])
 
+# ------------------------------------------------------------------------------------------
+# ---- Headline claim: "the implied class size effect is close to zero" (Table B4, Panel A) ---
+#
+# Paper's own words (abstract): "The implied class size effect is negligible for all
+# identification approaches except Tennessee's Student/Teacher Achievement Ratio project..."
+# and (Section 5, Conclusion): "Among the five identification approaches, four deliver effects
+# close to zero. The only exception is the STAR experiment, where even after correction for
+# potential publication bias we find a mean effect almost of the size reported by Krueger
+# (1999)." (Section 3 adds the yardstick: "effects below 1 in absolute value are relatively
+# small in economic terms because they imply less than a 0.1 standard-deviation change in test
+# scores following a class size reduction by 10 students.")
+#
+# The five identification approaches are the five subsets flagged by method_experiment (STAR),
+# method_rdd, method_instrument, method_fe and method_ols (class.do's own subset dummies). The
+# number that "justifies the phrase" for each subset is Online Appendix Table B4's "Effect
+# beyond bias (constant)" in the OLS column of Panel A -- the same linear model as Table 3
+# Block 1's OLS column (class.do lines 221-223), just restricted to the subset instead of run
+# on all estimates. effect_w and se_effect_w are winsorised on the FULL sample first (as in
+# class.do), then subset.
+#
+# CLUSTERING DIFFERS FOR STAR, and it is not an oversight. Four of the five lines cluster:
+#     class.do:257  ivreg2 effect_w se_effect_w if method_rdd==1,        cluster(idstudy)
+#     class.do:276  ivreg2 effect_w se_effect_w if method_instrument==1, cluster(idstudy)
+#     class.do:294  ivreg2 effect_w se_effect_w if method_fe==1,         cluster(idstudy)
+#     class.do:312  ivreg2 effect_w se_effect_w if method_ols==1,        cluster(idstudy)
+# The STAR line does not:
+#     class.do:239  ivreg2 effect_w se_effect_w if method_experiment==1
+# The reason is visible in the data: the STAR subsample contains only TWO studies, so a
+# cluster-robust variance built on two clusters is degenerate. Running Stata on this data set
+# confirms both readings exactly -- clustered gives se .531798, unclustered gives se .4788269,
+# and the paper's Table B4 prints 0.479. An earlier version of this file clustered every row and
+# so missed the STAR standard error by 11%; the coefficient (-2.407316) and N (56) are identical
+# either way, which is why the error survived a first pass.
+#
+# Table B4 printed values (Panel A, OLS column, "Effect beyond bias"), for comparison:
+#   STAR experiment     -2.407 *** (0.479) [-3.310, -1.679]  N=56
+#   Regression disc.    -0.716 *** (0.134) [-0.947, -0.341]  N=436
+#   Instrumental var.   -0.272     (0.227) [-0.720,  0.294]  N=845
+#   Fixed effects       -0.180     (0.114) [-0.654,  0.085]  N=669
+#   OLS                  0.228     (0.153) [-0.106,  0.607]  N=433
+
+id_methods <- list(
+  "STAR experiment"      = "method_experiment",
+  "Regression discontinuity" = "method_rdd",
+  "Instrumental variable" = "method_instrument",
+  "Fixed effects"        = "method_fe",
+  "OLS"                  = "method_ols"
+)
+
+headline <- list()
+for (nm in names(id_methods)) {
+  col <- id_methods[[nm]]
+  d_sub <- d[d[[col]] == 1 & !is.na(d[[col]]), ]
+  # STAR (class.do:239) is the one row the authors left unclustered -- see above.
+  m <- if (col == "method_experiment") {
+    st_ivreg2(effect_w ~ se_effect_w, data = d_sub)
+  } else {
+    st_ivreg2(effect_w ~ se_effect_w, data = d_sub, cluster = ~idstudy)
+  }
+  co <- st_coefs(m)
+  b0 <- co$estimate[co$term == "(Intercept)"]
+  se0 <- co$std.error[co$term == "(Intercept)"]
+  add(sprintf("Headline B4 [%s]: Effect beyond bias (coef)", nm), b0)
+  add(sprintf("Headline B4 [%s]: Effect beyond bias (se)",   nm), se0)
+  add(sprintf("Headline B4 [%s]: N", nm), nrow(d_sub))
+  headline[[nm]] <- c(coef = b0, se = se0, n = nrow(d_sub))
+}
+
 # ------------------------------------------------------------------------------- reporting
+# ---- Conclusion: the Lang (2025) t-statistic threshold ------------------------------------
+# "Lang (2025) ... concludes that a t-statistic of about 5.48 in absolute value is needed to get
+# to the conventional 5% level ... Yet only one out of twenty preferred estimates for the STAR
+# experiment in our sample exceeds (narrowly) the 5.48 t-statistic threshold."
+# 5.48 is Lang's threshold, not a quantity this paper estimates, so it is not reproduced here.
+# The two counts in that sentence are claims about THIS data set, so they are.
+star_pref <- d[d$method_experiment == 1 & d$estimate_category == "preferred", ]
+star_t    <- star_pref$effect / star_pref$se_effect
+add("STAR preferred estimates in the sample (paper: twenty)", nrow(star_pref))
+add("STAR preferred estimates with |t| above Lang's 5.48 threshold (paper: one)",
+    sum(abs(star_t) > 5.48, na.rm = TRUE))
+
+cat("\n----- Lang (2025) 5.48 threshold, STAR preferred estimates -----\n")
+cat(sprintf("preferred STAR estimates: %d   (paper: twenty)\n", nrow(star_pref)))
+cat(sprintf("of which |t| > 5.48:      %d   (paper: one)\n", sum(abs(star_t) > 5.48, na.rm = TRUE)))
+cat(sprintf("  the two largest are |t| = %.3f and %.3f, both just over the threshold\n",
+            sort(abs(star_t), decreasing = TRUE)[1], sort(abs(star_t), decreasing = TRUE)[2]))
+cat("  The count of twenty matches. The count above the threshold is two here, not one; both\n")
+cat("  sit within 1 percent of 5.48, so a single borderline estimate separates the readings.\n")
+
+
 cat("\n===== Produced numbers =====\n")
 for (nm in names(results)) cat(sprintf("%-50s %s\n", nm, format(results[[nm]], digits = 8)))
+
+cat("\n===== Headline claim: 'close to zero' (Table B4, Panel A, OLS column) =====\n")
+cat("Paper (abstract): \"The implied class size effect is negligible for all identification\n")
+cat("approaches except Tennessee's Student/Teacher Achievement Ratio project...\"\n")
+cat("Paper (Section 5): \"Among the five identification approaches, four deliver effects close\n")
+cat("to zero. The only exception is the STAR experiment...\"\n\n")
+cat(sprintf("%-26s %10s %10s %6s %10s\n", "Identification approach", "coef", "se", "N", "|coef|<1?"))
+for (nm in names(headline)) {
+  h <- headline[[nm]]
+  cat(sprintf("%-26s %10.4f %10.4f %6d %10s\n", nm, h["coef"], h["se"], h["n"],
+              ifelse(abs(h["coef"]) < 1, "yes (small)", "NO (large)")))
+}
+cat("\n-> Four of the five approaches (all but STAR) give a corrected effect below 1 in\n")
+cat("absolute value, i.e. less than a 0.1 SD change in test scores per 10-student class-size\n")
+cat("reduction -- the 'close to zero' the paper's text refers to. STAR alone is far from zero\n")
+cat("and comparable in size to Krueger's (1999) original estimate.\n")
 
 cat("\nAdditional diagnostic (not a printed target): IV column N =", nobs(m_iv),
     "vs base N =", n_base,

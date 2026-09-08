@@ -1,0 +1,50 @@
+[
+  {"label": "T2_N_all",             "printed": 3524, "digits": 0, "kind": "count"},
+  {"label": "T2_N_short",           "printed": 556,  "digits": 0, "kind": "count"},
+  {"label": "T2_N_long",            "printed": 2968, "digits": 0, "kind": "count"},
+
+  {"label": "T2_ols_all_se_coef",     "printed": 0.808,   "digits": 3, "kind": "deterministic"},
+  {"label": "T2_ols_all_se_se",       "printed": 0.0652,  "digits": 4, "kind": "deterministic"},
+  {"label": "T2_ols_all_const_coef",  "printed": 0.873,   "digits": 3, "kind": "deterministic"},
+  {"label": "T2_ols_all_const_se",    "printed": 0.133,   "digits": 3, "kind": "deterministic"},
+
+  {"label": "T2_ols_short_se_coef",    "printed": 0.0791,  "digits": 4, "kind": "deterministic"},
+  {"label": "T2_ols_short_se_se",      "printed": 0.0826,  "digits": 4, "kind": "deterministic"},
+  {"label": "T2_ols_short_const_coef", "printed": 0.867,   "digits": 3, "kind": "deterministic"},
+  {"label": "T2_ols_short_const_se",   "printed": 0.0249,  "digits": 4, "kind": "deterministic"},
+
+  {"label": "T2_ols_long_se_coef",     "printed": 0.805,   "digits": 3, "kind": "deterministic"},
+  {"label": "T2_ols_long_se_se",       "printed": 0.0630,  "digits": 4, "kind": "deterministic"},
+  {"label": "T2_ols_long_const_coef",  "printed": 0.901,   "digits": 3, "kind": "deterministic"},
+  {"label": "T2_ols_long_const_se",    "printed": 0.168,   "digits": 3, "kind": "deterministic"},
+
+  {"label": "T2_fe_all_se_coef",     "printed": 0.621,   "digits": 3, "kind": "deterministic"},
+  {"label": "T2_fe_all_se_se",       "printed": 0.0588,  "digits": 4, "kind": "deterministic"},
+  {"label": "T2_fe_all_const_coef",  "printed": 1.007,   "digits": 3, "kind": "deterministic"},
+  {"label": "T2_fe_all_const_se",    "printed": 0.0423,  "digits": 4, "kind": "deterministic"},
+
+  {"label": "T2_fe_short_se_coef",     "printed": -0.00578, "digits": 5, "kind": "deterministic"},
+  {"label": "T2_fe_short_se_se",       "printed": 0.104,    "digits": 3, "kind": "deterministic"},
+  {"label": "T2_fe_short_const_coef",  "printed": 0.883,    "digits": 3, "kind": "deterministic"},
+  {"label": "T2_fe_short_const_se",    "printed": 0.0192,   "digits": 4, "kind": "deterministic"},
+
+  {"label": "T2_fe_long_se_coef",     "printed": 0.627,   "digits": 3, "kind": "deterministic"},
+  {"label": "T2_fe_long_se_se",       "printed": 0.0580,  "digits": 4, "kind": "deterministic"},
+  {"label": "T2_fe_long_const_coef",  "printed": 1.047,   "digits": 3, "kind": "deterministic"},
+  {"label": "T2_fe_long_const_se",    "printed": 0.0476,  "digits": 4, "kind": "deterministic"},
+
+  {"label": "T2_wols_invnobs_all_se_coef",     "printed": 1.017,  "digits": 3, "kind": "deterministic"},
+  {"label": "T2_wols_invnobs_all_se_se",       "printed": 0.249,  "digits": 3, "kind": "deterministic"},
+  {"label": "T2_wols_invnobs_all_const_coef",  "printed": 1.011,  "digits": 3, "kind": "deterministic"},
+  {"label": "T2_wols_invnobs_all_const_se",    "printed": 0.254,  "digits": 3, "kind": "deterministic"},
+
+  {"label": "T2_wols_invnobs_short_se_coef",     "printed": 0.0674,  "digits": 4, "kind": "deterministic"},
+  {"label": "T2_wols_invnobs_short_se_se",       "printed": 0.0721,  "digits": 4, "kind": "deterministic"},
+  {"label": "T2_wols_invnobs_short_const_coef",  "printed": 0.899,   "digits": 3, "kind": "deterministic"},
+  {"label": "T2_wols_invnobs_short_const_se",    "printed": 0.0821,  "digits": 4, "kind": "deterministic"},
+
+  {"label": "T2_wols_invnobs_long_se_coef",     "printed": 0.821,  "digits": 3, "kind": "deterministic"},
+  {"label": "T2_wols_invnobs_long_se_se",       "printed": 0.139,  "digits": 3, "kind": "deterministic"},
+  {"label": "T2_wols_invnobs_long_const_coef",  "printed": 1.134,  "digits": 3, "kind": "deterministic"},
+  {"label": "T2_wols_invnobs_long_const_se",    "printed": 0.168,  "digits": 3, "kind": "deterministic"}
+]

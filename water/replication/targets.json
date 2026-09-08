@@ -1,0 +1,53 @@
+[
+  {"label": "PanelA_UnwOLS_coef",      "printed": 0.676,  "digits": 3, "kind": "deterministic"},
+  {"label": "PanelA_UnwOLS_se",        "printed": 0.305,  "digits": 3, "kind": "deterministic"},
+  {"label": "PanelA_UnwOLS_const",     "printed": 0.178,  "digits": 3, "kind": "deterministic"},
+  {"label": "PanelA_UnwOLS_const_se",  "printed": 0.029,  "digits": 3, "kind": "deterministic"},
+
+  {"label": "PanelA_UnwFE_coef",       "printed": 0.551,  "digits": 3, "kind": "deterministic"},
+  {"label": "PanelA_UnwFE_se",         "printed": 0.301,  "digits": 3, "kind": "deterministic"},
+  {"label": "PanelA_UnwFE_const",      "printed": 0.193,  "digits": 3, "kind": "deterministic"},
+  {"label": "PanelA_UnwFE_const_se",   "printed": 0.037,  "digits": 3, "kind": "deterministic"},
+
+  {"label": "PanelA_StudyOLS_coef",     "printed": 0.884, "digits": 3, "kind": "deterministic"},
+  {"label": "PanelA_StudyOLS_se",       "printed": 0.132, "digits": 3, "kind": "deterministic"},
+  {"label": "PanelA_StudyOLS_const",    "printed": 0.155, "digits": 3, "kind": "deterministic"},
+  {"label": "PanelA_StudyOLS_const_se", "printed": 0.022, "digits": 3, "kind": "deterministic"},
+
+  {"label": "PanelA_StudyFE_coef",  "printed": 0.644, "digits": 3, "kind": "deterministic"},
+  {"label": "PanelA_StudyFE_se",    "printed": 0.161, "digits": 3, "kind": "deterministic"},
+
+  {"label": "PanelA_PrecOLS_coef",     "printed": 1.280, "digits": 3, "kind": "deterministic"},
+  {"label": "PanelA_PrecOLS_se",       "printed": 0.369, "digits": 3, "kind": "deterministic"},
+  {"label": "PanelA_PrecOLS_const",    "printed": 0.103, "digits": 3, "kind": "deterministic"},
+  {"label": "PanelA_PrecOLS_const_se", "printed": 0.012, "digits": 3, "kind": "deterministic"},
+
+  {"label": "PanelA_PrecFE_coef", "printed": 1.514, "digits": 3, "kind": "deterministic"},
+  {"label": "PanelA_PrecFE_se",   "printed": 1.176, "digits": 3, "kind": "deterministic"},
+
+  {"label": "PanelA_N", "printed": 307, "digits": 0, "kind": "count"},
+
+  {"label": "PanelB_UnwOLS_coef",      "printed": 0.29,   "digits": 2, "kind": "deterministic"},
+  {"label": "PanelB_UnwOLS_se",        "printed": 0.307,  "digits": 3, "kind": "deterministic"},
+  {"label": "PanelB_UnwOLS_const",     "printed": 0.223,  "digits": 3, "kind": "deterministic"},
+  {"label": "PanelB_UnwOLS_const_se",  "printed": 0.0347, "digits": 4, "kind": "deterministic"},
+
+  {"label": "PanelB_UnwFE_coef",      "printed": 0.286,  "digits": 3, "kind": "deterministic"},
+  {"label": "PanelB_UnwFE_se",        "printed": 0.288,  "digits": 3, "kind": "deterministic"},
+  {"label": "PanelB_UnwFE_const",     "printed": 0.224,  "digits": 3, "kind": "deterministic"},
+  {"label": "PanelB_UnwFE_const_se",  "printed": 0.0445, "digits": 4, "kind": "deterministic"},
+
+  {"label": "PanelB_N", "printed": 142, "digits": 0, "kind": "count"},
+
+  {"label": "PanelC_UnwOLS_coef",      "printed": 1.053,  "digits": 3, "kind": "deterministic"},
+  {"label": "PanelC_UnwOLS_se",        "printed": 0.252,  "digits": 3, "kind": "deterministic"},
+  {"label": "PanelC_UnwOLS_const",     "printed": 0.153,  "digits": 3, "kind": "deterministic"},
+  {"label": "PanelC_UnwOLS_const_se",  "printed": 0.0327, "digits": 4, "kind": "deterministic"},
+
+  {"label": "PanelC_UnwFE_coef",      "printed": 1.054,  "digits": 3, "kind": "deterministic"},
+  {"label": "PanelC_UnwFE_se",        "printed": 0.437,  "digits": 3, "kind": "deterministic"},
+  {"label": "PanelC_UnwFE_const",     "printed": 0.153,  "digits": 3, "kind": "deterministic"},
+  {"label": "PanelC_UnwFE_const_se",  "printed": 0.0421, "digits": 4, "kind": "deterministic"},
+
+  {"label": "PanelC_N", "printed": 165, "digits": 0, "kind": "count"}
+]

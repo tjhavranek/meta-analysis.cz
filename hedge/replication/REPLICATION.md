@@ -2,7 +2,7 @@
 
 Journal of Economic Surveys, 2024. doi: 10.1111/joes.12574.
 
-## Table reproduced
+## Tables reproduced
 
 **Table 4, "Risk models," Panel A only** (the linear FAT-PET / precision-effect-test
 specifications — OLS, FE, BE, IV, WLS, wNOBS), both Part 1 (one-factor model,
@@ -10,14 +10,21 @@ specifications — OLS, FE, BE, IV, WLS, wNOBS), both Part 1 (one-factor model,
 ("Publication bias λ" and "Effect beyond bias κ"), their standard errors, the
 first-stage robust F-stat, Studies, and Observations.
 
-Table 4's Panel B (Top10, WAAP, Stem-based, Kinked-meta, Selection model, p-uniform*)
-and Table 6 (top3/top5 journal subsamples) are **not attempted**: the author-code
-excerpt supplied to this package contains no commands at all for Panel B's five
-nonlinear estimators, and no explicit `if top3==1` / `if top5==1` block for Table 6 —
-so there is nothing in the record to provenance those cells against. Tables 3 and 5
-were not chosen because Table 4 was picked as the headline risk-model comparison; the
-author code for those two tables' Panel A follows the identical pattern documented
-below and would reproduce the same way if attempted.
+**Table 2, "Full sample results," Panel A only** (same six linear specifications, no
+`if` restriction at all — `hedge.do` lines 88–106). This is the table the paper's
+headline "30–40 basis points" claim is actually built from; see "Numbers from the
+paper's text" below.
+
+Table 4's Panel B (Top10, WAAP, Stem-based, Kinked-meta, Selection model, p-uniform*),
+Table 2's Panel B (the same five nonlinear estimators plus Top10), and Table 6
+(top3/top5 journal subsamples) are **not attempted**: the author-code excerpt supplied
+to this package contains no commands at all for the five nonlinear estimators, and no
+explicit `if top3==1` / `if top5==1` block for Table 6 — so there is nothing in the
+record to provenance those cells against, and no `stata_compat.R` wrapper implements
+any of Top10/WAAP/Stem-based/Kinked-meta/Selection-model/p-uniform* either. Tables 3
+and 5 were not chosen because Table 4 was picked as the headline risk-model
+comparison; the author code for those two tables' Panel A follows the identical
+pattern documented below and would reproduce the same way if attempted.
 
 ## Provenance
 
@@ -50,6 +57,17 @@ Every regression below is a direct line-by-line reading of the author's `hedge.d
   so the Part 2 wNOBS regression is `ivreg2 alpha_w se_w [pweight=weight_M7f] if
   model_7factor==1, cluster(study_id)`, by direct analogy to the five other blocks
   actually shown.
+- **Table 2 Panel A (full sample), lines 88–106** — the un-subsetted block that every
+  Table-3/4/5/6 `if`-conditioned block above is a copy of. `xtset study_id` (88), OLS
+  `ivreg2 alpha_w se_w, cluster(study_id)` (91), FE `xtreg alpha_w se_w, fe
+  vce(cluster study_id)` (94), BE `xtreg alpha_w se_w, be` (97), IV `ivreg2 alpha_w
+  (se_w=instrument), cluster(study_id) first` (98), WLS `ivreg2 tstat_w precision_w,
+  cluster(study_id)` (102), wNOBS `ivreg2 alpha_w se_w [pweight=weight],
+  cluster(study_id)` (105) — `weight` here is `1/count(alpha)` with no `if` clause,
+  i.e. `1 / (number of alphas for that study in the full 1019-row sample)`, computed in
+  `run.R` the same way as every other `w_nobs` block (`table(sub$study_id)` on the
+  un-subsetted data). Reuses the shared `run_panelA()` helper with
+  `condition = rep(TRUE, nrow(d0))`, i.e. no row is dropped.
 
 ## Wrapper mapping
 
@@ -80,9 +98,75 @@ reshaping, not an estimator call) followed by `st_regress()`, one of the sanctio
 wrappers, on the collapsed one-row-per-study data. No new estimator is introduced;
 `st_regress`'s own small-sample convention is unchanged.
 
+## Numbers from the paper's text
+
+meta-analysis.cz summarises this paper as **"30–40 basis points per month."** That
+phrase is the abstract's own words: *"Most of our monthly alpha estimates adjusted for
+the (small) bias fall within a relatively narrow range of 30–40 basis points."*
+Working out what that range actually is (traced through the body text, Table 2, Table
+A.2, and Table 7's "Results overview"):
+
+Table 2 ("Full sample results") has two panels, **twelve** "effect beyond bias" (κ,
+the publication-bias-*corrected* alpha) cells for the full 1019-observation sample —
+Panel A: OLS/FE/BE/IV/WLS/wNOBS (the linear FAT-PET/PEESE family); Panel B: Top10,
+WAAP, Stem-based, Kinked-meta, Selection model, p-uniform* (five nonlinear
+meta-analysis estimators). The paper's own numbers, read straight off the printed
+Table 2:
+
+- Panel A κ: 0.366, 0.369, 0.350, 0.316, 0.301, 0.353 (OLS/FE/BE/IV/WLS/wNOBS)
+- Panel B κ: 0.310, 0.325, 0.355, 0.320, 0.274, 0.386 (Top10/WAAP/Stem/Kinked/Selection/p-uniform*)
+
+Min/max/mean/median of all twelve: 0.274 / 0.386 / 0.3355 / 0.3375 — exactly Table 7's
+printed row for "Table 2, Full sample" (Min 0.274, Max 0.386, Mean 0.335, Md 0.338).
+**The abstract's "30–40 basis points" is this twelve-cell range**, rounded outward to
+whole tens of basis points (27.4 → "30", 38.6 → "40").
+
+| Claim in the paper | Quantity | Paper's value | Produced by `run.R` | Reproduced? |
+|---|---|---|---|---|
+| "Most ... alpha estimates ... fall within a ... range of 30–40 basis points" (Abstract) | min/max of Table 2's 12 κ cells (Panel A + Panel B) | 0.274 to 0.386 | Panel A (6 cells): **0.301 to 0.369**, reproduced exactly from `hedge.csv`. Full 12-cell range (adding Panel B's paper-printed 0.274/0.386, not independently recomputed — see below): 0.274 to 0.386 | **Partially** — Panel A (6/12 cells) fully reproduced; Panel B (5 nonlinear estimators) cannot be, for lack of a wrapper or author code (see below) |
+| "the κ coefficients fall within a fairly narrow interval of (0.301, 0.369)" (Section 4.4, discussing Table A.2's team-clustering robustness — same point estimates as Table 2, only SEs differ under a different clustering variable) | min/max of Table 2 Panel A's 6 κ cells | 0.301 to 0.369 | **0.301 to 0.369** | **Yes, exact** |
+| Table 7 row "Table 2 / Full sample": Mean 0.335, Md 0.338 | mean/median of all 12 κ cells | 0.335 / 0.338 | Panel A (6 cells) alone: mean 0.343, median 0.352 (reproduced, but not the number quoted — that number needs all 12 cells). Full 12-cell mean/median (6 reproduced + 6 paper-quoted): **0.3355 / 0.3375** | **Partially**, same caveat |
+| "the unconditional sample mean of monthly alphas of 0.36%, which corresponds to 4.3% per annum" (Section 3, Figure 3) | plain mean of `alpha_w` (winsorised alpha, no regression) across all 1019 rows | 0.36% (4.3% p.a.) | **0.3623%** (annualized 4.35%; the paper's "4.32%" in one passage comes from multiplying its own *rounded* 0.36 by 12, not the unrounded mean) | **Yes** |
+
+**Why Panel B (5 of the 12 cells behind the headline range) is not reproduced:**
+Top10, WAAP, Stem-based, Kinked-meta, the Andrews–Kasy (2019) selection model, and
+p-uniform* are five distinct meta-analysis estimators, none of which has a wrapper in
+`stata_compat.R` (whose sanctioned list is `st_ivreg2`, `st_xtreg_fe`, `st_regress`,
+`st_metan`, the three winsorising wrappers, `st_drop_if`/`st_keep_if`, `st_coefs`, plus
+a plain mixed-model wrapper — nothing that implements a selection model, a
+weighted-adequately-powered filter, or `p-uniform*`). The brief's author-code excerpt
+of `hedge.do` likewise contains no commands for them at any line. Implementing them
+from scratch would mean calling an estimator (`rma`, or a hand-rolled likelihood) this
+package is explicitly barred from calling directly, and inventing an ad hoc
+implementation not tied to any author command would not be a *replication* of
+anything — it would just be a new estimate with the same name. So `run.R` records the
+five Panel B κ values exactly as the paper prints them (labelled
+`..._PAPER_VALUE_NOT_REPRODUCED` in `results.json`, `"kind": "not_reproduced"` in
+`targets.json`, excluded from the reproduced-target count below) purely so a reader can
+see, by direct arithmetic, that combining them with this package's own from-data Panel
+A numbers reconstructs Table 7's printed Mean/Md/Min/Max — not as a claim that Panel B
+itself was recomputed.
+
+**Bottom line:** every number this package's tools can actually compute from
+`hedge.csv` for the "30–40bp" claim — the six Panel A linear specifications of Table 2,
+and the plain unconditional sample mean — reproduces the paper's printed values
+exactly. The claim's outer bounds (27.4bp and 38.6bp) come from two of the five
+nonlinear Panel B estimators, which are out of reach of the tools this package is
+allowed to use.
+
 ## Target-by-target results
 
-All 54 targets in `targets.json` matched at the printed precision.
+All 54 original Table-4 targets in `targets.json` matched at the printed precision
+(unchanged from the first version of this package). A further 41 targets from Table 2 /
+the paper's text were appended for this task: 29 marked `"kind": "headline"` plus 2
+`"kind": "count"` (i.e., 31 genuinely reproduced from `hedge.csv`, all matching
+exactly) and 10 marked `"kind": "not_reproduced"`, which record the paper's own Panel B
+values verbatim for the arithmetic cross-check above, are not computed by `run.R`, and
+are excluded from the *reproduced*-target tally even though the raw match check reports
+95/95, since those 10 are trivially equal to themselves by construction — see the
+caveat above for what that does and does not demonstrate. The honest count is
+**85 of 85 independently-reproduced targets matched** (54 original + 31 new), plus 10
+paper-quoted reference values used only to check Table 7's published arithmetic.
 
 | Label | Printed | Produced | Verdict |
 |---|---|---|---|
@@ -141,7 +225,10 @@ All 54 targets in `targets.json` matched at the printed precision.
 | T4_P2_wNOBS_kappa | 0.222 | 0.22206 → 0.222 | MATCH |
 | T4_P2_wNOBS_kappa_se | 0.0641 | 0.064127 → 0.0641 | MATCH |
 
-**54 / 54 targets matched.**
+**54 / 54 original Table-4 targets matched.** (The 41 new Table-2 / headline targets
+from this task's extension are listed in the "Numbers from the paper's text" section
+above rather than repeated cell-by-cell here; all of them matched too, per the same
+`match()` rule used by `verify_packages.py`.)
 
 ## One repair (of at most 3 allowed)
 
@@ -185,5 +272,7 @@ Rscript run.R
 ```
 
 Reads `C:\Users\thavr\Dropbox\Study\Other\Agents\Joint\web_meta\site\data\v1\hedge\hedge.csv`
-(the file the site publishes), sources `stata_compat.R`, prints every target's produced
-value, and writes `results.json`.
+(the file the site publishes), sources `stata_compat.R`, reproduces Table 4 (both risk
+model parts) and Table 2 Panel A (full sample), prints every target's produced value —
+including a labelled "PAPER'S HEADLINE CLAIM" block at the end that walks through the
+30–40 basis points number — and writes `results.json`.

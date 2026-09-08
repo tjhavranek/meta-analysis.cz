@@ -63,5 +63,66 @@
   {"label": "T7_constant_se", "printed": 1.093, "digits": 3, "kind": "deterministic"},
   {"label": "T7_constant_p", "printed": 0.473, "digits": 3, "kind": "deterministic"},
 
-  {"label": "T7_N", "printed": 2254, "digits": 0, "kind": "count"}
+  {"label": "T7_N", "printed": 2254, "digits": 0, "kind": "count"},
+
+  {"label": "T1_gdppc_coef", "printed": 0.126, "digits": 3, "kind": "deterministic"},
+  {"label": "T1_gdppc_se", "printed": 0.084, "digits": 3, "kind": "deterministic"},
+  {"label": "T1_gdppc_p", "printed": 0.138, "digits": 3, "kind": "deterministic"},
+
+  {"label": "T1_eascredit_coef", "printed": -0.033, "digits": 3, "kind": "deterministic"},
+  {"label": "T1_eascredit_se", "printed": 0.055, "digits": 3, "kind": "deterministic"},
+  {"label": "T1_eascredit_p", "printed": 0.553, "digits": 3, "kind": "deterministic"},
+
+  {"label": "T1_realrate_coef", "printed": -0.003, "digits": 3, "kind": "deterministic"},
+  {"label": "T1_realrate_se", "printed": 0.006, "digits": 3, "kind": "deterministic"},
+  {"label": "T1_realrate_p", "printed": 0.635, "digits": 3, "kind": "deterministic"},
+
+  {"label": "T1_ruleoflaw_coef", "printed": -0.019, "digits": 3, "kind": "deterministic"},
+  {"label": "T1_ruleoflaw_se", "printed": 0.074, "digits": 3, "kind": "deterministic"},
+  {"label": "T1_ruleoflaw_p", "printed": 0.800, "digits": 3, "kind": "deterministic"},
+
+  {"label": "T1_stockhold_coef", "printed": 0.421, "digits": 3, "kind": "deterministic"},
+  {"label": "T1_stockhold_se", "printed": 0.089, "digits": 3, "kind": "deterministic"},
+  {"label": "T1_stockhold_p", "printed": 0.000, "digits": 3, "kind": "deterministic"},
+
+  {"label": "T1_N", "printed": 2526, "digits": 0, "kind": "count"},
+
+  {"label": "T2_marketpartic_coef", "printed": 2.221, "digits": 3, "kind": "deterministic"},
+  {"label": "T2_marketpartic_se", "printed": 0.542, "digits": 3, "kind": "deterministic"},
+  {"label": "T2_marketpartic_p", "printed": 0.000, "digits": 3, "kind": "deterministic"},
+
+  {"label": "T2_gdppc_coef", "printed": 0.116, "digits": 3, "kind": "deterministic"},
+  {"label": "T2_gdppc_se", "printed": 0.138, "digits": 3, "kind": "deterministic"},
+  {"label": "T2_gdppc_p", "printed": 0.405, "digits": 3, "kind": "deterministic"},
+
+  {"label": "T2_stockhold_coef", "printed": 0.372, "digits": 3, "kind": "deterministic"},
+  {"label": "T2_stockhold_se", "printed": 0.143, "digits": 3, "kind": "deterministic"},
+  {"label": "T2_stockhold_p", "printed": 0.015, "digits": 3, "kind": "deterministic"},
+
+  {"label": "T2_N", "printed": 2254, "digits": 0, "kind": "count"},
+
+  {"label": "HL_stockpartic_10pp_effect_ols", "printed": 0.24, "digits": 2, "kind": "headline",
+   "note": "paper value is a BMA posterior mean (2.4) x 0.10; produced value is the OLS/frequentist-check counterpart (Table 2 marketpartic coef x 0.10) -- not the same estimator, see REPLICATION.md"},
+
+  {"label": "HL_assetholders_core_ols", "printed": 0.21, "digits": 2, "kind": "headline",
+   "note": "paper value is the BMA posterior mean for Asset holders, core-countries specification (Table 2); produced value is the OLS/frequentist-check coefficient on the same variable in the same table"},
+
+  {"label": "HL_assetholders_all_ols", "printed": 0.35, "digits": 2, "kind": "headline",
+   "note": "paper value is the BMA posterior mean for Asset holders, all-countries specification (Table 1); produced value is the OLS/frequentist-check coefficient on the same variable in the same table"},
+
+  {"label": "HL_econsig_max_stockpartic_ols", "printed": 0.931, "digits": 3, "kind": "headline",
+   "note": "Table 3 economic-significance figure, BMA-based; produced value uses the OLS coefficient in place of the BMA posterior mean, same sample"},
+  {"label": "HL_econsig_sd_stockpartic_ols", "printed": 0.141, "digits": 3, "kind": "headline"},
+
+  {"label": "HL_econsig_max_gdppc_ols", "printed": 0.683, "digits": 3, "kind": "headline"},
+  {"label": "HL_econsig_sd_gdppc_ols", "printed": 0.088, "digits": 3, "kind": "headline"},
+
+  {"label": "HL_econsig_max_eascredit_ols", "printed": -0.119, "digits": 3, "kind": "headline"},
+  {"label": "HL_econsig_sd_eascredit_ols", "printed": -0.020, "digits": 3, "kind": "headline"},
+
+  {"label": "HL_econsig_max_realrate_ols", "printed": -0.265, "digits": 3, "kind": "headline"},
+  {"label": "HL_econsig_sd_realrate_ols", "printed": -0.019, "digits": 3, "kind": "headline"},
+
+  {"label": "HL_econsig_max_ruleoflaw_ols", "printed": -0.087, "digits": 3, "kind": "headline"},
+  {"label": "HL_econsig_sd_ruleoflaw_ols", "printed": -0.012, "digits": 3, "kind": "headline"}
 ]

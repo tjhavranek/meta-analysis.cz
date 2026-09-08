@@ -1,0 +1,25 @@
+[
+  {"label": "Baseline SE(pub.bias) coef",   "printed": -0.222,   "digits": 3, "kind": "deterministic"},
+  {"label": "Baseline SE(pub.bias) se",     "printed": 0.211,    "digits": 3, "kind": "deterministic"},
+  {"label": "Baseline Constant coef",       "printed": 0.397,    "digits": 3, "kind": "deterministic"},
+  {"label": "Baseline Constant se",         "printed": 0.0397,   "digits": 4, "kind": "deterministic"},
+  {"label": "Baseline N",                   "printed": 462,      "digits": 0, "kind": "count"},
+
+  {"label": "Study SE(pub.bias) coef",      "printed": -0.214,   "digits": 3, "kind": "deterministic"},
+  {"label": "Study SE(pub.bias) se",        "printed": 0.165,    "digits": 3, "kind": "deterministic"},
+  {"label": "Study Constant coef",          "printed": 0.444,    "digits": 3, "kind": "deterministic"},
+  {"label": "Study Constant se",            "printed": 0.0405,   "digits": 4, "kind": "deterministic"},
+  {"label": "Study N",                      "printed": 462,      "digits": 0, "kind": "count"},
+
+  {"label": "Precision SE(pub.bias) coef",  "printed": 0.174,    "digits": 3, "kind": "deterministic"},
+  {"label": "Precision SE(pub.bias) se",    "printed": 0.0315,   "digits": 4, "kind": "deterministic"},
+  {"label": "Precision Constant coef",      "printed": 0.000679, "digits": 6, "kind": "deterministic"},
+  {"label": "Precision Constant se",        "printed": 0.0000417,"digits": 7, "kind": "deterministic"},
+  {"label": "Precision N",                  "printed": 462,      "digits": 0, "kind": "count"},
+
+  {"label": "Median SE(pub.bias) coef",     "printed": 0.276,    "digits": 3, "kind": "deterministic"},
+  {"label": "Median SE(pub.bias) se",       "printed": 0.207,    "digits": 3, "kind": "deterministic"},
+  {"label": "Median Constant coef",         "printed": 0.345,    "digits": 3, "kind": "deterministic"},
+  {"label": "Median Constant se",           "printed": 0.0858,   "digits": 4, "kind": "deterministic"},
+  {"label": "Median N",                     "printed": 38,       "digits": 0, "kind": "count"}
+]

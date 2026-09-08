@@ -1,0 +1,18 @@
+{
+  "T1 simple (arithmetic) mean pcc": 0.148397836563531,
+  "T1 simple mean CI lower": 0.0972369151752337,
+  "T1 simple mean CI upper": 0.199558757951828,
+  "T1 fixed-effect (inverse-variance) mean": 0.0919040914494227,
+  "T1 fixed-effect CI lower": 0.0888067423898095,
+  "T1 fixed-effect CI upper": 0.094999663131667,
+  "T1 random-effects mean": 0.139612209005297,
+  "T1 random-effects CI lower": 0.128859613597406,
+  "T1 random-effects CI upper": 0.150331979705859,
+  "T2 Effect (coef on 1/SE)": 0.198851740310576,
+  "T2 Effect SE": 0.0175776875570558,
+  "T2 Constant (bias)": -0.353306319357866,
+  "T2 Constant SE": 0.422579934346216,
+  "T2 Within-study correlation": 0.460047998669635,
+  "T2 Observations": 1334,
+  "T2 Studies": 67
+}

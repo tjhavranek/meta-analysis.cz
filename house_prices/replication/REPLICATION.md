@@ -105,8 +105,37 @@ counts, and one reported sample mean) -- none of the wild-bootstrap confidence i
 | T1_h16_WLS_const_se | 0.116 | 0.116 | MATCH |
 | T1_h16_N | 226 | 226 | MATCH |
 | T1_h8_mean_uncorrected | -1.2 | -1.2 | MATCH |
+| headline_uncorrected_response_pct | -1.2 | -1.2 | MATCH |
+| headline_peak_horizon_quarters | 8 | 8 | MATCH |
+| headline_corrected_response_pct | -0.23 | -0.23 | MATCH |
 
-**55 / 55 targets matched. No repairs were needed.**
+**58 / 58 targets matched. No repairs were needed.**
+
+## Numbers from the paper's text
+
+meta-analysis.cz summarises this paper as: **"a 1.2% fall in house prices per
+1-percentage-point policy rate rise, peaking after two years."** That summary is drawn
+verbatim from the paper's own claims, quoted below alongside the quantity behind each
+and the value `run.R` produces from the published data.
+
+| Claim (paper's exact words) | Quantity | Paper's value | Produced |
+|---|---|---:|---:|
+| Introduction (Fig. 1): "On average, the response bottoms out after two years at a 1.2% decrease in house prices ... We will call this effect, here 1.2, a semi-elasticity." / Concluding Remarks: "a one-percentage-point increase in the policy rate is on average associated with a maximum decrease of 1.2% in house prices after two years." | Unweighted mean of the raw reported estimates (`est`, in %) among `horizon==8` (the 2-year horizon), sample restricted to `inlevels==1` | -1.2 | -1.2158 |
+| Same claim, "peaking/bottoming out after two years" | Horizon (of the six digitized: 1,2,4,8,12,16 quarters) at which that unweighted mean is largest in magnitude | 8 quarters (2 years) | 8 quarters -- confirmed by computing the mean at all six horizons: -0.34, -0.61, -0.90, **-1.22**, -1.15, -0.96 |
+| Fig. 4 discussion: "the effect peaks after two years and then dissipates. The main difference is the size of the response, which is now much smaller: -0.23% after two years compared to the simple uncorrected mean estimate of -1.2%." | Publication-bias-corrected mean response at `horizon==8`, i.e. the WLS regression constant (Table 1, Panel A, weighted) -- the specification the paper states it uses to build Fig. 4 | -0.23 | -0.2338 |
+
+All three reproduce cleanly from the published CSV with no adjustment: the first and
+third are literally cells already computed for Table 1 (`T1_h8_mean_uncorrected` and
+`T1_h8_WLS_const_coef` respectively), and the "peaking after two years" claim is
+verified directly by comparing the unweighted mean across all six horizons rather than
+just trusting the paper's choice of horizon 8.
+
+Not reproduced, and why: Table 3's Bayesian-model-averaging "implied semi-elasticities"
+(the BMA baseline row also bottoms out near -1.2 at the 8-quarter horizon, per the
+paper's text "The mean maximum corrected semi-elasticity is -1.2") require a BMA fit
+(`BMS`/`bms`-style model averaging over ~20 moderator variables) with fitted-value
+construction that has no wrapper in `stata_compat.R` and is out of scope for this
+package, as already noted above for Table 2/3 generally.
 
 ## Misses
 
@@ -119,13 +148,16 @@ Rscript run.R
 ```
 
 Reads `data/v1/house_prices/house_prices.csv` from the site's published data
-directory, prints every produced number, and writes `results.json`. `verify.R` (not
-required to reproduce the numbers, provided for convenience) reloads `results.json`
-and `targets.json` and prints the same target-by-target table above.
+directory, prints every produced number -- including a labeled "PAPER'S HEADLINE
+NUMBERS" section reproducing the abstract/conclusion claim -- and writes
+`results.json`. `verify.R` (not required to reproduce the numbers, provided for
+convenience) reloads `results.json` and `targets.json` and prints the same
+target-by-target table above.
 
 ## Verdict
 
 **CONCORDANT.** Every deterministic target (48 coefficient/SE cells, 6 sample-size
-counts, and the 1 reported sample mean) matched the paper's printed Table 1, Panel A at
-its printed precision, using only `stata_compat.R` wrappers (`st_ivreg2`, `st_coefs`,
-`st_keep_if`) and data from the site's published CSV.
+counts, the 1 reported sample mean, and the 3 headline claim numbers behind the site's
+one-sentence summary of the paper) matched the paper's printed values at their printed
+precision, using only `stata_compat.R` wrappers (`st_ivreg2`, `st_coefs`, `st_keep_if`)
+and data from the site's published CSV.

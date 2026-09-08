@@ -802,5 +802,101 @@
     "printed": 31,
     "digits": 0,
     "kind": "count"
+  },
+  {
+    "label": "Text T1 All mean PCC unweighted",
+    "printed": -0.001,
+    "digits": 3,
+    "kind": "headline"
+  },
+  {
+    "label": "Text T1 All mean PCC weighted",
+    "printed": -0.012,
+    "digits": 3,
+    "kind": "headline"
+  },
+  {
+    "label": "Text T1 Developed mean PCC unweighted",
+    "printed": 0.020,
+    "digits": 3,
+    "kind": "headline"
+  },
+  {
+    "label": "Text T1 Developed mean PCC weighted",
+    "printed": 0.011,
+    "digits": 3,
+    "kind": "headline"
+  },
+  {
+    "label": "Text T1 Undeveloped mean PCC unweighted",
+    "printed": 0.001,
+    "digits": 3,
+    "kind": "headline"
+  },
+  {
+    "label": "Text T1 Undeveloped mean PCC weighted",
+    "printed": -0.019,
+    "digits": 3,
+    "kind": "headline"
+  },
+  {
+    "label": "Text F3 Published mean PCC",
+    "printed": 0.0116,
+    "digits": 4,
+    "kind": "headline"
+  },
+  {
+    "label": "Text F3 mean of study-level medians (NOT reproduced, see run.R)",
+    "printed": 0.0099,
+    "digits": 4,
+    "kind": "headline"
+  },
+  {
+    "label": "T2 FE (unweighted, all) SEPCC coef",
+    "printed": -1.671,
+    "digits": 3,
+    "kind": "headline"
+  },
+  {
+    "label": "T2 FE (unweighted, all) Constant coef",
+    "printed": 0.044,
+    "digits": 3,
+    "kind": "headline"
+  },
+  {
+    "label": "T2 FE (unweighted, published) SEPCC coef",
+    "printed": -1.898,
+    "digits": 3,
+    "kind": "headline"
+  },
+  {
+    "label": "T2 FE (unweighted, published) Constant coef",
+    "printed": 0.073,
+    "digits": 3,
+    "kind": "headline"
+  },
+  {
+    "label": "T2 FE (weighted, all) SEPCC coef",
+    "printed": -1.568,
+    "digits": 3,
+    "kind": "headline"
+  },
+  {
+    "label": "T2 FE (weighted, all) Constant coef",
+    "printed": 0.034,
+    "digits": 3,
+    "kind": "headline"
+  },
+  {
+    "label": "T2 FE (weighted, published) SEPCC coef",
+    "printed": -1.636,
+    "digits": 3,
+    "kind": "headline"
+  },
+  {
+    "label": "T2 FE (weighted, published) Constant coef",
+    "printed": 0.044,
+    "digits": 3,
+    "kind": "headline"
   }
 ]
