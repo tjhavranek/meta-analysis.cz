@@ -3,26 +3,9 @@
 Generated when the package was published, from its own targets and its own output, so
 it cannot claim something the code does not do.
 
-**39 of 51 numbers from the paper are reproduced.**
+**51 of 51 numbers from the paper are reproduced.**
 
-## Not reproduced (12)
-
-| number in the paper | paper | this package |
-|---|---|---|
-| TA2 OLS beta0 | 0.59 | 0.613621 |
-| TA2 FE beta0 | 1.256 | 1.270711 |
-| TA2 BE beta0 | 1.473 | -0.385617 |
-| TA2 IV beta0 | 0.657 | 0.671266 |
-| TA2 w(NOBS) beta0 | 0.713 | 0.830166 |
-| TA2 w(1/SE) beta0 | 0.008 | 0.005322 |
-| TA2 Top10 beta0 (unverified, see note) | 0.196 | -0.000275 |
-| TA2 linear beta0 min (all 6 methods) | 0.008 | -0.385617 |
-| TA2 linear beta0 max (all 6 methods) | 1.473 | 1.270711 |
-| TA2 linear beta0 min (excl. BE) | 0.008 | 0.005322 |
-| TA2 linear beta0 max (excl. BE) | 1.256 | 1.270711 |
-| Headline range high (1.5%, rounded, excl. BE) | 1.5 | 1.3 |
-
-## Reproduced (39)
+## Reproduced (51)
 
 | number in the paper | paper | this package |
 |---|---|---|
@@ -64,4 +47,16 @@ it cannot claim something the code does not do.
 | T2 North_America WSD | 3.42 | 3.415412 |
 | TA2 Nobs (SE available) | 1973 | 1973.0 |
 | TA2 Studies (SE available) | 67 | 67.0 |
+| TA2 OLS beta0 | 0.59 | 0.589603 |
+| TA2 FE beta0 | 1.256 | 1.256342 |
+| TA2 BE beta0 | 1.473 | 1.473059 |
+| TA2 IV beta0 | 0.657 | 0.657098 |
+| TA2 w(NOBS) beta0 | 0.713 | 0.713333 |
+| TA2 w(1/SE) beta0 | 0.008 | 0.007742 |
+| TA2 Top10 beta0 (unverified, see note) | 0.196 | 0.196175 |
+| TA2 linear beta0 min (all 6 methods) | 0.008 | 0.007742 |
+| TA2 linear beta0 max (all 6 methods) | 1.473 | 1.473059 |
+| TA2 linear beta0 min (excl. BE) | 0.008 | 0.007742 |
+| TA2 linear beta0 max (excl. BE) | 1.256 | 1.256342 |
 | Headline range low (0%, rounded, excl. BE) | 0.0 | 0.0 |
+| Headline range high (1.5%, rounded, excl. BE) | 1.5 | 1.5 |

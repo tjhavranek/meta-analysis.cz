@@ -27,18 +27,18 @@ from the paper, not computed here. `stochastic`: depends on a random draw.
 
 | number | paper | this package | kind |
 |---|---|---|---|
-| A3_PanelA_FE_MeanBeyondBias_SE | 0.117 | 0.11386 | stochastic |
-| A3_PanelA_FE_PubBias_SE | 0.34 | 0.273147 | stochastic |
-| A3_PanelA_WLS_MeanBeyondBias_SE | 0.108 | 0.086327 | stochastic |
-| A3_PanelA_WLS_PubBias_SE | 0.262 | 0.22121 | stochastic |
-| A3_PanelA_IV_MeanBeyondBias_SE | 0.196 | 0.205043 | stochastic |
-| A3_PanelA_IV_PubBias_SE | 0.523 | 0.574269 | stochastic |
-| A3_PanelB_FE_MeanBeyondBias_SE | 0.109 | 0.092275 | stochastic |
-| A3_PanelB_FE_PubBias_SE | 0.0537 | 0.052615 | stochastic |
-| A3_PanelB_WLS_MeanBeyondBias_SE | 0.0883 | 0.107085 | stochastic |
-| A3_PanelB_WLS_PubBias_SE | 0.0226 | 0.023666 | stochastic |
-| A3_PanelB_IV_MeanBeyondBias_SE | 0.182 | 0.168377 | stochastic |
-| A3_PanelB_IV_PubBias_SE | 0.301 | 0.326147 | stochastic |
+| A3_PanelA_FE_MeanBeyondBias_SE | 0.117 | 0.102846 | stochastic |
+| A3_PanelA_FE_PubBias_SE | 0.34 | 0.226909 | stochastic |
+| A3_PanelA_WLS_MeanBeyondBias_SE | 0.108 | 0.105593 | stochastic |
+| A3_PanelA_WLS_PubBias_SE | 0.262 | 0.277157 | stochastic |
+| A3_PanelA_IV_MeanBeyondBias_SE | 0.196 | 0.199926 | stochastic |
+| A3_PanelA_IV_PubBias_SE | 0.523 | 0.551039 | stochastic |
+| A3_PanelB_FE_MeanBeyondBias_SE | 0.109 | 0.104099 | stochastic |
+| A3_PanelB_FE_PubBias_SE | 0.0537 | 0.056606 | stochastic |
+| A3_PanelB_WLS_MeanBeyondBias_SE | 0.0883 | 0.105514 | stochastic |
+| A3_PanelB_WLS_PubBias_SE | 0.0226 | 0.02622 | stochastic |
+| A3_PanelB_IV_MeanBeyondBias_SE | 0.182 | 0.172287 | stochastic |
+| A3_PanelB_IV_PubBias_SE | 0.301 | 0.293084 | stochastic |
 
 ## Reproduced (14)
 

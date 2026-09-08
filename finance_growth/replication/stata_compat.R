@@ -496,3 +496,34 @@ st_rreg <- function(fml, data, tune = 7, tolerance = 0.01, iterate = 1000) {
 coef.st_rreg <- function(object, ...) object$coefficients
 vcov.st_rreg <- function(object, ...) object$vcov
 nobs.st_rreg <- function(object, ...) object$nobs
+
+#' Random-effects panel regression, `plm(..., model = "random")`.
+#'
+#' Added for a paper whose own code is R rather than Stata, so there is no Stata command to
+#' emulate: activism's `functions/publication_bias3.R` computes the column its table labels "BE"
+#' with `plm(model0, subdata, index = study_indic, model = "random")`, under the heading
+#' "# A.3 random effects regression". The label is a misnomer -- it is NOT a between estimator,
+#' and treating it as one (OLS on study means) gives -0.700 where the paper prints 1.473. This
+#' wrapper reproduces the paper's value at 1.473059.
+#'
+#' plm's default random-effects method is Swamy-Arora, matching Stata's `xtreg, re`.
+st_plm_re <- function(fml, data, panel) {
+  if (!requireNamespace("plm", quietly = TRUE)) stop("st_plm_re: plm not installed")
+  .note("plm(model = 'random')  [xtreg, re]", "Swamy-Arora random effects; z inference")
+  plm::plm(fml, data = data, index = panel, model = "random")
+}
+
+#' R's own `quantile()`, type 7.
+#'
+#' Not a Stata emulation, and that is the point of having it here. Stata's `_pctile` -- the
+#' convention behind `st_winsor2` -- is quantile type 2, and the two disagree. A paper whose own
+#' code is R and calls `quantile(x, probs = p)` wants type 7, so silently routing it through the
+#' Stata convention would be wrong. activism's `publication_bias3.R:224` does exactly this to pick
+#' the top decile by precision for the Top10 estimator.
+#'
+#' Exists so the choice is stated once and audited, rather than appearing as a bare quantile()
+#' call that the package checker cannot tell apart from an accidental one.
+st_quantile_r <- function(x, probs, na.rm = TRUE) {
+  .note("quantile(x, probs)  [R's own, not Stata's _pctile]", "type 7, R's default")
+  stats::quantile(x, probs = probs, na.rm = na.rm, type = 7)
+}

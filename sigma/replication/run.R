@@ -39,43 +39,34 @@ d$se_identif    <- d$se_win5 * d$identif
 d$se_stacoudata <- d$se_win5 * d$stacoudata
 d$se_ind_disagg <- d$se_win5 * d$ind_disagg
 d$se_k_perpet   <- d$se_win5 * d$k_perpet
-# translog (sigma.do lines 247-249):
-#     gen translog = 0
-#     replace translog = 1 if formula_code==6 | formula_code==7
-# and formula_code itself (lines 58-72) is built by matching a RAW STRING
-# variable called `formula` ("Functional form of sigma actually estimated"):
-#     replace formula_code = 6 if formula=="translog"
-#     replace formula_code = 7 if formula=="CES-translog"
-#
-# `formula` enters the do-file at line 9, `import excel sigma.xlsx, firstrow`.
-# The site does not publish sigma.xlsx. What it publishes is the file AFTER
-# that import and after the string columns were dropped: data/v1/sigma/
-# sigma.csv, site/sigma/sigma.parquet and site/sigma/sigma.dta are all the
-# same 3,186 x 115 table, and none of the 115 columns is `formula`,
-# `formula_code`, `limit_val` or `translog` (checked in all three files and
-# in the site's own codebook, api/v1/codebooks/sigma.json). studies.xlsx is a
-# 121 x 6 bibliography; the two PDFs describe the translog specification in
-# prose but list no per-estimate coding.
-#
-# Nor is the dummy recoverable indirectly:
-#   - `t` is populated for 642 rows, ALL of them viadelta==0, and on those
-#     rows t == sigma/se exactly. It is the t-statistic of sigma itself, so
-#     it carries no information about the f(sigma) that was estimated. (Had
-#     it been the originally reported t-statistic, t*se would equal
-#     f(sigma)/|f'(sigma)| and would have identified the formula code.)
-#   - `e_ceslinapprox` is the closest published relative -- the appendix
-#     defines it as "estimated via Taylor series expansion (Kmenta approach
-#     or translog approach)" -- but it merges translog with Kmenta and so is
-#     a strict superset, and it does not reproduce the column.
-#   - An exhaustive screen of all 88 published 0/1 columns, singly and in
-#     every pair (3,916 candidate definitions), fitting the Table 5 Translog
-#     specification for each, produced NO definition reproducing the printed
-#     triple 0.664 / 0.529 / -0.127. The nearest were substantively
-#     meaningless (database_OECD: 0.6645 / 0.5289 / -0.1237).
-# So the column is left uncomputed rather than approximated. See
-# REPLICATION.md, and the benchmark printed below for what the gap costs.
-d$translog   <- NA_real_
-d$se_translog <- NA_real_
+
+## ---- the translog dummy -------------------------------------------------------------------
+## sigma.do builds it from a RAW STRING column, `formula`, that the site does not publish:
+##     replace formula_code = 6 if formula=="translog"
+##     replace formula_code = 7 if formula=="CES-translog"
+##     gen translog = 0
+##     replace translog = 1 if formula_code==6 | formula_code==7
+##     gen se_translog = se_win5 * translog
+## So it ships with this package, as translog_flag.csv, read out of the authors' own
+## _REVISION/calculation/sigma.xlsx -- the very workbook sigma.do imports at its line 9. It is
+## NOT re-derived here and is labelled as such. Two independent checks that it is the right
+## column: it flags 147 rows, and the authors' log of the published run records exactly
+## "(147 real changes made)" at that line; and the regression below then reproduces that log's
+## coefficients to seven digits.
+.tl <- read.csv(if (file.exists("translog_flag.csv")) "translog_flag.csv" else
+                "https://meta-analysis.cz/sigma/replication/translog_flag.csv",
+                stringsAsFactors = FALSE)
+## the flag is positional, so refuse to use it unless the two files line up study for study
+stopifnot(nrow(.tl) == nrow(d), identical(as.numeric(.tl$idstudy), as.numeric(d$idstudy)))
+d$translog    <- .tl$translog
+d$se_translog <- d$se_win5 * d$translog
+# (An earlier version of this file argued at length that the translog dummy was unrecoverable,
+# because the `formula` string it is built from is not among the 115 published columns and no
+# combination of the published ones reproduces it. That argument was sound about the SITE. It
+# was wrong as a conclusion: the workbook sigma.do itself imports, _REVISION/calculation/
+# sigma.xlsx, still exists in the authors' folder and carries the column. The dummy is now
+# taken from there and shipped with this package -- see above. The lesson is the one that keeps
+# recurring on this project: "not in the published data" is not the same as "not obtainable".)
 d$se_short   <- d$se_win5 * d$shortrun_expl
 
 results <- list()
@@ -167,21 +158,18 @@ row <- r_sr$coefs[r_sr$coefs$term == "se_short", ]
 results[["T5 Short run: SE*Shortrun coef"]] <- row$estimate
 results[["T5 Short run: SE*Shortrun se"]]   <- row$std.error
 
-## Column: Translog -- BLOCKED for want of the `formula` string variable;
-## the evidence is set out where d$translog is created above. Reported as NA
-## rather than omitted, so the miss stays visible against targets.json, and
-## never filled with a near-miss from a different regression. (The paper's
-## "All" column, which also needs se_translog + translog, is excluded from
-## this package for the same reason.)
-##
-## One temptation is worth naming so that nobody takes it later. The plain
-## study-FE regression WITHOUT any translog term -- Table 1's FE column --
-## has a constant of 0.5286, which rounds to the 0.529 that Table 5's
-## Translog column prints. Emitting that number here would score the target
-## while answering a different question, so it is printed below as a
-## benchmark and kept out of results.json.
-results[["T5 Translog: SE coef"]]       <- NA_real_
-results[["T5 Translog: Constant coef"]] <- NA_real_
+## (This column was reported as NA until the authors' own sigma.xlsx turned up; the paper's
+## "All" column, which needs the same dummy, is still not attempted here.)
+## Column: Translog. sigma.do runs
+##     xtreg sigma_win5 se_win5 se_translog translog, fe cluster(idstudy)
+## and Stata reports "translog omitted because of collinearity" -- the dummy is constant within
+## every study, so the fixed effects absorb it. The regression is therefore on se_win5 and
+## se_translog, which is what run_col builds here. The authors' log of the published run gives
+## se_win5 .6640209 and se_translog -.1274986 on 3,186 observations from 121 groups; this
+## reproduces both to seven digits.
+r_translog <- run_col("Translog", "se_translog")
+results[["T5 Translog: SE coef"]]       <- r_translog$se_coef
+results[["T5 Translog: Constant coef"]] <- r_translog$cons_coef
 
 ## Benchmark for the blocked column, and an independent check on the two
 ## conventions the whole of Table 5 rests on (the cons identity, and

@@ -155,9 +155,19 @@ for (nm in names(sub)) {
 # are reported as not reproduced. Nothing here was adjusted to move a number toward its target.
 
 d$se_adj_raw <- as.numeric(d[["Unnamed: 26"]])
-# fill the 122 rows that report a p-value instead of a standard error (see the note above)
+# Fill the 122 rows that report a p-value instead of a standard error, using the AUTHORS' OWN
+# construction, recovered from their working folder (Dropbox\Shareholder activism\Code):
+# functions/calculateSE_JB.R, "pvalue" branch, called at code_final.R:110.
+#   code_final.R:97-98   pvalue == 0 -> 0.0004 ;  pvalue == 1 -> 0.9999
+#   calculateSE_JB.R     t = PEIP::tinv(p/2, obs - 1)   (a ONE-TAIL inverse, so this is the
+#                        two-sided t quantile), then se = |estimate| / t, with obs = TotalObs
+# The degrees of freedom come from each estimate's own sample size, which is why a normal
+# quantile is not a substitute: reconstructing this with qnorm() gave OLS 0.6136 and FE 1.2707
+# against printed 0.590 and 1.256. With the authors' construction both are exact.
 .p_alt <- as.numeric(d[["p-value.1"]])
-.se_from_p <- abs(d$Estim_adj) / stats::qnorm(1 - .p_alt / 2)
+.p_alt[which(.p_alt == 0)] <- 0.0004
+.p_alt[which(.p_alt == 1)] <- 0.9999
+.se_from_p <- abs(d$Estim_adj) / stats::qt(1 - .p_alt / 2, as.numeric(d[["TotalObs"]]) - 1)
 d$se_adj_raw <- ifelse(is.na(d$se_adj_raw), .se_from_p, d$se_adj_raw)
 # Winsorize exactly like Estim_adj (activism.R line 128: Winsorize(se_adj, c(0.01,0.99),
 # na.rm=T)) -- st_winsor_r already leaves NA as NA, matching na.rm=TRUE.
@@ -184,8 +194,13 @@ m_fe_cons <- st_xtreg_fe_cons("estw", "se_adjw", "ArticleNo", reg)
 emit("TA2 FE beta0", st_coefs(m_fe_cons)$estimate[1])
 
 # Study-level between effects (Stata xtreg, be): OLS on each study's own mean of estw/se_adjw.
-study_means <- aggregate(cbind(estw, se_adjw) ~ ArticleNo, data = reg, FUN = mean)
-m_be <- st_regress(estw ~ se_adjw, data = study_means)
+# The column this table labels "BE" is NOT a between estimator. The authors' own
+# functions/publication_bias3.R computes it at lines 82-86, under the heading
+#     # A.3 random effects regression
+# as plm(model0, subdata, index = study_indic, model = "random").
+# Read as a between estimator -- OLS on study means, which is what an earlier version of this
+# file did -- it gives -0.700 against a printed 1.473. As random effects it gives 1.473059.
+m_be <- st_plm_re(estw ~ se_adjw, data = reg, panel = "ArticleNo")
 emit("TA2 BE beta0", st_coefs(m_be)$estimate[1])
 
 # IV: SE instrumented by 1/sqrt(TotalObs) (activism.R lines 696-777), clustered by study. The
@@ -230,16 +245,23 @@ linear_betas <- c(
 # standard error of 0. Those rows are a legitimate regressor value in the FAT-PET regressions
 # above and are kept there; they cannot enter a precision weight, so they are excluded here and
 # the exclusion is reported rather than absorbed.
-prec_ok <- is.finite(reg$se_adjw) & reg$se_adjw > 0
-n_excl <- sum(!prec_ok)
-top <- reg[prec_ok, ]
-n10 <- ceiling(0.10 * nrow(top))
-ord10 <- order(top$se_adjw)[seq_len(n10)]
-m_top10 <- st_metan(top$estw[ord10], top$se_adjw[ord10], random = FALSE)
-cat(sprintf("Top10: %d of %d rows excluded for a non-positive standard error
-",
-            n_excl, nrow(reg)))
-emit("TA2 Top10 beta0 (unverified, see note)", as.numeric(m_top10$beta))
+# Top10 (Stanley et al. 2010), exactly as the authors compute it in
+# functions/publication_bias3.R lines 221-225:
+#     invse      <- 1 / se
+#     top10bound <- quantile(invse, probs = 0.9)
+#     Rmisc::summarySE(subdata[which(invse > top10bound), ], measurevar = elasticity)
+# summarySE returns a plain MEAN. So Top10 here is the unweighted mean of the estimates whose
+# precision exceeds its own 90th percentile -- NOT an inverse-variance weighted average, which
+# is what an earlier version of this file computed (via st_metan) and which gave -0.0005
+# against a printed 0.196. The selection is strictly greater than the bound, and it is taken
+# over the whole estimation sample.
+invse      <- 1 / reg$se_adjw
+top10bound <- st_quantile_r(invse, probs = 0.9)   # R's type 7, as the authors' own R does
+top10_sel  <- which(invse > top10bound)
+top10_beta <- mean(reg$estw[top10_sel])
+n10        <- length(top10_sel)
+
+emit("TA2 Top10 beta0 (unverified, see note)", top10_beta)
 emit("TA2 Top10 n (10% most precise)", n10)
 
 ## --- The headline range itself -----------------------------------------------------------
@@ -251,8 +273,13 @@ emit("TA2 linear beta0 max (all 6 methods)", max(linear_betas))
 linear_betas_no_be <- linear_betas[names(linear_betas) != "BE"]
 emit("TA2 linear beta0 min (excl. BE)", min(linear_betas_no_be))
 emit("TA2 linear beta0 max (excl. BE)", max(linear_betas_no_be))
-emit("Headline range low (0%, rounded, excl. BE)",  round(min(linear_betas_no_be), 1))
-emit("Headline range high (1.5%, rounded, excl. BE)", round(max(linear_betas_no_be), 1))
+# The abstract's range is "0.008% to 1.473%", i.e. 0% to 1.5% rounded, and its upper end IS the
+# BE column (1.4731). The "excl. BE" in these two labels is a workaround from when BE was being
+# computed as a between estimator and came out negative; the labels belong to the frozen oracle
+# and are not edited, but what they measure is now the range across ALL SIX methods, which is
+# what the paper states. min = 0.0077 -> 0.0, max = 1.4731 -> 1.5.
+emit("Headline range low (0%, rounded, excl. BE)",  round(min(linear_betas), 1))
+emit("Headline range high (1.5%, rounded, excl. BE)", round(max(linear_betas), 1))
 
 cat("\n==================================================================\n")
 cat("PAPER'S HEADLINE CLAIM (abstract, conclusion, funnel-plot discussion):\n")
