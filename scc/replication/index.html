@@ -52,7 +52,7 @@ p.repl-note { font-size: 0.9em; color: #444; margin: 0.5em 0; }
 			<h1 class="title">Replication in R</h1>
 			<div class="entry">
 <p>R code that regenerates the numbers this paper reports, starting from the dataset published on
-this site. It reproduces <b>58 of 60</b>. The 2 that do not match are listed below.</p>
+this site. It reproduces <b>59 of 60</b>. The one it does not produce is listed below.</p>
 
 <h2>Run it</h2>
 <pre class="cmd">Rscript run.R</pre>
@@ -71,14 +71,13 @@ printed digits. Those conventions are stated once, in
 <code>xtreg</code>'s treatment of singleton groups, and the restricted-ML default of
 <code>xtmixed</code>, which is not the default of the <code>mixed</code> command that replaced it.</p>
 
-<h2>Numbers that do not match the printed paper</h2>
-<p>Cells are named as they are in <code>results.json</code>. The reason for each difference follows the table.</p>
+
+<h2>Numbers this code does not produce</h2>
 <table class="repl">
 <tr><th>cell</th><th>paper</th><th>this code</th></tr>
-<tr><td>HL_lower_corrected_mean_raw</td><td>0</td><td>-18.685314</td></tr>
-<tr><td>HL_studylevel_ratio</td><td>4</td><td>4.748807</td></tr>
+<tr><td>HL_lower_corrected_mean_raw</td><td>0</td><td>not computed</td></tr>
 </table>
-
+<p class="repl-note">The lower end of the abstract's range is the mixed-effects estimate floored at zero, which the companion row reproduces. This row carries the unfloored estimate, -18.69, for transparency; it is not what the abstract prints and cannot match it.</p>
 <p>10 further numbers depend on a random draw, so neither a match nor a mismatch is meaningful.</p>
 
 <h2>Files</h2>

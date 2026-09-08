@@ -372,8 +372,8 @@
   "label": "HL_lower_corrected_mean_raw",
   "printed": 0,
   "digits": 0,
-  "kind": "headline",
-  "note": "Lower end of the abstract's 'USD 0 and 134' range. Text just before Table 3: the mixed-effects column's estimate of the underlying SCC is 'statistically insignificant, and here even negative', this is T3A_ME_const = -18.69 (s.e. 48.43). The paper states the range floor as literal 0 (a negative corrected mean is not economically meaningful); we report the exact negative point estimate as well as the floored value so nothing is hidden."
+  "kind": "not_reproduced",
+  "note": "The lower end of the abstract's range is the mixed-effects estimate floored at zero, which the companion row reproduces. This row carries the unfloored estimate, -18.69, for transparency; it is not what the abstract prints and cannot match it."
  },
  {
   "label": "HL_lower_corrected_mean_floor0",
@@ -414,8 +414,8 @@
   "label": "HL_studylevel_ratio",
   "printed": 4,
   "digits": 0,
-  "kind": "headline",
-  "note": "Conclusion: 'more than four times less' = 290 / 61."
+  "kind": "headline_bound_ge",
+  "note": "The conclusion says the study-level corrected mean is 'more than four times less' than the overall mean of 290. That is a lower bound, not an equality: 290/61 = 4.75 satisfies it. Checked as at-or-above four."
  },
  {
   "label": "HL_usd_per_tCO2_2014prices_paper_rounded",

@@ -14,6 +14,8 @@ Cells are named as they are in `results.json`. The reason for each follows the t
 | T3 col5 MAIVE: First-stage F | 31.2 | 38.235431 |
 | T3 col5 MAIVE: Studies | 23 | 33 |
 
+The MAIVE column's coefficients, standard errors and 603 observations all reproduce. Two cells do not. Running the authors' own line in Stata 15.1 on their own saved data gives a cluster-robust first-stage F of 37.02 (Kleibergen-Paap rk Wald F 37.015, Cragg-Donald 46.53) against a printed 31.2, and the regression has 33 clusters, which is the number ivreg2 reports, against a printed 23. Neither figure follows from the estimation as the do-file specifies it. The printed values are left exactly as published.
+
 ## Reproduced (29)
 
 | cell | paper | this code |

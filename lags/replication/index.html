@@ -2,23 +2,23 @@
 <html lang="en">
 <head>
 <meta charset="utf-8" />
-<title>Replication in R: Publication and Identification Biases in Measuring the Intertemporal Substitution of Labor Supply</title>
+<title>Replication in R: Transmission Lags of Monetary Policy: A Meta-Analysis</title>
 <meta name="robots" content="noindex" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
-<link rel="canonical" href="https://meta-analysis.cz/frisch/replication/" />
+<link rel="canonical" href="https://meta-analysis.cz/lags/replication/" />
 <link href="/style.css" rel="stylesheet" type="text/css" />
 <script type="application/ld+json">
 {
  "@context": "https://schema.org",
  "@type": "SoftwareSourceCode",
- "@id": "https://meta-analysis.cz/frisch/replication/#code",
- "url": "https://meta-analysis.cz/frisch/replication/",
- "name": "Replication in R: Publication and Identification Biases in Measuring the Intertemporal Substitution of Labor Supply",
+ "@id": "https://meta-analysis.cz/lags/replication/#code",
+ "url": "https://meta-analysis.cz/lags/replication/",
+ "name": "Replication in R: Transmission Lags of Monetary Policy: A Meta-Analysis",
  "description": "R code that regenerates the numbers reported in the paper from the dataset published on meta-analysis.cz.",
  "programmingLanguage": "R",
- "codeRepository": "https://meta-analysis.cz/frisch/replication/",
+ "codeRepository": "https://meta-analysis.cz/lags/replication/",
  "license": "https://creativecommons.org/licenses/by/4.0/",
- "isPartOf": {"@type": "WebPage", "@id": "https://meta-analysis.cz/frisch/"}
+ "isPartOf": {"@type": "WebPage", "@id": "https://meta-analysis.cz/lags/"}
 }
 </script>
 <style>
@@ -33,14 +33,14 @@ p.repl-note { font-size: 0.9em; color: #444; margin: 0.5em 0; }
 <div id="wrapper">
 <div id="logo">
 	<a class="masthead-home" href="/">meta-analysis.cz</a>
-	<p class="site-name"><a href="/frisch/">Publication and Identification Biases in Measuring the Intertemporal Substitution of Labor Supply</a></p>
+	<p class="site-name"><a href="/lags/">Transmission Lags of Monetary Policy: A Meta-Analysis</a></p>
 	<h2> <span class="mk">&raquo;</span>&nbsp;&nbsp;&nbsp; Replication in R</h2>
 </div>
 <div id="header">
 	<div id="menu">
 		<ul>
-			<li class="current_page_item"><a href="/frisch/replication/">Replication in R</a></li>
-			<li><a href="/frisch/">Back to the paper</a></li>
+			<li class="current_page_item"><a href="/lags/replication/">Replication in R</a></li>
+			<li><a href="/lags/">Back to the paper</a></li>
 			<li><a href="/">All meta-analyses</a></li>
 		</ul>
 	</div>
@@ -52,7 +52,7 @@ p.repl-note { font-size: 0.9em; color: #444; margin: 0.5em 0; }
 			<h1 class="title">Replication in R</h1>
 			<div class="entry">
 <p>R code that regenerates the numbers this paper reports, starting from the dataset published on
-this site. It reproduces <b>29 of 31</b>. The 2 that do not match are listed below.</p>
+this site. It reproduces <b>208 of 218</b>. 2 do not match the printed paper and 8 are not produced at all; both are listed below.</p>
 
 <h2>Run it</h2>
 <pre class="cmd">Rscript run.R</pre>
@@ -75,11 +75,30 @@ printed digits. Those conventions are stated once, in
 <p>Cells are named as they are in <code>results.json</code>. The reason for each difference follows the table.</p>
 <table class="repl">
 <tr><th>cell</th><th>paper</th><th>this code</th></tr>
-<tr><td>T3 col5 MAIVE: First-stage F</td><td>31.2</td><td>38.235431</td></tr>
-<tr><td>T3 col5 MAIVE: Studies</td><td>23</td><td>33</td></tr>
+<tr><td>Table 2 [Estimates from all Impulse Responses]: Mean</td><td>33.5</td><td>33.449495</td></tr>
+<tr><td>Table 2 [Hump-Shaped Impulse Responses]: Std. Dev.</td><td>14.1</td><td>14.035579</td></tr>
 </table>
-<p class="repl-note">The MAIVE column's coefficients, standard errors and 603 observations all reproduce. Two cells do not. Running the authors' own line in Stata 15.1 on their own saved data gives a cluster-robust first-stage F of 37.02 (Kleibergen-Paap rk Wald F 37.015, Cragg-Donald 46.53) against a printed 31.2, and the regression has 33 clusters, which is the number ivreg2 reports, against a printed 23. Neither figure follows from the estimation as the do-file specifies it. The printed values are left exactly as published.</p>
+<p class="repl-note">The sample mean of the transmission lag on the cleaned sample is 33.449495 months, which is 33.4 at one decimal, not the 33.5 the paper prints here and repeats twice in the text. Every other cell of this row -- 198 observations, median 37, standard deviation 19.4, minimum 1, maximum 60 -- reproduces exactly, as do both other rows' means, so the sample is the intended one. The gap is 0.05 months.</p>
+<p class="repl-note">The standard deviation of the transmission lag over the 100 hump-shaped impulse responses is 14.035579, i.e. 14.0 at one decimal, against a printed 14.1. The other five cells of this row reproduce exactly, including the count of 100 and the maximum of 57, and censoring at sixty months does not touch this subsample, so the same 100 values give both the reproduced and the unreproduced cells.</p>
 
+<h2>Numbers this code does not produce</h2>
+<table class="repl">
+<tr><th>cell</th><th>paper</th><th>this code</th></tr>
+<tr><td>Table 5 [Financial Dev.]: Posterior Mean</td><td>12.492</td><td>not computed</td></tr>
+<tr><td>Table 5 [Monthly]: Posterior Mean</td><td>-4.175</td><td>not computed</td></tr>
+<tr><td>Table 5 [Strictly Decreasing]: Posterior Mean</td><td>26.122</td><td>not computed</td></tr>
+<tr><td>Abstract: average transmission lag (months)</td><td>29</td><td>not computed</td></tr>
+<tr><td>Section 3: implied lag for the ideal study (months)</td><td>29.2</td><td>not computed</td></tr>
+<tr><td>Section 3: implied lag preferring hump-shaped responses (months)</td><td>16.3</td><td>not computed</td></tr>
+<tr><td>Abstract: maximum decrease in prices (percent)</td><td>0.9</td><td>not computed</td></tr>
+<tr><td>Section 4: impulse responses reaching a -0.1 percent decrease (of 198)</td><td>173</td><td>not computed</td></tr>
+</table>
+<p class="repl-note">Bayesian model averaging over the thirty-three candidate regressors, run as an MCMC birth-death sampler with 100 million burn-in and 200 million recorded draws under a uniform model prior and the unit information prior. The model space has 2^33 members, so it cannot be enumerated and the posterior means are the output of one stochastic chain rather than a closed-form quantity. A fresh chain would return its own numbers, which are not the paper's.</p>
+<p class="repl-note">Bayesian model averaging over the thirty-three candidate regressors, run as an MCMC birth-death sampler with 100 million burn-in and 200 million recorded draws under a uniform model prior and the unit information prior. The model space has 2^33 members, so it cannot be enumerated and the posterior means are the output of one stochastic chain rather than a closed-form quantity. A fresh chain would return its own numbers, which are not the paper's. This figure is a linear combination of those posterior means evaluated at the paper's best-practice values, so it inherits the chain.</p>
+<p class="repl-note">Bayesian model averaging over the thirty-three candidate regressors, run as an MCMC birth-death sampler with 100 million burn-in and 200 million recorded draws under a uniform model prior and the unit information prior. The model space has 2^33 members, so it cannot be enumerated and the posterior means are the output of one stochastic chain rather than a closed-form quantity. A fresh chain would return its own numbers, which are not the paper's. The same best-practice combination, printed to one decimal. Evaluating it from Table 5's own printed posterior means and this sample's means and maxima gives 29.184, which is the printed 29.2; that is arithmetic on the paper's published output, not a reproduction of the estimation behind it.</p>
+<p class="repl-note">Bayesian model averaging over the thirty-three candidate regressors, run as an MCMC birth-death sampler with 100 million burn-in and 200 million recorded draws under a uniform model prior and the unit information prior. The model space has 2^33 members, so it cannot be enumerated and the posterior means are the output of one stochastic chain rather than a closed-form quantity. A fresh chain would return its own numbers, which are not the paper's. Same combination with Strictly Decreasing set to zero. Evaluated from Table 5's printed posterior means it gives 16.255, i.e. the printed 16.3, which also settles which BMA the sentence refers to: the baseline one of Table 5 with the shape dummy switched off, not the separate hump-shaped-subsample estimation of figure 4.</p>
+<p class="repl-note">The response column the authors summarise here is the normalised maximum decrease in prices, carried in the published file as MBR. Its mean over the 198 estimates is -0.011993, i.e. 1.20 percent in the percentage-point units the companion paper's script uses (res = 100*res), against the 0.9 percent printed. No scaling of that column reconciles both this figure and the count of 173 below, so the published columns do not carry the series behind the sentence.</p>
+<p class="repl-note">The response variable behind this count -- the number of months to a -0.1 percent decrease in prices, used for figure 5 and table 11 -- is not among the published columns. The closest available construction, counting the estimates whose normalised maximum decrease reaches 0.1 percent, gives 171.</p>
 
 <h2>Files</h2>
 <ul>

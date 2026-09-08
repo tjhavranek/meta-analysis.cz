@@ -13,6 +13,8 @@ Cells are named as they are in `results.json`. The reason for each follows the t
 |---|---|---|
 | T2_wols_invnobs_long_const_coef | 1.134 | 1.134785 |
 
+Both the working paper and the published version print 1.134. This code follows the paper's own replication script and gives 1.134785, which rounds to 1.135. The difference is between the printed table and the script that accompanies it. The printed value is left exactly as published.
+
 ## Reproduced (38)
 
 | cell | paper | this code |

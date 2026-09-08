@@ -24,7 +24,8 @@
 # Say which packages are missing, once, instead of failing on the first library() call with
 # "there is no package called 'fixest'" and no indication of what else will be needed.
 local({
-  need <- c("fixest", "metafor", "jsonlite", "lme4", "plm", "BMS", "LowRankQP", "readxl")
+  need <- c("fixest", "metafor", "jsonlite", "lme4", "plm", "BMS", "LowRankQP", "readxl",
+            "survival")
   miss <- need[!vapply(need, requireNamespace, logical(1), quietly = TRUE)]
   # Only the first two are needed by every package; the rest are per-paper, so a missing one is
   # only fatal if this paper uses it. Report all of them and let the script fail where it fails.
@@ -510,6 +511,98 @@ st_rreg <- function(fml, data, tune = 7, tolerance = 0.01, iterate = 1000) {
 coef.st_rreg <- function(object, ...) object$coefficients
 vcov.st_rreg <- function(object, ...) object$vcov
 nobs.st_rreg <- function(object, ...) object$nobs
+
+#' `tobit y x, ll(L) ul(U)` -- censored regression by maximum likelihood. Stata's `cnreg` is
+#' the same estimator under an older name.
+#'
+#' Used where the dependent variable is only recorded inside a known interval, so that some
+#' observations carry a bound rather than a value. The censored observations stay in the
+#' likelihood and contribute their probability mass -- 1 - Phi((U - x'b)/sigma) at an upper
+#' limit -- rather than an exact density. Neither of the two obvious substitutes does that:
+#' running OLS on the recorded values treats a bound as if it were the realised value, and
+#' dropping the censored rows conditions on the uncensored region. Both attenuate the slopes,
+#' and the pull is not marginal when a real share of the sample sits on the limit -- on the
+#' transmission-lag data 22 of 198 observations are at the sixty-month reporting window.
+#'
+#' Fitted through survival::survreg with a Gaussian error, which maximises exactly the Tobit
+#' likelihood once the bounds are declared. The correspondence is
+#'   uncensored  y       ->  the degenerate interval [y, y]
+#'   right-censored at U ->  [U, +Inf)
+#'   left-censored at L  ->  (-Inf, L]
+#' which is what Surv(y1, y2, type = "interval2") encodes, with NA marking the open end.
+#'
+#' Two details decide whether the published cells come back.
+#'
+#' Stata censors AT the limit, not beyond it: `ul(#)` treats every observation with y >= # as
+#' right-censored, and `ll(#)` every observation with y <= # as left-censored. An observation
+#' recorded exactly at the limit is therefore a bound, not a value. Writing y > # instead leaves
+#' those rows in as exact observations; on the lags data that is all 22 censored rows, since
+#' the authors set every longer lag to exactly 60.
+#'
+#' survreg parameterises the scale as log(sigma) while Stata parameterises it as sigma (Stata 15
+#' prints var(e.y) = sigma^2). That leaves the coefficient standard errors untouched, because the
+#' reparameterisation is a function of sigma alone: the Jacobian is block diagonal, so the beta
+#' block of the inverted information is the same either way. What it does change is the shape of
+#' vcov(), which carries one extra row and column for Log(scale); the wrapper trims it so that
+#' st_coefs() sees the coefficient block and nothing else.
+#'
+#' Verified against Stata 15.1 on the site's own published lags.csv, both censored regressions
+#' Havranek & Rusnak (IJCB 2013) print, `tobit mon_bot ..., ul(60)`:
+#'
+#'                              Stata 15.1                   this wrapper
+#'   T8  GDP per Capita   -11.47756  (4.792739)       -11.477577  (4.792741)
+#'   T8  Financial Dev.    21.60592  (5.375225)        21.605932  (5.375226)
+#'   T8  Constant          86.58325  (43.69408)        86.583402  (43.694099)
+#'   T8  var(e.mon_bot)   231.3916                    231.39170
+#'   T12 FAVAR             14.53418  (6.524711)        14.534170  (6.524715)
+#'   T12 CB Independence   30.19766  (12.26722)        30.197673  (12.267230)
+#'   T12 Constant          62.3183   (50.10327)        62.318454  (50.103301)
+#'   T12 var(e.mon_bot)   210.93                      210.93030
+#'
+#' with the same log likelihoods (-752.7678 and -743.5098) and the same censoring counts
+#' (176 uncensored, 22 right-censored, 0 left-censored). Every difference is in the fifth
+#' significant digit and is the two optimisers' convergence tolerance; all 86 printed cells of
+#' the two tables round identically.
+#'
+#' Stata reports t rather than z for this command, with N - k residual degrees of freedom, so
+#' read the coefficients with st_coefs(m, z = FALSE) when p-values are wanted.
+#' No weights and no cluster option: `tobit` accepts neither, and no paper here asks for them.
+st_tobit <- function(fml, data, ll = NULL, ul = NULL) {
+  if (!requireNamespace("survival", quietly = TRUE)) stop("st_tobit: survival not installed")
+  if (is.null(ll) && is.null(ul)) stop("st_tobit: give ll, ul, or both")
+  lo <- if (is.null(ll)) -Inf else ll
+  hi <- if (is.null(ul))  Inf else ul
+  y <- eval(fml[[2]], data, parent.frame())
+  right <- !is.na(y) & y >= hi
+  left  <- !is.na(y) & y <= lo
+  d <- as.data.frame(data)
+  d$.st_y1 <- ifelse(right, hi, ifelse(left, NA, y))
+  d$.st_y2 <- ifelse(right, NA, ifelse(left, lo, y))
+  f <- fml
+  f[[2]] <- quote(survival::Surv(.st_y1, .st_y2, type = "interval2"))
+  m <- survival::survreg(f, data = d, dist = "gaussian")
+  k <- length(stats::coef(m))
+  .note(sprintf("tobit y x, %s%s%s  [cnreg]",
+                if (is.null(ll)) "" else sprintf("ll(%s)", format(ll)),
+                if (is.null(ll) || is.null(ul)) "" else " ",
+                if (is.null(ul)) "" else sprintf("ul(%s)", format(ul))),
+        "survreg Gaussian ML, censored at the limit (y >= ul, y <= ll); t inference")
+  structure(list(coefficients = stats::coef(m),
+                 vcov         = stats::vcov(m)[seq_len(k), seq_len(k), drop = FALSE],
+                 sigma        = m$scale,
+                 loglik       = m$loglik[2],
+                 n            = length(m$linear.predictors),
+                 n_left       = sum(left),
+                 n_right      = sum(right),
+                 n_uncensored = sum(!left & !right & !is.na(y)),
+                 fit          = m),
+            class = "st_tobit")
+}
+
+coef.st_tobit  <- function(object, ...) object$coefficients
+vcov.st_tobit  <- function(object, ...) object$vcov
+nobs.st_tobit  <- function(object, ...) object$n
+logLik.st_tobit <- function(object, ...) object$loglik
 
 #' Random-effects panel regression, `plm(..., model = "random")`.
 #'

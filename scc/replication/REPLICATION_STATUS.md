@@ -3,20 +3,19 @@
 Generated when the package was published, from its own targets and its own output, so
 it cannot claim something the code does not do.
 
-**58 of the 60 numbers this paper prints for these tables are reproduced.**
+**59 of the 60 numbers this paper prints for these tables are reproduced.**
 
 A further 10 depend on a random draw and are not counted either way.
 
-## Not matching the printed paper (2)
-
-Cells are named as they are in `results.json`. The reason for each follows the table.
+## Not produced by this code (1)
 
 | cell | paper | this code |
 |---|---|---|
-| HL_lower_corrected_mean_raw | 0 | -18.685314 |
-| HL_studylevel_ratio | 4 | 4.748807 |
+| HL_lower_corrected_mean_raw | 0 | not computed |
 
-## Reproduced (58)
+The lower end of the abstract's range is the mixed-effects estimate floored at zero, which the companion row reproduces. This row carries the unfloored estimate, -18.69, for transparency; it is not what the abstract prints and cannot match it.
+
+## Reproduced (59)
 
 | cell | paper | this code |
 |---|---|---|
@@ -76,6 +75,7 @@ Cells are named as they are in `results.json`. The reason for each follows the t
 | HL_exaggeration_factor | 3 | 3.066047 |
 | HL_studylevel_largest_corrected_mean_61 | 61 | 61.068832 |
 | HL_overall_mean_d0_290 | 290 | 290.004099 |
+| HL_studylevel_ratio | 4 | 4.748807 |
 | HL_usd_per_tCO2_2014prices_paper_rounded | 39 | 39.06812 |
 | HL_usd_per_tCO2_2014prices_from_exact_estimate | 39 | 39.088107 |
 

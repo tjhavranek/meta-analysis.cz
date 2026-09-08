@@ -3,16 +3,15 @@
 Generated when the package was published, from its own targets and its own output, so
 it cannot claim something the code does not do.
 
-**37 of the 40 numbers this paper prints for these tables are reproduced.**
+**38 of the 40 numbers this paper prints for these tables are reproduced.**
 
-## Not matching the printed paper (2)
+## Not matching the printed paper (1)
 
 Cells are named as they are in `results.json`. The reason for each follows the table.
 
 | cell | paper | this code |
 |---|---|---|
 | TEXT mean elasticity, simple (paper: 0.8) | 0.8 | 0.747053 |
-| TEXT share of 0.9->0.3 reduction due to publication bias alone (paper: 'at least half', i.e. >= 0.5) | 0.5 | 0.680206 |
 
 ## Not produced by this code (1)
 
@@ -20,7 +19,7 @@ Cells are named as they are in `results.json`. The reason for each follows the t
 |---|---|---|
 | TEXT 'best practice' implied elasticity -- OUR st_regress proxy (paper's Table 9 value: 0.30, 95% CI -0.01 to 0.60; NOT independently reproduced -- see comment above) | 0.3 | not computed |
 
-## Reproduced (37)
+## Reproduced (38)
 
 | cell | paper | this code |
 |---|---|---|
@@ -61,4 +60,5 @@ Cells are named as they are in `results.json`. The reason for each follows the t
 | TEXT mean elasticity, equal weight per study (paper: 0.9) | 0.9 | 0.867015 |
 | TEXT publication-bias coefficient, Table 1 OLS (paper: 0.881) | 0.881 | 0.881304 |
 | TEXT mean elasticity corrected for publication bias, Table 1 OLS constant (paper: 0.5, printed 0.492) | 0.492 | 0.491876 |
+| TEXT share of 0.9->0.3 reduction due to publication bias alone (paper: 'at least half', i.e. >= 0.5) | 0.5 | 0.680206 |
 

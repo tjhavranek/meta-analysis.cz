@@ -123,7 +123,7 @@ st_winsor2 <- function(x, cuts = c(1, 99)) {
 local({
   d <- tryCatch(dirname(normalizePath(sys.frames()[[1]]$ofile)), error = function(e) ".")
   p <- file.path(d, "hadimvo_port.R")
-  u <- "https://meta-analysis.cz/remittances/replication/hadimvo_port.R"
+  u <- "https://meta-analysis.cz/lags/replication/hadimvo_port.R"
   ok <- FALSE
   if (file.exists(p)) { source(p); ok <- TRUE }
   else if (file.exists("hadimvo_port.R")) { source("hadimvo_port.R"); ok <- TRUE }

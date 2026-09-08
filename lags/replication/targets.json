@@ -1,0 +1,1320 @@
+[
+ {
+  "label": "Table 2 [Estimates from all Impulse Responses]: Obs.",
+  "printed": 198,
+  "digits": 0,
+  "kind": "count"
+ },
+ {
+  "label": "Table 2 [Estimates from all Impulse Responses]: Mean",
+  "printed": 33.5,
+  "digits": 1,
+  "kind": "discrepancy",
+  "note": "The sample mean of the transmission lag on the cleaned sample is 33.449495 months, which is 33.4 at one decimal, not the 33.5 the paper prints here and repeats twice in the text. Every other cell of this row -- 198 observations, median 37, standard deviation 19.4, minimum 1, maximum 60 -- reproduces exactly, as do both other rows' means, so the sample is the intended one. The gap is 0.05 months."
+ },
+ {
+  "label": "Table 2 [Estimates from all Impulse Responses]: Median",
+  "printed": 37,
+  "digits": 1,
+  "kind": "deterministic"
+ },
+ {
+  "label": "Table 2 [Estimates from all Impulse Responses]: Std. Dev.",
+  "printed": 19.4,
+  "digits": 1,
+  "kind": "deterministic"
+ },
+ {
+  "label": "Table 2 [Estimates from all Impulse Responses]: Min.",
+  "printed": 1,
+  "digits": 1,
+  "kind": "deterministic"
+ },
+ {
+  "label": "Table 2 [Estimates from all Impulse Responses]: Max.",
+  "printed": 60,
+  "digits": 1,
+  "kind": "deterministic"
+ },
+ {
+  "label": "Table 2 [Hump-Shaped Impulse Responses]: Obs.",
+  "printed": 100,
+  "digits": 0,
+  "kind": "count"
+ },
+ {
+  "label": "Table 2 [Hump-Shaped Impulse Responses]: Mean",
+  "printed": 18.2,
+  "digits": 1,
+  "kind": "deterministic"
+ },
+ {
+  "label": "Table 2 [Hump-Shaped Impulse Responses]: Median",
+  "printed": 15,
+  "digits": 1,
+  "kind": "deterministic"
+ },
+ {
+  "label": "Table 2 [Hump-Shaped Impulse Responses]: Std. Dev.",
+  "printed": 14.1,
+  "digits": 1,
+  "kind": "discrepancy",
+  "note": "The standard deviation of the transmission lag over the 100 hump-shaped impulse responses is 14.035579, i.e. 14.0 at one decimal, against a printed 14.1. The other five cells of this row reproduce exactly, including the count of 100 and the maximum of 57, and censoring at sixty months does not touch this subsample, so the same 100 values give both the reproduced and the unreproduced cells."
+ },
+ {
+  "label": "Table 2 [Hump-Shaped Impulse Responses]: Min.",
+  "printed": 1,
+  "digits": 1,
+  "kind": "deterministic"
+ },
+ {
+  "label": "Table 2 [Hump-Shaped Impulse Responses]: Max.",
+  "printed": 57,
+  "digits": 1,
+  "kind": "deterministic"
+ },
+ {
+  "label": "Table 2 [Strictly Decreasing Impulse Responses]: Obs.",
+  "printed": 98,
+  "digits": 0,
+  "kind": "count"
+ },
+ {
+  "label": "Table 2 [Strictly Decreasing Impulse Responses]: Mean",
+  "printed": 49.1,
+  "digits": 1,
+  "kind": "deterministic"
+ },
+ {
+  "label": "Table 2 [Strictly Decreasing Impulse Responses]: Median",
+  "printed": 48,
+  "digits": 1,
+  "kind": "deterministic"
+ },
+ {
+  "label": "Table 2 [Strictly Decreasing Impulse Responses]: Std. Dev.",
+  "printed": 8.6,
+  "digits": 1,
+  "kind": "deterministic"
+ },
+ {
+  "label": "Table 2 [Strictly Decreasing Impulse Responses]: Min.",
+  "printed": 24,
+  "digits": 1,
+  "kind": "deterministic"
+ },
+ {
+  "label": "Table 2 [Strictly Decreasing Impulse Responses]: Max.",
+  "printed": 60,
+  "digits": 1,
+  "kind": "deterministic"
+ },
+ {
+  "label": "Table 3 [United States]: Average Transmission Lag",
+  "printed": 42.2,
+  "digits": 1,
+  "kind": "deterministic"
+ },
+ {
+  "label": "Table 3 [Euro Area]: Average Transmission Lag",
+  "printed": 48.4,
+  "digits": 1,
+  "kind": "deterministic"
+ },
+ {
+  "label": "Table 3 [Japan]: Average Transmission Lag",
+  "printed": 51.3,
+  "digits": 1,
+  "kind": "deterministic"
+ },
+ {
+  "label": "Table 3 [Germany]: Average Transmission Lag",
+  "printed": 33.4,
+  "digits": 1,
+  "kind": "deterministic"
+ },
+ {
+  "label": "Table 3 [United Kingdom]: Average Transmission Lag",
+  "printed": 40.4,
+  "digits": 1,
+  "kind": "deterministic"
+ },
+ {
+  "label": "Table 3 [France]: Average Transmission Lag",
+  "printed": 51.3,
+  "digits": 1,
+  "kind": "deterministic"
+ },
+ {
+  "label": "Table 3 [Italy]: Average Transmission Lag",
+  "printed": 26.6,
+  "digits": 1,
+  "kind": "deterministic"
+ },
+ {
+  "label": "Table 3 [Poland]: Average Transmission Lag",
+  "printed": 18.7,
+  "digits": 1,
+  "kind": "deterministic"
+ },
+ {
+  "label": "Table 3 [Czech Republic]: Average Transmission Lag",
+  "printed": 14.8,
+  "digits": 1,
+  "kind": "deterministic"
+ },
+ {
+  "label": "Table 3 [Hungary]: Average Transmission Lag",
+  "printed": 17.9,
+  "digits": 1,
+  "kind": "deterministic"
+ },
+ {
+  "label": "Table 3 [Slovakia]: Average Transmission Lag",
+  "printed": 10.7,
+  "digits": 1,
+  "kind": "deterministic"
+ },
+ {
+  "label": "Table 3 [Slovenia]: Average Transmission Lag",
+  "printed": 17.6,
+  "digits": 1,
+  "kind": "deterministic"
+ },
+ {
+  "label": "Table 6 [United States]: Average Transmission Lag",
+  "printed": 23.2,
+  "digits": 1,
+  "kind": "deterministic"
+ },
+ {
+  "label": "Table 6 [Euro Area]: Average Transmission Lag",
+  "printed": 39.5,
+  "digits": 1,
+  "kind": "deterministic"
+ },
+ {
+  "label": "Table 6 [Japan]: Average Transmission Lag",
+  "printed": 40.5,
+  "digits": 1,
+  "kind": "deterministic"
+ },
+ {
+  "label": "Table 6 [Germany]: Average Transmission Lag",
+  "printed": 19.4,
+  "digits": 1,
+  "kind": "deterministic"
+ },
+ {
+  "label": "Table 6 [United Kingdom]: Average Transmission Lag",
+  "printed": 10.0,
+  "digits": 1,
+  "kind": "deterministic"
+ },
+ {
+  "label": "Table 6 [France]: Average Transmission Lag",
+  "printed": 24.0,
+  "digits": 1,
+  "kind": "deterministic"
+ },
+ {
+  "label": "Table 6 [Italy]: Average Transmission Lag",
+  "printed": 9.2,
+  "digits": 1,
+  "kind": "deterministic"
+ },
+ {
+  "label": "Table 6 [Poland]: Average Transmission Lag",
+  "printed": 15.4,
+  "digits": 1,
+  "kind": "deterministic"
+ },
+ {
+  "label": "Table 6 [Czech Republic]: Average Transmission Lag",
+  "printed": 14.8,
+  "digits": 1,
+  "kind": "deterministic"
+ },
+ {
+  "label": "Table 6 [Hungary]: Average Transmission Lag",
+  "printed": 14.4,
+  "digits": 1,
+  "kind": "deterministic"
+ },
+ {
+  "label": "Table 6 [Slovakia]: Average Transmission Lag",
+  "printed": 5.0,
+  "digits": 1,
+  "kind": "deterministic"
+ },
+ {
+  "label": "Table 6 [Slovenia]: Average Transmission Lag",
+  "printed": 13.0,
+  "digits": 1,
+  "kind": "deterministic"
+ },
+ {
+  "label": "Table 7 [United States]: Average Transmission Lag",
+  "printed": 40.5,
+  "digits": 1,
+  "kind": "deterministic"
+ },
+ {
+  "label": "Table 7 [Euro Area]: Average Transmission Lag",
+  "printed": 49.2,
+  "digits": 1,
+  "kind": "deterministic"
+ },
+ {
+  "label": "Table 7 [Japan]: Average Transmission Lag",
+  "printed": 57.0,
+  "digits": 1,
+  "kind": "deterministic"
+ },
+ {
+  "label": "Table 7 [Germany]: Average Transmission Lag",
+  "printed": 34.5,
+  "digits": 1,
+  "kind": "deterministic"
+ },
+ {
+  "label": "Table 7 [United Kingdom]: Average Transmission Lag",
+  "printed": 10.0,
+  "digits": 1,
+  "kind": "deterministic"
+ },
+ {
+  "label": "Table 7 [France]: Average Transmission Lag",
+  "printed": 52.8,
+  "digits": 1,
+  "kind": "deterministic"
+ },
+ {
+  "label": "Table 7 [Italy]: Average Transmission Lag",
+  "printed": 30.0,
+  "digits": 1,
+  "kind": "deterministic"
+ },
+ {
+  "label": "Table 7 [Poland]: Average Transmission Lag",
+  "printed": 14.0,
+  "digits": 1,
+  "kind": "deterministic"
+ },
+ {
+  "label": "Table 7 [Czech Republic]: Average Transmission Lag",
+  "printed": 8.8,
+  "digits": 1,
+  "kind": "deterministic"
+ },
+ {
+  "label": "Table 7 [Hungary]: Average Transmission Lag",
+  "printed": 15.4,
+  "digits": 1,
+  "kind": "deterministic"
+ },
+ {
+  "label": "Table 7 [Slovakia]: Average Transmission Lag",
+  "printed": 10.7,
+  "digits": 1,
+  "kind": "deterministic"
+ },
+ {
+  "label": "Table 7 [Slovenia]: Average Transmission Lag",
+  "printed": 17.8,
+  "digits": 1,
+  "kind": "deterministic"
+ },
+ {
+  "label": "Table 4 [GDP per Capita]: Mean",
+  "printed": 9.88,
+  "digits": 3,
+  "kind": "deterministic"
+ },
+ {
+  "label": "Table 4 [GDP per Capita]: Std. Dev.",
+  "printed": 0.415,
+  "digits": 3,
+  "kind": "deterministic"
+ },
+ {
+  "label": "Table 4 [GDP Growth]: Mean",
+  "printed": 2.644,
+  "digits": 3,
+  "kind": "deterministic"
+ },
+ {
+  "label": "Table 4 [GDP Growth]: Std. Dev.",
+  "printed": 1.042,
+  "digits": 3,
+  "kind": "deterministic"
+ },
+ {
+  "label": "Table 4 [Inflation]: Mean",
+  "printed": 0.078,
+  "digits": 3,
+  "kind": "deterministic"
+ },
+ {
+  "label": "Table 4 [Inflation]: Std. Dev.",
+  "printed": 0.145,
+  "digits": 3,
+  "kind": "deterministic"
+ },
+ {
+  "label": "Table 4 [Financial Dev.]: Mean",
+  "printed": 0.835,
+  "digits": 3,
+  "kind": "deterministic"
+ },
+ {
+  "label": "Table 4 [Financial Dev.]: Std. Dev.",
+  "printed": 0.408,
+  "digits": 3,
+  "kind": "deterministic"
+ },
+ {
+  "label": "Table 4 [Openness]: Mean",
+  "printed": 0.452,
+  "digits": 3,
+  "kind": "deterministic"
+ },
+ {
+  "label": "Table 4 [Openness]: Std. Dev.",
+  "printed": 0.397,
+  "digits": 3,
+  "kind": "deterministic"
+ },
+ {
+  "label": "Table 4 [CB Independence]: Mean",
+  "printed": 0.773,
+  "digits": 3,
+  "kind": "deterministic"
+ },
+ {
+  "label": "Table 4 [CB Independence]: Std. Dev.",
+  "printed": 0.145,
+  "digits": 3,
+  "kind": "deterministic"
+ },
+ {
+  "label": "Table 4 [Monthly]: Mean",
+  "printed": 0.626,
+  "digits": 3,
+  "kind": "deterministic"
+ },
+ {
+  "label": "Table 4 [Monthly]: Std. Dev.",
+  "printed": 0.485,
+  "digits": 3,
+  "kind": "deterministic"
+ },
+ {
+  "label": "Table 4 [No. of Observations]: Mean",
+  "printed": 4.876,
+  "digits": 3,
+  "kind": "deterministic"
+ },
+ {
+  "label": "Table 4 [No. of Observations]: Std. Dev.",
+  "printed": 0.661,
+  "digits": 3,
+  "kind": "deterministic"
+ },
+ {
+  "label": "Table 4 [Average Year]: Mean",
+  "printed": -9.053,
+  "digits": 3,
+  "kind": "deterministic"
+ },
+ {
+  "label": "Table 4 [Average Year]: Std. Dev.",
+  "printed": 7.779,
+  "digits": 3,
+  "kind": "deterministic"
+ },
+ {
+  "label": "Table 4 [GDP Deflator]: Mean",
+  "printed": 0.172,
+  "digits": 3,
+  "kind": "deterministic"
+ },
+ {
+  "label": "Table 4 [GDP Deflator]: Std. Dev.",
+  "printed": 0.378,
+  "digits": 3,
+  "kind": "deterministic"
+ },
+ {
+  "label": "Table 4 [Single Regime]: Mean",
+  "printed": 0.293,
+  "digits": 3,
+  "kind": "deterministic"
+ },
+ {
+  "label": "Table 4 [Single Regime]: Std. Dev.",
+  "printed": 0.456,
+  "digits": 3,
+  "kind": "deterministic"
+ },
+ {
+  "label": "Table 4 [No. of Lags]: Mean",
+  "printed": 0.614,
+  "digits": 3,
+  "kind": "deterministic"
+ },
+ {
+  "label": "Table 4 [No. of Lags]: Std. Dev.",
+  "printed": 0.373,
+  "digits": 3,
+  "kind": "deterministic"
+ },
+ {
+  "label": "Table 4 [Commodity Prices]: Mean",
+  "printed": 0.626,
+  "digits": 3,
+  "kind": "deterministic"
+ },
+ {
+  "label": "Table 4 [Commodity Prices]: Std. Dev.",
+  "printed": 0.485,
+  "digits": 3,
+  "kind": "deterministic"
+ },
+ {
+  "label": "Table 4 [Money]: Mean",
+  "printed": 0.545,
+  "digits": 3,
+  "kind": "deterministic"
+ },
+ {
+  "label": "Table 4 [Money]: Std. Dev.",
+  "printed": 0.499,
+  "digits": 3,
+  "kind": "deterministic"
+ },
+ {
+  "label": "Table 4 [Foreign Variables]: Mean",
+  "printed": 0.444,
+  "digits": 3,
+  "kind": "deterministic"
+ },
+ {
+  "label": "Table 4 [Foreign Variables]: Std. Dev.",
+  "printed": 0.498,
+  "digits": 3,
+  "kind": "deterministic"
+ },
+ {
+  "label": "Table 4 [Time Trend]: Mean",
+  "printed": 0.131,
+  "digits": 3,
+  "kind": "deterministic"
+ },
+ {
+  "label": "Table 4 [Time Trend]: Std. Dev.",
+  "printed": 0.339,
+  "digits": 3,
+  "kind": "deterministic"
+ },
+ {
+  "label": "Table 4 [Seasonal]: Mean",
+  "printed": 0.146,
+  "digits": 3,
+  "kind": "deterministic"
+ },
+ {
+  "label": "Table 4 [Seasonal]: Std. Dev.",
+  "printed": 0.354,
+  "digits": 3,
+  "kind": "deterministic"
+ },
+ {
+  "label": "Table 4 [No. of Variables]: Mean",
+  "printed": 1.748,
+  "digits": 3,
+  "kind": "deterministic"
+ },
+ {
+  "label": "Table 4 [No. of Variables]: Std. Dev.",
+  "printed": 0.391,
+  "digits": 3,
+  "kind": "deterministic"
+ },
+ {
+  "label": "Table 4 [Industrial Prod.]: Mean",
+  "printed": 0.429,
+  "digits": 3,
+  "kind": "deterministic"
+ },
+ {
+  "label": "Table 4 [Industrial Prod.]: Std. Dev.",
+  "printed": 0.496,
+  "digits": 3,
+  "kind": "deterministic"
+ },
+ {
+  "label": "Table 4 [Output Gap]: Mean",
+  "printed": 0.03,
+  "digits": 3,
+  "kind": "deterministic"
+ },
+ {
+  "label": "Table 4 [Output Gap]: Std. Dev.",
+  "printed": 0.172,
+  "digits": 3,
+  "kind": "deterministic"
+ },
+ {
+  "label": "Table 4 [Other Measures]: Mean",
+  "printed": 0.121,
+  "digits": 3,
+  "kind": "deterministic"
+ },
+ {
+  "label": "Table 4 [Other Measures]: Std. Dev.",
+  "printed": 0.327,
+  "digits": 3,
+  "kind": "deterministic"
+ },
+ {
+  "label": "Table 4 [BVAR]: Mean",
+  "printed": 0.121,
+  "digits": 3,
+  "kind": "deterministic"
+ },
+ {
+  "label": "Table 4 [BVAR]: Std. Dev.",
+  "printed": 0.327,
+  "digits": 3,
+  "kind": "deterministic"
+ },
+ {
+  "label": "Table 4 [FAVAR]: Mean",
+  "printed": 0.051,
+  "digits": 3,
+  "kind": "deterministic"
+ },
+ {
+  "label": "Table 4 [FAVAR]: Std. Dev.",
+  "printed": 0.22,
+  "digits": 3,
+  "kind": "deterministic"
+ },
+ {
+  "label": "Table 4 [SVAR]: Mean",
+  "printed": 0.313,
+  "digits": 3,
+  "kind": "deterministic"
+ },
+ {
+  "label": "Table 4 [SVAR]: Std. Dev.",
+  "printed": 0.465,
+  "digits": 3,
+  "kind": "deterministic"
+ },
+ {
+  "label": "Table 4 [Sign Restrictions]: Mean",
+  "printed": 0.152,
+  "digits": 3,
+  "kind": "deterministic"
+ },
+ {
+  "label": "Table 4 [Sign Restrictions]: Std. Dev.",
+  "printed": 0.359,
+  "digits": 3,
+  "kind": "deterministic"
+ },
+ {
+  "label": "Table 4 [Strictly Decreasing]: Mean",
+  "printed": 0.495,
+  "digits": 3,
+  "kind": "deterministic"
+ },
+ {
+  "label": "Table 4 [Strictly Decreasing]: Std. Dev.",
+  "printed": 0.501,
+  "digits": 3,
+  "kind": "deterministic"
+ },
+ {
+  "label": "Table 4 [Price Puzzle]: Mean",
+  "printed": 0.53,
+  "digits": 3,
+  "kind": "deterministic"
+ },
+ {
+  "label": "Table 4 [Price Puzzle]: Std. Dev.",
+  "printed": 0.5,
+  "digits": 3,
+  "kind": "deterministic"
+ },
+ {
+  "label": "Table 4 [Study Citations]: Mean",
+  "printed": 1.875,
+  "digits": 3,
+  "kind": "deterministic"
+ },
+ {
+  "label": "Table 4 [Study Citations]: Std. Dev.",
+  "printed": 1.292,
+  "digits": 3,
+  "kind": "deterministic"
+ },
+ {
+  "label": "Table 4 [Impact]: Mean",
+  "printed": 0.9,
+  "digits": 3,
+  "kind": "deterministic"
+ },
+ {
+  "label": "Table 4 [Impact]: Std. Dev.",
+  "printed": 2.417,
+  "digits": 3,
+  "kind": "deterministic"
+ },
+ {
+  "label": "Table 4 [Central Banker]: Mean",
+  "printed": 0.424,
+  "digits": 3,
+  "kind": "deterministic"
+ },
+ {
+  "label": "Table 4 [Central Banker]: Std. Dev.",
+  "printed": 0.495,
+  "digits": 3,
+  "kind": "deterministic"
+ },
+ {
+  "label": "Table 4 [Policymaker]: Mean",
+  "printed": 0.061,
+  "digits": 3,
+  "kind": "deterministic"
+ },
+ {
+  "label": "Table 4 [Policymaker]: Std. Dev.",
+  "printed": 0.239,
+  "digits": 3,
+  "kind": "deterministic"
+ },
+ {
+  "label": "Table 4 [Native]: Mean",
+  "printed": 0.449,
+  "digits": 3,
+  "kind": "deterministic"
+ },
+ {
+  "label": "Table 4 [Native]: Std. Dev.",
+  "printed": 0.499,
+  "digits": 3,
+  "kind": "deterministic"
+ },
+ {
+  "label": "Table 4 [Publication Year]: Mean",
+  "printed": 4.894,
+  "digits": 3,
+  "kind": "deterministic"
+ },
+ {
+  "label": "Table 4 [Publication Year]: Std. Dev.",
+  "printed": 3.889,
+  "digits": 3,
+  "kind": "deterministic"
+ },
+ {
+  "label": "Table 8 [GDP per Capita]: coef",
+  "printed": -11.48,
+  "digits": 2,
+  "kind": "deterministic"
+ },
+ {
+  "label": "Table 8 [GDP per Capita]: se",
+  "printed": 4.793,
+  "digits": 3,
+  "kind": "deterministic"
+ },
+ {
+  "label": "Table 8 [Price Puzzle]: coef",
+  "printed": 4.667,
+  "digits": 3,
+  "kind": "deterministic"
+ },
+ {
+  "label": "Table 8 [Price Puzzle]: se",
+  "printed": 2.343,
+  "digits": 3,
+  "kind": "deterministic"
+ },
+ {
+  "label": "Table 8 [Inflation]: coef",
+  "printed": -17.25,
+  "digits": 2,
+  "kind": "deterministic"
+ },
+ {
+  "label": "Table 8 [Inflation]: se",
+  "printed": 8.739,
+  "digits": 3,
+  "kind": "deterministic"
+ },
+ {
+  "label": "Table 8 [Financial Dev.]: coef",
+  "printed": 21.61,
+  "digits": 2,
+  "kind": "deterministic"
+ },
+ {
+  "label": "Table 8 [Financial Dev.]: se",
+  "printed": 5.375,
+  "digits": 3,
+  "kind": "deterministic"
+ },
+ {
+  "label": "Table 8 [Openness]: coef",
+  "printed": -12.67,
+  "digits": 2,
+  "kind": "deterministic"
+ },
+ {
+  "label": "Table 8 [Openness]: se",
+  "printed": 4.67,
+  "digits": 3,
+  "kind": "deterministic"
+ },
+ {
+  "label": "Table 8 [CB Independence]: coef",
+  "printed": 29.38,
+  "digits": 2,
+  "kind": "deterministic"
+ },
+ {
+  "label": "Table 8 [CB Independence]: se",
+  "printed": 10.64,
+  "digits": 2,
+  "kind": "deterministic"
+ },
+ {
+  "label": "Table 8 [Monthly]: coef",
+  "printed": -12.04,
+  "digits": 2,
+  "kind": "deterministic"
+ },
+ {
+  "label": "Table 8 [Monthly]: se",
+  "printed": 3.821,
+  "digits": 3,
+  "kind": "deterministic"
+ },
+ {
+  "label": "Table 8 [No. of Observations]: coef",
+  "printed": 6.526,
+  "digits": 3,
+  "kind": "deterministic"
+ },
+ {
+  "label": "Table 8 [No. of Observations]: se",
+  "printed": 2.951,
+  "digits": 3,
+  "kind": "deterministic"
+ },
+ {
+  "label": "Table 8 [Policymaker]: coef",
+  "printed": 12.37,
+  "digits": 2,
+  "kind": "deterministic"
+ },
+ {
+  "label": "Table 8 [Policymaker]: se",
+  "printed": 5.012,
+  "digits": 3,
+  "kind": "deterministic"
+ },
+ {
+  "label": "Table 8 [Constant]: coef",
+  "printed": 86.58,
+  "digits": 2,
+  "kind": "deterministic"
+ },
+ {
+  "label": "Table 8 [Constant]: se",
+  "printed": 43.69,
+  "digits": 2,
+  "kind": "deterministic"
+ },
+ {
+  "label": "Table 8: Observations",
+  "printed": 198,
+  "digits": 0,
+  "kind": "count"
+ },
+ {
+  "label": "Table 12 [GDP per Capita]: coef",
+  "printed": -9.792,
+  "digits": 3,
+  "kind": "deterministic"
+ },
+ {
+  "label": "Table 12 [GDP per Capita]: se",
+  "printed": 5.192,
+  "digits": 3,
+  "kind": "deterministic"
+ },
+ {
+  "label": "Table 12 [GDP Growth]: coef",
+  "printed": 1.512,
+  "digits": 3,
+  "kind": "deterministic"
+ },
+ {
+  "label": "Table 12 [GDP Growth]: se",
+  "printed": 1.346,
+  "digits": 3,
+  "kind": "deterministic"
+ },
+ {
+  "label": "Table 12 [Inflation]: coef",
+  "printed": -17.41,
+  "digits": 2,
+  "kind": "deterministic"
+ },
+ {
+  "label": "Table 12 [Inflation]: se",
+  "printed": 8.695,
+  "digits": 3,
+  "kind": "deterministic"
+ },
+ {
+  "label": "Table 12 [Financial Dev.]: coef",
+  "printed": 22.17,
+  "digits": 2,
+  "kind": "deterministic"
+ },
+ {
+  "label": "Table 12 [Financial Dev.]: se",
+  "printed": 6.084,
+  "digits": 3,
+  "kind": "deterministic"
+ },
+ {
+  "label": "Table 12 [Openness]: coef",
+  "printed": -11.16,
+  "digits": 2,
+  "kind": "deterministic"
+ },
+ {
+  "label": "Table 12 [Openness]: se",
+  "printed": 5.595,
+  "digits": 3,
+  "kind": "deterministic"
+ },
+ {
+  "label": "Table 12 [CB Independence]: coef",
+  "printed": 30.2,
+  "digits": 2,
+  "kind": "deterministic"
+ },
+ {
+  "label": "Table 12 [CB Independence]: se",
+  "printed": 12.27,
+  "digits": 2,
+  "kind": "deterministic"
+ },
+ {
+  "label": "Table 12 [Monthly]: coef",
+  "printed": -4.402,
+  "digits": 3,
+  "kind": "deterministic"
+ },
+ {
+  "label": "Table 12 [Monthly]: se",
+  "printed": 6.92,
+  "digits": 3,
+  "kind": "deterministic"
+ },
+ {
+  "label": "Table 12 [No. of Observations]: coef",
+  "printed": 4.287,
+  "digits": 3,
+  "kind": "deterministic"
+ },
+ {
+  "label": "Table 12 [No. of Observations]: se",
+  "printed": 5.186,
+  "digits": 3,
+  "kind": "deterministic"
+ },
+ {
+  "label": "Table 12 [Average Year]: coef",
+  "printed": -0.168,
+  "digits": 3,
+  "kind": "deterministic"
+ },
+ {
+  "label": "Table 12 [Average Year]: se",
+  "printed": 0.367,
+  "digits": 3,
+  "kind": "deterministic"
+ },
+ {
+  "label": "Table 12 [GDP Deflator]: coef",
+  "printed": 5.102,
+  "digits": 3,
+  "kind": "deterministic"
+ },
+ {
+  "label": "Table 12 [GDP Deflator]: se",
+  "printed": 4.281,
+  "digits": 3,
+  "kind": "deterministic"
+ },
+ {
+  "label": "Table 12 [Single Regime]: coef",
+  "printed": 4.143,
+  "digits": 3,
+  "kind": "deterministic"
+ },
+ {
+  "label": "Table 12 [Single Regime]: se",
+  "printed": 3.497,
+  "digits": 3,
+  "kind": "deterministic"
+ },
+ {
+  "label": "Table 12 [No. of Lags]: coef",
+  "printed": 8.132,
+  "digits": 3,
+  "kind": "deterministic"
+ },
+ {
+  "label": "Table 12 [No. of Lags]: se",
+  "printed": 4.744,
+  "digits": 3,
+  "kind": "deterministic"
+ },
+ {
+  "label": "Table 12 [Commodity Prices]: coef",
+  "printed": -1.284,
+  "digits": 3,
+  "kind": "deterministic"
+ },
+ {
+  "label": "Table 12 [Commodity Prices]: se",
+  "printed": 2.861,
+  "digits": 3,
+  "kind": "deterministic"
+ },
+ {
+  "label": "Table 12 [Money]: coef",
+  "printed": 1.768,
+  "digits": 3,
+  "kind": "deterministic"
+ },
+ {
+  "label": "Table 12 [Money]: se",
+  "printed": 2.949,
+  "digits": 3,
+  "kind": "deterministic"
+ },
+ {
+  "label": "Table 12 [Foreign Variables]: coef",
+  "printed": 4.102,
+  "digits": 3,
+  "kind": "deterministic"
+ },
+ {
+  "label": "Table 12 [Foreign Variables]: se",
+  "printed": 3.4,
+  "digits": 3,
+  "kind": "deterministic"
+ },
+ {
+  "label": "Table 12 [Time Trend]: coef",
+  "printed": 2.7,
+  "digits": 3,
+  "kind": "deterministic"
+ },
+ {
+  "label": "Table 12 [Time Trend]: se",
+  "printed": 5.791,
+  "digits": 3,
+  "kind": "deterministic"
+ },
+ {
+  "label": "Table 12 [Seasonal]: coef",
+  "printed": 7.231,
+  "digits": 3,
+  "kind": "deterministic"
+ },
+ {
+  "label": "Table 12 [Seasonal]: se",
+  "printed": 4.057,
+  "digits": 3,
+  "kind": "deterministic"
+ },
+ {
+  "label": "Table 12 [No. of Variables]: coef",
+  "printed": 1.352,
+  "digits": 3,
+  "kind": "deterministic"
+ },
+ {
+  "label": "Table 12 [No. of Variables]: se",
+  "printed": 3.536,
+  "digits": 3,
+  "kind": "deterministic"
+ },
+ {
+  "label": "Table 12 [Industrial Prod.]: coef",
+  "printed": -6.785,
+  "digits": 3,
+  "kind": "deterministic"
+ },
+ {
+  "label": "Table 12 [Industrial Prod.]: se",
+  "printed": 3.904,
+  "digits": 3,
+  "kind": "deterministic"
+ },
+ {
+  "label": "Table 12 [Output Gap]: coef",
+  "printed": -10.41,
+  "digits": 2,
+  "kind": "deterministic"
+ },
+ {
+  "label": "Table 12 [Output Gap]: se",
+  "printed": 7.681,
+  "digits": 3,
+  "kind": "deterministic"
+ },
+ {
+  "label": "Table 12 [Other Measures]: coef",
+  "printed": -6.246,
+  "digits": 3,
+  "kind": "deterministic"
+ },
+ {
+  "label": "Table 12 [Other Measures]: se",
+  "printed": 5.017,
+  "digits": 3,
+  "kind": "deterministic"
+ },
+ {
+  "label": "Table 12 [BVAR]: coef",
+  "printed": -1.147,
+  "digits": 3,
+  "kind": "deterministic"
+ },
+ {
+  "label": "Table 12 [BVAR]: se",
+  "printed": 5.094,
+  "digits": 3,
+  "kind": "deterministic"
+ },
+ {
+  "label": "Table 12 [FAVAR]: coef",
+  "printed": 14.53,
+  "digits": 2,
+  "kind": "deterministic"
+ },
+ {
+  "label": "Table 12 [FAVAR]: se",
+  "printed": 6.525,
+  "digits": 3,
+  "kind": "deterministic"
+ },
+ {
+  "label": "Table 12 [SVAR]: coef",
+  "printed": -4.243,
+  "digits": 3,
+  "kind": "deterministic"
+ },
+ {
+  "label": "Table 12 [SVAR]: se",
+  "printed": 3.008,
+  "digits": 3,
+  "kind": "deterministic"
+ },
+ {
+  "label": "Table 12 [Sign Restrictions]: coef",
+  "printed": -3.27,
+  "digits": 3,
+  "kind": "deterministic"
+ },
+ {
+  "label": "Table 12 [Sign Restrictions]: se",
+  "printed": 5.163,
+  "digits": 3,
+  "kind": "deterministic"
+ },
+ {
+  "label": "Table 12 [Price Puzzle]: coef",
+  "printed": 3.651,
+  "digits": 3,
+  "kind": "deterministic"
+ },
+ {
+  "label": "Table 12 [Price Puzzle]: se",
+  "printed": 2.537,
+  "digits": 3,
+  "kind": "deterministic"
+ },
+ {
+  "label": "Table 12 [Study Citations]: coef",
+  "printed": -0.717,
+  "digits": 3,
+  "kind": "deterministic"
+ },
+ {
+  "label": "Table 12 [Study Citations]: se",
+  "printed": 1.734,
+  "digits": 3,
+  "kind": "deterministic"
+ },
+ {
+  "label": "Table 12 [Impact]: coef",
+  "printed": -0.742,
+  "digits": 3,
+  "kind": "deterministic"
+ },
+ {
+  "label": "Table 12 [Impact]: se",
+  "printed": 0.699,
+  "digits": 3,
+  "kind": "deterministic"
+ },
+ {
+  "label": "Table 12 [Central Banker]: coef",
+  "printed": 5.313,
+  "digits": 3,
+  "kind": "deterministic"
+ },
+ {
+  "label": "Table 12 [Central Banker]: se",
+  "printed": 3.633,
+  "digits": 3,
+  "kind": "deterministic"
+ },
+ {
+  "label": "Table 12 [Policymaker]: coef",
+  "printed": 9.024,
+  "digits": 3,
+  "kind": "deterministic"
+ },
+ {
+  "label": "Table 12 [Policymaker]: se",
+  "printed": 6.137,
+  "digits": 3,
+  "kind": "deterministic"
+ },
+ {
+  "label": "Table 12 [Native]: coef",
+  "printed": -1.996,
+  "digits": 3,
+  "kind": "deterministic"
+ },
+ {
+  "label": "Table 12 [Native]: se",
+  "printed": 3.043,
+  "digits": 3,
+  "kind": "deterministic"
+ },
+ {
+  "label": "Table 12 [Publication Year]: coef",
+  "printed": 0.0475,
+  "digits": 4,
+  "kind": "deterministic"
+ },
+ {
+  "label": "Table 12 [Publication Year]: se",
+  "printed": 0.453,
+  "digits": 3,
+  "kind": "deterministic"
+ },
+ {
+  "label": "Table 12 [Constant]: coef",
+  "printed": 62.32,
+  "digits": 2,
+  "kind": "deterministic"
+ },
+ {
+  "label": "Table 12 [Constant]: se",
+  "printed": 50.1,
+  "digits": 2,
+  "kind": "deterministic"
+ },
+ {
+  "label": "Table 12: Observations",
+  "printed": 198,
+  "digits": 0,
+  "kind": "count"
+ },
+ {
+  "label": "Primary studies in the sample",
+  "printed": 67,
+  "digits": 0,
+  "kind": "count"
+ },
+ {
+  "label": "Countries covered",
+  "printed": 30,
+  "digits": 0,
+  "kind": "count"
+ },
+ {
+  "label": "Table 5 [Financial Dev.]: Posterior Mean",
+  "printed": 12.492,
+  "digits": 3,
+  "kind": "not_reproduced",
+  "note": "Bayesian model averaging over the thirty-three candidate regressors, run as an MCMC birth-death sampler with 100 million burn-in and 200 million recorded draws under a uniform model prior and the unit information prior. The model space has 2^33 members, so it cannot be enumerated and the posterior means are the output of one stochastic chain rather than a closed-form quantity. A fresh chain would return its own numbers, which are not the paper's."
+ },
+ {
+  "label": "Table 5 [Monthly]: Posterior Mean",
+  "printed": -4.175,
+  "digits": 3,
+  "kind": "not_reproduced",
+  "note": "Bayesian model averaging over the thirty-three candidate regressors, run as an MCMC birth-death sampler with 100 million burn-in and 200 million recorded draws under a uniform model prior and the unit information prior. The model space has 2^33 members, so it cannot be enumerated and the posterior means are the output of one stochastic chain rather than a closed-form quantity. A fresh chain would return its own numbers, which are not the paper's."
+ },
+ {
+  "label": "Table 5 [Strictly Decreasing]: Posterior Mean",
+  "printed": 26.122,
+  "digits": 3,
+  "kind": "not_reproduced",
+  "note": "Bayesian model averaging over the thirty-three candidate regressors, run as an MCMC birth-death sampler with 100 million burn-in and 200 million recorded draws under a uniform model prior and the unit information prior. The model space has 2^33 members, so it cannot be enumerated and the posterior means are the output of one stochastic chain rather than a closed-form quantity. A fresh chain would return its own numbers, which are not the paper's."
+ },
+ {
+  "label": "Abstract: average transmission lag (months)",
+  "printed": 29,
+  "digits": 0,
+  "kind": "not_reproduced",
+  "note": "Bayesian model averaging over the thirty-three candidate regressors, run as an MCMC birth-death sampler with 100 million burn-in and 200 million recorded draws under a uniform model prior and the unit information prior. The model space has 2^33 members, so it cannot be enumerated and the posterior means are the output of one stochastic chain rather than a closed-form quantity. A fresh chain would return its own numbers, which are not the paper's. This figure is a linear combination of those posterior means evaluated at the paper's best-practice values, so it inherits the chain."
+ },
+ {
+  "label": "Section 3: implied lag for the ideal study (months)",
+  "printed": 29.2,
+  "digits": 1,
+  "kind": "not_reproduced",
+  "note": "Bayesian model averaging over the thirty-three candidate regressors, run as an MCMC birth-death sampler with 100 million burn-in and 200 million recorded draws under a uniform model prior and the unit information prior. The model space has 2^33 members, so it cannot be enumerated and the posterior means are the output of one stochastic chain rather than a closed-form quantity. A fresh chain would return its own numbers, which are not the paper's. The same best-practice combination, printed to one decimal. Evaluating it from Table 5's own printed posterior means and this sample's means and maxima gives 29.184, which is the printed 29.2; that is arithmetic on the paper's published output, not a reproduction of the estimation behind it."
+ },
+ {
+  "label": "Section 3: implied lag preferring hump-shaped responses (months)",
+  "printed": 16.3,
+  "digits": 1,
+  "kind": "not_reproduced",
+  "note": "Bayesian model averaging over the thirty-three candidate regressors, run as an MCMC birth-death sampler with 100 million burn-in and 200 million recorded draws under a uniform model prior and the unit information prior. The model space has 2^33 members, so it cannot be enumerated and the posterior means are the output of one stochastic chain rather than a closed-form quantity. A fresh chain would return its own numbers, which are not the paper's. Same combination with Strictly Decreasing set to zero. Evaluated from Table 5's printed posterior means it gives 16.255, i.e. the printed 16.3, which also settles which BMA the sentence refers to: the baseline one of Table 5 with the shape dummy switched off, not the separate hump-shaped-subsample estimation of figure 4."
+ },
+ {
+  "label": "Abstract: maximum decrease in prices (percent)",
+  "printed": 0.9,
+  "digits": 1,
+  "kind": "not_reproduced",
+  "note": "The response column the authors summarise here is the normalised maximum decrease in prices, carried in the published file as MBR. Its mean over the 198 estimates is -0.011993, i.e. 1.20 percent in the percentage-point units the companion paper's script uses (res = 100*res), against the 0.9 percent printed. No scaling of that column reconciles both this figure and the count of 173 below, so the published columns do not carry the series behind the sentence."
+ },
+ {
+  "label": "Section 4: impulse responses reaching a -0.1 percent decrease (of 198)",
+  "printed": 173,
+  "digits": 0,
+  "kind": "not_reproduced",
+  "note": "The response variable behind this count -- the number of months to a -0.1 percent decrease in prices, used for figure 5 and table 11 -- is not among the published columns. The closest available construction, counting the estimates whose normalised maximum decrease reaches 0.1 percent, gives 171."
+ }
+]

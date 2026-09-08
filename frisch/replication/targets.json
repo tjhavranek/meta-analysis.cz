@@ -1,37 +1,190 @@
 [
-  {"label": "T3 col1 OLS: Publication bias coef",  "printed": 1.689,  "digits": 3, "kind": "deterministic"},
-  {"label": "T3 col1 OLS: Publication bias SE",    "printed": 0.264,  "digits": 3, "kind": "deterministic"},
-  {"label": "T3 col1 OLS: Effect-beyond-bias coef","printed": 0.288,  "digits": 3, "kind": "deterministic"},
-  {"label": "T3 col1 OLS: Effect-beyond-bias SE",  "printed": 0.0442, "digits": 4, "kind": "deterministic"},
-  {"label": "T3 col1 OLS: Observations",           "printed": 762,    "digits": 0, "kind": "count"},
-  {"label": "T3 col1 OLS: Studies",                "printed": 38,     "digits": 0, "kind": "count"},
-
-  {"label": "T3 col2 FE: Publication bias coef",   "printed": 0.887,  "digits": 3, "kind": "deterministic"},
-  {"label": "T3 col2 FE: Publication bias SE",     "printed": 0.271,  "digits": 3, "kind": "deterministic"},
-  {"label": "T3 col2 FE: Effect-beyond-bias coef", "printed": 0.356,  "digits": 3, "kind": "deterministic"},
-  {"label": "T3 col2 FE: Effect-beyond-bias SE",   "printed": 0.0252, "digits": 4, "kind": "deterministic"},
-  {"label": "T3 col2 FE: Observations",            "printed": 762,    "digits": 0, "kind": "count"},
-  {"label": "T3 col2 FE: Studies",                 "printed": 38,     "digits": 0, "kind": "count"},
-
-  {"label": "T3 col3 Precision: Publication bias coef",   "printed": 2.592,  "digits": 3, "kind": "deterministic"},
-  {"label": "T3 col3 Precision: Publication bias SE",     "printed": 0.530,  "digits": 3, "kind": "deterministic"},
-  {"label": "T3 col3 Precision: Effect-beyond-bias coef", "printed": 0.211,  "digits": 3, "kind": "deterministic"},
-  {"label": "T3 col3 Precision: Effect-beyond-bias SE",   "printed": 0.0441, "digits": 4, "kind": "deterministic"},
-  {"label": "T3 col3 Precision: Observations",            "printed": 762,    "digits": 0, "kind": "count"},
-  {"label": "T3 col3 Precision: Studies",                 "printed": 38,     "digits": 0, "kind": "count"},
-
-  {"label": "T3 col4 Study: Publication bias coef",   "printed": 2.173,  "digits": 3, "kind": "deterministic"},
-  {"label": "T3 col4 Study: Publication bias SE",     "printed": 0.227,  "digits": 3, "kind": "deterministic"},
-  {"label": "T3 col4 Study: Effect-beyond-bias coef", "printed": 0.243,  "digits": 3, "kind": "deterministic"},
-  {"label": "T3 col4 Study: Effect-beyond-bias SE",   "printed": 0.0470, "digits": 4, "kind": "deterministic"},
-  {"label": "T3 col4 Study: Observations",            "printed": 762,    "digits": 0, "kind": "count"},
-  {"label": "T3 col4 Study: Studies",                 "printed": 38,     "digits": 0, "kind": "count"},
-
-  {"label": "T3 col5 MAIVE: Publication bias coef",   "printed": 3.056,  "digits": 3, "kind": "deterministic"},
-  {"label": "T3 col5 MAIVE: Publication bias SE",     "printed": 1.500,  "digits": 3, "kind": "deterministic"},
-  {"label": "T3 col5 MAIVE: Effect-beyond-bias coef", "printed": 0.350,  "digits": 3, "kind": "deterministic"},
-  {"label": "T3 col5 MAIVE: Effect-beyond-bias SE",   "printed": 0.0463, "digits": 4, "kind": "deterministic"},
-  {"label": "T3 col5 MAIVE: First-stage F",           "printed": 31.2,   "digits": 1, "kind": "deterministic"},
-  {"label": "T3 col5 MAIVE: Observations",            "printed": 603,    "digits": 0, "kind": "count"},
-  {"label": "T3 col5 MAIVE: Studies",                 "printed": 23,     "digits": 0, "kind": "count"}
+ {
+  "label": "T3 col1 OLS: Publication bias coef",
+  "printed": 1.689,
+  "digits": 3,
+  "kind": "deterministic"
+ },
+ {
+  "label": "T3 col1 OLS: Publication bias SE",
+  "printed": 0.264,
+  "digits": 3,
+  "kind": "deterministic"
+ },
+ {
+  "label": "T3 col1 OLS: Effect-beyond-bias coef",
+  "printed": 0.288,
+  "digits": 3,
+  "kind": "deterministic"
+ },
+ {
+  "label": "T3 col1 OLS: Effect-beyond-bias SE",
+  "printed": 0.0442,
+  "digits": 4,
+  "kind": "deterministic"
+ },
+ {
+  "label": "T3 col1 OLS: Observations",
+  "printed": 762,
+  "digits": 0,
+  "kind": "count"
+ },
+ {
+  "label": "T3 col1 OLS: Studies",
+  "printed": 38,
+  "digits": 0,
+  "kind": "count"
+ },
+ {
+  "label": "T3 col2 FE: Publication bias coef",
+  "printed": 0.887,
+  "digits": 3,
+  "kind": "deterministic"
+ },
+ {
+  "label": "T3 col2 FE: Publication bias SE",
+  "printed": 0.271,
+  "digits": 3,
+  "kind": "deterministic"
+ },
+ {
+  "label": "T3 col2 FE: Effect-beyond-bias coef",
+  "printed": 0.356,
+  "digits": 3,
+  "kind": "deterministic"
+ },
+ {
+  "label": "T3 col2 FE: Effect-beyond-bias SE",
+  "printed": 0.0252,
+  "digits": 4,
+  "kind": "deterministic"
+ },
+ {
+  "label": "T3 col2 FE: Observations",
+  "printed": 762,
+  "digits": 0,
+  "kind": "count"
+ },
+ {
+  "label": "T3 col2 FE: Studies",
+  "printed": 38,
+  "digits": 0,
+  "kind": "count"
+ },
+ {
+  "label": "T3 col3 Precision: Publication bias coef",
+  "printed": 2.592,
+  "digits": 3,
+  "kind": "deterministic"
+ },
+ {
+  "label": "T3 col3 Precision: Publication bias SE",
+  "printed": 0.53,
+  "digits": 3,
+  "kind": "deterministic"
+ },
+ {
+  "label": "T3 col3 Precision: Effect-beyond-bias coef",
+  "printed": 0.211,
+  "digits": 3,
+  "kind": "deterministic"
+ },
+ {
+  "label": "T3 col3 Precision: Effect-beyond-bias SE",
+  "printed": 0.0441,
+  "digits": 4,
+  "kind": "deterministic"
+ },
+ {
+  "label": "T3 col3 Precision: Observations",
+  "printed": 762,
+  "digits": 0,
+  "kind": "count"
+ },
+ {
+  "label": "T3 col3 Precision: Studies",
+  "printed": 38,
+  "digits": 0,
+  "kind": "count"
+ },
+ {
+  "label": "T3 col4 Study: Publication bias coef",
+  "printed": 2.173,
+  "digits": 3,
+  "kind": "deterministic"
+ },
+ {
+  "label": "T3 col4 Study: Publication bias SE",
+  "printed": 0.227,
+  "digits": 3,
+  "kind": "deterministic"
+ },
+ {
+  "label": "T3 col4 Study: Effect-beyond-bias coef",
+  "printed": 0.243,
+  "digits": 3,
+  "kind": "deterministic"
+ },
+ {
+  "label": "T3 col4 Study: Effect-beyond-bias SE",
+  "printed": 0.047,
+  "digits": 4,
+  "kind": "deterministic"
+ },
+ {
+  "label": "T3 col4 Study: Observations",
+  "printed": 762,
+  "digits": 0,
+  "kind": "count"
+ },
+ {
+  "label": "T3 col4 Study: Studies",
+  "printed": 38,
+  "digits": 0,
+  "kind": "count"
+ },
+ {
+  "label": "T3 col5 MAIVE: Publication bias coef",
+  "printed": 3.056,
+  "digits": 3,
+  "kind": "deterministic"
+ },
+ {
+  "label": "T3 col5 MAIVE: Publication bias SE",
+  "printed": 1.5,
+  "digits": 3,
+  "kind": "deterministic"
+ },
+ {
+  "label": "T3 col5 MAIVE: Effect-beyond-bias coef",
+  "printed": 0.35,
+  "digits": 3,
+  "kind": "deterministic"
+ },
+ {
+  "label": "T3 col5 MAIVE: Effect-beyond-bias SE",
+  "printed": 0.0463,
+  "digits": 4,
+  "kind": "deterministic"
+ },
+ {
+  "label": "T3 col5 MAIVE: First-stage F",
+  "printed": 31.2,
+  "digits": 1,
+  "kind": "discrepancy",
+  "note": "The MAIVE column's coefficients, standard errors and 603 observations all reproduce. Two cells do not. Running the authors' own line in Stata 15.1 on their own saved data gives a cluster-robust first-stage F of 37.02 (Kleibergen-Paap rk Wald F 37.015, Cragg-Donald 46.53) against a printed 31.2, and the regression has 33 clusters, which is the number ivreg2 reports, against a printed 23. Neither figure follows from the estimation as the do-file specifies it. The printed values are left exactly as published."
+ },
+ {
+  "label": "T3 col5 MAIVE: Observations",
+  "printed": 603,
+  "digits": 0,
+  "kind": "count"
+ },
+ {
+  "label": "T3 col5 MAIVE: Studies",
+  "printed": 23,
+  "digits": 0,
+  "kind": "discrepancy",
+  "note": "The MAIVE column's coefficients, standard errors and 603 observations all reproduce. Two cells do not. Running the authors' own line in Stata 15.1 on their own saved data gives a cluster-robust first-stage F of 37.02 (Kleibergen-Paap rk Wald F 37.015, Cragg-Donald 46.53) against a printed 31.2, and the regression has 33 clusters, which is the number ivreg2 reports, against a printed 23. Neither figure follows from the estimation as the do-file specifies it. The printed values are left exactly as published."
+ }
 ]

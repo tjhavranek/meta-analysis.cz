@@ -231,7 +231,8 @@
   "label": "TEXT share of 0.9->0.3 reduction due to publication bias alone (paper: 'at least half', i.e. >= 0.5)",
   "printed": 0.5,
   "digits": 1,
-  "kind": "headline_bound_ge"
+  "kind": "headline_bound_ge",
+  "note": "The abstract says publication bias is responsible for \"at least half\" of the reduction in the mean elasticity from 0.9 to 0.3. That is a lower bound: the computed share of 0.68 satisfies it. Checked as at-or-above one half."
  },
  {
   "label": "TEXT 'best practice' implied elasticity -- OUR st_regress proxy (paper's Table 9 value: 0.30, 95% CI -0.01 to 0.60; NOT independently reproduced -- see comment above)",
