@@ -1,0 +1,45 @@
+[
+  {"label": "T2 Studies (all)",                      "printed": 67,   "digits": 0, "kind": "count"},
+
+  {"label": "T2 All Nobs",                            "printed": 1973, "digits": 0, "kind": "count"},
+  {"label": "T2 All Mean",                            "printed": 1.49, "digits": 2, "kind": "deterministic"},
+  {"label": "T2 All SD",                              "printed": 3.04, "digits": 2, "kind": "deterministic"},
+  {"label": "T2 All WMean",                           "printed": 1.83, "digits": 2, "kind": "deterministic"},
+  {"label": "T2 All WSD",                             "printed": 3.42, "digits": 2, "kind": "deterministic"},
+
+  {"label": "T2 Hedge_funds Nobs",                    "printed": 467,  "digits": 0, "kind": "count"},
+  {"label": "T2 Hedge_funds Mean",                    "printed": 2.42, "digits": 2, "kind": "deterministic"},
+  {"label": "T2 Hedge_funds SD",                      "printed": 3.72, "digits": 2, "kind": "deterministic"},
+  {"label": "T2 Hedge_funds WMean",                   "printed": 3.10, "digits": 2, "kind": "deterministic"},
+  {"label": "T2 Hedge_funds WSD",                     "printed": 3.51, "digits": 2, "kind": "deterministic"},
+
+  {"label": "T2 Lo_antidirector_rights Nobs",         "printed": 499,  "digits": 0, "kind": "count"},
+  {"label": "T2 Lo_antidirector_rights Mean",         "printed": 1.54, "digits": 2, "kind": "deterministic"},
+  {"label": "T2 Lo_antidirector_rights SD",           "printed": 3.04, "digits": 2, "kind": "deterministic"},
+  {"label": "T2 Lo_antidirector_rights WMean",        "printed": 2.42, "digits": 2, "kind": "deterministic"},
+  {"label": "T2 Lo_antidirector_rights WSD",          "printed": 3.49, "digits": 2, "kind": "deterministic"},
+
+  {"label": "T2 Hi_antidirector_rights Nobs",         "printed": 1474, "digits": 0, "kind": "count"},
+  {"label": "T2 Hi_antidirector_rights Mean",         "printed": 1.47, "digits": 2, "kind": "deterministic"},
+  {"label": "T2 Hi_antidirector_rights SD",           "printed": 3.04, "digits": 2, "kind": "deterministic"},
+  {"label": "T2 Hi_antidirector_rights WMean",        "printed": 1.70, "digits": 2, "kind": "deterministic"},
+  {"label": "T2 Hi_antidirector_rights WSD",          "printed": 3.39, "digits": 2, "kind": "deterministic"},
+
+  {"label": "T2 Europe Nobs",                         "printed": 457,  "digits": 0, "kind": "count"},
+  {"label": "T2 Europe Mean",                         "printed": 1.80, "digits": 2, "kind": "deterministic"},
+  {"label": "T2 Europe SD",                           "printed": 3.16, "digits": 2, "kind": "deterministic"},
+  {"label": "T2 Europe WMean",                        "printed": 2.78, "digits": 2, "kind": "deterministic"},
+  {"label": "T2 Europe WSD",                          "printed": 3.73, "digits": 2, "kind": "deterministic"},
+
+  {"label": "T2 Asia Nobs",                           "printed": 139,  "digits": 0, "kind": "count"},
+  {"label": "T2 Asia Mean",                           "printed": 1.23, "digits": 2, "kind": "deterministic"},
+  {"label": "T2 Asia SD",                             "printed": 2.22, "digits": 2, "kind": "deterministic"},
+  {"label": "T2 Asia WMean",                          "printed": 1.21, "digits": 2, "kind": "deterministic"},
+  {"label": "T2 Asia WSD",                            "printed": 1.93, "digits": 2, "kind": "deterministic"},
+
+  {"label": "T2 North_America Nobs",                  "printed": 1377, "digits": 0, "kind": "count"},
+  {"label": "T2 North_America Mean",                  "printed": 1.41, "digits": 2, "kind": "deterministic"},
+  {"label": "T2 North_America SD",                    "printed": 3.07, "digits": 2, "kind": "deterministic"},
+  {"label": "T2 North_America WMean",                 "printed": 1.70, "digits": 2, "kind": "deterministic"},
+  {"label": "T2 North_America WSD",                   "printed": 3.42, "digits": 2, "kind": "deterministic"}
+]

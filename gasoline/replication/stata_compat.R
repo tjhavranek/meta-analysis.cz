@@ -78,6 +78,21 @@ st_winsor <- function(x, p = 0.01) {
   ifelse(is.na(x), x, pmin(pmax(x, lo), hi))
 }
 
+#' R's `DescTools::Winsorize(x, probs = c(p, 1-p))`, for papers whose AUTHORS WROTE R.
+#'
+#' Not every paper in this collection is Stata. activism's own script calls Winsorize, which
+#' interpolates with R's default type-7 quantile, and using the Stata order-statistic rule on it
+#' gives a standard deviation of 3.05 where the paper prints 3.04. The two rules are both
+#' correct; they belong to different tools, and the one to apply is whichever the author used.
+#' Verified on activism Table 2: type 7 reproduces the printed 3.04, type 1 does not.
+st_winsor_r <- function(x, p = 0.01) {
+  x <- as.numeric(x)
+  q <- stats::quantile(x, c(p, 1 - p), na.rm = TRUE, type = 7)
+  .note(sprintf("Winsorize(x, probs = c(%g, %g))  [R author]", p, 1 - p),
+        "quantile type 7, R's default -- NOT the Stata order-statistic rule")
+  ifelse(is.na(x), x, pmin(pmax(x, q[1]), q[2]))
+}
+
 #' `winsor2 x, cuts(lo hi)`, cuts given in percent.
 st_winsor2 <- function(x, cuts = c(1, 99)) {
   x <- as.numeric(x)
