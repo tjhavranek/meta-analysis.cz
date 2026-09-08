@@ -223,7 +223,7 @@ bp$table6_printed <- table6_printed[bp$COUNTRY]
 validation_weighted_avg_of_printed <- sum(bp$table6_printed * bp$WEIGHT) / sum(bp$WEIGHT)
 
 ## ---- Table 2, "All observations": both means, with confidence intervals ---------------------
-## Stata's own conventions, confirmed by running it on this data set (stata_work_dst/):
+## Stata's own conventions, confirmed by running it on this data set:
 ##     mean ESTIMATE             -> -.3344542  se .0429748  CI (-.4193212, -.2495872)
 ##     mean ESTIMATE [aw=WEIGHT] -> -.3427427  se .0436487  CI (-.4289406, -.2565448)
 ## A constant-only regress reproduces both exactly, so the shared st_regress wrapper is used

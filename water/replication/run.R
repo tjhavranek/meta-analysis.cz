@@ -117,8 +117,8 @@ run_panel <- function(dd, prefix, weighted_fe = TRUE, ols_fn = st_ivreg2) {
 #
 # Panel A's three OLS columns use st_regress, not st_ivreg2, even though the deposited
 # do-file writes `ivreg2` on all three panels. This is not an inference from the R side --
-# both commands were run in Stata 15.1 on the site's own water.csv
-# (stata_work_water/probe1.do, probe2.do), and the printed table picks a side in every
+# both commands were run in Stata 15.1 on the site's own water.csv,
+# and the printed table picks a side in every
 # discriminating cell:
 #
 #                              Stata ivreg2    Stata regress    paper prints

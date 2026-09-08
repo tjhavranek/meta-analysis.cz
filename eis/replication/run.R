@@ -174,8 +174,8 @@ out[["95% CI upper, micro asset holders (col1)"]] <- unname(ci_hi)
 # abstract's "0.3-0.4": the point estimate (0.36) and both ends of its 95% CI
 # sit inside that stated range.
 #
-# I did NOT attempt to reproduce the "does not change much ... conditional
-# on many method choices" remark as a wider min/max across all seven Table 2
+# The "does not change much ... conditional on many method choices" remark is
+# not reproduced here as a wider min/max across all seven Table 2
 # columns: doing so (col1's own EIS0/"prec" coefficient plus each later
 # column's micro_se/stockhold_se rows) is numerically unstable in columns
 # (3)-(7) once lncsunits_se/lnyears_se/lnavyear_se/etc. enter -- some

@@ -23,7 +23,7 @@
 #    where fixest with adj = FALSE is already ivreg2's HC0"). So the model is fitted with the
 #    wrapper and only its vcov is switched to "hetero"; the ssc, the weights and the point
 #    estimates all stay the wrapper's. Verified against Stata 15.1 on the site's own published
-#    CSV (stata_work_armington/probe1.do):
+#    CSV:
 #        ivreg2 armel_w se_w if srun==1, robust
 #            Stata  se_w .082595774015   _cons .024903172290
 #            here   se_w .082595774015   _cons .024903172290
@@ -43,7 +43,7 @@
 #
 # ONE TARGET IS NOT REACHED, and it is not an estimation problem: T2_wols_invnobs_long_const_coef.
 # The paper prints 1.134. Running the author's own line in Stata 15.1 on this same data gives
-# _cons = 1.134784556951 (stata_work_armington/probe2.do), which rounds to 1.135; this code gives
+# _cons = 1.134784556951, which rounds to 1.135; this code gives
 # 1.134784562, the same number. Its standard error (0.168) and both other cells of that row match
 # the paper exactly, as do the other 35 printed values. The paper's cell is one unit off in the
 # third decimal of its own estimate. Nothing here is adjusted to hit it.

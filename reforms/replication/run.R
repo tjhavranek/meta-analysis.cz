@@ -56,7 +56,7 @@
 #      unchanged; the construction only sets the variance.)
 #
 # EVIDENCE that this port is right rather than merely close. Stata 15.1 was run on the SAME
-# published CSV this script reads (probe log: repl/stata_work_reforms/probe1.log). Stata prints the
+# published CSV this script reads. Stata prints the
 # maximum weight change at every iteration; the port reproduces each of them, and the coefficients
 # and standard errors, to eight significant digits:
 #

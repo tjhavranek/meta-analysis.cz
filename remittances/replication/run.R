@@ -85,7 +85,7 @@ report_fe(m_B1_s1, "B1_s1")
 ## then Tukey-biweight iterations, and then reports an OLS fit on PSEUDO-VALUES. st_rreg ports
 ## rreg.ado 3.4.1; against Stata 15.1 on this very sample it returns 0.72085001 (0.24655609)
 ## and 0.00263715 (0.01364496) where Stata returns 0.72085003 (0.24655608) and 0.00263715
-## (0.01364496) -- see repl/stata_work_remittances/probe1.do.
+## (0.01364496).
 m_B1_s2 <- st_rreg(TSTAT_L ~ SE1_PCC_L, data = dB1)
 report_fe(m_B1_s2, "B1_s2")
 
@@ -102,7 +102,7 @@ put("B1_s3_trueeffect_se", co3$std.error[co3$term == "xa"])
 ## (4) ME (mixed effects, study random intercept).
 ## remittances.do writes `xtmixed ... || IDStudy:`. stata_compat.R keeps st_xtmixed (REML)
 ## apart from st_mixed (ML) because Stata 11's xtmixed defaulted to REML. In Stata 15.1 --
-## re-run here, probe2.do -- `xtmixed` and `mixed` print the identical "Mixed-effects ML
+## re-run here -- `xtmixed` and `mixed` print the identical "Mixed-effects ML
 ## regression" header and identical coefficients, so ML is the right reading for a 2020 paper
 ## and st_mixed is the correct wrapper: Stata returns 1.102123 (0.3662944) and 0.0268343
 ## (0.0156751), reproduced below.

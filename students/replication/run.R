@@ -3,7 +3,7 @@
 # publication bias overall"), Panels A, B (FE only) and the WAAP row of Panel C.
 #
 # Provenance: author's own students.do (published at
-# web_meta/site/students/students.do), section "PUBLICATION BIAS - testing larger sample"
+# site/students/students.do), section "PUBLICATION BIAS - testing larger sample"
 # (first pass, "FULL SAMPLE on 876 obs" comment -- the comment is stale, the actual N is 861
 # once the idstudy>69 / missing(pcc) / missing(se_pcc) filters are applied to the published
 # data, which matches every N cell printed in Table 2).

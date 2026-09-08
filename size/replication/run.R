@@ -85,8 +85,8 @@ d3 <- d[stats::complete.cases(d$size, d$se, d$se_impact, d$se_pubyear), , drop =
 # and ivreg2 reports exactly that sum, unadjusted, even when the result is not
 # positive semi-definite -- in which case it prints the warning "estimated
 # covariance matrix of moment conditions not of full rank" and carries on.
-# Column (3) is the one regression here that trips that warning (Stata 15.1,
-# stata_work_size/probe2.do): the meat matrix has one negative eigenvalue
+# Column (3) is the one regression here that trips that warning (Stata 15.1):
+# the meat matrix has one negative eigenvalue
 # (-0.203 against a leading eigenvalue of 1.1e9).
 #
 # Handing `cluster = ~idstudy + geo` straight to st_ivreg2() does NOT reproduce

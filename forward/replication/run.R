@@ -12,8 +12,8 @@
 # but NOT the developed-country version (Table A3, N = 2582): no line in the do-file carries a
 # country-scope restriction. The do-file also stops short of the FE column of Panel B, which the
 # paper prints for Tables 2, A1 and A3 alike. Both gaps were closed by running Stata 15.1 on the
-# published forward.dta and matching the do-file's own commands against the printed tables (probe
-# files under repl/stata_work_forward/). What the do-file does give, for the full sample:
+# published forward.dta and matching the do-file's own commands against the printed tables.
+# What the do-file does give, for the full sample:
 #
 #   9   use "forward.dta", clear
 #   10  xtset studyid

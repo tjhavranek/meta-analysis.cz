@@ -41,8 +41,8 @@
 #
 # ---------------------------------------------------------------------------------------------
 # VERIFIED AGAINST STATA 15.1 (2026-09-08). Every line of code.txt was re-run in Stata 15.1 on
-# the site's own published CSV (site/data/v1/cbequity/cbequity.csv); the probe do-files and logs
-# are. The figures Stata produced are quoted below
+# the site's own published CSV (site/data/v1/cbequity/cbequity.csv). The figures Stata produced
+# are quoted below
 # so a reader can see which conventions are being emulated, and which single cell of the paper
 # cannot be reached by any of them.
 #

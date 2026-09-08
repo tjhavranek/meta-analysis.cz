@@ -66,7 +66,7 @@
 # summary()$coeftable applies fixest's default small-sample rule (t.df = "min", i.e. G - 1),
 # which is Stata's. Reading them instead off st_coefs(), whose default is z, understates them:
 # 0.072 against the printed 0.080, and 0.069 against 0.077 -- close enough to be mistaken for
-# rounding, and wrong. That was the defect in the previous version of this file.
+# rounding, and wrong.
 
 if (file.exists("stata_compat.R")) source("stata_compat.R") else
   source("https://meta-analysis.cz/bma/replication/stata_compat.R")

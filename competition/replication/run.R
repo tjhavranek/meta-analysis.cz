@@ -179,7 +179,7 @@ cat(
 # citations, firstpub, IFrecursive, reviewed_journal.
 #
 # The wrapper choice here is the whole ballgame and was settled against Stata
-# 15.1 rather than argued (stata_work_competition/probe3.do, probeA.R):
+# 15.1 rather than argued:
 #
 #   Stata   xtreg PCC <35 vars> [pweight=investperst], fe vce(cluster IDStudy)
 #             _cons = -0.1783159629   se = 0.1655517838
@@ -280,8 +280,7 @@ mean_published <- mean(d$PCC[d$reviewed_journal == 1])
 # d$IDStudy, median)) across the 31 studies, which is -0.0042 -- and reported
 # the figure as not reproduced. The do-file settles which was meant.
 #
-# Stata on the published CSV agrees to every digit
-# (stata_work_competition/probe1.do):
+# Stata on the published CSV agrees to every digit:
 #     egen med = median(PCC), by(IDStudy)  /  summarize med   ->  mean .0099988
 # and this script gets 0.00999882.
 #
@@ -322,7 +321,7 @@ mean_study_medians <- mean(as.numeric(
 #      arithmetic: tapply()/sum(), no estimator);
 #   2. st_regress() on the transformed variables, weighted and clustered -- the
 #      wrapper carrying the small-sample convention xtreg applies.
-# CHECKED AGAINST STATA 15.1 (stata_work_competition/probe5.do and probeB.R),
+# CHECKED AGAINST STATA 15.1,
 # not only against the paper's three printed digits:
 #      xtreg PCC SEPCC [pweight=investperst], fe vce(cluster IDStudy)
 #        Stata  _cons 0.0342221630 (0.0068533321)

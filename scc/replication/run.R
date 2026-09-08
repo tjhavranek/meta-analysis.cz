@@ -113,8 +113,8 @@ put("T3B_FE_N",         nobs(m_fe_b))
 ## exactly what st_regress() does, so no new estimator or convention is
 ## introduced -- only the arity changes.
 ##
-## Confirmed against Stata 15.1 on this same published CSV
-## (stata_work_scc/feb.do): `xtreg scc stdlow stdup, fe cluster(idstudy)` prints
+## Confirmed against Stata 15.1 on this same published CSV:
+## `xtreg scc stdlow stdup, fe cluster(idstudy)` prints
 ## _cons = 114.132402651147 (s.e. 118.550006349356), and the augmented
 ## regression `reg a_scc a_stdlow a_stdup, cluster(idstudy)` prints the same
 ## _cons and the same s.e. to all twelve reported decimals. Paper: 114.1 (118.6).
