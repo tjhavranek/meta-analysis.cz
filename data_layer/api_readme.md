@@ -47,12 +47,12 @@ moves 16,794 of the 52,800 `se` values, 9,008 `effect` values and 9,960 `t_stat`
 each by up to about 2.9e-11. So this applies to any column you read, not only the derived
 ones, and recomputing `effect / se` yourself does not avoid it.
 
-That is invisible almost everywhere and decisive at a threshold. 96 estimates sit within
-1e-9 of |t| = 1.96 and 26 sit exactly on it, so any count either side of that line has to
+That is invisible almost everywhere and decisive at a threshold. 100 estimates sit within
+1e-9 of |t| = 1.96 and 33 sit exactly on it, so any count either side of that line has to
 state its convention: bins here are closed on the left, and an estimate reported as
-exactly 1.96 is counted above. On that convention the caliper comes out as 508 below and
-633 above
-from the Parquet, 503 and 639 from the same CSV at pandas' defaults, and 506 and 634 if
+exactly 1.96 is counted above. On that convention the caliper comes out as 550 below and
+683 above
+from the Parquet, 544 and 690 from the same CSV at pandas' defaults, and 549 and 684 if
 you recompute the ratio from a default-parsed CSV. The figures published on this site
 quote the Parquet. Writing the CSV with more digits does not help; it makes the default
 parse worse. The Parquet is canonical. Read the CSV as:
@@ -72,7 +72,7 @@ One row per harmonised **observation**, pooled across literatures. The primary
 analysis set is **49,664 estimates satisfying the source papers' own sample
 definitions**; a further 3,136 estimates those papers excluded are carried
 alongside for robustness work, giving **52,800 rows from 42 literatures** in all.
-Cite the paper-sample figure. The change from 1.3.0's 52,800 rows is not growth in
+Cite the paper-sample figure. The change to 52,800 from 1.3.0's 50,441 rows is not growth in
 the evidence base, and 52,800 is not "all estimates": it is a selection from the
 67,606 source rows. Filter `in_paper_sample` to true to reproduce a paper's
 own sample, and read `paper_sample_exclusion` to see which clause removed a row.
@@ -116,8 +116,9 @@ apart by `source_file`, which names the member each row came from, because `marg
 lives in the per-dataset file and does not survive harmonisation. The table goes to 50,441
 rows.
 
-Core columns are present for every row: `dataset`, `study_id`, `estimate_id`,
-`effect`, `se`, `t_stat`, `precision`. The rest are harmonised moderators, and
+`dataset`, `study_id` and `estimate_id` identify every row. Most rows carry the
+headline `effect`, `se`, `t_stat` and `precision`; rows admitted only on a documented
+alternative scale carry `effect_alt` and `se_alt` instead. The rest are harmonised moderators, and
 they are populated only where the source dataset recorded them — coverage per
 column runs from about 90% (`n_obs`) down to under 20% for the more specialised
 ones. Check for nulls rather than assuming.

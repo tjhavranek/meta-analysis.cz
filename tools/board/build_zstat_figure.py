@@ -1,4 +1,4 @@
-"""Draw the |t| distribution of all 48,355 pooled estimates, with the 1.96 caliper.
+"""Draw the |t| distribution of the pooled estimates, with the 1.96 caliper.
 
 Static inline SVG generated at build time from the published CSV: no JavaScript, no
 charting library, no external request, real text in the DOM for every number that
@@ -218,8 +218,8 @@ def build(check=False):
     b, a = calipers[1][2], calipers[1][3]
     lo_r, hi_r = calipers[0][4], calipers[2][4]
     caption = (
-        '<p class="table-note"><b>Where the estimates fall.</b> Absolute t-statistics for all '
-        f'{total:,} pooled estimates; the first panel shows the {100*shown/total:.0f}% below 6, '
+        '<p class="table-note"><b>Where the estimates fall.</b> Absolute t-statistics for the '
+        f'{total:,} pooled rows with a headline-scale t-statistic; the first panel shows the {100*shown/total:.0f}% below 6, '
         'and the second panel magnifies half a unit around 1.96 on its own vertical scale. '
         'In equal 0.05-wide bins ([1.91, 1.96) against [1.96, 2.01), so an estimate '
         'reported as exactly 1.96 counts as above) '

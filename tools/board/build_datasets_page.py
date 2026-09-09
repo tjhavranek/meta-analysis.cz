@@ -306,7 +306,7 @@ table; for the datasets that are not pooled, it counts the rows in the published
 the paper's own analysis filters. Neither is always the number in the paper's abstract: a
 published file is usually the analysis subset rather than the full collection, a pooled
 contribution can be smaller still where estimates overlap another literature (<code>trust</code>
-contributes the 284 rows <code>size</code> does not already carry, out of 1,613 in its file),
+contributes the 212 rows <code>size</code> does not already carry, out of 1,613 in its file),
 and two literatures contribute a row per impulse-response horizon.
 <a href="/api/v1/datasets.json">datasets.json</a> carries both counts and a reconciliation for
 every dataset where they differ.</p>

@@ -9,6 +9,11 @@ VERSION="1.0.0"; DATA_V="v1"
 # The DATA artefact's version, in ONE place. It was hardcoded in four, which is how a
 # consumer once saw the Croissant record say 1.0.0 while the table said 0.9.0-beta.
 DATA_VERSION="2.0.0"; DATA_STATUS="stable"
+# The release date of THIS version, in one place beside it. It was a literal in the
+# croissant record and went four releases stale there: the record said 2.0.0 while
+# dateModified still carried 1.1.1's 2026-08-21, which is what a dataset crawler reads
+# to decide whether anything has changed.
+DATA_RELEASED="2026-09-07"
 # The VERSION DOI, set once Zenodo minted it. None until deposited -- publishing the
 # previous version's DOI beside a new version tells a citing reader the wrong thing.
 # Reserved on the 1.3.0 draft before the bundle was built, so the archived CITATION.cff
@@ -857,7 +862,7 @@ cr={"@context":CROISSANT_CONTEXT,
     "citeAs":index["cite_as"],
     # Issued date of the Zenodo deposit (DataCite dateType "Issued" on the concept DOI).
     "datePublished":"2026-08-04",   # concept deposit
-    "dateModified":"2026-08-21",    # this version
+    "dateModified":DATA_RELEASED,   # this version
 
     "keywords":["meta-analysis","publication bias","economics","effect size","research synthesis"],
     "creator":[{"@type":"Person","name":"Tomas Havranek"},{"@type":"Person","name":"Zuzana Irsova"}],

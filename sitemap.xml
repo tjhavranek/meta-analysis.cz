@@ -8,7 +8,7 @@
   <url><loc>https://meta-analysis.cz/bma/</loc><lastmod>2026-09-08</lastmod></url>
   <url><loc>https://meta-analysis.cz/border/</loc><lastmod>2026-09-08</lastmod></url>
   <url><loc>https://meta-analysis.cz/cbequity/</loc><lastmod>2026-09-08</lastmod></url>
-  <url><loc>https://meta-analysis.cz/class/</loc><lastmod>2026-09-08</lastmod></url>
+  <url><loc>https://meta-analysis.cz/class/</loc><lastmod>2026-09-09</lastmod></url>
   <url><loc>https://meta-analysis.cz/climate/</loc><lastmod>2026-09-08</lastmod></url>
   <url><loc>https://meta-analysis.cz/competition/</loc><lastmod>2026-09-08</lastmod></url>
   <url><loc>https://meta-analysis.cz/contagion/</loc><lastmod>2026-09-04</lastmod></url>
@@ -296,7 +296,7 @@
   <url><loc>https://meta-analysis.cz/water/appendix.pdf</loc><lastmod>2026-06-25</lastmod></url>
   <url><loc>https://meta-analysis.cz/water/water2.pdf</loc><lastmod>2026-06-25</lastmod></url>
   <url><loc>https://meta-analysis.cz/about/</loc><lastmod>2026-09-03</lastmod></url>
-  <url><loc>https://meta-analysis.cz/datasets/</loc><lastmod>2026-09-07</lastmod></url>
+  <url><loc>https://meta-analysis.cz/datasets/</loc><lastmod>2026-09-09</lastmod></url>
   <url><loc>https://meta-analysis.cz/impact/</loc><lastmod>2026-09-06</lastmod></url>
   <url><loc>https://meta-analysis.cz/komentare/</loc><lastmod>2026-09-04</lastmod></url>
   <url><loc>https://meta-analysis.cz/komentare/babis-stamiliardy-cnb-nezavislost/</loc><lastmod>2026-09-04</lastmod></url>
@@ -555,9 +555,9 @@
   <url><loc>https://meta-analysis.cz/search/</loc><lastmod>2026-08-30</lastmod></url>
   <url><loc>https://meta-analysis.cz/api/v1/datasets.json</loc><lastmod>2026-09-07</lastmod></url>
   <url><loc>https://meta-analysis.cz/api/v1/papers.json</loc><lastmod>2026-09-04</lastmod></url>
-  <url><loc>https://meta-analysis.cz/api/v1/search-index.json</loc><lastmod>2026-09-08</lastmod></url>
+  <url><loc>https://meta-analysis.cz/api/v1/search-index.json</loc><lastmod>2026-09-09</lastmod></url>
   <url><loc>https://meta-analysis.cz/api/v1/datapackage.json</loc><lastmod>2026-09-07</lastmod></url>
-  <url><loc>https://meta-analysis.cz/api/v1/croissant.json</loc><lastmod>2026-09-07</lastmod></url>
+  <url><loc>https://meta-analysis.cz/api/v1/croissant.json</loc><lastmod>2026-09-09</lastmod></url>
   <url><loc>https://meta-analysis.cz/data/v1/estimates_harmonised.csv</loc><lastmod>2026-09-07</lastmod></url>
   <url><loc>https://meta-analysis.cz/data/v1/estimates_harmonised.parquet</loc><lastmod>2026-09-07</lastmod></url>
   <url><loc>https://meta-analysis.cz/estimates.csv</loc><lastmod>2026-09-04</lastmod></url>
