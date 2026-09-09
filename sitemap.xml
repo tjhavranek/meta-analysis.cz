@@ -556,7 +556,7 @@
   <url><loc>https://meta-analysis.cz/api/v1/datasets.json</loc><lastmod>2026-09-07</lastmod></url>
   <url><loc>https://meta-analysis.cz/api/v1/papers.json</loc><lastmod>2026-09-04</lastmod></url>
   <url><loc>https://meta-analysis.cz/api/v1/search-index.json</loc><lastmod>2026-09-09</lastmod></url>
-  <url><loc>https://meta-analysis.cz/api/v1/datapackage.json</loc><lastmod>2026-09-07</lastmod></url>
+  <url><loc>https://meta-analysis.cz/api/v1/datapackage.json</loc><lastmod>2026-09-09</lastmod></url>
   <url><loc>https://meta-analysis.cz/api/v1/croissant.json</loc><lastmod>2026-09-09</lastmod></url>
   <url><loc>https://meta-analysis.cz/data/v1/estimates_harmonised.csv</loc><lastmod>2026-09-07</lastmod></url>
   <url><loc>https://meta-analysis.cz/data/v1/estimates_harmonised.parquet</loc><lastmod>2026-09-07</lastmod></url>

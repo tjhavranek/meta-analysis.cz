@@ -44,14 +44,14 @@ COMPARE = [("api/v1", "api/v1", None),
            ("LICENSE", "LICENSE", None)]
 
 
-def run(script, what):
+def run(script, what, args=()):
     print(f"  -> {script}  ({what})", flush=True)
     # Ask the child for UTF-8 and decode it as UTF-8. Without both halves a step that
     # prints an em dash brings down the reader thread on Windows: the child writes it in
     # the console codepage and the parent reads it as UTF-8. That failure is silent about
     # which step produced it, and it loses the output that would have said so.
     env = dict(os.environ, PYTHONIOENCODING="utf-8", PYTHONUTF8="1")
-    r = subprocess.run([sys.executable, os.path.join(SITE, script)],
+    r = subprocess.run([sys.executable, os.path.join(SITE, script), *args],
                        cwd=SITE, capture_output=True, env=env,
                        encoding="utf-8", errors="replace")
     if r.returncode:
@@ -120,6 +120,14 @@ else:
     moved = publish()
     print(f"published {moved} changed file(s)")
     shutil.rmtree(OUT, ignore_errors=True)
+
+# The field dictionary is hand-written prose with measured numbers inside it, and it feeds
+# api/v1/datapackage.json. Nothing else in this build notices when the table moves underneath
+# it: every coverage line in it was measured against the 49,669-row table of 1.1.1 and survived
+# four releases untouched, two of them into outright falsehood. It is asserted here, always,
+# and a disagreement stops the build rather than shipping a wrong number to a machine reader.
+run(os.path.join("data_layer", "99_fielddict.py"),
+    "assert the field dictionary against the built table", ["--check"])
 
 if not data_only:
     print("site:")
