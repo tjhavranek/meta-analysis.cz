@@ -1568,7 +1568,7 @@
     "evidence": "paper's replication code",
     "sample_size": "observations"
    },
-   "effect_units": "habit persistence parameter",
+   "effect_units": "regression coefficient",
    "direction_note": "Unitless, normally bounded by 0 (no habit) and 1 (full persistence).",
    "column_mapping_verified_by": "habit.do applies 'drop if missing(se)' and winsorises the standard error only, with no trimming of habit itself: 606 rows less 9 missing se = 597, matching the abstract's '597 estimates from 81 published studies'. 125 of 597 fall outside the theoretical [0,1] range; the paper neither trims nor remarks on it, and this is known behaviour for GMM/DSGE habit estimates.",
    "in_harmonised_table": true,

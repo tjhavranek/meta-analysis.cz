@@ -362,7 +362,7 @@
    "se_is_derived": false,
    "n_obs_col": null,
    "n_obs_from_log": false,
-   "units": "habit persistence parameter",
+   "units": "regression coefficient",
    "direction_note": "Unitless, normally bounded by 0 (no habit) and 1 (full persistence).",
    "n_studies": 81,
    "moderators": 17

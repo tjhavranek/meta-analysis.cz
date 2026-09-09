@@ -84,7 +84,7 @@
   "direction_note": "Negative by convention: demand falls as price rises."
  },
  "habits": {
-  "units": "habit persistence parameter",
+  "units": "regression coefficient",
   "direction_note": "Unitless, normally bounded by 0 (no habit) and 1 (full persistence)."
  },
  "hedge": {
