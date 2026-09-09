@@ -468,7 +468,7 @@
  },
  "migrant": {
   "verified_by": "The paper's replication is in R, not Stata: run_replication_package.R:1002 runs stats::lm(elasticity ~ se, data = master, weights = se_weight) and clusters on idstudy -- the FAT-PET on exactly this pair. Found by 93_codegrep.py once R patterns were added; a Stata-only scan had reported this literature as having no regression at all.",
-  "units": "negative inverse elasticity",
+  "units": "elasticity",
   "note": "n_obs is NULL for this literature, and deliberately so. The only column matching the sample-size pattern is `n`, which is constant within a study and equals that study's row count on every one of the 41 studies (idstudy runs 1-42 with 7 unused): it is the number of estimates collected from the study, not the number of observations behind any of them. Feeding it to MAIVE would instrument precision with how many results a paper happened to report. The file's other count, `cells`, is not a substitute: the paper's own variable table defines it as `the logarithm of the total number of the multidimensional partitions of the labor market usually based on education, experience, region, gender, and time` and treats it throughout as a measure of data granularity, a moderator, never as an estimation sample size. Nothing in the published file states N, so nothing is asserted; this dataset is not MAIVE-eligible. The same refusal is what remittances got in 1.0.0, but there a real sample size (`Sample`) existed and 1.1.0 moved to it. Here there is none to move to."
  },
  "gasoline_price": {

@@ -1977,7 +1977,7 @@
     "sample_size": null,
     "sample_size_note": "n is not it: constant within study and equal to that study's row count, so it counts the ESTIMATES the study reports, not the observations it used; this dataset therefore has no sample size at all, and MAIVE cannot be run on it without supplying one"
    },
-   "effect_units": "negative inverse elasticity",
+   "effect_units": "elasticity",
    "direction_note": "The stored value is NOT the elasticity. It is the negative inverse: 88.8% of values are negative with median -0.050, and -1/effect has median 15.38, matching the paper's headline substitution elasticity of 13 to about 22. To recover the elasticity take -1/effect, and convert the standard error by the delta method -- se/effect^2 -- rather than using the stored se unchanged. Do NOT pool this column with the other 'elasticity' literatures. Confirmed 2026-08-04 after the Fable and Codex audits both flagged it.",
    "column_mapping_verified_by": "The paper's replication is in R, not Stata: run_replication_package.R:1002 runs stats::lm(elasticity ~ se, data = master, weights = se_weight) and clusters on idstudy -- the FAT-PET on exactly this pair. Found by 93_codegrep.py once R patterns were added; a Stata-only scan had reported this literature as having no regression at all.",
    "in_harmonised_table": true,

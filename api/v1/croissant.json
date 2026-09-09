@@ -494,8 +494,8 @@
    "description": "DERIVED AGGREGATE VIEW of the per-dataset files above, reshaped to a common schema. Rows are not additional to them.",
    "contentUrl": "https://meta-analysis.cz/data/v1/estimates_harmonised.csv",
    "encodingFormat": "text/csv",
-   "sha256": "06b356595eae5bbdcb76ec62aa9113444ada58fd04754d7da5a004d12f2be1fb",
-   "contentSize": "13150190"
+   "sha256": "38c532fd040026b6a29d9130777c6f6030dca103837111580c15596f48d0fac3",
+   "contentSize": "13131643"
   },
   {
    "@type": "cr:FileObject",
@@ -504,8 +504,8 @@
    "description": "The same derived aggregate view, as Parquet.",
    "contentUrl": "https://meta-analysis.cz/data/v1/estimates_harmonised.parquet",
    "encodingFormat": "application/vnd.apache.parquet",
-   "sha256": "a390937dd24f94a772c9b73b2aa93751cb1a4a13e8637c66c8c09d0bb44fc2c4",
-   "contentSize": "1786431"
+   "sha256": "130d9330b7cb1e4dc4964ef89ca427443e07edea11982e7f08ae216fe2db0490",
+   "contentSize": "1786407"
   }
  ],
  "recordSet": [

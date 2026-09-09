@@ -437,7 +437,7 @@
    "se_is_derived": false,
    "n_obs_col": null,
    "n_obs_from_log": false,
-   "units": "negative inverse elasticity",
+   "units": "elasticity",
    "direction_note": "The stored value is NOT the elasticity. It is the negative inverse: 88.8% of values are negative with median -0.050, and -1/effect has median 15.38, matching the paper's headline substitution elasticity of 13 to about 22. To recover the elasticity take -1/effect, and convert the standard error by the delta method -- se/effect^2 -- rather than using the stored se unchanged. Do NOT pool this column with the other 'elasticity' literatures. Confirmed 2026-08-04 after the Fable and Codex audits both flagged it.",
    "n_studies": 41,
    "moderators": 12
