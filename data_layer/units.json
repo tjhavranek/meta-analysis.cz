@@ -92,7 +92,7 @@
   "direction_note": "Monthly return, not annualised."
  },
  "house_prices": {
-  "units": "semi-elasticity (proportional)",
+  "units": "semi-elasticity",
   "direction_note": "Stored as a PROPORTION: house.do multiplies by 100 for the percentages the paper reports. Negative is the expected direction, higher policy rates lowering house prices. One row per impulse-response horizon, so rows within an IRF are not independent."
  },
  "incentives": {
@@ -112,7 +112,7 @@
   "direction_note": "The stored value is NOT the elasticity. It is the negative inverse: 88.8% of values are negative with median -0.050, and -1/effect has median 15.38, matching the paper's headline substitution elasticity of 13 to about 22. To recover the elasticity take -1/effect, and convert the standard error by the delta method -- se/effect^2 -- rather than using the stored se unchanged. Do NOT pool this column with the other 'elasticity' literatures. Confirmed 2026-08-04 after the Fable and Codex audits both flagged it."
  },
  "price_puzzle": {
-  "units": "proportional change in the price level",
+  "units": "semi-elasticity",
   "direction_note": "Stored as a PROPORTION, not a percent: multiply by 100 to read as the paper does (median |effect| 0.002 = 0.2%, consistent with its reported 0.33% trough). Positive values are the puzzling price INCREASE after a monetary contraction; theory expects negative. One row per horizon."
  },
  "reforms": {

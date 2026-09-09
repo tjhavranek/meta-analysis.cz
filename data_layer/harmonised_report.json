@@ -381,7 +381,7 @@
    "se_is_derived": true,
    "n_obs_col": null,
    "n_obs_from_log": false,
-   "units": "semi-elasticity (proportional)",
+   "units": "semi-elasticity",
    "direction_note": "Stored as a PROPORTION: house.do multiplies by 100 for the percentages the paper reports. Negative is the expected direction, higher policy rates lowering house prices. One row per impulse-response horizon, so rows within an IRF are not independent.",
    "n_studies": 45,
    "moderators": 18
@@ -450,7 +450,7 @@
    "se_is_derived": false,
    "n_obs_col": null,
    "n_obs_from_log": false,
-   "units": "proportional change in the price level",
+   "units": "semi-elasticity",
    "direction_note": "Stored as a PROPORTION, not a percent: multiply by 100 to read as the paper does (median |effect| 0.002 = 0.2%, consistent with its reported 0.33% trough). Positive values are the puzzling price INCREASE after a monetary contraction; theory expects negative. One row per horizon.",
    "n_studies": 70,
    "moderators": 12
