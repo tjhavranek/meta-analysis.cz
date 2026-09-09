@@ -85,7 +85,7 @@
    "se_is_derived": false,
    "n_obs_col": null,
    "n_obs_from_log": false,
-   "units": "Armington elasticity, winsorised at the 2.5 percent level",
+   "units": "elasticity",
    "direction_note": null,
    "n_studies": 42,
    "moderators": 18
