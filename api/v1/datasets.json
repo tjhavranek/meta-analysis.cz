@@ -172,6 +172,16 @@
     "url": "https://meta-analysis.cz/dst_slovakia/"
    },
    "excluded_because": "price.xlsx is 64,296 hourly electricity spot prices in two series, the Slovak and the Czech, which the paper uses as an input. A price series is not a collection of estimates: no study identifier, no effect, no standard error."
+  },
+  {
+   "id": "chemnitz",
+   "reason": "teaching copy of part of the electricity dataset, not a new literature",
+   "paper": {
+    "title": "Electricity demand has not become more price-responsive despite ninety years of technological change",
+    "page_title": "Price Elasticity of Electricity Demand: A Meta-Analysis",
+    "url": "https://meta-analysis.cz/electricity/"
+   },
+   "excluded_because": "electricity_sr.csv is the short-run subset of the electricity literature (1,647 estimates from 226 studies, columns effect, se, n_obs, study_id), published for the MAER-Net 2026 PhD workshop. Its estimates are already in the catalogue under 'electricity'."
   }
  ],
  "datasets": [

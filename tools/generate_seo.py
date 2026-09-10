@@ -1181,7 +1181,13 @@ def main():
         sec_dir = os.path.join(SITE, sec)
         if not os.path.isfile(os.path.join(sec_dir, "index.html")):
             continue
-        urls.append((f"{BASE}/{sec}/", lastmod(f"{sec}/index.html")))
+        # The test the pages below a section already get, applied to the section's own index:
+        # Search Console reports a noindex page listed in a sitemap as "submitted URL marked
+        # noindex". Not a continue: a noindex index can still sit above indexable pages.
+        with open(os.path.join(sec_dir, "index.html"), encoding="utf-8") as _f:
+            _noindex = 'name="robots" content="noindex' in _f.read(2000)
+        if not _noindex:
+            urls.append((f"{BASE}/{sec}/", lastmod(f"{sec}/index.html")))
         for dp, dns, fns in os.walk(sec_dir):
             # sorted: os.walk yields directories in filesystem order, so an
             # unsorted descent makes this generator's output machine-dependent

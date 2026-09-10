@@ -1,0 +1,7 @@
+Use the EasyMeta API, not your own estimation. Data: electricity_sr.csv in this folder
+(columns effect, se, n_obs, study_id). Send every row unchanged to
+POST https://api.maive.eu/v1/run-model with curl or Python requests (not urllib), twice:
+{"recipe":"PET-PEESE","parameters":{"winsorize":2.5},"data":[...]} and the same with "recipe":"EK".
+For each run show the HTTP status, the number of rows sent, effectEstimate and standardError
+exactly as returned, and resolvedParameters. If a call fails, show the error and stop.
+Never report a number the API did not return.

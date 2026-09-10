@@ -44,4 +44,7 @@ SELF_MANAGED = {
     "papers",      # built by tools/build_fulltext_page.py; an index of the full-text
                    # editions, so a CollectionPage rather than a 55th paper. Without this
                    # the injector emits ScholarlyArticle and Highwire tags for a list.
+    "chemnitz",    # hand-authored, noindex handout for the MAER-Net 2026 PhD workshop
+                   # (demo data and prompts). Not a paper: Highwire citation_* tags and
+                   # ScholarlyArticle on it would be fabricated.
 }

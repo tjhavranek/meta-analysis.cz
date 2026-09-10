@@ -3,6 +3,16 @@
 > **STATUS: 2.0.0 PUBLISHED.** https://doi.org/10.5281/zenodo.22647394, uploaded and
 > verified 2026-09-07: one file, md5 68dcaf34ab3e19aa47c1f7786a8a64b6, byte-identical
 > to the local build. 1.3.0 and earlier are superseded.
+>
+> **The site is ahead of 2.0.0 again (9 and 10 September 2026).** No estimate, standard
+> error or count differs. `effect_units` now reads elasticity, semi-elasticity or regression
+> coefficient for armington, house_prices, price_puzzle, migrant and habits (and armington's
+> `effect_alt_units` follows), which changes those label columns, and so the checksums, of the
+> pooled parquet and CSV. `datasets.json` lists `chemnitz`, a teaching copy of 1,647
+> electricity estimates, under `excluded_resources`. And the deposit description on Zenodo
+> still says the table grew "from 1.3.0's 52,800 rows"; `.zenodo.json` is corrected, but CI
+> does not submit it, so the live record needs editing by hand. Fold all three into the next
+> release rather than cutting one for them.
 > The 46 files in `codebooks/` now each carry a `license` key
 > (`https://creativecommons.org/licenses/by/4.0/`), added 2026-09-04 so that a client
 > reading a codebook on its own is told the rights over what it describes. Every other

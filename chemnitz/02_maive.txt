@@ -1,0 +1,12 @@
+Use the EasyMeta API, not your own estimation. Data: electricity_sr.csv in this folder
+(columns effect, se, n_obs, study_id). Send every row unchanged, with curl or Python requests
+(not urllib), as POST https://api.maive.eu/v1/run-model with the JSON body
+{"data":[{"effect":...,"se":...,"n_obs":...,"study_id":...}, ...], "parameters":{...}}
+and these parameters (settings outside "parameters" are ignored):
+{"modelType":"MAIVE","maiveMethod":"PET-PEESE","weight":"equal_weights","useLogFirstStage":true,
+"standardErrorTreatment":"clustered_cr2","includeStudyClustering":true,"computeAndersonRubin":false,
+"winsorize":2.5}
+Show the HTTP status, rows sent, effectEstimate, standardError, firstStageFStatistic and
+hausmanTest exactly as returned, and confirm that resolvedParameters.modelType
+is MAIVE and useLogFirstStage is true. If the call fails, show the error and stop.
+Never report a number the API did not return.
