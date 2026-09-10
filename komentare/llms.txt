@@ -2,7 +2,7 @@
 
 > Publicistika Tomáše Havránka a Zuzany Havránkové: komentáře pro celostátní média, sloupky pro litomyšlskou Lilii, rozhovory, stanoviska poradce bankovní rady ČNB a kratší příspěvky ze sítí. Texty jsou zde archivovány v plném znění s odkazem na původní vydání.
 
-Publicistika: 220 položek a 25 kratších příspěvků ze sítí (245 záznamů celkem), 2014–2026. Plné znění každého textu je na uvedené adrese; zdrojový Markdown položek je v /komentare/src/ (příspěvky ze sítí zdrojový soubor nemají). Licence: CC BY 4.0, jako vše na meta-analysis.cz; u převzatých textů uveďte i původní vydání.
+Publicistika: 221 položek a 25 kratších příspěvků ze sítí (246 záznamů celkem), 2009–2026. Plné znění každého textu je na uvedené adrese; zdrojový Markdown položek je v /komentare/src/ (příspěvky ze sítí zdrojový soubor nemají). Licence: CC BY 4.0, jako vše na meta-analysis.cz; u převzatých textů uveďte i původní vydání.
 
 ## Celostátní komentáře
 
@@ -91,6 +91,7 @@ Komentáře a sloupky pro celostátní média — měnová politika, inflace, ve
 - [Proč nízké úrokové míry nevedou nutně k přehřívání ekonomiky](https://meta-analysis.cz/komentare/cnb-rovnovazna-sazba/) — čnBlog, 30. listopadu 2016
 - [Stanovisko poradce k 6. situační zprávě 2016](https://meta-analysis.cz/komentare/cnb-stanovisko-poradce-6sz-2016/) — Česká národní banka, 26. září 2016
 - [Stanovisko poradce k 2. situační zprávě 2016](https://meta-analysis.cz/komentare/cnb-stanovisko-poradce-2sz-2016/) — Česká národní banka, 29. března 2016
+- [Road trip 2009: Západ USA](https://meta-analysis.cz/komentare/vylet09-road-trip-2009-zapad-usa/) — vylet09.blogspot.com, 18. srpna 2009
 
 ## Litomyšlské sloupky
 

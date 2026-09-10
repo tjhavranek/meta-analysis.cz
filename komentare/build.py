@@ -177,6 +177,7 @@ OUTLET_IN = {
     "ZŠ Litomyšl, Zámecká": "na webu ZŠ Litomyšl, Zámecká",
     "Forbes NEXT": "ve Forbes NEXT",
     "Participativní rozpočet města Litomyšle": "v participativním rozpočtu města Litomyšle",
+    "vylet09.blogspot.com": "na blogu vylet09.blogspot.com",
 }
 
 MEDIA_LABEL = {"video": "video", "audio": "audio"}
@@ -185,7 +186,7 @@ MEDIA_LABEL = {"video": "video", "audio": "audio"}
 # both, and a retrieval corpus should be able to tell them apart: an HN op-ed passed an
 # editor, a manifesto on the author's own site did not.
 SELF_PUBLISHED = re.compile(
-    r"(?i)^(LinkedIn|MAER\-Net|Zrušme inflaci|zrusme\-inflaci|SYRI|KdoVyhrajeVolby\.cz)$")
+    r"(?i)^(LinkedIn|MAER\-Net|Zrušme inflaci|zrusme\-inflaci|SYRI|KdoVyhrajeVolby\.cz|vylet09\.blogspot\.com)$")
 
 # headlines carried by more than one item; filled in main(). Such items always show
 # their byline so that two rows never render as the same link text.
@@ -717,8 +718,9 @@ def write_item(a):
     # the day it was sent — so the Czech wording differs from a withdrawn draft.
     unpub = bool(a.get("unpublished")) or a.get("genre") == "correspondence"
     # Not everything in the archive is an opinion column. A match report is straight
-    # factual reporting; OpinionNewsArticle would tell a machine it is his argument.
-    is_report = a.get("genre") == "report"
+    # factual reporting, and a travelogue is a diary of what happened; OpinionNewsArticle
+    # would tell a machine either one is his argument.
+    is_report = a.get("genre") in ("report", "travelogue")
 
     node = {
         "@type": ("Article" if (is_iv or is_pr or unpub or is_report)
@@ -1719,7 +1721,8 @@ def _split(v):
 # A chart caption as the source files carry it: "Graf 1: ..." or "*Graf 1: ...*" in the
 # Czech records, "Chart 1. ..." in the English ones. The number is what binds a caption to
 # its image, so a figure cannot silently land under the wrong chart.
-FIG_CAPTION = re.compile(r"^\*?((?:Graf|Chart)\s+(\d+)\s*[.:]\s*.+?)\*?$")
+# "Mapa 1: ..." binds a map the same way; the 2009 road-trip record opens with one.
+FIG_CAPTION = re.compile(r"^\*?((?:Graf|Chart|Mapa|Map)\s+(\d+)\s*[.:]\s*.+?)\*?$")
 
 
 def figure_html(f, alt, caption):

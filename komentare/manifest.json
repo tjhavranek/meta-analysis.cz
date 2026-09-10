@@ -3,11 +3,11 @@
  "url": "https://meta-analysis.cz/komentare/data/",
  "license": "https://creativecommons.org/licenses/by/4.0/",
  "newest_record": "2026-09-02",
- "temporal_coverage": "2014-01-27/2026-09-02",
+ "temporal_coverage": "2009-08-18/2026-09-02",
  "records": {
-  "total": 245,
+  "total": 246,
   "by_text_status": {
-   "published_full_text": 200,
+   "published_full_text": 201,
    "correspondence": 4,
    "author_manuscript": 19,
    "link_only": 18,
@@ -15,7 +15,7 @@
    "publisher_excerpt": 2
   },
   "by_section": {
-   "Celostátní komentáře": 83,
+   "Celostátní komentáře": 84,
    "Litomyšlské sloupky": 60,
    "Rozhovory": 52,
    "In English": 25,
@@ -41,28 +41,28 @@
  "files": {
   "corpus.jsonl": {
    "url": "https://meta-analysis.cz/komentare/corpus.jsonl",
-   "bytes": 1621674,
-   "sha256": "b705023bce55ed49f97f8aec086741620ec9fcb057ac481c987b1b21ad60c798"
+   "bytes": 1683218,
+   "sha256": "ab2a9416d16ca39db8326cd3459304229e497cec5d251ae4199a2f1f8167038e"
   },
   "index.json": {
    "url": "https://meta-analysis.cz/komentare/index.json",
-   "bytes": 1641532,
-   "sha256": "b3dd41aab6fa434e61b0a49c2e4266d5a72c1ca59481438ca4b064d894b0f798"
+   "bytes": 1703180,
+   "sha256": "34a8cfb1f091e2bc5c075d117872e4c637f8c07fc6f29fa9ce7e24a7ef2681b9"
   },
   "all.md": {
    "url": "https://meta-analysis.cz/komentare/all.md",
-   "bytes": 1431755,
-   "sha256": "cfaba6f18c6e3b76110fb77a131f7fa25b2c5956831cf01864e260a4b24a60b1"
+   "bytes": 1491716,
+   "sha256": "13b8e9b65cf17e8c8c50c28200c1ab17fa45516945620a0c2c68f1af7fac2f96"
   },
   "llms.txt": {
    "url": "https://meta-analysis.cz/komentare/llms.txt",
-   "bytes": 45916,
-   "sha256": "9eb40023696b945e249e4f6514ba57950d3cbe70b50d50d6e027da33d4da43ca"
+   "bytes": 46058,
+   "sha256": "f3b4ad450ec939af54fc56c35874c31f31bb6aa769abb35262deca71364d14a5"
   },
   "feed.xml": {
    "url": "https://meta-analysis.cz/komentare/feed.xml",
-   "bytes": 1590325,
-   "sha256": "f5ae38704da4af70cdcf9cc2a0074f61eff6fe5fcb9c08ccfa8fb27203a363b1"
+   "bytes": 1652574,
+   "sha256": "5b34a5fb46a61154acaf78abb6fdd5075cbadedbdd924062a72c338d7ae47df9"
   }
  },
  "generated_from": [
