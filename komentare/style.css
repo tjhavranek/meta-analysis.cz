@@ -168,6 +168,9 @@ main { padding: 2.75rem 0 4rem; }
   font-size: 0.9rem; color: var(--muted); max-width: var(--measure);
 }
 .provenance p { margin: 0; }
+/* A note box directly followed by a standfirst: the box has no bottom margin and the
+   standfirst no top margin, so the two touched. */
+.provenance + .perex { margin-top: 1.2rem; }
 
 /* Written for an issue, then withdrawn or never printed. Says so above the text:
    reading a column through and learning at the foot that it never ran is the wrong

@@ -899,8 +899,16 @@ def write_item(a):
             prov = ((f'Written {cs_date(a["date"], a.get("date_precision"), lang)} as an opinion for the CNB Bank Board and carrying six years of restricted access; the CNB released it {cs_date(a["released"], None, lang)}. ' if en else
                      f'Napsáno {cs_date(a["date"], a.get("date_precision"), lang)} jako stanovisko pro bankovní radu ČNB, se šestiletou lhůtou omezeného přístupu; ČNB dokument zveřejnila {cs_date(a["released"], None, lang)}. '))
         else:
-          prov = ((f'First published in {esc(a["outlet"])}, ' if en
-                   else f'Poprvé vyšlo {where}{sep}')
+          # A blog or a serial appeared piece by piece. Its record carries the last
+          # instalment's date, and "Poprvé vyšlo" with that date would pin all of it
+          # there. `date_from` names the first instalment.
+          _from = a.get("date_from")
+          prov = (((f'Published in instalments in {esc(a["outlet"])} from '
+                    f'{cs_date(_from, None, lang)} to ' if en else
+                    f'Původně zveřejňováno {where} od {cs_date(_from, None, lang)} do ')
+                   if _from else
+                   (f'First published in {esc(a["outlet"])}, ' if en
+                    else f'Poprvé vyšlo {where}{sep}'))
                 + f'{cs_date(a["date"], a.get("date_precision"), lang)}.'
                 # url_label matters when the link is not a permalink: the school's
                 # "Školní úspěchy" is a rolling feed, so "Původní vydání" would promise
