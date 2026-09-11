@@ -49,6 +49,7 @@
   .answer .foot { margin-top: 1.1rem; font-size: 0.8rem; color: var(--faint); }
   .answer.note .text { color: var(--muted); }
   .waiting { color: var(--muted); margin-top: 1.5rem; }
+  .ts { margin-top: 0.8rem; }
   .privacy { margin-top: 2.5rem; font-size: 0.8rem; color: var(--faint); max-width: var(--measure); }
 </style>
 </head>
@@ -68,6 +69,7 @@
         <button type="submit" id="go">Zeptat se / <span lang="en">Ask</span></button>
         <span class="ask-hint">Odpověď trvá asi 10 sekund. / <span lang="en">An answer takes about 10 seconds.</span></span>
       </div>
+      <div class="ts" id="ts"></div>
       <div class="examples" id="ex">
         <button type="button">Jak by měla ČNB investovat devizové rezervy?</button>
         <button type="button">Proč by se do inflace měly počítat náklady na vlastní bydlení?</button>
@@ -76,8 +78,9 @@
       </div>
     </form>
     <div id="out" aria-live="polite"></div>
-    <p class="privacy">Otázky a odpovědi ukládáme 30 dní, abychom mohli chybné odpovědi opravit nebo stáhnout; nic dalšího o vás neukládáme. Zpracovává je Cloudflare. <span lang="en">We keep questions and answers for 30 days so that a wrong answer can be corrected or withdrawn; nothing else about you is stored. They are processed by Cloudflare.</span></p>
+    <p class="privacy">Otázky a odpovědi ukládáme 30 dní, abychom mohli chybné odpovědi opravit nebo stáhnout; nic dalšího o vás neukládáme. Zpracovává je Cloudflare, který také chrání stránku před roboty (Turnstile). Počet otázek z jedné adresy počítáme jen během dne, pod nečitelným kódem, a každou noc ho mažeme. <span lang="en">We keep questions and answers for 30 days so that a wrong answer can be corrected or withdrawn; nothing else about you is stored. They are processed by Cloudflare, which also protects the page from bots (Turnstile). Questions from one address are counted only within the day, under an unreadable code, and wiped every night.</span></p>
 </div></main>
+<script src="https://challenges.cloudflare.com/turnstile/v0/api.js?render=explicit" async defer></script>
 <script>
 (function () {
   var API = "https://ai-tomas.t-havranek.workers.dev/ask";
@@ -85,10 +88,12 @@
   var T = {
     cs: { who: "AI", src: "Zdroje", foot: "Odpověď AI podle publikovaných textů, ne osobní vyjádření autorů.",
           id: "ID odpovědi", report: "Nahlásit odpověď", wait: "AI hledá odpověď…",
-          err: "Něco se pokazilo. Zkuste to prosím znovu.", rate: "Příliš mnoho otázek, zkuste to za minutu." },
+          err: "Něco se pokazilo. Zkuste to prosím znovu.", rate: "Příliš mnoho otázek, zkuste to za minutu.",
+          verify: "Nepodařilo se ověřit, že nejste robot. Obnovte prosím stránku a zkuste to znovu." },
     en: { who: "AI", src: "Sources", foot: "AI answer based on published texts, not a personal statement by the authors.",
           id: "Answer ID", report: "Report this answer", wait: "The AI is looking for an answer…",
-          err: "Something went wrong. Please try again.", rate: "Too many questions, try again in a minute." }
+          err: "Something went wrong. Please try again.", rate: "Too many questions, try again in a minute.",
+          verify: "We couldn't verify that you're not a bot. Please reload the page and try again." }
   };
   var f = document.getElementById("f"), q = document.getElementById("q"),
       go = document.getElementById("go"), out = document.getElementById("out");
@@ -146,6 +151,25 @@
       (list ? '<p class="who" style="margin-top:1rem">' + t.src + ':</p><ul class="sources">' + list + "</ul>" : "") +
       '<p class="foot">' + t.foot + (d.id ? " " + t.id + ": " + esc(d.id) : "") + mail + "</p></div>";
   }
+  // Turnstile: invisible unless Cloudflare needs an interaction; one fresh token per question
+  var SITEKEY = "0x4AAAAAAEwJOeDGxyaqRFVt", tsId = null;
+  var tsTimer = setInterval(function () {
+    if (!window.turnstile) return;
+    clearInterval(tsTimer);
+    try { tsId = turnstile.render("#ts", { sitekey: SITEKEY, appearance: "interaction-only", action: "ask" }); }
+    catch (e) { tsId = null; }
+  }, 200);
+  function tsToken() { try { return tsId !== null ? (turnstile.getResponse(tsId) || "") : ""; } catch (e) { return ""; } }
+  function tsReset() { try { if (tsId !== null) turnstile.reset(tsId); } catch (e) {} }
+  // wait up to eight seconds for a token, then send whatever there is
+  function withToken(cb) {
+    var waited = 0;
+    (function poll() {
+      var tok = tsToken();
+      if (tok || waited >= 8000) return cb(tok);
+      waited += 250; setTimeout(poll, 250);
+    })();
+  }
   // one request at a time; a late reply to an earlier question never replaces a newer one
   var seq = 0, busy = false, ex = document.getElementById("ex");
   function setBusy(b) {
@@ -157,19 +181,22 @@
     var lang = guessLang(text), my = ++seq;
     setBusy(true);
     out.innerHTML = '<p class="waiting">' + T[lang].wait + "</p>";
+    withToken(function (tok) {
     var ctl = window.AbortController ? new AbortController() : null;
     var timer = setTimeout(function () { if (ctl) ctl.abort(); }, 60000);
     fetch(API, { method: "POST", headers: { "Content-Type": "application/json" },
-                 body: JSON.stringify({ q: text }), signal: ctl ? ctl.signal : undefined })
+                 body: JSON.stringify({ q: text, ts: tok }), signal: ctl ? ctl.signal : undefined })
       .then(function (r) { return r.json().then(function (d) { return { s: r.status, d: d }; }); })
       .then(function (x) {
         if (my !== seq) return;
         if (x.s === 429) out.innerHTML = '<p class="waiting">' + T[lang].rate + "</p>";
+        else if (x.s === 403) out.innerHTML = '<p class="waiting">' + T[lang].verify + "</p>";
         else if (x.d && x.d.answer) render(x.d, lang);
         else out.innerHTML = '<p class="waiting">' + T[lang].err + "</p>";
       })
       .catch(function () { if (my === seq) out.innerHTML = '<p class="waiting">' + T[lang].err + "</p>"; })
-      .then(function () { clearTimeout(timer); if (my === seq) setBusy(false); });
+      .then(function () { clearTimeout(timer); tsReset(); if (my === seq) setBusy(false); });
+    });
   }
   f.addEventListener("submit", function (e) { e.preventDefault(); var t = q.value.trim(); if (t.length > 2) ask(t); });
   q.addEventListener("keydown", function (e) { if (e.key === "Enter" && (e.ctrlKey || e.metaKey)) f.requestSubmit(); });
