@@ -14,25 +14,29 @@
   border-radius:6px; resize:vertical; }
 .ask-form textarea:focus{ outline:2px solid var(--accent); outline-offset:1px; }
 .ask-row{ display:flex; gap:.8rem; align-items:center; margin-top:.7rem; flex-wrap:wrap; }
-.ask-row button{ font:inherit; font-weight:600; padding:.5rem 1.3rem; border:0; border-radius:6px;
+.ask-row button{ font:inherit; font-weight:600; padding:.5rem 1.3rem; min-height:44px; border:0; border-radius:6px;
   background:var(--accent); color:#fff; cursor:pointer; }
 .ask-row button[disabled]{ opacity:.55; cursor:default; }
 .ask-hint{ color:var(--ink-soft); font-size:.88rem; }
 .ts{ margin-top:.8rem; }
 .examples{ margin:1.1rem 0 0; display:flex; flex-wrap:wrap; gap:.45rem; }
-.examples button{ font:inherit; font-size:.88rem; padding:.3rem .7rem; border-radius:999px;
+.examples button{ font:inherit; font-size:.88rem; padding:.45rem .75rem; border-radius:999px;
   border:1px solid var(--rule); background:transparent; color:var(--ink-soft); cursor:pointer; text-align:left; }
 .examples button:hover{ color:var(--accent); border-color:var(--accent); }
 .answer{ margin:2rem 0 0; }
 .answer .who{ font-weight:600; margin:0 0 .35rem; }
-.answer .text p{ margin:0 0 .8rem; }
+.answer .text p{ margin:0 0 .8rem; font-size:1.05rem; line-height:1.6; }
+.entry p.lede{ font-size:1.05rem; line-height:1.6; margin-bottom:1rem; }
+.entry p.pilot{ font-size:.88rem; line-height:1.5; color:var(--ink-soft); margin-top:1rem; }
 .answer .text sup a{ text-decoration:none; font-size:.75em; padding:0 .1em; }
 .answer .sources{ margin:1rem 0 0; padding:0; list-style:none; font-size:.92rem; }
 .answer .sources li{ margin:0 0 .35rem; color:var(--ink-soft); }
 .answer .foot{ margin-top:1.1rem; font-size:.82rem; color:var(--ink-soft); }
 .answer.note .text{ color:var(--ink-soft); }
 .waiting{ color:var(--ink-soft); margin-top:1.5rem; }
-.privacy{ margin-top:2.5rem; font-size:.82rem; color:var(--ink-soft); }
+.privacy{ margin-top:2.5rem; font-size:.875rem; line-height:1.5; color:var(--ink-soft); }
+/* one readable column on wide screens, like the text pages of the site */
+.entry > p.lede, .entry > p.pilot, .entry > p.privacy, .ask-form, #out{ max-width:var(--measure); }
 </style>
 </head>
 <body>
@@ -60,11 +64,8 @@
 		<div class="post">
 			<div class="entry">
 
-<h1>Ask about this research</h1>
-<p class="lede">Type a question; an AI answers from the papers, notes, and datasets on this site, with
-numbered links to the sources, and says so when the site does not cover it. It is not a personal
-statement by the authors. This is a pilot on a free service, so it gives about 55 answers a day in
-total.</p>
+<p class="lede">Type a question and an AI answers from the papers, notes, and datasets on this site,
+with numbered links to the sources. It says so when the site does not cover the question.</p>
 
 <form class="ask-form" id="f">
   <label for="q" class="ask-hint">Your question</label>
@@ -82,6 +83,8 @@ total.</p>
     <button type="button">Does class size affect how much students learn?</button>
   </div>
 </form>
+<p class="pilot">Answers are not a personal statement by the authors. This is a pilot on a free
+service, so it gives about 55 answers a day in total.</p>
 <div id="out" aria-live="polite"></div>
 <p class="privacy">We keep questions and answers for 30 days so that a wrong answer can be corrected
 or withdrawn; nothing else about you is stored. They are processed by Cloudflare, which also
