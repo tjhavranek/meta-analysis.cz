@@ -58,21 +58,21 @@
 </div></header>
 <main><div class="wrap">
     <div class="lede">
-      <h1>Zeptejte se AI <small style="font-weight:400;color:var(--faint)">/ Ask AI</small></h1>
+      <h1>Zeptejte se AI <small style="font-weight:400;color:var(--faint)">/ <span lang="en">Ask AI</span></small></h1>
       <p>Na otázky odpovídá umělá inteligence podle textů Tomáše a Zuzany Havránkových na meta-analysis.cz, česky i anglicky, s odkazy na zdroje. Není to jejich osobní odpověď. <span lang="en">An AI answers questions from the texts of Tomas Havranek and Zuzana Havrankova on meta-analysis.cz, in Czech or English, with links to the sources. It is not a personal reply from either of them.</span></p>
     </div>
     <form class="ask-form" id="f">
-      <label for="q" class="ask-hint">Otázka / Your question</label>
+      <label for="q" class="ask-hint">Otázka / <span lang="en">Your question</span></label>
       <textarea id="q" name="q" maxlength="600" placeholder="Napište otázku česky nebo anglicky… / Ask in Czech or English…" required></textarea>
       <div class="ask-row">
-        <button type="submit" id="go">Zeptat se / Ask</button>
-        <span class="ask-hint">Odpověď trvá asi 10 sekund. / An answer takes about 10 seconds.</span>
+        <button type="submit" id="go">Zeptat se / <span lang="en">Ask</span></button>
+        <span class="ask-hint">Odpověď trvá asi 10 sekund. / <span lang="en">An answer takes about 10 seconds.</span></span>
       </div>
       <div class="examples" id="ex">
         <button type="button">Jak by měla ČNB investovat devizové rezervy?</button>
         <button type="button">Proč by se do inflace měly počítat náklady na vlastní bydlení?</button>
-        <button type="button">What is MAIVE and what problem does it solve?</button>
-        <button type="button">Why do published economics results often overstate effects?</button>
+        <button type="button" lang="en">What is MAIVE and what problem does it solve?</button>
+        <button type="button" lang="en">Why do published economics results often overstate effects?</button>
       </div>
     </form>
     <div id="out" aria-live="polite"></div>
@@ -95,14 +95,16 @@
   function esc(s) { return String(s).replace(/[&<>"]/g, function (c) {
     return { "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;" }[c]; }); }
   // only http(s) links: an index entry can never turn into a javascript: link
+  // sources link only to this site over https; anything else is shown as plain text
   function safeUrl(u) {
-    try { var x = new URL(u, location.href); return (x.protocol === "https:" || x.protocol === "http:") ? x.href : "#"; }
-    catch (e) { return "#"; }
+    try { var x = new URL(u); return (x.protocol === "https:" && x.hostname === "meta-analysis.cz") ? x.href : ""; }
+    catch (e) { return ""; }
   }
   // Czech names inside an English question do not make it Czech
   function guessLang(s) {
     s = String(s).replace(/(Tom[aá]š|Havr[aá]n|Zuzan|Litomyšl|ČNB)[a-záčďéěíňóřšťúůýž]*/gi, " ");
-    return /[ěščřžýáíéůúňťď]/i.test(s) ? "cs" : "en";
+    return /[ěščřžýáíéůúňťď]/i.test(s) ||
+      /\b(je|jak|proc|co|kdy|jaky|jaka|jake|myslite|mysli|nazor|nebo|ale|ze|se|na|ve|inflace)\b/i.test(s) ? "cs" : "en";
   }
   var MON = ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"];
   function fmtDate(s, lng) {
@@ -116,18 +118,25 @@
       var h = esc(p).replace(/\[(\d+(?:\s*,\s*\d+)*)\]/g, function (m, nums) {
         return nums.split(/\s*,\s*/).map(function (n) {
           var s = srcs[+n - 1];
-          return s ? '<sup><a href="' + esc(safeUrl(s.url)) + '" title="' + esc(s.title) + '">' + n + "</a></sup>" : "[" + n + "]";
+          if (!s) return "[" + n + "]";
+          var su = safeUrl(s.url);
+          return su ? '<sup><a href="' + esc(su) + '" title="' + esc(s.title) + '">' + n + "</a></sup>" : "<sup>" + n + "</sup>";
         }).join("");
       });
       return "<p>" + h + "</p>";
     }).join("");
     var lng = d.lang || lang;
     var AU = lng === "en"
-      ? { TH: "Tomas Havranek", ZH: "Zuzana Havrankova", "TH+ZH": "Tomas Havranek and Zuzana Havrankova", coauthored: "Havranek and coauthors" }
-      : { TH: "Tomáš Havránek", ZH: "Zuzana Havránková", "TH+ZH": "Tomáš a Zuzana Havránkovi", coauthored: "Havránek a spoluautoři" };
+      ? { TH: "Tomas Havranek", ZH: "Zuzana Havrankova", "TH+ZH": "Tomas Havranek and Zuzana Havrankova",
+          "TH+co": "Havranek and coauthors", "ZH+co": "Havrankova and coauthors",
+          "TH+ZH+co": "Havranek, Havrankova and coauthors" }
+      : { TH: "Tomáš Havránek", ZH: "Zuzana Havránková", "TH+ZH": "Tomáš a Zuzana Havránkovi",
+          "TH+co": "Havránek a spoluautoři", "ZH+co": "Havránková a spoluautoři",
+          "TH+ZH+co": "Havránek, Havránková a spoluautoři" };
     var list = srcs.map(function (s, i) {
       var meta = [AU[s.who], fmtDate(s.date, lng)].filter(Boolean).map(esc).join(", ");
-      return '<li>' + (i + 1) + '. <a href="' + esc(safeUrl(s.url)) + '">' + esc(s.title) + "</a>" +
+      var su = safeUrl(s.url);
+      return '<li>' + (i + 1) + ". " + (su ? '<a href="' + esc(su) + '">' + esc(s.title) + "</a>" : esc(s.title)) +
              (meta ? ", " + meta : "") + "</li>";
     }).join("");
     var mail = ' · <a href="mailto:' + REPORT + "?subject=" +
