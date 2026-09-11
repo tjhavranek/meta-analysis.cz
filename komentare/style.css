@@ -283,3 +283,7 @@ main { padding: 2.75rem 0 4rem; }
 .prose p, .prose li,
 .provenance p,          /* the source line carries a bare URL */
 .posts p, .post p{ overflow-wrap:anywhere; }
+
+/* the AI Tomáš entry point on the hub: one line, set apart from the lede */
+.ask-link { margin-top: 0.9rem !important; color: var(--muted); }
+.ask-link a { font-weight: 600; color: var(--accent); margin-right: 0.35rem; }

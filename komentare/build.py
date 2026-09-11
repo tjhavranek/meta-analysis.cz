@@ -1178,7 +1178,10 @@ def write_index(items, key=None):
                            f'</p>\n')
 
     body = (f'    <div class="lede">\n      <h1>{esc(title)}</h1>\n'
-            f'      <p>{esc(HUB_LEDE if not key else desc)}</p>\n{counts}    </div>\n'
+            f'      <p>{esc(HUB_LEDE if not key else desc)}</p>\n{counts}'
+            + ('      <p class="ask-link"><a href="/komentare/ask/">Zeptejte se AI Tomáše</a>'
+               ' AI odpovídá česky i anglicky podle textů na tomto webu.</p>\n' if not key else '')
+            + '    </div>\n'
             + (FILTER if not key else "")
             + listing(sel, show_cat=not key))
     page = shell(f"{title} — {SITE_AUTHORS}", desc, canonical,
@@ -2255,8 +2258,9 @@ def main():
     # slug — so they must be named here or the sweep below deletes them every rebuild.
     # "files" holds hosted documents (the CNB advisor-opinion PDFs); static, not
     # slug-backed, so the sweep must spare it like the other generated directories.
+    # "ask" is the hand-written AI Tomáš question page; web_meta/ask_worker answers it.
     live = ({a["slug"] for a in items if a["media"] == "text"} | set(SECTIONS)
-            | {"data", "posts", "ze-siti", "social-img", "item-img", "files"})
+            | {"data", "posts", "ze-siti", "social-img", "item-img", "files", "ask"})
     orphans = [d for d in KDIR.iterdir()
                if d.is_dir() and d.name not in live and d.name not in ("src", "__pycache__")]
     for d in orphans:
