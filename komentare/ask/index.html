@@ -3,8 +3,8 @@
 <head>
 <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
-<title>Zeptejte se AI Tomáše / Ask AI Tomáš</title>
-<meta name="description" content="AI odpovídá podle textů na meta-analysis.cz, česky i anglicky. Není to osobní odpověď Tomáše Havránka. An AI answers from the texts on meta-analysis.cz; not a personal reply." />
+<title>Zeptejte se AI / Ask AI</title>
+<meta name="description" content="AI odpovídá podle textů Tomáše a Zuzany Havránkových na meta-analysis.cz, česky i anglicky, s odkazy na zdroje. Není to jejich osobní odpověď. An AI answers from the texts on meta-analysis.cz, with sources; not a personal reply." />
 <meta name="robots" content="noindex" />
 <link rel="canonical" href="https://meta-analysis.cz/komentare/ask/" />
 <link rel="stylesheet" href="/komentare/style.css" />
@@ -16,8 +16,8 @@
    "@type": "WebPage",
    "@id": "https://meta-analysis.cz/komentare/ask/#page",
    "url": "https://meta-analysis.cz/komentare/ask/",
-   "name": "Zeptejte se AI Tomáše / Ask AI Tomáš",
-   "description": "An AI reconstruction of Tomáš Havránek answers questions in Czech or English from the texts on meta-analysis.cz. Not a personal reply.",
+   "name": "Zeptejte se AI / Ask AI",
+   "description": "An AI answers questions in Czech or English from the texts of Tomas Havranek and Zuzana Havrankova on meta-analysis.cz, with links to the sources. Not a personal reply.",
    "inLanguage": ["cs", "en"],
    "isPartOf": {"@id": "https://meta-analysis.cz/komentare/#collection"},
    "about": {"@id": "https://meta-analysis.cz/#th"},
@@ -58,8 +58,8 @@
 </div></header>
 <main><div class="wrap">
     <div class="lede">
-      <h1>Zeptejte se AI Tomáše <small style="font-weight:400;color:var(--faint)">/ Ask AI Tomáš</small></h1>
-      <p>Odpovídá umělá inteligence podle textů na meta-analysis.cz, česky i anglicky. Není to osobní odpověď Tomáše Havránka. <span lang="en">An AI answers from the texts on meta-analysis.cz, in Czech or English. It is not a personal reply from Tomas Havranek.</span></p>
+      <h1>Zeptejte se AI <small style="font-weight:400;color:var(--faint)">/ Ask AI</small></h1>
+      <p>Na otázky odpovídá umělá inteligence podle textů Tomáše a Zuzany Havránkových na meta-analysis.cz, česky i anglicky, s odkazy na zdroje. Není to jejich osobní odpověď. <span lang="en">An AI answers questions from the texts of Tomas Havranek and Zuzana Havrankova on meta-analysis.cz, in Czech or English, with links to the sources. It is not a personal reply from either of them.</span></p>
     </div>
     <form class="ask-form" id="f">
       <label for="q" class="ask-hint">Otázka / Your question</label>
@@ -69,9 +69,9 @@
         <span class="ask-hint">Odpověď trvá asi 10 sekund. / An answer takes about 10 seconds.</span>
       </div>
       <div class="examples" id="ex">
-        <button type="button">Má ČNB zvyšovat sazby, když roste inflace?</button>
+        <button type="button">Jak by měla ČNB investovat devizové rezervy?</button>
         <button type="button">Proč by se do inflace měly počítat náklady na vlastní bydlení?</button>
-        <button type="button">What is MAIVE and when should I use it?</button>
+        <button type="button">What is MAIVE and what problem does it solve?</button>
         <button type="button">Why do published economics results often overstate effects?</button>
       </div>
     </form>
@@ -83,11 +83,11 @@
   var API = "https://ai-tomas.t-havranek.workers.dev/ask";
   var REPORT = "tomas.havranek@fsv.cuni.cz";
   var T = {
-    cs: { who: "AI Tomáš", src: "Zdroje", foot: "AI rekonstrukce podle publikovaných textů, ne osobní odpověď.",
-          id: "ID odpovědi", report: "Nahlásit odpověď", wait: "AI Tomáš přemýšlí…",
+    cs: { who: "AI", src: "Zdroje", foot: "Odpověď AI podle publikovaných textů, ne osobní vyjádření autorů.",
+          id: "ID odpovědi", report: "Nahlásit odpověď", wait: "AI hledá odpověď…",
           err: "Něco se pokazilo. Zkuste to prosím znovu.", rate: "Příliš mnoho otázek, zkuste to za minutu." },
-    en: { who: "AI Tomáš", src: "Sources", foot: "AI reconstruction from published texts, not a personal reply.",
-          id: "Answer ID", report: "Report this answer", wait: "AI Tomáš is thinking…",
+    en: { who: "AI", src: "Sources", foot: "AI answer based on published texts, not a personal statement by the authors.",
+          id: "Answer ID", report: "Report this answer", wait: "The AI is looking for an answer…",
           err: "Something went wrong. Please try again.", rate: "Too many questions, try again in a minute." }
   };
   var f = document.getElementById("f"), q = document.getElementById("q"),
@@ -99,48 +99,73 @@
     try { var x = new URL(u, location.href); return (x.protocol === "https:" || x.protocol === "http:") ? x.href : "#"; }
     catch (e) { return "#"; }
   }
-  function guessLang(s) { return /[ěščřžýáíéůúňťď]/i.test(s) ? "cs" : "en"; }
+  // Czech names inside an English question do not make it Czech
+  function guessLang(s) {
+    s = String(s).replace(/(Tom[aá]š|Havr[aá]n|Zuzan|Litomyšl|ČNB)[a-záčďéěíňóřšťúůýž]*/gi, " ");
+    return /[ěščřžýáíéůúňťď]/i.test(s) ? "cs" : "en";
+  }
+  var MON = ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"];
+  function fmtDate(s, lng) {
+    var m = /^([0-9]{4})-([0-9]{2})-([0-9]{2})$/.exec(s || "");
+    if (!m) return s || "";
+    return lng === "en" ? (+m[3]) + " " + MON[+m[2] - 1] + " " + m[1] : (+m[3]) + ". " + (+m[2]) + ". " + m[1];
+  }
   function render(d, lang) {
     var t = T[d.lang || lang] || T.en, srcs = d.sources || [];
     var paras = String(d.answer || "").split(/\n\s*\n/).map(function (p) {
       var h = esc(p).replace(/\[(\d+(?:\s*,\s*\d+)*)\]/g, function (m, nums) {
         return nums.split(/\s*,\s*/).map(function (n) {
           var s = srcs[+n - 1];
-          return s ? '<sup><a href="' + esc(safeUrl(s.url)) + '" title="' + esc(s.title) + '">' + n + "</a></sup>" : "";
+          return s ? '<sup><a href="' + esc(safeUrl(s.url)) + '" title="' + esc(s.title) + '">' + n + "</a></sup>" : "[" + n + "]";
         }).join("");
       });
       return "<p>" + h + "</p>";
     }).join("");
+    var lng = d.lang || lang;
+    var AU = lng === "en"
+      ? { TH: "Tomas Havranek", ZH: "Zuzana Havrankova", "TH+ZH": "Tomas Havranek and Zuzana Havrankova", coauthored: "Havranek and coauthors" }
+      : { TH: "Tomáš Havránek", ZH: "Zuzana Havránková", "TH+ZH": "Tomáš a Zuzana Havránkovi", coauthored: "Havránek a spoluautoři" };
     var list = srcs.map(function (s, i) {
+      var meta = [AU[s.who], fmtDate(s.date, lng)].filter(Boolean).map(esc).join(", ");
       return '<li>' + (i + 1) + '. <a href="' + esc(safeUrl(s.url)) + '">' + esc(s.title) + "</a>" +
-             (s.date ? ", " + esc(s.date.slice(0, 4)) : "") + "</li>";
+             (meta ? ", " + meta : "") + "</li>";
     }).join("");
     var mail = ' · <a href="mailto:' + REPORT + "?subject=" +
-      encodeURIComponent("AI Tomáš " + (d.id || "")) + '">' + t.report + "</a>";
+      encodeURIComponent("Ask AI " + (d.id || "")) + '">' + t.report + "</a>";
     out.innerHTML = '<div class="answer' + (d.mode === "answer" ? "" : " note") + '">' +
       '<p class="who">' + t.who + ":</p>" + '<div class="text">' + paras + "</div>" +
       (list ? '<p class="who" style="margin-top:1rem">' + t.src + ':</p><ul class="sources">' + list + "</ul>" : "") +
       '<p class="foot">' + t.foot + (d.id ? " " + t.id + ": " + esc(d.id) : "") + mail + "</p></div>";
   }
+  // one request at a time; a late reply to an earlier question never replaces a newer one
+  var seq = 0, busy = false, ex = document.getElementById("ex");
+  function setBusy(b) {
+    busy = b; go.disabled = b;
+    Array.prototype.forEach.call(ex.querySelectorAll("button"), function (x) { x.disabled = b; });
+  }
   function ask(text) {
-    var lang = guessLang(text);
-    go.disabled = true;
+    if (busy) return;
+    var lang = guessLang(text), my = ++seq;
+    setBusy(true);
     out.innerHTML = '<p class="waiting">' + T[lang].wait + "</p>";
+    var ctl = window.AbortController ? new AbortController() : null;
+    var timer = setTimeout(function () { if (ctl) ctl.abort(); }, 60000);
     fetch(API, { method: "POST", headers: { "Content-Type": "application/json" },
-                 body: JSON.stringify({ q: text }) })
+                 body: JSON.stringify({ q: text }), signal: ctl ? ctl.signal : undefined })
       .then(function (r) { return r.json().then(function (d) { return { s: r.status, d: d }; }); })
       .then(function (x) {
+        if (my !== seq) return;
         if (x.s === 429) out.innerHTML = '<p class="waiting">' + T[lang].rate + "</p>";
         else if (x.d && x.d.answer) render(x.d, lang);
         else out.innerHTML = '<p class="waiting">' + T[lang].err + "</p>";
       })
-      .catch(function () { out.innerHTML = '<p class="waiting">' + T[lang].err + "</p>"; })
-      .then(function () { go.disabled = false; });
+      .catch(function () { if (my === seq) out.innerHTML = '<p class="waiting">' + T[lang].err + "</p>"; })
+      .then(function () { clearTimeout(timer); if (my === seq) setBusy(false); });
   }
   f.addEventListener("submit", function (e) { e.preventDefault(); var t = q.value.trim(); if (t.length > 2) ask(t); });
   q.addEventListener("keydown", function (e) { if (e.key === "Enter" && (e.ctrlKey || e.metaKey)) f.requestSubmit(); });
-  document.getElementById("ex").addEventListener("click", function (e) {
-    if (e.target.tagName === "BUTTON") { q.value = e.target.textContent; ask(q.value); }
+  ex.addEventListener("click", function (e) {
+    if (e.target.tagName === "BUTTON" && !busy) { q.value = e.target.textContent; ask(q.value); }
   });
 })();
 </script>

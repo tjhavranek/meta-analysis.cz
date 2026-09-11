@@ -1179,8 +1179,9 @@ def write_index(items, key=None):
 
     body = (f'    <div class="lede">\n      <h1>{esc(title)}</h1>\n'
             f'      <p>{esc(HUB_LEDE if not key else desc)}</p>\n{counts}'
-            + ('      <p class="ask-link"><a href="/komentare/ask/">Zeptejte se AI Tomáše</a>'
-               ' AI odpovídá česky i anglicky podle textů na tomto webu.</p>\n' if not key else '')
+            + ('      <p class="ask-link"><a href="/komentare/ask/">Zeptejte se AI.</a>'
+               ' Odpovídá podle textů Tomáše a Zuzany Havránkových na tomto webu a odkazuje na zdroje.</p>\n'
+               if not key else '')
             + '    </div>\n'
             + (FILTER if not key else "")
             + listing(sel, show_cat=not key))
@@ -2258,7 +2259,7 @@ def main():
     # slug — so they must be named here or the sweep below deletes them every rebuild.
     # "files" holds hosted documents (the CNB advisor-opinion PDFs); static, not
     # slug-backed, so the sweep must spare it like the other generated directories.
-    # "ask" is the hand-written AI Tomáš question page; web_meta/ask_worker answers it.
+    # "ask" is the hand-written "Zeptejte se AI" question page; web_meta/ask_worker answers it.
     live = ({a["slug"] for a in items if a["media"] == "text"} | set(SECTIONS)
             | {"data", "posts", "ze-siti", "social-img", "item-img", "files", "ask"})
     orphans = [d for d in KDIR.iterdir()
