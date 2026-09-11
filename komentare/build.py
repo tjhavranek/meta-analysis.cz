@@ -903,7 +903,9 @@ def write_item(a):
           # instalment's date, and "Poprvé vyšlo" with that date would pin all of it
           # there. `date_from` names the first instalment.
           _from = a.get("date_from")
-          prov = (((f'Published in instalments in {esc(a["outlet"])} from '
+          # a website is published ON, a paper IN
+          _on = "on" if "." in a["outlet"] else "in"
+          prov = (((f'Published in instalments {_on} {esc(a["outlet"])} from '
                     f'{cs_date(_from, None, lang)} to ' if en else
                     f'Původně zveřejňováno {where} od {cs_date(_from, None, lang)} do ')
                    if _from else

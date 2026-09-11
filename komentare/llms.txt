@@ -2,7 +2,7 @@
 
 > Publicistika Tomáše Havránka a Zuzany Havránkové: komentáře pro celostátní média, sloupky pro litomyšlskou Lilii, rozhovory, stanoviska poradce bankovní rady ČNB a kratší příspěvky ze sítí. Texty jsou zde archivovány v plném znění s odkazem na původní vydání.
 
-Publicistika: 221 položek a 25 kratších příspěvků ze sítí (246 záznamů celkem), 2009–2026. Plné znění každého textu je na uvedené adrese; zdrojový Markdown položek je v /komentare/src/ (příspěvky ze sítí zdrojový soubor nemají). Licence: CC BY 4.0, jako vše na meta-analysis.cz; u převzatých textů uveďte i původní vydání.
+Publicistika: 222 položek a 25 kratších příspěvků ze sítí (247 záznamů celkem), 2009–2026. Plné znění každého textu je na uvedené adrese; zdrojový Markdown položek je v /komentare/src/ (příspěvky ze sítí zdrojový soubor nemají). Licence: CC BY 4.0, jako vše na meta-analysis.cz; u převzatých textů uveďte i původní vydání.
 
 ## Celostátní komentáře
 
@@ -244,6 +244,7 @@ Columns and commentary written in English: policy pieces for VoxEU/CEPR, posts o
 - [Headline inflation measures shouldn't ignore costs of home ownership](https://meta-analysis.cz/komentare/voxeu-home-ownership/) — VoxEU / CEPR, 12. září 2017
 - [Advisor's Opinion on Situation Report No. 6, 2016](https://meta-analysis.cz/komentare/cnb-advisor-opinion-6sz-2016/) — Czech National Bank, 26. září 2016
 - [Advisor's Opinion on Situation Report No. 2, 2016](https://meta-analysis.cz/komentare/cnb-advisor-opinion-2sz-2016/) — Czech National Bank, 29. března 2016
+- [Road trip 2009: the American West](https://meta-analysis.cz/komentare/vylet09-road-trip-2009-american-west/) — vylet09.blogspot.com, 18. srpna 2009
 
 ## Posts (ze sítí)
 

@@ -8,8 +8,9 @@ date: "2009-08-18"
 headline: "Road trip 2009: Západ USA"
 byline: "Tomáš Havránek"
 genre: "travelogue"
+translation: "vylet09-road-trip-2009-american-west"
 perex: "13 000 km, 11 států, 42 dní, 4 cestovatelé"
-body_note: "Cestovní deník z léta 2009, psaný na blogu [vylet09.blogspot.com](https://vylet09.blogspot.com/) od října 2008 do srpna 2009: nejprve příprava, pak den po dni cesta přes 11 států a nakonec trocha statistiky. Zde je všech 53 příspěvků v původním znění, seřazených od nejstaršího, aby se cesta dala číst postupně; blog je řadil opačně. Pod nadpisem je vždy datum zveřejnění příspěvku, v nadpisu deníkových zápisů den cesty. Dva soubory ke stažení a vlákno na fóru RoadTripAmerica, na které se text odvolává, už nejsou dostupné."
+body_note: "Cestovní deník z léta 2009, psaný na blogu [vylet09.blogspot.com](https://vylet09.blogspot.com/) od října 2008 do srpna 2009: nejprve příprava, pak den po dni cesta přes 11 států a nakonec trocha statistiky. Zde je všech 53 příspěvků v původním znění, seřazených od nejstaršího, aby se cesta dala číst postupně; blog je řadil opačně. Pod nadpisem je vždy datum zveřejnění příspěvku, v nadpisu deníkových zápisů den cesty. Dva soubory ke stažení a vlákno na fóru RoadTripAmerica, na které se text odvolává, už nejsou dostupné. Anglický překlad: [Road trip 2009: the American West](/komentare/vylet09-road-trip-2009-american-west/)."
 images: "2009-08_vylet09-mapa.png"
 image_alt: "Mapa západu USA s červeně vyznačenou trasou výletu: z Denveru na sever k Black Hills a do Yellowstonu, přes Utah a Las Vegas do Kalifornie, na sever přes Yosemite do Oregonu, pak podél pobřeží Pacifiku na jih do San Diega a přes Arizonu a jih Colorada zpět do Denveru. Kroužky označují zastávky u národních parků, památek a měst, šedé tečky kempy."
 image_figure: "1"
@@ -17,7 +18,7 @@ image_figure: "1"
 
 # Road trip 2009: Západ USA
 
-*Mapa 1: Trasa výletu se začátkem a koncem v Denveru, podle původní mapy z blogu. Kroužky jsou zastávky, šedé tečky místa noclehů. [Mapa v plné velikosti](/komentare/item-img/2009-08_vylet09-mapa.png), [interaktivní verze na Mapách Google](https://www.google.com/maps/d/viewer?mid=17ANy8eHJUshCvFcH6rp86vAse6I).*
+*Mapa 1: Trasa výletu se začátkem a koncem v Denveru, podle původní mapy z blogu; Los Gatos, Big Sur a Santa Barbara mezi San Franciscem a Los Angeles jsou doplněny podle deníku. Kroužky jsou zastávky, šedé tečky místa noclehů. [Mapa v plné velikosti](/komentare/item-img/2009-08_vylet09-mapa.png), [interaktivní verze na Mapách Google](https://www.google.com/maps/d/viewer?mid=17ANy8eHJUshCvFcH6rp86vAse6I).*
 
 ## Výlet je definitivní!
 
