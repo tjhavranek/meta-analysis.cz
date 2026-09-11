@@ -44,7 +44,7 @@ At 8 l/100 km over 15,000 km, petrol will come to about $860 (CZK 4,000 per pers
 
 Accommodation (campsites, a motel): about $1,200 (CZK 5,500 per person)
 
-Day-to-day food (with a propane grill): about $2,000 (CZK 9,250 per person).
+Food (with a propane grill): about $2,000 (CZK 9,250 per person).
 
 Other costs (national parks pass, fees, a reserve): about $1,600 (CZK 7,400 per person).
 
@@ -280,7 +280,7 @@ We had a comfortable night's sleep and set off for Zion some time after half pas
 
 *Posted 19 July 2009*
 
-Terrible heat. We drive along the highway towards Las Vegas and the temperature climbs towards 47 degrees Celsius in the shade. We turn off onto a local road and drive along the Lake Mead reservoir through the Arizona and then the Nevada desert. Without air conditioning it would not have been much fun. We put our watches back an hour and approach Hoover Dam. We spend a very long time on the last few miles to the enormous dam, practically standing still in a queue of traffic. But the dam is worth seeing. The air conditioning running flat out and the stop-start crawl in the queue mean we use a lot of petrol, so we stop to fill up again (and have an excellent lunch at Burger King). Around 5 we check in at the Fremont hotel, and in the evening we go out to see Vegas: the Fremont Street Experience and, of course, the Strip. The perfect contrast to orderly Salt Lake City. Around midnight it is still 44 degrees, hot as hell. We walk the whole Strip, get to the Stratosphere Tower and ride up to the roller coaster at the very top of the tallest building west of the Mississippi. We get our breath back after the roller coaster and enjoy the beautiful view over Vegas. Back at the Fremont we try a little gambling (we won 15 dollars), and some time before two we go back to our rooms.
+Terrible heat. We drive along the highway towards Las Vegas and the temperature climbs towards 47 degrees Celsius in the shade. We turn off onto a local road and drive along the Lake Mead reservoir through the desert, first in Arizona and then in Nevada. Without air conditioning it would not have been much fun. We put our watches back an hour and approach Hoover Dam. We spend a very long time on the last few miles to the enormous dam, practically standing still in a queue of traffic. But the dam is worth seeing. The air conditioning running flat out and the stop-start crawl in the queue mean we use a lot of petrol, so we stop to fill up again (and have an excellent lunch at Burger King). Around 5 we check in at the Fremont hotel, and in the evening we go out to see Vegas: the Fremont Street Experience and, of course, the Strip. The perfect contrast to orderly Salt Lake City. Around midnight it is still 44 degrees, hot as hell. We walk the whole Strip, get to the Stratosphere Tower and ride up to the roller coaster at the very top of the tallest building west of the Mississippi. We get our breath back after the roller coaster and enjoy the beautiful view over Vegas. Back at the Fremont we try a little gambling (we won 15 dollars), and some time before two we go back to our rooms.
 
 ## Saturday 18 July (Death Valley)
 
