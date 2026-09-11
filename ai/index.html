@@ -1,0 +1,233 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Ask about this research</title>
+<meta name="robots" content="noindex" />
+<meta name="description" content="Ask a question about the meta-analyses on this site. An AI answers from the papers, notes, and datasets here, with links to the sources." />
+<link rel="canonical" href="https://meta-analysis.cz/ai/" />
+<link href="/style.css" rel="stylesheet" type="text/css" />
+<style>
+.ask-form textarea{ width:100%; box-sizing:border-box; min-height:5.5rem; padding:.7rem .8rem; font:inherit;
+  font-size:1.02rem; line-height:1.45; color:var(--ink); background:var(--paper); border:1px solid var(--rule);
+  border-radius:6px; resize:vertical; }
+.ask-form textarea:focus{ outline:2px solid var(--accent); outline-offset:1px; }
+.ask-row{ display:flex; gap:.8rem; align-items:center; margin-top:.7rem; flex-wrap:wrap; }
+.ask-row button{ font:inherit; font-weight:600; padding:.5rem 1.3rem; border:0; border-radius:6px;
+  background:var(--accent); color:#fff; cursor:pointer; }
+.ask-row button[disabled]{ opacity:.55; cursor:default; }
+.ask-hint{ color:var(--ink-soft); font-size:.88rem; }
+.ts{ margin-top:.8rem; }
+.examples{ margin:1.1rem 0 0; display:flex; flex-wrap:wrap; gap:.45rem; }
+.examples button{ font:inherit; font-size:.88rem; padding:.3rem .7rem; border-radius:999px;
+  border:1px solid var(--rule); background:transparent; color:var(--ink-soft); cursor:pointer; text-align:left; }
+.examples button:hover{ color:var(--accent); border-color:var(--accent); }
+.answer{ margin:2rem 0 0; }
+.answer .who{ font-weight:600; margin:0 0 .35rem; }
+.answer .text p{ margin:0 0 .8rem; }
+.answer .text sup a{ text-decoration:none; font-size:.75em; padding:0 .1em; }
+.answer .sources{ margin:1rem 0 0; padding:0; list-style:none; font-size:.92rem; }
+.answer .sources li{ margin:0 0 .35rem; color:var(--ink-soft); }
+.answer .foot{ margin-top:1.1rem; font-size:.82rem; color:var(--ink-soft); }
+.answer.note .text{ color:var(--ink-soft); }
+.waiting{ color:var(--ink-soft); margin-top:1.5rem; }
+.privacy{ margin-top:2.5rem; font-size:.82rem; color:var(--ink-soft); }
+</style>
+</head>
+<body>
+<div id="wrapper">
+<div id="logo">
+	<a class="masthead-home" href="/">meta-analysis.cz</a>
+	<p class="site-name"><a href="/ai/">Ask about this research</a></p>
+	<h2> <span class="mk">&raquo;</span>&nbsp;&nbsp;&nbsp; answers from the papers on this site</h2>
+</div>
+<div id="header">
+	<div id="menu">
+		<ul>
+			<li class="current_page_item"><a href="/ai/">Ask</a></li>
+			<li><a href="/maive/how-to/">How to run MAIVE</a></li>
+			<li><a href="/guidelines/">Guidelines</a></li>
+			<li><a href="/datasets/">Datasets</a></li>
+			<li><a href="/">All meta-analyses</a></li>
+		</ul>
+	</div>
+</div>
+</div>
+<!-- start page -->
+<div id="page" class="single">
+	<div id="content">
+		<div class="post">
+			<div class="entry">
+
+<h1>Ask about this research</h1>
+<p class="lede">Type a question; an AI answers from the papers, notes, and datasets on this site, with
+numbered links to the sources, and says so when the site does not cover it. It is not a personal
+statement by the authors. This is a pilot on a free service, so it gives about 55 answers a day in
+total.</p>
+
+<form class="ask-form" id="f">
+  <label for="q" class="ask-hint">Your question</label>
+  <textarea id="q" name="q" maxlength="600" placeholder="Ask a question about the research on this site…" required></textarea>
+  <div class="ask-row">
+    <button type="submit" id="go">Ask</button>
+    <span class="ask-hint">An answer takes about 10 seconds.</span>
+  </div>
+  <div class="ts" id="ts"></div>
+  <div class="examples" id="ex">
+    <button type="button">How should I correct for publication bias if I have only 20 estimates?</button>
+    <button type="button">What is MAIVE and what problem does it solve?</button>
+    <button type="button">Do hedge funds beat the market after fees?</button>
+    <button type="button">What does research say about the optimal inflation rate?</button>
+    <button type="button">Does class size affect how much students learn?</button>
+  </div>
+</form>
+<div id="out" aria-live="polite"></div>
+<p class="privacy">We keep questions and answers for 30 days so that a wrong answer can be corrected
+or withdrawn; nothing else about you is stored. They are processed by Cloudflare, which also
+protects the page from bots (Turnstile). Questions from one address are counted only within the
+day, under an unreadable code, and wiped every night.</p>
+
+			</div>
+		</div>
+	</div>
+</div>
+<!-- end page -->
+<footer class="site-foot">
+<p class="foot-lede"><b>meta-analysis.cz</b> collects meta-analyses, the data behind them, the
+code that produced them, and the methods for doing them. It is maintained by <a href="/about/"><b>Tomas Havranek</b> and
+<b>Zuzana Irsova</b></a> at the Institute of Economic Studies, Charles University, Prague.</p>
+<p class="foot-nav"><a href="/">All meta-analyses</a> &middot;
+<a href="/papers/">Papers in full</a> &middot;
+<a href="/results/">Headline results</a> &middot;
+<a href="/datasets/">Datasets and the pooled table</a> &middot;
+<a href="/maive/">MAIVE</a> &middot;
+<a href="/guidelines/">Practitioner&#x27;s guide</a> &middot;
+<a href="/notes/">Research notes</a> &middot;
+<a href="/impact/">How this work has been used</a> &middot;
+<a href="https://www.easymeta.org/">EasyMeta web app</a></p>
+<p class="foot-who"><b>Tomas Havranek</b> &middot; <a href="https://www.tomashavranek.cz/">tomashavranek.cz</a> &middot; <a href="https://ies.fsv.cuni.cz/en/contacts/institute-members/78067720">IES FSV UK</a> &middot; <a href="https://orcid.org/0000-0002-3158-2539">ORCID</a> &middot; <a href="https://scholar.google.com/citations?user=BF0BvBkAAAAJ">Google Scholar</a> &middot; <a href="https://ideas.repec.org/f/pha418.html">RePEc</a> &middot; <a href="https://www.scopus.com/authid/detail.uri?authorId=24453189000">Scopus</a> &middot; <a href="https://cepr.org/about/people/tomas-havranek">CEPR</a> &middot; <a href="https://metrics.stanford.edu/people/tomas-havranek">Stanford METRICS</a></p>
+<p class="foot-who"><b>Zuzana Irsova</b> &middot; <a href="https://www.irsova.com/">irsova.com</a> &middot; <a href="https://ies.fsv.cuni.cz/en/contacts/institute-members/73504033">IES FSV UK</a> &middot; <a href="https://orcid.org/0000-0002-0753-8124">ORCID</a> &middot; <a href="https://scholar.google.com/citations?user=LaHrICUAAAAJ">Google Scholar</a> &middot; <a href="https://ideas.repec.org/e/pir23.html">RePEc</a> &middot; <a href="https://www.scopus.com/authid/detail.uri?authorId=37080793200">Scopus</a> &middot; <a href="https://cepr.org/about/people/zuzana-irsova">CEPR</a> &middot; <a href="https://metrics.stanford.edu/people/zuzana-irsova">Stanford METRICS</a></p>
+<p class="foot-cite"><b>How to cite this collection:</b> Havranek, T. and Z. Irsova (2026).
+meta-analysis.cz: harmonised estimate-level data from meta-analyses in economics. Zenodo.
+<a href="https://doi.org/10.5281/zenodo.21773678">https://doi.org/10.5281/zenodo.21773678</a>.
+Individual papers carry their own citation on their own page.</p>
+<p class="foot-licence"><b>Licence: CC BY 4.0.</b> Everything on this site is licensed under the
+<a href="https://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0
+International Licence</a>. That covers the papers, the datasets, their CSV and Parquet conversions,
+the pooled table, the codebooks, and the documentation. You may copy, redistribute, adapt, and reuse
+any of it for any purpose, including commercial use and training machine-learning models, as long
+as you give attribution to meta-analysis.cz. You do not need to ask.</p>
+<p class="foot-machine">For machines: <a href="/api/v1/datasets.json">datasets.json</a> &middot;
+<a href="/api/v1/datapackage.json">datapackage.json</a> &middot;
+<a href="/api/v1/croissant.json">croissant.json</a> &middot;
+<a href="/llms.txt">llms.txt</a> &middot; <a href="/llms-full.txt">llms-full.txt</a> &middot;
+<a href="/sitemap.xml">sitemap.xml</a> &middot; <a href="/LICENSE">LICENSE</a></p>
+</footer>
+<script src="https://challenges.cloudflare.com/turnstile/v0/api.js?render=explicit" async defer></script>
+<script>
+(function () {
+  var API = "https://ai-tomas.t-havranek.workers.dev/ask";
+  var REPORT = "tomas.havranek@fsv.cuni.cz";
+  var T = { who: "AI", src: "Sources", foot: "AI answer based on published texts, not a personal statement by the authors.",
+            id: "Answer ID", report: "Report this answer", wait: "The AI is looking for an answer…",
+            err: "Something went wrong. Please try again.", rate: "Too many questions, try again in a minute.",
+            verify: "We couldn't verify that you're not a bot. Please reload the page and try again." };
+  var AU = { TH: "Tomas Havranek", ZH: "Zuzana Havrankova", "TH+ZH": "Tomas Havranek and Zuzana Havrankova",
+             "TH+co": "Havranek and coauthors", "ZH+co": "Havrankova and coauthors",
+             "TH+ZH+co": "Havranek, Havrankova and coauthors" };
+  var MON = ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"];
+  var f = document.getElementById("f"), q = document.getElementById("q"),
+      go = document.getElementById("go"), out = document.getElementById("out"), ex = document.getElementById("ex");
+  function esc(s) { return String(s).replace(/[&<>"]/g, function (c) {
+    return { "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;" }[c]; }); }
+  // sources link only to this site over https; anything else is shown as plain text
+  function safeUrl(u) {
+    try { var x = new URL(u); return (x.protocol === "https:" && x.hostname === "meta-analysis.cz") ? x.href : ""; }
+    catch (e) { return ""; }
+  }
+  function fmtDate(s) {
+    var m = /^([0-9]{4})-([0-9]{2})-([0-9]{2})$/.exec(s || "");
+    return m ? (+m[3]) + " " + MON[+m[2] - 1] + " " + m[1] : (s || "");
+  }
+  function render(d) {
+    var srcs = d.sources || [];
+    var paras = String(d.answer || "").split(/\n\s*\n/).map(function (p) {
+      var h = esc(p).replace(/\[(\d+(?:\s*,\s*\d+)*)\]/g, function (m, nums) {
+        return nums.split(/\s*,\s*/).map(function (n) {
+          var s = srcs[+n - 1];
+          if (!s) return "[" + n + "]";
+          var su = safeUrl(s.url);
+          return su ? '<sup><a href="' + esc(su) + '" title="' + esc(s.title) + '">' + n + "</a></sup>" : "<sup>" + n + "</sup>";
+        }).join("");
+      });
+      return "<p>" + h + "</p>";
+    }).join("");
+    var list = srcs.map(function (s, i) {
+      var meta = [AU[s.who], fmtDate(s.date)].filter(Boolean).map(esc).join(", ");
+      var su = safeUrl(s.url);
+      return "<li>" + (i + 1) + ". " + (su ? '<a href="' + esc(su) + '">' + esc(s.title) + "</a>" : esc(s.title)) +
+             (meta ? ", " + meta : "") + "</li>";
+    }).join("");
+    var mail = ' &middot; <a href="mailto:' + REPORT + "?subject=" + encodeURIComponent("Ask AI " + (d.id || "")) + '">' + T.report + "</a>";
+    out.innerHTML = '<div class="answer' + (d.mode === "answer" ? "" : " note") + '">' +
+      '<p class="who">' + T.who + ":</p>" + '<div class="text">' + paras + "</div>" +
+      (list ? '<p class="who" style="margin-top:1rem">' + T.src + ':</p><ul class="sources">' + list + "</ul>" : "") +
+      '<p class="foot">' + T.foot + (d.id ? " " + T.id + ": " + esc(d.id) : "") + mail + "</p></div>";
+  }
+  // Turnstile: invisible unless Cloudflare needs an interaction; one fresh token per question
+  var SITEKEY = "0x4AAAAAAEwJOeDGxyaqRFVt", tsId = null;
+  var tsTimer = setInterval(function () {
+    if (!window.turnstile) return;
+    clearInterval(tsTimer);
+    try { tsId = turnstile.render("#ts", { sitekey: SITEKEY, appearance: "interaction-only", action: "ask" }); }
+    catch (e) { tsId = null; }
+  }, 200);
+  function tsToken() { try { return tsId !== null ? (turnstile.getResponse(tsId) || "") : ""; } catch (e) { return ""; } }
+  function tsReset() { try { if (tsId !== null) turnstile.reset(tsId); } catch (e) {} }
+  function withToken(cb) {
+    var waited = 0;
+    (function poll() {
+      var tok = tsToken();
+      if (tok || waited >= 8000) return cb(tok);
+      waited += 250; setTimeout(poll, 250);
+    })();
+  }
+  // one request at a time; a late reply to an earlier question never replaces a newer one
+  var seq = 0, busy = false;
+  function setBusy(b) {
+    busy = b; go.disabled = b;
+    Array.prototype.forEach.call(ex.querySelectorAll("button"), function (x) { x.disabled = b; });
+  }
+  function note(t) { out.innerHTML = '<p class="waiting">' + t + "</p>"; }
+  function ask(text) {
+    if (busy) return;
+    var my = ++seq;
+    setBusy(true);
+    note(T.wait);
+    withToken(function (tok) {
+      var ctl = window.AbortController ? new AbortController() : null;
+      var timer = setTimeout(function () { if (ctl) ctl.abort(); }, 60000);
+      fetch(API, { method: "POST", headers: { "Content-Type": "application/json" },
+                   body: JSON.stringify({ q: text, ts: tok }), signal: ctl ? ctl.signal : undefined })
+        .then(function (r) { return r.json().then(function (d) { return { s: r.status, d: d }; }); })
+        .then(function (x) {
+          if (my !== seq) return;
+          if (x.s === 429) note(T.rate);
+          else if (x.s === 403) note(T.verify);
+          else if (x.d && x.d.answer) render(x.d);
+          else note(T.err);
+        })
+        .catch(function () { if (my === seq) note(T.err); })
+        .then(function () { clearTimeout(timer); tsReset(); if (my === seq) setBusy(false); });
+    });
+  }
+  f.addEventListener("submit", function (e) { e.preventDefault(); var t = q.value.trim(); if (t.length > 2) ask(t); });
+  q.addEventListener("keydown", function (e) { if (e.key === "Enter" && (e.ctrlKey || e.metaKey)) f.requestSubmit(); });
+  ex.addEventListener("click", function (e) {
+    if (e.target.tagName === "BUTTON" && !busy) { q.value = e.target.textContent; ask(q.value); }
+  });
+})();
+</script>
+</body>
+</html>

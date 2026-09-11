@@ -47,4 +47,7 @@ SELF_MANAGED = {
     "chemnitz",    # hand-authored, noindex handout for the MAER-Net 2026 PhD workshop
                    # (demo data and prompts). Not a paper: Highwire citation_* tags and
                    # ScholarlyArticle on it would be fabricated.
+    "ai",          # hand-authored, noindex question page (pilot); web_meta/ask_worker answers
+                   # it. Not a paper: Highwire citation_* tags and ScholarlyArticle on it
+                   # would be fabricated.
 }
