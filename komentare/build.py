@@ -27,7 +27,8 @@ Frontmatter
     issue                  for Lilie, e.g. "2025/10"
     date_precision         "month" when only the issue month is known
     body_note              rendered as an editorial note above the text
-    mirror                 slug of a second copy at /notes/<slug>/ (English research
+    description            meta and JSON-LD description; wins over the perex there
+    mirror                slug of a second copy at /notes/<slug>/ (English research
                            writing is published in both places); points rel=canonical
                            and og:url there. Maintained by redesign/sync_notes.py.
     written_by             who wrote a reported piece the author only speaks in
@@ -822,7 +823,10 @@ def write_item(a):
 
     body_html = fix_quotes(md_to_html(a["body"], item_figures(a)))
     plain = re.sub(r"\s+", " ", re.sub(r"<[^>]+>", " ", body_html)).strip()
-    desc = a.get("perex") or ((plain[:190].rsplit(" ", 1)[0] + "…") if len(plain) > 190 else plain)
+    # `description:` wins where a perex is too terse to tell a search result what the item
+    # is, e.g. a blog's tagline of bare numbers
+    desc = (a.get("description") or a.get("perex")
+            or ((plain[:190].rsplit(" ", 1)[0] + "…") if len(plain) > 190 else plain))
     node["description"] = desc
     if a.get("perex"):
         node["abstract"] = a["perex"]
