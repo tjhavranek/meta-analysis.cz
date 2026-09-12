@@ -1366,10 +1366,10 @@ def main():
            f"example with every number archived at {BASE}/api/v1/maive-howto.json, the same run "
            f"in R, and a ready request for the EasyMeta API",
            f"- [Teaching: courses on meta-analysis]({BASE}/teaching/): slides with their LaTeX "
-           f"sources, Stata and R code, data, and a recording, from courses in Osaka (2026) and "
+           f"sources, Stata and R code, data, and recordings, from courses in Osaka (2026) and "
            f"Stockholm (2025)",
-           f"- [Introduction to Meta-Analysis in Economics, Osaka 2026]({BASE}/teaching/osaka-2026/): "
-           f"a one-day course at ISER, the University of Osaka, with the slides as text at "
+           f"- [Meta-Analysis in Economics, Osaka 2026]({BASE}/teaching/osaka-2026/): "
+           f"a three-hour course at ISER, the University of Osaka, with the slides as text at "
            f"{BASE}/teaching/osaka-2026/slides/",
            f"- [Meta-Analysis for Policy Economists, Stockholm 2025]({BASE}/teaching/stockholm-2025/): "
            f"a two-day course at Tillväxtanalys, with the slides as text at "

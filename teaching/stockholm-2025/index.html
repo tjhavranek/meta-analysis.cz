@@ -158,7 +158,7 @@ professional success</a> as the running example.</p>
 <h2 id="slides">Slides</h2>
 
 <ul class="reading">
-<li><a href="/teaching/stockholm-2025/slides.pdf">slides.pdf</a>: the 234 pages as taught</li>
+<li><a href="/teaching/stockholm-2025/slides.pdf">slides.pdf</a>: the 234 PDF pages as taught</li>
 <li><a href="/teaching/stockholm-2025/slides/">The slides as text</a>: every slide's title and text, for reading and searching without the PDF</li>
 <li><a href="/teaching/stockholm-2025/slides.tex">slides.tex</a>: the LaTeX source, and <a href="/teaching/stockholm-2025/latex.zip">latex.zip</a>: the source with all 133 figures, ready for pdflatex</li>
 </ul>
@@ -172,7 +172,8 @@ course</a> of March 2026 uses a shorter and updated version of this deck.</p>
 
 <p>The hands-on part replicates selected analyses of <a href="/beauty/">the meta-analysis of
 beauty and professional success</a>, from the raw estimates to estimates corrected for
-publication bias and to the effect implied by best practice. The files as they were handed out:</p>
+publication bias and to the effect implied by best practice. The course files, from which only
+hidden file metadata, such as saved-folder paths, has been removed:</p>
 
 <ul class="reading">
 <li><a href="/teaching/stockholm-2025/code/beauty.xlsx">beauty.xlsx</a>: the 1,159 estimates from 67 studies, with their moderator variables</li>
@@ -197,7 +198,9 @@ packages it depends on):</p>
 <pre class="usage"><code>install.packages(c("BMS", "phacking"))</code></pre>
 
 <p>In Stata, put beauty.xlsx in the working directory and run beauty.do section by section. In R,
-put beauty_bma.csv next to beauty_bma.R and run the script. The main corrections for publication bias and p-hacking now also run without any installation at <a href="https://www.easymeta.org/">EasyMeta.org</a>.</p>
+put beauty_bma.csv next to beauty_bma.R and run the script. RTMA and BMA are simulation-based,
+so their results can differ slightly between runs; a set.seed() line at the top of the R script
+makes a run repeatable. The main corrections for publication bias and p-hacking now also run without any installation at <a href="https://www.easymeta.org/">EasyMeta.org</a>.</p>
 
 <h2 id="readings">Readings</h2>
 
@@ -210,8 +213,7 @@ put beauty_bma.csv next to beauty_bma.R and run the script. The main corrections
 <h2 id="licence">Licence</h2>
 
 <p>CC BY 4.0, like everything on this site; the code files also carry an MIT licence in their
-headers. A few figures and screenshots in the slides reproduce other people's work, such as
-textbook diagrams and search-engine results, and those remain under their original terms.</p>
+headers.</p>
 
 			</div>
 		</div>
