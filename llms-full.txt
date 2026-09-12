@@ -43003,3 +43003,2635 @@ FIGURE S29. MSE: $p$-hacking selection, positive effect ($\alpha_1 = 1$), variou
 89. Strack F, Martin LL, Stepper S. Inhibiting and facilitating conditions of the human smile: A nonobtrusive test of the facial feedback hypothesis. *Journal of Personality and Social Psychology* 1988; 54(5): 768–777.
 90. Hauser M, Cushman F, Young L, Kang-Xing Jin R, Mikhail J. A dissociation between moral judgments and justifications. *Mind Language* 2007; 22(1): 1–21.
 91. Bartos F, Maier M, Wagenmakers EJ, et al. Footprint of publication selection bias on meta-analyses in medicine, environmental sciences, psychology, and economics. *Research Synthesis Methods* 2024; 15(3): 500-511.
+
+## Meta-Analysis in Economics (University of Osaka, 2026)
+URL: https://meta-analysis.cz/teaching/osaka-2026/
+Licence: CC BY 4.0
+
+Meta-Analysis in Economics: Practical Tools for Synthesizing Research. A
+three-hour course at the Institute of Social and Economic Research (ISER), the University of
+Osaka, on 16 March 2026, on site and online. Tomas Havranek, Charles University, Prague.
+
+Slides (PDF)
+Recordings
+
+From the announcement:
+
+This mini-course provides a practical introduction to meta-analysis in economics,
+with an emphasis on tools that are useful for applied and policy work. Using the beauty premium
+meta-analysis as a running example, we will cover (i) how to define and collect comparable
+estimates and build a transparent meta-analytic dataset, (ii) how to diagnose and correct for
+selective reporting (including publication bias and p-hacking) and (iii) how to model and
+interpret heterogeneity across studies and translate it into credible “implied
+effects.” The lectures will include worked examples with code (mainly Stata, with a small
+amount of R) and focus on interpretation and best practices: what the methods do, what
+assumptions they need, and how to report results in a way that is informative and
+defensible.
+
+### Schedule
+
+10:00 to 10:45 Lecture 1. Meta-analysis workflow: scope and data collection
+
+11:00 to 11:45 Lecture 2. Selective reporting: key concepts and practical tools
+
+12:45 to 13:30 Lecture 3. Heterogeneity: key concepts and practical tools
+
+13:45 to 14:30 Lecture 4. Putting it together: interpretation and best practices
+
+Times are Japan Standard Time. The day was organised by Taisuke Imai and Chishio Furukawa,
+with support from JSPS KAKENHI (grants 22K21358 and 25H00388) and the Joint Usage and Research
+Center “Behavioral Economics”. In the afternoon Yohei Mitani spoke on “Global
+Meta-Analysis of VSL” and Martina Luskova on “Do Two Wrongs Make a Right? Publication
+and Attenuation Biases in Economics”; the two course recordings do not include those talks.
+
+### Recordings
+
+The four lectures were recorded in two parts:
+
+- Part 1, lectures 1 and 2: 1 hour 51 minutes
+
+- Part 2, lectures 3 and 4: 1 hour 40 minutes
+
+Both are in a shared Dropbox folder, together with the slides, code
+and data as they were handed out.
+
+### Slides
+
+- slides.pdf: the 162 PDF pages as taught, with the closing slide updated to carry the licence line
+
+- The slides as text: every slide's title and text, for reading and searching without the PDF
+
+- slides.tex: the LaTeX source, and latex.zip: the source with all 85 figures, ready for pdflatex
+
+The deck covers Motivation, Literature Search, Data Collection, Conventional Tools, Publication Bias, P-hacking, Heterogeneity and Takeaways. It is a shorter and updated version of the
+Stockholm course of August 2025: the numbers for the beauty
+premium are updated, MAIVE is now published in Nature Communications, and there is a new
+slide on EasyMeta and updated material on AI in meta-analysis. The course data give a mean beauty
+premium of 4.3%, the value marked in two figures of the deck and in the graphs drawn by beauty.do;
+the Results slide gives the updated figure of 5%.
+
+### Corrections
+
+Three slides contain errors found after the course. The PDF and the LaTeX source are left as
+taught; each correction also appears under its slide in the slides as text.
+
+- FE vs. UWLS: variance. The UWLS variance of the pooled estimate is Σ w_i (θ_i - θ̂)^2 / ((k - 1) Σ w_i); the table leaves out the factor k - 1. This is the formula for independent estimates: with several estimates per study, use standard errors clustered by study, as the course code does.
+
+- Estimating τ^2 in random-effects model. The REML line is not the restricted likelihood. REML chooses τ^2 ≥ 0 to minimise Σ log(v_i + τ^2) + log Σ W_i + Σ W_i (y_i - θ̂)^2, where v_i are the within-study variances, W_i = 1/(v_i + τ^2) and θ̂ is the weighted mean; software solves this numerically. A negative DL estimate is set to zero.
+
+- Paxil scandal. The FDA never approved paroxetine for patients under 18: it was approved for adults and promoted for adolescent depression. Study 329 ran from 1994 to 1998 and was published in 2001; the independent reanalysis appeared in 2015.
+
+### Code and data
+
+The hands-on part replicates selected analyses of the meta-analysis of
+beauty and professional success, from the raw estimates to estimates corrected for
+publication bias and to the effect implied by best practice. The course files as participants
+received them (hidden metadata such as saved-folder paths removed):
+
+- beauty.xlsx: the 1,159 estimates from 67 studies, with their moderator variables
+
+- beauty.do: the annotated Stata script for the whole workflow, from summary statistics and graphs to bias corrections and implied estimates
+
+- beauty_bma.csv: the cleaned data for R
+
+- beauty_bma.R: right-truncated meta-analysis (RTMA) and Bayesian model averaging (BMA)
+
+This is the teaching version of the data. The full dataset and the replication package of the
+paper are on its project page.
+
+Stata 15 or later, with these packages:
+
+ssc install winsor2
+ssc install metan
+ssc install ivreg2
+net install boottest, from("https://raw.githubusercontent.com/droodman/boottest/main/")
+ssc install weakiv
+ssc install collin
+
+R 4.5 or later, with the packages BMS and phacking (phacking also installs rstan and the other
+packages it depends on):
+
+install.packages(c("BMS", "phacking"))
+
+In Stata, put beauty.xlsx in the working directory and run beauty.do section by section. In R,
+put beauty_bma.csv next to beauty_bma.R and run the script. RTMA and BMA are simulation-based,
+so their results can differ slightly between runs; to make a run repeatable, add a set.seed() line
+at the top of the R script. The main corrections for publication bias and p-hacking also run without any installation at EasyMeta.org, which gives the R code for each result.
+
+### Readings
+
+- Meta-Analysis of Social Science Research: A Practitioner’s Guide (Irsova, Doucouliagos, Havranek and Stanley, Journal of Economic Surveys, 2024)
+
+- MAIVE: spurious precision in meta-analysis of observational research (Irsova, Bom, Havranek and Rachinger, Nature Communications, 2025), and how to run it
+
+- Guidance for the use of AI in the meta-analysis of economics research and reporting guidelines updated for AI (MAER-Net)
+
+- Applications: beauty and professional success, class size and student achievement, financial incentives and performance, and skill substitution
+
+- AI duels for meta-analysis (the research-audit duel protocol on GitHub)
+
+- EasyMeta.org: meta-analysis in the browser, with corrections for p-hacking
+
+### Licence
+
+CC BY 4.0, like everything on this site; the code files also carry an MIT licence in their
+headers.
+
+A credit line for reuse: Havranek, T. (2026). Meta-Analysis in Economics: Practical Tools for
+Synthesizing Research. Course slides, Institute of Social and Economic Research, The University
+of Osaka, 16 March 2026. https://meta-analysis.cz/teaching/osaka-2026/
+
+## Slides as text: Meta-Analysis in Economics: Practical Tools for Synthesizing Research (Osaka 2026)
+URL: https://meta-analysis.cz/teaching/osaka-2026/slides/
+Licence: CC BY 4.0
+
+The slides as text. Every slide's title and text from the Osaka course of March 2026,
+generated from the LaTeX source so that the course can be read and
+searched without the PDF. Where a slide is mainly a figure, the text says so; the figures are in
+the PDF.
+
+The slides are as taught on 16 March 2026; papers published and numbers updated since then are not reflected in them.
+
+Sections: Motivation, Literature Search, Data Collection, Conventional Tools, Publication Bias, P-hacking, Heterogeneity and Takeaways.
+
+### Motivation
+
+#### Meta important for research, policy, practice
+
+Research experience:
+
+- Affiliate at the Meta-Research Innovation Center, Stanford
+- Panel member at ERC Advanced
+- Convener of Meta-Analysis in Economics Network
+- Meta-Analysis Editor at the Journal of Economic Surveys
+- MAIVE method (Nature Communications)
+- Over 50 metas published, e.g. REStat, JEEA, JOLE, JIE…
+
+Policy experience:
+
+- Former Advisor to the Board, Czech National Bank
+- Former member of the Czech National Economic Council
+- Affiliate at the Centre for Economic Policy Research, London
+
+#### What happens if the government spends more?
+
+Labor supply elasticity is key (but how to calibrate it?): Details: Elminejad et al. (2023, Review of Economic Dynamics)
+
+(With a figure.)
+
+#### What happens if the central bank raises the rate?
+
+Details: Havranek et al. (2015, Journal of International Econ)
+
+(With a figure.)
+
+#### Calibration uncertainty: meta needed!
+
+(Figure.)
+
+#### Estimates of the labor supply elasticity vary
+
+(Figure.)
+
+#### Values around 0.4 to 0.5 used for calibration (CBO)
+
+(Figure.)
+
+#### Bias: some estimates less likely to be reported
+
+(Figure.)
+
+#### Context: different situations yield different estimates
+
+(Figure.)
+
+#### Implied elasticity: taking bias and context into account
+
+Let's construct a hypothetical study that uses all information reported in the literature but puts more weight on selected aspects (high precision, credible identification, etc.)
+
+(With a figure.)
+
+#### Guidelines
+
+(Figure.)
+
+#### Guiding example: effect of beauty on success
+
+(Figure.)
+
+#### Hands on
+
+Open Stata and R
+
+#### Results
+
+- Mean of 1,159 estimates from 67 studies: good looks → earnings ↑ 5%
+- Publication bias. After correction: 3%
+- Control for ability? Productivity? Beauty premium ≈ 1%
+
+www.meta-analysis.cz/beauty
+
+Revisions requested at Nature Human Behaviour.
+
+### Literature Search
+
+#### Inspiration
+
+(Figure.)
+
+#### Motivation example: increasing uncertainty
+
+(Figure.)
+
+#### Motivation example: clear trend
+
+(Figure.)
+
+#### Motivation example: country-level differences
+
+(Figure.)
+
+#### Motivation example: publication bias
+
+(Figure.)
+
+#### Motivation example: method heterogeneity
+
+(Figure.)
+
+#### We use Google Scholar
+
+Advantages:
+
+- Full text, not just the abstract, title, keywords
+- Inclusive
+- Up-to-date
+
+Disadvantages:
+
+- Algorithm changes in time (replicability issues)
+- Too many results
+- Sometimes relevance unclear
+
+#### Search steps (without AI for now)
+
+- Find 5 most relevant studies
+- Design a query that shows the 5 studies near the top
+- Go through first 500 hits
+- Read abstracts
+- Download potentially useful studies
+- Skim them
+- Repeat the procedure for the most recent studies (last 3 years)
+
+#### Search query 1
+
+(Figure.)
+
+#### Search query 2
+
+(Figure.)
+
+#### Primary studies
+
+(Figure.)
+
+#### Snowballing
+
+- No query is perfect
+- Idea: cover studies not identified by the query but frequently mentioned in the literature
+- For each primary study, download the list of references
+- Inspect the 50 studies most frequently cited by the primary studies
+- If you can use some of them, add them to your list
+
+#### Snowballing example
+
+(Figure.)
+
+#### AI-enhanced literature search
+
+- Use Deep Research to explore recent literature and concepts
+- Ask ChatGPT thinking model to refine your Scholar query
+- Download 500 abstracts from Scholar or Publish or Perish
+- Let a ChatGPT Agent screen abstracts for relevant estimates
+- Ask Agent to download PDFs (or download manually)
+- Upload PDFs in batches of 5; ask which report usable estimates
+- (Optional) Use ASReview to double-check or co-train
+
+#### Using thinking models to design Scholar query
+
+- GPT thinking model helps refine search precision
+- Prompt examples:
+- I want to do a meta-analysis of the beauty premium. Suggest a Google Scholar query to find empirical studies on attractiveness and income.
+- Too many irrelevant hits. How can I prioritize regression-based studies only?
+
+- Output improves over iterations: clarify units, methods, outcomes, and keywords
+
+#### Prompting ChatGPT Agent for screening
+
+- Batch input: 20 to 50 abstracts at a time from Scholar export
+- Example prompt: You are an expert in meta-analysis. For each abstract below and all other information you have about the paper, say whether the paper likely reports quantitative estimates on the effect of beauty on labor market outcomes that can be used in a meta-analysis. Justify briefly.
+- Output: Paper 1: Yes (panel data, Table 2) Paper 2: No (conceptual) Paper 3: Maybe (ambiguous)
+
+#### Screening PDFs for quantitative content
+
+- Upload PDFs in small batches (e.g., 5 at a time)
+- Example prompt: For each of these papers, does it contain new empirical estimates of the effect of beauty on wages that I can use in a meta-analysis? Point to specific tables or pages.
+- Output format:
+- Paper A: Yes, Table 4, OLS and IV estimates on beauty premium
+- Paper B: No quantitative analysis
+- Paper C: Yes, appendix regression table
+
+#### Optional enhancements and caveats
+
+- Combine with ASReview for machine-assisted filtering
+- Use Semantic Scholar for better metadata access
+- Avoid over-reliance: AI helps, but expert judgment remains key
+- Protect against false positives: Always validate flagged studies manually
+- End-to-end AI infrastructure for meta-analysis: otto-SR
+- AI duels for meta: https://github.com/tjhavranek/research-audit-duel-protocol
+- Forthcoming MAER-Net guidelines on AI
+
+#### Minimum requirements for meta-analysis
+
+For modern meta-analysis techniques to work, you need at least:
+
+- 30 estimates
+- 10 studies
+- effect sizes
+- standard errors
+- sample sizes
+
+What to do if I have, e.g., just 10 estimates from 4 studies? Focus on the median or weighted means.
+
+#### Quality
+
+- Some studies are published in poor journals or use weak identification. What to do?
+- Option 1: exclude these studies ex ante. Not recommended.
+- Option 2: include these studies with controls for journal quality and methodology. You can always exclude them as a robustness check.
+- Note that some fields have standardized quality benchmarks (risk of bias)
+
+#### Unpublished papers
+
+- Try to collect all studies, published and unpublished
+- If unfeasible, it is possible to focus just on published studies (fewer typos, peer-review)
+- Including unpublished papers unlikely to alleviate publication bias
+- Still too many papers? Recruit a co-author, AI, or use a random subset (last resort)
+
+#### PRISMA: document your literature search
+
+(Figure.)
+
+### Data Collection
+
+#### Effects must be quantitatively comparable
+
+What does it mean?
+
+- When we compare estimates reported in Study 1 and Study 2, it must be clear which one is larger
+- It must be clear how much larger it is
+- t-statistics are not useful measures of effect size
+- Regression coefficients are not comparable in general if studies use different units
+
+#### Elasticities
+
+x-elasticity of y: ε = ((∂ y)/y)/((∂ x)/x)
+
+P-elasticity of Q: ε = ((∂ Q)/Q)/((∂ P)/P) if continuous
+
+ε = ((Q_2 - Q_1)/Q_1)/((P_2 - P_1)/P_1) = (% change in quantity Q)/(% change in price P) if discrete
+
+Elasticities can be recovered from regressing log(Y) on log(X).
+
+#### Semi-elasticities, dollar values, std.dev. changes
+
+- Semi-elasticity: effect of euro adoption on trade, effects of foreign investment on domestic productivity, effects of borders on trade
+- Dollar values: statistical value of life, social cost of carbon
+- Std.dev. changes: effect of class size on student test scores. What to do here?
+- Class size is measured the same way in all studies (number of kids).
+- Test scores are measured differently.
+- Solution: By how many standard deviations do test scores improve if we decrease class size by 10 students?
+
+#### Standardized mean differences
+
+θ = (μ_1 - μ_2)/σ, where μ_1 is the mean for one population, μ_2 is the mean for the other population, and σ is a standard deviation based on either or both populations.
+
+- Very popular in psychology, not much used in economics. Why?
+- For many questions the treatment and control are not binary classifications (we look at the intensity of treatment)
+
+#### Partial correlation coefficients
+
+Example: tuition fees and university enrollment. Ideally, we would need price elasticities of demand (PED), but many studies are not log on log.
+
+So we transform the estimates to partial correlations using t-statistics and degrees of freedom:
+
+PCC(PED)_ij = (T(PED)_ij)/(√(T(PED)_ij^2 + DF(PED)_ij)).
+
+#### PCC caveats
+
+- Last resort: can be used almost always, but we lose a lot of information
+- Difficult to interpret (some guidelines provided by Doucouliagos, 2011)
+- Statistical problems for meta-analysis methods (but this is the case also for SMD)
+- Include robustness checks: e.g. a subsample of elasticities in the case of tuition fees and university enrollment
+
+#### Collect all estimates
+
+(Figure.)
+
+#### Standard errors
+
+- Absolutely crucial for meta-analysis
+- If not reported directly, can be computed from t-statistics or p-values
+- Last resort: approximation based on within-study variation (Matousek et al. 2022)
+- Interactions, transformations: delta method
+
+#### AI-assisted data collection: Overview
+
+- As of March 2026, human review still essential
+- AI reasonably good at
+- Identifying key study dimensions (estimation method, outcome type, etc.)
+- Extracting basic data with structured prompts and examples
+- Reducing workload to a single reviewer
+
+- Tools: ChatGPT thinking, Agent Mode, NotebookLM
+- End-to-end AI infrastructure for meta-analysis: otto-SR
+- Don't rely on one model (add Claude, Gemini, Grok)!!
+
+#### Step-by-step data collection workflow
+
+- Use Deep Research + thinking model to find key coding dimensions
+- Examples: OLS vs IV, cross-section vs panel, outcome types, country, controls
+- Upload a few example PDFs + your coded spreadsheet to ChatGPT Agent
+- Prompt Agent: "Extract these columns from new PDFs using my examples as a guide."
+- Refine extraction prompts based on feedback
+- Use NotebookLM as an independent extraction check
+- Validate discrepancies manually; spot-check the rest
+
+#### Example prompt for PDF data extraction
+
+Here are 3 PDFs and the corresponding rows from my meta-analysis data sheet. Learn the structure. These data are collected well and I want you to collect data from other papers. I will send 5 new PDFs. Extract estimates of the beauty premium and the corresponding standard error. Collect information on the estimation method used, the definition of the beauty variable, definition of the earnings variable.
+
+- Agent mode allows memory and consistency across batches
+- Output can be verified, adjusted, and exported as CSV
+- See summary on MAER-Net website.
+
+#### Graphical estimates, measurement error
+
+Details: Ehrenbergerova et al. (2023, IMF Economic Review)
+
+(With a figure.)
+
+#### Outliers
+
+(Figure.)
+
+#### What to do with outliers?
+
+- No consensus
+- Approach 1: omit very large effects (and standard errors), e.g. more than 3 standard deviations away from the mean
+- Approach 2: run robust meta-regression or use tools for outlier detection in regression
+- Approach 3: use winsorizing (my personal preference)
+- Always report robustness checks
+
+#### Winsorization
+
+(Figure.)
+
+#### Hands on
+
+Open Stata
+
+#### Reflecting context: the effect of beauty on success
+
+(Figure.)
+
+#### Measurement
+
+(Figure.)
+
+#### Data, estimation, publication
+
+(Figure.)
+
+#### Value added
+
+- Meta-analysis can be used to test hypotheses that primary studies cannot investigate
+- Example: the effect of daylight saving time on energy consumption
+- Individual studies have data for individual countries (or provinces)
+- In meta-analysis, we have data for dozens of countries
+- We can investigate the sources of cross-country differences
+
+#### DST savings and latitude
+
+(Figure.)
+
+### Conventional Tools
+
+#### Summary statistics for meta-analysis
+
+- Simple mean of reported estimates: natural starting point
+- But inefficient and affected by outliers, publication bias, p-hacking
+- Median: surprisingly robust to most problems in meta-analysis
+- If you have only a few studies or estimates, focus on the (unweighted) median!
+- Classical meta-analysis approach: use inverse variance as the weight
+
+#### More precision -> more weight
+
+(Figure.)
+
+#### More precision -> more weight
+
+(Figure.)
+
+#### More precision -> more weight
+
+(Figure.)
+
+#### “Fixed effect” estimator in meta-analysis
+
+(Figure.)
+
+#### “Fixed effect” estimator in meta-analysis
+
+Mean weighted by inverse variance of individual estimates. Very sensitive to outliers in precision (including typos). Y_i = θ + ε_i, (1); V_i = σ^2/n, (2); W_i = 1/V_i, (3); M = (Σ_(i=1)^k W_i Y_i)/(Σ_(i=1)^k W_i), (4); V_M = 1/(Σ_(i=1)^k W_i). (5)
+
+#### Hands on
+
+Open Stata
+
+#### FE vs. UWLS: point estimate
+
+- Unrestricted weighted least squares yield the same point estimate: θ̂ = (Σ w_i θ_i)/(Σ w_i), w_i = 1/SE_i^2
+- Difference: Variance estimation.
+
+Method | Point Estimate
+Fixed-Effect (FE) | θ̂ = (Σ w_i θ_i)/(Σ w_i)
+UWLS | θ̂ = (Σ w_i θ_i)/(Σ w_i)
+
+Same estimate, different variance!
+
+#### FE vs. UWLS: variance
+
+Feature | Fixed-Effect (FE) | UWLS
+Assumption | Identical θ | Allows heterogeneity
+Variance formula | 1/(Σ w_i) | (Σ w_i (θ_i - θ̂)^2)/(Σ w_i)
+Variance components | Within-study only | Within + between-study
+Robustness | Sensitive to misspecification | More robust
+
+FE typically underestimates variance. Use UWLS!
+
+Correction. The UWLS variance of the pooled estimate is Σ w_i (θ_i - θ̂)^2 / ((k - 1) Σ w_i); the table leaves out the factor k - 1. This is the formula for independent estimates: with several estimates per study, use standard errors clustered by study, as the course code does.
+
+#### Fixed effect
+
+(Figure.)
+
+#### Random effects
+
+(Figure.)
+
+#### Random effects
+
+The weight is now diluted by a heterogeneity term. More robust to outliers in precision and heterogeneity, less robust to publication bias. Y_i = μ + ξ_i + ε_i, (1); V_i = σ^2/n, (2); W_i = 1/(V_i + τ^2), (3); M = (Σ_(i=1)^k W_i Y_i)/(Σ_(i=1)^k W_i), (4); V_M = 1/(Σ_(i=1)^k W_i). (5)
+
+#### Estimating τ^2 in random-effects model
+
+Between-study variance τ^2 accounts for heterogeneity across studies. Common estimators:
+
+- DerSimonian-Laird (DL): τ^2_DL = (Q - (k - 1))/C, C = Σ w_i - (Σ w_i^2)/(Σ w_i) - Simple, but underestimates τ^2 when k is small.
+- Restricted Maximum Likelihood (REML): max_τ^2 Σ log (w_i^* + τ^2) + Σ ((y_i - θ̂)^2)/(w_i^* + τ^2) - More accurate, default in software.
+
+Rule of thumb: Use REML unless simplicity is needed!
+
+Correction. The REML line is not the restricted likelihood. REML chooses τ^2 ≥ 0 to minimise Σ log(v_i + τ^2) + log Σ W_i + Σ W_i (y_i - θ̂)^2, where v_i are the within-study variances, W_i = 1/(v_i + τ^2) and θ̂ is the weighted mean; software solves this numerically. A negative DL estimate is set to zero.
+
+#### Random effects
+
+(Figure.)
+
+#### Forest plot
+
+(Figure.)
+
+#### Cumulative meta-analysis plot
+
+(Figure.)
+
+### Publication Bias
+
+#### Paxil scandal
+
+- Background:
+- Paxil (paroxetine): Antidepressant approved for adolescents, developed by GlaxoSmithKline (GSK).
+- Study 329 (1998-2001): Clinical trial funded by GSK to test Paxil's safety and efficacy in adolescents.
+
+- What Happened?
+- Published study claimed Paxil was "well-tolerated and effective."
+- Internal documents later revealed:
+- Negative results (e.g., increased suicidal ideation) were downplayed.
+- Positive outcomes were selectively reported.
+
+Correction. The FDA never approved paroxetine for patients under 18: it was approved for adults and promoted for adolescent depression. Study 329 ran from 1994 to 1998 and was published in 2001; the independent reanalysis appeared in 2015.
+
+#### Paxil scandal
+
+- Discovery of Bias:
+- Legal proceedings in 2012 forced disclosure of internal data.
+- Independent reanalysis of Study 329 showed:
+- No significant benefit over placebo.
+- Serious safety concerns (e.g., suicidal ideation).
+
+- Key Lessons:
+- Publication bias can harm patients and public trust.
+- Highlights the need for:
+- Transparency in research data.
+- Independent replication and reanalysis.
+
+#### No bias, no E-SE correlation (?)
+
+Researchers estimate
+
+Earnings_j = γ Beauty_j + … + w_j.
+
+They assume that γ̂/SE_γ̂ has a t-distribution.
+
+→ estimates should not be correlated with standard errors (Card & Krueger, 1995)
+
+Type I: Selection for the “correct sign.” Type II: Selection for statistical significance.
+
+#### Simulation
+
+(Figure.)
+
+#### Simulation
+
+(Figure.)
+
+#### Simulation
+
+(Figure.)
+
+#### Simulation
+
+(Figure.)
+
+#### Simulation
+
+(Figure.)
+
+#### Simulation
+
+(Figure.)
+
+#### Simulation
+
+(Figure.)
+
+#### Simulation
+
+(Figure.)
+
+#### Simulation
+
+(Figure.)
+
+#### Funnel asymmetry test
+
+In the absence of publication bias the funnel should be symmetrical: estimate_i = β [true effect] + β_0 SE_i [publication bias] + μ_i.
+
+The equation is heteroscedastic. Weighted least squares yield
+
+t_i = β_0 + β (1/SE_i) + ϑ_i. This is called the funnel asymmetry test, precision effect test (FAT-PET).
+
+#### Hands on
+
+Open Stata
+
+#### Default nonlinear correction model (PEESE)
+
+Publication bias unlikely to be linear in SE. Precision effect test with standard error:
+
+estimate_i = β [true effect] + β_0 SE^2_i [publication bias] + μ_i.
+
+Weighted least squares yield
+
+t_i = β_0 SE_i + β (1/SE_i) + ϑ_i.
+
+Works well under most circumstances.
+
+#### WAAP (Ioannidis et al., 2017)
+
+Weighted Average of Adequately Powered (WAAP) estimates.
+
+- Focus on studies with adequate statistical power to reduce the impact of selective reporting.
+- Combines results only from studies with at least 80% power.
+
+Issues:
+
+- Simple and robust.
+- Need to estimate the true effect first and then compute power.
+
+#### Stem-based correction technique (Furukawa, 2019)
+
+Stem-based method:
+
+- A non-parametric estimator that exploits the variance-bias trade-off.
+- Focuses on the most precise estimates, referred to as the “stem” of the funnel plot.
+
+Key features:
+
+- Robust to various publication selection processes.
+- Does not rely on specific distributional assumptions.
+
+Application:
+
+- Filters studies with the highest precision (lowest standard errors) to estimate the true effect.
+- Reduces influence from noisier, potentially biased studies in the broader funnel plot.
+
+#### Endogenous kink model (Bom & Rachinger, 2019)
+
+Overview:
+
+- Fits a piecewise linear model with a kink determined by the data.
+- Identifies where publication selection is less likely to occur.
+
+Key features:
+
+- Endogenously estimates the cutoff based on standard errors.
+- Often reduces bias and improves efficiency compared to traditional methods.
+
+Application:
+
+- Highlights genuine effects by focusing on less selective segments of the data.
+- Effective in meta-analyses with substantial heterogeneity in study precision.
+
+#### Endogenous kink
+
+(Figure.)
+
+#### Selection model (Andrews & Kasy, 2019)
+
+Overview:
+
+- Models the selection process explicitly to address publication bias.
+- Assumes researchers are more likely to publish statistically significant results.
+
+Key features:
+
+- Uses the likelihood of publication as a function of statistical significance.
+- Adjusts estimates to reflect the missing studies.
+
+Comparison to funnel-based models:
+
+- Selection models are more rigorous but require stronger assumptions about the publication process.
+- Funnel methods are simpler and more robust to model misspecification.
+
+#### Beauty effect: corrected mean probably below 3
+
+(Figure.)
+
+#### Sex workers stand apart
+
+(Figure.)
+
+#### Bias caused by selection for a positive sign
+
+(Figure.)
+
+### P-hacking
+
+#### Web app for p-hacking correction: EasyMeta.org
+
+(Figure.)
+
+#### Recall publication bias
+
+(Figure.)
+
+#### Recall publication bias
+
+(Figure.)
+
+#### Key difference
+
+- Publication bias: all estimates are individually unbiased
+- The entire literature is biased because estimates are selectively reported
+- If we know publication probabilities, we can recover the true effect (selection models)
+- P-hacking: individual estimates can be biased
+- Classical selection models fail
+- Funnel-based models can work (with adjustments)
+
+#### Example: education premium
+
+True model: Omitted variable: Proxy: Instrument:
+
+Earnings_j = γ Education_j + δ Ability_j + v_j,
+
+Earnings_j = γ Education_j + w_j,
+
+Earnings_j = γ Education_j + ω IQ_j + x_j,
+
+Earnings_j = γ Education_j + z_j, Distance_j
+
+Ability not observed.
+
+Primary studies:
+
+- ignore ability → γ̂ too large, SE(γ̂) too small.
+- include a proxy → γ̂ smaller, SE(γ̂) larger.
+- quasi-experiment → γ̂ even smaller, SE(γ̂) even larger.
+
+(With a figure.)
+
+#### Some estimates spuriously large & precise
+
+(Figure.)
+
+#### All estimators biased upwards
+
+(Figure.)
+
+#### Example: Changing controls changes precision
+
+Regression of test scores on class size
+
+| (1) | (2) | (3) | (4)
+Small class (treatment) | 4.82 | 5.37 | 5.36 | 5.37
+| (2.19) | (1.26) | (1.21) | (1.19)
+White/Asian | | | 8.35 | 8.44
+| | | (1.35) | (1.36)
+Girl | | | 4.48 | 4.39
+| | | (0.63) | (0.63)
+Free lunch | | | -13.15 | -13.07
+| | | (0.77) | (0.77)
+White teacher | | | | -0.57
+| | | | (2.1)
+Teacher experience | | | | 0.26
+| | | | (0.10)
+Master's degree | | | | -0.51
+| | | | (1.06)
+School intercepts | No | Yes | Yes | Yes
+Sample | 5,861 | 5,861 | 5,861 | 5,861
+
+Notes: Adapted from Krueger (1999). Dependent variable: test score percentile. Standard errors in parentheses.
+
+#### Changing clustering changes precision
+
+Regression of test scores on class size
+
+| Krueger (1999) | Replications using different computations of SE
+| (1) | (2) | (3) | (4) | (5) | (6)
+| | Bootstrap of | Class | School | Huber-White | Plain vanilla
+| | class clusters | clusters | clusters | SE | SE
+Small class | 4.82 | 4.71 | 4.71 | 4.71 | 4.71 | 4.71
+| (2.19) | (2.00) | (1.88) | (1.38) | (0.79) | (0.76)
+Sample | 5,861 | 5,743 | 5,743 | 5,743 | 5,743 | 5,743
+
+Notes: Dependent variable: test score percentile. Standard errors (SE) in parentheses.
+
+Available at meta-analysis.cz/class. (forthcoming in JOLE)
+
+#### Funnel plot
+
+(Figure.)
+
+#### Publication bias
+
+(Figure.)
+
+#### Conventional p-hacking
+
+(Figure.)
+
+#### Spurious precision
+
+(Figure.)
+
+#### Key meta assumption broken
+
+PEESE:
+
+Ê_i = E_0 + β SE(Ê)^2_i + u_i,
+
+corr(SE,u) ≠ 0 ⇒ β̂ and Ê_0 biased.
+
+Natural solution: N instrumenting SE(Ê)_i^2 → MAIVE.
+
+(With a figure.)
+
+#### Options for the meta-analyst
+
+- Use only quasi-experimental studies.
+- Include controls (dummies for OLS, DID, …). But in observational research we never know the true model!
+- Remove “bad” variation from SE → MAIVE.
+
+#### Meta-analysis instrumental variable estimator
+
+MAIVE intuition: Ê_i = E_0 + β SE(Ê)^2_i + u_i. 1/N_i
+
+MAIVE first stage: SE(Ê)^2_i = α_0 + α_1 ( 1/N_i ) + π_i. hacking or misspecifications
+
+MAIVE adjustment: SE(Ê)^2_(adj,i) = α̂_0 + α̂_1 (1/N_i ) + π_i. hacking or misspecifications
+
+- MAIVE + PEESE = classical IV.
+- Can add controls in the 2nd stage.
+- Plug MAIVE-adjusted SEs into other estimators.
+
+(With a figure.)
+
+#### MAIVE alleviates the bias
+
+(Figure.)
+
+#### Extended MAIVE (WAIVE: Weighted Adjustment)
+
+(Figure.)
+
+#### MAIVE reduces PET-PEESE in 70% of the cases
+
+(Figure.)
+
+#### Practical issues
+
+- Can methods or p-hacking influence both Ê and SE?
+- Yes → MAIVE helps.
+- No → MAIVE doesn't hurt much.
+
+meta-analysis.cz/maive
+
+Published in Nature Communications.
+
+#### Hands on
+
+Open Stata (MAIVE web app at easymeta.org)
+
+#### RTMA: Maya Mathur's p-hacking correction
+
+- Right-truncated meta-analysis (Mathur 2024, RSM)
+- Assumption 1: insignificant estimates are NOT p-hacked
+- Assumption 2: estimates are normally distributed
+- Assumption 3: there are enough insignificant estimates published that we can recover the underlying distribution
+- Bayesian techniques used for computation feasibility (ML would typically need huge samples)
+- Digression: Robust Bayesian Meta-Analysis (RoBMA)
+
+#### Hands on
+
+Open R
+
+### Heterogeneity
+
+#### Guiding example: beauty and success
+
+(Figure.)
+
+#### Heterogeneity both within and across
+
+(Figure.)
+
+#### Wide dispersion
+
+(Figure.)
+
+#### Measurement of beauty
+
+(Figure.)
+
+#### Measurement of success
+
+(Figure.)
+
+#### Data characteristics
+
+(Figure.)
+
+#### Estimation technique
+
+(Figure.)
+
+#### Publication characteristics
+
+(Figure.)
+
+#### Beauty measurement doesn't matter
+
+(Figure.)
+
+#### Hands on
+
+Open Stata
+
+#### Success measurement doesn't matter
+
+(Figure.)
+
+#### Method doesn't matter
+
+(Figure.)
+
+#### Ability control matters
+
+(Figure.)
+
+#### Occupation matters
+
+(Figure.)
+
+#### Sex workers stand apart
+
+(Figure.)
+
+#### Option 1: subsamples
+
+(Figure.)
+
+#### Option 1: subsamples
+
+(Figure.)
+
+#### Option 1: subsamples
+
+(Figure.)
+
+#### Option 1: subsamples
+
+(Figure.)
+
+#### Option 2: Bayesian model averaging
+
+- We want to regress estimates of the beauty effect on variables reflecting heterogeneity
+- But too many variables; model uncertainty
+- Solution: run regressions with different combinations of the variables
+- Give more weight to those that fit the data well and are parsimonious
+
+#### Option 2: Bayesian model averaging
+
+- Model averaging can be frequentist but computationally difficult
+- Intuition: run different combinations and weight by adjusted R^2 or information criteria
+- In the Bayesian setting we can use the MCMC algorithm
+- G-prior: all coefficients are zero. Weight? UIP = the prior has the same weight as one observation
+- Model prior: uniform = all models have the same weight
+- Dilution prior: models with collinearity get less weight
+
+#### Hands on
+
+Open R
+
+#### Model inclusion in BMA
+
+(Figure.)
+
+#### Posterior densities
+
+(Figure.)
+
+#### Regression results
+
+(Figure.)
+
+#### Best practice (implied estimate)
+
+- From BMA results we know how estimates depend on study design
+- Some study designs are better: identification, data, generally quality
+- Select best practice based on the literature (quasi-experimental studies, etc.)
+- Compute fitted values and confidence intervals (lincom command in Stata)
+
+#### Hands on
+
+Open Stata
+
+#### Best practice (class size effect)
+
+(Figure.)
+
+### Takeaways
+
+#### Summary: How to do a modern meta-analysis
+
+- Search for primary studies using Google Scholar, snowballing, AI agent
+- Use comparable estimates (elasticities, mean differences, correlations)
+- Code standard errors, sample sizes, main differences in data and methods
+- Winsorize estimates and standard errors at the 1% level
+- Correct for publication bias and p-hacking (MAIVE; if weak instrument → RTMA)
+- Examine heterogeneity using BMA with the dilution prior
+- Report implied effects for different contexts
+
+#### Thank you for inviting me
+
+Prepared for the University of Osaka. Published at meta-analysis.cz/teaching under CC BY 4.0.
+
+Back to the course page: the schedule, the recordings, the code and data, and the readings.
+
+## Meta-Analysis for Policy Economists (Tillväxtanalys, Stockholm, 2025)
+URL: https://meta-analysis.cz/teaching/stockholm-2025/
+Licence: CC BY 4.0
+
+Meta-Analysis for Policy Economists: Practical Tools for Synthesizing
+Research. A two-day course for the policy economists of Tillväxtanalys,
+the Swedish Agency for Growth Policy Analysis, in Stockholm on 28 and 29 August 2025. Tomas
+Havranek, Charles University, Prague.
+
+Slides (PDF)
+Programme (PDF)
+
+Hands-on in Stata and R throughout, with the meta-analysis of beauty and
+professional success as the running example.
+
+### Programme
+
+Day 1, Thursday 28 August: data, basic tools and bias.
+
+09:00 to 10:00 Why meta-analysis for policy, and applied examples (sections 1 and 2)
+
+10:10 to 11:00 Literature search and screening (section 3)
+
+11:10 to 12:00 Data collection and AI infrastructure (section 4); hands-on: data cleaning and outliers in Stata
+
+13:00 to 14:00 Conventional tools: fixed and random effects, visuals (section 5); hands-on: forest plots, box plots and UWLS in Stata
+
+14:10 to 15:00 Publication bias (section 6): funnel plots, FAT-PET, PEESE, WAAP and the endogenous kink in Stata
+
+15:10 to 16:00 Hands-on: bias-corrected estimates in Stata
+
+Day 2, Friday 29 August: p-hacking, heterogeneity and extensions.
+
+09:00 to 09:15 Recap of day 1 and overview of day 2
+
+09:15 to 10:00 P-hacking and selective reporting (section 7): theory, MAIVE and RTMA
+
+10:10 to 10:30 Hands-on: MAIVE in Stata, RTMA in R
+
+10:30 to 11:00 Heterogeneity and moderator analysis (section 8)
+
+11:10 to 12:00 Heterogeneity continued; hands-on: subsamples, best practice and implied effects in Stata
+
+13:00 to 14:00 Hands-on: Bayesian model averaging in R, and how to read its results
+
+14:10 to 15:00 Extensions and limitations (section 9): attenuation bias, meaningless means
+
+15:10 to 16:00 Takeaways, and questions (section 10)
+
+### Slides
+
+- slides.pdf: the 234 PDF pages as taught, with the closing slide updated to carry the licence line
+
+- The slides as text: every slide's title and text, for reading and searching without the PDF
+
+- slides.tex: the LaTeX source, and latex.zip: the source with all 133 figures, ready for pdflatex
+
+The deck covers Motivation, Applied Examples, Literature Search, Data Collection, Conventional Tools, Publication Bias, P-hacking, Heterogeneity, Extensions & Limitations and Takeaways. Section 9 ends with work in progress as of
+August 2025: a proposed test of whether the variance of the underlying effects is infinite,
+applied to a meta-analysis of 126 nudge experiments. The Osaka
+course of March 2026 uses a shorter and updated version of this deck.
+
+### Corrections
+
+Three slides contain errors found after the course. The PDF and the LaTeX source are left as
+taught; each correction also appears under its slide in the slides as text.
+
+- FE vs. UWLS: variance. The UWLS variance of the pooled estimate is Σ w_i (θ_i - θ̂)^2 / ((k - 1) Σ w_i); the table leaves out the factor k - 1. This is the formula for independent estimates: with several estimates per study, use standard errors clustered by study, as the course code does.
+
+- Estimating τ^2 in random-effects model. The REML line is not the restricted likelihood. REML chooses τ^2 ≥ 0 to minimise Σ log(v_i + τ^2) + log Σ W_i + Σ W_i (y_i - θ̂)^2, where v_i are the within-study variances, W_i = 1/(v_i + τ^2) and θ̂ is the weighted mean; software solves this numerically. A negative DL estimate is set to zero.
+
+- Paxil scandal. The FDA never approved paroxetine for patients under 18: it was approved for adults and promoted for adolescent depression. Study 329 ran from 1994 to 1998 and was published in 2001; the independent reanalysis appeared in 2015.
+
+### Code and data
+
+The hands-on part replicates selected analyses of the meta-analysis of
+beauty and professional success, from the raw estimates to estimates corrected for
+publication bias and to the effect implied by best practice. The course files as participants
+received them (hidden metadata such as saved-folder paths removed):
+
+- beauty.xlsx: the 1,159 estimates from 67 studies, with their moderator variables
+
+- beauty.do: the annotated Stata script for the whole workflow, from summary statistics and graphs to bias corrections and implied estimates
+
+- beauty_bma.csv: the cleaned data for R
+
+- beauty_bma.R: right-truncated meta-analysis (RTMA) and Bayesian model averaging (BMA)
+
+This is the teaching version of the data. The full dataset and the replication package of the
+paper are on its project page.
+
+Stata 15 or later, with these packages:
+
+ssc install winsor2
+ssc install metan
+ssc install ivreg2
+net install boottest, from("https://raw.githubusercontent.com/droodman/boottest/main/")
+ssc install weakiv
+ssc install collin
+
+R 4.5 or later, with the packages BMS and phacking (phacking also installs rstan and the other
+packages it depends on):
+
+install.packages(c("BMS", "phacking"))
+
+In Stata, put beauty.xlsx in the working directory and run beauty.do section by section. In R,
+put beauty_bma.csv next to beauty_bma.R and run the script. RTMA and BMA are simulation-based,
+so their results can differ slightly between runs; to make a run repeatable, add a set.seed() line
+at the top of the R script. The main corrections for publication bias and p-hacking now also run without any installation at EasyMeta.org.
+
+### Readings
+
+- Meta-Analysis of Social Science Research: A Practitioner’s Guide (Irsova, Doucouliagos, Havranek and Stanley, Journal of Economic Surveys, 2024)
+
+- MAIVE: spurious precision in meta-analysis of observational research (Irsova, Bom, Havranek and Rachinger, Nature Communications, 2025), and how to run it
+
+- Applications: beauty and professional success, class size and student achievement, financial incentives and performance, and skill substitution
+
+### Licence
+
+CC BY 4.0, like everything on this site; the code files also carry an MIT licence in their
+headers.
+
+A credit line for reuse: Havranek, T. (2025). Meta-Analysis for Policy Economists: Practical
+Tools for Synthesizing Research. Course slides, Tillväxtanalys, Stockholm, 28 and 29 August 2025.
+https://meta-analysis.cz/teaching/stockholm-2025/
+
+## Slides as text: Meta-Analysis for Policy Economists: Practical Tools for Synthesizing Research (Stockholm 2025)
+URL: https://meta-analysis.cz/teaching/stockholm-2025/slides/
+Licence: CC BY 4.0
+
+The slides as text. Every slide's title and text from the Stockholm course of August 2025,
+generated from the LaTeX source so that the course can be read and
+searched without the PDF. Where a slide is mainly a figure, the text says so; the figures are in
+the PDF.
+
+The slides are as taught in August 2025. Some results have been updated or published since, among them the beauty premium figures and the MAIVE paper, now in Nature Communications; the Osaka course of March 2026 has the later version.
+
+Sections: Motivation, Applied Examples, Literature Search, Data Collection, Conventional Tools, Publication Bias, P-hacking, Heterogeneity, Extensions & Limitations and Takeaways.
+
+### Motivation
+
+#### Meta important for research, policy, practice
+
+Research experience:
+
+- Affiliate at the Meta-Research Innovation Center, Stanford
+- Panel member at ERC Advanced
+- Convener of Meta-Analysis in Economics Network
+- Meta-Analysis Editor at the Journal of Economic Surveys
+- MAIVE method (Nature Communications)
+- Over 50 metas published, e.g. REStat, JEEA, JOLE, JIE…
+
+Policy experience:
+
+- Former Advisor to the Board, Czech National Bank
+- Former member of the Czech National Economic Council
+- Affiliate at the Centre for Economic Policy Research, London
+
+#### What happens if the government spends more?
+
+Labor supply elasticity is key (but how to calibrate it?):
+
+(With a figure.)
+
+#### Calibration uncertainty: meta needed!
+
+(Figure.)
+
+#### What happens if we change another parameter?
+
+(Figure.)
+
+#### Estimates of the labor supply elasticity vary
+
+(Figure.)
+
+#### Values around 0.4 to 0.5 used for calibration (CBO)
+
+(Figure.)
+
+#### Bias: some estimates less likely to be reported
+
+(Figure.)
+
+#### Context: different situations yield different estimates
+
+(Figure.)
+
+#### Implied elasticity: taking bias and context into account
+
+Let's construct a hypothetical study that uses all information reported in the literature but puts more weight on selected aspects (high precision, credible identification, etc.)
+
+(With a figure.)
+
+#### Guidelines
+
+(Figure.)
+
+#### Guiding example: effect of beauty on success
+
+(Figure.)
+
+#### Hands on
+
+Open Stata and R
+
+#### Results
+
+- Mean of 1,159 estimates from 67 studies: good looks → earnings ↑ 4.3%
+- Publication bias. After correction: 2.9%
+- Control for ability? Productivity? Beauty premium ≈ 0%
+
+www.meta-analysis.cz/beauty
+
+Revisions requested at Nature Human Behaviour.
+
+### Applied Examples
+
+#### Example 1: Daylight saving time
+
+Researchers typically estimate the following model: ln Consumption_t = α + DST· Treatment effect_t + Controls_t + ε.
+
+- Consumption: the average energy consumption during time t for a given hour, day, and year.
+- Treatment effect: equals 1 for all hours when daylight saving time applies.
+- Controls: seasonality and holidays, weather, the intensity of sunlight, heterogeneity among consumption units, etc.
+
+#### No consensus in the literature
+
+(Figure.)
+
+#### Journals report smaller savings
+
+(Figure.)
+
+#### Publication bias? Probably not
+
+(Figure.)
+
+#### Funnel asymmetry tests
+
+If the ratio of the point estimate to its standard error has a t-distribution, then the two quantities should be independent: estimate_i = β [true effect] + β_0 SE_i [publication bias] + μ_i.
+
+The no. of obs. can be used as an instrument for SE.
+
+| OLS | FE | BE | Country | ME | IV
+SE (publication bias) | -0.410 | -1.217 | -0.410 | -0.496 | -0.449 | 0.226
+| (0.265) | (0.790) | (0.757) | (0.805) | (0.688) | (1.088)
+Constant (true effect) | -0.293 *** | -0.222 *** | -0.294 *** | -0.278 *** | -0.291 *** | -0.445 *
+| (0.000778) | (0.0700) | (0.00812) | (0.0459) | (0.00731) | (0.243)
+Observations | 101 | 101 | 101 | 101 | 101 | 90
+
+#### Country heterogeneity
+
+(Figure.)
+
+#### Method heterogeneity (just studies for the US)
+
+(Figure.)
+
+#### What explains the differences in conclusions? (1)
+
+Data characteristics
+Data period | The number of years used in the estimation.
+Main estimate | = 1 if the estimate is preferred by the authors of the study.
+Hourly data | = 1 if the data are examined on hourly or higher than hourly granularity.
+Daily data | = 1 if the data are examined on a daily basis.
+Daylight hours | Average time between sunrise and sunset on the longest day for the country or region under examination.
+Europe | = 1 if European countries are examined.
+USA | = 1 if US data are examined.
+Design of the analysis
+Regression analysis | = 1 if the primary study is based on regression analysis.
+Simulation analysis | = 1 if the study is based on simulation.
+Difference-in-diff. | = 1 if the difference-in-differences approach is employed.
+Residential cons. | = 1 if only residential consumption is examined.
+Lighting cons. | = 1 if total energy savings are reported as a result of lighting reduction.
+
+#### What explains the differences in conclusions? (2)
+
+Publication characteristics
+Publication year | The publication year of the study (base = 1970).
+Journal article | = 1 if the study was published in a peer-reviewed journal.
+Impact factor | The recursive RePEc impact factor of the outlet.
+Citations | The logarithm of the total number of citations of the study in Google Scholar.
+
+#### Bayesian model averaging
+
+(Figure.)
+
+#### Results
+
+- The mean reported estimate suggests energy savings of 0.34% due to DST.
+- The results are driven by the method employed (simulation vs. regression).
+- Energy savings are larger for countries farther away from the equator.
+
+www.meta-analysis.cz/dst
+
+Published in the Energy Journal, 2018.
+
+#### Example 2: Interest rates and house prices
+
+(Figure.)
+
+#### Converting graphs to data
+
+We measure pixel coordinates using WebPlotDigitizer:
+
+(With a figure.)
+
+#### Publication bias for longer horizons?
+
+(Figure.)
+
+#### Corroborated by funnel asymmetry tests
+
+Note that the slope is negative, the intercept is smaller than the reported mean effect:
+
+(With a figure.)
+
+#### Nonliner tests also imply bias
+
+Note that the corrected effect is smaller than the reported mean effect:
+
+(With a figure.)
+
+#### Mean impulse response beyond publication bias
+
+(Figure.)
+
+#### Cross-country heterogeneity
+
+(Figure.)
+
+#### Estimation context
+
+- Data characteristics: monthly, panel, length, age
+- Specification characteristics: foreign IR, credit, consumption, res. invest., money supply, exch. rate, long-run IR, lags
+- Estimation characteristics: BVAR, sign restr. HP, sign restr. other, nonrecursive
+- Publication characteristics: citations, impact, published
+- Country characteristics: mortgage-to-GDP, floating, maturity, IR, spread, prolonged high HP, PTI, crisis, prolonged low IR, tourism, income, inflation, popul. growth, permits, ownership
+
+#### Bayesian model averaging
+
+(Figure.)
+
+#### Best practice
+
+We construct a hypothetical ideal study: no publication bias (SE = 0), recent data, long series, nonrecursive identification, published, good journal, highly cited.
+
+(With a figure.)
+
+#### Impulse response implied by best practice
+
+(Figure.)
+
+#### Results
+
+- Among 237 impulse responses from 37 studies, the mean decrease in house prices is 1.2% two years after a 1 pp. increase in the policy rate.
+- The mean is exaggerated because of publication bias.
+- Stronger transmission for i) more developed markets, ii) flatter yield curve, iii) house price boom.
+
+www.meta-analysis.cz/house_prices
+
+Published in the IMF Economic Review, 2023.
+
+#### Example 3: Working while in school
+
+- Hard to influence commonly cited determinants of educational outcomes: ability, ethnicity, gender, parental education and affluence
+- But most students can decide whether or not to work
+- How does that influence educational outcomes?
+- Should you motivate your kids to work while in school?
+- Mixed empirical results: from large negative to positive estimates
+- 861 estimates from 69 studies
+
+#### No consensus in the literature
+
+(Figure.)
+
+#### Negative for all countries except Germany
+
+(Figure.)
+
+#### Work intensity clearly matters
+
+(Figure.)
+
+#### Endogeneity control is important
+
+(Figure.)
+
+#### Little publication bias on average
+
+(Figure.)
+
+#### No bias in studies addressing endogeneity
+
+(Figure.)
+
+#### Strong bias in studies ignoring endogeneity
+
+(Figure.)
+
+#### Model uncertainty; endogeneity control is key
+
+(Figure.)
+
+#### Closer look: work intensity, measurement
+
+(Figure.)
+
+#### Closer look: endogeneity, panel data, Germany
+
+(Figure.)
+
+#### Best practice estimates
+
+(Figure.)
+
+#### Results
+
+- Publication and endogeneity biases interact.
+- The corrected effect is negative but economically zero.
+- Effects negative for high-intensity work, positive for Germany.
+
+www.meta-analysis.cz/students
+
+Published in the Economics of Education Review, 2024.
+
+### Literature Search
+
+#### Inspiration
+
+(Figure.)
+
+#### Motivation example: increasing uncertainty
+
+(Figure.)
+
+#### Motivation example: clear trend
+
+(Figure.)
+
+#### Motivation example: country-level differences
+
+(Figure.)
+
+#### Motivation example: publication bias
+
+(Figure.)
+
+#### Motivation example: method heterogeneity
+
+(Figure.)
+
+#### We use Google Scholar
+
+Advantages:
+
+- Full text, not just the abstract, title, keywords
+- Inclusive
+- Up-to-date
+
+Disadvantages:
+
+- Algorithm changes in time (replicability issues)
+- Too many results
+- Sometimes relevance unclear
+
+#### Search steps (without AI for now)
+
+- Find 5 most relevant studies
+- Design a query that shows the 5 studies near the top
+- Go through first 500 hits
+- Read abstracts
+- Download potentially useful studies
+- Skim them
+- Repeat the procedure for the most recent studies (last 3 years)
+
+#### Search query 1
+
+(Figure.)
+
+#### Search query 2
+
+(Figure.)
+
+#### Primary studies
+
+(Figure.)
+
+#### Snowballing
+
+- No query is perfect
+- Idea: cover studies not identified by the query but frequently mentioned in the literature
+- For each primary study, download the list of references
+- Inspect the 50 studies most frequently cited by the primary studies
+- If you can use some of them, add them to your list
+
+#### Snowballing example
+
+(Figure.)
+
+#### AI-enhanced literature search
+
+- Use Deep Research to explore recent literature and concepts
+- Ask ChatGPT thinking model to refine your Scholar query
+- Download 500 abstracts from Scholar or Publish or Perish
+- Let a ChatGPT Agent screen abstracts for relevant estimates
+- Ask Agent to download PDFs (or download manually)
+- Upload PDFs in batches of 5; ask which report usable estimates
+- (Optional) Use ASReview to double-check or co-train
+
+#### Using thinking models to design Scholar query
+
+- GPT thinking model helps refine search precision
+- Prompt examples:
+- I want to do a meta-analysis of the beauty premium. Suggest a Google Scholar query to find empirical studies on attractiveness and income.
+- Too many irrelevant hits. How can I prioritize regression-based studies only?
+
+- Output improves over iterations: clarify units, methods, outcomes, and keywords
+
+#### Prompting ChatGPT Agent for screening
+
+- Batch input: 20 to 50 abstracts at a time from Scholar export
+- Example prompt: You are an expert in meta-analysis. For each abstract below and all other information you have about the paper, say whether the paper likely reports quantitative estimates on the effect of beauty on labor market outcomes that can be used in a meta-analysis. Justify briefly.
+- Output: Paper 1: Yes (panel data, Table 2) Paper 2: No (conceptual) Paper 3: Maybe (ambiguous)
+
+#### Screening PDFs for quantitative content
+
+- Upload PDFs in small batches (e.g., 5 at a time)
+- Example prompt: For each of these papers, does it contain new empirical estimates of the effect of beauty on wages that I can use in a meta-analysis? Point to specific tables or pages.
+- Output format:
+- Paper A: Yes, Table 4, OLS and IV estimates on beauty premium
+- Paper B: No quantitative analysis
+- Paper C: Yes, appendix regression table
+
+#### Optional enhancements and caveats
+
+- Combine with ASReview for machine-assisted filtering
+- Use Semantic Scholar for better metadata access
+- Avoid over-reliance: AI helps, but expert judgment remains key
+- Protect against false positives: Always validate flagged studies manually
+- End-to-end AI infrastructure for meta-analysis: otto-SR
+
+#### Minimum requirements for meta-analysis
+
+For modern meta-analysis techniques to work, you need at least:
+
+- 30 estimates
+- 10 studies
+- effect sizes
+- standard errors
+- sample sizes
+
+What to do if I have, e.g., just 10 estimates from 4 studies? Focus on the median or weighted means.
+
+#### Quality
+
+- Some studies are published in poor journals or use weak identification. What to do?
+- Option 1: exclude these studies ex ante. Not recommended.
+- Option 2: include these studies with controls for journal quality and methodology. You can always exclude them as a robustness check.
+- Note that some fields have standardized quality benchmarks (risk of bias)
+
+#### Unpublished papers
+
+- Try to collect all studies, published and unpublished
+- If unfeasible, it is possible to focus just on published studies (fewer typos, peer-review)
+- Including unpublished papers unlikely to alleviate publication bias
+- Still too many papers? Recruit a co-author, AI, or use a random subset (last resort)
+
+#### PRISMA: document your literature search
+
+(Figure.)
+
+### Data Collection
+
+#### Effects must be quantitatively comparable
+
+What does it mean?
+
+- When we compare estimates reported in Study 1 and Study 2, it must be clear which one is larger
+- It must be clear how much larger it is
+- t-statistics are not useful measures of effect size
+- Regression coefficients are not comparable in general if studies use different units
+
+#### Elasticities
+
+x-elasticity of y: ε = ((∂ y)/y)/((∂ x)/x)
+
+P-elasticity of Q: ε = ((∂ Q)/Q)/((∂ P)/P) if continuous
+
+ε = ((Q_2 - Q_1)/Q_1)/((P_2 - P_1)/P_1) = (% change in quantity Q)/(% change in price P) if discrete
+
+Elasticities can be recovered from regressing log(Y) on log(X).
+
+#### Semi-elasticities, dollar values, std.dev. changes
+
+- Semi-elasticity: effect of euro adoption on trade, effects of foreign investment on domestic productivity, effects of borders on trade
+- Dollar values: statistical value of life, social cost of carbon
+- Std.dev. changes: effect of class size on student test scores. What to do here?
+- Class size is measured the same way in all studies (number of kids).
+- Test scores are measured differently.
+- Solution: By how many standard deviations do test scores improve if we decrease class size by 10 students?
+
+#### Standardized mean differences
+
+θ = (μ_1 - μ_2)/σ, where μ_1 is the mean for one population, μ_2 is the mean for the other population, and σ is a standard deviation based on either or both populations.
+
+- Very popular in psychology, not much used in economics. Why?
+- Generally we need an experiment: treatment group, control group.
+- In economics we often focus on observational research.
+- For many questions the treatment and control are not binary classifications (we look at the intensity of treatment)
+
+#### Partial correlation coefficients
+
+Example: tuition fees and university enrollment. Ideally, we would need price elasticities of demand (PED), but many studies are not log on log.
+
+So we transform the estimates to partial correlations using t-statistics and degrees of freedom:
+
+PCC(PED)_ij = (T(PED)_ij)/(√(T(PED)_ij^2 + DF(PED)_ij)).
+
+#### PCC caveats
+
+- Last resort: can be used almost always, but we lose a lot of information
+- Difficult to interpret (some guidelines provided by Doucouliagos, 2011)
+- Statistical problems for meta-analysis methods (but this is the case also for SMD)
+- Include robustness checks: e.g. a subsample of elasticities in the case of tuition fees and university enrollment
+
+#### Collect all estimates
+
+(Figure.)
+
+#### Standard errors
+
+- Absolutely crucial for meta-analysis
+- If not reported directly, can be computed from t-statistics or p-values
+- Last resort: approximation based on within-study variation (Matousek et al. 2022)
+- Interactions, transformations: delta method
+
+#### Delta method
+
+Based on Taylor series expansion. Basic formula:
+
+Var(Y) = Var(f(X)) ≈ [f'(μ_X)]^2 Var(X).
+
+Example: Suppose Y = X^2. Then f(x) = x^2 and f'(x) = 2x, so that: Var(Y) ≈ [2μ_X]^2 Var(X) = 4μ_X^2σ_X^2.
+
+Example: Suppose Y = 1/X. Then f(x) = 1/x and f'(x) = -1/x^2, so that: Var(Y) ≈ [(-1)/μ_X^2]^2 Var(X) = σ_X^2/μ_X^4.
+
+#### AI-assisted data collection: Overview
+
+- As of August 2025, human review still essential
+- AI reasonably good at
+- Identifying key study dimensions (estimation method, outcome type, etc.)
+- Extracting basic data with structured prompts and examples
+- Reducing workload to a single reviewer
+
+- Tools: ChatGPT thinking, Agent Mode, NotebookLM
+- End-to-end AI infrastructure for meta-analysis: otto-SR
+
+#### Step-by-step data collection workflow
+
+- Use Deep Research + thinking model to find key coding dimensions
+- Examples: OLS vs IV, cross-section vs panel, outcome types, country, controls
+- Upload a few example PDFs + your coded spreadsheet to ChatGPT Agent
+- Prompt Agent: "Extract these columns from new PDFs using my examples as a guide."
+- Refine extraction prompts based on feedback
+- Use NotebookLM as an independent extraction check
+- Validate discrepancies manually; spot-check the rest
+
+#### Example prompt for PDF data extraction
+
+Here are 3 PDFs and the corresponding rows from my meta-analysis data sheet. Learn the structure. These data are collected well and I want you to collect data from other papers. I will send 5 new PDFs. Extract estimates of the beauty premium and the corresponding standard error. Collect information on the estimation method used, the definition of the beauty variable, definition of the earnings variable.
+
+- Agent mode allows memory and consistency across batches
+- Output can be verified, adjusted, and exported as CSV
+- See summary on MAER-Net website.
+
+#### Graphical estimates, measurement error
+
+(Figure.)
+
+#### Outliers
+
+(Figure.)
+
+#### What to do with outliers?
+
+- No consensus
+- Approach 1: omit very large effects (and standard errors), e.g. more than 3 standard deviations away from the mean
+- Approach 2: run robust meta-regression or use tools for outlier detection in regression
+- Approach 3: use winsorizing (my personal preference)
+- Always report robustness checks
+
+#### Winsorization
+
+(Figure.)
+
+#### Hands on
+
+Open Stata
+
+#### Reflecting context: the effect of beauty on success
+
+(Figure.)
+
+#### Measurement
+
+(Figure.)
+
+#### Data, estimation, publication
+
+(Figure.)
+
+#### Value added
+
+- Meta-analysis can be used to test hypotheses that primary studies cannot investigate
+- Example: the effect of daylight saving time on energy consumption
+- Individual studies have data for individual countries (or provinces)
+- In meta-analysis, we have data for dozens of countries
+- We can investigate the sources of cross-country differences
+
+#### DST savings and latitude
+
+(Figure.)
+
+#### House prices and monetary policy
+
+(Figure.)
+
+### Conventional Tools
+
+#### Summary statistics for meta-analysis
+
+- Simple mean of reported estimates: natural starting point
+- But inefficient and affected by outliers, publication bias, p-hacking
+- Median: surprisingly robust to most problems in meta-analysis
+- If you have only a few studies or estimates, focus on the (unweighted) median!
+- Classical meta-analysis approach: use inverse variance as the weight
+
+#### More precision -> more weight
+
+(Figure.)
+
+#### More precision -> more weight
+
+(Figure.)
+
+#### More precision -> more weight
+
+(Figure.)
+
+#### “Fixed effect” estimator in meta-analysis
+
+(Figure.)
+
+#### “Fixed effect” estimator in meta-analysis
+
+Mean weighted by inverse variance of individual estimates. Very sensitive to outliers in precision (including typos). Y_i = θ + ε_i, (1); V_i = σ^2/n, (2); W_i = 1/V_i, (3); M = (Σ_(i=1)^k W_i Y_i)/(Σ_(i=1)^k W_i), (4); V_M = 1/(Σ_(i=1)^k W_i). (5)
+
+#### Hands on
+
+Open Stata
+
+#### FE vs. UWLS: point estimate
+
+- Unrestricted weighted least squares yield the same point estimate: θ̂ = (Σ w_i θ_i)/(Σ w_i), w_i = 1/SE_i^2
+- Difference: Variance estimation.
+
+Method | Point Estimate
+Fixed-Effect (FE) | θ̂ = (Σ w_i θ_i)/(Σ w_i)
+UWLS | θ̂ = (Σ w_i θ_i)/(Σ w_i)
+
+Same estimate, different variance!
+
+#### FE vs. UWLS: variance
+
+Feature | Fixed-Effect (FE) | UWLS
+Assumption | Identical θ | Allows heterogeneity
+Variance formula | 1/(Σ w_i) | (Σ w_i (θ_i - θ̂)^2)/(Σ w_i)
+Variance components | Within-study only | Within + between-study
+Robustness | Sensitive to misspecification | More robust
+
+FE typically underestimates variance. Use UWLS!
+
+Correction. The UWLS variance of the pooled estimate is Σ w_i (θ_i - θ̂)^2 / ((k - 1) Σ w_i); the table leaves out the factor k - 1. This is the formula for independent estimates: with several estimates per study, use standard errors clustered by study, as the course code does.
+
+#### Fixed effect
+
+(Figure.)
+
+#### Random effects
+
+(Figure.)
+
+#### Random effects
+
+The weight is now diluted by a heterogeneity term. More robust to outliers in precision and heterogeneity, less robust to publication bias. Y_i = μ + ξ_i + ε_i, (1); V_i = σ^2/n, (2); W_i = 1/(V_i + τ^2), (3); M = (Σ_(i=1)^k W_i Y_i)/(Σ_(i=1)^k W_i), (4); V_M = 1/(Σ_(i=1)^k W_i). (5)
+
+#### Estimating τ^2 in random-effects model
+
+Between-study variance τ^2 accounts for heterogeneity across studies. Common estimators:
+
+- DerSimonian-Laird (DL): τ^2_DL = (Q - (k - 1))/C, C = Σ w_i - (Σ w_i^2)/(Σ w_i) - Simple, but underestimates τ^2 when k is small.
+- Restricted Maximum Likelihood (REML): max_τ^2 Σ log (w_i^* + τ^2) + Σ ((y_i - θ̂)^2)/(w_i^* + τ^2) - More accurate, default in software.
+
+Rule of thumb: Use REML unless simplicity is needed!
+
+Correction. The REML line is not the restricted likelihood. REML chooses τ^2 ≥ 0 to minimise Σ log(v_i + τ^2) + log Σ W_i + Σ W_i (y_i - θ̂)^2, where v_i are the within-study variances, W_i = 1/(v_i + τ^2) and θ̂ is the weighted mean; software solves this numerically. A negative DL estimate is set to zero.
+
+#### Random effects
+
+(Figure.)
+
+#### Forest plot
+
+(Figure.)
+
+#### Forest plot
+
+(Figure.)
+
+#### Box plot
+
+(Figure.)
+
+#### Box plot
+
+(Figure.)
+
+#### Histogram
+
+(Figure.)
+
+#### Histogram
+
+(Figure.)
+
+#### Histogram
+
+(Figure.)
+
+#### Cumulative meta-analysis plot
+
+(Figure.)
+
+#### Funnel plot (topic of the next session)
+
+(Figure.)
+
+### Publication Bias
+
+#### Paxil scandal
+
+- Background:
+- Paxil (paroxetine): Antidepressant approved for adolescents, developed by GlaxoSmithKline (GSK).
+- Study 329 (1998-2001): Clinical trial funded by GSK to test Paxil's safety and efficacy in adolescents.
+
+- What Happened?
+- Published study claimed Paxil was "well-tolerated and effective."
+- Internal documents later revealed:
+- Negative results (e.g., increased suicidal ideation) were downplayed.
+- Positive outcomes were selectively reported.
+
+Correction. The FDA never approved paroxetine for patients under 18: it was approved for adults and promoted for adolescent depression. Study 329 ran from 1994 to 1998 and was published in 2001; the independent reanalysis appeared in 2015.
+
+#### Paxil scandal
+
+- Discovery of Bias:
+- Legal proceedings in 2012 forced disclosure of internal data.
+- Independent reanalysis of Study 329 showed:
+- No significant benefit over placebo.
+- Serious safety concerns (e.g., suicidal ideation).
+
+- Key Lessons:
+- Publication bias can harm patients and public trust.
+- Highlights the need for:
+- Transparency in research data.
+- Independent replication and reanalysis.
+
+#### No bias, no E-SE correlation (?)
+
+Researchers estimate
+
+Earnings_j = γ Beauty_j + … + w_j.
+
+They assume that γ̂/SE_γ̂ has a t-distribution.
+
+→ estimates should not be correlated with standard errors (Card & Krueger, 1995)
+
+Type I: Selection for the “correct sign.” Type II: Selection for statistical significance.
+
+#### Simulation
+
+(Figure.)
+
+#### Simulation
+
+(Figure.)
+
+#### Simulation
+
+(Figure.)
+
+#### Simulation
+
+(Figure.)
+
+#### Simulation
+
+(Figure.)
+
+#### Simulation
+
+(Figure.)
+
+#### Simulation
+
+(Figure.)
+
+#### Simulation
+
+(Figure.)
+
+#### Simulation
+
+(Figure.)
+
+#### Funnel asymmetry test
+
+In the absence of publication bias the funnel should be symmetrical: estimate_i = β [true effect] + β_0 SE_i [publication bias] + μ_i.
+
+The equation is heteroscedastic. Weighted least squares yield
+
+t_i = β_0 + β (1/SE_i) + ϑ_i. This is called the funnel asymmetry test, precision effect test (FAT-PET).
+
+#### Hands on
+
+Open Stata
+
+#### Default nonlinear correction model (PEESE)
+
+Publication bias unlikely to be linear in SE. Precision effect test with standard error:
+
+estimate_i = β [true effect] + β_0 SE^2_i [publication bias] + μ_i.
+
+Weighted least squares yield
+
+t_i = β_0 SE_i + β (1/SE_i) + ϑ_i.
+
+Works well under most circumstances.
+
+#### WAAP (Ioannidis et al., 2017)
+
+Weighted Average of Adequately Powered (WAAP) estimates.
+
+- Focus on studies with adequate statistical power to reduce the impact of selective reporting.
+- Combines results only from studies with at least 80% power.
+
+Issues:
+
+- Simple and robust.
+- Need to estimate the true effect first and then compute power.
+
+#### Stem-based correction technique (Furukawa, 2019)
+
+Stem-based method:
+
+- A non-parametric estimator that exploits the variance-bias trade-off.
+- Focuses on the most precise estimates, referred to as the “stem” of the funnel plot.
+
+Key features:
+
+- Robust to various publication selection processes.
+- Does not rely on specific distributional assumptions.
+
+Application:
+
+- Filters studies with the highest precision (lowest standard errors) to estimate the true effect.
+- Reduces influence from noisier, potentially biased studies in the broader funnel plot.
+
+#### Endogenous kink model (Bom & Rachinger, 2019)
+
+Overview:
+
+- Fits a piecewise linear model with a kink determined by the data.
+- Identifies where publication selection is less likely to occur.
+
+Key features:
+
+- Endogenously estimates the cutoff based on standard errors.
+- Often reduces bias and improves efficiency compared to traditional methods.
+
+Application:
+
+- Highlights genuine effects by focusing on less selective segments of the data.
+- Effective in meta-analyses with substantial heterogeneity in study precision.
+
+#### Endogenous kink
+
+(Figure.)
+
+#### Selection model (Andrews & Kasy, 2019)
+
+Overview:
+
+- Models the selection process explicitly to address publication bias.
+- Assumes researchers are more likely to publish statistically significant results.
+
+Key features:
+
+- Uses the likelihood of publication as a function of statistical significance.
+- Adjusts estimates to reflect the missing studies.
+
+Comparison to funnel-based models:
+
+- Selection models are more rigorous but require stronger assumptions about the publication process.
+- Funnel methods are simpler and more robust to model misspecification.
+
+#### Example: labor supply elasticity
+
+(Figure.)
+
+#### Tests often tell the same story qualitatively
+
+(Figure.)
+
+#### Bias caused by preference for positive estimates
+
+(Figure.)
+
+#### Beauty effect: corrected mean probably below 3
+
+(Figure.)
+
+#### Sex workers stand apart
+
+(Figure.)
+
+#### Bias caused by selection for a positive sign
+
+(Figure.)
+
+### P-hacking
+
+#### Recall publication bias
+
+(Figure.)
+
+#### Recall publication bias
+
+(Figure.)
+
+#### Key difference
+
+- Publication bias: all estimates are individually unbiased
+- The entire literature is biased because estimates are selectively reported
+- If we know publication probabilities, we can recover the true effect (selection models)
+- P-hacking: individual estimates can be biased
+- Classical selection models fail
+- Funnel-based models can work (with adjustments)
+
+#### Example: education premium
+
+True model: Omitted variable: Proxy: Instrument:
+
+Earnings_j = γ Education_j + δ Ability_j + v_j,
+
+Earnings_j = γ Education_j + w_j,
+
+Earnings_j = γ Education_j + ω IQ_j + x_j,
+
+Earnings_j = γ Education_j + z_j, Distance_j
+
+Ability not observed.
+
+Primary studies:
+
+- ignore ability → γ̂ too large, SE(γ̂) too small.
+- include a proxy → γ̂ smaller, SE(γ̂) larger.
+- quasi-experiment → γ̂ even smaller, SE(γ̂) even larger.
+
+(With a figure.)
+
+#### Some estimates spuriously large & precise
+
+(Figure.)
+
+#### All estimators biased upwards
+
+(Figure.)
+
+#### Example: Changing controls changes precision
+
+Regression of test scores on class size
+
+| (1) | (2) | (3) | (4)
+Small class (treatment) | 4.82 | 5.37 | 5.36 | 5.37
+| (2.19) | (1.26) | (1.21) | (1.19)
+White/Asian | | | 8.35 | 8.44
+| | | (1.35) | (1.36)
+Girl | | | 4.48 | 4.39
+| | | (0.63) | (0.63)
+Free lunch | | | -13.15 | -13.07
+| | | (0.77) | (0.77)
+White teacher | | | | -0.57
+| | | | (2.1)
+Teacher experience | | | | 0.26
+| | | | (0.10)
+Master's degree | | | | -0.51
+| | | | (1.06)
+School intercepts | No | Yes | Yes | Yes
+Sample | 5,861 | 5,861 | 5,861 | 5,861
+
+Notes: Adapted from Krueger (1999). Dependent variable: test score percentile. Standard errors in parentheses.
+
+#### Changing clustering changes precision
+
+Regression of test scores on class size
+
+| Krueger (1999) | Replications using different computations of SE
+| (1) | (2) | (3) | (4) | (5) | (6)
+| | Bootstrap of | Class | School | Huber-White | Plain vanilla
+| | class clusters | clusters | clusters | SE | SE
+Small class | 4.82 | 4.71 | 4.71 | 4.71 | 4.71 | 4.71
+| (2.19) | (2.00) | (1.88) | (1.38) | (0.79) | (0.76)
+Sample | 5,861 | 5,743 | 5,743 | 5,743 | 5,743 | 5,743
+
+Notes: Dependent variable: test score percentile. Standard errors (SE) in parentheses.
+
+Available at meta-analysis.cz/class. (forthcoming in JOLE)
+
+#### Funnel plot
+
+(Figure.)
+
+#### Publication bias
+
+(Figure.)
+
+#### Conventional p-hacking
+
+(Figure.)
+
+#### Spurious precision
+
+(Figure.)
+
+#### Key meta assumption broken
+
+PEESE:
+
+Ê_i = E_0 + β SE(Ê)^2_i + u_i,
+
+corr(SE,u) ≠ 0 ⇒ β̂ and Ê_0 biased.
+
+Natural solution: N instrumenting SE(Ê)_i^2 → MAIVE.
+
+(With a figure.)
+
+#### Options for the meta-analyst
+
+- Use only quasi-experimental studies.
+- Include controls (dummies for OLS, DID, …). But in observational research we never know the true model!
+- Remove “bad” variation from SE → MAIVE.
+
+#### Meta-analysis instrumental variable estimator
+
+MAIVE intuition: Ê_i = E_0 + β SE(Ê)^2_i + u_i. 1/N_i
+
+MAIVE first stage: SE(Ê)^2_i = α_0 + α_1 ( 1/N_i ) + π_i. hacking or misspecifications
+
+MAIVE adjustment: SE(Ê)^2_(adj,i) = α̂_0 + α̂_1 (1/N_i ) + π_i. hacking or misspecifications
+
+- MAIVE + PEESE = classical IV.
+- Can add controls in the 2nd stage.
+- Plug MAIVE-adjusted SEs into other estimators.
+
+(With a figure.)
+
+#### MAIVE alleviates the bias
+
+(Figure.)
+
+#### Extended MAIVE
+
+(Figure.)
+
+#### MAIVE reduces PET-PEESE in 70% of the cases
+
+(Figure.)
+
+#### Practical issues
+
+- Can methods or p-hacking influence both Ê and SE?
+- Yes → MAIVE helps.
+- No → MAIVE doesn't hurt much.
+
+meta-analysis.cz/maive
+
+Forthcoming in Nature Communications.
+
+#### Hands on
+
+Open Stata (MAIVE web app at maive.eu)
+
+#### RTMA: Maya Mathur's p-hacking correction
+
+- Right-truncated meta-analysis (Mathur 2024, RSM)
+- Assumption 1: insignificant estimates are NOT p-hacked
+- Assumption 2: estimates are normally distributed
+- Assumption 3: there are enough insignificant estimates published that we can recover the underlying distribution
+- Bayesian techniques used for computation feasibility (ML would typically need huge samples)
+- Digression: Robust Bayesian Meta-Analysis (RoBMA), still unavailable for economics data
+
+#### Hands on
+
+Open R
+
+### Heterogeneity
+
+#### Identification of publication bias
+
+PEESE:
+
+Ê_i = E_0 + β SE(Ê)^2_i + u_i,
+
+corr(SE,u) ≠ 0 ⇒ β̂ and Ê_0 biased.
+
+Natural solution: N instrumenting SE(Ê)_i^2 → MAIVE.
+
+Or add covariates!
+
+(With a figure.)
+
+#### Classical heterogeneity measure
+
+Common measure: estimate the relative heterogeneity of underlying effects (Higgins and Thompson, 2002)
+
+I^2 ≡ (underlying variance of effects)/(observed variance of estimates) = τ^2/(τ^2 + v̄)
+
+- I^2 = 0.75 ∼ 1.0 … “considerable heterogeneity” in medicine (Cochrane Review Guideline)
+- I^2 ≃ 0.9 … common in economics meta-analyses (e.g., Vivalt, 2021)
+
+Unresolved concern:
+
+- no universally agreed criteria for “too much” heterogeneity
+- undesirable pattern: with more precise studies, higher I^2
+
+#### Guiding example: beauty and success
+
+(Figure.)
+
+#### Heterogeneity both within and across
+
+(Figure.)
+
+#### Wide dispersion
+
+(Figure.)
+
+#### Measurement of beauty
+
+(Figure.)
+
+#### Measurement of success
+
+(Figure.)
+
+#### Data characteristics
+
+(Figure.)
+
+#### Estimation technique
+
+(Figure.)
+
+#### Publication characteristics
+
+(Figure.)
+
+#### Beauty measurement doesn't matter
+
+(Figure.)
+
+#### Hands on
+
+Open Stata
+
+#### Success measurement doesn't matter
+
+(Figure.)
+
+#### Method doesn't matter
+
+(Figure.)
+
+#### Ability control matters
+
+(Figure.)
+
+#### Occupation matters
+
+(Figure.)
+
+#### Sex workers stand apart
+
+(Figure.)
+
+#### Option 1: subsamples
+
+(Figure.)
+
+#### Option 1: subsamples
+
+(Figure.)
+
+#### Option 1: subsamples
+
+(Figure.)
+
+#### Option 1: subsamples
+
+(Figure.)
+
+#### Option 2: Bayesian model averaging
+
+- We want to regress estimates of the beauty effect on variables reflecting heterogeneity
+- But too many variables; model uncertainty
+- Solution: run regressions with different combinations of the variables
+- Give more weight to those that fit the data well and are parsimonious
+
+#### Option 2: Bayesian model averaging
+
+- Model averaging can be frequentist but computationally difficult
+- Intuition: run different combinations and weight by adjusted R^2 or information criteria
+- In the Bayesian setting we can use the MCMC algorithm
+- G-prior: all coefficients are zero. Weight? UIP = the prior has the same weight as one observation
+- Model prior: uniform = all models have the same weight
+- Dilution prior: models with collinearity get less weight
+
+#### Hands on
+
+Open R
+
+#### Model inclusion in BMA
+
+(Figure.)
+
+#### Posterior densities
+
+(Figure.)
+
+#### Regression results
+
+(Figure.)
+
+#### Best practice (implied estimate)
+
+- From BMA results we know how estimates depend on study design
+- Some study designs are better: identification, data, generally quality
+- Select best practice based on the literature (quasi-experimental studies, etc.)
+- Compute fitted values and confidence intervals (lincom command in Stata)
+
+#### Hands on
+
+Open Stata
+
+#### Best practice (class size effect)
+
+(Figure.)
+
+### Extensions & Limitations
+
+#### Issue 1: Attenuation bias, aka regression dilution
+
+(Figure.)
+
+#### Elasticity of skill substitution
+
+Researchers estimate negative inverse elasticity: they regress skill premium on relative labor supply (not vice versa!)
+
+- Measures substitutability between skilled (college) and unskilled (high school) workers
+- Important for wage inequality, explaining cross-country differences in productivity, …
+- 682 estimates from 77 studies, “consensus” elasticity = 1.5 (negative inverse = -0.67)
+
+#### Three estimation frameworks
+
+(Figure.)
+
+#### Strong publication bias (or p-hacking?)
+
+(Figure.)
+
+#### OLS: no effect (but attenuation & endogeneity biases)
+
+(Figure.)
+
+#### IV: strong effect (no biases beyond publication)
+
+(Figure.)
+
+#### Natural experiments: no effect (but attenuation bias)
+
+(Figure.)
+
+#### Publication bias > attenuation bias
+
+- |IV| > |OLS| → attenuation or other endogeneity biases important
+- OLS = Natural experiments → other endogeneity biases negligible
+- |IV - OLS| measures attenuation bias, which is strong
+- Uncorrected inverted elasticity = -0.67
+- Inverted elasticity corrected for pub and attenuation bias (IV) = -0.25
+- Pub bias dominates attenuation
+- Implied elasticity = 4
+
+#### Assumptions of Andrews & Kasy not satisfied
+
+(Figure.)
+
+#### Model uncertainty; biases confirmed
+
+(Figure.)
+
+#### Best practice estimate around 4
+
+(Figure.)
+
+#### Results
+
+- Attenuation bias is important (|IV| > |OLS| = |natural experiments|).
+- Publication bias is more important (inverse elasticity: simple mean -0.67 ; corrected IV mean -0.25).
+- Implied elasticity around 4 (compared to consensus 1.5).
+
+www.meta-analysis.cz/skill
+
+Published in the Review of Economics and Statistics, 2024.
+
+#### Issue 2: How much heterogeneity is too much?
+
+Common measure: estimate the relative heterogeneity of underlying effects (Higgins and Thompson, 2002)
+
+I^2 ≡ (underlying variance of effects)/(observed variance of estimates)
+
+- I^2 = 0.75 ∼ 1.0 … “considerable heterogeneity” in medicine (Cochrane Review Guideline)
+- I^2 ≃ 0.9 … common in economics meta-analyses (e.g., Vivalt, 2021)
+
+Unresolved concern:
+
+- no universally agreed criteria for “too much” heterogeneity
+- undesirable pattern: with more precise studies, higher I^2
+
+#### This paper (still under construction)
+
+- Propose a new test for external validity in meta-analysis:
+- Based on the tail index of the underlying distribution, without contamination by estimate precision.
+- Test whether the implied variance of underlying effect is infinite (i.e., too heterogeneous).
+
+- Show that the implied variance is infinite in meta-analysis of 126 nudge RCTs (DellaVigna and Linos, 2020):
+- Nudge: “choice architecture that alters people's behavior in a predictable way without forbidding any options or significantly changing their economic incentives.” (Thaler and Sunstein, 2008)
+- The possibility of infinite variance can be important in real-world applications.
+
+#### Test of infinite variance
+
+Pareto tail: F(b) = 1 - Cb^(-α), b > b_min and C > 0
+
+- e.g. earthquakes, word frequency, city size, wealth distribution
+- If α < 2, then Var(b) = ∞ because ∫_b_min^∞ b^2 f(b) db ∝ ∫_b_min^∞ b^2 b^(-3) db = ∫_b_min^∞ b^(-1) db = log b |_b_min^∞ = ∞
+
+Tail index test of external validity:
+
+- Criteria 1: if α̂ > 2, then pass the test
+- Criteria 2: if P(α̂ ≤ 2) < p, then pass the test
+
+#### Estimation methods (i) inner problem of tail index
+
+Following Hill (1975), use Maximum Likelihood Estimation for α̂_MLE: given b_min, α̂_MLE = arg max_α Σ_(i=1)^n ln l ( α | β_i, SE_i, b_min ), where l ( α | β_i, SE_i, b_min ) ≡ ∫_θ_min^∞ (φ ( (β_i - θ)/SE_i ))/(1 - Φ ( (b_min - θ)/SE_i )) α b_min^α b^(-(α + 1)) db.
+
+- Numerical integration
+
+#### Estimation methods (ii) outer problem of cut-off
+
+Following Clauset et al. (2006), use the goodness-of-fit metric to choose b^*_min: b^*_min ∈ arg min_b_min K̃S (b_min | α̂_MLE), where the reweighted Kolmogorov-Smirnov statistic is K̃S (b_min | α̂_MLE) ≡ sup_β (|G(β | β ≥ b_min) - Ĝ(β | ·)|)/(√(Ĝ(β | ·) [1 - Ĝ(β | ·)])), and the estimated distribution is Ĝ(β | α̂_MLE, β ≥ b_min) and the empirical distribution is G(β | β ≥ b_min).
+
+#### Nudges
+
+(Figure.)
+
+#### Nudges
+
+(Figure.)
+
+#### Summary
+
+- Proposed the concept of “infinite variance” as representing the persistent criticism that “too much” heterogeneity underlies the overall mean estimate.
+- Developed an estimation method by extending the maximum likelihood estimation and goodness-of-fit statistics commonly used in tail estimation.
+- Applied the estimation method and its implied test to show that the influential nudge meta-analysis exhibits the infinite variance.
+
+### Takeaways
+
+#### Summary: How to do a modern meta-analysis
+
+- Search for primary studies using Google Scholar, snowballing, AI agent
+- Use comparable estimates (elasticities, mean differences, correlations)
+- Code standard errors, sample sizes, main differences in data and methods
+- Winsorize estimates and standard errors at the 1% level
+- Correct for publication bias and p-hacking (MAIVE; if weak instrument → RTMA)
+- Examine heterogeneity using BMA with the dilution prior
+- Report implied effects for different contexts
+
+#### Thank you for inviting me
+
+Prepared for Tillväxtanalys. Published at meta-analysis.cz/teaching under CC BY 4.0.
+
+Back to the course page: the programme, the code and data, and the readings.
