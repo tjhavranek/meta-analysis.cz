@@ -17,7 +17,7 @@
    "@id": "https://meta-analysis.cz/komentare/ask/#page",
    "url": "https://meta-analysis.cz/komentare/ask/",
    "name": "Zeptejte se AI / Ask AI",
-   "description": "An AI answers questions in Czech or English from the texts of Tomas Havranek and Zuzana Havrankova on meta-analysis.cz, with links to the sources. Not a personal reply.",
+   "description": "An AI answers questions in Czech or English from the texts of Tomas Havranek and Zuzana Irsova on meta-analysis.cz, with links to the sources. Not a personal reply.",
    "inLanguage": ["cs", "en"],
    "isPartOf": {"@id": "https://meta-analysis.cz/komentare/#collection"},
    "about": {"@id": "https://meta-analysis.cz/#th"},
@@ -63,7 +63,7 @@
 <main><div class="wrap">
     <div class="lede">
       <h1>Zeptejte se AI <small style="font-weight:400;color:var(--faint)">/ <span lang="en">Ask AI</span></small></h1>
-      <p>Na otázky odpovídá umělá inteligence podle textů Tomáše a Zuzany Havránkových na meta-analysis.cz, česky i anglicky, s odkazy na zdroje. Není to jejich osobní odpověď. <span lang="en">An AI answers questions from the texts of Tomas Havranek and Zuzana Havrankova on meta-analysis.cz, in Czech or English, with links to the sources. It is not a personal reply from either of them.</span></p>
+      <p>Na otázky odpovídá umělá inteligence podle textů Tomáše a Zuzany Havránkových na meta-analysis.cz, česky i anglicky, s odkazy na zdroje. Není to jejich osobní odpověď. <span lang="en">An AI answers questions from the texts of Tomas Havranek and Zuzana Irsova on meta-analysis.cz, in Czech or English, with links to the sources. It is not a personal reply from either of them.</span></p>
     </div>
     <form class="ask-form" id="f">
       <label for="q" class="ask-hint">Otázka / <span lang="en">Your question</span></label>
@@ -135,9 +135,9 @@
     }).join("");
     var lng = d.lang || lang;
     var AU = lng === "en"
-      ? { TH: "Tomas Havranek", ZH: "Zuzana Havrankova", "TH+ZH": "Tomas Havranek and Zuzana Havrankova",
-          "TH+co": "Havranek and coauthors", "ZH+co": "Havrankova and coauthors",
-          "TH+ZH+co": "Havranek, Havrankova and coauthors" }
+      ? { TH: "Tomas Havranek", ZH: "Zuzana Irsova", "TH+ZH": "Tomas Havranek and Zuzana Irsova",
+          "TH+co": "Havranek and coauthors", "ZH+co": "Irsova and coauthors",
+          "TH+ZH+co": "Havranek, Irsova and coauthors" }
       : { TH: "Tomáš Havránek", ZH: "Zuzana Havránková", "TH+ZH": "Tomáš a Zuzana Havránkovi",
           "TH+co": "Havránek a spoluautoři", "ZH+co": "Havránková a spoluautoři",
           "TH+ZH+co": "Havránek, Havránková a spoluautoři" };
