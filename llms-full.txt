@@ -43059,7 +43059,7 @@ and data as they were handed out.
 
 - slides.pdf: the 162 PDF pages as taught, with the closing slide updated to carry the licence line
 
-- The slides as text: every slide's title and text, for reading and searching without the PDF
+- The slides as text: every slide's title, text and figures, for reading and searching without the PDF
 
 - slides.tex: the LaTeX source, and latex.zip: the source with all 85 figures, ready for pdflatex
 
@@ -43145,9 +43145,9 @@ of Osaka, 16 March 2026. https://meta-analysis.cz/teaching/osaka-2026/
 URL: https://meta-analysis.cz/teaching/osaka-2026/slides/
 Licence: CC BY 4.0
 
-The slides as text. Every slide's title and text from the Osaka course of March 2026,
+The slides as text. Every slide's title, text and figures from the Osaka course of March 2026,
 generated from the LaTeX source so that the course can be read and
-searched without the PDF. Where a slide is mainly a figure, the text says so; the figures are in
+searched without the PDF. The few diagrams drawn in LaTeX itself are only in
 the PDF.
 
 The slides are as taught on 16 March 2026; papers published and numbers updated since then are not reflected in them.
@@ -43177,47 +43177,27 @@ Policy experience:
 
 Labor supply elasticity is key (but how to calibrate it?): Details: Elminejad et al. (2023, Review of Economic Dynamics)
 
-(With a figure.)
-
 #### What happens if the central bank raises the rate?
 
 Details: Havranek et al. (2015, Journal of International Econ)
 
-(With a figure.)
-
 #### Calibration uncertainty: meta needed!
-
-(Figure.)
 
 #### Estimates of the labor supply elasticity vary
 
-(Figure.)
-
 #### Values around 0.4 to 0.5 used for calibration (CBO)
-
-(Figure.)
 
 #### Bias: some estimates less likely to be reported
 
-(Figure.)
-
 #### Context: different situations yield different estimates
-
-(Figure.)
 
 #### Implied elasticity: taking bias and context into account
 
 Let's construct a hypothetical study that uses all information reported in the literature but puts more weight on selected aspects (high precision, credible identification, etc.)
 
-(With a figure.)
-
 #### Guidelines
 
-(Figure.)
-
 #### Guiding example: effect of beauty on success
-
-(Figure.)
 
 #### Hands on
 
@@ -43237,27 +43217,15 @@ Revisions requested at Nature Human Behaviour.
 
 #### Inspiration
 
-(Figure.)
-
 #### Motivation example: increasing uncertainty
-
-(Figure.)
 
 #### Motivation example: clear trend
 
-(Figure.)
-
 #### Motivation example: country-level differences
-
-(Figure.)
 
 #### Motivation example: publication bias
 
-(Figure.)
-
 #### Motivation example: method heterogeneity
-
-(Figure.)
 
 #### We use Google Scholar
 
@@ -43285,15 +43253,9 @@ Disadvantages:
 
 #### Search query 1
 
-(Figure.)
-
 #### Search query 2
 
-(Figure.)
-
 #### Primary studies
-
-(Figure.)
 
 #### Snowballing
 
@@ -43304,8 +43266,6 @@ Disadvantages:
 - If you can use some of them, add them to your list
 
 #### Snowballing example
-
-(Figure.)
 
 #### AI-enhanced literature search
 
@@ -43379,8 +43339,6 @@ What to do if I have, e.g., just 10 estimates from 4 studies? Focus on the media
 
 #### PRISMA: document your literature search
 
-(Figure.)
-
 ### Data Collection
 
 #### Effects must be quantitatively comparable
@@ -43435,8 +43393,6 @@ PCC(PED)_ij = (T(PED)_ij)/(√(T(PED)_ij^2 + DF(PED)_ij)).
 
 #### Collect all estimates
 
-(Figure.)
-
 #### Standard errors
 
 - Absolutely crucial for meta-analysis
@@ -43478,11 +43434,7 @@ Here are 3 PDFs and the corresponding rows from my meta-analysis data sheet. Lea
 
 Details: Ehrenbergerova et al. (2023, IMF Economic Review)
 
-(With a figure.)
-
 #### Outliers
-
-(Figure.)
 
 #### What to do with outliers?
 
@@ -43494,23 +43446,15 @@ Details: Ehrenbergerova et al. (2023, IMF Economic Review)
 
 #### Winsorization
 
-(Figure.)
-
 #### Hands on
 
 Open Stata
 
 #### Reflecting context: the effect of beauty on success
 
-(Figure.)
-
 #### Measurement
 
-(Figure.)
-
 #### Data, estimation, publication
-
-(Figure.)
 
 #### Value added
 
@@ -43521,8 +43465,6 @@ Open Stata
 - We can investigate the sources of cross-country differences
 
 #### DST savings and latitude
-
-(Figure.)
 
 ### Conventional Tools
 
@@ -43536,19 +43478,11 @@ Open Stata
 
 #### More precision -> more weight
 
-(Figure.)
-
 #### More precision -> more weight
 
-(Figure.)
-
 #### More precision -> more weight
-
-(Figure.)
 
 #### “Fixed effect” estimator in meta-analysis
-
-(Figure.)
 
 #### “Fixed effect” estimator in meta-analysis
 
@@ -43583,11 +43517,7 @@ Correction. The UWLS variance of the pooled estimate is Σ w_i (θ_i - θ̂)^2 /
 
 #### Fixed effect
 
-(Figure.)
-
 #### Random effects
-
-(Figure.)
 
 #### Random effects
 
@@ -43606,15 +43536,9 @@ Correction. The REML line is not the restricted likelihood. REML chooses τ^2 �
 
 #### Random effects
 
-(Figure.)
-
 #### Forest plot
 
-(Figure.)
-
 #### Cumulative meta-analysis plot
-
-(Figure.)
 
 ### Publication Bias
 
@@ -43660,39 +43584,21 @@ Type I: Selection for the “correct sign.” Type II: Selection for statistical
 
 #### Simulation
 
-(Figure.)
+#### Simulation
 
 #### Simulation
 
-(Figure.)
+#### Simulation
 
 #### Simulation
 
-(Figure.)
+#### Simulation
 
 #### Simulation
 
-(Figure.)
-
 #### Simulation
 
-(Figure.)
-
 #### Simulation
-
-(Figure.)
-
-#### Simulation
-
-(Figure.)
-
-#### Simulation
-
-(Figure.)
-
-#### Simulation
-
-(Figure.)
 
 #### Funnel asymmetry test
 
@@ -43766,8 +43672,6 @@ Application:
 
 #### Endogenous kink
 
-(Figure.)
-
 #### Selection model (Andrews & Kasy, 2019)
 
 Overview:
@@ -43787,29 +43691,17 @@ Comparison to funnel-based models:
 
 #### Beauty effect: corrected mean probably below 3
 
-(Figure.)
-
 #### Sex workers stand apart
 
-(Figure.)
-
 #### Bias caused by selection for a positive sign
-
-(Figure.)
 
 ### P-hacking
 
 #### Web app for p-hacking correction: EasyMeta.org
 
-(Figure.)
-
 #### Recall publication bias
 
-(Figure.)
-
 #### Recall publication bias
-
-(Figure.)
 
 #### Key difference
 
@@ -43840,15 +43732,11 @@ Primary studies:
 - include a proxy → γ̂ smaller, SE(γ̂) larger.
 - quasi-experiment → γ̂ even smaller, SE(γ̂) even larger.
 
-(With a figure.)
+(With a diagram, in the PDF.)
 
 #### Some estimates spuriously large & precise
 
-(Figure.)
-
 #### All estimators biased upwards
-
-(Figure.)
 
 #### Example: Changing controls changes precision
 
@@ -43892,19 +43780,11 @@ Available at meta-analysis.cz/class. (forthcoming in JOLE)
 
 #### Funnel plot
 
-(Figure.)
-
 #### Publication bias
-
-(Figure.)
 
 #### Conventional p-hacking
 
-(Figure.)
-
 #### Spurious precision
-
-(Figure.)
 
 #### Key meta assumption broken
 
@@ -43916,7 +43796,7 @@ corr(SE,u) ≠ 0 ⇒ β̂ and Ê_0 biased.
 
 Natural solution: N instrumenting SE(Ê)_i^2 → MAIVE.
 
-(With a figure.)
+(With a diagram, in the PDF.)
 
 #### Options for the meta-analyst
 
@@ -43936,19 +43816,13 @@ MAIVE adjustment: SE(Ê)^2_(adj,i) = α̂_0 + α̂_1 (1/N_i ) + π_i. hacking o
 - Can add controls in the 2nd stage.
 - Plug MAIVE-adjusted SEs into other estimators.
 
-(With a figure.)
+(With a diagram, in the PDF.)
 
 #### MAIVE alleviates the bias
 
-(Figure.)
-
 #### Extended MAIVE (WAIVE: Weighted Adjustment)
 
-(Figure.)
-
 #### MAIVE reduces PET-PEESE in 70% of the cases
-
-(Figure.)
 
 #### Practical issues
 
@@ -43981,39 +43855,21 @@ Open R
 
 #### Guiding example: beauty and success
 
-(Figure.)
-
 #### Heterogeneity both within and across
-
-(Figure.)
 
 #### Wide dispersion
 
-(Figure.)
-
 #### Measurement of beauty
-
-(Figure.)
 
 #### Measurement of success
 
-(Figure.)
-
 #### Data characteristics
-
-(Figure.)
 
 #### Estimation technique
 
-(Figure.)
-
 #### Publication characteristics
 
-(Figure.)
-
 #### Beauty measurement doesn't matter
-
-(Figure.)
 
 #### Hands on
 
@@ -44021,39 +43877,21 @@ Open Stata
 
 #### Success measurement doesn't matter
 
-(Figure.)
-
 #### Method doesn't matter
-
-(Figure.)
 
 #### Ability control matters
 
-(Figure.)
-
 #### Occupation matters
-
-(Figure.)
 
 #### Sex workers stand apart
 
-(Figure.)
+#### Option 1: subsamples
 
 #### Option 1: subsamples
 
-(Figure.)
-
 #### Option 1: subsamples
 
-(Figure.)
-
 #### Option 1: subsamples
-
-(Figure.)
-
-#### Option 1: subsamples
-
-(Figure.)
 
 #### Option 2: Bayesian model averaging
 
@@ -44077,15 +43915,9 @@ Open R
 
 #### Model inclusion in BMA
 
-(Figure.)
-
 #### Posterior densities
 
-(Figure.)
-
 #### Regression results
-
-(Figure.)
 
 #### Best practice (implied estimate)
 
@@ -44099,8 +43931,6 @@ Open R
 Open Stata
 
 #### Best practice (class size effect)
-
-(Figure.)
 
 ### Takeaways
 
@@ -44173,7 +44003,7 @@ Day 2, Friday 29 August: p-hacking, heterogeneity and extensions.
 
 - slides.pdf: the 234 PDF pages as taught, with the closing slide updated to carry the licence line
 
-- The slides as text: every slide's title and text, for reading and searching without the PDF
+- The slides as text: every slide's title, text and figures, for reading and searching without the PDF
 
 - slides.tex: the LaTeX source, and latex.zip: the source with all 133 figures, ready for pdflatex
 
@@ -44251,9 +44081,9 @@ https://meta-analysis.cz/teaching/stockholm-2025/
 URL: https://meta-analysis.cz/teaching/stockholm-2025/slides/
 Licence: CC BY 4.0
 
-The slides as text. Every slide's title and text from the Stockholm course of August 2025,
+The slides as text. Every slide's title, text and figures from the Stockholm course of August 2025,
 generated from the LaTeX source so that the course can be read and
-searched without the PDF. Where a slide is mainly a figure, the text says so; the figures are in
+searched without the PDF. The few diagrams drawn in LaTeX itself are only in
 the PDF.
 
 The slides are as taught in August 2025. Some of the work in them has been published since, among it the MAIVE paper, now in Nature Communications; the Osaka course of March 2026 has the later version.
@@ -44283,45 +44113,25 @@ Policy experience:
 
 Labor supply elasticity is key (but how to calibrate it?):
 
-(With a figure.)
-
 #### Calibration uncertainty: meta needed!
-
-(Figure.)
 
 #### What happens if we change another parameter?
 
-(Figure.)
-
 #### Estimates of the labor supply elasticity vary
-
-(Figure.)
 
 #### Values around 0.4 to 0.5 used for calibration (CBO)
 
-(Figure.)
-
 #### Bias: some estimates less likely to be reported
 
-(Figure.)
-
 #### Context: different situations yield different estimates
-
-(Figure.)
 
 #### Implied elasticity: taking bias and context into account
 
 Let's construct a hypothetical study that uses all information reported in the literature but puts more weight on selected aspects (high precision, credible identification, etc.)
 
-(With a figure.)
-
 #### Guidelines
 
-(Figure.)
-
 #### Guiding example: effect of beauty on success
-
-(Figure.)
 
 #### Hands on
 
@@ -44349,15 +44159,9 @@ Researchers typically estimate the following model: ln Consumption_t = α + DST�
 
 #### No consensus in the literature
 
-(Figure.)
-
 #### Journals report smaller savings
 
-(Figure.)
-
 #### Publication bias? Probably not
-
-(Figure.)
 
 #### Funnel asymmetry tests
 
@@ -44374,11 +44178,7 @@ Observations | 101 | 101 | 101 | 101 | 101 | 90
 
 #### Country heterogeneity
 
-(Figure.)
-
 #### Method heterogeneity (just studies for the US)
-
-(Figure.)
 
 #### What explains the differences in conclusions? (1)
 
@@ -44407,8 +44207,6 @@ Citations | The logarithm of the total number of citations of the study in Googl
 
 #### Bayesian model averaging
 
-(Figure.)
-
 #### Results
 
 - The mean reported estimate suggests energy savings of 0.34% due to DST.
@@ -44421,37 +44219,23 @@ Published in the Energy Journal, 2018.
 
 #### Example 2: Interest rates and house prices
 
-(Figure.)
-
 #### Converting graphs to data
 
 We measure pixel coordinates using WebPlotDigitizer:
 
-(With a figure.)
-
 #### Publication bias for longer horizons?
-
-(Figure.)
 
 #### Corroborated by funnel asymmetry tests
 
 Note that the slope is negative, the intercept is smaller than the reported mean effect:
 
-(With a figure.)
-
 #### Nonliner tests also imply bias
 
 Note that the corrected effect is smaller than the reported mean effect:
 
-(With a figure.)
-
 #### Mean impulse response beyond publication bias
 
-(Figure.)
-
 #### Cross-country heterogeneity
-
-(Figure.)
 
 #### Estimation context
 
@@ -44463,17 +44247,11 @@ Note that the corrected effect is smaller than the reported mean effect:
 
 #### Bayesian model averaging
 
-(Figure.)
-
 #### Best practice
 
 We construct a hypothetical ideal study: no publication bias (SE = 0), recent data, long series, nonrecursive identification, published, good journal, highly cited.
 
-(With a figure.)
-
 #### Impulse response implied by best practice
-
-(Figure.)
 
 #### Results
 
@@ -44496,47 +44274,25 @@ Published in the IMF Economic Review, 2023.
 
 #### No consensus in the literature
 
-(Figure.)
-
 #### Negative for all countries except Germany
-
-(Figure.)
 
 #### Work intensity clearly matters
 
-(Figure.)
-
 #### Endogeneity control is important
-
-(Figure.)
 
 #### Little publication bias on average
 
-(Figure.)
-
 #### No bias in studies addressing endogeneity
-
-(Figure.)
 
 #### Strong bias in studies ignoring endogeneity
 
-(Figure.)
-
 #### Model uncertainty; endogeneity control is key
-
-(Figure.)
 
 #### Closer look: work intensity, measurement
 
-(Figure.)
-
 #### Closer look: endogeneity, panel data, Germany
 
-(Figure.)
-
 #### Best practice estimates
-
-(Figure.)
 
 #### Results
 
@@ -44552,27 +44308,15 @@ Published in the Economics of Education Review, 2024.
 
 #### Inspiration
 
-(Figure.)
-
 #### Motivation example: increasing uncertainty
-
-(Figure.)
 
 #### Motivation example: clear trend
 
-(Figure.)
-
 #### Motivation example: country-level differences
-
-(Figure.)
 
 #### Motivation example: publication bias
 
-(Figure.)
-
 #### Motivation example: method heterogeneity
-
-(Figure.)
 
 #### We use Google Scholar
 
@@ -44600,15 +44344,9 @@ Disadvantages:
 
 #### Search query 1
 
-(Figure.)
-
 #### Search query 2
 
-(Figure.)
-
 #### Primary studies
-
-(Figure.)
 
 #### Snowballing
 
@@ -44619,8 +44357,6 @@ Disadvantages:
 - If you can use some of them, add them to your list
 
 #### Snowballing example
-
-(Figure.)
 
 #### AI-enhanced literature search
 
@@ -44692,8 +44428,6 @@ What to do if I have, e.g., just 10 estimates from 4 studies? Focus on the media
 
 #### PRISMA: document your literature search
 
-(Figure.)
-
 ### Data Collection
 
 #### Effects must be quantitatively comparable
@@ -44750,8 +44484,6 @@ PCC(PED)_ij = (T(PED)_ij)/(√(T(PED)_ij^2 + DF(PED)_ij)).
 
 #### Collect all estimates
 
-(Figure.)
-
 #### Standard errors
 
 - Absolutely crucial for meta-analysis
@@ -44800,11 +44532,7 @@ Here are 3 PDFs and the corresponding rows from my meta-analysis data sheet. Lea
 
 #### Graphical estimates, measurement error
 
-(Figure.)
-
 #### Outliers
-
-(Figure.)
 
 #### What to do with outliers?
 
@@ -44816,23 +44544,15 @@ Here are 3 PDFs and the corresponding rows from my meta-analysis data sheet. Lea
 
 #### Winsorization
 
-(Figure.)
-
 #### Hands on
 
 Open Stata
 
 #### Reflecting context: the effect of beauty on success
 
-(Figure.)
-
 #### Measurement
 
-(Figure.)
-
 #### Data, estimation, publication
-
-(Figure.)
 
 #### Value added
 
@@ -44844,11 +44564,7 @@ Open Stata
 
 #### DST savings and latitude
 
-(Figure.)
-
 #### House prices and monetary policy
-
-(Figure.)
 
 ### Conventional Tools
 
@@ -44862,19 +44578,11 @@ Open Stata
 
 #### More precision -> more weight
 
-(Figure.)
-
 #### More precision -> more weight
 
-(Figure.)
-
 #### More precision -> more weight
-
-(Figure.)
 
 #### “Fixed effect” estimator in meta-analysis
-
-(Figure.)
 
 #### “Fixed effect” estimator in meta-analysis
 
@@ -44909,11 +44617,7 @@ Correction. The UWLS variance of the pooled estimate is Σ w_i (θ_i - θ̂)^2 /
 
 #### Fixed effect
 
-(Figure.)
-
 #### Random effects
-
-(Figure.)
 
 #### Random effects
 
@@ -44932,43 +44636,23 @@ Correction. The REML line is not the restricted likelihood. REML chooses τ^2 �
 
 #### Random effects
 
-(Figure.)
+#### Forest plot
 
 #### Forest plot
 
-(Figure.)
-
-#### Forest plot
-
-(Figure.)
+#### Box plot
 
 #### Box plot
 
-(Figure.)
-
-#### Box plot
-
-(Figure.)
+#### Histogram
 
 #### Histogram
 
-(Figure.)
-
 #### Histogram
-
-(Figure.)
-
-#### Histogram
-
-(Figure.)
 
 #### Cumulative meta-analysis plot
 
-(Figure.)
-
 #### Funnel plot (topic of the next session)
-
-(Figure.)
 
 ### Publication Bias
 
@@ -45014,39 +44698,21 @@ Type I: Selection for the “correct sign.” Type II: Selection for statistical
 
 #### Simulation
 
-(Figure.)
+#### Simulation
 
 #### Simulation
 
-(Figure.)
+#### Simulation
 
 #### Simulation
 
-(Figure.)
+#### Simulation
 
 #### Simulation
 
-(Figure.)
-
 #### Simulation
 
-(Figure.)
-
 #### Simulation
-
-(Figure.)
-
-#### Simulation
-
-(Figure.)
-
-#### Simulation
-
-(Figure.)
-
-#### Simulation
-
-(Figure.)
 
 #### Funnel asymmetry test
 
@@ -45120,8 +44786,6 @@ Application:
 
 #### Endogenous kink
 
-(Figure.)
-
 #### Selection model (Andrews & Kasy, 2019)
 
 Overview:
@@ -45141,37 +44805,21 @@ Comparison to funnel-based models:
 
 #### Example: labor supply elasticity
 
-(Figure.)
-
 #### Tests often tell the same story qualitatively
-
-(Figure.)
 
 #### Bias caused by preference for positive estimates
 
-(Figure.)
-
 #### Beauty effect: corrected mean probably below 3
-
-(Figure.)
 
 #### Sex workers stand apart
 
-(Figure.)
-
 #### Bias caused by selection for a positive sign
-
-(Figure.)
 
 ### P-hacking
 
 #### Recall publication bias
 
-(Figure.)
-
 #### Recall publication bias
-
-(Figure.)
 
 #### Key difference
 
@@ -45202,15 +44850,11 @@ Primary studies:
 - include a proxy → γ̂ smaller, SE(γ̂) larger.
 - quasi-experiment → γ̂ even smaller, SE(γ̂) even larger.
 
-(With a figure.)
+(With a diagram, in the PDF.)
 
 #### Some estimates spuriously large & precise
 
-(Figure.)
-
 #### All estimators biased upwards
-
-(Figure.)
 
 #### Example: Changing controls changes precision
 
@@ -45254,19 +44898,11 @@ Available at meta-analysis.cz/class. (forthcoming in JOLE)
 
 #### Funnel plot
 
-(Figure.)
-
 #### Publication bias
-
-(Figure.)
 
 #### Conventional p-hacking
 
-(Figure.)
-
 #### Spurious precision
-
-(Figure.)
 
 #### Key meta assumption broken
 
@@ -45278,7 +44914,7 @@ corr(SE,u) ≠ 0 ⇒ β̂ and Ê_0 biased.
 
 Natural solution: N instrumenting SE(Ê)_i^2 → MAIVE.
 
-(With a figure.)
+(With a diagram, in the PDF.)
 
 #### Options for the meta-analyst
 
@@ -45298,19 +44934,13 @@ MAIVE adjustment: SE(Ê)^2_(adj,i) = α̂_0 + α̂_1 (1/N_i ) + π_i. hacking o
 - Can add controls in the 2nd stage.
 - Plug MAIVE-adjusted SEs into other estimators.
 
-(With a figure.)
+(With a diagram, in the PDF.)
 
 #### MAIVE alleviates the bias
 
-(Figure.)
-
 #### Extended MAIVE
 
-(Figure.)
-
 #### MAIVE reduces PET-PEESE in 70% of the cases
-
-(Figure.)
 
 #### Practical issues
 
@@ -45353,7 +44983,7 @@ Natural solution: N instrumenting SE(Ê)_i^2 → MAIVE.
 
 Or add covariates!
 
-(With a figure.)
+(With a diagram, in the PDF.)
 
 #### Classical heterogeneity measure
 
@@ -45371,39 +45001,21 @@ Unresolved concern:
 
 #### Guiding example: beauty and success
 
-(Figure.)
-
 #### Heterogeneity both within and across
-
-(Figure.)
 
 #### Wide dispersion
 
-(Figure.)
-
 #### Measurement of beauty
-
-(Figure.)
 
 #### Measurement of success
 
-(Figure.)
-
 #### Data characteristics
-
-(Figure.)
 
 #### Estimation technique
 
-(Figure.)
-
 #### Publication characteristics
 
-(Figure.)
-
 #### Beauty measurement doesn't matter
-
-(Figure.)
 
 #### Hands on
 
@@ -45411,39 +45023,21 @@ Open Stata
 
 #### Success measurement doesn't matter
 
-(Figure.)
-
 #### Method doesn't matter
-
-(Figure.)
 
 #### Ability control matters
 
-(Figure.)
-
 #### Occupation matters
-
-(Figure.)
 
 #### Sex workers stand apart
 
-(Figure.)
+#### Option 1: subsamples
 
 #### Option 1: subsamples
 
-(Figure.)
-
 #### Option 1: subsamples
 
-(Figure.)
-
 #### Option 1: subsamples
-
-(Figure.)
-
-#### Option 1: subsamples
-
-(Figure.)
 
 #### Option 2: Bayesian model averaging
 
@@ -45467,15 +45061,9 @@ Open R
 
 #### Model inclusion in BMA
 
-(Figure.)
-
 #### Posterior densities
 
-(Figure.)
-
 #### Regression results
-
-(Figure.)
 
 #### Best practice (implied estimate)
 
@@ -45490,13 +45078,9 @@ Open Stata
 
 #### Best practice (class size effect)
 
-(Figure.)
-
 ### Extensions & Limitations
 
 #### Issue 1: Attenuation bias, aka regression dilution
-
-(Figure.)
 
 #### Elasticity of skill substitution
 
@@ -45508,23 +45092,13 @@ Researchers estimate negative inverse elasticity: they regress skill premium on 
 
 #### Three estimation frameworks
 
-(Figure.)
-
 #### Strong publication bias (or p-hacking?)
-
-(Figure.)
 
 #### OLS: no effect (but attenuation & endogeneity biases)
 
-(Figure.)
-
 #### IV: strong effect (no biases beyond publication)
 
-(Figure.)
-
 #### Natural experiments: no effect (but attenuation bias)
-
-(Figure.)
 
 #### Publication bias > attenuation bias
 
@@ -45538,15 +45112,9 @@ Researchers estimate negative inverse elasticity: they regress skill premium on 
 
 #### Assumptions of Andrews & Kasy not satisfied
 
-(Figure.)
-
 #### Model uncertainty; biases confirmed
 
-(Figure.)
-
 #### Best practice estimate around 4
-
-(Figure.)
 
 #### Results
 
@@ -45606,11 +45174,7 @@ Following Clauset et al. (2006), use the goodness-of-fit metric to choose b^*_mi
 
 #### Nudges
 
-(Figure.)
-
 #### Nudges
-
-(Figure.)
 
 #### Summary
 
