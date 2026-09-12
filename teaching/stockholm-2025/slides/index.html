@@ -123,7 +123,7 @@ searched without the PDF. Where a slide is mainly a figure, the text says so; th
 <p>Revisions requested at <i>Nature Human Behaviour</i>.</p>
 <h2 id="applied-examples">Applied Examples</h2>
 <h3>Example 1: Daylight saving time</h3>
-<p>Researchers typically estimate the following model: eq:dst lnConsumption_t = α + DST effect_t + Controls_t + ε.</p>
+<p>Researchers typically estimate the following model: ln Consumption_t = α + DST· Treatment effect_t + Controls_t + ε.</p>
 <ul><li><i>Consumption</i>: the average energy consumption during time <i>t</i> for a given hour, day, and year.</li><li><i>Treatment effect</i>: equals 1 for all hours when daylight saving time applies.</li><li><i>Controls</i>: seasonality and holidays, weather, the intensity of sunlight, heterogeneity among consumption units, etc.</li></ul>
 <h3>No consensus in the literature</h3>
 <p class="slide-fig">(Figure.)</p>
@@ -132,7 +132,7 @@ searched without the PDF. Where a slide is mainly a figure, the text says so; th
 <h3>Publication bias? Probably not</h3>
 <p class="slide-fig">(Figure.)</p>
 <h3>Funnel asymmetry tests</h3>
-<p>If the ratio of the point estimate to its standard error has a t-distribution, then the two quantities should be independent: estimate_i = β_ true effect + β_0 SE_i_ publication bias + μ_i.</p>
+<p>If the ratio of the point estimate to its standard error has a t-distribution, then the two quantities should be independent: estimate_i = β [true effect] + β_0 SE_i [publication bias] + μ_i.</p>
 <p>The no. of obs. can be used as an instrument for SE.</p>
 <pre class="slide-table"> | OLS | FE | BE | Country | ME | IV
 SE (publication bias) | -0.410 | -1.217 | -0.410 | -0.496 | -0.449 | 0.226
@@ -284,19 +284,19 @@ Citations | The logarithm of the total number of citations of the study in Googl
 <p>What does it mean?</p>
 <ul><li>When we compare estimates reported in Study 1 and Study 2, it must be clear which one is larger</li><li>It must be clear how much larger it is</li><li>t-statistics are not useful measures of effect size</li><li>Regression coefficients are not comparable in general if studies use different units</li></ul>
 <h3>Elasticities</h3>
-<p>x-elasticity of y: ε = (∂ y)/(y)(∂ x)/(x)</p>
-<p>P-elasticity of Q: ε = (∂ Q)/(Q)(∂ P)/(P) if continuous</p>
-<p>ε = (Q_2 - Q_1)/(Q_1)(P_2 - P_1)/(P_1) = (% change in quantity Q)/(% change in price P) if discrete</p>
+<p>x-elasticity of y: ε = ((∂ y)/y)/((∂ x)/x)</p>
+<p>P-elasticity of Q: ε = ((∂ Q)/Q)/((∂ P)/P) if continuous</p>
+<p>ε = ((Q_2 - Q_1)/Q_1)/((P_2 - P_1)/P_1) = (% change in quantity Q)/(% change in price P) if discrete</p>
 <p>Elasticities can be recovered from regressing <b>log(Y) on log(X)</b>.</p>
 <h3>Semi-elasticities, dollar values, std.dev. changes</h3>
 <ul><li>Semi-elasticity: effect of euro adoption on trade, effects of foreign investment on domestic productivity, effects of borders on trade</li><li>Dollar values: statistical value of life, social cost of carbon</li><li>Std.dev. changes: effect of class size on student test scores. What to do here?</li><li>Class size is measured the same way in all studies (number of kids).</li><li>Test scores are measured differently.</li><li>Solution: By how many standard deviations do test scores improve if we decrease class size by 10 students?</li></ul>
 <h3>Standardized mean differences</h3>
-<p>θ = (μ_1 - μ_2)/(σ), where μ_1 is the mean for one population, μ_2 is the mean for the other population, and σ is a standard deviation based on either or both populations.</p>
+<p>θ = (μ_1 - μ_2)/σ, where μ_1 is the mean for one population, μ_2 is the mean for the other population, and σ is a standard deviation based on either or both populations.</p>
 <ul><li>Very popular in psychology, not much used in economics. Why?</li><li>Generally we need an experiment: treatment group, control group.</li><li>In economics we often focus on observational research.</li><li>For many questions the treatment and control are not binary classifications (we look at the intensity of treatment)</li></ul>
 <h3>Partial correlation coefficients</h3>
 <p>Example: <b>tuition fees and university enrollment</b>. Ideally, we would need price elasticities of demand (PED), but many studies are not log on log.</p>
 <p>So we transform the estimates to partial correlations using t-statistics and degrees of freedom:</p>
-<p>PCC(PED)_ij = T(PED)_ij√T(PED)_ij^2 + DF(PED)_ij.</p>
+<p>PCC(PED)_ij = (T(PED)_ij)/(√(T(PED)_ij^2 + DF(PED)_ij)).</p>
 <h3>PCC caveats</h3>
 <ul><li>Last resort: can be used almost always, but we lose a lot of information</li><li>Difficult to interpret (some guidelines provided by Doucouliagos, 2011)</li><li>Statistical problems for meta-analysis methods (but this is the case also for SMD)</li><li>Include robustness checks: e.g. a subsample of elasticities in the case of tuition fees and university enrollment</li></ul>
 <h3>Collect all estimates</h3>
@@ -307,7 +307,7 @@ Citations | The logarithm of the total number of citations of the study in Googl
 <p>Based on Taylor series expansion. Basic formula:</p>
 <p>Var(Y) = Var(f(X)) ≈ [f'(μ_X)]^2 Var(X).</p>
 <p>Example: Suppose Y = X^2. Then f(x) = x^2 and f'(x) = 2x, so that: Var(Y) ≈ [2μ_X]^2 Var(X) = 4μ_X^2σ_X^2.</p>
-<p>Example: Suppose Y = (1)/(X). Then f(x) = (1)/(x) and f'(x) = -(1)/(x^2), so that: Var(Y) ≈ [(-1)/(μ_X^2)]^2 Var(X) = (σ_X^2)/(μ_X^4).</p>
+<p>Example: Suppose Y = 1/X. Then f(x) = 1/x and f'(x) = -1/x^2, so that: Var(Y) ≈ [(-1)/μ_X^2]^2 Var(X) = σ_X^2/μ_X^4.</p>
 <h3>AI-assisted data collection: Overview</h3>
 <ul><li>As of August 2025, <b>human review still essential</b></li><li>AI reasonably good at<ul><li>Identifying key study dimensions (estimation method, outcome type, etc.)</li><li>Extracting basic data with structured prompts and examples</li><li>Reducing workload to a single reviewer</li></ul></li><li>Tools: ChatGPT thinking, Agent Mode, NotebookLM</li><li>End-to-end AI infrastructure for meta-analysis: <b>otto-SR</b></li></ul>
 <h3>Step-by-step data collection workflow</h3>
@@ -349,11 +349,11 @@ Citations | The logarithm of the total number of citations of the study in Googl
 <h3>“Fixed effect” estimator in meta-analysis</h3>
 <p class="slide-fig">(Figure.)</p>
 <h3>“Fixed effect” estimator in meta-analysis</h3>
-<p>Mean weighted by inverse variance of individual estimates. Very sensitive to outliers in precision (including typos). Y_i = θ + ε_i, 1 V_i = (σ^2)/(n), 2 W_i = (1)/(V_i), 3 M = Σ_i=1^k W_i Y_iΣ_i=1^k W_i, 4 V_M = 1Σ_i=1^k W_i. 5</p>
+<p>Mean weighted by inverse variance of individual estimates. Very sensitive to outliers in precision (including typos). Y_i = θ + ε_i, (1); V_i = σ^2/n, (2); W_i = 1/V_i, (3); M = (Σ W_i Y_i)/(Σ W_i), (4); V_M = 1/(Σ W_i). (5)</p>
 <h3>Hands on</h3>
 <p>Open Stata</p>
 <h3>FE vs. UWLS: point estimate</h3>
-<ul><li>Unrestricted weighted least squares yield the same point estimate: θ̂ = (Σ w_i θ_i)/(Σ w_i), w_i = (1)/(SE_i^2)</li><li>Difference: Variance estimation.</li></ul>
+<ul><li>Unrestricted weighted least squares yield the same point estimate: θ̂ = (Σ w_i θ_i)/(Σ w_i), w_i = 1/SE_i^2</li><li>Difference: Variance estimation.</li></ul>
 <pre class="slide-table">Method | Point Estimate
 Fixed-Effect (FE) | θ̂ = (Σ w_i θ_i)/(Σ w_i)
 UWLS | θ̂ = (Σ w_i θ_i)/(Σ w_i)</pre>
@@ -362,7 +362,7 @@ UWLS | θ̂ = (Σ w_i θ_i)/(Σ w_i)</pre>
 <p>1.2</p>
 <pre class="slide-table">Feature | Fixed-Effect (FE) | UWLS
 Assumption | Identical θ | Allows heterogeneity
-Variance formula | (1)/(Σ w_i) | (Σ w_i (θ_i - θ̂)^2)/(Σ w_i)
+Variance formula | 1/(Σ w_i) | (Σ w_i (θ_i - θ̂)^2)/(Σ w_i)
 Variance components | Within-study only | Within + between-study
 Robustness | Sensitive to misspecification | More robust</pre>
 <p><b>FE typically underestimates variance. Use UWLS!</b></p>
@@ -371,10 +371,10 @@ Robustness | Sensitive to misspecification | More robust</pre>
 <h3>Random effects</h3>
 <p class="slide-fig">(Figure.)</p>
 <h3>Random effects</h3>
-<p>The weight is now diluted by a heterogeneity term. More robust to outliers in precision and heterogeneity, less robust to publication bias. Y_i = μ + ξ_i + ε_i, 1 V_i = (σ^2)/(n), 2 W_i = (1)/(V_i + τ^2), 3 M = Σ_i=1^k W_i Y_iΣ_i=1^k W_i, 4 V_M = 1Σ_i=1^k W_i. 5</p>
+<p>The weight is now diluted by a heterogeneity term. More robust to outliers in precision and heterogeneity, less robust to publication bias. Y_i = μ + ξ_i + ε_i, (1); V_i = σ^2/n, (2); W_i = 1/(V_i + τ^2), (3); M = (Σ W_i Y_i)/(Σ W_i), (4); V_M = 1/(Σ W_i). (5)</p>
 <h3>Estimating τ^2 in random-effects model</h3>
 <p><b>Between-study variance</b> τ^2 accounts for heterogeneity across studies. Common estimators:</p>
-<ul><li><b>DerSimonian-Laird (DL)</b>: τ^2_DL = (Q - (k - 1))/(C), C = Σ w_i - (Σ w_i^2)/(Σ w_i) - Simple, but underestimates τ^2 when k is small.</li><li><b>Restricted Maximum Likelihood (REML)</b>: max_τ^2 Σ log(w_i^* + τ^2) + Σ ((y_i - θ̂)^2)/(w_i^* + τ^2) - More accurate, default in software.</li></ul>
+<ul><li><b>DerSimonian-Laird (DL)</b>: τ^2_DL = (Q - (k - 1))/C, C = Σ w_i - (Σ w_i^2)/(Σ w_i) - Simple, but underestimates τ^2 when k is small.</li><li><b>Restricted Maximum Likelihood (REML)</b>: max_τ^2 Σ log (w_i^* + τ^2) + Σ ((y_i - θ̂)^2)/(w_i^* + τ^2) - More accurate, default in software.</li></ul>
 <p><b>Rule of thumb:</b> Use REML unless simplicity is needed!</p>
 <h3>Random effects</h3>
 <p class="slide-fig">(Figure.)</p>
@@ -426,16 +426,16 @@ Robustness | Sensitive to misspecification | More robust</pre>
 <h3>Simulation</h3>
 <p class="slide-fig">(Figure.)</p>
 <h3>Funnel asymmetry test</h3>
-<p>In the absence of publication bias the funnel should be symmetrical: estimate_i = β_ true effect + β_0 SE_i_ publication bias + μ_i.</p>
+<p>In the absence of publication bias the funnel should be symmetrical: estimate_i = β [true effect] + β_0 SE_i [publication bias] + μ_i.</p>
 <p>The equation is heteroscedastic. Weighted least squares yield</p>
-<p>t_i = β_0 + β ((1)/(SE_i)) + ϑ_i. This is call the funnel asymmetry test, precision effect test (FAT-PET).</p>
+<p>t_i = β_0 + β (1/SE_i) + ϑ_i. This is called the funnel asymmetry test, precision effect test (FAT-PET).</p>
 <h3>Hands on</h3>
 <p>Open Stata</p>
 <h3>Default nonlinear correction model (PEESE)</h3>
 <p>Publication bias unlikely to be linear in SE. Precision effect test with standard error:</p>
-<p>estimate_i = β_ true effect + β_0 SE^2_i_ publication bias + μ_i.</p>
+<p>estimate_i = β [true effect] + β_0 SE^2_i [publication bias] + μ_i.</p>
 <p>Weighted least squares yield</p>
-<p>t_i = β_0 SE_i + β ((1)/(SE_i)) + ϑ_i.</p>
+<p>t_i = β_0 SE_i + β (1/SE_i) + ϑ_i.</p>
 <p>Works well under most circumstances.</p>
 <h3>WAAP (Ioannidis et al., 2017)</h3>
 <p><b>W</b>eighted <b>A</b>verage of <b>A</b>dequately <b>P</b>owered (WAAP) estimates.</p>
@@ -548,7 +548,7 @@ Sample | 5,861 | 5,743 | 5,743 | 5,743 | 5,743 | 5,743</pre>
 <h3>Meta-analysis instrumental variable estimator</h3>
 <p>MAIVE intuition: E_î = E_0 + β SE(Ê)^2_i + u_i. 1/N_i</p>
 <p>MAIVE first stage: SE(Ê)^2_i = α_0 + α_1 ( 1/N_i ) + π_i. hacking or misspecifications</p>
-<p>MAIVE adjustment: SE(Ê)^2_adj,i = α_0̂ + α_1̂ (1/N_i ) + π_i. hacking or misspecifications</p>
+<p>MAIVE adjustment: SE(Ê)^2_(adj,i) = α_0̂ + α_1̂ (1/N_i ) + π_i. hacking or misspecifications</p>
 <ul><li>MAIVE + PEESE = classical IV.</li><li>Can add <b>controls in the 2nd stage</b>.</li><li>Plug MAIVE-adjusted SEs into other estimators.</li></ul>
 <p class="slide-fig">(With a figure.)</p>
 <h3>MAIVE alleviates the bias</h3>
@@ -577,8 +577,8 @@ Sample | 5,861 | 5,743 | 5,743 | 5,743 | 5,743 | 5,743</pre>
 <p class="slide-fig">(With a figure.)</p>
 <h3>Classical heterogeneity measure</h3>
 <p><b>Common measure:</b> estimate the relative heterogeneity of underlying effects <i>(Higgins and Thompson, 2002)</i></p>
-<p>I^2 ≡ (underlying variance of effects)/(observed variance of estimates) = (τ^2)/(τ^2 + v)</p>
-<ul><li>I^2 = 0.75 1.0 … <i>“considerable heterogeneity” in medicine (Cochrane Review Guideline)</i></li><li>I^2 0.9 … common in economics meta-analyses (e.g., <i>Vivalt, 2021</i>)</li></ul>
+<p>I^2 ≡ (underlying variance of effects)/(observed variance of estimates) = τ^2/(τ^2 + v̄)</p>
+<ul><li>I^2 = 0.75 ∼ 1.0 … <i>“considerable heterogeneity” in medicine (Cochrane Review Guideline)</i></li><li>I^2 ≃ 0.9 … common in economics meta-analyses (e.g., <i>Vivalt, 2021</i>)</li></ul>
 <p><b>Unresolved concern:</b></p>
 <ul><li>no universally agreed criteria for “too much” heterogeneity</li><li>undesirable pattern: with more precise studies, higher I^2</li></ul>
 <h3>Guiding example: beauty and success</h3>
@@ -668,21 +668,21 @@ Sample | 5,861 | 5,743 | 5,743 | 5,743 | 5,743 | 5,743</pre>
 <h3>Issue 2: How much heterogeneity is too much?</h3>
 <p><b>Common measure:</b> estimate the relative heterogeneity of underlying effects <i>(Higgins and Thompson, 2002)</i></p>
 <p>I^2 ≡ (underlying variance of effects)/(observed variance of estimates)</p>
-<ul><li>I^2 = 0.75 1.0 … <i>“considerable heterogeneity” in medicine (Cochrane Review Guideline)</i></li><li>I^2 0.9 … common in economics meta-analyses (e.g., <i>Vivalt, 2021</i>)</li></ul>
+<ul><li>I^2 = 0.75 ∼ 1.0 … <i>“considerable heterogeneity” in medicine (Cochrane Review Guideline)</i></li><li>I^2 ≃ 0.9 … common in economics meta-analyses (e.g., <i>Vivalt, 2021</i>)</li></ul>
 <p><b>Unresolved concern:</b></p>
 <ul><li>no universally agreed criteria for “too much” heterogeneity</li><li>undesirable pattern: with more precise studies, higher I^2</li></ul>
 <h3>This paper (still under construction)</h3>
 <ol><li>Propose a new test for external validity in meta-analysis:<ul><li>Based on the tail index of the underlying distribution, without contamination by estimate precision.</li><li>Test whether the implied variance of underlying effect is infinite (i.e., too heterogeneous).</li></ul></li><li>Show that the implied variance is infinite in meta-analysis of 126 nudge RCTs <i>(DellaVigna and Linos, 2020)</i>:<ul><li><b>Nudge:</b> “choice architecture that alters people's behavior in a predictable way without forbidding any options or significantly changing their economic incentives.” <i>(Thaler and Sunstein, 2008)</i></li><li>The possibility of infinite variance can be important in real-world applications.</li></ul></li></ol>
 <h3>Test of infinite variance</h3>
-<p><b>Pareto tail:</b> F(b) = 1 - Cb^-α, b &gt; b_min and C &gt; 0</p>
-<ul><li>e.g. earthquakes, word frequency, city size, wealth distribution</li><li>If α &lt; 2, then V ar(b) = ∞ because ∫_b_min^∞ b^2 f(b) db ∝ ∫_b_min^∞ b^2 b^-3 db = ∫_b_min^∞ b^-1 db = log b |_b_min^∞ = ∞</li></ul>
+<p><b>Pareto tail:</b> F(b) = 1 - Cb^(-α), b &gt; b_min and C &gt; 0</p>
+<ul><li>e.g. earthquakes, word frequency, city size, wealth distribution</li><li>If α &lt; 2, then Var(b) = ∞ because ∫ b^2 f(b) db ∝ ∫ b^2 b^(-3) db = ∫ b^(-1) db = log b |_b_min^∞ = ∞</li></ul>
 <p><b>Tail index test of external validity:</b></p>
 <ul><li><b>Criteria 1:</b> if α̂ &gt; 2, then pass the test</li><li><b>Criteria 2:</b> if P(α̂ ≤ 2) &lt; p, then pass the test</li></ul>
 <h3>Estimation methods (i) inner problem of tail index</h3>
-<p>Following <i>Hill (1975)</i>, use Maximum Likelihood Estimation for α̂_MLE: given b_min, α̂_MLE = max_α Σ_i=1^n ln l ( α | β_i, SE_i, b_min ), where l ( α | β_i, SE_i, b_min ) ≡ ∫_θ_min^∞ φ ( (β_i - θ)/(SE_i) )1 - Φ ( b_min - θSE_i ) α b_min^α b^-(α + 1) db.</p>
+<p>Following <i>Hill (1975)</i>, use Maximum Likelihood Estimation for α̂_MLE: given b_min, α̂_MLE = arg max_α Σ ln l ( α | β_i, SE_i, b_min ), where l ( α | β_i, SE_i, b_min ) ≡ ∫ (φ ( (β_i - θ)/SE_i ))/(1 - Φ ( (b_min - θ)/SE_i )) α b_min^α b^(-(α + 1)) db.</p>
 <ul><li>Numerical integration</li></ul>
 <h3>Estimation methods (ii) outer problem of cut-off</h3>
-<p>Following <i>Clauset et al. (2006)</i>, use the goodness-of-fit metric to choose b^*_min: b^*_min ∈ min_b_min KS (b_min | α̂_MLE), where the reweighted Kolmogorov-Smirnov statistic is KS (b_min | α̂_MLE) ≡ _β |G(β | β ≥ b_min) - Ĝ(β | ·)| √Ĝ(β | ·) [1 - Ĝ(β | ·)], and the estimated distribution is Ĝ(β | α̂_MLE, β ≥ b_min) and the empirical distribution is G(β | β ≥ b_min).</p>
+<p>Following <i>Clauset et al. (2006)</i>, use the goodness-of-fit metric to choose b^*_min: b^*_min ∈ arg min_b_min K̃S (b_min | α̂_MLE), where the reweighted Kolmogorov-Smirnov statistic is K̃S (b_min | α̂_MLE) ≡ sup_β (|G(β | β ≥ b_min) - Ĝ(β | ·)|)/(√(Ĝ(β | ·) [1 - Ĝ(β | ·)])), and the estimated distribution is Ĝ(β | α̂_MLE, β ≥ b_min) and the empirical distribution is G(β | β ≥ b_min).</p>
 <h3>Nudges</h3>
 <p class="slide-fig">(Figure.)</p>
 <h3>Nudges</h3>
@@ -693,7 +693,7 @@ Sample | 5,861 | 5,743 | 5,743 | 5,743 | 5,743 | 5,743</pre>
 <h3>Summary: How to do a modern meta-analysis</h3>
 <ol><li>Search for primary studies using Google Scholar, snowballing, AI agent</li><li>Use comparable estimates (elasticities, mean differences, correlations)</li><li>Code standard errors, sample sizes, main differences in data and methods</li><li>Winsorize estimates and standard errors at the 1% level</li><li>Correct for publication bias and p-hacking (MAIVE; if weak instrument → RTMA)</li><li>Examine heterogeneity using BMA with the dilution prior</li><li>Report implied effects for different contexts</li></ol>
 <h3>Thank you for inviting me</h3>
-<p>Prepared for Tillv\"axtanalys. Published at meta-analysis.cz/teaching under CC BY 4.0.</p>
+<p>Prepared for Tillväxtanalys. Published at meta-analysis.cz/teaching under CC BY 4.0.</p>
 </div>
 
 <p><a href="/teaching/stockholm-2025/">Back to the course page</a>: the programme, the code and data, and the readings.</p>

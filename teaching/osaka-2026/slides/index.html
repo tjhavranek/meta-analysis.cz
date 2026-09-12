@@ -177,19 +177,19 @@ searched without the PDF. Where a slide is mainly a figure, the text says so; th
 <p>What does it mean?</p>
 <ul><li>When we compare estimates reported in Study 1 and Study 2, it must be clear which one is larger</li><li>It must be clear how much larger it is</li><li>t-statistics are not useful measures of effect size</li><li>Regression coefficients are not comparable in general if studies use different units</li></ul>
 <h3>Elasticities</h3>
-<p>x-elasticity of y: ε = (∂ y)/(y)(∂ x)/(x)</p>
-<p>P-elasticity of Q: ε = (∂ Q)/(Q)(∂ P)/(P) if continuous</p>
-<p>ε = (Q_2 - Q_1)/(Q_1)(P_2 - P_1)/(P_1) = (% change in quantity Q)/(% change in price P) if discrete</p>
+<p>x-elasticity of y: ε = ((∂ y)/y)/((∂ x)/x)</p>
+<p>P-elasticity of Q: ε = ((∂ Q)/Q)/((∂ P)/P) if continuous</p>
+<p>ε = ((Q_2 - Q_1)/Q_1)/((P_2 - P_1)/P_1) = (% change in quantity Q)/(% change in price P) if discrete</p>
 <p>Elasticities can be recovered from regressing <b>log(Y) on log(X)</b>.</p>
 <h3>Semi-elasticities, dollar values, std.dev. changes</h3>
 <ul><li>Semi-elasticity: effect of euro adoption on trade, effects of foreign investment on domestic productivity, effects of borders on trade</li><li><b>Dollar values</b>: statistical value of life, social cost of carbon</li><li>Std.dev. changes: effect of class size on student test scores. What to do here?</li><li>Class size is measured the same way in all studies (number of kids).</li><li>Test scores are measured differently.</li><li>Solution: By <b>how many standard deviations</b> do test scores improve if we decrease class size by 10 students?</li></ul>
 <h3>Standardized mean differences</h3>
-<p>θ = (μ_1 - μ_2)/(σ), where μ_1 is the mean for one population, μ_2 is the mean for the other population, and σ is a standard deviation based on either or both populations.</p>
+<p>θ = (μ_1 - μ_2)/σ, where μ_1 is the mean for one population, μ_2 is the mean for the other population, and σ is a standard deviation based on either or both populations.</p>
 <ul><li>Very popular in psychology, not much used in economics. Why?</li><li>For many questions the treatment and control are not binary classifications (we look at the intensity of treatment)</li></ul>
 <h3>Partial correlation coefficients</h3>
 <p>Example: <b>tuition fees and university enrollment</b>. Ideally, we would need price elasticities of demand (PED), but many studies are not log on log.</p>
 <p>So we transform the estimates to partial correlations using t-statistics and degrees of freedom:</p>
-<p>PCC(PED)_ij = T(PED)_ij√T(PED)_ij^2 + DF(PED)_ij.</p>
+<p>PCC(PED)_ij = (T(PED)_ij)/(√(T(PED)_ij^2 + DF(PED)_ij)).</p>
 <h3>PCC caveats</h3>
 <ul><li>Last resort: can be used almost always, but we lose a lot of information</li><li>Difficult to interpret (some guidelines provided by Doucouliagos, 2011)</li><li>Statistical problems for meta-analysis methods (but this is the case also for SMD)</li><li>Include robustness checks: e.g. a subsample of elasticities in the case of tuition fees and university enrollment</li></ul>
 <h3>Collect all estimates</h3>
@@ -236,11 +236,11 @@ searched without the PDF. Where a slide is mainly a figure, the text says so; th
 <h3>“Fixed effect” estimator in meta-analysis</h3>
 <p class="slide-fig">(Figure.)</p>
 <h3>“Fixed effect” estimator in meta-analysis</h3>
-<p>Mean weighted by inverse variance of individual estimates. Very sensitive to outliers in precision (including typos). Y_i = θ + ε_i, 1 V_i = (σ^2)/(n), 2 W_i = (1)/(V_i), 3 M = Σ_i=1^k W_i Y_iΣ_i=1^k W_i, 4 V_M = 1Σ_i=1^k W_i. 5</p>
+<p>Mean weighted by inverse variance of individual estimates. Very sensitive to outliers in precision (including typos). Y_i = θ + ε_i, (1); V_i = σ^2/n, (2); W_i = 1/V_i, (3); M = (Σ W_i Y_i)/(Σ W_i), (4); V_M = 1/(Σ W_i). (5)</p>
 <h3>Hands on</h3>
 <p>Open Stata</p>
 <h3>FE vs. UWLS: point estimate</h3>
-<ul><li>Unrestricted weighted least squares yield the same point estimate: θ̂ = (Σ w_i θ_i)/(Σ w_i), w_i = (1)/(SE_i^2)</li><li>Difference: Variance estimation.</li></ul>
+<ul><li>Unrestricted weighted least squares yield the same point estimate: θ̂ = (Σ w_i θ_i)/(Σ w_i), w_i = 1/SE_i^2</li><li>Difference: Variance estimation.</li></ul>
 <pre class="slide-table">Method | Point Estimate
 Fixed-Effect (FE) | θ̂ = (Σ w_i θ_i)/(Σ w_i)
 UWLS | θ̂ = (Σ w_i θ_i)/(Σ w_i)</pre>
@@ -249,7 +249,7 @@ UWLS | θ̂ = (Σ w_i θ_i)/(Σ w_i)</pre>
 <p>1.2</p>
 <pre class="slide-table">Feature | Fixed-Effect (FE) | UWLS
 Assumption | Identical θ | Allows heterogeneity
-Variance formula | (1)/(Σ w_i) | (Σ w_i (θ_i - θ̂)^2)/(Σ w_i)
+Variance formula | 1/(Σ w_i) | (Σ w_i (θ_i - θ̂)^2)/(Σ w_i)
 Variance components | Within-study only | Within + between-study
 Robustness | Sensitive to misspecification | More robust</pre>
 <p><b>FE typically underestimates variance. Use UWLS!</b></p>
@@ -258,10 +258,10 @@ Robustness | Sensitive to misspecification | More robust</pre>
 <h3>Random effects</h3>
 <p class="slide-fig">(Figure.)</p>
 <h3>Random effects</h3>
-<p>The weight is now diluted by a heterogeneity term. More robust to outliers in precision and heterogeneity, less robust to publication bias. Y_i = μ + ξ_i + ε_i, 1 V_i = (σ^2)/(n), 2 W_i = (1)/(V_i + τ^2), 3 M = Σ_i=1^k W_i Y_iΣ_i=1^k W_i, 4 V_M = 1Σ_i=1^k W_i. 5</p>
+<p>The weight is now diluted by a heterogeneity term. More robust to outliers in precision and heterogeneity, less robust to publication bias. Y_i = μ + ξ_i + ε_i, (1); V_i = σ^2/n, (2); W_i = 1/(V_i + τ^2), (3); M = (Σ W_i Y_i)/(Σ W_i), (4); V_M = 1/(Σ W_i). (5)</p>
 <h3>Estimating τ^2 in random-effects model</h3>
 <p><b>Between-study variance</b> τ^2 accounts for heterogeneity across studies. Common estimators:</p>
-<ul><li><b>DerSimonian-Laird (DL)</b>: τ^2_DL = (Q - (k - 1))/(C), C = Σ w_i - (Σ w_i^2)/(Σ w_i) - Simple, but underestimates τ^2 when k is small.</li><li><b>Restricted Maximum Likelihood (REML)</b>: max_τ^2 Σ log(w_i^* + τ^2) + Σ ((y_i - θ̂)^2)/(w_i^* + τ^2) - More accurate, default in software.</li></ul>
+<ul><li><b>DerSimonian-Laird (DL)</b>: τ^2_DL = (Q - (k - 1))/C, C = Σ w_i - (Σ w_i^2)/(Σ w_i) - Simple, but underestimates τ^2 when k is small.</li><li><b>Restricted Maximum Likelihood (REML)</b>: max_τ^2 Σ log (w_i^* + τ^2) + Σ ((y_i - θ̂)^2)/(w_i^* + τ^2) - More accurate, default in software.</li></ul>
 <p><b>Rule of thumb:</b> Use REML unless simplicity is needed!</p>
 <h3>Random effects</h3>
 <p class="slide-fig">(Figure.)</p>
@@ -299,16 +299,16 @@ Robustness | Sensitive to misspecification | More robust</pre>
 <h3>Simulation</h3>
 <p class="slide-fig">(Figure.)</p>
 <h3>Funnel asymmetry test</h3>
-<p>In the absence of publication bias the funnel should be symmetrical: estimate_i = β_ true effect + β_0 SE_i_ publication bias + μ_i.</p>
+<p>In the absence of publication bias the funnel should be symmetrical: estimate_i = β [true effect] + β_0 SE_i [publication bias] + μ_i.</p>
 <p>The equation is heteroscedastic. Weighted least squares yield</p>
-<p>t_i = β_0 + β ((1)/(SE_i)) + ϑ_i. This is call the funnel asymmetry test, precision effect test (FAT-PET).</p>
+<p>t_i = β_0 + β (1/SE_i) + ϑ_i. This is called the funnel asymmetry test, precision effect test (FAT-PET).</p>
 <h3>Hands on</h3>
 <p>Open Stata</p>
 <h3>Default nonlinear correction model (PEESE)</h3>
 <p>Publication bias unlikely to be linear in SE. Precision effect test with standard error:</p>
-<p>estimate_i = β_ true effect + β_0 SE^2_i_ publication bias + μ_i.</p>
+<p>estimate_i = β [true effect] + β_0 SE^2_i [publication bias] + μ_i.</p>
 <p>Weighted least squares yield</p>
-<p>t_i = β_0 SE_i + β ((1)/(SE_i)) + ϑ_i.</p>
+<p>t_i = β_0 SE_i + β (1/SE_i) + ϑ_i.</p>
 <p>Works well under most circumstances.</p>
 <h3>WAAP (Ioannidis et al., 2017)</h3>
 <p><b>W</b>eighted <b>A</b>verage of <b>A</b>dequately <b>P</b>owered (WAAP) estimates.</p>
@@ -417,7 +417,7 @@ Sample | 5,861 | 5,743 | 5,743 | 5,743 | 5,743 | 5,743</pre>
 <h3>Meta-analysis instrumental variable estimator</h3>
 <p>MAIVE intuition: E_î = E_0 + β SE(Ê)^2_i + u_i. 1/N_i</p>
 <p>MAIVE first stage: SE(Ê)^2_i = α_0 + α_1 ( 1/N_i ) + π_i. hacking or misspecifications</p>
-<p>MAIVE adjustment: SE(Ê)^2_adj,i = α_0̂ + α_1̂ (1/N_i ) + π_i. hacking or misspecifications</p>
+<p>MAIVE adjustment: SE(Ê)^2_(adj,i) = α_0̂ + α_1̂ (1/N_i ) + π_i. hacking or misspecifications</p>
 <ul><li>MAIVE + PEESE = classical IV.</li><li>Can add <b>controls in the 2nd stage</b>.</li><li>Plug MAIVE-adjusted SEs into other estimators.</li></ul>
 <p class="slide-fig">(With a figure.)</p>
 <h3>MAIVE alleviates the bias</h3>
