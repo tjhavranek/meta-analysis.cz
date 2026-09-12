@@ -1,0 +1,301 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Introduction to Meta-Analysis in Economics (University of Osaka, 2026)</title>
+<meta name="description" content="Slides, LaTeX source, Stata and R code, data and a recording of a one-day course on meta-analysis in economics at ISER, the University of Osaka, 16 March 2026." />
+<link href="/style.css" rel="stylesheet" type="text/css" />
+<!-- seo-meta:start -->
+<link rel="canonical" href="https://meta-analysis.cz/teaching/osaka-2026/" />
+<meta property="og:site_name" content="meta-analysis.cz" />
+<meta property="og:type" content="website" />
+<meta property="og:title" content="Introduction to Meta-Analysis in Economics (University of Osaka, 2026)" />
+<meta property="og:description" content="Slides, LaTeX source, Stata and R code, data and a recording of a one-day course on meta-analysis in economics at ISER, the University of Osaka, 16 March 2026." />
+<meta property="og:url" content="https://meta-analysis.cz/teaching/osaka-2026/" />
+<script type="application/ld+json">
+{
+ "@context": "https://schema.org",
+ "@graph": [
+  {
+   "@type": "Course",
+   "@id": "https://meta-analysis.cz/teaching/osaka-2026/#course",
+   "url": "https://meta-analysis.cz/teaching/osaka-2026/",
+   "name": "Introduction to Meta-Analysis in Economics",
+   "description": "A one-day introduction to meta-analysis in economics, with an emphasis on tools for applied and policy work: building a meta-analytic dataset, correcting for publication bias and p-hacking, and modelling heterogeneity, with worked examples in Stata and R.",
+   "inLanguage": "en",
+   "license": "https://creativecommons.org/licenses/by/4.0/",
+   "author": {
+    "@id": "https://meta-analysis.cz/#th"
+   },
+   "provider": {
+    "@type": "Organization",
+    "name": "Institute of Social and Economic Research, The University of Osaka",
+    "url": "https://www.iser.osaka-u.ac.jp/"
+   },
+   "hasCourseInstance": {
+    "@type": "CourseInstance",
+    "courseMode": "Blended",
+    "startDate": "2026-03-16",
+    "endDate": "2026-03-16",
+    "location": {
+     "@type": "Place",
+     "name": "Institute of Social and Economic Research (ISER), The University of Osaka",
+     "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "Osaka",
+      "addressCountry": "JP"
+     }
+    },
+    "instructor": {
+     "@id": "https://meta-analysis.cz/#th"
+    },
+    "inLanguage": "en"
+   },
+   "hasPart": [
+    {
+     "@id": "https://meta-analysis.cz/teaching/osaka-2026/#slides"
+    },
+    {
+     "@id": "https://meta-analysis.cz/teaching/osaka-2026/#recording-1"
+    },
+    {
+     "@id": "https://meta-analysis.cz/teaching/osaka-2026/#recording-2"
+    }
+   ],
+   "isPartOf": {
+    "@id": "https://meta-analysis.cz/teaching/#page"
+   }
+  },
+  {
+   "@type": "LearningResource",
+   "@id": "https://meta-analysis.cz/teaching/osaka-2026/#slides",
+   "name": "Slides: Introduction to Meta-Analysis in Economics",
+   "learningResourceType": "Presentation",
+   "encodingFormat": "application/pdf",
+   "url": "https://meta-analysis.cz/teaching/osaka-2026/slides.pdf",
+   "license": "https://creativecommons.org/licenses/by/4.0/",
+   "author": {
+    "@id": "https://meta-analysis.cz/#th"
+   },
+   "inLanguage": "en"
+  },
+  {
+   "@type": "VideoObject",
+   "@id": "https://meta-analysis.cz/teaching/osaka-2026/#recording-1",
+   "name": "Introduction to Meta-Analysis in Economics, recording part 1: lectures 1 and 2",
+   "description": "Lectures 1 and 2: the meta-analysis workflow, and selective reporting.",
+   "duration": "PT1H50M52S",
+   "dateCreated": "2026-03-16",
+   "url": "https://www.dropbox.com/scl/fo/5viv5drif9n88b6i9a40y/AC3DtibUW-IZwX3pHiZn94I?rlkey=c6ig14fnphqzm44z9khsrh8tx&dl=0",
+   "inLanguage": "en",
+   "license": "https://creativecommons.org/licenses/by/4.0/",
+   "author": {
+    "@id": "https://meta-analysis.cz/#th"
+   }
+  },
+  {
+   "@type": "VideoObject",
+   "@id": "https://meta-analysis.cz/teaching/osaka-2026/#recording-2",
+   "name": "Introduction to Meta-Analysis in Economics, recording part 2: lectures 3 and 4",
+   "description": "Lectures 3 and 4: heterogeneity, and interpretation and best practices.",
+   "duration": "PT1H40M3S",
+   "dateCreated": "2026-03-16",
+   "url": "https://www.dropbox.com/scl/fo/5viv5drif9n88b6i9a40y/AC3DtibUW-IZwX3pHiZn94I?rlkey=c6ig14fnphqzm44z9khsrh8tx&dl=0",
+   "inLanguage": "en",
+   "license": "https://creativecommons.org/licenses/by/4.0/",
+   "author": {
+    "@id": "https://meta-analysis.cz/#th"
+   }
+  },
+  {
+   "@type": "Person",
+   "@id": "https://meta-analysis.cz/#th",
+   "name": "Tomas Havranek",
+   "url": "https://www.tomashavranek.cz"
+  }
+ ]
+}
+</script>
+<!-- seo-meta:end -->
+<style>
+/* Teaching pages: a plain schedule table, and the slide text set a step quieter than prose. */
+.entry table.sched{ border-collapse:collapse; margin:var(--s3) 0 var(--s5); font-size:var(--f-1); }
+.entry table.sched td{ padding:var(--s2) var(--s4) var(--s2) 0; vertical-align:top;
+  border-bottom:1px solid var(--rule); line-height:1.45; }
+.entry table.sched td.t{ white-space:nowrap; font-variant-numeric:tabular-nums; color:var(--ink-soft); }
+.entry p.slide-fig{ margin-top:0; font-size:var(--f-1); color:var(--ink-soft); }
+.entry pre.slide-table{ max-width:100%; overflow-x:auto; font-size:var(--f-1); line-height:1.4; }
+.entry .slides-text h3{ margin-top:var(--s5); }
+</style>
+</head>
+<body>
+<div id="wrapper">
+<div id="logo">
+	<a class="masthead-home" href="/">meta-analysis.cz</a>
+	<p class="site-name"><a href="/teaching/">Teaching</a></p>
+	<h2> <span class="mk">&raquo;</span>&nbsp;&nbsp;&nbsp; Osaka, 16 March 2026</h2>
+</div>
+<div id="header">
+	<div id="menu">
+		<ul>
+			<li><a href="/teaching/">Teaching</a></li>
+			<li class="current_page_item"><a href="/teaching/osaka-2026/">Osaka 2026</a></li>
+			<li><a href="/teaching/stockholm-2025/">Stockholm 2025</a></li>
+			<li><a href="/guidelines/">Guidelines</a></li>
+			<li><a href="/">All meta-analyses</a></li>
+		</ul>
+	</div>
+</div>
+</div>
+<!-- start page -->
+<div id="page" class="single">
+	<div id="content">
+		<div class="post">
+			<div class="entry">
+
+<p class="lede"><b>Introduction to Meta-Analysis in Economics.</b> A one-day course at the
+Institute of Social and Economic Research (ISER), the University of Osaka, on 16 March 2026, on
+site and online. Tomas Havranek, Charles University, Prague.</p>
+
+<p class="cta"><a class="button" href="/teaching/osaka-2026/slides.pdf">Slides (PDF)</a>
+<a class="button quiet" href="https://www.dropbox.com/scl/fo/5viv5drif9n88b6i9a40y/AC3DtibUW-IZwX3pHiZn94I?rlkey=c6ig14fnphqzm44z9khsrh8tx&amp;dl=0">Recording</a></p>
+
+<p>From the announcement:</p>
+<blockquote><p>This mini-course provides a practical introduction to meta-analysis in economics,
+with an emphasis on tools that are useful for applied and policy work. Using the beauty premium
+meta-analysis as a running example, we will cover (i) how to define and collect comparable
+estimates and build a transparent meta-analytic dataset, (ii) how to diagnose and correct for
+selective reporting (including publication bias and p-hacking) and (iii) how to model and
+interpret heterogeneity across studies and translate it into credible &#8220;implied
+effects.&#8221; The lectures will include worked examples with code (mainly Stata, with a small
+amount of R) and focus on interpretation and best practices: what the methods do, what
+assumptions they need, and how to report results in a way that is informative and
+defensible.</p></blockquote>
+
+<h2 id="schedule">Schedule</h2>
+
+<table class="sched">
+<tr><td class="t">10:00 to 10:45</td><td>Lecture 1. Meta-analysis workflow: scope and data collection</td></tr>
+<tr><td class="t">11:00 to 11:45</td><td>Lecture 2. Selective reporting: key concepts and practical tools</td></tr>
+<tr><td class="t">12:45 to 13:30</td><td>Lecture 3. Heterogeneity: key concepts and practical tools</td></tr>
+<tr><td class="t">13:45 to 14:30</td><td>Lecture 4. Putting it together: interpretation and best practices</td></tr>
+</table>
+
+<p>Times are Japan Standard Time. The day was organised by Taisuke Imai and Chishio Furukawa,
+with support from JSPS KAKENHI (grants 22K21358 and 25H00388) and the Joint Usage and Research
+Center &#8220;Behavioral Economics&#8221;. In the afternoon Yohei Mitani spoke on &#8220;Global
+Meta-Analysis of VSL&#8221; and Martina Luskova on &#8220;Do Two Wrongs Make a Right? Publication
+and Attenuation Biases in Economics&#8221;; those talks were not recorded.</p>
+
+<h2 id="recording">Recording</h2>
+
+<p>The four lectures were recorded in two parts:</p>
+<ul class="reading">
+<li>Part 1, lectures 1 and 2: 1 hour 51 minutes (120.7 MB)</li>
+<li>Part 2, lectures 3 and 4: 1 hour 40 minutes (109.9 MB)</li>
+</ul>
+<p>Both are in <a href="https://www.dropbox.com/scl/fo/5viv5drif9n88b6i9a40y/AC3DtibUW-IZwX3pHiZn94I?rlkey=c6ig14fnphqzm44z9khsrh8tx&amp;dl=0">a shared Dropbox folder</a>, together with the slides, code
+and data as they were handed out.</p>
+
+<h2 id="slides">Slides</h2>
+
+<ul class="reading">
+<li><a href="/teaching/osaka-2026/slides.pdf">slides.pdf</a>: the 162 pages as taught</li>
+<li><a href="/teaching/osaka-2026/slides/">The slides as text</a>: every slide's title and text, for reading and searching without the PDF</li>
+<li><a href="/teaching/osaka-2026/slides.tex">slides.tex</a>: the LaTeX source, and <a href="/teaching/osaka-2026/latex.zip">latex.zip</a>: the source with all 85 figures, ready for pdflatex</li>
+</ul>
+
+<p>The deck covers <a href="/teaching/osaka-2026/slides/#motivation">Motivation</a>, <a href="/teaching/osaka-2026/slides/#literature-search">Literature Search</a>, <a href="/teaching/osaka-2026/slides/#data-collection">Data Collection</a>, <a href="/teaching/osaka-2026/slides/#conventional-tools">Conventional Tools</a>, <a href="/teaching/osaka-2026/slides/#publication-bias">Publication Bias</a>, <a href="/teaching/osaka-2026/slides/#p-hacking">P-hacking</a>, <a href="/teaching/osaka-2026/slides/#heterogeneity">Heterogeneity</a> and <a href="/teaching/osaka-2026/slides/#takeaways">Takeaways</a>. It is a shorter and updated version of the
+<a href="/teaching/stockholm-2025/">Stockholm course</a> of August 2025: the numbers for the beauty
+premium are updated, MAIVE is now published in <i>Nature Communications</i>, and there are new
+slides on EasyMeta and on AI in meta-analysis. Two figures still mark the earlier mean beauty
+premium of 4.3% with a reference line; the text gives the updated 5%.</p>
+
+<h2 id="code">Code and data</h2>
+
+<p>The hands-on part replicates selected analyses of <a href="/beauty/">the meta-analysis of
+beauty and professional success</a>, from the raw estimates to estimates corrected for
+publication bias and to the effect implied by best practice. The files as they were handed out:</p>
+
+<ul class="reading">
+<li><a href="/teaching/osaka-2026/code/beauty.xlsx">beauty.xlsx</a>: the 1,159 estimates from 67 studies, with their moderator variables</li>
+<li><a href="/teaching/osaka-2026/code/beauty.do">beauty.do</a>: the annotated Stata script for the whole workflow, from summary statistics and graphs to bias corrections and implied estimates</li>
+<li><a href="/teaching/osaka-2026/code/beauty_bma.csv">beauty_bma.csv</a>: the cleaned data for R</li>
+<li><a href="/teaching/osaka-2026/code/beauty_bma.R">beauty_bma.R</a>: right-truncated meta-analysis (RTMA) and Bayesian model averaging (BMA)</li>
+</ul>
+
+<p>This is the teaching version of the data. The full dataset and the replication package of the
+paper are on <a href="/beauty/">its project page</a>.</p>
+
+<p>Stata 15 or later, with these packages:</p>
+<pre class="usage"><code>ssc install winsor2
+ssc install metan
+ssc install ivreg2
+net install boottest, from("https://raw.githubusercontent.com/droodman/boottest/main/")
+ssc install weakiv
+ssc install collin</code></pre>
+
+<p>R 4.5 or later, with the packages BMS and phacking (phacking also installs rstan and the other
+packages it depends on):</p>
+<pre class="usage"><code>install.packages(c("BMS", "phacking"))</code></pre>
+
+<p>In Stata, put beauty.xlsx in the working directory and run beauty.do section by section. In R,
+put beauty_bma.csv next to beauty_bma.R and run the script. The main corrections for publication bias and p-hacking also run without any installation at <a href="https://www.easymeta.org/">EasyMeta.org</a>, which gives the R code for each result.</p>
+
+<h2 id="readings">Readings</h2>
+
+<ul class="reading">
+<li><a href="/guidelines/">The practitioner&#8217;s guide to meta-analysis</a> (Irsova, Doucouliagos, Havranek and Stanley, <i>Journal of Economic Surveys</i>)</li>
+<li><a href="/maive/">MAIVE: spurious precision in meta-analysis of observational research</a> (Irsova, Bom, Havranek and Rachinger, <i>Nature Communications</i>, 2025), and <a href="/maive/how-to/">how to run it</a></li>
+<li><a href="/guidelines/ai/">Guidance for the use of AI in the meta-analysis of economics research</a> and <a href="/guidelines/reporting-ai/">reporting guidelines updated for AI</a> (MAER-Net)</li>
+<li>Applications: <a href="/beauty/">beauty and professional success</a>, <a href="/class/">class size and student achievement</a>, <a href="/incentives/">financial incentives and performance</a>, and <a href="/skill/">skill substitution</a></li>
+<li><a href="https://github.com/tjhavranek/research-audit-duel-protocol">AI duels for meta-analysis</a> (the research-audit duel protocol on GitHub)</li>
+<li><a href="https://www.easymeta.org/">EasyMeta.org</a>: meta-analysis in the browser, with corrections for p-hacking</li>
+</ul>
+
+<h2 id="licence">Licence</h2>
+
+<p>CC BY 4.0, like everything on this site; the code files also carry an MIT licence in their
+headers. A few figures and screenshots in the slides reproduce other people's work, such as
+textbook diagrams and search-engine results, and those remain under their original terms.</p>
+
+			</div>
+		</div>
+	</div>
+</div>
+<!-- end page -->
+<footer class="site-foot">
+<p class="foot-lede"><b>meta-analysis.cz</b> collects meta-analyses, the data behind them, the
+code that produced them, and the methods for doing them. It is maintained by <a href="/about/"><b>Tomas Havranek</b> and
+<b>Zuzana Irsova</b></a> at the Institute of Economic Studies, Charles University, Prague.</p>
+<p class="foot-nav"><a href="/">All meta-analyses</a> &middot;
+<a href="/papers/">Papers in full</a> &middot;
+<a href="/results/">Headline results</a> &middot;
+<a href="/datasets/">Datasets and the pooled table</a> &middot;
+<a href="/maive/">MAIVE</a> &middot;
+<a href="/guidelines/">Practitioner&#x27;s guide</a> &middot;
+<a href="/teaching/">Teaching</a> &middot;
+<a href="/notes/">Research notes</a> &middot;
+<a href="/impact/">How this work has been used</a> &middot;
+<a href="https://www.easymeta.org/">EasyMeta web app</a></p>
+<p class="foot-who"><b>Tomas Havranek</b> &middot; <a href="https://www.tomashavranek.cz/">tomashavranek.cz</a> &middot; <a href="https://ies.fsv.cuni.cz/en/contacts/institute-members/78067720">IES FSV UK</a> &middot; <a href="https://orcid.org/0000-0002-3158-2539">ORCID</a> &middot; <a href="https://scholar.google.com/citations?user=BF0BvBkAAAAJ">Google Scholar</a> &middot; <a href="https://ideas.repec.org/f/pha418.html">RePEc</a> &middot; <a href="https://www.scopus.com/authid/detail.uri?authorId=24453189000">Scopus</a> &middot; <a href="https://cepr.org/about/people/tomas-havranek">CEPR</a> &middot; <a href="https://metrics.stanford.edu/people/tomas-havranek">Stanford METRICS</a></p>
+<p class="foot-who"><b>Zuzana Irsova</b> &middot; <a href="https://www.irsova.com/">irsova.com</a> &middot; <a href="https://ies.fsv.cuni.cz/en/contacts/institute-members/73504033">IES FSV UK</a> &middot; <a href="https://orcid.org/0000-0002-0753-8124">ORCID</a> &middot; <a href="https://scholar.google.com/citations?user=LaHrICUAAAAJ">Google Scholar</a> &middot; <a href="https://ideas.repec.org/e/pir23.html">RePEc</a> &middot; <a href="https://www.scopus.com/authid/detail.uri?authorId=37080793200">Scopus</a> &middot; <a href="https://cepr.org/about/people/zuzana-irsova">CEPR</a> &middot; <a href="https://metrics.stanford.edu/people/zuzana-irsova">Stanford METRICS</a></p>
+<p class="foot-cite"><b>How to cite this collection:</b> Havranek, T. and Z. Irsova (2026).
+meta-analysis.cz: harmonised estimate-level data from meta-analyses in economics. Zenodo.
+<a href="https://doi.org/10.5281/zenodo.21773678">https://doi.org/10.5281/zenodo.21773678</a>.
+Individual papers carry their own citation on their own page.</p>
+<p class="foot-licence"><b>Licence: CC BY 4.0.</b> Everything on this site is licensed under the
+<a href="https://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0
+International Licence</a>. That covers the papers, the datasets, their CSV and Parquet conversions,
+the pooled table, the codebooks, and the documentation. You may copy, redistribute, adapt, and reuse
+any of it for any purpose, including commercial use and training machine-learning models, as long
+as you give attribution to meta-analysis.cz. You do not need to ask.</p>
+<p class="foot-machine">For machines: <a href="/api/v1/datasets.json">datasets.json</a> &middot;
+<a href="/api/v1/datapackage.json">datapackage.json</a> &middot;
+<a href="/api/v1/croissant.json">croissant.json</a> &middot;
+<a href="/llms.txt">llms.txt</a> &middot; <a href="/llms-full.txt">llms-full.txt</a> &middot;
+<a href="/sitemap.xml">sitemap.xml</a> &middot; <a href="/LICENSE">LICENSE</a></p>
+</footer>
+</body>
+</html>

@@ -1,0 +1,3151 @@
+\documentclass{beamer} %[compress]
+% alternatively add handout or draft option
+
+%\mode<handout>%{\setbeamercolor{background canvas}{bg=black!5}}
+%\usepackage{pgfpages}
+%\pgfpagesuselayout{4 on 1}[a4paper,border shrink=5mm,landscape]
+% For handout printing, 4 slides on 1 page
+
+\mode<presentation>
+{
+  \usetheme{Pittsburgh} % plain template Pittsburgh
+  \useoutertheme{infolines} % bottom (author, title, place)
+  \useoutertheme[subsection=false]{miniframes} % top (sections only, no subsections)
+  \usecolortheme{beaver} % red color
+  \setbeamertemplate{frametitle}[default][right] % frame titles on the right
+  \setbeamercovered{transparent}
+  % or whatever (possibly just delete it)
+}
+
+% Remove the circles (slide dots) from the top navigation bar but keep section names
+\makeatletter
+\setbeamertemplate{headline}{
+  \leavevmode%
+  \hbox{%
+    \begin{beamercolorbox}[wd=\paperwidth,ht=2.5ex,dp=1.125ex]{section in head/foot}
+      \hspace{1em}\insertsection\hfill
+    \end{beamercolorbox}%
+  }%
+}
+\makeatother
+
+\setbeamersize{text margin left=1cm, text margin right=1cm}
+%\setbeamertemplate{navigation symbols}{}
+
+\usepackage[english]{babel}
+\usepackage{booktabs}
+\usepackage{comment}
+\usepackage[cp1250]{inputenc} % or whatever
+\usepackage{subfigure} % subfigures
+\usepackage{times}
+\usepackage{tikz}
+%\usepackage{breqn}
+\usepackage{amsmath}
+\usepackage[T1]{fontenc}
+
+\def\sym#1{\ifmmode^{#1}\else\(^{#1}\)\fi} % shortcut for Stata tables
+% Or whatever. Note that the encoding and the font should match. If T1
+% does not look nice, try deleting the line with the fontenc.
+
+%\logo{\includegraphics[height=0.5cm]{logo.jpg}} % logo on every page
+
+
+
+\title[Meta Workshop for Tillv\"{a}xtanalys] % (optional, use only with long paper titles)
+{Meta-Analysis for Policy Economists}
+\subtitle{Practical Tools for Synthesizing Research}
+
+\author[T.\ Havranek] % (optional, use only with lots of authors)
+{ Tomas Havranek
+}
+% - Give the names in the same order as the appear in the paper.
+% - Use the \inst{?} command only if the authors have different
+%   affiliation.
+
+\institute[Prague] % (optional, but mostly needed)
+{
+  	Charles University, Prague\\ Centre for Economic Policy Research, London \\ Meta-Research Innovation Center, Stanford
+
+  %\inst%
+  %Economic Research Department\\
+  %Czech National Bank
+      %\inst{1}%
+  %Research Department\\
+  %Czech National Bank
+  %\and
+  %\inst{2}%
+  %Institute of Economic Studies\\
+  %Charles University, Prague
+  
+%\pgfdeclareimage[height=1cm]{logo}{logo.jpg} % logo only on title page
+%\pgfuseimage{logo}
+}% - Use the \inst command only if there are several affiliations.
+% - Keep it simple, no one is interested in your street address.
+
+\date[August 28--29, 2025] % (optional, should be abbreviation of conference name)
+{Workshop prepared for Tillv\"{a}xtanalys, Stockholm\\[2ex]
+  August 28--29, 2025
+}%\\[4mm]% - Either use conference name or its abbreviation.
+% - Not really informative to the audience, more for people (including
+%   yourself) who are reading the slides online
+
+
+%\subject{Intertemporal Substitution}
+
+%\begin{comment}
+\AtBeginSection[]
+{
+  \begin{frame}<beamer>{Workshop Outline}
+    \tableofcontents[currentsection]%,currentsubsection]
+  \end{frame}
+}
+%\end{comment}
+
+\begin{document}
+
+\begin{frame}
+  \titlepage
+\end{frame}
+
+%\begin{comment}
+
+\begin{frame}{Workshop Outline}
+  \tableofcontents
+  % You might wish to add the option [pausesections]
+\end{frame}
+
+%\end{comment}
+
+\section{Motivation}
+%\subsection{}
+
+%\section{EIS}
+%\subsection{}
+
+
+\begin{frame}{Meta important for research, policy, practice}
+\textbf{Research experience:}
+\begin{itemize}
+	%\item Professor at Charles University, Prague
+	\item Affiliate at the Meta-Research Innovation Center, Stanford
+	\item Panel member at ERC Advanced
+		\item Convener of Meta-Analysis in Economics Network
+		\item Meta-Analysis Editor at the Journal of Economic Surveys
+		\item MAIVE method (Nature Communications)
+				\item Over 50 metas published, e.g.\ REStat, JEEA, JOLE, JIE\ldots
+\end{itemize}
+
+\bigskip
+
+\textbf{Policy experience:}
+
+\begin{itemize}
+	\item Former Advisor to the Board, Czech National Bank
+	\item Former member of the Czech National Economic Council
+	\item Affiliate at the Centre for Economic Policy Research, London
+\end{itemize}
+
+%\bigskip
+
+%\href{https://tomashavranek.cz/}{\textbf{tomashavranek.cz}}
+\end{frame}
+
+
+
+\begin{frame}{What happens if the government spends more?}
+Labor supply elasticity is key (but how to calibrate it?):
+\begin{figure}
+	\centering
+		\includegraphics[width=1.00\textwidth]{lecture1/G_shock_Frisch75.pdf}
+\end{figure}
+\end{frame}
+
+
+
+
+\begin{frame}{Calibration uncertainty: meta needed!}
+\vspace{-0.4cm}
+\begin{figure}[htbp]
+	\begin{center}
+	\subfiguretopcaptrue
+	\subfigure{\includegraphics[width=0.45\textwidth]{lecture1/dsge1}}
+	\subfigure{\includegraphics[width=0.45\textwidth]{lecture1/dsge2}}
+		\end{center}
+\end{figure}
+\end{frame}
+
+\begin{frame}{What happens if we change another parameter?}
+\begin{figure}[htbp]
+	\begin{center}
+\includegraphics[width=0.95\textwidth]{lecture1/ir_i}
+		\end{center}
+\end{figure}
+\end{frame}
+
+
+
+
+
+\begin{frame}{Estimates of the labor supply elasticity vary}
+\begin{figure}
+	\centering
+		\includegraphics[width=0.53\textwidth]{lecture1/_box2.pdf}
+\end{figure}
+\end{frame}
+
+
+\begin{frame}{Values around 0.4--0.5 used for calibration (CBO)}
+\begin{figure}
+	\centering
+		\includegraphics[width=0.9\textwidth]{lecture1/_hist_frisch.pdf}
+\end{figure}
+\end{frame}
+
+
+
+\begin{frame}{Bias: some estimates less likely to be reported}
+\begin{figure}
+	\centering
+		\includegraphics[width=0.9\textwidth]{lecture1/_caliper2.pdf}
+\end{figure}
+\end{frame}
+
+
+
+
+\begin{frame}{Context: different situations yield different estimates}
+\begin{figure}
+	\centering
+		\includegraphics[width=0.65\textwidth]{lecture1/corr_comb2.pdf}
+\end{figure}
+\end{frame}
+
+
+\begin{frame}{Implied elasticity: taking bias and context into account}
+
+Let's construct a hypothetical study that uses all information reported in the literature but puts more weight on selected aspects (high precision, credible identification, etc.)
+
+\vspace{0.6cm}
+
+\begin{figure}
+	\centering
+		\includegraphics[width=0.9\textwidth]{lecture1/best.pdf}
+\end{figure}
+\end{frame}
+
+
+
+
+\begin{frame}{Guidelines}
+\begin{figure}
+	\centering
+		\includegraphics[width=0.9\textwidth]{lecture1/guide.png}
+\end{figure}
+\end{frame}
+
+
+\begin{frame}{Guiding example: effect of beauty on success}
+  
+	\begin{figure}
+		\centering
+			\includegraphics[width=1.0\textwidth]{beauty/irsova.jpg}
+	\end{figure}
+	
+\end{frame}
+
+\begin{frame}{Hands on}
+  \centering
+  \vfill
+  {\usebeamercolor[fg]{title}\bfseries\LARGE Open Stata and R}
+  \vfill
+\end{frame}
+
+
+
+\begin{frame}{Results}
+  \begin{block}{Main Findings}
+  \begin{enumerate}
+  \item
+Mean of 1,159 estimates from 67 studies: good looks $\rightarrow$ earnings $\uparrow$ 4.3\%
+\item
+Publication bias. After correction: 2.9\%
+    \item
+Control for ability? Productivity? Beauty premium $\approx$ 0\%
+  \end{enumerate}
+  \end{block}
+
+\vskip0pt plus.5fill
+    \begin{block}{Project Website}
+      \href{http://www.meta-analysis.cz/beauty}{www.meta-analysis.cz/beauty}
+    \end{block}
+		
+		\vskip0pt plus.5fill
+		
+		Revisions requested at \emph{Nature Human Behaviour}.
+		
+\end{frame}
+
+
+
+
+
+\section{Applied Examples}
+%\subsection{}
+
+
+\begin{frame}{Example 1: Daylight saving time}
+Researchers typically estimate the following model: 
+\begin{equation*}\label{eq:dst}
+ln\text{Consumption}_{t} = \alpha + \text{\emph{DST}}\cdot\text{Treatment effect}_{t} + \text{Controls}_{t} + \epsilon.
+\end{equation*}
+\vspace{-0.5cm}
+\begin{itemize}
+	\item \emph{Consumption}: the average energy consumption during time \emph{t} for a given hour, day, and year.
+\item \emph{Treatment effect}: equals 1 for all hours when daylight saving time applies. 
+\item \emph{Controls}: seasonality and holidays, weather, the intensity of sunlight, heterogeneity among consumption units, etc. 
+\end{itemize}
+\end{frame}
+
+
+\begin{frame}{No consensus in the literature}
+\begin{center}
+		\includegraphics[width=0.87\textwidth]{lecture2/_trend.pdf}
+\end{center}
+\end{frame}
+
+
+
+
+
+
+\begin{frame}{Journals report smaller savings}
+\begin{center}
+		\includegraphics[width=0.87\textwidth]{lecture2/_density.pdf}
+\end{center}
+\end{frame}
+
+\begin{frame}{Publication bias? Probably not}
+\begin{center}
+		\includegraphics[width=0.87\textwidth]{lecture2/_funnel.pdf}
+\end{center}
+\end{frame}
+
+
+
+\begin{frame}{Funnel asymmetry tests}
+If the ratio of the point estimate to its standard error has a $t$-distribution, then the two quantities should be independent:
+\begin{equation*}
+\mbox{estimate}_i = \underbrace{\beta}_{\mbox{true effect}} + \underbrace{\beta_0 SE_i}_{\mbox{publication bias}} + \mu_{i}.
+\end{equation*}
+
+%The equation is heteroscedastic. Weighted least squares yield 
+
+%\begin{equation*} 
+%t_i = \beta_0 + \beta \left(\frac{1}{SE_i}\right) + \vartheta_{i}.
+%\end{equation*} 
+The no.\ of obs.\ can be used as an instrument for SE.
+
+\bigskip
+
+\begin{tiny}
+\begin{tabular*}{1\hsize}{@{\hskip\tabcolsep\extracolsep\fill}l*{7}{c}}
+\toprule
+                &\multicolumn{1}{c}{OLS} &\multicolumn{1}{c}{FE}  &\multicolumn{1}{c}{BE}&\multicolumn{1}{c}{Country}&\multicolumn{1}{c}{ME}  &\multicolumn{1}{c}{IV}  \\
+\midrule
+SE (\emph{publication bias})     &   -0.410 &   -1.217&   -0.410&   -0.496&   -0.449 &    0.226  \\
+                &  (0.265)&  (0.790)&  (0.757)&  (0.805)  &  (0.688)  &  (1.088) \\
+Constant (\emph{true effect}) &   -0.293\sym{\sym{***}}&   -0.222\sym{\sym{***}}&   -0.294\sym{\sym{***}}&   -0.278\sym{\sym{***}}&   -0.291\sym{\sym{***}}&   -0.445\sym{\sym{*}}  \\
+                &(0.000778)& (0.0700)& (0.00812)& (0.0459)&(0.00731)&  (0.243) \\
+\midrule
+Observations    &      101               &      101               &      101               &      101&   101&    90\\
+\bottomrule
+\end{tabular*}
+\end{tiny}
+\end{frame}
+
+\begin{frame}{Country heterogeneity}
+\begin{center}
+		\includegraphics[width=0.65\textwidth]{lecture2/_countries.pdf}
+\end{center}
+\end{frame}
+
+\begin{frame}{Method heterogeneity (just studies for the US)}
+\begin{center}
+		\includegraphics[width=0.65\textwidth]{lecture2/_studies.pdf}
+\end{center}
+\end{frame}
+
+
+
+\begin{frame}{What explains the differences in conclusions? (1)}
+\begin{scriptsize}
+\begin{tabular}{@{\hskip\tabcolsep\extracolsep\fill}p{0.2\hsize}p{0.7\hsize}}%p{0.05\hsize}p{0.05\hsize}}
+\toprule
+  \multicolumn{2}{l}{\textit{Data characteristics}} \\
+    Data period & The number of years used in the estimation. \\
+    Main estimate & = 1 if the estimate is preferred by the authors of the study. \\
+		Hourly data & = 1 if the data are examined on hourly or higher than hourly granularity. \\
+    Daily data & = 1 if the data are examined on a daily basis. \\
+    Daylight hours & Average time between sunrise and sunset on the longest day for the country or region under examination. \\
+    Europe & = 1 if European countries are examined.  \\
+    USA   & = 1 if US data are examined.  \\
+    		\midrule
+    \multicolumn{2}{l}{\textit{Design of the analysis}} \\
+    Regression analysis & = 1 if the primary study is based on regression analysis.  \\
+    Simulation analysis &  = 1 if the study is based on simulation. \\
+    Difference-in-diff. &  = 1 if the difference-in-differences approach is employed.  \\
+    Residential cons. &  = 1 if only residential consumption is examined.  \\
+    Lighting cons. & = 1 if total energy savings are reported as a result of lighting reduction.  \\
+\bottomrule
+\end{tabular}
+\end{scriptsize}
+\end{frame}
+
+\begin{frame}{What explains the differences in conclusions? (2)}
+\begin{scriptsize}
+\begin{tabular}{@{\hskip\tabcolsep\extracolsep\fill}p{0.2\hsize}p{0.7\hsize}}%p{0.05\hsize}p{0.05\hsize}}
+\toprule
+    \multicolumn{2}{l}{\textit{Publication characteristics}} \\
+		Publication year & The publication year of the study (base = 1970).  \\
+    Journal article &  = 1 if the study was published in a peer-reviewed journal. \\
+    Impact factor & The recursive RePEc impact factor of the outlet. \\
+    Citations & The logarithm of the total number of citations of the study in Google Scholar. \\
+\bottomrule
+\end{tabular}
+\end{scriptsize}
+\end{frame}
+
+
+
+\begin{frame}{Bayesian model averaging}
+\begin{center}
+		\includegraphics[width=1\textwidth]{lecture2/bma_uip.pdf}
+\end{center}
+\end{frame}
+
+
+
+  
+\begin{frame}{Results}
+  \begin{block}{Main Findings}
+  \begin{enumerate}
+  \item
+The mean reported estimate suggests energy savings of 0.34\% due to DST.
+\item
+The results are driven by the method employed (simulation vs.\ regression).
+    \item
+Energy savings are larger for countries farther away from the equator.
+  \end{enumerate}
+  \end{block}
+
+\vskip0pt plus.5fill
+    \begin{block}{Project Website}
+      \href{http://www.meta-analysis.cz/dst}{www.meta-analysis.cz/dst}
+    \end{block}
+		
+		\vskip0pt plus.5fill
+		Published in the \emph{Energy Journal}, 2018.
+\end{frame}
+
+% All of the following is optional and typically not needed. 
+%\appendix
+%\section<presentation>*{\appendixname}
+%\subsection<presentation>*{For Further Reading}
+
+
+
+
+
+
+
+
+
+
+
+\begin{frame}{Example 2: Interest rates and house prices}
+\begin{figure}
+	\centering
+		\includegraphics[width=0.9\textwidth]{lecture2/mean_irf_include}
+\end{figure}
+\end{frame}
+
+
+
+
+\begin{frame}{Converting graphs to data}
+We measure pixel coordinates using WebPlotDigitizer:
+\smallskip
+\smallskip
+\begin{figure}
+	\centering
+		\includegraphics[width=1.0\textwidth]{lecture2/measure.png}
+\end{figure}
+
+\end{frame}
+
+
+
+
+
+
+
+
+\begin{frame}{Publication bias for longer horizons?}
+\begin{figure}
+	\centering
+		\includegraphics[width=0.9\textwidth]{lecture2/funnels}
+\end{figure}
+\end{frame}
+
+
+\begin{frame}{Corroborated by funnel asymmetry tests}
+Note that the slope is negative, the intercept is smaller than the reported mean effect:
+
+\smallskip
+\smallskip
+
+\begin{figure}
+	\centering
+		\includegraphics[width=1.05\textwidth]{lecture2/fat.png}
+\end{figure}
+\end{frame}
+
+\begin{frame}{Nonliner tests also imply bias}
+Note that the corrected effect is smaller than the reported mean effect:
+
+\smallskip
+\smallskip
+\begin{figure}
+	\centering
+		\includegraphics[width=1.05\textwidth]{lecture2/fat2.png}
+\end{figure}
+\end{frame}
+
+
+
+
+\begin{frame}{Mean impulse response beyond publication bias}
+\begin{figure}
+	\centering
+		\includegraphics[width=0.9\textwidth]{lecture2/beyond_bias}
+\end{figure}
+\end{frame}
+
+
+
+
+\begin{frame}{Cross-country heterogeneity}
+\begin{figure}
+	\centering
+		\includegraphics[width=0.9\textwidth]{lecture2/country_response}
+\end{figure}
+\end{frame}
+
+
+\begin{frame}{Estimation context}
+\begin{itemize}
+	\item \textbf{Data characteristics}: monthly, panel, length, age
+		\item \textbf{Specification characteristics}: foreign IR, credit, consumption, res.\ invest., money supply, exch.\ rate, long-run IR, lags
+		\item \textbf{Estimation characteristics}: BVAR, sign restr.\ HP, sign restr.\ other, nonrecursive
+		\item \textbf{Publication characteristics}: citations, impact, published
+				\item \textbf{Country characteristics}: mortgage-to-GDP, floating, maturity, IR, spread, prolonged high HP, PTI, crisis, prolonged low IR, tourism, income, inflation, popul.\ growth, permits, ownership
+		
+\end{itemize}
+
+\end{frame}
+
+
+
+\begin{frame}{Bayesian model averaging}
+\begin{figure}
+	\centering
+		\includegraphics[width=0.85\textwidth]{lecture2/bma}
+\end{figure}
+\end{frame}
+
+
+
+
+\begin{frame}{Best practice}
+We construct a hypothetical ideal study: no publication bias \\ (SE = 0), recent data, long series, nonrecursive identification, published, good journal, highly cited.
+
+\bigskip
+
+\begin{figure}
+	\centering
+		\includegraphics[width=1\textwidth]{lecture2/best.png}
+\end{figure}
+\end{frame}
+
+
+
+
+\begin{frame}{Impulse response implied by best practice}
+\begin{figure}
+	\centering
+		\includegraphics[width=0.9\textwidth]{lecture2/best_practice_v2}
+\end{figure}
+\end{frame}
+
+
+
+
+
+
+\begin{frame}{Results}
+  \begin{block}{Main Findings}
+  \begin{enumerate}
+  \item
+Among 237 impulse responses from 37 studies, the mean decrease in house prices is 1.2\% two years after a 1 pp.\ increase in the policy rate.
+\item
+The mean is exaggerated because of publication bias.
+    \item
+Stronger transmission for i) more developed markets,\\ ii) flatter yield curve, iii) house price boom.
+  \end{enumerate}
+  \end{block}
+
+\vskip0pt plus.5fill
+    \begin{block}{Project Website}
+      \href{http://www.meta-analysis.cz/house_prices}{www.meta-analysis.cz/house\_prices}
+    \end{block}
+		
+		\vskip0pt plus.5fill
+		Published in the \emph{IMF Economic Review}, 2023.
+\end{frame}
+
+
+
+
+\begin{comment}
+% All of the following is optional and typically not needed. 
+%\appendix
+%\section<presentation>*{\appendixname}
+%\subsection<presentation>*{For Further Reading}
+
+\begin{frame}%[allowframebreaks]
+  \frametitle<presentation>{Recent meta papers of our team}
+    
+  \begin{thebibliography}{10}
+  %\beamertemplatebookbibitems
+  % Start with overview books.
+   % \bibitem[{Hunter \& Schmidt(1990)}]{Hunter1990}
+%Stanley, T.\ D.\ \& C. Doucouliagos (2012): {{Meta-Regression Analysis in Economics and Business}.}\newblock Routledge, 1st. edition.
+  \beamertemplatearticlebibitems
+  % Followed by interesting articles. Keep the list short. 
+ 
+	    \bibitem[{Hunter \& Schmidt(1990)}]{Hunter1990}
+Irsova, Z., P.\ Bom, T.\ Havranek, \& H.\ Rachinger (2024): {{Spurious Precision of Meta-Analysis of Observational Research}.}\newblock \emph{Nature Human Behaviour}, revisions requested.
+	
+	   \bibitem[{Stanley(2008)}]{Stanley2010}
+Havranek, T., Z.\ Irsova, L.\ Laslopova, \& O.\ Zeynalova (2024): {{Publication and Attenuation Biases in Measuring Skill Substitution}.}\newblock \emph{Review of Economics and Statistics}, forthcoming.
+
+    \bibitem[{Stanley(2001)}]{Stanley2001}
+Opatrny, M.\, T.\ Havranek, Z.\ Irsova, \& M.\ Scasny (2024): {{Publication Bias and Model Uncertainty in Measuring the Effect of Class Size on Achievement}.}
+\newblock \emph{Journal of Labor Economics}, revisions requested.
+    
+
+
+\end{comment}
+
+
+
+\begin{frame}{Example 3: Working while in school}
+\begin{itemize}
+	\item  Hard to influence commonly cited determinants of educational outcomes: ability, ethnicity, gender, parental
+education and affluence
+\item But most students can decide whether or not to work
+\item How does that influence educational outcomes?
+\item Should you motivate your kids to work while in school?
+\item Mixed empirical results: from large negative to positive estimates	
+	\item 861 estimates from 69 studies
+\end{itemize}
+\end{frame}
+
+
+\begin{frame}{No consensus in the literature}
+\begin{figure}
+	\centering
+		\includegraphics[width=0.9\textwidth]{lecture2/trend.pdf}
+	\label{fig:trend}
+\end{figure}
+
+\end{frame}
+
+
+
+
+\begin{frame}{Negative for all countries except Germany}
+\begin{figure}
+	\centering
+		\includegraphics[width=1.00\textwidth]{lecture2/countries.pdf}
+	\label{fig:countries}
+\end{figure}
+
+\end{frame}
+
+
+
+\begin{frame}{Work intensity clearly matters}
+\begin{figure}
+	\centering
+		\includegraphics[width=0.9\textwidth]{lecture2/pattern3.pdf}
+	\label{fig:pattern3}
+\end{figure}
+
+\end{frame}
+
+
+
+
+\begin{frame}{Endogeneity control is important}
+\begin{figure}
+	\centering
+		\includegraphics[width=0.9\textwidth]{lecture2/pattern5.pdf}
+	\label{fig:pattern5}
+\end{figure}
+
+\end{frame}
+
+
+
+
+\begin{frame}{Little publication bias on average}
+\begin{figure}
+	\centering
+		\includegraphics[width=0.9\textwidth]{maer2022/funnel.pdf}
+	\label{fig:funnel}
+\end{figure}
+
+\end{frame}
+
+
+
+
+\begin{frame}{No bias in studies addressing endogeneity}
+\begin{figure}
+	\centering
+		\includegraphics[width=1.00\textwidth]{maer2022/iv.pdf}
+	\label{fig:iv}
+\end{figure}
+
+\end{frame}
+
+
+
+
+
+\begin{frame}{Strong bias in studies ignoring endogeneity}
+\begin{figure}
+	\centering
+		\includegraphics[width=0.97\textwidth]{maer2022/ols.pdf}
+	\label{fig:ols}
+\end{figure}
+
+\end{frame}
+
+
+
+
+
+
+
+\begin{frame}{Model uncertainty; endogeneity control is key}
+\begin{figure}
+	\centering
+		\includegraphics[width=0.82\textwidth]{lecture2/bmax.pdf}
+	\label{fig:bma}
+\end{figure}
+
+\end{frame}
+
+
+
+
+\begin{frame}{Closer look: work intensity, measurement}
+\begin{figure}
+	\centering
+		\includegraphics[width=1\textwidth]{lecture2/densities.pdf}
+	\label{fig:densities}
+\end{figure}
+
+\end{frame}
+
+
+
+\begin{frame}{Closer look: endogeneity, panel data, Germany}
+\begin{figure}
+	\centering
+		\includegraphics[width=1.00\textwidth]{lecture2/densities1.pdf}
+	\label{fig:densities1}
+\end{figure}
+
+\end{frame}
+
+
+
+
+
+\begin{frame}{Best practice estimates}
+\begin{figure}
+	\centering
+		\includegraphics[width=1.00\textwidth]{lecture2/best.pdf}
+	\label{fig:best}
+\end{figure}
+
+\end{frame}
+
+
+
+
+  
+\begin{frame}{Results}
+  \begin{block}{Main Findings}
+  \begin{enumerate}
+  \item
+Publication and endogeneity biases interact.
+\item
+The corrected effect is negative but economically zero.
+    \item
+Effects negative for high-intensity work, positive for Germany.
+  \end{enumerate}
+  \end{block}
+
+\vskip0pt plus.5fill
+    \begin{block}{Project Website}
+      \href{http://www.meta-analysis.cz/students}{www.meta-analysis.cz/students}
+    \end{block}
+		
+		\vskip0pt plus.5fill
+		Published in the \emph{Economics of Education Review}, 2024.
+\end{frame}
+
+
+
+
+
+
+\section{Literature Search}
+%\subsection{}
+
+
+
+
+
+\begin{frame}{Inspiration}
+\begin{figure}
+	\centering
+		\includegraphics[width=1.00\textwidth]{lecture3/meta.png}
+\end{figure}
+\end{frame}
+
+
+\begin{frame}{Motivation example: increasing uncertainty}
+\begin{figure}
+	\centering
+		\includegraphics[width=0.9\textwidth]{lecture3/motivation.png}
+\end{figure}
+\end{frame}
+
+
+\begin{frame}{Motivation example: clear trend}
+\begin{figure}
+	\centering
+		\includegraphics[width=0.9\textwidth]{lecture3/motivation7.png}
+\end{figure}
+\end{frame}
+
+
+\begin{frame}{Motivation example: country-level differences}
+\begin{figure}
+	\centering
+		\includegraphics[width=1.00\textwidth]{lecture3/motivation5.png}
+\end{figure}
+\end{frame}
+
+
+\begin{frame}{Motivation example: publication bias}
+\begin{figure}
+	\centering
+		\includegraphics[width=0.9\textwidth]{lecture3/motivation4.png}
+\end{figure}
+\end{frame}
+
+
+\begin{frame}{Motivation example: method heterogeneity}
+\begin{figure}
+	\centering
+		\includegraphics[width=0.9\textwidth]{lecture3/motivation2.png}
+\end{figure}
+\end{frame}
+
+\begin{frame}{We use Google Scholar}
+\textbf{Advantages:}
+\begin{itemize}
+	\item Full text, not just the abstract, title, keywords
+	\item Inclusive
+	\item Up-to-date
+\end{itemize}
+
+\bigskip
+
+\textbf{Disadvantages:}
+\begin{itemize}
+	\item Algorithm changes in time (replicability issues)
+	\item Too many results
+	\item Sometimes relevance unclear
+\end{itemize}
+\end{frame}
+
+\begin{frame}{Search steps (without AI for now)}
+\begin{enumerate}
+	\item Find 5 most relevant studies
+	\item Design a query that shows the 5 studies near the top
+	\item Go through first 500 hits
+	\item Read abstracts
+	\item Download potentially useful studies
+	\item Skim them
+	\item Repeat the procedure for the most recent studies (last 3 years)
+\end{enumerate}
+\end{frame}
+
+
+\begin{frame}{Search query 1}
+\begin{figure}
+	\centering
+		\includegraphics[width=1\textwidth]{lecture3/search1.png}
+\end{figure}
+\end{frame}
+
+
+\begin{frame}{Search query 2}
+\begin{figure}
+	\centering
+		\includegraphics[width=1\textwidth]{lecture3/search2.png}
+\end{figure}
+\end{frame}
+
+
+\begin{frame}{Primary studies}
+\begin{figure}
+	\centering
+		\includegraphics[width=1\textwidth]{lecture3/studies.png}
+\end{figure}
+\end{frame}
+
+
+\begin{frame}{Snowballing}
+\begin{itemize}
+	\item No query is perfect
+	\item Idea: cover studies not identified by the query but frequently mentioned in the literature
+	\item For each primary study, download the list of references
+	\item Inspect the 50 studies most frequently cited by the primary studies
+	\item If you can use some of them, add them to your list
+\end{itemize}
+\end{frame}
+
+
+\begin{frame}{Snowballing example}
+\begin{figure}
+	\centering
+		\includegraphics[width=1\textwidth]{lecture3/snowball.png}
+\end{figure}
+\end{frame}
+
+
+% Slide 2
+\begin{frame}{AI-enhanced literature search}
+\begin{enumerate}
+  \item Use \textbf{Deep Research} to explore recent literature and concepts
+  \item Ask \textbf{ChatGPT thinking model} to refine your Scholar query
+  \item Download \textbf{500 abstracts} from Scholar or Publish or Perish
+  \item Let a \textbf{ChatGPT Agent} screen abstracts for relevant estimates
+  \item Ask Agent to download PDFs (or download manually)
+  \item Upload PDFs in \textbf{batches of 5}; ask which report usable estimates
+  \item (Optional) Use \textbf{ASReview} to double-check or co-train
+\end{enumerate}
+\end{frame}
+
+% Slide 3
+\begin{frame}{Using thinking models to design Scholar query}
+\begin{itemize}
+  \item GPT thinking model helps refine search precision
+  \item Prompt examples:
+	
+  \begin{itemize}
+    \item \texttt{I want to do a meta-analysis of the beauty premium. Suggest a Google Scholar query to find empirical studies on attractiveness and income.}
+    \item \texttt{Too many irrelevant hits. How can I prioritize regression-based studies only?}
+  \end{itemize}
+	
+  \item Output improves over iterations: clarify units, methods, outcomes, and keywords
+\end{itemize}
+\end{frame}
+
+% Slide 4
+\begin{frame}{Prompting ChatGPT Agent for screening}
+\begin{itemize}
+  \item Batch input: 20--50 abstracts at a time from Scholar export
+  \item Example prompt:
+	
+  \begin{quote}
+    \texttt{You are an expert in meta-analysis. For each abstract below and all other information you have about the paper, say whether the paper likely reports quantitative estimates on the effect of beauty on labor market outcomes that can be used in a meta-analysis. Justify briefly.}
+  \end{quote}
+	
+  \item Output: \texttt{\small Paper 1: Yes (panel data, Table 2)\quad Paper 2: No (conceptual)\quad Paper 3: Maybe (ambiguous)}
+\end{itemize}
+\end{frame}
+
+% Slide 5
+\begin{frame}{Screening PDFs for quantitative content}
+\begin{itemize}
+  \item Upload PDFs in small batches (e.g., 5 at a time)
+  \item Example prompt:
+	
+  \begin{quote}
+    \texttt{For each of these papers, does it contain new empirical estimates of the effect of beauty on wages that I can use in a meta-analysis? Point to specific tables or pages.}
+  \end{quote}
+	
+  \item Output format:
+	
+  \begin{itemize}
+    \item Paper A: Yes, Table 4, OLS and IV estimates on beauty premium
+    \item Paper B: No quantitative analysis
+    \item Paper C: Yes, appendix regression table
+  \end{itemize}
+	
+\end{itemize}
+\end{frame}
+
+% Slide 6
+\begin{frame}{Optional enhancements and caveats}
+\begin{itemize}
+  \item Combine with \textbf{ASReview} for machine-assisted filtering
+  \item Use \textbf{Semantic Scholar} for better metadata access
+  \item Avoid over-reliance: AI helps, but expert judgment remains key
+  \item Protect against false positives: Always validate flagged studies manually
+	  \item End-to-end AI infrastructure for meta-analysis: \textbf{otto-SR}
+\end{itemize}
+\end{frame}
+
+\begin{frame}{Minimum requirements for meta-analysis}
+For modern meta-analysis techniques to work, you need at least:
+
+\bigskip
+
+\begin{enumerate}
+	\item 30 estimates
+	\item 10 studies
+	\item effect sizes
+	\item standard errors
+	\item sample sizes
+\end{enumerate}
+
+\bigskip
+
+What to do if I have, e.g., just 10 estimates from 4 studies? Focus on the median or weighted means.
+
+\end{frame}
+
+
+\begin{frame}{Quality}
+\begin{itemize}
+	\item Some studies are published in poor journals or use weak identification. What to do?
+	\item \textbf{Option 1}: exclude these studies ex ante. Not recommended.
+	\item \textbf{Option 2}: include these studies with controls for journal quality and methodology. You can always exclude them as a robustness check.
+	\item Note that some fields have standardized quality benchmarks (risk of bias)
+\end{itemize}
+\end{frame}
+
+
+\begin{frame}{Unpublished papers}
+\begin{itemize}
+	\item Try to collect all studies, published and unpublished
+	\item If unfeasible, it is possible to focus just on published studies (fewer typos, peer-review)
+	\item Including unpublished papers unlikely to alleviate publication bias
+	\item Still too many papers? Recruit a co-author, AI, or use a random subset (last resort)
+\end{itemize}
+\end{frame}
+
+
+\begin{frame}{PRISMA: document your literature search}
+\begin{figure}
+	\centering
+		\includegraphics[width=0.73\textwidth]{lecture3/prisma.png}
+\end{figure}
+\end{frame}
+
+
+
+
+\section{Data Collection}
+%\subsection{}
+
+
+\begin{frame}{Effects must be quantitatively comparable}
+What does it mean?
+
+\bigskip
+
+\begin{itemize}
+	\item When we compare estimates reported in Study 1 and Study 2, it must be clear which one is larger
+	\item It must be clear how much larger it is
+	\item t-statistics are not useful measures of effect size
+	\item Regression coefficients are not comparable in general if studies use different units
+\end{itemize}
+
+\end{frame}
+
+
+
+\begin{frame}{Elasticities}
+
+\[
+\text{x-elasticity of } y: \, \varepsilon = \frac{\frac{\partial y}{y}}{\frac{\partial x}{x}}
+\]
+
+\[
+\text{P-elasticity of Q: } \varepsilon = \frac{\frac{\partial Q}{Q}}{\frac{\partial P}{P}} \, \text{if continuous}
+\]
+
+\[
+\varepsilon = \frac{\frac{Q_2 - Q_1}{Q_1}}{\frac{P_2 - P_1}{P_1}} = \frac{\text{\% change in quantity Q}}{\text{\% change in price P}} \, \text{if discrete}
+\]
+
+Elasticities can be recovered from regressing \textbf{log(Y) on log(X)}.
+
+
+\end{frame}
+
+
+\begin{frame}{Semi-elasticities, dollar values, std.dev.\ changes}
+\begin{itemize}
+	\item Semi-elasticity: effect of euro adoption on trade, effects of foreign investment on domestic productivity, effects of borders on trade
+	\item Dollar values: statistical value of life, social cost of carbon
+	\item Std.dev.\ changes: effect of class size on student test scores. What to do here?
+	\item Class size is measured the same way in all studies (number of kids).
+	\item Test scores are measured differently.
+	\item Solution: By how many standard deviations do test scores improve if we decrease class size by 10 students?
+\end{itemize}
+\end{frame}
+
+
+\begin{frame}{Standardized mean differences}
+
+\[
+\theta = \frac{\mu_1 - \mu_2}{\sigma},
+\]
+where $\mu_1$ is the mean for one population, $\mu_2$ is the mean for the other population, and $\sigma$ is a standard deviation based on either or both populations.
+
+\bigskip
+\begin{itemize}
+	\item Very popular in psychology, not much used in economics. Why?
+	\item Generally we need an experiment: treatment group, control group.
+	\item In economics we often focus on observational research.
+	\item For many questions the treatment and control are not binary classifications (we look at the intensity of treatment)
+\end{itemize}
+
+
+\end{frame}
+
+
+
+\begin{frame}{Partial correlation coefficients}
+
+Example: \textbf{tuition fees and university enrollment}. Ideally, we would need price elasticities of demand (PED), but many studies are not log on log.
+
+\smallskip
+
+ So we transform the estimates to partial correlations using t-statistics and degrees of freedom:
+
+\bigskip
+
+\[
+\text{PCC(PED)}_{ij} = \frac{\text{T(PED)}_{ij}}{\sqrt{\text{T(PED)}_{ij}^2 + \text{DF(PED)}_{ij}}}.
+\]
+
+
+
+\end{frame}
+
+
+
+\begin{frame}{PCC caveats}
+\begin{itemize}
+	\item Last resort: can be used almost always, but we lose a lot of information
+	\item Difficult to interpret (some guidelines provided by Doucouliagos, 2011)
+		\item Statistical problems for meta-analysis methods (but this is the case also for SMD)
+	\item Include robustness checks: e.g.\ a subsample of elasticities in the case of tuition fees and university enrollment
+
+\end{itemize}
+
+
+\end{frame}
+
+
+
+\begin{frame}{Collect all estimates}
+\begin{figure}
+	\centering
+		\includegraphics[width=0.9\textwidth]{lecture4/pref.png}
+\end{figure}
+\end{frame}
+
+
+\begin{frame}{Standard errors}
+\begin{itemize}
+	\item Absolutely crucial for meta-analysis
+	\item If not reported directly, can be computed from t-statistics or p-values
+	\item Last resort: approximation based on within-study variation (Matousek et al.\, 2022)
+	\item Interactions, transformations: delta method
+\end{itemize}
+\end{frame}
+
+\begin{frame}{Delta method}
+Based on Taylor series expansion. Basic formula:
+
+\[
+\text{Var}(Y) = \text{Var}(f(X)) \approx [f'(\mu_X)]^2 \text{Var}(X).
+\]
+
+% So, if $Y$ is any function of a random variable $X$, we need only calculate the variance of $X$ and the first derivative of the function to approximate the variance of $Y$.
+
+\bigskip
+
+\underline{\text{Example:}} \, \text{Suppose } $Y = X^2$. \, \text{Then } $f(x) = x^2$ \, \text{and } $f'(x) = 2x$, \, \text{so that:}
+\[
+\text{Var}(Y) \approx [2\mu_X]^2 \text{Var}(X) = 4\mu_X^2\sigma_X^2.
+\]
+
+\underline{\text{Example:}} \, \text{Suppose } $Y = \frac{1}{X}$. \, \text{Then } $f(x) = \frac{1}{x}$ \, \text{and } $f'(x) = -\frac{1}{x^2}$, \, \text{so that:}
+\[
+\text{Var}(Y) \approx \left[\frac{-1}{\mu_X^2}\right]^2 \text{Var}(X) = \frac{\sigma_X^2}{\mu_X^4}.
+\]
+
+
+
+\end{frame}
+
+
+
+% Slide 7
+\begin{frame}{AI-assisted data collection: Overview}
+\begin{itemize}
+  \item As of August 2025, \textbf{human review still essential}
+  \item AI reasonably good at \\
+	
+	\smallskip
+	
+  \begin{itemize}
+    \item Identifying key study dimensions (estimation method, outcome type, etc.)
+    \item Extracting basic data with structured prompts and examples
+    \item Reducing workload to a single reviewer
+  \end{itemize}
+	
+		
+	\smallskip
+	
+  \item Tools: ChatGPT thinking, Agent Mode, NotebookLM
+  \item End-to-end AI infrastructure for meta-analysis: \textbf{otto-SR}
+\end{itemize}
+\end{frame}
+
+% Slide 8
+\begin{frame}{Step-by-step data collection workflow}
+\begin{enumerate}
+  \item Use \textbf{Deep Research + thinking model} to find key coding dimensions
+  \item Examples: OLS vs IV, cross-section vs panel, outcome types, country, controls
+  \item Upload a few example PDFs + your coded spreadsheet to ChatGPT Agent
+  \item Prompt Agent: \texttt{"Extract these columns from new PDFs using my examples as a guide."}
+  \item Refine extraction prompts based on feedback
+  \item Use \textbf{NotebookLM} as an independent extraction check
+  \item Validate discrepancies manually; spot-check the rest
+\end{enumerate}
+\end{frame}
+
+% Slide 9
+\begin{frame}{Example prompt for PDF data extraction}
+\begin{quote}
+\texttt{Here are 3 PDFs and the corresponding rows from my meta-analysis data sheet. Learn the structure. These data are collected well and I want you to collect data from other papers. I will send 5 new PDFs. Extract estimates of the beauty premium and the corresponding standard error. Collect information on the estimation method used, the definition of the beauty variable, definition of the earnings variable.}
+\end{quote}
+
+\begin{itemize}
+  \item Agent mode allows memory and consistency across batches
+  \item Output can be verified, adjusted, and exported as CSV
+	  \item See summary on \href{https://www.maer-net.org/post/ai-tools-for-meta-analysis}{MAER-Net website}.
+\end{itemize}
+
+\end{frame}
+
+
+
+
+
+\begin{frame}{Graphical estimates, measurement error}
+\begin{figure}
+	\centering
+		\includegraphics[width=1\textwidth]{lecture4/measure.png}
+\end{figure}
+\end{frame}
+
+
+\begin{frame}{Outliers}
+\begin{figure}
+	\centering
+		\includegraphics[width=0.9\textwidth]{lecture4/outlier.png}
+\end{figure}
+\end{frame}
+
+
+\begin{frame}{What to do with outliers?}
+\begin{itemize}
+	\item No consensus
+	\item Approach 1: omit very large effects (and standard errors), e.g.\ more than 3 standard deviations away from the mean
+	\item Approach 2: run robust meta-regression or use tools for outlier detection in regression
+	\item Approach 3: use winsorizing (my personal preference)
+	\item Always report robustness checks
+\end{itemize}
+\end{frame}
+
+
+\begin{frame}{Winsorization}
+\begin{figure}
+	\centering
+		\includegraphics[width=0.65\textwidth]{lecture4/winsor.png}
+\end{figure}
+\end{frame}
+
+
+\begin{frame}{Hands on}
+  \centering
+  \vfill
+  {\usebeamercolor[fg]{title}\bfseries\LARGE Open Stata}
+  \vfill
+\end{frame}
+
+
+
+
+\begin{frame}{Reflecting context: the effect of beauty on success}
+\begin{figure}
+	\centering
+		\includegraphics[width=1\textwidth]{lecture4/data.png}
+\end{figure}
+\end{frame}
+
+\begin{frame}{Measurement}
+\begin{figure}
+	\centering
+		\includegraphics[width=1\textwidth]{lecture4/measure1.png}
+\end{figure}
+\end{frame}
+
+
+\begin{frame}{Data, estimation, publication}
+\begin{figure}
+	\centering
+		\includegraphics[width=1\textwidth]{lecture4/est.png}
+\end{figure}
+\end{frame}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+\begin{frame}{Value added}
+\begin{itemize}
+	\item Meta-analysis can be used to test hypotheses that primary studies cannot investigate
+	\item Example: the effect of daylight saving time on energy consumption
+	\item Individual studies have data for individual countries (or provinces)
+	\item In meta-analysis, we have data for dozens of countries
+	\item We can investigate the sources of cross-country differences
+\end{itemize}
+\end{frame}
+
+
+\begin{frame}{DST savings and latitude}
+\begin{figure}
+	\centering
+		\includegraphics[width=1\textwidth]{lecture4/bma_uip.pdf}
+\end{figure}
+\end{frame}
+
+
+\begin{frame}{House prices and monetary policy}
+\begin{figure}
+	\centering
+		\includegraphics[width=0.8\textwidth]{lecture4/bma.pdf}
+\end{figure}
+\end{frame}
+
+
+
+
+\section{Conventional Tools}
+%\subsection{}
+
+
+\begin{frame}{Summary statistics for meta-analysis}
+\begin{itemize}
+	\item Simple mean of reported estimates: natural starting point
+	\item But inefficient and affected by outliers, publication bias, p-hacking
+	\item Median: surprisingly robust to most problems in meta-analysis
+	\item If you have only a few studies or estimates, focus on the (unweighted) median!
+	\item Classical meta-analysis approach: use inverse variance as the weight
+\end{itemize}
+\end{frame}
+
+
+\begin{frame}{More precision -> more weight}
+\begin{figure}
+	\centering
+		\includegraphics[width=1.00\textwidth]{lecture5/1.pdf}
+\end{figure}
+\end{frame}
+
+
+\begin{frame}{More precision -> more weight}
+\begin{figure}
+	\centering
+		\includegraphics[width=1.00\textwidth]{lecture5/2.pdf}
+\end{figure}
+\end{frame}
+
+
+\begin{frame}{More precision -> more weight}
+\begin{figure}
+	\centering
+		\includegraphics[width=1.00\textwidth]{lecture5/3.pdf}
+\end{figure}
+\end{frame}
+
+
+\begin{frame}{``Fixed effect'' estimator in meta-analysis}
+\begin{figure}
+	\centering
+		\includegraphics[width=0.9\textwidth]{lecture5/fixed2.jpg}
+\end{figure}
+\end{frame}
+
+
+\begin{frame}{``Fixed effect'' estimator in meta-analysis}
+Mean weighted by inverse variance of individual estimates. Very sensitive to outliers in precision (including typos).
+    \begin{align*}
+        Y_i &= \theta + \varepsilon_i, \tag{1} \\
+        V_i &= \frac{\sigma^2}{n}, \tag{2} \\
+        W_i &= \frac{1}{V_i}, \tag{3} \\
+        M &= \frac{\sum_{i=1}^k W_i Y_i}{\sum_{i=1}^k W_i}, \tag{4} \\
+        V_M &= \frac{1}{\sum_{i=1}^k W_i}. \tag{5}
+    \end{align*}
+		\end{frame}
+		
+		
+		\begin{frame}{Hands on}
+  \centering
+  \vfill
+  {\usebeamercolor[fg]{title}\bfseries\LARGE Open Stata}
+  \vfill
+\end{frame}
+
+		
+		
+
+
+% Slide 1: Point Estimate
+\begin{frame}{FE vs.\ UWLS: point estimate}
+
+\begin{itemize}
+    \item Unrestricted weighted least squares yield the same point estimate:
+    \[
+    \hat{\theta} = \frac{\sum w_i \theta_i}{\sum w_i}, \quad w_i = \frac{1}{SE_i^2}
+    \]
+    \item Difference: Variance estimation.
+\end{itemize}
+
+\bigskip
+
+\begin{table}[]
+    \centering
+    \begin{tabular}{lc}
+        \toprule
+        \textbf{Method} & \textbf{Point Estimate} \\
+        \midrule
+        Fixed-Effect (FE) & \( \hat{\theta} = \frac{\sum w_i \theta_i}{\sum w_i} \) \\
+        UWLS & \( \hat{\theta} = \frac{\sum w_i \theta_i}{\sum w_i} \) \\
+        \bottomrule
+    \end{tabular}
+\end{table}
+
+\bigskip
+
+\textbf{Same estimate, different variance!}
+
+\end{frame}
+
+% Slide 2: Variance Comparison
+\begin{frame}{FE vs. UWLS: variance}
+
+\renewcommand{\arraystretch}{1.2}  % Increases row spacing for readability
+\begin{table}[]
+    \centering
+    \begin{tabular}{p{3cm} p{3cm} p{3cm}}  % Adjust column widths
+        \toprule
+        \textbf{Feature} & \textbf{Fixed-Effect (FE)} & \textbf{UWLS} \\
+        \midrule
+        Assumption  & Identical \(\theta\) & Allows heterogeneity \\
+        Variance formula  & \( \frac{1}{\sum w_i} \) & \( \frac{\sum w_i (\theta_i - \hat{\theta})^2}{\sum w_i} \) \\
+        Variance components & Within-study only & Within + between-study \\
+        Robustness & Sensitive to misspecification & More robust \\
+        \bottomrule
+    \end{tabular}
+\end{table}
+
+\bigskip
+
+\textbf{FE typically underestimates variance. Use UWLS!}
+
+\end{frame}
+
+		
+
+
+\begin{frame}{Fixed effect}
+\begin{figure}
+	\centering
+		\includegraphics[width=0.9\textwidth]{lecture5/fixed.jpg}
+\end{figure}
+\end{frame}
+
+
+\begin{frame}{Random effects}
+\begin{figure}
+	\centering
+		\includegraphics[width=0.9\textwidth]{lecture5/random2.jpg}
+\end{figure}
+\end{frame}
+
+
+\begin{frame}{Random effects}
+The weight is now diluted by a heterogeneity term. More robust to outliers in precision and heterogeneity, less robust to publication bias.
+    \begin{align*}
+        Y_i &= \mu + \xi_i + \varepsilon_i, \tag{1} \\
+        V_i &= \frac{\sigma^2}{n}, \tag{2} \\
+        W_i &=  \frac{1}{V_i + \tau^2}, \tag{3} \\
+        M &= \frac{\sum_{i=1}^k W_i Y_i}{\sum_{i=1}^k W_i}, \tag{4} \\
+        V_M &= \frac{1}{\sum_{i=1}^k W_i}. \tag{5}
+    \end{align*}
+		\end{frame}
+		
+		
+		
+		\begin{frame}{Estimating \(\tau^2\) in random-effects model}
+
+\textbf{Between-study variance} \(\tau^2\) accounts for heterogeneity across studies. Common estimators:
+\smallskip
+\begin{itemize}
+    \item \textbf{DerSimonian-Laird (DL)}:  
+    \[
+    \tau^2_{DL} = \frac{Q - (k - 1)}{C}, \quad C = \sum w_i - \frac{\sum w_i^2}{\sum w_i}
+    \]
+    - Simple, but underestimates \(\tau^2\) when \( k \) is small.
+    
+    \item \textbf{Restricted Maximum Likelihood (REML)}:  
+    \[
+    \max_{\tau^2} \sum \log(w_i^* + \tau^2) + \sum \frac{(y_i - \hat{\theta})^2}{w_i^* + \tau^2}
+    \]
+    - More accurate, default in software.
+\end{itemize}
+\smallskip
+\textbf{Rule of thumb:} Use REML unless simplicity is needed!
+
+\end{frame}
+
+		
+		
+		
+\begin{frame}{Random effects}
+\begin{figure}
+	\centering
+		\includegraphics[width=0.9\textwidth]{lecture5/random.jpg}
+\end{figure}
+\end{frame}
+
+\begin{frame}{Forest plot}
+\begin{figure}
+	\centering
+		\includegraphics[width=0.9\textwidth]{lecture5/forest1.png}
+\end{figure}
+\end{frame}
+
+
+\begin{frame}{Forest plot}
+\begin{figure}
+	\centering
+		\includegraphics[width=0.45\textwidth]{lecture5/forest.pdf}
+\end{figure}
+\end{frame}
+
+\begin{frame}{Box plot}
+\begin{figure}
+	\centering
+		\includegraphics[width=0.45\textwidth]{lecture5/box1.pdf}
+\end{figure}
+\end{frame}
+
+
+
+\begin{frame}{Box plot}
+\begin{figure}
+	\centering
+		\includegraphics[width=0.95\textwidth]{lecture5/box3.pdf}
+\end{figure}
+\end{frame}
+
+\begin{frame}{Histogram}
+\begin{figure}
+	\centering
+		\includegraphics[width=0.9\textwidth]{lecture5/pattern4.pdf}
+\end{figure}
+\end{frame}
+
+\begin{frame}{Histogram}
+\begin{figure}
+	\centering
+		\includegraphics[width=0.9\textwidth]{lecture5/pattern5.pdf}
+\end{figure}
+\end{frame}
+
+\begin{frame}{Histogram}
+\begin{figure}
+	\centering
+		\includegraphics[width=0.9\textwidth]{lecture5/pattern6.pdf}
+\end{figure}
+\end{frame}
+
+\begin{frame}{Cumulative meta-analysis plot}
+\begin{figure}
+	\centering
+		\includegraphics[width=0.9\textwidth]{lecture5/cumulative.png}
+\end{figure}
+\end{frame}
+
+
+\begin{frame}{Funnel plot (topic of the next session)}
+\begin{figure}
+	\centering
+		\includegraphics[width=0.9\textwidth]{lecture5/funnel_pref_all.pdf}
+\end{figure}
+\end{frame}
+
+
+
+\section{Publication Bias}
+%\subsection{}
+
+
+\begin{frame}{Paxil scandal}
+    \begin{itemize}
+        \item \textbf{Background:}
+        \begin{itemize}
+            \item Paxil (paroxetine): Antidepressant approved for adolescents, developed by GlaxoSmithKline (GSK).
+            \item Study 329 (1998-2001): Clinical trial funded by GSK to test Paxil's safety and efficacy in adolescents.
+        \end{itemize}
+				
+				\bigskip
+        \item \textbf{What Happened?}
+        \begin{itemize}
+            \item Published study claimed Paxil was \textit{"well-tolerated and effective."}
+            \item Internal documents later revealed:
+            \begin{itemize}
+                \item Negative results (e.g., increased suicidal ideation) were downplayed.
+                \item Positive outcomes were selectively reported.
+            \end{itemize}
+        \end{itemize}
+    \end{itemize}
+\end{frame}
+
+\begin{frame}{Paxil scandal}
+    \begin{itemize}
+        \item \textbf{Discovery of Bias:}
+        \begin{itemize}
+            \item Legal proceedings in 2012 forced disclosure of internal data.
+            \item Independent reanalysis of Study 329 showed:
+            \begin{itemize}
+                \item No significant benefit over placebo.
+                \item Serious safety concerns (e.g., suicidal ideation).
+            \end{itemize}
+        \end{itemize}
+				
+				\bigskip
+        \item \textbf{Key Lessons:}
+        \begin{itemize}
+            \item Publication bias can harm patients and public trust.
+            \item Highlights the need for:
+            \begin{itemize}
+                \item Transparency in research data.
+                \item Independent replication and reanalysis.
+            \end{itemize}
+        \end{itemize}
+    \end{itemize}
+\end{frame}
+
+\begin{frame}{No bias, no E-SE correlation (?)}
+Researchers estimate
+
+   \begin{equation*}
+    Earnings_j = \tikz[baseline={(E.base)}]{\node[draw,circle,inner sep=1pt] (E) {$\alert{\gamma}$};} Beauty_j + \ldots{} + w_j.
+    \end{equation*}
+		
+\smallskip
+
+They assume that $\widehat{\gamma}/SE_{\widehat{\gamma}}$ has a $t$-distribution. 
+
+\smallskip
+
+$\rightarrow$ \alert{estimates should not be correlated with standard errors} (Card \& Krueger, 1995)
+
+\bigskip
+
+\begin{block}{Types of publication bias}
+Type I: Selection for the ``correct sign.'' \\
+Type II: Selection for statistical significance.
+\end{block}
+
+\end{frame}
+
+
+\begin{frame}{Simulation}
+\begin{figure}
+	\centering
+		\includegraphics[width=1.00\textwidth]{lecture7/1.pdf}
+\end{figure}
+\end{frame}
+
+\begin{frame}{Simulation}
+\begin{figure}
+	\centering
+		\includegraphics[width=1.00\textwidth]{lecture7/2.pdf}
+\end{figure}
+\end{frame}
+
+\begin{frame}{Simulation}
+\begin{figure}
+	\centering
+		\includegraphics[width=1.00\textwidth]{lecture7/3.pdf}
+\end{figure}
+\end{frame}
+
+\begin{frame}{Simulation}
+\begin{figure}
+	\centering
+		\includegraphics[width=1.00\textwidth]{lecture7/4.pdf}
+\end{figure}
+\end{frame}
+
+\begin{frame}{Simulation}
+\begin{figure}
+	\centering
+		\includegraphics[width=1.00\textwidth]{lecture7/5.pdf}
+\end{figure}
+\end{frame}
+
+\begin{frame}{Simulation}
+\begin{figure}
+	\centering
+		\includegraphics[width=1.00\textwidth]{lecture7/6.pdf}
+\end{figure}
+\end{frame}
+
+\begin{frame}{Simulation}
+\begin{figure}
+	\centering
+		\includegraphics[width=1.00\textwidth]{lecture7/7.pdf}
+\end{figure}
+\end{frame}
+
+\begin{frame}{Simulation}
+\begin{figure}
+	\centering
+		\includegraphics[width=1.00\textwidth]{lecture7/8.pdf}
+\end{figure}
+\end{frame}
+
+\begin{frame}{Simulation}
+\begin{figure}
+	\centering
+		\includegraphics[width=1.00\textwidth]{lecture7/9.pdf}
+\end{figure}
+\end{frame}
+
+
+
+
+
+\begin{frame}{Funnel asymmetry test}
+In the absence of publication bias the funnel should be symmetrical:
+\begin{equation*}
+\mbox{estimate}_i = \underbrace{\beta}_{\mbox{true effect}} + \underbrace{\beta_0 SE_i}_{\mbox{publication bias}} + \mu_{i}.
+\end{equation*}
+
+The equation is heteroscedastic. Weighted least squares yield 
+
+\begin{equation*} 
+t_i = \beta_0 + \beta \left(\frac{1}{SE_i}\right) + \vartheta_{i}.
+\end{equation*} 
+This is call the funnel asymmetry test---precision effect test (FAT-PET).
+\end{frame}
+
+
+		\begin{frame}{Hands on}
+  \centering
+  \vfill
+  {\usebeamercolor[fg]{title}\bfseries\LARGE Open Stata}
+  \vfill
+\end{frame}
+
+
+
+
+\begin{frame}{Default nonlinear correction model (PEESE)}
+Publication bias unlikely to be linear in SE. Precision effect test with standard error:
+
+\bigskip
+
+\begin{equation*}
+\mbox{estimate}_i = \underbrace{\beta}_{\mbox{true effect}} + \underbrace{\beta_0 SE^2_i}_{\mbox{publication bias}} + \mu_{i}.
+\end{equation*}
+
+\bigskip
+
+Weighted least squares yield 
+
+\begin{equation*} 
+t_i = \beta_0 SE_i + \beta \left(\frac{1}{SE_i}\right) + \vartheta_{i}.
+\end{equation*} 
+
+
+\bigskip
+
+Works well under most circumstances.
+\end{frame}
+
+
+\begin{frame}{WAAP (Ioannidis et al., 2017)}
+
+          \textbf{W}eighted \textbf{A}verage of \textbf{A}dequately \textbf{P}owered (WAAP) estimates.
+					
+						\bigskip
+
+        \begin{itemize}
+            \item Focus on studies with adequate statistical power to reduce the impact of selective reporting.
+            \item Combines results only from studies with at least 80\% power.
+        \end{itemize}
+				
+				\bigskip
+				
+       \textbf{Issues:}
+        \begin{itemize}
+            \item Simple and robust.
+            \item Need to estimate the true effect first and then compute power.
+        \end{itemize}
+
+\end{frame}
+
+\begin{frame}{Stem-based correction technique (Furukawa, 2019)}
+
+\textbf{Stem-based method:}
+\begin{itemize}
+    \item A non-parametric estimator that exploits the variance-bias trade-off.
+    \item Focuses on the most precise estimates, referred to as the ``stem'' of the funnel plot.
+\end{itemize}
+
+\bigskip
+
+\textbf{Key features:}
+\begin{itemize}
+    \item Robust to various publication selection processes.
+    \item Does not rely on specific distributional assumptions.
+\end{itemize}
+
+\bigskip
+
+\textbf{Application:}
+\begin{itemize}
+    \item Filters studies with the highest precision (lowest standard errors) to estimate the true effect.
+    \item Reduces influence from noisier, potentially biased studies in the broader funnel plot.
+\end{itemize}
+
+\end{frame}
+
+
+
+\begin{frame}{Endogenous kink model (Bom \& Rachinger, 2019)}
+
+\textbf{Overview:}
+\begin{itemize}
+    \item Fits a piecewise linear model with a kink determined by the data.
+    \item Identifies where publication selection is less likely to occur.
+\end{itemize}
+
+\bigskip
+
+\textbf{Key features:}
+\begin{itemize}
+    \item Endogenously estimates the cutoff based on standard errors.
+    \item Often reduces bias and improves efficiency compared to traditional methods.
+\end{itemize}
+
+\bigskip
+
+\textbf{Application:}
+\begin{itemize}
+    \item Highlights genuine effects by focusing on less selective segments of the data.
+    \item Effective in meta-analyses with substantial heterogeneity in study precision.
+\end{itemize}
+
+\end{frame}
+
+
+\begin{frame}{Endogenous kink}
+\begin{figure}
+	\centering
+		\includegraphics[width=0.9\textwidth]{lecture5/ek.png}
+\end{figure}
+\end{frame}
+
+
+\begin{frame}{Selection model (Andrews \& Kasy, 2019)}
+
+\textbf{Overview:}
+\begin{itemize}
+    \item Models the selection process explicitly to address publication bias.
+    \item Assumes researchers are more likely to publish statistically significant results.
+\end{itemize}
+
+\bigskip
+
+\textbf{Key features:}
+\begin{itemize}
+    \item Uses the likelihood of publication as a function of statistical significance.
+    \item Adjusts estimates to reflect the missing studies.
+\end{itemize}
+
+\bigskip
+
+\textbf{Comparison to funnel-based models:}
+\begin{itemize}
+    \item Selection models are more rigorous but require stronger assumptions about the publication process.
+    \item Funnel methods are simpler and more robust to model misspecification.
+\end{itemize}
+
+\end{frame}
+
+
+
+
+\begin{frame}{Example: labor supply elasticity}
+\begin{figure}
+	\centering
+		\includegraphics[width=0.9\textwidth]{lecture7/_funnel_all2.pdf}
+\end{figure}
+\end{frame}
+
+\begin{frame}{Tests often tell the same story qualitatively}
+\begin{figure}
+	\centering
+		\includegraphics[width=1.00\textwidth]{lecture7/fat.pdf}
+\end{figure}
+\end{frame}
+
+\begin{frame}{Bias caused by preference for positive estimates}
+\begin{figure}
+	\centering
+		\includegraphics[width=0.9\textwidth]{lecture7/_caliper2.pdf}
+\end{figure}
+\end{frame}
+
+
+\begin{frame}{Beauty effect: corrected mean probably below 3}
+\begin{figure}
+	\centering
+		\includegraphics[width=1.00\textwidth]{beauty/fatpet.png}
+\end{figure}
+\end{frame}
+
+\begin{frame}{Sex workers stand apart}
+ \begin{figure}
+	 \centering
+		 \includegraphics[width=0.9\textwidth]{lecture9/14.png}
+ \end{figure}
+\end{frame}
+
+\begin{frame}{Bias caused by selection for a positive sign}
+\begin{figure}
+	\centering
+		\includegraphics[width=0.9\textwidth]{beauty/caliper.pdf}
+\end{figure}
+\end{frame}
+
+
+\section{P-hacking}
+%\subsection{}
+
+
+
+\begin{frame}{Recall publication bias}
+\begin{figure}
+	\centering
+		\includegraphics[width=1.00\textwidth]{lecture8/4.pdf}
+\end{figure}
+\end{frame}
+
+
+\begin{frame}{Recall publication bias}
+\begin{figure}
+	\centering
+		\includegraphics[width=1.00\textwidth]{lecture8/5.pdf}
+\end{figure}
+\end{frame}
+
+
+
+\begin{frame}{Key difference}
+\begin{itemize}
+	\item \textbf{Publication bias}: all estimates are individually unbiased
+	\item The entire literature is biased because estimates are selectively reported
+	\item If we know publication probabilities, we can recover the true effect (selection models)
+	\item \textbf{P-hacking:} individual estimates can be biased
+	\item Classical selection models fail
+	\item Funnel-based models can work (with adjustments)
+\end{itemize}
+\end{frame}
+
+
+
+
+
+
+
+
+\begin{frame}{Example: education premium}
+
+\only<1>{True model:}
+\only<2>{Omitted variable:}
+\only<3>{Proxy:}
+\only<4>{Instrument:}
+
+
+% First equation with ability (visible only in slide 1 and 2)
+\only<1>{
+   \begin{equation*}
+    Earnings_j = \tikz[baseline={(E.base)}]{\node[draw,circle,inner sep=1pt] (E) {$\gamma$};} Education_j + \delta Ability_j + v_j,
+    \end{equation*}
+    % Add curved arrows using TikZ
+    \begin{tikzpicture}[overlay, remember picture]
+        % Arrow from Ability_j to Earnings_j
+        \draw[->,thick,bend right=50] (7.5,1.2) to (2.9,1.2);
+        % Arrow from Ability_j to Education_j
+        \draw[->,thick,bend left=50] (7.5,0.5) to (5.3,0.5);
+    \end{tikzpicture}
+}
+
+% New equation without ability (replaces the old equation)
+\only<2>{
+   \begin{equation*}
+    Earnings_j = \tikz[baseline={(E.base)}]{\node[draw,circle,inner sep=1pt] (E) {$\alert{\gamma}$};} Education_j + w_j,
+    \end{equation*}
+    % Add curved arrows using TikZ
+    \begin{tikzpicture}[overlay, remember picture]
+        % Arrow from Ability_j to Earnings_j
+        \draw[->,thick,bend right=50] (7.7,1.2) to (3.5,1.2);
+        % Arrow from Ability_j to Education_j
+        \draw[->,thick,bend left=50] (7.7,0.5) to (5.9,0.5);
+    \end{tikzpicture}
+}
+
+
+\only<3>{
+   \begin{equation*}
+    Earnings_j = \tikz[baseline={(E.base)}]{\node[draw,circle,inner sep=1pt] (E) {$\alert{\gamma}$};} Education_j + \omega IQ_j + x_j,
+    \end{equation*}
+    % Add curved arrows using TikZ
+    \begin{tikzpicture}[overlay, remember picture]
+        % Arrow from Ability_j to Earnings_j
+        \draw[->,dashed,bend right=50] (7.4,1.2) to (3.1,1.2);
+        % Arrow from Ability_j to Education_j
+        \draw[->,dashed,bend left=50] (7.4,0.5) to (5.7,0.5);
+    \end{tikzpicture}
+}
+
+\only<4>{
+   \begin{equation*}
+    Earnings_j = \tikz[baseline={(E.base)}]{\node[draw,circle,inner sep=1pt] (E) {$\alert{\gamma}$};} Education_j + z_j, \quad Distance_j
+    \end{equation*}
+    % Add curved arrows using TikZ
+    \begin{tikzpicture}[overlay, remember picture]
+        % Arrow from Ability_j to Earnings_j
+        \draw[->,thick,bend right=50] (5.2,1.2) to (2.6,1.2);
+        % Arrow from Ability_j to Education_j
+        \draw[->,dashed,bend left=50] (8.2,0.5) to (5.2,0.5);
+    \end{tikzpicture}
+}
+
+\bigskip
+
+Ability \alert{not observed}.
+
+\bigskip
+
+Primary studies:
+
+\begin{enumerate}
+    \item<2-> ignore ability $\rightarrow \hat{\gamma}$ too large, SE($\hat{\gamma}$) too small.
+    \item<3-> include a proxy $\rightarrow \hat{\gamma}$ smaller, SE($\hat{\gamma}$) larger.
+    \item<4-> quasi-experiment $\rightarrow \hat{\gamma}$ even smaller, SE($\hat{\gamma}$) even larger.
+\end{enumerate}
+
+\end{frame}
+
+
+
+
+
+
+
+\begin{frame}{Some estimates spuriously large \& precise}
+\begin{figure}
+	\centering
+		\includegraphics[width=0.68\textwidth]{lecture8/funnel33.pdf}
+\end{figure}
+\end{frame}
+
+
+
+\begin{frame}{All estimators biased upwards}
+\begin{figure}
+	\centering
+		\includegraphics[width=1.03\textwidth]{lecture8/Bias_phack_psi_1_1.pdf}
+\end{figure}
+\end{frame}
+
+
+
+
+
+\begin{frame}{Example: Changing controls changes precision}
+
+\begin{table}[htbp]
+\tiny
+\begin{center}
+\caption{Regression of test scores on class size}
+\begin{tabular*}{0.7\linewidth}{@{\hskip\tabcolsep\extracolsep\fill}l*{4}{c}@{}}
+\toprule
+					&\multicolumn{1}{c}{(1)} &\multicolumn{1}{c}{(2)} &\multicolumn{1}{c}{(3)} &\multicolumn{1}{c}{(4)}  \\
+\midrule
+	\addlinespace											
+
+Small class (treatment)	&	4.82	&	5.37&	5.36	&	5.37	\\
+	&	(\colorbox[rgb]{1,1,0}{2.19})	&	(\colorbox[rgb]{1,1,0}{1.26})	&	(\colorbox[rgb]{1,1,0}{1.21})	&	(\colorbox[rgb]{1,1,0}{1.19})	\\
+	\addlinespace											
+
+White/Asian	&		&		&	8.35	&	8.44	\\
+	&		&		&	(1.35)	&	(1.36)	\\
+Girl	&		&		&	4.48	&	4.39	\\
+	&		&		&	(0.63)	&	(0.63)	\\
+Free lunch	&		&		&	 -13.15	&	 -13.07	\\
+	&		&		&	(0.77)	&	(0.77)	\\
+White teacher	&		&		&		&	-0.57	\\
+	&		&		&		&	(2.1)	\\
+Teacher experience	&		&		&		&	0.26	\\
+	&		&		&		&	(0.10)	\\
+Master's degree	&		&		&		&	-0.51	\\
+	&		&		&		&	(1.06)	\\
+\midrule											
+School intercepts	&	No	&	Yes	&	Yes	&	Yes	\\
+Sample 	&	 5,861 	&	 5,861 	&	 5,861 	&	 5,861 	\\
+\bottomrule													
+\end{tabular*}
+\begin{tabular*}{0.7\linewidth}{@{\hskip\tabcolsep\extracolsep\fill}ccc}
+\multicolumn{3}{p{0.7\linewidth}}{\tiny \emph{Notes}: Adapted from Krueger (1999). Dependent variable: test score percentile. \colorbox[rgb]{1,1,0}{Standard errors in parentheses.}
+ %Krueger (1999) uses robust standard errors that are about two-thirds larger than the OLS standard errors (his own words). Also, standard errors are calculated using class-specific random component. Students in small classes tend to perform better by about 5 percentage points than those assigned to regular classes (the gap in average performance is about five percentile points in kindergarten). White and Asian students tend to score eight percentile points higher than black students in kindergarten. Girls score four points higher than boys. Students on free lunch score thirteen percentile points less than those not on free lunch. Teacher experience has a small, positive effect. Teacher education---as proxied by a dummy indicating whether the teacher has a master's degree---does not have a systematic effect, the same is valid for teachers race. 
+%\sym{*} \(p<0.10\), \sym{**} \(p<0.05\), \sym{***} \(p<0.01\).
+}    
+
+\\
+\end{tabular*}	
+\end{center}
+\vspace{-0.2cm}
+\normalsize
+\end{table}
+
+
+\end{frame}
+
+
+
+\begin{frame}{Changing clustering changes precision}
+
+\begin{table}[htbp]
+\tiny
+\begin{center}
+\caption{Regression of test scores on class size}
+\begin{tabular*}{1\linewidth}{@{\hskip\tabcolsep\extracolsep\fill}l*{6}{c}@{}}
+\toprule
+	&	Krueger (1999)	&\multicolumn{5}{c}{Replications using different computations of SE}	\\
+ \cmidrule(lr){3-7}
+			&	(1)	&	(2)	&	(3)	&	(4)	&	(5)	&	(6)	\\
+		&	 &	Bootstrap of	&	Class	&	School 	&	Huber-White	& Plain vanilla\\
+				&	 &	class clusters	&	clusters	&	 clusters	&	SE &	SE	\\
+	\midrule
+Small class	&	4.82	&	4.71	&	4.71\	&	4.71	&	4.71	&	4.71	\\
+	&	(\colorbox[rgb]{1,1,0}{2.19})	&	(\colorbox[rgb]{1,1,0}{2.00})	&	(\colorbox[rgb]{1,1,0}{1.88})	&	(\colorbox[rgb]{1,1,0}{1.38})	&	(\colorbox[rgb]{1,1,0}{0.79})	&	(\colorbox[rgb]{1,1,0}{0.76})	\\
+	\midrule
+Sample 	&	 5,861 	&	 5,743 	&	 5,743 	&	 5,743 	&	 5,743 	&	 5,743 	\\
+\bottomrule													
+\end{tabular*}
+\begin{tabular*}{1\linewidth}{@{\hskip\tabcolsep\extracolsep\fill}ccccc}
+\multicolumn{5}{p{1\linewidth}}{\tiny \emph{Notes}: Dependent variable: test score percentile. Standard errors (SE) in parentheses.
+}
+\\
+\end{tabular*}	
+\end{center}
+\vspace{-0.2cm}
+\normalsize
+\end{table}
+
+\bigskip
+\bigskip
+
+\begin{block}{Meta-analysis of the class size effect}
+Available at \href{http://www.meta-analysis.cz/class}{meta-analysis.cz/class}. (forthcoming in \emph{JOLE})
+\end{block}
+
+\end{frame}
+
+
+
+
+
+
+\begin{frame}{Funnel plot}
+\begin{figure}
+	\centering
+		\includegraphics[width=0.65\textwidth]{lecture8/funnel4.pdf}
+	\label{fig:funnel4}
+\end{figure}
+\end{frame}
+
+\begin{frame}{Publication bias}
+\begin{figure}
+	\centering
+		\includegraphics[width=0.65\textwidth]{lecture8/funnel5.pdf}
+	\label{fig:funnel4}
+\end{figure}
+\end{frame}
+
+
+\begin{frame}{Conventional p-hacking}
+\begin{figure}
+	\centering
+		\includegraphics[width=0.65\textwidth]{lecture8/funnel1.pdf}
+	\label{fig:funnel1}
+\end{figure}
+\end{frame}
+
+
+
+\begin{frame}{Spurious precision}
+\begin{figure}
+	\centering
+		\includegraphics[width=0.65\textwidth]{lecture8/funnel2.pdf}
+	\label{fig:funnel2}
+\end{figure}
+\end{frame}
+
+
+
+
+
+
+
+
+
+
+\begin{frame}{Key meta assumption broken}
+
+\bigskip
+
+PEESE:
+%\smallskip
+		   \begin{equation*}
+    \hat{E_i} = \tikz[baseline=(E.base)]{\node[draw,circle,inner sep=1pt] (E) {$E_0$};} + \beta SE(\hat{E})^2_i + u_i,
+    \end{equation*}
+    \begin{tikzpicture}[overlay, remember picture]
+        % Arrow from E0 to SE
+        \draw[->,thick,bend right=50] (7.3,1.2) to node[above] {\footnotesize{Methods or p-hacking}} (3.32,1.2);
+        % Arrow from SE to u
+        \draw[->,thick,bend left=50] (7.3,0.5) to node[below] {\footnotesize{Methods or p-hacking}} (5.9,0.5);
+    \end{tikzpicture}
+		
+%ignoring PET and weights for simplicity.
+
+\smallskip
+\smallskip
+\smallskip
+\smallskip
+
+\bigskip
+
+
+corr($SE,u) \neq 0$ $\Rightarrow$ $\hat{\beta}$ and $\hat{E_0}$ biased. 
+
+
+\bigskip
+\smallskip
+\smallskip
+\smallskip
+
+%\alert{Natural solution}: ue N as an insturment for $SE(\hat{E})^2_i$ $\rightarrow$ MAIVE. %corr.\ with $SE(\hat{E})^2_i$, not with methods or p-hacking
+
+   \fbox{\parbox{0.99\linewidth}{\alert{Natural solution:} N instrumenting $SE(\hat{E})_i^2 \rightarrow$ MAIVE.}}
+
+\end{frame}
+
+
+
+
+\begin{frame}{Options for the meta-analyst}
+\begin{enumerate}
+	\item Use only quasi-experimental studies. %\pause
+	\item Include controls (dummies for OLS, DID, \ldots). %\pause
+	
+	\bigskip 
+	
+	But in observational research \\ \alert{we never know the true model!} %Options 1 and 2 only work if we are lucky. 
+	
+	\bigskip
+	
+	\item Remove ``bad'' variation from SE $\rightarrow$ MAIVE.
+\end{enumerate}
+
+
+
+\end{frame}
+
+
+
+\begin{frame}{Meta-analysis instrumental variable estimator}
+
+
+%MAIVE \alert{replaces reported SE} with its portion that can be explained by sample size [$\hat{\alpha_0}+\hat{\alpha_1} (1/N_i)$]:
+
+
+
+\only<1>{
+MAIVE intuition:
+		   \begin{equation*}
+    \hat{E_i} = \tikz[baseline=(E.base)]{\node[draw,circle,inner sep=1pt] (E) {$E_0$};} + \beta SE(\hat{E})^2_i + u_i. \quad 1/N_i
+    \end{equation*}
+    \begin{tikzpicture}[overlay, remember picture]
+        % Arrow from E0 to SE
+        \draw[->,dashed,bend right=50] (7.8,1.3) to node[above] {\footnotesize{Definition of SE}} (5.3,1.3);
+    \end{tikzpicture}
+		}
+		
+\only<2>{
+MAIVE first stage:
+    \begin{equation*}
+    SE(\hat{E})^2_i = \alpha_0 + \alpha_1 \left( 1/N_i \right) + \tikz[baseline={(P.base)}]{\node[draw,circle,inner sep=1pt] (P) {$\pi_i$};}. \hspace{2em} \mathrm{hacking \hspace{0.25em} or \hspace{0.25em} misspecifications}
+    \end{equation*}
+				    \begin{tikzpicture}[overlay, remember picture]
+        % Arrow from Ability_j to Earnings_j
+        \draw[->,thick,bend right=50] (7.5,1.2) to (5.32,1.2);
+    \end{tikzpicture}
+		}
+
+
+\only<3>{
+    MAIVE adjustment:
+    \begin{equation*}
+    SE(\hat{E})^2_{adj,i} = \hat{\alpha_0} + \hat{\alpha_1} \left(1/N_i \right) + 
+    \tikz[baseline={(P.base)}]{\node[draw,circle,inner sep=1pt] (P) {$\pi_i$}; 
+    \draw[black, line width=0.5pt] (-0.35,0) -- (0.35,0);}. 
+    \hspace{1.3em} 
+    \tikz[baseline={(T.base)}]{\node(T) {hacking}; \draw[black, line width=0.5pt] (-0.6,0) -- (0.6,0); } 
+    \hspace{0.15em} \mathrm{or} \hspace{0.15em} 
+    \tikz[baseline={(T.base)}]{\node(T) {misspecifications}; \draw[black, line width=0.5pt] (-1.5,0) -- (1.5,0);}
+    \end{equation*}
+
+    \begin{tikzpicture}[overlay, remember picture]
+        % Arrow from Ability_j to Earnings_j
+        \draw[->,thick,bend right=50] (7.5,1.2) to (5.32,1.2);
+    \end{tikzpicture}
+}
+
+
+		
+\bigskip %\pause
+
+%Note that:
+
+\begin{itemize}
+	\item MAIVE $+$ PEESE $=$ classical IV. %\pause
+	\item Can add \alert{controls in the 2nd stage}. %\pause %MAIVE can be combined with earlier options 1 and 2.
+\item Plug MAIVE-adjusted SEs into other estimators. %\pause
+\end{itemize}
+
+\end{frame}
+
+
+
+
+
+\begin{frame}{MAIVE alleviates the bias}
+\begin{figure}
+	\centering
+		\includegraphics[width=1.03\textwidth]{lecture8/hack22.pdf}
+\end{figure}
+\end{frame}
+
+
+\begin{frame}{Extended MAIVE}
+\begin{figure}
+	\centering
+		\includegraphics[width=1.03\textwidth]{lecture8/Bias_extended_MAIVE_3}
+\end{figure}
+\end{frame}
+
+
+
+
+
+\begin{frame}{MAIVE reduces PET-PEESE in 70\% of the cases}
+\begin{figure}
+	\centering
+		\includegraphics[width=0.8\textwidth]{lecture8/histogram_F_100.pdf}
+\end{figure}
+\end{frame}
+
+
+
+
+
+
+\begin{frame}{Practical issues}
+  \begin{block}{Main consideration}
+  \begin{itemize}
+  \item Can methods or p-hacking influence both $\hat{E}$ and $SE$? %\pause
+	
+	\item Yes $\rightarrow$ MAIVE helps. %\pause
+	
+	\item No $\rightarrow$ MAIVE doesn't hurt much. %\pause
+
+
+  \end{itemize}
+  \end{block}
+
+\vskip0pt plus.5fill
+    \begin{block}{Project Website}
+      \href{http://www.meta-analysis.cz/maive}{meta-analysis.cz/maive}
+    \end{block}
+		
+		\vskip0pt plus.5fill
+		
+		Forthcoming in \emph{Nature Communications}.
+		
+\end{frame}
+
+
+
+\begin{frame}{Hands on}
+  \centering
+  \vfill
+  {\usebeamercolor[fg]{title}\bfseries\LARGE Open Stata \\[0.5em]
+   \textcolor{black}{\normalsize (MAIVE web app at \href{https://maive.eu}{maive.eu})}}
+  \vfill
+\end{frame}
+
+
+
+
+
+
+\begin{frame}{RTMA: Maya Mathur's p-hacking correction}
+\begin{itemize}
+	\item Right-truncated meta-analysis (Mathur 2024, RSM)
+	\item Assumption 1: insignificant estimates are NOT p-hacked
+	\item Assumption 2: estimates are normally distributed
+	\item Assumption 3: there are enough insignificant estimates published that we can recover the underlying distribution
+	\item Bayesian techniques used for computation feasibility (ML would typically need huge samples)
+	\item Digression: Robust Bayesian Meta-Analysis (RoBMA), still unavailable for economics data
+\end{itemize}
+\end{frame}
+
+
+		\begin{frame}{Hands on}
+  \centering
+  \vfill
+  {\usebeamercolor[fg]{title}\bfseries\LARGE Open R}
+  \vfill
+\end{frame}
+
+
+
+\section{Heterogeneity}
+%\subsection{}
+
+\begin{frame}{Identification of publication bias}
+
+\bigskip
+
+PEESE:
+%\smallskip
+		   \begin{equation*}
+    \hat{E_i} = \tikz[baseline=(E.base)]{\node[draw,circle,inner sep=1pt] (E) {$E_0$};} + \beta SE(\hat{E})^2_i + u_i,
+    \end{equation*}
+    \begin{tikzpicture}[overlay, remember picture]
+        % Arrow from E0 to SE
+        \draw[->,thick,bend right=50] (7.3,1.2) to node[above] {\footnotesize{Methods or p-hacking}} (3.32,1.2);
+        % Arrow from SE to u
+        \draw[->,thick,bend left=50] (7.3,0.5) to node[below] {\footnotesize{Methods or p-hacking}} (5.9,0.5);
+    \end{tikzpicture}
+		
+%ignoring PET and weights for simplicity.
+
+\smallskip
+\smallskip
+\smallskip
+\smallskip
+
+\bigskip
+
+
+corr($SE,u) \neq 0$ $\Rightarrow$ $\hat{\beta}$ and $\hat{E_0}$ biased. 
+
+
+\bigskip
+\smallskip
+\smallskip
+\smallskip
+
+%\alert{Natural solution}: ue N as an insturment for $SE(\hat{E})^2_i$ $\rightarrow$ MAIVE. %corr.\ with $SE(\hat{E})^2_i$, not with methods or p-hacking
+
+   \fbox{\parbox{0.99\linewidth}{\alert{Natural solution:} N instrumenting $SE(\hat{E})_i^2 \rightarrow$ MAIVE.}}
+	
+	\bigskip
+	
+	Or add covariates!
+
+\end{frame}
+
+
+
+
+\begin{frame}{Classical heterogeneity measure}
+ 
+    
+    \textbf{Common measure:} estimate the relative heterogeneity of underlying effects \textit{(Higgins and Thompson, 2002)}
+    
+    \[
+    I^2 \equiv \frac{\text{underlying variance of effects}}{\text{observed variance of estimates}} = \frac{\tau^2}{\tau^2 + \bar{v}}
+    \]
+    
+    \begin{itemize}
+        \item $I^2 = 0.75 \sim 1.0$ \dots \textit{``considerable heterogeneity'' in medicine (Cochrane Review Guideline)}
+        \item $I^2 \simeq 0.9$ \dots common in economics meta-analyses (e.g., \textit{Vivalt, 2021})
+    \end{itemize}
+    
+    \bigskip
+    
+    \textbf{Unresolved concern:}
+    \begin{itemize}
+        \item no universally agreed criteria for ``too much'' heterogeneity
+        \item undesirable pattern: with more precise studies, higher $I^2$
+    \end{itemize}
+\end{frame}
+
+
+
+
+\begin{frame}{Guiding example: beauty and success}
+ \begin{figure}
+	 \centering
+		 \includegraphics[width=0.9\textwidth]{lecture9/1.png}
+ \end{figure}
+\end{frame}
+
+\begin{frame}{Heterogeneity both within and across}
+ \begin{figure}
+	 \centering
+		 \includegraphics[width=1.00\textwidth]{lecture9/2.png}
+ \end{figure}
+\end{frame}
+
+\begin{frame}{Wide dispersion}
+ \begin{figure}
+	 \centering
+		 \includegraphics[width=0.9\textwidth]{lecture9/3.png}
+ \end{figure}
+\end{frame}
+
+\begin{frame}{Measurement of beauty}
+ \begin{figure}
+	 \centering
+		 \includegraphics[width=1.00\textwidth]{lecture9/4.png}
+ \end{figure}
+\end{frame}
+
+
+
+
+\begin{frame}{Measurement of success}
+ \begin{figure}
+	 \centering
+		 \includegraphics[width=1.00\textwidth]{lecture9/5.png}
+ \end{figure}
+\end{frame}
+
+\begin{frame}{Data characteristics}
+ \begin{figure}
+	 \centering
+		 \includegraphics[width=1.00\textwidth]{lecture9/6.png}
+ \end{figure}
+\end{frame}
+
+\begin{frame}{Estimation technique}
+ \begin{figure}
+	 \centering
+		 \includegraphics[width=1.00\textwidth]{lecture9/7.png}
+ \end{figure}
+\end{frame}
+
+\begin{frame}{Publication characteristics}
+ \begin{figure}
+	 \centering
+		 \includegraphics[width=1.00\textwidth]{lecture9/8.png}
+ \end{figure}
+\end{frame}
+
+\begin{frame}{Beauty measurement doesn't matter}
+ \begin{figure}
+	 \centering
+		 \includegraphics[width=0.8\textwidth]{lecture9/9.png}
+ \end{figure}
+\end{frame}
+
+		\begin{frame}{Hands on}
+  \centering
+  \vfill
+  {\usebeamercolor[fg]{title}\bfseries\LARGE Open Stata}
+  \vfill
+\end{frame}
+
+\begin{frame}{Success measurement doesn't matter}
+ \begin{figure}
+	 \centering
+		 \includegraphics[width=0.8\textwidth]{lecture9/10.png}
+ \end{figure}
+\end{frame}
+
+\begin{frame}{Method doesn't matter}
+ \begin{figure}
+	 \centering
+		 \includegraphics[width=0.8\textwidth]{lecture9/11.png}
+ \end{figure}
+\end{frame}
+
+
+\begin{frame}{Ability control matters}
+ \begin{figure}
+	 \centering
+		 \includegraphics[width=0.8\textwidth]{lecture9/12.png}
+ \end{figure}
+\end{frame}
+
+
+\begin{frame}{Occupation matters}
+ \begin{figure}
+	 \centering
+		 \includegraphics[width=0.8\textwidth]{lecture9/13.png}
+ \end{figure}
+\end{frame}
+
+\begin{frame}{Sex workers stand apart}
+ \begin{figure}
+	 \centering
+		 \includegraphics[width=0.9\textwidth]{lecture9/14.png}
+ \end{figure}
+\end{frame}
+
+
+\begin{frame}{Option 1: subsamples}
+ \begin{figure}
+	 \centering
+		 \includegraphics[width=1.00\textwidth]{lecture9/15.png}
+ \end{figure}
+\end{frame}
+
+\begin{frame}{Option 1: subsamples}
+ \begin{figure}
+	 \centering
+		 \includegraphics[width=1.00\textwidth]{lecture9/16.png}
+ \end{figure}
+\end{frame}
+
+\begin{frame}{Option 1: subsamples}
+ \begin{figure}
+	 \centering
+		 \includegraphics[width=1.00\textwidth]{lecture9/17.png}
+ \end{figure}
+\end{frame}
+
+
+\begin{frame}{Option 1: subsamples}
+ \begin{figure}
+	 \centering
+		 \includegraphics[width=1.00\textwidth]{lecture9/18.png}
+ \end{figure}
+\end{frame}
+
+
+\begin{frame}{Option 2: Bayesian model averaging}
+\begin{itemize}
+	\item We want to regress estimates of the beauty effect on variables reflecting heterogeneity
+	\item But too many variables; model uncertainty
+	\item Solution: run regressions with different combinations of the variables
+	\item Give more weight to those that fit the data well and are parsimonious
+\end{itemize}
+\end{frame}
+
+
+\begin{frame}{Option 2: Bayesian model averaging}
+\begin{itemize}
+\item Model averaging can be frequentist but computationally difficult
+\item Intuition: run different combinations and weight by adjusted $R^2$ or information criteria
+\item In the Bayesian setting we can use the MCMC algorithm
+\item G-prior: all coefficients are zero. Weight? UIP = the prior has the same weight as one observation
+\item Model prior: uniform = all models have the same weight
+\item Dilution prior: models with collinearity get less weight
+\end{itemize}
+\end{frame}
+
+		\begin{frame}{Hands on}
+  \centering
+  \vfill
+  {\usebeamercolor[fg]{title}\bfseries\LARGE Open R}
+  \vfill
+\end{frame}
+
+
+
+\begin{frame}{Model inclusion in BMA}
+ \begin{figure}
+	 \centering
+		 \includegraphics[width=0.7\textwidth]{lecture9/19.png}
+ \end{figure}
+\end{frame}
+
+\begin{frame}{Posterior densities}
+ \begin{figure}
+	 \centering
+		 \includegraphics[width=0.95\textwidth]{lecture9/posterior.png}
+ \end{figure}
+\end{frame}
+
+
+\begin{frame}{Regression results}
+ \begin{figure}
+	 \centering
+		 \includegraphics[width=0.7\textwidth]{lecture9/20.png}
+ \end{figure}
+\end{frame}
+
+
+
+
+\begin{frame}{Best practice (implied estimate)}
+\begin{itemize}
+\item From BMA results we know how estimates depend on study design
+\item Some study designs are better: identification, data, generally quality
+\item Select best practice based on the literature (quasi-experimental studies, etc.)
+\item Compute fitted values and confidence intervals (lincom command in Stata)
+\end{itemize}
+\end{frame}
+
+		\begin{frame}{Hands on}
+  \centering
+  \vfill
+  {\usebeamercolor[fg]{title}\bfseries\LARGE Open Stata}
+  \vfill
+\end{frame}
+
+
+\begin{frame}{Best practice (class size effect)}
+ \begin{figure}
+	 \centering
+		 \includegraphics[width=0.8\textwidth]{lecture9/21.png}
+ \end{figure}
+\end{frame}
+
+
+
+
+\section{Extensions \& Limitations}
+%\subsection{}
+
+
+\begin{frame}{Issue 1: Attenuation bias, aka regression dilution}
+\begin{figure}
+	\centering
+		\includegraphics[width=0.78\textwidth]{lecture10/attenuation2.pdf}
+	\label{fig:attenuation}
+\end{figure}
+
+\end{frame}
+
+\begin{frame}{Elasticity of skill substitution}
+
+
+\begin{block}{Important complication}
+Researchers estimate negative inverse elasticity: they regress skill premium on relative labor supply (not vice versa!)
+\end{block}
+\begin{itemize}
+\item Measures substitutability between skilled (college) and unskilled (high school) workers
+	\item Important for wage inequality, explaining cross-country differences in productivity, \ldots
+	\item 682 estimates from 77 studies, \alert{``consensus'' elasticity = 1.5} (negative inverse = $-0.67$)
+\end{itemize}
+\end{frame}
+
+
+
+\begin{comment}
+\begin{frame}{Many studies far from consensus}
+\begin{figure}
+	\centering
+		\includegraphics[width=0.9\textwidth]{lecture10/trend_inverse.pdf}
+	\label{fig:trend_inverse}
+\end{figure}
+\end{frame}
+\end{comment}
+
+
+\begin{comment}
+
+\begin{frame}{Country heterogeneity}
+\begin{figure}
+	\centering
+		\includegraphics[width=0.75\textwidth]{lecture10/countries.pdf}
+	\label{fig:countries}
+\end{figure}
+\end{frame}
+
+\end{comment}
+
+
+
+\begin{frame}{Three estimation frameworks}
+\begin{figure}
+	\centering
+		\includegraphics[width=0.9\textwidth]{lecture10/pattern1.pdf}
+	\label{fig:pattern1}
+\end{figure}
+\end{frame}
+
+
+
+
+\begin{frame}{Strong publication bias (or \emph{p}-hacking?)}
+\begin{figure}
+	\centering
+		\includegraphics[width=0.9\textwidth]{lecture10/funnel.pdf}
+	\label{fig:funnel}
+\end{figure}
+\end{frame}
+
+\begin{comment}
+\begin{frame}{\ldots{} and against insignificant ones, too}
+\begin{figure}
+	\centering
+		\includegraphics[width=0.9\textwidth]{lecture10/caliper.pdf}
+	\label{fig:caliper}
+\end{figure}
+\end{frame}
+\end{comment}
+
+
+
+
+\begin{frame}{OLS: no effect (but attenuation \& endogeneity biases)}
+\begin{figure}
+	\centering
+		\includegraphics[width=1.00\textwidth]{lecture10/ols.pdf}
+	\label{fig:ols}
+\end{figure}
+\end{frame}
+
+\begin{frame}{IV: strong effect (no biases beyond publication)}
+\begin{figure}
+	\centering
+		\includegraphics[width=1.00\textwidth]{lecture10/iv.pdf}
+	\label{fig:iv}
+\end{figure}
+\end{frame}
+
+
+\begin{frame}{Natural experiments: no effect (but attenuation bias)}
+\begin{figure}
+	\centering
+		\includegraphics[width=1.00\textwidth]{lecture10/natural.pdf}
+	\label{fig:natural}
+\end{figure}
+\end{frame}
+
+
+
+
+
+
+
+
+\begin{frame}{Publication bias $>$ attenuation bias}
+\begin{itemize}
+\item $|$IV$|$ $>$ $|$OLS$|$ $\rightarrow$ attenuation or other endogeneity biases important
+	\item OLS = Natural experiments $\rightarrow$ other endogeneity biases negligible
+	\item[$\rightarrow$] \alert{$|$IV $-$ OLS$|$ measures attenuation bias, which is strong}
+	\item Uncorrected inverted elasticity = $-0.67$
+	\item Inverted elasticity corrected for pub and attenuation bias (IV) = $-0.25$
+	\item[$\rightarrow$] Pub bias dominates attenuation
+	\item[$\rightarrow$] Implied elasticity = 4 
+\end{itemize}
+\end{frame}
+
+
+
+\begin{frame}{Assumptions of Andrews \& Kasy not satisfied}
+\begin{figure}
+	\centering
+		\includegraphics[width=1.03\textwidth]{lecture10/ak.pdf}
+	\label{fig:ak}
+\end{figure}
+\end{frame}
+
+
+
+
+
+
+\begin{frame}{Model uncertainty; biases confirmed}
+\begin{figure}
+	\centering
+		\includegraphics[width=0.7\textwidth]{lecture10/bma.pdf}
+	\label{fig:bma}
+\end{figure}
+\end{frame}
+
+
+\begin{frame}{Best practice estimate around 4}
+\begin{figure}
+	\centering
+		\includegraphics[width=0.9\textwidth]{lecture10/best.pdf}
+	\label{fig:best}
+\end{figure}
+\end{frame}
+
+
+
+
+
+
+  
+\begin{frame}{Results}
+  \begin{block}{Main Findings}
+  \begin{enumerate}
+  \item
+Attenuation bias is important ($|$IV$|$ $>$ $|$OLS$|$ $=$ $|$natural experiments$|$).
+\item
+Publication bias is more important (inverse elasticity: simple mean $-0.67$ ; corrected IV mean $-0.25$).
+    \item
+Implied elasticity around 4 (compared to consensus 1.5).
+  \end{enumerate}
+  \end{block}
+
+\vskip0pt plus.5fill
+    \begin{block}{Project Website}
+      \href{http://www.meta-analysis.cz/skill}{www.meta-analysis.cz/skill}
+    \end{block}
+		
+		\vskip0pt plus.5fill
+	Published in the \emph{Review of Economics and Statistics}, 2024.
+\end{frame}
+
+
+
+\begin{frame}{Issue 2: How much heterogeneity is too much?}
+    
+    \textbf{Common measure:} estimate the relative heterogeneity of underlying effects \textit{(Higgins and Thompson, 2002)}
+    
+    \[
+    I^2 \equiv \frac{\text{underlying variance of effects}}{\text{observed variance of estimates}}
+    \]
+    
+    \begin{itemize}
+        \item $I^2 = 0.75 \sim 1.0$ \dots \textit{``considerable heterogeneity'' in medicine (Cochrane Review Guideline)}
+        \item $I^2 \simeq 0.9$ \dots common in economics meta-analyses (e.g., \textit{Vivalt, 2021})
+    \end{itemize}
+    
+    \bigskip
+    
+    \textbf{Unresolved concern:}
+    \begin{itemize}
+        \item no universally agreed criteria for ``too much'' heterogeneity
+        \item undesirable pattern: with more precise studies, higher $I^2$
+    \end{itemize}
+\end{frame}
+
+
+\begin{frame}{This paper (still under construction)}
+    \begin{enumerate}
+        \item Propose a new test for external validity in meta-analysis:
+        \begin{itemize}
+            \item Based on the tail index of the underlying distribution, without contamination by estimate precision.
+            \item Test whether the implied variance of underlying effect is infinite (i.e., too heterogeneous).
+        \end{itemize}
+        
+        \bigskip
+        
+        \item Show that the implied variance is infinite in meta-analysis of 126 nudge RCTs \textit{(DellaVigna and Linos, 2020)}:
+        \begin{itemize}
+            \item \textbf{Nudge:} ``choice architecture that alters people's behavior in a predictable way without forbidding any options or significantly changing their economic incentives.'' \textit{(Thaler and Sunstein, 2008)}
+            \item The possibility of infinite variance can be important in real-world applications.
+        \end{itemize}
+    \end{enumerate}
+\end{frame}
+
+\begin{frame}{Test of infinite variance}
+    \textbf{Pareto tail:}
+    \[
+    F(b) = 1 - Cb^{-\alpha}, \quad b > b_{\text{min}} \quad \text{and} \quad C > 0
+    \]
+
+    \begin{itemize}
+        \item e.g. earthquakes, word frequency, city size, wealth distribution
+        \item If $\alpha < 2$, then $V\!ar(b) = \infty$ because
+        \[
+        \int_{b_{\text{min}}}^\infty b^2 f(b) \, db \propto \int_{b_{\text{min}}}^\infty b^2 b^{-3} \, db = \int_{b_{\text{min}}}^\infty b^{-1} \, db = \log b \big|_{b_{\text{min}}}^\infty = \infty
+        \]
+    \end{itemize}
+    
+    \bigskip
+    
+    \textbf{Tail index test of external validity:}
+    \begin{itemize}
+        \item \textbf{Criteria 1:} if $\hat{\alpha} > 2$, then pass the test
+        \item \textbf{Criteria 2:} if $\mathbb{P}(\hat{\alpha} \leq 2) < p$, then pass the test
+    \end{itemize}
+\end{frame}
+
+
+\begin{frame}{Estimation methods (i) inner problem of tail index}
+    Following \textit{Hill (1975)}, use Maximum Likelihood Estimation for $\hat{\alpha}_{MLE}$: given $b_{\text{min}}$,
+    \[
+    \hat{\alpha}_{MLE} = \arg \max_{\alpha} \sum_{i=1}^n \ln l \left( \alpha \mid \beta_i, SE_i, b_{\text{min}} \right),
+    \]
+    where
+    \[
+    l \left( \alpha \mid \beta_i, SE_i, b_{\text{min}} \right) \equiv \int_{\theta_{\text{min}}}^\infty
+    \frac{\phi \left( \frac{\beta_i - \theta}{SE_i} \right)}{1 - \Phi \left( \frac{b_{\text{min}} - \theta}{SE_i} \right)}
+    \alpha b_{\text{min}}^{\alpha} b^{-(\alpha + 1)} \, db.
+    \]
+
+    \bigskip
+
+    \begin{itemize}
+        \item Numerical integration
+    \end{itemize}
+\end{frame}
+
+
+\begin{frame}{Estimation methods (ii) outer problem of cut-off}
+    Following \textit{Clauset et al. (2006)}, use the goodness-of-fit metric to choose $b^*_{\text{min}}$:
+    \[
+    b^*_{\text{min}} \in \arg \min_{b_{\text{min}}} \tilde{K}S \left(b_{\text{min}} \mid \hat{\alpha}_{MLE}\right),
+    \]
+    where the reweighted Kolmogorov-Smirnov statistic is
+    \[
+    \tilde{K}S \left(b_{\text{min}} \mid \hat{\alpha}_{MLE}\right) \equiv \sup_{\beta} 
+    \frac{\left|G(\beta \mid \beta \geq b_{\text{min}}) - \hat{G}(\beta \mid \cdot)\right|}
+    {\sqrt{\hat{G}(\beta \mid \cdot) \left[1 - \hat{G}(\beta \mid \cdot)\right]}},
+    \]
+    and the estimated distribution is $\hat{G}(\beta \mid \hat{\alpha}_{MLE}, \beta \geq b_{\text{min}})$ and the empirical distribution is $G(\beta \mid \beta \geq b_{\text{min}})$.
+\end{frame}
+
+
+\begin{frame}{Nudges}
+\begin{figure}
+	\centering
+		\includegraphics[width=0.75\textwidth]{lecture10/0.png}
+\end{figure}
+\end{frame}
+
+\begin{frame}{Nudges}
+\begin{figure}
+	\centering
+		\includegraphics[width=0.72\textwidth]{lecture10/1.png}
+\end{figure}
+\end{frame}
+
+\begin{frame}{Summary}
+    \begin{enumerate}
+        \item Proposed the concept of \textit{``infinite variance''} as representing the persistent criticism that \textit{``too much'' heterogeneity} underlies the overall mean estimate.
+        
+        \bigskip
+        
+        \item Developed an estimation method by extending the maximum likelihood estimation and goodness-of-fit statistics commonly used in tail estimation.
+        
+        \bigskip
+        
+        \item Applied the estimation method and its implied test to show that the influential nudge meta-analysis exhibits the infinite variance.
+    \end{enumerate}
+\end{frame}
+
+
+
+\section{Takeaways}
+%\subsection{}
+
+
+
+\begin{frame}{Summary: How to do a modern meta-analysis}
+\begin{enumerate}
+
+	\item Search for primary studies using Google Scholar, snowballing, AI agent
+	\item Use comparable estimates (elasticities, mean differences, correlations)
+	\item Code standard errors, sample sizes, main differences in data and methods
+	\item Winsorize estimates and standard errors at the 1\% level
+	\item Correct for publication bias and p-hacking (MAIVE; if weak instrument $\rightarrow$ RTMA)
+	\item Examine heterogeneity using BMA with the dilution prior
+	\item Report implied effects for different contexts
+	
+\end{enumerate}
+\end{frame}
+
+
+\begin{frame}{Thank you for inviting me}
+Prepared for Tillv\"{a}xtanalys. Published at meta-analysis.cz/teaching under CC BY 4.0.
+\end{frame}
+
+
+
+\end{document}
+
+

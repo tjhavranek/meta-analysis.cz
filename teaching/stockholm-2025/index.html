@@ -1,0 +1,254 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Meta-Analysis for Policy Economists (Tillväxtanalys, Stockholm, 2025)</title>
+<meta name="description" content="Slides, LaTeX source, Stata and R code and data from a two-day course on meta-analysis for the policy economists of Tillväxtanalys, Stockholm, August 2025." />
+<link href="/style.css" rel="stylesheet" type="text/css" />
+<!-- seo-meta:start -->
+<link rel="canonical" href="https://meta-analysis.cz/teaching/stockholm-2025/" />
+<meta property="og:site_name" content="meta-analysis.cz" />
+<meta property="og:type" content="website" />
+<meta property="og:title" content="Meta-Analysis for Policy Economists (Tillväxtanalys, Stockholm, 2025)" />
+<meta property="og:description" content="Slides, LaTeX source, Stata and R code and data from a two-day course on meta-analysis for the policy economists of Tillväxtanalys, Stockholm, August 2025." />
+<meta property="og:url" content="https://meta-analysis.cz/teaching/stockholm-2025/" />
+<script type="application/ld+json">
+{
+ "@context": "https://schema.org",
+ "@graph": [
+  {
+   "@type": "Course",
+   "@id": "https://meta-analysis.cz/teaching/stockholm-2025/#course",
+   "url": "https://meta-analysis.cz/teaching/stockholm-2025/",
+   "name": "Meta-Analysis for Policy Economists: Practical Tools for Synthesizing Research",
+   "description": "A two-day course on meta-analysis for policy economists: literature search and data collection, conventional tools, publication bias, p-hacking, heterogeneity, and the limits of meta-analysis, hands-on in Stata and R.",
+   "inLanguage": "en",
+   "license": "https://creativecommons.org/licenses/by/4.0/",
+   "author": {
+    "@id": "https://meta-analysis.cz/#th"
+   },
+   "provider": {
+    "@type": "Organization",
+    "name": "Tillväxtanalys (Swedish Agency for Growth Policy Analysis)",
+    "url": "https://www.tillvaxtanalys.se/"
+   },
+   "hasCourseInstance": {
+    "@type": "CourseInstance",
+    "courseMode": "Onsite",
+    "startDate": "2025-08-28",
+    "endDate": "2025-08-29",
+    "location": {
+     "@type": "Place",
+     "name": "Tillväxtanalys, the Swedish Agency for Growth Policy Analysis",
+     "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "Stockholm",
+      "addressCountry": "SE"
+     }
+    },
+    "instructor": {
+     "@id": "https://meta-analysis.cz/#th"
+    },
+    "inLanguage": "en"
+   },
+   "hasPart": [
+    {
+     "@id": "https://meta-analysis.cz/teaching/stockholm-2025/#slides"
+    }
+   ],
+   "isPartOf": {
+    "@id": "https://meta-analysis.cz/teaching/#page"
+   }
+  },
+  {
+   "@type": "LearningResource",
+   "@id": "https://meta-analysis.cz/teaching/stockholm-2025/#slides",
+   "name": "Slides: Meta-Analysis for Policy Economists: Practical Tools for Synthesizing Research",
+   "learningResourceType": "Presentation",
+   "encodingFormat": "application/pdf",
+   "url": "https://meta-analysis.cz/teaching/stockholm-2025/slides.pdf",
+   "license": "https://creativecommons.org/licenses/by/4.0/",
+   "author": {
+    "@id": "https://meta-analysis.cz/#th"
+   },
+   "inLanguage": "en"
+  },
+  {
+   "@type": "Person",
+   "@id": "https://meta-analysis.cz/#th",
+   "name": "Tomas Havranek",
+   "url": "https://www.tomashavranek.cz"
+  }
+ ]
+}
+</script>
+<!-- seo-meta:end -->
+<style>
+/* Teaching pages: a plain schedule table, and the slide text set a step quieter than prose. */
+.entry table.sched{ border-collapse:collapse; margin:var(--s3) 0 var(--s5); font-size:var(--f-1); }
+.entry table.sched td{ padding:var(--s2) var(--s4) var(--s2) 0; vertical-align:top;
+  border-bottom:1px solid var(--rule); line-height:1.45; }
+.entry table.sched td.t{ white-space:nowrap; font-variant-numeric:tabular-nums; color:var(--ink-soft); }
+.entry p.slide-fig{ margin-top:0; font-size:var(--f-1); color:var(--ink-soft); }
+.entry pre.slide-table{ max-width:100%; overflow-x:auto; font-size:var(--f-1); line-height:1.4; }
+.entry .slides-text h3{ margin-top:var(--s5); }
+</style>
+</head>
+<body>
+<div id="wrapper">
+<div id="logo">
+	<a class="masthead-home" href="/">meta-analysis.cz</a>
+	<p class="site-name"><a href="/teaching/">Teaching</a></p>
+	<h2> <span class="mk">&raquo;</span>&nbsp;&nbsp;&nbsp; Stockholm, 28 and 29 August 2025</h2>
+</div>
+<div id="header">
+	<div id="menu">
+		<ul>
+			<li><a href="/teaching/">Teaching</a></li>
+			<li><a href="/teaching/osaka-2026/">Osaka 2026</a></li>
+			<li class="current_page_item"><a href="/teaching/stockholm-2025/">Stockholm 2025</a></li>
+			<li><a href="/guidelines/">Guidelines</a></li>
+			<li><a href="/">All meta-analyses</a></li>
+		</ul>
+	</div>
+</div>
+</div>
+<!-- start page -->
+<div id="page" class="single">
+	<div id="content">
+		<div class="post">
+			<div class="entry">
+
+<p class="lede"><b>Meta-Analysis for Policy Economists: Practical Tools for Synthesizing
+Research.</b> A two-day course for the policy economists of <a href="https://www.tillvaxtanalys.se/">Tillväxtanalys</a>,
+the Swedish Agency for Growth Policy Analysis, in Stockholm on 28 and 29 August 2025. Tomas
+Havranek, Charles University, Prague.</p>
+
+<p class="cta"><a class="button" href="/teaching/stockholm-2025/slides.pdf">Slides (PDF)</a>
+<a class="button quiet" href="/Stockholm.pdf">Programme (PDF)</a></p>
+
+<p>Hands-on in Stata and R throughout, with <a href="/beauty/">the meta-analysis of beauty and
+professional success</a> as the running example.</p>
+
+<h2 id="programme">Programme</h2>
+
+<p><b>Day 1, Thursday 28 August:</b> data, basic tools and bias.</p>
+<table class="sched">
+<tr><td class="t">09:00 to 10:00</td><td>Why meta-analysis for policy, and applied examples (sections 1 and 2)</td></tr>
+<tr><td class="t">10:10 to 11:00</td><td>Literature search and screening (section 3)</td></tr>
+<tr><td class="t">11:10 to 12:00</td><td>Data collection and AI infrastructure (section 4); hands-on: data cleaning and outliers in Stata</td></tr>
+<tr><td class="t">13:00 to 14:00</td><td>Conventional tools: fixed and random effects, visuals (section 5); hands-on: forest plots, box plots and UWLS in Stata</td></tr>
+<tr><td class="t">14:10 to 15:00</td><td>Publication bias (section 6): funnel plots, FAT-PET, PEESE, WAAP and the endogenous kink in Stata</td></tr>
+<tr><td class="t">15:10 to 16:00</td><td>Hands-on: bias-corrected estimates in Stata</td></tr>
+</table>
+
+<p><b>Day 2, Friday 29 August:</b> p-hacking, heterogeneity and extensions.</p>
+<table class="sched">
+<tr><td class="t">09:00 to 09:15</td><td>Recap of day 1 and overview of day 2</td></tr>
+<tr><td class="t">09:15 to 10:00</td><td>P-hacking and selective reporting (section 7): theory, MAIVE and RTMA</td></tr>
+<tr><td class="t">10:10 to 10:30</td><td>Hands-on: MAIVE in Stata, RTMA in R</td></tr>
+<tr><td class="t">10:30 to 11:00</td><td>Heterogeneity and moderator analysis (section 8)</td></tr>
+<tr><td class="t">11:10 to 12:00</td><td>Heterogeneity continued; hands-on: subsamples, best practice and implied effects in Stata</td></tr>
+<tr><td class="t">13:00 to 14:00</td><td>Hands-on: Bayesian model averaging in R, and how to read its results</td></tr>
+<tr><td class="t">14:10 to 15:00</td><td>Extensions and limitations (section 9): attenuation bias, meaningless means</td></tr>
+<tr><td class="t">15:10 to 16:00</td><td>Takeaways, and questions (section 10)</td></tr>
+</table>
+
+<h2 id="slides">Slides</h2>
+
+<ul class="reading">
+<li><a href="/teaching/stockholm-2025/slides.pdf">slides.pdf</a>: the 234 pages as taught</li>
+<li><a href="/teaching/stockholm-2025/slides/">The slides as text</a>: every slide's title and text, for reading and searching without the PDF</li>
+<li><a href="/teaching/stockholm-2025/slides.tex">slides.tex</a>: the LaTeX source, and <a href="/teaching/stockholm-2025/latex.zip">latex.zip</a>: the source with all 133 figures, ready for pdflatex</li>
+</ul>
+
+<p>The deck covers <a href="/teaching/stockholm-2025/slides/#motivation">Motivation</a>, <a href="/teaching/stockholm-2025/slides/#applied-examples">Applied Examples</a>, <a href="/teaching/stockholm-2025/slides/#literature-search">Literature Search</a>, <a href="/teaching/stockholm-2025/slides/#data-collection">Data Collection</a>, <a href="/teaching/stockholm-2025/slides/#conventional-tools">Conventional Tools</a>, <a href="/teaching/stockholm-2025/slides/#publication-bias">Publication Bias</a>, <a href="/teaching/stockholm-2025/slides/#p-hacking">P-hacking</a>, <a href="/teaching/stockholm-2025/slides/#heterogeneity">Heterogeneity</a>, <a href="/teaching/stockholm-2025/slides/#extensions-limitations">Extensions &amp; Limitations</a> and <a href="/teaching/stockholm-2025/slides/#takeaways">Takeaways</a>. Section 9 ends with work in progress as of
+August 2025: a proposed test of whether the variance of the underlying effects is infinite,
+applied to a meta-analysis of 126 nudge experiments. The <a href="/teaching/osaka-2026/">Osaka
+course</a> of March 2026 uses a shorter and updated version of this deck.</p>
+
+<h2 id="code">Code and data</h2>
+
+<p>The hands-on part replicates selected analyses of <a href="/beauty/">the meta-analysis of
+beauty and professional success</a>, from the raw estimates to estimates corrected for
+publication bias and to the effect implied by best practice. The files as they were handed out:</p>
+
+<ul class="reading">
+<li><a href="/teaching/stockholm-2025/code/beauty.xlsx">beauty.xlsx</a>: the 1,159 estimates from 67 studies, with their moderator variables</li>
+<li><a href="/teaching/stockholm-2025/code/beauty.do">beauty.do</a>: the annotated Stata script for the whole workflow, from summary statistics and graphs to bias corrections and implied estimates</li>
+<li><a href="/teaching/stockholm-2025/code/beauty_bma.csv">beauty_bma.csv</a>: the cleaned data for R</li>
+<li><a href="/teaching/stockholm-2025/code/beauty_bma.R">beauty_bma.R</a>: right-truncated meta-analysis (RTMA) and Bayesian model averaging (BMA)</li>
+</ul>
+
+<p>This is the teaching version of the data. The full dataset and the replication package of the
+paper are on <a href="/beauty/">its project page</a>.</p>
+
+<p>Stata 15 or later, with these packages:</p>
+<pre class="usage"><code>ssc install winsor2
+ssc install metan
+ssc install ivreg2
+net install boottest, from("https://raw.githubusercontent.com/droodman/boottest/main/")
+ssc install weakiv
+ssc install collin</code></pre>
+
+<p>R 4.5 or later, with the packages BMS and phacking (phacking also installs rstan and the other
+packages it depends on):</p>
+<pre class="usage"><code>install.packages(c("BMS", "phacking"))</code></pre>
+
+<p>In Stata, put beauty.xlsx in the working directory and run beauty.do section by section. In R,
+put beauty_bma.csv next to beauty_bma.R and run the script. The main corrections for publication bias and p-hacking now also run without any installation at <a href="https://www.easymeta.org/">EasyMeta.org</a>.</p>
+
+<h2 id="readings">Readings</h2>
+
+<ul class="reading">
+<li><a href="/guidelines/">The practitioner&#8217;s guide to meta-analysis</a> (Irsova, Doucouliagos, Havranek and Stanley, <i>Journal of Economic Surveys</i>)</li>
+<li><a href="/maive/">MAIVE: spurious precision in meta-analysis of observational research</a> (Irsova, Bom, Havranek and Rachinger, <i>Nature Communications</i>, 2025), and <a href="/maive/how-to/">how to run it</a></li>
+<li>Applications: <a href="/beauty/">beauty and professional success</a>, <a href="/class/">class size and student achievement</a>, <a href="/incentives/">financial incentives and performance</a>, and <a href="/skill/">skill substitution</a></li>
+</ul>
+
+<h2 id="licence">Licence</h2>
+
+<p>CC BY 4.0, like everything on this site; the code files also carry an MIT licence in their
+headers. A few figures and screenshots in the slides reproduce other people's work, such as
+textbook diagrams and search-engine results, and those remain under their original terms.</p>
+
+			</div>
+		</div>
+	</div>
+</div>
+<!-- end page -->
+<footer class="site-foot">
+<p class="foot-lede"><b>meta-analysis.cz</b> collects meta-analyses, the data behind them, the
+code that produced them, and the methods for doing them. It is maintained by <a href="/about/"><b>Tomas Havranek</b> and
+<b>Zuzana Irsova</b></a> at the Institute of Economic Studies, Charles University, Prague.</p>
+<p class="foot-nav"><a href="/">All meta-analyses</a> &middot;
+<a href="/papers/">Papers in full</a> &middot;
+<a href="/results/">Headline results</a> &middot;
+<a href="/datasets/">Datasets and the pooled table</a> &middot;
+<a href="/maive/">MAIVE</a> &middot;
+<a href="/guidelines/">Practitioner&#x27;s guide</a> &middot;
+<a href="/teaching/">Teaching</a> &middot;
+<a href="/notes/">Research notes</a> &middot;
+<a href="/impact/">How this work has been used</a> &middot;
+<a href="https://www.easymeta.org/">EasyMeta web app</a></p>
+<p class="foot-who"><b>Tomas Havranek</b> &middot; <a href="https://www.tomashavranek.cz/">tomashavranek.cz</a> &middot; <a href="https://ies.fsv.cuni.cz/en/contacts/institute-members/78067720">IES FSV UK</a> &middot; <a href="https://orcid.org/0000-0002-3158-2539">ORCID</a> &middot; <a href="https://scholar.google.com/citations?user=BF0BvBkAAAAJ">Google Scholar</a> &middot; <a href="https://ideas.repec.org/f/pha418.html">RePEc</a> &middot; <a href="https://www.scopus.com/authid/detail.uri?authorId=24453189000">Scopus</a> &middot; <a href="https://cepr.org/about/people/tomas-havranek">CEPR</a> &middot; <a href="https://metrics.stanford.edu/people/tomas-havranek">Stanford METRICS</a></p>
+<p class="foot-who"><b>Zuzana Irsova</b> &middot; <a href="https://www.irsova.com/">irsova.com</a> &middot; <a href="https://ies.fsv.cuni.cz/en/contacts/institute-members/73504033">IES FSV UK</a> &middot; <a href="https://orcid.org/0000-0002-0753-8124">ORCID</a> &middot; <a href="https://scholar.google.com/citations?user=LaHrICUAAAAJ">Google Scholar</a> &middot; <a href="https://ideas.repec.org/e/pir23.html">RePEc</a> &middot; <a href="https://www.scopus.com/authid/detail.uri?authorId=37080793200">Scopus</a> &middot; <a href="https://cepr.org/about/people/zuzana-irsova">CEPR</a> &middot; <a href="https://metrics.stanford.edu/people/zuzana-irsova">Stanford METRICS</a></p>
+<p class="foot-cite"><b>How to cite this collection:</b> Havranek, T. and Z. Irsova (2026).
+meta-analysis.cz: harmonised estimate-level data from meta-analyses in economics. Zenodo.
+<a href="https://doi.org/10.5281/zenodo.21773678">https://doi.org/10.5281/zenodo.21773678</a>.
+Individual papers carry their own citation on their own page.</p>
+<p class="foot-licence"><b>Licence: CC BY 4.0.</b> Everything on this site is licensed under the
+<a href="https://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0
+International Licence</a>. That covers the papers, the datasets, their CSV and Parquet conversions,
+the pooled table, the codebooks, and the documentation. You may copy, redistribute, adapt, and reuse
+any of it for any purpose, including commercial use and training machine-learning models, as long
+as you give attribution to meta-analysis.cz. You do not need to ask.</p>
+<p class="foot-machine">For machines: <a href="/api/v1/datasets.json">datasets.json</a> &middot;
+<a href="/api/v1/datapackage.json">datapackage.json</a> &middot;
+<a href="/api/v1/croissant.json">croissant.json</a> &middot;
+<a href="/llms.txt">llms.txt</a> &middot; <a href="/llms-full.txt">llms-full.txt</a> &middot;
+<a href="/sitemap.xml">sitemap.xml</a> &middot; <a href="/LICENSE">LICENSE</a></p>
+</footer>
+</body>
+</html>

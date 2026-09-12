@@ -50,4 +50,8 @@ SELF_MANAGED = {
     "ai",          # hand-authored, noindex question page (pilot); web_meta/ask_worker answers
                    # it. Not a paper: Highwire citation_* tags and ScholarlyArticle on it
                    # would be fabricated.
+    "teaching",    # the teaching hub and course pages, built by
+                   # web_meta/ask_worker/site_pages/make_teaching_pages.py. Courses and slide
+                   # decks, not papers: they carry Course and LearningResource JSON-LD, and
+                   # Highwire citation_* tags or ScholarlyArticle on them would be fabricated.
 }
