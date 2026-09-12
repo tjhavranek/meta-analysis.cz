@@ -26,6 +26,7 @@ import io
 import logging
 import os
 import re
+import struct
 import subprocess
 import sys
 import zipfile
@@ -36,6 +37,8 @@ from pypdf.generic import (ArrayObject, ByteStringObject, DictionaryObject, Indi
                            StreamObject, TextStringObject)
 
 logging.getLogger("pypdf").setLevel(logging.ERROR)     # free or damaged objects: noise, not findings
+import warnings  # noqa: E402
+warnings.filterwarnings("ignore", category=UserWarning, module="openpyxl")   # unsupported extensions
 SITE = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 PATH =re.compile(r"(?<![A-Za-z])[A-Za-z]:\\|(?<![A-Za-z/])[A-Za-z]:/(?!/)|/Users/|/home/", re.I)
 # a path inside someone's own user folder: this is what names a person or an account
@@ -67,8 +70,9 @@ def basename(s):
 
 
 def tracked(pattern):
+    # check=True: a git error must stop the run, not become an empty list and a clean --check
     out = subprocess.run(["git", "ls-files", pattern], cwd=SITE, capture_output=True,
-                         text=True, encoding="utf-8").stdout
+                         text=True, encoding="utf-8", check=True).stdout
     return [f for f in out.split("\n") if f]
 
 
@@ -91,7 +95,9 @@ def leaks_xlsx(data):
             found.append((n, "printer settings"))
             continue
         t = z.read(n).decode("utf-8", "ignore")
-        for m in PATH.finditer(t):
+        # a style can be named after the template it came from (C:\COMFO\CTALK\JOURSTD.TPL):
+        # a name shown in Excel's style list, so there only a user's own folder counts
+        for m in (USERPATH if n == "xl/styles.xml" else PATH).finditer(t):
             found.append((n, t[m.start():m.start() + 60]))
         for e in personal_emails(t):
             found.append((n, e))
@@ -219,31 +225,93 @@ def verify_xlsx(old, new):
     assert not leaks_xlsx(new), leaks_xlsx(new)
 
 
-# ---------------------------------------------------------------- legacy Excel (.xls)
+# ---------------------------------------------------------------- Office 97-2003 (.xls, .doc, .ppt)
+
+ACCOUNT = re.compile(rb"^[A-Za-z]{0,8}\d{3,}$")      # an account id (u02037, aula314), not a name
+
+
+def _lpstr_props(stream):
+    """The string properties of the first section of an OLE property set, by property id."""
+    out = {}
+    off = struct.unpack_from("<I", stream, 44)[0]
+    count = struct.unpack_from("<I", stream, off + 4)[0]
+    for i in range(count):
+        pid, poff = struct.unpack_from("<II", stream, off + 8 + 8 * i)
+        if struct.unpack_from("<I", stream, off + poff)[0] == 30:           # VT_LPSTR
+            ln = struct.unpack_from("<I", stream, off + poff + 4)[0]
+            out[pid] = stream[off + poff + 8: off + poff + 8 + ln].rstrip(b"\x00")
+    return out
+
+
+def _ole_accounts(data):
+    """Author (4) and last-saved-by (8) values that are account ids rather than names."""
+    from xlrd import compdoc
+    si = compdoc.CompDoc(data, logfile=open(os.devnull, "w")).get_named_stream("\x05SummaryInformation")
+    if not si:
+        return []
+    return sorted({v.strip() for pid, v in _lpstr_props(si).items() if pid in (4, 8) and ACCOUNT.match(v.strip())})
+
+
+def _spans(data, values):
+    out = []
+    for v in values:
+        i = data.find(v)
+        while i >= 0:
+            out.append((i, i + len(v)))
+            i = data.find(v, i + 1)
+    return out
+
+
+def _blank(data, spans):
+    b = bytearray(data)
+    for s, e in spans:
+        b[s:e] = b"\x00" * (e - s)
+    return bytes(b)
+
+
+def leaks_ole(data):
+    return [("summary property", v.decode("latin-1")) for v in _ole_accounts(data)]
+
+
+def scrub_ole(data):
+    """Blank account ids in the author fields, byte for byte: the file keeps its size and layout."""
+    acc = _ole_accounts(data)
+    if not acc:
+        return data, []
+    return _blank(data, _spans(data, acc)), ["account id blanked in the author fields (%d)" % len(acc)]
+
+
+def _only_within(old, new, spans):
+    assert len(old) == len(new), "size changed"
+    diff = [i for i in range(len(old)) if old[i] != new[i]]
+    assert all(any(s <= i < e for s, e in spans) for i in diff), "bytes changed outside the fields blanked"
+
+
+def verify_ole(old, new):
+    _only_within(old, new, _spans(old, _ole_accounts(old)))
+    assert not leaks_ole(new), leaks_ole(new)
+
 
 def leaks_xls(data):
     return [("printer record", m.group(0).decode("utf-16-le")) for m in UNC16.finditer(data)] + \
-           [("8-bit string", m.group(0).decode("latin-1")) for m in UNC8.finditer(data)]
+           [("8-bit string", m.group(0).decode("latin-1")) for m in UNC8.finditer(data)] + leaks_ole(data)
 
 
 def scrub_xls(data):
-    """Blank the print-server name inside the fixed-width printer record, byte for byte: the
-    file keeps its size and layout, and the record simply names no device."""
-    hits = list(UNC16.finditer(data))
-    if not hits:
+    """Blank the print-server name inside the fixed-width printer record, and account ids in the
+    author fields, byte for byte: the file keeps its size and layout."""
+    spans = [(m.start(), m.end()) for m in UNC16.finditer(data)]
+    acc = _ole_accounts(data)
+    if not spans and not acc:
         return data, []
-    b = bytearray(data)
-    for m in hits:
-        b[m.start():m.end()] = b"\x00" * (m.end() - m.start())
-    return bytes(b), ["print-server name blanked in %d printer record(s)" % len(hits)]
+    changes = (["print-server name blanked in %d printer record(s)" % len(spans)] if spans else []) + \
+              (["account id blanked in the author fields (%d)" % len(acc)] if acc else [])
+    return _blank(data, spans + _spans(data, acc)), changes
 
 
 def verify_xls(old, new):
     import xlrd
-    assert len(old) == len(new), "size changed"
-    diff = [i for i in range(len(old)) if old[i] != new[i]]
-    spans = [(m.start(), m.end()) for m in UNC16.finditer(old)]
-    assert all(any(s <= i < e for s, e in spans) for i in diff), "bytes changed outside the printer records"
+    _only_within(old, new, [(m.start(), m.end()) for m in UNC16.finditer(old)] + _spans(old, _ole_accounts(old)))
     a, b = xlrd.open_workbook(file_contents=old), xlrd.open_workbook(file_contents=new)
     assert a.sheet_names() == b.sheet_names(), "sheet list changed"
     for sa, sb in zip(a.sheets(), b.sheets()):
@@ -278,15 +346,27 @@ def _is_xmp(o):
 
 
 def _all_objects(r):
-    """Every object the cross-reference tables list, referenced or not: orphans included."""
+    """Every object the cross-reference tables list, referenced or not: orphans included. An
+    object that cannot be read stops the check: a file only partly read is not a clean file."""
     refs = sorted({(i, g) for g, ids in r.xref.items() for i in ids} | {(i, 0) for i in r.xref_objStm})
     for i, g in refs:
         try:
             o = r.get_object(IndirectObject(i, g, r))
-        except Exception:
-            continue
+        except Exception as e:
+            raise ValueError("object %d %d unreadable: %s" % (i, g, str(e)[:40]))
         if o is not None:
             yield o
+
+
+# keys whose string value names a file; /Title is also a bookmark's visible text, so a title
+# counts only when the whole of it is a path
+PATH_KEYS = ("/PTEX.FileName", "/Alt", "/Title", "/F", "/UF")
+
+
+def _pathlike(k, s):
+    if URL.match(s):
+        return False
+    return bool(PATH.match(s.strip()) if k == "/Title" else PATH.search(s))
 
 
 def _xmp_leaks(t):
@@ -308,6 +388,8 @@ def leaks_pdf(data):
         for k, s in _strings(o):
             if k and k.lstrip("/") in OUTLOOK_PROPS:
                 found.append((k, s[:60]))
+            elif k in PATH_KEYS and _pathlike(k, s):      # a saved-file path, with or without a user name
+                found.append((k, s[:80]))
             elif k != "/URI" and not URL.match(s) and USERPATH.search(s):
                 found.append((k or "string", s[:80]))
             elif personal_emails(s) and k != "/URI" and not s.lower().startswith("mailto:"):
@@ -345,9 +427,9 @@ def _neutralise_paths(o):
         if isinstance(v, DictionaryObject):
             for k in list(v.keys()):
                 x = v.raw_get(k)
-                if k in ("/Alt", "/PTEX.FileName") and isinstance(x, (TextStringObject, ByteStringObject)):
+                if k in PATH_KEYS and isinstance(x, (TextStringObject, ByteStringObject)):
                     s = str(x) if isinstance(x, TextStringObject) else bytes(x).decode("latin-1")
-                    if PATH.search(s):
+                    if _pathlike(k, s):
                         v[NameObject(k)] = TextStringObject(basename(s))
                         n += 1
                 else:
@@ -357,7 +439,7 @@ def _neutralise_paths(o):
     return n
 
 
-LITERAL_PATH = re.compile(rb"(/PTEX\.FileName|/Alt)(\s*)\(((?:\\.|[^\\()])*)\)", re.S)
+LITERAL_PATH = re.compile(rb"(/PTEX\.FileName|/Alt|/Title|/UF|/F)(\s*)\(((?:\\.|[^\\()])*)\)", re.S)
 
 
 def _unescape(b):
@@ -375,7 +457,7 @@ def _inplace_paths(data):
     def rep(m):
         nonlocal n
         s = _unescape(m.group(3))
-        if not PATH.search(s.decode("latin-1")):
+        if not _pathlike(m.group(1).decode("latin-1"), s.decode("latin-1")):
             return m.group(0)
         name = re.split(rb"[\\/]", s.strip())[-1]
         name = name.replace(b"\\", b"\\\\").replace(b"(", b"\\(").replace(b")", b"\\)")
@@ -571,8 +653,11 @@ def verify_zip(old, new):
 
 HANDLERS.update(xlsx=(leaks_xlsx, scrub_xlsx, verify_xlsx), pdf=(leaks_pdf, scrub_pdf, verify_pdf))
 TYPES = [("*.xlsx", leaks_xlsx, scrub_xlsx, verify_xlsx), ("*.xlsm", leaks_xlsx, scrub_xlsx, verify_xlsx),
-         ("*.xls", leaks_xls, scrub_xls, verify_xls), ("*.pdf", leaks_pdf, scrub_pdf, verify_pdf),
-         ("*.zip", leaks_zip, scrub_zip, verify_zip)]
+         ("*.xls", leaks_xls, scrub_xls, verify_xls), ("*.doc", leaks_ole, scrub_ole, verify_ole),
+         ("*.ppt", leaks_ole, scrub_ole, verify_ole), ("*.pdf", leaks_pdf, scrub_pdf, verify_pdf),
+         ("*.zip", leaks_zip, scrub_zip, verify_zip),
+         # a .docx or .pptx is a zip too: the workbooks and PDFs embedded in it are checked the same way
+         ("*.docx", leaks_zip, scrub_zip, verify_zip), ("*.pptx", leaks_zip, scrub_zip, verify_zip)]
 
 
 def main():
@@ -599,14 +684,15 @@ def main():
             if mode == "--check":
                 left.append((f, leaks[:3]))
                 continue
-            new, changes = scrub_fn(data)
+            try:
+                new, changes = scrub_fn(data)
+                if changes:
+                    verify_fn(data, new)
+            except Exception as e:                 # never write a file that fails to clean or verify
+                left.append((f, ["not cleaned: %s" % str(e)[:160]]))
+                continue
             if not changes:
                 left.append((f, leaks[:3]))
-                continue
-            try:
-                verify_fn(data, new)
-            except Exception as e:                 # never write a file that fails verification
-                left.append((f, ["verification failed: %s" % str(e)[:160]]))
                 continue
             changed += 1
             print("%s %s: %s" % ("fixed" if mode == "--apply" else "would fix", f, "; ".join(changes)))
