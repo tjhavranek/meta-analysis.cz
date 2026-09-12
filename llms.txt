@@ -102,6 +102,9 @@
 - [Commentary and interviews](https://meta-analysis.cz/komentare/): op-eds, columns, and interviews (mostly Czech); machine index at https://meta-analysis.cz/komentare/llms.txt
 - [Research notes](https://meta-analysis.cz/notes/): short notes on methods and papers
 - [How to run MAIVE](https://meta-analysis.cz/maive/how-to/): the four columns MAIVE needs, a worked example with every number archived at https://meta-analysis.cz/api/v1/maive-howto.json, the same run in R, and a ready request for the EasyMeta API
+- [Teaching: courses on meta-analysis](https://meta-analysis.cz/teaching/): slides with their LaTeX sources, Stata and R code, data, and a recording, from courses in Osaka (2026) and Stockholm (2025)
+- [Introduction to Meta-Analysis in Economics, Osaka 2026](https://meta-analysis.cz/teaching/osaka-2026/): a one-day course at ISER, the University of Osaka, with the slides as text at https://meta-analysis.cz/teaching/osaka-2026/slides/
+- [Meta-Analysis for Policy Economists, Stockholm 2025](https://meta-analysis.cz/teaching/stockholm-2025/): a two-day course at Tillväxtanalys, with the slides as text at https://meta-analysis.cz/teaching/stockholm-2025/slides/
 - [MAIVE extensions: WAIVE and the residual discontinuity test](https://meta-analysis.cz/maive/#extensions): both build on MAIVE and NEITHER HAS A PAPER YET; the three conference decks linked there are the only source, and should be cited as presentations
 - [EasyMeta](https://www.easymeta.org/): one-click meta-analysis web app (MAIVE, PET-PEESE, clustering)
 - [MAER-Net](https://www.maer-net.org/): Meta-Analysis of Economics Research Network
