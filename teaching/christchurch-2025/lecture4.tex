@@ -1,0 +1,359 @@
+% $Header: /home/vedranm/bitbucket/beamer/solutions/conference-talks/conference-ornate-20min.en.tex,v 90e850259b8b 2007/01/28 20:48:30 tantau $
+
+\documentclass{beamer} %[compress]
+% alternatively add handout or draft option
+
+%\mode<handout>%{\setbeamercolor{background canvas}{bg=black!5}}
+%\usepackage{pgfpages}
+%\pgfpagesuselayout{4 on 1}[a4paper,border shrink=5mm,landscape]
+% For handout printing, 4 slides on 1 page
+
+\mode<presentation>
+{
+  \usetheme{Pittsburgh} % plain template Pittsburgh
+  \useoutertheme{infolines} % bottom (author, title, place)
+  \useoutertheme[subsection=false]{miniframes} % top (sections, frames)
+  \usecolortheme{beaver} %blue color whale
+	\setbeamertemplate{frametitle}[default][right] % frame titles on the right
+  \setbeamercovered{transparent}
+  % or whatever (possibly just delete it)
+}
+
+\setbeamersize{text margin left=1cm, text margin right=1cm}
+%\setbeamertemplate{navigation symbols}{}
+\usepackage[english]{babel}
+\usepackage{booktabs}
+\usepackage{comment}
+% or whatever
+
+\usepackage[cp1250]{inputenc}
+% or whatever
+\usepackage{subfigure} %subfigures
+
+\usepackage{times}
+%\usepackage{breqn}
+\usepackage{amsmath}
+\usepackage[T1]{fontenc}
+\def\sym#1{\ifmmode^{#1}\else\(^{#1}\)\fi} %shortcut for Stata tables
+% Or whatever. Note that the encoding and the font should match. If T1
+% does not look nice, try deleting the line with the fontenc.
+
+%\logo{\includegraphics[height=0.5cm]{logo.jpg}} % logo on every page
+
+
+
+\title[Lecture 4: Data Collection] % (optional, use only with long paper titles)
+{Lecture 4: Data Collection}
+
+\author[T.\ Havranek] % (optional, use only with lots of authors)
+{ Tomas Havranek
+}
+% - Give the names in the same order as the appear in the paper.
+% - Use the \inst{?} command only if the authors have different
+%   affiliation.
+
+\institute[Prague] % (optional, but mostly needed)
+{
+  	Charles University, CEPR, METRICS
+
+  %\inst%
+  %Economic Research Department\\
+  %Czech National Bank
+      %\inst{1}%
+  %Research Department\\
+  %Czech National Bank
+  %\and
+  %\inst{2}%
+  %Institute of Economic Studies\\
+  %Charles University, Prague
+  
+%\pgfdeclareimage[height=1cm]{logo}{logo.jpg} % logo only on title page
+%\pgfuseimage{logo}
+}% - Use the \inst command only if there are several affiliations.
+% - Keep it simple, no one is interested in your street address.
+
+\date[Meta in Econ and Finance] % (optional, should be abbreviation of conference name)
+{Research Synthesis in Economics and Finance, \\ University of Canterbury\\[2ex]
+  Term 1, 2025
+}%\\[4mm]% - Either use conference name or its abbreviation.
+% - Not really informative to the audience, more for people (including
+%   yourself) who are reading the slides online
+
+
+%\subject{Intertemporal Substitution}
+
+\begin{comment}
+\AtBeginSection[]
+{
+  \begin{frame}<beamer>{Outline}
+    \tableofcontents[currentsection]%,currentsubsection]
+  \end{frame}
+}
+\end{comment}
+
+\begin{document}
+
+\begin{frame}
+  \titlepage
+\end{frame}
+
+\begin{comment}
+
+\begin{frame}{Outline}
+  \tableofcontents
+  % You might wish to add the option [pausesections]
+\end{frame}
+
+\end{comment}
+
+%\section{Summary}
+%\subsection{}
+
+%\section{EIS}
+%\subsection{}
+
+
+\begin{frame}{Effects must be quantitatively comparable}
+What does it mean?
+
+\bigskip
+
+\begin{itemize}
+	\item When we compare estimates reported in Study 1 and Study 2, it must be clear which one is larger
+	\item It must be clear how much larger it is
+	\item t-statistics are not useful measures of effect size
+	\item Regression coefficients are not comparable in general if studies use different units
+\end{itemize}
+
+\end{frame}
+
+
+
+\begin{frame}{Elasticities}
+
+\[
+\text{x-elasticity of } y: \, \varepsilon = \frac{\frac{\partial y}{y}}{\frac{\partial x}{x}}
+\]
+
+\[
+\text{P-elasticity of Q: } \varepsilon = \frac{\frac{\partial Q}{Q}}{\frac{\partial P}{P}} \, \text{if continuous}
+\]
+
+\[
+\varepsilon = \frac{\frac{Q_2 - Q_1}{Q_1}}{\frac{P_2 - P_1}{P_1}} = \frac{\text{\% change in quantity Q}}{\text{\% change in price P}} \, \text{if discrete}
+\]
+
+Elasticities can be recovered from regressing \textbf{log(Y) on log(X)}.
+
+
+\end{frame}
+
+
+\begin{frame}{Semi-elasticities, dollar values, std.dev.\ changes}
+\begin{itemize}
+	\item Semi-elasticity: effect of euro adoption on trade, effects of foreign investment on domestic productivity, effects of borders on trade
+	\item Dollar values: statistical value of life, social cost of carbon
+	\item Std.dev.\ changes: effect of class size on student test scores. What to do here?
+	\item Class size is measured the same way in all studies (number of kids).
+	\item Test scores are measured differently.
+	\item Solution: By how many standard deviations do test scores improve if we decrease class size by 10 students?
+\end{itemize}
+\end{frame}
+
+
+\begin{frame}{Standardized mean differences}
+
+\[
+\theta = \frac{\mu_1 - \mu_2}{\sigma},
+\]
+where $\mu_1$ is the mean for one population, $\mu_2$ is the mean for the other population, and $\sigma$ is a standard deviation based on either or both populations.
+
+\bigskip
+\begin{itemize}
+	\item Very popular in psychology, not much used in economics. Why?
+	\item Generally we need an experiment: treatment group, control group.
+	\item In economics we often focus on observational research.
+	\item For many questions the treatment and control are not binary classifications (we look at the intensity of treatment)
+\end{itemize}
+
+
+\end{frame}
+
+
+
+\begin{frame}{Partial correlation coefficients}
+
+Example: \textbf{tuition fees and university enrollment}. Ideally, we would need price elasticities of demand (PED), but many studies are not log on log.
+
+\smallskip
+
+ So we transform the estimates to partial correlations using t-statistics and degrees of freedom:
+
+\bigskip
+
+\[
+\text{PCC(PED)}_{ij} = \frac{\text{T(PED)}_{ij}}{\sqrt{\text{T(PED)}_{ij}^2 + \text{DF(PED)}_{ij}}}.
+\]
+
+
+
+\end{frame}
+
+
+
+\begin{frame}{PCC caveats}
+\begin{itemize}
+	\item Last resort: can be used almost always, but we lose a lot of information
+	\item Difficult to interpret (some guidelines provided by Doucouliagos, 2011)
+		\item Statistical problems for meta-analysis methods (but this is the case also for SMD)
+	\item Include robustness checks: e.g.\ a subsample of elasticities in the case of tuition fees and university enrollment
+
+\end{itemize}
+
+
+\end{frame}
+
+
+
+\begin{frame}{Collect all estimates}
+\begin{figure}
+	\centering
+		\includegraphics[width=0.9\textwidth]{pref.png}
+\end{figure}
+\end{frame}
+
+
+\begin{frame}{Standard errors}
+\begin{itemize}
+	\item Absolutely crucial for meta-analysis
+	\item If not reported directly, can be computed from t-statistics or p-values
+	\item Last resort: approximation based on within-study variation (Matousek et al.\, 2022)
+	\item Interactions, transformations: delta method
+\end{itemize}
+\end{frame}
+
+\begin{frame}{Delta method}
+Based on Taylor series expansion. Basic formula:
+
+\[
+\text{Var}(Y) = \text{Var}(f(X)) \approx [f'(\mu_X)]^2 \text{Var}(X).
+\]
+
+% So, if $Y$ is any function of a random variable $X$, we need only calculate the variance of $X$ and the first derivative of the function to approximate the variance of $Y$.
+
+\bigskip
+
+\underline{\text{Example:}} \, \text{Suppose } $Y = X^2$. \, \text{Then } $f(x) = x^2$ \, \text{and } $f'(x) = 2x$, \, \text{so that:}
+\[
+\text{Var}(Y) \approx [2\mu_X]^2 \text{Var}(X) = 4\mu_X^2\sigma_X^2.
+\]
+
+\underline{\text{Example:}} \, \text{Suppose } $Y = \frac{1}{X}$. \, \text{Then } $f(x) = \frac{1}{x}$ \, \text{and } $f'(x) = -\frac{1}{x^2}$, \, \text{so that:}
+\[
+\text{Var}(Y) \approx \left[\frac{-1}{\mu_X^2}\right]^2 \text{Var}(X) = \frac{\sigma_X^2}{\mu_X^4}.
+\]
+
+
+
+\end{frame}
+
+
+\begin{frame}{Graphical estimates, measurement error}
+\begin{figure}
+	\centering
+		\includegraphics[width=1\textwidth]{measure.png}
+\end{figure}
+\end{frame}
+
+
+\begin{frame}{Outliers}
+\begin{figure}
+	\centering
+		\includegraphics[width=0.9\textwidth]{outlier.png}
+\end{figure}
+\end{frame}
+
+
+\begin{frame}{What to do with outliers?}
+\begin{itemize}
+	\item No consensus
+	\item Approach 1: omit very large effects (and standard errors), e.g.\ more than 3 standard deviations away from the mean
+	\item Approach 2: run robust meta-regression or use tools for outlier detection in regression
+	\item Approach 3: use winsorizing (my personal preference)
+	\item Always report robustness checks
+\end{itemize}
+\end{frame}
+
+
+\begin{frame}{Winsorization}
+\begin{figure}
+	\centering
+		\includegraphics[width=0.65\textwidth]{winsor.png}
+\end{figure}
+\end{frame}
+
+
+
+\begin{frame}{Reflecting context: the effect of beauty on success}
+\begin{figure}
+	\centering
+		\includegraphics[width=1\textwidth]{data.png}
+\end{figure}
+\end{frame}
+
+\begin{frame}{Measurement}
+\begin{figure}
+	\centering
+		\includegraphics[width=1\textwidth]{measure1.png}
+\end{figure}
+\end{frame}
+
+
+\begin{frame}{Data, estimation, publication}
+\begin{figure}
+	\centering
+		\includegraphics[width=1\textwidth]{est.png}
+\end{figure}
+\end{frame}
+
+
+\begin{frame}{Artificial intelligence and context}
+\begin{itemize}
+	\item Can be useful for identifying key aspects in which studies vary
+	\item Do not trust AI replies too much, but you can use it at various stages to generate ideas about potential explanatory variables
+	\item You can use it to check whether you missed an important variable
+\end{itemize}
+\end{frame}
+
+
+\begin{frame}{Value added}
+\begin{itemize}
+	\item Meta-analysis can be used to test hypotheses that primary studies cannot investigate
+	\item Example: the effect of daylight saving time on energy consumption
+	\item Individual studies have data for individual countries (or provinces)
+	\item In meta-analysis, we have data for dozens of countries
+	\item We can investigate the sources of cross-country differences
+\end{itemize}
+\end{frame}
+
+
+\begin{frame}{DST savings and latitude}
+\begin{figure}
+	\centering
+		\includegraphics[width=1\textwidth]{bma_uip.pdf}
+\end{figure}
+\end{frame}
+
+
+\begin{frame}{House prices and monetary policy}
+\begin{figure}
+	\centering
+		\includegraphics[width=0.8\textwidth]{bma.pdf}
+\end{figure}
+\end{frame}
+
+
+
+\end{document}
+
+

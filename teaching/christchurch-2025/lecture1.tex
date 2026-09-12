@@ -1,0 +1,324 @@
+% $Header: /home/vedranm/bitbucket/beamer/solutions/conference-talks/conference-ornate-20min.en.tex,v 90e850259b8b 2007/01/28 20:48:30 tantau $
+
+\documentclass{beamer} %[compress]
+% alternatively add handout or draft option
+
+%\mode<handout>%{\setbeamercolor{background canvas}{bg=black!5}}
+%\usepackage{pgfpages}
+%\pgfpagesuselayout{4 on 1}[a4paper,border shrink=5mm,landscape]
+% For handout printing, 4 slides on 1 page
+
+\mode<presentation>
+{
+  \usetheme{Pittsburgh} % plain template Pittsburgh
+  \useoutertheme{infolines} % bottom (author, title, place)
+  \useoutertheme[subsection=false]{miniframes} % top (sections, frames)
+  \usecolortheme{beaver} %blue color whale
+	\setbeamertemplate{frametitle}[default][right] % frame titles on the right
+  \setbeamercovered{transparent}
+  % or whatever (possibly just delete it)
+}
+
+\setbeamersize{text margin left=1cm, text margin right=1cm}
+%\setbeamertemplate{navigation symbols}{}
+\usepackage[english]{babel}
+\usepackage{booktabs}
+\usepackage{comment}
+% or whatever
+
+\usepackage[cp1250]{inputenc}
+% or whatever
+\usepackage{subfigure} %subfigures
+
+\usepackage{times}
+%\usepackage{breqn}
+\usepackage{amsmath}
+\usepackage[T1]{fontenc}
+\def\sym#1{\ifmmode^{#1}\else\(^{#1}\)\fi} %shortcut for Stata tables
+% Or whatever. Note that the encoding and the font should match. If T1
+% does not look nice, try deleting the line with the fontenc.
+
+%\logo{\includegraphics[height=0.5cm]{logo.jpg}} % logo on every page
+
+
+
+\title[Lecture 1: Introduction] % (optional, use only with long paper titles)
+{Lecture 1: Introduction to Meta-Analysis}
+
+\author[T.\ Havranek] % (optional, use only with lots of authors)
+{ Tomas Havranek
+}
+% - Give the names in the same order as the appear in the paper.
+% - Use the \inst{?} command only if the authors have different
+%   affiliation.
+
+\institute[Prague] % (optional, but mostly needed)
+{
+  	Charles University, CEPR, METRICS
+
+  %\inst%
+  %Economic Research Department\\
+  %Czech National Bank
+      %\inst{1}%
+  %Research Department\\
+  %Czech National Bank
+  %\and
+  %\inst{2}%
+  %Institute of Economic Studies\\
+  %Charles University, Prague
+  
+%\pgfdeclareimage[height=1cm]{logo}{logo.jpg} % logo only on title page
+%\pgfuseimage{logo}
+}% - Use the \inst command only if there are several affiliations.
+% - Keep it simple, no one is interested in your street address.
+
+\date[Meta in Econ and Finance] % (optional, should be abbreviation of conference name)
+{Research Synthesis in Economics and Finance, \\ University of Canterbury\\[2ex]
+  February 17, 2025
+}%\\[4mm]% - Either use conference name or its abbreviation.
+% - Not really informative to the audience, more for people (including
+%   yourself) who are reading the slides online
+
+
+%\subject{Intertemporal Substitution}
+
+\begin{comment}
+\AtBeginSection[]
+{
+  \begin{frame}<beamer>{Outline}
+    \tableofcontents[currentsection]%,currentsubsection]
+  \end{frame}
+}
+\end{comment}
+
+\begin{document}
+
+\begin{frame}
+  \titlepage
+\end{frame}
+
+\begin{comment}
+
+\begin{frame}{Outline}
+  \tableofcontents
+  % You might wish to add the option [pausesections]
+\end{frame}
+
+\end{comment}
+
+%\section{Summary}
+%\subsection{}
+
+%\section{EIS}
+%\subsection{}
+
+
+\begin{frame}{Meta important for research, policy, practice}
+\textbf{Research experience:}
+\begin{itemize}
+	\item Professor at Charles University, Prague
+	\item Affiliate at the Meta-Research Innovation Center, Stanford
+	\item Panel member at ERC (European Research Council) Advanced
+\end{itemize}
+
+\bigskip
+
+\textbf{Policy experience:}
+
+\begin{itemize}
+	\item Former Advisor to the Board, Czech National Bank
+	\item Former member of the Czech National Economic Council
+	\item Affiliate at the Centre for Economic Policy Research, London
+\end{itemize}
+
+\bigskip
+
+\href{https://tomashavranek.cz/}{\textbf{tomashavranek.cz}}
+\end{frame}
+
+
+
+\begin{frame}{What happens if the government spends more?}
+Labor supply elasticity is key (but how to calibrate it?):
+\begin{figure}
+	\centering
+		\includegraphics[width=1.00\textwidth]{G_shock_Frisch75.pdf}
+\end{figure}
+\end{frame}
+
+
+
+\begin{frame}{Meta in monetary policy making: DSGE models}
+
+DSGE = dynamic stochastic general equilibrium
+
+\bigskip
+
+\begin{enumerate}
+	\item The dominant policy analysis and forecasting tool
+	\item Used by central banks and ministries of finance
+	\item Micro-based with ``deep'' parameters
+	\item Immune to Lucas critique (?)
+	\item Discipline over intuition
+	\item Hard to understand for policy makers
+\end{enumerate}
+\end{frame}
+
+\begin{frame}{Dozens or hundreds of equations}
+\vspace{-0.7cm}
+\begin{figure}[htbp]
+	\begin{center}
+	\subfiguretopcaptrue
+	\subfigure{\includegraphics[width=0.495\textwidth]{tonner1}}
+	\subfigure{\includegraphics[width=0.45\textwidth]{tonner2}}
+		\end{center}
+\end{figure}
+\end{frame}
+
+\begin{frame}{Psychohistory accomplished? Civ VII?}
+\begin{figure}[htbp]
+	\begin{center}
+\includegraphics[width=1\textwidth]{foundation2.jpg}
+		\end{center}
+\end{figure}
+\end{frame}
+
+\begin{frame}{Main output: fan charts}
+\begin{figure}[htbp]
+	\begin{center}
+\includegraphics[width=1.03\textwidth]{fan2}
+		\end{center}
+\end{figure}
+\end{frame}
+
+\begin{frame}{Calibration uncertainty: meta needed!}
+\vspace{-0.4cm}
+\begin{figure}[htbp]
+	\begin{center}
+	\subfiguretopcaptrue
+	\subfigure{\includegraphics[width=0.45\textwidth]{dsge1}}
+	\subfigure{\includegraphics[width=0.45\textwidth]{dsge2}}
+		\end{center}
+\end{figure}
+\end{frame}
+
+\begin{frame}{What happens if we change one parameter?}
+\begin{figure}[htbp]
+	\begin{center}
+\includegraphics[width=0.95\textwidth]{ir_i}
+		\end{center}
+\end{figure}
+\end{frame}
+
+\begin{frame}{Coincidence? Hardly. Meta-analysis essential}
+\begin{figure}[htbp]
+	\begin{center}
+\includegraphics[width=1\textwidth]{ir}
+		\end{center}
+\end{figure}
+\end{frame}
+
+
+
+\begin{frame}{Estimates of the labor supply elasticity vary}
+\begin{figure}
+	\centering
+		\includegraphics[width=0.53\textwidth]{_box2.pdf}
+\end{figure}
+\end{frame}
+
+
+\begin{frame}{Values around 0.4--0.5 used for calibration (CBO)}
+\begin{figure}
+	\centering
+		\includegraphics[width=0.9\textwidth]{_hist_frisch.pdf}
+\end{figure}
+\end{frame}
+
+
+
+\begin{frame}{Bias: some estimates less likely to be published}
+\begin{figure}
+	\centering
+		\includegraphics[width=0.9\textwidth]{_caliper2.pdf}
+\end{figure}
+\end{frame}
+
+
+
+
+\begin{frame}{Context: different situations yield different estimates}
+\begin{figure}
+	\centering
+		\includegraphics[width=0.65\textwidth]{corr_comb2.pdf}
+\end{figure}
+\end{frame}
+
+
+\begin{frame}{Implied elasticity: taking bias and context into account}
+
+Let's construct a hypothetical study that uses all information reported in the literature but puts more weight on selected aspects (high precision, quasi-experimental setup, etc.)
+
+\vspace{0.6cm}
+
+\begin{figure}
+	\centering
+		\includegraphics[width=0.9\textwidth]{best.pdf}
+\end{figure}
+\end{frame}
+
+
+
+\begin{frame}{Course}
+\begin{enumerate}
+	\item Intro
+	\item Applied examples
+	\item Literature search
+	\item Data collection
+	\item Basic meta models
+	\item Replications (student presentations)
+	\item Publication bias
+	\item P-hacking
+	\item Heterogeneity
+	\item Meta-research
+	\item Limitations
+	\item Applications (student presentations)
+\end{enumerate}
+\end{frame}
+
+
+
+\begin{frame}{Grading}
+\begin{itemize}
+	\item Applied meta-analysis (40\%)
+	\item Replication (20\%)
+	\item Discussion (20\%)
+	\item Activity (10\%)
+	\item Attendance (10\%)
+\end{itemize}
+\end{frame}
+
+
+
+
+\begin{frame}{Guidelines}
+\begin{figure}
+	\centering
+		\includegraphics[width=0.9\textwidth]{guide.png}
+\end{figure}
+\end{frame}
+
+
+
+\begin{frame}{Resources}
+  \centering
+\href{https://meta-analysis.cz/}{\textbf{meta-analysis.cz}}
+\end{frame}
+
+
+
+
+
+\end{document}
+
+

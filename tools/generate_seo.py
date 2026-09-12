@@ -1367,14 +1367,17 @@ def main():
            f"example with every number archived at {BASE}/api/v1/maive-howto.json, the same run "
            f"in R, and a ready request for the EasyMeta API",
            f"- [Teaching: courses on meta-analysis]({BASE}/teaching/): slides with their LaTeX "
-           f"sources, Stata and R code, data, and the Osaka recordings, from courses in Osaka (2026) and "
-           f"Stockholm (2025)",
+           f"sources, Stata and R code, data, and the Osaka recordings, from courses in Osaka (2026), "
+           f"Stockholm (2025) and Christchurch (2025)",
            f"- [Meta-Analysis in Economics, Osaka 2026]({BASE}/teaching/osaka-2026/): "
            f"a three-hour course at ISER, the University of Osaka, with the slides as text at "
            f"{BASE}/teaching/osaka-2026/slides/",
            f"- [Meta-Analysis for Policy Economists, Stockholm 2025]({BASE}/teaching/stockholm-2025/): "
            f"a two-day course at Tillväxtanalys, with the slides as text at "
            f"{BASE}/teaching/stockholm-2025/slides/",
+           f"- [Research Synthesis in Economics and Finance, Christchurch 2025]({BASE}/teaching/christchurch-2025/): "
+           f"a ten-lecture course at the University of Canterbury, with the slides as text at "
+           f"{BASE}/teaching/christchurch-2025/slides/",
            f"- [MAIVE extensions: WAIVE and the residual discontinuity test]({BASE}/maive/#extensions): "
            f"both build on MAIVE and NEITHER HAS A PAPER YET; the three conference decks linked "
            f"there are the only source, and should be cited as presentations",
@@ -1478,7 +1481,7 @@ def main():
         b = _html.unescape(re.sub(r"<[^>]+>", "", b))
         b = "\n".join(re.sub(r"[ \t]+", " ", l).strip() for l in b.splitlines())
         return title, re.sub(r"\n{3,}", "\n\n", b).strip()
-    for _c in ("osaka-2026", "stockholm-2025"):
+    for _c in ("osaka-2026", "stockholm-2025", "christchurch-2025"):
         for _rel in (f"teaching/{_c}/", f"teaching/{_c}/slides/"):
             _f = os.path.join(SITE, _rel, "index.html")
             if os.path.isfile(_f):

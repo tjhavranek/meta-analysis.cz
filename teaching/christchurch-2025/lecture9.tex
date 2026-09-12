@@ -1,0 +1,387 @@
+% $Header: /home/vedranm/bitbucket/beamer/solutions/conference-talks/conference-ornate-20min.en.tex,v 90e850259b8b 2007/01/28 20:48:30 tantau $
+
+\documentclass{beamer} %[compress]
+% alternatively add handout or draft option
+
+%\mode<handout>%{\setbeamercolor{background canvas}{bg=black!5}}
+%\usepackage{pgfpages}
+%\pgfpagesuselayout{4 on 1}[a4paper,border shrink=5mm,landscape]
+% For handout printing, 4 slides on 1 page
+
+\mode<presentation>
+{
+  \usetheme{Pittsburgh} % plain template Pittsburgh
+  \useoutertheme{infolines} % bottom (author, title, place)
+  \useoutertheme[subsection=false]{miniframes} % top (sections, frames)
+  \usecolortheme{beaver} %blue color whale
+	\setbeamertemplate{frametitle}[default][right] % frame titles on the right
+  \setbeamercovered{transparent}
+  % or whatever (possibly just delete it)
+}
+
+\setbeamersize{text margin left=1cm, text margin right=1cm}
+%\setbeamertemplate{navigation symbols}{}
+\usepackage[english]{babel}
+\usepackage{booktabs}
+\usepackage{comment}
+% or whatever
+
+\usepackage[cp1250]{inputenc}
+% or whatever
+\usepackage{subfigure} %subfigures
+
+\usepackage{times}
+\usepackage{tikz}
+%\usepackage{breqn}
+\usepackage{amsmath}
+\usepackage[T1]{fontenc}
+\def\sym#1{\ifmmode^{#1}\else\(^{#1}\)\fi} %shortcut for Stata tables
+% Or whatever. Note that the encoding and the font should match. If T1
+% does not look nice, try deleting the line with the fontenc.
+
+%\logo{\includegraphics[height=0.5cm]{logo.jpg}} % logo on every page
+
+
+
+\title[Lecture 9: Heterogeneity] % (optional, use only with long paper titles)
+{Lecture 9: Heterogeneity}
+
+\author[T.\ Havranek] % (optional, use only with lots of authors)
+{ Tomas Havranek
+}
+% - Give the names in the same order as the appear in the paper.
+% - Use the \inst{?} command only if the authors have different
+%   affiliation.
+
+\institute[Prague] % (optional, but mostly needed)
+{
+  	Charles University, CEPR, METRICS
+
+  %\inst%
+  %Economic Research Department\\
+  %Czech National Bank
+      %\inst{1}%
+  %Research Department\\
+  %Czech National Bank
+  %\and
+  %\inst{2}%
+  %Institute of Economic Studies\\
+  %Charles University, Prague
+  
+%\pgfdeclareimage[height=1cm]{logo}{logo.jpg} % logo only on title page
+%\pgfuseimage{logo}
+}% - Use the \inst command only if there are several affiliations.
+% - Keep it simple, no one is interested in your street address.
+
+\date[Meta in Econ and Finance] % (optional, should be abbreviation of conference name)
+{Research Synthesis in Economics and Finance, \\ University of Canterbury\\[2ex]
+  March 17, 2025
+}%\\[4mm]% - Either use conference name or its abbreviation.
+% - Not really informative to the audience, more for people (including
+%   yourself) who are reading the slides online
+
+
+%\subject{Intertemporal Substitution}
+
+\begin{comment}
+\AtBeginSection[]
+{
+  \begin{frame}<beamer>{Outline}
+    \tableofcontents[currentsection]%,currentsubsection]
+  \end{frame}
+}
+\end{comment}
+
+\begin{document}
+
+\begin{frame}
+  \titlepage
+\end{frame}
+
+\begin{comment}
+
+\begin{frame}{Outline}
+  \tableofcontents
+  % You might wish to add the option [pausesections]
+\end{frame}
+
+\end{comment}
+
+%\section{Summary}
+%\subsection{}
+
+%\section{EIS}
+%\subsection{}
+
+
+\begin{frame}{Identification of publication bias}
+
+\bigskip
+
+PEESE:
+%\smallskip
+		   \begin{equation*}
+    \hat{E_i} = \tikz[baseline=(E.base)]{\node[draw,circle,inner sep=1pt] (E) {$E_0$};} + \beta SE(\hat{E})^2_i + u_i,
+    \end{equation*}
+    \begin{tikzpicture}[overlay, remember picture]
+        % Arrow from E0 to SE
+        \draw[->,thick,bend right=50] (7.3,1.2) to node[above] {\footnotesize{Methods or p-hacking}} (3.32,1.2);
+        % Arrow from SE to u
+        \draw[->,thick,bend left=50] (7.3,0.5) to node[below] {\footnotesize{Methods or p-hacking}} (5.9,0.5);
+    \end{tikzpicture}
+		
+%ignoring PET and weights for simplicity.
+
+\smallskip
+\smallskip
+\smallskip
+\smallskip
+
+\bigskip
+
+
+corr($SE,u) \neq 0$ $\Rightarrow$ $\hat{\beta}$ and $\hat{E_0}$ biased. 
+
+
+\bigskip
+\smallskip
+\smallskip
+\smallskip
+
+%\alert{Natural solution}: ue N as an insturment for $SE(\hat{E})^2_i$ $\rightarrow$ MAIVE. %corr.\ with $SE(\hat{E})^2_i$, not with methods or p-hacking
+
+   \fbox{\parbox{0.99\linewidth}{\alert{Natural solution:} N instrumenting $SE(\hat{E})_i^2 \rightarrow$ MAIVE.}}
+	
+	\bigskip
+	
+	Or add covariates!
+
+\end{frame}
+
+
+
+
+\begin{frame}{Classical heterogeneity measure}
+ 
+    
+    \textbf{Common measure:} estimate the relative heterogeneity of underlying effects \textit{(Higgins and Thompson, 2002)}
+    
+    \[
+    I^2 \equiv \frac{\text{underlying variance of effects}}{\text{observed variance of estimates}} = \frac{\tau^2}{\tau^2 + \bar{v}}
+    \]
+    
+    \begin{itemize}
+        \item $I^2 = 0.75 \sim 1.0$ \dots \textit{``considerable heterogeneity'' in medicine (Cochrane Review Guideline)}
+        \item $I^2 \simeq 0.9$ \dots common in economics meta-analyses (e.g., \textit{Vivalt, 2021})
+    \end{itemize}
+    
+    \bigskip
+    
+    \textbf{Unresolved concern:}
+    \begin{itemize}
+        \item no universally agreed criteria for ``too much'' heterogeneity
+        \item undesirable pattern: with more precise studies, higher $I^2$
+    \end{itemize}
+\end{frame}
+
+
+
+
+\begin{frame}{Guiding example: beauty and success}
+ \begin{figure}
+	 \centering
+		 \includegraphics[width=0.9\textwidth]{1.png}
+ \end{figure}
+\end{frame}
+
+\begin{frame}{Heterogeneity both within and across}
+ \begin{figure}
+	 \centering
+		 \includegraphics[width=1.00\textwidth]{2.png}
+ \end{figure}
+\end{frame}
+
+\begin{frame}{Wide dispersion}
+ \begin{figure}
+	 \centering
+		 \includegraphics[width=0.9\textwidth]{3.png}
+ \end{figure}
+\end{frame}
+
+\begin{frame}{Measurement of beauty}
+ \begin{figure}
+	 \centering
+		 \includegraphics[width=1.00\textwidth]{4.png}
+ \end{figure}
+\end{frame}
+
+\begin{frame}{Measurement of success}
+ \begin{figure}
+	 \centering
+		 \includegraphics[width=1.00\textwidth]{5.png}
+ \end{figure}
+\end{frame}
+
+\begin{frame}{Data characteristics}
+ \begin{figure}
+	 \centering
+		 \includegraphics[width=1.00\textwidth]{6.png}
+ \end{figure}
+\end{frame}
+
+\begin{frame}{Estimation technique}
+ \begin{figure}
+	 \centering
+		 \includegraphics[width=1.00\textwidth]{7.png}
+ \end{figure}
+\end{frame}
+
+\begin{frame}{Publication characteristics}
+ \begin{figure}
+	 \centering
+		 \includegraphics[width=1.00\textwidth]{8.png}
+ \end{figure}
+\end{frame}
+
+\begin{frame}{Beauty measurement doesn't matter}
+ \begin{figure}
+	 \centering
+		 \includegraphics[width=0.8\textwidth]{9.png}
+ \end{figure}
+\end{frame}
+
+\begin{frame}{Success measurement doesn't matter}
+ \begin{figure}
+	 \centering
+		 \includegraphics[width=0.8\textwidth]{10.png}
+ \end{figure}
+\end{frame}
+
+\begin{frame}{Method doesn't matter}
+ \begin{figure}
+	 \centering
+		 \includegraphics[width=0.8\textwidth]{11.png}
+ \end{figure}
+\end{frame}
+
+
+\begin{frame}{Ability control matters}
+ \begin{figure}
+	 \centering
+		 \includegraphics[width=0.8\textwidth]{12.png}
+ \end{figure}
+\end{frame}
+
+
+\begin{frame}{Occupation matters}
+ \begin{figure}
+	 \centering
+		 \includegraphics[width=0.8\textwidth]{13.png}
+ \end{figure}
+\end{frame}
+
+\begin{frame}{Sex workers stand apart}
+ \begin{figure}
+	 \centering
+		 \includegraphics[width=0.9\textwidth]{14.png}
+ \end{figure}
+\end{frame}
+
+
+\begin{frame}{Option 1: subsamples}
+ \begin{figure}
+	 \centering
+		 \includegraphics[width=1.00\textwidth]{15.png}
+ \end{figure}
+\end{frame}
+
+\begin{frame}{Option 1: subsamples}
+ \begin{figure}
+	 \centering
+		 \includegraphics[width=1.00\textwidth]{16.png}
+ \end{figure}
+\end{frame}
+
+\begin{frame}{Option 1: subsamples}
+ \begin{figure}
+	 \centering
+		 \includegraphics[width=1.00\textwidth]{17.png}
+ \end{figure}
+\end{frame}
+
+
+\begin{frame}{Option 1: subsamples}
+ \begin{figure}
+	 \centering
+		 \includegraphics[width=1.00\textwidth]{18.png}
+ \end{figure}
+\end{frame}
+
+
+\begin{frame}{Option 2: Bayesian model averaging}
+\begin{itemize}
+	\item We want to regress estimates of the beauty effect on variables reflecting heterogeneity
+	\item But too many variables; model uncertainty
+	\item Solution: run regressions with different combinations of the variables
+	\item Give more weight to those that fit the data well and are parsimonious
+\end{itemize}
+\end{frame}
+
+
+\begin{frame}{Option 2: Bayesian model averaging}
+\begin{itemize}
+\item Model averaging can be frequentist but computationally difficult
+\item Intuition: run different combinations and weight by adjusted $R^2$ or information criteria
+\item In the Bayesian setting we can use the MCMC algorithm
+\item G-prior: all coefficients are zero. Weight? UIP = the prior has the same weight as one observation
+\item Model prior: uniform = all models have the same weight
+\item Dilution prior: models with collinearity get less weight
+\end{itemize}
+\end{frame}
+
+
+
+\begin{frame}{Model inclusion in BMA}
+ \begin{figure}
+	 \centering
+		 \includegraphics[width=0.7\textwidth]{19.png}
+ \end{figure}
+\end{frame}
+
+\begin{frame}{Posterior densities}
+ \begin{figure}
+	 \centering
+		 \includegraphics[width=0.95\textwidth]{posterior.png}
+ \end{figure}
+\end{frame}
+
+
+\begin{frame}{Regression results}
+ \begin{figure}
+	 \centering
+		 \includegraphics[width=0.7\textwidth]{20.png}
+ \end{figure}
+\end{frame}
+
+
+\begin{frame}{Best practice (implied estimate)}
+\begin{itemize}
+\item From BMA results we know how estimates depend on study design
+\item Some study designs are better: identification, data, generally quality
+\item Select best practice based on the literature (quasi-experimental studies, etc.)
+\item Compute fitted values and confidence intervals (lincom command in Stata)
+\end{itemize}
+\end{frame}
+
+
+\begin{frame}{Best practice (class size effect)}
+ \begin{figure}
+	 \centering
+		 \includegraphics[width=0.8\textwidth]{21.png}
+ \end{figure}
+\end{frame}
+
+
+\end{document}
+
+

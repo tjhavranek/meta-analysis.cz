@@ -1,0 +1,373 @@
+% $Header: /home/vedranm/bitbucket/beamer/solutions/conference-talks/conference-ornate-20min.en.tex,v 90e850259b8b 2007/01/28 20:48:30 tantau $
+
+\documentclass{beamer} %[compress]
+% alternatively add handout or draft option
+
+%\mode<handout>%{\setbeamercolor{background canvas}{bg=black!5}}
+%\usepackage{pgfpages}
+%\pgfpagesuselayout{4 on 1}[a4paper,border shrink=5mm,landscape]
+% For handout printing, 4 slides on 1 page
+
+\mode<presentation>
+{
+  \usetheme{Pittsburgh} % plain template Pittsburgh
+  \useoutertheme{infolines} % bottom (author, title, place)
+  \useoutertheme[subsection=false]{miniframes} % top (sections, frames)
+  \usecolortheme{beaver} %blue color whale
+	\setbeamertemplate{frametitle}[default][right] % frame titles on the right
+  \setbeamercovered{transparent}
+  % or whatever (possibly just delete it)
+}
+
+\setbeamersize{text margin left=1cm, text margin right=1cm}
+%\setbeamertemplate{navigation symbols}{}
+\usepackage[english]{babel}
+\usepackage{booktabs}
+\usepackage{comment}
+% or whatever
+
+\usepackage[cp1250]{inputenc}
+% or whatever
+\usepackage{subfigure} %subfigures
+
+\usepackage{times}
+%\usepackage{breqn}
+\usepackage{amsmath}
+\usepackage[T1]{fontenc}
+\def\sym#1{\ifmmode^{#1}\else\(^{#1}\)\fi} %shortcut for Stata tables
+% Or whatever. Note that the encoding and the font should match. If T1
+% does not look nice, try deleting the line with the fontenc.
+
+%\logo{\includegraphics[height=0.5cm]{logo.jpg}} % logo on every page
+
+
+
+\title[Lecture 5: Basic Tools] % (optional, use only with long paper titles)
+{Lecture 5: Basic Meta-Analysis Tools}
+
+\author[T.\ Havranek] % (optional, use only with lots of authors)
+{ Tomas Havranek
+}
+% - Give the names in the same order as the appear in the paper.
+% - Use the \inst{?} command only if the authors have different
+%   affiliation.
+
+\institute[Prague] % (optional, but mostly needed)
+{
+  	Charles University, CEPR, METRICS
+
+  %\inst%
+  %Economic Research Department\\
+  %Czech National Bank
+      %\inst{1}%
+  %Research Department\\
+  %Czech National Bank
+  %\and
+  %\inst{2}%
+  %Institute of Economic Studies\\
+  %Charles University, Prague
+  
+%\pgfdeclareimage[height=1cm]{logo}{logo.jpg} % logo only on title page
+%\pgfuseimage{logo}
+}% - Use the \inst command only if there are several affiliations.
+% - Keep it simple, no one is interested in your street address.
+
+\date[Meta in Econ and Finance] % (optional, should be abbreviation of conference name)
+{Research Synthesis in Economics and Finance, \\ University of Canterbury\\[2ex]
+  Term 1, 2025
+}%\\[4mm]% - Either use conference name or its abbreviation.
+% - Not really informative to the audience, more for people (including
+%   yourself) who are reading the slides online
+
+
+%\subject{Intertemporal Substitution}
+
+\begin{comment}
+\AtBeginSection[]
+{
+  \begin{frame}<beamer>{Outline}
+    \tableofcontents[currentsection]%,currentsubsection]
+  \end{frame}
+}
+\end{comment}
+
+\begin{document}
+
+\begin{frame}
+  \titlepage
+\end{frame}
+
+\begin{comment}
+
+\begin{frame}{Outline}
+  \tableofcontents
+  % You might wish to add the option [pausesections]
+\end{frame}
+
+\end{comment}
+
+%\section{Summary}
+%\subsection{}
+
+%\section{EIS}
+%\subsection{}
+
+
+\begin{frame}{Mean, median, something else?}
+\begin{itemize}
+	\item Simple mean of reported estimates: often good starting point
+	\item But inefficient, affected by outliers, publication bias
+	\item Median: surprisingly robust to most problems in meta-analysis
+	\item Classical meta-analysis approach: use inverse variance as the weight
+\end{itemize}
+\end{frame}
+
+
+\begin{frame}{More precision -> more weight}
+\begin{figure}
+	\centering
+		\includegraphics[width=1.00\textwidth]{1.pdf}
+\end{figure}
+\end{frame}
+
+
+\begin{frame}{More precision -> more weight}
+\begin{figure}
+	\centering
+		\includegraphics[width=1.00\textwidth]{2.pdf}
+\end{figure}
+\end{frame}
+
+
+\begin{frame}{More precision -> more weight}
+\begin{figure}
+	\centering
+		\includegraphics[width=1.00\textwidth]{3.pdf}
+\end{figure}
+\end{frame}
+
+
+\begin{frame}{Fixed effect}
+\begin{figure}
+	\centering
+		\includegraphics[width=0.9\textwidth]{fixed2.jpg}
+\end{figure}
+\end{frame}
+
+
+\begin{frame}{Fixed effect}
+    \begin{align*}
+        Y_i &= \theta + \varepsilon_i, \tag{1} \\
+        V_i &= \frac{\sigma^2}{n}, \tag{2} \\
+        W_i &= \frac{1}{V_i}, \tag{3} \\
+        M &= \frac{\sum_{i=1}^k W_i Y_i}{\sum_{i=1}^k W_i}, \tag{4} \\
+        V_M &= \frac{1}{\sum_{i=1}^k W_i}. \tag{5}
+    \end{align*}
+		\end{frame}
+		
+		
+		
+		
+		
+
+
+% Slide 1: Point Estimate
+\begin{frame}{FE vs. UWLS: point estimate}
+
+\begin{itemize}
+    \item Both methods yield the same point estimate:
+    \[
+    \hat{\theta} = \frac{\sum w_i \theta_i}{\sum w_i}, \quad w_i = \frac{1}{\sigma_i^2}
+    \]
+    \item Key difference: Variance estimation.
+\end{itemize}
+
+\bigskip
+
+\begin{table}[]
+    \centering
+    \begin{tabular}{lc}
+        \toprule
+        \textbf{Method} & \textbf{Point Estimate} \\
+        \midrule
+        Fixed-Effect (FE) & \( \hat{\theta} = \frac{\sum w_i \theta_i}{\sum w_i} \) \\
+        UWLS & \( \hat{\theta} = \frac{\sum w_i \theta_i}{\sum w_i} \) \\
+        \bottomrule
+    \end{tabular}
+\end{table}
+
+\bigskip
+
+\textbf{Same estimate, different variance!}
+
+\end{frame}
+
+% Slide 2: Variance Comparison
+\begin{frame}{FE vs. UWLS: variance}
+
+\renewcommand{\arraystretch}{1.2}  % Increases row spacing for readability
+\begin{table}[]
+    \centering
+    \begin{tabular}{p{3cm} p{3cm} p{3cm}}  % Adjust column widths
+        \toprule
+        \textbf{Feature} & \textbf{Fixed-Effect (FE)} & \textbf{UWLS} \\
+        \midrule
+        Assumption  & Identical \(\theta\) & Allows heterogeneity \\
+        Variance formula  & \( \frac{1}{\sum w_i} \) & \( \frac{\sum w_i (\theta_i - \hat{\theta})^2}{\sum w_i} \) \\
+        Variance components & Within-study only & Within + between-study \\
+        Robustness & Sensitive to misspecification & More robust \\
+        \bottomrule
+    \end{tabular}
+\end{table}
+
+\bigskip
+
+\textbf{FE underestimates variance if heterogeneity exists!}
+
+\end{frame}
+
+		
+
+
+\begin{frame}{Fixed effect}
+\begin{figure}
+	\centering
+		\includegraphics[width=0.9\textwidth]{fixed.jpg}
+\end{figure}
+\end{frame}
+
+
+\begin{frame}{Random effects}
+\begin{figure}
+	\centering
+		\includegraphics[width=0.9\textwidth]{random2.jpg}
+\end{figure}
+\end{frame}
+
+
+\begin{frame}{Random effects}
+    \begin{align*}
+        Y_i &= \mu + \xi_i + \varepsilon_i, \tag{1} \\
+        V_i &= \frac{\sigma^2}{n}, \tag{2} \\
+        W_i &=  \frac{1}{V_i + T^2}, \tag{3} \\
+        M &= \frac{\sum_{i=1}^k W_i Y_i}{\sum_{i=1}^k W_i}, \tag{4} \\
+        V_M &= \frac{1}{\sum_{i=1}^k W_i}. \tag{5}
+    \end{align*}
+		\end{frame}
+		
+		
+		
+		\begin{frame}{Estimating \(\tau^2\) in random-effects model}
+
+\textbf{Between-study variance} \(\tau^2\) accounts for heterogeneity across studies. Common estimators:
+\smallskip
+\begin{itemize}
+    \item \textbf{DerSimonian-Laird (DL)}:  
+    \[
+    \tau^2_{DL} = \frac{Q - (k - 1)}{C}, \quad C = \sum w_i - \frac{\sum w_i^2}{\sum w_i}
+    \]
+    - Simple, but underestimates \(\tau^2\) when \( k \) is small.
+    
+    \item \textbf{Restricted Maximum Likelihood (REML)}:  
+    \[
+    \max_{\tau^2} \sum \log(w_i^* + \tau^2) + \sum \frac{(y_i - \hat{\theta})^2}{w_i^* + \tau^2}
+    \]
+    - More accurate, default in software.
+\end{itemize}
+\smallskip
+\textbf{Rule of thumb:} Use REML unless simplicity is needed!
+
+\end{frame}
+
+		
+		
+		
+\begin{frame}{Random effects}
+\begin{figure}
+	\centering
+		\includegraphics[width=0.9\textwidth]{random.jpg}
+\end{figure}
+\end{frame}
+
+\begin{frame}{Forest plot}
+\begin{figure}
+	\centering
+		\includegraphics[width=0.9\textwidth]{forest1.png}
+\end{figure}
+\end{frame}
+
+
+\begin{frame}{Forest plot}
+\begin{figure}
+	\centering
+		\includegraphics[width=0.45\textwidth]{forest.pdf}
+\end{figure}
+\end{frame}
+
+\begin{frame}{Box plot}
+\begin{figure}
+	\centering
+		\includegraphics[width=0.45\textwidth]{box1.pdf}
+\end{figure}
+\end{frame}
+
+\begin{frame}{Box plot}
+\begin{figure}
+	\centering
+		\includegraphics[width=0.65\textwidth]{box2.pdf}
+\end{figure}
+\end{frame}
+
+\begin{frame}{Box plot}
+\begin{figure}
+	\centering
+		\includegraphics[width=0.95\textwidth]{box3.pdf}
+\end{figure}
+\end{frame}
+
+\begin{frame}{Histogram}
+\begin{figure}
+	\centering
+		\includegraphics[width=0.9\textwidth]{pattern4.pdf}
+\end{figure}
+\end{frame}
+
+\begin{frame}{Histogram}
+\begin{figure}
+	\centering
+		\includegraphics[width=0.9\textwidth]{pattern5.pdf}
+\end{figure}
+\end{frame}
+
+\begin{frame}{Histogram}
+\begin{figure}
+	\centering
+		\includegraphics[width=0.9\textwidth]{pattern6.pdf}
+\end{figure}
+\end{frame}
+
+\begin{frame}{Cumulative meta-analysis plot}
+\begin{figure}
+	\centering
+		\includegraphics[width=0.9\textwidth]{cumulative.png}
+\end{figure}
+\end{frame}
+
+
+\begin{frame}{Funnel plot (topic of the next lecture)}
+\begin{figure}
+	\centering
+		\includegraphics[width=0.9\textwidth]{funnel_pref_all.pdf}
+\end{figure}
+\end{frame}
+
+
+
+
+
+
+
+
+\end{document}
+
+

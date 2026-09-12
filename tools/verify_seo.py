@@ -120,7 +120,8 @@ for _pub in ("publications/index.html", "publications/irsova/index.html"):
         pages.append(_pub)
 # The teaching pages are self-managed too, and every structural check below applies to them.
 for _t in ("teaching/index.html", "teaching/osaka-2026/index.html", "teaching/osaka-2026/slides/index.html",
-           "teaching/stockholm-2025/index.html", "teaching/stockholm-2025/slides/index.html"):
+           "teaching/stockholm-2025/index.html", "teaching/stockholm-2025/slides/index.html",
+           "teaching/christchurch-2025/index.html", "teaching/christchurch-2025/slides/index.html"):
     if os.path.isfile(os.path.join(SITE, _t)) and _t not in pages:
         pages.append(_t)
 # Sub-pages of a project, one level down: /guidelines/guide/, /maive/paper/. The listing

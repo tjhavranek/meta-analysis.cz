@@ -1,0 +1,612 @@
+% $Header: /home/vedranm/bitbucket/beamer/solutions/conference-talks/conference-ornate-20min.en.tex,v 90e850259b8b 2007/01/28 20:48:30 tantau $
+
+\documentclass{beamer} %[compress]
+% alternatively add handout or draft option
+
+%\mode<handout>%{\setbeamercolor{background canvas}{bg=black!5}}
+%\usepackage{pgfpages}
+%\pgfpagesuselayout{4 on 1}[a4paper,border shrink=5mm,landscape]
+% For handout printing, 4 slides on 1 page
+
+\mode<presentation>
+{
+  \usetheme{Pittsburgh} % plain template Pittsburgh
+  \useoutertheme{infolines} % bottom (author, title, place)
+  \useoutertheme[subsection=false]{miniframes} % top (sections, frames)
+  \usecolortheme{beaver} %blue color whale
+	\setbeamertemplate{frametitle}[default][right] % frame titles on the right
+  \setbeamercovered{transparent}
+  % or whatever (possibly just delete it)
+}
+
+\setbeamersize{text margin left=1cm, text margin right=1cm}
+%\setbeamertemplate{navigation symbols}{}
+\usepackage[english]{babel}
+\usepackage{booktabs}
+\usepackage{comment}
+% or whatever
+
+\usepackage[cp1250]{inputenc}
+% or whatever
+\usepackage{subfigure} %subfigures
+
+\usepackage{times}
+%\usepackage{breqn}
+\usepackage{tikz}
+\usepackage{amsmath}
+%\usepackage{cancel}
+\usepackage[T1]{fontenc}
+\def\sym#1{\ifmmode^{#1}\else\(^{#1}\)\fi} %shortcut for Stata tables
+% Or whatever. Note that the encoding and the font should match. If T1
+% does not look nice, try deleting the line with the fontenc.
+
+%\logo{\includegraphics[height=0.5cm]{logo.jpg}} % logo on every page
+
+
+
+\title[Lecture 8: \emph{p}-hacking] % (optional, use only with long paper titles)
+{Lecture 8: \emph{p}-hacking}
+
+\author[T.\ Havranek] % (optional, use only with lots of authors)
+{ Tomas Havranek
+}
+% - Give the names in the same order as the appear in the paper.
+% - Use the \inst{?} command only if the authors have different
+%   affiliation.
+
+\institute[Prague] % (optional, but mostly needed)
+{
+  	Charles University, CEPR, METRICS
+
+  %\inst%
+  %Economic Research Department\\
+  %Czech National Bank
+      %\inst{1}%
+  %Research Department\\
+  %Czech National Bank
+  %\and
+  %\inst{2}%
+  %Institute of Economic Studies\\
+  %Charles University, Prague
+  
+%\pgfdeclareimage[height=1cm]{logo}{logo.jpg} % logo only on title page
+%\pgfuseimage{logo}
+}% - Use the \inst command only if there are several affiliations.
+% - Keep it simple, no one is interested in your street address.
+
+\date[Meta in Econ and Finance] % (optional, should be abbreviation of conference name)
+{Research Synthesis in Economics and Finance, \\ University of Canterbury\\[2ex]
+  March 11, 2025
+}%\\[4mm]% - Either use conference name or its abbreviation.
+% - Not really informative to the audience, more for people (including
+%   yourself) who are reading the slides online
+
+
+%\subject{Intertemporal Substitution}
+
+\begin{comment}
+\AtBeginSection[]
+{
+  \begin{frame}<beamer>{Outline}
+    \tableofcontents[currentsection]%,currentsubsection]
+  \end{frame}
+}
+\end{comment}
+
+\begin{document}
+
+\begin{frame}
+  \titlepage
+\end{frame}
+
+\begin{comment}
+
+\begin{frame}{Outline}
+  \tableofcontents
+  % You might wish to add the option [pausesections]
+\end{frame}
+
+\end{comment}
+
+%\section{Summary}
+%\subsection{}
+
+%\section{EIS}
+%\subsection{}
+
+
+
+\begin{frame}{Recall publication bias}
+\begin{figure}
+	\centering
+		\includegraphics[width=1.00\textwidth]{4.pdf}
+\end{figure}
+\end{frame}
+
+
+\begin{frame}{Recall publication bias}
+\begin{figure}
+	\centering
+		\includegraphics[width=1.00\textwidth]{5.pdf}
+\end{figure}
+\end{frame}
+
+
+
+\begin{frame}{Key difference}
+\begin{itemize}
+	\item \textbf{Publication bias}: all estimates are individually unbiased
+	\item The entire literature is biased because estimates are selectively reported
+	\item If we know publication probabilities, we can recover the true effect (selection models)
+	\item \textbf{P-hacking:} individual estimates can be biased
+	\item Classical selection models fail
+	\item Funnel-based models can work (with adjustments)
+\end{itemize}
+\end{frame}
+
+
+
+
+
+
+
+
+\begin{frame}{Example: education premium}
+
+\only<1>{True model:}
+\only<2>{Omitted variable:}
+\only<3>{Proxy:}
+\only<4>{Instrument:}
+
+
+% First equation with ability (visible only in slide 1 and 2)
+\only<1>{
+   \begin{equation*}
+    Earnings_j = \tikz[baseline={(E.base)}]{\node[draw,circle,inner sep=1pt] (E) {$\gamma$};} Education_j + \delta Ability_j + v_j,
+    \end{equation*}
+    % Add curved arrows using TikZ
+    \begin{tikzpicture}[overlay, remember picture]
+        % Arrow from Ability_j to Earnings_j
+        \draw[->,thick,bend right=50] (7.5,1.2) to (2.9,1.2);
+        % Arrow from Ability_j to Education_j
+        \draw[->,thick,bend left=50] (7.5,0.5) to (5.3,0.5);
+    \end{tikzpicture}
+}
+
+% New equation without ability (replaces the old equation)
+\only<2>{
+   \begin{equation*}
+    Earnings_j = \tikz[baseline={(E.base)}]{\node[draw,circle,inner sep=1pt] (E) {$\alert{\gamma}$};} Education_j + w_j,
+    \end{equation*}
+    % Add curved arrows using TikZ
+    \begin{tikzpicture}[overlay, remember picture]
+        % Arrow from Ability_j to Earnings_j
+        \draw[->,thick,bend right=50] (7.7,1.2) to (3.5,1.2);
+        % Arrow from Ability_j to Education_j
+        \draw[->,thick,bend left=50] (7.7,0.5) to (5.9,0.5);
+    \end{tikzpicture}
+}
+
+
+\only<3>{
+   \begin{equation*}
+    Earnings_j = \tikz[baseline={(E.base)}]{\node[draw,circle,inner sep=1pt] (E) {$\alert{\gamma}$};} Education_j + \omega IQ_j + x_j,
+    \end{equation*}
+    % Add curved arrows using TikZ
+    \begin{tikzpicture}[overlay, remember picture]
+        % Arrow from Ability_j to Earnings_j
+        \draw[->,dashed,bend right=50] (7.4,1.2) to (3.1,1.2);
+        % Arrow from Ability_j to Education_j
+        \draw[->,dashed,bend left=50] (7.4,0.5) to (5.7,0.5);
+    \end{tikzpicture}
+}
+
+\only<4>{
+   \begin{equation*}
+    Earnings_j = \tikz[baseline={(E.base)}]{\node[draw,circle,inner sep=1pt] (E) {$\alert{\gamma}$};} Education_j + z_j, \quad Distance_j
+    \end{equation*}
+    % Add curved arrows using TikZ
+    \begin{tikzpicture}[overlay, remember picture]
+        % Arrow from Ability_j to Earnings_j
+        \draw[->,thick,bend right=50] (5.2,1.2) to (2.6,1.2);
+        % Arrow from Ability_j to Education_j
+        \draw[->,dashed,bend left=50] (8.2,0.5) to (5.2,0.5);
+    \end{tikzpicture}
+}
+
+\bigskip
+
+Ability \alert{not observed}.
+
+\bigskip
+
+Primary studies:
+
+\begin{enumerate}
+    \item<2-> ignore ability $\rightarrow \hat{\gamma}$ too large, SE($\hat{\gamma}$) too small.
+    \item<3-> include a proxy $\rightarrow \hat{\gamma}$ smaller, SE($\hat{\gamma}$) larger.
+    \item<4-> quasi-experiment $\rightarrow \hat{\gamma}$ even smaller, SE($\hat{\gamma}$) even larger.
+\end{enumerate}
+
+\end{frame}
+
+
+
+
+
+
+
+\begin{frame}{Some estimates spuriously large \& precise}
+\begin{figure}
+	\centering
+		\includegraphics[width=0.68\textwidth]{funnel33.pdf}
+\end{figure}
+\end{frame}
+
+
+
+\begin{frame}{All estimators biased upwards}
+\begin{figure}
+	\centering
+		\includegraphics[width=1.03\textwidth]{Bias_phack_psi_1_1.pdf}
+\end{figure}
+\end{frame}
+
+
+
+
+
+\begin{frame}{Example: Changing controls changes precision}
+
+\begin{table}[htbp]
+\tiny
+\begin{center}
+\caption{Regression of test scores on class size}
+\begin{tabular*}{0.7\linewidth}{@{\hskip\tabcolsep\extracolsep\fill}l*{4}{c}@{}}
+\toprule
+					&\multicolumn{1}{c}{(1)} &\multicolumn{1}{c}{(2)} &\multicolumn{1}{c}{(3)} &\multicolumn{1}{c}{(4)}  \\
+\midrule
+	\addlinespace											
+
+Small class (treatment)	&	4.82	&	5.37&	5.36	&	5.37	\\
+	&	(\colorbox[rgb]{1,1,0}{2.19})	&	(\colorbox[rgb]{1,1,0}{1.26})	&	(\colorbox[rgb]{1,1,0}{1.21})	&	(\colorbox[rgb]{1,1,0}{1.19})	\\
+	\addlinespace											
+
+White/Asian	&		&		&	8.35	&	8.44	\\
+	&		&		&	(1.35)	&	(1.36)	\\
+Girl	&		&		&	4.48	&	4.39	\\
+	&		&		&	(0.63)	&	(0.63)	\\
+Free lunch	&		&		&	 -13.15	&	 -13.07	\\
+	&		&		&	(0.77)	&	(0.77)	\\
+White teacher	&		&		&		&	-0.57	\\
+	&		&		&		&	(2.1)	\\
+Teacher experience	&		&		&		&	0.26	\\
+	&		&		&		&	(0.10)	\\
+Master's degree	&		&		&		&	-0.51	\\
+	&		&		&		&	(1.06)	\\
+\midrule											
+School intercepts	&	No	&	Yes	&	Yes	&	Yes	\\
+Sample 	&	 5,861 	&	 5,861 	&	 5,861 	&	 5,861 	\\
+\bottomrule													
+\end{tabular*}
+\begin{tabular*}{0.7\linewidth}{@{\hskip\tabcolsep\extracolsep\fill}ccc}
+\multicolumn{3}{p{0.7\linewidth}}{\tiny \emph{Notes}: Adapted from Krueger (1999). Dependent variable: test score percentile. \colorbox[rgb]{1,1,0}{Standard errors in parentheses.}
+ %Krueger (1999) uses robust standard errors that are about two-thirds larger than the OLS standard errors (his own words). Also, standard errors are calculated using class-specific random component. Students in small classes tend to perform better by about 5 percentage points than those assigned to regular classes (the gap in average performance is about five percentile points in kindergarten). White and Asian students tend to score eight percentile points higher than black students in kindergarten. Girls score four points higher than boys. Students on free lunch score thirteen percentile points less than those not on free lunch. Teacher experience has a small, positive effect. Teacher education---as proxied by a dummy indicating whether the teacher has a master's degree---does not have a systematic effect, the same is valid for teachers race. 
+%\sym{*} \(p<0.10\), \sym{**} \(p<0.05\), \sym{***} \(p<0.01\).
+}    
+
+\\
+\end{tabular*}	
+\end{center}
+\vspace{-0.2cm}
+\normalsize
+\end{table}
+
+
+\end{frame}
+
+
+
+\begin{frame}{Changing clustering changes precision}
+
+\begin{table}[htbp]
+\tiny
+\begin{center}
+\caption{Regression of test scores on class size}
+\begin{tabular*}{1\linewidth}{@{\hskip\tabcolsep\extracolsep\fill}l*{6}{c}@{}}
+\toprule
+	&	Krueger (1999)	&\multicolumn{5}{c}{Replications using different computations of SE}	\\
+ \cmidrule(lr){3-7}
+			&	(1)	&	(2)	&	(3)	&	(4)	&	(5)	&	(6)	\\
+		&	 &	Bootstrap of	&	Class	&	School 	&	Huber-White	& Plain vanilla\\
+				&	 &	class clusters	&	clusters	&	 clusters	&	SE &	SE	\\
+	\midrule
+Small class	&	4.82	&	4.71	&	4.71\	&	4.71	&	4.71	&	4.71	\\
+	&	(\colorbox[rgb]{1,1,0}{2.19})	&	(\colorbox[rgb]{1,1,0}{2.00})	&	(\colorbox[rgb]{1,1,0}{1.88})	&	(\colorbox[rgb]{1,1,0}{1.38})	&	(\colorbox[rgb]{1,1,0}{0.79})	&	(\colorbox[rgb]{1,1,0}{0.76})	\\
+	\midrule
+Sample 	&	 5,861 	&	 5,743 	&	 5,743 	&	 5,743 	&	 5,743 	&	 5,743 	\\
+\bottomrule													
+\end{tabular*}
+\begin{tabular*}{1\linewidth}{@{\hskip\tabcolsep\extracolsep\fill}ccccc}
+\multicolumn{5}{p{1\linewidth}}{\tiny \emph{Notes}: Dependent variable: test score percentile. Standard errors (SE) in parentheses.
+}
+\\
+\end{tabular*}	
+\end{center}
+\vspace{-0.2cm}
+\normalsize
+\end{table}
+
+\bigskip
+\bigskip
+
+\begin{block}{Meta-analysis of the class size effect}
+Available at \href{http://www.meta-analysis.cz/class}{meta-analysis.cz/class}. (forthcoming in \emph{JOLE})
+\end{block}
+
+\end{frame}
+
+
+
+
+
+
+\begin{frame}{Funnel plot}
+\begin{figure}
+	\centering
+		\includegraphics[width=0.65\textwidth]{funnel4.pdf}
+	\label{fig:funnel4}
+\end{figure}
+\end{frame}
+
+\begin{frame}{Publication bias}
+\begin{figure}
+	\centering
+		\includegraphics[width=0.65\textwidth]{funnel5.pdf}
+	\label{fig:funnel4}
+\end{figure}
+\end{frame}
+
+
+\begin{frame}{Conventional p-hacking}
+\begin{figure}
+	\centering
+		\includegraphics[width=0.65\textwidth]{funnel1.pdf}
+	\label{fig:funnel1}
+\end{figure}
+\end{frame}
+
+
+
+\begin{frame}{Spurious precision}
+\begin{figure}
+	\centering
+		\includegraphics[width=0.65\textwidth]{funnel2.pdf}
+	\label{fig:funnel2}
+\end{figure}
+\end{frame}
+
+
+
+
+
+
+
+
+
+
+\begin{frame}{Key meta assumption broken}
+
+\bigskip
+
+PEESE:
+%\smallskip
+		   \begin{equation*}
+    \hat{E_i} = \tikz[baseline=(E.base)]{\node[draw,circle,inner sep=1pt] (E) {$E_0$};} + \beta SE(\hat{E})^2_i + u_i,
+    \end{equation*}
+    \begin{tikzpicture}[overlay, remember picture]
+        % Arrow from E0 to SE
+        \draw[->,thick,bend right=50] (7.3,1.2) to node[above] {\footnotesize{Methods or p-hacking}} (3.32,1.2);
+        % Arrow from SE to u
+        \draw[->,thick,bend left=50] (7.3,0.5) to node[below] {\footnotesize{Methods or p-hacking}} (5.9,0.5);
+    \end{tikzpicture}
+		
+%ignoring PET and weights for simplicity.
+
+\smallskip
+\smallskip
+\smallskip
+\smallskip
+
+\bigskip
+
+
+corr($SE,u) \neq 0$ $\Rightarrow$ $\hat{\beta}$ and $\hat{E_0}$ biased. 
+
+
+\bigskip
+\smallskip
+\smallskip
+\smallskip
+
+%\alert{Natural solution}: ue N as an insturment for $SE(\hat{E})^2_i$ $\rightarrow$ MAIVE. %corr.\ with $SE(\hat{E})^2_i$, not with methods or p-hacking
+
+   \fbox{\parbox{0.99\linewidth}{\alert{Natural solution:} N instrumenting $SE(\hat{E})_i^2 \rightarrow$ MAIVE.}}
+
+\end{frame}
+
+
+
+
+\begin{frame}{Options for the meta-analyst}
+\begin{enumerate}
+	\item Use only quasi-experimental studies. %\pause
+	\item Include controls (dummies for OLS, DID, \ldots). %\pause
+	
+	\bigskip 
+	
+	But in observational research \\ \alert{we never know the true model!} %Options 1 and 2 only work if we are lucky. 
+	
+	\bigskip
+	
+	\item Remove ``bad'' variation from SE $\rightarrow$ MAIVE.
+\end{enumerate}
+
+
+
+\end{frame}
+
+
+
+\begin{frame}{Meta-analysis instrumental variable estimator}
+
+
+%MAIVE \alert{replaces reported SE} with its portion that can be explained by sample size [$\hat{\alpha_0}+\hat{\alpha_1} (1/N_i)$]:
+
+
+
+\only<1>{
+MAIVE intuition:
+		   \begin{equation*}
+    \hat{E_i} = \tikz[baseline=(E.base)]{\node[draw,circle,inner sep=1pt] (E) {$E_0$};} + \beta SE(\hat{E})^2_i + u_i. \quad 1/N_i
+    \end{equation*}
+    \begin{tikzpicture}[overlay, remember picture]
+        % Arrow from E0 to SE
+        \draw[->,dashed,bend right=50] (7.8,1.3) to node[above] {\footnotesize{Definition of SE}} (5.3,1.3);
+    \end{tikzpicture}
+		}
+		
+\only<2>{
+MAIVE first stage:
+    \begin{equation*}
+    SE(\hat{E})^2_i = \alpha_0 + \alpha_1 \left( 1/N_i \right) + \tikz[baseline={(P.base)}]{\node[draw,circle,inner sep=1pt] (P) {$\pi_i$};}. \hspace{2em} \mathrm{hacking \hspace{0.25em} or \hspace{0.25em} misspecifications}
+    \end{equation*}
+				    \begin{tikzpicture}[overlay, remember picture]
+        % Arrow from Ability_j to Earnings_j
+        \draw[->,thick,bend right=50] (7.5,1.2) to (5.32,1.2);
+    \end{tikzpicture}
+		}
+
+
+\only<3>{
+    MAIVE adjustment:
+    \begin{equation*}
+    SE(\hat{E})^2_{adj,i} = \hat{\alpha_0} + \hat{\alpha_1} \left(1/N_i \right) + 
+    \tikz[baseline={(P.base)}]{\node[draw,circle,inner sep=1pt] (P) {$\pi_i$}; 
+    \draw[black, line width=0.5pt] (-0.35,0) -- (0.35,0);}. 
+    \hspace{1.3em} 
+    \tikz[baseline={(T.base)}]{\node(T) {hacking}; \draw[black, line width=0.5pt] (-0.6,0) -- (0.6,0); } 
+    \hspace{0.15em} \mathrm{or} \hspace{0.15em} 
+    \tikz[baseline={(T.base)}]{\node(T) {misspecifications}; \draw[black, line width=0.5pt] (-1.5,0) -- (1.5,0);}
+    \end{equation*}
+
+    \begin{tikzpicture}[overlay, remember picture]
+        % Arrow from Ability_j to Earnings_j
+        \draw[->,thick,bend right=50] (7.5,1.2) to (5.32,1.2);
+    \end{tikzpicture}
+}
+
+
+		
+\bigskip %\pause
+
+%Note that:
+
+\begin{itemize}
+	\item MAIVE $+$ PEESE $=$ classical IV. %\pause
+	\item Can add \alert{controls in the 2nd stage}. %\pause %MAIVE can be combined with earlier options 1 and 2.
+\item Plug MAIVE-adjusted SEs into other estimators. %\pause
+\end{itemize}
+
+\end{frame}
+
+
+
+
+
+\begin{frame}{MAIVE alleviates the bias}
+\begin{figure}
+	\centering
+		\includegraphics[width=1.03\textwidth]{hack22.pdf}
+\end{figure}
+\end{frame}
+
+
+\begin{frame}{Extended MAIVE}
+\begin{figure}
+	\centering
+		\includegraphics[width=1.03\textwidth]{Bias_extended_MAIVE_3}
+\end{figure}
+\end{frame}
+
+
+
+
+
+\begin{frame}{MAIVE reduces PET-PEESE in 70\% of the cases}
+\begin{figure}
+	\centering
+		\includegraphics[width=0.8\textwidth]{histogram_F_100.pdf}
+\end{figure}
+\end{frame}
+
+
+
+
+
+
+\begin{frame}{Practical issues}
+  \begin{block}{Main consideration}
+  \begin{itemize}
+  \item Can methods or p-hacking influence both $\hat{E}$ and $SE$? %\pause
+	
+	\item Yes $\rightarrow$ MAIVE helps. %\pause
+	
+	\item No $\rightarrow$ MAIVE doesn't hurt much. %\pause
+
+
+  \end{itemize}
+  \end{block}
+
+\vskip0pt plus.5fill
+    \begin{block}{Project Website}
+      \href{http://www.meta-analysis.cz/maive}{meta-analysis.cz/maive}
+    \end{block}
+\end{frame}
+
+
+
+
+
+\begin{frame}{Bonus: Maya Mathur's p-hacking correction}
+\begin{itemize}
+	\item Right-trunctated meta-analysis (RTMA, Mathur 2024, RSM)
+	\item Assumption 1: insignificant estimates are NOT p-hacked
+	\item Assumption 2: estimates are normally distributed
+	\item Assumption 3: there are enough insignificant estimates published that we can recover the underlying distribution
+	\item Bayesian techniques used for better convergence
+\end{itemize}
+\end{frame}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+\end{document}
+
+

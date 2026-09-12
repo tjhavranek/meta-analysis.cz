@@ -1,0 +1,311 @@
+% $Header: /home/vedranm/bitbucket/beamer/solutions/conference-talks/conference-ornate-20min.en.tex,v 90e850259b8b 2007/01/28 20:48:30 tantau $
+
+\documentclass{beamer} %[compress]
+% alternatively add handout or draft option
+
+%\mode<handout>%{\setbeamercolor{background canvas}{bg=black!5}}
+%\usepackage{pgfpages}
+%\pgfpagesuselayout{4 on 1}[a4paper,border shrink=5mm,landscape]
+% For handout printing, 4 slides on 1 page
+
+\mode<presentation>
+{
+  \usetheme{Pittsburgh} % plain template Pittsburgh
+  \useoutertheme{infolines} % bottom (author, title, place)
+  \useoutertheme[subsection=false]{miniframes} % top (sections, frames)
+  \usecolortheme{beaver} %blue color whale
+	\setbeamertemplate{frametitle}[default][right] % frame titles on the right
+  \setbeamercovered{transparent}
+  % or whatever (possibly just delete it)
+}
+
+\setbeamersize{text margin left=1cm, text margin right=1cm}
+%\setbeamertemplate{navigation symbols}{}
+\usepackage[english]{babel}
+\usepackage{booktabs}
+\usepackage{comment}
+% or whatever
+
+\usepackage[cp1250]{inputenc}
+% or whatever
+\usepackage{subfigure} %subfigures
+
+\usepackage{times}
+%\usepackage{breqn}
+\usepackage{amsmath}
+\usepackage[T1]{fontenc}
+\def\sym#1{\ifmmode^{#1}\else\(^{#1}\)\fi} %shortcut for Stata tables
+% Or whatever. Note that the encoding and the font should match. If T1
+% does not look nice, try deleting the line with the fontenc.
+
+%\logo{\includegraphics[height=0.5cm]{logo.jpg}} % logo on every page
+
+
+
+\title[Lecture 3: Literature Search] % (optional, use only with long paper titles)
+{Lecture 3: Literature Search}
+
+\author[T.\ Havranek] % (optional, use only with lots of authors)
+{ Tomas Havranek
+}
+% - Give the names in the same order as the appear in the paper.
+% - Use the \inst{?} command only if the authors have different
+%   affiliation.
+
+\institute[Prague] % (optional, but mostly needed)
+{
+  	Charles University, CEPR, METRICS
+
+  %\inst%
+  %Economic Research Department\\
+  %Czech National Bank
+      %\inst{1}%
+  %Research Department\\
+  %Czech National Bank
+  %\and
+  %\inst{2}%
+  %Institute of Economic Studies\\
+  %Charles University, Prague
+  
+%\pgfdeclareimage[height=1cm]{logo}{logo.jpg} % logo only on title page
+%\pgfuseimage{logo}
+}% - Use the \inst command only if there are several affiliations.
+% - Keep it simple, no one is interested in your street address.
+
+\date[Meta in Econ and Finance] % (optional, should be abbreviation of conference name)
+{Research Synthesis in Economics and Finance, \\ University of Canterbury\\[2ex]
+  February 24, 2025
+}%\\[4mm]% - Either use conference name or its abbreviation.
+% - Not really informative to the audience, more for people (including
+%   yourself) who are reading the slides online
+
+
+%\subject{Intertemporal Substitution}
+
+\begin{comment}
+\AtBeginSection[]
+{
+  \begin{frame}<beamer>{Outline}
+    \tableofcontents[currentsection]%,currentsubsection]
+  \end{frame}
+}
+\end{comment}
+
+\begin{document}
+
+\begin{frame}
+  \titlepage
+\end{frame}
+
+\begin{comment}
+
+\begin{frame}{Outline}
+  \tableofcontents
+  % You might wish to add the option [pausesections]
+\end{frame}
+
+\begin{frame}{Inspiration}
+\end{frame}
+
+\end{comment}
+
+%\section{Summary}
+%\subsection{}
+
+%\section{EIS}
+%\subsection{}
+
+
+\begin{frame}{Choosing your topic}
+
+Prior to starting a meta-analysis, you should have at least a basic understanding of the field. Plus:
+
+\bigskip
+  
+	\begin{enumerate}
+		\item Policy interest
+		\item Missing publication bias analysis (in previous meta-analyses)
+		\item Missing heterogeneity analysis
+		\item Missing focus on economics
+		\item New methods
+	\end{enumerate}
+\end{frame}
+
+
+
+\begin{frame}{Inspiration}
+\begin{figure}
+	\centering
+		\includegraphics[width=1.00\textwidth]{meta.png}
+\end{figure}
+\end{frame}
+
+
+\begin{frame}{Motivation example 1}
+\begin{figure}
+	\centering
+		\includegraphics[width=0.9\textwidth]{motivation.png}
+\end{figure}
+\end{frame}
+
+
+\begin{frame}{Motivation example 2}
+\begin{figure}
+	\centering
+		\includegraphics[width=0.9\textwidth]{motivation7.png}
+\end{figure}
+\end{frame}
+
+
+\begin{frame}{Motivation example 3}
+\begin{figure}
+	\centering
+		\includegraphics[width=0.9\textwidth]{motivation3.png}
+\end{figure}
+\end{frame}
+
+
+\begin{frame}{Motivation example 4}
+\begin{figure}
+	\centering
+		\includegraphics[width=1.00\textwidth]{motivation5.png}
+\end{figure}
+\end{frame}
+
+
+\begin{frame}{Motivation example 5}
+\begin{figure}
+	\centering
+		\includegraphics[width=0.9\textwidth]{motivation4.png}
+\end{figure}
+\end{frame}
+
+
+\begin{frame}{Motivation example 6}
+\begin{figure}
+	\centering
+		\includegraphics[width=0.9\textwidth]{motivation2.png}
+\end{figure}
+\end{frame}
+
+\begin{frame}{Google Scholar}
+\textbf{Advantages:}
+\begin{itemize}
+	\item Full text, not just the abstract, title, keywords
+	\item Inclusive
+	\item Up-to-date
+\end{itemize}
+
+\bigskip
+
+\textbf{Disadvantages:}
+\begin{itemize}
+	\item Algorithm changes in time (replicability issues)
+	\item Too many results
+	\item Sometimes relevance unclear
+\end{itemize}
+\end{frame}
+
+\begin{frame}{Search steps}
+\begin{enumerate}
+	\item Find 5 most relevant studies (AI can help)
+	\item Design a Scholar query that shows the 5 studies near the top
+	\item Go through first 500 hits
+	\item Read abstracts
+	\item Download potentially useful studies
+	\item Skim them
+	\item Repeat the procedure for the most recent studies (last 3 years)
+\end{enumerate}
+\end{frame}
+
+
+\begin{frame}{Search query 1}
+\begin{figure}
+	\centering
+		\includegraphics[width=1\textwidth]{search1.png}
+\end{figure}
+\end{frame}
+
+
+\begin{frame}{Search query 2}
+\begin{figure}
+	\centering
+		\includegraphics[width=1\textwidth]{search2.png}
+\end{figure}
+\end{frame}
+
+
+\begin{frame}{Primary studies}
+\begin{figure}
+	\centering
+		\includegraphics[width=1\textwidth]{studies.png}
+\end{figure}
+\end{frame}
+
+
+\begin{frame}{Snowballing}
+\begin{itemize}
+	\item No query is perfect
+	\item Idea: cover studies not identified by the query but frequently mentioned in the literature
+	\item For each primary study, download the list of references
+	\item Inspect the 50 studies most frequently cited by the primary studies
+	\item If you can use some of them, add them to your list
+\end{itemize}
+\end{frame}
+
+
+\begin{frame}{Snowballing example}
+\begin{figure}
+	\centering
+		\includegraphics[width=1\textwidth]{snowball.png}
+\end{figure}
+\end{frame}
+
+\begin{frame}{Minimum requirements for meta-analysis}
+For modern meta-analysis techniques to work, you need at least:
+
+\bigskip
+
+\begin{enumerate}
+	\item 30 estimates
+	\item 10 studies
+	\item effect sizes
+	\item standard errors
+	\item sample sizes
+\end{enumerate}
+
+\end{frame}
+
+
+\begin{frame}{Quality}
+\begin{itemize}
+	\item Some studies are published in poor journals or use weak identification. What to do?
+	\item \textbf{Option 1}: exclude these studies ex ante. Not recommended.
+	\item \textbf{Option 2}: include these studies with controls for journal quality and methodology. You can always exclude them as a robustness check.
+	\item Note that some fields have standardized quality benchmarks (risk of bias)
+\end{itemize}
+\end{frame}
+
+
+\begin{frame}{Unpublished papers}
+\begin{itemize}
+	\item Try to collect all studies, published and unpublished
+	\item If unfeasible, it is possible to focus just on published studies (fewer typos, peer-review)
+	\item Including unpublished papers unlikely to alleviate publication bias
+	\item Still too many papers? Recruit a co-author or use a random subset (last resort)
+\end{itemize}
+\end{frame}
+
+
+\begin{frame}{PRISMA: document your literature search}
+\begin{figure}
+	\centering
+		\includegraphics[width=0.73\textwidth]{prisma.png}
+\end{figure}
+\end{frame}
+
+
+
+\end{document}
+
+

@@ -1,0 +1,433 @@
+% $Header: /home/vedranm/bitbucket/beamer/solutions/conference-talks/conference-ornate-20min.en.tex,v 90e850259b8b 2007/01/28 20:48:30 tantau $
+
+\documentclass{beamer} %[compress]
+% alternatively add handout or draft option
+
+%\mode<handout>%{\setbeamercolor{background canvas}{bg=black!5}}
+%\usepackage{pgfpages}
+%\pgfpagesuselayout{4 on 1}[a4paper,border shrink=5mm,landscape]
+% For handout printing, 4 slides on 1 page
+
+\mode<presentation>
+{
+  \usetheme{Pittsburgh} % plain template Pittsburgh
+  \useoutertheme{infolines} % bottom (author, title, place)
+  \useoutertheme[subsection=false]{miniframes} % top (sections, frames)
+  \usecolortheme{beaver} %blue color whale
+	\setbeamertemplate{frametitle}[default][right] % frame titles on the right
+  \setbeamercovered{transparent}
+  % or whatever (possibly just delete it)
+}
+
+\setbeamersize{text margin left=1cm, text margin right=1cm}
+%\setbeamertemplate{navigation symbols}{}
+\usepackage[english]{babel}
+\usepackage{booktabs}
+\usepackage{comment}
+% or whatever
+
+\usepackage[cp1250]{inputenc}
+% or whatever
+\usepackage{subfigure} %subfigures
+
+\usepackage{times}
+%\usepackage{breqn}
+\usepackage{amsmath}
+\usepackage[T1]{fontenc}
+\def\sym#1{\ifmmode^{#1}\else\(^{#1}\)\fi} %shortcut for Stata tables
+% Or whatever. Note that the encoding and the font should match. If T1
+% does not look nice, try deleting the line with the fontenc.
+
+%\logo{\includegraphics[height=0.5cm]{logo.jpg}} % logo on every page
+
+
+
+\title[Lecture 10: Meta-Research] % (optional, use only with long paper titles)
+{Lecture 10: Meta-Research}
+
+\author[T.\ Havranek] % (optional, use only with lots of authors)
+{ Tomas Havranek
+}
+% - Give the names in the same order as the appear in the paper.
+% - Use the \inst{?} command only if the authors have different
+%   affiliation.
+
+\institute[Prague] % (optional, but mostly needed)
+{
+  	Charles University, CEPR, METRICS
+
+  %\inst%
+  %Economic Research Department\\
+  %Czech National Bank
+      %\inst{1}%
+  %Research Department\\
+  %Czech National Bank
+  %\and
+  %\inst{2}%
+  %Institute of Economic Studies\\
+  %Charles University, Prague
+  
+%\pgfdeclareimage[height=1cm]{logo}{logo.jpg} % logo only on title page
+%\pgfuseimage{logo}
+}% - Use the \inst command only if there are several affiliations.
+% - Keep it simple, no one is interested in your street address.
+
+\date[Meta in Econ and Finance] % (optional, should be abbreviation of conference name)
+{Research Synthesis in Economics and Finance, \\ University of Canterbury\\[2ex]
+  March 18, 2025
+}%\\[4mm]% - Either use conference name or its abbreviation.
+% - Not really informative to the audience, more for people (including
+%   yourself) who are reading the slides online
+
+
+%\subject{Intertemporal Substitution}
+
+\begin{comment}
+\AtBeginSection[]
+{
+  \begin{frame}<beamer>{Outline}
+    \tableofcontents[currentsection]%,currentsubsection]
+  \end{frame}
+}
+\end{comment}
+
+\begin{document}
+
+\begin{frame}
+  \titlepage
+\end{frame}
+
+\begin{comment}
+
+\begin{frame}{Outline}
+  \tableofcontents
+  % You might wish to add the option [pausesections]
+\end{frame}
+
+\end{comment}
+
+%\section{Summary}
+%\subsection{}
+
+%\section{EIS}
+%\subsection{}
+
+
+\begin{frame}{Example 1: Attenuation bias, aka regression dilution}
+\begin{figure}
+	\centering
+		\includegraphics[width=0.78\textwidth]{attenuation2.pdf}
+	\label{fig:attenuation}
+\end{figure}
+
+\end{frame}
+
+\begin{frame}{Elasticity of skill substitution}
+
+
+\begin{block}{Important complication}
+Researchers estimate negative inverse elasticity: they regress skill premium on relative labor supply (not vice versa!)
+\end{block}
+\begin{itemize}
+\item Measures substitutability between skilled (college) and unskilled (high school) workers
+	\item Important for wage inequality, explaining cross-country differences in productivity, \ldots
+	\item 682 estimates from 77 studies, \alert{``consensus'' elasticity = 1.5} (negative inverse = $-0.67$)
+\end{itemize}
+\end{frame}
+
+
+
+\begin{comment}
+\begin{frame}{Many studies far from consensus}
+\begin{figure}
+	\centering
+		\includegraphics[width=0.9\textwidth]{trend_inverse.pdf}
+	\label{fig:trend_inverse}
+\end{figure}
+\end{frame}
+\end{comment}
+
+
+\begin{comment}
+
+\begin{frame}{Country heterogeneity}
+\begin{figure}
+	\centering
+		\includegraphics[width=0.75\textwidth]{countries.pdf}
+	\label{fig:countries}
+\end{figure}
+\end{frame}
+
+\end{comment}
+
+
+
+\begin{frame}{Three estimation frameworks}
+\begin{figure}
+	\centering
+		\includegraphics[width=0.9\textwidth]{pattern1.pdf}
+	\label{fig:pattern1}
+\end{figure}
+\end{frame}
+
+
+
+
+\begin{frame}{Strong publication bias (or \emph{p}-hacking?)}
+\begin{figure}
+	\centering
+		\includegraphics[width=0.9\textwidth]{funnel.pdf}
+	\label{fig:funnel}
+\end{figure}
+\end{frame}
+
+\begin{comment}
+\begin{frame}{\ldots{} and against insignificant ones, too}
+\begin{figure}
+	\centering
+		\includegraphics[width=0.9\textwidth]{caliper.pdf}
+	\label{fig:caliper}
+\end{figure}
+\end{frame}
+\end{comment}
+
+
+
+
+\begin{frame}{OLS: no effect (but attenuation \& endogeneity biases)}
+\begin{figure}
+	\centering
+		\includegraphics[width=1.00\textwidth]{ols.pdf}
+	\label{fig:ols}
+\end{figure}
+\end{frame}
+
+\begin{frame}{IV: strong effect (no biases beyond publication)}
+\begin{figure}
+	\centering
+		\includegraphics[width=1.00\textwidth]{iv.pdf}
+	\label{fig:iv}
+\end{figure}
+\end{frame}
+
+
+\begin{frame}{Natural experiments: no effect (but attenuation bias)}
+\begin{figure}
+	\centering
+		\includegraphics[width=1.00\textwidth]{natural.pdf}
+	\label{fig:natural}
+\end{figure}
+\end{frame}
+
+
+
+
+
+
+
+
+\begin{frame}{Publication bias $>$ attenuation bias}
+\begin{itemize}
+\item $|$IV$|$ $>$ $|$OLS$|$ $\rightarrow$ attenuation or other endogeneity biases important
+	\item OLS = Natural experiments $\rightarrow$ other endogeneity biases negligible
+	\item[$\rightarrow$] \alert{$|$IV $-$ OLS$|$ measures attenuation bias, which is strong}
+	\item Uncorrected inverted elasticity = $-0.67$
+	\item Inverted elasticity corrected for pub and attenuation bias (IV) = $-0.25$
+	\item[$\rightarrow$] Pub bias dominates attenuation
+	\item[$\rightarrow$] Implied elasticity = 4 
+\end{itemize}
+\end{frame}
+
+
+
+\begin{frame}{Assumptions of Andrews \& Kasy not satisfied}
+\begin{figure}
+	\centering
+		\includegraphics[width=1.03\textwidth]{ak.pdf}
+	\label{fig:ak}
+\end{figure}
+\end{frame}
+
+
+
+
+
+
+\begin{frame}{Model uncertainty; biases confirmed}
+\begin{figure}
+	\centering
+		\includegraphics[width=0.7\textwidth]{bma.pdf}
+	\label{fig:bma}
+\end{figure}
+\end{frame}
+
+
+\begin{frame}{Best practice estimate around 4}
+\begin{figure}
+	\centering
+		\includegraphics[width=0.9\textwidth]{best.pdf}
+	\label{fig:best}
+\end{figure}
+\end{frame}
+
+
+
+
+
+
+  
+\begin{frame}{Results}
+  \begin{block}{Main Findings}
+  \begin{enumerate}
+  \item
+Attenuation bias is important ($|$IV$|$ $>$ $|$OLS$|$ $=$ $|$natural experiments$|$).
+\item
+Publication bias is more important (inverse elasticity: simple mean $-0.67$ ; corrected IV mean $-0.25$).
+    \item
+Implied elasticity around 4 (compared to consensus 1.5).
+  \end{enumerate}
+  \end{block}
+
+\vskip0pt plus.5fill
+    \begin{block}{Project Website}
+      \href{http://www.meta-analysis.cz/skill}{www.meta-analysis.cz/skill}
+    \end{block}
+\end{frame}
+
+
+
+\begin{frame}{Example 2: Too much heterogeneity?}
+    
+    \textbf{Common measure:} estimate the relative heterogeneity of underlying effects \textit{(Higgins and Thompson, 2002)}
+    
+    \[
+    I^2 \equiv \frac{\text{underlying variance of effects}}{\text{observed variance of estimates}}
+    \]
+    
+    \begin{itemize}
+        \item $I^2 = 0.75 \sim 1.0$ \dots \textit{``considerable heterogeneity'' in medicine (Cochrane Review Guideline)}
+        \item $I^2 \simeq 0.9$ \dots common in economics meta-analyses (e.g., \textit{Vivalt, 2021})
+    \end{itemize}
+    
+    \bigskip
+    
+    \textbf{Unresolved concern:}
+    \begin{itemize}
+        \item no universally agreed criteria for ``too much'' heterogeneity
+        \item undesirable pattern: with more precise studies, higher $I^2$
+    \end{itemize}
+\end{frame}
+
+
+\begin{frame}{This Paper}
+    \begin{enumerate}
+        \item Propose a new test for external validity in meta-analysis:
+        \begin{itemize}
+            \item Based on the tail index of the underlying distribution, without contamination by estimate precision.
+            \item Test whether the implied variance of underlying effect is infinite (i.e., too heterogeneous).
+        \end{itemize}
+        
+        \bigskip
+        
+        \item Show that the implied variance is infinite in meta-analysis of 126 nudge RCTs \textit{(DellaVigna and Linos, 2020)}:
+        \begin{itemize}
+            \item \textbf{Nudge:} ``choice architecture that alters people's behavior in a predictable way without forbidding any options or significantly changing their economic incentives.'' \textit{(Thaler and Sunstein, 2008)}
+            \item The possibility of infinite variance can be important in real-world applications.
+        \end{itemize}
+    \end{enumerate}
+\end{frame}
+
+\begin{frame}{Test of Infinite Variance}
+    \textbf{Pareto tail:}
+    \[
+    F(b) = 1 - Cb^{-\alpha}, \quad b > b_{\text{min}} \quad \text{and} \quad C > 0
+    \]
+
+    \begin{itemize}
+        \item e.g. earthquakes, word frequency, city size, wealth distribution
+        \item If $\alpha < 2$, then $V\!ar(b) = \infty$ because
+        \[
+        \int_{b_{\text{min}}}^\infty b^2 f(b) \, db \propto \int_{b_{\text{min}}}^\infty b^2 b^{-3} \, db = \int_{b_{\text{min}}}^\infty b^{-1} \, db = \log b \big|_{b_{\text{min}}}^\infty = \infty
+        \]
+    \end{itemize}
+    
+    \bigskip
+    
+    \textbf{Tail Index Test of External Validity:}
+    \begin{itemize}
+        \item \textbf{Criteria 1:} if $\hat{\alpha} > 2$, then pass the test
+        \item \textbf{Criteria 2:} if $\mathbb{P}(\hat{\alpha} \leq 2) < p$, then pass the test
+    \end{itemize}
+\end{frame}
+
+
+\begin{frame}{Estimation Methods (i) Inner Problem of Tail Index}
+    Following \textit{Hill (1975)}, use Maximum Likelihood Estimation for $\hat{\alpha}_{MLE}$: given $b_{\text{min}}$,
+    \[
+    \hat{\alpha}_{MLE} = \arg \max_{\alpha} \sum_{i=1}^n \ln l \left( \alpha \mid \beta_i, SE_i, b_{\text{min}} \right),
+    \]
+    where
+    \[
+    l \left( \alpha \mid \beta_i, SE_i, b_{\text{min}} \right) \equiv \int_{\theta_{\text{min}}}^\infty
+    \frac{\phi \left( \frac{\beta_i - \theta}{SE_i} \right)}{1 - \Phi \left( \frac{b_{\text{min}} - \theta}{SE_i} \right)}
+    \alpha b_{\text{min}}^{\alpha} b^{-(\alpha + 1)} \, db.
+    \]
+
+    \bigskip
+
+    \begin{itemize}
+        \item Numerical integration
+    \end{itemize}
+\end{frame}
+
+
+\begin{frame}{Estimation Methods (ii) Outer Problem of Cut-off}
+    Following \textit{Clauset et al. (2006)}, use the goodness-of-fit metric to choose $b^*_{\text{min}}$:
+    \[
+    b^*_{\text{min}} \in \arg \min_{b_{\text{min}}} \tilde{K}S \left(b_{\text{min}} \mid \hat{\alpha}_{MLE}\right),
+    \]
+    where the reweighted Kolmogorov-Smirnov statistic is
+    \[
+    \tilde{K}S \left(b_{\text{min}} \mid \hat{\alpha}_{MLE}\right) \equiv \sup_{\beta} 
+    \frac{\left|G(\beta \mid \beta \geq b_{\text{min}}) - \hat{G}(\beta \mid \cdot)\right|}
+    {\sqrt{\hat{G}(\beta \mid \cdot) \left[1 - \hat{G}(\beta \mid \cdot)\right]}},
+    \]
+    and the estimated distribution is $\hat{G}(\beta \mid \hat{\alpha}_{MLE}, \beta \geq b_{\text{min}})$ and the empirical distribution is $G(\beta \mid \beta \geq b_{\text{min}})$.
+\end{frame}
+
+
+\begin{frame}{Nudges}
+\begin{figure}
+	\centering
+		\includegraphics[width=0.75\textwidth]{0.png}
+\end{figure}
+\end{frame}
+
+\begin{frame}{Nudges}
+\begin{figure}
+	\centering
+		\includegraphics[width=0.72\textwidth]{1.png}
+\end{figure}
+\end{frame}
+
+\begin{frame}{Summary}
+    \begin{enumerate}
+        \item Proposed the concept of \textit{``infinite variance''} as representing the persistent criticism that \textit{``too much'' heterogeneity} underlies the overall mean estimate.
+        
+        \bigskip
+        
+        \item Developed an estimation method by extending the maximum likelihood estimation and goodness-of-fit statistics commonly used in tail estimation.
+        
+        \bigskip
+        
+        \item Applied the estimation method and its implied test to show that the influential nudge meta-analysis exhibits the infinite variance.
+    \end{enumerate}
+\end{frame}
+
+
+
+
+
+\end{document}
+
+

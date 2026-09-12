@@ -1,0 +1,312 @@
+% $Header: /home/vedranm/bitbucket/beamer/solutions/conference-talks/conference-ornate-20min.en.tex,v 90e850259b8b 2007/01/28 20:48:30 tantau $
+
+\documentclass{beamer} %[compress]
+% alternatively add handout or draft option
+
+%\mode<handout>%{\setbeamercolor{background canvas}{bg=black!5}}
+%\usepackage{pgfpages}
+%\pgfpagesuselayout{4 on 1}[a4paper,border shrink=5mm,landscape]
+% For handout printing, 4 slides on 1 page
+
+\mode<presentation>
+{
+  \usetheme{Pittsburgh} % plain template Pittsburgh
+  \useoutertheme{infolines} % bottom (author, title, place)
+  \useoutertheme[subsection=false]{miniframes} % top (sections, frames)
+  \usecolortheme{beaver} %blue color whale
+	\setbeamertemplate{frametitle}[default][right] % frame titles on the right
+  \setbeamercovered{transparent}
+  % or whatever (possibly just delete it)
+}
+
+\setbeamersize{text margin left=1cm, text margin right=1cm}
+%\setbeamertemplate{navigation symbols}{}
+\usepackage[english]{babel}
+\usepackage{booktabs}
+\usepackage{comment}
+% or whatever
+
+\usepackage[cp1250]{inputenc}
+% or whatever
+\usepackage{subfigure} %subfigures
+
+\usepackage{times}
+%\usepackage{breqn}
+\usepackage{amsmath}
+\usepackage[T1]{fontenc}
+\def\sym#1{\ifmmode^{#1}\else\(^{#1}\)\fi} %shortcut for Stata tables
+% Or whatever. Note that the encoding and the font should match. If T1
+% does not look nice, try deleting the line with the fontenc.
+
+%\logo{\includegraphics[height=0.5cm]{logo.jpg}} % logo on every page
+
+
+
+\title[Lecture 11: Limitations of Meta-Analysis] % (optional, use only with long paper titles)
+{Lecture 11: Limitations of Meta-Analysis}
+
+\author[T.\ Havranek] % (optional, use only with lots of authors)
+{ Tomas Havranek
+}
+% - Give the names in the same order as the appear in the paper.
+% - Use the \inst{?} command only if the authors have different
+%   affiliation.
+
+\institute[Prague] % (optional, but mostly needed)
+{
+  	Charles University, CEPR, METRICS
+
+  %\inst%
+  %Economic Research Department\\
+  %Czech National Bank
+      %\inst{1}%
+  %Research Department\\
+  %Czech National Bank
+  %\and
+  %\inst{2}%
+  %Institute of Economic Studies\\
+  %Charles University, Prague
+  
+%\pgfdeclareimage[height=1cm]{logo}{logo.jpg} % logo only on title page
+%\pgfuseimage{logo}
+}% - Use the \inst command only if there are several affiliations.
+% - Keep it simple, no one is interested in your street address.
+
+\date[Meta in Econ and Finance] % (optional, should be abbreviation of conference name)
+{Research Synthesis in Economics and Finance, \\ University of Canterbury\\[2ex]
+  March 24, 2025
+}%\\[4mm]% - Either use conference name or its abbreviation.
+% - Not really informative to the audience, more for people (including
+%   yourself) who are reading the slides online
+
+
+%\subject{Intertemporal Substitution}
+
+\begin{comment}
+\AtBeginSection[]
+{
+  \begin{frame}<beamer>{Outline}
+    \tableofcontents[currentsection]%,currentsubsection]
+  \end{frame}
+}
+\end{comment}
+
+\begin{document}
+
+\begin{frame}
+  \titlepage
+\end{frame}
+
+\begin{comment}
+
+\begin{frame}{Outline}
+  \tableofcontents
+  % You might wish to add the option [pausesections]
+\end{frame}
+
+\end{comment}
+
+%\section{Summary}
+%\subsection{}
+
+%\section{EIS}
+%\subsection{}
+
+
+
+
+
+
+\begin{frame}{Scholar search replicability}
+	\begin{figure}
+		\centering
+			\includegraphics[width=0.95\textwidth]{search1.png}
+	\end{figure}
+\end{frame}
+
+
+\begin{frame}{Universal coverage}
+	\begin{figure}
+		\centering
+			\includegraphics[width=0.73\textwidth]{prisma.png}
+	\end{figure}
+\end{frame}
+
+\begin{frame}{Measurement error}
+	\begin{figure}
+		\centering
+			\includegraphics[width=1.00\textwidth]{measure.png}
+	\end{figure}
+\end{frame}
+
+
+\begin{frame}{Rounding}
+	\begin{figure}
+		\centering
+			\includegraphics[width=1\textwidth]{round.png}
+	\end{figure}
+\end{frame}
+
+
+\begin{frame}{Outliers}
+	\begin{figure}
+		\centering
+			\includegraphics[width=0.9\textwidth]{outlier.png}
+	\end{figure}
+\end{frame}
+
+\begin{frame}{Too much heterogeneity}
+	\begin{figure}
+		\centering
+			\includegraphics[width=0.75\textwidth]{0.png}
+	\end{figure}
+\end{frame}
+
+
+\begin{frame}{Too much heterogeneity}
+	\begin{figure}
+		\centering
+			\includegraphics[width=0.73\textwidth]{1.png}
+	\end{figure}
+\end{frame}
+
+\begin{frame}{Too much heterogeneity}
+	\begin{figure}
+		\centering
+			\includegraphics[width=0.9\textwidth]{14.png}
+	\end{figure}
+\end{frame}
+
+\begin{frame}{Identification}
+	\begin{figure}
+		\centering
+			\includegraphics[width=0.9\textwidth]{pattern5.pdf}
+	\end{figure}
+\end{frame}
+
+
+\begin{frame}{Omitted variables}
+	\begin{figure}
+		\centering
+			\includegraphics[width=0.85\textwidth]{bma.pdf}
+	\end{figure}
+\end{frame}
+
+
+\begin{frame}{Attenuation bias}
+	\begin{figure}
+		\centering
+			\includegraphics[width=0.8\textwidth]{attenuation2.pdf}
+	\end{figure}
+\end{frame}
+
+
+\begin{frame}{Partial correlations}
+	\begin{figure}
+		\centering
+			\includegraphics[width=0.9\textwidth]{funnel.pdf}
+	\end{figure}
+\end{frame}
+
+\begin{frame}{Partial correlations}
+
+\[
+r_p = \frac{t}{\sqrt{t^2 + \text{df}}},
+\]
+
+\bigskip
+
+\[
+S_1^2 = \frac{(1 - r_p^2)^2}{\text{df}},
+\]
+
+
+\bigskip
+
+\[
+S_2^2 = \frac{1 - r_p^2}{\text{df}}.
+\]
+
+
+\end{frame}
+
+
+
+
+\begin{frame}{Inverse coefficients}
+	\begin{figure}
+		\centering
+			\includegraphics[width=0.85\textwidth]{motivation4.png}
+	\end{figure}
+\end{frame}
+
+
+\begin{frame}{Delta method}
+Based on Taylor series expansion. Basic formula:
+
+\[
+\text{Var}(Y) = \text{Var}(f(X)) \approx [f'(\mu_X)]^2 \text{Var}(X).
+\]
+
+% So, if $Y$ is any function of a random variable $X$, we need only calculate the variance of $X$ and the first derivative of the function to approximate the variance of $Y$.
+
+\bigskip
+
+\underline{\text{Example:}} \, \text{Suppose } $Y = X^2$. \, \text{Then } $f(x) = x^2$ \, \text{and } $f'(x) = 2x$, \, \text{so that:}
+\[
+\text{Var}(Y) \approx [2\mu_X]^2 \text{Var}(X) = 4\mu_X^2\sigma_X^2.
+\]
+
+\underline{\text{Example:}} \, \text{Suppose } $Y = \frac{1}{X}$. \, \text{Then } $f(x) = \frac{1}{x}$ \, \text{and } $f'(x) = -\frac{1}{x^2}$, \, \text{so that:}
+\[
+\text{Var}(Y) \approx \left[\frac{-1}{\mu_X^2}\right]^2 \text{Var}(X) = \frac{\sigma_X^2}{\mu_X^4}.
+\]
+
+
+
+\end{frame}
+
+
+\begin{frame}{Tests disagree}
+	\begin{figure}
+		\centering
+			\includegraphics[width=1.00\textwidth]{fat.pdf}
+	\end{figure}
+\end{frame}
+
+
+\begin{frame}{P-hacking}
+	\begin{figure}
+		\centering
+			\includegraphics[width=0.7\textwidth]{funnel1.pdf}
+	\end{figure}
+\end{frame}
+
+
+\begin{frame}{P-hacking}
+	\begin{figure}
+		\centering
+			\includegraphics[width=0.7\textwidth]{funnel2.pdf}
+	\end{figure}
+\end{frame}
+
+\begin{frame}{P-hacking}
+	\begin{figure}
+		\centering
+			\includegraphics[width=0.7\textwidth]{funnel3.pdf}
+	\end{figure}
+\end{frame}
+
+\begin{frame}{Bias in meta estimators}
+	\begin{figure}
+		\centering
+			\includegraphics[width=1.00\textwidth]{Bias_phack_psi_1_1.pdf}
+	\end{figure}
+\end{frame}
+
+
+
+
+\end{document}
+
+

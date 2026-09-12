@@ -82,6 +82,7 @@
 			<li><a href="/teaching/">Teaching</a></li>
 			<li><a href="/teaching/osaka-2026/">Osaka 2026</a></li>
 			<li class="current_page_item"><a href="/teaching/stockholm-2025/">Stockholm 2025</a></li>
+			<li><a href="/teaching/christchurch-2025/">Christchurch 2025</a></li>
 			<li><a href="/guidelines/">Guidelines</a></li>
 			<li><a href="/">All meta-analyses</a></li>
 		</ul>
@@ -95,9 +96,8 @@
 			<div class="entry">
 
 <p class="lede"><b>The slides as text.</b> Every slide's title, text and figures from the Stockholm course of August 2025,
-generated from <a href="/teaching/stockholm-2025/slides.tex">the LaTeX source</a> so that the course can be read and
-searched without the PDF. The few diagrams drawn in LaTeX itself are only in
-<a href="/teaching/stockholm-2025/slides.pdf">the PDF</a>.</p>
+generated from <a href="/teaching/stockholm-2025/slides.tex">the LaTeX source</a> so that the course can be read and searched without opening a PDF. The few
+diagrams drawn in LaTeX itself are only in <a href="/teaching/stockholm-2025/slides.pdf">the PDF</a>.</p>
 
 <p>The slides are as taught in August 2025. Some of the work in them has been published since, among it the MAIVE paper, now in <i>Nature Communications</i>; <a href="/teaching/osaka-2026/">the Osaka course</a> of March 2026 has the later version.</p>
 
@@ -392,7 +392,7 @@ Robustness | Sensitive to misspecification | More robust</pre>
 <p>The weight is now diluted by a heterogeneity term. More robust to outliers in precision and heterogeneity, less robust to publication bias. Y_i = μ + ξ_i + ε_i, (1); V_i = σ^2/n, (2); W_i = 1/(V_i + τ^2), (3); M = (Σ_(i=1)^k W_i Y_i)/(Σ_(i=1)^k W_i), (4); V_M = 1/(Σ_(i=1)^k W_i). (5)</p>
 <h3>Estimating τ^2 in random-effects model</h3>
 <p><b>Between-study variance</b> τ^2 accounts for heterogeneity across studies. Common estimators:</p>
-<ul><li><b>DerSimonian-Laird (DL)</b>: τ^2_DL = (Q - (k - 1))/C, C = Σ w_i - (Σ w_i^2)/(Σ w_i) - Simple, but underestimates τ^2 when k is small.</li><li><b>Restricted Maximum Likelihood (REML)</b>: max_τ^2 Σ log (w_i^* + τ^2) + Σ ((y_i - θ̂)^2)/(w_i^* + τ^2) - More accurate, default in software.</li></ul>
+<ul><li><b>DerSimonian-Laird (DL)</b>: τ^2_DL = (Q - (k - 1))/C, C = Σ w_i - (Σ w_i^2)/(Σ w_i). Simple, but underestimates τ^2 when k is small.</li><li><b>Restricted Maximum Likelihood (REML)</b>: max_τ^2 Σ log (w_i^* + τ^2) + Σ ((y_i - θ̂)^2)/(w_i^* + τ^2). More accurate, default in software.</li></ul>
 <p><b>Rule of thumb:</b> Use REML unless simplicity is needed!</p>
 <p class="slide-fix" id="correction-reml"><b>Correction.</b> The REML line is not the restricted likelihood. REML chooses τ^2 ≥ 0 to minimise Σ log(v_i + τ^2) + log Σ W_i + Σ W_i (y_i - θ̂)^2, where v_i are the within-study variances, W_i = 1/(v_i + τ^2) and θ̂ is the weighted mean; software solves this numerically. A negative DL estimate is set to zero.</p>
 <h3>Random effects</h3>
@@ -505,11 +505,10 @@ Robustness | Sensitive to misspecification | More robust</pre>
 <h3>Key difference</h3>
 <ul><li><b>Publication bias</b>: all estimates are individually unbiased</li><li>The entire literature is biased because estimates are selectively reported</li><li>If we know publication probabilities, we can recover the true effect (selection models)</li><li><b>P-hacking:</b> individual estimates can be biased</li><li>Classical selection models fail</li><li>Funnel-based models can work (with adjustments)</li></ul>
 <h3>Example: education premium</h3>
-<p>True model: Omitted variable: Proxy: Instrument:</p>
-<p>Earnings_j = γ Education_j + δ Ability_j + v_j,</p>
-<p>Earnings_j = γ Education_j + w_j,</p>
-<p>Earnings_j = γ Education_j + ω IQ_j + x_j,</p>
-<p>Earnings_j = γ Education_j + z_j, Distance_j</p>
+<p>True model: Earnings_j = γ Education_j + δ Ability_j + v_j,</p>
+<p>Omitted variable: Earnings_j = γ Education_j + w_j,</p>
+<p>Proxy: Earnings_j = γ Education_j + ω IQ_j + x_j,</p>
+<p>Instrument: Earnings_j = γ Education_j + z_j, Distance_j</p>
 <p>Ability <b>not observed</b>.</p>
 <p>Primary studies:</p>
 <ol><li>ignore ability → γ̂ too large, SE(γ̂) too small.</li><li>include a proxy → γ̂ smaller, SE(γ̂) larger.</li><li>quasi-experiment → γ̂ even smaller, SE(γ̂) even larger.</li></ol>
@@ -566,9 +565,9 @@ Sample | 5,861 | 5,743 | 5,743 | 5,743 | 5,743 | 5,743</pre>
 <h3>Options for the meta-analyst</h3>
 <ol><li>Use only quasi-experimental studies.</li><li>Include controls (dummies for OLS, DID, …). But in observational research <b>we never know the true model!</b></li><li>Remove “bad” variation from SE → MAIVE.</li></ol>
 <h3>Meta-analysis instrumental variable estimator</h3>
-<p>MAIVE intuition: Ê_i = E_0 + β SE(Ê)^2_i + u_i. 1/N_i</p>
-<p>MAIVE first stage: SE(Ê)^2_i = α_0 + α_1 ( 1/N_i ) + π_i. hacking or misspecifications</p>
-<p>MAIVE adjustment: SE(Ê)^2_(adj,i) = α̂_0 + α̂_1 (1/N_i ) + π_i. hacking or misspecifications</p>
+<p>MAIVE intuition: Ê_i = E_0 + β SE(Ê)^2_i + u_i, where the standard error, by definition, depends on 1/N_i.</p>
+<p>MAIVE first stage: SE(Ê)^2_i = α_0 + α_1 (1/N_i) + π_i, where π_i stands for hacking or misspecifications.</p>
+<p>MAIVE adjustment: SE(Ê)^2_(adj,i) = α̂_0 + α̂_1 (1/N_i). On the slide, π_i and its label, hacking or misspecifications, are struck out: the adjusted standard error keeps only the part explained by sample size.</p>
 <ul><li>MAIVE + PEESE = classical IV.</li><li>Can add <b>controls in the 2nd stage</b>.</li><li>Plug MAIVE-adjusted SEs into other estimators.</li></ul>
 <p class="slide-fig">(With a diagram, in the PDF.)</p>
 <h3>MAIVE alleviates the bias</h3>
@@ -666,7 +665,7 @@ Sample | 5,861 | 5,743 | 5,743 | 5,743 | 5,743 | 5,743</pre>
 <h3>Three estimation frameworks</h3>
 <figure class="slide-figure"><img src="figures/lecture10-pattern1.png" alt="Three estimation frameworks" width="1200" height="873" loading="lazy" /></figure>
 <h3>Strong publication bias (or <i>p</i>-hacking?)</h3>
-<figure class="slide-figure"><img src="figures/lecture10-funnel.png" alt="Strong publication bias (or Ip/I-hacking?)" width="1200" height="873" loading="lazy" /></figure>
+<figure class="slide-figure"><img src="figures/lecture10-funnel.png" alt="Strong publication bias (or p-hacking?)" width="1200" height="873" loading="lazy" /></figure>
 <h3>OLS: no effect (but attenuation &amp; endogeneity biases)</h3>
 <figure class="slide-figure"><img src="figures/lecture10-ols.png" alt="OLS: no effect (but attenuation &amp; endogeneity biases)" width="1200" height="742" loading="lazy" /></figure>
 <h3>IV: strong effect (no biases beyond publication)</h3>

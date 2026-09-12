@@ -1,0 +1,686 @@
+% $Header: /home/vedranm/bitbucket/beamer/solutions/conference-talks/conference-ornate-20min.en.tex,v 90e850259b8b 2007/01/28 20:48:30 tantau $
+
+\documentclass{beamer} %[compress]
+% alternatively add handout or draft option
+
+%\mode<handout>%{\setbeamercolor{background canvas}{bg=black!5}}
+%\usepackage{pgfpages}
+%\pgfpagesuselayout{4 on 1}[a4paper,border shrink=5mm,landscape]
+% For handout printing, 4 slides on 1 page
+
+\mode<presentation>
+{
+  \usetheme{Pittsburgh} % plain template Pittsburgh
+  \useoutertheme{infolines} % bottom (author, title, place)
+  \useoutertheme[subsection=false]{miniframes} % top (sections, frames)
+  \usecolortheme{beaver} %blue color whale
+	\setbeamertemplate{frametitle}[default][right] % frame titles on the right
+  \setbeamercovered{transparent}
+  % or whatever (possibly just delete it)
+}
+
+\setbeamersize{text margin left=1cm, text margin right=1cm}
+%\setbeamertemplate{navigation symbols}{}
+\usepackage[english]{babel}
+\usepackage{booktabs}
+\usepackage{comment}
+% or whatever
+
+\usepackage[cp1250]{inputenc}
+% or whatever
+\usepackage{subfigure} %subfigures
+
+\usepackage{times}
+%\usepackage{breqn}
+\usepackage{amsmath}
+\usepackage[T1]{fontenc}
+\def\sym#1{\ifmmode^{#1}\else\(^{#1}\)\fi} %shortcut for Stata tables
+% Or whatever. Note that the encoding and the font should match. If T1
+% does not look nice, try deleting the line with the fontenc.
+
+%\logo{\includegraphics[height=0.5cm]{logo.jpg}} % logo on every page
+
+
+
+\title[Lecture 2: Examples] % (optional, use only with long paper titles)
+{Lecture 2: Applied Meta-Analysis Examples}
+
+\author[T.\ Havranek] % (optional, use only with lots of authors)
+{ Tomas Havranek
+}
+% - Give the names in the same order as the appear in the paper.
+% - Use the \inst{?} command only if the authors have different
+%   affiliation.
+
+\institute[Prague] % (optional, but mostly needed)
+{
+  	Charles University, CEPR, METRICS
+
+  %\inst%
+  %Economic Research Department\\
+  %Czech National Bank
+      %\inst{1}%
+  %Research Department\\
+  %Czech National Bank
+  %\and
+  %\inst{2}%
+  %Institute of Economic Studies\\
+  %Charles University, Prague
+  
+%\pgfdeclareimage[height=1cm]{logo}{logo.jpg} % logo only on title page
+%\pgfuseimage{logo}
+}% - Use the \inst command only if there are several affiliations.
+% - Keep it simple, no one is interested in your street address.
+
+\date[Meta in Econ and Finance] % (optional, should be abbreviation of conference name)
+{Research Synthesis in Economics and Finance, \\ University of Canterbury\\[2ex]
+  February 18, 2025
+}%\\[4mm]% - Either use conference name or its abbreviation.
+% - Not really informative to the audience, more for people (including
+%   yourself) who are reading the slides online
+
+
+%\subject{Intertemporal Substitution}
+
+\begin{comment}
+\AtBeginSection[]
+{
+  \begin{frame}<beamer>{Outline}
+    \tableofcontents[currentsection]%,currentsubsection]
+  \end{frame}
+}
+\end{comment}
+
+\begin{document}
+
+\begin{frame}
+  \titlepage
+\end{frame}
+
+
+\begin{frame}{Example 1: Daylight saving time}
+When using econometric analysis, researchers typically estimate the following model: 
+\begin{equation*}\label{eq:dst}
+ln\text{Consumption}_{t} = \alpha + \text{\emph{DST}}\cdot\text{Treatment effect}_{t} + \text{Controls}_{t} + \epsilon.
+\end{equation*}
+\vspace{-0.5cm}
+\begin{itemize}
+	\item \emph{Consumption}: the average energy consumption during time \emph{t} for a given hour, day, and year.
+\item \emph{Treatment effect}: equals 1 for all hours when daylight saving time applies. 
+\item \emph{Controls}: seasonality and holidays, weather, the intensity of sunlight, heterogeneity among consumption units, etc. 
+\end{itemize}
+\end{frame}
+
+
+\begin{frame}{No consensus in the literature}
+\begin{center}
+		\includegraphics[width=0.87\textwidth]{_trend.pdf}
+\end{center}
+\end{frame}
+
+
+
+
+
+
+\begin{frame}{Journals report smaller savings}
+\begin{center}
+		\includegraphics[width=0.87\textwidth]{_density.pdf}
+\end{center}
+\end{frame}
+
+\begin{frame}{Publication bias? Probably not}
+\begin{center}
+		\includegraphics[width=0.87\textwidth]{_funnel.pdf}
+\end{center}
+\end{frame}
+
+
+
+\begin{frame}{Funnel asymmetry tests}
+If the ratio of the point estimate to its standard error has a $t$-distribution, then the two quantities should be independent:
+\begin{equation*}
+\mbox{estimate}_i = \underbrace{\beta}_{\mbox{true effect}} + \underbrace{\beta_0 SE_i}_{\mbox{publication bias}} + \mu_{i}.
+\end{equation*}
+
+%The equation is heteroscedastic. Weighted least squares yield 
+
+%\begin{equation*} 
+%t_i = \beta_0 + \beta \left(\frac{1}{SE_i}\right) + \vartheta_{i}.
+%\end{equation*} 
+The no.\ of obs.\ can be used as an instrument for SE.
+
+\bigskip
+
+\begin{tiny}
+\begin{tabular*}{1\hsize}{@{\hskip\tabcolsep\extracolsep\fill}l*{7}{c}}
+\toprule
+                &\multicolumn{1}{c}{OLS} &\multicolumn{1}{c}{FE}  &\multicolumn{1}{c}{BE}&\multicolumn{1}{c}{Country}&\multicolumn{1}{c}{ME}  &\multicolumn{1}{c}{IV}  \\
+\midrule
+SE (\emph{publication bias})     &   -0.410 &   -1.217&   -0.410&   -0.496&   -0.449 &    0.226  \\
+                &  (0.265)&  (0.790)&  (0.757)&  (0.805)  &  (0.688)  &  (1.088) \\
+Constant (\emph{true effect}) &   -0.293\sym{\sym{***}}&   -0.222\sym{\sym{***}}&   -0.294\sym{\sym{***}}&   -0.278\sym{\sym{***}}&   -0.291\sym{\sym{***}}&   -0.445\sym{\sym{*}}  \\
+                &(0.000778)& (0.0700)& (0.00812)& (0.0459)&(0.00731)&  (0.243) \\
+\midrule
+Observations    &      101               &      101               &      101               &      101&   101&    90\\
+\bottomrule
+\end{tabular*}
+\end{tiny}
+\end{frame}
+
+\begin{frame}{Country heterogeneity}
+\begin{center}
+		\includegraphics[width=0.65\textwidth]{_countries.pdf}
+\end{center}
+\end{frame}
+
+\begin{frame}{Method heterogeneity (just studies for the US)}
+\begin{center}
+		\includegraphics[width=0.65\textwidth]{_studies.pdf}
+\end{center}
+\end{frame}
+
+
+
+\begin{frame}{What explains the differences in conclusions? (1)}
+\begin{scriptsize}
+\begin{tabular}{@{\hskip\tabcolsep\extracolsep\fill}p{0.2\hsize}p{0.7\hsize}}%p{0.05\hsize}p{0.05\hsize}}
+\toprule
+  \multicolumn{2}{l}{\textit{Data characteristics}} \\
+    Data period & The number of years used in the estimation. \\
+    Main estimate & = 1 if the estimate is preferred by the authors of the study. \\
+		Hourly data & = 1 if the data are examined on hourly or higher than hourly granularity. \\
+    Daily data & = 1 if the data are examined on a daily basis. \\
+    Daylight hours & Average time between sunrise and sunset on the longest day for the country or region under examination. \\
+    Europe & = 1 if European countries are examined.  \\
+    USA   & = 1 if US data are examined.  \\
+    		\midrule
+    \multicolumn{2}{l}{\textit{Design of the analysis}} \\
+    Regression analysis & = 1 if the primary study is based on regression analysis.  \\
+    Simulation analysis &  = 1 if the study is based on simulation. \\
+    Difference-in-diff. &  = 1 if the difference-in-differences approach is employed.  \\
+    Residential cons. &  = 1 if only residential consumption is examined.  \\
+    Lighting cons. & = 1 if total energy savings are reported as a result of lighting reduction.  \\
+\bottomrule
+\end{tabular}
+\end{scriptsize}
+\end{frame}
+
+\begin{frame}{What explains the differences in conclusions? (2)}
+\begin{scriptsize}
+\begin{tabular}{@{\hskip\tabcolsep\extracolsep\fill}p{0.2\hsize}p{0.7\hsize}}%p{0.05\hsize}p{0.05\hsize}}
+\toprule
+    \multicolumn{2}{l}{\textit{Publication characteristics}} \\
+		Publication year & The publication year of the study (base = 1970).  \\
+    Journal article &  = 1 if the study was published in a peer-reviewed journal. \\
+    Impact factor & The recursive RePEc impact factor of the outlet. \\
+    Citations & The logarithm of the total number of citations of the study in Google Scholar. \\
+\bottomrule
+\end{tabular}
+\end{scriptsize}
+\end{frame}
+
+
+
+\begin{frame}{Bayesian model averaging}
+\begin{center}
+		\includegraphics[width=1\textwidth]{bma_uip.pdf}
+\end{center}
+\end{frame}
+
+
+
+  
+\begin{frame}{Results}
+  \begin{block}{Main Findings}
+  \begin{enumerate}
+  \item
+The mean reported estimate suggests energy savings of 0.34\% due to DST.
+\item
+The results are driven by the method employed (simulation vs.\ regression).
+    \item
+Energy savings are larger for countries farther away from the equator.
+  \end{enumerate}
+  \end{block}
+
+\vskip0pt plus.5fill
+    \begin{block}{Project Website}
+      \href{http://www.meta-analysis.cz/dst}{www.meta-analysis.cz/dst}
+    \end{block}
+\end{frame}
+
+% All of the following is optional and typically not needed. 
+%\appendix
+%\section<presentation>*{\appendixname}
+%\subsection<presentation>*{For Further Reading}
+
+\begin{frame}%[allowframebreaks]
+  \frametitle<presentation>{For further reading}
+    
+  \begin{thebibliography}{10}
+    
+  \beamertemplatebookbibitems
+  % Start with overview books.
+    
+    \bibitem[{Hunter \& Schmidt(1990)}]{Hunter1990}
+Stanley, T.\ D.\ \& C. Doucouliagos (2012): {{Meta-Regression Analysis in Economics and Business}.}\newblock Routledge, 1st. edition.
+  
+  \beamertemplatearticlebibitems
+  % Followed by interesting articles. Keep the list short. 
+    
+   \bibitem[{Stanley(2008)}]{Stanley2010}
+Brodeur, A., M. Sangnier \& Y. Zylberg (2016): \\ {{Star Wars: The Empirics Strike Back}.} \newblock \emph{AEJ Applied} 8(1): pp. 1--32. 
+    
+    \bibitem[{Stanley(2001)}]{Stanley2001}
+Havranek, T. (2015): {{Measuring Intertemporal Substitution: The Importance of Method Choices and Publication Bias}.}
+\newblock \emph{JEEA} 13(6): pp.\ 1180--1204.
+    \end{thebibliography}
+\bigskip
+Reading list on RePEc: Google ``meta-analysis in economics.'' %\href{http://ideas.repec.org/k/metaana.html}{ideas.repec.org/k/metaana.html}
+    \end{frame}
+
+
+
+
+
+
+
+
+
+
+\begin{frame}{Example 2: Interest rates and house prices}
+\begin{figure}
+	\centering
+		\includegraphics[width=0.9\textwidth]{mean_irf_include}
+\end{figure}
+\end{frame}
+
+
+
+
+\begin{frame}{Converting graphs to data}
+We measure pixel coordinates using WebPlotDigitizer:
+\smallskip
+\smallskip
+\begin{figure}
+	\centering
+		\includegraphics[width=1.0\textwidth]{measure.png}
+\end{figure}
+
+\end{frame}
+
+
+
+
+\begin{frame}{Literature search}
+\begin{figure}
+	\centering
+		\includegraphics[width=0.7\textwidth]{prisma.png}
+\end{figure}
+\end{frame}
+
+
+
+\begin{frame}{Histograms for different horizons}
+\begin{figure}
+	\centering
+		\includegraphics[width=0.9\textwidth]{hist}
+\end{figure}
+\end{frame}
+
+
+
+
+
+
+
+
+\begin{frame}{Funnel asymmetry test (Card \& Krueger)}
+In the absence of publication bias the funnel should be symmetrical:
+\begin{equation*}
+\mbox{estimate}_i = \underbrace{\beta}_{\mbox{true effect}} + \underbrace{\beta_0 SE_i}_{\mbox{publication bias}} + \mu_{i}.
+\end{equation*}
+
+The equation is heteroscedastic. Weighted least squares yield 
+
+\begin{equation*} 
+t_i = \beta_0 + \beta \left(\frac{1}{SE_i}\right) + \vartheta_{i}.
+\end{equation*} 
+The no.\ of obs.\ can be used as an instrument for SE.
+\end{frame}
+
+
+
+
+
+
+\begin{frame}{Publication bias for longer horizons?}
+\begin{figure}
+	\centering
+		\includegraphics[width=0.9\textwidth]{funnels}
+\end{figure}
+\end{frame}
+
+
+\begin{frame}{Corroborated by funnel asymmetry tests}
+Note that the slope is negative, the intercept is smaller than the reported mean effect:
+
+\smallskip
+\smallskip
+
+\begin{figure}
+	\centering
+		\includegraphics[width=1.05\textwidth]{fat.png}
+\end{figure}
+\end{frame}
+
+\begin{frame}{Nonliner tests also imply bias}
+Note that the corrected effect is smaller than the reported mean effect:
+
+\smallskip
+\smallskip
+\begin{figure}
+	\centering
+		\includegraphics[width=1.05\textwidth]{fat2.png}
+\end{figure}
+\end{frame}
+
+
+
+
+\begin{frame}{Mean impulse response beyond publication bias}
+\begin{figure}
+	\centering
+		\includegraphics[width=0.9\textwidth]{beyond_bias}
+\end{figure}
+\end{frame}
+
+
+
+
+\begin{frame}{Cross-country heterogeneity}
+\begin{figure}
+	\centering
+		\includegraphics[width=0.9\textwidth]{country_response}
+\end{figure}
+\end{frame}
+
+
+\begin{frame}{Estimation context}
+\begin{itemize}
+	\item \textbf{Data characteristics}: monthly, panel, length, age
+		\item \textbf{Specification characteristics}: foreign IR, credit, consumption, res.\ invest., money supply, exch.\ rate, long-run IR, lags
+		\item \textbf{Estimation characteristics}: BVAR, sign restr.\ HP, sign restr.\ other, nonrecursive
+		\item \textbf{Publication characteristics}: citations, impact, published
+				\item \textbf{Country characteristics}: mortgage-to-GDP, floating, maturity, IR, spread, prolonged high HP, PTI, crisis, prolonged low IR, tourism, income, inflation, popul.\ growth, permits, ownership
+		
+\end{itemize}
+
+\end{frame}
+
+
+
+\begin{frame}{Bayesian model averaging}
+\begin{figure}
+	\centering
+		\includegraphics[width=0.85\textwidth]{bma}
+\end{figure}
+\end{frame}
+
+
+
+
+\begin{frame}{Best practice}
+We construct a hypothetical ideal study: no publication bias \\ (SE = 0), recent data, long series, nonrecursive identification, published, good journal, highly cited.
+
+\bigskip
+
+\begin{figure}
+	\centering
+		\includegraphics[width=1\textwidth]{best.png}
+\end{figure}
+\end{frame}
+
+
+
+
+\begin{frame}{Impulse response implied by best practice}
+\begin{figure}
+	\centering
+		\includegraphics[width=0.9\textwidth]{best_practice_v2}
+\end{figure}
+\end{frame}
+
+
+
+
+
+
+\begin{frame}{Results}
+  \begin{block}{Main Findings}
+  \begin{enumerate}
+  \item
+Among 237 impulse responses from 37 studies, the mean decrease in house prices is 1.2\% two years after a 1 pp.\ increase in the policy rate.
+\item
+The mean is exaggerated because of publication bias.
+    \item
+Stronger transmission for i) more developed markets,\\ ii) flatter yield curve, iii) house price boom.
+  \end{enumerate}
+  \end{block}
+
+\vskip0pt plus.5fill
+    \begin{block}{Project Website}
+      \href{http://www.meta-analysis.cz/house_prices}{www.meta-analysis.cz/house\_prices}
+    \end{block}
+\end{frame}
+
+
+
+
+\begin{comment}
+% All of the following is optional and typically not needed. 
+%\appendix
+%\section<presentation>*{\appendixname}
+%\subsection<presentation>*{For Further Reading}
+
+\begin{frame}%[allowframebreaks]
+  \frametitle<presentation>{Recent meta papers of our team}
+    
+  \begin{thebibliography}{10}
+  %\beamertemplatebookbibitems
+  % Start with overview books.
+   % \bibitem[{Hunter \& Schmidt(1990)}]{Hunter1990}
+%Stanley, T.\ D.\ \& C. Doucouliagos (2012): {{Meta-Regression Analysis in Economics and Business}.}\newblock Routledge, 1st. edition.
+  \beamertemplatearticlebibitems
+  % Followed by interesting articles. Keep the list short. 
+ 
+	    \bibitem[{Hunter \& Schmidt(1990)}]{Hunter1990}
+Irsova, Z., P.\ Bom, T.\ Havranek, \& H.\ Rachinger (2024): {{Spurious Precision of Meta-Analysis of Observational Research}.}\newblock \emph{Nature Human Behaviour}, revisions requested.
+	
+	   \bibitem[{Stanley(2008)}]{Stanley2010}
+Havranek, T., Z.\ Irsova, L.\ Laslopova, \& O.\ Zeynalova (2024): {{Publication and Attenuation Biases in Measuring Skill Substitution}.}\newblock \emph{Review of Economics and Statistics}, forthcoming.
+
+    \bibitem[{Stanley(2001)}]{Stanley2001}
+Opatrny, M.\, T.\ Havranek, Z.\ Irsova, \& M.\ Scasny (2024): {{Publication Bias and Model Uncertainty in Measuring the Effect of Class Size on Achievement}.}
+\newblock \emph{Journal of Labor Economics}, revisions requested.
+    
+
+
+\end{comment}
+
+
+
+\begin{frame}{Example 3: Working while in school}
+\begin{itemize}
+	\item  Hard to influence commonly cited determinants of educational outcomes: ability, ethnicity, gender, parental
+education and affluence
+\item But most students can decide whether or not to work
+\item How does that influence educational outcomes?
+\item Should you motivate your kids to work while in school?
+\item Mixed empirical results: from large negative to positive estimates	
+	\item 861 estimates from 69 studies
+\end{itemize}
+\end{frame}
+
+
+\begin{frame}{No consensus in the literature}
+\begin{figure}
+	\centering
+		\includegraphics[width=0.9\textwidth]{trend.pdf}
+	\label{fig:trend}
+\end{figure}
+
+\end{frame}
+
+
+
+
+\begin{frame}{Negative for all countries except Germany}
+\begin{figure}
+	\centering
+		\includegraphics[width=1.00\textwidth]{countries.pdf}
+	\label{fig:countries}
+\end{figure}
+
+\end{frame}
+
+
+
+\begin{frame}{Work intensity clearly matters}
+\begin{figure}
+	\centering
+		\includegraphics[width=0.9\textwidth]{pattern3.pdf}
+	\label{fig:pattern3}
+\end{figure}
+
+\end{frame}
+
+
+
+
+\begin{frame}{Endogeneity control is important}
+\begin{figure}
+	\centering
+		\includegraphics[width=0.9\textwidth]{pattern5.pdf}
+	\label{fig:pattern5}
+\end{figure}
+
+\end{frame}
+
+
+
+
+\begin{frame}{Little publication bias on average}
+\begin{figure}
+	\centering
+		\includegraphics[width=0.9\textwidth]{maer2022/funnel.pdf}
+	\label{fig:funnel}
+\end{figure}
+
+\end{frame}
+
+
+
+
+\begin{frame}{No bias in studies addressing endogeneity}
+\begin{figure}
+	\centering
+		\includegraphics[width=1.00\textwidth]{maer2022/iv.pdf}
+	\label{fig:iv}
+\end{figure}
+
+\end{frame}
+
+
+
+
+
+\begin{frame}{Strong bias in studies ignoring endogeneity}
+\begin{figure}
+	\centering
+		\includegraphics[width=0.97\textwidth]{maer2022/ols.pdf}
+	\label{fig:ols}
+\end{figure}
+
+\end{frame}
+
+
+
+
+
+
+
+\begin{frame}{Model uncertainty; endogeneity control is key}
+\begin{figure}
+	\centering
+		\includegraphics[width=0.82\textwidth]{bmax.pdf}
+	\label{fig:bma}
+\end{figure}
+
+\end{frame}
+
+
+
+
+\begin{frame}{Closer look: work intensity, measurement}
+\begin{figure}
+	\centering
+		\includegraphics[width=1\textwidth]{densities.pdf}
+	\label{fig:densities}
+\end{figure}
+
+\end{frame}
+
+
+
+\begin{frame}{Closer look: endogeneity, panel data, Germany}
+\begin{figure}
+	\centering
+		\includegraphics[width=1.00\textwidth]{densities1.pdf}
+	\label{fig:densities1}
+\end{figure}
+
+\end{frame}
+
+
+
+
+
+\begin{frame}{Best practice estimates}
+\begin{figure}
+	\centering
+		\includegraphics[width=1.00\textwidth]{best.pdf}
+	\label{fig:best}
+\end{figure}
+
+\end{frame}
+
+
+
+
+  
+\begin{frame}{Results}
+  \begin{block}{Main Findings}
+  \begin{enumerate}
+  \item
+Publication and endogeneity biases interact.
+\item
+The corrected effect is negative but economically zero.
+    \item
+Effects negative for high-intensity work, positive for Germany.
+  \end{enumerate}
+  \end{block}
+
+\vskip0pt plus.5fill
+    \begin{block}{Project Website}
+      \href{http://www.meta-analysis.cz/students}{www.meta-analysis.cz/students}
+    \end{block}
+\end{frame}
+
+
+
+
+
+\end{document}
+
+
