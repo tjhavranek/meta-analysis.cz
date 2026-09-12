@@ -1347,7 +1347,8 @@ def main():
            f"is what {BASE}/search/ runs on. Useful if you would "
            f"rather find the two pages that answer a question than read all {_n_full}",
            f"- [Every paper in full text]({BASE}/llms-full.txt): the whole corpus in one file -- "
-           f"citation, links, abstract, and the complete text of all {_n_full} papers, for LLM ingestion",
+           f"citation, links, abstract, and the complete text of all {_n_full} papers, then the "
+           f"course pages and the full text of the course slides, for LLM ingestion",
            f"- [Papers republished in full as HTML]({BASE}/papers/): the complete text of each "
            f"paper -- body, tables, figures, equations, and references -- readable and quotable "
            f"without opening a PDF",
@@ -1366,7 +1367,7 @@ def main():
            f"example with every number archived at {BASE}/api/v1/maive-howto.json, the same run "
            f"in R, and a ready request for the EasyMeta API",
            f"- [Teaching: courses on meta-analysis]({BASE}/teaching/): slides with their LaTeX "
-           f"sources, Stata and R code, data, and recordings, from courses in Osaka (2026) and "
+           f"sources, Stata and R code, data, and the Osaka recordings, from courses in Osaka (2026) and "
            f"Stockholm (2025)",
            f"- [Meta-Analysis in Economics, Osaka 2026]({BASE}/teaching/osaka-2026/): "
            f"a three-hour course at ISER, the University of Osaka, with the slides as text at "
@@ -1459,6 +1460,30 @@ def main():
             lf += [body, ""]
     for doc, body in extra_documents():
         lf += doc + [body, ""]
+    # The teaching section: each course page and its slides as text, so a reader of this one
+    # file gets the course material itself and not only a link to it. The Chemnitz draft stays
+    # out, as it stays out of the sitemap.
+    import html as _html
+
+    def _teaching_text(path):
+        h = open(path, encoding="utf-8").read()
+        title = _html.unescape(re.search(r"<title>(.*?)</title>", h, re.S).group(1)).strip()
+        mm = re.search(r'<div class="entry">(.*?)</div>\s*</div>\s*</div>\s*</div>\s*<!-- end page -->', h, re.S)
+        b = re.sub(r"(?s)<(script|style)\b.*?</\1>", "", mm.group(1) if mm else "")
+        b = re.sub(r"(?s)<h2[^>]*>(.*?)</h2>", lambda x: "\n### " + x.group(1) + "\n", b)
+        b = re.sub(r"(?s)<h3[^>]*>(.*?)</h3>", lambda x: "\n#### " + x.group(1) + "\n", b)
+        b = re.sub(r"<li[^>]*>", "\n- ", b)
+        b = re.sub(r"<td[^>]*>", " ", b)
+        b = re.sub(r"</(?:p|ul|ol|table|tr|pre|blockquote|div)>", "\n", b)
+        b = _html.unescape(re.sub(r"<[^>]+>", "", b))
+        b = "\n".join(re.sub(r"[ \t]+", " ", l).strip() for l in b.splitlines())
+        return title, re.sub(r"\n{3,}", "\n\n", b).strip()
+    for _c in ("osaka-2026", "stockholm-2025"):
+        for _rel in (f"teaching/{_c}/", f"teaching/{_c}/slides/"):
+            _f = os.path.join(SITE, _rel, "index.html")
+            if os.path.isfile(_f):
+                _t, _txt = _teaching_text(_f)
+                lf += [f"## {_t}", f"URL: {BASE}/{_rel}", "Licence: CC BY 4.0", "", _txt, ""]
     open(os.path.join(SITE, "llms-full.txt"), "w", encoding="utf-8", newline="\n").write("\n".join(lf))
     refresh_about_counts(_api)
     print("wrote robots.txt, sitemap.xml, llms.txt, llms-full.txt")

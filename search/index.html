@@ -4,12 +4,12 @@
 <meta http-equiv="content-type" content="text/html; charset=utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>Search</title>
-<meta name="description" content="Search every page on meta-analysis.cz: 70 papers in full, the research notes, the datasets, and the guidelines. The search runs in your browser; nothing is sent anywhere." />
+<meta name="description" content="Search every page on meta-analysis.cz: 71 papers in full, the research notes, the datasets, and the guidelines. The search runs in your browser; nothing is sent anywhere." />
 <link rel="canonical" href="https://meta-analysis.cz/search/" />
 <meta property="og:site_name" content="meta-analysis.cz" />
 <meta property="og:type" content="website" />
 <meta property="og:title" content="Search meta-analysis.cz" />
-<meta property="og:description" content="Full-text search over the site: 70 papers in full, the research notes, the datasets, and the guidelines." />
+<meta property="og:description" content="Full-text search over the site: 71 papers in full, the research notes, the datasets, and the guidelines." />
 <meta property="og:url" content="https://meta-analysis.cz/search/" />
 <link href="/style.css" rel="stylesheet" type="text/css" />
 <link href="/paper.css" rel="stylesheet" type="text/css" />
@@ -57,7 +57,7 @@
 <a href="/sitemap.xml">sitemap</a> are the way around the site.</p>
 </noscript>
 
-<p class="searchnote">Every page of this site is indexed, including all 70
+<p class="searchnote">Every page of this site is indexed, including all 71
 papers in full; a handful of words that appear on more than half the pages are dropped as
 uninformative. The index is downloaded once and searched in your browser: no query is sent
 to this site or to anyone else, and a page published a minute ago is findable a minute ago.
@@ -137,10 +137,15 @@ rather search it yourself.</p>
   function search(q) {
     var want = terms(q);
     if (!want.length) return { rows: [], want: want, allCommon: false };
-    var scores = null, allCommon = true;
-    for (var i = 0; i < want.length; i++) {
-      if (idx.common.indexOf(want[i]) < 0) allCommon = false;
-      var p = postings(want[i], i === want.length - 1);
+    // Words too common to be indexed ("of", "the", "meta") have no postings, so scoring them
+    // made "meta-analysis of beauty" or "slides on meta-analysis" return nothing at all. They
+    // are left out of the scoring and kept in `want`, which only highlights.
+    var use = want.filter(function (w) { return idx.common.indexOf(w) < 0; });
+    if (!use.length) return { rows: [], want: want, allCommon: true };
+    var last = want[want.length - 1], scores = null;
+    for (var i = 0; i < use.length; i++) {
+      var typing = i === use.length - 1 && use[i] === last;
+      var p = postings(use[i], typing);
       var next = Object.create(null), any = false;
       for (var d in p.hits) {
         if (scores === null || d in scores) {
@@ -150,9 +155,10 @@ rather search it yourself.</p>
       }
       // A word nobody has is not a reason to return nothing when it is the one still being
       // typed; every finished word has to be somewhere.
-      if (!any && !(i === want.length - 1 && p.df === 0)) return { rows: [], want: want, allCommon: allCommon };
+      if (!any && !(typing && p.df === 0)) return { rows: [], want: want, allCommon: false };
       if (any) scores = next;
     }
+    var allCommon = false;
     if (scores === null) return { rows: [], want: want, allCommon: allCommon };
     var rows = Object.keys(scores).map(function (d) {
       return { doc: idx.docs[d], score: scores[d] };

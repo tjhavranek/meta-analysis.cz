@@ -55,6 +55,9 @@
    "hasPart": [
     {
      "@id": "https://meta-analysis.cz/teaching/stockholm-2025/#slides"
+    },
+    {
+     "@id": "https://meta-analysis.cz/teaching/stockholm-2025/slides/#text"
     }
    ],
    "isPartOf": {
@@ -93,6 +96,7 @@
 .entry p.slide-fig{ margin-top:0; font-size:var(--f-1); color:var(--ink-soft); }
 .entry pre.slide-table{ max-width:100%; overflow-x:auto; font-size:var(--f-1); line-height:1.4; }
 .entry .slides-text h3{ margin-top:var(--s5); }
+.entry p.slide-fix{ border-left:3px solid var(--rule); padding-left:var(--s3); font-size:var(--f-1); }
 </style>
 </head>
 <body>
@@ -158,7 +162,7 @@ professional success</a> as the running example.</p>
 <h2 id="slides">Slides</h2>
 
 <ul class="reading">
-<li><a href="/teaching/stockholm-2025/slides.pdf">slides.pdf</a>: the 234 PDF pages as taught</li>
+<li><a href="/teaching/stockholm-2025/slides.pdf">slides.pdf</a>: the 234 PDF pages as taught, with the closing slide updated to carry the licence line</li>
 <li><a href="/teaching/stockholm-2025/slides/">The slides as text</a>: every slide's title and text, for reading and searching without the PDF</li>
 <li><a href="/teaching/stockholm-2025/slides.tex">slides.tex</a>: the LaTeX source, and <a href="/teaching/stockholm-2025/latex.zip">latex.zip</a>: the source with all 133 figures, ready for pdflatex</li>
 </ul>
@@ -168,12 +172,24 @@ August 2025: a proposed test of whether the variance of the underlying effects i
 applied to a meta-analysis of 126 nudge experiments. The <a href="/teaching/osaka-2026/">Osaka
 course</a> of March 2026 uses a shorter and updated version of this deck.</p>
 
+<h2 id="corrections">Corrections</h2>
+
+<p>Three slides contain errors found after the course. The PDF and the LaTeX source are left as
+taught; each correction also appears under its slide in <a href="/teaching/stockholm-2025/slides/">the slides as text</a>.</p>
+
+<ul class="reading">
+<li><a href="/teaching/stockholm-2025/slides/#correction-uwls">FE vs. UWLS: variance</a>. The UWLS variance of the pooled estimate is Σ w_i (θ_i - θ̂)^2 / ((k - 1) Σ w_i); the table leaves out the factor k - 1. This is the formula for independent estimates: with several estimates per study, use standard errors clustered by study, as the course code does.</li>
+<li><a href="/teaching/stockholm-2025/slides/#correction-reml">Estimating τ^2 in random-effects model</a>. The REML line is not the restricted likelihood. REML chooses τ^2 ≥ 0 to minimise Σ log(v_i + τ^2) + log Σ W_i + Σ W_i (y_i - θ̂)^2, where v_i are the within-study variances, W_i = 1/(v_i + τ^2) and θ̂ is the weighted mean; software solves this numerically. A negative DL estimate is set to zero.</li>
+<li><a href="/teaching/stockholm-2025/slides/#correction-paxil">Paxil scandal</a>. The FDA never approved paroxetine for patients under 18: it was approved for adults and promoted for adolescent depression. Study 329 ran from 1994 to 1998 and was published in 2001; the independent reanalysis appeared in 2015.</li>
+</ul>
+
+
 <h2 id="code">Code and data</h2>
 
 <p>The hands-on part replicates selected analyses of <a href="/beauty/">the meta-analysis of
 beauty and professional success</a>, from the raw estimates to estimates corrected for
-publication bias and to the effect implied by best practice. The course files, from which only
-hidden file metadata, such as saved-folder paths, has been removed:</p>
+publication bias and to the effect implied by best practice. The course files as participants
+received them (hidden metadata such as saved-folder paths removed):</p>
 
 <ul class="reading">
 <li><a href="/teaching/stockholm-2025/code/beauty.xlsx">beauty.xlsx</a>: the 1,159 estimates from 67 studies, with their moderator variables</li>
@@ -199,13 +215,13 @@ packages it depends on):</p>
 
 <p>In Stata, put beauty.xlsx in the working directory and run beauty.do section by section. In R,
 put beauty_bma.csv next to beauty_bma.R and run the script. RTMA and BMA are simulation-based,
-so their results can differ slightly between runs; a set.seed() line at the top of the R script
-makes a run repeatable. The main corrections for publication bias and p-hacking now also run without any installation at <a href="https://www.easymeta.org/">EasyMeta.org</a>.</p>
+so their results can differ slightly between runs; to make a run repeatable, add a set.seed() line
+at the top of the R script. The main corrections for publication bias and p-hacking now also run without any installation at <a href="https://www.easymeta.org/">EasyMeta.org</a>.</p>
 
 <h2 id="readings">Readings</h2>
 
 <ul class="reading">
-<li><a href="/guidelines/">The practitioner&#8217;s guide to meta-analysis</a> (Irsova, Doucouliagos, Havranek and Stanley, <i>Journal of Economic Surveys</i>)</li>
+<li><a href="/guidelines/">Meta-Analysis of Social Science Research: A Practitioner&#8217;s Guide</a> (Irsova, Doucouliagos, Havranek and Stanley, <i>Journal of Economic Surveys</i>, 2024)</li>
 <li><a href="/maive/">MAIVE: spurious precision in meta-analysis of observational research</a> (Irsova, Bom, Havranek and Rachinger, <i>Nature Communications</i>, 2025), and <a href="/maive/how-to/">how to run it</a></li>
 <li>Applications: <a href="/beauty/">beauty and professional success</a>, <a href="/class/">class size and student achievement</a>, <a href="/incentives/">financial incentives and performance</a>, and <a href="/skill/">skill substitution</a></li>
 </ul>
@@ -214,6 +230,10 @@ makes a run repeatable. The main corrections for publication bias and p-hacking 
 
 <p>CC BY 4.0, like everything on this site; the code files also carry an MIT licence in their
 headers.</p>
+
+<p>A credit line for reuse: Havranek, T. (2025). <i>Meta-Analysis for Policy Economists: Practical
+Tools for Synthesizing Research</i>. Course slides, Tillväxtanalys, Stockholm, 28 and 29 August 2025.
+https://meta-analysis.cz/teaching/stockholm-2025/</p>
 
 			</div>
 		</div>

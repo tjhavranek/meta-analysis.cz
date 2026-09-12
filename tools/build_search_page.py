@@ -106,10 +106,15 @@ SCRIPT = r"""
   function search(q) {
     var want = terms(q);
     if (!want.length) return { rows: [], want: want, allCommon: false };
-    var scores = null, allCommon = true;
-    for (var i = 0; i < want.length; i++) {
-      if (idx.common.indexOf(want[i]) < 0) allCommon = false;
-      var p = postings(want[i], i === want.length - 1);
+    // Words too common to be indexed ("of", "the", "meta") have no postings, so scoring them
+    // made "meta-analysis of beauty" or "slides on meta-analysis" return nothing at all. They
+    // are left out of the scoring and kept in `want`, which only highlights.
+    var use = want.filter(function (w) { return idx.common.indexOf(w) < 0; });
+    if (!use.length) return { rows: [], want: want, allCommon: true };
+    var last = want[want.length - 1], scores = null;
+    for (var i = 0; i < use.length; i++) {
+      var typing = i === use.length - 1 && use[i] === last;
+      var p = postings(use[i], typing);
       var next = Object.create(null), any = false;
       for (var d in p.hits) {
         if (scores === null || d in scores) {
@@ -119,9 +124,10 @@ SCRIPT = r"""
       }
       // A word nobody has is not a reason to return nothing when it is the one still being
       // typed; every finished word has to be somewhere.
-      if (!any && !(i === want.length - 1 && p.df === 0)) return { rows: [], want: want, allCommon: allCommon };
+      if (!any && !(typing && p.df === 0)) return { rows: [], want: want, allCommon: false };
       if (any) scores = next;
     }
+    var allCommon = false;
     if (scores === null) return { rows: [], want: want, allCommon: allCommon };
     var rows = Object.keys(scores).map(function (d) {
       return { doc: idx.docs[d], score: scores[d] };

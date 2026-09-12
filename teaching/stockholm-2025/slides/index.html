@@ -22,7 +22,9 @@
    "@id": "https://meta-analysis.cz/teaching/stockholm-2025/slides/#text",
    "url": "https://meta-analysis.cz/teaching/stockholm-2025/slides/",
    "name": "Slides as text: Meta-Analysis for Policy Economists: Practical Tools for Synthesizing Research",
+   "description": "The full text of the slides of a two-day course on meta-analysis for the policy economists of Tillväxtanalys, Stockholm, August 2025, generated from the LaTeX source.",
    "learningResourceType": "Presentation",
+   "encodingFormat": "text/html",
    "isBasedOn": "https://meta-analysis.cz/teaching/stockholm-2025/slides.tex",
    "isPartOf": {
     "@id": "https://meta-analysis.cz/teaching/stockholm-2025/#course"
@@ -31,6 +33,18 @@
    "license": "https://creativecommons.org/licenses/by/4.0/",
    "author": {
     "@id": "https://meta-analysis.cz/#th"
+   }
+  },
+  {
+   "@type": "Course",
+   "@id": "https://meta-analysis.cz/teaching/stockholm-2025/#course",
+   "url": "https://meta-analysis.cz/teaching/stockholm-2025/",
+   "name": "Meta-Analysis for Policy Economists: Practical Tools for Synthesizing Research",
+   "description": "A two-day course on meta-analysis for policy economists: literature search and data collection, conventional tools, publication bias, p-hacking, heterogeneity, and the limits of meta-analysis, hands-on in Stata and R.",
+   "provider": {
+    "@type": "Organization",
+    "name": "Tillväxtanalys (Swedish Agency for Growth Policy Analysis)",
+    "url": "https://www.tillvaxtanalys.se/"
    }
   },
   {
@@ -52,6 +66,7 @@
 .entry p.slide-fig{ margin-top:0; font-size:var(--f-1); color:var(--ink-soft); }
 .entry pre.slide-table{ max-width:100%; overflow-x:auto; font-size:var(--f-1); line-height:1.4; }
 .entry .slides-text h3{ margin-top:var(--s5); }
+.entry p.slide-fix{ border-left:3px solid var(--rule); padding-left:var(--s3); font-size:var(--f-1); }
 </style>
 </head>
 <body>
@@ -83,6 +98,8 @@
 generated from <a href="/teaching/stockholm-2025/slides.tex">the LaTeX source</a> so that the course can be read and
 searched without the PDF. Where a slide is mainly a figure, the text says so; the figures are in
 <a href="/teaching/stockholm-2025/slides.pdf">the PDF</a>.</p>
+
+<p>The slides are as taught in August 2025. Some results have been updated or published since, among them the beauty premium figures and the MAIVE paper, now in <i>Nature Communications</i>; <a href="/teaching/osaka-2026/">the Osaka course</a> of March 2026 has the later version.</p>
 
 <p>Sections: <a href="#motivation">Motivation</a>, <a href="#applied-examples">Applied Examples</a>, <a href="#literature-search">Literature Search</a>, <a href="#data-collection">Data Collection</a>, <a href="#conventional-tools">Conventional Tools</a>, <a href="#publication-bias">Publication Bias</a>, <a href="#p-hacking">P-hacking</a>, <a href="#heterogeneity">Heterogeneity</a>, <a href="#extensions-limitations">Extensions &amp; Limitations</a> and <a href="#takeaways">Takeaways</a>.</p>
 
@@ -349,7 +366,7 @@ Citations | The logarithm of the total number of citations of the study in Googl
 <h3>“Fixed effect” estimator in meta-analysis</h3>
 <p class="slide-fig">(Figure.)</p>
 <h3>“Fixed effect” estimator in meta-analysis</h3>
-<p>Mean weighted by inverse variance of individual estimates. Very sensitive to outliers in precision (including typos). Y_i = θ + ε_i, (1); V_i = σ^2/n, (2); W_i = 1/V_i, (3); M = (Σ W_i Y_i)/(Σ W_i), (4); V_M = 1/(Σ W_i). (5)</p>
+<p>Mean weighted by inverse variance of individual estimates. Very sensitive to outliers in precision (including typos). Y_i = θ + ε_i, (1); V_i = σ^2/n, (2); W_i = 1/V_i, (3); M = (Σ_(i=1)^k W_i Y_i)/(Σ_(i=1)^k W_i), (4); V_M = 1/(Σ_(i=1)^k W_i). (5)</p>
 <h3>Hands on</h3>
 <p>Open Stata</p>
 <h3>FE vs. UWLS: point estimate</h3>
@@ -359,23 +376,24 @@ Fixed-Effect (FE) | θ̂ = (Σ w_i θ_i)/(Σ w_i)
 UWLS | θ̂ = (Σ w_i θ_i)/(Σ w_i)</pre>
 <p><b>Same estimate, different variance!</b></p>
 <h3>FE vs. UWLS: variance</h3>
-<p>1.2</p>
 <pre class="slide-table">Feature | Fixed-Effect (FE) | UWLS
 Assumption | Identical θ | Allows heterogeneity
 Variance formula | 1/(Σ w_i) | (Σ w_i (θ_i - θ̂)^2)/(Σ w_i)
 Variance components | Within-study only | Within + between-study
 Robustness | Sensitive to misspecification | More robust</pre>
 <p><b>FE typically underestimates variance. Use UWLS!</b></p>
+<p class="slide-fix" id="correction-uwls"><b>Correction.</b> The UWLS variance of the pooled estimate is Σ w_i (θ_i - θ̂)^2 / ((k - 1) Σ w_i); the table leaves out the factor k - 1. This is the formula for independent estimates: with several estimates per study, use standard errors clustered by study, as the course code does.</p>
 <h3>Fixed effect</h3>
 <p class="slide-fig">(Figure.)</p>
 <h3>Random effects</h3>
 <p class="slide-fig">(Figure.)</p>
 <h3>Random effects</h3>
-<p>The weight is now diluted by a heterogeneity term. More robust to outliers in precision and heterogeneity, less robust to publication bias. Y_i = μ + ξ_i + ε_i, (1); V_i = σ^2/n, (2); W_i = 1/(V_i + τ^2), (3); M = (Σ W_i Y_i)/(Σ W_i), (4); V_M = 1/(Σ W_i). (5)</p>
+<p>The weight is now diluted by a heterogeneity term. More robust to outliers in precision and heterogeneity, less robust to publication bias. Y_i = μ + ξ_i + ε_i, (1); V_i = σ^2/n, (2); W_i = 1/(V_i + τ^2), (3); M = (Σ_(i=1)^k W_i Y_i)/(Σ_(i=1)^k W_i), (4); V_M = 1/(Σ_(i=1)^k W_i). (5)</p>
 <h3>Estimating τ^2 in random-effects model</h3>
 <p><b>Between-study variance</b> τ^2 accounts for heterogeneity across studies. Common estimators:</p>
 <ul><li><b>DerSimonian-Laird (DL)</b>: τ^2_DL = (Q - (k - 1))/C, C = Σ w_i - (Σ w_i^2)/(Σ w_i) - Simple, but underestimates τ^2 when k is small.</li><li><b>Restricted Maximum Likelihood (REML)</b>: max_τ^2 Σ log (w_i^* + τ^2) + Σ ((y_i - θ̂)^2)/(w_i^* + τ^2) - More accurate, default in software.</li></ul>
 <p><b>Rule of thumb:</b> Use REML unless simplicity is needed!</p>
+<p class="slide-fix" id="correction-reml"><b>Correction.</b> The REML line is not the restricted likelihood. REML chooses τ^2 ≥ 0 to minimise Σ log(v_i + τ^2) + log Σ W_i + Σ W_i (y_i - θ̂)^2, where v_i are the within-study variances, W_i = 1/(v_i + τ^2) and θ̂ is the weighted mean; software solves this numerically. A negative DL estimate is set to zero.</p>
 <h3>Random effects</h3>
 <p class="slide-fig">(Figure.)</p>
 <h3>Forest plot</h3>
@@ -399,6 +417,7 @@ Robustness | Sensitive to misspecification | More robust</pre>
 <h2 id="publication-bias">Publication Bias</h2>
 <h3>Paxil scandal</h3>
 <ul><li><b>Background:</b><ul><li>Paxil (paroxetine): Antidepressant approved for adolescents, developed by GlaxoSmithKline (GSK).</li><li>Study 329 (1998-2001): Clinical trial funded by GSK to test Paxil's safety and efficacy in adolescents.</li></ul></li><li><b>What Happened?</b><ul><li>Published study claimed Paxil was <i>"well-tolerated and effective."</i></li><li>Internal documents later revealed:<ul><li>Negative results (e.g., increased suicidal ideation) were downplayed.</li><li>Positive outcomes were selectively reported.</li></ul></li></ul></li></ul>
+<p class="slide-fix" id="correction-paxil"><b>Correction.</b> The FDA never approved paroxetine for patients under 18: it was approved for adults and promoted for adolescent depression. Study 329 ran from 1994 to 1998 and was published in 2001; the independent reanalysis appeared in 2015.</p>
 <h3>Paxil scandal</h3>
 <ul><li><b>Discovery of Bias:</b><ul><li>Legal proceedings in 2012 forced disclosure of internal data.</li><li>Independent reanalysis of Study 329 showed:<ul><li>No significant benefit over placebo.</li><li>Serious safety concerns (e.g., suicidal ideation).</li></ul></li></ul></li><li><b>Key Lessons:</b><ul><li>Publication bias can harm patients and public trust.</li><li>Highlights the need for:<ul><li>Transparency in research data.</li><li>Independent replication and reanalysis.</li></ul></li></ul></li></ul>
 <h3>No bias, no E-SE correlation (?)</h3>
@@ -539,16 +558,16 @@ Sample | 5,861 | 5,743 | 5,743 | 5,743 | 5,743 | 5,743</pre>
 <p class="slide-fig">(Figure.)</p>
 <h3>Key meta assumption broken</h3>
 <p>PEESE:</p>
-<p>E_î = E_0 + β SE(Ê)^2_i + u_i,</p>
-<p>corr(SE,u) ≠ 0 ⇒ β̂ and E_0̂ biased.</p>
+<p>Ê_i = E_0 + β SE(Ê)^2_i + u_i,</p>
+<p>corr(SE,u) ≠ 0 ⇒ β̂ and Ê_0 biased.</p>
 <p><b>Natural solution:</b> N instrumenting SE(Ê)_i^2 → MAIVE.</p>
 <p class="slide-fig">(With a figure.)</p>
 <h3>Options for the meta-analyst</h3>
 <ol><li>Use only quasi-experimental studies.</li><li>Include controls (dummies for OLS, DID, …). But in observational research <b>we never know the true model!</b></li><li>Remove “bad” variation from SE → MAIVE.</li></ol>
 <h3>Meta-analysis instrumental variable estimator</h3>
-<p>MAIVE intuition: E_î = E_0 + β SE(Ê)^2_i + u_i. 1/N_i</p>
+<p>MAIVE intuition: Ê_i = E_0 + β SE(Ê)^2_i + u_i. 1/N_i</p>
 <p>MAIVE first stage: SE(Ê)^2_i = α_0 + α_1 ( 1/N_i ) + π_i. hacking or misspecifications</p>
-<p>MAIVE adjustment: SE(Ê)^2_(adj,i) = α_0̂ + α_1̂ (1/N_i ) + π_i. hacking or misspecifications</p>
+<p>MAIVE adjustment: SE(Ê)^2_(adj,i) = α̂_0 + α̂_1 (1/N_i ) + π_i. hacking or misspecifications</p>
 <ul><li>MAIVE + PEESE = classical IV.</li><li>Can add <b>controls in the 2nd stage</b>.</li><li>Plug MAIVE-adjusted SEs into other estimators.</li></ul>
 <p class="slide-fig">(With a figure.)</p>
 <h3>MAIVE alleviates the bias</h3>
@@ -570,8 +589,8 @@ Sample | 5,861 | 5,743 | 5,743 | 5,743 | 5,743 | 5,743</pre>
 <h2 id="heterogeneity">Heterogeneity</h2>
 <h3>Identification of publication bias</h3>
 <p>PEESE:</p>
-<p>E_î = E_0 + β SE(Ê)^2_i + u_i,</p>
-<p>corr(SE,u) ≠ 0 ⇒ β̂ and E_0̂ biased.</p>
+<p>Ê_i = E_0 + β SE(Ê)^2_i + u_i,</p>
+<p>corr(SE,u) ≠ 0 ⇒ β̂ and Ê_0 biased.</p>
 <p><b>Natural solution:</b> N instrumenting SE(Ê)_i^2 → MAIVE.</p>
 <p>Or add covariates!</p>
 <p class="slide-fig">(With a figure.)</p>
@@ -675,11 +694,11 @@ Sample | 5,861 | 5,743 | 5,743 | 5,743 | 5,743 | 5,743</pre>
 <ol><li>Propose a new test for external validity in meta-analysis:<ul><li>Based on the tail index of the underlying distribution, without contamination by estimate precision.</li><li>Test whether the implied variance of underlying effect is infinite (i.e., too heterogeneous).</li></ul></li><li>Show that the implied variance is infinite in meta-analysis of 126 nudge RCTs <i>(DellaVigna and Linos, 2020)</i>:<ul><li><b>Nudge:</b> “choice architecture that alters people's behavior in a predictable way without forbidding any options or significantly changing their economic incentives.” <i>(Thaler and Sunstein, 2008)</i></li><li>The possibility of infinite variance can be important in real-world applications.</li></ul></li></ol>
 <h3>Test of infinite variance</h3>
 <p><b>Pareto tail:</b> F(b) = 1 - Cb^(-α), b &gt; b_min and C &gt; 0</p>
-<ul><li>e.g. earthquakes, word frequency, city size, wealth distribution</li><li>If α &lt; 2, then Var(b) = ∞ because ∫ b^2 f(b) db ∝ ∫ b^2 b^(-3) db = ∫ b^(-1) db = log b |_b_min^∞ = ∞</li></ul>
+<ul><li>e.g. earthquakes, word frequency, city size, wealth distribution</li><li>If α &lt; 2, then Var(b) = ∞ because ∫_b_min^∞ b^2 f(b) db ∝ ∫_b_min^∞ b^2 b^(-3) db = ∫_b_min^∞ b^(-1) db = log b |_b_min^∞ = ∞</li></ul>
 <p><b>Tail index test of external validity:</b></p>
 <ul><li><b>Criteria 1:</b> if α̂ &gt; 2, then pass the test</li><li><b>Criteria 2:</b> if P(α̂ ≤ 2) &lt; p, then pass the test</li></ul>
 <h3>Estimation methods (i) inner problem of tail index</h3>
-<p>Following <i>Hill (1975)</i>, use Maximum Likelihood Estimation for α̂_MLE: given b_min, α̂_MLE = arg max_α Σ ln l ( α | β_i, SE_i, b_min ), where l ( α | β_i, SE_i, b_min ) ≡ ∫ (φ ( (β_i - θ)/SE_i ))/(1 - Φ ( (b_min - θ)/SE_i )) α b_min^α b^(-(α + 1)) db.</p>
+<p>Following <i>Hill (1975)</i>, use Maximum Likelihood Estimation for α̂_MLE: given b_min, α̂_MLE = arg max_α Σ_(i=1)^n ln l ( α | β_i, SE_i, b_min ), where l ( α | β_i, SE_i, b_min ) ≡ ∫_θ_min^∞ (φ ( (β_i - θ)/SE_i ))/(1 - Φ ( (b_min - θ)/SE_i )) α b_min^α b^(-(α + 1)) db.</p>
 <ul><li>Numerical integration</li></ul>
 <h3>Estimation methods (ii) outer problem of cut-off</h3>
 <p>Following <i>Clauset et al. (2006)</i>, use the goodness-of-fit metric to choose b^*_min: b^*_min ∈ arg min_b_min K̃S (b_min | α̂_MLE), where the reweighted Kolmogorov-Smirnov statistic is K̃S (b_min | α̂_MLE) ≡ sup_β (|G(β | β ≥ b_min) - Ĝ(β | ·)|)/(√(Ĝ(β | ·) [1 - Ĝ(β | ·)])), and the estimated distribution is Ĝ(β | α̂_MLE, β ≥ b_min) and the empirical distribution is G(β | β ≥ b_min).</p>
