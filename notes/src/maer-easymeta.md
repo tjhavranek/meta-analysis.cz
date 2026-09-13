@@ -1,6 +1,6 @@
 <p class="byline">First published on <a href="https://www.maer-net.org/post/bias-correction-made-easy-a-web-app-for-meta-analysis-at-easymeta-org" rel="external">MAER-Net</a>, 27 September 2025. Archived with the rest of our writing at <a href="https://meta-analysis.cz/komentare/maer-easymeta/">/komentare/maer-easymeta/</a>.</p>
 
-We are happy to share a new tool now available at [EasyMeta.org](https://www.easymeta.org/). The app makes the new MAIVE method (Meta-Analysis Instrumental Variable Estimator, published yesterday in [*Nature Communications*](https://www.nature.com/articles/s41467-025-63261-0)) easy to apply with a few clicks. The site offers a [demo dataset](https://www.spuriousprecision.com/demo) you can run instantly.
+We are happy to share a new tool now available at [EasyMeta.org](https://www.easymeta.org/). The app makes the new [MAIVE method](/maive/) (Meta-Analysis Instrumental Variable Estimator, published yesterday in [*Nature Communications*](https://www.nature.com/articles/s41467-025-63261-0)) easy to apply with a few clicks. The site offers a [demo dataset](https://www.spuriousprecision.com/demo) you can run instantly.
 
 At the same time, the app allows for seamless use of methods well known in the MAER-Net community: PET-PEESE and the Endogenous Kink model. Until now, these approaches were available only in R or Stata. Now they can be run with a single click, no software installation needed.
 

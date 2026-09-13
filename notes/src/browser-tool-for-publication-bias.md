@@ -2,12 +2,12 @@
 
 A browser-based tool for correcting publication bias and p-hacking.
 
-We built EasyMeta.org to make bias-corrected meta-analysis easier to run. Upload your dataset and benchmark your conclusions against modern corrections -- directly in your browser.
+We built [EasyMeta.org](https://www.easymeta.org/) to make bias-corrected meta-analysis easier to run. Upload your dataset and benchmark your conclusions against modern corrections -- directly in your browser.
 
 Why: Selective reporting can distort what enters the literature and how results are reported, but applying corrections often requires specialized software or a complex workflow.
 
 What it offers:
-• Bias corrections: MAIVE (our Nature Communications method) plus benchmarks like PET-PEESE.
+• Bias corrections: [MAIVE](/maive/) (our Nature Communications method) plus benchmarks like PET-PEESE.
 • Robust inference: options for clustering and different data structures.
 • Minimal setup: free, open, no installation, no coding.
 • Reproducibility: export R code for the results you generate.

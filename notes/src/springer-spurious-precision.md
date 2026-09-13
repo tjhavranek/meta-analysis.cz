@@ -28,7 +28,7 @@ Indeed, in some of our simulations with moderate spurious precision, simple unwe
 
 ## The idea behind MAIVE
 
-This led us to MAIVE, the **Meta-Analysis Instrumental Variable Estimator**. The idea is simple. Reported standard errors may be biased, but sample size is much harder to p-hack. It is strongly (if imperfectly) linked to true precision and, in much of empirical research, authors typically use the largest feasible sample from the start. You can easily change controls, clustering, or estimation techniques; you usually cannot easily increase *N*.
+This led us to [MAIVE](/maive/), the **Meta-Analysis Instrumental Variable Estimator**. The idea is simple. Reported standard errors may be biased, but sample size is much harder to p-hack. It is strongly (if imperfectly) linked to true precision and, in much of empirical research, authors typically use the largest feasible sample from the start. You can easily change controls, clustering, or estimation techniques; you usually cannot easily increase *N*.
 
 MAIVE uses sample size as an instrument for precision. We keep the familiar funnel-based framework but rebuild it on a more robust foundation: predicted precision based on *N*, not reported precision alone, with confidence intervals considering prediction uncertainty. In simulations, MAIVE substantially reduced the overall bias (publication and p-hacking) compared to existing estimators. And in datasets with replication benchmarks, MAIVE moved meta-analytic results closer to the replications.
 

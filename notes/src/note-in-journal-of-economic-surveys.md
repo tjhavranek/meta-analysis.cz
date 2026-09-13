@@ -1,6 +1,6 @@
 <p class="byline">First published on <a href="https://www.linkedin.com/feed/update/urn%3Ali%3Ashare%3A7452590050799853568" rel="external">LinkedIn</a>, 22 April 2026. Archived with the rest of our writing at <a href="https://meta-analysis.cz/komentare/posts/2026-04-22-note-in-journal-of-economic-surveys/">/komentare/posts/2026-04-22-note-in-journal-of-economic-surveys/</a>.</p>
 
-Not an easy task, but in a new note just out in the Journal of Economic Surveys we try to set a basic floor on the use of AI in meta-analysis.
+Not an easy task, but in [a new note](/guidelines/ai/) just out in the Journal of Economic Surveys we try to set a basic floor on the use of AI in meta-analysis.
 
 [https://onlinelibrary.wiley.com/doi/10.1111/joes.70105](https://onlinelibrary.wiley.com/doi/10.1111/joes.70105)
 

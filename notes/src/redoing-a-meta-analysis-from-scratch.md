@@ -2,7 +2,7 @@
 
 Will our results change if we redo the meta-analysis from scratch?
 
-We just pre-registered a big revision of our meta-analysis on beauty and professional success:
+We just pre-registered a big revision of [our meta-analysis on beauty and professional success](/beauty/):
 
 [https://doi.org/10.17605/OSF.IO/B3D7W](https://doi.org/10.17605/OSF.IO/B3D7W)
 

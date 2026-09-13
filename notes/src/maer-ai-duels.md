@@ -10,7 +10,7 @@ That is the idea behind the [**Research Audit Protocol (v1.7)**](https://github.
 - **Duel (Gemini):** Probe hard for identification problems, hidden assumptions, and failure modes—and force specificity.
 - **Synthesis (You + ChatGPT):** Map the disagreement (or convergence) and record what changed and why, so the final view is auditable.
 
-**A MAER-Net Case Study: **[**WAIVE vs. MAIVE**](https://github.com/tjhavranek/research-audit-duel-protocol/tree/main/examples) As a proof of concept for meta-method work, we applied the protocol to an audit of the proposed **WAIVE** idea against the **MAIVE** framework. The duel did not just restate the two approaches. It forced us to pin down the key tension that matters for applied meta-analysis: when does downweighting “suspiciously precise” results reduce spurious precision, and when might it also penalize genuinely informative studies?
+**A MAER-Net Case Study: **[**WAIVE vs. MAIVE**](https://github.com/tjhavranek/research-audit-duel-protocol/tree/main/examples) As a proof of concept for meta-method work, we applied the protocol to an audit of the proposed **WAIVE** idea against the [**MAIVE**](/maive/) framework. The duel did not just restate the two approaches. It forced us to pin down the key tension that matters for applied meta-analysis: when does downweighting “suspiciously precise” results reduce spurious precision, and when might it also penalize genuinely informative studies?
 
 In other words, it pushed us to state the boundary conditions clearly—the kind of slow thinking that improves methods before they hit peer review.
 

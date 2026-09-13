@@ -1,6 +1,6 @@
 <p class="byline">First published on <a href="https://www.linkedin.com/feed/update/urn%3Ali%3Ashare%3A7460202147213791232" rel="external">LinkedIn</a>, 13 May 2026. Archived with the rest of our writing at <a href="https://meta-analysis.cz/komentare/posts/2026-05-13-reporting-guidelines-updated-for-ai/">/komentare/posts/2026-05-13-reporting-guidelines-updated-for-ai/</a>.</p>
 
-Reporting Guidelines for Meta-Analysis in Economics, updated for AI, just published in the Journal of Economic Surveys:
+[Reporting Guidelines for Meta-Analysis in Economics, updated for AI](/guidelines/reporting-ai/), just published in the Journal of Economic Surveys:
 [https://onlinelibrary.wiley.com/doi/10.1111/joes.70116](https://onlinelibrary.wiley.com/doi/10.1111/joes.70116)
 
 Two practical points I would emphasize (my personal opinion), beyond the reporting checklist itself:

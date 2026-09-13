@@ -1,6 +1,6 @@
 <p class="byline">First published on <a href="https://www.maer-net.org/post/maive-is-now-on-cran" rel="external">MAER-Net</a>, 10 December 2025. Archived with the rest of our writing at <a href="https://meta-analysis.cz/komentare/maer-maive-cran/">/komentare/maer-maive-cran/</a>.</p>
 
-We are happy to share that **MAIVE** (Meta-Analysis Instrumental Variable Estimator) is now available on **CRAN**:
+We are happy to share that [**MAIVE**](/maive/) (Meta-Analysis Instrumental Variable Estimator) is now available on **CRAN**:
 
 `install.packages("MAIVE")`
 

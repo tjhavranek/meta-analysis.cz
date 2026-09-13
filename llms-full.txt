@@ -43004,6 +43004,59 @@ FIGURE S29. MSE: $p$-hacking selection, positive effect ($\alpha_1 = 1$), variou
 90. Hauser M, Cushman F, Young L, Kang-Xing Jin R, Mikhail J. A dissociation between moral judgments and justifications. *Mind Language* 2007; 22(1): 1–21.
 91. Bartos F, Maier M, Wagenmakers EJ, et al. Footprint of publication selection bias on meta-analyses in medicine, environmental sciences, psychology, and economics. *Research Synthesis Methods* 2024; 15(3): 500-511.
 
+## Teaching: courses on meta-analysis in economics
+URL: https://meta-analysis.cz/teaching/
+Licence: CC BY 4.0
+
+Courses on meta-analysis in economics, with everything that was taught.
+The slides and their LaTeX sources, the Stata and R code, the data, and recordings where
+available, all free to reuse. Taught by Tomas Havranek, Charles University, Prague.
+
+### Osaka, March 2026
+
+Meta-Analysis in Economics: Practical Tools for
+Synthesizing Research. A three-hour course at the Institute of Social and Economic
+Research (ISER), the University of Osaka, on 16 March 2026, on site and online: four lectures on
+the workflow, selective reporting, heterogeneity, and interpretation. Slides, code and data, and
+the recordings.
+
+### Stockholm, August 2025
+
+Meta-Analysis for Policy Economists: Practical Tools
+for Synthesizing Research. Two days for the policy economists of Tillväxtanalys, the
+Swedish Agency for Growth Policy Analysis, on 28 and 29 August 2025, hands-on in Stata and R.
+Slides, code and data, and the programme.
+
+### Christchurch, February and March 2025
+
+Research Synthesis in Economics and Finance. A
+university course (ECON670) at the University of Canterbury, New Zealand: ten two-hour lectures,
+from literature search and data collection to publication bias, p-hacking, heterogeneity and the
+limits of meta-analysis, with student projects. The lecture slides with their LaTeX sources.
+
+### Chemnitz, September 2026 (upcoming)
+
+MAER-Net 2026 PhD workshop, Chemnitz, 23 September 2026: a
+session on MAIVE, EasyMeta and AI in meta-analysis. Draft demo data and prompts, not yet
+reviewed; the final materials follow after the workshop.
+
+### The same material in writing
+
+- Meta-Analysis of Social Science Research: A Practitioner’s Guide (Journal of Economic Surveys, 2024)
+
+- Reporting guidelines for meta-analysis in economics, updated for AI
+
+- Guidance for the use of AI in the meta-analysis of economics research
+
+- How to run MAIVE, on real data
+
+- EasyMeta.org: meta-analysis in the browser, with corrections for p-hacking
+
+### Licence
+
+Everything here is CC BY 4.0, like the rest of this site; the code files also carry an MIT licence in their
+headers.
+
 ## Meta-Analysis in Economics (University of Osaka, 2026)
 URL: https://meta-analysis.cz/teaching/osaka-2026/
 Licence: CC BY 4.0

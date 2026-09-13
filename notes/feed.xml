@@ -80,11 +80,11 @@ Fortunately, Claude Code and Codex (thank you, AI!) proved very effective at rec
 </p>
 
 <p>
-In the end, the hack was a blessing in disguise. Now we have the website on GitHub, the datasets are archived on Zenodo with a DOI, and we can edit everything much more easily. This also made it much easier for us to integrate meta-analysis.cz with <a href="https://www.easymeta.org/">EasyMeta.org</a>, which is a web-based tool for meta-analysis (including correction for p-hacking).
+In the end, the hack was a blessing in disguise. Now we have the website on GitHub, <a href="/datasets/">the datasets</a> are archived on Zenodo with a DOI, and we can edit everything much more easily. This also made it much easier for us to integrate meta-analysis.cz with <a href="https://www.easymeta.org/">EasyMeta.org</a>, which is a web-based tool for meta-analysis (including correction for p-hacking).
 </p>
 
 <p>
-It also turns out that AI agents are very good at converting PDFs into clean HTML, so now we provide an HTML version of all our papers, plus of course complete data and code, and more.
+It also turns out that AI agents are very good at converting PDFs into clean HTML, so now we provide an <a href="/papers/">HTML version of all our papers</a>, plus of course complete data and code, and more.
 </p>
 
 <p>
@@ -424,7 +424,7 @@ Does the skill work for you? What should we change? Should we add Gemini?
       <content:encoded><![CDATA[<p class="byline">First published on <a href="https://www.linkedin.com/feed/update/urn%3Ali%3Ashare%3A7460202147213791232" rel="external">LinkedIn</a>, 13 May 2026. Archived with the rest of our writing at <a href="https://meta-analysis.cz/komentare/posts/2026-05-13-reporting-guidelines-updated-for-ai/">/komentare/posts/2026-05-13-reporting-guidelines-updated-for-ai/</a>.</p>
 
 <p>
-Reporting Guidelines for Meta-Analysis in Economics, updated for AI, just published in the Journal of Economic Surveys: <a href="https://onlinelibrary.wiley.com/doi/10.1111/joes.70116">https://onlinelibrary.wiley.com/doi/10.1111/joes.70116</a>
+<a href="/guidelines/reporting-ai/">Reporting Guidelines for Meta-Analysis in Economics, updated for AI</a>, just published in the Journal of Economic Surveys: <a href="https://onlinelibrary.wiley.com/doi/10.1111/joes.70116">https://onlinelibrary.wiley.com/doi/10.1111/joes.70116</a>
 </p>
 
 <p>
@@ -458,7 +458,7 @@ Will our results change if we redo the meta-analysis from scratch?
 </p>
 
 <p>
-We just pre-registered a big revision of our meta-analysis on beauty and professional success:
+We just pre-registered a big revision of <a href="/beauty/">our meta-analysis on beauty and professional success</a>:
 </p>
 
 <p>
@@ -504,7 +504,7 @@ Co-authored with Tomas Havranek, Frantisek Bartos, Xenia Bortnikova, and Martina
       <content:encoded><![CDATA[<p class="byline">First published on <a href="https://www.linkedin.com/feed/update/urn%3Ali%3Ashare%3A7452590050799853568" rel="external">LinkedIn</a>, 22 April 2026. Archived with the rest of our writing at <a href="https://meta-analysis.cz/komentare/posts/2026-04-22-note-in-journal-of-economic-surveys/">/komentare/posts/2026-04-22-note-in-journal-of-economic-surveys/</a>.</p>
 
 <p>
-Not an easy task, but in a new note just out in the Journal of Economic Surveys we try to set a basic floor on the use of AI in meta-analysis.
+Not an easy task, but in <a href="/guidelines/ai/">a new note</a> just out in the Journal of Economic Surveys we try to set a basic floor on the use of AI in meta-analysis.
 </p>
 
 <p>
@@ -610,7 +610,7 @@ The problem is that these techniques assume that the reported estimates are indi
 </p>
 
 <p>
-In our recent Nature Communications paper we show that under some forms of p-hacking, classical models correcting for publication bias can actually be more biased than a simple average of published estimates.
+In <a href="/maive/">our recent Nature Communications paper</a> we show that under some forms of p-hacking, classical models correcting for publication bias can actually be more biased than a simple average of published estimates.
 </p>
 
 <p>
@@ -618,7 +618,7 @@ As far as I know, there are only two meta-analysis corrections for (some forms o
 </p>
 
 <p>
-If you want to see MAIVE and RTMA applied, take a look at our meta-analysis of the beauty premium. Spoiler: apart from the sex industry, beauty doesn't matter much in the labor market.
+If you want to see MAIVE and RTMA applied, take a look at <a href="/beauty/">our meta-analysis of the beauty premium</a>. Spoiler: apart from the sex industry, beauty doesn't matter much in the labor market.
 </p>
 
 <figure><img src="https://meta-analysis.cz/komentare/social-img/2026-03-09_p16_1.jpeg" alt="Funnel plot of estimates of the beauty effect on earnings. The bulk of estimates cluster near zero; a red line marks the mean of 4.3 per cent, and estimates for sex workers, shown separately in red, sit well to the right of it." /></figure>]]></content:encoded>
@@ -636,7 +636,7 @@ A browser-based tool for correcting publication bias and p-hacking.
 </p>
 
 <p>
-We built EasyMeta.org to make bias-corrected meta-analysis easier to run. Upload your dataset and benchmark your conclusions against modern corrections -- directly in your browser.
+We built <a href="https://www.easymeta.org/">EasyMeta.org</a> to make bias-corrected meta-analysis easier to run. Upload your dataset and benchmark your conclusions against modern corrections -- directly in your browser.
 </p>
 
 <p>
@@ -644,7 +644,7 @@ Why: Selective reporting can distort what enters the literature and how results 
 </p>
 
 <p>
-What it offers: • Bias corrections: MAIVE (our Nature Communications method) plus benchmarks like PET-PEESE. • Robust inference: options for clustering and different data structures. • Minimal setup: free, open, no installation, no coding. • Reproducibility: export R code for the results you generate.
+What it offers: • Bias corrections: <a href="/maive/">MAIVE</a> (our Nature Communications method) plus benchmarks like PET-PEESE. • Robust inference: options for clustering and different data structures. • Minimal setup: free, open, no installation, no coding. • Reproducibility: export R code for the results you generate.
 </p>
 
 <p>
@@ -688,7 +688,7 @@ That is the idea behind the <a href="https://github.com/tjhavranek/research-audi
 </ul>
 
 <p>
-<b>A MAER-Net Case Study: </b><a href="https://github.com/tjhavranek/research-audit-duel-protocol/tree/main/examples"><b>WAIVE vs. MAIVE</b></a> As a proof of concept for meta-method work, we applied the protocol to an audit of the proposed <b>WAIVE</b> idea against the <b>MAIVE</b> framework. The duel did not just restate the two approaches. It forced us to pin down the key tension that matters for applied meta-analysis: when does downweighting “suspiciously precise” results reduce spurious precision, and when might it also penalize genuinely informative studies?
+<b>A MAER-Net Case Study: </b><a href="https://github.com/tjhavranek/research-audit-duel-protocol/tree/main/examples"><b>WAIVE vs. MAIVE</b></a> As a proof of concept for meta-method work, we applied the protocol to an audit of the proposed <b>WAIVE</b> idea against the <a href="/maive/"><b>MAIVE</b></a> framework. The duel did not just restate the two approaches. It forced us to pin down the key tension that matters for applied meta-analysis: when does downweighting “suspiciously precise” results reduce spurious precision, and when might it also penalize genuinely informative studies?
 </p>
 
 <p>
@@ -715,7 +715,7 @@ In other words, it pushed us to state the boundary conditions clearly—the kind
       <content:encoded><![CDATA[<p class="byline">First published on <a href="https://www.maer-net.org/post/maive-is-now-on-cran" rel="external">MAER-Net</a>, 10 December 2025. Archived with the rest of our writing at <a href="https://meta-analysis.cz/komentare/maer-maive-cran/">/komentare/maer-maive-cran/</a>.</p>
 
 <p>
-We are happy to share that <b>MAIVE</b> (Meta-Analysis Instrumental Variable Estimator) is now available on <b>CRAN</b>:
+We are happy to share that <a href="/maive/"><b>MAIVE</b></a> (Meta-Analysis Instrumental Variable Estimator) is now available on <b>CRAN</b>:
 </p>
 
 <p>
@@ -871,7 +871,7 @@ Indeed, in some of our simulations with moderate spurious precision, simple unwe
 <h2>The idea behind MAIVE</h2>
 
 <p>
-This led us to MAIVE, the <b>Meta-Analysis Instrumental Variable Estimator</b>. The idea is simple. Reported standard errors may be biased, but sample size is much harder to p-hack. It is strongly (if imperfectly) linked to true precision and, in much of empirical research, authors typically use the largest feasible sample from the start. You can easily change controls, clustering, or estimation techniques; you usually cannot easily increase <i>N</i>.
+This led us to <a href="/maive/">MAIVE</a>, the <b>Meta-Analysis Instrumental Variable Estimator</b>. The idea is simple. Reported standard errors may be biased, but sample size is much harder to p-hack. It is strongly (if imperfectly) linked to true precision and, in much of empirical research, authors typically use the largest feasible sample from the start. You can easily change controls, clustering, or estimation techniques; you usually cannot easily increase <i>N</i>.
 </p>
 
 <p>
@@ -911,7 +911,7 @@ We do not claim MAIVE is a cure-all. But it is a practical safeguard against a f
       <content:encoded><![CDATA[<p class="byline">First published on <a href="https://www.maer-net.org/post/bias-correction-made-easy-a-web-app-for-meta-analysis-at-easymeta-org" rel="external">MAER-Net</a>, 27 September 2025. Archived with the rest of our writing at <a href="https://meta-analysis.cz/komentare/maer-easymeta/">/komentare/maer-easymeta/</a>.</p>
 
 <p>
-We are happy to share a new tool now available at <a href="https://www.easymeta.org/">EasyMeta.org</a>. The app makes the new MAIVE method (Meta-Analysis Instrumental Variable Estimator, published yesterday in <a href="https://www.nature.com/articles/s41467-025-63261-0"><i>Nature Communications</i></a>) easy to apply with a few clicks. The site offers a <a href="https://www.spuriousprecision.com/demo">demo dataset</a> you can run instantly.
+We are happy to share a new tool now available at <a href="https://www.easymeta.org/">EasyMeta.org</a>. The app makes the new <a href="/maive/">MAIVE method</a> (Meta-Analysis Instrumental Variable Estimator, published yesterday in <a href="https://www.nature.com/articles/s41467-025-63261-0"><i>Nature Communications</i></a>) easy to apply with a few clicks. The site offers a <a href="https://www.spuriousprecision.com/demo">demo dataset</a> you can run instantly.
 </p>
 
 <p>
@@ -1039,7 +1039,7 @@ Comments, questions, or counterexamples are welcome!
       <content:encoded><![CDATA[<p class="byline">First published on <a href="https://www.maer-net.org/post/methods-guidelines-for-meta-analysis" rel="external">MAER-Net</a>, 27 November 2023. Archived with the rest of our writing at <a href="https://meta-analysis.cz/komentare/maer-methods-guidelines/">/komentare/maer-methods-guidelines/</a>.</p>
 
 <p>
-As discussed at the Palma colloquium, together with Tom, Chris, and Tomas we prepared a brief practical guide on how to do modern meta-analysis – especially in social sciences but hopefully useful to aspiring meta-analysts in any field. The paper has just been published by the <i>Journal of Economic Surveys</i> and is available <a href="https://onlinelibrary.wiley.com/doi/full/10.1111/joes.12595">here</a>. The purpose of this column is to provide context to the guidelines from my own personal perspective.
+As discussed at the Palma colloquium, together with Tom, Chris, and Tomas we prepared a brief <a href="/guidelines/">practical guide</a> on how to do modern meta-analysis – especially in social sciences but hopefully useful to aspiring meta-analysts in any field. The paper has just been published by the <i>Journal of Economic Surveys</i> and is available <a href="https://onlinelibrary.wiley.com/doi/full/10.1111/joes.12595">here</a>. The purpose of this column is to provide context to the guidelines from my own personal perspective.
 </p>
 
 <p>
@@ -1354,7 +1354,7 @@ A widely cited meta-analysis by Weibel et al. (2010) reports that financial ince
 </p>
 
 <p>
-In this column, based on a synthesis of empirical studies on the topic (Cala et al. 2022), we argue that empirical evidence, even in economics, does not support the prior. The finding has far-reaching policy consequences: incentives or nudges that rely mainly on financial motives, such as offering money to people for getting their Covid-19 shots, may be less effective than commonly thought.
+In this column, based on a synthesis of empirical studies on the topic (<a href="/incentives/">Cala et al. 2022</a>), we argue that empirical evidence, even in economics, does not support the prior. The finding has far-reaching policy consequences: incentives or nudges that rely mainly on financial motives, such as offering money to people for getting their Covid-19 shots, may be less effective than commonly thought.
 </p>
 
 <p>
@@ -1454,7 +1454,7 @@ First, imported goods become more expensive, which directly increases inflation.
 </p>
 
 <p>
-Despite this, no consensus on the magnitude of the elasticity exists. In different contexts, researchers tend to obtain substantially different estimates, as observed by Feenstra et al. (2018) and many other commentators before them. In new paper (Bajzik et al. 2020), we assign a pattern to these differences, a pattern that we hope will be useful for calibrating policy models in international trade and macroeconomics. As the Armington-style literature reaches its 50th anniversary, the time is ripe for taking stock. In one of the largest meta-analyses ever conducted in economics, we collect 3,524 estimates of the elasticity of substitution between domestic and foreign goods and construct 32 variables that reflect the context in which researchers produce their estimates.
+Despite this, no consensus on the magnitude of the elasticity exists. In different contexts, researchers tend to obtain substantially different estimates, as observed by Feenstra et al. (2018) and many other commentators before them. In new paper (<a href="/armington/">Bajzik et al. 2020</a>), we assign a pattern to these differences, a pattern that we hope will be useful for calibrating policy models in international trade and macroeconomics. As the Armington-style literature reaches its 50th anniversary, the time is ripe for taking stock. In one of the largest meta-analyses ever conducted in economics, we collect 3,524 estimates of the elasticity of substitution between domestic and foreign goods and construct 32 variables that reflect the context in which researchers produce their estimates.
 </p>
 
 <p>
@@ -1577,7 +1577,7 @@ Empirical estimates of the elasticity vary widely both within and between studie
 </p>
 
 <p>
-To take stock of the voluminous literature and provide concrete guidelines for the calibration of the elasticity, we conduct a meta-analysis (Gechert et al., 2019).[1] We collect 3,186 coefficients from 121 studies, which produce a mean estimate of 0.9. But we show that the picture is seriously distorted by publication bias. After correcting for the bias, the mean reported elasticity shrinks to 0.5. This correction alone implies halving the effectiveness of monetary policy in a structural model, as shown by Figure 1. Moreover, some data and method choices bias the estimated elasticity systematically. If one agrees that sector-level data dominate more aggregated country- or state-level data and that including information from the first-order condition for capital dominates ignoring it, the implied mean estimate further decreases to 0.3. Thus we recommend 0.3 for the calibration of the elasticity, consistent with burying the Cobb-Douglas production function.
+To take stock of the voluminous literature and provide concrete guidelines for the calibration of the elasticity, we conduct a meta-analysis (<a href="/sigma/">Gechert et al., 2019</a>).[1] We collect 3,186 coefficients from 121 studies, which produce a mean estimate of 0.9. But we show that the picture is seriously distorted by publication bias. After correcting for the bias, the mean reported elasticity shrinks to 0.5. This correction alone implies halving the effectiveness of monetary policy in a structural model, as shown by Figure 1. Moreover, some data and method choices bias the estimated elasticity systematically. If one agrees that sector-level data dominate more aggregated country- or state-level data and that including information from the first-order condition for capital dominates ignoring it, the implied mean estimate further decreases to 0.3. Thus we recommend 0.3 for the calibration of the elasticity, consistent with burying the Cobb-Douglas production function.
 </p>
 
 <p>
@@ -1893,7 +1893,7 @@ We collect 43 econometric studies, which report 605 regression estimates of the 
 </p>
 
 <p>
-We describe a long list of characteristics of these studies (all available in Havranek et al. 2016 ). For example, which explanatory variables are included in the models examining the effect of resources on growth? More specifically, do the empirical studies control for the country’s institutional quality (such as the World Bank’s measures of rule of law) and its potentially non-linear effect on economic growth via natural resources?
+We describe a long list of characteristics of these studies (all available in <a href="/resource_curse/">Havranek et al. 2016</a> ). For example, which explanatory variables are included in the models examining the effect of resources on growth? More specifically, do the empirical studies control for the country’s institutional quality (such as the World Bank’s measures of rule of law) and its potentially non-linear effect on economic growth via natural resources?
 </p>
 
 <p>
@@ -1965,7 +1965,7 @@ Two existing surveys of the literature – Reincke and van den Broek (1999) and 
 </p>
 
 <p>
-In a forthcoming paper, we conduct a quantitative synthesis of the literature: a meta-analysis (Irsova et al. 2018).1 Our intention is to trace the differences in results back to differences in data, methods, and potentially also general study quality. From the 44 studies on the effect of DST on energy consumption, we collect 162 usable estimates. First, we test for publication bias, which typically exagerrates results in empirical economics by a factor of 2 (Ioannidis et al. 2017). We find no publication bias whatsoever, which is a remarkable finding in itself. Yes, our dataset includes many unpublished studies, but in economics publication bias is typically found even in working papers, as many authors routinely discriminate against unintuitive and statistically insignificant results.
+In a forthcoming paper, we conduct a quantitative synthesis of the literature: a meta-analysis (<a href="/dst/">Irsova et al. 2018</a>).1 Our intention is to trace the differences in results back to differences in data, methods, and potentially also general study quality. From the 44 studies on the effect of DST on energy consumption, we collect 162 usable estimates. First, we test for publication bias, which typically exagerrates results in empirical economics by a factor of 2 (Ioannidis et al. 2017). We find no publication bias whatsoever, which is a remarkable finding in itself. Yes, our dataset includes many unpublished studies, but in economics publication bias is typically found even in working papers, as many authors routinely discriminate against unintuitive and statistically insignificant results.
 </p>
 
 <p>

@@ -6,9 +6,9 @@ It was our fault: we hadn't changed the site in a major way since 2015 and had l
 
 Fortunately, Claude Code and Codex (thank you, AI!) proved very effective at reconstructing the site from old copies on the Wayback Machine and scattered files on our hard drives.
 
-In the end, the hack was a blessing in disguise. Now we have the website on GitHub, the datasets are archived on Zenodo with a DOI, and we can edit everything much more easily. This also made it much easier for us to integrate meta-analysis.cz with [EasyMeta.org](https://www.easymeta.org/), which is a web-based tool for meta-analysis (including correction for p-hacking).
+In the end, the hack was a blessing in disguise. Now we have the website on GitHub, [the datasets](/datasets/) are archived on Zenodo with a DOI, and we can edit everything much more easily. This also made it much easier for us to integrate meta-analysis.cz with [EasyMeta.org](https://www.easymeta.org/), which is a web-based tool for meta-analysis (including correction for p-hacking).
 
-It also turns out that AI agents are very good at converting PDFs into clean HTML, so now we provide an HTML version of all our papers, plus of course complete data and code, and more.
+It also turns out that AI agents are very good at converting PDFs into clean HTML, so now we provide an [HTML version of all our papers](/papers/), plus of course complete data and code, and more.
 
 So, for example, if you want to run [MAIVE](/maive/) (a meta-analysis technique that corrects for p-hacking), you can just ask your AI assistant: "Run MAIVE on this dataset, following the protocol at meta-analysis.cz"
 

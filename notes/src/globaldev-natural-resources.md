@@ -18,7 +18,7 @@ We aim to summarize what we know about the quantitative effect of natural resour
 
 We collect 43 econometric studies, which report 605 regression estimates of the effect of natural resources on economic growth. Our definition of natural resources is point-source non-renewable resources – those extracted from a narrow geographical or economic base, such as oil, diamonds or metals.
 
-We describe a long list of characteristics of these studies (all available in Havranek et al. 2016 ). For example, which explanatory variables are included in the models examining the effect of resources on growth? More specifically, do the empirical studies control for the country’s institutional quality (such as the World Bank’s measures of rule of law) and its potentially non-linear effect on economic growth via natural resources?
+We describe a long list of characteristics of these studies (all available in [Havranek et al. 2016](/resource_curse/) ). For example, which explanatory variables are included in the models examining the effect of resources on growth? More specifically, do the empirical studies control for the country’s institutional quality (such as the World Bank’s measures of rule of law) and its potentially non-linear effect on economic growth via natural resources?
 
 We also ask: What are the econometric methods employed? Do the studies address endogeneity issues? Are the studies published in prestigious peer-reviewed journals with many citations? Which measure of natural resources do the studies employ: measures of so-called natural resource abundance or dependence?
 

@@ -955,6 +955,8 @@ def main():
          "name": "meta-analysis.cz",
          "license": "https://creativecommons.org/licenses/by/4.0/",
          "alternateName": "Meta-Analysis: Methods, Data, and Code",
+         # lets a crawler reach the teaching hub from the root; its ItemList names the courses
+         "hasPart": [{"@id": BASE + "/teaching/#page"}],
          "description": "Methods, data, and code for meta-analysis in any field: MAIVE, the practitioner's guide, and the datasets and estimation code behind every paper here. By Tomas Havranek and Zuzana Irsova of Charles University, Prague, and their co-authors.",
          # publisher stays singular: one person runs the domain. But 35 of the 52 papers
          # collected here are hers, and a graph that never names her leaves a search
@@ -1481,12 +1483,14 @@ def main():
         b = _html.unescape(re.sub(r"<[^>]+>", "", b))
         b = "\n".join(re.sub(r"[ \t]+", " ", l).strip() for l in b.splitlines())
         return title, re.sub(r"\n{3,}", "\n\n", b).strip()
-    for _c in ("osaka-2026", "stockholm-2025", "christchurch-2025"):
-        for _rel in (f"teaching/{_c}/", f"teaching/{_c}/slides/"):
-            _f = os.path.join(SITE, _rel, "index.html")
-            if os.path.isfile(_f):
-                _t, _txt = _teaching_text(_f)
-                lf += [f"## {_t}", f"URL: {BASE}/{_rel}", "Licence: CC BY 4.0", "", _txt, ""]
+    # The hub first: it is indexed and in the sitemap, and it names Chemnitz only as upcoming.
+    _rels = ["teaching/"] + [r for _c in ("osaka-2026", "stockholm-2025", "christchurch-2025")
+                             for r in (f"teaching/{_c}/", f"teaching/{_c}/slides/")]
+    for _rel in _rels:
+        _f = os.path.join(SITE, _rel, "index.html")
+        if os.path.isfile(_f):
+            _t, _txt = _teaching_text(_f)
+            lf += [f"## {_t}", f"URL: {BASE}/{_rel}", "Licence: CC BY 4.0", "", _txt, ""]
     open(os.path.join(SITE, "llms-full.txt"), "w", encoding="utf-8", newline="\n").write("\n".join(lf))
     refresh_about_counts(_api)
     print("wrote robots.txt, sitemap.xml, llms.txt, llms-full.txt")

@@ -8,7 +8,7 @@ A widely cited meta-analysis by Weibel et al. (2010) reports that financial ince
 
 "Generous and specific financial incentives can help drive and sustain a rapid performance improvement" (McKinsey 2022)
 
-In this column, based on a synthesis of empirical studies on the topic (Cala et al. 2022), we argue that empirical evidence, even in economics, does not support the prior. The finding has far-reaching policy consequences: incentives or nudges that rely mainly on financial motives, such as offering money to people for getting their Covid-19 shots, may be less effective than commonly thought.
+In this column, based on a synthesis of empirical studies on the topic ([Cala et al. 2022](/incentives/)), we argue that empirical evidence, even in economics, does not support the prior. The finding has far-reaching policy consequences: incentives or nudges that rely mainly on financial motives, such as offering money to people for getting their Covid-19 shots, may be less effective than commonly thought.
 
 The purpose of our meta-analysis is threefold (Cala et al. 2022). First, we correct the literature for publication bias, which can exaggerate the underlying effect multiplicatively (Ioannidis et al. 2017). Second, we allow for model uncertainty (Steel 2020), which is important given how individual experiments differ. Third, we focus on economics. Existing meta-analyses have focused exclusively or to a large extent on psychology. The economics literature is thus largely unexplored, although researchers have pointed out the vast differences in priors and methodological approaches between economics and psychology experiments when it comes to the effect of money on behaviour (Camerer and Hogarth 1999, Hertwig and Ortmann 2001, Esteves-Sorenson and Broce 2022).
 
