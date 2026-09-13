@@ -34,7 +34,7 @@
   <url><loc>https://meta-analysis.cz/frisch/</loc><lastmod>2026-09-12</lastmod></url>
   <url><loc>https://meta-analysis.cz/gasoline/</loc><lastmod>2026-09-12</lastmod></url>
   <url><loc>https://meta-analysis.cz/gasoline_price/</loc><lastmod>2026-09-12</lastmod></url>
-  <url><loc>https://meta-analysis.cz/guidelines/</loc><lastmod>2026-09-12</lastmod></url>
+  <url><loc>https://meta-analysis.cz/guidelines/</loc><lastmod>2026-09-13</lastmod></url>
   <url><loc>https://meta-analysis.cz/habits/</loc><lastmod>2026-09-12</lastmod></url>
   <url><loc>https://meta-analysis.cz/hedge/</loc><lastmod>2026-09-12</lastmod></url>
   <url><loc>https://meta-analysis.cz/house_prices/</loc><lastmod>2026-09-12</lastmod></url>
@@ -576,14 +576,14 @@
   <url><loc>https://meta-analysis.cz/teaching/stockholm-2025/slides/</loc><lastmod>2026-09-12</lastmod></url>
   <url><loc>https://meta-analysis.cz/api/v1/datasets.json</loc><lastmod>2026-09-10</lastmod></url>
   <url><loc>https://meta-analysis.cz/api/v1/papers.json</loc><lastmod>2026-09-04</lastmod></url>
-  <url><loc>https://meta-analysis.cz/api/v1/search-index.json</loc><lastmod>2026-09-12</lastmod></url>
+  <url><loc>https://meta-analysis.cz/api/v1/search-index.json</loc><lastmod>2026-09-13</lastmod></url>
   <url><loc>https://meta-analysis.cz/api/v1/datapackage.json</loc><lastmod>2026-09-09</lastmod></url>
   <url><loc>https://meta-analysis.cz/api/v1/croissant.json</loc><lastmod>2026-09-09</lastmod></url>
   <url><loc>https://meta-analysis.cz/data/v1/estimates_harmonised.csv</loc><lastmod>2026-09-09</lastmod></url>
   <url><loc>https://meta-analysis.cz/data/v1/estimates_harmonised.parquet</loc><lastmod>2026-09-09</lastmod></url>
   <url><loc>https://meta-analysis.cz/estimates.csv</loc><lastmod>2026-09-04</lastmod></url>
   <url><loc>https://meta-analysis.cz/llms.txt</loc><lastmod>2026-09-12</lastmod></url>
-  <url><loc>https://meta-analysis.cz/llms-full.txt</loc><lastmod>2026-09-12</lastmod></url>
+  <url><loc>https://meta-analysis.cz/llms-full.txt</loc><lastmod>2026-09-13</lastmod></url>
   <url><loc>https://meta-analysis.cz/api/v1/codebooks/activism.json</loc><lastmod>2026-09-07</lastmod></url>
   <url><loc>https://meta-analysis.cz/api/v1/codebooks/alphas.json</loc><lastmod>2026-09-04</lastmod></url>
   <url><loc>https://meta-analysis.cz/api/v1/codebooks/armington.json</loc><lastmod>2026-09-07</lastmod></url>
