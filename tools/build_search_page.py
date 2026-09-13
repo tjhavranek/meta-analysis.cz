@@ -8,7 +8,7 @@ Google had crawled it.
 
 The page loads api/v1/search-index.json once and answers every query after that in the
 browser: no request per keystroke, nothing sent anywhere, and a page published a minute ago
-is findable a minute ago.
+is already findable.
 
     python tools/build_search_page.py
 """
@@ -281,7 +281,7 @@ The search runs in your browser; nothing is sent anywhere." />
 <p class="searchnote">Every page of this site is indexed, including all {N_PAPERS}
 papers in full; a handful of words that appear on more than half the pages are dropped as
 uninformative. The index is downloaded once and searched in your browser: no query is sent
-to this site or to anyone else, and a page published a minute ago is findable a minute ago.
+to this site or to anyone else, and a page published a minute ago is already findable.
 It is a plain file, <a href="/api/v1/search-index.json">search-index.json</a>, if you would
 rather search it yourself.</p>
 
