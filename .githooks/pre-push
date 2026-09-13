@@ -46,6 +46,21 @@ if ! "$PY" -m py_compile tools/generate_seo.py tools/verify_seo.py komentare/bui
   fail "a tool does not compile. CI runs this first and would go red."
 fi
 
+# Size. Pages publishes the whole checkout and GitHub gives no timely warning near its 1 GB
+# limit, so a push that adds more than 10 MB, or takes the site past 900 MB, stops here with a
+# report of what grew. It runs before the slow checks because it takes a second, and a large
+# addition deserves a look before anything else. When the growth is intended: SIZE_OK=1 git push
+if [ -f tools/check_site_size.py ]; then
+  echo "pre-push: checking the site size..."
+  SIZE_BASE=$(git rev-parse --abbrev-ref --symbolic-full-name '@{upstream}' 2>/dev/null || echo origin/main)
+  if ! "$PY" tools/check_site_size.py "$SIZE_BASE" > /tmp/_size.log 2>&1; then
+    cat /tmp/_size.log
+    fail "the push makes the site much larger (see above). Look at what grew before publishing.
+  If the growth is intended, push again with SIZE_OK=1."
+  fi
+  cat /tmp/_size.log
+fi
+
 # The generator both writes the page blocks and enriches tools/papers.json from
 # the pages, so a first run can leave input for a second. Iterate to a fixed
 # point (it is idempotent) so the author has one set of files to commit, not two.
