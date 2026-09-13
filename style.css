@@ -360,6 +360,13 @@ table.catalogue li{ margin-bottom:var(--s2); font-size:var(--f-1); line-height:1
   #page:not(:has(#sidebar)){ display:block; max-width:var(--shell); }
 }
 
+/* The homepage's AI invite shows only where the sidebar, with "Or ask a question" under
+   Search, stacks far below the content (phones). Beside the content the sidebar line is
+   enough. 64.0625rem, not 64rem: at exactly 64rem the max-width rule below stacks the page. */
+@media (min-width:64.0625rem){
+  .ask-invite{ display:none; }
+}
+
 /* /outliers/ carries a real DATA table (caption + thead + inline styles). It is not the
    homepage catalogue and must not be stacked or restyled as one. Give it table manners. */
 #content table:not(.catalogue){ border-collapse:collapse; width:100%; margin:var(--s5) 0; }
