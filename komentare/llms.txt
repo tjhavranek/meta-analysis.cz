@@ -2,7 +2,7 @@
 
 > Publicistika Tomáše Havránka a Zuzany Havránkové: komentáře pro celostátní média, sloupky pro litomyšlskou Lilii, rozhovory, stanoviska poradce bankovní rady ČNB a kratší příspěvky ze sítí. Texty jsou zde archivovány v plném znění s odkazem na původní vydání.
 
-Publicistika: 222 položek a 25 kratších příspěvků ze sítí (247 záznamů celkem), 2009–2026. Plné znění každého textu je na uvedené adrese; zdrojový Markdown položek je v /komentare/src/ (příspěvky ze sítí zdrojový soubor nemají). Licence: CC BY 4.0, jako vše na meta-analysis.cz; u převzatých textů uveďte i původní vydání.
+Publicistika: 223 položek a 25 kratších příspěvků ze sítí (248 záznamů celkem), 2009–2026. Plné znění každého textu je na uvedené adrese; zdrojový Markdown položek je v /komentare/src/ (příspěvky ze sítí zdrojový soubor nemají). Licence: CC BY 4.0, jako vše na meta-analysis.cz; u převzatých textů uveďte i původní vydání.
 
 ## Celostátní komentáře
 
@@ -162,6 +162,7 @@ Především sloupky pro Lilii, měsíčník města Litomyšle — doprava, zele
 
 Rozhovory pro česká média. U audio a video rozhovorů uvádíme pouze odkaz na původní zdroj.
 
+- [Ekonom popisuje, jak se stát vyhne krachu veřejných financí](https://meta-analysis.cz/komentare/iv-sz-krach-verejnych-financi/) — Seznam Zprávy, 13. září 2026
 - [„Za inflaci může prezident.“ Vlivný profesor popsal, odkud Babiš získá 200 miliard](https://meta-analysis.cz/komentare/iv-aktualne-spotlight/) — Aktuálně.cz, 18. června 2026
 - [Když screening odhalí cukrovku u dítěte](https://www.spreaker.com/episode/kdyz-screening-odhali-cukrovku-u-ditete-nema-smysl-se-vztekat-rika-tatinek-maleho-diabetika--70577203) — Diabetes Podcast, 11. března 2026 (audio, pouze odkaz)
 - [Co ukazují stovky studií o investování: akcie vycházejí nejlépe](https://meta-analysis.cz/komentare/gacr-akcie-vychazeji-nejlepe/) — Grantová agentura ČR, 9. ledna 2026
