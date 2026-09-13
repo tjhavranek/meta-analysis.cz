@@ -130,16 +130,17 @@ def main():
     if not problems:
         return 0
 
-    grew = [(d, p) for d, p in grew if d >= 0.05 * MB]   # below what the report can show
     if grew:
-        by_folder = defaultdict(int)
+        by_folder = defaultdict(int)             # every byte counts toward its folder...
         for d, p in grew:
             by_folder[p.split("/")[0] + "/" if "/" in p else "(top level)"] += d
+        shown = 0.05 * MB                        # ...but rows that would print as 0.0 are noise
         print("\nwhere it grew, by folder:")
         for folder, d in sorted(by_folder.items(), key=lambda kv: -kv[1])[:8]:
-            print(f"  {d / MB:8.1f} MB  {folder}")
+            if d >= shown:
+                print(f"  {d / MB:8.1f} MB  {folder}")
         print("largest new or grown files:")
-        for d, p in grew[:12]:
+        for d, p in [(d, p) for d, p in grew if d >= shown][:12]:
             print(f"  {d / MB:8.1f} MB  {p}")
     print("\nSIZE CHECK:")
     for p in problems:
