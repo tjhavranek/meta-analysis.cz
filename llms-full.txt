@@ -45208,15 +45208,15 @@ Slides as text
 
 From the course description:
 
-Taking stock of research is crucial for both academics and professionals. For
+Taking stock of research is important for both academics and professionals. For
 example, hedge fund analysts need to understand the key drivers of expected returns. Central
 bankers calibrate their models based on existing research. Everyone is interested in how an
 additional year of education affects earnings.
 
 However, individual research findings vary depending
 on the context. Publication pressures can result in a literature that overstates or understates the
-true effects. This course delves into meta-analysis, a set of quantitative methods designed for
-research synthesis. Building on a foundation in econometrics, we will explore modern meta-analysis
+true effects. This course introduces meta-analysis, a set of quantitative methods designed for
+research synthesis. Building on a foundation in econometrics, we will study modern meta-analysis
 techniques, emphasizing the correction of publication bias and p-hacking, and discussing their
 practical applications in economics and finance.
 
