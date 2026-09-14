@@ -43062,16 +43062,19 @@ URL: https://meta-analysis.cz/chemnitz/
 Licence: CC BY 4.0
 
 Meta-Analysis Instrumental Variable Estimator with easymeta.org, AI
-guidelines for meta-analyses, and the AI multi-agent/duel protocol. 23 September 2026,
-Tomas Havranek.
+guidelines for meta-analyses, and the AI multi-agent/duel protocol. A 90-minute session at
+the PhD workshop of the 2026 colloquium of MAER-Net (the
+Meta-Analysis of Economics Research Network), TU Chemnitz, 23 September 2026. Tomas Havranek,
+Charles University, Prague.
 
 ### Slides
 
 Slides (PDF)
 Slides as text
 
-59 PDF pages: the 44 slides of the session, some built up step by step, and ten backup slides
-with a screenshot of each step in the app and what the API returned. The
+The deck, EasyMeta.org and AI in Meta-Analysis, has 59 PDF pages: the 44 slides of the
+session, some built up step by step, and ten backup slides with a screenshot of each step in the
+app and what the API returned. The
 slides as text have every slide's title, text and figures on one page.
 
 ### Demo data
@@ -43094,7 +43097,7 @@ MAIVE form it starts closed), set the log first stage to Yes and winsorization t
 run, MAIVE Method should read PET-PEESE and Weighting Equal Weights; if not, set them. You should get
 -0.243, with a first-stage F of 25.
 
-WAIVE (experimental) and RDT are in the same Model Type list. RDT runs only in the app.
+WAIVE (experimental) and RDT are in the same Model Type list.
 
 ### Run it from an AI assistant
 
@@ -43139,9 +43142,9 @@ picks up the fix for MAIVE issue #30, you get
 
 Run MAIVE on this dataset, following the protocol at https://meta-analysis.cz/maive/how-to/#ai
 
-This one works on the small example on the MAIVE how-to page,
-and on electricity_sr.csv it finishes well within the server's two-minute limit. It returns about -0.28 rather than
-prompt 2's -0.243, because the protocol sends the data without winsorizing.
+This one works on the small example on the MAIVE how-to page
+and on electricity_sr.csv. It gives a MAIVE estimate of -0.279 rather than prompt 2's -0.243,
+because the protocol sends the data without winsorizing.
 
 ### More
 
