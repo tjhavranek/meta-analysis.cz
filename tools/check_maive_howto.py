@@ -85,14 +85,23 @@ def main():
     if runs["alpha_maive"]["response"].get("isSignificant") is not False:
         fail("the flagship's corrected effect is significant; the page says the alpha is gone")
 
-    # 3. The p-hacking card's whole point is that WAIVE reaches a different conclusion from
-    #    MAIVE on the same rows. Identical estimates are the signature of a dropped modelType.
+    # 3. The p-hacking card compares WAIVE with MAIVE on the same rows. Identical estimates
+    #    are the signature of a dropped modelType.
     em, ew = runs["esg_maive"]["response"], runs["esg_waive"]["response"]
     if em.get("effectEstimate") == ew.get("effectEstimate"):
         fail("WAIVE returned MAIVE's estimate -- modelType was dropped somewhere")
-    if not (em.get("isSignificant") is True and ew.get("isSignificant") is False):
-        fail("the page says MAIVE finds an effect and WAIVE does not; this run says "
-             "MAIVE %r, WAIVE %r" % (em.get("isSignificant"), ew.get("isSignificant")))
+    # The page no longer says that WAIVE finds no effect: that verdict rested on a WAIVE figure
+    # computed with the weights the wrong way round (MAIVE issue #30), and with the fix it
+    # hinges on p = 0.057. A sentence like it may return only if the run agrees.
+    if "WAIVE does not" in page and ew.get("isSignificant") is not False:
+        fail("the page says WAIVE finds no effect; this run says %r" % ew.get("isSignificant"))
+    # The #30 caveat belongs to the unfixed WAIVE (0.142725 on these rows). Once a refresh
+    # brings the fixed figure, drop the caveat and close the paragraph with the ordering
+    # ("The extra downweighting moves the estimate further toward zero").
+    wv = ew.get("effectEstimate")
+    if "issues/30" in page and not (isinstance(wv, (int, float))
+                                    and abs(wv - 0.142724933903136) <= 1e-9):
+        fail("the page still carries the MAIVE #30 caveat, but WAIVE is now %r: remove it" % wv)
     # The first stage has to be evidence rather than arithmetic: where SE is a function of N
     # by construction (partial correlations), log(SE^2) ~ log N fits perfectly and there is
     # no over-precision left for WAIVE to find.

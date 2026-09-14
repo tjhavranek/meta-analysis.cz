@@ -354,7 +354,9 @@ that is what selective reporting leaves behind.</p>
 <p>WAIVE, an experimental option in EasyMeta, is the more aggressive correction: it
 additionally downweights estimates that look too precise for their sample size.
 MAIVE gives %(ph_maive)s (SE %(ph_maive_se)s), WAIVE %(ph_waive)s (SE %(ph_waive_se)s).
-MAIVE still finds an effect here; WAIVE does not.</p>
+The WAIVE figure is provisional: the version behind EasyMeta applies these weights the wrong
+way round (<a href="https://github.com/PetrCala/MAIVE/issues/30">MAIVE issue #30</a>), which
+is fixed in the development version but not yet released.</p>
 
 <h2 id="in-r">The same run in R</h2>
 
