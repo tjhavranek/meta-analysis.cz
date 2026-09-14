@@ -4,10 +4,87 @@
 <meta http-equiv="content-type" content="text/html; charset=utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>MAER-Net 2026 PhD workshop, Chemnitz</title>
-<meta name="robots" content="noindex, nofollow" />
-<meta name="description" content="Draft, not yet reviewed: demo data and AI-assistant prompts for the MAER-Net 2026 PhD workshop block on MAIVE, EasyMeta and AI in meta-analysis, Chemnitz, 23 September 2026." />
-<link rel="canonical" href="https://meta-analysis.cz/chemnitz/" />
+<meta name="description" content="Slides, demo data and AI-assistant prompts for the MAER-Net 2026 PhD workshop block on MAIVE, EasyMeta and AI in meta-analysis, Chemnitz, 23 September 2026." />
 <link href="/style.css" rel="stylesheet" type="text/css" />
+<!-- seo-meta:start -->
+<link rel="canonical" href="https://meta-analysis.cz/chemnitz/" />
+<meta property="og:site_name" content="meta-analysis.cz" />
+<meta property="og:type" content="website" />
+<meta property="og:title" content="MAER-Net 2026 PhD workshop, Chemnitz" />
+<meta property="og:description" content="Slides, demo data and AI-assistant prompts for the MAER-Net 2026 PhD workshop block on MAIVE, EasyMeta and AI in meta-analysis, Chemnitz, 23 September 2026." />
+<meta property="og:url" content="https://meta-analysis.cz/chemnitz/" />
+<script type="application/ld+json">
+{
+ "@context": "https://schema.org",
+ "@graph": [
+  {
+   "@type": "Course",
+   "@id": "https://meta-analysis.cz/chemnitz/#course",
+   "url": "https://meta-analysis.cz/chemnitz/",
+   "name": "Meta-Analysis Instrumental Variable Estimator with easymeta.org, AI guidelines for meta-analyses, and the AI multi-agent/duel protocol",
+   "description": "A 90-minute session of the MAER-Net 2026 PhD workshop at TU Chemnitz: corrections for publication bias and p-hacking in easymeta.org (PET-PEESE, the endogenous kink, MAIVE and WAIVE), the same estimators run from an AI assistant through the EasyMeta API, the 2026 MAER-Net guidelines on AI in meta-analysis, and AI tools for feedback on research papers.",
+   "inLanguage": "en",
+   "license": "https://creativecommons.org/licenses/by/4.0/",
+   "author": {
+    "@id": "https://meta-analysis.cz/#th"
+   },
+   "provider": {
+    "@type": "Organization",
+    "name": "Chemnitz University of Technology (TU Chemnitz)",
+    "url": "https://www.tu-chemnitz.de/"
+   },
+   "hasCourseInstance": {
+    "@type": "CourseInstance",
+    "courseMode": "Onsite",
+    "startDate": "2026-09-23",
+    "endDate": "2026-09-23",
+    "location": {
+     "@type": "Place",
+     "name": "TU Chemnitz",
+     "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "Chemnitz",
+      "addressCountry": "DE"
+     }
+    },
+    "instructor": {
+     "@id": "https://meta-analysis.cz/#th"
+    },
+    "inLanguage": "en",
+    "courseWorkload": "PT1H30M"
+   },
+   "hasPart": [
+    {
+     "@id": "https://meta-analysis.cz/chemnitz/#slides"
+    },
+    {
+     "@id": "https://meta-analysis.cz/chemnitz/slides/#text"
+    }
+   ]
+  },
+  {
+   "@type": "LearningResource",
+   "@id": "https://meta-analysis.cz/chemnitz/#slides",
+   "name": "Slides: EasyMeta.org and AI in Meta-Analysis",
+   "learningResourceType": "Presentation",
+   "encodingFormat": "application/pdf",
+   "url": "https://meta-analysis.cz/chemnitz/slides.pdf",
+   "license": "https://creativecommons.org/licenses/by/4.0/",
+   "author": {
+    "@id": "https://meta-analysis.cz/#th"
+   },
+   "inLanguage": "en"
+  },
+  {
+   "@type": "Person",
+   "@id": "https://meta-analysis.cz/#th",
+   "name": "Tomas Havranek",
+   "url": "https://www.tomashavranek.cz"
+  }
+ ]
+}
+</script>
+<!-- seo-meta:end -->
 <style>
 /* The prompts are copied whole, so show every line at full column width rather than the
    36rem measure; narrower screens still scroll inside the block. */
@@ -19,12 +96,13 @@
 <div id="logo">
 	<a class="masthead-home" href="/">meta-analysis.cz</a>
 	<p class="site-name"><a href="/chemnitz/">MAER-Net 2026 PhD workshop, Chemnitz</a></p>
-	<h2> <span class="mk">&raquo;</span>&nbsp;&nbsp;&nbsp; demo data and prompts</h2>
+	<h2> <span class="mk">&raquo;</span>&nbsp;&nbsp;&nbsp; slides, demo data and prompts</h2>
 </div>
 <div id="header">
 	<div id="menu">
 		<ul>
 			<li class="current_page_item"><a href="/chemnitz/">Workshop</a></li>
+			<li><a href="/chemnitz/slides/">Slides</a></li>
 			<li><a href="/maive/how-to/">How to run MAIVE</a></li>
 			<li><a href="/guidelines/">Guidelines</a></li>
 			<li><a href="https://www.easymeta.org/">EasyMeta</a></li>
@@ -43,8 +121,14 @@
 guidelines for meta-analyses, and the AI multi-agent/duel protocol.</b> 23 September 2026,
 Tomas Havranek.</p>
 
-<p class="caveat">Draft: prepared for the workshop and not yet reviewed. The final materials will
-replace this page after 23 September 2026.</p>
+<h2 id="slides">Slides</h2>
+
+<p class="cta"><a class="button" href="/chemnitz/slides.pdf">Slides (PDF)</a>
+<a class="button quiet" href="/chemnitz/slides/">Slides as text</a></p>
+
+<p>59 PDF pages: the 44 slides of the session, some built up step by step, and ten backup slides
+with a screenshot of each step in the app and what the API returned. <a href="/chemnitz/slides/">The
+slides as text</a> have every slide's title, text and figures on one page.</p>
 
 <h2 id="data">Demo data</h2>
 
@@ -72,7 +156,7 @@ run, MAIVE Method should read PET-PEESE and Weighting Equal Weights; if not, set
 
 <p>This part is optional: it runs on the screen during the workshop. The prompts need an
 assistant that can run code with internet access, for example Claude
-Code or Codex; ordinary chat windows can only write the code for you. Start the assistant in
+Code or Codex. Start the assistant in
 the folder where you saved electricity_sr.csv.</p>
 
 <p><b>1. PET-PEESE and the endogenous kink</b> &middot;

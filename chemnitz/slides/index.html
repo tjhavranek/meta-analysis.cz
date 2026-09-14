@@ -1,0 +1,394 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Slides as text: EasyMeta.org and AI in Meta-Analysis (MAER-Net 2026 PhD workshop, Chemnitz)</title>
+<meta name="description" content="The full text and figures of the slides of a session on EasyMeta.org, MAIVE and AI in meta-analysis at the MAER-Net 2026 PhD workshop, TU Chemnitz, 23 September 2026." />
+<link href="/style.css" rel="stylesheet" type="text/css" />
+<!-- seo-meta:start -->
+<link rel="canonical" href="https://meta-analysis.cz/chemnitz/slides/" />
+<meta property="og:site_name" content="meta-analysis.cz" />
+<meta property="og:type" content="website" />
+<meta property="og:title" content="Slides as text: EasyMeta.org and AI in Meta-Analysis (MAER-Net 2026 PhD workshop, Chemnitz)" />
+<meta property="og:description" content="The full text and figures of the slides of a session on EasyMeta.org, MAIVE and AI in meta-analysis at the MAER-Net 2026 PhD workshop, TU Chemnitz, 23 September 2026." />
+<meta property="og:url" content="https://meta-analysis.cz/chemnitz/slides/" />
+<script type="application/ld+json">
+{
+ "@context": "https://schema.org",
+ "@graph": [
+  {
+   "@type": "LearningResource",
+   "@id": "https://meta-analysis.cz/chemnitz/slides/#text",
+   "url": "https://meta-analysis.cz/chemnitz/slides/",
+   "name": "Slides as text: EasyMeta.org and AI in Meta-Analysis",
+   "description": "The full text and figures of the slides of a session on EasyMeta.org, MAIVE and AI in meta-analysis at the MAER-Net 2026 PhD workshop, TU Chemnitz, 23 September 2026.",
+   "learningResourceType": "Presentation",
+   "encodingFormat": "text/html",
+   "isBasedOn": "https://meta-analysis.cz/chemnitz/slides.pdf",
+   "isPartOf": {
+    "@id": "https://meta-analysis.cz/chemnitz/#course"
+   },
+   "inLanguage": "en",
+   "license": "https://creativecommons.org/licenses/by/4.0/",
+   "author": {
+    "@id": "https://meta-analysis.cz/#th"
+   }
+  },
+  {
+   "@type": "Person",
+   "@id": "https://meta-analysis.cz/#th",
+   "name": "Tomas Havranek",
+   "url": "https://www.tomashavranek.cz"
+  }
+ ]
+}
+</script>
+<!-- seo-meta:end -->
+<style>
+/* Slides as text, as on the teaching pages, plus what this deck has: tables of results, the
+   beamer blocks with their titles, the prompt excerpts as code, and each heading's PDF page. */
+.entry p.slide-fig{ margin-top:0; font-size:var(--f-1); color:var(--ink-soft); }
+.entry .slides-text h3{ margin-top:var(--s6); }
+.entry .slides-text h3 a.pg{ font:400 var(--f-2)/1 var(--sans); color:var(--ink-soft);
+  margin-left:var(--s2); white-space:nowrap; text-decoration:none; }
+.entry .slides-text h3 a.pg:hover{ color:var(--accent-dark); text-decoration:underline; }
+.entry table.slide-tab{ margin:var(--s3) 0 var(--s4); }
+.entry table.slide-tab th, .entry table.slide-tab td{ padding:var(--s1) var(--s5) var(--s1) 0;
+  vertical-align:top; border-bottom:1px solid var(--rule); text-align:left; }
+.entry table.slide-tab th{ color:var(--ink-soft); }
+.entry table.slide-tab .r{ text-align:right; }
+.entry table.slide-tab .ind{ padding-left:var(--s4); }
+.entry table.slide-tab tr.grp td{ border-top:1px solid var(--control); }
+.entry div.slide-block{ border-left:3px solid var(--accent); padding-left:var(--s4);
+  margin:var(--s4) 0; max-width:var(--measure); }
+.entry div.slide-block p.bt{ font:600 var(--f-1)/1.4 var(--sans); color:var(--accent-dark);
+  margin:0 0 var(--s1); }
+.entry div.slide-block p:last-child, .entry div.slide-block ul:last-child{ margin-bottom:0; }
+</style>
+</head>
+<body>
+<div id="wrapper">
+<div id="logo">
+	<a class="masthead-home" href="/">meta-analysis.cz</a>
+	<p class="site-name"><a href="/chemnitz/">MAER-Net 2026 PhD workshop, Chemnitz</a></p>
+	<h2> <span class="mk">&raquo;</span>&nbsp;&nbsp;&nbsp; slides as text</h2>
+</div>
+<div id="header">
+	<div id="menu">
+		<ul>
+			<li><a href="/chemnitz/">Workshop</a></li>
+			<li class="current_page_item"><a href="/chemnitz/slides/">Slides</a></li>
+			<li><a href="/maive/how-to/">How to run MAIVE</a></li>
+			<li><a href="/guidelines/">Guidelines</a></li>
+			<li><a href="https://www.easymeta.org/">EasyMeta</a></li>
+			<li><a href="/">All meta-analyses</a></li>
+		</ul>
+	</div>
+</div>
+</div>
+<!-- start page -->
+<div id="page" class="single">
+	<div id="content">
+		<div class="post">
+			<div class="entry">
+
+<p class="lede"><b>The slides as text.</b> Every slide's title, text and figures from the session
+EasyMeta.org and AI in Meta-Analysis at the MAER-Net 2026 PhD workshop, TU Chemnitz, 23 September
+2026, generated from the LaTeX source so that it can be read and searched without opening a PDF.
+The few diagrams drawn in LaTeX itself are shown as pictures of the slide.</p>
+
+<p class="cta"><a class="button" href="/chemnitz/slides.pdf">Slides (PDF)</a>
+<a class="button quiet" href="/chemnitz/">Data and prompts</a></p>
+
+<p>The slides are as prepared for the workshop. Each heading links to its page of the PDF.</p>
+
+<p>Sections: <a href="#meta-analysis-cz">meta-analysis.cz</a>, <a href="#easymeta-org">easymeta.org</a>, <a href="#maive-waive">MAIVE/WAIVE</a>, <a href="#guidelines">Guidelines</a>, <a href="#ai-tools">AI Tools</a>, <a href="#takeaway">Takeaway</a> and <a href="#backup">Backup</a>.</p>
+
+<div class="slides-text">
+<h2 id="meta-analysis-cz">meta-analysis.cz</h2>
+<h3 id="slide-2">meta-analysis.cz <a class="pg" href="/chemnitz/slides.pdf#page=2" title="Page 2 of the PDF">p.&#160;2</a></h3>
+<ul><li>71 papers in full, most with data and code</li><li>46 datasets; one pooled table of about 50,000 estimates</li><li>R replication for 37 papers</li><li>A page written for AI assistants</li></ul>
+<figure class="slide-figure"><img src="figures/mcz_home_crop.png" alt="meta-analysis.cz" width="950" height="700" loading="lazy" /></figure>
+<h3 id="slide-3">What correction does to 44 of our results <a class="pg" href="/chemnitz/slides.pdf#page=3" title="Page 3 of the PDF">p.&#160;3</a></h3>
+<p>31 moved toward zero, 11 away from it, 2 did not move.</p>
+<p><b>Median revision: -41%.</b></p>
+<figure class="slide-figure"><img src="figures/mcz_results_chart.png" alt="What correction does to 44 of our results" width="590" height="174" loading="lazy" /></figure>
+<h2 id="easymeta-org">easymeta.org</h2>
+<h3 id="slide-4">easymeta.org <a class="pg" href="/chemnitz/slides.pdf#page=4" title="Page 4 of the PDF">p.&#160;4</a></h3>
+<ul><li>Upload effect, SE, sample size, study ID</li><li>PET-PEESE, EK, MAIVE, WAIVE, RTMA, RDT</li><li>Clustering, winsorizing, weights, Anderson-Rubin intervals</li><li>A reproducibility package to download</li></ul>
+<p>Built by Petr Cala. Also runs through an API.</p>
+<figure class="slide-figure"><img src="figures/easymeta_params_crop.png" alt="easymeta.org" width="896" height="611" loading="lazy" /></figure>
+<h3 id="slide-5">Demo data: electricity demand <a class="pg" href="/chemnitz/slides.pdf#page=5" title="Page 5 of the PDF">p.&#160;5</a></h3>
+<p>Short-run price elasticities: 1,647 estimates from 226 studies, winsorized 2.5%</p>
+<p>Kudela, Havranek, Irsova, Kudelova &amp; Sikl (2026), <a href="https://meta-analysis.cz/electricity/">meta-analysis.cz/electricity</a></p>
+<div class="slide-block"><p class="bt">Try it</p>
+<p>1. Download from <a href="https://meta-analysis.cz/chemnitz/"><b>meta-analysis.cz/chemnitz</b></a></p>
+<p>2. Upload at <a href="https://www.easymeta.org/">easymeta.org</a></p>
+<p>3. Model WLS, winsorize 2.5%, Run</p>
+</div>
+<figure class="slide-figure"><img src="figures/elec_funnel_mean.png" alt="Demo data: electricity demand" width="794" height="635" loading="lazy" /></figure>
+<h3 id="slide-6">One click per estimator <a class="pg" href="/chemnitz/slides.pdf#page=6" title="Page 6 of the PDF">p.&#160;6</a></h3>
+<table class="nums slide-tab"><tr><th></th><th class="r">Elasticity</th><th class="r">SE</th></tr><tr><td>Simple mean (winsorized)</td><td class="r">-0.260</td><td class="r"></td></tr><tr><td>PET</td><td class="r">-0.105</td><td class="r">0.033</td></tr><tr><td>PEESE</td><td class="r"><b>-0.127</b></td><td class="r">0.027</td></tr><tr><td>EK</td><td class="r">-0.105</td><td class="r">0.033</td></tr><tr class="grp"><td>PEESE, not clustered</td><td class="r">-0.127</td><td class="r">0.013</td></tr><tr><td>PEESE, winsorize 1%</td><td class="r">-0.118</td><td class="r">0.029</td></tr><tr><td>PEESE, equal weights</td><td class="r">-0.226</td><td class="r">0.019</td></tr></table>
+<p>PET-PEESE picks PEESE. EK finds no kink (too much heterogeneity), so it equals PET. The paper, with a richer model: -0.16.</p>
+<h3 id="slide-7">The same run from Claude <a class="pg" href="/chemnitz/slides.pdf#page=7" title="Page 7 of the PDF">p.&#160;7</a></h3>
+<div class="slide-block"><p class="bt">Pasted into Claude Code (excerpt)</p>
+<pre class="code"><code>Use the EasyMeta API, not your own estimation. [...]
+Send every row unchanged to
+POST https://api.maive.eu/v1/run-model [...]
+{"recipe":"PET-PEESE","parameters":{"winsorize":2.5},
+ "data":[...]} and the same with "recipe":"EK". [...]
+Never report a number the API did not return.</code></pre>
+</div>
+<table class="nums slide-tab"><tr><th></th><th>App</th><th>API, through Claude</th></tr><tr><td>PET-PEESE</td><td>-0.127</td><td><b>-0.127104860252972</b></td></tr><tr><td>EK</td><td>-0.105</td><td><b>-0.10525106160908</b></td></tr></table>
+<p>Matching digits show only that the code ran as asked.</p>
+<p>Full prompt: <a href="https://meta-analysis.cz/chemnitz/">meta-analysis.cz/chemnitz</a></p>
+<h2 id="maive-waive">MAIVE/WAIVE</h2>
+<h3 id="slide-8">MAIVE/WAIVE <a class="pg" href="/chemnitz/slides.pdf#page=8" title="Page 8 of the PDF">p.&#160;8</a></h3>
+<table class="nums slide-tab"><tr><td class="r"><b>MAIVE</b></td><td>Meta-Analysis Instrumental Variable Estimator</td></tr><tr><td class="r"><b>WAIVE</b></td><td>Weighted Adjustment Instrumental Variable Estimator</td></tr></table>
+<p>Joint work with Pedro Bom, Petr Cala, Zuzana Irsova and Heiko Rachinger</p>
+<h3 id="slide-9">No selection, no bias <a class="pg" href="/chemnitz/slides.pdf#page=9" title="Page 9 of the PDF">p.&#160;9</a></h3>
+<figure class="slide-figure"><img src="figures/funnel1.png" alt="No selection, no bias" width="1200" height="668" loading="lazy" /></figure>
+<h3 id="slide-10">Publication bias: mean too large <a class="pg" href="/chemnitz/slides.pdf#page=10" title="Page 10 of the PDF">p.&#160;10</a></h3>
+<figure class="slide-figure"><img src="figures/funnel2.png" alt="Publication bias: mean too large" width="1200" height="668" loading="lazy" /></figure>
+<h3 id="slide-11">Publication bias: PEESE works <a class="pg" href="/chemnitz/slides.pdf#page=11" title="Page 11 of the PDF">p.&#160;11</a></h3>
+<figure class="slide-figure"><img src="figures/funnel3.png" alt="Publication bias: PEESE works" width="1200" height="668" loading="lazy" /></figure>
+<h3 id="slide-12"><i>p</i>-hacking on estimates: PEESE works <a class="pg" href="/chemnitz/slides.pdf#page=12" title="Page 12 of the PDF">p.&#160;12</a></h3>
+<figure class="slide-figure"><img src="figures/funnel4.png" alt="p-hacking on estimates: PEESE works" width="1200" height="668" loading="lazy" /></figure>
+<h3 id="slide-13">Back to no selection <a class="pg" href="/chemnitz/slides.pdf#page=13" title="Page 13 of the PDF">p.&#160;13</a></h3>
+<figure class="slide-figure"><img src="figures/funnel1.png" alt="Back to no selection" width="1200" height="668" loading="lazy" /></figure>
+<h3 id="slide-14">Aggressive <i>p</i>-hacking: PEESE in trouble <a class="pg" href="/chemnitz/slides.pdf#page=14" title="Page 14 of the PDF">p.&#160;14</a></h3>
+<figure class="slide-figure"><img src="figures/funnel5.png" alt="Aggressive p-hacking: PEESE in trouble" width="1200" height="674" loading="lazy" /></figure>
+<h3 id="slide-18">Could this happen? Meta of education premium <a class="pg" href="/chemnitz/slides.pdf#page=18" title="Page 18 of the PDF">p.&#160;18</a></h3>
+<p>True model: Earnings_j = γ Education_j + δ Ability_j + v_j,</p>
+<p>Omitted variable: Earnings_j = γ Education_j + w_j,</p>
+<p>Proxy: Earnings_j = γ Education_j + ω IQ/PGS_j + x_j,</p>
+<p>Instrument: Earnings_j = γ Education_j + z_j, Policy reform</p>
+<p>Ability <b>not observed</b>.</p>
+<p>Primary studies:</p>
+<ol><li>ignore ability → γ̂ too large, SE(γ̂) too small.</li><li>include a proxy → γ̂ smaller, SE(γ̂) larger.</li><li>quasi-experiment → γ̂ even smaller, SE(γ̂) even larger.</li></ol>
+<figure class="slide-figure slide-shot"><img src="figures/slide-p18.png" alt="The slide as shown: Could this happen? Meta of education premium" width="1200" height="618" loading="lazy" /></figure>
+<h3 id="slide-19">Some estimates spuriously large &amp; precise <a class="pg" href="/chemnitz/slides.pdf#page=19" title="Page 19 of the PDF">p.&#160;19</a></h3>
+<figure class="slide-figure"><img src="figures/funnel33.png" alt="Some estimates spuriously large &amp; precise" width="1200" height="1199" loading="lazy" /></figure>
+<h3 id="slide-20">All meta estimators biased upwards <a class="pg" href="/chemnitz/slides.pdf#page=20" title="Page 20 of the PDF">p.&#160;20</a></h3>
+<figure class="slide-figure"><img src="figures/Bias_phack_psi_1_1.png" alt="All meta estimators biased upwards" width="1200" height="649" loading="lazy" /></figure>
+<h3 id="slide-21">Why? Key meta assumption broken <a class="pg" href="/chemnitz/slides.pdf#page=21" title="Page 21 of the PDF">p.&#160;21</a></h3>
+<p>Traditional meta:</p>
+<p>Ê_i = E_0 + β SE(Ê)^2_i + u_i,</p>
+<p>corr(SE,u) ≠ 0 ⇒ β̂ and Ê_0 biased.</p>
+<p><b>Natural solution:</b> 1/N instrumenting SE(Ê)_i^2 → MAIVE.</p>
+<figure class="slide-figure slide-shot"><img src="figures/slide-p21.png" alt="The slide as shown: Why? Key meta assumption broken" width="1200" height="621" loading="lazy" /></figure>
+<h3 id="slide-24">Meta-analysis instrumental variable estimator <a class="pg" href="/chemnitz/slides.pdf#page=24" title="Page 24 of the PDF">p.&#160;24</a></h3>
+<p>MAIVE intuition: Ê_i = E_0 + β SE(Ê)^2_i + u_i, where the standard error, by definition, depends on 1/N_i.</p>
+<p>MAIVE first stage: SE(Ê)^2_i = α_0 + α_1 (1/N_i) + π_i, where π_i stands for hacking or misspecifications.</p>
+<p>MAIVE adjustment: SE(Ê)^2_(adj,i) = α̂_0 + α̂_1 (1/N_i). On the slide, π_i and its label, hacking or misspecifications, are struck out: the adjusted standard error keeps only the part explained by sample size.</p>
+<ul><li>Can <b>add controls</b>.</li><li>Plug MAIVE-adjusted SEs into other estimators.</li><li>In practice it's better to use logs in the first stage.</li></ul>
+<figure class="slide-figure slide-shot"><img src="figures/slide-p24.png" alt="The slide as shown: Meta-analysis instrumental variable estimator" width="1200" height="500" loading="lazy" /></figure>
+<h3 id="slide-25">Aggressive <i>p</i>-hacking: PEESE in trouble <a class="pg" href="/chemnitz/slides.pdf#page=25" title="Page 25 of the PDF">p.&#160;25</a></h3>
+<figure class="slide-figure"><img src="figures/funnel5.png" alt="Aggressive p-hacking: PEESE in trouble" width="1200" height="674" loading="lazy" /></figure>
+<h3 id="slide-26">Meta-Analysis Instrumental Variable Estimator <a class="pg" href="/chemnitz/slides.pdf#page=26" title="Page 26 of the PDF">p.&#160;26</a></h3>
+<figure class="slide-figure"><img src="figures/funnel6.png" alt="Meta-Analysis Instrumental Variable Estimator" width="1200" height="674" loading="lazy" /></figure>
+<h3 id="slide-27">MAIVE published last year <a class="pg" href="/chemnitz/slides.pdf#page=27" title="Page 27 of the PDF">p.&#160;27</a></h3>
+<figure class="slide-figure"><img src="figures/nature.png" alt="MAIVE published last year" width="1110" height="626" loading="lazy" /></figure>
+<h3 id="slide-28">Meta-Analysis Instrumental Variable Estimator <a class="pg" href="/chemnitz/slides.pdf#page=28" title="Page 28 of the PDF">p.&#160;28</a></h3>
+<figure class="slide-figure"><img src="figures/funnel6.png" alt="Meta-Analysis Instrumental Variable Estimator" width="1200" height="674" loading="lazy" /></figure>
+<h3 id="slide-29">Weighted Adjustment Instrumental Variable Estimator <a class="pg" href="/chemnitz/slides.pdf#page=29" title="Page 29 of the PDF">p.&#160;29</a></h3>
+<figure class="slide-figure"><img src="figures/funnel7.png" alt="Weighted Adjustment Instrumental Variable Estimator" width="1200" height="674" loading="lazy" /></figure>
+<h3 id="slide-30">WAIVE first stage - same as MAIVE <a class="pg" href="/chemnitz/slides.pdf#page=30" title="Page 30 of the PDF">p.&#160;30</a></h3>
+<p>Residual from MAIVE first stage: SE(Ê)^2_i = α_0 + α_1 (1/N_i) + π_i. On the slide, an arrow labels π_i: hacking if negative?</p>
+<ul><li>Negative π_i → reported <b>SE too small relative to N</b> → possibly <i>p</i>-hacking.</li><li>Analogy: profit shifting in accounting (regress profits on sales, look at residuals).</li></ul>
+<figure class="slide-figure slide-shot"><img src="figures/slide-p30.png" alt="The slide as shown: WAIVE first stage - same as MAIVE" width="1200" height="488" loading="lazy" /></figure>
+<h3 id="slide-31">WAIVE weight for the second stage <a class="pg" href="/chemnitz/slides.pdf#page=31" title="Page 31 of the PDF">p.&#160;31</a></h3>
+<p>Exponential tilt: ω_i = exp [- max(0, -π_i)]</p>
+<ul><li><b>Penalize only negative residuals</b> (π_i&lt;0) - downweight spuriously precise estimates.</li><li>Weight ∈(0,1], smooth and proportional decay.</li><li>Then run PEESE of Ê_i on SE(Ê)^2_(adj,i) with weights ω_i.</li></ul>
+<figure class="slide-figure slide-shot"><img src="figures/slide-p31.png" alt="The slide as shown: WAIVE weight for the second stage" width="1200" height="504" loading="lazy" /></figure>
+<h3 id="slide-32">WAIVE alleviates the bias <a class="pg" href="/chemnitz/slides.pdf#page=32" title="Page 32 of the PDF">p.&#160;32</a></h3>
+<figure class="slide-figure"><img src="figures/hack2.png" alt="WAIVE alleviates the bias" width="1200" height="640" loading="lazy" /></figure>
+<h3 id="slide-33">WAIVE reduces MAIVE in 2/3 of meta-analyses <a class="pg" href="/chemnitz/slides.pdf#page=33" title="Page 33 of the PDF">p.&#160;33</a></h3>
+<figure class="slide-figure"><img src="figures/histogram_F_100.png" alt="WAIVE reduces MAIVE in 2/3 of meta-analyses" width="1200" height="980" loading="lazy" /></figure>
+<h3 id="slide-34">Practical issues <a class="pg" href="/chemnitz/slides.pdf#page=34" title="Page 34 of the PDF">p.&#160;34</a></h3>
+<p>WAIVE still just an experimental concept.</p>
+<div class="slide-block"><p class="bt">Main consideration</p>
+<ul><li>Can methods or <i>p</i>-hacking affect SE?</li><li>Yes → MAIVE and WAIVE help (<b><a href="https://www.easymeta.org/">EasyMeta.org</a></b>).</li><li>No → MAIVE and WAIVE don't hurt much (but wider CI).</li></ul>
+</div>
+<div class="slide-block"><p class="bt">Project Website</p>
+<p><a href="https://meta-analysis.cz/maive/">meta-analysis.cz/maive</a></p>
+</div>
+<h3 id="slide-35">Papers using MAIVE <a class="pg" href="/chemnitz/slides.pdf#page=35" title="Page 35 of the PDF">p.&#160;35</a></h3>
+<ul><li>Irsova Z., P. Bom, T. Havranek, &amp; H. Rachinger (2025): Spurious Precision in Meta-Analysis of Observational Research. <a href="https://meta-analysis.cz/maive/"><i>Nature Communications</i> 16: 8454.</a></li><li>Opatrny M., T. Havranek, Z. Irsova, &amp; M. Scasny (2026): Publication Bias and Model Uncertainty in Measuring the Effect of Class Size on Achievement. <a href="https://meta-analysis.cz/class/"><i>Journal of Labor Economics</i>, forthcoming</a>.</li><li>Cala P., T. Havranek, Z. Irsova, M. Luskova, J. Matousek &amp; J. Novak (2026): Financial Incentives and Performance: A Meta-Analysis of Experiments in Economics. <a href="https://meta-analysis.cz/incentives/"><i>Journal of Political Economy Microeconomics</i>, forthcoming</a>.</li></ul>
+<h3 id="slide-36">Diagnostic: excess precision <a class="pg" href="/chemnitz/slides.pdf#page=36" title="Page 36 of the PDF">p.&#160;36</a></h3>
+<p>Residual from meta-regression: log SE(Ê_i) = α_0 + α_1 log N_i + π_i [&lt;0: excess precision]</p>
+<ul><li>Negative π_i → reported <b>SE too small relative to N</b> → may indicate <i>p</i>-hacking.</li><li>Interpretation: π_i=-0.25 means SE is roughly one quarter smaller than expected.</li></ul>
+<figure class="slide-figure slide-shot"><img src="figures/slide-p36.png" alt="The slide as shown: Diagnostic: excess precision" width="1200" height="493" loading="lazy" /></figure>
+<h3 id="slide-37">Residual discontinuity test (simulated) <a class="pg" href="/chemnitz/slides.pdf#page=37" title="Page 37 of the PDF">p.&#160;37</a></h3>
+<figure class="slide-figure"><img src="figures/RDT_money_plot_RDD.png" alt="Residual discontinuity test (simulated)" width="1200" height="834" loading="lazy" /></figure>
+<h3 id="slide-38">Your turn: where does MAIVE land? <a class="pg" href="/chemnitz/slides.pdf#page=38" title="Page 38 of the PDF">p.&#160;38</a></h3>
+<p>Mean -0.260</p>
+<p>PET-PEESE -0.127</p>
+<p><b>MAIVE: closer to zero, or further?</b></p>
+<div class="slide-block"><p class="bt">Try it</p>
+<p>Start again at <a href="https://www.easymeta.org/">easymeta.org</a>, not Back. Model MAIVE; Advanced Options: log first stage Yes, winsorize 2.5%; Run</p>
+</div>
+<figure class="slide-figure"><img src="figures/elec_funnel_petpeese.png" alt="Your turn: where does MAIVE land?" width="794" height="635" loading="lazy" /></figure>
+<h3 id="slide-39">MAIVE: -0.24 <a class="pg" href="/chemnitz/slides.pdf#page=39" title="Page 39 of the PDF">p.&#160;39</a></h3>
+<table class="nums slide-tab"><tr><td>PET-PEESE</td><td class="r">-0.127</td></tr><tr><td class="ind">equal weights</td><td class="r">-0.226</td></tr><tr><td>MAIVE</td><td class="r"><b>-0.243</b></td></tr></table>
+<p>Log first stage, F = 25; SE 0.038, clustered by study</p>
+<p>42 estimates report SEs far below what their sample size predicts. They carry 37% of PET-PEESE's weight and are small in absolute value.</p>
+<p>Levels first stage: F = 6.9, and the app warns.</p>
+<figure class="slide-figure"><img src="figures/elec_funnel_maive.png" alt="MAIVE: -0.24" width="794" height="635" loading="lazy" /></figure>
+<h3 id="slide-40">WAIVE, flagged <a class="pg" href="/chemnitz/slides.pdf#page=40" title="Page 40 of the PDF">p.&#160;40</a></h3>
+<p>The app and Claude (through the API): -0.19. With the weights the right way round: -0.28.</p>
+<p>Experimental. The package applies WAIVE's weights inverted; reported as <a href="https://github.com/PetrCala/MAIVE/issues/30">MAIVE issue #30</a>.</p>
+<figure class="slide-figure"><img src="figures/app_10_result_waive_crop.png" alt="WAIVE, flagged" width="830" height="330" loading="lazy" /></figure>
+<h3 id="slide-41">RDT in EasyMeta <a class="pg" href="/chemnitz/slides.pdf#page=41" title="Page 41 of the PDF">p.&#160;41</a></h3>
+<p>Jump at |t| = 1.96: -0.19 (p = 0.13). A single literature gives this test little power.</p>
+<p>App only: the API does not offer RDT.</p>
+<figure class="slide-figure"><img src="figures/app_08b_rdt_figure.png" alt="RDT in EasyMeta" width="862" height="742" loading="lazy" /></figure>
+<h2 id="guidelines">Guidelines</h2>
+<h3 id="slide-42">MAER-Net guidelines, updated for AI <a class="pg" href="/chemnitz/slides.pdf#page=42" title="Page 42 of the PDF">p.&#160;42</a></h3>
+<p>Cook et al. (2026a, 2026b), <i>Journal of Economic Surveys</i>. Thirteen authors, among them Bartos, Stanley, Gechert and Prante.</p>
+<div class="slide-block"><p class="bt">Human leadership</p>
+<p>People direct every stage.</p>
+</div>
+<div class="slide-block"><p class="bt">Auditing</p>
+<p>Humans recheck a random 10% of what AI screens and codes.</p>
+</div>
+<div class="slide-block"><p class="bt">Accountability</p>
+<p>AI is never a co-author.</p>
+</div>
+<div class="slide-block"><p class="bt">Disclosure</p>
+<p>Any AI use that shapes the results is disclosed.</p>
+</div>
+<p>Recommendations; deviations should be disclosed. Free at <a href="https://meta-analysis.cz/guidelines/">meta-analysis.cz/guidelines</a>.</p>
+<h3 id="slide-43">New items in the reporting checklist <a class="pg" href="/chemnitz/slides.pdf#page=43" title="Page 43 of the PDF">p.&#160;43</a></h3>
+<table class="nums slide-tab"><tr><th>Stage</th><th>New in 2026</th></tr><tr><td>Search</td><td>AI use disclosed; AI search logs shared</td></tr><tr><td>Screening</td><td>random audit of 10% (at least 100 records); false-negative rate</td></tr><tr><td>Coding</td><td>AI may be a coder; humans recode 10% (at least 20 studies); kappa</td></tr><tr><td>Data</td><td>a dummy for human-reviewed estimates; share coded by AI</td></tr><tr><td>Figures</td><td>“Figure produced by AI.” if not validated</td></tr><tr><td>Replication</td><td>tool, version, dates, prompts, settings</td></tr></table>
+<p>Cook et al. (2026b) replaces the 2020 guidelines for every meta-analysis, with or without AI.</p>
+<h2 id="ai-tools">AI Tools</h2>
+<h3 id="slide-44">Our open AI feedback tools <a class="pg" href="/chemnitz/slides.pdf#page=44" title="Page 44 of the PDF">p.&#160;44</a></h3>
+<table class="nums slide-tab"><tr><td>Dec 2025</td><td><b>Duel</b></td><td>ChatGPT against Gemini, copy and paste</td></tr><tr><td>Mar 2026</td><td><b>MAD</b></td><td>four chatbots debate, a fresh chat sums up</td></tr><tr><td>May 2026</td><td><b>mad-research</b></td><td>Claude Code and Codex run the debate</td></tr><tr><td>Jun 2026</td><td><b>paper-workshop</b></td><td>referee agents built for your paper</td></tr></table>
+<p>Free on GitHub, <a href="https://github.com/tjhavranek">github.com/tjhavranek</a>. Cook et al. (2026b) cite the Duel + MAD protocol for audits.</p>
+<h3 id="slide-45">Does debate help? A pre-registered test <a class="pg" href="/chemnitz/slides.pdf#page=45" title="Page 45 of the PDF">p.&#160;45</a></h3>
+<ul><li>55 published or accepted meta-analyses in economics: 27 ours, 28 from JoES since 2022</li><li>Three AI reports per paper: one prompt to one model, mad-research, paper-workshop</li><li>Same template and length, tool names removed, random order</li><li>Authors of 44 of them rank the reports by usefulness</li></ul>
+<p>Pre-registered on OSF on 22 June 2026, before any report was written.</p>
+<h3 id="slide-46">Probably not, at least for meta-analyses <a class="pg" href="/chemnitz/slides.pdf#page=46" title="Page 46 of the PDF">p.&#160;46</a></h3>
+<ul><li>Single pass ahead of mad-research on 32 of 44 papers, of paper-workshop on 30 (mean rank 1.59 vs 2.25 and 2.16)</li><li>paper-workshop used about 30 times the tokens of the single pass</li><li>An AI judge (Gemini) would have picked paper-workshop</li></ul>
+<p>Havranek and Irsova (2026), arXiv 2607.14713; CEPR DP 21752.</p>
+<figure class="slide-figure"><img src="figures/mad_fig1_cost_slide.png" alt="Probably not, at least for meta-analyses" width="1200" height="718" loading="lazy" /></figure>
+<h3 id="slide-47">The single pass: this prompt, one call <a class="pg" href="/chemnitz/slides.pdf#page=47" title="Page 47 of the PDF">p.&#160;47</a></h3>
+<div class="slide-block"><p class="bt">79-word base prompt, given to all three arms</p>
+<p>You are refereeing a meta-analysis submitted to an economics journal. Read the attached paper and write a referee report whose goal is to help the authors improve it. Be specific and constructive, and point to concrete parts of the paper.</p>
+<p>Structure the report as:</p>
+<p>1. Summary — one short paragraph: what the paper does and its main claim.</p>
+<p>2. Major comments — the most important issues, most serious first.</p>
+<p>3. Minor comments.</p>
+<p>4. Overall assessment.</p>
+<p>Keep it concise (about 1,000 words).</p>
+</div>
+<p>Verbatim from the replication package, doi <a href="https://doi.org/10.5281/zenodo.21273528">10.5281/zenodo.21273528</a>.</p>
+<h2 id="takeaway">Takeaway</h2>
+<h3 id="slide-48">Practical takeaway <a class="pg" href="/chemnitz/slides.pdf#page=48" title="Page 48 of the PDF">p.&#160;48</a></h3>
+<div class="slide-block"><p class="bt">Publication bias and <i>p</i>-hacking</p>
+<p>Report several corrections side by side.</p>
+</div>
+<div class="slide-block"><p class="bt">Reported precision</p>
+<p>If studies report sample size, <b>MAIVE</b> instruments the standard error with it. <b>WAIVE</b> (experimental) goes further and downweights estimates still too precise for their sample size.</p>
+</div>
+<div class="slide-block"><p class="bt">AI</p>
+<p>Recheck a random 10% of what AI codes (at least 20 studies) and keep the prompts. For feedback, start with one good prompt.</p>
+</div>
+<div class="slide-block"><p class="bt">Try it</p>
+<p><a href="https://www.easymeta.org/"><b>easymeta.org</b></a> · <a href="https://meta-analysis.cz/chemnitz/">meta-analysis.cz/chemnitz</a></p>
+</div>
+<h3 id="slide-49">Selected recent papers <a class="pg" href="/chemnitz/slides.pdf#page=49" title="Page 49 of the PDF">p.&#160;49</a></h3>
+<ul><li>Irsova Z., P. Bom, T. Havranek, &amp; H. Rachinger (2025): Spurious Precision in Meta-Analysis of Observational Research. <a href="https://meta-analysis.cz/maive/"><i>Nature Communications</i> 16: 8454.</a></li><li>Havranek T., &amp; Z. Irsova (2026): Does Multi-Agent Debate Improve AI Feedback on Research Papers? <a href="https://meta-analysis.cz/debate/">arXiv 2607.14713.</a></li><li>Cala P., T. Havranek, Z. Irsova, M. Luskova, J. Matousek &amp; J. Novak (2026): Financial Incentives and Performance: A Meta-Analysis of Experiments in Economics. <a href="https://meta-analysis.cz/incentives/"><i>Journal of Political Economy Microeconomics</i>, forthcoming.</a></li></ul>
+<p>Claude Opus 5, Claude Fable 5.1 and GPT-6 Astra were used in preparing this demo and presentation.</p>
+<h2 id="backup">Backup</h2>
+<h3 id="slide-50">Backup: upload and column mapping <a class="pg" href="/chemnitz/slides.pdf#page=50" title="Page 50 of the PDF">p.&#160;50</a></h3>
+<p>All four columns map automatically.</p>
+<figure class="slide-figure"><img src="figures/app_01_mapping.png" alt="Backup: upload and column mapping" width="1200" height="750" loading="lazy" /></figure>
+<h3 id="slide-51">Backup: WLS, PET-PEESE, winsorize 2.5% <a class="pg" href="/chemnitz/slides.pdf#page=51" title="Page 51 of the PDF">p.&#160;51</a></h3>
+<p>Settings for the first run.</p>
+<figure class="slide-figure"><img src="figures/app_02_params_wls.png" alt="Backup: WLS, PET-PEESE, winsorize 2.5%" width="1200" height="900" loading="lazy" /></figure>
+<h3 id="slide-52">Backup: PET-PEESE <a class="pg" href="/chemnitz/slides.pdf#page=52" title="Page 52 of the PDF">p.&#160;52</a></h3>
+<p>PET-PEESE picks PEESE: -0.127.</p>
+<figure class="slide-figure"><img src="figures/app_03_result_petpeese.png" alt="Backup: PET-PEESE" width="1200" height="750" loading="lazy" /></figure>
+<h3 id="slide-53">Backup: funnel plot in the app <a class="pg" href="/chemnitz/slides.pdf#page=53" title="Page 53 of the PDF">p.&#160;53</a></h3>
+<p>Same estimates as on the demo slide; the app puts SE on the vertical axis, 0 at the top.</p>
+<figure class="slide-figure"><img src="figures/app_04_funnel.png" alt="Backup: funnel plot in the app" width="862" height="910" loading="lazy" /></figure>
+<h3 id="slide-54">Backup: EK <a class="pg" href="/chemnitz/slides.pdf#page=54" title="Page 54 of the PDF">p.&#160;54</a></h3>
+<p>EK finds no kink, so it equals PET: -0.105.</p>
+<figure class="slide-figure"><img src="figures/app_05_result_ek.png" alt="Backup: EK" width="1200" height="750" loading="lazy" /></figure>
+<h3 id="slide-55">Backup: what the API returned <a class="pg" href="/chemnitz/slides.pdf#page=55" title="Page 55 of the PDF">p.&#160;55</a></h3>
+<pre class="code"><code>POST https://api.maive.eu/v1/run-model
+1,647 rows, winsorize 2.5
+
+recipe PET-PEESE   HTTP 200
+  effectEstimate   -0.127104860252972
+  standardError     0.0269191742163644      (PEESE selected)
+
+recipe EK          HTTP 200
+  effectEstimate   -0.10525106160908
+  standardError     0.0327033930987689
+
+MAIVE, log first stage   HTTP 200
+  effectEstimate   -0.24255281691904
+  standardError     0.037775202532599
+  firstStageFStatistic   25.03
+
+WAIVE, same settings   HTTP 200
+  effectEstimate   -0.190975882295736</code></pre>
+<h3 id="slide-56">Backup: MAIVE, levels first stage <a class="pg" href="/chemnitz/slides.pdf#page=56" title="Page 56 of the PDF">p.&#160;56</a></h3>
+<p>Levels first stage: MAIVE -0.126, F = 6.9, and the app warns.</p>
+<figure class="slide-figure"><img src="figures/app_06_result_maive_default.png" alt="Backup: MAIVE, levels first stage" width="1200" height="750" loading="lazy" /></figure>
+<h3 id="slide-57">Backup: MAIVE, log first stage <a class="pg" href="/chemnitz/slides.pdf#page=57" title="Page 57 of the PDF">p.&#160;57</a></h3>
+<p>Log first stage: F = 25, MAIVE -0.24.</p>
+<figure class="slide-figure"><img src="figures/app_07_result_maive_log_noar.png" alt="Backup: MAIVE, log first stage" width="1200" height="750" loading="lazy" /></figure>
+<h3 id="slide-58">Backup: WAIVE <a class="pg" href="/chemnitz/slides.pdf#page=58" title="Page 58 of the PDF">p.&#160;58</a></h3>
+<p>WAIVE -0.19; experimental, weights inverted (<a href="https://github.com/PetrCala/MAIVE/issues/30">MAIVE issue #30</a>).</p>
+<figure class="slide-figure"><img src="figures/app_10_result_waive.png" alt="Backup: WAIVE" width="1200" height="750" loading="lazy" /></figure>
+<h3 id="slide-59">Backup: RDT <a class="pg" href="/chemnitz/slides.pdf#page=59" title="Page 59 of the PDF">p.&#160;59</a></h3>
+<p>Jump -0.19 (p = 0.13): no clear jump at |t| = 1.96.</p>
+<figure class="slide-figure"><img src="figures/app_08_result_rdt_card.png" alt="Backup: RDT" width="830" height="279" loading="lazy" /></figure>
+</div>
+
+<p><a href="/chemnitz/">Back to the workshop page</a>: the demo data, and the prompts for AI assistants.</p>
+
+			</div>
+		</div>
+	</div>
+</div>
+<!-- end page -->
+<footer class="site-foot">
+<p class="foot-lede"><b>meta-analysis.cz</b> collects meta-analyses, the data behind them, the
+code that produced them, and the methods for doing them. It is maintained by <a href="/about/"><b>Tomas Havranek</b> and
+<b>Zuzana Irsova</b></a> at the Institute of Economic Studies, Charles University, Prague.</p>
+<p class="foot-nav"><a href="/">All meta-analyses</a> &middot;
+<a href="/papers/">Papers in full</a> &middot;
+<a href="/results/">Headline results</a> &middot;
+<a href="/datasets/">Datasets and the pooled table</a> &middot;
+<a href="/maive/">MAIVE</a> &middot;
+<a href="/guidelines/">Practitioner&#x27;s guide</a> &middot;
+<a href="/teaching/">Teaching</a> &middot;
+<a href="/notes/">Research notes</a> &middot;
+<a href="/impact/">How this work has been used</a> &middot;
+<a href="https://www.easymeta.org/">EasyMeta web app</a></p>
+<p class="foot-who"><b>Tomas Havranek</b> &middot; <a href="https://www.tomashavranek.cz/">tomashavranek.cz</a> &middot; <a href="https://ies.fsv.cuni.cz/en/contacts/institute-members/78067720">IES FSV UK</a> &middot; <a href="https://orcid.org/0000-0002-3158-2539">ORCID</a> &middot; <a href="https://scholar.google.com/citations?user=BF0BvBkAAAAJ">Google Scholar</a> &middot; <a href="https://ideas.repec.org/f/pha418.html">RePEc</a> &middot; <a href="https://www.scopus.com/authid/detail.uri?authorId=24453189000">Scopus</a> &middot; <a href="https://cepr.org/about/people/tomas-havranek">CEPR</a> &middot; <a href="https://metrics.stanford.edu/people/tomas-havranek">Stanford METRICS</a></p>
+<p class="foot-who"><b>Zuzana Irsova</b> &middot; <a href="https://www.irsova.com/">irsova.com</a> &middot; <a href="https://ies.fsv.cuni.cz/en/contacts/institute-members/73504033">IES FSV UK</a> &middot; <a href="https://orcid.org/0000-0002-0753-8124">ORCID</a> &middot; <a href="https://scholar.google.com/citations?user=LaHrICUAAAAJ">Google Scholar</a> &middot; <a href="https://ideas.repec.org/e/pir23.html">RePEc</a> &middot; <a href="https://www.scopus.com/authid/detail.uri?authorId=37080793200">Scopus</a> &middot; <a href="https://cepr.org/about/people/zuzana-irsova">CEPR</a> &middot; <a href="https://metrics.stanford.edu/people/zuzana-irsova">Stanford METRICS</a></p>
+<p class="foot-cite"><b>How to cite this collection:</b> Havranek, T. and Z. Irsova (2026).
+meta-analysis.cz: harmonised estimate-level data from meta-analyses in economics. Zenodo.
+<a href="https://doi.org/10.5281/zenodo.21773678">https://doi.org/10.5281/zenodo.21773678</a>.
+Individual papers carry their own citation on their own page.</p>
+<p class="foot-licence"><b>Licence: CC BY 4.0.</b> Everything on this site is licensed under the
+<a href="https://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0
+International Licence</a>. That covers the papers, the datasets, their CSV and Parquet conversions,
+the pooled table, the codebooks, and the documentation. You may copy, redistribute, adapt, and reuse
+any of it for any purpose, including commercial use and training machine-learning models, as long
+as you give attribution to meta-analysis.cz. You do not need to ask.</p>
+<p class="foot-machine">For machines: <a href="/api/v1/datasets.json">datasets.json</a> &middot;
+<a href="/api/v1/datapackage.json">datapackage.json</a> &middot;
+<a href="/api/v1/croissant.json">croissant.json</a> &middot;
+<a href="/llms.txt">llms.txt</a> &middot; <a href="/llms-full.txt">llms-full.txt</a> &middot;
+<a href="/sitemap.xml">sitemap.xml</a> &middot; <a href="/LICENSE">LICENSE</a></p>
+</footer>
+</body>
+</html>

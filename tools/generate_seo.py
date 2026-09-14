@@ -1466,8 +1466,7 @@ def main():
     for doc, body in extra_documents():
         lf += doc + [body, ""]
     # The teaching section: each course page and its slides as text, so a reader of this one
-    # file gets the course material itself and not only a link to it. The Chemnitz draft stays
-    # out, as it stays out of the sitemap.
+    # file gets the course material itself and not only a link to it.
     import html as _html
 
     def _teaching_text(path):
@@ -1483,9 +1482,10 @@ def main():
         b = _html.unescape(re.sub(r"<[^>]+>", "", b))
         b = "\n".join(re.sub(r"[ \t]+", " ", l).strip() for l in b.splitlines())
         return title, re.sub(r"\n{3,}", "\n\n", b).strip()
-    # The hub first: it is indexed and in the sitemap, and it names Chemnitz only as upcoming.
-    _rels = ["teaching/"] + [r for _c in ("osaka-2026", "stockholm-2025", "christchurch-2025")
-                             for r in (f"teaching/{_c}/", f"teaching/{_c}/slides/")]
+    # The hub first, then the courses newest first; Chemnitz lives outside /teaching/.
+    _rels = ["teaching/", "chemnitz/", "chemnitz/slides/"] + [
+        r for _c in ("osaka-2026", "stockholm-2025", "christchurch-2025")
+        for r in (f"teaching/{_c}/", f"teaching/{_c}/slides/")]
     for _rel in _rels:
         _f = os.path.join(SITE, _rel, "index.html")
         if os.path.isfile(_f):
