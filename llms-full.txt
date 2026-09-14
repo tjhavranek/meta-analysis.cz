@@ -43139,9 +43139,9 @@ after the fix, about -0.28. RDT is not in the API.
 
 Run MAIVE on this dataset, following the protocol at https://meta-analysis.cz/maive/how-to/#ai
 
-This one works on the small example on the MAIVE how-to page.
-On a file the size of electricity_sr.csv it can run past the server's two-minute limit, because
-the protocol asks for bootstrap standard errors. For this file, use prompt 2.
+This one works on the small example on the MAIVE how-to page,
+and on electricity_sr.csv it finishes in under ten seconds. It returns about -0.28 rather than
+prompt 2's -0.243, because the protocol sends the data without winsorizing.
 
 ### More
 
