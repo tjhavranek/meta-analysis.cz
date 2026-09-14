@@ -43131,9 +43131,9 @@ hausmanTest exactly as returned, and confirm that resolvedParameters.modelType
 is MAIVE and useLogFirstStage is true. If the call fails, show the error and stop.
 Never report a number the API did not return.
 
-For WAIVE (experimental), ask the assistant to repeat the call with "modelType":"WAIVE". Until
-MAIVE issue #30 is fixed you get -0.191;
-after the fix, about -0.28. RDT is not in the API.
+For WAIVE (experimental), ask the assistant to repeat the call with "modelType":"WAIVE". Until EasyMeta
+picks up the fix for MAIVE issue #30, you get
+-0.191; after it, about -0.28. RDT is not in the API.
 
 3. MAIVE in one line · 03_oneliner.txt
 
