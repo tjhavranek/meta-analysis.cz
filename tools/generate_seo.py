@@ -1369,8 +1369,11 @@ def main():
            f"example with every number archived at {BASE}/api/v1/maive-howto.json, the same run "
            f"in R, and a ready request for the EasyMeta API",
            f"- [Teaching: courses on meta-analysis]({BASE}/teaching/): slides with their LaTeX "
-           f"sources, Stata and R code, data, and the Osaka recordings, from courses in Osaka (2026), "
-           f"Stockholm (2025) and Christchurch (2025)",
+           f"sources, Stata and R code, data, and the Osaka recordings, from courses in Chemnitz "
+           f"(2026), Osaka (2026), Stockholm (2025) and Christchurch (2025)",
+           f"- [MAER-Net 2026 PhD workshop, Chemnitz]({BASE}/chemnitz/): a 90-minute session on "
+           f"MAIVE, EasyMeta and AI in meta-analysis, with the slides as text at "
+           f"{BASE}/chemnitz/slides/, the demo dataset, and the prompts for AI assistants",
            f"- [Meta-Analysis in Economics, Osaka 2026]({BASE}/teaching/osaka-2026/): "
            f"a three-hour course at ISER, the University of Osaka, with the slides as text at "
            f"{BASE}/teaching/osaka-2026/slides/",
@@ -1477,7 +1480,7 @@ def main():
         b = re.sub(r"(?s)<h2[^>]*>(.*?)</h2>", lambda x: "\n### " + x.group(1) + "\n", b)
         b = re.sub(r"(?s)<h3[^>]*>(.*?)</h3>", lambda x: "\n#### " + x.group(1) + "\n", b)
         b = re.sub(r"<li[^>]*>", "\n- ", b)
-        b = re.sub(r"<td[^>]*>", " ", b)
+        b = re.sub(r"<t[dh][^>]*>", " ", b)   # header cells too, or "Elasticity" + "SE" fold
         b = re.sub(r"</(?:p|ul|ol|table|tr|pre|blockquote|div)>", "\n", b)
         b = _html.unescape(re.sub(r"<[^>]+>", "", b))
         b = "\n".join(re.sub(r"[ \t]+", " ", l).strip() for l in b.splitlines())

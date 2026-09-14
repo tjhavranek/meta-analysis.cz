@@ -43218,7 +43218,7 @@ Try it
 
 #### One click per estimator p. 6
 
-ElasticitySE
+Elasticity SE
 Simple mean (winsorized) -0.260
 PET -0.105 0.033
 PEESE -0.127 0.027
@@ -43240,7 +43240,7 @@ POST https://api.maive.eu/v1/run-model [...]
 "data":[...]} and the same with "recipe":"EK". [...]
 Never report a number the API did not return.
 
-AppAPI, through Claude
+App API, through Claude
 PET-PEESE -0.127 -0.127104860252972
 EK -0.105 -0.10525106160908
 
@@ -43433,7 +43433,7 @@ Recommendations; deviations should be disclosed. Free at meta-analysis.cz/guidel
 
 #### New items in the reporting checklist p. 43
 
-StageNew in 2026
+Stage New in 2026
 Search AI use disclosed; AI search logs shared
 Screening random audit of 10% (at least 100 records); false-negative rate
 Coding AI may be a coder; humans recode 10% (at least 20 studies); kappa

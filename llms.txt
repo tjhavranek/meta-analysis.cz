@@ -102,7 +102,8 @@
 - [Commentary and interviews](https://meta-analysis.cz/komentare/): op-eds, columns, and interviews (mostly Czech); machine index at https://meta-analysis.cz/komentare/llms.txt
 - [Research notes](https://meta-analysis.cz/notes/): short notes on methods and papers
 - [How to run MAIVE](https://meta-analysis.cz/maive/how-to/): the four columns MAIVE needs, a worked example with every number archived at https://meta-analysis.cz/api/v1/maive-howto.json, the same run in R, and a ready request for the EasyMeta API
-- [Teaching: courses on meta-analysis](https://meta-analysis.cz/teaching/): slides with their LaTeX sources, Stata and R code, data, and the Osaka recordings, from courses in Osaka (2026), Stockholm (2025) and Christchurch (2025)
+- [Teaching: courses on meta-analysis](https://meta-analysis.cz/teaching/): slides with their LaTeX sources, Stata and R code, data, and the Osaka recordings, from courses in Chemnitz (2026), Osaka (2026), Stockholm (2025) and Christchurch (2025)
+- [MAER-Net 2026 PhD workshop, Chemnitz](https://meta-analysis.cz/chemnitz/): a 90-minute session on MAIVE, EasyMeta and AI in meta-analysis, with the slides as text at https://meta-analysis.cz/chemnitz/slides/, the demo dataset, and the prompts for AI assistants
 - [Meta-Analysis in Economics, Osaka 2026](https://meta-analysis.cz/teaching/osaka-2026/): a three-hour course at ISER, the University of Osaka, with the slides as text at https://meta-analysis.cz/teaching/osaka-2026/slides/
 - [Meta-Analysis for Policy Economists, Stockholm 2025](https://meta-analysis.cz/teaching/stockholm-2025/): a two-day course at Tillväxtanalys, with the slides as text at https://meta-analysis.cz/teaching/stockholm-2025/slides/
 - [Research Synthesis in Economics and Finance, Christchurch 2025](https://meta-analysis.cz/teaching/christchurch-2025/): a ten-lecture course at the University of Canterbury, with the slides as text at https://meta-analysis.cz/teaching/christchurch-2025/slides/

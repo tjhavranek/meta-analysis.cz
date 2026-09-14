@@ -192,7 +192,8 @@ def deployed():
           "The attempt lines above name the files that differ. Check the workflow run "
           "(gh run view): a failed gate means the commit never deployed.\n"
           "A witness that differs only in line endings is a local rewrite, not a deploy "
-          "problem: restore it with git show HEAD:<file> > <file>.")
+          "problem: restore it in Git Bash with git show HEAD:<file> > <file> "
+          "(PowerShell's > re-encodes the file).")
     return 1
 
 
