@@ -43040,12 +43040,6 @@ university course (ECON670) at the University of Canterbury, New Zealand: ten tw
 from literature search and data collection to publication bias, p-hacking, heterogeneity and the
 limits of meta-analysis, with student projects. The lecture slides with their LaTeX sources.
 
-### Chemnitz, September 2026 (upcoming)
-
-MAER-Net 2026 PhD workshop, Chemnitz, 23 September 2026: a
-session on MAIVE, EasyMeta and AI in meta-analysis. Draft demo data and prompts, not yet
-reviewed; the final materials follow after the workshop.
-
 ### The same material in writing
 
 - Meta-Analysis of Social Science Research: A Practitioner’s Guide (Journal of Economic Surveys, 2024)
