@@ -77,7 +77,9 @@ PEESE quadratic when it is.</p>
 
 <p class="result"><b>MAIVE: 0.047% per month (SE 0.116).</b><br />
 <span class="settings">First-stage F: 71.8. Settings: PET-PEESE, log first stage,
-equal weights, CR2 standard errors clustered by study.</span></p>
+equal weights, CR2 standard errors clustered by study. CR2 is the small-sample correction
+of Pustejovsky and Tipton, which the <a href="/guidelines/guide/">Practitioner&#8217;s Guide</a>
+names for fewer than 40 studies alongside the wild bootstrap.</span></p>
 
 <p>Reading the output, as EasyMeta reports it:</p>
 
@@ -118,7 +120,8 @@ additionally downweights estimates that look too precise for their sample size.
 MAIVE gives 0.185 (SE 0.037), WAIVE 0.143 (SE 0.093).
 The WAIVE figure is provisional: the version behind EasyMeta applies these weights the wrong
 way round (<a href="https://github.com/PetrCala/MAIVE/issues/30">MAIVE issue #30</a>), which
-is fixed in the development version but not yet released.</p>
+is fixed in the development version but not yet released. The MAIVE results on this page
+are unaffected.</p>
 
 <h2 id="in-r">The same run in R</h2>
 

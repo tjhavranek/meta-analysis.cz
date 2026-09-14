@@ -216,7 +216,7 @@ def refresh():
                    "async_first_stage_f": plot.get("firstStageFStatistic")},
     }
     os.makedirs(os.path.dirname(SIDECAR), exist_ok=True)
-    json.dump(doc, open(SIDECAR, "w", encoding="utf-8"), indent=1, ensure_ascii=False,
+    json.dump(doc, open(SIDECAR, "w", encoding="utf-8", newline="\n"), indent=1, ensure_ascii=False,
               sort_keys=True)
     print("wrote %s" % SIDECAR)
     return doc
@@ -315,7 +315,9 @@ PEESE quadratic when it is.</p>
 
 <p class="result"><b>MAIVE: %(alpha_est)s%% per month (SE %(alpha_se)s).</b><br />
 <span class="settings">First-stage F: %(alpha_F)s. Settings: PET-PEESE, log first stage,
-equal weights, CR2 standard errors clustered by study.</span></p>
+equal weights, CR2 standard errors clustered by study. CR2 is the small-sample correction
+of Pustejovsky and Tipton, which the <a href="/guidelines/guide/">Practitioner&#8217;s Guide</a>
+names for fewer than 40 studies alongside the wild bootstrap.</span></p>
 
 <p>Reading the output, as EasyMeta reports it:</p>
 
@@ -356,7 +358,8 @@ additionally downweights estimates that look too precise for their sample size.
 MAIVE gives %(ph_maive)s (SE %(ph_maive_se)s), WAIVE %(ph_waive)s (SE %(ph_waive_se)s).
 The WAIVE figure is provisional: the version behind EasyMeta applies these weights the wrong
 way round (<a href="https://github.com/PetrCala/MAIVE/issues/30">MAIVE issue #30</a>), which
-is fixed in the development version but not yet released.</p>
+is fixed in the development version but not yet released. The MAIVE results on this page
+are unaffected.</p>
 
 <h2 id="in-r">The same run in R</h2>
 
@@ -559,7 +562,8 @@ def main():
     doc = refresh() if "--refresh" in sys.argv else json.load(open(SIDECAR, encoding="utf-8"))
     os.makedirs(OUT_DIR, exist_ok=True)
     page = render(doc)
-    open(os.path.join(OUT_DIR, "index.html"), "w", encoding="utf-8").write(page)
+    # LF, as committed: a CRLF working copy fails preflight's byte comparison with the live page.
+    open(os.path.join(OUT_DIR, "index.html"), "w", encoding="utf-8", newline="\n").write(page)
     print("maive/how-to/index.html: %d bytes (numbers retrieved %s)"
           % (len(page), doc["retrieved"]))
     return 0

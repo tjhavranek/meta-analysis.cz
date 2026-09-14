@@ -22,10 +22,10 @@ and the data layer rebuild, about forty seconds). Never push on --fast alone.
 A push is not a deploy. When the workflow fails, the commit sits on main and the site
 keeps serving the previous revision, with nothing in the tree to say so. Run this after
 pushing; it waits for Pages and then asks the live domain, cache-busted, whether what
-is served matches what was pushed. Do not report work as live without it. Note that
-api.github.com is blocked from this environment, so the run's own status has to come
-from the GitHub MCP tool rather than curl -- silently, a poll of the API here returns
-403 forever and looks exactly like a run that never finishes.
+is served matches what was pushed. Do not report work as live without it. In some sessions
+api.github.com has been blocked, and a poll of the API then returns 403 forever and looks
+exactly like a run that never finishes; read the run with `gh run view`, or with the GitHub
+MCP tool where the API is blocked.
 """
 import hashlib, os, re, shutil, subprocess, sys, time, urllib.request
 import _poppler
@@ -189,8 +189,10 @@ def deployed():
         if attempt < 12:
             time.sleep(45)
     print("\nthe live site still does not match after nine minutes.\n"
-          "Check the workflow run: a failed gate means the commit never deployed.\n"
-          "api.github.com is blocked here, so read the run through the GitHub MCP tool.")
+          "The attempt lines above name the files that differ. Check the workflow run "
+          "(gh run view): a failed gate means the commit never deployed.\n"
+          "A witness that differs only in line endings is a local rewrite, not a deploy "
+          "problem: restore it with git show HEAD:<file> > <file>.")
     return 1
 
 
