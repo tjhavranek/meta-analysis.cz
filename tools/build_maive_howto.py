@@ -25,6 +25,7 @@ THE TRAPS, all verified live and all invisible in a 200 response:
 import base64
 import datetime
 import json
+import math
 import os
 import subprocess
 import sys
@@ -46,11 +47,12 @@ TABLE = os.path.join(ROOT, "data", "v1", "estimates_harmonised.csv")
 # includeStudyClustering is what actually clusters by study_id. Both, always.
 # clustered_cr2 is the bias-reduced estimator of Pustejovsky and Tipton: the site's 2026
 # principle ("Cluster by study. CR2 standard errors") and the app's default. It is SE = 2 in
-# the MAIVE R package and uses no random draws, so R and the API agree exactly. Not
-# "bootstrap" (SE = 3): in MAIVE 0.3.0 that reports the CR1 standard error, takes the
-# first-stage F, Hausman and Anderson-Rubin from CR0, and uses the wild bootstrap only for
-# bootCI, which this page does not print; on large files it also runs past the API's
-# two-minute limit.
+# the MAIVE R package and uses no random draws, so R and the API agree to every printed
+# digit (verified on MAIVE 0.3.0). Not "bootstrap" (SE = 3): in MAIVE 0.3.0 that reports the
+# CR1 standard error, takes the first-stage F and Hausman from CR0, and uses the wild
+# bootstrap only for the intervals in bootCI and eggerBootCI, which this page does not print;
+# on large files it also runs past the API's two-minute limit. Under either setting the
+# Anderson-Rubin interval is not cluster-robust: the clustered SE only sizes its search grid.
 CANON = {"modelType": "MAIVE", "maiveMethod": "PET-PEESE", "weight": "equal_weights",
          "useLogFirstStage": True, "standardErrorTreatment": "clustered_cr2",
          "includeStudyClustering": True, "winsorize": 0, "computeAndersonRubin": True}
@@ -178,6 +180,7 @@ def refresh():
     for f in ("effectEstimate", "standardError", "firstStageFStatistic"):
         a, s = plot.get(f), alpha.get(f)
         if not (isinstance(a, (int, float)) and isinstance(s, (int, float))
+                and math.isfinite(a) and math.isfinite(s)
                 and abs(a - s) <= 1e-9 * max(1.0, abs(s))):
             raise SystemExit("async %s=%r disagrees with sync %r -- funnel rejected"
                              % (f, a, s))

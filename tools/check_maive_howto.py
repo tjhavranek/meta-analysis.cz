@@ -10,6 +10,7 @@ re-runs the recorded requests and reports drift; that is a weekly job, never a d
     python tools/check_maive_howto.py --live   # re-run against the API and diff
 """
 import json
+import math
 import os
 import subprocess
 import sys
@@ -47,6 +48,13 @@ def main():
         got = (runs[key]["response"].get("firstStage") or {}).get("mode")
         if got != "log":
             fail("%s ran with firstStage.mode=%r -- parameters did not take effect" % (key, got))
+        # The API echoes what it actually ran; a setting it dropped shows up here even when
+        # the request asked for it.
+        rp = runs[key]["response"].get("resolvedParameters") or {}
+        if rp.get("standardErrorTreatment") != "clustered_cr2" or \
+                rp.get("includeStudyClustering") is not True:
+            fail("%s: the API resolved %r with clustering %r, not CR2 clustered by study"
+                 % (key, rp.get("standardErrorTreatment"), rp.get("includeStudyClustering")))
     if runs["esg_waive"]["request_parameters"].get("modelType") != "WAIVE":
         fail("the WAIVE run did not ask for WAIVE")
     # No run may use the app's winsorize setting. The page ships R code that must return the
@@ -211,6 +219,7 @@ def main():
     # To 1e-9 relative, as in build_maive_howto.py: the endpoints differ in the 13th digit.
     af = doc["funnel"].get("async_first_stage_f")
     if not (isinstance(af, (int, float)) and isinstance(flagF, (int, float))
+            and math.isfinite(af) and math.isfinite(flagF)
             and abs(af - flagF) <= 1e-9 * max(1.0, abs(flagF))):
         fail("the funnel's run and the page's run disagree on F -- wrong plot")
     if not os.path.exists(CSV):
