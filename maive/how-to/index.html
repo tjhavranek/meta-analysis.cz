@@ -13,7 +13,7 @@
 <meta property="og:url" content="https://meta-analysis.cz/maive/how-to/" />
 <link href="/style.css" rel="stylesheet" type="text/css" />
 <link href="/paper.css" rel="stylesheet" type="text/css" />
-<script type="application/ld+json">{"@context":"https://schema.org","@type":"HowTo","@id":"https://meta-analysis.cz/maive/how-to/#howto","name":"How to run MAIVE","description":"Correct a meta-analysis for publication bias and for many forms of p-hacking, using four columns of data and the EasyMeta app or API.","inLanguage":"en","license":"https://creativecommons.org/licenses/by/4.0/","isBasedOn":"https://meta-analysis.cz/maive/#paper","about":{"@id":"https://meta-analysis.cz/maive/#paper"},"tool":{"@type":"SoftwareApplication","name":"EasyMeta","url":"https://www.easymeta.org/"},"step":[{"@type":"HowToStep","license":"https://creativecommons.org/licenses/by/4.0/","name":"Assemble four columns","url":"https://meta-analysis.cz/maive/how-to/","text":"One row per estimate: effect, se, n_obs, and study_id when a study reports several estimates. With study_id, inference clusters on it."},{"@type":"HowToStep","license":"https://creativecommons.org/licenses/by/4.0/","name":"Run MAIVE","url":"https://meta-analysis.cz/maive/how-to/#example","text":"Upload the CSV to easymeta.org, or POST the rows as JSON to https://api.maive.eu/v1/run-model with parameters nested under 'parameters': modelType MAIVE, maiveMethod PET-PEESE, weight equal_weights, useLogFirstStage true, standardErrorTreatment bootstrap, includeStudyClustering true, computeAndersonRubin true, winsorize 0."},{"@type":"HowToStep","license":"https://creativecommons.org/licenses/by/4.0/","name":"Read the diagnostics before the estimate","url":"https://meta-analysis.cz/maive/how-to/#example","text":"The Egger test detects funnel asymmetry, which selective reporting produces and genuine differences between studies can too; the Hausman test compares MAIVE with plain PET-PEESE; the first-stage F says whether the instrument is strong."},{"@type":"HowToStep","license":"https://creativecommons.org/licenses/by/4.0/","name":"Reuse the corrected standard errors","url":"https://meta-analysis.cz/maive/how-to/#elsewhere","text":"The run returns a corrected standard error for every estimate, seInstrumented in the API and SE_instrumented in R. Substitute them for the reported ones in any other estimator: random effects, a selection model, anything that takes a standard error."},{"@type":"HowToStep","license":"https://creativecommons.org/licenses/by/4.0/","name":"Handle a weak first stage","url":"https://meta-analysis.cz/maive/how-to/#weak-first-stage","text":"Below an F of 10, report the Anderson-Rubin interval rather than the point estimate, and check any RTMA cross-check against its own convergence diagnostics before quoting it."}]}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"HowTo","@id":"https://meta-analysis.cz/maive/how-to/#howto","name":"How to run MAIVE","description":"Correct a meta-analysis for publication bias and for many forms of p-hacking, using four columns of data and the EasyMeta app or API.","inLanguage":"en","license":"https://creativecommons.org/licenses/by/4.0/","isBasedOn":"https://meta-analysis.cz/maive/#paper","about":{"@id":"https://meta-analysis.cz/maive/#paper"},"tool":{"@type":"SoftwareApplication","name":"EasyMeta","url":"https://www.easymeta.org/"},"step":[{"@type":"HowToStep","license":"https://creativecommons.org/licenses/by/4.0/","name":"Assemble four columns","url":"https://meta-analysis.cz/maive/how-to/","text":"One row per estimate: effect, se, n_obs, and study_id when a study reports several estimates. With study_id, inference clusters on it."},{"@type":"HowToStep","license":"https://creativecommons.org/licenses/by/4.0/","name":"Run MAIVE","url":"https://meta-analysis.cz/maive/how-to/#example","text":"Upload the CSV to easymeta.org, or POST the rows as JSON to https://api.maive.eu/v1/run-model with parameters nested under 'parameters': modelType MAIVE, maiveMethod PET-PEESE, weight equal_weights, useLogFirstStage true, standardErrorTreatment clustered_cr2, includeStudyClustering true, computeAndersonRubin true, winsorize 0."},{"@type":"HowToStep","license":"https://creativecommons.org/licenses/by/4.0/","name":"Read the diagnostics before the estimate","url":"https://meta-analysis.cz/maive/how-to/#example","text":"The Egger test detects funnel asymmetry, which selective reporting produces and genuine differences between studies can too; the Hausman test compares MAIVE with plain PET-PEESE; the first-stage F says whether the instrument is strong."},{"@type":"HowToStep","license":"https://creativecommons.org/licenses/by/4.0/","name":"Reuse the corrected standard errors","url":"https://meta-analysis.cz/maive/how-to/#elsewhere","text":"The run returns a corrected standard error for every estimate, seInstrumented in the API and SE_instrumented in R. Substitute them for the reported ones in any other estimator: random effects, a selection model, anything that takes a standard error."},{"@type":"HowToStep","license":"https://creativecommons.org/licenses/by/4.0/","name":"Handle a weak first stage","url":"https://meta-analysis.cz/maive/how-to/#weak-first-stage","text":"Below an F of 10, report the Anderson-Rubin interval rather than the point estimate, and check any RTMA cross-check against its own convergence diagnostics before quoting it."}]}</script>
 </head>
 <body>
 <div id="wrapper">
@@ -75,17 +75,17 @@ instead of the reported one, and the solid line is MAIVE's fit through them. It 
 because the PET-PEESE rule picks PET when the intercept is not significant, as here, and the
 PEESE quadratic when it is.</p>
 
-<p class="result"><b>MAIVE: 0.047% per month (SE 0.096).</b><br />
-<span class="settings">First-stage F: 128.3. Settings: PET-PEESE, log first stage,
-equal weights, wild bootstrap clustered by study.</span></p>
+<p class="result"><b>MAIVE: 0.047% per month (SE 0.116).</b><br />
+<span class="settings">First-stage F: 71.8. Settings: PET-PEESE, log first stage,
+equal weights, CR2 standard errors clustered by study.</span></p>
 
 <p>Reading the output, as EasyMeta reports it:</p>
 
 <ul class="reading">
 <li><b>Bias test.</b> The Egger test rejects funnel symmetry
-(p&nbsp;=&nbsp;0.002): the less precise an estimate, the larger the alpha it
+(p&nbsp;=&nbsp;0.014): the less precise an estimate, the larger the alpha it
 reports.</li>
-<li><b>Spurious precision.</b> The Hausman statistic is 0.79 against a critical
+<li><b>Spurious precision.</b> The Hausman statistic is 0.44 against a critical
 value of 3.84: MAIVE and plain PET-PEESE agree here, so the test does not detect inflated
 precision, and the correction comes from the funnel asymmetry.</li>
 <li><b>Corrected effect.</b> 0.047% per month against a reported 0.33%.
@@ -101,8 +101,8 @@ PET-PEESE was significant.</p>
 
 <p>Below an F of 10, report the Anderson-Rubin interval instead of the point estimate. In
 the <a href="/euro/">euro-trade dataset</a> (61 estimates)
-F is 0.24; MAIVE gives -0.55 (SE 0.81), and the AR interval is
-[-1.90, 0.79], so the corrected effect is only weakly identified. RTMA,
+F is 0.20; MAIVE gives -0.55 (SE 0.91), and the AR interval is
+[-2.07, 0.59], so the corrected effect is only weakly identified. RTMA,
 by Mathur, rests on different assumptions and is the cross-check to run when the first stage
 is this weak. EasyMeta runs it too.</p>
 
@@ -115,7 +115,7 @@ that is what selective reporting leaves behind.</p>
 
 <p>WAIVE, an experimental option in EasyMeta, is the more aggressive correction: it
 additionally downweights estimates that look too precise for their sample size.
-MAIVE gives 0.185 (SE 0.036), WAIVE 0.143 (SE 0.089).
+MAIVE gives 0.185 (SE 0.037), WAIVE 0.143 (SE 0.093).
 MAIVE still finds an effect here; WAIVE does not.</p>
 
 <h2 id="in-r">The same run in R</h2>
@@ -136,7 +136,7 @@ fit &lt;- maive(dat,
              weight = 0,        # equal weights
              instrument = 1,    # MAIVE; 0 gives plain PET-PEESE
              studylevel = 2,    # cluster by study
-             SE = 3,            # wild bootstrap
+             SE = 2,            # CR2 standard errors
              AR = 1,            # Anderson-Rubin interval
              first_stage = 1)   # log first stage; package defaults to levels
 
@@ -167,7 +167,7 @@ before your estimator ever sees the data.</p>
   "parameters": {
     "modelType": "MAIVE", "maiveMethod": "PET-PEESE", "weight": "equal_weights",
     "useLogFirstStage": true,
-    "standardErrorTreatment": "bootstrap", "includeStudyClustering": true,
+    "standardErrorTreatment": "clustered_cr2", "includeStudyClustering": true,
     "computeAndersonRubin": true, "winsorize": 0
   }
 }</code></pre>
@@ -183,7 +183,7 @@ unclear. Giving every row its own study_id is rejected.
 
 Nest exactly this under "parameters":
 {"modelType": "MAIVE", "maiveMethod": "PET-PEESE", "weight": "equal_weights",
-"useLogFirstStage": true, "standardErrorTreatment": "bootstrap",
+"useLogFirstStage": true, "standardErrorTreatment": "clustered_cr2",
 "includeStudyClustering": true, "computeAndersonRubin": true, "winsorize": 0}.
 Top-level settings are silently ignored. Use the synchronous endpoint.
 includeStudyClustering is what clusters; dropping it changes the standard
@@ -201,7 +201,7 @@ this rather than R from memory:
   library(MAIVE)
   fit &lt;- maive(data.frame(bs = effect, sebs = se, Ns = n_obs, study_id),
                method = 3, weight = 0, instrument = 1, studylevel = 2,
-               SE = 3, AR = 1, first_stage = 1)
+               SE = 2, AR = 1, first_stage = 1)
 With no grouping, drop study_id from the data.frame and set studylevel = 0.
 Never report numbers you did not receive or compute from the data you sent.</code></pre>
 </details>
@@ -211,7 +211,7 @@ PET, PEESE, or the endogenous kink model, and it also runs weighted least square
 RTMA.</p>
 
 <p class="provenance">Computed with EasyMeta on meta-analysis.cz data v1.1.1,
-2026-08-25; every request and response archived in
+2026-09-14; every request and response archived in
 <a href="/api/v1/maive-howto.json">maive-howto.json</a>. The settings on this page are the
 specification we recommend as authors of MAIVE. It is newer than the
 <a href="/maive/paper/">2025 Nature Communications paper</a>: the log first stage now

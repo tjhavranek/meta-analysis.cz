@@ -42,8 +42,8 @@ def main():
             fail("%s ran without includeStudyClustering -- its SEs are not clustered" % key)
         if p.get("useLogFirstStage") is not True:
             fail("%s did not request the log first stage" % key)
-        if p.get("standardErrorTreatment") != "bootstrap":
-            fail("%s did not request the wild bootstrap" % key)
+        if p.get("standardErrorTreatment") != "clustered_cr2":
+            fail("%s did not request CR2 standard errors" % key)
         got = (runs[key]["response"].get("firstStage") or {}).get("mode")
         if got != "log":
             fail("%s ran with firstStage.mode=%r -- parameters did not take effect" % (key, got))
@@ -122,7 +122,7 @@ def main():
         "weight = 0": p.get("weight") == "equal_weights",
         "instrument = 1": p.get("modelType") == "MAIVE",
         "studylevel = 2": p.get("includeStudyClustering") is True,
-        "SE = 3": p.get("standardErrorTreatment") == "bootstrap",
+        "SE = 2": p.get("standardErrorTreatment") == "clustered_cr2",
         "AR = 1": p.get("computeAndersonRubin") is True,
         "first_stage = 1": p.get("useLogFirstStage") is True,
     }
@@ -208,7 +208,10 @@ def main():
     # 7. The artefacts the page links must exist and agree.
     if not os.path.exists(FUNNEL) or os.path.getsize(FUNNEL) < 10000:
         fail("funnel.png missing or truncated")
-    if doc["funnel"].get("async_first_stage_f") != flagF:
+    # To 1e-9 relative, as in build_maive_howto.py: the endpoints differ in the 13th digit.
+    af = doc["funnel"].get("async_first_stage_f")
+    if not (isinstance(af, (int, float)) and isinstance(flagF, (int, float))
+            and abs(af - flagF) <= 1e-9 * max(1.0, abs(flagF))):
         fail("the funnel's run and the page's run disagree on F -- wrong plot")
     if not os.path.exists(CSV):
         fail("alpha.csv missing")
@@ -236,7 +239,7 @@ def main():
                                   "--data-binary", "@-"],
                                  input=json.dumps({"data": rows[key],
                                                    "parameters": r["request_parameters"]}),
-                                 capture_output=True, text=True)
+                                 capture_output=True, text=True, encoding="utf-8")
             try:
                 fresh = json.loads(out.stdout)
             except ValueError:

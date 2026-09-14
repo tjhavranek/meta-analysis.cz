@@ -44,11 +44,15 @@ TABLE = os.path.join(ROOT, "data", "v1", "estimates_harmonised.csv")
 
 # One recipe everywhere. standardErrorTreatment names the variance estimator;
 # includeStudyClustering is what actually clusters by study_id. Both, always.
-# bootstrap is the cluster wild bootstrap, which is guideline 14 on this site below 40
-# studies: the worked example has nine. It is SE = 3 in the MAIVE R package, and the two
-# agree to every printed digit.
+# clustered_cr2 is the bias-reduced estimator of Pustejovsky and Tipton: the site's 2026
+# principle ("Cluster by study. CR2 standard errors") and the app's default. It is SE = 2 in
+# the MAIVE R package and uses no random draws, so R and the API agree exactly. Not
+# "bootstrap" (SE = 3): in MAIVE 0.3.0 that reports the CR1 standard error, takes the
+# first-stage F, Hausman and Anderson-Rubin from CR0, and uses the wild bootstrap only for
+# bootCI, which this page does not print; on large files it also runs past the API's
+# two-minute limit.
 CANON = {"modelType": "MAIVE", "maiveMethod": "PET-PEESE", "weight": "equal_weights",
-         "useLogFirstStage": True, "standardErrorTreatment": "bootstrap",
+         "useLogFirstStage": True, "standardErrorTreatment": "clustered_cr2",
          "includeStudyClustering": True, "winsorize": 0, "computeAndersonRubin": True}
 
 
@@ -99,7 +103,7 @@ def descriptives(d):
 def post(path, body):
     r = subprocess.run(["curl", "-sS", "--max-time", "170", "-A", UA, API + path,
                         "-H", "Content-Type: application/json", "--data-binary", "@-"],
-                       input=json.dumps(body), capture_output=True, text=True)
+                       input=json.dumps(body), capture_output=True, text=True, encoding="utf-8")
     if r.returncode or not r.stdout.strip().startswith("{"):
         raise SystemExit("API call failed: %s%s" % (r.stderr[:300], r.stdout[:300]))
     out = json.loads(r.stdout)
@@ -110,7 +114,7 @@ def post(path, body):
 
 def get(path, query=""):
     r = subprocess.run(["curl", "-sS", "--max-time", "60", "-A", UA, API + path + query],
-                       capture_output=True, text=True)
+                       capture_output=True, text=True, encoding="utf-8")
     return json.loads(r.stdout) if r.stdout.strip().startswith("{") else {}
 
 
@@ -168,10 +172,15 @@ def refresh():
 
     print("async funnel (flagship; accepted only if async agrees with sync):")
     plot = async_funnel(alpha_rows, dict(CANON))
+    # Agreement to 1e-9 relative, not bit for bit: under CR2 the two endpoints' F differs in
+    # the 13th significant digit, which is floating-point noise. A different run, such as one
+    # whose settings the async endpoint ignored, moves these in the first or second digit.
     for f in ("effectEstimate", "standardError", "firstStageFStatistic"):
-        if plot.get(f) != alpha.get(f):
+        a, s = plot.get(f), alpha.get(f)
+        if not (isinstance(a, (int, float)) and isinstance(s, (int, float))
+                and abs(a - s) <= 1e-9 * max(1.0, abs(s))):
             raise SystemExit("async %s=%r disagrees with sync %r -- funnel rejected"
-                             % (f, plot.get(f), alpha.get(f)))
+                             % (f, a, s))
     os.makedirs(OUT_DIR, exist_ok=True)
     img = plot.get("funnelPlot") or ""
     open(FUNNEL, "wb").write(base64.b64decode(img.split(",")[-1]))
@@ -303,7 +312,7 @@ PEESE quadratic when it is.</p>
 
 <p class="result"><b>MAIVE: %(alpha_est)s%% per month (SE %(alpha_se)s).</b><br />
 <span class="settings">First-stage F: %(alpha_F)s. Settings: PET-PEESE, log first stage,
-equal weights, wild bootstrap clustered by study.</span></p>
+equal weights, CR2 standard errors clustered by study.</span></p>
 
 <p>Reading the output, as EasyMeta reports it:</p>
 
@@ -362,7 +371,7 @@ fit &lt;- maive(dat,
              weight = 0,        # equal weights
              instrument = 1,    # MAIVE; 0 gives plain PET-PEESE
              studylevel = 2,    # cluster by study
-             SE = 3,            # wild bootstrap
+             SE = 2,            # CR2 standard errors
              AR = 1,            # Anderson-Rubin interval
              first_stage = 1)   # log first stage; package defaults to levels
 
@@ -386,7 +395,7 @@ before your estimator ever sees the data.</p>
   "parameters": {
     "modelType": "MAIVE", "maiveMethod": "PET-PEESE", "weight": "equal_weights",
     "useLogFirstStage": true,
-    "standardErrorTreatment": "bootstrap", "includeStudyClustering": true,
+    "standardErrorTreatment": "clustered_cr2", "includeStudyClustering": true,
     "computeAndersonRubin": true, "winsorize": 0
   }
 }</code></pre>
@@ -402,7 +411,7 @@ unclear. Giving every row its own study_id is rejected.
 
 Nest exactly this under "parameters":
 {"modelType": "MAIVE", "maiveMethod": "PET-PEESE", "weight": "equal_weights",
-"useLogFirstStage": true, "standardErrorTreatment": "bootstrap",
+"useLogFirstStage": true, "standardErrorTreatment": "clustered_cr2",
 "includeStudyClustering": true, "computeAndersonRubin": true, "winsorize": 0}.
 Top-level settings are silently ignored. Use the synchronous endpoint.
 includeStudyClustering is what clusters; dropping it changes the standard
@@ -420,7 +429,7 @@ this rather than R from memory:
   library(MAIVE)
   fit &lt;- maive(data.frame(bs = effect, sebs = se, Ns = n_obs, study_id),
                method = 3, weight = 0, instrument = 1, studylevel = 2,
-               SE = 3, AR = 1, first_stage = 1)
+               SE = 2, AR = 1, first_stage = 1)
 With no grouping, drop study_id from the data.frame and set studylevel = 0.
 Never report numbers you did not receive or compute from the data you sent.</code></pre>
 </details>
@@ -490,7 +499,7 @@ def render(doc):
                      "https://api.maive.eu/v1/run-model with parameters nested under "
                      "'parameters': modelType MAIVE, maiveMethod PET-PEESE, weight "
                      "equal_weights, useLogFirstStage true, standardErrorTreatment "
-                     "bootstrap, includeStudyClustering true, computeAndersonRubin true, "
+                     "clustered_cr2, includeStudyClustering true, computeAndersonRubin true, "
                      "winsorize 0."},
             {"@type": "HowToStep", "license": "https://creativecommons.org/licenses/by/4.0/", "name": "Read the diagnostics before the estimate",
              "url": "https://meta-analysis.cz/maive/how-to/#example",
