@@ -118,16 +118,19 @@
 			<div class="entry">
 
 <p class="lede"><b>Meta-Analysis Instrumental Variable Estimator with easymeta.org, AI
-guidelines for meta-analyses, and the AI multi-agent/duel protocol.</b> 23 September 2026,
-Tomas Havranek.</p>
+guidelines for meta-analyses, and the AI multi-agent/duel protocol.</b> A 90-minute session at
+the PhD workshop of the 2026 colloquium of <a href="https://www.maer-net.org/">MAER-Net</a> (the
+Meta-Analysis of Economics Research Network), TU Chemnitz, 23 September 2026. Tomas Havranek,
+Charles University, Prague.</p>
 
 <h2 id="slides">Slides</h2>
 
 <p class="cta"><a class="button" href="/chemnitz/slides.pdf">Slides (PDF)</a>
 <a class="button quiet" href="/chemnitz/slides/">Slides as text</a></p>
 
-<p>59 PDF pages: the 44 slides of the session, some built up step by step, and ten backup slides
-with a screenshot of each step in the app and what the API returned. <a href="/chemnitz/slides/">The
+<p>The deck, <i>EasyMeta.org and AI in Meta-Analysis</i>, has 59 PDF pages: the 44 slides of the
+session, some built up step by step, and ten backup slides with a screenshot of each step in the
+app and what the API returned. <a href="/chemnitz/slides/">The
 slides as text</a> have every slide's title, text and figures on one page.</p>
 
 <h2 id="data">Demo data</h2>
@@ -150,7 +153,7 @@ MAIVE form it starts closed), set the log first stage to Yes and winsorization t
 run, MAIVE Method should read PET-PEESE and Weighting Equal Weights; if not, set them. You should get
 -0.243, with a first-stage F of 25.</p>
 
-<p>WAIVE (experimental) and RDT are in the same Model Type list. RDT runs only in the app.</p>
+<p>WAIVE (experimental) and RDT are in the same Model Type list.</p>
 
 <h2 id="ai">Run it from an AI assistant</h2>
 
@@ -192,9 +195,9 @@ picks up the fix for <a href="https://github.com/PetrCala/MAIVE/issues/30">MAIVE
 <p><b>3. MAIVE in one line</b> &middot; <a href="/chemnitz/03_oneliner.txt">03_oneliner.txt</a></p>
 <pre class="code prompt"><code>Run MAIVE on this dataset, following the protocol at https://meta-analysis.cz/maive/how-to/#ai</code></pre>
 
-<p>This one works on the small example on the <a href="/maive/how-to/">MAIVE how-to page</a>,
-and on electricity_sr.csv it finishes well within the server's two-minute limit. It returns about -0.28 rather than
-prompt 2's -0.243, because the protocol sends the data without winsorizing.</p>
+<p>This one works on the small example on the <a href="/maive/how-to/">MAIVE how-to page</a>
+and on electricity_sr.csv. It gives a MAIVE estimate of -0.279 rather than prompt 2's -0.243,
+because the protocol sends the data without winsorizing.</p>
 
 <h2 id="more">More</h2>
 
