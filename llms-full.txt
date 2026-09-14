@@ -43040,7 +43040,7 @@ university course (ECON670) at the University of Canterbury, New Zealand: ten tw
 from literature search and data collection to publication bias, p-hacking, heterogeneity and the
 limits of meta-analysis, with student projects. The lecture slides with their LaTeX sources.
 
-### The same material in writing
+### Further reading
 
 - Meta-Analysis of Social Science Research: A Practitioner’s Guide (Journal of Economic Surveys, 2024)
 
@@ -43366,7 +43366,7 @@ Residual from meta-regression: log SE(Ê_i) = α_0 + α_1 log N_i + π_i [<0: e
 - Negative π_i → reported SE too small relative to N → may indicate p-hacking.
 - Interpretation: π_i=-0.25 means SE is roughly one quarter smaller than expected.
 
-#### Residual discontinuity test (simulated) p. 37
+#### RDT: residual discontinuity test (simulated) p. 37
 
 #### Your turn: where does MAIVE land? p. 38
 
