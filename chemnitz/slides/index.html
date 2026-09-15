@@ -236,10 +236,10 @@ Never report a number the API did not return.</code></pre>
 <p>42 estimates report SEs far below what their sample size predicts. They carry 37% of PET-PEESE's weight and are small in absolute value.</p>
 <p>Levels first stage: F = 6.9, and the app warns.</p>
 <figure class="slide-figure"><img src="figures/elec_funnel_maive.png" alt="MAIVE: -0.24" width="794" height="635" loading="lazy" /></figure>
-<h3 id="slide-40">WAIVE, flagged <a class="pg" href="/chemnitz/slides.pdf#page=40" title="Page 40 of the PDF">p.&#160;40</a></h3>
-<p>The app and Claude (through the API): -0.19. With the weights the right way round: -0.28.</p>
-<p>Experimental. The package applies WAIVE's weights inverted; reported as <a href="https://github.com/PetrCala/MAIVE/issues/30">MAIVE issue #30</a>.</p>
-<figure class="slide-figure"><img src="figures/app_10_result_waive_crop.png" alt="WAIVE, flagged" width="830" height="330" loading="lazy" /></figure>
+<h3 id="slide-40">WAIVE: -0.28 <a class="pg" href="/chemnitz/slides.pdf#page=40" title="Page 40 of the PDF">p.&#160;40</a></h3>
+<p>MAIVE -0.24; WAIVE downweights what is left: -0.28.</p>
+<p>Experimental. Fixed in September: the package had applied WAIVE's weights the wrong way round (<a href="https://github.com/PetrCala/MAIVE/issues/30">MAIVE issue #30</a>).</p>
+<figure class="slide-figure"><img src="figures/app_10_result_waive_fixed.png" alt="WAIVE: -0.28" width="830" height="330" loading="lazy" /></figure>
 <h3 id="slide-41">RDT in EasyMeta <a class="pg" href="/chemnitz/slides.pdf#page=41" title="Page 41 of the PDF">p.&#160;41</a></h3>
 <p>Jump at |t| = 1.96: -0.19 (p = 0.13). A single literature gives this test little power.</p>
 <p>App only: the API does not offer RDT.</p>
@@ -336,7 +336,7 @@ MAIVE, log first stage   HTTP 200
   firstStageFStatistic   25.03
 
 WAIVE, same settings   HTTP 200
-  effectEstimate   -0.190975882295736</code></pre>
+  effectEstimate   -0.277390923733746</code></pre>
 <h3 id="slide-56">Backup: MAIVE, levels first stage <a class="pg" href="/chemnitz/slides.pdf#page=56" title="Page 56 of the PDF">p.&#160;56</a></h3>
 <p>Levels first stage: MAIVE -0.126, F = 6.9, and the app warns.</p>
 <figure class="slide-figure"><img src="figures/app_06_result_maive_default.png" alt="Backup: MAIVE, levels first stage" width="1200" height="750" loading="lazy" /></figure>
@@ -344,11 +344,11 @@ WAIVE, same settings   HTTP 200
 <p>Log first stage: F = 25, MAIVE -0.24.</p>
 <figure class="slide-figure"><img src="figures/app_07_result_maive_log_noar.png" alt="Backup: MAIVE, log first stage" width="1200" height="750" loading="lazy" /></figure>
 <h3 id="slide-58">Backup: WAIVE <a class="pg" href="/chemnitz/slides.pdf#page=58" title="Page 58 of the PDF">p.&#160;58</a></h3>
-<p>WAIVE -0.19; experimental, weights inverted (<a href="https://github.com/PetrCala/MAIVE/issues/30">MAIVE issue #30</a>).</p>
-<figure class="slide-figure"><img src="figures/app_10_result_waive.png" alt="Backup: WAIVE" width="1200" height="750" loading="lazy" /></figure>
+<p>WAIVE -0.28, fixed (<a href="https://github.com/PetrCala/MAIVE/issues/30">MAIVE issue #30</a>).</p>
+<figure class="slide-figure"><img src="figures/app_10_result_waive_fixed_full.png" alt="Backup: WAIVE" width="1200" height="750" loading="lazy" /></figure>
 <h3 id="slide-59">Backup: RDT <a class="pg" href="/chemnitz/slides.pdf#page=59" title="Page 59 of the PDF">p.&#160;59</a></h3>
 <p>Jump -0.19 (p = 0.13): no clear jump at |t| = 1.96.</p>
-<figure class="slide-figure"><img src="figures/app_08_result_rdt_card.png" alt="Backup: RDT" width="830" height="279" loading="lazy" /></figure>
+<figure class="slide-figure"><img src="figures/app_08_result_rdt_card_15sep.png" alt="Backup: RDT" width="830" height="279" loading="lazy" /></figure>
 </div>
 
 <p><a href="/chemnitz/">Back to the workshop page</a>: the demo data, and the prompts for AI assistants.</p>
