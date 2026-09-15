@@ -43134,9 +43134,8 @@ hausmanTest exactly as returned, and confirm that resolvedParameters.modelType
 is MAIVE and useLogFirstStage is true. If the call fails, show the error and stop.
 Never report a number the API did not return.
 
-For WAIVE (experimental), ask the assistant to repeat the call with "modelType":"WAIVE". Until EasyMeta
-picks up the fix for MAIVE issue #30, you get
--0.191; after it, about -0.28. RDT is not in the API.
+For WAIVE (experimental), ask the assistant to repeat the call with "modelType":"WAIVE"; it gives
+-0.277. RDT is not in the API.
 
 3. MAIVE in one line · 03_oneliner.txt
 
@@ -43395,11 +43394,11 @@ Log first stage, F = 25; SE 0.038, clustered by study
 
 Levels first stage: F = 6.9, and the app warns.
 
-#### WAIVE, flagged p. 40
+#### WAIVE: -0.28 p. 40
 
-The app and Claude (through the API): -0.19. With the weights the right way round: -0.28.
+MAIVE -0.24; WAIVE downweights what is left: -0.28.
 
-Experimental. The package applies WAIVE's weights inverted; reported as MAIVE issue #30.
+Experimental. Fixed in September: the package had applied WAIVE's weights the wrong way round (MAIVE issue #30).
 
 #### RDT in EasyMeta p. 41
 
@@ -43560,7 +43559,7 @@ standardError 0.037775202532599
 firstStageFStatistic 25.03
 
 WAIVE, same settings HTTP 200
-effectEstimate -0.190975882295736
+effectEstimate -0.277390923733746
 
 #### Backup: MAIVE, levels first stage p. 56
 
@@ -43572,7 +43571,7 @@ Log first stage: F = 25, MAIVE -0.24.
 
 #### Backup: WAIVE p. 58
 
-WAIVE -0.19; experimental, weights inverted (MAIVE issue #30).
+WAIVE -0.28, fixed (MAIVE issue #30).
 
 #### Backup: RDT p. 59
 
