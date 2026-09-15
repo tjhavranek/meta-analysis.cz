@@ -75,7 +75,7 @@
  },
  "how": "tools/build_maive_howto.py --refresh. Numbers from the SYNCHRONOUS endpoint (async ignores modelType). Parameters nested under 'parameters' (top-level is silently ignored). includeStudyClustering true everywhere: the SE alone only selects the small-sample correction, not the clustering.",
  "license": "https://creativecommons.org/licenses/by/4.0/",
- "retrieved": "2026-09-14",
+ "retrieved": "2026-09-15",
  "runs": {
   "alpha_maive": {
    "n_rows": 75,
@@ -851,12 +851,12 @@
    },
    "response": {
     "andersonRubinCI": [
-     0.0650706906690808,
-     0.220379177137191
+     0.0628959202640433,
+     0.210186189457873
     ],
     "bootCI": "NA",
     "bootSE": "NA",
-    "effectEstimate": 0.142724933903136,
+    "effectEstimate": 0.111992676661987,
     "firstStage": {
      "description": "log(SE^2) ~ log N; Duan smearing applied",
      "fStatisticLabel": "First-Stage F-Statistic (γ₁)",
@@ -865,8 +865,8 @@
     "firstStageFStatistic": 33.0129777880835,
     "hausmanTest": {
      "criticalValue": 3.84145882069413,
-     "rejectsNull": false,
-     "statistic": 0.212467801284969
+     "rejectsNull": null,
+     "statistic": "NA"
     },
     "instrument_strength": "strong",
     "isSignificant": false,
@@ -880,17 +880,17 @@
     "petpeese_selected": "PET",
     "publicationBias": {
      "eggerAndersonRubinCI": [
-      0.049317077515733,
-      0.382150622226676
+      0.0921133722707952,
+      0.472750440762394
      ],
      "eggerBootCI": [
-      -0.225429671511817,
-      0.57368898507649
+      0.0756963996882693,
+      0.597920861485376
      ],
-     "eggerCoef": 0.174129656782337,
-     "eggerSE": 0.203860546135453,
-     "isSignificant": false,
-     "pValue": 0.393015982314654
+     "eggerCoef": 0.336808630586823,
+     "eggerSE": 0.133222973972059,
+     "isSignificant": true,
+     "pValue": 0.0114662975180811
     },
     "recipe": null,
     "resolvedParameters": {
@@ -1441,8 +1441,8 @@
      0.574509392777857,
      0.531294536833256
     ],
-    "slope_coef": 0.174129656782337,
-    "standardError": 0.0931850918808658,
+    "slope_coef": 0.336808630586823,
+    "standardError": 0.0589161076775321,
     "warnings": []
    }
   },

@@ -95,13 +95,16 @@ def main():
     # hinges on p = 0.057. A sentence like it may return only if the run agrees.
     if "WAIVE does not" in page and ew.get("isSignificant") is not False:
         fail("the page says WAIVE finds no effect; this run says %r" % ew.get("isSignificant"))
-    # The #30 caveat belongs to the unfixed WAIVE (0.142725 on these rows). Once a refresh
-    # brings the fixed figure, drop the caveat and close the paragraph with the ordering
-    # ("The extra downweighting moves the estimate further toward zero").
-    wv = ew.get("effectEstimate")
-    if "issues/30" in page and not (isinstance(wv, (int, float))
-                                    and abs(wv - 0.142724933903136) <= 1e-9):
-        fail("the page still carries the MAIVE #30 caveat, but WAIVE is now %r: remove it" % wv)
+    # The paragraph closes on the ordering: WAIVE's extra downweighting moves the estimate
+    # further toward zero than MAIVE. Hold that sentence to the runs. Until 15 Sep 2026 the page
+    # carried a MAIVE issue #30 caveat instead; the API adopted the fix with MAIVE 0.5.0.
+    wv, mv = ew.get("effectEstimate"), em.get("effectEstimate")
+    if "further toward zero" in page and not (
+            isinstance(wv, (int, float)) and isinstance(mv, (int, float)) and abs(wv) < abs(mv)):
+        fail("the page says WAIVE moves the estimate further toward zero; WAIVE %r, MAIVE %r"
+             % (wv, mv))
+    if "issues/30" in page:
+        fail("the page still carries the MAIVE #30 caveat, but the API has the fix (MAIVE 0.5.0)")
     # The first stage has to be evidence rather than arithmetic: where SE is a function of N
     # by construction (partial correlations), log(SE^2) ~ log N fits perfectly and there is
     # no over-precision left for WAIVE to find.
