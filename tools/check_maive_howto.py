@@ -55,6 +55,11 @@ def main():
                 rp.get("includeStudyClustering") is not True:
             fail("%s: the API resolved %r with clustering %r, not CR2 clustered by study"
                  % (key, rp.get("standardErrorTreatment"), rp.get("includeStudyClustering")))
+        # And the model itself: a request for WAIVE that the API ran as something else would
+        # return 200 with a different estimate, which the identical-estimates test below misses.
+        if rp.get("modelType") != p.get("modelType"):
+            fail("%s: asked for modelType %r, the API resolved %r"
+                 % (key, p.get("modelType"), rp.get("modelType")))
     if runs["esg_waive"]["request_parameters"].get("modelType") != "WAIVE":
         fail("the WAIVE run did not ask for WAIVE")
     # No run may use the app's winsorize setting. The page ships R code that must return the
