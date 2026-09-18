@@ -301,8 +301,26 @@ def _inline(t):
     return t
 
 
+def _heading_id(text, used):
+    """A URL fragment for a heading: "Jak město odpovědělo" -> "jak-mesto-odpovedelo".
+
+    Diacritics are folded so the fragment survives being typed or pasted anywhere, and a
+    repeated heading gets "-2", "-3" so every anchor on a page stays unique."""
+    import unicodedata
+    plain = re.sub(r"[*_`\[\]]|\]\([^)]*\)", "", text)
+    plain = "".join(c for c in unicodedata.normalize("NFKD", plain)
+                    if not unicodedata.combining(c)).lower()
+    base = re.sub(r"[^a-z0-9]+", "-", plain).strip("-") or "oddil"
+    hid, n = base, 2
+    while hid in used:
+        hid, n = f"{base}-{n}", n + 1
+    used.add(hid)
+    return hid
+
+
 def md_to_html(md, figs=None):
     out, lines, i = [], (md or "").replace("\r\n", "\n").split("\n"), 0
+    used_ids = set()
     while i < len(lines):
         line = lines[i].rstrip()
         if not line.strip():
@@ -327,7 +345,11 @@ def md_to_html(md, figs=None):
         m = re.match(r"^(#{2,4})\s+(.*)$", line)
         if m:
             lvl = min(len(m.group(1)), 4)
-            out.append(f"<h{lvl}>{_inline(m.group(2))}</h{lvl}>")
+            # Every heading gets a stable id, so a long text can carry its own table of
+            # contents ("[Průběh](#prubeh)") and a reader, a search engine or an assistant
+            # can link straight to one section instead of to the top of the page.
+            hid = _heading_id(m.group(2), used_ids)
+            out.append(f'<h{lvl} id="{hid}">{_inline(m.group(2))}</h{lvl}>')
             i += 1
             continue
         # Authors separate list items with a blank line ("loose list"), which every
@@ -1749,9 +1771,12 @@ def figure_html(f, alt, caption):
     """One chart, set inline where its caption stands in the text."""
     wh = _img_size(KDIR / "item-img" / f)
     dim = f' width="{wh[0]}" height="{wh[1]}"' if wh else ""
+    # The image is its own link: a map or a slide is often too small to read inline, and
+    # opening the full-size file needs no script and works on every phone.
     return (f'<figure class="item-fig">'
+            f'<a href="{PATH}/item-img/{esc(f)}">'
             f'<img src="{PATH}/item-img/{esc(f)}" alt="{esc(alt)}"'
-            f' loading="lazy" decoding="async"{dim}>'
+            f' loading="lazy" decoding="async"{dim}></a>'
             f'<figcaption>{_inline(caption)}</figcaption></figure>')
 
 
