@@ -1740,7 +1740,9 @@ def _split(v):
 # Czech records, "Chart 1. ..." in the English ones. The number is what binds a caption to
 # its image, so a figure cannot silently land under the wrong chart.
 # "Mapa 1: ..." binds a map the same way; the 2009 road-trip record opens with one.
-FIG_CAPTION = re.compile(r"^\*?((?:Graf|Chart|Mapa|Map)\s+(\d+)\s*[.:]\s*.+?)\*?$")
+# "Snímek 1: ..." binds a presentation slide, so a talk archived beside a letter shows each
+# slide above its own title instead of all of them piled up after the text.
+FIG_CAPTION = re.compile(r"^\*?((?:Graf|Chart|Mapa|Map|Snímek|Slide)\s+(\d+)\s*[.:]\s*.+?)\*?$")
 
 
 def figure_html(f, alt, caption):

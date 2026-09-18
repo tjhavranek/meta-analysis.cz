@@ -2,7 +2,7 @@
 
 > Publicistika Tomáše Havránka a Zuzany Havránkové: komentáře pro celostátní média, sloupky pro litomyšlskou Lilii, rozhovory, stanoviska poradce bankovní rady ČNB a kratší příspěvky ze sítí. Texty jsou zde archivovány v plném znění s odkazem na původní vydání.
 
-Publicistika: 224 položek a 25 kratších příspěvků ze sítí (249 záznamů celkem), 2009–2026. Plné znění každého textu je na uvedené adrese; zdrojový Markdown položek je v /komentare/src/ (příspěvky ze sítí zdrojový soubor nemají). Licence: CC BY 4.0, jako vše na meta-analysis.cz; u převzatých textů uveďte i původní vydání.
+Publicistika: 226 položek a 25 kratších příspěvků ze sítí (251 záznamů celkem), 2009–2026. Plné znění každého textu je na uvedené adrese; zdrojový Markdown položek je v /komentare/src/ (příspěvky ze sítí zdrojový soubor nemají). Licence: CC BY 4.0, jako vše na meta-analysis.cz; u převzatých textů uveďte i původní vydání.
 
 ## Celostátní komentáře
 
@@ -99,12 +99,14 @@ Především sloupky pro Lilii, měsíčník města Litomyšle — doprava, zele
 
 - [Florbal v Litomyšli pro děti už od čtyř let. Začít se dá kdykoli](https://meta-analysis.cz/komentare/litomysl-florbal-od-ctyr-let/) — Lilie (autorská verze, ne otištěné znění), říjen 2026
 - [Poděkování za péči o růže u fary](https://meta-analysis.cz/komentare/litomysl-ruze-u-fary/) — Lilie, červenec 2026
+- [Přechod u ZŠ Zámecká v Litomyšli: urgence Radě města a odpověď města po šesti měsících](https://meta-analysis.cz/komentare/litomysl-prechod-zs-zamecka-urgence-a-odpoved-mesta/) — Rada města Litomyšle (korespondence, nepublikováno), 1. června 2026
 - [Miroslav Brýdl na vrcholu sil](https://meta-analysis.cz/komentare/litomysl-miroslav-brydl/) — Lilie (autorská verze, ne otištěné znění), červen 2026
 - [Budou mít naše vnoučata co pít?](https://meta-analysis.cz/komentare/litomysl-voda/) — Lilie (autorská verze, ne otištěné znění), červen 2026
 - [Florbalisté prvního stupně sahali po medaili z Dní florbalu](https://meta-analysis.cz/komentare/zamecka-dny-florbalu-2026/) — ZŠ Litomyšl, Zámecká, 11. května 2026
 - [Nepořádek u autobusového nádraží](https://meta-analysis.cz/komentare/litomysl-neporadek-u-autobusoveho-nadrazi/) — Lilie, květen 2026
 - [Florbalisté prvního stupně stříbrní v oblastním kole](https://meta-analysis.cz/komentare/zamecka-stribro-oblastni-kolo/) — ZŠ Litomyšl, Zámecká, 26. února 2026
 - [Mladí florbalisté zlatí na největším evropském turnaji!](https://meta-analysis.cz/komentare/litomysl-florbaliste-zlati-na-turnaji/) — Lilie, únor 2026
+- [Žádost o zklidnění dopravy před ZŠ Zámecká v Litomyšli: vyvýšený přechod a omezení kamionů](https://meta-analysis.cz/komentare/litomysl-zklidneni-dopravy-prechod-zs-zamecka/) — Rada města Litomyšle (korespondence, nepublikováno), 27. ledna 2026
 - [Florbalisté prvního stupně vezou stříbro z okresního kola!](https://meta-analysis.cz/komentare/zamecka-stribro-okresni-kolo/) — ZŠ Litomyšl, Zámecká, 25. listopadu 2025
 - [Podpořme mladé florbalisty v neděli 12. října](https://meta-analysis.cz/komentare/litomysl-podporme-mlade-florbalisty/) — Lilie, říjen 2025
 - [Dálnice začne sloužit podle plánu, obchvat přivaděčů v nedohlednu](https://meta-analysis.cz/komentare/litomysl-privadece-obchvat/) — Lilie (nevyšlo), září 2025

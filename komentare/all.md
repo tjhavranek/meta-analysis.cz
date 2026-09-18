@@ -4,7 +4,7 @@ Publicistika Tomáše Havránka a Zuzany Havránkové: komentáře pro celostát
 
 Licence: CC BY 4.0 (https://creativecommons.org/licenses/by/4.0/). Volně kopírovat, šířit, upravovat a dále používat k jakémukoli účelu, včetně komerčního využití a trénování modelů strojového učení, pokud uvedete meta-analysis.cz.
 
-Tento soubor obsahuje text všech textových položek (206 z celkem 224), u naprosté většiny v plném znění; výjimkou jsou položky označené v index.json jako publisher_excerpt (2), kde je uložena jen volně dostupná ukázka, a author_manuscript (20), kde jde o autorskou verzi, která se může lišit od otištěné. Zbývající položky jsou audio a video, které archiv vede pouze odkazem, a v tomto souboru nejsou; jejich metadata najdete v index.json a corpus.jsonl. Samostatně jsou vedeny kratší příspěvky ze sociálních sítí (25), psané převážně anglicky. Mají vlastní stránku https://meta-analysis.cz/komentare/posts/ a v index.json i corpus.jsonl jsou označeny jako genre=social_post.
+Tento soubor obsahuje text všech textových položek (208 z celkem 226), u naprosté většiny v plném znění; výjimkou jsou položky označené v index.json jako publisher_excerpt (2), kde je uložena jen volně dostupná ukázka, a author_manuscript (20), kde jde o autorskou verzi, která se může lišit od otištěné. Zbývající položky jsou audio a video, které archiv vede pouze odkazem, a v tomto souboru nejsou; jejich metadata najdete v index.json a corpus.jsonl. Samostatně jsou vedeny kratší příspěvky ze sociálních sítí (25), psané převážně anglicky. Mají vlastní stránku https://meta-analysis.cz/komentare/posts/ a v index.json i corpus.jsonl jsou označeny jako genre=social_post.
 
 ---
 
@@ -253,6 +253,75 @@ Podle Havránka sice ekonomika opravdu vzrostla, ale pouze účetně. Český st
 - 08:01–12:00 Proč vláda nemusí šetřit a kde by mohla snadno získat peníze, které by pokryly velkou část stamiliardového schodku státního rozpočtu, aniž by musela dramaticky škrtat nebo zvyšovat daně?
 - 12:01–20:00 Jak by mohly zlevnit hypotéky? Měla by ČNB zvyšovat základní úrokové sazby? A jak se ekonom Tomáš Havránek dívá na slovní přestřelku mezi guvernérem České národní banky a premiérem Andrejem Babišem kvůli ceně úvěrů v ekonomice?
 - 20:01–40:11 Proč podle něj za inflaci může prezident? Jak je na tom česká ekonomika, které skupiny obyvatel jsou nejohroženější a jak nebezpečné je zvyšování státního dluhu?
+
+---
+
+## Přechod u ZŠ Zámecká v Litomyšli: urgence Radě města a odpověď města po šesti měsících
+
+*Rada města Litomyšle, 1. června 2026. Tomáš Havránek, Petr Jiříček.*
+
+*Korespondence, nikoli publikovaný text. Uvedené datum je datum odeslání.*
+
+Zdroj: https://www.suspk.cz/dalnicni-privadece-d35
+
+**Věc: Žádost o písemné stanovisko Rady města k podnětu ze dne 27. 1. 2026**
+
+Vážené členky, vážení členové Rady města Litomyšle,
+
+navazujeme na naši žádost ze dne 27. 1. 2026 týkající se zklidnění dopravy před ZŠ Zámecká a zvýšení bezpečnosti dětí na přechodu v ulici Zámecká.
+
+Děkujeme za možnost představit věc na jednání dopravní komise i Rady města. Po více než čtyřech měsících jsme však dosud neobdrželi formální písemné stanovisko Rady města k samotné žádosti.
+
+Žádáme proto, aby Rada města naši žádost formálně projednala a zaslala nám písemné stanovisko. Prosíme o odpověď na následující otázky. U každé z nich nám záleží především na tom, **zda dané opatření Rada požaduje za vhodné, a to nezávisle na otázce pravomocí a procesního postupu**:
+
+1. Považuje Rada města za žádoucí zvýšit bezpečnost přechodu před ZŠ Zámecká stavebním zklidněním, konkrétně mírným vyvýšením přechodu na příčném prahu?
+2. Považuje Rada města za žádoucí účinnější omezení nákladní dopravy v ulici Zámecká při zachování nezbytné dopravní obslužnosti?
+3. Považuje Rada města za žádoucí dobudování exitu Litomyšl-sever (napojení D35 na silnice ze Třebové a Ústí), které by z města odvedlo tranzit mimo jiné i těžké nákladní dopravy a výrazně snížilo zátěž u ZŠ Zámecká? Pokud ano, je Rada připravena jeho dobudování aktivně prosazovat na úrovni Pardubického kraje, ŘSD a Ministerstva dopravy?
+4. Pokud Rada města některé z výše uvedených opatření podporuje, jaký další postup a konkrétní časový rámec navrhuje?
+5. Pokud Rada města některé z výše uvedených opatření nepodporuje, prosíme o vysvětlení důvodů a o informaci, jaká jiná řešení Rada považuje za vhodné.
+
+K otázce 1 doplňujeme, že podle písemného stanoviska Správy a údržby silnic Pardubického kraje pro vybudování vyvýšeného přechodu na příčném prahu postačuje pouze rozhodnutí města, byť se jedná o silnici II. třídy. Pokud má Rada za to, že jsou zapotřebí další souhlasy a pokud Rada zároveň souhlasí se stavebním zklidněním, prosíme, aby **pomohla souhlasy vyjednat**. Samotnou technickou realizaci a financování naopak můžeme pomoci zařídit.
+
+Naši žádost podpořila stanoviska Národního památkového ústavu, Státního okresního archivu Svitavy se sídlem v Litomyšli, Fakulty restaurování Univerzity Pardubice a podpisy rodičů dětí ze Školamyšle. Nejde tedy o izolovaný požadavek zástupců rodičů ZŠ Zámecká, ale o širší veřejný zájem. Obracíme se na Vás s důvěrou jako na naše zvolené a respektované představitele.
+
+Písemné stanovisko Rady města plánujeme sdílet s rodiči zastoupenými školskou radou ZŠ Zámecká, se signatáři podnětu Školamyšle a s institucemi, které k věci poskytly svá stanoviska. V návaznosti na diskuzi na komisi i Radě dále intenzivně koordinujeme další postup s předsedkyněmi školských rad II. a III. ZŠ, protože obdobné problémy se týkají i ostatních škol ve městě. Zvýšení bezpečnosti dětí v souladu s mezinárodními standardy je pro nás klíčové a jsme ochotni této záležitosti věnovat velkou část našeho času. Věříme v pomoc Rady města.
+
+Jako přílohu uvádíme pro kontext oficiální plán dálničních přivaděčů Pardubického kraje. Jeden z dálničních přivaděčů je veden přes diskutovaný přechod u ZŠ Zámecká.
+
+Děkujeme všem radním, jejichž strany a hnutí již zklidnění dopravy u škol a aktivní podporu dobudování exitu Litomyšl-sever zahrnuly do programu pro nadcházející komunální volby.
+
+Prosíme o zaslání písemného stanoviska do 30 dnů od doručení této žádosti.
+
+S pozdravem,
+
+Tomáš Havránek, předseda školské rady ZŠ Zámecká
+
+Petr Jiříček, člen školské rady ZŠ Zámecká
+
+Mapa 1: Příloha dopisu, oficiální plán dálničních přivaděčů Pardubického kraje. Zdroj: Správa a údržba silnic Pardubického kraje, „Dálniční přivaděče k D35 v Pardubickém kraji“.
+
+## Jak město Litomyšl na podnět odpovědělo
+
+Písemné stanovisko Rady města, o které autoři žádali 27. 1. 2026, jim starosta zaslal e-mailem 28. 7. 2026. Od původní žádosti uplynulo šest měsíců. Od této urgence, ve které autoři prosili o odpověď do 30 dnů, uplynuly téměř dva měsíce.
+
+### Průběh
+
+- **4. 2. 2026, dopravní komise.** Autoři podnět představili osobně. Podle [zveřejněného zápisu](https://www.litomysl.cz/soubor/17709709216891392_zapis_dopravni_komise.pdf) komise diskutovala i o dalším omezení průjezdu nákladních vozidel, usnesení k němu ale nepřijala. Jediné usnesení (DK/01/26) doporučuje „projekčně prověřit možnost vybudování zvýšeného zpomalovacího prahu pod přechodem pro chodce“.
+- **18. 2. 2026, Rada města.** Autoři podnět představili osobně. Rada přijala doporučení komise a uložila odboru místního a silničního hospodářství, aby zvýšený práh nebo montované zpomalovací prvky projednal s Dopravním inspektorátem Svitavy. K nákladní dopravě a k exitu Litomyšl-sever se nevyjádřila.
+- **24. 3. 2026, odbor místního a silničního hospodářství.** Zaslal záporné vyjádření Dopravního inspektorátu Svitavy. Podle shrnutí odboru nelze vyvýšený práh ani zpomalovací polštáře na silnici II. třídy podle technických podmínek realizovat. Odbor k tomu dodal, že pro bezpečnost chodců v této lokalitě bylo ze strany města, inspektorátu i odboru uděláno „maximum možného“: u přechodu je podle něj víc dopravně bezpečnostních opatření, než je běžné, a za posledních pět let tam není evidovaná žádná nehoda. Stanovisko Správy a údržby silnic Pardubického kraje si odbor už nevyžádal s tím, že by pro případné správní řízení nebylo směrodatné. Tatáž správa přitom autorům dříve písemně potvrdila, že na vyvýšení přechodu stačí rozhodnutí města, a její stanovisko bylo k lednové žádosti přiloženo.
+- **29. 5. 2026, starosta.** Napsal, že Rada práh podpořila za předpokladu kladného stanoviska inspektorátu, a protože to nevyšlo, podle města „je záležitost vyřízena a uzavřena“. Za uzavřený tak považoval podnět jako celek, tedy i jeho část o nákladní dopravě, ke které se dosud žádný orgán města nevyjádřil. Autoři téhož dne odpověděli, že podnět jako celek vyřízen nebyl, a oznámili, že Radu požádají o formální písemné stanovisko.
+
+### Co obsahuje stanovisko Rady z 28. 7. 2026
+
+Rada v něm shrnuje únorová usnesení a březnové záporné vyjádření inspektorátu a uvádí, že bezpečnost v okolí škol, včetně tohoto přechodu, považuje za důležité téma, které vyžaduje soustavnou pozornost. Vyslovuje souhlas se zpomalovačem u přechodu, tedy s typem opatření, který inspektorát v březnu podle odboru na silnici II. třídy odmítl. Investorem má být Správa a údržba silnic Pardubického kraje, protože silnice patří kraji. Město samo nabízí jen své okolní pozemky pro odvodnění a další nutné související úpravy.
+
+Na ostatní otázky urgence stanovisko neodpovídá. Neříká, zda Rada považuje za žádoucí omezit nákladní dopravu v ulici Zámecká (otázka 2), ani zda podpoří dobudování exitu Litomyšl-sever (otázka 3). Neuvádí žádný časový rámec (otázka 4) a nevysvětluje, proč Rada ostatní opatření nepodporuje a co navrhuje místo nich (otázka 5). Nezmiňuje ani to, že jeden z oficiálních dálničních přivaděčů k D35 vede ulicí Zámecká přes přechod u školy a kolem zámku.
+
+Autoři odpověď města chápou takto: podle města se u přechodu udělalo vše, co šlo, situace je bezpečná, zklidnění krajské silnice je věcí kraje, a kdo chce víc, musí si to zařídit sám.
+
+### Souvislosti
+
+Na to, že dálniční přivaděč vede kolem zámku a školy a že Litomyšli chybí severní exit z dálnice, Tomáš Havránek v Lilii upozorňuje od roku 2019: [Litomyšl potřebuje obchvat](/komentare/litomysl-exit-dalnice/) (2019), [Dálniční přivaděč kolem zámku a školy](/komentare/litomysl-privadec/) (2019), [Mapa dálničních přivaděčů: porovnejme Litomyšl a Mýto](/komentare/litomysl-mapa-dalnicnich-privadecu/) (2019) a [Dálnice začne sloužit podle plánu, obchvat přivaděčů v nedohlednu](/komentare/litomysl-privadece-obchvat/) (2025).
 
 ---
 
@@ -509,6 +578,62 @@ V základní skupině jsme si poradili s Libercem (7:2), Vyškovem (3:0) i Otrok
 Následovali hlavní favorité: Plzeň a Bohemians. Oba týmy jsme znali z minulých let a zatím se nám je nepodařilo porazit. Plzeň hrála tvrdě a krásně vyhrocený zápas jsme zlomili až v posledních minutách. Ani Bohemka nám ve finále nic nedarovala. Ve skvělé atmosféře plné haly jsme si ale vypracovali dvougólový náskok, udrželi ho až do konce a mohli zvednout nad hlavu trofej pro vítěze turnaje.
 
 Florbal v Litomyšli si můžete kdykoli nezávazně vyzkoušet. Tréninky pro kluky i holky do 10 let jsou v úterý v 15:00 a v pátek ve 13:30 hodin; pro starší děti v pondělí 15:30, středu 15:30, pátek 15:00 hodin. Vždy v městské sportovní hale (za modrou školou). Stačí si přinést sálové boty, pití, kraťasy, tričko. Florbalku trenéři půjčí a též moje děti vás tam rády uvidí.
+
+---
+
+## Žádost o zklidnění dopravy před ZŠ Zámecká v Litomyšli: vyvýšený přechod a omezení kamionů
+
+*Rada města Litomyšle, 27. ledna 2026. Tomáš Havránek, Petr Jiříček.*
+
+*Korespondence, nikoli publikovaný text. Uvedené datum je datum odeslání.*
+
+Zdroj: https://meta-analysis.cz/komentare/litomysl-zklidneni-dopravy-prechod-zs-zamecka/
+
+**Věc: Žádost o zklidnění dopravy před ZŠ Zámecká**
+
+Vážené členky, vážení členové Rady města Litomyšle,
+
+obracíme se na vás jakožto zvolení zástupci rodičů ve školské radě ZŠ Zámecká a prosíme vás o pomoc se zvýšením bezpečnosti dětí před školou.
+
+Dle dopravních modelů a sčítání se intenzita dopravy před školou pohybuje kolem milionu vozidel ročně. Velká část řidičů dodržuje stávající omezení 30 km/h. Malá skupina zřejmě přespolních však nejenže limit výrazně překračuje, ale ani čekajícím chodcům před přechodem nezastaví. To platí jak z naší vlastní zkušenosti, tak ze zkušeností ostatních rodičů, kteří se na nás kvůli tomu opakovaně obracejí.
+
+Dalším problémem je intenzita těžké nákladní dopravy, zejména kvůli tomu, že kamion má díky své hmotnosti mnohem delší brzdnou dráhu. Provoz kamionové dopravy na Zámecké ulici je i z jiných důvodů dlouhodobě nevhodný a neudržitelný, jak dokládají přiložená stanoviska dotčených institucí.
+
+Navrhujeme řešení, které je v takové situaci běžné a funkční v řadě evropských měst: **mírné vyvýšení přechodu na příčném prahu v kombinaci se zákazem nákladní dopravy až na explicitně stanovené výjimky**, které by pak mohl snadno kontrolovat radar na Prokopu (jenž dokáže kamiony rozeznat).
+
+Takové řešení je výhodné pro všechny Litomyšlany: v první řadě děti získají bezpečí na přechodu u školy. Bezpečnější to bude i pro obyvatele Záhradí, pro něž je tento přechod hlavním způsobem, jak se dostat pěšky do centra. A v neposlední řadě absence kamionů **urychlí řidičům osobních automobilů cestu do České Třebové, což více než vykompenzuje vteřinové zpoždění dané technickým zpomalením u příčného prahu**. Kamiony z České Třebové mohou využívat dálniční sjezd u Opatovce.
+
+Dva roky jsme technickou a administrativní možnost celého řešení ověřovali s relevantními orgány, mimo jiné i s SÚS Pardubického kraje. Máme písemně doloženo, že v tomto případě pro vyvýšení přechodu na příčném prahu stačí rozhodnutí města, ač se jedná o silnici II. třídy.
+
+Jistě máte k návrhu řadu otázek. Dovolujeme si vás požádat, zda bychom vám mohli **návrh stručně vysvětlit a vaše otázky zodpovědět na jednání Rady města**, a to před případným projednáním na dopravní komisi. Bude nám stačit 30 minut a velmi bychom tuto možnost ocenili.
+
+Přílohy: stanoviska SÚS Pardubického kraje a rodičů dětí ze Školamyšle k vybudování příčného prahu; stanoviska NPÚ, Státního okresního archivu a Fakulty restaurování k nákladní dopravě na Zámecké ulici.
+
+Děkujeme za vaši práci pro Litomyšl a těšíme se na osobní setkání s vámi všemi,
+
+Tomáš Havránek, předseda školské rady ZŠ Zámecká
+
+Petr Jiříček, člen školské rady ZŠ Zámecká
+
+## Prezentace pro dopravní komisi a Radu města
+
+S touto prezentací autoři podnět představili na jednání dopravní komise 4. 2. 2026 a Rady města Litomyšle 18. 2. 2026. Prezentace je ke stažení také [v PDF](/komentare/files/litomysl-prezentace-zklidneni-dopravy-zs-zamecka-2026-02.pdf).
+
+Snímek 1: Třebová -> Praha: kolem školy, centrem města
+
+Snímek 2: Dotčené instituce, kritická místa. U zámku se kamion nevytočí. Přechod u školy.
+
+Snímek 3: Kamion u zámku zablokuje silnici
+
+Snímek 4: Přechod u školy: mírné vyvýšení, ne agresivní retardér
+
+Snímek 5: Dlouhodobé řešení: exit Litomyšl-sever
+
+Snímek 6: Díky za váš čas! Doporučení Radě:
+
+1. Realizovat vyvýšený přechod u ZŠ Zámecká
+2. Omezit kamionovou dopravu na Zámecké ulici (na povolení)
+3. Aktivně prosazovat dobudování exitu Litomyšl-sever
 
 ---
 

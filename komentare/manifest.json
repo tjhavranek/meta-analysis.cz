@@ -5,18 +5,18 @@
  "newest_record": "2026-10-01",
  "temporal_coverage": "2009-08-18/2026-10-01",
  "records": {
-  "total": 249,
+  "total": 251,
   "by_text_status": {
    "author_manuscript": 20,
    "published_full_text": 203,
-   "correspondence": 4,
+   "correspondence": 6,
    "link_only": 18,
    "unpublished_manuscript": 2,
    "publisher_excerpt": 2
   },
   "by_section": {
    "Celostátní komentáře": 84,
-   "Litomyšlské sloupky": 61,
+   "Litomyšlské sloupky": 63,
    "Rozhovory": 53,
    "In English": 26,
    "Posts (ze sítí)": 25
@@ -41,28 +41,28 @@
  "files": {
   "corpus.jsonl": {
    "url": "https://meta-analysis.cz/komentare/corpus.jsonl",
-   "bytes": 1754961,
-   "sha256": "6ed62ee75b5a37ba86e09baaf24527677b22bb946b5b8cc05d9f7a3fcacc1577"
+   "bytes": 1770800,
+   "sha256": "93890edaffb82611564995bd49a20bf629dcbf994fe49b2bd479072dbc2dea73"
   },
   "index.json": {
    "url": "https://meta-analysis.cz/komentare/index.json",
-   "bytes": 1775221,
-   "sha256": "274aaa95b8349a4191a101728f4196742ce706444d72d08897b03e9c1ca49efc"
+   "bytes": 1791344,
+   "sha256": "f5780437181ebffe5e6109476d779d8d626bc331aca5b5d12099fdda1a6b4cfd"
   },
   "all.md": {
    "url": "https://meta-analysis.cz/komentare/all.md",
-   "bytes": 1560493,
-   "sha256": "5b96e2b85e68cc680cd5bf6b46b8e04256039e85ac03f63493a0f55faab6df1c"
+   "bytes": 1573673,
+   "sha256": "a56bf759f3ef4d5d0b65d3e0444211fcbee45dec5954a3288c1e3a1ddaf761a3"
   },
   "llms.txt": {
    "url": "https://meta-analysis.cz/komentare/llms.txt",
-   "bytes": 46592,
-   "sha256": "cfee209c7440f2f759deba411060b6c73d04643342d83ede0bd3382eec4a4edf"
+   "bytes": 47130,
+   "sha256": "b94d5281fd20231de2ee489715061597722026a17a44f574d3b87595c401e515"
   },
   "feed.xml": {
    "url": "https://meta-analysis.cz/komentare/feed.xml",
-   "bytes": 1724373,
-   "sha256": "3529670c7910c7e16156c212c2db4ac8a5a2d9e3201acf7ee6349b29ecc5e898"
+   "bytes": 1738658,
+   "sha256": "679eaf676006fa3395275c9878ce407994b07437f5454e70616d9d31fe6b3475"
   }
  },
  "generated_from": [
