@@ -2,21 +2,21 @@
  "name": "Komentáře — Tomáš Havránek, Zuzana Havránková",
  "url": "https://meta-analysis.cz/komentare/data/",
  "license": "https://creativecommons.org/licenses/by/4.0/",
- "newest_record": "2026-09-13",
- "temporal_coverage": "2009-08-18/2026-09-13",
+ "newest_record": "2026-10-01",
+ "temporal_coverage": "2009-08-18/2026-10-01",
  "records": {
-  "total": 248,
+  "total": 249,
   "by_text_status": {
+   "author_manuscript": 20,
    "published_full_text": 203,
    "correspondence": 4,
-   "author_manuscript": 19,
    "link_only": 18,
    "unpublished_manuscript": 2,
    "publisher_excerpt": 2
   },
   "by_section": {
    "Celostátní komentáře": 84,
-   "Litomyšlské sloupky": 60,
+   "Litomyšlské sloupky": 61,
    "Rozhovory": 53,
    "In English": 26,
    "Posts (ze sítí)": 25
@@ -41,28 +41,28 @@
  "files": {
   "corpus.jsonl": {
    "url": "https://meta-analysis.cz/komentare/corpus.jsonl",
-   "bytes": 1751543,
-   "sha256": "d36eb16fb6aaaedec77c1e7c170373c11ce5440d61b20af1e3dbca5f5fbf647d"
+   "bytes": 1754961,
+   "sha256": "6ed62ee75b5a37ba86e09baaf24527677b22bb946b5b8cc05d9f7a3fcacc1577"
   },
   "index.json": {
    "url": "https://meta-analysis.cz/komentare/index.json",
-   "bytes": 1771705,
-   "sha256": "90f98fbc6cb72585c6125810821e51840a4baa42186510df6b151266e38d24dd"
+   "bytes": 1775221,
+   "sha256": "274aaa95b8349a4191a101728f4196742ce706444d72d08897b03e9c1ca49efc"
   },
   "all.md": {
    "url": "https://meta-analysis.cz/komentare/all.md",
-   "bytes": 1557838,
-   "sha256": "49b6f1e14e21e1ad6d270f80d360a47f0aa6f51ad568cd3175abb4a0b1ad1917"
+   "bytes": 1560493,
+   "sha256": "5b96e2b85e68cc680cd5bf6b46b8e04256039e85ac03f63493a0f55faab6df1c"
   },
   "llms.txt": {
    "url": "https://meta-analysis.cz/komentare/llms.txt",
-   "bytes": 46383,
-   "sha256": "747da3fc0acda827b6ac4eb99c3194d277c5b8042df829ddf28889c091abfd8c"
+   "bytes": 46592,
+   "sha256": "cfee209c7440f2f759deba411060b6c73d04643342d83ede0bd3382eec4a4edf"
   },
   "feed.xml": {
    "url": "https://meta-analysis.cz/komentare/feed.xml",
-   "bytes": 1721270,
-   "sha256": "ac8b8771c8884b567acddb471eaa3f743aaab4a54443a6fae375a81919cbeac5"
+   "bytes": 1724373,
+   "sha256": "3529670c7910c7e16156c212c2db4ac8a5a2d9e3201acf7ee6349b29ecc5e898"
   }
  },
  "generated_from": [

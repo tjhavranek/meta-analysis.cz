@@ -2,7 +2,7 @@
 
 > Publicistika Tomáše Havránka a Zuzany Havránkové: komentáře pro celostátní média, sloupky pro litomyšlskou Lilii, rozhovory, stanoviska poradce bankovní rady ČNB a kratší příspěvky ze sítí. Texty jsou zde archivovány v plném znění s odkazem na původní vydání.
 
-Publicistika: 223 položek a 25 kratších příspěvků ze sítí (248 záznamů celkem), 2009–2026. Plné znění každého textu je na uvedené adrese; zdrojový Markdown položek je v /komentare/src/ (příspěvky ze sítí zdrojový soubor nemají). Licence: CC BY 4.0, jako vše na meta-analysis.cz; u převzatých textů uveďte i původní vydání.
+Publicistika: 224 položek a 25 kratších příspěvků ze sítí (249 záznamů celkem), 2009–2026. Plné znění každého textu je na uvedené adrese; zdrojový Markdown položek je v /komentare/src/ (příspěvky ze sítí zdrojový soubor nemají). Licence: CC BY 4.0, jako vše na meta-analysis.cz; u převzatých textů uveďte i původní vydání.
 
 ## Celostátní komentáře
 
@@ -97,6 +97,7 @@ Komentáře a sloupky pro celostátní média — měnová politika, inflace, ve
 
 Především sloupky pro Lilii, měsíčník města Litomyšle — doprava, zeleň, školství, sport a další místní témata. Několik textů vyšlo jinde v Litomyšli: na webu ZŠ Zámecká a v participativním rozpočtu města.
 
+- [Florbal v Litomyšli pro děti už od čtyř let. Začít se dá kdykoli](https://meta-analysis.cz/komentare/litomysl-florbal-od-ctyr-let/) — Lilie (autorská verze, ne otištěné znění), říjen 2026
 - [Poděkování za péči o růže u fary](https://meta-analysis.cz/komentare/litomysl-ruze-u-fary/) — Lilie, červenec 2026
 - [Miroslav Brýdl na vrcholu sil](https://meta-analysis.cz/komentare/litomysl-miroslav-brydl/) — Lilie (autorská verze, ne otištěné znění), červen 2026
 - [Budou mít naše vnoučata co pít?](https://meta-analysis.cz/komentare/litomysl-voda/) — Lilie (autorská verze, ne otištěné znění), červen 2026

@@ -4,7 +4,27 @@ Publicistika Tomáše Havránka a Zuzany Havránkové: komentáře pro celostát
 
 Licence: CC BY 4.0 (https://creativecommons.org/licenses/by/4.0/). Volně kopírovat, šířit, upravovat a dále používat k jakémukoli účelu, včetně komerčního využití a trénování modelů strojového učení, pokud uvedete meta-analysis.cz.
 
-Tento soubor obsahuje text všech textových položek (205 z celkem 223), u naprosté většiny v plném znění; výjimkou jsou položky označené v index.json jako publisher_excerpt (2), kde je uložena jen volně dostupná ukázka, a author_manuscript (19), kde jde o autorskou verzi, která se může lišit od otištěné. Zbývající položky jsou audio a video, které archiv vede pouze odkazem, a v tomto souboru nejsou; jejich metadata najdete v index.json a corpus.jsonl. Samostatně jsou vedeny kratší příspěvky ze sociálních sítí (25), psané převážně anglicky. Mají vlastní stránku https://meta-analysis.cz/komentare/posts/ a v index.json i corpus.jsonl jsou označeny jako genre=social_post.
+Tento soubor obsahuje text všech textových položek (206 z celkem 224), u naprosté většiny v plném znění; výjimkou jsou položky označené v index.json jako publisher_excerpt (2), kde je uložena jen volně dostupná ukázka, a author_manuscript (20), kde jde o autorskou verzi, která se může lišit od otištěné. Zbývající položky jsou audio a video, které archiv vede pouze odkazem, a v tomto souboru nejsou; jejich metadata najdete v index.json a corpus.jsonl. Samostatně jsou vedeny kratší příspěvky ze sociálních sítí (25), psané převážně anglicky. Mají vlastní stránku https://meta-analysis.cz/komentare/posts/ a v index.json i corpus.jsonl jsou označeny jako genre=social_post.
+
+---
+
+## Florbal v Litomyšli pro děti už od čtyř let. Začít se dá kdykoli
+
+*Lilie, říjen 2026. Tomáš Havránek.*
+
+Zdroj: https://www.litomysl.cz/lilie/download/2026
+
+Zmeškaly vaše děti nebo vnoučata zářijové náborové tréninky? Nevadí. S florbalem se dá začít kdykoli během roku a první tréninky jsou nezávazné. Od září máme navíc Miniflorbaláček pro děti od 4 do 6 let. Kromě florbalu tam běhají, skáčou, házejí míčem, hrají jednoduché týmové hry. Hlavní je, aby je pohyb bavil.
+
+Minulá sezóna se florbalistům povedla. V lednu získali kluci narození roku 2015 zlato na Prague Floorball Cupu, na který se přihlásilo přes 250 týmů ze šesti zemí! Cestou porazili třeba Bohemians, Mladou Boleslav, Chodov, Liberec, tedy kluby, jejichž áčko hraje nejvyšší ligu. Na jaře vybojovali stříbro dorostenci i junioři v konkurenci týmů z Královéhradeckého a Pardubického kraje. Děkuji Petru Stolínovi, který oba týmy trénuje.
+
+Naše áčko bylo v lednu v Národní lize předposlední a trenér Michal Háp přiznal obavy ze sestupu. Z posledních sedmi zápasů základní části jsme ale získali 19 bodů z 21 (!!) a podruhé za sebou postoupili do play-off. Tam nás vyřadil až v pátém, rozhodujícím zápase Třinec, pozdější finalista. No a béčko letos poprvé v historii hraje divizi.
+
+Tři z našich dětí hrají florbal osmým rokem a pořád se na tréninky těší. Nejvíc si cením parádní party a trenérů, u kterých je vidět, že je práce s dětmi baví. Starší berou mladší mezi sebe a atmosféra na domácích turnajích je bez přehánění nejlepší v kraji. Florbal hrají i holky, tréninky jsou společné. A není problém ho kombinovat s jiným sportem.
+
+Stačí přijít do městské sportovní haly za modrou školou a vzít si sálové boty, tričko, kraťasy a pití; florbalku trenéři půjčí. Děti do 10 let (ročníky 2016 až 2020) a Miniflorbaláček trénují v úterý v 15:00 a v pátek ve 13:30, děti od 11 do 14 let (ročníky 2012 až 2015) v pondělí a ve středu v 15:30 a v pátek v 15:00. Není nutné chodit na všechny. Kdo se snaží, může už po pár trénincích hrát turnaj za Litomyšl.
+
+Kdo chce florbal nejdřív vidět, může přijít fandit. V neděli 11. října od 17:00 hraje doma béčko s Letohradem, o týden později ve stejný čas áčko s Náchodem. Děti do 15 let mají vstup zdarma. Rozpis všech tréninků je na [florballitomysl.cz](https://www.florballitomysl.cz), ale klidně mi napište i na t.havranek@gmail.com. Třeba bude florbal bavit vaše děti stejně jako ty naše.
 
 ---
 
