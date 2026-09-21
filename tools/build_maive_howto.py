@@ -340,8 +340,10 @@ PET-PEESE was significant.</p>
 
 <h2 id="weak-first-stage">If the first stage is weak</h2>
 
-<p>Below an F of 10, report the Anderson-Rubin interval instead of the point estimate. In
-the <a href="/euro/">euro-trade dataset</a> (%(euro_k)s estimates)
+<p>Below an F of 10, report the Anderson-Rubin interval instead of the point estimate. With
+data clustered by study, treat that interval as indicative: the joint Anderson-Rubin interval
+in MAIVE is not cluster-robust, and the clustered standard error only sizes the grid it
+searches. In the <a href="/euro/">euro-trade dataset</a> (%(euro_k)s estimates)
 F is %(euro_F)s; MAIVE gives %(euro_est)s (SE %(euro_se)s), and the AR interval is
 [%(euro_ar_lo)s, %(euro_ar_hi)s], so the corrected effect is only weakly identified. RTMA,
 by Mathur, rests on different assumptions and is the cross-check to run when the first stage
@@ -430,9 +432,11 @@ Read effectEstimate, standardError, firstStageFStatistic, publicationBias,
 hausmanTest, andersonRubinCI, and seInstrumented from the response, and compute
 the simple mean from the effects you sent. Report the corrected estimate
 against that mean, the first-stage F, the Egger and Hausman tests, and the
-Anderson-Rubin interval whenever F &lt; 10, in place of the point estimate.
-Report any warnings verbatim. If you cannot issue the request, say so and tell
-the user to upload their spreadsheet at easymeta.org. For R users, hand them
+Anderson-Rubin interval whenever F &lt; 10, in place of the point estimate;
+call that interval indicative when the rows carry study_id, because the joint
+Anderson-Rubin interval is not cluster-robust. Report any warnings verbatim.
+If you cannot issue the request, say so and tell the user to upload their
+spreadsheet at easymeta.org. For R users, hand them
 this rather than R from memory:
   library(MAIVE)
   fit &lt;- maive(data.frame(bs = effect, sebs = se, Ns = n_obs, study_id),
@@ -524,7 +528,9 @@ def render(doc):
             {"@type": "HowToStep", "license": "https://creativecommons.org/licenses/by/4.0/", "name": "Handle a weak first stage",
              "url": "https://meta-analysis.cz/maive/how-to/#weak-first-stage",
              "text": "Below an F of 10, report the Anderson-Rubin interval rather than the "
-                     "point estimate, and check any RTMA cross-check against its own "
+                     "point estimate. With data clustered by study it is indicative "
+                     "only, because the joint Anderson-Rubin interval in MAIVE is not "
+                     "cluster-robust. Check any RTMA cross-check against its own "
                      "convergence diagnostics before quoting it."},
         ],
     }
