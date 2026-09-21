@@ -21,7 +21,7 @@
  ],
  "license": "https://creativecommons.org/licenses/by/4.0/",
  "license_note": "CC BY 4.0; u převzatých textů uveďte i původní vydání.",
- "count": 251,
+ "count": 252,
  "generated_from": [
   "komentare/src/*.md",
   "komentare/social-posts.json"
@@ -5241,6 +5241,37 @@
    ],
    "provenance": "self_published",
    "genre": "travelogue"
+  },
+  {
+   "id": "posts-2026-09-21",
+   "title": "If you are working on an ERC proposal, our new app may help.",
+   "date": "2026-09-21",
+   "date_precision": "day",
+   "section": "Posts (ze sítí)",
+   "category": "posts",
+   "language": "en",
+   "outlet": "LinkedIn",
+   "authors": [
+    "Zuzana Havránková"
+   ],
+   "media": "text",
+   "original_url": "https://www.linkedin.com/feed/update/urn%3Ali%3Ashare%3A7507691314042265600",
+   "url": "https://meta-analysis.cz/komentare/posts/2026-09-21-an-app-for-your-erc-draft/",
+   "collection_url": "https://meta-analysis.cz/komentare/posts/#2026-09-21",
+   "text_status": "published_full_text",
+   "genre": "social_post",
+   "provenance": "self_published",
+   "word_count": 127,
+   "text": "If you are working on an ERC proposal, our new app may help.\n\nIt reads your draft against the ERC's own 2027 evaluation questions and flags problems. Each finding quotes your text and says what to change. It does not write the proposal for you. One prompt in a chatbot, nothing to install. Unofficial, and so far tested only on simulated proposals.\n\nFor applicants only: ERC rules bar evaluators from using AI on the proposals they assess.\n\nIf you use agents like Claude Code or Codex, the repository has an experimental deeper mode.\n\nYou do not have to open the app or the code at all. Just tell your AI assistant: check my ERC proposal using the tool by Irsova and Havranek.\n\nLink in the first comment.",
+   "image": [
+    "https://meta-analysis.cz/komentare/social-img/2026-09-21_erc-app.png"
+   ],
+   "comment_links": [
+    "https://tjhavranek.github.io/erc-ai-feedback/",
+    "https://github.com/tjhavranek/erc-ai-feedback",
+    "https://doi.org/10.5281/zenodo.20829165"
+   ],
+   "comment_note": "Nothing is uploaded to us. You paste the prompt into your own chatbot, and the page has no analytics."
   },
   {
    "id": "posts-2026-09-01",

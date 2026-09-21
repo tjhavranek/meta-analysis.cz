@@ -616,5 +616,33 @@
   "slug": "2026-09-01-rebuilding-meta-analysis-cz",
   "anchor": "2026-09-01",
   "text": "A few weeks ago, our research website meta-analysis.cz was hacked (thank you, AI!).\n\nIt was our fault: we hadn't changed the site in a major way since 2015 and had little security. Prior to the hack, we were still uploading files by FTP for individual papers. We had no central backup.\n\nFortunately, Claude Code and Codex (thank you, AI!) proved very effective at reconstructing the site from old copies on the Wayback Machine and scattered files on our hard drives.\n\nIn the end, the hack was a blessing in disguise. Now we have the website on GitHub, the datasets are archived on Zenodo with a DOI, and we can edit everything much more easily. This also made it much easier for us to integrate meta-analysis.cz with EasyMeta.org, which is a web-based tool for meta-analysis (including correction for p-hacking).\n\nIt also turns out that AI agents are very good at converting PDFs into clean HTML, so now we provide an HTML version of all our papers, plus of course complete data and code, and more.\n\nSo, for example, if you want to run MAIVE (a meta-analysis technique that corrects for p-hacking), you can just ask your AI assistant: \"Run MAIVE on this dataset, following the protocol at meta-analysis.cz\"\n\nAnything broken, or anything we could improve?\n\nLinks in the first comment."
+ },
+ {
+  "date": "2026-09-21",
+  "datetime": "2026-09-21 06:44:55",
+  "url": "https://www.linkedin.com/feed/update/urn%3Ali%3Ashare%3A7507691314042265600",
+  "reshare_with_comment": false,
+  "lang": "en",
+  "images": [
+   "2026-09-21_erc-app.png"
+  ],
+  "image_size": [
+   [
+    800,
+    800
+   ]
+  ],
+  "image_alt": [
+   "A square card headed 'ERC draft pre-review', marked unofficial. The headline reads: An unofficial check of your ERC draft before you submit. Under it: one prompt, pasted into a chatbot with your draft, read against the ERC's own 2027 evaluation questions, with every finding quoting your text and saying what to change. A panel headed 'One finding, on a synthetic proposal' gives an example rated HIGH, that the power claim contradicts the stated attrition assumption, quoting a sentence about 1,800 respondents per country against a 2,000 target, and asking for power to be recalculated on the retained sample. The footer gives tjhavranek.github.io/erc-ai-feedback, free, MIT licence, Tomas Havranek and Zuzana Irsova, Charles University."
+  ],
+  "comment_links": [
+   "https://tjhavranek.github.io/erc-ai-feedback/",
+   "https://github.com/tjhavranek/erc-ai-feedback",
+   "https://doi.org/10.5281/zenodo.20829165"
+  ],
+  "comment_note": "Nothing is uploaded to us. You paste the prompt into your own chatbot, and the page has no analytics.",
+  "slug": "2026-09-21-an-app-for-your-erc-draft",
+  "anchor": "2026-09-21",
+  "text": "If you are working on an ERC proposal, our new app may help.\n\nIt reads your draft against the ERC's own 2027 evaluation questions and flags problems. Each finding quotes your text and says what to change. It does not write the proposal for you. One prompt in a chatbot, nothing to install. Unofficial, and so far tested only on simulated proposals.\n\nFor applicants only: ERC rules bar evaluators from using AI on the proposals they assess.\n\nIf you use agents like Claude Code or Codex, the repository has an experimental deeper mode.\n\nYou do not have to open the app or the code at all. Just tell your AI assistant: check my ERC proposal using the tool by Irsova and Havranek.\n\nLink in the first comment."
  }
 ]

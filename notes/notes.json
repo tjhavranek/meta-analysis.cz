@@ -1477,6 +1477,53 @@
      "url": "https://meta-analysis.cz/komentare/cnb-stanovisko-poradce-2sz-2016/"
     }
    ]
+  },
+  {
+   "slug": "erc-pre-review-single-prompt",
+   "title": "An unofficial check of your ERC draft, in one prompt",
+   "date": "2026-09-21",
+   "summary": "An unofficial check of an ERC Starting or Consolidator Grant draft: one prompt pasted into a chatbot reads the draft against the ERC's 2027 evaluation questions, and each finding is required to quote the draft and propose a repair. It is a single prompt rather than a committee of AI agents because in our pre-registered experiment on research papers the committee lost, and it has been tested on synthetic drafts only.",
+   "topics": [
+    "research tools",
+    "AI and research"
+   ],
+   "keywords": [
+    "ERC proposals",
+    "grant writing",
+    "AI feedback",
+    "multi-agent debate",
+    "research tools",
+    "peer review"
+   ],
+   "authors": [
+    {
+     "name": "Tomas Havranek",
+     "orcid": "https://orcid.org/0000-0002-3158-2539"
+    },
+    {
+     "name": "Zuzana Irsova",
+     "orcid": "https://orcid.org/0000-0002-0753-8124"
+    }
+   ],
+   "links": [
+    {
+     "label": "The pre-review page",
+     "url": "https://tjhavranek.github.io/erc-ai-feedback/"
+    },
+    {
+     "label": "Code and rubric (GitHub)",
+     "url": "https://github.com/tjhavranek/erc-ai-feedback"
+    },
+    {
+     "label": "Archived package (Zenodo)",
+     "url": "https://doi.org/10.5281/zenodo.20829165"
+    },
+    {
+     "label": "The debate experiment (arXiv: 2607.14713)",
+     "url": "https://arxiv.org/abs/2607.14713"
+    }
+   ],
+   "syndicated": []
   }
  ]
 }

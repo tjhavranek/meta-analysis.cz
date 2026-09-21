@@ -4,7 +4,7 @@ Publicistika Tomáše Havránka a Zuzany Havránkové: komentáře pro celostát
 
 Licence: CC BY 4.0 (https://creativecommons.org/licenses/by/4.0/). Volně kopírovat, šířit, upravovat a dále používat k jakémukoli účelu, včetně komerčního využití a trénování modelů strojového učení, pokud uvedete meta-analysis.cz.
 
-Tento soubor obsahuje text všech textových položek (208 z celkem 226), u naprosté většiny v plném znění; výjimkou jsou položky označené v index.json jako publisher_excerpt (2), kde je uložena jen volně dostupná ukázka, a author_manuscript (20), kde jde o autorskou verzi, která se může lišit od otištěné. Zbývající položky jsou audio a video, které archiv vede pouze odkazem, a v tomto souboru nejsou; jejich metadata najdete v index.json a corpus.jsonl. Samostatně jsou vedeny kratší příspěvky ze sociálních sítí (25), psané převážně anglicky. Mají vlastní stránku https://meta-analysis.cz/komentare/posts/ a v index.json i corpus.jsonl jsou označeny jako genre=social_post.
+Tento soubor obsahuje text všech textových položek (208 z celkem 226), u naprosté většiny v plném znění; výjimkou jsou položky označené v index.json jako publisher_excerpt (2), kde je uložena jen volně dostupná ukázka, a author_manuscript (20), kde jde o autorskou verzi, která se může lišit od otištěné. Zbývající položky jsou audio a video, které archiv vede pouze odkazem, a v tomto souboru nejsou; jejich metadata najdete v index.json a corpus.jsonl. Samostatně jsou vedeny kratší příspěvky ze sociálních sítí (26), psané převážně anglicky. Mají vlastní stránku https://meta-analysis.cz/komentare/posts/ a v index.json i corpus.jsonl jsou označeny jako genre=social_post.
 
 ---
 

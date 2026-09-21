@@ -1,0 +1,23 @@
+Our new check for ERC drafts, at [tjhavranek.github.io/erc-ai-feedback](https://tjhavranek.github.io/erc-ai-feedback/), is one prompt rather than a committee of AI agents. When we tested the fancier design on research papers, it lost. The tool was [announced in June](/notes/a-tool-for-your-erc-proposal/) in a short note; this one adds a web page and enough testing to describe.
+
+## What it does
+
+The tool is for applicants to the ERC Starting and Consolidator Grants. You copy one prompt from the page, paste it into a chatbot together with your draft, and say which stage you are at, from a pitch to a full proposal. Nothing is installed, and the draft goes only to the chatbot you already use, not to us. The prompt carries the Criterion 1 and Criterion 2 sub-questions verbatim, as they stand in the ERC's documents for the 2027 calls, and asks the model to read the draft the way a time-pressed panel member would. The report opens with a plain-words summary and an eligibility line, then provisional marks on the sub-questions and findings ranked by severity. Each finding must quote the draft, carry a severity from high to low, and say what to add or cut. The prompt is told not to write proposal text, so the words you submit stay your own.
+
+Four further checks sit behind the first: a three-role pass that adds a devil's advocate and a writing coach, a resubmission audit against the previous evaluation report, interview preparation for Step 2, and an experimental route through Claude Code or Codex. Most applicants need only the first.
+
+## Why one prompt
+
+In a pre-registered experiment, the authors of 44 economics meta-analyses ranked three AI reports on their own paper. A single pass by one model beat both multi-agent debate tools we had built ourselves, by 0.66 and 0.57 rank points, although one of the two spent thirty times the tokens ([the note](/notes/multi-agent-debate-ai-feedback/)). An unrelated group compared three designs on six proposals to a UK funder: a council of AI personas did no better than a single pass, and a pass that went section by section beat both ([Thorne and others, 2026](https://arxiv.org/abs/2603.08281), a preprint). Neither study looked at ERC proposals, so the question is open there. But nothing we have seen favours the committee.
+
+## What it was tested on
+
+Synthetic drafts only. We have run it on fictional drafts made for the purpose, never on a real proposal. Before release we made six of them with hidden answer keys, one clean on purpose, and put each through two chat models, twelve reports in all. Quoting held up: 103 of 105 quoted fragments were verbatim. The two models did not behave alike, and one of them returned the maximum number of findings on every draft, the clean one included. The page asks for the strongest reasoning setting rather than the fast default.
+
+The failures matter more, and the trial is what the current prompt was revised against. One run told an applicant with a 2019 PhD, at high severity, that the arithmetic put them outside the Starting Grant window, which it does not; the prompt now carries the 2027 windows and is told never to compute one from memory. From that same model the clean draft, written to contain no substantive defects beyond an unexpanded acronym, drew eight findings, four of them at high severity; on a re-run after the revision it drew six, none of them high. A finding is therefore a prompt to check something in your draft, not a verdict on it, and the tool does not replace a human reader. In an earlier round, an older test proposal carried a planted budget error of EUR 574,000: one run in three caught it, and none of the three caught a second planted inconsistency in the same draft. The provisional marks in the report describe what is structurally present. They do not predict how the ERC will score anyone, and nobody has measured whether the tool changes the outcome of an application.
+
+## Rules and terms
+
+The tool is unofficial, with no connection to the ERC, and it is for applicants only. The ERC's guidelines for panel members and remote referees bar evaluators from using AI on the proposals they assess, on grounds of confidentiality and non-delegation, and a locally run model does not change that. Applicants may seek AI input provided they keep full authorship responsibility. Use a paid account with training on your data switched off, and read the privacy note on the page first.
+
+The code and the rubric are public under an MIT licence, and the package is archived under DOI [10.5281/zenodo.20829165](https://doi.org/10.5281/zenodo.20829165). The 2027 Starting Grant call closes on 14 October 2026.

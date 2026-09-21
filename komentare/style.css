@@ -265,6 +265,9 @@ main { padding: 2.75rem 0 4rem; }
 .post-links p { margin: 0 0 0.35rem; font-size: 0.85rem; color: var(--faint); }
 .post-links ul { margin: 0; padding-left: 1.1em; }
 .post-links li { margin: 0.15rem 0; word-break: break-word; }
+/* A comment that also said something. It reads at the size of the links it came with,
+   not at the size of the label above them. */
+.post-links .post-note { margin: 0.5rem 0 0; font-size: 0.9rem; color: var(--muted); }
 /* What a short comment was commenting on. Without it these posts float free of the
    thing they respond to, which is what made them read as fragments. */
 .post-context { margin: 0.9rem 0 0; font-size: 0.9rem; color: var(--muted);

@@ -6,7 +6,53 @@
     <atom:link href="https://meta-analysis.cz/notes/feed.xml" rel="self" type="application/rss+xml" />
     <description>Research writing by Tomas Havranek and Zuzana Irsova, first published at MAER-Net, VoxEU, Springer Nature Research Communities, the Czech National Bank, and elsewhere, collected here with a link to each original.</description>
     <language>en</language>
-    <lastBuildDate>Wed, 02 Sep 2026 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 21 Sep 2026 00:00:00 +0000</lastBuildDate>
+    <item>
+      <title>An unofficial check of your ERC draft, in one prompt</title>
+      <link>https://meta-analysis.cz/notes/erc-pre-review-single-prompt/</link>
+      <guid isPermaLink="true">https://meta-analysis.cz/notes/erc-pre-review-single-prompt/</guid>
+      <pubDate>Mon, 21 Sep 2026 00:00:00 +0000</pubDate>
+      <description>An unofficial check of an ERC Starting or Consolidator Grant draft: one prompt pasted into a chatbot reads the draft against the ERC&#x27;s 2027 evaluation questions, and each finding is required to quote the draft and propose a repair. It is a single prompt rather than a committee of AI agents because in our pre-registered experiment on research papers the committee lost, and it has been tested on synthetic drafts only.</description>
+      <content:encoded><![CDATA[<p>
+Our new check for ERC drafts, at <a href="https://tjhavranek.github.io/erc-ai-feedback/">tjhavranek.github.io/erc-ai-feedback</a>, is one prompt rather than a committee of AI agents. When we tested the fancier design on research papers, it lost. The tool was <a href="/notes/a-tool-for-your-erc-proposal/">announced in June</a> in a short note; this one adds a web page and enough testing to describe.
+</p>
+
+<h2>What it does</h2>
+
+<p>
+The tool is for applicants to the ERC Starting and Consolidator Grants. You copy one prompt from the page, paste it into a chatbot together with your draft, and say which stage you are at, from a pitch to a full proposal. Nothing is installed, and the draft goes only to the chatbot you already use, not to us. The prompt carries the Criterion 1 and Criterion 2 sub-questions verbatim, as they stand in the ERC's documents for the 2027 calls, and asks the model to read the draft the way a time-pressed panel member would. The report opens with a plain-words summary and an eligibility line, then provisional marks on the sub-questions and findings ranked by severity. Each finding must quote the draft, carry a severity from high to low, and say what to add or cut. The prompt is told not to write proposal text, so the words you submit stay your own.
+</p>
+
+<p>
+Four further checks sit behind the first: a three-role pass that adds a devil's advocate and a writing coach, a resubmission audit against the previous evaluation report, interview preparation for Step 2, and an experimental route through Claude Code or Codex. Most applicants need only the first.
+</p>
+
+<h2>Why one prompt</h2>
+
+<p>
+In a pre-registered experiment, the authors of 44 economics meta-analyses ranked three AI reports on their own paper. A single pass by one model beat both multi-agent debate tools we had built ourselves, by 0.66 and 0.57 rank points, although one of the two spent thirty times the tokens (<a href="/notes/multi-agent-debate-ai-feedback/">the note</a>). An unrelated group compared three designs on six proposals to a UK funder: a council of AI personas did no better than a single pass, and a pass that went section by section beat both (<a href="https://arxiv.org/abs/2603.08281">Thorne and others, 2026</a>, a preprint). Neither study looked at ERC proposals, so the question is open there. But nothing we have seen favours the committee.
+</p>
+
+<h2>What it was tested on</h2>
+
+<p>
+Synthetic drafts only. We have run it on fictional drafts made for the purpose, never on a real proposal. Before release we made six of them with hidden answer keys, one clean on purpose, and put each through two chat models, twelve reports in all. Quoting held up: 103 of 105 quoted fragments were verbatim. The two models did not behave alike, and one of them returned the maximum number of findings on every draft, the clean one included. The page asks for the strongest reasoning setting rather than the fast default.
+</p>
+
+<p>
+The failures matter more, and the trial is what the current prompt was revised against. One run told an applicant with a 2019 PhD, at high severity, that the arithmetic put them outside the Starting Grant window, which it does not; the prompt now carries the 2027 windows and is told never to compute one from memory. From that same model the clean draft, written to contain no substantive defects beyond an unexpanded acronym, drew eight findings, four of them at high severity; on a re-run after the revision it drew six, none of them high. A finding is therefore a prompt to check something in your draft, not a verdict on it, and the tool does not replace a human reader. In an earlier round, an older test proposal carried a planted budget error of EUR 574,000: one run in three caught it, and none of the three caught a second planted inconsistency in the same draft. The provisional marks in the report describe what is structurally present. They do not predict how the ERC will score anyone, and nobody has measured whether the tool changes the outcome of an application.
+</p>
+
+<h2>Rules and terms</h2>
+
+<p>
+The tool is unofficial, with no connection to the ERC, and it is for applicants only. The ERC's guidelines for panel members and remote referees bar evaluators from using AI on the proposals they assess, on grounds of confidentiality and non-delegation, and a locally run model does not change that. Applicants may seek AI input provided they keep full authorship responsibility. Use a paid account with training on your data switched off, and read the privacy note on the page first.
+</p>
+
+<p>
+The code and the rubric are public under an MIT licence, and the package is archived under DOI <a href="https://doi.org/10.5281/zenodo.20829165">10.5281/zenodo.20829165</a>. The 2027 Starting Grant call closes on 14 October 2026.
+</p>]]></content:encoded>
+    </item>
     <item>
       <title>Rebuilding meta-analysis.cz: what is on it now</title>
       <link>https://meta-analysis.cz/notes/maer-rebuilding-meta-analysis-cz/</link>

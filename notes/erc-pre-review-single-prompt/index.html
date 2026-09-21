@@ -1,0 +1,229 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+<title>An unofficial check of your ERC draft, in one prompt</title>
+<meta name="keywords" content="ERC proposals, grant writing, AI feedback, multi-agent debate, research tools, peer review" />
+<meta name="description" content="An unofficial check of an ERC Starting or Consolidator Grant draft: one prompt pasted into a chatbot reads the draft against the ERC&#x27;s 2027 evaluation questions, and each finding is required to quote the draft and propose a repair. It is a single prompt rather than a committee of AI agents because in our pre-registered experiment on research papers the committee lost, and it has been tested on synthetic drafts only." />
+<link href="/style.css" rel="stylesheet" type="text/css" />
+<link rel="alternate" type="application/rss+xml" title="Research notes" href="https://meta-analysis.cz/notes/feed.xml" />
+
+<!-- seo-meta:start -->
+<link rel="canonical" href="https://meta-analysis.cz/notes/erc-pre-review-single-prompt/" />
+<meta name="author" content="Tomas Havranek" />
+<meta property="article:published_time" content="2026-09-21" />
+<meta property="article:modified_time" content="2026-09-21" />
+<meta property="og:site_name" content="meta-analysis.cz" />
+<meta property="og:type" content="article" />
+<meta property="og:title" content="An unofficial check of your ERC draft, in one prompt" />
+<meta property="og:description" content="An unofficial check of an ERC Starting or Consolidator Grant draft: one prompt pasted into a chatbot reads the draft against the ERC&#x27;s 2027 evaluation questions, and each finding is required to quote the draft and propose a repair. It is a single prompt rather than a committee of AI agents because in our pre-registered experiment on research papers the committee lost, and it has been tested on synthetic drafts only." />
+<meta property="og:url" content="https://meta-analysis.cz/notes/erc-pre-review-single-prompt/" />
+<script type="application/ld+json">
+{
+ "@context": "https://schema.org",
+ "@graph": [
+  {
+   "@type": "BlogPosting",
+   "@id": "https://meta-analysis.cz/notes/erc-pre-review-single-prompt/#note",
+   "mainEntityOfPage": "https://meta-analysis.cz/notes/erc-pre-review-single-prompt/",
+   "url": "https://meta-analysis.cz/notes/erc-pre-review-single-prompt/",
+   "headline": "An unofficial check of your ERC draft, in one prompt",
+   "name": "An unofficial check of your ERC draft, in one prompt",
+   "abstract": "An unofficial check of an ERC Starting or Consolidator Grant draft: one prompt pasted into a chatbot reads the draft against the ERC's 2027 evaluation questions, and each finding is required to quote the draft and propose a repair. It is a single prompt rather than a committee of AI agents because in our pre-registered experiment on research papers the committee lost, and it has been tested on synthetic drafts only.",
+   "description": "An unofficial check of an ERC Starting or Consolidator Grant draft: one prompt pasted into a chatbot reads the draft against the ERC's 2027 evaluation questions, and each finding is required to quote the draft and propose a repair. It is a single prompt rather than a committee of AI agents because in our pre-registered experiment on research papers the committee lost, and it has been tested on synthetic drafts only.",
+   "inLanguage": "en",
+   "datePublished": "2026-09-21",
+   "dateModified": "2026-09-21",
+   "keywords": "ERC proposals, grant writing, AI feedback, multi-agent debate, research tools, peer review",
+   "author": [
+    {
+     "@type": "Person",
+     "name": "Tomas Havranek",
+     "@id": "https://meta-analysis.cz/#th",
+     "sameAs": "https://orcid.org/0000-0002-3158-2539"
+    },
+    {
+     "@type": "Person",
+     "name": "Zuzana Irsova",
+     "@id": "https://meta-analysis.cz/#zi",
+     "sameAs": "https://orcid.org/0000-0002-0753-8124"
+    }
+   ],
+   "publisher": {
+    "@type": "Organization",
+    "name": "meta-analysis.cz",
+    "url": "https://meta-analysis.cz"
+   },
+   "isPartOf": {
+    "@type": "Blog",
+    "@id": "https://meta-analysis.cz/notes/#blog",
+    "name": "Research notes",
+    "license": "https://creativecommons.org/licenses/by/4.0/"
+   },
+   "license": "https://creativecommons.org/licenses/by/4.0/",
+   "isAccessibleForFree": true,
+   "about": [
+    {
+     "@type": "Thing",
+     "name": "research tools"
+    },
+    {
+     "@type": "Thing",
+     "name": "AI and research"
+    }
+   ],
+   "citation": [
+    "https://tjhavranek.github.io/erc-ai-feedback/",
+    "https://github.com/tjhavranek/erc-ai-feedback",
+    "https://doi.org/10.5281/zenodo.20829165",
+    "https://arxiv.org/abs/2607.14713"
+   ]
+  }
+ ]
+}
+</script>
+<!-- seo-meta:end -->
+</head>
+<body>
+<div id="wrapper">
+<div id="logo">
+	<a class="masthead-home" href="/">meta-analysis.cz</a>
+	<p class="site-name"><a href="/notes/">Research notes</a></p>
+	<h2> <span class="mk">&raquo;</span>&nbsp;&nbsp;&nbsp; methods, tools, and findings</h2>
+</div>
+<div id="header">
+	<div id="menu">
+		<ul>
+			<li class="current_page_item"><a href="/notes/">Notes</a></li>
+			<li><a href="/">Data &amp; code</a></li>
+			<li><a href="/datasets/">Datasets</a></li>
+			<li><a href="/guidelines">Guidelines</a></li>
+			<li><a href="https://meta-analysis.cz/notes/feed.xml">RSS</a></li>
+		</ul>
+	</div>
+</div>
+</div>
+<div id="page">
+	<div id="content">
+		<div class="post">
+			<h1 class="title">An unofficial check of your ERC draft, in one prompt</h1>
+			<p class="byline">21 September 2026 &nbsp;&middot;&nbsp; Tomas Havranek, Zuzana Irsova &nbsp;&middot;&nbsp; research tools / AI and research</p>
+			<div class="entry">
+<p>
+Our new check for ERC drafts, at <a href="https://tjhavranek.github.io/erc-ai-feedback/">tjhavranek.github.io/erc-ai-feedback</a>, is one prompt rather than a committee of AI agents. When we tested the fancier design on research papers, it lost. The tool was <a href="/notes/a-tool-for-your-erc-proposal/">announced in June</a> in a short note; this one adds a web page and enough testing to describe.
+</p>
+
+<h2>What it does</h2>
+
+<p>
+The tool is for applicants to the ERC Starting and Consolidator Grants. You copy one prompt from the page, paste it into a chatbot together with your draft, and say which stage you are at, from a pitch to a full proposal. Nothing is installed, and the draft goes only to the chatbot you already use, not to us. The prompt carries the Criterion 1 and Criterion 2 sub-questions verbatim, as they stand in the ERC's documents for the 2027 calls, and asks the model to read the draft the way a time-pressed panel member would. The report opens with a plain-words summary and an eligibility line, then provisional marks on the sub-questions and findings ranked by severity. Each finding must quote the draft, carry a severity from high to low, and say what to add or cut. The prompt is told not to write proposal text, so the words you submit stay your own.
+</p>
+
+<p>
+Four further checks sit behind the first: a three-role pass that adds a devil's advocate and a writing coach, a resubmission audit against the previous evaluation report, interview preparation for Step 2, and an experimental route through Claude Code or Codex. Most applicants need only the first.
+</p>
+
+<h2>Why one prompt</h2>
+
+<p>
+In a pre-registered experiment, the authors of 44 economics meta-analyses ranked three AI reports on their own paper. A single pass by one model beat both multi-agent debate tools we had built ourselves, by 0.66 and 0.57 rank points, although one of the two spent thirty times the tokens (<a href="/notes/multi-agent-debate-ai-feedback/">the note</a>). An unrelated group compared three designs on six proposals to a UK funder: a council of AI personas did no better than a single pass, and a pass that went section by section beat both (<a href="https://arxiv.org/abs/2603.08281">Thorne and others, 2026</a>, a preprint). Neither study looked at ERC proposals, so the question is open there. But nothing we have seen favours the committee.
+</p>
+
+<h2>What it was tested on</h2>
+
+<p>
+Synthetic drafts only. We have run it on fictional drafts made for the purpose, never on a real proposal. Before release we made six of them with hidden answer keys, one clean on purpose, and put each through two chat models, twelve reports in all. Quoting held up: 103 of 105 quoted fragments were verbatim. The two models did not behave alike, and one of them returned the maximum number of findings on every draft, the clean one included. The page asks for the strongest reasoning setting rather than the fast default.
+</p>
+
+<p>
+The failures matter more, and the trial is what the current prompt was revised against. One run told an applicant with a 2019 PhD, at high severity, that the arithmetic put them outside the Starting Grant window, which it does not; the prompt now carries the 2027 windows and is told never to compute one from memory. From that same model the clean draft, written to contain no substantive defects beyond an unexpanded acronym, drew eight findings, four of them at high severity; on a re-run after the revision it drew six, none of them high. A finding is therefore a prompt to check something in your draft, not a verdict on it, and the tool does not replace a human reader. In an earlier round, an older test proposal carried a planted budget error of EUR 574,000: one run in three caught it, and none of the three caught a second planted inconsistency in the same draft. The provisional marks in the report describe what is structurally present. They do not predict how the ERC will score anyone, and nobody has measured whether the tool changes the outcome of an application.
+</p>
+
+<h2>Rules and terms</h2>
+
+<p>
+The tool is unofficial, with no connection to the ERC, and it is for applicants only. The ERC's guidelines for panel members and remote referees bar evaluators from using AI on the proposals they assess, on grounds of confidentiality and non-delegation, and a locally run model does not change that. Applicants may seek AI input provided they keep full authorship responsibility. Use a paid account with training on your data switched off, and read the privacy note on the page first.
+</p>
+
+<p>
+The code and the rubric are public under an MIT licence, and the package is archived under DOI <a href="https://doi.org/10.5281/zenodo.20829165">10.5281/zenodo.20829165</a>. The 2027 Starting Grant call closes on 14 October 2026.
+</p>
+			</div>
+			<div class="meta">
+				<p class="links"><a href="/notes/" class="more">All notes</a> &nbsp;&middot;&nbsp; <a href="/" class="more">More meta from Prague</a></p>
+			</div>
+		</div>
+	</div>
+<div id="sidebar">
+<ul>
+  <li id="search">
+    <h2>Search</h2>
+    <form method="get" action="/search/">
+      <fieldset>
+        <input type="text" id="s" name="q" value="" title="Search meta-analysis.cz" />
+        <input type="submit" id="x" value="Search" />
+      </fieldset>
+    </form>
+  </li>
+<li>
+<h2>Materials</h2>
+<ul>
+<li><a href="https://tjhavranek.github.io/erc-ai-feedback/">The pre-review page</a></li>
+<li><a href="https://github.com/tjhavranek/erc-ai-feedback">Code and rubric (GitHub)</a></li>
+<li><a href="https://doi.org/10.5281/zenodo.20829165">Archived package (Zenodo)</a></li>
+<li><a href="https://arxiv.org/abs/2607.14713">The debate experiment (arXiv: 2607.14713)</a></li>
+</ul>
+</li>
+<li>
+<h2>Links</h2>
+<ul>
+<li><a href="/">Data &amp; code by topic</a></li>
+<li><a href="/guidelines">A practitioner&#x27;s guide</a></li>
+<li><a href="/maive">MAIVE</a></li>
+<li><a href="/datasets/">Datasets and pooled table</a></li>
+<li><a href="https://www.tomashavranek.cz/">Tomas Havranek</a></li>
+<li><a href="https://www.irsova.com/">Zuzana Irsova</a></li>
+<li><a href="https://ideas.repec.org/k/metaana.html">Meta-Analysis on RePEc</a></li>
+<li><a href="https://www.maer-net.org/">MAER-Net</a></li>
+<li><a href="/notes/feed.xml">RSS feed</a></li>
+</ul>
+</li>
+</ul>
+</div>
+	<div style="clear: both;">&nbsp;</div>
+</div>
+<footer class="site-foot">
+<p class="foot-lede"><b>meta-analysis.cz</b> collects meta-analyses, the data behind them, the
+code that produced them, and the methods for doing them. It is maintained by <a href="/about/"><b>Tomas Havranek</b> and
+<b>Zuzana Irsova</b></a> at the Institute of Economic Studies, Charles University, Prague.</p>
+<p class="foot-nav"><a href="/">All meta-analyses</a> &middot;
+<a href="/papers/">Papers in full</a> &middot;
+<a href="/results/">Headline results</a> &middot;
+<a href="/datasets/">Datasets and the pooled table</a> &middot;
+<a href="/maive/">MAIVE</a> &middot;
+<a href="/guidelines/">Practitioner&#x27;s guide</a> &middot;
+<a href="/teaching/">Teaching</a> &middot;
+<a href="/notes/">Research notes</a> &middot;
+<a href="/impact/">How this work has been used</a> &middot;
+<a href="https://www.easymeta.org/">EasyMeta web app</a></p>
+<p class="foot-who"><b>Tomas Havranek</b> &middot; <a href="https://www.tomashavranek.cz/">tomashavranek.cz</a> &middot; <a href="https://ies.fsv.cuni.cz/en/contacts/institute-members/78067720">IES FSV UK</a> &middot; <a href="https://orcid.org/0000-0002-3158-2539">ORCID</a> &middot; <a href="https://scholar.google.com/citations?user=BF0BvBkAAAAJ">Google Scholar</a> &middot; <a href="https://ideas.repec.org/f/pha418.html">RePEc</a> &middot; <a href="https://www.scopus.com/authid/detail.uri?authorId=24453189000">Scopus</a> &middot; <a href="https://cepr.org/about/people/tomas-havranek">CEPR</a> &middot; <a href="https://metrics.stanford.edu/people/tomas-havranek">Stanford METRICS</a></p>
+<p class="foot-who"><b>Zuzana Irsova</b> &middot; <a href="https://www.irsova.com/">irsova.com</a> &middot; <a href="https://ies.fsv.cuni.cz/en/contacts/institute-members/73504033">IES FSV UK</a> &middot; <a href="https://orcid.org/0000-0002-0753-8124">ORCID</a> &middot; <a href="https://scholar.google.com/citations?user=LaHrICUAAAAJ">Google Scholar</a> &middot; <a href="https://ideas.repec.org/e/pir23.html">RePEc</a> &middot; <a href="https://www.scopus.com/authid/detail.uri?authorId=37080793200">Scopus</a> &middot; <a href="https://cepr.org/about/people/zuzana-irsova">CEPR</a> &middot; <a href="https://metrics.stanford.edu/people/zuzana-irsova">Stanford METRICS</a></p>
+<p class="foot-cite"><b>How to cite this collection:</b> Havranek, T. and Z. Irsova (2026).
+meta-analysis.cz: harmonised estimate-level data from meta-analyses in economics. Zenodo.
+<a href="https://doi.org/10.5281/zenodo.21773678">https://doi.org/10.5281/zenodo.21773678</a>.
+Individual papers carry their own citation on their own page.</p>
+<p class="foot-licence"><b>Licence: CC BY 4.0.</b> Everything on this site is licensed under the
+<a href="https://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0
+International Licence</a>. That covers the papers, the datasets, their CSV and Parquet conversions,
+the pooled table, the codebooks, and the documentation. You may copy, redistribute, adapt, and reuse
+any of it for any purpose, including commercial use and training machine-learning models, as long
+as you give attribution to meta-analysis.cz. You do not need to ask.</p>
+<p class="foot-machine">For machines: <a href="/api/v1/datasets.json">datasets.json</a> &middot;
+<a href="/api/v1/datapackage.json">datapackage.json</a> &middot;
+<a href="/api/v1/croissant.json">croissant.json</a> &middot;
+<a href="/llms.txt">llms.txt</a> &middot; <a href="/llms-full.txt">llms-full.txt</a> &middot;
+<a href="/sitemap.xml">sitemap.xml</a> &middot; <a href="/LICENSE">LICENSE</a></p>
+</footer>
+</body>
+</html>

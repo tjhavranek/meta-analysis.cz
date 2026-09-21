@@ -1474,6 +1474,7 @@ def write_machine_readable(items, social=()):
             # resolve a shortener that may no longer exist
             **({"link_map": p["link_map"]} if p.get("link_map") else {}),
             **({"comment_links": p["comment_links"]} if p.get("comment_links") else {}),
+            **({"comment_note": p["comment_note"]} if p.get("comment_note") else {}),
         })
     (KDIR / "index.json").write_text(json.dumps({
         "name": f"Komentáře — {SITE_AUTHORS}",
@@ -1645,6 +1646,7 @@ _LINK = re.compile(r"https?://[^\s<>]+")
 _OWN = re.compile(r"^https?://(www\.)?("
                   r"meta-analysis\.cz|tomashavranek\.cz|irsova\.com|zrusme-inflaci\.cz|"
                   r"easymeta\.org|spuriousprecision\.com|doi\.org|github\.com/tjhavranek|"
+                  r"tjhavranek\.github\.io|"
                   r"osf\.io|arxiv\.org|cepr\.org|ies\.fsv\.cuni\.cz)")
 
 
@@ -1913,12 +1915,20 @@ def write_socials_page():
             ro = ('\n        <p class="post-context">' + esc(r["label"]) + ': '
                   + f'<a href="{esc(r["url"])}">{esc(r["url_label"])}</a></p>')
         cl = ""
-        if p.get("comment_links"):
+        if p.get("comment_links") or p.get("comment_note"):
             lab = ("Odkazy, které autorka doplnila v komentářích:" if lang == "cs"
                    else "Links the author added in the comments:")
+            # A comment can carry a note and no link, so the label and the list stand or
+            # fall together; neither is printed over nothing.
             items = "".join(f'<li><a href="{esc(u)}"{_rel(u)}>{esc(u)}</a></li>'
-                            for u in p["comment_links"])
-            cl = f'\n        <div class="post-links"><p>{lab}</p><ul>{items}</ul></div>'
+                            for u in p.get("comment_links") or [])
+            lst = f'<p>{lab}</p><ul>{items}</ul>' if items else ""
+            # Some comments say something as well as linking, and that sentence was
+            # published like the rest. comment_note carries it verbatim, so the archive
+            # keeps the whole comment rather than only the URLs in it.
+            note = (f'<p class="post-note">{esc(p["comment_note"])}</p>'
+                    if p.get("comment_note") else "")
+            cl = f'\n        <div class="post-links">{lst}{note}</div>'
         # lnkd.in shorteners resolved to where they actually point. The post text keeps
         # the shortener the author published — that is what she wrote, and rewriting a
         # link's visible text to differ from its href is how phishing looks. The
