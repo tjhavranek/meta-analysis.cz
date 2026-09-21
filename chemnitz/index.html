@@ -172,14 +172,15 @@ For each run show the HTTP status, the number of rows sent, effectEstimate and s
 exactly as returned, and resolvedParameters. If a call fails, show the error and stop.
 Never report a number the API did not return.</code></pre>
 
-<p>"recipe" is the one setting that goes outside "parameters"; anything else put there is ignored.</p>
+<p>"recipe" is the one setting that goes outside "parameters"; the API rejects anything else put
+there, with a message saying where it belongs.</p>
 
 <p><b>2. MAIVE</b> &middot; <a href="/chemnitz/02_maive.txt">02_maive.txt</a></p>
 <pre class="code prompt"><code>Use the EasyMeta API, not your own estimation. Data: electricity_sr.csv in this folder
 (columns effect, se, n_obs, study_id). Send every row unchanged, with curl or Python requests
 (not urllib), as POST https://api.maive.eu/v1/run-model with the JSON body
 {"data":[{"effect":...,"se":...,"n_obs":...,"study_id":...}, ...], "parameters":{...}}
-and these parameters (settings outside "parameters" are ignored):
+and these parameters, all nested inside "parameters" (the API rejects them anywhere else):
 {"modelType":"MAIVE","maiveMethod":"PET-PEESE","weight":"equal_weights","useLogFirstStage":true,
 "standardErrorTreatment":"clustered_cr2","includeStudyClustering":true,"computeAndersonRubin":false,
 "winsorize":2.5}

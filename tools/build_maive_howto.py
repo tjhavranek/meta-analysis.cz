@@ -11,7 +11,8 @@ the page says what the API said.
 
 THE TRAPS, all verified live and all invisible in a 200 response:
 
-1. Parameters must be NESTED under "parameters"; top-level ones are silently ignored.
+1. Parameters must be NESTED under "parameters". Since maive-ui 69fd1c4, on main 11 Sep
+   2026, a top-level one is a 400 naming the key; before that it was silently ignored.
 2. The async endpoint ignores modelType and runs MAIVE whatever is asked. Numbers therefore
    come from the sync endpoint only; the funnel exists only on async, so it is fetched from
    an async MAIVE run and accepted only if async and sync agree on the headline statistics.
@@ -201,8 +202,8 @@ def refresh():
         "what": "Every number on https://meta-analysis.cz/maive/how-to/, with the request "
                 "that produced it.",
         "how": "tools/build_maive_howto.py --refresh. Numbers from the SYNCHRONOUS endpoint "
-               "(async ignores modelType). Parameters nested under 'parameters' (top-level "
-               "is silently ignored). includeStudyClustering true everywhere: the SE "
+               "(async ignores modelType). Parameters nested under 'parameters' (a top-level "
+               "key is rejected). includeStudyClustering true everywhere: the SE "
                "alone only selects the small-sample correction, not the clustering.",
         # The rows printed in the API example. Recorded so the page cannot drift from the
         # CSV it ships: they are real rows, not illustrative ones.
@@ -412,16 +413,18 @@ Send "data" as row objects with effect, se, and n_obs. n_obs is the total
 sample size behind the estimate, not degrees of freedom; never guess it or
 back it out of the standard error. Add study_id only where several estimates
 come from one primary study: never invent it, and ask if the grouping is
-unclear. Giving every row its own study_id is rejected.
+unclear. A study_id on every row is accepted; it just leaves nothing to pool.
 
 Nest exactly this under "parameters":
 {"modelType": "MAIVE", "maiveMethod": "PET-PEESE", "weight": "equal_weights",
 "useLogFirstStage": true, "standardErrorTreatment": "clustered_cr2",
 "includeStudyClustering": true, "computeAndersonRubin": true, "winsorize": 0}.
-Top-level settings are silently ignored. Use the synchronous endpoint.
-includeStudyClustering is what clusters; dropping it changes the standard
-errors and the F without any error. Check firstStage.mode is "log" in the
-response; anything else means the settings did not take effect.
+A setting sent outside "parameters" is rejected, with a message saying where
+it belongs. Use the synchronous endpoint. includeStudyClustering is what
+clusters; dropping it changes the standard errors and the F without any
+error, and on data with no study_id it is refused, so leave it out there.
+Check firstStage.mode is "log" in the response; anything else means the
+settings did not take effect.
 
 Read effectEstimate, standardError, firstStageFStatistic, publicationBias,
 hausmanTest, andersonRubinCI, and seInstrumented from the response, and compute

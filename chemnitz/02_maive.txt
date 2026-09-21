@@ -2,7 +2,7 @@ Use the EasyMeta API, not your own estimation. Data: electricity_sr.csv in this 
 (columns effect, se, n_obs, study_id). Send every row unchanged, with curl or Python requests
 (not urllib), as POST https://api.maive.eu/v1/run-model with the JSON body
 {"data":[{"effect":...,"se":...,"n_obs":...,"study_id":...}, ...], "parameters":{...}}
-and these parameters (settings outside "parameters" are ignored):
+and these parameters, all nested inside "parameters" (the API rejects them anywhere else):
 {"modelType":"MAIVE","maiveMethod":"PET-PEESE","weight":"equal_weights","useLogFirstStage":true,
 "standardErrorTreatment":"clustered_cr2","includeStudyClustering":true,"computeAndersonRubin":false,
 "winsorize":2.5}
