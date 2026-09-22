@@ -167,7 +167,7 @@ Především sloupky pro Lilii, měsíčník města Litomyšle — doprava, zele
 Rozhovory pro česká média. U audio a video rozhovorů vede archiv odkaz na původní zdroj, a tam, kde přepis existuje, i přepis řeči.
 
 - [Ekonom popisuje, jak se stát vyhne krachu veřejných financí](https://meta-analysis.cz/komentare/iv-sz-krach-verejnych-financi/) — Seznam Zprávy, 13. září 2026
-- [„Za inflaci může prezident.“ Vlivný profesor popsal, odkud Babiš získá 200 miliard](https://meta-analysis.cz/komentare/iv-aktualne-spotlight/) — Aktuálně.cz, 18. června 2026
+- [„Za inflaci může prezident.“ Vlivný profesor popsal, odkud Babiš získá 200 miliard](https://meta-analysis.cz/komentare/iv-aktualne-spotlight/) — Aktuálně.cz (strojový přepis nahrávky), 18. června 2026
 - [Když screening odhalí cukrovku u dítěte](https://meta-analysis.cz/komentare/diabetes-podcast-screening/) — Diabetes Podcast (strojový přepis nahrávky), 11. března 2026
 - [Co ukazují stovky studií o investování: akcie vycházejí nejlépe](https://meta-analysis.cz/komentare/gacr-akcie-vychazeji-nejlepe/) — Grantová agentura ČR, 9. ledna 2026
 - [„Slovensko zostane len liahňou talentov a vidiekom Prahy,“ hovorí najmladšia profesorka na Karlovej univerzite](https://meta-analysis.cz/komentare/zi-iv-startitup-liahen-talentov/) — Startitup.sk, 18. prosince 2025
@@ -202,7 +202,7 @@ Rozhovory pro česká média. U audio a video rozhovorů vede archiv odkaz na p�
 - [Kontext: ČNB selhává a šlape na plyn. Ať rozprodá devizové rezervy](https://meta-analysis.cz/komentare/kontext-cnb-selhava-a-slape-na-plyn/) — iDNES.cz (strojový přepis nahrávky), 11. června 2022
 - [Inflaci můžeme kdykoliv zrušit, centrální banky včetně té české selhaly](https://meta-analysis.cz/komentare/dvtv-inflaci-muzeme-zrusit/) — DVTV (strojový přepis nahrávky), 13. května 2022 [stejné natáčení jako [Zemětřesení v ČNB bude bezprecedentní](https://video.aktualne.cz/dvtv/zive-zemetreseni-v-cnb-bude-bezprecedentni-byvaly-michluv-po/r~ed187658d21a11eca0d8ac1f6b220ee8/)]
 - [Zemětřesení v ČNB bude bezprecedentní](https://video.aktualne.cz/dvtv/zive-zemetreseni-v-cnb-bude-bezprecedentni-byvaly-michluv-po/r~ed187658d21a11eca0d8ac1f6b220ee8/) — DVTV, 12. května 2022 (video, pouze odkaz) [stejné natáčení jako [Inflaci můžeme kdykoliv zrušit, centrální banky včetně té české selhaly](https://meta-analysis.cz/komentare/dvtv-inflaci-muzeme-zrusit/)]
-- [90' ČT24: O krocích centrální banky a vysoké inflaci](https://ct24.ceskatelevize.cz/clanek/ekonomika/zadny-strop-pro-zvedani-urokove-sazby-nemame-tvrdi-viceguverner-cnb-22082) — Česká televize, 1. dubna 2022 (video, pouze odkaz)
+- [Byznys ČT24 Speciál: Zvýšení základní úrokové sazby](https://meta-analysis.cz/komentare/ct24-byznys-special-sazby/) — Česká televize (strojový přepis nahrávky), 31. března 2022
 - [Extrémní opatrnost ČNB je ve výsledku dražší než agresivita](https://meta-analysis.cz/komentare/e15-podcast-extremni-opatrnost-cnb/) — E15 (strojový přepis nahrávky), 24. února 2022
 - [ČNB by měla prodat miliardy eur a více investovat do akcií](https://meta-analysis.cz/komentare/iv-e15-prodat-eura/) — E15, 23. ledna 2022
 - [Inflaci můžeme úplně zrušit, je neústavní](https://meta-analysis.cz/komentare/zi-inflaci-muzeme-uplne-zrusit-je-neustavni-rik/) — iDNES.cz, 19. prosince 2021
