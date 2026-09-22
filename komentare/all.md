@@ -5295,6 +5295,8 @@ Autor je profesorem na Institutu ekonomických studií FSV UK a zakladatelem ini
 
 *Český rozhlas Plus, 17. ledna 2023, ptala se Jana Klímová. Tomáš Havránek.*
 
+*Stejné natáčení jako „Národní banka má udržovat stabilitu, ale ona si to vykládá jako dvouprocentní inflaci“, https://meta-analysis.cz/komentare/penize-a-vliv-narodni-banka-stabilita/. Jde o jedno natáčení vydané dvakrát, ne o dvě vystoupení.*
+
 Zdroj: https://plus.rozhlas.cz/cnb-musi-delat-vic-vysoka-inflace-tu-jinak-bude-dalsich-10-let-varuje-ekonom-8911524
 
 **Jana Klímová:** a člena Národní ekonomické rady vlády Tomáše Havránka. Inflace za celý rok 2022 byla přes 15%, což je nejvíc od roku 1993. Co je podle vás v ekonomice špatně? A mohla něco udělat lépe Česká národní banka nebo vláda?
@@ -5384,6 +5386,8 @@ Těm zaměstnancům my to strháváme přímo z té výplaty, takže oni opravdu
 ## Národní banka má udržovat stabilitu, ale ona si to vykládá jako dvouprocentní inflaci
 
 *Český rozhlas Plus, 17. ledna 2023, ptala se Jana Klímová. Tomáš Havránek.*
+
+*Stejné natáčení jako „ČNB musí dělat víc. Vysoká inflace tu jinak bude dalších 10 let“, https://meta-analysis.cz/komentare/penize-a-vliv-cnb-musi-delat-vic/. Jde o jedno natáčení vydané dvakrát, ne o dvě vystoupení.*
 
 Zdroj: https://www.irozhlas.cz/ekonomika/inflace-cnb-penize-a-vliv-podcast_2301171630_mst
 
@@ -7343,6 +7347,8 @@ Problém rychlé řešení nemá. Aspoň úplný zákaz kamionů na Zámecké kr
 ## Inflaci můžeme kdykoliv zrušit, centrální banky včetně té české selhaly
 
 *DVTV, 13. května 2022, ptal se Martin Veselovský. Tomáš Havránek.*
+
+*Stejné natáčení jako „Zemětřesení v ČNB bude bezprecedentní“, https://video.aktualne.cz/dvtv/zive-zemetreseni-v-cnb-bude-bezprecedentni-byvaly-michluv-po/r~ed187658d21a11eca0d8ac1f6b220ee8/. Jde o jedno natáčení vydané dvakrát, ne o dvě vystoupení.*
 
 Zdroj: https://video.aktualne.cz/dvtv/havranek-inflaci-muzeme-kdykoliv-zrusit-centralni-banky-vcet/r~d074e14ad23211eca89f0cc47ab5f122/
 

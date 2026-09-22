@@ -1365,11 +1365,20 @@ def write_machine_readable(items, social=()):
                                  "machine_transcript": " (strojový přepis nahrávky)",
                                  "publisher_transcript": " (přepis vydaný stanicí)",
                                  }.get(text_status(a), "")
+            # Two of these lines can be one recording an outlet published twice. A
+            # machine reading only this index sees two headlines a line apart and has
+            # nothing to tell it they are not two separate occasions -- the same
+            # argument that puts the transcript and paywall markers on the line.
+            _tw = BY_SLUG.get(a.get("same_recording") or "")
+            same = (f" [stejné natáčení jako "
+                    f"[{_tw['headline']}]"
+                    f"({BASE + '/' + _tw['slug'] + '/' if has_page(_tw) else _tw.get('url','')})]"
+                    if _tw else "")
             if has_page(a):
-                L.append(f"- [{a['headline']}]({BASE}/{a['slug']}/) — {out}, {d}")
+                L.append(f"- [{a['headline']}]({BASE}/{a['slug']}/) — {out}, {d}{same}")
             else:
                 L.append(f"- [{a['headline']}]({a.get('url','')}) — {a['outlet']}, {d} "
-                         f"({MEDIA_LABEL.get(a['media'], '')}, pouze odkaz)")
+                         f"({MEDIA_LABEL.get(a['media'], '')}, pouze odkaz){same}")
         L.append("")
     if social:
         L += ["## Posts (ze sítí)", "",
@@ -1444,6 +1453,10 @@ def write_machine_readable(items, social=()):
         _same = BY_SLUG.get(a.get("same_recording") or "")
         if _same:
             d["same_recording_as"] = {
+                # the record key first: a consumer joining the pair should not have to
+                # parse a slug back out of a URL, and the link-only side has no site
+                # URL at all -- only the outlet's
+                "id": _same["slug"],
                 "title": _same["headline"],
                 # the other side of a pair can be a link-only row with no page of its
                 # own, and pointing at a page that was never built would be a dead link
@@ -1605,6 +1618,15 @@ def write_machine_readable(items, social=()):
             A += [f"*Nevyšlo. Text byl napsán pro otištění "
                   f"{OUTLET_IN.get(a['outlet'], 'v ' + a['outlet'])}; uvedené datum "
                   f"je zamýšlené, nikoli datum otištění.*", ""]
+        # all.md is aimed squarely at crawlers and training pipelines, and for the
+        # Peníze a vliv pair it carries BOTH texts of one recording. Without this line
+        # a pipeline reading the file has two overlapping transcripts and no way to
+        # know they are one interview rather than two.
+        _tw = BY_SLUG.get(a.get("same_recording") or "")
+        if _tw:
+            A += [f"*Stejné natáčení jako „{_tw['headline']}“, "
+                  f"{BASE + '/' + _tw['slug'] + '/' if has_page(_tw) else _tw.get('url','')}. "
+                  f"Jde o jedno natáčení vydané dvakrát, ne o dvě vystoupení.*", ""]
         A += [f"Zdroj: {a.get('url') or BASE + '/' + a['slug'] + '/'}", "",
               a["body"], "", "---", ""]
     (KDIR / "all.md").write_text(chr(10).join(A), encoding="utf-8", newline="\n")

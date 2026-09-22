@@ -2590,6 +2590,7 @@
    "text_status": "machine_transcript",
    "interviewer": "Jana Klímová",
    "same_recording_as": {
+    "id": "penize-a-vliv-narodni-banka-stabilita",
     "title": "Národní banka má udržovat stabilitu, ale ona si to vykládá jako dvouprocentní inflaci",
     "url": "https://meta-analysis.cz/komentare/penize-a-vliv-narodni-banka-stabilita/",
     "text_status": "publisher_transcript"
@@ -2618,6 +2619,7 @@
    "text_status": "publisher_transcript",
    "interviewer": "Jana Klímová",
    "same_recording_as": {
+    "id": "penize-a-vliv-cnb-musi-delat-vic",
     "title": "ČNB musí dělat víc. Vysoká inflace tu jinak bude dalších 10 let",
     "url": "https://meta-analysis.cz/komentare/penize-a-vliv-cnb-musi-delat-vic/",
     "text_status": "machine_transcript"
@@ -3181,6 +3183,7 @@
    "text_status": "machine_transcript",
    "interviewer": "Martin Veselovský",
    "same_recording_as": {
+    "id": "dvtv-zemetreseni-v-cnb",
     "title": "Zemětřesení v ČNB bude bezprecedentní",
     "original_url": "https://video.aktualne.cz/dvtv/zive-zemetreseni-v-cnb-bude-bezprecedentni-byvaly-michluv-po/r~ed187658d21a11eca0d8ac1f6b220ee8/",
     "text_status": "link_only"
@@ -3209,6 +3212,7 @@
    "text_status": "link_only",
    "interviewer": "Martin Veselovský",
    "same_recording_as": {
+    "id": "dvtv-inflaci-muzeme-zrusit",
     "title": "Inflaci můžeme kdykoliv zrušit, centrální banky včetně té české selhaly",
     "url": "https://meta-analysis.cz/komentare/dvtv-inflaci-muzeme-zrusit/",
     "text_status": "machine_transcript"
