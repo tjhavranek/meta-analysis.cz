@@ -49,7 +49,7 @@ A potom i vždycky se snažíme tím, že mám i tu výuku magisterského semin�
 
 **Zuzana Havránková:** Věděla jsem od začátku toho doktorátu, i když ono se to tak jako v průběhu těch studií bakaláře a magistra krystalizovalo. A myslím, že taková největší krystalizace, která proběhla, tak byla právě v těch Helsinkách, protože tam jsme se dostali k profesorovi Ilmakunasový na úplně běžném předmětu, který je tam vyučován pro všechny ty zahraničné studenty. Empirická analýza, nějaké ekonometrické zpracování, různých věcí. A ten nás představil něčemu, čemu se říká metaanalýza.
 
-A z toho vznikla seminární práce, z toho vznikla moje první publikace, která byla recenzovaná a z toho jsme se tak nějak jako vykrystalizovali do toho, co děláme dnes, což je ta metaanalýza. Kdyby jsi nám ji měla přiblížit lidem, kteří se nevěnují ekonomii, co přesně děláte. Ano, tak metaanalýza je celkem jako takový mezioborový pojem. Je to v podstatě kvantitativní schrnutí literatury.
+A z toho vznikla seminární práce, z toho vznikla moje první publikace, která byla recenzovaná a z toho jsme se tak nějak jako vykrystalizovali do toho, co děláme dnes, což je ta metaanalýza. Kdyby jsi nám ji měla přiblížit lidem, kteří se nevěnují ekonomii, co přesně děláte. Ano, tak metaanalýza je celkem jako takový mezioborový pojem. Je to v podstatě kvantitativní shrnutí literatury.
 
 To znamená, představ si, že máme nějakou otázku vědeckou, kterou se snažíme zodpovědat. Těch studií máme na ní hodně, hodně. A oni jsou často takové i kontradiktivní, že si odporujou, že ty výsledky jsou jiné. Větší, menší, pozitivní, negativní.
 

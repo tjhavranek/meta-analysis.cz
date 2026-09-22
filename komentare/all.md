@@ -4159,7 +4159,7 @@ A potom i vždycky se snažíme tím, že mám i tu výuku magisterského semin�
 
 **Zuzana Havránková:** Věděla jsem od začátku toho doktorátu, i když ono se to tak jako v průběhu těch studií bakaláře a magistra krystalizovalo. A myslím, že taková největší krystalizace, která proběhla, tak byla právě v těch Helsinkách, protože tam jsme se dostali k profesorovi Ilmakunasový na úplně běžném předmětu, který je tam vyučován pro všechny ty zahraničné studenty. Empirická analýza, nějaké ekonometrické zpracování, různých věcí. A ten nás představil něčemu, čemu se říká metaanalýza.
 
-A z toho vznikla seminární práce, z toho vznikla moje první publikace, která byla recenzovaná a z toho jsme se tak nějak jako vykrystalizovali do toho, co děláme dnes, což je ta metaanalýza. Kdyby jsi nám ji měla přiblížit lidem, kteří se nevěnují ekonomii, co přesně děláte. Ano, tak metaanalýza je celkem jako takový mezioborový pojem. Je to v podstatě kvantitativní schrnutí literatury.
+A z toho vznikla seminární práce, z toho vznikla moje první publikace, která byla recenzovaná a z toho jsme se tak nějak jako vykrystalizovali do toho, co děláme dnes, což je ta metaanalýza. Kdyby jsi nám ji měla přiblížit lidem, kteří se nevěnují ekonomii, co přesně děláte. Ano, tak metaanalýza je celkem jako takový mezioborový pojem. Je to v podstatě kvantitativní shrnutí literatury.
 
 To znamená, představ si, že máme nějakou otázku vědeckou, kterou se snažíme zodpovědat. Těch studií máme na ní hodně, hodně. A oni jsou často takové i kontradiktivní, že si odporujou, že ty výsledky jsou jiné. Větší, menší, pozitivní, negativní.
 
@@ -4969,7 +4969,7 @@ Vypomínám, že naše centrální banka se na začátku snaží a by zvětila, 
 
 **Lukáš Matoška:** u otázky, nakolik ta vaše představa, pane Havránku, je prosaditelná v praxi.
 
-**Tomáš Havránek:** No, pan Singer mluvil správně o srozumitelnosti a je to přesně naopak. Tohle je mnohem srozumitelnější než ten současný režim, kdy vy jste to zažil sám, pane Singer, když jste musel vysvětlovat během intervencí, proč vlastně se snažíme o 2% plus, když inflace je na nule. Cenová stabilita, to, že máte ceny v průměru stabilní, je tak intuitivní základní věc, že je mnohem snazší to by lidem vysvětlit, že když máte nějakou dobu inflaci, taky pak nějakou dobu rozpůjštíte mírnou deflací. A naopak, samozřejmě, jak jsem se zmínil, mělo by to být symetrické, to znamená, že když máte cíl na nule, vy ho podstřelujete, máte tady nějakou deflaci, tak zase potom by byla inflace.
+**Tomáš Havránek:** No, pan Singer mluvil správně o srozumitelnosti a je to přesně naopak. Tohle je mnohem srozumitelnější než ten současný režim, kdy vy jste to zažil sám, pane Singer, když jste musel vysvětlovat během intervencí, proč vlastně se snažíme o 2% plus, když inflace je na nule. Cenová stabilita, to, že máte ceny v průměru stabilní, je tak intuitivní základní věc, že je mnohem snazší to by lidem vysvětlit, že když máte nějakou dobu inflaci, taky pak nějakou dobu rozpouštíte mírnou deflací. A naopak, samozřejmě, jak jsem se zmínil, mělo by to být symetrické, to znamená, že když máte cíl na nule, vy ho podstřelujete, máte tady nějakou deflaci, tak zase potom by byla inflace.
 
 Já se nemyslím, že tohle byl problém vysvětlit, naopak by to pomohlo pochopit lidem to, co a proč vlastně centrální banka dělá. Že to dělá proto, aby hodnota peněz byla konstantní. Abychom se na ní mohli spolehnout, jako se můžeme spolehnout, že metr má 100 centimetrů, a ne 98 nebo 95 podle toho, jak vlastně se nám to zrovna povede. Až nesnažíme se metr zmenšovat o 2 cm ročně.
 
