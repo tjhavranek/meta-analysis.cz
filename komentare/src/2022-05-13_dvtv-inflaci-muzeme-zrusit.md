@@ -7,6 +7,7 @@ date: "2022-05-13"
 headline: "Inflaci můžeme kdykoliv zrušit, centrální banky včetně té české selhaly"
 byline: "Tomáš Havránek"
 interviewer: "Martin Veselovský"
+same_recording: "dvtv-zemetreseni-v-cnb"
 body_note: "Rozhovor pro DVTV, ptá se Martin Veselovský. Text je strojový přepis řeči z nahrávky (model Whisper large-v3-turbo). Kdo co říká, je určeno podle hlasu; vzorky obou mluvčích pocházejí z této nahrávky, z míst, kde je mluvčí jistý z obsahu. Dvě věty, které přepis přiřadil nesprávně, vrátila na místo kontrola opřená o mluvnickou osobu a o to, co na ně odpovídá. Opraveno bylo 62 zjevných přeslechů — jména, hranice slov a tvary, kde je správné znění jisté. Význam, čísla ani míra opatrnosti ve formulacích se neměnily; nejistá místa zůstala tak, jak je přepis zachytil. Rozhovor je rychlý a moderátor často vstupuje krátkými poznámkami; u těch nelze mluvčího vždy určit. Na jednom místě v nahrávce zřejmě chybí zápor, takže věta o dlouhodobém dopadu říká opak toho, co z okolního výkladu plyne — ponecháno tak, jak přepis zachytil. Dvě opravy zůstaly neprovedené, protože by dosazovaly slova, která v nahrávce nezazněla. Mluvená řeč obsahuje nedokončené věty a opakování — nejde o psaný text."
 ---
 

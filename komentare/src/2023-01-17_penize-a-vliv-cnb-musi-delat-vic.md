@@ -7,6 +7,7 @@ date: "2023-01-17"
 headline: "ČNB musí dělat víc. Vysoká inflace tu jinak bude dalších 10 let"
 byline: "Tomáš Havránek"
 interviewer: "Jana Klímová"
+same_recording: "penize-a-vliv-narodni-banka-stabilita"
 body_note: "Pořad Peníze a vliv na Českém rozhlase Plus, moderuje Jana Klímová; kromě Tomáše Havránka v něm mluví Josef Bernard a Jan Rafaj a jsou v něm archivní záznamy Aleny Schillerové a Mariana Jurečky. Český rozhlas o tomto jediném vysílání vydal dvě stránky pod dvěma titulky a archiv je vede zvlášť; druhou najdete pod titulkem „Národní banka má udržovat stabilitu“. Text je strojový přepis řeči z nahrávky (model Whisper large-v3-turbo). Kdo co říká, je určeno podle hlasu; vzorky všech šesti mluvčích pocházejí z této nahrávky, z míst, kde je mluvčí jistý z obsahu. Zde je ta část pořadu, kde mluví Tomáš Havránek; rozhovory s Josefem Bernardem a Janem Rafajem jsou v původním záznamu. Opraveno bylo 41 zjevných přeslechů — jména, hranice slov a tvary, kde je správné znění jisté. Význam, čísla ani míra opatrnosti ve formulacích se neměnily; nejistá místa zůstala tak, jak je přepis zachytil. Proč stojí za to mít zde přepis, když druhá stránka nese přepis vydaný stanicí: iROZHLAS otiskl z jeho odpovědí 1518 slov, na nahrávce jich je 2459. Stanice tedy zveřejnila necelé tři pětiny toho, co řekl. Tři místa zůstala tak, jak je přepis zachytil, protože je bez poslechu nelze rozhodnout. Mluvená řeč obsahuje nedokončené věty a opakování — nejde o psaný text."
 ---
 

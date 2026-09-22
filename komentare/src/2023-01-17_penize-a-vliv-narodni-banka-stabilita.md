@@ -7,6 +7,7 @@ date: "2023-01-17"
 headline: "Národní banka má udržovat stabilitu, ale ona si to vykládá jako dvouprocentní inflaci"
 byline: "Tomáš Havránek"
 interviewer: "Jana Klímová"
+same_recording: "penize-a-vliv-cnb-musi-delat-vic"
 body_note: "Díl podcastu Peníze a vliv moderátorky Jany Klímové, který skládá dohromady tři samostatně natočené rozhovory — s Josefem Bernardem, Janem Rafajem a Tomášem Havránkem; nešlo o společnou debatu. Níže stojí ta část dílu, která patří Tomáši Havránkovi, tak jak ji přepsal a vydal sám iROZHLAS — přepis je tedy stanice, ne stroje, a jména mluvčích jsou její. Český rozhlas o tomtéž vysílání vydal dvě stránky pod dvěma titulky; druhá je v archivu vedena zvlášť jako „ČNB musí dělat víc“. Že jde o jedno a totéž vysílání, potvrzuje porovnání tohoto přepisu se zvukovým záznamem druhé stránky: ze 44 odstavců jich 43 v nahrávce sedí. Pro srovnání, u dvou skutečně různých rozhovorů na stejné téma nesedí takto ani jeden."
 transcript: "publisher"
 ---

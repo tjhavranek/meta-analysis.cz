@@ -35,6 +35,8 @@ Frontmatter
     written_by_type        "Person" when written_by names a journalist, not a newsroom
     transcript             "publisher" when the stored text is the broadcaster's own
                            published transcript rather than a machine transcript
+    same_recording         slug of another item that is THE SAME recording, published
+                           twice under two headlines. Declared from both sides.
     audio_url              a broadcast/podcast version of a text interview; linked
     audio_label            visible text for that link (default "podcast")
 
@@ -1434,6 +1436,28 @@ def write_machine_readable(items, social=()):
             d["translated"] = a["translated"]
             d["outlet_note"] = ("The outlet published the original; this English "
                                 "translation was made for this archive.")
+        # Two pages can be one recording: an outlet that ran the same interview twice
+        # under two headlines. A consumer reading records on their own sees two items
+        # and can take them for two occasions on which he said the same thing, which
+        # reads as corroboration that never happened. The pointer says they are one, so
+        # a retrieval layer can collapse the pair or cite both and name them as one.
+        _same = BY_SLUG.get(a.get("same_recording") or "")
+        if _same:
+            d["same_recording_as"] = {
+                "title": _same["headline"],
+                # the other side of a pair can be a link-only row with no page of its
+                # own, and pointing at a page that was never built would be a dead link
+                **({"url": f"{BASE}/{_same['slug']}/"} if has_page(_same)
+                   else {"original_url": _same.get("url", "")}),
+                "text_status": text_status(_same)}
+        # The note above the text says how the transcript was made, which parts of the
+        # programme are not here, and where a speaker boundary or a word is uncertain.
+        # It reached the HTML page and no export, so a consumer holding one record had
+        # the transcript without the paragraph that qualifies it. Kept as metadata, well
+        # away from `text`: it is the archivist writing, not the person speaking.
+        if a.get("body_note") and text_status(a) in ("machine_transcript",
+                                                     "publisher_transcript"):
+            d["transcript_note"] = a["body_note"]
         if has_page(a):
             d["url"] = f"{BASE}/{a['slug']}/"
             d["source_markdown"] = f"{BASE}/src/{a['file']}"
@@ -2317,6 +2341,13 @@ def main():
         t = a.get("translation")
         if t and BY_SLUG.get(t, {}).get("translation") != a["slug"]:
             sys.exit(f"error: {a['slug']} says translation: {t}, but {t} does not say so back")
+    # Same argument for `same_recording:`. One page claiming a twin that does not
+    # claim it back would tell a consumer the two are one recording on one side only.
+    for a in items:
+        s = a.get("same_recording")
+        if s and BY_SLUG.get(s, {}).get("same_recording") != a["slug"]:
+            sys.exit(f"error: {a['slug']} says same_recording: {s}, "
+                     f"but {s} does not say so back")
 
     items.sort(key=lambda a: (a["date"], a["headline"]), reverse=True)
 
