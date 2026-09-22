@@ -218,7 +218,7 @@ A jakékoliv ekonomické zhodnocení eura vychází vlastně 0,0. Více méně. 
 
 **Jiří Zatloukal:** Tak asi je to nějaká obrana proti ruskému vlivu.
 
-**Tomáš Havránek:** vy se spojíte co nejvíc s tím západem, který vás může snad ochránit. Revolut teď tuším, já když pracuju s Revolutem, s tou bankou, tak oni mají sídlo je to Litva. Litva nebo to ještě. Kdyby Rusko napadlo Litvu, tak přece nebyl to problém pro řadu lidí v Evropě, nejenom pro tu Litvu.
+**Tomáš Havránek:** vy se spojíte co nejvíc s tím západem, který vás může snad ochránit. Revolut teď tuším, já když pracuju s Revolutem, s tou bankou, tak oni mají sídlo je to Litva. Litva nebo to ještě. Kdyby Rusko napadlo Litvu, tak přece nebyl to problém pro řadu lidí v Evropě, nejenom pro tu Litvu. *[Zápor zde zřejmě zazněl omylem: z okolního výkladu plyne, že problém by to byl.]*
 
 Ta integrace do té evropské ekonomiky je pro ně dobrá a nedělají to primárně kvůli tomu, že by se to vyplatilo, ale že jim to dá
 
