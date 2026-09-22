@@ -75,9 +75,11 @@ Podle mě teď je nutné, aby Národní banka ukázala, že udělá cokoliv, cok
 
 Tam je otázka, jak moc to bylo účinné. Ale má tady velký účinný nástroj, který nespochybně nikdo jeho účinnost. A nepoužívá ho. Používá ho tak trošku, že brání oslabování.
 
-Ale není nic snazšího, než i pro vysvětlení lidem. Prostě teď jsme intervenovali proti koruně, kvůli deflaci. Teď máme problém opačný, čili intervenujeme, my ty eura prodáme, vrátíme to všechno do normálního stavu, který nebude jaksi zkreslen těmi intervencami, které tam pořád leží na účtech těch bank, ty nové koruny. Proč myslíte, že se to neděje?
+Ale není nic snazšího, než i pro vysvětlení lidem. Prostě teď jsme intervenovali proti koruně, kvůli deflaci. Teď máme problém opačný, čili intervenujeme, my ty eura prodáme, vrátíme to všechno do normálního stavu, který nebude jaksi zkreslen těmi intervencami, které tam pořád leží na účtech těch bank, ty nové koruny.
 
-To bych asi, já si to otázku kladu už asi rok,
+**Jan Bumba:** Proč myslíte, že se to neděje?
+
+**Tomáš Havránek:** To bych asi, já si tu otázku kladu už asi rok,
 
 **Jan Bumba:** já bych už jste na to někdy narazil, ale nejsou tam příliš silné tlaky zase třeba ze strany firem exportérů, pro které by byla ta silná koruna nevýhodná?
 
