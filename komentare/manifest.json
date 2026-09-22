@@ -10,8 +10,10 @@
    "author_manuscript": 20,
    "published_full_text": 204,
    "correspondence": 6,
-   "link_only": 18,
+   "machine_transcript": 15,
    "unpublished_manuscript": 2,
+   "publisher_transcript": 1,
+   "link_only": 2,
    "publisher_excerpt": 2
   },
   "by_section": {
@@ -27,6 +29,8 @@
   "author_manuscript": "the author's own version, as sent to the outlet",
   "publisher_excerpt": "only the outlet's free teaser; the original is paywalled",
   "link_only": "audio or video; no text is stored, the record links to the source",
+  "machine_transcript": "audio or video; the text is a machine transcript of it, checked against the recording",
+  "publisher_transcript": "audio or video; the text is the transcript the broadcaster itself published, with the speakers as it named them",
   "correspondence": "a letter or memo the author sent — to a public body, to colleagues, to students — never published anywhere. The date is the day it was sent, and is exact",
   "unpublished_manuscript": "written for the outlet and submitted, but never printed; the date is the issue it was written for, not a publication date"
  },
@@ -41,28 +45,28 @@
  "files": {
   "corpus.jsonl": {
    "url": "https://meta-analysis.cz/komentare/corpus.jsonl",
-   "bytes": 1786341,
-   "sha256": "6df5ff6bde0f650a2225fa73908214447a7b6c344aecc3c01023a8ec3132a2d7"
+   "bytes": 2163106,
+   "sha256": "c850e5dac13f9813342541a135da174095a942cf62b8f63770def6e5161e4b23"
   },
   "index.json": {
    "url": "https://meta-analysis.cz/komentare/index.json",
-   "bytes": 1806990,
-   "sha256": "875cb7b09f7e46c5bdcd83ed32453e28a44368adfd8d5f24b3a376e34301185f"
+   "bytes": 2183953,
+   "sha256": "9942b424965a0f63229e0544f7e76214279c8dd45955a998537199eb5fe3272f"
   },
   "all.md": {
    "url": "https://meta-analysis.cz/komentare/all.md",
-   "bytes": 1587412,
-   "sha256": "d9da708c48b92428117751672e53ff054f1e0c8a8e1467eefb814ccc6474336e"
+   "bytes": 1962511,
+   "sha256": "44099565f3dc8ac07614a5e996a85cf023ff52eeac9b7152aee3dd0f92486ad3"
   },
   "llms.txt": {
    "url": "https://meta-analysis.cz/komentare/llms.txt",
-   "bytes": 47305,
-   "sha256": "fc5a905e3811ae7ddef2f03ed277f8a67d576a58d38df95cfe4faf4aed027df1"
+   "bytes": 47017,
+   "sha256": "46ee695a36e14982ec338dd6ff503c8cc9910fd5c125ac61c2ffdd8114b6b593"
   },
   "feed.xml": {
    "url": "https://meta-analysis.cz/komentare/feed.xml",
-   "bytes": 1766811,
-   "sha256": "e83cbaf11f8ec723105a2eba7dcaeacbb01df7015c9eea31cbcd4cf40e439e1c"
+   "bytes": 2148877,
+   "sha256": "c773040dde8eebbeaeebe01a8e87db8e8a8327d61f262b3d1b8ccf0566a0527d"
   }
  },
  "generated_from": [

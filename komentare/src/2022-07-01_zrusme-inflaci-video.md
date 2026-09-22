@@ -7,5 +7,41 @@ date: "2022-07-01"
 date_precision: "month"
 headline: "Zrušme inflaci"
 byline: "Tomáš Havránek"
-body_note: "Pětiminutové video k iniciativě Zrušme inflaci na autorově vlastním kanálu YouTube. Uvedené datum je doba vzniku videa pro iniciativu spuštěnou v červenci 2022. Na YouTube bylo nahráno později; kanál uvádí zveřejnění 16. 6. 2024 pacifického času, tedy 17. 6. 2024 UTC."
+body_note: "Pětiminutové video k iniciativě Zrušme inflaci na autorově vlastním kanálu YouTube. Uvedené datum je doba vzniku videa pro iniciativu spuštěnou v červenci 2022; na YouTube bylo nahráno později, kanál uvádí 16. 6. 2024 pacifického času, tedy 17. 6. 2024 UTC. Text je strojový přepis řeči z nahrávky (model Whisper large-v3-turbo). Mluví jediný hlas. Že je autorův, potvrzuje porovnání s hlasovým vzorkem z pořadů, kde Česká televize autora jmenuje. Opraveno bylo 7 zjevných přeslechů — jména, hranice slov a tvary, kde je správné znění jisté. Význam, čísla ani míra opatrnosti ve formulacích se neměnily; nejistá místa zůstala tak, jak je přepis zachytil. Tento přepis nahradil starší, pořízený jiným modelem. Ten obsahoval dvě věty, které v nahrávce nezazněly, a na několika místech slova, která tam nejsou; nový přepis naopak zachytil i odkaz na hlavu šestou, článek 98 Ústavy. Číslo 220 odborných studií slyší oba modely shodně, ačkoli zrusme-inflaci.cz uvádí 222 — to je rozdíl mezi nahrávkou a webem iniciativy, nikoli chyba přepisu. Mluvená řeč obsahuje nedokončené věty a opakování — nejde o psaný text."
 ---
+
+Inflace se můžeme na věky zbavit. Je to naše rozhodnutí. Když to budeme po Národní bance chtít, tak za 100 korunu toho půjde koupit stejně za 20 let jako dnes.
+
+Už nikdy nedopusťme, aby nám inflace během tří let navždycky smazala třetinu úspor. Bohužel teď se Národní banka každý rok snaží o inflaci. A když je inflace až moc velká, tak banka příští roky svou chybu neopraví, ale stále tlačí na další a další zdražování.
+
+Takže vůbec nevíme, co si za svoje peníze budeme moci dovolit za 5 let, na to již za 20 let. Když zrušíme inflaci, peníze přestanou ztrácet na hodnotě. Budeme moci šetřit na účtu v bance nebo doma v hotovosti, bez nejistoty, bez složitostí, bez nutnosti kupovat byty, akcie nebo kryptoměny.
+
+Naopak ten dnešní systém dělá ze střadatelů hlupáky, protože úroky na vkladech jsou dlouhodobě menší než inflace. Takže spoření nám prodělává. Aby nám úspory neprodělávaly, musíme na sebe brát riziko a kupovat třeba akcie.
+
+Ale umožňujeme spoření i těm, co si riziko brát nechtějí. Těm teď zbývá jenom nákup bytu nebo domu. Ale tím vytváříme bublinu nemovitostí a nedostupné bydlení.
+
+Od roku 1990 vyšlo 220 odborných studií, které porovnávají náklady a výnosy inflace. Tyhle studie počítají, jak velká inflace je zdravá. No a průměrný odhad je mínus 0,09%, tedy skoro přesně nula.
+
+Čili nejzdravější je cenová stabilita. Navíc ani jedna studie nezjišťuje, že zdravá inflace jsou přesně 2%. Takže ten dvouprocentní inflační cíl Národní banky nemá žádný vědecký základ.
+
+Je to jenom historický zlozvyk. Každá inflace je nezdravá. Ústava České republiky uvádí v hlavě 6 článku 98, že hlavním cílem Národní banky je péče o cenovou stabilitu.
+
+Ale dvouprocentní inflace, o kterou se banka snaží, to není cenová stabilita. Pokud si banka myslí, že statistici měří inflaci špatně a tím pomůže měření vylepšit, ale růst není stabilita. Upřesněme tedy v zákoně o Národní bance, že cenová stabilita znamená stabilitu průměrných cen.
+
+Každá inflace je neústavní. Hodnota peněz je základní měrná jednotka, podobně jako metr nebo gram. Přitom Národní banka s ní schválně hýbe a kvůli tomu nevíme, jakou hodnotu budou naše peníze mít v budoucnosti.
+
+Kdybychom každý rok zkracovali délku metru, nastal by naprostý zmatek. A to samé bohužel dělá inflace s penězi. Proto je dnes tak těžké spořit na důchod nebo pro děti.
+
+Ale inflace běží jen posledních 100 let. Ceny před první světovou válkou byly podobné, jako o století dříve. Každá inflace je nepřirozená.
+
+Nad cenou průměrného zboží a služeb má nakonec kontrolu Národní banka. To totiž určuje cenu peněz a nepřímo i jejich množství. A díky zásobě eur a dolarů má také vliv na hodnotu koruny oproti ostatním měnám.
+
+Tedy Národní banka nakonec dokáže, aby koruna měla takovou kupní sílu, jakou banka chce. Samozřejmě z roku na rok může docházet k výkyvům, ale ty by banka vždycky zase opravila. Pokud nevěříme, že Národní banka má ve finále nad inflací kontrolu, tak ji můžeme rovnou zavřít, protože nám k ničemu není.
+
+Nemůže plnit svůj ústavní úkol. Ale před sto lety Rašín také dokázal inflaci srazit s dvouciferný hodnot na nulu a stabilizovat průměrné ceny. Navažme platy vedení Národní banky na dodržování cenové stability.
+
+Inflace údajně promazává kola ekonomiky, ale vědecký výzkum je proti. cz, kde podrobně rozebíráme 25 takových námitek. Ano, někteří na inflaci vydělávají, někteří vydělávají hodně a jejich odpor bude tvrdý.
+
+Přesto nakonec inflaci zrušíme a každý z nás se o to může zasloužit. Volíme prezidenta, který sám rozhoduje o celém vedení Národní banky. Vybírejme z prezidentských kandidátů, kteří zaručí, že inflaci zruší.
+
+Inflace je totiž nezdravá, nepřirozená a neústavní.

@@ -33,6 +33,8 @@ Frontmatter
                            and og:url there. Maintained by redesign/sync_notes.py.
     written_by             who wrote a reported piece the author only speaks in
     written_by_type        "Person" when written_by names a journalist, not a newsroom
+    transcript             "publisher" when the stored text is the broadcaster's own
+                           published transcript rather than a machine transcript
     audio_url              a broadcast/podcast version of a text interview; linked
     audio_label            visible text for that link (default "podcast")
 
@@ -124,8 +126,8 @@ SECTIONS = {
     "rozhovory": dict(
         title="Rozhovory",
         short="Rozhovory",
-        desc="Rozhovory pro česká média. U audio a video rozhovorů uvádíme pouze odkaz "
-             "na původní zdroj.",
+        desc="Rozhovory pro česká média. U audio a video rozhovorů vede archiv odkaz "
+             "na původní zdroj, a tam, kde přepis existuje, i přepis řeči.",
         lang="cs",
     ),
     "english": dict(
@@ -203,6 +205,16 @@ BY_SLUG = {}
 _EXCERPT_RE = re.compile(r"(?i)ukázka zveřejněná|úvodní ukázka")
 
 
+def has_page(a):
+    """Does this record hold its own text, and so earn a page of its own?
+
+    Until transcripts existed this was the same question as `media == "text"`, because an audio or
+    video record stored only metadata and the archive linked out. A transcript changes that: the
+    source is still a video, but the words are now here, so the record earns a page. Keep the two
+    questions apart — `media` says what the source was, this says whether we hold the text."""
+    return bool((a.get("body") or "").strip())
+
+
 def text_status(a):
     """published_full_text | author_manuscript | publisher_excerpt | link_only
     | unpublished_manuscript"""
@@ -212,8 +224,15 @@ def text_status(a):
         return "correspondence"
     if a.get("unpublished"):
         return "unpublished_manuscript"
-    if a["media"] != "text":
+    if not has_page(a):
         return "link_only"
+    # The words are here, but a machine heard them: the archive must not present a
+    # transcript with the same confidence as a text the author wrote.
+    if a["media"] != "text":
+        # Whose ears heard it matters. A transcript the broadcaster published carries
+        # its name; one this archive made carries a machine's.
+        return ("publisher_transcript" if a.get("transcript") == "publisher"
+                else "machine_transcript")
     if _EXCERPT_RE.search(a.get("body_note") or ""):
         return "publisher_excerpt"
     if a.get("source") == "draft":
@@ -663,8 +682,8 @@ SCRIPT = """<script>
 
 def item_row(a, show_cat):
     lang = a.get("lang") or SECTIONS[a["category"]]["lang"]
-    url = f"{PATH}/{a['slug']}/" if a["media"] == "text" else (a.get("url") or "#")
-    ext = "" if a["media"] == "text" else ' rel="external"'
+    url = f"{PATH}/{a['slug']}/" if has_page(a) else (a.get("url") or "#")
+    ext = "" if has_page(a) else ' rel="external"'
     tag = ""
     if a["media"] in MEDIA_LABEL:
         tag = f'<span class="tag tag-av">{MEDIA_LABEL[a["media"]]}</span>'
@@ -1114,8 +1133,8 @@ def write_index(items, key=None):
         # unpublished draft must carry the same date field in both places.
         "hasPart": [dict(
             {"@type": "Article",
-             "@id": (f"{BASE}/{a['slug']}/#article" if a["media"] == "text" else a.get("url", "")),
-             "url": (f"{BASE}/{a['slug']}/" if a["media"] == "text" else a.get("url", "")),
+             "@id": (f"{BASE}/{a['slug']}/#article" if has_page(a) else a.get("url", "")),
+             "url": (f"{BASE}/{a['slug']}/" if has_page(a) else a.get("url", "")),
              "headline": a["headline"],
              # Every item in this archive, including the ones whose recording lives on a
              # broadcaster's site. The owner holds the rights and has stated the whole
@@ -1221,7 +1240,7 @@ def write_feed(items, social=()):
     _newest = max([a["date"] for a in items] + [p["date"] for p in social])
     it = []
     for a in items:
-        url = f"{BASE}/{a['slug']}/" if a["media"] == "text" else (a.get("url") or BASE)
+        url = f"{BASE}/{a['slug']}/" if has_page(a) else (a.get("url") or BASE)
         body = fix_quotes(md_to_html(a["body"]))
         # A reader who only ever sees the feed must not be told this ran in Lilie.
         if a.get("genre") == "correspondence":
@@ -1238,7 +1257,7 @@ def write_feed(items, social=()):
                     f'{OUTLET_IN.get(a["outlet"], "v " + a["outlet"])}; uvedené datum '
                     f"je zamýšlené, nikoli datum otištění.</em></p>\n" + body)
         content = (f"<![CDATA[{body}]]>"
-                   if a["media"] == "text" else
+                   if has_page(a) else
                    f"<![CDATA[<p>{MEDIA_LABEL.get(a['media'], '')} — "
                    f'<a href="{a.get("url", "")}">{esc(a["outlet"])}</a></p>]]>')
         _never = a.get("genre") == "correspondence" or a.get("unpublished")
@@ -1341,8 +1360,10 @@ def write_machine_readable(items, social=()):
                                  "correspondence": " (korespondence, nepublikováno)",
                                  "author_manuscript": " (autorská verze, ne otištěné znění)",
                                  "publisher_excerpt": " (jen ukázka, zbytek je za paywallem)",
+                                 "machine_transcript": " (strojový přepis nahrávky)",
+                                 "publisher_transcript": " (přepis vydaný stanicí)",
                                  }.get(text_status(a), "")
-            if a["media"] == "text":
+            if has_page(a):
                 L.append(f"- [{a['headline']}]({BASE}/{a['slug']}/) — {out}, {d}")
             else:
                 L.append(f"- [{a['headline']}]({a.get('url','')}) — {a['outlet']}, {d} "
@@ -1413,7 +1434,7 @@ def write_machine_readable(items, social=()):
             d["translated"] = a["translated"]
             d["outlet_note"] = ("The outlet published the original; this English "
                                 "translation was made for this archive.")
-        if a["media"] == "text":
+        if has_page(a):
             d["url"] = f"{BASE}/{a['slug']}/"
             d["source_markdown"] = f"{BASE}/src/{a['file']}"
             d["word_count"] = len(a["body"].split())
@@ -1513,22 +1534,28 @@ def write_machine_readable(items, social=()):
          # "plné znění" was not true of every one of them: two records hold only the
          # outlet's free teaser, and a machine that trusted this line would quote a
          # tenth of an article as the whole of it.
-         f"Tento soubor obsahuje text všech textových položek "
-         f"({sum(1 for a in items if a['media'] == 'text')} z celkem {len(items)}), "
+         f"Tento soubor obsahuje text všech položek, u nichž archiv text drží "
+         f"({sum(1 for a in items if has_page(a))} z celkem {len(items)}), "
          f"u naprosté většiny v plném znění; výjimkou jsou položky označené v index.json "
          f"jako publisher_excerpt "
          f"({sum(1 for a in items if text_status(a) == 'publisher_excerpt')}), "
          f"kde je uložena jen volně dostupná ukázka, a author_manuscript "
          f"({sum(1 for a in items if text_status(a) == 'author_manuscript')}), "
          f"kde jde o autorskou verzi, která se může lišit od otištěné. "
-         f"Zbývající položky jsou audio a video, které archiv vede pouze odkazem, "
-         f"a v tomto souboru nejsou; jejich metadata najdete v index.json a corpus.jsonl. "
+         f"Část položek je audio a video. Tam, kde archiv má přepis, je text v tomto "
+         f"souboru a položka nese status machine_transcript "
+         f"({sum(1 for a in items if text_status(a) == 'machine_transcript')}), "
+         f"tedy strojový přepis nahrávky, nebo publisher_transcript "
+         f"({sum(1 for a in items if text_status(a) == 'publisher_transcript')}), "
+         f"tedy přepis vydaný samotnou stanicí. Zbylé audio a video "
+         f"({sum(1 for a in items if not has_page(a))}) vede archiv pouze odkazem a v tomto "
+         f"souboru nejsou; jejich metadata najdete v index.json a corpus.jsonl. "
          f"Samostatně jsou vedeny kratší příspěvky ze sociálních sítí ({n_social}), "
          f"psané převážně anglicky. Mají vlastní stránku {BASE}/posts/ a v index.json "
          f"i corpus.jsonl jsou označeny jako genre=social_post.",
          "", "---", ""]
     for a in items:
-        if a["media"] != "text":
+        if not has_page(a):
             continue
         A += [f"## {a['headline']}", "",
               f"*{a['outlet']}, {cs_date(a['date'], a.get('date_precision'))}"
@@ -1602,6 +1629,8 @@ def write_machine_readable(items, social=()):
             "author_manuscript": "the author's own version, as sent to the outlet",
             "publisher_excerpt": "only the outlet's free teaser; the original is paywalled",
             "link_only": "audio or video; no text is stored, the record links to the source",
+            "machine_transcript": "audio or video; the text is a machine transcript of it, checked against the recording",
+            "publisher_transcript": "audio or video; the text is the transcript the broadcaster itself published, with the speakers as it named them",
             "correspondence": "a letter or memo the author sent — to a public body, to "
                                   "colleagues, to students — never published anywhere. The date "
                                   "is the day it was sent, and is exact",
@@ -1628,7 +1657,7 @@ def write_machine_readable(items, social=()):
         "generated_from": ["komentare/src/*.md", "komentare/social-posts.json"],
     }, ensure_ascii=False, indent=1), encoding="utf-8", newline="\n")
 
-    return len([a for a in items if a["media"] == "text"])
+    return len([a for a in items if has_page(a)])
 
 
 SOCIAL_JSON = KDIR / "social-posts.json"
@@ -2094,7 +2123,7 @@ def write_data_page(items, social=()):
     crawler (and Google Dataset Search) gets one entry point that names the
     distributions, the licence and the coverage."""
     docs_total = len(items) + len(social)
-    n_text = len([a for a in items if a["media"] == "text"]) + len(social)
+    n_text = len([a for a in items if has_page(a)]) + len(social)
     counts = {}
     for a in items:
         counts[text_status(a)] = counts.get(text_status(a), 0) + 1
@@ -2172,7 +2201,8 @@ def write_data_page(items, social=()):
       <ul class="items">{rows}</ul>
       <p class="about-machine" lang="en">Every record carries a <code>text_status</code>
         field, so a consumer can tell a published text from the author's own version,
-        from a publisher's teaser, from an audio/video record that stores no text.</p>"""
+        from a publisher's teaser, from a transcript of a recording, from an audio/video
+        record that stores no text at all.</p>"""
     page = shell(f"Korpus ke stažení — Komentáře — {SITE_AUTHORS}",
                  f"Strojově čitelný korpus: {docs_total} záznamů, "
                  "corpus.jsonl, index.json, all.md a manifest s kontrolními součty.",
@@ -2190,8 +2220,10 @@ def write_src_index(items):
     # exist, which was both a broken listing and a false statement.
     rows, n_text = [], 0
     for a in items:
-        note = "" if a["media"] == "text" else f', {MEDIA_LABEL[a["media"]]}, odkaz'
-        n_text += a["media"] == "text"
+        note = ("" if has_page(a)
+                else f', {MEDIA_LABEL[a["media"]]}, přepis' if has_page(a)
+                else f', {MEDIA_LABEL[a["media"]]}, odkaz')
+        n_text += has_page(a)
         rows.append(f'<li><a href="{PATH}/src/{esc(a["file"])}">{esc(a["file"])}</a> '
                     f'— {esc(a["headline"])} <span class="src-meta">({esc(a["outlet"])}, '
                     f'{a["date"]}{note})</span></li>')
@@ -2249,7 +2281,7 @@ def update_sitemap(items):
     push; it lists this section's pages via its SELF_MANAGED handling. Two writers
     for one file meant whichever ran last silently dropped the other's URLs.
     """
-    return sum(1 for a in items if a["media"] == "text") + 1 + len(SECTIONS)
+    return sum(1 for a in items if has_page(a)) + 1 + len(SECTIONS)
 
 
 def _retired_update_sitemap(items):
@@ -2259,7 +2291,7 @@ def _retired_update_sitemap(items):
     urls = [f"{BASE}/"] + [f"{BASE}/{k}/" for k in SECTIONS]
     rows = [f'  <url><loc>{u}</loc><lastmod>{items[0]["date"]}</lastmod></url>' for u in urls]
     rows += [f'  <url><loc>{BASE}/{a["slug"]}/</loc><lastmod>{a["date"]}</lastmod></url>'
-             for a in items if a["media"] == "text"]
+             for a in items if has_page(a)]
     sm.write_text(t.replace("</urlset>", "\n".join(rows) + "\n</urlset>"), encoding="utf-8", newline="\n")
     return len(rows)
 
@@ -2297,7 +2329,7 @@ def main():
     # "files" holds hosted documents (the CNB advisor-opinion PDFs); static, not
     # slug-backed, so the sweep must spare it like the other generated directories.
     # "ask" is the hand-written "Zeptejte se AI" question page; web_meta/ask_worker answers it.
-    live = ({a["slug"] for a in items if a["media"] == "text"} | set(SECTIONS)
+    live = ({a["slug"] for a in items if has_page(a)} | set(SECTIONS)
             | {"data", "posts", "ze-siti", "social-img", "item-img", "files", "ask"})
     orphans = [d for d in KDIR.iterdir()
                if d.is_dir() and d.name not in live and d.name not in ("src", "__pycache__")]
@@ -2309,7 +2341,7 @@ def main():
         print(f"  removed orphan page: {d.name}/")
 
     for a in items:
-        if a["media"] == "text":
+        if has_page(a):
             write_item(a)
     # The posts page runs FIRST: it computes the anchors, and every writer below needs
     # the post list — the hub for its newest-post line, the feed for lastBuildDate, and
@@ -2328,7 +2360,7 @@ def main():
     for a in items:
         by.setdefault(a["category"], []).append(a)
     for k, v in by.items():
-        av = sum(1 for x in v if x["media"] != "text")
+        av = sum(1 for x in v if not has_page(x))
         print(f"  {SECTIONS[k]['short']:<12} {len(v):3}" + (f"  ({av} audio/video, odkaz)" if av else ""))
     print(f"  {'celkem':<12} {len(items):3}")
     print(f"\n  hub      {BASE}/")
