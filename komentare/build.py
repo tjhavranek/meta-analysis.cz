@@ -17,6 +17,9 @@ Frontmatter
     headline    required
     category               celostatni | litomysl | rozhovory | english
                            (default celostatni)
+    genre                  "speech" — delivered aloud on an occasion, not written for
+                           an outlet: Article rather than OpinionNewsArticle, and no
+                           editor stood between the speaker and the audience
     genre                  "press_release" — files under celostatni but is not an
                            op-ed: Article rather than OpinionNewsArticle, and its
                            provenance line reads "rozeslaná redakcím"
@@ -765,9 +768,12 @@ def write_item(a):
     # factual reporting, and a travelogue is a diary of what happened; OpinionNewsArticle
     # would tell a machine either one is his argument.
     is_report = a.get("genre") in ("report", "travelogue")
+    # A speech was delivered to a room, not filed to a newspaper. OpinionNewsArticle
+    # would present a ceremonial address as an opinion column.
+    is_speech = a.get("genre") == "speech"
 
     node = {
-        "@type": ("Article" if (is_iv or is_pr or unpub or is_report)
+        "@type": ("Article" if (is_iv or is_pr or unpub or is_report or is_speech)
                   else "OpinionNewsArticle"),
         "@id": canonical + "#article",
         # A mirrored post's master copy lives at /notes/. The canonical link and og:url
@@ -1502,7 +1508,8 @@ def write_machine_readable(items, social=()):
                            if a.get("genre") == "advisor_opinion" else
                            "self_published"
                            if (SELF_PUBLISHED.search(a["outlet"])
-                               or a.get("genre") == "press_release") else "editorial")
+                               or a.get("genre") in ("press_release", "speech"))
+                           else "editorial")
         if a.get("genre"):
             d["genre"] = a["genre"]
         docs.append(d)

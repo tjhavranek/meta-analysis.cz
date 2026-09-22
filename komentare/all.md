@@ -4,7 +4,7 @@ Publicistika Tomáše Havránka a Zuzany Havránkové: komentáře pro celostát
 
 Licence: CC BY 4.0 (https://creativecommons.org/licenses/by/4.0/). Volně kopírovat, šířit, upravovat a dále používat k jakémukoli účelu, včetně komerčního využití a trénování modelů strojového učení, pokud uvedete meta-analysis.cz.
 
-Tento soubor obsahuje text všech položek, u nichž archiv text drží (224 z celkem 226), u naprosté většiny v plném znění; výjimkou jsou položky označené v index.json jako publisher_excerpt (2), kde je uložena jen volně dostupná ukázka, a author_manuscript (20), kde jde o autorskou verzi, která se může lišit od otištěné. Část položek je audio a video. Tam, kde archiv má přepis, je text v tomto souboru a položka nese status machine_transcript (15), tedy strojový přepis nahrávky, nebo publisher_transcript (1), tedy přepis vydaný samotnou stanicí. Zbylé audio a video (2) vede archiv pouze odkazem a v tomto souboru nejsou; jejich metadata najdete v index.json a corpus.jsonl. Samostatně jsou vedeny kratší příspěvky ze sociálních sítí (26), psané převážně anglicky. Mají vlastní stránku https://meta-analysis.cz/komentare/posts/ a v index.json i corpus.jsonl jsou označeny jako genre=social_post.
+Tento soubor obsahuje text všech položek, u nichž archiv text drží (225 z celkem 227), u naprosté většiny v plném znění; výjimkou jsou položky označené v index.json jako publisher_excerpt (2), kde je uložena jen volně dostupná ukázka, a author_manuscript (20), kde jde o autorskou verzi, která se může lišit od otištěné. Část položek je audio a video. Tam, kde archiv má přepis, je text v tomto souboru a položka nese status machine_transcript (15), tedy strojový přepis nahrávky, nebo publisher_transcript (1), tedy přepis vydaný samotnou stanicí. Zbylé audio a video (2) vede archiv pouze odkazem a v tomto souboru nejsou; jejich metadata najdete v index.json a corpus.jsonl. Samostatně jsou vedeny kratší příspěvky ze sociálních sítí (26), psané převážně anglicky. Mají vlastní stránku https://meta-analysis.cz/komentare/posts/ a v index.json i corpus.jsonl jsou označeny jako genre=social_post.
 
 ---
 
@@ -2054,6 +2054,34 @@ O ekonomii se dříve říkalo, že je to pochmurná věda. Ale já mám ze svý
 Od průmyslové revoluce se životní úroveň v Čechách zvedla třicetinásobně. Jsme bohatší, zdravější, žijeme v bezpečnějším světě, máme více volného času, méně pracujeme, máme více lesů. To jsou měřitelná fakta, která jsou pravdivá a díky kterým můžeme říct, že k pokroku skutečně dochází. A z toho plyne optimismus, který ekonomové sdílí. Výzvy v oblasti životního prostředí a změny klimatu mají jasná technická řešení. Je důležité si uvědomit, že přes dílčí problémy celkově žijeme v krásném světě plném příležitostí, což bychom měli zdůrazňovat našim dětem.
 
 Zuzana Havránková se věnuje tématům spojeným s mezinárodním obchodem, trhem práce, energetickou ekonomií a metaanalýzou. V roce 2018 získala docenturu, letos profesuru. V roce 2010 ji Světová banka ocenila medailí za výzkum a vývoj, v roce 2018 získala Cenu Kateřiny Šmídkové udělovanou Českou společností nejlepším českým ženám ekonomkám. Vyznamenaly ji také ministerstvo školství nebo Česká i Slovenská národní banka. Působí jako editorka Journal of Economic Surveys odpovědná za metaanalýzu. Podle databáze RePEc patří mezi 100 nejvlivnějších ekonomek na světě. Letos se stala affiliate výzkumnicí centra METRICS při Stanford University (USA); tři měsíce strávila na University of Canterbury na Novém Zélandu. Je členkou Rady pro rovné příležitosti UK.
+
+---
+
+## Projev jménem nově jmenovaných profesorek a profesorů
+
+*Velká aula Karolina, 16. června 2025. Zuzana Havránková.*
+
+Zdroj: https://meta-analysis.cz/komentare/zi-projev-karolinum/
+
+Vážený pane prezidente, vážený pane ministře, vážená paní předsedkyně, vážená paní rektorko, vážené kolegyně, vážení kolegové, dámy a pánové,
+
+je mi ctí mluvit tu dnes jménem nově jmenovaných profesorů a profesorek. Děkujeme za důvěru, za trpělivost a v neposlední řadě také za všechny hlasy na vědeckých radách, bez nichž bychom se profesory stát nemohli. Děkujeme také panu prezidentovi za podpis, který – jak víme – nebýval v minulosti vždy samozřejmostí.
+
+Děkujeme svým kolegům za spolupráci a za tiché pochopení, když místo fakultního semináře občas řešíme horečku dětí, pohmožděný kotník nebo ztracený školní batoh. Děkujeme studentům – hlavně těm, kteří se nebojí dávat těžké otázky. Díky nim si neustále připomínáme, že výuka není jednosměrné předávání znalostí, ale rozhovor.
+
+A samozřejmě osobně chci poděkovat své rodině – svému muži a našim čtyřem dětem. Bez jejich podpory, smíchu, ale občas i chaosu a slz bych tu dnes před vámi nestála. A promiňte, děti, že jsem tolik domácího času z posledních let strávila ve své pracovně. Zkusím se zlepšit, ale vy víte, že v tomhle mám slabou paměť a vůli. Tak mi to prosím raději připomínejte.
+
+Pokud mohu k naší budoucí profesní dráze říct tři věci:
+
+Zaprvé: kvalitní věda se nerovná prostému součtu publikací s vysokým impakt faktorem a počtu citací. Kvantitativní statistiky jsou užitečné, ale důležitější je samotná podstata výzkumu, jestli máme co říct těm nejlepším v našem oboru – i když třeba pracují deset časových pásem od nás.
+
+Zadruhé: ano, jsme profesoři. Ale zároveň jsme všichni specialisté v úzkých oborech. Podání ruky s panem prezidentem z nás nedělá experty na všechno. Klíčové společenské otázky vyžadují spolupráci nás všech; nevystačí si sám profesor ekonomie, medicíny, nebo biologie. A věřím, že právě otevřenost a respekt mezi obory mohou pomoci obnovit důvěru veřejnosti ve vědu. Bez přehánění a bez vyvyšování toho „našeho“.
+
+Zatřetí: snažme se o rovné příležitosti na univerzitách i mimo ně, ale i tady bez přehánění a kompenzování. Rozhodování o přijetí, povyšování nebo grantových příležitostech by nemělo pohlaví či orientaci dotyčného brát v potaz. Stane-li se tak, nebudeme ani my ženy vědět, zda jsme si úspěch zasloužily tím, co děláme a jak se snažíme, nebo tím, jak jsme se narodily.
+
+Na závěr mi nezbývá než poděkovat za tenhle krásný den, který svou milou přítomností ozdobil pan prezident. I to nám mohou naši předchůdci závidět – alespoň tedy já vím, že mi to závidí manžel.
+
+Děkuji vám za pozornost.
 
 ---
 

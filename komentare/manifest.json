@@ -5,10 +5,10 @@
  "newest_record": "2026-10-01",
  "temporal_coverage": "2009-08-18/2026-10-01",
  "records": {
-  "total": 252,
+  "total": 253,
   "by_text_status": {
    "author_manuscript": 20,
-   "published_full_text": 204,
+   "published_full_text": 205,
    "correspondence": 6,
    "machine_transcript": 15,
    "unpublished_manuscript": 2,
@@ -17,7 +17,7 @@
    "publisher_excerpt": 2
   },
   "by_section": {
-   "Celostátní komentáře": 84,
+   "Celostátní komentáře": 85,
    "Litomyšlské sloupky": 63,
    "Rozhovory": 53,
    "In English": 26,
@@ -45,28 +45,28 @@
  "files": {
   "corpus.jsonl": {
    "url": "https://meta-analysis.cz/komentare/corpus.jsonl",
-   "bytes": 2182721,
-   "sha256": "a4eef31a9fa818daa38e61391c3fc255f515e3d82d577f48361b1001fbd06765"
+   "bytes": 2186865,
+   "sha256": "a49ba27dce67d7fa6e3196ebd9c530c068d2011aa644e3913c5eb03b4c4a724f"
   },
   "index.json": {
    "url": "https://meta-analysis.cz/komentare/index.json",
-   "bytes": 2203712,
-   "sha256": "060a08a421514ff8f5b3aca2a8f2e96ed3b991ca659a1559439bf3a00359cb3a"
+   "bytes": 2207984,
+   "sha256": "d3a0e2e5405903c19e1c37cabd77cc313ced752178633c8f8b6c9514a9a12c57"
   },
   "all.md": {
    "url": "https://meta-analysis.cz/komentare/all.md",
-   "bytes": 1963292,
-   "sha256": "68ac7cb2bd8b3eebe68309e911241fd34773887c5241bc28912ba7f1d95515f3"
+   "bytes": 1966309,
+   "sha256": "18b0a84b6d4cabedb26494923d9017d894e4bb3b3ad4dcecc8adbc9e82a50444"
   },
   "llms.txt": {
    "url": "https://meta-analysis.cz/komentare/llms.txt",
-   "bytes": 47760,
-   "sha256": "3728b28e459637afb8fa1475d5b15ad8431c1d319e0286650b6281616471d666"
+   "bytes": 47922,
+   "sha256": "a69afa967bd7591f78d9772fe797b7729f0d7d388aa7d710435296d34776afe8"
   },
   "feed.xml": {
    "url": "https://meta-analysis.cz/komentare/feed.xml",
-   "bytes": 2148877,
-   "sha256": "c773040dde8eebbeaeebe01a8e87db8e8a8327d61f262b3d1b8ccf0566a0527d"
+   "bytes": 2152228,
+   "sha256": "7bb672844851fef9bb144d8ecb75615dc0ef30bfeeece52d176cbe560226b416"
   }
  },
  "generated_from": [

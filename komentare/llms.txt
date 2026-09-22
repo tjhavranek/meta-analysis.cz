@@ -2,7 +2,7 @@
 
 > Publicistika Tomáše Havránka a Zuzany Havránkové: komentáře pro celostátní média, sloupky pro litomyšlskou Lilii, rozhovory, stanoviska poradce bankovní rady ČNB a kratší příspěvky ze sítí. Texty jsou zde archivovány v plném znění s odkazem na původní vydání.
 
-Publicistika: 226 položek a 26 kratších příspěvků ze sítí (252 záznamů celkem), 2009–2026. Plné znění každého textu je na uvedené adrese; zdrojový Markdown položek je v /komentare/src/ (příspěvky ze sítí zdrojový soubor nemají). Licence: CC BY 4.0, jako vše na meta-analysis.cz; u převzatých textů uveďte i původní vydání.
+Publicistika: 227 položek a 26 kratších příspěvků ze sítí (253 záznamů celkem), 2009–2026. Plné znění každého textu je na uvedené adrese; zdrojový Markdown položek je v /komentare/src/ (příspěvky ze sítí zdrojový soubor nemají). Licence: CC BY 4.0, jako vše na meta-analysis.cz; u převzatých textů uveďte i původní vydání.
 
 ## Celostátní komentáře
 
@@ -14,6 +14,7 @@ Komentáře a sloupky pro celostátní média — měnová politika, inflace, ve
 - [Jedna AI nestačí, nechte modely spolu bojovat](https://meta-analysis.cz/komentare/jedna-ai-nestaci/) — Hospodářské noviny, 31. prosince 2025
 - [Babiš si vezme stamiliardy z ČNB. Zůstane národní banka nezávislá?](https://meta-analysis.cz/komentare/babis-stamiliardy-cnb-nezavislost/) — Seznam Zprávy, 9. října 2025
 - [Návod pro dlužníky a střadatele, jak přežít dluh větší než ekonomika](https://meta-analysis.cz/komentare/navod-pro-dluzniky-a-stradatele/) — Seznam Zprávy, 12. července 2025
+- [Projev jménem nově jmenovaných profesorek a profesorů](https://meta-analysis.cz/komentare/zi-projev-karolinum/) — Velká aula Karolina, 16. června 2025
 - [„Pátek pro planetu“ ve školních jídelnách Zemi nepomůže a dětem uškodí](https://meta-analysis.cz/komentare/patek-pro-planetu-skolni-jidelny/) — Seznam Zprávy, 14. března 2025
 - [Osobní pohled na Mojmíra Hampla](https://meta-analysis.cz/komentare/e15-hampl/) — E15, 13. března 2025
 - [Naděje na cenovou stabilitu? Do ČNB se vrací nezávislý výzkum](https://meta-analysis.cz/komentare/nadeje-na-cenovou-stabilitu-cnb-vyzkum/) — Seznam Zprávy, 6. prosince 2024
