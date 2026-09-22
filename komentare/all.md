@@ -38,9 +38,9 @@ Zdroj: https://www.seznamzpravy.cz/clanek/ekonomika-byznys-rozhovory-ekonom-popi
 
 Vítejte ve studiu.
 
-**Tomáš Havránek:** Dobrý den, díky za pozvání. Schodek státního rozpočtu České republiky na rok 2027 činí zhruba 389 miliard korun aktuálně. Česká ekonomika při tom roste.
+**Tomáš Havránek:** Dobrý den, díky za pozvání.
 
-Co si o tom myslíte?
+**Jiří Zatloukal:** Schodek státního rozpočtu České republiky na rok 2027 činí zhruba 389 miliard korun aktuálně. Česká ekonomika při tom roste. Co si o tom myslíte?
 
 **Tomáš Havránek:** No, my bychom asi všichni chtěli, aby ten schodek byl nižší. Samozřejmě vy víte, že já bych chtěl, aby třeba i inflace byla nulová, ale asi mi to nebude úplně dáno. Tomu se dostaneme. Když to srovnáme s tím, řekněme, že by volby dopadly jinak.
 
@@ -4175,7 +4175,9 @@ A potom i vždycky se snažíme tím, že mám i tu výuku magisterského semin�
 
 **Zuzana Havránková:** Věděla jsem od začátku toho doktorátu, i když ono se to tak jako v průběhu těch studií bakaláře a magistra krystalizovalo. A myslím, že taková největší krystalizace, která proběhla, tak byla právě v těch Helsinkách, protože tam jsme se dostali k profesorovi Ilmakunnasovi na úplně běžném předmětu, který je tam vyučován pro všechny ty zahraničné studenty. Empirická analýza, nějaké ekonometrické zpracování, různých věcí. A ten nás představil něčemu, čemu se říká metaanalýza.
 
-A z toho vznikla seminární práce, z toho vznikla moje první publikace, která byla recenzovaná a z toho jsme se tak nějak jako vykrystalizovali do toho, co děláme dnes, což je ta metaanalýza. **Alice Němcová Tejkalová:** Kdyby jsi nám ji měla přiblížit lidem, kteří se nevěnují ekonomii, co přesně děláte.
+A z toho vznikla seminární práce, z toho vznikla moje první publikace, která byla recenzovaná a z toho jsme se tak nějak jako vykrystalizovali do toho, co děláme dnes, což je ta metaanalýza.
+
+**Alice Němcová Tejkalová:** Kdyby jsi nám ji měla přiblížit lidem, kteří se nevěnují ekonomii, co přesně děláte.
 
 **Zuzana Havránková:** Ano, tak metaanalýza je celkem jako takový mezioborový pojem. Je to v podstatě kvantitativní shrnutí literatury.
 
@@ -4205,7 +4207,9 @@ To znamená, že většina těch výzkumníků ty pozitivní výsledky nereportu
 
 **Zuzana Havránková:** jednotlivých výzkumníků. Jakoby není to tak, že bychom tvrdili, že někdo podvádí nebo někdo jako schválně něco zamlčuje. Není to vůbec o tom. Ten náš úkol jako metaanalytiků je prostě přijít na to, jestli tam je nějaký problém a potom ho opravit.
 
-A na základě toho, jak vypadá ten statistický vzorek, na základě nějakých určitých statistických předpokladů, my to dokážeme určit. Takže to je takový... **Alice Němcová Tejkalová:** Ale musí to být i relativně nepopulární pozici, někdy není?
+A na základě toho, jak vypadá ten statistický vzorek, na základě nějakých určitých statistických předpokladů, my to dokážeme určit. Takže to je takový...
+
+**Alice Němcová Tejkalová:** Ale musí to být i relativně nepopulární pozici, někdy není?
 
 **Zuzana Havránková:** To je pravda.
 

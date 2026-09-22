@@ -14,9 +14,9 @@ body_note: "Rozhovor pro Seznam Zprávy, ptá se Jiří Zatloukal. Text je stroj
 
 Vítejte ve studiu.
 
-**Tomáš Havránek:** Dobrý den, díky za pozvání. Schodek státního rozpočtu České republiky na rok 2027 činí zhruba 389 miliard korun aktuálně. Česká ekonomika při tom roste.
+**Tomáš Havránek:** Dobrý den, díky za pozvání.
 
-Co si o tom myslíte?
+**Jiří Zatloukal:** Schodek státního rozpočtu České republiky na rok 2027 činí zhruba 389 miliard korun aktuálně. Česká ekonomika při tom roste. Co si o tom myslíte?
 
 **Tomáš Havránek:** No, my bychom asi všichni chtěli, aby ten schodek byl nižší. Samozřejmě vy víte, že já bych chtěl, aby třeba i inflace byla nulová, ale asi mi to nebude úplně dáno. Tomu se dostaneme. Když to srovnáme s tím, řekněme, že by volby dopadly jinak.
 
