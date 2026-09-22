@@ -7,9 +7,8 @@ date: "2022-08-15"
 headline: "Za vysokou inflaci může špatná politika centrální banky"
 byline: "Tomáš Havránek"
 interviewer: "Jan Bumba"
-body_note: "Interview Plus na Českém rozhlase Plus, ptal se Jan Bumba. Text je strojový přepis řeči z nahrávky (model Whisper large-v3-turbo). Kdo co říká, je určeno podle hlasu; hlasové vzorky obou mluvčích pocházejí z této nahrávky, z míst, kde je mluvčí jistý z obsahu. Výsledek souhlasí se čtyřmi výroky, které Český rozhlas sám ve svém článku označil za Havránkovy. Opraveno bylo 55 zjevných přeslechů — jména, hranice slov a tvary, kde je správné znění jisté. Význam, čísla ani míra opatrnosti ve formulacích se neměnily; nejistá místa zůstala tak, jak je přepis zachytil. Srovnání s citacemi v článku Českého rozhlasu ukazuje, jak se tištěná citace liší od nahrávky: stanice slova pořádá a zkracuje. Tento text je přepis nahrávky, nikoli přepis článku. Mluvená řeč obsahuje nedokončené věty a opakování — nejde o psaný text."
+body_note: "Interview Plus na Českém rozhlase Plus, ptal se Jan Bumba. Text je strojový přepis řeči z nahrávky (model Whisper large-v3-turbo). Kdo co říká, je určeno podle hlasu; hlasové vzorky obou mluvčích pocházejí z této nahrávky, z míst, kde je mluvčí jistý z obsahu. Výsledek souhlasí se čtyřmi výroky, které Český rozhlas sám ve svém článku označil za Havránkovy. Opraveno bylo 55 zjevných přeslechů — jména, hranice slov a tvary, kde je správné znění jisté. Význam, čísla ani míra opatrnosti ve formulacích se neměnily; nejistá místa zůstala tak, jak je přepis zachytil. Srovnání s citacemi v článku Českého rozhlasu ukazuje, jak se tištěná citace liší od nahrávky: stanice slova pořádá a zkracuje. Tento text je přepis nahrávky, nikoli přepis článku. Text prošel lehkou úpravou, jaká je u publikovaných přepisů obvyklá: odstraněna zjevná přeřeknutí a opakování slov. Čísla, zápory ani míra opatrnosti ve formulacích se přitom neměnily a nic nebylo doplněno. Mluvená řeč obsahuje nedokončené věty — nejde o psaný text."
 ---
-
 **Jan Bumba:** Inflace se stala kvůli svým současným enormním hodnotám jedním z nejskloňovanějších slov letošního roku. Ekonomové připouštějí, že předpovídat její další vývoj je krajně obtížné, málokdo ale vidí situaci optimisticky. Spíše se všeobecně očekává delší období, po které porostou ceny a naspořené peníze budou ztrácet hodnotu. Mnoho lidí přijímá tento stav podobně jako přírodní katastrofu, která se na nás snesla a nezbývá, než vyčkat, až se tahle velká voda převalí.
 
 Jsme proti inflaci opravdu tak bezbraní. A pokud nyní peníze hodnotu ztratí, znamená to, že už ji nikdy nemůžou získat zpátky? Dobrý poslech přeje Jan Bumba. Hostem interview je dnes profesor ekonomie z Institutu ekonomických studií Fakulty sociálních věd Univerzity Karlovy a také bývalý poradce Bankovní rady České národní banky Tomáš Havránek.
@@ -30,7 +29,7 @@ Prostě se to přihnalo a my to musíme nějak vydržet?
 
 **Tomáš Havránek:** Ano, ten cíl jsou dvě procenta, čili z dnešního pohledu by to byla samozřejmě hodnota naprosto krásná, dvě procenta oproti dvaceti, aktuálně sedmnáct a půl, ale ta prognóza opravdu je Národní banky, kvůli dvaceti procent na začátku podzimu. Ale ono to s tím souvisí, protože když ta Národní banka vám negarantuje, jakou hodnotu budou peníze mít za pět nebo deset let, tak vy nemáte jistotu. Vy naopak máte velkou nejistotu, ohledně toho, co s penězi můžete dělat. V dnešní době, když člověk má nějaké peníze, tak vlastně má dvě možnosti, co s tím udělat.
 
-Buď je utratíte, protože jinak vám ta inflace požere, ale tím znova tu inflaci živíte tím zvyšováním poptávky a nebo je vložíte do něčeho, co je reálné, jako třeba nemovitostí, ale tím vytváříte potom tu bublinu nemovitostí. A díky té nejistotě vy vlastně i krátkodobé výkyvy v inflaci berete, víte, víte, že ta Národní banka ho neopraví, nenechá zase deflací, nějakou mírnou v průběhu třeba v deseti let, ty ceny klesnout v průměru zpátky na tu původní úroveň. A hledáte tedy alternativní cesty. Čili buď ty peníze utratit, protože nemáte vlastně nějakou šanci na to spořením její hodnotu zachovat, anebo je vložit do něčeho, čím se utáříte ty bubliny.
+Buď je utratíte, protože jinak vám ta inflace požere, ale tím znova tu inflaci živíte tím zvyšováním poptávky a nebo je vložíte do něčeho, co je reálné, jako třeba nemovitostí, ale tím vytváříte potom tu bublinu nemovitostí. A díky té nejistotě vy vlastně i krátkodobé výkyvy v inflaci berete, víte, že ta Národní banka ho neopraví, nenechá zase deflací, nějakou mírnou v průběhu třeba v deseti let, ty ceny klesnout v průměru zpátky na tu původní úroveň. A hledáte tedy alternativní cesty. Čili buď ty peníze utratit, protože nemáte vlastně nějakou šanci na to spořením její hodnotu zachovat, anebo je vložit do něčeho, čím se utáříte ty bubliny.
 
 **Jan Bumba:** Když zůstaneme chviličku o té aktuální situace a té možná až 20% inflace na podzim, vedou se debaty o tom, jestli to je inflace dovezená, hlavně přes vysoké ceny plynu, anebo jestli je to vnitřní poptávková inflace. Na které straně stojíte vy?
 
@@ -40,7 +39,7 @@ Buď je utratíte, protože jinak vám ta inflace požere, ale tím znova tu inf
 
 Za to byla kritizovaná.
 
-**Jan Bumba:** A pardon, že do toho vstupují, ale o tom se zase tak moc nemluví. Tedy samotní analytici centrální banky doporučovali bankovní radě, aby rychleji zvyšovala úrokové sazby. Ano, ano. A ten důvod, proč se tak nedělo?
+**Jan Bumba:** A pardon, že do toho vstupují, ale o tom se zase tak moc nemluví. Tedy samotní analytici centrální banky doporučovali bankovní radě, aby rychleji zvyšovala úrokové sazby. Ano. A ten důvod, proč se tak nedělo?
 
 **Tomáš Havránek:** Tak asi to byla přehnaná opatrnost z dnešního pohledu, ale tu se pak bylo nutné dohánět těmi ještě daleko silnějšími, takzvanými hajky, čili zvyšování těch sazeb. Abych ten dopověděl, tak vlastně to velké zvyšování sazeb vyvolalo kritiku ze strany vlády a řady analytiků, i když je samozřejmě chválu, ale kritiku ze strany vlády, která byla hodně hlasitá tehdy. A ta Národní banka pro mě z nepochopitelných důvodů začala se obhajovat, ale tak velice pasivně. Ona začala vlastně říkat, že my to musíme dělat, protože inflace bude hrozně veliká.
 
@@ -50,7 +49,7 @@ My s tím teď už nic neuděláme, ale příští rok nebo za rok a půl se zas
 
 **Tomáš Havránek:** Já tomu věřím, zase nejsem sám. Když se podíváte na oficiální analýzy Národní banky, tak tam jim vychází, že takové ty fundamentální faktory, jako kolik mají lidé peněz před pandemií, po pandemii, vysvětlují zhruba třetinu té naší zvýšené inflace oproti zbytku Evropy. Čili ty dvě třetiny jsou primárně psychologického původu. A pokud můžeme spekulovat, odkud ta psychologie šla, nepochybně jedna z těch zdrojů, byla, řekněme ne, úplně dobrá komunikace Národní banky.
 
-A taková, jaksi, apokalyptická, řekněme.
+A taková, apokalyptická, řekněme.
 
 **Jan Bumba:** Hostem interview je dnes profesor ekonomie na Karlově univerzitě, bývalý poradce Bankovní rady České národní banky Tomáš Havránek. Posloucháte Interview Plus. Rozhovory s významnými lidmi, kteří mají vliv. cz, v aplikaci Můj rozhlas, v podcastových aplikacích a video na našem profilu na YouTube.
 

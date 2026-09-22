@@ -8,9 +8,8 @@ headline: "Inflaci můžeme kdykoliv zrušit, centrální banky včetně té če
 byline: "Tomáš Havránek"
 interviewer: "Martin Veselovský"
 same_recording: "dvtv-zemetreseni-v-cnb"
-body_note: "Rozhovor pro DVTV, ptá se Martin Veselovský. Text je strojový přepis řeči z nahrávky (model Whisper large-v3-turbo). Kdo co říká, je určeno podle hlasu; vzorky obou mluvčích pocházejí z této nahrávky, z míst, kde je mluvčí jistý z obsahu. Dvě věty, které přepis přiřadil nesprávně, vrátila na místo kontrola opřená o mluvnickou osobu a o to, co na ně odpovídá. Opraveno bylo 62 zjevných přeslechů — jména, hranice slov a tvary, kde je správné znění jisté. Význam, čísla ani míra opatrnosti ve formulacích se neměnily; nejistá místa zůstala tak, jak je přepis zachytil. Rozhovor je rychlý a moderátor často vstupuje krátkými poznámkami; u těch nelze mluvčího vždy určit. Na jednom místě v nahrávce zřejmě chybí zápor, takže věta o dlouhodobém dopadu říká opak toho, co z okolního výkladu plyne — ponecháno tak, jak přepis zachytil. Dvě opravy zůstaly neprovedené, protože by dosazovaly slova, která v nahrávce nezazněla. Mluvená řeč obsahuje nedokončené věty a opakování — nejde o psaný text."
+body_note: "Rozhovor pro DVTV, ptá se Martin Veselovský. Text je strojový přepis řeči z nahrávky (model Whisper large-v3-turbo). Kdo co říká, je určeno podle hlasu; vzorky obou mluvčích pocházejí z této nahrávky, z míst, kde je mluvčí jistý z obsahu. Dvě věty, které přepis přiřadil nesprávně, vrátila na místo kontrola opřená o mluvnickou osobu a o to, co na ně odpovídá. Opraveno bylo 62 zjevných přeslechů — jména, hranice slov a tvary, kde je správné znění jisté. Význam, čísla ani míra opatrnosti ve formulacích se neměnily; nejistá místa zůstala tak, jak je přepis zachytil. Rozhovor je rychlý a moderátor často vstupuje krátkými poznámkami; u těch nelze mluvčího vždy určit. Na jednom místě v nahrávce zřejmě chybí zápor, takže věta o dlouhodobém dopadu říká opak toho, co z okolního výkladu plyne — ponecháno tak, jak přepis zachytil. Dvě opravy zůstaly neprovedené, protože by dosazovaly slova, která v nahrávce nezazněla. Text prošel lehkou úpravou, jaká je u publikovaných přepisů obvyklá: odstraněna zjevná přeřeknutí a opakování slov. Čísla, zápory ani míra opatrnosti ve formulacích se přitom neměnily a nic nebylo doplněno. Mluvená řeč obsahuje nedokončené věty — nejde o psaný text."
 ---
-
 **Martin Veselovský:** Hostem DVTV ekonom a bývalý poradce viceguvernéra České národní banky Tomáš Havránek. Dobrý den. Dobrý den. V reakci na jmenování Aleše Michla novým guvernérem České národní banky začala oslabovat koruna.
 
 To se začalo dít včera. První věcí, kterou tedy Centrální banka po tom včerejším jmenování musela udělat, byla intervence na devizovém trhu a posílení koruny pod 25 korun za euro. Jak vy sám tenhle vzkaz trhu čtete?
@@ -55,7 +54,7 @@ A dvouciferné sazby dnes by znamenaly bankrot řady subjektů v té zemi. To pr
 
 **Martin Veselovský:** Jenom pardon, abych uzavřel tedy kapitolu našeho rozhovoru nazvanou Aleš Michl, tak vy prostě doufáte, že až bude guvernérem, tak nebude dělat reálně takové věci, o kterých teď spíš retoricky hodně mluví.
 
-**Tomáš Havránek:** a mít nějakou naději, že to bude lepší, protože samozřejmě ten černý scénář by byl velmi špatný pro nás. No, pro mě osobně mám velkou hypotéku, takže pokud inflace bude 20%, 30%, tak vlastně na tom vydělávám. Ale ta dlouhodobě pro nás všechny, pro naše děti, to samozřejmě dobrá věc, dobrá věc není.
+**Tomáš Havránek:** a mít nějakou naději, že to bude lepší, protože samozřejmě ten černý scénář by byl velmi špatný pro nás. No, pro mě osobně mám velkou hypotéku, takže pokud inflace bude 20%, 30%, tak vlastně na tom vydělávám. Ale ta dlouhodobě pro nás všechny, pro naše děti, to samozřejmě dobrá věc není.
 
 **Martin Veselovský:** To znamená, když se vrátím zpátky k inflaci, to znamená asi k tématu číslo jedna teď v tuhle chvíli, tak Česko ten boj s inflací prohrává
 
@@ -135,7 +134,7 @@ Tak jestli prostě nezbytně musel přijít a Česká národní banka akorát m�
 
 **Tomáš Havránek:** Centrální banka je ten, kdo ve finále odpovídá za tu inflaci. Samozřejmě nemůže za válku, ale ta inflace byla nebo cifrná před tou válkou. Nemůže za COVID, ale znamená to selhání. Ale to selhání není naše tuzemské.
 
-To selhání obecně jako všech centrálních bank, většiny z nich, kromě toho Švýcarska možná. A já, jak vy jste naznačil nebo správně řekli, já často kritizuju vedení ČNB možná neúplně korektně v tom, že opravdu v tom mezinárodním srovnání oni si vedou dobře. Zvyšovali sazby, podle mě to není úplně ten nejefektivnější způsob, ale aspoň něco dělali, dělali to brzo. Bohužel nepovedlo se jim to celkově.
+To selhání obecně jako všech centrálních bank, většiny z nich, kromě toho Švýcarska možná. A já, jak vy jste naznačil nebo správně řekli, já často kritizuju vedení ČNB možná neúplně korektně v tom, že opravdu v tom mezinárodním srovnání oni si vedou dobře. Zvyšovali sazby, podle mě to není úplně ten nejefektivnější způsob, ale aspoň něco dělali to brzo. Bohužel nepovedlo se jim to celkově.
 
 Ten obrázek jednak komunikační, jednak nepoužili kurz. A to možná přispělo i k tomu vlastně zemětřesení v ČNB, které nastane. Které bude naprosto, které bude bez precedentu.
 

@@ -7,9 +7,8 @@ date: "2023-08-03"
 headline: "Pro a proti: Zvládá ČNB dlouhodobě boj s inflací?"
 byline: "Tomáš Havránek"
 interviewer: "Lukáš Matoška"
-body_note: "Pro a proti na Českém rozhlase Plus, moderuje Lukáš Matoška. Debata dvou ekonomů — Tomáše Havránka ve studiu a Miroslava Singera na dálku. Text je strojový přepis řeči z nahrávky (model Whisper large-v3-turbo). Kdo co říká, je určeno podle hlasu, s vzorky všech tří mluvčích pořízenými z této nahrávky. Že se oba ekonomové skutečně rozlišili, potvrzují citace v článku Českého rozhlasu: tři, které stanice přiřadila jmenovitě, sedí na správném mluvčím, žádná nesedí špatně. Opraveno bylo 53 zjevných přeslechů — jména, hranice slov a tvary, kde je správné znění jisté. Význam, čísla ani míra opatrnosti ve formulacích se neměnily; nejistá místa zůstala tak, jak je přepis zachytil. Miroslav Singer mluvil po telefonní lince, která se v 199. vteřině přerušila a obnovila se až po třech minutách; jeho hlas proto zní v pořadu ve dvou různých podobách. Šest míst zůstalo tak, jak je přepis zachytil, protože je bez poslechu nelze rozhodnout. Úvodní odpověď Miroslava Singera a moderátorova otázka „Pane Havránku, váš pohled?“ v přepisu chyběly, takže se zdálo, že na otázku určenou Singerovi odpovídá Havránek; obojí je doplněno. Mluvená řeč obsahuje nedokončené věty a opakování — nejde o psaný text."
+body_note: "Pro a proti na Českém rozhlase Plus, moderuje Lukáš Matoška. Debata dvou ekonomů — Tomáše Havránka ve studiu a Miroslava Singera na dálku. Text je strojový přepis řeči z nahrávky (model Whisper large-v3-turbo). Kdo co říká, je určeno podle hlasu, s vzorky všech tří mluvčích pořízenými z této nahrávky. Že se oba ekonomové skutečně rozlišili, potvrzují citace v článku Českého rozhlasu: tři, které stanice přiřadila jmenovitě, sedí na správném mluvčím, žádná nesedí špatně. Opraveno bylo 53 zjevných přeslechů — jména, hranice slov a tvary, kde je správné znění jisté. Význam, čísla ani míra opatrnosti ve formulacích se neměnily; nejistá místa zůstala tak, jak je přepis zachytil. Miroslav Singer mluvil po telefonní lince, která se v 199. vteřině přerušila a obnovila se až po třech minutách; jeho hlas proto zní v pořadu ve dvou různých podobách. Šest míst zůstalo tak, jak je přepis zachytil, protože je bez poslechu nelze rozhodnout. Úvodní odpověď Miroslava Singera a moderátorova otázka „Pane Havránku, váš pohled?“ v přepisu chyběly, takže se zdálo, že na otázku určenou Singerovi odpovídá Havránek; obojí je doplněno. Text prošel lehkou úpravou, jaká je u publikovaných přepisů obvyklá: odstraněna zjevná přeřeknutí a opakování slov. Čísla, zápory ani míra opatrnosti ve formulacích se přitom neměnily a nic nebylo doplněno. Mluvená řeč obsahuje nedokončené věty — nejde o psaný text."
 ---
-
 **Lukáš Matoška:** Inflace v Česku sice postupně klesá, pořád se ale drží hodně vysoko, těsně pod 10%. Bankovní rada České národní banky dnes rozhoduje, jak bude s inflací bojovat dál. Všeobecně se očekává, že úrokové sazby nezmění. Nechává je na stejné úrovni už přes rok.
 
 Podobně jako jiné, centrální banky i ta česká usiluje o to, aby inflace klesla ke dvouprocentnímu cíli. Je to správný přístup? Pro a proti Lukáše Matošky. A našimi hosty k tomuhle tématu jsou bývalý guvernér České národní banky, dnes hlavní ekonom Generali CEE Holding Miroslav Singer.
@@ -38,7 +37,7 @@ Pane Havránku, co by tedy Česká Národní banka podle vás měla dělat zása
 
 **Lukáš Matoška:** Tedy boj proti klesání cen, to je to, co máte na mysli?
 
-**Tomáš Havránek:** Ano, opak, opak inflace.
+**Tomáš Havránek:** Ano, opak inflace.
 
 Ale proti vysoké inflaci už my tak agresivně nebojujeme. To znamená, že když, pokud bychom se i shodli na tom, že dvouprocentní cíl inflace, o který se ta banka snaží, je správný, tak ona ho v budoucnosti nesplní. Protože my vidíme, že vlastně máme záklopku na inflaci zespodu na té nule, ale ze zhora ta záklopka není. To znamená, že pokud člověk aspoň trošku rozumně uvažuje a sleduje to chování centrální banky, tak musí vidět, že v průměru ta inflace bude větší než dva, díky tomuhle omezení ze zdola.
 
@@ -92,7 +91,7 @@ A jde o to, že u nás se ta změna dá udělat jednodušeji. Ten impuls inovace
 
 **Lukáš Matoška:** Cenovou stabilitou. K tomu, jak by se to podle vás dalo udělat, se ještě dostaneme. Teď se obracím na vás, pane Singře, a zajímalo by mě, jestli by nebylo vhodnější, aby Česká národní banka měla inflační cíl nulu, tedy aby usilovala
 
-**Miroslav Singer:** povede ke změně, ke změně výšší. Přiznám se, že jsem trošku skeptický skeptický k tomu, že bude změněný na nulu právě proto, co říkám, že té hraní si prostě z jevy, které jsme zažili v těch třicátých letech podobně, tý velký. Některé ze mě začnou zkoušet jednoprocentní cíl, který koneckonců myslím, že ve dvou ekonomikách byl. Jedna ekonomika ho opustila a vrátila se, nebo nevrátila se vedla ho.
+**Miroslav Singer:** povede ke změně výšší. Přiznám se, že jsem trošku skeptický skeptický k tomu, že bude změněný na nulu právě proto, co říkám, že té hraní si prostě z jevy, které jsme zažili v těch třicátých letech podobně, tý velký. Některé ze mě začnou zkoušet jednoprocentní cíl, který koneckonců myslím, že ve dvou ekonomikách byl. Jedna ekonomika ho opustila a vrátila se, nebo nevrátila se vedla ho.
 
 Myslím, že to byly Japonci na dvě, když tak mě pan Havránek opraví. Ale myslím, že je to jako tak závažná změna. Já moc nevěřím z praxe, moc nevěřím na to, že by ty racionální očekávání, o kterých lidi především si vytvářejí očekávání ekonomicky. To znamená, v období, kdy inflace je delší, do paň, to netvoří si to očekávání, protože nemají důvod.
 

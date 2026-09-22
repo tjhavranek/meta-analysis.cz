@@ -6,9 +6,8 @@ url: "https://www.e15.cz/podcasty/e15-cast/extremni-opatrnost-cnb-je-ve-vysledku
 date: "2022-02-24"
 headline: "Extrémní opatrnost ČNB je ve výsledku dražší než agresivita"
 byline: "Tomáš Havránek"
-body_note: "Díl podcastu E15cast, ptal se Nikita Poljakov. Text je strojový přepis řeči z nahrávky (model Whisper large-v3-turbo). Kdo co říká, je určeno podle hlasu; hlasové vzorky obou mluvčích pocházejí z této nahrávky, z míst, kde je mluvčí jistý z obsahu. Pořad má ještě třetí hlas — hlasatele, který čte úvodní zprávy a závěr. Vynechán je úvodní zpravodajský blok, který se rozhovoru netýká, a reklamní vstup. Opraveno bylo 62 zjevných přeslechů — jména, hranice slov a tvary, kde je správné znění jisté. Význam, čísla ani míra opatrnosti ve formulacích se neměnily; nejistá místa zůstala tak, jak je přepis zachytil. Čtyři místa zůstala tak, jak je přepis zachytil, protože správné znění nelze určit bez poslechu; jsou vypsána v poznámkách k této práci. Mluvená řeč obsahuje nedokončené věty a opakování — nejde o psaný text."
+body_note: "Díl podcastu E15cast, ptal se Nikita Poljakov. Text je strojový přepis řeči z nahrávky (model Whisper large-v3-turbo). Kdo co říká, je určeno podle hlasu; hlasové vzorky obou mluvčích pocházejí z této nahrávky, z míst, kde je mluvčí jistý z obsahu. Pořad má ještě třetí hlas — hlasatele, který čte úvodní zprávy a závěr. Vynechán je úvodní zpravodajský blok, který se rozhovoru netýká, a reklamní vstup. Opraveno bylo 62 zjevných přeslechů — jména, hranice slov a tvary, kde je správné znění jisté. Význam, čísla ani míra opatrnosti ve formulacích se neměnily; nejistá místa zůstala tak, jak je přepis zachytil. Čtyři místa zůstala tak, jak je přepis zachytil, protože správné znění nelze určit bez poslechu; jsou vypsána v poznámkách k této práci. Text prošel lehkou úpravou, jaká je u publikovaných přepisů obvyklá: odstraněna zjevná přeřeknutí a opakování slov. Čísla, zápory ani míra opatrnosti ve formulacích se přitom neměnily a nic nebylo doplněno. Mluvená řeč obsahuje nedokončené věty — nejde o psaný text."
 ---
-
 **Nikita Poljakov:** A teď už tu vítám ekonoma, akademika Tomáše Havránka. Tomáši, krásný den.
 
 **Tomáš Havránek:** Dobrý den, Nikito, děkuji moc za pozvání a zdravím si to myšle.
@@ -21,7 +20,7 @@ Vy jste ve svých komentářích v minulých týdnech a měsících napsal, že 
 
 A fungovalo to velice dobře, jo. V té době vlastně nebyl žádný průšvih. Ten průšvih, který šil až teď, kdy ta inflace globálně, jo, ale částečně z globálních, částečně z lokálních příčin v těch různých zemích, stoupá tak silně, že to vlastně popírá tu původní mantru toho, že ta inflace je, ty očekávání v té ekonomické antirice inflační jsou dobře ukotvená, že to vlastně funguje. Tohle se nemělo nikdy stát, jo, v té doktríně inflačního cílování.
 
-Čili tohle ukazuje na, když už ne na selhání, tak velké problémy toho, toho, toho frameworku, jo, toho vlastně nastavení. A ukazuje to na potřebu nějakého zamyšlení se nad tím, jestli tohle je opravdu to nejlepší, to jsme schopni vygenerovat pro lidi, pro tu ekonomiku. A jak jste zmiňoval, nikdy to dobře, tak ten audit nebo revizi provedly už i ostatní centrální banky, FED, ECB, Bank of Canada například. Čili není důvod, abychom v takovéhle situaci, kdy opravdu došlo možná k selhání té současné politiky, neměli zamyslet nad tím, jestli bychom to měli dělat lépe.
+Čili tohle ukazuje na, když už ne na selhání, tak velké problémy toho frameworku, jo, toho vlastně nastavení. A ukazuje to na potřebu nějakého zamyšlení se nad tím, jestli tohle je opravdu to nejlepší, to jsme schopni vygenerovat pro lidi, pro tu ekonomiku. A jak jste zmiňoval, nikdy to dobře, tak ten audit nebo revizi provedly už i ostatní centrální banky, FED, ECB, Bank of Canada například. Čili není důvod, abychom v takovéhle situaci, kdy opravdu došlo možná k selhání té současné politiky, neměli zamyslet nad tím, jestli bychom to měli dělat lépe.
 
 **Nikita Poljakov:** A na co byste to zaměřil, pardon, na co byste to zaměřil, když teďko řekněme, že ta priorita, ten hlavní cíl je teda dvouprocentní inflace, řekněme, to je ten ideál. Co vy byste hlídal, kdybyste mohl nově?
 
@@ -87,13 +86,13 @@ Myslím si, že před 12 lety Česna byl snížen inflační cíl ze 3 na 2% bod
 
 Čili my vlastně teď, jak to funguje v té nastavené, tak nutíme populaci jít do rizikových aktiv. Pokud to neudělají, nepochybně prodělají, jo? Ta inflace jim ty úspory požere. Spoření jsme vlastně de facto zabili, jo?
 
-Tímhletím cílováním inflace, které neopravuje svoje chyby. Čili buď alespoň opravujeme ty chyby, abychom měli inflaci v průměru 2%, pokud myslíme, že to je optimální hladina. Nebo je rovnou úplně smažme, jo? To potom je, je to elegantní, je to intuitivní, dá se to vědecky dobře odůvodnit.
+Tímhletím cílováním inflace, které neopravuje svoje chyby. Čili buď alespoň opravujeme ty chyby, abychom měli inflaci v průměru 2%, pokud myslíme, že to je optimální hladina. Nebo je rovnou úplně smažme, jo? To potom je to elegantní, je to intuitivní, dá se to vědecky dobře odůvodnit.
 
 Pojďme se o tom aspoň bavit v rámci toho auditu.
 
 **Nikita Poljakov:** Tahle debata asi předpokládá, teď udělám krok výš nějakou revizi narativu toho, jak funguje Česká národní banka nebo obecně národní banka a v naší provenienci. My jsme asi takovej německej je konzervativnější model. Tady, aby k tomu došlo, tak se musí asi trošičku nebo dost pozměnit způsob, jak uvažujeme o monetární politice, která je teda v tom svým významu prostě politikou také. To znamená předefinovat to,
 
-**Tomáš Havránek:** A nicméně, já si fakt myslím, že ta definice nebo ta redefinice by nemusela být tak velká. To je jako vlastně drobná kalibrace. A často argument pro inflační cíle je, hele, takhle to dělají v zahraničí v Americe v ECB. No jo, jenže tyhle ty velké centrální banky jednak mají obrovskou setrvačnost.
+**Tomáš Havránek:** A nicméně, já si fakt myslím, že ta definice nebo ta redefinice by nemusela být tak velká. To je jako vlastně drobná kalibrace. A často argument pro inflační cíle je, takhle to dělají v zahraničí v Americe v ECB. No jo, jenže tyhle ty velké centrální banky jednak mají obrovskou setrvačnost.
 
 Ty si, že ani to cílování inflace nezavedly jako první, že jo. To zavedly první na Zélandu a v Kanadě. Až hodně dlouho potom, nějakých 15 let, to zavedl Ben Bernanke ve Fedu v Americe. A navíc tyhle banky ani nemají cenovou stabilitu jako hlavní kolo.
 

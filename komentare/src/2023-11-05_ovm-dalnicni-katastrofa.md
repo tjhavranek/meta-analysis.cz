@@ -7,9 +7,8 @@ date: "2023-11-05"
 headline: "Otázky Václava Moravce: Dálniční katastrofa"
 byline: "Tomáš Havránek"
 interviewer: "Václav Moravec"
-body_note: "Nedělní diskusní pořad Otázky Václava Moravce na ČT, 5. listopadu 2023; kromě Tomáše Havránka v něm byli ministr dopravy Martin Kupka a exministr Karel Havlíček. Text je strojový přepis řeči z nahrávky (model Whisper large-v3-turbo). Kdo co říká, vychází ze dvou nezávislých zdrojů: z titulků České televize, které značí střídání mluvčích, a z porovnání hlasu s hlasovým vzorkem pořízeným z pořadů, kde Česká televize autora jmenuje. Oba zdroje se shodly na 92 % úseků; tam, kde se neshodly, text nevydáváme jako něčí slova. Zde jsou autorovy odpovědi a otázky, které mu byly položeny; pasáže s ostatními hosty tu nejsou a najdete je v původním záznamu. Místo, kde je něco vynecháno, je v textu označeno. Opraveno bylo 53 zjevných přeslechů — jména, hranice slov a tvary, kde je správné znění jisté. Význam, čísla ani míra opatrnosti ve formulacích se neměnily; nejistá místa zůstala tak, jak je přepis zachytil. Titulky České televize nejsou doslovné — na stejných úsecích obsahují 76 % vyřčených slov — proto text pochází z nahrávky, nikoli z nich. Mluvená řeč obsahuje nedokončené věty a opakování — nejde o psaný text."
+body_note: "Nedělní diskusní pořad Otázky Václava Moravce na ČT, 5. listopadu 2023; kromě Tomáše Havránka v něm byli ministr dopravy Martin Kupka a exministr Karel Havlíček. Text je strojový přepis řeči z nahrávky (model Whisper large-v3-turbo). Kdo co říká, vychází ze dvou nezávislých zdrojů: z titulků České televize, které značí střídání mluvčích, a z porovnání hlasu s hlasovým vzorkem pořízeným z pořadů, kde Česká televize autora jmenuje. Oba zdroje se shodly na 92 % úseků; tam, kde se neshodly, text nevydáváme jako něčí slova. Zde jsou autorovy odpovědi a otázky, které mu byly položeny; pasáže s ostatními hosty tu nejsou a najdete je v původním záznamu. Místo, kde je něco vynecháno, je v textu označeno. Opraveno bylo 53 zjevných přeslechů — jména, hranice slov a tvary, kde je správné znění jisté. Význam, čísla ani míra opatrnosti ve formulacích se neměnily; nejistá místa zůstala tak, jak je přepis zachytil. Titulky České televize nejsou doslovné — na stejných úsecích obsahují 76 % vyřčených slov — proto text pochází z nahrávky, nikoli z nich. Text prošel lehkou úpravou, jaká je u publikovaných přepisů obvyklá: odstraněna zjevná přeřeknutí a opakování slov. Čísla, zápory ani míra opatrnosti ve formulacích se přitom neměnily a nic nebylo doplněno. Mluvená řeč obsahuje nedokončené věty — nejde o psaný text."
 ---
-
 **Václav Moravec:** … tutu ekonomických studií Fakulty sociálních věd Univerzity Karlovy a výzkumníka z Centra inovací metavýzkumu Stanfordovy univerzity, profesora Tomáše Havránka. I vám přeji hezký dobrý den.
 
 **Tomáš Havránek:** Dobrý den, rád jsem přejezdl Litomyšle po nové dálnici.
@@ -102,7 +101,7 @@ Tak prostě tohle je výsledek toho, který je nejoptimální pro tu zemi, konkr
 
 *[Přeskočeno: část pořadu s jinými hosty.]*
 
-**Václav Moravec:** … té nekoncepčnosti, že jedno zastupitelstvo řekne, ano, my to budeme, my to budeme financovat provoz lávky a zastupitelé a primátor ze stejné strany pak řeknou se, že doce ne, my nechceme tu lávku přebírat, protože nebudeme
+**Václav Moravec:** … té nekoncepčnosti, že jedno zastupitelstvo řekne, ano, my to budeme financovat provoz lávky a zastupitelé a primátor ze stejné strany pak řeknou se, že doce ne, my nechceme tu lávku přebírat, protože nebudeme
 
 **Tomáš Havránek:** … každopádně to ukazuje na obecnější problém, že mi tady ta lávka stála kolik 300 milionů. 300 milionů. A to, aby jsme se rozuměli, to teda není tak jako lávka, to je skutečně jako... My jsme ji viděli.
 

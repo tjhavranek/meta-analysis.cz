@@ -6,9 +6,8 @@ url: "https://www.ceskatelevize.cz/porady/1096898594-udalosti-komentare/22241100
 date: "2022-06-22"
 headline: "Události, komentáře: ČNB zvýšila základní úrokovou sazbu na 7 %"
 byline: "Tomáš Havránek"
-body_note: "Rozhovor v Událostech, komentářích na ČT ve večer, kdy ČNB zvedla základní sazbu na 7 %. Pořad má více témat; zde je jen ta část, na kterou odkazuje záznam. Text je strojový přepis řeči z nahrávky (model Whisper large-v3-turbo). Kdo co říká, vychází z titulků České televize, které značí střídání mluvčích. Titulky ale přicházejí o jednu až dvě vteřiny později než řeč (změřeno), a tak se u přechodů mezi otázkou a odpovědí dorovnávají podle slov. Že hostem je skutečně Tomáš Havránek, potvrzuje jednak titulek na obrazovce, který se v titulcích přepisuje, jednak porovnání hlasu s hlasovým vzorkem z pořadů, kde ho Česká televize jmenuje. Opraveno bylo 10 zjevných přeslechů — jména, hranice slov a tvary, kde je správné znění jisté. Význam, čísla ani míra opatrnosti ve formulacích se neměnily; nejistá místa zůstala tak, jak je přepis zachytil. Moderátora tohoto pořadu titulky nejmenují, proto je označen jen jako moderátor. Mluvená řeč obsahuje nedokončené věty a opakování — nejde o psaný text."
+body_note: "Rozhovor v Událostech, komentářích na ČT ve večer, kdy ČNB zvedla základní sazbu na 7 %. Pořad má více témat; zde je jen ta část, na kterou odkazuje záznam. Text je strojový přepis řeči z nahrávky (model Whisper large-v3-turbo). Kdo co říká, vychází z titulků České televize, které značí střídání mluvčích. Titulky ale přicházejí o jednu až dvě vteřiny později než řeč (změřeno), a tak se u přechodů mezi otázkou a odpovědí dorovnávají podle slov. Že hostem je skutečně Tomáš Havránek, potvrzuje jednak titulek na obrazovce, který se v titulcích přepisuje, jednak porovnání hlasu s hlasovým vzorkem z pořadů, kde ho Česká televize jmenuje. Opraveno bylo 10 zjevných přeslechů — jména, hranice slov a tvary, kde je správné znění jisté. Význam, čísla ani míra opatrnosti ve formulacích se neměnily; nejistá místa zůstala tak, jak je přepis zachytil. Moderátora tohoto pořadu titulky nejmenují, proto je označen jen jako moderátor. Text prošel lehkou úpravou, jaká je u publikovaných přepisů obvyklá: odstraněna zjevná přeřeknutí a opakování slov. Čísla, zápory ani míra opatrnosti ve formulacích se přitom neměnily a nic nebylo doplněno. Mluvená řeč obsahuje nedokončené věty — nejde o psaný text."
 ---
-
 **Moderátor:** Pojďme k tomu, jak zvyšovala Česká národní banka základní úrokovou sazbu. Loni v černu začala s jejím zvedáním od čtvrtprocentního bodu na půl procenta. V říjnu pak přišlo první razantní zvýšení, ve kterém centrální bankéři pokračovali. Dnes, jak už jsme říkali, dosáhla reposazba až na sedm procent.
 
 S tím, jak roste základní úroková sazba, rostou i úrokové sazby u hypoték a navyšují se tedy jejich splátky. Křivka znázorňuje zvyšování za poslední rok, tedy od června 21. Průměrné sazby hypotéčních úvěrů se navýšily až na současných 5,1 procenta. I když ten pomírně zpomalilo, sazby stále rostly.
@@ -29,7 +28,7 @@ Hostem je Tomáš Havránek z Institutu ekonomických studií Fakulty sociální
 
 **Moderátor:** Vy říkáte, že sazby mají obecně růst rychleji než inflace, aby zůstala pod kontrolou, takže v nějakém ideálním případě
 
-15-16% nebo nebo víc?
+15-16% nebo víc?
 
 **Tomáš Havránek:** To je standardní ekonomická poučka, že pokud vám roste inflace nějak o nějakým tempem, tak abyste jí zkrotil, tak musíte ty sazby zvyšovat rychleji, než tak ta inflace roste. Což ale dneska není možné právě kvůli tomu zadlužení nejenom vlády, ale i domácností a firm.
 
